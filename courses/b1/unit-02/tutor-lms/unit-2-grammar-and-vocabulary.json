@@ -1,0 +1,455 @@
+{
+ "title": "Unit 2 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "I ___ TV when the lights went out.",
+   "options": [
+    "watched",
+    "had watched",
+    "was watching"
+   ],
+   "correct": "was watching",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "When we arrived, the shop ___.",
+   "options": [
+    "closes",
+    "was closing",
+    "had closed"
+   ],
+   "correct": "had closed",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She ___ to Spain before, so she knew the way.",
+   "options": [
+    "goes",
+    "was",
+    "had been"
+   ],
+   "correct": "had been",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "While they ___ dinner, the phone rang.",
+   "options": [
+    "have had",
+    "were having",
+    "had"
+   ],
+   "correct": "were having",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What ___ you doing at 8 p.m. last night?",
+   "options": [
+    "did",
+    "were",
+    "had"
+   ],
+   "correct": "were",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He was late because he ___ the bus.",
+   "options": [
+    "was missing",
+    "had missed",
+    "misses"
+   ],
+   "correct": "had missed",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ for an hour when the bus finally came.",
+   "options": [
+    "had been waiting",
+    "wait",
+    "are waiting"
+   ],
+   "correct": "had been waiting",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The children ___ in the garden when it started to rain.",
+   "options": [
+    "were playing",
+    "played",
+    "had played"
+   ],
+   "correct": "were playing",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I couldn't get in because I ___ my keys.",
+   "options": [
+    "had left",
+    "was leaving",
+    "leave"
+   ],
+   "correct": "had left",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "By the time I got there, everyone ___.",
+   "options": [
+    "had gone",
+    "was going",
+    "goes"
+   ],
+   "correct": "had gone",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "As soon as she ___ the news, she called me.",
+   "options": [
+    "had hearing",
+    "was hearing",
+    "heard"
+   ],
+   "correct": "heard",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "I was walking when I saw an accident.",
+    "I had walk when I saw an accident.",
+    "I walked when I was seeing an accident."
+   ],
+   "correct": "I was walking when I saw an accident.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "She had never seen snow before.",
+    "She never was seeing snow before.",
+    "She never had saw snow before."
+   ],
+   "correct": "She had never seen snow before.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "After he ___ dinner, he washed the dishes.",
+   "options": [
+    "eats",
+    "had eaten",
+    "was eating"
+   ],
+   "correct": "had eaten",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They ___ at the hotel when the storm began.",
+   "options": [
+    "arrive",
+    "were arriving",
+    "had arrive"
+   ],
+   "correct": "were arriving",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which word shows two things at the same time?",
+   "options": [
+    "after",
+    "finally",
+    "while"
+   ],
+   "correct": "while",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which word shows something immediately after?",
+   "options": [
+    "while",
+    "although",
+    "as soon as"
+   ],
+   "correct": "as soon as",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What ___ you do when the alarm rang?",
+   "options": [
+    "had",
+    "did",
+    "were"
+   ],
+   "correct": "did",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ never ___ such a big city before that trip.",
+   "options": [
+    "have / see",
+    "was / seeing",
+    "had / seen"
+   ],
+   "correct": "had / seen",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is a story word?",
+   "options": [
+    "probably",
+    "suddenly",
+    "usually"
+   ],
+   "correct": "suddenly",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Luggage' means ...",
+   "options": [
+    "bags for a trip",
+    "a map",
+    "a ticket"
+   ],
+   "correct": "bags for a trip",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Check in' means ...",
+   "options": [
+    "register at a hotel or airport",
+    "leave a hotel",
+    "pay a bill"
+   ],
+   "correct": "register at a hotel or airport",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'souvenir' is ...",
+   "options": [
+    "something to remember a trip",
+    "a type of food",
+    "a plane ticket"
+   ],
+   "correct": "something to remember a trip",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Sightseeing' means ...",
+   "options": [
+    "visiting famous places",
+    "buying clothes",
+    "sleeping on a beach"
+   ],
+   "correct": "visiting famous places",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Accommodation' is ...",
+   "options": [
+    "a tourist",
+    "a type of plane",
+    "a place to stay"
+   ],
+   "correct": "a place to stay",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'delay' is ...",
+   "options": [
+    "when something is late",
+    "a type of ticket",
+    "a holiday"
+   ],
+   "correct": "when something is late",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You need a ___ to travel abroad.",
+   "options": [
+    "souvenir",
+    "passport",
+    "resort"
+   ],
+   "correct": "passport",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Set off' means ...",
+   "options": [
+    "begin a journey",
+    "buy a ticket",
+    "finish a trip"
+   ],
+   "correct": "begin a journey",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Get lost' means ...",
+   "options": [
+    "not know where you are",
+    "lose your bag",
+    "win a prize"
+   ],
+   "correct": "not know where you are",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'tour' is ...",
+   "options": [
+    "a trip with a guide",
+    "a type of hotel",
+    "a plane seat"
+   ],
+   "correct": "a trip with a guide",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ a flight to Rome yesterday.",
+   "options": [
+    "booked",
+    "boarded in",
+    "checked"
+   ],
+   "correct": "booked",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'view' is ...",
+   "options": [
+    "what you can see from a place",
+    "a type of room",
+    "a meal"
+   ],
+   "correct": "what you can see from a place",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'journey' is ...",
+   "options": [
+    "a map",
+    "travelling from one place to another",
+    "a hotel"
+   ],
+   "correct": "travelling from one place to another",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Board' a plane means ...",
+   "options": [
+    "clean it",
+    "get on it",
+    "buy it"
+   ],
+   "correct": "get on it",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'resort' is a ...",
+   "options": [
+    "holiday place",
+    "tourist guide",
+    "pilot"
+   ],
+   "correct": "holiday place",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They ___ the hotel online two weeks ago.",
+   "options": [
+    "booked",
+    "were booking",
+    "have booked"
+   ],
+   "correct": "booked",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The film ___ when we got to the cinema.",
+   "options": [
+    "had started",
+    "starts",
+    "was starting"
+   ],
+   "correct": "had started",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I fell asleep while I ___ a book.",
+   "options": [
+    "read",
+    "was reading",
+    "had read"
+   ],
+   "correct": "was reading",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "When I arrived, she had left.",
+    "When I had arrived, she left.",
+    "When I arrived, she was leaving the day before."
+   ],
+   "correct": "When I arrived, she had left.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Package holiday' means a holiday with ...",
+   "options": [
+    "no hotel",
+    "flights and hotel in one price",
+    "only a ticket"
+   ],
+   "correct": "flights and hotel in one price",
+   "marks": 1
+  }
+ ]
+}

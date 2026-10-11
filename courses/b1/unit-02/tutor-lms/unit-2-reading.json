@@ -1,0 +1,101 @@
+{
+ "title": "Unit 2 Reading",
+ "description": "<h3>Travel blog: Three days in Lisbon</h3><p><strong>Day 1.</strong> We set off from Riga at 6 a.m. and changed planes in Frankfurt. By the time we reached Lisbon, it was already dark. Our hostel was in the old district of Alfama, which has narrow streets and small restaurants. We had booked a room with a view, but it was on the fourth floor and there was no lift – with heavy luggage, that was hard!</p>\n<p><strong>Day 2.</strong> We spent the morning on the famous yellow tram 28. It was crowded, so we stood the whole time, but the views were fantastic. In the afternoon we visited the Belém Tower. While we were queuing for tickets, a street musician started playing the guitar, and everyone began to dance. Later we ate the famous custard tarts, which were still warm.</p>\n<p><strong>Day 3.</strong> We took a day trip to Sintra, a town with colourful palaces in the hills. Unfortunately, the weather was bad. It had rained all night, and the paths were slippery. Despite the rain, we climbed up to the Pena Palace, and the sun came out as soon as we arrived at the top. A perfect ending!</p>\n<p>Tips: buy a 24-hour public transport card, wear comfortable shoes, and book Sintra tickets in advance.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "Where did the writers change planes?",
+   "options": [
+    "Sintra",
+    "Frankfurt",
+    "Lisbon"
+   ],
+   "correct": "Frankfurt",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The hostel was in the district of ...",
+   "options": [
+    "Belém",
+    "Sintra",
+    "Alfama"
+   ],
+   "correct": "Alfama",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What was the problem with the hostel?",
+   "options": [
+    "it was very noisy",
+    "it was dirty",
+    "there was no lift"
+   ],
+   "correct": "there was no lift",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Tram 28 was ...",
+   "options": [
+    "closed",
+    "crowded",
+    "empty"
+   ],
+   "correct": "crowded",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What happened while they were queuing at Belém Tower?",
+   "options": [
+    "it started to rain",
+    "a musician played guitar",
+    "they lost tickets"
+   ],
+   "correct": "a musician played guitar",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The weather in Sintra was ...",
+   "options": [
+    "hot all day",
+    "bad in the morning",
+    "snowy"
+   ],
+   "correct": "bad in the morning",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "When did the sun come out?",
+   "options": [
+    "at night",
+    "when they reached the top",
+    "in the morning"
+   ],
+   "correct": "when they reached the top",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "True, False or Not given: The writers recommend buying a public transport card.",
+   "options": [
+    "False",
+    "Not given",
+    "True"
+   ],
+   "correct": "True",
+   "marks": 1
+  }
+ ]
+}

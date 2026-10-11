@@ -1,0 +1,101 @@
+{
+ "title": "Unit 3 Listening",
+ "description": "<h3>A talk about the phone of the future</h3><p>Listen to the audio file twice (b1-unit-03-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "The talk is about ...",
+   "options": [
+    "phones of the past",
+    "how to repair phones",
+    "phones in ten years"
+   ],
+   "correct": "phones in ten years",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Some companies are already making screens that ...",
+   "options": [
+    "are made of glass",
+    "never break",
+    "you can fold"
+   ],
+   "correct": "you can fold",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The speaker thinks we will charge phones ...",
+   "options": [
+    "never",
+    "every hour",
+    "once a week"
+   ],
+   "correct": "once a week",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What will a smart phone do if there is a traffic jam?",
+   "options": [
+    "wake you up earlier",
+    "turn off",
+    "call a taxi"
+   ],
+   "correct": "wake you up earlier",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Phones will be able to ...",
+   "options": [
+    "drive cars",
+    "cook dinner",
+    "translate conversations in real time"
+   ],
+   "correct": "translate conversations in real time",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What is the speaker worried about?",
+   "options": [
+    "people spending more time on screens",
+    "bad batteries",
+    "expensive phones"
+   ],
+   "correct": "people spending more time on screens",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The speaker is going to start ...",
+   "options": [
+    "a new app",
+    "a phone-free day at school",
+    "a phone shop"
+   ],
+   "correct": "a phone-free day at school",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "When will the project start?",
+   "options": [
+    "next month",
+    "tomorrow",
+    "next year"
+   ],
+   "correct": "next month",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "title": "Unit 4 Reading",
+ "description": "<h3>Job advertisement and email</h3><p><strong>JOB OFFER – Customer Service Assistant, Café Linden, Riga</strong></p>\n<p>We are looking for a friendly person to join our team. <strong>You must</strong> be 18 or older and speak Latvian and English. <strong>You should</strong> have some experience in a café or a shop, but you don't have to have a degree. The work is part-time: 25 hours per week, including some weekends. The salary is 5 euros an hour, plus tips. We offer free lunches and training in your first week.</p>\n<p><strong>How to apply:</strong> send your CV and a short email to jobs@cafelinden.lv. The deadline is 30 September. We will invite successful people for an interview in early October.</p>\n<hr>\n<p><strong>From:</strong> Rita Kalnina<br><strong>To:</strong> jobs@cafelinden.lv<br><strong>Subject:</strong> Application for Customer Service Assistant</p>\n<p>Dear Sir or Madam,</p>\n<p>I am writing to apply for the position of Customer Service Assistant, which I saw on your website. I am 20 years old, and I am studying economics at the University of Latvia. I have worked as a waitress for one summer, so I know how to talk to customers and work in a team. I speak Latvian, English and Russian.</p>\n<p>I can work in the evenings and at weekends. I attach my CV. I would be happy to come for an interview at any time.</p>\n<p>Yours faithfully,<br>Rita Kalnina</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "The job is at a ...",
+   "options": [
+    "hospital",
+    "café",
+    "bank"
+   ],
+   "correct": "café",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The applicant must be at least ...",
+   "options": [
+    "16",
+    "18",
+    "21"
+   ],
+   "correct": "18",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The job is ...",
+   "options": [
+    "full-time",
+    "only on weekends",
+    "part-time"
+   ],
+   "correct": "part-time",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Applicants don't have to ...",
+   "options": [
+    "send a CV",
+    "have a degree",
+    "speak English"
+   ],
+   "correct": "have a degree",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The deadline for applications is ...",
+   "options": [
+    "1 October",
+    "early October",
+    "30 September"
+   ],
+   "correct": "30 September",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Interviews will be ...",
+   "options": [
+    "in November",
+    "on 30 September",
+    "in early October"
+   ],
+   "correct": "in early October",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Rita has worked before as ...",
+   "options": [
+    "a cook",
+    "a waitress",
+    "a teacher"
+   ],
+   "correct": "a waitress",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "True, False or Not given: Rita can only work in the mornings.",
+   "options": [
+    "Not given",
+    "True",
+    "False"
+   ],
+   "correct": "False",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,455 @@
+{
+ "title": "Unit 4 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "You ___ wear a uniform. It's the school rule.",
+   "options": [
+    "don't have to",
+    "might",
+    "have to"
+   ],
+   "correct": "have to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You ___ bring a pen. We have some here.",
+   "options": [
+    "should",
+    "mustn't",
+    "don't have to"
+   ],
+   "correct": "don't have to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You ___ use your phone during the exam.",
+   "options": [
+    "might",
+    "mustn't",
+    "don't have to"
+   ],
+   "correct": "mustn't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You look tired. You ___ go to bed early.",
+   "options": [
+    "must",
+    "are",
+    "should"
+   ],
+   "correct": "should",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He ___ be at home. His car is outside.",
+   "options": [
+    "should",
+    "can't",
+    "must"
+   ],
+   "correct": "must",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She ___ be a doctor. She's only fifteen.",
+   "options": [
+    "can't",
+    "must",
+    "has to"
+   ],
+   "correct": "can't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ work on Sunday, so I can't come.",
+   "options": [
+    "might",
+    "should to",
+    "have to"
+   ],
+   "correct": "have to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ get up early yesterday.",
+   "options": [
+    "had to",
+    "must",
+    "have to"
+   ],
+   "correct": "had to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "It ___ snow tonight. The sky is grey.",
+   "options": [
+    "can't",
+    "might",
+    "must"
+   ],
+   "correct": "might",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "He should studies more.",
+    "He should to study more.",
+    "He should study more."
+   ],
+   "correct": "He should study more.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "I can to swim.",
+    "I can swims.",
+    "I can swim."
+   ],
+   "correct": "I can swim.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You ___ told me earlier! Now it's too late.",
+   "options": [
+    "should have",
+    "must have",
+    "might"
+   ],
+   "correct": "should have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "___ I leave early today, please?",
+   "options": [
+    "Should",
+    "Can",
+    "Must"
+   ],
+   "correct": "Can",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which means 'it is not necessary'?",
+   "options": [
+    "You can't go.",
+    "You mustn't go.",
+    "You don't have to go."
+   ],
+   "correct": "You don't have to go.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which means 'it is not allowed'?",
+   "options": [
+    "You mustn't go.",
+    "You might go.",
+    "You don't have to go."
+   ],
+   "correct": "You mustn't go.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You ___ be very proud of your son!",
+   "options": [
+    "should have",
+    "can't",
+    "must"
+   ],
+   "correct": "must",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They ___ be home yet. The lights are off.",
+   "options": [
+    "can't",
+    "must",
+    "might to"
+   ],
+   "correct": "can't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If you want to pass, you ___ study.",
+   "options": [
+    "can't",
+    "have to",
+    "mightn't"
+   ],
+   "correct": "have to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I'm not sure. I ___ go to the cinema.",
+   "options": [
+    "must",
+    "have to",
+    "might"
+   ],
+   "correct": "might",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You ___ eat so many sweets. They are bad for you.",
+   "options": [
+    "shouldn't",
+    "aren't",
+    "don't have to"
+   ],
+   "correct": "shouldn't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Apply for' a job means ...",
+   "options": [
+    "enjoy it",
+    "leave it",
+    "ask officially for it"
+   ],
+   "correct": "ask officially for it",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'salary' is ...",
+   "options": [
+    "a place",
+    "a type of job",
+    "money you get for work"
+   ],
+   "correct": "money you get for work",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'colleague' is ...",
+   "options": [
+    "a person you work with",
+    "your boss",
+    "your teacher"
+   ],
+   "correct": "a person you work with",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'deadline' is ...",
+   "options": [
+    "a job offer",
+    "the last time to finish",
+    "a holiday"
+   ],
+   "correct": "the last time to finish",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Resign' means ...",
+   "options": [
+    "leave a job officially",
+    "get a salary",
+    "apply for a job"
+   ],
+   "correct": "leave a job officially",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'degree' is a ...",
+   "options": [
+    "university qualification",
+    "type of job",
+    "school lesson"
+   ],
+   "correct": "university qualification",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'part-time' job is ...",
+   "options": [
+    "for fewer hours",
+    "very well paid",
+    "for the whole day"
+   ],
+   "correct": "for fewer hours",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'full-time' job is ...",
+   "options": [
+    "for a few hours",
+    "a hobby",
+    "for the whole working week"
+   ],
+   "correct": "for the whole working week",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'promotion' is ...",
+   "options": [
+    "a move to a better job",
+    "a new colleague",
+    "a free holiday"
+   ],
+   "correct": "a move to a better job",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'timetable' shows ...",
+   "options": [
+    "salaries",
+    "degrees",
+    "lessons or times"
+   ],
+   "correct": "lessons or times",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "An 'interview' is ...",
+   "options": [
+    "a letter",
+    "a kind of exam",
+    "a meeting for a job"
+   ],
+   "correct": "a meeting for a job",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'fail' an exam is to ...",
+   "options": [
+    "not pass it",
+    "pass it",
+    "take it twice"
+   ],
+   "correct": "not pass it",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Experience' means ...",
+   "options": [
+    "knowledge from doing something",
+    "an exam",
+    "a lesson"
+   ],
+   "correct": "knowledge from doing something",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'manager' is ...",
+   "options": [
+    "a person in charge of a team",
+    "a student",
+    "a salary"
+   ],
+   "correct": "a person in charge of a team",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'qualification' is ...",
+   "options": [
+    "a holiday",
+    "a boss",
+    "a certificate or degree"
+   ],
+   "correct": "a certificate or degree",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I'm sorry, I ___ come to the meeting. I'm ill.",
+   "options": [
+    "don't have to",
+    "mustn't",
+    "can't"
+   ],
+   "correct": "can't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Applicants ___ send their CV before the deadline.",
+   "options": [
+    "can't",
+    "might",
+    "must"
+   ],
+   "correct": "must",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "You mustn't being late.",
+    "You mustn't be late.",
+    "You mustn't to be late."
+   ],
+   "correct": "You mustn't be late.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'course' is ...",
+   "options": [
+    "a series of lessons",
+    "a salary",
+    "a job"
+   ],
+   "correct": "a series of lessons",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He ___ work today. It's his day off.",
+   "options": [
+    "doesn't have to",
+    "mustn't",
+    "can't to"
+   ],
+   "correct": "doesn't have to",
+   "marks": 1
+  }
+ ]
+}

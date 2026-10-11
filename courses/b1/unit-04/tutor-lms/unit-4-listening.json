@@ -1,0 +1,101 @@
+{
+ "title": "Unit 4 Listening",
+ "description": "<h3>University open day</h3><p>Listen to the audio file twice (b1-unit-04-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "The Business degree lasts ...",
+   "options": [
+    "four years",
+    "three years",
+    "one year"
+   ],
+   "correct": "three years",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "In the first year, all students ...",
+   "options": [
+    "study the same subjects",
+    "do a placement",
+    "choose their subjects"
+   ],
+   "correct": "study the same subjects",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "In the second year, students can choose between ...",
+   "options": [
+    "science and history",
+    "law and art",
+    "marketing, finance and management"
+   ],
+   "correct": "marketing, finance and management",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The final project is about ...",
+   "options": [
+    "10,000 words",
+    "100 pages",
+    "1,000 words"
+   ],
+   "correct": "10,000 words",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Students ___ pay for books.",
+   "options": [
+    "mustn't",
+    "must",
+    "don't have to"
+   ],
+   "correct": "don't have to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Students must attend at least ...",
+   "options": [
+    "50% of lessons",
+    "80% of lessons",
+    "all lessons"
+   ],
+   "correct": "80% of lessons",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The placement lasts ...",
+   "options": [
+    "two weeks",
+    "ten weeks",
+    "ten months"
+   ],
+   "correct": "ten weeks",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The application deadline is ...",
+   "options": [
+    "1 May",
+    "1 March",
+    "1 June"
+   ],
+   "correct": "1 May",
+   "marks": 1
+  }
+ ]
+}

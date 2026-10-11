@@ -1,0 +1,101 @@
+{
+ "title": "Unit 2 Listening",
+ "description": "<h3>A problem at the airport</h3><p>Listen to the audio file twice (b1-unit-02-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "The flight to Berlin has a delay of ...",
+   "options": [
+    "nine hours",
+    "90 minutes",
+    "30 minutes"
+   ],
+   "correct": "90 minutes",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The man is worried because he will miss ...",
+   "options": [
+    "a meeting at the airport",
+    "his luggage",
+    "a connecting flight"
+   ],
+   "correct": "a connecting flight",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He booked the ticket ...",
+   "options": [
+    "by phone yesterday",
+    "online, two weeks ago",
+    "at the airport"
+   ],
+   "correct": "online, two weeks ago",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The alternative flight goes to ...",
+   "options": [
+    "Frankfurt",
+    "Paris",
+    "Munich"
+   ],
+   "correct": "Munich",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "From the new airport he can ...",
+   "options": [
+    "take a bus",
+    "take a taxi",
+    "take a train"
+   ],
+   "correct": "take a train",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The train journey takes about ...",
+   "options": [
+    "one hour",
+    "ten hours",
+    "four hours"
+   ],
+   "correct": "four hours",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He can't take the morning flight because ...",
+   "options": [
+    "it's too expensive",
+    "it's full",
+    "he has a meeting at ten"
+   ],
+   "correct": "he has a meeting at ten",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Boarding starts at ...",
+   "options": [
+    "seven o'clock",
+    "eight o'clock",
+    "six o'clock"
+   ],
+   "correct": "seven o'clock",
+   "marks": 1
+  }
+ ]
+}

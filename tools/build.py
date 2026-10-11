@@ -123,9 +123,27 @@ def tutor_q(item, rng):
     opts = ans[:]; rng.shuffle(opts)
     return {"type": "single_choice", "question": q, "options": opts, "correct": ans[0], "marks": 1}
 
+def check_unit(n, u):
+    """Fail loudly on malformed items: every MC item needs a question + 2-3 distinct answers; practice sets need 8+ items."""
+    groups = {"pool": u["pool"], "grammar.choice": u["grammar"]["choice"], "vocab.choice": u["vocab"]["choice"],
+              "reading_a": u["reading_a"]["questions"], "reading_b": u["reading_b"]["questions"],
+              "listening_a": u["listening_a"]["questions"], "listening_b": u["listening_b"]["questions"],
+              "writing.register": u["writing"]["register"]}
+    for name, items in groups.items():
+        assert name == "pool" or len(items) >= 8, f"unit {n}: {name} has {len(items)} items (<8)"
+        for it in items:
+            p = split(it)
+            assert len(p) in (3, 4) and len(set(p[1:])) == len(p) - 1, f"unit {n}: bad item in {name}: {it!r}"
+    for name, items in {"grammar.blanks": u["grammar"]["blanks"], "grammar.drag": u["grammar"]["drag"], "vocab.blanks": u["vocab"]["blanks"],
+                        "vocab.drag": u["vocab"]["drag"], "writing.drag": u["writing"]["drag"]}.items():
+        assert len(items) >= 8 and all(i.count("*") >= 2 and i.count("*") % 2 == 0 for i in items), f"unit {n}: bad gaps in {name}"
+    assert len(u["vocab"]["words"]) >= 12 and len(u["speaking"]["cards"]) >= 10
+    assert u["writing"]["mark_text"].count("*") // 2 >= 8
+
 def build_unit(n):
     u = load(n); U = f"u{n:02d}"
     assert len(u["pool"]) >= 40, f"unit {n}: pool must have 40 items, has {len(u['pool'])}"
+    check_unit(n, u)
     for k in ("listening_a", "listening_b"):
         sc_ = u[k]["script"]; u[k]["script_md"] = sc_
         u[k]["script_html"] = "<p>" + escape(sc_).replace("\n\n", "</p><p>").replace("\n", "<br>") + "</p>"

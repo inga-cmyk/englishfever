@@ -1,0 +1,455 @@
+{
+ "title": "Unit 3 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "It's cold. I ___ the heating on.",
+   "options": [
+    "am going to turn",
+    "am turning",
+    "will turn"
+   ],
+   "correct": "will turn",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ to Rome next week. We have the tickets.",
+   "options": [
+    "are flying",
+    "fly",
+    "will fly"
+   ],
+   "correct": "are flying",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Look at those clouds! It ___.",
+   "options": [
+    "will rain",
+    "is going to rain",
+    "rains"
+   ],
+   "correct": "is going to rain",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I think she ___ the job. She is very good.",
+   "options": [
+    "is getting",
+    "will get",
+    "gets"
+   ],
+   "correct": "will get",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "When I arrive, I'll call you.",
+    "When I arrived, I'll call you.",
+    "When I'll arrive, I call you."
+   ],
+   "correct": "When I arrive, I'll call you.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "___ you help me with this, please?",
+   "options": [
+    "Are",
+    "Will",
+    "Do"
+   ],
+   "correct": "Will",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ forget your birthday. I promise!",
+   "options": [
+    "don't",
+    "am not",
+    "won't"
+   ],
+   "correct": "won't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She ___ a baby. She told us yesterday.",
+   "options": [
+    "is going to have",
+    "will have",
+    "has"
+   ],
+   "correct": "is going to have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What time ___ the train leave tomorrow?",
+   "options": [
+    "will",
+    "does",
+    "is"
+   ],
+   "correct": "does",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "In the future, people ___ in space.",
+   "options": [
+    "are living",
+    "probably live",
+    "will probably live"
+   ],
+   "correct": "will probably live",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "My plans: I ___ study law next year.",
+   "options": [
+    "am going to",
+    "will to",
+    "going"
+   ],
+   "correct": "am going to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which sentence is a prediction?",
+   "options": [
+    "I'm meeting Tom at 7.",
+    "I think prices will go up.",
+    "I'm going to buy bread."
+   ],
+   "correct": "I think prices will go up.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I'm tired. I ___ to bed early.",
+   "options": [
+    "am thinking go",
+    "think I'll go",
+    "go"
+   ],
+   "correct": "think I'll go",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Are you ___ to the party tonight?",
+   "options": [
+    "will",
+    "go",
+    "going"
+   ],
+   "correct": "going",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They ___ married in June. Everything is organised.",
+   "options": [
+    "get",
+    "are getting",
+    "will get"
+   ],
+   "correct": "are getting",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "By 2040, cars ___ without drivers.",
+   "options": [
+    "will probably drive",
+    "drove",
+    "are driving"
+   ],
+   "correct": "will probably drive",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He ___ be late. The traffic is terrible.",
+   "options": [
+    "is going to",
+    "will to",
+    "is"
+   ],
+   "correct": "is going to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If it rains, we ___ at home.",
+   "options": [
+    "will stay",
+    "stay",
+    "are staying"
+   ],
+   "correct": "will stay",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "As soon as I ___ the results, I will tell you.",
+   "options": [
+    "get",
+    "am getting",
+    "will get"
+   ],
+   "correct": "get",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "It probably doesn't rain tomorrow.",
+    "It won't probably rain.",
+    "It probably won't rain."
+   ],
+   "correct": "It probably won't rain.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ this letter before I leave.",
+   "options": [
+    "post",
+    "am posting",
+    "will post"
+   ],
+   "correct": "will post",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The shop ___ at nine tomorrow.",
+   "options": [
+    "is open",
+    "will opening",
+    "opens"
+   ],
+   "correct": "opens",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'download' means to ...",
+   "options": [
+    "delete a file",
+    "send a file away",
+    "copy a file to your device"
+   ],
+   "correct": "copy a file to your device",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You use a ___ to log in to your account.",
+   "options": [
+    "password",
+    "screen",
+    "device"
+   ],
+   "correct": "password",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'charge' a phone means to ...",
+   "options": [
+    "put electricity in it",
+    "break it",
+    "sell it"
+   ],
+   "correct": "put electricity in it",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Artificial intelligence' is ...",
+   "options": [
+    "smart computer systems",
+    "a new phone",
+    "a type of cable"
+   ],
+   "correct": "smart computer systems",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Online' means ...",
+   "options": [
+    "connected to the internet",
+    "switched off",
+    "expensive"
+   ],
+   "correct": "connected to the internet",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'website' is ...",
+   "options": [
+    "a place on the internet",
+    "a type of phone",
+    "a battery"
+   ],
+   "correct": "a place on the internet",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "An 'app' is ...",
+   "options": [
+    "a screen",
+    "a program for a phone",
+    "a kind of computer"
+   ],
+   "correct": "a program for a phone",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'upload' means to ...",
+   "options": [
+    "read a book",
+    "send a file to the internet",
+    "buy an app"
+   ],
+   "correct": "send a file to the internet",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'invent' means to ...",
+   "options": [
+    "lose something",
+    "make something new",
+    "break something"
+   ],
+   "correct": "make something new",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Update' means ...",
+   "options": [
+    "make newer",
+    "turn off",
+    "forget"
+   ],
+   "correct": "make newer",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A strong ___ has numbers and letters.",
+   "options": [
+    "screen",
+    "password",
+    "device"
+   ],
+   "correct": "password",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "When you 'search' online, you ...",
+   "options": [
+    "make a phone",
+    "look for information",
+    "turn off a screen"
+   ],
+   "correct": "look for information",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'delete' is to ...",
+   "options": [
+    "remove",
+    "add",
+    "copy"
+   ],
+   "correct": "remove",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'device' is ...",
+   "options": [
+    "a language",
+    "a machine or small electronic object",
+    "a person"
+   ],
+   "correct": "a machine or small electronic object",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Software is ...",
+   "options": [
+    "the screen",
+    "the keyboard",
+    "programs for a computer"
+   ],
+   "correct": "programs for a computer",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Internet 'connection' means ...",
+   "options": [
+    "a link to the internet",
+    "a type of app",
+    "a password"
+   ],
+   "correct": "a link to the internet",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "My phone is cracked. The ___ is broken.",
+   "options": [
+    "search",
+    "software",
+    "screen"
+   ],
+   "correct": "screen",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I need to ___ my phone. The battery is nearly empty.",
+   "options": [
+    "invent",
+    "delete",
+    "charge"
+   ],
+   "correct": "charge",
+   "marks": 1
+  }
+ ]
+}

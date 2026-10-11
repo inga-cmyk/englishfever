@@ -12,7 +12,7 @@ All rules below were found by really importing the B1 package into WordPress (Tu
 | # | Problem found | Cause | Fix (put it in the generator) |
 |---|---|---|---|
 | 1 | Reading and Listening lessons ended with *"Next: do the graded quiz "Unit 1 Reading" in Tutor LMS."* | Text written for the old pipeline. Learners are already in Tutor. "Next" in Tutor means the next lesson, not the quiz. | Delete the sentence. Learners use Tutor's own Previous / Next. Quizzes are at the end of the unit. |
-| 2 | Exam tip about True / False / Not given was shown in every Reading lesson | One generic tip text for all units | Build the tip from the **real task type** of that page (see section 4). Add the True/False/Not given line only if the practice questions on that page have such items (not the quiz). |
+| 2 | Exam tip about True / False / Not given was shown in every Reading lesson | One generic tip text for all units | Build the tip from the **real task type** of that page (see section 4). Describe the task the learner sees: a/b/c multiple choice gets multiple-choice tips. Write a True / False / Not given tip only when **every** question on the page has that format. |
 | 3 | Listening tip said "Write an answer for every question" and "You hear the recording twice" | Wrong for multiple choice. Audio is not recorded yet. | Use the multiple-choice tip set. Say *"Listen twice, if you need to."* |
 | 4 | Lesson title was missing at the top of the lesson | Generator removed the `<h1>`; Tutor does not show the title in the content area | Put the title back as `<h2>` with an icon at the top of every lesson. |
 | 5 | Pages were long and plain: all text in one flow | No template classes used | Use the site's lesson templates (`ef-box` family). See section 3. |
@@ -84,13 +84,13 @@ Never use one tip text for all units. Check what the page really asks the learne
 * **Reading, multiple choice (3 options):**
   1. Read the title and look at the text quickly.
   2. Read each question. Then find the part of the text that answers it.
-  3. Check all three options. Wrong options often use words from the text, but they say something different.
-  4. *(only if the practice questions on this page have True / False / Not given items – not the quiz)* Some questions are True / False / Not given. *Not given* means the text does not say it.
+  3. Check all the options (a, b, c). Wrong options often use words from the text, but they say something different.
 * **Listening, multiple choice (3 options):**
   1. Read the questions and the three options before you listen.
   2. Listen for the main idea, not for every word.
   3. Wrong options may use a word from the recording, but they say something different.
   4. Choose one answer for every question, even if you are not sure.
+* A page where **every** question is True / False / Not given gets its own tips: read each statement; *True* = the text says the same, *False* = the opposite, *Not given* = the text does not say it. Do not mix this line into multiple-choice tips.
 * Different task types (gap fill, matching, open answer) need their own tips. Write them when you add such tasks.
 * Listening wording: *"Listen twice, if you need to."* Do not promise "you hear it twice" unless the real exam does.
 
@@ -251,7 +251,7 @@ Pitfalls:
 ## 13. What changed in the generator (tools/build.py, make_wxr.py, units/extras.py)
 
 * **Lessons** use the `ef-box` templates, with the lesson title as `<h2>` at the top (sections 3). Callout paragraphs in the unit text (`Watch out!`, `Common mistake`, `Be careful`) become pink boxes; `Tip`, `Quick test`, `Time words` become yellow boxes. H5P goes in white `praksa` boxes.
-* **Tips** come from the practice questions on the same page (section 4), not from the quiz. The True / False / Not given line appears only when the page's own H5P questions have such items.
+* **Tips** come from the practice questions on the same page (section 4), not from the quiz. The True / False / Not given tip is written only when every question on the page has that format; otherwise the multiple-choice tips are used.
 * **No "Next: … in Tutor LMS"**. Listening says "Listen twice, if you need to."
 * **Speaking practice**: 10 questions at the end of every Grammar and Vocabulary lesson, from `tools/units/extras.py`. The build stops if a unit does not have exactly 10 + 10.
 * **Writing**: "Choose one" and a Writing assignment (`courses/<level>/unit-NN/assignment/*.html` + `.json`, settings 15 / 9 / 2 files / 5 MB), rubric from `GRAMMAR_LABEL`. `make_wxr.py` also builds `tutor-lms-assignments.zip`.

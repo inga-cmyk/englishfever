@@ -109,11 +109,15 @@ def speaking_practice(qs):
 
 # ---------- exam tips from the real task type (docs section 4) ----------
 def reading_tips(questions):
-    tips = ["Read the title and look at the text quickly.",
-            "Read each question. Then find the part of the text that answers it.",
-            "Check all three options. Wrong options often use words from the text, but they say something different."]
-    if any(q.startswith("True, False or Not given") for q in questions):
-        tips.append("Some questions are True / False / Not given. <em>Not given</em> means the text does not say it.")
+    """Tips follow the task type the learner sees on THIS page. The practice is a/b/c multiple choice, so the tips are
+    multiple-choice tips. A True / False / Not given tip is only written when EVERY question on the page has that format."""
+    if all(q.startswith("True, False or Not given") for q in questions):
+        tips = ["Read the title and look at the text quickly.", "Read each statement. Then find the part of the text about it.",
+                "<em>True</em> = the text says the same. <em>False</em> = the text says the opposite. <em>Not given</em> = the text does not say it."]
+    else:
+        tips = ["Read the title and look at the text quickly.",
+                "Read each question. Then find the part of the text that answers it.",
+                "Check all the options (a, b, c). Wrong options often use words from the text, but they say something different."]
     return box("tip", "💡 Exam tips", "<ol>" + "".join(f"<li>{t}</li>" for t in tips) + "</ol>")
 def listening_tips():
     tips = ["Read the questions and the three options before you listen.", "Listen for the main idea, not for every word.",

@@ -1,23 +1,28 @@
-# English Fever – course content
+# English Fever – B1 course
 
-Source material for courses on the English Fever WordPress site.
-Learners are Latvian speakers; instructions and explanations are in Latvian, examples in English.
+Source and generated files for the B1 course on the English Fever WordPress site (H5P + Tutor LMS).
+All instructions and explanations are in easy English.
 
-## Layout
+## Each unit has
+| Part | Files |
+|---|---|
+| 6 lesson pages: grammar, vocabulary, reading, listening, speaking, writing | `courses/b1/unit-NN/lesson-*.html` |
+| H5P activities (every practice task has 8+ items; all interactive tasks are H5P) | `dist/h5p/uNN-*.h5p` |
+| 3 Tutor LMS quizzes: grammar and vocabulary (pool of 40, 10 random), reading exam, listening exam | `courses/b1/unit-NN/tutor-lms/` |
+| Listening scripts to record | `courses/b1/unit-NN/listening/scripts-to-record.md` |
+| Speaking interview cards (H5P flashcards + printable) | `courses/b1/unit-NN/speaking/` |
 
-```
-courses/<level>/
-  course.md              course outline, goals, unit list
-  unit-NN/
-    lesson.html          lesson page – paste into a WordPress page (Code editor / Custom HTML block)
-    quiz.md              quiz questions (source for the H5P Question Set)
-    slides.md            slide / video script
-    h5p/*/content.json   H5P activity content (see tools/build_h5p.sh)
-    downloads/           printable worksheets
-```
+See `courses/b1/course.md` for the unit list and `courses/b1/unit-NN/INDEX.md` for the upload order.
 
-## Workflow
+## Tutor LMS quiz settings
+The `.json` files hold the questions and recommended settings. The `.csv` files are for copy/paste or a spreadsheet import.
+**Grammar and vocabulary quiz:** Question order = *Random*; *Max questions allowed to answer* = **10** (the pool has 40). Passing grade 70%, time limit 15 minutes.
+**Reading / listening quizzes:** question order = *Sorting*, all questions shown, passing grade 60%. Put the reading text in the quiz description (already in the `.json`).
 
-1. Write or edit content here.
-2. Build H5P packages: `tools/build_h5p.sh courses/b1/unit-01` creates `.h5p` files in `dist/`.
-3. In WordPress: H5P Content > Add New > Upload, then embed the shortcode in the lesson page.
+## Rebuilding
+Edit `tools/units/uNN.py`, then run `python3 tools/build.py` (or `python3 tools/build.py 3` for one unit).
+
+## Not yet checked
+- The H5P packages are generated from code and have not been uploaded to a live WordPress site. If an upload fails, install the content types first (H5P Hub) and tell us the error.
+- The Tutor LMS file format is our own simple format; Tutor's own importer may need the questions entered by hand or pasted from the CSV.
+- Audio is not included. Record `listening/scripts-to-record.md` (two voices) and upload the MP3s.

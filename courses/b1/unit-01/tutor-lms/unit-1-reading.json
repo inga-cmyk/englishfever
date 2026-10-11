@@ -1,0 +1,101 @@
+{
+ "title": "Unit 1 Reading",
+ "description": "<h3>Free time in Latvia: survey results</h3><p>A survey asked 1,000 Latvians aged 18–35 about their free time. The results show some interesting changes.</p>\n<p>The most popular free-time activity is spending time with family and friends (68%). Watching films or series is second (61%), and walking or being in nature is third (52%). Only 17% of people read books every week, which is lower than ten years ago.</p>\n<p>Many young people say they have less free time than their parents had. On average they work 42 hours a week, and many also commute for more than an hour a day. \"I get home at seven and I'm too tired to do anything,\" said one woman from Jelgava.</p>\n<p>However, people are finding new ways to relax. One in four people has taken up a new hobby in the last year. The most popular new hobbies are cycling, cooking and board games. Others are learning languages online. Of those who started a new hobby, 80% say they feel happier.</p>\n<p>The researchers believe that social media takes a lot of time: the average person spends two and a half hours a day on it. Almost half of the people in the survey would like to spend less time online.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "How many people were in the survey?",
+   "options": [
+    "68",
+    "1,000",
+    "2,500"
+   ],
+   "correct": "1,000",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What is the most popular free-time activity?",
+   "options": [
+    "walking",
+    "time with family and friends",
+    "watching films"
+   ],
+   "correct": "time with family and friends",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The percentage of people who read books weekly is ...",
+   "options": [
+    "17%",
+    "61%",
+    "52%"
+   ],
+   "correct": "17%",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Young people say that they ...",
+   "options": [
+    "have more free time than their parents",
+    "have less free time than their parents",
+    "work fewer hours"
+   ],
+   "correct": "have less free time than their parents",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "On average, young people work ...",
+   "options": [
+    "35 hours a week",
+    "60 hours a week",
+    "42 hours a week"
+   ],
+   "correct": "42 hours a week",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "One in four people has ...",
+   "options": [
+    "stopped using social media",
+    "moved house",
+    "taken up a new hobby"
+   ],
+   "correct": "taken up a new hobby",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "True, False or Not given: Most people who started a new hobby feel happier.",
+   "options": [
+    "False",
+    "True",
+    "Not given"
+   ],
+   "correct": "True",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "True, False or Not given: The researchers want people to use social media more.",
+   "options": [
+    "False",
+    "Not given",
+    "True"
+   ],
+   "correct": "False",
+   "marks": 1
+  }
+ ]
+}

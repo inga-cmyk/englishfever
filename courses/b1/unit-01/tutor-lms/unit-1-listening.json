@@ -1,0 +1,101 @@
+{
+ "title": "Unit 1 Listening",
+ "description": "<h3>A radio interview about hobbies</h3><p>Listen to the audio file twice (b1-unit-01-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "Ieva started the club because she ...",
+   "options": [
+    "didn't know anybody in Riga",
+    "lost her job",
+    "wanted to make money"
+   ],
+   "correct": "didn't know anybody in Riga",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The first meeting was a ...",
+   "options": [
+    "board game evening",
+    "climbing trip",
+    "pottery class"
+   ],
+   "correct": "board game evening",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The club now has ...",
+   "options": [
+    "eight members",
+    "over sixty members",
+    "a thousand members"
+   ],
+   "correct": "over sixty members",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "This month the club is doing ...",
+   "options": [
+    "cooking",
+    "pottery",
+    "climbing"
+   ],
+   "correct": "pottery",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Ieva felt ... when she first went climbing.",
+   "options": [
+    "bored",
+    "afraid",
+    "tired"
+   ],
+   "correct": "afraid",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The club costs ...",
+   "options": [
+    "fifty euros a year",
+    "five euros a month",
+    "nothing"
+   ],
+   "correct": "five euros a month",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What does Ieva say is most important?",
+   "options": [
+    "being curious",
+    "being young",
+    "being fit"
+   ],
+   "correct": "being curious",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The club meets ...",
+   "options": [
+    "every Monday",
+    "every second Thursday",
+    "every Saturday"
+   ],
+   "correct": "every second Thursday",
+   "marks": 1
+  }
+ ]
+}

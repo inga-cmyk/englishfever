@@ -1,0 +1,455 @@
+{
+ "title": "Unit 1 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "She ___ to work by bus every day.",
+   "options": [
+    "is going",
+    "has gone",
+    "goes"
+   ],
+   "correct": "goes",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Look! It ___ outside.",
+   "options": [
+    "rained",
+    "is raining",
+    "rains"
+   ],
+   "correct": "is raining",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ in Riga for six years.",
+   "options": [
+    "have lived",
+    "am living",
+    "live"
+   ],
+   "correct": "have lived",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ to the cinema last night.",
+   "options": [
+    "went",
+    "go",
+    "have been"
+   ],
+   "correct": "went",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "___ you ever been to Norway?",
+   "options": [
+    "Did",
+    "Are",
+    "Have"
+   ],
+   "correct": "Have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He ___ breakfast at the moment.",
+   "options": [
+    "have",
+    "is having",
+    "has"
+   ],
+   "correct": "is having",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I have worked here ___ 2019.",
+   "options": [
+    "since",
+    "ago",
+    "for"
+   ],
+   "correct": "since",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I have worked here ___ five years.",
+   "options": [
+    "since",
+    "for",
+    "from"
+   ],
+   "correct": "for",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They ___ a new car last month.",
+   "options": [
+    "bought",
+    "have bought",
+    "are buying"
+   ],
+   "correct": "bought",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "My mother ___ three languages.",
+   "options": [
+    "has spoken",
+    "speaks",
+    "is speaking"
+   ],
+   "correct": "speaks",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What ___ you doing right now?",
+   "options": [
+    "do",
+    "are",
+    "have"
+   ],
+   "correct": "are",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ never ___ sushi.",
+   "options": [
+    "am / eating",
+    "have / eaten",
+    "did / eat"
+   ],
+   "correct": "have / eaten",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She ___ her keys, so she can't get in.",
+   "options": [
+    "loses",
+    "lost yesterday",
+    "has lost"
+   ],
+   "correct": "has lost",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He is a vegetarian. He ___ meat.",
+   "options": [
+    "isn't eating",
+    "doesn't eat",
+    "didn't eat"
+   ],
+   "correct": "doesn't eat",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ him yesterday.",
+   "options": [
+    "see",
+    "saw",
+    "have seen"
+   ],
+   "correct": "saw",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "I already finish yesterday.",
+    "I have already finished.",
+    "I am already finishing."
+   ],
+   "correct": "I have already finished.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "She hasn't gone to school yesterday.",
+    "She didn't go to school yesterday.",
+    "She doesn't went to school yesterday."
+   ],
+   "correct": "She didn't go to school yesterday.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which verb is a state verb?",
+   "options": [
+    "know",
+    "eat",
+    "run"
+   ],
+   "correct": "know",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "I am liking this music.",
+    "I like this music.",
+    "I have liking this music."
+   ],
+   "correct": "I like this music.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ my homework yet.",
+   "options": [
+    "don't do",
+    "haven't done",
+    "didn't do"
+   ],
+   "correct": "haven't done",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Commute' means ...",
+   "options": [
+    "talk to friends",
+    "travel to work every day",
+    "take a holiday"
+   ],
+   "correct": "travel to work every day",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Hang out' means ...",
+   "options": [
+    "spend time with friends",
+    "fall asleep",
+    "clean the house"
+   ],
+   "correct": "spend time with friends",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Take up' (a hobby) means ...",
+   "options": [
+    "forget",
+    "finish",
+    "start"
+   ],
+   "correct": "start",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Catch up' means ...",
+   "options": [
+    "run fast",
+    "talk after a long time",
+    "buy something"
+   ],
+   "correct": "talk after a long time",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Spare time' means ...",
+   "options": [
+    "late time",
+    "work time",
+    "free time"
+   ],
+   "correct": "free time",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A person who belongs to a club is a ...",
+   "options": [
+    "teacher",
+    "guest",
+    "member"
+   ],
+   "correct": "member",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Keep fit' means ...",
+   "options": [
+    "stay healthy",
+    "stay at home",
+    "get a job"
+   ],
+   "correct": "stay healthy",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Get together' means ...",
+   "options": [
+    "win",
+    "meet",
+    "argue"
+   ],
+   "correct": "meet",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Stay up late' means ...",
+   "options": [
+    "go to bed late",
+    "have lunch",
+    "get up early"
+   ],
+   "correct": "go to bed late",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Workout' is ...",
+   "options": [
+    "exercise",
+    "a meeting",
+    "a dinner"
+   ],
+   "correct": "exercise",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ with my cousin every week on the phone.",
+   "options": [
+    "chat",
+    "commute",
+    "wear"
+   ],
+   "correct": "chat",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Routine' means ...",
+   "options": [
+    "a surprise",
+    "things you do every day",
+    "a holiday"
+   ],
+   "correct": "things you do every day",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which word is an activity for free time?",
+   "options": [
+    "meeting",
+    "hobby",
+    "salary"
+   ],
+   "correct": "hobby",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Get into' (a sport) means ...",
+   "options": [
+    "start to like",
+    "leave",
+    "win"
+   ],
+   "correct": "start to like",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is a social media site?",
+   "options": [
+    "Uber",
+    "Instagram",
+    "Booking"
+   ],
+   "correct": "Instagram",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She ___ yoga twice a week.",
+   "options": [
+    "does",
+    "has done",
+    "is doing"
+   ],
+   "correct": "does",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ each other since 2010.",
+   "options": [
+    "knew",
+    "know",
+    "have known"
+   ],
+   "correct": "have known",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ to a concert last Friday.",
+   "options": [
+    "have been",
+    "went",
+    "am going"
+   ],
+   "correct": "went",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Chat' means ...",
+   "options": [
+    "sleep",
+    "run fast",
+    "talk in a friendly way"
+   ],
+   "correct": "talk in a friendly way",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "My brother ___ a book at the moment.",
+   "options": [
+    "is reading",
+    "has read",
+    "reads"
+   ],
+   "correct": "is reading",
+   "marks": 1
+  }
+ ]
+}

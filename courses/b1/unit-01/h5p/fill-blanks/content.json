@@ -1,8 +1,0 @@
-{"text":"<p>Ieraksti pareizo formu.</p>",
- "questions":[
-  "<p>I *go/am going* to work by bus every day.</p>",
-  "<p>Look! It *is raining/rains* outside.</p>",
-  "<p>She *has lived* in Riga since 2018.</p>",
-  "<p>We *visited* Rome last year.</p>",
-  "<p>I *have never tried* sushi.</p>"],
- "behaviour":{"enableRetry":true,"enableSolutionsButton":true,"caseSensitive":false,"autoCheck":false}}

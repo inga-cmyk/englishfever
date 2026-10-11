@@ -1,0 +1,101 @@
+{
+ "title": "Unit 7 Listening",
+ "description": "<h3>A conversation about recycling</h3><p>Listen to the audio file twice (b1-unit-07-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "Markus has just started ...",
+   "options": [
+    "recycling",
+    "gardening",
+    "cooking"
+   ],
+   "correct": "recycling",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Who gave him the bags?",
+   "options": [
+    "Ella",
+    "the council",
+    "his neighbour"
+   ],
+   "correct": "his neighbour",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "How many bins are there?",
+   "options": [
+    "five",
+    "three",
+    "two"
+   ],
+   "correct": "three",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The city collects the bins on ...",
+   "options": [
+    "Mondays",
+    "Wednesdays",
+    "Fridays"
+   ],
+   "correct": "Wednesdays",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What did the council say about food waste?",
+   "options": [
+    "it was too expensive",
+    "a special bin will be possible next month",
+    "they would not collect it"
+   ],
+   "correct": "a special bin will be possible next month",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Markus makes compost ...",
+   "options": [
+    "at work",
+    "in the kitchen",
+    "in the garden"
+   ],
+   "correct": "in the garden",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Ella can take old batteries to ...",
+   "options": [
+    "the school",
+    "the library",
+    "the supermarket"
+   ],
+   "correct": "the supermarket",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Ella thinks she should use ...",
+   "options": [
+    "a reusable bottle",
+    "plastic bags",
+    "a paper cup"
+   ],
+   "correct": "a reusable bottle",
+   "marks": 1
+  }
+ ]
+}

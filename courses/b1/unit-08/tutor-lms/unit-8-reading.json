@@ -1,0 +1,101 @@
+{
+ "title": "Unit 8 Reading",
+ "description": "<h3>Email exchange: a faulty product</h3><p><strong>From:</strong> Edgars Liepa<br><strong>To:</strong> customerservice@technoworld.lv<br><strong>Subject:</strong> Faulty headphones – order 48215</p>\n<p>Dear Sir or Madam,</p>\n<p>I am writing to complain about a pair of wireless headphones that I bought from your website on 3 March (order number 48215). When they arrived, I noticed that the left headphone didn't work. I contacted your helpline and was told that someone would call me back, but nobody did.</p>\n<p>The headphones cost 89 euros, which is too much for a product that doesn't work. I would be grateful if you could send me a replacement or give me a full refund. I have attached a copy of my receipt. If I don't hear from you within seven days, I will contact the consumer protection office.</p>\n<p>I look forward to your reply.</p>\n<p>Yours faithfully,<br>Edgars Liepa</p>\n<hr>\n<p><strong>From:</strong> Inese Zarina<br><strong>Subject:</strong> RE: Faulty headphones – order 48215</p>\n<p>Dear Mr Liepa,</p>\n<p>Thank you for your email, and I am very sorry for the trouble. I have checked your order and I can see that the headphones were sent on 4 March. We offer a 30-day money-back guarantee, so you can either get a refund or choose a new pair of headphones. We will also send you a 10% discount code for your next order.</p>\n<p>Please post the faulty headphones to the address below. We will pay for the delivery. When we receive them, the refund will be made within five working days.</p>\n<p>Kind regards,<br>Inese Zarina, Customer Service Manager</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "Edgars bought ...",
+   "options": [
+    "a laptop",
+    "a phone",
+    "headphones"
+   ],
+   "correct": "headphones",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What was the problem?",
+   "options": [
+    "they arrived late",
+    "the left headphone didn't work",
+    "they were the wrong colour"
+   ],
+   "correct": "the left headphone didn't work",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Nobody called him back after he contacted ...",
+   "options": [
+    "the shop",
+    "the helpline",
+    "his bank"
+   ],
+   "correct": "the helpline",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The price was ...",
+   "options": [
+    "89 euros",
+    "8.90 euros",
+    "98 euros"
+   ],
+   "correct": "89 euros",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What will Edgars do if he doesn't hear within seven days?",
+   "options": [
+    "contact the consumer protection office",
+    "go to the shop",
+    "buy another pair"
+   ],
+   "correct": "contact the consumer protection office",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The company offers a ...",
+   "options": [
+    "30-day money-back guarantee",
+    "one-year warranty",
+    "free replacement for life"
+   ],
+   "correct": "30-day money-back guarantee",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Edgars must ...",
+   "options": [
+    "visit the shop",
+    "pay for the delivery",
+    "post the faulty headphones"
+   ],
+   "correct": "post the faulty headphones",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "True, False or Not given: Inese offered Edgars a 10% discount.",
+   "options": [
+    "False",
+    "Not given",
+    "True"
+   ],
+   "correct": "True",
+   "marks": 1
+  }
+ ]
+}

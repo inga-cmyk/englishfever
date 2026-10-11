@@ -1,0 +1,101 @@
+{
+ "title": "Unit 8 Listening",
+ "description": "<h3>A talk about saving money</h3><p>Listen to the audio file twice (b1-unit-08-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "How many tips does the presenter give?",
+   "options": [
+    "five",
+    "three",
+    "ten"
+   ],
+   "correct": "three",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The first tip is to ...",
+   "options": [
+    "buy less",
+    "earn more",
+    "make a budget"
+   ],
+   "correct": "make a budget",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "One listener spent ___ a month on coffee.",
+   "options": [
+    "1,000 euros",
+    "100 euros",
+    "10 euros"
+   ],
+   "correct": "100 euros",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The second tip is to ...",
+   "options": [
+    "borrow money",
+    "go shopping",
+    "set a goal"
+   ],
+   "correct": "set a goal",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What does the presenter say about ten euros a month?",
+   "options": [
+    "it is too little",
+    "it makes a difference",
+    "it is not enough"
+   ],
+   "correct": "it makes a difference",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The third tip is to wait ___ before buying.",
+   "options": [
+    "48 hours",
+    "a week",
+    "an hour"
+   ],
+   "correct": "48 hours",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "After two days, in most cases you ...",
+   "options": [
+    "will buy twice",
+    "will forget",
+    "won't want the thing any more"
+   ],
+   "correct": "won't want the thing any more",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The presenter also mentions ...",
+   "options": [
+    "buying second-hand clothes",
+    "moving house",
+    "working more"
+   ],
+   "correct": "buying second-hand clothes",
+   "marks": 1
+  }
+ ]
+}

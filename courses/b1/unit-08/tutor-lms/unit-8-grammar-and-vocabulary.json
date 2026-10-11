@@ -1,0 +1,455 @@
+{
+ "title": "Unit 8 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "I ___ to the gym three times a week.",
+   "options": [
+    "have gone",
+    "am going",
+    "go"
+   ],
+   "correct": "go",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Look! She ___ a new bag.",
+   "options": [
+    "carried",
+    "is carrying",
+    "carries"
+   ],
+   "correct": "is carrying",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I ___ for this company since 2018.",
+   "options": [
+    "work",
+    "worked",
+    "have worked"
+   ],
+   "correct": "have worked",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They ___ the shopping before we arrived.",
+   "options": [
+    "were doing",
+    "do",
+    "had done"
+   ],
+   "correct": "had done",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If I ___ time, I'll go to the shop.",
+   "options": [
+    "will have",
+    "had",
+    "have"
+   ],
+   "correct": "have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If I were you, I ___ it back.",
+   "options": [
+    "took",
+    "would take",
+    "will take"
+   ],
+   "correct": "would take",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He said he ___ the receipt.",
+   "options": [
+    "had lost",
+    "was losing",
+    "loses"
+   ],
+   "correct": "had lost",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We ___ be late. The bus is delayed.",
+   "options": [
+    "might",
+    "have to",
+    "must"
+   ],
+   "correct": "might",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You ___ pay now. You can pay later.",
+   "options": [
+    "can't",
+    "don't have to",
+    "mustn't"
+   ],
+   "correct": "don't have to",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "This shop is ___ than the other one.",
+   "options": [
+    "the cheapest",
+    "cheaper",
+    "more cheap"
+   ],
+   "correct": "cheaper",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "It's the ___ restaurant in town.",
+   "options": [
+    "most good",
+    "best",
+    "better"
+   ],
+   "correct": "best",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "How ___ money do you have?",
+   "options": [
+    "few",
+    "many",
+    "much"
+   ],
+   "correct": "much",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "How ___ bags did you buy?",
+   "options": [
+    "many",
+    "much",
+    "a lot"
+   ],
+   "correct": "many",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I have ___ money to buy a car.",
+   "options": [
+    "too little",
+    "not enough of",
+    "too few"
+   ],
+   "correct": "too little",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The jacket is ___ expensive for me.",
+   "options": [
+    "enough",
+    "too",
+    "very much"
+   ],
+   "correct": "too",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The bag is big ___ for all my things.",
+   "options": [
+    "enough",
+    "too",
+    "so"
+   ],
+   "correct": "enough",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Cars ___ in this factory.",
+   "options": [
+    "make",
+    "are making",
+    "are made"
+   ],
+   "correct": "are made",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The shop ___ at 9 every day.",
+   "options": [
+    "is opened",
+    "was open",
+    "opens"
+   ],
+   "correct": "is opened",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'I'll call you,' he said. → He said he ___ me.",
+   "options": [
+    "will call",
+    "called",
+    "would call"
+   ],
+   "correct": "would call",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "It's expensive, ___?",
+   "options": [
+    "doesn't it",
+    "isn't it",
+    "is it"
+   ],
+   "correct": "isn't it",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You haven't paid yet, ___ you?",
+   "options": [
+    "haven't",
+    "have",
+    "do"
+   ],
+   "correct": "have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I was paying when my phone ___.",
+   "options": [
+    "had rung",
+    "rang",
+    "was ringing"
+   ],
+   "correct": "rang",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "I never been to that shop.",
+    "I've never been to that shop.",
+    "I never have been that shop."
+   ],
+   "correct": "I've never been to that shop.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "If I would have money, I buy it.",
+    "If I had money, I would buy it.",
+    "If I have money, I would buy it."
+   ],
+   "correct": "If I had money, I would buy it.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Afford' means to have ___ to buy something.",
+   "options": [
+    "enough time",
+    "enough money",
+    "enough space"
+   ],
+   "correct": "enough money",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'bargain' is something ...",
+   "options": [
+    "old",
+    "good and cheap",
+    "bad and expensive"
+   ],
+   "correct": "good and cheap",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'receipt' shows ...",
+   "options": [
+    "you are a customer",
+    "you are rich",
+    "you paid"
+   ],
+   "correct": "you paid",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'refund' is ...",
+   "options": [
+    "money given back",
+    "money borrowed",
+    "a discount"
+   ],
+   "correct": "money given back",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Discount' means ...",
+   "options": [
+    "a lower price",
+    "a shop",
+    "a higher price"
+   ],
+   "correct": "a lower price",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'On sale' means ...",
+   "options": [
+    "not available",
+    "at a lower price",
+    "too expensive"
+   ],
+   "correct": "at a lower price",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Cash' is ...",
+   "options": [
+    "a credit card",
+    "a loan",
+    "notes and coins"
+   ],
+   "correct": "notes and coins",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'budget' is a ...",
+   "options": [
+    "plan for spending money",
+    "type of shop",
+    "kind of bag"
+   ],
+   "correct": "plan for spending money",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'borrow' is to ...",
+   "options": [
+    "take for a short time",
+    "give for a short time",
+    "buy and sell"
+   ],
+   "correct": "take for a short time",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'lend' is to ...",
+   "options": [
+    "give for a short time",
+    "take for a short time",
+    "sell"
+   ],
+   "correct": "give for a short time",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'customer' is a ...",
+   "options": [
+    "person who sells",
+    "person who buys",
+    "shop"
+   ],
+   "correct": "person who buys",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'queue' is a ...",
+   "options": [
+    "bargain",
+    "line of people waiting",
+    "type of shop"
+   ],
+   "correct": "line of people waiting",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'brand' is a ...",
+   "options": [
+    "name of a company's product",
+    "shop assistant",
+    "kind of money"
+   ],
+   "correct": "name of a company's product",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'wallet' is for ...",
+   "options": [
+    "food",
+    "money and cards",
+    "clothes"
+   ],
+   "correct": "money and cards",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'save' money is to ...",
+   "options": [
+    "spend it all",
+    "keep it for later",
+    "borrow it"
+   ],
+   "correct": "keep it for later",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'cost' means ...",
+   "options": [
+    "to be cheap",
+    "to have a price",
+    "to be free"
+   ],
+   "correct": "to have a price",
+   "marks": 1
+  }
+ ]
+}

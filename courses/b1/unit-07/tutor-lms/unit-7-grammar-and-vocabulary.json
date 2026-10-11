@@ -1,0 +1,455 @@
+{
+ "title": "Unit 7 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "He said, 'I am tired.' → He said he ___ tired.",
+   "options": [
+    "has been",
+    "was",
+    "is"
+   ],
+   "correct": "was",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She said, 'I will call.' → She said she ___ call.",
+   "options": [
+    "did",
+    "would",
+    "will"
+   ],
+   "correct": "would",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'I live in Riga.' → She said she ___ in Riga.",
+   "options": [
+    "lives",
+    "had lived",
+    "lived"
+   ],
+   "correct": "lived",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'We have finished.' → They said they ___ finished.",
+   "options": [
+    "were",
+    "had",
+    "have"
+   ],
+   "correct": "had",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'I can't swim.' → He said he ___ swim.",
+   "options": [
+    "can't",
+    "couldn't",
+    "didn't can"
+   ],
+   "correct": "couldn't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Where is the station?' → She asked where the station ___.",
+   "options": [
+    "is",
+    "did be",
+    "was"
+   ],
+   "correct": "was",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Do you like tea?' → He asked ___ I liked tea.",
+   "options": [
+    "if",
+    "what",
+    "that"
+   ],
+   "correct": "if",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Stop talking!' → The teacher told us ___ talking.",
+   "options": [
+    "stop",
+    "stopping",
+    "to stop"
+   ],
+   "correct": "to stop",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'I saw him yesterday.' → She said she'd seen him the ___ before.",
+   "options": [
+    "today",
+    "yesterday",
+    "day"
+   ],
+   "correct": "day",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'I'm leaving tomorrow.' → He said he was leaving the ___ day.",
+   "options": [
+    "tomorrow",
+    "last",
+    "next"
+   ],
+   "correct": "next",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She ___ me that she was busy.",
+   "options": [
+    "said",
+    "asked",
+    "told"
+   ],
+   "correct": "told",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He ___ that he was hungry.",
+   "options": [
+    "said",
+    "told",
+    "spoke"
+   ],
+   "correct": "said",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "It's a lovely day, ___ it?",
+   "options": [
+    "is",
+    "doesn't",
+    "isn't"
+   ],
+   "correct": "isn't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You can swim, ___ you?",
+   "options": [
+    "don't",
+    "aren't",
+    "can't"
+   ],
+   "correct": "can't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "They didn't come, ___ they?",
+   "options": [
+    "did",
+    "do",
+    "didn't"
+   ],
+   "correct": "did",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I'm late, ___ I?",
+   "options": [
+    "amn't",
+    "am not",
+    "aren't"
+   ],
+   "correct": "aren't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Open the window, ___ you?",
+   "options": [
+    "will",
+    "do",
+    "are"
+   ],
+   "correct": "will",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Let's have lunch, ___?",
+   "options": [
+    "will we",
+    "shall we",
+    "do we"
+   ],
+   "correct": "shall we",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She has gone home, ___ she?",
+   "options": [
+    "isn't",
+    "doesn't",
+    "hasn't"
+   ],
+   "correct": "hasn't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You live here, ___ you?",
+   "options": [
+    "haven't",
+    "don't",
+    "aren't"
+   ],
+   "correct": "don't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "He asked me where did I live.",
+    "He asked me where I lived.",
+    "He asked me where I do live."
+   ],
+   "correct": "He asked me where I lived.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "She told me waiting.",
+    "She told me to wait.",
+    "She told me that wait."
+   ],
+   "correct": "She told me to wait.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A person who writes news is a ...",
+   "options": [
+    "waiter",
+    "journalist",
+    "pilot"
+   ],
+   "correct": "journalist",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The title of an article is the ...",
+   "options": [
+    "headline",
+    "broadcast",
+    "waste"
+   ],
+   "correct": "headline",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Fake news' is ...",
+   "options": [
+    "false information",
+    "a newspaper",
+    "a TV show"
+   ],
+   "correct": "false information",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'recycle' is to ...",
+   "options": [
+    "use materials again",
+    "throw away",
+    "break"
+   ],
+   "correct": "use materials again",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Pollution' is ...",
+   "options": [
+    "dirty air, water or land",
+    "a news story",
+    "a type of energy"
+   ],
+   "correct": "dirty air, water or land",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Global warming' is ...",
+   "options": [
+    "a hot drink",
+    "a weather forecast",
+    "the rise of temperature of the Earth"
+   ],
+   "correct": "the rise of temperature of the Earth",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Waste' is ...",
+   "options": [
+    "energy",
+    "things we throw away",
+    "newspaper"
+   ],
+   "correct": "things we throw away",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Renewable' energy comes from ...",
+   "options": [
+    "coal",
+    "oil",
+    "the sun and wind"
+   ],
+   "correct": "the sun and wind",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'reduce' is to ...",
+   "options": [
+    "make less",
+    "make more",
+    "buy"
+   ],
+   "correct": "make less",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Endangered' animals are ...",
+   "options": [
+    "at risk of disappearing",
+    "very small",
+    "very dangerous"
+   ],
+   "correct": "at risk of disappearing",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'subscribe' is to ...",
+   "options": [
+    "read quickly",
+    "pay to receive something regularly",
+    "stop paying"
+   ],
+   "correct": "pay to receive something regularly",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "An 'article' is a ...",
+   "options": [
+    "type of energy",
+    "piece of furniture",
+    "piece of writing in a newspaper"
+   ],
+   "correct": "piece of writing in a newspaper",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Environment' means ...",
+   "options": [
+    "a type of waste",
+    "a building",
+    "nature and the world around us"
+   ],
+   "correct": "nature and the world around us",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'broadcast' a programme is to ...",
+   "options": [
+    "delete it",
+    "record it",
+    "send it on TV or radio"
+   ],
+   "correct": "send it on TV or radio",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "She asked me what time ___.",
+   "options": [
+    "it is",
+    "it was",
+    "was it"
+   ],
+   "correct": "it was",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He said that he ___ the film the week before.",
+   "options": [
+    "sees",
+    "had seen",
+    "was seeing"
+   ],
+   "correct": "had seen",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We should ___ our use of plastic.",
+   "options": [
+    "reduce",
+    "broadcast",
+    "subscribe"
+   ],
+   "correct": "reduce",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "It is not ___ news if it is true.",
+   "options": [
+    "fake",
+    "endangered",
+    "renewable"
+   ],
+   "correct": "fake",
+   "marks": 1
+  }
+ ]
+}

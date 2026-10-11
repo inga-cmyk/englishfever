@@ -9,4 +9,7 @@
 | 5 | People and places | comparatives, superlatives, (not) as ... as | Email describing a city; booking |
 | 6 | Health and food | zero, first, second conditionals | Email with advice; request |
 | 7 | News, media and environment | reported speech, question tags | Email passing on news; opinion |
-| 8 | Money, shopping and review | mixed review (all tenses and structures) | Email about a purchase; refund |
+| 8 | Money and shopping | Mixed grammar review (all units), quantity words, intro to the passive | Emails about a purchase; refund |
+
+## Every unit has
+Grammar · Vocabulary (flashcards + practice) · Reading · Listening · Speaking (interview cards) · Writing (informal and formal emails), plus three Tutor LMS quizzes (grammar and vocabulary pool of 40 → 10 random; reading exam; listening exam).

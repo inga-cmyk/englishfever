@@ -2,6 +2,8 @@
 
 The built-in browser is the browser pane inside the Claude desktop app. It keeps your sign-ins, so Claude can work in your WordPress admin without you sharing a password.
 
+> **Updated import method.** The B1 course was imported for real on englishfever.com. The tested pipeline (H5P upload, Tutor lessons via AJAX, quizzes via CSV, writing assignments) and all layout, quiz-CSV and QA rules are in [BUILD-RULES-FOR-NEXT-LEVELS.md](BUILD-RULES-FOR-NEXT-LEVELS.md). Where this guide and that document differ (for example the WXR page import and the "Next: do the quiz" lines), **follow BUILD-RULES-FOR-NEXT-LEVELS.md**.
+
 ## Before you start
 1. **Back up or use a staging site.** Import into a staging copy first if you have one.
 2. **Get the files on your computer.** Download the repository ZIP:

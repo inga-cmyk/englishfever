@@ -14,6 +14,10 @@ All instructions and explanations are in easy English.
 
 See `courses/b1/course.md` for the unit list and `courses/b1/unit-NN/INDEX.md` for the upload order.
 
+## Instructions for building and importing
+- [docs/BUILD-RULES-FOR-NEXT-LEVELS.md](docs/BUILD-RULES-FOR-NEXT-LEVELS.md) – tested rules for layout, H5P, Tutor quizzes (CSV), assignments, QA and the prompt for the next levels (A2, B2, C1).
+- [docs/IMPORT-WITH-CLAUDE-DESKTOP.md](docs/IMPORT-WITH-CLAUDE-DESKTOP.md) – importing with the Claude desktop built-in browser.
+
 ## Quick import (about 15 minutes)
 1. **H5P:** WordPress admin > H5P Content > Add New > Upload. Upload the 104 files from `dist/h5p/` (all zipped in `dist/all-h5p.zip`). Keep the titles unchanged.
 2. **Pages:** Tools > Import > WordPress (install the importer if asked). Choose `dist/wordpress/english-fever-b1-pages.xml`. This creates 57 draft pages (course page, 8 unit pages, 48 lessons). The H5P activities are embedded with `[h5p slug="..."]`, which matches the H5P titles. Check that a lesson page shows its activities, then publish.

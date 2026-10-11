@@ -1,0 +1,101 @@
+{
+ "title": "Unit 6 Listening",
+ "description": "<h3>A cooking show</h3><p>Listen to the audio file twice (b1-unit-06-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "Today Dana is making ...",
+   "options": [
+    "a salad",
+    "a cake",
+    "vegetable soup"
+   ],
+   "correct": "vegetable soup",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The soup has ___ potatoes.",
+   "options": [
+    "three",
+    "two",
+    "five"
+   ],
+   "correct": "three",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The soup also needs ...",
+   "options": [
+    "a litre of water",
+    "a cup of oil",
+    "a litre of milk"
+   ],
+   "correct": "a litre of water",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Garlic is good for the ...",
+   "options": [
+    "eyes",
+    "heart",
+    "teeth"
+   ],
+   "correct": "heart",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The onion is fried for about ...",
+   "options": [
+    "twenty minutes",
+    "an hour",
+    "three minutes"
+   ],
+   "correct": "three minutes",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The soup is boiled for ...",
+   "options": [
+    "two hours",
+    "twenty minutes",
+    "five minutes"
+   ],
+   "correct": "twenty minutes",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Dana ___ blend the soup.",
+   "options": [
+    "doesn't",
+    "never forgets to",
+    "always"
+   ],
+   "correct": "doesn't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You can keep the soup in the fridge for ...",
+   "options": [
+    "one hour",
+    "three weeks",
+    "three days"
+   ],
+   "correct": "three days",
+   "marks": 1
+  }
+ ]
+}

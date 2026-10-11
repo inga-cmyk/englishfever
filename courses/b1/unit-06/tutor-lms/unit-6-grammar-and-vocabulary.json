@@ -1,0 +1,455 @@
+{
+ "title": "Unit 6 Grammar and Vocabulary",
+ "description": "Answer 10 questions. You get new questions every time.",
+ "settings": {
+  "time_limit_minutes": 15,
+  "attempts_allowed": 0,
+  "passing_grade_percent": 70,
+  "question_order": "random",
+  "max_questions_allowed_to_answer": 10,
+  "feedback_mode": "retry",
+  "show_correct_answers": true
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "If you freeze water, it ___ to ice.",
+   "options": [
+    "will turn",
+    "turns",
+    "would turn"
+   ],
+   "correct": "turns",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If you ___ a lot of sweets, you'll get fat.",
+   "options": [
+    "eat",
+    "will eat",
+    "ate"
+   ],
+   "correct": "eat",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If I ___ you, I'd see a doctor.",
+   "options": [
+    "am",
+    "will be",
+    "were"
+   ],
+   "correct": "were",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If she studies hard, she ___ the test.",
+   "options": [
+    "passes",
+    "would pass",
+    "will pass"
+   ],
+   "correct": "will pass",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "We'll cook at home if we ___ time.",
+   "options": [
+    "have",
+    "will have",
+    "had"
+   ],
+   "correct": "have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If I won the lottery, I ___ a big house.",
+   "options": [
+    "buy",
+    "would buy",
+    "will buy"
+   ],
+   "correct": "would buy",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "If it rains, we'll stay inside.",
+    "If it rained, we'll stay inside.",
+    "If it will rain, we stay inside."
+   ],
+   "correct": "If it rains, we'll stay inside.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What would you do if you ___ ill?",
+   "options": [
+    "will be",
+    "are",
+    "were"
+   ],
+   "correct": "were",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You won't pass ___ you study.",
+   "options": [
+    "if",
+    "unless",
+    "when"
+   ],
+   "correct": "unless",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If you mix red and yellow, you ___ orange.",
+   "options": [
+    "will got",
+    "would get",
+    "get"
+   ],
+   "correct": "get",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If I ___ more money, I would travel more.",
+   "options": [
+    "have",
+    "had",
+    "will have"
+   ],
+   "correct": "had",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I will call you ___ I arrive.",
+   "options": [
+    "when",
+    "unless",
+    "if I would"
+   ],
+   "correct": "when",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If you ___ a headache, take this tablet.",
+   "options": [
+    "would have",
+    "will have",
+    "have"
+   ],
+   "correct": "have",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He would be fitter if he ___ more.",
+   "options": [
+    "exercised",
+    "will exercise",
+    "exercises"
+   ],
+   "correct": "exercised",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is correct?",
+   "options": [
+    "If I would be you, I rest.",
+    "If I were you, I'd rest.",
+    "If I was you, I'm resting."
+   ],
+   "correct": "If I were you, I'd rest.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "What will you do if it ___ tomorrow?",
+   "options": [
+    "rained",
+    "will rain",
+    "rains"
+   ],
+   "correct": "rains",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If I ___ a dog, I would walk every day.",
+   "options": [
+    "have",
+    "will have",
+    "had"
+   ],
+   "correct": "had",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "You can come ___ you keep quiet.",
+   "options": [
+    "unless",
+    "as long as",
+    "until not"
+   ],
+   "correct": "as long as",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which is a zero conditional?",
+   "options": [
+    "If you heat butter, it melts.",
+    "If I had wings, I'd fly.",
+    "If it rains, I'll stay home."
+   ],
+   "correct": "If you heat butter, it melts.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If she ___ allergic to nuts, she wouldn't eat the cake.",
+   "options": [
+    "would be",
+    "were",
+    "is"
+   ],
+   "correct": "were",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Which means the same? 'Unless you hurry, you'll be late.'",
+   "options": [
+    "If you hurry, you'll be late.",
+    "If you don't hurry, you'll be late.",
+    "If you hurried, you would be late."
+   ],
+   "correct": "If you don't hurry, you'll be late.",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "I'd feel better if I ___ so tired.",
+   "options": [
+    "weren't",
+    "am not",
+    "won't be"
+   ],
+   "correct": "weren't",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'vegetarian' doesn't eat ...",
+   "options": [
+    "bread",
+    "vegetables",
+    "meat"
+   ],
+   "correct": "meat",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'recipe' tells you ...",
+   "options": [
+    "how to cook a dish",
+    "how to exercise",
+    "what to buy at a pharmacy"
+   ],
+   "correct": "how to cook a dish",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "If you are 'allergic' to fish, you ...",
+   "options": [
+    "love it",
+    "react badly to it",
+    "cook it"
+   ],
+   "correct": "react badly to it",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'fever' is a ...",
+   "options": [
+    "kind of food",
+    "medicine",
+    "high body temperature"
+   ],
+   "correct": "high body temperature",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'headache' is a pain in your ...",
+   "options": [
+    "foot",
+    "stomach",
+    "head"
+   ],
+   "correct": "head",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'recover' is to ...",
+   "options": [
+    "forget",
+    "become healthy again",
+    "get ill"
+   ],
+   "correct": "become healthy again",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'portion' is ...",
+   "options": [
+    "an amount of food for one person",
+    "a medicine",
+    "a kind of vegetable"
+   ],
+   "correct": "an amount of food for one person",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'prescription' is from a ...",
+   "options": [
+    "teacher",
+    "baker",
+    "doctor"
+   ],
+   "correct": "doctor",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A person who is 'fit' is ...",
+   "options": [
+    "always hungry",
+    "healthy and strong",
+    "very old"
+   ],
+   "correct": "healthy and strong",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Ingredients' are ...",
+   "options": [
+    "doctors",
+    "foods used in a recipe",
+    "rooms in a house"
+   ],
+   "correct": "foods used in a recipe",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Your 'diet' is ...",
+   "options": [
+    "your job",
+    "your home",
+    "the food you usually eat"
+   ],
+   "correct": "the food you usually eat",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'healthy' lifestyle is ...",
+   "options": [
+    "expensive",
+    "bad for you",
+    "good for your body"
+   ],
+   "correct": "good for your body",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "'Stress' is ...",
+   "options": [
+    "worry and pressure",
+    "a food",
+    "a sport"
+   ],
+   "correct": "worry and pressure",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'take care of' yourself means to ...",
+   "options": [
+    "look after yourself",
+    "cook for yourself",
+    "forget yourself"
+   ],
+   "correct": "look after yourself",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'treatment' is ...",
+   "options": [
+    "medical care",
+    "a kind of meal",
+    "a diet"
+   ],
+   "correct": "medical care",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "To 'cure' an illness is to ...",
+   "options": [
+    "ignore it",
+    "make it go away",
+    "catch it"
+   ],
+   "correct": "make it go away",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "People who eat too much fast food may become ...",
+   "options": [
+    "unhealthy",
+    "fitter",
+    "taller"
+   ],
+   "correct": "unhealthy",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "A 'cure' for the flu is something that ...",
+   "options": [
+    "gives you a fever",
+    "is a type of fruit",
+    "makes you healthy again"
+   ],
+   "correct": "makes you healthy again",
+   "marks": 1
+  }
+ ]
+}

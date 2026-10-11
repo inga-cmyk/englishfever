@@ -1,0 +1,101 @@
+{
+ "title": "Unit 5 Listening",
+ "description": "<h3>Describing a person to the police</h3><p>Listen to the audio file twice (b1-unit-05-listening-quiz.mp3). Then answer the questions.</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "The woman's brother is ...",
+   "options": [
+    "eight years old",
+    "eighteen",
+    "five"
+   ],
+   "correct": "eight years old",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He is small for ...",
+   "options": [
+    "a boy",
+    "his age",
+    "a girl"
+   ],
+   "correct": "his age",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "His hair is ...",
+   "options": [
+    "straight and red",
+    "short, curly and fair",
+    "long and dark"
+   ],
+   "correct": "short, curly and fair",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "His eyes are ...",
+   "options": [
+    "brown",
+    "blue",
+    "green"
+   ],
+   "correct": "green",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He is wearing a ...",
+   "options": [
+    "red jacket",
+    "blue coat",
+    "yellow hat"
+   ],
+   "correct": "red jacket",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "He was last seen near ...",
+   "options": [
+    "the exit",
+    "the café",
+    "the toy shop"
+   ],
+   "correct": "the toy shop",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The woman says her brother is ...",
+   "options": [
+    "older than her",
+    "more confident than most children",
+    "very shy"
+   ],
+   "correct": "more confident than most children",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The woman should wait ...",
+   "options": [
+    "by the information desk",
+    "in the car park",
+    "outside"
+   ],
+   "correct": "by the information desk",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "title": "Unit 5 Reading",
+ "description": "<h3>My best friend Kristaps</h3><p>I have known Kristaps since primary school, so we have been friends for almost fifteen years. He is the most reliable person I know. If I have a problem, I can call him at any time, and he is always ready to help.</p>\n<p>We are very different in many ways. Kristaps is much taller than I am – he is nearly 1.95 m – and he is slimmer, too. He has short curly hair and a big smile. He is not as shy as I am: he talks to everyone, and he makes new friends easily. I'm quieter, and I need more time to feel comfortable with new people.</p>\n<p>Our interests are also different. Kristaps loves sport and is the best basketball player in our club. I prefer reading and music. However, we both enjoy hiking, so we usually go to the mountains once a year. Last summer we walked in Slovakia. It was the hardest trip we have ever done: the weather was worse than we expected, and we got lost on the second day!</p>\n<p>Kristaps now lives in a suburb of Liverpool, where he works as an engineer. We don't meet as often as before, but we video call every Sunday. \"Distance doesn't matter,\" he says. \"The best friends are the ones you can trust, wherever they are.\"</p>",
+ "settings": {
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "passing_grade_percent": 60,
+  "question_order": "sorting",
+  "max_questions_allowed_to_answer": 8
+ },
+ "questions": [
+  {
+   "type": "single_choice",
+   "question": "How long have they been friends?",
+   "options": [
+    "since university",
+    "almost fifteen years",
+    "five years"
+   ],
+   "correct": "almost fifteen years",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Kristaps is ...",
+   "options": [
+    "shy",
+    "very reliable",
+    "short"
+   ],
+   "correct": "very reliable",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Compared with the writer, Kristaps is ...",
+   "options": [
+    "shorter and slimmer",
+    "taller and slimmer",
+    "older and quieter"
+   ],
+   "correct": "taller and slimmer",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Kristaps has ...",
+   "options": [
+    "long straight hair",
+    "no hair",
+    "short curly hair"
+   ],
+   "correct": "short curly hair",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Kristaps is ___ shy as the writer.",
+   "options": [
+    "not as",
+    "as",
+    "more"
+   ],
+   "correct": "not as",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The writer prefers ...",
+   "options": [
+    "reading and music",
+    "basketball",
+    "cooking"
+   ],
+   "correct": "reading and music",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "The trip to Slovakia was ...",
+   "options": [
+    "the hardest they have done",
+    "the easiest",
+    "cancelled"
+   ],
+   "correct": "the hardest they have done",
+   "marks": 1
+  },
+  {
+   "type": "single_choice",
+   "question": "Kristaps lives now in ...",
+   "options": [
+    "Slovakia",
+    "a suburb of Liverpool",
+    "Riga"
+   ],
+   "correct": "a suburb of Liverpool",
+   "marks": 1
+  }
+ ]
+}

@@ -72,6 +72,17 @@ def sc(title): return f'[h5p slug="{slugify(title)}"]'
 def box(kind, title, body):
     return f'<div class="ef-box ef-box--{kind}">\n<h3>{title}</h3>\n{body}\n</div>\n'
 def tabula(html): return html.replace("<table>", '<table class="ef-tabula">')
+def fix_tables(html):
+    """The site CSS (ef-lesson-layout.php) colours `.ef-tabula thead th` and stripes `tbody` rows, so every table needs
+    <thead> (header row) and <tbody>. Tables that already have <thead> are left alone."""
+    def one(m):
+        open_, inner, close = m.group(1), m.group(2), m.group(3)
+        if "<thead" in inner: return m.group(0)
+        rows = re.findall(r"<tr>.*?</tr>", inner, re.S)
+        if not rows: return m.group(0)
+        if "<th" in rows[0]: return f"{open_}<thead>{rows[0]}</thead><tbody>{''.join(rows[1:])}</tbody>{close}"
+        return f"{open_}<tbody>{''.join(rows)}</tbody>{close}"
+    return re.sub(r"(<table[^>]*>)(.*?)(</table>)", one, html, flags=re.S)
 def table(rows, head):
     h = "".join(f"<th>{escape(x)}</th>" for x in head)
     b = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
@@ -324,7 +335,7 @@ def build_unit(n, ex):
         + box("tip", "💡 Notice", f"<p>{w['notice']}</p>") + box("praksa", "✏️ Practice", practice)
         + box("praksa", "✍️ Your turn", f"<p>Choose <strong>one</strong> email ({WORDS} words) and hand it in in the <strong>Writing assignment</strong> that follows this lesson.</p>{own}"
               "<p><strong>Checklist:</strong> ☐ greeting ☐ reason for writing ☐ paragraphs ☐ 3 linking words ☐ correct register ☐ unit grammar ☐ unit vocabulary ☐ sign-off</p>"))
-    for k, body in P.items(): write(os.path.join(out, f"lesson-{k}.html"), body)
+    for k, body in P.items(): write(os.path.join(out, f"lesson-{k}.html"), fix_tables(body))
 
     # ASSIGNMENT
     write(os.path.join(out, "assignment", f"writing-assignment-unit-{n}.html"), assignment_html(n, u, ex))

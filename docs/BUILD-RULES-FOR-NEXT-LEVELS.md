@@ -73,6 +73,8 @@ Page skeleton by lesson type:
 * **Speaking:** `<h2>🗣️ …` → "How the speaking exam works" (neutral) → Part 1 interview cards (praksa) → Part 2 and Part 3 (blue).
 * **Writing:** `<h2>📝 …` → 🎯 Goal → numbered neutral sections → examples in two columns (✉️ Informal | ✉️ Formal) → 💡 Notice → ✏️ Practice (praksa) → ✍️ Your turn (praksa, "Choose one email … hand it in in the Assignment").
 
+**Checked against the site snippet `ef-lesson-layout.php`:** it defines `ef-box` (+ `--tip`, `--speaking`, `--listening`, `--vocab`, `--rozs`), `ef-tabula`, `ef-rinda`/`ef-kolonna`, `ef-teksts`. It does **not** define `ef-box--praksa`: that comes from the separate H5P snippet (section 7), so it must be active. `.ef-tabula` is only coloured and striped inside `<thead>` / `<tbody>`, so the generator writes every table with both. The snippet does not touch `[h5p slug="…"]` shortcodes (its placeholder filter only acts on `[h5p id="000"]`).
+
 Heading rules: `<h2>` page title only; `<h3>` box title; `<h4>` task titles inside a praksa box.
 
 ---

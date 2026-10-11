@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 8 Listening,single_choice,How many tips does the presenter give?,five,three,ten,B
-Unit 8 Listening,single_choice,The first tip is to ...,buy less,earn more,make a budget,C
-Unit 8 Listening,single_choice,One listener spent ___ a month on coffee.,"1,000 euros",100 euros,10 euros,B
-Unit 8 Listening,single_choice,The second tip is to ...,borrow money,go shopping,set a goal,C
-Unit 8 Listening,single_choice,What does the presenter say about ten euros a month?,it is too little,it makes a difference,it is not enough,B
-Unit 8 Listening,single_choice,The third tip is to wait ___ before buying.,48 hours,a week,an hour,A
-Unit 8 Listening,single_choice,"After two days, in most cases you ...",will buy twice,will forget,won't want the thing any more,C
-Unit 8 Listening,single_choice,The presenter also mentions ...,buying second-hand clothes,moving house,working more,A
+"settings","Unit 8 Listening","Listen and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>How many tips does the presenter give?</p>","single_choice","1.00","1","","","1","<p>Correct answer: three</p>",""
+"answer","five","text","0","0","","1"
+"answer","three","text","1","0","","2"
+"answer","ten","text","0","0","","3"
+"question","Choose the correct answer","<p>The first tip is to ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: make a budget</p>",""
+"answer","buy less","text","0","0","","1"
+"answer","earn more","text","0","0","","2"
+"answer","make a budget","text","1","0","","3"
+"question","Choose the correct answer","<p>One listener spent ___ a month on coffee.</p>","single_choice","1.00","3","","","1","<p>Correct answer: 100 euros</p>",""
+"answer","1,000 euros","text","0","0","","1"
+"answer","100 euros","text","1","0","","2"
+"answer","10 euros","text","0","0","","3"
+"question","Choose the correct answer","<p>The second tip is to ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: set a goal</p>",""
+"answer","borrow money","text","0","0","","1"
+"answer","go shopping","text","0","0","","2"
+"answer","set a goal","text","1","0","","3"
+"question","Choose the correct answer","<p>What does the presenter say about ten euros a month?</p>","single_choice","1.00","5","","","1","<p>Correct answer: it makes a difference</p>",""
+"answer","it is too little","text","0","0","","1"
+"answer","it makes a difference","text","1","0","","2"
+"answer","it is not enough","text","0","0","","3"
+"question","Choose the correct answer","<p>The third tip is to wait ___ before buying.</p>","single_choice","1.00","6","","","1","<p>Correct answer: 48 hours</p>",""
+"answer","48 hours","text","1","0","","1"
+"answer","a week","text","0","0","","2"
+"answer","an hour","text","0","0","","3"
+"question","Choose the correct answer","<p>After two days, in most cases you ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: won't want the thing any more</p>",""
+"answer","will buy twice","text","0","0","","1"
+"answer","will forget","text","0","0","","2"
+"answer","won't want the thing any more","text","1","0","","3"
+"question","Choose the correct answer","<p>The presenter also mentions ...</p>","single_choice","1.00","8","","","1","<p>Correct answer: buying second-hand clothes</p>",""
+"answer","buying second-hand clothes","text","1","0","","1"
+"answer","moving house","text","0","0","","2"
+"answer","working more","text","0","0","","3"

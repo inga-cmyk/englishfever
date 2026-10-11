@@ -1,101 +1,109 @@
 {
  "title": "Unit 5 Listening",
- "description": "<h3>Describing a person to the police</h3><p>Listen to the audio file twice (b1-unit-05-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "The woman's brother is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The woman's brother is ...",
+   "order": 1,
+   "answers": [
     "eight years old",
     "eighteen",
     "five"
    ],
    "correct": "eight years old",
-   "marks": 1
+   "explanation": "Correct answer: eight years old"
   },
   {
-   "type": "single_choice",
-   "question": "He is small for ...",
-   "options": [
-    "a boy",
+   "title": "Choose the correct answer",
+   "text": "He is small for ...",
+   "order": 2,
+   "answers": [
     "his age",
-    "a girl"
+    "a girl",
+    "a boy"
    ],
    "correct": "his age",
-   "marks": 1
+   "explanation": "Correct answer: his age"
   },
   {
-   "type": "single_choice",
-   "question": "His hair is ...",
-   "options": [
-    "straight and red",
+   "title": "Choose the correct answer",
+   "text": "His hair is ...",
+   "order": 3,
+   "answers": [
     "short, curly and fair",
-    "long and dark"
+    "long and dark",
+    "straight and red"
    ],
    "correct": "short, curly and fair",
-   "marks": 1
+   "explanation": "Correct answer: short, curly and fair"
   },
   {
-   "type": "single_choice",
-   "question": "His eyes are ...",
-   "options": [
-    "brown",
+   "title": "Choose the correct answer",
+   "text": "His eyes are ...",
+   "order": 4,
+   "answers": [
+    "green",
     "blue",
-    "green"
+    "brown"
    ],
    "correct": "green",
-   "marks": 1
+   "explanation": "Correct answer: green"
   },
   {
-   "type": "single_choice",
-   "question": "He is wearing a ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "He is wearing a ...",
+   "order": 5,
+   "answers": [
     "red jacket",
     "blue coat",
     "yellow hat"
    ],
    "correct": "red jacket",
-   "marks": 1
+   "explanation": "Correct answer: red jacket"
   },
   {
-   "type": "single_choice",
-   "question": "He was last seen near ...",
-   "options": [
-    "the exit",
+   "title": "Choose the correct answer",
+   "text": "He was last seen near ...",
+   "order": 6,
+   "answers": [
+    "the toy shop",
     "the café",
-    "the toy shop"
+    "the exit"
    ],
    "correct": "the toy shop",
-   "marks": 1
+   "explanation": "Correct answer: the toy shop"
   },
   {
-   "type": "single_choice",
-   "question": "The woman says her brother is ...",
-   "options": [
-    "older than her",
+   "title": "Choose the correct answer",
+   "text": "The woman says her brother is ...",
+   "order": 7,
+   "answers": [
     "more confident than most children",
-    "very shy"
+    "very shy",
+    "older than her"
    ],
    "correct": "more confident than most children",
-   "marks": 1
+   "explanation": "Correct answer: more confident than most children"
   },
   {
-   "type": "single_choice",
-   "question": "The woman should wait ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The woman should wait ...",
+   "order": 8,
+   "answers": [
     "by the information desk",
-    "in the car park",
-    "outside"
+    "outside",
+    "in the car park"
    ],
    "correct": "by the information desk",
-   "marks": 1
+   "explanation": "Correct answer: by the information desk"
   }
  ]
 }

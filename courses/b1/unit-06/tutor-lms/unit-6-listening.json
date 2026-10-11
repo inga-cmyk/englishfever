@@ -1,101 +1,109 @@
 {
  "title": "Unit 6 Listening",
- "description": "<h3>A cooking show</h3><p>Listen to the audio file twice (b1-unit-06-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "Today Dana is making ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Today Dana is making ...",
+   "order": 1,
+   "answers": [
+    "vegetable soup",
     "a salad",
-    "a cake",
-    "vegetable soup"
+    "a cake"
    ],
    "correct": "vegetable soup",
-   "marks": 1
+   "explanation": "Correct answer: vegetable soup"
   },
   {
-   "type": "single_choice",
-   "question": "The soup has ___ potatoes.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The soup has ___ potatoes.",
+   "order": 2,
+   "answers": [
     "three",
     "two",
     "five"
    ],
    "correct": "three",
-   "marks": 1
+   "explanation": "Correct answer: three"
   },
   {
-   "type": "single_choice",
-   "question": "The soup also needs ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The soup also needs ...",
+   "order": 3,
+   "answers": [
     "a litre of water",
-    "a cup of oil",
-    "a litre of milk"
+    "a litre of milk",
+    "a cup of oil"
    ],
    "correct": "a litre of water",
-   "marks": 1
+   "explanation": "Correct answer: a litre of water"
   },
   {
-   "type": "single_choice",
-   "question": "Garlic is good for the ...",
-   "options": [
-    "eyes",
+   "title": "Choose the correct answer",
+   "text": "Garlic is good for the ...",
+   "order": 4,
+   "answers": [
     "heart",
+    "eyes",
     "teeth"
    ],
    "correct": "heart",
-   "marks": 1
+   "explanation": "Correct answer: heart"
   },
   {
-   "type": "single_choice",
-   "question": "The onion is fried for about ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The onion is fried for about ...",
+   "order": 5,
+   "answers": [
+    "three minutes",
     "twenty minutes",
-    "an hour",
-    "three minutes"
+    "an hour"
    ],
    "correct": "three minutes",
-   "marks": 1
+   "explanation": "Correct answer: three minutes"
   },
   {
-   "type": "single_choice",
-   "question": "The soup is boiled for ...",
-   "options": [
-    "two hours",
+   "title": "Choose the correct answer",
+   "text": "The soup is boiled for ...",
+   "order": 6,
+   "answers": [
     "twenty minutes",
+    "two hours",
     "five minutes"
    ],
    "correct": "twenty minutes",
-   "marks": 1
+   "explanation": "Correct answer: twenty minutes"
   },
   {
-   "type": "single_choice",
-   "question": "Dana ___ blend the soup.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Dana ___ blend the soup.",
+   "order": 7,
+   "answers": [
     "doesn't",
-    "never forgets to",
-    "always"
+    "always",
+    "never forgets to"
    ],
    "correct": "doesn't",
-   "marks": 1
+   "explanation": "Correct answer: doesn't"
   },
   {
-   "type": "single_choice",
-   "question": "You can keep the soup in the fridge for ...",
-   "options": [
-    "one hour",
+   "title": "Choose the correct answer",
+   "text": "You can keep the soup in the fridge for ...",
+   "order": 8,
+   "answers": [
+    "three days",
     "three weeks",
-    "three days"
+    "one hour"
    ],
    "correct": "three days",
-   "marks": 1
+   "explanation": "Correct answer: three days"
   }
  ]
 }

@@ -1,101 +1,109 @@
 {
  "title": "Unit 7 Reading",
- "description": "<h3>Local news: city launches 'Green Week'</h3><p><strong>Riga, 3 June.</strong> The city council announced yesterday that it will hold a \"Green Week\" from 10 to 16 June to encourage people to protect the environment. The mayor said that the aim was to reduce waste in the city by 15% in the next two years.</p>\n<p>During the week, public transport will be free, so that fewer people will drive. In many parts of the city, people will be able to take their old electronics and clothes to special recycling points. \"Last year we collected 12 tonnes of old clothes, and we hope to collect twice as much this year,\" said event manager Laura Bērziņa.</p>\n<p>There will also be a number of events for children. Schools have been asked to organise clean-up days in nearby parks, and a famous Latvian cartoonist has promised to draw posters about recycling. The environment minister told reporters that the government was planning to ban plastic bags in supermarkets next year, and he asked everyone to bring their own bags.</p>\n<p>Not everybody is happy. A taxi drivers' association has complained that free public transport will damage their business. However, the mayor said that the benefits for the environment were more important. \"If we don't act now, we will have much bigger problems in the future,\" he said. Details of the programme can be found on the council's website.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "Green Week will take place ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Green Week will take place ...",
+   "order": 1,
+   "answers": [
     "from 10 to 16 June",
     "from 3 to 9 June",
     "in July"
    ],
    "correct": "from 10 to 16 June",
-   "marks": 1
+   "explanation": "Correct answer: from 10 to 16 June"
   },
   {
-   "type": "single_choice",
-   "question": "The aim is to reduce waste in the city by ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The aim is to reduce waste in the city by ...",
+   "order": 2,
+   "answers": [
     "15%",
     "50%",
     "5%"
    ],
    "correct": "15%",
-   "marks": 1
+   "explanation": "Correct answer: 15%"
   },
   {
-   "type": "single_choice",
-   "question": "During Green Week, public transport will be ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "During Green Week, public transport will be ...",
+   "order": 3,
+   "answers": [
+    "free",
     "more expensive",
-    "closed",
-    "free"
+    "closed"
    ],
    "correct": "free",
-   "marks": 1
+   "explanation": "Correct answer: free"
   },
   {
-   "type": "single_choice",
-   "question": "Last year the event collected ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Last year the event collected ...",
+   "order": 4,
+   "answers": [
     "12 tonnes of clothes",
-    "no clothes",
-    "20 tonnes of plastic"
+    "20 tonnes of plastic",
+    "no clothes"
    ],
    "correct": "12 tonnes of clothes",
-   "marks": 1
+   "explanation": "Correct answer: 12 tonnes of clothes"
   },
   {
-   "type": "single_choice",
-   "question": "Schools have been asked to organise ...",
-   "options": [
-    "a football match",
+   "title": "Choose the correct answer",
+   "text": "Schools have been asked to organise ...",
+   "order": 5,
+   "answers": [
     "clean-up days in parks",
+    "a football match",
     "a concert"
    ],
    "correct": "clean-up days in parks",
-   "marks": 1
+   "explanation": "Correct answer: clean-up days in parks"
   },
   {
-   "type": "single_choice",
-   "question": "The environment minister said the government was planning to ...",
-   "options": [
-    "close supermarkets",
+   "title": "Choose the correct answer",
+   "text": "The environment minister said the government was planning to ...",
+   "order": 6,
+   "answers": [
+    "ban plastic bags",
     "build new roads",
-    "ban plastic bags"
+    "close supermarkets"
    ],
    "correct": "ban plastic bags",
-   "marks": 1
+   "explanation": "Correct answer: ban plastic bags"
   },
   {
-   "type": "single_choice",
-   "question": "Who is unhappy about the event?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Who is unhappy about the event?",
+   "order": 7,
+   "answers": [
     "taxi drivers",
     "teachers",
     "supermarkets"
    ],
    "correct": "taxi drivers",
-   "marks": 1
+   "explanation": "Correct answer: taxi drivers"
   },
   {
-   "type": "single_choice",
-   "question": "True, False or Not given: The mayor said he would cancel Green Week.",
-   "options": [
+   "title": "True, False or Not given",
+   "text": "The mayor said he would cancel Green Week.",
+   "order": 8,
+   "answers": [
     "False",
-    "Not given",
-    "True"
+    "True",
+    "Not given"
    ],
    "correct": "False",
-   "marks": 1
+   "explanation": "Correct answer: False"
   }
  ]
 }

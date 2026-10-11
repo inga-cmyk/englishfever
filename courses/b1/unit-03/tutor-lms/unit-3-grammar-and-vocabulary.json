@@ -1,455 +1,493 @@
 {
  "title": "Unit 3 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "It's cold. I ___ the heating on.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "It's cold. I ___ the heating on.",
+   "order": 1,
+   "answers": [
+    "will turn",
     "am going to turn",
-    "am turning",
-    "will turn"
+    "am turning"
    ],
    "correct": "will turn",
-   "marks": 1
+   "explanation": "Correct answer: will turn"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ to Rome next week. We have the tickets.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We ___ to Rome next week. We have the tickets.",
+   "order": 2,
+   "answers": [
     "are flying",
-    "fly",
-    "will fly"
+    "will fly",
+    "fly"
    ],
    "correct": "are flying",
-   "marks": 1
+   "explanation": "Correct answer: are flying"
   },
   {
-   "type": "single_choice",
-   "question": "Look at those clouds! It ___.",
-   "options": [
-    "will rain",
+   "title": "Choose the correct answer",
+   "text": "Look at those clouds! It ___.",
+   "order": 3,
+   "answers": [
     "is going to rain",
+    "will rain",
     "rains"
    ],
    "correct": "is going to rain",
-   "marks": 1
+   "explanation": "Correct answer: is going to rain"
   },
   {
-   "type": "single_choice",
-   "question": "I think she ___ the job. She is very good.",
-   "options": [
-    "is getting",
+   "title": "Choose the correct answer",
+   "text": "I think she ___ the job. She is very good.",
+   "order": 4,
+   "answers": [
     "will get",
+    "is getting",
     "gets"
    ],
    "correct": "will get",
-   "marks": 1
+   "explanation": "Correct answer: will get"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 5,
+   "answers": [
     "When I arrive, I'll call you.",
-    "When I arrived, I'll call you.",
-    "When I'll arrive, I call you."
+    "When I'll arrive, I call you.",
+    "When I arrived, I'll call you."
    ],
    "correct": "When I arrive, I'll call you.",
-   "marks": 1
+   "explanation": "Correct answer: When I arrive, I'll call you."
   },
   {
-   "type": "single_choice",
-   "question": "___ you help me with this, please?",
-   "options": [
-    "Are",
+   "title": "Choose the correct answer",
+   "text": "___ you help me with this, please?",
+   "order": 6,
+   "answers": [
     "Will",
+    "Are",
     "Do"
    ],
    "correct": "Will",
-   "marks": 1
+   "explanation": "Correct answer: Will"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ forget your birthday. I promise!",
-   "options": [
-    "don't",
+   "title": "Choose the correct answer",
+   "text": "I ___ forget your birthday. I promise!",
+   "order": 7,
+   "answers": [
+    "won't",
     "am not",
-    "won't"
+    "don't"
    ],
    "correct": "won't",
-   "marks": 1
+   "explanation": "Correct answer: won't"
   },
   {
-   "type": "single_choice",
-   "question": "She ___ a baby. She told us yesterday.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She ___ a baby. She told us yesterday.",
+   "order": 8,
+   "answers": [
     "is going to have",
     "will have",
     "has"
    ],
    "correct": "is going to have",
-   "marks": 1
+   "explanation": "Correct answer: is going to have"
   },
   {
-   "type": "single_choice",
-   "question": "What time ___ the train leave tomorrow?",
-   "options": [
-    "will",
+   "title": "Choose the correct answer",
+   "text": "What time ___ the train leave tomorrow?",
+   "order": 9,
+   "answers": [
     "does",
-    "is"
+    "is",
+    "will"
    ],
    "correct": "does",
-   "marks": 1
+   "explanation": "Correct answer: does"
   },
   {
-   "type": "single_choice",
-   "question": "In the future, people ___ in space.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "In the future, people ___ in space.",
+   "order": 10,
+   "answers": [
+    "will probably live",
     "are living",
-    "probably live",
-    "will probably live"
+    "probably live"
    ],
    "correct": "will probably live",
-   "marks": 1
+   "explanation": "Correct answer: will probably live"
   },
   {
-   "type": "single_choice",
-   "question": "My plans: I ___ study law next year.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "My plans: I ___ study law next year.",
+   "order": 11,
+   "answers": [
     "am going to",
     "will to",
     "going"
    ],
    "correct": "am going to",
-   "marks": 1
+   "explanation": "Correct answer: am going to"
   },
   {
-   "type": "single_choice",
-   "question": "Which sentence is a prediction?",
-   "options": [
-    "I'm meeting Tom at 7.",
+   "title": "Choose the correct answer",
+   "text": "Which sentence is a prediction?",
+   "order": 12,
+   "answers": [
     "I think prices will go up.",
+    "I'm meeting Tom at 7.",
     "I'm going to buy bread."
    ],
    "correct": "I think prices will go up.",
-   "marks": 1
+   "explanation": "Correct answer: I think prices will go up."
   },
   {
-   "type": "single_choice",
-   "question": "I'm tired. I ___ to bed early.",
-   "options": [
-    "am thinking go",
+   "title": "Choose the correct answer",
+   "text": "I'm tired. I ___ to bed early.",
+   "order": 13,
+   "answers": [
     "think I'll go",
+    "am thinking go",
     "go"
    ],
    "correct": "think I'll go",
-   "marks": 1
+   "explanation": "Correct answer: think I'll go"
   },
   {
-   "type": "single_choice",
-   "question": "Are you ___ to the party tonight?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Are you ___ to the party tonight?",
+   "order": 14,
+   "answers": [
+    "going",
     "will",
-    "go",
-    "going"
+    "go"
    ],
    "correct": "going",
-   "marks": 1
+   "explanation": "Correct answer: going"
   },
   {
-   "type": "single_choice",
-   "question": "They ___ married in June. Everything is organised.",
-   "options": [
-    "get",
+   "title": "Choose the correct answer",
+   "text": "They ___ married in June. Everything is organised.",
+   "order": 15,
+   "answers": [
     "are getting",
-    "will get"
+    "will get",
+    "get"
    ],
    "correct": "are getting",
-   "marks": 1
+   "explanation": "Correct answer: are getting"
   },
   {
-   "type": "single_choice",
-   "question": "By 2040, cars ___ without drivers.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "By 2040, cars ___ without drivers.",
+   "order": 16,
+   "answers": [
     "will probably drive",
-    "drove",
-    "are driving"
+    "are driving",
+    "drove"
    ],
    "correct": "will probably drive",
-   "marks": 1
+   "explanation": "Correct answer: will probably drive"
   },
   {
-   "type": "single_choice",
-   "question": "He ___ be late. The traffic is terrible.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "He ___ be late. The traffic is terrible.",
+   "order": 17,
+   "answers": [
     "is going to",
     "will to",
     "is"
    ],
    "correct": "is going to",
-   "marks": 1
+   "explanation": "Correct answer: is going to"
   },
   {
-   "type": "single_choice",
-   "question": "If it rains, we ___ at home.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "If it rains, we ___ at home.",
+   "order": 18,
+   "answers": [
     "will stay",
     "stay",
     "are staying"
    ],
    "correct": "will stay",
-   "marks": 1
+   "explanation": "Correct answer: will stay"
   },
   {
-   "type": "single_choice",
-   "question": "As soon as I ___ the results, I will tell you.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "As soon as I ___ the results, I will tell you.",
+   "order": 19,
+   "answers": [
     "get",
-    "am getting",
-    "will get"
+    "will get",
+    "am getting"
    ],
    "correct": "get",
-   "marks": 1
+   "explanation": "Correct answer: get"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "It probably doesn't rain tomorrow.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 20,
+   "answers": [
+    "It probably won't rain.",
     "It won't probably rain.",
-    "It probably won't rain."
+    "It probably doesn't rain tomorrow."
    ],
    "correct": "It probably won't rain.",
-   "marks": 1
+   "explanation": "Correct answer: It probably won't rain."
   },
   {
-   "type": "single_choice",
-   "question": "I ___ this letter before I leave.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I ___ this letter before I leave.",
+   "order": 21,
+   "answers": [
+    "will post",
     "post",
-    "am posting",
-    "will post"
+    "am posting"
    ],
    "correct": "will post",
-   "marks": 1
+   "explanation": "Correct answer: will post"
   },
   {
-   "type": "single_choice",
-   "question": "The shop ___ at nine tomorrow.",
-   "options": [
-    "is open",
+   "title": "Choose the correct answer",
+   "text": "The shop ___ at nine tomorrow.",
+   "order": 22,
+   "answers": [
+    "opens",
     "will opening",
-    "opens"
+    "is open"
    ],
    "correct": "opens",
-   "marks": 1
+   "explanation": "Correct answer: opens"
   },
   {
-   "type": "single_choice",
-   "question": "To 'download' means to ...",
-   "options": [
-    "delete a file",
+   "title": "Choose the correct answer",
+   "text": "To 'download' means to ...",
+   "order": 23,
+   "answers": [
+    "copy a file to your device",
     "send a file away",
-    "copy a file to your device"
+    "delete a file"
    ],
    "correct": "copy a file to your device",
-   "marks": 1
+   "explanation": "Correct answer: copy a file to your device"
   },
   {
-   "type": "single_choice",
-   "question": "You use a ___ to log in to your account.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "You use a ___ to log in to your account.",
+   "order": 24,
+   "answers": [
     "password",
     "screen",
     "device"
    ],
    "correct": "password",
-   "marks": 1
+   "explanation": "Correct answer: password"
   },
   {
-   "type": "single_choice",
-   "question": "To 'charge' a phone means to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'charge' a phone means to ...",
+   "order": 25,
+   "answers": [
     "put electricity in it",
     "break it",
     "sell it"
    ],
    "correct": "put electricity in it",
-   "marks": 1
+   "explanation": "Correct answer: put electricity in it"
   },
   {
-   "type": "single_choice",
-   "question": "'Artificial intelligence' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Artificial intelligence' is ...",
+   "order": 26,
+   "answers": [
     "smart computer systems",
-    "a new phone",
-    "a type of cable"
+    "a type of cable",
+    "a new phone"
    ],
    "correct": "smart computer systems",
-   "marks": 1
+   "explanation": "Correct answer: smart computer systems"
   },
   {
-   "type": "single_choice",
-   "question": "'Online' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Online' means ...",
+   "order": 27,
+   "answers": [
     "connected to the internet",
     "switched off",
     "expensive"
    ],
    "correct": "connected to the internet",
-   "marks": 1
+   "explanation": "Correct answer: connected to the internet"
   },
   {
-   "type": "single_choice",
-   "question": "A 'website' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'website' is ...",
+   "order": 28,
+   "answers": [
     "a place on the internet",
     "a type of phone",
     "a battery"
    ],
    "correct": "a place on the internet",
-   "marks": 1
+   "explanation": "Correct answer: a place on the internet"
   },
   {
-   "type": "single_choice",
-   "question": "An 'app' is ...",
-   "options": [
-    "a screen",
+   "title": "Choose the correct answer",
+   "text": "An 'app' is ...",
+   "order": 29,
+   "answers": [
     "a program for a phone",
+    "a screen",
     "a kind of computer"
    ],
    "correct": "a program for a phone",
-   "marks": 1
+   "explanation": "Correct answer: a program for a phone"
   },
   {
-   "type": "single_choice",
-   "question": "To 'upload' means to ...",
-   "options": [
-    "read a book",
+   "title": "Choose the correct answer",
+   "text": "To 'upload' means to ...",
+   "order": 30,
+   "answers": [
     "send a file to the internet",
-    "buy an app"
+    "buy an app",
+    "read a book"
    ],
    "correct": "send a file to the internet",
-   "marks": 1
+   "explanation": "Correct answer: send a file to the internet"
   },
   {
-   "type": "single_choice",
-   "question": "To 'invent' means to ...",
-   "options": [
-    "lose something",
+   "title": "Choose the correct answer",
+   "text": "To 'invent' means to ...",
+   "order": 31,
+   "answers": [
     "make something new",
-    "break something"
+    "break something",
+    "lose something"
    ],
    "correct": "make something new",
-   "marks": 1
+   "explanation": "Correct answer: make something new"
   },
   {
-   "type": "single_choice",
-   "question": "'Update' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Update' means ...",
+   "order": 32,
+   "answers": [
     "make newer",
     "turn off",
     "forget"
    ],
    "correct": "make newer",
-   "marks": 1
+   "explanation": "Correct answer: make newer"
   },
   {
-   "type": "single_choice",
-   "question": "A strong ___ has numbers and letters.",
-   "options": [
-    "screen",
+   "title": "Choose the correct answer",
+   "text": "A strong ___ has numbers and letters.",
+   "order": 33,
+   "answers": [
     "password",
+    "screen",
     "device"
    ],
    "correct": "password",
-   "marks": 1
+   "explanation": "Correct answer: password"
   },
   {
-   "type": "single_choice",
-   "question": "When you 'search' online, you ...",
-   "options": [
-    "make a phone",
+   "title": "Choose the correct answer",
+   "text": "When you 'search' online, you ...",
+   "order": 34,
+   "answers": [
     "look for information",
+    "make a phone",
     "turn off a screen"
    ],
    "correct": "look for information",
-   "marks": 1
+   "explanation": "Correct answer: look for information"
   },
   {
-   "type": "single_choice",
-   "question": "To 'delete' is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'delete' is to ...",
+   "order": 35,
+   "answers": [
     "remove",
     "add",
     "copy"
    ],
    "correct": "remove",
-   "marks": 1
+   "explanation": "Correct answer: remove"
   },
   {
-   "type": "single_choice",
-   "question": "A 'device' is ...",
-   "options": [
-    "a language",
+   "title": "Choose the correct answer",
+   "text": "A 'device' is ...",
+   "order": 36,
+   "answers": [
     "a machine or small electronic object",
-    "a person"
+    "a person",
+    "a language"
    ],
    "correct": "a machine or small electronic object",
-   "marks": 1
+   "explanation": "Correct answer: a machine or small electronic object"
   },
   {
-   "type": "single_choice",
-   "question": "Software is ...",
-   "options": [
-    "the screen",
+   "title": "Choose the correct answer",
+   "text": "Software is ...",
+   "order": 37,
+   "answers": [
+    "programs for a computer",
     "the keyboard",
-    "programs for a computer"
+    "the screen"
    ],
    "correct": "programs for a computer",
-   "marks": 1
+   "explanation": "Correct answer: programs for a computer"
   },
   {
-   "type": "single_choice",
-   "question": "Internet 'connection' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Internet 'connection' means ...",
+   "order": 38,
+   "answers": [
     "a link to the internet",
     "a type of app",
     "a password"
    ],
    "correct": "a link to the internet",
-   "marks": 1
+   "explanation": "Correct answer: a link to the internet"
   },
   {
-   "type": "single_choice",
-   "question": "My phone is cracked. The ___ is broken.",
-   "options": [
-    "search",
+   "title": "Choose the correct answer",
+   "text": "My phone is cracked. The ___ is broken.",
+   "order": 39,
+   "answers": [
+    "screen",
     "software",
-    "screen"
+    "search"
    ],
    "correct": "screen",
-   "marks": 1
+   "explanation": "Correct answer: screen"
   },
   {
-   "type": "single_choice",
-   "question": "I need to ___ my phone. The battery is nearly empty.",
-   "options": [
-    "invent",
+   "title": "Choose the correct answer",
+   "text": "I need to ___ my phone. The battery is nearly empty.",
+   "order": 40,
+   "answers": [
+    "charge",
     "delete",
-    "charge"
+    "invent"
    ],
    "correct": "charge",
-   "marks": 1
+   "explanation": "Correct answer: charge"
   }
  ]
 }

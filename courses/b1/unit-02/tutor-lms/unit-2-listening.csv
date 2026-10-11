@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 2 Listening,single_choice,The flight to Berlin has a delay of ...,nine hours,90 minutes,30 minutes,B
-Unit 2 Listening,single_choice,The man is worried because he will miss ...,a meeting at the airport,his luggage,a connecting flight,C
-Unit 2 Listening,single_choice,He booked the ticket ...,by phone yesterday,"online, two weeks ago",at the airport,B
-Unit 2 Listening,single_choice,The alternative flight goes to ...,Frankfurt,Paris,Munich,C
-Unit 2 Listening,single_choice,From the new airport he can ...,take a bus,take a taxi,take a train,C
-Unit 2 Listening,single_choice,The train journey takes about ...,one hour,ten hours,four hours,C
-Unit 2 Listening,single_choice,He can't take the morning flight because ...,it's too expensive,it's full,he has a meeting at ten,C
-Unit 2 Listening,single_choice,Boarding starts at ...,seven o'clock,eight o'clock,six o'clock,A
+"settings","Unit 2 Listening","Listen and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>The flight to Berlin has a delay of ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: 90 minutes</p>",""
+"answer","nine hours","text","0","0","","1"
+"answer","90 minutes","text","1","0","","2"
+"answer","30 minutes","text","0","0","","3"
+"question","Choose the correct answer","<p>The man is worried because he will miss ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: a connecting flight</p>",""
+"answer","a meeting at the airport","text","0","0","","1"
+"answer","his luggage","text","0","0","","2"
+"answer","a connecting flight","text","1","0","","3"
+"question","Choose the correct answer","<p>He booked the ticket ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: online, two weeks ago</p>",""
+"answer","by phone yesterday","text","0","0","","1"
+"answer","online, two weeks ago","text","1","0","","2"
+"answer","at the airport","text","0","0","","3"
+"question","Choose the correct answer","<p>The alternative flight goes to ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: Munich</p>",""
+"answer","Frankfurt","text","0","0","","1"
+"answer","Paris","text","0","0","","2"
+"answer","Munich","text","1","0","","3"
+"question","Choose the correct answer","<p>From the new airport he can ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: take a train</p>",""
+"answer","take a bus","text","0","0","","1"
+"answer","take a taxi","text","0","0","","2"
+"answer","take a train","text","1","0","","3"
+"question","Choose the correct answer","<p>The train journey takes about ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: four hours</p>",""
+"answer","one hour","text","0","0","","1"
+"answer","ten hours","text","0","0","","2"
+"answer","four hours","text","1","0","","3"
+"question","Choose the correct answer","<p>He can't take the morning flight because ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: he has a meeting at ten</p>",""
+"answer","it's too expensive","text","0","0","","1"
+"answer","it's full","text","0","0","","2"
+"answer","he has a meeting at ten","text","1","0","","3"
+"question","Choose the correct answer","<p>Boarding starts at ...</p>","single_choice","1.00","8","","","1","<p>Correct answer: seven o'clock</p>",""
+"answer","seven o'clock","text","1","0","","1"
+"answer","eight o'clock","text","0","0","","2"
+"answer","six o'clock","text","0","0","","3"

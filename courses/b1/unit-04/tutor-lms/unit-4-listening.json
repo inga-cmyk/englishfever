@@ -1,101 +1,109 @@
 {
  "title": "Unit 4 Listening",
- "description": "<h3>University open day</h3><p>Listen to the audio file twice (b1-unit-04-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "The Business degree lasts ...",
-   "options": [
-    "four years",
+   "title": "Choose the correct answer",
+   "text": "The Business degree lasts ...",
+   "order": 1,
+   "answers": [
     "three years",
+    "four years",
     "one year"
    ],
    "correct": "three years",
-   "marks": 1
+   "explanation": "Correct answer: three years"
   },
   {
-   "type": "single_choice",
-   "question": "In the first year, all students ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "In the first year, all students ...",
+   "order": 2,
+   "answers": [
     "study the same subjects",
-    "do a placement",
-    "choose their subjects"
+    "choose their subjects",
+    "do a placement"
    ],
    "correct": "study the same subjects",
-   "marks": 1
+   "explanation": "Correct answer: study the same subjects"
   },
   {
-   "type": "single_choice",
-   "question": "In the second year, students can choose between ...",
-   "options": [
-    "science and history",
+   "title": "Choose the correct answer",
+   "text": "In the second year, students can choose between ...",
+   "order": 3,
+   "answers": [
+    "marketing, finance and management",
     "law and art",
-    "marketing, finance and management"
+    "science and history"
    ],
    "correct": "marketing, finance and management",
-   "marks": 1
+   "explanation": "Correct answer: marketing, finance and management"
   },
   {
-   "type": "single_choice",
-   "question": "The final project is about ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The final project is about ...",
+   "order": 4,
+   "answers": [
     "10,000 words",
-    "100 pages",
-    "1,000 words"
+    "1,000 words",
+    "100 pages"
    ],
    "correct": "10,000 words",
-   "marks": 1
+   "explanation": "Correct answer: 10,000 words"
   },
   {
-   "type": "single_choice",
-   "question": "Students ___ pay for books.",
-   "options": [
-    "mustn't",
+   "title": "Choose the correct answer",
+   "text": "Students ___ pay for books.",
+   "order": 5,
+   "answers": [
+    "don't have to",
     "must",
-    "don't have to"
+    "mustn't"
    ],
    "correct": "don't have to",
-   "marks": 1
+   "explanation": "Correct answer: don't have to"
   },
   {
-   "type": "single_choice",
-   "question": "Students must attend at least ...",
-   "options": [
-    "50% of lessons",
+   "title": "Choose the correct answer",
+   "text": "Students must attend at least ...",
+   "order": 6,
+   "answers": [
     "80% of lessons",
+    "50% of lessons",
     "all lessons"
    ],
    "correct": "80% of lessons",
-   "marks": 1
+   "explanation": "Correct answer: 80% of lessons"
   },
   {
-   "type": "single_choice",
-   "question": "The placement lasts ...",
-   "options": [
-    "two weeks",
+   "title": "Choose the correct answer",
+   "text": "The placement lasts ...",
+   "order": 7,
+   "answers": [
     "ten weeks",
-    "ten months"
+    "ten months",
+    "two weeks"
    ],
    "correct": "ten weeks",
-   "marks": 1
+   "explanation": "Correct answer: ten weeks"
   },
   {
-   "type": "single_choice",
-   "question": "The application deadline is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The application deadline is ...",
+   "order": 8,
+   "answers": [
     "1 May",
-    "1 March",
-    "1 June"
+    "1 June",
+    "1 March"
    ],
    "correct": "1 May",
-   "marks": 1
+   "explanation": "Correct answer: 1 May"
   }
  ]
 }

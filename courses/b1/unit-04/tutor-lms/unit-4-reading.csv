@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 4 Reading,single_choice,The job is at a ...,hospital,café,bank,B
-Unit 4 Reading,single_choice,The applicant must be at least ...,16,18,21,B
-Unit 4 Reading,single_choice,The job is ...,full-time,only on weekends,part-time,C
-Unit 4 Reading,single_choice,Applicants don't have to ...,send a CV,have a degree,speak English,B
-Unit 4 Reading,single_choice,The deadline for applications is ...,1 October,early October,30 September,C
-Unit 4 Reading,single_choice,Interviews will be ...,in November,on 30 September,in early October,C
-Unit 4 Reading,single_choice,Rita has worked before as ...,a cook,a waitress,a teacher,B
-Unit 4 Reading,single_choice,"True, False or Not given: Rita can only work in the mornings.",Not given,True,False,C
+"settings","Unit 4 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>The job is at a ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: café</p>",""
+"answer","hospital","text","0","0","","1"
+"answer","café","text","1","0","","2"
+"answer","bank","text","0","0","","3"
+"question","Choose the correct answer","<p>The applicant must be at least ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: 18</p>",""
+"answer","16","text","0","0","","1"
+"answer","18","text","1","0","","2"
+"answer","21","text","0","0","","3"
+"question","Choose the correct answer","<p>The job is ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: part-time</p>",""
+"answer","full-time","text","0","0","","1"
+"answer","only on weekends","text","0","0","","2"
+"answer","part-time","text","1","0","","3"
+"question","Choose the correct answer","<p>Applicants don't have to ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: have a degree</p>",""
+"answer","send a CV","text","0","0","","1"
+"answer","have a degree","text","1","0","","2"
+"answer","speak English","text","0","0","","3"
+"question","Choose the correct answer","<p>The deadline for applications is ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: 30 September</p>",""
+"answer","1 October","text","0","0","","1"
+"answer","early October","text","0","0","","2"
+"answer","30 September","text","1","0","","3"
+"question","Choose the correct answer","<p>Interviews will be ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: in early October</p>",""
+"answer","in November","text","0","0","","1"
+"answer","on 30 September","text","0","0","","2"
+"answer","in early October","text","1","0","","3"
+"question","Choose the correct answer","<p>Rita has worked before as ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: a waitress</p>",""
+"answer","a cook","text","0","0","","1"
+"answer","a waitress","text","1","0","","2"
+"answer","a teacher","text","0","0","","3"
+"question","True, False or Not given","<p>Rita can only work in the mornings.</p>","single_choice","1.00","8","","","1","<p>Correct answer: False</p>",""
+"answer","Not given","text","0","0","","1"
+"answer","True","text","0","0","","2"
+"answer","False","text","1","0","","3"

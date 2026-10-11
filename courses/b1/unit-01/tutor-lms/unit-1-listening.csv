@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 1 Listening,single_choice,Ieva started the club because she ...,didn't know anybody in Riga,lost her job,wanted to make money,A
-Unit 1 Listening,single_choice,The first meeting was a ...,board game evening,climbing trip,pottery class,A
-Unit 1 Listening,single_choice,The club now has ...,eight members,over sixty members,a thousand members,B
-Unit 1 Listening,single_choice,This month the club is doing ...,cooking,pottery,climbing,B
-Unit 1 Listening,single_choice,Ieva felt ... when she first went climbing.,bored,afraid,tired,B
-Unit 1 Listening,single_choice,The club costs ...,fifty euros a year,five euros a month,nothing,B
-Unit 1 Listening,single_choice,What does Ieva say is most important?,being curious,being young,being fit,A
-Unit 1 Listening,single_choice,The club meets ...,every Monday,every second Thursday,every Saturday,B
+"settings","Unit 1 Listening","Listen and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>Ieva started the club because she ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: didn't know anybody in Riga</p>",""
+"answer","didn't know anybody in Riga","text","1","0","","1"
+"answer","lost her job","text","0","0","","2"
+"answer","wanted to make money","text","0","0","","3"
+"question","Choose the correct answer","<p>The first meeting was a ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: board game evening</p>",""
+"answer","board game evening","text","1","0","","1"
+"answer","climbing trip","text","0","0","","2"
+"answer","pottery class","text","0","0","","3"
+"question","Choose the correct answer","<p>The club now has ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: over sixty members</p>",""
+"answer","eight members","text","0","0","","1"
+"answer","over sixty members","text","1","0","","2"
+"answer","a thousand members","text","0","0","","3"
+"question","Choose the correct answer","<p>This month the club is doing ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: pottery</p>",""
+"answer","cooking","text","0","0","","1"
+"answer","pottery","text","1","0","","2"
+"answer","climbing","text","0","0","","3"
+"question","Choose the correct answer","<p>Ieva felt ... when she first went climbing.</p>","single_choice","1.00","5","","","1","<p>Correct answer: afraid</p>",""
+"answer","bored","text","0","0","","1"
+"answer","afraid","text","1","0","","2"
+"answer","tired","text","0","0","","3"
+"question","Choose the correct answer","<p>The club costs ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: five euros a month</p>",""
+"answer","fifty euros a year","text","0","0","","1"
+"answer","five euros a month","text","1","0","","2"
+"answer","nothing","text","0","0","","3"
+"question","Choose the correct answer","<p>What does Ieva say is most important?</p>","single_choice","1.00","7","","","1","<p>Correct answer: being curious</p>",""
+"answer","being curious","text","1","0","","1"
+"answer","being young","text","0","0","","2"
+"answer","being fit","text","0","0","","3"
+"question","Choose the correct answer","<p>The club meets ...</p>","single_choice","1.00","8","","","1","<p>Correct answer: every second Thursday</p>",""
+"answer","every Monday","text","0","0","","1"
+"answer","every second Thursday","text","1","0","","2"
+"answer","every Saturday","text","0","0","","3"

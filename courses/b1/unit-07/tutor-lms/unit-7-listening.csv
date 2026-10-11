@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 7 Listening,single_choice,Markus has just started ...,recycling,gardening,cooking,A
-Unit 7 Listening,single_choice,Who gave him the bags?,Ella,the council,his neighbour,C
-Unit 7 Listening,single_choice,How many bins are there?,five,three,two,B
-Unit 7 Listening,single_choice,The city collects the bins on ...,Mondays,Wednesdays,Fridays,B
-Unit 7 Listening,single_choice,What did the council say about food waste?,it was too expensive,a special bin will be possible next month,they would not collect it,B
-Unit 7 Listening,single_choice,Markus makes compost ...,at work,in the kitchen,in the garden,C
-Unit 7 Listening,single_choice,Ella can take old batteries to ...,the school,the library,the supermarket,C
-Unit 7 Listening,single_choice,Ella thinks she should use ...,a reusable bottle,plastic bags,a paper cup,A
+"settings","Unit 7 Listening","Listen and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>Markus has just started ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: recycling</p>",""
+"answer","recycling","text","1","0","","1"
+"answer","gardening","text","0","0","","2"
+"answer","cooking","text","0","0","","3"
+"question","Choose the correct answer","<p>Who gave him the bags?</p>","single_choice","1.00","2","","","1","<p>Correct answer: his neighbour</p>",""
+"answer","Ella","text","0","0","","1"
+"answer","the council","text","0","0","","2"
+"answer","his neighbour","text","1","0","","3"
+"question","Choose the correct answer","<p>How many bins are there?</p>","single_choice","1.00","3","","","1","<p>Correct answer: three</p>",""
+"answer","five","text","0","0","","1"
+"answer","three","text","1","0","","2"
+"answer","two","text","0","0","","3"
+"question","Choose the correct answer","<p>The city collects the bins on ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: Wednesdays</p>",""
+"answer","Mondays","text","0","0","","1"
+"answer","Wednesdays","text","1","0","","2"
+"answer","Fridays","text","0","0","","3"
+"question","Choose the correct answer","<p>What did the council say about food waste?</p>","single_choice","1.00","5","","","1","<p>Correct answer: a special bin will be possible next month</p>",""
+"answer","it was too expensive","text","0","0","","1"
+"answer","a special bin will be possible next month","text","1","0","","2"
+"answer","they would not collect it","text","0","0","","3"
+"question","Choose the correct answer","<p>Markus makes compost ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: in the garden</p>",""
+"answer","at work","text","0","0","","1"
+"answer","in the kitchen","text","0","0","","2"
+"answer","in the garden","text","1","0","","3"
+"question","Choose the correct answer","<p>Ella can take old batteries to ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: the supermarket</p>",""
+"answer","the school","text","0","0","","1"
+"answer","the library","text","0","0","","2"
+"answer","the supermarket","text","1","0","","3"
+"question","Choose the correct answer","<p>Ella thinks she should use ...</p>","single_choice","1.00","8","","","1","<p>Correct answer: a reusable bottle</p>",""
+"answer","a reusable bottle","text","1","0","","1"
+"answer","plastic bags","text","0","0","","2"
+"answer","a paper cup","text","0","0","","3"

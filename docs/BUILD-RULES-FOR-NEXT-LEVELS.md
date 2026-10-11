@@ -12,7 +12,7 @@ All rules below were found by really importing the B1 package into WordPress (Tu
 | # | Problem found | Cause | Fix (put it in the generator) |
 |---|---|---|---|
 | 1 | Reading and Listening lessons ended with *"Next: do the graded quiz "Unit 1 Reading" in Tutor LMS."* | Text written for the old pipeline. Learners are already in Tutor. "Next" in Tutor means the next lesson, not the quiz. | Delete the sentence. Learners use Tutor's own Previous / Next. Quizzes are at the end of the unit. |
-| 2 | Exam tip about True / False / Not given was shown in every Reading lesson | One generic tip text for all units | Build the tip from the **real task type** of that page (see section 4). Add the True/False/Not given line only if the unit's quiz has such items. |
+| 2 | Exam tip about True / False / Not given was shown in every Reading lesson | One generic tip text for all units | Build the tip from the **real task type** of that page (see section 4). Add the True/False/Not given line only if the practice questions on that page have such items (not the quiz). |
 | 3 | Listening tip said "Write an answer for every question" and "You hear the recording twice" | Wrong for multiple choice. Audio is not recorded yet. | Use the multiple-choice tip set. Say *"Listen twice, if you need to."* |
 | 4 | Lesson title was missing at the top of the lesson | Generator removed the `<h1>`; Tutor does not show the title in the content area | Put the title back as `<h2>` with an icon at the top of every lesson. |
 | 5 | Pages were long and plain: all text in one flow | No template classes used | Use the site's lesson templates (`ef-box` family). See section 3. |
@@ -20,9 +20,9 @@ All rules below were found by really importing the B1 package into WordPress (Tu
 | 7 | Flashcards: text top-left, small, dull; the title appeared twice | Default Dialogcards CSS; title and description were the same text | Inject CSS into the H5P iframe (same origin): centre text, 30 px bold, coloured card, hide the description. See section 7. |
 | 8 | No speaking practice after Grammar and Vocabulary | Not in the package | Add a "Speaking practice" box with 10 questions to the end of every Grammar and Vocabulary lesson (section 5). |
 | 9 | No place to hand in writing | Writing lesson said "Write both emails" with nothing to submit | Add a Tutor **Assignment** after every Writing lesson, with a choice of one task and a rubric (section 6). Change the Writing text to "Choose one email". |
-| 10 | Quiz CSV imported with literal `<br>` in gap-fill sentences (seen in another quiz) | HTML was put in an **answer** field. Tutor prints tags in answers as text. | No HTML in answer rows at all (section 9). |
-| 11 | Same instruction in title, description and answer ("Complete the sentence" ... "Complete the sentence using ...") | Generator filled all three fields with the instruction | One instruction, one place (section 9). |
-| 12 | A CSV exported from one course and imported into another produced broken questions (wrong question type, cut-off text, 0 points) | Tutor's own export escapes apostrophes with backslashes and puts `\"` inside HTML. The importer reads with `\` as the escape character, so fields split at commas. | Never move quizzes between courses by CSV. Generate a clean CSV (section 9) or copy the quiz in the database / use Tutor's JSON export. |
+| 10 | Quiz CSV imported with literal `<br>` in gap-fill sentences (seen in another quiz) | HTML was put in an **answer** field. Tutor prints tags in answers as text. | No HTML in answer rows at all (section 8). |
+| 11 | Same instruction in title, description and answer ("Complete the sentence" ... "Complete the sentence using ...") | Generator filled all three fields with the instruction | One instruction, one place (section 8). |
+| 12 | A CSV exported from one course and imported into another produced broken questions (wrong question type, cut-off text, 0 points) | Tutor's own export escapes apostrophes with backslashes and puts `\"` inside HTML. The importer reads with `\` as the escape character, so fields split at commas. | Never move quizzes between courses by CSV. Generate a clean CSV (section 8) or copy the quiz in the database / use Tutor's JSON export. |
 
 ---
 
@@ -85,7 +85,7 @@ Never use one tip text for all units. Check what the page really asks the learne
   1. Read the title and look at the text quickly.
   2. Read each question. Then find the part of the text that answers it.
   3. Check all three options. Wrong options often use words from the text, but they say something different.
-  4. *(only if the quiz has True / False / Not given items)* Some questions are True / False / Not given. *Not given* means the text does not say it.
+  4. *(only if the practice questions on this page have True / False / Not given items – not the quiz)* Some questions are True / False / Not given. *Not given* means the text does not say it.
 * **Listening, multiple choice (3 options):**
   1. Read the questions and the three options before you listen.
   2. Listen for the main idea, not for every word.
@@ -157,11 +157,7 @@ The script tag needs `data-no-optimize="1" data-no-defer="1" data-cfasync="false
 
 ---
 
-## 8. (section missing in the source text — number kept so references stay stable)
-
----
-
-## 9. Tutor quizzes: CSV that imports correctly
+## 8. Tutor quizzes: CSV that imports correctly
 
 Source of truth: Tutor Pro `QuizImportExport::quiz_import_data` (AJAX action `quiz_import_data`, fields `topic_id`, `_tutor_nonce`, file `csv_file`). Read with `fgetcsv(',', '"', '\\')`.
 
@@ -202,7 +198,7 @@ Import ONE quiz first and open it before importing the rest.
 
 ---
 
-## 10. Build and import pipeline (what worked in B1)
+## 9. Build and import pipeline (what worked in B1)
 
 Everything below ran from the browser (logged in as admin), fetching source files from GitHub raw, so no file had to be pasted:
 
@@ -221,7 +217,7 @@ Pitfalls:
 
 ---
 
-## 11. QA checklist per unit (do before publishing)
+## 10. QA checklist per unit (do before publishing)
 
 - [ ] 6 lessons, 1 assignment, 3 quizzes, in the right order.
 - [ ] Lesson title at the top of every lesson; no "Next: … in Tutor LMS".
@@ -236,7 +232,7 @@ Pitfalls:
 
 ---
 
-## 12. Open items for B1 (carry over to the next levels)
+## 11. Open items for B1 (carry over to the next levels)
 
 * **Audio:** 8 listening recordings are not made. Listening quiz descriptions mention `b1-unit-NN-listening-quiz.mp3`.
 * **Images:** only emoji icons so far. Plan: one real photo per unit (licensed, with alt text and credit), flashcard images later.
@@ -246,6 +242,25 @@ Pitfalls:
 
 ---
 
-## 13. Prompt skeleton for generating the next level (give to the AI generator)
+## 12. Prompt skeleton for generating the next level (give to the AI generator)
 
-> Build a Tutor LMS course for CEFR level **X** with 8 units, using the rules in `docs/BUILD-RULES-FOR-NEXT-LEVELS.md`. For each unit produce: 6 lesson HTML files with the `ef-box` templates (section 3), 13 H5P packages, 3 quiz files in the CSV format of section 9 (40 / 8 / 8 questions), 10 speaking questions each for Grammar and Vocabulary, 2 writing tasks (informal, formal) and the rubric of section 6. Write exam tips from the real task type (section 4). Do not put HTML in answers. Do not repeat instructions between title, question text and answers. Run the self-check of section 9 and the QA list of section 11 and report the result before importing.
+> Build a Tutor LMS course for CEFR level **X** with 8 units, using the rules in `docs/BUILD-RULES-FOR-NEXT-LEVELS.md`. For each unit produce: 6 lesson HTML files with the `ef-box` templates (section 3), 13 H5P packages, 3 quiz files in the CSV format of section 8 (40 / 8 / 8 questions), 10 speaking questions each for Grammar and Vocabulary, 2 writing tasks (informal, formal) and the rubric of section 6. Write exam tips from the real task type (section 4). Do not put HTML in answers. Do not repeat instructions between title, question text and answers. Run the self-check of section 8 and the QA list of section 10 and report the result before importing.
+
+---
+
+## 13. What changed in the generator (tools/build.py, make_wxr.py, units/extras.py)
+
+* **Lessons** use the `ef-box` templates, with the lesson title as `<h2>` at the top (sections 3). Callout paragraphs in the unit text (`Watch out!`, `Common mistake`, `Be careful`) become pink boxes; `Tip`, `Quick test`, `Time words` become yellow boxes. H5P goes in white `praksa` boxes.
+* **Tips** come from the practice questions on the same page (section 4), not from the quiz. The True / False / Not given line appears only when the page's own H5P questions have such items.
+* **No "Next: … in Tutor LMS"**. Listening says "Listen twice, if you need to."
+* **Speaking practice**: 10 questions at the end of every Grammar and Vocabulary lesson, from `tools/units/extras.py`. The build stops if a unit does not have exactly 10 + 10.
+* **Writing**: "Choose one" and a Writing assignment (`courses/<level>/unit-NN/assignment/*.html` + `.json`, settings 15 / 9 / 2 files / 5 MB), rubric from `GRAMMAR_LABEL`. `make_wxr.py` also builds `tutor-lms-assignments.zip`.
+* **Quiz CSV** in the Tutor importer format (settings 21 / question 11 / answer 7 columns, all fields quoted, no HTML in answers, one correct answer). The build runs the self-check from section 8 and **stops on any error**. Reading and listening quiz descriptions are written as `*.description.html`; the CSV `settings` description is plain text.
+* **Flashcards**: no description (the title was repeated).
+* **Level**: `EF_LEVEL=A2 python3 tools/build.py` writes `courses/a2/` and `dist/a2/`; H5P titles start with the level; the audio file names use the level.
+
+### Still to do before building another level
+1. The unit text (`tools/units/uNN.py`) and `extras.py` are B1 content. A2/B2/C1 need their own versions.
+2. Strings that are still B1-specific: the speaking-exam text (`SPEAKING_FORMAT`), the writing core (`WRITING_SECTIONS`), and the tips for task types other than multiple choice.
+3. `WRITING_SIZE` in `build.py` sets the word count and the vocabulary threshold per level (A1/A2: 60–80 words, 4 words; B1: 100–120, 6; B2/C1: 150–180, 8). Check these numbers with the teacher.
+4. The new CSV has been tested by the self-check only. Import ONE quiz into a test course first and open it.

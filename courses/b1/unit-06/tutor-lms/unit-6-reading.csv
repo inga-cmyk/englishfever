@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 6 Reading,single_choice,The writer's job is ...,accountant,teacher,doctor,A
-Unit 6 Reading,single_choice,The writer's main problems are headaches and ...,a broken leg,a sore throat,difficulty sleeping,C
-Unit 6 Reading,single_choice,"If the headaches continue, the doctor says the writer should ...",stop working,take medicine,see their own doctor,C
-Unit 6 Reading,single_choice,Dr Brown suggests a break every ...,hour,day,ten minutes,A
-Unit 6 Reading,single_choice,Dr Brown says walking at lunchtime will help the writer feel ...,less stressed,more tired,hungrier,A
-Unit 6 Reading,single_choice,Coffee after 4 p.m. might ...,cost too much,cure headaches,stop the writer sleeping,C
-Unit 6 Reading,single_choice,What does Dr Brown say about gyms?,you don't have to join one,they are too expensive,you must join one,A
-Unit 6 Reading,single_choice,"True, False or Not given: The writer has already seen a doctor.",Not given,True,False,A
+"settings","Unit 6 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>The writer's job is ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: accountant</p>",""
+"answer","accountant","text","1","0","","1"
+"answer","teacher","text","0","0","","2"
+"answer","doctor","text","0","0","","3"
+"question","Choose the correct answer","<p>The writer's main problems are headaches and ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: difficulty sleeping</p>",""
+"answer","a broken leg","text","0","0","","1"
+"answer","a sore throat","text","0","0","","2"
+"answer","difficulty sleeping","text","1","0","","3"
+"question","Choose the correct answer","<p>If the headaches continue, the doctor says the writer should ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: see their own doctor</p>",""
+"answer","stop working","text","0","0","","1"
+"answer","take medicine","text","0","0","","2"
+"answer","see their own doctor","text","1","0","","3"
+"question","Choose the correct answer","<p>Dr Brown suggests a break every ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: hour</p>",""
+"answer","hour","text","1","0","","1"
+"answer","day","text","0","0","","2"
+"answer","ten minutes","text","0","0","","3"
+"question","Choose the correct answer","<p>Dr Brown says walking at lunchtime will help the writer feel ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: less stressed</p>",""
+"answer","less stressed","text","1","0","","1"
+"answer","more tired","text","0","0","","2"
+"answer","hungrier","text","0","0","","3"
+"question","Choose the correct answer","<p>Coffee after 4 p.m. might ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: stop the writer sleeping</p>",""
+"answer","cost too much","text","0","0","","1"
+"answer","cure headaches","text","0","0","","2"
+"answer","stop the writer sleeping","text","1","0","","3"
+"question","Choose the correct answer","<p>What does Dr Brown say about gyms?</p>","single_choice","1.00","7","","","1","<p>Correct answer: you don't have to join one</p>",""
+"answer","you don't have to join one","text","1","0","","1"
+"answer","they are too expensive","text","0","0","","2"
+"answer","you must join one","text","0","0","","3"
+"question","True, False or Not given","<p>The writer has already seen a doctor.</p>","single_choice","1.00","8","","","1","<p>Correct answer: Not given</p>",""
+"answer","Not given","text","1","0","","1"
+"answer","True","text","0","0","","2"
+"answer","False","text","0","0","","3"

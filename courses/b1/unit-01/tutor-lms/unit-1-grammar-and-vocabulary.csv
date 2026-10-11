@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 1 Grammar and Vocabulary,single_choice,She ___ to work by bus every day.,is going,has gone,goes,C
-Unit 1 Grammar and Vocabulary,single_choice,Look! It ___ outside.,rained,is raining,rains,B
-Unit 1 Grammar and Vocabulary,single_choice,I ___ in Riga for six years.,have lived,am living,live,A
-Unit 1 Grammar and Vocabulary,single_choice,We ___ to the cinema last night.,went,go,have been,A
-Unit 1 Grammar and Vocabulary,single_choice,___ you ever been to Norway?,Did,Are,Have,C
-Unit 1 Grammar and Vocabulary,single_choice,He ___ breakfast at the moment.,have,is having,has,B
-Unit 1 Grammar and Vocabulary,single_choice,I have worked here ___ 2019.,since,ago,for,A
-Unit 1 Grammar and Vocabulary,single_choice,I have worked here ___ five years.,since,for,from,B
-Unit 1 Grammar and Vocabulary,single_choice,They ___ a new car last month.,bought,have bought,are buying,A
-Unit 1 Grammar and Vocabulary,single_choice,My mother ___ three languages.,has spoken,speaks,is speaking,B
-Unit 1 Grammar and Vocabulary,single_choice,What ___ you doing right now?,do,are,have,B
-Unit 1 Grammar and Vocabulary,single_choice,I ___ never ___ sushi.,am / eating,have / eaten,did / eat,B
-Unit 1 Grammar and Vocabulary,single_choice,"She ___ her keys, so she can't get in.",loses,lost yesterday,has lost,C
-Unit 1 Grammar and Vocabulary,single_choice,He is a vegetarian. He ___ meat.,isn't eating,doesn't eat,didn't eat,B
-Unit 1 Grammar and Vocabulary,single_choice,I ___ him yesterday.,see,saw,have seen,B
-Unit 1 Grammar and Vocabulary,single_choice,Which is correct?,I already finish yesterday.,I have already finished.,I am already finishing.,B
-Unit 1 Grammar and Vocabulary,single_choice,Which is correct?,She hasn't gone to school yesterday.,She didn't go to school yesterday.,She doesn't went to school yesterday.,B
-Unit 1 Grammar and Vocabulary,single_choice,Which verb is a state verb?,know,eat,run,A
-Unit 1 Grammar and Vocabulary,single_choice,Which is correct?,I am liking this music.,I like this music.,I have liking this music.,B
-Unit 1 Grammar and Vocabulary,single_choice,I ___ my homework yet.,don't do,haven't done,didn't do,B
-Unit 1 Grammar and Vocabulary,single_choice,'Commute' means ...,talk to friends,travel to work every day,take a holiday,B
-Unit 1 Grammar and Vocabulary,single_choice,'Hang out' means ...,spend time with friends,fall asleep,clean the house,A
-Unit 1 Grammar and Vocabulary,single_choice,'Take up' (a hobby) means ...,forget,finish,start,C
-Unit 1 Grammar and Vocabulary,single_choice,'Catch up' means ...,run fast,talk after a long time,buy something,B
-Unit 1 Grammar and Vocabulary,single_choice,'Spare time' means ...,late time,work time,free time,C
-Unit 1 Grammar and Vocabulary,single_choice,A person who belongs to a club is a ...,teacher,guest,member,C
-Unit 1 Grammar and Vocabulary,single_choice,'Keep fit' means ...,stay healthy,stay at home,get a job,A
-Unit 1 Grammar and Vocabulary,single_choice,'Get together' means ...,win,meet,argue,B
-Unit 1 Grammar and Vocabulary,single_choice,'Stay up late' means ...,go to bed late,have lunch,get up early,A
-Unit 1 Grammar and Vocabulary,single_choice,'Workout' is ...,exercise,a meeting,a dinner,A
-Unit 1 Grammar and Vocabulary,single_choice,I ___ with my cousin every week on the phone.,chat,commute,wear,A
-Unit 1 Grammar and Vocabulary,single_choice,'Routine' means ...,a surprise,things you do every day,a holiday,B
-Unit 1 Grammar and Vocabulary,single_choice,Which word is an activity for free time?,meeting,hobby,salary,B
-Unit 1 Grammar and Vocabulary,single_choice,'Get into' (a sport) means ...,start to like,leave,win,A
-Unit 1 Grammar and Vocabulary,single_choice,Which is a social media site?,Uber,Instagram,Booking,B
-Unit 1 Grammar and Vocabulary,single_choice,She ___ yoga twice a week.,does,has done,is doing,A
-Unit 1 Grammar and Vocabulary,single_choice,We ___ each other since 2010.,knew,know,have known,C
-Unit 1 Grammar and Vocabulary,single_choice,I ___ to a concert last Friday.,have been,went,am going,B
-Unit 1 Grammar and Vocabulary,single_choice,'Chat' means ...,sleep,run fast,talk in a friendly way,C
-Unit 1 Grammar and Vocabulary,single_choice,My brother ___ a book at the moment.,is reading,has read,reads,A
+"settings","Unit 1 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>She ___ to work by bus every day.</p>","single_choice","1.00","1","","","1","<p>Correct answer: goes</p>",""
+"answer","is going","text","0","0","","1"
+"answer","has gone","text","0","0","","2"
+"answer","goes","text","1","0","","3"
+"question","Choose the correct answer","<p>Look! It ___ outside.</p>","single_choice","1.00","2","","","1","<p>Correct answer: is raining</p>",""
+"answer","rained","text","0","0","","1"
+"answer","is raining","text","1","0","","2"
+"answer","rains","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ in Riga for six years.</p>","single_choice","1.00","3","","","1","<p>Correct answer: have lived</p>",""
+"answer","have lived","text","1","0","","1"
+"answer","am living","text","0","0","","2"
+"answer","live","text","0","0","","3"
+"question","Choose the correct answer","<p>We ___ to the cinema last night.</p>","single_choice","1.00","4","","","1","<p>Correct answer: went</p>",""
+"answer","went","text","1","0","","1"
+"answer","go","text","0","0","","2"
+"answer","have been","text","0","0","","3"
+"question","Choose the correct answer","<p>___ you ever been to Norway?</p>","single_choice","1.00","5","","","1","<p>Correct answer: Have</p>",""
+"answer","Did","text","0","0","","1"
+"answer","Are","text","0","0","","2"
+"answer","Have","text","1","0","","3"
+"question","Choose the correct answer","<p>He ___ breakfast at the moment.</p>","single_choice","1.00","6","","","1","<p>Correct answer: is having</p>",""
+"answer","have","text","0","0","","1"
+"answer","is having","text","1","0","","2"
+"answer","has","text","0","0","","3"
+"question","Choose the correct answer","<p>I have worked here ___ 2019.</p>","single_choice","1.00","7","","","1","<p>Correct answer: since</p>",""
+"answer","since","text","1","0","","1"
+"answer","ago","text","0","0","","2"
+"answer","for","text","0","0","","3"
+"question","Choose the correct answer","<p>I have worked here ___ five years.</p>","single_choice","1.00","8","","","1","<p>Correct answer: for</p>",""
+"answer","since","text","0","0","","1"
+"answer","for","text","1","0","","2"
+"answer","from","text","0","0","","3"
+"question","Choose the correct answer","<p>They ___ a new car last month.</p>","single_choice","1.00","9","","","1","<p>Correct answer: bought</p>",""
+"answer","bought","text","1","0","","1"
+"answer","have bought","text","0","0","","2"
+"answer","are buying","text","0","0","","3"
+"question","Choose the correct answer","<p>My mother ___ three languages.</p>","single_choice","1.00","10","","","1","<p>Correct answer: speaks</p>",""
+"answer","has spoken","text","0","0","","1"
+"answer","speaks","text","1","0","","2"
+"answer","is speaking","text","0","0","","3"
+"question","Choose the correct answer","<p>What ___ you doing right now?</p>","single_choice","1.00","11","","","1","<p>Correct answer: are</p>",""
+"answer","do","text","0","0","","1"
+"answer","are","text","1","0","","2"
+"answer","have","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ never ___ sushi.</p>","single_choice","1.00","12","","","1","<p>Correct answer: have / eaten</p>",""
+"answer","am / eating","text","0","0","","1"
+"answer","have / eaten","text","1","0","","2"
+"answer","did / eat","text","0","0","","3"
+"question","Choose the correct answer","<p>She ___ her keys, so she can't get in.</p>","single_choice","1.00","13","","","1","<p>Correct answer: has lost</p>",""
+"answer","loses","text","0","0","","1"
+"answer","lost yesterday","text","0","0","","2"
+"answer","has lost","text","1","0","","3"
+"question","Choose the correct answer","<p>He is a vegetarian. He ___ meat.</p>","single_choice","1.00","14","","","1","<p>Correct answer: doesn't eat</p>",""
+"answer","isn't eating","text","0","0","","1"
+"answer","doesn't eat","text","1","0","","2"
+"answer","didn't eat","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ him yesterday.</p>","single_choice","1.00","15","","","1","<p>Correct answer: saw</p>",""
+"answer","see","text","0","0","","1"
+"answer","saw","text","1","0","","2"
+"answer","have seen","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","16","","","1","<p>Correct answer: I have already finished.</p>",""
+"answer","I already finish yesterday.","text","0","0","","1"
+"answer","I have already finished.","text","1","0","","2"
+"answer","I am already finishing.","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","17","","","1","<p>Correct answer: She didn't go to school yesterday.</p>",""
+"answer","She hasn't gone to school yesterday.","text","0","0","","1"
+"answer","She didn't go to school yesterday.","text","1","0","","2"
+"answer","She doesn't went to school yesterday.","text","0","0","","3"
+"question","Choose the correct answer","<p>Which verb is a state verb?</p>","single_choice","1.00","18","","","1","<p>Correct answer: know</p>",""
+"answer","know","text","1","0","","1"
+"answer","eat","text","0","0","","2"
+"answer","run","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","19","","","1","<p>Correct answer: I like this music.</p>",""
+"answer","I am liking this music.","text","0","0","","1"
+"answer","I like this music.","text","1","0","","2"
+"answer","I have liking this music.","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ my homework yet.</p>","single_choice","1.00","20","","","1","<p>Correct answer: haven't done</p>",""
+"answer","don't do","text","0","0","","1"
+"answer","haven't done","text","1","0","","2"
+"answer","didn't do","text","0","0","","3"
+"question","Choose the correct answer","<p>'Commute' means ...</p>","single_choice","1.00","21","","","1","<p>Correct answer: travel to work every day</p>",""
+"answer","talk to friends","text","0","0","","1"
+"answer","travel to work every day","text","1","0","","2"
+"answer","take a holiday","text","0","0","","3"
+"question","Choose the correct answer","<p>'Hang out' means ...</p>","single_choice","1.00","22","","","1","<p>Correct answer: spend time with friends</p>",""
+"answer","spend time with friends","text","1","0","","1"
+"answer","fall asleep","text","0","0","","2"
+"answer","clean the house","text","0","0","","3"
+"question","Choose the correct answer","<p>'Take up' (a hobby) means ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: start</p>",""
+"answer","forget","text","0","0","","1"
+"answer","finish","text","0","0","","2"
+"answer","start","text","1","0","","3"
+"question","Choose the correct answer","<p>'Catch up' means ...</p>","single_choice","1.00","24","","","1","<p>Correct answer: talk after a long time</p>",""
+"answer","run fast","text","0","0","","1"
+"answer","talk after a long time","text","1","0","","2"
+"answer","buy something","text","0","0","","3"
+"question","Choose the correct answer","<p>'Spare time' means ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: free time</p>",""
+"answer","late time","text","0","0","","1"
+"answer","work time","text","0","0","","2"
+"answer","free time","text","1","0","","3"
+"question","Choose the correct answer","<p>A person who belongs to a club is a ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: member</p>",""
+"answer","teacher","text","0","0","","1"
+"answer","guest","text","0","0","","2"
+"answer","member","text","1","0","","3"
+"question","Choose the correct answer","<p>'Keep fit' means ...</p>","single_choice","1.00","27","","","1","<p>Correct answer: stay healthy</p>",""
+"answer","stay healthy","text","1","0","","1"
+"answer","stay at home","text","0","0","","2"
+"answer","get a job","text","0","0","","3"
+"question","Choose the correct answer","<p>'Get together' means ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: meet</p>",""
+"answer","win","text","0","0","","1"
+"answer","meet","text","1","0","","2"
+"answer","argue","text","0","0","","3"
+"question","Choose the correct answer","<p>'Stay up late' means ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: go to bed late</p>",""
+"answer","go to bed late","text","1","0","","1"
+"answer","have lunch","text","0","0","","2"
+"answer","get up early","text","0","0","","3"
+"question","Choose the correct answer","<p>'Workout' is ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: exercise</p>",""
+"answer","exercise","text","1","0","","1"
+"answer","a meeting","text","0","0","","2"
+"answer","a dinner","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ with my cousin every week on the phone.</p>","single_choice","1.00","31","","","1","<p>Correct answer: chat</p>",""
+"answer","chat","text","1","0","","1"
+"answer","commute","text","0","0","","2"
+"answer","wear","text","0","0","","3"
+"question","Choose the correct answer","<p>'Routine' means ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: things you do every day</p>",""
+"answer","a surprise","text","0","0","","1"
+"answer","things you do every day","text","1","0","","2"
+"answer","a holiday","text","0","0","","3"
+"question","Choose the correct answer","<p>Which word is an activity for free time?</p>","single_choice","1.00","33","","","1","<p>Correct answer: hobby</p>",""
+"answer","meeting","text","0","0","","1"
+"answer","hobby","text","1","0","","2"
+"answer","salary","text","0","0","","3"
+"question","Choose the correct answer","<p>'Get into' (a sport) means ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: start to like</p>",""
+"answer","start to like","text","1","0","","1"
+"answer","leave","text","0","0","","2"
+"answer","win","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is a social media site?</p>","single_choice","1.00","35","","","1","<p>Correct answer: Instagram</p>",""
+"answer","Uber","text","0","0","","1"
+"answer","Instagram","text","1","0","","2"
+"answer","Booking","text","0","0","","3"
+"question","Choose the correct answer","<p>She ___ yoga twice a week.</p>","single_choice","1.00","36","","","1","<p>Correct answer: does</p>",""
+"answer","does","text","1","0","","1"
+"answer","has done","text","0","0","","2"
+"answer","is doing","text","0","0","","3"
+"question","Choose the correct answer","<p>We ___ each other since 2010.</p>","single_choice","1.00","37","","","1","<p>Correct answer: have known</p>",""
+"answer","knew","text","0","0","","1"
+"answer","know","text","0","0","","2"
+"answer","have known","text","1","0","","3"
+"question","Choose the correct answer","<p>I ___ to a concert last Friday.</p>","single_choice","1.00","38","","","1","<p>Correct answer: went</p>",""
+"answer","have been","text","0","0","","1"
+"answer","went","text","1","0","","2"
+"answer","am going","text","0","0","","3"
+"question","Choose the correct answer","<p>'Chat' means ...</p>","single_choice","1.00","39","","","1","<p>Correct answer: talk in a friendly way</p>",""
+"answer","sleep","text","0","0","","1"
+"answer","run fast","text","0","0","","2"
+"answer","talk in a friendly way","text","1","0","","3"
+"question","Choose the correct answer","<p>My brother ___ a book at the moment.</p>","single_choice","1.00","40","","","1","<p>Correct answer: is reading</p>",""
+"answer","is reading","text","1","0","","1"
+"answer","has read","text","0","0","","2"
+"answer","reads","text","0","0","","3"

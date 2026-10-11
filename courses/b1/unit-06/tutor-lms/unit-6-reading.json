@@ -1,101 +1,109 @@
 {
  "title": "Unit 6 Reading",
- "description": "<h3>Letter to a health magazine</h3><p><strong>Dear Dr Brown,</strong></p>\n<p>I am 35 years old, and I work as an accountant. I spend most of my day sitting at my desk, and in the evening I am usually too tired to do anything except watch TV. Recently I have been having headaches nearly every day. I also find it difficult to fall asleep, and I'm often stressed. If I don't change something, I will be in real trouble. What should I do?</p>\n<p>Signed, <em>Tired of being tired</em></p>\n<hr>\n<p><strong>Dr Brown replies:</strong></p>\n<p>Dear Tired,</p>\n<p>First, I should say that if the headaches continue, you should see your doctor, because there could be a medical reason. In the meantime, there are a few simple things which can help.</p>\n<p>Many people with desk jobs get headaches because they don't move enough or because they look at a screen for hours. If I were you, I would take a five-minute break every hour. Stand up, stretch and look out of the window. If you can, walk for 20 minutes at lunchtime: it will help you feel less stressed.</p>\n<p>Also, if you drink coffee after 4 p.m., it might be the reason you can't sleep. Try switching to herbal tea in the evening. And unless you turn off your phone an hour before bed, your brain won't relax. Finally, you don't have to join an expensive gym. Even a short walk in the evening will make a difference.</p>\n<p>Good luck – and write again to tell me how you are!</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "The writer's job is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The writer's job is ...",
+   "order": 1,
+   "answers": [
     "accountant",
-    "teacher",
-    "doctor"
+    "doctor",
+    "teacher"
    ],
    "correct": "accountant",
-   "marks": 1
+   "explanation": "Correct answer: accountant"
   },
   {
-   "type": "single_choice",
-   "question": "The writer's main problems are headaches and ...",
-   "options": [
-    "a broken leg",
+   "title": "Choose the correct answer",
+   "text": "The writer's main problems are headaches and ...",
+   "order": 2,
+   "answers": [
+    "difficulty sleeping",
     "a sore throat",
-    "difficulty sleeping"
+    "a broken leg"
    ],
    "correct": "difficulty sleeping",
-   "marks": 1
+   "explanation": "Correct answer: difficulty sleeping"
   },
   {
-   "type": "single_choice",
-   "question": "If the headaches continue, the doctor says the writer should ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "If the headaches continue, the doctor says the writer should ...",
+   "order": 3,
+   "answers": [
+    "see their own doctor",
     "stop working",
-    "take medicine",
-    "see their own doctor"
+    "take medicine"
    ],
    "correct": "see their own doctor",
-   "marks": 1
+   "explanation": "Correct answer: see their own doctor"
   },
   {
-   "type": "single_choice",
-   "question": "Dr Brown suggests a break every ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Dr Brown suggests a break every ...",
+   "order": 4,
+   "answers": [
     "hour",
     "day",
     "ten minutes"
    ],
    "correct": "hour",
-   "marks": 1
+   "explanation": "Correct answer: hour"
   },
   {
-   "type": "single_choice",
-   "question": "Dr Brown says walking at lunchtime will help the writer feel ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Dr Brown says walking at lunchtime will help the writer feel ...",
+   "order": 5,
+   "answers": [
     "less stressed",
-    "more tired",
-    "hungrier"
+    "hungrier",
+    "more tired"
    ],
    "correct": "less stressed",
-   "marks": 1
+   "explanation": "Correct answer: less stressed"
   },
   {
-   "type": "single_choice",
-   "question": "Coffee after 4 p.m. might ...",
-   "options": [
-    "cost too much",
+   "title": "Choose the correct answer",
+   "text": "Coffee after 4 p.m. might ...",
+   "order": 6,
+   "answers": [
+    "stop the writer sleeping",
     "cure headaches",
-    "stop the writer sleeping"
+    "cost too much"
    ],
    "correct": "stop the writer sleeping",
-   "marks": 1
+   "explanation": "Correct answer: stop the writer sleeping"
   },
   {
-   "type": "single_choice",
-   "question": "What does Dr Brown say about gyms?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "What does Dr Brown say about gyms?",
+   "order": 7,
+   "answers": [
     "you don't have to join one",
-    "they are too expensive",
-    "you must join one"
+    "you must join one",
+    "they are too expensive"
    ],
    "correct": "you don't have to join one",
-   "marks": 1
+   "explanation": "Correct answer: you don't have to join one"
   },
   {
-   "type": "single_choice",
-   "question": "True, False or Not given: The writer has already seen a doctor.",
-   "options": [
+   "title": "True, False or Not given",
+   "text": "The writer has already seen a doctor.",
+   "order": 8,
+   "answers": [
     "Not given",
     "True",
     "False"
    ],
    "correct": "Not given",
-   "marks": 1
+   "explanation": "Correct answer: Not given"
   }
  ]
 }

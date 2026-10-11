@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 3 Grammar and Vocabulary,single_choice,It's cold. I ___ the heating on.,am going to turn,am turning,will turn,C
-Unit 3 Grammar and Vocabulary,single_choice,We ___ to Rome next week. We have the tickets.,are flying,fly,will fly,A
-Unit 3 Grammar and Vocabulary,single_choice,Look at those clouds! It ___.,will rain,is going to rain,rains,B
-Unit 3 Grammar and Vocabulary,single_choice,I think she ___ the job. She is very good.,is getting,will get,gets,B
-Unit 3 Grammar and Vocabulary,single_choice,Which is correct?,"When I arrive, I'll call you.","When I arrived, I'll call you.","When I'll arrive, I call you.",A
-Unit 3 Grammar and Vocabulary,single_choice,"___ you help me with this, please?",Are,Will,Do,B
-Unit 3 Grammar and Vocabulary,single_choice,I ___ forget your birthday. I promise!,don't,am not,won't,C
-Unit 3 Grammar and Vocabulary,single_choice,She ___ a baby. She told us yesterday.,is going to have,will have,has,A
-Unit 3 Grammar and Vocabulary,single_choice,What time ___ the train leave tomorrow?,will,does,is,B
-Unit 3 Grammar and Vocabulary,single_choice,"In the future, people ___ in space.",are living,probably live,will probably live,C
-Unit 3 Grammar and Vocabulary,single_choice,My plans: I ___ study law next year.,am going to,will to,going,A
-Unit 3 Grammar and Vocabulary,single_choice,Which sentence is a prediction?,I'm meeting Tom at 7.,I think prices will go up.,I'm going to buy bread.,B
-Unit 3 Grammar and Vocabulary,single_choice,I'm tired. I ___ to bed early.,am thinking go,think I'll go,go,B
-Unit 3 Grammar and Vocabulary,single_choice,Are you ___ to the party tonight?,will,go,going,C
-Unit 3 Grammar and Vocabulary,single_choice,They ___ married in June. Everything is organised.,get,are getting,will get,B
-Unit 3 Grammar and Vocabulary,single_choice,"By 2040, cars ___ without drivers.",will probably drive,drove,are driving,A
-Unit 3 Grammar and Vocabulary,single_choice,He ___ be late. The traffic is terrible.,is going to,will to,is,A
-Unit 3 Grammar and Vocabulary,single_choice,"If it rains, we ___ at home.",will stay,stay,are staying,A
-Unit 3 Grammar and Vocabulary,single_choice,"As soon as I ___ the results, I will tell you.",get,am getting,will get,A
-Unit 3 Grammar and Vocabulary,single_choice,Which is correct?,It probably doesn't rain tomorrow.,It won't probably rain.,It probably won't rain.,C
-Unit 3 Grammar and Vocabulary,single_choice,I ___ this letter before I leave.,post,am posting,will post,C
-Unit 3 Grammar and Vocabulary,single_choice,The shop ___ at nine tomorrow.,is open,will opening,opens,C
-Unit 3 Grammar and Vocabulary,single_choice,To 'download' means to ...,delete a file,send a file away,copy a file to your device,C
-Unit 3 Grammar and Vocabulary,single_choice,You use a ___ to log in to your account.,password,screen,device,A
-Unit 3 Grammar and Vocabulary,single_choice,To 'charge' a phone means to ...,put electricity in it,break it,sell it,A
-Unit 3 Grammar and Vocabulary,single_choice,'Artificial intelligence' is ...,smart computer systems,a new phone,a type of cable,A
-Unit 3 Grammar and Vocabulary,single_choice,'Online' means ...,connected to the internet,switched off,expensive,A
-Unit 3 Grammar and Vocabulary,single_choice,A 'website' is ...,a place on the internet,a type of phone,a battery,A
-Unit 3 Grammar and Vocabulary,single_choice,An 'app' is ...,a screen,a program for a phone,a kind of computer,B
-Unit 3 Grammar and Vocabulary,single_choice,To 'upload' means to ...,read a book,send a file to the internet,buy an app,B
-Unit 3 Grammar and Vocabulary,single_choice,To 'invent' means to ...,lose something,make something new,break something,B
-Unit 3 Grammar and Vocabulary,single_choice,'Update' means ...,make newer,turn off,forget,A
-Unit 3 Grammar and Vocabulary,single_choice,A strong ___ has numbers and letters.,screen,password,device,B
-Unit 3 Grammar and Vocabulary,single_choice,"When you 'search' online, you ...",make a phone,look for information,turn off a screen,B
-Unit 3 Grammar and Vocabulary,single_choice,To 'delete' is to ...,remove,add,copy,A
-Unit 3 Grammar and Vocabulary,single_choice,A 'device' is ...,a language,a machine or small electronic object,a person,B
-Unit 3 Grammar and Vocabulary,single_choice,Software is ...,the screen,the keyboard,programs for a computer,C
-Unit 3 Grammar and Vocabulary,single_choice,Internet 'connection' means ...,a link to the internet,a type of app,a password,A
-Unit 3 Grammar and Vocabulary,single_choice,My phone is cracked. The ___ is broken.,search,software,screen,C
-Unit 3 Grammar and Vocabulary,single_choice,I need to ___ my phone. The battery is nearly empty.,invent,delete,charge,C
+"settings","Unit 3 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>It's cold. I ___ the heating on.</p>","single_choice","1.00","1","","","1","<p>Correct answer: will turn</p>",""
+"answer","am going to turn","text","0","0","","1"
+"answer","am turning","text","0","0","","2"
+"answer","will turn","text","1","0","","3"
+"question","Choose the correct answer","<p>We ___ to Rome next week. We have the tickets.</p>","single_choice","1.00","2","","","1","<p>Correct answer: are flying</p>",""
+"answer","are flying","text","1","0","","1"
+"answer","fly","text","0","0","","2"
+"answer","will fly","text","0","0","","3"
+"question","Choose the correct answer","<p>Look at those clouds! It ___.</p>","single_choice","1.00","3","","","1","<p>Correct answer: is going to rain</p>",""
+"answer","will rain","text","0","0","","1"
+"answer","is going to rain","text","1","0","","2"
+"answer","rains","text","0","0","","3"
+"question","Choose the correct answer","<p>I think she ___ the job. She is very good.</p>","single_choice","1.00","4","","","1","<p>Correct answer: will get</p>",""
+"answer","is getting","text","0","0","","1"
+"answer","will get","text","1","0","","2"
+"answer","gets","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","5","","","1","<p>Correct answer: When I arrive, I'll call you.</p>",""
+"answer","When I arrive, I'll call you.","text","1","0","","1"
+"answer","When I arrived, I'll call you.","text","0","0","","2"
+"answer","When I'll arrive, I call you.","text","0","0","","3"
+"question","Choose the correct answer","<p>___ you help me with this, please?</p>","single_choice","1.00","6","","","1","<p>Correct answer: Will</p>",""
+"answer","Are","text","0","0","","1"
+"answer","Will","text","1","0","","2"
+"answer","Do","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ forget your birthday. I promise!</p>","single_choice","1.00","7","","","1","<p>Correct answer: won't</p>",""
+"answer","don't","text","0","0","","1"
+"answer","am not","text","0","0","","2"
+"answer","won't","text","1","0","","3"
+"question","Choose the correct answer","<p>She ___ a baby. She told us yesterday.</p>","single_choice","1.00","8","","","1","<p>Correct answer: is going to have</p>",""
+"answer","is going to have","text","1","0","","1"
+"answer","will have","text","0","0","","2"
+"answer","has","text","0","0","","3"
+"question","Choose the correct answer","<p>What time ___ the train leave tomorrow?</p>","single_choice","1.00","9","","","1","<p>Correct answer: does</p>",""
+"answer","will","text","0","0","","1"
+"answer","does","text","1","0","","2"
+"answer","is","text","0","0","","3"
+"question","Choose the correct answer","<p>In the future, people ___ in space.</p>","single_choice","1.00","10","","","1","<p>Correct answer: will probably live</p>",""
+"answer","are living","text","0","0","","1"
+"answer","probably live","text","0","0","","2"
+"answer","will probably live","text","1","0","","3"
+"question","Choose the correct answer","<p>My plans: I ___ study law next year.</p>","single_choice","1.00","11","","","1","<p>Correct answer: am going to</p>",""
+"answer","am going to","text","1","0","","1"
+"answer","will to","text","0","0","","2"
+"answer","going","text","0","0","","3"
+"question","Choose the correct answer","<p>Which sentence is a prediction?</p>","single_choice","1.00","12","","","1","<p>Correct answer: I think prices will go up.</p>",""
+"answer","I'm meeting Tom at 7.","text","0","0","","1"
+"answer","I think prices will go up.","text","1","0","","2"
+"answer","I'm going to buy bread.","text","0","0","","3"
+"question","Choose the correct answer","<p>I'm tired. I ___ to bed early.</p>","single_choice","1.00","13","","","1","<p>Correct answer: think I'll go</p>",""
+"answer","am thinking go","text","0","0","","1"
+"answer","think I'll go","text","1","0","","2"
+"answer","go","text","0","0","","3"
+"question","Choose the correct answer","<p>Are you ___ to the party tonight?</p>","single_choice","1.00","14","","","1","<p>Correct answer: going</p>",""
+"answer","will","text","0","0","","1"
+"answer","go","text","0","0","","2"
+"answer","going","text","1","0","","3"
+"question","Choose the correct answer","<p>They ___ married in June. Everything is organised.</p>","single_choice","1.00","15","","","1","<p>Correct answer: are getting</p>",""
+"answer","get","text","0","0","","1"
+"answer","are getting","text","1","0","","2"
+"answer","will get","text","0","0","","3"
+"question","Choose the correct answer","<p>By 2040, cars ___ without drivers.</p>","single_choice","1.00","16","","","1","<p>Correct answer: will probably drive</p>",""
+"answer","will probably drive","text","1","0","","1"
+"answer","drove","text","0","0","","2"
+"answer","are driving","text","0","0","","3"
+"question","Choose the correct answer","<p>He ___ be late. The traffic is terrible.</p>","single_choice","1.00","17","","","1","<p>Correct answer: is going to</p>",""
+"answer","is going to","text","1","0","","1"
+"answer","will to","text","0","0","","2"
+"answer","is","text","0","0","","3"
+"question","Choose the correct answer","<p>If it rains, we ___ at home.</p>","single_choice","1.00","18","","","1","<p>Correct answer: will stay</p>",""
+"answer","will stay","text","1","0","","1"
+"answer","stay","text","0","0","","2"
+"answer","are staying","text","0","0","","3"
+"question","Choose the correct answer","<p>As soon as I ___ the results, I will tell you.</p>","single_choice","1.00","19","","","1","<p>Correct answer: get</p>",""
+"answer","get","text","1","0","","1"
+"answer","am getting","text","0","0","","2"
+"answer","will get","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","20","","","1","<p>Correct answer: It probably won't rain.</p>",""
+"answer","It probably doesn't rain tomorrow.","text","0","0","","1"
+"answer","It won't probably rain.","text","0","0","","2"
+"answer","It probably won't rain.","text","1","0","","3"
+"question","Choose the correct answer","<p>I ___ this letter before I leave.</p>","single_choice","1.00","21","","","1","<p>Correct answer: will post</p>",""
+"answer","post","text","0","0","","1"
+"answer","am posting","text","0","0","","2"
+"answer","will post","text","1","0","","3"
+"question","Choose the correct answer","<p>The shop ___ at nine tomorrow.</p>","single_choice","1.00","22","","","1","<p>Correct answer: opens</p>",""
+"answer","is open","text","0","0","","1"
+"answer","will opening","text","0","0","","2"
+"answer","opens","text","1","0","","3"
+"question","Choose the correct answer","<p>To 'download' means to ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: copy a file to your device</p>",""
+"answer","delete a file","text","0","0","","1"
+"answer","send a file away","text","0","0","","2"
+"answer","copy a file to your device","text","1","0","","3"
+"question","Choose the correct answer","<p>You use a ___ to log in to your account.</p>","single_choice","1.00","24","","","1","<p>Correct answer: password</p>",""
+"answer","password","text","1","0","","1"
+"answer","screen","text","0","0","","2"
+"answer","device","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'charge' a phone means to ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: put electricity in it</p>",""
+"answer","put electricity in it","text","1","0","","1"
+"answer","break it","text","0","0","","2"
+"answer","sell it","text","0","0","","3"
+"question","Choose the correct answer","<p>'Artificial intelligence' is ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: smart computer systems</p>",""
+"answer","smart computer systems","text","1","0","","1"
+"answer","a new phone","text","0","0","","2"
+"answer","a type of cable","text","0","0","","3"
+"question","Choose the correct answer","<p>'Online' means ...</p>","single_choice","1.00","27","","","1","<p>Correct answer: connected to the internet</p>",""
+"answer","connected to the internet","text","1","0","","1"
+"answer","switched off","text","0","0","","2"
+"answer","expensive","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'website' is ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: a place on the internet</p>",""
+"answer","a place on the internet","text","1","0","","1"
+"answer","a type of phone","text","0","0","","2"
+"answer","a battery","text","0","0","","3"
+"question","Choose the correct answer","<p>An 'app' is ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: a program for a phone</p>",""
+"answer","a screen","text","0","0","","1"
+"answer","a program for a phone","text","1","0","","2"
+"answer","a kind of computer","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'upload' means to ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: send a file to the internet</p>",""
+"answer","read a book","text","0","0","","1"
+"answer","send a file to the internet","text","1","0","","2"
+"answer","buy an app","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'invent' means to ...</p>","single_choice","1.00","31","","","1","<p>Correct answer: make something new</p>",""
+"answer","lose something","text","0","0","","1"
+"answer","make something new","text","1","0","","2"
+"answer","break something","text","0","0","","3"
+"question","Choose the correct answer","<p>'Update' means ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: make newer</p>",""
+"answer","make newer","text","1","0","","1"
+"answer","turn off","text","0","0","","2"
+"answer","forget","text","0","0","","3"
+"question","Choose the correct answer","<p>A strong ___ has numbers and letters.</p>","single_choice","1.00","33","","","1","<p>Correct answer: password</p>",""
+"answer","screen","text","0","0","","1"
+"answer","password","text","1","0","","2"
+"answer","device","text","0","0","","3"
+"question","Choose the correct answer","<p>When you 'search' online, you ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: look for information</p>",""
+"answer","make a phone","text","0","0","","1"
+"answer","look for information","text","1","0","","2"
+"answer","turn off a screen","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'delete' is to ...</p>","single_choice","1.00","35","","","1","<p>Correct answer: remove</p>",""
+"answer","remove","text","1","0","","1"
+"answer","add","text","0","0","","2"
+"answer","copy","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'device' is ...</p>","single_choice","1.00","36","","","1","<p>Correct answer: a machine or small electronic object</p>",""
+"answer","a language","text","0","0","","1"
+"answer","a machine or small electronic object","text","1","0","","2"
+"answer","a person","text","0","0","","3"
+"question","Choose the correct answer","<p>Software is ...</p>","single_choice","1.00","37","","","1","<p>Correct answer: programs for a computer</p>",""
+"answer","the screen","text","0","0","","1"
+"answer","the keyboard","text","0","0","","2"
+"answer","programs for a computer","text","1","0","","3"
+"question","Choose the correct answer","<p>Internet 'connection' means ...</p>","single_choice","1.00","38","","","1","<p>Correct answer: a link to the internet</p>",""
+"answer","a link to the internet","text","1","0","","1"
+"answer","a type of app","text","0","0","","2"
+"answer","a password","text","0","0","","3"
+"question","Choose the correct answer","<p>My phone is cracked. The ___ is broken.</p>","single_choice","1.00","39","","","1","<p>Correct answer: screen</p>",""
+"answer","search","text","0","0","","1"
+"answer","software","text","0","0","","2"
+"answer","screen","text","1","0","","3"
+"question","Choose the correct answer","<p>I need to ___ my phone. The battery is nearly empty.</p>","single_choice","1.00","40","","","1","<p>Correct answer: charge</p>",""
+"answer","invent","text","0","0","","1"
+"answer","delete","text","0","0","","2"
+"answer","charge","text","1","0","","3"

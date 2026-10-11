@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 7 Reading,single_choice,Green Week will take place ...,from 10 to 16 June,from 3 to 9 June,in July,A
-Unit 7 Reading,single_choice,The aim is to reduce waste in the city by ...,15%,50%,5%,A
-Unit 7 Reading,single_choice,"During Green Week, public transport will be ...",more expensive,closed,free,C
-Unit 7 Reading,single_choice,Last year the event collected ...,12 tonnes of clothes,no clothes,20 tonnes of plastic,A
-Unit 7 Reading,single_choice,Schools have been asked to organise ...,a football match,clean-up days in parks,a concert,B
-Unit 7 Reading,single_choice,The environment minister said the government was planning to ...,close supermarkets,build new roads,ban plastic bags,C
-Unit 7 Reading,single_choice,Who is unhappy about the event?,taxi drivers,teachers,supermarkets,A
-Unit 7 Reading,single_choice,"True, False or Not given: The mayor said he would cancel Green Week.",False,Not given,True,A
+"settings","Unit 7 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>Green Week will take place ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: from 10 to 16 June</p>",""
+"answer","from 10 to 16 June","text","1","0","","1"
+"answer","from 3 to 9 June","text","0","0","","2"
+"answer","in July","text","0","0","","3"
+"question","Choose the correct answer","<p>The aim is to reduce waste in the city by ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: 15%</p>",""
+"answer","15%","text","1","0","","1"
+"answer","50%","text","0","0","","2"
+"answer","5%","text","0","0","","3"
+"question","Choose the correct answer","<p>During Green Week, public transport will be ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: free</p>",""
+"answer","more expensive","text","0","0","","1"
+"answer","closed","text","0","0","","2"
+"answer","free","text","1","0","","3"
+"question","Choose the correct answer","<p>Last year the event collected ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: 12 tonnes of clothes</p>",""
+"answer","12 tonnes of clothes","text","1","0","","1"
+"answer","no clothes","text","0","0","","2"
+"answer","20 tonnes of plastic","text","0","0","","3"
+"question","Choose the correct answer","<p>Schools have been asked to organise ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: clean-up days in parks</p>",""
+"answer","a football match","text","0","0","","1"
+"answer","clean-up days in parks","text","1","0","","2"
+"answer","a concert","text","0","0","","3"
+"question","Choose the correct answer","<p>The environment minister said the government was planning to ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: ban plastic bags</p>",""
+"answer","close supermarkets","text","0","0","","1"
+"answer","build new roads","text","0","0","","2"
+"answer","ban plastic bags","text","1","0","","3"
+"question","Choose the correct answer","<p>Who is unhappy about the event?</p>","single_choice","1.00","7","","","1","<p>Correct answer: taxi drivers</p>",""
+"answer","taxi drivers","text","1","0","","1"
+"answer","teachers","text","0","0","","2"
+"answer","supermarkets","text","0","0","","3"
+"question","True, False or Not given","<p>The mayor said he would cancel Green Week.</p>","single_choice","1.00","8","","","1","<p>Correct answer: False</p>",""
+"answer","False","text","1","0","","1"
+"answer","Not given","text","0","0","","2"
+"answer","True","text","0","0","","3"

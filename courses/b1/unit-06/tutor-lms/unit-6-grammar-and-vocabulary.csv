@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 6 Grammar and Vocabulary,single_choice,"If you freeze water, it ___ to ice.",will turn,turns,would turn,B
-Unit 6 Grammar and Vocabulary,single_choice,"If you ___ a lot of sweets, you'll get fat.",eat,will eat,ate,A
-Unit 6 Grammar and Vocabulary,single_choice,"If I ___ you, I'd see a doctor.",am,will be,were,C
-Unit 6 Grammar and Vocabulary,single_choice,"If she studies hard, she ___ the test.",passes,would pass,will pass,C
-Unit 6 Grammar and Vocabulary,single_choice,We'll cook at home if we ___ time.,have,will have,had,A
-Unit 6 Grammar and Vocabulary,single_choice,"If I won the lottery, I ___ a big house.",buy,would buy,will buy,B
-Unit 6 Grammar and Vocabulary,single_choice,Which is correct?,"If it rains, we'll stay inside.","If it rained, we'll stay inside.","If it will rain, we stay inside.",A
-Unit 6 Grammar and Vocabulary,single_choice,What would you do if you ___ ill?,will be,are,were,C
-Unit 6 Grammar and Vocabulary,single_choice,You won't pass ___ you study.,if,unless,when,B
-Unit 6 Grammar and Vocabulary,single_choice,"If you mix red and yellow, you ___ orange.",will got,would get,get,C
-Unit 6 Grammar and Vocabulary,single_choice,"If I ___ more money, I would travel more.",have,had,will have,B
-Unit 6 Grammar and Vocabulary,single_choice,I will call you ___ I arrive.,when,unless,if I would,A
-Unit 6 Grammar and Vocabulary,single_choice,"If you ___ a headache, take this tablet.",would have,will have,have,C
-Unit 6 Grammar and Vocabulary,single_choice,He would be fitter if he ___ more.,exercised,will exercise,exercises,A
-Unit 6 Grammar and Vocabulary,single_choice,Which is correct?,"If I would be you, I rest.","If I were you, I'd rest.","If I was you, I'm resting.",B
-Unit 6 Grammar and Vocabulary,single_choice,What will you do if it ___ tomorrow?,rained,will rain,rains,C
-Unit 6 Grammar and Vocabulary,single_choice,"If I ___ a dog, I would walk every day.",have,will have,had,C
-Unit 6 Grammar and Vocabulary,single_choice,You can come ___ you keep quiet.,unless,as long as,until not,B
-Unit 6 Grammar and Vocabulary,single_choice,Which is a zero conditional?,"If you heat butter, it melts.","If I had wings, I'd fly.","If it rains, I'll stay home.",A
-Unit 6 Grammar and Vocabulary,single_choice,"If she ___ allergic to nuts, she wouldn't eat the cake.",would be,were,is,B
-Unit 6 Grammar and Vocabulary,single_choice,"Which means the same? 'Unless you hurry, you'll be late.'","If you hurry, you'll be late.","If you don't hurry, you'll be late.","If you hurried, you would be late.",B
-Unit 6 Grammar and Vocabulary,single_choice,I'd feel better if I ___ so tired.,weren't,am not,won't be,A
-Unit 6 Grammar and Vocabulary,single_choice,A 'vegetarian' doesn't eat ...,bread,vegetables,meat,C
-Unit 6 Grammar and Vocabulary,single_choice,A 'recipe' tells you ...,how to cook a dish,how to exercise,what to buy at a pharmacy,A
-Unit 6 Grammar and Vocabulary,single_choice,"If you are 'allergic' to fish, you ...",love it,react badly to it,cook it,B
-Unit 6 Grammar and Vocabulary,single_choice,A 'fever' is a ...,kind of food,medicine,high body temperature,C
-Unit 6 Grammar and Vocabulary,single_choice,A 'headache' is a pain in your ...,foot,stomach,head,C
-Unit 6 Grammar and Vocabulary,single_choice,To 'recover' is to ...,forget,become healthy again,get ill,B
-Unit 6 Grammar and Vocabulary,single_choice,A 'portion' is ...,an amount of food for one person,a medicine,a kind of vegetable,A
-Unit 6 Grammar and Vocabulary,single_choice,A 'prescription' is from a ...,teacher,baker,doctor,C
-Unit 6 Grammar and Vocabulary,single_choice,A person who is 'fit' is ...,always hungry,healthy and strong,very old,B
-Unit 6 Grammar and Vocabulary,single_choice,'Ingredients' are ...,doctors,foods used in a recipe,rooms in a house,B
-Unit 6 Grammar and Vocabulary,single_choice,Your 'diet' is ...,your job,your home,the food you usually eat,C
-Unit 6 Grammar and Vocabulary,single_choice,A 'healthy' lifestyle is ...,expensive,bad for you,good for your body,C
-Unit 6 Grammar and Vocabulary,single_choice,'Stress' is ...,worry and pressure,a food,a sport,A
-Unit 6 Grammar and Vocabulary,single_choice,To 'take care of' yourself means to ...,look after yourself,cook for yourself,forget yourself,A
-Unit 6 Grammar and Vocabulary,single_choice,A 'treatment' is ...,medical care,a kind of meal,a diet,A
-Unit 6 Grammar and Vocabulary,single_choice,To 'cure' an illness is to ...,ignore it,make it go away,catch it,B
-Unit 6 Grammar and Vocabulary,single_choice,People who eat too much fast food may become ...,unhealthy,fitter,taller,A
-Unit 6 Grammar and Vocabulary,single_choice,A 'cure' for the flu is something that ...,gives you a fever,is a type of fruit,makes you healthy again,C
+"settings","Unit 6 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>If you freeze water, it ___ to ice.</p>","single_choice","1.00","1","","","1","<p>Correct answer: turns</p>",""
+"answer","will turn","text","0","0","","1"
+"answer","turns","text","1","0","","2"
+"answer","would turn","text","0","0","","3"
+"question","Choose the correct answer","<p>If you ___ a lot of sweets, you'll get fat.</p>","single_choice","1.00","2","","","1","<p>Correct answer: eat</p>",""
+"answer","eat","text","1","0","","1"
+"answer","will eat","text","0","0","","2"
+"answer","ate","text","0","0","","3"
+"question","Choose the correct answer","<p>If I ___ you, I'd see a doctor.</p>","single_choice","1.00","3","","","1","<p>Correct answer: were</p>",""
+"answer","am","text","0","0","","1"
+"answer","will be","text","0","0","","2"
+"answer","were","text","1","0","","3"
+"question","Choose the correct answer","<p>If she studies hard, she ___ the test.</p>","single_choice","1.00","4","","","1","<p>Correct answer: will pass</p>",""
+"answer","passes","text","0","0","","1"
+"answer","would pass","text","0","0","","2"
+"answer","will pass","text","1","0","","3"
+"question","Choose the correct answer","<p>We'll cook at home if we ___ time.</p>","single_choice","1.00","5","","","1","<p>Correct answer: have</p>",""
+"answer","have","text","1","0","","1"
+"answer","will have","text","0","0","","2"
+"answer","had","text","0","0","","3"
+"question","Choose the correct answer","<p>If I won the lottery, I ___ a big house.</p>","single_choice","1.00","6","","","1","<p>Correct answer: would buy</p>",""
+"answer","buy","text","0","0","","1"
+"answer","would buy","text","1","0","","2"
+"answer","will buy","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","7","","","1","<p>Correct answer: If it rains, we'll stay inside.</p>",""
+"answer","If it rains, we'll stay inside.","text","1","0","","1"
+"answer","If it rained, we'll stay inside.","text","0","0","","2"
+"answer","If it will rain, we stay inside.","text","0","0","","3"
+"question","Choose the correct answer","<p>What would you do if you ___ ill?</p>","single_choice","1.00","8","","","1","<p>Correct answer: were</p>",""
+"answer","will be","text","0","0","","1"
+"answer","are","text","0","0","","2"
+"answer","were","text","1","0","","3"
+"question","Choose the correct answer","<p>You won't pass ___ you study.</p>","single_choice","1.00","9","","","1","<p>Correct answer: unless</p>",""
+"answer","if","text","0","0","","1"
+"answer","unless","text","1","0","","2"
+"answer","when","text","0","0","","3"
+"question","Choose the correct answer","<p>If you mix red and yellow, you ___ orange.</p>","single_choice","1.00","10","","","1","<p>Correct answer: get</p>",""
+"answer","will got","text","0","0","","1"
+"answer","would get","text","0","0","","2"
+"answer","get","text","1","0","","3"
+"question","Choose the correct answer","<p>If I ___ more money, I would travel more.</p>","single_choice","1.00","11","","","1","<p>Correct answer: had</p>",""
+"answer","have","text","0","0","","1"
+"answer","had","text","1","0","","2"
+"answer","will have","text","0","0","","3"
+"question","Choose the correct answer","<p>I will call you ___ I arrive.</p>","single_choice","1.00","12","","","1","<p>Correct answer: when</p>",""
+"answer","when","text","1","0","","1"
+"answer","unless","text","0","0","","2"
+"answer","if I would","text","0","0","","3"
+"question","Choose the correct answer","<p>If you ___ a headache, take this tablet.</p>","single_choice","1.00","13","","","1","<p>Correct answer: have</p>",""
+"answer","would have","text","0","0","","1"
+"answer","will have","text","0","0","","2"
+"answer","have","text","1","0","","3"
+"question","Choose the correct answer","<p>He would be fitter if he ___ more.</p>","single_choice","1.00","14","","","1","<p>Correct answer: exercised</p>",""
+"answer","exercised","text","1","0","","1"
+"answer","will exercise","text","0","0","","2"
+"answer","exercises","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","15","","","1","<p>Correct answer: If I were you, I'd rest.</p>",""
+"answer","If I would be you, I rest.","text","0","0","","1"
+"answer","If I were you, I'd rest.","text","1","0","","2"
+"answer","If I was you, I'm resting.","text","0","0","","3"
+"question","Choose the correct answer","<p>What will you do if it ___ tomorrow?</p>","single_choice","1.00","16","","","1","<p>Correct answer: rains</p>",""
+"answer","rained","text","0","0","","1"
+"answer","will rain","text","0","0","","2"
+"answer","rains","text","1","0","","3"
+"question","Choose the correct answer","<p>If I ___ a dog, I would walk every day.</p>","single_choice","1.00","17","","","1","<p>Correct answer: had</p>",""
+"answer","have","text","0","0","","1"
+"answer","will have","text","0","0","","2"
+"answer","had","text","1","0","","3"
+"question","Choose the correct answer","<p>You can come ___ you keep quiet.</p>","single_choice","1.00","18","","","1","<p>Correct answer: as long as</p>",""
+"answer","unless","text","0","0","","1"
+"answer","as long as","text","1","0","","2"
+"answer","until not","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is a zero conditional?</p>","single_choice","1.00","19","","","1","<p>Correct answer: If you heat butter, it melts.</p>",""
+"answer","If you heat butter, it melts.","text","1","0","","1"
+"answer","If I had wings, I'd fly.","text","0","0","","2"
+"answer","If it rains, I'll stay home.","text","0","0","","3"
+"question","Choose the correct answer","<p>If she ___ allergic to nuts, she wouldn't eat the cake.</p>","single_choice","1.00","20","","","1","<p>Correct answer: were</p>",""
+"answer","would be","text","0","0","","1"
+"answer","were","text","1","0","","2"
+"answer","is","text","0","0","","3"
+"question","Choose the correct answer","<p>Which means the same? 'Unless you hurry, you'll be late.'</p>","single_choice","1.00","21","","","1","<p>Correct answer: If you don't hurry, you'll be late.</p>",""
+"answer","If you hurry, you'll be late.","text","0","0","","1"
+"answer","If you don't hurry, you'll be late.","text","1","0","","2"
+"answer","If you hurried, you would be late.","text","0","0","","3"
+"question","Choose the correct answer","<p>I'd feel better if I ___ so tired.</p>","single_choice","1.00","22","","","1","<p>Correct answer: weren't</p>",""
+"answer","weren't","text","1","0","","1"
+"answer","am not","text","0","0","","2"
+"answer","won't be","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'vegetarian' doesn't eat ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: meat</p>",""
+"answer","bread","text","0","0","","1"
+"answer","vegetables","text","0","0","","2"
+"answer","meat","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'recipe' tells you ...</p>","single_choice","1.00","24","","","1","<p>Correct answer: how to cook a dish</p>",""
+"answer","how to cook a dish","text","1","0","","1"
+"answer","how to exercise","text","0","0","","2"
+"answer","what to buy at a pharmacy","text","0","0","","3"
+"question","Choose the correct answer","<p>If you are 'allergic' to fish, you ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: react badly to it</p>",""
+"answer","love it","text","0","0","","1"
+"answer","react badly to it","text","1","0","","2"
+"answer","cook it","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'fever' is a ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: high body temperature</p>",""
+"answer","kind of food","text","0","0","","1"
+"answer","medicine","text","0","0","","2"
+"answer","high body temperature","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'headache' is a pain in your ...</p>","single_choice","1.00","27","","","1","<p>Correct answer: head</p>",""
+"answer","foot","text","0","0","","1"
+"answer","stomach","text","0","0","","2"
+"answer","head","text","1","0","","3"
+"question","Choose the correct answer","<p>To 'recover' is to ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: become healthy again</p>",""
+"answer","forget","text","0","0","","1"
+"answer","become healthy again","text","1","0","","2"
+"answer","get ill","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'portion' is ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: an amount of food for one person</p>",""
+"answer","an amount of food for one person","text","1","0","","1"
+"answer","a medicine","text","0","0","","2"
+"answer","a kind of vegetable","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'prescription' is from a ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: doctor</p>",""
+"answer","teacher","text","0","0","","1"
+"answer","baker","text","0","0","","2"
+"answer","doctor","text","1","0","","3"
+"question","Choose the correct answer","<p>A person who is 'fit' is ...</p>","single_choice","1.00","31","","","1","<p>Correct answer: healthy and strong</p>",""
+"answer","always hungry","text","0","0","","1"
+"answer","healthy and strong","text","1","0","","2"
+"answer","very old","text","0","0","","3"
+"question","Choose the correct answer","<p>'Ingredients' are ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: foods used in a recipe</p>",""
+"answer","doctors","text","0","0","","1"
+"answer","foods used in a recipe","text","1","0","","2"
+"answer","rooms in a house","text","0","0","","3"
+"question","Choose the correct answer","<p>Your 'diet' is ...</p>","single_choice","1.00","33","","","1","<p>Correct answer: the food you usually eat</p>",""
+"answer","your job","text","0","0","","1"
+"answer","your home","text","0","0","","2"
+"answer","the food you usually eat","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'healthy' lifestyle is ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: good for your body</p>",""
+"answer","expensive","text","0","0","","1"
+"answer","bad for you","text","0","0","","2"
+"answer","good for your body","text","1","0","","3"
+"question","Choose the correct answer","<p>'Stress' is ...</p>","single_choice","1.00","35","","","1","<p>Correct answer: worry and pressure</p>",""
+"answer","worry and pressure","text","1","0","","1"
+"answer","a food","text","0","0","","2"
+"answer","a sport","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'take care of' yourself means to ...</p>","single_choice","1.00","36","","","1","<p>Correct answer: look after yourself</p>",""
+"answer","look after yourself","text","1","0","","1"
+"answer","cook for yourself","text","0","0","","2"
+"answer","forget yourself","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'treatment' is ...</p>","single_choice","1.00","37","","","1","<p>Correct answer: medical care</p>",""
+"answer","medical care","text","1","0","","1"
+"answer","a kind of meal","text","0","0","","2"
+"answer","a diet","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'cure' an illness is to ...</p>","single_choice","1.00","38","","","1","<p>Correct answer: make it go away</p>",""
+"answer","ignore it","text","0","0","","1"
+"answer","make it go away","text","1","0","","2"
+"answer","catch it","text","0","0","","3"
+"question","Choose the correct answer","<p>People who eat too much fast food may become ...</p>","single_choice","1.00","39","","","1","<p>Correct answer: unhealthy</p>",""
+"answer","unhealthy","text","1","0","","1"
+"answer","fitter","text","0","0","","2"
+"answer","taller","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'cure' for the flu is something that ...</p>","single_choice","1.00","40","","","1","<p>Correct answer: makes you healthy again</p>",""
+"answer","gives you a fever","text","0","0","","1"
+"answer","is a type of fruit","text","0","0","","2"
+"answer","makes you healthy again","text","1","0","","3"

@@ -1,455 +1,493 @@
 {
  "title": "Unit 5 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "Today is ___ than yesterday.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Today is ___ than yesterday.",
+   "order": 1,
+   "answers": [
     "colder",
     "more cold",
     "the coldest"
    ],
    "correct": "colder",
-   "marks": 1
+   "explanation": "Correct answer: colder"
   },
   {
-   "type": "single_choice",
-   "question": "She is ___ girl in our class.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She is ___ girl in our class.",
+   "order": 2,
+   "answers": [
     "the tallest",
     "taller",
     "more tall"
    ],
    "correct": "the tallest",
-   "marks": 1
+   "explanation": "Correct answer: the tallest"
   },
   {
-   "type": "single_choice",
-   "question": "This film is ___ than the book.",
-   "options": [
-    "boringer",
+   "title": "Choose the correct answer",
+   "text": "This film is ___ than the book.",
+   "order": 3,
+   "answers": [
     "more boring",
+    "boringer",
     "the most boring"
    ],
    "correct": "more boring",
-   "marks": 1
+   "explanation": "Correct answer: more boring"
   },
   {
-   "type": "single_choice",
-   "question": "He's not ___ tall as his father.",
-   "options": [
-    "more",
+   "title": "Choose the correct answer",
+   "text": "He's not ___ tall as his father.",
+   "order": 4,
+   "answers": [
     "as",
-    "so than"
+    "so than",
+    "more"
    ],
    "correct": "as",
-   "marks": 1
+   "explanation": "Correct answer: as"
   },
   {
-   "type": "single_choice",
-   "question": "My car is ___ than yours.",
-   "options": [
-    "more old",
+   "title": "Choose the correct answer",
+   "text": "My car is ___ than yours.",
+   "order": 5,
+   "answers": [
     "older",
+    "more old",
     "oldest"
    ],
    "correct": "older",
-   "marks": 1
+   "explanation": "Correct answer: older"
   },
   {
-   "type": "single_choice",
-   "question": "That was ___ day of my life.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "That was ___ day of my life.",
+   "order": 6,
+   "answers": [
+    "the worst",
     "worse",
-    "the baddest",
-    "the worst"
+    "the baddest"
    ],
    "correct": "the worst",
-   "marks": 1
+   "explanation": "Correct answer: the worst"
   },
   {
-   "type": "single_choice",
-   "question": "Maths is ___ than history for me.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Maths is ___ than history for me.",
+   "order": 7,
+   "answers": [
     "harder",
-    "hardest",
-    "more hard"
+    "more hard",
+    "hardest"
    ],
    "correct": "harder",
-   "marks": 1
+   "explanation": "Correct answer: harder"
   },
   {
-   "type": "single_choice",
-   "question": "Which is the ___ city in Latvia?",
-   "options": [
-    "more big",
+   "title": "Choose the correct answer",
+   "text": "Which is the ___ city in Latvia?",
+   "order": 8,
+   "answers": [
+    "biggest",
     "bigger",
-    "biggest"
+    "more big"
    ],
    "correct": "biggest",
-   "marks": 1
+   "explanation": "Correct answer: biggest"
   },
   {
-   "type": "single_choice",
-   "question": "It's ___ expensive than I expected.",
-   "options": [
-    "most",
+   "title": "Choose the correct answer",
+   "text": "It's ___ expensive than I expected.",
+   "order": 9,
+   "answers": [
     "more",
+    "most",
     "much"
    ],
    "correct": "more",
-   "marks": 1
+   "explanation": "Correct answer: more"
   },
   {
-   "type": "single_choice",
-   "question": "Tom is ___ than Mark at tennis.",
-   "options": [
-    "best",
+   "title": "Choose the correct answer",
+   "text": "Tom is ___ than Mark at tennis.",
+   "order": 10,
+   "answers": [
     "better",
+    "best",
     "gooder"
    ],
    "correct": "better",
-   "marks": 1
+   "explanation": "Correct answer: better"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 11,
+   "answers": [
+    "It is the most beautiful park in the city.",
     "It is the beautifulest park in the city.",
-    "It is most beautiful park in the city.",
-    "It is the most beautiful park in the city."
+    "It is most beautiful park in the city."
    ],
    "correct": "It is the most beautiful park in the city.",
-   "marks": 1
+   "explanation": "Correct answer: It is the most beautiful park in the city."
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 12,
+   "answers": [
     "Riga is bigger than Cēsis.",
-    "Riga is biggest than Cēsis.",
-    "Riga is more big than Cēsis."
+    "Riga is more big than Cēsis.",
+    "Riga is biggest than Cēsis."
    ],
    "correct": "Riga is bigger than Cēsis.",
-   "marks": 1
+   "explanation": "Correct answer: Riga is bigger than Cēsis."
   },
   {
-   "type": "single_choice",
-   "question": "He lives ___ from the city than I do.",
-   "options": [
-    "farthest",
+   "title": "Choose the correct answer",
+   "text": "He lives ___ from the city than I do.",
+   "order": 13,
+   "answers": [
+    "further",
     "more far",
-    "further"
+    "farthest"
    ],
    "correct": "further",
-   "marks": 1
+   "explanation": "Correct answer: further"
   },
   {
-   "type": "single_choice",
-   "question": "The ___ you eat, the ___ you feel.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The ___ you eat, the ___ you feel.",
+   "order": 14,
+   "answers": [
+    "more / better",
     "most / best",
-    "more / best",
-    "more / better"
+    "more / best"
    ],
    "correct": "more / better",
-   "marks": 1
+   "explanation": "Correct answer: more / better"
   },
   {
-   "type": "single_choice",
-   "question": "My flat is ___ to the centre than yours.",
-   "options": [
-    "closest",
+   "title": "Choose the correct answer",
+   "text": "My flat is ___ to the centre than yours.",
+   "order": 15,
+   "answers": [
+    "closer",
     "more close",
-    "closer"
+    "closest"
    ],
    "correct": "closer",
-   "marks": 1
+   "explanation": "Correct answer: closer"
   },
   {
-   "type": "single_choice",
-   "question": "Which sentence means the same? 'A is bigger than B.'",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which sentence means the same? 'A is bigger than B.'",
+   "order": 16,
+   "answers": [
+    "B is not as big as A.",
     "B is bigger than A.",
-    "B is as big as A.",
-    "B is not as big as A."
+    "B is as big as A."
    ],
    "correct": "B is not as big as A.",
-   "marks": 1
+   "explanation": "Correct answer: B is not as big as A."
   },
   {
-   "type": "single_choice",
-   "question": "She is ___ of all my friends.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She is ___ of all my friends.",
+   "order": 17,
+   "answers": [
+    "the kindest",
     "kinder",
-    "more kind",
-    "the kindest"
+    "more kind"
    ],
    "correct": "the kindest",
-   "marks": 1
+   "explanation": "Correct answer: the kindest"
   },
   {
-   "type": "single_choice",
-   "question": "This exam is ___ than I thought.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "This exam is ___ than I thought.",
+   "order": 18,
+   "answers": [
+    "much easier",
     "many easier",
-    "most easy",
-    "much easier"
+    "most easy"
    ],
    "correct": "much easier",
-   "marks": 1
+   "explanation": "Correct answer: much easier"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 19,
+   "answers": [
+    "It's the best restaurant I have ever visited.",
     "It's the better restaurant I have ever visited.",
-    "It's best restaurant I ever visited.",
-    "It's the best restaurant I have ever visited."
+    "It's best restaurant I ever visited."
    ],
    "correct": "It's the best restaurant I have ever visited.",
-   "marks": 1
+   "explanation": "Correct answer: It's the best restaurant I have ever visited."
   },
   {
-   "type": "single_choice",
-   "question": "Winter here is ___ than in Spain.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Winter here is ___ than in Spain.",
+   "order": 20,
+   "answers": [
     "much colder",
-    "more colder",
-    "many colder"
+    "many colder",
+    "more colder"
    ],
    "correct": "much colder",
-   "marks": 1
+   "explanation": "Correct answer: much colder"
   },
   {
-   "type": "single_choice",
-   "question": "Which means 'a very small difference'?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which means 'a very small difference'?",
+   "order": 21,
+   "answers": [
+    "a bit taller",
     "much taller",
-    "far taller",
-    "a bit taller"
+    "far taller"
    ],
    "correct": "a bit taller",
-   "marks": 1
+   "explanation": "Correct answer: a bit taller"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 22,
+   "answers": [
+    "as old as",
     "as older as",
-    "as oldest as",
-    "as old as"
+    "as oldest as"
    ],
    "correct": "as old as",
-   "marks": 1
+   "explanation": "Correct answer: as old as"
   },
   {
-   "type": "single_choice",
-   "question": "A 'generous' person likes to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'generous' person likes to ...",
+   "order": 23,
+   "answers": [
     "give",
-    "sleep",
-    "take"
+    "take",
+    "sleep"
    ],
    "correct": "give",
-   "marks": 1
+   "explanation": "Correct answer: give"
   },
   {
-   "type": "single_choice",
-   "question": "A 'reliable' friend is someone you can ...",
-   "options": [
-    "hear",
+   "title": "Choose the correct answer",
+   "text": "A 'reliable' friend is someone you can ...",
+   "order": 24,
+   "answers": [
+    "trust",
     "see",
-    "trust"
+    "hear"
    ],
    "correct": "trust",
-   "marks": 1
+   "explanation": "Correct answer: trust"
   },
   {
-   "type": "single_choice",
-   "question": "A 'shy' person is ...",
-   "options": [
-    "very tall",
+   "title": "Choose the correct answer",
+   "text": "A 'shy' person is ...",
+   "order": 25,
+   "answers": [
     "nervous with others",
-    "always happy"
+    "always happy",
+    "very tall"
    ],
    "correct": "nervous with others",
-   "marks": 1
+   "explanation": "Correct answer: nervous with others"
   },
   {
-   "type": "single_choice",
-   "question": "A 'suburb' is an area ...",
-   "options": [
-    "in the mountains",
+   "title": "Choose the correct answer",
+   "text": "A 'suburb' is an area ...",
+   "order": 26,
+   "answers": [
+    "outside the centre",
     "in the sea",
-    "outside the centre"
+    "in the mountains"
    ],
    "correct": "outside the centre",
-   "marks": 1
+   "explanation": "Correct answer: outside the centre"
   },
   {
-   "type": "single_choice",
-   "question": "A 'crowded' place has ...",
-   "options": [
-    "old buildings",
+   "title": "Choose the correct answer",
+   "text": "A 'crowded' place has ...",
+   "order": 27,
+   "answers": [
+    "many people",
     "no people",
-    "many people"
+    "old buildings"
    ],
    "correct": "many people",
-   "marks": 1
+   "explanation": "Correct answer: many people"
   },
   {
-   "type": "single_choice",
-   "question": "A 'skyscraper' is a ...",
-   "options": [
-    "small shop",
+   "title": "Choose the correct answer",
+   "text": "A 'skyscraper' is a ...",
+   "order": 28,
+   "answers": [
     "very tall building",
-    "big park"
+    "big park",
+    "small shop"
    ],
    "correct": "very tall building",
-   "marks": 1
+   "explanation": "Correct answer: very tall building"
   },
   {
-   "type": "single_choice",
-   "question": "A 'peaceful' place is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'peaceful' place is ...",
+   "order": 29,
+   "answers": [
     "quiet and calm",
     "noisy",
     "dirty"
    ],
    "correct": "quiet and calm",
-   "marks": 1
+   "explanation": "Correct answer: quiet and calm"
   },
   {
-   "type": "single_choice",
-   "question": "'Cosy' means ...",
-   "options": [
-    "expensive",
+   "title": "Choose the correct answer",
+   "text": "'Cosy' means ...",
+   "order": 30,
+   "answers": [
+    "small, warm and comfortable",
     "large and cold",
-    "small, warm and comfortable"
+    "expensive"
    ],
    "correct": "small, warm and comfortable",
-   "marks": 1
+   "explanation": "Correct answer: small, warm and comfortable"
   },
   {
-   "type": "single_choice",
-   "question": "A 'lively' city is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'lively' city is ...",
+   "order": 31,
+   "answers": [
     "full of energy",
-    "empty",
-    "silent"
+    "silent",
+    "empty"
    ],
    "correct": "full of energy",
-   "marks": 1
+   "explanation": "Correct answer: full of energy"
   },
   {
-   "type": "single_choice",
-   "question": "'Polluted' air is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Polluted' air is ...",
+   "order": 32,
+   "answers": [
     "dirty",
-    "cold",
-    "fresh"
+    "fresh",
+    "cold"
    ],
    "correct": "dirty",
-   "marks": 1
+   "explanation": "Correct answer: dirty"
   },
   {
-   "type": "single_choice",
-   "question": "A 'historic' building is ...",
-   "options": [
-    "ugly",
+   "title": "Choose the correct answer",
+   "text": "A 'historic' building is ...",
+   "order": 33,
+   "answers": [
+    "important in history",
     "new",
-    "important in history"
+    "ugly"
    ],
    "correct": "important in history",
-   "marks": 1
+   "explanation": "Correct answer: important in history"
   },
   {
-   "type": "single_choice",
-   "question": "Your 'neighbourhood' is the ...",
-   "options": [
-    "country",
+   "title": "Choose the correct answer",
+   "text": "Your 'neighbourhood' is the ...",
+   "order": 34,
+   "answers": [
     "area around your home",
-    "city of your birth"
+    "city of your birth",
+    "country"
    ],
    "correct": "area around your home",
-   "marks": 1
+   "explanation": "Correct answer: area around your home"
   },
   {
-   "type": "single_choice",
-   "question": "If someone is 'slim', they are ...",
-   "options": [
-    "old",
+   "title": "Choose the correct answer",
+   "text": "If someone is 'slim', they are ...",
+   "order": 35,
+   "answers": [
+    "thin in an attractive way",
     "very tall",
-    "thin in an attractive way"
+    "old"
    ],
    "correct": "thin in an attractive way",
-   "marks": 1
+   "explanation": "Correct answer: thin in an attractive way"
   },
   {
-   "type": "single_choice",
-   "question": "If your hair is 'curly', it is ...",
-   "options": [
-    "grey",
+   "title": "Choose the correct answer",
+   "text": "If your hair is 'curly', it is ...",
+   "order": 36,
+   "answers": [
+    "not straight",
     "very long",
-    "not straight"
+    "grey"
    ],
    "correct": "not straight",
-   "marks": 1
+   "explanation": "Correct answer: not straight"
   },
   {
-   "type": "single_choice",
-   "question": "A 'friendly' person is ...",
-   "options": [
-    "quiet",
+   "title": "Choose the correct answer",
+   "text": "A 'friendly' person is ...",
+   "order": 37,
+   "answers": [
     "kind and pleasant",
-    "rude"
+    "rude",
+    "quiet"
    ],
    "correct": "kind and pleasant",
-   "marks": 1
+   "explanation": "Correct answer: kind and pleasant"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 38,
+   "answers": [
     "He is as tall as his brother.",
     "He is tall as his brother.",
     "He is as taller as his brother."
    ],
    "correct": "He is as tall as his brother.",
-   "marks": 1
+   "explanation": "Correct answer: He is as tall as his brother."
   },
   {
-   "type": "single_choice",
-   "question": "This is ___ interesting book I have read this year.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "This is ___ interesting book I have read this year.",
+   "order": 39,
+   "answers": [
     "the most",
-    "most",
-    "more"
+    "more",
+    "most"
    ],
    "correct": "the most",
-   "marks": 1
+   "explanation": "Correct answer: the most"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "It is less more crowded than the centre.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 40,
+   "answers": [
     "It is less crowded than the centre.",
+    "It is less more crowded than the centre.",
     "It is lesser crowded than the centre."
    ],
    "correct": "It is less crowded than the centre.",
-   "marks": 1
+   "explanation": "Correct answer: It is less crowded than the centre."
   }
  ]
 }

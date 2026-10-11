@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 1 Reading,single_choice,How many people were in the survey?,68,"1,000","2,500",B
-Unit 1 Reading,single_choice,What is the most popular free-time activity?,walking,time with family and friends,watching films,B
-Unit 1 Reading,single_choice,The percentage of people who read books weekly is ...,17%,61%,52%,A
-Unit 1 Reading,single_choice,Young people say that they ...,have more free time than their parents,have less free time than their parents,work fewer hours,B
-Unit 1 Reading,single_choice,"On average, young people work ...",35 hours a week,60 hours a week,42 hours a week,C
-Unit 1 Reading,single_choice,One in four people has ...,stopped using social media,moved house,taken up a new hobby,C
-Unit 1 Reading,single_choice,"True, False or Not given: Most people who started a new hobby feel happier.",False,True,Not given,B
-Unit 1 Reading,single_choice,"True, False or Not given: The researchers want people to use social media more.",False,Not given,True,A
+"settings","Unit 1 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>How many people were in the survey?</p>","single_choice","1.00","1","","","1","<p>Correct answer: 1,000</p>",""
+"answer","68","text","0","0","","1"
+"answer","1,000","text","1","0","","2"
+"answer","2,500","text","0","0","","3"
+"question","Choose the correct answer","<p>What is the most popular free-time activity?</p>","single_choice","1.00","2","","","1","<p>Correct answer: time with family and friends</p>",""
+"answer","walking","text","0","0","","1"
+"answer","time with family and friends","text","1","0","","2"
+"answer","watching films","text","0","0","","3"
+"question","Choose the correct answer","<p>The percentage of people who read books weekly is ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: 17%</p>",""
+"answer","17%","text","1","0","","1"
+"answer","61%","text","0","0","","2"
+"answer","52%","text","0","0","","3"
+"question","Choose the correct answer","<p>Young people say that they ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: have less free time than their parents</p>",""
+"answer","have more free time than their parents","text","0","0","","1"
+"answer","have less free time than their parents","text","1","0","","2"
+"answer","work fewer hours","text","0","0","","3"
+"question","Choose the correct answer","<p>On average, young people work ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: 42 hours a week</p>",""
+"answer","35 hours a week","text","0","0","","1"
+"answer","60 hours a week","text","0","0","","2"
+"answer","42 hours a week","text","1","0","","3"
+"question","Choose the correct answer","<p>One in four people has ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: taken up a new hobby</p>",""
+"answer","stopped using social media","text","0","0","","1"
+"answer","moved house","text","0","0","","2"
+"answer","taken up a new hobby","text","1","0","","3"
+"question","True, False or Not given","<p>Most people who started a new hobby feel happier.</p>","single_choice","1.00","7","","","1","<p>Correct answer: True</p>",""
+"answer","False","text","0","0","","1"
+"answer","True","text","1","0","","2"
+"answer","Not given","text","0","0","","3"
+"question","True, False or Not given","<p>The researchers want people to use social media more.</p>","single_choice","1.00","8","","","1","<p>Correct answer: False</p>",""
+"answer","False","text","1","0","","1"
+"answer","Not given","text","0","0","","2"
+"answer","True","text","0","0","","3"

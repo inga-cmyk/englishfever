@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 2 Grammar and Vocabulary,single_choice,I ___ TV when the lights went out.,watched,had watched,was watching,C
-Unit 2 Grammar and Vocabulary,single_choice,"When we arrived, the shop ___.",closes,was closing,had closed,C
-Unit 2 Grammar and Vocabulary,single_choice,"She ___ to Spain before, so she knew the way.",goes,was,had been,C
-Unit 2 Grammar and Vocabulary,single_choice,"While they ___ dinner, the phone rang.",have had,were having,had,B
-Unit 2 Grammar and Vocabulary,single_choice,What ___ you doing at 8 p.m. last night?,did,were,had,B
-Unit 2 Grammar and Vocabulary,single_choice,He was late because he ___ the bus.,was missing,had missed,misses,B
-Unit 2 Grammar and Vocabulary,single_choice,We ___ for an hour when the bus finally came.,had been waiting,wait,are waiting,A
-Unit 2 Grammar and Vocabulary,single_choice,The children ___ in the garden when it started to rain.,were playing,played,had played,A
-Unit 2 Grammar and Vocabulary,single_choice,I couldn't get in because I ___ my keys.,had left,was leaving,leave,A
-Unit 2 Grammar and Vocabulary,single_choice,"By the time I got there, everyone ___.",had gone,was going,goes,A
-Unit 2 Grammar and Vocabulary,single_choice,"As soon as she ___ the news, she called me.",had hearing,was hearing,heard,C
-Unit 2 Grammar and Vocabulary,single_choice,Which is correct?,I was walking when I saw an accident.,I had walk when I saw an accident.,I walked when I was seeing an accident.,A
-Unit 2 Grammar and Vocabulary,single_choice,Which is correct?,She had never seen snow before.,She never was seeing snow before.,She never had saw snow before.,A
-Unit 2 Grammar and Vocabulary,single_choice,"After he ___ dinner, he washed the dishes.",eats,had eaten,was eating,B
-Unit 2 Grammar and Vocabulary,single_choice,They ___ at the hotel when the storm began.,arrive,were arriving,had arrive,B
-Unit 2 Grammar and Vocabulary,single_choice,Which word shows two things at the same time?,after,finally,while,C
-Unit 2 Grammar and Vocabulary,single_choice,Which word shows something immediately after?,while,although,as soon as,C
-Unit 2 Grammar and Vocabulary,single_choice,What ___ you do when the alarm rang?,had,did,were,B
-Unit 2 Grammar and Vocabulary,single_choice,I ___ never ___ such a big city before that trip.,have / see,was / seeing,had / seen,C
-Unit 2 Grammar and Vocabulary,single_choice,Which is a story word?,probably,suddenly,usually,B
-Unit 2 Grammar and Vocabulary,single_choice,'Luggage' means ...,bags for a trip,a map,a ticket,A
-Unit 2 Grammar and Vocabulary,single_choice,'Check in' means ...,register at a hotel or airport,leave a hotel,pay a bill,A
-Unit 2 Grammar and Vocabulary,single_choice,A 'souvenir' is ...,something to remember a trip,a type of food,a plane ticket,A
-Unit 2 Grammar and Vocabulary,single_choice,'Sightseeing' means ...,visiting famous places,buying clothes,sleeping on a beach,A
-Unit 2 Grammar and Vocabulary,single_choice,'Accommodation' is ...,a tourist,a type of plane,a place to stay,C
-Unit 2 Grammar and Vocabulary,single_choice,A 'delay' is ...,when something is late,a type of ticket,a holiday,A
-Unit 2 Grammar and Vocabulary,single_choice,You need a ___ to travel abroad.,souvenir,passport,resort,B
-Unit 2 Grammar and Vocabulary,single_choice,'Set off' means ...,begin a journey,buy a ticket,finish a trip,A
-Unit 2 Grammar and Vocabulary,single_choice,'Get lost' means ...,not know where you are,lose your bag,win a prize,A
-Unit 2 Grammar and Vocabulary,single_choice,A 'tour' is ...,a trip with a guide,a type of hotel,a plane seat,A
-Unit 2 Grammar and Vocabulary,single_choice,We ___ a flight to Rome yesterday.,booked,boarded in,checked,A
-Unit 2 Grammar and Vocabulary,single_choice,A 'view' is ...,what you can see from a place,a type of room,a meal,A
-Unit 2 Grammar and Vocabulary,single_choice,A 'journey' is ...,a map,travelling from one place to another,a hotel,B
-Unit 2 Grammar and Vocabulary,single_choice,'Board' a plane means ...,clean it,get on it,buy it,B
-Unit 2 Grammar and Vocabulary,single_choice,A 'resort' is a ...,holiday place,tourist guide,pilot,A
-Unit 2 Grammar and Vocabulary,single_choice,They ___ the hotel online two weeks ago.,booked,were booking,have booked,A
-Unit 2 Grammar and Vocabulary,single_choice,The film ___ when we got to the cinema.,had started,starts,was starting,A
-Unit 2 Grammar and Vocabulary,single_choice,I fell asleep while I ___ a book.,read,was reading,had read,B
-Unit 2 Grammar and Vocabulary,single_choice,Which is correct?,"When I arrived, she had left.","When I had arrived, she left.","When I arrived, she was leaving the day before.",A
-Unit 2 Grammar and Vocabulary,single_choice,'Package holiday' means a holiday with ...,no hotel,flights and hotel in one price,only a ticket,B
+"settings","Unit 2 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>I ___ TV when the lights went out.</p>","single_choice","1.00","1","","","1","<p>Correct answer: was watching</p>",""
+"answer","watched","text","0","0","","1"
+"answer","had watched","text","0","0","","2"
+"answer","was watching","text","1","0","","3"
+"question","Choose the correct answer","<p>When we arrived, the shop ___.</p>","single_choice","1.00","2","","","1","<p>Correct answer: had closed</p>",""
+"answer","closes","text","0","0","","1"
+"answer","was closing","text","0","0","","2"
+"answer","had closed","text","1","0","","3"
+"question","Choose the correct answer","<p>She ___ to Spain before, so she knew the way.</p>","single_choice","1.00","3","","","1","<p>Correct answer: had been</p>",""
+"answer","goes","text","0","0","","1"
+"answer","was","text","0","0","","2"
+"answer","had been","text","1","0","","3"
+"question","Choose the correct answer","<p>While they ___ dinner, the phone rang.</p>","single_choice","1.00","4","","","1","<p>Correct answer: were having</p>",""
+"answer","have had","text","0","0","","1"
+"answer","were having","text","1","0","","2"
+"answer","had","text","0","0","","3"
+"question","Choose the correct answer","<p>What ___ you doing at 8 p.m. last night?</p>","single_choice","1.00","5","","","1","<p>Correct answer: were</p>",""
+"answer","did","text","0","0","","1"
+"answer","were","text","1","0","","2"
+"answer","had","text","0","0","","3"
+"question","Choose the correct answer","<p>He was late because he ___ the bus.</p>","single_choice","1.00","6","","","1","<p>Correct answer: had missed</p>",""
+"answer","was missing","text","0","0","","1"
+"answer","had missed","text","1","0","","2"
+"answer","misses","text","0","0","","3"
+"question","Choose the correct answer","<p>We ___ for an hour when the bus finally came.</p>","single_choice","1.00","7","","","1","<p>Correct answer: had been waiting</p>",""
+"answer","had been waiting","text","1","0","","1"
+"answer","wait","text","0","0","","2"
+"answer","are waiting","text","0","0","","3"
+"question","Choose the correct answer","<p>The children ___ in the garden when it started to rain.</p>","single_choice","1.00","8","","","1","<p>Correct answer: were playing</p>",""
+"answer","were playing","text","1","0","","1"
+"answer","played","text","0","0","","2"
+"answer","had played","text","0","0","","3"
+"question","Choose the correct answer","<p>I couldn't get in because I ___ my keys.</p>","single_choice","1.00","9","","","1","<p>Correct answer: had left</p>",""
+"answer","had left","text","1","0","","1"
+"answer","was leaving","text","0","0","","2"
+"answer","leave","text","0","0","","3"
+"question","Choose the correct answer","<p>By the time I got there, everyone ___.</p>","single_choice","1.00","10","","","1","<p>Correct answer: had gone</p>",""
+"answer","had gone","text","1","0","","1"
+"answer","was going","text","0","0","","2"
+"answer","goes","text","0","0","","3"
+"question","Choose the correct answer","<p>As soon as she ___ the news, she called me.</p>","single_choice","1.00","11","","","1","<p>Correct answer: heard</p>",""
+"answer","had hearing","text","0","0","","1"
+"answer","was hearing","text","0","0","","2"
+"answer","heard","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","12","","","1","<p>Correct answer: I was walking when I saw an accident.</p>",""
+"answer","I was walking when I saw an accident.","text","1","0","","1"
+"answer","I had walk when I saw an accident.","text","0","0","","2"
+"answer","I walked when I was seeing an accident.","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","13","","","1","<p>Correct answer: She had never seen snow before.</p>",""
+"answer","She had never seen snow before.","text","1","0","","1"
+"answer","She never was seeing snow before.","text","0","0","","2"
+"answer","She never had saw snow before.","text","0","0","","3"
+"question","Choose the correct answer","<p>After he ___ dinner, he washed the dishes.</p>","single_choice","1.00","14","","","1","<p>Correct answer: had eaten</p>",""
+"answer","eats","text","0","0","","1"
+"answer","had eaten","text","1","0","","2"
+"answer","was eating","text","0","0","","3"
+"question","Choose the correct answer","<p>They ___ at the hotel when the storm began.</p>","single_choice","1.00","15","","","1","<p>Correct answer: were arriving</p>",""
+"answer","arrive","text","0","0","","1"
+"answer","were arriving","text","1","0","","2"
+"answer","had arrive","text","0","0","","3"
+"question","Choose the correct answer","<p>Which word shows two things at the same time?</p>","single_choice","1.00","16","","","1","<p>Correct answer: while</p>",""
+"answer","after","text","0","0","","1"
+"answer","finally","text","0","0","","2"
+"answer","while","text","1","0","","3"
+"question","Choose the correct answer","<p>Which word shows something immediately after?</p>","single_choice","1.00","17","","","1","<p>Correct answer: as soon as</p>",""
+"answer","while","text","0","0","","1"
+"answer","although","text","0","0","","2"
+"answer","as soon as","text","1","0","","3"
+"question","Choose the correct answer","<p>What ___ you do when the alarm rang?</p>","single_choice","1.00","18","","","1","<p>Correct answer: did</p>",""
+"answer","had","text","0","0","","1"
+"answer","did","text","1","0","","2"
+"answer","were","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ never ___ such a big city before that trip.</p>","single_choice","1.00","19","","","1","<p>Correct answer: had / seen</p>",""
+"answer","have / see","text","0","0","","1"
+"answer","was / seeing","text","0","0","","2"
+"answer","had / seen","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is a story word?</p>","single_choice","1.00","20","","","1","<p>Correct answer: suddenly</p>",""
+"answer","probably","text","0","0","","1"
+"answer","suddenly","text","1","0","","2"
+"answer","usually","text","0","0","","3"
+"question","Choose the correct answer","<p>'Luggage' means ...</p>","single_choice","1.00","21","","","1","<p>Correct answer: bags for a trip</p>",""
+"answer","bags for a trip","text","1","0","","1"
+"answer","a map","text","0","0","","2"
+"answer","a ticket","text","0","0","","3"
+"question","Choose the correct answer","<p>'Check in' means ...</p>","single_choice","1.00","22","","","1","<p>Correct answer: register at a hotel or airport</p>",""
+"answer","register at a hotel or airport","text","1","0","","1"
+"answer","leave a hotel","text","0","0","","2"
+"answer","pay a bill","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'souvenir' is ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: something to remember a trip</p>",""
+"answer","something to remember a trip","text","1","0","","1"
+"answer","a type of food","text","0","0","","2"
+"answer","a plane ticket","text","0","0","","3"
+"question","Choose the correct answer","<p>'Sightseeing' means ...</p>","single_choice","1.00","24","","","1","<p>Correct answer: visiting famous places</p>",""
+"answer","visiting famous places","text","1","0","","1"
+"answer","buying clothes","text","0","0","","2"
+"answer","sleeping on a beach","text","0","0","","3"
+"question","Choose the correct answer","<p>'Accommodation' is ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: a place to stay</p>",""
+"answer","a tourist","text","0","0","","1"
+"answer","a type of plane","text","0","0","","2"
+"answer","a place to stay","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'delay' is ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: when something is late</p>",""
+"answer","when something is late","text","1","0","","1"
+"answer","a type of ticket","text","0","0","","2"
+"answer","a holiday","text","0","0","","3"
+"question","Choose the correct answer","<p>You need a ___ to travel abroad.</p>","single_choice","1.00","27","","","1","<p>Correct answer: passport</p>",""
+"answer","souvenir","text","0","0","","1"
+"answer","passport","text","1","0","","2"
+"answer","resort","text","0","0","","3"
+"question","Choose the correct answer","<p>'Set off' means ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: begin a journey</p>",""
+"answer","begin a journey","text","1","0","","1"
+"answer","buy a ticket","text","0","0","","2"
+"answer","finish a trip","text","0","0","","3"
+"question","Choose the correct answer","<p>'Get lost' means ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: not know where you are</p>",""
+"answer","not know where you are","text","1","0","","1"
+"answer","lose your bag","text","0","0","","2"
+"answer","win a prize","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'tour' is ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: a trip with a guide</p>",""
+"answer","a trip with a guide","text","1","0","","1"
+"answer","a type of hotel","text","0","0","","2"
+"answer","a plane seat","text","0","0","","3"
+"question","Choose the correct answer","<p>We ___ a flight to Rome yesterday.</p>","single_choice","1.00","31","","","1","<p>Correct answer: booked</p>",""
+"answer","booked","text","1","0","","1"
+"answer","boarded in","text","0","0","","2"
+"answer","checked","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'view' is ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: what you can see from a place</p>",""
+"answer","what you can see from a place","text","1","0","","1"
+"answer","a type of room","text","0","0","","2"
+"answer","a meal","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'journey' is ...</p>","single_choice","1.00","33","","","1","<p>Correct answer: travelling from one place to another</p>",""
+"answer","a map","text","0","0","","1"
+"answer","travelling from one place to another","text","1","0","","2"
+"answer","a hotel","text","0","0","","3"
+"question","Choose the correct answer","<p>'Board' a plane means ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: get on it</p>",""
+"answer","clean it","text","0","0","","1"
+"answer","get on it","text","1","0","","2"
+"answer","buy it","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'resort' is a ...</p>","single_choice","1.00","35","","","1","<p>Correct answer: holiday place</p>",""
+"answer","holiday place","text","1","0","","1"
+"answer","tourist guide","text","0","0","","2"
+"answer","pilot","text","0","0","","3"
+"question","Choose the correct answer","<p>They ___ the hotel online two weeks ago.</p>","single_choice","1.00","36","","","1","<p>Correct answer: booked</p>",""
+"answer","booked","text","1","0","","1"
+"answer","were booking","text","0","0","","2"
+"answer","have booked","text","0","0","","3"
+"question","Choose the correct answer","<p>The film ___ when we got to the cinema.</p>","single_choice","1.00","37","","","1","<p>Correct answer: had started</p>",""
+"answer","had started","text","1","0","","1"
+"answer","starts","text","0","0","","2"
+"answer","was starting","text","0","0","","3"
+"question","Choose the correct answer","<p>I fell asleep while I ___ a book.</p>","single_choice","1.00","38","","","1","<p>Correct answer: was reading</p>",""
+"answer","read","text","0","0","","1"
+"answer","was reading","text","1","0","","2"
+"answer","had read","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","39","","","1","<p>Correct answer: When I arrived, she had left.</p>",""
+"answer","When I arrived, she had left.","text","1","0","","1"
+"answer","When I had arrived, she left.","text","0","0","","2"
+"answer","When I arrived, she was leaving the day before.","text","0","0","","3"
+"question","Choose the correct answer","<p>'Package holiday' means a holiday with ...</p>","single_choice","1.00","40","","","1","<p>Correct answer: flights and hotel in one price</p>",""
+"answer","no hotel","text","0","0","","1"
+"answer","flights and hotel in one price","text","1","0","","2"
+"answer","only a ticket","text","0","0","","3"

@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 2 Reading,single_choice,Where did the writers change planes?,Sintra,Frankfurt,Lisbon,B
-Unit 2 Reading,single_choice,The hostel was in the district of ...,Belém,Sintra,Alfama,C
-Unit 2 Reading,single_choice,What was the problem with the hostel?,it was very noisy,it was dirty,there was no lift,C
-Unit 2 Reading,single_choice,Tram 28 was ...,closed,crowded,empty,B
-Unit 2 Reading,single_choice,What happened while they were queuing at Belém Tower?,it started to rain,a musician played guitar,they lost tickets,B
-Unit 2 Reading,single_choice,The weather in Sintra was ...,hot all day,bad in the morning,snowy,B
-Unit 2 Reading,single_choice,When did the sun come out?,at night,when they reached the top,in the morning,B
-Unit 2 Reading,single_choice,"True, False or Not given: The writers recommend buying a public transport card.",False,Not given,True,C
+"settings","Unit 2 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>Where did the writers change planes?</p>","single_choice","1.00","1","","","1","<p>Correct answer: Frankfurt</p>",""
+"answer","Sintra","text","0","0","","1"
+"answer","Frankfurt","text","1","0","","2"
+"answer","Lisbon","text","0","0","","3"
+"question","Choose the correct answer","<p>The hostel was in the district of ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: Alfama</p>",""
+"answer","Belém","text","0","0","","1"
+"answer","Sintra","text","0","0","","2"
+"answer","Alfama","text","1","0","","3"
+"question","Choose the correct answer","<p>What was the problem with the hostel?</p>","single_choice","1.00","3","","","1","<p>Correct answer: there was no lift</p>",""
+"answer","it was very noisy","text","0","0","","1"
+"answer","it was dirty","text","0","0","","2"
+"answer","there was no lift","text","1","0","","3"
+"question","Choose the correct answer","<p>Tram 28 was ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: crowded</p>",""
+"answer","closed","text","0","0","","1"
+"answer","crowded","text","1","0","","2"
+"answer","empty","text","0","0","","3"
+"question","Choose the correct answer","<p>What happened while they were queuing at Belém Tower?</p>","single_choice","1.00","5","","","1","<p>Correct answer: a musician played guitar</p>",""
+"answer","it started to rain","text","0","0","","1"
+"answer","a musician played guitar","text","1","0","","2"
+"answer","they lost tickets","text","0","0","","3"
+"question","Choose the correct answer","<p>The weather in Sintra was ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: bad in the morning</p>",""
+"answer","hot all day","text","0","0","","1"
+"answer","bad in the morning","text","1","0","","2"
+"answer","snowy","text","0","0","","3"
+"question","Choose the correct answer","<p>When did the sun come out?</p>","single_choice","1.00","7","","","1","<p>Correct answer: when they reached the top</p>",""
+"answer","at night","text","0","0","","1"
+"answer","when they reached the top","text","1","0","","2"
+"answer","in the morning","text","0","0","","3"
+"question","True, False or Not given","<p>The writers recommend buying a public transport card.</p>","single_choice","1.00","8","","","1","<p>Correct answer: True</p>",""
+"answer","False","text","0","0","","1"
+"answer","Not given","text","0","0","","2"
+"answer","True","text","1","0","","3"

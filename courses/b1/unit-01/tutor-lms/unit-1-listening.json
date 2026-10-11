@@ -1,101 +1,109 @@
 {
  "title": "Unit 1 Listening",
- "description": "<h3>A radio interview about hobbies</h3><p>Listen to the audio file twice (b1-unit-01-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "Ieva started the club because she ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Ieva started the club because she ...",
+   "order": 1,
+   "answers": [
     "didn't know anybody in Riga",
     "lost her job",
     "wanted to make money"
    ],
    "correct": "didn't know anybody in Riga",
-   "marks": 1
+   "explanation": "Correct answer: didn't know anybody in Riga"
   },
   {
-   "type": "single_choice",
-   "question": "The first meeting was a ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The first meeting was a ...",
+   "order": 2,
+   "answers": [
     "board game evening",
-    "climbing trip",
-    "pottery class"
+    "pottery class",
+    "climbing trip"
    ],
    "correct": "board game evening",
-   "marks": 1
+   "explanation": "Correct answer: board game evening"
   },
   {
-   "type": "single_choice",
-   "question": "The club now has ...",
-   "options": [
-    "eight members",
+   "title": "Choose the correct answer",
+   "text": "The club now has ...",
+   "order": 3,
+   "answers": [
     "over sixty members",
+    "eight members",
     "a thousand members"
    ],
    "correct": "over sixty members",
-   "marks": 1
+   "explanation": "Correct answer: over sixty members"
   },
   {
-   "type": "single_choice",
-   "question": "This month the club is doing ...",
-   "options": [
-    "cooking",
+   "title": "Choose the correct answer",
+   "text": "This month the club is doing ...",
+   "order": 4,
+   "answers": [
     "pottery",
-    "climbing"
+    "climbing",
+    "cooking"
    ],
    "correct": "pottery",
-   "marks": 1
+   "explanation": "Correct answer: pottery"
   },
   {
-   "type": "single_choice",
-   "question": "Ieva felt ... when she first went climbing.",
-   "options": [
-    "bored",
+   "title": "Choose the correct answer",
+   "text": "Ieva felt ... when she first went climbing.",
+   "order": 5,
+   "answers": [
     "afraid",
+    "bored",
     "tired"
    ],
    "correct": "afraid",
-   "marks": 1
+   "explanation": "Correct answer: afraid"
   },
   {
-   "type": "single_choice",
-   "question": "The club costs ...",
-   "options": [
-    "fifty euros a year",
+   "title": "Choose the correct answer",
+   "text": "The club costs ...",
+   "order": 6,
+   "answers": [
     "five euros a month",
-    "nothing"
+    "nothing",
+    "fifty euros a year"
    ],
    "correct": "five euros a month",
-   "marks": 1
+   "explanation": "Correct answer: five euros a month"
   },
   {
-   "type": "single_choice",
-   "question": "What does Ieva say is most important?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "What does Ieva say is most important?",
+   "order": 7,
+   "answers": [
     "being curious",
-    "being young",
-    "being fit"
+    "being fit",
+    "being young"
    ],
    "correct": "being curious",
-   "marks": 1
+   "explanation": "Correct answer: being curious"
   },
   {
-   "type": "single_choice",
-   "question": "The club meets ...",
-   "options": [
-    "every Monday",
+   "title": "Choose the correct answer",
+   "text": "The club meets ...",
+   "order": 8,
+   "answers": [
     "every second Thursday",
+    "every Monday",
     "every Saturday"
    ],
    "correct": "every second Thursday",
-   "marks": 1
+   "explanation": "Correct answer: every second Thursday"
   }
  ]
 }

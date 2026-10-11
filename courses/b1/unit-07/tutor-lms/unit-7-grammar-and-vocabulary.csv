@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 7 Grammar and Vocabulary,single_choice,"He said, 'I am tired.' → He said he ___ tired.",has been,was,is,B
-Unit 7 Grammar and Vocabulary,single_choice,"She said, 'I will call.' → She said she ___ call.",did,would,will,B
-Unit 7 Grammar and Vocabulary,single_choice,'I live in Riga.' → She said she ___ in Riga.,lives,had lived,lived,C
-Unit 7 Grammar and Vocabulary,single_choice,'We have finished.' → They said they ___ finished.,were,had,have,B
-Unit 7 Grammar and Vocabulary,single_choice,'I can't swim.' → He said he ___ swim.,can't,couldn't,didn't can,B
-Unit 7 Grammar and Vocabulary,single_choice,'Where is the station?' → She asked where the station ___.,is,did be,was,C
-Unit 7 Grammar and Vocabulary,single_choice,'Do you like tea?' → He asked ___ I liked tea.,if,what,that,A
-Unit 7 Grammar and Vocabulary,single_choice,'Stop talking!' → The teacher told us ___ talking.,stop,stopping,to stop,C
-Unit 7 Grammar and Vocabulary,single_choice,'I saw him yesterday.' → She said she'd seen him the ___ before.,today,yesterday,day,C
-Unit 7 Grammar and Vocabulary,single_choice,'I'm leaving tomorrow.' → He said he was leaving the ___ day.,tomorrow,last,next,C
-Unit 7 Grammar and Vocabulary,single_choice,She ___ me that she was busy.,said,asked,told,C
-Unit 7 Grammar and Vocabulary,single_choice,He ___ that he was hungry.,said,told,spoke,A
-Unit 7 Grammar and Vocabulary,single_choice,"It's a lovely day, ___ it?",is,doesn't,isn't,C
-Unit 7 Grammar and Vocabulary,single_choice,"You can swim, ___ you?",don't,aren't,can't,C
-Unit 7 Grammar and Vocabulary,single_choice,"They didn't come, ___ they?",did,do,didn't,A
-Unit 7 Grammar and Vocabulary,single_choice,"I'm late, ___ I?",amn't,am not,aren't,C
-Unit 7 Grammar and Vocabulary,single_choice,"Open the window, ___ you?",will,do,are,A
-Unit 7 Grammar and Vocabulary,single_choice,"Let's have lunch, ___?",will we,shall we,do we,B
-Unit 7 Grammar and Vocabulary,single_choice,"She has gone home, ___ she?",isn't,doesn't,hasn't,C
-Unit 7 Grammar and Vocabulary,single_choice,"You live here, ___ you?",haven't,don't,aren't,B
-Unit 7 Grammar and Vocabulary,single_choice,Which is correct?,He asked me where did I live.,He asked me where I lived.,He asked me where I do live.,B
-Unit 7 Grammar and Vocabulary,single_choice,Which is correct?,She told me waiting.,She told me to wait.,She told me that wait.,B
-Unit 7 Grammar and Vocabulary,single_choice,A person who writes news is a ...,waiter,journalist,pilot,B
-Unit 7 Grammar and Vocabulary,single_choice,The title of an article is the ...,headline,broadcast,waste,A
-Unit 7 Grammar and Vocabulary,single_choice,'Fake news' is ...,false information,a newspaper,a TV show,A
-Unit 7 Grammar and Vocabulary,single_choice,To 'recycle' is to ...,use materials again,throw away,break,A
-Unit 7 Grammar and Vocabulary,single_choice,'Pollution' is ...,"dirty air, water or land",a news story,a type of energy,A
-Unit 7 Grammar and Vocabulary,single_choice,'Global warming' is ...,a hot drink,a weather forecast,the rise of temperature of the Earth,C
-Unit 7 Grammar and Vocabulary,single_choice,'Waste' is ...,energy,things we throw away,newspaper,B
-Unit 7 Grammar and Vocabulary,single_choice,'Renewable' energy comes from ...,coal,oil,the sun and wind,C
-Unit 7 Grammar and Vocabulary,single_choice,To 'reduce' is to ...,make less,make more,buy,A
-Unit 7 Grammar and Vocabulary,single_choice,'Endangered' animals are ...,at risk of disappearing,very small,very dangerous,A
-Unit 7 Grammar and Vocabulary,single_choice,To 'subscribe' is to ...,read quickly,pay to receive something regularly,stop paying,B
-Unit 7 Grammar and Vocabulary,single_choice,An 'article' is a ...,type of energy,piece of furniture,piece of writing in a newspaper,C
-Unit 7 Grammar and Vocabulary,single_choice,'Environment' means ...,a type of waste,a building,nature and the world around us,C
-Unit 7 Grammar and Vocabulary,single_choice,To 'broadcast' a programme is to ...,delete it,record it,send it on TV or radio,C
-Unit 7 Grammar and Vocabulary,single_choice,She asked me what time ___.,it is,it was,was it,B
-Unit 7 Grammar and Vocabulary,single_choice,He said that he ___ the film the week before.,sees,had seen,was seeing,B
-Unit 7 Grammar and Vocabulary,single_choice,We should ___ our use of plastic.,reduce,broadcast,subscribe,A
-Unit 7 Grammar and Vocabulary,single_choice,It is not ___ news if it is true.,fake,endangered,renewable,A
+"settings","Unit 7 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>He said, 'I am tired.' → He said he ___ tired.</p>","single_choice","1.00","1","","","1","<p>Correct answer: was</p>",""
+"answer","has been","text","0","0","","1"
+"answer","was","text","1","0","","2"
+"answer","is","text","0","0","","3"
+"question","Choose the correct answer","<p>She said, 'I will call.' → She said she ___ call.</p>","single_choice","1.00","2","","","1","<p>Correct answer: would</p>",""
+"answer","did","text","0","0","","1"
+"answer","would","text","1","0","","2"
+"answer","will","text","0","0","","3"
+"question","Choose the correct answer","<p>'I live in Riga.' → She said she ___ in Riga.</p>","single_choice","1.00","3","","","1","<p>Correct answer: lived</p>",""
+"answer","lives","text","0","0","","1"
+"answer","had lived","text","0","0","","2"
+"answer","lived","text","1","0","","3"
+"question","Choose the correct answer","<p>'We have finished.' → They said they ___ finished.</p>","single_choice","1.00","4","","","1","<p>Correct answer: had</p>",""
+"answer","were","text","0","0","","1"
+"answer","had","text","1","0","","2"
+"answer","have","text","0","0","","3"
+"question","Choose the correct answer","<p>'I can't swim.' → He said he ___ swim.</p>","single_choice","1.00","5","","","1","<p>Correct answer: couldn't</p>",""
+"answer","can't","text","0","0","","1"
+"answer","couldn't","text","1","0","","2"
+"answer","didn't can","text","0","0","","3"
+"question","Choose the correct answer","<p>'Where is the station?' → She asked where the station ___.</p>","single_choice","1.00","6","","","1","<p>Correct answer: was</p>",""
+"answer","is","text","0","0","","1"
+"answer","did be","text","0","0","","2"
+"answer","was","text","1","0","","3"
+"question","Choose the correct answer","<p>'Do you like tea?' → He asked ___ I liked tea.</p>","single_choice","1.00","7","","","1","<p>Correct answer: if</p>",""
+"answer","if","text","1","0","","1"
+"answer","what","text","0","0","","2"
+"answer","that","text","0","0","","3"
+"question","Choose the correct answer","<p>'Stop talking!' → The teacher told us ___ talking.</p>","single_choice","1.00","8","","","1","<p>Correct answer: to stop</p>",""
+"answer","stop","text","0","0","","1"
+"answer","stopping","text","0","0","","2"
+"answer","to stop","text","1","0","","3"
+"question","Choose the correct answer","<p>'I saw him yesterday.' → She said she'd seen him the ___ before.</p>","single_choice","1.00","9","","","1","<p>Correct answer: day</p>",""
+"answer","today","text","0","0","","1"
+"answer","yesterday","text","0","0","","2"
+"answer","day","text","1","0","","3"
+"question","Choose the correct answer","<p>'I'm leaving tomorrow.' → He said he was leaving the ___ day.</p>","single_choice","1.00","10","","","1","<p>Correct answer: next</p>",""
+"answer","tomorrow","text","0","0","","1"
+"answer","last","text","0","0","","2"
+"answer","next","text","1","0","","3"
+"question","Choose the correct answer","<p>She ___ me that she was busy.</p>","single_choice","1.00","11","","","1","<p>Correct answer: told</p>",""
+"answer","said","text","0","0","","1"
+"answer","asked","text","0","0","","2"
+"answer","told","text","1","0","","3"
+"question","Choose the correct answer","<p>He ___ that he was hungry.</p>","single_choice","1.00","12","","","1","<p>Correct answer: said</p>",""
+"answer","said","text","1","0","","1"
+"answer","told","text","0","0","","2"
+"answer","spoke","text","0","0","","3"
+"question","Choose the correct answer","<p>It's a lovely day, ___ it?</p>","single_choice","1.00","13","","","1","<p>Correct answer: isn't</p>",""
+"answer","is","text","0","0","","1"
+"answer","doesn't","text","0","0","","2"
+"answer","isn't","text","1","0","","3"
+"question","Choose the correct answer","<p>You can swim, ___ you?</p>","single_choice","1.00","14","","","1","<p>Correct answer: can't</p>",""
+"answer","don't","text","0","0","","1"
+"answer","aren't","text","0","0","","2"
+"answer","can't","text","1","0","","3"
+"question","Choose the correct answer","<p>They didn't come, ___ they?</p>","single_choice","1.00","15","","","1","<p>Correct answer: did</p>",""
+"answer","did","text","1","0","","1"
+"answer","do","text","0","0","","2"
+"answer","didn't","text","0","0","","3"
+"question","Choose the correct answer","<p>I'm late, ___ I?</p>","single_choice","1.00","16","","","1","<p>Correct answer: aren't</p>",""
+"answer","amn't","text","0","0","","1"
+"answer","am not","text","0","0","","2"
+"answer","aren't","text","1","0","","3"
+"question","Choose the correct answer","<p>Open the window, ___ you?</p>","single_choice","1.00","17","","","1","<p>Correct answer: will</p>",""
+"answer","will","text","1","0","","1"
+"answer","do","text","0","0","","2"
+"answer","are","text","0","0","","3"
+"question","Choose the correct answer","<p>Let's have lunch, ___?</p>","single_choice","1.00","18","","","1","<p>Correct answer: shall we</p>",""
+"answer","will we","text","0","0","","1"
+"answer","shall we","text","1","0","","2"
+"answer","do we","text","0","0","","3"
+"question","Choose the correct answer","<p>She has gone home, ___ she?</p>","single_choice","1.00","19","","","1","<p>Correct answer: hasn't</p>",""
+"answer","isn't","text","0","0","","1"
+"answer","doesn't","text","0","0","","2"
+"answer","hasn't","text","1","0","","3"
+"question","Choose the correct answer","<p>You live here, ___ you?</p>","single_choice","1.00","20","","","1","<p>Correct answer: don't</p>",""
+"answer","haven't","text","0","0","","1"
+"answer","don't","text","1","0","","2"
+"answer","aren't","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","21","","","1","<p>Correct answer: He asked me where I lived.</p>",""
+"answer","He asked me where did I live.","text","0","0","","1"
+"answer","He asked me where I lived.","text","1","0","","2"
+"answer","He asked me where I do live.","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","22","","","1","<p>Correct answer: She told me to wait.</p>",""
+"answer","She told me waiting.","text","0","0","","1"
+"answer","She told me to wait.","text","1","0","","2"
+"answer","She told me that wait.","text","0","0","","3"
+"question","Choose the correct answer","<p>A person who writes news is a ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: journalist</p>",""
+"answer","waiter","text","0","0","","1"
+"answer","journalist","text","1","0","","2"
+"answer","pilot","text","0","0","","3"
+"question","Choose the correct answer","<p>The title of an article is the ...</p>","single_choice","1.00","24","","","1","<p>Correct answer: headline</p>",""
+"answer","headline","text","1","0","","1"
+"answer","broadcast","text","0","0","","2"
+"answer","waste","text","0","0","","3"
+"question","Choose the correct answer","<p>'Fake news' is ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: false information</p>",""
+"answer","false information","text","1","0","","1"
+"answer","a newspaper","text","0","0","","2"
+"answer","a TV show","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'recycle' is to ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: use materials again</p>",""
+"answer","use materials again","text","1","0","","1"
+"answer","throw away","text","0","0","","2"
+"answer","break","text","0","0","","3"
+"question","Choose the correct answer","<p>'Pollution' is ...</p>","single_choice","1.00","27","","","1","<p>Correct answer: dirty air, water or land</p>",""
+"answer","dirty air, water or land","text","1","0","","1"
+"answer","a news story","text","0","0","","2"
+"answer","a type of energy","text","0","0","","3"
+"question","Choose the correct answer","<p>'Global warming' is ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: the rise of temperature of the Earth</p>",""
+"answer","a hot drink","text","0","0","","1"
+"answer","a weather forecast","text","0","0","","2"
+"answer","the rise of temperature of the Earth","text","1","0","","3"
+"question","Choose the correct answer","<p>'Waste' is ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: things we throw away</p>",""
+"answer","energy","text","0","0","","1"
+"answer","things we throw away","text","1","0","","2"
+"answer","newspaper","text","0","0","","3"
+"question","Choose the correct answer","<p>'Renewable' energy comes from ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: the sun and wind</p>",""
+"answer","coal","text","0","0","","1"
+"answer","oil","text","0","0","","2"
+"answer","the sun and wind","text","1","0","","3"
+"question","Choose the correct answer","<p>To 'reduce' is to ...</p>","single_choice","1.00","31","","","1","<p>Correct answer: make less</p>",""
+"answer","make less","text","1","0","","1"
+"answer","make more","text","0","0","","2"
+"answer","buy","text","0","0","","3"
+"question","Choose the correct answer","<p>'Endangered' animals are ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: at risk of disappearing</p>",""
+"answer","at risk of disappearing","text","1","0","","1"
+"answer","very small","text","0","0","","2"
+"answer","very dangerous","text","0","0","","3"
+"question","Choose the correct answer","<p>To 'subscribe' is to ...</p>","single_choice","1.00","33","","","1","<p>Correct answer: pay to receive something regularly</p>",""
+"answer","read quickly","text","0","0","","1"
+"answer","pay to receive something regularly","text","1","0","","2"
+"answer","stop paying","text","0","0","","3"
+"question","Choose the correct answer","<p>An 'article' is a ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: piece of writing in a newspaper</p>",""
+"answer","type of energy","text","0","0","","1"
+"answer","piece of furniture","text","0","0","","2"
+"answer","piece of writing in a newspaper","text","1","0","","3"
+"question","Choose the correct answer","<p>'Environment' means ...</p>","single_choice","1.00","35","","","1","<p>Correct answer: nature and the world around us</p>",""
+"answer","a type of waste","text","0","0","","1"
+"answer","a building","text","0","0","","2"
+"answer","nature and the world around us","text","1","0","","3"
+"question","Choose the correct answer","<p>To 'broadcast' a programme is to ...</p>","single_choice","1.00","36","","","1","<p>Correct answer: send it on TV or radio</p>",""
+"answer","delete it","text","0","0","","1"
+"answer","record it","text","0","0","","2"
+"answer","send it on TV or radio","text","1","0","","3"
+"question","Choose the correct answer","<p>She asked me what time ___.</p>","single_choice","1.00","37","","","1","<p>Correct answer: it was</p>",""
+"answer","it is","text","0","0","","1"
+"answer","it was","text","1","0","","2"
+"answer","was it","text","0","0","","3"
+"question","Choose the correct answer","<p>He said that he ___ the film the week before.</p>","single_choice","1.00","38","","","1","<p>Correct answer: had seen</p>",""
+"answer","sees","text","0","0","","1"
+"answer","had seen","text","1","0","","2"
+"answer","was seeing","text","0","0","","3"
+"question","Choose the correct answer","<p>We should ___ our use of plastic.</p>","single_choice","1.00","39","","","1","<p>Correct answer: reduce</p>",""
+"answer","reduce","text","1","0","","1"
+"answer","broadcast","text","0","0","","2"
+"answer","subscribe","text","0","0","","3"
+"question","Choose the correct answer","<p>It is not ___ news if it is true.</p>","single_choice","1.00","40","","","1","<p>Correct answer: fake</p>",""
+"answer","fake","text","1","0","","1"
+"answer","endangered","text","0","0","","2"
+"answer","renewable","text","0","0","","3"

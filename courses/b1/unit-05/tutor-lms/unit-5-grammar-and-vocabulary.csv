@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 5 Grammar and Vocabulary,single_choice,Today is ___ than yesterday.,colder,more cold,the coldest,A
-Unit 5 Grammar and Vocabulary,single_choice,She is ___ girl in our class.,the tallest,taller,more tall,A
-Unit 5 Grammar and Vocabulary,single_choice,This film is ___ than the book.,boringer,more boring,the most boring,B
-Unit 5 Grammar and Vocabulary,single_choice,He's not ___ tall as his father.,more,as,so than,B
-Unit 5 Grammar and Vocabulary,single_choice,My car is ___ than yours.,more old,older,oldest,B
-Unit 5 Grammar and Vocabulary,single_choice,That was ___ day of my life.,worse,the baddest,the worst,C
-Unit 5 Grammar and Vocabulary,single_choice,Maths is ___ than history for me.,harder,hardest,more hard,A
-Unit 5 Grammar and Vocabulary,single_choice,Which is the ___ city in Latvia?,more big,bigger,biggest,C
-Unit 5 Grammar and Vocabulary,single_choice,It's ___ expensive than I expected.,most,more,much,B
-Unit 5 Grammar and Vocabulary,single_choice,Tom is ___ than Mark at tennis.,best,better,gooder,B
-Unit 5 Grammar and Vocabulary,single_choice,Which is correct?,It is the beautifulest park in the city.,It is most beautiful park in the city.,It is the most beautiful park in the city.,C
-Unit 5 Grammar and Vocabulary,single_choice,Which is correct?,Riga is bigger than Cēsis.,Riga is biggest than Cēsis.,Riga is more big than Cēsis.,A
-Unit 5 Grammar and Vocabulary,single_choice,He lives ___ from the city than I do.,farthest,more far,further,C
-Unit 5 Grammar and Vocabulary,single_choice,"The ___ you eat, the ___ you feel.",most / best,more / best,more / better,C
-Unit 5 Grammar and Vocabulary,single_choice,My flat is ___ to the centre than yours.,closest,more close,closer,C
-Unit 5 Grammar and Vocabulary,single_choice,Which sentence means the same? 'A is bigger than B.',B is bigger than A.,B is as big as A.,B is not as big as A.,C
-Unit 5 Grammar and Vocabulary,single_choice,She is ___ of all my friends.,kinder,more kind,the kindest,C
-Unit 5 Grammar and Vocabulary,single_choice,This exam is ___ than I thought.,many easier,most easy,much easier,C
-Unit 5 Grammar and Vocabulary,single_choice,Which is correct?,It's the better restaurant I have ever visited.,It's best restaurant I ever visited.,It's the best restaurant I have ever visited.,C
-Unit 5 Grammar and Vocabulary,single_choice,Winter here is ___ than in Spain.,much colder,more colder,many colder,A
-Unit 5 Grammar and Vocabulary,single_choice,Which means 'a very small difference'?,much taller,far taller,a bit taller,C
-Unit 5 Grammar and Vocabulary,single_choice,Which is correct?,as older as,as oldest as,as old as,C
-Unit 5 Grammar and Vocabulary,single_choice,A 'generous' person likes to ...,give,sleep,take,A
-Unit 5 Grammar and Vocabulary,single_choice,A 'reliable' friend is someone you can ...,hear,see,trust,C
-Unit 5 Grammar and Vocabulary,single_choice,A 'shy' person is ...,very tall,nervous with others,always happy,B
-Unit 5 Grammar and Vocabulary,single_choice,A 'suburb' is an area ...,in the mountains,in the sea,outside the centre,C
-Unit 5 Grammar and Vocabulary,single_choice,A 'crowded' place has ...,old buildings,no people,many people,C
-Unit 5 Grammar and Vocabulary,single_choice,A 'skyscraper' is a ...,small shop,very tall building,big park,B
-Unit 5 Grammar and Vocabulary,single_choice,A 'peaceful' place is ...,quiet and calm,noisy,dirty,A
-Unit 5 Grammar and Vocabulary,single_choice,'Cosy' means ...,expensive,large and cold,"small, warm and comfortable",C
-Unit 5 Grammar and Vocabulary,single_choice,A 'lively' city is ...,full of energy,empty,silent,A
-Unit 5 Grammar and Vocabulary,single_choice,'Polluted' air is ...,dirty,cold,fresh,A
-Unit 5 Grammar and Vocabulary,single_choice,A 'historic' building is ...,ugly,new,important in history,C
-Unit 5 Grammar and Vocabulary,single_choice,Your 'neighbourhood' is the ...,country,area around your home,city of your birth,B
-Unit 5 Grammar and Vocabulary,single_choice,"If someone is 'slim', they are ...",old,very tall,thin in an attractive way,C
-Unit 5 Grammar and Vocabulary,single_choice,"If your hair is 'curly', it is ...",grey,very long,not straight,C
-Unit 5 Grammar and Vocabulary,single_choice,A 'friendly' person is ...,quiet,kind and pleasant,rude,B
-Unit 5 Grammar and Vocabulary,single_choice,Which is correct?,He is as tall as his brother.,He is tall as his brother.,He is as taller as his brother.,A
-Unit 5 Grammar and Vocabulary,single_choice,This is ___ interesting book I have read this year.,the most,most,more,A
-Unit 5 Grammar and Vocabulary,single_choice,Which is correct?,It is less more crowded than the centre.,It is less crowded than the centre.,It is lesser crowded than the centre.,B
+"settings","Unit 5 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>Today is ___ than yesterday.</p>","single_choice","1.00","1","","","1","<p>Correct answer: colder</p>",""
+"answer","colder","text","1","0","","1"
+"answer","more cold","text","0","0","","2"
+"answer","the coldest","text","0","0","","3"
+"question","Choose the correct answer","<p>She is ___ girl in our class.</p>","single_choice","1.00","2","","","1","<p>Correct answer: the tallest</p>",""
+"answer","the tallest","text","1","0","","1"
+"answer","taller","text","0","0","","2"
+"answer","more tall","text","0","0","","3"
+"question","Choose the correct answer","<p>This film is ___ than the book.</p>","single_choice","1.00","3","","","1","<p>Correct answer: more boring</p>",""
+"answer","boringer","text","0","0","","1"
+"answer","more boring","text","1","0","","2"
+"answer","the most boring","text","0","0","","3"
+"question","Choose the correct answer","<p>He's not ___ tall as his father.</p>","single_choice","1.00","4","","","1","<p>Correct answer: as</p>",""
+"answer","more","text","0","0","","1"
+"answer","as","text","1","0","","2"
+"answer","so than","text","0","0","","3"
+"question","Choose the correct answer","<p>My car is ___ than yours.</p>","single_choice","1.00","5","","","1","<p>Correct answer: older</p>",""
+"answer","more old","text","0","0","","1"
+"answer","older","text","1","0","","2"
+"answer","oldest","text","0","0","","3"
+"question","Choose the correct answer","<p>That was ___ day of my life.</p>","single_choice","1.00","6","","","1","<p>Correct answer: the worst</p>",""
+"answer","worse","text","0","0","","1"
+"answer","the baddest","text","0","0","","2"
+"answer","the worst","text","1","0","","3"
+"question","Choose the correct answer","<p>Maths is ___ than history for me.</p>","single_choice","1.00","7","","","1","<p>Correct answer: harder</p>",""
+"answer","harder","text","1","0","","1"
+"answer","hardest","text","0","0","","2"
+"answer","more hard","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is the ___ city in Latvia?</p>","single_choice","1.00","8","","","1","<p>Correct answer: biggest</p>",""
+"answer","more big","text","0","0","","1"
+"answer","bigger","text","0","0","","2"
+"answer","biggest","text","1","0","","3"
+"question","Choose the correct answer","<p>It's ___ expensive than I expected.</p>","single_choice","1.00","9","","","1","<p>Correct answer: more</p>",""
+"answer","most","text","0","0","","1"
+"answer","more","text","1","0","","2"
+"answer","much","text","0","0","","3"
+"question","Choose the correct answer","<p>Tom is ___ than Mark at tennis.</p>","single_choice","1.00","10","","","1","<p>Correct answer: better</p>",""
+"answer","best","text","0","0","","1"
+"answer","better","text","1","0","","2"
+"answer","gooder","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","11","","","1","<p>Correct answer: It is the most beautiful park in the city.</p>",""
+"answer","It is the beautifulest park in the city.","text","0","0","","1"
+"answer","It is most beautiful park in the city.","text","0","0","","2"
+"answer","It is the most beautiful park in the city.","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","12","","","1","<p>Correct answer: Riga is bigger than Cēsis.</p>",""
+"answer","Riga is bigger than Cēsis.","text","1","0","","1"
+"answer","Riga is biggest than Cēsis.","text","0","0","","2"
+"answer","Riga is more big than Cēsis.","text","0","0","","3"
+"question","Choose the correct answer","<p>He lives ___ from the city than I do.</p>","single_choice","1.00","13","","","1","<p>Correct answer: further</p>",""
+"answer","farthest","text","0","0","","1"
+"answer","more far","text","0","0","","2"
+"answer","further","text","1","0","","3"
+"question","Choose the correct answer","<p>The ___ you eat, the ___ you feel.</p>","single_choice","1.00","14","","","1","<p>Correct answer: more / better</p>",""
+"answer","most / best","text","0","0","","1"
+"answer","more / best","text","0","0","","2"
+"answer","more / better","text","1","0","","3"
+"question","Choose the correct answer","<p>My flat is ___ to the centre than yours.</p>","single_choice","1.00","15","","","1","<p>Correct answer: closer</p>",""
+"answer","closest","text","0","0","","1"
+"answer","more close","text","0","0","","2"
+"answer","closer","text","1","0","","3"
+"question","Choose the correct answer","<p>Which sentence means the same? 'A is bigger than B.'</p>","single_choice","1.00","16","","","1","<p>Correct answer: B is not as big as A.</p>",""
+"answer","B is bigger than A.","text","0","0","","1"
+"answer","B is as big as A.","text","0","0","","2"
+"answer","B is not as big as A.","text","1","0","","3"
+"question","Choose the correct answer","<p>She is ___ of all my friends.</p>","single_choice","1.00","17","","","1","<p>Correct answer: the kindest</p>",""
+"answer","kinder","text","0","0","","1"
+"answer","more kind","text","0","0","","2"
+"answer","the kindest","text","1","0","","3"
+"question","Choose the correct answer","<p>This exam is ___ than I thought.</p>","single_choice","1.00","18","","","1","<p>Correct answer: much easier</p>",""
+"answer","many easier","text","0","0","","1"
+"answer","most easy","text","0","0","","2"
+"answer","much easier","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","19","","","1","<p>Correct answer: It's the best restaurant I have ever visited.</p>",""
+"answer","It's the better restaurant I have ever visited.","text","0","0","","1"
+"answer","It's best restaurant I ever visited.","text","0","0","","2"
+"answer","It's the best restaurant I have ever visited.","text","1","0","","3"
+"question","Choose the correct answer","<p>Winter here is ___ than in Spain.</p>","single_choice","1.00","20","","","1","<p>Correct answer: much colder</p>",""
+"answer","much colder","text","1","0","","1"
+"answer","more colder","text","0","0","","2"
+"answer","many colder","text","0","0","","3"
+"question","Choose the correct answer","<p>Which means 'a very small difference'?</p>","single_choice","1.00","21","","","1","<p>Correct answer: a bit taller</p>",""
+"answer","much taller","text","0","0","","1"
+"answer","far taller","text","0","0","","2"
+"answer","a bit taller","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","22","","","1","<p>Correct answer: as old as</p>",""
+"answer","as older as","text","0","0","","1"
+"answer","as oldest as","text","0","0","","2"
+"answer","as old as","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'generous' person likes to ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: give</p>",""
+"answer","give","text","1","0","","1"
+"answer","sleep","text","0","0","","2"
+"answer","take","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'reliable' friend is someone you can ...</p>","single_choice","1.00","24","","","1","<p>Correct answer: trust</p>",""
+"answer","hear","text","0","0","","1"
+"answer","see","text","0","0","","2"
+"answer","trust","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'shy' person is ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: nervous with others</p>",""
+"answer","very tall","text","0","0","","1"
+"answer","nervous with others","text","1","0","","2"
+"answer","always happy","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'suburb' is an area ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: outside the centre</p>",""
+"answer","in the mountains","text","0","0","","1"
+"answer","in the sea","text","0","0","","2"
+"answer","outside the centre","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'crowded' place has ...</p>","single_choice","1.00","27","","","1","<p>Correct answer: many people</p>",""
+"answer","old buildings","text","0","0","","1"
+"answer","no people","text","0","0","","2"
+"answer","many people","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'skyscraper' is a ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: very tall building</p>",""
+"answer","small shop","text","0","0","","1"
+"answer","very tall building","text","1","0","","2"
+"answer","big park","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'peaceful' place is ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: quiet and calm</p>",""
+"answer","quiet and calm","text","1","0","","1"
+"answer","noisy","text","0","0","","2"
+"answer","dirty","text","0","0","","3"
+"question","Choose the correct answer","<p>'Cosy' means ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: small, warm and comfortable</p>",""
+"answer","expensive","text","0","0","","1"
+"answer","large and cold","text","0","0","","2"
+"answer","small, warm and comfortable","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'lively' city is ...</p>","single_choice","1.00","31","","","1","<p>Correct answer: full of energy</p>",""
+"answer","full of energy","text","1","0","","1"
+"answer","empty","text","0","0","","2"
+"answer","silent","text","0","0","","3"
+"question","Choose the correct answer","<p>'Polluted' air is ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: dirty</p>",""
+"answer","dirty","text","1","0","","1"
+"answer","cold","text","0","0","","2"
+"answer","fresh","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'historic' building is ...</p>","single_choice","1.00","33","","","1","<p>Correct answer: important in history</p>",""
+"answer","ugly","text","0","0","","1"
+"answer","new","text","0","0","","2"
+"answer","important in history","text","1","0","","3"
+"question","Choose the correct answer","<p>Your 'neighbourhood' is the ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: area around your home</p>",""
+"answer","country","text","0","0","","1"
+"answer","area around your home","text","1","0","","2"
+"answer","city of your birth","text","0","0","","3"
+"question","Choose the correct answer","<p>If someone is 'slim', they are ...</p>","single_choice","1.00","35","","","1","<p>Correct answer: thin in an attractive way</p>",""
+"answer","old","text","0","0","","1"
+"answer","very tall","text","0","0","","2"
+"answer","thin in an attractive way","text","1","0","","3"
+"question","Choose the correct answer","<p>If your hair is 'curly', it is ...</p>","single_choice","1.00","36","","","1","<p>Correct answer: not straight</p>",""
+"answer","grey","text","0","0","","1"
+"answer","very long","text","0","0","","2"
+"answer","not straight","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'friendly' person is ...</p>","single_choice","1.00","37","","","1","<p>Correct answer: kind and pleasant</p>",""
+"answer","quiet","text","0","0","","1"
+"answer","kind and pleasant","text","1","0","","2"
+"answer","rude","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","38","","","1","<p>Correct answer: He is as tall as his brother.</p>",""
+"answer","He is as tall as his brother.","text","1","0","","1"
+"answer","He is tall as his brother.","text","0","0","","2"
+"answer","He is as taller as his brother.","text","0","0","","3"
+"question","Choose the correct answer","<p>This is ___ interesting book I have read this year.</p>","single_choice","1.00","39","","","1","<p>Correct answer: the most</p>",""
+"answer","the most","text","1","0","","1"
+"answer","most","text","0","0","","2"
+"answer","more","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","40","","","1","<p>Correct answer: It is less crowded than the centre.</p>",""
+"answer","It is less more crowded than the centre.","text","0","0","","1"
+"answer","It is less crowded than the centre.","text","1","0","","2"
+"answer","It is lesser crowded than the centre.","text","0","0","","3"

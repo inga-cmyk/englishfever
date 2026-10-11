@@ -1,101 +1,109 @@
 {
  "title": "Unit 8 Listening",
- "description": "<h3>A talk about saving money</h3><p>Listen to the audio file twice (b1-unit-08-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "How many tips does the presenter give?",
-   "options": [
-    "five",
+   "title": "Choose the correct answer",
+   "text": "How many tips does the presenter give?",
+   "order": 1,
+   "answers": [
     "three",
+    "five",
     "ten"
    ],
    "correct": "three",
-   "marks": 1
+   "explanation": "Correct answer: three"
   },
   {
-   "type": "single_choice",
-   "question": "The first tip is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The first tip is to ...",
+   "order": 2,
+   "answers": [
+    "make a budget",
     "buy less",
-    "earn more",
-    "make a budget"
+    "earn more"
    ],
    "correct": "make a budget",
-   "marks": 1
+   "explanation": "Correct answer: make a budget"
   },
   {
-   "type": "single_choice",
-   "question": "One listener spent ___ a month on coffee.",
-   "options": [
-    "1,000 euros",
+   "title": "Choose the correct answer",
+   "text": "One listener spent ___ a month on coffee.",
+   "order": 3,
+   "answers": [
     "100 euros",
-    "10 euros"
+    "10 euros",
+    "1,000 euros"
    ],
    "correct": "100 euros",
-   "marks": 1
+   "explanation": "Correct answer: 100 euros"
   },
   {
-   "type": "single_choice",
-   "question": "The second tip is to ...",
-   "options": [
-    "borrow money",
+   "title": "Choose the correct answer",
+   "text": "The second tip is to ...",
+   "order": 4,
+   "answers": [
+    "set a goal",
     "go shopping",
-    "set a goal"
+    "borrow money"
    ],
    "correct": "set a goal",
-   "marks": 1
+   "explanation": "Correct answer: set a goal"
   },
   {
-   "type": "single_choice",
-   "question": "What does the presenter say about ten euros a month?",
-   "options": [
-    "it is too little",
+   "title": "Choose the correct answer",
+   "text": "What does the presenter say about ten euros a month?",
+   "order": 5,
+   "answers": [
     "it makes a difference",
-    "it is not enough"
+    "it is not enough",
+    "it is too little"
    ],
    "correct": "it makes a difference",
-   "marks": 1
+   "explanation": "Correct answer: it makes a difference"
   },
   {
-   "type": "single_choice",
-   "question": "The third tip is to wait ___ before buying.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The third tip is to wait ___ before buying.",
+   "order": 6,
+   "answers": [
     "48 hours",
     "a week",
     "an hour"
    ],
    "correct": "48 hours",
-   "marks": 1
+   "explanation": "Correct answer: 48 hours"
   },
   {
-   "type": "single_choice",
-   "question": "After two days, in most cases you ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "After two days, in most cases you ...",
+   "order": 7,
+   "answers": [
+    "won't want the thing any more",
     "will buy twice",
-    "will forget",
-    "won't want the thing any more"
+    "will forget"
    ],
    "correct": "won't want the thing any more",
-   "marks": 1
+   "explanation": "Correct answer: won't want the thing any more"
   },
   {
-   "type": "single_choice",
-   "question": "The presenter also mentions ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The presenter also mentions ...",
+   "order": 8,
+   "answers": [
     "buying second-hand clothes",
-    "moving house",
-    "working more"
+    "working more",
+    "moving house"
    ],
    "correct": "buying second-hand clothes",
-   "marks": 1
+   "explanation": "Correct answer: buying second-hand clothes"
   }
  ]
 }

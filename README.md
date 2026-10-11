@@ -18,14 +18,16 @@ See `courses/b1/course.md` for the unit list and `courses/b1/unit-NN/INDEX.md` f
 - [docs/BUILD-RULES-FOR-NEXT-LEVELS.md](docs/BUILD-RULES-FOR-NEXT-LEVELS.md) – tested rules for layout, H5P, Tutor quizzes (CSV), assignments, QA and the prompt for the next levels (A2, B2, C1).
 - [docs/IMPORT-WITH-CLAUDE-DESKTOP.md](docs/IMPORT-WITH-CLAUDE-DESKTOP.md) – importing with the Claude desktop built-in browser.
 
-## Quick import (about 15 minutes)
-1. **H5P:** WordPress admin > H5P Content > Add New > Upload. Upload the 104 files from `dist/h5p/` (all zipped in `dist/all-h5p.zip`). Keep the titles unchanged.
-2. **Pages:** Tools > Import > WordPress (install the importer if asked). Choose `dist/wordpress/english-fever-b1-pages.xml`. This creates 57 draft pages (course page, 8 unit pages, 48 lessons). The H5P activities are embedded with `[h5p slug="..."]`, which matches the H5P titles. Check that a lesson page shows its activities, then publish.
-3. **Audio:** record `listening/scripts-to-record.md` and upload the MP3s to `wp-content/uploads/english-fever/` (names are in each script file).
-4. **Quizzes:** create the Tutor LMS quizzes from `dist/tutor-lms-quizzes.zip` (settings below).
-5. Regenerate everything with `python3 tools/build.py && python3 tools/make_wxr.py`.
+## Quick import
+See [docs/BUILD-RULES-FOR-NEXT-LEVELS.md](docs/BUILD-RULES-FOR-NEXT-LEVELS.md) (sections 9–10) for the tested pipeline.
+1. **H5P:** upload the files from `dist/h5p/` (zipped in `dist/all-h5p.zip`). Keep the titles unchanged.
+2. **Lessons:** create the 6 lessons per unit from `courses/b1/unit-NN/lesson-*.html` (Tutor LMS lesson editor, HTML view). `dist/wordpress/english-fever-b1-pages.xml` is an alternative that creates ordinary pages.
+3. **Assignments:** `courses/b1/unit-NN/assignment/` (`dist/tutor-lms-assignments.zip`).
+4. **Quizzes:** import `courses/b1/unit-NN/tutor-lms/*.csv` with Tutor's quiz import (one first, open it, then the rest).
+5. **Audio:** record `listening/scripts-to-record.md`.
+6. Rebuild: `python3 tools/build.py && python3 tools/make_wxr.py` (`EF_LEVEL=A2 ...` for another level).
 
-## Tutor LMS quiz settings
+## Tutor LMS quiz settings (already inside the CSV)
 The `.json` files hold the questions and recommended settings. The `.csv` files are for copy/paste or a spreadsheet import.
 **Grammar and vocabulary quiz:** Question order = *Random*; *Max questions allowed to answer* = **10** (the pool has 40). Passing grade 70%, time limit 15 minutes.
 **Reading / listening quizzes:** question order = *Sorting*, all questions shown, passing grade 60%. Put the reading text in the quiz description (already in the `.json`).

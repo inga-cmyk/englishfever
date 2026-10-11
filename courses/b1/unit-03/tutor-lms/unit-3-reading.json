@@ -1,101 +1,109 @@
 {
  "title": "Unit 3 Reading",
- "description": "<h3>Smart homes: are they a good idea?</h3><p>A smart home uses internet-connected devices to control things like heating, lights and security cameras. You can use an app on your phone, or you can simply talk to the system. Today about 15% of homes in Europe have at least one smart device, and experts predict that the number will double by 2028.</p>\n<p><strong>The advantages.</strong> Smart homes save energy. For example, a smart thermostat learns when you are at home and turns the heating off when you leave, so your bills will be lower. Smart locks are also convenient: you won't need keys anymore, and you can open the door for a friend while you're at work. For older people, smart devices can be very useful, because they can remind them to take medicine or call for help.</p>\n<p><strong>The disadvantages.</strong> The first problem is the price. A full system can cost thousands of euros. Second, devices need a good internet connection; if it stops, your home may not work properly. Finally, there are worries about privacy. Many devices collect information about us, and hackers can sometimes break into them. Experts advise people to choose a strong password for each device and update the software regularly.</p>\n<p>\"I'm going to install smart lights first,\" says Elina, who is planning to buy her first flat. \"If I like them, I'll add more devices later.\"</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "A smart home uses devices that are ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A smart home uses devices that are ...",
+   "order": 1,
+   "answers": [
+    "connected to the internet",
     "very big",
-    "very old",
-    "connected to the internet"
+    "very old"
    ],
    "correct": "connected to the internet",
-   "marks": 1
+   "explanation": "Correct answer: connected to the internet"
   },
   {
-   "type": "single_choice",
-   "question": "About what percentage of European homes have a smart device?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "About what percentage of European homes have a smart device?",
+   "order": 2,
+   "answers": [
     "15%",
-    "2%",
-    "50%"
+    "50%",
+    "2%"
    ],
    "correct": "15%",
-   "marks": 1
+   "explanation": "Correct answer: 15%"
   },
   {
-   "type": "single_choice",
-   "question": "Experts think the number will ... by 2028.",
-   "options": [
-    "stay the same",
+   "title": "Choose the correct answer",
+   "text": "Experts think the number will ... by 2028.",
+   "order": 3,
+   "answers": [
     "double",
-    "fall"
+    "fall",
+    "stay the same"
    ],
    "correct": "double",
-   "marks": 1
+   "explanation": "Correct answer: double"
   },
   {
-   "type": "single_choice",
-   "question": "A smart thermostat saves energy because it ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A smart thermostat saves energy because it ...",
+   "order": 4,
+   "answers": [
+    "turns the heating off when you leave",
     "makes the house colder",
-    "uses solar power",
-    "turns the heating off when you leave"
+    "uses solar power"
    ],
    "correct": "turns the heating off when you leave",
-   "marks": 1
+   "explanation": "Correct answer: turns the heating off when you leave"
   },
   {
-   "type": "single_choice",
-   "question": "Smart devices can help older people by ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Smart devices can help older people by ...",
+   "order": 5,
+   "answers": [
     "reminding them to take medicine",
-    "driving them",
-    "cooking for them"
+    "cooking for them",
+    "driving them"
    ],
    "correct": "reminding them to take medicine",
-   "marks": 1
+   "explanation": "Correct answer: reminding them to take medicine"
   },
   {
-   "type": "single_choice",
-   "question": "What is the first disadvantage mentioned?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "What is the first disadvantage mentioned?",
+   "order": 6,
+   "answers": [
     "the price",
     "the noise",
     "the size"
    ],
    "correct": "the price",
-   "marks": 1
+   "explanation": "Correct answer: the price"
   },
   {
-   "type": "single_choice",
-   "question": "Experts advise people to ...",
-   "options": [
-    "buy cheap devices",
+   "title": "Choose the correct answer",
+   "text": "Experts advise people to ...",
+   "order": 7,
+   "answers": [
     "use a strong password for each device",
+    "buy cheap devices",
     "turn off the internet"
    ],
    "correct": "use a strong password for each device",
-   "marks": 1
+   "explanation": "Correct answer: use a strong password for each device"
   },
   {
-   "type": "single_choice",
-   "question": "True, False or Not given: Elina has already bought a smart flat.",
-   "options": [
-    "Not given",
+   "title": "True, False or Not given",
+   "text": "Elina has already bought a smart flat.",
+   "order": 8,
+   "answers": [
+    "False",
     "True",
-    "False"
+    "Not given"
    ],
    "correct": "False",
-   "marks": 1
+   "explanation": "Correct answer: False"
   }
  ]
 }

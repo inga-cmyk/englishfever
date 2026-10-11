@@ -1,101 +1,109 @@
 {
  "title": "Unit 4 Reading",
- "description": "<h3>Job advertisement and email</h3><p><strong>JOB OFFER – Customer Service Assistant, Café Linden, Riga</strong></p>\n<p>We are looking for a friendly person to join our team. <strong>You must</strong> be 18 or older and speak Latvian and English. <strong>You should</strong> have some experience in a café or a shop, but you don't have to have a degree. The work is part-time: 25 hours per week, including some weekends. The salary is 5 euros an hour, plus tips. We offer free lunches and training in your first week.</p>\n<p><strong>How to apply:</strong> send your CV and a short email to jobs@cafelinden.lv. The deadline is 30 September. We will invite successful people for an interview in early October.</p>\n<hr>\n<p><strong>From:</strong> Rita Kalnina<br><strong>To:</strong> jobs@cafelinden.lv<br><strong>Subject:</strong> Application for Customer Service Assistant</p>\n<p>Dear Sir or Madam,</p>\n<p>I am writing to apply for the position of Customer Service Assistant, which I saw on your website. I am 20 years old, and I am studying economics at the University of Latvia. I have worked as a waitress for one summer, so I know how to talk to customers and work in a team. I speak Latvian, English and Russian.</p>\n<p>I can work in the evenings and at weekends. I attach my CV. I would be happy to come for an interview at any time.</p>\n<p>Yours faithfully,<br>Rita Kalnina</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "The job is at a ...",
-   "options": [
-    "hospital",
+   "title": "Choose the correct answer",
+   "text": "The job is at a ...",
+   "order": 1,
+   "answers": [
     "café",
+    "hospital",
     "bank"
    ],
    "correct": "café",
-   "marks": 1
+   "explanation": "Correct answer: café"
   },
   {
-   "type": "single_choice",
-   "question": "The applicant must be at least ...",
-   "options": [
-    "16",
+   "title": "Choose the correct answer",
+   "text": "The applicant must be at least ...",
+   "order": 2,
+   "answers": [
     "18",
-    "21"
+    "21",
+    "16"
    ],
    "correct": "18",
-   "marks": 1
+   "explanation": "Correct answer: 18"
   },
   {
-   "type": "single_choice",
-   "question": "The job is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The job is ...",
+   "order": 3,
+   "answers": [
+    "part-time",
     "full-time",
-    "only on weekends",
-    "part-time"
+    "only on weekends"
    ],
    "correct": "part-time",
-   "marks": 1
+   "explanation": "Correct answer: part-time"
   },
   {
-   "type": "single_choice",
-   "question": "Applicants don't have to ...",
-   "options": [
-    "send a CV",
+   "title": "Choose the correct answer",
+   "text": "Applicants don't have to ...",
+   "order": 4,
+   "answers": [
     "have a degree",
-    "speak English"
+    "speak English",
+    "send a CV"
    ],
    "correct": "have a degree",
-   "marks": 1
+   "explanation": "Correct answer: have a degree"
   },
   {
-   "type": "single_choice",
-   "question": "The deadline for applications is ...",
-   "options": [
-    "1 October",
+   "title": "Choose the correct answer",
+   "text": "The deadline for applications is ...",
+   "order": 5,
+   "answers": [
+    "30 September",
     "early October",
-    "30 September"
+    "1 October"
    ],
    "correct": "30 September",
-   "marks": 1
+   "explanation": "Correct answer: 30 September"
   },
   {
-   "type": "single_choice",
-   "question": "Interviews will be ...",
-   "options": [
-    "in November",
+   "title": "Choose the correct answer",
+   "text": "Interviews will be ...",
+   "order": 6,
+   "answers": [
+    "in early October",
     "on 30 September",
-    "in early October"
+    "in November"
    ],
    "correct": "in early October",
-   "marks": 1
+   "explanation": "Correct answer: in early October"
   },
   {
-   "type": "single_choice",
-   "question": "Rita has worked before as ...",
-   "options": [
-    "a cook",
+   "title": "Choose the correct answer",
+   "text": "Rita has worked before as ...",
+   "order": 7,
+   "answers": [
     "a waitress",
-    "a teacher"
+    "a teacher",
+    "a cook"
    ],
    "correct": "a waitress",
-   "marks": 1
+   "explanation": "Correct answer: a waitress"
   },
   {
-   "type": "single_choice",
-   "question": "True, False or Not given: Rita can only work in the mornings.",
-   "options": [
-    "Not given",
+   "title": "True, False or Not given",
+   "text": "Rita can only work in the mornings.",
+   "order": 8,
+   "answers": [
+    "False",
     "True",
-    "False"
+    "Not given"
    ],
    "correct": "False",
-   "marks": 1
+   "explanation": "Correct answer: False"
   }
  ]
 }

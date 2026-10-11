@@ -1,455 +1,493 @@
 {
  "title": "Unit 2 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "I ___ TV when the lights went out.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I ___ TV when the lights went out.",
+   "order": 1,
+   "answers": [
+    "was watching",
     "watched",
-    "had watched",
-    "was watching"
+    "had watched"
    ],
    "correct": "was watching",
-   "marks": 1
+   "explanation": "Correct answer: was watching"
   },
   {
-   "type": "single_choice",
-   "question": "When we arrived, the shop ___.",
-   "options": [
-    "closes",
+   "title": "Choose the correct answer",
+   "text": "When we arrived, the shop ___.",
+   "order": 2,
+   "answers": [
+    "had closed",
     "was closing",
-    "had closed"
+    "closes"
    ],
    "correct": "had closed",
-   "marks": 1
+   "explanation": "Correct answer: had closed"
   },
   {
-   "type": "single_choice",
-   "question": "She ___ to Spain before, so she knew the way.",
-   "options": [
-    "goes",
+   "title": "Choose the correct answer",
+   "text": "She ___ to Spain before, so she knew the way.",
+   "order": 3,
+   "answers": [
+    "had been",
     "was",
-    "had been"
+    "goes"
    ],
    "correct": "had been",
-   "marks": 1
+   "explanation": "Correct answer: had been"
   },
   {
-   "type": "single_choice",
-   "question": "While they ___ dinner, the phone rang.",
-   "options": [
-    "have had",
+   "title": "Choose the correct answer",
+   "text": "While they ___ dinner, the phone rang.",
+   "order": 4,
+   "answers": [
     "were having",
-    "had"
+    "had",
+    "have had"
    ],
    "correct": "were having",
-   "marks": 1
+   "explanation": "Correct answer: were having"
   },
   {
-   "type": "single_choice",
-   "question": "What ___ you doing at 8 p.m. last night?",
-   "options": [
-    "did",
+   "title": "Choose the correct answer",
+   "text": "What ___ you doing at 8 p.m. last night?",
+   "order": 5,
+   "answers": [
     "were",
+    "did",
     "had"
    ],
    "correct": "were",
-   "marks": 1
+   "explanation": "Correct answer: were"
   },
   {
-   "type": "single_choice",
-   "question": "He was late because he ___ the bus.",
-   "options": [
-    "was missing",
+   "title": "Choose the correct answer",
+   "text": "He was late because he ___ the bus.",
+   "order": 6,
+   "answers": [
     "had missed",
+    "was missing",
     "misses"
    ],
    "correct": "had missed",
-   "marks": 1
+   "explanation": "Correct answer: had missed"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ for an hour when the bus finally came.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We ___ for an hour when the bus finally came.",
+   "order": 7,
+   "answers": [
     "had been waiting",
-    "wait",
-    "are waiting"
+    "are waiting",
+    "wait"
    ],
    "correct": "had been waiting",
-   "marks": 1
+   "explanation": "Correct answer: had been waiting"
   },
   {
-   "type": "single_choice",
-   "question": "The children ___ in the garden when it started to rain.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The children ___ in the garden when it started to rain.",
+   "order": 8,
+   "answers": [
     "were playing",
     "played",
     "had played"
    ],
    "correct": "were playing",
-   "marks": 1
+   "explanation": "Correct answer: were playing"
   },
   {
-   "type": "single_choice",
-   "question": "I couldn't get in because I ___ my keys.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I couldn't get in because I ___ my keys.",
+   "order": 9,
+   "answers": [
     "had left",
     "was leaving",
     "leave"
    ],
    "correct": "had left",
-   "marks": 1
+   "explanation": "Correct answer: had left"
   },
   {
-   "type": "single_choice",
-   "question": "By the time I got there, everyone ___.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "By the time I got there, everyone ___.",
+   "order": 10,
+   "answers": [
     "had gone",
     "was going",
     "goes"
    ],
    "correct": "had gone",
-   "marks": 1
+   "explanation": "Correct answer: had gone"
   },
   {
-   "type": "single_choice",
-   "question": "As soon as she ___ the news, she called me.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "As soon as she ___ the news, she called me.",
+   "order": 11,
+   "answers": [
+    "heard",
     "had hearing",
-    "was hearing",
-    "heard"
+    "was hearing"
    ],
    "correct": "heard",
-   "marks": 1
+   "explanation": "Correct answer: heard"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 12,
+   "answers": [
     "I was walking when I saw an accident.",
-    "I had walk when I saw an accident.",
-    "I walked when I was seeing an accident."
+    "I walked when I was seeing an accident.",
+    "I had walk when I saw an accident."
    ],
    "correct": "I was walking when I saw an accident.",
-   "marks": 1
+   "explanation": "Correct answer: I was walking when I saw an accident."
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 13,
+   "answers": [
     "She had never seen snow before.",
-    "She never was seeing snow before.",
-    "She never had saw snow before."
+    "She never had saw snow before.",
+    "She never was seeing snow before."
    ],
    "correct": "She had never seen snow before.",
-   "marks": 1
+   "explanation": "Correct answer: She had never seen snow before."
   },
   {
-   "type": "single_choice",
-   "question": "After he ___ dinner, he washed the dishes.",
-   "options": [
-    "eats",
+   "title": "Choose the correct answer",
+   "text": "After he ___ dinner, he washed the dishes.",
+   "order": 14,
+   "answers": [
     "had eaten",
-    "was eating"
+    "was eating",
+    "eats"
    ],
    "correct": "had eaten",
-   "marks": 1
+   "explanation": "Correct answer: had eaten"
   },
   {
-   "type": "single_choice",
-   "question": "They ___ at the hotel when the storm began.",
-   "options": [
-    "arrive",
+   "title": "Choose the correct answer",
+   "text": "They ___ at the hotel when the storm began.",
+   "order": 15,
+   "answers": [
     "were arriving",
+    "arrive",
     "had arrive"
    ],
    "correct": "were arriving",
-   "marks": 1
+   "explanation": "Correct answer: were arriving"
   },
   {
-   "type": "single_choice",
-   "question": "Which word shows two things at the same time?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which word shows two things at the same time?",
+   "order": 16,
+   "answers": [
+    "while",
     "after",
-    "finally",
-    "while"
+    "finally"
    ],
    "correct": "while",
-   "marks": 1
+   "explanation": "Correct answer: while"
   },
   {
-   "type": "single_choice",
-   "question": "Which word shows something immediately after?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which word shows something immediately after?",
+   "order": 17,
+   "answers": [
+    "as soon as",
     "while",
-    "although",
-    "as soon as"
+    "although"
    ],
    "correct": "as soon as",
-   "marks": 1
+   "explanation": "Correct answer: as soon as"
   },
   {
-   "type": "single_choice",
-   "question": "What ___ you do when the alarm rang?",
-   "options": [
-    "had",
+   "title": "Choose the correct answer",
+   "text": "What ___ you do when the alarm rang?",
+   "order": 18,
+   "answers": [
     "did",
-    "were"
+    "were",
+    "had"
    ],
    "correct": "did",
-   "marks": 1
+   "explanation": "Correct answer: did"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ never ___ such a big city before that trip.",
-   "options": [
-    "have / see",
+   "title": "Choose the correct answer",
+   "text": "I ___ never ___ such a big city before that trip.",
+   "order": 19,
+   "answers": [
+    "had / seen",
     "was / seeing",
-    "had / seen"
+    "have / see"
    ],
    "correct": "had / seen",
-   "marks": 1
+   "explanation": "Correct answer: had / seen"
   },
   {
-   "type": "single_choice",
-   "question": "Which is a story word?",
-   "options": [
-    "probably",
+   "title": "Choose the correct answer",
+   "text": "Which is a story word?",
+   "order": 20,
+   "answers": [
     "suddenly",
+    "probably",
     "usually"
    ],
    "correct": "suddenly",
-   "marks": 1
+   "explanation": "Correct answer: suddenly"
   },
   {
-   "type": "single_choice",
-   "question": "'Luggage' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Luggage' means ...",
+   "order": 21,
+   "answers": [
     "bags for a trip",
-    "a map",
-    "a ticket"
+    "a ticket",
+    "a map"
    ],
    "correct": "bags for a trip",
-   "marks": 1
+   "explanation": "Correct answer: bags for a trip"
   },
   {
-   "type": "single_choice",
-   "question": "'Check in' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Check in' means ...",
+   "order": 22,
+   "answers": [
     "register at a hotel or airport",
     "leave a hotel",
     "pay a bill"
    ],
    "correct": "register at a hotel or airport",
-   "marks": 1
+   "explanation": "Correct answer: register at a hotel or airport"
   },
   {
-   "type": "single_choice",
-   "question": "A 'souvenir' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'souvenir' is ...",
+   "order": 23,
+   "answers": [
     "something to remember a trip",
     "a type of food",
     "a plane ticket"
    ],
    "correct": "something to remember a trip",
-   "marks": 1
+   "explanation": "Correct answer: something to remember a trip"
   },
   {
-   "type": "single_choice",
-   "question": "'Sightseeing' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Sightseeing' means ...",
+   "order": 24,
+   "answers": [
     "visiting famous places",
-    "buying clothes",
-    "sleeping on a beach"
+    "sleeping on a beach",
+    "buying clothes"
    ],
    "correct": "visiting famous places",
-   "marks": 1
+   "explanation": "Correct answer: visiting famous places"
   },
   {
-   "type": "single_choice",
-   "question": "'Accommodation' is ...",
-   "options": [
-    "a tourist",
+   "title": "Choose the correct answer",
+   "text": "'Accommodation' is ...",
+   "order": 25,
+   "answers": [
+    "a place to stay",
     "a type of plane",
-    "a place to stay"
+    "a tourist"
    ],
    "correct": "a place to stay",
-   "marks": 1
+   "explanation": "Correct answer: a place to stay"
   },
   {
-   "type": "single_choice",
-   "question": "A 'delay' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'delay' is ...",
+   "order": 26,
+   "answers": [
     "when something is late",
     "a type of ticket",
     "a holiday"
    ],
    "correct": "when something is late",
-   "marks": 1
+   "explanation": "Correct answer: when something is late"
   },
   {
-   "type": "single_choice",
-   "question": "You need a ___ to travel abroad.",
-   "options": [
-    "souvenir",
+   "title": "Choose the correct answer",
+   "text": "You need a ___ to travel abroad.",
+   "order": 27,
+   "answers": [
     "passport",
+    "souvenir",
     "resort"
    ],
    "correct": "passport",
-   "marks": 1
+   "explanation": "Correct answer: passport"
   },
   {
-   "type": "single_choice",
-   "question": "'Set off' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Set off' means ...",
+   "order": 28,
+   "answers": [
     "begin a journey",
-    "buy a ticket",
-    "finish a trip"
+    "finish a trip",
+    "buy a ticket"
    ],
    "correct": "begin a journey",
-   "marks": 1
+   "explanation": "Correct answer: begin a journey"
   },
   {
-   "type": "single_choice",
-   "question": "'Get lost' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Get lost' means ...",
+   "order": 29,
+   "answers": [
     "not know where you are",
-    "lose your bag",
-    "win a prize"
+    "win a prize",
+    "lose your bag"
    ],
    "correct": "not know where you are",
-   "marks": 1
+   "explanation": "Correct answer: not know where you are"
   },
   {
-   "type": "single_choice",
-   "question": "A 'tour' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'tour' is ...",
+   "order": 30,
+   "answers": [
     "a trip with a guide",
     "a type of hotel",
     "a plane seat"
    ],
    "correct": "a trip with a guide",
-   "marks": 1
+   "explanation": "Correct answer: a trip with a guide"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ a flight to Rome yesterday.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We ___ a flight to Rome yesterday.",
+   "order": 31,
+   "answers": [
     "booked",
-    "boarded in",
-    "checked"
+    "checked",
+    "boarded in"
    ],
    "correct": "booked",
-   "marks": 1
+   "explanation": "Correct answer: booked"
   },
   {
-   "type": "single_choice",
-   "question": "A 'view' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'view' is ...",
+   "order": 32,
+   "answers": [
     "what you can see from a place",
     "a type of room",
     "a meal"
    ],
    "correct": "what you can see from a place",
-   "marks": 1
+   "explanation": "Correct answer: what you can see from a place"
   },
   {
-   "type": "single_choice",
-   "question": "A 'journey' is ...",
-   "options": [
-    "a map",
+   "title": "Choose the correct answer",
+   "text": "A 'journey' is ...",
+   "order": 33,
+   "answers": [
     "travelling from one place to another",
-    "a hotel"
+    "a hotel",
+    "a map"
    ],
    "correct": "travelling from one place to another",
-   "marks": 1
+   "explanation": "Correct answer: travelling from one place to another"
   },
   {
-   "type": "single_choice",
-   "question": "'Board' a plane means ...",
-   "options": [
-    "clean it",
+   "title": "Choose the correct answer",
+   "text": "'Board' a plane means ...",
+   "order": 34,
+   "answers": [
     "get on it",
-    "buy it"
+    "buy it",
+    "clean it"
    ],
    "correct": "get on it",
-   "marks": 1
+   "explanation": "Correct answer: get on it"
   },
   {
-   "type": "single_choice",
-   "question": "A 'resort' is a ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'resort' is a ...",
+   "order": 35,
+   "answers": [
     "holiday place",
     "tourist guide",
     "pilot"
    ],
    "correct": "holiday place",
-   "marks": 1
+   "explanation": "Correct answer: holiday place"
   },
   {
-   "type": "single_choice",
-   "question": "They ___ the hotel online two weeks ago.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "They ___ the hotel online two weeks ago.",
+   "order": 36,
+   "answers": [
     "booked",
-    "were booking",
-    "have booked"
+    "have booked",
+    "were booking"
    ],
    "correct": "booked",
-   "marks": 1
+   "explanation": "Correct answer: booked"
   },
   {
-   "type": "single_choice",
-   "question": "The film ___ when we got to the cinema.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The film ___ when we got to the cinema.",
+   "order": 37,
+   "answers": [
     "had started",
-    "starts",
-    "was starting"
+    "was starting",
+    "starts"
    ],
    "correct": "had started",
-   "marks": 1
+   "explanation": "Correct answer: had started"
   },
   {
-   "type": "single_choice",
-   "question": "I fell asleep while I ___ a book.",
-   "options": [
-    "read",
+   "title": "Choose the correct answer",
+   "text": "I fell asleep while I ___ a book.",
+   "order": 38,
+   "answers": [
     "was reading",
-    "had read"
+    "had read",
+    "read"
    ],
    "correct": "was reading",
-   "marks": 1
+   "explanation": "Correct answer: was reading"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 39,
+   "answers": [
     "When I arrived, she had left.",
-    "When I had arrived, she left.",
-    "When I arrived, she was leaving the day before."
+    "When I arrived, she was leaving the day before.",
+    "When I had arrived, she left."
    ],
    "correct": "When I arrived, she had left.",
-   "marks": 1
+   "explanation": "Correct answer: When I arrived, she had left."
   },
   {
-   "type": "single_choice",
-   "question": "'Package holiday' means a holiday with ...",
-   "options": [
-    "no hotel",
+   "title": "Choose the correct answer",
+   "text": "'Package holiday' means a holiday with ...",
+   "order": 40,
+   "answers": [
     "flights and hotel in one price",
+    "no hotel",
     "only a ticket"
    ],
    "correct": "flights and hotel in one price",
-   "marks": 1
+   "explanation": "Correct answer: flights and hotel in one price"
   }
  ]
 }

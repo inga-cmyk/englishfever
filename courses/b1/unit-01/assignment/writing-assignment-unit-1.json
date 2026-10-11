@@ -1,0 +1,17 @@
+{
+ "title": "Writing assignment: Unit 1",
+ "summary_file": "writing-assignment-unit-1.html",
+ "assignment_option": {
+  "total_mark": 15,
+  "pass_mark": 9,
+  "upload_files_limit": 2,
+  "upload_file_size_limit": 5,
+  "attempts_allowed": 2,
+  "is_retry_allowed": 1,
+  "time_duration": {
+   "value": 0,
+   "time": "weeks"
+  }
+ },
+ "note": "Check 'Total attempts' in Tutor after import (B1 showed 3 although 2 was sent)."
+}

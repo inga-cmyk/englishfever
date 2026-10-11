@@ -1,455 +1,493 @@
 {
  "title": "Unit 1 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "She ___ to work by bus every day.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She ___ to work by bus every day.",
+   "order": 1,
+   "answers": [
+    "goes",
     "is going",
-    "has gone",
-    "goes"
+    "has gone"
    ],
    "correct": "goes",
-   "marks": 1
+   "explanation": "Correct answer: goes"
   },
   {
-   "type": "single_choice",
-   "question": "Look! It ___ outside.",
-   "options": [
-    "rained",
+   "title": "Choose the correct answer",
+   "text": "Look! It ___ outside.",
+   "order": 2,
+   "answers": [
     "is raining",
-    "rains"
+    "rains",
+    "rained"
    ],
    "correct": "is raining",
-   "marks": 1
+   "explanation": "Correct answer: is raining"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ in Riga for six years.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I ___ in Riga for six years.",
+   "order": 3,
+   "answers": [
     "have lived",
-    "am living",
-    "live"
+    "live",
+    "am living"
    ],
    "correct": "have lived",
-   "marks": 1
+   "explanation": "Correct answer: have lived"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ to the cinema last night.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We ___ to the cinema last night.",
+   "order": 4,
+   "answers": [
     "went",
-    "go",
-    "have been"
+    "have been",
+    "go"
    ],
    "correct": "went",
-   "marks": 1
+   "explanation": "Correct answer: went"
   },
   {
-   "type": "single_choice",
-   "question": "___ you ever been to Norway?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "___ you ever been to Norway?",
+   "order": 5,
+   "answers": [
+    "Have",
     "Did",
-    "Are",
-    "Have"
+    "Are"
    ],
    "correct": "Have",
-   "marks": 1
+   "explanation": "Correct answer: Have"
   },
   {
-   "type": "single_choice",
-   "question": "He ___ breakfast at the moment.",
-   "options": [
-    "have",
+   "title": "Choose the correct answer",
+   "text": "He ___ breakfast at the moment.",
+   "order": 6,
+   "answers": [
     "is having",
-    "has"
+    "has",
+    "have"
    ],
    "correct": "is having",
-   "marks": 1
+   "explanation": "Correct answer: is having"
   },
   {
-   "type": "single_choice",
-   "question": "I have worked here ___ 2019.",
-   "options": [
-    "since",
-    "ago",
-    "for"
-   ],
-   "correct": "since",
-   "marks": 1
-  },
-  {
-   "type": "single_choice",
-   "question": "I have worked here ___ five years.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I have worked here ___ 2019.",
+   "order": 7,
+   "answers": [
     "since",
     "for",
+    "ago"
+   ],
+   "correct": "since",
+   "explanation": "Correct answer: since"
+  },
+  {
+   "title": "Choose the correct answer",
+   "text": "I have worked here ___ five years.",
+   "order": 8,
+   "answers": [
+    "for",
+    "since",
     "from"
    ],
    "correct": "for",
-   "marks": 1
+   "explanation": "Correct answer: for"
   },
   {
-   "type": "single_choice",
-   "question": "They ___ a new car last month.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "They ___ a new car last month.",
+   "order": 9,
+   "answers": [
     "bought",
     "have bought",
     "are buying"
    ],
    "correct": "bought",
-   "marks": 1
+   "explanation": "Correct answer: bought"
   },
   {
-   "type": "single_choice",
-   "question": "My mother ___ three languages.",
-   "options": [
-    "has spoken",
+   "title": "Choose the correct answer",
+   "text": "My mother ___ three languages.",
+   "order": 10,
+   "answers": [
     "speaks",
-    "is speaking"
+    "is speaking",
+    "has spoken"
    ],
    "correct": "speaks",
-   "marks": 1
+   "explanation": "Correct answer: speaks"
   },
   {
-   "type": "single_choice",
-   "question": "What ___ you doing right now?",
-   "options": [
-    "do",
+   "title": "Choose the correct answer",
+   "text": "What ___ you doing right now?",
+   "order": 11,
+   "answers": [
     "are",
+    "do",
     "have"
    ],
    "correct": "are",
-   "marks": 1
+   "explanation": "Correct answer: are"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ never ___ sushi.",
-   "options": [
-    "am / eating",
+   "title": "Choose the correct answer",
+   "text": "I ___ never ___ sushi.",
+   "order": 12,
+   "answers": [
     "have / eaten",
-    "did / eat"
+    "did / eat",
+    "am / eating"
    ],
    "correct": "have / eaten",
-   "marks": 1
+   "explanation": "Correct answer: have / eaten"
   },
   {
-   "type": "single_choice",
-   "question": "She ___ her keys, so she can't get in.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She ___ her keys, so she can't get in.",
+   "order": 13,
+   "answers": [
+    "has lost",
     "loses",
-    "lost yesterday",
-    "has lost"
+    "lost yesterday"
    ],
    "correct": "has lost",
-   "marks": 1
+   "explanation": "Correct answer: has lost"
   },
   {
-   "type": "single_choice",
-   "question": "He is a vegetarian. He ___ meat.",
-   "options": [
-    "isn't eating",
+   "title": "Choose the correct answer",
+   "text": "He is a vegetarian. He ___ meat.",
+   "order": 14,
+   "answers": [
     "doesn't eat",
+    "isn't eating",
     "didn't eat"
    ],
    "correct": "doesn't eat",
-   "marks": 1
+   "explanation": "Correct answer: doesn't eat"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ him yesterday.",
-   "options": [
-    "see",
+   "title": "Choose the correct answer",
+   "text": "I ___ him yesterday.",
+   "order": 15,
+   "answers": [
     "saw",
-    "have seen"
+    "have seen",
+    "see"
    ],
    "correct": "saw",
-   "marks": 1
+   "explanation": "Correct answer: saw"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "I already finish yesterday.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 16,
+   "answers": [
     "I have already finished.",
-    "I am already finishing."
+    "I am already finishing.",
+    "I already finish yesterday."
    ],
    "correct": "I have already finished.",
-   "marks": 1
+   "explanation": "Correct answer: I have already finished."
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "She hasn't gone to school yesterday.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 17,
+   "answers": [
     "She didn't go to school yesterday.",
+    "She hasn't gone to school yesterday.",
     "She doesn't went to school yesterday."
    ],
    "correct": "She didn't go to school yesterday.",
-   "marks": 1
+   "explanation": "Correct answer: She didn't go to school yesterday."
   },
   {
-   "type": "single_choice",
-   "question": "Which verb is a state verb?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which verb is a state verb?",
+   "order": 18,
+   "answers": [
     "know",
-    "eat",
-    "run"
+    "run",
+    "eat"
    ],
    "correct": "know",
-   "marks": 1
+   "explanation": "Correct answer: know"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "I am liking this music.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 19,
+   "answers": [
     "I like this music.",
+    "I am liking this music.",
     "I have liking this music."
    ],
    "correct": "I like this music.",
-   "marks": 1
+   "explanation": "Correct answer: I like this music."
   },
   {
-   "type": "single_choice",
-   "question": "I ___ my homework yet.",
-   "options": [
-    "don't do",
+   "title": "Choose the correct answer",
+   "text": "I ___ my homework yet.",
+   "order": 20,
+   "answers": [
     "haven't done",
-    "didn't do"
+    "didn't do",
+    "don't do"
    ],
    "correct": "haven't done",
-   "marks": 1
+   "explanation": "Correct answer: haven't done"
   },
   {
-   "type": "single_choice",
-   "question": "'Commute' means ...",
-   "options": [
-    "talk to friends",
+   "title": "Choose the correct answer",
+   "text": "'Commute' means ...",
+   "order": 21,
+   "answers": [
     "travel to work every day",
+    "talk to friends",
     "take a holiday"
    ],
    "correct": "travel to work every day",
-   "marks": 1
+   "explanation": "Correct answer: travel to work every day"
   },
   {
-   "type": "single_choice",
-   "question": "'Hang out' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Hang out' means ...",
+   "order": 22,
+   "answers": [
     "spend time with friends",
-    "fall asleep",
-    "clean the house"
+    "clean the house",
+    "fall asleep"
    ],
    "correct": "spend time with friends",
-   "marks": 1
+   "explanation": "Correct answer: spend time with friends"
   },
   {
-   "type": "single_choice",
-   "question": "'Take up' (a hobby) means ...",
-   "options": [
-    "forget",
+   "title": "Choose the correct answer",
+   "text": "'Take up' (a hobby) means ...",
+   "order": 23,
+   "answers": [
+    "start",
     "finish",
-    "start"
+    "forget"
    ],
    "correct": "start",
-   "marks": 1
+   "explanation": "Correct answer: start"
   },
   {
-   "type": "single_choice",
-   "question": "'Catch up' means ...",
-   "options": [
-    "run fast",
+   "title": "Choose the correct answer",
+   "text": "'Catch up' means ...",
+   "order": 24,
+   "answers": [
     "talk after a long time",
+    "run fast",
     "buy something"
    ],
    "correct": "talk after a long time",
-   "marks": 1
+   "explanation": "Correct answer: talk after a long time"
   },
   {
-   "type": "single_choice",
-   "question": "'Spare time' means ...",
-   "options": [
-    "late time",
+   "title": "Choose the correct answer",
+   "text": "'Spare time' means ...",
+   "order": 25,
+   "answers": [
+    "free time",
     "work time",
-    "free time"
+    "late time"
    ],
    "correct": "free time",
-   "marks": 1
+   "explanation": "Correct answer: free time"
   },
   {
-   "type": "single_choice",
-   "question": "A person who belongs to a club is a ...",
-   "options": [
-    "teacher",
+   "title": "Choose the correct answer",
+   "text": "A person who belongs to a club is a ...",
+   "order": 26,
+   "answers": [
+    "member",
     "guest",
-    "member"
+    "teacher"
    ],
    "correct": "member",
-   "marks": 1
+   "explanation": "Correct answer: member"
   },
   {
-   "type": "single_choice",
-   "question": "'Keep fit' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Keep fit' means ...",
+   "order": 27,
+   "answers": [
     "stay healthy",
     "stay at home",
     "get a job"
    ],
    "correct": "stay healthy",
-   "marks": 1
+   "explanation": "Correct answer: stay healthy"
   },
   {
-   "type": "single_choice",
-   "question": "'Get together' means ...",
-   "options": [
-    "win",
+   "title": "Choose the correct answer",
+   "text": "'Get together' means ...",
+   "order": 28,
+   "answers": [
     "meet",
+    "win",
     "argue"
    ],
    "correct": "meet",
-   "marks": 1
+   "explanation": "Correct answer: meet"
   },
   {
-   "type": "single_choice",
-   "question": "'Stay up late' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Stay up late' means ...",
+   "order": 29,
+   "answers": [
     "go to bed late",
-    "have lunch",
-    "get up early"
+    "get up early",
+    "have lunch"
    ],
    "correct": "go to bed late",
-   "marks": 1
+   "explanation": "Correct answer: go to bed late"
   },
   {
-   "type": "single_choice",
-   "question": "'Workout' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Workout' is ...",
+   "order": 30,
+   "answers": [
     "exercise",
     "a meeting",
     "a dinner"
    ],
    "correct": "exercise",
-   "marks": 1
+   "explanation": "Correct answer: exercise"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ with my cousin every week on the phone.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I ___ with my cousin every week on the phone.",
+   "order": 31,
+   "answers": [
     "chat",
     "commute",
     "wear"
    ],
    "correct": "chat",
-   "marks": 1
+   "explanation": "Correct answer: chat"
   },
   {
-   "type": "single_choice",
-   "question": "'Routine' means ...",
-   "options": [
-    "a surprise",
+   "title": "Choose the correct answer",
+   "text": "'Routine' means ...",
+   "order": 32,
+   "answers": [
     "things you do every day",
+    "a surprise",
     "a holiday"
    ],
    "correct": "things you do every day",
-   "marks": 1
+   "explanation": "Correct answer: things you do every day"
   },
   {
-   "type": "single_choice",
-   "question": "Which word is an activity for free time?",
-   "options": [
-    "meeting",
+   "title": "Choose the correct answer",
+   "text": "Which word is an activity for free time?",
+   "order": 33,
+   "answers": [
     "hobby",
-    "salary"
+    "salary",
+    "meeting"
    ],
    "correct": "hobby",
-   "marks": 1
+   "explanation": "Correct answer: hobby"
   },
   {
-   "type": "single_choice",
-   "question": "'Get into' (a sport) means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Get into' (a sport) means ...",
+   "order": 34,
+   "answers": [
     "start to like",
     "leave",
     "win"
    ],
    "correct": "start to like",
-   "marks": 1
+   "explanation": "Correct answer: start to like"
   },
   {
-   "type": "single_choice",
-   "question": "Which is a social media site?",
-   "options": [
-    "Uber",
+   "title": "Choose the correct answer",
+   "text": "Which is a social media site?",
+   "order": 35,
+   "answers": [
     "Instagram",
-    "Booking"
+    "Booking",
+    "Uber"
    ],
    "correct": "Instagram",
-   "marks": 1
+   "explanation": "Correct answer: Instagram"
   },
   {
-   "type": "single_choice",
-   "question": "She ___ yoga twice a week.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She ___ yoga twice a week.",
+   "order": 36,
+   "answers": [
     "does",
-    "has done",
-    "is doing"
+    "is doing",
+    "has done"
    ],
    "correct": "does",
-   "marks": 1
+   "explanation": "Correct answer: does"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ each other since 2010.",
-   "options": [
-    "knew",
+   "title": "Choose the correct answer",
+   "text": "We ___ each other since 2010.",
+   "order": 37,
+   "answers": [
+    "have known",
     "know",
-    "have known"
+    "knew"
    ],
    "correct": "have known",
-   "marks": 1
+   "explanation": "Correct answer: have known"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ to a concert last Friday.",
-   "options": [
-    "have been",
+   "title": "Choose the correct answer",
+   "text": "I ___ to a concert last Friday.",
+   "order": 38,
+   "answers": [
     "went",
+    "have been",
     "am going"
    ],
    "correct": "went",
-   "marks": 1
+   "explanation": "Correct answer: went"
   },
   {
-   "type": "single_choice",
-   "question": "'Chat' means ...",
-   "options": [
-    "sleep",
+   "title": "Choose the correct answer",
+   "text": "'Chat' means ...",
+   "order": 39,
+   "answers": [
+    "talk in a friendly way",
     "run fast",
-    "talk in a friendly way"
+    "sleep"
    ],
    "correct": "talk in a friendly way",
-   "marks": 1
+   "explanation": "Correct answer: talk in a friendly way"
   },
   {
-   "type": "single_choice",
-   "question": "My brother ___ a book at the moment.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "My brother ___ a book at the moment.",
+   "order": 40,
+   "answers": [
     "is reading",
-    "has read",
-    "reads"
+    "reads",
+    "has read"
    ],
    "correct": "is reading",
-   "marks": 1
+   "explanation": "Correct answer: is reading"
   }
  ]
 }

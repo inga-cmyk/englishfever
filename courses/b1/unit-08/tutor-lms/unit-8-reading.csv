@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 8 Reading,single_choice,Edgars bought ...,a laptop,a phone,headphones,C
-Unit 8 Reading,single_choice,What was the problem?,they arrived late,the left headphone didn't work,they were the wrong colour,B
-Unit 8 Reading,single_choice,Nobody called him back after he contacted ...,the shop,the helpline,his bank,B
-Unit 8 Reading,single_choice,The price was ...,89 euros,8.90 euros,98 euros,A
-Unit 8 Reading,single_choice,What will Edgars do if he doesn't hear within seven days?,contact the consumer protection office,go to the shop,buy another pair,A
-Unit 8 Reading,single_choice,The company offers a ...,30-day money-back guarantee,one-year warranty,free replacement for life,A
-Unit 8 Reading,single_choice,Edgars must ...,visit the shop,pay for the delivery,post the faulty headphones,C
-Unit 8 Reading,single_choice,"True, False or Not given: Inese offered Edgars a 10% discount.",False,Not given,True,C
+"settings","Unit 8 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>Edgars bought ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: headphones</p>",""
+"answer","a laptop","text","0","0","","1"
+"answer","a phone","text","0","0","","2"
+"answer","headphones","text","1","0","","3"
+"question","Choose the correct answer","<p>What was the problem?</p>","single_choice","1.00","2","","","1","<p>Correct answer: the left headphone didn't work</p>",""
+"answer","they arrived late","text","0","0","","1"
+"answer","the left headphone didn't work","text","1","0","","2"
+"answer","they were the wrong colour","text","0","0","","3"
+"question","Choose the correct answer","<p>Nobody called him back after he contacted ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: the helpline</p>",""
+"answer","the shop","text","0","0","","1"
+"answer","the helpline","text","1","0","","2"
+"answer","his bank","text","0","0","","3"
+"question","Choose the correct answer","<p>The price was ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: 89 euros</p>",""
+"answer","89 euros","text","1","0","","1"
+"answer","8.90 euros","text","0","0","","2"
+"answer","98 euros","text","0","0","","3"
+"question","Choose the correct answer","<p>What will Edgars do if he doesn't hear within seven days?</p>","single_choice","1.00","5","","","1","<p>Correct answer: contact the consumer protection office</p>",""
+"answer","contact the consumer protection office","text","1","0","","1"
+"answer","go to the shop","text","0","0","","2"
+"answer","buy another pair","text","0","0","","3"
+"question","Choose the correct answer","<p>The company offers a ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: 30-day money-back guarantee</p>",""
+"answer","30-day money-back guarantee","text","1","0","","1"
+"answer","one-year warranty","text","0","0","","2"
+"answer","free replacement for life","text","0","0","","3"
+"question","Choose the correct answer","<p>Edgars must ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: post the faulty headphones</p>",""
+"answer","visit the shop","text","0","0","","1"
+"answer","pay for the delivery","text","0","0","","2"
+"answer","post the faulty headphones","text","1","0","","3"
+"question","True, False or Not given","<p>Inese offered Edgars a 10% discount.</p>","single_choice","1.00","8","","","1","<p>Correct answer: True</p>",""
+"answer","False","text","0","0","","1"
+"answer","Not given","text","0","0","","2"
+"answer","True","text","1","0","","3"

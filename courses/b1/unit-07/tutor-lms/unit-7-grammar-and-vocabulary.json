@@ -1,455 +1,493 @@
 {
  "title": "Unit 7 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "He said, 'I am tired.' → He said he ___ tired.",
-   "options": [
-    "has been",
+   "title": "Choose the correct answer",
+   "text": "He said, 'I am tired.' → He said he ___ tired.",
+   "order": 1,
+   "answers": [
     "was",
-    "is"
+    "is",
+    "has been"
    ],
    "correct": "was",
-   "marks": 1
+   "explanation": "Correct answer: was"
   },
   {
-   "type": "single_choice",
-   "question": "She said, 'I will call.' → She said she ___ call.",
-   "options": [
-    "did",
+   "title": "Choose the correct answer",
+   "text": "She said, 'I will call.' → She said she ___ call.",
+   "order": 2,
+   "answers": [
     "would",
-    "will"
+    "will",
+    "did"
    ],
    "correct": "would",
-   "marks": 1
+   "explanation": "Correct answer: would"
   },
   {
-   "type": "single_choice",
-   "question": "'I live in Riga.' → She said she ___ in Riga.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'I live in Riga.' → She said she ___ in Riga.",
+   "order": 3,
+   "answers": [
+    "lived",
     "lives",
-    "had lived",
-    "lived"
+    "had lived"
    ],
    "correct": "lived",
-   "marks": 1
+   "explanation": "Correct answer: lived"
   },
   {
-   "type": "single_choice",
-   "question": "'We have finished.' → They said they ___ finished.",
-   "options": [
-    "were",
+   "title": "Choose the correct answer",
+   "text": "'We have finished.' → They said they ___ finished.",
+   "order": 4,
+   "answers": [
     "had",
-    "have"
+    "have",
+    "were"
    ],
    "correct": "had",
-   "marks": 1
+   "explanation": "Correct answer: had"
   },
   {
-   "type": "single_choice",
-   "question": "'I can't swim.' → He said he ___ swim.",
-   "options": [
-    "can't",
+   "title": "Choose the correct answer",
+   "text": "'I can't swim.' → He said he ___ swim.",
+   "order": 5,
+   "answers": [
     "couldn't",
+    "can't",
     "didn't can"
    ],
    "correct": "couldn't",
-   "marks": 1
+   "explanation": "Correct answer: couldn't"
   },
   {
-   "type": "single_choice",
-   "question": "'Where is the station?' → She asked where the station ___.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Where is the station?' → She asked where the station ___.",
+   "order": 6,
+   "answers": [
+    "was",
     "is",
-    "did be",
-    "was"
+    "did be"
    ],
    "correct": "was",
-   "marks": 1
+   "explanation": "Correct answer: was"
   },
   {
-   "type": "single_choice",
-   "question": "'Do you like tea?' → He asked ___ I liked tea.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Do you like tea?' → He asked ___ I liked tea.",
+   "order": 7,
+   "answers": [
     "if",
-    "what",
-    "that"
+    "that",
+    "what"
    ],
    "correct": "if",
-   "marks": 1
+   "explanation": "Correct answer: if"
   },
   {
-   "type": "single_choice",
-   "question": "'Stop talking!' → The teacher told us ___ talking.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Stop talking!' → The teacher told us ___ talking.",
+   "order": 8,
+   "answers": [
+    "to stop",
     "stop",
-    "stopping",
-    "to stop"
+    "stopping"
    ],
    "correct": "to stop",
-   "marks": 1
+   "explanation": "Correct answer: to stop"
   },
   {
-   "type": "single_choice",
-   "question": "'I saw him yesterday.' → She said she'd seen him the ___ before.",
-   "options": [
-    "today",
+   "title": "Choose the correct answer",
+   "text": "'I saw him yesterday.' → She said she'd seen him the ___ before.",
+   "order": 9,
+   "answers": [
+    "day",
     "yesterday",
-    "day"
+    "today"
    ],
    "correct": "day",
-   "marks": 1
+   "explanation": "Correct answer: day"
   },
   {
-   "type": "single_choice",
-   "question": "'I'm leaving tomorrow.' → He said he was leaving the ___ day.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'I'm leaving tomorrow.' → He said he was leaving the ___ day.",
+   "order": 10,
+   "answers": [
+    "next",
     "tomorrow",
-    "last",
-    "next"
+    "last"
    ],
    "correct": "next",
-   "marks": 1
+   "explanation": "Correct answer: next"
   },
   {
-   "type": "single_choice",
-   "question": "She ___ me that she was busy.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She ___ me that she was busy.",
+   "order": 11,
+   "answers": [
+    "told",
     "said",
-    "asked",
-    "told"
+    "asked"
    ],
    "correct": "told",
-   "marks": 1
+   "explanation": "Correct answer: told"
   },
   {
-   "type": "single_choice",
-   "question": "He ___ that he was hungry.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "He ___ that he was hungry.",
+   "order": 12,
+   "answers": [
     "said",
     "told",
     "spoke"
    ],
    "correct": "said",
-   "marks": 1
+   "explanation": "Correct answer: said"
   },
   {
-   "type": "single_choice",
-   "question": "It's a lovely day, ___ it?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "It's a lovely day, ___ it?",
+   "order": 13,
+   "answers": [
+    "isn't",
     "is",
-    "doesn't",
-    "isn't"
+    "doesn't"
    ],
    "correct": "isn't",
-   "marks": 1
+   "explanation": "Correct answer: isn't"
   },
   {
-   "type": "single_choice",
-   "question": "You can swim, ___ you?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "You can swim, ___ you?",
+   "order": 14,
+   "answers": [
+    "can't",
     "don't",
-    "aren't",
-    "can't"
-   ],
-   "correct": "can't",
-   "marks": 1
-  },
-  {
-   "type": "single_choice",
-   "question": "They didn't come, ___ they?",
-   "options": [
-    "did",
-    "do",
-    "didn't"
-   ],
-   "correct": "did",
-   "marks": 1
-  },
-  {
-   "type": "single_choice",
-   "question": "I'm late, ___ I?",
-   "options": [
-    "amn't",
-    "am not",
     "aren't"
    ],
-   "correct": "aren't",
-   "marks": 1
+   "correct": "can't",
+   "explanation": "Correct answer: can't"
   },
   {
-   "type": "single_choice",
-   "question": "Open the window, ___ you?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "They didn't come, ___ they?",
+   "order": 15,
+   "answers": [
+    "did",
+    "didn't",
+    "do"
+   ],
+   "correct": "did",
+   "explanation": "Correct answer: did"
+  },
+  {
+   "title": "Choose the correct answer",
+   "text": "I'm late, ___ I?",
+   "order": 16,
+   "answers": [
+    "aren't",
+    "amn't",
+    "am not"
+   ],
+   "correct": "aren't",
+   "explanation": "Correct answer: aren't"
+  },
+  {
+   "title": "Choose the correct answer",
+   "text": "Open the window, ___ you?",
+   "order": 17,
+   "answers": [
     "will",
     "do",
     "are"
    ],
    "correct": "will",
-   "marks": 1
+   "explanation": "Correct answer: will"
   },
   {
-   "type": "single_choice",
-   "question": "Let's have lunch, ___?",
-   "options": [
-    "will we",
+   "title": "Choose the correct answer",
+   "text": "Let's have lunch, ___?",
+   "order": 18,
+   "answers": [
     "shall we",
+    "will we",
     "do we"
    ],
    "correct": "shall we",
-   "marks": 1
+   "explanation": "Correct answer: shall we"
   },
   {
-   "type": "single_choice",
-   "question": "She has gone home, ___ she?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She has gone home, ___ she?",
+   "order": 19,
+   "answers": [
+    "hasn't",
     "isn't",
-    "doesn't",
-    "hasn't"
+    "doesn't"
    ],
    "correct": "hasn't",
-   "marks": 1
+   "explanation": "Correct answer: hasn't"
   },
   {
-   "type": "single_choice",
-   "question": "You live here, ___ you?",
-   "options": [
-    "haven't",
+   "title": "Choose the correct answer",
+   "text": "You live here, ___ you?",
+   "order": 20,
+   "answers": [
     "don't",
-    "aren't"
+    "aren't",
+    "haven't"
    ],
    "correct": "don't",
-   "marks": 1
+   "explanation": "Correct answer: don't"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "He asked me where did I live.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 21,
+   "answers": [
     "He asked me where I lived.",
+    "He asked me where did I live.",
     "He asked me where I do live."
    ],
    "correct": "He asked me where I lived.",
-   "marks": 1
+   "explanation": "Correct answer: He asked me where I lived."
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "She told me waiting.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 22,
+   "answers": [
     "She told me to wait.",
+    "She told me waiting.",
     "She told me that wait."
    ],
    "correct": "She told me to wait.",
-   "marks": 1
+   "explanation": "Correct answer: She told me to wait."
   },
   {
-   "type": "single_choice",
-   "question": "A person who writes news is a ...",
-   "options": [
-    "waiter",
+   "title": "Choose the correct answer",
+   "text": "A person who writes news is a ...",
+   "order": 23,
+   "answers": [
     "journalist",
+    "waiter",
     "pilot"
    ],
    "correct": "journalist",
-   "marks": 1
+   "explanation": "Correct answer: journalist"
   },
   {
-   "type": "single_choice",
-   "question": "The title of an article is the ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The title of an article is the ...",
+   "order": 24,
+   "answers": [
     "headline",
-    "broadcast",
-    "waste"
+    "waste",
+    "broadcast"
    ],
    "correct": "headline",
-   "marks": 1
+   "explanation": "Correct answer: headline"
   },
   {
-   "type": "single_choice",
-   "question": "'Fake news' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Fake news' is ...",
+   "order": 25,
+   "answers": [
     "false information",
-    "a newspaper",
-    "a TV show"
+    "a TV show",
+    "a newspaper"
    ],
    "correct": "false information",
-   "marks": 1
+   "explanation": "Correct answer: false information"
   },
   {
-   "type": "single_choice",
-   "question": "To 'recycle' is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'recycle' is to ...",
+   "order": 26,
+   "answers": [
     "use materials again",
     "throw away",
     "break"
    ],
    "correct": "use materials again",
-   "marks": 1
+   "explanation": "Correct answer: use materials again"
   },
   {
-   "type": "single_choice",
-   "question": "'Pollution' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Pollution' is ...",
+   "order": 27,
+   "answers": [
     "dirty air, water or land",
-    "a news story",
-    "a type of energy"
+    "a type of energy",
+    "a news story"
    ],
    "correct": "dirty air, water or land",
-   "marks": 1
+   "explanation": "Correct answer: dirty air, water or land"
   },
   {
-   "type": "single_choice",
-   "question": "'Global warming' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Global warming' is ...",
+   "order": 28,
+   "answers": [
+    "the rise of temperature of the Earth",
     "a hot drink",
-    "a weather forecast",
-    "the rise of temperature of the Earth"
+    "a weather forecast"
    ],
    "correct": "the rise of temperature of the Earth",
-   "marks": 1
+   "explanation": "Correct answer: the rise of temperature of the Earth"
   },
   {
-   "type": "single_choice",
-   "question": "'Waste' is ...",
-   "options": [
-    "energy",
+   "title": "Choose the correct answer",
+   "text": "'Waste' is ...",
+   "order": 29,
+   "answers": [
     "things we throw away",
+    "energy",
     "newspaper"
    ],
    "correct": "things we throw away",
-   "marks": 1
+   "explanation": "Correct answer: things we throw away"
   },
   {
-   "type": "single_choice",
-   "question": "'Renewable' energy comes from ...",
-   "options": [
-    "coal",
+   "title": "Choose the correct answer",
+   "text": "'Renewable' energy comes from ...",
+   "order": 30,
+   "answers": [
+    "the sun and wind",
     "oil",
-    "the sun and wind"
+    "coal"
    ],
    "correct": "the sun and wind",
-   "marks": 1
+   "explanation": "Correct answer: the sun and wind"
   },
   {
-   "type": "single_choice",
-   "question": "To 'reduce' is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'reduce' is to ...",
+   "order": 31,
+   "answers": [
     "make less",
     "make more",
     "buy"
    ],
    "correct": "make less",
-   "marks": 1
+   "explanation": "Correct answer: make less"
   },
   {
-   "type": "single_choice",
-   "question": "'Endangered' animals are ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Endangered' animals are ...",
+   "order": 32,
+   "answers": [
     "at risk of disappearing",
-    "very small",
-    "very dangerous"
+    "very dangerous",
+    "very small"
    ],
    "correct": "at risk of disappearing",
-   "marks": 1
+   "explanation": "Correct answer: at risk of disappearing"
   },
   {
-   "type": "single_choice",
-   "question": "To 'subscribe' is to ...",
-   "options": [
-    "read quickly",
+   "title": "Choose the correct answer",
+   "text": "To 'subscribe' is to ...",
+   "order": 33,
+   "answers": [
     "pay to receive something regularly",
-    "stop paying"
+    "stop paying",
+    "read quickly"
    ],
    "correct": "pay to receive something regularly",
-   "marks": 1
+   "explanation": "Correct answer: pay to receive something regularly"
   },
   {
-   "type": "single_choice",
-   "question": "An 'article' is a ...",
-   "options": [
-    "type of energy",
+   "title": "Choose the correct answer",
+   "text": "An 'article' is a ...",
+   "order": 34,
+   "answers": [
+    "piece of writing in a newspaper",
     "piece of furniture",
-    "piece of writing in a newspaper"
+    "type of energy"
    ],
    "correct": "piece of writing in a newspaper",
-   "marks": 1
+   "explanation": "Correct answer: piece of writing in a newspaper"
   },
   {
-   "type": "single_choice",
-   "question": "'Environment' means ...",
-   "options": [
-    "a type of waste",
+   "title": "Choose the correct answer",
+   "text": "'Environment' means ...",
+   "order": 35,
+   "answers": [
+    "nature and the world around us",
     "a building",
-    "nature and the world around us"
+    "a type of waste"
    ],
    "correct": "nature and the world around us",
-   "marks": 1
+   "explanation": "Correct answer: nature and the world around us"
   },
   {
-   "type": "single_choice",
-   "question": "To 'broadcast' a programme is to ...",
-   "options": [
-    "delete it",
+   "title": "Choose the correct answer",
+   "text": "To 'broadcast' a programme is to ...",
+   "order": 36,
+   "answers": [
+    "send it on TV or radio",
     "record it",
-    "send it on TV or radio"
+    "delete it"
    ],
    "correct": "send it on TV or radio",
-   "marks": 1
+   "explanation": "Correct answer: send it on TV or radio"
   },
   {
-   "type": "single_choice",
-   "question": "She asked me what time ___.",
-   "options": [
-    "it is",
+   "title": "Choose the correct answer",
+   "text": "She asked me what time ___.",
+   "order": 37,
+   "answers": [
     "it was",
-    "was it"
+    "was it",
+    "it is"
    ],
    "correct": "it was",
-   "marks": 1
+   "explanation": "Correct answer: it was"
   },
   {
-   "type": "single_choice",
-   "question": "He said that he ___ the film the week before.",
-   "options": [
-    "sees",
+   "title": "Choose the correct answer",
+   "text": "He said that he ___ the film the week before.",
+   "order": 38,
+   "answers": [
     "had seen",
+    "sees",
     "was seeing"
    ],
    "correct": "had seen",
-   "marks": 1
+   "explanation": "Correct answer: had seen"
   },
   {
-   "type": "single_choice",
-   "question": "We should ___ our use of plastic.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We should ___ our use of plastic.",
+   "order": 39,
+   "answers": [
     "reduce",
     "broadcast",
     "subscribe"
    ],
    "correct": "reduce",
-   "marks": 1
+   "explanation": "Correct answer: reduce"
   },
   {
-   "type": "single_choice",
-   "question": "It is not ___ news if it is true.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "It is not ___ news if it is true.",
+   "order": 40,
+   "answers": [
     "fake",
-    "endangered",
-    "renewable"
+    "renewable",
+    "endangered"
    ],
    "correct": "fake",
-   "marks": 1
+   "explanation": "Correct answer: fake"
   }
  ]
 }

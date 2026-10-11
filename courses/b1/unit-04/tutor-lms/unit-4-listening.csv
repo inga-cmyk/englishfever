@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 4 Listening,single_choice,The Business degree lasts ...,four years,three years,one year,B
-Unit 4 Listening,single_choice,"In the first year, all students ...",study the same subjects,do a placement,choose their subjects,A
-Unit 4 Listening,single_choice,"In the second year, students can choose between ...",science and history,law and art,"marketing, finance and management",C
-Unit 4 Listening,single_choice,The final project is about ...,"10,000 words",100 pages,"1,000 words",A
-Unit 4 Listening,single_choice,Students ___ pay for books.,mustn't,must,don't have to,C
-Unit 4 Listening,single_choice,Students must attend at least ...,50% of lessons,80% of lessons,all lessons,B
-Unit 4 Listening,single_choice,The placement lasts ...,two weeks,ten weeks,ten months,B
-Unit 4 Listening,single_choice,The application deadline is ...,1 May,1 March,1 June,A
+"settings","Unit 4 Listening","Listen and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>The Business degree lasts ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: three years</p>",""
+"answer","four years","text","0","0","","1"
+"answer","three years","text","1","0","","2"
+"answer","one year","text","0","0","","3"
+"question","Choose the correct answer","<p>In the first year, all students ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: study the same subjects</p>",""
+"answer","study the same subjects","text","1","0","","1"
+"answer","do a placement","text","0","0","","2"
+"answer","choose their subjects","text","0","0","","3"
+"question","Choose the correct answer","<p>In the second year, students can choose between ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: marketing, finance and management</p>",""
+"answer","science and history","text","0","0","","1"
+"answer","law and art","text","0","0","","2"
+"answer","marketing, finance and management","text","1","0","","3"
+"question","Choose the correct answer","<p>The final project is about ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: 10,000 words</p>",""
+"answer","10,000 words","text","1","0","","1"
+"answer","100 pages","text","0","0","","2"
+"answer","1,000 words","text","0","0","","3"
+"question","Choose the correct answer","<p>Students ___ pay for books.</p>","single_choice","1.00","5","","","1","<p>Correct answer: don't have to</p>",""
+"answer","mustn't","text","0","0","","1"
+"answer","must","text","0","0","","2"
+"answer","don't have to","text","1","0","","3"
+"question","Choose the correct answer","<p>Students must attend at least ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: 80% of lessons</p>",""
+"answer","50% of lessons","text","0","0","","1"
+"answer","80% of lessons","text","1","0","","2"
+"answer","all lessons","text","0","0","","3"
+"question","Choose the correct answer","<p>The placement lasts ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: ten weeks</p>",""
+"answer","two weeks","text","0","0","","1"
+"answer","ten weeks","text","1","0","","2"
+"answer","ten months","text","0","0","","3"
+"question","Choose the correct answer","<p>The application deadline is ...</p>","single_choice","1.00","8","","","1","<p>Correct answer: 1 May</p>",""
+"answer","1 May","text","1","0","","1"
+"answer","1 March","text","0","0","","2"
+"answer","1 June","text","0","0","","3"

@@ -1,101 +1,109 @@
 {
  "title": "Unit 7 Listening",
- "description": "<h3>A conversation about recycling</h3><p>Listen to the audio file twice (b1-unit-07-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "Markus has just started ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Markus has just started ...",
+   "order": 1,
+   "answers": [
     "recycling",
     "gardening",
     "cooking"
    ],
    "correct": "recycling",
-   "marks": 1
+   "explanation": "Correct answer: recycling"
   },
   {
-   "type": "single_choice",
-   "question": "Who gave him the bags?",
-   "options": [
-    "Ella",
+   "title": "Choose the correct answer",
+   "text": "Who gave him the bags?",
+   "order": 2,
+   "answers": [
+    "his neighbour",
     "the council",
-    "his neighbour"
+    "Ella"
    ],
    "correct": "his neighbour",
-   "marks": 1
+   "explanation": "Correct answer: his neighbour"
   },
   {
-   "type": "single_choice",
-   "question": "How many bins are there?",
-   "options": [
-    "five",
+   "title": "Choose the correct answer",
+   "text": "How many bins are there?",
+   "order": 3,
+   "answers": [
     "three",
-    "two"
+    "two",
+    "five"
    ],
    "correct": "three",
-   "marks": 1
+   "explanation": "Correct answer: three"
   },
   {
-   "type": "single_choice",
-   "question": "The city collects the bins on ...",
-   "options": [
-    "Mondays",
+   "title": "Choose the correct answer",
+   "text": "The city collects the bins on ...",
+   "order": 4,
+   "answers": [
     "Wednesdays",
+    "Mondays",
     "Fridays"
    ],
    "correct": "Wednesdays",
-   "marks": 1
+   "explanation": "Correct answer: Wednesdays"
   },
   {
-   "type": "single_choice",
-   "question": "What did the council say about food waste?",
-   "options": [
-    "it was too expensive",
+   "title": "Choose the correct answer",
+   "text": "What did the council say about food waste?",
+   "order": 5,
+   "answers": [
     "a special bin will be possible next month",
-    "they would not collect it"
+    "they would not collect it",
+    "it was too expensive"
    ],
    "correct": "a special bin will be possible next month",
-   "marks": 1
+   "explanation": "Correct answer: a special bin will be possible next month"
   },
   {
-   "type": "single_choice",
-   "question": "Markus makes compost ...",
-   "options": [
-    "at work",
+   "title": "Choose the correct answer",
+   "text": "Markus makes compost ...",
+   "order": 6,
+   "answers": [
+    "in the garden",
     "in the kitchen",
-    "in the garden"
+    "at work"
    ],
    "correct": "in the garden",
-   "marks": 1
+   "explanation": "Correct answer: in the garden"
   },
   {
-   "type": "single_choice",
-   "question": "Ella can take old batteries to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Ella can take old batteries to ...",
+   "order": 7,
+   "answers": [
+    "the supermarket",
     "the school",
-    "the library",
-    "the supermarket"
+    "the library"
    ],
    "correct": "the supermarket",
-   "marks": 1
+   "explanation": "Correct answer: the supermarket"
   },
   {
-   "type": "single_choice",
-   "question": "Ella thinks she should use ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Ella thinks she should use ...",
+   "order": 8,
+   "answers": [
     "a reusable bottle",
-    "plastic bags",
-    "a paper cup"
+    "a paper cup",
+    "plastic bags"
    ],
    "correct": "a reusable bottle",
-   "marks": 1
+   "explanation": "Correct answer: a reusable bottle"
   }
  ]
 }

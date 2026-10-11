@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 3 Reading,single_choice,A smart home uses devices that are ...,very big,very old,connected to the internet,C
-Unit 3 Reading,single_choice,About what percentage of European homes have a smart device?,15%,2%,50%,A
-Unit 3 Reading,single_choice,Experts think the number will ... by 2028.,stay the same,double,fall,B
-Unit 3 Reading,single_choice,A smart thermostat saves energy because it ...,makes the house colder,uses solar power,turns the heating off when you leave,C
-Unit 3 Reading,single_choice,Smart devices can help older people by ...,reminding them to take medicine,driving them,cooking for them,A
-Unit 3 Reading,single_choice,What is the first disadvantage mentioned?,the price,the noise,the size,A
-Unit 3 Reading,single_choice,Experts advise people to ...,buy cheap devices,use a strong password for each device,turn off the internet,B
-Unit 3 Reading,single_choice,"True, False or Not given: Elina has already bought a smart flat.",Not given,True,False,C
+"settings","Unit 3 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>A smart home uses devices that are ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: connected to the internet</p>",""
+"answer","very big","text","0","0","","1"
+"answer","very old","text","0","0","","2"
+"answer","connected to the internet","text","1","0","","3"
+"question","Choose the correct answer","<p>About what percentage of European homes have a smart device?</p>","single_choice","1.00","2","","","1","<p>Correct answer: 15%</p>",""
+"answer","15%","text","1","0","","1"
+"answer","2%","text","0","0","","2"
+"answer","50%","text","0","0","","3"
+"question","Choose the correct answer","<p>Experts think the number will ... by 2028.</p>","single_choice","1.00","3","","","1","<p>Correct answer: double</p>",""
+"answer","stay the same","text","0","0","","1"
+"answer","double","text","1","0","","2"
+"answer","fall","text","0","0","","3"
+"question","Choose the correct answer","<p>A smart thermostat saves energy because it ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: turns the heating off when you leave</p>",""
+"answer","makes the house colder","text","0","0","","1"
+"answer","uses solar power","text","0","0","","2"
+"answer","turns the heating off when you leave","text","1","0","","3"
+"question","Choose the correct answer","<p>Smart devices can help older people by ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: reminding them to take medicine</p>",""
+"answer","reminding them to take medicine","text","1","0","","1"
+"answer","driving them","text","0","0","","2"
+"answer","cooking for them","text","0","0","","3"
+"question","Choose the correct answer","<p>What is the first disadvantage mentioned?</p>","single_choice","1.00","6","","","1","<p>Correct answer: the price</p>",""
+"answer","the price","text","1","0","","1"
+"answer","the noise","text","0","0","","2"
+"answer","the size","text","0","0","","3"
+"question","Choose the correct answer","<p>Experts advise people to ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: use a strong password for each device</p>",""
+"answer","buy cheap devices","text","0","0","","1"
+"answer","use a strong password for each device","text","1","0","","2"
+"answer","turn off the internet","text","0","0","","3"
+"question","True, False or Not given","<p>Elina has already bought a smart flat.</p>","single_choice","1.00","8","","","1","<p>Correct answer: False</p>",""
+"answer","Not given","text","0","0","","1"
+"answer","True","text","0","0","","2"
+"answer","False","text","1","0","","3"

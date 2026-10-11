@@ -1,455 +1,493 @@
 {
  "title": "Unit 8 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "I ___ to the gym three times a week.",
-   "options": [
-    "have gone",
+   "title": "Choose the correct answer",
+   "text": "I ___ to the gym three times a week.",
+   "order": 1,
+   "answers": [
+    "go",
     "am going",
-    "go"
+    "have gone"
    ],
    "correct": "go",
-   "marks": 1
+   "explanation": "Correct answer: go"
   },
   {
-   "type": "single_choice",
-   "question": "Look! She ___ a new bag.",
-   "options": [
-    "carried",
+   "title": "Choose the correct answer",
+   "text": "Look! She ___ a new bag.",
+   "order": 2,
+   "answers": [
     "is carrying",
-    "carries"
+    "carries",
+    "carried"
    ],
    "correct": "is carrying",
-   "marks": 1
+   "explanation": "Correct answer: is carrying"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ for this company since 2018.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I ___ for this company since 2018.",
+   "order": 3,
+   "answers": [
+    "have worked",
     "work",
-    "worked",
-    "have worked"
+    "worked"
    ],
    "correct": "have worked",
-   "marks": 1
+   "explanation": "Correct answer: have worked"
   },
   {
-   "type": "single_choice",
-   "question": "They ___ the shopping before we arrived.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "They ___ the shopping before we arrived.",
+   "order": 4,
+   "answers": [
+    "had done",
     "were doing",
-    "do",
-    "had done"
+    "do"
    ],
    "correct": "had done",
-   "marks": 1
+   "explanation": "Correct answer: had done"
   },
   {
-   "type": "single_choice",
-   "question": "If I ___ time, I'll go to the shop.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "If I ___ time, I'll go to the shop.",
+   "order": 5,
+   "answers": [
+    "have",
     "will have",
-    "had",
-    "have"
+    "had"
    ],
    "correct": "have",
-   "marks": 1
+   "explanation": "Correct answer: have"
   },
   {
-   "type": "single_choice",
-   "question": "If I were you, I ___ it back.",
-   "options": [
-    "took",
+   "title": "Choose the correct answer",
+   "text": "If I were you, I ___ it back.",
+   "order": 6,
+   "answers": [
     "would take",
-    "will take"
+    "will take",
+    "took"
    ],
    "correct": "would take",
-   "marks": 1
+   "explanation": "Correct answer: would take"
   },
   {
-   "type": "single_choice",
-   "question": "He said he ___ the receipt.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "He said he ___ the receipt.",
+   "order": 7,
+   "answers": [
     "had lost",
-    "was losing",
-    "loses"
+    "loses",
+    "was losing"
    ],
    "correct": "had lost",
-   "marks": 1
+   "explanation": "Correct answer: had lost"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ be late. The bus is delayed.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We ___ be late. The bus is delayed.",
+   "order": 8,
+   "answers": [
     "might",
-    "have to",
-    "must"
+    "must",
+    "have to"
    ],
    "correct": "might",
-   "marks": 1
+   "explanation": "Correct answer: might"
   },
   {
-   "type": "single_choice",
-   "question": "You ___ pay now. You can pay later.",
-   "options": [
-    "can't",
+   "title": "Choose the correct answer",
+   "text": "You ___ pay now. You can pay later.",
+   "order": 9,
+   "answers": [
     "don't have to",
-    "mustn't"
+    "mustn't",
+    "can't"
    ],
    "correct": "don't have to",
-   "marks": 1
+   "explanation": "Correct answer: don't have to"
   },
   {
-   "type": "single_choice",
-   "question": "This shop is ___ than the other one.",
-   "options": [
-    "the cheapest",
+   "title": "Choose the correct answer",
+   "text": "This shop is ___ than the other one.",
+   "order": 10,
+   "answers": [
     "cheaper",
-    "more cheap"
+    "more cheap",
+    "the cheapest"
    ],
    "correct": "cheaper",
-   "marks": 1
+   "explanation": "Correct answer: cheaper"
   },
   {
-   "type": "single_choice",
-   "question": "It's the ___ restaurant in town.",
-   "options": [
-    "most good",
+   "title": "Choose the correct answer",
+   "text": "It's the ___ restaurant in town.",
+   "order": 11,
+   "answers": [
     "best",
-    "better"
+    "better",
+    "most good"
    ],
    "correct": "best",
-   "marks": 1
+   "explanation": "Correct answer: best"
   },
   {
-   "type": "single_choice",
-   "question": "How ___ money do you have?",
-   "options": [
-    "few",
+   "title": "Choose the correct answer",
+   "text": "How ___ money do you have?",
+   "order": 12,
+   "answers": [
+    "much",
     "many",
-    "much"
+    "few"
    ],
    "correct": "much",
-   "marks": 1
+   "explanation": "Correct answer: much"
   },
   {
-   "type": "single_choice",
-   "question": "How ___ bags did you buy?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "How ___ bags did you buy?",
+   "order": 13,
+   "answers": [
     "many",
     "much",
     "a lot"
    ],
    "correct": "many",
-   "marks": 1
+   "explanation": "Correct answer: many"
   },
   {
-   "type": "single_choice",
-   "question": "I have ___ money to buy a car.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I have ___ money to buy a car.",
+   "order": 14,
+   "answers": [
     "too little",
-    "not enough of",
-    "too few"
+    "too few",
+    "not enough of"
    ],
    "correct": "too little",
-   "marks": 1
+   "explanation": "Correct answer: too little"
   },
   {
-   "type": "single_choice",
-   "question": "The jacket is ___ expensive for me.",
-   "options": [
-    "enough",
+   "title": "Choose the correct answer",
+   "text": "The jacket is ___ expensive for me.",
+   "order": 15,
+   "answers": [
     "too",
+    "enough",
     "very much"
    ],
    "correct": "too",
-   "marks": 1
+   "explanation": "Correct answer: too"
   },
   {
-   "type": "single_choice",
-   "question": "The bag is big ___ for all my things.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The bag is big ___ for all my things.",
+   "order": 16,
+   "answers": [
     "enough",
     "too",
     "so"
    ],
    "correct": "enough",
-   "marks": 1
+   "explanation": "Correct answer: enough"
   },
   {
-   "type": "single_choice",
-   "question": "Cars ___ in this factory.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Cars ___ in this factory.",
+   "order": 17,
+   "answers": [
+    "are made",
     "make",
-    "are making",
-    "are made"
+    "are making"
    ],
    "correct": "are made",
-   "marks": 1
+   "explanation": "Correct answer: are made"
   },
   {
-   "type": "single_choice",
-   "question": "The shop ___ at 9 every day.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The shop ___ at 9 every day.",
+   "order": 18,
+   "answers": [
     "is opened",
-    "was open",
-    "opens"
+    "opens",
+    "was open"
    ],
    "correct": "is opened",
-   "marks": 1
+   "explanation": "Correct answer: is opened"
   },
   {
-   "type": "single_choice",
-   "question": "'I'll call you,' he said. → He said he ___ me.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'I'll call you,' he said. → He said he ___ me.",
+   "order": 19,
+   "answers": [
+    "would call",
     "will call",
-    "called",
-    "would call"
+    "called"
    ],
    "correct": "would call",
-   "marks": 1
+   "explanation": "Correct answer: would call"
   },
   {
-   "type": "single_choice",
-   "question": "It's expensive, ___?",
-   "options": [
-    "doesn't it",
+   "title": "Choose the correct answer",
+   "text": "It's expensive, ___?",
+   "order": 20,
+   "answers": [
     "isn't it",
-    "is it"
+    "is it",
+    "doesn't it"
    ],
    "correct": "isn't it",
-   "marks": 1
+   "explanation": "Correct answer: isn't it"
   },
   {
-   "type": "single_choice",
-   "question": "You haven't paid yet, ___ you?",
-   "options": [
-    "haven't",
+   "title": "Choose the correct answer",
+   "text": "You haven't paid yet, ___ you?",
+   "order": 21,
+   "answers": [
     "have",
+    "haven't",
     "do"
    ],
    "correct": "have",
-   "marks": 1
+   "explanation": "Correct answer: have"
   },
   {
-   "type": "single_choice",
-   "question": "I was paying when my phone ___.",
-   "options": [
-    "had rung",
+   "title": "Choose the correct answer",
+   "text": "I was paying when my phone ___.",
+   "order": 22,
+   "answers": [
     "rang",
-    "was ringing"
+    "was ringing",
+    "had rung"
    ],
    "correct": "rang",
-   "marks": 1
+   "explanation": "Correct answer: rang"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "I never been to that shop.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 23,
+   "answers": [
     "I've never been to that shop.",
+    "I never been to that shop.",
     "I never have been that shop."
    ],
    "correct": "I've never been to that shop.",
-   "marks": 1
+   "explanation": "Correct answer: I've never been to that shop."
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "If I would have money, I buy it.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 24,
+   "answers": [
     "If I had money, I would buy it.",
+    "If I would have money, I buy it.",
     "If I have money, I would buy it."
    ],
    "correct": "If I had money, I would buy it.",
-   "marks": 1
+   "explanation": "Correct answer: If I had money, I would buy it."
   },
   {
-   "type": "single_choice",
-   "question": "'Afford' means to have ___ to buy something.",
-   "options": [
-    "enough time",
+   "title": "Choose the correct answer",
+   "text": "'Afford' means to have ___ to buy something.",
+   "order": 25,
+   "answers": [
     "enough money",
+    "enough time",
     "enough space"
    ],
    "correct": "enough money",
-   "marks": 1
+   "explanation": "Correct answer: enough money"
   },
   {
-   "type": "single_choice",
-   "question": "A 'bargain' is something ...",
-   "options": [
-    "old",
+   "title": "Choose the correct answer",
+   "text": "A 'bargain' is something ...",
+   "order": 26,
+   "answers": [
     "good and cheap",
-    "bad and expensive"
+    "bad and expensive",
+    "old"
    ],
    "correct": "good and cheap",
-   "marks": 1
+   "explanation": "Correct answer: good and cheap"
   },
   {
-   "type": "single_choice",
-   "question": "A 'receipt' shows ...",
-   "options": [
-    "you are a customer",
+   "title": "Choose the correct answer",
+   "text": "A 'receipt' shows ...",
+   "order": 27,
+   "answers": [
+    "you paid",
     "you are rich",
-    "you paid"
+    "you are a customer"
    ],
    "correct": "you paid",
-   "marks": 1
+   "explanation": "Correct answer: you paid"
   },
   {
-   "type": "single_choice",
-   "question": "A 'refund' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'refund' is ...",
+   "order": 28,
+   "answers": [
     "money given back",
     "money borrowed",
     "a discount"
    ],
    "correct": "money given back",
-   "marks": 1
+   "explanation": "Correct answer: money given back"
   },
   {
-   "type": "single_choice",
-   "question": "'Discount' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Discount' means ...",
+   "order": 29,
+   "answers": [
     "a lower price",
-    "a shop",
-    "a higher price"
+    "a higher price",
+    "a shop"
    ],
    "correct": "a lower price",
-   "marks": 1
+   "explanation": "Correct answer: a lower price"
   },
   {
-   "type": "single_choice",
-   "question": "'On sale' means ...",
-   "options": [
-    "not available",
+   "title": "Choose the correct answer",
+   "text": "'On sale' means ...",
+   "order": 30,
+   "answers": [
     "at a lower price",
-    "too expensive"
+    "too expensive",
+    "not available"
    ],
    "correct": "at a lower price",
-   "marks": 1
+   "explanation": "Correct answer: at a lower price"
   },
   {
-   "type": "single_choice",
-   "question": "'Cash' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Cash' is ...",
+   "order": 31,
+   "answers": [
+    "notes and coins",
     "a credit card",
-    "a loan",
-    "notes and coins"
+    "a loan"
    ],
    "correct": "notes and coins",
-   "marks": 1
+   "explanation": "Correct answer: notes and coins"
   },
   {
-   "type": "single_choice",
-   "question": "A 'budget' is a ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'budget' is a ...",
+   "order": 32,
+   "answers": [
     "plan for spending money",
     "type of shop",
     "kind of bag"
    ],
    "correct": "plan for spending money",
-   "marks": 1
+   "explanation": "Correct answer: plan for spending money"
   },
   {
-   "type": "single_choice",
-   "question": "To 'borrow' is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'borrow' is to ...",
+   "order": 33,
+   "answers": [
     "take for a short time",
     "give for a short time",
     "buy and sell"
    ],
    "correct": "take for a short time",
-   "marks": 1
+   "explanation": "Correct answer: take for a short time"
   },
   {
-   "type": "single_choice",
-   "question": "To 'lend' is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'lend' is to ...",
+   "order": 34,
+   "answers": [
     "give for a short time",
     "take for a short time",
     "sell"
    ],
    "correct": "give for a short time",
-   "marks": 1
+   "explanation": "Correct answer: give for a short time"
   },
   {
-   "type": "single_choice",
-   "question": "A 'customer' is a ...",
-   "options": [
-    "person who sells",
+   "title": "Choose the correct answer",
+   "text": "A 'customer' is a ...",
+   "order": 35,
+   "answers": [
     "person who buys",
+    "person who sells",
     "shop"
    ],
    "correct": "person who buys",
-   "marks": 1
+   "explanation": "Correct answer: person who buys"
   },
   {
-   "type": "single_choice",
-   "question": "A 'queue' is a ...",
-   "options": [
-    "bargain",
+   "title": "Choose the correct answer",
+   "text": "A 'queue' is a ...",
+   "order": 36,
+   "answers": [
     "line of people waiting",
-    "type of shop"
+    "type of shop",
+    "bargain"
    ],
    "correct": "line of people waiting",
-   "marks": 1
+   "explanation": "Correct answer: line of people waiting"
   },
   {
-   "type": "single_choice",
-   "question": "A 'brand' is a ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'brand' is a ...",
+   "order": 37,
+   "answers": [
     "name of a company's product",
-    "shop assistant",
-    "kind of money"
+    "kind of money",
+    "shop assistant"
    ],
    "correct": "name of a company's product",
-   "marks": 1
+   "explanation": "Correct answer: name of a company's product"
   },
   {
-   "type": "single_choice",
-   "question": "A 'wallet' is for ...",
-   "options": [
-    "food",
+   "title": "Choose the correct answer",
+   "text": "A 'wallet' is for ...",
+   "order": 38,
+   "answers": [
     "money and cards",
+    "food",
     "clothes"
    ],
    "correct": "money and cards",
-   "marks": 1
+   "explanation": "Correct answer: money and cards"
   },
   {
-   "type": "single_choice",
-   "question": "To 'save' money is to ...",
-   "options": [
-    "spend it all",
+   "title": "Choose the correct answer",
+   "text": "To 'save' money is to ...",
+   "order": 39,
+   "answers": [
     "keep it for later",
+    "spend it all",
     "borrow it"
    ],
    "correct": "keep it for later",
-   "marks": 1
+   "explanation": "Correct answer: keep it for later"
   },
   {
-   "type": "single_choice",
-   "question": "To 'cost' means ...",
-   "options": [
-    "to be cheap",
+   "title": "Choose the correct answer",
+   "text": "To 'cost' means ...",
+   "order": 40,
+   "answers": [
     "to have a price",
-    "to be free"
+    "to be free",
+    "to be cheap"
    ],
    "correct": "to have a price",
-   "marks": 1
+   "explanation": "Correct answer: to have a price"
   }
  ]
 }

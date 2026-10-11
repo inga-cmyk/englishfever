@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 5 Reading,single_choice,How long have they been friends?,since university,almost fifteen years,five years,B
-Unit 5 Reading,single_choice,Kristaps is ...,shy,very reliable,short,B
-Unit 5 Reading,single_choice,"Compared with the writer, Kristaps is ...",shorter and slimmer,taller and slimmer,older and quieter,B
-Unit 5 Reading,single_choice,Kristaps has ...,long straight hair,no hair,short curly hair,C
-Unit 5 Reading,single_choice,Kristaps is ___ shy as the writer.,not as,as,more,A
-Unit 5 Reading,single_choice,The writer prefers ...,reading and music,basketball,cooking,A
-Unit 5 Reading,single_choice,The trip to Slovakia was ...,the hardest they have done,the easiest,cancelled,A
-Unit 5 Reading,single_choice,Kristaps lives now in ...,Slovakia,a suburb of Liverpool,Riga,B
+"settings","Unit 5 Reading","Read the text and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>How long have they been friends?</p>","single_choice","1.00","1","","","1","<p>Correct answer: almost fifteen years</p>",""
+"answer","since university","text","0","0","","1"
+"answer","almost fifteen years","text","1","0","","2"
+"answer","five years","text","0","0","","3"
+"question","Choose the correct answer","<p>Kristaps is ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: very reliable</p>",""
+"answer","shy","text","0","0","","1"
+"answer","very reliable","text","1","0","","2"
+"answer","short","text","0","0","","3"
+"question","Choose the correct answer","<p>Compared with the writer, Kristaps is ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: taller and slimmer</p>",""
+"answer","shorter and slimmer","text","0","0","","1"
+"answer","taller and slimmer","text","1","0","","2"
+"answer","older and quieter","text","0","0","","3"
+"question","Choose the correct answer","<p>Kristaps has ...</p>","single_choice","1.00","4","","","1","<p>Correct answer: short curly hair</p>",""
+"answer","long straight hair","text","0","0","","1"
+"answer","no hair","text","0","0","","2"
+"answer","short curly hair","text","1","0","","3"
+"question","Choose the correct answer","<p>Kristaps is ___ shy as the writer.</p>","single_choice","1.00","5","","","1","<p>Correct answer: not as</p>",""
+"answer","not as","text","1","0","","1"
+"answer","as","text","0","0","","2"
+"answer","more","text","0","0","","3"
+"question","Choose the correct answer","<p>The writer prefers ...</p>","single_choice","1.00","6","","","1","<p>Correct answer: reading and music</p>",""
+"answer","reading and music","text","1","0","","1"
+"answer","basketball","text","0","0","","2"
+"answer","cooking","text","0","0","","3"
+"question","Choose the correct answer","<p>The trip to Slovakia was ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: the hardest they have done</p>",""
+"answer","the hardest they have done","text","1","0","","1"
+"answer","the easiest","text","0","0","","2"
+"answer","cancelled","text","0","0","","3"
+"question","Choose the correct answer","<p>Kristaps lives now in ...</p>","single_choice","1.00","8","","","1","<p>Correct answer: a suburb of Liverpool</p>",""
+"answer","Slovakia","text","0","0","","1"
+"answer","a suburb of Liverpool","text","1","0","","2"
+"answer","Riga","text","0","0","","3"

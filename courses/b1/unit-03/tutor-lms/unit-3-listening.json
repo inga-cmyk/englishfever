@@ -1,101 +1,109 @@
 {
  "title": "Unit 3 Listening",
- "description": "<h3>A talk about the phone of the future</h3><p>Listen to the audio file twice (b1-unit-03-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "The talk is about ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The talk is about ...",
+   "order": 1,
+   "answers": [
+    "phones in ten years",
     "phones of the past",
-    "how to repair phones",
-    "phones in ten years"
+    "how to repair phones"
    ],
    "correct": "phones in ten years",
-   "marks": 1
+   "explanation": "Correct answer: phones in ten years"
   },
   {
-   "type": "single_choice",
-   "question": "Some companies are already making screens that ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Some companies are already making screens that ...",
+   "order": 2,
+   "answers": [
+    "you can fold",
     "are made of glass",
-    "never break",
-    "you can fold"
+    "never break"
    ],
    "correct": "you can fold",
-   "marks": 1
+   "explanation": "Correct answer: you can fold"
   },
   {
-   "type": "single_choice",
-   "question": "The speaker thinks we will charge phones ...",
-   "options": [
-    "never",
+   "title": "Choose the correct answer",
+   "text": "The speaker thinks we will charge phones ...",
+   "order": 3,
+   "answers": [
+    "once a week",
     "every hour",
-    "once a week"
+    "never"
    ],
    "correct": "once a week",
-   "marks": 1
+   "explanation": "Correct answer: once a week"
   },
   {
-   "type": "single_choice",
-   "question": "What will a smart phone do if there is a traffic jam?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "What will a smart phone do if there is a traffic jam?",
+   "order": 4,
+   "answers": [
     "wake you up earlier",
-    "turn off",
-    "call a taxi"
+    "call a taxi",
+    "turn off"
    ],
    "correct": "wake you up earlier",
-   "marks": 1
+   "explanation": "Correct answer: wake you up earlier"
   },
   {
-   "type": "single_choice",
-   "question": "Phones will be able to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Phones will be able to ...",
+   "order": 5,
+   "answers": [
+    "translate conversations in real time",
     "drive cars",
-    "cook dinner",
-    "translate conversations in real time"
+    "cook dinner"
    ],
    "correct": "translate conversations in real time",
-   "marks": 1
+   "explanation": "Correct answer: translate conversations in real time"
   },
   {
-   "type": "single_choice",
-   "question": "What is the speaker worried about?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "What is the speaker worried about?",
+   "order": 6,
+   "answers": [
     "people spending more time on screens",
-    "bad batteries",
-    "expensive phones"
+    "expensive phones",
+    "bad batteries"
    ],
    "correct": "people spending more time on screens",
-   "marks": 1
+   "explanation": "Correct answer: people spending more time on screens"
   },
   {
-   "type": "single_choice",
-   "question": "The speaker is going to start ...",
-   "options": [
-    "a new app",
+   "title": "Choose the correct answer",
+   "text": "The speaker is going to start ...",
+   "order": 7,
+   "answers": [
     "a phone-free day at school",
-    "a phone shop"
+    "a phone shop",
+    "a new app"
    ],
    "correct": "a phone-free day at school",
-   "marks": 1
+   "explanation": "Correct answer: a phone-free day at school"
   },
   {
-   "type": "single_choice",
-   "question": "When will the project start?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "When will the project start?",
+   "order": 8,
+   "answers": [
     "next month",
-    "tomorrow",
-    "next year"
+    "next year",
+    "tomorrow"
    ],
    "correct": "next month",
-   "marks": 1
+   "explanation": "Correct answer: next month"
   }
  ]
 }

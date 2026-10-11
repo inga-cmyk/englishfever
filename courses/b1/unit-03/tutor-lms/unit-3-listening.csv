@@ -1,9 +1,33 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 3 Listening,single_choice,The talk is about ...,phones of the past,how to repair phones,phones in ten years,C
-Unit 3 Listening,single_choice,Some companies are already making screens that ...,are made of glass,never break,you can fold,C
-Unit 3 Listening,single_choice,The speaker thinks we will charge phones ...,never,every hour,once a week,C
-Unit 3 Listening,single_choice,What will a smart phone do if there is a traffic jam?,wake you up earlier,turn off,call a taxi,A
-Unit 3 Listening,single_choice,Phones will be able to ...,drive cars,cook dinner,translate conversations in real time,C
-Unit 3 Listening,single_choice,What is the speaker worried about?,people spending more time on screens,bad batteries,expensive phones,A
-Unit 3 Listening,single_choice,The speaker is going to start ...,a new app,a phone-free day at school,a phone shop,B
-Unit 3 Listening,single_choice,When will the project start?,next month,tomorrow,next year,A
+"settings","Unit 3 Listening","Listen and answer the questions.","20","minutes","0","3","60","8","0","single_question","sorting","0","200","500","default","0","0","0","percent","0"
+"question","Choose the correct answer","<p>The talk is about ...</p>","single_choice","1.00","1","","","1","<p>Correct answer: phones in ten years</p>",""
+"answer","phones of the past","text","0","0","","1"
+"answer","how to repair phones","text","0","0","","2"
+"answer","phones in ten years","text","1","0","","3"
+"question","Choose the correct answer","<p>Some companies are already making screens that ...</p>","single_choice","1.00","2","","","1","<p>Correct answer: you can fold</p>",""
+"answer","are made of glass","text","0","0","","1"
+"answer","never break","text","0","0","","2"
+"answer","you can fold","text","1","0","","3"
+"question","Choose the correct answer","<p>The speaker thinks we will charge phones ...</p>","single_choice","1.00","3","","","1","<p>Correct answer: once a week</p>",""
+"answer","never","text","0","0","","1"
+"answer","every hour","text","0","0","","2"
+"answer","once a week","text","1","0","","3"
+"question","Choose the correct answer","<p>What will a smart phone do if there is a traffic jam?</p>","single_choice","1.00","4","","","1","<p>Correct answer: wake you up earlier</p>",""
+"answer","wake you up earlier","text","1","0","","1"
+"answer","turn off","text","0","0","","2"
+"answer","call a taxi","text","0","0","","3"
+"question","Choose the correct answer","<p>Phones will be able to ...</p>","single_choice","1.00","5","","","1","<p>Correct answer: translate conversations in real time</p>",""
+"answer","drive cars","text","0","0","","1"
+"answer","cook dinner","text","0","0","","2"
+"answer","translate conversations in real time","text","1","0","","3"
+"question","Choose the correct answer","<p>What is the speaker worried about?</p>","single_choice","1.00","6","","","1","<p>Correct answer: people spending more time on screens</p>",""
+"answer","people spending more time on screens","text","1","0","","1"
+"answer","bad batteries","text","0","0","","2"
+"answer","expensive phones","text","0","0","","3"
+"question","Choose the correct answer","<p>The speaker is going to start ...</p>","single_choice","1.00","7","","","1","<p>Correct answer: a phone-free day at school</p>",""
+"answer","a new app","text","0","0","","1"
+"answer","a phone-free day at school","text","1","0","","2"
+"answer","a phone shop","text","0","0","","3"
+"question","Choose the correct answer","<p>When will the project start?</p>","single_choice","1.00","8","","","1","<p>Correct answer: next month</p>",""
+"answer","next month","text","1","0","","1"
+"answer","tomorrow","text","0","0","","2"
+"answer","next year","text","0","0","","3"

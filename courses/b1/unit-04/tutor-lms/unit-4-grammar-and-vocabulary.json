@@ -1,455 +1,493 @@
 {
  "title": "Unit 4 Grammar and Vocabulary",
- "description": "Answer 10 questions. You get new questions every time.",
  "settings": {
-  "time_limit_minutes": 15,
-  "attempts_allowed": 0,
-  "passing_grade_percent": 70,
-  "question_order": "random",
-  "max_questions_allowed_to_answer": 10,
-  "feedback_mode": "retry",
-  "show_correct_answers": true
+  "time": 15,
+  "attempts": 0,
+  "pass_": 70,
+  "shown": 10,
+  "order": "rand",
+  "feedback": "reveal"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "You ___ wear a uniform. It's the school rule.",
-   "options": [
-    "don't have to",
+   "title": "Choose the correct answer",
+   "text": "You ___ wear a uniform. It's the school rule.",
+   "order": 1,
+   "answers": [
+    "have to",
     "might",
-    "have to"
+    "don't have to"
    ],
    "correct": "have to",
-   "marks": 1
+   "explanation": "Correct answer: have to"
   },
   {
-   "type": "single_choice",
-   "question": "You ___ bring a pen. We have some here.",
-   "options": [
-    "should",
+   "title": "Choose the correct answer",
+   "text": "You ___ bring a pen. We have some here.",
+   "order": 2,
+   "answers": [
+    "don't have to",
     "mustn't",
-    "don't have to"
-   ],
-   "correct": "don't have to",
-   "marks": 1
-  },
-  {
-   "type": "single_choice",
-   "question": "You ___ use your phone during the exam.",
-   "options": [
-    "might",
-    "mustn't",
-    "don't have to"
-   ],
-   "correct": "mustn't",
-   "marks": 1
-  },
-  {
-   "type": "single_choice",
-   "question": "You look tired. You ___ go to bed early.",
-   "options": [
-    "must",
-    "are",
     "should"
    ],
-   "correct": "should",
-   "marks": 1
+   "correct": "don't have to",
+   "explanation": "Correct answer: don't have to"
   },
   {
-   "type": "single_choice",
-   "question": "He ___ be at home. His car is outside.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "You ___ use your phone during the exam.",
+   "order": 3,
+   "answers": [
+    "mustn't",
+    "don't have to",
+    "might"
+   ],
+   "correct": "mustn't",
+   "explanation": "Correct answer: mustn't"
+  },
+  {
+   "title": "Choose the correct answer",
+   "text": "You look tired. You ___ go to bed early.",
+   "order": 4,
+   "answers": [
     "should",
+    "must",
+    "are"
+   ],
+   "correct": "should",
+   "explanation": "Correct answer: should"
+  },
+  {
+   "title": "Choose the correct answer",
+   "text": "He ___ be at home. His car is outside.",
+   "order": 5,
+   "answers": [
+    "must",
     "can't",
-    "must"
+    "should"
    ],
    "correct": "must",
-   "marks": 1
+   "explanation": "Correct answer: must"
   },
   {
-   "type": "single_choice",
-   "question": "She ___ be a doctor. She's only fifteen.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "She ___ be a doctor. She's only fifteen.",
+   "order": 6,
+   "answers": [
     "can't",
     "must",
     "has to"
    ],
    "correct": "can't",
-   "marks": 1
+   "explanation": "Correct answer: can't"
   },
   {
-   "type": "single_choice",
-   "question": "I ___ work on Sunday, so I can't come.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I ___ work on Sunday, so I can't come.",
+   "order": 7,
+   "answers": [
+    "have to",
     "might",
-    "should to",
-    "have to"
+    "should to"
    ],
    "correct": "have to",
-   "marks": 1
+   "explanation": "Correct answer: have to"
   },
   {
-   "type": "single_choice",
-   "question": "We ___ get up early yesterday.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "We ___ get up early yesterday.",
+   "order": 8,
+   "answers": [
     "had to",
     "must",
     "have to"
    ],
    "correct": "had to",
-   "marks": 1
+   "explanation": "Correct answer: had to"
   },
   {
-   "type": "single_choice",
-   "question": "It ___ snow tonight. The sky is grey.",
-   "options": [
-    "can't",
+   "title": "Choose the correct answer",
+   "text": "It ___ snow tonight. The sky is grey.",
+   "order": 9,
+   "answers": [
     "might",
-    "must"
+    "must",
+    "can't"
    ],
    "correct": "might",
-   "marks": 1
+   "explanation": "Correct answer: might"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "He should studies more.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 10,
+   "answers": [
+    "He should study more.",
     "He should to study more.",
-    "He should study more."
+    "He should studies more."
    ],
    "correct": "He should study more.",
-   "marks": 1
+   "explanation": "Correct answer: He should study more."
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 11,
+   "answers": [
+    "I can swim.",
     "I can to swim.",
-    "I can swims.",
-    "I can swim."
+    "I can swims."
    ],
    "correct": "I can swim.",
-   "marks": 1
+   "explanation": "Correct answer: I can swim."
   },
   {
-   "type": "single_choice",
-   "question": "You ___ told me earlier! Now it's too late.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "You ___ told me earlier! Now it's too late.",
+   "order": 12,
+   "answers": [
     "should have",
     "must have",
     "might"
    ],
    "correct": "should have",
-   "marks": 1
+   "explanation": "Correct answer: should have"
   },
   {
-   "type": "single_choice",
-   "question": "___ I leave early today, please?",
-   "options": [
-    "Should",
+   "title": "Choose the correct answer",
+   "text": "___ I leave early today, please?",
+   "order": 13,
+   "answers": [
     "Can",
-    "Must"
+    "Must",
+    "Should"
    ],
    "correct": "Can",
-   "marks": 1
+   "explanation": "Correct answer: Can"
   },
   {
-   "type": "single_choice",
-   "question": "Which means 'it is not necessary'?",
-   "options": [
-    "You can't go.",
+   "title": "Choose the correct answer",
+   "text": "Which means 'it is not necessary'?",
+   "order": 14,
+   "answers": [
+    "You don't have to go.",
     "You mustn't go.",
-    "You don't have to go."
+    "You can't go."
    ],
    "correct": "You don't have to go.",
-   "marks": 1
+   "explanation": "Correct answer: You don't have to go."
   },
   {
-   "type": "single_choice",
-   "question": "Which means 'it is not allowed'?",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Which means 'it is not allowed'?",
+   "order": 15,
+   "answers": [
     "You mustn't go.",
-    "You might go.",
-    "You don't have to go."
+    "You don't have to go.",
+    "You might go."
    ],
    "correct": "You mustn't go.",
-   "marks": 1
+   "explanation": "Correct answer: You mustn't go."
   },
   {
-   "type": "single_choice",
-   "question": "You ___ be very proud of your son!",
-   "options": [
-    "should have",
+   "title": "Choose the correct answer",
+   "text": "You ___ be very proud of your son!",
+   "order": 16,
+   "answers": [
+    "must",
     "can't",
-    "must"
+    "should have"
    ],
    "correct": "must",
-   "marks": 1
+   "explanation": "Correct answer: must"
   },
   {
-   "type": "single_choice",
-   "question": "They ___ be home yet. The lights are off.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "They ___ be home yet. The lights are off.",
+   "order": 17,
+   "answers": [
     "can't",
     "must",
     "might to"
    ],
    "correct": "can't",
-   "marks": 1
+   "explanation": "Correct answer: can't"
   },
   {
-   "type": "single_choice",
-   "question": "If you want to pass, you ___ study.",
-   "options": [
-    "can't",
+   "title": "Choose the correct answer",
+   "text": "If you want to pass, you ___ study.",
+   "order": 18,
+   "answers": [
     "have to",
+    "can't",
     "mightn't"
    ],
    "correct": "have to",
-   "marks": 1
+   "explanation": "Correct answer: have to"
   },
   {
-   "type": "single_choice",
-   "question": "I'm not sure. I ___ go to the cinema.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "I'm not sure. I ___ go to the cinema.",
+   "order": 19,
+   "answers": [
+    "might",
     "must",
-    "have to",
-    "might"
+    "have to"
    ],
    "correct": "might",
-   "marks": 1
+   "explanation": "Correct answer: might"
   },
   {
-   "type": "single_choice",
-   "question": "You ___ eat so many sweets. They are bad for you.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "You ___ eat so many sweets. They are bad for you.",
+   "order": 20,
+   "answers": [
     "shouldn't",
-    "aren't",
-    "don't have to"
+    "don't have to",
+    "aren't"
    ],
    "correct": "shouldn't",
-   "marks": 1
+   "explanation": "Correct answer: shouldn't"
   },
   {
-   "type": "single_choice",
-   "question": "'Apply for' a job means ...",
-   "options": [
-    "enjoy it",
+   "title": "Choose the correct answer",
+   "text": "'Apply for' a job means ...",
+   "order": 21,
+   "answers": [
+    "ask officially for it",
     "leave it",
-    "ask officially for it"
+    "enjoy it"
    ],
    "correct": "ask officially for it",
-   "marks": 1
+   "explanation": "Correct answer: ask officially for it"
   },
   {
-   "type": "single_choice",
-   "question": "A 'salary' is ...",
-   "options": [
-    "a place",
+   "title": "Choose the correct answer",
+   "text": "A 'salary' is ...",
+   "order": 22,
+   "answers": [
+    "money you get for work",
     "a type of job",
-    "money you get for work"
+    "a place"
    ],
    "correct": "money you get for work",
-   "marks": 1
+   "explanation": "Correct answer: money you get for work"
   },
   {
-   "type": "single_choice",
-   "question": "A 'colleague' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'colleague' is ...",
+   "order": 23,
+   "answers": [
     "a person you work with",
     "your boss",
     "your teacher"
    ],
    "correct": "a person you work with",
-   "marks": 1
+   "explanation": "Correct answer: a person you work with"
   },
   {
-   "type": "single_choice",
-   "question": "A 'deadline' is ...",
-   "options": [
-    "a job offer",
+   "title": "Choose the correct answer",
+   "text": "A 'deadline' is ...",
+   "order": 24,
+   "answers": [
     "the last time to finish",
+    "a job offer",
     "a holiday"
    ],
    "correct": "the last time to finish",
-   "marks": 1
+   "explanation": "Correct answer: the last time to finish"
   },
   {
-   "type": "single_choice",
-   "question": "'Resign' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Resign' means ...",
+   "order": 25,
+   "answers": [
     "leave a job officially",
-    "get a salary",
-    "apply for a job"
+    "apply for a job",
+    "get a salary"
    ],
    "correct": "leave a job officially",
-   "marks": 1
+   "explanation": "Correct answer: leave a job officially"
   },
   {
-   "type": "single_choice",
-   "question": "A 'degree' is a ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'degree' is a ...",
+   "order": 26,
+   "answers": [
     "university qualification",
     "type of job",
     "school lesson"
    ],
    "correct": "university qualification",
-   "marks": 1
+   "explanation": "Correct answer: university qualification"
   },
   {
-   "type": "single_choice",
-   "question": "A 'part-time' job is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'part-time' job is ...",
+   "order": 27,
+   "answers": [
     "for fewer hours",
-    "very well paid",
-    "for the whole day"
+    "for the whole day",
+    "very well paid"
    ],
    "correct": "for fewer hours",
-   "marks": 1
+   "explanation": "Correct answer: for fewer hours"
   },
   {
-   "type": "single_choice",
-   "question": "A 'full-time' job is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'full-time' job is ...",
+   "order": 28,
+   "answers": [
+    "for the whole working week",
     "for a few hours",
-    "a hobby",
-    "for the whole working week"
+    "a hobby"
    ],
    "correct": "for the whole working week",
-   "marks": 1
+   "explanation": "Correct answer: for the whole working week"
   },
   {
-   "type": "single_choice",
-   "question": "A 'promotion' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'promotion' is ...",
+   "order": 29,
+   "answers": [
     "a move to a better job",
-    "a new colleague",
-    "a free holiday"
+    "a free holiday",
+    "a new colleague"
    ],
    "correct": "a move to a better job",
-   "marks": 1
+   "explanation": "Correct answer: a move to a better job"
   },
   {
-   "type": "single_choice",
-   "question": "A 'timetable' shows ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'timetable' shows ...",
+   "order": 30,
+   "answers": [
+    "lessons or times",
     "salaries",
-    "degrees",
-    "lessons or times"
+    "degrees"
    ],
    "correct": "lessons or times",
-   "marks": 1
+   "explanation": "Correct answer: lessons or times"
   },
   {
-   "type": "single_choice",
-   "question": "An 'interview' is ...",
-   "options": [
-    "a letter",
+   "title": "Choose the correct answer",
+   "text": "An 'interview' is ...",
+   "order": 31,
+   "answers": [
+    "a meeting for a job",
     "a kind of exam",
-    "a meeting for a job"
+    "a letter"
    ],
    "correct": "a meeting for a job",
-   "marks": 1
+   "explanation": "Correct answer: a meeting for a job"
   },
   {
-   "type": "single_choice",
-   "question": "To 'fail' an exam is to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "To 'fail' an exam is to ...",
+   "order": 32,
+   "answers": [
     "not pass it",
     "pass it",
     "take it twice"
    ],
    "correct": "not pass it",
-   "marks": 1
+   "explanation": "Correct answer: not pass it"
   },
   {
-   "type": "single_choice",
-   "question": "'Experience' means ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "'Experience' means ...",
+   "order": 33,
+   "answers": [
     "knowledge from doing something",
     "an exam",
     "a lesson"
    ],
    "correct": "knowledge from doing something",
-   "marks": 1
+   "explanation": "Correct answer: knowledge from doing something"
   },
   {
-   "type": "single_choice",
-   "question": "A 'manager' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'manager' is ...",
+   "order": 34,
+   "answers": [
     "a person in charge of a team",
     "a student",
     "a salary"
    ],
    "correct": "a person in charge of a team",
-   "marks": 1
+   "explanation": "Correct answer: a person in charge of a team"
   },
   {
-   "type": "single_choice",
-   "question": "A 'qualification' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'qualification' is ...",
+   "order": 35,
+   "answers": [
+    "a certificate or degree",
     "a holiday",
-    "a boss",
-    "a certificate or degree"
+    "a boss"
    ],
    "correct": "a certificate or degree",
-   "marks": 1
+   "explanation": "Correct answer: a certificate or degree"
   },
   {
-   "type": "single_choice",
-   "question": "I'm sorry, I ___ come to the meeting. I'm ill.",
-   "options": [
-    "don't have to",
+   "title": "Choose the correct answer",
+   "text": "I'm sorry, I ___ come to the meeting. I'm ill.",
+   "order": 36,
+   "answers": [
+    "can't",
     "mustn't",
-    "can't"
+    "don't have to"
    ],
    "correct": "can't",
-   "marks": 1
+   "explanation": "Correct answer: can't"
   },
   {
-   "type": "single_choice",
-   "question": "Applicants ___ send their CV before the deadline.",
-   "options": [
-    "can't",
+   "title": "Choose the correct answer",
+   "text": "Applicants ___ send their CV before the deadline.",
+   "order": 37,
+   "answers": [
+    "must",
     "might",
-    "must"
+    "can't"
    ],
    "correct": "must",
-   "marks": 1
+   "explanation": "Correct answer: must"
   },
   {
-   "type": "single_choice",
-   "question": "Which is correct?",
-   "options": [
-    "You mustn't being late.",
+   "title": "Choose the correct answer",
+   "text": "Which is correct?",
+   "order": 38,
+   "answers": [
     "You mustn't be late.",
-    "You mustn't to be late."
+    "You mustn't to be late.",
+    "You mustn't being late."
    ],
    "correct": "You mustn't be late.",
-   "marks": 1
+   "explanation": "Correct answer: You mustn't be late."
   },
   {
-   "type": "single_choice",
-   "question": "A 'course' is ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "A 'course' is ...",
+   "order": 39,
+   "answers": [
     "a series of lessons",
-    "a salary",
-    "a job"
+    "a job",
+    "a salary"
    ],
    "correct": "a series of lessons",
-   "marks": 1
+   "explanation": "Correct answer: a series of lessons"
   },
   {
-   "type": "single_choice",
-   "question": "He ___ work today. It's his day off.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "He ___ work today. It's his day off.",
+   "order": 40,
+   "answers": [
     "doesn't have to",
     "mustn't",
     "can't to"
    ],
    "correct": "doesn't have to",
-   "marks": 1
+   "explanation": "Correct answer: doesn't have to"
   }
  ]
 }

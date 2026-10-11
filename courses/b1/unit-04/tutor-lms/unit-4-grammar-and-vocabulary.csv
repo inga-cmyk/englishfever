@@ -1,41 +1,161 @@
-quiz,type,question,option_a,option_b,option_c,correct_option
-Unit 4 Grammar and Vocabulary,single_choice,You ___ wear a uniform. It's the school rule.,don't have to,might,have to,C
-Unit 4 Grammar and Vocabulary,single_choice,You ___ bring a pen. We have some here.,should,mustn't,don't have to,C
-Unit 4 Grammar and Vocabulary,single_choice,You ___ use your phone during the exam.,might,mustn't,don't have to,B
-Unit 4 Grammar and Vocabulary,single_choice,You look tired. You ___ go to bed early.,must,are,should,C
-Unit 4 Grammar and Vocabulary,single_choice,He ___ be at home. His car is outside.,should,can't,must,C
-Unit 4 Grammar and Vocabulary,single_choice,She ___ be a doctor. She's only fifteen.,can't,must,has to,A
-Unit 4 Grammar and Vocabulary,single_choice,"I ___ work on Sunday, so I can't come.",might,should to,have to,C
-Unit 4 Grammar and Vocabulary,single_choice,We ___ get up early yesterday.,had to,must,have to,A
-Unit 4 Grammar and Vocabulary,single_choice,It ___ snow tonight. The sky is grey.,can't,might,must,B
-Unit 4 Grammar and Vocabulary,single_choice,Which is correct?,He should studies more.,He should to study more.,He should study more.,C
-Unit 4 Grammar and Vocabulary,single_choice,Which is correct?,I can to swim.,I can swims.,I can swim.,C
-Unit 4 Grammar and Vocabulary,single_choice,You ___ told me earlier! Now it's too late.,should have,must have,might,A
-Unit 4 Grammar and Vocabulary,single_choice,"___ I leave early today, please?",Should,Can,Must,B
-Unit 4 Grammar and Vocabulary,single_choice,Which means 'it is not necessary'?,You can't go.,You mustn't go.,You don't have to go.,C
-Unit 4 Grammar and Vocabulary,single_choice,Which means 'it is not allowed'?,You mustn't go.,You might go.,You don't have to go.,A
-Unit 4 Grammar and Vocabulary,single_choice,You ___ be very proud of your son!,should have,can't,must,C
-Unit 4 Grammar and Vocabulary,single_choice,They ___ be home yet. The lights are off.,can't,must,might to,A
-Unit 4 Grammar and Vocabulary,single_choice,"If you want to pass, you ___ study.",can't,have to,mightn't,B
-Unit 4 Grammar and Vocabulary,single_choice,I'm not sure. I ___ go to the cinema.,must,have to,might,C
-Unit 4 Grammar and Vocabulary,single_choice,You ___ eat so many sweets. They are bad for you.,shouldn't,aren't,don't have to,A
-Unit 4 Grammar and Vocabulary,single_choice,'Apply for' a job means ...,enjoy it,leave it,ask officially for it,C
-Unit 4 Grammar and Vocabulary,single_choice,A 'salary' is ...,a place,a type of job,money you get for work,C
-Unit 4 Grammar and Vocabulary,single_choice,A 'colleague' is ...,a person you work with,your boss,your teacher,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'deadline' is ...,a job offer,the last time to finish,a holiday,B
-Unit 4 Grammar and Vocabulary,single_choice,'Resign' means ...,leave a job officially,get a salary,apply for a job,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'degree' is a ...,university qualification,type of job,school lesson,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'part-time' job is ...,for fewer hours,very well paid,for the whole day,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'full-time' job is ...,for a few hours,a hobby,for the whole working week,C
-Unit 4 Grammar and Vocabulary,single_choice,A 'promotion' is ...,a move to a better job,a new colleague,a free holiday,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'timetable' shows ...,salaries,degrees,lessons or times,C
-Unit 4 Grammar and Vocabulary,single_choice,An 'interview' is ...,a letter,a kind of exam,a meeting for a job,C
-Unit 4 Grammar and Vocabulary,single_choice,To 'fail' an exam is to ...,not pass it,pass it,take it twice,A
-Unit 4 Grammar and Vocabulary,single_choice,'Experience' means ...,knowledge from doing something,an exam,a lesson,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'manager' is ...,a person in charge of a team,a student,a salary,A
-Unit 4 Grammar and Vocabulary,single_choice,A 'qualification' is ...,a holiday,a boss,a certificate or degree,C
-Unit 4 Grammar and Vocabulary,single_choice,"I'm sorry, I ___ come to the meeting. I'm ill.",don't have to,mustn't,can't,C
-Unit 4 Grammar and Vocabulary,single_choice,Applicants ___ send their CV before the deadline.,can't,might,must,C
-Unit 4 Grammar and Vocabulary,single_choice,Which is correct?,You mustn't being late.,You mustn't be late.,You mustn't to be late.,B
-Unit 4 Grammar and Vocabulary,single_choice,A 'course' is ...,a series of lessons,a salary,a job,A
-Unit 4 Grammar and Vocabulary,single_choice,He ___ work today. It's his day off.,doesn't have to,mustn't,can't to,A
+"settings","Unit 4 Grammar and Vocabulary","Answer 10 questions. You get new questions every time.","15","minutes","0","0","70","10","0","single_question","rand","0","200","500","reveal","0","0","0","percent","0"
+"question","Choose the correct answer","<p>You ___ wear a uniform. It's the school rule.</p>","single_choice","1.00","1","","","1","<p>Correct answer: have to</p>",""
+"answer","don't have to","text","0","0","","1"
+"answer","might","text","0","0","","2"
+"answer","have to","text","1","0","","3"
+"question","Choose the correct answer","<p>You ___ bring a pen. We have some here.</p>","single_choice","1.00","2","","","1","<p>Correct answer: don't have to</p>",""
+"answer","should","text","0","0","","1"
+"answer","mustn't","text","0","0","","2"
+"answer","don't have to","text","1","0","","3"
+"question","Choose the correct answer","<p>You ___ use your phone during the exam.</p>","single_choice","1.00","3","","","1","<p>Correct answer: mustn't</p>",""
+"answer","might","text","0","0","","1"
+"answer","mustn't","text","1","0","","2"
+"answer","don't have to","text","0","0","","3"
+"question","Choose the correct answer","<p>You look tired. You ___ go to bed early.</p>","single_choice","1.00","4","","","1","<p>Correct answer: should</p>",""
+"answer","must","text","0","0","","1"
+"answer","are","text","0","0","","2"
+"answer","should","text","1","0","","3"
+"question","Choose the correct answer","<p>He ___ be at home. His car is outside.</p>","single_choice","1.00","5","","","1","<p>Correct answer: must</p>",""
+"answer","should","text","0","0","","1"
+"answer","can't","text","0","0","","2"
+"answer","must","text","1","0","","3"
+"question","Choose the correct answer","<p>She ___ be a doctor. She's only fifteen.</p>","single_choice","1.00","6","","","1","<p>Correct answer: can't</p>",""
+"answer","can't","text","1","0","","1"
+"answer","must","text","0","0","","2"
+"answer","has to","text","0","0","","3"
+"question","Choose the correct answer","<p>I ___ work on Sunday, so I can't come.</p>","single_choice","1.00","7","","","1","<p>Correct answer: have to</p>",""
+"answer","might","text","0","0","","1"
+"answer","should to","text","0","0","","2"
+"answer","have to","text","1","0","","3"
+"question","Choose the correct answer","<p>We ___ get up early yesterday.</p>","single_choice","1.00","8","","","1","<p>Correct answer: had to</p>",""
+"answer","had to","text","1","0","","1"
+"answer","must","text","0","0","","2"
+"answer","have to","text","0","0","","3"
+"question","Choose the correct answer","<p>It ___ snow tonight. The sky is grey.</p>","single_choice","1.00","9","","","1","<p>Correct answer: might</p>",""
+"answer","can't","text","0","0","","1"
+"answer","might","text","1","0","","2"
+"answer","must","text","0","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","10","","","1","<p>Correct answer: He should study more.</p>",""
+"answer","He should studies more.","text","0","0","","1"
+"answer","He should to study more.","text","0","0","","2"
+"answer","He should study more.","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","11","","","1","<p>Correct answer: I can swim.</p>",""
+"answer","I can to swim.","text","0","0","","1"
+"answer","I can swims.","text","0","0","","2"
+"answer","I can swim.","text","1","0","","3"
+"question","Choose the correct answer","<p>You ___ told me earlier! Now it's too late.</p>","single_choice","1.00","12","","","1","<p>Correct answer: should have</p>",""
+"answer","should have","text","1","0","","1"
+"answer","must have","text","0","0","","2"
+"answer","might","text","0","0","","3"
+"question","Choose the correct answer","<p>___ I leave early today, please?</p>","single_choice","1.00","13","","","1","<p>Correct answer: Can</p>",""
+"answer","Should","text","0","0","","1"
+"answer","Can","text","1","0","","2"
+"answer","Must","text","0","0","","3"
+"question","Choose the correct answer","<p>Which means 'it is not necessary'?</p>","single_choice","1.00","14","","","1","<p>Correct answer: You don't have to go.</p>",""
+"answer","You can't go.","text","0","0","","1"
+"answer","You mustn't go.","text","0","0","","2"
+"answer","You don't have to go.","text","1","0","","3"
+"question","Choose the correct answer","<p>Which means 'it is not allowed'?</p>","single_choice","1.00","15","","","1","<p>Correct answer: You mustn't go.</p>",""
+"answer","You mustn't go.","text","1","0","","1"
+"answer","You might go.","text","0","0","","2"
+"answer","You don't have to go.","text","0","0","","3"
+"question","Choose the correct answer","<p>You ___ be very proud of your son!</p>","single_choice","1.00","16","","","1","<p>Correct answer: must</p>",""
+"answer","should have","text","0","0","","1"
+"answer","can't","text","0","0","","2"
+"answer","must","text","1","0","","3"
+"question","Choose the correct answer","<p>They ___ be home yet. The lights are off.</p>","single_choice","1.00","17","","","1","<p>Correct answer: can't</p>",""
+"answer","can't","text","1","0","","1"
+"answer","must","text","0","0","","2"
+"answer","might to","text","0","0","","3"
+"question","Choose the correct answer","<p>If you want to pass, you ___ study.</p>","single_choice","1.00","18","","","1","<p>Correct answer: have to</p>",""
+"answer","can't","text","0","0","","1"
+"answer","have to","text","1","0","","2"
+"answer","mightn't","text","0","0","","3"
+"question","Choose the correct answer","<p>I'm not sure. I ___ go to the cinema.</p>","single_choice","1.00","19","","","1","<p>Correct answer: might</p>",""
+"answer","must","text","0","0","","1"
+"answer","have to","text","0","0","","2"
+"answer","might","text","1","0","","3"
+"question","Choose the correct answer","<p>You ___ eat so many sweets. They are bad for you.</p>","single_choice","1.00","20","","","1","<p>Correct answer: shouldn't</p>",""
+"answer","shouldn't","text","1","0","","1"
+"answer","aren't","text","0","0","","2"
+"answer","don't have to","text","0","0","","3"
+"question","Choose the correct answer","<p>'Apply for' a job means ...</p>","single_choice","1.00","21","","","1","<p>Correct answer: ask officially for it</p>",""
+"answer","enjoy it","text","0","0","","1"
+"answer","leave it","text","0","0","","2"
+"answer","ask officially for it","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'salary' is ...</p>","single_choice","1.00","22","","","1","<p>Correct answer: money you get for work</p>",""
+"answer","a place","text","0","0","","1"
+"answer","a type of job","text","0","0","","2"
+"answer","money you get for work","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'colleague' is ...</p>","single_choice","1.00","23","","","1","<p>Correct answer: a person you work with</p>",""
+"answer","a person you work with","text","1","0","","1"
+"answer","your boss","text","0","0","","2"
+"answer","your teacher","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'deadline' is ...</p>","single_choice","1.00","24","","","1","<p>Correct answer: the last time to finish</p>",""
+"answer","a job offer","text","0","0","","1"
+"answer","the last time to finish","text","1","0","","2"
+"answer","a holiday","text","0","0","","3"
+"question","Choose the correct answer","<p>'Resign' means ...</p>","single_choice","1.00","25","","","1","<p>Correct answer: leave a job officially</p>",""
+"answer","leave a job officially","text","1","0","","1"
+"answer","get a salary","text","0","0","","2"
+"answer","apply for a job","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'degree' is a ...</p>","single_choice","1.00","26","","","1","<p>Correct answer: university qualification</p>",""
+"answer","university qualification","text","1","0","","1"
+"answer","type of job","text","0","0","","2"
+"answer","school lesson","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'part-time' job is ...</p>","single_choice","1.00","27","","","1","<p>Correct answer: for fewer hours</p>",""
+"answer","for fewer hours","text","1","0","","1"
+"answer","very well paid","text","0","0","","2"
+"answer","for the whole day","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'full-time' job is ...</p>","single_choice","1.00","28","","","1","<p>Correct answer: for the whole working week</p>",""
+"answer","for a few hours","text","0","0","","1"
+"answer","a hobby","text","0","0","","2"
+"answer","for the whole working week","text","1","0","","3"
+"question","Choose the correct answer","<p>A 'promotion' is ...</p>","single_choice","1.00","29","","","1","<p>Correct answer: a move to a better job</p>",""
+"answer","a move to a better job","text","1","0","","1"
+"answer","a new colleague","text","0","0","","2"
+"answer","a free holiday","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'timetable' shows ...</p>","single_choice","1.00","30","","","1","<p>Correct answer: lessons or times</p>",""
+"answer","salaries","text","0","0","","1"
+"answer","degrees","text","0","0","","2"
+"answer","lessons or times","text","1","0","","3"
+"question","Choose the correct answer","<p>An 'interview' is ...</p>","single_choice","1.00","31","","","1","<p>Correct answer: a meeting for a job</p>",""
+"answer","a letter","text","0","0","","1"
+"answer","a kind of exam","text","0","0","","2"
+"answer","a meeting for a job","text","1","0","","3"
+"question","Choose the correct answer","<p>To 'fail' an exam is to ...</p>","single_choice","1.00","32","","","1","<p>Correct answer: not pass it</p>",""
+"answer","not pass it","text","1","0","","1"
+"answer","pass it","text","0","0","","2"
+"answer","take it twice","text","0","0","","3"
+"question","Choose the correct answer","<p>'Experience' means ...</p>","single_choice","1.00","33","","","1","<p>Correct answer: knowledge from doing something</p>",""
+"answer","knowledge from doing something","text","1","0","","1"
+"answer","an exam","text","0","0","","2"
+"answer","a lesson","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'manager' is ...</p>","single_choice","1.00","34","","","1","<p>Correct answer: a person in charge of a team</p>",""
+"answer","a person in charge of a team","text","1","0","","1"
+"answer","a student","text","0","0","","2"
+"answer","a salary","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'qualification' is ...</p>","single_choice","1.00","35","","","1","<p>Correct answer: a certificate or degree</p>",""
+"answer","a holiday","text","0","0","","1"
+"answer","a boss","text","0","0","","2"
+"answer","a certificate or degree","text","1","0","","3"
+"question","Choose the correct answer","<p>I'm sorry, I ___ come to the meeting. I'm ill.</p>","single_choice","1.00","36","","","1","<p>Correct answer: can't</p>",""
+"answer","don't have to","text","0","0","","1"
+"answer","mustn't","text","0","0","","2"
+"answer","can't","text","1","0","","3"
+"question","Choose the correct answer","<p>Applicants ___ send their CV before the deadline.</p>","single_choice","1.00","37","","","1","<p>Correct answer: must</p>",""
+"answer","can't","text","0","0","","1"
+"answer","might","text","0","0","","2"
+"answer","must","text","1","0","","3"
+"question","Choose the correct answer","<p>Which is correct?</p>","single_choice","1.00","38","","","1","<p>Correct answer: You mustn't be late.</p>",""
+"answer","You mustn't being late.","text","0","0","","1"
+"answer","You mustn't be late.","text","1","0","","2"
+"answer","You mustn't to be late.","text","0","0","","3"
+"question","Choose the correct answer","<p>A 'course' is ...</p>","single_choice","1.00","39","","","1","<p>Correct answer: a series of lessons</p>",""
+"answer","a series of lessons","text","1","0","","1"
+"answer","a salary","text","0","0","","2"
+"answer","a job","text","0","0","","3"
+"question","Choose the correct answer","<p>He ___ work today. It's his day off.</p>","single_choice","1.00","40","","","1","<p>Correct answer: doesn't have to</p>",""
+"answer","doesn't have to","text","1","0","","1"
+"answer","mustn't","text","0","0","","2"
+"answer","can't to","text","0","0","","3"

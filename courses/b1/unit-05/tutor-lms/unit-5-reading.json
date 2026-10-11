@@ -1,101 +1,109 @@
 {
  "title": "Unit 5 Reading",
- "description": "<h3>My best friend Kristaps</h3><p>I have known Kristaps since primary school, so we have been friends for almost fifteen years. He is the most reliable person I know. If I have a problem, I can call him at any time, and he is always ready to help.</p>\n<p>We are very different in many ways. Kristaps is much taller than I am – he is nearly 1.95 m – and he is slimmer, too. He has short curly hair and a big smile. He is not as shy as I am: he talks to everyone, and he makes new friends easily. I'm quieter, and I need more time to feel comfortable with new people.</p>\n<p>Our interests are also different. Kristaps loves sport and is the best basketball player in our club. I prefer reading and music. However, we both enjoy hiking, so we usually go to the mountains once a year. Last summer we walked in Slovakia. It was the hardest trip we have ever done: the weather was worse than we expected, and we got lost on the second day!</p>\n<p>Kristaps now lives in a suburb of Liverpool, where he works as an engineer. We don't meet as often as before, but we video call every Sunday. \"Distance doesn't matter,\" he says. \"The best friends are the ones you can trust, wherever they are.\"</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "How long have they been friends?",
-   "options": [
-    "since university",
+   "title": "Choose the correct answer",
+   "text": "How long have they been friends?",
+   "order": 1,
+   "answers": [
     "almost fifteen years",
-    "five years"
+    "five years",
+    "since university"
    ],
    "correct": "almost fifteen years",
-   "marks": 1
+   "explanation": "Correct answer: almost fifteen years"
   },
   {
-   "type": "single_choice",
-   "question": "Kristaps is ...",
-   "options": [
-    "shy",
+   "title": "Choose the correct answer",
+   "text": "Kristaps is ...",
+   "order": 2,
+   "answers": [
     "very reliable",
+    "shy",
     "short"
    ],
    "correct": "very reliable",
-   "marks": 1
+   "explanation": "Correct answer: very reliable"
   },
   {
-   "type": "single_choice",
-   "question": "Compared with the writer, Kristaps is ...",
-   "options": [
-    "shorter and slimmer",
+   "title": "Choose the correct answer",
+   "text": "Compared with the writer, Kristaps is ...",
+   "order": 3,
+   "answers": [
     "taller and slimmer",
+    "shorter and slimmer",
     "older and quieter"
    ],
    "correct": "taller and slimmer",
-   "marks": 1
+   "explanation": "Correct answer: taller and slimmer"
   },
   {
-   "type": "single_choice",
-   "question": "Kristaps has ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Kristaps has ...",
+   "order": 4,
+   "answers": [
+    "short curly hair",
     "long straight hair",
-    "no hair",
-    "short curly hair"
+    "no hair"
    ],
    "correct": "short curly hair",
-   "marks": 1
+   "explanation": "Correct answer: short curly hair"
   },
   {
-   "type": "single_choice",
-   "question": "Kristaps is ___ shy as the writer.",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Kristaps is ___ shy as the writer.",
+   "order": 5,
+   "answers": [
     "not as",
-    "as",
-    "more"
+    "more",
+    "as"
    ],
    "correct": "not as",
-   "marks": 1
+   "explanation": "Correct answer: not as"
   },
   {
-   "type": "single_choice",
-   "question": "The writer prefers ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The writer prefers ...",
+   "order": 6,
+   "answers": [
     "reading and music",
     "basketball",
     "cooking"
    ],
    "correct": "reading and music",
-   "marks": 1
+   "explanation": "Correct answer: reading and music"
   },
   {
-   "type": "single_choice",
-   "question": "The trip to Slovakia was ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The trip to Slovakia was ...",
+   "order": 7,
+   "answers": [
     "the hardest they have done",
     "the easiest",
     "cancelled"
    ],
    "correct": "the hardest they have done",
-   "marks": 1
+   "explanation": "Correct answer: the hardest they have done"
   },
   {
-   "type": "single_choice",
-   "question": "Kristaps lives now in ...",
-   "options": [
-    "Slovakia",
+   "title": "Choose the correct answer",
+   "text": "Kristaps lives now in ...",
+   "order": 8,
+   "answers": [
     "a suburb of Liverpool",
-    "Riga"
+    "Riga",
+    "Slovakia"
    ],
    "correct": "a suburb of Liverpool",
-   "marks": 1
+   "explanation": "Correct answer: a suburb of Liverpool"
   }
  ]
 }

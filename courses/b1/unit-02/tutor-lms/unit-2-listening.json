@@ -1,101 +1,109 @@
 {
  "title": "Unit 2 Listening",
- "description": "<h3>A problem at the airport</h3><p>Listen to the audio file twice (b1-unit-02-listening-quiz.mp3). Then answer the questions.</p>",
  "settings": {
-  "time_limit_minutes": 20,
-  "attempts_allowed": 3,
-  "passing_grade_percent": 60,
-  "question_order": "sorting",
-  "max_questions_allowed_to_answer": 8
+  "time": 20,
+  "attempts": 3,
+  "pass_": 60,
+  "shown": 8,
+  "order": "sorting",
+  "feedback": "default"
  },
  "questions": [
   {
-   "type": "single_choice",
-   "question": "The flight to Berlin has a delay of ...",
-   "options": [
-    "nine hours",
+   "title": "Choose the correct answer",
+   "text": "The flight to Berlin has a delay of ...",
+   "order": 1,
+   "answers": [
     "90 minutes",
-    "30 minutes"
+    "30 minutes",
+    "nine hours"
    ],
    "correct": "90 minutes",
-   "marks": 1
+   "explanation": "Correct answer: 90 minutes"
   },
   {
-   "type": "single_choice",
-   "question": "The man is worried because he will miss ...",
-   "options": [
-    "a meeting at the airport",
+   "title": "Choose the correct answer",
+   "text": "The man is worried because he will miss ...",
+   "order": 2,
+   "answers": [
+    "a connecting flight",
     "his luggage",
-    "a connecting flight"
+    "a meeting at the airport"
    ],
    "correct": "a connecting flight",
-   "marks": 1
+   "explanation": "Correct answer: a connecting flight"
   },
   {
-   "type": "single_choice",
-   "question": "He booked the ticket ...",
-   "options": [
-    "by phone yesterday",
+   "title": "Choose the correct answer",
+   "text": "He booked the ticket ...",
+   "order": 3,
+   "answers": [
     "online, two weeks ago",
-    "at the airport"
+    "at the airport",
+    "by phone yesterday"
    ],
    "correct": "online, two weeks ago",
-   "marks": 1
+   "explanation": "Correct answer: online, two weeks ago"
   },
   {
-   "type": "single_choice",
-   "question": "The alternative flight goes to ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The alternative flight goes to ...",
+   "order": 4,
+   "answers": [
+    "Munich",
     "Frankfurt",
-    "Paris",
-    "Munich"
+    "Paris"
    ],
    "correct": "Munich",
-   "marks": 1
+   "explanation": "Correct answer: Munich"
   },
   {
-   "type": "single_choice",
-   "question": "From the new airport he can ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "From the new airport he can ...",
+   "order": 5,
+   "answers": [
+    "take a train",
     "take a bus",
-    "take a taxi",
-    "take a train"
+    "take a taxi"
    ],
    "correct": "take a train",
-   "marks": 1
+   "explanation": "Correct answer: take a train"
   },
   {
-   "type": "single_choice",
-   "question": "The train journey takes about ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "The train journey takes about ...",
+   "order": 6,
+   "answers": [
+    "four hours",
     "one hour",
-    "ten hours",
-    "four hours"
+    "ten hours"
    ],
    "correct": "four hours",
-   "marks": 1
+   "explanation": "Correct answer: four hours"
   },
   {
-   "type": "single_choice",
-   "question": "He can't take the morning flight because ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "He can't take the morning flight because ...",
+   "order": 7,
+   "answers": [
+    "he has a meeting at ten",
     "it's too expensive",
-    "it's full",
-    "he has a meeting at ten"
+    "it's full"
    ],
    "correct": "he has a meeting at ten",
-   "marks": 1
+   "explanation": "Correct answer: he has a meeting at ten"
   },
   {
-   "type": "single_choice",
-   "question": "Boarding starts at ...",
-   "options": [
+   "title": "Choose the correct answer",
+   "text": "Boarding starts at ...",
+   "order": 8,
+   "answers": [
     "seven o'clock",
-    "eight o'clock",
-    "six o'clock"
+    "six o'clock",
+    "eight o'clock"
    ],
    "correct": "seven o'clock",
-   "marks": 1
+   "explanation": "Correct answer: seven o'clock"
   }
  ]
 }

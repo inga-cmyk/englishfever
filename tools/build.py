@@ -97,7 +97,9 @@ def sections(html, icon="📘"):
         def pull(mm):
             label = re.sub(r"[:!]\s*$", "", mm.group(1).strip())
             if WARN.match(label): extra.append(box("rozs", f"⚠️ {mm.group(1).strip().rstrip(':')}", f"<p>{mm.group(2).strip()}</p>")); return ""
-            if TIPS.match(label): extra.append(box("tip", f"💡 {mm.group(1).strip().rstrip(':')}", f"<p>{mm.group(2).strip()}</p>")); return ""
+            if TIPS.match(label):
+                ic = "🧪" if re.match("quick test", label, re.I) else "⏰" if re.match("(time|signal) words", label, re.I) else "💡"
+                extra.append(box("tip", f"{ic} {mm.group(1).strip().rstrip(':')}", f"<p>{mm.group(2).strip()}</p>")); return ""
             return mm.group(0)
         body = re.sub(r"<p><strong>([^<]*)</strong>(.*?)</p>", pull, body, flags=re.S)
         if body.strip() or title: out.append(box("vocab", f"{icon} {title}".strip(), tabula(body.strip())))
@@ -112,18 +114,20 @@ def reading_tips(questions):
     """Tips follow the task type the learner sees on THIS page. The practice is a/b/c multiple choice, so the tips are
     multiple-choice tips. A True / False / Not given tip is only written when EVERY question on the page has that format."""
     if all(q.startswith("True, False or Not given") for q in questions):
+        kind = "True / False / Not given"
         tips = ["Read the title and look at the text quickly.", "Read each statement. Then find the part of the text about it.",
                 "<em>True</em> = the text says the same. <em>False</em> = the text says the opposite. <em>Not given</em> = the text does not say it."]
     else:
+        kind = "multiple choice"
         tips = ["Read the title and look at the text quickly.",
                 "Read each question. Then find the part of the text that answers it.",
                 "Check all the options (a, b, c). Wrong options often use words from the text, but they say something different."]
-    return box("tip", "💡 Exam tips", "<ol>" + "".join(f"<li>{t}</li>" for t in tips) + "</ol>")
+    return box("tip", f"💡 Exam tips: {kind}", "<ol>" + "".join(f"<li>{t}</li>" for t in tips) + "</ol>")
 def listening_tips():
     tips = ["Read the questions and the three options before you listen.", "Listen for the main idea, not for every word.",
             "Wrong options may use a word from the recording, but they say something different.",
             "Choose one answer for every question, even if you are not sure."]
-    return box("tip", "💡 Exam tips", "<ol>" + "".join(f"<li>{t}</li>" for t in tips) + "</ol>")
+    return box("tip", "💡 Exam tips: multiple choice", "<ol>" + "".join(f"<li>{t}</li>" for t in tips) + "</ol>")
 
 # ---------- shared teaching text (easy English) ----------
 WRITING_SECTIONS = [
@@ -223,6 +227,7 @@ def check_quiz_csv(text, name, n_questions, shown):
         if r[0] == "question":
             if cur is not None: assert cur.count("1") == 1, f"{name}: question needs exactly one correct answer"
             cur = []; nq += 1
+            assert r[5] == str(nq), f"{name}: question order broken at {nq}"
             assert r[1].lower() not in r[2].lower() or not r[2], f"{name}: instruction repeated in question text: {r[2]!r}"
     assert cur.count("1") == 1, f"{name}: last question needs exactly one correct answer"
     assert nq == n_questions, f"{name}: {nq} questions, expected {n_questions}"

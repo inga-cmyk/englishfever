@@ -14,6 +14,13 @@ All instructions and explanations are in easy English.
 
 See `courses/b1/course.md` for the unit list and `courses/b1/unit-NN/INDEX.md` for the upload order.
 
+## Quick import (about 15 minutes)
+1. **H5P:** WordPress admin > H5P Content > Add New > Upload. Upload the 104 files from `dist/h5p/` (all zipped in `dist/all-h5p.zip`). Keep the titles unchanged.
+2. **Pages:** Tools > Import > WordPress (install the importer if asked). Choose `dist/wordpress/english-fever-b1-pages.xml`. This creates 57 draft pages (course page, 8 unit pages, 48 lessons). The H5P activities are embedded with `[h5p slug="..."]`, which matches the H5P titles. Check that a lesson page shows its activities, then publish.
+3. **Audio:** record `listening/scripts-to-record.md` and upload the MP3s to `wp-content/uploads/english-fever/` (names are in each script file).
+4. **Quizzes:** create the Tutor LMS quizzes from `dist/tutor-lms-quizzes.zip` (settings below).
+5. Regenerate everything with `python3 tools/build.py && python3 tools/make_wxr.py`.
+
 ## Tutor LMS quiz settings
 The `.json` files hold the questions and recommended settings. The `.csv` files are for copy/paste or a spreadsheet import.
 **Grammar and vocabulary quiz:** Question order = *Random*; *Max questions allowed to answer* = **10** (the pool has 40). Passing grade 70%, time limit 15 minutes.

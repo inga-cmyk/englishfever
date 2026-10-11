@@ -57,7 +57,11 @@ def count(kind, c):
     return text.count("*") // 2          # number of gaps / marked words
 
 # ---------- page helpers ----------
-def sc(name): return f'<div class="h5p-activity"><p><em>Activity:</em></p>[h5p id="{name}"]</div>'
+import re
+def slugify(title):
+    """Same idea as WordPress sanitize_title: lowercase, non-alphanumerics become single hyphens."""
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", title.lower())).strip("-")
+def sc(title): return f'<div class="h5p-activity">[h5p slug="{slugify(title)}"]</div>'
 def table(rows, head):
     h = "".join(f"<th>{escape(x)}</th>" for x in head)
     b = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
@@ -155,7 +159,8 @@ def build_unit(n):
     reg = []   # registry of H5P activities
     def h5p(kind, short, title, content):
         name = f"{U}-{short}"
-        reg.append(write_h5p(kind, name, f"B1 Unit {n} – {title}", content, h5pdir)); return sc(name)
+        full = f"B1 Unit {n} – {title}"
+        reg.append(write_h5p(kind, name, full, content, h5pdir)); reg[-1]["slug"] = slugify(full); return sc(full)
     P = {}
 
     # 1 GRAMMAR
@@ -252,10 +257,10 @@ def build_unit(n):
     # INDEX
     idx = [f"# Unit {n}: {u['title']}\n", f"Topic: {u['topic']} · Grammar: {g['title']}\n",
            "## WordPress build order\n", "1. Upload each file from `dist/h5p/` in **H5P Content → Add New → Upload**. Note each new ID.\n",
-           "2. Create 6 pages from `lesson-*.html` (Custom HTML block). Replace every `[h5p id=\"uNN-name\"]` with the real shortcode `[h5p id=\"123\"]`.\n",
+           "2. Import `dist/wordpress/english-fever-b1-pages.xml` (Tools > Import). The pages already contain `[h5p slug=\"...\"]` shortcodes that match the H5P titles.\n",
            "3. Record the audio from `listening/scripts-to-record.md`, upload to the Media Library.\n",
            "4. In Tutor LMS create 3 quizzes from `tutor-lms/` (see the root README for settings).\n",
-           "\n## H5P activities\n", "| File | Type | Items |\n|---|---|---|\n"] + [f"| {r['name']}.h5p | {r['type']} | {r['items']} |\n" for r in reg]
+           "\n## H5P activities\n", "| File | Type | Items | Slug used in the lesson page |\n|---|---|---|---|\n"] + [f"| {r['name']}.h5p | {r['type']} | {r['items']} | {r['slug']} |\n" for r in reg]
     write(os.path.join(out, "INDEX.md"), "".join(idx))
     bad = [r for r in reg if r["items"] < 8]
     print(f"unit {n}: {len(reg)} H5P files, pool={len(u['pool'])}", "UNDER-8: " + str(bad) if bad else "")

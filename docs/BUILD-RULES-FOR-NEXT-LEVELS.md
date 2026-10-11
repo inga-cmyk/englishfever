@@ -44,6 +44,7 @@ Course (draft until checked)
     10 Unit N Listening (quiz, 8)
 ```
 
+* **Lesson bank (site snippet `ef-lesson-bank.php`, checked against its code).** Any topic whose title contains "lesson bank" is hidden from students: not in the lesson list, the course page, Previous/Next or the progress count, and a direct link to a bank lesson, quiz or assignment sends a student to the course page. Admins and the course's teachers see it. The snippet creates the bank automatically when a course is opened in the course builder. Rules for the generator: never use "lesson bank" in a unit topic title, and import new content **into the bank first**, check it, then drag each finished unit into its `Unit N` topic (or create the unit topic and move the items). This keeps a half-checked unit away from learners even if the course is already published.
 * Order matters: Tutor puts a new assignment or quiz at the **end** of the topic. After creating items, set `menu_order` in the order above (a one-off snippet did it for B1).
 * Lesson titles inside a topic: `Grammar – <topic>`, `Vocabulary – <topic>`, `Reading – exam practice`, `Listening – exam practice`, `Speaking – exam practice`, `Writing – informal and formal emails`.
 
@@ -204,6 +205,7 @@ Import ONE quiz first and open it before importing the rest.
 
 Everything below ran from the browser (logged in as admin), fetching source files from GitHub raw, so no file had to be pasted:
 
+0. **Where to import:** into the course's `🔒 Lesson bank` topic first (hidden from students); after the QA list (section 10) drag the unit's items into `Unit N` in the order of section 2.
 1. **H5P:** upload each `.h5p` (section 7).
 2. **Lessons:** AJAX `tutor_save_lesson` with `topic_id`, `title`, `description` (HTML). Generate the HTML from the unit source files with the template rules above. (Pages import via WXR is no longer needed.)
 3. **Quizzes:** build the CSV in memory and send it to `quiz_import_data` (one request per quiz).

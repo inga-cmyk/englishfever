@@ -24,7 +24,7 @@ See [docs/BUILD-RULES-FOR-NEXT-LEVELS.md](docs/BUILD-RULES-FOR-NEXT-LEVELS.md) (
 2. **Lessons:** create the 6 lessons per unit from `courses/b1/unit-NN/lesson-*.html` (Tutor LMS lesson editor, HTML view). `dist/wordpress/english-fever-b1-pages.xml` is an alternative that creates ordinary pages.
 3. **Assignments:** `courses/b1/unit-NN/assignment/` (`dist/tutor-lms-assignments.zip`).
 4. **Quizzes:** import `courses/b1/unit-NN/tutor-lms/*.csv` with Tutor's quiz import (one first, open it, then the rest).
-5. **Audio:** record `listening/scripts-to-record.md`.
+5. **Audio:** `python3 tools/make_audio.py` makes all 16 MP3 files with ElevenLabs (run on your own computer with `ELEVENLABS_API_KEY` set; start with `--dry-run`). See the top of the script.
 6. Rebuild: `python3 tools/build.py && python3 tools/make_wxr.py` (`EF_LEVEL=A2 ...` for another level).
 
 ## Tutor LMS quiz settings (already inside the CSV)

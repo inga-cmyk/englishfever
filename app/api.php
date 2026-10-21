@@ -45,12 +45,8 @@ try {
             $u = Auth::user();
             out(['user' => $u ? Auth::publicUser($u) : null]);
 
-        case 'register':
-            $u = Auth::register((string) ($in['nickname'] ?? ''), (string) ($in['password'] ?? ''));
-            out(['user' => Auth::publicUser($u)]);
-
-        case 'login':
-            $u = Auth::attempt((string) ($in['nickname'] ?? ''), (string) ($in['password'] ?? ''));
+        case 'guest':
+            $u = Auth::createGuest((string) ($in['nickname'] ?? ''));
             out(['user' => Auth::publicUser($u)]);
 
         case 'logout':
@@ -63,27 +59,18 @@ try {
             if (isset($in['nickname']) && $in['nickname'] !== $u['nickname']) {
                 $n = Auth::validNickname((string) $in['nickname']);
                 $key = mb_strtolower($n);
-                if (Db::val('SELECT COUNT(1) FROM users WHERE nickname_key = ? AND id <> ?', [$key, $u['id']])) throw new ApiError('This nickname is taken. Try another.', 409);
+                if ($u['provider'] !== 'guest' && Db::val('SELECT COUNT(1) FROM users WHERE nickname_key = ? AND id <> ?', [$key, $u['id']])) throw new ApiError('This name is taken. Try another.', 409);
                 $upd['nickname'] = $n;
-                $upd['nickname_key'] = $key;
+                if ($u['provider'] !== 'guest') $upd['nickname_key'] = $key;
             }
             if (isset($in['nickname'])) $upd['nick_set'] = 1;
-            if (isset($in['show_on_board'])) $upd['show_on_board'] = $in['show_on_board'] ? 1 : 0;
+            if (isset($in['show_on_board']) && $u['provider'] !== 'guest') $upd['show_on_board'] = $in['show_on_board'] ? 1 : 0;
             if ($upd) Db::update('users', $upd, 'id = ?', [$u['id']]);
             out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);
 
-        case 'account/password':
-            $u = Auth::require();
-            if ($u['provider'] !== 'local') throw new ApiError('Your password is managed on englishfever.com.', 400);
-            if (!password_verify((string) ($in['old'] ?? ''), (string) $u['pass_hash'])) throw new ApiError('Your current password is not correct.', 400);
-            $new = (string) ($in['new'] ?? '');
-            if (mb_strlen($new) < 4 || mb_strlen($new) > 100) throw new ApiError('New password: at least 4 characters.', 400);
-            Db::update('users', ['pass_hash' => password_hash($new, PASSWORD_DEFAULT), 'must_change' => 0], 'id = ?', [$u['id']]);
-            out(['ok' => true]);
-
         case 'account/delete':
             $u = Auth::require();
-            if (mb_strtolower(trim((string) ($in['confirm'] ?? ''))) !== mb_strtolower($u['nickname'])) throw new ApiError('Type your nickname to confirm.', 400);
+            if (empty($in['confirm'])) throw new ApiError('Please confirm.', 400);
             foreach (['attempts', 'psessions', 'skill_state', 'activity'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
             Auth::logout();
@@ -147,17 +134,6 @@ try {
         case 'teacher/student':
             Auth::requireTeacher();
             out(Stats::teacherStudent((int) ($_GET['id'] ?? 0)));
-
-        case 'teacher/reset-password':
-            Auth::requireTeacher();
-            $s = Db::one("SELECT * FROM users WHERE id = ? AND role = 'student'", [(int) ($in['user_id'] ?? 0)]);
-            if (!$s) throw new ApiError('Student not found.', 404);
-            if ($s['provider'] !== 'local') throw new ApiError('This student signs in with englishfever.com. Reset the password on the website.', 400);
-            $alphabet = 'abcdefghjkmnpqrstuvwxyz23456789';
-            $temp = '';
-            for ($i = 0; $i < 6; $i++) $temp .= $alphabet[random_int(0, strlen($alphabet) - 1)];
-            Db::update('users', ['pass_hash' => password_hash($temp, PASSWORD_DEFAULT), 'must_change' => 1], 'id = ?', [$s['id']]);
-            out(['temp_password' => $temp, 'nickname' => $s['nickname']]);
 
         case 'teacher/export':
             Auth::requireTeacher();

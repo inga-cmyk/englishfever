@@ -83,6 +83,7 @@
     var c = document.getElementById('chips');
     if (!c || !state.user || state.user.role === 'teacher') return;
     c.replaceChildren(
+      state.user.guest ? h('button', { class: 'chip-top', style: 'background:none;cursor:pointer', title: 'Guest: results are not saved', onclick: function () { guestInvite(true); } }, 'Guest · save progress') : null,
       h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), ' day' + (state.streak === 1 ? '' : 's')),
       h('span', { class: 'chip-top hide-m', title: 'Time practised today' }, icon('clock'), UI.fmtDuration(state.todaySeconds)));
   }
@@ -105,7 +106,6 @@
     if (!state.user) { renderChrome(); return viewWelcome(); }
     startHeartbeat();
     var u = state.user;
-    if (u.must_change && name !== 'password') { location.hash = '#/password'; return; }
     if (!u.nick_set && u.provider === 'wp' && name !== 'nickname') { location.hash = '#/nickname'; return; }
     if (name === '' || name === 'welcome') { location.hash = u.role === 'teacher' ? '#/teacher' : '#/home'; return; }
     renderChrome('#/' + name);
@@ -113,7 +113,7 @@
     var v = {
       home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
       leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
-      nickname: viewNickname, password: viewMustChange, rules: viewRules,
+      nickname: viewNickname, rules: viewRules,
     }[name];
     if (name.indexOf('teacher') === 0 && u.role !== 'teacher') { location.hash = '#/home'; return; }
     (v || viewHome)(parts);
@@ -121,38 +121,35 @@
 
   // ───────── welcome / sign in ─────────
   function viewWelcome() {
-    var mode = 'join';
-    var box = h('div');
+    var cfg = state.config;
     var errBox = h('div');
-    function form() {
-      var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'username', autocapitalize: 'off', spellcheck: 'false', maxlength: '20', required: true });
-      var pass = h('input', { type: 'password', id: 'pw', autocomplete: mode === 'join' ? 'new-password' : 'current-password', required: true });
-      var f = h('form', { novalidate: true, onsubmit: function (e) {
-        e.preventDefault(); errBox.replaceChildren();
-        var btn = f.querySelector('button[type=submit]'); btn.disabled = true;
-        api(mode === 'join' ? 'register' : 'login', { nickname: nick.value, password: pass.value }).then(function (r) {
-          state.user = r.user; startHeartbeat(); go('#/home');
-        }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
-      } },
-        h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Nickname'), nick,
-          mode === 'join' ? h('span', { class: 'hint' }, '3–20 letters or numbers. This is the name on the leaderboard. Please do not use your real name.') : null),
-        h('div', { class: 'field' }, h('label', { for: 'pw' }, 'Password'), pass,
-          mode === 'join' ? h('span', { class: 'hint' }, 'At least 4 characters. Remember it – there is no email reset. Your teacher can help if you forget.') : null),
-        errBox,
-        h('button', { class: 'btn block', type: 'submit' }, mode === 'join' ? 'Join and start' : 'Sign in'));
-      return f;
+    var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', maxlength: '30', placeholder: 'Your nickname', required: true });
+    var guestForm = h('form', { novalidate: true, onsubmit: function (e) {
+      e.preventDefault(); errBox.replaceChildren();
+      var btn = guestForm.querySelector('button[type=submit]'); btn.disabled = true;
+      api('guest', { nickname: nick.value }).then(function (r) {
+        state.user = r.user; startHeartbeat(); go('#/home');
+      }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
+    } },
+      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Nickname'), nick),
+      errBox,
+      h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Start as guest'),
+      h('p', { class: 'small muted', style: 'margin:10px 0 0;text-align:center' }, 'Guest results are not saved.'));
+
+    var card = [];
+    if (cfg.sso) {
+      card.push(
+        h('h2', { style: 'text-align:center' }, 'Registered at englishfever.com?'),
+        h('a', { class: 'btn block', href: cfg.wp_login_url }, 'Continue with my account'),
+        h('p', { class: 'small muted', style: 'text-align:center;margin:10px 0 0' }, 'No new password. Your results are saved.'),
+        h('div', { class: 'or' }, 'or'),
+        h('h2', { style: 'text-align:center' }, 'Try it as a guest'));
+    } else {
+      card.push(h('h2', { style: 'text-align:center' }, 'Start practising'));
     }
-    function draw() {
-      box.replaceChildren(
-        h('div', { class: 'tabs', role: 'tablist' },
-          h('button', { role: 'tab', 'aria-selected': String(mode === 'join'), onclick: function () { mode = 'join'; draw(); } }, 'Join with a nickname'),
-          h('button', { role: 'tab', 'aria-selected': String(mode === 'login'), onclick: function () { mode = 'login'; draw(); } }, 'I already have one')),
-        form(),
-        state.config.sso ? h('div', null, h('div', { class: 'or' }, 'or'),
-          h('a', { class: 'btn ghost block', href: state.config.wp_login_url }, 'Sign in with englishfever.com'),
-          state.config.register_url ? h('p', { class: 'small muted', style: 'text-align:center;margin:12px 0 0' }, 'New to englishfever.com? ', h('a', { href: state.config.register_url }, 'Create an account')) : null) : null);
-    }
-    draw();
+    card.push(guestForm);
+    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', h('a', { href: cfg.register_url }, 'Create a free account')));
+
     show(h('div', null,
       h('section', { class: 'hero' },
         h('div', { class: 'bar' }),
@@ -162,7 +159,37 @@
           h('div', null, h('b', null, 'Placement test'), '24 quick questions. See your gaps and where to start.'),
           h('div', null, h('b', null, 'Your choice'), 'Pick one tense or several, and the level you want.'),
           h('div', null, h('b', null, 'Real thinking'), 'Not only gaps: spot mistakes, judge answers and write your own sentences.'))),
-      h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, box)));
+      h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
+  }
+
+  // The invitation shown to guests after practice: create a free account to keep the results.
+  function guestInvite(force) {
+    if (!state.user || !state.user.guest || !state.config) return;
+    if (!force) {
+      try { if (Date.now() - (+localStorage.getItem('ef_invite') || 0) < 86400000) return; } catch (e) {}
+    }
+    try { localStorage.setItem('ef_invite', String(Date.now())); } catch (e) {}
+    var cfg = state.config;
+    var m = UI.modal(h('div', null,
+      h('div', { class: 'label' }, 'Keep your progress'),
+      h('h2', null, 'Create a free account to save your results'),
+      h('p', null, 'You are practising as a guest. If you clear your browser or use another device, your results are lost. With a free account you keep your results, streak and level, and you can join the leaderboard.'),
+      h('p', { class: 'small muted' }, 'Everything you did as a guest moves to your new account. After you register, come back to this page and press “Continue with my account”.'),
+      h('div', { class: 'row' },
+        cfg.register_url ? h('a', { class: 'btn', href: cfg.register_url }, 'Create free account') : null,
+        cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost' : 'btn', href: cfg.wp_login_url }, 'I already have an account') : null,
+        h('button', { class: 'linkbtn', id: 'later' }, 'Not now'))));
+    m.el.querySelector('#later').onclick = m.close;
+  }
+
+  function guestBanner() {
+    var cfg = state.config;
+    return h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
+      h('div', null, h('b', { style: 'color:var(--text)' }, 'You are practising as a guest'),
+        h('div', { class: 'small muted' }, 'Create a free account to keep your results and join the leaderboard.')),
+      h('div', { class: 'row' },
+        cfg.register_url ? h('a', { class: 'btn small', href: cfg.register_url }, 'Create account') : null,
+        cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost small' : 'btn small', href: cfg.wp_login_url }, 'Sign in') : null));
   }
 
   // ───────── home ─────────
@@ -171,6 +198,7 @@
     Promise.all([refreshDash(), api('session/resume')]).then(function (r) {
       var d = r[0], resume = r[1].resume;
       var nodes = [];
+      if (state.user.guest) nodes.push(guestBanner());
       nodes.push(h('div', { class: 'hello' },
         h('div', null, h('div', { class: 'label' }, 'Welcome back'), h('h1', { style: 'margin:0' }, state.user.nickname)),
         h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.'))));
@@ -501,6 +529,7 @@
   function viewSummary() {
     var s = state.lastSummary;
     if (!s) { location.hash = '#/home'; return; }
+    setTimeout(function () { if (location.hash === '#/summary') guestInvite(false); }, 700);
     if (s.mode === 'placement') return summaryPlacement(s);
     var nodes = [];
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
@@ -583,7 +612,9 @@
           period === 'week' ? h('p', { class: 'small muted' }, 'Weeks start on Monday. Points come from correct answers, with more points for higher thinking levels.') : null,
           list,
           (r.me && r.me.rank > 20) ? h('div', { class: 'card pad-s', style: 'margin-top:12px' }, 'Your rank: ', h('b', { style: 'color:var(--text)' }, '#' + r.me.rank), ' · ' + r.me.xp + ' XP') : null,
-          r.hidden ? h('p', { class: 'small muted', style: 'margin-top:12px' }, state.user.role === 'teacher' ? 'Teachers are not shown on the leaderboard.' : 'You are hidden from the leaderboard. You can change this in your profile.') : null);
+          r.guest ? h('div', { class: 'card pad-s', style: 'margin-top:12px;border-color:var(--gold)' }, h('b', { style: 'color:var(--text)' }, 'Guests are not on the leaderboard.'), ' Create a free account to join it and keep your results. ',
+            state.config.register_url ? h('a', { href: state.config.register_url }, 'Create account') : null)
+          : (r.hidden ? h('p', { class: 'small muted', style: 'margin-top:12px' }, state.user.role === 'teacher' ? 'Teachers are not shown on the leaderboard.' : 'You are hidden from the leaderboard. You can change this in your profile.') : null));
       }).catch(fail);
     }
     var tabs = h('div', { class: 'tabs', role: 'tablist', style: 'max-width:320px' },
@@ -596,79 +627,62 @@
 
   // ───────── profile ─────────
   function viewProfile() {
-    var u = state.user;
+    var u = state.user, guest = u.guest;
     var msg = h('div');
-    var nick = h('input', { type: 'text', id: 'pn', value: u.nickname, maxlength: '20', autocapitalize: 'off', spellcheck: 'false' });
+    var nick = h('input', { type: 'text', id: 'pn', value: u.nickname, maxlength: '30', autocapitalize: 'off', spellcheck: 'false' });
     var board = h('input', { type: 'checkbox', id: 'pb', checked: u.show_on_board });
     var profile = h('form', { onsubmit: function (e) {
       e.preventDefault(); msg.replaceChildren();
       api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Saved.')); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
     } },
-      h('div', { class: 'field' }, h('label', { for: 'pn' }, 'Nickname'), nick, h('span', { class: 'hint' }, 'Shown on the leaderboard.')),
-      h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
+      h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Nickname' : 'Name shown to others'), nick,
+        guest ? null : h('span', { class: 'hint' }, 'On the leaderboard and to your teacher. A real name or a nickname.')),
+      guest ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
       msg, h('button', { class: 'btn', type: 'submit' }, 'Save'));
 
-    var cards = [h('div', { class: 'card' }, h('h2', null, 'Profile'), profile)];
-    if (u.provider === 'local') {
-      var pmsg = h('div');
-      var oldp = h('input', { type: 'password', id: 'op', autocomplete: 'current-password' }), newp = h('input', { type: 'password', id: 'np', autocomplete: 'new-password' });
-      cards.push(h('div', { class: 'card' }, h('h2', null, 'Change password'), h('form', { onsubmit: function (e) {
-        e.preventDefault(); pmsg.replaceChildren();
-        api('account/password', { old: oldp.value, new: newp.value }).then(function () { oldp.value = ''; newp.value = ''; pmsg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Password changed.')); }).catch(function (er) { pmsg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
-      } }, h('div', { class: 'field' }, h('label', { for: 'op' }, 'Current password'), oldp), h('div', { class: 'field' }, h('label', { for: 'np' }, 'New password'), newp), pmsg, h('button', { class: 'btn', type: 'submit' }, 'Change password'))));
-    } else {
-      cards.push(h('div', { class: 'card' }, h('h2', null, 'Sign-in'), h('p', null, 'You signed in with your englishfever.com account. Manage your password on the website.')));
-    }
+    var cards = [];
+    if (guest) cards.push(guestBanner());
+    cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
+    if (!guest) cards.push(h('div', { class: 'card' }, h('h2', null, 'Sign-in'), h('p', null, 'You signed in with your englishfever.com account. Manage your password on the website.')));
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Your data'),
-      h('p', null, 'We keep your nickname, your answers, your scores and the time you practise. Your teacher can see them. We never share them with anyone else.'),
+      h('p', null, guest ? 'As a guest we keep only your nickname, your answers and the time you practise. Guest data is deleted after 60 days without a visit.'
+        : 'We keep your name, your answers, your scores and the time you practise. Your teacher can see them. We never share them with anyone else.'),
       h('div', { class: 'row' },
         h('button', { class: 'btn ghost small', onclick: function () {
           api('account/export').then(function (d) { var a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' })), download: 'my-practice-data.json' }); document.body.appendChild(a); a.click(); a.remove(); }).catch(fail);
         } }, 'Download my data'),
-        h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my account and data'),
+        h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my results'),
         h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener', class: 'small' }, 'Privacy policy'))));
-    cards.push(h('div', null, h('button', { class: 'btn dark', onclick: function () { api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); }); } }, icon('logout'), 'Sign out')));
-    show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
+    cards.push(h('div', null, h('button', { class: 'btn dark', onclick: function () {
+      api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
+    } }, icon('logout'), guest ? 'Leave guest session' : 'Sign out')));
+    show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
   }
 
   function deleteAccount() {
-    var inp = h('input', { type: 'text', 'aria-label': 'Type your nickname' });
     var em = h('div');
-    var m = UI.modal(h('div', null, h('h2', null, 'Delete everything?'), h('p', null, 'This deletes your account, scores and history. It cannot be undone. Type your nickname to confirm.'), inp, em,
+    var m = UI.modal(h('div', null, h('h2', null, 'Delete your results?'), h('p', null, 'This deletes your results, history and profile in the practice app. It cannot be undone. Your englishfever.com account is not affected.'), em,
       h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'del' }, 'Delete'), h('button', { class: 'btn ghost', id: 'cancel' }, 'Cancel'))));
     m.el.querySelector('#cancel').onclick = m.close;
     m.el.querySelector('#del').onclick = function () {
-      api('account/delete', { confirm: inp.value }).then(function () { m.close(); state.user = null; stopHeartbeat(); go('#/'); UI.toast('Your account was deleted.'); }).catch(function (e) { em.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+      api('account/delete', { confirm: true }).then(function () { m.close(); state.user = null; stopHeartbeat(); go('#/'); UI.toast('Your results were deleted.'); }).catch(function (e) { em.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
     };
   }
 
-  // ───────── forced steps ─────────
+  // ───────── first visit with an englishfever.com account ─────────
   function viewNickname() {
     renderChrome();
     var msg = h('div');
-    var nick = h('input', { type: 'text', id: 'fn', maxlength: '20', autocapitalize: 'off', spellcheck: 'false', required: true });
+    var nick = h('input', { type: 'text', id: 'fn', value: state.user.nickname, maxlength: '30', autocapitalize: 'off', spellcheck: 'false', required: true });
     var board = h('input', { type: 'checkbox', id: 'fb', checked: true });
-    show(h('div', { class: 'card', style: 'max-width:480px;margin:20px auto' }, h('div', { class: 'label' }, 'Welcome'), h('h1', null, 'Choose a nickname'),
-      h('p', null, 'You signed in with englishfever.com. Pick a nickname for the leaderboard. Other learners will see it, so please do not use your real name.'),
+    show(h('div', { class: 'card', style: 'max-width:480px;margin:20px auto' }, h('div', { class: 'label' }, 'Welcome'), h('h1', null, 'How should we show your name?'),
+      h('p', null, 'Other learners and your teacher see this name. Keep your real name or choose a nickname.'),
       h('form', { onsubmit: function (e) {
         e.preventDefault();
         api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; go('#/home'); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
-      } }, h('div', { class: 'field' }, h('label', { for: 'fn' }, 'Nickname'), nick, h('span', { class: 'hint' }, '3–20 letters or numbers.')),
+      } }, h('div', { class: 'field' }, h('label', { for: 'fn' }, 'Name'), nick),
         h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')), msg,
         h('button', { class: 'btn block', type: 'submit' }, 'Continue'))));
-  }
-
-  function viewMustChange() {
-    renderChrome();
-    var msg = h('div');
-    var oldp = h('input', { type: 'password', id: 'mo', autocomplete: 'current-password', required: true }), newp = h('input', { type: 'password', id: 'mn', autocomplete: 'new-password', required: true });
-    show(h('div', { class: 'card', style: 'max-width:480px;margin:20px auto' }, h('div', { class: 'label' }, 'One more step'), h('h1', null, 'Choose a new password'),
-      h('p', null, 'Your teacher gave you a temporary password. Please choose your own.'),
-      h('form', { onsubmit: function (e) {
-        e.preventDefault();
-        api('account/password', { old: oldp.value, new: newp.value }).then(function () { state.user.must_change = false; go('#/home'); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
-      } }, h('div', { class: 'field' }, h('label', { for: 'mo' }, 'Temporary password'), oldp), h('div', { class: 'field' }, h('label', { for: 'mn' }, 'New password'), newp, h('span', { class: 'hint' }, 'At least 4 characters.')), msg,
-        h('button', { class: 'btn block', type: 'submit' }, 'Save and continue'))));
   }
 
   // ───────── teacher ─────────
@@ -699,7 +713,7 @@
         });
         tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
           return h('tr', null,
-            h('td', { class: 'name' }, h('a', { href: '#/teacher/student/' + s.id }, s.nickname), s.full_name ? h('div', { class: 'small muted' }, s.full_name) : null),
+            h('td', { class: 'name' }, h('a', { href: '#/teacher/student/' + s.id }, s.nickname), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null),
             h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, '–')),
             h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
             h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),
@@ -711,7 +725,7 @@
       show(h('div', null,
         h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),
           h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/export', download: '' }, 'Export all answers (CSV)')),
-        h('div', { class: 'grid g3', style: 'margin-bottom:16px' }, stat('users', all.length, 'students'), stat('flame', weekActive, 'active this week'), stat('check', avg === null ? '–' : avg + '%', 'average correct')),
+        h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('users', all.filter(function (s) { return s.provider !== 'guest'; }).length, 'registered'), stat('user', all.filter(function (s) { return s.provider === 'guest'; }).length, 'guests'), stat('flame', weekActive, 'active this week'), stat('check', avg === null ? '–' : avg + '%', 'average correct')),
         h('div', { class: 'row', style: 'margin-bottom:12px' }, search),
         h('div', { class: 'tablewrap' }, h('table', null, thead, tbody))));
     }).catch(fail);
@@ -720,19 +734,6 @@
   function viewTeacherStudent(id) {
     api('teacher/student', undefined, { id: id }).then(function (r) {
       var u = r.user, d = r.dashboard;
-      var reset = u.provider === 'local' ? h('button', { class: 'btn ghost small', onclick: function () {
-        var m = UI.modal(h('div', null, h('h2', null, 'Reset password?'), h('p', null, 'Make a temporary password for ' + u.nickname + '. They must choose a new one when they sign in.'),
-          h('div', { class: 'row' }, h('button', { class: 'btn', id: 'ok' }, 'Make temporary password'), h('button', { class: 'btn ghost', id: 'no' }, 'Cancel'))));
-        m.el.querySelector('#no').onclick = m.close;
-        m.el.querySelector('#ok').onclick = function () {
-          api('teacher/reset-password', { user_id: u.id }).then(function (x) {
-            m.el.replaceChildren(h('h2', null, 'Temporary password'), h('p', null, 'Tell ' + x.nickname + ' this password. It is shown only once.'),
-              h('div', { class: 'ans', style: 'font-size:1.6rem;font-weight:800;letter-spacing:.08em;background:var(--gold-pale);color:var(--text);padding:14px;border-radius:12px;text-align:center;margin-bottom:14px' }, x.temp_password),
-              h('button', { class: 'btn', onclick: m.close }, 'Done'));
-          }).catch(function (e) { m.el.appendChild(h('div', { class: 'err' }, e.message)); });
-        };
-      } }, 'Reset password') : null;
-
       var maxMin = Math.max.apply(null, r.days.map(function (x) { return x.minutes; }).concat([5]));
       var days = h('div', { class: 'bars', style: 'height:100px', role: 'img', 'aria-label': 'Minutes per day, last 30 days' }, r.days.map(function (x, i) {
         return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' tasks' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
@@ -743,7 +744,7 @@
       var rep = d.placement && d.placement.report;
       show(h('div', null,
         h('a', { href: '#/teacher', class: 'small' }, '← All students'),
-        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'wp' ? 'englishfever.com account' : 'nickname account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen))), reset),
+        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen)))),
         h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('clock', UI.fmtDuration(d.totals.seconds), 'time practised'), stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct (' + d.totals.answers + ' tasks)'), stat('flame', d.streak.current + ' / ' + d.streak.best, 'streak (best)'), stat('bolt', d.totals.xp, 'XP')),
         h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
           h('div', { class: 'card' }, h('h2', null, 'Last 30 days'), days, h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Each bar is one day (minutes practised).')),

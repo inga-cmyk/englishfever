@@ -136,7 +136,7 @@ final class Stats
 
     public static function leaderboard(int $uid, string $period): array
     {
-        $where = "u.show_on_board = 1 AND u.role = 'student'";
+        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest'";
         $p = [];
         if ($period === 'week') {
             $where .= ' AND a.day >= ?';
@@ -153,10 +153,11 @@ final class Stats
             if ($row['me']) $me = $row;
             if ($i < 20) $out[] = $row;
         }
-        $u = Db::one('SELECT show_on_board, role FROM users WHERE id = ?', [$uid]);
+        $u = Db::one('SELECT show_on_board, role, provider FROM users WHERE id = ?', [$uid]);
         return [
             'period' => $period, 'rows' => $out, 'me' => $me,
             'hidden' => $u && (!(int) $u['show_on_board'] || $u['role'] !== 'student'),
+            'guest' => $u && $u['provider'] === 'guest',
             'week_start' => self::weekStart(),
         ];
     }
@@ -229,15 +230,15 @@ final class Stats
     public static function exportAttempts(): string
     {
         $fh = fopen('php://temp', 'w+');
-        fputcsv($fh, ['time', 'nickname', 'name', 'skill', 'level', 'bloom', 'correct', 'answer', 'seconds', 'item'], ',', '"', '\\');
+        fputcsv($fh, ['time', 'nickname', 'name', 'account', 'skill', 'level', 'bloom', 'correct', 'answer', 'seconds', 'item'], ',', '"', '\\');
         $users = [];
-        foreach (Db::all('SELECT id, nickname, full_name FROM users') as $u) $users[$u['id']] = $u;
+        foreach (Db::all('SELECT id, nickname, full_name, provider FROM users') as $u) $users[$u['id']] = $u;
         foreach (Db::all('SELECT * FROM attempts ORDER BY id') as $a) {
-            $u = $users[$a['user_id']] ?? ['nickname' => '?', 'full_name' => ''];
+            $u = $users[$a['user_id']] ?? ['nickname' => '?', 'full_name' => '', 'provider' => '?'];
             $cell = fn($v) => preg_match('/^[=+\-@]/', (string) $v) ? "'" . $v : $v; // stop spreadsheet formula injection
             fputcsv($fh, [
                 (new DateTime('@' . $a['created_at']))->setTimezone(self::tz())->format('Y-m-d H:i:s'),
-                $cell($u['nickname']), $cell($u['full_name']), $a['skill'], $a['level'], $a['bloom'], $a['correct'],
+                $cell($u['nickname']), $cell($u['full_name']), $u['provider'] === 'guest' ? 'guest' : 'registered', $a['skill'], $a['level'], $a['bloom'], $a['correct'],
                 $cell($a['answer']), round($a['time_ms'] / 1000), $a['item_id'],
             ], ',', '"', '\\');
         }

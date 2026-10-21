@@ -119,7 +119,9 @@
     var back = h('div', { class: 'modal-back', role: 'dialog', 'aria-modal': 'true' });
     var box = h('div', { class: 'modal' }, content);
     back.appendChild(box);
-    function close() { back.remove(); if (prev && prev.focus) prev.focus(); }
+    function onHash() { close(); }
+    function close() { window.removeEventListener('hashchange', onHash); back.remove(); if (prev && prev.focus) prev.focus(); }
+    window.addEventListener('hashchange', onHash); // a popup never outlives the page it was opened on
     back.addEventListener('click', function (e) { if (e.target === back) close(); });
     back.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
     document.body.appendChild(back);

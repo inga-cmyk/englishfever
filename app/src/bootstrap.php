@@ -25,3 +25,4 @@ session_set_cookie_params([
     'lifetime' => 60 * 60 * 24 * 30, 'path' => $cookiePath, 'secure' => $https, 'httponly' => true, 'samesite' => 'Lax',
 ]);
 session_start();
+if (random_int(1, 200) === 1) Auth::purgeGuests(); // housekeeping: guests inactive for 60 days

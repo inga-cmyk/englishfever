@@ -52,7 +52,9 @@ try {
 
         case 'me':
             $u = Auth::user();
-            out(['user' => $u ? Auth::publicUser($u) : null]);
+            $welcome = null;
+            if ($u && !empty($_SESSION['welcome'])) { $welcome = $_SESSION['welcome']; unset($_SESSION['welcome']); }
+            out(['user' => $u ? Auth::publicUser($u) : null, 'welcome' => $welcome]);
 
         case 'guest':
             $u = Auth::createGuest((string) ($in['nickname'] ?? ''), (int) ($in['t'] ?? 0), (string) ($in['website'] ?? ''));
@@ -73,6 +75,7 @@ try {
                 if ($u['provider'] !== 'guest') $upd['nickname_key'] = $key;
             }
             if (isset($in['nickname'])) $upd['nick_set'] = 1;
+            if (array_key_exists('avatar', $in)) $upd['avatar'] = Auth::validAvatar($in['avatar'] === null ? null : (string) $in['avatar']);
             if (isset($in['show_on_board']) && $u['provider'] !== 'guest') $upd['show_on_board'] = $in['show_on_board'] ? 1 : 0;
             if ($upd) Db::update('users', $upd, 'id = ?', [$u['id']]);
             out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);

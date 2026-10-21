@@ -49,6 +49,48 @@
     logout: '<path d="M9 4H5v16h4M16 8l4 4-4 4M20 12H9"/>',
   };
 
+  // Avatars: a fixed set of glyphs and colours (no uploads). The server stores only "glyph-colour".
+  var AV_GLYPHS = {
+    flame: ICONS.flame, bolt: ICONS.bolt,
+    spark: '<path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/>',
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/>',
+    thermo: '<path d="M10 14.5V5a2 2 0 0 1 4 0v9.5a4 4 0 1 1-4 0z"/><path d="M12 9v7"/>',
+    wave: '<path d="M2 10c2.5-3.5 5-3.5 7.5 0s5 3.5 7.5 0 3-2.5 5-2.5M2 17c2.5-3.5 5-3.5 7.5 0s5 3.5 7.5 0 3-2.5 5-2.5"/>',
+    comet: '<circle cx="16.5" cy="7.5" r="3"/><path d="M14 10 4 20M11.5 7 4 11M17 13l-4 8"/>',
+    leaf: '<path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14z"/><path d="M5 19c3-4 6-6 9-8"/>'
+  };
+  var AV_COLORS = { raspberry: ['#DE3163', '#FFFFFF'], gold: ['#DEC17A', '#020101'], ink: ['#1E1E2C', '#DEC17A'], cream: ['#F3EAD3', '#8A6A22'], plum: ['#4A1730', '#DEC17A'], sand: ['#A39E93', '#020101'] };
+  var AV_NAMES = { flame: 'Flame', spark: 'Spark', bolt: 'Bolt', sun: 'Sun', thermo: 'Thermometer', wave: 'Wave', comet: 'Comet', leaf: 'Leaf', raspberry: 'Raspberry', gold: 'Gold', ink: 'Ink', cream: 'Cream', plum: 'Plum', sand: 'Sand' };
+  var NS = 'http://www.w3.org/2000/svg';
+
+  /** spec = "flame-raspberry" or empty (then the first letter of the name is shown). */
+  function avatar(spec, name, size) {
+    size = size || 40;
+    var parts = (typeof spec === 'string' ? spec : '').split('-');
+    var g = AV_GLYPHS[parts[0]], c = AV_COLORS[parts[1]];
+    var svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 40 40'); svg.setAttribute('width', size); svg.setAttribute('height', size);
+    svg.setAttribute('class', 'avatar'); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', g && c ? 'Avatar: ' + AV_NAMES[parts[0]] + ', ' + AV_NAMES[parts[1]].toLowerCase() : 'Avatar: ' + ((name || '?').trim().charAt(0).toUpperCase()));
+    var circle = document.createElementNS(NS, 'circle');
+    circle.setAttribute('cx', 20); circle.setAttribute('cy', 20); circle.setAttribute('r', 20); circle.setAttribute('fill', c ? c[0] : '#1E1E2C');
+    svg.appendChild(circle);
+    if (g && c) {
+      var grp = document.createElementNS(NS, 'g');
+      grp.setAttribute('transform', 'translate(8 8)'); grp.setAttribute('fill', 'none'); grp.setAttribute('stroke', c[1]);
+      grp.setAttribute('stroke-width', '1.8'); grp.setAttribute('stroke-linecap', 'round'); grp.setAttribute('stroke-linejoin', 'round');
+      grp.innerHTML = g; // fixed strings from this file, never user input
+      svg.appendChild(grp);
+    } else {
+      var t = document.createElementNS(NS, 'text');
+      t.setAttribute('x', 20); t.setAttribute('y', 26.5); t.setAttribute('text-anchor', 'middle'); t.setAttribute('fill', '#DEC17A');
+      t.setAttribute('font-size', 19); t.setAttribute('font-weight', 700); t.setAttribute('font-family', 'system-ui, -apple-system, Segoe UI, sans-serif');
+      t.textContent = (name || '?').trim().charAt(0).toUpperCase();
+      svg.appendChild(t);
+    }
+    return svg;
+  }
+
   function icon(name) {
     var s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     s.setAttribute('viewBox', '0 0 24 24');
@@ -130,5 +172,5 @@
     return { close: close, el: box };
   }
 
-  window.UI = { h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
+  window.UI = { avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
 })();

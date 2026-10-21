@@ -132,6 +132,26 @@ Accepted answers get full points and count as correct for the adaptive logic. A 
 
 To go back to exact matching, set `'spelling' => 'strict'` (capital letters still never matter).
 
+## From guest to registered: the return trip
+
+1. A guest taps **Create a free account** (welcome page, the popup after practice, the banner, the leaderboard note). The link goes through `register.php`, which leaves a 30-minute marker (cookie `ef_return`) and sends them to your registration form (`register_url`).
+2. They register on the website as usual.
+3. As soon as they are registered and logged in, **plugin 1.3.0 sends them straight back into the app** from whatever page the form leaves them on (the Tutor dashboard, the homepage, anywhere). It does not depend on the form honouring `redirect_to`. Switch this off with `define( 'EF_PRACTICE_AUTO_RETURN', false );` in `wp-config.php`; a "Back to your practice" bar then appears instead.
+4. In the app they confirm their name (their real name is suggested, or a nickname), and a **welcome message** says what moved over ("We moved your guest results over: 34 tasks and 312 XP"). The results, streak, level, tenses and the guest's avatar all move to the new account. Nothing is lost.
+5. Administrators and instructors are never redirected, and the marker is used up after one return.
+
+**Limits.** The move works when the guest registers in the **same browser** (the app recognises them by its login cookie). Registering on another device starts a fresh account. On an iPhone, an app added to the home screen keeps its own cookies, separate from Safari, so a guest who practised in the home-screen icon but registered in Safari would not be merged (the earlier "sign in with a code" idea would fix this; not built). The marker needs the app and website on the same domain (`practice.englishfever.com` and `englishfever.com`), or the same host, and `site_url` set in `config.php`.
+
+## People who only want to practise grammar
+
+They are first-class users. As a guest they can practise without ever visiting the website. To keep their results they need a website account, because that is the one place passwords and e-mail live, which keeps the app free of passwords. After registering, the return trip above puts them straight back, and they stay signed in for **90 days after their last visit** on that device (the sign-in renews daily). The website is only seen again when they sign in on a new device or after 90 days away; the login page then returns them to the app.
+
+If many learners turn out to want only the app, there are two upgrades: a shorter registration form for people coming from the app, or signing in inside the app with an e-mail code (sent through the website, so the app still stores no passwords). Look at the numbers after the first weeks of testing before building either.
+
+## Avatars
+
+Learners choose an avatar instead of a photo: a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) in one of six colours, in **Profile → Your avatar**, or keep a monogram (their first initial). It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "symbol-colour" values.
+
 ## Using it like an app on a phone
 
 The practice app is an **installable web app (PWA)**. Students can put it on the home screen of an iPhone or Android phone: it gets the EF icon, opens full screen without browser bars, and updates the moment you upload a new zip. It costs nothing and needs no app store.

@@ -9,7 +9,9 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Link back to englishfever.com (`site_url` in `config.php`) in the top bar and footer.
 - Installable on iPhone and Android (home screen icon, full screen, offline message): manifest, icons, service worker, install hint on phones and in Profile. Guest chip and brand fit small phones.
 - **Security hardening** (see SECURITY.md): answers in a `.php` file, bot trap and rate limits for guests and scripted answers, teacher access expires after 24 h without a website login, teacher can hide/rename names, HSTS, strict sessions, `object-src 'none'`.
-- **Plugin 1.2.0** (upload it too): the guest-friendly `?ef_practice=open` link for menus and the homepage, `[ef_practice_banner]` homepage block (English and Latvian), button now uses the open link.
+- **Guest to registered, the return trip:** `register.php` marker + **plugin 1.3.0** sends new registrants straight back into the app; one-time welcome message with what moved over; sign-in lasts 90 days after the last visit.
+- **Avatars** (symbol + colour, no photos) in the top bar, home, leaderboard and teacher pages; guest avatars move with the guest.
+- **Plugin 1.3.0** (includes 1.2.0; upload it too): the guest-friendly `?ef_practice=open` link for menus and the homepage, `[ef_practice_banner]` homepage block (English and Latvian), button now uses the open link.
 
 ## Practice time and results on the website (plugin 1.1.0 + app)
 - Practice time goes into "My activity" (needs `wp_sync_url` in `config.php` and plugin 1.1.0); `[ef_practice_results]` card; consent respected; teacher status line; `bin/sync-wp.php` for cron.

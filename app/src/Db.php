@@ -117,6 +117,7 @@ final class Db
                 track_time $int NOT NULL DEFAULT 1,
                 sso_at $big NOT NULL DEFAULT 0,
                 board_hidden $int NOT NULL DEFAULT 0,
+                avatar $str NULL,
                 created_at $big NOT NULL,
                 last_seen $big NOT NULL DEFAULT 0
             )$tail",
@@ -194,6 +195,7 @@ final class Db
         self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before these columns existed
         self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
+        self::ensureColumn('users', 'avatar', "$str NULL");
         $indexes = [
             ['users', 'ux_users_nick', 'nickname_key', true],
             ['users', 'ix_users_ext', 'provider, external_id', false],

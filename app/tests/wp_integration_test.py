@@ -232,6 +232,44 @@ check("tracker has exactly one practice row for the student", sql(f"SELECT COUNT
 g = Br(); g.api("guest", {"t": 5000, "nickname": "Gast"}); g.api("heartbeat", {"seconds": 15}); practise(g, 4); time.sleep(1)
 check("guests produce no tracker rows", sql("SELECT COUNT(*) FROM wp_ef_aktivitate WHERE label LIKE 'Grammar practice%'")[0][0] == "1")
 
+# 8b. guest -> registers on the website -> straight back into the app, results moved
+wpcli("user", "delete", "newbie", "--yes")
+guest = Br(); guest.api("guest", {"nickname": "Soon registered", "t": 5000}); guest.api("account/profile", {"avatar": "leaf-gold"}); practise(guest, 5); time.sleep(1)
+before = guest.api("dashboard")["totals"]
+s_, _, h_ = guest.req(APP + "/register.php")
+check("register.php: marker set and sent to the registration form", s_ == 302 and "ef_return" in " ".join(v for k, v in h_.items() if k.lower() == "set-cookie"), (s_, h_.get("Location")))
+wpcli("user", "create", "newbie", "newbie@example.com", "--role=subscriber", "--user_pass=pass1234", "--display_name=New Bie")
+# the registration form leaves the new user on some page of the website, logged in; the marker travels with the browser
+guest.req(WP + "/wp-login.php")
+guest.cj.set_cookie(http.cookiejar.Cookie(0, "wordpress_test_cookie", "WP Cookie check", None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
+guest.req(WP + "/wp-login.php", urllib.parse.urlencode({"log": "newbie", "pwd": "pass1234", "wp-submit": "Log In", "testcookie": "1"}).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+s1, _, h1 = guest.req(WP + "/results/")
+check("after registering, any page sends them back into the app", s1 == 302 and "ef_practice=open" in (h1.get("Location") or ""), (s1, h1.get("Location")))
+s2, _, h2 = guest.req(urllib.parse.urljoin(WP + "/results/", h1.get("Location")))
+check("...and the app signs them in", s2 == 302 and "sso.php?token=" in (h2.get("Location") or ""), (s2, h2.get("Location")))
+guest.req(h2.get("Location"))
+me = guest.api("me")
+check("the guest is now a registered student, with a welcome message", me["user"]["provider"] == "wp" and me.get("welcome") and me["welcome"]["answers"] == before["answers"], me)
+check("the welcome message is shown only once", guest.api("me").get("welcome") is None)
+after = guest.api("dashboard")["totals"]
+check("all guest results are in the new account", after["answers"] == before["answers"] and after["xp"] == before["xp"], (before, after))
+check("the guest's avatar came along", me["user"]["avatar"] == "leaf-gold", me["user"].get("avatar"))
+s3, _, h3 = guest.req(WP + "/results/")
+check("the marker is used up (no second redirect)", s3 == 200, s3)
+
+# banner instead of redirect when the automatic return is switched off
+wpcli("config", "set", "EF_PRACTICE_AUTO_RETURN", "false", "--raw", "--type=constant"); time.sleep(3)  # opcache re-reads wp-config after up to 2 s
+g2 = Br(); g2.api("guest", {"nickname": "Banner path", "t": 5000}); g2.req(APP + "/register.php")
+wpcli("user", "delete", "newbie2", "--yes"); wpcli("user", "create", "newbie2", "newbie2@example.com", "--role=subscriber", "--user_pass=pass1234")
+g2.req(WP + "/wp-login.php"); g2.cj.set_cookie(http.cookiejar.Cookie(0, "wordpress_test_cookie", "WP Cookie check", None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
+g2.req(WP + "/wp-login.php", urllib.parse.urlencode({"log": "newbie2", "pwd": "pass1234", "wp-submit": "Log In", "testcookie": "1"}).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+s4, page4, _ = g2.req(WP + "/results/")
+check("auto-return off: a 'Back to your practice' bar is shown instead", s4 == 200 and "Back to your practice" in page4 and "ef_practice=open" in page4, s4)
+wpcli("config", "delete", "EF_PRACTICE_AUTO_RETURN", "--type=constant"); time.sleep(3)
+# administrators are never redirected
+adm = wp_login("admin"); adm.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time())), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
+check("an administrator with the marker is not redirected", adm.req(WP + "/results/")[0] == 200)
+
 # 9. the summary endpoint is private
 s, b, _ = Br().req(APP + f"/api.php?r=wp/summary&uid={maria}")
 check("summary without a signature refused", s == 403, s)

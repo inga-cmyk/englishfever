@@ -54,7 +54,9 @@ for d in ["src", "content", "config", "var", "bin"]:
 check("answers are in a .php file that prints nothing when requested", open(os.path.join(APP, "content", "items.php")).read().startswith("<?php"))
 s, body, h = C().raw("/content/items.php"); check("requesting the answer file shows no answers", "correct" not in body and '"why"' not in body, body[:80])
 js = open(os.path.join(APP, "assets", "app.js")).read() + open(os.path.join(APP, "assets", "ui.js")).read()
-check("no eval / document.write / innerHTML with data in the app code", not re.search(r"eval\(|document\.write|new Function|insertAdjacentHTML", js) and js.count("innerHTML") == 1)
+inner = [l.strip() for l in js.splitlines() if "innerHTML" in l]
+check("no eval / document.write in the app code", not re.search(r"eval\(|document\.write|new Function|insertAdjacentHTML", js))
+check("innerHTML is only used for the built-in icon and avatar shapes (fixed strings)", len(inner) == 2 and all(re.match(r"(s|grp)\.innerHTML = (ICONS\[name\] \|\| ''|g);", l) for l in inner), inner)
 check("no third-party hosts in the app code", not re.search(r"https?://(?!127\.0\.0\.1|www\.w3\.org)", js), re.findall(r"https?://[^'\" )]+", js)[:3])
 
 # ---- 2. API basics
@@ -138,6 +140,28 @@ check("teacher can hide a name", tc.api("teacher/moderate", {"user_id": bid, "hi
 check("teacher can reset a name", tc.api("teacher/moderate", {"user_id": bid, "reset_name": True})["_status"] == 200 and bad.api("me")["user"]["nickname"].startswith("Learner "))
 check("teacher can show the learner again", tc.api("teacher/moderate", {"user_id": bid, "hide": False})["_status"] == 200)
 check("moderation of a missing learner is a clean 404", tc.api("teacher/moderate", {"user_id": 999999, "hide": True})["_status"] == 404)
+
+# ---- 7b. avatars: a fixed list, nothing else
+av = C(); av.guest("Avatar fan")
+check("a valid avatar is saved", av.api("account/profile", {"avatar": "comet-plum"})["user"]["avatar"] == "comet-plum")
+for bad_av in ['flame-raspberry"><script>alert(1)</script>', "../../etc/passwd", "flame", "flame-neon", "nope-gold", "<svg onload=alert(1)>", "a" * 300, "flame-raspberry-x"]:
+    check(f"hostile avatar refused: {bad_av[:24]!r}", av.api("account/profile", {"avatar": bad_av})["_status"] == 400)
+check("the avatar is unchanged after the attempts", av.api("me")["user"]["avatar"] == "comet-plum")
+check("the avatar can be cleared (back to the initial)", av.api("account/profile", {"avatar": None})["user"]["avatar"] is None)
+av.api("account/profile", {"avatar": "spark-gold"})
+check("a guest's avatar shows to the teacher", any(x["avatar"] == "spark-gold" for x in tc.api("teacher/students")["students"]))
+rw = C(); sso(rw, 9500 + int(time.time()) % 90, "Avatar Reg"); rw.api("account/profile", {"nickname": "Avatar Reg", "show_on_board": True, "avatar": "sun-ink"})
+pr = rw.api("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 5}); it = pr["item"]
+rw.api("session/answer", {"session_id": pr["session"]["id"], "item_id": it["id"], "answer": correct(ITEMS[it["id"]]), "time_ms": 3000})
+check("the avatar shows on the leaderboard", any(x["nickname"] == "Avatar Reg" and x["avatar"] == "sun-ink" for x in rw.api("leaderboard", period="all")["rows"]))
+
+# ---- 7c. the 'Create account' step and long sign-in
+s_, _, hh = C().raw("/register.php")
+loc = hh.get("Location") or ""; ck = " ".join(v for k, v in hh.items() if k.lower() == "set-cookie")
+check("register.php sends people to the website's form", s_ == 302 and loc.startswith("http"), (s_, loc))
+check("register.php leaves a short-lived marker", "ef_return=" in ck and "HttpOnly" in ck and ("Max-Age" in ck or "expires" in ck.lower()), ck)
+m_ = re.search(r"Max-Age=(\d+)", " ".join(v for k, v in C().guest("Long sign in")["_headers"].items() if k.lower() == "set-cookie"))
+check("people stay signed in for about 90 days", m_ and 85 * 86400 <= int(m_.group(1)) <= 91 * 86400, m_.group(1) if m_ else None)
 
 # ---- 8. the CSV cannot carry a spreadsheet formula
 fx = C(); sso(fx, 9300 + int(time.time()) % 90, "=HYPERLINK(\"http://evil\",\"x\")"); fx.api("account/profile", {"nickname": "Formula Fan", "show_on_board": False})

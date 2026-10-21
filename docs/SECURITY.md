@@ -14,6 +14,7 @@ No more than any website. The app is a web page that runs inside the browser's s
 - **Bots and abuse:** guests need an unfilled hidden field and a form that took longer than 1.2 s; 100 new guests per hour per connection; 3,000 per day in total; 150 new practice sessions per hour per connection; more than 45 answers in a minute is refused (scripts); a guest's daily limit (600 answers) points to registering.
 - **Teachers:** the teacher role only comes from the website's signed link and expires after 24 hours without a new website login, so a teacher whose role you remove loses access within a day. Teachers can hide a name from the leaderboard or replace it with "Learner ####".
 - **No way for users to reach each other:** there is no chat, comments or public profile. The only visible names are on the leaderboard (registered learners only, opt-out in Profile). Guests are never shown to other learners.
+- **Avatars are a fixed list** (symbol and colour); there are no photo uploads, so no image files to attack or moderate.
 - **Data kept small:** guest data is deleted after 60 days without a visit; learners can download or delete their results; the CSV export neutralises spreadsheet formulas.
 - **Tested:** `app/tests/security_test.py` (injection, bots, sessions, teacher expiry, moderation), the browser check for script injection, the website-login tests, and the grader tests.
 

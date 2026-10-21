@@ -79,6 +79,7 @@ final class Auth
             'guest' => $u['provider'] === 'guest',
             'show_on_board' => (bool) $u['show_on_board'], 'nick_set' => (bool) $u['nick_set'],
             'track_time' => (int) ($u['track_time'] ?? 1) === 1,
+            'avatar' => $u['avatar'] ?? null,
         ];
     }
 
@@ -119,11 +120,25 @@ final class Auth
         return Db::one('SELECT * FROM users WHERE id = ?', [$id]);
     }
 
-    /** Move everything a guest did into a registered account, then remove the guest. */
-    public static function mergeGuest(int $guestId, int $toId): void
+    public const AVATAR_GLYPHS = ['flame', 'spark', 'bolt', 'sun', 'thermo', 'wave', 'comet', 'leaf'];
+    public const AVATAR_COLORS = ['raspberry', 'gold', 'ink', 'cream', 'plum', 'sand'];
+
+    /** Avatars are a fixed list (glyph-colour). Nobody can upload a picture or inject markup. */
+    public static function validAvatar(?string $a): ?string
     {
-        $g = Db::one('SELECT id, provider FROM users WHERE id = ?', [$guestId]);
-        if (!$g || $g['provider'] !== 'guest' || $guestId === $toId) return;
+        if ($a === null || $a === '') return null;
+        $p = explode('-', $a);
+        if (count($p) !== 2 || !in_array($p[0], self::AVATAR_GLYPHS, true) || !in_array($p[1], self::AVATAR_COLORS, true)) throw new ApiError('Please choose one of the avatars.', 400);
+        return $a;
+    }
+
+    /** Move everything a guest did into a registered account, then remove the guest. Returns what moved. */
+    public static function mergeGuest(int $guestId, int $toId): ?array
+    {
+        $g = Db::one('SELECT id, provider, avatar FROM users WHERE id = ?', [$guestId]);
+        if (!$g || $g['provider'] !== 'guest' || $guestId === $toId) return null;
+        $moved = ['answers' => (int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ?', [$guestId]), 'xp' => (int) Db::val('SELECT COALESCE(SUM(xp),0) FROM activity WHERE user_id = ?', [$guestId])];
+        if ($g['avatar'] && !Db::val('SELECT avatar FROM users WHERE id = ?', [$toId])) Db::update('users', ['avatar' => $g['avatar']], 'id = ?', [$toId]);
         Db::q('UPDATE attempts SET user_id = ? WHERE user_id = ?', [$toId, $guestId]);
         Db::q('UPDATE psessions SET user_id = ? WHERE user_id = ?', [$toId, $guestId]);
         foreach (Db::all('SELECT * FROM skill_state WHERE user_id = ?', [$guestId]) as $r) {
@@ -147,6 +162,7 @@ final class Auth
         Db::q('DELETE FROM skill_state WHERE user_id = ?', [$guestId]);
         Db::q('DELETE FROM activity WHERE user_id = ?', [$guestId]);
         Db::q('DELETE FROM users WHERE id = ?', [$guestId]);
+        return $moved;
     }
 
     /** Guests who have not come back for 60 days are deleted together with their results. */
@@ -222,7 +238,10 @@ final class Auth
                 'role' => $role, 'nick_set' => $role === 'teacher' ? 1 : 0, 'track_time' => $track, 'sso_at' => time(), 'created_at' => time(), 'last_seen' => time(),
             ]);
         }
-        if ($guestId && $role === 'student') self::mergeGuest($guestId, $id);
+        if ($guestId && $role === 'student') {
+            $moved = self::mergeGuest($guestId, $id);
+            if ($moved && $moved['answers'] > 0) $_SESSION['welcome'] = $moved; // shown once, on the home page
+        }
         self::login($id);
         return Db::one('SELECT * FROM users WHERE id = ?', [$id]);
     }

@@ -142,14 +142,14 @@ final class Stats
             $where .= ' AND a.day >= ?';
             $p[] = self::weekStart();
         }
-        $rows = Db::all("SELECT u.id, u.nickname, SUM(a.xp) AS pts, SUM(a.seconds) AS secs
+        $rows = Db::all("SELECT u.id, u.nickname, u.avatar, SUM(a.xp) AS pts, SUM(a.seconds) AS secs
                          FROM activity a JOIN users u ON u.id = a.user_id
-                         WHERE $where GROUP BY u.id, u.nickname HAVING SUM(a.xp) > 0
+                         WHERE $where GROUP BY u.id, u.nickname, u.avatar HAVING SUM(a.xp) > 0
                          ORDER BY pts DESC, u.nickname ASC LIMIT 50", $p);
         $out = [];
         $me = null;
         foreach ($rows as $i => $r) {
-            $row = ['rank' => $i + 1, 'nickname' => $r['nickname'], 'xp' => (int) $r['pts'], 'minutes' => (int) round($r['secs'] / 60), 'me' => (int) $r['id'] === $uid];
+            $row = ['rank' => $i + 1, 'nickname' => $r['nickname'], 'avatar' => $r['avatar'], 'xp' => (int) $r['pts'], 'minutes' => (int) round($r['secs'] / 60), 'me' => (int) $r['id'] === $uid];
             if ($row['me']) $me = $row;
             if ($i < 20) $out[] = $row;
         }
@@ -166,7 +166,7 @@ final class Stats
 
     public static function teacherStudents(): array
     {
-        $users = Db::all("SELECT id, provider, nickname, full_name, created_at, last_seen FROM users WHERE role = 'student' ORDER BY nickname");
+        $users = Db::all("SELECT id, provider, nickname, avatar, full_name, created_at, last_seen FROM users WHERE role = 'student' ORDER BY nickname");
         $act = [];
         $weekStart = self::weekStart();
         foreach (Db::all('SELECT user_id, SUM(seconds) AS s, SUM(answers) AS a, SUM(xp) AS x FROM activity GROUP BY user_id') as $r) $act[$r['user_id']] = $r;
@@ -182,7 +182,7 @@ final class Stats
             $level = null;
             if (!empty($th[$id]) && $th[$id]['n'] >= 5) $level = Content::levelFromTheta($th[$id]['tn'] / $th[$id]['n']);
             $out[] = [
-                'id' => (int) $id, 'nickname' => $u['nickname'], 'full_name' => $u['full_name'], 'provider' => $u['provider'],
+                'id' => (int) $id, 'nickname' => $u['nickname'], 'avatar' => $u['avatar'], 'full_name' => $u['full_name'], 'provider' => $u['provider'],
                 'joined' => (int) $u['created_at'], 'last_seen' => (int) $u['last_seen'],
                 'week_minutes' => (int) round(($wk[$id]['s'] ?? 0) / 60), 'week_answers' => (int) ($wk[$id]['a'] ?? 0),
                 'total_minutes' => (int) round(($act[$id]['s'] ?? 0) / 60), 'total_answers' => (int) ($act[$id]['a'] ?? 0),
@@ -197,7 +197,7 @@ final class Stats
 
     public static function teacherStudent(int $id): array
     {
-        $u = Db::one("SELECT id, provider, nickname, full_name, created_at, last_seen, show_on_board, board_hidden FROM users WHERE id = ? AND role = 'student'", [$id]);
+        $u = Db::one("SELECT id, provider, nickname, avatar, full_name, created_at, last_seen, show_on_board, board_hidden FROM users WHERE id = ? AND role = 'student'", [$id]);
         if (!$u) throw new ApiError('Student not found.', 404);
         $dash = self::dashboard($id);
         $days = [];
@@ -221,7 +221,7 @@ final class Stats
             $sessions[] = ['mode' => $r['mode'], 'level' => $r['level'], 'n' => (int) $r['n'], 'correct' => (int) $r['n_correct'], 'xp' => (int) $r['xp'], 'at' => (int) $r['started_at']];
         }
         return [
-            'user' => ['id' => (int) $u['id'], 'nickname' => $u['nickname'], 'full_name' => $u['full_name'], 'provider' => $u['provider'],
+            'user' => ['id' => (int) $u['id'], 'nickname' => $u['nickname'], 'avatar' => $u['avatar'], 'full_name' => $u['full_name'], 'provider' => $u['provider'],
                 'joined' => (int) $u['created_at'], 'last_seen' => (int) $u['last_seen'], 'board_hidden' => (bool) $u['board_hidden']],
             'dashboard' => $dash, 'days' => $days, 'recent' => $recent, 'sessions' => $sessions,
         ];

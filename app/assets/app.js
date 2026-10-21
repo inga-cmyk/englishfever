@@ -64,7 +64,7 @@
   function boot() {
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
     Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
-      state.config = r[0]; state.meta = r[1]; state.user = r[2].user;
+      state.config = r[0]; state.meta = r[1]; state.user = r[2].user; state.welcome = r[2].welcome || null;
       footer.replaceChildren(
         h('div', null, state.config.site_url ? h('span', null, h('a', { href: state.config.site_url }, '← englishfever.com'), ' · ') : null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · We store your nickname, scores and time spent. ',
           state.config.contact_email ? h('a', { href: 'mailto:' + state.config.contact_email }, state.config.contact_email) : null),
@@ -111,13 +111,14 @@
       return h('a', { href: i[0], 'aria-current': active === i[0] ? 'page' : null }, i[1]);
     }));
     var tabs = h('nav', { class: 'tabbar', 'aria-label': 'Main' }, items.map(function (i) {
-      return h('a', { href: i[0], 'aria-current': active === i[0] ? 'page' : null }, icon(i[2]), i[1]);
+      return h('a', { href: i[0], 'aria-current': active === i[0] ? 'page' : null }, i[2] === 'user' ? UI.avatar(state.user.avatar, state.user.nickname, 24) : icon(i[2]), i[1]);
     }));
     var chips = h('div', { class: 'chips', id: 'chips' });
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
       h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
       nav, h('div', { class: 'spacer' }),
-      state.config.site_url ? h('a', { class: 'sitelink', href: state.config.site_url }, 'englishfever.com ↗') : null, chips));
+      state.config.site_url ? h('a', { class: 'sitelink', href: state.config.site_url }, 'englishfever.com ↗') : null, chips,
+      h('a', { class: 'avatar-link', href: '#/profile', 'aria-label': 'Your profile' }, UI.avatar(state.user.avatar, state.user.nickname, 32))));
     chrome.replaceChildren(bar, tabs);
     renderChips();
   }
@@ -197,7 +198,7 @@
       card.push(h('h2', { style: 'text-align:center' }, 'Start practising'));
     }
     card.push(guestForm);
-    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', h('a', { href: cfg.register_url }, 'Create a free account')));
+    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', h('a', { href: 'register.php' }, 'Create a free account')));
 
     show(h('div', null,
       h('section', { class: 'hero' },
@@ -225,7 +226,7 @@
       h('p', null, 'You are practising as a guest. If you clear your browser or use another device, your results are lost. With a free account you keep your results, streak and level, and you can join the leaderboard.'),
       h('p', { class: 'small muted' }, 'Everything you did as a guest moves to your new account. After you register, come back to this page and press “Continue with my account”.'),
       h('div', { class: 'row' },
-        cfg.register_url ? h('a', { class: 'btn', href: cfg.register_url }, 'Create free account') : null,
+        cfg.register_url ? h('a', { class: 'btn', href: 'register.php' }, 'Create free account') : null,
         cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost' : 'btn', href: cfg.wp_login_url }, 'I already have an account') : null,
         h('button', { class: 'linkbtn', id: 'later' }, 'Not now'))));
     m.el.querySelector('#later').onclick = m.close;
@@ -237,7 +238,7 @@
       h('div', null, h('b', { style: 'color:var(--text)' }, 'You are practising as a guest'),
         h('div', { class: 'small muted' }, 'Create a free account to keep your results and join the leaderboard.')),
       h('div', { class: 'row' },
-        cfg.register_url ? h('a', { class: 'btn small', href: cfg.register_url }, 'Create account') : null,
+        cfg.register_url ? h('a', { class: 'btn small', href: 'register.php' }, 'Create account') : null,
         cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost small' : 'btn small', href: cfg.wp_login_url }, 'Sign in') : null));
   }
 
@@ -248,8 +249,15 @@
       var d = r[0], resume = r[1].resume;
       var nodes = [];
       if (state.user.guest) nodes.push(guestBanner());
+      if (state.welcome) {
+        var wl = state.welcome;
+        nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--good)' },
+          h('div', null, h('b', { style: 'color:var(--text)' }, 'Welcome to your account!'),
+            h('div', { class: 'small muted' }, 'We moved your guest results over: ' + wl.answers + ' tasks and ' + wl.xp + ' XP. Your streak, level and tenses are all here now.')),
+          h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
+      }
       nodes.push(h('div', { class: 'hello' },
-        h('div', null, h('div', { class: 'label' }, 'Welcome back'), h('h1', { style: 'margin:0' }, state.user.nickname)),
+        h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Welcome back'), h('h1', { style: 'margin:0' }, state.user.nickname))),
         h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.'))));
 
       if (resume) {
@@ -657,7 +665,7 @@
         var rows = r.rows;
         var list = rows.length ? h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, rows.map(function (x) {
           return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, h('div', { class: 'lb-rank' + (x.rank <= 3 ? ' top' : '') }, String(x.rank)),
-            h('div', { class: 'lb-name' }, x.nickname, x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
+            h('div', { class: 'lb-name' }, UI.avatar(x.avatar, x.nickname, 30), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
             h('div', { class: 'small muted num' }, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
         })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
         holder.replaceChildren(
@@ -665,7 +673,7 @@
           list,
           (r.me && r.me.rank > 20) ? h('div', { class: 'card pad-s', style: 'margin-top:12px' }, 'Your rank: ', h('b', { style: 'color:var(--text)' }, '#' + r.me.rank), ' · ' + r.me.xp + ' XP') : null,
           r.guest ? h('div', { class: 'card pad-s', style: 'margin-top:12px;border-color:var(--gold)' }, h('b', { style: 'color:var(--text)' }, 'Guests are not on the leaderboard.'), ' Create a free account to join it and keep your results. ',
-            state.config.register_url ? h('a', { href: state.config.register_url }, 'Create account') : null)
+            state.config.register_url ? h('a', { href: 'register.php' }, 'Create account') : null)
           : (r.hidden ? h('p', { class: 'small muted', style: 'margin-top:12px' }, state.user.role === 'teacher' ? 'Teachers are not shown on the leaderboard.' : 'You are hidden from the leaderboard. You can change this in your profile.') : null));
       }).catch(fail);
     }
@@ -694,6 +702,7 @@
 
     var cards = [];
     if (guest) cards.push(guestBanner());
+    cards.push(avatarCard());
     var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
     if (!guest) cards.push(h('div', { class: 'card' }, h('h2', null, 'Sign-in'), h('p', null, 'You signed in with your englishfever.com account. Manage your password on the website.')));
@@ -711,6 +720,36 @@
       api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
     } }, icon('logout'), guest ? 'Leave guest session' : 'Sign out')));
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
+  }
+
+  /** Pick an avatar instead of a photo: a glyph and a colour from a fixed set. */
+  function avatarCard() {
+    var u = state.user, cur = (u.avatar || '').split('-');
+    var pick = { glyph: cur[0] || 'flame', color: cur[1] || 'raspberry' };
+    var preview = h('div', { style: 'flex:none' }), glyphs = h('div', { class: 'avgrid', role: 'radiogroup', 'aria-label': 'Symbol' }), colors = h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Colour' });
+    var msg = h('div');
+    function spec() { return pick.glyph + '-' + pick.color; }
+    function draw() {
+      preview.replaceChildren(UI.avatar(spec(), u.nickname, 76));
+      glyphs.replaceChildren.apply(glyphs, UI.AV_GLYPHS.map(function (g) {
+        return h('button', { type: 'button', class: 'avopt', role: 'radio', 'aria-checked': String(g === pick.glyph), 'aria-label': UI.AV_NAMES[g], onclick: function () { pick.glyph = g; draw(); } }, UI.avatar(g + '-' + pick.color, u.nickname, 44));
+      }));
+      colors.replaceChildren.apply(colors, UI.AV_COLORS.map(function (c) {
+        return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; draw(); } });
+      }));
+    }
+    function save(avatar) {
+      msg.replaceChildren();
+      api('account/profile', { avatar: avatar }).then(function (r) {
+        state.user = r.user; renderChrome('#/profile'); msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Avatar saved.'));
+        if (!avatar) { pick.glyph = 'flame'; pick.color = 'raspberry'; draw(); }
+      }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    }
+    draw();
+    return h('div', { class: 'card' }, h('h2', null, 'Your avatar'), h('p', { class: 'small muted' }, 'Pick a symbol and a colour. It shows next to your name. No photo needed.'),
+      h('div', { class: 'row', style: 'gap:18px;align-items:flex-start;flex-wrap:wrap' }, preview, h('div', { style: 'flex:1 1 260px' }, glyphs, h('div', { style: 'height:12px' }), colors)),
+      msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn small', onclick: function () { save(spec()); } }, 'Save avatar'),
+        h('button', { class: 'btn ghost small', onclick: function () { save(null); } }, 'Use my initial instead')));
   }
 
   function deleteAccount() {
@@ -767,7 +806,7 @@
         });
         tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
           return h('tr', null,
-            h('td', { class: 'name' }, h('a', { href: '#/teacher/student/' + s.id }, s.nickname), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null),
+            h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null),
             h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, '–')),
             h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
             h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),
@@ -813,7 +852,7 @@
       var rep = d.placement && d.placement.report;
       show(h('div', null,
         h('a', { href: '#/teacher', class: 'small' }, '← All students'),
-        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen))), moder),
+        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(u.avatar, u.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen)))), moder),
         h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('clock', UI.fmtDuration(d.totals.seconds), 'time practised'), stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct (' + d.totals.answers + ' tasks)'), stat('flame', d.streak.current + ' / ' + d.streak.best, 'streak (best)'), stat('bolt', d.totals.xp, 'XP')),
         h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
           h('div', { class: 'card' }, h('h2', null, 'Last 30 days'), days, h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Each bar is one day (minutes practised).')),

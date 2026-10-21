@@ -300,3 +300,18 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
   .topbar-in { gap: 10px; padding: 0 12px; }
   .chip-top { padding: 5px 9px; font-size: .82rem; }
 }
+
+/* avatars */
+.avatar { display: block; flex: none; border-radius: 50%; }
+.avatar-link { display: flex; align-items: center; margin-left: 4px; border-radius: 50%; }
+.avatar-link:hover .avatar { box-shadow: 0 0 0 2px var(--gold); }
+.lb-name { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.lb-text { overflow: hidden; text-overflow: ellipsis; }
+.avgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 280px; }
+.avopt { background: none; border: 2px solid transparent; border-radius: 50%; padding: 2px; cursor: pointer; display: grid; place-items: center; }
+.avopt[aria-checked="true"] { border-color: var(--btn); }
+.avopt:hover { border-color: var(--gold-deep); }
+.avcolors { display: flex; gap: 10px; flex-wrap: wrap; }
+.avcolor { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--line); cursor: pointer; padding: 0; }
+.avcolor[aria-checked="true"] { outline: 3px solid var(--btn); outline-offset: 2px; }
+@media (max-width: 560px) { .avatar-link { display: none; } }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.2.0
+ * Version:     1.3.0
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -15,6 +15,12 @@
  *                                           Visitors go to the app's welcome page, where they can start as guests.
  *                                           USE THIS ONE in menus and on the homepage.
  *     https://YOUR-SITE/?ef_practice=go     Always asks for the website login first (used by the app's "Continue with my account").
+ *
+ * After registering: when someone clicks "Create a free account" in the app, the app leaves a short marker (cookie
+ * ef_return, 30 minutes) and sends them to your registration form. As soon as they are registered and logged in,
+ * this plugin sends them back into the app (whatever page the form leaves them on), and the app moves their guest
+ * results into the new account. Switch the automatic return off with  define( 'EF_PRACTICE_AUTO_RETURN', false );
+ * to show a "Back to your practice" bar instead.
  *
  * Optional, to send people who are not logged in to your own login page instead of wp-login.php:
  *     define( 'EF_PRACTICE_LOGIN_URL', 'https://englishfever.com/your-login-page/' );
@@ -73,6 +79,7 @@ add_action( 'template_redirect', function () {
 		wp_die( esc_html__( 'The practice app is not set up yet.', 'ef-practice' ), '', array( 'response' => 503 ) );
 	}
 	nocache_headers();
+	ef_practice_clear_return();
 	// wp_safe_redirect would block the other host, so allow exactly the configured one.
 	add_filter( 'allowed_redirect_hosts', function ( $hosts ) {
 		$hosts[] = wp_parse_url( EF_PRACTICE_URL, PHP_URL_HOST );
@@ -94,6 +101,64 @@ add_action( 'template_redirect', function () {
 	wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) ) );
 	exit;
 } );
+
+/* ───────── back into the app after registering ───────── */
+
+function ef_practice_clear_return() {
+	if ( ! isset( $_COOKIE['ef_return'] ) ) {
+		return;
+	}
+	$host = (string) wp_parse_url( home_url(), PHP_URL_HOST );
+	$base = array( 'expires' => time() - 3600, 'path' => '/', 'secure' => is_ssl(), 'httponly' => true, 'samesite' => 'Lax' );
+	foreach ( array_unique( array( '', $host, preg_replace( '/^www\./', '', $host ) ) ) as $domain ) {
+		setcookie( 'ef_return', '', $base + array( 'domain' => $domain ) );
+	}
+	unset( $_COOKIE['ef_return'] );
+}
+
+/** True for a normal logged-in student page view that came from the app within the last 30 minutes. */
+function ef_practice_came_from_app() {
+	if ( empty( $_COOKIE['ef_return'] ) || ! ef_practice_configured() || ! is_user_logged_in() ) {
+		return false;
+	}
+	if ( is_admin() || wp_doing_ajax() || wp_doing_cron() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) || 'GET' !== ( $_SERVER['REQUEST_METHOD'] ?? '' ) ) {
+		return false;
+	}
+	$t = (int) $_COOKIE['ef_return'];
+	if ( $t <= 0 || time() - $t > 1800 ) {
+		ef_practice_clear_return();
+		return false;
+	}
+	if ( ! ef_practice_is_tracked_student( get_current_user_id() ) ) {
+		ef_practice_clear_return();
+		return false;
+	}
+	return true;
+}
+
+add_action( 'template_redirect', function () {
+	if ( isset( $_GET['ef_practice'] ) || ! ef_practice_came_from_app() ) {
+		return;
+	}
+	if ( defined( 'EF_PRACTICE_AUTO_RETURN' ) && ! EF_PRACTICE_AUTO_RETURN ) {
+		return; // the bar below is shown instead
+	}
+	nocache_headers();
+	ef_practice_clear_return();
+	$here = ( is_ssl() ? 'https://' : 'http://' ) . wp_unslash( $_SERVER['HTTP_HOST'] ?? '' ) . wp_unslash( $_SERVER['REQUEST_URI'] ?? '/' );
+	wp_safe_redirect( add_query_arg( 'ef_practice', 'open', esc_url_raw( $here ) ) ); // the current page + ?ef_practice=open
+	exit;
+}, 6 );
+
+add_action( 'wp_footer', function () {
+	if ( ! ( defined( 'EF_PRACTICE_AUTO_RETURN' ) && ! EF_PRACTICE_AUTO_RETURN ) || ! ef_practice_came_from_app() ) {
+		return;
+	}
+	$bar = 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#020101;color:#E9E5DA;padding:14px 18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;font-size:16px;';
+	$btn = 'background:#D82C5E;color:#fff;padding:10px 22px;border-radius:999px;font-weight:600;text-decoration:none;';
+	echo '<div id="ef-return-bar" style="' . esc_attr( $bar ) . '"><span>Your account is ready. Your practice results are waiting.</span>'
+		. '<a href="' . esc_url( ef_practice_link( 'open' ) ) . '" style="' . esc_attr( $btn ) . '">Back to your practice</a></div>';
+}, 99 );
 
 /** The link for the current page, in the "open" mode (works on any front-end page). */
 function ef_practice_link( $mode = 'open' ) {

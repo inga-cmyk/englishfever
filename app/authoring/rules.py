@@ -1,0 +1,125 @@
+"""Short rule cards (easy English). One per skill. Shown after a wrong answer and in the tense picker."""
+
+SKILLS = [
+    # id, label, voice, levels, group
+    ("present_simple", "Present simple", "active", ["A2.1", "A2.2", "B1.1"]),
+    ("present_continuous", "Present continuous", "active", ["A2.1", "A2.2", "B1.1"]),
+    ("past_simple", "Past simple", "active", ["A2.1", "A2.2", "B1.1", "B1.2"]),
+    ("past_continuous", "Past continuous", "active", ["A2.2", "B1.1", "B1.2"]),
+    ("present_perfect", "Present perfect", "active", ["A2.2", "B1.1", "B1.2"]),
+    ("present_perfect_continuous", "Present perfect continuous", "active", ["B1.1", "B1.2"]),
+    ("past_perfect", "Past perfect", "active", ["B1.2"]),
+    ("future", "Future: will, going to, present continuous", "active", ["A2.1", "A2.2", "B1.1", "B1.2"]),
+    ("present_simple_passive", "Present simple passive", "passive", ["A2.2", "B1.1", "B1.2"]),
+    ("past_simple_passive", "Past simple passive", "passive", ["A2.2", "B1.1", "B1.2"]),
+    ("present_continuous_passive", "Present continuous passive", "passive", ["B1.2"]),
+    ("present_perfect_passive", "Present perfect passive", "passive", ["B1.1", "B1.2"]),
+    ("future_passive", "Future passive (will be done)", "passive", ["B1.1", "B1.2"]),
+]
+
+RULES = {
+    "present_simple": {
+        "form": ["I / you / we / they + base verb: I work.", "he / she / it + verb-s: She works.",
+                 "Negative: don't / doesn't + base verb.", "Question: Do / Does + subject + base verb?"],
+        "use": ["Habits and routines.", "Facts that are always true.", "Timetables (the train leaves at 7.45)."],
+        "signals": "always, usually, often, sometimes, never, every day",
+        "example": "She starts work at eight every day.",
+    },
+    "present_continuous": {
+        "form": ["am / is / are + verb-ing: I am working.", "Negative: am / is / are + not + verb-ing.",
+                 "Question: Am / Is / Are + subject + verb-ing?"],
+        "use": ["Actions happening now.", "Temporary situations.", "Changes in progress.", "Fixed plans for the future."],
+        "signals": "now, at the moment, today, this week, these days, tomorrow (for plans)",
+        "example": "I'm meeting Anna at five tomorrow.",
+    },
+    "past_simple": {
+        "form": ["Regular verbs: verb + -ed (worked).", "Irregular verbs: learn them (go - went, see - saw).",
+                 "Negative: didn't + base verb.", "Question: Did + subject + base verb?",
+                 "Past habits: used to + base verb."],
+        "use": ["Finished actions at a finished time.", "A series of actions in a story.", "Past habits and states (used to)."],
+        "signals": "yesterday, last week, in 2019, three days ago",
+        "example": "I went to the cinema yesterday.",
+    },
+    "past_continuous": {
+        "form": ["was / were + verb-ing: I was working.", "Negative: wasn't / weren't + verb-ing.",
+                 "Question: Was / Were + subject + verb-ing?", "Plan that did not happen: was / were going to + base verb."],
+        "use": ["An action in progress at a moment in the past.", "A longer action interrupted by a short action (past simple).",
+                "Background in a story."],
+        "signals": "at 8 o'clock yesterday, while, when, as",
+        "example": "I was cooking when the phone rang.",
+    },
+    "present_perfect": {
+        "form": ["have / has + past participle: I have seen it.", "Negative: haven't / hasn't + past participle.",
+                 "Question: Have / Has + subject + past participle?"],
+        "use": ["Life experience (no exact time).", "Something that started in the past and continues (for / since).",
+                "A past action with a result now.", "Recent news (just, already, yet)."],
+        "signals": "ever, never, just, already, yet, for, since, so far, this week",
+        "example": "I have lived here for ten years.",
+    },
+    "present_perfect_continuous": {
+        "form": ["have / has been + verb-ing: I have been working.", "Negative: haven't / hasn't been + verb-ing.",
+                 "Question: Have / Has + subject + been + verb-ing?"],
+        "use": ["An activity that started in the past and continues now.", "A recent activity that explains a present situation.",
+                "How long something has been happening."],
+        "signals": "for, since, all day, lately, recently, how long",
+        "example": "I've been studying English for two years.",
+    },
+    "past_perfect": {
+        "form": ["had + past participle: I had finished.", "Negative: hadn't + past participle.",
+                 "Question: Had + subject + past participle?"],
+        "use": ["The earlier of two past actions.", "A reason for something in the past."],
+        "signals": "before, after, by the time, already, when",
+        "example": "When we arrived, the film had already started.",
+    },
+    "future": {
+        "form": ["will + base verb: I will help you.", "going to: am / is / are going to + base verb.",
+                 "Present continuous: I'm meeting Anna at six.", "Present simple after when / if / as soon as."],
+        "use": ["will: quick decisions, offers, promises, predictions.", "going to: plans and predictions with evidence.",
+                "Present continuous: fixed arrangements.", "be about to: the very near future."],
+        "signals": "tomorrow, next week, soon, when, as soon as, if",
+        "example": "Look at the clouds! It's going to rain.",
+    },
+    "present_simple_passive": {
+        "form": ["am / is / are + past participle: English is spoken here.", "Negative: isn't / aren't + past participle.",
+                 "Question: Is / Are + subject + past participle?"],
+        "use": ["When the action or the object is more important than who does it.", "Processes, rules and notices."],
+        "signals": "often, every day, usually, in my country",
+        "example": "These cars are built in Germany.",
+    },
+    "past_simple_passive": {
+        "form": ["was / were + past participle: The book was written in 1990.", "Negative: wasn't / weren't + past participle.",
+                 "Question: Was / Were + subject + past participle?"],
+        "use": ["Past events when the doer is unknown or not important.", "History, news reports.", "by + doer when it is important."],
+        "signals": "yesterday, last year, in 1889, when",
+        "example": "My bike was stolen last night.",
+    },
+    "present_continuous_passive": {
+        "form": ["am / is / are being + past participle: The road is being repaired."],
+        "use": ["An action in progress now, when the doer is not important."],
+        "signals": "now, at the moment, right now",
+        "example": "Your order is being prepared.",
+    },
+    "present_perfect_passive": {
+        "form": ["has / have been + past participle: The email has been sent.",
+                 "Question: Has / Have + subject + been + past participle?"],
+        "use": ["Recent news or actions with a result now.", "Actions up to now (so far, already, yet)."],
+        "signals": "already, yet, just, so far, recently",
+        "example": "The problem has been solved.",
+    },
+    "future_passive": {
+        "form": ["will be + past participle: You will be told soon.", "Negative: won't be + past participle.",
+                 "Question: Will + subject + be + past participle?"],
+        "use": ["Future events when the doer is unknown or not important.", "Announcements and notices."],
+        "signals": "tomorrow, next week, soon, by Friday",
+        "example": "The results will be announced on Friday.",
+    },
+}
+
+BLOOM = {
+    1: ("Remember", "Recognise the correct form"),
+    2: ("Understand", "Explain the meaning and use"),
+    3: ("Apply", "Use the form in a sentence"),
+    4: ("Analyse", "Find and explain mistakes"),
+    5: ("Evaluate", "Judge and choose the best answer"),
+    6: ("Create", "Write your own sentence"),
+}

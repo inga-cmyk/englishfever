@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+"""Build the two files you upload:
+    dist/practice-app.zip      the practice app (upload to the subdomain folder on Hostinger)
+    dist/ef-practice-sso.zip   the WordPress plugin (Plugins > Add New > Upload)
+
+    python3 tools/package_practice_app.py
+Runs the content build and the grading test first, so a broken question bank is never packaged.
+"""
+import os, subprocess, sys, zipfile
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+APP = os.path.join(ROOT, "app")
+DIST = os.path.join(ROOT, "dist")
+
+subprocess.run([sys.executable, os.path.join(APP, "authoring", "build.py")], check=True, stdout=subprocess.DEVNULL)
+env = dict(os.environ, EF_DEV="1")
+subprocess.run(["php", os.path.join(APP, "tests", "grader_test.php")], check=True, env=env)
+
+EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git"}
+EXCLUDE_FILES = {"config/config.php", "config/config.local.php", "sso-demo.php", "README.md"}
+os.makedirs(DIST, exist_ok=True)
+out = os.path.join(DIST, "practice-app.zip")
+n = 0
+with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+    for base, dirs, files in os.walk(APP):
+        rel_base = os.path.relpath(base, APP)
+        dirs[:] = sorted(d for d in dirs if d not in EXCLUDE_DIRS)
+        if rel_base == "var":
+            dirs[:] = []
+        for f in sorted(files):
+            rel = os.path.normpath(os.path.join(rel_base, f))
+            if rel in EXCLUDE_FILES or f.endswith((".sqlite", ".sqlite-wal", ".sqlite-shm", ".pyc")):
+                continue
+            if rel_base == "var" and f not in (".htaccess",):
+                continue
+            z.write(os.path.join(base, f), rel)
+            n += 1
+    # an empty writable folder for PHP sessions, protected by .htaccess
+    z.writestr("var/sessions/.keep", "")
+print(f"{out}: {n} files")
+
+plug = os.path.join(DIST, "ef-practice-sso.zip")
+src = os.path.join(APP, "wp-plugin", "ef-practice-sso")
+with zipfile.ZipFile(plug, "w", zipfile.ZIP_DEFLATED) as z:
+    for f in sorted(os.listdir(src)):
+        z.write(os.path.join(src, f), os.path.join("ef-practice-sso", f))
+print(plug)

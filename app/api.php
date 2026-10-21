@@ -32,6 +32,7 @@ try {
                 'site_name' => Config::get('site_name', 'English Fever'),
                 'privacy_url' => Config::get('privacy_url', '#'),
                 'wp_login_url' => Config::get('wp_login_url', ''),
+                'register_url' => Config::get('register_url', ''),
                 'sso' => strlen((string) Config::get('sso_secret', '')) >= 32 && Config::get('sso_secret') !== 'CHANGE-ME',
                 'contact_email' => Config::get('contact_email', ''),
             ]);

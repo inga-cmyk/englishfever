@@ -149,7 +149,8 @@
           h('button', { role: 'tab', 'aria-selected': String(mode === 'login'), onclick: function () { mode = 'login'; draw(); } }, 'I already have one')),
         form(),
         state.config.sso ? h('div', null, h('div', { class: 'or' }, 'or'),
-          h('a', { class: 'btn ghost block', href: state.config.wp_login_url }, 'Sign in with englishfever.com')) : null);
+          h('a', { class: 'btn ghost block', href: state.config.wp_login_url }, 'Sign in with englishfever.com'),
+          state.config.register_url ? h('p', { class: 'small muted', style: 'text-align:center;margin:12px 0 0' }, 'New to englishfever.com? ', h('a', { href: state.config.register_url }, 'Create an account')) : null) : null);
     }
     draw();
     show(h('div', null,

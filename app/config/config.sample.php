@@ -20,6 +20,9 @@ return [
     // Where "Sign in with englishfever.com" sends people (the page that has the [ef_practice_button] shortcode).
     'wp_login_url' => 'https://www.englishfever.com/practice-login/',
 
+    // Optional: where people without an englishfever.com account can register (shown under the sign-in button).
+    'register_url' => 'https://englishfever.com/en/register/',
+
     // Shown in the footer and the privacy note.
     'site_name'   => 'English Fever',
     'privacy_url' => 'https://www.englishfever.com/privacy-policy/',

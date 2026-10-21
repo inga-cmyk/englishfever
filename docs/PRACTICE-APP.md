@@ -64,6 +64,7 @@ In `config/`, copy `config.sample.php` to `config.php` and edit it:
 - `sso_secret` → 64 random hex characters. Make one at any password generator, or run `php -r "echo bin2hex(random_bytes(32));"` over SSH. Keep a copy: the WordPress side needs the same value.
 - `wp_login_url` → the address of the WordPress page with the practice button (step 7)
 - `privacy_url` → your privacy policy page
+- `register_url` → optional, where people without a website account register (shown under the sign-in button), e.g. `https://englishfever.com/en/register/`
 - `contact_email` → optional, shown in the footer
 
 ### 6. Check that private files are private

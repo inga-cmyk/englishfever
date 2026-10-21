@@ -83,7 +83,8 @@ Then open the app's address. You should see the welcome page. Join with a test n
    define( 'EF_PRACTICE_URL',    'https://practice.englishfever.com' );
    define( 'EF_PRACTICE_SECRET', 'the same 64 hex characters as sso_secret' );
    ```
-3. Create a page "Practice" with the shortcode `[ef_practice_button label="Start practising"]`. Use its address as `wp_login_url` in the app config.
+3. Create a page `practice-login` with the shortcode `[ef_practice_button label="Start practising"]`. This page is only a bridge; learners never need to visit it. In the app's `config.php` set `'wp_login_url' => 'https://englishfever.com/practice-login/?ef_practice=go'`, so the app's "Sign in with englishfever.com" button goes straight through: logged-in users enter the app at once, others are sent to the login page.
+   Optional: to use your own login page instead of `wp-login.php`, add `define( 'EF_PRACTICE_LOGIN_URL', 'https://englishfever.com/your-login-page/' );` to `wp-config.php`.
 4. Test with a student account: click the button → you land in the app, choose a nickname, done. The second time, you go straight in.
 
 What the website shares with the app: the WordPress user ID, display name, and whether the user is a teacher. No email, no password. The link works once and expires after 2 minutes.
@@ -91,7 +92,7 @@ What the website shares with the app: the WordPress user ID, display name, and w
 **Who becomes a teacher:** WordPress administrators and Tutor LMS instructors, automatically, each time they sign in through the website. So you and your colleague need nothing else if your colleague has the instructor role. For a nickname-based teacher, over SSH or the hPanel terminal: `php bin/make-teacher.php nickname password`.
 
 ### 8. Tell learners
-Put the button page in your menu or in the course. Learners who are not Tutor users can still join with a nickname on the app's own page.
+Give learners the app's address (`https://practice.englishfever.com`) for your menu or the course, not the bridge page. Learners who are not Tutor users can still join with a nickname on the app's own page.
 
 ## Teacher guide
 

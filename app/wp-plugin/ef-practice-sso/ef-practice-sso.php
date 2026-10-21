@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again. Adds the [ef_practice_button] shortcode.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -10,7 +10,12 @@
  *     define( 'EF_PRACTICE_URL',    'https://practice.englishfever.com' );   // where the app lives, no trailing slash
  *     define( 'EF_PRACTICE_SECRET', '64 random hex characters, the same as sso_secret in the app config' );
  *
- * Then put [ef_practice_button] on a page, for example "Practice". Use that page's address as wp_login_url in the app config.
+ * Optional, to send people who are not logged in to your own login page instead of wp-login.php:
+ *     define( 'EF_PRACTICE_LOGIN_URL', 'https://englishfever.com/your-login-page/' );
+ *
+ * Then create a page "practice-login" with the shortcode [ef_practice_button]. In the app config, set
+ *     'wp_login_url' => 'https://englishfever.com/practice-login/?ef_practice=go'
+ * so the app's "Sign in with englishfever.com" button goes straight through (the page itself is never shown).
  *
  * What is sent to the app: your WordPress user ID, display name, and whether the user is a teacher
  * (administrator or Tutor LMS instructor). No email address, no password. The link works once and expires after 2 minutes.
@@ -52,7 +57,11 @@ add_action( 'template_redirect', function () {
 	}
 	if ( ! is_user_logged_in() ) {
 		$back = add_query_arg( 'ef_practice', 'go', is_singular() ? get_permalink() : home_url( '/' ) );
-		wp_safe_redirect( wp_login_url( $back ) );
+		if ( defined( 'EF_PRACTICE_LOGIN_URL' ) && EF_PRACTICE_LOGIN_URL ) {
+			wp_safe_redirect( add_query_arg( 'redirect_to', rawurlencode( $back ), EF_PRACTICE_LOGIN_URL ) );
+		} else {
+			wp_safe_redirect( wp_login_url( $back ) );
+		}
 		exit;
 	}
 	$url = rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) );

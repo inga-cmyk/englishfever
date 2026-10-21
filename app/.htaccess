@@ -9,7 +9,7 @@ DirectoryIndex index.html
   Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
 </IfModule>
 
-<FilesMatch "\.(sqlite|db|log|md|json|py|sample\.php)$">
+<FilesMatch "\.(sqlite|db|log|md|json|py|zip|sample\.php)$">
   <IfModule mod_authz_core.c>
     Require all denied
   </IfModule>

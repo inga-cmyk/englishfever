@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again. Adds the [ef_practice_button] shortcode.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -66,15 +66,24 @@ add_action( 'template_redirect', function () {
 } );
 
 add_shortcode( 'ef_practice_button', function ( $atts ) {
-	$atts = shortcode_atts(
+	$atts  = shortcode_atts(
 		array(
 			'label' => 'Start practising',
-			'class' => 'button',
+			'class' => 'ef-practice-btn',
 		),
 		$atts
 	);
-	$href = add_query_arg( 'ef_practice', 'go', get_permalink() );
-	return sprintf( '<a class="%s" href="%s">%s</a>', esc_attr( $atts['class'] ), esc_url( $href ), esc_html( $atts['label'] ) );
+	$href  = add_query_arg( 'ef_practice', 'go', get_permalink() );
+	// Styled inline so it looks right on any theme (English Fever raspberry, pill shape).
+	$style = 'display:inline-block;background:#D82C5E;color:#fff;padding:14px 32px;border-radius:999px;'
+		. 'font-weight:600;font-size:17px;line-height:1.2;text-decoration:none;border:0;cursor:pointer;';
+	return sprintf(
+		'<p style="margin:24px 0;"><a class="%s" style="%s" href="%s">%s</a></p>',
+		esc_attr( $atts['class'] ),
+		esc_attr( $style ),
+		esc_url( $href ),
+		esc_html( $atts['label'] )
+	);
 } );
 
 add_action( 'admin_notices', function () {

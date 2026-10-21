@@ -44,8 +44,10 @@ python3 tools/package_practice_app.py
 
 This makes `dist/practice-app.zip` (the app) and `dist/ef-practice-sso.zip` (the WordPress plugin). Menu names in hPanel change from time to time; the steps below describe what to do, not exact button labels.
 
-### 1. Subdomain
-hPanel → Domains → Subdomains → create `practice` under englishfever.com. Note the folder it creates (for example `public_html/practice`). Turn on the free SSL certificate for it (hPanel → Security → SSL).
+### 1. Subdomain (or a folder)
+**Folder option (what this install uses):** upload into `public_html/practice` so the app is at `https://englishfever.com/practice/`. Then do **not** make a WordPress page whose address is `/practice/`; name that page `practice-login`. Use `https://englishfever.com/practice` (no slash at the end) as `EF_PRACTICE_URL`.
+
+**Subdomain option:** hPanel → Domains → Subdomains → create `practice` under englishfever.com. Note the folder it creates (for example `public_html/practice`). Turn on the free SSL certificate for it (hPanel → Security → SSL).
 
 ### 2. PHP
 For the subdomain, pick PHP 8.1 or newer. The default extensions include `pdo_mysql`.

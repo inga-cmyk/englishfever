@@ -293,3 +293,10 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
 .sitelink { color: var(--warm-grey); text-decoration: none; font-size: .9rem; white-space: nowrap; padding: 6px 4px; }
 .sitelink:hover { color: #fff; }
 @media (max-width: 900px) { .sitelink { display: none; } }
+
+/* small phones: keep the top bar on one line */
+@media (max-width: 560px) {
+  .chip-more, .brand-sub { display: none; }
+  .topbar-in { gap: 10px; padding: 0 12px; }
+  .chip-top { padding: 5px 9px; font-size: .82rem; }
+}

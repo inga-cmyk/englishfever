@@ -26,8 +26,37 @@
   function fail(e) { show(h('div', { class: 'card' }, h('h2', null, 'Something went wrong'), h('p', null, e.message || 'Please try again.'), h('a', { class: 'btn', href: '#/home' }, 'Back to home'))); }
   function levelPill(l) { return h('span', { class: 'pill' }, l); }
 
+  // ───────── install on the phone (home screen) ─────────
+  var deferredInstall = null;
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferredInstall = e; });
+  window.addEventListener('appinstalled', function () { deferredInstall = null; var c = document.getElementById('install-card'); if (c) c.remove(); });
+
+  function isStandalone() { return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true; }
+  function isIos() { return /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); }
+  function isPhoneLike() { return (window.matchMedia && window.matchMedia('(max-width: 900px)').matches) || isIos() || /android/i.test(navigator.userAgent); }
+
+  /** A short card that tells people how to put the app on their home screen. */
+  function installCard(always) {
+    if (isStandalone() || (!always && !isPhoneLike())) return null;
+    if (!always) { try { if (Date.now() - (+localStorage.getItem('ef_install_hidden') || 0) < 30 * 86400000) return null; } catch (e) {} }
+    var how;
+    if (deferredInstall) {
+      how = h('button', { class: 'btn small', onclick: function () {
+        deferredInstall.prompt(); deferredInstall.userChoice.then(function () { deferredInstall = null; var c = document.getElementById('install-card'); if (c) c.remove(); });
+      } }, 'Install the app');
+    } else if (isIos()) {
+      how = h('span', { class: 'small' }, 'In Safari tap ', h('b', null, 'Share'), ' (the square with an arrow), then ', h('b', null, 'Add to Home Screen'), '.');
+    } else {
+      how = h('span', { class: 'small' }, 'In your browser menu (⋮) choose ', h('b', null, 'Install app'), ' or ', h('b', null, 'Add to Home screen'), '.');
+    }
+    return h('div', { id: 'install-card', class: 'card pad-s row between', style: 'margin-bottom:16px' },
+      h('div', null, h('b', { style: 'color:var(--text)' }, 'Practise like an app'), h('div', { class: 'small muted' }, 'Put English Fever Practice on your home screen: one tap to open, full screen.'), h('div', { style: 'margin-top:6px' }, how)),
+      always ? null : h('button', { class: 'linkbtn small', onclick: function () { try { localStorage.setItem('ef_install_hidden', String(Date.now())); } catch (e) {} var c = document.getElementById('install-card'); if (c) c.remove(); } }, 'Not now'));
+  }
+
   // ───────── boot ─────────
   function boot() {
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
     Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
       state.config = r[0]; state.meta = r[1]; state.user = r[2].user;
       footer.replaceChildren(
@@ -38,7 +67,13 @@
       window.addEventListener('hashchange', route);
       ['pointerdown', 'keydown', 'scroll', 'input'].forEach(function (ev) { window.addEventListener(ev, function () { state.lastInteraction = Date.now(); }, { passive: true }); });
       route();
-    }).catch(function (e) { root.replaceChildren(h('div', { class: 'card' }, h('h2', null, 'The app cannot start'), h('p', null, e.message))); });
+    }).catch(function (e) {
+      var offline = !navigator.onLine || /failed to fetch|network|load failed/i.test(e.message || '');
+      root.replaceChildren(h('div', { class: 'card', style: 'max-width:480px;margin:40px auto;text-align:center' },
+        h('h2', null, offline ? 'You are offline' : 'The app cannot start'),
+        h('p', null, offline ? 'Practice needs an internet connection. Connect and try again.' : e.message),
+        h('button', { class: 'btn', onclick: function () { location.reload(); } }, 'Try again')));
+    });
   }
 
   // ───────── time tracking ─────────
@@ -74,7 +109,7 @@
     }));
     var chips = h('div', { class: 'chips', id: 'chips' });
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
-      h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', null, 'Practice')),
+      h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
       nav, h('div', { class: 'spacer' }),
       state.config.site_url ? h('a', { class: 'sitelink', href: state.config.site_url }, 'englishfever.com ↗') : null, chips));
     chrome.replaceChildren(bar, tabs);
@@ -85,7 +120,7 @@
     var c = document.getElementById('chips');
     if (!c || !state.user || state.user.role === 'teacher') return;
     c.replaceChildren(
-      state.user.guest ? h('button', { class: 'chip-top', style: 'background:none;cursor:pointer', title: 'Guest: results are not saved', onclick: function () { guestInvite(true); } }, 'Guest · save progress') : null,
+      state.user.guest ? h('button', { class: 'chip-top', style: 'background:none;cursor:pointer', title: 'Guest: results are not saved', onclick: function () { guestInvite(true); } }, 'Guest', h('span', { class: 'chip-more' }, ' · save progress')) : null,
       h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), ' day' + (state.streak === 1 ? '' : 's')),
       h('span', { class: 'chip-top hide-m', title: 'Time practised today' }, icon('clock'), UI.fmtDuration(state.todaySeconds)));
   }
@@ -233,6 +268,7 @@
           h('p', null, 'Pick one tense or several, and the level you want. A quick check of 3 tasks comes first, then the tasks adapt to you.'),
           h('a', { class: started ? 'btn' : 'btn ghost', href: '#/practice' }, 'Choose tenses', icon('arrow')))));
 
+      var ic = installCard(false); if (ic) nodes.push(ic);
       nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
         h('div', { class: 'card' }, h('h2', null, 'This week'), weekChart(d.week)),
         h('div', { class: 'card' }, h('h2', null, 'Your thinking skills'), h('p', { class: 'small muted' }, 'How often you are right at each level of thinking.'), bloomBars(d.bloom))));
@@ -646,6 +682,7 @@
 
     var cards = [];
     if (guest) cards.push(guestBanner());
+    var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
     if (!guest) cards.push(h('div', { class: 'card' }, h('h2', null, 'Sign-in'), h('p', null, 'You signed in with your englishfever.com account. Manage your password on the website.')));
     if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off. '), 'You turned off activity tracking on englishfever.com, so the app does not record the time you practise. Your answers and results are still saved. You can change this on englishfever.com.'));

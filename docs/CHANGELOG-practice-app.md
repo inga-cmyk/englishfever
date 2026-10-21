@@ -7,6 +7,7 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - A2.1 "evaluate" tasks reworded to "Is this sentence correct?".
 - Version label in the footer, this changelog.
 - Link back to englishfever.com (`site_url` in `config.php`) in the top bar and footer.
+- Installable on iPhone and Android (home screen icon, full screen, offline message): manifest, icons, service worker, install hint on phones and in Profile. Guest chip and brand fit small phones.
 - **Plugin 1.2.0** (upload it too): the guest-friendly `?ef_practice=open` link for menus and the homepage, `[ef_practice_banner]` homepage block (English and Latvian), button now uses the open link.
 
 ## Practice time and results on the website (plugin 1.1.0 + app)

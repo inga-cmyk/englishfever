@@ -132,6 +132,26 @@ Accepted answers get full points and count as correct for the adaptive logic. A 
 
 To go back to exact matching, set `'spelling' => 'strict'` (capital letters still never matter).
 
+## Using it like an app on a phone
+
+The practice app is an **installable web app (PWA)**. Students can put it on the home screen of an iPhone or Android phone: it gets the EF icon, opens full screen without browser bars, and updates the moment you upload a new zip. It costs nothing and needs no app store.
+
+**How a student installs it**
+- **iPhone (Safari):** open the practice address → tap **Share** (square with an arrow) → **Add to Home Screen**.
+- **Android (Chrome):** open the practice address → tap **Install the app** in the card on the home screen, or the browser menu (⋮) → **Install app** / **Add to Home screen**.
+The app shows this hint itself on phones (on the home page, lower down, with "Not now") and always in **Profile**. It is hidden once the app is installed.
+
+**What works offline:** the screens open, but practising needs a connection, so the app says "You are offline" instead of showing a blank page. Answers, results and logins are never stored on the phone by the app's service worker.
+
+**Known limitation on iPhone.** An app added to the iPhone home screen keeps its own sign-in, separate from Safari. A guest is not affected. A registered student who installs the icon may have to tap **Continue with my account** once inside the icon, and on some iPhones the website login that follows may not return to the installed app. If students report this, the fix is a "sign in with a code" (the website shows a short code, the student types it into the app). Test with one iPhone before announcing the install option widely; Android shares the sign-in with Chrome and has no such problem.
+
+**Real store apps (optional, later)**
+| | Cost (check current prices) | Effort and caveats |
+|---|---|---|
+| **Google Play** | one-time developer fee, about US$25 | The same web app packaged for the store (Trusted Web Activity, for example with PWABuilder). A few hours of work. Updates still come from your server. |
+| **Apple App Store** | Apple Developer Program, about US$99 per year | Needs a Mac, a native wrapper and an App Review. Apple often rejects apps that are only a website in a frame, so a store version should add something native (for example reminders by notification). Real extra work, so only worth it if you need to be in the store. |
+Both would need the same sign-in solution as above. My advice: start with the home-screen install, see how many students use it, and decide about the stores after that.
+
 ## Making the app easy to find
 
 **Use one link everywhere:** `https://englishfever.com/practice-login/?ef_practice=open` (any page of your site works as the base; the `practice-login` page is simply a stable one).

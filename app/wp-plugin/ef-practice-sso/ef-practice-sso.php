@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.5.0
+ * Version:     1.5.1
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -216,15 +216,15 @@ add_shortcode( 'ef_practice_button', function ( $atts ) {
 add_shortcode( 'ef_practice_banner', function ( $atts ) {
 	$texts = array(
 		'en' => array(
-			'eyebrow' => 'Free · A2.1 – B1.2',
+			'eyebrow' => 'Free · A2.1 – C1',
 			'title'   => 'Practise English grammar',
-			'text'    => 'Short tasks with clear feedback after every answer. Start with a free placement test. No registration needed.',
+			'text'    => 'Short tasks with clear feedback after every answer: tenses, conditionals, reported speech and more. Start with a free placement test. No registration needed.',
 			'button'  => 'Start practising',
 		),
 		'lv' => array(
-			'eyebrow' => 'Bezmaksas · A2.1 – B1.2',
+			'eyebrow' => 'Bezmaksas · A2.1 – C1',
 			'title'   => 'Trenējiet angļu valodas gramatiku',
-			'text'    => 'Īsi uzdevumi ar skaidru paskaidrojumu pēc katras atbildes. Sāciet ar bezmaksas līmeņa noteikšanas testu. Reģistrācija nav nepieciešama.',
+			'text'    => 'Īsi uzdevumi ar skaidru paskaidrojumu pēc katras atbildes: laiki, nosacījuma teikumi, netiešā runa un citi temati. Sāciet ar bezmaksas līmeņa noteikšanas testu. Reģistrācija nav nepieciešama.',
 			'button'  => 'Sākt praksi',
 		),
 	);

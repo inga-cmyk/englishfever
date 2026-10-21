@@ -23,7 +23,7 @@ Use it unchanged. It must open in the same tab. It takes logged-in students stra
 **Do now: tasks 1 to 6. Do NOT do tasks 7, 8, 8b, 8b2 or 8c yet; the owner will ask for them later.**
 
 **1. Plugin (check only; the owner has already installed it)**
-Plugins: check that "EF Practice – sign in with englishfever.com" is **active** and shows **version 1.5.0 or newer**. Report the version. Do not upload or change anything.
+Plugins: check that "EF Practice – sign in with englishfever.com" is **active** and shows **version 1.5.0 or newer** (1.5.1 only has newer default banner text; both work). Report the version. Do not upload or change anything.
 
 **2. The "Practice login" page**
 Pages: a page with slug `practice-login` should exist and be published, with one Shortcode block containing `[ef_practice_button label="Start practising"]`. If it exists, leave it; just report. If an SEO plugin is installed, set this page to noindex. Do **not** add this page to any menu.
@@ -39,8 +39,8 @@ In the footer column "MĀCIES" (English: the same column), add a link with the s
 
 **5. Homepage banner (Latvian homepage and English homepage)**
 Edit each homepage. Below the top (hero) section, add one **Shortcode** block (or the page builder's shortcode widget):
-- Latvian homepage: `[ef_practice_banner lang="lv"]`
-- English homepage: `[ef_practice_banner lang="en"]`
+- Latvian homepage: `[ef_practice_banner lang="lv" eyebrow="Bezmaksas · A2.1 – C1"]`
+- English homepage: `[ef_practice_banner lang="en" eyebrow="Free · A2.1 – C1"]`
 Preview it on desktop and phone width and show the owner screenshots. The block is a black panel with a gold heading and a raspberry button. Do not restyle it. **Publish only after the owner approves the position.**
 
 **6. Caching**

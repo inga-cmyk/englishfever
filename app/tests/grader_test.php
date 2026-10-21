@@ -31,9 +31,40 @@ foreach (Content::items() as $it) {
             }
             $check(!Grader::grade($it, array_fill(0, count($first), 'zzz'))['correct'], "$id nonsense accepted");
             $check(!Grader::grade($it, array_fill(0, count($first), ''))['correct'], "$id empty accepted");
+            if (!empty($it['bank'])) {
+                $pub = Content::publicItem($it, 3);
+                foreach ($first as $a1) $check(in_array($a1, $pub['bank'], true), "$id the word bank misses an answer");
+                $check(count($pub['bank']) > count($first), "$id the word bank has no decoy");
+            }
             // same answer with different case / contractions expanded
             $up = array_map(fn($s) => mb_strtoupper($s) . '.', $first);
             $check(Grader::grade($it, $up)['correct'], "$id upper case + full stop rejected");
+            break;
+        case 'order':
+            $toks = explode(' ', $it['sentence']);
+            $check(Grader::grade($it, $toks)['correct'], "$id correct order rejected");
+            foreach (array_slice($it['answers'][0], 1) as $alt) $check(Grader::grade($it, explode(' ', $alt))['correct'], "$id alternative order rejected: $alt");
+            $accepted = array_map([Grader::class, 'norm'], $it['answers'][0]);
+            $rev = array_reverse($toks);
+            if (!in_array(Grader::norm(implode(' ', $rev)), $accepted, true)) $check(!Grader::grade($it, $rev)['correct'], "$id reversed order accepted");
+            $check(!Grader::grade($it, array_slice($toks, 1))['correct'], "$id a missing card was accepted");
+            $check(!Grader::grade($it, 'anything at all')['correct'], "$id free text accepted");
+            $pub = Content::publicItem($it, 7);
+            $a = $pub['tokens']; $b = $toks; sort($a); sort($b);
+            $check($a === $b && $pub['tokens'] !== $toks, "$id public cards are the same words in a different order");
+            $check(!isset($pub['sentence']) && !isset($pub['answers']), "$id the public item leaks the answer");
+            break;
+        case 'match':
+            $rights = array_column($it['pairs'], 1);
+            $r = Grader::grade($it, $rights);
+            $check($r['correct'] && !in_array(false, $r['marks'], true), "$id correct pairs rejected");
+            $sw = $rights; [$sw[0], $sw[1]] = [$sw[1], $sw[0]];
+            $r2 = Grader::grade($it, $sw);
+            $check(!$r2['correct'] && $r2['marks'][0] === false && $r2['marks'][1] === false, "$id swapped pairs accepted or not marked");
+            $check(!Grader::grade($it, array_slice($rights, 1))['correct'], "$id too few answers accepted");
+            $pub = Content::publicItem($it, 7);
+            $check($pub['lefts'] === array_column($it['pairs'], 0) && $pub['rights'] !== $rights && count($pub['rights']) === count($rights), "$id public cards");
+            $check(!isset($pub['pairs']), "$id the public item leaks the pairs");
             break;
         case 'write':
             $check(Grader::grade($it, $it['model'])['correct'], "$id model answer fails its own check");
@@ -150,6 +181,22 @@ foreach (Content::items() as $it) {
 }
 $check($badEnd === 0, "inner slips accepted keep the grammatical ending and show a tip ($accepted accepted, $badEnd problems)");
 echo "inner one-letter slips accepted with a tip: $accepted\n";
+
+// Latvian explanations travel beside the English ones and every skill has areas
+$lvn = 0;
+foreach (Content::items() as $it) {
+    if (!empty($it['why_lv'])) $lvn++;
+    if ($it['kind'] === 'mcq' && !empty($it['wrong_why_lv'])) {
+        $w = array_key_first($it['wrong_why_lv']);
+        $r = Grader::grade($it, $w);
+        $check(!$r['correct'] && $r['specific_lv'] === $it['wrong_why_lv'][$w] && $r['specific'] === $it['wrong_why'][$w], "{$it['id']} Latvian and English wrong-answer messages");
+    }
+}
+$check($lvn >= 300, "Latvian explanations present on $lvn items");
+foreach (Content::meta()['skills'] as $sk) $check(isset($sk['area']), "{$sk['id']} has an area");
+$check(Content::levelFromTheta(1.0) === 'A2.1' && Content::levelFromTheta(4.0) === 'B1.2' && Content::levelFromTheta(5.0) === 'B2.1' && Content::levelFromTheta(6.0) === 'B2.2' && Content::levelFromTheta(7.0) === 'C1.1' && Content::levelFromTheta(8.6) === 'C1.2', 'level boundaries');
+$check(Content::levelFromAbility(1.4) === 'A2.1' && Content::levelFromAbility(1.6) === 'A2.2' && Content::levelFromAbility(2.0) === 'A2.2' && Content::levelFromAbility(2.6) === 'B1.1' && Content::levelFromAbility(4.0) === 'B1.2' && Content::levelFromAbility(7.7) === 'C1.2', 'placement level boundaries');
+$check(Content::levelFromTheta(4.0, ['A2.1', 'B1.2']) === 'B1.2' && Content::levelFromTheta(7.0, ['A2.1', 'B1.2']) === 'B1.2', 'estimates of topics without high levels stay within their levels');
 
 // normaliser
 $check(Grader::norm("Don't  Worry!") === 'do not worry', 'norm 1');

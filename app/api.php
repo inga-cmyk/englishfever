@@ -41,6 +41,7 @@ try {
                 'wp_login_url' => Config::get('wp_login_url', ''),
                 'register_url' => Config::get('register_url', ''),
                 'site_url' => Config::get('site_url', ''),
+                'dashboard_url' => Config::get('dashboard_url', ''),
                 'sso' => strlen((string) Config::get('sso_secret', '')) >= 32 && Config::get('sso_secret') !== 'CHANGE-ME',
                 'contact_email' => Config::get('contact_email', ''),
                 'version' => is_file(__DIR__ . '/src/version.php') ? (string) ((require __DIR__ . '/src/version.php')['version'] ?? 'dev') : 'dev',
@@ -48,7 +49,7 @@ try {
 
         case 'meta':
             $m = Content::meta();
-            out(['levels' => $m['levels'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN]);
+            out(['levels' => $m['levels'], 'areas' => $m['areas'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN, 'placement_sizes' => Engine::PLACEMENT_SIZES]);
 
         case 'me':
             $u = Auth::user();
@@ -77,6 +78,7 @@ try {
             if (isset($in['nickname'])) $upd['nick_set'] = 1;
             if (array_key_exists('avatar', $in)) $upd['avatar'] = Auth::validAvatar($in['avatar'] === null ? null : (string) $in['avatar']);
             if (isset($in['show_on_board']) && $u['provider'] !== 'guest') $upd['show_on_board'] = $in['show_on_board'] ? 1 : 0;
+            if (isset($in['lang'])) $upd['lang'] = $in['lang'] === 'lv' ? 'lv' : 'en';
             if ($upd) Db::update('users', $upd, 'id = ?', [$u['id']]);
             out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);
 

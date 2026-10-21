@@ -4,7 +4,8 @@
 final class Engine
 {
     public const PLACEMENT_LEN = 24;
-    private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2'];
+    private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
+    public const PLACEMENT_SIZES = [12, 24, 40];
 
     // ───────── sessions ─────────
 
@@ -12,13 +13,20 @@ final class Engine
     {
         $meta = Content::meta();
         $all = array_column($meta['skills'], 'id');
+        $smart = false;
         if ($mode === 'placement') {
             $skills = $all;
             $level = 'A2.2';
-            $len = self::PLACEMENT_LEN;
+            $len = in_array($len, self::PLACEMENT_SIZES, true) ? $len : self::PLACEMENT_LEN;
         } else {
+            if ($mode === 'smart') {
+                // "Surprise me": the app chooses topics from the learner's own mistakes and gaps
+                [$skills, $level] = self::smartPick($uid, $all);
+                $smart = true;
+                $mode = 'practice';
+            }
             $skills = array_values(array_intersect($skills, $all));
-            if (!$skills) throw new ApiError('Choose at least one tense.', 400);
+            if (!$skills) throw new ApiError('Choose at least one topic.', 400);
             if (!isset(Content::BASE[$level]) || !in_array($level, $meta['levels'], true)) throw new ApiError('Choose a level.', 400);
             $len = max(5, min(30, $len ?: 10));
         }
@@ -26,11 +34,13 @@ final class Engine
         Db::q('UPDATE psessions SET ended_at = ? WHERE user_id = ? AND ended_at IS NULL', [time(), $uid]);
 
         $state = ['current' => null, 'seed' => random_int(1, 1 << 30), 'served' => [], 'theta' => [], 'g' => 2.0, 'last' => []];
+        if ($smart) $state['smart'] = true;
         if ($mode === 'practice') {
             foreach ($skills as $s) {
                 $row = Db::one('SELECT theta, n FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $s]);
                 $init = Content::BASE[$level] + 0.3;
-                $state['theta'][$s] = ($row && $row['n'] >= 4) ? round(($row['theta'] + $init) / 2, 3) : $init;
+                if ($smart) $state['theta'][$s] = ($row && $row['n'] >= 3) ? (float) $row['theta'] : $init;
+                else $state['theta'][$s] = ($row && $row['n'] >= 4) ? round(($row['theta'] + $init) / 2, 3) : $init;
             }
         }
         $sid = Db::insert('psessions', [
@@ -68,6 +78,7 @@ final class Engine
         $st = &$ses['state'];
         if ($st['current'] !== $itemId) throw new ApiError('This task was already answered.', 409);
         $item = Content::item($itemId);
+        $answer = self::cleanAnswer($answer);
         $g = Grader::grade($item, $answer);
         $ok = $g['correct'];
         $skill = $item['skill'];
@@ -88,16 +99,16 @@ final class Engine
         $seen = count(array_filter($st['last'], fn($h) => $h['skill'] === $skill));
         $k = $seen < 2 ? 0.5 : 0.3;
         $p = 1 / (1 + exp(-1.7 * ($theta - $d)));
-        $theta = max(0.5, min(5.5, $theta + $k * (($ok ? 1 : 0) - $p)));
+        $theta = max(0.5, min(9.5, $theta + $k * (($ok ? 1 : 0) - $p)));
         $st['theta'][$skill] = round($theta, 3);
         $pg = 1 / (1 + exp(-1.7 * ($st['g'] - $d)));
-        $st['g'] = round(max(0.5, min(5.5, $st['g'] + 0.4 * (($ok ? 1 : 0) - $pg))), 3);
+        $st['g'] = round(max(0.5, min(9.5, $st['g'] + 0.4 * (($ok ? 1 : 0) - $pg))), 3);
         $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom']];
 
         $now = time();
         Db::insert('attempts', [
             'user_id' => $uid, 'psession_id' => $sid, 'item_id' => $itemId, 'skill' => $skill, 'level' => $item['level'],
-            'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => mb_substr(is_array($answer) ? implode(' / ', $answer) : (string) $answer, 0, 500),
+            'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
             'time_ms' => max(0, min(600000, $timeMs)), 'xp' => $xp, 'created_at' => $now,
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
@@ -145,6 +156,13 @@ final class Engine
             'xp' => $xp,
             'adapt' => $adapt,
         ];
+        if (isset($g['marks'])) $res['marks'] = $g['marks'];
+        if ($item['kind'] === 'match') $res['pairs'] = $item['pairs'];
+        // Latvian explanations (up to B1.2): sent beside the English ones, the browser shows the learner's choice
+        if (!empty($item['why_lv'])) {
+            $res['why_lv'] = $item['why_lv'];
+            $res['specific_lv'] = $g['specific_lv'] ?? null;
+        }
         return [
             'result' => $res,
             'session' => self::pub($ses),
@@ -172,7 +190,68 @@ final class Engine
         return self::buildSummary(self::load($uid, $sid));
     }
 
+    // ───────── "Surprise me": topics chosen from the learner's own history ─────────
+
+    /**
+     * Up to four topics: the ones the learner gets wrong most (recent mistakes count), plus one they have not tried.
+     * A new learner gets a few friendly starter topics. @return array{0: string[], 1: string} topics and the level to start from
+     */
+    private static function smartPick(int $uid, array $all): array
+    {
+        $rows = [];
+        foreach (Db::all('SELECT skill, theta, n, n_correct FROM skill_state WHERE user_id = ?', [$uid]) as $r) {
+            if (in_array($r['skill'], $all, true)) $rows[$r['skill']] = $r;
+        }
+        $wrong = [];
+        foreach (Db::all('SELECT skill, COUNT(1) AS c FROM attempts WHERE user_id = ? AND correct = 0 AND created_at > ? GROUP BY skill', [$uid, time() - 14 * 86400]) as $r) {
+            $wrong[$r['skill']] = (int) $r['c'];
+        }
+        $total = 0; $sum = 0.0;
+        foreach ($rows as $r) { $total += (int) $r['n']; $sum += (float) $r['theta'] * (int) $r['n']; }
+        if ($total < 5) {
+            $starters = array_values(array_intersect(['present_simple', 'present_continuous', 'past_simple', 'present_perfect', 'future', 'cond_zero', 'cond_first'], $all));
+            shuffle($starters);
+            return [array_slice($starters, 0, 4), 'A2.2'];
+        }
+        $level = Content::levelFromTheta($sum / $total);
+        $need = [];
+        foreach ($rows as $s => $r) {
+            if ((int) $r['n'] < 2) continue;
+            $need[$s] = (1 - (int) $r['n_correct'] / (int) $r['n']) * 3 + min(5, $wrong[$s] ?? 0) * 0.25 + random_int(0, 30) / 100;
+        }
+        arsort($need);
+        $pick = [];
+        foreach ($need as $s => $v) {
+            if ($v > 0.45 && count($pick) < 3) $pick[] = $s;
+        }
+        // one topic they have not tried yet, not far above their level
+        $levelIdx = array_search($level, self::LEVELS);
+        $fresh = [];
+        foreach (Content::meta()['skills'] as $sk) {
+            if (isset($rows[$sk['id']])) continue;
+            if (array_search($sk['levels'][0], self::LEVELS) <= $levelIdx + 1) $fresh[] = $sk['id'];
+        }
+        shuffle($fresh);
+        if ($fresh) $pick[] = $fresh[0];
+        // not enough weak spots: add practised topics so the session has some variety
+        $rest = array_diff(array_keys($rows), $pick);
+        shuffle($rest);
+        while (count($pick) < 3 && $rest) $pick[] = array_shift($rest);
+        return [array_values(array_unique($pick)), $level];
+    }
+
     // ───────── helpers ─────────
+
+    /** Answers come from the browser: short text, or a short list of short text. Anything else counts as an empty answer. */
+    private static function cleanAnswer($a)
+    {
+        if (is_array($a)) {
+            $out = [];
+            foreach (array_slice(array_values($a), 0, 24) as $x) $out[] = is_scalar($x) ? mb_substr((string) $x, 0, 300) : '';
+            return $out;
+        }
+        return is_scalar($a) ? mb_substr((string) $a, 0, 2000) : '';
+    }
 
     private static function load(int $uid, int $sid): array
     {
@@ -198,7 +277,8 @@ final class Engine
         return [
             'id' => (int) $ses['id'], 'mode' => $ses['mode'], 'length' => $ses['target_len'], 'n' => $ses['n'],
             'correct' => $ses['n_correct'], 'xp' => $ses['xp'], 'level' => $ses['level'], 'skills' => $ses['skills'],
-            'phase' => ($ses['mode'] === 'practice' && $ses['n'] < 3) ? 'diagnostic' : 'adaptive',
+            'phase' => ($ses['mode'] === 'practice' && $ses['n'] < 3 && empty($ses['state']['smart'])) ? 'diagnostic' : 'adaptive',
+            'smart' => !empty($ses['state']['smart']),
         ];
     }
 
@@ -211,6 +291,7 @@ final class Engine
         $levelIdx = array_search($ses['level'], self::LEVELS);
         $count = count($st['served']);
 
+        $smart = !empty($st['smart']);
         // candidate items
         $bySkill = [];
         foreach (Content::items() as $it) {
@@ -220,9 +301,11 @@ final class Engine
         }
         if (!$placement) {
             foreach ($bySkill as $s => $list) {
-                $win = array_values(array_filter($list, function ($it) use ($levelIdx) {
+                // "Surprise me" centres each topic on the learner's own level in that topic
+                $centre = $smart && isset($st['theta'][$s]) ? array_search(Content::levelFromTheta((float) $st['theta'][$s]), self::LEVELS) : $levelIdx;
+                $win = array_values(array_filter($list, function ($it) use ($centre) {
                     $i = array_search($it['level'], self::LEVELS);
-                    return $i >= $levelIdx - 1 && $i <= $levelIdx + 1;
+                    return $i >= $centre - 1 && $i <= $centre + 1;
                 }));
                 if ($win) $bySkill[$s] = $win;
             }
@@ -237,12 +320,19 @@ final class Engine
             $bloomCount[$h['bloom']]++;
         }
 
+        // placement: a run of correct answers moves the target up faster, so strong learners are not stuck on easy tasks
+        $boost = 0.0;
+        if ($placement) {
+            $streak = 0;
+            foreach (array_reverse($st['last']) as $h) { if ($h['correct']) $streak++; else break; }
+            $boost = min(1.2, max(0, $streak - 1) * 0.4);
+        }
         // placement: skip skills that are far too hard for the current estimate
         if ($placement) {
             $g = $st['g'];
             foreach ($bySkill as $s => $list) {
                 $min = min(array_column($list, 'd'));
-                if ($min > $g + 1.2) unset($bySkill[$s]);
+                if ($min > $g + 1.2 + $boost) unset($bySkill[$s]);
             }
             if (!$bySkill) return null;
         }
@@ -265,12 +355,18 @@ final class Engine
             $recent[$r['item_id']] = (int) $r['c'];
         }
 
+        // "Surprise me" brings back tasks the learner got wrong before (not in the last half hour)
+        $missed = [];
+        if ($smart) {
+            foreach (Db::all('SELECT item_id FROM attempts WHERE user_id = ? AND created_at > ? AND created_at < ? GROUP BY item_id HAVING MAX(correct) = 0', [$ses['user_id'], time() - 30 * 86400, time() - 1800]) as $r) $missed[$r['item_id']] = true;
+        }
+
         // target difficulty
-        if (!$placement && $count < 3) {
+        if (!$placement && !$smart && $count < 3) {
             $target = Content::BASE[$ses['level']] + 0.2 * $count; // diagnostic: Bloom 1, 2, 3 at the chosen level
         } else {
             $theta = $st['theta'][$bestSkill] ?? ($placement ? $st['g'] : Content::BASE[$ses['level']] + 0.3);
-            $target = $theta + 0.1;
+            $target = $theta + 0.1 + $boost;
         }
 
         $best = null;
@@ -278,16 +374,36 @@ final class Engine
         foreach ($pool as $it) {
             $cost = abs($it['d'] - $target) + 0.2 * $bloomCount[$it['bloom']] + random_int(0, 25) / 100;
             if (isset($recent[$it['id']])) $cost += $recent[$it['id']] ? 0.6 : 0.2;
+            if (isset($missed[$it['id']])) $cost -= 0.7;
             if ($st['last'] && end($st['last'])['bloom'] === $it['bloom']) $cost += 0.3; // avoid the same thinking level twice in a row
-            if (!$placement && $count < 3 && $it['level'] !== $ses['level']) $cost += 0.5;
+            if (!$placement && !$smart && $count < 3 && $it['level'] !== $ses['level']) $cost += 0.5;
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }
         return $best;
     }
 
+    /** Ability that best explains the answers (logistic model, weak prior), by Newton steps. @param array $pts list of [difficulty, 1|0] */
+    private static function fitAbility(array $pts): float
+    {
+        $th = 3.0;
+        for ($i = 0; $i < 30; $i++) {
+            $g = 0.0; $h = 0.0;
+            foreach ($pts as [$d, $ok]) {
+                $p = 1 / (1 + exp(-1.7 * ($th - $d)));
+                $g += 1.7 * ($ok - $p);
+                $h += 2.89 * $p * (1 - $p);
+            }
+            $g -= ($th - 3.0) / 9; $h += 1 / 9;
+            $step = max(-1.5, min(1.5, $g / $h));
+            $th = max(0.0, min(10.0, $th + $step));
+            if (abs($step) < 1e-4) break;
+        }
+        return $th;
+    }
+
     private static function buildSummary(array $ses): array
     {
-        $rows = Db::all('SELECT skill, bloom, correct FROM attempts WHERE psession_id = ?', [$ses['id']]);
+        $rows = Db::all('SELECT skill, level, bloom, correct FROM attempts WHERE psession_id = ?', [$ses['id']]);
         $bySkill = [];
         $byBloom = [];
         foreach ($rows as $r) {
@@ -301,7 +417,7 @@ final class Engine
             $meta = Content::skill($s);
             $theta = $ses['state']['theta'][$s] ?? $ses['state']['g'];
             $skills[] = [
-                'id' => $s, 'label' => $meta['label'], 'voice' => $meta['voice'], 'n' => $v['n'], 'correct' => $v['c'],
+                'id' => $s, 'label' => $meta['label'], 'area' => $meta['area'], 'n' => $v['n'], 'correct' => $v['c'],
                 'theta' => round($theta, 2), 'level_est' => Content::levelFromTheta($theta, $meta['levels']),
             ];
         }
@@ -319,12 +435,12 @@ final class Engine
 
         if ($ses['mode'] === 'placement') {
             $tested = array_column($skills, 'id');
-            $sumT = 0; $sumN = 0;
-            foreach ($skills as $s) { $sumT += $s['theta'] * $s['n']; $sumN += $s['n']; }
-            $overall = $sumN ? $sumT / $sumN : $ses['state']['g'];
-            $out['overall_level'] = Content::levelFromTheta($overall);
-            // The test starts at A2.2. Missing most tasks means the learner is below it.
-            if ($ses['n'] >= 10 && $acc < 35) $out['overall_level'] = 'A2.1';
+            // The overall level is fitted to all the answers at once (not to the path the test took), so a strong learner
+            // is not held back by the order in which tasks were served.
+            $pts = [];
+            foreach ($rows as $r) $pts[] = [Content::difficulty($r['level'], (int) $r['bloom']), (int) $r['correct']];
+            $overall = $pts ? self::fitAbility($pts) : $ses['state']['g'];
+            $out['overall_level'] = Content::levelFromAbility($overall);
             $out['overall_theta'] = round($overall, 2);
             $gaps = [];
             foreach (array_slice($skills, 0, 3) as $s) {
@@ -344,10 +460,16 @@ final class Engine
                     $next[] = ['type' => 'review', 'skill' => $s['id'], 'label' => $s['label'], 'text' => "Read the rule card for {$s['label']}, then try again."];
                 }
             }
-            if ($acc >= 80) {
+            if ($acc >= 80 && empty($ses['state']['smart'])) {
                 $levels = Content::meta()['levels'];
                 $idx = array_search($ses['level'], $levels);
-                if ($idx !== false && isset($levels[$idx + 1])) {
+                // only offer a level that exists for at least one of the topics practised
+                $top = 0;
+                foreach ($ses['skills'] as $sid) {
+                    $sk = Content::skill($sid);
+                    if ($sk) $top = max($top, (int) array_search(end($sk['levels']), $levels));
+                }
+                if ($idx !== false && isset($levels[$idx + 1]) && $idx + 1 <= $top) {
                     $next[] = ['type' => 'level_up', 'level' => $levels[$idx + 1], 'text' => "Great accuracy! Try the next level: {$levels[$idx + 1]}."];
                 }
             }

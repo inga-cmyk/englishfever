@@ -33,6 +33,7 @@ return [
 
     // Link back to the website (footer and top bar of the app).
     'site_url' => 'https://englishfever.com/',
+    'dashboard_url' => 'https://englishfever.com/en/dashboard/', // the student dashboard: the app links to it (top bar, Home)
 
     // Shown in the footer and the privacy note.
     'site_name'   => 'English Fever',

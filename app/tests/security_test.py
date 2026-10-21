@@ -37,7 +37,14 @@ def sso(c, uid, name="Sec Student", teacher=False):
     return c.raw("/sso.php?token=" + urllib.parse.quote(token({"uid": uid, "name": name, "teacher": teacher, "exp": int(time.time()) + 100, "n": os.urandom(6).hex()})))
 
 def dumps(r): return json.dumps({k: v for k, v in r.items() if k != "_headers"})
-def correct(it): return it["correct"] if it["kind"] == "mcq" else ([b[0] for b in it["answers"]] if it["kind"] == "gap" else (it["answers"][0][0] if it["kind"] == "text" else it["model"]))
+def correct(it):
+    k = it["kind"]
+    if k == "mcq": return it["correct"]
+    if k == "gap": return [b[0] for b in it["answers"]]
+    if k == "text": return it["answers"][0][0]
+    if k == "order": return it["sentence"].split(" ")
+    if k == "match": return [p_[1] for p_ in it["pairs"]]
+    return it["model"]
 
 ok = True
 def check(n, c, x=""):
@@ -190,6 +197,48 @@ check("and can take them out again", all(x["mine"] is None for x in tc.api("teac
 tc.api("teacher/mine", {"user_id": guest_sid, "mine": True})
 check("a guest can be added too (a known person)", any(x["id"] == guest_sid and x["mine"] == "added" for x in tc.api("teacher/students")["students"]))
 tc.api("teacher/mine", {"user_id": guest_sid, "mine": False})
+
+# ---- 7e. new task kinds, odd answers, language setting
+od = C(); od.guest("Odd answers")
+def serve_kind(c, kind):
+    for _ in range(14):
+        r = c.api("session/start", {"mode": "practice", "skills": ["cond_first", "cond_second", "rep_questions", "ind_polite", "cond_zero"], "level": "B1.1", "length": 30})
+        for _ in range(28):
+            it = r.get("item")
+            if not it: break
+            if it["kind"] == kind: return r
+            full = ITEMS[it["id"]]
+            ans = correct(full)
+            n = c.api("session/answer", {"session_id": r["session"]["id"], "item_id": it["id"], "answer": ans, "time_ms": 1000})
+            if n.get("_status") == 429:   # 45 answers a minute is the rule; wait it out like a person would
+                time.sleep(20)
+                n = c.api("session/answer", {"session_id": r["session"]["id"], "item_id": it["id"], "answer": ans, "time_ms": 1000})
+            if "session" not in n: break
+            if n.get("done"): break
+            r = {"session": n["session"], "item": n["next"]}
+    return None
+for kind in ("order", "match"):
+    r = serve_kind(od, kind)
+    check(f"a {kind} task can be served", r is not None)
+    if not r: continue
+    it = r["item"]
+    for bad_ans in [{"a": {"b": 1}}, [["x"], {"y": 2}], "x" * 5000, None, 12345, [], ["x"] * 200, [None, True, 3.5]]:
+        res = od.api("session/answer", {"session_id": r["session"]["id"], "item_id": it["id"], "answer": bad_ans, "time_ms": 1000})
+        check(f"{kind}: odd answer {str(bad_ans)[:24]!r} is wrong, not an error", res["_status"] in (200, 409, 429) and res.get("result", {}).get("correct") in (False, None), res.get("_status"))
+        if res["_status"] == 200: break
+check("language of the explanations: Latvian can be chosen", od.api("account/profile", {"lang": "lv"})["user"]["lang"] == "lv")
+check("anything else becomes English", od.api("account/profile", {"lang": "<script>"})["user"]["lang"] == "en")
+check("config offers the dashboard address (empty when not set)", "dashboard_url" in C().api("config"))
+r = C(); r.guest("Latvian reader")
+st = r.api("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 5}); it = st["item"]
+wrong_ans = ITEMS[it["id"]]["wrong"][0] if ITEMS[it["id"]]["kind"] == "mcq" else "zzz"
+res = r.api("session/answer", {"session_id": st["session"]["id"], "item_id": it["id"], "answer": wrong_ans, "time_ms": 1000})
+check("Latvian explanation travels beside the English one (up to B1.2)", res["result"].get("why_lv") and res["result"].get("why"), list(res["result"].keys()))
+st2 = r.api("session/start", {"mode": "practice", "skills": ["cond_mixed"], "level": "B2.1", "length": 5})
+res2 = r.api("session/answer", {"session_id": st2["session"]["id"], "item_id": st2["item"]["id"], "answer": "zzz", "time_ms": 1000})
+check("above B1.2 there is no Latvian (the toggle is not offered)", "why_lv" not in res2["result"], list(res2["result"].keys()))
+dnd_js = open(os.path.join(APP, "assets", "dnd.js")).read()
+check("the drag-and-drop code has no innerHTML / eval / third-party host", not re.search(r"innerHTML|eval\(|document\.write|new Function|insertAdjacentHTML|https?://", dnd_js))
 
 # ---- 8. the CSV cannot carry a spreadsheet formula
 fx = C(); sso(fx, 9300 + int(time.time()) % 90, "=HYPERLINK(\"http://evil\",\"x\")"); fx.api("account/profile", {"nickname": "Formula Fan", "show_on_board": False})

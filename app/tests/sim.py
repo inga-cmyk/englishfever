@@ -6,7 +6,7 @@ import json, math, random, sys, urllib.request, http.cookiejar, os
 
 BASE = "http://127.0.0.1:8099/api.php"
 ITEMS = {i["id"]: i for i in json.load(open(os.path.join(os.path.dirname(__file__), "..", "content", "items.json")))}
-BASEL = {"A2.1": 1.0, "A2.2": 2.0, "B1.1": 3.0, "B1.2": 4.0}
+BASEL = {"A2.1": 1.0, "A2.2": 2.0, "B1.1": 3.0, "B1.2": 4.0, "B2.1": 5.0, "B2.2": 6.0, "C1.1": 7.0, "C1.2": 8.0}
 
 
 class Client:
@@ -32,6 +32,10 @@ def correct_answer(it):
     if it["kind"] in ("gap", "text"):
         a = [b[0] for b in it["answers"]]
         return a if it["kind"] == "gap" else a[0]
+    if it["kind"] == "order":
+        return it["sentence"].split(" ")
+    if it["kind"] == "match":
+        return [p[1] for p in it["pairs"]]
     return it["model"]
 
 
@@ -40,6 +44,11 @@ def wrong_answer(it):
         return it["wrong"][0]
     if it["kind"] == "gap":
         return ["zzz"] * len(it["answers"])
+    if it["kind"] == "order":
+        return list(reversed(it["sentence"].split(" ")))
+    if it["kind"] == "match":
+        rights = [p[1] for p in it["pairs"]]
+        return rights[1:] + rights[:1]
     return "zzz"
 
 
@@ -65,11 +74,11 @@ def play(c, ability, session, first, label, verbose=False):
 
 random.seed(7)
 fails = 0
-for true_level, ability in [("low (A2.1)", 1.2), ("A2.2", 2.3), ("B1.1", 3.2), ("B1.2", 4.3)]:
+for true_level, ability in [("low (A2.1)", 1.2), ("A2.2", 2.3), ("B1.1", 3.2), ("B1.2", 4.3), ("B2.1", 5.2), ("B2.2", 6.2), ("C1", 7.4)]:
     c = Client()
     nick = f"sim{int(ability*10)}_{os.urandom(3).hex()}"
     c.call("guest", {"t": 5000, "nickname": nick})
-    r = c.call("session/start", {"mode": "placement"})
+    r = c.call("session/start", {"mode": "placement", "length": 24})
     s, seen = play(c, ability, r["session"], r["item"], "placement")
     print(f"learner {true_level:<11} placement -> overall {s['overall_level']} (θ {s['overall_theta']}), {s['correct']}/{s['n']} correct, "
           f"{len(s['by_skill'])} skills tested, untested: {[u['id'] for u in s['untested']]}")
@@ -82,7 +91,22 @@ for true_level, ability in [("low (A2.1)", 1.2), ("A2.2", 2.3), ("B1.1", 3.2), (
     d = c.call("dashboard")
     print(f"   dashboard: streak {d['streak']}, xp {d['totals']['xp']}, answers {d['totals']['answers']}, today {d['today']}")
     if s["n"] != 24 and s["n"] < 10: fails += 1
+    # "Surprise me" after some history: it must start and use the learner's own topics
+    r = c.call("session/start", {"mode": "smart", "length": 10})
+    s3, seen3 = play(c, ability, r["session"], r["item"], "smart")
+    print(f"   surprise me: topics {[k['id'] for k in s3['by_skill']]}  {s3['correct']}/{s3['n']}")
 
+# the three placement sizes
+for size in (12, 24, 40):
+    c = Client(); c.call("guest", {"t": 5000, "nickname": f"size{size}_" + os.urandom(3).hex()})
+    r = c.call("session/start", {"mode": "placement", "length": size})
+    s, _ = play(c, 3.4, r["session"], r["item"], "placement")
+    print(f"placement size {size}: {s['n']} questions, level {s['overall_level']}")
+    if s["n"] != size: fails += 1
+# a brand new learner pressing "Surprise me" gets friendly starter topics
+c = Client(); c.call("guest", {"t": 5000, "nickname": "fresh_" + os.urandom(3).hex()})
+r = c.call("session/start", {"mode": "smart", "length": 10})
+print("new learner, surprise me ->", r["session"]["skills"], "level", r["session"]["level"], "smart:", r["session"].get("smart"))
 # duplicate answer is refused
 c = Client(); c.call("guest", {"t": 5000, "nickname": "dup_" + os.urandom(3).hex()})
 r = c.call("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 5})

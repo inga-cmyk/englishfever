@@ -1,0 +1,57 @@
+"""Latvian explanations: reported speech and indirect questions (up to B1.2)."""
+from lv_data import LV
+
+GEN = "Salīdzini savu teikumu ar piemēra atbildi."
+
+LV.update({
+    # ───── reported statements ─────
+    "rs-B11-1a": {"why": "Netiešajā runā darbības vārds parasti iet vienu soli atpakaļ laikā: am / is → was."},
+    "rs-B11-2a": {"why": "Netiešā runa iet vienu soli atpakaļ: work → worked, am working → was working, finished → had finished, can → could."},
+    "rs-B11-3a": {"why": "Present Simple pāriet uz Past Simple: don't like → didn't like.",
+                  "msgs": ["Netiešajā runā Present Simple kļūst par Past Simple: he didn't like."]},
+    "rs-B11-4a": {"why": "Pēc said personu tieši nelieto. Lieto told me vai said to me."},
+    "rs-B11-5a": {"why": "can't → couldn't, un I → he (Jons runā par sevi)."},
+    "rs-B11-6a": {"why": GEN,
+                  "msgs": ["Sāc ar Elena said.", "I nomaini uz she.", "am learning kļūst par was learning."]},
+    "rs-B12-1a": {"why": "Present Perfect (have finished) pāriet uz Past Perfect (had finished)."},
+    "rs-B12-2a": {"why": "Mainās arī laika vārdi: now → then, today → that day, tomorrow → the next day, yesterday → the day before."},
+    "rs-B12-3a": {"why": "I → she, am leaving → was leaving, now → then.",
+                  "msgs": ["Now parasti kļūst par then vai at that moment."]},
+    "rs-B12-4a": {"why": "Netiešajā runā will pāriet uz would: She said she would call me."},
+    "rs-B12-5a": {"why": "told vajag personu (told me). We kļūst par they, un are pāriet uz were."},
+    "rs-B12-6a": {"why": GEN,
+                  "msgs": ["Sāc ar He said.", "will kļūst par would.", "tomorrow mainās: the next day (vai today)."]},
+    "rs-B12-3b": {"why": "Netiešā runa: said + priekšmets + darbības vārds, kas iet soli atpakaļ. Today kļūst par that day."},
+    # ───── reported questions and requests ─────
+    "rq-B12-1a": {"why": "Netiešajā jautājumā lieto parasto vārdu secību (priekšmets + darbības vārds) un bez do / does / did."},
+    "rq-B12-2a": {"why": "'Do you like jazz?' → He asked if (vai whether) I liked jazz."},
+    "rq-B12-3a": {"why": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: started.",
+                  "msgs": ["Netiešajā jautājumā nav does vai did: ... what time the film started."]},
+    "rq-B12-4a": {"why": "Netiešajam jautājumam ir teikuma vārdu secība: where I lived, nevis where did I live."},
+    "rq-B12-5a": {"why": "Jā/nē jautājums: asked + if / whether + priekšmets + darbības vārds."},
+    "rq-B12-6a": {"why": GEN,
+                  "msgs": ["Sāc ar Kate asked me why.", "Teikuma vārdu secība: why I was leaving."]},
+    "rq-B12-1b": {"why": "Rīkojumi un lūgumi: told / asked + persona + to + pamatforma. Here kļūst par there."},
+    "rq-B12-3b": {"why": "Netiešais jautājums: asked + jautājuma vārds + priekšmets + darbības vārds."},
+    "rq-B12-3c": {"why": "Jā/nē jautājums: asked + if + priekšmets + darbības vārds."},
+    # ───── indirect questions ─────
+    "ip-B11-1a": {"why": "Pēc Could you tell me lieto teikuma vārdu secību: where the station is."},
+    "ip-B11-2a": {"why": "Netiešais jautājums sākas ar pieklājīgu frāzi, tad seko teikuma vārdu secība (bez do / does)."},
+    "ip-B11-3a": {"why": "Netiešajā jautājumā does nav: where Anna lives.",
+                  "msgs": ["Netiešajā daļā nav does: ... where Anna lives."]},
+    "ip-B11-4a": {"why": "Netiešajā jautājumā pēc jautājuma vārda nav does: what time the film starts."},
+    "ip-B11-5a": {"why": "Pieklājīga frāze + netiešais jautājums skan maigāk un pieklājīgāk."},
+    "ip-B11-6a": {"why": GEN,
+                  "msgs": ["Sāc ar Could you tell me where.", "Lieto teikuma vārdu secību: where the meeting room is."]},
+    "ip-B11-3b": {"why": "Pieklājīga frāze + jautājuma vārds + priekšmets + darbības vārds."},
+    "ip-B11-3c": {"why": "Do you know + jautājuma vārds + priekšmets + darbības vārds (bez does)."},
+    "ip-B12-1a": {"why": "Jā/nē jautājumam citā jautājumā lieto if vai whether."},
+    "ip-B12-2a": {"why": "Netiešajā jautājumā darbības vārds ir aiz priekšmeta."},
+    "ip-B12-3a": {"why": "Pieklājīga frāze + what time + priekšmets + darbības vārds. Bez does.",
+                  "msgs": ["Netiešajā daļā nav does: ... what time the museum closes."]},
+    "ip-B12-4a": {"why": "Pēc I wonder lieto teikuma vārdu secību: what she wants."},
+    "ip-B12-5a": {"why": "Could you let me know + whether / if + priekšmets + darbības vārds."},
+    "ip-B12-6a": {"why": GEN,
+                  "msgs": ["Sāc ar Do you know if.", "Lieto takes vai accepts cards.", "Netiešajā daļā nav does."]},
+    "ip-B12-3b": {"why": "I wonder + jautājuma vārds + priekšmets + darbības vārds."},
+})

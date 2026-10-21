@@ -40,8 +40,8 @@ Edit `tools/units/uNN.py`, then run `python3 tools/build.py` (or `python3 tools/
 - The Tutor LMS file format is our own simple format; Tutor's own importer may need the questions entered by hand or pasted from the CSV.
 - Audio is not included. Record `listening/scripts-to-record.md` (two voices) and upload the MP3s.
 
-## Practice app (tenses A2.1 – B1.2)
-A separate web app in `app/`: placement test, adaptive practice for active and passive tenses with all six Bloom levels, time, streak, leaderboard, and a teacher view. Runs on Hostinger (PHP + MySQL) at a subdomain, with optional sign-in through englishfever.com (Tutor LMS) users.
+## Practice app (grammar A2.1 – C1)
+A separate web app in `app/`: placement test, adaptive practice for tenses, passive, conditionals, reported speech and indirect questions with all six Bloom levels, drag-and-drop tasks, Latvian explanations up to B1.2, time, streak, leaderboard, and a teacher view. Runs on Hostinger (PHP + MySQL) at a subdomain, with optional sign-in through englishfever.com (Tutor LMS) users.
 - [docs/PRACTICE-APP.md](docs/PRACTICE-APP.md) – what it does, what is not done, Hostinger setup, WordPress plugin, teacher guide, privacy text, maintenance.
-- [docs/practice-question-bank-review.csv](docs/practice-question-bank-review.csv) – all 241 tasks for a teacher to review.
+- [docs/practice-question-bank-review.csv](docs/practice-question-bank-review.csv) – all 442 tasks for a teacher to review.
 - Build the upload files: `python3 tools/package_practice_app.py` → `dist/practice-app.zip`, `dist/ef-practice-sso.zip`.

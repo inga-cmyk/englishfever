@@ -1,4 +1,4 @@
-// English Fever practice app (A2.1 – B1.2 tenses). Single page, hash routes.
+// English Fever practice app (grammar A2.1 – C1). Single page, hash routes.
 (function () {
   'use strict';
   var h = UI.h, icon = UI.icon, api = UI.api;
@@ -12,7 +12,10 @@
   };
 
   // ───────── helpers ─────────
-  var VOICE_LABEL = { active: 'Active', passive: 'Passive' };
+  function areaLabel(id) { var a = state.meta.areas.filter(function (x) { return x.id === id; })[0]; return a ? a.label : id; }
+  function levelRange(s) { return s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''); }
+  /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
+  function dashboardUrl() { return (state.config && (state.config.dashboard_url || state.config.site_url)) || ''; }
   function bloomName(n) { return state.meta.bloom[String(n)].name; }
   function bloomDots(n) {
     var d = h('span', { class: 'bloomdots', title: 'Thinking level ' + n + ' of 6: ' + bloomName(n) });
@@ -126,7 +129,7 @@
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
       h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
       nav, h('div', { class: 'spacer' }),
-      state.config.site_url ? h('a', { class: 'sitelink', href: state.config.site_url }, 'englishfever.com ↗') : null, chips,
+      dashboardUrl() ? h('a', { class: 'sitelink', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,
       h('a', { class: 'avatar-link', href: '#/profile', 'aria-label': 'Your profile' }, UI.avatar(state.user.avatar, state.user.nickname, 32))));
     chrome.replaceChildren(bar, tabs);
     renderChips();
@@ -211,11 +214,11 @@
     show(h('div', null,
       h('section', { class: 'hero' },
         h('div', { class: 'bar' }),
-        h('h1', null, 'Practise English tenses. ', h('em', null, 'Know what to fix next.')),
-        h('p', null, 'Short tasks for adult learners, A2.1 to B1.2. Clear feedback after every answer.'),
+        h('h1', null, 'Practise English grammar. ', h('em', null, 'Know what to fix next.')),
+        h('p', null, 'Short tasks for adult learners, A2.1 to C1. Clear feedback after every answer.'),
         h('div', { class: 'points' },
           h('div', null, h('b', null, 'Placement test'), '24 quick questions.'),
-          h('div', null, h('b', null, 'Your choice'), 'Pick the tenses and level.'),
+          h('div', null, h('b', null, 'Your choice'), 'Pick the topics and level.'),
           h('div', null, h('b', null, 'Real thinking'), 'Spot, judge and write.'))),
       h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
   }
@@ -265,7 +268,9 @@
       }
       nodes.push(h('div', { class: 'hello' },
         h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Welcome back'), h('h1', { style: 'margin:0' }, state.user.nickname))),
-        h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.'))));
+        h('div', { class: 'hello-side' },
+          h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.')),
+          (!state.user.guest && dashboardUrl()) ? h('a', { class: 'btn ghost small', href: dashboardUrl() }, 'My dashboard ↗') : null)));
 
       if (resume) {
         nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
@@ -282,28 +287,44 @@
 
       var rep = d.placement && d.placement.report;
       var started = d.totals.answers > 0;
-      nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
+      nodes.push(h('div', { class: 'grid g3', style: 'margin-bottom:16px' },
         h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 1'), h('h2', null, rep ? 'Your placement result' : 'Take the placement test'),
           rep ? h('div', null,
             h('div', { class: 'row', style: 'margin-bottom:10px' }, h('span', { class: 'levelbadge' }, rep.overall_level), h('span', { class: 'muted small' }, 'about ' + rep.overall_level + ' · ' + UI.fmtAgo(d.placement.at))),
             h('p', null, 'Start with: ', rep.gaps.map(function (g) { return g.label; }).join(', ') + '.'),
             h('div', { class: 'row' }, h('button', { class: 'btn small', onclick: function () { showPlacementReport(rep); } }, 'See gaps and plan'),
               h('a', { class: 'btn ghost small', href: '#/placement' }, 'Take it again')))
-            : h('div', null, h('p', null, 'About 10 minutes. Shows your gaps and where to start.'),
+            : h('div', null, h('p', null, '5 to 18 minutes. Shows your gaps and where to start.'),
               h('a', { class: 'btn', href: '#/placement' }, 'Start the test', icon('arrow')))),
         h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 2'), h('h2', null, 'Choose what to practise'),
-          h('p', null, 'Pick tenses and a level. Tasks adapt to you.'),
-          h('a', { class: started ? 'btn' : 'btn ghost', href: '#/practice' }, 'Choose tenses', icon('arrow')))));
+          h('p', null, 'Pick topics and a level. Tasks adapt to you.'),
+          h('a', { class: started ? 'btn' : 'btn ghost', href: '#/practice' }, 'Choose topics', icon('arrow'))),
+        h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 3'), h('h2', null, 'Surprise me'),
+          h('p', null, started ? 'Topics picked from your own mistakes.' : 'A few friendly topics to start.'),
+          surpriseButton(started ? 'btn' : 'btn ghost'))));
 
       var ic = installCard(false); if (ic) nodes.push(ic);
       nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
         h('div', { class: 'card' }, h('h2', null, 'This week'), weekChart(d.week)),
         h('div', { class: 'card' }, h('h2', null, 'Your thinking skills'), bloomBars(d.bloom))));
 
-      nodes.push(h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'Your tenses'), h('a', { href: '#/rules', class: 'small' }, 'Rule cards')),
-        h('div', { class: 'skillgrid' }, d.skills.map(skillCard))));
+      nodes.push(h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'Your topics'), h('a', { href: '#/rules', class: 'small' }, 'Rule cards')),
+        state.meta.areas.map(function (a) {
+          var list = d.skills.filter(function (s) { return s.area === a.id; });
+          return list.length ? h('div', { class: 'area-block' }, h('div', { class: 'label' }, a.label), h('div', { class: 'skillgrid' }, list.map(skillCard))) : null;
+        })));
       show(h('div', null, nodes));
     }).catch(fail);
+  }
+
+  /** "Surprise me": the server picks topics from the learner's own mistakes and gaps. */
+  function surpriseButton(cls) {
+    var b = h('button', { class: cls, type: 'button', onclick: function () {
+      b.disabled = true;
+      api('session/start', { mode: 'smart', length: 12 }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+        .catch(function (e) { b.disabled = false; UI.toast(e.message); });
+    } }, icon('bolt'), 'Surprise me');
+    return b;
   }
 
   function stat(ic, v, k, cls) {
@@ -332,7 +353,7 @@
 
   function skillCard(s) {
     return h('div', { class: 'skill' },
-      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, VOICE_LABEL[s.voice] + ' · ' + s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''))),
+      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, areaLabel(s.area) + ' · ' + levelRange(s))),
         s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'pill' }, s.n ? s.n + (s.n === 1 ? ' task' : ' tasks') : 'New')),
       h('div', { class: 'meter gold', 'aria-label': 'Accuracy' }, h('i', { style: 'width:' + (s.accuracy || 0) + '%' })),
       h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.accuracy + '% correct · ' + s.n + ' tasks' : 'Not started'),
@@ -341,13 +362,20 @@
 
   // ───────── placement ─────────
   function viewPlacementIntro() {
+    var sizes = [[12, 'Quick', 'about 5 minutes'], [24, 'Medium', 'about 10 minutes'], [40, 'Full', 'about 18 minutes']];
+    var size = 24;
+    var go = h('button', { class: 'btn', id: 'go' }, 'Start the test');
+    var seg = h('div', { class: 'sizes', role: 'radiogroup', 'aria-label': 'Test length' }, sizes.map(function (z) {
+      return h('label', { class: 'size' }, h('input', { type: 'radio', name: 'sz', value: String(z[0]), checked: z[0] === size, onchange: function () { size = z[0]; } }),
+        h('span', null, h('b', null, z[1]), h('span', { class: 'muted' }, z[0] + ' questions'), h('span', { class: 'small muted' }, z[2])));
+    }));
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
       h('div', { class: 'label' }, 'Placement test'), h('h1', null, 'Find your starting point'),
-      h('p', null, state.meta.placement_length + ' short questions, about 10 minutes. They adapt to your answers.'),
-      h('div', { class: 'row' }, h('button', { class: 'btn', id: 'go' }, 'Start the test'), h('a', { class: 'btn ghost', href: '#/home' }, 'Not now')))));
-    document.getElementById('go').addEventListener('click', function () {
+      h('p', null, 'The questions adapt to your answers.'), seg,
+      h('div', { class: 'row', style: 'margin-top:16px' }, go, h('a', { class: 'btn ghost', href: '#/home' }, 'Not now')))));
+    go.addEventListener('click', function () {
       this.disabled = true;
-      api('session/start', { mode: 'placement' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
+      api('session/start', { mode: 'placement', length: size }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
     });
   }
 
@@ -366,25 +394,32 @@
 
     function checkbox(s) {
       var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; update(); } });
-      return h('label', null, inp, h('span', null, s.label, ' ', h('small', null, s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''))));
+      return h('label', null, inp, h('span', null, s.label, ' ', h('small', null, levelRange(s))));
     }
-    function group(voice, title) {
-      var list = state.meta.skills.filter(function (s) { return s.voice === voice; });
-      return h('div', { class: 'picker-group' },
-        h('div', { class: 'row between' }, h('h3', null, title),
-          h('button', { class: 'linkbtn small', onclick: function () { list.forEach(function (s) { selected[s.id] = true; }); redraw(); } }, 'Select all')),
-        h('div', { class: 'chipsel', role: 'group', 'aria-label': title }, list.map(checkbox)));
+    var closed = {};
+    function group(area) {
+      var list = state.meta.skills.filter(function (s) { return s.area === area.id; });
+      var n = list.filter(function (s) { return selected[s.id]; }).length;
+      var det = h('details', { class: 'picker-group', open: !closed[area.id] },
+        h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', 'data-cnt': area.id, style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
+        h('div', { class: 'row', style: 'margin:6px 0 8px' }, h('button', { class: 'linkbtn small', type: 'button', onclick: function () { list.forEach(function (s) { selected[s.id] = true; }); redraw(); } }, 'Select all')),
+        h('div', { class: 'chipsel', role: 'group', 'aria-label': area.label }, list.map(checkbox)));
+      det.addEventListener('toggle', function () { closed[area.id] = !det.open; });
+      return det;
     }
     function update() {
       var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
       startBtn.disabled = ids.length === 0;
+      holder.querySelectorAll('[data-cnt]').forEach(function (el) {
+        var n = state.meta.skills.filter(function (s) { return s.area === el.getAttribute('data-cnt') && selected[s.id]; }).length;
+        el.textContent = n + ' chosen'; el.style.display = n ? '' : 'none';
+      });
       var low = ids.map(skillById).filter(function (s) { return s.levels.indexOf(level) < 0; });
-      note.textContent = low.length ? low.map(function (s) { return s.label + ': ' + s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : '') + ' only, nearest level used.'; }).join(' ') : '';
+      note.textContent = low.length ? low.length + (low.length === 1 ? ' topic has' : ' topics have') + ' no tasks at ' + level + '. The nearest level is used.' : '';
     }
     var holder = h('div');
     function redraw() {
-      holder.replaceChildren(
-        group('active', 'Active tenses'), group('passive', 'Passive tenses'),
+      holder.replaceChildren.apply(holder, state.meta.areas.map(group).concat([
         h('div', { class: 'picker-group' }, h('h3', null, 'Level'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Level' }, state.meta.levels.map(function (l) {
             return h('label', null, h('input', { type: 'radio', name: 'lv', value: l, checked: l === level, onchange: function () { level = l; update(); } }), h('span', null, l));
@@ -392,7 +427,7 @@
         h('div', { class: 'picker-group' }, h('h3', null, 'Length'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of tasks' }, [10, 15, 20].map(function (n) {
             return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, n + ' tasks'));
-          }))));
+          })))]));
       update();
     }
     startBtn.addEventListener('click', function () {
@@ -404,7 +439,7 @@
     });
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
-      h('div', { class: 'label' }, 'Practice'), h('h1', null, 'Choose what to practise'),
+      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), surpriseButton('btn ghost small')),
       holder, note, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
         h('a', { class: 'btn ghost', href: '#/placement' }, 'Take the placement test instead')))));
   }
@@ -432,6 +467,7 @@
     var qEl = h('div', { class: 'q' });
     var inputs = [];
     var chosen = null;
+    var board = null; // a drag-and-drop board (word order, matching or word-bank gap)
 
     function ready() { submit.disabled = !canSubmit(); }
 
@@ -445,6 +481,12 @@
       area.appendChild(wrap);
       answerGetter = function () { return chosen; };
       canSubmit = function () { return chosen !== null; };
+    } else if (it.kind === 'order' || it.kind === 'match' || (it.kind === 'gap' && it.bank)) {
+      if (it.kind === 'order') { qEl.textContent = it.q; board = DnD.order(it.tokens, ready); }
+      else if (it.kind === 'match') { qEl.textContent = it.q; board = DnD.match(it.lefts, it.rights, ready); }
+      else { board = DnD.bankGap(it.q, it.bank, ready); qEl = board.sentence; area.appendChild(h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
+      area.appendChild(board.el);
+      answerGetter = board.answer; canSubmit = board.complete;
     } else if (it.kind === 'gap') {
       var parts = it.q.split('___');
       parts.forEach(function (p, i) {
@@ -496,6 +538,7 @@
     function lock() {
       inputs.forEach(function (i) { i.disabled = true; i.readOnly = true; });
       area.querySelectorAll('input[type=radio]').forEach(function (r) { r.disabled = true; });
+      if (board) board.lock();
       submit.remove();
     }
 
@@ -508,28 +551,52 @@
           if (o === res.show) l.classList.add('right'); else if (o === chosen) l.classList.add('wrong');
         });
       }
+      if (board) board.mark(it.kind === 'match' ? res.marks : res.correct);
+      drawFeedback(r, ans, true);
+      var prog = document.getElementById('prog');
+      if (prog) prog.style.width = Math.round(100 * ses.n / ses.length) + '%';
+    }
+
+    // The explanation can be shown in English or Latvian (up to B1.2). The learner's choice is remembered.
+    function drawFeedback(r, ans, first) {
+      var res = r.result;
+      var hasLv = !!res.why_lv;
+      var lv = hasLv && state.user.lang === 'lv';
       var good = res.correct;
       var cheers = ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
-      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? (tips.length ? 'Correct – with a small spelling tip' : cheers[Math.floor(Math.random() * cheers.length)]) : (it.kind === 'write' ? 'Almost – check these points' : 'Not quite'),
-        res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
+      var langBtn = hasLv ? h('button', { type: 'button', class: 'linkbtn small', style: 'margin-left:12px', onclick: function () {
+        state.user.lang = lv ? 'en' : 'lv';
+        api('account/profile', { lang: state.user.lang }).catch(function () {});
+        drawFeedback(r, ans, false);
+      } }, lv ? 'English' : 'Latviski') : null;
+      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (it.kind === 'write' ? 'Almost – check these points' : 'Not quite'),
+        langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
-      if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, 'You chose: '), chosen));
+      if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
       if (!good && (it.kind === 'gap' || it.kind === 'text')) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
-        fb.appendChild(h('p', null, h('b', null, 'You wrote: '), given));
+        fb.appendChild(h('p', null, h('b', null, lv ? 'Tu uzrakstīji: ' : 'You wrote: '), given));
       }
-      if (res.specific) fb.appendChild(h('p', null, h('b', null, 'Tip: '), res.specific));
+      if (!good && it.kind === 'order') fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), (ans || []).join(' ')));
+      var spec = lv && res.specific_lv ? res.specific_lv : res.specific;
+      if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), spec));
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
+      var why = lv ? res.why_lv : res.why;
       if (it.kind === 'write') {
-        fb.appendChild(h('div', { class: 'ans' }, h('b', null, 'Model answer: '), res.show));
-        fb.appendChild(h('p', null, res.why));
+        fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Piemēra atbilde: ' : 'Model answer: '), res.show));
+        fb.appendChild(h('p', null, why));
       } else {
-        if (!good || it.kind !== 'mcq') fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? 'Answer: ' : 'Correct answer: '), res.show));
-        fb.appendChild(h('p', null, h('b', null, 'Why: '), res.why));
+        if (it.kind === 'match') {
+          if (!good && res.pairs) fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Pareizi: ' : 'Correct pairs: '),
+            h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
+        } else if (!good || it.kind !== 'mcq') {
+          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), res.show));
+        }
+        fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), why));
       }
-      fb.appendChild(ruleDetails(res.skill, !good));
+      fb.appendChild(ruleDetails(res.skill, !good, lv));
 
       var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next task';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
@@ -540,11 +607,12 @@
         adaptNote = h('span', { class: 'adapt' }, 'Quick check: ' + Math.min(3, ses.n) + ' of 3');
       }
       fb.appendChild(h('div', { class: 'nextrow' }, adaptNote || h('span'), nextBtn));
+      var wasOpen = feedback.querySelector('details.rule[open]');
       feedback.replaceChildren(fb);
-      nextBtn.focus();
-      var prog = document.getElementById('prog');
-      if (prog) prog.style.width = Math.round(100 * ses.n / ses.length) + '%';
+      if (wasOpen) { var d = fb.querySelector('details.rule'); if (d) d.open = true; }
+      if (first) nextBtn.focus();
     }
+    var lastCheer = null;
 
     function next(r) {
       if (r.done) { state.sess = null; state.lastSummary = r.summary; go('#/summary'); return; }
@@ -579,19 +647,18 @@
     };
   }
 
-  function ruleDetails(skillId, open) {
+  function ruleDetails(skillId, open, lv) {
     var s = skillById(skillId); if (!s) return h('span');
-    var r = s.rule;
-    return h('details', { class: 'rule', open: false }, h('summary', null, 'Rule reminder: ' + s.label), ruleCard(s));
+    return h('details', { class: 'rule', open: false }, h('summary', null, (lv && s.rule_lv ? 'Atgādinājums: ' : 'Rule reminder: ') + s.label), ruleCard(s, lv));
   }
 
-  function ruleCard(s) {
-    var r = s.rule;
+  function ruleCard(s, lv) {
+    var r = lv && s.rule_lv ? s.rule_lv : s.rule, l = lv && s.rule_lv;
     return h('div', { class: 'rulecard' },
-      h('b', { style: 'color:var(--text)' }, 'How to make it'), h('ul', null, r.form.map(function (x) { return h('li', null, x); })),
-      h('b', { style: 'color:var(--text)' }, 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, x); })),
-      h('p', { class: 'small' }, h('b', null, 'Signal words: '), r.signals),
-      h('div', { class: 'ex' }, h('b', null, 'Example: '), r.example));
+      h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('ul', null, r.form.map(function (x) { return h('li', null, x); })),
+      h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, x); })),
+      h('p', { class: 'small' }, h('b', null, l ? 'Signālvārdi: ' : 'Signal words: '), r.signals),
+      h('div', { class: 'ex' }, h('b', null, l ? 'Piemērs: ' : 'Example: '), s.rule.example));
   }
 
   // ───────── summary ─────────
@@ -608,7 +675,7 @@
         h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),
         h('div', null, h('div', { class: 'big' }, s.accuracy + '%'), h('div', { class: 'muted small' }, 'accuracy')))));
     nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
-      h('div', { class: 'card' }, h('h2', null, 'By tense'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
+      h('div', { class: 'card' }, h('h2', null, 'By topic'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
         return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)),
           h('div', { class: 'meter gold', style: 'margin:6px 0 3px' }, h('i', { style: 'width:' + pct(k.correct, k.n) + '%' })), h('span', { class: 'small muted' }, k.correct + ' of ' + k.n + ' correct'));
       }))),
@@ -631,9 +698,9 @@
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, fresh ? 'Placement test finished' : 'Placement result'), h('h1', null, 'Your level is about ', h('span', { class: 'levelbadge' }, s.overall_level)),
       h('p', null, s.correct + ' of ' + s.n + ' correct. A rough level, not an exam grade.'),
-      s.overall_level === 'B1.2' ? h('p', { class: 'small muted' }, 'This is the top level for now. B2 is coming.') : null,
+      s.overall_level === 'C1.2' ? h('p', { class: 'small muted' }, 'This is the top level in the app.') : null,
       s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
-    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 tenses'),
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 topics'),
       h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
         return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, g.why)),
           h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + g.level)));
@@ -641,7 +708,7 @@
       h('div', { class: 'row', style: 'margin-top:8px' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all 3 together'),
         h('a', { class: 'btn ghost', href: '#/practice' }, 'Choose my own'))));
     nodes.push(h('div', { class: 'grid g2' },
-      h('div', { class: 'card' }, h('h2', null, 'All tested tenses'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
+      h('div', { class: 'card' }, h('h2', null, 'All tested topics'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
         return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)));
       })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, 'Not tested (too advanced for now): ' + s.untested.map(function (u) { return u.label; }).join(', ') + '.') : null),
       h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
@@ -653,14 +720,23 @@
 
   // ───────── rules ─────────
   function viewRules() {
-    show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards'))),
-      h('div', { class: 'grid g2' }, state.meta.skills.map(function (s) {
-        return h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h3', { style: 'margin:0' }, s.label), h('span', { class: 'pill' }, VOICE_LABEL[s.voice])), ruleCard(s));
-      }))));
+    var lv = state.user.lang === 'lv';
+    var toggle = h('button', { type: 'button', class: 'btn ghost small', onclick: function () {
+      state.user.lang = lv ? 'en' : 'lv';
+      api('account/profile', { lang: state.user.lang }).catch(function () {});
+      viewRules();
+    } }, lv ? 'English' : 'Latviski');
+    show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards')), toggle),
+      state.meta.areas.map(function (a) {
+        var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
+        return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'grid g2' }, list.map(function (s) {
+          return h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h3', { style: 'margin:0' }, s.label), h('span', { class: 'pill' }, levelRange(s))), ruleCard(s, lv));
+        })));
+      })));
   }
   function rulesModal(id) {
     var s = skillById(id);
-    var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s), h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'c' }, 'Close'))));
+    var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'), h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'c' }, 'Close'))));
     m.el.querySelector('#c').onclick = m.close;
   }
 
@@ -710,6 +786,7 @@
     var cards = [];
     if (guest) cards.push(guestBanner());
     cards.push(avatarCard());
+    cards.push(langCard());
     var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
     if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off '), '(set on englishfever.com). Your answers are still saved.'));
@@ -724,6 +801,18 @@
       api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
     } }, icon('logout'), guest ? 'Leave guest session' : 'Sign out')));
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
+  }
+
+  /** Grammar explanations in English or Latvian (Latvian is written for levels up to B1.2). */
+  function langCard() {
+    var msg = h('span', { class: 'small muted', role: 'status' });
+    var seg = h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Language of the explanations' }, [['en', 'English'], ['lv', 'Latviešu']].map(function (o) {
+      return h('label', null, h('input', { type: 'radio', name: 'lang', value: o[0], checked: (state.user.lang || 'en') === o[0], onchange: function () {
+        state.user.lang = o[0];
+        api('account/profile', { lang: o[0] }).then(function () { msg.textContent = 'Saved'; }).catch(function () {});
+      } }), h('span', null, o[1]));
+    }));
+    return h('div', { class: 'card' }, h('h2', null, 'Explanations'), h('div', { class: 'row' }, seg, msg), h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'Latvian: levels up to B1.2.'));
   }
 
   /** Choose a character, symbol or initial and a background colour. Collapsed until "Change" is pressed. */
@@ -884,7 +973,7 @@
         return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' tasks' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
       }));
       var skillRows = d.skills.filter(function (s) { return s.n > 0; }).map(function (s) {
-        return h('tr', null, h('td', null, s.label), h('td', null, VOICE_LABEL[s.voice]), h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, 'few tasks')), h('td', { class: 'r num' }, String(s.n)), h('td', { class: 'r num' }, s.accuracy + '%'));
+        return h('tr', null, h('td', null, s.label), h('td', null, areaLabel(s.area)), h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, 'few tasks')), h('td', { class: 'r num' }, String(s.n)), h('td', { class: 'r num' }, s.accuracy + '%'));
       });
       var rep = d.placement && d.placement.report;
       show(h('div', null,
@@ -896,8 +985,8 @@
           h('div', { class: 'card' }, h('h2', null, 'Thinking levels'), bloomBars(d.bloom))),
         rep ? h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Placement test'), h('p', null, 'Level: ', h('span', { class: 'levelbadge', style: 'font-size:1.1rem;padding:3px 12px' }, rep.overall_level), ' · ' + UI.fmtAgo(d.placement.at) + ' · ' + rep.correct + '/' + rep.n + ' correct'),
           h('p', { class: 'small' }, h('b', null, 'Gaps: '), rep.gaps.map(function (g) { return g.label + ' (' + g.level + ')'; }).join(', '))) : null,
-        h('div', { class: 'card', style: 'margin-bottom:16px;padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Tenses'),
-          skillRows.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['Tense', 'Voice', 'Level', 'Tasks', 'Correct'].map(function (t, i) { return h('th', { class: i > 2 ? 'r' : '' }, t); }))), h('tbody', null, skillRows))) : h('p', { class: 'empty' }, 'No tasks done yet.')),
+        h('div', { class: 'card', style: 'margin-bottom:16px;padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Topics'),
+          skillRows.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['Topic', 'Area', 'Level', 'Tasks', 'Correct'].map(function (t, i) { return h('th', { class: i > 2 ? 'r' : '' }, t); }))), h('tbody', null, skillRows))) : h('p', { class: 'empty' }, 'No tasks done yet.')),
         h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Recent answers'),
           r.recent.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['When', 'Task', 'Answer', '', 'Level', 'Thinking', 'Sec'].map(function (t) { return h('th', null, t); }))),
             h('tbody', null, r.recent.map(function (a) {

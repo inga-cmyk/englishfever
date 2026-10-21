@@ -98,7 +98,10 @@ def check(name, cond, extra=""):
     print(("PASS " if cond else "FAIL ") + name + ("  -> " + str(extra) if extra and not cond else ""))
 
 
-today = time.strftime("%Y-%m-%d")
+# the app and the real site both count days in Riga time; make the stand-in WordPress do the same
+# (otherwise the two disagree about the date between 21:00 and 24:00 UTC)
+wpcli("option", "update", "timezone_string", "Europe/Riga")
+today = wpcli("eval", "echo current_time('Y-m-d');")
 maria = uid_of("maria"); optout = uid_of("optout")
 
 # 1. login through the plugin
@@ -120,7 +123,7 @@ check("visitor + go link: website login first, then back", s2 == 302 and "dashbo
 s3, _, h3 = wpb.req(WP + "/?ef_practice=open")
 check("logged-in student + open link: signed in and sent to the app", s3 == 302 and "sso.php?token=" in (h3.get("Location") or ""), (s3, h3.get("Location")))
 page = anon.req(WP + "/banner/")[1]
-check("English banner", "Practise English grammar" in page and "No registration needed" in page and "Free · A2.1 – B1.2" in page)
+check("English banner", "Practise English grammar" in page and "No registration needed" in page and "Free · A2.1 – C1" in page)
 check("Latvian banner", "Trenējiet angļu valodas gramatiku" in page and "Sākt praksi" in page)
 check("banner texts can be changed", "Own title" in page and "Own text" in page and "Own button" in page)
 check("banner and button use the guest-friendly link", page.count("ef_practice=open") >= 4 and "ef_practice=go" not in page, page.count("ef_practice=open"))

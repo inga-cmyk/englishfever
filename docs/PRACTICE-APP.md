@@ -1,16 +1,19 @@
-# English Fever Practice – tenses A2.1 to B1.2
+# English Fever Practice – grammar A2.1 to C1
 
-A small web app for adult learners to practise active and passive tenses. It lives in `app/`, separate from WordPress, and runs on your Hostinger Cloud plan (PHP + MySQL).
+A small web app for adult learners to practise English grammar: tenses (active and passive), conditionals, reported speech and indirect questions. It lives in `app/`, separate from WordPress, and runs on your Hostinger Cloud plan (PHP + MySQL).
 
 ## What it does
 
 **Learners**
 - **Registered students** (Tutor LMS users) continue with their englishfever.com account in one click: no second registration, no new password. On the first visit they confirm how their name is shown (their real name or a nickname). Their results are saved.
 - **Guests** can start with one click (an optional name field; without a name they appear as "Guest 4821"). No password, no registration. You see them in the teacher list, marked *guest*. Their results stay in that browser and are lost if it is cleared. After practice, a popup invites them to create a free account. When they register and press "Continue with my account" in the same browser, everything they did as a guest moves into the new account. Guests are not on the leaderboard. Guest data is deleted after 60 days without a visit.
-- **Option 1 – placement test:** 24 adaptive questions, then a level estimate, the 3 tenses to start with, and a "Practise" button for each.
-- **Option 2 – choose:** pick one tense or several, and a level (A2.1, A2.2, B1.1, B1.2).
+- **Option 1 – placement test:** three sizes (Quick 12 questions, Medium 24, Full 40). The level is fitted to all answers, not to the path of the test; in simulations Medium and Full find the true level within one sub-level almost always, Quick within about one level. It shows a level estimate, the 3 topics to start with, and a "Practise" button for each.
+- **Option 2 – choose:** pick topics from five areas (Active tenses, Passive tenses, Conditionals, Reported speech, Indirect questions) and a level from A2.1 to C1.2.
+- **Option 3 – Surprise me:** the app picks 3-4 topics from the learner's own mistakes and weak spots (plus one topic not tried yet), centres each topic on the learner's level in it, and brings back tasks they got wrong before. New learners get friendly starter topics.
 - **Practice:** the first 3 tasks are a quick check at the chosen level. After that, the tasks get harder after correct answers and easier after mistakes, and the learner is told which way the next task goes.
-- **Feedback after every answer:** right or wrong, the correct answer, a one-sentence reason, a specific tip for common mistakes, and a collapsible rule card.
+- **Feedback after every answer:** right or wrong, the correct answer, a one-sentence reason, a specific tip for common mistakes, and a collapsible rule card. **Up to level B1.2 the reason, the tips and the rule card can be shown in Latvian** (button *Latviski* on the feedback, setting in Profile, remembered per learner).
+- **Drag-and-drop tasks:** put words in order, match beginnings with endings, and fill gaps from a word bank. They work with a mouse, with a finger, and with the keyboard (Tab to a card, Enter to move it); tapping also moves a card, so nothing depends on dragging.
+- **Link to your website:** registered learners and teachers see *My dashboard* (top bar on computers, on Home on phones). Set `dashboard_url` in `config.php` (for example `https://englishfever.com/en/dashboard/`); without it the link goes to `site_url`.
 - **Bloom's levels are built in, not a separate section.** Every tense and level has tasks at all six levels: Remember (recognise the form), Understand (explain use), Apply (gap fill, rewrite), Analyse (find the mistake), Evaluate (judge the best answer), Create (write a sentence, checked for the key grammar). The engine mixes them in each session.
 - Time practised (today, total), daily streak, XP, weekly and all-time leaderboard (registered learners only; the shown name is their choice, opt-out in Profile), progress per tense and per thinking level.
 
@@ -20,16 +23,22 @@ A small web app for adult learners to practise active and passive tenses. It liv
 - See guests and registered students in one list (guests are marked). A student's password is managed on englishfever.com, not in the app.
 - Export all answers as CSV.
 
-**Content now:** 13 skills (8 active, 5 passive), 241 tasks. Counts per level: A2.1 29, A2.2 56, B1.1 78, B1.2 78. Every tense and level has all six thinking levels.
+**Content now:** 24 topics, 442 tasks, all six thinking levels at every level of every topic. Counts per level: A2.1 29, A2.2 70, B1.1 115, B1.2 120, B2.1 36, B2.2 30, C1.1 24, C1.2 18. 334 tasks (up to B1.2) have a Latvian explanation.
 
-| Active | Passive |
+| Area | Topics (levels) |
 |---|---|
-| Present simple, present continuous, past simple (incl. *used to*), past continuous (incl. *was going to*), present perfect, present perfect continuous, past perfect, future (*will*, *going to*, present continuous, *be about to*) | Present simple, past simple, present continuous, present perfect, future (*will be done*) |
+| Active tenses | Present simple (A2.1-B1.1), present continuous (A2.1-B1.1), past simple incl. *used to* (A2.1-B1.2), past continuous incl. *was going to* (A2.2-B1.2), present perfect (A2.2-B1.2), present perfect continuous (B1.1-B1.2), past perfect (B1.2), future: *will*, *going to*, present continuous (A2.1-B1.2) |
+| Passive tenses | Present simple (A2.2-B1.2), past simple (A2.2-B1.2), present continuous (B1.2), present perfect (B1.1-B1.2), future (B1.1-B1.2) |
+| Conditionals | Zero (A2.2-B1.1), first incl. *unless*, *as soon as*, *in case* (A2.2-B1.2), second (B1.1-B2.1), third (B1.2-B2.2), mixed (B2.1-C1.1), advanced: inversion, *unless*, *provided that*, *wish*, *if only* (C1.1-C1.2) |
+| Reported speech | Statements and tense changes (B1.1-B2.1), questions and requests (B1.2-B2.2), reporting verbs (B2.2-C1.2) |
+| Indirect questions | Polite indirect questions (B1.1-B2.1), embedded questions, *what to do*, *whoever* (B2.2-C1.2) |
 
 ## What is not done yet (please read)
 
-- **B2.1 and B2.2 are not in the pilot.** Past perfect continuous, future continuous and perfect, past continuous and past perfect passive, mixed conditionals and reported speech belong there.
-- **A2.1 has the fewest tasks** (4 tenses). More A2.1 and A2.2 items would make the placement more precise for beginners.
+- **The tenses stop at B1.2 for now.** Past perfect continuous, future continuous and perfect, and the passive forms of the other tenses are still to be written for B2 and C1. The new topics (conditionals, reported speech, indirect questions) already reach C1.2.
+- **Task difficulty is written by us, not measured yet.** Each task's level was chosen by the author. After a few hundred learners have answered, the real difficulties should be compared with the written levels (the answers are stored for that). The placement result is an estimate, not an exam grade.
+- **The Latvian text was written by an AI and needs a Latvian teacher's eye.** The review spreadsheet has a Latvian column next to the English explanation for the 334 tasks that have one.
+- **A2.1 has the fewest tasks** (29). More A2.1 and A2.2 items would make the placement more precise for beginners.
 - **The question bank needs a teacher's review before learners use it.** Open `docs/practice-question-bank-review.csv` in a spreadsheet. Check the task, the answer, the wrong options and the explanation; write `ok` or `change` in the last columns. Wrong grammar feedback in a grammar app costs trust. Plan about 15–25 hours for the first pass.
 - **"Create" tasks check key patterns, not meaning.** A sentence passes if it contains the target structure (for example *have/has been + -ing*). It can pass a sentence that is odd in meaning and can fail a correct sentence written in an unexpected way. The model answer is always shown. A deeper check with an AI model could be added later.
 - **Tested here with:** PHP 8.3 on SQLite and on MariaDB 10.11 (including strict `ONLY_FULL_GROUP_BY` mode), a real browser (Chromium: desktop, phone width, dark mode), simulated learners, 30 API and login-handoff checks. **Not tested on a live Hostinger account or on your live WordPress site.** The plugin passed a syntax check and the token format is tested from the app side, but it has not run inside WordPress. Expect a small fix or two on first deployment.
@@ -232,7 +241,7 @@ Needs plugin **ef-practice-sso 1.1.0 or newer**.
 
 ## Maintenance
 
-**Add or fix questions.** Edit the files in `app/authoring/` (`content_*.py`), then:
+**Add or fix questions.** Edit the files in `app/authoring/` (`content_*.py`). Up to B1.2 every task also needs its Latvian explanation in the matching `lv_*.py` file (keyed by the task id; the build stops and lists what is missing). Task kinds: `M` multiple choice, `G` gap fill (with `bank=[...]` for drag-the-word gaps), `T` typed rewrite, `O` word order (drag), `D` matching (drag), `W` write. Then:
 ```
 python3 app/authoring/build.py              # checks everything, rewrites content/*.json and the review spreadsheet
 php app/tests/grader_test.php               # every task accepts its own answers and rejects its wrong options

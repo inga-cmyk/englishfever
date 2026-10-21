@@ -8,6 +8,6 @@ return [
     'wp_login_url' => '/sso-demo.php',
     'site_name' => 'English Fever',
     'privacy_url' => '#',
-    'contact_email' => '', 'site_url' => 'http://127.0.0.1:8099/', 'register_url' => 'https://example.com/register/',
+    'contact_email' => '', 'site_url' => 'http://127.0.0.1:8099/', 'dashboard_url' => 'http://127.0.0.1:8099/dashboard-demo/', 'register_url' => 'https://example.com/register/',
     'debug' => true,
 ];

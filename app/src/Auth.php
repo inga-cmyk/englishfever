@@ -80,6 +80,7 @@ final class Auth
             'show_on_board' => (bool) $u['show_on_board'], 'nick_set' => (bool) $u['nick_set'],
             'track_time' => (int) ($u['track_time'] ?? 1) === 1,
             'avatar' => self::effectiveAvatar($u['avatar'] ?? null, (int) $u['id']),
+            'lang' => ($u['lang'] ?? '') === 'lv' ? 'lv' : 'en', // language of the grammar explanations
         ];
     }
 
@@ -154,6 +155,8 @@ final class Auth
         $moved = ['answers' => (int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ?', [$guestId]), 'xp' => (int) Db::val('SELECT COALESCE(SUM(xp),0) FROM activity WHERE user_id = ?', [$guestId])];
         // the new account keeps the picture the guest was already seen with (chosen or assigned), unless it has its own
         if (!Db::val('SELECT avatar FROM users WHERE id = ?', [$toId])) Db::update('users', ['avatar' => self::effectiveAvatar($g['avatar'], $guestId)], 'id = ?', [$toId]);
+        $gl = Db::val('SELECT lang FROM users WHERE id = ?', [$guestId]);
+        if ($gl && !Db::val('SELECT lang FROM users WHERE id = ?', [$toId])) Db::update('users', ['lang' => $gl], 'id = ?', [$toId]);
         Db::q('UPDATE attempts SET user_id = ? WHERE user_id = ?', [$toId, $guestId]);
         Db::q('UPDATE psessions SET user_id = ? WHERE user_id = ?', [$toId, $guestId]);
         foreach (Db::all('SELECT * FROM skill_state WHERE user_id = ?', [$guestId]) as $r) {

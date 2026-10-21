@@ -7,7 +7,7 @@ final class Content
     private static ?array $meta = null;
     private static ?array $byId = null;
 
-    public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0];
+    public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0, 'C1.1' => 7.0, 'C1.2' => 8.0];
 
     /** content/<name>.php (production, never downloadable) or content/<name>.json (development). */
     private static function load(string $name): array
@@ -49,7 +49,7 @@ final class Content
     public static function levelFromTheta(float $theta, ?array $allowed = null): string
     {
         // boundaries calibrated with simulated learners (tests/sim.py): estimates run slightly low at the top and high at the bottom
-        $lv = $theta < 1.8 ? 'A2.1' : ($theta < 2.5 ? 'A2.2' : ($theta < 3.5 ? 'B1.1' : 'B1.2'));
+        $lv = $theta < 1.8 ? 'A2.1' : ($theta < 2.5 ? 'A2.2' : ($theta < 3.5 ? 'B1.1' : ($theta < 4.5 ? 'B1.2' : ($theta < 5.5 ? 'B2.1' : ($theta < 6.5 ? 'B2.2' : ($theta < 7.5 ? 'C1.1' : 'C1.2'))))));
         if ($allowed) {
             $order = array_keys(self::BASE);
             $idx = array_search($lv, $order);
@@ -60,6 +60,16 @@ final class Content
             return $best;
         }
         return $lv;
+    }
+
+    /** The level for an ability fitted to all answers at once (placement): the boundaries sit halfway between the level bases. */
+    public static function levelFromAbility(float $theta): string
+    {
+        $out = 'A2.1';
+        foreach (self::BASE as $lv => $base) {
+            if ($theta >= $base - 0.5 + ($lv === 'A2.1' ? 99 : 0)) $out = $lv;
+        }
+        return $out;
     }
 
     public static function skill(string $id): ?array
@@ -77,21 +87,38 @@ final class Content
         $out = [
             'id' => $it['id'], 'kind' => $it['kind'], 'q' => $it['q'], 'bloom' => $it['bloom'],
             'level' => $it['level'], 'skill' => $it['skill'], 'skill_label' => $skill['label'] ?? $it['skill'],
-            'voice' => $skill['voice'] ?? 'active',
+            'area' => $skill['area'] ?? 'active',
         ];
+        $seed = ($seed ?? random_int(1, 1 << 30)) ^ crc32($it['id']);
         if ($it['kind'] === 'mcq') {
-            $opts = array_merge([$it['correct']], $it['wrong']);
-            mt_srand(($seed ?? random_int(1, 1 << 30)) ^ crc32($it['id']));
-            for ($i = count($opts) - 1; $i > 0; $i--) {
-                $j = mt_rand(0, $i);
-                [$opts[$i], $opts[$j]] = [$opts[$j], $opts[$i]];
-            }
-            mt_srand();
-            $out['options'] = $opts;
+            $out['options'] = self::shuffled(array_merge([$it['correct']], $it['wrong']), $seed);
         }
         if ($it['kind'] === 'gap') {
             $out['blanks'] = count($it['answers']);
+            if (!empty($it['bank'])) $out['bank'] = self::shuffled($it['bank'], $seed);
+        }
+        if ($it['kind'] === 'order') {
+            $out['tokens'] = self::shuffled(explode(' ', $it['sentence']), $seed);
+        }
+        if ($it['kind'] === 'match') {
+            $out['lefts'] = array_column($it['pairs'], 0);
+            $out['rights'] = self::shuffled(array_column($it['pairs'], 1), $seed);
         }
         return $out;
+    }
+
+    /** A repeatable shuffle (the same task shows the same order after a reload). Never returns the original order. */
+    private static function shuffled(array $list, int $seed): array
+    {
+        $orig = array_values($list);
+        $a = $orig;
+        mt_srand($seed);
+        for ($i = count($a) - 1; $i > 0; $i--) {
+            $j = mt_rand(0, $i);
+            [$a[$i], $a[$j]] = [$a[$j], $a[$i]];
+        }
+        mt_srand();
+        if ($a === $orig && count($a) > 1) $a = array_merge(array_slice($a, 1), [$a[0]]);
+        return $a;
     }
 }

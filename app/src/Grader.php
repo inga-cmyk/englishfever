@@ -77,6 +77,7 @@ final class Grader
                     'correct' => $ok,
                     'show' => $item['correct'],
                     'specific' => (!$ok && is_string($answer)) ? ($item['wrong_why'][$answer] ?? null) : null,
+                    'specific_lv' => (!$ok && is_string($answer)) ? ($item['wrong_why_lv'][$answer] ?? null) : null,
                     'notes' => [],
                 ];
 
@@ -99,16 +100,18 @@ final class Grader
                 }
                 $show = implode(' / ', array_map(fn($b) => $b[0], $blanks));
                 $specific = null;
+                $specificLv = null;
                 if ($ok && $item['kind'] === 'text') {
                     $notes = array_merge($notes, self::capitalNotes($given[0], $blanks[0][0]));
                 }
                 if (!$ok) {
                     $notes = [];
                     $hay = [mb_strtolower(implode(' / ', $given), 'UTF-8'), self::norm(implode(' / ', $given))];
-                    foreach ($item['hints'] ?? [] as [$pattern, $msg]) {
+                    foreach ($item['hints'] ?? [] as $hint) {
                         foreach ($hay as $h) {
-                            if (@preg_match(self::rx($pattern), $h) === 1) {
-                                $specific = $msg;
+                            if (@preg_match(self::rx($hint[0]), $h) === 1) {
+                                $specific = $hint[1];
+                                $specificLv = $hint[2] ?? null;
                                 break 2;
                             }
                         }
@@ -117,7 +120,31 @@ final class Grader
                         $specific = 'You did not type an answer.';
                     }
                 }
-                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'notes' => array_values(array_unique($notes))];
+                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'notes' => array_values(array_unique($notes))];
+
+            case 'order':
+                // the learner drags cards into order: the same cards must all be used once, and the sentence must be an accepted one
+                $given = is_array($answer) ? array_map('strval', $answer) : preg_split('/\s+/u', trim((string) $answer), -1, PREG_SPLIT_NO_EMPTY);
+                $want = explode(' ', $item['sentence']);
+                $a = $given; $b = $want; sort($a); sort($b);
+                $nice = self::nice($item['sentence']);
+                if ($a !== $b) return ['correct' => false, 'show' => $nice, 'specific' => 'Use every card once.', 'specific_lv' => 'Izmanto katru kartīti vienu reizi.', 'notes' => []];
+                $acc = array_map([self::class, 'norm'], $item['answers'][0]);
+                return ['correct' => in_array(self::norm(implode(' ', $given)), $acc, true), 'show' => $nice, 'specific' => null, 'notes' => []];
+
+            case 'match':
+                $given = is_array($answer) ? array_map('strval', array_values($answer)) : [];
+                $marks = [];
+                foreach ($item['pairs'] as $i => $p) $marks[] = (($given[$i] ?? null) === $p[1]);
+                $ok = count($given) === count($item['pairs']) && !in_array(false, $marks, true);
+                $bad = [];
+                foreach ($item['pairs'] as $i => $p) if (!$marks[$i]) $bad[] = $p[0];
+                return [
+                    'correct' => $ok, 'marks' => $marks,
+                    'show' => implode(' | ', array_map(fn($p) => $p[0] . ' = ' . $p[1], $item['pairs'])),
+                    'specific' => (!$ok && count($given) === count($item['pairs'])) ? 'Look again at: ' . implode(' / ', array_slice($bad, 0, 3)) . '.' : null,
+                    'notes' => [],
+                ];
 
             case 'write':
                 $text = trim((string) (is_array($answer) ? ($answer[0] ?? '') : $answer));
@@ -131,19 +158,29 @@ final class Grader
                     foreach ($fixed as $f) $notes[] = "Use an apostrophe: $f.";
                 }
                 $msgs = [];
-                foreach ($item['must'] as [$pattern, $msg]) {
-                    if (@preg_match(self::rx($pattern), $text) !== 1) {
-                        $msgs[] = $msg;
+                $msgsLv = [];
+                foreach ($item['must'] as $m) {
+                    if (@preg_match(self::rx($m[0]), $text) !== 1) {
+                        $msgs[] = $m[1];
+                        $msgsLv[] = $m[2] ?? null;
                     }
                 }
                 return [
                     'correct' => count($msgs) === 0,
                     'show' => $item['model'],
                     'specific' => count($msgs) ? implode(' ', $msgs) : null,
+                    'specific_lv' => (count($msgs) && !in_array(null, $msgsLv, true)) ? implode(' ', $msgsLv) : null,
                     'notes' => count($msgs) ? [] : $notes,
                 ];
         }
         return ['correct' => false, 'show' => '', 'specific' => null, 'notes' => []];
+    }
+
+    /** A word-order answer is stored lower case without punctuation. Show it as a normal sentence. */
+    private static function nice(string $s): string
+    {
+        $q = preg_match('/^(could|can|do|does|did|would|will|is|are|was|were|have|has|what|where|when|why|how|who|which)\b/i', $s);
+        return mb_strtoupper(mb_substr($s, 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($s, 1, null, 'UTF-8') . ($q ? '?' : '.');
     }
 
     /** Words the learner can see in the task (they may be copied, so a typo in them is just a typo). */

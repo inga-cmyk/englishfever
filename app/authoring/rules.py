@@ -1,7 +1,15 @@
-"""Short rule cards (easy English). One per skill. Shown after a wrong answer and in the tense picker."""
+"""Short rule cards (easy English). One per skill. Shown after a wrong answer and in the topic picker."""
+
+AREAS = [
+    ("active", "Active tenses"),
+    ("passive", "Passive tenses"),
+    ("conditionals", "Conditionals"),
+    ("reported", "Reported speech"),
+    ("indirect", "Indirect questions"),
+]
 
 SKILLS = [
-    # id, label, voice, levels, group
+    # id, label, area, levels
     ("present_simple", "Present simple", "active", ["A2.1", "A2.2", "B1.1"]),
     ("present_continuous", "Present continuous", "active", ["A2.1", "A2.2", "B1.1"]),
     ("past_simple", "Past simple", "active", ["A2.1", "A2.2", "B1.1", "B1.2"]),
@@ -15,6 +23,17 @@ SKILLS = [
     ("present_continuous_passive", "Present continuous passive", "passive", ["B1.2"]),
     ("present_perfect_passive", "Present perfect passive", "passive", ["B1.1", "B1.2"]),
     ("future_passive", "Future passive (will be done)", "passive", ["B1.1", "B1.2"]),
+    ("cond_zero", "Zero conditional (if + present, present)", "conditionals", ["A2.2", "B1.1"]),
+    ("cond_first", "First conditional (if + present, will)", "conditionals", ["A2.2", "B1.1", "B1.2"]),
+    ("cond_second", "Second conditional (if + past, would)", "conditionals", ["B1.1", "B1.2", "B2.1"]),
+    ("cond_third", "Third conditional (if + had done, would have done)", "conditionals", ["B1.2", "B2.1", "B2.2"]),
+    ("cond_mixed", "Mixed conditionals", "conditionals", ["B2.1", "B2.2", "C1.1"]),
+    ("cond_advanced", "Advanced conditionals: inversion, unless, wish", "conditionals", ["C1.1", "C1.2"]),
+    ("rep_statements", "Reported statements (tense changes)", "reported", ["B1.1", "B1.2", "B2.1"]),
+    ("rep_questions", "Reported questions and requests", "reported", ["B1.2", "B2.1", "B2.2"]),
+    ("rep_verbs", "Reporting verbs (suggest, admit, promise...)", "reported", ["B2.2", "C1.1", "C1.2"]),
+    ("ind_polite", "Indirect questions (Could you tell me where...)", "indirect", ["B1.1", "B1.2", "B2.1"]),
+    ("ind_advanced", "Embedded questions (I wonder if..., what to do)", "indirect", ["B2.2", "C1.1", "C1.2"]),
 ]
 
 RULES = {
@@ -114,6 +133,86 @@ RULES = {
         "example": "The results will be announced on Friday.",
     },
 }
+
+RULES.update({
+    "cond_zero": {
+        "form": ["If + present simple, present simple: If you heat ice, it melts.", "You can use when or whenever instead of if: Whenever it rains, the road gets slippery.",
+                 "Negative: If you don't water plants, they die."],
+        "use": ["Facts that are always true (science, nature).", "General rules and habits.", "Instructions: If the light is red, stop."],
+        "signals": "if, when, whenever, every time",
+        "example": "If you leave biscuits on the desk, someone eats them.",
+    },
+    "cond_first": {
+        "form": ["If + present simple, will + base verb: If it rains, we will stay home.", "The if-part can come second: We will stay home if it rains.",
+                 "Other modals are possible in the result: may, might, can, should.", "No will after if: If it rains (not If it will rain)."],
+        "use": ["Real, possible situations in the future.", "Promises, warnings and offers.", "First conditional = one future situation. Zero conditional = always true."],
+        "signals": "if, unless, as soon as, when, in case",
+        "example": "If you send the email now, she will reply before lunch.",
+    },
+    "cond_second": {
+        "form": ["If + past simple, would + base verb: If I won the lottery, I would quit my job.", "Use were for every person in careful English: If I were you, ...",
+                 "Question: What would you do if ...?", "Could or might can replace would."],
+        "use": ["Unreal or unlikely situations in the present or future.", "Advice: If I were you, I'd talk to your manager.", "Imagining."],
+        "signals": "if, imagine, suppose, if I were you",
+        "example": "If I were the boss, I would cancel Mondays.",
+    },
+    "cond_third": {
+        "form": ["If + past perfect, would have + past participle: If I had known, I would have called.", "Negative: If I hadn't ..., I wouldn't have ...",
+                 "Could have or might have if the result is less sure."],
+        "use": ["Unreal situations in the past: it did not happen.", "Regret and criticism.", "Imagining a different past."],
+        "signals": "if, if only, too late, I wish (past)",
+        "example": "If we had left earlier, we wouldn't have missed the train.",
+    },
+    "cond_mixed": {
+        "form": ["Past condition, present result: If + past perfect, would + base verb: If I had taken that job, I would be rich now.",
+                 "Present condition, past result: If + past simple, would have + past participle: If I weren't so shy, I would have asked her."],
+        "use": ["A past event that changes the present.", "A present situation that would have changed a past event."],
+        "signals": "now, still, today, by now, at the time",
+        "example": "If I had learned English earlier, I would speak it perfectly now.",
+    },
+    "cond_advanced": {
+        "form": ["Inversion (formal): Had I known, I would have helped. = If I had known.", "Should you need help, call me. = If you should need help.", "Were she here, she would agree. = If she were here.",
+                 "unless = if ... not. as long as / provided that = only if.", "wish + past simple (now), wish + past perfect (regret), wish + would (annoyance)."],
+        "use": ["Formal writing and speaking.", "Strong regret and wishes.", "Conditions with unless, as long as, provided that, otherwise, but for."],
+        "signals": "had I, should you, were I, unless, provided that, as long as, otherwise, I wish, if only",
+        "example": "Had I known about the delay, I would have taken a taxi.",
+    },
+    "rep_statements": {
+        "form": ["said / told + (that) + clause: She said (that) she was tired.", "Tenses usually go one step back: am/is → was, work → worked, worked → had worked, will → would, can → could.",
+                 "Pronouns and time words change: I → he/she, now → then, today → that day, tomorrow → the next day, here → there.", "tell needs a person: He told me. say does not: He said that ..."],
+        "use": ["Telling someone what another person said.", "If the fact is still true, or you report it at once, the tense can stay: She says she's tired."],
+        "signals": "said, told, now → then, yesterday → the day before",
+        "example": "\"I'm working late,\" he said. → He said he was working late.",
+    },
+    "rep_questions": {
+        "form": ["Yes/no questions: asked + if / whether + subject + verb: She asked if I liked coffee.", "Wh-questions: asked + question word + subject + verb: He asked where I lived.",
+                 "Normal word order, no do / does / did: She asked what I did (not what did I do).", "Requests and orders: told / asked + person + (not) to + base verb: He told me to wait."],
+        "use": ["Reporting what someone asked.", "Reporting what someone told or asked you to do."],
+        "signals": "asked, wondered, wanted to know, told someone to",
+        "example": "\"Where do you work?\" → She asked me where I worked.",
+    },
+    "rep_verbs": {
+        "form": ["verb + that: admit, claim, complain, explain, insist, promise, warn, announce.", "verb + person + to + base verb: advise, warn, remind, invite, encourage, persuade.",
+                 "verb + to + base verb: offer, refuse, promise, threaten, agree.", "verb + -ing: suggest, admit, deny, recommend.", "verb + preposition + -ing: apologise for, insist on, accuse (someone) of, congratulate (someone) on."],
+        "use": ["Reporting what the person meant to do (promise, warn, deny), not only the words.", "Shorter and more natural than said that ..."],
+        "signals": "admitted, denied, suggested, insisted, promised, warned, apologised for",
+        "example": "\"I'm sorry I'm late.\" → He apologised for being late.",
+    },
+    "ind_polite": {
+        "form": ["Start with: Could you tell me / Do you know / Can you tell me / I wonder.", "Then use statement word order: ... where the station is (not where is the station).",
+                 "No do / does / did in the second part: ... what time the shop opens.", "Yes/no questions: use if or whether: Do you know if she is here?"],
+        "use": ["Polite requests for information.", "Talking to strangers, customers and at work.", "A full stop after I wonder ... / I'd like to know ...; a question mark after Could you / Do you know ..."],
+        "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
+        "example": "Could you tell me where the meeting room is?",
+    },
+    "ind_advanced": {
+        "form": ["Question word + to + base verb: I don't know what to do. I'm not sure how to start.", "if / whether (+ or not): I can't decide whether to accept.",
+                 "An embedded question can be a subject: What he said surprised me.", "After prepositions: We talked about how to improve the results."],
+        "use": ["Reports, emails and formal writing.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
+        "signals": "I wonder, no idea, not sure, it depends on, the question is, whoever, whatever",
+        "example": "I have no idea how long the meeting will take.",
+    },
+})
 
 BLOOM = {
     1: ("Remember", "Recognise the correct form"),

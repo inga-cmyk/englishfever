@@ -83,7 +83,7 @@ final class Stats
             $r = $have[$s['id']] ?? null;
             $n = $r ? (int) $r['n'] : 0;
             $out[] = [
-                'id' => $s['id'], 'label' => $s['label'], 'voice' => $s['voice'], 'levels' => $s['levels'],
+                'id' => $s['id'], 'label' => $s['label'], 'area' => $s['area'], 'levels' => $s['levels'],
                 'n' => $n, 'correct' => $r ? (int) $r['n_correct'] : 0,
                 'accuracy' => $n ? round(100 * $r['n_correct'] / $n) : null,
                 'theta' => $r ? round((float) $r['theta'], 2) : null,

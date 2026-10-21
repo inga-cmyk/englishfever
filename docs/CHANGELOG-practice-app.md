@@ -2,6 +2,17 @@
 
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
+## Grammar batch (not uploaded yet)
+- **New topics:** conditionals (zero, first, second, third, mixed, advanced), reported speech (statements, questions and requests, reporting verbs) and indirect questions (polite and embedded). 11 topics, 201 new tasks, up to **C1.2**. Levels B2.1, B2.2, C1.1, C1.2 exist now.
+- **New menu:** the practice picker groups topics into five areas (fold-away sections, *Select all*, counters) with eight levels. **Surprise me** (Home and Practice) picks topics from the learner's own mistakes and weak spots.
+- **Placement:** Quick (12), Medium (24) and Full (40). The level is now fitted to all answers (more accurate, especially for strong learners); the old "below 35 percent means A2.1" rule is gone.
+- **Drag-and-drop tasks:** word order, matching and word-bank gaps; mouse, touch and keyboard.
+- **Latvian explanations up to B1.2** (334 tasks and 20 rule cards): button *Latviski* on the feedback, setting in Profile, rule cards page. Needs a Latvian teacher's review.
+- **Link to the englishfever.com dashboard:** top bar (computers), Home and Profile-adjacent greeting; set `dashboard_url` in `config.php`.
+- Answer boxes and the answer sanitiser: odd answers (lists, huge text, objects) count as wrong, never as an error.
+- **Plugin 1.5.1:** the homepage banner text now says A2.1 – C1 (the banner can also be given its own text in the shortcode). Upload is optional.
+- Placement review tests: `app/tests/sim.py` has learners from A2.1 to C1.
+
 ## Next package (not uploaded yet)
 - Spelling policy: missing apostrophes, capital letters and safe one-letter typos accepted with a tip (`'spelling' => 'strict'` switches it off).
 - A2.1 "evaluate" tasks reworded to "Is this sentence correct?".

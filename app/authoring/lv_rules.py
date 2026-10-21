@@ -1,0 +1,120 @@
+"""Latvian rule cards for every topic that has levels up to B1.2. The example sentence stays English."""
+from lv_data import LV_RULES
+
+LV_RULES.update({
+    "present_simple": {
+        "form": ["I / you / we / they + darbības vārda pamatforma: I work.", "he / she / it + darbības vārds ar -s: She works.",
+                 "Noliegums: don't / doesn't + pamatforma.", "Jautājums: Do / Does + teikuma priekšmets + pamatforma?"],
+        "use": ["Ieradumi un ikdienas rutīna.", "Vienmēr patiesi fakti.", "Saraksti un grafiki (the train leaves at 7.45)."],
+        "signals": "always, usually, often, sometimes, never, every day (vienmēr, parasti, bieži, dažreiz, nekad, katru dienu)",
+    },
+    "present_continuous": {
+        "form": ["am / is / are + darbības vārds ar -ing: I am working.", "Noliegums: am / is / are + not + -ing.", "Jautājums: Am / Is / Are + teikuma priekšmets + -ing?"],
+        "use": ["Darbība, kas notiek tieši tagad.", "Pagaidu situācijas.", "Mainīgas, norisošas situācijas.", "Fiksēti nākotnes plāni."],
+        "signals": "now, at the moment, today, this week, these days, tomorrow (plāniem)",
+    },
+    "past_simple": {
+        "form": ["Regulārie darbības vārdi: pamatforma + -ed (worked).", "Neregulārie darbības vārdi ir jāiemācās (go - went, see - saw).",
+                 "Noliegums: didn't + pamatforma.", "Jautājums: Did + teikuma priekšmets + pamatforma?", "Pagātnes ieradumi: used to + pamatforma."],
+        "use": ["Pabeigtas darbības pabeigtā laikā.", "Darbību virkne stāstā.", "Pagātnes ieradumi un stāvokļi (used to)."],
+        "signals": "yesterday, last week, in 2019, three days ago (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)",
+    },
+    "past_continuous": {
+        "form": ["was / were + -ing: I was working.", "Noliegums: wasn't / weren't + -ing.", "Jautājums: Was / Were + teikuma priekšmets + -ing?",
+                 "Plāns, kas nenotika: was / were going to + pamatforma."],
+        "use": ["Darbība, kas pagātnē noteiktā brīdī bija procesā.", "Garāku darbību pārtrauc īsa darbība (Past Simple).", "Stāsta fons."],
+        "signals": "at 8 o'clock yesterday, while, when, as",
+    },
+    "present_perfect": {
+        "form": ["have / has + darbības vārda 3. forma (past participle): I have seen it.", "Noliegums: haven't / hasn't + 3. forma.", "Jautājums: Have / Has + teikuma priekšmets + 3. forma?"],
+        "use": ["Dzīves pieredze (bez precīza laika).", "Kaut kas sācies pagātnē un turpinās (for / since).", "Pagātnes darbība ar rezultātu tagad.", "Jaunākās ziņas (just, already, yet)."],
+        "signals": "ever, never, just, already, yet, for, since, so far, this week",
+    },
+    "present_perfect_continuous": {
+        "form": ["have / has been + -ing: I have been working.", "Noliegums: haven't / hasn't been + -ing.", "Jautājums: Have / Has + teikuma priekšmets + been + -ing?"],
+        "use": ["Darbība, kas sākās pagātnē un turpinās tagad.", "Nesena darbība, kas izskaidro situāciju tagad.", "Cik ilgi kaut kas notiek."],
+        "signals": "for, since, all day, lately, recently, how long",
+    },
+    "past_perfect": {
+        "form": ["had + 3. forma: I had finished.", "Noliegums: hadn't + 3. forma.", "Jautājums: Had + teikuma priekšmets + 3. forma?"],
+        "use": ["Agrākā no divām pagātnes darbībām.", "Pagātnes notikuma iemesls."],
+        "signals": "before, after, by the time, already, when",
+    },
+    "future": {
+        "form": ["will + pamatforma: I will help you.", "going to: am / is / are going to + pamatforma.", "Present Continuous: I'm meeting Anna at six.",
+                 "Pēc when / if / as soon as lieto Present Simple."],
+        "use": ["will: ātri lēmumi, piedāvājumi, solījumi, prognozes.", "going to: plāni un prognozes ar pierādījumiem.", "Present Continuous: fiksētas norunas.", "be about to: pavisam tuvā nākotne."],
+        "signals": "tomorrow, next week, soon, when, as soon as, if",
+    },
+    "present_simple_passive": {
+        "form": ["am / is / are + 3. forma: English is spoken here.", "Noliegums: isn't / aren't + 3. forma.", "Jautājums: Is / Are + teikuma priekšmets + 3. forma?"],
+        "use": ["Kad svarīgāka ir darbība vai tās objekts, nevis darītājs.", "Procesi, noteikumi un paziņojumi."],
+        "signals": "often, every day, usually, in my country",
+    },
+    "past_simple_passive": {
+        "form": ["was / were + 3. forma: The book was written in 1990.", "Noliegums: wasn't / weren't + 3. forma.", "Jautājums: Was / Were + teikuma priekšmets + 3. forma?"],
+        "use": ["Pagātnes notikumi, kad darītājs nav zināms vai nav svarīgs.", "Vēsture, ziņas.", "by + darītājs, ja tas ir svarīgi."],
+        "signals": "yesterday, last year, in 1889, when",
+    },
+    "present_continuous_passive": {
+        "form": ["am / is / are being + 3. forma: The road is being repaired."],
+        "use": ["Darbība, kas notiek tagad, un darītājs nav svarīgs."],
+        "signals": "now, at the moment, right now",
+    },
+    "present_perfect_passive": {
+        "form": ["has / have been + 3. forma: The email has been sent.", "Jautājums: Has / Have + teikuma priekšmets + been + 3. forma?"],
+        "use": ["Jaunākās ziņas vai darbības ar rezultātu tagad.", "Darbības līdz šim brīdim (so far, already, yet)."],
+        "signals": "already, yet, just, so far, recently",
+    },
+    "future_passive": {
+        "form": ["will be + 3. forma: You will be told soon.", "Noliegums: won't be + 3. forma.", "Jautājums: Will + teikuma priekšmets + be + 3. forma?"],
+        "use": ["Nākotnes notikumi, kad darītājs nav zināms vai nav svarīgs.", "Paziņojumi."],
+        "signals": "tomorrow, next week, soon, by Friday",
+    },
+    "cond_zero": {
+        "form": ["If + Present Simple, Present Simple: If you heat ice, it melts.", "Var lietot arī when vai whenever: Whenever it rains, the road gets slippery.",
+                 "Noliegums: If you don't water plants, they die."],
+        "use": ["Vienmēr patiesi fakti (zinātne, daba).", "Vispārīgi noteikumi un ieradumi.", "Norādījumi: If the light is red, stop."],
+        "signals": "if, when, whenever, every time",
+    },
+    "cond_first": {
+        "form": ["If + Present Simple, will + pamatforma: If it rains, we will stay home.", "If daļa var būt arī otrā vietā: We will stay home if it rains.",
+                 "Rezultātā var lietot arī may, might, can, should.", "Pēc if nelieto will: If it rains (nevis If it will rain)."],
+        "use": ["Reālas, iespējamas nākotnes situācijas.", "Solījumi, brīdinājumi un piedāvājumi.", "First conditional = viena nākotnes situācija. Zero conditional = vienmēr patiesi."],
+        "signals": "if, unless, as soon as, when, in case",
+    },
+    "cond_second": {
+        "form": ["If + Past Simple, would + pamatforma: If I won the lottery, I would quit my job.", "Rūpīgā valodā visām personām lieto were: If I were you, ...",
+                 "Jautājums: What would you do if ...?", "Would vietā var lietot could vai might."],
+        "use": ["Nereālas vai maz ticamas situācijas tagadnē vai nākotnē.", "Padoms: If I were you, I'd talk to your manager.", "Iztēle."],
+        "signals": "if, imagine, suppose, if I were you",
+    },
+    "cond_third": {
+        "form": ["If + Past Perfect, would have + 3. forma: If I had known, I would have called.", "Noliegums: If I hadn't ..., I wouldn't have ...",
+                 "Could have vai might have, ja rezultāts nav tik drošs."],
+        "use": ["Nereālas situācijas pagātnē: tas nenotika.", "Nožēla un kritika.", "Iztēle par citādu pagātni."],
+        "signals": "if, if only, too late, I wish (pagātne)",
+    },
+    "rep_statements": {
+        "form": ["said / told + (that) + teikums: She said (that) she was tired.",
+                 "Laiks parasti iet vienu soli atpakaļ: am/is → was, work → worked, worked → had worked, will → would, can → could.",
+                 "Mainās vietniekvārdi un laika vārdi: I → he/she, now → then, today → that day, tomorrow → the next day, here → there.",
+                 "tell vajag personu: He told me. say bez personas: He said that ..."],
+        "use": ["Pastāstīt, ko cits cilvēks teica.", "Ja fakts joprojām ir patiess vai pastāsti uzreiz, laiku var nemainīt: She says she's tired."],
+        "signals": "said, told, now → then, yesterday → the day before",
+    },
+    "rep_questions": {
+        "form": ["Jā/nē jautājumi: asked + if / whether + priekšmets + darbības vārds: She asked if I liked coffee.",
+                 "Jautājumi ar jautājuma vārdu: asked + jautājuma vārds + priekšmets + darbības vārds: He asked where I lived.",
+                 "Parasta vārdu secība, bez do / does / did: She asked what I did (nevis what did I do).",
+                 "Lūgumi un rīkojumi: told / asked + persona + (not) to + pamatforma: He told me to wait."],
+        "use": ["Pastāstīt, ko kāds jautāja.", "Pastāstīt, ko kāds lika vai lūdza darīt."],
+        "signals": "asked, wondered, wanted to know, told someone to",
+    },
+    "ind_polite": {
+        "form": ["Sāc ar: Could you tell me / Do you know / Can you tell me / I wonder.", "Tad lieto teikuma vārdu secību: ... where the station is (nevis where is the station).",
+                 "Bez do / does / did otrajā daļā: ... what time the shop opens.", "Jā/nē jautājumos lieto if vai whether: Do you know if she is here?"],
+        "use": ["Pieklājīgi jautājumi pēc informācijas.", "Sarunā ar svešiem cilvēkiem, klientiem un darbā.", "Pēc I wonder ... / I'd like to know ... liek punktu; pēc Could you / Do you know ... jautājuma zīmi."],
+        "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
+    },
+})

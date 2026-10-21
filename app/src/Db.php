@@ -118,6 +118,7 @@ final class Db
                 sso_at $big NOT NULL DEFAULT 0,
                 board_hidden $int NOT NULL DEFAULT 0,
                 avatar $str NULL,
+                lang $str NULL,
                 created_at $big NOT NULL,
                 last_seen $big NOT NULL DEFAULT 0
             )$tail",
@@ -202,6 +203,7 @@ final class Db
         self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'avatar', "$str NULL");
+        self::ensureColumn('users', 'lang', "$str NULL");
         $indexes = [
             ['users', 'ux_users_nick', 'nickname_key', true],
             ['users', 'ix_users_ext', 'provider, external_id', false],

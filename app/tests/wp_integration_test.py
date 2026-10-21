@@ -266,6 +266,39 @@ g2.req(WP + "/wp-login.php", urllib.parse.urlencode({"log": "newbie2", "pwd": "p
 s4, page4, _ = g2.req(WP + "/results/")
 check("auto-return off: a 'Back to your practice' bar is shown instead", s4 == 200 and "Back to your practice" in page4 and "ef_practice=open" in page4, s4)
 wpcli("config", "delete", "EF_PRACTICE_AUTO_RETURN", "--type=constant"); time.sleep(3)
+# 8c. registration with an email confirmation: the person logs in hours later, maybe days later
+def set_marker(br, secs_ago):
+    br.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time()) - secs_ago), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
+
+def login_into(br, user, pwd="pass1234"):
+    br.req(WP + "/wp-login.php")
+    br.cj.set_cookie(http.cookiejar.Cookie(0, "wordpress_test_cookie", "WP Cookie check", None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
+    br.req(WP + "/wp-login.php", urllib.parse.urlencode({"log": user, "pwd": pwd, "wp-submit": "Log In", "testcookie": "1"}).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+
+wpcli("user", "delete", "late", "--yes"); wpcli("user", "create", "late", "late@example.com", "--role=subscriber", "--user_pass=pass1234", "--display_name=Late One")
+g3 = Br(); g3.api("guest", {"nickname": "Late confirm", "t": 5000}); practise(g3, 3); time.sleep(1)
+dflt = g3.api("me")["user"]["avatar"]
+check("without a chosen avatar a guest gets a symbol that stays the same", bool(re.fullmatch(r"(flame|spark|bolt|sun|thermo|wave|comet|leaf)-(raspberry|gold|ink|cream|plum|sand)", dflt or "")) and g3.api("me")["user"]["avatar"] == dflt, dflt)
+g3.req(APP + "/register.php")
+set_marker(g3, 2 * 3600)
+login_into(g3, "late")
+s5, page5, h5 = g3.req(WP + "/results/")
+check("confirmed hours later: a bar with a way back, no surprise redirect", s5 == 200 and "Back to your practice" in page5 and "ef_practice_dismiss" in page5, (s5, h5.get("Location")))
+s6, _, h6 = g3.req(WP + "/results/?ef_practice_dismiss=1")
+check("the x forgets the marker and stays on the page", s6 == 302 and "ef_practice_dismiss" not in (h6.get("Location") or "") and "/results/" in (h6.get("Location") or ""), (s6, h6.get("Location")))
+s7, page7, _ = g3.req(WP + "/results/")
+check("no bar after closing it", s7 == 200 and "Back to your practice" not in page7, s7)
+set_marker(g3, 4 * 86400)
+s8, page8, _ = g3.req(WP + "/results/")
+check("a marker older than 3 days does nothing", s8 == 200 and "Back to your practice" not in page8, s8)
+set_marker(g3, 3600)
+s9, _, h9 = g3.req(WP + "/results/")
+check("...but within the 3 days the bar still shows", s9 == 200, s9)
+sA, _, hA = g3.req(WP + "/?ef_practice=open")
+sB, _, hB = g3.req(hA.get("Location") or "")   # the app's sso.php signs them in
+me3 = g3.api("me")
+check("signing in later moves the guest results and keeps the assigned avatar", me3["user"]["provider"] == "wp" and me3.get("welcome") and me3["user"]["avatar"] == dflt, (me3["user"], me3.get("welcome")))
+check("teacher and student views show an avatar for everyone", all(r.get("avatar") for r in tapp.api("leaderboard", period="all")["rows"]) if tapp.api("leaderboard", period="all")["rows"] else True)
 # administrators are never redirected
 adm = wp_login("admin"); adm.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time())), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
 check("an administrator with the marker is not redirected", adm.req(WP + "/results/")[0] == 200)

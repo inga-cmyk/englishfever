@@ -79,7 +79,7 @@ final class Auth
             'guest' => $u['provider'] === 'guest',
             'show_on_board' => (bool) $u['show_on_board'], 'nick_set' => (bool) $u['nick_set'],
             'track_time' => (int) ($u['track_time'] ?? 1) === 1,
-            'avatar' => $u['avatar'] ?? null,
+            'avatar' => self::effectiveAvatar($u['avatar'] ?? null, (int) $u['id']),
         ];
     }
 
@@ -121,15 +121,29 @@ final class Auth
     }
 
     public const AVATAR_GLYPHS = ['flame', 'spark', 'bolt', 'sun', 'thermo', 'wave', 'comet', 'leaf'];
+    public const AVATAR_CHARS = ['ada', 'ben', 'cleo', 'dev', 'eli', 'fay', 'gus', 'hana', 'ivan', 'june', 'fox', 'ember'];
     public const AVATAR_COLORS = ['raspberry', 'gold', 'ink', 'cream', 'plum', 'sand'];
 
-    /** Avatars are a fixed list (glyph-colour). Nobody can upload a picture or inject markup. */
+    /** Avatars are a fixed list (picture-colour). Nobody can upload a picture or inject markup. "initial" = first letter of the name. */
     public static function validAvatar(?string $a): ?string
     {
         if ($a === null || $a === '') return null;
         $p = explode('-', $a);
-        if (count($p) !== 2 || !in_array($p[0], self::AVATAR_GLYPHS, true) || !in_array($p[1], self::AVATAR_COLORS, true)) throw new ApiError('Please choose one of the avatars.', 400);
+        $pics = array_merge(self::AVATAR_CHARS, self::AVATAR_GLYPHS, ['initial']);
+        if (count($p) !== 2 || !in_array($p[0], $pics, true) || !in_array($p[1], self::AVATAR_COLORS, true)) throw new ApiError('Please choose one of the avatars.', 400);
         return $a;
+    }
+
+    /** Nobody is left without a picture: until they choose, each user gets a symbol that is fixed by their id. */
+    public static function defaultAvatar(int $id): string
+    {
+        $h = crc32('ef-avatar-' . $id);
+        return self::AVATAR_GLYPHS[$h % count(self::AVATAR_GLYPHS)] . '-' . self::AVATAR_COLORS[intdiv($h, 8) % count(self::AVATAR_COLORS)];
+    }
+
+    public static function effectiveAvatar(?string $stored, int $id): string
+    {
+        return $stored ?: self::defaultAvatar($id);
     }
 
     /** Move everything a guest did into a registered account, then remove the guest. Returns what moved. */
@@ -138,7 +152,8 @@ final class Auth
         $g = Db::one('SELECT id, provider, avatar FROM users WHERE id = ?', [$guestId]);
         if (!$g || $g['provider'] !== 'guest' || $guestId === $toId) return null;
         $moved = ['answers' => (int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ?', [$guestId]), 'xp' => (int) Db::val('SELECT COALESCE(SUM(xp),0) FROM activity WHERE user_id = ?', [$guestId])];
-        if ($g['avatar'] && !Db::val('SELECT avatar FROM users WHERE id = ?', [$toId])) Db::update('users', ['avatar' => $g['avatar']], 'id = ?', [$toId]);
+        // the new account keeps the picture the guest was already seen with (chosen or assigned), unless it has its own
+        if (!Db::val('SELECT avatar FROM users WHERE id = ?', [$toId])) Db::update('users', ['avatar' => self::effectiveAvatar($g['avatar'], $guestId)], 'id = ?', [$toId]);
         Db::q('UPDATE attempts SET user_id = ? WHERE user_id = ?', [$toId, $guestId]);
         Db::q('UPDATE psessions SET user_id = ? WHERE user_id = ?', [$toId, $guestId]);
         foreach (Db::all('SELECT * FROM skill_state WHERE user_id = ?', [$guestId]) as $r) {

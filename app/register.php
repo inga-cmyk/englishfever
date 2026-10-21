@@ -1,7 +1,8 @@
 <?php
 // "Create a free account" goes through here: it leaves a short-lived marker ("this person came from the practice app"),
 // then sends them to the website's registration form. After they register, the website plugin sees the marker and
-// sends them straight back into the app, where their guest results are moved to the new account.
+// sends them back into the app (at once if it is within 30 minutes, otherwise with a "Back to your practice" bar,
+// because an email confirmation can take a while), where their guest results are moved to the new account.
 require __DIR__ . '/src/Auth.php'; // defines Config
 Config::load();
 $to = (string) Config::get('register_url', '');
@@ -13,7 +14,7 @@ $site = strtolower((string) parse_url((string) Config::get('site_url', ''), PHP_
 // shared with the website only when the app is on the same domain (practice.englishfever.com <-> englishfever.com)
 $domain = ($site !== '' && !filter_var($site, FILTER_VALIDATE_IP) && $site !== 'localhost' && ($host === $site || substr($host, -strlen('.' . $site)) === '.' . $site)) ? $site : '';
 setcookie('ef_return', (string) time(), [
-    'expires' => time() + 1800, 'path' => '/', 'domain' => $domain, 'secure' => $https, 'httponly' => true, 'samesite' => 'Lax',
+    'expires' => time() + 3 * 86400, 'path' => '/', 'domain' => $domain, 'secure' => $https, 'httponly' => true, 'samesite' => 'Lax',
 ]);
 header('Cache-Control: no-store');
 header('Location: ' . $to);

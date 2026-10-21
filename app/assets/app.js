@@ -56,8 +56,16 @@
       how = h('span', { class: 'small' }, 'In your browser menu (⋮) choose ', h('b', null, 'Install app'), ' or ', h('b', null, 'Add to Home screen'), '.');
     }
     return h('div', { id: 'install-card', class: 'card pad-s row between', style: 'margin-bottom:16px' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, 'Practise like an app'), h('div', { class: 'small muted' }, 'Put English Fever Practice on your home screen: one tap to open, full screen.'), h('div', { style: 'margin-top:6px' }, how)),
+      h('div', null, h('b', { style: 'color:var(--text)' }, 'Add to your home screen'), h('div', { style: 'margin-top:6px' }, how)),
       always ? null : h('button', { class: 'linkbtn small', onclick: function () { try { localStorage.setItem('ef_install_hidden', String(Date.now())); } catch (e) {} var c = document.getElementById('install-card'); if (c) c.remove(); } }, 'Not now'));
+  }
+
+  // ───────── registering on the website ─────────
+  // Registration needs an email confirmation, which can take a while. The app remembers the click so a returning
+  // guest sees "Sign in" instead of the sign-up invitation.
+  function regPending() { try { return Date.now() - (+localStorage.getItem('ef_reg') || 0) < 7 * 86400000; } catch (e) { return false; } }
+  function registerLink(cls, label) {
+    return h('a', { class: cls, href: 'register.php', onclick: function () { try { localStorage.setItem('ef_reg', String(Date.now())); } catch (e) {} } }, label);
   }
 
   // ───────── boot ─────────
@@ -66,10 +74,11 @@
     Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
       state.config = r[0]; state.meta = r[1]; state.user = r[2].user; state.welcome = r[2].welcome || null;
       footer.replaceChildren(
-        h('div', null, state.config.site_url ? h('span', null, h('a', { href: state.config.site_url }, '← englishfever.com'), ' · ') : null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · We store your nickname, scores and time spent. ',
+        h('div', null, state.config.site_url ? h('span', null, h('a', { href: state.config.site_url }, '← englishfever.com'), ' · ') : null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · ',
           state.config.contact_email ? h('a', { href: 'mailto:' + state.config.contact_email }, state.config.contact_email) : null),
         h('div', { class: 'small', style: 'margin-top:4px;opacity:.7' }, 'Version ' + (state.config.version || 'dev')));
       if (state.user) startHeartbeat();
+      if (state.user && !state.user.guest) { try { localStorage.removeItem('ef_reg'); } catch (e) {} }
       window.addEventListener('hashchange', route);
       ['pointerdown', 'keydown', 'scroll', 'input'].forEach(function (ev) { window.addEventListener(ev, function () { state.lastInteraction = Date.now(); }, { passive: true }); });
       route();
@@ -184,31 +193,30 @@
       h('div', { 'aria-hidden': 'true', style: 'position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden' }, h('label', { for: 'website' }, 'Leave this empty'), trap), // a trap for bots
       errBox,
       h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Continue as guest'),
-      h('p', { class: 'small muted', style: 'margin:10px 0 0;text-align:center' }, 'Guest results are not saved.'));
+      null);
 
     var card = [];
     if (cfg.sso) {
       card.push(
         h('h2', { style: 'text-align:center' }, 'Registered at englishfever.com?'),
         h('a', { class: 'btn block', href: cfg.wp_login_url }, 'Continue with my account'),
-        h('p', { class: 'small muted', style: 'text-align:center;margin:10px 0 0' }, 'No new password. Your results are saved.'),
         h('div', { class: 'or' }, 'or'),
         h('h2', { style: 'text-align:center' }, 'Try it as a guest'));
     } else {
       card.push(h('h2', { style: 'text-align:center' }, 'Start practising'));
     }
     card.push(guestForm);
-    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', h('a', { href: 'register.php' }, 'Create a free account')));
+    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', registerLink('', 'Create a free account')));
 
     show(h('div', null,
       h('section', { class: 'hero' },
         h('div', { class: 'bar' }),
         h('h1', null, 'Practise English tenses. ', h('em', null, 'Know what to fix next.')),
-        h('p', null, 'Short tasks for adult learners, from A2.1 to B1.2. Active and passive. You get clear feedback after every answer, and the tasks get easier or harder to fit you.'),
+        h('p', null, 'Short tasks for adult learners, A2.1 to B1.2. Clear feedback after every answer.'),
         h('div', { class: 'points' },
-          h('div', null, h('b', null, 'Placement test'), '24 quick questions. See your gaps and where to start.'),
-          h('div', null, h('b', null, 'Your choice'), 'Pick one tense or several, and the level you want.'),
-          h('div', null, h('b', null, 'Real thinking'), 'Not only gaps: spot mistakes, judge answers and write your own sentences.'))),
+          h('div', null, h('b', null, 'Placement test'), '24 quick questions.'),
+          h('div', null, h('b', null, 'Your choice'), 'Pick the tenses and level.'),
+          h('div', null, h('b', null, 'Real thinking'), 'Spot, judge and write.'))),
       h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
   }
 
@@ -222,24 +230,23 @@
     var cfg = state.config;
     var m = UI.modal(h('div', null,
       h('div', { class: 'label' }, 'Keep your progress'),
-      h('h2', null, 'Create a free account to save your results'),
-      h('p', null, 'You are practising as a guest. If you clear your browser or use another device, your results are lost. With a free account you keep your results, streak and level, and you can join the leaderboard.'),
-      h('p', { class: 'small muted' }, 'Everything you did as a guest moves to your new account. After you register, come back to this page and press “Continue with my account”.'),
+      h('h2', null, 'Save your results with a free account'),
+      h('p', null, 'Guest results are lost if you clear your browser or change device.'),
       h('div', { class: 'row' },
-        cfg.register_url ? h('a', { class: 'btn', href: 'register.php' }, 'Create free account') : null,
+        cfg.register_url ? registerLink('btn', 'Create free account') : null,
         cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost' : 'btn', href: cfg.wp_login_url }, 'I already have an account') : null,
         h('button', { class: 'linkbtn', id: 'later' }, 'Not now'))));
     m.el.querySelector('#later').onclick = m.close;
   }
 
   function guestBanner() {
-    var cfg = state.config;
+    var cfg = state.config, pending = regPending();
+    var create = cfg.register_url ? registerLink(pending ? 'btn ghost small' : 'btn small', 'Create account') : null;
+    var signin = cfg.sso ? h('a', { class: (pending || !cfg.register_url) ? 'btn small' : 'btn ghost small', href: cfg.wp_login_url }, 'Sign in') : null;
     return h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, 'You are practising as a guest'),
-        h('div', { class: 'small muted' }, 'Create a free account to keep your results and join the leaderboard.')),
-      h('div', { class: 'row' },
-        cfg.register_url ? h('a', { class: 'btn small', href: 'register.php' }, 'Create account') : null,
-        cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost small' : 'btn small', href: cfg.wp_login_url }, 'Sign in') : null));
+      h('div', null, h('b', { style: 'color:var(--text)' }, pending ? 'Account created?' : 'Practising as a guest'),
+        h('div', { class: 'small muted' }, pending ? 'Confirm the email we sent you, then sign in.' : 'Create a free account to keep your results.')),
+      h('div', { class: 'row' }, pending ? [signin, create] : [create, signin]));
   }
 
   // ───────── home ─────────
@@ -252,8 +259,8 @@
       if (state.welcome) {
         var wl = state.welcome;
         nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--good)' },
-          h('div', null, h('b', { style: 'color:var(--text)' }, 'Welcome to your account!'),
-            h('div', { class: 'small muted' }, 'We moved your guest results over: ' + wl.answers + ' tasks and ' + wl.xp + ' XP. Your streak, level and tenses are all here now.')),
+          h('div', null, h('b', { style: 'color:var(--text)' }, 'Your account is ready'),
+            h('div', { class: 'small muted' }, 'Guest results moved over: ' + wl.answers + ' tasks, ' + wl.xp + ' XP.')),
           h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
       }
       nodes.push(h('div', { class: 'hello' },
@@ -282,19 +289,18 @@
             h('p', null, 'Start with: ', rep.gaps.map(function (g) { return g.label; }).join(', ') + '.'),
             h('div', { class: 'row' }, h('button', { class: 'btn small', onclick: function () { showPlacementReport(rep); } }, 'See gaps and plan'),
               h('a', { class: 'btn ghost small', href: '#/placement' }, 'Take it again')))
-            : h('div', null, h('p', null, 'About 24 questions, around 10 minutes. You get a gap report and a plan for where to begin.'),
+            : h('div', null, h('p', null, 'About 10 minutes. Shows your gaps and where to start.'),
               h('a', { class: 'btn', href: '#/placement' }, 'Start the test', icon('arrow')))),
         h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 2'), h('h2', null, 'Choose what to practise'),
-          h('p', null, 'Pick one tense or several, and the level you want. A quick check of 3 tasks comes first, then the tasks adapt to you.'),
+          h('p', null, 'Pick tenses and a level. Tasks adapt to you.'),
           h('a', { class: started ? 'btn' : 'btn ghost', href: '#/practice' }, 'Choose tenses', icon('arrow')))));
 
       var ic = installCard(false); if (ic) nodes.push(ic);
       nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
         h('div', { class: 'card' }, h('h2', null, 'This week'), weekChart(d.week)),
-        h('div', { class: 'card' }, h('h2', null, 'Your thinking skills'), h('p', { class: 'small muted' }, 'How often you are right at each level of thinking.'), bloomBars(d.bloom))));
+        h('div', { class: 'card' }, h('h2', null, 'Your thinking skills'), bloomBars(d.bloom))));
 
       nodes.push(h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'Your tenses'), h('a', { href: '#/rules', class: 'small' }, 'Rule cards')),
-        h('p', { class: 'small muted' }, 'Your level estimate appears after 3 or more tasks in a tense.'),
         h('div', { class: 'skillgrid' }, d.skills.map(skillCard))));
       show(h('div', null, nodes));
     }).catch(fail);
@@ -337,12 +343,7 @@
   function viewPlacementIntro() {
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
       h('div', { class: 'label' }, 'Placement test'), h('h1', null, 'Find your starting point'),
-      h('p', null, 'You will answer ' + state.meta.placement_length + ' short questions about active and passive tenses. It takes about 10 minutes.'),
-      h('ul', { style: 'padding-left:20px;margin:0 0 18px' },
-        h('li', null, 'The questions get easier or harder to fit your answers.'),
-        h('li', null, 'You will see if each answer is right, with a short explanation.'),
-        h('li', null, 'At the end you get your level and the 3 tenses to work on first.')),
-      h('p', { class: 'small muted' }, 'Do not worry about mistakes. They help us find the right place to start. You can stop at any time.'),
+      h('p', null, state.meta.placement_length + ' short questions, about 10 minutes. They adapt to your answers.'),
       h('div', { class: 'row' }, h('button', { class: 'btn', id: 'go' }, 'Start the test'), h('a', { class: 'btn ghost', href: '#/home' }, 'Not now')))));
     document.getElementById('go').addEventListener('click', function () {
       this.disabled = true;
@@ -378,7 +379,7 @@
       var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
       startBtn.disabled = ids.length === 0;
       var low = ids.map(skillById).filter(function (s) { return s.levels.indexOf(level) < 0; });
-      note.textContent = low.length ? low.map(function (s) { return s.label + ' has tasks at ' + s.levels.join(', ') + ' only. We will use the nearest ones.'; }).join(' ') : '';
+      note.textContent = low.length ? low.map(function (s) { return s.label + ': ' + s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : '') + ' only, nearest level used.'; }).join(' ') : '';
     }
     var holder = h('div');
     function redraw() {
@@ -387,7 +388,7 @@
         h('div', { class: 'picker-group' }, h('h3', null, 'Level'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Level' }, state.meta.levels.map(function (l) {
             return h('label', null, h('input', { type: 'radio', name: 'lv', value: l, checked: l === level, onchange: function () { level = l; update(); } }), h('span', null, l));
-          })), h('p', { class: 'small muted', style: 'margin-top:8px' }, 'B2 levels are coming soon.')),
+          }))),
         h('div', { class: 'picker-group' }, h('h3', null, 'Length'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of tasks' }, [10, 15, 20].map(function (n) {
             return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, n + ' tasks'));
@@ -404,12 +405,21 @@
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
       h('div', { class: 'label' }, 'Practice'), h('h1', null, 'Choose what to practise'),
-      h('p', null, 'Pick one tense or several. The first 3 tasks are a quick check. After that, tasks get harder when you are right and easier when you need more help.'),
       holder, note, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
         h('a', { class: 'btn ghost', href: '#/placement' }, 'Take the placement test instead')))));
   }
 
   // ───────── session ─────────
+  // A blank grows with what is typed, so a long answer such as "has been being repaired" is always fully visible.
+  var measure = document.createElement('canvas').getContext('2d');
+  function fitBlank(inp) {
+    var cs = getComputedStyle(inp), fs = parseFloat(cs.fontSize) || 16;
+    measure.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+    var pad = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight) + parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
+    inp.style.width = Math.ceil(Math.max(9.5 * fs, measure.measureText(inp.value).width + pad + 14)) + 'px';
+  }
+  function growBox(ta) { ta.style.height = 'auto'; ta.style.height = Math.max(ta.scrollHeight, 110) + 'px'; }
+
   function newSess(session, item) { return { session: session, item: item, startedAt: Date.now(), result: null, last: null }; }
 
   function viewSession() {
@@ -440,7 +450,7 @@
       parts.forEach(function (p, i) {
         qEl.appendChild(document.createTextNode(p));
         if (i < parts.length - 1) {
-          var inp = h('input', { type: 'text', class: 'blank', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': 'Answer ' + (i + 1), oninput: ready });
+          var inp = h('input', { type: 'text', class: 'blank', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': 'Answer ' + (i + 1), oninput: function (e) { fitBlank(e.target); ready(); } });
           inputs.push(inp); qEl.appendChild(inp);
         }
       });
@@ -454,9 +464,8 @@
       canSubmit = function () { return t.value.trim() !== ''; };
     } else {
       qEl.textContent = it.q;
-      var ta = h('textarea', { class: 'write', placeholder: 'Write your answer here', 'aria-label': 'Your answer', spellcheck: 'true', oninput: ready });
+      var ta = h('textarea', { class: 'write', placeholder: 'Write your answer here', 'aria-label': 'Your answer', spellcheck: 'true', oninput: function (e) { growBox(e.target); ready(); } });
       inputs.push(ta); area.appendChild(ta);
-      area.appendChild(h('p', { class: 'small muted', style: 'margin-top:-8px' }, 'We check the key grammar in your sentence. A model answer is shown after.'));
       answerGetter = function () { return ta.value; };
       canSubmit = function () { return ta.value.trim().split(/\s+/).length >= 2; };
     }
@@ -526,7 +535,7 @@
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
       var adaptNote = null;
       if (!r.done && ses.mode === 'practice' && ses.phase !== 'diagnostic' && res.adapt !== 'same') {
-        adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? 'Next: a bit harder' : 'Next: a bit easier, to build confidence');
+        adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? 'Next: a bit harder' : 'Next: a bit easier');
       } else if (!r.done && ses.mode === 'practice' && ses.phase === 'diagnostic') {
         adaptNote = h('span', { class: 'adapt' }, 'Quick check: ' + Math.min(3, ses.n) + ' of 3');
       }
@@ -559,7 +568,7 @@
   }
 
   function stopSession(ses) {
-    var m = UI.modal(h('div', null, h('h2', null, 'Stop now?'), h('p', null, 'Your answers so far are saved. You can see a short result for the tasks you did.'),
+    var m = UI.modal(h('div', null, h('h2', null, 'Stop now?'), h('p', null, 'Your answers so far are saved.'),
       h('div', { class: 'row' }, h('button', { class: 'btn', id: 'yes' }, 'Stop and see result'), h('button', { class: 'btn ghost', id: 'no' }, 'Keep going'))));
     m.el.querySelector('#no').onclick = m.close;
     m.el.querySelector('#yes').onclick = function () {
@@ -621,9 +630,9 @@
     var nodes = [];
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, fresh ? 'Placement test finished' : 'Placement result'), h('h1', null, 'Your level is about ', h('span', { class: 'levelbadge' }, s.overall_level)),
-      h('p', null, s.correct + ' of ' + s.n + ' correct. This is an estimate to help you start in the right place, not an exam grade.'),
-      s.overall_level === 'B1.2' ? h('p', { class: 'small muted' }, 'You are at the top of what is available now. B2 levels are coming soon.') : null,
-      s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level in this app. If most tasks felt too hard, that is fine: start with the tenses below and ask your teacher about easier material.') : null));
+      h('p', null, s.correct + ' of ' + s.n + ' correct. A rough level, not an exam grade.'),
+      s.overall_level === 'B1.2' ? h('p', { class: 'small muted' }, 'This is the top level for now. B2 is coming.') : null,
+      s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 tenses'),
       h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
         return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, g.why)),
@@ -634,8 +643,8 @@
     nodes.push(h('div', { class: 'grid g2' },
       h('div', { class: 'card' }, h('h2', null, 'All tested tenses'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
         return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)));
-      })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, 'Not tested because they looked too advanced for now: ' + s.untested.map(function (u) { return u.label; }).join(', ') + '.') : null),
-      h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom), h('p', { class: 'small muted', style: 'margin-top:12px' }, 'The test uses the first four levels (Remember to Analyse). Practice adds Evaluate and Create tasks.'))));
+      })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, 'Not tested (too advanced for now): ' + s.untested.map(function (u) { return u.label; }).join(', ') + '.') : null),
+      h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     return nodes;
   }
@@ -669,12 +678,11 @@
             h('div', { class: 'small muted num' }, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
         })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
         holder.replaceChildren(
-          period === 'week' ? h('p', { class: 'small muted' }, 'Weeks start on Monday. Points come from correct answers, with more points for higher thinking levels.') : null,
           list,
           (r.me && r.me.rank > 20) ? h('div', { class: 'card pad-s', style: 'margin-top:12px' }, 'Your rank: ', h('b', { style: 'color:var(--text)' }, '#' + r.me.rank), ' · ' + r.me.xp + ' XP') : null,
-          r.guest ? h('div', { class: 'card pad-s', style: 'margin-top:12px;border-color:var(--gold)' }, h('b', { style: 'color:var(--text)' }, 'Guests are not on the leaderboard.'), ' Create a free account to join it and keep your results. ',
-            state.config.register_url ? h('a', { href: 'register.php' }, 'Create account') : null)
-          : (r.hidden ? h('p', { class: 'small muted', style: 'margin-top:12px' }, state.user.role === 'teacher' ? 'Teachers are not shown on the leaderboard.' : 'You are hidden from the leaderboard. You can change this in your profile.') : null));
+          r.guest ? h('div', { class: 'card pad-s', style: 'margin-top:12px;border-color:var(--gold)' }, h('b', { style: 'color:var(--text)' }, 'Guests are not ranked. '),
+            state.config.register_url ? registerLink('', 'Create a free account') : null)
+          : ((r.hidden && state.user.role !== 'teacher') ? h('p', { class: 'small muted', style: 'margin-top:12px' }, 'You are hidden from the leaderboard.') : null));
       }).catch(fail);
     }
     var tabs = h('div', { class: 'tabs', role: 'tablist', style: 'max-width:320px' },
@@ -695,8 +703,7 @@
       e.preventDefault(); msg.replaceChildren();
       api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Saved.')); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
     } },
-      h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Your name' : 'Name shown to others'), nick,
-        guest ? null : h('span', { class: 'hint' }, 'On the leaderboard and to your teacher. Your real name or a nickname.')),
+      h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Your name' : 'Display name'), nick),
       guest ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
       msg, h('button', { class: 'btn', type: 'submit' }, 'Save'));
 
@@ -705,11 +712,8 @@
     cards.push(avatarCard());
     var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
-    if (!guest) cards.push(h('div', { class: 'card' }, h('h2', null, 'Sign-in'), h('p', null, 'You signed in with your englishfever.com account. Manage your password on the website.')));
-    if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off. '), 'You turned off activity tracking on englishfever.com, so the app does not record the time you practise. Your answers and results are still saved. You can change this on englishfever.com.'));
+    if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off '), '(set on englishfever.com). Your answers are still saved.'));
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Your data'),
-      h('p', null, guest ? 'As a guest we keep only your nickname, your answers and the time you practise. Guest data is deleted after 60 days without a visit.'
-        : 'We keep your name, your answers, your scores and the time you practise. Your teacher can see them. We never share them with anyone else.'),
       h('div', { class: 'row' },
         h('button', { class: 'btn ghost small', onclick: function () {
           api('account/export').then(function (d) { var a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' })), download: 'my-practice-data.json' }); document.body.appendChild(a); a.click(); a.remove(); }).catch(fail);
@@ -722,39 +726,51 @@
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
   }
 
-  /** Pick an avatar instead of a photo: a glyph and a colour from a fixed set. */
+  /** Choose a character, symbol or initial and a background colour. Collapsed until "Change" is pressed. */
   function avatarCard() {
     var u = state.user, cur = (u.avatar || '').split('-');
-    var pick = { glyph: cur[0] || 'flame', color: cur[1] || 'raspberry' };
-    var preview = h('div', { style: 'flex:none' }), glyphs = h('div', { class: 'avgrid', role: 'radiogroup', 'aria-label': 'Symbol' }), colors = h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Colour' });
+    var pick = { pic: cur[0] || 'ember', color: cur[1] || 'raspberry' };
+    var open = false;
+    var head = h('div', { class: 'row between', style: 'flex-wrap:nowrap' });
+    var panel = h('div', { class: 'avpanel', hidden: true });
+    var toggle = h('button', { type: 'button', class: 'btn ghost small', 'aria-expanded': 'false', 'aria-controls': 'avpanel', onclick: function () { setOpen(!open); } });
+    panel.id = 'avpanel';
     var msg = h('div');
-    function spec() { return pick.glyph + '-' + pick.color; }
-    function draw() {
-      preview.replaceChildren(UI.avatar(spec(), u.nickname, 76));
-      glyphs.replaceChildren.apply(glyphs, UI.AV_GLYPHS.map(function (g) {
-        return h('button', { type: 'button', class: 'avopt', role: 'radio', 'aria-checked': String(g === pick.glyph), 'aria-label': UI.AV_NAMES[g], onclick: function () { pick.glyph = g; draw(); } }, UI.avatar(g + '-' + pick.color, u.nickname, 44));
-      }));
-      colors.replaceChildren.apply(colors, UI.AV_COLORS.map(function (c) {
-        return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; draw(); } });
-      }));
+    function setOpen(v) {
+      open = v; panel.hidden = !v; toggle.setAttribute('aria-expanded', String(v)); toggle.textContent = v ? 'Close' : 'Change';
+      if (v) { var c = u.avatar ? u.avatar.split('-') : []; pick.pic = c[0] || pick.pic; pick.color = c[1] || pick.color; drawPanel(); }
     }
-    function save(avatar) {
+    function group(title, pics) {
+      return h('div', { class: 'avgroup' }, h('div', { class: 'label' }, title),
+        h('div', { class: 'avgrid', role: 'radiogroup', 'aria-label': title }, pics.map(function (g) {
+          return h('button', { type: 'button', class: 'avopt', role: 'radio', 'aria-checked': String(g === pick.pic), 'aria-label': UI.AV_NAMES[g], title: UI.AV_NAMES[g], onclick: function () { pick.pic = g; drawPanel(); } }, UI.avatar(g + '-' + pick.color, u.nickname, 50));
+        })));
+    }
+    function drawPanel() {
+      panel.replaceChildren(
+        group('Characters', UI.AV_CHARS), group('Symbols', UI.AV_GLYPHS.concat(['initial'])),
+        h('div', { class: 'avgroup' }, h('div', { class: 'label' }, 'Background'),
+          h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Background colour' }, UI.AV_COLORS.map(function (c) {
+            return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; drawPanel(); } });
+          }))),
+        msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { type: 'button', class: 'btn small', onclick: save }, 'Save')));
+    }
+    function drawHead() {
+      head.replaceChildren(h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(u.avatar, u.nickname, 56), h('h2', { style: 'margin:0' }, 'Your avatar')), toggle);
+    }
+    function save() {
       msg.replaceChildren();
-      api('account/profile', { avatar: avatar }).then(function (r) {
-        state.user = r.user; renderChrome('#/profile'); msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Avatar saved.'));
-        if (!avatar) { pick.glyph = 'flame'; pick.color = 'raspberry'; draw(); }
+      api('account/profile', { avatar: pick.pic + '-' + pick.color }).then(function (r) {
+        state.user = r.user; u = r.user; renderChrome('#/profile'); drawHead(); setOpen(false); UI.toast('Avatar saved');
       }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
     }
-    draw();
-    return h('div', { class: 'card' }, h('h2', null, 'Your avatar'), h('p', { class: 'small muted' }, 'Pick a symbol and a colour. It shows next to your name. No photo needed.'),
-      h('div', { class: 'row', style: 'gap:18px;align-items:flex-start;flex-wrap:wrap' }, preview, h('div', { style: 'flex:1 1 260px' }, glyphs, h('div', { style: 'height:12px' }), colors)),
-      msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn small', onclick: function () { save(spec()); } }, 'Save avatar'),
-        h('button', { class: 'btn ghost small', onclick: function () { save(null); } }, 'Use my initial instead')));
+    drawHead(); setOpen(false);
+    return h('div', { class: 'card' }, head, panel);
   }
 
   function deleteAccount() {
     var em = h('div');
-    var m = UI.modal(h('div', null, h('h2', null, 'Delete your results?'), h('p', null, 'This deletes your results, history and profile in the practice app. It cannot be undone. Your englishfever.com account is not affected.'), em,
+    var m = UI.modal(h('div', null, h('h2', null, 'Delete your results?'), h('p', null, 'This deletes your results and profile in the practice app. It cannot be undone.'), em,
       h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'del' }, 'Delete'), h('button', { class: 'btn ghost', id: 'cancel' }, 'Cancel'))));
     m.el.querySelector('#cancel').onclick = m.close;
     m.el.querySelector('#del').onclick = function () {
@@ -769,7 +785,6 @@
     var nick = h('input', { type: 'text', id: 'fn', value: state.user.nickname, maxlength: '30', autocapitalize: 'off', spellcheck: 'false', required: true });
     var board = h('input', { type: 'checkbox', id: 'fb', checked: true });
     show(h('div', { class: 'card', style: 'max-width:480px;margin:20px auto' }, h('div', { class: 'label' }, 'Welcome'), h('h1', null, 'How should we show your name?'),
-      h('p', null, 'Other learners and your teacher see this name. Keep your real name or choose a nickname.'),
       h('form', { onsubmit: function (e) {
         e.preventDefault();
         api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; go('#/home'); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
@@ -855,7 +870,7 @@
         h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(u.avatar, u.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen)))), moder),
         h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('clock', UI.fmtDuration(d.totals.seconds), 'time practised'), stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct (' + d.totals.answers + ' tasks)'), stat('flame', d.streak.current + ' / ' + d.streak.best, 'streak (best)'), stat('bolt', d.totals.xp, 'XP')),
         h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
-          h('div', { class: 'card' }, h('h2', null, 'Last 30 days'), days, h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Each bar is one day (minutes practised).')),
+          h('div', { class: 'card' }, h('h2', null, 'Last 30 days'), days),
           h('div', { class: 'card' }, h('h2', null, 'Thinking levels'), bloomBars(d.bloom))),
         rep ? h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Placement test'), h('p', null, 'Level: ', h('span', { class: 'levelbadge', style: 'font-size:1.1rem;padding:3px 12px' }, rep.overall_level), ' · ' + UI.fmtAgo(d.placement.at) + ' · ' + rep.correct + '/' + rep.n + ' correct'),
           h('p', { class: 'small' }, h('b', null, 'Gaps: '), rep.gaps.map(function (g) { return g.label + ' (' + g.level + ')'; }).join(', '))) : null,

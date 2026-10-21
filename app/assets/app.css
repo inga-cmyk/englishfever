@@ -213,7 +213,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 .task { padding: clamp(20px, 4vw, 32px); }
 .task .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
 .task .q { font-size: clamp(1.15rem, 2.6vw, 1.4rem); color: var(--text); line-height: 1.45; font-weight: 600; margin-bottom: 20px; }
-.task .q .blank, .task .q input.blank { display: inline-block; width: 9.5em; min-height: 40px; padding: 6px 10px; margin: 0 4px; border-radius: 10px; font-size: 1rem; vertical-align: baseline; }
+.task .q .blank, .task .q input.blank { display: inline-block; width: 9.5em; max-width: 100%; box-sizing: border-box; min-height: 40px; padding: 6px 10px; margin: 0 4px; border-radius: 10px; font-size: 1rem; vertical-align: baseline; }
 .opts { display: grid; gap: 10px; margin-bottom: 20px; }
 .opt { display: flex; align-items: center; gap: 12px; border: 1.5px solid var(--line); background: var(--surface); border-radius: 14px; padding: 14px 16px; cursor: pointer; color: var(--text); transition: border-color .12s, background .12s; }
 .opt:hover { border-color: var(--gold-deep); }
@@ -307,7 +307,11 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
 .avatar-link:hover .avatar { box-shadow: 0 0 0 2px var(--gold); }
 .lb-name { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .lb-text { overflow: hidden; text-overflow: ellipsis; }
-.avgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 280px; }
+.avpanel { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+.avpanel[hidden] { display: none; }
+.avgroup { margin-bottom: 14px; }
+.avgroup .label { margin-bottom: 6px; }
+.avgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 6px; max-width: 420px; }
 .avopt { background: none; border: 2px solid transparent; border-radius: 50%; padding: 2px; cursor: pointer; display: grid; place-items: center; }
 .avopt[aria-checked="true"] { border-color: var(--btn); }
 .avopt:hover { border-color: var(--gold-deep); }

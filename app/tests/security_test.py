@@ -56,7 +56,7 @@ s, body, h = C().raw("/content/items.php"); check("requesting the answer file sh
 js = open(os.path.join(APP, "assets", "app.js")).read() + open(os.path.join(APP, "assets", "ui.js")).read()
 inner = [l.strip() for l in js.splitlines() if "innerHTML" in l]
 check("no eval / document.write in the app code", not re.search(r"eval\(|document\.write|new Function|insertAdjacentHTML", js))
-check("innerHTML is only used for the built-in icon and avatar shapes (fixed strings)", len(inner) == 2 and all(re.match(r"(s|grp)\.innerHTML = (ICONS\[name\] \|\| ''|g);", l) for l in inner), inner)
+check("innerHTML is only used for the built-in icon and avatar shapes (fixed strings)", len(inner) == 3 and all(re.match(r"(s|grp)\.innerHTML = (ICONS\[name\] \|\| ''|AV_GLYPHS\[parts\[0\]\];|AV_CHARS\[parts\[0\]\];)", l) for l in inner), inner)
 check("no third-party hosts in the app code", not re.search(r"https?://(?!127\.0\.0\.1|www\.w3\.org)", js), re.findall(r"https?://[^'\" )]+", js)[:3])
 
 # ---- 2. API basics
@@ -147,7 +147,11 @@ check("a valid avatar is saved", av.api("account/profile", {"avatar": "comet-plu
 for bad_av in ['flame-raspberry"><script>alert(1)</script>', "../../etc/passwd", "flame", "flame-neon", "nope-gold", "<svg onload=alert(1)>", "a" * 300, "flame-raspberry-x"]:
     check(f"hostile avatar refused: {bad_av[:24]!r}", av.api("account/profile", {"avatar": bad_av})["_status"] == 400)
 check("the avatar is unchanged after the attempts", av.api("me")["user"]["avatar"] == "comet-plum")
-check("the avatar can be cleared (back to the initial)", av.api("account/profile", {"avatar": None})["user"]["avatar"] is None)
+dflt = av.api("account/profile", {"avatar": None})["user"]["avatar"]
+check("clearing the avatar gives an assigned symbol, the same every time", bool(re.fullmatch(r"(flame|spark|bolt|sun|thermo|wave|comet|leaf)-(raspberry|gold|ink|cream|plum|sand)", dflt or "")) and av.api("me")["user"]["avatar"] == dflt, dflt)
+for good_av in ["fox-gold", "ada-plum", "hana-cream", "initial-ink", "ivan-sand", "ember-ink"]:
+    check(f"character / initial avatar accepted: {good_av}", av.api("account/profile", {"avatar": good_av})["user"]["avatar"] == good_av)
+check("a character alone (no colour) is refused", av.api("account/profile", {"avatar": "fox"})["_status"] == 400)
 av.api("account/profile", {"avatar": "spark-gold"})
 check("a guest's avatar shows to the teacher", any(x["avatar"] == "spark-gold" for x in tc.api("teacher/students")["students"]))
 rw = C(); sso(rw, 9500 + int(time.time()) % 90, "Avatar Reg"); rw.api("account/profile", {"nickname": "Avatar Reg", "show_on_board": True, "avatar": "sun-ink"})

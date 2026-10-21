@@ -21,7 +21,7 @@ Use it unchanged. It must open in the same tab. It takes logged-in students stra
 ## Tasks
 
 **1. Plugin (only if you can upload a file from the owner's computer; otherwise skip and tell the owner)**
-Plugins → Add New Plugin → Upload Plugin → choose `ef-practice-sso.zip` (the owner provides it) → Install Now → "Replace current with uploaded" → keep it **active**. Check that the plugin list shows "EF Practice – sign in with englishfever.com" at **version 1.2.0 or newer**. Report the version.
+Plugins → Add New Plugin → Upload Plugin → choose `ef-practice-sso.zip` (the owner provides it) → Install Now → "Replace current with uploaded" → keep it **active**. Check that the plugin list shows "EF Practice – sign in with englishfever.com" at **version 1.4.0 or newer**. Report the version.
 
 **2. The "Practice login" page**
 Pages: a page with slug `practice-login` should exist and be published, with one Shortcode block containing `[ef_practice_button label="Start practising"]`. If it exists, leave it; just report. If an SEO plugin is installed, set this page to noindex. Do **not** add this page to any menu.
@@ -48,6 +48,12 @@ If the LiteSpeed Cache plugin is active: LiteSpeed Cache → Cache → Excludes 
 Snippets → open the active snippet "EF: My activity on student Home". First copy its full text into your report as a backup. Find the line `echo $report;` (inside `add_action( 'wp_footer', function () {`). Directly after it add exactly this one line, nothing else:
 `if ( shortcode_exists( 'ef_practice_results' ) ) { echo do_shortcode( '[ef_practice_results plain="1"]' ); }`
 Save. Then open the student dashboard Home (https://englishfever.com/en/dashboard/) and check that the page still loads and "My activity" is still shown. If anything breaks, restore the backup text immediately and tell the owner.
+
+**8b. Registration with email confirmation (check only, change nothing)**
+Register a test student on https://englishfever.com/en/register/ (use an address the owner provides). Report: (a) which plugin or setting sends the confirmation email, (b) what the new user sees after the form, (c) whether clicking the email link logs the user in, and (d) which page they land on. Do not change any settings; the owner decides.
+
+**8c. Social login (optional, only after the owner's yes)**
+If Tutor LMS Pro is active: Tutor LMS Pro → Add-ons → enable "Social Login", then Tutor LMS Pro → Settings → Authentication → turn on **Google only** (the owner supplies the Google Client ID). Otherwise install the free plugin "Nextend Social Login" and enable Google only. Set the default role for new users to the same role normal registrations get, make sure the login returns to the page the person came from (`redirect_to`), and test with a Google account: the user must be created as a normal website user and the practice link LINK must then sign them in. Report what you see.
 
 **8. "My activity" page (optional)**
 On the page https://englishfever.com/my-activity/, below the existing `[ef_my_activity]` shortcode, add a Shortcode block `[ef_practice_results]`. Preview first; publish after the owner's yes.

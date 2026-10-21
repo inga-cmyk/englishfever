@@ -134,9 +134,10 @@ To go back to exact matching, set `'spelling' => 'strict'` (capital letters stil
 
 ## From guest to registered: the return trip
 
-1. A guest taps **Create a free account** (welcome page, the popup after practice, the banner, the leaderboard note). The link goes through `register.php`, which leaves a 30-minute marker (cookie `ef_return`) and sends them to your registration form (`register_url`).
+1. A guest taps **Create a free account** (welcome page, the popup after practice, the banner, the leaderboard note). The link goes through `register.php`, which leaves a 3-day marker (cookie `ef_return`) and sends them to your registration form (`register_url`). The app also remembers the click, so when the guest comes back it shows **Sign in** instead of the sign-up invitation.
 2. They register on the website as usual.
-3. As soon as they are registered and logged in, **plugin 1.3.0 sends them straight back into the app** from whatever page the form leaves them on (the Tutor dashboard, the homepage, anywhere). It does not depend on the form honouring `redirect_to`. Switch this off with `define( 'EF_PRACTICE_AUTO_RETURN', false );` in `wp-config.php`; a "Back to your practice" bar then appears instead.
+3. **Without an email confirmation**, or when they log in within 30 minutes, **plugin 1.4.0 sends them straight back into the app** from whatever page the form leaves them on (the Tutor dashboard, the homepage, anywhere). It does not depend on the form honouring `redirect_to`. **With an email confirmation** (your registration needs one) people often log in hours later, perhaps on another device. Within 3 days a small "Your account is ready. Back to your practice" bar then appears on every website page (with an x to close it), instead of a surprise redirect. Switch the automatic return off with `define( 'EF_PRACTICE_AUTO_RETURN', false );` to always use the bar.
+   Guest results are kept in the browser where the guest practised. If the confirmation link is opened somewhere else, the person simply opens the app in the original browser and taps **Sign in**; the results move then.
 4. In the app they confirm their name (their real name is suggested, or a nickname), and a **welcome message** says what moved over ("We moved your guest results over: 34 tasks and 312 XP"). The results, streak, level, tenses and the guest's avatar all move to the new account. Nothing is lost.
 5. Administrators and instructors are never redirected, and the marker is used up after one return.
 
@@ -150,7 +151,7 @@ If many learners turn out to want only the app, there are two upgrades: a shorte
 
 ## Avatars
 
-Learners choose an avatar instead of a photo: a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) in one of six colours, in **Profile → Your avatar**, or keep a monogram (their first initial). It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "symbol-colour" values.
+Learners choose an avatar instead of a photo in **Profile → Your avatar** (the menu is closed until they press **Change**): a flat illustrated character (ten people, a fox and a flame), a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) or their initial, on one of six background colours. Anyone who has not chosen gets a symbol assigned by their user ID, so nobody has a blank picture and it never changes by itself. It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "symbol-colour" values.
 
 ## Using it like an app on a phone
 

@@ -27,6 +27,10 @@ return [
     // Optional: where people without an englishfever.com account can register (shown under the sign-in button).
     'register_url' => 'https://englishfever.com/en/register/',
 
+    // 'forgiving' (default): missing apostrophes, capital letters and one-letter typos in words copied from the task are
+    // accepted, with a spelling tip. 'strict': only exact answers (capital letters still never matter).
+    'spelling' => 'forgiving',
+
     // Shown in the footer and the privacy note.
     'site_name'   => 'English Fever',
     'privacy_url' => 'https://www.englishfever.com/privacy-policy/',

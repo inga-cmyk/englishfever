@@ -117,6 +117,21 @@ Adapt this and have it checked by whoever advises you on GDPR. It is not legal a
 > **How long.** Registered learners: until you delete your results, or [24] months after your last visit. Guests: 60 days after the last visit.
 > **Your rights.** In your profile you can download your data and delete your account and all your results. You can also contact us at [email] to ask for access, correction or deletion, or to complain to the Data State Inspectorate (Datu valsts inspekcija).
 
+## Spelling and apostrophes
+
+This is a grammar app, so a missing apostrophe or a typo should not look like a grammar mistake, but a real grammar slip must never pass as a typo. The default (`'spelling' => 'forgiving'` in `config.php`):
+
+| Learner writes | Result |
+|---|---|
+| Capital letters wrong (`they play tennis on sundays`) | Correct. A tip appears for names, days, months and "I": *Capital letter: Sundays.* |
+| Missing apostrophe (`dont`, `doesnt`, `isnt`, `im`, `ive`, `youre`) | Correct, with the tip *Use an apostrophe: don't.* Only forms that cannot be anything else are accepted (not `were`, `ill`, `its`, `hes`). |
+| One-letter typo **inside** a word of five or more letters that appears in the task (`tenis`, `tenins` for *tennis*) | Correct, with the tip *Spelling: tenis → tennis.* At most two such typos. |
+| A typo in a short word, in a word that is not in the task, or at the **end** of a word (`plays` for `play`, `finish`/`finishes`/`finishing` for `finished`, `has` for `had`, `Sunday` for `Sundays`, `tens` for `tennis`) | Not accepted. These are grammar, or a different word. |
+
+Accepted answers get full points and count as correct for the adaptive logic. A test (`app/tests/grader_test.php`) changes the end of every word in every text and gap answer (over a thousand variants) and checks that none is accepted. Writing tasks (Create) accept `im`, `ive` and similar the same way.
+
+To go back to exact matching, set `'spelling' => 'strict'` (capital letters still never matter).
+
 ## Practice time and results on the website ("My activity")
 
 Needs plugin **ef-practice-sso 1.1.0 or newer**.

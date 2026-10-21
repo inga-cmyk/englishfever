@@ -138,6 +138,7 @@ final class Engine
             'correct' => $ok,
             'show' => $g['show'],
             'specific' => $g['specific'],
+            'notes' => $g['notes'] ?? [],
             'why' => $item['why'],
             'skill' => $skill,
             'kind' => $item['kind'],

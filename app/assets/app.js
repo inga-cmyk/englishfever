@@ -444,7 +444,8 @@
       var good = res.correct;
       var cheers = ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
-      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? cheers[Math.floor(Math.random() * cheers.length)] : (it.kind === 'write' ? 'Almost – check these points' : 'Not quite'),
+      var tips = (good && res.notes) ? res.notes : [];
+      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? (tips.length ? 'Correct – with a small spelling tip' : cheers[Math.floor(Math.random() * cheers.length)]) : (it.kind === 'write' ? 'Almost – check these points' : 'Not quite'),
         res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, 'You chose: '), chosen));
@@ -453,6 +454,7 @@
         fb.appendChild(h('p', null, h('b', null, 'You wrote: '), given));
       }
       if (res.specific) fb.appendChild(h('p', null, h('b', null, 'Tip: '), res.specific));
+      if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
       if (it.kind === 'write') {
         fb.appendChild(h('div', { class: 'ans' }, h('b', null, 'Model answer: '), res.show));
         fb.appendChild(h('p', null, res.why));

@@ -101,14 +101,14 @@
 "level": "A2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend writes: 'Does he works here?' What is the best advice?",
-"correct": "Write 'Does he work here?' After does we use the base verb.",
+"q": "Is this sentence correct? 'Does he works here?'",
+"correct": "No. It should be 'Does he work here?'",
 "wrong": [
-"The sentence is correct. Do not change it.",
-"Write 'Do he works here?'",
-"Write 'Is he works here?'"
+"Yes, it is correct.",
+"No. It should be 'Do he works here?'",
+"No. It should be 'Is he works here?'"
 ],
-"why": "In questions the helper verb (do/does) shows the person. The main verb stays in the base form: Does he work?",
+"why": "After does we use the base verb: work, not works. Does he work here?",
 "wrong_why": {}
 },
 {
@@ -823,14 +823,14 @@
 "level": "A2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend writes: 'I buyed a new phone yesterday.' What is the best advice?",
-"correct": "Write 'I bought a new phone.' Buy is irregular: bought.",
+"q": "Is this sentence correct? 'I buyed a new phone yesterday.'",
+"correct": "No. It should be 'I bought a new phone yesterday.'",
 "wrong": [
-"Write 'I buy a new phone yesterday.'",
-"Write 'I did bought a new phone.'",
-"The sentence is correct."
+"Yes, it is correct.",
+"No. It should be 'I buy a new phone yesterday.'",
+"No. It should be 'I did bought a new phone yesterday.'"
 ],
-"why": "Many common verbs are irregular. You must learn them: buy - bought, go - went, see - saw.",
+"why": "Buy is an irregular verb. The past form is bought, not buyed.",
 "wrong_why": {}
 },
 {

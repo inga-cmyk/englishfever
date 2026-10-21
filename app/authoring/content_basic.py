@@ -20,10 +20,10 @@ T(S, "A2.1", 3, "Make it negative: They play tennis on Sundays.", ["They don't p
 M(S, "A2.1", 4, "Which sentence is NOT correct?", "She don't work on Sunday.",
   ["He plays the guitar.", "Do you like pizza?", "We live in Riga."],
   "With 'she' we say doesn't: She doesn't work on Sunday.")
-M(S, "A2.1", 5, "A friend writes: 'Does he works here?' What is the best advice?",
-  "Write 'Does he work here?' After does we use the base verb.",
-  ["The sentence is correct. Do not change it.", "Write 'Do he works here?'", "Write 'Is he works here?'"],
-  "In questions the helper verb (do/does) shows the person. The main verb stays in the base form: Does he work?")
+M(S, "A2.1", 5, "Is this sentence correct? 'Does he works here?'",
+  "No. It should be 'Does he work here?'",
+  ["Yes, it is correct.", "No. It should be 'Do he works here?'", "No. It should be 'Is he works here?'"],
+  "After does we use the base verb: work, not works. Does he work here?")
 W(S, "A2.1", 6, "Write one sentence about what your friend or colleague does every day. Start with He or She.",
   [(r"\b(he|she)\s+(?!is\b|was\b|has\b)\w+s\b", "Use he or she + a verb with -s, for example: she starts work at eight."),
    (r"\b(every|each)\s+(day|morning|evening|week|weekday|afternoon)\b|\b(always|usually|often|sometimes|never)\b",
@@ -164,10 +164,10 @@ T(S, "A2.1", 3, "Make a question: He played football.", ["Did he play football?"
 M(S, "A2.1", 4, "Which sentence is NOT correct?", "I didn't went to school.",
   ["She visited her aunt.", "We watched a film.", "He had breakfast at 7."],
   "After didn't use the base verb: I didn't go to school.")
-M(S, "A2.1", 5, "A friend writes: 'I buyed a new phone yesterday.' What is the best advice?",
-  "Write 'I bought a new phone.' Buy is irregular: bought.",
-  ["Write 'I buy a new phone yesterday.'", "Write 'I did bought a new phone.'", "The sentence is correct."],
-  "Many common verbs are irregular. You must learn them: buy - bought, go - went, see - saw.")
+M(S, "A2.1", 5, "Is this sentence correct? 'I buyed a new phone yesterday.'",
+  "No. It should be 'I bought a new phone yesterday.'",
+  ["Yes, it is correct.", "No. It should be 'I buy a new phone yesterday.'", "No. It should be 'I did bought a new phone yesterday.'"],
+  "Buy is an irregular verb. The past form is bought, not buyed.")
 W(S, "A2.1", 6, "Write one sentence about what you did yesterday. Use a past verb and the word yesterday.",
   [(r"\b(\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left)\b", "Use a verb in the past (for example: met, went, worked)."),
    (r"\byesterday\b", "Use the word yesterday.")],

@@ -8,7 +8,7 @@ require __DIR__ . '/../src/Grader.php';
 Config::load();
 
 $fail = 0; $n = 0;
-$check = function (bool $cond, string $msg) use (&$fail) { if (!$cond) { $fail++; echo "FAIL: $msg\n"; } };
+$check = function (bool $cond, string $msg, $detail = null) use (&$fail) { if (!$cond) { $fail++; echo "FAIL: $msg" . ($detail !== null ? ' -> ' . json_encode($detail) : '') . "\n"; } };
 
 foreach (Content::items() as $it) {
     $n++;
@@ -42,6 +42,71 @@ foreach (Content::items() as $it) {
             break;
     }
 }
+
+// ───────── spelling policy ─────────
+$setSpelling = function (string $mode) {
+    (function () use ($mode) { self::$cfg['spelling'] = $mode; })->bindTo(null, Config::class)();
+};
+$setSpelling('forgiving');
+$neg = Content::item('ps-A21-3b'); // Make it negative: They play tennis on Sundays.
+$g = fn(string $a) => Grader::grade($neg, $a);
+$r = $g('They dont play tennis on Sundays');
+$check($r['correct'] && in_array("Use an apostrophe: don't.", $r['notes'], true), 'missing apostrophe accepted with a tip');
+$r = $g("they don't play tennis on sundays.");
+$check($r['correct'] && in_array('Capital letter: Sundays.', $r['notes'], true), 'missing capital accepted with a tip');
+$r = $g("They don't play tenis on Sundays");
+$check($r['correct'] && $r['notes'] === ['Spelling: tenis → tennis.'], 'one missing letter inside a copied word accepted', $r['notes']);
+$r = $g("They don't play tenins on Sundays");
+$check($r['correct'], 'swapped letters in a copied word accepted (tenins)');
+$check(!$g("They don't paly tennis on Sundays")['correct'], 'short words (4 letters) are never forgiven, they carry grammar (paly)');
+$check(!$g('They dont play tens on sundays')['correct'], '"tens" (a different word, two letters off) is not accepted');
+$check(!$g("They don't plays tennis on Sundays")['correct'], 'grammar error plays is not forgiven');
+$check(!$g("They doesn't play tennis on Sundays")['correct'], 'doesn\'t for they is not forgiven');
+$check(!$g("They don't play tennis on Sunday")['correct'], 'Sunday for Sundays (last letter) is not forgiven');
+$join = Content::item('ppf-B12-3c'); // Join with After ... had finished
+$check(!Grader::grade($join, 'After I had finish work, I went home.')['correct'], 'had finish is not forgiven as a typo of finished');
+$check(Grader::grade($join, 'After I had finished work, I went home.')['correct'], 'exact answer still correct');
+$check(!Grader::grade($join, 'After I had finishes work, I went home.')['correct'], 'a wrong word ending is not forgiven (finishes)');
+$check(!Grader::grade($join, 'After I had finishing work, I went home.')['correct'], 'a wrong word ending is not forgiven (finishing)');
+$w = Content::item('fu-A21-6a'); // I am going to ...
+$check(Grader::grade($w, 'Im going to visit a friend tomorrow')['correct'], 'write task: im accepted');
+$check(Grader::grade($w, "I'm going to visit a friend tomorrow")['correct'], 'write task: normal answer');
+$check(!Grader::grade($w, 'I going to visit a friend tomorrow')['correct'], 'write task: missing am still wrong');
+$setSpelling('strict');
+$check(!Grader::grade($neg, 'They dont play tennis on Sundays')['correct'], 'strict: missing apostrophe is a mistake');
+$check(!Grader::grade($neg, "They don't play tenis on Sundays")['correct'], 'strict: typo is a mistake');
+$check(Grader::grade($neg, "they don't play tennis on sundays")['correct'], 'strict: capital letters still never matter');
+$setSpelling('forgiving');
+
+// No grammar slip may pass: change the END of each word of every accepted answer, the result must be rejected
+$bad = 0; $tried = 0;
+foreach (Content::items() as $it) {
+    if (!in_array($it['kind'], ['gap', 'text'], true)) continue;
+    $firsts = array_map(fn($b) => $b[0], $it['answers']);
+    foreach ($it['answers'] as $bi => $alts) {
+        $accNorm = array_map([Grader::class, 'norm'], $alts);
+        $tokens = explode(' ', Grader::norm($alts[0]));
+        foreach ($tokens as $ti => $tok) {
+            if (mb_strlen($tok) < 3) continue;
+            $muts = [mb_substr($tok, 0, -1) . 's', mb_substr($tok, 0, -1) . 'd', $tok . 's', $tok . 'ed', $tok . 'd'];
+            if (mb_strlen($tok) >= 4) $muts[] = mb_substr($tok, 0, -1);
+            foreach (array_unique($muts) as $mu) {
+                if ($mu === $tok) continue;
+                $t2 = $tokens; $t2[$ti] = $mu;
+                $cand = implode(' ', $t2);
+                if (in_array($cand, $accNorm, true)) continue; // happens to be another accepted answer
+                $try = $firsts; $try[$bi] = $cand;
+                $tried++;
+                if (Grader::grade($it, $it['kind'] === 'gap' ? $try : $try[0])['correct']) {
+                    $bad++;
+                    if ($bad <= 8) echo "  accepted wrongly in {$it['id']}: $cand\n";
+                }
+            }
+        }
+    }
+}
+$check($bad === 0, "grammar slips accepted by the forgiving rules: $bad of $tried");
+echo "checked $tried word-ending changes\n";
 
 // normaliser
 $check(Grader::norm("Don't  Worry!") === 'do not worry', 'norm 1');

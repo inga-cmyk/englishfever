@@ -37,7 +37,12 @@ with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
             n += 1
     # an empty writable folder for PHP sessions, protected by .htaccess
     z.writestr("var/sessions/.keep", "")
-print(f"{out}: {n} files")
+    # which package is live (shown in the footer of the app)
+    import time
+    stamp = time.strftime("%Y-%m-%d %H:%M")
+    z.writestr("src/version.php", "<?php\nreturn ['version' => '" + stamp + "'];\n")
+    n += 1
+print(f"{out}: {n} files, version {stamp}")
 
 plug = os.path.join(DIST, "ef-practice-sso.zip")
 src = os.path.join(APP, "wp-plugin", "ef-practice-sso")

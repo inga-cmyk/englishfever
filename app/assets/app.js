@@ -32,7 +32,8 @@
       state.config = r[0]; state.meta = r[1]; state.user = r[2].user;
       footer.replaceChildren(
         h('div', null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · We store your nickname, scores and time spent. ',
-          state.config.contact_email ? h('a', { href: 'mailto:' + state.config.contact_email }, state.config.contact_email) : null));
+          state.config.contact_email ? h('a', { href: 'mailto:' + state.config.contact_email }, state.config.contact_email) : null),
+        h('div', { class: 'small', style: 'margin-top:4px;opacity:.7' }, 'Version ' + (state.config.version || 'dev')));
       if (state.user) startHeartbeat();
       window.addEventListener('hashchange', route);
       ['pointerdown', 'keydown', 'scroll', 'input'].forEach(function (ev) { window.addEventListener(ev, function () { state.lastInteraction = Date.now(); }, { passive: true }); });

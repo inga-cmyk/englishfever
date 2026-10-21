@@ -35,6 +35,7 @@ try {
                 'register_url' => Config::get('register_url', ''),
                 'sso' => strlen((string) Config::get('sso_secret', '')) >= 32 && Config::get('sso_secret') !== 'CHANGE-ME',
                 'contact_email' => Config::get('contact_email', ''),
+                'version' => is_file(__DIR__ . '/src/version.php') ? (string) ((require __DIR__ . '/src/version.php')['version'] ?? 'dev') : 'dev',
             ]);
 
         case 'meta':

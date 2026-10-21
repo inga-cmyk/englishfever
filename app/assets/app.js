@@ -748,7 +748,7 @@
     }
     function drawPanel() {
       panel.replaceChildren(
-        group('Characters', UI.AV_CHARS), group('Symbols', UI.AV_GLYPHS.concat(['initial'])),
+        group('People', UI.AV_PEOPLE), group('Characters', UI.AV_FUN), group('Symbols', UI.AV_GLYPHS.concat(['initial'])),
         h('div', { class: 'avgroup' }, h('div', { class: 'label' }, 'Background'),
           h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Background colour' }, UI.AV_COLORS.map(function (c) {
             return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; drawPanel(); } });
@@ -797,9 +797,27 @@
   function viewTeacher() {
     api('teacher/students').then(function (r) {
       var all = r.students, sortKey = 'last_seen', dir = -1, q = '';
-      var weekActive = all.filter(function (s) { return s.week_answers > 0; }).length;
-      var withAcc = all.filter(function (s) { return s.accuracy !== null; });
-      var avg = withAcc.length ? Math.round(withAcc.reduce(function (a, s) { return a + s.accuracy; }, 0) / withAcc.length) : null;
+      // who the list shows: my students (enrolled in my Tutor courses, or added by me), all registered users, or everyone including guests
+      var VIEWS = [['mine', 'My students'], ['registered', 'Registered'], ['all', 'Everyone']];
+      function inView(s, v) { return v === 'all' || (v === 'registered' && s.provider !== 'guest') || (v === 'mine' && !!s.mine); }
+      var view = null; try { view = localStorage.getItem('ef_tview'); } catch (e) {}
+      if (!VIEWS.some(function (x) { return x[0] === view; })) view = all.some(function (s) { return s.mine; }) ? 'mine' : 'registered';
+      var statsBox = h('div', { class: 'grid g4', style: 'margin-bottom:16px' });
+      var exportLink = h('a', { class: 'btn ghost small', download: '' }, 'Export answers (CSV)');
+      var tabs = h('div', { class: 'tabs', role: 'tablist', style: 'max-width:520px' });
+      function drawTabs() {
+        tabs.replaceChildren.apply(tabs, VIEWS.map(function (x) {
+          var n = all.filter(function (s) { return inView(s, x[0]); }).length;
+          return h('button', { role: 'tab', 'aria-selected': String(x[0] === view), onclick: function () { view = x[0]; try { localStorage.setItem('ef_tview', view); } catch (e) {} draw(); } }, x[1] + ' (' + n + ')');
+        }));
+      }
+      function drawStats(list) {
+        var weekActive = list.filter(function (s) { return s.week_answers > 0; }).length;
+        var withAcc = list.filter(function (s) { return s.accuracy !== null; });
+        var avg = withAcc.length ? Math.round(withAcc.reduce(function (a, s) { return a + s.accuracy; }, 0) / withAcc.length) : null;
+        var weekMin = list.reduce(function (a, s) { return a + s.week_minutes; }, 0);
+        statsBox.replaceChildren(stat('users', list.length, view === 'all' ? 'learners' : (view === 'mine' ? 'my students' : 'registered')), stat('flame', weekActive, 'active this week'), stat('check', avg === null ? '–' : avg + '%', 'average correct'), stat('clock', UI.fmtDuration(weekMin * 60), 'practised this week'));
+      }
       var tbody = h('tbody');
       var cols = [
         ['nickname', 'Student'], ['level_est', 'Level'], ['last_seen', 'Last active'], ['week_minutes', 'Week (min)', 'r'], ['week_answers', 'Week tasks', 'r'],
@@ -811,7 +829,9 @@
       function sortBy(k) { if (sortKey === k) dir = -dir; else { sortKey = k; dir = (k === 'nickname' || k === 'level_est') ? 1 : -1; } draw(); }
       function draw() {
         thead.querySelectorAll('th').forEach(function (t) { if (t.getAttribute('data-k') === sortKey) t.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending'); else t.removeAttribute('aria-sort'); });
-        var rows = all.filter(function (s) { return !q || (s.nickname + ' ' + (s.full_name || '')).toLowerCase().indexOf(q) >= 0; });
+        drawTabs(); drawStats(all.filter(function (s) { return inView(s, view); }));
+        exportLink.href = 'api.php?r=teacher/export&view=' + view;
+        var rows = all.filter(function (s) { return inView(s, view) && (!q || (s.nickname + ' ' + (s.full_name || '')).toLowerCase().indexOf(q) >= 0); });
         rows.sort(function (a, b) {
           var x = a[sortKey], y = b[sortKey];
           if (x === null || x === undefined) x = (typeof y === 'string') ? '' : -1;
@@ -821,12 +841,12 @@
         });
         tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
           return h('tr', null,
-            h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null),
+            h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, (view !== 'mine' && s.mine) ? h('span', { class: 'pill good', style: 'margin-left:8px' }, 'mine') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null, s.provider === 'guest' ? h('div', { class: 'small muted' }, 'first seen ' + UI.fmtAgo(s.joined)) : null),
             h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, '–')),
             h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
             h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),
             h('td', { class: 'r num' }, s.accuracy === null ? '–' : s.accuracy + '%'), h('td', { class: 'r num' }, String(s.streak)));
-        }) : [h('tr', null, h('td', { colspan: String(cols.length), class: 'empty' }, all.length ? 'No students match.' : 'No students yet. Share the practice link with your learners.'))]);
+        }) : [h('tr', null, h('td', { colspan: String(cols.length), class: 'empty' }, q ? 'No one matches.' : (view === 'mine' ? 'No students here yet. Open a learner and choose “Add to my students”.' : 'No learners yet. Share the practice link.')))]);
       }
       var search = h('input', { type: 'text', placeholder: 'Search students', 'aria-label': 'Search students', style: 'max-width:260px', oninput: function () { q = search.value.trim().toLowerCase(); draw(); } });
       draw();
@@ -842,8 +862,8 @@
       }).catch(function () {});
       show(h('div', null,
         h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),
-          h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/export', download: '' }, 'Export all answers (CSV)')),
-        h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('users', all.filter(function (s) { return s.provider !== 'guest'; }).length, 'registered'), stat('user', all.filter(function (s) { return s.provider === 'guest'; }).length, 'guests'), stat('flame', weekActive, 'active this week'), stat('check', avg === null ? '–' : avg + '%', 'average correct')),
+          exportLink),
+        tabs, statsBox,
         h('div', { id: 'syncbox' }),
         h('div', { class: 'row', style: 'margin-bottom:12px' }, search),
         h('div', { class: 'tablewrap' }, h('table', null, thead, tbody))));
@@ -856,6 +876,8 @@
       var again = function () { viewTeacherStudent(id); };
       var moder = h('div', { class: 'row' },
         u.provider === 'guest' ? null : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/moderate', { user_id: u.id, hide: !u.board_hidden }).then(again).catch(fail); } }, u.board_hidden ? 'Show on leaderboard' : 'Hide from leaderboard'),
+        u.mine === 'course' ? h('span', { class: 'pill good' }, 'In your Tutor course')
+          : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/mine', { user_id: u.id, mine: u.mine !== 'added' }).then(again).catch(fail); } }, u.mine === 'added' ? 'Remove from my students' : 'Add to my students'),
         h('button', { class: 'btn ghost small', onclick: function () { if (confirm('Replace this name with "Learner ####"?')) api('teacher/moderate', { user_id: u.id, reset_name: true }).then(again).catch(fail); } }, 'Reset name'));
       var maxMin = Math.max.apply(null, r.days.map(function (x) { return x.minutes; }).concat([5]));
       var days = h('div', { class: 'bars', style: 'height:100px', role: 'img', 'aria-label': 'Minutes per day, last 30 days' }, r.days.map(function (x, i) {

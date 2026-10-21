@@ -266,6 +266,19 @@ g2.req(WP + "/wp-login.php", urllib.parse.urlencode({"log": "newbie2", "pwd": "p
 s4, page4, _ = g2.req(WP + "/results/")
 check("auto-return off: a 'Back to your practice' bar is shown instead", s4 == 200 and "Back to your practice" in page4 and "ef_practice=open" in page4, s4)
 wpcli("config", "delete", "EF_PRACTICE_AUTO_RETURN", "--type=constant"); time.sleep(3)
+# 8b2. "My students": enrolments in the teacher's Tutor courses (Tutor stores them as tutor_enrolled posts), plus marks made by hand
+course = wpcli("post", "create", "--post_type=courses", "--post_title=Test course", "--post_status=publish", "--post_author=1", "--porcelain")
+other_course = wpcli("post", "create", "--post_type=courses", "--post_title=Someone else's course", "--post_status=publish", "--post_author=" + str(optout), "--porcelain")
+wpcli("post", "create", "--post_type=tutor_enrolled", "--post_status=completed", f"--post_parent={course}", f"--post_author={maria}", "--post_title=enrolment 1")
+wpcli("post", "create", "--post_type=tutor_enrolled", "--post_status=cancelled", f"--post_parent={course}", f"--post_author={optout}", "--post_title=cancelled enrolment")
+wpcli("post", "create", "--post_type=tutor_enrolled", "--post_status=completed", f"--post_parent={other_course}", f"--post_author={uid_of('newbie')}", "--post_title=enrolment elsewhere")
+lst = tapp.api("teacher/students")
+mine_rows = {x["nickname"]: x["mine"] for x in lst["students"]}
+check("roster is known and students of the teacher's courses are marked 'course'", lst["roster_ok"] is True and any(v == "course" for v in mine_rows.values()), mine_rows)
+check("a cancelled enrolment and a stranger's course do not count", sum(1 for v in mine_rows.values() if v == "course") == 1, mine_rows)
+gm = Br(); gm.api("guest", {"nickname": "Mark me", "t": 5000}); gm_id = gm.api("me")["user"]["id"]
+check("the teacher can add a guest to my students", tapp.api("teacher/mine", {"user_id": gm_id, "mine": True})["_status"] == 200)
+
 # 8c. registration with an email confirmation: the person logs in hours later, maybe days later
 def set_marker(br, secs_ago):
     br.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time()) - secs_ago), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
@@ -278,6 +291,7 @@ def login_into(br, user, pwd="pass1234"):
 wpcli("user", "delete", "late", "--yes"); wpcli("user", "create", "late", "late@example.com", "--role=subscriber", "--user_pass=pass1234", "--display_name=Late One")
 g3 = Br(); g3.api("guest", {"nickname": "Late confirm", "t": 5000}); practise(g3, 3); time.sleep(1)
 dflt = g3.api("me")["user"]["avatar"]
+g3_id = g3.api("me")["user"]["id"]; tapp.api("teacher/mine", {"user_id": g3_id, "mine": True})   # the teacher already follows this guest
 check("without a chosen avatar a guest gets a symbol that stays the same", bool(re.fullmatch(r"(flame|spark|bolt|sun|thermo|wave|comet|leaf)-(raspberry|gold|ink|cream|plum|sand)", dflt or "")) and g3.api("me")["user"]["avatar"] == dflt, dflt)
 g3.req(APP + "/register.php")
 set_marker(g3, 2 * 3600)
@@ -298,6 +312,8 @@ sA, _, hA = g3.req(WP + "/?ef_practice=open")
 sB, _, hB = g3.req(hA.get("Location") or "")   # the app's sso.php signs them in
 me3 = g3.api("me")
 check("signing in later moves the guest results and keeps the assigned avatar", me3["user"]["provider"] == "wp" and me3.get("welcome") and me3["user"]["avatar"] == dflt, (me3["user"], me3.get("welcome")))
+after_merge = {x["id"]: x for x in tapp.api("teacher/students")["students"]}
+check("the teacher's mark moved to the new account and the guest row is gone", g3_id not in after_merge and after_merge.get(me3["user"]["id"], {}).get("mine") == "added", after_merge.get(me3["user"]["id"]))
 check("teacher and student views show an avatar for everyone", all(r.get("avatar") for r in tapp.api("leaderboard", period="all")["rows"]) if tapp.api("leaderboard", period="all")["rows"] else True)
 # administrators are never redirected
 adm = wp_login("admin"); adm.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time())), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))

@@ -4,7 +4,8 @@
 // Spelling policy (config 'spelling', default 'forgiving'):
 //   - capital letters never matter (a tip is shown for names, days and "I")
 //   - a missing apostrophe (dont, isnt, im) is accepted, with a tip
-//   - a typo is accepted only in a word the learner can copy from the task, only as one slip INSIDE the word
+//   - a typo is accepted only in a word the learner can copy from the task, or in the form of a verb given in the task
+//     ("arrive" -> arriving: ariving), only as one slip INSIDE the word, in or next to the stem
 //     (never at its end, where grammar lives: finish/finished, likes/liked, has/had), with a tip
 //   'strict' accepts none of the last two.
 
@@ -205,7 +206,8 @@ final class Grader
         $notes = [];
         foreach ($a as $i => $word) {
             if ($g[$i] === $word) continue;
-            if (mb_strlen($word, 'UTF-8') >= 5 && isset($prompt[$word]) && self::oneTypo($g[$i], $word)) {
+            $at = mb_strlen($word, 'UTF-8') >= 5 ? self::oneTypo($g[$i], $word) : -1;
+            if ($at >= 0 && (isset($prompt[$word]) || $at <= self::stemLength($word, $prompt))) {
                 $notes[] = "Spelling: {$g[$i]} → $word.";
                 continue;
             }
@@ -214,23 +216,44 @@ final class Grader
         return ($notes && count($notes) <= 2) ? $notes : null;
     }
 
-    /** One adjacent swap, or one letter wrong/missing/extra that is NOT the last letter of the correct word. */
-    private static function oneTypo(string $s, string $t): bool
+    /**
+     * How much of a correct word is the stem of a verb that the task gives ("arrive" gives the stem "arriv" of arriving,
+     * "play" gives "play" of played, "stop" gives "stop" of stopped). 0 when no word of the task shares at least 4 letters.
+     */
+    private static function stemLength(string $word, array $prompt): int
+    {
+        $best = 0;
+        foreach (array_keys($prompt) as $p) {
+            $p = (string) $p;
+            if (mb_strlen($p, 'UTF-8') < 4) continue;
+            $n = 0;
+            $max = min(mb_strlen($p, 'UTF-8'), mb_strlen($word, 'UTF-8'));
+            while ($n < $max && mb_substr($p, $n, 1, 'UTF-8') === mb_substr($word, $n, 1, 'UTF-8')) $n++;
+            if ($n >= 4) $best = max($best, $n);
+        }
+        return $best;
+    }
+
+    /**
+     * One adjacent swap, or one letter wrong/missing/extra that is NOT the last letter of the correct word.
+     * @return int the position of the slip, or -1 when the words are not one typo apart
+     */
+    private static function oneTypo(string $s, string $t): int
     {
         $s = preg_split('//u', $s, -1, PREG_SPLIT_NO_EMPTY);
         $t = preg_split('//u', $t, -1, PREG_SPLIT_NO_EMPTY);
         $ls = count($s);
         $lt = count($t);
-        if (abs($ls - $lt) > 1) return false;
+        if (abs($ls - $lt) > 1) return -1;
         $i = 0;
         while ($i < min($ls, $lt) && $s[$i] === $t[$i]) $i++;
-        if ($i === $ls && $i === $lt) return false;
+        if ($i === $ls && $i === $lt) return -1;
         if ($ls === $lt) {
-            if ($i + 1 < $lt && $s[$i] === $t[$i + 1] && $s[$i + 1] === $t[$i] && array_slice($s, $i + 2) === array_slice($t, $i + 2)) return true; // swap
-            return $i < $lt - 1 && array_slice($s, $i + 1) === array_slice($t, $i + 1);                                                           // wrong letter
+            if ($i + 1 < $lt && $s[$i] === $t[$i + 1] && $s[$i + 1] === $t[$i] && array_slice($s, $i + 2) === array_slice($t, $i + 2)) return $i; // swap
+            return ($i < $lt - 1 && array_slice($s, $i + 1) === array_slice($t, $i + 1)) ? $i : -1;                                                 // wrong letter
         }
-        if ($ls === $lt + 1) return $i < $ls - 1 && array_slice($s, $i + 1) === array_slice($t, $i);                                           // extra letter
-        return $i < $lt - 1 && array_slice($s, $i) === array_slice($t, $i + 1);                                                                 // missing letter
+        if ($ls === $lt + 1) return ($i < $ls - 1 && array_slice($s, $i + 1) === array_slice($t, $i)) ? $i : -1;                                   // extra letter
+        return ($i < $lt - 1 && array_slice($s, $i) === array_slice($t, $i + 1)) ? $i : -1;                                                         // missing letter
     }
 
     /** Tips for capital letters in names, days, months and "I" (never a mistake). */

@@ -148,6 +148,30 @@ final class Wp
         return [$code, $resp === false ? '' : $resp, $resp === false ? 'no connection to the website' : ''];
     }
 
+    /**
+     * WordPress ids of the students enrolled in this teacher's Tutor LMS courses (courses they wrote or teach).
+     * Asked from the website, cached for 10 minutes, and the last known list is kept if the website cannot be reached.
+     * Null when nothing is known (the sync address is not set, or the website never answered).
+     */
+    public static function roster(int $wpTeacherId): ?array
+    {
+        if (!self::configured() || $wpTeacherId < 1) return null;
+        $k = 'roster:' . $wpTeacherId;
+        $c = json_decode((string) Db::kvGet($k), true);
+        if (is_array($c) && time() - (int) $c['at'] < 600) return $c['ids'];
+        $url = (string) preg_replace('~/activity/?$~', '/roster', (string) Config::get('wp_sync_url', ''));
+        if (substr($url, -7) === '/roster') {
+            [$code, $resp] = self::post($url, json_encode(['teacher' => $wpTeacherId]));
+            $j = json_decode((string) $resp, true);
+            if ($code === 200 && is_array($j) && isset($j['students']) && is_array($j['students'])) {
+                $ids = array_values(array_unique(array_map('intval', $j['students'])));
+                Db::kvSet($k, json_encode(['at' => time(), 'ids' => $ids]));
+                return $ids;
+            }
+        }
+        return is_array($c) ? $c['ids'] : null;
+    }
+
     // ───────── what the website shows ─────────
 
     public static function summary(int $wpUserId): array

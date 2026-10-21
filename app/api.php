@@ -84,6 +84,7 @@ try {
             $u = Auth::require();
             if (empty($in['confirm'])) throw new ApiError('Please confirm.', 400);
             foreach (['attempts', 'psessions', 'skill_state', 'activity'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            Db::q('DELETE FROM teacher_mine WHERE student_id = ? OR teacher_id = ?', [$u['id'], $u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
             Auth::logout();
             out(['ok' => true]);
@@ -162,12 +163,20 @@ try {
             out(Wp::status());
 
         case 'teacher/students':
-            Auth::requireTeacher();
-            out(['students' => Stats::teacherStudents()]);
+            $t = Auth::requireTeacher();
+            out(Stats::teacherStudents((int) $t['id']));
 
         case 'teacher/student':
-            Auth::requireTeacher();
-            out(Stats::teacherStudent((int) ($_GET['id'] ?? 0)));
+            $t = Auth::requireTeacher();
+            out(Stats::teacherStudent((int) ($_GET['id'] ?? 0), (int) $t['id']));
+
+        case 'teacher/mine':
+            $t = Auth::requireTeacher();
+            $sid = (int) ($in['user_id'] ?? 0);
+            if (!Db::one("SELECT id FROM users WHERE id = ? AND role = 'student'", [$sid])) throw new ApiError('Student not found.', 404);
+            Db::q('DELETE FROM teacher_mine WHERE teacher_id = ? AND student_id = ?', [$t['id'], $sid]);
+            if (!empty($in['mine'])) Db::insert('teacher_mine', ['teacher_id' => (int) $t['id'], 'student_id' => $sid, 'added_at' => time()]);
+            out(['ok' => true]);
 
         case 'teacher/moderate':
             Auth::requireTeacher();
@@ -182,10 +191,11 @@ try {
             out(['ok' => true]);
 
         case 'teacher/export':
-            Auth::requireTeacher();
+            $t = Auth::requireTeacher();
+            $view = in_array($_GET['view'] ?? '', ['mine', 'registered'], true) ? $_GET['view'] : 'all';
             header('Content-Type: text/csv; charset=utf-8');
-            header('Content-Disposition: attachment; filename="practice-attempts-' . date('Y-m-d') . '.csv"');
-            echo "\xEF\xBB\xBF" . Stats::exportAttempts();
+            header('Content-Disposition: attachment; filename="practice-attempts-' . $view . '-' . date('Y-m-d') . '.csv"');
+            echo "\xEF\xBB\xBF" . Stats::exportAttempts($view, (int) $t['id']);
             exit;
 
         default:

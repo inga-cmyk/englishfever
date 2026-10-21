@@ -21,7 +21,7 @@ Use it unchanged. It must open in the same tab. It takes logged-in students stra
 ## Tasks
 
 **1. Plugin (only if you can upload a file from the owner's computer; otherwise skip and tell the owner)**
-Plugins → Add New Plugin → Upload Plugin → choose `ef-practice-sso.zip` (the owner provides it) → Install Now → "Replace current with uploaded" → keep it **active**. Check that the plugin list shows "EF Practice – sign in with englishfever.com" at **version 1.4.0 or newer**. Report the version.
+Plugins → Add New Plugin → Upload Plugin → choose `ef-practice-sso.zip` (the owner provides it) → Install Now → "Replace current with uploaded" → keep it **active**. Check that the plugin list shows "EF Practice – sign in with englishfever.com" at **version 1.5.0 or newer**. Report the version.
 
 **2. The "Practice login" page**
 Pages: a page with slug `practice-login` should exist and be published, with one Shortcode block containing `[ef_practice_button label="Start practising"]`. If it exists, leave it; just report. If an SEO plugin is installed, set this page to noindex. Do **not** add this page to any menu.
@@ -51,6 +51,9 @@ Save. Then open the student dashboard Home (https://englishfever.com/en/dashboar
 
 **8b. Registration with email confirmation (check only, change nothing)**
 Register a test student on https://englishfever.com/en/register/ (use an address the owner provides). Report: (a) which plugin or setting sends the confirmation email, (b) what the new user sees after the form, (c) whether clicking the email link logs the user in, and (d) which page they land on. Do not change any settings; the owner decides.
+
+**8b2. "My students" check (after the plugin is updated and the owner has opened the practice app once as a teacher)**
+In the WordPress admin open Tutor LMS → Courses and note which courses are written by the owner's account and how many students are enrolled in each (Tutor LMS → Students). Report these numbers. The owner will compare them with the count shown next to "My students" in the practice app's teacher list. Do not change anything.
 
 **8c. Social login (optional, only after the owner's yes)**
 If Tutor LMS Pro is active: Tutor LMS Pro → Add-ons → enable "Social Login", then Tutor LMS Pro → Settings → Authentication → turn on **Google only** (the owner supplies the Google Client ID). Otherwise install the free plugin "Nextend Social Login" and enable Google only. Set the default role for new users to the same role normal registrations get, make sure the login returns to the page the person came from (`redirect_to`), and test with a Google account: the user must be created as a normal website user and the practice link LINK must then sign them in. Report what you see.

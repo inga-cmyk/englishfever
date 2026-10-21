@@ -180,6 +180,12 @@ final class Db
                 synced_at $big NOT NULL,
                 PRIMARY KEY (user_id, day)
             )$tail",
+            "CREATE TABLE IF NOT EXISTS teacher_mine (
+                teacher_id $big NOT NULL,
+                student_id $big NOT NULL,
+                added_at $big NOT NULL,
+                PRIMARY KEY (teacher_id, student_id)
+            )$tail",
             "CREATE TABLE IF NOT EXISTS kv (
                 k $str NOT NULL PRIMARY KEY,
                 v $txt NULL

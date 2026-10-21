@@ -149,7 +149,7 @@ for bad_av in ['flame-raspberry"><script>alert(1)</script>', "../../etc/passwd",
 check("the avatar is unchanged after the attempts", av.api("me")["user"]["avatar"] == "comet-plum")
 dflt = av.api("account/profile", {"avatar": None})["user"]["avatar"]
 check("clearing the avatar gives an assigned symbol, the same every time", bool(re.fullmatch(r"(flame|spark|bolt|sun|thermo|wave|comet|leaf)-(raspberry|gold|ink|cream|plum|sand)", dflt or "")) and av.api("me")["user"]["avatar"] == dflt, dflt)
-for good_av in ["fox-gold", "ada-plum", "hana-cream", "initial-ink", "ivan-sand", "ember-ink"]:
+for good_av in ["fox-gold", "vera-plum", "nova-ink", "prof-sand", "sleuth-gold", "hana-cream", "initial-ink", "ivan-sand", "ember-ink"]:
     check(f"character / initial avatar accepted: {good_av}", av.api("account/profile", {"avatar": good_av})["user"]["avatar"] == good_av)
 check("a character alone (no colour) is refused", av.api("account/profile", {"avatar": "fox"})["_status"] == 400)
 av.api("account/profile", {"avatar": "spark-gold"})
@@ -166,6 +166,30 @@ check("register.php sends people to the website's form", s_ == 302 and loc.start
 check("register.php leaves a short-lived marker", "ef_return=" in ck and "HttpOnly" in ck and ("Max-Age" in ck or "expires" in ck.lower()), ck)
 m_ = re.search(r"Max-Age=(\d+)", " ".join(v for k, v in C().guest("Long sign in")["_headers"].items() if k.lower() == "set-cookie"))
 check("people stay signed in for about 90 days", m_ and 85 * 86400 <= int(m_.group(1)) <= 91 * 86400, m_.group(1) if m_ else None)
+
+# ---- 7d. teacher filter: my students / registered / everyone
+fl = tc.api("teacher/students")
+check("the list says which learners are mine (nobody yet) and whether the website roster is known", all(x["mine"] is None for x in fl["students"]) and fl["roster_ok"] is False, fl.get("roster_ok"))
+reg_sid = next(x["id"] for x in fl["students"] if x["nickname"] == "Avatar Reg"); guest_sid = next(x["id"] for x in fl["students"] if x["provider"] == "guest")
+check("a student cannot add anyone to a teacher's list", rw.api("teacher/mine", {"user_id": guest_sid, "mine": True})["_status"] == 403)
+check("a guest cannot either", av.api("teacher/mine", {"user_id": guest_sid, "mine": True})["_status"] == 403)
+check("adding someone who does not exist is a clean 404", tc.api("teacher/mine", {"user_id": 999999, "mine": True})["_status"] == 404)
+check("the teacher adds a registered student", tc.api("teacher/mine", {"user_id": reg_sid, "mine": True})["_status"] == 200)
+fl = tc.api("teacher/students")
+check("that student is now 'added' and others are not", [x["mine"] for x in fl["students"] if x["id"] == reg_sid] == ["added"] and sum(1 for x in fl["students"] if x["mine"]) == 1)
+check("the detail page knows it", tc.api("teacher/student", id=reg_sid)["user"]["mine"] == "added")
+s, csv_mine, _ = tc.raw("/api.php?r=teacher/export&view=mine")
+s, csv_reg, _ = tc.raw("/api.php?r=teacher/export&view=registered")
+s, csv_all, _ = tc.raw("/api.php?r=teacher/export&view=all")
+s, csv_bad, _ = tc.raw("/api.php?r=teacher/export&view=%27%3Bdrop")
+check("export 'mine' holds only my student's answers", "Avatar Reg" in csv_mine and "Formula" not in csv_mine and "guest" not in csv_mine, csv_mine[:200])
+check("export 'registered' has no guests", "guest" not in csv_reg.replace("\"guest\"", "") and "Avatar Reg" in csv_reg)
+check("export 'all' has guests too and a strange view falls back to it", "guest" in csv_all and csv_bad == csv_all)
+tc.api("teacher/mine", {"user_id": reg_sid, "mine": False})
+check("and can take them out again", all(x["mine"] is None for x in tc.api("teacher/students")["students"]))
+tc.api("teacher/mine", {"user_id": guest_sid, "mine": True})
+check("a guest can be added too (a known person)", any(x["id"] == guest_sid and x["mine"] == "added" for x in tc.api("teacher/students")["students"]))
+tc.api("teacher/mine", {"user_id": guest_sid, "mine": False})
 
 # ---- 8. the CSV cannot carry a spreadsheet formula
 fx = C(); sso(fx, 9300 + int(time.time()) % 90, "=HYPERLINK(\"http://evil\",\"x\")"); fx.api("account/profile", {"nickname": "Formula Fan", "show_on_board": False})

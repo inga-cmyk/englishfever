@@ -164,9 +164,27 @@ final class Stats
 
     // ───────── teacher ─────────
 
-    public static function teacherStudents(): array
+    /** Which learners belong to this teacher: enrolled in their Tutor courses ('course') or added by hand ('added'). */
+    private static function mineMap(int $teacherId): array
     {
-        $users = Db::all("SELECT id, provider, nickname, avatar, full_name, created_at, last_seen FROM users WHERE role = 'student' ORDER BY nickname");
+        $t = $teacherId ? Db::one('SELECT provider, external_id FROM users WHERE id = ?', [$teacherId]) : null;
+        $roster = ($t && $t['provider'] === 'wp') ? Wp::roster((int) $t['external_id']) : null;
+        $manual = [];
+        foreach (Db::all('SELECT student_id FROM teacher_mine WHERE teacher_id = ?', [$teacherId]) as $r) $manual[(int) $r['student_id']] = true;
+        return [$roster === null ? null : array_flip($roster), $manual];
+    }
+
+    private static function mineState(array $map, array $u): ?string
+    {
+        if (isset($map[1][(int) $u['id']])) return 'added';
+        if ($u['provider'] === 'wp' && $map[0] !== null && isset($map[0][(int) $u['external_id']])) return 'course';
+        return null;
+    }
+
+    public static function teacherStudents(int $teacherId = 0): array
+    {
+        $users = Db::all("SELECT id, provider, external_id, nickname, avatar, full_name, created_at, last_seen FROM users WHERE role = 'student' ORDER BY nickname");
+        $map = self::mineMap($teacherId);
         $act = [];
         $weekStart = self::weekStart();
         foreach (Db::all('SELECT user_id, SUM(seconds) AS s, SUM(answers) AS a, SUM(xp) AS x FROM activity GROUP BY user_id') as $r) $act[$r['user_id']] = $r;
@@ -190,14 +208,15 @@ final class Stats
                 'accuracy' => !empty($acc[$id]['n']) ? round(100 * $acc[$id]['c'] / $acc[$id]['n']) : null,
                 'streak' => self::streak((int) $id)['current'],
                 'level_est' => $level,
+                'mine' => self::mineState($map, $u),
             ];
         }
-        return $out;
+        return ['students' => $out, 'roster_ok' => $map[0] !== null];
     }
 
-    public static function teacherStudent(int $id): array
+    public static function teacherStudent(int $id, int $teacherId = 0): array
     {
-        $u = Db::one("SELECT id, provider, nickname, avatar, full_name, created_at, last_seen, show_on_board, board_hidden FROM users WHERE id = ? AND role = 'student'", [$id]);
+        $u = Db::one("SELECT id, provider, external_id, nickname, avatar, full_name, created_at, last_seen, show_on_board, board_hidden FROM users WHERE id = ? AND role = 'student'", [$id]);
         if (!$u) throw new ApiError('Student not found.', 404);
         $dash = self::dashboard($id);
         $days = [];
@@ -222,18 +241,28 @@ final class Stats
         }
         return [
             'user' => ['id' => (int) $u['id'], 'nickname' => $u['nickname'], 'avatar' => Auth::effectiveAvatar($u['avatar'], (int) $u['id']), 'full_name' => $u['full_name'], 'provider' => $u['provider'],
-                'joined' => (int) $u['created_at'], 'last_seen' => (int) $u['last_seen'], 'board_hidden' => (bool) $u['board_hidden']],
+                'joined' => (int) $u['created_at'], 'last_seen' => (int) $u['last_seen'], 'board_hidden' => (bool) $u['board_hidden'],
+                'mine' => self::mineState(self::mineMap($teacherId), $u)],
             'dashboard' => $dash, 'days' => $days, 'recent' => $recent, 'sessions' => $sessions,
         ];
     }
 
-    public static function exportAttempts(): string
+    /** @param string $view all | registered | mine (what the teacher has selected in the list) */
+    public static function exportAttempts(string $view = 'all', int $teacherId = 0): string
     {
+        $only = null;
+        if ($view === 'registered' || $view === 'mine') {
+            $only = [];
+            foreach (self::teacherStudents($teacherId)['students'] as $s) {
+                if ($view === 'mine' ? $s['mine'] !== null : $s['provider'] !== 'guest') $only[$s['id']] = true;
+            }
+        }
         $fh = fopen('php://temp', 'w+');
         fputcsv($fh, ['time', 'nickname', 'name', 'account', 'skill', 'level', 'bloom', 'correct', 'answer', 'seconds', 'item'], ',', '"', '\\');
         $users = [];
         foreach (Db::all('SELECT id, nickname, full_name, provider FROM users') as $u) $users[$u['id']] = $u;
         foreach (Db::all('SELECT * FROM attempts ORDER BY id') as $a) {
+            if ($only !== null && !isset($only[(int) $a['user_id']])) continue;
             $u = $users[$a['user_id']] ?? ['nickname' => '?', 'full_name' => '', 'provider' => '?'];
             $cell = fn($v) => preg_match('/^[=+\-@]/', (string) $v) ? "'" . $v : $v; // stop spreadsheet formula injection
             fputcsv($fh, [

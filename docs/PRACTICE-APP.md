@@ -99,8 +99,12 @@ Use the `?ef_practice=open` link from "Making the app easy to find" in your menu
 ## Teacher guide
 
 - **Students** page: click a column title to sort; click a name for details. A level estimate (≈ B1.1) appears after 5 tasks. It is an estimate, not a grade.
-- Guests appear with a *guest* label. They have no password; if a guest loses their browser data, they start from zero. The **Export** file has an `account` column (guest or registered).
-- **Export** gives every answer as CSV (time, student, tense, level, thinking level, answer, correct or not, seconds).
+- **Three views** above the list: **My students**, **Registered** and **Everyone** (with counts; the app remembers your choice). The tiles, the list and the **Export** all follow the view.
+  - *My students* = learners enrolled in the Tutor LMS courses you wrote or teach (plugin 1.5.0 asks the website, signed, and the app keeps the answer for 10 minutes), **plus anyone you add by hand**: open a learner and press **Add to my students** (or **Remove from my students**). A guest can be added too; the mark moves to their new account if they register. Each teacher has their own list.
+  - *Registered* = everyone with a website account who has used the app. *Everyone* = also guests.
+  - If *My students* stays empty although learners are enrolled, Tutor stores enrolments differently on your site; add them by hand and tell me.
+- **Guests cannot be recognised as the same person.** A guest is a browser session: the same person on another phone, in another browser, after clearing their data or after 60 days away appears as a new guest. The app does not use the IP address (many people share one, and it would be tracking). The list shows when each guest was *first seen*; the name they type (if any) is the best clue. A guest who registers keeps everything, and that is the way to be one person for good.
+- **Export** gives every answer as CSV (time, student, tense, level, thinking level, answer, correct or not, seconds, with an `account` column: guest or registered) for the view you have selected.
 - Teachers can try the practice tasks too. Teachers are not shown on the leaderboard and do not appear in the student list.
 
 ## Draft text for your privacy policy
@@ -126,6 +130,7 @@ This is a grammar app, so a missing apostrophe or a typo should not look like a 
 | Capital letters wrong (`they play tennis on sundays`) | Correct. A tip appears for names, days, months and "I": *Capital letter: Sundays.* |
 | Missing apostrophe (`dont`, `doesnt`, `isnt`, `im`, `ive`, `youre`) | Correct, with the tip *Use an apostrophe: don't.* Only forms that cannot be anything else are accepted (not `were`, `ill`, `its`, `hes`). |
 | One-letter typo **inside** a word of five or more letters that appears in the task (`tenis`, `tenins` for *tennis*) | Correct, with the tip *Spelling: tenis → tennis.* At most two such typos. |
+| One-letter typo in the **stem** of a verb form the task gives as a base verb: `ariving` for *arriving* (task: *arrive*), `stoped` for *stopped* (*stop*), `writen` for *written* (*write*) | Correct, with the tip *Spelling: ariving → arriving.* The ending (`-ing`, `-ed`) must be exactly right. |
 | A typo in a short word, in a word that is not in the task, or at the **end** of a word (`plays` for `play`, `finish`/`finishes`/`finishing` for `finished`, `has` for `had`, `Sunday` for `Sundays`, `tens` for `tennis`) | Not accepted. These are grammar, or a different word. |
 
 Accepted answers get full points and count as correct for the adaptive logic. A test (`app/tests/grader_test.php`) changes the end of every word in every text and gap answer (over a thousand variants) and checks that none is accepted. Writing tasks (Create) accept `im`, `ive` and similar the same way.
@@ -136,7 +141,7 @@ To go back to exact matching, set `'spelling' => 'strict'` (capital letters stil
 
 1. A guest taps **Create a free account** (welcome page, the popup after practice, the banner, the leaderboard note). The link goes through `register.php`, which leaves a 3-day marker (cookie `ef_return`) and sends them to your registration form (`register_url`). The app also remembers the click, so when the guest comes back it shows **Sign in** instead of the sign-up invitation.
 2. They register on the website as usual.
-3. **Without an email confirmation**, or when they log in within 30 minutes, **plugin 1.4.0 sends them straight back into the app** from whatever page the form leaves them on (the Tutor dashboard, the homepage, anywhere). It does not depend on the form honouring `redirect_to`. **With an email confirmation** (your registration needs one) people often log in hours later, perhaps on another device. Within 3 days a small "Your account is ready. Back to your practice" bar then appears on every website page (with an x to close it), instead of a surprise redirect. Switch the automatic return off with `define( 'EF_PRACTICE_AUTO_RETURN', false );` to always use the bar.
+3. **Without an email confirmation**, or when they log in within 30 minutes, **plugin 1.5.0 sends them straight back into the app** from whatever page the form leaves them on (the Tutor dashboard, the homepage, anywhere). It does not depend on the form honouring `redirect_to`. **With an email confirmation** (your registration needs one) people often log in hours later, perhaps on another device. Within 3 days a small "Your account is ready. Back to your practice" bar then appears on every website page (with an x to close it), instead of a surprise redirect. Switch the automatic return off with `define( 'EF_PRACTICE_AUTO_RETURN', false );` to always use the bar.
    Guest results are kept in the browser where the guest practised. If the confirmation link is opened somewhere else, the person simply opens the app in the original browser and taps **Sign in**; the results move then.
 4. In the app they confirm their name (their real name is suggested, or a nickname), and a **welcome message** says what moved over ("We moved your guest results over: 34 tasks and 312 XP"). The results, streak, level, tenses and the guest's avatar all move to the new account. Nothing is lost.
 5. Administrators and instructors are never redirected, and the marker is used up after one return.
@@ -151,7 +156,7 @@ If many learners turn out to want only the app, there are two upgrades: a shorte
 
 ## Avatars
 
-Learners choose an avatar instead of a photo in **Profile → Your avatar** (the menu is closed until they press **Change**): a flat illustrated character (ten people, a fox and a flame), a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) or their initial, on one of six background colours. Anyone who has not chosen gets a symbol assigned by their user ID, so nobody has a blank picture and it never changes by itself. It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "symbol-colour" values.
+Learners choose an avatar instead of a photo in **Profile → Your avatar** (the menu is closed until they press **Change**): a flat illustrated character (ten stylish people, seven characters - a superhero pair, a detective with a magnifying glass, a monocled gentleman, a bard, a palace guard and a professor - a fox and a flame with sunglasses), a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) or their initial, on one of six background colours. Anyone who has not chosen gets a symbol assigned by their user ID, so nobody has a blank picture and it never changes by itself. It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "picture-colour" values.
 
 ## Using it like an app on a phone
 

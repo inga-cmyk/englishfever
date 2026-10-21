@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.4.0
+ * Version:     1.5.0
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -35,6 +35,9 @@
  * They are saved in the tracker table as one row per student per day (object_type 'practice'). Nothing is saved for
  * administrators, Tutor instructors or students who opted out of activity tracking. If a student opts out later, their
  * practice rows are deleted. [ef_practice_results] shows the student's practice results (put it under [ef_my_activity]).
+ *
+ * "My students" in the app's teacher list: the app asks the website (signed, same key) which students are enrolled in the
+ * Tutor LMS courses a teacher wrote or teaches (/wp-json/ef-practice/v1/roster). Only WordPress user IDs are returned.
  *
  * What is sent to the app: your WordPress user ID, display name, and whether the user is a teacher
  * (administrator or Tutor LMS instructor) and whether they allow activity tracking. No email address, no password.
@@ -272,7 +275,44 @@ add_action( 'rest_api_init', function () {
 			'permission_callback' => 'ef_practice_rest_permission',
 		)
 	);
+	register_rest_route(
+		'ef-practice/v1',
+		'/roster',
+		array(
+			'methods'             => 'POST',
+			'callback'            => 'ef_practice_rest_roster',
+			'permission_callback' => 'ef_practice_rest_permission',
+		)
+	);
 } );
+
+/**
+ * IDs of the students enrolled (Tutor LMS stores an enrolment as a "tutor_enrolled" post whose parent is the course and
+ * whose author is the student) in the courses this teacher wrote, or teaches as a co-instructor.
+ */
+function ef_practice_rest_roster( WP_REST_Request $req ) {
+	global $wpdb;
+	$data    = json_decode( $req->get_body(), true );
+	$teacher = is_array( $data ) ? (int) ( $data['teacher'] ?? 0 ) : 0;
+	if ( $teacher < 1 ) {
+		return new WP_Error( 'ef_bad_request', 'Bad request.', array( 'status' => 400 ) );
+	}
+	$courses = $wpdb->get_col(
+		$wpdb->prepare( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'courses' AND post_author = %d AND post_status <> 'trash'", $teacher )
+	);
+	foreach ( (array) get_user_meta( $teacher, '_tutor_instructor_course_id', false ) as $cid ) {
+		$courses[] = $cid;
+	}
+	$courses = array_values( array_unique( array_filter( array_map( 'intval', $courses ) ) ) );
+	if ( ! $courses ) {
+		return array( 'students' => array(), 'courses' => 0 );
+	}
+	$marks = implode( ',', array_fill( 0, count( $courses ), '%d' ) );
+	$ids   = $wpdb->get_col(
+		$wpdb->prepare( "SELECT DISTINCT post_author FROM {$wpdb->posts} WHERE post_type = 'tutor_enrolled' AND post_status = 'completed' AND post_parent IN ($marks)", $courses ) // phpcs:ignore WordPress.DB.PreparedSQLPlaceholders
+	);
+	return array( 'students' => array_values( array_map( 'intval', $ids ) ), 'courses' => count( $courses ) );
+}
 
 /** The request must be signed by the app (shared secret) and be fresh. Replays are harmless: rows are set, not added. */
 function ef_practice_rest_permission( WP_REST_Request $req ) {

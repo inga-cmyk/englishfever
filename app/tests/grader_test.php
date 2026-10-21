@@ -68,6 +68,17 @@ $check(!Grader::grade($join, 'After I had finish work, I went home.')['correct']
 $check(Grader::grade($join, 'After I had finished work, I went home.')['correct'], 'exact answer still correct');
 $check(!Grader::grade($join, 'After I had finishes work, I went home.')['correct'], 'a wrong word ending is not forgiven (finishes)');
 $check(!Grader::grade($join, 'After I had finishing work, I went home.')['correct'], 'a wrong word ending is not forgiven (finishing)');
+$pc = Content::item('pac-B12-3b'); // While the guests ___ (arrive), the band ___ (play)
+$r = Grader::grade($pc, ['were ariving', 'was playing']);
+$check($r['correct'] && $r['notes'] === ['Spelling: ariving → arriving.'], 'the screenshot case: ariving accepted as a spelling slip of arriving', $r);
+$check(Grader::grade($pc, ['were arriveing', 'was playing'])['correct'], 'arriveing accepted (extra letter in the stem)');
+$check(Grader::grade($pc, ['were arirving', 'was playing'])['correct'], 'arirving accepted (extra letter in the stem)');
+$check(Grader::grade($pc, ['were arriving', 'was plaing'])['correct'], 'plaing accepted as a spelling slip of playing (the ending -ing is intact)');
+$check(!Grader::grade($pc, ['were arrived', 'was playing'])['correct'], 'were arrived is grammar, not spelling');
+$check(!Grader::grade($pc, ['were arrive', 'was playing'])['correct'], 'were arrive is grammar, not spelling');
+$check(!Grader::grade($pc, ['was arriving', 'was playing'])['correct'], 'was arriving (wrong auxiliary) is not forgiven');
+$check(!Grader::grade($pc, ['were arrivin', 'was playing'])['correct'], 'a missing last letter is not forgiven');
+$check(!Grader::grade($pc, ['were arriving', 'was playin'])['correct'], 'playin (last letter missing) is not forgiven');
 $w = Content::item('fu-A21-6a'); // I am going to ...
 $check(Grader::grade($w, 'Im going to visit a friend tomorrow')['correct'], 'write task: im accepted');
 $check(Grader::grade($w, "I'm going to visit a friend tomorrow")['correct'], 'write task: normal answer');
@@ -107,6 +118,38 @@ foreach (Content::items() as $it) {
 }
 $check($bad === 0, "grammar slips accepted by the forgiving rules: $bad of $tried");
 echo "checked $tried word-ending changes\n";
+
+// Inner one-letter slips (delete / duplicate one letter in the stem of each word of the first accepted answer). Everything the
+// forgiving rules accept must still end exactly like the correct word, and be accepted only with a spelling tip.
+$accepted = 0; $badEnd = 0;
+foreach (Content::items() as $it) {
+    if (!in_array($it['kind'], ['gap', 'text'], true)) continue;
+    $firsts = array_map(fn($b) => $b[0], $it['answers']);
+    foreach ($it['answers'] as $bi => $alts) {
+        $accNorm = array_map([Grader::class, 'norm'], $alts);
+        $tokens = explode(' ', Grader::norm($alts[0]));
+        foreach ($tokens as $ti => $tok) {
+            $len = mb_strlen($tok);
+            if ($len < 5) continue;
+            for ($k = 1; $k < $len - 2; $k++) {
+                foreach ([mb_substr($tok, 0, $k) . mb_substr($tok, $k + 1), mb_substr($tok, 0, $k) . mb_substr($tok, $k, 1) . mb_substr($tok, $k)] as $mu) {
+                    if ($mu === $tok) continue;
+                    $t2 = $tokens; $t2[$ti] = $mu;
+                    if (in_array(implode(' ', $t2), $accNorm, true)) continue; // another accepted spelling (cancelled / canceled)
+                    $try = $firsts; $try[$bi] = implode(' ', $t2);
+                    $res = Grader::grade($it, $it['kind'] === 'gap' ? $try : $try[0]);
+                    if ($res['correct']) {
+                        $accepted++;
+                        if (mb_substr($mu, -2) !== mb_substr($tok, -2)) { $badEnd++; echo "  ending changed but accepted in {$it['id']}: $mu (for $tok)\n"; }
+                        if (!$res['notes']) { $badEnd++; echo "  accepted without a tip in {$it['id']}: $mu\n"; }
+                    }
+                }
+            }
+        }
+    }
+}
+$check($badEnd === 0, "inner slips accepted keep the grammatical ending and show a tip ($accepted accepted, $badEnd problems)");
+echo "inner one-letter slips accepted with a tip: $accepted\n";
 
 // normaliser
 $check(Grader::norm("Don't  Worry!") === 'do not worry', 'norm 1');

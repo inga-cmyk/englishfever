@@ -121,7 +121,7 @@ final class Auth
     }
 
     public const AVATAR_GLYPHS = ['flame', 'spark', 'bolt', 'sun', 'thermo', 'wave', 'comet', 'leaf'];
-    public const AVATAR_CHARS = ['ada', 'ben', 'cleo', 'dev', 'eli', 'fay', 'gus', 'hana', 'ivan', 'june', 'fox', 'ember'];
+    public const AVATAR_CHARS = ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan', 'nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'fox', 'ember'];
     public const AVATAR_COLORS = ['raspberry', 'gold', 'ink', 'cream', 'plum', 'sand'];
 
     /** Avatars are a fixed list (picture-colour). Nobody can upload a picture or inject markup. "initial" = first letter of the name. */
@@ -174,6 +174,13 @@ final class Auth
                 Db::update('activity', ['user_id' => $toId], 'user_id = ? AND day = ?', [$guestId, $r['day']]);
             }
         }
+        // a teacher who had added the guest to "my students" keeps the person after they register
+        foreach (Db::all('SELECT teacher_id, added_at FROM teacher_mine WHERE student_id = ?', [$guestId]) as $r) {
+            if (!Db::val('SELECT COUNT(1) FROM teacher_mine WHERE teacher_id = ? AND student_id = ?', [$r['teacher_id'], $toId])) {
+                Db::insert('teacher_mine', ['teacher_id' => (int) $r['teacher_id'], 'student_id' => $toId, 'added_at' => (int) $r['added_at']]);
+            }
+        }
+        Db::q('DELETE FROM teacher_mine WHERE student_id = ?', [$guestId]);
         Db::q('DELETE FROM skill_state WHERE user_id = ?', [$guestId]);
         Db::q('DELETE FROM activity WHERE user_id = ?', [$guestId]);
         Db::q('DELETE FROM users WHERE id = ?', [$guestId]);
@@ -186,6 +193,7 @@ final class Auth
         $old = Db::all("SELECT id FROM users WHERE provider = 'guest' AND last_seen < ?", [time() - 60 * 86400]);
         foreach ($old as $u) {
             foreach (['attempts', 'psessions', 'skill_state', 'activity'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            Db::q('DELETE FROM teacher_mine WHERE student_id = ?', [$u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
         }
     }

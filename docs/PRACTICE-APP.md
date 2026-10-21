@@ -6,7 +6,7 @@ A small web app for adult learners to practise active and passive tenses. It liv
 
 **Learners**
 - **Registered students** (Tutor LMS users) continue with their englishfever.com account in one click: no second registration, no new password. On the first visit they confirm how their name is shown (their real name or a nickname). Their results are saved.
-- **Guests** can start with just a nickname (no password, no registration). You see them in the teacher list, marked *guest*. Their results stay in that browser and are lost if it is cleared. After practice, a popup invites them to create a free account. When they register and press "Continue with my account" in the same browser, everything they did as a guest moves into the new account. Guests are not on the leaderboard. Guest data is deleted after 60 days without a visit.
+- **Guests** can start with one click (an optional name field; without a name they appear as "Guest 4821"). No password, no registration. You see them in the teacher list, marked *guest*. Their results stay in that browser and are lost if it is cleared. After practice, a popup invites them to create a free account. When they register and press "Continue with my account" in the same browser, everything they did as a guest moves into the new account. Guests are not on the leaderboard. Guest data is deleted after 60 days without a visit.
 - **Option 1 – placement test:** 24 adaptive questions, then a level estimate, the 3 tenses to start with, and a "Practise" button for each.
 - **Option 2 – choose:** pick one tense or several, and a level (A2.1, A2.2, B1.1, B1.2).
 - **Practice:** the first 3 tasks are a quick check at the chosen level. After that, the tasks get harder after correct answers and easier after mistakes, and the learner is told which way the next task goes.
@@ -108,7 +108,7 @@ Give learners the app's address (`https://practice.englishfever.com`) for your m
 Adapt this and have it checked by whoever advises you on GDPR. It is not legal advice.
 
 > **Practice app (practice.englishfever.com)**
-> **What we collect.** If you sign in with your englishfever.com account: your account number and the name on your account (teachers see it) and the name you choose to show to other learners. If you use the app as a guest: only the nickname you type. For everyone: your answers, scores, the tenses and levels you practise, the time you spend in the app, your daily streak, and the date you last visited.
+> **What we collect.** If you sign in with your englishfever.com account: your account number and the name on your account (teachers see it) and the name you choose to show to other learners. If you use the app as a guest: only the name you type, if you type one. For everyone: your answers, scores, the tenses and levels you practise, the time you spend in the app, your daily streak, and the date you last visited.
 > **Why.** To give you practice that fits your level, to show you your progress, and to let your teacher follow your learning and help you. If you choose to appear on the leaderboard, other learners see your nickname, points and minutes. You can switch this off in your profile at any time.
 > **Legal basis.** Providing the course you signed up for (contract); our legitimate interest in running and improving the practice; the leaderboard is optional and based on your choice.
 > **Who sees it.** Your teachers at English Fever. Our hosting provider (Hostinger) stores the data for us. We do not use advertising, analytics or tracking services, and the app loads no third-party fonts or scripts.

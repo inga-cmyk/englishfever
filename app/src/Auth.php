@@ -94,7 +94,7 @@ final class Auth
     /** Guests need only a nickname. Their results live in this browser's session, so they can be lost. */
     public static function createGuest(string $nick): array
     {
-        $nick = self::validNickname($nick);
+        $nick = trim($nick) === '' ? 'Guest ' . random_int(1000, 9999) : self::validNickname($nick);
         $ip = $_SERVER['REMOTE_ADDR'] ?? '?';
         $key = 'guest:' . hash('sha256', $ip);
         if ((int) Db::val('SELECT COUNT(1) FROM login_attempts WHERE akey = ? AND at > ?', [$key, time() - 3600]) >= 100) {

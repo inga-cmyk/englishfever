@@ -123,7 +123,7 @@
   function viewWelcome() {
     var cfg = state.config;
     var errBox = h('div');
-    var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', maxlength: '30', placeholder: 'Your nickname', required: true });
+    var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'words', spellcheck: 'false', maxlength: '30', placeholder: 'Your name (or a nickname)' });
     var guestForm = h('form', { novalidate: true, onsubmit: function (e) {
       e.preventDefault(); errBox.replaceChildren();
       var btn = guestForm.querySelector('button[type=submit]'); btn.disabled = true;
@@ -131,9 +131,9 @@
         state.user = r.user; startHeartbeat(); go('#/home');
       }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
     } },
-      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Nickname'), nick),
+      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name ', h('span', { class: 'muted', style: 'font-weight:400' }, '(optional)')), nick),
       errBox,
-      h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Start as guest'),
+      h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Continue as guest'),
       h('p', { class: 'small muted', style: 'margin:10px 0 0;text-align:center' }, 'Guest results are not saved.'));
 
     var card = [];
@@ -635,8 +635,8 @@
       e.preventDefault(); msg.replaceChildren();
       api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Saved.')); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
     } },
-      h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Nickname' : 'Name shown to others'), nick,
-        guest ? null : h('span', { class: 'hint' }, 'On the leaderboard and to your teacher. A real name or a nickname.')),
+      h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Your name' : 'Name shown to others'), nick,
+        guest ? null : h('span', { class: 'hint' }, 'On the leaderboard and to your teacher. Your real name or a nickname.')),
       guest ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
       msg, h('button', { class: 'btn', type: 'submit' }, 'Save'));
 

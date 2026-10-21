@@ -66,6 +66,9 @@ final class Auth
     {
         $u = self::require();
         if ($u['role'] !== 'teacher') throw new ApiError('Teachers only.', 403);
+        // Teacher access is only as fresh as the last website login, so a teacher whose role is removed on the website
+        // loses it here within a day.
+        if (time() - (int) ($u['sso_at'] ?? 0) > 86400) throw new ApiError('For safety, please sign in again from englishfever.com to open the teacher pages.', 401);
         return $u;
     }
 
@@ -93,8 +96,12 @@ final class Auth
     }
 
     /** Guests need only a nickname. Their results live in this browser's session, so they can be lost. */
-    public static function createGuest(string $nick): array
+    public static function createGuest(string $nick, int $formMs = 0, string $honey = ''): array
     {
+        // Cheap bot filters: a hidden field no person fills in, and a form nobody completes in under 1.2 seconds.
+        if ($honey !== '' || $formMs < 1200) throw new ApiError('Please try again.', 400);
+        $today = (int) Db::val("SELECT COUNT(1) FROM users WHERE provider = 'guest' AND created_at > ?", [time() - 86400]);
+        if ($today >= (int) Config::get('max_guests_per_day', 3000)) throw new ApiError('Many new guests today. Please try again later or sign in with your account.', 429);
         $nick = trim($nick) === '' ? 'Guest ' . random_int(1000, 9999) : self::validNickname($nick);
         $ip = $_SERVER['REMOTE_ADDR'] ?? '?';
         $key = 'guest:' . hash('sha256', $ip);
@@ -205,14 +212,14 @@ final class Auth
         $track = (array_key_exists('act', $p) && empty($p['act'])) ? 0 : 1;
         $u = Db::one('SELECT * FROM users WHERE provider = ? AND external_id = ?', ['wp', $ext]);
         if ($u) {
-            Db::update('users', ['role' => $role, 'full_name' => $full, 'track_time' => $track], 'id = ?', [$u['id']]);
+            Db::update('users', ['role' => $role, 'full_name' => $full, 'track_time' => $track, 'sso_at' => time()], 'id = ?', [$u['id']]);
             $id = (int) $u['id'];
         } else {
             // suggest the learner's own name (they can change it on the next screen)
             $nick = self::uniqueNick($full);
             $id = Db::insert('users', [
                 'provider' => 'wp', 'external_id' => $ext, 'nickname' => $nick, 'nickname_key' => mb_strtolower($nick), 'full_name' => $full,
-                'role' => $role, 'nick_set' => $role === 'teacher' ? 1 : 0, 'track_time' => $track, 'created_at' => time(), 'last_seen' => time(),
+                'role' => $role, 'nick_set' => $role === 'teacher' ? 1 : 0, 'track_time' => $track, 'sso_at' => time(), 'created_at' => time(), 'last_seen' => time(),
             ]);
         }
         if ($guestId && $role === 'student') self::mergeGuest($guestId, $id);

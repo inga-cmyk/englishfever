@@ -225,4 +225,4 @@ python3 app/tests/sim.py                      # simulated learners, placement an
 python3 app/tests/sso_test.py                 # guests, website login, guest-to-account merge, teacher access, purge (delete app/var/ef.sqlite* before re-running)
 ```
 
-**Security notes.** Answers are checked on the server and never sent to the browser. The app stores no passwords: registered students sign in with a signed, single-use link from englishfever.com that expires after 2 minutes; guests have no password. Guest creation is limited to 100 per hour per connection. All requests that change data need a custom header, and cookies are `HttpOnly`, `SameSite=Lax` and `Secure` on HTTPS. If the secret in `config.php` leaks, make a new one in both places.
+**Security.** See [SECURITY.md](SECURITY.md): what the app protects against, its limits, and a launch checklist. Run `python3 app/tests/security_test.py` after changes (see its header).

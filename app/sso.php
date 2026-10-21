@@ -2,6 +2,7 @@
 // Landing page for "Sign in with englishfever.com". The WordPress plugin sends a signed, single-use token.
 require __DIR__ . '/src/bootstrap.php';
 
+header('Cache-Control: no-store');
 try {
     Auth::ssoLogin((string) ($_GET['token'] ?? ''));
     header('Location: ./#/home');

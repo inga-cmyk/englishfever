@@ -19,6 +19,8 @@ $sessDir = __DIR__ . '/../var/sessions';
 if (!is_dir($sessDir)) @mkdir($sessDir, 0770, true);
 if (is_dir($sessDir) && is_writable($sessDir)) session_save_path($sessDir);
 ini_set('session.gc_maxlifetime', (string) (60 * 60 * 24 * 30));
+ini_set('session.use_strict_mode', '1');   // the server never accepts a session id it did not create
+ini_set('session.use_only_cookies', '1');
 session_name('efp');
 // Cookie only for the folder the app lives in (matters when it runs in a folder of the WordPress site, e.g. /practice/).
 $cookiePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '/')), '/') . '/';

@@ -70,16 +70,16 @@ uniq = os.urandom(3).hex()
 
 # 1. guests
 g = C()
-r = g.api("guest", {"nickname": "Anna K. " + uniq})
+r = g.api("guest", {"t": 5000, "nickname": "Anna K. " + uniq})
 check("guest can start with a nickname with spaces", r["_status"] == 200 and r["user"]["guest"] and r["user"]["provider"] == "guest", r)
 check("guest is a student", r["user"]["role"] == "student")
-nn = C().api("guest", {"nickname": "   "})
+nn = C().api("guest", {"t": 5000, "nickname": "   "})
 check("guest without a name gets a number", nn["_status"] == 200 and nn["user"]["nickname"].startswith("Guest ") and nn["user"]["guest"], nn)
-check("1-letter nickname refused", C().api("guest", {"nickname": "A"})["_status"] == 400)
-check("html in nickname refused", C().api("guest", {"nickname": "<b>x</b>"})["_status"] == 400)
-check("reserved nickname refused", C().api("guest", {"nickname": "teacher"})["_status"] == 400)
+check("1-letter nickname refused", C().api("guest", {"t": 5000, "nickname": "A"})["_status"] == 400)
+check("html in nickname refused", C().api("guest", {"t": 5000, "nickname": "<b>x</b>"})["_status"] == 400)
+check("reserved nickname refused", C().api("guest", {"t": 5000, "nickname": "teacher"})["_status"] == 400)
 g2 = C()
-check("two guests may use the same nickname", g2.api("guest", {"nickname": "Anna K. " + uniq})["_status"] == 200)
+check("two guests may use the same nickname", g2.api("guest", {"t": 5000, "nickname": "Anna K. " + uniq})["_status"] == 200)
 answer_some(g, 5, ("present_simple",), "A2.1")
 dash = g.api("dashboard")
 check("guest practice is recorded", dash["totals"]["answers"] >= 3, dash["totals"])
@@ -111,7 +111,7 @@ check("garbage refused", C().raw("/sso.php?token=abc")[0] == 400)
 
 # 3. guest -> registered: results move over
 cg = C()
-cg.api("guest", {"nickname": "Guesty" + uniq})
+cg.api("guest", {"t": 5000, "nickname": "Guesty" + uniq})
 answer_some(cg, 6, ("past_simple",), "A2.1")
 before = cg.api("dashboard")
 check("guest has results before registering", before["totals"]["answers"] >= 3, before["totals"])
@@ -150,15 +150,15 @@ check("registered learner on the leaderboard", ("Maria " + uniq) in names, names
 check("no guests on the leaderboard", not any(n.startswith("Anna K.") or n.startswith("Guesty") for n in names), names)
 
 # 6. data export and delete
-d = C(); dn = "Del " + uniq; d.api("guest", {"nickname": dn})
+d = C(); dn = "Del " + uniq; d.api("guest", {"t": 5000, "nickname": dn})
 check("export my data", d.api("account/export")["user"]["nickname"] == dn)
 check("delete needs confirmation", d.api("account/delete", {})["_status"] == 400)
 check("delete works", d.api("account/delete", {"confirm": True})["_status"] == 200)
 check("deleted guest is signed out", d.api("me")["user"] is None)
 
 # 7. guests who stay away for 60 days are purged, active ones are not
-old = C(); old.api("guest", {"nickname": "OldGuest" + uniq}); answer_some(old, 2, ("present_simple",), "A2.1")
-new = C(); new.api("guest", {"nickname": "NewGuest" + uniq})
+old = C(); old.api("guest", {"t": 5000, "nickname": "OldGuest" + uniq}); answer_some(old, 2, ("present_simple",), "A2.1")
+new = C(); new.api("guest", {"t": 5000, "nickname": "NewGuest" + uniq})
 db = sqlite3.connect(os.path.join(APP, "var", "ef.sqlite"))
 db.execute("UPDATE users SET last_seen = ? WHERE nickname = ?", (int(time.time()) - 61 * 86400, "OldGuest" + uniq)); db.commit()
 php = "putenv('EF_DEV=1');require 'src/Db.php';require 'src/Auth.php';Config::load();Db::connect(Config::all());Auth::purgeGuests();"
@@ -169,7 +169,7 @@ check("inactive guest purged, active guest kept", left == ["NewGuest" + uniq], l
 check("purge leaves no orphaned answers", orphans == 0, orphans)
 
 # 8. (last, because it uses up this connection's guest quota) guest creation is limited per connection
-codes = [C().api("guest", {"nickname": "Bulk" + str(i)})["_status"] for i in range(110)]
+codes = [C().api("guest", {"t": 5000, "nickname": "Bulk" + str(i)})["_status"] for i in range(110)]
 check("guest creation is rate limited", 429 in codes, sorted(set(codes)))
 
 

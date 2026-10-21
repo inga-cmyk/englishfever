@@ -136,7 +136,7 @@ final class Stats
 
     public static function leaderboard(int $uid, string $period): array
     {
-        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest'";
+        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest' AND u.board_hidden = 0";
         $p = [];
         if ($period === 'week') {
             $where .= ' AND a.day >= ?';
@@ -197,7 +197,7 @@ final class Stats
 
     public static function teacherStudent(int $id): array
     {
-        $u = Db::one("SELECT id, provider, nickname, full_name, created_at, last_seen, show_on_board FROM users WHERE id = ? AND role = 'student'", [$id]);
+        $u = Db::one("SELECT id, provider, nickname, full_name, created_at, last_seen, show_on_board, board_hidden FROM users WHERE id = ? AND role = 'student'", [$id]);
         if (!$u) throw new ApiError('Student not found.', 404);
         $dash = self::dashboard($id);
         $days = [];
@@ -222,7 +222,7 @@ final class Stats
         }
         return [
             'user' => ['id' => (int) $u['id'], 'nickname' => $u['nickname'], 'full_name' => $u['full_name'], 'provider' => $u['provider'],
-                'joined' => (int) $u['created_at'], 'last_seen' => (int) $u['last_seen']],
+                'joined' => (int) $u['created_at'], 'last_seen' => (int) $u['last_seen'], 'board_hidden' => (bool) $u['board_hidden']],
             'dashboard' => $dash, 'days' => $days, 'recent' => $recent, 'sessions' => $sessions,
         ];
     }

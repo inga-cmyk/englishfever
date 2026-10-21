@@ -20,6 +20,13 @@ function body(): array
     return is_array($d) ? $d : [];
 }
 
+/** At most $max hits per $window seconds for one key (counted in the login_attempts table). */
+function throttle(string $key, int $max, int $window, string $message): void
+{
+    if ((int) Db::val('SELECT COUNT(1) FROM login_attempts WHERE akey = ? AND at > ?', [$key, time() - $window]) >= $max) throw new ApiError($message, 429);
+    Db::insert('login_attempts', ['akey' => $key, 'at' => time()]);
+}
+
 try {
     $route = $_GET['r'] ?? '';
     $method = $_SERVER['REQUEST_METHOD'];
@@ -48,7 +55,7 @@ try {
             out(['user' => $u ? Auth::publicUser($u) : null]);
 
         case 'guest':
-            $u = Auth::createGuest((string) ($in['nickname'] ?? ''));
+            $u = Auth::createGuest((string) ($in['nickname'] ?? ''), (int) ($in['t'] ?? 0), (string) ($in['website'] ?? ''));
             out(['user' => Auth::publicUser($u)]);
 
         case 'logout':
@@ -104,6 +111,7 @@ try {
 
         case 'session/start':
             $u = Auth::require();
+            throttle('sess:' . hash('sha256', $_SERVER['REMOTE_ADDR'] ?? '?'), 150, 3600, 'Too many new sessions from this connection. Please wait a little.');
             out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10)));
 
         case 'session/resume':
@@ -116,6 +124,12 @@ try {
 
         case 'session/answer':
             $u = Auth::require();
+            // no person answers 45 tasks in a minute; scripts do. Guests also have a daily limit that points to registering.
+            if ((int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ? AND created_at > ?', [$u['id'], time() - 60]) >= 45) throw new ApiError('Slow down a little.', 429);
+            $dayCap = $u['provider'] === 'guest' ? 600 : 3000;
+            if ((int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ? AND created_at > ?', [$u['id'], time() - 86400]) >= $dayCap) {
+                throw new ApiError($u['provider'] === 'guest' ? 'You have done a lot of practice today as a guest. Create a free account to keep going.' : 'That is a lot for one day. Come back tomorrow.', 429);
+            }
             $res = Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0));
             Wp::afterResponse((int) $u['id'], !empty($res['done']));
             out($res);
@@ -151,6 +165,18 @@ try {
         case 'teacher/student':
             Auth::requireTeacher();
             out(Stats::teacherStudent((int) ($_GET['id'] ?? 0)));
+
+        case 'teacher/moderate':
+            Auth::requireTeacher();
+            $sid = (int) ($in['user_id'] ?? 0);
+            $target = Db::one("SELECT id, provider FROM users WHERE id = ? AND role = 'student'", [$sid]);
+            if (!$target) throw new ApiError('Student not found.', 404);
+            if (isset($in['hide'])) Db::update('users', ['board_hidden' => $in['hide'] ? 1 : 0], 'id = ?', [$sid]);
+            if (!empty($in['reset_name'])) {
+                $n = 'Learner ' . random_int(1000, 9999);
+                Db::update('users', ['nickname' => $n, 'nickname_key' => $target['provider'] === 'guest' ? $n . '#' . bin2hex(random_bytes(4)) : mb_strtolower($n)], 'id = ?', [$sid]);
+            }
+            out(['ok' => true]);
 
         case 'teacher/export':
             Auth::requireTeacher();

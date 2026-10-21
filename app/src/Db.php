@@ -115,6 +115,8 @@ final class Db
                 nick_set $int NOT NULL DEFAULT 1,
                 must_change $int NOT NULL DEFAULT 0,
                 track_time $int NOT NULL DEFAULT 1,
+                sso_at $big NOT NULL DEFAULT 0,
+                board_hidden $int NOT NULL DEFAULT 0,
                 created_at $big NOT NULL,
                 last_seen $big NOT NULL DEFAULT 0
             )$tail",
@@ -189,7 +191,9 @@ final class Db
         foreach ($tables as $sql) {
             self::$pdo->exec($sql);
         }
-        self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before this column existed
+        self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before these columns existed
+        self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");
+        self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
         $indexes = [
             ['users', 'ux_users_nick', 'nickname_key', true],
             ['users', 'ix_users_ext', 'provider, external_id', false],

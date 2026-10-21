@@ -68,7 +68,7 @@ fails = 0
 for true_level, ability in [("low (A2.1)", 1.2), ("A2.2", 2.3), ("B1.1", 3.2), ("B1.2", 4.3)]:
     c = Client()
     nick = f"sim{int(ability*10)}_{os.urandom(3).hex()}"
-    c.call("guest", {"nickname": nick})
+    c.call("guest", {"t": 5000, "nickname": nick})
     r = c.call("session/start", {"mode": "placement"})
     s, seen = play(c, ability, r["session"], r["item"], "placement")
     print(f"learner {true_level:<11} placement -> overall {s['overall_level']} (θ {s['overall_theta']}), {s['correct']}/{s['n']} correct, "
@@ -84,7 +84,7 @@ for true_level, ability in [("low (A2.1)", 1.2), ("A2.2", 2.3), ("B1.1", 3.2), (
     if s["n"] != 24 and s["n"] < 10: fails += 1
 
 # duplicate answer is refused
-c = Client(); c.call("guest", {"nickname": "dup_" + os.urandom(3).hex()})
+c = Client(); c.call("guest", {"t": 5000, "nickname": "dup_" + os.urandom(3).hex()})
 r = c.call("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 5})
 it = ITEMS[r["item"]["id"]]
 a1 = c.call("session/answer", {"session_id": r["session"]["id"], "item_id": it["id"], "answer": correct_answer(it), "time_ms": 1})

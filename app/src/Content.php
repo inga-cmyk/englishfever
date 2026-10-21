@@ -9,10 +9,18 @@ final class Content
 
     public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0];
 
+    /** content/<name>.php (production, never downloadable) or content/<name>.json (development). */
+    private static function load(string $name): array
+    {
+        $php = __DIR__ . '/../content/' . $name . '.php';
+        if (is_file($php)) return require $php;
+        return json_decode(file_get_contents(__DIR__ . '/../content/' . $name . '.json'), true);
+    }
+
     public static function items(): array
     {
         if (self::$items === null) {
-            self::$items = json_decode(file_get_contents(__DIR__ . '/../content/items.json'), true);
+            self::$items = self::load('items');
             self::$byId = [];
             foreach (self::$items as $i => $it) {
                 self::$items[$i]['d'] = self::difficulty($it['level'], $it['bloom']);
@@ -24,7 +32,7 @@ final class Content
 
     public static function meta(): array
     {
-        return self::$meta ??= json_decode(file_get_contents(__DIR__ . '/../content/meta.json'), true);
+        return self::$meta ??= self::load('meta');
     }
 
     public static function item(string $id): ?array

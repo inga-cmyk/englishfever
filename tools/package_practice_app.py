@@ -17,7 +17,7 @@ env = dict(os.environ, EF_DEV="1")
 subprocess.run(["php", os.path.join(APP, "tests", "grader_test.php")], check=True, env=env)
 
 EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git"}
-EXCLUDE_FILES = {"config/config.php", "config/config.local.php", "sso-demo.php", "README.md"}
+EXCLUDE_FILES = {"config/config.php", "config/config.local.php", "sso-demo.php", "README.md", "content/items.json", "content/meta.json"}
 os.makedirs(DIST, exist_ok=True)
 out = os.path.join(DIST, "practice-app.zip")
 n = 0

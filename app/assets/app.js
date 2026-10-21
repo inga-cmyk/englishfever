@@ -23,7 +23,13 @@
   function pct(c, n) { return n ? Math.round(100 * c / n) : 0; }
   function loading() { return h('div', { class: 'loading', role: 'status' }, h('div', { class: 'spin' }), h('span', { class: 'sr' }, 'Loading')); }
   function show(node) { root.replaceChildren(node); window.scrollTo(0, 0); var hd = node.querySelector && node.querySelector('h1'); if (hd) { hd.setAttribute('tabindex', '-1'); hd.focus({ preventScroll: true }); } }
-  function fail(e) { show(h('div', { class: 'card' }, h('h2', null, 'Something went wrong'), h('p', null, e.message || 'Please try again.'), h('a', { class: 'btn', href: '#/home' }, 'Back to home'))); }
+  function fail(e) {
+    if (e && e.status === 401 && state.user && state.user.role === 'teacher') {
+      return show(h('div', { class: 'card', style: 'max-width:520px;margin:30px auto' }, h('h2', null, 'Please sign in again'), h('p', null, e.message),
+        state.config.wp_login_url ? h('a', { class: 'btn', href: state.config.wp_login_url }, 'Sign in with englishfever.com') : null));
+    }
+    show(h('div', { class: 'card' }, h('h2', null, 'Something went wrong'), h('p', null, e.message || 'Please try again.'), h('a', { class: 'btn', href: '#/home' }, 'Back to home')));
+  }
   function levelPill(l) { return h('span', { class: 'pill' }, l); }
 
   // ───────── install on the phone (home screen) ─────────
@@ -161,14 +167,20 @@
     var cfg = state.config;
     var errBox = h('div');
     var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'words', spellcheck: 'false', maxlength: '30', placeholder: 'Your name (or a nickname)' });
+    var shownAt = Date.now();
+    var trap = h('input', { type: 'text', name: 'website', id: 'website', tabindex: '-1', autocomplete: 'off' });
     var guestForm = h('form', { novalidate: true, onsubmit: function (e) {
       e.preventDefault(); errBox.replaceChildren();
       var btn = guestForm.querySelector('button[type=submit]'); btn.disabled = true;
-      api('guest', { nickname: nick.value }).then(function (r) {
-        state.user = r.user; startHeartbeat(); go('#/home');
-      }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
+      // The server refuses forms sent within 1.2 s of opening (bots). A fast person just waits a moment, unseen.
+      setTimeout(function () {
+        api('guest', { nickname: nick.value, t: Date.now() - shownAt, website: trap.value }).then(function (r) {
+          state.user = r.user; startHeartbeat(); go('#/home');
+        }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
+      }, Math.max(0, 1300 - (Date.now() - shownAt)));
     } },
       h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name ', h('span', { class: 'muted', style: 'font-weight:400' }, '(optional)')), nick),
+      h('div', { 'aria-hidden': 'true', style: 'position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden' }, h('label', { for: 'website' }, 'Leave this empty'), trap), // a trap for bots
       errBox,
       h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Continue as guest'),
       h('p', { class: 'small muted', style: 'margin:10px 0 0;text-align:center' }, 'Guest results are not saved.'));
@@ -787,6 +799,10 @@
   function viewTeacherStudent(id) {
     api('teacher/student', undefined, { id: id }).then(function (r) {
       var u = r.user, d = r.dashboard;
+      var again = function () { viewTeacherStudent(id); };
+      var moder = h('div', { class: 'row' },
+        u.provider === 'guest' ? null : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/moderate', { user_id: u.id, hide: !u.board_hidden }).then(again).catch(fail); } }, u.board_hidden ? 'Show on leaderboard' : 'Hide from leaderboard'),
+        h('button', { class: 'btn ghost small', onclick: function () { if (confirm('Replace this name with "Learner ####"?')) api('teacher/moderate', { user_id: u.id, reset_name: true }).then(again).catch(fail); } }, 'Reset name'));
       var maxMin = Math.max.apply(null, r.days.map(function (x) { return x.minutes; }).concat([5]));
       var days = h('div', { class: 'bars', style: 'height:100px', role: 'img', 'aria-label': 'Minutes per day, last 30 days' }, r.days.map(function (x, i) {
         return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' tasks' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
@@ -797,7 +813,7 @@
       var rep = d.placement && d.placement.report;
       show(h('div', null,
         h('a', { href: '#/teacher', class: 'small' }, '← All students'),
-        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen)))),
+        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen))), moder),
         h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('clock', UI.fmtDuration(d.totals.seconds), 'time practised'), stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct (' + d.totals.answers + ' tasks)'), stat('flame', d.streak.current + ' / ' + d.streak.best, 'streak (best)'), stat('bolt', d.totals.xp, 'XP')),
         h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
           h('div', { class: 'card' }, h('h2', null, 'Last 30 days'), days, h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Each bar is one day (minutes practised).')),

@@ -229,7 +229,7 @@ check("status clean again", stt["last_error"] is None and stt["students_waiting"
 check("tracker has exactly one practice row for the student", sql(f"SELECT COUNT(*) FROM wp_ef_aktivitate WHERE user_id={maria} AND object_type='practice'")[0][0] == "1")
 
 # 8. guests are never sent
-g = Br(); g.api("guest", {"nickname": "Gast"}); g.api("heartbeat", {"seconds": 15}); practise(g, 4); time.sleep(1)
+g = Br(); g.api("guest", {"t": 5000, "nickname": "Gast"}); g.api("heartbeat", {"seconds": 15}); practise(g, 4); time.sleep(1)
 check("guests produce no tracker rows", sql("SELECT COUNT(*) FROM wp_ef_aktivitate WHERE label LIKE 'Grammar practice%'")[0][0] == "1")
 
 # 9. the summary endpoint is private

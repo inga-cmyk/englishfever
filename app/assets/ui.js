@@ -24,6 +24,13 @@
     else el.appendChild(document.createTextNode(String(kid)));
   }
 
+  // replaceChildren(null) would insert the text "null"; skip empty values like h() does
+  var origReplace = Element.prototype.replaceChildren;
+  Element.prototype.replaceChildren = function () {
+    var kids = Array.prototype.slice.call(arguments).filter(function (k) { return k !== null && k !== undefined && k !== false; });
+    return origReplace.apply(this, kids);
+  };
+
   var ICONS = {
     flame: '<path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.2 2-4 .3 1.2 1 2 2 2 0-3-1-5 1-8z"/>',
     clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',

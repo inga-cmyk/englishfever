@@ -7,6 +7,7 @@ require __DIR__ . '/Content.php';
 require __DIR__ . '/Grader.php';
 require __DIR__ . '/Engine.php';
 require __DIR__ . '/Stats.php';
+require __DIR__ . '/Wp.php';
 
 Config::load();
 date_default_timezone_set(Config::get('timezone', 'Europe/Riga'));

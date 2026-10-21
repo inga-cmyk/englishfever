@@ -96,7 +96,8 @@ try {
             $now = time();
             $credit = $last ? min($req, max(0, $now - $last + 2)) : min($req, 15);
             $_SESSION['last_hb'] = $now;
-            if ($credit > 0) Stats::addActivity((int) $u['id'], $credit, 0, 0);
+            if ($credit > 0 && (int) $u['track_time'] === 1) Stats::addActivity((int) $u['id'], $credit, 0, 0); // opted-out learners: time is not recorded
+            Wp::afterResponse((int) $u['id'], false);
             out(['ok' => true]);
 
         case 'session/start':
@@ -113,11 +114,15 @@ try {
 
         case 'session/answer':
             $u = Auth::require();
-            out(Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0)));
+            $res = Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0));
+            Wp::afterResponse((int) $u['id'], !empty($res['done']));
+            out($res);
 
         case 'session/quit':
             $u = Auth::require();
-            out(['summary' => Engine::quit((int) $u['id'], (int) ($in['session_id'] ?? 0))]);
+            $sum = Engine::quit((int) $u['id'], (int) ($in['session_id'] ?? 0));
+            Wp::afterResponse((int) $u['id'], true);
+            out(['summary' => $sum]);
 
         case 'session/summary':
             $u = Auth::require();
@@ -126,6 +131,16 @@ try {
         case 'leaderboard':
             $u = Auth::require();
             out(Stats::leaderboard((int) $u['id'], ($_GET['period'] ?? 'week') === 'all' ? 'all' : 'week'));
+
+        case 'wp/summary':
+            $wpUid = (int) ($_GET['uid'] ?? 0);
+            if (!Wp::configured() && strlen((string) Config::get('sso_secret', '')) < 32) throw new ApiError('Not set up.', 503);
+            if (!Wp::verify((string) ($_SERVER['HTTP_X_EF_TIME'] ?? ''), 'summary:' . $wpUid, (string) ($_SERVER['HTTP_X_EF_SIGN'] ?? ''))) throw new ApiError('Forbidden.', 403);
+            out(Wp::summary($wpUid));
+
+        case 'teacher/sync-status':
+            Auth::requireTeacher();
+            out(Wp::status());
 
         case 'teacher/students':
             Auth::requireTeacher();

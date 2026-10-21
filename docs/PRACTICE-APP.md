@@ -111,10 +111,39 @@ Adapt this and have it checked by whoever advises you on GDPR. It is not legal a
 > **What we collect.** If you sign in with your englishfever.com account: your account number and the name on your account (teachers see it) and the name you choose to show to other learners. If you use the app as a guest: only the name you type, if you type one. For everyone: your answers, scores, the tenses and levels you practise, the time you spend in the app, your daily streak, and the date you last visited.
 > **Why.** To give you practice that fits your level, to show you your progress, and to let your teacher follow your learning and help you. If you choose to appear on the leaderboard, other learners see your nickname, points and minutes. You can switch this off in your profile at any time.
 > **Legal basis.** Providing the course you signed up for (contract); our legitimate interest in running and improving the practice; the leaderboard is optional and based on your choice.
+> **Activity in your account.** If you have an englishfever.com account, the time you spend in the practice app and the number of tasks per day also appear in your “My activity” page and to your teachers, like your other learning activity. You can turn this off at any time; then the app stops recording your practice time and the practice entries are deleted.
 > **Who sees it.** Your teachers at English Fever. Our hosting provider (Hostinger) stores the data for us. We do not use advertising, analytics or tracking services, and the app loads no third-party fonts or scripts.
 > **Cookies.** One cookie, `efp`, keeps you signed in. It is strictly necessary and does not track you.
 > **How long.** Registered learners: until you delete your results, or [24] months after your last visit. Guests: 60 days after the last visit.
 > **Your rights.** In your profile you can download your data and delete your account and all your results. You can also contact us at [email] to ask for access, correction or deletion, or to complain to the Data State Inspectorate (Datu valsts inspekcija).
+
+## Practice time and results on the website ("My activity")
+
+Needs plugin **ef-practice-sso 1.1.0 or newer**.
+
+**What it does**
+- A registered student's practice time is added to the existing tracker. The app sends one total per student per day. The plugin saves it in `wp_ef_aktivitate` as a row with `object_type='practice'`, `event='view'`, `course_id=0`, a `visit_key` made from the student and the day (so one row per day, updated rather than duplicated) and a label such as *Grammar practice (app): 24 tasks*. It then counts in **Time learning**, **Days active**, the streak and the calendar, and it is covered by the tracker's 12-month clean-up. It does not appear in the teacher's per-course time or in the lessons list.
+- **Consent is respected.** The plugin calls `ef_priv_activity_allowed()` before every write. If the student chose "Atsakos", nothing is saved, the app is told, and the app stops recording that student's practice *time* (answers and results are still saved, because they are the learning results). When a student opts out, their practice rows in the tracker are deleted at once. Time the app had already recorded stays in the app until the student uses *Delete my results* in their profile. If an opted-out student opts in again, only the time after that is sent, never the time from before.
+- Nothing is saved for administrators, Tutor instructors (the tracker ignores them too) or guests.
+- **Results card:** the shortcode `[ef_practice_results]` shows the logged-in student's practice results (level estimate, accuracy, tasks, streak, time, the tenses worth practising next) and a button into the app. Use `[ef_practice_results plain="1"]` inside another card.
+- **Teachers:** the app's teacher page shows a small status line "Website activity tracker: connected, last sent …" or the last error.
+
+**Setup (after the app and plugin are installed)**
+1. Upload `ef-practice-sso.zip` (Plugins → Add New → Upload → Replace current with uploaded).
+2. App `config/config.php`: add `'wp_sync_url' => 'https://englishfever.com/wp-json/ef-practice/v1/activity',` (it is in `config.sample.php`).
+3. Show the results card on the student Home: in the snippet "My activity on student Home", right after `echo $report;` add
+   ```php
+   if ( shortcode_exists( 'ef_practice_results' ) ) { echo do_shortcode( '[ef_practice_results plain="1"]' ); }
+   ```
+   and, if you like, put `[ef_practice_results]` below `[ef_my_activity]` on the "My activity" page.
+4. Update the consent text in the "Optional activity consent" snippet and raise its `notice_version`. Suggested Latvian sentence (please have it checked): *"Mācību aktivitāšu uzskaitē tiek iekļauts arī laiks un dienas, kad izmantojat gramatikas prakses lietotni (practice.englishfever.com). Ja atsakāties no papildu mācību datu sniegšanas, lietotne jauno laiku neuzskaita, un jūsu prakses ieraksti sadaļā “Mācību aktivitātes” tiek dzēsti."*
+5. Optional but recommended: a cron job every 15 minutes (hPanel → Advanced → Cron Jobs): `/usr/bin/php /home/USERNAME/domains/englishfever.com/public_html/practice/bin/sync-wp.php`. The app already sends while students practise; the cron job only makes sure the last minutes of a session are not left waiting. The exact path is shown in File Manager.
+6. Check the tracker's clean-up job: it should delete old rows by date only. If it filters by `object_type`, practice rows would stay longer than 12 months.
+7. The website's time zone (Settings → General) should be Europe/Riga, the same as the app, so a practice day and a tracker day are the same day.
+
+**If the status line shows a problem:** the text is the website's answer. `403` means the secrets differ (compare `EF_PRACTICE_SECRET` and `sso_secret`) or the server clock is off by more than 2 minutes. `503 tracker snippets are not active` means the tracker snippets are switched off. A connection error usually means the address in `wp_sync_url` is wrong or a security plugin blocks the REST API for this address.
+
+**Testing against a real WordPress.** `app/tests/wp_integration_test.py` runs the whole chain (plugin login, practice, tracker rows, opt-out, outage, results card) against a real WordPress with stand-ins for the two snippets. It needs a WordPress site with the plugin active and two test students; see the header of the file for the variables.
 
 ## Maintenance
 

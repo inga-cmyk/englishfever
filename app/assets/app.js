@@ -644,6 +644,7 @@
     if (guest) cards.push(guestBanner());
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
     if (!guest) cards.push(h('div', { class: 'card' }, h('h2', null, 'Sign-in'), h('p', null, 'You signed in with your englishfever.com account. Manage your password on the website.')));
+    if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off. '), 'You turned off activity tracking on englishfever.com, so the app does not record the time you practise. Your answers and results are still saved. You can change this on englishfever.com.'));
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Your data'),
       h('p', null, guest ? 'As a guest we keep only your nickname, your answers and the time you practise. Guest data is deleted after 60 days without a visit.'
         : 'We keep your name, your answers, your scores and the time you practise. Your teacher can see them. We never share them with anyone else.'),
@@ -722,10 +723,21 @@
       }
       var search = h('input', { type: 'text', placeholder: 'Search students', 'aria-label': 'Search students', style: 'max-width:260px', oninput: function () { q = search.value.trim().toLowerCase(); draw(); } });
       draw();
+      api('teacher/sync-status').then(function (st) {
+        var box = document.getElementById('syncbox');
+        if (!box || !st.configured) return;
+        var bad = !!st.last_error;
+        box.replaceChildren(h('div', { class: 'card pad-s', style: 'margin-bottom:14px;' + (bad ? 'border-color:var(--bad)' : '') },
+          h('b', { style: 'color:var(--text)' }, 'Website activity tracker: '), bad ? 'problem' : (st.last_ok ? 'connected' : 'waiting for the first practice session'),
+          st.last_ok ? h('span', { class: 'small muted' }, ' · last sent ' + UI.fmtAgo(st.last_ok)) : null,
+          st.students_waiting ? h('span', { class: 'small muted' }, ' · ' + st.students_waiting + ' waiting') : null,
+          bad ? h('div', { class: 'small', style: 'margin-top:6px;color:var(--bad)' }, st.last_error) : null));
+      }).catch(function () {});
       show(h('div', null,
         h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),
           h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/export', download: '' }, 'Export all answers (CSV)')),
         h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('users', all.filter(function (s) { return s.provider !== 'guest'; }).length, 'registered'), stat('user', all.filter(function (s) { return s.provider === 'guest'; }).length, 'guests'), stat('flame', weekActive, 'active this week'), stat('check', avg === null ? '–' : avg + '%', 'average correct')),
+        h('div', { id: 'syncbox' }),
         h('div', { class: 'row', style: 'margin-bottom:12px' }, search),
         h('div', { class: 'tablewrap' }, h('table', null, thead, tbody))));
     }).catch(fail);

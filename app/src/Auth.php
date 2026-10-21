@@ -75,6 +75,7 @@ final class Auth
             'id' => (int) $u['id'], 'nickname' => $u['nickname'], 'role' => $u['role'], 'provider' => $u['provider'],
             'guest' => $u['provider'] === 'guest',
             'show_on_board' => (bool) $u['show_on_board'], 'nick_set' => (bool) $u['nick_set'],
+            'track_time' => (int) ($u['track_time'] ?? 1) === 1,
         ];
     }
 
@@ -200,16 +201,18 @@ final class Auth
         $ext = (string) (int) $p['uid'];
         $role = !empty($p['teacher']) ? 'teacher' : 'student';
         $full = mb_substr(trim((string) ($p['name'] ?? '')), 0, 150);
+        // the website tells us whether the learner agreed to activity tracking (opt-out model); absent means yes
+        $track = (array_key_exists('act', $p) && empty($p['act'])) ? 0 : 1;
         $u = Db::one('SELECT * FROM users WHERE provider = ? AND external_id = ?', ['wp', $ext]);
         if ($u) {
-            Db::update('users', ['role' => $role, 'full_name' => $full], 'id = ?', [$u['id']]);
+            Db::update('users', ['role' => $role, 'full_name' => $full, 'track_time' => $track], 'id = ?', [$u['id']]);
             $id = (int) $u['id'];
         } else {
             // suggest the learner's own name (they can change it on the next screen)
             $nick = self::uniqueNick($full);
             $id = Db::insert('users', [
                 'provider' => 'wp', 'external_id' => $ext, 'nickname' => $nick, 'nickname_key' => mb_strtolower($nick), 'full_name' => $full,
-                'role' => $role, 'nick_set' => $role === 'teacher' ? 1 : 0, 'created_at' => time(), 'last_seen' => time(),
+                'role' => $role, 'nick_set' => $role === 'teacher' ? 1 : 0, 'track_time' => $track, 'created_at' => time(), 'last_seen' => time(),
             ]);
         }
         if ($guestId && $role === 'student') self::mergeGuest($guestId, $id);

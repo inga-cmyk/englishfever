@@ -1,0 +1,227 @@
+#!/usr/bin/env python3
+"""App <-> real WordPress: login through the plugin, practice time into the tracker table, consent, summary card.
+
+Needs (see docs/PRACTICE-APP.md, "Testing against a real WordPress"): a WordPress with the plugin active and stand-in
+tracker/consent snippets (mu-plugin), the app on APP_URL using SQLite and the same secret, and:
+    WP_URL (default http://127.0.0.1:8200)   APP_URL (default http://127.0.0.1:8099)
+    WP_CLI  (command that runs wp-cli for that site)   MYSQL_DB (database of that WordPress, read with the mysql command)
+"""
+import hashlib, hmac, json, os, re, subprocess, sys, time, urllib.parse, urllib.request, http.cookiejar
+
+WP = os.environ.get("WP_URL", "http://127.0.0.1:8200")
+APP = os.environ.get("APP_URL", "http://127.0.0.1:8099")
+WPCLI = os.environ["WP_CLI"].split()
+DB = os.environ.get("MYSQL_DB", "wptest")
+SECRET = "local-dev-secret-local-dev-secret-local-dev-secret-0000"
+ITEMS = {i["id"]: i for i in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "content", "items.json")))}
+KEY = hmac.new(SECRET.encode(), b"ef-tracker-v1", hashlib.sha256).hexdigest()
+APPDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+
+
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k): return None
+
+
+class Br:
+    """A browser: its own cookies, optional redirect following."""
+    def __init__(self):
+        self.cj = http.cookiejar.CookieJar()
+        self.op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.cj), NoRedirect)
+
+    def req(self, url, data=None, headers=None, method=None):
+        r = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
+        try:
+            x = self.op.open(r); return x.status, x.read().decode(), x.headers
+        except urllib.error.HTTPError as e:
+            return e.code, e.read().decode(), e.headers
+
+    def api(self, route, data=None, **q):
+        url = APP + "/api.php?r=" + route + "".join(f"&{k}={v}" for k, v in q.items())
+        s, b, _ = self.req(url, json.dumps(data).encode() if data is not None else None, {"X-EF": "1", "Content-Type": "application/json"})
+        j = json.loads(b); j["_status"] = s; return j
+
+
+def wp_login(user):
+    b = Br()
+    b.req(WP + "/wp-login.php")  # test cookie
+    body = urllib.parse.urlencode({"log": user, "pwd": "pass1234", "wp-submit": "Log In", "testcookie": "1"}).encode()
+    b.cj.set_cookie(http.cookiejar.Cookie(0, "wordpress_test_cookie", "WP Cookie check", None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
+    s, _, h = b.req(WP + "/wp-login.php", body, {"Content-Type": "application/x-www-form-urlencoded"})
+    assert s == 302, f"wp login failed for {user}: {s}"
+    return b
+
+
+def via_plugin(wp_browser, app_browser):
+    """Click the bridge link while logged in to WordPress, then follow it into the app."""
+    s, _, h = wp_browser.req(WP + "/?ef_practice=go")
+    loc = h.get("Location") or ""
+    assert s == 302 and "sso.php?token=" in loc, (s, loc)
+    s2, _, h2 = app_browser.req(loc)
+    return s2, h2.get("Location")
+
+
+def sql(q):
+    out = subprocess.run(["mysql", DB, "-N", "-B", "-e", q], capture_output=True, text=True, check=True).stdout.strip()
+    return [l.split("\t") for l in out.split("\n")] if out else []
+
+
+def wpcli(*a):
+    return subprocess.run(WPCLI + list(a), capture_output=True, text=True).stdout.strip()
+
+
+def uid_of(login): return int(wpcli("user", "get", login, "--field=ID"))
+
+
+def practise(app, n=6, skills=("present_simple",), level="A2.1"):
+    r = app.api("session/start", {"mode": "practice", "skills": list(skills), "level": level, "length": n})
+    item = r["item"]; sid = r["session"]["id"]
+    while True:
+        it = ITEMS[item["id"]]
+        ans = it["correct"] if it["kind"] == "mcq" else ([b[0] for b in it["answers"]] if it["kind"] == "gap" else (it["answers"][0][0] if it["kind"] == "text" else it["model"]))
+        a = app.api("session/answer", {"session_id": sid, "item_id": it["id"], "answer": ans, "time_ms": 4000})
+        if a.get("done") or not a.get("next"): return
+        item = a["next"]
+
+
+def signed_post(payload, tamper=False, old=False):
+    body = json.dumps(payload); t = str(int(time.time()) - (500 if old else 0))
+    sig = hmac.new(KEY.encode(), (t + "." + body).encode(), hashlib.sha256).hexdigest()
+    if tamper: body = body.replace("seconds", "secondz")
+    s, b, _ = Br().req(WP + "/wp-json/ef-practice/v1/activity", body.encode(), {"Content-Type": "application/json", "X-EF-Time": t, "X-EF-Sign": sig})
+    return s, json.loads(b)
+
+
+ok = True
+def check(name, cond, extra=""):
+    global ok
+    ok &= bool(cond)
+    print(("PASS " if cond else "FAIL ") + name + ("  -> " + str(extra) if extra and not cond else ""))
+
+
+today = time.strftime("%Y-%m-%d")
+maria = uid_of("maria"); optout = uid_of("optout")
+
+# 1. login through the plugin
+wpb = wp_login("maria"); app = Br()
+st, loc = via_plugin(wpb, app)
+check("plugin link signs the student into the app", st == 302 and "#/home" in (loc or ""), (st, loc))
+me = app.api("me")["user"]
+check("registered student, name suggested from the website, track_time on", me["provider"] == "wp" and me["nickname"].startswith("Maria Test") and me["track_time"] is True and not me["nick_set"], me)
+check("name can be confirmed", app.api("account/profile", {"nickname": "Maria T", "show_on_board": True})["user"]["nick_set"])
+
+# 2. practice -> tracker row
+app.api("heartbeat", {"seconds": 15})
+practise(app, 6)
+time.sleep(1.5)
+rows = sql(f"SELECT object_type,event,course_id,active_seconds,label,visit_key,DATE(started_at) FROM wp_ef_aktivitate WHERE user_id={maria}")
+check("one practice row for today", len(rows) == 1 and rows[0][0] == "practice" and rows[0][1] == "view" and rows[0][2] == "0", rows)
+check("row has seconds > 0 so the day counts, label shows tasks, visit_key is 32 hex", rows and int(rows[0][3]) >= 15 and "6 tasks" in rows[0][4] and re.fullmatch(r"[0-9a-f]{32}", rows[0][5]), rows)
+check("started_at is today", rows and rows[0][6] == today, rows)
+t1 = int(rows[0][3])
+practise(app, 5); time.sleep(1.5)
+rows = sql(f"SELECT COUNT(*), MAX(active_seconds), MAX(label) FROM wp_ef_aktivitate WHERE user_id={maria}")[0]
+check("still one row per day, updated not duplicated", rows[0] == "1" and int(rows[1]) >= t1 and "11 tasks" in rows[2], rows)
+
+# the tracker's own numbers (as described: time = SUM(active_seconds) of 'view' rows; active day = DATE(started_at) with seconds > 0)
+tsum = int(sql(f"SELECT COALESCE(SUM(active_seconds),0) FROM wp_ef_aktivitate WHERE user_id={maria} AND event='view'")[0][0])
+days = sql(f"SELECT COUNT(DISTINCT DATE(started_at)) FROM wp_ef_aktivitate WHERE user_id={maria} AND (event<>'view' OR active_seconds>0)")[0][0]
+check("practice counts in Time learning and Days active", tsum >= 15 and days == "1", (tsum, days))
+
+# 3. the signed endpoint: bad signature, old request, admins/unknown users, consent
+s, j = signed_post({"user": maria, "days": [{"day": today, "seconds": 99, "answers": 1}]}, tamper=True)
+check("tampered request refused", s == 403, (s, j))
+s, j = signed_post({"user": maria, "days": [{"day": today, "seconds": 99, "answers": 1}]}, old=True)
+check("old request refused", s == 403, (s, j))
+s, j = Br().req(WP + "/wp-json/ef-practice/v1/activity", b"{}", {"Content-Type": "application/json"})[:2]
+check("unsigned request refused", s == 403, s)
+s, j = signed_post({"user": 1, "days": [{"day": today, "seconds": 600, "answers": 9}]})
+check("administrator is skipped", s == 200 and j["results"][today] == "skipped" and not sql("SELECT 1 FROM wp_ef_aktivitate WHERE user_id=1"), (s, j))
+s, j = signed_post({"user": 99999, "days": [{"day": today, "seconds": 600, "answers": 9}]})
+check("unknown user is skipped", s == 200 and j["results"][today] == "skipped", (s, j))
+s, j = signed_post({"user": maria, "days": [{"day": "not-a-date", "seconds": 5, "answers": 1}]})
+check("bad day ignored", s == 200 and j["results"] in ([], {}), (s, j))
+
+# 4. results card on the website
+html = wpb.req(WP + "/results/")[1]
+check("[ef_practice_results] shows the student's results", "Grammar practice" in html and "Level estimate" in html and "Tasks done" in html and ">11<" in html.replace(" ", ""), re.sub(r"<[^>]+>", " ", html)[-300:])
+check("results card has the practise button through the bridge", "ef_practice=go" in html)
+check("logged-out visitor sees nothing", "ef-practice-results" not in Br().req(WP + "/results/")[1])
+wpcli("post", "create", "--post_type=page", "--post_title=Plain card", "--post_name=plain-card", "--post_status=publish", "--post_content=[ef_practice_results plain=\"1\"]")
+plain = wpb.req(WP + "/plain-card/")[1]
+check("plain option renders without its own card border", "Level estimate" in plain and "border-radius:16px;padding:24px" not in plain.replace(" ", "") and "border-top:1px solid" in plain, "")
+bob = wp_login("optout")
+html2 = bob.req(WP + "/results/")[1]
+check("student without practice sees the start invitation", "have not practised yet" in html2, "")
+
+# 5. opting out: rows deleted, app stops recording time
+wpcli("user", "meta", "update", "maria", "ef_priv_activity_choice", "no")
+check("opting out deletes the practice rows", sql(f"SELECT COUNT(*) FROM wp_ef_aktivitate WHERE user_id={maria} AND object_type='practice'")[0][0] == "0")
+app.api("heartbeat", {"seconds": 15}); practise(app, 5); time.sleep(1.5)
+check("no new rows after opting out", sql(f"SELECT COUNT(*) FROM wp_ef_aktivitate WHERE user_id={maria}")[0][0] == "0")
+me = app.api("me")["user"]
+check("the app learned about the opt-out from the website's answer", me["track_time"] is False, me)
+before = app.api("dashboard")["today"]["seconds"]
+app.api("heartbeat", {"seconds": 15}); time.sleep(0.5)
+check("the app no longer records time", app.api("dashboard")["today"]["seconds"] == before)
+check("answers and results are still saved", app.api("dashboard")["totals"]["answers"] >= 16)
+
+# 6. opting in again: nothing from before is sent
+seconds_before_yes = app.api("dashboard")["today"]["seconds"]
+wpcli("user", "meta", "update", "maria", "ef_priv_activity_choice", "yes")
+wpb2 = wp_login("maria"); via_plugin(wpb2, app)
+check("track_time back on after a new login", app.api("me")["user"]["track_time"] is True)
+app.api("heartbeat", {"seconds": 15}); time.sleep(1.5)
+practise(app, 5); time.sleep(1.5)
+rows = sql(f"SELECT active_seconds, label FROM wp_ef_aktivitate WHERE user_id={maria}")
+total_app = app.api("dashboard")["today"]["seconds"]
+after_yes = total_app - seconds_before_yes   # time recorded since opting in again
+check("only time after opting in again is sent (30 s minimum for an active day, nothing from before)", len(rows) == 1 and int(rows[0][0]) <= max(30, after_yes + 1), (rows, total_app, seconds_before_yes))
+
+# 7. teacher status + the website being down must not break practice
+teacher = wp_login("admin"); tapp = Br(); via_plugin(teacher, tapp)
+tm = tapp.api("me")["user"]
+check("administrator becomes teacher in the app", tm["role"] == "teacher", tm)
+stt = tapp.api("teacher/sync-status")
+check("teacher sees a working link", stt["configured"] and stt["last_ok"] > 0 and not stt["last_error"], stt)
+def app_sql(q):
+    """Run SQL on the app's own database: SQLite by default, or MySQL/MariaDB if APP_MYSQL_DB is set."""
+    if os.environ.get("APP_MYSQL_DB"):
+        subprocess.run(["mysql", os.environ["APP_MYSQL_DB"], "-e", q], check=True)
+    else:
+        import sqlite3
+        con = sqlite3.connect(os.path.join(APPDIR, "var", "ef.sqlite")); con.execute(q); con.commit(); con.close()
+
+
+app_sql(f"DELETE FROM sync_wp WHERE user_id IN (SELECT id FROM users WHERE external_id='{maria}')")
+cfg_path = os.path.join(APPDIR, "config", "config.php"); cfg = open(cfg_path).read()
+open(cfg_path, "w").write(cfg.replace("127.0.0.1:8200/wp-json", "127.0.0.1:9/wp-json"))   # nothing listens on port 9
+time.sleep(3)  # PHP's opcache re-reads a changed file after up to 2 seconds
+try:
+    s_ = app.api("heartbeat", {"seconds": 15}); practise(app, 5); time.sleep(2)
+    check("practice works while the website is unreachable", app.api("dashboard")["totals"]["answers"] > 20)
+    stt = tapp.api("teacher/sync-status")
+    check("teacher sees the problem and who is waiting", bool(stt["last_error"]) and stt["students_waiting"] >= 1, stt)
+finally:
+    open(cfg_path, "w").write(cfg)
+    time.sleep(3)
+r = subprocess.run(["php", os.path.join(APPDIR, "bin", "sync-wp.php")], capture_output=True, text=True, cwd=APPDIR)
+check("cron script catches up", "sent: 1" in r.stdout and r.returncode == 0, (r.stdout, r.stderr))
+stt = tapp.api("teacher/sync-status")
+check("status clean again", stt["last_error"] is None and stt["students_waiting"] == 0, stt)
+check("tracker has exactly one practice row for the student", sql(f"SELECT COUNT(*) FROM wp_ef_aktivitate WHERE user_id={maria} AND object_type='practice'")[0][0] == "1")
+
+# 8. guests are never sent
+g = Br(); g.api("guest", {"nickname": "Gast"}); g.api("heartbeat", {"seconds": 15}); practise(g, 4); time.sleep(1)
+check("guests produce no tracker rows", sql("SELECT COUNT(*) FROM wp_ef_aktivitate WHERE label LIKE 'Grammar practice%'")[0][0] == "1")
+
+# 9. the summary endpoint is private
+s, b, _ = Br().req(APP + f"/api.php?r=wp/summary&uid={maria}")
+check("summary without a signature refused", s == 403, s)
+t = str(int(time.time())); sig = hmac.new(KEY.encode(), (t + f".summary:{maria}").encode(), hashlib.sha256).hexdigest()
+s, b, _ = Br().req(APP + f"/api.php?r=wp/summary&uid={maria}", headers={"X-EF-Time": t, "X-EF-Sign": sig})
+check("summary with a signature works and only covers that student", s == 200 and json.loads(b)["practice"] is True, (s, b[:80]))
+s, b, _ = Br().req(APP + f"/api.php?r=wp/summary&uid={maria+1000}", headers={"X-EF-Time": t, "X-EF-Sign": sig})
+check("signature for one student does not open another", s == 403, s)
+
+print("\nALL PASS" if ok else "\nSOME FAILED")
+sys.exit(0 if ok else 1)

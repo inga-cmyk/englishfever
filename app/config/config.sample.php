@@ -20,6 +20,10 @@ return [
     // Where "Sign in with englishfever.com" sends people (the page that has the [ef_practice_button] shortcode).
     'wp_login_url' => 'https://www.englishfever.com/practice-login/',
 
+    // Optional: send practice time to the "My activity" tracker on englishfever.com (needs plugin ef-practice-sso 1.1 or newer).
+    // Leave empty to switch the link off.
+    'wp_sync_url' => 'https://englishfever.com/wp-json/ef-practice/v1/activity',
+
     // Optional: where people without an englishfever.com account can register (shown under the sign-in button).
     'register_url' => 'https://englishfever.com/en/register/',
 

@@ -67,6 +67,29 @@ final class Db
         self::q("UPDATE $table SET $set WHERE $where", array_merge(array_values($row), $wp));
     }
 
+    public static function ensureColumn(string $table, string $col, string $ddl): void
+    {
+        if (self::$driver === 'mysql') {
+            $has = (int) self::val('SELECT COUNT(1) FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = ? AND column_name = ?', [$table, $col]);
+        } else {
+            $has = 0;
+            foreach (self::all("PRAGMA table_info($table)") as $r) if ($r['name'] === $col) $has = 1;
+        }
+        if (!$has) self::$pdo->exec("ALTER TABLE $table ADD COLUMN $col $ddl");
+    }
+
+    public static function kvGet(string $k): ?string
+    {
+        $v = self::val('SELECT v FROM kv WHERE k = ?', [$k]);
+        return $v === null ? null : (string) $v;
+    }
+
+    public static function kvSet(string $k, ?string $v): void
+    {
+        if (self::val('SELECT COUNT(1) FROM kv WHERE k = ?', [$k])) self::q('UPDATE kv SET v = ? WHERE k = ?', [$v, $k]);
+        else self::q('INSERT INTO kv (k, v) VALUES (?, ?)', [$k, $v]);
+    }
+
     /** Create tables if they do not exist yet. Safe to run on every request. */
     public static function migrate(): void
     {
@@ -91,6 +114,7 @@ final class Db
                 show_on_board $int NOT NULL DEFAULT 1,
                 nick_set $int NOT NULL DEFAULT 1,
                 must_change $int NOT NULL DEFAULT 0,
+                track_time $int NOT NULL DEFAULT 1,
                 created_at $big NOT NULL,
                 last_seen $big NOT NULL DEFAULT 0
             )$tail",
@@ -144,6 +168,19 @@ final class Db
                 akey $str NOT NULL,
                 at $big NOT NULL
             )$tail",
+            "CREATE TABLE IF NOT EXISTS sync_wp (
+                user_id $big NOT NULL,
+                day $str NOT NULL,
+                seconds $int NOT NULL DEFAULT 0,
+                answers $int NOT NULL DEFAULT 0,
+                base_seconds $int NOT NULL DEFAULT 0,
+                synced_at $big NOT NULL,
+                PRIMARY KEY (user_id, day)
+            )$tail",
+            "CREATE TABLE IF NOT EXISTS kv (
+                k $str NOT NULL PRIMARY KEY,
+                v $txt NULL
+            )$tail",
             "CREATE TABLE IF NOT EXISTS sso_used (
                 nonce $str NOT NULL PRIMARY KEY,
                 exp $big NOT NULL
@@ -152,6 +189,7 @@ final class Db
         foreach ($tables as $sql) {
             self::$pdo->exec($sql);
         }
+        self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before this column existed
         $indexes = [
             ['users', 'ux_users_nick', 'nickname_key', true],
             ['users', 'ix_users_ext', 'provider, external_id', false],

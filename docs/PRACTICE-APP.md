@@ -94,7 +94,7 @@ What the website shares with the app: the WordPress user ID, display name, and w
 **Who becomes a teacher:** WordPress administrators and Tutor LMS instructors, automatically, each time they sign in through the website. So you and your colleague need nothing else if your colleague has the instructor role.
 
 ### 8. Tell learners
-Give learners the app's address (`https://practice.englishfever.com`) for your menu or the course, not the bridge page. Learners who are not registered can start as guests on the app's own page and are invited to register.
+Use the `?ef_practice=open` link from "Making the app easy to find" in your menu, footer and homepage, and the plain app address (`https://practice.englishfever.com`) for social media and e-mails. Learners who are not registered can start as guests on the app's own page and are invited to register.
 
 ## Teacher guide
 
@@ -131,6 +131,30 @@ This is a grammar app, so a missing apostrophe or a typo should not look like a 
 Accepted answers get full points and count as correct for the adaptive logic. A test (`app/tests/grader_test.php`) changes the end of every word in every text and gap answer (over a thousand variants) and checks that none is accepted. Writing tasks (Create) accept `im`, `ive` and similar the same way.
 
 To go back to exact matching, set `'spelling' => 'strict'` (capital letters still never matter).
+
+## Making the app easy to find
+
+**Use one link everywhere:** `https://englishfever.com/practice-login/?ef_practice=open` (any page of your site works as the base; the `practice-login` page is simply a stable one).
+- A **logged-in student** who clicks it is signed in automatically and lands in the app.
+- A **visitor** who clicks it goes to the app's welcome page, where they can start as a guest or continue with their account. They never meet a login wall.
+- The other link, `?ef_practice=go`, always asks for the website login first. The app uses it only behind "Continue with my account".
+
+Needs plugin **1.2.0 or newer**. Where to put it:
+
+| Place | How |
+|---|---|
+| **Main menu** | Appearance → Menus (or Site Editor → Navigation) → Custom Link. URL as above. Label: *Gramatikas prakse* (Latvian menu) / *Grammar practice* (English menu). With a language plugin, add it to each language's menu. |
+| **Homepage** | Add a **Shortcode** block under the top section: `[ef_practice_banner lang="lv"]` on the Latvian page, `[ef_practice_banner lang="en"]` on the English one. It is a black panel with a gold heading and a raspberry button, and it works on phones. Change the wording with `title=""`, `text=""`, `button=""`, `eyebrow=""`. The Latvian text is a draft: please read it. |
+| **Footer** | Add a link in the MĀCIES column with the same URL (*Gramatikas prakse*). |
+| **Course and lesson pages** | `[ef_practice_button label="Practise tenses"]`. |
+| **Student dashboard** | The "Grammar practice" card (`[ef_practice_results]`) already has a button. |
+| **Social media, e-mails, QR codes** | `https://practice.englishfever.com` |
+
+Inside the app, the top bar and the footer have a link back to englishfever.com (`site_url` in `config.php`).
+
+If you use a caching plugin (for example LiteSpeed Cache), exclude the query string `ef_practice` from caching (LiteSpeed Cache → Cache → Excludes → Do Not Cache Query Strings).
+
+**Check after adding it:** (1) in a private window the menu link opens the app's welcome page; (2) while logged in as a student the same link lands in the app without a login screen; (3) the banner looks right on a phone.
 
 ## Practice time and results on the website ("My activity")
 

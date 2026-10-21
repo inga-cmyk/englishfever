@@ -31,7 +31,7 @@
     Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
       state.config = r[0]; state.meta = r[1]; state.user = r[2].user;
       footer.replaceChildren(
-        h('div', null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · We store your nickname, scores and time spent. ',
+        h('div', null, state.config.site_url ? h('span', null, h('a', { href: state.config.site_url }, '← englishfever.com'), ' · ') : null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · We store your nickname, scores and time spent. ',
           state.config.contact_email ? h('a', { href: 'mailto:' + state.config.contact_email }, state.config.contact_email) : null),
         h('div', { class: 'small', style: 'margin-top:4px;opacity:.7' }, 'Version ' + (state.config.version || 'dev')));
       if (state.user) startHeartbeat();
@@ -75,7 +75,8 @@
     var chips = h('div', { class: 'chips', id: 'chips' });
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
       h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', null, 'Practice')),
-      nav, h('div', { class: 'spacer' }), chips));
+      nav, h('div', { class: 'spacer' }),
+      state.config.site_url ? h('a', { class: 'sitelink', href: state.config.site_url }, 'englishfever.com ↗') : null, chips));
     chrome.replaceChildren(bar, tabs);
     renderChips();
   }

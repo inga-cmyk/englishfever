@@ -109,6 +109,24 @@ me = app.api("me")["user"]
 check("registered student, name suggested from the website, track_time on", me["provider"] == "wp" and me["nickname"].startswith("Maria Test") and me["track_time"] is True and not me["nick_set"], me)
 check("name can be confirmed", app.api("account/profile", {"nickname": "Maria T", "show_on_board": True})["user"]["nick_set"])
 
+# 1b. the two link kinds, the banner and the button
+wpcli("post", "create", "--post_type=page", "--post_title=Banner", "--post_name=banner", "--post_status=publish",
+      "--post_content=[ef_practice_banner lang=\"en\"] [ef_practice_banner lang=\"lv\"] [ef_practice_banner title=\"Own title\" text=\"Own text\" button=\"Own button\"] [ef_practice_button]")
+anon = Br()
+s1, _, h1 = anon.req(WP + "/?ef_practice=open")
+check("visitor + open link: straight to the app's welcome page (guests can start)", s1 == 302 and (h1.get("Location") or "").rstrip("/") == APP.rstrip("/"), (s1, h1.get("Location")))
+s2, _, h2 = anon.req(WP + "/?ef_practice=go")
+check("visitor + go link: website login first, then back", s2 == 302 and "dashboard-login" in (h2.get("Location") or "") and "redirect_to=" in (h2.get("Location") or ""), (s2, h2.get("Location")))
+s3, _, h3 = wpb.req(WP + "/?ef_practice=open")
+check("logged-in student + open link: signed in and sent to the app", s3 == 302 and "sso.php?token=" in (h3.get("Location") or ""), (s3, h3.get("Location")))
+page = anon.req(WP + "/banner/")[1]
+check("English banner", "Practise English grammar" in page and "No registration needed" in page and "Free · A2.1 – B1.2" in page)
+check("Latvian banner", "Trenējiet angļu valodas gramatiku" in page and "Sākt praksi" in page)
+check("banner texts can be changed", "Own title" in page and "Own text" in page and "Own button" in page)
+check("banner and button use the guest-friendly link", page.count("ef_practice=open") >= 4 and "ef_practice=go" not in page, page.count("ef_practice=open"))
+check("banner is in the brand colours", "#020101" in page and "#D82C5E" in page and "#DEC17A" in page)
+check("config offers the website link back", Br().api("config").get("site_url"), "")
+
 # 2. practice -> tracker row
 app.api("heartbeat", {"seconds": 15})
 practise(app, 6)
@@ -144,7 +162,7 @@ check("bad day ignored", s == 200 and j["results"] in ([], {}), (s, j))
 # 4. results card on the website
 html = wpb.req(WP + "/results/")[1]
 check("[ef_practice_results] shows the student's results", "Grammar practice" in html and "Level estimate" in html and "Tasks done" in html and ">11<" in html.replace(" ", ""), re.sub(r"<[^>]+>", " ", html)[-300:])
-check("results card has the practise button through the bridge", "ef_practice=go" in html)
+check("results card has the practise button through the bridge", "ef_practice=open" in html)
 check("logged-out visitor sees nothing", "ef-practice-results" not in Br().req(WP + "/results/")[1])
 wpcli("post", "create", "--post_type=page", "--post_title=Plain card", "--post_name=plain-card", "--post_status=publish", "--post_content=[ef_practice_results plain=\"1\"]")
 plain = wpb.req(WP + "/plain-card/")[1]

@@ -31,6 +31,9 @@ return [
     // accepted, with a spelling tip. 'strict': only exact answers (capital letters still never matter).
     'spelling' => 'forgiving',
 
+    // Link back to the website (footer and top bar of the app).
+    'site_url' => 'https://englishfever.com/',
+
     // Shown in the footer and the privacy note.
     'site_name'   => 'English Fever',
     'privacy_url' => 'https://www.englishfever.com/privacy-policy/',

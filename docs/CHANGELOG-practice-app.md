@@ -6,6 +6,8 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Spelling policy: missing apostrophes, capital letters and safe one-letter typos accepted with a tip (`'spelling' => 'strict'` switches it off).
 - A2.1 "evaluate" tasks reworded to "Is this sentence correct?".
 - Version label in the footer, this changelog.
+- Link back to englishfever.com (`site_url` in `config.php`) in the top bar and footer.
+- **Plugin 1.2.0** (upload it too): the guest-friendly `?ef_practice=open` link for menus and the homepage, `[ef_practice_banner]` homepage block (English and Latvian), button now uses the open link.
 
 ## Practice time and results on the website (plugin 1.1.0 + app)
 - Practice time goes into "My activity" (needs `wp_sync_url` in `config.php` and plugin 1.1.0); `[ef_practice_results]` card; consent respected; teacher status line; `bin/sync-wp.php` for cron.

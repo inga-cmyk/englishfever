@@ -1,14 +1,20 @@
 <?php
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
- * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_results].
- * Version:     1.1.0
+ * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
+ * Version:     1.2.0
  * Author:      English Fever
  * License:     GPLv2 or later
  *
  * Setup (once): add these two lines to wp-config.php, above "That's all, stop editing!":
  *     define( 'EF_PRACTICE_URL',    'https://practice.englishfever.com' );   // where the app lives, no trailing slash
  *     define( 'EF_PRACTICE_SECRET', '64 random hex characters, the same as sso_secret in the app config' );
+ *
+ * Links (put them in menus, buttons, anywhere; the address can be any page of the site):
+ *     https://YOUR-SITE/?ef_practice=open   Logged-in students are signed in automatically and land in the app.
+ *                                           Visitors go to the app's welcome page, where they can start as guests.
+ *                                           USE THIS ONE in menus and on the homepage.
+ *     https://YOUR-SITE/?ef_practice=go     Always asks for the website login first (used by the app's "Continue with my account").
  *
  * Optional, to send people who are not logged in to your own login page instead of wp-login.php:
  *     define( 'EF_PRACTICE_LOGIN_URL', 'https://englishfever.com/your-login-page/' );
@@ -56,15 +62,27 @@ function ef_practice_token( WP_User $user ) {
 	return $p . '.' . ef_practice_b64u( hash_hmac( 'sha256', $p, EF_PRACTICE_SECRET, true ) );
 }
 
-/* The button points at the same page with ?ef_practice=go. This handler sends the visitor on. */
+/* ?ef_practice=open  logged in: into the app; visitors: the app's welcome page (guests allowed).
+   ?ef_practice=go    always requires the website login first. */
 add_action( 'template_redirect', function () {
-	if ( ! isset( $_GET['ef_practice'] ) || 'go' !== $_GET['ef_practice'] ) {
+	$mode = isset( $_GET['ef_practice'] ) ? sanitize_key( wp_unslash( $_GET['ef_practice'] ) ) : '';
+	if ( 'go' !== $mode && 'open' !== $mode ) {
 		return;
 	}
 	if ( ! ef_practice_configured() ) {
 		wp_die( esc_html__( 'The practice app is not set up yet.', 'ef-practice' ), '', array( 'response' => 503 ) );
 	}
+	nocache_headers();
+	// wp_safe_redirect would block the other host, so allow exactly the configured one.
+	add_filter( 'allowed_redirect_hosts', function ( $hosts ) {
+		$hosts[] = wp_parse_url( EF_PRACTICE_URL, PHP_URL_HOST );
+		return $hosts;
+	} );
 	if ( ! is_user_logged_in() ) {
+		if ( 'open' === $mode ) {
+			wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/' );
+			exit;
+		}
 		$back = add_query_arg( 'ef_practice', 'go', is_singular() ? get_permalink() : home_url( '/' ) );
 		if ( defined( 'EF_PRACTICE_LOGIN_URL' ) && EF_PRACTICE_LOGIN_URL ) {
 			wp_safe_redirect( add_query_arg( 'redirect_to', rawurlencode( $back ), EF_PRACTICE_LOGIN_URL ) );
@@ -73,25 +91,26 @@ add_action( 'template_redirect', function () {
 		}
 		exit;
 	}
-	$url = rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) );
-	// wp_safe_redirect would block the other host, so allow exactly the configured one.
-	add_filter( 'allowed_redirect_hosts', function ( $hosts ) {
-		$hosts[] = wp_parse_url( EF_PRACTICE_URL, PHP_URL_HOST );
-		return $hosts;
-	} );
-	wp_safe_redirect( $url );
+	wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) ) );
 	exit;
 } );
+
+/** The link for the current page, in the "open" mode (works on any front-end page). */
+function ef_practice_link( $mode = 'open' ) {
+	$base = is_singular() ? get_permalink() : home_url( '/' );
+	return add_query_arg( 'ef_practice', 'go' === $mode ? 'go' : 'open', $base ? $base : home_url( '/' ) );
+}
 
 add_shortcode( 'ef_practice_button', function ( $atts ) {
 	$atts  = shortcode_atts(
 		array(
 			'label' => 'Start practising',
 			'class' => 'ef-practice-btn',
+			'mode'  => 'open',
 		),
 		$atts
 	);
-	$href  = add_query_arg( 'ef_practice', 'go', get_permalink() );
+	$href  = ef_practice_link( $atts['mode'] );
 	// Styled inline so it looks right on any theme (English Fever raspberry, pill shape).
 	$style = 'display:inline-block;background:#D82C5E;color:#fff;padding:14px 32px;border-radius:999px;'
 		. 'font-weight:600;font-size:17px;line-height:1.2;text-decoration:none;border:0;cursor:pointer;';
@@ -102,6 +121,42 @@ add_shortcode( 'ef_practice_button', function ( $atts ) {
 		esc_url( $href ),
 		esc_html( $atts['label'] )
 	);
+} );
+
+/* [ef_practice_banner lang="en|lv"]: a ready-made homepage block. Texts can be changed with title="", text="", button="", eyebrow="". */
+add_shortcode( 'ef_practice_banner', function ( $atts ) {
+	$texts = array(
+		'en' => array(
+			'eyebrow' => 'Free · A2.1 – B1.2',
+			'title'   => 'Practise English grammar',
+			'text'    => 'Short tasks with clear feedback after every answer. Start with a free placement test. No registration needed.',
+			'button'  => 'Start practising',
+		),
+		'lv' => array(
+			'eyebrow' => 'Bezmaksas · A2.1 – B1.2',
+			'title'   => 'Trenējiet angļu valodas gramatiku',
+			'text'    => 'Īsi uzdevumi ar skaidru paskaidrojumu pēc katras atbildes. Sāciet ar bezmaksas līmeņa noteikšanas testu. Reģistrācija nav nepieciešama.',
+			'button'  => 'Sākt praksi',
+		),
+	);
+	$atts = shortcode_atts( array( 'lang' => 'en', 'eyebrow' => '', 'title' => '', 'text' => '', 'button' => '' ), $atts );
+	$t    = $texts[ isset( $texts[ $atts['lang'] ] ) ? $atts['lang'] : 'en' ];
+	foreach ( array( 'eyebrow', 'title', 'text', 'button' ) as $k ) {
+		if ( '' !== $atts[ $k ] ) {
+			$t[ $k ] = $atts[ $k ];
+		}
+	}
+	$box = 'background:#020101;color:#E9E5DA;border-radius:20px;padding:clamp(24px,5vw,44px);margin:24px 0;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;';
+	$btn = 'display:inline-block;background:#D82C5E;color:#fff;padding:14px 32px;border-radius:999px;font-weight:600;font-size:17px;line-height:1.2;text-decoration:none;white-space:nowrap;';
+	return '<section class="ef-practice-banner" style="' . esc_attr( $box ) . '">'
+		. '<div style="flex:1 1 320px;min-width:0">'
+		. '<div style="height:4px;width:48px;background:#DE3163;border-radius:4px;margin-bottom:16px"></div>'
+		. '<div style="font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#DEC17A;font-weight:700;margin-bottom:8px">' . esc_html( $t['eyebrow'] ) . '</div>'
+		. '<h2 style="color:#fff;font-size:clamp(24px,4vw,32px);line-height:1.2;margin:0 0 10px">' . esc_html( $t['title'] ) . '</h2>'
+		. '<p style="margin:0;color:#C9C4B8;max-width:52ch;font-size:17px;line-height:1.55">' . esc_html( $t['text'] ) . '</p>'
+		. '</div>'
+		. '<a href="' . esc_url( ef_practice_link( 'open' ) ) . '" style="' . esc_attr( $btn ) . '">' . esc_html( $t['button'] ) . '</a>'
+		. '</section>';
 } );
 
 /* ───────── practice time -> "My activity" tracker (table wp_ef_aktivitate, snippet "Student activity tracking") ───────── */
@@ -278,7 +333,7 @@ add_shortcode( 'ef_practice_results', function ( $atts ) {
 		}
 		set_transient( $cache, $sum, 300 );
 	}
-	$go = esc_url( add_query_arg( 'ef_practice', 'go', home_url( '/' ) ) );
+	$go = esc_url( ef_practice_link( 'open' ) );
 	$st = ( '1' === (string) $atts['plain'] )
 		? 'border-top:1px solid #e6e6e6;margin:24px 0 0;padding:20px 0 0;'
 		: 'background:#fff;border:1px solid #e6e6e6;border-radius:16px;padding:24px;margin:0 0 28px;';

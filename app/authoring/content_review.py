@@ -24,8 +24,8 @@ def revise(original):
         q='Which verb is normally NOT used in a continuous tense when it describes a state of knowledge?',
         why='When *know* describes knowledge, we normally use a simple tense: *I know the answer*, not *I am knowing the answer*.',
         why_lv='Ja *know* apzīmē zināšanas, parasti lieto vienkāršo laiku: *I know the answer*, nevis *I am knowing the answer*.')
-    fix('ps-B11-2a', 'Qualify the temperature and pressure in the general-truth example.',
-        correct='Pure water boils at 100°C at sea level.')
+    fix('ps-B11-2a', 'Qualify the temperature in the general-truth example, without making the correct option stand out by length.',
+        correct='Water boils at 100 degrees Celsius.')
     fix('ps-B11-4a', 'Replace a context-dependent continuous use of like with a clear form error.',
         correct='She does not likes this song.',
         why='After *does not*, use the base verb: *She does not like this song.* The auxiliary *does* carries the third-person ending.',
@@ -114,7 +114,7 @@ def revise(original):
         why='*Unless you hurry* means *if you do not hurry*. Adding *not* changes the condition and loses the intended warning. A negative clause after *unless* can be grammatical when that different meaning is intended.',
         why_lv='*Unless you hurry* nozīmē *if you do not hurry*. Papildu noliegums maina nosacījumu un vairs neizsaka doto brīdinājumu. Noliegums pēc *unless* var būt pareizs, ja ir domāta cita nozīme.')
     fix('ct-B12-2a', 'A cheaper alternative does not establish that the actual price was expensive.',
-        correct='We did not book earlier; booking earlier would have cost less.',
+        correct='We did not book earlier.',
         why='The third conditional imagines a different past. We did not book earlier, and the imagined earlier booking would have been cheaper.',
         why_lv='Third conditional izsaka iedomātu pagātnes situāciju. Mēs nerezervējām agrāk; ja būtu rezervējuši agrāk, cena būtu bijusi zemāka.')
     fix('ct-B22-1a', 'Several offered combinations are valid conditional types; identify the required meaning.',

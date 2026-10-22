@@ -138,6 +138,12 @@
     return {
       el: el,
       answer: function () { return line.map(function (id) { return cards[id].text; }); },
+      /** Put the cards in the order of a saved answer (to look back at a finished task). */
+      set: function (ans) {
+        var used = {}; line = [];
+        (ans || []).forEach(function (t) { for (var i = 0; i < cards.length; i++) if (!used[i] && cards[i].text === t) { used[i] = true; line.push(i); break; } });
+        render();
+      },
       complete: function () { return line.length === cards.length; },
       lock: function () { locked = true; el.classList.add('locked'); render(); },
       mark: function (ok) { lineEl.classList.add(ok ? 'ok' : 'bad'); },
@@ -196,6 +202,11 @@
     return {
       slots: slotEls, bank: bankEl,
       answer: function () { return slotCard.map(function (id) { return id === null ? '' : cards[id].text; }); },
+      set: function (ans) {
+        var used = {}; slotCard = slotCard.map(function () { return null; });
+        (ans || []).forEach(function (t, k) { if (t === '' || k >= slotCard.length) return; for (var i = 0; i < cards.length; i++) if (!used[i] && cards[i].text === t) { used[i] = true; slotCard[k] = i; break; } });
+        render();
+      },
       complete: function () { return slotCard.indexOf(null) < 0; },
       lock: function () { locked = true; bankEl.classList.add('locked'); render(); },
       mark: function (marks) { slotEls.forEach(function (s, i) { var ok = Array.isArray(marks) ? marks[i] : marks; s.classList.add(ok ? 'ok' : 'bad'); }); },
@@ -207,7 +218,7 @@
     var board = slotBoard(lefts.length, rights, onChange);
     var rows = lefts.map(function (l, i) { return h('div', { class: 'dnd-row' }, h('div', { class: 'dnd-left' }, l), board.slots[i]); });
     var el = h('div', { class: 'dnd' }, h('div', { class: 'dnd-rows' }, rows), board.bank);
-    return { el: el, answer: board.answer, complete: board.complete, lock: board.lock, mark: board.mark };
+    return { el: el, answer: board.answer, set: board.set, complete: board.complete, lock: board.lock, mark: board.mark };
   }
 
   /** Word bank gap: the sentence has inline slots and the learner drags words into them. Returns the sentence node too. */
@@ -219,7 +230,7 @@
       sentence.appendChild(document.createTextNode(p));
       if (i < parts.length - 1) sentence.appendChild(board.slots[i]);
     });
-    return { sentence: sentence, el: h('div', { class: 'dnd' }, board.bank), answer: board.answer, complete: board.complete, lock: board.lock, mark: board.mark };
+    return { sentence: sentence, el: h('div', { class: 'dnd' }, board.bank), answer: board.answer, set: board.set, complete: board.complete, lock: board.lock, mark: board.mark };
   }
 
   window.DnD = { order: order, match: match, bankGap: bankGap, clear: clearDrag };

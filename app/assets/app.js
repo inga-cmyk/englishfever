@@ -119,7 +119,7 @@
     }, 10000);
   }
 
-  function stopHeartbeat() { if (hbTimer) { clearInterval(hbTimer); hbTimer = null; } state.todaySeconds = 0; state.streak = 0; }
+  function stopHeartbeat() { if (hbTimer) { clearInterval(hbTimer); hbTimer = null; } state.todaySeconds = 0; state.streak = 0; clearHistories(); }
 
   // ───────── chrome (top bar and mobile tabs) ─────────
   function renderChrome(active) {
@@ -537,12 +537,27 @@
   }
   function growBox(ta) { ta.style.height = 'auto'; ta.style.height = Math.max(ta.scrollHeight, 110) + 'px'; }
 
-  function newSess(session, item) { return { session: session, item: item, startedAt: Date.now(), result: null, last: null }; }
+  // The tasks answered so far in this session are kept so the learner can look back at them (read-only: an answer is
+  // already recorded and decides the next task). They survive a reload in the same tab and are gone when the tab closes.
+  function histKey(id) { return 'ef_hist_' + id; }
+  function loadHistory(id) { try { var v = JSON.parse(sessionStorage.getItem(histKey(id)) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
+  function saveHistory(S) { try { sessionStorage.setItem(histKey(S.session.id), JSON.stringify(S.history)); } catch (e) {} }
+  function clearHistories() { try { Object.keys(sessionStorage).forEach(function (k) { if (k.indexOf('ef_hist_') === 0) sessionStorage.removeItem(k); }); } catch (e) {} }
+  /** curN: number of the task this object stands for (0-based); it does not change when the answer comes back. */
+  function newSess(session, item, history) { return { session: session, item: item, curN: session.n, startedAt: Date.now(), result: null, last: null, history: history || loadHistory(session.id) }; }
 
-  function viewSession() {
+  /** rv: number of an earlier task to look back at (read-only); none = the current task. */
+  function viewSession(rv) {
     var S = state.sess;
     if (!S) { return api('session/resume').then(function (r) { if (r.resume) { state.sess = newSess(r.resume.session, r.resume.item); viewSession(); } else location.hash = '#/home'; }).catch(fail); }
-    var it = S.item, ses = S.session;
+    var H = S.history || (S.history = []);
+    var entry = function (n) { return H.filter(function (e) { return e.n === n; })[0] || null; };
+    var rev = (rv === undefined || rv === null) ? null : entry(rv);   // an earlier task, looked at again
+    var reviewing = !!rev;
+    var answeredNow = !reviewing && !!S.last && !!entry(S.curN);       // the current task, already answered, feedback still on screen
+    if (answeredNow) rev = entry(S.curN);
+    var at = rev ? rev.n : S.curN;                                   // number of the task on screen (0-based)
+    var it = rev ? rev.item : S.item, ses = S.session;
     var answerGetter, canSubmit = function () { return false; };
     var submit = h('button', { class: 'btn', disabled: true }, 'Check answer');
     var area = h('div');
@@ -607,7 +622,8 @@
       var ans = answerGetter();
       api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, time_ms: Date.now() - taskStart }).then(function (r) {
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
-        lock(); showFeedback(r, ans);
+        S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
+        lock(); showFeedback(r, ans); drawDots(); drawPrev();
         if (r.done) S.summary = r.summary;
       }).catch(function (e) {
         submit.disabled = false;
@@ -682,6 +698,18 @@
 
       var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next task';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
+      if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
+        var older = olderOf(at), newer = H.filter(function (e) { return e.n > at; }).sort(function (a, b) { return a.n - b.n; })[0];
+        fb.appendChild(h('div', { class: 'nextrow' },
+          h('span', { class: 'row', style: 'gap:8px' },
+            older ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(older.n); } }, '‹ Previous') : null,
+            newer ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(newer.n); } }, 'Next ›') : null),
+          h('button', { class: 'btn', onclick: function () { viewSession(); } }, S.last ? 'Back to task ' + (S.curN + 1) + ' feedback' : 'Back to task ' + (S.curN + 1), icon('arrow'))));
+        var wasOpenR = feedback.querySelector('details.rule[open]');
+        feedback.replaceChildren(fb);
+        if (wasOpenR) { var dr = fb.querySelector('details.rule'); if (dr) dr.open = true; }
+        return;
+      }
       var adaptNote = null;
       if (!r.done && ses.mode === 'practice' && ses.phase !== 'diagnostic' && res.adapt !== 'same') {
         adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? 'Next: a bit harder' : 'Next: a bit easier');
@@ -698,21 +726,53 @@
 
     function next(r) {
       if (r.done) { state.sess = null; state.lastSummary = r.summary; go('#/summary'); return; }
-      state.sess = newSess(r.session, r.next);
+      state.sess = newSess(r.session, r.next, S.history);
       viewSession();
+    }
+
+    function olderOf(n) { return H.filter(function (e) { return e.n < n; }).sort(function (a, b) { return b.n - a.n; })[0] || null; }
+    var dotsEl = h('div', { class: 'dots', role: 'group', 'aria-label': 'Tasks in this session' });
+    function drawDots() {
+      if (!H.length) { dotsEl.replaceChildren(); return; }
+      var items = [];
+      for (var i = 0; i < ses.length; i++) {
+        (function (i) {
+          var e = entry(i), on = i === at, isCur = i === S.curN;
+          var label = 'Task ' + (i + 1) + (e ? (e.result.correct ? ', correct' : ', not correct') + (on ? ', shown now' : ', look back') : (isCur ? ', the task you are on' : ', not done yet'));
+          items.push(h('button', { type: 'button', class: 'dot' + (e ? (e.result.correct ? ' good' : ' bad') : '') + (on ? ' now' : ''), 'aria-label': label, title: 'Task ' + (i + 1), 'aria-current': on ? 'step' : null, disabled: !e && !isCur,
+            onclick: function () { if (isCur) { if (reviewing) viewSession(); } else if (e) viewSession(i); } }, String(i + 1)));
+        })(i);
+      }
+      dotsEl.replaceChildren.apply(dotsEl, items);
+    }
+    var prevSlot = h('span');
+    function drawPrev() {
+      var o = olderOf(at);
+      prevSlot.replaceChildren(o ? h('button', { class: 'linkbtn small', onclick: function () { viewSession(o.n); } }, '‹ Previous') : null);
     }
 
     var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice');
     var done = ses.n;
+    drawDots(); drawPrev();
     show(h('div', { class: 'sess' },
-      h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Task ' + (done + 1) + ' of ' + ses.length),
-        h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop')),
+      h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Task ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
+        h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
       h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(ses.length), 'aria-valuenow': String(done) }, h('i', { id: 'prog', style: 'width:' + Math.round(100 * done / ses.length) + '%' })),
+      dotsEl,
       h('div', { class: 'card task' },
-        h('h1', { class: 'sr' }, 'Task ' + (done + 1)),
+        h('h1', { class: 'sr' }, 'Task ' + (at + 1)),
         h('div', { class: 'meta' }, h('span', { class: 'pill dark' }, it.skill_label), levelPill(it.level),
           h('span', { class: 'pill', title: state.meta.bloom[String(it.bloom)].desc }, bloomName(it.bloom), ' ', bloomDots(it.bloom))),
         qEl, area, h('div', { class: 'row' }, submit), feedback)));
+    if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
+      var a = rev.ans;
+      if (it.kind === 'mcq') area.querySelectorAll('input[type=radio]').forEach(function (r) { if (r.value === a) { r.checked = true; chosen = a; } });
+      else if (board) board.set(a);
+      else if (it.kind === 'gap') inputs.forEach(function (inp, i) { inp.value = (a && a[i]) || ''; fitBlank(inp); });
+      else if (inputs[0]) { inputs[0].value = a || ''; if (it.kind === 'write') growBox(inputs[0]); }
+      lock(); showFeedback(answeredNow ? S.last : { result: rev.result, done: false }, a);
+      return;
+    }
     var first = inputs[0] || (area.querySelector('input[type=radio]'));
     if (first && it.kind !== 'mcq') first.focus();
   }

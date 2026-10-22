@@ -2,6 +2,15 @@
 
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
+## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Look back at earlier tasks** (read-only): numbered dots under the progress bar (green = correct, pink dashed = not correct, gold ring = where you are) and a *‹ Previous* link. Clicking an answered task shows the question, the saved answer (also for drag-and-drop tasks) and the feedback; *Back to task N* returns. Answers cannot be changed afterwards: they are already recorded and decide the next task. The list survives a reload in the same tab.
+- **Stuck drag copy fixed:** a floating word could stay on the screen (even over the next task). It is now removed in every case (release outside the card or window, Escape, window loses focus, a new press, a new page).
+- **Writing tasks no longer ask for more than the instruction:** removed the time word (*He works hard.* was marked wrong), time phrase, *will*, *Start with If* and comma requirements that the task text never mentioned (7 tasks).
+- **Sentence tasks:** a missing plural -s after a preposition (*on Sunday* for *on Sundays*) is accepted with a tip; a sentence that is right except for one word says *Almost – one word to check* and names the word.
+- **Latvian terms:** *darāmā kārta / ciešamā kārta*, *teikuma priekšmets* (short *teik. priekšmets* in formulas), *jautājamais vārds*; see LATVIAN-TERMS.md for what was checked and what stays as teaching shorthand.
+- **Top bar always fits** (it ran off the right edge for guests and on narrow computer windows); install hint says *phone* on phones and shows *Install the app on this computer* only where the browser offers it.
+- Livelier cards and buttons (hover lift and glow, one gentle pulse on the main action).
+
 ## Research package (not uploaded yet; goes on top of the grammar batch)
 - **Learning study, off by default** (`research_enabled` in `config.php`): registered learners are invited on Home and can join or leave in Profile. Only people who joined are randomised and exported.
 - **Random conditions:** *streak counter* and *leaderboard* can each be hidden for half of the participants (`experiments` in `config.php`; shuffled blocks of four; same conditions if someone leaves and joins again).

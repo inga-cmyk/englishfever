@@ -309,6 +309,11 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
 .sitelink { color: var(--warm-grey); text-decoration: none; font-size: .9rem; white-space: nowrap; padding: 6px 4px; }
 .sitelink:hover { color: #fff; }
 @media (max-width: 900px) { .sitelink { display: none; } }
+/* the top bar must always fit: shed the least important parts first as the window gets narrower */
+.chip-more { display: none; } /* "· save progress" does not fit next to the other items; the chip is still a button and says so in its tooltip */
+.topbar-in { gap: 12px; } .nav { margin-left: 0; } .nav a { padding: 8px 9px; }
+@media (max-width: 1100px) { .brand-sub { display: none; } }
+@media (max-width: 960px) { .chip-top.hide-m { display: none; } }
 
 /* small phones: keep the top bar on one line */
 @media (max-width: 560px) {
@@ -342,6 +347,14 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
 .chip:hover { border-color: var(--gold-deep); }
 .chip:focus-visible { outline: 3px solid var(--btn); outline-offset: 2px; }
 .chip.dragging { opacity: .3; }
+/* numbered dots: the tasks of this session; answered ones can be looked at again */
+.dots { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 4px; }
+.dot { width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); font: inherit; font-size: .74rem; font-weight: 700; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: transform .12s, box-shadow .12s; }
+.dot:disabled { cursor: default; opacity: .5; }
+.dot.good { background: var(--good-bg); border-color: var(--good); color: var(--good); }
+.dot.bad { background: var(--bad-bg); border-color: var(--bad); border-style: dashed; color: var(--bad); }
+.dot.now { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--gold-deep); }
+@media (hover: hover) { .dot:not(:disabled):hover { transform: translateY(-2px); } }
 html.dnd-dragging, html.dnd-dragging * { user-select: none; -webkit-user-select: none; cursor: grabbing !important; }
 .chip.ghost { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); transform: rotate(-2deg); cursor: grabbing; margin: 0; }
 .chip:disabled { cursor: default; opacity: 1; color: var(--text); }

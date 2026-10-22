@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the two files you upload:
-    dist/practice-app.zip      the practice app (upload to the subdomain folder on Hostinger)
+    dist/practice-app.zip         the whole practice app (first install)
+    dist/practice-app-update.zip  the same without config/ and var/ (use this to update a running app)
     dist/ef-practice-sso.zip   the WordPress plugin (Plugins > Add New > Upload)
 
     python3 tools/package_practice_app.py
@@ -45,6 +46,16 @@ with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("src/version.php", "<?php\nreturn ['version' => '" + stamp + "'];\n")
     n += 1
 print(f"{out}: {n} files, version {stamp}")
+
+# The update zip: the same code without config/ and var/ (they already exist on the server), so extracting it over a running
+# app creates no duplicate folders and cannot touch the settings or the data.
+upd = os.path.join(DIST, "practice-app-update.zip")
+with zipfile.ZipFile(out) as zin, zipfile.ZipFile(upd, "w", zipfile.ZIP_DEFLATED) as zout:
+    for name in zin.namelist():
+        if name.startswith(("config/", "var/")) or name == ".gitignore":
+            continue
+        zout.writestr(name, zin.read(name))
+print(f"{upd}: update only (no config/, no var/)")
 
 plug = os.path.join(DIST, "ef-practice-sso.zip")
 src = os.path.join(APP, "wp-plugin", "ef-practice-sso")

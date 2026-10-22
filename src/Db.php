@@ -198,6 +198,18 @@ final class Db
                 assigned_at $big NOT NULL,
                 PRIMARY KEY (user_id, factor)
             )$tail",
+            "CREATE TABLE IF NOT EXISTS reports (
+                id $pk,
+                user_id $big NOT NULL,
+                item_id $str NOT NULL,
+                reason $str NOT NULL,
+                comment $txt NULL,
+                answer $txt NULL,
+                correct $int NULL,
+                status $str NOT NULL DEFAULT 'new',
+                created_at $big NOT NULL,
+                updated_at $big NOT NULL
+            )$tail",
             "CREATE TABLE IF NOT EXISTS kv (
                 k $str NOT NULL PRIMARY KEY,
                 v $txt NULL

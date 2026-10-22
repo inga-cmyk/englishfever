@@ -425,3 +425,28 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .size input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 2px; }
 @media (max-width: 600px) { .sizes { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .home .hello h1 { font-size: 1.55rem; line-height: 1.2; } .card.focus { padding: 22px 20px; } }
+
+/* report a problem, the test-version notice, the teacher's Reports page */
+.report-link { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; font-size: .85rem; color: var(--muted); text-decoration: none; }
+.report-link svg { width: 15px; height: 15px; }
+.report-link:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.report-link[disabled] { cursor: default; text-decoration: none; color: var(--good); }
+.task .meta .taskid { margin-left: 4px; }
+.taskid { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .78rem; }
+.betapill { display: inline-block; background: var(--raspberry); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.betapill .short { display: none; }
+@media (max-width: 480px) { .report-link .long { display: none; } .betapill .long { display: none; } .betapill .short { display: inline; } }
+.betanote { margin-bottom: 14px; border-color: var(--gold); font-size: .92rem; color: var(--text-soft); }
+.hero .betaline { color: var(--gold); font-size: .92rem; margin: 10px 0 0; }
+.opt.small { padding: 10px 14px; font-size: .95rem; }
+.reasons { margin-bottom: 14px; }
+.modal { max-height: calc(100vh - 32px); overflow-y: auto; }
+.modal textarea { width: 100%; box-sizing: border-box; font: inherit; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--text); resize: vertical; }
+.badge { display: inline-block; min-width: 18px; padding: 1px 6px; margin-left: 6px; border-radius: 999px; background: var(--raspberry); color: #fff; font-size: .7rem; font-weight: 700; text-align: center; }
+.rep { margin-bottom: 12px; }
+.rep-list > summary { cursor: pointer; font-size: .9rem; color: var(--link); }
+.rep-list ul { margin: 8px 0 0; padding-left: 18px; }
+.rep-list li { margin-bottom: 8px; }
+@media (max-width: 1320px) { .betapill .long { display: none; } .betapill .short { display: inline; } }
+.betapill .long { display: none !important; } .betapill .short { display: inline !important; } .betapill { padding: 2px 8px; }
+.brand-sub { display: none; } @media (min-width: 1500px) { .brand-sub { display: inline; } }

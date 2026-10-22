@@ -6,6 +6,7 @@ final class Content
     private static ?array $items = null;
     private static ?array $meta = null;
     private static ?array $byId = null;
+    private static ?array $retired = null;
 
     public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0, 'C1.1' => 7.0, 'C1.2' => 8.0];
 
@@ -38,7 +39,17 @@ final class Content
     public static function item(string $id): ?array
     {
         self::items();
-        return self::$byId[$id] ?? null;
+        if (isset(self::$byId[$id])) return self::$byId[$id];
+        // Historical answers and sessions already in progress keep the exact item
+        // they originally used. Retired items never enter items()/pickNext().
+        if (self::$retired === null) {
+            self::$retired = [];
+            foreach (self::load('retired') as $it) {
+                $it['d'] = self::difficulty($it['level'], $it['bloom']);
+                self::$retired[$it['id']] = $it;
+            }
+        }
+        return self::$retired[$id] ?? null;
     }
 
     public static function difficulty(string $level, int $bloom): float

@@ -8,6 +8,7 @@ require __DIR__ . '/Grader.php';
 require __DIR__ . '/Engine.php';
 require __DIR__ . '/Stats.php';
 require __DIR__ . '/Research.php';
+require __DIR__ . '/Reports.php';
 require __DIR__ . '/Wp.php';
 
 Config::load();

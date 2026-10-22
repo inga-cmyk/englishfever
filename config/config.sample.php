@@ -38,6 +38,9 @@ return [
     // Learning study (research). Off by default. When on, registered learners are invited to take part; only people who agree
     // are randomised to the conditions listed under 'experiments' and appear in the research export (teacher page, Students).
     // Switch it on only when your ethics review and information sheet are ready, and replace the default wording with the approved text.
+    // The "test version" notice for everyone (top bar, Home, welcome page). Set to false when the tasks are checked.
+    'beta_notice' => true,
+
     'research_enabled' => false,
     'experiments' => [],            // any of: 'streak' (daily streak counter), 'leaderboard'. Half of the participants get the feature hidden.
     'research_info_url' => '',      // page with the information sheet (shown as a link in the invitation)

@@ -849,6 +849,23 @@
 "why_lv": "*If* daļā lieto Present Simple, pat runājot par nākotni."
 },
 {
+"id": "cf-A22-5a",
+"skill": "cond_first",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A friend writes: 'If I will have time, I will call you.' Choose the correct option.",
+"correct": "Say 'If I have time, I'll call you.'",
+"wrong": [
+"Say 'If I would have time, I will call you.'",
+"Say 'If I had time, I will call you.'",
+"It is correct. Do not change it."
+],
+"why": "After *if* we use the present simple: *If I have time, I'll call you.*",
+"wrong_why": {},
+"why_lv": "Pēc *if* lieto Present Simple: *If I have time, I'll call you.*"
+},
+{
 "id": "cf-B11-1a",
 "skill": "cond_first",
 "level": "B1.1",

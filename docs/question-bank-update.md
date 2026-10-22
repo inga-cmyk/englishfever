@@ -1,12 +1,12 @@
 # Question bank update
 
-This update corrects 71 existing questions and adds 48 questions, bringing the active bank from 442 to 490. The existing 24 topics, language levels and six Bloom labels are preserved. This is a targeted correction and variety release, not completion of the planned A1–C2 curriculum.
+This update corrects 72 existing questions and adds 48 questions, bringing the active bank from 442 to 490. The existing 24 topics, language levels and six Bloom labels are preserved. This is a targeted correction and variety release, not completion of the planned A1–C2 curriculum.
 
 ## Student history
 
 Changed questions receive new IDs ending in `-r2`. Their original versions remain in `content/retired.php` and resolve through `Content::item()`. New sessions draw only from the active bank. Existing pending questions and historical attempts still resolve to their original wording and answers. No database migration, historical regrading, XP reset or progress recalculation is performed.
 
-The published ledger contains 561 immutable question versions: 490 active and 71 retired. Tests seed historical attempts, activity, skill statistics and a pending session in an isolated in-memory database and verify they remain unchanged.
+The published ledger contains 562 immutable question versions: 490 active and 72 retired. Tests seed historical attempts, activity, skill statistics and a pending session in an isolated in-memory database and verify they remain unchanged.
 
 ## Variety and feedback
 

@@ -251,11 +251,11 @@ return json_decode(<<<'EF_JSON_END'
 "bloom": 5,
 "kind": "mcq",
 "q": "Choose the correct option.",
-"correct": "Say 'He goes to the gym on Mondays.'",
+"correct": "He goes to the gym on Mondays.",
 "wrong": [
-"Say 'He go to the gym on Mondays.'",
-"Say 'He is go to the gym on Mondays.'",
-"Say 'He going to the gym on Mondays.'"
+"He go to the gym on Mondays.",
+"He is go to the gym on Mondays.",
+"He going to the gym on Mondays."
 ],
 "why": "With *he, she, it* the present simple verb takes *-s* or *-es*: *he goes.*",
 "wrong_why": {},
@@ -4681,17 +4681,17 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*If* daļā nav *will*. Saki: *If I see him, I will tell him.*"
 },
 {
-"id": "cf-A22-5a",
+"id": "cf-A22-5a-r2",
 "skill": "cond_first",
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "A friend writes: 'If I will have time, I will call you.' Choose the correct option.",
-"correct": "Say 'If I have time, I'll call you.'",
+"correct": "If I have time, I'll call you.",
 "wrong": [
-"Say 'If I would have time, I will call you.'",
-"Say 'If I had time, I will call you.'",
-"It is correct. Do not change it."
+"If I would have time, I will call you.",
+"If I had time, I will call you.",
+"If I will have time, I will call you."
 ],
 "why": "After *if* we use the present simple: *If I have time, I'll call you.*",
 "wrong_why": {},

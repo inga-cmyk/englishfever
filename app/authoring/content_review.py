@@ -235,8 +235,8 @@ def revise(original):
         q='Use the past continuous: They ___ TV when I arrived. (watch)')
     # Options must not carry the rule or the verdict: the explanation is shown after the answer.
     fix('ps-A22-5a', 'The correct option explained the rule and a wrong option said it was correct.',
-        correct="Say 'He goes to the gym on Mondays.'",
-        wrong=["Say 'He go to the gym on Mondays.'", "Say 'He is go to the gym on Mondays.'", "Say 'He going to the gym on Mondays.'"])
+        correct='He goes to the gym on Mondays.',
+        wrong=['He go to the gym on Mondays.', 'He is go to the gym on Mondays.', 'He going to the gym on Mondays.'])
     fix('ps-B11-5a', 'The prompt repeats the sentence the options already show; the correct option explained the rule.',
         q='Choose the correct option.', correct="'I want a coffee.'",
         wrong=["'I'm wanting a coffee.'", "'I wanted a coffee now.'", "'I am want a coffee.'"])
@@ -249,4 +249,6 @@ def revise(original):
         wrong=['I have sent the email yesterday.', 'I will send the email yesterday.', 'I was sending the email yesterday.'])
     fix('ppp-B12-2a', 'The continuous option can also be news that is important now; use a clearly future distractor.',
         wrong=['The road was closed in 1999.', 'The road closes every night.', 'The road will close tomorrow.'])
+    fix('cf-A22-5a', 'The options repeated the word Say and one said it was correct; they are now plain sentences.',
+        correct="If I have time, I'll call you.", wrong=['If I would have time, I will call you.', 'If I had time, I will call you.', 'If I will have time, I will call you.'])
     return items

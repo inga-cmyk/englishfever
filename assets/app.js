@@ -1,0 +1,1252 @@
+// English Fever practice app (grammar A2.1 – C1). Single page, hash routes.
+(function () {
+  'use strict';
+  var h = UI.h, icon = UI.icon, api = UI.api;
+  var root = document.getElementById('app');
+  var chrome = document.getElementById('chrome');
+  var footer = document.getElementById('foot');
+
+  var state = {
+    config: null, meta: null, user: null, dash: null,
+    todaySeconds: 0, streak: 0, sess: null, prefill: null, lastInteraction: Date.now(),
+  };
+
+  // ───────── helpers ─────────
+  function areaLabel(id) { var a = state.meta.areas.filter(function (x) { return x.id === id; })[0]; return a ? a.label : id; }
+  /** Features the learning study can hide for a learner (state.user.cond, e.g. {streak: 'off'}). Everyone outside the study sees everything. */
+  function feat(name) { return !(state.user && state.user.cond && state.user.cond[name] === 'off'); }
+  function levelRange(s) { return s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''); }
+  /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
+  function dashboardUrl() { return (state.config && (state.config.dashboard_url || state.config.site_url)) || ''; }
+  // ───── which topics are in reach ─────
+  function levelIdx(l) { return state.meta.levels.indexOf(l); }
+  /** The learner's level: the placement result, else the average of the topic estimates, else unknown (null). */
+  function learnerLevel(d) {
+    if (d && d.placement && d.placement.report && d.placement.report.overall_level) return d.placement.report.overall_level;
+    var est = d ? d.skills.filter(function (s) { return s.level_est; }).map(function (s) { return levelIdx(s.level_est); }) : [];
+    if (!est.length) return null;
+    return state.meta.levels[Math.round(est.reduce(function (a, b) { return a + b; }, 0) / est.length)];
+  }
+  /** Topics whose tasks start more than two sub-levels above the learner (A2.1 while the level is unknown) wait behind a link. Topics already practised always show. */
+  function inReach(s, d) { var l = learnerLevel(d); return s.n > 0 || levelIdx(s.levels[0]) <= (l ? levelIdx(l) : 0) + 2; }
+  function showHigh() { try { return localStorage.getItem('ef_show_high') === '1'; } catch (e) { return false; } }
+  function setShowHigh(v) { try { localStorage.setItem('ef_show_high', v ? '1' : '0'); } catch (e) {} }
+  /** The level to practise a topic at: its own estimate, else the learner's level kept inside the levels the topic has. */
+  function topicLevel(s, d) {
+    if (s.level_est) return s.level_est;
+    var l = learnerLevel(d);
+    if (!l) return s.levels[0];
+    return state.meta.levels[Math.max(levelIdx(s.levels[0]), Math.min(levelIdx(s.levels[s.levels.length - 1]), levelIdx(l)))];
+  }
+  /** One tap: a 10-task session in this topic. */
+  function startTopic(btn, s, d) {
+    btn.disabled = true;
+    api('session/start', { mode: 'practice', skills: [s.id], level: topicLevel(s, d), length: 10 }).then(function (r) {
+      state.sess = newSess(r.session, r.item); location.hash = '#/session';
+    }).catch(function (e) { btn.disabled = false; UI.toast(e.message); });
+  }
+  function openAreas() { try { return JSON.parse(localStorage.getItem('ef_areas') || '{}') || {}; } catch (e) { return {}; } }
+  function rememberArea(id, open) { try { var m = openAreas(); m[id] = open; localStorage.setItem('ef_areas', JSON.stringify(m)); } catch (e) {} }
+  function bloomName(n) { return state.meta.bloom[String(n)].name; }
+  function bloomDots(n) {
+    var d = h('span', { class: 'bloomdots', title: 'Thinking level ' + n + ' of 6: ' + bloomName(n) });
+    for (var i = 1; i <= 6; i++) d.appendChild(h('i', { class: i <= n ? 'on' : '' }));
+    return d;
+  }
+  function skillById(id) { return state.meta.skills.filter(function (s) { return s.id === id; })[0]; }
+  function pct(c, n) { return n ? Math.round(100 * c / n) : 0; }
+  function loading() { return h('div', { class: 'loading', role: 'status' }, h('div', { class: 'spin' }), h('span', { class: 'sr' }, 'Loading')); }
+  function show(node) { if (window.DnD) DnD.clear(); root.replaceChildren(node); window.scrollTo(0, 0); var hd = node.querySelector && node.querySelector('h1'); if (hd) { hd.setAttribute('tabindex', '-1'); hd.focus({ preventScroll: true }); } }
+  function fail(e) {
+    if (e && e.status === 401 && state.user && state.user.role === 'teacher') {
+      return show(h('div', { class: 'card', style: 'max-width:520px;margin:30px auto' }, h('h2', null, 'Please sign in again'), h('p', null, e.message),
+        state.config.wp_login_url ? h('a', { class: 'btn', href: state.config.wp_login_url }, 'Sign in with englishfever.com') : null));
+    }
+    show(h('div', { class: 'card' }, h('h2', null, 'Something went wrong'), h('p', null, e.message || 'Please try again.'), h('a', { class: 'btn', href: '#/home' }, 'Back to home')));
+  }
+  function levelPill(l) { return h('span', { class: 'pill' }, l); }
+
+  // ───────── install on the phone (home screen) ─────────
+  var deferredInstall = null;
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferredInstall = e; });
+  window.addEventListener('appinstalled', function () { deferredInstall = null; var c = document.getElementById('install-card'); if (c) c.remove(); });
+
+  function isStandalone() { return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true; }
+  function isIos() { return /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); }
+  function isPhoneLike() { return (window.matchMedia && window.matchMedia('(max-width: 900px)').matches) || isIos() || /android/i.test(navigator.userAgent); }
+
+  /**
+   * A short card about putting the app on the home screen (phones) or installing it (computers whose browser offers a real install button).
+   * A computer without an install button gets nothing: there is no honest one-line instruction that fits every browser.
+   */
+  function installCard(always) {
+    var phone = isPhoneLike();
+    if (isStandalone() || (!always && !phone)) return null;
+    if (!phone && !deferredInstall) return null;
+    if (!always) { try { if (Date.now() - (+localStorage.getItem('ef_install_hidden') || 0) < 30 * 86400000) return null; } catch (e) {} }
+    var how;
+    if (deferredInstall) {
+      how = h('button', { class: 'btn small', onclick: function () {
+        deferredInstall.prompt(); deferredInstall.userChoice.then(function () { deferredInstall = null; var c = document.getElementById('install-card'); if (c) c.remove(); });
+      } }, 'Install the app');
+    } else if (isIos()) {
+      how = h('span', { class: 'small' }, 'In Safari tap ', h('b', null, 'Share'), ' (the square with an arrow), then ', h('b', null, 'Add to Home Screen'), '.');
+    } else if (/android/i.test(navigator.userAgent)) {
+      how = h('span', { class: 'small' }, 'On your phone, open the browser menu (⋮) and choose ', h('b', null, 'Install app'), ' or ', h('b', null, 'Add to Home screen'), '.');
+    } else {
+      return null;
+    }
+    return h('div', { id: 'install-card', class: 'card pad-s row between', style: 'margin-bottom:16px' },
+      h('div', null, h('b', { style: 'color:var(--text)' }, phone ? 'Add to your phone’s home screen' : 'Install the app on this computer'), h('div', { style: 'margin-top:6px' }, how)),
+      always ? null : h('button', { class: 'linkbtn small', onclick: function () { try { localStorage.setItem('ef_install_hidden', String(Date.now())); } catch (e) {} var c = document.getElementById('install-card'); if (c) c.remove(); } }, 'Not now'));
+  }
+
+  // ───────── registering on the website ─────────
+  // Registration needs an email confirmation, which can take a while. The app remembers the click so a returning
+  // guest sees "Sign in" instead of the sign-up invitation.
+  function regPending() { try { return Date.now() - (+localStorage.getItem('ef_reg') || 0) < 7 * 86400000; } catch (e) { return false; } }
+  function registerLink(cls, label) {
+    return h('a', { class: cls, href: 'register.php', onclick: function () { try { localStorage.setItem('ef_reg', String(Date.now())); } catch (e) {} } }, label);
+  }
+
+  // ───────── boot ─────────
+  function boot() {
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+    Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
+      state.config = r[0]; state.meta = r[1]; state.user = r[2].user; state.welcome = r[2].welcome || null;
+      footer.replaceChildren(
+        h('div', null, state.config.site_url ? h('span', null, h('a', { href: state.config.site_url }, '← englishfever.com'), ' · ') : null, h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener' }, 'Privacy policy'), ' · ',
+          state.config.contact_email ? h('a', { href: 'mailto:' + state.config.contact_email }, state.config.contact_email) : null),
+        h('div', { class: 'small', style: 'margin-top:4px;opacity:.7' }, 'Version ' + (state.config.version || 'dev')));
+      if (state.user) startHeartbeat();
+      if (state.user && !state.user.guest) { try { localStorage.removeItem('ef_reg'); } catch (e) {} }
+      window.addEventListener('hashchange', route);
+      ['pointerdown', 'keydown', 'scroll', 'input'].forEach(function (ev) { window.addEventListener(ev, function () { state.lastInteraction = Date.now(); }, { passive: true }); });
+      route();
+    }).catch(function (e) {
+      var offline = !navigator.onLine || /failed to fetch|network|load failed/i.test(e.message || '');
+      root.replaceChildren(h('div', { class: 'card', style: 'max-width:480px;margin:40px auto;text-align:center' },
+        h('h2', null, offline ? 'You are offline' : 'The app cannot start'),
+        h('p', null, offline ? 'Practice needs an internet connection. Connect and try again.' : e.message),
+        h('button', { class: 'btn', onclick: function () { location.reload(); } }, 'Try again')));
+    });
+  }
+
+  // ───────── time tracking ─────────
+  var hbTimer = null, hbLast = Date.now();
+  function startHeartbeat() {
+    if (hbTimer) return;
+    hbLast = Date.now();
+    hbTimer = setInterval(function () {
+      var now = Date.now();
+      var secs = Math.min(30, Math.round((now - hbLast) / 1000));
+      hbLast = now;
+      if (!state.user || document.visibilityState !== 'visible' || now - state.lastInteraction > 60000 || secs < 1) return;
+      state.todaySeconds += secs;
+      renderChips();
+      api('heartbeat', { seconds: secs }).catch(function () {});
+    }, 10000);
+  }
+
+  function stopHeartbeat() { if (hbTimer) { clearInterval(hbTimer); hbTimer = null; } state.todaySeconds = 0; state.streak = 0; clearHistories(); }
+
+  // ───────── chrome (top bar and mobile tabs) ─────────
+  function renderChrome(active) {
+    if (!state.user) { chrome.replaceChildren(); return; }
+    var teacher = state.user.role === 'teacher';
+    var items = teacher
+      ? [['#/teacher', 'Students', 'users'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
+      : [['#/home', 'Home', 'home'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']];
+    if (!feat('leaderboard')) items = items.filter(function (i) { return i[0] !== '#/leaderboard'; });
+    var nav = h('nav', { class: 'nav', 'aria-label': 'Main' }, items.map(function (i) {
+      return h('a', { href: i[0], 'aria-current': active === i[0] ? 'page' : null }, i[1]);
+    }));
+    var tabs = h('nav', { class: 'tabbar', 'aria-label': 'Main' }, items.map(function (i) {
+      return h('a', { href: i[0], 'aria-current': active === i[0] ? 'page' : null }, i[2] === 'user' ? UI.avatar(state.user.avatar, state.user.nickname, 24) : icon(i[2]), i[1]);
+    }));
+    var chips = h('div', { class: 'chips', id: 'chips' });
+    var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
+      h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
+      nav, h('div', { class: 'spacer' }),
+      dashboardUrl() ? h('a', { class: 'sitelink', target: '_blank', rel: 'noopener', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,
+      h('a', { class: 'avatar-link', href: '#/profile', 'aria-label': 'Your profile' }, UI.avatar(state.user.avatar, state.user.nickname, 32))));
+    chrome.replaceChildren(bar, tabs);
+    renderChips();
+  }
+
+  function renderChips() {
+    var c = document.getElementById('chips');
+    if (!c || !state.user || state.user.role === 'teacher') return;
+    c.replaceChildren(
+      state.user.guest ? h('button', { class: 'chip-top', style: 'background:none;cursor:pointer', title: 'Guest: results are not saved', onclick: function () { guestInvite(true); } }, 'Guest', h('span', { class: 'chip-more' }, ' · save progress')) : null,
+      feat('streak') ? h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), ' day' + (state.streak === 1 ? '' : 's')) : null,
+      h('span', { class: 'chip-top hide-m', title: 'Time practised today' }, icon('clock'), UI.fmtDuration(state.todaySeconds)));
+  }
+
+  function refreshDash() {
+    return api('dashboard').then(function (d) {
+      state.dash = d; state.todaySeconds = d.today.seconds; state.streak = d.streak.current;
+      renderChips();
+      return d;
+    });
+  }
+
+  // ───────── router ─────────
+  function go(hash) { if (location.hash === hash) route(); else location.hash = hash; }
+
+  function route() {
+    var hash = location.hash || '#/';
+    var parts = hash.replace(/^#\/?/, '').split('/');
+    var name = parts[0] || '';
+    if (!state.user) { renderChrome(); return viewWelcome(); }
+    startHeartbeat();
+    var u = state.user;
+    if (!u.nick_set && u.provider === 'wp' && name !== 'nickname') { location.hash = '#/nickname'; return; }
+    if (name === '' || name === 'welcome') { location.hash = u.role === 'teacher' ? '#/teacher' : '#/home'; return; }
+    renderChrome('#/' + name);
+    show(loading());
+    var v = {
+      home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
+      leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
+      nickname: viewNickname, rules: viewRules,
+    }[name];
+    if (name.indexOf('teacher') === 0 && u.role !== 'teacher') { location.hash = '#/home'; return; }
+    (v || viewHome)(parts);
+  }
+
+  // ───────── welcome / sign in ─────────
+  function viewWelcome() {
+    var cfg = state.config;
+    var errBox = h('div');
+    var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'words', spellcheck: 'false', maxlength: '30', placeholder: 'Your name (or a nickname)' });
+    var shownAt = Date.now();
+    var trap = h('input', { type: 'text', name: 'website', id: 'website', tabindex: '-1', autocomplete: 'off' });
+    var guestForm = h('form', { novalidate: true, onsubmit: function (e) {
+      e.preventDefault(); errBox.replaceChildren();
+      var btn = guestForm.querySelector('button[type=submit]'); btn.disabled = true;
+      // The server refuses forms sent within 1.2 s of opening (bots). A fast person just waits a moment, unseen.
+      setTimeout(function () {
+        api('guest', { nickname: nick.value, t: Date.now() - shownAt, website: trap.value }).then(function (r) {
+          state.user = r.user; startHeartbeat(); go('#/home');
+        }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
+      }, Math.max(0, 1300 - (Date.now() - shownAt)));
+    } },
+      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name ', h('span', { class: 'muted', style: 'font-weight:400' }, '(optional)')), nick),
+      h('div', { 'aria-hidden': 'true', style: 'position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden' }, h('label', { for: 'website' }, 'Leave this empty'), trap), // a trap for bots
+      errBox,
+      h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Continue as guest'),
+      null);
+
+    var card = [];
+    if (cfg.sso) {
+      card.push(
+        h('h2', { style: 'text-align:center' }, 'Registered at englishfever.com?'),
+        h('a', { class: 'btn block', href: cfg.wp_login_url }, 'Continue with my account'),
+        h('div', { class: 'or' }, 'or'),
+        h('h2', { style: 'text-align:center' }, 'Try it as a guest'));
+    } else {
+      card.push(h('h2', { style: 'text-align:center' }, 'Start practising'));
+    }
+    card.push(guestForm);
+    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', registerLink('', 'Create a free account')));
+
+    show(h('div', null,
+      h('section', { class: 'hero' },
+        h('div', { class: 'bar' }),
+        h('h1', null, 'Practise English grammar. ', h('em', null, 'Know what to fix next.')),
+        h('p', null, 'Short tasks for adult learners, A2.1 to C1. Clear feedback after every answer.'),
+        h('div', { class: 'points' },
+          h('div', null, h('b', null, 'Placement test'), '24 quick questions.'),
+          h('div', null, h('b', null, 'Your choice'), 'Pick the topics and level.'),
+          h('div', null, h('b', null, 'Real thinking'), 'Spot, judge and write.'))),
+      h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
+  }
+
+  // The invitation shown to guests after practice: create a free account to keep the results.
+  function guestInvite(force) {
+    if (!state.user || !state.user.guest || !state.config) return;
+    if (!force) {
+      try { if (Date.now() - (+localStorage.getItem('ef_invite') || 0) < 86400000) return; } catch (e) {}
+    }
+    try { localStorage.setItem('ef_invite', String(Date.now())); } catch (e) {}
+    var cfg = state.config;
+    var m = UI.modal(h('div', null,
+      h('div', { class: 'label' }, 'Keep your progress'),
+      h('h2', null, 'Save your results with a free account'),
+      h('p', null, 'Guest results are lost if you clear your browser or change device.'),
+      h('div', { class: 'row' },
+        cfg.register_url ? registerLink('btn', 'Create free account') : null,
+        cfg.sso ? h('a', { class: cfg.register_url ? 'btn ghost' : 'btn', href: cfg.wp_login_url }, 'I already have an account') : null,
+        h('button', { class: 'linkbtn', id: 'later' }, 'Not now'))));
+    m.el.querySelector('#later').onclick = m.close;
+  }
+
+  function guestBanner() {
+    var cfg = state.config, pending = regPending();
+    var create = cfg.register_url ? registerLink(pending ? 'btn ghost small' : 'btn small', 'Create account') : null;
+    var signin = cfg.sso ? h('a', { class: (pending || !cfg.register_url) ? 'btn small' : 'btn ghost small', href: cfg.wp_login_url }, 'Sign in') : null;
+    return h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
+      h('div', null, h('b', { style: 'color:var(--text)' }, pending ? 'Account created?' : 'Practising as a guest'),
+        h('div', { class: 'small muted' }, pending ? 'Confirm the email we sent you, then sign in.' : 'Create a free account to keep your results.')),
+      h('div', { class: 'row' }, pending ? [signin, create] : [create, signin]));
+  }
+
+  // ───────── learning study (optional, registered learners only) ─────────
+  // Switched on in config.php. The wording below is a plain default: replace it with the text your ethics review approved
+  // ('research_text' and 'research_text_lv' in config.php, paragraphs separated by an empty line).
+  var STUDY = {
+    en: {
+      title: 'Help with a learning study?', yes: 'Yes, I take part', no: 'No, thanks', later: 'Ask me later', info: 'Read the information sheet',
+      body: ['Inga, the teacher behind English Fever, is researching what helps people keep up regular practice. If you take part, your practice data (when and how often you practise, which tasks you do and how you do) is analysed under a random code, not your name. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Your results and the grammar content stay the same.',
+        'Taking part is optional. By choosing “Yes” you confirm that you are 18 or older, or that a parent or guardian agrees. You can leave at any time on your Profile page; your data is then no longer used.'],
+      label: 'Learning study', joined: 'You are taking part in the learning study. Thank you!', left: 'You are not taking part.', leave: 'Leave the study', join: 'Take part', thanks: 'Thank you for taking part!', byebye: 'You have left the study.',
+    },
+    lv: {
+      title: 'Palīdziet pētījumā?', yes: 'Jā, piedalos', no: 'Nē, paldies', later: 'Vēlāk', info: 'Informācija par pētījumu',
+      body: ['Inga, skolotāja, kas veido English Fever, pēta, kas palīdz cilvēkiem mācīties regulāri. Ja piedalīsieties, jūsu mācību dati (kad un cik bieži mācāties, kādus uzdevumus veicat un kā jums sokas) tiks analizēti ar nejaušu kodu, nevis ar jūsu vārdu. Dažas funkcijas, piemēram, dienu skaitītājs vai līderu saraksts, jums var izskatīties citādi nekā citiem. Jūsu rezultāti un gramatikas saturs paliek tie paši.',
+        'Dalība ir brīvprātīga. Izvēloties “Jā”, jūs apliecināt, ka jums ir 18 gadi vai vairāk, vai ka vecāks vai aizbildnis piekrīt. Jūs varat jebkurā brīdī izstāties savā profila lapā; jūsu dati vairs netiks izmantoti.'],
+      label: 'Mācību pētījums', joined: 'Jūs piedalāties mācību pētījumā. Paldies!', left: 'Jūs nepiedalāties.', leave: 'Izstāties', join: 'Piedalīties', thanks: 'Paldies par dalību!', byebye: 'Jūs izstājāties no pētījuma.',
+    },
+  };
+  function studyTexts() {
+    var lv = state.user && state.user.lang === 'lv', d = STUDY[lv ? 'lv' : 'en'];
+    var custom = lv ? state.config.research_text_lv : state.config.research_text;
+    return { d: d, body: custom ? custom.split(/\n\s*\n/) : d.body };
+  }
+  function studyEligible() { return !!state.user && !state.user.guest && state.user.role === 'student'; }
+  function setStudy(join) {
+    return api('account/research', { join: join }).then(function (r) { state.user = r.user; renderChrome(location.hash.split('/').slice(0, 2).join('/')); return r; });
+  }
+  function studyLater() { try { return Date.now() - (+localStorage.getItem('ef_study_later') || 0) < 7 * 86400000; } catch (e) { return false; } }
+
+  /** The invitation on the home page: once per learner, "Ask me later" waits a week. */
+  function studyPrompt() {
+    if (!state.config.research || !studyEligible() || state.user.research !== 0 || studyLater()) return null;
+    var t = studyTexts(), d = t.d, msg = h('div');
+    function answer(join) {
+      setStudy(join).then(function () { UI.toast(join ? d.thanks : d.byebye); route(); }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    }
+    return h('div', { class: 'card', style: 'margin-bottom:16px;border-color:var(--gold)' },
+      h('div', { class: 'label' }, d.label), h('h2', null, d.title),
+      t.body.map(function (p) { return h('p', null, p); }),
+      state.config.research_info_url ? h('p', null, h('a', { href: state.config.research_info_url, target: '_blank', rel: 'noopener' }, d.info)) : null,
+      msg,
+      h('div', { class: 'row' },
+        h('button', { class: 'btn', onclick: function () { answer(true); } }, d.yes),
+        h('button', { class: 'btn ghost', onclick: function () { answer(false); } }, d.no),
+        h('button', { class: 'linkbtn', onclick: function (e) { try { localStorage.setItem('ef_study_later', String(Date.now())); } catch (er) {} e.target.closest('.card').remove(); } }, d.later)));
+  }
+
+  /** On the profile page: shows the state and lets the learner join or leave at any time. */
+  function studyProfileCard() {
+    if (!studyEligible() || !(state.config.research || state.user.research === 1)) return null;
+    var t = studyTexts(), d = t.d, msg = h('div');
+    var joined = state.user.research === 1;
+    function change(join) {
+      setStudy(join).then(function () { UI.toast(join ? d.thanks : d.byebye); viewProfile(); }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    }
+    return h('div', { class: 'card' }, h('h2', null, d.label),
+      h('p', null, joined ? d.joined : d.left),
+      joined ? null : [t.body.map(function (p) { return h('p', { class: 'small muted' }, p); }),
+        state.config.research_info_url ? h('p', { class: 'small' }, h('a', { href: state.config.research_info_url, target: '_blank', rel: 'noopener' }, d.info)) : null],
+      msg,
+      joined ? h('button', { class: 'btn ghost small', onclick: function () { change(false); } }, d.leave)
+        : h('button', { class: 'btn small', onclick: function () { change(true); } }, d.join));
+  }
+
+  // ───────── home ─────────
+  // A quiet page: a greeting, ONE thing to do now, three small links and one muted line. The streak and the time practised today are
+  // already in the top bar; the topics and the progress charts are one tap away (folded, and the choice is remembered on the device).
+  function viewHome() {
+    if (state.user.role === 'teacher') { location.hash = '#/teacher'; return; }
+    Promise.all([refreshDash(), api('session/resume')]).then(function (r) {
+      var d = r[0], resume = r[1].resume;
+      var started = d.totals.answers > 0;
+      var rep = d.placement && d.placement.report;
+      var nodes = [];
+      if (state.user.guest) nodes.push(guestBanner());
+      if (state.welcome) {
+        var wl = state.welcome;
+        nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--good)' },
+          h('div', null, h('b', { style: 'color:var(--text)' }, 'Your account is ready'),
+            h('div', { class: 'small muted' }, 'Guest results moved over: ' + wl.answers + ' tasks, ' + wl.xp + ' XP.')),
+          h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
+      }
+      nodes.push(h('div', { class: 'hello' },
+        h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 48),
+          h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
+            h('p', { class: 'muted' }, !started ? 'Short grammar tasks that adapt to you.' : d.streak.today_done ? 'You practised today. Nice work!'
+              : (!feat('streak') ? 'Do a few tasks today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.')))))));
+
+      // the one thing to do now
+      var main, mainBtn;
+      if (resume) {
+        mainBtn = h('button', { class: 'btn pulse', onclick: function () { state.sess = newSess(resume.session, resume.item); location.hash = '#/session'; } }, 'Continue', icon('arrow'));
+        main = [h('h2', null, 'Continue where you stopped'),
+          h('p', { class: 'muted' }, (resume.session.mode === 'placement' ? 'Placement test: ' : 'Practice session: ') + resume.session.n + ' of ' + resume.session.length + ' done.'), mainBtn];
+      } else if (!started) {
+        mainBtn = h('a', { class: 'btn pulse', href: '#/placement' }, 'Find my level', icon('arrow'));
+        main = [h('h2', null, 'Start here'), h('p', { class: 'muted' }, 'A short test (5 to 18 minutes) shows where to begin.'), mainBtn];
+      } else {
+        mainBtn = surpriseButton('btn pulse', 'Practise now');
+        main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'A short session picked from your own mistakes.'), mainBtn];
+      }
+      var links = h('p', { class: 'homelinks' },
+        h('a', { href: '#/practice' }, 'Choose topics'),
+        (!started && !resume) ? null : (rep ? h('button', { type: 'button', class: 'linkbtn', onclick: function () { showPlacementReport(rep); } }, 'Placement result') : h('a', { href: '#/placement' }, 'Placement test')),
+        h('a', { href: '#/rules' }, 'Rule cards'),
+        (!state.user.guest && dashboardUrl()) ? h('a', { class: 'only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null);
+      nodes.push(h('div', { class: 'card focus' }, main, links));
+      if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
+      var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
+      if (invite) nodes.push(invite);
+
+      var ic = started ? installCard(false) : null; if (ic) nodes.push(ic);
+      var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
+      nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
+      if (started) {
+        nodes.push(foldCard('progress', 'My progress', 'this week and thinking skills', function () {
+          return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'Your thinking skills'), bloomBars(d.bloom)));
+        }));
+      }
+      show(h('div', { class: 'home' }, nodes));
+    }).catch(fail);
+  }
+
+  /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
+  function foldCard(key, title, hint, body) {
+    var saved = {}; try { saved = JSON.parse(localStorage.getItem('ef_home') || '{}') || {}; } catch (e) {}
+    var inner = h('div', { class: 'fold-body' });
+    var det = h('details', { class: 'card fold', open: !!saved[key] }, h('summary', null, h('span', { class: 'h3' }, title), h('span', { class: 'small muted' }, hint)), inner);
+    function fill() { if (!inner.firstChild) inner.appendChild(body()); }
+    if (det.open) fill();
+    det.addEventListener('toggle', function () {
+      if (det.open) fill();
+      saved[key] = det.open ? 1 : 0; try { localStorage.setItem('ef_home', JSON.stringify(saved)); } catch (e) {}
+    });
+    return det;
+  }
+
+  /** "Surprise me": the server picks topics from the learner's own mistakes and gaps. */
+  function surpriseButton(cls, label) {
+    var b = h('button', { class: cls, type: 'button', onclick: function () {
+      b.disabled = true;
+      api('session/start', { mode: 'smart', length: 12 }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+        .catch(function (e) { b.disabled = false; UI.toast(e.message); });
+    } }, icon('bolt'), label || 'Surprise me');
+    return b;
+  }
+
+  function stat(ic, v, k, cls) {
+    return h('div', { class: 'card pad-s stat ' + (cls || '') }, h('div', { class: 'v' }, icon(ic), String(v)), h('div', { class: 'k' }, k));
+  }
+
+  function weekChart(week) {
+    var max = Math.max.apply(null, week.map(function (w) { return w.seconds; }).concat([60]));
+    var today = week[week.length - 1].day;
+    return h('div', { class: 'bars', role: 'img', 'aria-label': 'Minutes practised in the last 7 days' }, week.map(function (w) {
+      var dt = new Date(w.day + 'T12:00:00');
+      return h('div', { class: 'b' }, h('div', { class: 'm' }, w.seconds ? String(Math.max(1, Math.round(w.seconds / 60))) : ''),
+        h('div', { class: 'col' + (w.day === today ? ' today' : ''), style: 'height:' + Math.max(3, Math.round(70 * w.seconds / max)) + 'px' }),
+        h('div', { class: 'd' }, dt.toLocaleDateString(undefined, { weekday: 'short' }).slice(0, 2)));
+    }));
+  }
+
+  function bloomBars(b) {
+    return h('div', { class: 'hbars' }, [1, 2, 3, 4, 5, 6].map(function (i) {
+      var v = b[String(i)];
+      return h('div', { class: 'hbar' }, h('span', { class: 'nm' }, bloomName(i)),
+        h('div', { class: 'meter' }, h('i', { style: 'width:' + (v ? pct(v.correct, v.n) : 0) + '%' })),
+        h('span', { class: 'vl' }, v ? pct(v.correct, v.n) + '%' : '–'));
+    }));
+  }
+
+  /** "Your topics" on Home: fold-away areas, only the topics in reach, a link for the rest. */
+  function topicsCard(d) {
+    var holder = h('div');
+    // the area practised last is open; the others stay folded until the learner opens them (and the choice is remembered)
+    var latest = d.skills.slice().sort(function (a, b) { return b.last - a.last; })[0];
+    var openArea = (latest && latest.last) ? latest.area : state.meta.areas[0].id;
+    function draw() {
+      var high = showHigh(), hidden = 0, saved = openAreas();
+      var areas = state.meta.areas.map(function (a) {
+        var all = d.skills.filter(function (s) { return s.area === a.id; });
+        var list = all.filter(function (s) { return high || inReach(s, d); });
+        hidden += all.length - list.length;
+        if (!list.length) return null;
+        var started = list.filter(function (s) { return s.n > 0; }).length;
+        var det = h('details', { class: 'area-fold', open: (a.id in saved) ? !!saved[a.id] : a.id === openArea },
+          h('summary', null, h('span', { class: 'h3' }, a.label), h('span', { class: 'small muted' }, started + ' of ' + list.length + ' started')),
+          h('div', { class: 'skillgrid' }, list.map(function (s) { return skillCard(s, d); })));
+        det.addEventListener('toggle', function () { rememberArea(a.id, det.open); });
+        return det;
+      });
+      holder.replaceChildren.apply(holder, areas.concat([highLink(hidden, high, draw)]));
+    }
+    draw();
+    return holder;
+  }
+
+  /** The link under a topic list: show or hide the topics that are well above the learner's level. */
+  function highLink(hidden, high, redraw) {
+    if (!hidden && !high) return null;
+    return h('p', { style: 'margin:14px 0 0' }, h('button', { type: 'button', class: 'linkbtn small', onclick: function () { setShowHigh(!high); redraw(); } },
+      high ? 'Hide topics for higher levels' : 'Show topics for higher levels (' + hidden + ')'));
+  }
+
+  function skillCard(s, d) {
+    var go = h('button', { class: 'btn ghost small', type: 'button', onclick: function () { startTopic(go, s, d); } }, 'Practise');
+    return h('div', { class: 'skill' },
+      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, levelRange(s))),
+        s.level_est ? h('span', { class: 'pill dark', title: 'Your estimated level in this topic' }, '≈ ' + s.level_est) : h('span', { class: 'pill' }, s.n ? 'Started' : 'New')),
+      h('div', { class: 'meter gold', 'aria-label': 'Accuracy' }, h('i', { style: 'width:' + (s.accuracy || 0) + '%' })),
+      h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.n + ' done · ' + s.accuracy + '% correct' : 'Not started'),
+        h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' },
+          h('button', { class: 'linkbtn small', type: 'button', title: 'Choose the level and the number of tasks', onclick: function () { state.prefill = { skills: [s.id], level: topicLevel(s, d) }; location.hash = '#/practice'; } }, 'Options'),
+          go)));
+  }
+
+  // ───────── placement ─────────
+  function viewPlacementIntro() {
+    var sizes = [[12, 'Quick', 'about 5 minutes'], [24, 'Medium', 'about 10 minutes'], [40, 'Full', 'about 18 minutes']];
+    var size = 24;
+    var go = h('button', { class: 'btn', id: 'go' }, 'Start the test');
+    var seg = h('div', { class: 'sizes', role: 'radiogroup', 'aria-label': 'Test length' }, sizes.map(function (z) {
+      return h('label', { class: 'size' }, h('input', { type: 'radio', name: 'sz', value: String(z[0]), checked: z[0] === size, onchange: function () { size = z[0]; } }),
+        h('span', null, h('b', null, z[1]), h('span', { class: 'muted' }, z[0] + ' questions'), h('span', { class: 'small muted' }, z[2])));
+    }));
+    show(h('div', { class: 'sess' }, h('div', { class: 'card' },
+      h('div', { class: 'label' }, 'Placement test'), h('h1', null, 'Find your starting point'),
+      h('p', null, 'The questions adapt to your answers.'), seg,
+      h('div', { class: 'row', style: 'margin-top:16px' }, go, h('a', { class: 'btn ghost', href: '#/home' }, 'Not now')))));
+    go.addEventListener('click', function () {
+      this.disabled = true;
+      api('session/start', { mode: 'placement', length: size }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
+    });
+  }
+
+  // ───────── practice picker ─────────
+  function viewPractice() {
+    if (!state.dash) { var pf = state.prefill; return refreshDash().then(function () { state.prefill = pf; viewPractice(); }).catch(fail); }
+    var d = state.dash;
+    var pre = state.prefill; state.prefill = null;
+    var guess = (d && d.placement && d.placement.report) ? d.placement.report.overall_level : 'A2.2';
+    var selected = {};
+    (pre ? pre.skills : []).forEach(function (s) { selected[s] = true; });
+    var level = pre ? pre.level : guess;
+    var length = 10;
+    var note = h('div', { class: 'small muted', 'aria-live': 'polite' });
+    var startBtn = h('button', { class: 'btn', disabled: true }, 'Start practice');
+    var err = h('div');
+
+    function checkbox(s) {
+      var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; update(); } });
+      return h('label', null, inp, h('span', null, s.label, ' ', h('small', null, levelRange(s))));
+    }
+    var closed = {};
+    function group(area) {
+      var every = state.meta.skills.filter(function (s) { return s.area === area.id; });
+      var dashOf = function (s) { return d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }; };
+      var list = every.filter(function (s) { return showHigh() || selected[s.id] || inReach(dashOf(s), d); });
+      if (!list.length) return null;
+      var n = list.filter(function (s) { return selected[s.id]; }).length;
+      var det = h('details', { class: 'picker-group', open: !closed[area.id] },
+        h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', 'data-cnt': area.id, style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
+        h('div', { class: 'row', style: 'margin:6px 0 8px' }, h('button', { class: 'linkbtn small', type: 'button', onclick: function () { list.forEach(function (s) { selected[s.id] = true; }); redraw(); } }, 'Select all')),
+        h('div', { class: 'chipsel', role: 'group', 'aria-label': area.label }, list.map(checkbox)));
+      det.addEventListener('toggle', function () { closed[area.id] = !det.open; });
+      return det;
+    }
+    function update() {
+      var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
+      startBtn.disabled = ids.length === 0;
+      holder.querySelectorAll('[data-cnt]').forEach(function (el) {
+        var n = state.meta.skills.filter(function (s) { return s.area === el.getAttribute('data-cnt') && selected[s.id]; }).length;
+        el.textContent = n + ' chosen'; el.style.display = n ? '' : 'none';
+      });
+      var low = ids.map(skillById).filter(function (s) { return s.levels.indexOf(level) < 0; });
+      note.textContent = low.length ? low.length + (low.length === 1 ? ' topic has' : ' topics have') + ' no tasks at ' + level + '. The nearest level is used.' : '';
+    }
+    var holder = h('div');
+    function redraw() {
+      var hiddenN = state.meta.skills.filter(function (s) { return !(showHigh() || selected[s.id] || inReach(d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }, d)); }).length;
+      holder.replaceChildren.apply(holder, state.meta.areas.map(group).concat([
+        highLink(hiddenN, showHigh(), redraw),
+        h('div', { class: 'picker-group' }, h('h3', null, 'Level'),
+          h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Level' }, state.meta.levels.map(function (l) {
+            return h('label', null, h('input', { type: 'radio', name: 'lv', value: l, checked: l === level, onchange: function () { level = l; update(); } }), h('span', null, l));
+          }))),
+        h('div', { class: 'picker-group' }, h('h3', null, 'Length'),
+          h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of tasks' }, [10, 15, 20].map(function (n) {
+            return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, n + ' tasks'));
+          })))]));
+      update();
+    }
+    startBtn.addEventListener('click', function () {
+      startBtn.disabled = true;
+      var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
+      api('session/start', { mode: 'practice', skills: ids, level: level, length: length }).then(function (r) {
+        state.sess = newSess(r.session, r.item); location.hash = '#/session';
+      }).catch(function (e) { startBtn.disabled = false; err.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    });
+    redraw();
+    show(h('div', { class: 'sess' }, h('div', { class: 'card' },
+      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), surpriseButton('btn ghost small')),
+      holder, note, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
+        h('a', { class: 'btn ghost', href: '#/placement' }, 'Take the placement test instead')))));
+  }
+
+  // ───────── session ─────────
+  // A blank grows with what is typed, so a long answer such as "has been being repaired" is always fully visible.
+  var measure = document.createElement('canvas').getContext('2d');
+  function fitBlank(inp) {
+    var cs = getComputedStyle(inp), fs = parseFloat(cs.fontSize) || 16;
+    measure.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+    var pad = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight) + parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
+    inp.style.width = Math.ceil(Math.max(9.5 * fs, measure.measureText(inp.value).width + pad + 14)) + 'px';
+  }
+  function growBox(ta) { ta.style.height = 'auto'; ta.style.height = Math.max(ta.scrollHeight, 110) + 'px'; }
+
+  // The tasks answered so far in this session are kept so the learner can look back at them (read-only: an answer is
+  // already recorded and decides the next task). They survive a reload in the same tab and are gone when the tab closes.
+  function histKey(id) { return 'ef_hist_' + id; }
+  function loadHistory(id) { try { var v = JSON.parse(sessionStorage.getItem(histKey(id)) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
+  function saveHistory(S) { try { sessionStorage.setItem(histKey(S.session.id), JSON.stringify(S.history)); } catch (e) {} }
+  function clearHistories() { try { Object.keys(sessionStorage).forEach(function (k) { if (k.indexOf('ef_hist_') === 0) sessionStorage.removeItem(k); }); } catch (e) {} }
+  /** curN: number of the task this object stands for (0-based); it does not change when the answer comes back. */
+  function newSess(session, item, history) { return { session: session, item: item, curN: session.n, startedAt: Date.now(), result: null, last: null, history: history || loadHistory(session.id) }; }
+
+  /** rv: number of an earlier task to look back at (read-only); none = the current task. */
+  function viewSession(rv) {
+    var S = state.sess;
+    if (!S) { return api('session/resume').then(function (r) { if (r.resume) { state.sess = newSess(r.resume.session, r.resume.item); viewSession(); } else location.hash = '#/home'; }).catch(fail); }
+    var H = S.history || (S.history = []);
+    var entry = function (n) { return H.filter(function (e) { return e.n === n; })[0] || null; };
+    var rev = (rv === undefined || rv === null) ? null : entry(rv);   // an earlier task, looked at again
+    var reviewing = !!rev;
+    var answeredNow = !reviewing && !!S.last && !!entry(S.curN);       // the current task, already answered, feedback still on screen
+    if (answeredNow) rev = entry(S.curN);
+    var at = rev ? rev.n : S.curN;                                   // number of the task on screen (0-based)
+    var it = rev ? rev.item : S.item, ses = S.session;
+    var answerGetter, canSubmit = function () { return false; };
+    var submit = h('button', { class: 'btn', disabled: true }, 'Check answer');
+    var area = h('div');
+    var qEl = h('div', { class: 'q' });
+    var inputs = [];
+    var chosen = null;
+    var board = null; // a drag-and-drop board (word order, matching or word-bank gap)
+
+    function ready() { submit.disabled = !canSubmit(); }
+
+    if (it.kind === 'mcq') {
+      qEl.textContent = it.q;
+      var wrap = h('div', { class: 'opts', role: 'radiogroup', 'aria-label': 'Answer options' });
+      it.options.forEach(function (o, i) {
+        var inp = h('input', { type: 'radio', name: 'opt', value: o, id: 'o' + i, onchange: function () { chosen = o; ready(); } });
+        wrap.appendChild(h('label', { class: 'opt', for: 'o' + i, 'data-opt': o }, inp, h('span', { class: 'mark' }), h('span', null, o)));
+      });
+      area.appendChild(wrap);
+      answerGetter = function () { return chosen; };
+      canSubmit = function () { return chosen !== null; };
+    } else if (it.kind === 'order' || it.kind === 'match' || (it.kind === 'gap' && it.bank)) {
+      if (it.kind === 'order') { qEl.textContent = it.q; board = DnD.order(it.tokens, ready); }
+      else if (it.kind === 'match') { qEl.textContent = it.q; board = DnD.match(it.lefts, it.rights, ready); }
+      else { board = DnD.bankGap(it.q, it.bank, ready); qEl = board.sentence; area.appendChild(h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
+      area.appendChild(board.el);
+      answerGetter = board.answer; canSubmit = board.complete;
+    } else if (it.kind === 'gap') {
+      var parts = it.q.split('___');
+      parts.forEach(function (p, i) {
+        qEl.appendChild(document.createTextNode(p));
+        if (i < parts.length - 1) {
+          var inp = h('input', { type: 'text', class: 'blank', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': 'Answer ' + (i + 1), oninput: function (e) { fitBlank(e.target); ready(); } });
+          inputs.push(inp); qEl.appendChild(inp);
+        }
+      });
+      answerGetter = function () { return inputs.map(function (i) { return i.value; }); };
+      canSubmit = function () { return inputs.every(function (i) { return i.value.trim() !== ''; }); };
+    } else if (it.kind === 'text') {
+      qEl.textContent = it.q;
+      var t = h('input', { type: 'text', class: 'type-in', autocomplete: 'off', autocapitalize: 'sentences', spellcheck: 'false', placeholder: 'Type your answer', 'aria-label': 'Your answer', oninput: ready });
+      inputs.push(t); area.appendChild(t);
+      answerGetter = function () { return t.value; };
+      canSubmit = function () { return t.value.trim() !== ''; };
+    } else {
+      qEl.textContent = it.q;
+      var ta = h('textarea', { class: 'write', placeholder: 'Write your answer here', 'aria-label': 'Your answer', spellcheck: 'true', oninput: function (e) { growBox(e.target); ready(); } });
+      inputs.push(ta); area.appendChild(ta);
+      answerGetter = function () { return ta.value; };
+      canSubmit = function () { return ta.value.trim().split(/\s+/).length >= 2; };
+    }
+
+    inputs.forEach(function (i) {
+      if (i.tagName === 'INPUT') i.addEventListener('keydown', function (e) { if (e.key === 'Enter' && canSubmit()) { e.preventDefault(); doSubmit(); } });
+    });
+
+    var feedback = h('div', { 'aria-live': 'polite' });
+    var taskStart = Date.now();
+
+    function doSubmit() {
+      if (!canSubmit() || submit.disabled) return;
+      submit.disabled = true;
+      var ans = answerGetter();
+      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, time_ms: Date.now() - taskStart }).then(function (r) {
+        S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
+        S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
+        lock(); showFeedback(r, ans); drawDots(); drawPrev();
+        Sound.play(r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
+        if (r.done) S.summary = r.summary;
+      }).catch(function (e) {
+        submit.disabled = false;
+        if (e.status === 409) { api('session/resume').then(function (x) { if (x.resume) { state.sess = newSess(x.resume.session, x.resume.item); viewSession(); } else { location.hash = '#/home'; } }); return; }
+        feedback.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message));
+      });
+    }
+    submit.addEventListener('click', doSubmit);
+
+    function lock() {
+      inputs.forEach(function (i) { i.disabled = true; i.readOnly = true; });
+      area.querySelectorAll('input[type=radio]').forEach(function (r) { r.disabled = true; });
+      if (board) board.lock();
+      submit.remove();
+    }
+
+    function showFeedback(r, ans) {
+      var res = r.result;
+      if (it.kind === 'mcq') {
+        var wrap = area.querySelector('.opts'); wrap.classList.add('locked');
+        wrap.querySelectorAll('.opt').forEach(function (l) {
+          var o = l.getAttribute('data-opt');
+          if (o === res.show) l.classList.add('right'); else if (o === chosen) l.classList.add('wrong');
+        });
+      }
+      if (board) board.mark(it.kind === 'match' ? res.marks : res.correct);
+      drawFeedback(r, ans, true);
+      var prog = document.getElementById('prog');
+      if (prog) prog.style.width = Math.round(100 * ses.n / ses.length) + '%';
+    }
+
+    // The explanation can be shown in English or Latvian (up to B1.2). The learner's choice is remembered.
+    function drawFeedback(r, ans, first) {
+      var res = r.result;
+      var hasLv = !!res.why_lv;
+      var lv = hasLv && state.user.lang === 'lv';
+      var good = res.correct;
+      var cheers = ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
+      var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
+      var tips = (good && res.notes) ? res.notes : [];
+      var langBtn = hasLv ? h('button', { type: 'button', class: 'linkbtn small', style: 'margin-left:12px', onclick: function () {
+        state.user.lang = lv ? 'en' : 'lv';
+        api('account/profile', { lang: state.user.lang }).catch(function () {});
+        drawFeedback(r, ans, false);
+      } }, lv ? 'English' : 'Latviski') : null;
+      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (it.kind === 'write' ? 'Almost – check these points' : (res.near ? 'Almost – one word to check' : 'Not quite')),
+        langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
+
+      if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
+      if (!good && (it.kind === 'gap' || it.kind === 'text')) {
+        var given = Array.isArray(ans) ? ans.join(' / ') : ans;
+        fb.appendChild(h('p', null, h('b', null, lv ? 'Tu uzrakstīji: ' : 'You wrote: '), given));
+      }
+      if (!good && it.kind === 'order') fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), (ans || []).join(' ')));
+      var spec = lv && res.specific_lv ? res.specific_lv : res.specific;
+      if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), UI.rich(spec)));
+      if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
+      var why = lv ? res.why_lv : res.why;
+      if (it.kind === 'write') {
+        fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Piemēra atbilde: ' : 'Model answer: '), res.show));
+        fb.appendChild(h('p', null, UI.rich(why)));
+      } else {
+        if (it.kind === 'match') {
+          if (!good && res.pairs) fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Pareizi: ' : 'Correct pairs: '),
+            h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
+        } else if (!good || it.kind !== 'mcq') {
+          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), res.show));
+        }
+        fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
+      }
+      fb.appendChild(ruleDetails(res.skill, !good, lv));
+
+      var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next task';
+      var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
+      if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
+        var older = olderOf(at), newer = H.filter(function (e) { return e.n > at; }).sort(function (a, b) { return a.n - b.n; })[0];
+        fb.appendChild(h('div', { class: 'nextrow' },
+          h('span', { class: 'row', style: 'gap:8px' },
+            older ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(older.n); } }, '‹ Previous') : null,
+            newer ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(newer.n); } }, 'Next ›') : null),
+          h('button', { class: 'btn', onclick: function () { viewSession(); } }, S.last ? 'Back to task ' + (S.curN + 1) + ' feedback' : 'Back to task ' + (S.curN + 1), icon('arrow'))));
+        var wasOpenR = feedback.querySelector('details.rule[open]');
+        feedback.replaceChildren(fb);
+        if (wasOpenR) { var dr = fb.querySelector('details.rule'); if (dr) dr.open = true; }
+        return;
+      }
+      var adaptNote = null;
+      if (!r.done && ses.mode === 'practice' && ses.phase !== 'diagnostic' && res.adapt !== 'same') {
+        adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? 'Next: a bit harder' : 'Next: a bit easier');
+      } else if (!r.done && ses.mode === 'practice' && ses.phase === 'diagnostic') {
+        adaptNote = h('span', { class: 'adapt' }, 'Quick check: ' + Math.min(3, ses.n) + ' of 3');
+      }
+      fb.appendChild(h('div', { class: 'nextrow' }, adaptNote || h('span'), nextBtn));
+      var wasOpen = feedback.querySelector('details.rule[open]');
+      feedback.replaceChildren(fb);
+      if (wasOpen) { var d = fb.querySelector('details.rule'); if (d) d.open = true; }
+      if (first) nextBtn.focus();
+    }
+    var lastCheer = null;
+
+    function next(r) {
+      if (r.done) { state.sess = null; state.lastSummary = r.summary; Sound.play('done'); go('#/summary'); return; }
+      state.sess = newSess(r.session, r.next, S.history);
+      viewSession();
+    }
+
+    function olderOf(n) { return H.filter(function (e) { return e.n < n; }).sort(function (a, b) { return b.n - a.n; })[0] || null; }
+    var dotsEl = h('div', { class: 'dots', role: 'group', 'aria-label': 'Tasks in this session' });
+    function drawDots() {
+      if (!H.length) { dotsEl.replaceChildren(); return; }
+      var items = [];
+      for (var i = 0; i < ses.length; i++) {
+        (function (i) {
+          var e = entry(i), on = i === at, isCur = i === S.curN;
+          var label = 'Task ' + (i + 1) + (e ? (e.result.correct ? ', correct' : ', not correct') + (on ? ', shown now' : ', look back') : (isCur ? ', the task you are on' : ', not done yet'));
+          items.push(h('button', { type: 'button', class: 'dot' + (e ? (e.result.correct ? ' good' : ' bad') : '') + (on ? ' now' : ''), 'aria-label': label, title: 'Task ' + (i + 1), 'aria-current': on ? 'step' : null, disabled: !e && !isCur,
+            onclick: function () { if (isCur) { if (reviewing) viewSession(); } else if (e) viewSession(i); } }, String(i + 1)));
+        })(i);
+      }
+      dotsEl.replaceChildren.apply(dotsEl, items);
+    }
+    var prevSlot = h('span');
+    function drawPrev() {
+      var o = olderOf(at);
+      prevSlot.replaceChildren(o ? h('button', { class: 'linkbtn small', onclick: function () { viewSession(o.n); } }, '‹ Previous') : null);
+    }
+
+    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice');
+    var done = ses.n;
+    drawDots(); drawPrev();
+    show(h('div', { class: 'sess' },
+      h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Task ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
+        h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, soundButton(), h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
+      h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(ses.length), 'aria-valuenow': String(done) }, h('i', { id: 'prog', style: 'width:' + Math.round(100 * done / ses.length) + '%' })),
+      dotsEl,
+      h('div', { class: 'card task' },
+        h('h1', { class: 'sr' }, 'Task ' + (at + 1)),
+        h('div', { class: 'meta' }, h('span', { class: 'pill dark' }, it.skill_label), levelPill(it.level),
+          h('span', { class: 'pill', title: state.meta.bloom[String(it.bloom)].desc }, bloomName(it.bloom), ' ', bloomDots(it.bloom))),
+        qEl, area, h('div', { class: 'row' }, submit), feedback)));
+    if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
+      var a = rev.ans;
+      if (it.kind === 'mcq') area.querySelectorAll('input[type=radio]').forEach(function (r) { if (r.value === a) { r.checked = true; chosen = a; } });
+      else if (board) board.set(a);
+      else if (it.kind === 'gap') inputs.forEach(function (inp, i) { inp.value = (a && a[i]) || ''; fitBlank(inp); });
+      else if (inputs[0]) { inputs[0].value = a || ''; if (it.kind === 'write') growBox(inputs[0]); }
+      lock(); showFeedback(answeredNow ? S.last : { result: rev.result, done: false }, a);
+      return;
+    }
+    var first = inputs[0] || (area.querySelector('input[type=radio]'));
+    if (first && it.kind !== 'mcq') first.focus();
+  }
+
+  function stopSession(ses) {
+    var m = UI.modal(h('div', null, h('h2', null, 'Stop now?'), h('p', null, 'Your answers so far are saved.'),
+      h('div', { class: 'row' }, h('button', { class: 'btn', id: 'yes' }, 'Stop and see result'), h('button', { class: 'btn ghost', id: 'no' }, 'Keep going'))));
+    m.el.querySelector('#no').onclick = m.close;
+    m.el.querySelector('#yes').onclick = function () {
+      m.close();
+      api('session/quit', { session_id: ses.id }).then(function (r) {
+        state.sess = null; state.lastSummary = r.summary; go('#/summary');
+      }).catch(fail);
+    };
+  }
+
+  function ruleDetails(skillId, open, lv) {
+    var s = skillById(skillId); if (!s) return h('span');
+    return h('details', { class: 'rule', open: false }, h('summary', null, (lv && s.rule_lv ? 'Atgādinājums: ' : 'Rule reminder: ') + s.label), ruleCard(s, lv));
+  }
+
+  function ruleCard(s, lv) {
+    var r = lv && s.rule_lv ? s.rule_lv : s.rule, l = lv && s.rule_lv;
+    return h('div', { class: 'rulecard' },
+      h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('ul', null, r.form.map(function (x) { return h('li', null, UI.rich(x)); })),
+      h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, UI.rich(x)); })),
+      h('p', { class: 'small' }, h('b', null, l ? 'Signālvārdi: ' : 'Signal words: '), UI.rich(r.signals)),
+      h('div', { class: 'ex' }, h('b', null, l ? 'Piemērs: ' : 'Example: '), UI.rich(s.rule.example)));
+  }
+
+  // ───────── summary ─────────
+  function viewSummary() {
+    var s = state.lastSummary;
+    if (!s) { location.hash = '#/home'; return; }
+    setTimeout(function () { if (location.hash === '#/summary') guestInvite(false); }, 700);
+    if (s.mode === 'placement') return summaryPlacement(s);
+    var nodes = [];
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
+      h('div', { class: 'label' }, 'Practice finished'), h('h1', null, s.accuracy >= 80 ? 'Great work!' : (s.accuracy >= 50 ? 'Good effort!' : 'Keep going – this is how you learn.')),
+      h('div', { class: 'grid g3' },
+        h('div', null, h('div', { class: 'big' }, s.correct + '/' + s.n), h('div', { class: 'muted small' }, 'correct')),
+        h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),
+        h('div', null, h('div', { class: 'big' }, s.accuracy + '%'), h('div', { class: 'muted small' }, 'accuracy')))));
+    nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
+      h('div', { class: 'card' }, h('h2', null, 'By topic'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
+        return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)),
+          h('div', { class: 'meter gold', style: 'margin:6px 0 3px' }, h('i', { style: 'width:' + pct(k.correct, k.n) + '%' })), h('span', { class: 'small muted' }, k.correct + ' of ' + k.n + ' correct'));
+      }))),
+      h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
+    var steps = s.next || [];
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'What next?'),
+      h('ul', { class: 'clean' }, steps.length ? steps.map(function (n) {
+        return h('li', { style: 'margin-bottom:10px' }, h('div', { class: 'row between' }, h('span', null, n.text),
+          n.type === 'review' ? h('button', { class: 'btn ghost small', onclick: function () { rulesModal(n.skill); } }, 'Rule card')
+            : h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: state.lastSkills || s.by_skill.map(function (k) { return k.id; }), level: n.level }; location.hash = '#/practice'; } }, 'Try ' + n.level)));
+      }) : h('li', null, (feat('streak') ? 'Do another round to build your streak and see your level move.' : 'Do another round to see your level move.')))));
+    nodes.push(h('div', { class: 'row' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.by_skill.map(function (k) { return k.id; }), level: s.level }; location.hash = '#/practice'; } }, 'Practise again'), h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
+    show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
+  }
+
+  function summaryPlacement(s) { show(h('div', { class: 'sess', style: 'max-width:860px' }, placementReport(s, true))); }
+
+  function placementReport(s, fresh) {
+    var nodes = [];
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
+      h('div', { class: 'label' }, fresh ? 'Placement test finished' : 'Placement result'), h('h1', null, 'Your level is about ', h('span', { class: 'levelbadge' }, s.overall_level)),
+      h('p', null, s.correct + ' of ' + s.n + ' correct. A rough level, not an exam grade.'),
+      s.overall_level === 'C1.2' ? h('p', { class: 'small muted' }, 'This is the top level in the app.') : null,
+      s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 topics'),
+      h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
+        return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),
+          h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + g.level)));
+      })),
+      h('div', { class: 'row', style: 'margin-top:8px' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all 3 together'),
+        h('a', { class: 'btn ghost', href: '#/practice' }, 'Choose my own'))));
+    nodes.push(h('div', { class: 'grid g2' },
+      h('div', { class: 'card' }, h('h2', null, 'All tested topics'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
+        return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)));
+      })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, 'Not tested (too advanced for now): ' + s.untested.map(function (u) { return u.label; }).join(', ') + '.') : null),
+      h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
+    nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
+    return nodes;
+  }
+
+  function showPlacementReport(rep) { state.lastSummary = rep; show(h('div', { class: 'sess', style: 'max-width:860px' }, placementReport(rep, false))); }
+
+  // ───────── rules ─────────
+  function viewRules() {
+    var lv = state.user.lang === 'lv';
+    var toggle = h('button', { type: 'button', class: 'btn ghost small', onclick: function () {
+      state.user.lang = lv ? 'en' : 'lv';
+      api('account/profile', { lang: state.user.lang }).catch(function () {});
+      viewRules();
+    } }, lv ? 'English' : 'Latviski');
+    show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards')), toggle),
+      state.meta.areas.map(function (a) {
+        var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
+        return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'grid g2' }, list.map(function (s) {
+          return h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h3', { style: 'margin:0' }, s.label), h('span', { class: 'pill' }, levelRange(s))), ruleCard(s, lv));
+        })));
+      })));
+  }
+  function rulesModal(id) {
+    var s = skillById(id);
+    var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'), h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'c' }, 'Close'))));
+    m.el.querySelector('#c').onclick = m.close;
+  }
+
+  // ───────── leaderboard ─────────
+  function viewLeaderboard() {
+    if (!feat('leaderboard')) { location.hash = '#/home'; return; }
+    var period = 'week';
+    var holder = h('div');
+    function load() {
+      holder.replaceChildren(loading());
+      api('leaderboard', undefined, { period: period }).then(function (r) {
+        var rows = r.rows;
+        var list = rows.length ? h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, rows.map(function (x) {
+          return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, h('div', { class: 'lb-rank' + (x.rank <= 3 ? ' top' : '') }, String(x.rank)),
+            h('div', { class: 'lb-name' }, UI.avatar(x.avatar, x.nickname, 30), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
+            h('div', { class: 'small muted num' }, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
+        })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
+        holder.replaceChildren(
+          list,
+          (r.me && r.me.rank > 20) ? h('div', { class: 'card pad-s', style: 'margin-top:12px' }, 'Your rank: ', h('b', { style: 'color:var(--text)' }, '#' + r.me.rank), ' · ' + r.me.xp + ' XP') : null,
+          r.guest ? h('div', { class: 'card pad-s', style: 'margin-top:12px;border-color:var(--gold)' }, h('b', { style: 'color:var(--text)' }, 'Guests are not ranked. '),
+            state.config.register_url ? registerLink('', 'Create a free account') : null)
+          : ((r.hidden && state.user.role !== 'teacher') ? h('p', { class: 'small muted', style: 'margin-top:12px' }, 'You are hidden from the leaderboard.') : null));
+      }).catch(fail);
+    }
+    var tabs = h('div', { class: 'tabs', role: 'tablist', style: 'max-width:320px' },
+      ['week', 'all'].map(function (p) {
+        return h('button', { role: 'tab', 'aria-selected': String(p === period), onclick: function () { period = p; tabs.querySelectorAll('button').forEach(function (b, i) { b.setAttribute('aria-selected', String(['week', 'all'][i] === period)); }); load(); } }, p === 'week' ? 'This week' : 'All time');
+      }));
+    show(h('div', { class: 'sess', style: 'max-width:760px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Leaderboard'), h('h1', { style: 'margin:0' }, 'Top learners'))), tabs, holder));
+    load();
+  }
+
+  // ───────── profile ─────────
+  function viewProfile() {
+    var u = state.user, guest = u.guest;
+    var msg = h('div');
+    var nick = h('input', { type: 'text', id: 'pn', value: u.nickname, maxlength: '30', autocapitalize: 'off', spellcheck: 'false' });
+    var board = h('input', { type: 'checkbox', id: 'pb', checked: u.show_on_board });
+    var profile = h('form', { onsubmit: function (e) {
+      e.preventDefault(); msg.replaceChildren();
+      api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Saved.')); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
+    } },
+      h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Your name' : 'Display name'), nick),
+      (guest || !feat('leaderboard')) ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
+      msg, h('button', { class: 'btn', type: 'submit' }, 'Save'));
+
+    var cards = [];
+    if (guest) cards.push(guestBanner());
+    cards.push(avatarCard());
+    cards.push(langCard());
+    cards.push(soundCard());
+    var study = studyProfileCard(); if (study) cards.push(study);
+    var pic = installCard(true); if (pic) cards.push(pic);
+    cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
+    if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off '), '(set on englishfever.com). Your answers are still saved.'));
+    cards.push(h('div', { class: 'card' }, h('h2', null, 'Your data'),
+      h('div', { class: 'row' },
+        h('button', { class: 'btn ghost small', onclick: function () {
+          api('account/export').then(function (d) { var a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' })), download: 'my-practice-data.json' }); document.body.appendChild(a); a.click(); a.remove(); }).catch(fail);
+        } }, 'Download my data'),
+        h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my results'),
+        h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener', class: 'small' }, 'Privacy policy'))));
+    cards.push(h('div', null, h('button', { class: 'btn dark', onclick: function () {
+      api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
+    } }, icon('logout'), guest ? 'Leave guest session' : 'Sign out')));
+    show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
+  }
+
+  /** A small speaker button in a practice session. Sounds are off until switched on (here or in Profile). */
+  function soundButton() {
+    var b = h('button', { type: 'button', class: 'linkbtn small speaker' });
+    function draw() {
+      var on = Sound.on();
+      b.replaceChildren(icon(on ? 'volume' : 'mute'));
+      b.setAttribute('aria-pressed', String(on));
+      b.setAttribute('aria-label', on ? 'Sound is on. Press to turn it off.' : 'Sound is off. Press to turn it on.');
+      b.title = on ? 'Sound on' : 'Sound off';
+    }
+    b.addEventListener('click', function () { Sound.set(!Sound.on()); if (Sound.on()) Sound.play('right'); draw(); });
+    draw();
+    return b;
+  }
+
+  /** Profile: sounds, off by default; kept on this device. */
+  function soundCard() {
+    var cb = h('input', { type: 'checkbox', id: 'snd', checked: Sound.on(), onchange: function () { Sound.set(cb.checked); if (cb.checked) Sound.play('right'); } });
+    return h('div', { class: 'card' }, h('h2', null, 'Sounds'),
+      h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, cb, 'Play a soft sound for right and wrong answers'),
+      h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Off until you switch it on. Saved on this device.'));
+  }
+
+  /** Grammar explanations in English or Latvian (Latvian is written for levels up to B1.2). */
+  function langCard() {
+    var msg = h('span', { class: 'small muted', role: 'status' });
+    var seg = h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Language of the explanations' }, [['en', 'English'], ['lv', 'Latviešu']].map(function (o) {
+      return h('label', null, h('input', { type: 'radio', name: 'lang', value: o[0], checked: (state.user.lang || 'en') === o[0], onchange: function () {
+        state.user.lang = o[0];
+        api('account/profile', { lang: o[0] }).then(function () { msg.textContent = 'Saved'; }).catch(function () {});
+      } }), h('span', null, o[1]));
+    }));
+    return h('div', { class: 'card' }, h('h2', null, 'Explanations'), h('div', { class: 'row' }, seg, msg), h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'Latvian: levels up to B1.2.'));
+  }
+
+  /** Choose a character, symbol or initial and a background colour. Collapsed until "Change" is pressed. */
+  function avatarCard() {
+    var u = state.user, cur = (u.avatar || '').split('-');
+    var pick = { pic: cur[0] || 'ember', color: cur[1] || 'raspberry' };
+    var open = false;
+    var head = h('div', { class: 'row between', style: 'flex-wrap:nowrap' });
+    var panel = h('div', { class: 'avpanel', hidden: true });
+    var toggle = h('button', { type: 'button', class: 'btn ghost small', 'aria-expanded': 'false', 'aria-controls': 'avpanel', onclick: function () { setOpen(!open); } });
+    panel.id = 'avpanel';
+    var msg = h('div');
+    function setOpen(v) {
+      open = v; panel.hidden = !v; toggle.setAttribute('aria-expanded', String(v)); toggle.textContent = v ? 'Close' : 'Change';
+      if (v) { var c = u.avatar ? u.avatar.split('-') : []; pick.pic = c[0] || pick.pic; pick.color = c[1] || pick.color; drawPanel(); }
+    }
+    function group(title, pics) {
+      return h('div', { class: 'avgroup' }, h('div', { class: 'label' }, title),
+        h('div', { class: 'avgrid', role: 'radiogroup', 'aria-label': title }, pics.map(function (g) {
+          return h('button', { type: 'button', class: 'avopt', role: 'radio', 'aria-checked': String(g === pick.pic), 'aria-label': UI.AV_NAMES[g], title: UI.AV_NAMES[g], onclick: function () { pick.pic = g; drawPanel(); } }, UI.avatar(g + '-' + pick.color, u.nickname, 50));
+        })));
+    }
+    function drawPanel() {
+      panel.replaceChildren(
+        group('People', UI.AV_PEOPLE), group('Characters', UI.AV_FUN), group('Symbols', UI.AV_GLYPHS.concat(['initial'])),
+        h('div', { class: 'avgroup' }, h('div', { class: 'label' }, 'Background'),
+          h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Background colour' }, UI.AV_COLORS.map(function (c) {
+            return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; drawPanel(); } });
+          }))),
+        msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { type: 'button', class: 'btn small', onclick: save }, 'Save')));
+    }
+    function drawHead() {
+      head.replaceChildren(h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(u.avatar, u.nickname, 56), h('h2', { style: 'margin:0' }, 'Your avatar')), toggle);
+    }
+    function save() {
+      msg.replaceChildren();
+      api('account/profile', { avatar: pick.pic + '-' + pick.color }).then(function (r) {
+        state.user = r.user; u = r.user; renderChrome('#/profile'); drawHead(); setOpen(false); UI.toast('Avatar saved');
+      }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    }
+    drawHead(); setOpen(false);
+    return h('div', { class: 'card' }, head, panel);
+  }
+
+  function deleteAccount() {
+    var em = h('div');
+    var m = UI.modal(h('div', null, h('h2', null, 'Delete your results?'), h('p', null, 'This deletes your results and profile in the practice app. It cannot be undone.'), em,
+      h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'del' }, 'Delete'), h('button', { class: 'btn ghost', id: 'cancel' }, 'Cancel'))));
+    m.el.querySelector('#cancel').onclick = m.close;
+    m.el.querySelector('#del').onclick = function () {
+      api('account/delete', { confirm: true }).then(function () { m.close(); state.user = null; stopHeartbeat(); go('#/'); UI.toast('Your results were deleted.'); }).catch(function (e) { em.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    };
+  }
+
+  // ───────── first visit with an englishfever.com account ─────────
+  function viewNickname() {
+    renderChrome();
+    var msg = h('div');
+    var nick = h('input', { type: 'text', id: 'fn', value: state.user.nickname, maxlength: '30', autocapitalize: 'off', spellcheck: 'false', required: true });
+    var board = h('input', { type: 'checkbox', id: 'fb', checked: true });
+    show(h('div', { class: 'card', style: 'max-width:480px;margin:20px auto' }, h('div', { class: 'label' }, 'Welcome'), h('h1', null, 'How should we show your name?'),
+      h('form', { onsubmit: function (e) {
+        e.preventDefault();
+        api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; go('#/home'); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
+      } }, h('div', { class: 'field' }, h('label', { for: 'fn' }, 'Name'), nick),
+        h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')), msg,
+        h('button', { class: 'btn block', type: 'submit' }, 'Continue'))));
+  }
+
+  // ───────── teacher ─────────
+  function viewTeacher() {
+    api('teacher/students').then(function (r) {
+      var all = r.students, sortKey = 'last_seen', dir = -1, q = '';
+      // who the list shows: my students (enrolled in my Tutor courses, or added by me), all registered users, or everyone including guests
+      var VIEWS = [['mine', 'My students'], ['registered', 'Registered'], ['all', 'Everyone']];
+      function inView(s, v) { return v === 'all' || (v === 'registered' && s.provider !== 'guest') || (v === 'mine' && !!s.mine); }
+      var view = null; try { view = localStorage.getItem('ef_tview'); } catch (e) {}
+      if (!VIEWS.some(function (x) { return x[0] === view; })) view = all.some(function (s) { return s.mine; }) ? 'mine' : 'registered';
+      var statsBox = h('div', { class: 'grid g4', style: 'margin-bottom:16px' });
+      var exportLink = h('a', { class: 'btn ghost small', download: '' }, 'Export answers (CSV)');
+      var tabs = h('div', { class: 'tabs', role: 'tablist', style: 'max-width:520px' });
+      function drawTabs() {
+        tabs.replaceChildren.apply(tabs, VIEWS.map(function (x) {
+          var n = all.filter(function (s) { return inView(s, x[0]); }).length;
+          return h('button', { role: 'tab', 'aria-selected': String(x[0] === view), onclick: function () { view = x[0]; try { localStorage.setItem('ef_tview', view); } catch (e) {} draw(); } }, x[1] + ' (' + n + ')');
+        }));
+      }
+      function drawStats(list) {
+        var weekActive = list.filter(function (s) { return s.week_answers > 0; }).length;
+        var withAcc = list.filter(function (s) { return s.accuracy !== null; });
+        var avg = withAcc.length ? Math.round(withAcc.reduce(function (a, s) { return a + s.accuracy; }, 0) / withAcc.length) : null;
+        var weekMin = list.reduce(function (a, s) { return a + s.week_minutes; }, 0);
+        statsBox.replaceChildren(stat('users', list.length, view === 'all' ? 'learners' : (view === 'mine' ? 'my students' : 'registered')), stat('flame', weekActive, 'active this week'), stat('check', avg === null ? '–' : avg + '%', 'average correct'), stat('clock', UI.fmtDuration(weekMin * 60), 'practised this week'));
+      }
+      var tbody = h('tbody');
+      var cols = [
+        ['nickname', 'Student'], ['level_est', 'Level'], ['last_seen', 'Last active'], ['week_minutes', 'Week (min)', 'r'], ['week_answers', 'Week tasks', 'r'],
+        ['total_minutes', 'Total (min)', 'r'], ['xp', 'XP', 'r'], ['accuracy', 'Correct', 'r'], ['streak', 'Streak', 'r'],
+      ];
+      var thead = h('thead', null, h('tr', null, cols.map(function (c) {
+        return h('th', { class: c[2] || '', 'data-k': c[0], tabindex: '0', role: 'columnheader', onclick: function () { sortBy(c[0]); }, onkeydown: function (e) { if (e.key === 'Enter') sortBy(c[0]); } }, c[1]);
+      })));
+      function sortBy(k) { if (sortKey === k) dir = -dir; else { sortKey = k; dir = (k === 'nickname' || k === 'level_est') ? 1 : -1; } draw(); }
+      function draw() {
+        thead.querySelectorAll('th').forEach(function (t) { if (t.getAttribute('data-k') === sortKey) t.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending'); else t.removeAttribute('aria-sort'); });
+        drawTabs(); drawStats(all.filter(function (s) { return inView(s, view); }));
+        exportLink.href = 'api.php?r=teacher/export&view=' + view;
+        var rows = all.filter(function (s) { return inView(s, view) && (!q || (s.nickname + ' ' + (s.full_name || '')).toLowerCase().indexOf(q) >= 0); });
+        rows.sort(function (a, b) {
+          var x = a[sortKey], y = b[sortKey];
+          if (x === null || x === undefined) x = (typeof y === 'string') ? '' : -1;
+          if (y === null || y === undefined) y = (typeof x === 'string') ? '' : -1;
+          if (typeof x === 'string') return dir * x.localeCompare(y);
+          return dir * (x - y);
+        });
+        tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
+          return h('tr', null,
+            h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, (view !== 'mine' && s.mine) ? h('span', { class: 'pill good', style: 'margin-left:8px' }, 'mine') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null, s.provider === 'guest' ? h('div', { class: 'small muted' }, 'first seen ' + UI.fmtAgo(s.joined)) : null),
+            h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, '–')),
+            h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
+            h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),
+            h('td', { class: 'r num' }, s.accuracy === null ? '–' : s.accuracy + '%'), h('td', { class: 'r num' }, String(s.streak)));
+        }) : [h('tr', null, h('td', { colspan: String(cols.length), class: 'empty' }, q ? 'No one matches.' : (view === 'mine' ? 'No students here yet. Open a learner and choose “Add to my students”.' : 'No learners yet. Share the practice link.')))]);
+      }
+      var search = h('input', { type: 'text', placeholder: 'Search students', 'aria-label': 'Search students', style: 'max-width:260px', oninput: function () { q = search.value.trim().toLowerCase(); draw(); } });
+      draw();
+      api('teacher/sync-status').then(function (st) {
+        var box = document.getElementById('syncbox');
+        if (!box || !st.configured) return;
+        var bad = !!st.last_error;
+        box.replaceChildren(h('div', { class: 'card pad-s', style: 'margin-bottom:14px;' + (bad ? 'border-color:var(--bad)' : '') },
+          h('b', { style: 'color:var(--text)' }, 'Website activity tracker: '), bad ? 'problem' : (st.last_ok ? 'connected' : 'waiting for the first practice session'),
+          st.last_ok ? h('span', { class: 'small muted' }, ' · last sent ' + UI.fmtAgo(st.last_ok)) : null,
+          st.students_waiting ? h('span', { class: 'small muted' }, ' · ' + st.students_waiting + ' waiting') : null,
+          bad ? h('div', { class: 'small', style: 'margin-top:6px;color:var(--bad)' }, st.last_error) : null));
+      }).catch(function () {});
+      api('teacher/research').then(function (st) {
+        var box = document.getElementById('researchbox');
+        if (!box || !(st.enabled || st.joined)) return;
+        function dl(file, label) { return h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/research-export&file=' + file, download: '' }, label); }
+        box.replaceChildren(h('div', { class: 'card', style: 'margin-bottom:14px' },
+          h('div', { class: 'label' }, 'Learning study'),
+          h('p', { style: 'margin:4px 0 8px' }, h('b', { style: 'color:var(--text)' }, st.joined + ' of ' + st.registered), ' registered learners take part (' + st.declined + ' said no).' + (st.enabled ? '' : ' The study is switched off in config.php; people can still leave and you can still download.')),
+          st.factors.length ? h('ul', { class: 'clean small', style: 'margin:0 0 10px' }, st.factors.map(function (f) { return h('li', null, f.label + ': ' + f.on + ' see it, ' + f.off + ' do not'); }))
+            : h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'No conditions switched on. Add them under “experiments” in config.php.'),
+          h('div', { class: 'row' }, dl('people', 'People (CSV)'), dl('days', 'Days (CSV)'), dl('answers', 'Answers (CSV)'), dl('readme', 'Read me (TXT)')),
+          h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'No names in these files. Data starts at each person’s consent.')));
+      }).catch(function () {});
+      show(h('div', null,
+        h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),
+          exportLink),
+        tabs, statsBox,
+        h('div', { id: 'syncbox' }),
+        h('div', { id: 'researchbox' }),
+        h('div', { class: 'row', style: 'margin-bottom:12px' }, search),
+        h('div', { class: 'tablewrap' }, h('table', null, thead, tbody))));
+    }).catch(fail);
+  }
+
+  function viewTeacherStudent(id) {
+    api('teacher/student', undefined, { id: id }).then(function (r) {
+      var u = r.user, d = r.dashboard;
+      var again = function () { viewTeacherStudent(id); };
+      var moder = h('div', { class: 'row' },
+        u.provider === 'guest' ? null : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/moderate', { user_id: u.id, hide: !u.board_hidden }).then(again).catch(fail); } }, u.board_hidden ? 'Show on leaderboard' : 'Hide from leaderboard'),
+        u.mine === 'course' ? h('span', { class: 'pill good' }, 'In your Tutor course')
+          : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/mine', { user_id: u.id, mine: u.mine !== 'added' }).then(again).catch(fail); } }, u.mine === 'added' ? 'Remove from my students' : 'Add to my students'),
+        h('button', { class: 'btn ghost small', onclick: function () { if (confirm('Replace this name with "Learner ####"?')) api('teacher/moderate', { user_id: u.id, reset_name: true }).then(again).catch(fail); } }, 'Reset name'));
+      var maxMin = Math.max.apply(null, r.days.map(function (x) { return x.minutes; }).concat([5]));
+      var days = h('div', { class: 'bars', style: 'height:100px', role: 'img', 'aria-label': 'Minutes per day, last 30 days' }, r.days.map(function (x, i) {
+        return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' tasks' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
+      }));
+      var skillRows = d.skills.filter(function (s) { return s.n > 0; }).map(function (s) {
+        return h('tr', null, h('td', null, s.label), h('td', null, areaLabel(s.area)), h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, 'few tasks')), h('td', { class: 'r num' }, String(s.n)), h('td', { class: 'r num' }, s.accuracy + '%'));
+      });
+      var rep = d.placement && d.placement.report;
+      show(h('div', null,
+        h('a', { href: '#/teacher', class: 'small' }, '← All students'),
+        h('div', { class: 'hello', style: 'margin-top:8px' }, h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(u.avatar, u.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Student'), h('h1', { style: 'margin:0' }, u.nickname), h('p', { class: 'muted small' }, (u.full_name ? u.full_name + ' · ' : '') + (u.provider === 'guest' ? 'guest (not registered)' : 'englishfever.com account') + ' · joined ' + UI.fmtAgo(u.joined) + ' · last active ' + UI.fmtAgo(u.last_seen)))), moder),
+        h('div', { class: 'grid g4', style: 'margin-bottom:16px' }, stat('clock', UI.fmtDuration(d.totals.seconds), 'time practised'), stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct (' + d.totals.answers + ' tasks)'), stat('flame', d.streak.current + ' / ' + d.streak.best, 'streak (best)'), stat('bolt', d.totals.xp, 'XP')),
+        h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
+          h('div', { class: 'card' }, h('h2', null, 'Last 30 days'), days),
+          h('div', { class: 'card' }, h('h2', null, 'Thinking levels'), bloomBars(d.bloom))),
+        rep ? h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Placement test'), h('p', null, 'Level: ', h('span', { class: 'levelbadge', style: 'font-size:1.1rem;padding:3px 12px' }, rep.overall_level), ' · ' + UI.fmtAgo(d.placement.at) + ' · ' + rep.correct + '/' + rep.n + ' correct'),
+          h('p', { class: 'small' }, h('b', null, 'Gaps: '), rep.gaps.map(function (g) { return g.label + ' (' + g.level + ')'; }).join(', '))) : null,
+        h('div', { class: 'card', style: 'margin-bottom:16px;padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Topics'),
+          skillRows.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['Topic', 'Area', 'Level', 'Tasks', 'Correct'].map(function (t, i) { return h('th', { class: i > 2 ? 'r' : '' }, t); }))), h('tbody', null, skillRows))) : h('p', { class: 'empty' }, 'No tasks done yet.')),
+        h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Recent answers'),
+          r.recent.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['When', 'Task', 'Answer', '', 'Level', 'Thinking', 'Sec'].map(function (t) { return h('th', null, t); }))),
+            h('tbody', null, r.recent.map(function (a) {
+              return h('tr', null, h('td', { class: 'small' }, UI.fmtDate(a.at)), h('td', { style: 'max-width:340px;overflow:hidden;text-overflow:ellipsis' }, a.q), h('td', { style: 'max-width:220px;overflow:hidden;text-overflow:ellipsis' }, a.answer || ''),
+                h('td', null, h('span', { class: 'pill ' + (a.correct ? 'good' : 'pink') }, a.correct ? '✓' : '✗')), h('td', null, a.level), h('td', null, bloomName(a.bloom)), h('td', { class: 'num' }, String(a.seconds)));
+            })))) : h('p', { class: 'empty' }, 'No answers yet.'))));
+    }).catch(fail);
+  }
+
+  boot();
+})();

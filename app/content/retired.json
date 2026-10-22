@@ -1,0 +1,959 @@
+[
+{
+"id": "ps-A21-6a",
+"skill": "present_simple",
+"level": "A2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about what your friend or colleague does every day. Start with He or She.",
+"must": [
+[
+"\\b(he|she)\\s+(?!is\\b|was\\b|has\\b)\\w+s\\b",
+"Use *he* or *she* + a verb with *-s*, for example: *she starts work at eight.*",
+"Lieto *he* vai *she* + darbības vārdu ar *-s*, piemēram: *she starts work at eight*."
+]
+],
+"model": "She starts work at eight every day.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ps-B11-1a",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which verb do we NOT usually use with -ing?",
+"correct": "know",
+"wrong": [
+"run",
+"swim",
+"jump"
+],
+"why": "Verbs of thinking, feeling and having (*know, like, want, need, believe*) are state verbs. We use the present simple: *I know.*",
+"wrong_why": {},
+"why_lv": "Domāšanas, sajūtu un piederības darbības vārdi (*know, like, want, need, believe*) ir stāvokļa vārdi. Tiem lieto Present Simple: *I know.*"
+},
+{
+"id": "ps-B11-2a",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence is a general truth (always true)?",
+"correct": "Water boils at 100 degrees.",
+"wrong": [
+"The water is boiling now.",
+"The water boiled yesterday.",
+"I'm boiling water for tea."
+],
+"why": "We use the present simple for facts and things that are always true.",
+"wrong_why": {},
+"why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
+},
+{
+"id": "ps-B11-4a",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "I am liking this song.",
+"wrong": [
+"The museum opens at nine.",
+"How much does it cost?",
+"He doesn't speak French."
+],
+"why": "*Like* is a state verb. We say: *I like this song.*",
+"wrong_why": {},
+"why_lv": "*Like* ir stāvokļa darbības vārds. Saka: *I like this song.*"
+},
+{
+"id": "ps-B11-6a",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences about your timetable for tomorrow (work or class). Use the present simple with a time.",
+"must": [
+[
+"\\b(starts?|begins?|opens?|leaves?|ends?|finish(es)?|closes?|arrives?)\\b.{0,40}\\bat\\s+\\d",
+"Use a timetable verb (*starts, finishes, leaves ...*) with *at* and a time.",
+"Lieto grafika darbības vārdu (*starts, finishes, leaves* ...) ar *at* un laiku."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "My class starts at 9.00. It finishes at 11.30.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "pc-A22-3a",
+"skill": "present_continuous",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "What ___ you ___ this weekend? (do)",
+"answers": [
+[
+"are"
+],
+[
+"doing"
+]
+],
+"why": "Question: *What* + *are* + *you* + verb-ing.",
+"hints": [],
+"why_lv": "Jautājums: *What + are + you* + darbības vārds ar *-ing*."
+},
+{
+"id": "pc-A22-5a",
+"skill": "present_continuous",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your friend is in Riga for one month only. Choose the correct option.",
+"correct": "I'm living in a small flat this month.",
+"wrong": [
+"I live in a small flat this month.",
+"I lived in a small flat this month.",
+"I will living in a small flat."
+],
+"why": "The continuous shows a temporary situation.",
+"wrong_why": {},
+"why_lv": "Continuous rāda pagaidu situāciju."
+},
+{
+"id": "pc-B11-4a",
+"skill": "present_continuous",
+"level": "B1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "She is wanting a new phone.",
+"wrong": [
+"I'm having a great time here.",
+"We're meeting at six.",
+"The prices are going up."
+],
+"why": "*Want* is a state verb. We say: *She wants a new phone.*",
+"wrong_why": {},
+"why_lv": "*Want* ir stāvokļa darbības vārds. Saka: *She wants a new phone.*"
+},
+{
+"id": "pa-A22-3b",
+"skill": "past_simple",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "He ___ at 7 and ___ a shower. (wake up / have)",
+"answers": [
+[
+"woke up"
+],
+[
+"had"
+]
+],
+"why": "Both verbs are irregular: *wake - woke, have - had.*",
+"hints": [],
+"why_lv": "Abi darbības vārdi ir neregulāri: *wake - woke, have - had*."
+},
+{
+"id": "pa-B11-2a",
+"skill": "past_simple",
+"level": "B1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence shows two actions, one after the other, in the past?",
+"correct": "She opened the door and walked in.",
+"wrong": [
+"She was opening the door and walking in.",
+"She opens the door and walks in.",
+"She has opened the door and has walked in."
+],
+"why": "We use the past simple for a series of finished actions in order.",
+"wrong_why": {},
+"why_lv": "Pabeigtu darbību virknei secībā lieto Past Simple."
+},
+{
+"id": "pac-A22-1a",
+"skill": "past_continuous",
+"level": "A2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "At 8 o'clock yesterday I ___ dinner.",
+"correct": "was cooking",
+"wrong": [
+"cooked",
+"am cooking",
+"were cooking"
+],
+"why": "An action in progress at a moment in the past: *was/were* + verb-ing.",
+"wrong_why": {},
+"why_lv": "Darbība, kas pagātnē noteiktā brīdī bija procesā: *was/were* + darbības vārds ar *-ing*."
+},
+{
+"id": "pac-B11-1a",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "I ___ along the street when I saw an old friend.",
+"correct": "was walking",
+"wrong": [
+"walked",
+"am walking",
+"were walking"
+],
+"why": "A longer action in progress (*was walking*) is interrupted by a short action (*saw*).",
+"wrong_why": {},
+"why_lv": "Garāku darbību (*was walking*) pārtrauc īsa darbība (*saw*)."
+},
+{
+"id": "pac-B11-4a",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "When I was a child, I was playing in the park every day.",
+"wrong": [
+"When I arrived, they were having lunch.",
+"While I was reading, he was watching TV.",
+"She was cooking when the lights went out."
+],
+"why": "Repeated actions in the past use the past simple (or *used to*), not the past continuous: *I played in the park every day.*",
+"wrong_why": {},
+"why_lv": "Atkārtotām darbībām pagātnē lieto Past Simple (vai *used to*), nevis Past Continuous: *I played in the park every day.*"
+},
+{
+"id": "pac-B12-2a",
+"skill": "past_continuous",
+"level": "B1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "What does 'I was going to call you' mean?",
+"correct": "I planned to call you, but I didn't.",
+"wrong": [
+"I called you.",
+"I am going to call you now.",
+"I never wanted to call you."
+],
+"why": "*Was going to* shows an intention in the past that was not completed.",
+"wrong_why": {},
+"why_lv": "*Was going to* rāda nodomu pagātnē, kas netika izpildīts."
+},
+{
+"id": "pp-B11-5a",
+"skill": "present_perfect",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Compare 'I lost my keys' and 'I've lost my keys'. Which one tells us the problem is still there now?",
+"correct": "I've lost my keys.",
+"wrong": [
+"I lost my keys.",
+"Both tell us the same.",
+"Neither tells us this."
+],
+"why": "The present perfect connects the past action with the result now.",
+"wrong_why": {},
+"why_lv": "Present Perfect savieno pagātnes darbību ar rezultātu tagad."
+},
+{
+"id": "pp-B12-3b",
+"skill": "present_perfect",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "I ___ in three countries, so I speak a little of each language. (live)",
+"answers": [
+[
+"have lived"
+]
+],
+"why": "Life experience up to now: *have* + past participle.",
+"hints": [],
+"why_lv": "Dzīves pieredze līdz šim brīdim: *have* + 3. forma."
+},
+{
+"id": "ppc-B11-1a",
+"skill": "present_perfect_continuous",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "I'm tired. I ___ all day.",
+"correct": "have been working",
+"wrong": [
+"worked",
+"am working",
+"was working"
+],
+"why": "Present perfect continuous = *have/has been* + verb-ing. It shows an activity over a period up to now.",
+"wrong_why": {},
+"why_lv": "Present Perfect Continuous = *have/has been* + darbības vārds ar *-ing*. Tas rāda darbību laika posmā līdz šim brīdim."
+},
+{
+"id": "ppc-B11-3a",
+"skill": "present_perfect_continuous",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "She ___ Spanish for six months. (learn)",
+"answers": [
+[
+"has been learning"
+]
+],
+"why": "*She* + *has been* + verb-ing.",
+"hints": [],
+"why_lv": "*She + has been* + darbības vārds ar *-ing*."
+},
+{
+"id": "ppc-B12-4a",
+"skill": "present_perfect_continuous",
+"level": "B1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "I've been writing five emails today.",
+"wrong": [
+"She has been working here since March.",
+"How long have you been living here?",
+"They have been talking for hours."
+],
+"why": "With an exact number we use the present perfect simple: *I've written five emails today.*",
+"wrong_why": {},
+"why_lv": "Ar precīzu skaitu lieto Present Perfect Simple: *I've written five emails today.*"
+},
+{
+"id": "ppf-B12-3c",
+"skill": "past_perfect",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Join with After: I finished work. Then I went home.",
+"answers": [
+[
+"After I had finished work, I went home.",
+"I went home after I had finished work."
+]
+],
+"why": "*After* + past perfect (earlier action), past simple (later action).",
+"hints": [],
+"why_lv": "*After* + Past Perfect (agrākā darbība), Past Simple (vēlākā darbība)."
+},
+{
+"id": "fu-A21-3a",
+"skill": "future",
+"level": "A2.1",
+"bloom": 3,
+"kind": "gap",
+"q": "Tom ___ a party on Saturday. (have)",
+"answers": [
+[
+"is going to have"
+]
+],
+"why": "A plan: *is going to* + base verb.",
+"hints": [
+[
+"\\bis going to has\\b",
+"After *going to* we use the base verb: *have*, not *has.*",
+"Pēc *going to* lieto pamatformu: *have*, nevis *has*."
+]
+],
+"why_lv": "Plāns: *is going to* + pamatforma."
+},
+{
+"id": "fu-A22-5a",
+"skill": "future",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Black clouds are in the sky. Choose the correct option.",
+"correct": "It's going to rain.",
+"wrong": [
+"It will rain.",
+"It rains.",
+"It rained."
+],
+"why": "When we see evidence now, *going to* is the natural choice.",
+"wrong_why": {},
+"why_lv": "Ja tagad redzam pierādījumus, dabiskākais ir *going to*."
+},
+{
+"id": "fu-B11-1a",
+"skill": "future",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "If it ___ tomorrow, we will stay at home.",
+"correct": "rains",
+"wrong": [
+"will rain",
+"is raining",
+"rain"
+],
+"why": "After *if, when* and *as soon as* we use the present simple for the future.",
+"wrong_why": {},
+"why_lv": "Pēc *if, when* un *as soon as* nākotnei lieto Present Simple."
+},
+{
+"id": "fu-B12-3a",
+"skill": "future",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Don't worry. I ___ anyone your secret. (not / tell)",
+"answers": [
+[
+"won't tell",
+"will not tell"
+]
+],
+"why": "A promise: *will / won't* + base verb.",
+"hints": [],
+"why_lv": "Solījums: *will / won't* + pamatforma."
+},
+{
+"id": "fu-B12-3b",
+"skill": "future",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Be careful! You ___ off that chair! (fall)",
+"answers": [
+[
+"are going to fall"
+]
+],
+"why": "We can see it is about to happen: *are going to* + base verb.",
+"hints": [],
+"why_lv": "Redzam, ka tūlīt notiks: *are going to* + pamatforma."
+},
+{
+"id": "ppp-B11-3a",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "All the tickets ___. (sell)",
+"answers": [
+[
+"have been sold"
+]
+],
+"why": "*Tickets* = plural, so *have been sold.*",
+"hints": [],
+"why_lv": "*Tickets* = daudzskaitlis, tāpēc *have been sold*."
+},
+{
+"id": "ppp-B11-5a",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Which sentence tells us the email is now available to check?",
+"correct": "The email has been sent.",
+"wrong": [
+"The email was sent.",
+"The email will be sent.",
+"The email is sending."
+],
+"why": "The present perfect passive links the past action with now.",
+"wrong_why": {},
+"why_lv": "Present Perfect ciešamajā kārtā savieno pagātnes darbību ar tagadni."
+},
+{
+"id": "ppp-B11-6a",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about something that has been done at your home or office this week. Use has/have been + past participle.",
+"must": [
+[
+"\\b(has|have)\\s+been\\s+\\w+",
+"Use *has/have been* + past participle.",
+"Lieto *has/have been* + 3. forma."
+]
+],
+"model": "The windows have been cleaned this week.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ppp-B12-6a",
+"skill": "present_perfect_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences about changes that have been made in your company, school or city. Use has/have been + past participle at least once.",
+"must": [
+[
+"\\b(has|have)\\s+been\\s+\\w+",
+"Use *has/have been* + past participle.",
+"Lieto *has/have been* + 3. forma."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "A new office has been opened. Many old computers have been replaced.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "fup-B11-3a",
+"skill": "future_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "The results ___ on Friday. (announce)",
+"answers": [
+[
+"will be announced"
+]
+],
+"why": "*will be* + past participle.",
+"hints": [],
+"why_lv": "*will be* + 3. forma."
+},
+{
+"id": "fup-B11-6a",
+"skill": "future_passive",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about something that will be done in your city or company next year. Use will be + past participle.",
+"must": [
+[
+"\\bwill\\s+be\\s+\\w+",
+"Use *will be* + past participle.",
+"Lieto *will be* + 3. forma."
+]
+],
+"model": "A new library will be opened in my city next year.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "fup-B12-3a",
+"skill": "future_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Don't worry. Everything ___ before the guests arrive. (prepare)",
+"answers": [
+[
+"will be prepared"
+]
+],
+"why": "*will be* + past participle.",
+"hints": [],
+"why_lv": "*will be* + 3. forma."
+},
+{
+"id": "fup-B12-6a",
+"skill": "future_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences for a notice at work about changes next month. Use will be + past participle.",
+"must": [
+[
+"\\bwill\\s+be\\s+\\w+",
+"Use *will be* + past participle.",
+"Lieto *will be* + 3. forma."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "The office will be closed on Monday. All staff will be informed by email.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "cz-A22-1a",
+"skill": "cond_zero",
+"level": "A2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct form: If you heat ice, it ___.",
+"correct": "melts",
+"wrong": [
+"will melt",
+"melting",
+"is melt"
+],
+"why": "Zero conditional: *if* + present simple, present simple. It describes something that is always true.",
+"wrong_why": {},
+"why_lv": "Zero conditional: *if* + Present Simple, Present Simple. Tas apraksta kaut ko, kas ir vienmēr patiess."
+},
+{
+"id": "cz-A22-2a",
+"skill": "cond_zero",
+"level": "A2.2",
+"bloom": 2,
+"kind": "match",
+"q": "Match each beginning with the right ending. These are things that are always true.",
+"pairs": [
+[
+"If you heat water to 100 degrees,",
+"it boils."
+],
+[
+"If you don't sleep enough,",
+"you feel tired."
+],
+[
+"If the traffic light is red,",
+"cars stop."
+],
+[
+"If you mix red and blue,",
+"you get purple."
+]
+],
+"why": "The zero conditional (*if* + present simple, present simple) is for facts and general rules.",
+"why_lv": "Zero conditional (*if* + Present Simple, Present Simple) paredzēts faktiem un vispārīgiem noteikumiem."
+},
+{
+"id": "cz-B11-3a",
+"skill": "cond_zero",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with when: If you press this button, the door opens.",
+"answers": [
+[
+"When you press this button, the door opens.",
+"Whenever you press this button, the door opens."
+]
+],
+"why": "In a zero conditional, *when* and *whenever* can replace *if.*",
+"hints": [
+[
+"will",
+"Use the present simple in both parts: *... the door opens.*",
+"Abās daļās lieto Present Simple: ... *the door opens*."
+]
+],
+"why_lv": "Zero conditional *if* vietā var lietot *when* un *whenever*."
+},
+{
+"id": "cf-A22-1a",
+"skill": "cond_first",
+"level": "A2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct form: If it ___ tomorrow, we will stay at home.",
+"correct": "rains",
+"wrong": [
+"will rain",
+"rained",
+"is raining"
+],
+"why": "In the if-part we use the present simple, even when we talk about the future.",
+"wrong_why": {},
+"why_lv": "*If* daļā lieto Present Simple, pat runājot par nākotni."
+},
+{
+"id": "cf-B11-1a",
+"skill": "cond_first",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct word: We won't finish on time ___ we start now.",
+"correct": "unless",
+"wrong": [
+"if",
+"when",
+"although"
+],
+"why": "*Unless* means *if ... not*: *We won't finish unless we start now.*",
+"wrong_why": {},
+"why_lv": "*Unless* nozīmē *if* ... *not*: *We won't finish unless we start now.*"
+},
+{
+"id": "cf-B11-3b",
+"skill": "cond_first",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "I'll call you as soon as I ___ at the station. (arrive)",
+"answers": [
+[
+"arrive",
+"get",
+"reach"
+]
+],
+"why": "After *as soon as, when* and *before* we use the present simple for the future.",
+"hints": [
+[
+"will",
+"After *as soon as* we use the present simple: *... as soon as I arrive.*",
+"Pēc *as soon as* lieto Present Simple: ... *as soon as I arrive*."
+]
+],
+"why_lv": "Pēc *as soon as, when* un *before* nākotnei lieto Present Simple."
+},
+{
+"id": "cf-B12-4a",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "Unless you don't hurry, you will be late.",
+"wrong": [
+"Unless you hurry, you will be late.",
+"If you don't hurry, you will be late.",
+"You will be late unless you hurry."
+],
+"why": "*Unless* already means *if ... not*, so we do not add a second negative.",
+"wrong_why": {},
+"why_lv": "*Unless* jau nozīmē *if* ... *not*, tāpēc otru noliegumu nepievieno."
+},
+{
+"id": "ct-B12-2a",
+"skill": "cond_third",
+"level": "B1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "'If we had booked earlier, we would have got a cheaper flight.' What really happened?",
+"correct": "We did not book early, and the flight was expensive.",
+"wrong": [
+"We booked early and got a cheap flight.",
+"We will book early next time.",
+"We never fly."
+],
+"why": "The third conditional imagines a different past. The real past was the opposite.",
+"wrong_why": {},
+"why_lv": "Third conditional iztēlojas citādu pagātni. Īstā pagātne bija pretēja."
+},
+{
+"id": "ct-B12-6a",
+"skill": "cond_third",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about a mistake you made once (for example, a missed bus). Start with If I had and use would have.",
+"must": [
+[
+"^\\s*if i had\\b",
+"Start with *If I had.*",
+"Sāc ar *If I had.*"
+],
+[
+"\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+"Use *would have* + past participle in the second part.",
+"Otrajā daļā lieto *would have* + 3. forma."
+]
+],
+"model": "If I had checked the time, I wouldn't have missed the bus.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ct-B21-6a",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about a decision that changed your life. Start with If I hadn't and use would have.",
+"must": [
+[
+"^\\s*if i (hadn't|had not)\\b",
+"Start with *If I hadn't.*"
+],
+[
+"\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+"Use *would have* + past participle in the second part."
+]
+],
+"model": "If I hadn't joined that course, I wouldn't have met my best friend.",
+"why": "Compare your sentence with the model answer."
+},
+{
+"id": "ct-B22-1a",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which pair is correct? 'If she ___ the warning, she ___ the accident.'",
+"correct": "had heard / would have avoided",
+"wrong": [
+"heard / would avoid",
+"had heard / would avoid",
+"would have heard / had avoided"
+],
+"why": "Third conditional: *if* + past perfect, *would have* + past participle.",
+"wrong_why": {}
+},
+{
+"id": "ct-B22-4a",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence has a mistake?",
+"correct": "If I'd have known about the traffic, I would've left earlier.",
+"wrong": [
+"If I'd known about the traffic, I would've left earlier.",
+"If I had known about the traffic, I would have left earlier.",
+"Had I known about the traffic, I would have left earlier."
+],
+"why": "*If I'd have known* is a common mistake. In the if-part use had + past participle: *If I'd known.*",
+"wrong_why": {}
+},
+{
+"id": "ca-C11-4a",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "Unless you don't hurry, we will miss the flight.",
+"wrong": [
+"Unless you hurry, we will miss the flight.",
+"If you don't hurry, we will miss the flight.",
+"We will miss the flight unless you hurry."
+],
+"why": "*Unless* already contains the negative. Do not add another one.",
+"wrong_why": {}
+},
+{
+"id": "rs-B11-1a",
+"skill": "rep_statements",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Complete the report. 'I am tired,' she said. → She said she ___ tired.",
+"correct": "was",
+"wrong": [
+"is",
+"am",
+"will be"
+],
+"why": "In reported speech the verb usually goes one step back in time: *am / is → was.*",
+"wrong_why": {},
+"why_lv": "Netiešajā runā darbības vārds parasti iet vienu soli atpakaļ laikā: *am / is → was*."
+},
+{
+"id": "rs-B12-1a",
+"skill": "rep_statements",
+"level": "B1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct tense. Direct: 'I have finished.' Reported: He said he ___ finished.",
+"correct": "had",
+"wrong": [
+"has",
+"have",
+"was"
+],
+"why": "The present perfect (*have finished*) goes back to the past perfect (*had finished*).",
+"wrong_why": {},
+"why_lv": "Present Perfect (*have finished*) pāriet uz Past Perfect (*had finished*)."
+},
+{
+"id": "rs-B12-4a",
+"skill": "rep_statements",
+"level": "B1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "She said she will call me the next day.",
+"wrong": [
+"She said she would call me the next day.",
+"She told me she had finished the report.",
+"He said he was working at home that day."
+],
+"why": "*Will* goes back to *would* in reported speech: *She said she would call me.*",
+"wrong_why": {},
+"why_lv": "Netiešajā runā *will* pāriet uz *would*: *She said she would call me.*"
+},
+{
+"id": "rs-B21-1a",
+"skill": "rep_statements",
+"level": "B2.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which modal verb does NOT change in reported speech?",
+"correct": "might",
+"wrong": [
+"can",
+"will",
+"must"
+],
+"why": "*can → could, will → would, must → had to.* *Might, would, could, should* and *ought to* stay the same.",
+"wrong_why": {}
+},
+{
+"id": "rq-B12-3a",
+"skill": "rep_questions",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "'What time does the film start?' → She asked what time the film ___. (start)",
+"answers": [
+[
+"started"
+]
+],
+"why": "Reported question: normal word order, the verb goes back to the past: *started.*",
+"hints": [
+[
+"does|did|start$|^start\\b",
+"No *does* or *did* in a reported question: *... what time the film started.*",
+"Netiešajā jautājumā nav *does* vai *did*: ... *what time the film started*."
+]
+],
+"why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*."
+},
+{
+"id": "rv-C12-4a",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence has a mistake?",
+"correct": "He recommended me to read the report carefully.",
+"wrong": [
+"He recommended reading the report carefully.",
+"He recommended that I read the report carefully.",
+"He advised me to read the report carefully."
+],
+"why": "*recommend* is not followed by person + *to.* Use *recommend* + -ing, *recommend* + *that*, or *advise* + person + *to.*",
+"wrong_why": {}
+},
+{
+"id": "ia-C11-1a",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence uses an embedded question as the subject?",
+"correct": "What he said surprised everyone.",
+"wrong": [
+"He said what surprised everyone.",
+"What did he say surprised everyone.",
+"Surprised everyone what he said."
+],
+"why": "What he said is a noun clause. It is the subject of *surprised.*",
+"wrong_why": {}
+}
+]

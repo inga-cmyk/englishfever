@@ -14,10 +14,12 @@ DIST = os.path.join(ROOT, "dist")
 
 subprocess.run([sys.executable, os.path.join(APP, "authoring", "build.py")], check=True, stdout=subprocess.DEVNULL)
 env = dict(os.environ, EF_DEV="1")
+subprocess.run([sys.executable, os.path.join(APP, "tests", "bank_integrity_test.py")], check=True)
 subprocess.run(["php", os.path.join(APP, "tests", "grader_test.php")], check=True, env=env)
+subprocess.run(["php", os.path.join(APP, "tests", "bank_update_test.php")], check=True, env=env)
 
 EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git"}
-EXCLUDE_FILES = {"config/config.php", "config/config.local.php", "sso-demo.php", "README.md", "content/items.json", "content/meta.json"}
+EXCLUDE_FILES = {"config/config.php", "config/config.local.php", "sso-demo.php", "README.md", "content/items.json", "content/meta.json", "content/retired.json"}
 os.makedirs(DIST, exist_ok=True)
 out = os.path.join(DIST, "practice-app.zip")
 n = 0

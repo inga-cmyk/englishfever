@@ -134,7 +134,7 @@ final class Grader
                 $given = is_array($answer) ? array_map('strval', $answer) : preg_split('/\s+/u', trim((string) $answer), -1, PREG_SPLIT_NO_EMPTY);
                 $want = explode(' ', $item['sentence']);
                 $a = $given; $b = $want; sort($a); sort($b);
-                $nice = self::nice($item['sentence']);
+                $nice = $item['display_answer'] ?? self::nice($item['sentence']);
                 if ($a !== $b) return ['correct' => false, 'show' => $nice, 'specific' => 'Use every card once.', 'specific_lv' => 'Izmanto katru kartīti vienu reizi.', 'notes' => []];
                 $acc = array_map([self::class, 'norm'], $item['answers'][0]);
                 return ['correct' => in_array(self::norm(implode(' ', $given)), $acc, true), 'show' => $nice, 'specific' => null, 'notes' => []];

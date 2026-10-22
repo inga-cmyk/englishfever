@@ -20,6 +20,8 @@
   --bad: #A8214A;
   --bad-bg: #FBE7ED;
   --shadow: 0 1px 2px rgba(2,1,1,.04), 0 6px 18px rgba(2,1,1,.05);
+  --shadow-hover: 0 2px 4px rgba(2,1,1,.05), 0 14px 32px rgba(2,1,1,.12);
+  --btn-glow: 0 8px 20px rgba(216,44,94,.38);
   --radius: 16px;
   --bg: var(--cream);
   --surface: var(--card);
@@ -30,13 +32,13 @@
   :root:not([data-theme="light"]) {
     --bg: #0B0A0A; --surface: #171515; --text: #F3EFE6; --text-soft: #BDB8AD; --muted: #A39E93; --line: #2C2926;
     --ink: #F3EFE6; --body: #BDB8AD; --link: #F0577F; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
-    --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none;
+    --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(240,87,127,.40);
   }
 }
 :root[data-theme="dark"] {
   --bg: #0B0A0A; --surface: #171515; --text: #F3EFE6; --text-soft: #BDB8AD; --muted: #A39E93; --line: #2C2926;
   --ink: #F3EFE6; --body: #BDB8AD; --link: #F0577F; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
-  --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none;
+  --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(240,87,127,.40);
 }
 
 * { box-sizing: border-box; }
@@ -92,7 +94,7 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 28px 16
 }
 
 /* cards & layout */
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); transition: box-shadow .22s ease, transform .22s ease, border-color .22s ease; }
 .card.pad-s { padding: 16px; }
 .grid { display: grid; gap: 16px; }
 .g2 { grid-template-columns: repeat(2, 1fr); }
@@ -116,7 +118,8 @@ main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 28px 16
 .stat.streak .v svg { color: var(--raspberry); }
 
 /* buttons */
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer; background: var(--btn); color: #fff; font-weight: 650; padding: 12px 22px; border-radius: 999px; text-decoration: none; min-height: 46px; transition: background .15s, transform .05s; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer; background: var(--btn); color: #fff; font-weight: 650; padding: 12px 22px; border-radius: 999px; text-decoration: none; min-height: 46px; transition: background .15s, transform .15s ease, box-shadow .18s ease, border-color .15s; }
+.btn svg { transition: transform .18s ease; }
 .btn:hover { background: var(--btn-hover); }
 .btn:active { transform: translateY(1px); }
 .btn[disabled] { opacity: .45; cursor: not-allowed; }
@@ -169,7 +172,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 /* skill list */
 .skillgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 @media (max-width: 720px) { .skillgrid { grid-template-columns: 1fr; } }
-.skill { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.skill { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease; }
 .skill .top { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
 .skill .name { font-weight: 650; color: var(--text); }
 .meter { height: 6px; background: var(--line); border-radius: 6px; overflow: hidden; }
@@ -228,6 +231,19 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 textarea.write { min-height: 110px; resize: vertical; margin-bottom: 18px; }
 .type-in { margin-bottom: 20px; }
 .feedback { border-radius: 14px; padding: 18px 20px; margin-top: 4px; animation: pop .22s ease-out; }
+/* Alive: cards lift and glow under the mouse, buttons answer the pointer. Only where there is a real pointer; touch screens get the pulse below. */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover { box-shadow: var(--shadow-hover); border-color: var(--gold); }
+  .card.act:hover, .skill:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--gold-deep); }
+  .btn:not([disabled]):hover { transform: translateY(-2px); }
+  .btn:not(.ghost):not(.dark):not([disabled]):hover { box-shadow: var(--btn-glow); }
+  .btn.ghost:not([disabled]):hover, .btn.dark:not([disabled]):hover { box-shadow: var(--shadow-hover); }
+  .btn:not([disabled]):hover svg:last-child { transform: translateX(3px); }
+  .btn:not([disabled]):active { transform: translateY(0); box-shadow: none; }
+}
+/* a calm nudge towards the main action: two slow pulses after the page settles, then it rests */
+.btn.pulse { animation: nudge 2.4s ease-out 1.2s 2; }
+@keyframes nudge { 0% { box-shadow: 0 0 0 0 rgba(216,44,94,.5); } 70% { box-shadow: 0 0 0 14px rgba(216,44,94,0); } 100% { box-shadow: 0 0 0 0 rgba(216,44,94,0); } }
 @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 .feedback.good { background: var(--good-bg); border: 1px solid var(--good); }

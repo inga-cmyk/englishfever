@@ -357,8 +357,9 @@
 
       var rep = d.placement && d.placement.report;
       var started = d.totals.answers > 0;
-      nodes.push(h('div', { class: 'grid g3', style: 'margin-bottom:16px' },
-        h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 1'), h('h2', null, rep ? 'Your placement result' : 'Take the placement test'),
+      var sBtn = surpriseButton(started ? 'btn' : 'btn ghost');
+      var options = h('div', { class: 'grid g3', style: 'margin-bottom:16px' },
+        h('div', { class: 'card act' }, h('div', { class: 'label' }, 'Option 1'), h('h2', null, rep ? 'Your placement result' : 'Take the placement test'),
           rep ? h('div', null,
             h('div', { class: 'row', style: 'margin-bottom:10px' }, h('span', { class: 'levelbadge' }, rep.overall_level), h('span', { class: 'muted small' }, 'about ' + rep.overall_level + ' · ' + UI.fmtAgo(d.placement.at))),
             h('p', null, 'Start with: ', rep.gaps.map(function (g) { return g.label; }).join(', ') + '.'),
@@ -366,12 +367,16 @@
               h('a', { class: 'btn ghost small', href: '#/placement' }, 'Take it again')))
             : h('div', null, h('p', null, '5 to 18 minutes. Shows your gaps and where to start.'),
               h('a', { class: 'btn', href: '#/placement' }, 'Start the test', icon('arrow')))),
-        h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 2'), h('h2', null, 'Choose what to practise'),
+        h('div', { class: 'card act' }, h('div', { class: 'label' }, 'Option 2'), h('h2', null, 'Choose what to practise'),
           h('p', null, 'Pick topics and a level. Tasks adapt to you.'),
           h('a', { class: started ? 'btn' : 'btn ghost', href: '#/practice' }, 'Choose topics', icon('arrow'))),
-        h('div', { class: 'card' }, h('div', { class: 'label' }, 'Option 3'), h('h2', null, 'Surprise me'),
+        h('div', { class: 'card act' }, h('div', { class: 'label' }, 'Option 3'), h('h2', null, 'Surprise me'),
           h('p', null, started ? 'Topics picked from your own mistakes.' : 'A few friendly topics to start.'),
-          surpriseButton(started ? 'btn' : 'btn ghost'))));
+          sBtn));
+      // one gentle nudge towards the main action: practise now (or the placement test for someone new). Two soft pulses, then it rests.
+      var cta = started ? sBtn : options.querySelector('.btn:not(.ghost):not(.small)');
+      if (cta) cta.classList.add('pulse');
+      nodes.push(options);
 
       var ic = installCard(false); if (ic) nodes.push(ic);
       nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },

@@ -6,6 +6,7 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - **Learning study, off by default** (`research_enabled` in `config.php`): registered learners are invited on Home and can join or leave in Profile. Only people who joined are randomised and exported.
 - **Random conditions:** *streak counter* and *leaderboard* can each be hidden for half of the participants (`experiments` in `config.php`; shuffled blocks of four; same conditions if someone leaves and joins again).
 - **Research export** on the teacher page: `people.csv`, `days.csv`, `answers.csv` and a codebook; no names or typed answers, no calendar dates, data from the moment of consent only.
+- **Livelier cards and buttons:** cards lift and glow under the mouse (shadow, gold edge; in dark mode a gold glow), buttons rise and glow, arrows nudge forward; the main action on Home (practise now, or the placement test for a new learner) pulses twice gently. Touch screens get the pulse only; nothing moves for people who ask their device to reduce motion.
 - Needs one new line of config only if you want it on; new database columns and table are created automatically. Docs: PRACTICE-APP.md (Learning study) and RESEARCH-DESIGN.md. Tests: `app/tests/research_test.py`.
 
 ## Grammar batch (not uploaded yet)

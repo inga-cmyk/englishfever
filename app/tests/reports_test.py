@@ -125,6 +125,25 @@ if os.path.exists(DB):
     hard = teacher.api("teacher/reports", status="open")["hard"]
     check("a task answered wrongly by 8 of 9 attempts is listed as 'often wrong'", any(h["task"]["id"] == hard_id and h["pct"] == 89 and h["n"] == 9 for h in hard), hard)
 
+# ---- a reported task is paused until the teacher decides
+def served_ids(c, n):
+    seen = set()
+    for _ in range(n):
+        s = c.api("session/start", {"mode": "practice", "skills": ["past_perfect"], "level": "B1.2", "length": 12}); sid = s["session"]["id"]; item = s["item"]
+        for _ in range(12):
+            seen.add(item["id"]); a = c.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": wrong_answer(ITEMS[item["id"]]), "time_ms": 1000})
+            if a.get("done") or not a.get("next"): break
+            item = a["next"]
+    return seen
+pauser = login(9801 + int(time.time()) % 150, "Pause Tester"); target = [i for i in ITEMS if ITEMS[i]["skill"] == "past_perfect"][0]   # a topic with only 8 tasks: one session serves them all
+check("before a report the task can be served", target in served_ids(pauser, 1))
+pauser.api("report", {"item_id": target})
+check("a reported task is not served to anyone while the report is open", target not in served_ids(pauser, 1) and target not in served_ids(student, 1))
+teacher.api("teacher/report-status", {"item_id": target, "status": "seen"})
+check("marking it 'seen' keeps it paused", target not in served_ids(pauser, 1))
+teacher.api("teacher/report-status", {"item_id": target, "status": "dismissed"})
+check("'Not a problem' puts it back", target in served_ids(pauser, 1))
+
 # ---- the daily limit
 flood = login(9701 + int(time.time()) % 200, "Flood Tester"); ids = [i for i in ITEMS][:40]; codes = []
 for i in ids: codes.append(flood.api("report", {"item_id": i, "reason": "other"})["_status"])

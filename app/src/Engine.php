@@ -295,8 +295,9 @@ final class Engine
         $smart = !empty($st['smart']);
         // candidate items
         $bySkill = [];
+        $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
         foreach (Content::items() as $it) {
-            if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']])) continue;
+            if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
             if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4)) continue;
             $bySkill[$it['skill']][] = $it;
         }

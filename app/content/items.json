@@ -357,15 +357,15 @@
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
-"correct": "She does not likes this song.",
+"correct": "My brother is owning a small shop.",
 "wrong": [
 "The museum opens at nine.",
 "How much does it cost?",
 "He doesn't speak French."
 ],
-"why": "After *does not*, use the base verb: *She does not like this song.* The auxiliary *does* carries the third-person ending.",
+"why": "*Own* is a state verb, so we use the present simple: *My brother owns a small shop.*",
 "wrong_why": {},
-"why_lv": "Pēc *does not* lieto darbības vārda pamatformu: *She does not like this song.* Personas galotne jau ir palīgdarbības vārdam *does*."
+"why_lv": "*Own* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *My brother owns a small shop.*"
 },
 {
 "id": "ps-B11-5a-r2",
@@ -737,15 +737,15 @@
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
-"correct": "She is want a new phone.",
+"correct": "She is wanting a new phone.",
 "wrong": [
 "I'm having a great time here.",
 "We're meeting at six.",
 "The prices are going up."
 ],
-"why": "Use *She wants a new phone* to describe this state. *Is want* is not a valid verb form.",
+"why": "*Want* is a state verb, so we use the present simple: *She wants a new phone.*",
 "wrong_why": {},
-"why_lv": "Šo stāvokli izsaka ar *She wants a new phone.* Forma *is want* nav pareiza."
+"why_lv": "*Want* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *She wants a new phone.*"
 },
 {
 "id": "pc-B11-5a-r2",

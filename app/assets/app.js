@@ -536,6 +536,7 @@
     return h('div', { class: 'card rep' },
       h('div', { class: 'row between', style: 'align-items:flex-start;flex-wrap:nowrap' }, taskHead(g.task), h('span', { class: 'pill ' + (st === 'new' ? 'pink' : (st === 'fixed' ? 'good' : '')), style: 'flex:none' }, label)),
       det,
+      (st === 'new' || st === 'seen') ? h('div', { class: 'small muted', style: 'margin-top:8px' }, 'Paused: not shown to learners until you decide.') : null,
       h('div', { class: 'row', style: 'margin-top:12px' },
         (st === 'fixed' || st === 'dismissed')
           ? h('button', { class: 'btn ghost small', onclick: function () { setStatus('new'); } }, 'Reopen')

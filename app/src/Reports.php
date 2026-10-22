@@ -29,6 +29,13 @@ final class Reports
         else Db::insert('reports', $row + ['user_id' => (int) $u['id'], 'item_id' => $itemId, 'created_at' => $now]);
     }
 
+    /** Tasks with a report the teacher has not dealt with yet (new or seen): they are not served to anyone, as a set of ids. */
+    public static function pausedIds(): array
+    {
+        static $ids = null;
+        return $ids ??= array_flip(array_column(Db::all("SELECT DISTINCT item_id FROM reports WHERE status IN ('new', 'seen')"), 'item_id'));
+    }
+
     public static function openCount(): int
     {
         return (int) Db::val("SELECT COUNT(DISTINCT item_id) FROM reports WHERE status = 'new'");

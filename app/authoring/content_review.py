@@ -26,18 +26,18 @@ def revise(original):
         why_lv='Ja *know* apzīmē zināšanas, parasti lieto vienkāršo laiku: *I know the answer*, nevis *I am knowing the answer*.')
     fix('ps-B11-2a', 'Qualify the temperature in the general-truth example, without making the correct option stand out by length.',
         correct='Water boils at 100 degrees Celsius.')
-    fix('ps-B11-4a', 'Replace a context-dependent continuous use of like with a clear form error.',
-        correct='She does not likes this song.',
-        why='After *does not*, use the base verb: *She does not like this song.* The auxiliary *does* carries the third-person ending.',
-        why_lv='Pēc *does not* lieto darbības vārda pamatformu: *She does not like this song.* Personas galotne jau ir palīgdarbības vārdam *does*.')
+    fix('ps-B11-4a', 'Test the state-verb rule with a verb that is never continuous, instead of a typo.',
+        correct='My brother is owning a small shop.',
+        why='*Own* is a state verb, so we use the present simple: *My brother owns a small shop.*',
+        why_lv='*Own* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *My brother owns a small shop.*')
     fix('pc-A22-3a', 'Specify the target future form for an otherwise open completion.',
         q='Ask about a future arrangement. Use the present continuous: What ___ you ___ this weekend? (do)')
     fix('pc-A22-5a', 'State the communicative criterion rather than declaring every other tense impossible.',
         q='You are staying in Riga temporarily for one month. Which sentence best emphasises your temporary situation now?')
-    fix('pc-B11-4a', 'Use an unequivocal continuous-form error.',
-        correct='She is want a new phone.',
-        why='Use *She wants a new phone* to describe this state. *Is want* is not a valid verb form.',
-        why_lv='Šo stāvokli izsaka ar *She wants a new phone.* Forma *is want* nav pareiza.')
+    fix('pc-B11-4a', 'Keep the state-verb rule (want is not used in the continuous) instead of a typo.',
+        correct='She is wanting a new phone.',
+        why='*Want* is a state verb, so we use the present simple: *She wants a new phone.*',
+        why_lv='*Want* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *She wants a new phone.*')
     fix('pa-A22-3b', 'Anchor the gap-fill sequence in the past.',
         q='Yesterday he ___ at 7 and ___ a shower. (wake up / have)')
     fix('pa-B11-2a', 'The present perfect option can also describe sequential actions; specify the target tense.',

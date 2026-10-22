@@ -679,12 +679,12 @@
       }
       if (!good && it.kind === 'order') fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), (ans || []).join(' ')));
       var spec = lv && res.specific_lv ? res.specific_lv : res.specific;
-      if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), spec));
+      if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), UI.rich(spec)));
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
       var why = lv ? res.why_lv : res.why;
       if (it.kind === 'write') {
         fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Piemēra atbilde: ' : 'Model answer: '), res.show));
-        fb.appendChild(h('p', null, why));
+        fb.appendChild(h('p', null, UI.rich(why)));
       } else {
         if (it.kind === 'match') {
           if (!good && res.pairs) fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Pareizi: ' : 'Correct pairs: '),
@@ -692,7 +692,7 @@
         } else if (!good || it.kind !== 'mcq') {
           fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), res.show));
         }
-        fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), why));
+        fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
       fb.appendChild(ruleDetails(res.skill, !good, lv));
 
@@ -797,10 +797,10 @@
   function ruleCard(s, lv) {
     var r = lv && s.rule_lv ? s.rule_lv : s.rule, l = lv && s.rule_lv;
     return h('div', { class: 'rulecard' },
-      h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('ul', null, r.form.map(function (x) { return h('li', null, x); })),
-      h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, x); })),
-      h('p', { class: 'small' }, h('b', null, l ? 'Signālvārdi: ' : 'Signal words: '), r.signals),
-      h('div', { class: 'ex' }, h('b', null, l ? 'Piemērs: ' : 'Example: '), s.rule.example));
+      h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('ul', null, r.form.map(function (x) { return h('li', null, UI.rich(x)); })),
+      h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, UI.rich(x)); })),
+      h('p', { class: 'small' }, h('b', null, l ? 'Signālvārdi: ' : 'Signal words: '), UI.rich(r.signals)),
+      h('div', { class: 'ex' }, h('b', null, l ? 'Piemērs: ' : 'Example: '), UI.rich(s.rule.example)));
   }
 
   // ───────── summary ─────────
@@ -844,7 +844,7 @@
       s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 topics'),
       h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
-        return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, g.why)),
+        return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),
           h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + g.level)));
       })),
       h('div', { class: 'row', style: 'margin-top:8px' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all 3 together'),

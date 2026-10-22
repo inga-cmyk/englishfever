@@ -291,5 +291,16 @@
     return { close: close, el: box };
   }
 
-  window.UI = { avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
+  /** Text in which *examples* are marked: the marked parts become <em> (italics). Only text nodes are made, so nothing in the text can inject markup. */
+  function rich(text) {
+    var frag = document.createDocumentFragment();
+    String(text === null || text === undefined ? '' : text).split('*').forEach(function (part, i) {
+      if (part === '') return;
+      if (i % 2) { var em = document.createElement('em'); em.textContent = part; frag.appendChild(em); }
+      else frag.appendChild(document.createTextNode(part));
+    });
+    return frag;
+  }
+
+  window.UI = { rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
 })();

@@ -278,6 +278,8 @@ python3 tools/package_practice_app.py       # makes the upload files
 ```
 Upload `practice-app.zip` over the old files (keep your `config/config.php`; the zip does not contain one). Learners' data lives in the database and is not touched.
 
+**Italics for examples in explanations.** Examples (forms, auxiliaries, example sentences, time words) are shown in italics. In the data they are written `*like this*`. **Latvian texts** are marked automatically by the build: every English word in a Latvian explanation is an example, the names of tenses (Present Simple, Second conditional ...) stay plain. If a new Latvian word without Latvian letters (for example *logs*) comes out italic, add it to `LV_ASCII` in `app/authoring/italics.py`. **English texts** are marked by hand, one line each, in `app/authoring/italics_en.py` (add the new explanation there with its examples between `*`; the build stops when a line matches no text, so a typo cannot slip through). A text with no line there is simply shown without italics. Names of grammar (past simple, base verb, subject ...) and the instruction itself are not italic. The review spreadsheet always shows the plain text.
+
 **Add a tense or a level (for example B2).** Add the skill to `app/authoring/rules.py` (label, voice, levels, rule card), add the new levels to `LEVELS` in `app/authoring/dsl.py`, and extend the level boundaries in `Content::levelFromTheta` in `app/src/Content.php` (B2.1 and B2.2 already have a difficulty base there but no boundary yet), write items with all six thinking levels (the build refuses a skill level that misses one), and package.
 
 **Backups.** Use hPanel's backups for the database, or phpMyAdmin → Export. Do this before each update.

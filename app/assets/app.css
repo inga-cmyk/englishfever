@@ -347,6 +347,8 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
 .chip:hover { border-color: var(--gold-deep); }
 .chip:focus-visible { outline: 3px solid var(--btn); outline-offset: 2px; }
 .chip.dragging { opacity: .3; }
+em { font-style: italic; }
+.feedback em, details.rule em { color: var(--text); }
 /* numbered dots: the tasks of this session; answered ones can be looked at again */
 .dots { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 4px; }
 .dot { width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--surface); color: var(--muted); font: inherit; font-size: .74rem; font-weight: 700; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: transform .12s, box-shadow .12s; }

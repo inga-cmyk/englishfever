@@ -16,6 +16,7 @@ import dsl  # noqa: E402
 import content_basic, content_perfect_future, content_passive  # noqa: E402,F401
 import content_conditionals, content_reported  # noqa: E402,F401
 import lv_data  # noqa: E402  (Latvian explanations up to B1.2)
+import italics, italics_en  # noqa: E402  (examples in italics)
 from rules import SKILLS, RULES, BLOOM, AREAS  # noqa: E402
 
 OUT = os.path.join(HERE, "..", "content")
@@ -131,6 +132,53 @@ for sk in SKILLS:
         if not t or not all(k in t for k in ("form", "use", "signals")):
             errors.append(f"{sk[0]}: Latvian rule card missing")
 
+# Examples in explanations are marked *like this* (the app shows them in italics). English lines are hand-marked
+# (italics_en.py), Latvian ones are marked by rule (italics.py). Marking may only add * (and drop the quote marks it replaces).
+EN_INDEX = italics.index(italics_en.WHY, italics_en.MSGS, italics_en.RULECARDS)
+en_used = set()
+
+
+def mk_en(text):
+    key = italics.norm(text)
+    if key in EN_INDEX:
+        en_used.add(key)
+        return EN_INDEX[key]
+    return text
+
+
+def mk_lv(text):
+    out = italics.lv_mark(text)
+    assert italics.norm(out) == italics.norm(text), (text, out)
+    return out
+
+
+for src in [it for it in dsl.ITEMS] + list(RULES.values()) + list(lv_data.LV_RULES.values()):
+    pass
+for it in dsl.ITEMS:
+    for k in ("why", "why_lv", "wrong_why", "wrong_why_lv", "hints", "must"):
+        v = it.get(k)
+        if isinstance(v, str) and "*" in v:
+            errors.append(f"{it['id']}: '*' is reserved for italics but is in the {k} text")
+    it["why"] = mk_en(it["why"])
+    if it.get("why_lv"):
+        it["why_lv"] = mk_lv(it["why_lv"])
+    if it.get("wrong_why"):
+        it["wrong_why"] = {a: mk_en(m) for a, m in it["wrong_why"].items()}
+    if it.get("wrong_why_lv"):
+        it["wrong_why_lv"] = {a: mk_lv(m) for a, m in it["wrong_why_lv"].items()}
+    for key in ("hints", "must"):
+        if it.get(key):
+            it[key] = [[h[0], mk_en(h[1])] + ([mk_lv(h[2])] if len(h) > 2 else []) for h in it[key]]
+RULES_MARKED = {}
+for sid, r in RULES.items():
+    RULES_MARKED[sid] = {"form": [mk_en(x) for x in r["form"]], "use": [mk_en(x) for x in r["use"]],
+                         "signals": mk_en(r["signals"]), "example": mk_en(r["example"]) if r.get("example") else r.get("example")}
+LV_RULES_MARKED = {sid: {"form": [mk_lv(x) for x in r["form"]], "use": [mk_lv(x) for x in r["use"]], "signals": mk_lv(r["signals"])}
+                   for sid, r in lv_data.LV_RULES.items()}
+for key, line in EN_INDEX.items():
+    if key not in en_used:
+        errors.append("italics_en.py: this line matches no explanation text: " + line)
+
 if errors:
     print("\n".join(errors))
     sys.exit(1)
@@ -141,8 +189,8 @@ with open(os.path.join(OUT, "items.json"), "w", encoding="utf-8") as f:
 meta = {
     "levels": dsl.LEVELS,
     "areas": [{"id": a[0], "label": a[1]} for a in AREAS],
-    "skills": [dict({"id": s[0], "label": s[1], "area": s[2], "levels": s[3], "rule": RULES[s[0]]},
-                    **({"rule_lv": lv_data.LV_RULES[s[0]]} if s[0] in lv_data.LV_RULES else {})) for s in SKILLS],
+    "skills": [dict({"id": s[0], "label": s[1], "area": s[2], "levels": s[3], "rule": RULES_MARKED[s[0]]},
+                    **({"rule_lv": LV_RULES_MARKED[s[0]]} if s[0] in LV_RULES_MARKED else {})) for s in SKILLS],
     "bloom": {str(k): {"name": v[0], "desc": v[1]} for k, v in BLOOM.items()},
 }
 with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8") as f:
@@ -171,7 +219,7 @@ with open(rev, "w", newline="", encoding="utf-8-sig") as f:
             extra = ""
         else:
             ans, extra = it["model"], "must contain: " + " ; ".join(m[1] for m in it["must"])
-        w.writerow([it["id"], labels[it["skill"]], voice, it["level"], f'{it["bloom"]} {bloom_names[it["bloom"]]}', it["kind"], it["q"], ans, extra, it["why"], it.get("why_lv", ""), "", ""])
+        w.writerow([it["id"], labels[it["skill"]], voice, it["level"], f'{it["bloom"]} {bloom_names[it["bloom"]]}', it["kind"], it["q"], ans, extra, italics.strip(it["why"]), italics.strip(it.get("why_lv", "")), "", ""])
 
 # The app reads these .php copies. A request for a .php file runs it and prints nothing, so the answers stay
 # private even on a server that ignores .htaccess. (The .json files are for tests and review only; they are not packaged.)

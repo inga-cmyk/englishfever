@@ -308,7 +308,7 @@ return json_decode(<<<'EF_JSON_END'
 "bloom": 2,
 "kind": "mcq",
 "q": "Which sentence is a general truth (always true)?",
-"correct": "Pure water boils at 100°C at sea level.",
+"correct": "Water boils at 100 degrees Celsius.",
 "wrong": [
 "The water is boiling now.",
 "The water boiled yesterday.",
@@ -5476,7 +5476,7 @@ return json_decode(<<<'EF_JSON_END'
 "bloom": 2,
 "kind": "mcq",
 "q": "'If we had booked earlier, we would have got a cheaper flight.' What really happened?",
-"correct": "We did not book earlier; booking earlier would have cost less.",
+"correct": "We did not book earlier.",
 "wrong": [
 "We booked early and got a cheap flight.",
 "We will book early next time.",

@@ -169,7 +169,7 @@
       h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
       state.config && state.config.beta ? betaPill() : null,
       nav, h('div', { class: 'spacer' }),
-      dashboardUrl() ? h('a', { class: 'sitelink', target: '_blank', rel: 'noopener', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,
+      dashboardUrl() ? h('a', { class: 'sitelink' + (state.user.guest ? ' sitelink-guest' : ''), target: '_blank', rel: 'noopener', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,
       h('a', { class: 'avatar-link', href: '#/profile', 'aria-label': 'Your profile' }, UI.avatar(state.user.avatar, state.user.nickname, 32))));
     chrome.replaceChildren(bar, tabs);
     renderChips();
@@ -256,7 +256,7 @@
         h('div', { class: 'bar' }),
         h('h1', null, 'Practise English grammar. ', h('em', null, 'Know what to fix next.')),
         h('p', null, 'Short tasks for adult learners, A2.1 to C1. Clear feedback after every answer.'),
-        cfg.beta ? h('p', { class: 'betaline' }, h('b', null, 'Test version. '), 'We are still checking the tasks. If you see a mistake, tap Report a problem on the task.') : null,
+        cfg.beta ? h('p', { class: 'betaline' }, betaPill()) : null,
         h('div', { class: 'points' },
           h('div', null, h('b', null, 'Placement test'), '24 quick questions.'),
           h('div', null, h('b', null, 'Your choice'), 'Pick the topics and level.'),
@@ -379,8 +379,6 @@
           h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
             h('p', { class: 'muted' }, !started ? 'Short grammar tasks that adapt to you.' : d.streak.today_done ? 'You practised today. Nice work!'
               : (!feat('streak') ? 'Do a few tasks today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.')))))));
-
-      var bn = betaNote(); if (bn) nodes.push(bn);
 
       // the one thing to do now
       var main, mainBtn;
@@ -510,42 +508,6 @@
           go)));
   }
 
-  // ───────── report a problem ─────────
-  // [id, text, only after answering]
-  var REPORT_REASONS = [
-    ['unclear', 'The question is unclear or has a mistake', false],
-    ['ambiguous', 'More than one answer could be right', false],
-    ['my_answer', 'My answer was right but was marked wrong', true],
-    ['key_wrong', 'The correct answer shown is wrong', true],
-    ['explanation', 'The explanation is wrong or confusing', true],
-    ['other', 'Something else', false],
-  ];
-  function reasonText(id) { var r = REPORT_REASONS.filter(function (x) { return x[0] === id; })[0]; return r ? r[1] : id; }
-
-  /** The form: what is wrong (only reasons that make sense before an answer is given), an optional comment. */
-  function reportDialog(it, answered, preset, onSent) {
-    var chosen = preset || null, err = h('div');
-    var radios = REPORT_REASONS.filter(function (r) { return answered || !r[2]; }).map(function (r, i) {
-      return h('label', { class: 'opt small', for: 'rr' + i },
-        h('input', { type: 'radio', name: 'rr', value: r[0], id: 'rr' + i, checked: r[0] === preset, onchange: function () { chosen = r[0]; } }),
-        h('span', { class: 'mark' }), h('span', null, r[1]));
-    });
-    var note = h('textarea', { rows: '3', maxlength: '400', 'aria-label': 'More details (optional)', placeholder: 'Tell us more (optional). For example: another answer is also correct.' });
-    var send = h('button', { class: 'btn', type: 'button' }, 'Send report');
-    var cancel = h('button', { class: 'btn ghost', type: 'button' }, 'Cancel');
-    var m = UI.modal(h('div', null, h('h2', null, 'Report a problem'), h('p', { class: 'small muted' }, 'What is wrong with this task?'),
-      h('div', { class: 'opts reasons', role: 'radiogroup', 'aria-label': 'What is wrong?' }, radios), h('div', { class: 'field' }, note),
-      h('p', { class: 'small muted' }, 'Please do not write personal details.'), err, h('div', { class: 'row' }, send, cancel)));
-    cancel.onclick = m.close;
-    send.onclick = function () {
-      if (!chosen) { err.replaceChildren(h('div', { class: 'err', role: 'alert' }, 'Please choose what is wrong.')); return; }
-      send.disabled = true;
-      api('report', { item_id: it.id, reason: chosen, comment: note.value }).then(function () {
-        m.close(); UI.toast('Thank you! Your report was sent.'); if (onSent) onSent();
-      }).catch(function (e) { send.disabled = false; err.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
-    };
-  }
-
   // ───────── teacher: reported tasks ─────────
   var REPORT_FILTERS = [['open', 'Open'], ['fixed', 'Fixed'], ['dismissed', 'Not a problem'], ['all', 'All']];
 
@@ -564,17 +526,16 @@
     function setStatus(status) {
       api('teacher/report-status', { item_id: g.task.id, status: status }).then(function (x) { state.user.reports_open = x.open; viewReports(); }).catch(function (e) { UI.toast(e.message); });
     }
-    var reasons = Object.keys(g.reasons).map(function (k) { return h('span', { class: 'pill pink' }, reasonText(k) + ' × ' + g.reasons[k]); });
     var det = h('details', { class: 'rep-list' }, h('summary', null, g.count + (g.count === 1 ? ' report' : ' reports')),
       h('ul', null, g.reports.map(function (x) {
-        return h('li', null, h('b', null, reasonText(x.reason)), ' · ', x.who, ' · ', UI.fmtAgo(x.at),
+        return h('li', null, x.who, ' · ', UI.fmtAgo(x.at),
           x.answer ? h('div', { class: 'small' }, 'Answered: “', x.answer, '” ', x.correct === 1 ? '(marked right)' : '(marked wrong)') : null,
           x.comment ? h('div', { class: 'small' }, '“', x.comment, '”') : null);
       })));
     var label = { 'new': 'New', seen: 'Seen', fixed: 'Fixed', dismissed: 'Not a problem' }[st] || st;
     return h('div', { class: 'card rep' },
       h('div', { class: 'row between', style: 'align-items:flex-start;flex-wrap:nowrap' }, taskHead(g.task), h('span', { class: 'pill ' + (st === 'new' ? 'pink' : (st === 'fixed' ? 'good' : '')), style: 'flex:none' }, label)),
-      h('div', { class: 'row', style: 'gap:6px;margin:10px 0' }, reasons), det,
+      det,
       h('div', { class: 'row', style: 'margin-top:12px' },
         (st === 'fixed' || st === 'dismissed')
           ? h('button', { class: 'btn ghost small', onclick: function () { setStatus('new'); } }, 'Reopen')
@@ -591,9 +552,9 @@
         return h('label', null, h('input', { type: 'radio', name: 'rf', value: f[0], checked: f[0] === filter, onchange: function () { state.repFilter = f[0]; viewReports(); } }), h('span', null, f[1]));
       }));
       var list = r.groups.length ? r.groups.map(reportCard)
-        : [h('div', { class: 'card empty' }, filter === 'open' ? 'No open reports. When a learner taps Report a problem, it appears here.' : 'Nothing in this list.')];
+        : [h('div', { class: 'card empty' }, 'Nothing here.')];
       var hard = r.hard.length ? [h('h2', { style: 'margin:28px 0 6px' }, 'Often answered wrongly'),
-        h('p', { class: 'small muted' }, 'Tasks where 70% or more of the answers were wrong (at least 8 answers, last 60 days). A faulty task is often the reason.'),
+        h('p', { class: 'small muted' }, '70% or more wrong, at least 8 answers.'),
         r.hard.map(function (x) { return h('div', { class: 'card pad-s rep' }, taskHead(x.task), h('div', { class: 'small muted' }, x.pct + '% wrong · ' + x.n + ' answers')); })] : [];
       show(h('div', null,
         h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Reported tasks')),
@@ -604,15 +565,6 @@
 
   // ───────── test version notice ─────────
   function betaPill() { return h('span', { class: 'betapill', title: 'This is a test version: the tasks are still being checked' }, h('span', { class: 'long' }, 'Test version'), h('span', { class: 'short' }, 'Test')); }
-  /** A note under the greeting on Home; "Got it" hides it for 14 days on this device. Switch the whole notice off with 'beta_notice' => false in config.php. */
-  function betaNote() {
-    if (!state.config.beta) return null;
-    try { if (Date.now() - (+localStorage.getItem('ef_beta_off') || 0) < 14 * 86400000) return null; } catch (e) {}
-    return h('div', { class: 'betanote card pad-s row between' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, 'Test version. '), 'We are still checking the tasks. If something looks unclear or wrong, tap ', h('b', null, 'Report a problem'), ' on the task. Thank you!'),
-      h('button', { class: 'linkbtn small', type: 'button', onclick: function (e) { try { localStorage.setItem('ef_beta_off', String(Date.now())); } catch (er) {} e.target.closest('.betanote').remove(); } }, 'Got it'));
-  }
-
   // ───────── placement ─────────
   function viewPlacementIntro() {
     var sizes = [[12, 'Quick', 'about 5 minutes'], [24, 'Medium', 'about 10 minutes'], [40, 'Full', 'about 18 minutes']];
@@ -875,8 +827,6 @@
       }
       fb.appendChild(ruleDetails(res.skill, !good, lv));
 
-      if (!good) fb.appendChild(h('p', { class: 'small muted', style: 'margin:12px 0 0' }, 'Think this is marked wrongly? ', h('button', { type: 'button', class: 'linkbtn', onclick: function () { openReport('my_answer'); } }, 'Tell us')));
-
       var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next task';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
       if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
@@ -933,11 +883,14 @@
     }
 
     // "Report a problem": a small link on every task, and a prompt under a wrong answer
-    function isAnswered() { return !!entry(at); }
     function reportedDone() { reportBtn.disabled = true; reportBtn.replaceChildren(icon('check'), h('span', null, 'Reported')); }
-    function openReport(preset) { reportDialog(it, isAnswered(), preset, function () { state.reported[it.id] = true; reportedDone(); }); }
-    var reportBtn = h('button', { type: 'button', class: 'linkbtn report-link', title: 'Tell us if this task is unclear or wrong', onclick: function () { openReport(null); } },
-      icon('flag'), h('span', null, 'Report'), h('span', { class: 'long' }, ' a problem'));
+    function sendReport() {
+      reportBtn.disabled = true;
+      api('report', { item_id: it.id }).then(function () { state.reported[it.id] = true; reportedDone(); UI.toast('Reported. Thank you!'); })
+        .catch(function (e) { reportBtn.disabled = false; UI.toast(e.message); });
+    }
+    var reportBtn = h('button', { type: 'button', class: 'linkbtn report-link', title: 'Report this task', onclick: sendReport },
+      icon('flag'), h('span', null, 'Report'));
     if (state.reported[it.id]) reportedDone();
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 

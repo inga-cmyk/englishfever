@@ -447,6 +447,8 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .rep-list > summary { cursor: pointer; font-size: .9rem; color: var(--link); }
 .rep-list ul { margin: 8px 0 0; padding-left: 18px; }
 .rep-list li { margin-bottom: 8px; }
-@media (max-width: 1320px) { .betapill .long { display: none; } .betapill .short { display: inline; } }
-.betapill .long { display: none !important; } .betapill .short { display: inline !important; } .betapill { padding: 2px 8px; }
 .brand-sub { display: none; } @media (min-width: 1500px) { .brand-sub { display: inline; } }
+.chip-more { display: none; } @media (min-width: 1500px) { .chip-more { display: inline; } }
+.betapill { font-size: .62rem; padding: 2px 7px; }
+.nav a { padding-left: 10px; padding-right: 10px; }
+.sitelink-guest { display: none; } @media (min-width: 1500px) { .sitelink-guest { display: inline; } }

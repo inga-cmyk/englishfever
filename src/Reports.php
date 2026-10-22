@@ -16,7 +16,8 @@ final class Reports
 
     public static function save(array $u, string $itemId, string $reason, string $comment): void
     {
-        if (!isset(self::REASONS[$reason])) throw new ApiError('Please choose what is wrong.', 400);
+        if ($reason === '') $reason = 'other';   // the app sends just the task: the teacher decides what is wrong
+        if (!isset(self::REASONS[$reason])) throw new ApiError('Unknown reason.', 400);
         if (!Content::item($itemId)) throw new ApiError('Task not found.', 404);
         $comment = trim(mb_substr(preg_replace('/\s+/u', ' ', $comment), 0, 400));
         // what the learner answered in this task, if they did

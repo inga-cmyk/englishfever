@@ -605,18 +605,18 @@
       var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; update(); } });
       return h('label', null, inp, h('span', null, s.label, ' ', h('small', null, levelRange(s))));
     }
-    var closed = {};
+    var openMap = {};   // areas the learner opened or closed; every area starts closed, except the ones with chosen topics
     function group(area) {
       var every = state.meta.skills.filter(function (s) { return s.area === area.id; });
       var dashOf = function (s) { return d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }; };
       var list = every.filter(function (s) { return showHigh() || selected[s.id] || inReach(dashOf(s), d); });
       if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
-      var det = h('details', { class: 'picker-group', open: !closed[area.id] },
+      var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : n > 0 },
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', 'data-cnt': area.id, style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
         h('div', { class: 'row', style: 'margin:6px 0 8px' }, h('button', { class: 'linkbtn small', type: 'button', onclick: function () { list.forEach(function (s) { selected[s.id] = true; }); redraw(); } }, 'Select all')),
         h('div', { class: 'chipsel', role: 'group', 'aria-label': area.label }, list.map(checkbox)));
-      det.addEventListener('toggle', function () { closed[area.id] = !det.open; });
+      det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
       return det;
     }
     function update() {

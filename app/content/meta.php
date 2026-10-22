@@ -64,7 +64,7 @@ return json_decode(<<<'EF_JSON_END'
      "I / you / we / they + darbības vārda pamatforma: I work.",
      "he / she / it + darbības vārds ar -s: She works.",
      "Noliegums: don't / doesn't + pamatforma.",
-     "Jautājums: Do / Does + teikuma priekšmets + pamatforma?"
+     "Jautājums: Do / Does + teik. priekšmets + pamatforma?"
     ],
     "use": [
      "Ieradumi un ikdienas rutīna.",
@@ -102,7 +102,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "am / is / are + darbības vārds ar -ing: I am working.",
      "Noliegums: am / is / are + not + -ing.",
-     "Jautājums: Am / Is / Are + teikuma priekšmets + -ing?"
+     "Jautājums: Am / Is / Are + teik. priekšmets + -ing?"
     ],
     "use": [
      "Darbība, kas notiek tieši tagad.",
@@ -144,7 +144,7 @@ return json_decode(<<<'EF_JSON_END'
      "Regulārie darbības vārdi: pamatforma + -ed (worked).",
      "Neregulārie darbības vārdi ir jāiemācās (go - went, see - saw).",
      "Noliegums: didn't + pamatforma.",
-     "Jautājums: Did + teikuma priekšmets + pamatforma?",
+     "Jautājums: Did + teik. priekšmets + pamatforma?",
      "Pagātnes ieradumi: used to + pamatforma."
     ],
     "use": [
@@ -183,7 +183,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "was / were + -ing: I was working.",
      "Noliegums: wasn't / weren't + -ing.",
-     "Jautājums: Was / Were + teikuma priekšmets + -ing?",
+     "Jautājums: Was / Were + teik. priekšmets + -ing?",
      "Plāns, kas nenotika: was / were going to + pamatforma."
     ],
     "use": [
@@ -222,7 +222,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "have / has + darbības vārda 3. forma (past participle): I have seen it.",
      "Noliegums: haven't / hasn't + 3. forma.",
-     "Jautājums: Have / Has + teikuma priekšmets + 3. forma?"
+     "Jautājums: Have / Has + teik. priekšmets + 3. forma?"
     ],
     "use": [
      "Dzīves pieredze (bez precīza laika).",
@@ -259,7 +259,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "have / has been + -ing: I have been working.",
      "Noliegums: haven't / hasn't been + -ing.",
-     "Jautājums: Have / Has + teikuma priekšmets + been + -ing?"
+     "Jautājums: Have / Has + teik. priekšmets + been + -ing?"
     ],
     "use": [
      "Darbība, kas sākās pagātnē un turpinās tagad.",
@@ -293,7 +293,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "had + 3. forma: I had finished.",
      "Noliegums: hadn't + 3. forma.",
-     "Jautājums: Had + teikuma priekšmets + 3. forma?"
+     "Jautājums: Had + teik. priekšmets + 3. forma?"
     ],
     "use": [
      "Agrākā no divām pagātnes darbībām.",
@@ -370,7 +370,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "am / is / are + 3. forma: English is spoken here.",
      "Noliegums: isn't / aren't + 3. forma.",
-     "Jautājums: Is / Are + teikuma priekšmets + 3. forma?"
+     "Jautājums: Is / Are + teik. priekšmets + 3. forma?"
     ],
     "use": [
      "Kad svarīgāka ir darbība vai tās objekts, nevis darītājs.",
@@ -406,7 +406,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "was / were + 3. forma: The book was written in 1990.",
      "Noliegums: wasn't / weren't + 3. forma.",
-     "Jautājums: Was / Were + teikuma priekšmets + 3. forma?"
+     "Jautājums: Was / Were + teik. priekšmets + 3. forma?"
     ],
     "use": [
      "Pagātnes notikumi, kad darītājs nav zināms vai nav svarīgs.",
@@ -466,7 +466,7 @@ return json_decode(<<<'EF_JSON_END'
    "rule_lv": {
     "form": [
      "has / have been + 3. forma: The email has been sent.",
-     "Jautājums: Has / Have + teikuma priekšmets + been + 3. forma?"
+     "Jautājums: Has / Have + teik. priekšmets + been + 3. forma?"
     ],
     "use": [
      "Jaunākās ziņas vai darbības ar rezultātu tagad.",
@@ -500,7 +500,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "will be + 3. forma: You will be told soon.",
      "Noliegums: won't be + 3. forma.",
-     "Jautājums: Will + teikuma priekšmets + be + 3. forma?"
+     "Jautājums: Will + teik. priekšmets + be + 3. forma?"
     ],
     "use": [
      "Nākotnes notikumi, kad darītājs nav zināms vai nav svarīgs.",
@@ -572,7 +572,7 @@ return json_decode(<<<'EF_JSON_END'
    "rule_lv": {
     "form": [
      "If + Present Simple, will + pamatforma: If it rains, we will stay home.",
-     "If daļa var būt arī otrā vietā: We will stay home if it rains.",
+     "Nosacījuma palīgteikums (if daļa) var būt arī otrā vietā: We will stay home if it rains.",
      "Rezultātā var lietot arī may, might, can, should.",
      "Pēc if nelieto will: If it rains (nevis If it will rain)."
     ],
@@ -769,8 +769,8 @@ return json_decode(<<<'EF_JSON_END'
    },
    "rule_lv": {
     "form": [
-     "Jā/nē jautājumi: asked + if / whether + priekšmets + darbības vārds: She asked if I liked coffee.",
-     "Jautājumi ar jautājuma vārdu: asked + jautājuma vārds + priekšmets + darbības vārds: He asked where I lived.",
+     "Jā/nē jautājumi: asked + if / whether + teik. priekšmets + darbības vārds: She asked if I liked coffee.",
+     "Jautājumi ar jautājamo vārdu: asked + jautājamais vārds + teik. priekšmets + darbības vārds: He asked where I lived.",
      "Parasta vārdu secība, bez do / does / did: She asked what I did (nevis what did I do).",
      "Lūgumi un rīkojumi: told / asked + persona + (not) to + pamatforma: He told me to wait."
     ],
@@ -834,7 +834,7 @@ return json_decode(<<<'EF_JSON_END'
     "form": [
      "Sāc ar: Could you tell me / Do you know / Can you tell me / I wonder.",
      "Tad lieto teikuma vārdu secību: ... where the station is (nevis where is the station).",
-     "Bez do / does / did otrajā daļā: ... what time the shop opens.",
+     "Bez do / does / did palīgteikumā: ... what time the shop opens.",
      "Jā/nē jautājumos lieto if vai whether: Do you know if she is here?"
     ],
     "use": [

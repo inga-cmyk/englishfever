@@ -25,9 +25,7 @@ M(S, "A2.1", 5, "Is this sentence correct? 'Does he works here?'",
   ["Yes, it is correct.", "No. It should be 'Do he works here?'", "No. It should be 'Is he works here?'"],
   "After does we use the base verb: work, not works. Does he work here?")
 W(S, "A2.1", 6, "Write one sentence about what your friend or colleague does every day. Start with He or She.",
-  [(r"\b(he|she)\s+(?!is\b|was\b|has\b)\w+s\b", "Use he or she + a verb with -s, for example: she starts work at eight."),
-   (r"\b(every|each)\s+(day|morning|evening|week|weekday|afternoon)\b|\b(always|usually|often|sometimes|never)\b",
-    "Add a time word such as every day, usually or always.")],
+  [(r"\b(he|she)\s+(?!is\b|was\b|has\b)\w+s\b", "Use he or she + a verb with -s, for example: she starts work at eight.")],
   "She starts work at eight every day.")
 
 # A2.2
@@ -142,8 +140,7 @@ M(S, "B1.1", 5, "Is this statement true? 'I'm living with my parents at the mome
   ["No. They mean exactly the same.", "No. Only 'live' can show a temporary situation.", "Yes, but only for children."],
   "The present continuous often shows that something is temporary or changing.")
 W(S, "B1.1", 6, "Write one sentence about a change in your life or your city these days. Use the present continuous.",
-  [(r"\b(am|is|are|'m|'s|'re)\s+\w+ing\b", "Use am/is/are + verb-ing."),
-   (r"\b(these days|nowadays|at the moment|now|this year|more and more|lately)\b", "Add a time phrase such as these days or at the moment.")],
+  [(r"\b(am|is|are|'m|'s|'re)\s+\w+ing\b", "Use am/is/are + verb-ing.")],
   "More people are working from home these days.")
 
 # ───────────────────────── PAST SIMPLE (active) ─────────────────────────

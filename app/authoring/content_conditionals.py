@@ -1,5 +1,9 @@
 from dsl import M, G, T, O, W, D
 
+# The if-part of a second conditional must not contain will/would. The comma is not required: with a comma the if-part is
+# everything before it; without one, only "if + subject + would/will" is flagged (so "If I won I would go" is fine).
+NO_WOULD_AFTER_IF = r"^(?!\s*if\b(?:[^,]*\b(?:will|would)\b[^,]*,|(?!.*,)\s+(?:(?:the|my|our|your|his|her|their|this|that)\s+)?\w+\s+(?:would|will|'d)\b))"
+
 # Conditionals: zero, first, second, third, mixed, advanced.
 # Word-order (O) tasks use lower-case words without punctuation, so more than one correct order can be accepted.
 
@@ -99,7 +103,7 @@ M(S, "B1.1", 5, "You want to warn a friend who keeps forgetting his password. Wh
   ["If you will forget it again, you'll be locked out.", "If you forgot it again, you'll be locked out.", "If you forget it again, you locked out."],
   "A warning uses if + present simple, then will + base verb.")
 W(S, "B1.1", 6, "Write a sentence with unless about something you must do to avoid a problem.",
-  [(r"\bunless\b", "Use unless."), (r"\b(will|won't|'ll)\b", "Use will or won't in the other part.")],
+  [(r"\bunless\b", "Use unless.")],
   "Unless I leave now, I will miss my train.")
 M(S, "B1.1", 1, "Which sentence is a correct first conditional?", "If it snows tonight, the office will close.",
   ["If it will snow tonight, the office closes.", "If it snowed tonight, the office will close.", "If it snows tonight, the office would close."],
@@ -151,7 +155,7 @@ M(S, "B1.1", 5, "Your friend can't decide whether to quit and become a baker. Yo
   "For advice we say: If I were you, I would + base verb.")
 W(S, "B1.1", 6, "Write a sentence about what you would do if you won a free holiday. Start with If, use the past simple after if and would in the second part.",
   [(r"^\s*if\b", "Start with If."), (r"\b(would|'d)\b", "Use would in the second part."),
-   (r"^(?!\s*if\b[^,]*\b(will|would)\b)", "Use the past simple after if (no would), and put a comma after the if-part.")],
+   (NO_WOULD_AFTER_IF, "Use the past simple after if (not would): If I won a holiday, I would go to Iceland.")],
   "If I won a free holiday, I would go to Iceland.")
 G(S, "B1.1", 3, "If I ___ a cat, I ___ sleep all day.", [["were"], ["would"]],
   "Second conditional: if + were / past simple, would + base verb.", bank=["were", "would", "will", "had"])
@@ -177,7 +181,7 @@ M(S, "B1.2", 5, "You advise a manager. Which sentence is correct and polite?", "
   "Advice: If I were you, I would + base verb.")
 W(S, "B1.2", 6, "Write a sentence about an unlikely job you would like. Use if + past simple and would.",
   [(r"^\s*if\b", "Start with If."), (r"\b(would|'d)\b", "Use would in the second part."),
-   (r"^(?!\s*if\b[^,]*\b(will|would)\b)", "Use the past simple after if, and put a comma after the if-part.")],
+   (NO_WOULD_AFTER_IF, "Use the past simple after if (not would): If I were a pilot, I would fly.")],
   "If I were a pilot, I would fly to Iceland every weekend.")
 
 # B2.1
@@ -263,7 +267,7 @@ M(S, "B2.2", 5, "Which sentence expresses regret best in a formal apology?", "If
   ["If I realised the impact of my decision, I would have acted differently.", "If I would have realised the impact of my decision, I acted differently.", "If I had realise the impact of my decision, I would have acted differently."],
   "Formal regret about the past: if + past perfect, would have + past participle.")
 W(S, "B2.2", 6, "Write a sentence about what would have happened in history if one thing had been different (for example a famous discovery).",
-  [(r"^\s*if\b", "Start with If."), (r"\bhad(n't| not)?\b", "Use the past perfect (had / hadn't) in the if-part."), (r"\b(would|might|could)\s+(not\s+)?have\b", "Use would / might / could have + past participle in the result.")],
+  [(r"\bif\b", "Use if."), (r"\bhad(n't| not)?\b", "Use the past perfect (had / hadn't) in the if-part."), (r"\b(would|might|could)\s+(not\s+)?have\b", "Use would / might / could have + past participle in the result.")],
   "If Alexander Fleming hadn't left his dish uncovered, penicillin might not have been discovered.")
 
 # ───────────────────────── MIXED CONDITIONALS ─────────────────────────
@@ -305,7 +309,7 @@ M(S, "B2.2", 5, "A colleague says: 'If I had a better memory, I would have remem
   ["It is a first conditional about the future.", "It is a zero conditional about a fact.", "It is a third conditional because of would have."],
   "The if-part is past simple (present quality). The result is would have + past participle (past).")
 W(S, "B2.2", 6, "Write a mixed conditional sentence: a present quality + a past result (for example: If I were braver, I would have ...).",
-  [(r"^\s*if\b", "Start with If."), (r"\b(would|wouldn't|could|might)\s+(not\s+)?have\b|'d\s+(not\s+)?have\b", "Use would have + past participle for the past result.")],
+  [(r"\bif\b", "Use if."), (r"\b(would|wouldn't|could|might)\s+(not\s+)?have\b|'d\s+(not\s+)?have\b", "Use would have + past participle for the past result.")],
   "If I were more patient, I wouldn't have shouted at the printer yesterday.")
 
 # C1.1

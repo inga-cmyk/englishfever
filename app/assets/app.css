@@ -342,6 +342,7 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
 .chip:hover { border-color: var(--gold-deep); }
 .chip:focus-visible { outline: 3px solid var(--btn); outline-offset: 2px; }
 .chip.dragging { opacity: .3; }
+html.dnd-dragging, html.dnd-dragging * { user-select: none; -webkit-user-select: none; cursor: grabbing !important; }
 .chip.ghost { position: fixed; z-index: 1000; pointer-events: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); transform: rotate(-2deg); cursor: grabbing; margin: 0; }
 .chip:disabled { cursor: default; opacity: 1; color: var(--text); }
 .dnd-line, .dnd-bank { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; border-radius: 14px; min-height: 58px; align-items: center; }

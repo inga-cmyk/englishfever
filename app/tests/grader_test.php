@@ -93,7 +93,31 @@ $check(!$g("They don't paly tennis on Sundays")['correct'], 'short words (4 lett
 $check(!$g('They dont play tens on sundays')['correct'], '"tens" (a different word, two letters off) is not accepted');
 $check(!$g("They don't plays tennis on Sundays")['correct'], 'grammar error plays is not forgiven');
 $check(!$g("They doesn't play tennis on Sundays")['correct'], 'doesn\'t for they is not forgiven');
-$check(!$g("They don't play tennis on Sunday")['correct'], 'Sunday for Sundays (last letter) is not forgiven');
+$r = $g("They don't play tennis on Sunday");
+$check($r['correct'] && in_array('Check the ending: sunday → Sundays.', $r['notes'], true), 'a missing plural -s after a preposition (on Sunday) is a copying slip: accepted with a tip', $r['notes']);
+$r = $g('they do not play tennis on sunday');
+$check($r['correct'] && in_array('Check the ending: sunday → Sundays.', $r['notes'], true), 'the learner answer from the screenshot (do not ... on sunday) is accepted with a tip', $r['notes']);
+$r = $g("They don't plays tennis on Sundays");
+$check(!$r['correct'] && !empty($r['near']) && strpos((string) $r['specific'], 'Almost') === 0, 'a one-word grammar error is not forgiven; the feedback says which word', $r);
+$room = Content::item('psp-B12-3b'); // The rooms are cleaned daily.
+$check(!Grader::grade($room, 'The room are cleaned daily.')['correct'], 'a missing -s on a SUBJECT noun hides a verb-agreement error: not forgiven');
+$check(!Grader::grade($room, 'The rooms are clean daily.')['correct'] && empty(Grader::grade($room, 'Totally different words here now')['near']), 'a different sentence is not a near miss');
+
+// write tasks must only ask for what the instruction asks for
+$w = fn(string $id, string $a) => Grader::grade(Content::item($id), $a);
+$check($w('ps-A21-6a', 'He works hard.')['correct'], 'ps-A21-6a: no time word is required (He works hard.)');
+$check($w('pc-B11-6a', 'More people are cycling to work.')['correct'], 'pc-B11-6a: no time phrase is required');
+$check($w('cf-B11-6a', 'I must leave now unless I want to miss the train.')['correct'], 'cf-B11-6a: will is not required in the other part');
+$check($w('ct-B22-6a', "Penicillin might not have been discovered if Fleming hadn't left his dish uncovered.")['correct'], 'ct-B22-6a: the sentence need not start with If');
+$check($w('cm-B22-6a', "I wouldn't have shouted at the printer yesterday if I were more patient.")['correct'], 'cm-B22-6a: the sentence need not start with If');
+foreach (['cs-B11-6a' => 'If I won a free holiday I would go to Iceland.', 'cs-B12-6a' => 'If I were a pilot I would fly everywhere.'] as $id => $ans) {
+    $check($w($id, $ans)['correct'], "$id: the comma after the if-part is not required");
+}
+$check($w('cs-B11-6a', 'If I won a free holiday, I would go to Iceland.')['correct'], 'cs-B11-6a: with a comma still fine');
+$check(!$w('cs-B11-6a', 'If I would win a free holiday I would go to Iceland.')['correct'], 'cs-B11-6a: would in the if-part is still wrong (no comma)');
+$check(!$w('cs-B11-6a', 'If I would win a free holiday, I would go to Iceland.')['correct'], 'cs-B11-6a: would in the if-part is still wrong (comma)');
+$check(!$w('cf-B11-6a', 'I will leave now.')['correct'], 'cf-B11-6a: unless is still required');
+$check(!$w('ps-A21-6a', 'They work hard.')['correct'], 'ps-A21-6a: he/she + verb-s is still required');
 $join = Content::item('ppf-B12-3c'); // Join with After ... had finished
 $check(!Grader::grade($join, 'After I had finish work, I went home.')['correct'], 'had finish is not forgiven as a typo of finished');
 $check(Grader::grade($join, 'After I had finished work, I went home.')['correct'], 'exact answer still correct');
@@ -132,8 +156,11 @@ foreach (Content::items() as $it) {
             if (mb_strlen($tok) < 3) continue;
             $muts = [mb_substr($tok, 0, -1) . 's', mb_substr($tok, 0, -1) . 'd', $tok . 's', $tok . 'ed', $tok . 'd'];
             if (mb_strlen($tok) >= 4) $muts[] = mb_substr($tok, 0, -1);
+            // the one intended exception: a missing plural -s on a noun after a preposition (on Sunday) is a copying slip
+            $afterPrep = $ti > 0 && (in_array($tokens[$ti - 1], Grader::PREPOSITIONS, true) || ($ti > 1 && in_array($tokens[$ti - 1], Grader::DETERMINERS, true) && in_array($tokens[$ti - 2], Grader::PREPOSITIONS, true)));
             foreach (array_unique($muts) as $mu) {
                 if ($mu === $tok) continue;
+                if ($afterPrep && $it['kind'] === 'text' && mb_strlen($tok) >= 5 && mb_substr($tok, -1) === 's' && $mu === mb_substr($tok, 0, -1)) continue;
                 $t2 = $tokens; $t2[$ti] = $mu;
                 $cand = implode(' ', $t2);
                 if (in_array($cand, $accNorm, true)) continue; // happens to be another accepted answer

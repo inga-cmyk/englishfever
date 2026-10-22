@@ -101,6 +101,7 @@ final class Grader
                 $show = implode(' / ', array_map(fn($b) => $b[0], $blanks));
                 $specific = null;
                 $specificLv = null;
+                $near = false;
                 if ($ok && $item['kind'] === 'text') {
                     $notes = array_merge($notes, self::capitalNotes($given[0], $blanks[0][0]));
                 }
@@ -119,8 +120,14 @@ final class Grader
                     if ($specific === null && trim(implode('', $given)) === '') {
                         $specific = 'You did not type an answer.';
                     }
+                    // a whole sentence that is right except for one word: say which word, instead of explaining the grammar again
+                    if ($specific === null && $item['kind'] === 'text' && count($given) === 1 && ($nm = self::nearMiss($given[0], $blanks[0])) !== null) {
+                        $near = true;
+                        $specific = "Almost: your sentence is right except for one word. You wrote “{$nm[0]}”, the answer has “{$nm[1]}”.";
+                        $specificLv = "Gandrīz: teikums ir pareizs, izņemot vienu vārdu. Tu uzrakstīji “{$nm[0]}”, atbildē ir “{$nm[1]}”.";
+                    }
                 }
-                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'notes' => array_values(array_unique($notes))];
+                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'near' => $near, 'notes' => array_values(array_unique($notes))];
 
             case 'order':
                 // the learner drags cards into order: the same cards must all be used once, and the sentence must be an accepted one
@@ -226,10 +233,61 @@ final class Grader
             $g = $g2;
         }
         foreach ($variants($g) as $v) {
-            foreach ($acc as $a) {
+            foreach ($acc as $k => $a) {
                 $t = self::typoMatch($v, $a, $prompt);
+                if ($t === null && !$isGap) $t = self::pluralSlip($v, $a, $prompt, $accepted[$k]);
                 if ($t !== null) return array_merge($notes, $t);
             }
+        }
+        return null;
+    }
+
+    public const PREPOSITIONS = ['on', 'in', 'at', 'for', 'with', 'by', 'from', 'about', 'of', 'during', 'after', 'before', 'without', 'near'];
+    public const DETERMINERS = ['the', 'my', 'your', 'his', 'her', 'our', 'their', 'these', 'those'];
+
+    /**
+     * A plural -s left off a noun that the task already contains and that follows a preposition ("on sunday" for "on Sundays") is a
+     * copying slip, not a grammar error. Only there: after a preposition (with or without the, my ...) the word is never the subject,
+     * so a missing -s cannot hide a verb-agreement mistake.
+     * @return array|null a tip, or null when the answers differ in anything else
+     */
+    private static function pluralSlip(string $given, string $accepted, array $prompt, string $acceptedRaw): ?array
+    {
+        $g = explode(' ', $given);
+        $a = explode(' ', $accepted);
+        if (count($g) !== count($a)) return null;
+        $diff = [];
+        foreach ($a as $i => $w) if ($g[$i] !== $w) $diff[] = $i;
+        if (count($diff) !== 1) return null;
+        $i = $diff[0];
+        $w = $a[$i];
+        if (mb_strlen($w, 'UTF-8') < 5 || !isset($prompt[$w]) || !in_array($w, [$g[$i] . 's', $g[$i] . 'es'], true)) return null;
+        $prev = $a[$i - 1] ?? '';
+        $prev2 = $a[$i - 2] ?? '';
+        $afterPreposition = in_array($prev, self::PREPOSITIONS, true) || (in_array($prev, self::DETERMINERS, true) && in_array($prev2, self::PREPOSITIONS, true));
+        return $afterPreposition ? ["Check the ending: {$g[$i]} → " . self::shown($w, $acceptedRaw) . '.'] : null;
+    }
+
+    /** The word as it is written in the accepted answer (capital letter kept), for messages. */
+    private static function shown(string $token, string $raw): string
+    {
+        foreach (preg_split('/\s+/u', $raw, -1, PREG_SPLIT_NO_EMPTY) as $x) {
+            $x = trim($x, '.,?!;:"');
+            if (mb_strtolower($x, 'UTF-8') === $token) return $x;
+        }
+        return $token;
+    }
+
+    /** The accepted answer that differs from the given one in exactly one word: [what was written, what the answer has], or null. */
+    private static function nearMiss(string $given, array $accepted): ?array
+    {
+        $g = explode(' ', self::norm($given));
+        foreach ($accepted as $raw) {
+            $a = explode(' ', self::norm($raw));
+            if (count($a) !== count($g)) continue;
+            $diff = [];
+            foreach ($a as $i => $w) if ($g[$i] !== $w) $diff[] = $i;
+            if (count($diff) === 1) return [$g[$diff[0]], self::shown($a[$diff[0]], $raw)];
         }
         return null;
     }

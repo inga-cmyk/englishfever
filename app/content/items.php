@@ -138,11 +138,6 @@ return json_decode(<<<'EF_JSON_END'
 "\\b(he|she)\\s+(?!is\\b|was\\b|has\\b)\\w+s\\b",
 "Use he or she + a verb with -s, for example: she starts work at eight.",
 "Lieto he vai she + darbības vārdu ar -s, piemēram: she starts work at eight."
-],
-[
-"\\b(every|each)\\s+(day|morning|evening|week|weekday|afternoon)\\b|\\b(always|usually|often|sometimes|never)\\b",
-"Add a time word such as every day, usually or always.",
-"Pievieno laika vārdu, piemēram, every day, usually vai always."
 ]
 ],
 "model": "She starts work at eight every day.",
@@ -164,7 +159,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Questions in the present simple: do/does + subject + base verb. Sister = she, so does.",
 "wrong_why": {},
-"why_lv": "Jautājumi Present Simple: do/does + priekšmets + pamatforma. Sister = she, tāpēc does."
+"why_lv": "Jautājumi Present Simple: do/does + teik. priekšmets + pamatforma. Sister = she, tāpēc does."
 },
 {
 "id": "ps-A22-2a",
@@ -206,7 +201,7 @@ return json_decode(<<<'EF_JSON_END'
 "Pēc does lieto pamatformu: start, nevis starts."
 ]
 ],
-"why_lv": "Jautājums: What time + does + priekšmets + pamatforma."
+"why_lv": "Jautājums: What time + does + teik. priekšmets + pamatforma."
 },
 {
 "id": "ps-A22-3b",
@@ -735,7 +730,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Question word + is + subject + verb-ing.",
 "hints": [],
-"why_lv": "Jautājuma vārds + is + priekšmets + darbības vārds ar -ing."
+"why_lv": "Jautājamais vārds + is + teik. priekšmets + darbības vārds ar -ing."
 },
 {
 "id": "pc-B11-4a",
@@ -783,11 +778,6 @@ return json_decode(<<<'EF_JSON_END'
 "\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b",
 "Use am/is/are + verb-ing.",
 "Lieto am/is/are + darbības vārds ar -ing."
-],
-[
-"\\b(these days|nowadays|at the moment|now|this year|more and more|lately)\\b",
-"Add a time phrase such as these days or at the moment.",
-"Pievieno laika frāzi, piemēram, these days vai at the moment."
 ]
 ],
 "model": "More people are working from home these days.",
@@ -871,7 +861,7 @@ return json_decode(<<<'EF_JSON_END'
 "Pēc did lieto pamatformu: play, nevis played."
 ]
 ],
-"why_lv": "Jautājums: Did + priekšmets + pamatforma."
+"why_lv": "Jautājums: Did + teik. priekšmets + pamatforma."
 },
 {
 "id": "pa-A21-4a",
@@ -945,7 +935,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Past simple questions: did + subject + base verb.",
 "wrong_why": {},
-"why_lv": "Jautājumi Past Simple: did + priekšmets + pamatforma."
+"why_lv": "Jautājumi Past Simple: did + teik. priekšmets + pamatforma."
 },
 {
 "id": "pa-A22-2a",
@@ -1130,7 +1120,7 @@ return json_decode(<<<'EF_JSON_END'
 "Pēc did lieto pamatformu: move."
 ]
 ],
-"why_lv": "Jautājuma vārds + did + priekšmets + pamatforma."
+"why_lv": "Jautājamais vārds + did + teik. priekšmets + pamatforma."
 },
 {
 "id": "pa-B11-4a",
@@ -1891,7 +1881,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "How long + has + subject + past participle.",
 "hints": [],
-"why_lv": "How long + has + priekšmets + 3. forma."
+"why_lv": "How long + has + teik. priekšmets + 3. forma."
 },
 {
 "id": "pp-B11-4a",
@@ -2146,7 +2136,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "How long + have + subject + been + verb-ing.",
 "hints": [],
-"why_lv": "How long + have + priekšmets + been + darbības vārds ar -ing."
+"why_lv": "How long + have + teik. priekšmets + been + darbības vārds ar -ing."
 },
 {
 "id": "ppc-B11-4a",
@@ -3013,7 +3003,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive = be + past participle. English is singular, so is spoken.",
 "wrong_why": {},
-"why_lv": "Pasīvs = be + 3. forma. English ir vienskaitlī, tāpēc is spoken."
+"why_lv": "Ciešamā kārta = be + 3. forma. English ir vienskaitlī, tāpēc is spoken."
 },
 {
 "id": "psp-A22-2a",
@@ -3030,7 +3020,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "In a passive sentence the thing that receives the action is the subject: Rice is grown.",
 "wrong_why": {},
-"why_lv": "Pasīva teikumā priekšmets ir tas, kas saņem darbību: Rice is grown."
+"why_lv": "Ciešamās kārtas teikumā teikuma priekšmets ir tas, kas saņem darbību: Rice is grown."
 },
 {
 "id": "psp-A22-3a",
@@ -3049,10 +3039,10 @@ return json_decode(<<<'EF_JSON_END'
 [
 "\\bmakes\\b",
 "Use the passive: is made.",
-"Lieto pasīvu: is made."
+"Lieto ciešamo kārtu: is made."
 ]
 ],
-"why_lv": "Pasīvs Present Simple: is/are + 3. forma. Bread = it."
+"why_lv": "Ciešamā kārta, Present Simple: is/are + 3. forma. Bread = it."
 },
 {
 "id": "psp-A22-3b",
@@ -3085,7 +3075,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive needs the past participle: Coffee is grown in Brazil.",
 "wrong_why": {},
-"why_lv": "Pasīvam vajag 3. formu: Coffee is grown in Brazil."
+"why_lv": "Ciešamajai kārtai vajag 3. formu: Coffee is grown in Brazil."
 },
 {
 "id": "psp-A22-5a",
@@ -3102,7 +3092,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "We use the passive when the action or the object is more important than the person who does it.",
 "wrong_why": {},
-"why_lv": "Pasīvu lieto, kad svarīgāka ir darbība vai objekts, nevis darītājs."
+"why_lv": "Ciešamo kārtu lieto, kad svarīgāka ir darbība vai objekts, nevis darītājs."
 },
 {
 "id": "psp-A22-6a",
@@ -3137,7 +3127,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Question: be + subject + past participle. These phones = plural, so are.",
 "wrong_why": {},
-"why_lv": "Jautājums: be + priekšmets + 3. forma. These phones = daudzskaitlis, tāpēc are."
+"why_lv": "Jautājums: be + teik. priekšmets + 3. forma. These phones = daudzskaitlis, tāpēc are."
 },
 {
 "id": "psp-B11-2a",
@@ -3154,7 +3144,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "In the passive the subject (the report) is the focus.",
 "wrong_why": {},
-"why_lv": "Pasīvā uzmanība ir uz priekšmetu (the report)."
+"why_lv": "Ciešamajā kārtā uzmanība ir uz teikuma priekšmetu (the report)."
 },
 {
 "id": "psp-B11-3a",
@@ -3170,7 +3160,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive present simple: is + past participle.",
 "hints": [],
-"why_lv": "Pasīvs Present Simple: is + 3. forma."
+"why_lv": "Ciešamā kārta, Present Simple: is + 3. forma."
 },
 {
 "id": "psp-B11-3b",
@@ -3189,10 +3179,10 @@ return json_decode(<<<'EF_JSON_END'
 [
 "\\bsells\\b|\\bsell\\b",
 "Use the passive: is sold, not sells.",
-"Lieto pasīvu: is sold, nevis sells."
+"Lieto ciešamo kārtu: is sold, nevis sells."
 ]
 ],
-"why_lv": "Papildinātājs kļūst par priekšmetu. Darbības vārds: is/are + 3. forma. Fresh bread is sold here."
+"why_lv": "Papildinātājs kļūst par teikuma priekšmetu. Darbības vārds: is/are + 3. forma. Fresh bread is sold here."
 },
 {
 "id": "psp-B11-4a",
@@ -3209,7 +3199,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive questions need the past participle: Are the tickets checked at the door?",
 "wrong_why": {},
-"why_lv": "Pasīva jautājumiem vajag 3. formu: Are the tickets checked at the door?"
+"why_lv": "Jautājumiem ciešamajā kārtā vajag 3. formu: Are the tickets checked at the door?"
 },
 {
 "id": "psp-B11-5a",
@@ -3226,7 +3216,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive keeps the focus on the action and does not name a person.",
 "wrong_why": {},
-"why_lv": "Pasīvs saglabā uzmanību uz darbību un nenosauc cilvēku."
+"why_lv": "Ciešamā kārta saglabā uzmanību uz darbību un nenosauc cilvēku."
 },
 {
 "id": "psp-B11-6a",
@@ -3261,7 +3251,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive question: Is + subject + past participle.",
 "wrong_why": {},
-"why_lv": "Pasīva jautājums: Is + priekšmets + 3. forma."
+"why_lv": "Jautājums ciešamajā kārtā: Is + teik. priekšmets + 3. forma."
 },
 {
 "id": "psp-B12-2a",
@@ -3278,7 +3268,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The object (him) becomes the subject (He): He is often called Mo.",
 "wrong_why": {},
-"why_lv": "Papildinātājs (him) kļūst par priekšmetu (He): He is often called Mo."
+"why_lv": "Papildinātājs (him) kļūst par teikuma priekšmetu (He): He is often called Mo."
 },
 {
 "id": "psp-B12-3a",
@@ -3297,7 +3287,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive question: How often + is + subject + past participle.",
 "hints": [],
-"why_lv": "Pasīva jautājums: How often + is + priekšmets + 3. forma."
+"why_lv": "Jautājums ciešamajā kārtā: How often + is + teik. priekšmets + 3. forma."
 },
 {
 "id": "psp-B12-3b",
@@ -3331,7 +3321,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive needs the past participle: is sent.",
 "wrong_why": {},
-"why_lv": "Pasīvam vajag 3. formu: is sent."
+"why_lv": "Ciešamajai kārtai vajag 3. formu: is sent."
 },
 {
 "id": "psp-B12-5a",
@@ -3348,7 +3338,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive moves the focus to the data.",
 "wrong_why": {},
-"why_lv": "Pasīvs pārliek uzmanību uz datiem."
+"why_lv": "Ciešamā kārta pārliek uzmanību uz datiem."
 },
 {
 "id": "psp-B12-6a",
@@ -3388,7 +3378,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Past passive: was/were + past participle. Tower = it, so was built.",
 "wrong_why": {},
-"why_lv": "Pasīvs pagātnē: was/were + 3. forma. Tower = it, tāpēc was built."
+"why_lv": "Ciešamā kārta pagātnē: was/were + 3. forma. Tower = it, tāpēc was built."
 },
 {
 "id": "pasp-A22-2a",
@@ -3405,7 +3395,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The window receives the action. Passive: was + broken.",
 "wrong_why": {},
-"why_lv": "Logs saņem darbību. Pasīvs: was + broken."
+"why_lv": "Logs saņem darbību. Ciešamā kārta: was + broken."
 },
 {
 "id": "pasp-A22-3a",
@@ -3471,7 +3461,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive past: was/were + past participle. Bike = singular, so was stolen.",
 "wrong_why": {},
-"why_lv": "Pasīvs pagātnē: was/were + 3. forma. Bike = vienskaitlis, tāpēc was stolen."
+"why_lv": "Ciešamā kārta pagātnē: was/were + 3. forma. Bike = vienskaitlis, tāpēc was stolen."
 },
 {
 "id": "pasp-A22-6a",
@@ -3506,7 +3496,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive question in the past: When + was + subject + past participle.",
 "wrong_why": {},
-"why_lv": "Pasīva jautājums pagātnē: When + was + priekšmets + 3. forma."
+"why_lv": "Jautājums ciešamajā kārtā pagātnē: When + was + teik. priekšmets + 3. forma."
 },
 {
 "id": "pasp-B11-2a",
@@ -3542,7 +3532,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Question: Where + was + subject + past participle.",
 "hints": [],
-"why_lv": "Jautājums: Where + was + priekšmets + 3. forma."
+"why_lv": "Jautājums: Where + was + teik. priekšmets + 3. forma."
 },
 {
 "id": "pasp-B11-3b",
@@ -3561,10 +3551,10 @@ return json_decode(<<<'EF_JSON_END'
 [
 "\\bstole\\b",
 "Use the passive: was stolen.",
-"Lieto pasīvu: was stolen."
+"Lieto ciešamo kārtu: was stolen."
 ]
 ],
-"why_lv": "Pasīvs: was + 3. forma. Vārdu 'someone' izlaiž."
+"why_lv": "Ciešamā kārta: was + 3. forma. Vārdu 'someone' izlaiž."
 },
 {
 "id": "pasp-B11-4a",
@@ -3598,7 +3588,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive is common in news reports when the doer is unknown.",
 "wrong_why": {},
-"why_lv": "Ziņās bieži lieto pasīvu, ja darītājs nav zināms."
+"why_lv": "Ziņās bieži lieto ciešamo kārtu, ja darītājs nav zināms."
 },
 {
 "id": "pasp-B11-6a",
@@ -3655,7 +3645,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Active object (two men) becomes passive subject: Two men were arrested.",
 "wrong_why": {},
-"why_lv": "Aktīva teikuma papildinātājs (two men) kļūst par pasīva priekšmetu: Two men were arrested."
+"why_lv": "Darāmās kārtas teikuma papildinātājs (two men) kļūst par ciešamās kārtas teikuma priekšmetu: Two men were arrested."
 },
 {
 "id": "pasp-B12-3a",
@@ -3675,7 +3665,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Two passives: was cancelled, were given.",
 "hints": [],
-"why_lv": "Divi pasīvi: was cancelled, were given."
+"why_lv": "Divas ciešamās kārtas formas: was cancelled, were given."
 },
 {
 "id": "pasp-B12-3b",
@@ -3694,7 +3684,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "New workers is the subject. Was/were + past participle.",
 "hints": [],
-"why_lv": "New workers ir priekšmets. Was/were + 3. forma."
+"why_lv": "New workers ir teikuma priekšmets. Was/were + 3. forma."
 },
 {
 "id": "pasp-B12-4a",
@@ -3728,7 +3718,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive hides the doer and sounds more neutral.",
 "wrong_why": {},
-"why_lv": "Pasīvs paslēpj darītāju un skan neitrālāk."
+"why_lv": "Ciešamā kārta paslēpj darītāju un skan neitrālāk."
 },
 {
 "id": "pasp-B12-6a",
@@ -3768,7 +3758,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Present continuous passive: am/is/are being + past participle.",
 "wrong_why": {},
-"why_lv": "Present Continuous pasīvs: am/is/are being + 3. forma."
+"why_lv": "Present Continuous ciešamajā kārtā: am/is/are being + 3. forma."
 },
 {
 "id": "pcp-B12-2a",
@@ -3886,7 +3876,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Present perfect passive: has/have been + past participle.",
 "wrong_why": {},
-"why_lv": "Present Perfect pasīvs: has/have been + 3. forma."
+"why_lv": "Present Perfect ciešamajā kārtā: has/have been + 3. forma."
 },
 {
 "id": "ppp-B11-2a",
@@ -3969,7 +3959,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The present perfect passive links the past action with now.",
 "wrong_why": {},
-"why_lv": "Present Perfect pasīvs savieno pagātnes darbību ar tagadni."
+"why_lv": "Present Perfect ciešamajā kārtā savieno pagātnes darbību ar tagadni."
 },
 {
 "id": "ppp-B11-6a",
@@ -4004,7 +3994,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Question: Has + subject + been + past participle.",
 "wrong_why": {},
-"why_lv": "Jautājums: Has + priekšmets + been + 3. forma."
+"why_lv": "Jautājums: Has + teik. priekšmets + been + 3. forma."
 },
 {
 "id": "ppp-B12-2a",
@@ -4021,7 +4011,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The present perfect passive is used for recent news with a result now.",
 "wrong_why": {},
-"why_lv": "Present Perfect pasīvu lieto jaunākajām ziņām ar rezultātu tagad."
+"why_lv": "Present Perfect ciešamajā kārtā lieto jaunākajām ziņām ar rezultātu tagad."
 },
 {
 "id": "ppp-B12-3a",
@@ -4127,7 +4117,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Future passive: will be + past participle.",
 "wrong_why": {},
-"why_lv": "Nākotnes pasīvs: will be + 3. forma."
+"why_lv": "Ciešamā kārta nākotnē: will be + 3. forma."
 },
 {
 "id": "fup-B11-2a",
@@ -4210,7 +4200,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive keeps the focus on the files.",
 "wrong_why": {},
-"why_lv": "Pasīvs saglabā uzmanību uz failiem."
+"why_lv": "Ciešamā kārta saglabā uzmanību uz failiem."
 },
 {
 "id": "fup-B11-6a",
@@ -4245,7 +4235,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Passive question: Will + subject + be + past participle.",
 "wrong_why": {},
-"why_lv": "Pasīva jautājums: Will + priekšmets + be + 3. forma."
+"why_lv": "Jautājums ciešamajā kārtā: Will + teik. priekšmets + be + 3. forma."
 },
 {
 "id": "fup-B12-2a",
@@ -4328,7 +4318,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Announcements often use the passive: will be informed.",
 "wrong_why": {},
-"why_lv": "Paziņojumos bieži lieto pasīvu: will be informed."
+"why_lv": "Paziņojumos bieži lieto ciešamo kārtu: will be informed."
 },
 {
 "id": "fup-B12-6a",
@@ -4892,11 +4882,6 @@ return json_decode(<<<'EF_JSON_END'
 "\\bunless\\b",
 "Use unless.",
 "Lieto unless."
-],
-[
-"\\b(will|won't|'ll)\\b",
-"Use will or won't in the other part.",
-"Otrajā daļā lieto will vai won't."
 ]
 ],
 "model": "Unless I leave now, I will miss my train.",
@@ -5159,9 +5144,9 @@ return json_decode(<<<'EF_JSON_END'
 "Otrajā daļā lieto would."
 ],
 [
-"^(?!\\s*if\\b[^,]*\\b(will|would)\\b)",
-"Use the past simple after if (no would), and put a comma after the if-part.",
-"Pēc if lieto Past Simple (bez would) un pēc if daļas liec komatu."
+"^(?!\\s*if\\b(?:[^,]*\\b(?:will|would)\\b[^,]*,|(?!.*,)\\s+(?:(?:the|my|our|your|his|her|their|this|that)\\s+)?\\w+\\s+(?:would|will|'d)\\b))",
+"Use the past simple after if (not would): If I won a holiday, I would go to Iceland.",
+"Pēc if lieto Past Simple (bez would): If I won a holiday, I would go to Iceland."
 ]
 ],
 "model": "If I won a free holiday, I would go to Iceland.",
@@ -5332,9 +5317,9 @@ return json_decode(<<<'EF_JSON_END'
 "Otrajā daļā lieto would."
 ],
 [
-"^(?!\\s*if\\b[^,]*\\b(will|would)\\b)",
-"Use the past simple after if, and put a comma after the if-part.",
-"Pēc if lieto Past Simple un pēc if daļas liec komatu."
+"^(?!\\s*if\\b(?:[^,]*\\b(?:will|would)\\b[^,]*,|(?!.*,)\\s+(?:(?:the|my|our|your|his|her|their|this|that)\\s+)?\\w+\\s+(?:would|will|'d)\\b))",
+"Use the past simple after if (not would): If I were a pilot, I would fly.",
+"Pēc if lieto Past Simple (bez would): If I were a pilot, I would fly."
 ]
 ],
 "model": "If I were a pilot, I would fly to Iceland every weekend.",
@@ -5777,8 +5762,8 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Write a sentence about what would have happened in history if one thing had been different (for example a famous discovery).",
 "must": [
 [
-"^\\s*if\\b",
-"Start with If."
+"\\bif\\b",
+"Use if."
 ],
 [
 "\\bhad(n't| not)?\\b",
@@ -5985,8 +5970,8 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Write a mixed conditional sentence: a present quality + a past result (for example: If I were braver, I would have ...).",
 "must": [
 [
-"^\\s*if\\b",
-"Start with If."
+"\\bif\\b",
+"Use if."
 ],
 [
 "\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
@@ -6571,7 +6556,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "Reported speech: said + subject + backshifted verb. Today becomes that day.",
-"why_lv": "Netiešā runa: said + priekšmets + darbības vārds, kas iet soli atpakaļ. Today kļūst par that day."
+"why_lv": "Netiešā runa: said + teik. priekšmets + darbības vārds, kas iet soli atpakaļ. Today kļūst par that day."
 },
 {
 "id": "rs-B21-1a",
@@ -6696,7 +6681,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "In a reported question we use normal word order (subject + verb) and no do / does / did.",
 "wrong_why": {},
-"why_lv": "Netiešajā jautājumā lieto parasto vārdu secību (priekšmets + darbības vārds) un bez do / does / did."
+"why_lv": "Netiešajā jautājumā lieto parasto vārdu secību (teik. priekšmets + darbības vārds) un bez do / does / did."
 },
 {
 "id": "rq-B12-2a",
@@ -6769,7 +6754,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Yes/no question: asked + if / whether + subject + verb.",
 "wrong_why": {},
-"why_lv": "Jā/nē jautājums: asked + if / whether + priekšmets + darbības vārds."
+"why_lv": "Jā/nē jautājums: asked + if / whether + teik. priekšmets + darbības vārds."
 },
 {
 "id": "rq-B12-6a",
@@ -6825,7 +6810,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "Reported question: asked + question word + subject + verb.",
-"why_lv": "Netiešais jautājums: asked + jautājuma vārds + priekšmets + darbības vārds."
+"why_lv": "Netiešais jautājums: asked + jautājamais vārds + teik. priekšmets + darbības vārds."
 },
 {
 "id": "rq-B12-3c",
@@ -6841,7 +6826,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "Yes/no question: asked + if + subject + verb.",
-"why_lv": "Jā/nē jautājums: asked + if + priekšmets + darbības vārds."
+"why_lv": "Jā/nē jautājums: asked + if + teik. priekšmets + darbības vārds."
 },
 {
 "id": "rq-B21-1a",
@@ -7422,7 +7407,7 @@ return json_decode(<<<'EF_JSON_END'
 [
 "does|live$",
 "No does in the indirect part: ... where Anna lives.",
-"Netiešajā daļā nav does: ... where Anna lives."
+"Palīgteikumā nav does: ... where Anna lives."
 ]
 ],
 "why_lv": "Netiešajā jautājumā does nav: where Anna lives."
@@ -7442,7 +7427,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "No does after the question word in an indirect question: what time the film starts.",
 "wrong_why": {},
-"why_lv": "Netiešajā jautājumā pēc jautājuma vārda nav does: what time the film starts."
+"why_lv": "Netiešajā jautājumā pēc jautājamā vārda nav does: what time the film starts."
 },
 {
 "id": "ip-B11-5a",
@@ -7498,7 +7483,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "Polite phrase + question word + subject + verb.",
-"why_lv": "Pieklājīga frāze + jautājuma vārds + priekšmets + darbības vārds."
+"why_lv": "Pieklājīga frāze + jautājamais vārds + teik. priekšmets + darbības vārds."
 },
 {
 "id": "ip-B11-3c",
@@ -7514,7 +7499,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "Do you know + question word + subject + verb (no does).",
-"why_lv": "Do you know + jautājuma vārds + priekšmets + darbības vārds (bez does)."
+"why_lv": "Do you know + jautājamais vārds + teik. priekšmets + darbības vārds (bez does)."
 },
 {
 "id": "ip-B12-1a",
@@ -7548,7 +7533,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "In an indirect question the verb comes after the subject.",
 "wrong_why": {},
-"why_lv": "Netiešajā jautājumā darbības vārds ir aiz priekšmeta."
+"why_lv": "Netiešajā jautājumā darbības vārds ir aiz teikuma priekšmeta."
 },
 {
 "id": "ip-B12-3a",
@@ -7571,10 +7556,10 @@ return json_decode(<<<'EF_JSON_END'
 [
 "does",
 "No does in the indirect part: ... what time the museum closes.",
-"Netiešajā daļā nav does: ... what time the museum closes."
+"Palīgteikumā nav does: ... what time the museum closes."
 ]
 ],
-"why_lv": "Pieklājīga frāze + what time + priekšmets + darbības vārds. Bez does."
+"why_lv": "Pieklājīga frāze + what time + teik. priekšmets + darbības vārds. Bez does."
 },
 {
 "id": "ip-B12-4a",
@@ -7608,7 +7593,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Could you let me know + whether / if + subject + verb.",
 "wrong_why": {},
-"why_lv": "Could you let me know + whether / if + priekšmets + darbības vārds."
+"why_lv": "Could you let me know + whether / if + teik. priekšmets + darbības vārds."
 },
 {
 "id": "ip-B12-6a",
@@ -7631,7 +7616,7 @@ return json_decode(<<<'EF_JSON_END'
 [
 "^(?!.*\\bdoes\\b)",
 "No does in the indirect part.",
-"Netiešajā daļā nav does."
+"Palīgteikumā nav does."
 ]
 ],
 "model": "Do you know if the café takes cards?",
@@ -7652,7 +7637,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "I wonder + question word + subject + verb.",
-"why_lv": "I wonder + jautājuma vārds + priekšmets + darbības vārds."
+"why_lv": "I wonder + jautājamais vārds + teik. priekšmets + darbības vārds."
 },
 {
 "id": "ip-B21-1a",

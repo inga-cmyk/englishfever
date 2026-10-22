@@ -150,6 +150,7 @@ final class Engine
             'show' => $g['show'],
             'specific' => $g['specific'],
             'notes' => $g['notes'] ?? [],
+            'near' => !empty($g['near']),
             'why' => $item['why'],
             'skill' => $skill,
             'kind' => $item['kind'],

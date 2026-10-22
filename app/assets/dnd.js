@@ -10,42 +10,74 @@
     return el && el.closest ? el.closest('[data-drop]') : null;
   }
 
-  /** Make a card draggable. hooks: locked(), tap(card), drop(card, target, x, y), over(target or null) */
+  var active = null; // the drag in progress: only one at a time
+
+  /**
+   * End any drag and remove every floating copy. Safe to call at any moment: before a new drag, when a new task is shown,
+   * when the window loses focus. A copy can therefore never stay on the screen.
+   */
+  function clearDrag() {
+    var a = active;
+    active = null;
+    if (a) {
+      window.removeEventListener('pointermove', a.move, true);
+      window.removeEventListener('pointerup', a.up, true);
+      window.removeEventListener('pointercancel', a.stop, true);
+      window.removeEventListener('blur', a.stop);
+      window.removeEventListener('keydown', a.key, true);
+      try { a.card.releasePointerCapture(a.pid); } catch (er) {}
+      a.card.classList.remove('dragging');
+      a.hooks.over(null);
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('.chip.ghost'), function (g) { g.remove(); });
+    document.documentElement.classList.remove('dnd-dragging');
+  }
+  document.addEventListener('visibilitychange', clearDrag);
+
+  /**
+   * Make a card draggable. hooks: locked(), tap(id), drop(id, target, x, y), over(target or null).
+   * The listeners live on the window, not on the card: the card may be replaced while it is being dragged, and a release
+   * outside the card or the window must still end the drag.
+   */
   function drag(card, hooks) {
+    var id = +card.getAttribute('data-id');
+    card.addEventListener('dragstart', function (e) { e.preventDefault(); });
     card.addEventListener('pointerdown', function (e) {
       if (hooks.locked() || (e.pointerType === 'mouse' && e.button !== 0)) return;
-      var sx = e.clientX, sy = e.clientY, moved = false, ghost = null, pid = e.pointerId;
-      try { card.setPointerCapture(pid); } catch (er) {}
-      function done() {
-        card.removeEventListener('pointermove', move); card.removeEventListener('pointerup', up); card.removeEventListener('pointercancel', cancel);
-        try { card.releasePointerCapture(pid); } catch (er) {}
-        if (ghost) ghost.remove();
-        card.classList.remove('dragging'); hooks.over(null);
-      }
-      function move(ev) {
-        if (ev.pointerId !== pid) return;
-        if (!moved && Math.hypot(ev.clientX - sx, ev.clientY - sy) > 6) {
-          moved = true;
-          ghost = card.cloneNode(true); ghost.className = 'chip ghost'; ghost.style.width = card.offsetWidth + 'px';
-          document.body.appendChild(ghost); card.classList.add('dragging');
+      clearDrag(); // a left-over drag or copy never survives a new one
+      var a = active = { card: card, hooks: hooks, pid: e.pointerId, sx: e.clientX, sy: e.clientY, moved: false, ghost: null };
+      try { card.setPointerCapture(a.pid); } catch (er) {}
+      a.move = function (ev) {
+        if (active !== a || ev.pointerId !== a.pid) return;
+        if (ev.pointerType === 'mouse' && ev.buttons === 0) return clearDrag(); // the button was let go where we did not see it
+        if (!a.moved && Math.hypot(ev.clientX - a.sx, ev.clientY - a.sy) > 6) {
+          a.moved = true;
+          a.ghost = card.cloneNode(true); a.ghost.className = 'chip ghost'; a.ghost.style.width = card.offsetWidth + 'px';
+          document.body.appendChild(a.ghost); card.classList.add('dragging');
+          document.documentElement.classList.add('dnd-dragging');
         }
-        if (moved) {
-          ghost.style.left = (ev.clientX - ghost.offsetWidth / 2) + 'px'; ghost.style.top = (ev.clientY - ghost.offsetHeight / 2) + 'px';
+        if (a.moved) {
+          a.ghost.style.left = (ev.clientX - a.ghost.offsetWidth / 2) + 'px'; a.ghost.style.top = (ev.clientY - a.ghost.offsetHeight / 2) + 'px';
           hooks.over(targetAt(ev.clientX, ev.clientY));
         }
-      }
-      function up(ev) {
-        if (ev.pointerId !== pid) return;
-        var wasMoved = moved, t = moved ? targetAt(ev.clientX, ev.clientY) : null;
-        done();
-        if (!wasMoved) hooks.tap(card);
-        else if (t) hooks.drop(card, t, ev.clientX, ev.clientY);
-      }
-      function cancel(ev) { if (ev.pointerId === pid) done(); }
-      card.addEventListener('pointermove', move); card.addEventListener('pointerup', up); card.addEventListener('pointercancel', cancel);
+      };
+      a.up = function (ev) {
+        if (active !== a || ev.pointerId !== a.pid) return;
+        var wasMoved = a.moved, t = wasMoved ? targetAt(ev.clientX, ev.clientY) : null;
+        clearDrag();
+        if (!wasMoved) hooks.tap(id);
+        else if (t) hooks.drop(id, t, ev.clientX, ev.clientY);
+      };
+      a.stop = function () { if (active === a) clearDrag(); };               // pointercancel, window blur
+      a.key = function (ev) { if (ev.key === 'Escape') a.stop(); };
+      window.addEventListener('pointermove', a.move, true);
+      window.addEventListener('pointerup', a.up, true);
+      window.addEventListener('pointercancel', a.stop, true);
+      window.addEventListener('blur', a.stop);
+      window.addEventListener('keydown', a.key, true);
     });
     // Enter / Space on a focused card (a click with no pointer: detail is 0)
-    card.addEventListener('click', function (e) { if (e.detail === 0 && !hooks.locked()) hooks.tap(card); });
+    card.addEventListener('click', function (e) { if (e.detail === 0 && !hooks.locked()) hooks.tap(id); });
   }
 
   function chip(text, id) {
@@ -84,13 +116,11 @@
     }
     var hooks = {
       locked: function () { return locked; },
-      tap: function (card) {
-        var id = +card.getAttribute('data-id');
+      tap: function (id) {
         if (inLine(id)) line.splice(line.indexOf(id), 1); else line.push(id);
         render();
       },
-      drop: function (card, target, x, y) {
-        var id = +card.getAttribute('data-id');
+      drop: function (id, target, x, y) {
         var was = line.indexOf(id);
         if (was >= 0) line.splice(was, 1);
         if (target.getAttribute('data-drop') === 'line') {
@@ -140,14 +170,14 @@
     }
     var hooks = {
       locked: function () { return locked; },
-      tap: function (card) {
-        var id = +card.getAttribute('data-id'), at = slotOf(id);
+      tap: function (id) {
+        var at = slotOf(id);
         if (at >= 0) { slotCard[at] = null; }
         else { var free = slotCard.indexOf(null); if (free >= 0) slotCard[free] = id; }
         render();
       },
-      drop: function (card, target) {
-        var id = +card.getAttribute('data-id'), from = slotOf(id);
+      drop: function (id, target) {
+        var from = slotOf(id);
         if (target.getAttribute('data-drop') === 'slot') {
           var to = +target.getAttribute('data-slot'), occupant = slotCard[to];
           slotCard[to] = id;
@@ -192,5 +222,5 @@
     return { sentence: sentence, el: h('div', { class: 'dnd' }, board.bank), answer: board.answer, complete: board.complete, lock: board.lock, mark: board.mark };
   }
 
-  window.DnD = { order: order, match: match, bankGap: bankGap };
+  window.DnD = { order: order, match: match, bankGap: bankGap, clear: clearDrag };
 })();

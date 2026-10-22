@@ -27,7 +27,7 @@
   function skillById(id) { return state.meta.skills.filter(function (s) { return s.id === id; })[0]; }
   function pct(c, n) { return n ? Math.round(100 * c / n) : 0; }
   function loading() { return h('div', { class: 'loading', role: 'status' }, h('div', { class: 'spin' }), h('span', { class: 'sr' }, 'Loading')); }
-  function show(node) { root.replaceChildren(node); window.scrollTo(0, 0); var hd = node.querySelector && node.querySelector('h1'); if (hd) { hd.setAttribute('tabindex', '-1'); hd.focus({ preventScroll: true }); } }
+  function show(node) { if (window.DnD) DnD.clear(); root.replaceChildren(node); window.scrollTo(0, 0); var hd = node.querySelector && node.querySelector('h1'); if (hd) { hd.setAttribute('tabindex', '-1'); hd.focus({ preventScroll: true }); } }
   function fail(e) {
     if (e && e.status === 401 && state.user && state.user.role === 'teacher') {
       return show(h('div', { class: 'card', style: 'max-width:520px;margin:30px auto' }, h('h2', null, 'Please sign in again'), h('p', null, e.message),
@@ -46,9 +46,14 @@
   function isIos() { return /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); }
   function isPhoneLike() { return (window.matchMedia && window.matchMedia('(max-width: 900px)').matches) || isIos() || /android/i.test(navigator.userAgent); }
 
-  /** A short card that tells people how to put the app on their home screen. */
+  /**
+   * A short card about putting the app on the home screen (phones) or installing it (computers whose browser offers a real install button).
+   * A computer without an install button gets nothing: there is no honest one-line instruction that fits every browser.
+   */
   function installCard(always) {
-    if (isStandalone() || (!always && !isPhoneLike())) return null;
+    var phone = isPhoneLike();
+    if (isStandalone() || (!always && !phone)) return null;
+    if (!phone && !deferredInstall) return null;
     if (!always) { try { if (Date.now() - (+localStorage.getItem('ef_install_hidden') || 0) < 30 * 86400000) return null; } catch (e) {} }
     var how;
     if (deferredInstall) {
@@ -57,11 +62,13 @@
       } }, 'Install the app');
     } else if (isIos()) {
       how = h('span', { class: 'small' }, 'In Safari tap ', h('b', null, 'Share'), ' (the square with an arrow), then ', h('b', null, 'Add to Home Screen'), '.');
+    } else if (/android/i.test(navigator.userAgent)) {
+      how = h('span', { class: 'small' }, 'On your phone, open the browser menu (⋮) and choose ', h('b', null, 'Install app'), ' or ', h('b', null, 'Add to Home screen'), '.');
     } else {
-      how = h('span', { class: 'small' }, 'In your browser menu (⋮) choose ', h('b', null, 'Install app'), ' or ', h('b', null, 'Add to Home screen'), '.');
+      return null;
     }
     return h('div', { id: 'install-card', class: 'card pad-s row between', style: 'margin-bottom:16px' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, 'Add to your home screen'), h('div', { style: 'margin-top:6px' }, how)),
+      h('div', null, h('b', { style: 'color:var(--text)' }, phone ? 'Add to your phone’s home screen' : 'Install the app on this computer'), h('div', { style: 'margin-top:6px' }, how)),
       always ? null : h('button', { class: 'linkbtn small', onclick: function () { try { localStorage.setItem('ef_install_hidden', String(Date.now())); } catch (e) {} var c = document.getElementById('install-card'); if (c) c.remove(); } }, 'Not now'));
   }
 
@@ -646,7 +653,7 @@
         api('account/profile', { lang: state.user.lang }).catch(function () {});
         drawFeedback(r, ans, false);
       } }, lv ? 'English' : 'Latviski') : null;
-      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (it.kind === 'write' ? 'Almost – check these points' : 'Not quite'),
+      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (it.kind === 'write' ? 'Almost – check these points' : (res.near ? 'Almost – one word to check' : 'Not quite')),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));

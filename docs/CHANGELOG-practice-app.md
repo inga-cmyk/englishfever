@@ -3,6 +3,8 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Topic list:** fold-away areas (the one practised last is open), only topics in reach are listed with *Show topics for higher levels (N)* for the rest, *Practise* starts a session in that topic at once (*Options* opens the picker), cards say *New / Started / ≈ level* and "2 done · 100% correct" instead of "2 tasks". Same rule in the picker.
+- **Sound, off by default:** soft tones for right / wrong / almost / finished, switch in Profile and a speaker button in the session; kept on the device; made in the browser.
 - **Examples in italics** in all explanations, English and Latvian, in the feedback and on the rule cards (for example, in *Pēc does lieto pamatformu: start, nevis starts* the English words are italic): marked in the data and checked by the build; see PRACTICE-APP.md (Maintenance).
 - **Look back at earlier tasks** (read-only): numbered dots under the progress bar (green = correct, pink dashed = not correct, gold ring = where you are) and a *‹ Previous* link. Clicking an answered task shows the question, the saved answer (also for drag-and-drop tasks) and the feedback; *Back to task N* returns. Answers cannot be changed afterwards: they are already recorded and decide the next task. The list survives a reload in the same tab.
 - **Stuck drag copy fixed:** a floating word could stay on the screen (even over the next task). It is now removed in every case (release outside the card or window, Escape, window loses focus, a new press, a new page).

@@ -18,6 +18,35 @@
   function levelRange(s) { return s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''); }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   function dashboardUrl() { return (state.config && (state.config.dashboard_url || state.config.site_url)) || ''; }
+  // ───── which topics are in reach ─────
+  function levelIdx(l) { return state.meta.levels.indexOf(l); }
+  /** The learner's level: the placement result, else the average of the topic estimates, else unknown (null). */
+  function learnerLevel(d) {
+    if (d && d.placement && d.placement.report && d.placement.report.overall_level) return d.placement.report.overall_level;
+    var est = d ? d.skills.filter(function (s) { return s.level_est; }).map(function (s) { return levelIdx(s.level_est); }) : [];
+    if (!est.length) return null;
+    return state.meta.levels[Math.round(est.reduce(function (a, b) { return a + b; }, 0) / est.length)];
+  }
+  /** Topics whose tasks start more than two sub-levels above the learner (A2.1 while the level is unknown) wait behind a link. Topics already practised always show. */
+  function inReach(s, d) { var l = learnerLevel(d); return s.n > 0 || levelIdx(s.levels[0]) <= (l ? levelIdx(l) : 0) + 2; }
+  function showHigh() { try { return localStorage.getItem('ef_show_high') === '1'; } catch (e) { return false; } }
+  function setShowHigh(v) { try { localStorage.setItem('ef_show_high', v ? '1' : '0'); } catch (e) {} }
+  /** The level to practise a topic at: its own estimate, else the learner's level kept inside the levels the topic has. */
+  function topicLevel(s, d) {
+    if (s.level_est) return s.level_est;
+    var l = learnerLevel(d);
+    if (!l) return s.levels[0];
+    return state.meta.levels[Math.max(levelIdx(s.levels[0]), Math.min(levelIdx(s.levels[s.levels.length - 1]), levelIdx(l)))];
+  }
+  /** One tap: a 10-task session in this topic. */
+  function startTopic(btn, s, d) {
+    btn.disabled = true;
+    api('session/start', { mode: 'practice', skills: [s.id], level: topicLevel(s, d), length: 10 }).then(function (r) {
+      state.sess = newSess(r.session, r.item); location.hash = '#/session';
+    }).catch(function (e) { btn.disabled = false; UI.toast(e.message); });
+  }
+  function openAreas() { try { return JSON.parse(localStorage.getItem('ef_areas') || '{}') || {}; } catch (e) { return {}; } }
+  function rememberArea(id, open) { try { var m = openAreas(); m[id] = open; localStorage.setItem('ef_areas', JSON.stringify(m)); } catch (e) {} }
   function bloomName(n) { return state.meta.bloom[String(n)].name; }
   function bloomDots(n) {
     var d = h('span', { class: 'bloomdots', title: 'Thinking level ' + n + ' of 6: ' + bloomName(n) });
@@ -390,11 +419,7 @@
         h('div', { class: 'card' }, h('h2', null, 'This week'), weekChart(d.week)),
         h('div', { class: 'card' }, h('h2', null, 'Your thinking skills'), bloomBars(d.bloom))));
 
-      nodes.push(h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'Your topics'), h('a', { href: '#/rules', class: 'small' }, 'Rule cards')),
-        state.meta.areas.map(function (a) {
-          var list = d.skills.filter(function (s) { return s.area === a.id; });
-          return list.length ? h('div', { class: 'area-block' }, h('div', { class: 'label' }, a.label), h('div', { class: 'skillgrid' }, list.map(skillCard))) : null;
-        })));
+      nodes.push(topicsCard(d));
       show(h('div', null, nodes));
     }).catch(fail);
   }
@@ -433,13 +458,49 @@
     }));
   }
 
-  function skillCard(s) {
+  /** "Your topics" on Home: fold-away areas, only the topics in reach, a link for the rest. */
+  function topicsCard(d) {
+    var holder = h('div');
+    // the area practised last is open; the others stay folded until the learner opens them (and the choice is remembered)
+    var latest = d.skills.slice().sort(function (a, b) { return b.last - a.last; })[0];
+    var openArea = (latest && latest.last) ? latest.area : state.meta.areas[0].id;
+    function draw() {
+      var high = showHigh(), hidden = 0, saved = openAreas();
+      var areas = state.meta.areas.map(function (a) {
+        var all = d.skills.filter(function (s) { return s.area === a.id; });
+        var list = all.filter(function (s) { return high || inReach(s, d); });
+        hidden += all.length - list.length;
+        if (!list.length) return null;
+        var started = list.filter(function (s) { return s.n > 0; }).length;
+        var det = h('details', { class: 'area-fold', open: (a.id in saved) ? !!saved[a.id] : a.id === openArea },
+          h('summary', null, h('span', { class: 'h3' }, a.label), h('span', { class: 'small muted' }, started + ' of ' + list.length + ' started')),
+          h('div', { class: 'skillgrid' }, list.map(function (s) { return skillCard(s, d); })));
+        det.addEventListener('toggle', function () { rememberArea(a.id, det.open); });
+        return det;
+      });
+      holder.replaceChildren.apply(holder, areas.concat([highLink(hidden, high, draw)]));
+    }
+    draw();
+    return h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'Your topics'), h('a', { href: '#/rules', class: 'small' }, 'Rule cards')), holder);
+  }
+
+  /** The link under a topic list: show or hide the topics that are well above the learner's level. */
+  function highLink(hidden, high, redraw) {
+    if (!hidden && !high) return null;
+    return h('p', { style: 'margin:14px 0 0' }, h('button', { type: 'button', class: 'linkbtn small', onclick: function () { setShowHigh(!high); redraw(); } },
+      high ? 'Hide topics for higher levels' : 'Show topics for higher levels (' + hidden + ')'));
+  }
+
+  function skillCard(s, d) {
+    var go = h('button', { class: 'btn ghost small', type: 'button', onclick: function () { startTopic(go, s, d); } }, 'Practise');
     return h('div', { class: 'skill' },
-      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, areaLabel(s.area) + ' · ' + levelRange(s))),
-        s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'pill' }, s.n ? s.n + (s.n === 1 ? ' task' : ' tasks') : 'New')),
+      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, levelRange(s))),
+        s.level_est ? h('span', { class: 'pill dark', title: 'Your estimated level in this topic' }, '≈ ' + s.level_est) : h('span', { class: 'pill' }, s.n ? 'Started' : 'New')),
       h('div', { class: 'meter gold', 'aria-label': 'Accuracy' }, h('i', { style: 'width:' + (s.accuracy || 0) + '%' })),
-      h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.accuracy + '% correct · ' + s.n + ' tasks' : 'Not started'),
-        h('button', { class: 'linkbtn small', onclick: function () { state.prefill = { skills: [s.id], level: s.level_est || s.levels[0] }; location.hash = '#/practice'; } }, 'Practise')));
+      h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.n + ' done · ' + s.accuracy + '% correct' : 'Not started'),
+        h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' },
+          h('button', { class: 'linkbtn small', type: 'button', title: 'Choose the level and the number of tasks', onclick: function () { state.prefill = { skills: [s.id], level: topicLevel(s, d) }; location.hash = '#/practice'; } }, 'Options'),
+          go)));
   }
 
   // ───────── placement ─────────
@@ -463,6 +524,7 @@
 
   // ───────── practice picker ─────────
   function viewPractice() {
+    if (!state.dash) { var pf = state.prefill; return refreshDash().then(function () { state.prefill = pf; viewPractice(); }).catch(fail); }
     var d = state.dash;
     var pre = state.prefill; state.prefill = null;
     var guess = (d && d.placement && d.placement.report) ? d.placement.report.overall_level : 'A2.2';
@@ -480,7 +542,10 @@
     }
     var closed = {};
     function group(area) {
-      var list = state.meta.skills.filter(function (s) { return s.area === area.id; });
+      var every = state.meta.skills.filter(function (s) { return s.area === area.id; });
+      var dashOf = function (s) { return d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }; };
+      var list = every.filter(function (s) { return showHigh() || selected[s.id] || inReach(dashOf(s), d); });
+      if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: !closed[area.id] },
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', 'data-cnt': area.id, style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
@@ -501,7 +566,9 @@
     }
     var holder = h('div');
     function redraw() {
+      var hiddenN = state.meta.skills.filter(function (s) { return !(showHigh() || selected[s.id] || inReach(d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }, d)); }).length;
       holder.replaceChildren.apply(holder, state.meta.areas.map(group).concat([
+        highLink(hiddenN, showHigh(), redraw),
         h('div', { class: 'picker-group' }, h('h3', null, 'Level'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Level' }, state.meta.levels.map(function (l) {
             return h('label', null, h('input', { type: 'radio', name: 'lv', value: l, checked: l === level, onchange: function () { level = l; update(); } }), h('span', null, l));
@@ -624,6 +691,7 @@
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
         lock(); showFeedback(r, ans); drawDots(); drawPrev();
+        Sound.play(r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
         if (r.done) S.summary = r.summary;
       }).catch(function (e) {
         submit.disabled = false;
@@ -725,7 +793,7 @@
     var lastCheer = null;
 
     function next(r) {
-      if (r.done) { state.sess = null; state.lastSummary = r.summary; go('#/summary'); return; }
+      if (r.done) { state.sess = null; state.lastSummary = r.summary; Sound.play('done'); go('#/summary'); return; }
       state.sess = newSess(r.session, r.next, S.history);
       viewSession();
     }
@@ -756,7 +824,7 @@
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' },
       h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Task ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
-        h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
+        h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, soundButton(), h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
       h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(ses.length), 'aria-valuenow': String(done) }, h('i', { id: 'prog', style: 'width:' + Math.round(100 * done / ses.length) + '%' })),
       dotsEl,
       h('div', { class: 'card task' },
@@ -930,6 +998,7 @@
     if (guest) cards.push(guestBanner());
     cards.push(avatarCard());
     cards.push(langCard());
+    cards.push(soundCard());
     var study = studyProfileCard(); if (study) cards.push(study);
     var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
@@ -945,6 +1014,29 @@
       api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
     } }, icon('logout'), guest ? 'Leave guest session' : 'Sign out')));
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
+  }
+
+  /** A small speaker button in a practice session. Sounds are off until switched on (here or in Profile). */
+  function soundButton() {
+    var b = h('button', { type: 'button', class: 'linkbtn small speaker' });
+    function draw() {
+      var on = Sound.on();
+      b.replaceChildren(icon(on ? 'volume' : 'mute'));
+      b.setAttribute('aria-pressed', String(on));
+      b.setAttribute('aria-label', on ? 'Sound is on. Press to turn it off.' : 'Sound is off. Press to turn it on.');
+      b.title = on ? 'Sound on' : 'Sound off';
+    }
+    b.addEventListener('click', function () { Sound.set(!Sound.on()); if (Sound.on()) Sound.play('right'); draw(); });
+    draw();
+    return b;
+  }
+
+  /** Profile: sounds, off by default; kept on this device. */
+  function soundCard() {
+    var cb = h('input', { type: 'checkbox', id: 'snd', checked: Sound.on(), onchange: function () { Sound.set(cb.checked); if (cb.checked) Sound.play('right'); } });
+    return h('div', { class: 'card' }, h('h2', null, 'Sounds'),
+      h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, cb, 'Play a soft sound for right and wrong answers'),
+      h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Off until you switch it on. Saved on this device.'));
   }
 
   /** Grammar explanations in English or Latvian (Latvian is written for levels up to B1.2). */

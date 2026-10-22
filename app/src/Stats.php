@@ -77,14 +77,14 @@ final class Stats
     private static function skillRows(int $uid): array
     {
         $have = [];
-        foreach (Db::all('SELECT skill, theta, n, n_correct FROM skill_state WHERE user_id = ?', [$uid]) as $r) $have[$r['skill']] = $r;
+        foreach (Db::all('SELECT skill, theta, n, n_correct, updated_at FROM skill_state WHERE user_id = ?', [$uid]) as $r) $have[$r['skill']] = $r;
         $out = [];
         foreach (Content::meta()['skills'] as $s) {
             $r = $have[$s['id']] ?? null;
             $n = $r ? (int) $r['n'] : 0;
             $out[] = [
                 'id' => $s['id'], 'label' => $s['label'], 'area' => $s['area'], 'levels' => $s['levels'],
-                'n' => $n, 'correct' => $r ? (int) $r['n_correct'] : 0,
+                'n' => $n, 'correct' => $r ? (int) $r['n_correct'] : 0, 'last' => $r ? (int) $r['updated_at'] : 0,
                 'accuracy' => $n ? round(100 * $r['n_correct'] / $n) : null,
                 'theta' => $r ? round((float) $r['theta'], 2) : null,
                 'level_est' => ($r && $n >= 3) ? Content::levelFromTheta((float) $r['theta'], $s['levels']) : null,

@@ -384,6 +384,15 @@ html.dnd-dragging, html.dnd-dragging * { user-select: none; -webkit-user-select:
 .picker-group > summary::before { content: '▸'; margin-right: 8px; color: var(--muted); }
 .picker-group[open] > summary::before { content: '▾'; }
 .picker-group > summary .h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+/* "Your topics": one fold-away section per area */
+details.area-fold { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 4px; }
+details.area-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 10px 0; }
+details.area-fold > summary::-webkit-details-marker { display: none; }
+details.area-fold > summary .h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+details.area-fold > summary .h3::before { content: '▸'; margin-right: 8px; color: var(--muted); display: inline-block; }
+details.area-fold[open] > summary .h3::before { content: '▾'; }
+details.area-fold .skillgrid { margin: 4px 0 10px; }
+.linkbtn.speaker svg { width: 19px; height: 19px; vertical-align: middle; }
 .area-block { margin-top: 14px; }
 .area-block .label { margin-bottom: 8px; }
 .hello-side { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }

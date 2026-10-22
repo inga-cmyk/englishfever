@@ -167,6 +167,15 @@ If many learners turn out to want only the app, there are two upgrades: a shorte
 
 Learners choose an avatar instead of a photo in **Profile → Your avatar** (the menu is closed until they press **Change**): a flat illustrated character (ten stylish people, seven characters - a superhero pair, a detective with a magnifying glass, a monocled gentleman, a bard, a palace guard and a professor - a fox and a flame with sunglasses), a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) or their initial, on one of six background colours. Anyone who has not chosen gets a symbol assigned by their user ID, so nobody has a blank picture and it never changes by itself. It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "picture-colour" values.
 
+## Home: your topics, and sound
+
+**Your topics (Home and the topic picker).**
+- Topics are grouped in fold-away areas. The area practised last is open, the rest are folded; what a learner opens or closes is remembered on their device. Each area says how many of its topics are started.
+- A card says *New*, *Started* (fewer than 3 answers) or the estimated level (*≈ B1.1*), and "2 done · 100% correct". *Practise* starts a 10-task session in that topic straight away, at the learner's level inside the levels the topic has; *Options* opens the picker with the topic chosen.
+- Topics whose tasks start more than two sub-levels above the learner's level are not listed until the learner asks (*Show topics for higher levels (N)*). A learner who has not taken the placement test is treated as A2.1 (8 of the 24 topics wait). Topics already practised always show. The same rule applies in the picker.
+
+**Sound.** Soft tones for a right answer, a wrong answer, an almost-right writing task and the end of a session. They are made in the browser (nothing to download, no sound files) and are **off until the learner switches them on**: *Profile → Sounds*, or the small speaker button above a task. The choice is kept on that device (not in the account). Looking back at an earlier task never plays a sound.
+
 ## Learning study (research)
 
 For a thesis or any study of what keeps people practising. **Off by default**: uploading the app changes nothing until you switch it on. Design notes, analysis ideas and an ethics checklist are in [RESEARCH-DESIGN.md](RESEARCH-DESIGN.md).

@@ -72,20 +72,19 @@ check("the test-version notice is on by default", C().api("config").get("beta") 
 sid, item_id = serve(g, "present_simple", "A2.1")
 check("not logged in: refused", C().api("report", {"item_id": item_id, "reason": "unclear"})["_status"] == 401)
 check("without the app header: refused", g.api("report", {"item_id": item_id, "reason": "unclear"}, xef=False)["_status"] == 400)
-check("no reason: refused", g.api("report", {"item_id": item_id, "reason": ""})["_status"] == 400)
 check("unknown reason: refused", g.api("report", {"item_id": item_id, "reason": "hate"})["_status"] == 400)
 check("unknown task: refused", g.api("report", {"item_id": "nope-1", "reason": "unclear"})["_status"] == 404)
-check("a guest can report a task before answering it", g.api("report", {"item_id": item_id, "reason": "unclear", "comment": "I do not understand the question"})["_status"] == 200)
+check("a guest can report a task with one tap (no reason needed)", g.api("report", {"item_id": item_id})["_status"] == 200)
 
 # ---- the answer is stored with the report
 it = ITEMS[item_id]; wa = wrong_answer(it)
 a = g.api("session/answer", {"session_id": sid, "item_id": item_id, "answer": wa, "time_ms": 3000}); assert a["_status"] == 200, a
 check("a wrong answer is marked wrong", a["result"]["correct"] is False)
-check("reporting again (after answering) updates the same report", g.api("report", {"item_id": item_id, "reason": "my_answer", "comment": "<b>My answer</b> is also right =1+1"})["_status"] == 200)
+check("reporting again (after answering) updates the same report", g.api("report", {"item_id": item_id, "comment": "<b>My answer</b> is also right =1+1"})["_status"] == 200)
 
 # ---- a second learner, same task
 sid2, _ = serve(student, "present_simple", "A2.1")
-check("a registered learner reports the same task", student.api("report", {"item_id": item_id, "reason": "key_wrong", "comment": "x" * 900})["_status"] == 200)
+check("a registered learner reports the same task", student.api("report", {"item_id": item_id, "comment": "x" * 900})["_status"] == 200)
 
 # ---- the teacher's page
 check("students cannot read reports", student.api("teacher/reports")["_status"] == 403 and g.api("teacher/reports")["_status"] == 403)
@@ -97,7 +96,7 @@ check("the teacher sees one task with two reports", t["_status"] == 200 and len(
 grp = t["groups"][0]
 check("the group names the task, its key and (for multiple choice) the wrong options", grp["task"]["id"] == item_id and grp["task"]["q"] == it["q"] and grp["task"]["key"] != "", grp["task"])
 check("the learner's answer and its result are kept", any(r["answer"] and r["correct"] == 0 for r in grp["reports"]), grp["reports"])
-check("one report per learner and task: the guest's was updated, not added", sorted(r["reason"] for r in grp["reports"]) == ["key_wrong", "my_answer"], grp["reports"])
+check("one report per learner and task: the guest's was updated, not added", len(grp["reports"]) == 2, grp["reports"])
 check("a long comment is cut to 400 characters", any(len(r["comment"]) == 400 for r in grp["reports"]))
 check("html in a comment is kept as plain text (the page shows it as text)", any("<b>My answer</b>" in r["comment"] for r in grp["reports"]))
 check("the teacher's own profile counts the open reports", teacher.api("me")["user"]["reports_open"] == 1 and student.api("me")["user"]["reports_open"] == 0)

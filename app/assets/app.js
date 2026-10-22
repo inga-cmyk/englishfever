@@ -157,7 +157,7 @@
     if (!state.user) { chrome.replaceChildren(); return; }
     var teacher = state.user.role === 'teacher';
     var items = teacher
-      ? [['#/teacher', 'Students', 'users'], ['#/reports', 'Reports', 'flag', state.user.reports_open], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
+      ? [['#/teacher', 'Students', 'users'], ['#/reports', 'Reports', 'flag', state.user.reports_open], ['#/tasks', 'Tasks', 'book'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
       : [['#/home', 'Home', 'home'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']];
     if (!feat('leaderboard')) items = items.filter(function (i) { return i[0] !== '#/leaderboard'; });
     var nav = h('nav', { class: 'nav', 'aria-label': 'Main' }, items.map(function (i) {
@@ -211,9 +211,9 @@
     var v = {
       home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
       leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
-      nickname: viewNickname, rules: viewRules, reports: viewReports,
+      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks,
     }[name];
-    if ((name.indexOf('teacher') === 0 || name === 'reports') && u.role !== 'teacher') { location.hash = '#/home'; return; }
+    if ((name.indexOf('teacher') === 0 || name === 'reports' || name === 'tasks') && u.role !== 'teacher') { location.hash = '#/home'; return; }
     (v || viewHome)(parts);
   }
 
@@ -563,6 +563,65 @@
         h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Reported tasks')),
           h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/reports-export' }, 'Download CSV')),
         h('div', { style: 'margin-bottom:16px' }, seg), list, hard));
+    }).catch(fail);
+  }
+
+  // ───────── teacher: add tasks from a spreadsheet ─────────
+  var TASK_TABS = [['draft', 'Drafts'], ['approved', 'Approved'], ['retired', 'Retired']];
+
+  function viewTasks() {
+    api('teacher/items').then(function (r) {
+      var tab = state.taskTab || (r.items.draft.length ? 'draft' : 'approved');
+      var result = h('div');
+      var file = h('input', { type: 'file', accept: '.csv,text/csv,text/plain', 'aria-label': 'Choose a CSV file' });
+
+      function setStatus(ids, status) {
+        api('teacher/items-status', { ids: ids, status: status }).then(function () { viewTasks(); }).catch(function (e) { UI.toast(e.message); });
+      }
+
+      function showCheck(csv, res) {
+        var bad = res.rows.filter(function (x) { return !x.ok; }), warned = res.rows.filter(function (x) { return x.ok && x.warnings.length; });
+        var add = res.ok ? h('button', { class: 'btn', type: 'button', onclick: function (e) {
+          e.target.disabled = true;
+          api('teacher/items-import', { csv: csv, confirm: true }).then(function (x) { UI.toast(x.ok + ' added as drafts'); state.taskTab = 'draft'; viewTasks(); })
+            .catch(function (er) { e.target.disabled = false; UI.toast(er.message); });
+        } }, 'Add ' + res.ok + (res.ok === 1 ? ' task' : ' tasks') + ' as drafts') : null;
+        result.replaceChildren(h('div', { class: 'card', style: 'margin-bottom:16px' },
+          h('h2', { style: 'margin:0 0 8px' }, res.ok + ' ready' + (res.bad ? ', ' + res.bad + ' with problems' : '')),
+          bad.length ? h('ul', { class: 'rep-list-plain' }, bad.map(function (x) { return h('li', { style: 'margin-bottom:8px' }, h('b', null, 'Row ' + x.line + ': '), (x.q || '').slice(0, 70), h('div', { class: 'err small', style: 'margin:2px 0 0' }, x.errors.join(' '))); })) : null,
+          warned.length ? h('ul', { class: 'rep-list-plain' }, warned.map(function (x) { return h('li', { class: 'small muted', style: 'margin-bottom:6px' }, h('b', null, 'Row ' + x.line + ': '), x.warnings.join(' ')); })) : null,
+          h('div', { class: 'row', style: 'margin-top:12px' }, add)));
+      }
+
+      file.addEventListener('change', function () {
+        var f = file.files && file.files[0]; if (!f) return;
+        var fr = new FileReader();
+        fr.onload = function () {
+          var csv = String(fr.result || '');
+          api('teacher/items-import', { csv: csv }).then(function (res) { showCheck(csv, res); })
+            .catch(function (e) { result.replaceChildren(h('div', { class: 'card err', role: 'alert' }, e.message)); });
+        };
+        fr.readAsText(f, 'UTF-8');
+      });
+
+      var seg = h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Show' }, TASK_TABS.map(function (t) {
+        return h('label', null, h('input', { type: 'radio', name: 'tt', value: t[0], checked: t[0] === tab, onchange: function () { state.taskTab = t[0]; viewTasks(); } }), h('span', null, t[1] + ' (' + r.items[t[0]].length + ')'));
+      }));
+      var list = r.items[tab].map(function (x) {
+        var acts = tab === 'draft' ? [h('button', { class: 'btn small', onclick: function () { setStatus([x.id], 'approved'); } }, 'Approve'), h('button', { class: 'btn ghost small', onclick: function () { setStatus([x.id], 'retired'); } }, 'Retire')]
+          : tab === 'approved' ? [h('button', { class: 'btn ghost small', onclick: function () { setStatus([x.id], 'draft'); } }, 'Back to draft'), h('button', { class: 'btn ghost small', onclick: function () { setStatus([x.id], 'retired'); } }, 'Retire')]
+          : [h('button', { class: 'btn ghost small', onclick: function () { setStatus([x.id], 'draft'); } }, 'Back to draft')];
+        return h('div', { class: 'card rep' }, taskHead({ id: x.id, skill: x.skill, level: x.level, kind: x.kind, q: x.q, key: x.key, options: x.options }), h('div', { class: 'row', style: 'margin-top:10px' }, acts));
+      });
+      var bulk = (tab === 'draft' && r.items.draft.length > 1) ? h('button', { class: 'btn small', style: 'margin-left:12px', onclick: function () { setStatus(r.items.draft.map(function (x) { return x.id; }), 'approved'); } }, 'Approve all ' + r.items.draft.length) : null;
+      show(h('div', null,
+        h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Tasks')),
+          h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/items-template' }, 'Download template')),
+        h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', { style: 'margin:0 0 10px' }, 'Add tasks from a CSV file'), file,
+          h('details', { style: 'margin-top:12px' }, h('summary', { class: 'small' }, 'Topic names'), h('ul', { class: 'small', style: 'columns:2;margin:8px 0 0' }, r.topics.map(function (t) { return h('li', null, t); })))),
+        result,
+        h('div', { style: 'margin:8px 0 14px' }, seg, bulk),
+        list.length ? list : h('div', { class: 'card empty' }, 'Nothing here.')));
     }).catch(fail);
   }
 

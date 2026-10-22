@@ -22,6 +22,7 @@ final class Content
     {
         if (self::$items === null) {
             self::$items = self::load('items');
+            if (class_exists('CustomItems', false)) self::$items = array_merge(self::$items, CustomItems::approved()); // tasks the teacher added and approved
             self::$byId = [];
             foreach (self::$items as $i => $it) {
                 self::$items[$i]['d'] = self::difficulty($it['level'], $it['bloom']);
@@ -49,7 +50,16 @@ final class Content
                 self::$retired[$it['id']] = $it;
             }
         }
-        return self::$retired[$id] ?? null;
+        return self::$retired[$id] ?? self::customById($id);
+    }
+
+    /** A custom task that is not (or no longer) approved: reports and old answers still point at it. */
+    private static function customById(string $id): ?array
+    {
+        if (!class_exists('CustomItems', false)) return null;
+        $it = CustomItems::find($id);
+        if ($it) $it['d'] = self::difficulty($it['level'], $it['bloom']);
+        return $it;
     }
 
     public static function difficulty(string $level, int $bloom): float

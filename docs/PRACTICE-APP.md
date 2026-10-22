@@ -316,3 +316,17 @@ python3 app/tests/sso_test.py                 # guests, website login, guest-to-
 A small *Test version* label shows while the tasks are being checked (`'beta_notice' => false` removes it). Every task has a **Report** link: one tap, no form. Reports are read on **Reports** (teachers only): grouped by task with the key, wrong options and the learner's answer; *Mark fixed*, *Not a problem*, *Reopen*; a CSV without learner names; and *Often answered wrongly* (70% or more wrong over at least 8 answers). A new report on a fixed task reopens it. Teachers see task IDs on every task.
 
 **Leaderboard names.** New registered learners are suggested their first name only and are on the leaderboard by default (they can change the name or leave the leaderboard on the first screen or in Profile).
+
+## Tasks tab: adding tasks from a spreadsheet
+
+Teachers open **Tasks**, download the template, fill it in (one task per row) and upload it. The page shows how many rows are ready and why the others are not; **Add as drafts** stores the good rows. Drafts are never shown to learners: press **Approve** (one or all) to put them in the bank, **Retire** to take one out, **Back to draft** to pause it. Columns: *topic* (a name from the list on the page), *level* (A2, B1, B2, C1 or A2.1 ...), *type*, *task*, *correct answer*, *wrong options / checks*, *explanation shown to learner*, optional *explanation in Latvian*.
+
+| type | task | correct answer | wrong options / checks |
+|---|---|---|---|
+| mcq | the question | the one right option | the other options, separated by ` \| ` (at least 2) |
+| gap | text with `___` for each blank | the answer for each blank, separated by ` / ` (alternatives for one blank: ` \| `) | empty, or `bank: word \| word \| extra` for drag cards (one extra word at least) |
+| text | the instruction | every accepted answer, separated by ` \| ` | empty |
+| order | the instruction | the sentence (4–16 words) | `also accepted: another order \| ...` (same words) |
+| match | the instruction | `beginning = ending ; beginning = ending ; ...` (3–6 pairs) | empty |
+
+Tasks live in the table `custom_items` (the database), not in the zip. A file saved by Excel (semicolons, Windows encoding) is read too.

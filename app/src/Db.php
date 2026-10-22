@@ -210,6 +210,18 @@ final class Db
                 created_at $big NOT NULL,
                 updated_at $big NOT NULL
             )$tail",
+            "CREATE TABLE IF NOT EXISTS custom_items (
+                id $pk,
+                item_id $str NOT NULL UNIQUE,
+                skill $str NOT NULL,
+                level $str NOT NULL,
+                bloom $int NOT NULL,
+                kind $str NOT NULL,
+                data $txt NOT NULL,
+                status $str NOT NULL DEFAULT 'draft',
+                created_at $big NOT NULL,
+                updated_at $big NOT NULL
+            )$tail",
             "CREATE TABLE IF NOT EXISTS kv (
                 k $str NOT NULL PRIMARY KEY,
                 v $txt NULL

@@ -194,6 +194,26 @@ try {
             echo "\xEF\xBB\xBF" . Reports::exportCsv();
             exit;
 
+        case 'teacher/items':
+            Auth::requireTeacher();
+            out(['items' => CustomItems::listAll(), 'topics' => array_map(fn($s) => $s['label'], Content::meta()['skills'])]);
+
+        case 'teacher/items-import':
+            Auth::requireTeacher();
+            out(CustomItems::import((string) ($in['csv'] ?? ''), !empty($in['confirm'])));
+
+        case 'teacher/items-status':
+            Auth::requireTeacher();
+            $ids = is_array($in['ids'] ?? null) ? array_slice($in['ids'], 0, 500) : [];
+            out(['ok' => true, 'changed' => CustomItems::setStatus($ids, (string) ($in['status'] ?? ''))]);
+
+        case 'teacher/items-template':
+            Auth::requireTeacher();
+            header('Content-Type: text/csv; charset=utf-8');
+            header('Content-Disposition: attachment; filename="tasks-template.csv"');
+            echo CustomItems::template();
+            exit;
+
         case 'teacher/sync-status':
             Auth::requireTeacher();
             out(Wp::status());

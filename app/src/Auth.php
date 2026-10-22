@@ -83,6 +83,7 @@ final class Auth
             'lang' => ($u['lang'] ?? '') === 'lv' ? 'lv' : 'en', // language of the grammar explanations
             'research' => (int) ($u['research'] ?? 0),               // 0 not asked, 1 takes part in the study, 2 said no or left
             'cond' => Research::arms($u) ?: new stdClass(),          // features hidden for this learner by the study, e.g. {"streak":"off"}
+            'reports_open' => $u['role'] === 'teacher' ? Reports::openCount() : 0, // reports waiting for the teacher
         ];
     }
 
@@ -197,7 +198,7 @@ final class Auth
     {
         $old = Db::all("SELECT id FROM users WHERE provider = 'guest' AND last_seen < ?", [time() - 60 * 86400]);
         foreach ($old as $u) {
-            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions', 'reports'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM teacher_mine WHERE student_id = ?', [$u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
         }
@@ -259,8 +260,8 @@ final class Auth
             Db::update('users', ['role' => $role, 'full_name' => $full, 'track_time' => $track, 'sso_at' => time()], 'id = ?', [$u['id']]);
             $id = (int) $u['id'];
         } else {
-            // suggest the learner's own name (they can change it on the next screen)
-            $nick = self::uniqueNick($full);
+            // suggest the learner's first name, never the surname (they can change it on the next screen)
+            $nick = self::uniqueNick($role === 'student' ? self::firstName($full) : $full);
             $id = Db::insert('users', [
                 'provider' => 'wp', 'external_id' => $ext, 'nickname' => $nick, 'nickname_key' => mb_strtolower($nick), 'full_name' => $full,
                 'role' => $role, 'nick_set' => $role === 'teacher' ? 1 : 0, 'track_time' => $track, 'sso_at' => time(), 'created_at' => time(), 'last_seen' => time(),
@@ -272,6 +273,13 @@ final class Auth
         }
         self::login($id);
         return Db::one('SELECT * FROM users WHERE id = ?', [$id]);
+    }
+
+    /** "Anna Bērziņa" -> "Anna"; "Anna-Marija Ozola" -> "Anna-Marija". The surname is never suggested for the leaderboard. */
+    public static function firstName(string $full): string
+    {
+        $full = trim(preg_replace('/\s+/u', ' ', $full));
+        return explode(' ', $full)[0];
     }
 
     /** A free display name based on a real name or nickname. */

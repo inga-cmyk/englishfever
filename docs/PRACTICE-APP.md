@@ -310,3 +310,9 @@ python3 app/tests/sso_test.py                 # guests, website login, guest-to-
 ```
 
 **Security.** See [SECURITY.md](SECURITY.md): what the app protects against, its limits, and a launch checklist. Run `python3 app/tests/security_test.py` after changes (see its header).
+
+## Test version, reports and the teacher's Reports page
+
+While the tasks are still being checked, everyone sees a *Test version* marker and a note, and every task has a **Report** link (reasons and an optional comment). Reports are kept per learner and task and read on **Reports** (teachers only): grouped by task with the key, wrong options, the learner's answer and comment; *Mark fixed*, *Not a problem*, *Reopen*; a CSV without learner names (send it to get the tasks fixed); and *Often answered wrongly* (70% or more wrong over at least 8 answers in 60 days). A new report on a fixed task reopens it. The number of open tasks shows on the Reports tab. Teachers see task IDs on every task. Switch the notice off with `'beta_notice' => false` in `config.php`; the reports stay.
+
+**Leaderboard names.** New registered learners are suggested their first name only and are on the leaderboard by default (they can change the name or leave the leaderboard on the first screen or in Profile).

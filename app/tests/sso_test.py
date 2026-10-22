@@ -52,7 +52,7 @@ def answer_some(c, n=4, skills=("present_simple",), level="A2.1", correct=True):
     item = r["item"]; sid = r["session"]["id"]
     for _ in range(n):
         it = ITEMS[item["id"]]
-        ans = it["correct"] if it["kind"] == "mcq" else ([b[0] for b in it["answers"]] if it["kind"] == "gap" else (it["answers"][0][0] if it["kind"] == "text" else it["model"]))
+        ans = it["correct"] if it["kind"] == "mcq" else ([b[0] for b in it["answers"]] if it["kind"] == "gap" else (it["answers"][0][0] if it["kind"] == "text" else (it["sentence"].split(" ") if it["kind"] == "order" else ([p[1] for p in it["pairs"]] if it["kind"] == "match" else it["model"]))))
         if not correct: ans = it["wrong"][0] if it["kind"] == "mcq" else ("zzz" if it["kind"] != "gap" else ["zzz"] * len(it["answers"]))
         a = c.api("session/answer", {"session_id": sid, "item_id": it["id"], "answer": ans, "time_ms": 3000})
         if a.get("done") or not a.get("next"): break
@@ -96,7 +96,8 @@ st, _, hd = sso(s, wp_uid, name="Maria Test " + uniq)
 check("valid token redirects to the app", st == 302 and "#/home" in (hd.get("Location") or ""), st)
 me = s.api("me")["user"]
 check("website user starts as a student who has not confirmed the name", me and me["role"] == "student" and me["provider"] == "wp" and not me["nick_set"] and not me["guest"], me)
-check("suggested name is the real name", me["nickname"].startswith("Maria Test"), me["nickname"])
+check("suggested name is the first name only, never the surname", me["nickname"].startswith("Maria") and "Test" not in me["nickname"], me["nickname"])
+check("a new registered learner is on the leaderboard by default", me["show_on_board"] is True, me)
 r = s.api("account/profile", {"nickname": "Maria " + uniq, "show_on_board": True})
 check("name can be changed and confirmed", r["_status"] == 200 and r["user"]["nick_set"] and r["user"]["nickname"] == "Maria " + uniq, r)
 check("same name is refused for another registered user", C().api("me")["user"] is None)

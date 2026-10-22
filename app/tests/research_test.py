@@ -99,7 +99,7 @@ check("teachers cannot join", teacher.api("account/research", {"join": True})["_
 check("not logged in: refused", C().api("account/research", {"join": True})["_status"] == 401)
 
 # ---- random conditions: eight people join one after the other
-people = [login(8100 + i, f"Study Person {i}") for i in range(8)]
+people = [login(8100 + i, f"Studyperson{i} Surname") for i in range(8)]
 before = [p.api("me")["user"] for p in people]
 check("before consent: not asked, no conditions", all(u["research"] == 0 and dict(u["cond"]) == {} for u in before), before[0])
 conds = []
@@ -132,9 +132,9 @@ off = [i for i, c in enumerate(conds) if c["leaderboard"] == "off"]; on = [i for
 check("leaderboard 'off': refused by the server", all(people[i].api("leaderboard")["_status"] == 403 for i in off))
 board = people[on[0]].api("leaderboard", period="all")
 names = {r["nickname"] for r in board["rows"]}
-check("leaderboard 'on': works", board["_status"] == 200 and f"Study Person {on[0]}" in names, board)
-check("people in the 'off' condition are not listed on it", not any(f"Study Person {i}" in names for i in off), names)
-check("people in the 'on' condition are listed", all(f"Study Person {i}" in names for i in on), names)
+check("leaderboard 'on': works", board["_status"] == 200 and f"Studyperson{on[0]}" in names, board)
+check("people in the 'off' condition are not listed on it", not any(f"Studyperson{i}" in names for i in off), names)
+check("people in the 'on' condition are listed", all(f"Studyperson{i}" in names for i in on), names)
 check("the teacher still sees the leaderboard", teacher.api("leaderboard", period="all")["_status"] == 200)
 
 # ---- consent date: earlier answers are not part of the study
@@ -167,7 +167,7 @@ check("answers.csv: area is filled", all(r["area"] == "active" for r in A), A[0]
 s, readme, h = teacher.file("readme")
 check("readme.txt: explains pseudonymisation and the conditions", s == 200 and "pseudonymised" in readme and "study_day" in readme and "cond_streak" in readme and "streak, leaderboard" in readme, readme[:200])
 blob = people_csv + days_csv + ans_csv + readme
-check("no names, nicknames or typed answers anywhere in the export", not any(x in blob for x in ["Study Person", "Study Early", "Study Leaver", "Teacher Test", "Study Decliner", "@"]))
+check("no names, nicknames or typed answers anywhere in the export", not any(x in blob for x in ["Studyperson", "Study Early", "Study Leaver", "Teacher Test", "Study Decliner", "@"]))
 check("the export contains nobody who left or declined", len(A) > 0 and all(r["pid"] in {x["pid"] for x in P} for r in A + D))
 check("students cannot download", people[0].file("people")[0] == 403 and people[0].api("teacher/research")["_status"] == 403)
 check("not logged in cannot download", C().file("people")[0] == 401)

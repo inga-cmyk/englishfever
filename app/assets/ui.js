@@ -47,6 +47,7 @@
     arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
     up: '<path d="m6 14 6-6 6 6"/>',
     down: '<path d="m6 10 6 6 6-6"/>',
+    flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
     book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19a2 2 0 0 1 2-2h13"/>',
     logout: '<path d="M9 4H5v16h4M16 8l4 4-4 4M20 12H9"/>',
   };

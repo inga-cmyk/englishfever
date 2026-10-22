@@ -48,6 +48,7 @@ try {
                 'research_text_lv' => (string) Config::get('research_text_lv', ''),
                 'sso' => strlen((string) Config::get('sso_secret', '')) >= 32 && Config::get('sso_secret') !== 'CHANGE-ME',
                 'contact_email' => Config::get('contact_email', ''),
+                'beta' => (bool) Config::get('beta_notice', true), // "test version" notice for everyone; set 'beta_notice' => false in config.php to remove it
                 'version' => is_file(__DIR__ . '/src/version.php') ? (string) ((require __DIR__ . '/src/version.php')['version'] ?? 'dev') : 'dev',
             ]);
 
@@ -94,7 +95,7 @@ try {
         case 'account/delete':
             $u = Auth::require();
             if (empty($in['confirm'])) throw new ApiError('Please confirm.', 400);
-            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions', 'reports'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM teacher_mine WHERE student_id = ? OR teacher_id = ?', [$u['id'], $u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
             Auth::logout();
@@ -170,6 +171,28 @@ try {
             if (!Wp::configured() && strlen((string) Config::get('sso_secret', '')) < 32) throw new ApiError('Not set up.', 503);
             if (!Wp::verify((string) ($_SERVER['HTTP_X_EF_TIME'] ?? ''), 'summary:' . $wpUid, (string) ($_SERVER['HTTP_X_EF_SIGN'] ?? ''))) throw new ApiError('Forbidden.', 403);
             out(Wp::summary($wpUid));
+
+        case 'report':
+            $u = Auth::require();
+            throttle('report:' . $u['id'], 30, 86400, 'Thank you! That is a lot of reports for one day. Please try again tomorrow.');
+            Reports::save($u, (string) ($in['item_id'] ?? ''), (string) ($in['reason'] ?? ''), (string) ($in['comment'] ?? ''));
+            out(['ok' => true]);
+
+        case 'teacher/reports':
+            Auth::requireTeacher();
+            out(Reports::forTeacher((string) ($_GET['status'] ?? 'open')));
+
+        case 'teacher/report-status':
+            Auth::requireTeacher();
+            Reports::setStatus((string) ($in['item_id'] ?? ''), (string) ($in['status'] ?? ''));
+            out(['ok' => true, 'open' => Reports::openCount()]);
+
+        case 'teacher/reports-export':
+            Auth::requireTeacher();
+            header('Content-Type: text/csv; charset=utf-8');
+            header('Content-Disposition: attachment; filename="reported-tasks-' . date('Y-m-d') . '.csv"');
+            echo "\xEF\xBB\xBF" . Reports::exportCsv();
+            exit;
 
         case 'teacher/sync-status':
             Auth::requireTeacher();

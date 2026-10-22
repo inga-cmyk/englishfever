@@ -1,12 +1,12 @@
 # Question bank update
 
-This update corrects 53 existing questions and adds 48 questions, bringing the active bank from 442 to 490. The existing 24 topics, language levels and six Bloom labels are preserved. This is a targeted correction and variety release, not completion of the planned A1–C2 curriculum.
+This update corrects 71 existing questions and adds 48 questions, bringing the active bank from 442 to 490. The existing 24 topics, language levels and six Bloom labels are preserved. This is a targeted correction and variety release, not completion of the planned A1–C2 curriculum.
 
 ## Student history
 
 Changed questions receive new IDs ending in `-r2`. Their original versions remain in `content/retired.php` and resolve through `Content::item()`. New sessions draw only from the active bank. Existing pending questions and historical attempts still resolve to their original wording and answers. No database migration, historical regrading, XP reset or progress recalculation is performed.
 
-The published ledger contains 543 immutable question versions: 490 active and 53 retired. Tests seed historical attempts, activity, skill statistics and a pending session in an isolated in-memory database and verify they remain unchanged.
+The published ledger contains 561 immutable question versions: 490 active and 71 retired. Tests seed historical attempts, activity, skill statistics and a pending session in an isolated in-memory database and verify they remain unchanged.
 
 ## Variety and feedback
 
@@ -87,3 +87,22 @@ Each row identifies the original version; the corrected active version has the s
 | fup-B12-6a | Accept contracted will in future-passive writing. |
 | ct-B12-6a | Make the negative result in the model consistent with the instruction. |
 | ct-B21-6a | Make the negative result in the model consistent with the instruction. |
+
+### Second pass: typed answers and open instructions (12 more corrections)
+
+| Original ID | Correction |
+|---|---|
+| cf-B12-3a | Accept both clause orders and the American spelling of practise. |
+| cs-B12-3a | Accept the if-clause in second position. |
+| ct-B21-3a | Accept the if-clause in second position. |
+| cm-B22-3a | Accept the if-clause in second position. |
+| cm-C11-3a | Accept the inverted clause in second position. |
+| ia-C12-3a | Accept the wh-ever clause after the instruction. |
+| ia-C11-3a | Accept the noun clause as the subject. |
+| ps-A22-3b | Accept travel as well as go and get. |
+| rv-B22-3a | Said is also a reporting verb, so the task now names the verb deny. Accept the phone. |
+| ps-B11-3a | The present continuous can also describe this flight; ask for the timetable present simple. |
+| pc-B11-3a | The present simple can also describe this habit; ask for the present continuous. |
+| pac-A22-3a | The past simple can also complete this sentence; ask for the past continuous. |
+
+Also reworded before release (same revision IDs, never published): fu-A22-5a (simpler A2.2 wording), rs-B11-1a (plain English instead of "backshift"), pac-B12-2a (*I planned to call you.*), cz-B11-3a (accepts *The door opens when you press this button.*).

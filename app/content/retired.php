@@ -21,6 +21,46 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
+"id": "ps-A22-3b",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 3,
+"kind": "text",
+"q": "Make a question with How: She goes to work by bus.",
+"answers": [
+[
+"How does she go to work?",
+"How does she get to work?"
+]
+],
+"why": "Question: *How* + *does* + *she* + base verb. The *-es* goes away: *goes* becomes *go.*",
+"hints": [
+[
+"\\bgoes\\b",
+"After *does* use the base verb: *go*, not *goes.*",
+"Pēc *does* lieto pamatformu: *go*, nevis *goes*."
+]
+],
+"why_lv": "Jautājums: *How + does + she* + pamatforma. Galotne *-es* pazūd: *goes* kļūst par *go*."
+},
+{
+"id": "ps-A22-5a",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your colleague says: 'He go to the gym on Mondays.' Choose the correct option.",
+"correct": "Say 'He goes to the gym on Mondays.' Add -es for he, she, it.",
+"wrong": [
+"Say 'He go to the gym on Mondays.' It is correct.",
+"Say 'He is go to the gym on Mondays.'",
+"Say 'He going to the gym on Mondays.'"
+],
+"why": "With *he, she, it* the present simple verb takes *-s* or *-es*: *he goes.*",
+"wrong_why": {},
+"why_lv": "Ar *he, she, it* darbības vārdam Present Simple pievieno *-s* vai *-es*: *he goes*."
+},
+{
 "id": "ps-B11-1a",
 "skill": "present_simple",
 "level": "B1.1",
@@ -55,6 +95,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
 },
 {
+"id": "ps-B11-3a",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "Our flight ___ at 6.40 tomorrow morning. (leave)",
+"answers": [
+[
+"leaves"
+]
+],
+"why": "The present simple is used for timetables, even for the future: *the flight leaves.*",
+"hints": [],
+"why_lv": "Grafikiem lieto Present Simple, pat runājot par nākotni: *the flight leaves*."
+},
+{
 "id": "ps-B11-4a",
 "skill": "present_simple",
 "level": "B1.1",
@@ -70,6 +126,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Like* is a state verb. We say: *I like this song.*",
 "wrong_why": {},
 "why_lv": "*Like* ir stāvokļa darbības vārds. Saka: *I like this song.*"
+},
+{
+"id": "ps-B11-5a",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your friend says: 'I'm wanting a coffee.' Choose the correct option.",
+"correct": "'I want a coffee.' Want is a state verb, so we use the present simple.",
+"wrong": [
+"'I'm wanting a coffee.' It is correct.",
+"'I wanted a coffee now.'",
+"'I am want a coffee.'"
+],
+"why": "State verbs (*want, need, like, know*) are normally not used in the continuous.",
+"wrong_why": {},
+"why_lv": "Stāvokļa darbības vārdus (*want, need, like, know*) parasti nelieto Continuous formā."
 },
 {
 "id": "ps-B11-6a",
@@ -131,6 +204,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Continuous rāda pagaidu situāciju."
 },
 {
+"id": "pc-B11-3a",
+"skill": "present_continuous",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "These days more people ___ from home. (work)",
+"answers": [
+[
+"are working"
+]
+],
+"why": "A trend around now: *are* + verb-ing.",
+"hints": [],
+"why_lv": "Tendence šajā laikā: *are* + darbības vārds ar *-ing*."
+},
+{
 "id": "pc-B11-4a",
 "skill": "present_continuous",
 "level": "B1.1",
@@ -146,6 +235,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Want* is a state verb. We say: *She wants a new phone.*",
 "wrong_why": {},
 "why_lv": "*Want* ir stāvokļa darbības vārds. Saka: *She wants a new phone.*"
+},
+{
+"id": "pc-B11-5a",
+"skill": "present_continuous",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Is this statement true? 'I'm living with my parents at the moment' sounds more temporary than 'I live with my parents.'",
+"correct": "Yes. The continuous shows that the situation is temporary.",
+"wrong": [
+"No. They mean exactly the same.",
+"No. Only 'live' can show a temporary situation.",
+"Yes, but only for children."
+],
+"why": "The present continuous often shows that something is temporary or changing.",
+"wrong_why": {},
+"why_lv": "Present Continuous bieži rāda, ka kaut kas ir pagaidu vai mainās."
 },
 {
 "id": "pa-A22-3b",
@@ -201,6 +307,28 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Darbība, kas pagātnē noteiktā brīdī bija procesā: *was/were* + darbības vārds ar *-ing*."
 },
 {
+"id": "pac-A22-3a",
+"skill": "past_continuous",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "They ___ TV when I arrived. (watch)",
+"answers": [
+[
+"were watching"
+]
+],
+"why": "*They* = *were* + verb-ing.",
+"hints": [
+[
+"\\bwas watching\\b",
+"*They* needs *were*, not *was.*",
+"Ar *They* vajag *were*, nevis *was*."
+]
+],
+"why_lv": "*They = were* + darbības vārds ar *-ing*."
+},
+{
 "id": "pac-B11-1a",
 "skill": "past_continuous",
 "level": "B1.1",
@@ -216,6 +344,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "A longer action in progress (*was walking*) is interrupted by a short action (*saw*).",
 "wrong_why": {},
 "why_lv": "Garāku darbību (*was walking*) pārtrauc īsa darbība (*saw*)."
+},
+{
+"id": "pac-B11-2a",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "In 'When Mia called, I was cooking', which action started first?",
+"correct": "Cooking. It was already in progress.",
+"wrong": [
+"Calling.",
+"Both at the same moment.",
+"We cannot know."
+],
+"why": "The past continuous action was already happening when the short action (*called*) happened.",
+"wrong_why": {},
+"why_lv": "Past Continuous darbība jau notika, kad notika īsā darbība (*called*)."
 },
 {
 "id": "pac-B11-4a",
@@ -283,6 +428,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Life experience up to now: *have* + past participle.",
 "hints": [],
 "why_lv": "Dzīves pieredze līdz šim brīdim: *have* + 3. forma."
+},
+{
+"id": "pp-B12-5a",
+"skill": "present_perfect",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A colleague writes: 'I have sent the email yesterday.' Choose the correct option.",
+"correct": "Use the past simple because 'yesterday' is finished: I sent the email yesterday.",
+"wrong": [
+"It is correct. Do not change it.",
+"Use the future: I will send the email yesterday.",
+"Use the past continuous: I was sending the email yesterday."
+],
+"why": "Finished time words (*yesterday, last week, in 2018*) need the past simple.",
+"wrong_why": {},
+"why_lv": "Pabeigta laika vārdiem (*yesterday, last week, in 2018*) vajag Past Simple."
 },
 {
 "id": "ppc-B11-1a",
@@ -490,6 +652,23 @@ return json_decode(<<<'EF_JSON_END'
 "model": "The windows have been cleaned this week.",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ppp-B12-2a",
+"skill": "present_perfect_passive",
+"level": "B1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence sounds like news that is important right now?",
+"correct": "The road has been closed because of the accident.",
+"wrong": [
+"The road was closed in 1999.",
+"The road closes every night.",
+"The road is closing."
+],
+"why": "The present perfect passive is used for recent news with a result now.",
+"wrong_why": {},
+"why_lv": "Present Perfect ciešamajā kārtā lieto jaunākajām ziņām ar rezultātu tagad."
 },
 {
 "id": "ppp-B12-6a",
@@ -714,6 +893,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *as soon as, when* un *before* nākotnei lieto Present Simple."
 },
 {
+"id": "cf-B12-3a",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with unless: If you don't practise, you won't improve.",
+"answers": [
+[
+"Unless you practise, you won't improve.",
+"Unless you practice, you won't improve."
+]
+],
+"why": "*Unless* means *if ... not*. After *unless* we use the present simple (no negative).",
+"hints": [
+[
+"unless you don't",
+"After *unless* we do not use a negative: *Unless you practise, ...*",
+"Pēc *unless* nelieto noliegumu: *Unless you practise*, ..."
+]
+],
+"why_lv": "*Unless* nozīmē *if* ... *not*. Pēc *unless* lieto Present Simple (bez noliegumu)."
+},
+{
 "id": "cf-B12-4a",
 "skill": "cond_first",
 "level": "B1.2",
@@ -729,6 +931,30 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Unless* already means *if ... not*, so we do not add a second negative.",
 "wrong_why": {},
 "why_lv": "*Unless* jau nozīmē *if* ... *not*, tāpēc otru noliegumu nepievieno."
+},
+{
+"id": "cs-B12-3a",
+"skill": "cond_second",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite as a second conditional: I don't have enough money, so I can't buy a new laptop.",
+"answers": [
+[
+"If I had enough money, I could buy a new laptop.",
+"If I had enough money, I would buy a new laptop.",
+"If I had enough money, I'd buy a new laptop."
+]
+],
+"why": "Second conditional: *if* + past simple, *would / could* + base verb.",
+"hints": [
+[
+"if i have\\b",
+"Use the past simple after *if*: *If I had enough money, ...*",
+"Pēc *if* lieto Past Simple: *If I had enough money*, ..."
+]
+],
+"why_lv": "Second conditional: *if* + Past Simple, *would / could* + pamatforma."
 },
 {
 "id": "ct-B12-2a",
@@ -769,6 +995,26 @@ return json_decode(<<<'EF_JSON_END'
 "model": "If I had checked the time, I wouldn't have missed the bus.",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ct-B21-3a",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite as a third conditional: I didn't see the sign, so I parked there and got a fine.",
+"answers": [
+[
+"If I had seen the sign, I wouldn't have parked there.",
+"If I had seen the sign, I wouldn't have got a fine.",
+"If I had seen the sign, I would not have got a fine.",
+"If I had seen the sign, I wouldn't have gotten a fine.",
+"If I had seen the sign, I wouldn't have been fined.",
+"If I had seen the sign, I would not have parked there."
+]
+],
+"why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
+"hints": []
 },
 {
 "id": "ct-B21-6a",
@@ -821,6 +1067,38 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*If I'd have known* is a common mistake. In the if-part use had + past participle: *If I'd known.*",
 "wrong_why": {}
+},
+{
+"id": "cm-B22-3a",
+"skill": "cond_mixed",
+"level": "B2.2",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite as a mixed conditional: He didn't take the job, so he isn't living in Paris now.",
+"answers": [
+[
+"If he had taken the job, he would be living in Paris now.",
+"If he'd taken the job, he'd be living in Paris now."
+]
+],
+"why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
+"hints": []
+},
+{
+"id": "cm-C11-3a",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now.",
+"answers": [
+[
+"Had I listened to my accountant, I wouldn't be in this mess now.",
+"Had I listened to my accountant, I'd not be in this mess now."
+]
+],
+"why": "Inversion: *Had* + subject + past participle replaces *if I had* + past participle.",
+"hints": []
 },
 {
 "id": "ca-C11-4a",
@@ -928,6 +1206,26 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*."
 },
 {
+"id": "rv-B22-3a",
+"skill": "rep_verbs",
+"level": "B2.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report with a reporting verb: 'I didn't take your phone,' Max said.",
+"answers": [
+[
+"Max denied taking my phone.",
+"Max denied taking your phone.",
+"Max denied that he had taken my phone.",
+"Max denied having taken my phone.",
+"Max denied that he took my phone.",
+"Max denied that he had taken your phone."
+]
+],
+"why": "*deny* + -ing, or *deny* + *that* + clause.",
+"hints": []
+},
+{
 "id": "rv-C12-4a",
 "skill": "rep_verbs",
 "level": "C1.2",
@@ -958,6 +1256,38 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "What he said is a noun clause. It is the subject of *surprised.*",
 "wrong_why": {}
+},
+{
+"id": "ia-C11-3a",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Combine: Who made the decision? It's not clear.",
+"answers": [
+[
+"It's not clear who made the decision.",
+"It is not clear who made the decision."
+]
+],
+"why": "*It's not clear* + *who* + verb (statement order).",
+"hints": []
+},
+{
+"id": "ia-C12-3a",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with a wh-ever word: It doesn't matter who calls. Don't answer.",
+"answers": [
+[
+"Whoever calls, don't answer.",
+"Whoever calls, do not answer."
+]
+],
+"why": "*Whoever* + verb = it does not matter who.",
+"hints": []
 }
 ]
 EF_JSON_END

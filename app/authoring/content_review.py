@@ -18,7 +18,7 @@ def revise(original):
         it = by_id[id]
         it.update(changes)
         it['id'] = id + '-r2'
-        REASONS[id] = reason
+        REASONS[id] = (REASONS[id] + ' ' + reason) if id in REASONS else reason
 
     fix('ps-B11-1a', 'Distinguish continuous verb forms from gerunds such as knowing.',
         q='Which verb is normally NOT used in a continuous tense when it describes a state of knowledge?',
@@ -51,7 +51,7 @@ def revise(original):
         why='The subject *they* needs *were*: *When I arrived, they were having lunch.* The lunch was already in progress.',
         why_lv='Ar *they* lieto *were*: *When I arrived, they were having lunch.* Pusdienošana jau bija sākusies.')
     fix('pac-B12-2a', 'A past intention does not by itself prove that the action never happened.',
-        correct='I intended to call you at a time in the past.',
+        correct='I planned to call you.',
         why='*Was going to* describes a past intention. Context tells us whether it happened: *I was going to call, but I forgot* shows that it did not.',
         why_lv='*Was going to* izsaka nodomu pagātnē. Konteksts parāda, vai tas īstenojās: *I was going to call, but I forgot* nozīmē, ka zvans nenotika.')
     fix('pp-B11-5a', 'Present perfect suggests current relevance rather than guaranteeing an unresolved problem.',
@@ -75,7 +75,7 @@ def revise(original):
     fix('fu-A21-3a', 'Specify going to instead of rejecting other valid future forms.',
         q='Use be going to for a plan: Tom ___ a party on Saturday. (have)')
     fix('fu-A22-5a', 'Both will and going to can predict rain; state the evidence-based criterion.',
-        q='You see dark clouds approaching. Which option best highlights this visible evidence for your prediction?',
+        q='You see dark clouds. Which sentence is a prediction from what you can see now?',
         why='*It is going to rain* highlights evidence visible now. *It will rain* is also a possible prediction, but does not highlight that evidence as directly.',
         why_lv='*It is going to rain* uzsver tagad redzamās pazīmes. Arī *It will rain* var izteikt prognozi, bet neuzsver redzamo pamatojumu tik tieši.')
     fix('fu-B11-1a', 'Present continuous in an if-clause can be grammatical; use a clear distractor.',
@@ -102,7 +102,7 @@ def revise(original):
                ['If the traffic light is red,', 'cars stop.'],
                ['If you mix red and blue paint,', 'you get purple.']])
     fix('cz-B11-3a', 'The instruction requires when, not whenever.',
-        answers=[['When you press this button, the door opens.']])
+        answers=[['When you press this button, the door opens.', 'The door opens when you press this button.']])
     fix('cf-A22-1a', 'Remove a grammatical continuous alternative from the single-answer MCQ.',
         wrong=['will rain', 'rained', 'rain'])
     fix('cf-B11-1a', 'Provide the meaning that makes unless the unique answer.',
@@ -125,7 +125,7 @@ def revise(original):
         q='Which sentence does NOT express this warning: we need to hurry to avoid missing the flight?',
         why='*Unless you hurry* gives the intended condition. *Unless you do not hurry* changes its meaning. The issue here is the intended warning, not a universal ban on negatives after *unless*.')
     fix('rs-B11-1a', 'Backshift is not always compulsory; explicitly request it.',
-        q="Report with backshift: 'I am tired,' she said. → She said she ___ tired.")
+        q="Report it. Move the verb one step back: 'I am tired,' she said. → She said she ___ tired.")
     fix('rs-B12-1a', 'Make backshift a task requirement.',
         q="Use backshift. Direct: 'I have finished.' Reported: He said he ___ finished.")
     fix('rs-B12-4a', 'Unshifted will may be valid in context; test the requested reporting convention.',
@@ -150,7 +150,8 @@ def revise(original):
         must=[[r'^\s*(he|she)\s+(?:(?:usually|often|always|sometimes|never)\s+)?(?!is\b|was\b)\w+s\b',
                'Use *He* or *She* with a present-simple verb, such as *works*, *goes* or *has*.',
                'Lieto *He* vai *She* ar darbības vārdu Present Simple, piemēram, *works*, *goes* vai *has*.']])
-    fix('ps-B11-6a', 'Accept written times, noon and midnight, not just digits.',
+    fix('ps-B11-6a', 'Accept written times, noon and midnight, not just digits. Say whose timetable: your own plans are not a timetable.',
+        q='Write two sentences about a timetable, for example a train, a class or a shop. Use the present simple with a time, as in: The train leaves at 7.45.',
         must=[[r'\b(starts?|begins?|opens?|leaves?|ends?|finish(es)?|closes?|arrives?)\b.{0,40}\bat\s+(?:\d|[a-z])',
                'Use a timetable verb with *at* and a time, such as *at nine*, *at 9.00* or *at noon*.',
                'Lieto grafika darbības vārdu ar *at* un laiku, piemēram, *at nine*, *at 9.00* vai *at noon*.'],
@@ -185,7 +186,7 @@ def revise(original):
         'melting': '*Melting* viens pats šeit nevar būt izteicējs. Lieto *it melts*.',
         'is melt': '*Is melt* nav pareiza forma. Vispārīgajā noteikumā lieto *it melts*.'}
     by_id['rs-B11-1a']['wrong_why'] = {
-        'is': '*Is* can be retained when the information is still relevant, but this task specifically asks for backshift to *was*.',
+        'is': '*Is* can stay when the information is still true now, but this task asks you to move the verb one step back: *was*.',
         'am': '*Am* agrees with *I*, not *she*.',
         'will be': 'This changes the statement to a future meaning; it does not backshift *am*.'}
     by_id['rs-B11-1a']['wrong_why_lv'] = {
@@ -200,4 +201,52 @@ def revise(original):
         'He asked whether I would attend.': 'The embedded question complements *asked*. The subject of the main clause is *He*.',
         'Will he attend the meeting?': 'This is a direct question, not a question embedded inside another clause.',
         'We do not know whether he will attend.': 'The embedded question complements *know*. The subject of the main clause is *We*.'}
+    # Typed answers: accept every correct clause order and spelling that the instruction allows.
+    def more(id, reason, extra, **changes):
+        have = by_id[id]['answers'][0]
+        fix(id, reason, answers=[list(have) + [a for a in extra if a not in have]], **changes)
+
+    more('cf-B12-3a', 'Accept both clause orders and the American spelling of practise.',
+         ["You won't improve unless you practise.", "You won't improve unless you practice."])
+    more('cs-B12-3a', 'Accept the if-clause in second position.',
+         ['I could buy a new laptop if I had enough money.', 'I would buy a new laptop if I had enough money.', "I'd buy a new laptop if I had enough money."])
+    more('ct-B21-3a', 'Accept the if-clause in second position.',
+         ["I wouldn't have parked there if I had seen the sign.", "I wouldn't have got a fine if I had seen the sign.",
+          "I would not have got a fine if I had seen the sign.", "I wouldn't have gotten a fine if I had seen the sign.",
+          "I wouldn't have been fined if I had seen the sign.", "I would not have parked there if I had seen the sign."])
+    more('cm-B22-3a', 'Accept the if-clause in second position.',
+         ['He would be living in Paris now if he had taken the job.', "He'd be living in Paris now if he'd taken the job."])
+    more('cm-C11-3a', 'Accept the inverted clause in second position.',
+         ["I wouldn't be in this mess now had I listened to my accountant.", "I'd not be in this mess now had I listened to my accountant."])
+    more('ia-C12-3a', 'Accept the wh-ever clause after the instruction.',
+         ["Don't answer, whoever calls.", 'Do not answer, whoever calls.'])
+    more('ia-C11-3a', 'Accept the noun clause as the subject.',
+         ['Who made the decision is not clear.'])
+    more('ps-A22-3b', 'Accept travel as well as go and get.',
+         ['How does she travel to work?'])
+    more('rv-B22-3a', 'Say is also a reporting verb, so the task must name the verb deny. Accept the phone.',
+         ['Max denied taking the phone.', 'Max denied that he had taken the phone.', 'Max denied that he took the phone.', 'Max denied having taken the phone.'],
+         q="Report with the verb deny: 'I didn't take your phone,' Max said.")
+    fix('ps-B11-3a', 'The present continuous can also describe this flight; ask for the timetable present simple.',
+        q='Use the present simple for a timetable: Our flight ___ at 6.40 tomorrow morning. (leave)')
+    fix('pc-B11-3a', 'The present simple can also describe this habit; ask for the present continuous.',
+        q='Use the present continuous: These days more people ___ from home. (work)')
+    fix('pac-A22-3a', 'The past simple can also complete this sentence; ask for the past continuous.',
+        q='Use the past continuous: They ___ TV when I arrived. (watch)')
+    # Options must not carry the rule or the verdict: the explanation is shown after the answer.
+    fix('ps-A22-5a', 'The correct option explained the rule and a wrong option said it was correct.',
+        correct="Say 'He goes to the gym on Mondays.'",
+        wrong=["Say 'He go to the gym on Mondays.'", "Say 'He is go to the gym on Mondays.'", "Say 'He going to the gym on Mondays.'"])
+    fix('ps-B11-5a', 'The prompt repeats the sentence the options already show; the correct option explained the rule.',
+        q='Choose the correct option.', correct="'I want a coffee.'",
+        wrong=["'I'm wanting a coffee.'", "'I wanted a coffee now.'", "'I am want a coffee.'"])
+    fix('ps-A22-5a', 'The prompt repeats the sentence the options already show.', q='Choose the correct option.')
+    fix('pp-B12-5a', 'The prompt repeats the sentence the options already show.', q='Choose the correct option.')
+    fix('pc-B11-5a', 'The correct option explained the rule.', correct='Yes, it is true.')
+    fix('pac-B11-2a', 'The correct option explained the answer.', correct='Cooking.')
+    fix('pp-B12-5a', 'The correct option explained the rule and a wrong option said it was correct.',
+        correct='I sent the email yesterday.',
+        wrong=['I have sent the email yesterday.', 'I will send the email yesterday.', 'I was sending the email yesterday.'])
+    fix('ppp-B12-2a', 'The continuous option can also be news that is important now; use a clearly future distractor.',
+        wrong=['The road was closed in 1999.', 'The road closes every night.', 'The road will close tomorrow.'])
     return items

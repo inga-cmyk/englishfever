@@ -77,7 +77,7 @@ def practise(app, n=6, skills=("present_simple",), level="A2.1"):
     item = r["item"]; sid = r["session"]["id"]
     while True:
         it = ITEMS[item["id"]]
-        ans = it["correct"] if it["kind"] == "mcq" else ([b[0] for b in it["answers"]] if it["kind"] == "gap" else (it["answers"][0][0] if it["kind"] == "text" else it["model"]))
+        ans = it["correct"] if it["kind"] == "mcq" else ([b[0] for b in it["answers"]] if it["kind"] == "gap" else (it["answers"][0][0] if it["kind"] == "text" else (it["sentence"].split(" ") if it["kind"] == "order" else ([p[1] for p in it["pairs"]] if it["kind"] == "match" else it["model"]))))
         a = app.api("session/answer", {"session_id": sid, "item_id": it["id"], "answer": ans, "time_ms": 4000})
         if a.get("done") or not a.get("next"): return
         item = a["next"]
@@ -109,7 +109,7 @@ wpb = wp_login("maria"); app = Br()
 st, loc = via_plugin(wpb, app)
 check("plugin link signs the student into the app", st == 302 and "#/home" in (loc or ""), (st, loc))
 me = app.api("me")["user"]
-check("registered student, name suggested from the website, track_time on", me["provider"] == "wp" and me["nickname"].startswith("Maria Test") and me["track_time"] is True and not me["nick_set"], me)
+check("registered student, name suggested from the website, track_time on", me["provider"] == "wp" and me["nickname"].startswith("Maria") and "Test" not in me["nickname"] and me["track_time"] is True and not me["nick_set"], me)
 check("name can be confirmed", app.api("account/profile", {"nickname": "Maria T", "show_on_board": True})["user"]["nick_set"])
 
 # 1b. the two link kinds, the banner and the button

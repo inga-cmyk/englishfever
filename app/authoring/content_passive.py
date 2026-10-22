@@ -40,7 +40,7 @@ T(S, "B1.1", 3, "Change to the passive: They sell fresh bread here.", ["Fresh br
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "Are the tickets checking at the door?",
   ["Is English taught in your school?", "Cars are washed here.", "The rooms are cleaned every day."],
   "Passive questions need the past participle: Are the tickets checked at the door?")
-M(S, "B1.1", 5, "You want to write a neutral email and not blame anyone. Which sentence is best?",
+M(S, "B1.1", 5, "You want to write a neutral email and not blame anyone. Choose the correct option.",
   "The invoices are sent on Fridays.", ["You send the invoices on Fridays.", "Someone sends the invoices on Fridays.", "I think you send the invoices on Fridays."],
   "The passive keeps the focus on the action and does not name a person.")
 W(S, "B1.1", 6, "Write one sentence about how something is made or done at your workplace. Use the passive.",
@@ -85,7 +85,7 @@ G(S, "A2.2", 3, "This picture ___ by Picasso. (paint)", "was painted",
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "The book was wrote by Tom.",
   ["The cake was eaten.", "We were invited to the party.", "The door was closed."],
   "The past participle of write is written: The book was written by Tom.")
-M(S, "A2.2", 5, "Which sentence is correct for a past event when we don't know who did it?", "My bike was stolen.",
+M(S, "A2.2", 5, "A past event: we don't know who did it. Choose the correct option.", "My bike was stolen.",
   ["My bike stole.", "My bike was stealing.", "My bike were stolen."],
   "Passive past: was/were + past participle. Bike = singular, so was stolen.")
 W(S, "A2.2", 6, "Write one sentence about a famous building or invention. Use was/were built, invented or discovered.",
@@ -106,7 +106,7 @@ T(S, "B1.1", 3, "Change to the passive: Someone stole my wallet.", ["My wallet w
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "She was gave a prize.",
   ["The thieves were arrested by the police.", "The bridge was built in 1998.", "I was told the news by Tom."],
   "The past participle of give is given: She was given a prize.")
-M(S, "B1.1", 5, "A news report says what happened but the person who did it is unknown. Which sentence is best?",
+M(S, "B1.1", 5, "A news report says what happened but the person who did it is unknown. Choose the correct option.",
   "A car was stolen last night.", ["Someone stealing a car last night.", "A car steals last night.", "A car were stolen last night."],
   "The passive is common in news reports when the doer is unknown.")
 W(S, "B1.1", 6, "Write two sentences about something that was done at your workplace last week. Use the passive.",
@@ -129,7 +129,7 @@ T(S, "B1.2", 3, "Change to the passive: The company hired 20 new workers last ye
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "The invoice was send on Monday.",
   ["The package was delivered yesterday.", "The decision was made last week.", "We were told to wait."],
   "Use the past participle: The invoice was sent on Monday.")
-M(S, "B1.2", 5, "You want to mention a mistake politely, without blaming anyone. Which sentence is best?",
+M(S, "B1.2", 5, "You want to mention a mistake politely, without blaming anyone. Choose the correct option.",
   "A mistake was made in the report.", ["You made a mistake in the report.", "Someone is making a mistake.", "I think you make mistakes."],
   "The passive hides the doer and sounds more neutral.")
 W(S, "B1.2", 6, "Write two sentences to a customer: say what was done to fix a problem. Use the passive.",
@@ -153,7 +153,7 @@ G(S, "B1.2", 3, "The rooms ___ right now. (clean)", "are being cleaned",
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "The report is being write.",
   ["The hotel is being renovated.", "The cars are being washed now.", "My email is being checked."],
   "Use the past participle: The report is being written.")
-M(S, "B1.2", 5, "A technician is still working on your computer. What is the best sentence?",
+M(S, "B1.2", 5, "A technician is still working on your computer. Choose the correct option.",
   "Your computer is being fixed.", ["Your computer is fixed.", "Your computer was fixed.", "Your computer fixes."],
   "'Is fixed' means the job is finished. 'Is being fixed' means it is in progress.")
 W(S, "B1.2", 6, "Write one sentence about something that is being built, repaired or changed in your area now. Use is/are being.",
@@ -220,7 +220,7 @@ T(S, "B1.1", 3, "Change to the passive: They will open the shop at 9.", ["The sh
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "The prize will be giving to the winner.",
   ["The meeting will be held in Room 3.", "You will be informed by email.", "The work will be finished by June."],
   "Use the past participle: The prize will be given to the winner.")
-M(S, "B1.1", 5, "You do not want to say who will do the action. Which sentence is best?", "The files will be checked on Monday.",
+M(S, "B1.1", 5, "You do not want to say who will do the action. Choose the correct option.", "The files will be checked on Monday.",
   ["Someone checks the files on Monday.", "The files check on Monday.", "The files will checking on Monday."],
   "The passive keeps the focus on the files.")
 W(S, "B1.1", 6, "Write one sentence about something that will be done in your city or company next year. Use will be + past participle.",
@@ -240,7 +240,7 @@ T(S, "B1.2", 3, "Change to the passive: We will send the tickets by email.", ["T
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "The class will be cancel.",
   ["The tickets won't be sold after Friday.", "Will the room be cleaned?", "You will be told the date soon."],
   "Use the past participle: The class will be cancelled.")
-M(S, "B1.2", 5, "In an airport announcement, which sentence is best?", "Passengers will be informed of any changes.",
+M(S, "B1.2", 5, "You write an airport announcement. Choose the correct option.", "Passengers will be informed of any changes.",
   ["Passengers informing of any changes.", "Passengers inform of any changes.", "Passengers are informing of any changes."],
   "Announcements often use the passive: will be informed.")
 W(S, "B1.2", 6, "Write two sentences for a notice at work about changes next month. Use will be + past participle.",

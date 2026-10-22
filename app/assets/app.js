@@ -355,10 +355,14 @@
   }
 
   // ───────── home ─────────
+  // A quiet page: a greeting, ONE thing to do now, three small links and one muted line. The streak and the time practised today are
+  // already in the top bar; the topics and the progress charts are one tap away (folded, and the choice is remembered on the device).
   function viewHome() {
     if (state.user.role === 'teacher') { location.hash = '#/teacher'; return; }
     Promise.all([refreshDash(), api('session/resume')]).then(function (r) {
       var d = r[0], resume = r[1].resume;
+      var started = d.totals.answers > 0;
+      var rep = d.placement && d.placement.report;
       var nodes = [];
       if (state.user.guest) nodes.push(guestBanner());
       if (state.welcome) {
@@ -369,68 +373,67 @@
           h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
       }
       nodes.push(h('div', { class: 'hello' },
-        h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Welcome back'), h('h1', { style: 'margin:0' }, state.user.nickname))),
-        h('div', { class: 'hello-side' },
-          h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!'
-            : (!feat('streak') ? 'Do a few tasks today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.'))),
-          (!state.user.guest && dashboardUrl()) ? h('a', { class: 'btn ghost small', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null)));
+        h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 48),
+          h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
+            h('p', { class: 'muted' }, !started ? 'Short grammar tasks that adapt to you.' : d.streak.today_done ? 'You practised today. Nice work!'
+              : (!feat('streak') ? 'Do a few tasks today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.')))))));
 
-      var invite = studyPrompt();
+      // the one thing to do now
+      var main, mainBtn;
+      if (resume) {
+        mainBtn = h('button', { class: 'btn pulse', onclick: function () { state.sess = newSess(resume.session, resume.item); location.hash = '#/session'; } }, 'Continue', icon('arrow'));
+        main = [h('h2', null, 'Continue where you stopped'),
+          h('p', { class: 'muted' }, (resume.session.mode === 'placement' ? 'Placement test: ' : 'Practice session: ') + resume.session.n + ' of ' + resume.session.length + ' done.'), mainBtn];
+      } else if (!started) {
+        mainBtn = h('a', { class: 'btn pulse', href: '#/placement' }, 'Find my level', icon('arrow'));
+        main = [h('h2', null, 'Start here'), h('p', { class: 'muted' }, 'A short test (5 to 18 minutes) shows where to begin.'), mainBtn];
+      } else {
+        mainBtn = surpriseButton('btn pulse', 'Practise now');
+        main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'A short session picked from your own mistakes.'), mainBtn];
+      }
+      var links = h('p', { class: 'homelinks' },
+        h('a', { href: '#/practice' }, 'Choose topics'),
+        (!started && !resume) ? null : (rep ? h('button', { type: 'button', class: 'linkbtn', onclick: function () { showPlacementReport(rep); } }, 'Placement result') : h('a', { href: '#/placement' }, 'Placement test')),
+        h('a', { href: '#/rules' }, 'Rule cards'),
+        (!state.user.guest && dashboardUrl()) ? h('a', { class: 'only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null);
+      nodes.push(h('div', { class: 'card focus' }, main, links));
+      if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
+      var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);
 
-      if (resume) {
-        nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
-          h('div', null, h('b', { style: 'color:var(--text)' }, 'You have an unfinished ' + (resume.session.mode === 'placement' ? 'placement test' : 'practice session')),
-            h('div', { class: 'small muted' }, resume.session.n + ' of ' + resume.session.length + ' done')),
-          h('button', { class: 'btn small', onclick: function () { state.sess = newSess(resume.session, resume.item); location.hash = '#/session'; } }, 'Continue')));
+      var ic = started ? installCard(false) : null; if (ic) nodes.push(ic);
+      var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
+      nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
+      if (started) {
+        nodes.push(foldCard('progress', 'My progress', 'this week and thinking skills', function () {
+          return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'Your thinking skills'), bloomBars(d.bloom)));
+        }));
       }
-
-      nodes.push(h('div', { class: feat('streak') ? 'grid g4' : 'grid g3', style: 'margin-bottom:16px' },
-        feat('streak') ? stat('flame', d.streak.current, d.streak.current === 1 ? 'day streak' : 'day streak', 'streak') : null,
-        stat('clock', UI.fmtDuration(d.today.seconds), 'practised today'),
-        stat('bolt', d.totals.xp, 'points (XP)'),
-        stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct overall')));
-
-      var rep = d.placement && d.placement.report;
-      var started = d.totals.answers > 0;
-      var sBtn = surpriseButton(started ? 'btn' : 'btn ghost');
-      var options = h('div', { class: 'grid g3', style: 'margin-bottom:16px' },
-        h('div', { class: 'card act' }, h('div', { class: 'label' }, 'Option 1'), h('h2', null, rep ? 'Your placement result' : 'Take the placement test'),
-          rep ? h('div', null,
-            h('div', { class: 'row', style: 'margin-bottom:10px' }, h('span', { class: 'levelbadge' }, rep.overall_level), h('span', { class: 'muted small' }, 'about ' + rep.overall_level + ' · ' + UI.fmtAgo(d.placement.at))),
-            h('p', null, 'Start with: ', rep.gaps.map(function (g) { return g.label; }).join(', ') + '.'),
-            h('div', { class: 'row' }, h('button', { class: 'btn small', onclick: function () { showPlacementReport(rep); } }, 'See gaps and plan'),
-              h('a', { class: 'btn ghost small', href: '#/placement' }, 'Take it again')))
-            : h('div', null, h('p', null, '5 to 18 minutes. Shows your gaps and where to start.'),
-              h('a', { class: 'btn', href: '#/placement' }, 'Start the test', icon('arrow')))),
-        h('div', { class: 'card act' }, h('div', { class: 'label' }, 'Option 2'), h('h2', null, 'Choose what to practise'),
-          h('p', null, 'Pick topics and a level. Tasks adapt to you.'),
-          h('a', { class: started ? 'btn' : 'btn ghost', href: '#/practice' }, 'Choose topics', icon('arrow'))),
-        h('div', { class: 'card act' }, h('div', { class: 'label' }, 'Option 3'), h('h2', null, 'Surprise me'),
-          h('p', null, started ? 'Topics picked from your own mistakes.' : 'A few friendly topics to start.'),
-          sBtn));
-      // one gentle nudge towards the main action: practise now (or the placement test for someone new). Two soft pulses, then it rests.
-      var cta = started ? sBtn : options.querySelector('.btn:not(.ghost):not(.small)');
-      if (cta) cta.classList.add('pulse');
-      nodes.push(options);
-
-      var ic = installCard(false); if (ic) nodes.push(ic);
-      nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
-        h('div', { class: 'card' }, h('h2', null, 'This week'), weekChart(d.week)),
-        h('div', { class: 'card' }, h('h2', null, 'Your thinking skills'), bloomBars(d.bloom))));
-
-      nodes.push(topicsCard(d));
-      show(h('div', null, nodes));
+      show(h('div', { class: 'home' }, nodes));
     }).catch(fail);
   }
 
+  /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
+  function foldCard(key, title, hint, body) {
+    var saved = {}; try { saved = JSON.parse(localStorage.getItem('ef_home') || '{}') || {}; } catch (e) {}
+    var inner = h('div', { class: 'fold-body' });
+    var det = h('details', { class: 'card fold', open: !!saved[key] }, h('summary', null, h('span', { class: 'h3' }, title), h('span', { class: 'small muted' }, hint)), inner);
+    function fill() { if (!inner.firstChild) inner.appendChild(body()); }
+    if (det.open) fill();
+    det.addEventListener('toggle', function () {
+      if (det.open) fill();
+      saved[key] = det.open ? 1 : 0; try { localStorage.setItem('ef_home', JSON.stringify(saved)); } catch (e) {}
+    });
+    return det;
+  }
+
   /** "Surprise me": the server picks topics from the learner's own mistakes and gaps. */
-  function surpriseButton(cls) {
+  function surpriseButton(cls, label) {
     var b = h('button', { class: cls, type: 'button', onclick: function () {
       b.disabled = true;
       api('session/start', { mode: 'smart', length: 12 }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
         .catch(function (e) { b.disabled = false; UI.toast(e.message); });
-    } }, icon('bolt'), 'Surprise me');
+    } }, icon('bolt'), label || 'Surprise me');
     return b;
   }
 
@@ -481,7 +484,7 @@
       holder.replaceChildren.apply(holder, areas.concat([highLink(hidden, high, draw)]));
     }
     draw();
-    return h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'Your topics'), h('a', { href: '#/rules', class: 'small' }, 'Rule cards')), holder);
+    return holder;
   }
 
   /** The link under a topic list: show or hide the topics that are well above the learner's level. */

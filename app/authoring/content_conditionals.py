@@ -23,7 +23,7 @@ G(S, "A2.2", 3, "If you ___ the button, the coffee machine ___. (press / start)"
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "If you will heat ice, it melts.",
   ["If you heat ice, it melts.", "If I drink coffee at night, I can't sleep.", "If people don't eat, they get hungry."],
   "We do not use will after if. Say: If you heat ice, it melts.")
-M(S, "A2.2", 5, "A learner wrote: 'If you will mix blue and yellow, you get green.' What is the best advice?",
+M(S, "A2.2", 5, "A learner wrote: 'If you will mix blue and yellow, you get green.' Choose the correct option.",
   "Remove will: 'If you mix blue and yellow, you get green.'",
   ["Change get to will get: 'If you will mix blue and yellow, you will get green.'", "Change mix to mixes.", "It is correct. Do not change it."],
   "In the zero conditional both verbs are in the present simple. Will is not used.")
@@ -45,7 +45,7 @@ T(S, "B1.1", 3, "Rewrite with when: If you press this button, the door opens.",
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "If people don't sleep enough, they would be grumpy.",
   ["If people don't sleep enough, they get grumpy.", "Whenever I forget my umbrella, it rains.", "If the printer jams, everybody panics."],
   "A general truth uses the present simple in both parts: they get grumpy.")
-M(S, "B1.1", 5, "Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Which version is best?",
+M(S, "B1.1", 5, "Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Choose the correct option.",
   "If a visitor arrives, sign them in at reception.",
   ["If a visitor would arrive, sign them in at reception.", "If a visitor arrived, sign them in at reception.", "If a visitor will arrive, signing them in at reception."],
   "A rule uses if + present simple, then an instruction. We do not use will after if.")
@@ -69,7 +69,7 @@ G(S, "A2.2", 3, "If she ___ late, we ___ without her. (be / start)", [["is"], ["
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "If I will see him, I will tell him.",
   ["If you hurry, you'll catch the bus.", "She'll be angry if you forget.", "If it's sunny, we'll have lunch outside."],
   "No will in the if-part. Say: If I see him, I will tell him.")
-M(S, "A2.2", 5, "A friend writes: 'If I will have time, I will call you.' What is the best advice?",
+M(S, "A2.2", 5, "A friend writes: 'If I will have time, I will call you.' Choose the correct option.",
   "Say 'If I have time, I'll call you.'",
   ["Say 'If I would have time, I will call you.'", "Say 'If I had time, I will call you.'", "It is correct. Do not change it."],
   "After if we use the present simple: If I have time, I'll call you.")
@@ -98,7 +98,7 @@ G(S, "B1.1", 3, "I'll call you as soon as I ___ at the station. (arrive)", ["arr
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "I'll text you when I will get home.",
   ["I'll text you as soon as I get home.", "If you don't hurry, you'll miss it.", "We won't go unless the weather improves."],
   "After when, as soon as, if and unless we use the present simple for the future: when I get home.")
-M(S, "B1.1", 5, "You want to warn a friend who keeps forgetting his password. Which sentence is correct and sounds like a warning?",
+M(S, "B1.1", 5, "You want to warn a friend who keeps forgetting his password. Choose the correct option.",
   "If you forget it again, you'll be locked out.",
   ["If you will forget it again, you'll be locked out.", "If you forgot it again, you'll be locked out.", "If you forget it again, you locked out."],
   "A warning uses if + present simple, then will + base verb.")
@@ -125,7 +125,7 @@ T(S, "B1.2", 3, "Rewrite with unless: If you don't practise, you won't improve."
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "Unless you don't hurry, you will be late.",
   ["Unless you hurry, you will be late.", "If you don't hurry, you will be late.", "You will be late unless you hurry."],
   "Unless already means if ... not, so we do not add a second negative.")
-M(S, "B1.2", 5, "In an email to a client you want to sound confident but polite. Which sentence is best?",
+M(S, "B1.2", 5, "In an email to a client you want to sound confident but polite. Choose the correct option.",
   "If you send us the documents today, we will process your request by Friday.",
   ["If you will send us the documents today, we will process your request by Friday.", "If you sent us the documents today, we will process your request by Friday.",
    "If you send us the documents today, we would process your request by Friday."],
@@ -149,7 +149,7 @@ G(S, "B1.1", 3, "If I ___ the boss, I ___ cancel all Monday meetings. (be)", [["
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "If I will win the lottery, I would buy an island.",
   ["If I won the lottery, I would buy an island.", "If I were you, I wouldn't do that.", "What would you do if you saw a ghost?"],
   "The if-part uses the past simple, not will: If I won the lottery, ...")
-M(S, "B1.1", 5, "Your friend can't decide whether to quit and become a baker. You give advice. Which sentence is best?",
+M(S, "B1.1", 5, "Your friend can't decide whether to quit and become a baker. You give advice. Choose the correct option.",
   "If I were you, I would talk to a few bakers first.",
   ["If I am you, I will talk to a few bakers first.", "If I would be you, I talk to a few bakers first.", "If I was you, I will talk to a few bakers first."],
   "For advice we say: If I were you, I would + base verb.")
@@ -176,7 +176,7 @@ T(S, "B1.2", 3, "Rewrite as a second conditional: I don't have enough money, so 
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "If I would have more free time, I would join a choir.",
   ["If I had more free time, I would join a choir.", "I would join a choir if I had more free time.", "If I had more free time, I might join a choir."],
   "Do not use would in the if-part. Say: If I had more free time, ...")
-M(S, "B1.2", 5, "You advise a manager. Which sentence is correct and polite?", "If I were you, I would speak to the team before the meeting.",
+M(S, "B1.2", 5, "You advise a manager politely. Choose the correct option.", "If I were you, I would speak to the team before the meeting.",
   ["If I were you, I will speak to the team before the meeting.", "If I am you, I would speak to the team before the meeting.", "If you were me, I would speak to the team before the meeting."],
   "Advice: If I were you, I would + base verb.")
 W(S, "B1.2", 6, "Write a sentence about an unlikely job you would like. Use if + past simple and would.",
@@ -195,7 +195,7 @@ G(S, "B2.1", 3, "If the company ___ more flexible hours, people ___ happier. (of
 M(S, "B2.1", 4, "Which sentence has a mistake?", "If I would know the answer, I would tell you.",
   ["If I knew the answer, I would tell you.", "If I knew the answer, I'd tell you.", "I would tell you if I knew the answer."],
   "Would does not go in the if-part. Say: If I knew the answer, I would tell you.")
-M(S, "B2.1", 5, "Which sentence is best for a polite request in a formal email?", "I would be grateful if you could send me the report by Friday.",
+M(S, "B2.1", 5, "You write a polite request in a formal email. Choose the correct option.", "I would be grateful if you could send me the report by Friday.",
   ["I would be grateful if you will send me the report by Friday.", "I would grateful if you could send me the report by Friday.", "I would be grateful if you could to send me the report by Friday."],
   "A polite request: I would be grateful if you could + base verb.")
 W(S, "B2.1", 6, "Write advice for a colleague who works too much. Start with If I were you and use would.",
@@ -218,7 +218,7 @@ G(S, "B1.2", 3, "If you ___ me about the meeting, I ___ there. (tell / be)", [["
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "If I would have known, I would have called you.",
   ["If I had known, I would have called you.", "I would have called you if I had known.", "If I hadn't known, I wouldn't have called you."],
   "Do not use would in the if-part. Say: If I had known, ...")
-M(S, "B1.2", 5, "A colleague forgot to save a file and lost two hours of work. Which comment is a correct third conditional?",
+M(S, "B1.2", 5, "A colleague forgot to save a file and lost two hours of work. Choose the correct third conditional comment.",
   "If you had saved it every ten minutes, you wouldn't have lost so much work.",
   ["If you saved it every ten minutes, you wouldn't have lost so much work.", "If you had saved it every ten minutes, you won't lose so much work.",
    "If you would have saved it every ten minutes, you wouldn't have lost so much work."],
@@ -242,7 +242,7 @@ T(S, "B2.1", 3, "Rewrite as a third conditional: I didn't see the sign, so I par
 M(S, "B2.1", 4, "Which sentence has a mistake?", "If the team has been better prepared, we would have won.",
   ["If the team had been better prepared, we would have won.", "We would have won if the team had been better prepared.", "If the team hadn't been so tired, we might have won."],
   "The if-part needs the past perfect: had been, not has been.")
-M(S, "B2.1", 5, "Which sentence is best for a polite criticism in a work review?", "If you had told us earlier, we could have adjusted the schedule.",
+M(S, "B2.1", 5, "You write a polite criticism in a work review. Choose the correct option.", "If you had told us earlier, we could have adjusted the schedule.",
   ["If you told us earlier, we could have adjusted the schedule.", "If you had told us earlier, we could adjust have the schedule.", "If you would tell us earlier, we could have adjusted the schedule."],
   "Third conditional with could have: if + past perfect, could have + past participle.")
 W(S, "B2.1", 6, "Write a sentence about a decision that changed your life. Start with If I hadn't and use would have.",
@@ -263,7 +263,7 @@ G(S, "B2.2", 3, "If he ___ (not / drive) so fast, he ___ (not / lose) his licenc
 M(S, "B2.2", 4, "Which sentence has a mistake?", "If I'd have known about the traffic, I would've left earlier.",
   ["If I'd known about the traffic, I would've left earlier.", "If I had known about the traffic, I would have left earlier.", "Had I known about the traffic, I would have left earlier."],
   "'If I'd have known' is a common mistake. In the if-part use had + past participle: If I'd known.")
-M(S, "B2.2", 5, "Which sentence expresses regret best in a formal apology?", "If I had realised the impact of my decision, I would have acted differently.",
+M(S, "B2.2", 5, "You express regret in a formal apology. Choose the correct option.", "If I had realised the impact of my decision, I would have acted differently.",
   ["If I realised the impact of my decision, I would have acted differently.", "If I would have realised the impact of my decision, I acted differently.", "If I had realise the impact of my decision, I would have acted differently."],
   "Formal regret about the past: if + past perfect, would have + past participle.")
 W(S, "B2.2", 6, "Write a sentence about what would have happened in history if one thing had been different (for example a famous discovery).",
@@ -285,7 +285,7 @@ G(S, "B2.1", 3, "If I ___ English at school, I ___ fluent now. (learn / be)", [[
 M(S, "B2.1", 4, "Which sentence is NOT correct?", "If I would have studied medicine, I would be a doctor now.",
   ["If I had studied medicine, I would be a doctor now.", "If I'd studied medicine, I'd be a doctor now.", "I would be a doctor now if I had studied medicine."],
   "Do not use would in the if-part: If I had studied medicine, ...")
-M(S, "B2.1", 5, "Which sentence best explains why someone is tired today because of last night?", "If I hadn't stayed up so late, I wouldn't be so tired now.",
+M(S, "B2.1", 5, "You explain why someone is tired today because of last night. Choose the correct option.", "If I hadn't stayed up so late, I wouldn't be so tired now.",
   ["If I didn't stay up so late, I wouldn't have been so tired now.", "If I hadn't stayed up so late, I wouldn't have been so tired now.", "If I wouldn't have stayed up so late, I wasn't so tired now."],
   "Past cause, present result: if + past perfect, would + base verb.")
 W(S, "B2.1", 6, "Write a sentence about how a past decision affects you now. Start with If I had and use would + base verb (not would have).",
@@ -304,7 +304,7 @@ T(S, "B2.2", 3, "Rewrite as a mixed conditional: He didn't take the job, so he i
 M(S, "B2.2", 4, "Which sentence is NOT correct?", "If I am more careful, I wouldn't have lost my keys.",
   ["If I were more careful, I wouldn't have lost my keys.", "If I had been more careful, I wouldn't have lost my keys.", "If I hadn't been so careless, I wouldn't be searching now."],
   "Do not use am in an unreal condition. Say: If I were more careful, ...")
-M(S, "B2.2", 5, "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Which comment explains the grammar best?",
+M(S, "B2.2", 5, "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar.",
   "It is a mixed conditional: a present quality (memory) with a past result.",
   ["It is a first conditional about the future.", "It is a zero conditional about a fact.", "It is a third conditional because of would have."],
   "The if-part is past simple (present quality). The result is would have + past participle (past).")
@@ -325,7 +325,7 @@ T(S, "C1.1", 3, "Rewrite with inversion: If I had listened to my accountant, I w
 M(S, "C1.1", 4, "Which sentence is NOT correct?", "Hadn't I taken that job, I wouldn't be living here now.",
   ["Had I not taken that job, I wouldn't be living here now.", "Had I taken that job, I would be rich now.", "Were I braver, I would have said no."],
   "Negative inversion is Had I not ..., not Hadn't I ...")
-M(S, "C1.1", 5, "Which sentence is best in a formal report about a past failure with a present effect?",
+M(S, "C1.1", 5, "You write a formal report about a past failure with a present effect. Choose the correct option.",
   "Had the contract been checked properly, we would not be facing these penalties now.",
   ["If the contract had checked properly, we would not be facing these penalties now.", "Had the contract been checked properly, we wouldn't facing these penalties now.", "Had checked the contract properly, we would not be facing these penalties now."],
   "Passive inversion: Had + object + been + past participle.")
@@ -349,7 +349,7 @@ T(S, "C1.1", 3, "Rewrite with unless: You will not get a refund if you don't hav
 M(S, "C1.1", 4, "Which sentence is NOT correct?", "Unless you don't hurry, we will miss the flight.",
   ["Unless you hurry, we will miss the flight.", "If you don't hurry, we will miss the flight.", "We will miss the flight unless you hurry."],
   "Unless already contains the negative. Do not add another one.")
-M(S, "C1.1", 5, "Which sentence is the most formal?", "Should you require further information, please contact our office.",
+M(S, "C1.1", 5, "Choose the most formal option.", "Should you require further information, please contact our office.",
   ["If you want more info, ring us.", "If you need more information, just call us.", "Call us if you need more info."],
   "Should + subject + verb is formal and common in business letters.")
 W(S, "C1.1", 6, "Write a sentence with 'provided that' or 'as long as' to give a condition for a favour.",
@@ -368,7 +368,7 @@ G(S, "C1.2", 3, "I wish I ___ that email yesterday. Now everyone knows.", "hadn'
 M(S, "C1.2", 4, "Which sentence has a mistake?", "If only I would have saved more money when I was young.",
   ["If only I had saved more money when I was young.", "I wish I had saved more money when I was young.", "If only I saved more money now."],
   "If only + past perfect is used for regret about the past. Not would have.")
-M(S, "C1.2", 5, "Which version sounds best in a speech about a past failure?", "If only we had listened to the warning signs, we would not be in this position.",
+M(S, "C1.2", 5, "You give a speech about a past failure. Choose the correct option.", "If only we had listened to the warning signs, we would not be in this position.",
   ["If only we would have listened to the warning signs, we would not be in this position.", "If only we listened to the warning signs, we would not be in this position.", "If only we had listen to the warning signs, we would not be in this position."],
   "If only + had + past participle, then would + base verb for the present result.")
 W(S, "C1.2", 6, "Write a sentence with 'I wish' or 'If only' about something you regret from last year.",

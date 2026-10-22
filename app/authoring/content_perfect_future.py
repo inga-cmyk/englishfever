@@ -17,7 +17,7 @@ G(S, "A2.2", 3, "___ you ___ at 6 pm? (work)", [["Were"], ["working"]],
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "I was watch TV.",
   ["He was sleeping.", "They were playing.", "We weren't listening."],
   "After was/were we need verb-ing: I was watching TV.")
-M(S, "A2.2", 5, "A friend asks: 'What were you doing at midnight?' Which answer is best?",
+M(S, "A2.2", 5, "A friend asks: 'What were you doing at midnight?' Choose the correct option.",
   "I was sleeping.", ["I sleep.", "I am sleeping.", "I have slept."],
   "The question uses the past continuous, so the answer also describes what was in progress.")
 W(S, "A2.2", 6, "Write a sentence about what you were doing at 7 pm yesterday. Use was/were + verb-ing.",
@@ -37,7 +37,7 @@ G(S, "B1.1", 3, "It ___ when we left the house, so we took umbrellas. (rain)", "
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "When I was a child, I was playing in the park every day.",
   ["When I arrived, they were having lunch.", "While I was reading, he was watching TV.", "She was cooking when the lights went out."],
   "Repeated actions in the past use the past simple (or used to), not the past continuous: I played in the park every day.")
-M(S, "B1.1", 5, "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Which form is best?",
+M(S, "B1.1", 5, "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option.",
   "ran", ["was running", "runs", "has run"],
   "A sudden, short action that interrupts uses the past simple.")
 W(S, "B1.1", 6, "Write one sentence with 'when' about something that interrupted you. Use the past continuous and the past simple.",
@@ -59,7 +59,7 @@ G(S, "B1.2", 3, "While the guests ___, the band ___ quiet music. (arrive / play)
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "They was going to meet us, but they were late.",
   ["I was going to call you, but I lost your number.", "She was going to leave when he arrived.", "We were going to stay longer."],
   "They needs were: They were going to meet us.")
-M(S, "B1.2", 5, "Which sentence best describes a plan that did not happen?",
+M(S, "B1.2", 5, "You want to describe a plan that did not happen. Choose the correct option.",
   "We were going to travel to Italy, but we cancelled.", ["We are going to travel to Italy, but we cancelled.", "We travel to Italy, but we cancelled.", "We have travelled to Italy, but we cancelled."],
   "Past tense + but shows the plan changed: were going to.")
 W(S, "B1.2", 6, "Write a sentence about a plan you had but did not do. Use was/were going to and but.",
@@ -84,7 +84,7 @@ G(S, "A2.2", 3, "I haven't ___ her yet. (call)", "called",
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "I have went to London twice.",
   ["She has lived here for years.", "Have you ever tried Thai food?", "We haven't seen that film yet."],
   "The past participle of go is gone (or been for visits): I have been to London twice.")
-M(S, "A2.2", 5, "Which is the best short answer to: 'Have you ever been to Rome?'",
+M(S, "A2.2", 5, "Someone asks you: 'Have you ever been to Rome?' Choose the correct option.",
   "Yes, I have.", ["Yes, I did.", "Yes, I do.", "Yes, I am."],
   "Short answers repeat the helper verb of the question: Have you ...? Yes, I have.")
 W(S, "A2.2", 6, "Write one sentence about something you have never done but would like to do. Use I have never.",
@@ -127,7 +127,7 @@ G(S, "B1.2", 3, "I ___ in three countries, so I speak a little of each language.
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "I have visited Paris in 2018.",
   ["She has just left.", "I've known him since 2015.", "Have you ever been to Italy?"],
   "'In 2018' is a finished time. Use the past simple: I visited Paris in 2018.")
-M(S, "B1.2", 5, "A colleague writes: 'I have sent the email yesterday.' Which comment is best?",
+M(S, "B1.2", 5, "A colleague writes: 'I have sent the email yesterday.' Choose the correct option.",
   "Use the past simple because 'yesterday' is finished: I sent the email yesterday.",
   ["It is correct. Do not change it.", "Use the future: I will send the email yesterday.", "Use the past continuous: I was sending the email yesterday."],
   "Finished time words (yesterday, last week, in 2018) need the past simple.")
@@ -172,7 +172,7 @@ G(S, "B1.2", 3, "I ___ this book all week. I ___ three chapters. (read / finish)
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "I've been writing five emails today.",
   ["She has been working here since March.", "How long have you been living here?", "They have been talking for hours."],
   "With an exact number we use the present perfect simple: I've written five emails today.")
-M(S, "B1.2", 5, "Your boss asks why you look tired. You were in traffic for an hour until now. Which answer is best?",
+M(S, "B1.2", 5, "Your boss asks why you look tired. You were in traffic for an hour until now. Choose the correct option.",
   "I've been sitting in traffic for an hour.", ["I sit in traffic for an hour.", "I will sit in traffic for an hour.", "I sat in traffic tomorrow."],
   "A recent, continuing activity that explains the present: present perfect continuous.")
 W(S, "B1.2", 6, "Write two sentences: one present perfect continuous about an activity, one present perfect simple about a result.",
@@ -199,7 +199,7 @@ T(S, "B1.2", 3, "Join with After: I finished work. Then I went home.",
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "When I arrived, she already has left.",
   ["When I arrived, she had already left.", "I had never seen snow before that day.", "He told me that he had lost his keys."],
   "For an earlier past action use had + past participle: she had already left.")
-M(S, "B1.2", 5, "Tom arrived at 9. The meeting started at 8.30. Which sentence is correct?",
+M(S, "B1.2", 5, "Tom arrived at 9. The meeting started at 8.30. Choose the correct option.",
   "When Tom arrived, the meeting had already started.",
   ["When Tom arrived, the meeting has already started.", "When Tom arrived, the meeting would already start.", "When Tom arrived, the meeting is already started."],
   "The meeting started before Tom arrived, so we use the past perfect for the meeting.")
@@ -227,7 +227,7 @@ T(S, "A2.1", 3, "Make a question: You are going to travel by train.", ["Are you 
 M(S, "A2.1", 4, "Which sentence is NOT correct?", "I going to buy a bike.",
   ["She is going to cook.", "We are going to swim.", "They are going to play."],
   "We need am / is / are before going to: I am going to buy a bike.")
-M(S, "A2.1", 5, "A friend asks: 'What are you going to do at the weekend?' Which answer is best?",
+M(S, "A2.1", 5, "A friend asks: 'What are you going to do at the weekend?' Choose the correct option.",
   "I'm going to visit my parents.", ["I visited my parents.", "I visit my parents every day.", "I am visit my parents."],
   "The question is about a future plan, so we answer with going to.")
 W(S, "A2.1", 6, "Write one sentence about your plan for tomorrow. Use I am going to.",
@@ -247,7 +247,7 @@ G(S, "A2.2", 3, "We ___ to Rome next month. We've already bought the tickets. (g
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "I will to help you.",
   ["I'm going to visit my aunt next week.", "It will be sunny tomorrow.", "She is going to have a baby."],
   "After will we use the base verb without 'to': I will help you.")
-M(S, "A2.2", 5, "Black clouds are in the sky. Which sentence is best?", "It's going to rain.",
+M(S, "A2.2", 5, "Black clouds are in the sky. Choose the correct option.", "It's going to rain.",
   ["It will rain.", "It rains.", "It rained."],
   "When we see evidence now, going to is the natural choice.")
 W(S, "A2.2", 6, "Write a sentence about your plan for next weekend. Use going to.",
@@ -270,7 +270,7 @@ T(S, "B1.1", 3, "Rewrite with going to: I plan to buy a car.", ["I'm going to bu
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "I'll call you when I will arrive.",
   ["We're flying to Rome on Monday.", "I think it'll be a great trip.", "As soon as he arrives, we will start."],
   "In time clauses (when, as soon as, before) use the present simple: when I arrive.")
-M(S, "B1.1", 5, "Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Which form sounds more natural for an arrangement?",
+M(S, "B1.1", 5, "Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Choose the more natural option for an arrangement.",
   "I'm meeting Anna at 6.", ["I meet Anna at 6 yesterday.", "I met Anna at 6 tomorrow.", "I'm going to be met Anna at 6."],
   "For arrangements with a time we often use the present continuous.")
 W(S, "B1.1", 6, "Write a sentence with when or as soon as about what you will do after class or work.",
@@ -291,7 +291,7 @@ G(S, "B1.2", 3, "Be careful! You ___ off that chair! (fall)", "are going to fall
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "He is going to be arrive soon.",
   ["She is about to leave.", "Will you help me?", "It's going to rain; look at the sky."],
   "After going to we use the base verb: He is going to arrive soon.")
-M(S, "B1.2", 5, "You see a colleague with heavy boxes. What is the best offer?", "I'll carry one of those for you.",
+M(S, "B1.2", 5, "You see a colleague with heavy boxes. Choose the correct option.", "I'll carry one of those for you.",
   ["I carry one of those for you.", "I'm carrying one of those for you.", "I carried one of those for you."],
   "Will is the natural choice for a spontaneous offer.")
 W(S, "B1.2", 6, "Write two sentences: one prediction with going to (with a reason) and one spontaneous offer with will.",

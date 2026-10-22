@@ -234,7 +234,8 @@ textarea.write { min-height: 110px; resize: vertical; margin-bottom: 18px; }
 /* Alive: cards lift and glow under the mouse, buttons answer the pointer. Only where there is a real pointer; touch screens get the pulse below. */
 @media (hover: hover) and (pointer: fine) {
   .card:hover { box-shadow: var(--shadow-hover); border-color: var(--gold); }
-  .card.act:hover, .skill:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--gold-deep); }
+  .card.act:hover, .card.focus:hover, .skill:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--gold-deep); }
+  details.card.fold:hover { border-color: var(--gold); }
   .btn:not([disabled]):hover { transform: translateY(-2px); }
   .btn:not(.ghost):not(.dark):not([disabled]):hover { box-shadow: var(--btn-glow); }
   .btn.ghost:not([disabled]):hover, .btn.dark:not([disabled]):hover { box-shadow: var(--shadow-hover); }
@@ -385,6 +386,25 @@ html.dnd-dragging, html.dnd-dragging * { user-select: none; -webkit-user-select:
 .picker-group[open] > summary::before { content: '▾'; }
 .picker-group > summary .h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
 /* "Your topics": one fold-away section per area */
+/* quiet Home: one main card, small links, one muted line, folded extras */
+.home .hello { margin-bottom: 18px; }
+.card.focus { padding: 26px 28px; margin-bottom: 14px; }
+.card.focus h2 { font-size: 1.35rem; margin-bottom: 6px; }
+.card.focus p { margin: 0 0 18px; }
+.card.focus .btn { min-width: 190px; justify-content: center; }
+.homelinks { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 18px 0 0 !important; font-size: .95rem; }
+.homelinks a, .homelinks .linkbtn { color: var(--muted); text-decoration: none; font-size: inherit; }
+.homelinks a:hover, .homelinks .linkbtn:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.homestat { margin: 0 4px 22px; }
+@media (min-width: 901px) { .homelinks .only-m { display: none; } }
+details.card.fold { padding: 0; margin-bottom: 12px; box-shadow: none; }
+details.card.fold > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 16px 20px; }
+details.card.fold > summary::-webkit-details-marker { display: none; }
+details.card.fold > summary .h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+details.card.fold > summary .h3::before { content: '▸'; margin-right: 8px; color: var(--muted); display: inline-block; }
+details.card.fold[open] > summary .h3::before { content: '▾'; }
+details.card.fold > .fold-body { padding: 0 20px 18px; }
+details.card.fold h3 { font-size: 1rem; margin: 0 0 8px; }
 details.area-fold { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 4px; }
 details.area-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 10px 0; }
 details.area-fold > summary::-webkit-details-marker { display: none; }
@@ -404,3 +424,4 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .size input:checked + span { border-color: var(--btn); box-shadow: 0 0 0 2px var(--btn) inset; }
 .size input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 2px; }
 @media (max-width: 600px) { .sizes { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .home .hello h1 { font-size: 1.55rem; line-height: 1.2; } .card.focus { padding: 22px 20px; } }

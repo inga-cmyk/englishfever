@@ -19,7 +19,7 @@ G(S, "B1.1", 3, "'I don't like coffee,' Mark said. → Mark said he ___ coffee. 
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "He said me he was tired.",
   ["He told me he was tired.", "He said he was tired.", "He said to me that he was tired."],
   "After said we do not use a person directly. Use told me, or said to me.")
-M(S, "B1.1", 5, "Which sentence best reports: 'I can't come to the meeting,' Jon said.", "Jon said he couldn't come to the meeting.",
+M(S, "B1.1", 5, "Report this: 'I can't come to the meeting,' Jon said. Choose the correct option.", "Jon said he couldn't come to the meeting.",
   ["Jon said I couldn't come to the meeting.", "Jon said he can't came to the meeting.", "Jon said he couldn't to come to the meeting."],
   "can't → couldn't, and I → he (Jon is talking about himself).")
 W(S, "B1.1", 6, "Report this sentence. 'I'm learning Spanish,' Elena said. Start with Elena said.",
@@ -40,7 +40,7 @@ T(S, "B1.2", 3, "Report this: 'I'm leaving now,' Kate said.",
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "She said she will call me the next day.",
   ["She said she would call me the next day.", "She told me she had finished the report.", "He said he was working at home that day."],
   "Will goes back to would in reported speech: She said she would call me.")
-M(S, "B1.2", 5, "Which sentence best reports a message to your manager? 'We are almost ready,' the team said.", "The team told me they were almost ready.",
+M(S, "B1.2", 5, "You report a message to your manager: 'We are almost ready,' the team said. Choose the correct option.", "The team told me they were almost ready.",
   ["The team told me we were almost ready.", "The team said me they were almost ready.", "The team told they were almost ready."],
   "told needs a person (told me). We becomes they, and are goes back to were.")
 W(S, "B1.2", 6, "Report what a colleague said yesterday: 'I'll send the file tomorrow.' Start with He said.",
@@ -63,7 +63,7 @@ T(S, "B2.1", 3, "Report this: 'You must finish by Friday,' my boss said.",
 M(S, "B2.1", 4, "Which sentence is NOT correct?", "She told that she would be late.",
   ["She said that she would be late.", "She told me that she would be late.", "She told us she would be late."],
   "tell is always followed by a person: She told me / us ...")
-M(S, "B2.1", 5, "Which sentence reports this most naturally? 'I won't sign it until the lawyer reads it,' the client said.",
+M(S, "B2.1", 5, "Report this naturally: 'I won't sign it until the lawyer reads it,' the client said. Choose the correct option.",
   "The client said he wouldn't sign it until the lawyer had read it.",
   ["The client said he won't sign it until the lawyer will read it.", "The client said I wouldn't sign it until the lawyer reads it.", "The client told he wouldn't sign it until the lawyer read it."],
   "won't → wouldn't, I → he, and the earlier action goes back to the past perfect.")
@@ -86,7 +86,7 @@ G(S, "B1.2", 3, "'What time does the film start?' → She asked what time the fi
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "He asked me where did I live.",
   ["He asked me where I lived.", "He asked if I wanted a coffee.", "She asked whether it was true."],
   "A reported question has statement word order: where I lived, not where did I live.")
-M(S, "B1.2", 5, "A hotel guest asked: 'Is breakfast included?' Which report is best?", "The guest asked whether breakfast was included.",
+M(S, "B1.2", 5, "A hotel guest asked: 'Is breakfast included?' You report the question. Choose the correct option.", "The guest asked whether breakfast was included.",
   ["The guest asked was breakfast included.", "The guest asked that breakfast was included.", "The guest asked is breakfast included."],
   "Yes/no question: asked + if / whether + subject + verb.")
 W(S, "B1.2", 6, "Report this question: 'Why are you leaving?' Start with Kate asked me why.",
@@ -112,7 +112,7 @@ T(S, "B2.1", 3, "Report this: 'Could you send me the invoice?' Lena asked.",
 M(S, "B2.1", 4, "Which sentence is NOT correct?", "He asked me what time was it.",
   ["He asked me what time it was.", "He asked me when the train left.", "He asked me if I knew the way."],
   "In a reported question the subject comes before the verb: what time it was.")
-M(S, "B2.1", 5, "You report a customer's question to your team. Which sentence is best? 'How long will the repair take?' the customer asked.",
+M(S, "B2.1", 5, "You report a customer's question to your team: 'How long will the repair take?' the customer asked. Choose the correct option.",
   "The customer asked how long the repair would take.",
   ["The customer asked how long would the repair take.", "The customer asked how long will the repair take.", "The customer asked how long did the repair take."],
   "Normal word order, and will goes back to would.")
@@ -133,7 +133,7 @@ T(S, "B2.2", 3, "Report this: 'Where should we meet?' they asked.",
 M(S, "B2.2", 4, "Which sentence is NOT correct?", "She asked me whether or not did I agree.",
   ["She asked me whether or not I agreed.", "She asked me whether I agreed or not.", "She asked if I agreed."],
   "After whether we use statement word order: whether or not I agreed.")
-M(S, "B2.2", 5, "Which sentence is best in meeting minutes? 'Has the budget been approved?' Ms Novak asked.", "Ms Novak asked whether the budget had been approved.",
+M(S, "B2.2", 5, "You write meeting minutes: 'Has the budget been approved?' Ms Novak asked. Choose the correct option.", "Ms Novak asked whether the budget had been approved.",
   ["Ms Novak asked has the budget been approved.", "Ms Novak asked whether had the budget been approved.", "Ms Novak asked that the budget had been approved."],
   "Yes/no question: asked + whether + subject + verb. The present perfect goes back to the past perfect.")
 W(S, "B2.2", 6, "Report this question using whether. 'Is the data accurate?' the editor asked. Start with The editor asked whether.",
@@ -158,7 +158,7 @@ T(S, "B2.2", 3, "Report with a reporting verb: 'I didn't take your phone,' Max s
 M(S, "B2.2", 4, "Which sentence is NOT correct?", "She suggested to go by train.",
   ["She suggested going by train.", "She suggested that we go by train.", "She suggested we should go by train."],
   "suggest is not followed by to + base verb. Use -ing or that + clause.")
-M(S, "B2.2", 5, "Which sentence best reports a polite refusal? 'No, I won't work this weekend,' Sam said.", "Sam refused to work that weekend.",
+M(S, "B2.2", 5, "Report a polite refusal: 'No, I won't work this weekend,' Sam said. Choose the correct option.", "Sam refused to work that weekend.",
   ["Sam refused working that weekend.", "Sam refused that he works this weekend.", "Sam refused me to work that weekend."],
   "refuse + to + base verb.")
 W(S, "B2.2", 6, "Report this apology with apologise: 'Sorry I forgot the meeting,' Dana said.",
@@ -178,7 +178,7 @@ T(S, "C1.1", 3, "Report with congratulate: 'Well done on winning the award!' Tim
 M(S, "C1.1", 4, "Which sentence is NOT correct?", "He blamed me for to lose the file.",
   ["He blamed me for losing the file.", "He accused me of losing the file.", "He admitted losing the file."],
   "blame + person + for + -ing.")
-M(S, "C1.1", 5, "Which sentence is the most concise and natural? 'I'm very sorry for the delay, and I will make sure it never happens again,' the manager said.",
+M(S, "C1.1", 5, "Report this concisely and naturally: 'I'm very sorry for the delay, and I will make sure it never happens again,' the manager said. Choose the correct option.",
   "The manager apologised for the delay and promised that it would not happen again.",
   ["The manager said that he was very sorry for the delay and he will make sure it never happens again.", "The manager apologised the delay and promised that it will not happen again.",
    "The manager apologised for the delay and promised to that it would not happen again."],
@@ -201,7 +201,7 @@ T(S, "C1.2", 3, "Report with a reporting verb: 'You really should see a doctor a
 M(S, "C1.2", 4, "Which sentence has a mistake?", "He recommended me to read the report carefully.",
   ["He recommended reading the report carefully.", "He recommended that I read the report carefully.", "He advised me to read the report carefully."],
   "recommend is not followed by person + to. Use recommend + -ing, recommend + that, or advise + person + to.")
-M(S, "C1.2", 5, "Which is the best way to report a complaint in formal English? 'The service was terrible and nobody apologised,' the customer said.",
+M(S, "C1.2", 5, "You report a complaint in formal English: 'The service was terrible and nobody apologised,' the customer said. Choose the correct option.",
   "The customer complained that the service had been terrible and that nobody had apologised.",
   ["The customer complained about the service had been terrible.", "The customer complained to be terrible the service.", "The customer complained me that the service was terrible."],
   "complain + that + clause. The past goes back to the past perfect.")
@@ -226,7 +226,7 @@ G(S, "B1.1", 3, "Where does Anna live? → Do you know where Anna ___?", "lives"
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "Do you know what time does the film start?",
   ["Do you know what time the film starts?", "Could you tell me where she lives?", "I wonder how much it costs."],
   "No does after the question word in an indirect question: what time the film starts.")
-M(S, "B1.1", 5, "You ask a stranger for the post office. Which is the most polite?", "Excuse me, could you tell me where the post office is?",
+M(S, "B1.1", 5, "You ask a stranger for the post office. Choose the most polite option.", "Excuse me, could you tell me where the post office is?",
   ["Where is the post office?", "Tell me where the post office is.", "Excuse me, where is the post office?"],
   "A polite phrase + an indirect question sounds softer and more polite.")
 W(S, "B1.1", 6, "Write a polite indirect question to ask a colleague where the meeting room is. Start with Could you tell me.",
@@ -249,7 +249,7 @@ T(S, "B1.2", 3, "Make it polite: What time does the museum close?",
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "I wonder what does she want.",
   ["I wonder what she wants.", "Do you know who she is?", "Could you tell me if he's here?"],
   "After I wonder we use statement word order: what she wants.")
-M(S, "B1.2", 5, "Which sentence is best in a polite email to a client?", "Could you let me know whether the contract has been signed?",
+M(S, "B1.2", 5, "You write a polite email to a client. Choose the correct option.", "Could you let me know whether the contract has been signed?",
   ["Could you let me know has the contract been signed?", "Could you let me know if has the contract been signed?", "Could you let me know whether has been the contract signed?"],
   "Could you let me know + whether / if + subject + verb.")
 W(S, "B1.2", 6, "Write an indirect question to ask a stranger whether the café takes cards. Start with Do you know if.",
@@ -272,7 +272,7 @@ T(S, "B2.1", 3, "Make it indirect: Why didn't the order arrive?",
 M(S, "B2.1", 4, "Which sentence is NOT correct?", "I'd like to know where did you put the keys.",
   ["I'd like to know where you put the keys.", "Do you remember where you put the keys?", "I wonder where I put them."],
   "Statement word order after I'd like to know: where you put the keys.")
-M(S, "B2.1", 5, "You call customer service. Which opening is best?", "I was wondering if you could tell me when my order will be delivered.",
+M(S, "B2.1", 5, "You call customer service. Choose the correct option.", "I was wondering if you could tell me when my order will be delivered.",
   ["I was wondering when will my order be delivered?", "I was wondering if you could tell me when will my order be delivered?", "I was wondering that you could tell me when my order will be delivered."],
   "I was wondering if you could tell me + when + subject + verb.")
 W(S, "B2.1", 6, "Write a polite indirect question to ask when a report will be ready. Start with I was wondering.",
@@ -294,7 +294,7 @@ T(S, "B2.2", 3, "Join with a question word + to: I don't know. What should I say
 M(S, "B2.2", 4, "Which sentence is NOT correct?", "I can't decide whether accepting the offer.",
   ["I can't decide whether to accept the offer.", "I can't decide whether or not to accept the offer.", "I can't decide whether to accept the offer or not."],
   "After whether we use to + base verb, or a full clause.")
-M(S, "B2.2", 5, "Which sentence sounds best in a formal email?", "It remains unclear who is responsible for the delay.",
+M(S, "B2.2", 5, "You write a formal email. Choose the correct option.", "It remains unclear who is responsible for the delay.",
   ["It remains unclear who is the responsible for the delay.", "It remains unclear who responsible is for the delay.", "It remains unclear who does responsible for the delay."],
   "Embedded question: who + is + responsible (statement order).")
 W(S, "B2.2", 6, "Write a sentence with 'I have no idea' and a question word (how, what, where, when, who or why).",
@@ -314,7 +314,7 @@ T(S, "C1.1", 3, "Combine: Who made the decision? It's not clear.",
 M(S, "C1.1", 4, "Which sentence is NOT correct?", "We talked about how could we improve the results.",
   ["We talked about how to improve the results.", "We talked about how we could improve the results.", "We talked about whether to improve the results."],
   "No question order after about: how we could improve the results.")
-M(S, "C1.1", 5, "Which is best for a report: 'The question is ___.'", "whether the project is worth the cost",
+M(S, "C1.1", 5, "You write a report: 'The question is ___.' Choose the correct option.", "whether the project is worth the cost",
   ["is the project worth the cost", "if is the project worth the cost", "whether is the project worth the cost"],
   "The question is + whether + subject + verb.")
 W(S, "C1.1", 6, "Write a sentence starting with 'The question is' + whether / how / why + a clause.",
@@ -332,7 +332,7 @@ T(S, "C1.2", 3, "Rewrite with a wh-ever word: It doesn't matter who calls. Don't
 M(S, "C1.2", 4, "Which sentence is NOT correct?", "Whomever wins the contract will celebrate.",
   ["Whoever wins the contract will celebrate.", "Give it to whomever you trust.", "Give it to whoever wants it."],
   "Whoever wins: whoever is the subject. In 'whomever you trust', whomever is the object.")
-M(S, "C1.2", 5, "Which sentence is best for a formal report?", "How the funds were spent remains to be investigated.",
+M(S, "C1.2", 5, "You write a formal report. Choose the correct option.", "How the funds were spent remains to be investigated.",
   ["How were the funds spent remains to be investigated.", "How the funds were spent it remains to be investigated.", "How funds were the spent remains to be investigated."],
   "An embedded question used as the subject keeps statement word order.")
 W(S, "C1.2", 6, "Write a sentence with 'whoever', 'whatever' or 'wherever' to describe a flexible rule at your workplace.",

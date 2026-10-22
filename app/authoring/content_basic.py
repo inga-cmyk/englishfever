@@ -43,7 +43,7 @@ T(S, "A2.2", 3, "Make a question with How: She goes to work by bus.", ["How does
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "Do they speaks English?",
   ["My sister never eats fish.", "He doesn't have a car.", "We usually go by bus."],
   "After do we need the base verb: Do they speak English?")
-M(S, "A2.2", 5, "Your colleague says: 'He go to the gym on Mondays.' What is the best advice?",
+M(S, "A2.2", 5, "Your colleague says: 'He go to the gym on Mondays.' Choose the correct option.",
   "Say 'He goes to the gym on Mondays.' Add -es for he, she, it.",
   ["Say 'He go to the gym on Mondays.' It is correct.", "Say 'He is go to the gym on Mondays.'", "Say 'He going to the gym on Mondays.'"],
   "With he, she, it the present simple verb takes -s or -es: he goes.")
@@ -66,7 +66,7 @@ T(S, "B1.1", 3, "Make it negative and use 'any': She has money.",
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "I am liking this song.",
   ["The museum opens at nine.", "How much does it cost?", "He doesn't speak French."],
   "'Like' is a state verb. We say: I like this song.")
-M(S, "B1.1", 5, "Your friend says: 'I'm wanting a coffee.' What is the best correction?",
+M(S, "B1.1", 5, "Your friend says: 'I'm wanting a coffee.' Choose the correct option.",
   "'I want a coffee.' Want is a state verb, so we use the present simple.",
   ["'I'm wanting a coffee.' It is correct.", "'I wanted a coffee now.'", "'I am want a coffee.'"],
   "State verbs (want, need, like, know) are normally not used in the continuous.")
@@ -93,7 +93,7 @@ G(S, "A2.1", 3, "She ___ in the park now. (run)", "is running",
 M(S, "A2.1", 4, "Which sentence is NOT correct?", "They are play football.",
   ["He is watching TV.", "I am reading a book.", "We are having lunch."],
   "After are we need verb-ing: They are playing football.")
-M(S, "A2.1", 5, "A friend is at the station and you ask about now. Which question is best?",
+M(S, "A2.1", 5, "A friend is at the station and you ask about now. Choose the correct option.",
   "What are you doing now?", ["What do you do now?", "What you are doing now?", "What are you do now?"],
   "For right now we use are + you + verb-ing.")
 W(S, "A2.1", 6, "Look around you. Write one sentence about what you are doing now. Start with I am.",
@@ -114,7 +114,7 @@ T(S, "A2.2", 3, "Make it negative: They are waiting for the bus.",
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "She is have a shower.",
   ["Are you coming to the party?", "We aren't working today.", "It is raining."],
   "After is we need verb-ing: She is having a shower.")
-M(S, "A2.2", 5, "Your friend is in Riga for one month only. Which sentence is best?",
+M(S, "A2.2", 5, "Your friend is in Riga for one month only. Choose the correct option.",
   "I'm living in a small flat this month.", ["I live in a small flat this month.", "I lived in a small flat this month.", "I will living in a small flat."],
   "The continuous shows a temporary situation.")
 W(S, "A2.2", 6, "Write a question to ask a friend about their plans for tonight. Use Are you + verb-ing.",
@@ -183,7 +183,7 @@ G(S, "A2.2", 3, "He ___ at 7 and ___ a shower. (wake up / have)", [["woke up"], 
 M(S, "A2.2", 4, "Which sentence is NOT correct?", "Did you saw the match?",
   ["I met her two years ago.", "They didn't like the food.", "What did he say?"],
   "After did we use the base verb: Did you see the match?")
-M(S, "A2.2", 5, "A colleague asks: 'What did you do at the weekend?' Which answer is best?",
+M(S, "A2.2", 5, "A colleague asks: 'What did you do at the weekend?' Choose the correct option.",
   "I went hiking with my brother.", ["I go hiking with my brother.", "I am going hiking with my brother.", "I have gone hiking with my brother."],
   "The question is in the past simple, so we answer about a finished time with the past simple.")
 W(S, "A2.2", 6, "Write two short sentences about your last holiday or day off. Use the past simple.",
@@ -205,7 +205,7 @@ T(S, "B1.1", 3, "Make a question with When: She moved to London.", ["When did sh
 M(S, "B1.1", 4, "Which sentence is NOT correct?", "Why did you went home early?",
   ["I didn't have time yesterday.", "When did they arrive?", "She called me at six."],
   "After did we use the base verb: Why did you go home early?")
-M(S, "B1.1", 5, "You want to say your report was finished in March. Which sentence is best?",
+M(S, "B1.1", 5, "You want to say your report was finished in March. Choose the correct option.",
   "I finished it in March.", ["I have finished it in March.", "I am finishing it in March.", "I finish it in March."],
   "'In March' is a finished time, so we use the past simple, not the present perfect.")
 W(S, "B1.1", 6, "Write two sentences that start a story. Say what happened first and what happened next (use Then or After that).",
@@ -227,7 +227,7 @@ G(S, "B1.2", 3, "He ___ to like fish, but now he loves it. (not / use)", ["didn'
 M(S, "B1.2", 4, "Which sentence is NOT correct?", "I didn't used to like coffee.",
   ["She used to live in Paris.", "Did you use to play chess?", "They used to work here."],
   "After didn't we write 'use to': I didn't use to like coffee.")
-M(S, "B1.2", 5, "Which sentence is best to talk about a repeated habit in the past?",
+M(S, "B1.2", 5, "You want to talk about a repeated habit in the past. Choose the correct option.",
   "As a child, I used to visit my grandparents every summer.",
   ["As a child, I visited my grandparents last summer.", "As a child, I am visiting my grandparents every summer.", "As a child, I have visited my grandparents every summer."],
   "'Used to' + 'every summer' shows a repeated past habit.")

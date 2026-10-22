@@ -249,7 +249,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your colleague says: 'He go to the gym on Mondays.' What is the best advice?",
+"q": "Your colleague says: 'He go to the gym on Mondays.' Choose the correct option.",
 "correct": "Say 'He goes to the gym on Mondays.' Add -es for he, she, it.",
 "wrong": [
 "Say 'He go to the gym on Mondays.' It is correct.",
@@ -375,7 +375,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend says: 'I'm wanting a coffee.' What is the best correction?",
+"q": "Your friend says: 'I'm wanting a coffee.' Choose the correct option.",
 "correct": "'I want a coffee.' Want is a state verb, so we use the present simple.",
 "wrong": [
 "'I'm wanting a coffee.' It is correct.",
@@ -510,7 +510,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend is at the station and you ask about now. Which question is best?",
+"q": "A friend is at the station and you ask about now. Choose the correct option.",
 "correct": "What are you doing now?",
 "wrong": [
 "What do you do now?",
@@ -632,7 +632,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend is in Riga for one month only. Which sentence is best?",
+"q": "Your friend is in Riga for one month only. Choose the correct option.",
 "correct": "I'm living in a small flat this month.",
 "wrong": [
 "I live in a small flat this month.",
@@ -1015,7 +1015,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A colleague asks: 'What did you do at the weekend?' Which answer is best?",
+"q": "A colleague asks: 'What did you do at the weekend?' Choose the correct option.",
 "correct": "I went hiking with my brother.",
 "wrong": [
 "I go hiking with my brother.",
@@ -1145,7 +1145,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to say your report was finished in March. Which sentence is best?",
+"q": "You want to say your report was finished in March. Choose the correct option.",
 "correct": "I finished it in March.",
 "wrong": [
 "I have finished it in March.",
@@ -1269,7 +1269,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best to talk about a repeated habit in the past?",
+"q": "You want to talk about a repeated habit in the past. Choose the correct option.",
 "correct": "As a child, I used to visit my grandparents every summer.",
 "wrong": [
 "As a child, I visited my grandparents last summer.",
@@ -1401,7 +1401,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend asks: 'What were you doing at midnight?' Which answer is best?",
+"q": "A friend asks: 'What were you doing at midnight?' Choose the correct option.",
 "correct": "I was sleeping.",
 "wrong": [
 "I sleep.",
@@ -1522,7 +1522,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Which form is best?",
+"q": "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option.",
 "correct": "ran",
 "wrong": [
 "was running",
@@ -1653,7 +1653,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence best describes a plan that did not happen?",
+"q": "You want to describe a plan that did not happen. Choose the correct option.",
 "correct": "We were going to travel to Italy, but we cancelled.",
 "wrong": [
 "We are going to travel to Italy, but we cancelled.",
@@ -1782,7 +1782,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which is the best short answer to: 'Have you ever been to Rome?'",
+"q": "Someone asks you: 'Have you ever been to Rome?' Choose the correct option.",
 "correct": "Yes, I have.",
 "wrong": [
 "Yes, I did.",
@@ -2038,7 +2038,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A colleague writes: 'I have sent the email yesterday.' Which comment is best?",
+"q": "A colleague writes: 'I have sent the email yesterday.' Choose the correct option.",
 "correct": "Use the past simple because 'yesterday' is finished: I sent the email yesterday.",
 "wrong": [
 "It is correct. Do not change it.",
@@ -2282,7 +2282,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your boss asks why you look tired. You were in traffic for an hour until now. Which answer is best?",
+"q": "Your boss asks why you look tired. You were in traffic for an hour until now. Choose the correct option.",
 "correct": "I've been sitting in traffic for an hour.",
 "wrong": [
 "I sit in traffic for an hour.",
@@ -2422,7 +2422,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Tom arrived at 9. The meeting started at 8.30. Which sentence is correct?",
+"q": "Tom arrived at 9. The meeting started at 8.30. Choose the correct option.",
 "correct": "When Tom arrived, the meeting had already started.",
 "wrong": [
 "When Tom arrived, the meeting has already started.",
@@ -2568,7 +2568,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend asks: 'What are you going to do at the weekend?' Which answer is best?",
+"q": "A friend asks: 'What are you going to do at the weekend?' Choose the correct option.",
 "correct": "I'm going to visit my parents.",
 "wrong": [
 "I visited my parents.",
@@ -2688,7 +2688,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Black clouds are in the sky. Which sentence is best?",
+"q": "Black clouds are in the sky. Choose the correct option.",
 "correct": "It's going to rain.",
 "wrong": [
 "It will rain.",
@@ -2830,7 +2830,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Which form sounds more natural for an arrangement?",
+"q": "Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Choose the more natural option for an arrangement.",
 "correct": "I'm meeting Anna at 6.",
 "wrong": [
 "I meet Anna at 6 yesterday.",
@@ -2954,7 +2954,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You see a colleague with heavy boxes. What is the best offer?",
+"q": "You see a colleague with heavy boxes. Choose the correct option.",
 "correct": "I'll carry one of those for you.",
 "wrong": [
 "I carry one of those for you.",
@@ -3207,7 +3207,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to write a neutral email and not blame anyone. Which sentence is best?",
+"q": "You want to write a neutral email and not blame anyone. Choose the correct option.",
 "correct": "The invoices are sent on Fridays.",
 "wrong": [
 "You send the invoices on Fridays.",
@@ -3452,7 +3452,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is correct for a past event when we don't know who did it?",
+"q": "A past event: we don't know who did it. Choose the correct option.",
 "correct": "My bike was stolen.",
 "wrong": [
 "My bike stole.",
@@ -3579,7 +3579,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A news report says what happened but the person who did it is unknown. Which sentence is best?",
+"q": "A news report says what happened but the person who did it is unknown. Choose the correct option.",
 "correct": "A car was stolen last night.",
 "wrong": [
 "Someone stealing a car last night.",
@@ -3709,7 +3709,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to mention a mistake politely, without blaming anyone. Which sentence is best?",
+"q": "You want to mention a mistake politely, without blaming anyone. Choose the correct option.",
 "correct": "A mistake was made in the report.",
 "wrong": [
 "You made a mistake in the report.",
@@ -3832,7 +3832,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A technician is still working on your computer. What is the best sentence?",
+"q": "A technician is still working on your computer. Choose the correct option.",
 "correct": "Your computer is being fixed.",
 "wrong": [
 "Your computer is fixed.",
@@ -4191,7 +4191,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You do not want to say who will do the action. Which sentence is best?",
+"q": "You do not want to say who will do the action. Choose the correct option.",
 "correct": "The files will be checked on Monday.",
 "wrong": [
 "Someone checks the files on Monday.",
@@ -4309,7 +4309,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "In an airport announcement, which sentence is best?",
+"q": "You write an airport announcement. Choose the correct option.",
 "correct": "Passengers will be informed of any changes.",
 "wrong": [
 "Passengers informing of any changes.",
@@ -4436,7 +4436,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A learner wrote: 'If you will mix blue and yellow, you get green.' What is the best advice?",
+"q": "A learner wrote: 'If you will mix blue and yellow, you get green.' Choose the correct option.",
 "correct": "Remove will: 'If you mix blue and yellow, you get green.'",
 "wrong": [
 "Change get to will get: 'If you will mix blue and yellow, you will get green.'",
@@ -4550,7 +4550,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Which version is best?",
+"q": "Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Choose the correct option.",
 "correct": "If a visitor arrives, sign them in at reception.",
 "wrong": [
 "If a visitor would arrive, sign them in at reception.",
@@ -4667,7 +4667,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend writes: 'If I will have time, I will call you.' What is the best advice?",
+"q": "A friend writes: 'If I will have time, I will call you.' Choose the correct option.",
 "correct": "Say 'If I have time, I'll call you.'",
 "wrong": [
 "Say 'If I would have time, I will call you.'",
@@ -4859,7 +4859,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to warn a friend who keeps forgetting his password. Which sentence is correct and sounds like a warning?",
+"q": "You want to warn a friend who keeps forgetting his password. Choose the correct option.",
 "correct": "If you forget it again, you'll be locked out.",
 "wrong": [
 "If you will forget it again, you'll be locked out.",
@@ -5002,7 +5002,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "In an email to a client you want to sound confident but polite. Which sentence is best?",
+"q": "In an email to a client you want to sound confident but polite. Choose the correct option.",
 "correct": "If you send us the documents today, we will process your request by Friday.",
 "wrong": [
 "If you will send us the documents today, we will process your request by Friday.",
@@ -5114,7 +5114,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend can't decide whether to quit and become a baker. You give advice. Which sentence is best?",
+"q": "Your friend can't decide whether to quit and become a baker. You give advice. Choose the correct option.",
 "correct": "If I were you, I would talk to a few bakers first.",
 "wrong": [
 "If I am you, I will talk to a few bakers first.",
@@ -5287,7 +5287,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You advise a manager. Which sentence is correct and polite?",
+"q": "You advise a manager politely. Choose the correct option.",
 "correct": "If I were you, I would speak to the team before the meeting.",
 "wrong": [
 "If I were you, I will speak to the team before the meeting.",
@@ -5400,7 +5400,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best for a polite request in a formal email?",
+"q": "You write a polite request in a formal email. Choose the correct option.",
 "correct": "I would be grateful if you could send me the report by Friday.",
 "wrong": [
 "I would be grateful if you will send me the report by Friday.",
@@ -5513,7 +5513,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A colleague forgot to save a file and lost two hours of work. Which comment is a correct third conditional?",
+"q": "A colleague forgot to save a file and lost two hours of work. Choose the correct third conditional comment.",
 "correct": "If you had saved it every ten minutes, you wouldn't have lost so much work.",
 "wrong": [
 "If you saved it every ten minutes, you wouldn't have lost so much work.",
@@ -5638,7 +5638,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best for a polite criticism in a work review?",
+"q": "You write a polite criticism in a work review. Choose the correct option.",
 "correct": "If you had told us earlier, we could have adjusted the schedule.",
 "wrong": [
 "If you told us earlier, we could have adjusted the schedule.",
@@ -5743,7 +5743,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence expresses regret best in a formal apology?",
+"q": "You express regret in a formal apology. Choose the correct option.",
 "correct": "If I had realised the impact of my decision, I would have acted differently.",
 "wrong": [
 "If I realised the impact of my decision, I would have acted differently.",
@@ -5851,7 +5851,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence best explains why someone is tired today because of last night?",
+"q": "You explain why someone is tired today because of last night. Choose the correct option.",
 "correct": "If I hadn't stayed up so late, I wouldn't be so tired now.",
 "wrong": [
 "If I didn't stay up so late, I wouldn't have been so tired now.",
@@ -5951,7 +5951,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Which comment explains the grammar best?",
+"q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar.",
 "correct": "It is a mixed conditional: a present quality (memory) with a past result.",
 "wrong": [
 "It is a first conditional about the future.",
@@ -6051,7 +6051,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best in a formal report about a past failure with a present effect?",
+"q": "You write a formal report about a past failure with a present effect. Choose the correct option.",
 "correct": "Had the contract been checked properly, we would not be facing these penalties now.",
 "wrong": [
 "If the contract had checked properly, we would not be facing these penalties now.",
@@ -6156,7 +6156,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is the most formal?",
+"q": "Choose the most formal option.",
 "correct": "Should you require further information, please contact our office.",
 "wrong": [
 "If you want more info, ring us.",
@@ -6257,7 +6257,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which version sounds best in a speech about a past failure?",
+"q": "You give a speech about a past failure. Choose the correct option.",
 "correct": "If only we had listened to the warning signs, we would not be in this position.",
 "wrong": [
 "If only we would have listened to the warning signs, we would not be in this position.",
@@ -6378,7 +6378,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence best reports: 'I can't come to the meeting,' Jon said.",
+"q": "Report this: 'I can't come to the meeting,' Jon said. Choose the correct option.",
 "correct": "Jon said he couldn't come to the meeting.",
 "wrong": [
 "Jon said I couldn't come to the meeting.",
@@ -6502,7 +6502,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence best reports a message to your manager? 'We are almost ready,' the team said.",
+"q": "You report a message to your manager: 'We are almost ready,' the team said. Choose the correct option.",
 "correct": "The team told me they were almost ready.",
 "wrong": [
 "The team told me we were almost ready.",
@@ -6632,7 +6632,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence reports this most naturally? 'I won't sign it until the lawyer reads it,' the client said.",
+"q": "Report this naturally: 'I won't sign it until the lawyer reads it,' the client said. Choose the correct option.",
 "correct": "The client said he wouldn't sign it until the lawyer had read it.",
 "wrong": [
 "The client said he won't sign it until the lawyer will read it.",
@@ -6745,7 +6745,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A hotel guest asked: 'Is breakfast included?' Which report is best?",
+"q": "A hotel guest asked: 'Is breakfast included?' You report the question. Choose the correct option.",
 "correct": "The guest asked whether breakfast was included.",
 "wrong": [
 "The guest asked was breakfast included.",
@@ -6901,7 +6901,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You report a customer's question to your team. Which sentence is best? 'How long will the repair take?' the customer asked.",
+"q": "You report a customer's question to your team: 'How long will the repair take?' the customer asked. Choose the correct option.",
 "correct": "The customer asked how long the repair would take.",
 "wrong": [
 "The customer asked how long would the repair take.",
@@ -7002,7 +7002,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best in meeting minutes? 'Has the budget been approved?' Ms Novak asked.",
+"q": "You write meeting minutes: 'Has the budget been approved?' Ms Novak asked. Choose the correct option.",
 "correct": "Ms Novak asked whether the budget had been approved.",
 "wrong": [
 "Ms Novak asked has the budget been approved.",
@@ -7117,7 +7117,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence best reports a polite refusal? 'No, I won't work this weekend,' Sam said.",
+"q": "Report a polite refusal: 'No, I won't work this weekend,' Sam said. Choose the correct option.",
 "correct": "Sam refused to work that weekend.",
 "wrong": [
 "Sam refused working that weekend.",
@@ -7217,7 +7217,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is the most concise and natural? 'I'm very sorry for the delay, and I will make sure it never happens again,' the manager said.",
+"q": "Report this concisely and naturally: 'I'm very sorry for the delay, and I will make sure it never happens again,' the manager said. Choose the correct option.",
 "correct": "The manager apologised for the delay and promised that it would not happen again.",
 "wrong": [
 "The manager said that he was very sorry for the delay and he will make sure it never happens again.",
@@ -7319,7 +7319,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which is the best way to report a complaint in formal English? 'The service was terrible and nobody apologised,' the customer said.",
+"q": "You report a complaint in formal English: 'The service was terrible and nobody apologised,' the customer said. Choose the correct option.",
 "correct": "The customer complained that the service had been terrible and that nobody had apologised.",
 "wrong": [
 "The customer complained about the service had been terrible.",
@@ -7435,7 +7435,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You ask a stranger for the post office. Which is the most polite?",
+"q": "You ask a stranger for the post office. Choose the most polite option.",
 "correct": "Excuse me, could you tell me where the post office is?",
 "wrong": [
 "Where is the post office?",
@@ -7584,7 +7584,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best in a polite email to a client?",
+"q": "You write a polite email to a client. Choose the correct option.",
 "correct": "Could you let me know whether the contract has been signed?",
 "wrong": [
 "Could you let me know has the contract been signed?",
@@ -7717,7 +7717,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You call customer service. Which opening is best?",
+"q": "You call customer service. Choose the correct option.",
 "correct": "I was wondering if you could tell me when my order will be delivered.",
 "wrong": [
 "I was wondering when will my order be delivered?",
@@ -7821,7 +7821,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence sounds best in a formal email?",
+"q": "You write a formal email. Choose the correct option.",
 "correct": "It remains unclear who is responsible for the delay.",
 "wrong": [
 "It remains unclear who is the responsible for the delay.",
@@ -7917,7 +7917,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which is best for a report: 'The question is ___.'",
+"q": "You write a report: 'The question is ___.' Choose the correct option.",
 "correct": "whether the project is worth the cost",
 "wrong": [
 "is the project worth the cost",
@@ -8013,7 +8013,7 @@ return json_decode(<<<'EF_JSON_END'
 "level": "C1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence is best for a formal report?",
+"q": "You write a formal report. Choose the correct option.",
 "correct": "How the funds were spent remains to be investigated.",
 "wrong": [
 "How were the funds spent remains to be investigated.",

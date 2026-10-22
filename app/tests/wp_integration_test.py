@@ -322,6 +322,55 @@ check("teacher and student views show an avatar for everyone", all(r.get("avatar
 adm = wp_login("admin"); adm.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time())), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
 check("an administrator with the marker is not redirected", adm.req(WP + "/results/")[0] == 200)
 
+# 8d. phones: the account is created in one browser, the confirmation link opens in ANOTHER one (no cookie there).
+# The plugin keeps a note on the account, so the first page after logging in still goes into the app.
+wpcli("option", "update", "users_can_register", "1")
+wpcli("user", "delete", "crossbrowser", "--yes")
+reg = Br(); set_marker(reg, 60)                                 # the browser where "Create account" was pressed
+reg.req(WP + "/wp-login.php?action=register")
+reg.req(WP + "/wp-login.php?action=register", urllib.parse.urlencode({"user_login": "crossbrowser", "user_email": "crossbrowser@example.com", "wp-submit": "Register",
+    "redirect_to": WP + "/practice-login/?ef_practice=go"}).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+cb_id = wpcli("user", "get", "crossbrowser", "--field=ID")
+note = wpcli("user", "meta", "get", cb_id, "ef_practice_pending") if cb_id else ""
+check("registering from the app leaves a note on the new account", note.isdigit() and abs(int(note) - time.time()) < 120, (cb_id, note))
+wpcli("user", "update", cb_id, "--user_pass=pass1234", "--display_name=Cross Browser")
+other = Br()                                                     # another browser: no ef_return cookie at all
+login_into(other, "crossbrowser")
+sC, _, hC = other.req(WP + "/results/")
+check("another browser, no cookie: the first page after logging in goes into the app", sC == 302 and "ef_practice=open" in (hC.get("Location") or ""), (sC, hC.get("Location")))
+sD, _, hD = other.req(WP + "/?ef_practice=open")
+check("...and it reaches the app's sign-in", sD == 302 and "sso.php?token=" in (hD.get("Location") or ""), (sD, hD.get("Location")))
+check("the note is gone after that (no second redirect)", wpcli("user", "meta", "get", cb_id, "ef_practice_pending") == "" and other.req(WP + "/results/")[0] == 200)
+# later than 24 hours: the bar instead of a redirect; later than 3 days: nothing
+wpcli("user", "meta", "update", cb_id, "ef_practice_pending", str(int(time.time()) - 30 * 3600))
+sE, pageE, _ = other.req(WP + "/results/")
+check("30 hours after registering: a bar with a way back, no redirect", sE == 200 and "Back to your practice" in pageE, sE)
+wpcli("user", "meta", "update", cb_id, "ef_practice_pending", str(int(time.time()) - 4 * 86400))
+sF, pageF, _ = other.req(WP + "/results/")
+check("4 days after registering: nothing", sF == 200 and "Back to your practice" not in pageF, sF)
+# a person who did not come from the app gets no note
+wpcli("user", "delete", "plainreg", "--yes")
+Br().req(WP + "/wp-login.php?action=register", urllib.parse.urlencode({"user_login": "plainreg", "user_email": "plainreg@example.com", "wp-submit": "Register"}).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+pr_id = wpcli("user", "get", "plainreg", "--field=ID")
+check("a registration that did not start in the app leaves no note", pr_id.isdigit() and wpcli("user", "meta", "get", pr_id, "ef_practice_pending") == "", pr_id)
+wpcli("option", "update", "users_can_register", "0")
+
+# 8e. "Sign in" in the app: the website's login form may ignore redirect_to and show Tutor's dashboard; the next page leads back into the app
+wpcli("user", "delete", "signin", "--yes"); wpcli("user", "create", "signin", "signin@example.com", "--role=subscriber", "--user_pass=pass1234", "--display_name=Sign In")
+si = Br()
+sG, _, hG = si.req(WP + "/?ef_practice=go")
+check("Sign in from the app (not logged in): goes to the login form", sG == 302 and "redirect_to=" in (hG.get("Location") or ""), (sG, hG.get("Location")))
+check("...and leaves the 'came from the app' marker", any(c.name == "ef_return" for c in si.cj), [c.name for c in si.cj])
+login_into(si, "signin")                                          # the login form sends the person nowhere near the app
+sH, _, hH = si.req(WP + "/results/")
+check("logged in, on Tutor's dashboard: straight on into the app", sH == 302 and "ef_practice=open" in (hH.get("Location") or ""), (sH, hH.get("Location")))
+sI, _, hI = si.req(hH.get("Location") or WP + "/?ef_practice=open")
+check("...which signs the person in there", sI == 302 and "sso.php?token=" in (hI.get("Location") or ""), (sI, hI.get("Location")))
+check("only once: the dashboard works afterwards", si.req(WP + "/results/")[0] != 302)
+# somebody who just browses the website and logs in is not sent anywhere
+plain = Br(); login_into(plain, "signin")
+check("logging in on the website itself (not from the app) does not redirect", plain.req(WP + "/results/")[0] != 302)
+
 # 9. the summary endpoint is private
 s, b, _ = Br().req(APP + f"/api.php?r=wp/summary&uid={maria}")
 check("summary without a signature refused", s == 403, s)

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.5.1
+ * Version:     1.6.0
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -20,7 +20,13 @@
  * ef_return, 3 days) and sends them to your registration form. If they are registered and logged in within 30
  * minutes, this plugin sends them straight back into the app (whatever page the form leaves them on), and the app
  * moves their guest results into the new account. If registration needs an email confirmation and they log in
- * later (up to 3 days), a "Back to your practice" bar is shown instead, with a small x to dismiss it.
+ * later, the plugin still knows where they came from: when the account is created it saves a note on the account
+ * (user meta ef_practice_pending), so it works even when the confirmation link opens in another browser (Gmail's own
+ * browser, a different phone browser). The first page they see after logging in within 24 hours sends them into the
+ * app; after that (up to 3 days) a "Back to your practice" bar is shown instead, with a small x to dismiss it.
+ * Signing in works the same way: "Sign in" in the app goes through ?ef_practice=go, which leaves the same marker before it
+ * sends a visitor to the login form, so a login form that ignores redirect_to (Tutor's often ends on its dashboard) still
+ * ends in the app.
  * Switch the automatic return off with  define( 'EF_PRACTICE_AUTO_RETURN', false );  to always show the bar.
  *
  * Optional, to send people who are not logged in to your own login page instead of wp-login.php:
@@ -94,6 +100,7 @@ add_action( 'template_redirect', function () {
 			wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/' );
 			exit;
 		}
+		ef_practice_set_return(); // whatever page the login form ends on (Tutor often shows its dashboard), the next page leads back into the app
 		$back = add_query_arg( 'ef_practice', 'go', is_singular() ? get_permalink() : home_url( '/' ) );
 		if ( defined( 'EF_PRACTICE_LOGIN_URL' ) && EF_PRACTICE_LOGIN_URL ) {
 			wp_safe_redirect( add_query_arg( 'redirect_to', rawurlencode( $back ), EF_PRACTICE_LOGIN_URL ) );
@@ -106,9 +113,19 @@ add_action( 'template_redirect', function () {
 	exit;
 } );
 
-/* ───────── back into the app after registering ───────── */
+/* ───────── back into the app after registering or signing in ───────── */
+
+/** The marker "this person came from the practice app", the same one the app's "Create a free account" link leaves. */
+function ef_practice_set_return() {
+	$now = (string) time();
+	setcookie( 'ef_return', $now, array( 'expires' => time() + 3 * DAY_IN_SECONDS, 'path' => '/', 'secure' => is_ssl(), 'httponly' => true, 'samesite' => 'Lax' ) );
+	$_COOKIE['ef_return'] = $now;
+}
 
 function ef_practice_clear_return() {
+	if ( is_user_logged_in() ) {
+		delete_user_meta( get_current_user_id(), 'ef_practice_pending' ); // the note kept on the account
+	}
 	if ( ! isset( $_COOKIE['ef_return'] ) ) {
 		return;
 	}
@@ -120,26 +137,69 @@ function ef_practice_clear_return() {
 	unset( $_COOKIE['ef_return'] );
 }
 
-/** Seconds since the person clicked "Create a free account" in the app (a huge number when there is no marker). */
+/**
+ * When the account was created from the app (user meta), 0 if not. The cookie only lives in the browser where "Create a free
+ * account" was pressed; a confirmation link often opens in another browser, so the account itself remembers.
+ */
+function ef_practice_pending_time() {
+	return is_user_logged_in() ? (int) get_user_meta( get_current_user_id(), 'ef_practice_pending', true ) : 0;
+}
+
+/** Seconds since the person clicked "Create a free account" in the app (cookie), a huge number when there is no marker. */
 function ef_practice_return_age() {
 	$t = isset( $_COOKIE['ef_return'] ) ? (int) $_COOKIE['ef_return'] : 0;
 	return $t > 0 ? max( 0, time() - $t ) : PHP_INT_MAX;
 }
 
-/** True when the app should send this person back: straight away right after registering (30 minutes), otherwise show the bar. */
-function ef_practice_return_is_automatic() {
-	return ! ( defined( 'EF_PRACTICE_AUTO_RETURN' ) && ! EF_PRACTICE_AUTO_RETURN ) && ef_practice_return_age() <= 1800;
+/** Seconds since the account was created from the app (user meta), a huge number when it was not. */
+function ef_practice_pending_age() {
+	$t = ef_practice_pending_time();
+	return $t > 0 ? max( 0, time() - $t ) : PHP_INT_MAX;
 }
+
+/** True when this person came from the app: the cookie in this browser, or the note on their account. */
+function ef_practice_has_marker() {
+	return ! empty( $_COOKIE['ef_return'] ) || ef_practice_pending_time() > 0;
+}
+
+/** The age of the freshest of the two signals. */
+function ef_practice_marker_age() {
+	return min( ef_practice_return_age(), ef_practice_pending_age() );
+}
+
+/**
+ * True when the app should send this person back at once: within 30 minutes of pressing "Create account" (cookie), or on the first
+ * page after logging in within 24 hours of registering (account note). Otherwise the bar is shown.
+ */
+function ef_practice_return_is_automatic() {
+	if ( defined( 'EF_PRACTICE_AUTO_RETURN' ) && ! EF_PRACTICE_AUTO_RETURN ) {
+		return false;
+	}
+	return ef_practice_return_age() <= 1800 || ef_practice_pending_age() <= DAY_IN_SECONDS;
+}
+
+/* The account is created in the browser where the person pressed "Create a free account" in the app, so the cookie (or the
+   redirect_to of the registration form, which leads back to the app) is there: keep a note on the new account. */
+add_action( 'user_register', function ( $user_id ) {
+	if ( ! ef_practice_configured() || ( is_user_logged_in() && current_user_can( 'create_users' ) ) ) {
+		return; // an administrator adding someone by hand is not someone coming from the app
+	}
+	$to       = isset( $_REQUEST['redirect_to'] ) ? (string) wp_unslash( $_REQUEST['redirect_to'] ) : '';
+	$from_app = ! empty( $_COOKIE['ef_return'] ) || false !== stripos( rawurldecode( $to ), 'ef_practice' ) || false !== stripos( rawurldecode( $to ), 'practice-login' );
+	if ( $from_app ) {
+		update_user_meta( $user_id, 'ef_practice_pending', time() );
+	}
+} );
 
 /** True for a normal logged-in student page view that came from the app within the last 3 days. */
 function ef_practice_came_from_app() {
-	if ( empty( $_COOKIE['ef_return'] ) || ! ef_practice_configured() || ! is_user_logged_in() ) {
+	if ( ! ef_practice_configured() || ! is_user_logged_in() || ! ef_practice_has_marker() ) {
 		return false;
 	}
 	if ( is_admin() || wp_doing_ajax() || wp_doing_cron() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) || 'GET' !== ( $_SERVER['REQUEST_METHOD'] ?? '' ) ) {
 		return false;
 	}
-	if ( ef_practice_return_age() > 3 * DAY_IN_SECONDS ) {
+	if ( ef_practice_marker_age() > 3 * DAY_IN_SECONDS ) {
 		ef_practice_clear_return();
 		return false;
 	}

@@ -10,4 +10,5 @@ return [
     'privacy_url' => '#',
     'contact_email' => '', 'site_url' => 'http://127.0.0.1:8099/', 'dashboard_url' => 'http://127.0.0.1:8099/dashboard-demo/', 'register_url' => 'https://example.com/register/',
     'debug' => true,
+    'research_enabled' => true, 'experiments' => ['streak', 'leaderboard'], // dev only: the research test needs them
 ];

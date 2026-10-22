@@ -2,6 +2,12 @@
 
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
+## Research package (not uploaded yet; goes on top of the grammar batch)
+- **Learning study, off by default** (`research_enabled` in `config.php`): registered learners are invited on Home and can join or leave in Profile. Only people who joined are randomised and exported.
+- **Random conditions:** *streak counter* and *leaderboard* can each be hidden for half of the participants (`experiments` in `config.php`; shuffled blocks of four; same conditions if someone leaves and joins again).
+- **Research export** on the teacher page: `people.csv`, `days.csv`, `answers.csv` and a codebook; no names or typed answers, no calendar dates, data from the moment of consent only.
+- Needs one new line of config only if you want it on; new database columns and table are created automatically. Docs: PRACTICE-APP.md (Learning study) and RESEARCH-DESIGN.md. Tests: `app/tests/research_test.py`.
+
 ## Grammar batch (not uploaded yet)
 - **New topics:** conditionals (zero, first, second, third, mixed, advanced), reported speech (statements, questions and requests, reporting verbs) and indirect questions (polite and embedded). 11 topics, 201 new tasks, up to **C1.2**. Levels B2.1, B2.2, C1.1, C1.2 exist now.
 - **New menu:** the practice picker groups topics into five areas (fold-away sections, *Select all*, counters) with eight levels. **Surprise me** (Home and Practice) picks topics from the learner's own mistakes and weak spots.

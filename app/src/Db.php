@@ -119,6 +119,9 @@ final class Db
                 board_hidden $int NOT NULL DEFAULT 0,
                 avatar $str NULL,
                 lang $str NULL,
+                research $int NOT NULL DEFAULT 0,
+                research_at $big NOT NULL DEFAULT 0,
+                research_base $int NOT NULL DEFAULT 0,
                 created_at $big NOT NULL,
                 last_seen $big NOT NULL DEFAULT 0
             )$tail",
@@ -187,6 +190,14 @@ final class Db
                 added_at $big NOT NULL,
                 PRIMARY KEY (teacher_id, student_id)
             )$tail",
+            "CREATE TABLE IF NOT EXISTS conditions (
+                user_id $big NOT NULL,
+                factor $str NOT NULL,
+                arm $str NOT NULL,
+                seq $int NOT NULL DEFAULT 0,
+                assigned_at $big NOT NULL,
+                PRIMARY KEY (user_id, factor)
+            )$tail",
             "CREATE TABLE IF NOT EXISTS kv (
                 k $str NOT NULL PRIMARY KEY,
                 v $txt NULL
@@ -204,6 +215,9 @@ final class Db
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'avatar', "$str NULL");
         self::ensureColumn('users', 'lang', "$str NULL");
+        self::ensureColumn('users', 'research', "$int NOT NULL DEFAULT 0");
+        self::ensureColumn('users', 'research_at', "$big NOT NULL DEFAULT 0");
+        self::ensureColumn('users', 'research_base', "$int NOT NULL DEFAULT 0");
         $indexes = [
             ['users', 'ux_users_nick', 'nickname_key', true],
             ['users', 'ix_users_ext', 'provider, external_id', false],

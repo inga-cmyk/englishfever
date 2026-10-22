@@ -81,6 +81,8 @@ final class Auth
             'track_time' => (int) ($u['track_time'] ?? 1) === 1,
             'avatar' => self::effectiveAvatar($u['avatar'] ?? null, (int) $u['id']),
             'lang' => ($u['lang'] ?? '') === 'lv' ? 'lv' : 'en', // language of the grammar explanations
+            'research' => (int) ($u['research'] ?? 0),               // 0 not asked, 1 takes part in the study, 2 said no or left
+            'cond' => Research::arms($u) ?: new stdClass(),          // features hidden for this learner by the study, e.g. {"streak":"off"}
         ];
     }
 
@@ -195,7 +197,7 @@ final class Auth
     {
         $old = Db::all("SELECT id FROM users WHERE provider = 'guest' AND last_seen < ?", [time() - 60 * 86400]);
         foreach ($old as $u) {
-            foreach (['attempts', 'psessions', 'skill_state', 'activity'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM teacher_mine WHERE student_id = ?', [$u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
         }

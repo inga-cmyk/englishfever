@@ -136,7 +136,7 @@ final class Stats
 
     public static function leaderboard(int $uid, string $period): array
     {
-        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest' AND u.board_hidden = 0";
+        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest' AND u.board_hidden = 0" . Research::leaderboardClause();
         $p = [];
         if ($period === 'week') {
             $where .= ' AND a.day >= ?';

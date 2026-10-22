@@ -167,6 +167,35 @@ If many learners turn out to want only the app, there are two upgrades: a shorte
 
 Learners choose an avatar instead of a photo in **Profile → Your avatar** (the menu is closed until they press **Change**): a flat illustrated character (ten stylish people, seven characters - a superhero pair, a detective with a magnifying glass, a monocled gentleman, a bard, a palace guard and a professor - a fox and a flame with sunglasses), a symbol (flame, spark, bolt, sun, thermometer, wave, comet, leaf) or their initial, on one of six background colours. Anyone who has not chosen gets a symbol assigned by their user ID, so nobody has a blank picture and it never changes by itself. It shows in the top bar, on the home page, on the leaderboard and in the teacher pages. Guests can choose one too, and it moves with them when they register. There are no uploads, so there is nothing to moderate, no image files to protect and no photos to keep under GDPR. The server only accepts a fixed list of "picture-colour" values.
 
+## Learning study (research)
+
+For a thesis or any study of what keeps people practising. **Off by default**: uploading the app changes nothing until you switch it on. Design notes, analysis ideas and an ethics checklist are in [RESEARCH-DESIGN.md](RESEARCH-DESIGN.md).
+
+**Switch it on** in `config/config.php` (all lines are in `config.sample.php`):
+
+```php
+'research_enabled' => true,
+'experiments' => ['streak', 'leaderboard'],   // leave [] to collect data without changing anything
+'research_info_url' => 'https://englishfever.com/en/learning-study/',   // your information sheet
+// 'research_text' => "Paragraph one.\n\nParagraph two.",   // your own, ethics-approved wording (English)
+// 'research_text_lv' => "...",                              // and Latvian
+```
+
+- **Who is asked:** registered learners only (a guest is a cookie in one browser, so there is nobody to ask or to follow). They see a card on Home with *Yes, I take part* / *No, thanks* / *Ask me later* (later = one week), in English or, for learners who use the Latvian explanations, in Latvian. The default wording is a plain placeholder: replace it with the text your ethics review approved.
+- **Leaving:** Profile → *Learning study* → *Leave the study*, any time (also when the study is switched off). The person is back on the normal app and disappears from the next export. Deleting the account removes everything, including the conditions.
+- **Conditions:** only people who joined are randomised. Each factor (streak counter, leaderboard) is allocated in shuffled blocks of four (two see it, two do not), made when the person joins; the order inside a block comes from a keyed hash, so it is reproducible by you and unpredictable for anyone else. Someone who leaves and joins again keeps the same conditions. *Hidden leaderboard* also means the person is not listed on it. The streak is still counted, only not shown.
+- **Teacher page → Students → *Learning study* card** (teachers only): how many take part, the split per factor, and four downloads:
+  - `people.csv` one row per learner (conditions, totals, first/last active day, longest streak, weeks active, active on day 1/7/30, placement level),
+  - `days.csv` one row per learner and active day,
+  - `answers.csv` one row per answered task (topic, level, thinking level, correct, seconds, hour, weekday),
+  - `readme.txt` the codebook for your methods section.
+- **What the files contain:** no names, nicknames, e-mail addresses or typed answers, and no calendar dates (only *study day*, with day 0 = the day of consent, and ISO weeks). Learners are a 12-character code made with a key that stays in the app database, so the same person has the same code in every export. Only data from the moment of consent is included.
+- **Honest wording for the ethics board:** the data are *pseudonymised*, not anonymous. You, as the owner of the database, can link a code to a person, so the files are personal data and need the same care as the database itself.
+
+**Add to your privacy policy** (adapt it, it is not legal advice):
+
+> **Learning study (optional).** If you choose to take part, your practice data (when and how often you practise, which tasks you do and how you do) is analysed under a random code, not your name, for research on how people keep up regular learning. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Taking part is voluntary and based on your consent, which you can withdraw at any time in your profile; your data is then no longer used. [Name, institution and contact of the researcher; how long the data is kept; where results are published.]
+
 ## Using it like an app on a phone
 
 The practice app is an **installable web app (PWA)**. Students can put it on the home screen of an iPhone or Android phone: it gets the EF icon, opens full screen without browser bars, and updates the moment you upload a new zip. It costs nothing and needs no app store.

@@ -42,6 +42,10 @@ try {
                 'register_url' => Config::get('register_url', ''),
                 'site_url' => Config::get('site_url', ''),
                 'dashboard_url' => Config::get('dashboard_url', ''),
+                'research' => Research::enabled(),
+                'research_info_url' => (string) Config::get('research_info_url', ''),
+                'research_text' => (string) Config::get('research_text', ''),
+                'research_text_lv' => (string) Config::get('research_text_lv', ''),
                 'sso' => strlen((string) Config::get('sso_secret', '')) >= 32 && Config::get('sso_secret') !== 'CHANGE-ME',
                 'contact_email' => Config::get('contact_email', ''),
                 'version' => is_file(__DIR__ . '/src/version.php') ? (string) ((require __DIR__ . '/src/version.php')['version'] ?? 'dev') : 'dev',
@@ -82,10 +86,15 @@ try {
             if ($upd) Db::update('users', $upd, 'id = ?', [$u['id']]);
             out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);
 
+        case 'account/research':
+            $u = Auth::require();
+            Research::join($u, !empty($in['join']));
+            out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);
+
         case 'account/delete':
             $u = Auth::require();
             if (empty($in['confirm'])) throw new ApiError('Please confirm.', 400);
-            foreach (['attempts', 'psessions', 'skill_state', 'activity'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM teacher_mine WHERE student_id = ? OR teacher_id = ?', [$u['id'], $u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
             Auth::logout();
@@ -97,6 +106,7 @@ try {
                 'user' => ['nickname' => $u['nickname'], 'provider' => $u['provider'], 'joined' => $u['created_at']],
                 'attempts' => Db::all('SELECT item_id, skill, level, bloom, correct, answer, time_ms, created_at FROM attempts WHERE user_id = ? ORDER BY id', [$u['id']]),
                 'activity' => Db::all('SELECT day, seconds, answers, xp FROM activity WHERE user_id = ? ORDER BY day', [$u['id']]),
+                'study' => ['status' => [0 => 'not asked', 1 => 'taking part', 2 => 'not taking part'][(int) $u['research']] ?? 'not asked', 'since' => (int) $u['research'] === 1 ? (int) $u['research_at'] : null, 'conditions' => Research::arms($u)],
             ];
             out($data);
 
@@ -152,6 +162,7 @@ try {
 
         case 'leaderboard':
             $u = Auth::require();
+            if ((Research::arms($u)['leaderboard'] ?? 'on') === 'off') throw new ApiError('Not available.', 403);
             out(Stats::leaderboard((int) $u['id'], ($_GET['period'] ?? 'week') === 'all' ? 'all' : 'week'));
 
         case 'wp/summary':
@@ -198,6 +209,29 @@ try {
             header('Content-Type: text/csv; charset=utf-8');
             header('Content-Disposition: attachment; filename="practice-attempts-' . $view . '-' . date('Y-m-d') . '.csv"');
             echo "\xEF\xBB\xBF" . Stats::exportAttempts($view, (int) $t['id']);
+            exit;
+
+        case 'teacher/research':
+            Auth::requireTeacher();
+            out(Research::summary());
+
+        case 'teacher/research-export':
+            Auth::requireTeacher();
+            $file = (string) ($_GET['file'] ?? '');
+            $stamp = date('Y-m-d');
+            if ($file === 'readme') {
+                header('Content-Type: text/plain; charset=utf-8');
+                header('Content-Disposition: attachment; filename="research-readme-' . $stamp . '.txt"');
+                echo Research::codebook();
+                exit;
+            }
+            $csv = match ($file) {
+                'people' => Research::people(), 'days' => Research::days(), 'answers' => Research::answers(),
+                default => throw new ApiError('Not found.', 404),
+            };
+            header('Content-Type: text/csv; charset=utf-8');
+            header('Content-Disposition: attachment; filename="research-' . $file . '-' . $stamp . '.csv"');
+            echo "\xEF\xBB\xBF" . $csv;
             exit;
 
         default:

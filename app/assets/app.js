@@ -13,6 +13,8 @@
 
   // ───────── helpers ─────────
   function areaLabel(id) { var a = state.meta.areas.filter(function (x) { return x.id === id; })[0]; return a ? a.label : id; }
+  /** Features the learning study can hide for a learner (state.user.cond, e.g. {streak: 'off'}). Everyone outside the study sees everything. */
+  function feat(name) { return !(state.user && state.user.cond && state.user.cond[name] === 'off'); }
   function levelRange(s) { return s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''); }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   function dashboardUrl() { return (state.config && (state.config.dashboard_url || state.config.site_url)) || ''; }
@@ -119,6 +121,7 @@
     var items = teacher
       ? [['#/teacher', 'Students', 'users'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
       : [['#/home', 'Home', 'home'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']];
+    if (!feat('leaderboard')) items = items.filter(function (i) { return i[0] !== '#/leaderboard'; });
     var nav = h('nav', { class: 'nav', 'aria-label': 'Main' }, items.map(function (i) {
       return h('a', { href: i[0], 'aria-current': active === i[0] ? 'page' : null }, i[1]);
     }));
@@ -129,7 +132,7 @@
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
       h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
       nav, h('div', { class: 'spacer' }),
-      dashboardUrl() ? h('a', { class: 'sitelink', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,
+      dashboardUrl() ? h('a', { class: 'sitelink', target: '_blank', rel: 'noopener', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,
       h('a', { class: 'avatar-link', href: '#/profile', 'aria-label': 'Your profile' }, UI.avatar(state.user.avatar, state.user.nickname, 32))));
     chrome.replaceChildren(bar, tabs);
     renderChips();
@@ -140,7 +143,7 @@
     if (!c || !state.user || state.user.role === 'teacher') return;
     c.replaceChildren(
       state.user.guest ? h('button', { class: 'chip-top', style: 'background:none;cursor:pointer', title: 'Guest: results are not saved', onclick: function () { guestInvite(true); } }, 'Guest', h('span', { class: 'chip-more' }, ' · save progress')) : null,
-      h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), ' day' + (state.streak === 1 ? '' : 's')),
+      feat('streak') ? h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), ' day' + (state.streak === 1 ? '' : 's')) : null,
       h('span', { class: 'chip-top hide-m', title: 'Time practised today' }, icon('clock'), UI.fmtDuration(state.todaySeconds)));
   }
 
@@ -252,6 +255,69 @@
       h('div', { class: 'row' }, pending ? [signin, create] : [create, signin]));
   }
 
+  // ───────── learning study (optional, registered learners only) ─────────
+  // Switched on in config.php. The wording below is a plain default: replace it with the text your ethics review approved
+  // ('research_text' and 'research_text_lv' in config.php, paragraphs separated by an empty line).
+  var STUDY = {
+    en: {
+      title: 'Help with a learning study?', yes: 'Yes, I take part', no: 'No, thanks', later: 'Ask me later', info: 'Read the information sheet',
+      body: ['Inga, the teacher behind English Fever, is researching what helps people keep up regular practice. If you take part, your practice data (when and how often you practise, which tasks you do and how you do) is analysed under a random code, not your name. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Your results and the grammar content stay the same.',
+        'Taking part is optional. By choosing “Yes” you confirm that you are 18 or older, or that a parent or guardian agrees. You can leave at any time on your Profile page; your data is then no longer used.'],
+      label: 'Learning study', joined: 'You are taking part in the learning study. Thank you!', left: 'You are not taking part.', leave: 'Leave the study', join: 'Take part', thanks: 'Thank you for taking part!', byebye: 'You have left the study.',
+    },
+    lv: {
+      title: 'Palīdziet pētījumā?', yes: 'Jā, piedalos', no: 'Nē, paldies', later: 'Vēlāk', info: 'Informācija par pētījumu',
+      body: ['Inga, skolotāja, kas veido English Fever, pēta, kas palīdz cilvēkiem mācīties regulāri. Ja piedalīsieties, jūsu mācību dati (kad un cik bieži mācāties, kādus uzdevumus veicat un kā jums sokas) tiks analizēti ar nejaušu kodu, nevis ar jūsu vārdu. Dažas funkcijas, piemēram, dienu skaitītājs vai līderu saraksts, jums var izskatīties citādi nekā citiem. Jūsu rezultāti un gramatikas saturs paliek tie paši.',
+        'Dalība ir brīvprātīga. Izvēloties “Jā”, jūs apliecināt, ka jums ir 18 gadi vai vairāk, vai ka vecāks vai aizbildnis piekrīt. Jūs varat jebkurā brīdī izstāties savā profila lapā; jūsu dati vairs netiks izmantoti.'],
+      label: 'Mācību pētījums', joined: 'Jūs piedalāties mācību pētījumā. Paldies!', left: 'Jūs nepiedalāties.', leave: 'Izstāties', join: 'Piedalīties', thanks: 'Paldies par dalību!', byebye: 'Jūs izstājāties no pētījuma.',
+    },
+  };
+  function studyTexts() {
+    var lv = state.user && state.user.lang === 'lv', d = STUDY[lv ? 'lv' : 'en'];
+    var custom = lv ? state.config.research_text_lv : state.config.research_text;
+    return { d: d, body: custom ? custom.split(/\n\s*\n/) : d.body };
+  }
+  function studyEligible() { return !!state.user && !state.user.guest && state.user.role === 'student'; }
+  function setStudy(join) {
+    return api('account/research', { join: join }).then(function (r) { state.user = r.user; renderChrome(location.hash.split('/').slice(0, 2).join('/')); return r; });
+  }
+  function studyLater() { try { return Date.now() - (+localStorage.getItem('ef_study_later') || 0) < 7 * 86400000; } catch (e) { return false; } }
+
+  /** The invitation on the home page: once per learner, "Ask me later" waits a week. */
+  function studyPrompt() {
+    if (!state.config.research || !studyEligible() || state.user.research !== 0 || studyLater()) return null;
+    var t = studyTexts(), d = t.d, msg = h('div');
+    function answer(join) {
+      setStudy(join).then(function () { UI.toast(join ? d.thanks : d.byebye); route(); }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    }
+    return h('div', { class: 'card', style: 'margin-bottom:16px;border-color:var(--gold)' },
+      h('div', { class: 'label' }, d.label), h('h2', null, d.title),
+      t.body.map(function (p) { return h('p', null, p); }),
+      state.config.research_info_url ? h('p', null, h('a', { href: state.config.research_info_url, target: '_blank', rel: 'noopener' }, d.info)) : null,
+      msg,
+      h('div', { class: 'row' },
+        h('button', { class: 'btn', onclick: function () { answer(true); } }, d.yes),
+        h('button', { class: 'btn ghost', onclick: function () { answer(false); } }, d.no),
+        h('button', { class: 'linkbtn', onclick: function (e) { try { localStorage.setItem('ef_study_later', String(Date.now())); } catch (er) {} e.target.closest('.card').remove(); } }, d.later)));
+  }
+
+  /** On the profile page: shows the state and lets the learner join or leave at any time. */
+  function studyProfileCard() {
+    if (!studyEligible() || !(state.config.research || state.user.research === 1)) return null;
+    var t = studyTexts(), d = t.d, msg = h('div');
+    var joined = state.user.research === 1;
+    function change(join) {
+      setStudy(join).then(function () { UI.toast(join ? d.thanks : d.byebye); viewProfile(); }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    }
+    return h('div', { class: 'card' }, h('h2', null, d.label),
+      h('p', null, joined ? d.joined : d.left),
+      joined ? null : [t.body.map(function (p) { return h('p', { class: 'small muted' }, p); }),
+        state.config.research_info_url ? h('p', { class: 'small' }, h('a', { href: state.config.research_info_url, target: '_blank', rel: 'noopener' }, d.info)) : null],
+      msg,
+      joined ? h('button', { class: 'btn ghost small', onclick: function () { change(false); } }, d.leave)
+        : h('button', { class: 'btn small', onclick: function () { change(true); } }, d.join));
+  }
+
   // ───────── home ─────────
   function viewHome() {
     if (state.user.role === 'teacher') { location.hash = '#/teacher'; return; }
@@ -269,8 +335,12 @@
       nodes.push(h('div', { class: 'hello' },
         h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 56), h('div', null, h('div', { class: 'label' }, 'Welcome back'), h('h1', { style: 'margin:0' }, state.user.nickname))),
         h('div', { class: 'hello-side' },
-          h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.')),
-          (!state.user.guest && dashboardUrl()) ? h('a', { class: 'btn ghost small', href: dashboardUrl() }, 'My dashboard ↗') : null)));
+          h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!'
+            : (!feat('streak') ? 'Do a few tasks today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.'))),
+          (!state.user.guest && dashboardUrl()) ? h('a', { class: 'btn ghost small', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null)));
+
+      var invite = studyPrompt();
+      if (invite) nodes.push(invite);
 
       if (resume) {
         nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
@@ -279,8 +349,8 @@
           h('button', { class: 'btn small', onclick: function () { state.sess = newSess(resume.session, resume.item); location.hash = '#/session'; } }, 'Continue')));
       }
 
-      nodes.push(h('div', { class: 'grid g4', style: 'margin-bottom:16px' },
-        stat('flame', d.streak.current, d.streak.current === 1 ? 'day streak' : 'day streak', 'streak'),
+      nodes.push(h('div', { class: feat('streak') ? 'grid g4' : 'grid g3', style: 'margin-bottom:16px' },
+        feat('streak') ? stat('flame', d.streak.current, d.streak.current === 1 ? 'day streak' : 'day streak', 'streak') : null,
         stat('clock', UI.fmtDuration(d.today.seconds), 'practised today'),
         stat('bolt', d.totals.xp, 'points (XP)'),
         stat('check', d.totals.accuracy === null ? '–' : d.totals.accuracy + '%', 'correct overall')));
@@ -686,7 +756,7 @@
         return h('li', { style: 'margin-bottom:10px' }, h('div', { class: 'row between' }, h('span', null, n.text),
           n.type === 'review' ? h('button', { class: 'btn ghost small', onclick: function () { rulesModal(n.skill); } }, 'Rule card')
             : h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: state.lastSkills || s.by_skill.map(function (k) { return k.id; }), level: n.level }; location.hash = '#/practice'; } }, 'Try ' + n.level)));
-      }) : h('li', null, 'Do another round to build your streak and see your level move.'))));
+      }) : h('li', null, (feat('streak') ? 'Do another round to build your streak and see your level move.' : 'Do another round to see your level move.')))));
     nodes.push(h('div', { class: 'row' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.by_skill.map(function (k) { return k.id; }), level: s.level }; location.hash = '#/practice'; } }, 'Practise again'), h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
   }
@@ -742,6 +812,7 @@
 
   // ───────── leaderboard ─────────
   function viewLeaderboard() {
+    if (!feat('leaderboard')) { location.hash = '#/home'; return; }
     var period = 'week';
     var holder = h('div');
     function load() {
@@ -780,13 +851,14 @@
       api('account/profile', { nickname: nick.value, show_on_board: board.checked }).then(function (r) { state.user = r.user; msg.replaceChildren(h('div', { class: 'ok', role: 'status' }, 'Saved.')); }).catch(function (er) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, er.message)); });
     } },
       h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Your name' : 'Display name'), nick),
-      guest ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
+      (guest || !feat('leaderboard')) ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
       msg, h('button', { class: 'btn', type: 'submit' }, 'Save'));
 
     var cards = [];
     if (guest) cards.push(guestBanner());
     cards.push(avatarCard());
     cards.push(langCard());
+    var study = studyProfileCard(); if (study) cards.push(study);
     var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
     if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off '), '(set on englishfever.com). Your answers are still saved.'));
@@ -949,11 +1021,24 @@
           st.students_waiting ? h('span', { class: 'small muted' }, ' · ' + st.students_waiting + ' waiting') : null,
           bad ? h('div', { class: 'small', style: 'margin-top:6px;color:var(--bad)' }, st.last_error) : null));
       }).catch(function () {});
+      api('teacher/research').then(function (st) {
+        var box = document.getElementById('researchbox');
+        if (!box || !(st.enabled || st.joined)) return;
+        function dl(file, label) { return h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/research-export&file=' + file, download: '' }, label); }
+        box.replaceChildren(h('div', { class: 'card', style: 'margin-bottom:14px' },
+          h('div', { class: 'label' }, 'Learning study'),
+          h('p', { style: 'margin:4px 0 8px' }, h('b', { style: 'color:var(--text)' }, st.joined + ' of ' + st.registered), ' registered learners take part (' + st.declined + ' said no).' + (st.enabled ? '' : ' The study is switched off in config.php; people can still leave and you can still download.')),
+          st.factors.length ? h('ul', { class: 'clean small', style: 'margin:0 0 10px' }, st.factors.map(function (f) { return h('li', null, f.label + ': ' + f.on + ' see it, ' + f.off + ' do not'); }))
+            : h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'No conditions switched on. Add them under “experiments” in config.php.'),
+          h('div', { class: 'row' }, dl('people', 'People (CSV)'), dl('days', 'Days (CSV)'), dl('answers', 'Answers (CSV)'), dl('readme', 'Read me (TXT)')),
+          h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'No names in these files. Data starts at each person’s consent.')));
+      }).catch(function () {});
       show(h('div', null,
         h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),
           exportLink),
         tabs, statsBox,
         h('div', { id: 'syncbox' }),
+        h('div', { id: 'researchbox' }),
         h('div', { class: 'row', style: 'margin-bottom:12px' }, search),
         h('div', { class: 'tablewrap' }, h('table', null, thead, tbody))));
     }).catch(fail);

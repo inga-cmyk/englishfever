@@ -15,7 +15,9 @@
   function areaLabel(id) { var a = state.meta.areas.filter(function (x) { return x.id === id; })[0]; return a ? a.label : id; }
   /** Features the learning study can hide for a learner (state.user.cond, e.g. {streak: 'off'}). Everyone outside the study sees everything. */
   function feat(name) { return !(state.user && state.user.cond && state.user.cond[name] === 'off'); }
-  function levelRange(s) { return s.levels[0] + (s.levels.length > 1 ? '–' + s.levels[s.levels.length - 1] : ''); }
+  /** Learners see A2, B1, B2, C1; the half-levels (A2.1, A2.2 ...) only steer the difficulty inside the app. */
+  function lv(l) { return String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); }
+  function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   function dashboardUrl() { return (state.config && (state.config.dashboard_url || state.config.site_url)) || ''; }
   // ───── which topics are in reach ─────
@@ -64,7 +66,7 @@
     }
     show(h('div', { class: 'card' }, h('h2', null, 'Something went wrong'), h('p', null, e.message || 'Please try again.'), h('a', { class: 'btn', href: '#/home' }, 'Back to home')));
   }
-  function levelPill(l) { return h('span', { class: 'pill' }, l); }
+  function levelPill(l) { return h('span', { class: 'pill' }, lv(l)); }
 
   // ───────── install on the phone (home screen) ─────────
   var deferredInstall = null;
@@ -500,7 +502,7 @@
     var go = h('button', { class: 'btn ghost small', type: 'button', onclick: function () { startTopic(go, s, d); } }, 'Practise');
     return h('div', { class: 'skill' },
       h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, levelRange(s))),
-        s.level_est ? h('span', { class: 'pill dark', title: 'Your estimated level in this topic' }, '≈ ' + s.level_est) : h('span', { class: 'pill' }, s.n ? 'Started' : 'New')),
+        s.level_est ? h('span', { class: 'pill dark', title: 'Your estimated level in this topic' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'pill' }, s.n ? 'Started' : 'New')),
       h('div', { class: 'meter gold', 'aria-label': 'Accuracy' }, h('i', { style: 'width:' + (s.accuracy || 0) + '%' })),
       h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.n + ' done · ' + s.accuracy + '% correct' : 'Not started'),
         h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' },
@@ -982,7 +984,7 @@
   function placementReport(s, fresh) {
     var nodes = [];
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
-      h('div', { class: 'label' }, fresh ? 'Placement test finished' : 'Placement result'), h('h1', null, 'Your level is about ', h('span', { class: 'levelbadge' }, s.overall_level)),
+      h('div', { class: 'label' }, fresh ? 'Placement test finished' : 'Placement result'), h('h1', null, 'Your level is about ', h('span', { class: 'levelbadge' }, lv(s.overall_level))),
       h('p', null, s.correct + ' of ' + s.n + ' correct. A rough level, not an exam grade.'),
       s.overall_level === 'C1.2' ? h('p', { class: 'small muted' }, 'This is the top level in the app.') : null,
       s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
@@ -1243,7 +1245,7 @@
         tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
           return h('tr', null,
             h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, (view !== 'mine' && s.mine) ? h('span', { class: 'pill good', style: 'margin-left:8px' }, 'mine') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null, s.provider === 'guest' ? h('div', { class: 'small muted' }, 'first seen ' + UI.fmtAgo(s.joined)) : null),
-            h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, '–')),
+            h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'muted' }, '–')),
             h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
             h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),
             h('td', { class: 'r num' }, s.accuracy === null ? '–' : s.accuracy + '%'), h('td', { class: 'r num' }, String(s.streak)));
@@ -1298,7 +1300,7 @@
         return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' tasks' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
       }));
       var skillRows = d.skills.filter(function (s) { return s.n > 0; }).map(function (s) {
-        return h('tr', null, h('td', null, s.label), h('td', null, areaLabel(s.area)), h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + s.level_est) : h('span', { class: 'muted' }, 'few tasks')), h('td', { class: 'r num' }, String(s.n)), h('td', { class: 'r num' }, s.accuracy + '%'));
+        return h('tr', null, h('td', null, s.label), h('td', null, areaLabel(s.area)), h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'muted' }, 'few tasks')), h('td', { class: 'r num' }, String(s.n)), h('td', { class: 'r num' }, s.accuracy + '%'));
       });
       var rep = d.placement && d.placement.report;
       show(h('div', null,

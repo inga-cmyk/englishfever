@@ -19,6 +19,13 @@
   function lv(l) { return String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
+  // the main site: the configured address, else the root of the dashboard / registration address
+  function mainSiteUrl() {
+    var c = state.config || {};
+    if (c.site_url) return c.site_url;
+    var u = c.dashboard_url || c.register_url || '';
+    try { return u ? new URL(u).origin + '/' : ''; } catch (e) { return ''; }
+  }
   function dashboardUrl() { return (state.config && (state.config.dashboard_url || state.config.site_url)) || ''; }
   // ───── which topics are in reach ─────
   function levelIdx(l) { return state.meta.levels.indexOf(l); }
@@ -168,7 +175,7 @@
     }));
     var chips = h('div', { class: 'chips', id: 'chips' });
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
-      h('span', { class: 'brand' }, h('a', { class: 'dot', href: teacher ? '#/teacher' : '#/home', 'aria-label': 'Practice home' }), h('a', { class: 'brand-site', href: state.config.site_url || (teacher ? '#/teacher' : '#/home') }, 'English Fever'), h('a', { class: 'brand-sub', href: teacher ? '#/teacher' : '#/home' }, 'Practice')),
+      h('span', { class: 'brand' }, h('a', { class: 'dot', href: teacher ? '#/teacher' : '#/home', 'aria-label': 'Practice home' }), mainSiteUrl() ? h('a', { class: 'brand-site', href: mainSiteUrl(), target: '_blank', rel: 'noopener' }, 'English Fever') : h('a', { class: 'brand-site', href: teacher ? '#/teacher' : '#/home' }, 'English Fever'), h('a', { class: 'brand-sub', href: teacher ? '#/teacher' : '#/home' }, 'Practice')),
       state.config && state.config.beta ? betaPill() : null,
       nav, h('div', { class: 'spacer' }),
       dashboardUrl() ? h('a', { class: 'sitelink' + (state.user.guest ? ' sitelink-guest' : ''), target: '_blank', rel: 'noopener', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,

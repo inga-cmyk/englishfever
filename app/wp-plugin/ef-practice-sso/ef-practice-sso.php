@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.8.0
+ * Version:     1.8.1
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -32,8 +32,8 @@
  * The WordPress login page itself (wp-login.php) is shown in the app's colours when someone arrives from the app (not for other
  * logins): English Fever as the title, cream background, teal button, no "Go to site" link.
  *
- * Who is not logged in is sent to the Tutor LMS login page (the Tutor dashboard page, which shows Tutor's login form) when Tutor LMS is
- * active, otherwise to wp-login.php. After the login, the first page leads into the app (see above).
+ * Who is not logged in is sent to the Tutor login page, https://englishfever.com/en/tutor-login/ (found by its slug tutor-login).
+ * After the login, the first page leads into the app (see above).
  *
  * Optional, to use another login page instead:
  *     define( 'EF_PRACTICE_LOGIN_URL', 'https://englishfever.com/your-login-page/' );
@@ -85,28 +85,18 @@ function ef_practice_token( WP_User $user ) {
 }
 
 /**
- * The page where a visitor signs in: EF_PRACTICE_LOGIN_URL if it is defined, else the Tutor LMS login (the Tutor dashboard page shows
- * the Tutor login form to visitors), else '' for the plain WordPress login.
+ * The page where a visitor signs in: EF_PRACTICE_LOGIN_URL if it is defined, else the Tutor login page of englishfever.com
+ * (the page with the slug "tutor-login", else https://englishfever.com/en/tutor-login/).
  */
 function ef_practice_login_page() {
 	if ( defined( 'EF_PRACTICE_LOGIN_URL' ) && EF_PRACTICE_LOGIN_URL ) {
 		return (string) EF_PRACTICE_LOGIN_URL;
 	}
-	if ( function_exists( 'tutor_utils' ) ) {
-		$utils = tutor_utils();
-		if ( is_object( $utils ) && method_exists( $utils, 'tutor_dashboard_url' ) ) {
-			$url = (string) $utils->tutor_dashboard_url();
-			if ( $url ) {
-				return $url;
-			}
-		}
-		$opt = get_option( 'tutor_option' );
-		$id  = is_array( $opt ) ? (int) ( $opt['tutor_dashboard_page_id'] ?? 0 ) : 0;
-		if ( $id && get_permalink( $id ) ) {
-			return (string) get_permalink( $id );
-		}
+	$page = get_page_by_path( 'tutor-login' );
+	if ( $page && 'publish' === $page->post_status && get_permalink( $page ) ) {
+		return (string) get_permalink( $page );
 	}
-	return '';
+	return 'https://englishfever.com/en/tutor-login/';
 }
 
 /* ?ef_practice=open  logged in: into the app; visitors: the app's welcome page (guests allowed).
@@ -134,6 +124,10 @@ add_action( 'template_redirect', function () {
 		ef_practice_set_return(); // whatever page the login form ends on (Tutor often shows its dashboard), the next page leads back into the app
 		$back = add_query_arg( 'ef_practice', 'go', is_singular() ? get_permalink() : home_url( '/' ) );
 		$login = ef_practice_login_page();
+		add_filter( 'allowed_redirect_hosts', function ( $hosts ) use ( $login ) {
+			$hosts[] = wp_parse_url( $login, PHP_URL_HOST ); // the login page may be on www. or not
+			return $hosts;
+		} );
 		if ( $login ) {
 			wp_safe_redirect( add_query_arg( 'redirect_to', rawurlencode( $back ), $login ) );
 		} else {

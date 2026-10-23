@@ -53,7 +53,7 @@ try {
             ]);
 
         case 'meta':
-            $m = Content::meta();
+            $m = Content::liveMeta();
             out(['levels' => $m['levels'], 'areas' => $m['areas'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN, 'placement_sizes' => Engine::PLACEMENT_SIZES]);
 
         case 'me':

@@ -79,7 +79,7 @@ final class Stats
         $have = [];
         foreach (Db::all('SELECT skill, theta, n, n_correct, updated_at FROM skill_state WHERE user_id = ?', [$uid]) as $r) $have[$r['skill']] = $r;
         $out = [];
-        foreach (Content::meta()['skills'] as $s) {
+        foreach (Content::liveMeta()['skills'] as $s) {
             $r = $have[$s['id']] ?? null;
             $n = $r ? (int) $r['n'] : 0;
             $out[] = [

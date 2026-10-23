@@ -170,7 +170,7 @@ final class CustomItems
         // topic: id, full name, or the name before the bracket ("Zero conditional")
         $t = mb_strtolower($get('topic')); $skill = null;
         foreach ($skills as $s) {
-            $label = mb_strtolower($s['label']); $short = trim(preg_replace('/\s*\(.*$/u', '', $label));
+            $label = mb_strtolower($s['label']); $short = trim(preg_replace('/\s*[(:].*$/u', '', $label)); // the name before a bracket or a colon
             if ($t !== '' && ($t === $s['id'] || $t === $label || $t === $short)) { $skill = $s; break; }
         }
         if (!$skill) throw new ApiError("Unknown topic \"{$get('topic')}\". Use a topic name from the list on this page.", 400);

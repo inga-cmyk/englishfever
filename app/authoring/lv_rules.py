@@ -118,3 +118,16 @@ LV_RULES.update({
         "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
     },
 })
+
+
+LV_RULES["modal_verbs"] = {
+    "form": ["can / should / must + darbības vārda pamatforma: I can swim. You should rest. He must go.",
+             "Nav -s ar he / she / it: he can, she should, it must.",
+             "Noliegums: can't (cannot), shouldn't, mustn't + pamatforma. Jautājums: Can / Should / Must + teik. priekšmets + pamatforma?",
+             "have to ir parasts darbības vārds: she has to go. Noliegums un jautājums ar do / does: I don't have to go. Do you have to go?"],
+    "use": ["can: spēja (I can swim) un atļauja (Can I sit here?).",
+            "should: padoms (You should see a doctor).",
+            "must / have to: noteikums vai kaut kas nepieciešams (You must wear a seat belt. I have to work on Saturdays).",
+            "mustn't = aizliegts. don't have to = nav obligāti. Pagātnē: had to (must pagātnes formas nav)."],
+    "signals": "rule, law, allowed, necessary, advice, ability (noteikums, likums, atļauts, nepieciešams, padoms, spēja)",
+}

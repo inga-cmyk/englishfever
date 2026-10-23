@@ -37,6 +37,18 @@ final class Content
         return self::$meta ??= self::load('meta');
     }
 
+    /** The topics learners see: only those that have tasks (a topic the teacher adds starts empty until tasks are approved). */
+    public static function liveMeta(): array
+    {
+        $m = self::meta();
+        $have = [];
+        foreach (self::items() as $it) $have[$it['skill']] = true;
+        $m['skills'] = array_values(array_filter($m['skills'], fn($s) => isset($have[$s['id']])));
+        $areas = array_flip(array_column($m['skills'], 'area'));
+        $m['areas'] = array_values(array_filter($m['areas'], fn($a) => isset($areas[$a['id']])));
+        return $m;
+    }
+
     public static function item(string $id): ?array
     {
         self::items();

@@ -11,7 +11,7 @@ final class Engine
 
     public static function start(int $uid, string $mode, array $skills, ?string $level, int $len): array
     {
-        $meta = Content::meta();
+        $meta = Content::liveMeta();
         $all = array_column($meta['skills'], 'id');
         $smart = false;
         if ($mode === 'placement') {

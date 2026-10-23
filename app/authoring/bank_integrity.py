@@ -58,7 +58,10 @@ def validate(items, skills, levels):
                     check(False, f'invalid pattern: {exc}')
                 if it.get('why_lv'):
                     check(len(rule) == 3 and bool(rule[2]), 'missing translated checklist/hint')
+    used = {it['skill'] for it in items}
     for skill, allowed in declared.items():
+        if skill not in used:
+            continue   # a topic whose tasks the teacher adds on the Tasks page
         for level in allowed:
             if coverage.get((skill, level)) != set(range(1, 7)):
                 errors.append(f'{skill} {level}: incomplete thinking-level coverage')

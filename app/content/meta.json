@@ -19,6 +19,10 @@
    "label": "Passive tenses"
   },
   {
+   "id": "modals",
+   "label": "Modal verbs"
+  },
+  {
    "id": "conditionals",
    "label": "Conditionals"
   },
@@ -504,6 +508,47 @@
      "Paziņojumi."
     ],
     "signals": "*tomorrow, next week, soon, by Friday*"
+   }
+  },
+  {
+   "id": "modal_verbs",
+   "label": "Modal verbs: can, should, must, have to",
+   "area": "modals",
+   "levels": [
+    "A2.1",
+    "A2.2",
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "*can / should / must* + base verb: *I can swim. You should rest. He must go.*",
+     "No *-s* with *he / she / it*: *he can, she should, it must.*",
+     "Negative: *can't* (*cannot*), *shouldn't*, *mustn't* + base verb. Question: *Can / Should / Must* + subject + base verb?",
+     "*have to* is a normal verb: *she has to go.* Negative and questions with *do / does*: *I don't have to go. Do you have to go?*"
+    ],
+    "use": [
+     "*can*: ability (*I can swim*) and permission (*Can I sit here?*).",
+     "*should*: advice (*You should see a doctor*).",
+     "*must / have to*: a rule or something necessary (*You must wear a seat belt. I have to work on Saturdays*).",
+     "*mustn't* = not allowed. *don't have to* = not necessary. In the past: *had to* (*must* has no past)."
+    ],
+    "signals": "*rule, law, allowed, necessary, advice, ability*",
+    "example": "*You must wear a seat belt, but you don't have to wear a hat.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*can / should / must* + darbības vārda pamatforma: *I can swim.* *You should rest.* *He must go.*",
+     "Nav *-s* ar *he / she / it*: *he can, she should, it must*.",
+     "Noliegums: *can't* (*cannot*), *shouldn't, mustn't* + pamatforma. Jautājums: *Can / Should / Must* + teik. priekšmets + pamatforma?",
+     "*have to* ir *parasts* darbības vārds: *she has to go*. Noliegums un jautājums ar *do / does*: *I don't have to go.* *Do you have to go?*"
+    ],
+    "use": [
+     "*can*: spēja (*I can swim*) un atļauja (*Can I sit here*?).",
+     "*should*: padoms (*You should see a doctor*).",
+     "*must / have to*: *noteikums* vai kaut kas nepieciešams (*You must wear a seat belt.* *I have to work on Saturdays*).",
+     "*mustn't = aizliegts*. *don't have to* = nav obligāti. Pagātnē: *had to* (*must* pagātnes formas nav)."
+    ],
+    "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)"
    }
   },
   {

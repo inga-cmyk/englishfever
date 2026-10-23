@@ -165,4 +165,19 @@ check("the teacher's Reports page can describe it", any(g["task"]["id"] == by["m
 teacher.api("teacher/report-status", {"item_id": by["mcq"], "status": "dismissed"})
 check("retire takes tasks out", teacher.api("teacher/items-status", {"ids": [by["match"]], "status": "retired"})["changed"] == 1 and by["match"] not in served(student))
 check("a retired task still opens for old answers", student.api("report", {"item_id": by["match"]})["_status"] == 200)
+# every draft file in docs/task-drafts must pass the checks as it is, and a new topic stays hidden until it has approved tasks
+import glob
+for f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs", "task-drafts", "*.csv"))):
+    res = teacher.api("teacher/items-import", {"csv": open(f, encoding="utf-8-sig").read()})
+    check("draft file passes every check: " + os.path.basename(f), res["bad"] == 0 and res["ok"] > 0, [(x["line"], x["errors"]) for x in res["rows"] if not x["ok"]])
+check("a topic with no approved tasks is hidden from learners", not any(s["id"] == "modal_verbs" for s in C().api("meta")["skills"]))
+mv = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs", "task-drafts", "modal-verbs-1.csv"), encoding="utf-8-sig").read()
+imp = teacher.api("teacher/items-import", {"csv": mv, "confirm": True})
+mids = [x["id"] for x in teacher.api("teacher/items")["items"]["draft"]]
+check("drafts alone do not show the topic", not any(s["id"] == "modal_verbs" for s in C().api("meta")["skills"]))
+teacher.api("teacher/items-status", {"ids": mids, "status": "approved"})
+m = C().api("meta"); sk = [s for s in m["skills"] if s["id"] == "modal_verbs"]
+check("after approval the topic and its area appear, with the grammar card", len(sk) == 1 and sk[0]["rule"]["form"] and sk[0]["rule_lv"]["form"] and "Modal verbs" in [a["label"] for a in m["areas"]], sk[:1])
+sm = student.api("session/start", {"mode": "practice", "skills": ["modal_verbs"], "level": "A2.1", "length": 10})
+check("a learner can practise the new topic", sm["_status"] == 200 and sm["item"]["skill"] == "modal_verbs", sm)
 print("\nALL PASS" if ok else "\nSOME FAILED"); raise SystemExit(0 if ok else 1)

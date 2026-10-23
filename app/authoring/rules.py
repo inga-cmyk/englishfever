@@ -3,6 +3,7 @@
 AREAS = [
     ("active", "Active tenses"),
     ("passive", "Passive tenses"),
+    ("modals", "Modal verbs"),
     ("conditionals", "Conditionals"),
     ("reported", "Reported speech"),
     ("indirect", "Indirect questions"),
@@ -23,6 +24,7 @@ SKILLS = [
     ("present_continuous_passive", "Present continuous passive", "passive", ["B1.2"]),
     ("present_perfect_passive", "Present perfect passive", "passive", ["B1.1", "B1.2"]),
     ("future_passive", "Future passive (will be done)", "passive", ["B1.1", "B1.2"]),
+    ("modal_verbs", "Modal verbs: can, should, must, have to", "modals", ["A2.1", "A2.2", "B1.1"]),
     ("cond_zero", "Zero conditional (if + present, present)", "conditionals", ["A2.2", "B1.1"]),
     ("cond_first", "First conditional (if + present, will)", "conditionals", ["A2.2", "B1.1", "B1.2"]),
     ("cond_second", "Second conditional (if + past, would)", "conditionals", ["B1.1", "B1.2", "B2.1"]),
@@ -221,4 +223,19 @@ BLOOM = {
     4: ("Analyse", "Find and explain mistakes"),
     5: ("Evaluate", "Judge and choose the best answer"),
     6: ("Create", "Write your own sentence"),
+}
+
+
+# Modal verbs: a topic whose tasks are added by the teacher on the Tasks page (no built-in tasks).
+RULES["modal_verbs"] = {
+    "form": ["can / should / must + base verb: I can swim. You should rest. He must go.",
+             "No -s with he / she / it: he can, she should, it must.",
+             "Negative: can't (cannot), shouldn't, mustn't + base verb. Question: Can / Should / Must + subject + base verb?",
+             "have to is a normal verb: she has to go. Negative and questions with do / does: I don't have to go. Do you have to go?"],
+    "use": ["can: ability (I can swim) and permission (Can I sit here?).",
+            "should: advice (You should see a doctor).",
+            "must / have to: a rule or something necessary (You must wear a seat belt. I have to work on Saturdays).",
+            "mustn't = not allowed. don't have to = not necessary. In the past: had to (must has no past)."],
+    "signals": "rule, law, allowed, necessary, advice, ability",
+    "example": "You must wear a seat belt, but you don't have to wear a hat.",
 }

@@ -93,8 +93,11 @@ for it in dsl.ITEMS:
 cover = {}
 for it in dsl.ITEMS:
     cover.setdefault((it["skill"], it["level"]), set()).add(it["bloom"])
+has_items = {it["skill"] for it in dsl.ITEMS}
 for s in SKILLS:
     for lv in s[3]:
+        if s[0] not in has_items:
+            continue   # a topic whose tasks the teacher adds on the Tasks page
         missing = set(range(1, 7)) - cover.get((s[0], lv), set())
         if missing:
             errors.append(f"{s[0]} {lv}: missing Bloom levels {sorted(missing)}")

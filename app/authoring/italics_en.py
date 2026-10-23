@@ -515,6 +515,17 @@ Write two sentences.
 """
 
 RULECARDS = r"""
+*can / should / must* + base verb: *I can swim. You should rest. He must go.*
+No *-s* with *he / she / it*: *he can, she should, it must.*
+Negative: *can't* (*cannot*), *shouldn't*, *mustn't* + base verb. Question: *Can / Should / Must* + subject + base verb?
+*have to* is a normal verb: *she has to go.* Negative and questions with *do / does*: *I don't have to go. Do you have to go?*
+*can*: ability (*I can swim*) and permission (*Can I sit here?*).
+*should*: advice (*You should see a doctor*).
+*must / have to*: a rule or something necessary (*You must wear a seat belt. I have to work on Saturdays*).
+*mustn't* = not allowed. *don't have to* = not necessary. In the past: *had to* (*must* has no past).
+*rule, law, allowed, necessary, advice, ability*
+*You must wear a seat belt, but you don't have to wear a hat.*
+
 *I / you / we / they* + base verb: *I work.*
 *he / she / it* + verb-*s*: *She works.*
 Negative: *don't / doesn't* + base verb.

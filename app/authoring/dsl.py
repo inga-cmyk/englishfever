@@ -30,7 +30,7 @@ ABBR = {
     "past_perfect": "ppf", "future": "fu",
     "present_simple_passive": "psp", "past_simple_passive": "pasp",
     "present_continuous_passive": "pcp", "present_perfect_passive": "ppp", "future_passive": "fup",
-    "cond_zero": "cz", "cond_first": "cf", "cond_second": "cs", "cond_third": "ct", "cond_mixed": "cm", "cond_advanced": "ca",
+    "modal_verbs": "mv", "cond_zero": "cz", "cond_first": "cf", "cond_second": "cs", "cond_third": "ct", "cond_mixed": "cm", "cond_advanced": "ca",
     "rep_statements": "rs", "rep_questions": "rq", "rep_verbs": "rv", "ind_polite": "ip", "ind_advanced": "ia",
 }
 

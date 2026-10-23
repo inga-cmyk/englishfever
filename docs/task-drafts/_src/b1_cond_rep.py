@@ -32,7 +32,7 @@ P.text("B1.1","Make it negative: If you heat the metal, it expands.",["If you do
 P.text("B1.1","Rewrite with when: If it gets dark, the lights come on.",["When it gets dark, the lights come on.","The lights come on when it gets dark."])
 P.match("B1.1","Match each beginning with its ending: science.",[("If you heat water to 100 degrees,","it boils."),("If you cool water below zero,","it freezes."),("If you mix blue and yellow,","you get green."),("If you drop a ball,","it falls.")])
 P.match("B1.1","Match each beginning with its ending: work.",[("If the printer jams,","we call the technician."),("If a customer complains,","the manager answers."),("If the deadline is close,","everyone stays late."),("If the weather is bad,","the meeting moves online.")])
-P.match("B1.1","Match each if-part with the general rule.",[("If you don't eat,","you feel weak."),("If you don't sleep,","you can't think clearly."),("If you don't exercise,","you get out of shape."),("If you don't drink,","you get thirsty.")])
+P.match("B1.1","Match each if-part with the general rule.",[("If you don't eat,","you get hungry."),("If you don't sleep,","you feel sleepy."),("If you don't exercise,","you get out of shape."),("If you don't drink,","you get thirsty.")])
 P.mcq("B1.1","Choose the correct option: If the temperature ___ below zero, the roads get icy.","falls",["will fall","fell","would fall"])
 P.mcq("B1.1","Choose the correct option: Plants die if they ___ enough light.","don't get",["won't get","didn't get","wouldn't get"])
 P.mcq("B1.1","Choose the correct option: ___ you mix red and green paint, you get brown.","If",["Unless","Because","Until"])

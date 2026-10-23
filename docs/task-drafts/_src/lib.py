@@ -39,7 +39,7 @@ def plain(task, typ):
         m = re.match(r"^[^:?.]{2,45}: (which .*)$", t, re.I)
         if m: return m.group(1)[0].upper() + m.group(1)[1:]
         if re.match(r"^.* writes: '.*' Choose the correct option\.$", t): return "Which sentence is correct?"
-    if typ == "order" and t.startswith("Put the words in order."): return "Put the words in order."
+    if typ == "order" and t.startswith("Put the words in order"): return "Put the words in order."
     if typ == "match":
         m = re.match(r"^(Match each beginning with its ending)[:.].*$", t)
         if m: return m.group(1) + "."

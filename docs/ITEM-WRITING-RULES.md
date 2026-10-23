@@ -25,3 +25,21 @@
 - What works: the verb is in the beginning and its object or agent in the ending (*My brother always forgets* + *his keys.*); a different pronoun in every short answer (*Yes, I have.* / *No, he hasn't.* / *No, they haven't.*); four different topics in four if-sentences (bus, doctor, phone, winning); meanings and forms that cannot be swapped (*much faster* = a big difference).
 - What does not work: adverbs only (*never / just / already* + any object), *since / for* + two time phrases, answers like *Not yet.* or *Yes, twice.* that fit many questions, two beginnings with the same subject and auxiliary.
 
+## Mistakes made before, and the check that stops each one
+`python3 app/tests/draft_rules_test.py` and `app/tests/drafts_test.py` (with `latvian_lint.py`) run on every draft file; they must pass before a file is handed over.
+
+| Mistake | Check |
+|---|---|
+| A setting in front of the question (*At work: which sentence is NOT correct?*) | `draft_rules_test`: no *X: which ...* |
+| *Your friend writes: '...' Choose the correct option.* | `draft_rules_test`: banned intro |
+| A hint after *Put the words in order* (*Compare two years.*) | `draft_rules_test` and `plain()` in `lib.py`: the instruction is exactly *Put the words in order.* |
+| A topic after the matching instruction (*...with its ending: unless.*) | `draft_rules_test` and `plain()` |
+| A matching task whose cards can be swapped (*much / a bit* + *faster / heavier*) | `draft_rules_test`: cards that start or end alike are listed and must be read (the list of read exceptions is in the test); the rule above |
+| The same question twice under different wording (it would overwrite the first one on re-import) | `draft_rules_test`: same content in two rows |
+| A question that repeats a built-in one | `drafts_test`: the importer refuses it |
+| Only one of several correct typed answers accepted | read each typed gap: list every correct form (*stops \| has stopped*) |
+| Wrong options that are also correct (*had* for *was having*) | the rule above; read every option |
+| Forms in italics together with *and* / *or* | `tests/browser/instr_italics.js` |
+| Latvian words marked as English, or old terms (*pasīvs*, *divdabis*) | `latvian_lint.py` |
+| An explanation cut to one character, or missing | `draft_rules_test`: length check; `drafts_test` |
+

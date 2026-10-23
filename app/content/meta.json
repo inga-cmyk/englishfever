@@ -37,6 +37,22 @@
   {
    "id": "indirect",
    "label": "Indirect questions"
+  },
+  {
+   "id": "nouns",
+   "label": "Nouns and articles"
+  },
+  {
+   "id": "clauses",
+   "label": "Joining ideas"
+  },
+  {
+   "id": "questions",
+   "label": "Questions"
+  },
+  {
+   "id": "patterns",
+   "label": "Verb patterns"
   }
  ],
  "skills": [
@@ -959,6 +975,315 @@
     ],
     "signals": "*I wonder, no idea, not sure, it depends on, the question is, whoever, whatever*",
     "example": "*I have no idea how long the meeting will take.*"
+   }
+  },
+  {
+   "id": "used_to",
+   "label": "Used to and be used to",
+   "area": "active",
+   "levels": [
+    "A2.2",
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "*used to* + base verb: *I used to live in Riga.*",
+     "Negative: *didn't use to* + base verb (no *-d*): *She didn't use to like fish.*",
+     "Question: *Did* + subject + *use to* + base verb? *Did you use to play tennis?*",
+     "*be used to / get used to* + noun or verb-*ing*: *I'm used to getting up early. It took me a month to get used to the cold.*"
+    ],
+    "use": [
+     "*used to*: a habit or a state in the past that is not true now (*I used to smoke. He used to be shy*).",
+     "Not for one finished event: use the Past Simple (*We went to Rome last year*).",
+     "*would*: past habits only, not states (*When I was a child, we would visit my gran every Sunday*).",
+     "*be used to / get used to*: something is (or becomes) normal for you. It is different from *used to*!"
+    ],
+    "signals": "*when I was young, as a child, in those days, now, any more*",
+    "example": "*I used to walk to school, but now I'm used to taking the bus.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*used to* + darbības vārda pamatforma: *I used to live in Riga.*",
+     "Noliegums: *didn't use to* + pamatforma (bez *-d*): *She didn't use to like fish.*",
+     "Jautājums: *Did* + teik. priekšmets + *use to* + pamatforma? *Did you use to play tennis?*",
+     "*be used to / get used to* + lietvārds vai darbības vārds ar *-ing*: *I'm used to getting up early.* *It took me a month to get used to the cold.*"
+    ],
+    "use": [
+     "*used to*: ieradums vai stāvoklis pagātnē, kas tagad vairs nav spēkā (*I used to smoke.* *He used to be shy*).",
+     "Nelieto vienam pabeigtam notikumam: lieto Past Simple (*We went to Rome last year*).",
+     "*would*: tikai pagātnes ieradumiem, ne stāvokļiem (*When I was a child, we would visit my gran every Sunday*).",
+     "*be used to / get used to*: kaut kas ir (vai kļūst) ierasts. Tas atšķiras no *used to*!"
+    ],
+    "signals": "*when I was young, as a child, in those days, now, any more* (kad biju jauns, bērnībā, tolaik, tagad, vairs)"
+   }
+  },
+  {
+   "id": "articles",
+   "label": "Articles: a, an, the, no article",
+   "area": "nouns",
+   "levels": [
+    "A2.2",
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "*a / an* + singular countable noun: *a book, an apple* (*an* before a vowel sound: *an hour*, *a university*).",
+     "*the* + singular, plural or uncountable noun: *the book, the books, the water.*",
+     "No article: plural and uncountable nouns in general (*Dogs are friendly. I like coffee*) and most names of people, cities and countries (*Riga, Latvia*)."
+    ],
+    "use": [
+     "*a / an*: one of many, or the first time we mention something (*I saw a film. It was a comedy*).",
+     "*the*: something both people know, something already mentioned, or the only one (*the film we saw, the sun, the Internet*).",
+     "*the* is also used with superlatives, rivers, seas and some countries (*the best, the Baltic Sea, the UK*).",
+     "No article: general things, meals, and places used for their purpose (*have breakfast, go to school, at work*)."
+    ],
+    "signals": "*first mention, already mentioned, the only one, in general*",
+    "example": "*I bought a jacket and a hat. The jacket was cheap, but I love hats.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*a / an* + vienskaitļa skaitāms lietvārds: *a book, an apple* (*an* pirms patskaņa skaņas: *an hour, a university*).",
+     "*the* + vienskaitļa, daudzskaitļa vai neskaitāms lietvārds: *the book, the books, the water*.",
+     "Bez artikula: daudzskaitļa un neskaitāmi lietvārdi vispārīgā nozīmē (*Dogs are friendly.* *I like coffee*) un lielākā daļa cilvēku, pilsētu un valstu nosaukumu (*Riga, Latvia*)."
+    ],
+    "use": [
+     "*a / an*: viens no daudziem vai kaut kas, ko piemin pirmoreiz (*I saw a film.* *It was a comedy*).",
+     "*the*: kaut kas, ko abi zina, kas jau minēts vai kas ir vienīgais (*the film we saw, the sun, the Internet*).",
+     "*the* lieto arī ar vispārākās pakāpes formu, upēm, jūrām un dažām valstīm (*the best, the Baltic Sea, the UK*).",
+     "Bez artikula: vispārīgas lietas, ēdienreizes un vietas ar to parasto nozīmi (*have breakfast, go to school, at work*)."
+    ],
+    "signals": "*first mention, already mentioned, the only one, in general* (pirmoreiz, jau minēts, vienīgais, vispārīgi)"
+   }
+  },
+  {
+   "id": "quantity",
+   "label": "Quantity: some, any, much, many, enough",
+   "area": "nouns",
+   "levels": [
+    "A2.2",
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "*some / any* + plural or uncountable noun: *some apples, any milk.*",
+     "*many* + plural: *many people*. *much* + uncountable: *much time*. Mostly in questions and negatives: *How many? How much? not many, not much.*",
+     "*a lot of / lots of* + both, mostly in positive sentences: *a lot of people, a lot of time.*",
+     "*a few* + plural: *a few friends*. *a little* + uncountable: *a little time*. *few / little* (without *a*) = almost none.",
+     "*enough* + noun: *enough chairs*. Adjective + *enough*: *big enough*. *too much / too many* = more than we need."
+    ],
+    "use": [
+     "*some*: positive sentences and offers (*Would you like some tea?*). *any*: questions and negatives (*Do you have any brothers? I don't have any money*).",
+     "*a few / a little* = a small number, a positive feeling. *few / little* = almost none, a negative feeling.",
+     "*too much / too many* is a problem. *not enough* = less than we need."
+    ],
+    "signals": "*how many, how much, a few, a little, enough, too much, too many*",
+    "example": "*There isn't much time and there are too many things to do.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*some / any* + daudzskaitļa vai neskaitāms lietvārds: *some apples, any milk*.",
+     "*many* + daudzskaitlis: *many people*. *much* + neskaitāms lietvārds: *much time*. Galvenokārt jautājumos un noliegumos: *How many?* *How much?* *not many, not much*.",
+     "*a lot of / lots of* + abi veidi, galvenokārt apgalvojumos: *a lot of people, a lot of time*.",
+     "*a few* + daudzskaitlis: *a few friends*. *a little* + neskaitāms lietvārds: *a little time*. *few / little* (bez *a*) = gandrīz nav.",
+     "*enough* + lietvārds: *enough chairs*. Īpašības vārds + *enough*: *big enough*. *too much / too many* = vairāk, nekā vajag."
+    ],
+    "use": [
+     "*some*: apgalvojumos un piedāvājumos (*Would you like some tea*?). *any*: jautājumos un noliegumos (*Do you have any brothers?* *I don't have any money*).",
+     "*a few / a little = neliels* daudzums, pozitīvs vērtējums. *few / little* = gandrīz nav, negatīvs vērtējums.",
+     "*too much / too many* ir problēma. *not enough* = mazāk, nekā vajag."
+    ],
+    "signals": "*how many, how much, a few, a little, enough, too much, too many* (cik, mazliet, pietiekami, par daudz)"
+   }
+  },
+  {
+   "id": "relative_clauses",
+   "label": "Relative clauses (who, which, that, where)",
+   "area": "clauses",
+   "levels": [
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "*who* = people, *which* = things, *that* = people or things: *a woman who lives next door, a phone which takes good photos.*",
+     "*where* = places, *whose* = belongs to: *the restaurant where we met, a driver whose car was stolen.*",
+     "Defining clause: no commas, it tells us which one: *The woman who called is my boss.* *Who / which / that* can be left out when it is the object: *the film we saw.*",
+     "Non-defining clause: commas, extra information, not *that*: *My brother, who lives in Berlin, is a nurse.*"
+    ],
+    "use": [
+     "A relative clause gives more information about a noun and joins two sentences into one.",
+     "Defining: we need it to know which person or thing. Non-defining: extra information we could leave out.",
+     "Do not repeat the object: *the book that I bought*, not *the book that I bought it.*"
+    ],
+    "signals": "*who, which, that, where, whose, commas*",
+    "example": "*The woman who called is my boss, and the office where she works is in Riga.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*who* = cilvēki, *which* = lietas, *that* = cilvēki vai lietas: *a woman who lives next door, a phone which takes good photos*.",
+     "*where* = vietas, *whose* = kam pieder: *the restaurant where we met, a driver whose car was stolen*.",
+     "Palīgteikums bez komatiem (vajadzīgs, lai zinātu, kuru): *The woman who called is my boss.* *Who / which / that* var izlaist, ja tas ir papildinātājs: *the film we saw*.",
+     "Palīgteikums ar komatiem (papildu informācija), ne *that*: *My brother, who lives in Berlin, is a nurse.*"
+    ],
+    "use": [
+     "Attieksmes palīgteikums dod vairāk informācijas par lietvārdu un savieno divus teikumus vienā.",
+     "Bez komatiem: informācija vajadzīga, lai zinātu, par kuru cilvēku vai lietu runa. Ar komatiem: papildu informācija, ko var izlaist.",
+     "Nekad neatkārto papildinātāju: *the book that I bought*, nevis *the book that I bought it*."
+    ],
+    "signals": "*who, which, that, where, whose, commas* (komati)"
+   }
+  },
+  {
+   "id": "time_clauses",
+   "label": "Time clauses (when, as soon as, until)",
+   "area": "clauses",
+   "levels": [
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "*when / as soon as / until / before / after / while* + Present Simple (not *will*) for the future: *I'll call you when I arrive.*",
+     "The time clause can come first (with a comma) or second: *When I arrive, I'll call you.* = *I'll call you when I arrive.*",
+     "With *after* and *before* the Present Perfect is also possible: *I'll call you after I've finished.*"
+    ],
+    "use": [
+     "The main clause has *will / going to* or an order; the time clause has the present.",
+     "*when* = at that time. *as soon as* = immediately. *until* = up to that moment (*Wait here until I come back*). *before / after* = which happens first. *while* = at the same time."
+    ],
+    "signals": "*when, as soon as, until, before, after, while, by the time*",
+    "example": "*I'll tell you the news as soon as I get home.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*when / as soon as / until / before / after / while* + Present Simple (nevis *will*) nākotnei: *I'll call you when I arrive.*",
+     "Laika palīgteikums var būt pirmais (ar komatu) vai otrais: *When I arrive, I'll call you.* = *I'll call you when I arrive.*",
+     "Ar *after* un *before* iespējams arī Present Perfect: *I'll call you after I've finished.*"
+    ],
+    "use": [
+     "Virsteikumā ir *will / going to* vai pavēle; laika palīgteikumā ir tagadne.",
+     "*when* = tajā laikā. *as soon as* = uzreiz. *until* = līdz tam brīdim (*Wait here until I come back*). *before / after* = kas notiek pirmais. *while* = vienlaikus."
+    ],
+    "signals": "*when, as soon as, until, before, after, while, by the time* (kad, līdzko, līdz, pirms, pēc, kamēr)"
+   }
+  },
+  {
+   "id": "question_tags",
+   "label": "Question tags (isn't it? don't you?)",
+   "area": "questions",
+   "levels": [
+    "A2.2",
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "Positive sentence, negative tag: *You like tea, don't you?*",
+     "Negative sentence, positive tag: *She isn't here, is she?*",
+     "The tag repeats the auxiliary: *is / are / was / were, have / has, can, will, should*. With the Present Simple and Past Simple: *do / does / did*.",
+     "Special: *I am* → *aren't I?* *Let's* → *shall we?* An order → *will you?* *Nobody / nothing* → positive tag with *they / it*."
+    ],
+    "use": [
+     "Voice goes down: you are sure and want agreement (*It's cold, isn't it?*).",
+     "Voice goes up: you are not sure and really ask (*You're not working today, are you?*).",
+     "The tag has the same tense as the sentence: *He went home, didn't he?*"
+    ],
+    "signals": "*isn't it? don't you? can't he? will you? aren't I?*",
+    "example": "*You haven't seen my keys, have you?*"
+   },
+   "rule_lv": {
+    "form": [
+     "Apgalvojošs teikums, nolieguma *tag*: *You like tea, don't you?*",
+     "Noliegts teikums, apgalvojošs *tag*: *She isn't here, is she?*",
+     "*Tag* atkārto palīgdarbības vārdu: *is / are / was / were, have / has, can, will, should*. Ar Present Simple un Past Simple: *do / does / did*.",
+     "Īpašie gadījumi: *I am → aren't I?* *Let's → shall we?* Pavēle → *will you*? *Nobody / nothing* → apgalvojošs *tag* ar *they / it*."
+    ],
+    "use": [
+     "Balss krītas: esi pārliecināts un gaidi piekrišanu (*It's cold, isn't it*?).",
+     "Balss ceļas: neesi drošs un tiešām jautā (*You're not working today, are you*?).",
+     "*Tag* ir tajā pašā laikā kā teikums: *He went home, didn't he?*"
+    ],
+    "signals": "*isn't it*? *don't you*? *can't he*? *will you*? *aren't I*? (īss jautājums teikuma beigās)"
+   }
+  },
+  {
+   "id": "subject_object_q",
+   "label": "Subject and object questions",
+   "area": "questions",
+   "levels": [
+    "A2.2",
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "Object question: question word + auxiliary + subject + verb: *Who did you meet? What does she want?* (*do / does / did* needed)",
+     "Subject question: the question word is the subject, no *do / does / did*: *Who met you? What happened? Who wants coffee?*",
+     "The verb keeps the normal form: *Who lives here?* (with *-s*), not *Who does live here?*"
+    ],
+    "use": [
+     "Ask about the person or thing that does the action: subject question (*Tom called me → Who called you?*).",
+     "Ask about the person or thing the action happens to: object question (*I called Tom → Who did you call?*).",
+     "Look at the answer: if the answer is the subject, the question has no *did / does*."
+    ],
+    "signals": "*who, what, which, whose as the subject: no do / does / did*",
+    "example": "*Who wrote this email? Who did you send it to?*"
+   },
+   "rule_lv": {
+    "form": [
+     "Jautājums par papildinātāju: jautājamais vārds + palīgdarbības vārds + teik. priekšmets + darbības vārds: *Who did you meet?* *What does she want?* (vajag *do / does / did*)",
+     "Jautājums par teikuma priekšmetu: jautājamais vārds pats ir teik. priekšmets, bez *do / does / did*: *Who met you?* *What happened?* *Who wants coffee?*",
+     "Darbības vārds paliek parastajā formā: *Who lives here?* (ar *-s*), nevis *Who does live here?*"
+    ],
+    "use": [
+     "Jautā par cilvēku vai lietu, kas veic darbību: jautājums par teikuma priekšmetu (*Tom called me → Who called you*?).",
+     "Jautā par cilvēku vai lietu, ar ko darbība notiek: jautājums par papildinātāju (*I called Tom → Who did you call*?).",
+     "Paskaties uz atbildi: ja atbilde ir teik. priekšmets, jautājumā nav *did / does*."
+    ],
+    "signals": "*who, what, which, whose as the subject*: no *do / does / did* (kā teik. priekšmets: bez *do / does / did*)"
+   }
+  },
+  {
+   "id": "verb_patterns",
+   "label": "Verb patterns: -ing or to",
+   "area": "patterns",
+   "levels": [
+    "A2.2",
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "verb + *-ing*: *enjoy, finish, keep, avoid, mind, suggest, practise* (*I enjoy reading. She suggested going home.*)",
+     "verb + *to* + base verb: *want, need, decide, hope, plan, learn, agree, promise, manage, refuse* (*I want to leave. He decided to stay.*)",
+     "preposition + *-ing*: *interested in learning, good at cooking, before leaving, thank you for helping.*",
+     "Some verbs take both with the same meaning: *like, love, hate, start, begin* (*I like swimming. = I like to swim.*)",
+     "Different meaning: *stop / remember / forget / try* + *-ing* or *to* (*I stopped smoking = I quit. I stopped to smoke = I stopped in order to smoke.*)"
+    ],
+    "use": [
+     "The verb decides: learn which verbs go with *-ing* and which with *to*.",
+     "After a preposition we always use *-ing*: *She's good at drawing.*",
+     "*stop / remember / forget / try*: *-ing* = about something done or an experiment; *to* = a task or a purpose."
+    ],
+    "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition: -ing*",
+    "example": "*I enjoy cooking, but I decided to eat out tonight.*"
+   },
+   "rule_lv": {
+    "form": [
+     "darbības vārds + *-ing*: *enjoy, finish, keep, avoid, mind, suggest, practise* (*I enjoy reading.* *She suggested going home*.)",
+     "darbības vārds + to + pamatforma: *want, need, decide, hope, plan, learn, agree, promise, manage, refuse* (*I want to leave.* *He decided to stay*.)",
+     "prievārds + *-ing*: *interested in learning, good at cooking, before leaving, thank you for helping*.",
+     "Daži darbības vārdi der ar abiem ar to pašu nozīmi: *like, love, hate, start, begin* (*I like swimming.* = *I like to swim*.)",
+     "Atšķirīga nozīme: *stop / remember / forget / try + -ing* vai *to* (*I stopped smoking* = es atmetu. *I stopped to smoke* = es apstājos, lai nosmēķētu.)"
+    ],
+    "use": [
+     "Darbības vārds nosaka formu: iemācies, kuri vārdi iet ar *-ing* un kuri ar to.",
+     "Aiz prievārda vienmēr lieto *-ing*: *She's good at drawing.*",
+     "*stop / remember / forget / try*: *-ing* = par jau izdarītu vai izmēģinājumu; to = uzdevums vai mērķis."
+    ],
+    "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition*: *-ing* (aiz prievārda: *-ing*)"
    }
   }
  ],

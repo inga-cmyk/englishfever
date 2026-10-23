@@ -258,3 +258,12 @@ RULES["comparison"] = {
     "signals": "than, as ... as, the ... -est, in, much, a bit, the same as",
     "example": "This bike is cheaper than that one, but it is not as fast as mine.",
 }
+
+
+# ---- eight B1 topics (rule cards in b1_topics.py; their tasks are added on the Tasks page)
+import b1_topics as _b1
+AREAS.extend(_b1.AREAS_NEW)
+SKILLS.extend(_b1.SKILLS_NEW)
+for _id, _c in _b1.CARDS.items():
+    RULES[_id] = {k: ([x.replace("*", "") for x in v] if isinstance(v, list) else v.replace("*", "")) for k, v in _c.items()}
+

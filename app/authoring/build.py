@@ -176,8 +176,16 @@ RULES_MARKED = {}
 for sid, r in RULES.items():
     RULES_MARKED[sid] = {"form": [mk_en(x) for x in r["form"]], "use": [mk_en(x) for x in r["use"]],
                          "signals": mk_en(r["signals"]), "example": mk_en(r["example"]) if r.get("example") else r.get("example")}
-LV_RULES_MARKED = {sid: {"form": [mk_lv(x) for x in r["form"]], "use": [mk_lv(x) for x in r["use"]], "signals": mk_lv(r["signals"])}
-                   for sid, r in lv_data.LV_RULES.items()}
+import b1_topics  # noqa: E402
+LV_RULES_MARKED = {}
+for sid, r in lv_data.LV_RULES.items():
+    _saved = set(italics.LV_ASCII)
+    if sid in b1_topics.LV_CARDS:   # the new topics: a few more Latvian words without Latvian letters, only for their own cards
+        italics.LV_ASCII |= b1_topics.LV_WORDS
+    try:
+        LV_RULES_MARKED[sid] = {"form": [mk_lv(x) for x in r["form"]], "use": [mk_lv(x) for x in r["use"]], "signals": mk_lv(r["signals"])}
+    finally:
+        italics.LV_ASCII.clear(); italics.LV_ASCII.update(_saved)
 for key, line in EN_INDEX.items():
     if key not in en_used:
         errors.append("italics_en.py: this line matches no explanation text: " + line)

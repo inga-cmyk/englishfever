@@ -146,3 +146,8 @@ LV_RULES["comparison"] = {
             "much / a lot / a bit / slightly + pārākā pakāpe parāda, cik liela ir atšķirība (much cheaper, a bit colder). less ... than un the least ir pretējs more ... than un the most."],
     "signals": "than, as ... as, the ... -est, in, much, a bit, the same as (nekā, tikpat ... kā, visā, daudz, mazliet, tāds pats kā)",
 }
+
+
+import b1_topics as _b1  # noqa: E402
+LV_RULES.update(_b1.LV_CARDS)
+

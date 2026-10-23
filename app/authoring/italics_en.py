@@ -686,3 +686,7 @@ Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*
 *I wonder, no idea, not sure, it depends on, the question is, whoever, whatever*
 *I have no idea how long the meeting will take.*
 """
+
+import b1_topics as _b1  # noqa: E402
+RULECARDS += "\n" + "\n".join(x for c in _b1.CARDS.values() for k in ("form", "use") for x in c[k]) + "\n" + "\n".join(c["signals"] + "\n" + c["example"] for c in _b1.CARDS.values()) + "\n"
+

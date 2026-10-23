@@ -20,6 +20,18 @@ Every Latvian explanation in the question drafts and the two new rule cards (Mod
 
 New terms in the Comparison card, **not yet checked by a Latvian teacher**: *pārākā pakāpe* (comparative), *vispārākā pakāpe* (superlative), *īpašības vārds* (adjective), *apstākļa vārds* (adverb). They are the standard terms of Latvian school grammar; please confirm.
 
+New terms in the eight B1 topics (rule cards and drafts), **not yet checked by a Latvian teacher**; please confirm or replace:
+
+| Used in | Term | English |
+|---|---|---|
+| Articles | **artikuls**, **bez artikula** | article, no article (Latvian has no articles; English lessons in Latvia use the word) |
+| Quantity | **skaitāms / neskaitāms lietvārds**, **daudzskaitļa lietvārds** | countable / uncountable noun, plural noun |
+| Relative clauses | **attieksmes palīgteikums**; **palīgteikums bez komatiem (vajadzīgs, lai zinātu, kuru)** and **ar komatiem (papildu informācija)** | relative clause; defining / non-defining (described, not named, because textbooks differ) |
+| Time clauses | **laika palīgteikums**, **virsteikums** | time clause, main clause |
+| Question tags | **tag** (kept in English), **īss jautājums teikuma beigās**; **balss krītas / ceļas** | question tag; falling / rising voice |
+| Subject and object questions | **jautājums par teikuma priekšmetu / par papildinātāju**, **jautājamais vārds** | subject question, object question, question word |
+| Verb patterns | **darbības vārds ar -ing**, **to + pamatforma**, **prievārds** | verb + -ing, to + base verb, preposition |
+
 ## Standard terms already in use (checked, no change)
 
 darbības vārds · noliegums · jautājums · vārdu secība · netiešā runa / tiešā runa · palīgdarbības vārds · palīgteikums · laika palīgteikums · papildinātājs · vienskaitlis / daudzskaitlis · tagadne / pagātne / nākotne

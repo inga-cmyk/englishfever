@@ -6,6 +6,8 @@ APP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 sys.path.insert(0, os.path.join(APP, "authoring"))
 sys.path.insert(0, os.path.join(APP, "..", "docs", "task-drafts", "_src"))
 import lib  # noqa: F401  (extends the Latvian word list the same way the drafts were written)
+import b1_topics, italics as _it
+_BASE = set(_it.LV_ASCII)   # the new B1 topics' drafts (b1-new-*.csv) are written with the extra words of b1_topics.LV_WORDS in the list; the older drafts without
 BANNED = [r"\bpasīv", r"\baktīv", r"divdabi", r"jautājuma vārd", r"tagadnes ilgstoš", r"pagātnes ilgstoš", r"ilgstošā forma", r"salīdzināmā", r"vienkāršā tagadne", r"vienkāršā pagātne", r"vienkāršo tagadni", r"vienkāršo pagātni",
           r"(?<!teikuma )(?<!teik\. )\bpriekšmet"]
 ALLOWED = {"Present", "Past", "Simple", "Continuous", "Perfect", "Future", "Passive", "Conditional", "Zero", "First", "Second", "Third"}
@@ -18,12 +20,13 @@ def check(where, text):
     if italics.lv_mark(text.replace("*", "")) != text: bad.append((where, "English words not marked as examples (run the drafts through lib.save)", text[:110]))
 
 for f in sorted(glob.glob(os.path.join(APP, "..", "docs", "task-drafts", "*.csv"))):
+    _it.LV_ASCII.clear(); _it.LV_ASCII.update(_BASE | (b1_topics.LV_WORDS if os.path.basename(f).startswith("b1-new") else set()))
     for n, r in enumerate(list(csv.reader(open(f, encoding="utf-8-sig")))[1:], 2):
         if len(r[6].strip()) < 12: bad.append((os.path.basename(f) + ":" + str(n), "English explanation too short", r[6]))
         if r[7].strip(): check(os.path.basename(f) + ":" + str(n), r[7])
         else: bad.append((os.path.basename(f) + ":" + str(n), "no Latvian explanation", r[3][:80]))
 import lv_rules
-for sid in ("modal_verbs", "comparison"):
+for sid in ["modal_verbs", "comparison"] + list(b1_topics.LV_CARDS):
     card = lv_rules.LV_RULES[sid]
     for k in ("form", "use"):
         for i, line in enumerate(card[k]):

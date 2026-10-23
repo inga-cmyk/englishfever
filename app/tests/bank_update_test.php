@@ -93,7 +93,7 @@ $resume = Engine::current(1, $sid);
 check(in_array('I am liking this song.', $resume['item']['options'], true), 'Pending session silently switched question version');
 check(Content::item('cf-B12-4a')['q'] === 'Which sentence is NOT correct?', 'Old answer history now shows a rewritten prompt');
 check(Content::item('cf-B12-4a-r2')['q'] !== Content::item('cf-B12-4a')['q'], 'Correction was not applied to new version');
-foreach (Content::meta()['skills'] as $skill) {
+foreach (Content::liveMeta()["skills"] as $skill) {
     $session = Engine::start(2, 'practice', [$skill['id']], $skill['levels'][0], 5);
     check(isset($active[$session['item']['id']]), 'New session selected a retired question');
 }

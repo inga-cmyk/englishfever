@@ -351,7 +351,9 @@
     s = s.replace(/(^|\s)'([^']+)'(?=[\s.,:;?!]|$)/g, '$1*$2*');   // 'any' in quotes
     if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!the (correct|words?|answers?|verbs?)\b)(.+)$/i, function (m, w, _x, rest) {
       var tail = (rest.match(/[:.?!]+$/) || [''])[0];            // the colon or full stop stays plain
-      var forms = rest.slice(0, rest.length - tail.length).split(/\s+(and|or)\s+/);   // each form on its own; "and" / "or" stay plain
+      var body = rest.slice(0, rest.length - tail.length), comma = body.search(/,\s/);
+      if (comma > 0) { tail = body.slice(comma) + tail; body = body.slice(0, comma); }   // what follows a comma is not part of the form: with who, about the object
+      var forms = body.split(/\s+(and|or)\s+/);   // each form on its own; "and" / "or" stay plain
       return w + ' ' + forms.map(function (f) { return (f === 'and' || f === 'or') ? f : '*' + f + '*'; }).join(' ') + tail;
     });
     return s;

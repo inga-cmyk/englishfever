@@ -10,6 +10,8 @@ let ok = true; const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PA
     ["Complete with have to or has to", "Complete with *have to* or *has to*"],
     ["Write one sentence with older and than:", "Write one sentence with *older* and *than*:"],
     ["Rewrite with not as ... as:", "Rewrite with *not as ... as*:"],
+    ["Make a question with who, about the object", "Make a question with *who*, about the object"],
+    ["Make a question with what, about the subject", "Make a question with *what*, about the subject"],
     ["Make a question with How long", "Make a question with *How long*"],
     ["Make it negative and use 'any'", "Make it negative and use *any*"],
     ["Rewrite with as ... as", "Rewrite with *as ... as*"],

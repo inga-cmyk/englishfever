@@ -44,6 +44,7 @@ P.text("B1.1", "Make it negative with didn't use to: We used to have a car.", ["
 P.text("B1.1", "Make the sentence negative: She used to play tennis.", ["She didn't use to play tennis.", "She did not use to play tennis.", "She never used to play tennis."])
 P.text("B1.1", "Make a question: She used to live in London.", ["Did she use to live in London?"])
 P.text("B1.2", "Rewrite with would: When I was little, we used to visit the zoo every spring.", ["When I was little, we would visit the zoo every spring.", "We would visit the zoo every spring when I was little."], b=5)
+P.text("B1.2", "Say it another way and keep the meaning: When I was little, we used to visit the zoo every spring.", ["When I was little, we would visit the zoo every spring.", "We would visit the zoo every spring when I was little.", "When I was little, we visited the zoo every spring.", "We visited the zoo every spring when I was little."], b=5)
 P.match("B1.2", "Match each form with its meaning.", [("used to", "a past habit that has stopped"), ("be used to", "something is normal for me"), ("get used to", "something is becoming normal"), ("didn't use to", "this was not true in the past")])
 
 # ============ Articles (A2.2 / B1.1 / B1.2) ============
@@ -86,6 +87,7 @@ P.mcq("B1.2", "In a text: which sentence is correct?", "She spent half an hour w
 P.mcq("B1.2", "In a travel blog: which sentence is NOT correct?", "He lives in the Latvia.", ["He lives in Latvia.", "He lives in the Netherlands.", "He lives in the UK."], b=4)
 P.mcq("B1.2", "Choose the correct option: He is quite ___ good player.", "a", ["an", "(no article)", "some"], b=3)
 P.text("B1.2", "Rewrite with the elderly: Old people need more care.", ["The elderly need more care.", "The elderly need more care in hospitals."], b=5)
+P.gap("B1.2", "In this town, ___ elderly get free bus tickets.", "the | The", b=4)
 P.match("A2.2", "Match each sound with the right article and word.", [("a consonant sound", "a book"), ("a vowel sound", "an apple"), ("a silent h", "an hour"), ("a 'y' sound", "a university")])
 P.match("B1.1", "Match each rule with its example.", [("first mention", "I bought a jacket."), ("already mentioned", "The jacket was cheap."), ("general plural", "Jackets are expensive."), ("the best of all", "It is the best jacket in the shop.")])
 P.match("B1.2", "Match each pattern with its example.", [("what + a / an", "What a view!"), ("the + nationality", "the Swiss"), ("half + a / an", "half an hour"), ("the + adjective", "the rich")])
@@ -123,6 +125,7 @@ P.mcq("B1.1", "Choose the correct option: She has ___ experience, so the company
 P.text("A2.2", "Make it negative with any: She has some money.", ["She doesn't have any money.", "She does not have any money.", "She hasn't any money."], b=3)
 P.text("A2.2", "Make the sentence negative: There is some milk.", ["There isn't any milk.", "There is no milk.", "There's no milk.", "There is not any milk."], b=3)
 P.text("B1.1", "Rewrite with enough: The soup is too cold.", ["The soup isn't hot enough.", "The soup is not hot enough."], b=5)
+P.gap("B1.1", "We can't swim today. The water isn't warm ___ .", "enough", b=3)
 P.match("A2.2", "Match each word with its use.", [("many", "with a plural noun: many people"), ("much", "with an uncountable noun: much time"), ("a few", "a small number: a few friends"), ("a little", "a small amount: a little water")])
 P.match("B1.1", "Match each phrase with its meaning.", [("too many", "more than we need (things we can count)"), ("not enough", "less than we need"), ("enough", "as much as we need"), ("very little", "almost nothing")])
 save("b1-new-1.csv")

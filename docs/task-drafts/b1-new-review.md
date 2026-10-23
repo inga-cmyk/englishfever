@@ -2,7 +2,7 @@
 
 Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each line is one question as the learner sees it. **✔** = the correct answer (or all accepted answers), **✗** = the wrong options. The text after the dash is the explanation shown after the answer (the Latvian version is in the CSV). Levels are the internal half-levels: learners see A2 and B1.
 
-## Used to and be used to (37 questions)
+## Used to and be used to (38 questions)
 
 ### A2.2 (11)
 
@@ -33,7 +33,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Make the sentence negative: She used to play tennis.**   ✔ She didn't use to play tennis. | She did not use to play tennis. | She never used to play tennis.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
 - [type the sentence] **Make a question: She used to live in London.**   ✔ Did she use to live in London?  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
 
-### B1.2 (14)
+### B1.2 (15)
 
 - [drag the words] **Put the words in order.**   ✔ when i was a child we would visit my grandparents every sunday   (also accepted: we would visit my grandparents every sunday when i was a child)  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the words] **Put the words in order.**   ✔ it took me a long time to get used to the cold weather  — Subject + used to + base verb + the rest. Negative: didn't use to.
@@ -48,9 +48,10 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Choose the correct option: When we were children, we ___ play in the river every summer.**   ✔ would   ✗ were used to | got used to | are used to  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
 - [choose] **Which sentence is correct?**   ✔ I used to have a bike when I was ten.   ✗ I would have a bike when I was ten. | I am used to have a bike when I was ten. | I use to have a bike when I was ten.  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
 - [type the sentence] **Rewrite with would: When I was little, we used to visit the zoo every spring.**   ✔ When I was little, we would visit the zoo every spring. | We would visit the zoo every spring when I was little.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
+- [type the sentence] **Say it another way and keep the meaning: When I was little, we used to visit the zoo every spring.**   ✔ When I was little, we would visit the zoo every spring. | We would visit the zoo every spring when I was little. | When I was little, we visited the zoo every spring. | We visited the zoo every spring when I was little.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
 - [match] **Match each form with its meaning.**   ✔ used to = a past habit that has stopped  ·  be used to = something is normal for me  ·  get used to = something is becoming normal  ·  didn't use to = this was not true in the past  — used to is about the past; be used to and get used to are about now.
 
-## Articles (39 questions)
+## Articles (40 questions)
 
 ### A2.2 (12)
 
@@ -85,7 +86,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is correct?**   ✔ Dogs are loyal animals.   ✗ A dogs are loyal animals. | Dog are loyal animals. | An dogs are loyal animals.  — a / an before one countable noun (an before a vowel sound). the for something known or the only one. No article for general plurals.
 - [match] **Match each rule with its example.**   ✔ first mention = I bought a jacket.  ·  already mentioned = The jacket was cheap.  ·  general plural = Jackets are expensive.  ·  the best of all = It is the best jacket in the shop.  — a / an = first mention. the = known or the only one. No article = general plural or uncountable.
 
-### B1.2 (12)
+### B1.2 (13)
 
 - [drag the words] **Put the words in order.**   ✔ what a lovely surprise to see you here  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
 - [drag the words] **Put the words in order.**   ✔ she spent half an hour waiting for the bus  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
@@ -98,9 +99,10 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is NOT correct?**   ✔ He lives in the Latvia.   ✗ He lives in Latvia. | He lives in the Netherlands. | He lives in the UK.  — a / an before one countable noun (an before a vowel sound). the for something known or the only one. No article for general plurals.
 - [choose] **Choose the correct option: He is quite ___ good player.**   ✔ a   ✗ an | (no article) | some  — a / an before one countable noun (an before a vowel sound). the for something known or the only one. No article for general plurals.
 - [type the sentence] **Rewrite with the elderly: Old people need more care.**   ✔ The elderly need more care. | The elderly need more care in hospitals.  — Use a / an for one of many, the for something known, no article for general plurals.
+- [type a word] **In this town, ___ elderly get free bus tickets.**   ✔ the | The  — a / an before one countable noun (an before a vowel sound). the for something known or the only one.
 - [match] **Match each pattern with its example.**   ✔ what + a / an = What a view!  ·  the + nationality = the Swiss  ·  half + a / an = half an hour  ·  the + adjective = the rich  — a / an = first mention. the = known or the only one. No article = general plural or uncountable.
 
-## Quantity (30 questions)
+## Quantity (31 questions)
 
 ### A2.2 (15)
 
@@ -120,7 +122,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Make the sentence negative: There is some milk.**   ✔ There isn't any milk. | There is no milk. | There's no milk. | There is not any milk.  — any in negatives and questions. enough after an adjective: big enough.
 - [match] **Match each word with its use.**   ✔ many = with a plural noun: many people  ·  much = with an uncountable noun: much time  ·  a few = a small number: a few friends  ·  a little = a small amount: a little water  — many / a few go with countable nouns, much / a little with uncountable nouns.
 
-### B1.1 (15)
+### B1.1 (16)
 
 - [drag the words] **Put the words in order.**   ✔ there are too many cars on the road today  — many + plural, much + uncountable. a few + plural, a little + uncountable.
 - [drag the words] **Put the words in order.**   ✔ i don't have enough time to finish the report  — many + plural, much + uncountable. a few + plural, a little + uncountable.
@@ -136,11 +138,12 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is correct?**   ✔ There is little traffic at night, so the drive is quick.   ✗ There are little traffic at night, so the drive is quick. | There is few traffic at night, so the drive is quick. | There is a few traffic at night, so the drive is quick.  — many / a few + plural nouns. much / a little + uncountable nouns. a lot of + both. too much / too many = more than we need.
 - [choose] **Choose the correct option: She has ___ experience, so the company hired her at once.**   ✔ a lot of   ✗ many | a few | few  — many / a few + plural nouns. much / a little + uncountable nouns. a lot of + both. too much / too many = more than we need.
 - [type the sentence] **Rewrite with enough: The soup is too cold.**   ✔ The soup isn't hot enough. | The soup is not hot enough.  — any in negatives and questions. enough after an adjective: big enough.
+- [type a word] **We can't swim today. The water isn't warm ___ .**   ✔ enough  — many / a few + plural nouns. much / a little + uncountable nouns.
 - [match] **Match each phrase with its meaning.**   ✔ too many = more than we need (things we can count)  ·  not enough = less than we need  ·  enough = as much as we need  ·  very little = almost nothing  — many / a few go with countable nouns, much / a little with uncountable nouns.
 
-## Relative clauses (37 questions)
+## Relative clauses (40 questions)
 
-### B1.1 (18)
+### B1.1 (19)
 
 - [drag the words] **Put the words in order.**   ✔ the man who called you is my boss  — Noun + who / which / that / where + the rest of the clause.
 - [drag the words] **Put the words in order.**   ✔ i love the film that we saw yesterday  — Noun + who / which / that / where + the rest of the clause.
@@ -159,9 +162,10 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Join with who: I know a woman. She speaks five languages.**   ✔ I know a woman who speaks five languages.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join the two sentences: I have a friend. She works as a pilot.**   ✔ I have a friend who works as a pilot. | I have a friend that works as a pilot.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join with where: This is the town. I was born there.**   ✔ This is the town where I was born.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
+- [type the sentence] **Join the two sentences: This is the town. I was born there.**   ✔ This is the town where I was born. | This is the town in which I was born.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [match] **Match each word with what it describes.**   ✔ who = a person  ·  which = a thing  ·  where = a place  ·  whose = belongs to someone  — who / which / where / whose show what the clause describes.
 
-### B1.2 (19)
+### B1.2 (21)
 
 - [drag the words] **Put the words in order.**   ✔ my brother who lives in berlin is a nurse  — Noun + who / which / that / where + the rest of the clause.
 - [drag the words] **Put the words in order.**   ✔ the woman whose car was stolen called the police  — Noun + who / which / that / where + the rest of the clause.
@@ -181,11 +185,13 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Join with which: She passed her driving test. This surprised everyone.**   ✔ She passed her driving test, which surprised everyone.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join with whose: I met a man. His dog can open doors.**   ✔ I met a man whose dog can open doors.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join the two sentences: My uncle lives in Spain. He is a chef.**   ✔ My uncle, who lives in Spain, is a chef. | My uncle, who is a chef, lives in Spain.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
+- [type the sentence] **Join the two sentences: She passed her driving test. This surprised everyone.**   ✔ She passed her driving test, which surprised everyone.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
+- [type the sentence] **Join the two sentences: I met a man. His dog can open doors.**   ✔ I met a man whose dog can open doors.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [match] **Match each clause with its meaning.**   ✔ a clause without commas = tells us which one  ·  a clause with commas = gives extra information  ·  whose = shows who owns something  ·  which after a comma = refers to the whole sentence before it  — who / which / where / whose show what the clause describes.
 
-## Time clauses (32 questions)
+## Time clauses (36 questions)
 
-### B1.1 (18)
+### B1.1 (20)
 
 - [drag the words] **Put the words in order.**   ✔ i will call you when i get home   (also accepted: when i get home i will call you)  — Time word + Present Simple, then will or going to in the main clause.
 - [drag the words] **Put the words in order.**   ✔ we will leave as soon as everyone is ready   (also accepted: as soon as everyone is ready we will leave)  — Time word + Present Simple, then will or going to in the main clause.
@@ -204,9 +210,11 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is correct?**   ✔ Don't open the door until I tell you.   ✗ Don't open the door until I will tell you. | Don't open the door until I told you. | Don't open the door until I'm telling you.  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [type the sentence] **Rewrite with when: First I will finish work. Then I will call you.**   ✔ I will call you when I finish work. | I'll call you when I finish work. | When I finish work, I will call you. | When I finish work, I'll call you. | I will call you when I have finished work. | I'll call you when I have finished work. | When I have finished work, I will call you. | When I have finished work, I'll call you.  — The time clause has the Present Simple. It can come first (with a comma) or second.
 - [type the sentence] **Join with as soon as: I will get the tickets. I will let you know.**   ✔ As soon as I get the tickets, I will let you know. | As soon as I get the tickets, I'll let you know. | I will let you know as soon as I get the tickets. | I'll let you know as soon as I get the tickets.  — The time clause has the Present Simple. It can come first (with a comma) or second.
+- [type the sentence] **Join the two plans in one sentence: First I will finish work. Then I will call you.**   ✔ I will call you when I finish work. | When I finish work, I will call you. | I will call you as soon as I finish work. | As soon as I finish work, I will call you. | I will call you after I finish work. | After I finish work, I will call you. | I will call you once I finish work. | Once I finish work, I will call you. | I will call you when I have finished work. | When I have finished work, I will call you. | I will call you as soon as I have finished work. | As soon as I have finished work, I will call you. | I will call you after I have finished work. | After I have finished work, I will call you. | I will call you once I have finished work. | Once I have finished work, I will call you. | I'll call you when I finish work. | When I finish work, I'll call you. | I'll call you as soon as I finish work. | As soon as I finish work, I'll call you. | I'll call you after I finish work. | After I finish work, I'll call you. | I'll call you once I finish work. | Once I finish work, I'll call you. | I'll call you when I have finished work. | When I have finished work, I'll call you. | I'll call you as soon as I have finished work. | As soon as I have finished work, I'll call you. | I'll call you after I have finished work. | After I have finished work, I'll call you. | I'll call you once I have finished work. | Once I have finished work, I'll call you.  — The time clause has the Present Simple. It can come first (with a comma) or second.
+- [type the sentence] **Join the two plans in one sentence: I will get the tickets. Then I will let you know.**   ✔ I will let you know when I get the tickets. | When I get the tickets, I will let you know. | I will let you know as soon as I get the tickets. | As soon as I get the tickets, I will let you know. | I will let you know after I get the tickets. | After I get the tickets, I will let you know. | I will let you know once I get the tickets. | Once I get the tickets, I will let you know. | I will let you know when I have got the tickets. | When I have got the tickets, I will let you know. | I will let you know as soon as I have got the tickets. | As soon as I have got the tickets, I will let you know. | I will let you know after I have got the tickets. | After I have got the tickets, I will let you know. | I will let you know once I have got the tickets. | Once I have got the tickets, I will let you know. | I will let you know when I've got the tickets. | When I've got the tickets, I will let you know. | I will let you know as soon as I've got the tickets. | As soon as I've got the tickets, I will let you know. | I will let you know after I've got the tickets. | After I've got the tickets, I will let you know. | I will let you know once I've got the tickets. | Once I've got the tickets, I will let you know. | I'll let you know when I get the tickets. | When I get the tickets, I'll let you know. | I'll let you know as soon as I get the tickets. | As soon as I get the tickets, I'll let you know. | I'll let you know after I get the tickets. | After I get the tickets, I'll let you know. | I'll let you know once I get the tickets. | Once I get the tickets, I'll let you know. | I'll let you know when I have got the tickets. | When I have got the tickets, I'll let you know. | I'll let you know as soon as I have got the tickets. | As soon as I have got the tickets, I'll let you know. | I'll let you know after I have got the tickets. | After I have got the tickets, I'll let you know. | I'll let you know once I have got the tickets. | Once I have got the tickets, I'll let you know. | I'll let you know when I've got the tickets. | When I've got the tickets, I'll let you know. | I'll let you know as soon as I've got the tickets. | As soon as I've got the tickets, I'll let you know. | I'll let you know after I've got the tickets. | After I've got the tickets, I'll let you know. | I'll let you know once I've got the tickets. | Once I've got the tickets, I'll let you know.  — The time clause has the Present Simple. It can come first (with a comma) or second.
 - [match] **Match each word with its meaning.**   ✔ when = at that time  ·  as soon as = immediately after  ·  until = up to that moment  ·  while = at the same time  — when, as soon as, until, while show how two events are connected in time.
 
-### B1.2 (14)
+### B1.2 (16)
 
 - [drag the words] **Put the words in order.**   ✔ i will send you the file as soon as i have finished it   (also accepted: as soon as i have finished it i will send you the file)  — Time word + Present Simple, then will or going to in the main clause.
 - [drag the words] **Put the words in order.**   ✔ by the time you arrive we will have finished dinner  — Time word + Present Simple, then will or going to in the main clause.
@@ -221,6 +229,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is NOT correct?**   ✔ I'll call you after I will have spoken to her.   ✗ I'll call you after I have spoken to her. | I'll call you after I speak to her. | After I speak to her, I'll call you.  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [type the sentence] **Rewrite with before: First I'll check the dates. After that I'll book the tickets.**   ✔ I'll check the dates before I book the tickets. | I will check the dates before I book the tickets. | Before I book the tickets, I'll check the dates. | Before I book the tickets, I will check the dates.  — The time clause has the Present Simple. It can come first (with a comma) or second.
 - [type the sentence] **Rewrite with until: You can't go out. First you must finish your homework.**   ✔ You can't go out until you finish your homework. | You can't go out until you have finished your homework. | Until you finish your homework, you can't go out. | Until you have finished your homework, you can't go out.  — The time clause has the Present Simple. It can come first (with a comma) or second.
+- [type the sentence] **Join the two plans in one sentence: I'll check the dates first. After that I'll book the tickets.**   ✔ I'll check the dates before I book the tickets. | Before I book the tickets, I'll check the dates. | I will check the dates before I book the tickets. | Before I book the tickets, I will check the dates. | I'll book the tickets after I check the dates. | After I check the dates, I'll book the tickets. | I'll book the tickets once I check the dates. | Once I check the dates, I'll book the tickets. | I'll book the tickets after I have checked the dates. | After I have checked the dates, I'll book the tickets. | I'll book the tickets once I have checked the dates. | Once I have checked the dates, I'll book the tickets. | I'll book the tickets after I've checked the dates. | After I've checked the dates, I'll book the tickets. | I'll book the tickets once I've checked the dates. | Once I've checked the dates, I'll book the tickets. | I will book the tickets after I check the dates. | After I check the dates, I will book the tickets. | I will book the tickets once I check the dates. | Once I check the dates, I will book the tickets. | I will book the tickets after I have checked the dates. | After I have checked the dates, I will book the tickets. | I will book the tickets once I have checked the dates. | Once I have checked the dates, I will book the tickets. | I will book the tickets after I've checked the dates. | After I've checked the dates, I will book the tickets. | I will book the tickets once I've checked the dates. | Once I've checked the dates, I will book the tickets.  — The time clause has the Present Simple. It can come first (with a comma) or second.
+- [type the sentence] **Join the two sentences: You can't go out. First you must finish your homework.**   ✔ You can't go out until you finish your homework. | Until you finish your homework, You can't go out. | You can't go out before you finish your homework. | Before you finish your homework, You can't go out. | You can't go out until you have finished your homework. | Until you have finished your homework, You can't go out. | You can't go out before you have finished your homework. | Before you have finished your homework, You can't go out. | You cannot go out until you finish your homework. | Until you finish your homework, You cannot go out. | You cannot go out before you finish your homework. | Before you finish your homework, You cannot go out. | You cannot go out until you have finished your homework. | Until you have finished your homework, You cannot go out. | You cannot go out before you have finished your homework. | Before you have finished your homework, You cannot go out.  — The time clause has the Present Simple. It can come first (with a comma) or second.
 - [match] **Match each time phrase with its meaning.**   ✔ until = up to that moment  ·  by the time = not later than that moment  ·  as soon as = immediately after  ·  whenever = every time that  — when, as soon as, until, while show how two events are connected in time.
 
 ## Question tags (49 questions)
@@ -283,9 +293,9 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Add a question tag: There's a problem.**   ✔ There's a problem, isn't there? | There is a problem, isn't there?  — Add a tag: the same auxiliary and subject (it, she, they), the opposite meaning. Present Simple: do / does. Past Simple: did.
 - [match] **Match each pattern with its meaning.**   ✔ falling voice on the tag = you expect agreement  ·  rising voice on the tag = you really ask  ·  positive sentence = negative tag  ·  negative sentence = positive tag  — The tag matches the auxiliary and the subject of the sentence.
 
-## Subject and object questions (46 questions)
+## Subject and object questions (51 questions)
 
-### A2.2 (14)
+### A2.2 (16)
 
 - [drag the words] **Put the words in order.**   ✔ who wrote this email  — Subject question: question word + verb. Object question: question word + did / does + subject + verb.
 - [drag the words] **Put the words in order.**   ✔ what did you buy at the market  — Subject question: question word + verb. Object question: question word + did / does + subject + verb.
@@ -298,11 +308,13 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Tom called Anna. Which question asks about Anna?**   ✔ Who did Tom call?   ✗ Who called Anna? | Who Tom called? | Who Tom did call?  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
 - [choose] **Choose the correct option: ___ lives in this house?**   ✔ Who   ✗ Who does | What does | Which do  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
 - [choose] **Choose the correct option: What ___ you want for lunch?**   ✔ do   ✗ does | are | is  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
-- [type the sentence] **Make a question with who about the person who did it: Ben broke the cup.**   ✔ Who broke the cup?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
-- [type the sentence] **Make a question with who about the object: Ben invited Maria.**   ✔ Who did Ben invite? | Whom did Ben invite?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Make a question with who, about the person who did it: Ben broke the cup.**   ✔ Who broke the cup?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Make a question with who, about the object: Ben invited Maria.**   ✔ Who did Ben invite? | Whom did Ben invite?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Ask about the person: Ben broke the cup.**   ✔ Who broke the cup?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Ask about Maria: Ben invited Maria.**   ✔ Who did Ben invite? | Whom did Ben invite?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
 - [match] **Match each question with what it asks about.**   ✔ Who called Tom? = the person who called  ·  Who did Anna call? = the person Anna called  ·  What fell? = the thing that fell  ·  What did Anna buy? = the thing Anna bought  — If the question word is the subject, there is no did / does.
 
-### B1.1 (17)
+### B1.1 (19)
 
 - [drag the words] **Put the words in order.**   ✔ who left the door open last night  — Subject question: question word + verb. Object question: question word + did / does + subject + verb.
 - [drag the words] **Put the words in order.**   ✔ what did you say to the manager  — Subject question: question word + verb. Object question: question word + did / does + subject + verb.
@@ -318,11 +330,13 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is NOT correct?**   ✔ Who did called you last night?   ✗ Who called you last night? | Who did you call last night? | What happened last night?  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
 - [choose] **Which question asks about the object?**   ✔ What did she say?   ✗ Who said that? | What happened? | Who knows?  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
 - [choose] **Which team ___ the match last Sunday?**   ✔ won   ✗ did won | does won | win  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
-- [type the sentence] **Make a question with what about the subject: Something made that noise.**   ✔ What made that noise?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
-- [type the sentence] **Make a question with who about the object: Maria thanked her teacher.**   ✔ Who did Maria thank? | Whom did Maria thank?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Make a question with what, about the subject: Something made that noise.**   ✔ What made that noise?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Make a question with who, about the object: Maria thanked her teacher.**   ✔ Who did Maria thank? | Whom did Maria thank?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Ask about the thing: Something made that noise.**   ✔ What made that noise?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Ask about the teacher: Maria thanked her teacher.**   ✔ Who did Maria thank? | Whom did Maria thank?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
 - [match] **Match each statement with its question.**   ✔ Tom ate the pizza. (who?) = Who ate the pizza?  ·  Tom ate the pizza. (what?) = What did Tom eat?  ·  The car stopped. (what?) = What stopped?  ·  Maria saw a ghost. (who?) = Who saw a ghost?  — If the question word is the subject, there is no did / does.
 
-### B1.2 (15)
+### B1.2 (16)
 
 - [drag the words] **Put the words in order.**   ✔ who did you give the tickets to  — Subject question: question word + verb. Object question: question word + did / does + subject + verb.
 - [drag the words] **Put the words in order.**   ✔ which of these companies did you apply to last year  — Subject question: question word + verb. Object question: question word + did / does + subject + verb.
@@ -337,7 +351,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is NOT correct?**   ✔ What did happened at the meeting?   ✗ What happened at the meeting? | What did you decide at the meeting? | Who spoke at the meeting?  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
 - [choose] **Choose the correct option: ___ is responsible for this mistake?**   ✔ Who   ✗ Who does | Who did | What does  — Subject question (Who called?): no did / does. Object question (Who did you call?): did / does + subject + base verb.
 - [type the sentence] **Make a question about the person who did the action: Someone has taken my umbrella.**   ✔ Who has taken my umbrella?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
-- [type the sentence] **Make a question with who about the object: Anna lent her bike to Tom.**   ✔ Who did Anna lend her bike to? | Whom did Anna lend her bike to? | To whom did Anna lend her bike?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Make a question with who, about the object: Anna lent her bike to Tom.**   ✔ Who did Anna lend her bike to? | Whom did Anna lend her bike to? | To whom did Anna lend her bike?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
+- [type the sentence] **Ask about Tom: Anna lent her bike to Tom.**   ✔ Who did Anna lend her bike to? | Whom did Anna lend her bike to? | To whom did Anna lend her bike?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
 - [match] **Match each sentence with the question about it.**   ✔ Someone called. (who?) = Who called?  ·  Anna called someone. (who?) = Who did Anna call?  ·  Something broke. (what?) = What broke?  ·  Anna broke something. (what?) = What did Anna break?  — If the question word is the subject, there is no did / does.
 
 ## Verb patterns (57 questions)

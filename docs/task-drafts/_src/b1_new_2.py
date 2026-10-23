@@ -44,8 +44,22 @@ P.text("B1.1", "Join with where: This is the town. I was born there.", ["This is
 P.text("B1.2", "Join with which: She passed her driving test. This surprised everyone.", ["She passed her driving test, which surprised everyone."], b=5)
 P.text("B1.2", "Join with whose: I met a man. His dog can open doors.", ["I met a man whose dog can open doors."], b=5)
 P.text("B1.2", "Join the two sentences: My uncle lives in Spain. He is a chef.", ["My uncle, who lives in Spain, is a chef.", "My uncle, who is a chef, lives in Spain."], b=5)
+P.text("B1.1", "Join the two sentences: This is the town. I was born there.", ["This is the town where I was born.", "This is the town in which I was born."], b=5)
+P.text("B1.2", "Join the two sentences: She passed her driving test. This surprised everyone.", ["She passed her driving test, which surprised everyone."], b=5)
+P.text("B1.2", "Join the two sentences: I met a man. His dog can open doors.", ["I met a man whose dog can open doors."], b=5)
 P.match("B1.1", "Match each word with what it describes.", [("who", "a person"), ("which", "a thing"), ("where", "a place"), ("whose", "belongs to someone")])
 P.match("B1.2", "Match each clause with its meaning.", [("a clause without commas", "tells us which one"), ("a clause with commas", "gives extra information"), ("whose", "shows who owns something"), ("which after a comma", "refers to the whole sentence before it")])
+
+
+def _ver(mains, clauses, conns, fronted=True):
+    """Every sensible one-sentence version: main clause + connector + clause, and connector + clause + comma + main clause."""
+    out = []
+    for m in mains:
+        for c in clauses:
+            for k in conns:
+                out.append(f"{m} {k} {c}.")
+                if fronted: out.append(f"{k.capitalize()} {c}, {m}.")
+    return out
 
 # ============ Time clauses (B1.1 / B1.2) ============
 P = Topic("Time clauses", **B,
@@ -84,6 +98,15 @@ P.text("B1.1", "Rewrite with when: First I will finish work. Then I will call yo
 P.text("B1.1", "Join with as soon as: I will get the tickets. I will let you know.", ["As soon as I get the tickets, I will let you know.", "As soon as I get the tickets, I'll let you know.", "I will let you know as soon as I get the tickets.", "I'll let you know as soon as I get the tickets."], b=5)
 P.text("B1.2", "Rewrite with before: First I'll check the dates. After that I'll book the tickets.", ["I'll check the dates before I book the tickets.", "I will check the dates before I book the tickets.", "Before I book the tickets, I'll check the dates.", "Before I book the tickets, I will check the dates."], b=5)
 P.text("B1.2", "Rewrite with until: You can't go out. First you must finish your homework.", ["You can't go out until you finish your homework.", "You can't go out until you have finished your homework.", "Until you finish your homework, you can't go out.", "Until you have finished your homework, you can't go out."], b=5)
+P.text("B1.1", "Join the two plans in one sentence: First I will finish work. Then I will call you.",
+       _ver(["I will call you", "I'll call you"], ["I finish work", "I have finished work"], ["when", "as soon as", "after", "once"]), b=5)
+P.text("B1.1", "Join the two plans in one sentence: I will get the tickets. Then I will let you know.",
+       _ver(["I will let you know", "I'll let you know"], ["I get the tickets", "I have got the tickets", "I've got the tickets"], ["when", "as soon as", "after", "once"]), b=5)
+P.text("B1.2", "Join the two plans in one sentence: I'll check the dates first. After that I'll book the tickets.",
+       _ver(["I'll check the dates", "I will check the dates"], ["I book the tickets"], ["before"])
+       + _ver(["I'll book the tickets", "I will book the tickets"], ["I check the dates", "I have checked the dates", "I've checked the dates"], ["after", "once"]), b=5)
+P.text("B1.2", "Join the two sentences: You can't go out. First you must finish your homework.",
+       _ver(["You can't go out", "You cannot go out"], ["you finish your homework", "you have finished your homework"], ["until", "before"]), b=5)
 P.match("B1.1", "Match each word with its meaning.", [("when", "at that time"), ("as soon as", "immediately after"), ("until", "up to that moment"), ("while", "at the same time")])
 P.match("B1.2", "Match each time phrase with its meaning.", [("until", "up to that moment"), ("by the time", "not later than that moment"), ("as soon as", "immediately after"), ("whenever", "every time that")])
 save("b1-new-2.csv")

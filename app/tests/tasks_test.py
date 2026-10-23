@@ -97,7 +97,7 @@ check("they are listed as drafts", len(lst["draft"]) == len(GOOD) and not lst["a
 ids = [x["id"] for x in lst["draft"]]
 check("ids look like c-0001", all(i.startswith("c-") for i in ids), ids)
 again = teacher.api("teacher/items-import", {"csv": make_csv(GOOD)})
-check("uploading the same file again reports duplicates", again["ok"] == 0 and all("already" in x["errors"][0] for x in again["rows"]), again)
+check("uploading the same file again adds nothing: every row is already there, none is a problem", again["ok"] == 0 and again["bad"] == 0 and again["same"] == len(GOOD), again)
 text_item = [x for x in lst["draft"] if x["kind"] == "text"][0]
 check("a typed answer gets the other clause order added automatically", "I went home after I had finished work" in text_item["key"], text_item["key"])
 

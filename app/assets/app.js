@@ -624,13 +624,14 @@
 
       function showCheck(csv, res) {
         var bad = res.rows.filter(function (x) { return !x.ok; }), warned = res.rows.filter(function (x) { return x.ok && x.warnings.length; });
-        var add = res.ok ? h('button', { class: 'btn', type: 'button', onclick: function (e) {
+        var upd = res.updated || 0, same = res.same || 0;
+        var add = (res.ok || upd) ? h('button', { class: 'btn', type: 'button', onclick: function (e) {
           e.target.disabled = true;
-          api('teacher/items-import', { csv: csv, confirm: true }).then(function (x) { UI.toast(x.ok + ' added as drafts'); state.taskTab = 'draft'; viewTasks(); })
+          api('teacher/items-import', { csv: csv, confirm: true }).then(function (x) { UI.toast((x.ok ? x.ok + ' added as drafts' : '') + (x.ok && x.updated ? ', ' : '') + (x.updated ? x.updated + ' reworded' : '')); state.taskTab = 'draft'; viewTasks(); })
             .catch(function (er) { e.target.disabled = false; UI.toast(er.message); });
-        } }, 'Add ' + res.ok + (res.ok === 1 ? ' question' : ' questions') + ' as drafts') : null;
+        } }, (res.ok ? 'Add ' + res.ok + (res.ok === 1 ? ' question' : ' questions') + ' as drafts' : '') + (res.ok && upd ? ' and ' : '') + (upd ? (res.ok ? 'reword ' : 'Reword ') + upd : '')) : null;
         result.replaceChildren(h('div', { class: 'card', style: 'margin-bottom:16px' },
-          h('h2', { style: 'margin:0 0 8px' }, res.ok + ' ready' + (res.bad ? ', ' + res.bad + ' with problems' : '')),
+          h('h2', { style: 'margin:0 0 8px' }, [res.ok + ' new', upd ? upd + ' reworded' : null, same ? same + ' already there' : null, res.bad ? res.bad + ' with problems' : null].filter(Boolean).join(' · ')),
           bad.length ? h('ul', { class: 'rep-list-plain' }, bad.map(function (x) { return h('li', { style: 'margin-bottom:8px' }, h('b', null, 'Row ' + x.line + ': '), (x.q || '').slice(0, 70), h('div', { class: 'err small', style: 'margin:2px 0 0' }, x.errors.join(' '))); })) : null,
           warned.length ? h('ul', { class: 'rep-list-plain' }, warned.map(function (x) { return h('li', { class: 'small muted', style: 'margin-bottom:6px' }, h('b', null, 'Row ' + x.line + ': '), x.warnings.join(' ')); })) : null,
           h('div', { class: 'row', style: 'margin-top:12px' }, add)));

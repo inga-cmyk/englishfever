@@ -349,7 +349,11 @@
     var s = String(instr || '');
     if (s.indexOf('*') >= 0) return s;                       // already marked by hand
     s = s.replace(/(^|\s)'([^']+)'(?=[\s.,:;?!]|$)/g, '$1*$2*');   // 'any' in quotes
-    if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!the (correct|words?|answers?|verbs?)\b)(.+)$/i, '$1 *$3*');
+    if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!the (correct|words?|answers?|verbs?)\b)(.+)$/i, function (m, w, _x, rest) {
+      var tail = (rest.match(/[:.?!]+$/) || [''])[0];            // the colon or full stop stays plain
+      var forms = rest.slice(0, rest.length - tail.length).split(/\s+(and|or)\s+/);   // each form on its own; "and" / "or" stay plain
+      return w + ' ' + forms.map(function (f) { return (f === 'and' || f === 'or') ? f : '*' + f + '*'; }).join(' ') + tail;
+    });
     return s;
   }
 

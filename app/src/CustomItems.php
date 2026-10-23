@@ -125,8 +125,15 @@ final class CustomItems
         $existing = [];
         $rel = Content::relabelled(); // a task given a lower level as a copy may be imported again at that level
         foreach (Content::items() as $it) if (!isset($rel[$it['id']])) $existing[self::dupKey($it)] = true;
-        foreach (Db::all("SELECT skill, data FROM custom_items WHERE status <> 'retired'") as $r) { $d = json_decode($r['data'], true); if (!empty($d['q'])) $existing[self::dupKey($d + ['skill' => $r['skill']])] = true; }
-        $rows = []; $line = 1; $ok = 0; $bad = 0; $seen = [];
+        $mine = []; $byContent = [];   // tasks already added from a file: the same task again is left alone; the same content with new wording updates the wording
+        foreach (Db::all("SELECT item_id, skill, level, kind, data FROM custom_items WHERE status <> 'retired'") as $r) {
+            $d = json_decode($r['data'], true);
+            if (empty($d['q'])) continue;
+            $d += ['skill' => $r['skill'], 'level' => $r['level'], 'kind' => $r['kind']];
+            $existing[self::dupKey($d)] = true; $mine[self::dupKey($d)] = true;
+            if (self::contentKey($d) !== '') $byContent[self::contentKey($d)] = ['id' => $r['item_id'], 'q' => $d['q']];
+        }
+        $rows = []; $line = 1; $ok = 0; $bad = 0; $seen = []; $upd = 0; $same = 0;
         while (($r = fgetcsv($fh, 0, $delim, '"', '\\')) !== false) {
             $line++;
             if (count(array_filter($r, fn($c) => trim((string) $c) !== '')) === 0) continue;
@@ -136,7 +143,17 @@ final class CustomItems
             try {
                 $item = self::buildRow($get, $skills, $res);
                 $dup = self::dupKey($item);
-                if (isset($existing[$dup]) || isset($seen[$dup])) throw new ApiError('This task is already in the bank (same topic and text).', 400);
+                $ck = self::contentKey($item);
+                if (isset($seen[$dup])) throw new ApiError('This task is twice in the file.', 400);
+                if (isset($mine[$dup])) {                                   // added from a file before, nothing changed
+                    $res['ok'] = true; $res['same'] = true; $res['warnings'] = []; $same++;
+                    $seen[$dup] = true; $rows[] = $res; continue;
+                }
+                if ($ck !== '' && isset($byContent[$ck]) && $byContent[$ck]['q'] !== $item['q']) {   // same task, new wording: update it where it is
+                    $res['ok'] = true; $res['update'] = $byContent[$ck]['id']; $res['item'] = $item; $res['warnings'][] = 'Already added: the wording is updated.'; $upd++;
+                    $seen[$dup] = true; $rows[] = $res; continue;
+                }
+                if (isset($existing[$dup])) throw new ApiError('This task is already in the bank (same topic and text).', 400);
                 $seen[$dup] = true;
                 $res['ok'] = true; $res['item'] = $item;
             } catch (ApiError $e) { $res['errors'][] = $e->getMessage(); }
@@ -146,8 +163,15 @@ final class CustomItems
         fclose($fh);
         if ($save) {
             foreach ($rows as &$row) {
-                if (!$row['ok']) continue;
+                if (!$row['ok'] || !empty($row['same'])) continue;
                 $it = $row['item'];
+                if (!empty($row['update'])) {
+                    $cur = Db::one('SELECT data FROM custom_items WHERE item_id = ?', [$row['update']]);
+                    $d = json_decode((string) ($cur['data'] ?? ''), true);
+                    if (is_array($d)) { $d['q'] = $it['q']; Db::update('custom_items', ['data' => json_encode($d, JSON_UNESCAPED_UNICODE), 'updated_at' => time()], 'item_id = ?', [$row['update']]); }
+                    $row['id'] = $row['update'];
+                    continue;
+                }
                 $next = (int) Db::val('SELECT COALESCE(MAX(id), 0) + 1 FROM custom_items');
                 $id = 'c-' . str_pad((string) $next, 4, '0', STR_PAD_LEFT);
                 $data = $it; unset($data['skill'], $data['level'], $data['bloom'], $data['kind']);
@@ -158,7 +182,7 @@ final class CustomItems
             unset($row);
         }
         foreach ($rows as &$row) unset($row['item']);
-        return ['rows' => $rows, 'ok' => $ok, 'bad' => $bad, 'saved' => $save];
+        return ['rows' => $rows, 'ok' => $ok, 'bad' => $bad, 'saved' => $save, 'updated' => $upd, 'same' => $same];
     }
 
     private static function split(string $s, string $sep): array
@@ -257,10 +281,28 @@ final class CustomItems
         return $item;
     }
 
-    /** Same topic and same text is a duplicate; word-order tasks share their instruction, so their sentence counts too. */
+    /**
+     * Same topic, same text and same content is a duplicate. Instructions are plain and shared ("Which sentence is NOT correct?",
+     * "Put the words in order."), so what makes a task its own is the sentence of a word-order task, the correct option of a
+     * multiple-choice task and the pairs of a matching task.
+     */
     private static function dupKey(array $it): string
     {
-        return mb_strtolower($it['q']) . '|' . $it['skill'] . (isset($it['sentence']) ? '|' . mb_strtolower($it['sentence']) : '');
+        $pairs = isset($it['pairs']) ? json_encode($it['pairs'], JSON_UNESCAPED_UNICODE) : '';
+        return mb_strtolower($it['q']) . '|' . $it['skill'] . (isset($it['sentence']) ? '|' . mb_strtolower($it['sentence']) : '')
+            . (isset($it['correct']) && is_string($it['correct']) ? '|' . mb_strtolower($it['correct']) : '') . ($pairs !== '' ? '|' . mb_strtolower($pairs) : '');
+    }
+
+    /** What a multiple-choice, word-order or matching task is, apart from its wording ('' for other kinds). */
+    private static function contentKey(array $it): string
+    {
+        switch ($it['kind'] ?? '') {
+            case 'mcq': if (strpos((string) ($it['q'] ?? ''), '___') !== false) return ''; /* the sentence is in the stem: the wording is the task */ $w = array_map('mb_strtolower', (array) ($it['wrong'] ?? [])); sort($w); $c = mb_strtolower((string) ($it['correct'] ?? '')) . '#' . implode('|', $w); break;
+            case 'order': $c = mb_strtolower((string) ($it['sentence'] ?? '')); break;
+            case 'match': $c = mb_strtolower(json_encode($it['pairs'] ?? [], JSON_UNESCAPED_UNICODE)); break;
+            default: return '';
+        }
+        return $it['skill'] . '|' . $it['level'] . '|' . $it['kind'] . '|' . $c;
     }
 
     private static function range(array $levels): string

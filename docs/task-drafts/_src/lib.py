@@ -28,16 +28,34 @@ def gp(t, lv, b, q, ok, why, lvw, bank=None): rows.append([t, lv, "gap", q, ok, 
 def tx(t, lv, b, q, ok, why, lvw): rows.append([t, lv, "text", q, " | ".join(ok) if isinstance(ok, (list, tuple)) else ok, "", why, lvw, b])
 def od(t, lv, b, q, ok, why, lvw, also=None): rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])
 def mt(t, lv, b, q, pairs, why, lvw): rows.append([t, lv, "match", q, " ; ".join(f"{a} = {c}" for a, c in pairs), "", why, lvw, b])
+def plain(task, typ):
+    """Instructions stay plain: no setting in front of a question ("At work: which sentence is NOT correct?"), no hint after a word-order
+    instruction, no topic after a matching instruction. The sentence, options and tiles carry the content."""
+    t = task.strip()
+    if typ == "mcq":
+        m = re.match(r"^[^:?.]{2,45}: (which .*)$", t, re.I)
+        if m: return m.group(1)[0].upper() + m.group(1)[1:]
+        if re.match(r"^.* writes: '.*' Choose the correct option\.$", t): return "Which sentence is correct?"
+    if typ == "order" and t.startswith("Put the words in order."): return "Put the words in order."
+    if typ == "match":
+        m = re.match(r"^(Match each beginning with its ending)[:.].*$", t)
+        if m: return m.group(1) + "."
+    return t
+
+
 def save(name):
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
-        for r in rows: w.writerow(r[:7] + [lv_fix(r[7])] + r[8:])
+        for r in rows: w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:])
     print(name, len(rows), "rows")
 
 
 # ───────── compact builders for the big batches ─────────
 LVMAP = {
+    "After *did* the verb is in the base form: *stay*.": "Pēc *did* darbības vārds ir pamatformā: *stay*.",
+    "*The children* = *they*, so *were*.": "*The children* = *they*, tāpēc *were*.",
+    "*The guests* = *they*, so *were*.": "*The guests* = *they*, tāpēc *were*.",
     "*We* goes with *were*, not *was*.": "*We* lieto ar *were*, nevis *was*.",
     "*Wasn't listening* = she was not in the middle of listening.": "*Wasn't listening* = viņa tobrīd neklausījās.",
     "With *last week* (a finished time) we use the past simple.": "Ar *last week* (pabeigts laiks) lieto Past Simple.",

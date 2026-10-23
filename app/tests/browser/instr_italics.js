@@ -7,7 +7,9 @@ let ok = true; const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PA
   const f = s => p.evaluate(x => UI.markForms(x), s);
   const cases = [
     ["Make it negative with don't have to", "Make it negative with *don't have to*"],
-    ["Complete with have to or has to", "Complete with *have to or has to*"],
+    ["Complete with have to or has to", "Complete with *have to* or *has to*"],
+    ["Write one sentence with older and than:", "Write one sentence with *older* and *than*:"],
+    ["Rewrite with not as ... as:", "Rewrite with *not as ... as*:"],
     ["Make a question with How long", "Make a question with *How long*"],
     ["Make it negative and use 'any'", "Make it negative and use *any*"],
     ["Rewrite with as ... as", "Rewrite with *as ... as*"],

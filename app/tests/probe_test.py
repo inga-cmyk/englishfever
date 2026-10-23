@@ -92,11 +92,48 @@ s = c.api("session/start", {"mode": "practice", "skills": ["present_simple"], "l
 r = ans(s["session"]["id"], ITEMS[s["item"]["id"]], False)
 from_db = db.execute("SELECT COUNT(1) FROM attempts WHERE user_id = ?", (uid,)).fetchone()[0]
 
+# 3b. the same in "Surprise me" and in a session chosen by level (the picker)
+for label, body in (("Surprise me", {"mode": "smart", "length": 10}), ("level picker", {"mode": "practice", "skills": ["present_simple", "past_simple"], "levels": ["A2"], "length": 10})):
+    cc = login(9300 + len(label), "Probe " + label)
+    st = cc.api("session/start", body); sid, item, seq = st["session"]["id"], st["item"], []
+    while item:
+        it = ITEMS[item["id"]]
+        r = cc.api("session/answer", {"session_id": sid, "item_id": it["id"], "answer": correct(it) if seq else wrong(it), "time_ms": 1000})
+        seq.append(it)
+        if r["done"]: break
+        item = r["next"]
+    pos = [i for i, it in enumerate(seq) if i > 0 and sim(seq[0], it)]
+    check(label + ": a miss brings back a similar task within 3 questions", pos and pos[0] <= 3, pos)
+
 # 4. no probes in Second Chance or the placement test
 c = login(9205, "Probe Five")
 pl = c.api("session/start", {"mode": "placement", "length": 12}); it = ITEMS[pl["item"]["id"]]
 r = c.api("session/answer", {"session_id": pl["session"]["id"], "item_id": it["id"], "answer": wrong(it), "time_ms": 1000})
 check("the placement test has no probes or gap flags", r["result"]["gap"] is False and r["result"]["locked"] is False)
+
+# 4b. Second Chance: a task that stood for a mistake is missed again = a gap, with more tasks of that kind next
+c = login(9208, "Probe Six")
+pr = c.api("session/start", {"mode": "practice", "skills": ["past_simple"], "level": "A2.2", "length": 10})
+it = ITEMS[pr["item"]["id"]]
+c.api("session/answer", {"session_id": pr["session"]["id"], "item_id": it["id"], "answer": wrong(it), "time_ms": 1000})   # one mistake
+c.api("session/quit", {"session_id": pr["session"]["id"]})
+cb = c.api("session/start", {"mode": "comeback"})
+check("Second Chance starts", cb["_status"] == 200, cb)
+n0 = cb["session"]["length"]; sid = cb["session"]["id"]; item = cb["item"]; flags = []; ids = []; i = 0
+while item:
+    it = ITEMS[item["id"]] if item["id"] in ITEMS else None
+    ids.append(item["id"])
+    right = i != 0                                   # the first one is missed again
+    ans = correct(it) if right else wrong(it)
+    a = c.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": ans, "time_ms": 1000})
+    flags.append((i, a["result"]["gap"], a["session"]["length"]))
+    i += 1
+    if a["done"]: break
+    item = a["next"]
+check("the first Second Chance task answered wrongly is a gap", flags[0][1] is True, flags[:2])
+check("the session grew by one or two similar tasks (not more)", 1 <= flags[0][2] - n0 <= 2 and i == flags[0][2], (n0, flags[0][2], i))
+check("all Second Chance tasks are different", len(set(ids)) == len(ids), ids)
+check("right answers afterwards are not gaps", not any(f[1] for f in flags[1:]))
 
 # 5. the teacher can read the numbers (and nobody else can)
 t = login(9206, "Probe Teacher", True)

@@ -116,7 +116,7 @@ check("answering wrong in Comeback fixes nothing and keeps the mistakes", done["
 db = sqlite3.connect(DB)
 uid = db.execute("select id from users where provider='wp' and external_id=?", (str(UID),)).fetchone()[0]
 n_att = db.execute("select count(*) from attempts where user_id=?", (uid,)).fetchone()[0]
-check("all answers are stored as they were (6 + 6 + 5 + 5)", n_att == 22, n_att)
+check("all answers are stored as they were (6 + 6 + 5 + 5, and 4 extra tasks that missed Second Chance tasks brought)", n_att == 26, n_att)
 
 # ---- practising a topic brings back a missed task (never right after the mistake) and fresh tasks first
 c2 = login(9900 + int(time.time()) % 90, "Variety Tester")

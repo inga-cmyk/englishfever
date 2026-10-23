@@ -174,6 +174,7 @@ final class Engine
         }
         if ($fixedNow) $st['fixed'] = ($st['fixed'] ?? 0) + 1;
         $gapNow = self::probeAnswered($st, $itemId, $ok, $ses);
+        if (!empty($st['comeback'])) $gapNow = self::comebackGap($st, $ses, $itemId, $ok) || $gapNow;
 
         if (!$ok && $ses['mode'] === 'practice' && empty($st['comeback'])) self::probeSchedule($st, $itemId, count($st['served']), (int) $ses['target_len']);
         $ses['n']++;
@@ -328,7 +329,7 @@ final class Engine
     private static function save(array $ses): void
     {
         Db::update('psessions', [
-            'n' => $ses['n'], 'n_correct' => $ses['n_correct'], 'xp' => $ses['xp'],
+            'n' => $ses['n'], 'n_correct' => $ses['n_correct'], 'xp' => $ses['xp'], 'target_len' => $ses['target_len'],
             'state' => json_encode($ses['state']), 'ended_at' => $ses['ended_at'],
         ], 'id = ?', [$ses['id']]);
     }
@@ -359,6 +360,7 @@ final class Engine
             // each task answers one open mistake: a similar task if there is one, else the task itself
             $mid = $st['queue'][$count] ?? null;
             if ($mid === null) return null;
+            if (!empty($st['queue_extra'][$mid])) return Content::item($mid);   // a task added after a gap: already a similar task
             // never another open mistake as the "similar task": it would fix itself and leave the one it stood for
             $open = array_fill_keys(array_keys(Mistakes::scan((int) $ses['user_id'])['open']), true);
             return Mistakes::twin((int) $ses['user_id'], $mid, $served + $open) ?? Content::item($mid);
@@ -511,6 +513,38 @@ final class Engine
         }
         if ($best && isset($missed[$best['id']])) $ses['state']['returned'] = ($st['returned'] ?? []) + [$best['id'] => 1];
         return $best;
+    }
+
+    /**
+     * Second Chance: a task that stood for a mistake is missed again = a gap. Up to two more tasks of that kind, from other angles, are
+     * put next in the session (at most four extra tasks per session), so the session grows by those tasks. Returns true for a gap.
+     */
+    private static function comebackGap(array &$st, array &$ses, string $itemId, bool $ok): bool
+    {
+        $idx = count($st['served']) - 1;
+        $for = $st['queue'][$idx] ?? null;
+        if ($for === null) return false;
+        if (!empty($st['queue_extra'][$for])) {   // an extra task: only noted for the evidence
+            $st['probe_log'][] = ['for' => $st['queue_extra'][$for], 'item' => $itemId, 'stage' => 2, 'ok' => $ok];
+            return false;
+        }
+        $st['probe_log'][] = ['for' => $for, 'item' => $itemId, 'stage' => 1, 'ok' => $ok];
+        if ($ok) return false;
+        $room = 4 - count($st['queue_extra'] ?? []);
+        if ($room < 1) return true;
+        $uid = (int) $ses['user_id'];
+        $skip = array_flip($st['served']) + array_fill_keys(array_keys(Mistakes::scan($uid)['open']), true) + array_fill_keys($st['queue'], true);
+        $add = [];
+        for ($k = 0; $k < min(2, $room); $k++) {
+            $t = Mistakes::twin($uid, $for, $skip, true, $st['levels'] ?? null);
+            if (!$t) break;
+            $skip[$t['id']] = true; $add[] = $t['id']; $st['queue_extra'][$t['id']] = $for;
+        }
+        if ($add) {
+            array_splice($st['queue'], $idx + 1, 0, $add);
+            $ses['target_len'] += count($add);
+        }
+        return true;
     }
 
     /** A wrong answer in practice: ask a task of the same kind again after one or two others (not more than a third of the session, two waiting at most). */

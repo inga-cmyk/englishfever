@@ -418,6 +418,8 @@
             comebackButton('btn small fn-chance', 'Start'))));
       }
       if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
+      var pu = d.pulse;   // a number of people only when it is a company, never "1"
+      if (pu && (pu.now >= 3 || pu.today >= 3)) nodes.push(h('p', { class: 'small muted homepulse' }, pu.now >= 3 ? pu.now + ' learning with you now' : pu.today + ' showed up today'));
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);
 

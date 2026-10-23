@@ -103,6 +103,21 @@ final class Stats
         return $out;
     }
 
+    /**
+     * How many learners are practising: "now" = answered a question in the last 10 minutes, "today" = answered one today (Riga calendar day).
+     * Learners and guests, never teachers; only counts, kept for a minute.
+     */
+    public static function pulse(): array
+    {
+        $c = json_decode((string) Db::kvGet('pulse'), true);
+        $today = self::today();
+        if (is_array($c) && $c['day'] === $today && time() - (int) $c['at'] < 60) return ['now' => (int) $c['now'], 'today' => (int) $c['today']];
+        $now = (int) Db::val("SELECT COUNT(DISTINCT a.user_id) FROM attempts a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND a.created_at > ?", [time() - 600]);
+        $day = (int) Db::val("SELECT COUNT(DISTINCT a.user_id) FROM activity a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND a.day = ? AND a.answers > 0", [$today]);
+        Db::kvSet('pulse', json_encode(['at' => time(), 'day' => $today, 'now' => $now, 'today' => $day]));
+        return ['now' => $now, 'today' => $day];
+    }
+
     public static function dashboard(int $uid): array
     {
         $today = self::today();
@@ -131,6 +146,7 @@ final class Stats
             'skills' => self::skillRows($uid),
             'bloom' => self::bloomRows($uid),
             'placement' => $placement,
+            'pulse' => self::pulse(),
             'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed']]; })(),
         ];
     }

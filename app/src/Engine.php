@@ -622,6 +622,8 @@ final class Engine
             $se = 1 / sqrt($info + 1 / 9);
             $out['sure'] = $se < 0.32 ? 'high' : ($se < 0.46 ? 'good' : 'rough');
             $out['open_after'] = count(Mistakes::scan((int) $ses['user_id'])['open']);
+            $pl = $ses['state']['pl'] ?? null;
+            $out['basics'] = $pl && ($pl['ceiling'] ?? null) === $pl['ladder'][0];   // failed even the first level: start with its basics
             $out['gaps'] = $gaps;
             $untested = [];
             foreach (Content::meta()['skills'] as $s) {

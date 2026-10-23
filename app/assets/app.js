@@ -1109,9 +1109,14 @@
       h('p', null, s.correct + ' of ' + s.n + ' correct.', (s.ladder && s.ladder.length) ? ' ' + s.ladder.map(function (l) { return l.level + ' ' + l.correct + '/' + l.n; }).join(' · ') : ''),
       (s.sure === 'rough' && s.n < 20) ? h('p', { class: 'small muted' }, 'A short test gives a rough level. The Full test is more exact.') : h('p', { class: 'small muted' }, 'A guide, not an exam grade.'),
       s.overall_level === 'C1.2' ? h('p', { class: 'small muted' }, 'This is the top level in the app.') : null,
-      s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
+      (s.overall_level === 'A2.1' && !s.basics) ? h('p', { class: 'small muted' }, 'A2 is the first level here. Ask your teacher about easier material.') : null));
     var ng = s.gaps.length;
-    if (ng) {
+    if (s.basics) nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
+      h('div', null, h('h2', { style: 'margin:0 0 4px' }, 'Start with A2 basics'), h('div', { class: 'small muted' }, 'Build the foundations first.')),
+      h('button', { class: 'btn', onclick: function () { state.prefill = { skills: [], level: 'A2.1' }; location.hash = '#/practice'; } }, 'Practise A2'))));
+    if (s.basics) {
+      // the basics card above says it all: no list of topics
+    } else if (ng) {
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, ng === 1 ? 'Start with this topic' : 'Start with these ' + ng + ' topics'),
         h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
           return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),

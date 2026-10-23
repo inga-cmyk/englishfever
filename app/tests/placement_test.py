@@ -30,6 +30,7 @@ check("a block uses different topics", all(len({i["skill"] for i in seen[k:k + 3
 check("strong learner is placed at B2 or C1", s["overall_level"][:2] in ("B2", "C1"), s["overall_level"])
 check("summary has the level ladder", [l["level"] for l in s["ladder"]] == ["A2", "B1", "B2", "C1"] and all(l["correct"] == l["n"] == 3 for l in s["ladder"]), s["ladder"])
 check("no gaps when nothing was missed", s["gaps"] == [], s["gaps"])
+check("a strong learner gets no basics message", s["basics"] is False, s.get("basics"))
 check("confidence is reported", s["sure"] in ("rough", "good", "high"), s["sure"])
 
 # a learner who misses everything: a second block at the same level, then fine-tuning
@@ -40,6 +41,7 @@ check("after a failed block there is another block at the same level (6 at A2)",
 check("weak learner is placed at A2.1", s["overall_level"] == "A2.1", s["overall_level"])
 check("ceiling reached: no climbing above B1 for someone who misses all", all(FULL(i) in ("A2", "B1") for i in seen[6:]), [FULL(i) for i in seen])
 check("gaps are found, at most 3, with a level", 1 <= len(s["gaps"]) <= 3 and all(g["level"] in ("A2", "B1") for g in s["gaps"]), s["gaps"])
+check("failing the first level twice gives the A2 basics message", s["basics"] is True, s.get("basics"))
 check("mistakes are left for Second Chance", s["open_after"] > 0, s.get("open_after"))
 
 # 2 of 3 right moves up; 1 of 3 gives a second block whose misses come back as the same topics

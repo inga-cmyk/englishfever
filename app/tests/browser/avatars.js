@@ -22,7 +22,7 @@ const tok = (uid, name, teacher) => { const x = Buffer.from(JSON.stringify({ uid
   await main.screenshot({ path: __dirname + '/shots/69-profile-collapsed.png', fullPage: true });
   await main.click('button:has-text("Change")');
   check('Change opens it', await main.locator('.avpanel').isVisible() && (await main.locator('button:has-text("Close")').getAttribute('aria-expanded')) === 'true');
-  check('it offers characters and symbols', (await main.locator('.avpanel .avopt').count()) === 10 + 9 + 8 + 1);
+  check('it offers Halloween, people, characters and symbols', (await main.locator('.avpanel .avopt').count()) === 8 + 10 + 9 + 8 + 1);
   await main.click('.avopt[aria-label="Captain"]'); await main.click('.avcolor[aria-label="Plum"]');
   await main.screenshot({ path: __dirname + '/shots/70-profile-avatar.png', fullPage: true });
   await main.click('.avpanel button:has-text("Save")'); await main.waitForSelector('.toast');

@@ -1286,7 +1286,7 @@
     }
     function drawPanel() {
       panel.replaceChildren(
-        group('People', UI.AV_PEOPLE), group('Characters', UI.AV_FUN), group('Symbols', UI.AV_GLYPHS.concat(['initial'])),
+        group('Halloween', UI.AV_HALLOWEEN), group('People', UI.AV_PEOPLE), group('Characters', UI.AV_FUN), group('Symbols', UI.AV_GLYPHS.concat(['initial'])),
         h('div', { class: 'avgroup' }, h('div', { class: 'label' }, 'Background'),
           h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Background colour' }, UI.AV_COLORS.map(function (c) {
             return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; drawPanel(); } });

@@ -125,7 +125,7 @@ final class Auth
     }
 
     public const AVATAR_GLYPHS = ['flame', 'spark', 'bolt', 'sun', 'thermo', 'wave', 'comet', 'leaf'];
-    public const AVATAR_CHARS = ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan', 'nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'fox', 'ember'];
+    public const AVATAR_CHARS = ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan', 'nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'fox', 'ember', 'pumpkin', 'ghost', 'witch', 'vampire', 'mummy', 'skeleton', 'blackcat', 'bat'];
     public const AVATAR_COLORS = ['raspberry', 'gold', 'ink', 'cream', 'plum', 'sand'];
 
     /** Avatars are a fixed list (picture-colour). Nobody can upload a picture or inject markup. "initial" = first letter of the name. */

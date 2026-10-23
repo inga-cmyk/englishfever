@@ -154,7 +154,7 @@
       if (!state.user || document.visibilityState !== 'visible' || now - state.lastInteraction > 60000 || secs < 1) return;
       state.todaySeconds += secs;
       renderChips();
-      api('heartbeat', { seconds: secs }).catch(function () {});
+      api('heartbeat', { seconds: secs }).then(function (r) { if (r && r.pulse) { state.pulse = r.pulse; renderChips(); } }).catch(function () {});
     }, 10000);
   }
 
@@ -185,18 +185,27 @@
     renderChips();
   }
 
+  /** Company in the top bar, next to the streak: a green dot and a number = learning now; the people icon and a number = showed up today (while fewer than 3 are online). Never for fewer than 3. */
+  function pulseChip() {
+    var pu = state.pulse;
+    if (!pu || !(pu.now >= 3 || pu.today >= 3)) return null;
+    var live = pu.now >= 3, num = live ? pu.now : pu.today, tip = live ? 'learning now' : 'showed up today';
+    return h('span', { class: 'chip-top chip-pulse', title: num + ' ' + tip, 'aria-label': num + ' ' + tip }, live ? h('i', { class: 'pulse-dot', 'aria-hidden': 'true' }) : icon('users'), String(num));
+  }
+
   function renderChips() {
     var c = document.getElementById('chips');
     if (!c || !state.user || state.user.role === 'teacher') return;
     c.replaceChildren(
       state.user.guest ? h('button', { class: 'chip-top', style: 'background:none;cursor:pointer', title: 'Guest: results are not saved', onclick: function () { guestInvite(true); } }, 'Guest', h('span', { class: 'chip-more' }, ' · save progress')) : null,
-      feat('streak') ? h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), ' day' + (state.streak === 1 ? '' : 's')) : null,
+      feat('streak') ? h('span', { class: 'chip-top', title: 'Daily streak' }, icon('flame'), String(state.streak), h('span', { class: 'chip-unit' }, ' day' + (state.streak === 1 ? '' : 's'))) : null,
+      pulseChip(),
       h('span', { class: 'chip-top hide-m', title: 'Time practised today' }, icon('clock'), UI.fmtDuration(state.todaySeconds)));
   }
 
   function refreshDash() {
     return api('dashboard').then(function (d) {
-      state.dash = d; state.todaySeconds = d.today.seconds; state.streak = d.streak.current;
+      state.dash = d; state.todaySeconds = d.today.seconds; state.streak = d.streak.current; state.pulse = d.pulse || state.pulse;
       renderChips();
       return d;
     });
@@ -298,8 +307,8 @@
     var create = cfg.register_url ? registerLink(pending ? 'btn ghost small' : 'btn small', 'Create account') : null;
     var signin = cfg.sso ? h('a', { class: (pending || !cfg.register_url) ? 'btn small' : 'btn ghost small', href: cfg.wp_login_url }, 'Sign in') : null;
     return h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, pending ? 'Account created?' : 'Practising as a guest'),
-        h('div', { class: 'small muted' }, pending ? 'Confirm the email we sent you, then sign in.' : 'Create a free account to keep your results.')),
+      pending ? h('div', null, h('b', { style: 'color:var(--text)' }, 'Account created?'), h('div', { class: 'small muted' }, 'Confirm the email we sent you, then sign in.'))
+        : h('div', { style: 'color:var(--text)' }, 'Create a free account to keep your results.'),
       h('div', { class: 'row' }, pending ? [signin, create] : [create, signin]));
   }
 
@@ -387,7 +396,7 @@
       nodes.push(h('div', { class: 'hello' },
         h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 48),
           h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
-            h('p', { class: 'muted' }, !started ? 'Short grammar questions that adapt to you.' : d.streak.today_done ? 'You practised today. Nice work!'
+            !started ? null : h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!'
               : (!feat('streak') ? 'Answer a few questions today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Answer one question today to start a streak.')))))));
 
       // the one thing to do now
@@ -417,13 +426,7 @@
               h('div', { class: 'small muted' }, plural(cb.open, 'mistake', 'mistakes') + ' to fix.')),
             comebackButton('btn small fn-chance', 'Start'))));
       }
-      // one quiet line: your numbers on the left, company on the right as a number and a symbol (a green dot = learning now, the people icon = showed up today; never for fewer than 3)
-      var pu = d.pulse, pulse = null;
-      if (pu && (pu.now >= 3 || pu.today >= 3)) {
-        var live = pu.now >= 3, num = live ? pu.now : pu.today, tip = live ? 'learning now' : 'showed up today';
-        pulse = h('span', { class: 'pulse-pill', title: num + ' ' + tip, 'aria-label': num + ' ' + tip }, live ? h('i', { class: 'pulse-dot', 'aria-hidden': 'true' }) : icon('users'), String(num));
-      }
-      if (started || pulse) nodes.push(h('div', { class: 'homestat row between' }, h('span', { class: 'small muted' }, started ? d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall') : ''), pulse));
+      if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);
 

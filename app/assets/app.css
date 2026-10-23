@@ -322,6 +322,9 @@ h1[tabindex="-1"]:focus, main:focus { outline: none; }
   .chip-more, .brand-sub { display: none; }
   .topbar-in { gap: 10px; padding: 0 12px; }
   .chip-top { padding: 5px 9px; font-size: .82rem; }
+  .chips { gap: 6px; }
+  .chip-unit { display: none; }   /* the flame and the number are enough on a phone */
+  .chip-pulse { border: 0; padding: 5px 0; }   /* on a phone the number and its symbol stand without a frame */
 }
 
 /* avatars */
@@ -488,8 +491,6 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .lvseg input[disabled] + span { background: transparent; }
 .picker-group h3 { margin: 14px 0 8px; }
 
-/* company on Home: a number with a symbol */
-.homestat.row { align-items: center; min-height: 26px; }
-.pulse-pill { display: inline-flex; align-items: center; gap: 7px; font-weight: 700; font-size: .95rem; color: var(--text); padding: 4px 11px; border-radius: 999px; background: var(--good-bg); }
-.pulse-pill svg { width: 16px; height: 16px; }
-.pulse-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 3px rgba(46,125,91,.22); }
+/* company in the top bar: a number with a symbol, next to the streak */
+.chip-pulse { font-weight: 700; }
+.pulse-dot { width: 9px; height: 9px; border-radius: 50%; background: #4FD08A; box-shadow: 0 0 0 3px rgba(79,208,138,.25); }

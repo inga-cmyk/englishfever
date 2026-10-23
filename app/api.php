@@ -125,7 +125,7 @@ try {
             $_SESSION['last_hb'] = $now;
             if ($credit > 0 && (int) $u['track_time'] === 1) Stats::addActivity((int) $u['id'], $credit, 0, 0); // opted-out learners: time is not recorded
             Wp::afterResponse((int) $u['id'], false);
-            out(['ok' => true]);
+            out(['ok' => true, 'pulse' => Stats::pulse()]);
 
         case 'session/start':
             $u = Auth::require();

@@ -24,4 +24,6 @@ _c = sqlite3.connect(os.path.join(APP, "var", "ef.sqlite")); _c.execute("DELETE 
 quiet = b.api("dashboard")["pulse"]   # b has not answered
 check("learners and guests count, a teacher does not (2, not 3); someone who only looks is not counted", quiet["now"] == 2 and quiet["today"] == 2, quiet)
 check("the count carries no names", set(quiet) == {"now", "today"})
+hb = a.api("heartbeat", {"seconds": 5})
+check("the heartbeat carries the count too (it feeds the top bar)", set(hb.get("pulse", {})) == {"now", "today"}, hb)
 print("ALL PASS" if ok else "SOME FAILED"); sys.exit(0 if ok else 1)

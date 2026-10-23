@@ -111,7 +111,7 @@ const OUT = __dirname + '/shots/';
   await noJunk(page,'10-summary'); await page.screenshot({ path: OUT + '10-summary.png', fullPage: true });
 
   await page.goto(BASE + '/index.html#/home'); await page.waitForSelector('.card.focus'); await page.waitForTimeout(300);
-  if (!(await page.locator('text=Practising as a guest').count())) errors.push('guest banner missing on home');
+  if (!(await page.locator('text=Create a free account to keep your results').count())) errors.push('guest banner missing on home');
   await noJunk(page,'11-home-active'); await page.screenshot({ path: OUT + '11-home-active.png', fullPage: true });
   await page.goto(BASE + '/index.html#/leaderboard'); await page.waitForSelector('text=Guests are not ranked'); await noJunk(page,'12-leaderboard'); await page.screenshot({ path: OUT + '12-leaderboard.png', fullPage: true });
   await page.goto(BASE + '/index.html#/profile'); await page.waitForSelector('#pn'); await noJunk(page,'13-profile'); await page.screenshot({ path: OUT + '13-profile.png', fullPage: true });

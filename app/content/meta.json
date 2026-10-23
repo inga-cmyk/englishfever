@@ -23,6 +23,10 @@
    "label": "Modal verbs"
   },
   {
+   "id": "comparing",
+   "label": "Comparing things"
+  },
+  {
    "id": "conditionals",
    "label": "Conditionals"
   },
@@ -529,9 +533,9 @@
     "use": [
      "*can*: ability (*I can swim*) and permission (*Can I sit here?*).",
      "*should*: advice (*You should see a doctor*).",
-     "*must*: a strong duty that comes from the speaker, or a written rule (*I must call my mum. Visitors must sign in*).",
-     "*have to*: a duty that comes from outside: work, school, the law (*I have to wear a uniform at work*). In speech, *have to* is more common.",
-     "*mustn't* = not allowed. *don't have to* = not necessary. *must* has no past or future: use *had to / will have to*."
+     "*must / have to*: it is necessary, a rule or a duty (*You must wear a seat belt. I have to wear a uniform at work*). Often both are possible.",
+     "*mustn't* = not allowed. *don't have to* = not necessary (*You mustn't park here. You don't have to pay*).",
+     "*must* has no past or future: use *had to / will have to* (*I had to work late. We will have to leave early*)."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability*",
     "example": "*You must wear a seat belt, but you don't have to wear a hat.*"
@@ -546,11 +550,55 @@
     "use": [
      "*can*: spēja (*I can swim*) un atļauja (*Can I sit here*?).",
      "*should*: padoms (*You should see a doctor*).",
-     "*must*: *stipra* pienākuma sajūta no paša runātāja vai rakstīts *noteikums* (*I must call my mum.* *Visitors must sign in*).",
-     "*have to*: pienākums no ārpuses: darbs, *skola, likums* (*I have to wear a uniform at work*). Runā biežāk lieto *have to*.",
-     "*mustn't = aizliegts*. *don't have to* = nav obligāti. *must* nav pagātnes *ne* nākotnes formas: lieto *had to / will have to*."
+     "*must / have to*: tas ir nepieciešams, *noteikums* vai pienākums (*You must wear a seat belt.* *I have to wear a uniform at work*). Bieži der abi.",
+     "*mustn't = aizliegts*. *don't have to* = nav obligāti (*You mustn't park here.* *You don't have to pay*).",
+     "*must* nav pagātnes *ne* nākotnes formas: lieto *had to / will have to* (*I had to work late.* *We will have to leave early*)."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)"
+   }
+  },
+  {
+   "id": "comparison",
+   "label": "Comparison: -er, more, the most, as ... as",
+   "area": "comparing",
+   "levels": [
+    "A2.1",
+    "A2.2",
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "*Short adjectives*: adjective + *-er* + *than* (*Rachel is taller than Tom*). Superlative: *the* + adjective + *-est* (*the tallest*).",
+     "Spelling: *big - bigger - the biggest*; *nice - nicer - the nicest*; *heavy - heavier - the heaviest*.",
+     "Longer adjectives (two or more syllables): *more / the most* + adjective (*more expensive than, the most expensive*).",
+     "Irregular: *good - better - the best*; *bad - worse - the worst*; *far - further - the furthest*.",
+     "*as* + adjective + *as* = equal (*My phone is as fast as yours*). *not as ... as* = less (*This bag is not as heavy as that one*)."
+    ],
+    "use": [
+     "Comparative: compare two things or people. Superlative: one thing compared with all the others in a group (*the tallest student in the class*).",
+     "After a superlative we use *in* + place or group: *the biggest city in the country*.",
+     "*the same as, similar to, different from*: *It is the same colour as mine.*",
+     "*much / a lot / a bit / slightly* + comparative says how big the difference is (*much cheaper, a bit colder*). *less ... than* and *the least* say the opposite of *more ... than* and *the most*."
+    ],
+    "signals": "*than, as ... as, the ... -est, in, much, a bit, the same as*",
+    "example": "*This bike is cheaper than that one, but it is not as fast as mine.*"
+   },
+   "rule_lv": {
+    "form": [
+     "Īsie īpašības vārdi: īpašības vārds + *-er + than* (*Rachel is taller than Tom*). Vispārākā pakāpe: *the* + īpašības vārds + *-est* (*the tallest*).",
+     "Pareizrakstība: *big - bigger - the biggest; nice - nicer - the nicest; heavy - heavier - the heaviest*.",
+     "*Garie* īpašības vārdi (divas vai vairāk *zilbes*): *more / the most* + īpašības vārds (*more expensive than, the most expensive*).",
+     "Neregulārie: *good - better - the best; bad - worse - the worst; far - further - the furthest*.",
+     "*as* + īpašības vārds + *as* = vienāds (*My phone is as fast as yours*). *not as* ... *as* = mazāk (*This bag is not as heavy as that one*)."
+    ],
+    "use": [
+     "Pārākā pakāpe: salīdzina divus cilvēkus vai *lietas*. Vispārākā pakāpe: *viens* salīdzināts ar *visiem* pārējiem grupā (*the tallest student in the class*).",
+     "Aiz vispārākās pakāpes lieto *in + vieta* vai *grupa*: *the biggest city in the country*.",
+     "*the same as, similar to, different from*: *It is the same colour as mine.*",
+     "*much / a lot / a bit / slightly* + pārākā pakāpe parāda, cik *liela* ir atšķirība (*much cheaper, a bit colder*). *less* ... *than* un *the least* ir pretējs *more* ... *than* un *the most*."
+    ],
+    "signals": "*than, as* ... *as, the* ... *-est, in, much, a bit, the same as* (nekā, *tikpat* ... kā, visā, *daudz, mazliet*, tāds *pats* kā)"
    }
   },
   {

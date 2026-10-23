@@ -1,0 +1,77 @@
+from lib import *
+# B1 layer: longer sentences (10-16 words), two clauses, no clue word, the tense is chosen by meaning.
+T="Present simple"
+mc(T,"B1.1",3,"Choose the best option: The timetable says our train ___ at 7.10, so we need to leave home by 6.30.","leaves",["is leaving","left","has left"],"The present simple is used for timetables: *the train leaves*.","Vienkāršo tagadni lieto saraksta laikiem: *the train leaves*.")
+mc(T,"B1.1",3,"Choose the correct option: Whenever my sister ___ a difficult email, she asks a colleague to check it before she sends it.","writes",["is writing","wrote","has written"],"*Whenever* shows a habit: present simple.","*Whenever* parāda ieradumu: vienkāršā tagadne.")
+gp(T,"B1.1",3,"My cousin ___ in a bank, but at the weekend he ___ as a volunteer at the zoo. (work / help)","works / helps","Regular habits and jobs: present simple with *-s*.","Regulāri ieradumi un darbs: vienkāršā tagadne ar *-s*.")
+mc(T,"B1.1",4,"About habits: which sentence is NOT correct?","She is always check her messages before she gets out of bed.",["She always checks her messages before she gets out of bed.","She doesn't usually check her messages at work.","Does she check her messages every hour?"],"A habit needs the present simple: *she always checks*.","Ieradumam vajag vienkāršo tagadni: *she always checks*.")
+T="Present continuous"
+mc(T,"B1.1",3,"Choose the correct option: Please be quiet. The manager ___ an important call and he does not want to be disturbed.","is having",["has","had","will have"],"An action in progress now: *is having*.","Darbība, kas norit tagad: *is having*.")
+mc(T,"B1.1",3,"Choose the correct option: More and more people ___ electric cars because petrol is getting so expensive.","are buying",["buy","bought","have buy"],"A trend that is happening now: present continuous.","Tendence, kas notiek tagad: tagadnes ilgstošā forma.")
+gp(T,"B1.1",3,"Why ___ you ___ so much coffee this week? You usually only drink tea. (drink)","are / drinking","A temporary change: *are you drinking*.","Pagaidu pārmaiņa: *are you drinking*.")
+mc(T,"B1.1",4,"At work: which sentence is NOT correct?","I am knowing the answer, but I don't want to say it yet.",["I know the answer, but I don't want to say it yet.","I'm thinking about the answer at the moment.","She is waiting for the right moment to speak."],"*Know* is a state verb: *I know*.","*Know* ir stāvokļa darbības vārds: *I know*.")
+T="Past simple"
+mc(T,"B1.1",3,"Choose the correct option: We arrived at the station at ten past nine, but the train ___ at nine, so we had to wait for the next one.","left",["leaves","has left","was leaving"],"A finished event in the past: *left*.","Pabeigts notikums pagātnē: *left*.")
+gp(T,"B1.1",3,"She ___ the door, ___ her coat and ___ out into the rain. (open / take / walk)","opened / took / walked","Events one after the other: past simple.","Notikumi cits pēc cita: vienkāršā pagātne.")
+tx(T,"B1.1",5,"Join the sentences with because: I stayed at home. I felt ill.",["I stayed at home because I felt ill.","Because I felt ill, I stayed at home."],"*Because* gives the reason: *I stayed at home because I felt ill.*","*Because* dod iemeslu: *I stayed at home because I felt ill.*")
+mc(T,"B1.2",3,"Choose the correct option: When I was a child, we ___ to the seaside every summer, but now we prefer the mountains.","used to go",["use to go","were used to go","are used to go"],"*Used to* + base verb = a past habit that has stopped.","*Used to* + pamatforma = pagātnes ieradums, kas beidzies.")
+mc(T,"B1.2",4,"About childhood: which sentence is NOT correct?","We didn't used to have a car when I was young.",["We didn't use to have a car when I was young.","We used to walk to school every day.","Did you use to live near the sea?"],"After *didn't* we use *use to*, not *used to*.","Pēc *didn't* lieto *use to*, nevis *used to*.")
+T="Past continuous"
+mc(T,"B1.1",3,"Choose the correct option: The phone rang while we ___ dinner, so I let it ring.","were having",["had","have","was having"],"An action in progress when another happened: *were having*.","Darbība, kas norisinājās, kad notika cita: *were having*.")
+gp(T,"B1.1",3,"I ___ along the beach when I found an old coin in the sand. (walk)","was walking","The longer action: past continuous.","Garākā darbība: pagātnes ilgstošā forma.")
+mc(T,"B1.2",3,"Choose the correct option: What ___ when the fire alarm went off?","were you doing",["did you do","are you doing","have you done"],"Ask about the action in progress: *were you doing*.","Jautā par darbību, kas norisinājās: *were you doing*.")
+tx(T,"B1.2",5,"Join with while: I was cooking. My brother was setting the table.",["While I was cooking, my brother was setting the table.","My brother was setting the table while I was cooking."],"Two actions at the same time: *while* + past continuous.","Divas darbības vienlaikus: *while* + pagātnes ilgstošā forma.")
+T="Present perfect"
+mc(T,"B1.1",3,"Choose the correct option: I ___ in this flat for six years, and I still love the view from the balcony.","have lived",["lived","live","am living"],"Started in the past and still true: *have lived* + *for*.","Sākās pagātnē un joprojām ir patiesi: *have lived* + *for*.")
+gp(T,"B1.1",3,"Sorry, I can't find the report. I think I ___ it on the train. (leave)","have left","A past action with a result now: present perfect.","Pagātnes darbība ar rezultātu tagad: *present perfect*.")
+mc(T,"B1.2",4,"About work: which sentence is NOT correct?","I have finished my degree in 2019.",["I finished my degree in 2019.","I have finished my degree, so now I'm looking for a job.","She has worked here since 2019."],"With a finished time (*in 2019*) we use the past simple.","Ar pabeigtu laiku (*in 2019*) lieto vienkāršo pagātni.")
+mc(T,"B1.2",3,"Choose the correct option: ___ you ever ___ a presentation in English?","Have / given",["Did / give","Do / give","Are / given"],"Life experience: *Have you ever given ...?*","Dzīves pieredze: *Have you ever given ...?*")
+T="Present perfect continuous"
+mc(T,"B1.1",3,"Choose the correct option: She is exhausted because she ___ all night for tomorrow's exam.","has been studying",["studied","is studying","studies"],"The activity explains the situation now: *has been studying*.","Darbība izskaidro situāciju tagad: *has been studying*.")
+gp(T,"B1.2",3,"How long ___ you ___ for a new job? (look)","have / been looking","Duration up to now: *have you been looking*.","Ilgums līdz tagadnei: *have you been looking*.")
+mc(T,"B1.2",3,"Which sentence focuses on the activity, not the result?","I've been painting the kitchen all morning.",["I've painted the kitchen.","I painted the kitchen yesterday.","I'm going to paint the kitchen."],"The continuous form shows the activity itself.","Ilgstošā forma parāda pašu darbību.")
+T="Past perfect"
+mc(T,"B1.2",3,"Choose the correct option: By the time we got to the cinema, the film ___ .","had already started",["already started","has already started","was already starting"],"The film started before we arrived: *had already started*.","Filma sākās pirms mūsu ierašanās: *had already started*.")
+gp(T,"B1.2",3,"When she arrived, her colleagues ___ the meeting room. (already / leave)","had already left","The earlier action: *had already left*.","Agrākā darbība: *had already left*.")
+tx(T,"B1.2",5,"Join with before: I finished my homework. Then I watched TV.",["I had finished my homework before I watched TV.","Before I watched TV, I had finished my homework."],"The first action is in the past perfect: *had finished*.","Pirmā darbība ir *past perfect*: *had finished*.")
+T="Future: will, going to, present continuous"
+mc(T,"B1.1",3,"Choose the correct option: I ___ you as soon as I get home, so keep your phone near you.","will call",["call","would call","am calling"],"After *as soon as* we use the present simple; the main part takes *will*.","Pēc *as soon as* lieto vienkāršo tagadni; galvenajā daļā *will*.")
+gp(T,"B1.1",3,"I'll wait here until you ___ back. (come)","come","After *until* we use the present simple for the future.","Pēc *until* nākotnei lieto vienkāršo tagadni.")
+mc(T,"B1.2",3,"Choose the correct option: I don't know yet, but I ___ come to the party if I finish work early.","might",["must","would","have to"],"*Might* shows a possibility.","*Might* parāda iespēju.")
+mc(T,"B1.2",4,"After the meeting: which sentence is NOT correct?","When I will see him, I'll tell him about the problem.",["When I see him, I'll tell him about the problem.","I'll tell him about the problem as soon as I see him.","If I see him, I'll tell him about the problem."],"After *when* we use the present simple, not *will*.","Pēc *when* lieto vienkāršo tagadni, nevis *will*.")
+T="Present simple passive"
+mc(T,"B1.1",3,"Choose the correct option: In our factory, every phone ___ by two different people before it leaves the building.","is checked",["checks","is checking","was check"],"Passive: *is* + past participle.","Pasīvs: *is* + pagātnes divdabis.")
+gp(T,"B1.1",3,"The cheese ___ in small villages and then ___ to shops around the country. (make / send)","is made / is sent","Two passive verbs: *is made* and *is sent*.","Divi pasīva darbības vārdi: *is made* un *is sent*.")
+T="Past simple passive"
+mc(T,"B1.1",3,"Choose the correct option: The bridge ___ in 1932, and it is still used by thousands of cars every day.","was built",["built","is built","has built"],"A finished event, the builder is not important: *was built*.","Pabeigts notikums, celtnieks nav svarīgs: *was built*.")
+gp(T,"B1.1",3,"The suspects ___ at the airport, but the money ___ . (arrest / not find)","were arrested / wasn't found | was not found","Past passive: *were arrested*, *wasn't found*.","Pasīvs pagātnē: *were arrested*, *wasn't found*.")
+T="Present continuous passive"
+mc(T,"B1.2",3,"Choose the correct option: Please use the other entrance. The main hall ___ at the moment.","is being cleaned",["is cleaned","cleans","was cleaning"],"An action in progress, passive: *is being* + participle.","Darbība norit, pasīvs: *is being* + divdabis.")
+tx(T,"B1.2",5,"Make it passive: They are repairing the road.","The road is being repaired.","Passive in progress: *is being repaired*.","Pasīvs procesā: *is being repaired*.")
+T="Present perfect passive"
+mc(T,"B1.1",3,"Choose the correct option: The new library ___ , so you can borrow books from tomorrow.","has been opened",["was opened","is opened","has opened"],"A recent event with a result now: *has been opened*.","Nesens notikums ar rezultātu tagad: *has been opened*.")
+gp(T,"B1.2",3,"All the tickets ___ already, so we can't go. (sell)","have been sold","Result now, passive: *have been sold*.","Rezultāts tagad, pasīvs: *have been sold*.")
+T="Future passive (will be done)"
+mc(T,"B1.1",3,"Choose the correct option: Don't worry about the parcel. It ___ to your address tomorrow morning.","will be delivered",["will deliver","is delivering","delivers"],"Future passive: *will be* + participle.","Pasīvs nākotnē: *will be* + divdabis.")
+tx(T,"B1.2",5,"Make it passive: They will announce the winner on Friday.","The winner will be announced on Friday.","Future passive: *will be announced*.","Pasīvs nākotnē: *will be announced*.")
+T="Zero conditional (if + present, present)"
+mc(T,"B1.1",3,"Choose the correct option: If the temperature ___ below zero, water turns into ice.","falls",["will fall","fell","would fall"],"Always true: *if* + present simple, present simple.","Vienmēr patiess: *if* + vienkāršā tagadne, vienkāršā tagadne.")
+tx(T,"B1.1",5,"Join with if: Customers don't pay on time. The company charges extra.",["If customers don't pay on time, the company charges extra.","The company charges extra if customers don't pay on time."],"A general rule: present simple in both parts.","Vispārīgs noteikums: abās daļās vienkāršā tagadne.")
+T="First conditional (if + present, will)"
+mc(T,"B1.1",3,"Choose the correct option: If you ___ me tomorrow morning, I'll explain everything about the new project.","call",["will call","called","would call"],"After *if* we use the present simple.","Pēc *if* lieto vienkāršo tagadni.")
+gp(T,"B1.2",3,"Unless you ___ harder, you won't pass the final exam. (study)","study","*Unless* = *if not*, and it takes the present simple.","*Unless* = *if not*, un tam seko vienkāršā tagadne.")
+mc(T,"B1.2",3,"Choose the correct option: We'll go for a walk ___ it stops raining.","as soon as",["unless","in case","while"],"*As soon as* = immediately after something happens.","*As soon as* = uzreiz pēc tam, kad kaut kas notiek.")
+T="Second conditional (if + past, would)"
+mc(T,"B1.1",3,"Choose the correct option: If I ___ more free time, I would learn to play the piano.","had",["have","will have","would have"],"Unreal situation: *if* + past simple.","Nereāla situācija: *if* + vienkāršā pagātne.")
+gp(T,"B1.1",3,"If she ___ the job, she ___ to Berlin. (get / move)","got / would move","Second conditional: *if* + past simple, *would* + base verb.","Otrais nosacījums: *if* + vienkāršā pagātne, *would* + pamatforma.")
+tx(T,"B1.1",5,"Rewrite as a second conditional: I don't have a car, so I can't drive to work.",["If I had a car, I could drive to work.","If I had a car, I would drive to work."],"Imagine the opposite: *If I had a car, I could ...*","Iedomājies pretējo: *If I had a car, I could ...*")
+T="Reported statements (tense changes)"
+mc(T,"B1.1",3,"Choose the correct option: 'I'm working on a new project.' She said that she ___ on a new project.","was working",["is working","worked","has worked"],"Reported speech goes one tense back: *am working → was working*.","Netiešajā runā laiks iet vienu soli atpakaļ: *am working → was working*.")
+tx(T,"B1.1",5,"Report it: 'We will finish the report tomorrow,' they said.",["They said they would finish the report the next day.","They said that they would finish the report the next day.","They said they would finish the report the following day.","They said that they would finish the report the following day."],"*Will → would*, *tomorrow → the next day*.","*Will → would*, *tomorrow → the next day*.")
+T="Reported questions and requests"
+mc(T,"B1.2",3,"Choose the correct option: 'Where do you work?' She asked me where I ___ .","worked",["did I work","do I work","was I working"],"In reported questions the order is normal and the tense goes back: *where I worked*.","Netiešajā jautājumā ir parastā vārdu secība un laiks iet atpakaļ: *where I worked*.")
+tx(T,"B1.2",5,"Report it: 'Did you enjoy the film?' he asked me.",["He asked me if I had enjoyed the film.","He asked me whether I had enjoyed the film.","He asked me if I enjoyed the film.","He asked me whether I enjoyed the film."],"A yes/no question becomes *if / whether* + normal word order.","Jautājums ar jā/nē kļūst par *if / whether* + parastā vārdu secība.")
+T="Indirect questions (Could you tell me where...)"
+mc(T,"B1.1",3,"Choose the correct option: Could you tell me where ___ ?","the station is",["is the station","does the station","the station does"],"In an indirect question the verb goes after the subject: *where the station is*.","Netiešajā jautājumā darbības vārds ir aiz priekšmeta: *where the station is*.")
+tx(T,"B1.1",5,"Make it polite: Where is the nearest bank?",["Could you tell me where the nearest bank is?","Can you tell me where the nearest bank is?","Do you know where the nearest bank is?"],"Polite form: *Could you tell me where ... is?*","Pieklājīga forma: *Could you tell me where ... is?*")
+save("b1-upgrades-1.csv")

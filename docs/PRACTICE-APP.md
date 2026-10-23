@@ -330,3 +330,16 @@ Teachers open **Tasks**, download the template, fill it in (one task per row) an
 | match | the instruction | `beginning = ending ; beginning = ending ; ...` (3–6 pairs) | empty |
 
 Tasks live in the table `custom_items` (the database), not in the zip. A file saved by Excel (semicolons, Windows encoding) is read too.
+
+
+## Comeback: working on my mistakes
+Every wrong answer is an open **mistake**. It is **fixed** when the learner later answers the same task, or a similar one, correctly (similar = same topic, level within one step, thinking level within one step). It is worked out from the answers each time, so there is nothing to migrate and no result is ever changed. A task answered wrongly again after being fixed counts as a mistake again; mistakes older than 45 days and reported tasks are ignored.
+
+- **Home:** a small card with the number waiting (hidden at zero) and *Fix them*; the Practice page has *Comeback (N)* next to *Surprise me*.
+- **Session:** one question per mistake, at most ten; each is a similar question if the bank has one the learner has not met, otherwise the original. A right answer says *Mistake fixed!*. Answers count as normal practice (XP, ability estimate, history).
+- **End screen:** *Great job! You fixed N mistakes.* plus only real progress: topics clearly better than before (10 points or more, at least six earlier answers), the total fixed, and how many are still waiting.
+- **Ordinary practice** also brings mistakes back, but never right after the mistake and never more than one question in four, and it prefers questions the learner has not met.
+- Code: `app/src/Mistakes.php`, `Engine::pickNext`; tests: `app/tests/comeback_test.py` and the browser test `comeback_ui.js`.
+
+## Adding questions in batches
+Draft files live in `docs/task-drafts/` (CSV, Tasks-tab format with an optional *thinking level* column 1 to 6). `app/tests/drafts_test.py` imports every file, approves it in a test database and grades every listed answer. Keep to the layering standard in `ITEM-AUDIT.md`: A2 = one short clause, everyday words; B1 = two clauses, wider vocabulary, no clue word, tense chosen by meaning. Write new sentences; use the course books only for the syllabus, the rules and the question types.

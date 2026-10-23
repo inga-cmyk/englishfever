@@ -521,11 +521,22 @@ Negative: *can't* (*cannot*), *shouldn't*, *mustn't* + base verb. Question: *Can
 *have to* is a normal verb: *she has to go.* Negative and questions with *do / does*: *I don't have to go. Do you have to go?*
 *can*: ability (*I can swim*) and permission (*Can I sit here?*).
 *should*: advice (*You should see a doctor*).
-*must*: a strong duty that comes from the speaker, or a written rule (*I must call my mum. Visitors must sign in*).
-*have to*: a duty that comes from outside: work, school, the law (*I have to wear a uniform at work*). In speech, *have to* is more common.
-*mustn't* = not allowed. *don't have to* = not necessary. *must* has no past or future: use *had to / will have to*.
+*must / have to*: it is necessary, a rule or a duty (*You must wear a seat belt. I have to wear a uniform at work*). Often both are possible.
+*mustn't* = not allowed. *don't have to* = not necessary (*You mustn't park here. You don't have to pay*).
+*must* has no past or future: use *had to / will have to* (*I had to work late. We will have to leave early*).
 *rule, law, allowed, necessary, advice, ability*
 *You must wear a seat belt, but you don't have to wear a hat.*
+*Short adjectives*: adjective + *-er* + *than* (*Rachel is taller than Tom*). Superlative: *the* + adjective + *-est* (*the tallest*).
+Spelling: *big - bigger - the biggest*; *nice - nicer - the nicest*; *heavy - heavier - the heaviest*.
+Longer adjectives (two or more syllables): *more / the most* + adjective (*more expensive than, the most expensive*).
+Irregular: *good - better - the best*; *bad - worse - the worst*; *far - further - the furthest*.
+*as* + adjective + *as* = equal (*My phone is as fast as yours*). *not as ... as* = less (*This bag is not as heavy as that one*).
+Comparative: compare two things or people. Superlative: one thing compared with all the others in a group (*the tallest student in the class*).
+After a superlative we use *in* + place or group: *the biggest city in the country*.
+*the same as, similar to, different from*: *It is the same colour as mine.*
+*much / a lot / a bit / slightly* + comparative says how big the difference is (*much cheaper, a bit colder*). *less ... than* and *the least* say the opposite of *more ... than* and *the most*.
+*than, as ... as, the ... -est, in, much, a bit, the same as*
+*This bike is cheaper than that one, but it is not as fast as mine.*
 
 *I / you / we / they* + base verb: *I work.*
 *he / she / it* + verb-*s*: *She works.*

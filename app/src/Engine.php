@@ -14,7 +14,17 @@ final class Engine
         $meta = Content::liveMeta();
         $all = array_column($meta['skills'], 'id');
         $smart = false;
-        if ($mode === 'placement') {
+        $comeback = false;
+        if ($mode === 'comeback') {
+            // "Comeback": the learner's open mistakes, each met again as a similar task
+            $queue = Mistakes::queue($uid, 10);
+            if (!$queue) throw new ApiError('No mistakes are waiting right now. Nice work!', 404);
+            $comeback = true;
+            $mode = 'practice';
+            $skills = array_values(array_unique(array_map(fn($id) => Content::item($id)['skill'], $queue)));
+            $level = Content::item($queue[0])['level'];
+            $len = count($queue);
+        } elseif ($mode === 'placement') {
             $skills = $all;
             $level = 'A2.2';
             $len = in_array($len, self::PLACEMENT_SIZES, true) ? $len : self::PLACEMENT_LEN;
@@ -35,6 +45,8 @@ final class Engine
 
         $state = ['current' => null, 'seed' => random_int(1, 1 << 30), 'served' => [], 'theta' => [], 'g' => 2.0, 'last' => []];
         if ($smart) $state['smart'] = true;
+        if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; }
+        $state['fixed'] = 0;
         if ($mode === 'practice') {
             foreach ($skills as $s) {
                 $row = Db::one('SELECT theta, n FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $s]);
@@ -105,6 +117,7 @@ final class Engine
         $st['g'] = round(max(0.5, min(9.5, $st['g'] + 0.4 * (($ok ? 1 : 0) - $pg))), 3);
         $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom']];
 
+        $beforeFixed = $ses['mode'] === 'placement' ? 0 : Mistakes::scan($uid)['fixed'];
         $now = time();
         Db::insert('attempts', [
             'user_id' => $uid, 'psession_id' => $sid, 'item_id' => $itemId, 'skill' => $skill, 'level' => $item['level'],
@@ -118,6 +131,8 @@ final class Engine
             Db::insert('skill_state', ['user_id' => $uid, 'skill' => $skill, 'theta' => $theta, 'n' => 1, 'n_correct' => $ok ? 1 : 0, 'updated_at' => $now]);
         }
         Stats::addActivity($uid, 0, 1, $xp);
+        $fixedNow = ($ses['mode'] !== 'placement' && $ok && Mistakes::scan($uid)['fixed'] > $beforeFixed);
+        if ($fixedNow) $st['fixed'] = ($st['fixed'] ?? 0) + 1;
 
         $ses['n']++;
         $ses['n_correct'] += $ok ? 1 : 0;
@@ -156,6 +171,7 @@ final class Engine
             'kind' => $item['kind'],
             'xp' => $xp,
             'adapt' => $adapt,
+            'fixed' => $fixedNow,
         ];
         if (isset($g['marks'])) $res['marks'] = $g['marks'];
         if ($item['kind'] === 'match') $res['pairs'] = $item['pairs'];
@@ -278,12 +294,13 @@ final class Engine
         return [
             'id' => (int) $ses['id'], 'mode' => $ses['mode'], 'length' => $ses['target_len'], 'n' => $ses['n'],
             'correct' => $ses['n_correct'], 'xp' => $ses['xp'], 'level' => $ses['level'], 'skills' => $ses['skills'],
-            'phase' => ($ses['mode'] === 'practice' && $ses['n'] < 3 && empty($ses['state']['smart'])) ? 'diagnostic' : 'adaptive',
+            'phase' => ($ses['mode'] === 'practice' && $ses['n'] < 3 && empty($ses['state']['smart']) && empty($ses['state']['comeback'])) ? 'diagnostic' : 'adaptive',
             'smart' => !empty($ses['state']['smart']),
+            'comeback' => !empty($ses['state']['comeback']),
         ];
     }
 
-    private static function pickNext(array $ses): ?array
+    private static function pickNext(array &$ses): ?array
     {
         $st = $ses['state'];
         $served = array_flip($st['served']);
@@ -293,6 +310,13 @@ final class Engine
         $count = count($st['served']);
 
         $smart = !empty($st['smart']);
+        $comeback = !empty($st['comeback']);
+        if ($comeback) {
+            // each task answers one open mistake: a similar task if there is one, else the task itself
+            $mid = $st['queue'][$count] ?? null;
+            if ($mid === null) return null;
+            return Mistakes::twin((int) $ses['user_id'], $mid, $served) ?? Content::item($mid);
+        }
         // candidate items
         $bySkill = [];
         $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
@@ -352,16 +376,29 @@ final class Engine
         $pool = $bySkill[$bestSkill];
 
         // recent history penalty
-        $recent = [];
-        foreach (Db::all('SELECT item_id, MAX(correct) AS c FROM attempts WHERE user_id = ? AND created_at > ? GROUP BY item_id', [$ses['user_id'], time() - 7 * 86400]) as $r) {
-            $recent[$r['item_id']] = (int) $r['c'];
+        // how often (and how lately) the learner has met each task: new tasks come first, so the same sentences do not return again and again
+        $times = [];
+        $lastSeen = [];
+        foreach (Db::all('SELECT item_id, COUNT(1) AS c, MAX(created_at) AS t FROM attempts WHERE user_id = ? GROUP BY item_id', [$ses['user_id']]) as $r) {
+            $times[$r['item_id']] = (int) $r['c'];
+            $lastSeen[$r['item_id']] = (int) $r['t'];
         }
 
-        // "Surprise me" brings back tasks the learner got wrong before (not in the last half hour)
+        // tasks the learner got wrong, and tasks like them, come back now and then (never right after the mistake, never more than one in four)
         $missed = [];
-        if ($smart) {
-            foreach (Db::all('SELECT item_id FROM attempts WHERE user_id = ? AND created_at > ? AND created_at < ? GROUP BY item_id HAVING MAX(correct) = 0', [$ses['user_id'], time() - 30 * 86400, time() - 1800]) as $r) $missed[$r['item_id']] = true;
+        if (!$placement) {
+            $recentIds = [];
+            foreach (Db::all('SELECT item_id FROM attempts WHERE user_id = ? AND created_at > ?', [$ses['user_id'], time() - 1200]) as $r) $recentIds[$r['item_id']] = true;
+            $inSession = 0;
+            foreach ($st['served'] as $sid2) if (!empty($st['returned'][$sid2])) $inSession++;
+            if ($inSession * 4 <= $count) {
+                foreach (Mistakes::scan((int) $ses['user_id'])['open'] as $mid => $m) {
+                    if (!isset($recentIds[$mid])) $missed[$mid] = $m;
+                }
+            }
         }
+        $recentQ = [];
+        foreach (array_slice($st['served'], -3) as $sid2) { $q = Content::item($sid2); if ($q) $recentQ[mb_strtolower($q['q'])] = true; }
 
         // target difficulty
         if (!$placement && !$smart && $count < 3) {
@@ -375,12 +412,17 @@ final class Engine
         $bestCost = PHP_FLOAT_MAX;
         foreach ($pool as $it) {
             $cost = abs($it['d'] - $target) + 0.2 * $bloomCount[$it['bloom']] + random_int(0, 25) / 100;
-            if (isset($recent[$it['id']])) $cost += $recent[$it['id']] ? 0.6 : 0.2;
-            if (isset($missed[$it['id']])) $cost -= 0.7;
+            if (isset($missed[$it['id']])) $cost -= 0.8; // the task itself, a while later
+            else if (isset($times[$it['id']])) $cost += 2.0 + 0.35 * min(3, $times[$it['id']]) + ((time() - $lastSeen[$it['id']]) < 7 * 86400 ? 0.4 : 0); // met before: only when nothing new is in reach
+            if (!isset($missed[$it['id']])) foreach ($missed as $m) {
+                if ($m['skill'] === $it['skill'] && !isset($times[$it['id']]) && $it['bloom'] >= $m['bloom'] - 1 && $it['bloom'] <= $m['bloom'] + 1) { $cost -= 0.4; break; } // a fresh task like it
+            }
+            if (isset($recentQ[mb_strtolower($it['q'])])) $cost += 0.5; // not the same instruction again and again
             if ($st['last'] && end($st['last'])['bloom'] === $it['bloom']) $cost += 0.3; // avoid the same thinking level twice in a row
             if (!$placement && !$smart && $count < 3 && $it['level'] !== $ses['level']) $cost += 0.5;
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }
+        if ($best && isset($missed[$best['id']])) $ses['state']['returned'] = ($st['returned'] ?? []) + [$best['id'] => 1];
         return $best;
     }
 
@@ -418,9 +460,12 @@ final class Engine
         foreach ($bySkill as $s => $v) {
             $meta = Content::skill($s);
             $theta = $ses['state']['theta'][$s] ?? $ses['state']['g'];
+            // how this topic went before today's session: only shown when there is enough history to be fair
+            $before = Db::all('SELECT correct FROM attempts WHERE user_id = ? AND skill = ? AND created_at < ? ORDER BY id DESC LIMIT 20', [$ses['user_id'], $s, $ses['started_at']]);
+            $prev = count($before) >= 6 ? (int) round(100 * array_sum(array_column($before, 'correct')) / count($before)) : null;
             $skills[] = [
                 'id' => $s, 'label' => $meta['label'], 'area' => $meta['area'], 'n' => $v['n'], 'correct' => $v['c'],
-                'theta' => round($theta, 2), 'level_est' => Content::levelFromTheta($theta, $meta['levels']),
+                'theta' => round($theta, 2), 'level_est' => Content::levelFromTheta($theta, $meta['levels']), 'prev_accuracy' => $prev,
             ];
         }
         usort($skills, fn($a, $b) => $a['theta'] <=> $b['theta']);
@@ -434,6 +479,13 @@ final class Engine
             'session_id' => (int) $ses['id'], 'mode' => $ses['mode'], 'n' => $ses['n'], 'correct' => $ses['n_correct'], 'accuracy' => $acc,
             'xp' => $ses['xp'], 'by_skill' => $skills, 'by_bloom' => $bloomOut, 'finished' => $ses['ended_at'] !== null,
         ];
+        if ($ses['mode'] !== 'placement') {
+            $m = Mistakes::scan((int) $ses['user_id']);
+            $out['fixed'] = (int) ($ses['state']['fixed'] ?? 0);
+            $out['comeback'] = !empty($ses['state']['comeback']);
+            $out['open_after'] = count($m['open']);
+            $out['fixed_total'] = $m['fixed'];
+        }
 
         if ($ses['mode'] === 'placement') {
             $tested = array_column($skills, 'id');
@@ -472,7 +524,7 @@ final class Engine
                     if ($sk) $top = max($top, (int) array_search(end($sk['levels']), $levels));
                 }
                 if ($idx !== false && isset($levels[$idx + 1]) && $idx + 1 <= $top) {
-                    $next[] = ['type' => 'level_up', 'level' => $levels[$idx + 1], 'text' => "Great accuracy! Try the next level: {$levels[$idx + 1]}."];
+                    $next[] = ['type' => 'level_up', 'level' => $levels[$idx + 1], 'text' => "Great accuracy! Try something harder."];
                 }
             }
             $out['next'] = array_slice($next, 0, 3);

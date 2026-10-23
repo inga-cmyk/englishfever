@@ -127,8 +127,22 @@ LV_RULES["modal_verbs"] = {
              "have to ir parasts darbības vārds: she has to go. Noliegums un jautājums ar do / does: I don't have to go. Do you have to go?"],
     "use": ["can: spēja (I can swim) un atļauja (Can I sit here?).",
             "should: padoms (You should see a doctor).",
-            "must: stipra pienākuma sajūta no paša runātāja vai rakstīts noteikums (I must call my mum. Visitors must sign in).",
-            "have to: pienākums no ārpuses: darbs, skola, likums (I have to wear a uniform at work). Runā biežāk lieto have to.",
-            "mustn't = aizliegts. don't have to = nav obligāti. must nav pagātnes ne nākotnes formas: lieto had to / will have to."],
+            "must / have to: tas ir nepieciešams, noteikums vai pienākums (You must wear a seat belt. I have to wear a uniform at work). Bieži der abi.",
+            "mustn't = aizliegts. don't have to = nav obligāti (You mustn't park here. You don't have to pay).",
+            "must nav pagātnes ne nākotnes formas: lieto had to / will have to (I had to work late. We will have to leave early)."],
     "signals": "rule, law, allowed, necessary, advice, ability (noteikums, likums, atļauts, nepieciešams, padoms, spēja)",
+}
+
+
+LV_RULES["comparison"] = {
+    "form": ["Īsie īpašības vārdi: īpašības vārds + -er + than (Rachel is taller than Tom). Vispārākā pakāpe: the + īpašības vārds + -est (the tallest).",
+             "Pareizrakstība: big - bigger - the biggest; nice - nicer - the nicest; heavy - heavier - the heaviest.",
+             "Garie īpašības vārdi (divas vai vairāk zilbes): more / the most + īpašības vārds (more expensive than, the most expensive).",
+             "Neregulārie: good - better - the best; bad - worse - the worst; far - further - the furthest.",
+             "as + īpašības vārds + as = vienāds (My phone is as fast as yours). not as ... as = mazāk (This bag is not as heavy as that one)."],
+    "use": ["Pārākā pakāpe: salīdzina divus cilvēkus vai lietas. Vispārākā pakāpe: viens salīdzināts ar visiem pārējiem grupā (the tallest student in the class).",
+            "Aiz vispārākās pakāpes lieto in + vieta vai grupa: the biggest city in the country.",
+            "the same as, similar to, different from: It is the same colour as mine.",
+            "much / a lot / a bit / slightly + pārākā pakāpe parāda, cik liela ir atšķirība (much cheaper, a bit colder). less ... than un the least ir pretējs more ... than un the most."],
+    "signals": "than, as ... as, the ... -est, in, much, a bit, the same as (nekā, tikpat ... kā, visā, daudz, mazliet, tāds pats kā)",
 }

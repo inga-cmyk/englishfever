@@ -409,6 +409,14 @@
         h('a', { href: '#/rules' }, 'Rule cards'),
         (!state.user.guest && dashboardUrl()) ? h('a', { class: 'only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null);
       nodes.push(h('div', { class: 'card focus' }, main, links));
+      var cb = d.comeback || { open: 0, fixed: 0 };
+      if (cb.open > 0) {
+        nodes.push(h('div', { class: 'card pad-s comeback-card' },
+          h('div', { class: 'row between', style: 'flex-wrap:nowrap;gap:14px' },
+            h('div', null, h('b', { style: 'color:var(--text)' }, 'Comeback'),
+              h('div', { class: 'small muted' }, plural(cb.open, 'mistake is', 'mistakes are') + ' waiting to be turned into wins.' + (cb.fixed ? ' You have fixed ' + cb.fixed + ' so far.' : ''))),
+            comebackButton('btn small', 'Fix them'))));
+      }
       if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);
@@ -448,6 +456,17 @@
     } }, icon('bolt'), label || 'Surprise me');
     return b;
   }
+
+  /** "Comeback": the learner's own open mistakes, each one met again as a similar question. */
+  function comebackButton(cls, label) {
+    var b = h('button', { class: cls, type: 'button', onclick: function () {
+      b.disabled = true;
+      api('session/start', { mode: 'comeback' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+        .catch(function (e) { b.disabled = false; UI.toast(e.message); });
+    } }, icon('target'), label || 'Start Comeback');
+    return b;
+  }
+  function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
 
   function stat(ic, v, k, cls) {
     return h('div', { class: 'card pad-s stat ' + (cls || '') }, h('div', { class: 'v' }, icon(ic), String(v)), h('div', { class: 'k' }, k));
@@ -727,7 +746,7 @@
     });
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
-      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), surpriseButton('btn ghost small')),
+      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), h('span', { class: 'row', style: 'gap:8px' }, (d.comeback && d.comeback.open) ? comebackButton('btn ghost small', 'Comeback (' + d.comeback.open + ')') : null, surpriseButton('btn ghost small'))),
       holder, note, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
         h('a', { class: 'btn ghost', href: '#/placement' }, 'Take the placement test instead')))));
   }
@@ -895,6 +914,7 @@
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Nepieciešamās formas atrastas' : 'Required patterns found') : (lv ? 'Pārbaudi norādītos nosacījumus' : 'Check the required patterns')) : (good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (res.near ? 'Almost – one word to check' : 'Not quite')),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
+      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'Mistake fixed!'), ' You got a similar one right this time.'));
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
       if (!good && (it.kind === 'gap' || it.kind === 'text')) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
@@ -987,7 +1007,7 @@
     if (state.reported[it.id]) reportedDone();
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 
-    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice');
+    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Comeback' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice'));
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' },
@@ -1046,15 +1066,27 @@
     setTimeout(function () { if (location.hash === '#/summary') guestInvite(false); }, 700);
     if (s.mode === 'placement') return summaryPlacement(s);
     var nodes = [];
+    var fixed = s.fixed || 0;
+    var headline = s.comeback
+      ? (fixed ? 'Great job! You fixed ' + plural(fixed, 'mistake', 'mistakes') + '.' : 'Good try. These ones need another look.')
+      : (s.accuracy >= 80 ? 'Great work!' : (s.accuracy >= 50 ? 'Good effort!' : 'Keep going – this is how you learn.'));
+    // real progress only: topics where this session went clearly better than the learner's recent history
+    var better = (s.by_skill || []).filter(function (k) { var now = pct(k.correct, k.n); return k.prev_accuracy !== null && k.prev_accuracy !== undefined && k.n >= 3 && now >= k.prev_accuracy + 10; });
+    var wins = [];
+    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), 'You also fixed ' + plural(fixed, 'earlier mistake', 'earlier mistakes') + ' along the way.'));
+    better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% before, ' + pct(k.correct, k.n) + '% today.')); });
+    if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), plural(s.fixed_total, 'mistake', 'mistakes') + ' fixed in all.'));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
-      h('div', { class: 'label' }, 'Practice finished'), h('h1', null, s.accuracy >= 80 ? 'Great work!' : (s.accuracy >= 50 ? 'Good effort!' : 'Keep going – this is how you learn.')),
+      h('div', { class: 'label' }, s.comeback ? 'Comeback finished' : 'Practice finished'), h('h1', null, headline),
+      wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
+      s.open_after ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, plural(s.open_after, 'mistake is', 'mistakes are') + ' still waiting.'), comebackButton('btn ghost small', 'Comeback')) : (s.comeback ? h('p', { class: 'small muted' }, 'Nothing is waiting now. Clean slate!') : null),
       h('div', { class: 'grid g3' },
         h('div', null, h('div', { class: 'big' }, s.correct + '/' + s.n), h('div', { class: 'muted small' }, 'correct')),
         h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),
         h('div', null, h('div', { class: 'big' }, s.accuracy + '%'), h('div', { class: 'muted small' }, 'accuracy')))));
     nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
       h('div', { class: 'card' }, h('h2', null, 'By topic'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
-        return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)),
+        return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))),
           h('div', { class: 'meter gold', style: 'margin:6px 0 3px' }, h('i', { style: 'width:' + pct(k.correct, k.n) + '%' })), h('span', { class: 'small muted' }, k.correct + ' of ' + k.n + ' correct'));
       }))),
       h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
@@ -1063,7 +1095,7 @@
       h('ul', { class: 'clean' }, steps.length ? steps.map(function (n) {
         return h('li', { style: 'margin-bottom:10px' }, h('div', { class: 'row between' }, h('span', null, n.text),
           n.type === 'review' ? h('button', { class: 'btn ghost small', onclick: function () { rulesModal(n.skill); } }, 'Rule card')
-            : h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: state.lastSkills || s.by_skill.map(function (k) { return k.id; }), level: n.level }; location.hash = '#/practice'; } }, 'Try ' + n.level)));
+            : h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: state.lastSkills || s.by_skill.map(function (k) { return k.id; }), level: n.level }; location.hash = '#/practice'; } }, 'Try harder')));
       }) : h('li', null, (feat('streak') ? 'Do another round to build your streak and see your level move.' : 'Do another round to see your level move.')))));
     nodes.push(h('div', { class: 'row' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.by_skill.map(function (k) { return k.id; }), level: s.level }; location.hash = '#/practice'; } }, 'Practise again'), h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
@@ -1081,13 +1113,13 @@
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 topics'),
       h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
         return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),
-          h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + g.level)));
+          h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + lv(g.level))));
       })),
       h('div', { class: 'row', style: 'margin-top:8px' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all 3 together'),
         h('a', { class: 'btn ghost', href: '#/practice' }, 'Choose my own'))));
     nodes.push(h('div', { class: 'grid g2' },
       h('div', { class: 'card' }, h('h2', null, 'All tested topics'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
-        return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + k.level_est)));
+        return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))));
       })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, 'Not tested (too advanced for now): ' + s.untested.map(function (u) { return u.label; }).join(', ') + '.') : null),
       h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));

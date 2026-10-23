@@ -4,6 +4,7 @@ AREAS = [
     ("active", "Active tenses"),
     ("passive", "Passive tenses"),
     ("modals", "Modal verbs"),
+    ("comparing", "Comparing things"),
     ("conditionals", "Conditionals"),
     ("reported", "Reported speech"),
     ("indirect", "Indirect questions"),
@@ -25,6 +26,7 @@ SKILLS = [
     ("present_perfect_passive", "Present perfect passive", "passive", ["B1.1", "B1.2"]),
     ("future_passive", "Future passive (will be done)", "passive", ["B1.1", "B1.2"]),
     ("modal_verbs", "Modal verbs: can, should, must, have to", "modals", ["A2.1", "A2.2", "B1.1"]),
+    ("comparison", "Comparison: -er, more, the most, as ... as", "comparing", ["A2.1", "A2.2", "B1.1", "B1.2"]),
     ("cond_zero", "Zero conditional (if + present, present)", "conditionals", ["A2.2", "B1.1"]),
     ("cond_first", "First conditional (if + present, will)", "conditionals", ["A2.2", "B1.1", "B1.2"]),
     ("cond_second", "Second conditional (if + past, would)", "conditionals", ["B1.1", "B1.2", "B2.1"]),
@@ -234,9 +236,25 @@ RULES["modal_verbs"] = {
              "have to is a normal verb: she has to go. Negative and questions with do / does: I don't have to go. Do you have to go?"],
     "use": ["can: ability (I can swim) and permission (Can I sit here?).",
             "should: advice (You should see a doctor).",
-            "must: a strong duty that comes from the speaker, or a written rule (I must call my mum. Visitors must sign in).",
-            "have to: a duty that comes from outside: work, school, the law (I have to wear a uniform at work). In speech, have to is more common.",
-            "mustn't = not allowed. don't have to = not necessary. must has no past or future: use had to / will have to."],
+            "must / have to: it is necessary, a rule or a duty (You must wear a seat belt. I have to wear a uniform at work). Often both are possible.",
+            "mustn't = not allowed. don't have to = not necessary (You mustn't park here. You don't have to pay).",
+            "must has no past or future: use had to / will have to (I had to work late. We will have to leave early)."],
     "signals": "rule, law, allowed, necessary, advice, ability",
     "example": "You must wear a seat belt, but you don't have to wear a hat.",
+}
+
+
+# Comparison: a topic whose tasks are added by the teacher on the Tasks page (no built-in tasks).
+RULES["comparison"] = {
+    "form": ["Short adjectives: adjective + -er + than (Rachel is taller than Tom). Superlative: the + adjective + -est (the tallest).",
+             "Spelling: big - bigger - the biggest; nice - nicer - the nicest; heavy - heavier - the heaviest.",
+             "Longer adjectives (two or more syllables): more / the most + adjective (more expensive than, the most expensive).",
+             "Irregular: good - better - the best; bad - worse - the worst; far - further - the furthest.",
+             "as + adjective + as = equal (My phone is as fast as yours). not as ... as = less (This bag is not as heavy as that one)."],
+    "use": ["Comparative: compare two things or people. Superlative: one thing compared with all the others in a group (the tallest student in the class).",
+            "After a superlative we use in + place or group: the biggest city in the country.",
+            "the same as, similar to, different from: It is the same colour as mine.",
+            "much / a lot / a bit / slightly + comparative says how big the difference is (much cheaper, a bit colder). less ... than and the least say the opposite of more ... than and the most."],
+    "signals": "than, as ... as, the ... -est, in, much, a bit, the same as",
+    "example": "This bike is cheaper than that one, but it is not as fast as mine.",
 }

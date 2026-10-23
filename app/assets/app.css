@@ -460,3 +460,10 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .q .q-instr { font-style: normal; }
 .q .q-sample { font-style: italic; display: inline-block; margin-top: 4px; }
 .q .q-sample input { font-style: normal; }
+
+.comeback-card { border-color: var(--gold); margin-top: 12px; }
+.fixed-line { display: flex; align-items: center; gap: 8px; color: var(--good, #2f8f5b); margin: 6px 0; }
+.fixed-line svg { width: 18px; height: 18px; flex: none; }
+.wins { margin: 8px 0 12px; }
+.wins li { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+.wins li svg { width: 18px; height: 18px; flex: none; color: var(--good, #2f8f5b); }

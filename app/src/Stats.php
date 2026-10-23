@@ -131,6 +131,7 @@ final class Stats
             'skills' => self::skillRows($uid),
             'bloom' => self::bloomRows($uid),
             'placement' => $placement,
+            'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed']]; })(),
         ];
     }
 

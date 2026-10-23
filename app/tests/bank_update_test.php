@@ -9,6 +9,7 @@ require __DIR__ . '/../src/Db.php';
 require __DIR__ . '/../src/Stats.php';
 require __DIR__ . '/../src/Engine.php';
 require __DIR__ . '/../src/Reports.php';
+require __DIR__ . '/../src/Mistakes.php';
 Config::load();
 
 $n = 0;

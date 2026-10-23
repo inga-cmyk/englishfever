@@ -340,9 +340,9 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Make a question with who about the object: Anna lent her bike to Tom.**   ✔ Who did Anna lend her bike to? | Whom did Anna lend her bike to? | To whom did Anna lend her bike?  — Ask about the subject: question word + verb. Ask about the object: question word + did / does + subject + base verb.
 - [match] **Match each sentence with the question about it.**   ✔ Someone called. (who?) = Who called?  ·  Anna called someone. (who?) = Who did Anna call?  ·  Something broke. (what?) = What broke?  ·  Anna broke something. (what?) = What did Anna break?  — If the question word is the subject, there is no did / does.
 
-## Verb patterns (51 questions)
+## Verb patterns (57 questions)
 
-### A2.2 (14)
+### A2.2 (16)
 
 - [drag the words] **Put the words in order.**   ✔ i enjoy reading before bed  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the words] **Put the words in order.**   ✔ she wants to learn spanish  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
@@ -357,9 +357,11 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Choose the correct option: We decided ___ at home.**   ✔ to stay   ✗ staying | stay | stayed  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.
 - [type the sentence] **Make a sentence with decide: I will go home early.**   ✔ I decided to go home early.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
 - [type the sentence] **Make a sentence with finish: I cleaned the kitchen.**   ✔ I finished cleaning the kitchen.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
+- [type the sentence] **Correct the mistake: We decided staying at home.**   ✔ We decided to stay at home.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
+- [type the sentence] **Correct the mistake: I finished to clean the kitchen.**   ✔ I finished cleaning the kitchen.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
 - [match] **Match each pattern with its example.**   ✔ verb + -ing = I enjoy cooking.  ·  verb + to + base verb = I want to cook.  ·  preposition + -ing = I'm good at cooking.  ·  like, love, hate = I like cooking. = I like to cook.  — The first verb decides: -ing or to. After a preposition: -ing.
 
-### B1.1 (18)
+### B1.1 (20)
 
 - [drag the words] **Put the words in order.**   ✔ she suggested taking the earlier train  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the words] **Put the words in order.**   ✔ after finishing work she went straight to the gym  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
@@ -378,9 +380,11 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Which sentence is correct?**   ✔ He is good at solving problems.   ✗ He is good at solve problems. | He is good at to solve problems. | He is good to solving problems.  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.
 - [type the sentence] **Rewrite with suggested: 'Let's go to the cinema,' said Ben.**   ✔ Ben suggested going to the cinema. | Ben suggested that we go to the cinema.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
 - [type the sentence] **Rewrite with before: She checked the windows. Then she left the house.**   ✔ She checked the windows before leaving the house. | Before leaving the house, she checked the windows.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
+- [type the sentence] **Correct the mistake: Ben suggested to go to the cinema.**   ✔ Ben suggested going to the cinema. | Ben suggested that we go to the cinema. | Ben suggested we go to the cinema.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
+- [type the sentence] **Correct the mistake: Before to leave the house, she checked the windows.**   ✔ Before leaving the house, she checked the windows.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
 - [match] **Match each group of words with its pattern.**   ✔ enjoy, avoid, finish = + -ing  ·  want, decide, hope = + to + base verb  ·  good at, interested in = preposition + -ing  ·  can, must, should = + base verb, no to  — The first verb decides: -ing or to. After a preposition: -ing.
 
-### B1.2 (19)
+### B1.2 (21)
 
 - [drag the words] **Put the words in order.**   ✔ i will never forget meeting her for the first time  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the words] **Put the words in order.**   ✔ remember to turn off the lights when you leave  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
@@ -400,4 +404,6 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Choose the correct option: She apologised for ___ late.**   ✔ being   ✗ to be | be | been  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.
 - [type the sentence] **Rewrite with stopped: He used to smoke, but he doesn't now.**   ✔ He stopped smoking. | He has stopped smoking.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
 - [type the sentence] **Rewrite with forgot: I didn't lock the door because I forgot.**   ✔ I forgot to lock the door.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
+- [type the sentence] **Correct the mistake: My grandfather stopped to smoke ten years ago.**   ✔ My grandfather stopped smoking ten years ago.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
+- [type the sentence] **Correct the mistake: I forgot locking the door, so the flat was open all night.**   ✔ I forgot to lock the door, so the flat was open all night.  — The first verb decides: -ing or to + base verb. After a preposition (before, at, in) we use -ing.
 - [match] **Match each phrase with its meaning.**   ✔ stop smoking = quit  ·  stop to smoke = pause in order to smoke  ·  remember locking = a memory of the past action  ·  remember to lock = do the task  — The first verb decides: -ing or to. After a preposition: -ing.

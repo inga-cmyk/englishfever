@@ -158,6 +158,13 @@ P.text("B1.1", "Rewrite with suggested: 'Let's go to the cinema,' said Ben.", ["
 P.text("B1.1", "Rewrite with before: She checked the windows. Then she left the house.", ["She checked the windows before leaving the house.", "Before leaving the house, she checked the windows."], b=5)
 P.text("B1.2", "Rewrite with stopped: He used to smoke, but he doesn't now.", ["He stopped smoking.", "He has stopped smoking."], b=5)
 P.text("B1.2", "Rewrite with forgot: I didn't lock the door because I forgot.", ["I forgot to lock the door."], b=5)
+# no-hint twins: same patterns, the verb is not named; the sentence has one mistake and the context decides
+P.text("A2.2", "Correct the mistake: We decided staying at home.", ["We decided to stay at home."], b=4)
+P.text("A2.2", "Correct the mistake: I finished to clean the kitchen.", ["I finished cleaning the kitchen."], b=4)
+P.text("B1.1", "Correct the mistake: Ben suggested to go to the cinema.", ["Ben suggested going to the cinema.", "Ben suggested that we go to the cinema.", "Ben suggested we go to the cinema."], b=5)
+P.text("B1.1", "Correct the mistake: Before to leave the house, she checked the windows.", ["Before leaving the house, she checked the windows."], b=5)
+P.text("B1.2", "Correct the mistake: My grandfather stopped to smoke ten years ago.", ["My grandfather stopped smoking ten years ago."], b=5)
+P.text("B1.2", "Correct the mistake: I forgot locking the door, so the flat was open all night.", ["I forgot to lock the door, so the flat was open all night."], b=5)
 P.match("A2.2", "Match each pattern with its example.", [("verb + -ing", "I enjoy cooking."), ("verb + to + base verb", "I want to cook."), ("preposition + -ing", "I'm good at cooking."), ("like, love, hate", "I like cooking. = I like to cook.")])
 P.match("B1.1", "Match each group of words with its pattern.", [("enjoy, avoid, finish", "+ -ing"), ("want, decide, hope", "+ to + base verb"), ("good at, interested in", "preposition + -ing"), ("can, must, should", "+ base verb, no to")])
 P.match("B1.2", "Match each phrase with its meaning.", [("stop smoking", "quit"), ("stop to smoke", "pause in order to smoke"), ("remember locking", "a memory of the past action"), ("remember to lock", "do the task")])

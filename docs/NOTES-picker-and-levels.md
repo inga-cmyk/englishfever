@@ -48,3 +48,8 @@ Findings to act on when we build:
 - How layers differ for one topic: (1) form complexity, (2) task type / thinking level, (3) context, (4) rule card depth, (5) what the wrong options test.
 - More reference material wanted: Intermediate (B1) book first; then Upper-Intermediate (B2), Elementary (A1), Advanced (C1). Use books as a syllabus and rule guide; write our own sentences, never copy their text or exercises.
 - Proposed library: one spec sheet per topic (`docs/grammar-library/<topic>.md`) with can-do per layer, forms, uses, common mistakes, task types per layer; cards and questions are written from it.
+
+## Correction (Inga): what really separates A2 from B1
+- Negatives, questions and short answers belong to **A2 as well**; they are learned before B1, so they are not a B1 marker. Remove that from the layer differences above.
+- The difference is mainly **sentence length** (short single clauses at A2, longer and combined sentences at B1) and **vocabulary choice** (everyday words at A2, wider and more abstract words at B1). The other differences (task type, context, rule card depth, what the wrong options test) stay open for discussion.
+- Inga will send reference pages from the **Elementary** and **Intermediate** books; decisions on layers are to be checked against them before anything is built.

@@ -1379,7 +1379,7 @@
         });
         tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
           return h('tr', null,
-            h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, (view !== 'mine' && s.mine) ? h('span', { class: 'pill good', style: 'margin-left:8px' }, 'mine') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null, s.provider === 'guest' ? h('div', { class: 'small muted' }, 'first seen ' + UI.fmtAgo(s.joined)) : null),
+            h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null, s.provider === 'guest' ? h('div', { class: 'small muted' }, 'first seen ' + UI.fmtAgo(s.joined)) : null),
             h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'muted' }, '–')),
             h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
             h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),

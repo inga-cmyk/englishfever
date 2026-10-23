@@ -766,8 +766,18 @@
 
     function ready() { submit.disabled = !canSubmit(); }
 
+    // "Rewrite in the past: I have to get up early." -> the instruction, then the sample sentence on its own line in italics
+    var SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
+    var promptSplit = SPLIT.exec(it.q || '');
+    var promptSample = promptSplit ? promptSplit[2] : (it.q || '');
+    function setPrompt(el, text) { // plain prompt text, with the instruction split off when there is one
+      var m = SPLIT.exec(text || '');
+      if (!m) { el.textContent = text; return; }
+      el.appendChild(h('span', { class: 'q-instr' }, m[1] + ':')); el.appendChild(h('br')); el.appendChild(h('em', { class: 'q-sample' }, m[2]));
+    }
+
     if (it.kind === 'mcq') {
-      qEl.textContent = it.q;
+      setPrompt(qEl, it.q);
       var wrap = h('div', { class: 'opts', role: 'radiogroup', 'aria-label': 'Answer options' });
       it.options.forEach(function (o, i) {
         var inp = h('input', { type: 'radio', name: 'opt', value: o, id: 'o' + i, onchange: function () { chosen = o; ready(); } });
@@ -777,30 +787,36 @@
       answerGetter = function () { return chosen; };
       canSubmit = function () { return chosen !== null; };
     } else if (it.kind === 'order' || it.kind === 'match' || (it.kind === 'gap' && it.bank)) {
-      if (it.kind === 'order') { qEl.textContent = it.q; board = DnD.order(it.tokens, ready); }
-      else if (it.kind === 'match') { qEl.textContent = it.q; board = DnD.match(it.lefts, it.rights, ready); }
-      else { board = DnD.bankGap(it.q, it.bank, ready); qEl = board.sentence; area.appendChild(h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
+      if (it.kind === 'order') { setPrompt(qEl, it.q); board = DnD.order(it.tokens, ready); }
+      else if (it.kind === 'match') { setPrompt(qEl, it.q); board = DnD.match(it.lefts, it.rights, ready); }
+      else { board = DnD.bankGap(promptSample, it.bank, ready); qEl = board.sentence;
+        if (promptSplit) { // instruction line, then the sentence (with its gaps) in italics
+          var smp = h('em', { class: 'q-sample' }); while (qEl.firstChild) smp.appendChild(qEl.firstChild);
+          qEl.appendChild(h('span', { class: 'q-instr' }, promptSplit[1] + ':')); qEl.appendChild(h('br')); qEl.appendChild(smp);
+        } area.appendChild(h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
       area.appendChild(board.el);
       answerGetter = board.answer; canSubmit = board.complete;
     } else if (it.kind === 'gap') {
-      var parts = it.q.split('___');
+      var parts = promptSample.split('___');
+      var sampleEl = promptSplit ? h('em', { class: 'q-sample' }) : qEl;
+      if (promptSplit) { qEl.appendChild(h('span', { class: 'q-instr' }, promptSplit[1] + ':')); qEl.appendChild(h('br')); qEl.appendChild(sampleEl); }
       parts.forEach(function (p, i) {
-        qEl.appendChild(document.createTextNode(p));
+        sampleEl.appendChild(document.createTextNode(p));
         if (i < parts.length - 1) {
           var inp = h('input', { type: 'text', class: 'blank', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': 'Answer ' + (i + 1), oninput: function (e) { fitBlank(e.target); ready(); } });
-          inputs.push(inp); qEl.appendChild(inp);
+          inputs.push(inp); sampleEl.appendChild(inp);
         }
       });
       answerGetter = function () { return inputs.map(function (i) { return i.value; }); };
       canSubmit = function () { return inputs.every(function (i) { return i.value.trim() !== ''; }); };
     } else if (it.kind === 'text') {
-      qEl.textContent = it.q;
+      setPrompt(qEl, it.q);
       var t = h('input', { type: 'text', class: 'type-in', autocomplete: 'off', autocapitalize: 'sentences', spellcheck: 'false', placeholder: 'Type your answer', 'aria-label': 'Your answer', oninput: ready });
       inputs.push(t); area.appendChild(t);
       answerGetter = function () { return t.value; };
       canSubmit = function () { return t.value.trim() !== ''; };
     } else {
-      qEl.textContent = it.q;
+      setPrompt(qEl, it.q);
       var ta = h('textarea', { class: 'write', placeholder: 'Write your answer here', 'aria-label': 'Your answer', spellcheck: 'true', oninput: function (e) { growBox(e.target); ready(); } });
       inputs.push(ta); area.appendChild(ta);
       answerGetter = function () { return ta.value; };

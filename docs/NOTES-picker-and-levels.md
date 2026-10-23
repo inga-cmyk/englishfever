@@ -40,3 +40,11 @@ Findings to act on when we build:
 2. **Rule-card style**: copy the book's habit of a short "Common mistakes" line (e.g. "You should eat, NOT You should to eat"; "enough goes after an adjective, before a noun") and "Did you know?" notes. The app's rule cards could get an optional mistakes line.
 3. **Task types to add**: "which sentences are incorrect, correct them" (our check can do one-sentence answers), "match the first and second halves" (match type exists), rewrite with a given word.
 4. Level labelling: place book units into our full levels only after Inga confirms; suggested start: units 1-9 A2, 10-16 B1, to be checked.
+
+## Decisions and plan (Inga, latest)
+- Labels stay: the Pre-Intermediate book maps to **A2.1 = units 1-9, A2.2 = units 10-16**. Learners see only A2 (and B1 ...). Open point: unit 11 has past perfect and passives, which the bank places at B1; decide per topic.
+- Layer names to show next to the CEFR code: A1 Elementary, A2 Pre-intermediate, B1 Intermediate, B2 Upper-intermediate, C1 Advanced, C2 Proficient. Beginners (level 0) are skipped.
+- **Priority: build B1 as completely as possible** (most common level; many topics are reused at A2 and B2).
+- How layers differ for one topic: (1) form complexity, (2) task type / thinking level, (3) context, (4) rule card depth, (5) what the wrong options test.
+- More reference material wanted: Intermediate (B1) book first; then Upper-Intermediate (B2), Elementary (A1), Advanced (C1). Use books as a syllabus and rule guide; write our own sentences, never copy their text or exercises.
+- Proposed library: one spec sheet per topic (`docs/grammar-library/<topic>.md`) with can-do per layer, forms, uses, common mistakes, task types per layer; cards and questions are written from it.

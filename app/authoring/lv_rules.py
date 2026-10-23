@@ -127,7 +127,8 @@ LV_RULES["modal_verbs"] = {
              "have to ir parasts darbības vārds: she has to go. Noliegums un jautājums ar do / does: I don't have to go. Do you have to go?"],
     "use": ["can: spēja (I can swim) un atļauja (Can I sit here?).",
             "should: padoms (You should see a doctor).",
-            "must / have to: noteikums vai kaut kas nepieciešams (You must wear a seat belt. I have to work on Saturdays).",
-            "mustn't = aizliegts. don't have to = nav obligāti. Pagātnē: had to (must pagātnes formas nav)."],
+            "must: stipra pienākuma sajūta no paša runātāja vai rakstīts noteikums (I must call my mum. Visitors must sign in).",
+            "have to: pienākums no ārpuses: darbs, skola, likums (I have to wear a uniform at work). Runā biežāk lieto have to.",
+            "mustn't = aizliegts. don't have to = nav obligāti. must nav pagātnes ne nākotnes formas: lieto had to / will have to."],
     "signals": "rule, law, allowed, necessary, advice, ability (noteikums, likums, atļauts, nepieciešams, padoms, spēja)",
 }

@@ -521,8 +521,9 @@ Negative: *can't* (*cannot*), *shouldn't*, *mustn't* + base verb. Question: *Can
 *have to* is a normal verb: *she has to go.* Negative and questions with *do / does*: *I don't have to go. Do you have to go?*
 *can*: ability (*I can swim*) and permission (*Can I sit here?*).
 *should*: advice (*You should see a doctor*).
-*must / have to*: a rule or something necessary (*You must wear a seat belt. I have to work on Saturdays*).
-*mustn't* = not allowed. *don't have to* = not necessary. In the past: *had to* (*must* has no past).
+*must*: a strong duty that comes from the speaker, or a written rule (*I must call my mum. Visitors must sign in*).
+*have to*: a duty that comes from outside: work, school, the law (*I have to wear a uniform at work*). In speech, *have to* is more common.
+*mustn't* = not allowed. *don't have to* = not necessary. *must* has no past or future: use *had to / will have to*.
 *rule, law, allowed, necessary, advice, ability*
 *You must wear a seat belt, but you don't have to wear a hat.*
 

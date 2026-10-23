@@ -532,8 +532,9 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "*can*: ability (*I can swim*) and permission (*Can I sit here?*).",
      "*should*: advice (*You should see a doctor*).",
-     "*must / have to*: a rule or something necessary (*You must wear a seat belt. I have to work on Saturdays*).",
-     "*mustn't* = not allowed. *don't have to* = not necessary. In the past: *had to* (*must* has no past)."
+     "*must*: a strong duty that comes from the speaker, or a written rule (*I must call my mum. Visitors must sign in*).",
+     "*have to*: a duty that comes from outside: work, school, the law (*I have to wear a uniform at work*). In speech, *have to* is more common.",
+     "*mustn't* = not allowed. *don't have to* = not necessary. *must* has no past or future: use *had to / will have to*."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability*",
     "example": "*You must wear a seat belt, but you don't have to wear a hat.*"
@@ -548,8 +549,9 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "*can*: spēja (*I can swim*) un atļauja (*Can I sit here*?).",
      "*should*: padoms (*You should see a doctor*).",
-     "*must / have to*: *noteikums* vai kaut kas nepieciešams (*You must wear a seat belt.* *I have to work on Saturdays*).",
-     "*mustn't = aizliegts*. *don't have to* = nav obligāti. Pagātnē: *had to* (*must* pagātnes formas nav)."
+     "*must*: *stipra* pienākuma sajūta no paša runātāja vai rakstīts *noteikums* (*I must call my mum.* *Visitors must sign in*).",
+     "*have to*: pienākums no ārpuses: darbs, *skola, likums* (*I have to wear a uniform at work*). Runā biežāk lieto *have to*.",
+     "*mustn't = aizliegts*. *don't have to* = nav obligāti. *must* nav pagātnes *ne* nākotnes formas: lieto *had to / will have to*."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)"
    }

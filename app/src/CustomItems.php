@@ -41,7 +41,7 @@ final class CustomItems
         foreach (Db::all('SELECT * FROM custom_items ORDER BY id DESC') as $r) {
             $it = self::fromRow($r);
             $skill = Content::skill($it['skill']);
-            $out[$r['status']][] = ['id' => $it['id'], 'skill' => $skill['label'] ?? $it['skill'], 'level' => $it['level'], 'kind' => $it['kind'], 'q' => $it['q'], 'key' => self::keyOf($it), 'options' => $it['kind'] === 'mcq' ? $it['wrong'] : null, 'why' => $it['why'] ?? ''];
+            $out[$r['status']][] = ['id' => $it['id'], 'skill' => $skill['label'] ?? $it['skill'], 'level' => $it['level'], 'kind' => $it['kind'], 'q' => $it['q'], 'key' => self::keyOf($it), 'options' => $it['kind'] === 'mcq' ? $it['wrong'] : null, 'why' => $it['why'] ?? '', 'why_lv' => $it['why_lv'] ?? ''];
         }
         return $out;
     }

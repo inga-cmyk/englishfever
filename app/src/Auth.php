@@ -280,6 +280,19 @@ final class Auth
         return Db::one('SELECT * FROM users WHERE id = ?', [$id]);
     }
 
+    /** Once: learners registered through the website whose display name is still their full name get their first name only. */
+    public static function firstNameSweep(): void
+    {
+        if (Db::kvGet('first_names_done')) return;
+        foreach (Db::all("SELECT id, nickname, full_name FROM users WHERE provider = 'wp' AND role = 'student' AND full_name <> ''") as $u) {
+            $clean = mb_strtolower(mb_substr(trim(preg_replace('/\s+/u', ' ', preg_replace('/[^\p{L}\p{N} ._\'\-]+/u', '', $u['full_name']))), 0, 26));
+            if (mb_strpos($clean, ' ') === false || mb_strpos(mb_strtolower($u['nickname']), $clean) !== 0) continue;
+            $nick = self::uniqueNick(self::firstName($u['full_name']));
+            Db::update('users', ['nickname' => $nick, 'nickname_key' => mb_strtolower($nick)], 'id = ?', [$u['id']]);
+        }
+        Db::kvSet('first_names_done', '1');
+    }
+
     /** "Anna Bērziņa" -> "Anna"; "Anna-Marija Ozola" -> "Anna-Marija". The surname is never suggested for the leaderboard. */
     public static function firstName(string $full): string
     {

@@ -16,6 +16,7 @@ Config::load();
 date_default_timezone_set(Config::get('timezone', 'Europe/Riga'));
 Db::connect(Config::all());
 Db::migrate();
+Auth::firstNameSweep();
 
 $https = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https');
 $sessDir = __DIR__ . '/../var/sessions';

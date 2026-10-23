@@ -19,6 +19,7 @@
   function lv(l) { return String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
+  var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
   // the main site: the configured address, else the root of the dashboard / registration address
   function mainSiteUrl() {
     var c = state.config || {};
@@ -521,13 +522,20 @@
   var REPORT_FILTERS = [['open', 'Open'], ['fixed', 'Fixed'], ['dismissed', 'Not a problem'], ['all', 'All']];
 
   /** The task as the teacher needs to judge it: text, key, wrong options. */
+  function promptNodes(q) { // instruction on one line, the sample sentence below in italics (as learners see it)
+    var m = PROMPT_SPLIT.exec(q || '');
+    return m ? [h('span', null, m[1] + ':'), h('br'), h('em', null, m[2])] : [q || ''];
+  }
+
   function taskHead(t) {
     return h('div', null,
       h('div', { class: 'meta', style: 'display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px' },
         h('span', { class: 'pill dark' }, t.skill || '?'), t.level ? levelPill(t.level) : null, t.kind ? h('span', { class: 'pill' }, t.kind) : null, h('code', { class: 'taskid' }, t.id)),
-      h('div', { style: 'font-weight:600;color:var(--text);margin-bottom:6px' }, t.q),
+      h('div', { style: 'font-weight:600;color:var(--text);margin-bottom:6px' }, promptNodes(t.q)),
       t.key ? h('div', { class: 'small muted' }, h('b', null, t.options ? 'Correct: ' : 'Accepted: '), t.key) : null,
-      t.options ? h('div', { class: 'small muted' }, h('b', null, 'Wrong options: '), t.options.join('  |  ')) : null);
+      t.options ? h('div', { class: 'small muted' }, h('b', null, 'Wrong options: '), t.options.join('  |  ')) : null,
+      t.why ? h('div', { class: 'small muted' }, h('b', null, 'Shown to learner: '), UI.rich(t.why)) : null,
+      t.why_lv ? h('div', { class: 'small muted' }, h('b', null, 'Latvian: '), UI.rich(t.why_lv)) : null);
   }
 
   function reportCard(g) {
@@ -767,7 +775,7 @@
     function ready() { submit.disabled = !canSubmit(); }
 
     // "Rewrite in the past: I have to get up early." -> the instruction, then the sample sentence on its own line in italics
-    var SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
+    var SPLIT = PROMPT_SPLIT;
     var promptSplit = SPLIT.exec(it.q || '');
     var promptSample = promptSplit ? promptSplit[2] : (it.q || '');
     function setPrompt(el, text) { // plain prompt text, with the instruction split off when there is one

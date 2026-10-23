@@ -1009,7 +1009,7 @@
     var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Second Chance' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice'));
     var done = ses.n;
     drawDots(); drawPrev();
-    show(h('div', { class: 'sess' },
+    show(h('div', { class: 'sess' + (ses.comeback ? ' mode-chance' : '') },
       h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Question ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
         h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, soundButton(), h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
       h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(ses.length), 'aria-valuenow': String(done) }, h('i', { id: 'prog', style: 'width:' + Math.round(100 * done / ses.length) + '%' })),

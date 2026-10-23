@@ -11,8 +11,9 @@
   --gold-deep: #B8954A;
   --gold-pale: #F3EAD3;
   --raspberry: #DE3163;        /* decorative: bars, borders, big shapes */
-  --btn: #D82C5E;              /* buttons: same hue, 4.7:1 with white text */
-  --btn-hover: #C0244F;
+  --btn: #166B5D;              /* main action (practice): deep teal, 6.3:1 with white text */
+  --btn-hover: #11574C;
+  --btn-bg: #E3F3EF;
   --link: #C42554;             /* small raspberry text on cream */
   --line: #E7E2D5;
   --good: #2E7D5B;
@@ -21,7 +22,7 @@
   --bad-bg: #FBE7ED;
   --shadow: 0 1px 2px rgba(2,1,1,.04), 0 6px 18px rgba(2,1,1,.05);
   --shadow-hover: 0 2px 4px rgba(2,1,1,.05), 0 14px 32px rgba(2,1,1,.12);
-  --btn-glow: 0 8px 20px rgba(216,44,94,.38);
+  --btn-glow: 0 8px 20px rgba(22,107,93,.36);
   --radius: 16px;
   --bg: var(--cream);
   --surface: var(--card);
@@ -32,13 +33,13 @@
   :root:not([data-theme="light"]) {
     --bg: #0B0A0A; --surface: #171515; --text: #F3EFE6; --text-soft: #BDB8AD; --muted: #A39E93; --line: #2C2926;
     --ink: #F3EFE6; --body: #BDB8AD; --link: #F0577F; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
-    --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(240,87,127,.40);
+    --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(63,193,171,.34); --btn: #1A7F70; --btn-hover: #22977F; --btn-bg: #10241F;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0B0A0A; --surface: #171515; --text: #F3EFE6; --text-soft: #BDB8AD; --muted: #A39E93; --line: #2C2926;
   --ink: #F3EFE6; --body: #BDB8AD; --link: #F0577F; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
-  --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(240,87,127,.40);
+  --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(63,193,171,.34); --btn: #1A7F70; --btn-hover: #22977F; --btn-bg: #10241F;
 }
 
 * { box-sizing: border-box; }
@@ -222,7 +223,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 .opt:hover { border-color: var(--gold-deep); }
 .opt input { position: absolute; opacity: 0; }
 .opt .mark { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--warm-grey); flex: none; display: grid; place-items: center; }
-.opt:has(input:checked) { border-color: var(--btn); background: var(--bad-bg); }
+.opt:has(input:checked) { border-color: var(--btn); background: var(--btn-bg); }
 .opt:has(input:checked) .mark { border-color: var(--btn); background: radial-gradient(var(--btn) 0 45%, transparent 50%); }
 .opt:has(input:focus-visible) { outline: 3px solid var(--gold); outline-offset: 2px; }
 .opt.right { border-color: var(--good); background: var(--good-bg); }
@@ -468,20 +469,21 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .wins li svg { width: 18px; height: 18px; flex: none; color: var(--good, #2f8f5b); }
 
 /* One look per function, so a card or button tells you what it does before you read it:
-   teal = Second Chance (fix my mistakes), gold = Surprise me, blue-grey = reference (rule cards), raspberry = the main practice action. */
-:root { --chance: #1E8776; --chance-deep: #166B5D; --chance-bg: #E3F3EF; --ref: #5B6B8C; --ref-bg: #EEF1F7; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chance: #3FC1AB; --chance-deep: #2FA08D; --chance-bg: #10241F; --ref: #9AA9C8; --ref-bg: #1B2030; } }
-:root[data-theme="dark"] { --chance: #3FC1AB; --chance-deep: #2FA08D; --chance-bg: #10241F; --ref: #9AA9C8; --ref-bg: #1B2030; }
+   deep teal = practice (the main action, level choice), light raspberry = Second Chance (your mistakes), gold = Surprise me, blue-grey = reference (rule cards). */
+:root { --chance: #C93A63; --chance-deep: #A82D52; --chance-bg: #FCE9EF; --ref: #5B6B8C; --ref-bg: #EEF1F7; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chance: #C93A63; --chance-deep: #E0557D; --chance-bg: #2C1620; --ref: #9AA9C8; --ref-bg: #1B2030; } }
+:root[data-theme="dark"] { --chance: #C93A63; --chance-deep: #E0557D; --chance-bg: #2C1620; --ref: #9AA9C8; --ref-bg: #1B2030; }
 .card.fn-chance { background: var(--chance-bg); border-color: var(--chance); border-left-width: 6px; margin-top: 12px; }
 .btn.fn-chance { background: var(--chance); color: #fff; }
 .btn.fn-chance:hover { background: var(--chance-deep); }
 .btn.fn-chance svg { width: 18px; height: 18px; }
+.sess.mode-chance .btn:not(.ghost):not(.dark) { background: var(--chance); }
+.sess.mode-chance .btn:not(.ghost):not(.dark):hover { background: var(--chance-deep); }
+.sess.mode-chance .progress > i { background: var(--chance); }
 .btn.fn-surprise { background: var(--gold-pale); color: var(--text); border: 1.5px solid var(--gold-deep); }
 .btn.fn-surprise:hover { background: var(--gold); }
 .card.fn-ref { background: var(--ref-bg); border-color: var(--ref); border-left-width: 6px; }
-.fixed-line { color: var(--chance); }
-.fixed-line svg { color: var(--chance); }
-
+.fixed-line, .fixed-line svg { color: var(--good); }
 .lvseg label.off span { opacity: .35; cursor: not-allowed; text-decoration: line-through; text-decoration-thickness: 1px; }
 .lvseg input[disabled] + span { background: transparent; }
 .picker-group h3 { margin: 14px 0 8px; }

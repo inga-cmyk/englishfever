@@ -15,5 +15,4 @@ $_REQUEST=[]; $_COOKIE=['ef_return'=>'123']; run('from the app (cookie)');
 
 // where a visitor signs in
 echo "== login page\n";
-if ( true ) { function get_page_by_path( $p ) { return null; } function get_permalink( $x ) { return 'x'; } }
-echo ' page not found: ', ef_practice_login_page(), "\n";
+echo ' default: ', ef_practice_login_page(), "\n";

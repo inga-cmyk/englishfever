@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.8.1
+ * Version:     1.8.2
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -32,7 +32,7 @@
  * The WordPress login page itself (wp-login.php) is shown in the app's colours when someone arrives from the app (not for other
  * logins): English Fever as the title, cream background, teal button, no "Go to site" link.
  *
- * Who is not logged in is sent to the Tutor login page, https://englishfever.com/en/tutor-login/ (found by its slug tutor-login).
+ * Who is not logged in is sent to the English Tutor login page, https://englishfever.com/en/tutor-login/.
  * After the login, the first page leads into the app (see above).
  *
  * Optional, to use another login page instead:
@@ -85,16 +85,12 @@ function ef_practice_token( WP_User $user ) {
 }
 
 /**
- * The page where a visitor signs in: EF_PRACTICE_LOGIN_URL if it is defined, else the Tutor login page of englishfever.com
- * (the page with the slug "tutor-login", else https://englishfever.com/en/tutor-login/).
+ * The page where a visitor signs in: EF_PRACTICE_LOGIN_URL if it is defined, else the English Tutor login page of englishfever.com.
+ * (Looking the page up by its slug found the Latvian page, the site's default language, so the address is fixed.)
  */
 function ef_practice_login_page() {
 	if ( defined( 'EF_PRACTICE_LOGIN_URL' ) && EF_PRACTICE_LOGIN_URL ) {
 		return (string) EF_PRACTICE_LOGIN_URL;
-	}
-	$page = get_page_by_path( 'tutor-login' );
-	if ( $page && 'publish' === $page->post_status && get_permalink( $page ) ) {
-		return (string) get_permalink( $page );
 	}
 	return 'https://englishfever.com/en/tutor-login/';
 }

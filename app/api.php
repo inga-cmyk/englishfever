@@ -54,7 +54,8 @@ try {
 
         case 'meta':
             $m = Content::liveMeta();
-            out(['levels' => $m['levels'], 'areas' => $m['areas'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN, 'placement_sizes' => Engine::PLACEMENT_SIZES]);
+            $lc = Content::levelCounts();
+            out(['levels' => $m['levels'], 'full_levels' => Content::FULL_LEVELS, 'level_counts' => $lc['all'], 'skill_counts' => $lc['by_skill'], 'areas' => $m['areas'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN, 'placement_sizes' => Engine::PLACEMENT_SIZES]);
 
         case 'me':
             $u = Auth::user();
@@ -129,7 +130,7 @@ try {
         case 'session/start':
             $u = Auth::require();
             throttle('sess:' . hash('sha256', $_SERVER['REMOTE_ADDR'] ?? '?'), 150, 3600, 'Too many new sessions from this connection. Please wait a little.');
-            out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10)));
+            out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10), isset($in['levels']) ? (array) $in['levels'] : null));
 
         case 'session/resume':
             $u = Auth::require();

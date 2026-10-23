@@ -1,0 +1,10 @@
+const { chromium } = require('playwright');
+const BASE='http://127.0.0.1:8099', OUT=__dirname+'/shots/';
+(async()=>{const b=await chromium.launch();const ctx=await b.newContext({viewport:{width:390,height:900}});const p=await ctx.newPage();
+await p.goto(BASE+'/sso-demo.php?uid='+(8800+Math.floor(Math.random()*90))+'&name=Pic%20Shot');await p.waitForSelector('#fn');await p.click('button[type=submit]');await p.waitForSelector('.hello h1');
+await p.goto(BASE+'/index.html#/practice');await p.waitForSelector('.lvseg');await p.waitForTimeout(300);
+await p.screenshot({path:OUT+'picker-a2.png',fullPage:true});
+await p.locator('.lvseg label',{hasText:/^B1$/}).click();await p.waitForTimeout(200);
+await p.evaluate(()=>document.querySelectorAll('details.picker-group').forEach(d=>{d.open=true;}));await p.waitForTimeout(200);
+await p.screenshot({path:OUT+'picker-a2b1.png',fullPage:true});
+await b.close();})();

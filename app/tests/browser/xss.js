@@ -1,0 +1,24 @@
+const { chromium } = require('playwright');
+const crypto = require('crypto'); const BASE = 'http://127.0.0.1:8099';
+const SECRET = 'local-dev-secret-local-dev-secret-local-dev-secret-0000';
+const tok = p => { const x = Buffer.from(JSON.stringify(p)).toString('base64url'); return x + '.' + crypto.createHmac('sha256', SECRET).update(x).digest('base64url'); };
+(async () => {
+  const b = await chromium.launch(); let ok = true; const check = (n, c) => { ok = ok && c; console.log((c ? 'PASS ' : 'FAIL ') + n); };
+  const evil = '<img src=x onerror="window.__xss=1"><script>window.__xss=2</script>';
+  const v = await (await b.newContext()).newPage();
+  await v.goto(BASE + '/sso.php?token=' + tok({ uid: 4242, name: evil, teacher: false, exp: Math.floor(Date.now() / 1000) + 100, n: 'x' + Date.now() }));
+  await v.waitForSelector('#fn'); const shown = await v.inputValue('#fn');
+  check('hostile website name is cleaned before it is suggested as a display name', !/[<>]/.test(shown) && !/script/i.test(shown));
+  await v.click('button[type=submit]'); await v.waitForSelector('.hello h1');
+  const t = await (await b.newContext()).newPage(); const errs = []; t.on('pageerror', e => errs.push(e.message));
+  await t.goto(BASE + '/sso.php?token=' + tok({ uid: 1, name: 'Inga Teacher', teacher: true, exp: Math.floor(Date.now() / 1000) + 100, n: 'y' + Date.now() }));
+  await t.waitForSelector('table'); await t.waitForTimeout(300);
+  check('teacher list: hostile text is only text, nothing ran', !(await t.evaluate(() => window.__xss)) && !(await t.locator('img[src="x"]').count()));
+  await t.locator('td.name a').first().click(); await t.waitForSelector('.hello h1'); await t.waitForTimeout(300);
+  check('teacher student page: nothing ran', !(await t.evaluate(() => window.__xss)) && !(await t.locator('script:not([src])').count()));
+  const g = await (await b.newContext()).newPage(); await g.goto(BASE + '/index.html'); await g.fill('#nick', 'Markup <b>fan</b>'); await g.click('button[type=submit]');
+  await g.waitForSelector('.err'); check('markup in a guest name is refused with a message', /letters or numbers/.test(await g.locator('.err').innerText()));
+  const q = await (await b.newContext()).newPage(); const t0 = Date.now(); await q.goto(BASE + '/index.html'); await q.waitForSelector('#nick'); await q.click('button[type=submit]');
+  await q.waitForSelector('.hello h1'); check('a very fast guest is not shown an error (the form waits quietly)', true);
+  check('no page errors', errs.length === 0); console.log(ok ? '\nALL PASS' : '\nSOME FAILED'); await b.close(); process.exit(ok ? 0 : 1);
+})();

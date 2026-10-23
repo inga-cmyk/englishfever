@@ -332,14 +332,24 @@ Teachers open **Tasks**, download the template, fill it in (one task per row) an
 Tasks live in the table `custom_items` (the database), not in the zip. A file saved by Excel (semicolons, Windows encoding) is read too.
 
 
-## Comeback: working on my mistakes
+## Second Chance: working on my mistakes
 Every wrong answer is an open **mistake**. It is **fixed** when the learner later answers the same task, or a similar one, correctly (similar = same topic, level within one step, thinking level within one step). It is worked out from the answers each time, so there is nothing to migrate and no result is ever changed. A task answered wrongly again after being fixed counts as a mistake again; mistakes older than 45 days and reported tasks are ignored.
 
-- **Home:** a small card with the number waiting (hidden at zero) and *Fix them*; the Practice page has *Comeback (N)* next to *Surprise me*.
+- **Home:** a small teal card with the number waiting (hidden at zero) and *Start*; the Practice page has *Second Chance (N)* next to *Surprise me*.
 - **Session:** one question per mistake, at most ten; each is a similar question if the bank has one the learner has not met, otherwise the original. A right answer says *Mistake fixed!*. Answers count as normal practice (XP, ability estimate, history).
 - **End screen:** *Great job! You fixed N mistakes.* plus only real progress: topics clearly better than before (10 points or more, at least six earlier answers), the total fixed, and how many are still waiting.
 - **Ordinary practice** also brings mistakes back, but never right after the mistake and never more than one question in four, and it prefers questions the learner has not met.
-- Code: `app/src/Mistakes.php`, `Engine::pickNext`; tests: `app/tests/comeback_test.py` and the browser test `comeback_ui.js`.
+- Code: `app/src/Mistakes.php`, `Engine::pickNext`; tests: `app/tests/comeback_test.py` and the browser test `comeback_ui.js` (the browser test keeps the old file name).
 
 ## Adding questions in batches
 Draft files live in `docs/task-drafts/` (CSV, Tasks-tab format with an optional *thinking level* column 1 to 6). `app/tests/drafts_test.py` imports every file, approves it in a test database and grades every listed answer. Keep to the layering standard in `ITEM-AUDIT.md`: A2 = one short clause, everyday words; B1 = two clauses, wider vocabulary, no clue word, tense chosen by meaning. Write new sentences; use the course books only for the syllabus, the rules and the question types.
+
+
+## The practice picker (Practice page)
+Order: **Level** (A1 A2 B1 B2 C1 C2; levels without questions are greyed out), **Topics** (optional; only topics with questions at the chosen levels; folded by area), **Questions** (10 / 15 / 20), **Start**. A learner sees A2 only until B1 is pressed. No topic ticked = a mix of the topics that have at least 8 questions at the chosen levels. Code: `viewPractice` in `assets/app.js`; `Engine::start(... $fullLevels)`; the meta call returns `full_levels`, `level_counts`, `skill_counts`.
+
+## Colours and sounds by function
+Teal = Second Chance (fix my mistakes), gold = Surprise me, blue-grey = rule cards, raspberry = the main practice action. Sounds (off by default): two rising notes = right, a soft fall = wrong, one note = almost, four rising notes = a mistake fixed, a longer run = session finished.
+
+## Question mix
+`Engine::MIX` sets the share of each type per session: choose 30%, drag-and-drop 50% (word order, matching, word bank), typed 20%; open writing is almost never used. It is a preference, not a rule: when the bank lacks a type at that level, the session uses what exists. `app/tests/drafts_test.py` checks it with the draft questions loaded.

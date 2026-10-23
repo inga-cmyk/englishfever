@@ -15,6 +15,11 @@ The Latvian explanations (up to B1.2) use standard Latvian grammar terms where t
 | netiešajā daļā nav does | **palīgteikumā** nav does | the embedded question is a subordinate clause (palīgteikums) |
 | if daļa var būt otrā vietā (rule card) | **nosacījuma palīgteikums (if daļa)** var būt otrā vietā | formal term, with the learner word in brackets |
 
+## New texts (drafts in `docs/task-drafts/`): how they were checked
+Every Latvian explanation in the question drafts and the two new rule cards (Modal verbs, Comparison) was written to this page and checked by `app/tests/latvian_lint.py`, which fails on: *pasīvs / aktīvs*, *divdabis* (use **3. forma**), *jautājuma vārds*, *tagadnes / pagātnes ilgstošā forma* (use **Present Continuous / Past Continuous**), *vienkāršā tagadne / pagātne* (use **Present Simple / Past Simple**), *salīdzināmā forma*, *priekšmets* without *teikuma* or *teik.*, and any English word that is not marked as an example. The generator (`docs/task-drafts/_src/lib.py`) rewrites old wording to these terms.
+
+New terms in the Comparison card, **not yet checked by a Latvian teacher**: *pārākā pakāpe* (comparative), *vispārākā pakāpe* (superlative), *īpašības vārds* (adjective), *apstākļa vārds* (adverb). They are the standard terms of Latvian school grammar; please confirm.
+
 ## Standard terms already in use (checked, no change)
 
 darbības vārds · noliegums · jautājums · vārdu secība · netiešā runa / tiešā runa · palīgdarbības vārds · palīgteikums · laika palīgteikums · papildinātājs · vienskaitlis / daudzskaitlis · tagadne / pagātne / nākotne

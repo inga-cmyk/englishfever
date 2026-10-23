@@ -85,6 +85,21 @@ final class Content
         return $m;
     }
 
+    public const FULL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+
+    /** How many live questions there are per full level (A2, B1 ...), in all and per topic: what the practice picker shows. */
+    public static function levelCounts(): array
+    {
+        $all = array_fill_keys(self::FULL_LEVELS, 0);
+        $by = [];
+        foreach (self::items() as $it) {
+            $full = substr($it['level'], 0, 2);
+            $all[$full] = ($all[$full] ?? 0) + 1;
+            $by[$it['skill']][$full] = ($by[$it['skill']][$full] ?? 0) + 1;
+        }
+        return ['all' => $all, 'by_skill' => $by];
+    }
+
     public static function item(string $id): ?array
     {
         self::items();

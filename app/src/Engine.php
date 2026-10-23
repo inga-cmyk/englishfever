@@ -23,7 +23,7 @@ final class Engine
 
     // ───────── sessions ─────────
 
-    public static function start(int $uid, string $mode, array $skills, ?string $level, int $len): array
+    public static function start(int $uid, string $mode, array $skills, ?string $level, int $len, ?array $fullLevels = null): array
     {
         $meta = Content::liveMeta();
         $all = array_column($meta['skills'], 'id');
@@ -49,6 +49,19 @@ final class Engine
                 $smart = true;
                 $mode = 'practice';
             }
+            if ($fullLevels !== null) {
+                // levels first: whole levels (A2, B1 ...), with or without topics; no topic = a mix of the topics that have questions there
+                $fullLevels = array_values(array_intersect(Content::FULL_LEVELS, array_map('strval', $fullLevels)));
+                $allowed = array_values(array_filter($meta['levels'], fn($l) => in_array(substr($l, 0, 2), $fullLevels, true)));
+                if (!$fullLevels) throw new ApiError('Choose a level.', 400);
+                if (!$allowed) throw new ApiError('No questions at this level yet.', 404);
+                $counts = Content::levelCounts()['by_skill'];
+                $have = fn($sid) => array_sum(array_map(fn($f) => $counts[$sid][$f] ?? 0, $fullLevels));
+                $skills = array_values(array_filter(array_intersect($skills, $all), fn($sid) => $have($sid) > 0));
+                if (!$skills) $skills = array_values(array_filter($all, fn($sid) => $have($sid) >= 8));   // a mix
+                if (!$skills) throw new ApiError('No questions at this level yet.', 404);
+                $level = $allowed[0];
+            }
             $skills = array_values(array_intersect($skills, $all));
             if (!$skills) throw new ApiError('Choose at least one topic.', 400);
             if (!isset(Content::BASE[$level]) || !in_array($level, $meta['levels'], true)) throw new ApiError('Choose a level.', 400);
@@ -60,6 +73,7 @@ final class Engine
         $state = ['current' => null, 'seed' => random_int(1, 1 << 30), 'served' => [], 'theta' => [], 'g' => 2.0, 'last' => []];
         if ($smart) $state['smart'] = true;
         if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; }
+        if (!empty($allowed)) $state['levels'] = $allowed;
         $state['fixed'] = 0;
         if ($mode === 'practice') {
             foreach ($skills as $s) {
@@ -75,7 +89,7 @@ final class Engine
         ]);
         $ses = self::load($uid, $sid);
         $item = self::pickNext($ses);
-        if (!$item) throw new ApiError('No tasks found for this choice yet.', 404);
+        if (!$item) throw new ApiError('No questions found for this choice yet.', 404);
         $ses['state']['current'] = $item['id'];
         $ses['state']['served'][] = $item['id'];
         self::save($ses);
@@ -337,6 +351,7 @@ final class Engine
         foreach (Content::items() as $it) {
             if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
             if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4)) continue;
+            if (!empty($st['levels']) && !in_array($it['level'], $st['levels'], true)) continue;   // the levels the learner chose
             $bySkill[$it['skill']][] = $it;
         }
         if (!$placement) {

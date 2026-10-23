@@ -87,4 +87,28 @@ check("sessions have at most 3 typed questions in 10 (typed per session: %s)" % 
 check("sessions have at least 3 drag-and-drop questions in 10 (per session: %s)" % drag, min(drag) >= 3, drag)
 check("sessions have at least 2 and at most 5 multiple-choice questions in 10 (per session: %s)" % choose, 2 <= min(choose) and max(choose) <= 5, choose)
 check("open writing does not appear in these sessions", all("write" not in g for g in mixes), mixes)
+# ---- levels first: whole levels, with or without topics
+def run_levels(levels, skills, n=10):
+    lr = login(9600 + abs(hash(str(levels) + str(skills))) % 300, "Level Learner")
+    st = lr.api("session/start", {"mode": "practice", "skills": skills, "levels": levels, "length": n})
+    if st["_status"] != 200: return st, []
+    sid, item, seen = st["session"]["id"], st["item"], []
+    while item:
+        full = [i for i in ITEMS if i["id"] == item["id"]]
+        seen.append(item)
+        a = lr.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": "zzz" if item["kind"] in ("text", "write") else ([] if item["kind"] in ("order", "match") else (["zzz"] if item["kind"] == "gap" else item["options"][0])), "time_ms": 2000})
+        item = a.get("next")
+    return st, seen
+import json as _json
+ITEMS = _json.load(open(os.path.join(APP, "content", "items.json"), encoding="utf-8"))
+ITEMS = ITEMS if isinstance(ITEMS, list) else ITEMS["items"]
+LEVEL_OF = {i["id"]: i["level"] for i in ITEMS}
+ms = learner.api("meta")
+check("meta lists the full levels and how many questions each has", ms["full_levels"] == ["A1", "A2", "B1", "B2", "C1", "C2"] and ms["level_counts"]["A2"] > 100 and ms["level_counts"]["A1"] == 0 and ms["level_counts"]["C2"] == 0, ms.get("level_counts"))
+st, seen = run_levels(["A2"], ["present_simple"])
+check("A2 only: every question is A2", seen and all(LEVEL_OF.get(i["id"], "A2.9").startswith("A2") or i["id"].startswith("c-") for i in seen), [i["id"] for i in seen])
+st, seen = run_levels(["B1"], [])
+check("B1 with no topic: a mix of several topics", len({i["skill"] for i in seen}) >= 4, len({i["skill"] for i in seen}))
+check("A1 has no questions yet: said plainly", run_levels(["A1"], [])[0]["_status"] == 404)
+
 print("\nALL PASS" if ok else "\nSOME FAILED"); raise SystemExit(0 if ok else 1)

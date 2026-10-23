@@ -48,10 +48,10 @@
     if (!l) return s.levels[0];
     return state.meta.levels[Math.max(levelIdx(s.levels[0]), Math.min(levelIdx(s.levels[s.levels.length - 1]), levelIdx(l)))];
   }
-  /** One tap: a 10-task session in this topic. */
+  /** One tap: a 10-question session in this topic. */
   function startTopic(btn, s, d) {
     btn.disabled = true;
-    api('session/start', { mode: 'practice', skills: [s.id], level: topicLevel(s, d), length: 10 }).then(function (r) {
+    api('session/start', { mode: 'practice', skills: [s.id], levels: [topicLevel(s, d).slice(0, 2)], length: 10 }).then(function (r) {
       state.sess = newSess(r.session, r.item); location.hash = '#/session';
     }).catch(function (e) { btn.disabled = false; UI.toast(e.message); });
   }
@@ -165,7 +165,7 @@
     if (!state.user) { chrome.replaceChildren(); return; }
     var teacher = state.user.role === 'teacher';
     var items = teacher
-      ? [['#/teacher', 'Students', 'users'], ['#/reports', 'Reports', 'flag', state.user.reports_open], ['#/tasks', 'Tasks', 'book'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
+      ? [['#/teacher', 'Students', 'users'], ['#/reports', 'Reports', 'flag', state.user.reports_open], ['#/tasks', 'Add questions', 'book'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
       : [['#/home', 'Home', 'home'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']];
     if (!feat('leaderboard')) items = items.filter(function (i) { return i[0] !== '#/leaderboard'; });
     var nav = h('nav', { class: 'nav', 'aria-label': 'Main' }, items.map(function (i) {
@@ -265,7 +265,7 @@
       h('section', { class: 'hero' },
         h('div', { class: 'bar' }),
         h('h1', null, 'Practise English grammar. ', h('em', null, 'Know what to fix next.')),
-        h('p', null, 'Short tasks for adult learners, A2.1 to C1. Clear feedback after every answer.'),
+        h('p', null, 'Short grammar questions for adult learners, A2 to C1. Clear feedback after every answer.'),
         cfg.beta ? h('p', { class: 'betaline' }, betaPill()) : null,
         h('div', { class: 'points' },
           h('div', null, h('b', null, 'Placement test'), '24 quick questions.'),
@@ -381,14 +381,14 @@
         var wl = state.welcome;
         nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--good)' },
           h('div', null, h('b', { style: 'color:var(--text)' }, 'Your account is ready'),
-            h('div', { class: 'small muted' }, 'Guest results moved over: ' + wl.answers + ' tasks, ' + wl.xp + ' XP.')),
+            h('div', { class: 'small muted' }, 'Guest results moved over: ' + wl.answers + ' questions, ' + wl.xp + ' XP.')),
           h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
       }
       nodes.push(h('div', { class: 'hello' },
         h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 48),
           h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
-            h('p', { class: 'muted' }, !started ? 'Short grammar tasks that adapt to you.' : d.streak.today_done ? 'You practised today. Nice work!'
-              : (!feat('streak') ? 'Do a few tasks today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Do one task today to start a streak.')))))));
+            h('p', { class: 'muted' }, !started ? 'Short grammar questions that adapt to you.' : d.streak.today_done ? 'You practised today. Nice work!'
+              : (!feat('streak') ? 'Answer a few questions today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Answer one question today to start a streak.')))))));
 
       // the one thing to do now
       var main, mainBtn;
@@ -533,7 +533,7 @@
       h('div', { class: 'meter gold', 'aria-label': 'Accuracy' }, h('i', { style: 'width:' + (s.accuracy || 0) + '%' })),
       h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.n + ' done · ' + s.accuracy + '% correct' : 'Not started'),
         h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' },
-          h('button', { class: 'linkbtn small', type: 'button', title: 'Choose the level and the number of tasks', onclick: function () { state.prefill = { skills: [s.id], level: topicLevel(s, d) }; location.hash = '#/practice'; } }, 'Options'),
+          h('button', { class: 'linkbtn small', type: 'button', title: 'Options', onclick: function () { state.prefill = { skills: [s.id], level: topicLevel(s, d) }; location.hash = '#/practice'; } }, 'Options'),
           go)));
   }
 
@@ -594,7 +594,7 @@
         h('p', { class: 'small muted' }, '70% or more wrong, at least 8 answers.'),
         r.hard.map(function (x) { return h('div', { class: 'card pad-s rep' }, taskHead(x.task), h('div', { class: 'small muted' }, x.pct + '% wrong · ' + x.n + ' answers')); })] : [];
       show(h('div', null,
-        h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Reported tasks')),
+        h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Reported questions')),
           h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/reports-export' }, 'Download CSV')),
         h('div', { style: 'margin-bottom:16px' }, seg), list, hard));
     }).catch(fail);
@@ -619,7 +619,7 @@
           e.target.disabled = true;
           api('teacher/items-import', { csv: csv, confirm: true }).then(function (x) { UI.toast(x.ok + ' added as drafts'); state.taskTab = 'draft'; viewTasks(); })
             .catch(function (er) { e.target.disabled = false; UI.toast(er.message); });
-        } }, 'Add ' + res.ok + (res.ok === 1 ? ' task' : ' tasks') + ' as drafts') : null;
+        } }, 'Add ' + res.ok + (res.ok === 1 ? ' question' : ' questions') + ' as drafts') : null;
         result.replaceChildren(h('div', { class: 'card', style: 'margin-bottom:16px' },
           h('h2', { style: 'margin:0 0 8px' }, res.ok + ' ready' + (res.bad ? ', ' + res.bad + ' with problems' : '')),
           bad.length ? h('ul', { class: 'rep-list-plain' }, bad.map(function (x) { return h('li', { style: 'margin-bottom:8px' }, h('b', null, 'Row ' + x.line + ': '), (x.q || '').slice(0, 70), h('div', { class: 'err small', style: 'margin:2px 0 0' }, x.errors.join(' '))); })) : null,
@@ -649,9 +649,9 @@
       });
       var bulk = (tab === 'draft' && r.items.draft.length > 1) ? h('button', { class: 'btn small', style: 'margin-left:12px', onclick: function () { setStatus(r.items.draft.map(function (x) { return x.id; }), 'approved'); } }, 'Approve all ' + r.items.draft.length) : null;
       show(h('div', null,
-        h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Tasks')),
+        h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Questions')),
           h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/items-template' }, 'Download template')),
-        h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', { style: 'margin:0 0 10px' }, 'Add tasks from a CSV file'), file,
+        h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', { style: 'margin:0 0 10px' }, 'Add questions from a CSV file'), file,
           h('details', { style: 'margin-top:12px' }, h('summary', { class: 'small' }, 'Topic names'), h('ul', { class: 'small', style: 'columns:2;margin:8px 0 0' }, r.topics.map(function (t) { return h('li', null, t); })))),
         result,
         h('div', { style: 'margin:8px 0 14px' }, seg, bulk),
@@ -660,7 +660,7 @@
   }
 
   // ───────── test version notice ─────────
-  function betaPill() { return h('span', { class: 'betapill', title: 'This is a test version: the tasks are still being checked' }, h('span', { class: 'long' }, 'Test version'), h('span', { class: 'short' }, 'Test')); }
+  function betaPill() { return h('span', { class: 'betapill', title: 'This is a test version: the questions are still being checked' }, h('span', { class: 'long' }, 'Test version'), h('span', { class: 'short' }, 'Test')); }
   // ───────── placement ─────────
   function viewPlacementIntro() {
     var sizes = [[12, 'Quick', 'about 5 minutes'], [24, 'Medium', 'about 10 minutes'], [40, 'Full', 'about 18 minutes']];
@@ -685,70 +685,69 @@
     if (!state.dash) { var pf = state.prefill; return refreshDash().then(function () { state.prefill = pf; viewPractice(); }).catch(fail); }
     var d = state.dash;
     var pre = state.prefill; state.prefill = null;
-    var guess = (d && d.placement && d.placement.report) ? d.placement.report.overall_level : 'A2.2';
+    var FULL = state.meta.full_levels, COUNT = state.meta.level_counts, SKC = state.meta.skill_counts || {};
+    var LEVEL_NAMES = { A1: 'Elementary', A2: 'Pre-intermediate', B1: 'Intermediate', B2: 'Upper-intermediate', C1: 'Advanced', C2: 'Proficient' };
+    function full(l) { return String(l || '').slice(0, 2); }
+    var guess = full((d && d.placement && d.placement.report) ? d.placement.report.overall_level : (learnerLevel(d) || 'A2.1'));
+    var levels = {}; levels[(pre && pre.level) ? full(pre.level) : (COUNT[guess] ? guess : 'A2')] = true;
     var selected = {};
     (pre ? pre.skills : []).forEach(function (s) { selected[s] = true; });
-    var level = pre ? pre.level : guess;
     var length = 10;
-    var note = h('div', { class: 'small muted', 'aria-live': 'polite' });
-    var startBtn = h('button', { class: 'btn', disabled: true }, 'Start practice');
+    var startBtn = h('button', { class: 'btn', type: 'button' }, 'Start');
     var err = h('div');
+    var holder = h('div');
 
-    function checkbox(s) {
-      var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; update(); } });
-      return h('label', null, inp, h('span', null, s.label, ' ', h('small', null, levelRange(s))));
-    }
-    var openMap = {};   // areas the learner opened or closed; every area starts closed, except the ones with chosen topics
+    function chosenLevels() { return FULL.filter(function (l) { return levels[l]; }); }
+    function countAt(s) { return chosenLevels().reduce(function (n, l) { return n + ((SKC[s.id] || {})[l] || 0); }, 0); }
+    function shortLabel(s) { return s.label.replace(/\s*[(:].*$/, ''); }
+
+    var openMap = {};   // areas start closed, except the ones with chosen topics
     function group(area) {
-      var every = state.meta.skills.filter(function (s) { return s.area === area.id; });
-      var dashOf = function (s) { return d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }; };
-      var list = every.filter(function (s) { return showHigh() || selected[s.id] || inReach(dashOf(s), d); });
+      var list = state.meta.skills.filter(function (s) { return s.area === area.id && countAt(s) > 0; });
       if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : n > 0 },
-        h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', 'data-cnt': area.id, style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
-        h('div', { class: 'row', style: 'margin:6px 0 8px' }, h('button', { class: 'linkbtn small', type: 'button', onclick: function () { list.forEach(function (s) { selected[s.id] = true; }); redraw(); } }, 'Select all')),
-        h('div', { class: 'chipsel', role: 'group', 'aria-label': area.label }, list.map(checkbox)));
+        h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
+        h('div', { class: 'chipsel', role: 'group', 'aria-label': area.label }, list.map(function (s) {
+          var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; redrawLater(); } });
+          return h('label', null, inp, h('span', null, shortLabel(s)));
+        })));
       det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
       return det;
     }
-    function update() {
-      var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
-      startBtn.disabled = ids.length === 0;
-      holder.querySelectorAll('[data-cnt]').forEach(function (el) {
-        var n = state.meta.skills.filter(function (s) { return s.area === el.getAttribute('data-cnt') && selected[s.id]; }).length;
-        el.textContent = n + ' chosen'; el.style.display = n ? '' : 'none';
-      });
-      var low = ids.map(skillById).filter(function (s) { return s.levels.indexOf(level) < 0; });
-      note.textContent = low.length ? low.length + (low.length === 1 ? ' topic has' : ' topics have') + ' no tasks at ' + level + '. The nearest level is used.' : '';
-    }
-    var holder = h('div');
+    var timer = null;
+    function redrawLater() { clearTimeout(timer); timer = setTimeout(redraw, 0); }
     function redraw() {
-      var hiddenN = state.meta.skills.filter(function (s) { return !(showHigh() || selected[s.id] || inReach(d.skills.filter(function (x) { return x.id === s.id; })[0] || { n: 0, levels: s.levels }, d)); }).length;
-      holder.replaceChildren.apply(holder, state.meta.areas.map(group).concat([
-        highLink(hiddenN, showHigh(), redraw),
-        h('div', { class: 'picker-group' }, h('h3', null, 'Level'),
-          h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Level' }, state.meta.levels.map(function (l) {
-            return h('label', null, h('input', { type: 'radio', name: 'lv', value: l, checked: l === level, onchange: function () { level = l; update(); } }), h('span', null, l));
-          }))),
-        h('div', { class: 'picker-group' }, h('h3', null, 'Length'),
-          h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of tasks' }, [10, 15, 20].map(function (n) {
-            return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, n + ' tasks'));
-          })))]));
-      update();
+      // topics that have no questions at the chosen levels disappear (and are unticked)
+      state.meta.skills.forEach(function (s) { if (selected[s.id] && countAt(s) === 0) delete selected[s.id]; });
+      var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
+      startBtn.replaceChildren(ids.length ? 'Start' : 'Start mixed practice');
+      startBtn.disabled = chosenLevels().length === 0;
+      var levelRow = h('div', { class: 'seg lvseg', role: 'group', 'aria-label': 'Level' }, FULL.map(function (l) {
+        var has = (COUNT[l] || 0) > 0;
+        var inp = h('input', { type: 'checkbox', value: l, checked: !!levels[l], disabled: !has, onchange: function () { levels[l] = inp.checked; redraw(); } });
+        return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, l));
+      }));
+      holder.replaceChildren(
+        h('div', { class: 'picker-group' }, h('h3', null, 'Level'), levelRow),
+        h('div', { class: 'picker-group' }, h('h3', null, 'Topics', ' ', h('small', { class: 'muted' }, 'optional')), h('div', null, state.meta.areas.map(group))),
+        h('div', { class: 'picker-group' }, h('h3', null, 'Questions'),
+          h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of questions' }, [10, 15, 20].map(function (n) {
+            return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, String(n)));
+          }))));
     }
     startBtn.addEventListener('click', function () {
       startBtn.disabled = true;
       var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
-      api('session/start', { mode: 'practice', skills: ids, level: level, length: length }).then(function (r) {
+      api('session/start', { mode: 'practice', skills: ids, levels: chosenLevels(), length: length }).then(function (r) {
         state.sess = newSess(r.session, r.item); location.hash = '#/session';
       }).catch(function (e) { startBtn.disabled = false; err.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
     });
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
-      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), h('span', { class: 'row', style: 'gap:8px' }, (d.comeback && d.comeback.open) ? comebackButton('btn small fn-chance', 'Second Chance (' + d.comeback.open + ')') : null, surpriseButton('btn small fn-surprise'))),
-      holder, note, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
-        h('a', { class: 'btn ghost', href: '#/placement' }, 'Take the placement test instead')))));
+      h('div', { class: 'row between' }, h('h1', { style: 'margin:0' }, 'Practice'), h('span', { class: 'row', style: 'gap:8px' }, (d.comeback && d.comeback.open) ? comebackButton('btn small fn-chance', 'Second Chance (' + d.comeback.open + ')') : null, surpriseButton('btn small fn-surprise'))),
+      holder, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
+        h('a', { class: 'linkbtn small', href: '#/placement' }, 'Placement test')))));
   }
 
   // ───────── session ─────────
@@ -940,7 +939,7 @@
       }
       fb.appendChild(ruleDetails(res.skill, !good, lv));
 
-      var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next task';
+      var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
       if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
         var older = olderOf(at), newer = H.filter(function (e) { return e.n > at; }).sort(function (a, b) { return a.n - b.n; })[0];
@@ -948,7 +947,7 @@
           h('span', { class: 'row', style: 'gap:8px' },
             older ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(older.n); } }, '‹ Previous') : null,
             newer ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(newer.n); } }, 'Next ›') : null),
-          h('button', { class: 'btn', onclick: function () { viewSession(); } }, S.last ? 'Back to task ' + (S.curN + 1) + ' feedback' : 'Back to task ' + (S.curN + 1), icon('arrow'))));
+          h('button', { class: 'btn', onclick: function () { viewSession(); } }, S.last ? 'Back to question ' + (S.curN + 1) + ' feedback' : 'Back to question ' + (S.curN + 1), icon('arrow'))));
         var wasOpenR = feedback.querySelector('details.rule[open]');
         feedback.replaceChildren(fb);
         if (wasOpenR) { var dr = fb.querySelector('details.rule'); if (dr) dr.open = true; }
@@ -975,15 +974,15 @@
     }
 
     function olderOf(n) { return H.filter(function (e) { return e.n < n; }).sort(function (a, b) { return b.n - a.n; })[0] || null; }
-    var dotsEl = h('div', { class: 'dots', role: 'group', 'aria-label': 'Tasks in this session' });
+    var dotsEl = h('div', { class: 'dots', role: 'group', 'aria-label': 'Questions in this session' });
     function drawDots() {
       if (!H.length) { dotsEl.replaceChildren(); return; }
       var items = [];
       for (var i = 0; i < ses.length; i++) {
         (function (i) {
           var e = entry(i), on = i === at, isCur = i === S.curN;
-          var label = 'Task ' + (i + 1) + (e ? (e.result.correct ? ', correct' : ', not correct') + (on ? ', shown now' : ', look back') : (isCur ? ', the task you are on' : ', not done yet'));
-          items.push(h('button', { type: 'button', class: 'dot' + (e ? (e.result.correct ? ' good' : ' bad') : '') + (on ? ' now' : ''), 'aria-label': label, title: 'Task ' + (i + 1), 'aria-current': on ? 'step' : null, disabled: !e && !isCur,
+          var label = 'Question ' + (i + 1) + (e ? (e.result.correct ? ', correct' : ', not correct') + (on ? ', shown now' : ', look back') : (isCur ? ', the question you are on' : ', not done yet'));
+          items.push(h('button', { type: 'button', class: 'dot' + (e ? (e.result.correct ? ' good' : ' bad') : '') + (on ? ' now' : ''), 'aria-label': label, title: 'Question ' + (i + 1), 'aria-current': on ? 'step' : null, disabled: !e && !isCur,
             onclick: function () { if (isCur) { if (reviewing) viewSession(); } else if (e) viewSession(i); } }, String(i + 1)));
         })(i);
       }
@@ -1002,7 +1001,7 @@
       api('report', { item_id: it.id }).then(function () { state.reported[it.id] = true; reportedDone(); UI.toast('Reported. Thank you!'); })
         .catch(function (e) { reportBtn.disabled = false; UI.toast(e.message); });
     }
-    var reportBtn = h('button', { type: 'button', class: 'linkbtn report-link', title: 'Report this task', onclick: sendReport },
+    var reportBtn = h('button', { type: 'button', class: 'linkbtn report-link', title: 'Report this question', onclick: sendReport },
       icon('flag'), h('span', null, 'Report'));
     if (state.reported[it.id]) reportedDone();
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
@@ -1011,12 +1010,12 @@
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' },
-      h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Task ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
+      h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Question ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
         h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, soundButton(), h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
       h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(ses.length), 'aria-valuenow': String(done) }, h('i', { id: 'prog', style: 'width:' + Math.round(100 * done / ses.length) + '%' })),
       dotsEl,
       h('div', { class: 'card task' },
-        h('h1', { class: 'sr' }, 'Task ' + (at + 1)),
+        h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
         h('div', { class: 'meta' }, h('span', { class: 'pill dark' }, it.skill_label), levelPill(it.level),
           h('span', { class: 'pill', title: state.meta.bloom[String(it.bloom)].desc }, bloomName(it.bloom), ' ', bloomDots(it.bloom)), taskIdEl, reportBtn),
         qEl, area, h('div', { class: 'row' }, submit), feedback)));
@@ -1345,7 +1344,7 @@
       }
       var tbody = h('tbody');
       var cols = [
-        ['nickname', 'Student'], ['level_est', 'Level'], ['last_seen', 'Last active'], ['week_minutes', 'Week (min)', 'r'], ['week_answers', 'Week tasks', 'r'],
+        ['nickname', 'Student'], ['level_est', 'Level'], ['last_seen', 'Last active'], ['week_minutes', 'Week (min)', 'r'], ['week_answers', 'Week questions', 'r'],
         ['total_minutes', 'Total (min)', 'r'], ['xp', 'XP', 'r'], ['accuracy', 'Correct', 'r'], ['streak', 'Streak', 'r'],
       ];
       var thead = h('thead', null, h('tr', null, cols.map(function (c) {
@@ -1419,7 +1418,7 @@
         h('button', { class: 'btn ghost small', onclick: function () { if (confirm('Replace this name with "Learner ####"?')) api('teacher/moderate', { user_id: u.id, reset_name: true }).then(again).catch(fail); } }, 'Reset name'));
       var maxMin = Math.max.apply(null, r.days.map(function (x) { return x.minutes; }).concat([5]));
       var days = h('div', { class: 'bars', style: 'height:100px', role: 'img', 'aria-label': 'Minutes per day, last 30 days' }, r.days.map(function (x, i) {
-        return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' tasks' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
+        return h('div', { class: 'b', title: x.day + ': ' + x.minutes + ' min, ' + x.answers + ' questions' }, h('div', { class: 'col' + (i === r.days.length - 1 ? ' today' : ''), style: 'max-width:14px;height:' + Math.max(3, Math.round(80 * x.minutes / maxMin)) + 'px' }));
       }));
       var skillRows = d.skills.filter(function (s) { return s.n > 0; }).map(function (s) {
         return h('tr', null, h('td', null, s.label), h('td', null, areaLabel(s.area)), h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'muted' }, 'few tasks')), h('td', { class: 'r num' }, String(s.n)), h('td', { class: 'r num' }, s.accuracy + '%'));
@@ -1435,9 +1434,9 @@
         rep ? h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Placement test'), h('p', null, 'Level: ', h('span', { class: 'levelbadge', style: 'font-size:1.1rem;padding:3px 12px' }, rep.overall_level), ' · ' + UI.fmtAgo(d.placement.at) + ' · ' + rep.correct + '/' + rep.n + ' correct'),
           h('p', { class: 'small' }, h('b', null, 'Gaps: '), rep.gaps.map(function (g) { return g.label + ' (' + g.level + ')'; }).join(', '))) : null,
         h('div', { class: 'card', style: 'margin-bottom:16px;padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Topics'),
-          skillRows.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['Topic', 'Area', 'Level', 'Tasks', 'Correct'].map(function (t, i) { return h('th', { class: i > 2 ? 'r' : '' }, t); }))), h('tbody', null, skillRows))) : h('p', { class: 'empty' }, 'No tasks done yet.')),
+          skillRows.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['Topic', 'Area', 'Level', 'Questions', 'Correct'].map(function (t, i) { return h('th', { class: i > 2 ? 'r' : '' }, t); }))), h('tbody', null, skillRows))) : h('p', { class: 'empty' }, 'No tasks done yet.')),
         h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Recent answers'),
-          r.recent.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['When', 'Task', 'Answer', '', 'Level', 'Thinking', 'Sec'].map(function (t) { return h('th', null, t); }))),
+          r.recent.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['When', 'Question', 'Answer', '', 'Level', 'Thinking', 'Sec'].map(function (t) { return h('th', null, t); }))),
             h('tbody', null, r.recent.map(function (a) {
               return h('tr', null, h('td', { class: 'small' }, UI.fmtDate(a.at)), h('td', { style: 'max-width:340px;overflow:hidden;text-overflow:ellipsis' }, a.q), h('td', { style: 'max-width:220px;overflow:hidden;text-overflow:ellipsis' }, a.answer || ''),
                 h('td', null, h('span', { class: 'pill ' + (a.correct ? 'good' : 'pink') }, a.correct ? '✓' : '✗')), h('td', null, a.level), h('td', null, bloomName(a.bloom)), h('td', { class: 'num' }, String(a.seconds)));

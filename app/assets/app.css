@@ -481,3 +481,7 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .card.fn-ref { background: var(--ref-bg); border-color: var(--ref); border-left-width: 6px; }
 .fixed-line { color: var(--chance); }
 .fixed-line svg { color: var(--chance); }
+
+.lvseg label.off span { opacity: .35; cursor: not-allowed; text-decoration: line-through; text-decoration-thickness: 1px; }
+.lvseg input[disabled] + span { background: transparent; }
+.picker-group h3 { margin: 14px 0 8px; }

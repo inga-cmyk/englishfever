@@ -53,3 +53,27 @@ Findings to act on when we build:
 - Negatives, questions and short answers belong to **A2 as well**; they are learned before B1, so they are not a B1 marker. Remove that from the layer differences above.
 - The difference is mainly **sentence length** (short single clauses at A2, longer and combined sentences at B1) and **vocabulary choice** (everyday words at A2, wider and more abstract words at B1). The other differences (task type, context, rule card depth, what the wrong options test) stay open for discussion.
 - Inga will send reference pages from the **Elementary** and **Intermediate** books; decisions on layers are to be checked against them before anything is built.
+
+## Reference book received: "A2 Grammar" (Elementary-style, 32 pp, units 1-8, each unit = 3 grammar pages + one "How to ..." speaking page)
+Layout per page: REFERENCE (tables with subject / auxiliary / infinitive / object columns, short answers, NOT wrong examples) and PRACTICE (put words in order, correct the mistake (some sentences are correct), complete the conversation with words from a box, choose the correct word, use prompts to write sentences or questions, match with pictures).
+Contents: 1A present simple I/you/we/they, 1B he/she/it (spelling -s/-es/-ies, does/doesn't, short answers), 1C suggestions, 1D possessive 's, 2A countable/uncountable a/an/some/any, 2B frequency adverbs, 2C ordering in a restaurant, 2D like/hate/love + -ing, 3A this/that/these/those, 3B have got, 3C invitations and offers, 3D there is/are, 4A was/were, 4B how much/many/how + adjective, 4C shops, 4D should/shouldn't and imperatives, 5A past simple regular (spelling, did/didn't, yes/no), 5B irregular past + wh-questions + time phrases, 5C apologising, 5D adjectives and modifiers (really/very/too/quite/a bit), 6A present continuous (state verbs), 6B comparatives, 6C directions, 6D prepositions of movement, 7A articles, 7B present simple vs continuous, 7C phoning, 7D verbs + to infinitive, 8A superlatives, 8B be going to, 8C hotel requests and offers (I'll), 8D adverbs of manner.
+
+### What the two books show about layers (same topic, two depths)
+| Topic | This book (A1/A2 base) | Pre-Intermediate book (A2/B1) |
+|---|---|---|
+| Present simple | I/you/we/they and he/she/it taught separately; negative, question, short answers; spelling; frequency adverbs | contrast with present continuous, state verbs, habit vs permanent |
+| Past simple | was/were; regular -ed spelling; about 20 common irregulars; did/didn't; wh-questions; time phrases | past continuous + past simple with when/while; longer sentences; be vs did; present perfect contrast |
+| Present continuous | now; state verbs not used; questions | also for fixed arrangements (future) |
+| Comparatives / superlatives | -er/more, than, irregular; -est/most, "in the world" | much / a bit / less; least, "I've ever ...", the second biggest |
+| Future | be going to for plans; I'll for offers | will for decisions and predictions, might, be thinking of, present continuous for arrangements |
+| should | should/shouldn't + imperatives | ought to, why don't you, maybe / I think you should |
+| Quantity | countable/uncountable, a/an/some/any, how much/many, there is/are | many/much, a few/a little, a bit of, plenty of, no |
+| Articles | full a / the / zero table | a then the in texts |
+Pattern: the higher layer **adds uses and contrasts** and uses **longer sentences with more than one clause** and less basic vocabulary. The same forms (negatives, questions, short answers) appear in both. This supports Inga's correction: A2 and B1 differ by sentence length, vocabulary and added uses, not by negatives/questions.
+
+### Other findings
+- Practice sentences in the base book are short and concrete (about 5-8 words: "I love talking to people."); the Pre-Intermediate ones are longer ("I was reading the last few pages of my book when I suddenly heard the last call for my flight.").
+- The base book teaches **everyday functions** in "How to ..." pages: suggestions, ordering food, invitations and offers, shopping, apologising and excuses, directions, phoning, hotel requests. The bank has no such area yet; it could be an "Everyday English" area with order-the-conversation, choose-the-phrase and match tasks.
+- Task types seen: mostly ones the app already has (choose, gap with word box, put in order, match, correct the mistake). Picture-based and free "use the prompts to write" tasks are not possible or not auto-gradable.
+- Topics here that the bank lacks: present simple basics (he/she/it), was/were, have got, there is/are, possessive 's, this/that, frequency adverbs, adjectives and modifiers, adverbs of manner, prepositions of movement, directions, verbs + to infinitive, like + -ing (see also the earlier "not in the bank yet" list).
+- Open question for Inga: which level label does this book get? Its content is A1 to low A2 (the file name says A2). Suggest: treat units 1-4 as A1 (Elementary, shown greyed until built), units 5-8 as A2.1, Pre-Intermediate units 1-9 as A2.2... to be decided before any labelling.

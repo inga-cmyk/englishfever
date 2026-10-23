@@ -12,3 +12,9 @@ function run($label){ global $H; echo "== $label\n"; ob_start(); foreach($H['a']
 $_REQUEST=[]; $_COOKIE=[]; run('plain login');
 $_REQUEST=['redirect_to'=>'https%3A%2F%2Fsite.example%2F%3Fef_practice%3Dgo']; run('from the app (redirect_to)');
 $_REQUEST=[]; $_COOKIE=['ef_return'=>'123']; run('from the app (cookie)');
+
+// where a visitor signs in
+echo "== login page\n";
+echo ' no Tutor: [', ef_practice_login_page(), "]\n";
+if ( true ) { function tutor_utils() { return new class { function tutor_dashboard_url() { return "https://site.example/dashboard/"; } }; } }
+echo ' Tutor active: ', ef_practice_login_page(), "\n";

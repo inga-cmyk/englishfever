@@ -77,3 +77,8 @@ Pattern: the higher layer **adds uses and contrasts** and uses **longer sentence
 - Task types seen: mostly ones the app already has (choose, gap with word box, put in order, match, correct the mistake). Picture-based and free "use the prompts to write" tasks are not possible or not auto-gradable.
 - Topics here that the bank lacks: present simple basics (he/she/it), was/were, have got, there is/are, possessive 's, this/that, frequency adverbs, adjectives and modifiers, adverbs of manner, prepositions of movement, directions, verbs + to infinitive, like + -ing (see also the earlier "not in the bank yet" list).
 - Open question for Inga: which level label does this book get? Its content is A1 to low A2 (the file name says A2). Suggest: treat units 1-4 as A1 (Elementary, shown greyed until built), units 5-8 as A2.1, Pre-Intermediate units 1-9 as A2.2... to be decided before any labelling.
+
+## Decided (Inga): level labels per book unit
+- **A2 Grammar (Elementary-style) book:** units 1-4 = **A1**, units 5-8 = **A2.1**.
+- **Pre-Intermediate book:** units 1-9 = **A2.1**, units 10-16 = **A2.2** (her earlier decision stands; the "units 1-9 as A2.2" in the previous note was only a suggestion and is dropped). So A2.1 draws on both books.
+- Intermediate pages (B1) to follow from Inga; label them after she sends them.

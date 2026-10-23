@@ -168,7 +168,7 @@
     }));
     var chips = h('div', { class: 'chips', id: 'chips' });
     var bar = h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
-      h('a', { class: 'brand', href: teacher ? '#/teacher' : '#/home' }, h('span', { class: 'dot' }), 'English Fever ', h('b', { class: 'brand-sub' }, 'Practice')),
+      h('span', { class: 'brand' }, h('a', { class: 'dot', href: teacher ? '#/teacher' : '#/home', 'aria-label': 'Practice home' }), h('a', { class: 'brand-site', href: state.config.site_url || (teacher ? '#/teacher' : '#/home') }, 'English Fever'), h('a', { class: 'brand-sub', href: teacher ? '#/teacher' : '#/home' }, 'Practice')),
       state.config && state.config.beta ? betaPill() : null,
       nav, h('div', { class: 'spacer' }),
       dashboardUrl() ? h('a', { class: 'sitelink' + (state.user.guest ? ' sitelink-guest' : ''), target: '_blank', rel: 'noopener', href: state.user.guest ? (state.config.site_url || dashboardUrl()) : dashboardUrl() }, state.user.guest ? 'englishfever.com ↗' : 'My dashboard ↗') : null, chips,

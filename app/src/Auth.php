@@ -258,6 +258,11 @@ final class Auth
         $u = Db::one('SELECT * FROM users WHERE provider = ? AND external_id = ?', ['wp', $ext]);
         if ($u) {
             Db::update('users', ['role' => $role, 'full_name' => $full, 'track_time' => $track, 'sso_at' => time()], 'id = ?', [$u['id']]);
+            // an earlier version suggested the full name: until the learner picks their own, show the first name only
+            if ($role === 'student' && !(int) $u['nick_set'] && $full !== '' && mb_strtolower($u['nickname']) === mb_strtolower($full) && mb_strpos($full, ' ') !== false) {
+                $nick = self::uniqueNick(self::firstName($full));
+                Db::update('users', ['nickname' => $nick, 'nickname_key' => mb_strtolower($nick)], 'id = ?', [$u['id']]);
+            }
             $id = (int) $u['id'];
         } else {
             // suggest the learner's first name, never the surname (they can change it on the next screen)

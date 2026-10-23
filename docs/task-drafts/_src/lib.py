@@ -6,7 +6,10 @@ import italics
 italics.LV_ASCII |= set('''apgriez divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
 beidzas beidzies cita darba divdabi divdabis esam garums grupa ieradums izteikt jebkuru laba ideja lielu lietas likums maigs mana istaba ne nekas nelielu padomu paliek saraksta
 laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
-HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level"]
+HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces"]
+# matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
+import json as _json
+REPL = _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "replaced_match.json"), encoding="utf-8"))
 rows = []
 
 # Latvian wording follows docs/LATVIAN-TERMS.md: English tense names are kept, "3. forma" for the participle, "ciešamā kārta", "teikuma priekšmets".
@@ -47,7 +50,7 @@ def save(name):
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
-        for r in rows: w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:])
+        for r in rows: w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [REPL.get(r[4], '') if r[2] == 'match' else ''])
     print(name, len(rows), "rows")
 
 

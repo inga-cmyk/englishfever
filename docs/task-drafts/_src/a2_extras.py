@@ -80,7 +80,7 @@ tx(T,"A2.2",3,"Make it negative: I have seen him.",["I haven't seen him.","I hav
 mc(T,"A2.2",4,"About travel: which sentence is NOT correct?","I have been to Spain last year.",["I have been to Spain twice.","I went to Spain last year.","Have you ever been to Spain?"],"With *last year* (a finished time) we use the past simple.","Ar *last year* (pabeigts laiks) lieto vienkāršo pagātni.")
 mc(T,"A2.2",2,"Choose the correct meaning: 'Mum has gone to the shop.'","She is at the shop now.",["She is back home now.","She will go to the shop tomorrow.","She went to the shop last year."],"*Has gone* = she went and is still there.","*Has gone* = viņa aizgāja un vēl ir tur.")
 od(T,"A2.2",3,"Put the words in order. Say you did not do it yet.","i haven't called my mother yet","*Yet* goes at the end.","*Yet* ir teikuma beigās.")
-mt(T,"A2.2",2,"Match each question with its short answer.",[("Have you finished?","Yes, I have."),("Has he called?","No, he hasn't."),("Have they arrived yet?","Not yet."),("Has she ever lived abroad?","Yes, she has.")],"Short answers use *have / has*.","Īsās atbildes lieto *have / has*.")
+mt(T,"A2.2",2,"Match each question with its short answer.",[("Have you finished?","Yes, I have."),("Has he called?","No, he hasn't."),("Have they arrived yet?","No, they haven't."),("Has she ever lived abroad?","Yes, she has.")],"Short answers use *have / has*.","Īsās atbildes lieto *have / has*.")
 # ============ Future ============
 T = "Future: will, going to, present continuous"
 mc(T,"A2.1",1,"Choose the correct form: We ___ visit my aunt on Sunday.","are going to",["go to","going to","will to"],"A plan: *are going to* + base verb.","Plāns: *are going to* + pamatforma.")

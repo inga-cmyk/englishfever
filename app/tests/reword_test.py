@@ -38,4 +38,18 @@ check("approved stays approved, draft stays draft", len([x for x in t.api("teach
 # two tasks may share a plain instruction when their content differs, but the same content twice is a duplicate
 r = t.api("teacher/items-import", {"csv": HEAD + row("Which sentence is NOT correct?", "They is happy.", "They are happy. | We are happy. | I am happy.") + row("Which sentence is NOT correct?", "They is happy.", "They are happy. | We are happy. | I am happy.")})
 check("a new task with the plain instruction is fine, the same twice is refused", r["ok"] == 1 and r["bad"] == 1, r)
+# a corrected matching task retires the older, ambiguous version
+HEADR = HEAD.strip() + ",replaces\n"
+def mrow(pairs, repl=""):
+    return 'Comparison,B1.1,match,"Match each sentence with its meaning.","%s",,Explanation.,Skaidrojums.,3,"%s"\n' % (pairs, repl)
+OLDM = "The new phone is much = faster than the old one. ; The new phone is a bit = heavier than the old one. ; The new phone is not as = cheap as the old one. ; The new phone is the = best one in the shop."
+NEWM = "The new phone is much faster. = a big difference ; The new phone is a bit faster. = a small difference ; The new phone is not as fast. = the old one is faster ; The new phone is the fastest. = no other phone is faster"
+t.api("teacher/items-import", {"csv": HEADR + mrow(OLDM), "confirm": True})
+st0 = {x["id"]: x["q"] for k in ("draft", "approved") for x in t.api("teacher/items")["items"][k]}
+r = t.api("teacher/items-import", {"csv": HEADR + mrow(NEWM, OLDM)})
+check("the corrected matching task says it replaces the older one", r["ok"] == 1 and any("Replaces an older" in w for x in r["rows"] for w in x["warnings"]), r)
+r = t.api("teacher/items-import", {"csv": HEADR + mrow(NEWM, OLDM), "confirm": True})
+lst = t.api("teacher/items")["items"]
+active = [x for k in ("draft", "approved") for x in lst[k]]
+check("afterwards the old ambiguous version is retired and only the new one is active", len(lst["retired"]) >= 1 and sum(1 for x in active if "much faster" in json.dumps(x)) == 1 and not any("heavier than the old one" in json.dumps(x) for x in active), (len(lst["retired"]), len(active)))
 print("ALL PASS" if ok else "SOME FAILED"); sys.exit(0 if ok else 1)

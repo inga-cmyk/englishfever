@@ -27,7 +27,7 @@ P.text("B1.1","Make a question with How often: He visits his parents.","How ofte
 P.text("B1.1","Rewrite with never: I don't eat fast food.","I never eat fast food.")
 P.text("B1.1","Make a question with What time: The bank opens at nine.","What time does the bank open?")
 P.match("B1.1","Match each sentence with its use.",[("The sun rises in the east.","a general truth"),("I go to the gym on Tuesdays.","a habit"),("The bus leaves at 6.15.","a timetable"),("She works in a bank.","a permanent situation")])
-P.match("B1.1","Match each beginning with its ending: routines.",[("My brother always","forgets his keys."),("The shops never","open on Sundays."),("Our teacher usually","gives us homework."),("They sometimes","eat out on Fridays.")])
+P.match("B1.1","Match each beginning with its ending: routines.",[("My brother always forgets","his keys."),("The shops never open","on Sundays."),("Our teacher usually gives","us homework."),("They sometimes eat","out on Fridays.")])
 P.match("B1.1","Match each question with its answer.",[("What does she do?","She's a nurse."),("How often do you swim?","Twice a week."),("Where does he live?","In a small town."),("Do they speak German?","Yes, they do.")])
 P.mcq("B1.1","Choose the correct option: My brother ___ much television because he prefers reading.","doesn't watch",["not watch","don't watch","doesn't watches"])
 P.mcq("B1.1","Choose the correct option: The shop ___ at six on weekdays, so we should hurry.","closes",["closing","close","has close"])
@@ -66,7 +66,7 @@ P.text("B1.1","Make it negative: We are staying at a hotel.",["We aren't staying
 P.text("B1.1","Make a question: Your parents are visiting you this weekend.","Are your parents visiting you this weekend?")
 P.text("B1.1","Rewrite for a change in progress: The weather gets warmer. (it is)","It is getting warmer.",b=5) if False else None
 P.match("B1.1","Match each sentence with its meaning.",[("I'm waiting for a call.","an action now"),("She's staying with us this week.","a temporary situation"),("It's getting darker.","a change"),("We're flying to Rome on Friday.","an arrangement")])
-P.match("B1.1","Match each beginning with its ending: this week.",[("Our neighbours are","building a new garage."),("The students are","preparing for their exams."),("My boss is","travelling to Berlin."),("I'm","learning to drive.")])
+P.match("B1.1","Match each beginning with its ending: this week.",[("Our neighbours are building","a new garage."),("The students are preparing","for their exams."),("My boss is travelling","to Berlin."),("I'm learning","to drive.")])
 P.match("B1.1","Match each question with its answer: what is happening.",[("What are you doing?","I'm sorting my emails."),("Why are they shouting?","They're watching the match."),("Who is he talking to?","His new neighbour."),("Is it raining?","Not now, it has stopped.")])
 P.mcq("B1.1","Choose the correct option: Please be quiet. The baby ___ and I don't want to wake her.","is sleeping",["sleeping","sleep","has sleeping"])
 P.mcq("B1.1","Choose the correct option: ___ you ___ anything special this weekend, or can we meet?","Are / doing",["Have / done","Will / doing","Were / do"])

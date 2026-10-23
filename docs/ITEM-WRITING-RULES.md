@@ -19,3 +19,9 @@
 - Forms named in an instruction are italic one by one, never *and* / *or* between them or the colon: Write one sentence with *older* and *than*:
 - The CSV generators apply this automatically (`plain()` in `docs/task-drafts/_src/lib.py`).
 
+## Matching tasks: one sensible pairing only (rule from Inga)
+- A matching task is only valid when exactly **one** way of pairing the cards makes sense. If two endings fit two beginnings (*The new phone is much* / *a bit* + *faster* / *heavier*), the learner is guessing and a right answer proves nothing.
+- Test every task: swap any two endings. If both versions are grammatical and sensible, rewrite it.
+- What works: the verb is in the beginning and its object or agent in the ending (*My brother always forgets* + *his keys.*); a different pronoun in every short answer (*Yes, I have.* / *No, he hasn't.* / *No, they haven't.*); four different topics in four if-sentences (bus, doctor, phone, winning); meanings and forms that cannot be swapped (*much faster* = a big difference).
+- What does not work: adverbs only (*never / just / already* + any object), *since / for* + two time phrases, answers like *Not yet.* or *Yes, twice.* that fit many questions, two beginnings with the same subject and auxiliary.
+

@@ -113,6 +113,7 @@ final class CustomItems
             elseif ($h === 'task' || $h === 'question') $key = 'task';
             elseif ($h === 'correct answer' || $h === 'answer') $key = 'correct';
             elseif (strpos($h, 'wrong options') === 0 || $h === 'options') $key = 'wrong';
+            elseif ($h === 'replaces') $key = 'replaces';   // optional: the old correct answer of a matching task this row corrects
             elseif (strpos($h, 'explanation in latvian') === 0 || $h === 'latvian') $key = 'why_lv';
             elseif (strpos($h, 'explanation') === 0 || $h === 'why') $key = 'why';
             elseif (strpos($h, 'thinking level') === 0) $key = 'bloom';
@@ -144,6 +145,12 @@ final class CustomItems
                 $item = self::buildRow($get, $skills, $res);
                 $dup = self::dupKey($item);
                 $ck = self::contentKey($item);
+                if ($item['kind'] === 'match' && $get('replaces') !== '') {   // a corrected matching task: the older version (if it was added) is retired
+                    $oldPairs = [];
+                    foreach (self::split($get('replaces'), ';') as $p) { $x = explode('=', $p, 2); if (count($x) === 2) $oldPairs[] = [trim($x[0]), trim($x[1])]; }
+                    $ok2 = self::contentKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => 'match', 'pairs' => $oldPairs]);
+                    if (isset($byContent[$ok2])) { $res['replaces'] = $byContent[$ok2]['id']; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
+                }
                 if (isset($seen[$dup])) throw new ApiError('This task is twice in the file.', 400);
                 if (isset($mine[$dup])) {                                   // added from a file before, nothing changed
                     $res['ok'] = true; $res['same'] = true; $res['warnings'] = []; $same++;
@@ -165,6 +172,7 @@ final class CustomItems
             foreach ($rows as &$row) {
                 if (!$row['ok'] || !empty($row['same'])) continue;
                 $it = $row['item'];
+                if (!empty($row['replaces'])) Db::update('custom_items', ['status' => 'retired', 'updated_at' => time()], 'item_id = ?', [$row['replaces']]);
                 if (!empty($row['update'])) {
                     $cur = Db::one('SELECT data FROM custom_items WHERE item_id = ?', [$row['update']]);
                     $d = json_decode((string) ($cur['data'] ?? ''), true);

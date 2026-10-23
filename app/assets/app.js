@@ -543,7 +543,7 @@
   /** The task as the teacher needs to judge it: text, key, wrong options. */
   function promptNodes(q) { // instruction on one line, the sample sentence below in italics (as learners see it)
     var m = PROMPT_SPLIT.exec(q || '');
-    return m ? [h('span', null, m[1] + ':'), h('br'), h('em', null, m[2])] : [q || ''];
+    return m ? [h('span', null, UI.rich(UI.markForms(m[1])), ':'), h('br'), h('em', null, m[2])] : [q || ''];
   }
 
   function taskHead(t) {
@@ -799,7 +799,7 @@
     function setPrompt(el, text) { // plain prompt text, with the instruction split off when there is one
       var m = SPLIT.exec(text || '');
       if (!m) { el.textContent = text; return; }
-      el.appendChild(h('span', { class: 'q-instr' }, m[1] + ':')); el.appendChild(h('br')); el.appendChild(h('em', { class: 'q-sample' }, m[2]));
+      el.appendChild(h('span', { class: 'q-instr' }, UI.rich(UI.markForms(m[1])), ':')); el.appendChild(h('br')); el.appendChild(h('em', { class: 'q-sample' }, m[2]));
     }
 
     if (it.kind === 'mcq') {
@@ -818,14 +818,14 @@
       else { board = DnD.bankGap(promptSample, it.bank, ready); qEl = board.sentence;
         if (promptSplit) { // instruction line, then the sentence (with its gaps) in italics
           var smp = h('em', { class: 'q-sample' }); while (qEl.firstChild) smp.appendChild(qEl.firstChild);
-          qEl.appendChild(h('span', { class: 'q-instr' }, promptSplit[1] + ':')); qEl.appendChild(h('br')); qEl.appendChild(smp);
+          qEl.appendChild(h('span', { class: 'q-instr' }, UI.rich(UI.markForms(promptSplit[1])), ':')); qEl.appendChild(h('br')); qEl.appendChild(smp);
         } area.appendChild(h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
       area.appendChild(board.el);
       answerGetter = board.answer; canSubmit = board.complete;
     } else if (it.kind === 'gap') {
       var parts = promptSample.split('___');
       var sampleEl = promptSplit ? h('em', { class: 'q-sample' }) : qEl;
-      if (promptSplit) { qEl.appendChild(h('span', { class: 'q-instr' }, promptSplit[1] + ':')); qEl.appendChild(h('br')); qEl.appendChild(sampleEl); }
+      if (promptSplit) { qEl.appendChild(h('span', { class: 'q-instr' }, UI.rich(UI.markForms(promptSplit[1])), ':')); qEl.appendChild(h('br')); qEl.appendChild(sampleEl); }
       parts.forEach(function (p, i) {
         sampleEl.appendChild(document.createTextNode(p));
         if (i < parts.length - 1) {

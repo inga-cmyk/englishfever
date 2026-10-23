@@ -306,5 +306,14 @@
     return frag;
   }
 
-  window.UI = { rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
+  /** The form the instruction asks for is a language item too: "Make it negative with don't have to" -> "... with *don't have to*" (italics, like the sample sentence). */
+  function markForms(instr) {
+    var s = String(instr || '');
+    if (s.indexOf('*') >= 0) return s;                       // already marked by hand
+    s = s.replace(/(^|\s)'([^']+)'(?=[\s.,:;?!]|$)/g, '$1*$2*');   // 'any' in quotes
+    if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!the (correct|words?|answers?|verbs?)\b)(.+)$/i, '$1 *$3*');
+    return s;
+  }
+
+  window.UI = { markForms: markForms, rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
 })();

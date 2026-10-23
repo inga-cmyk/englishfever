@@ -417,9 +417,13 @@
               h('div', { class: 'small muted' }, plural(cb.open, 'mistake', 'mistakes') + ' to fix.')),
             comebackButton('btn small fn-chance', 'Start'))));
       }
-      if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
-      var pu = d.pulse;   // a number of people only when it is a company, never "1"
-      if (pu && (pu.now >= 3 || pu.today >= 3)) nodes.push(h('p', { class: 'small muted homepulse' }, pu.now >= 3 ? pu.now + ' learning with you now' : pu.today + ' showed up today'));
+      // one quiet line: your numbers on the left, company on the right as a number and a symbol (a green dot = learning now, the people icon = showed up today; never for fewer than 3)
+      var pu = d.pulse, pulse = null;
+      if (pu && (pu.now >= 3 || pu.today >= 3)) {
+        var live = pu.now >= 3, num = live ? pu.now : pu.today, tip = live ? 'learning now' : 'showed up today';
+        pulse = h('span', { class: 'pulse-pill', title: num + ' ' + tip, 'aria-label': num + ' ' + tip }, live ? h('i', { class: 'pulse-dot', 'aria-hidden': 'true' }) : icon('users'), String(num));
+      }
+      if (started || pulse) nodes.push(h('div', { class: 'homestat row between' }, h('span', { class: 'small muted' }, started ? d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall') : ''), pulse));
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);
 
@@ -866,7 +870,7 @@
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
         lock(); showFeedback(r, ans); drawDots(); drawPrev();
-        Sound.play(r.result.fixed ? 'fixed' : r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
+        Sound.play(r.result.locked ? 'locked' : r.result.fixed ? 'fixed' : r.result.gap ? 'tricky' : r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
         if (r.done) S.summary = r.summary;
       }).catch(function (e) {
         submit.disabled = false;

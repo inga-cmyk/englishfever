@@ -487,3 +487,9 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .lvseg label.off span { opacity: .35; cursor: not-allowed; text-decoration: line-through; text-decoration-thickness: 1px; }
 .lvseg input[disabled] + span { background: transparent; }
 .picker-group h3 { margin: 14px 0 8px; }
+
+/* company on Home: a number with a symbol */
+.homestat.row { align-items: center; min-height: 26px; }
+.pulse-pill { display: inline-flex; align-items: center; gap: 7px; font-weight: 700; font-size: .95rem; color: var(--text); padding: 4px 11px; border-radius: 999px; background: var(--good-bg); }
+.pulse-pill svg { width: 16px; height: 16px; }
+.pulse-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 3px rgba(46,125,91,.22); }

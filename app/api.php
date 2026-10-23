@@ -219,6 +219,10 @@ try {
             Auth::requireTeacher();
             out(Wp::status());
 
+        case 'teacher/evidence':   // numbers only: does "slip or gap" and "locked in" work? open it in the browser while signed in as a teacher
+            Auth::requireTeacher();
+            out(Mistakes::evidence());
+
         case 'teacher/students':
             $t = Auth::requireTeacher();
             out(Stats::teacherStudents((int) $t['id']));

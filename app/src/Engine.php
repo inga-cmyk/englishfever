@@ -151,12 +151,13 @@ final class Engine
         $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom'], 'level' => substr($item['level'], 0, 2)];
         if ($ses['mode'] === 'placement') self::plAdvance($st, substr($item['level'], 0, 2), $ok);
 
-        $beforeFixed = $ses['mode'] === 'placement' ? 0 : Mistakes::scan($uid)['fixed'];
+        $before = $ses['mode'] === 'placement' ? null : Mistakes::scan($uid);
         $now = time();
         Db::insert('attempts', [
             'user_id' => $uid, 'psession_id' => $sid, 'item_id' => $itemId, 'skill' => $skill, 'level' => $item['level'],
             'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
             'time_ms' => max(0, min(600000, $timeMs)), 'xp' => $xp, 'created_at' => $now,
+            'for_item' => !empty($st['comeback']) ? ($st['queue'][count($st['served']) - 1] ?? null) : null,
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
         if ($row) {
@@ -165,9 +166,16 @@ final class Engine
             Db::insert('skill_state', ['user_id' => $uid, 'skill' => $skill, 'theta' => $theta, 'n' => 1, 'n_correct' => $ok ? 1 : 0, 'updated_at' => $now]);
         }
         Stats::addActivity($uid, 0, 1, $xp);
-        $fixedNow = ($ses['mode'] !== 'placement' && $ok && Mistakes::scan($uid)['fixed'] > $beforeFixed);
+        $fixedNow = $lockedNow = false;
+        if ($before !== null && $ok) {
+            $after = Mistakes::scan($uid);
+            $fixedNow = $after['fixed'] > $before['fixed'];
+            $lockedNow = $after['locked'] > $before['locked'];   // a mistake the learner has now got right again, on another day: kept quiet, only the sound tells
+        }
         if ($fixedNow) $st['fixed'] = ($st['fixed'] ?? 0) + 1;
+        $gapNow = self::probeAnswered($st, $itemId, $ok, $ses);
 
+        if (!$ok && $ses['mode'] === 'practice' && empty($st['comeback'])) self::probeSchedule($st, $itemId, count($st['served']), (int) $ses['target_len']);
         $ses['n']++;
         $ses['n_correct'] += $ok ? 1 : 0;
         $ses['xp'] += $xp;
@@ -206,6 +214,8 @@ final class Engine
             'xp' => $xp,
             'adapt' => $adapt,
             'fixed' => $fixedNow,
+            'locked' => $lockedNow,
+            'gap' => $gapNow,
         ];
         if (isset($g['marks'])) $res['marks'] = $g['marks'];
         if ($item['kind'] === 'match') $res['pairs'] = $item['pairs'];
@@ -349,7 +359,22 @@ final class Engine
             // each task answers one open mistake: a similar task if there is one, else the task itself
             $mid = $st['queue'][$count] ?? null;
             if ($mid === null) return null;
-            return Mistakes::twin((int) $ses['user_id'], $mid, $served) ?? Content::item($mid);
+            // never another open mistake as the "similar task": it would fix itself and leave the one it stood for
+            $open = array_fill_keys(array_keys(Mistakes::scan((int) $ses['user_id'])['open']), true);
+            return Mistakes::twin((int) $ses['user_id'], $mid, $served + $open) ?? Content::item($mid);
+        }
+        // slip or gap: a task like the one just missed comes back soon, in a different sentence (and from other angles when it is missed again)
+        if (!$placement && !empty($st['probes'])) {
+            foreach ($st['probes'] as $i => $p) {
+                if (!empty($p['done']) || !empty($p['served']) || $count < $p['due']) continue;
+                $t = Mistakes::twin((int) $ses['user_id'], $p['for'], $served, $p['stage'] > 1, $st['levels'] ?? null);
+                if ($t) {
+                    $ses['state']['probes'][$i]['served'] = true;
+                    $ses['state']['probes'][$i]['item'] = $t['id'];
+                    return $t;
+                }
+                $ses['state']['probes'][$i]['done'] = true;   // no such task: nothing to ask
+            }
         }
         // candidate items
         $bySkill = [];
@@ -486,6 +511,31 @@ final class Engine
         }
         if ($best && isset($missed[$best['id']])) $ses['state']['returned'] = ($st['returned'] ?? []) + [$best['id'] => 1];
         return $best;
+    }
+
+    /** A wrong answer in practice: ask a task of the same kind again after one or two others (not more than a third of the session, two waiting at most). */
+    private static function probeSchedule(array &$st, string $itemId, int $served, int $len): void
+    {
+        $probes = $st['probes'] ?? [];
+        $waiting = count(array_filter($probes, fn($p) => empty($p['done'])));
+        if ($waiting >= 2 || count($probes) >= max(2, intdiv($len, 3))) return;
+        foreach ($probes as $p) if (($p['for'] === $itemId && empty($p['done'])) || ($p['item'] ?? null) === $itemId) return;   // already waiting, or this task is itself a probe
+        $st['probes'][] = ['for' => $itemId, 'stage' => 1, 'due' => $served + random_int(1, 2)];
+    }
+
+    /** The answered task was a probe: right = a slip; wrong = a gap, so two more tasks of that kind from other angles follow. Returns true for a gap. */
+    private static function probeAnswered(array &$st, string $itemId, bool $ok, array $ses): bool
+    {
+        foreach ($st['probes'] ?? [] as $i => $p) {
+            if (empty($p['served']) || ($p['item'] ?? null) !== $itemId || !empty($p['done'])) continue;
+            $st['probes'][$i]['done'] = true;
+            $st['probe_log'][] = ['for' => $p['for'], 'item' => $itemId, 'stage' => $p['stage'], 'ok' => $ok];
+            if ($ok || $p['stage'] > 1) return false;
+            $n = count($st['served']);
+            foreach ([2, 3] as $k => $stage) $st['probes'][] = ['for' => $p['for'], 'stage' => $stage, 'due' => $n + 1 + 2 * $k + random_int(0, 1)];
+            return true;
+        }
+        return false;
     }
 
     /**

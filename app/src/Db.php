@@ -234,6 +234,7 @@ final class Db
         foreach ($tables as $sql) {
             self::$pdo->exec($sql);
         }
+        self::ensureColumn('attempts', 'for_item', "$str NULL");   // Second Chance: the mistake this task stood for (nothing is changed in earlier rows)
         self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before these columns existed
         self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");

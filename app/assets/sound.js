@@ -28,6 +28,8 @@
     wrong: [[349.23, 0, 0.2], [277.18, 0.13, 0.3]],                               // a soft fall, never harsh
     almost: [[440, 0, 0.22]],                                                      // one neutral note
     fixed: [[587.33, 0, 0.12], [880, 0.09, 0.12], [1174.66, 0.18, 0.14], [1760, 0.3, 0.4]],   // a bright rising chime: an old mistake is fixed
+    tricky: [[392, 0, 0.16], [466.16, 0.14, 0.16], [415.3, 0.3, 0.36]],            // "hm, this one is tricky": a question that is not answered yet
+    locked: [[523.25, 0, 0.1], [659.25, 0.08, 0.1], [783.99, 0.16, 0.1], [1046.5, 0.26, 0.6], [1318.5, 0.26, 0.6], [261.63, 0.26, 0.5]],   // "got it for good": a full chord on top of a low note
     done: [[523.25, 0, 0.14], [659.25, 0.12, 0.14], [783.99, 0.24, 0.14], [1046.5, 0.36, 0.45]]
   };
 

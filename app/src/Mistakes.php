@@ -122,10 +122,15 @@ final class Mistakes
     public static function evidence(): array
     {
         $probe = ['first_probes' => 0, 'slips' => 0, 'gaps' => 0, 'angle_probes' => 0, 'angle_right' => 0];
+        $topics = [];
         foreach (Db::all("SELECT state FROM psessions WHERE state LIKE '%probe_log%'") as $r) {
             $st = json_decode($r['state'], true);
             foreach ($st['probe_log'] ?? [] as $p) {
-                if (($p['stage'] ?? 1) === 1) { $probe['first_probes']++; if ($p['ok']) $probe['slips']++; else $probe['gaps']++; }
+                if (($p['stage'] ?? 1) === 1) {
+                    $probe['first_probes']++; if ($p['ok']) $probe['slips']++; else $probe['gaps']++;
+                    $it = Content::item((string) ($p['for'] ?? ''));
+                    if ($it) { $topics[$it['skill']]['probes'] = ($topics[$it['skill']]['probes'] ?? 0) + 1; if (!$p['ok']) $topics[$it['skill']]['gaps'] = ($topics[$it['skill']]['gaps'] ?? 0) + 1; }
+                }
                 else { $probe['angle_probes']++; if ($p['ok']) $probe['angle_right']++; }
             }
         }
@@ -136,6 +141,9 @@ final class Mistakes
             $life['open'] += count($m['open']);
             $life['fixed'] += $m['fixed']; $life['locked'] += $m['locked']; $life['reopened'] += $m['reopened'];
         }
-        return ['probes' => $probe, 'mistakes' => $life];
+        $list = [];
+        foreach ($topics as $sid => $t) { $sk = Content::skill($sid); $list[] = ['id' => $sid, 'label' => $sk ? $sk['label'] : $sid, 'probes' => (int) $t['probes'], 'gaps' => (int) ($t['gaps'] ?? 0)]; }
+        usort($list, fn($a, $b) => [$b['gaps'], $b['probes']] <=> [$a['gaps'], $a['probes']]);
+        return ['probes' => $probe, 'mistakes' => $life, 'topics' => array_slice($list, 0, 8)];
     }
 }

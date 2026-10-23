@@ -33,8 +33,8 @@
     done: [[523.25, 0, 0.14], [659.25, 0.12, 0.14], [783.99, 0.24, 0.14], [1046.5, 0.36, 0.45]]
   };
 
-  function play(name) {
-    if (!on() || !unlock() || !ctx || !SOUNDS[name]) return;
+  function play(name, force) {
+    if ((!force && !on()) || !unlock() || !ctx || !SOUNDS[name]) return;
     var t0 = ctx.currentTime + 0.02;
     SOUNDS[name].forEach(function (n) {
       var osc = ctx.createOscillator(), gain = ctx.createGain();
@@ -49,5 +49,5 @@
   }
 
   document.addEventListener('pointerdown', function () { if (on()) unlock(); }, { passive: true });
-  window.Sound = { on: on, set: set, play: play };
+  window.Sound = { on: on, set: set, play: play, preview: function (name) { play(name, true); } };
 })();

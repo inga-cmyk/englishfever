@@ -228,9 +228,9 @@
     var v = {
       home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
       leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
-      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks,
+      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks, evidence: viewEvidence,
     }[name];
-    if ((name.indexOf('teacher') === 0 || name === 'reports' || name === 'tasks') && u.role !== 'teacher') { location.hash = '#/home'; return; }
+    if ((name.indexOf('teacher') === 0 || name === 'reports' || name === 'tasks' || name === 'evidence') && u.role !== 'teacher') { location.hash = '#/home'; return; }
     (v || viewHome)(parts);
   }
 
@@ -544,6 +544,38 @@
         h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' },
           h('button', { class: 'linkbtn small', type: 'button', title: 'Options', onclick: function () { state.prefill = { skills: [s.id], level: topicLevel(s, d) }; location.hash = '#/practice'; } }, 'Options'),
           go)));
+  }
+
+  // ───────── teacher: does slip-or-gap / locked-in work? numbers only ─────────
+  function viewEvidence() {
+    api('teacher/evidence').then(function (e) {
+      var p = e.probes, m = e.mistakes;
+      function pct(a, b) { return b ? Math.round(100 * a / b) + '%' : '–'; }
+      var enough = p.first_probes >= 5 || m.fixed >= 5;
+      var sounds = [['right', 'Right'], ['wrong', 'Wrong'], ['fixed', 'Fixed'], ['tricky', 'Tricky'], ['locked', 'Locked in']];
+      show(h('div', null,
+        h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Learning evidence')),
+          h('a', { class: 'small', href: '#/teacher' }, '← Students')),
+        h('p', { class: 'small muted' }, 'Counts only, no names. Mistakes of the last 45 days. ' + (enough ? '' : 'Too few so far to say anything: the numbers fill in as learners miss and meet questions again.')),
+        h('h2', null, 'A missed question, asked again'),
+        h('div', { class: 'grid g4', style: 'margin-bottom:16px' },
+          stat('refresh', p.first_probes, 'asked again'),
+          stat('check', p.slips + ' · ' + pct(p.slips, p.first_probes), 'right: a slip'),
+          stat('flag', p.gaps + ' · ' + pct(p.gaps, p.first_probes), 'missed again: a gap'),
+          stat('target', p.angle_right + ' of ' + p.angle_probes, 'right after a gap, from other angles')),
+        h('h2', null, 'Mistakes'),
+        h('div', { class: 'grid g4', style: 'margin-bottom:16px' },
+          stat('users', m.learners, 'learners'),
+          stat('flag', m.open, 'open'),
+          stat('check', m.fixed, 'fixed'),
+          stat('flame', m.locked + ' · ' + pct(m.locked, m.fixed), 'locked in, of fixed')),
+        h('p', { class: 'small muted' }, 'Locked in = right again on another day with a different question of that kind. Opened again after being fixed: ' + m.reopened + ' (' + pct(m.reopened, m.fixed) + ' of fixed).'),
+        (e.topics && e.topics.length) ? h('div', { class: 'card', style: 'margin:16px 0' }, h('h2', { style: 'margin:0 0 8px' }, 'Where the gaps are'),
+          h('ul', { class: 'clean' }, e.topics.map(function (t) { return h('li', { class: 'lvrow' }, h('span', null, t.label), h('span', { class: 'small muted nowrap' }, plural(t.gaps, 'gap', 'gaps') + ' in ' + t.probes + ' asked again')); }))) : null,
+        h('div', { class: 'card', style: 'margin-top:16px' }, h('h2', { style: 'margin:0 0 8px' }, 'The sounds'),
+          h('div', { class: 'row', style: 'gap:8px;flex-wrap:wrap' }, sounds.map(function (x) { return h('button', { type: 'button', class: 'btn ghost small', onclick: function () { Sound.preview(x[0]); } }, x[1]); })),
+          h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'Learners hear them only with sound on (Profile).'))));
+    }).catch(fail);
   }
 
   // ───────── teacher: reported tasks ─────────
@@ -1422,7 +1454,7 @@
       }).catch(function () {});
       show(h('div', null,
         h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),
-          exportLink),
+          h('span', { class: 'row', style: 'gap:14px' }, h('a', { class: 'linkbtn small', href: '#/evidence' }, 'Learning evidence'), exportLink)),
         tabs, statsBox,
         h('div', { id: 'syncbox' }),
         h('div', { id: 'researchbox' }),

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.6.0
+ * Version:     1.7.0
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -28,6 +28,9 @@
  * sends a visitor to the login form, so a login form that ignores redirect_to (Tutor's often ends on its dashboard) still
  * ends in the app.
  * Switch the automatic return off with  define( 'EF_PRACTICE_AUTO_RETURN', false );  to always show the bar.
+ *
+ * The WordPress login page itself (wp-login.php) is shown in the app's colours when someone arrives from the app (not for other
+ * logins): English Fever as the title, cream background, teal button, no "Go to site" link.
  *
  * Optional, to send people who are not logged in to your own login page instead of wp-login.php:
  *     define( 'EF_PRACTICE_LOGIN_URL', 'https://englishfever.com/your-login-page/' );
@@ -111,6 +114,60 @@ add_action( 'template_redirect', function () {
 	}
 	wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) ) );
 	exit;
+} );
+
+/* ───────── the WordPress login page, in the app's look (only when someone comes from the app) ───────── */
+
+/** True on wp-login.php when the person came from the app: its redirect_to leads back through ?ef_practice, or the marker cookie is set. */
+function ef_practice_login_from_app() {
+	if ( ! ef_practice_configured() ) {
+		return false;
+	}
+	$to = isset( $_REQUEST['redirect_to'] ) ? rawurldecode( (string) wp_unslash( $_REQUEST['redirect_to'] ) ) : '';
+	return false !== stripos( $to, 'ef_practice' ) || ! empty( $_COOKIE['ef_return'] );
+}
+
+add_action( 'login_head', function () {
+	if ( ! ef_practice_login_from_app() ) {
+		return;
+	}
+	?>
+<style>
+	body.login { background: #F7F5EE; color: #1E1E2C; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+	body.login::before { content: ""; display: block; height: 6px; background: #020101; border-bottom: 3px solid #DEC17A; }
+	#login { padding-top: 6vh; width: 340px; max-width: 92vw; }
+	#login h1 a { background: none; width: auto; height: auto; text-indent: 0; font-size: 1.7rem; font-weight: 800; letter-spacing: -.01em; color: #020101; line-height: 1.2; }
+	#login h1 a:focus { box-shadow: none; }
+	.login #login_error, .login .message, .login .success { border: 0; border-left: 4px solid #DEC17A; background: #F3EAD3; border-radius: 8px; box-shadow: none; color: #1E1E2C; }
+	.login #login_error { border-left-color: #DE3163; background: #FBE7ED; }
+	.login form { background: #FDFCF9; border: 1px solid #E7E2D5; border-radius: 16px; box-shadow: 0 6px 18px rgba(2,1,1,.06); padding: 24px; }
+	.login form .input, .login input[type=text], .login input[type=password] { border: 1px solid #E7E2D5; border-radius: 10px; padding: 8px 12px; font-size: 1rem; box-shadow: none; background: #fff; }
+	.login form .input:focus, .login input[type=text]:focus, .login input[type=password]:focus { border-color: #166B5D; box-shadow: 0 0 0 2px rgba(22,107,93,.25); outline: 0; }
+	.login label { color: #55524E; font-weight: 600; }
+	.login .button-primary, .login .button.button-primary { background: #166B5D; border: 0; border-radius: 999px; color: #fff; font-weight: 700; min-height: 44px; padding: 0 22px; box-shadow: none; text-shadow: none; }
+	.login .button-primary:hover, .login .button-primary:focus { background: #11574C; color: #fff; }
+	.login .button.wp-hide-pw { color: #55524E; }
+	.login #nav a, .login #backtoblog a, .login .privacy-policy-page-link a { color: #C42554; }
+	.login #backtoblog { display: none; }
+	.ef-login-note { margin: 0 0 16px; text-align: center; color: #55524E; }
+</style>
+	<?php
+} );
+
+add_filter( 'login_headertext', function ( $text ) {
+	return ef_practice_login_from_app() ? 'English Fever' : $text;
+} );
+
+add_filter( 'login_headerurl', function ( $url ) {
+	return ef_practice_login_from_app() ? home_url( '/' ) : $url;
+} );
+
+/* One short line above the form. */
+add_filter( 'login_message', function ( $message ) {
+	if ( ! ef_practice_login_from_app() ) {
+		return $message;
+	}
+	return '<p class="ef-login-note">' . esc_html__( 'Sign in to open your practice.', 'ef-practice' ) . '</p>' . $message;
 } );
 
 /* ───────── back into the app after registering or signing in ───────── */

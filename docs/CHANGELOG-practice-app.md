@@ -4,7 +4,7 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
 - **Practice picker, rebuilt (less is more):** *Level* first (A1 A2 B1 B2 C1 C2, all visible; a level without questions is greyed out and cannot be pressed), then *Topics* (optional; only topics that have questions at the chosen levels, folded), then *Questions* (10, 15, 20), then *Start*. No topic ticked = a mix of topics at the chosen levels. Learners see whole levels only (A2, not A2.1 / A2.2); inside a level the easier and harder questions are mixed. The words *task* / *tasks* are *question* / *questions* for learners.
-- **Question mix:** every session aims at about 3 choose, 5 drag-and-drop (word order, matching, word bank) and 2 typed questions in 10 (`Engine::MIX`); open writing is left out unless nothing else is in reach.
+- **Question mix:** every session aims at about 3 choose, 4 drag-and-drop (word order, matching, word bank), 2 type-a-word and 1 type-the-whole-sentence question in 10 (`Engine::MIX`); open writing is left out unless nothing else is in reach.
 - **Look and sound:** one colour per function (teal = Second Chance, gold = Surprise me, blue-grey = rule cards, raspberry = main practice action). A short rising chime plays when an old mistake is fixed (only with sound on).
 - **Relabelled questions:** 20 built-in B1 questions that are really A2 get an A2.2 copy (`a2-relabelled-1.csv`); once the copy is approved the original leaves the active pool (it stays readable for old answers). Nothing built-in was changed.
 - **Approve all** now handles up to 3000 questions at once.

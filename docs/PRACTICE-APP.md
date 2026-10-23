@@ -352,4 +352,4 @@ Order: **Level** (A1 A2 B1 B2 C1 C2; levels without questions are greyed out), *
 Teal = Second Chance (fix my mistakes), gold = Surprise me, blue-grey = rule cards, raspberry = the main practice action. Sounds (off by default): two rising notes = right, a soft fall = wrong, one note = almost, four rising notes = a mistake fixed, a longer run = session finished.
 
 ## Question mix
-`Engine::MIX` sets the share of each type per session: choose 30%, drag-and-drop 50% (word order, matching, word bank), typed 20%; open writing is almost never used. It is a preference, not a rule: when the bank lacks a type at that level, the session uses what exists. `app/tests/drafts_test.py` checks it with the draft questions loaded.
+`Engine::MIX` sets the share of each type per session: choose 30%, drag-and-drop 40% (word order, matching, word bank), type a word or words 20%, type the whole sentence 10%; open writing is almost never used. It is a preference, not a rule: when the bank lacks a type at that level, the session uses what exists. `app/tests/drafts_test.py` checks it with the draft questions loaded.

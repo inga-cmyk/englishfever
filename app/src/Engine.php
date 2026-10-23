@@ -6,17 +6,17 @@ final class Engine
     public const PLACEMENT_LEN = 24;
     private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
     public const PLACEMENT_SIZES = [12, 24, 40];
-    /** Share of each question type in a practice session: 3 choose, 5 drag (order 2, word bank 2, matching 1), 2 typed, per 10. Open writing is rare on purpose. */
-    public const MIX = ['choose' => 0.3, 'drag' => 0.5, 'type' => 0.2, 'write' => 0.0];
+    /** Share of each question type in a practice session, per 10: 3 choose, 4 drag (order, word bank, matching), 2 type a word or words, 1 type the whole sentence. Open writing is rare on purpose. */
+    public const MIX = ['choose' => 0.3, 'drag' => 0.4, 'word' => 0.2, 'sentence' => 0.1, 'write' => 0.0];
 
-    /** @return string choose | drag | type | write */
+    /** @return string choose | drag | word | sentence | write */
     public static function typeGroup(array $it): string
     {
         switch ($it['kind']) {
             case 'mcq': return 'choose';
             case 'order': case 'match': return 'drag';
-            case 'gap': return !empty($it['bank']) ? 'drag' : 'type';
-            case 'text': return 'type';
+            case 'gap': return !empty($it['bank']) ? 'drag' : 'word';
+            case 'text': return 'sentence';
         }
         return 'write';
     }
@@ -426,8 +426,8 @@ final class Engine
                 }
             }
         }
-        // a similar mix of question types in every session: choose / drag (word order, matching, word bank) / type / open writing
-        $mixCount = ['choose' => 0, 'drag' => 0, 'type' => 0, 'write' => 0];
+        // a similar mix of question types in every session: choose / drag (word order, matching, word bank) / type a word / type the sentence / open writing
+        $mixCount = ['choose' => 0, 'drag' => 0, 'word' => 0, 'sentence' => 0, 'write' => 0];
         foreach ($st['served'] as $sid2) { $q = Content::item($sid2); if ($q) $mixCount[self::typeGroup($q)]++; }
         $served_n = max(1, array_sum($mixCount));
         $recentQ = [];

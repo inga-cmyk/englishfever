@@ -6,6 +6,20 @@ final class Engine
     public const PLACEMENT_LEN = 24;
     private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
     public const PLACEMENT_SIZES = [12, 24, 40];
+    /** Share of each question type in a practice session: 3 choose, 5 drag (order 2, word bank 2, matching 1), 2 typed, per 10. Open writing is rare on purpose. */
+    public const MIX = ['choose' => 0.3, 'drag' => 0.5, 'type' => 0.2, 'write' => 0.0];
+
+    /** @return string choose | drag | type | write */
+    public static function typeGroup(array $it): string
+    {
+        switch ($it['kind']) {
+            case 'mcq': return 'choose';
+            case 'order': case 'match': return 'drag';
+            case 'gap': return !empty($it['bank']) ? 'drag' : 'type';
+            case 'text': return 'type';
+        }
+        return 'write';
+    }
 
     // ───────── sessions ─────────
 
@@ -397,6 +411,10 @@ final class Engine
                 }
             }
         }
+        // a similar mix of question types in every session: choose / drag (word order, matching, word bank) / type / open writing
+        $mixCount = ['choose' => 0, 'drag' => 0, 'type' => 0, 'write' => 0];
+        foreach ($st['served'] as $sid2) { $q = Content::item($sid2); if ($q) $mixCount[self::typeGroup($q)]++; }
+        $served_n = max(1, array_sum($mixCount));
         $recentQ = [];
         foreach (array_slice($st['served'], -3) as $sid2) { $q = Content::item($sid2); if ($q) $recentQ[mb_strtolower($q['q'])] = true; }
 
@@ -418,6 +436,10 @@ final class Engine
                 if ($m['skill'] === $it['skill'] && !isset($times[$it['id']]) && $it['bloom'] >= $m['bloom'] - 1 && $it['bloom'] <= $m['bloom'] + 1) { $cost -= 0.4; break; } // a fresh task like it
             }
             if (isset($recentQ[mb_strtolower($it['q'])])) $cost += 0.5; // not the same instruction again and again
+            if (!$placement && $count > 0) { // over its share so far: less likely; under its share: more likely
+                $grp = self::typeGroup($it);
+                $cost += max(-0.5, min(0.9, 2.0 * (($mixCount[$grp] + 1) / ($served_n + 1) - self::MIX[$grp]))) + ($grp === 'write' ? 0.6 : 0);
+            }
             if ($st['last'] && end($st['last'])['bloom'] === $it['bloom']) $cost += 0.3; // avoid the same thinking level twice in a row
             if (!$placement && !$smart && $count < 3 && $it['level'] !== $ses['level']) $cost += 0.5;
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }

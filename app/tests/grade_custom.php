@@ -23,5 +23,15 @@ foreach (Content::items() as $it) {
         if ((bool) $r['correct'] !== $want) { $bad++; echo "MISMATCH {$it['id']} ({$it['q']}) ", json_encode($a), " wanted ", $want ? 'right' : 'wrong', "\n"; }
     }
 }
+// relabelled built-in tasks: out of the active pool once their copy is approved, still readable for old answers
+$active = array_column(Content::items(), null, 'id');
+$have = array_flip(array_map(fn($it) => $it['skill'] . '|' . mb_strtolower($it['q']), array_filter(Content::items(), fn($it) => strpos($it['id'], 'c-') === 0 && strpos($it['level'], 'A2') === 0)));
+foreach (array_keys(Content::relabelled()) as $rid) {
+    $orig = Content::item($rid);
+    if (!$orig) { $bad++; echo "relabelled task unreadable: $rid\n"; continue; }
+    $copyExists = isset($have[$orig['skill'] . '|' . mb_strtolower($orig['q'])]);
+    if ($copyExists && isset($active[$rid])) { $bad++; echo "relabelled task still active: $rid\n"; }
+    if (!$copyExists) { $bad++; echo "no approved A2 copy for relabelled task: $rid\n"; }
+}
 echo "$n custom tasks graded, ", $bad ? "$bad mismatches" : "every answer graded as expected", "\n";
 exit($bad ? 1 : 0);

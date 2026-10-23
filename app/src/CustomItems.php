@@ -123,8 +123,9 @@ final class CustomItems
         }
         $skills = Content::meta()['skills'];
         $existing = [];
-        foreach (Content::items() as $it) $existing[mb_strtolower($it['q']) . '|' . $it['skill']] = true;
-        foreach (Db::all("SELECT skill, data FROM custom_items WHERE status <> 'retired'") as $r) { $d = json_decode($r['data'], true); if (!empty($d['q'])) $existing[mb_strtolower($d['q']) . '|' . $r['skill']] = true; }
+        $rel = Content::relabelled(); // a task given a lower level as a copy may be imported again at that level
+        foreach (Content::items() as $it) if (!isset($rel[$it['id']])) $existing[self::dupKey($it)] = true;
+        foreach (Db::all("SELECT skill, data FROM custom_items WHERE status <> 'retired'") as $r) { $d = json_decode($r['data'], true); if (!empty($d['q'])) $existing[self::dupKey($d + ['skill' => $r['skill']])] = true; }
         $rows = []; $line = 1; $ok = 0; $bad = 0; $seen = [];
         while (($r = fgetcsv($fh, 0, $delim, '"', '\\')) !== false) {
             $line++;
@@ -134,7 +135,7 @@ final class CustomItems
             $res = ['line' => $line, 'ok' => false, 'errors' => [], 'warnings' => [], 'q' => $get('task'), 'kind' => '', 'skill' => '', 'level' => '', 'item' => null];
             try {
                 $item = self::buildRow($get, $skills, $res);
-                $dup = mb_strtolower($item['q']) . '|' . $item['skill'];
+                $dup = self::dupKey($item);
                 if (isset($existing[$dup]) || isset($seen[$dup])) throw new ApiError('This task is already in the bank (same topic and text).', 400);
                 $seen[$dup] = true;
                 $res['ok'] = true; $res['item'] = $item;
@@ -254,6 +255,12 @@ final class CustomItems
                 break;
         }
         return $item;
+    }
+
+    /** Same topic and same text is a duplicate; word-order tasks share their instruction, so their sentence counts too. */
+    private static function dupKey(array $it): string
+    {
+        return mb_strtolower($it['q']) . '|' . $it['skill'] . (isset($it['sentence']) ? '|' . mb_strtolower($it['sentence']) : '');
     }
 
     private static function range(array $levels): string

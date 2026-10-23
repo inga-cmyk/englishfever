@@ -1,7 +1,7 @@
 import csv, os
 from lib import *
 T = "Modal verbs"
-old = list(csv.reader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "modal-verbs-1.csv"), encoding="utf-8-sig", newline="")))[1:]
+old = list(csv.reader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "modal_base.csv"), encoding="utf-8-sig", newline="")))[1:]
 drop = ("Nobody forces you, but you feel it is very important", "Your job needs a uniform. Which sentence shows a duty from outside?")
 for r in old:
     if any(r[3].startswith(d) for d in drop): continue

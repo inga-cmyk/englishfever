@@ -7,6 +7,7 @@ final class Content
     private static ?array $meta = null;
     private static ?array $byId = null;
     private static ?array $retired = null;
+    private static array $hidden = [];
 
     public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0, 'C1.1' => 7.0, 'C1.2' => 8.0];
 
@@ -23,6 +24,7 @@ final class Content
         if (self::$items === null) {
             self::$items = self::load('items');
             if (class_exists('CustomItems', false)) self::$items = array_merge(self::$items, CustomItems::approved()); // tasks the teacher added and approved
+            self::hideRelabelled();
             self::$byId = [];
             foreach (self::$items as $i => $it) {
                 self::$items[$i]['d'] = self::difficulty($it['level'], $it['bloom']);
@@ -30,6 +32,40 @@ final class Content
             }
         }
         return self::$items;
+    }
+
+    /** Built-in tasks that were given a lower level as a copy (content/relabelled.php): ids => true. */
+    public static function relabelled(): array
+    {
+        static $ids = null;
+        if ($ids === null) {
+            $f = __DIR__ . '/../content/relabelled.php';
+            $ids = is_file($f) ? array_fill_keys(require $f, true) : [];
+        }
+        return $ids;
+    }
+
+    /**
+     * A task that was relabelled (for example B1 to A2) leaves the active pool as soon as its approved copy exists at the lower level.
+     * The original stays readable, so every old answer and unfinished session keeps working.
+     */
+    private static function hideRelabelled(): void
+    {
+        $rel = self::relabelled();
+        if (!$rel || !class_exists('CustomItems', false)) return;
+        $copies = [];
+        foreach (CustomItems::approved() as $c) if (strpos($c['level'], 'A2') === 0) $copies[$c['skill'] . '|' . mb_strtolower($c['q'])] = true;
+        if (!$copies) return;
+        $keep = [];
+        foreach (self::$items as $it) {
+            if (isset($rel[$it['id']]) && isset($copies[$it['skill'] . '|' . mb_strtolower($it['q'])])) {
+                $it['d'] = self::difficulty($it['level'], $it['bloom']);
+                self::$hidden[$it['id']] = $it;
+                continue;
+            }
+            $keep[] = $it;
+        }
+        self::$items = $keep;
     }
 
     public static function meta(): array
@@ -62,7 +98,7 @@ final class Content
                 self::$retired[$it['id']] = $it;
             }
         }
-        return self::$retired[$id] ?? self::customById($id);
+        return self::$retired[$id] ?? self::$hidden[$id] ?? self::customById($id);
     }
 
     /** A custom task that is not (or no longer) approved: reports and old answers still point at it. */

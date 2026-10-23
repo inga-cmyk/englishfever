@@ -69,4 +69,22 @@ for sid, area in (("comparison", "Comparing things"), ("modal_verbs", "Modal ver
     check(sid + ": its area is listed", area in [a["label"] for a in m["areas"]])
     st = learner.api("session/start", {"mode": "practice", "skills": [sid], "level": "A2.1", "length": 5})
     check(sid + ": a learner can practise it", st["_status"] == 200 and st["item"]["skill"] == sid, st)
+# ---- every practice session has a similar mix of question types: about 3 choose, 5 drag (order / matching / word bank), 2 typed in ten
+def group(it):
+    return {"mcq": "choose", "order": "drag", "match": "drag", "text": "type"}.get(it["kind"]) or ("drag" if it.get("bank") else ("type" if it["kind"] == "gap" else "write"))
+mixes = []
+for k in range(4):
+    mix_learner = login(9500 + k, "Mix Learner %d" % k)
+    st = mix_learner.api("session/start", {"mode": "practice", "skills": ["present_simple", "past_simple"], "level": "A2.2", "length": 10})
+    sid, item, groups = st["session"]["id"], st["item"], []
+    while item:
+        groups.append(group(item))
+        a = mix_learner.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": "zzz" if item["kind"] in ("text", "write") else ([] if item["kind"] in ("order", "match") else (["zzz"] if item["kind"] == "gap" else item["options"][0])), "time_ms": 2000})
+        item = a.get("next")
+    mixes.append(groups)
+typed = [g.count("type") for g in mixes]; drag = [g.count("drag") for g in mixes]; choose = [g.count("choose") for g in mixes]
+check("sessions have at most 3 typed questions in 10 (typed per session: %s)" % typed, max(typed) <= 3, typed)
+check("sessions have at least 3 drag-and-drop questions in 10 (per session: %s)" % drag, min(drag) >= 3, drag)
+check("sessions have at least 2 and at most 5 multiple-choice questions in 10 (per session: %s)" % choose, 2 <= min(choose) and max(choose) <= 5, choose)
+check("open writing does not appear in these sessions", all("write" not in g for g in mixes), mixes)
 print("\nALL PASS" if ok else "\nSOME FAILED"); raise SystemExit(0 if ok else 1)

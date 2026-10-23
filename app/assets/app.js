@@ -411,11 +411,11 @@
       nodes.push(h('div', { class: 'card focus' }, main, links));
       var cb = d.comeback || { open: 0, fixed: 0 };
       if (cb.open > 0) {
-        nodes.push(h('div', { class: 'card pad-s comeback-card' },
+        nodes.push(h('div', { class: 'card pad-s fn-chance' },
           h('div', { class: 'row between', style: 'flex-wrap:nowrap;gap:14px' },
-            h('div', null, h('b', { style: 'color:var(--text)' }, 'Comeback'),
-              h('div', { class: 'small muted' }, plural(cb.open, 'mistake is', 'mistakes are') + ' waiting to be turned into wins.' + (cb.fixed ? ' You have fixed ' + cb.fixed + ' so far.' : ''))),
-            comebackButton('btn small', 'Fix them'))));
+            h('div', null, h('b', { style: 'color:var(--text)' }, 'Second Chance'),
+              h('div', { class: 'small muted' }, plural(cb.open, 'mistake', 'mistakes') + ' to fix.')),
+            comebackButton('btn small fn-chance', 'Start'))));
       }
       if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
@@ -457,13 +457,13 @@
     return b;
   }
 
-  /** "Comeback": the learner's own open mistakes, each one met again as a similar question. */
+  /** "Second Chance": the learner's own open mistakes, each one met again as a similar question. */
   function comebackButton(cls, label) {
     var b = h('button', { class: cls, type: 'button', onclick: function () {
       b.disabled = true;
       api('session/start', { mode: 'comeback' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
         .catch(function (e) { b.disabled = false; UI.toast(e.message); });
-    } }, icon('target'), label || 'Start Comeback');
+    } }, icon('refresh'), label || 'Start');
     return b;
   }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
@@ -746,7 +746,7 @@
     });
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
-      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), h('span', { class: 'row', style: 'gap:8px' }, (d.comeback && d.comeback.open) ? comebackButton('btn ghost small', 'Comeback (' + d.comeback.open + ')') : null, surpriseButton('btn ghost small'))),
+      h('div', { class: 'row between' }, h('div', null, h('div', { class: 'label' }, 'Practice'), h('h1', { style: 'margin:0' }, 'Choose what to practise')), h('span', { class: 'row', style: 'gap:8px' }, (d.comeback && d.comeback.open) ? comebackButton('btn small fn-chance', 'Second Chance (' + d.comeback.open + ')') : null, surpriseButton('btn small fn-surprise'))),
       holder, note, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
         h('a', { class: 'btn ghost', href: '#/placement' }, 'Take the placement test instead')))));
   }
@@ -865,7 +865,7 @@
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
         lock(); showFeedback(r, ans); drawDots(); drawPrev();
-        Sound.play(r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
+        Sound.play(r.result.fixed ? 'fixed' : r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
         if (r.done) S.summary = r.summary;
       }).catch(function (e) {
         submit.disabled = false;
@@ -914,7 +914,7 @@
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Nepieciešamās formas atrastas' : 'Required patterns found') : (lv ? 'Pārbaudi norādītos nosacījumus' : 'Check the required patterns')) : (good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (res.near ? 'Almost – one word to check' : 'Not quite')),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
-      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'Mistake fixed!'), ' You got a similar one right this time.'));
+      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'Mistake fixed!')));
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
       if (!good && (it.kind === 'gap' || it.kind === 'text')) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
@@ -969,7 +969,7 @@
     var lastCheer = null;
 
     function next(r) {
-      if (r.done) { state.sess = null; state.lastSummary = r.summary; Sound.play('done'); go('#/summary'); return; }
+      if (r.done) { state.sess = null; state.lastSummary = r.summary; Sound.play((r.summary && r.summary.fixed) ? 'fixed' : 'done'); go('#/summary'); return; }
       state.sess = newSess(r.session, r.next, S.history);
       viewSession();
     }
@@ -1007,7 +1007,7 @@
     if (state.reported[it.id]) reportedDone();
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 
-    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Comeback' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice'));
+    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Second Chance' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice'));
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' },
@@ -1068,18 +1068,18 @@
     var nodes = [];
     var fixed = s.fixed || 0;
     var headline = s.comeback
-      ? (fixed ? 'Great job! You fixed ' + plural(fixed, 'mistake', 'mistakes') + '.' : 'Good try. These ones need another look.')
+      ? (fixed ? 'Great job! ' + plural(fixed, 'mistake', 'mistakes') + ' fixed.' : 'Good try. Look at these again.')
       : (s.accuracy >= 80 ? 'Great work!' : (s.accuracy >= 50 ? 'Good effort!' : 'Keep going – this is how you learn.'));
     // real progress only: topics where this session went clearly better than the learner's recent history
     var better = (s.by_skill || []).filter(function (k) { var now = pct(k.correct, k.n); return k.prev_accuracy !== null && k.prev_accuracy !== undefined && k.n >= 3 && now >= k.prev_accuracy + 10; });
     var wins = [];
-    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), 'You also fixed ' + plural(fixed, 'earlier mistake', 'earlier mistakes') + ' along the way.'));
-    better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% before, ' + pct(k.correct, k.n) + '% today.')); });
-    if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), plural(s.fixed_total, 'mistake', 'mistakes') + ' fixed in all.'));
+    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), plural(fixed, 'old mistake', 'old mistakes') + ' fixed on the way.'));
+    better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% → ' + pct(k.correct, k.n) + '%')); });
+    if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), plural(s.fixed_total, 'mistake', 'mistakes') + ' fixed so far'));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
-      h('div', { class: 'label' }, s.comeback ? 'Comeback finished' : 'Practice finished'), h('h1', null, headline),
+      h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
-      s.open_after ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, plural(s.open_after, 'mistake is', 'mistakes are') + ' still waiting.'), comebackButton('btn ghost small', 'Comeback')) : (s.comeback ? h('p', { class: 'small muted' }, 'Nothing is waiting now. Clean slate!') : null),
+      s.open_after ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, plural(s.open_after, 'mistake', 'mistakes') + ' left'), comebackButton('btn small fn-chance', 'Second Chance')) : (s.comeback ? h('p', { class: 'small muted' }, 'All clear!') : null),
       h('div', { class: 'grid g3' },
         h('div', null, h('div', { class: 'big' }, s.correct + '/' + s.n), h('div', { class: 'muted small' }, 'correct')),
         h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),
@@ -1140,7 +1140,7 @@
       state.meta.areas.map(function (a) {
         var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
         return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'grid g2' }, list.map(function (s) {
-          return h('div', { class: 'card' }, h('div', { class: 'row between' }, h('h3', { style: 'margin:0' }, s.label), h('span', { class: 'pill' }, levelRange(s))), ruleCard(s, lv));
+          return h('div', { class: 'card fn-ref' }, h('div', { class: 'row between' }, h('h3', { style: 'margin:0' }, s.label), h('span', { class: 'pill' }, levelRange(s))), ruleCard(s, lv));
         })));
       })));
   }

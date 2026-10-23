@@ -23,8 +23,8 @@ mc(T,"A2.2",4,"Which question is NOT correct?","Where does your brother works?",
 mc(T,"A2.2",3,"Choose the correct option: In my country, the shops ___ at 9 a.m. on weekdays.","open",["opens","is open","opening"],"*Shops* is plural: *they open*.","*Shops* ir daudzskaitlī: *they open*.")
 # ============ Present continuous ============
 T = "Present continuous"
-mc(T,"A2.1",1,"Choose the correct form: Be quiet! The baby ___ .","is sleeping",["sleeps","sleeping","is sleep"],"Now: *is* + verb + *-ing*.","Tagad: *is* + darbības vārds + *-ing*.")
-mc(T,"A2.1",1,"Choose the correct form: We ___ lunch at the moment.","are having",["have","are have","having"],"*At the moment* = now: *are having*.","*At the moment* = tagad: *are having*.")
+mc(T,"A2.1",1,"Choose the correct form: Be quiet! The baby ___ .","is sleeping",["are sleeping","sleeping","is sleep"],"Now: *is* + verb + *-ing*.","Tagad: *is* + darbības vārds + *-ing*.")
+mc(T,"A2.1",1,"Choose the correct form: We ___ lunch at the moment.","are having",["having","are have","has"],"*At the moment* = now: *are having*.","*At the moment* = tagad: *are having*.")
 gp(T,"A2.1",3,"Look! It ___ outside. (rain)","is raining","Now: *is raining*.","Tagad: *is raining*.")
 gp(T,"A2.1",3,"My friends ___ football in the park now. (play)","are playing","*Friends* is plural: *are playing*.","*Friends* ir daudzskaitlī: *are playing*.")
 tx(T,"A2.1",3,"Make it negative: Dad is washing the car.",["Dad isn't washing the car.","Dad is not washing the car."],"Put *not* after *is*.","Liec *not* aiz *is*.")
@@ -32,11 +32,11 @@ tx(T,"A2.1",3,"Make a question: The children are swimming.","Are the children sw
 od(T,"A2.1",3,"Put the words in order. Say what is happening now.","the students are writing a test","Subject + *are* + verb + *-ing*.","Priekšmets + *are* + darbības vārds + *-ing*.")
 mc(T,"A2.1",4,"At the bus stop: which sentence is NOT correct?","She is wait for the bus.",["She is waiting for the bus.","They are waiting for the bus.","I am waiting for the bus."],"After *is* the verb needs *-ing*: *is waiting*.","Pēc *is* darbības vārdam vajag *-ing*: *is waiting*.")
 mc(T,"A2.2",2,"Which sentence is about a temporary situation?","I'm staying with my uncle this week.",["I live with my uncle.","My uncle lives near here.","I stay with my uncle every summer."],"The present continuous shows something temporary: *this week*.","Tagadnes ilgstošā forma parāda kaut ko pagaidu: *this week*.")
-mc(T,"A2.2",3,"Choose the correct option: Why ___ you ___ a coat? It is warm today.","are / wearing",["do / wear","is / wearing","are / wear"],"*Why are you wearing* asks about now.","*Why are you wearing* jautā par tagadni.")
+mc(T,"A2.2",3,"Choose the correct option: Why ___ you ___ a coat? It is warm today.","are / wearing",["did / wearing","is / wearing","are / wear"],"*Why are you wearing* asks about now.","*Why are you wearing* jautā par tagadni.")
 gp(T,"A2.2",3,"What ___ you ___ at the moment? (read)","are / reading","*Are* + subject + verb + *-ing*.","*Are* + priekšmets + darbības vārds + *-ing*.")
 gp(T,"A2.2",3,"Tom ___ to his sister on the phone right now. (talk)","is talking","*Right now* = present continuous.","*Right now* = tagadnes ilgstošā forma.")
 mt(T,"A2.2",2,"Match each question with its answer.",[("What are you doing?","I'm baking a cake."),("Is it raining?","No, it isn't."),("Who is she talking to?","Her teacher."),("Are they waiting for us?","Yes, they are.")],"Short answers repeat *am / is / are*.","Īsās atbildes atkārto *am / is / are*.")
-mc(T,"A2.2",3,"Choose the correct option: My English ___ better these days.","is getting",["gets","getting","is get"],"*These days* shows a change: *is getting*.","*These days* parāda pārmaiņu: *is getting*.")
+mc(T,"A2.2",3,"Choose the correct option: My English ___ better these days.","is getting",["get","getting","is get"],"*These days* shows a change: *is getting*.","*These days* parāda pārmaiņu: *is getting*.")
 mc(T,"A2.2",4,"In the office: which sentence is NOT correct?","I'm not understanding this exercise.",["I don't understand this exercise.","She is making coffee now.","They are studying for a test."],"*Understand* is a state verb: we say *I don't understand*.","*Understand* ir stāvokļa darbības vārds: saka *I don't understand*.")
 tx(T,"A2.2",3,"Make a question with What: He is cooking.","What is he cooking?","*What* + *is* + subject + verb + *-ing*.","*What* + *is* + priekšmets + darbības vārds + *-ing*.")
 # ============ Past simple ============
@@ -60,15 +60,15 @@ od(T,"A2.2",3,"Put the words in order. Ask about last weekend.","what did you do
 mc(T,"A2.2",4,"At the gym: which question is NOT correct?","Did you went to the gym?",["Did you go to the gym?","Where did you go?","Did she call you?"],"After *did* the verb is in the base form: *go*.","Pēc *did* darbības vārds ir pamatformā: *go*.")
 # ============ Past continuous ============
 T = "Past continuous"
-mc(T,"A2.2",1,"Choose the correct form: I ___ a book when the phone rang.","was reading",["read","am reading","were reading"],"An action in progress in the past: *was / were* + *-ing*.","Darbība, kas pagātnē norisinājās: *was / were* + *-ing*.")
-mc(T,"A2.2",2,"Choose the correct form: They ___ football at five o'clock yesterday.","were playing",["was playing","played","are playing"],"*They* + *were* + verb + *-ing*.","*They* + *were* + darbības vārds + *-ing*.")
+mc(T,"A2.2",1,"Choose the correct form: I ___ a book when the phone rang.","was reading",["reading","am reading","were reading"],"An action in progress in the past: *was / were* + *-ing*.","Darbība, kas pagātnē norisinājās: *was / were* + *-ing*.")
+mc(T,"A2.2",2,"Choose the correct form: They ___ football at five o'clock yesterday.","were playing",["was playing","playing","are playing"],"*They* + *were* + verb + *-ing*.","*They* + *were* + darbības vārds + *-ing*.")
 gp(T,"A2.2",3,"At 9 p.m. she ___ a film. (watch)","was watching","A moment in the past: *was watching*.","Brīdis pagātnē: *was watching*.")
 gp(T,"A2.2",3,"We ___ dinner when the lights went out. (have)","were having","The long action: *were having*.","Garā darbība: *were having*.")
 tx(T,"A2.2",3,"Make it negative: I was sleeping.",["I wasn't sleeping.","I was not sleeping."],"Put *not* after *was*.","Liec *not* aiz *was*.")
 tx(T,"A2.2",3,"Make a question: They were waiting for us.","Were they waiting for us?","Put *were* before the subject.","Liec *were* pirms priekšmeta.")
 mc(T,"A2.2",4,"In the park: which sentence is NOT correct?","He were running with his dog.",["He was running with his dog.","They were running with their dog.","I was running with my dog."],"*He* goes with *was*, not *were*.","*He* lieto ar *was*, nevis *were*.")
 od(T,"A2.2",3,"Put the words in order. Say what was happening.","the children were playing in the garden","Subject + *were* + verb + *-ing* + place.","Priekšmets + *were* + darbības vārds + *-ing* + vieta.")
-mc(T,"A2.2",3,"Choose the correct option: While I ___ , my brother was cooking dinner.","was studying",["studied","study","were studying"],"Two actions at the same time: *while* + *was studying*.","Divas darbības vienlaikus: *while* + *was studying*.")
+mc(T,"A2.2",3,"Choose the correct option: While I ___ , my brother was cooking dinner.","was studying",["studying","study","were studying"],"Two actions at the same time: *while* + *was studying*.","Divas darbības vienlaikus: *while* + *was studying*.")
 # ============ Present perfect ============
 T = "Present perfect"
 mc(T,"A2.2",1,"Choose the correct form: She has ___ in three countries.","lived",["live","living","lives"],"*Has* + past participle: *has lived*.","*Has* + pagātnes divdabis: *has lived*.")
@@ -89,7 +89,7 @@ gp(T,"A2.1",3,"I ___ my homework tonight. (not / do)","'m not going to do | am n
 tx(T,"A2.1",3,"Make a question: You are going to cook dinner.","Are you going to cook dinner?","Put *are* before the subject.","Liec *are* pirms priekšmeta.")
 od(T,"A2.1",3,"Put the words in order. Say your plan.","we are going to travel by train","Subject + *are going to* + verb.","Priekšmets + *are going to* + darbības vārds.")
 mc(T,"A2.1",4,"About plans: which sentence is NOT correct?","He going to play tennis tomorrow.",["He is going to play tennis tomorrow.","They are going to play tennis tomorrow.","I am going to play tennis tomorrow."],"We need *is / am / are* before *going to*.","Pirms *going to* vajag *is / am / are*.")
-mc(T,"A2.2",3,"Choose the correct option: You are cold? OK, I ___ the window.","'ll close",["am closing","close","am going to close"],"A decision at the moment of speaking: *'ll* + base verb.","Lēmums runāšanas brīdī: *'ll* + pamatforma.")
+mc(T,"A2.2",3,"Choose the correct option: You are cold? OK, I ___ the window.","'ll close",["am closing","close","am going close"],"A decision at the moment of speaking: *'ll* + base verb.","Lēmums runāšanas brīdī: *'ll* + pamatforma.")
 mc(T,"A2.2",3,"Choose the correct option: Look at that man! He ___ fall off the ladder.","is going to",["will to","goes to","is"],"We can see it now, so we use *is going to*.","Mēs to redzam tagad, tāpēc lieto *is going to*.")
 gp(T,"A2.2",3,"I think the match ___ very exciting. (be)","will be","*I think* + *will* for a prediction.","*I think* + *will* prognozei.")
 gp(T,"A2.2",3,"We ___ our grandparents on Saturday. We have bought the tickets. (visit)","are visiting","A fixed arrangement: present continuous.","Norunāts pasākums: tagadnes ilgstošā forma.")
@@ -98,7 +98,7 @@ mc(T,"A2.2",2,"Which sentence is an arrangement with a time?","I'm meeting Jack 
 mt(T,"A2.2",2,"Match each situation with the best sentence.",[("You see black clouds.","It's going to rain."),("The phone is ringing.","I'll answer it."),("You have bought two tickets.","We're flying to Rome."),("You are not sure.","I think it will be fine.")],"*Going to* = evidence, *'ll* = decision now, present continuous = arrangement, *think ... will* = opinion.","*Going to* = pierādījumi, *'ll* = lēmums tagad, tagadnes ilgstošā = norunāts, *think ... will* = viedoklis.")
 # ============ Passives ============
 T = "Present simple passive"
-mc(T,"A2.2",1,"Choose the correct form: Tea ___ in India.","is grown",["grows","is grow","are grown"],"Passive: *is / are* + past participle.","Pasīvs: *is / are* + pagātnes divdabis.")
+mc(T,"A2.2",1,"Choose the correct form: Tea ___ in India.","is grown",["growing","is grow","are grown"],"Passive: *is / are* + past participle.","Pasīvs: *is / are* + pagātnes divdabis.")
 mc(T,"A2.2",1,"Choose the correct form: These shoes ___ in Italy.","are made",["is made","make","are make"],"*Shoes* is plural: *are made*.","*Shoes* ir daudzskaitlī: *are made*.")
 gp(T,"A2.2",3,"Parcels ___ to our office every morning. (deliver)","are delivered","Passive: *are delivered*.","Pasīvs: *are delivered*.")
 gp(T,"A2.2",3,"The classrooms ___ every evening. (clean)","are cleaned","Passive: *are cleaned*.","Pasīvs: *are cleaned*.")
@@ -120,14 +120,14 @@ mc(T,"A2.2",3,"Choose the correct option: When ___ the museum ___ ?","was / open
 # ============ Conditionals ============
 T = "Zero conditional (if + present, present)"
 mc(T,"A2.2",1,"Choose the correct form: If water gets very cold, it ___ .","freezes",["will freeze","froze","freeze"],"Always true: present simple in both parts.","Vienmēr patiess: abās daļās vienkāršā tagadne.")
-mc(T,"A2.2",1,"Choose the correct form: If I ___ tired, I go to bed early.","am",["will be","was","would be"],"Zero conditional: *if* + present simple.","Nulles nosacījums: *if* + vienkāršā tagadne.")
+mc(T,"A2.2",1,"Choose the correct form: If I ___ tired, I go to bed early.","am",["will be","being","would be"],"Zero conditional: *if* + present simple.","Nulles nosacījums: *if* + vienkāršā tagadne.")
 gp(T,"A2.2",3,"If you ___ a plant, it dies. (not / water)","don't water | do not water","Present simple in the *if* part.","Vienkāršā tagadne *if* daļā.")
 gp(T,"A2.2",3,"When the sun ___ , the snow melts. (come out)","comes out","*When* works like *if* for things that always happen.","*When* darbojas kā *if* lietām, kas notiek vienmēr.")
 tx(T,"A2.2",3,"Join with If: You press this button. The door opens.",["If you press this button, the door opens.","The door opens if you press this button."],"Present simple in both parts.","Abās daļās vienkāršā tagadne.")
 mc(T,"A2.2",4,"In art class: which sentence is NOT correct?","If you mix red and white, you gets pink.",["If you mix red and white, you get pink.","If you mix blue and yellow, you get green.","When you mix black and white, you get grey."],"*You* takes *get*, not *gets*.","*You* lieto ar *get*, nevis *gets*.")
 od(T,"A2.2",3,"Put the words in order. Say what always happens.","if people don't sleep they feel tired","*If* + present simple, present simple.","*If* + vienkāršā tagadne, vienkāršā tagadne.")
 T = "First conditional (if + present, will)"
-mc(T,"A2.2",1,"Choose the correct form: If we hurry, we ___ the bus.","will catch",["catch","caught","would catch"],"First conditional: *will* + base verb in the result.","Pirmais nosacījums: rezultātā *will* + pamatforma.")
+mc(T,"A2.2",1,"Choose the correct form: If we hurry, we ___ the bus.","will catch",["catching","caught","would catch"],"First conditional: *will* + base verb in the result.","Pirmais nosacījums: rezultātā *will* + pamatforma.")
 mc(T,"A2.2",2,"Choose the correct form: If the weather ___ good, we will have a picnic.","is",["will be","was","would be"],"After *if* we use the present simple, not *will*.","Pēc *if* lieto vienkāršo tagadni, nevis *will*.")
 gp(T,"A2.2",3,"If you ___ me your number, I'll call you tonight. (give)","give","Present simple after *if*.","Vienkāršā tagadne pēc *if*.")
 gp(T,"A2.2",3,"She ___ angry if you break her phone. (be)","will be","Result: *will* + base verb.","Rezultāts: *will* + pamatforma.")

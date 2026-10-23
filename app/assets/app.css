@@ -461,9 +461,23 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .q .q-sample { font-style: italic; display: inline-block; margin-top: 4px; }
 .q .q-sample input { font-style: normal; }
 
-.comeback-card { border-color: var(--gold); margin-top: 12px; }
 .fixed-line { display: flex; align-items: center; gap: 8px; color: var(--good, #2f8f5b); margin: 6px 0; }
 .fixed-line svg { width: 18px; height: 18px; flex: none; }
 .wins { margin: 8px 0 12px; }
 .wins li { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
 .wins li svg { width: 18px; height: 18px; flex: none; color: var(--good, #2f8f5b); }
+
+/* One look per function, so a card or button tells you what it does before you read it:
+   teal = Second Chance (fix my mistakes), gold = Surprise me, blue-grey = reference (rule cards), raspberry = the main practice action. */
+:root { --chance: #1E8776; --chance-deep: #166B5D; --chance-bg: #E3F3EF; --ref: #5B6B8C; --ref-bg: #EEF1F7; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chance: #3FC1AB; --chance-deep: #2FA08D; --chance-bg: #10241F; --ref: #9AA9C8; --ref-bg: #1B2030; } }
+:root[data-theme="dark"] { --chance: #3FC1AB; --chance-deep: #2FA08D; --chance-bg: #10241F; --ref: #9AA9C8; --ref-bg: #1B2030; }
+.card.fn-chance { background: var(--chance-bg); border-color: var(--chance); border-left-width: 6px; margin-top: 12px; }
+.btn.fn-chance { background: var(--chance); color: #fff; }
+.btn.fn-chance:hover { background: var(--chance-deep); }
+.btn.fn-chance svg { width: 18px; height: 18px; }
+.btn.fn-surprise { background: var(--gold-pale); color: var(--text); border: 1.5px solid var(--gold-deep); }
+.btn.fn-surprise:hover { background: var(--gold); }
+.card.fn-ref { background: var(--ref-bg); border-color: var(--ref); border-left-width: 6px; }
+.fixed-line { color: var(--chance); }
+.fixed-line svg { color: var(--chance); }

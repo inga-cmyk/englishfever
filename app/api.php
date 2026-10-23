@@ -204,7 +204,7 @@ try {
 
         case 'teacher/items-status':
             Auth::requireTeacher();
-            $ids = is_array($in['ids'] ?? null) ? array_slice($in['ids'], 0, 500) : [];
+            $ids = is_array($in['ids'] ?? null) ? array_slice($in['ids'], 0, 3000) : [];
             out(['ok' => true, 'changed' => CustomItems::setStatus($ids, (string) ($in['status'] ?? ''))]);
 
         case 'teacher/items-template':

@@ -74,6 +74,9 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
     await p.waitForSelector('.task .q'); const id = await p.evaluate(async () => (await (await fetch('api.php?r=session%2Fresume')).json()).resume.item.id); const it = ITEMS[id];
     if (it.kind === 'mcq') await p.locator('label.opt[data-opt="' + (right ? it.correct : it.wrong[0]).replace(/"/g, '\\"') + '"]').click();
     else if (it.kind === 'gap' && !it.bank) { const inp = p.locator('.task input.blank'); for (let i = 0; i < it.answers.length; i++) await inp.nth(i).fill(right ? it.answers[i][0] : 'zzz'); }
+    else if (it.kind === 'gap' && it.bank) { const esc = t => new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$');
+      for (let i = 0; i < it.answers.length; i++) { const good = it.answers[i][0]; const pick = right ? good : (it.bank.find(b => !it.answers[i].includes(b)) || 'zzz');
+        await p.locator('.dnd-bank .chip', { hasText: esc(pick) }).first().click(); } }
     else if (it.kind === 'text') await p.fill('.task input.type-in', right ? it.answers[0][0] : 'zzz');
     else if (it.kind === 'order') { const toks = it.sentence.split(' '); for (const t of (right ? toks : toks.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }
     else if (it.kind === 'match') { const rs = it.pairs.map(x => x[1]); for (const t of (right ? rs : rs.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }

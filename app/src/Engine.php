@@ -74,6 +74,11 @@ final class Engine
         if ($smart) $state['smart'] = true;
         if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; }
         if (!empty($allowed)) $state['levels'] = $allowed;
+        if ($mode === 'placement') {
+            // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
+            $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
+            $state['pl'] = ['ladder' => $ladder, 'lv' => $ladder[0], 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => []];
+        }
         $state['fixed'] = 0;
         if ($mode === 'practice') {
             foreach ($skills as $s) {
@@ -143,7 +148,8 @@ final class Engine
         $st['theta'][$skill] = round($theta, 3);
         $pg = 1 / (1 + exp(-1.7 * ($st['g'] - $d)));
         $st['g'] = round(max(0.5, min(9.5, $st['g'] + 0.4 * (($ok ? 1 : 0) - $pg))), 3);
-        $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom']];
+        $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom'], 'level' => substr($item['level'], 0, 2)];
+        if ($ses['mode'] === 'placement') self::plAdvance($st, substr($item['level'], 0, 2), $ok);
 
         $beforeFixed = $ses['mode'] === 'placement' ? 0 : Mistakes::scan($uid)['fixed'];
         $now = time();
@@ -375,34 +381,43 @@ final class Engine
             $bloomCount[$h['bloom']]++;
         }
 
-        // placement: a run of correct answers moves the target up faster, so strong learners are not stuck on easy tasks
-        $boost = 0.0;
-        if ($placement) {
-            $streak = 0;
-            foreach (array_reverse($st['last']) as $h) { if ($h['correct']) $streak++; else break; }
-            $boost = min(1.2, max(0, $streak - 1) * 0.4);
-        }
-        // placement: skip skills that are far too hard for the current estimate
-        if ($placement) {
-            $g = $st['g'];
+        // placement: first a staircase of 3-question blocks, one full level at a time; when it has found the ceiling, questions near the ability fitted so far
+        $pl = $placement ? ($st['pl'] ?? null) : null;
+        $stairs = $pl && empty($pl['done']);
+        $theta = 3.0;
+        if ($placement && $st['last']) $theta = self::fitAbility(array_map(fn($h) => [$h['d'], $h['correct']], $st['last']));
+        elseif ($placement) $theta = $st['g'];
+        if ($stairs) {
             foreach ($bySkill as $s => $list) {
-                $min = min(array_column($list, 'd'));
-                if ($min > $g + 1.2 + $boost) unset($bySkill[$s]);
+                $list = array_values(array_filter($list, fn($it) => substr($it['level'], 0, 2) === $pl['lv']));
+                if ($list) $bySkill[$s] = $list; else unset($bySkill[$s]);
             }
-            if (!$bySkill) return null;
+            if (!$bySkill) {   // nothing left at this level: the staircase ends here
+                $ses['state']['pl']['done'] = true;
+                return self::pickNext($ses);
+            }
+        } elseif ($placement) {
+            // leave out topics whose easiest task is far too hard for the ability found (unless that would leave nothing)
+            $near = array_filter($bySkill, fn($list) => min(array_column($list, 'd')) <= $theta + 1.0);
+            if ($near) $bySkill = $near;
         }
 
         // choose the skill: least used so far; in placement, skills just answered wrongly are re-checked first
         $lastWrong = [];
         foreach ($st['last'] as $h) $lastWrong[$h['skill']] = !$h['correct'];
+        $missedHere = [];   // second block at a level: topics missed in the first block come back with a different sentence
+        if ($stairs && $pl['bn'] >= 1) foreach ($st['last'] as $h) if ($h['level'] === $pl['lv']) $missedHere[$h['skill']] = !$h['correct'];
         $bestSkill = null;
         $bestScore = PHP_FLOAT_MAX;
         foreach ($bySkill as $s => $list) {
             $score = $skillCount[$s] * 10 + (random_int(0, 99) / 100);
-            if ($placement && $skillCount[$s] > 0 && !empty($lastWrong[$s])) $score -= 4;
+            if ($stairs) { if (!empty($missedHere[$s])) $score -= 6; }
+            elseif ($placement && $skillCount[$s] > 0 && !empty($lastWrong[$s])) $score -= 4;
             if ($score < $bestScore) { $bestScore = $score; $bestSkill = $s; }
         }
-        $pool = $bySkill[$bestSkill];
+        // placement: every topic competes on closeness to the target level or ability, with a push towards topics not used much yet
+        $soft = $placement;
+        $pool = $soft ? array_merge(...array_values($bySkill)) : $bySkill[$bestSkill];
 
         // recent history penalty
         // how often (and how lately) the learner has met each task: new tasks come first, so the same sentences do not return again and again
@@ -437,14 +452,24 @@ final class Engine
         if (!$placement && !$smart && $count < 3) {
             $target = Content::BASE[$ses['level']] + 0.2 * $count; // diagnostic: Bloom 1, 2, 3 at the chosen level
         } else {
-            $theta = $st['theta'][$bestSkill] ?? ($placement ? $st['g'] : Content::BASE[$ses['level']] + 0.3);
-            $target = $theta + 0.1 + $boost;
+            if ($stairs) $target = Content::BASE[$pl['lv'] . ($pl['lv'] === $pl['ladder'][0] ? '.2' : '.1')] ?? $theta;
+            elseif ($placement) $target = $theta + 0.05;   // the most informative task is one the learner has a 50-50 chance on
+            else {
+                $theta = $st['theta'][$bestSkill] ?? Content::BASE[$ses['level']] + 0.3;
+                $target = $theta + 0.1;
+            }
         }
 
         $best = null;
         $bestCost = PHP_FLOAT_MAX;
         foreach ($pool as $it) {
             $cost = abs($it['d'] - $target) + 0.2 * $bloomCount[$it['bloom']] + random_int(0, 25) / 100;
+            if ($soft) {
+                $cost += ($stairs ? 0.6 : 0.3) * $skillCount[$it['skill']];
+                if ($stairs) { if (!empty($missedHere[$it['skill']])) $cost -= 1.2; }   // a topic missed a moment ago is checked again with a new sentence
+                elseif ($skillCount[$it['skill']] > 0 && !empty($lastWrong[$it['skill']])) $cost -= 0.5;
+                $cost -= 0.1 * $bloomCount[$it['bloom']] + random_int(0, 15) / 100;   // keep it close to the target: fewer random jumps
+            }
             if (isset($missed[$it['id']])) $cost -= 0.8; // the task itself, a while later
             else if (isset($times[$it['id']])) $cost += 2.0 + 0.35 * min(3, $times[$it['id']]) + ((time() - $lastSeen[$it['id']]) < 7 * 86400 ? 0.4 : 0); // met before: only when nothing new is in reach
             if (!isset($missed[$it['id']])) foreach ($missed as $m) {
@@ -461,6 +486,34 @@ final class Engine
         }
         if ($best && isset($missed[$best['id']])) $ses['state']['returned'] = ($st['returned'] ?? []) + [$best['id'] => 1];
         return $best;
+    }
+
+    /**
+     * Placement staircase. A block is 3 questions at one full level, each on a different topic.
+     * 2 of 3 right: up to the next level. Fewer: one more block at the same level (the topics missed come back with a new sentence);
+     * the level is passed when 4 of the 6 are right, otherwise it is the ceiling and the staircase ends.
+     */
+    private static function plAdvance(array &$st, string $full, bool $ok): void
+    {
+        if (empty($st['pl']) || !empty($st['pl']['done']) || $st['pl']['lv'] !== $full) return;
+        $p = &$st['pl'];
+        $p['n']++; $p['nn']++;
+        if ($ok) { $p['c']++; $p['cc']++; }
+        if ($p['n'] < 3) return;
+        $p['bn']++;
+        $pass = $p['bn'] === 1 ? $p['c'] >= 2 : $p['cc'] >= 4;
+        if ($pass) {
+            $p['passed'][] = $p['lv'];
+            $i = array_search($p['lv'], $p['ladder'], true);
+            if (!isset($p['ladder'][$i + 1])) { $p['done'] = true; return; }
+            $p['lv'] = $p['ladder'][$i + 1];
+            $p['n'] = $p['c'] = $p['nn'] = $p['cc'] = $p['bn'] = 0;
+        } elseif ($p['bn'] === 1) {
+            $p['n'] = 0; $p['c'] = 0;
+        } else {
+            $p['done'] = true;
+            $p['ceiling'] = $p['lv'];
+        }
     }
 
     /** Ability that best explains the answers (logistic model, weak prior), by Newton steps. @param array $pts list of [difficulty, 1|0] */
@@ -533,11 +586,42 @@ final class Engine
             $overall = $pts ? self::fitAbility($pts) : $ses['state']['g'];
             $out['overall_level'] = Content::levelFromAbility($overall);
             $out['overall_theta'] = round($overall, 2);
-            $gaps = [];
-            foreach (array_slice($skills, 0, 3) as $s) {
-                $gaps[] = ['id' => $s['id'], 'label' => $s['label'], 'level' => $s['level_est'],
-                    'why' => "{$s['correct']} of {$s['n']} correct at about {$s['level_est']} level"];
+            // gaps: topics missed at or below the level found (a miss above it is simply "not yet"), most missed first, lowest level first
+            $fullIdx = array_flip(Content::FULL_LEVELS);
+            $top = $fullIdx[substr($out['overall_level'], 0, 2)] ?? 0;
+            $by = [];
+            foreach ($rows as $r) {
+                $f = substr($r['level'], 0, 2);
+                if (($fullIdx[$f] ?? 99) > $top) continue;
+                $g = &$by[$r['skill']];
+                $g['n'] = ($g['n'] ?? 0) + 1;
+                if (!$r['correct']) { $g['miss'] = ($g['miss'] ?? 0) + 1; $g['low'] = min($g['low'] ?? 99, $fullIdx[$f] ?? 99); }
+                unset($g);
             }
+            $cand = [];
+            foreach ($by as $sid => $g) if (!empty($g['miss'])) $cand[] = ['id' => $sid, 'miss' => $g['miss'], 'n' => $g['n'], 'low' => $g['low']];
+            usort($cand, fn($a, $b) => [$b['miss'], $a['low']] <=> [$a['miss'], $b['low']]);
+            $gaps = [];
+            foreach (array_slice($cand, 0, 3) as $c) {
+                $lvl = Content::FULL_LEVELS[$c['low']];
+                $gaps[] = ['id' => $c['id'], 'label' => Content::skill($c['id'])['label'], 'level' => $lvl,
+                    'why' => $c['miss'] === $c['n'] ? "Missed {$c['miss']} " . ($c['miss'] === 1 ? 'question' : 'questions') : "Missed {$c['miss']} of {$c['n']} questions"];
+            }
+            // how each level went, and how sure the result is
+            $ladder = [];
+            foreach ($rows as $r) {
+                $f = substr($r['level'], 0, 2);
+                $ladder[$f]['level'] = $f;
+                $ladder[$f]['n'] = ($ladder[$f]['n'] ?? 0) + 1;
+                $ladder[$f]['correct'] = ($ladder[$f]['correct'] ?? 0) + (int) $r['correct'];
+            }
+            uksort($ladder, fn($a, $b) => ($fullIdx[$a] ?? 0) <=> ($fullIdx[$b] ?? 0));
+            $out['ladder'] = array_values($ladder);
+            $info = 0.0;
+            foreach ($pts as [$d, $ok]) { $p = 1 / (1 + exp(-1.7 * ($overall - $d))); $info += 2.89 * $p * (1 - $p); }
+            $se = 1 / sqrt($info + 1 / 9);
+            $out['sure'] = $se < 0.32 ? 'high' : ($se < 0.46 ? 'good' : 'rough');
+            $out['open_after'] = count(Mistakes::scan((int) $ses['user_id'])['open']);
             $out['gaps'] = $gaps;
             $untested = [];
             foreach (Content::meta()['skills'] as $s) {

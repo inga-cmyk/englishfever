@@ -499,11 +499,11 @@
     var latest = d.skills.slice().sort(function (a, b) { return b.last - a.last; })[0];
     var openArea = (latest && latest.last) ? latest.area : state.meta.areas[0].id;
     function draw() {
-      var high = showHigh(), hidden = 0, saved = openAreas();
+      var high = showHigh(), hidden = 0, saved = openAreas();   // hidden = topics too advanced for this learner, whether shown or not
       var areas = state.meta.areas.map(function (a) {
         var all = d.skills.filter(function (s) { return s.area === a.id; });
         var list = all.filter(function (s) { return high || inReach(s, d); });
-        hidden += all.length - list.length;
+        hidden += all.filter(function (s) { return !inReach(s, d); }).length;
         if (!list.length) return null;
         var started = list.filter(function (s) { return s.n > 0; }).length;
         var det = h('details', { class: 'area-fold', open: (a.id in saved) ? !!saved[a.id] : a.id === openArea },
@@ -520,7 +520,7 @@
 
   /** The link under a topic list: show or hide the topics that are well above the learner's level. */
   function highLink(hidden, high, redraw) {
-    if (!hidden && !high) return null;
+    if (!hidden) return null;   // nothing is too advanced: no link, so it never does nothing
     return h('p', { style: 'margin:14px 0 0' }, h('button', { type: 'button', class: 'linkbtn small', onclick: function () { setShowHigh(!high); redraw(); } },
       high ? 'Hide topics for higher levels' : 'Show topics for higher levels (' + hidden + ')'));
   }
@@ -1106,20 +1106,29 @@
     var nodes = [];
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, fresh ? 'Placement test finished' : 'Placement result'), h('h1', null, 'Your level is about ', h('span', { class: 'levelbadge' }, lv(s.overall_level))),
-      h('p', null, s.correct + ' of ' + s.n + ' correct. A rough level, not an exam grade.'),
+      h('p', null, s.correct + ' of ' + s.n + ' correct.', (s.ladder && s.ladder.length) ? ' ' + s.ladder.map(function (l) { return l.level + ' ' + l.correct + '/' + l.n; }).join(' · ') : ''),
+      (s.sure === 'rough' && s.n < 20) ? h('p', { class: 'small muted' }, 'A short test gives a rough level. The Full test is more exact.') : h('p', { class: 'small muted' }, 'A guide, not an exam grade.'),
       s.overall_level === 'C1.2' ? h('p', { class: 'small muted' }, 'This is the top level in the app.') : null,
       s.overall_level === 'A2.1' ? h('p', { class: 'small muted' }, 'A2.1 is the first level here. Ask your teacher about easier material.') : null));
-    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Start with these 3 topics'),
-      h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
-        return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),
-          h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + lv(g.level))));
-      })),
-      h('div', { class: 'row', style: 'margin-top:8px' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all 3 together'),
-        h('a', { class: 'btn ghost', href: '#/practice' }, 'Choose my own'))));
+    var ng = s.gaps.length;
+    if (ng) {
+      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, ng === 1 ? 'Start with this topic' : 'Start with these ' + ng + ' topics'),
+        h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
+          return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),
+            h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + lv(g.level))));
+        })),
+        h('div', { class: 'row', style: 'margin-top:8px' }, ng > 1 ? h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all ' + ng + ' together') : null,
+          h('a', { class: 'btn ghost', href: '#/practice' }, 'Choose my own'))));
+    } else {
+      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No clear gaps'), h('p', { class: 'muted' }, 'Nothing was missed at your level.'),
+        h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
+    }
+    if (fresh && s.open_after) nodes.push(h('div', { class: 'card fn-chance', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
+      h('div', null, h('b', { style: 'color:var(--text)' }, plural(s.open_after, 'mistake', 'mistakes') + ' to fix')), comebackButton('btn small fn-chance', 'Second Chance'))));
     nodes.push(h('div', { class: 'grid g2' },
       h('div', { class: 'card' }, h('h2', null, 'All tested topics'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
         return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))));
-      })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, 'Not tested (too advanced for now): ' + s.untested.map(function (u) { return u.label; }).join(', ') + '.') : null),
+      })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, plural(s.untested.length, 'topic', 'topics') + ' not covered by this test.') : null),
       h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     return nodes;

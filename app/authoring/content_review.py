@@ -269,6 +269,33 @@ def revise(original):
         it.update(changes)
         it['id'] = id + '-r3'
         REASONS[id] = REASONS[id] + ' ' + reason
+    # Typed tasks: every correct answer a learner can write is accepted (teacher's request, 24 October)
+    def more_again(id, reason, extra):
+        have = by_id[id]['answers'][0]
+        fix_again(id, reason, answers=[list(have) + [a for a in extra if a not in have]])
+    R = 'A correct answer that was not accepted.'
+    more('pp-B11-3b', R + ' The present perfect continuous is also correct with since.', ['How long has she been working here?'])
+    fix('pac-B11-3a', R + ' Both actions can be in the past continuous or the past simple, as long as the sentence is correct.',
+        answers=[['was driving', 'drove'], ['rang', 'was ringing']])
+    fix('pac-B12-3b', R + ' Both verbs can be continuous or simple.',
+        answers=[['were arriving', 'arrived'], ['was playing', 'played']])
+    more('pasp-B11-3b', R, ['My wallet was stolen by someone.'])
+    more('ppp-B11-3b', R, ['My bag has been stolen by someone.'])
+    more('ppp-B12-3b', R, ['The invoice has been sent already.'])
+    more('rs-B12-3a', R + ' The time word may stay or go.',
+         ['Kate said she was leaving now.', 'Kate said that she was leaving now.', 'Kate said she was leaving.', 'Kate said that she was leaving.'])
+    more('rq-B21-3a', R + ' would is as polite as could; the invoice may follow to her.',
+         ['Lena asked me to send the invoice to her.', 'Lena asked if I would send her the invoice.', 'Lena asked whether I would send her the invoice.', 'Lena asked me if I would send her the invoice.',
+          'Lena asked me whether I would send her the invoice.', 'Lena asked if I could send the invoice to her.', 'Lena asked me if I could send the invoice to her.'])
+    more('ip-B12-3a', R + ' please and other polite openers.',
+         ['Could you please tell me what time the museum closes?', 'Could you tell me what time the museum closes please?', 'Could you tell me, please, what time the museum closes?', 'Can you please tell me what time the museum closes?',
+          'Do you happen to know what time the museum closes?', "I'd like to know what time the museum closes.", 'I was wondering what time the museum closes.', 'Would you tell me what time the museum closes?'])
+    more('ip-B21-3a', R + ' please and I wonder.',
+         ['Could you please tell me why the order didn\'t arrive?', 'Do you happen to know why the order didn\'t arrive?', 'I wonder why the order didn\'t arrive.', 'I was wondering why the order didn\'t arrive.',
+          'Could you tell me why the order did not arrive?', 'Do you know why the order did not arrive?'])
+    more_again('ia-C11-3a', R + ' unclear = not clear.', ["It's unclear who made the decision.", 'It is unclear who made the decision.'])
+    fix('ps-A22-3a', 'The same sentence without a time word was also a past-simple task; add usually so only the present simple fits.',
+        q='What time ___ the film usually ___? (start)')
     fix('pasp-B11-3a', 'The verb and the noun were the same word (film); use a verb that cannot be mistaken for a noun.',
         q='Where ___ this photo ___? (take)', answers=[['was'], ['taken']])
     fix('ct-B22-2a', 'An option that says both sentences are about the past is illogical for this question; use a reversed contrast.',
@@ -280,4 +307,22 @@ def revise(original):
         correct='Unless you hurry, we will miss the flight.',
         wrong=['If you hurry, we will miss the flight.', 'Unless you hurry, we will catch the flight.', 'We will catch the flight unless you hurry.'],
         why='*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.')
+    # Every typed-sentence task also accepts the automatic variants (auto_answers.py). A published task gets the next revision id.
+    import json, os, re
+    from auto_answers import extend
+    published = {p['id'] for p in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'history', 'published_items.json'), encoding='utf-8'))}
+
+    def next_id(i):
+        m = re.match(r'^(.*)-r(\d+)$', i)
+        return m.group(1) + '-r' + str(int(m.group(2)) + 1) if m else i + '-r2'
+    for it in items:
+        if it['kind'] != 'text':
+            continue
+        new = extend(it['q'], it['answers'][0])
+        if new != it['answers'][0]:
+            it['answers'] = [new]
+            if it['id'] in published:
+                old = it['id']
+                it['id'] = next_id(old)
+                REASONS[old] = (REASONS[old] + ' ' if old in REASONS else '') + 'Other correct forms are accepted: time phrase first, that or me left out, polite openers.'
     return items

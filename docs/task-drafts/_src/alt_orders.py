@@ -5,16 +5,10 @@ Three sources, all applied by lib.od():
   PAIRS - two parts that can swap places: "if you heat ice | it melts" gives both orders, whichever one is the key
   EXTRA - single sentences written out
 tests/orders_test.py checks that every entry here is used by a task and that each variant uses exactly the same words."""
-import re
+import os, re, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "app", "authoring"))
 
-TIME = ["every day", "every morning", "every week", "every sunday", "on fridays", "on weekdays", "yesterday", "last weekend", "last week", "last night", "last year", "today", "tomorrow",
-        "this evening", "this afternoon", "tonight", "next week", "next year", "at nine", "at six", "at seven", "in 1990", "in 1950", "in 1920", "in july", "at night", "at the moment",
-        "these days", "right now", "soon", "lately", "twice a week", "all day", "the next day", "at the end of the month", "on friday evening", "within an hour", "within two days",
-        "by the end of june", "since last september", "since march", "for hours", "for twenty minutes", "before noon", "after a few lessons", "later this afternoon", "before bed",
-        "after the long day", "at sea level"]
-QUESTION_START = {"what", "who", "where", "why", "how", "which", "when", "is", "are", "do", "does", "did", "can", "could", "will", "would", "has", "have", "had", "was", "were",
-                  "should", "may", "might", "must", "shall"}
-STOP = {" as ", " than ", " the one ", " and ", " but ", " so ", " because ", " when ", " while ", " if ", " until ", " that ", " before ", " after ", " unless ", " as soon as "}
+from auto_answers import TIME, QUESTION_START, STOP   # the same lists as for typed answers
 PAIRS = """if you heat ice | it melts
 if i drink coffee at night | i can't sleep
 plants die | if they don't get water

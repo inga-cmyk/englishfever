@@ -199,6 +199,29 @@ final class Grader
     }
 
     /** @return array|null  null = no match; otherwise a list of spelling tips (empty when exact) */
+    /** Every reading of a contracted answer: 'd = would / had, 's = is / has (only after a pronoun, so a possessive like Tom's is left alone). */
+    private static function forms(string $s): array
+    {
+        $out = [$s];
+        foreach ([['/\b(i|you|he|she|it|we|they|that|there|who|what)\'d\b/u', ['would', 'had']], ['/\b(he|she|it|that|there|who|what|where|how|here)\'s\b/u', ['is', 'has']]] as [$rx, $alts]) {
+            $guard = 0;
+            while ($guard++ < 6) {
+                $next = []; $changed = false;
+                foreach ($out as $x) {
+                    if (preg_match($rx, $x, $m, PREG_OFFSET_CAPTURE)) {
+                        $changed = true;
+                        foreach ($alts as $alt) $next[] = substr($x, 0, $m[0][1]) . $m[1][0] . ' ' . $alt . substr($x, $m[0][1] + strlen($m[0][0]));
+                    } else {
+                        $next[] = $x;
+                    }
+                }
+                $out = array_values(array_unique($next));
+                if (!$changed || count($out) > 32) break;
+            }
+        }
+        return $out;
+    }
+
     private static function matchBlank(string $given, array $accepted, bool $isGap, array $prompt): ?array
     {
         $g = self::norm($given);
@@ -215,8 +238,14 @@ final class Grader
             return $v;
         };
         $acc = array_map([self::class, 'norm'], $accepted);
+        $accAll = [];   // 'd is would or had, 's is is or has: both the answer and the key are read both ways, so I'd known / I had known match
+        foreach ($acc as $a) foreach (self::forms($a) as $f) $accAll[] = $f;
+        $hit = static function (string $x) use ($accAll): bool {
+            foreach (self::forms($x) as $f) if (in_array($f, $accAll, true)) return true;
+            return false;
+        };
         foreach ($variants($g) as $v) {
-            if (in_array($v, $acc, true)) return [];
+            if ($hit($v)) return [];
         }
         if (!self::forgiving()) {
             return null;
@@ -228,7 +257,7 @@ final class Grader
             $g2 = self::norm($fixedText);
             foreach ($fixed as $f) $notes[] = "Use an apostrophe: $f.";
             foreach ($variants($g2) as $v) {
-                if (in_array($v, $acc, true)) return $notes;
+                if ($hit($v)) return $notes;
             }
             $g = $g2;
         }

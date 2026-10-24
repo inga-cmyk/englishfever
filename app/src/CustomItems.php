@@ -7,7 +7,7 @@ final class CustomItems
     public const STATUSES = ['draft', 'approved', 'retired'];
     private const TYPES = ['mcq' => 'mcq', 'multiple choice' => 'mcq', 'gap' => 'gap', 'gap fill' => 'gap', 'text' => 'text', 'rewrite' => 'text', 'typed' => 'text',
         'order' => 'order', 'word order' => 'order', 'match' => 'match', 'matching' => 'match'];
-    private const SUBORDINATORS = ['if', 'unless', 'when', 'after', 'before', 'as soon as', 'while', 'because', 'although'];
+    private const SUBORDINATORS = ['if', 'unless', 'when', 'after', 'before', 'as soon as', 'while', 'because', 'although', 'until', 'once'];
 
     // ───────── what the app reads ─────────
 
@@ -343,6 +343,12 @@ final class CustomItems
         foreach ($answers as $a) {
             if (preg_match('/^(' . implode('|', array_map('preg_quote', self::SUBORDINATORS)) . ')\b([^,]+),\s*(.+?)([.!?]?)$/iu', $a, $m)) {
                 $out[] = trim($m[3]) . ' ' . mb_strtolower(substr($m[1], 0, 1)) . substr($m[1], 1) . $m[2] . $m[4];
+            }
+        }
+        foreach ($answers as $a) {   // the other way round: "I went home after I finished work." also as "After I finished work, I went home."
+            if (preg_match('/^(?!(?:could|can|would|do|does|did|i wonder|i don\'t know|i do not know|i\'d like)\b)([^,]+?)\s+(' . implode('|', array_map('preg_quote', self::SUBORDINATORS)) . ')\s+([^,]+?)([.!?]?)$/iu', $a, $m)) {
+                $main = preg_match('/^I\b/u', $m[1]) ? $m[1] : mb_strtolower(mb_substr($m[1], 0, 1)) . mb_substr($m[1], 1);
+                $out[] = ucfirst($m[2]) . ' ' . $m[3] . ', ' . $main . $m[4];
             }
         }
         foreach ($out as $a) {

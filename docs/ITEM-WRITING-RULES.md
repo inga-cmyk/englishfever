@@ -52,3 +52,5 @@
 | A model sentence that is not natural (*Unless you don't hurry*) or an instruction that makes the *correct* option an ungrammatical sentence | ask *Which sentence is NOT correct?* or *Which sentence means the same?* with natural options |
 | An inverted-conditional or other word-order task with a missing object (*Had I known* what?) | the sentence must make sense on its own |
 | A matching task with a vague instruction (*Match each clause with its meaning*) | name what is matched (*Match each sentence with its tag*) or drop the task |
+| A typed task where another correct answer exists (*suggested seeing*, *is starting* for a plan, *Every day the rooms are cleaned*) | name the form in the instruction (*Use the present perfect:*) or list the other answers; contractions, clause order and a fronted time phrase are accepted automatically (`auto_answers.py`, the grader) |
+| The same sentence in two topics with different keys (*What time ___ the film ___?*: does / did) | a time word in each (*usually*, *last night*); tested by comparing every typed task |

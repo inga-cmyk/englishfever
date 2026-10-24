@@ -30,9 +30,15 @@ def mc(t, lv, b, q, ok, wrong, why, lvw): rows.append([t, lv, "mcq", q, ok, " | 
 def replaces(old):
     """The last row replaces an older version that was already imported: the old *correct option* (choose), *sentence* (word order) or *task text* (other types). The importer retires the old one."""
     rows[-1] = rows[-1][:9] + [old]
-def gp(t, lv, b, q, ok, why, lvw, bank=None): rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b])
-def tx(t, lv, b, q, ok, why, lvw): rows.append([t, lv, "text", q, " | ".join(ok) if isinstance(ok, (list, tuple)) else ok, "", why, lvw, b])
-import alt_orders
+def gp(t, lv, b, q, ok, why, lvw, bank=None):
+    ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
+    rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b])
+def tx(t, lv, b, q, ok, why, lvw):
+    ok = list(ok) if isinstance(ok, (list, tuple)) else [x.strip() for x in ok.split("|")]
+    ok = ok + [x for x in extra_answers.TEXT.get(q, []) if x not in ok]       # added by hand (extra_answers.py)
+    ok = auto_answers.extend(q, ok)                                            # time phrase first, that left out, me left out, polite openers (auto_answers.py)
+    rows.append([t, lv, "text", q, " | ".join(ok), "", why, lvw, b])
+import alt_orders, auto_answers, extra_answers
 def od(t, lv, b, q, ok, why, lvw, also=None):
     also = list(also or []) + [a for a in alt_orders.alternatives(ok) if a not in (also or [])]   # other correct orders (alt_orders.py)
     rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])

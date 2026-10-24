@@ -40,6 +40,13 @@ for f, n, r in rows:
         opts = [ans] + [x.strip() for x in wrong.split("|")]
         if len({o.lower() for o in opts}) != len(opts): flag(f, n, "two options are the same", q)
         if len(opts) < 3: flag(f, n, "fewer than 3 options", q)
+# 6. the same typed task in two topics with different keys (What time ___ the film ___?: does / did) cannot be answered by any learner
+typed = collections.defaultdict(set)
+for f, n, r in rows:
+    if r["type"] in ("gap", "text") and not r["wrong options / checks"].startswith("bank:"):
+        typed[re.sub(r"\s+", " ", r["task"].strip().lower())].add(r["correct answer"].strip().lower())
+for k, v in typed.items():
+    if len(v) > 1 and not any(set(x.split(" | ")) & set(y.split(" | ")) for x in v for y in v if x != y): bad.append("same typed task with different keys: " + k[:90] + " -> " + " // ".join(sorted(v))[:120])
 for k, v in seen_content.items():
     if len(v) > 1: bad.append(f"same task twice under different wording: {k[2]} / {k[3][:60]}  {v}")
 for b in bad[:40]: print("FAIL", b)

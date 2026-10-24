@@ -671,19 +671,22 @@ verb + preposition + -ing: *apologise for, insist on, accuse (someone) of, congr
 Shorter and more natural than *said that ...*
 *admitted, denied, suggested, insisted, promised, warned, apologised for*
 *"I'm sorry I'm late."* → *He apologised for being late.*
+Reporting what someone asked: the tense shifts back (*Where do you work?* → *She asked me where I worked*). In indirect questions (*Could you tell me where you work?*) it does not: only the word order changes.
 Start with: *Could you tell me / Do you know / Can you tell me / I wonder.*
 Then use statement word order: *... where the station is* (not *where is the station*).
 No *do / does / did* in the second part: *... what time the shop opens.*
 Yes/no questions: use *if* or *whether*: *Do you know if she is here?*
 Asking politely: *Could you tell me where ...?* The question is a request.
 A full stop after *I wonder ...* / *I'd like to know ...*; a question mark after *Could you* / *Do you know ...*
+No tense change: only the word order changes (*Where is the station?* → *Could you tell me where the station is?*). In reported questions the tense shifts back (*She asked where the station was*).
 *Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*
 *Could you tell me where the meeting room is?*
 Question word + *to* + base verb: *I don't know what to do. I'm not sure how to start.*
 *if / whether* (+ *or not*): *I can't decide whether to accept.*
 An embedded question can be a subject: *What he said surprised me.*
 After prepositions: *We talked about how to improve the results.*
-Not a request: the question is part of a statement (*I don't know what to do*). The word order is the same as in *Could you tell me where the station is?*
+The same structure as *Could you tell me where ...?*, now inside statements and phrases: *I don't know what to do. What he said surprised me.*
+No tense change: only the word order changes. In reported questions the tense shifts back (*She asked what I wanted*).
 Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*
 *I wonder, no idea, not sure, it depends on, the question is, whoever, whatever*
 *I have no idea how long the meeting will take.*

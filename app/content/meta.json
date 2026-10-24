@@ -873,7 +873,7 @@
      "Requests and orders: *told / asked* + person + (*not*) *to* + base verb: *He told me to wait.*"
     ],
     "use": [
-     "Reporting what someone asked.",
+     "Reporting what someone asked: the tense shifts back (*Where do you work?* → *She asked me where I worked*). In indirect questions (*Could you tell me where you work?*) it does not: only the word order changes.",
      "Reporting what someone told or asked you to do."
     ],
     "signals": "*asked, wondered, wanted to know, told someone to*",
@@ -887,7 +887,7 @@
      "Lūgumi un rīkojumi: *told / asked* + persona + (*not*) *to* + pamatforma: *He told me to wait.*"
     ],
     "use": [
-     "Pastāstīt, ko kāds jautāja.",
+     "Pastāstīt, ko kāds jautāja: laiks pāriet pagātnē (*Where do you work?* → *She asked me where I worked*). Netiešajos jautājumos (*Could you tell me where you work*?) laiks nemainās, mainās *tikai* vārdu secība.",
      "Pastāstīt, ko kāds lika vai lūdza darīt."
     ],
     "signals": "*asked, wondered, wanted to know, told someone to*"
@@ -937,7 +937,8 @@
     "use": [
      "Asking politely: *Could you tell me where ...?* The question is a request.",
      "Talking to strangers, customers and at work.",
-     "A full stop after *I wonder ...* / *I'd like to know ...*; a question mark after *Could you* / *Do you know ...*"
+     "A full stop after *I wonder ...* / *I'd like to know ...*; a question mark after *Could you* / *Do you know ...*",
+     "No tense change: only the word order changes (*Where is the station?* → *Could you tell me where the station is?*). In reported questions the tense shifts back (*She asked where the station was*)."
     ],
     "signals": "*Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*",
     "example": "*Could you tell me where the meeting room is?*"
@@ -952,14 +953,15 @@
     "use": [
      "Pieklājīgs lūgums: *Could you tell me where* ...? Jautājums ir lūgums.",
      "Sarunā ar svešiem cilvēkiem, klientiem un darbā.",
-     "Pēc *I wonder* ... / *I'd like to know* ... liek punktu; pēc *Could you / Do you know* ... jautājuma zīmi."
+     "Pēc *I wonder* ... / *I'd like to know* ... liek punktu; pēc *Could you / Do you know* ... jautājuma zīmi.",
+     "Laiks nemainās, mainās *tikai* vārdu secība (*Where is the station?* → *Could you tell me where the station is*?). Atstāstītajos jautājumos laiks pāriet pagātnē (*She asked where the station was*)."
     ],
     "signals": "*Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*"
    }
   },
   {
    "id": "ind_advanced",
-   "label": "Question words in statements (I don't know what to do)",
+   "label": "Indirect questions, more uses (I don't know what to do)",
    "area": "indirect",
    "levels": [
     "B2.2",
@@ -974,7 +976,8 @@
      "After prepositions: *We talked about how to improve the results.*"
     ],
     "use": [
-     "Not a request: the question is part of a statement (*I don't know what to do*). The word order is the same as in *Could you tell me where the station is?*",
+     "The same structure as *Could you tell me where ...?*, now inside statements and phrases: *I don't know what to do. What he said surprised me.*",
+     "No tense change: only the word order changes. In reported questions the tense shifts back (*She asked what I wanted*).",
      "Reports, emails and formal writing.",
      "Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*"
     ],

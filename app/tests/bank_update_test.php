@@ -37,7 +37,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 80, 'Unexpected correction count');
+check(count($retired) === 95, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);
@@ -45,6 +45,12 @@ check($grade('cf-B11-3b-r2', ['arrive'])['correct'], 'arrive must fit');
 check(!$grade('cf-B11-3b-r2', ['get'])['correct'], 'get at must not pass');
 check($grade('ca-C11-4a-r3', 'Unless you hurry, we will miss the flight.')['correct'], 'the same-meaning option is the key');
 check(!$grade('ca-C11-4a-r3', 'If you hurry, we will miss the flight.')['correct'], 'the reversed option is wrong');
+check($grade('ct-B21-3a-r2', "If I'd seen the sign, I wouldn't have parked there.")['correct'], "I'd seen = I had seen");
+check($grade('ct-B21-3a-r2', "I'd not have parked there if I had seen the sign.")['correct'], "I'd not have = I would not have");
+check(!$grade('ct-B21-3a-r2', "If I'd seen the sign, I'd have parked there.")['correct'], "a different meaning is still wrong");
+check($grade('psp-B12-3b-r2', 'Every day the rooms are cleaned.')['correct'], 'time phrase first');
+check($grade('ip-B12-3a-r2', 'Could you please tell me what time the museum closes?')['correct'], 'please is fine');
+check($grade('rs-B12-3a-r2', 'Kate said she was leaving now.')['correct'], 'the time word may stay');
 check($grade('rv-C12-3a-r2', 'my sister suggested seeing a doctor about that cough.')['correct'], 'suggested seeing is a correct report (learner report)');
 check($grade('rv-C12-3a-r2', 'My sister said I should see a doctor about that cough.')['correct'], 'said I should see is a correct report');
 check(!$grade('rv-C12-3a-r2', 'My sister suggested to see a doctor about that cough.')['correct'], 'suggested to see is not');

@@ -108,13 +108,13 @@ LV_RULES.update({
                  "Jautājumi ar jautājamo vārdu: asked + jautājamais vārds + teik. priekšmets + darbības vārds: He asked where I lived.",
                  "Parasta vārdu secība, bez do / does / did: She asked what I did (nevis what did I do).",
                  "Lūgumi un rīkojumi: told / asked + persona + (not) to + pamatforma: He told me to wait."],
-        "use": ["Pastāstīt, ko kāds jautāja.", "Pastāstīt, ko kāds lika vai lūdza darīt."],
+        "use": ["Pastāstīt, ko kāds jautāja: laiks pāriet pagātnē (Where do you work? → She asked me where I worked). Netiešajos jautājumos (Could you tell me where you work?) laiks nemainās, mainās tikai vārdu secība.", "Pastāstīt, ko kāds lika vai lūdza darīt."],
         "signals": "asked, wondered, wanted to know, told someone to",
     },
     "ind_polite": {
         "form": ["Sāc ar: Could you tell me / Do you know / Can you tell me / I wonder.", "Tad lieto teikuma vārdu secību: ... where the station is (nevis where is the station).",
                  "Bez do / does / did palīgteikumā: ... what time the shop opens.", "Jā/nē jautājumos lieto if vai whether: Do you know if she is here?"],
-        "use": ["Pieklājīgs lūgums: Could you tell me where ...? Jautājums ir lūgums.", "Sarunā ar svešiem cilvēkiem, klientiem un darbā.", "Pēc I wonder ... / I'd like to know ... liek punktu; pēc Could you / Do you know ... jautājuma zīmi."],
+        "use": ["Pieklājīgs lūgums: Could you tell me where ...? Jautājums ir lūgums.", "Sarunā ar svešiem cilvēkiem, klientiem un darbā.", "Pēc I wonder ... / I'd like to know ... liek punktu; pēc Could you / Do you know ... jautājuma zīmi.", "Laiks nemainās, mainās tikai vārdu secība (Where is the station? → Could you tell me where the station is?). Atstāstītajos jautājumos laiks pāriet pagātnē (She asked where the station was)."],
         "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
     },
 })

@@ -3,6 +3,29 @@
 return json_decode(<<<'EF_JSON_END'
 [
 {
+"id": "ps-A21-3b",
+"skill": "present_simple",
+"level": "A2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it negative: They play tennis on Sundays.",
+"answers": [
+[
+"They don't play tennis on Sundays.",
+"They do not play tennis on Sundays."
+]
+],
+"why": "With *I, you, we, they* we make the negative with *don't* + base verb.",
+"hints": [
+[
+"\\bdoesn't\\b|\\bdoes not\\b",
+"*They* needs *don't*, not *doesn't.*",
+"Ar *They* vajag *don't*, nevis *doesn't*."
+]
+],
+"why_lv": "Ar *I, you, we, they* noliegumu veido ar *don't* + pamatforma."
+},
+{
 "id": "ps-A21-6a",
 "skill": "present_simple",
 "level": "A2.1",
@@ -19,6 +42,31 @@ return json_decode(<<<'EF_JSON_END'
 "model": "She starts work at eight every day.",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ps-A22-3a",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "What time ___ the film ___? (start)",
+"answers": [
+[
+"does"
+],
+[
+"start"
+]
+],
+"why": "Question: *What time* + *does* + subject + base verb.",
+"hints": [
+[
+"starts",
+"After *does* we use the base verb: *start*, not *starts.*",
+"Pēc *does* lieto pamatformu: *start*, nevis *starts*."
+]
+],
+"why_lv": "Jautājums: *What time + does* + teik. priekšmets + pamatforma."
 },
 {
 "id": "ps-A22-3b",
@@ -363,6 +411,25 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Past Continuous darbība jau notika, kad notika īsā darbība (*called*)."
 },
 {
+"id": "pac-B11-3a",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "While she ___, her phone ___. (drive / ring)",
+"answers": [
+[
+"was driving"
+],
+[
+"rang"
+]
+],
+"why": "Long action: *was driving.* Short action that interrupts: *rang.*",
+"hints": [],
+"why_lv": "Garā darbība: *was driving*. Īsā darbība, kas pārtrauc: *rang*."
+},
+{
 "id": "pac-B11-4a",
 "skill": "past_continuous",
 "level": "B1.1",
@@ -395,6 +462,41 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Was going to* shows an intention in the past that was not completed.",
 "wrong_why": {},
 "why_lv": "*Was going to* rāda nodomu pagātnē, kas netika izpildīts."
+},
+{
+"id": "pac-B12-3b",
+"skill": "past_continuous",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "While the guests ___, the band ___ quiet music. (arrive / play)",
+"answers": [
+[
+"were arriving"
+],
+[
+"was playing"
+]
+],
+"why": "Two actions in progress at the same time: *while* + past continuous, past continuous.",
+"hints": [],
+"why_lv": "Divas darbības, kas notiek vienlaikus: *while* + Past Continuous, Past Continuous."
+},
+{
+"id": "pp-B11-3b",
+"skill": "present_perfect",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make a question with How long: She has worked here since June.",
+"answers": [
+[
+"How long has she worked here?"
+]
+],
+"why": "*How long* + *has* + subject + past participle.",
+"hints": [],
+"why_lv": "*How long + has* + teik. priekšmets + 3. forma."
 },
 {
 "id": "pp-B11-5a",
@@ -603,6 +705,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Redzam, ka tūlīt notiks: *are going to* + pamatforma."
 },
 {
+"id": "psp-B12-3b",
+"skill": "present_simple_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive without 'by': Someone cleans the rooms daily.",
+"answers": [
+[
+"The rooms are cleaned daily.",
+"The rooms are cleaned every day."
+]
+],
+"why": "We leave out the agent (*someone*) because it is not important.",
+"hints": [],
+"why_lv": "Darītāju (*someone*) izlaiž, jo tas nav svarīgs."
+},
+{
 "id": "pasp-B11-3a",
 "skill": "past_simple_passive",
 "level": "B1.1",
@@ -622,6 +741,47 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums: *Where + was* + teik. priekšmets + 3. forma."
 },
 {
+"id": "pasp-B11-3b",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: Someone stole my wallet.",
+"answers": [
+[
+"My wallet was stolen."
+]
+],
+"why": "Passive: *was* + past participle. We leave out *someone.*",
+"hints": [
+[
+"\\bstole\\b",
+"Use the passive: *was stolen.*",
+"Lieto ciešamo kārtu: *was stolen*."
+]
+],
+"why_lv": "Ciešamā kārta: *was* + 3. forma. Vārdu *someone* izlaiž."
+},
+{
+"id": "pasp-B12-3b",
+"skill": "past_simple_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: The company hired 20 new workers last year.",
+"answers": [
+[
+"Twenty new workers were hired last year.",
+"20 new workers were hired last year.",
+"Twenty new workers were hired by the company last year.",
+"20 new workers were hired by the company last year."
+]
+],
+"why": "*New workers* is the subject. *Was/were* + past participle.",
+"hints": [],
+"why_lv": "*New workers* ir teikuma priekšmets. *Was/were* + 3. forma."
+},
+{
 "id": "ppp-B11-3a",
 "skill": "present_perfect_passive",
 "level": "B1.1",
@@ -636,6 +796,22 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Tickets* = plural, so *have been sold.*",
 "hints": [],
 "why_lv": "*Tickets* = daudzskaitlis, tāpēc *have been sold*."
+},
+{
+"id": "ppp-B11-3b",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: Someone has stolen my bag.",
+"answers": [
+[
+"My bag has been stolen."
+]
+],
+"why": "*has been* + past participle.",
+"hints": [],
+"why_lv": "*has been* + 3. forma."
 },
 {
 "id": "ppp-B11-5a",
@@ -688,6 +864,22 @@ return json_decode(<<<'EF_JSON_END'
 "why": "The present perfect passive is used for recent news with a result now.",
 "wrong_why": {},
 "why_lv": "Present Perfect ciešamajā kārtā lieto jaunākajām ziņām ar rezultātu tagad."
+},
+{
+"id": "ppp-B12-3b",
+"skill": "present_perfect_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: They have already sent the invoice.",
+"answers": [
+[
+"The invoice has already been sent."
+]
+],
+"why": "*Already* goes between *has* and *been.*",
+"hints": [],
+"why_lv": "*Already* iet starp *has* un *been*."
 },
 {
 "id": "ppp-B12-6a",
@@ -1224,6 +1416,34 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Present Perfect (*have finished*) pāriet uz Past Perfect (*had finished*)."
 },
 {
+"id": "rs-B12-3a",
+"skill": "rep_statements",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'I'm leaving now,' Kate said.",
+"answers": [
+[
+"Kate said she was leaving then.",
+"Kate said that she was leaving then.",
+"Kate said she was leaving at that moment.",
+"Kate said that she was leaving at that moment.",
+"Kate said she was leaving at that time.",
+"Kate said that she was leaving at that time.",
+"Kate said she was leaving right then."
+]
+],
+"why": "*I → she, am leaving → was leaving, now → then.*",
+"hints": [
+[
+"\\bnow\\b",
+"*Now* usually becomes *then* or *at that moment.*",
+"*Now* parasti kļūst par *then* vai *at that moment*."
+]
+],
+"why_lv": "*I → she, am leaving → was leaving, now → then.*"
+},
+{
 "id": "rs-B12-4a",
 "skill": "rep_statements",
 "level": "B1.2",
@@ -1299,6 +1519,25 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*."
 },
 {
+"id": "rq-B21-3a",
+"skill": "rep_questions",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'Could you send me the invoice?' Lena asked.",
+"answers": [
+[
+"Lena asked me to send her the invoice.",
+"Lena asked if I could send her the invoice.",
+"Lena asked whether I could send her the invoice.",
+"Lena asked me if I could send her the invoice.",
+"Lena asked me whether I could send her the invoice."
+]
+],
+"why": "A request can be reported with *asked* + person + *to* + base verb, or with *if / whether* + *could.*",
+"hints": []
+},
+{
 "id": "rv-B22-3a",
 "skill": "rep_verbs",
 "level": "B2.2",
@@ -1355,6 +1594,56 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*recommend* is not followed by person + *to.* Use *recommend* + -ing, *recommend* + *that*, or *advise* + person + *to.*",
 "wrong_why": {}
+},
+{
+"id": "ip-B12-3a",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Make it polite: What time does the museum close?",
+"answers": [
+[
+"Could you tell me what time the museum closes?",
+"Do you know what time the museum closes?",
+"Can you tell me what time the museum closes?",
+"Would you mind telling me what time the museum closes?",
+"I wonder what time the museum closes."
+]
+],
+"why": "Polite phrase + *what time* + subject + verb. No *does.*",
+"hints": [
+[
+"does",
+"No *does* in the indirect part: *... what time the museum closes.*",
+"Palīgteikumā nav *does*: ... *what time the museum closes*."
+]
+],
+"why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*."
+},
+{
+"id": "ip-B21-3a",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it indirect: Why didn't the order arrive?",
+"answers": [
+[
+"Could you tell me why the order didn't arrive?",
+"Do you know why the order didn't arrive?",
+"Can you tell me why the order didn't arrive?",
+"I'd like to know why the order didn't arrive.",
+"Would you mind telling me why the order didn't arrive?"
+]
+],
+"why": "Polite phrase + *why* + subject + verb (past simple, no *did*).",
+"hints": [
+[
+"\\bdid\\b",
+"No *did* in the indirect part: *... why the order didn't arrive.*"
+]
+]
 },
 {
 "id": "ia-C11-1a",
@@ -1435,6 +1724,23 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*Unless you hurry* gives the intended condition. *Unless you do not hurry* changes its meaning. The issue here is the intended warning, not a universal ban on negatives after *unless*.",
 "wrong_why": {}
+},
+{
+"id": "ia-C11-3a-r2",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Combine: Who made the decision? It's not clear.",
+"answers": [
+[
+"It's not clear who made the decision.",
+"It is not clear who made the decision.",
+"Who made the decision is not clear."
+]
+],
+"why": "*It's not clear* + *who* + verb (statement order).",
+"hints": []
 },
 {
 "id": "var-ca-c11-order-01",

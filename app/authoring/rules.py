@@ -37,7 +37,7 @@ SKILLS = [
     ("rep_questions", "Reported questions and requests", "reported", ["B1.2", "B2.1", "B2.2"]),
     ("rep_verbs", "Reporting verbs (suggest, admit, promise...)", "reported", ["B2.2", "C1.1", "C1.2"]),
     ("ind_polite", "Indirect questions (Could you tell me where...)", "indirect", ["B1.1", "B1.2", "B2.1"]),
-    ("ind_advanced", "Question words in statements (I don't know what to do)", "indirect", ["B2.2", "C1.1", "C1.2"]),
+    ("ind_advanced", "Indirect questions, more uses (I don't know what to do)", "indirect", ["B2.2", "C1.1", "C1.2"]),
 ]
 
 RULES = {
@@ -191,7 +191,7 @@ RULES.update({
     "rep_questions": {
         "form": ["Yes/no questions: asked + if / whether + subject + verb: She asked if I liked coffee.", "Wh-questions: asked + question word + subject + verb: He asked where I lived.",
                  "Normal word order, no do / does / did: She asked what I did (not what did I do).", "Requests and orders: told / asked + person + (not) to + base verb: He told me to wait."],
-        "use": ["Reporting what someone asked.", "Reporting what someone told or asked you to do."],
+        "use": ["Reporting what someone asked: the tense shifts back (Where do you work? → She asked me where I worked). In indirect questions (Could you tell me where you work?) it does not: only the word order changes.", "Reporting what someone told or asked you to do."],
         "signals": "asked, wondered, wanted to know, told someone to",
         "example": "\"Where do you work?\" → She asked me where I worked.",
     },
@@ -205,14 +205,14 @@ RULES.update({
     "ind_polite": {
         "form": ["Start with: Could you tell me / Do you know / Can you tell me / I wonder.", "Then use statement word order: ... where the station is (not where is the station).",
                  "No do / does / did in the second part: ... what time the shop opens.", "Yes/no questions: use if or whether: Do you know if she is here?"],
-        "use": ["Asking politely: Could you tell me where ...? The question is a request.", "Talking to strangers, customers and at work.", "A full stop after I wonder ... / I'd like to know ...; a question mark after Could you / Do you know ..."],
+        "use": ["Asking politely: Could you tell me where ...? The question is a request.", "Talking to strangers, customers and at work.", "A full stop after I wonder ... / I'd like to know ...; a question mark after Could you / Do you know ...", "No tense change: only the word order changes (Where is the station? → Could you tell me where the station is?). In reported questions the tense shifts back (She asked where the station was)."],
         "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
         "example": "Could you tell me where the meeting room is?",
     },
     "ind_advanced": {
         "form": ["Question word + to + base verb: I don't know what to do. I'm not sure how to start.", "if / whether (+ or not): I can't decide whether to accept.",
                  "An embedded question can be a subject: What he said surprised me.", "After prepositions: We talked about how to improve the results."],
-        "use": ["Not a request: the question is part of a statement (I don't know what to do). The word order is the same as in Could you tell me where the station is?", "Reports, emails and formal writing.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
+        "use": ["The same structure as Could you tell me where ...?, now inside statements and phrases: I don't know what to do. What he said surprised me.", "No tense change: only the word order changes. In reported questions the tense shifts back (She asked what I wanted).", "Reports, emails and formal writing.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
         "signals": "I wonder, no idea, not sure, it depends on, the question is, whoever, whatever",
         "example": "I have no idea how long the meeting will take.",
     },

@@ -7,6 +7,8 @@ items = {i["id"]: i for i in (raw if isinstance(raw, list) else raw["items"])}
 meta = json.load(open(os.path.join(APP, "content", "meta.json"), encoding="utf-8"))
 label = {s["id"]: s["label"] for s in meta["skills"]}
 IDS = "pc-B11-1a pc-B11-3b pa-B11-1a pa-B12-3a pp-B11-1a pp-B11-3a pp-B12-1a pp-B12-3a fu-B11-1a-r2 fu-B11-3a fu-B11-3b psp-B11-1a psp-B11-3a psp-B12-1a psp-B12-3a pasp-B11-1a pasp-B11-3a-r2 pasp-B11-3b pasp-B12-1a cf-B11-3a".split()
+def _cur(i): return next(c for c in (i, i + "-r2", i + "-r3") if c in items)   # the id the task has now (a corrected task has a new revision id)
+IDS = [_cur(i) for i in IDS]
 for i in IDS:
     x = items[i]; t = label[x["skill"]]
     if x["kind"] == "mcq": mc(t, "A2.2", x["bloom"], x["q"], x["correct"], x["wrong"], x["why"], x.get("why_lv", ""))

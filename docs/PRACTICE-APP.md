@@ -32,7 +32,7 @@ A small web app for adult learners to practise English grammar: tenses (active a
 | Passive tenses | Present simple (A2.2-B1.2), past simple (A2.2-B1.2), present continuous (B1.2), present perfect (B1.1-B1.2), future (B1.1-B1.2) |
 | Conditionals | Zero (A2.2-B1.1), first incl. *unless*, *as soon as*, *in case* (A2.2-B1.2), second (B1.1-B2.1), third (B1.2-B2.2), mixed (B2.1-C1.1), advanced: inversion, *unless*, *provided that*, *wish*, *if only* (C1.1-C1.2) |
 | Reported speech | Statements and tense changes (B1.1-B2.1), questions and requests (B1.2-B2.2), reporting verbs (B2.2-C1.2) |
-| Questions inside sentences | Polite indirect questions (B1.1-B2.1); question words in statements: *what to do*, *whether to*, *what he said surprised me*, *whoever* (B2.2-C1.2) |
+| Questions inside sentences | Polite indirect questions (B1.1-B2.1); indirect questions, more uses: *what to do*, *whether to*, *what he said surprised me*, *whoever* (B2.2-C1.2) |
 
 ## What is not done yet (please read)
 

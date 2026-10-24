@@ -310,7 +310,7 @@ def revise(original):
     # Every typed-sentence task also accepts the automatic variants (auto_answers.py). A published task gets the next revision id.
     import json, os, re
     from auto_answers import extend
-    published = {p['id'] for p in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'history', 'published_items.json'), encoding='utf-8'))}
+    published = {p['id']: p for p in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'history', 'published_items.json'), encoding='utf-8'))}
 
     def next_id(i):
         m = re.match(r'^(.*)-r(\d+)$', i)
@@ -321,8 +321,27 @@ def revise(original):
         new = extend(it['q'], it['answers'][0])
         if new != it['answers'][0]:
             it['answers'] = [new]
-            if it['id'] in published:
+            if it['id'] in published and it != published[it['id']]:
                 old = it['id']
                 it['id'] = next_id(old)
                 REASONS[old] = (REASONS[old] + ' ' if old in REASONS else '') + 'Other correct forms are accepted: time phrase first, that or me left out, polite openers.'
+    # Remaining issues from the 24 October report export. Preserve every
+    # published version; these are new revisions, never historical regrades.
+    def report_fix(original_id, **changes):
+        it = by_id[original_id]
+        old = it['id']
+        it.update(changes)
+        it['id'] = next_id(old)
+
+    report_fix('ps-B11-2a',
+        q='Which sentence states a general fact?',
+        correct='The Earth orbits the Sun.',
+        why='Use the present simple for general facts and regular processes: *The Earth orbits the Sun.*',
+        why_lv='Vispārīgiem faktiem un regulāriem procesiem lieto Present Simple: *The Earth orbits the Sun.*')
+    report_fix('ia-C11-3a',
+        q="Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+        why="Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.")
+    report_fix('ct-B22-4a',
+        q='Which sentence needs editing in standard formal written English?',
+        why="In standard formal written English, use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs in informal varieties but is not the target formal pattern.")
     return items

@@ -10391,5 +10391,590 @@
 ]
 ],
 "why_lv": "Netiešajā daļā lieto apgalvojuma vārdu secību. Jā/nē jautājumam pievieno *if* vai *whether*. Palīgdarbības vārds *does* pazūd, un pamatdarbības vārdam pievieno *-s*."
+},
+{
+"id": "ps-A21-3b-r2",
+"skill": "present_simple",
+"level": "A2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it negative: They play tennis on Sundays.",
+"answers": [
+[
+"They don't play tennis on Sundays.",
+"They do not play tennis on Sundays.",
+"On sundays they don't play tennis.",
+"On sundays they do not play tennis."
+]
+],
+"why": "With *I, you, we, they* we make the negative with *don't* + base verb.",
+"hints": [
+[
+"\\bdoesn't\\b|\\bdoes not\\b",
+"*They* needs *don't*, not *doesn't.*",
+"Ar *They* vajag *don't*, nevis *doesn't*."
+]
+],
+"why_lv": "Ar *I, you, we, they* noliegumu veido ar *don't* + pamatforma."
+},
+{
+"id": "ps-A22-3a-r2",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "What time ___ the film usually ___? (start)",
+"answers": [
+[
+"does"
+],
+[
+"start"
+]
+],
+"why": "Question: *What time* + *does* + subject + base verb.",
+"hints": [
+[
+"starts",
+"After *does* we use the base verb: *start*, not *starts.*",
+"Pēc *does* lieto pamatformu: *start*, nevis *starts*."
+]
+],
+"why_lv": "Jautājums: *What time + does* + teik. priekšmets + pamatforma."
+},
+{
+"id": "ps-B11-2a-r3",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence states a general fact?",
+"correct": "The Earth orbits the Sun.",
+"wrong": [
+"The water is boiling now.",
+"The water boiled yesterday.",
+"I'm boiling water for tea."
+],
+"why": "Use the present simple for general facts and regular processes: *The Earth orbits the Sun.*",
+"wrong_why": {},
+"why_lv": "Vispārīgiem faktiem un regulāriem procesiem lieto Present Simple: *The Earth orbits the Sun.*"
+},
+{
+"id": "pac-B11-3a-r2",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "While she ___, her phone ___. (drive / ring)",
+"answers": [
+[
+"was driving",
+"drove"
+],
+[
+"rang",
+"was ringing"
+]
+],
+"why": "Long action: *was driving.* Short action that interrupts: *rang.*",
+"hints": [],
+"why_lv": "Garā darbība: *was driving*. Īsā darbība, kas pārtrauc: *rang*."
+},
+{
+"id": "pac-B12-3b-r2",
+"skill": "past_continuous",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "While the guests ___, the band ___ quiet music. (arrive / play)",
+"answers": [
+[
+"were arriving",
+"arrived"
+],
+[
+"was playing",
+"played"
+]
+],
+"why": "Two actions in progress at the same time: *while* + past continuous, past continuous.",
+"hints": [],
+"why_lv": "Divas darbības, kas notiek vienlaikus: *while* + Past Continuous, Past Continuous."
+},
+{
+"id": "pp-B11-3b-r2",
+"skill": "present_perfect",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make a question with How long: She has worked here since June.",
+"answers": [
+[
+"How long has she worked here?",
+"How long has she been working here?"
+]
+],
+"why": "*How long* + *has* + subject + past participle.",
+"hints": [],
+"why_lv": "*How long + has* + teik. priekšmets + 3. forma."
+},
+{
+"id": "psp-B12-3b-r2",
+"skill": "present_simple_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive without 'by': Someone cleans the rooms daily.",
+"answers": [
+[
+"The rooms are cleaned daily.",
+"The rooms are cleaned every day.",
+"Every day the rooms are cleaned."
+]
+],
+"why": "We leave out the agent (*someone*) because it is not important.",
+"hints": [],
+"why_lv": "Darītāju (*someone*) izlaiž, jo tas nav svarīgs."
+},
+{
+"id": "pasp-B11-3a-r2",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "Where ___ this photo ___? (take)",
+"answers": [
+[
+"was"
+],
+[
+"taken"
+]
+],
+"why": "Question: *Where* + *was* + subject + past participle.",
+"hints": [],
+"why_lv": "Jautājums: *Where + was* + teik. priekšmets + 3. forma."
+},
+{
+"id": "pasp-B11-3b-r2",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: Someone stole my wallet.",
+"answers": [
+[
+"My wallet was stolen.",
+"My wallet was stolen by someone."
+]
+],
+"why": "Passive: *was* + past participle. We leave out *someone.*",
+"hints": [
+[
+"\\bstole\\b",
+"Use the passive: *was stolen.*",
+"Lieto ciešamo kārtu: *was stolen*."
+]
+],
+"why_lv": "Ciešamā kārta: *was* + 3. forma. Vārdu *someone* izlaiž."
+},
+{
+"id": "pasp-B12-3b-r2",
+"skill": "past_simple_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: The company hired 20 new workers last year.",
+"answers": [
+[
+"Twenty new workers were hired last year.",
+"20 new workers were hired last year.",
+"Twenty new workers were hired by the company last year.",
+"20 new workers were hired by the company last year.",
+"Last year Twenty new workers were hired.",
+"Last year 20 new workers were hired.",
+"Last year Twenty new workers were hired by the company.",
+"Last year 20 new workers were hired by the company."
+]
+],
+"why": "*New workers* is the subject. *Was/were* + past participle.",
+"hints": [],
+"why_lv": "*New workers* ir teikuma priekšmets. *Was/were* + 3. forma."
+},
+{
+"id": "ppp-B11-3b-r2",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: Someone has stolen my bag.",
+"answers": [
+[
+"My bag has been stolen.",
+"My bag has been stolen by someone."
+]
+],
+"why": "*has been* + past participle.",
+"hints": [],
+"why_lv": "*has been* + 3. forma."
+},
+{
+"id": "ppp-B12-3b-r2",
+"skill": "present_perfect_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Change to the passive: They have already sent the invoice.",
+"answers": [
+[
+"The invoice has already been sent.",
+"The invoice has been sent already."
+]
+],
+"why": "*Already* goes between *has* and *been.*",
+"hints": [],
+"why_lv": "*Already* iet starp *has* un *been*."
+},
+{
+"id": "ct-B22-2a-r2",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+"correct": "A is about the past (you did not ask). B is about now or the future.",
+"wrong": [
+"A is about now. B is about the past.",
+"A is about the future. B is about the past.",
+"There is no difference."
+],
+"why": "Third conditional = past, unreal. Second conditional = present or future, unreal.",
+"wrong_why": {}
+},
+{
+"id": "ct-B22-3a-r2",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "If he ___ (not / drive) so fast, he ___ (not / lose) his licence.",
+"answers": [
+[
+"hadn't been driving",
+"had not been driving",
+"hadn't driven",
+"had not driven"
+],
+[
+"wouldn't have lost",
+"would not have lost",
+"'d not have lost"
+]
+],
+"why": "Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.",
+"hints": []
+},
+{
+"id": "ct-B22-4a-r4",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence needs editing in standard formal written English?",
+"correct": "If I'd have known about the traffic, I would've left earlier.",
+"wrong": [
+"If I'd known about the traffic, I would've left earlier.",
+"If I had known about the traffic, I would have left earlier.",
+"Had I known about the traffic, I would have left earlier."
+],
+"why": "In standard formal written English, use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs in informal varieties but is not the target formal pattern.",
+"wrong_why": {}
+},
+{
+"id": "ca-C11-4a-r3",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
+"correct": "Unless you hurry, we will miss the flight.",
+"wrong": [
+"If you hurry, we will miss the flight.",
+"Unless you hurry, we will catch the flight.",
+"We will catch the flight unless you hurry."
+],
+"why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.",
+"wrong_why": {}
+},
+{
+"id": "rs-B12-3a-r2",
+"skill": "rep_statements",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'I'm leaving now,' Kate said.",
+"answers": [
+[
+"Kate said she was leaving then.",
+"Kate said that she was leaving then.",
+"Kate said she was leaving at that moment.",
+"Kate said that she was leaving at that moment.",
+"Kate said she was leaving at that time.",
+"Kate said that she was leaving at that time.",
+"Kate said she was leaving right then.",
+"Kate said she was leaving now.",
+"Kate said that she was leaving now.",
+"Kate said she was leaving.",
+"Kate said that she was leaving."
+]
+],
+"why": "*I → she, am leaving → was leaving, now → then.*",
+"hints": [
+[
+"\\bnow\\b",
+"*Now* usually becomes *then* or *at that moment.*",
+"*Now* parasti kļūst par *then* vai *at that moment*."
+]
+],
+"why_lv": "*I → she, am leaving → was leaving, now → then.*"
+},
+{
+"id": "rs-B21-3a-r2",
+"skill": "rep_statements",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'You must finish by Friday,' my boss said.",
+"answers": [
+[
+"My boss said I had to finish by Friday.",
+"My boss said that I had to finish by Friday.",
+"My boss told me I had to finish by Friday.",
+"My boss told me that I had to finish by Friday.",
+"My boss said I must finish by Friday.",
+"My boss told me I must finish by Friday.",
+"My boss said that I must finish by Friday.",
+"My boss told me that I must finish by Friday."
+]
+],
+"why": "*must* can become *had to.* It can also stay *must* when the duty is still there.",
+"hints": []
+},
+{
+"id": "rq-B21-3a-r2",
+"skill": "rep_questions",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'Could you send me the invoice?' Lena asked.",
+"answers": [
+[
+"Lena asked me to send her the invoice.",
+"Lena asked if I could send her the invoice.",
+"Lena asked whether I could send her the invoice.",
+"Lena asked me if I could send her the invoice.",
+"Lena asked me whether I could send her the invoice.",
+"Lena asked me to send the invoice to her.",
+"Lena asked if I would send her the invoice.",
+"Lena asked whether I would send her the invoice.",
+"Lena asked me if I would send her the invoice.",
+"Lena asked me whether I would send her the invoice.",
+"Lena asked if I could send the invoice to her.",
+"Lena asked me if I could send the invoice to her."
+]
+],
+"why": "A request can be reported with *asked* + person + *to* + base verb, or with *if / whether* + *could.*",
+"hints": []
+},
+{
+"id": "rv-C12-3a-r2",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report with a reporting verb: 'You really should see a doctor about that cough,' my sister said.",
+"answers": [
+[
+"My sister advised me to see a doctor about that cough.",
+"My sister urged me to see a doctor about that cough.",
+"My sister told me to see a doctor about that cough.",
+"My sister encouraged me to see a doctor about that cough.",
+"My sister recommended that I see a doctor about that cough.",
+"My sister recommended that I should see a doctor about that cough.",
+"My sister suggested that I see a doctor about that cough.",
+"My sister suggested that I should see a doctor about that cough.",
+"My sister suggested seeing a doctor about that cough.",
+"My sister suggested I see a doctor about that cough.",
+"My sister suggested I should see a doctor about that cough.",
+"My sister recommended seeing a doctor about that cough.",
+"My sister recommended I see a doctor about that cough.",
+"My sister recommended I should see a doctor about that cough.",
+"My sister advised seeing a doctor about that cough.",
+"My sister advised that I see a doctor about that cough.",
+"My sister advised that I should see a doctor about that cough.",
+"My sister said I should see a doctor about that cough.",
+"My sister said that I should see a doctor about that cough.",
+"My sister told me I should see a doctor about that cough.",
+"My sister told me that I should see a doctor about that cough."
+]
+],
+"why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
+"hints": []
+},
+{
+"id": "ip-B12-3a-r2",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Make it polite: What time does the museum close?",
+"answers": [
+[
+"Could you tell me what time the museum closes?",
+"Do you know what time the museum closes?",
+"Can you tell me what time the museum closes?",
+"Would you mind telling me what time the museum closes?",
+"I wonder what time the museum closes.",
+"Could you please tell me what time the museum closes?",
+"Could you tell me what time the museum closes please?",
+"Could you tell me, please, what time the museum closes?",
+"Can you please tell me what time the museum closes?",
+"Do you happen to know what time the museum closes?",
+"I'd like to know what time the museum closes.",
+"I was wondering what time the museum closes.",
+"Would you tell me what time the museum closes?",
+"Could you tell me what time the museum closes, please?",
+"Could you please tell me what time the museum closes please?",
+"Could you tell me what time the museum closes please, please?",
+"Can you please tell me what time the museum closes please?",
+"Would you mind telling me what time the museum closes please?",
+"Do you happen to know what time the museum closes please?",
+"I wonder what time the museum closes please.",
+"I was wondering what time the museum closes please.",
+"I'd like to know what time the museum closes please.",
+"Would you tell me what time the museum closes please?"
+]
+],
+"why": "Polite phrase + *what time* + subject + verb. No *does.*",
+"hints": [
+[
+"does",
+"No *does* in the indirect part: *... what time the museum closes.*",
+"Palīgteikumā nav *does*: ... *what time the museum closes*."
+]
+],
+"why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*."
+},
+{
+"id": "ip-B21-3a-r2",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it indirect: Why didn't the order arrive?",
+"answers": [
+[
+"Could you tell me why the order didn't arrive?",
+"Do you know why the order didn't arrive?",
+"Can you tell me why the order didn't arrive?",
+"I'd like to know why the order didn't arrive.",
+"Would you mind telling me why the order didn't arrive?",
+"Could you please tell me why the order didn't arrive?",
+"Do you happen to know why the order didn't arrive?",
+"I wonder why the order didn't arrive.",
+"I was wondering why the order didn't arrive.",
+"Could you tell me why the order did not arrive?",
+"Do you know why the order did not arrive?",
+"Could you tell me why the order didn't arrive, please?",
+"Can you please tell me why the order didn't arrive?",
+"Would you tell me why the order didn't arrive?",
+"Could you please tell me why the order did not arrive?",
+"Could you tell me why the order did not arrive, please?",
+"Can you please tell me why the order did not arrive?",
+"Would you mind telling me why the order did not arrive?",
+"Do you happen to know why the order did not arrive?",
+"I wonder why the order did not arrive.",
+"I was wondering why the order did not arrive.",
+"I'd like to know why the order did not arrive.",
+"Would you tell me why the order did not arrive?"
+]
+],
+"why": "Polite phrase + *why* + subject + verb (past simple, no *did*).",
+"hints": [
+[
+"\\bdid\\b",
+"No *did* in the indirect part: *... why the order didn't arrive.*"
+]
+]
+},
+{
+"id": "ia-C11-3a-r4",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+"answers": [
+[
+"It's not clear who made the decision.",
+"It is not clear who made the decision.",
+"Who made the decision is not clear.",
+"It's unclear who made the decision.",
+"It is unclear who made the decision."
+]
+],
+"why": "Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.",
+"hints": []
+},
+{
+"id": "var-ca-c11-order-01-r2",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "order",
+"q": "Make an inverted third conditional. Start with Had I.",
+"why": "*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.",
+"sentence": "had I known about the delay I would have called you",
+"answers": [
+[
+"had I known about the delay I would have called you"
+]
+],
+"display_answer": "Had I known about the delay, I would have called you."
+},
+{
+"id": "ct-B22-4a-r3",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "If I'd have known about the traffic, I would've left earlier.",
+"wrong": [
+"If I'd known about the traffic, I would've left earlier.",
+"If I had known about the traffic, I would have left earlier.",
+"Had I known about the traffic, I would have left earlier."
+],
+"why": "*If I'd have known* is a common mistake. In the if-part use had + past participle: *If I'd known.*",
+"wrong_why": {}
+},
+{
+"id": "ia-C11-3a-r3",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Combine: Who made the decision? It's not clear.",
+"answers": [
+[
+"It's not clear who made the decision.",
+"It is not clear who made the decision.",
+"Who made the decision is not clear.",
+"It's unclear who made the decision.",
+"It is unclear who made the decision."
+]
+],
+"why": "*It's not clear* + *who* + verb (statement order).",
+"hints": []
 }
 ]

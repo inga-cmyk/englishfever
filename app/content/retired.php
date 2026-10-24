@@ -1694,6 +1694,23 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "ps-B11-2a-r2",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence is a general truth (always true)?",
+"correct": "Water boils at 100 degrees Celsius.",
+"wrong": [
+"The water is boiling now.",
+"The water boiled yesterday.",
+"I'm boiling water for tea."
+],
+"why": "We use the present simple for facts and things that are always true.",
+"wrong_why": {},
+"why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
+},
+{
 "id": "ct-B22-4a-r2",
 "skill": "cond_third",
 "level": "B2.2",
@@ -1757,6 +1774,41 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "Had I known, I would have called you."
+},
+{
+"id": "ct-B22-4a-r3",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "If I'd have known about the traffic, I would've left earlier.",
+"wrong": [
+"If I'd known about the traffic, I would've left earlier.",
+"If I had known about the traffic, I would have left earlier.",
+"Had I known about the traffic, I would have left earlier."
+],
+"why": "*If I'd have known* is a common mistake. In the if-part use had + past participle: *If I'd known.*",
+"wrong_why": {}
+},
+{
+"id": "ia-C11-3a-r3",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Combine: Who made the decision? It's not clear.",
+"answers": [
+[
+"It's not clear who made the decision.",
+"It is not clear who made the decision.",
+"Who made the decision is not clear.",
+"It's unclear who made the decision.",
+"It is unclear who made the decision."
+]
+],
+"why": "*It's not clear* + *who* + verb (statement order).",
+"hints": []
 }
 ]
 EF_JSON_END

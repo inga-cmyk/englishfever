@@ -304,21 +304,21 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ja *know* apzīmē zināšanas, parasti lieto vienkāršo laiku: *I know the answer*, nevis *I am knowing the answer*."
 },
 {
-"id": "ps-B11-2a-r2",
+"id": "ps-B11-2a-r3",
 "skill": "present_simple",
 "level": "B1.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is a general truth (always true)?",
-"correct": "Water boils at 100 degrees Celsius.",
+"q": "Which sentence states a general fact?",
+"correct": "The Earth orbits the Sun.",
 "wrong": [
 "The water is boiling now.",
 "The water boiled yesterday.",
 "I'm boiling water for tea."
 ],
-"why": "We use the present simple for facts and things that are always true.",
+"why": "Use the present simple for general facts and regular processes: *The Earth orbits the Sun.*",
 "wrong_why": {},
-"why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
+"why_lv": "Vispārīgiem faktiem un regulāriem procesiem lieto Present Simple: *The Earth orbits the Sun.*"
 },
 {
 "id": "ps-B11-3a-r2",
@@ -5771,19 +5771,19 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "ct-B22-4a-r3",
+"id": "ct-B22-4a-r4",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
-"q": "Which sentence is NOT correct?",
+"q": "Which sentence needs editing in standard formal written English?",
 "correct": "If I'd have known about the traffic, I would've left earlier.",
 "wrong": [
 "If I'd known about the traffic, I would've left earlier.",
 "If I had known about the traffic, I would have left earlier.",
 "Had I known about the traffic, I would have left earlier."
 ],
-"why": "*If I'd have known* is a common mistake. In the if-part use had + past participle: *If I'd known.*",
+"why": "In standard formal written English, use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs in informal varieties but is not the target formal pattern.",
 "wrong_why": {}
 },
 {
@@ -8012,12 +8012,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C11-3a-r3",
+"id": "ia-C11-3a-r4",
 "skill": "ind_advanced",
 "level": "C1.1",
 "bloom": 3,
 "kind": "text",
-"q": "Combine: Who made the decision? It's not clear.",
+"q": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
 "answers": [
 [
 "It's not clear who made the decision.",
@@ -8027,7 +8027,7 @@ return json_decode(<<<'EF_JSON_END'
 "It is unclear who made the decision."
 ]
 ],
-"why": "*It's not clear* + *who* + verb (statement order).",
+"why": "Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.",
 "hints": []
 },
 {

@@ -48,7 +48,6 @@ P.text("B1.1", "Join the two sentences: This is the town. I was born there.", ["
 P.text("B1.2", "Join the two sentences: She passed her driving test. This surprised everyone.", ["She passed her driving test, which surprised everyone."], b=5)
 P.text("B1.2", "Join the two sentences: I met a man. His dog can open doors.", ["I met a man whose dog can open doors."], b=5)
 P.match("B1.1", "Match each word with what it describes.", [("who", "a person"), ("which", "a thing"), ("where", "a place"), ("whose", "belongs to someone")])
-P.match("B1.2", "Match each clause with its meaning.", [("a clause without commas", "tells us which one"), ("a clause with commas", "gives extra information"), ("whose", "shows who owns something"), ("where", "refers to a place")])
 
 
 def _ver(mains, clauses, conns, fronted=True):

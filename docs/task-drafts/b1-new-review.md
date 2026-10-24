@@ -35,7 +35,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 
 ### B1.2 (15)
 
-- [drag the words] **Put the words in order.**   ✔ when i was a child we would visit my grandparents every sunday   (also accepted: we would visit my grandparents every sunday when i was a child)  — Subject + used to + base verb + the rest. Negative: didn't use to.
+- [drag the words] **Put the words in order.**   ✔ when i was a child we used to visit my grandparents every sunday   (also accepted: we used to visit my grandparents every sunday when i was a child)  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the words] **Put the words in order.**   ✔ it took me a long time to get used to the cold weather  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the words] **Put the words in order.**   ✔ i am not used to getting up so early  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the word] **After a month I got ___ to the noise.**   ✔ used   (chips: used | use | using)  — used to + base verb: a past habit or state that is not true now.
@@ -45,10 +45,10 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [choose] **Choose the correct option: At first I hated the food, but now I ___ it.**   ✔ am used to   ✗ used to | am use to | use to  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
 - [choose] **Which sentence means the same as 'It is normal for me to live alone'?**   ✔ I'm used to living alone.   ✗ I used to live alone. | I'm used to live alone. | I get used to live alone.  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
 - [choose] **Which sentence is NOT correct?**   ✔ She is used to get up early.   ✗ She used to get up early. | She is used to getting up early. | She got used to getting up early.  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
-- [choose] **Choose the correct option: When we were children, we ___ play in the river every summer.**   ✔ would   ✗ were used to | got used to | are used to  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
-- [choose] **Which sentence is correct?**   ✔ I used to have a bike when I was ten.   ✗ I would have a bike when I was ten. | I am used to have a bike when I was ten. | I use to have a bike when I was ten.  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
-- [type the sentence] **Rewrite with would: When I was little, we used to visit the zoo every spring.**   ✔ When I was little, we would visit the zoo every spring. | We would visit the zoo every spring when I was little.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
-- [type the sentence] **Say it another way and keep the meaning: When I was little, we used to visit the zoo every spring.**   ✔ When I was little, we would visit the zoo every spring. | We would visit the zoo every spring when I was little. | When I was little, we visited the zoo every spring. | We visited the zoo every spring when I was little.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
+- [choose] **Choose the correct option: When we were children, we ___ play in the river every summer.**   ✔ used to   ✗ are used to | get used to | use to  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
+- [choose] **Which sentence is correct?**   ✔ I used to have a bike when I was ten.   ✗ I used have a bike when I was ten. | I am used to have a bike when I was ten. | I use to have a bike when I was ten.  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
+- [type the sentence] **Rewrite with used to: When I was little, we visited the zoo every spring.**   ✔ When I was little, we used to visit the zoo every spring. | We used to visit the zoo every spring when I was little.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
+- [type the sentence] **Correct the mistake: When I was little, we use to visit the zoo every spring.**   ✔ When I was little, we used to visit the zoo every spring. | We used to visit the zoo every spring when I was little.  — Question: Did + subject + use to + base verb? Negative: didn't use to (no -d).
 - [match] **Match each form with its meaning.**   ✔ used to = a past habit that has stopped  ·  be used to = something is normal for me  ·  get used to = something is becoming normal  ·  didn't use to = this was not true in the past  — used to is about the past; be used to and get used to are about now.
 
 ## Articles (40 questions)
@@ -141,7 +141,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type a word] **We can't swim today. The water isn't warm ___ .**   ✔ enough  — many / a few + plural nouns. much / a little + uncountable nouns.
 - [match] **Match each phrase with its meaning.**   ✔ too many = more than we need (things we can count)  ·  not enough = less than we need  ·  enough = as much as we need  ·  very little = almost nothing  — many / a few go with countable nouns, much / a little with uncountable nouns.
 
-## Relative clauses (40 questions)
+## Relative clauses (39 questions)
 
 ### B1.1 (19)
 
@@ -165,7 +165,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Join the two sentences: This is the town. I was born there.**   ✔ This is the town where I was born. | This is the town in which I was born.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [match] **Match each word with what it describes.**   ✔ who = a person  ·  which = a thing  ·  where = a place  ·  whose = belongs to someone  — who / which / where / whose show what the clause describes.
 
-### B1.2 (21)
+### B1.2 (20)
 
 - [drag the words] **Put the words in order.**   ✔ my brother who lives in berlin is a nurse  — Noun + who / which / that / where + the rest of the clause.
 - [drag the words] **Put the words in order.**   ✔ the woman whose car was stolen called the police   (also accepted: the police called the woman whose car was stolen)  — Noun + who / which / that / where + the rest of the clause.
@@ -187,7 +187,6 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Join the two sentences: My uncle lives in Spain. He is a chef.**   ✔ My uncle, who lives in Spain, is a chef. | My uncle, who is a chef, lives in Spain.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join the two sentences: She passed her driving test. This surprised everyone.**   ✔ She passed her driving test, which surprised everyone.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join the two sentences: I met a man. His dog can open doors.**   ✔ I met a man whose dog can open doors.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
-- [match] **Match each clause with its meaning.**   ✔ a clause without commas = tells us which one  ·  a clause with commas = gives extra information  ·  whose = shows who owns something  ·  where = refers to a place  — who / which / where / whose show what the clause describes.
 
 ## Time clauses (36 questions)
 

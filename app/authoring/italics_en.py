@@ -675,6 +675,7 @@ Start with: *Could you tell me / Do you know / Can you tell me / I wonder.*
 Then use statement word order: *... where the station is* (not *where is the station*).
 No *do / does / did* in the second part: *... what time the shop opens.*
 Yes/no questions: use *if* or *whether*: *Do you know if she is here?*
+Asking politely: *Could you tell me where ...?* The question is a request.
 A full stop after *I wonder ...* / *I'd like to know ...*; a question mark after *Could you* / *Do you know ...*
 *Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*
 *Could you tell me where the meeting room is?*
@@ -682,6 +683,7 @@ Question word + *to* + base verb: *I don't know what to do. I'm not sure how to 
 *if / whether* (+ *or not*): *I can't decide whether to accept.*
 An embedded question can be a subject: *What he said surprised me.*
 After prepositions: *We talked about how to improve the results.*
+Not a request: the question is part of a statement (*I don't know what to do*). The word order is the same as in *Could you tell me where the station is?*
 Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*
 *I wonder, no idea, not sure, it depends on, the question is, whoever, whatever*
 *I have no idea how long the meeting will take.*

@@ -3526,18 +3526,18 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Lieto *by* + darītājs, ja gribi pateikt, kas darbību izdarīja."
 },
 {
-"id": "pasp-B11-3a",
+"id": "pasp-B11-3a-r2",
 "skill": "past_simple_passive",
 "level": "B1.1",
 "bloom": 3,
 "kind": "gap",
-"q": "Where ___ the film ___? (film)",
+"q": "Where ___ this photo ___? (take)",
 "answers": [
 [
 "was"
 ],
 [
-"filmed"
+"taken"
 ]
 ],
 "why": "Question: *Where* + *was* + subject + past participle.",
@@ -5717,7 +5717,7 @@ return json_decode(<<<'EF_JSON_END'
 }
 },
 {
-"id": "ct-B22-2a",
+"id": "ct-B22-2a-r2",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 2,
@@ -5726,7 +5726,7 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "A is about the past (you did not ask). B is about now or the future.",
 "wrong": [
 "A is about now. B is about the past.",
-"Both are about the past.",
+"A is about the future. B is about the past.",
 "There is no difference."
 ],
 "why": "Third conditional = past, unreal. Second conditional = present or future, unreal.",
@@ -5741,10 +5741,10 @@ return json_decode(<<<'EF_JSON_END'
 "q": "If he ___ (not / drive) so fast, he ___ (not / lose) his licence.",
 "answers": [
 [
-"hadn't driven",
-"had not driven",
 "hadn't been driving",
-"had not been driving"
+"had not been driving",
+"hadn't driven",
+"had not driven"
 ],
 [
 "wouldn't have lost",
@@ -5752,16 +5752,16 @@ return json_decode(<<<'EF_JSON_END'
 "'d not have lost"
 ]
 ],
-"why": "Negative third conditional: *hadn't* + past participle, *wouldn't have* + past participle.",
+"why": "Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.",
 "hints": []
 },
 {
-"id": "ct-B22-4a-r2",
+"id": "ct-B22-4a-r3",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
-"q": "Which sentence needs editing for standard formal written English?",
+"q": "Which sentence is NOT correct?",
 "correct": "If I'd have known about the traffic, I would've left earlier.",
 "wrong": [
 "If I'd known about the traffic, I would've left earlier.",
@@ -6173,19 +6173,19 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "ca-C11-4a-r2",
+"id": "ca-C11-4a-r3",
 "skill": "cond_advanced",
 "level": "C1.1",
 "bloom": 4,
 "kind": "mcq",
-"q": "Which sentence does NOT express this warning: we need to hurry to avoid missing the flight?",
-"correct": "Unless you don't hurry, we will miss the flight.",
+"q": "Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
+"correct": "Unless you hurry, we will miss the flight.",
 "wrong": [
-"Unless you hurry, we will miss the flight.",
-"If you don't hurry, we will miss the flight.",
-"We will miss the flight unless you hurry."
+"If you hurry, we will miss the flight.",
+"Unless you hurry, we will catch the flight.",
+"We will catch the flight unless you hurry."
 ],
-"why": "*Unless you hurry* gives the intended condition. *Unless you do not hurry* changes its meaning. The issue here is the intended warning, not a universal ban on negatives after *unless*.",
+"why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.",
 "wrong_why": {}
 },
 {
@@ -8403,20 +8403,20 @@ return json_decode(<<<'EF_JSON_END'
 "display_answer": "If I had studied medicine, I would be a doctor now."
 },
 {
-"id": "var-ca-c11-order-01",
+"id": "var-ca-c11-order-01-r2",
 "skill": "cond_advanced",
 "level": "C1.1",
 "bloom": 3,
 "kind": "order",
 "q": "Make an inverted third conditional. Start with Had I.",
 "why": "*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.",
-"sentence": "had I known I would have called you",
+"sentence": "had I known about the delay I would have called you",
 "answers": [
 [
-"had I known I would have called you"
+"had I known about the delay I would have called you"
 ]
 ],
-"display_answer": "Had I known, I would have called you."
+"display_answer": "Had I known about the delay, I would have called you."
 },
 {
 "id": "var-rs-b11-order-01",

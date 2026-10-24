@@ -23,7 +23,7 @@ const OUT = __dirname + '/shots/';
     check('the topics and progress are folded away by default', (await p.locator('details.card.fold[open]').count()) === 0 && (await p.locator('details.card.fold > summary .h3').allInnerTexts()).join('|') === 'Your topics', await p.locator('details.card.fold > summary .h3').allInnerTexts());
     await p.locator('details.card.fold > summary:has-text("Your topics")').click(); await p.waitForTimeout(150);
     check('a guest sees the website link, not "My dashboard"', (await p.locator('.sitelink').textContent()) === 'englishfever.com ↗' && (await p.locator('a:has-text("My dashboard")').count()) === 0);
-    check('"Your topics" is grouped by area (fold-away sections)', (await p.locator('details.area-fold > summary .h3').allInnerTexts()).join('|').toLowerCase() === 'active tenses|passive tenses|conditionals|reported speech|indirect questions', await p.locator('details.area-fold > summary .h3').allInnerTexts());
+    check('"Your topics" is grouped by area (fold-away sections)', (await p.locator('details.area-fold > summary .h3').allInnerTexts()).join('|').toLowerCase() === 'active tenses|passive tenses|conditionals|reported speech|questions inside sentences', await p.locator('details.area-fold > summary .h3').allInnerTexts());
     await p.screenshot({ path: OUT + '95-home-areas.png', fullPage: true });
 
     // picker

@@ -217,7 +217,8 @@ def revise(original):
     more('cm-B22-3a', 'Accept the if-clause in second position.',
          ['He would be living in Paris now if he had taken the job.', "He'd be living in Paris now if he'd taken the job."])
     fix('ct-B22-3a', "The continuous form is also correct: hadn't been driving (reported by a learner).",
-        answers=[["hadn't driven", "had not driven", "hadn't been driving", "had not been driving"], ["wouldn't have lost", "would not have lost", "'d not have lost"]])
+        answers=[["hadn't been driving", "had not been driving", "hadn't driven", "had not driven"], ["wouldn't have lost", "would not have lost", "'d not have lost"]],
+        why="Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.")
     more('cm-C11-3a', 'Accept the inverted clause in second position.',
          ["I wouldn't be in this mess now had I listened to my accountant.", "I'd not be in this mess now had I listened to my accountant."])
     more('ia-C12-3a', 'Accept the wh-ever clause after the instruction.',
@@ -253,4 +254,21 @@ def revise(original):
         wrong=['The road was closed in 1999.', 'The road closes every night.', 'The road will close tomorrow.'])
     fix('cf-A22-5a', 'The options repeated the word Say and one said it was correct; they are now plain sentences.',
         correct="If I have time, I'll call you.", wrong=['If I would have time, I will call you.', 'If I had time, I will call you.', 'If I will have time, I will call you.'])
+    # Reported by learners and checked by the teacher (24 October). Each is a second correction of an item that was already published, so it gets the next revision id.
+    def fix_again(id, reason, **changes):
+        it = by_id[id]
+        it.update(changes)
+        it['id'] = id + '-r3'
+        REASONS[id] = REASONS[id] + ' ' + reason
+    fix('pasp-B11-3a', 'The verb and the noun were the same word (film); use a verb that cannot be mistaken for a noun.',
+        q='Where ___ this photo ___? (take)', answers=[['was'], ['taken']])
+    fix('ct-B22-2a', 'An option that says both sentences are about the past is illogical for this question; use a reversed contrast.',
+        wrong=['A is about now. B is about the past.', 'A is about the future. B is about the past.', 'There is no difference.'])
+    fix_again('ct-B22-4a', 'The answer that "needs editing" was arguable and showed an ungrammatical sentence as the correct answer; ask which sentence is not correct.',
+        q='Which sentence is NOT correct?')
+    fix_again('ca-C11-4a', 'The key sentence (*Unless you don\'t hurry*) is not a common structure; ask which sentence has the same meaning, with natural options.',
+        q="Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
+        correct='Unless you hurry, we will miss the flight.',
+        wrong=['If you hurry, we will miss the flight.', 'Unless you hurry, we will catch the flight.', 'We will catch the flight unless you hurry.'],
+        why='*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.')
     return items

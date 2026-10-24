@@ -29,19 +29,25 @@ foreach ($published as $original) {
 $retired = require __DIR__ . '/../content/retired.php';
 foreach ($retired as $old) {
     check(!isset($active[$old['id']]), 'Retired question entered the active pool');
-    $replacement = Content::item($old['id'] . '-r2');
+    $next = preg_match('/^(.*)-r(\d+)$/', $old['id'], $m) ? $m[1] . '-r' . ($m[2] + 1) : $old['id'] . '-r2';   // a second correction of a published item takes the next number
+    $replacement = Content::item($next);
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
         check($old[$key] === $replacement[$key], "Correction changed $key");
     }
 }
 check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 73, 'Unexpected correction count');
+check(count($retired) === 78, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);
 check($grade('cf-B11-3b-r2', ['arrive'])['correct'], 'arrive must fit');
 check(!$grade('cf-B11-3b-r2', ['get'])['correct'], 'get at must not pass');
+check($grade('ca-C11-4a-r3', 'Unless you hurry, we will miss the flight.')['correct'], 'the same-meaning option is the key');
+check(!$grade('ca-C11-4a-r3', 'If you hurry, we will miss the flight.')['correct'], 'the reversed option is wrong');
+check(Content::item('var-ca-c11-order-01-r2')['sentence'] === 'had I known about the delay I would have called you', 'the inverted conditional has its object');
+check(!in_array('Both are about the past.', Content::item('ct-B22-2a-r2')['wrong'], true), 'the illogical option is gone');
+check(Content::item('pasp-B11-3a-r2')['q'] === 'Where ___ this photo ___? (take)', 'the film sentence is replaced');
 check($grade('ct-B22-3a-r2', ["hadn't been driving", "wouldn't have lost"])['correct'], 'hadn\'t been driving is also correct');
 check($grade('ct-B22-3a-r2', ["hadn't driven", "wouldn't have lost"])['correct'], 'hadn\'t driven stays correct');
 check(!$grade('cf-B11-3b-r2', ['reach'])['correct'], 'reach at must not pass');

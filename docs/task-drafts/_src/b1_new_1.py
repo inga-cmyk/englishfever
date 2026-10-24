@@ -14,9 +14,10 @@ P = Topic("Used to and be used to", **B,
 for s, l, al in [("we used to live in a small flat", "A2.2", None), ("my grandfather used to work on a farm", "A2.2", None), ("did you use to play football as a child", "A2.2", ["as a child did you use to play football"]),
                  ("she didn't use to enjoy cooking but now she loves it", "B1.1", None), ("where did you use to go on holiday as a child", "B1.1", ["as a child where did you use to go on holiday"]),
                  ("my brother used to be shy but now he talks to everyone", "B1.1", None),
-                 ("when i was a child we would visit my grandparents every sunday", "B1.2", ["we would visit my grandparents every sunday when i was a child"]),
+                 ("when i was a child we used to visit my grandparents every sunday", "B1.2", ["we used to visit my grandparents every sunday when i was a child"]),
                  ("it took me a long time to get used to the cold weather", "B1.2", None), ("i am not used to getting up so early", "B1.2", None)]:
     P.order(l, s, also=al)
+    if s.startswith("when i was a child we used to"): replaces("when i was a child we would visit my grandparents every sunday")   # the topic is used to / be used to: no would
 P.bank("A2.2", "My mother ___ cook every evening, but now she is too busy.", "used to", ["use to", "is used to"])
 P.bank("A2.2", "I ___ like fish, but now I love it.", "didn't use to", ["didn't used to", "don't use to"])
 P.bank("B1.1", "We ___ to the same café every Friday when we were students.", "used to go", ["use to go", "are used to go"])
@@ -37,14 +38,17 @@ P.mcq("B1.1", "Which sentence is correct?", "There didn't use to be a supermarke
 P.mcq("B1.2", "Choose the correct option: At first I hated the food, but now I ___ it.", "am used to", ["used to", "am use to", "use to"])
 P.mcq("B1.2", "Which sentence means the same as 'It is normal for me to live alone'?", "I'm used to living alone.", ["I used to live alone.", "I'm used to live alone.", "I get used to live alone."], b=3)
 P.mcq("B1.2", "At work: which sentence is NOT correct?", "She is used to get up early.", ["She used to get up early.", "She is used to getting up early.", "She got used to getting up early."], b=4)
-P.mcq("B1.2", "Choose the correct option: When we were children, we ___ play in the river every summer.", "would", ["were used to", "got used to", "are used to"], b=3)
-P.mcq("B1.2", "In a text: which sentence is correct?", "I used to have a bike when I was ten.", ["I would have a bike when I was ten.", "I am used to have a bike when I was ten.", "I use to have a bike when I was ten."], b=4)
+P.mcq("B1.2", "Choose the correct option: When we were children, we ___ play in the river every summer.", "used to", ["are used to", "get used to", "use to"], b=3)
+replaces("would")
+P.mcq("B1.2", "In a text: which sentence is correct?", "I used to have a bike when I was ten.", ["I used have a bike when I was ten.", "I am used to have a bike when I was ten.", "I use to have a bike when I was ten."], b=4)
 P.text("A2.2", "Rewrite with used to: When I was young, I played the piano every day.", ["When I was young, I used to play the piano every day.", "I used to play the piano every day when I was young."], b=4)
 P.text("B1.1", "Make it negative with didn't use to: We used to have a car.", ["We didn't use to have a car.", "We did not use to have a car."])
 P.text("B1.1", "Make the sentence negative: She used to play tennis.", ["She didn't use to play tennis.", "She did not use to play tennis.", "She never used to play tennis."])
 P.text("B1.1", "Make a question: She used to live in London.", ["Did she use to live in London?"])
-P.text("B1.2", "Rewrite with would: When I was little, we used to visit the zoo every spring.", ["When I was little, we would visit the zoo every spring.", "We would visit the zoo every spring when I was little."], b=5)
-P.text("B1.2", "Say it another way and keep the meaning: When I was little, we used to visit the zoo every spring.", ["When I was little, we would visit the zoo every spring.", "We would visit the zoo every spring when I was little.", "When I was little, we visited the zoo every spring.", "We visited the zoo every spring when I was little."], b=5)
+P.text("B1.2", "Rewrite with used to: When I was little, we visited the zoo every spring.", ["When I was little, we used to visit the zoo every spring.", "We used to visit the zoo every spring when I was little."], b=5)
+replaces("Rewrite with would: When I was little, we used to visit the zoo every spring.")
+P.text("B1.2", "Correct the mistake: When I was little, we use to visit the zoo every spring.", ["When I was little, we used to visit the zoo every spring.", "We used to visit the zoo every spring when I was little."], b=5)
+replaces("Say it another way and keep the meaning: When I was little, we used to visit the zoo every spring.")
 P.match("B1.2", "Match each form with its meaning.", [("used to", "a past habit that has stopped"), ("be used to", "something is normal for me"), ("get used to", "something is becoming normal"), ("didn't use to", "this was not true in the past")])
 
 # ============ Articles (A2.2 / B1.1 / B1.2) ============

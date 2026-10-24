@@ -9,7 +9,7 @@ A small web app for adult learners to practise English grammar: tenses (active a
 - **Guests** can start with one click (an optional name field; without a name they appear as "Guest 4821"). No password, no registration. You see them in the teacher list, marked *guest*. Their results stay in that browser and are lost if it is cleared. After practice, a popup invites them to create a free account. When they register and press "Continue with my account" in the same browser, everything they did as a guest moves into the new account. Guests are not on the leaderboard. Guest data is deleted after 60 days without a visit.
 - **The Home page is quiet** (one main action, see *Home* below). The three ways to start are:
 - **Placement test:** three sizes (Quick 12 questions, Medium 24, Full 40). A gap-finder: a level staircase (blocks of 3 questions per level; a failed block gets a second block at the same level), then questions around the ability found; the level is fitted to all answers. Result: level, how each level went, up to 3 topics missed at or below that level, a Second Chance offer. In simulations the longer versions are clearly more exact (error 0.50 / 0.31 / 0.20 levels for 12 / 24 / 40 questions). Details: `CHANGELOG-practice-app.md`.
-- **Choose topics:** pick topics from five areas (Active tenses, Passive tenses, Conditionals, Reported speech, Indirect questions) and a level from A2.1 to C1.2.
+- **Choose topics:** pick topics from five areas (Active tenses, Passive tenses, Conditionals, Reported speech, Questions inside sentences) and a level from A2.1 to C1.2.
 - **Practise now (Surprise me):** the app picks 3-4 topics from the learner's own mistakes and weak spots (plus one topic not tried yet), centres each topic on the learner's level in it, and brings back tasks they got wrong before. New learners get friendly starter topics.
 - **Practice:** the first 3 tasks are a quick check at the chosen level. After that, the tasks get harder after correct answers and easier after mistakes, and the learner is told which way the next task goes.
 - **Feedback after every answer:** right or wrong, the correct answer, a one-sentence reason, a specific tip for common mistakes, and a collapsible rule card. **Up to level B1.2 the reason, the tips and the rule card can be shown in Latvian** (button *Latviski* on the feedback, setting in Profile, remembered per learner).
@@ -32,7 +32,7 @@ A small web app for adult learners to practise English grammar: tenses (active a
 | Passive tenses | Present simple (A2.2-B1.2), past simple (A2.2-B1.2), present continuous (B1.2), present perfect (B1.1-B1.2), future (B1.1-B1.2) |
 | Conditionals | Zero (A2.2-B1.1), first incl. *unless*, *as soon as*, *in case* (A2.2-B1.2), second (B1.1-B2.1), third (B1.2-B2.2), mixed (B2.1-C1.1), advanced: inversion, *unless*, *provided that*, *wish*, *if only* (C1.1-C1.2) |
 | Reported speech | Statements and tense changes (B1.1-B2.1), questions and requests (B1.2-B2.2), reporting verbs (B2.2-C1.2) |
-| Indirect questions | Polite indirect questions (B1.1-B2.1), embedded questions, *what to do*, *whoever* (B2.2-C1.2) |
+| Questions inside sentences | Polite indirect questions (B1.1-B2.1); question words in statements: *what to do*, *whether to*, *what he said surprised me*, *whoever* (B2.2-C1.2) |
 
 ## What is not done yet (please read)
 

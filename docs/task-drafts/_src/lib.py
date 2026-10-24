@@ -27,6 +27,9 @@ def lv_fix(t):
     for a, b in LV_SUBS: t = re.sub(a, b, t)
     return italics.lv_mark(t)   # every English word in a Latvian explanation is an example: the same rule the built-in explanations use
 def mc(t, lv, b, q, ok, wrong, why, lvw): rows.append([t, lv, "mcq", q, ok, " | ".join(wrong), why, lvw, b])
+def replaces(old):
+    """The last row replaces an older version that was already imported: the old *correct option* (choose), *sentence* (word order) or *task text* (other types). The importer retires the old one."""
+    rows[-1] = rows[-1][:9] + [old]
 def gp(t, lv, b, q, ok, why, lvw, bank=None): rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b])
 def tx(t, lv, b, q, ok, why, lvw): rows.append([t, lv, "text", q, " | ".join(ok) if isinstance(ok, (list, tuple)) else ok, "", why, lvw, b])
 import alt_orders
@@ -53,7 +56,7 @@ def save(name):
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
-        for r in rows: w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [REPL.get(r[4], '') if r[2] == 'match' else ''])
+        for r in rows: w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else '')])
     print(name, len(rows), "rows")
 
 

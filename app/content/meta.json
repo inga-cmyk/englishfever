@@ -36,7 +36,7 @@
   },
   {
    "id": "indirect",
-   "label": "Indirect questions"
+   "label": "Questions inside sentences"
   },
   {
    "id": "nouns",
@@ -935,7 +935,7 @@
      "Yes/no questions: use *if* or *whether*: *Do you know if she is here?*"
     ],
     "use": [
-     "Polite requests for information.",
+     "Asking politely: *Could you tell me where ...?* The question is a request.",
      "Talking to strangers, customers and at work.",
      "A full stop after *I wonder ...* / *I'd like to know ...*; a question mark after *Could you* / *Do you know ...*"
     ],
@@ -950,7 +950,7 @@
      "Jā/nē jautājumos lieto *if* vai *whether*: *Do you know if she is here?*"
     ],
     "use": [
-     "Pieklājīgi jautājumi pēc informācijas.",
+     "Pieklājīgs lūgums: *Could you tell me where* ...? Jautājums ir lūgums.",
      "Sarunā ar svešiem cilvēkiem, klientiem un darbā.",
      "Pēc *I wonder* ... / *I'd like to know* ... liek punktu; pēc *Could you / Do you know* ... jautājuma zīmi."
     ],
@@ -959,7 +959,7 @@
   },
   {
    "id": "ind_advanced",
-   "label": "Embedded questions (I wonder if..., what to do)",
+   "label": "Question words in statements (I don't know what to do)",
    "area": "indirect",
    "levels": [
     "B2.2",
@@ -974,6 +974,7 @@
      "After prepositions: *We talked about how to improve the results.*"
     ],
     "use": [
+     "Not a request: the question is part of a statement (*I don't know what to do*). The word order is the same as in *Could you tell me where the station is?*",
      "Reports, emails and formal writing.",
      "Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*"
     ],
@@ -1000,7 +1001,6 @@
     "use": [
      "*used to*: a habit or a state in the past that is not true now (*I used to smoke. He used to be shy*).",
      "Not for one finished event: use the Past Simple (*We went to Rome last year*).",
-     "*would*: past habits only, not states (*When I was a child, we would visit my gran every Sunday*).",
      "*be used to / get used to*: something is (or becomes) normal for you. It is different from *used to*!"
     ],
     "signals": "*when I was young, as a child, in those days, now, any more*",
@@ -1016,7 +1016,6 @@
     "use": [
      "*used to*: ieradums vai stāvoklis pagātnē, kas tagad vairs nav spēkā (*I used to smoke.* *He used to be shy*).",
      "Nelieto vienam pabeigtam notikumam: lieto Past Simple (*We went to Rome last year*).",
-     "*would*: tikai pagātnes ieradumiem, ne stāvokļiem (*When I was a child, we would visit my gran every Sunday*).",
      "*be used to / get used to*: kaut kas ir (vai kļūst) ierasts. Tas atšķiras no *used to*!"
     ],
     "signals": "*when I was young, as a child, in those days, now, any more* (kad biju jauns, bērnībā, tolaik, tagad, vairs)"

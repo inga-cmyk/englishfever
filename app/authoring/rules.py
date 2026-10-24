@@ -7,7 +7,7 @@ AREAS = [
     ("comparing", "Comparing things"),
     ("conditionals", "Conditionals"),
     ("reported", "Reported speech"),
-    ("indirect", "Indirect questions"),
+    ("indirect", "Questions inside sentences"),
 ]
 
 SKILLS = [
@@ -37,7 +37,7 @@ SKILLS = [
     ("rep_questions", "Reported questions and requests", "reported", ["B1.2", "B2.1", "B2.2"]),
     ("rep_verbs", "Reporting verbs (suggest, admit, promise...)", "reported", ["B2.2", "C1.1", "C1.2"]),
     ("ind_polite", "Indirect questions (Could you tell me where...)", "indirect", ["B1.1", "B1.2", "B2.1"]),
-    ("ind_advanced", "Embedded questions (I wonder if..., what to do)", "indirect", ["B2.2", "C1.1", "C1.2"]),
+    ("ind_advanced", "Question words in statements (I don't know what to do)", "indirect", ["B2.2", "C1.1", "C1.2"]),
 ]
 
 RULES = {
@@ -205,14 +205,14 @@ RULES.update({
     "ind_polite": {
         "form": ["Start with: Could you tell me / Do you know / Can you tell me / I wonder.", "Then use statement word order: ... where the station is (not where is the station).",
                  "No do / does / did in the second part: ... what time the shop opens.", "Yes/no questions: use if or whether: Do you know if she is here?"],
-        "use": ["Polite requests for information.", "Talking to strangers, customers and at work.", "A full stop after I wonder ... / I'd like to know ...; a question mark after Could you / Do you know ..."],
+        "use": ["Asking politely: Could you tell me where ...? The question is a request.", "Talking to strangers, customers and at work.", "A full stop after I wonder ... / I'd like to know ...; a question mark after Could you / Do you know ..."],
         "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
         "example": "Could you tell me where the meeting room is?",
     },
     "ind_advanced": {
         "form": ["Question word + to + base verb: I don't know what to do. I'm not sure how to start.", "if / whether (+ or not): I can't decide whether to accept.",
                  "An embedded question can be a subject: What he said surprised me.", "After prepositions: We talked about how to improve the results."],
-        "use": ["Reports, emails and formal writing.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
+        "use": ["Not a request: the question is part of a statement (I don't know what to do). The word order is the same as in Could you tell me where the station is?", "Reports, emails and formal writing.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
         "signals": "I wonder, no idea, not sure, it depends on, the question is, whoever, whatever",
         "example": "I have no idea how long the meeting will take.",
     },

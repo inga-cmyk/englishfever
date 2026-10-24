@@ -20,7 +20,7 @@ def order(id, skill, level, q, sentence, why, lv=None, alternatives=()):
         'var-cs-b11-order-01': 'If I had a car, I would drive.',
         'var-ct-b12-order-01': 'If I had left earlier, I would have caught the bus.',
         'var-cm-b21-order-01': 'If I had studied medicine, I would be a doctor now.',
-        'var-ca-c11-order-01': 'Had I known, I would have called you.',
+        'var-ca-c11-order-01-r2': 'Had I known about the delay, I would have called you.',
     }
     question = sentence.split()[0] in {'did', 'have', 'has', 'how', 'could'}
     display = punctuated.get(id, sentence[0].upper() + sentence[1:] + ('?' if question else '.'))
@@ -111,8 +111,8 @@ order('var-cm-b21-order-01', 'cond_mixed', 'B2.1',
       'Link a different past decision to a present result. Start with If I had and put now at the end.',
       'if I had studied medicine I would be a doctor now',
       '*Had studied* imagines a different past decision. *Would be ... now* describes the present consequence.')
-order('var-ca-c11-order-01', 'cond_advanced', 'C1.1',
-      'Make an inverted third conditional. Start with Had I.', 'had I known I would have called you',
+order('var-ca-c11-order-01-r2', 'cond_advanced', 'C1.1',
+      'Make an inverted third conditional. Start with Had I.', 'had I known about the delay I would have called you',
       '*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.')
 order('var-rs-b11-order-01', 'rep_statements', 'B1.1',
       'Report a past statement using backshift. Start with She said.', 'she said that she was tired',

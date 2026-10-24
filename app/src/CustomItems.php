@@ -126,13 +126,14 @@ final class CustomItems
         $existing = [];
         $rel = Content::relabelled(); // a task given a lower level as a copy may be imported again at that level
         foreach (Content::items() as $it) if (!isset($rel[$it['id']])) $existing[self::dupKey($it)] = true;
-        $mine = []; $byContent = [];   // tasks already added from a file: the same task again is left alone; the same content with new wording updates the wording
+        $mine = []; $byContent = []; $byOld = [];   // tasks already added from a file: the same task again is left alone; the same content with new wording updates the wording
         foreach (Db::all("SELECT item_id, skill, level, kind, data FROM custom_items WHERE status <> 'retired'") as $r) {
             $d = json_decode($r['data'], true);
             if (empty($d['q'])) continue;
             $d += ['skill' => $r['skill'], 'level' => $r['level'], 'kind' => $r['kind']];
             $existing[self::dupKey($d)] = true; $mine[self::dupKey($d)] = ['id' => $r['item_id'], 'data' => json_encode(array_diff_key($d, ['skill' => 1, 'level' => 1, 'kind' => 1, 'bloom' => 1]), JSON_UNESCAPED_UNICODE)];
             if (self::contentKey($d) !== '') $byContent[self::contentKey($d)] = ['id' => $r['item_id'], 'q' => $d['q']];
+            $byOld[self::oldKey($d)] = $r['item_id'];
         }
         $rows = []; $line = 1; $ok = 0; $bad = 0; $seen = []; $upd = 0; $same = 0;
         while (($r = fgetcsv($fh, 0, $delim, '"', '\\')) !== false) {
@@ -150,6 +151,10 @@ final class CustomItems
                     foreach (self::split($get('replaces'), ';') as $p) { $x = explode('=', $p, 2); if (count($x) === 2) $oldPairs[] = [trim($x[0]), trim($x[1])]; }
                     $ok2 = self::contentKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => 'match', 'pairs' => $oldPairs]);
                     if (isset($byContent[$ok2])) { $res['replaces'] = $byContent[$ok2]['id']; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
+                }
+                if ($item['kind'] !== 'match' && $get('replaces') !== '') {   // another corrected task: the older version (the old correct option, sentence or task text) is retired
+                    $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $item['kind'], 'q' => $get('replaces'), 'correct' => $get('replaces'), 'sentence' => $get('replaces')]);
+                    if (isset($byOld[$ok3])) { $res['replaces'] = $byOld[$ok3]; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
                 }
                 if (isset($seen[$dup])) throw new ApiError('This task is twice in the file.', 400);
                 if (isset($mine[$dup])) {                                   // added from a file before
@@ -304,6 +309,13 @@ final class CustomItems
         $pairs = isset($it['pairs']) ? json_encode($it['pairs'], JSON_UNESCAPED_UNICODE) : '';
         return mb_strtolower($it['q']) . '|' . $it['skill'] . (isset($it['sentence']) ? '|' . mb_strtolower($it['sentence']) : '')
             . (isset($it['correct']) && is_string($it['correct']) ? '|' . mb_strtolower($it['correct']) : '') . ($pairs !== '' ? '|' . mb_strtolower($pairs) : '');
+    }
+
+    /** How a corrected task names the older version it replaces: the correct option (choose), the sentence (word order) or the task text (the rest). Same topic and level. */
+    private static function oldKey(array $it): string
+    {
+        $k = $it['kind'] === 'mcq' ? ($it['correct'] ?? '') : ($it['kind'] === 'order' ? ($it['sentence'] ?? '') : ($it['q'] ?? ''));
+        return $it['skill'] . '|' . $it['level'] . '|' . $it['kind'] . '|' . mb_strtolower(trim((string) $k));
     }
 
     /** What a multiple-choice, word-order or matching task is, apart from its wording ('' for other kinds). */

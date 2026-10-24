@@ -603,6 +603,25 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Redzam, ka tūlīt notiks: *are going to* + pamatforma."
 },
 {
+"id": "pasp-B11-3a",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "Where ___ the film ___? (film)",
+"answers": [
+[
+"was"
+],
+[
+"filmed"
+]
+],
+"why": "Question: *Where* + *was* + subject + past participle.",
+"hints": [],
+"why_lv": "Jautājums: *Where + was* + teik. priekšmets + 3. forma."
+},
+{
 "id": "ppp-B11-3a",
 "skill": "present_perfect_passive",
 "level": "B1.1",
@@ -1070,6 +1089,22 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "ct-B22-2a",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+"correct": "A is about the past (you did not ask). B is about now or the future.",
+"wrong": [
+"A is about now. B is about the past.",
+"Both are about the past.",
+"There is no difference."
+],
+"why": "Third conditional = past, unreal. Second conditional = present or future, unreal.",
+"wrong_why": {}
+},
+{
 "id": "ct-B22-3a",
 "skill": "cond_third",
 "level": "B2.2",
@@ -1326,6 +1361,54 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*Whoever* + verb = it does not matter who.",
 "hints": []
+},
+{
+"id": "ct-B22-4a-r2",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence needs editing for standard formal written English?",
+"correct": "If I'd have known about the traffic, I would've left earlier.",
+"wrong": [
+"If I'd known about the traffic, I would've left earlier.",
+"If I had known about the traffic, I would have left earlier.",
+"Had I known about the traffic, I would have left earlier."
+],
+"why": "*If I'd have known* is a common mistake. In the if-part use had + past participle: *If I'd known.*",
+"wrong_why": {}
+},
+{
+"id": "ca-C11-4a-r2",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence does NOT express this warning: we need to hurry to avoid missing the flight?",
+"correct": "Unless you don't hurry, we will miss the flight.",
+"wrong": [
+"Unless you hurry, we will miss the flight.",
+"If you don't hurry, we will miss the flight.",
+"We will miss the flight unless you hurry."
+],
+"why": "*Unless you hurry* gives the intended condition. *Unless you do not hurry* changes its meaning. The issue here is the intended warning, not a universal ban on negatives after *unless*.",
+"wrong_why": {}
+},
+{
+"id": "var-ca-c11-order-01",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "order",
+"q": "Make an inverted third conditional. Start with Had I.",
+"why": "*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.",
+"sentence": "had I known I would have called you",
+"answers": [
+[
+"had I known I would have called you"
+]
+],
+"display_answer": "Had I known, I would have called you."
 }
 ]
 EF_JSON_END

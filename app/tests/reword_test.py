@@ -73,4 +73,20 @@ r = t.api("teacher/items-import", {"csv": M2}); check("corrected wrong options: 
 t.api("teacher/items-import", {"csv": M2, "confirm": True})
 cur = [x for k in ("draft", "approved") for x in t.api("teacher/items")["items"][k] if "Water ___ at zero" in json.dumps(x)]
 check("the option was replaced in the one task", len(cur) == 1 and "will freeze" not in json.dumps(cur[0]) and "freezing" in json.dumps(cur[0]), cur)
+# a corrected task of any type retires the older version it names (the old correct option, sentence or task text)
+def rrow(typ, task, correct, wrong, repl): return 'Used to and be used to,B1.2,%s,"%s","%s",%s,Used to is for past habits.,Used to ir pagātnes ieradumiem.,3,"%s"\n' % (typ, task, correct, wrong, repl)
+HR = HEAD.strip() + ",replaces\n"
+OLDS = HR + rrow("order", "Put the words in order.", "when i was a child we would visit my grandparents every sunday", "", "") \
+    + rrow("mcq", "Choose the correct option: When we were children, we ___ play in the river.", "would", "were used to | got used to | are used to", "") \
+    + rrow("text", "Rewrite with would: When I was little, we used to visit the zoo.", "When I was little, we would visit the zoo.", "", "")
+NEWS = HR + rrow("order", "Put the words in order.", "when i was a child we used to visit my grandparents every sunday", "", "when i was a child we would visit my grandparents every sunday") \
+    + rrow("mcq", "Choose the correct option: When we were children, we ___ play in the river.", "used to", "are used to | get used to | use to", "would") \
+    + rrow("text", "Rewrite with used to: When I was little, we visited the zoo.", "When I was little, we used to visit the zoo.", "", "Rewrite with would: When I was little, we used to visit the zoo.")
+t.api("teacher/items-import", {"csv": OLDS, "confirm": True})
+r = t.api("teacher/items-import", {"csv": NEWS})
+check("three corrected tasks: all new, each says it replaces an older one", r["ok"] == 3 and sum(1 for x in r["rows"] if any("Replaces an older" in w for w in x["warnings"])) == 3, r)
+t.api("teacher/items-import", {"csv": NEWS, "confirm": True})
+lst = t.api("teacher/items")["items"]; act = json.dumps([x for k in ("draft", "approved") for x in lst[k]])
+check("the old order, choose and typed versions are retired; the new ones are active", "we would visit my grandparents" not in act and "we used to visit my grandparents" in act and "Rewrite with would" not in act and "Rewrite with used to" in act and len(lst["retired"]) >= 3, len(lst["retired"]))
+r = t.api("teacher/items-import", {"csv": NEWS}); check("the same corrected file again: nothing new, nothing replaced twice", r["ok"] == 0 and r["same"] == 3 and r["bad"] == 0, r)
 print("ALL PASS" if ok else "SOME FAILED"); sys.exit(0 if ok else 1)

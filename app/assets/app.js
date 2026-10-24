@@ -251,7 +251,7 @@
         }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
       }, Math.max(0, 1300 - (Date.now() - shownAt)));
     } },
-      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name ', h('span', { class: 'muted', style: 'font-weight:400' }, '(optional)')), nick),
+      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name'), nick),
       h('div', { 'aria-hidden': 'true', style: 'position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden' }, h('label', { for: 'website' }, 'Leave this empty'), trap), // a trap for bots
       errBox,
       h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Continue as guest'),
@@ -772,7 +772,7 @@
       }));
       holder.replaceChildren(
         h('div', { class: 'picker-group' }, h('h3', null, 'Level'), levelRow),
-        h('div', { class: 'picker-group' }, h('h3', null, 'Topics', ' ', h('small', { class: 'muted' }, 'optional')), h('div', null, state.meta.areas.map(group))),
+        h('div', { class: 'picker-group' }, h('h3', null, 'Topics'), h('div', null, state.meta.areas.map(group))),
         h('div', { class: 'picker-group' }, h('h3', null, 'Questions'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of questions' }, [10, 15, 20].map(function (n) {
             return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, String(n)));

@@ -6,7 +6,7 @@ APP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 bad = []
 rows = []
 # matching tasks that the "could the cards be swapped?" net flags but that were read and are unambiguous: the cards start or end alike, but each card's meaning decides
-REVIEWED = ("If I had gone, I would have met her.", "Tom ate the pizza. (who?)", "The bridge is being repaired.", "When I arrived, she had left.", "The new phone is much faster.", "No entry", "If you don't eat,")
+REVIEWED = ("If I had gone, I would have met her.", "Tom ate the pizza. (who?)", "The bridge is being repaired.", "When I arrived, she had left.", "The new phone is much faster.", "No entry", "If you don't eat,", "It makes me feel bored.")
 for f in sorted(glob.glob(os.path.join(APP, "..", "docs", "task-drafts", "*.csv"))):
     for n, r in enumerate(csv.DictReader(open(f, encoding="utf-8-sig")), 2):
         rows.append((os.path.basename(f), n, r))

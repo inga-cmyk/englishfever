@@ -114,12 +114,13 @@ check("B1 with no topic: a mix of several topics", len({i["skill"] for i in seen
 check("A1 has no questions yet: said plainly", run_levels(["A1"], [])[0]["_status"] == 404)
 
 # the eight B1 topics (used to, articles, quantity, relative clauses, time clauses, question tags, subject / object questions, verb patterns)
-NEW8 = ["used_to", "articles", "quantity", "relative_clauses", "time_clauses", "question_tags", "subject_object_q", "verb_patterns"]
+NEW8 = ["used_to", "articles", "quantity", "relative_clauses", "time_clauses", "question_tags", "subject_object_q", "verb_patterns",
+        "more_modals", "passive_modals", "causative", "two_objects", "adj_ed_ing", "adj_order", "adverbs", "so_such", "indefinite_pronouns"]   # the second batch: nine more
 live = {x["id"]: x for x in learner.api("meta")["skills"]}
-check("the eight new B1 topics are live once their questions are approved, each with a rule card in both languages", all(i in live and live[i].get("rule") and live[i].get("rule_lv") for i in NEW8), [i for i in NEW8 if i not in live])
+check("the seventeen new topics are live once their questions are approved, each with a rule card in both languages", all(i in live and live[i].get("rule") and live[i].get("rule_lv") for i in NEW8), [i for i in NEW8 if i not in live])
 cnt = learner.api("meta")["skill_counts"]
 check("each new topic has at least 25 questions", all(sum(cnt.get(i, {}).values()) >= 25 for i in NEW8), {i: sum(cnt.get(i, {}).values()) for i in NEW8})
-check("the new areas are in the topic list", {"nouns", "clauses", "questions", "patterns"} <= {a["id"] for a in learner.api("meta")["areas"]})
+check("the new areas are in the topic list", {"nouns", "clauses", "questions", "patterns", "adjectives"} <= {a["id"] for a in learner.api("meta")["areas"]})
 for i in NEW8:
     st, seen = run_levels(["B1"], [i])
     check("a B1 session on " + i + " starts and stays on that topic", st["_status"] == 200 and seen and all(q["skill"] == i for q in seen), (st["_status"], i))

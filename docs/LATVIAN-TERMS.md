@@ -32,6 +32,20 @@ New terms in the eight B1 topics (rule cards and drafts), **not yet checked by a
 | Subject and object questions | **jautājums par teikuma priekšmetu / par papildinātāju**, **jautājamais vārds** | subject question, object question, question word |
 | Verb patterns | **darbības vārds ar -ing**, **to + pamatforma**, **prievārds** | verb + -ing, to + base verb, preposition |
 
+New terms in the nine topics of the second batch, **not yet checked by a Latvian teacher**; please confirm or replace:
+
+| Used in | Term | English |
+|---|---|---|
+| More modals | **modālais darbības vārds**, **atļauts**, **nav vajadzības**, **esmu pārliecināts** | modal verb, allowed, not necessary, I am sure |
+| Passive with modals | **modālais darbības vārds + be + 3. forma** (with the standard *ciešamā kārta*) | modal + be + 3rd form |
+| Causative | **kāds to dara mūsu vietā** (described, no standard term; the English name *causative* is not used with learners) | someone does it for us |
+| Verbs with two objects | **papildinātājs** (already in use), **cilvēks + lieta** | object, person + thing |
+| -ed or -ing adjectives | **kas izraisa sajūtu / kā cilvēks jūtas** (described) | what causes the feeling / how a person feels |
+| Adjective order | **viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls** | opinion, size, age, shape, colour, origin, material |
+| Adverbs | **veida / biežuma / pakāpes apstākļa vārds** (the card says *Veids / Biežums / Pakāpe*) | adverb of manner / frequency / degree |
+| So and such | **sekas** | result |
+| Someone, anything, nobody | **nenoteiktie vietniekvārdi** is not used on the card (the words themselves are shown); **dubultais noliegums** is not named either | indefinite pronouns, double negative |
+
 ## Standard terms already in use (checked, no change)
 
 darbības vārds · noliegums · jautājums · vārdu secība · netiešā runa / tiešā runa · palīgdarbības vārds · palīgteikums · laika palīgteikums · papildinātājs · vienskaitlis / daudzskaitlis · tagadne / pagātne / nākotne

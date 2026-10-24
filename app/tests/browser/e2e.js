@@ -25,7 +25,7 @@ const OUT = __dirname + '/shots/';
 
   const nick = 'Guest ' + Math.floor(Math.random() * 90000 + 10000);
   const wtxt = await page.evaluate(() => document.body.innerText);
-  for (const needle of ['Registered at englishfever.com?', 'Continue with my account', 'Try it as a guest', 'Your name', '(optional)', 'Continue as guest', 'Create a free account']) if (!wtxt.includes(needle)) errors.push('welcome page misses: ' + needle);
+  for (const needle of ['Registered at englishfever.com?', 'Continue with my account', 'Try it as a guest', 'Your name', 'Continue as guest', 'Create a free account']) if (!wtxt.includes(needle)) errors.push('welcome page misses: ' + needle);
   if (/Remember it|teacher can help|do not use your real name/i.test(wtxt)) errors.push('old long hint texts still on the welcome page');
   await page.fill('#nick', nick);
   await page.click('button[type=submit]');

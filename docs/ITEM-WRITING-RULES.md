@@ -43,3 +43,4 @@
 | Latvian words marked as English, or old terms (*pasīvs*, *divdabis*) | `latvian_lint.py` |
 | An explanation cut to one character, or missing | `draft_rules_test`: length check; `drafts_test` |
 
+| A `;` inside a matching pair (it separates the pairs) | `drafts_test` / `tasks_test`: the importer rejects the row |

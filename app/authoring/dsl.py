@@ -35,6 +35,9 @@ ABBR = {
     "rep_statements": "rs", "rep_questions": "rq", "rep_verbs": "rv", "ind_polite": "ip", "ind_advanced": "ia",
 }
 
+import b1_topics as _b1  # noqa: E402
+ABBR.update(_b1.ABBR_NEW)   # abbreviations for the topics whose tasks are added on the Tasks page
+
 
 def _add(kind, skill, lv, bloom, **kw):
     assert skill in ABBR, skill

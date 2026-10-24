@@ -1,9 +1,13 @@
 """Writes docs/task-drafts/b1-new-review.md: every new B1 question in readable form (run after b1_new_1/2/3.py)."""
 import csv, collections, os
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-out = ["# New B1 topics: all questions to read before importing", "", "Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each line is one question as the learner sees it. **✔** = the correct answer (or all accepted answers), **✗** = the wrong options. The text after the dash is the explanation shown after the answer (the Latvian version is in the CSV). Levels are the internal half-levels: learners see A2 and B1.", ""]
+import sys
+BATCHES = {"1": (("b1-new-1.csv", "b1-new-2.csv", "b1-new-3.csv"), "b1-new-review.md", "# New B1 topics: all questions to read before importing", "Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`."),
+           "2": (("b1-new-4.csv", "b1-new-5.csv"), "b1-new-review-2.md", "# More new topics (second batch): all questions to read before importing", "Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causative, verbs with two objects, -ed or -ing adjectives) and `b1-new-5.csv` (adjective order, adverbs, so and such, someone / anything / nobody).")}
+FILES, OUTNAME, TITLE, INTRO = BATCHES[sys.argv[1] if len(sys.argv) > 1 else "1"]
+out = [TITLE, "", INTRO + " Each line is one question as the learner sees it. **✔** = the correct answer (or all accepted answers), **✗** = the wrong options. The text after the dash is the explanation shown after the answer (the Latvian version is in the CSV). Levels are the internal half-levels: learners see A2 and B1.", ""]
 by = collections.OrderedDict()
-for f in ("b1-new-1.csv", "b1-new-2.csv", "b1-new-3.csv"):
+for f in FILES:
     for r in csv.DictReader(open(os.path.join(D, f), encoding="utf-8-sig")):
         by.setdefault(r["topic"], []).append(r)
 kind = {"mcq": "choose", "gap": "type a word", "bank": "drag the word", "text": "type the sentence", "order": "drag the words", "match": "match"}
@@ -22,5 +26,5 @@ for topic, rows in by.items():
             else: body = f"✔ {ans}"
             out.append(f"- [{kind[t]}] **{q}**   {body}  — {r['explanation shown to learner'].replace('*', '')}")
         out.append("")
-open(os.path.join(D, "b1-new-review.md"), "w", encoding="utf-8").write("\n".join(out))
+open(os.path.join(D, OUTNAME), "w", encoding="utf-8").write("\n".join(out))
 print(len(out), "lines")

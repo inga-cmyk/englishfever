@@ -21,6 +21,7 @@ Import the files **one at a time, in this order**. For each: *Choose file* → *
 3. `a2-extras-1.csv`, `a2-big-1.csv`.
 4. `b1-upgrades-1.csv`, `b1-tenses-1.csv`, `b1-tenses-2.csv`, `b1-passives-1.csv`, `b1-cond-rep-1.csv`.
 5. The eight new B1 topics: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Read `b1-new-review.md` first. They need the app update (the topics, areas and rule cards are in the code); until then the importer says *Unknown topic*.
+6. The nine more topics: `b1-new-4.csv`, `b1-new-5.csv`. Read `b1-new-review-2.md` first. Same rule: upload the app update first, then import.
 **Corrected files (plain instructions):** if you already imported the earlier files, import the new ones the same way, one at a time. Tasks that are already there stay untouched; tasks whose wording changed (about 110) are *reworded in place* (same ID, same status, learners' answers stay with them); the check line says e.g. *12 new · 40 reworded · 90 already there*. Press *Add ... / Reword ...*. About 20 matching tasks were rewritten because two endings could fit two beginnings; their rows say *Replaces an older version* and the old version is retired automatically. Nothing needs to be retired by hand.
 Latvian text: learners who choose Latvian see it. Approve the English now if you like; have a Latvian teacher read the Latvian columns soon (terms: `LATVIAN-TERMS.md`).
 

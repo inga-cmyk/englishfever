@@ -36,12 +36,14 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 72, 'Unexpected correction count');
+check(count($retired) === 73, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);
 check($grade('cf-B11-3b-r2', ['arrive'])['correct'], 'arrive must fit');
 check(!$grade('cf-B11-3b-r2', ['get'])['correct'], 'get at must not pass');
+check($grade('ct-B22-3a-r2', ["hadn't been driving", "wouldn't have lost"])['correct'], 'hadn\'t been driving is also correct');
+check($grade('ct-B22-3a-r2', ["hadn't driven", "wouldn't have lost"])['correct'], 'hadn\'t driven stays correct');
 check(!$grade('cf-B11-3b-r2', ['reach'])['correct'], 'reach at must not pass');
 check($grade('pp-B12-3a', ['have', 'been studying'])['correct'], 'Per-blank alternatives regressed');
 check($grade('ps-A21-6a-r2', 'She has breakfast every day.')['correct'], 'has rejected');

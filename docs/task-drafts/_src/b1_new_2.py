@@ -46,6 +46,24 @@ P.text("B1.2", "Join with whose: I met a man. His dog can open doors.", ["I met 
 P.text("B1.2", "Join the two sentences: My uncle lives in Spain. He is a chef.", ["My uncle, who lives in Spain, is a chef.", "My uncle, who is a chef, lives in Spain."], b=5)
 P.text("B1.1", "Join the two sentences: This is the town. I was born there.", ["This is the town where I was born.", "This is the town in which I was born."], b=5)
 P.text("B1.2", "Join the two sentences: She passed her driving test. This surprised everyone.", ["She passed her driving test, which surprised everyone."], b=5)
+for row in rows:
+    if row[2] == 'text' and 'She passed her driving test. This surprised everyone.' in row[3]:
+        row[6] = "*Which* refers to the fact that she passed her driving test. Put a comma before *which* to separate this extra information."
+        row[7] = "*Which* attiecas uz faktu, ka viņa nokārtoja braukšanas eksāmenu. Pirms *which* liek komatu, lai atdalītu šo papildu informāciju."
+    if row[2] == 'mcq' and row[4] == 'The book which I bought it was boring.':
+        row[6] = "*Which* already represents the object of *bought*. Do not repeat it with *it*: *The book which I bought was boring.*"
+        row[7] = "*Which* jau aizstāj darbības vārda *bought* papildinātāju. To neatkārto ar *it*: *The book which I bought was boring.*"
+
+# Replace the old rule-only matching task: comma + which can refer to a noun
+# OR to a preceding statement. The actual sentence determines its reference.
+P.match("B1.2", "Match each sentence with its meaning.", [
+    ("The woman who called is my boss.", "The clause identifies which woman we mean."),
+    ("Riga, which is Latvia's capital, is on the Daugava.", "The clause adds information about a named city."),
+    ("I met a driver whose car was stolen.", "The clause tells us that the car belonged to the driver."),
+    ("She passed her test, which surprised everyone.", "Her passing the test surprised everyone.")],
+    why=("After a comma, *which* may refer to a noun or to the preceding statement. Read the whole sentence to identify its reference.",
+         "Pēc komata *which* var attiekties uz lietvārdu vai iepriekšējo izteikumu. Lai noteiktu nozīmi, izlasi visu teikumu."))
+replaces("a clause without commas = tells us which one; a clause with commas = gives extra information; whose = shows who owns something; which after a comma = refers to the whole sentence before it")
 P.text("B1.2", "Join the two sentences: I met a man. His dog can open doors.", ["I met a man whose dog can open doors."], b=5)
 P.match("B1.1", "Match each word with what it describes.", [("who", "a person"), ("which", "a thing"), ("where", "a place"), ("whose", "belongs to someone")])
 

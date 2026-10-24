@@ -29,15 +29,16 @@ foreach ($published as $original) {
 $retired = require __DIR__ . '/../content/retired.php';
 foreach ($retired as $old) {
     check(!isset($active[$old['id']]), 'Retired question entered the active pool');
-    $next = preg_match('/^(.*)-r(\d+)$/', $old['id'], $m) ? $m[1] . '-r' . ($m[2] + 1) : $old['id'] . '-r2';   // a second correction of a published item takes the next number
-    $replacement = Content::item($next);
+    $stem = preg_replace('/-r\d+$/', '', $old['id']); $rev = preg_match('/-r(\d+)$/', $old['id'], $m) ? (int) $m[1] : 1;
+    $replacement = null;   // the active version of the same question with a higher revision number (numbers can skip when intermediate versions were recorded)
+    foreach ($active as $aid => $a) if (preg_match('/^' . preg_quote($stem, '/') . '-r(\d+)$/', $aid, $mm) && (int) $mm[1] > $rev) $replacement = $a;
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
         check($old[$key] === $replacement[$key], "Correction changed $key");
     }
 }
 check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 99, 'Unexpected correction count');
+check(count($retired) === 105, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

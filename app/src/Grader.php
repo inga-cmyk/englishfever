@@ -104,6 +104,18 @@ final class Grader
                 $near = false;
                 if ($ok && $item['kind'] === 'text') {
                     $notes = array_merge($notes, self::capitalNotes($given[0], $blanks[0][0]));
+                    // Keep punctuation tolerance, but teach a supplementary which-clause's comma.
+                    // Inspect the matched answer, not just the model: another accepted version
+                    // may have a different structure and need no comma before which.
+                    foreach ($blanks[0] as $accepted) {
+                        if (self::norm($given[0]) !== self::norm($accepted)) continue;
+                        if (preg_match('/,\s*which\b/iu', $accepted)
+                            && preg_match('/\bwhich\b/iu', $given[0])
+                            && !preg_match('/,\s*which\b/iu', $given[0])) {
+                            $notes[] = 'Add a comma before which to separate the extra-information clause.';
+                        }
+                        break;
+                    }
                 }
                 if (!$ok) {
                     $notes = [];

@@ -156,7 +156,11 @@ class Topic:
     def gap(self, lv, q, ans, why=None, b=3):
         self._uniq(q); w = self._why("gap", why); gp(self.t, lv, b, q, ans, w[0], w[1])
     def text(self, lv, q, ans, why=None, b=None):
-        self._uniq(q); w = self._why("text", why); tx(self.t, lv, b or self.tb, q, ans, w[0], w[1])
+        self._uniq(q)
+        w = self._why("text", why)
+        if not why and re.match(r"^(Question|Negative)", w[0]) and not re.match(r"^(Make (it )?(negative|a question)|Make the sentence negative|Ask|Add a question tag)", q):
+            w = self.ex.get("gap") or w   # the default text explanation is about questions and negatives: a join or rewrite task gets the topic's general rule
+        tx(self.t, lv, b or self.tb, q, ans, w[0], w[1])
     def mcq(self, lv, q, ok, wrong, why=None, b=None):
         self._uniq(q); w = self._why("mcq", why); mc(self.t, lv, b or self.mb, q, ok, wrong, w[0], w[1])
     def match(self, lv, q, pairs, why=None, b=None):

@@ -1254,6 +1254,26 @@
 "wrong_why": {}
 },
 {
+"id": "rs-B21-3a",
+"skill": "rep_statements",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'You must finish by Friday,' my boss said.",
+"answers": [
+[
+"My boss said I had to finish by Friday.",
+"My boss said that I had to finish by Friday.",
+"My boss told me I had to finish by Friday.",
+"My boss told me that I had to finish by Friday.",
+"My boss said I must finish by Friday.",
+"My boss told me I must finish by Friday."
+]
+],
+"why": "*must* can become *had to.* It can also stay *must* when the duty is still there.",
+"hints": []
+},
+{
 "id": "rq-B12-3a",
 "skill": "rep_questions",
 "level": "B1.2",
@@ -1293,6 +1313,28 @@
 ]
 ],
 "why": "*deny* + -ing, or *deny* + *that* + clause.",
+"hints": []
+},
+{
+"id": "rv-C12-3a",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report with a reporting verb: 'You really should see a doctor about that cough,' my sister said.",
+"answers": [
+[
+"My sister advised me to see a doctor about that cough.",
+"My sister urged me to see a doctor about that cough.",
+"My sister told me to see a doctor about that cough.",
+"My sister encouraged me to see a doctor about that cough.",
+"My sister recommended that I see a doctor about that cough.",
+"My sister recommended that I should see a doctor about that cough.",
+"My sister suggested that I see a doctor about that cough.",
+"My sister suggested that I should see a doctor about that cough."
+]
+],
+"why": "*advise / urge / tell / encourage* + person + *to* + base verb, or *recommend / suggest* + *that* + subject + base verb.",
 "hints": []
 },
 {

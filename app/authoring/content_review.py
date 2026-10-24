@@ -219,6 +219,15 @@ def revise(original):
     fix('ct-B22-3a', "The continuous form is also correct: hadn't been driving (reported by a learner).",
         answers=[["hadn't been driving", "had not been driving", "hadn't driven", "had not driven"], ["wouldn't have lost", "would not have lost", "'d not have lost"]],
         why="Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.")
+    more('rv-C12-3a', 'Reported by a learner: suggest / recommend / advise + -ing and said / told that + should are also correct reports of this sentence.',
+         ['My sister suggested seeing a doctor about that cough.', 'My sister suggested I see a doctor about that cough.', 'My sister suggested I should see a doctor about that cough.',
+          'My sister recommended seeing a doctor about that cough.', 'My sister recommended I see a doctor about that cough.', 'My sister recommended I should see a doctor about that cough.',
+          'My sister advised seeing a doctor about that cough.', 'My sister advised that I see a doctor about that cough.', 'My sister advised that I should see a doctor about that cough.',
+          'My sister said I should see a doctor about that cough.', 'My sister said that I should see a doctor about that cough.',
+          'My sister told me I should see a doctor about that cough.', 'My sister told me that I should see a doctor about that cough.'],
+         why='*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.')
+    more('rs-B21-3a', 'Accept that after said / told with must.',
+         ['My boss said that I must finish by Friday.', 'My boss told me that I must finish by Friday.'])
     more('cm-C11-3a', 'Accept the inverted clause in second position.',
          ["I wouldn't be in this mess now had I listened to my accountant.", "I'd not be in this mess now had I listened to my accountant."])
     more('ia-C12-3a', 'Accept the wh-ever clause after the instruction.',

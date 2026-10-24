@@ -6638,7 +6638,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rs-B21-3a",
+"id": "rs-B21-3a-r2",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 3,
@@ -6651,7 +6651,9 @@ return json_decode(<<<'EF_JSON_END'
 "My boss told me I had to finish by Friday.",
 "My boss told me that I had to finish by Friday.",
 "My boss said I must finish by Friday.",
-"My boss told me I must finish by Friday."
+"My boss told me I must finish by Friday.",
+"My boss said that I must finish by Friday.",
+"My boss told me that I must finish by Friday."
 ]
 ],
 "why": "*must* can become *had to.* It can also stay *must* when the duty is still there.",
@@ -7327,7 +7329,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a",
+"id": "rv-C12-3a-r2",
 "skill": "rep_verbs",
 "level": "C1.2",
 "bloom": 3,
@@ -7342,10 +7344,23 @@ return json_decode(<<<'EF_JSON_END'
 "My sister recommended that I see a doctor about that cough.",
 "My sister recommended that I should see a doctor about that cough.",
 "My sister suggested that I see a doctor about that cough.",
-"My sister suggested that I should see a doctor about that cough."
+"My sister suggested that I should see a doctor about that cough.",
+"My sister suggested seeing a doctor about that cough.",
+"My sister suggested I see a doctor about that cough.",
+"My sister suggested I should see a doctor about that cough.",
+"My sister recommended seeing a doctor about that cough.",
+"My sister recommended I see a doctor about that cough.",
+"My sister recommended I should see a doctor about that cough.",
+"My sister advised seeing a doctor about that cough.",
+"My sister advised that I see a doctor about that cough.",
+"My sister advised that I should see a doctor about that cough.",
+"My sister said I should see a doctor about that cough.",
+"My sister said that I should see a doctor about that cough.",
+"My sister told me I should see a doctor about that cough.",
+"My sister told me that I should see a doctor about that cough."
 ]
 ],
-"why": "*advise / urge / tell / encourage* + person + *to* + base verb, or *recommend / suggest* + *that* + subject + base verb.",
+"why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
 "hints": []
 },
 {

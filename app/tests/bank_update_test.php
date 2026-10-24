@@ -37,7 +37,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 78, 'Unexpected correction count');
+check(count($retired) === 80, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);
@@ -45,6 +45,9 @@ check($grade('cf-B11-3b-r2', ['arrive'])['correct'], 'arrive must fit');
 check(!$grade('cf-B11-3b-r2', ['get'])['correct'], 'get at must not pass');
 check($grade('ca-C11-4a-r3', 'Unless you hurry, we will miss the flight.')['correct'], 'the same-meaning option is the key');
 check(!$grade('ca-C11-4a-r3', 'If you hurry, we will miss the flight.')['correct'], 'the reversed option is wrong');
+check($grade('rv-C12-3a-r2', 'my sister suggested seeing a doctor about that cough.')['correct'], 'suggested seeing is a correct report (learner report)');
+check($grade('rv-C12-3a-r2', 'My sister said I should see a doctor about that cough.')['correct'], 'said I should see is a correct report');
+check(!$grade('rv-C12-3a-r2', 'My sister suggested to see a doctor about that cough.')['correct'], 'suggested to see is not');
 check(Content::item('var-ca-c11-order-01-r2')['sentence'] === 'had I known about the delay I would have called you', 'the inverted conditional has its object');
 check(!in_array('Both are about the past.', Content::item('ct-B22-2a-r2')['wrong'], true), 'the illogical option is gone');
 check(Content::item('pasp-B11-3a-r2')['q'] === 'Where ___ this photo ___? (take)', 'the film sentence is replaced');

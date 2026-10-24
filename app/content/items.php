@@ -2325,12 +2325,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "ppf-B12-1a",
+"id": "ppf-B12-1a-r2",
 "skill": "past_perfect",
 "level": "B1.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "When we arrived, the film ___ already ___.",
+"q": "The film began at 7.00. We arrived at 7.15. When we arrived, the film ___ already ___.",
 "correct": "had ... started",
 "wrong": [
 "has ... started",
@@ -4989,7 +4989,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Will* ir drošs. *Might, may* un *could* rāda, ka rezultāts ir iespējams, bet nav drošs."
 },
 {
-"id": "cf-B12-3a-r2",
+"id": "cf-B12-3a-r3",
 "skill": "cond_first",
 "level": "B1.2",
 "bloom": 3,
@@ -5003,15 +5003,15 @@ return json_decode(<<<'EF_JSON_END'
 "You won't improve unless you practice."
 ]
 ],
-"why": "*Unless* means *if ... not*. After *unless* we use the present simple (no negative).",
+"why": "*Unless* means *if ... not*, so the clause after it is usually positive: *Unless you practise, you won't improve.*",
 "hints": [
 [
 "unless you don't",
-"After *unless* we do not use a negative: *Unless you practise, ...*",
-"Pēc *unless* nelieto noliegumu: *Unless you practise*, ..."
+"*Unless* already means *if ... not*, so the verb after it is normally positive: *Unless you practise, ...*",
+"*Unless* jau nozīmē *if ... not*, tāpēc darbības vārds aiz tā parasti ir apgalvojošā formā: *Unless you practise*, ..."
 ]
 ],
-"why_lv": "*Unless* nozīmē *if* ... *not*. Pēc *unless* lieto Present Simple (bez noliegumu)."
+"why_lv": "*Unless* nozīmē *if ... not*, tāpēc teikums aiz tā parasti ir apgalvojošs: *Unless you practise, you won't improve.*"
 },
 {
 "id": "cf-B12-4a-r3",
@@ -6367,7 +6367,7 @@ return json_decode(<<<'EF_JSON_END'
 }
 },
 {
-"id": "rs-B11-2a",
+"id": "rs-B11-2a-r2",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 2,
@@ -6391,8 +6391,8 @@ return json_decode(<<<'EF_JSON_END'
 "She said she could come."
 ]
 ],
-"why": "Reported speech goes one step back: *work → worked, am working → was working, finished → had finished, can → could.*",
-"why_lv": "Netiešā runa iet vienu soli atpakaļ: *work → worked, am working → was working, finished → had finished, can → could*."
+"why": "With a past reporting verb the tense often goes one step back: *work → worked, am working → was working, finished → had finished, can → could.* It is not always needed, for example when the fact is still true.",
+"why_lv": "Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *work → worked, am working → was working, finished → had finished, can → could*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess."
 },
 {
 "id": "rs-B11-3a",
@@ -6641,17 +6641,17 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rs-B21-2a",
+"id": "rs-B21-2a-r2",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "'The Earth goes round the Sun,' the teacher said. Which report is also correct, and why?",
-"correct": "The teacher said the Earth goes round the Sun, because it is always true.",
+"q": "'The Earth goes round the Sun,' the teacher said. Which version is also correct?",
+"correct": "Report: The teacher said the Earth goes round the Sun. Reason: it is always true, so the tense can stay.",
 "wrong": [
-"It must be 'went', because said is in the past.",
-"It must be 'had gone'.",
-"It is wrong, because reported speech always changes the tense."
+"Report: The teacher said the Earth went round the Sun. Reason: it must go back, because said is in the past.",
+"Report: The teacher said the Earth had gone round the Sun. Reason: it must go back two steps.",
+"Report: The teacher said the Earth goes round the Sun. Reason: this is wrong, because reported speech always changes the tense."
 ],
 "why": "When the fact is still true, the tense does not have to go back.",
 "wrong_why": {}
@@ -7782,7 +7782,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ip-B21-3a-r2",
+"id": "ip-B21-3a-r3",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 3,
@@ -7815,11 +7815,11 @@ return json_decode(<<<'EF_JSON_END'
 "Would you tell me why the order did not arrive?"
 ]
 ],
-"why": "Polite phrase + *why* + subject + verb (past simple, no *did*).",
+"why": "Polite phrase + *why* + subject + verb in statement order: *why the order didn't arrive*, not *why didn't the order arrive*.",
 "hints": [
 [
 "\\bdid\\b",
-"No *did* in the indirect part: *... why the order didn't arrive.*"
+"In the indirect part use statement order: *... why the order didn't arrive.*"
 ]
 ]
 },
@@ -7996,7 +7996,7 @@ return json_decode(<<<'EF_JSON_END'
 }
 },
 {
-"id": "ia-C11-2a",
+"id": "ia-C11-2a-r2",
 "skill": "ind_advanced",
 "level": "C1.1",
 "bloom": 2,
@@ -8006,7 +8006,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "Because whether is more polite.",
 "Because the sentence is in the past.",
-"Because if is not a word."
+"Because if can only start a conditional clause, never a noun clause."
 ],
 "why": "after prepositions: depends *on whether*, talk *about whether.*",
 "wrong_why": {}

@@ -26,7 +26,8 @@ BANK_CHIPS = {
     "___ the winner ___ announced yet?": ["Has", "been", "Did", "being"],
     "I ___ the report on Monday, but I ___ it to my boss until Friday.": ["finished", "didn't send", "finish", "send", "don't send"],
 }
-BANK_TASK = {"She ___ a cake and ___ it to school.": "She ___ a cake and ___ it to her friend."}
+BANK_TASK = {"She ___ a cake and ___ it to school.": "She ___ a cake and ___ it to her friend.",
+             "Complete with can or can't: Dan is ten years old, so he ___ drive a car.": "Complete with can or can't: Dan has never learned to drive, so he ___ drive a car."}
 
 MATCH = [
     ([("I was cooking", "dinner in the kitchen."), ("They were playing", "tennis in the park."), ("She was reading", "a newspaper on the sofa."), ("We were watching", "a film on TV.")],

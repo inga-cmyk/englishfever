@@ -506,6 +506,7 @@ final class Engine
             if (!$placement && $count > 0) { // over its share so far: less likely; under its share: more likely
                 $grp = self::typeGroup($it);
                 $cost += max(-0.5, min(0.9, 2.0 * (($mixCount[$grp] + 1) / ($served_n + 1) - self::MIX[$grp]))) + ($grp === 'write' ? 0.6 : 0);
+                if ($grp === 'sentence' && $mixCount['sentence'] >= (int) ceil(0.1 * ($served_n + 10))) $cost += 3.0; // typing whole sentences stays at about one in ten, even when other tasks pull the other way
             }
             if ($st['last'] && end($st['last'])['bloom'] === $it['bloom']) $cost += 0.3; // avoid the same thinking level twice in a row
             if (!$placement && !$smart && $count < 3 && $it['level'] !== $ses['level']) $cost += 0.5;

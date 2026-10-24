@@ -65,7 +65,7 @@ RULES = {
     },
     "past_continuous": {
         "form": ["was / were + verb-ing: I was working.", "Negative: wasn't / weren't + verb-ing.",
-                 "Question: Was / Were + subject + verb-ing?", "Plan that did not happen: was / were going to + base verb."],
+                 "Question: Was / Were + subject + verb-ing?", "Past intention: was / were going to + base verb (the context shows whether it happened)."],
         "use": ["An action in progress at a moment in the past.", "A longer action interrupted by a short action (past simple).",
                 "Background in a story."],
         "signals": "at 8 o'clock yesterday, while, when, as",
@@ -184,13 +184,13 @@ RULES.update({
     "rep_statements": {
         "form": ["said / told + (that) + clause: She said (that) she was tired.", "Tenses usually go one step back: am/is → was, work → worked, worked → had worked, will → would, can → could.",
                  "Pronouns and time words change: I → he/she, now → then, today → that day, tomorrow → the next day, here → there.", "tell needs a person: He told me. say does not: He said that ..."],
-        "use": ["Telling someone what another person said.", "If the fact is still true, or you report it at once, the tense can stay: She says she's tired."],
+        "use": ["Telling someone what another person said.", "If the fact is still true, the tense can stay: She said she is tired. Going one step back is usual after a past reporting verb, but it is not always needed."],
         "signals": "said, told, now → then, yesterday → the day before",
         "example": "\"I'm working late,\" he said. → He said he was working late.",
     },
     "rep_questions": {
         "form": ["Yes/no questions: asked + if / whether + subject + verb: She asked if I liked coffee.", "Wh-questions: asked + question word + subject + verb: He asked where I lived.",
-                 "Normal word order, no do / does / did: She asked what I did (not what did I do).", "Requests and orders: told / asked + person + (not) to + base verb: He told me to wait."],
+                 "Statement word order, no do / does / did to invert the question: She asked what I did (not what did I do).", "Requests and orders: told / asked + person + (not) to + base verb: He told me to wait."],
         "use": ["Reporting what someone asked: the tense shifts back (Where do you work? → She asked me where I worked). In indirect questions (Could you tell me where you work?) it does not: only the word order changes.", "Reporting what someone told or asked you to do."],
         "signals": "asked, wondered, wanted to know, told someone to",
         "example": "\"Where do you work?\" → She asked me where I worked.",
@@ -204,16 +204,16 @@ RULES.update({
     },
     "ind_polite": {
         "form": ["Start with: Could you tell me / Do you know / Can you tell me / I wonder.", "Then use statement word order: ... where the station is (not where is the station).",
-                 "No do / does / did in the second part: ... what time the shop opens.", "Yes/no questions: use if or whether: Do you know if she is here?"],
+                 "Do not use do / does / did to invert the second part: ... what time the shop opens.", "Yes/no questions: use if or whether: Do you know if she is here?"],
         "use": ["Asking politely: Could you tell me where ...? The question is a request.", "Talking to strangers, customers and at work.", "A full stop after I wonder ... / I'd like to know ...; a question mark after Could you / Do you know ...", "No tense change: only the word order changes (Where is the station? → Could you tell me where the station is?). In reported questions the tense shifts back (She asked where the station was)."],
         "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
         "example": "Could you tell me where the meeting room is?",
     },
     "ind_advanced": {
-        "form": ["Question word + to + base verb: I don't know what to do. I'm not sure how to start.", "if / whether (+ or not): I can't decide whether to accept.",
-                 "An embedded question can be a subject: What he said surprised me.", "After prepositions: We talked about how to improve the results."],
-        "use": ["The same structure as Could you tell me where ...?, now inside statements and phrases: I don't know what to do. What he said surprised me.", "No tense change: only the word order changes. In reported questions the tense shifts back (She asked what I wanted).", "Reports, emails and formal writing.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
-        "signals": "I wonder, no idea, not sure, it depends on, the question is, whoever, whatever",
+        "form": ["Question word + to + base verb: I don't know what to do. I'm not sure how to start.", "if / whether + subject + verb: I wonder if / whether I should accept. whether + to + base verb: I can't decide whether to accept.",
+                 "An embedded question can be a subject: Whether he will come is still unclear.", "After prepositions: We talked about how to improve the results."],
+        "use": ["The same structure as Could you tell me where ...?, inside statements and phrases: I don't know what to do. Whether he will come is still unclear.", "No tense change: only the word order changes. In reported questions the tense shifts back (She asked what I wanted).", "Reports, emails, formal writing and everyday conversation.", "Uncertainty: no idea, not sure, can't remember, unclear, it depends on."],
+        "signals": "I wonder, no idea, not sure, it depends on, the question is",
         "example": "I have no idea how long the meeting will take.",
     },
 })
@@ -238,7 +238,7 @@ RULES["modal_verbs"] = {
             "should: advice (You should see a doctor).",
             "must / have to: it is necessary, a rule or a duty (You must wear a seat belt. I have to wear a uniform at work). Often both are possible.",
             "mustn't = not allowed. don't have to = not necessary (You mustn't park here. You don't have to pay).",
-            "must has no past or future: use had to / will have to (I had to work late. We will have to leave early)."],
+            "must has no past form for obligation: use had to (I had to work late). In the future we often say will have to (We will have to leave early), but must can also point to the future (You must call me tomorrow)."],
     "signals": "rule, law, allowed, necessary, advice, ability",
     "example": "You must wear a seat belt, but you don't have to wear a hat.",
 }
@@ -248,7 +248,7 @@ RULES["modal_verbs"] = {
 RULES["comparison"] = {
     "form": ["Short adjectives: adjective + -er + than (Rachel is taller than Tom). Superlative: the + adjective + -est (the tallest).",
              "Spelling: big - bigger - the biggest; nice - nicer - the nicest; heavy - heavier - the heaviest.",
-             "Longer adjectives (two or more syllables): more / the most + adjective (more expensive than, the most expensive).",
+             "Most one-syllable adjectives and many two-syllable adjectives ending in -y take -er / -est (heavier, the heaviest). Most longer adjectives, and many other two-syllable ones, take more / the most (more expensive than, the most expensive). Some allow both.",
              "Irregular: good - better - the best; bad - worse - the worst; far - further - the furthest.",
              "as + adjective + as = equal (My phone is as fast as yours). not as ... as = less (This bag is not as heavy as that one)."],
     "use": ["Comparative: compare two things or people. Superlative: one thing compared with all the others in a group (the tallest student in the class).",

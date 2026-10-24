@@ -955,7 +955,7 @@
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Nepieciešamās formas atrastas' : 'Required patterns found') : (lv ? 'Pārbaudi norādītos nosacījumus' : 'Check the required patterns')) : (good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (res.near ? 'Almost – one word to check' : 'Not quite')),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
-      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'Mistake fixed!')));
+      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'An earlier mistake on this topic looks fixed.')));
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
       if (!good && (it.kind === 'gap' || it.kind === 'text')) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
@@ -1114,7 +1114,7 @@
     // real progress only: topics where this session went clearly better than the learner's recent history
     var better = (s.by_skill || []).filter(function (k) { var now = pct(k.correct, k.n); return k.prev_accuracy !== null && k.prev_accuracy !== undefined && k.n >= 3 && now >= k.prev_accuracy + 10; });
     var wins = [];
-    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), plural(fixed, 'old mistake', 'old mistakes') + ' fixed on the way.'));
+    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), plural(fixed, 'earlier mistake', 'earlier mistakes') + ' on these topics look fixed.'));
     better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% → ' + pct(k.correct, k.n) + '%')); });
     if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), plural(s.fixed_total, 'mistake', 'mistakes') + ' fixed so far'));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },

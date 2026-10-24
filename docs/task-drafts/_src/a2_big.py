@@ -258,7 +258,7 @@ P.mcq("A2.2","Choose the correct form: If you ___ ice, it melts.","heat",["will 
 P.mcq("A2.2","Choose the correct form: If the sun ___ , the day gets warmer.","shines",["will shine","shining","would shine"],b=2)
 P.mcq("A2.2","Choose the correct form: Plants ___ if you don't give them water.","die",["will died","dying","dies"],b=2)
 P.mcq("A2.2","Which sentence is always true?","If you drop a glass, it breaks.",["If you drop the glass, I will be angry.","If I drop the glass, I will buy a new one.","If I dropped the glass, I would be sorry."],b=2)
-P.mcq("A2.2","In science class: which sentence is NOT correct?","If you will mix oil and water, they separate.",["If you mix oil and water, they separate.","If you heat water, it boils.","If you cool water enough, it freezes."],"No *will* after *if* in a general truth.",b=4)
+P.mcq("A2.2","In science class: which sentence is NOT correct?","If you will mix oil and water, they separate.",["If you mix oil and water, they separate.","If you heat water, it boils.","If you cool water enough, it freezes."],"In a general truth the *if*-part uses the Present Simple, not *will*.",b=4)
 P.mcq("A2.2","Choose the correct word: ___ you push the button, the door opens.","If",["Unless","Because","Until"],b=2)
 P.match("A2.2","Match each beginning with its ending.",[("If you heat ice,","it melts."),("If you cool water,","it freezes."),("If you drop a glass,","it breaks."),("If you press the light switch,","the light goes on.")],b=2)
 P.match("A2.2","Match each beginning with its ending: feelings and weather.",[("If I eat too much,","I feel sick."),("If it rains,","the roads are wet."),("If I don't sleep,","I'm tired all day."),("If I run fast,","I get hot.")],b=2)
@@ -271,7 +271,7 @@ P.mcq("A2.2","Choose the correct form: If I ___ sad, I listen to music.","feel",
 # ============ First conditional (+31) ============
 P = Topic("First conditional (if + present, will)",
     order=("*If* + Present Simple, *will* + base verb: a possible future.", "*If* + Present Simple, *will* + pamatforma: iespējama nākotne."),
-    bank=("Possible future: *if* + Present Simple, *will* + base verb. No *will* after *if*.", "Iespējama nākotne: *if* + Present Simple, *will* + pamatforma. Pēc *if* nav *will*."),
+    bank=("Possible future: *if* + Present Simple, *will* + base verb. In this *if*-part use the Present Simple, not *will*.", "Iespējama nākotne: *if* + Present Simple, *will* + pamatforma. Šajā *if* daļā lieto Present Simple, nevis *will*."),
     gap=("Possible future: *if* + Present Simple, *will* + base verb.", "Iespējama nākotne: *if* + Present Simple, *will* + pamatforma."),
     text=("Possible future: *if* + Present Simple, *will* + base verb.", "Iespējama nākotne: *if* + Present Simple, *will* + pamatforma."),
     mcq=("Possible future: *if* + Present Simple, *will* + base verb.", "Iespējama nākotne: *if* + Present Simple, *will* + pamatforma."),
@@ -295,7 +295,7 @@ P.text("A2.2","Make it negative: If she comes, I will stay.",["If she doesn't co
 P.mcq("A2.2","Choose the correct form: If we ___ the film, we will tell you about it.","see",["will see","seeing","would see"],b=2)
 P.mcq("A2.2","Choose the correct form: If you ___ now, you'll catch the early train.","leave",["will leave","leaving","would leave"],b=2)
 P.mcq("A2.2","Which sentence is a promise?","If you tell me, I won't tell anyone.",["If you told me, I wouldn't tell anyone.","If I tell you, will you tell me?","I never tell anyone."],b=3)
-P.mcq("A2.2","At the weekend: which sentence is NOT correct?","If it will be sunny, we will go to the beach.",["If it is sunny, we will go to the beach.","We will go to the beach if it is sunny.","If it rains, we'll stay home."],"No *will* after *if*.",b=4)
+P.mcq("A2.2","At the weekend: which sentence is NOT correct?","If it will be sunny, we will go to the beach.",["If it is sunny, we will go to the beach.","We will go to the beach if it is sunny.","If it rains, we'll stay home."],"In this *if*-part use the Present Simple, not *will*.",b=4)
 P.mcq("A2.2","Choose the correct word: ___ you hurry, you will miss the bus.","If you don't",["Unless you","If you won't","When you didn't"],b=3) if False else None
 P.mcq("A2.2","Choose the best ending: If you study every day, ...","you will pass the test.",["you passed the test.","you passing the test.","you pass yesterday."],b=2)
 P.match("A2.2","Match each beginning with its ending: if-sentences.",[("If it rains,","we'll take an umbrella."),("If you're thirsty,","I'll make some tea."),("If she calls,","I'll answer the phone."),("If the shop is open,","we'll buy bread.")],b=2)

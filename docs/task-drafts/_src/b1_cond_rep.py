@@ -38,12 +38,12 @@ P.mcq("B1.1","Choose the correct option: Plants die if they ___ enough light.","
 P.mcq("B1.1","Choose the correct option: ___ you mix red and green paint, you get brown.","If",["Unless","Because","Until"])
 P.mcq("B1.1","Choose the correct option: I get a headache ___ I drink too much coffee.","if",["unless","so","although"])
 P.mcq("B1.1","Which sentence states a general rule?","If you press this key, the page goes down.",["If you pressed this key, the page would go down.","If you had pressed this key, the page would have gone down.","If you press this key tomorrow, the page will go down."])
-P.mcq("B1.1","On a website: which sentence is NOT correct?","If you will click here, the page opens.",["If you click here, the page opens.","When you click here, the page opens.","The page opens if you click here."],"No *will* after *if* in a general truth.",b=4)
-P.mcq("B1.1","In a science book: which sentence is NOT correct?","If metal will get hot, it expands.",["If metal gets hot, it expands.","Metal expands when it gets hot.","If metal gets cold, it shrinks."],"No *will* after *if* in a general truth.",b=4)
+P.mcq("B1.1","On a website: which sentence is NOT correct?","If you will click here, the page opens.",["If you click here, the page opens.","When you click here, the page opens.","The page opens if you click here."],"In a general truth the *if*-part uses the Present Simple, not *will*.",b=4)
+P.mcq("B1.1","In a science book: which sentence is NOT correct?","If metal will get hot, it expands.",["If metal gets hot, it expands.","Metal expands when it gets hot.","If metal gets cold, it shrinks."],"In a general truth the *if*-part uses the Present Simple, not *will*.",b=4)
 # ============ First conditional (B1.1/B1.2) +32 ============
 P = mk("First conditional (if + present, will)",
     ("*If* + Present Simple, *will* + base verb: a possible future.","*If* + Present Simple, *will* + pamatforma: iespējama nākotne."),
-    ("Possible future: *if / unless* + Present Simple, *will* + base verb. No *will* after *if*.","Iespējama nākotne: *if / unless* + Present Simple, *will* + pamatforma. Pēc *if* nav *will*."),
+    ("Possible future: *if / unless* + Present Simple, *will* + base verb. In this *if*-part use the Present Simple, not *will*.","Iespējama nākotne: *if / unless* + Present Simple, *will* + pamatforma. Šajā *if* daļā lieto Present Simple, nevis *will*."),
     ("Possible future: *if / unless* + Present Simple, *will* + base verb. *Unless* = *if not*.","Iespējama nākotne: *if / unless* + Present Simple, *will* + pamatforma. *Unless* = *if not*."),
     ("Possible future: *if / unless* + Present Simple, *will* + base verb.","Iespējama nākotne: *if / unless* + Present Simple, *will* + pamatforma."))
 for i,s in enumerate(["if you call me tomorrow i will explain the new plan","we will miss the train unless we leave right now","if the weather is good we will have the party outside","she'll be very upset if you forget her birthday again","what will you do if you don't get the job","if i finish early i'll join you at the restaurant","unless it stops raining we won't be able to play","you will feel better if you get some fresh air"]): P.order(lv(i,8),s)
@@ -142,7 +142,7 @@ P.mcq("B1.2","At the exam: which sentence is NOT correct?","If I would have stud
 P.mcq("B1.2","At the station: which sentence is NOT correct?","If we had left earlier, we wouldn't have miss the train.",["If we had left earlier, we wouldn't have missed the train.","We wouldn't have missed the train if we had left earlier.","If we hadn't left late, we'd have caught it."],"After *wouldn't have* we need the 3. form: *missed*.",b=4)
 # ============ Reported statements (B1.1/B1.2) +33 ============
 P = mk("Reported statements (tense changes)",
-    ("Reported speech goes one tense back: *am → was*, *will → would*, *have done → had done*.","Netiešajā runā laiks iet vienu soli atpakaļ: *am → was*, *will → would*, *have done → had done*."),
+    ("With a past reporting verb the tense often goes one step back: *am → was*, *will → would*, *have done → had done*. It is not always needed, for example when the fact is still true.","Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *am → was*, *will → would*, *have done → had done*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess."),
     ("Reported speech: the tense goes back and time words change (*tomorrow → the next day*).","Netiešā runa: laiks iet atpakaļ un laika vārdi mainās (*tomorrow → the next day*)."),
     ("Reported speech: tenses go back, pronouns change, *say* has no object but *tell* does.","Netiešā runa: laiki iet atpakaļ, vietniekvārdi mainās, aiz *say* nav papildinātāja, aiz *tell* ir."),
     ("Reported speech: the tense goes back; *tell* needs an object (*told me*).","Netiešā runa: laiks iet atpakaļ; aiz *tell* vajag papildinātāju (*told me*)."))

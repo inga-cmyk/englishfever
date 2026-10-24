@@ -75,7 +75,9 @@ def save(name):
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
-        for r in rows: w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else '')])
+        for r in rows:
+            if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
+            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else '')])
     print(name, len(rows), "rows")
 
 
@@ -91,8 +93,8 @@ LVMAP = {
     "After *will* we use the base verb, without *to*.": "Pēc *will* lieto pamatformu bez *to*.",
     "*Bread* is uncountable: *is baked*.": "*Bread* ir neskaitāms: *is baked*.",
     "After *was* we need the 3. form: *destroyed*.": "Pēc *was* vajag 3. formu: *destroyed*.",
-    "No *will* after *if* in a general truth.": "Vispārīgā patiesībā pēc *if* nav *will*.",
-    "No *will* after *if*.": "Pēc *if* nav *will*.",
+    "In a general truth the *if*-part uses the Present Simple, not *will*.": "Vispārīgā patiesībā *if* daļā lieto Present Simple, nevis *will*.",
+    "In this *if*-part use the Present Simple, not *will*.": "Šajā *if* daļā lieto Present Simple, nevis *will*.",
     "*Manager* is *he / she*, so *doesn't*.": "*Manager* ir *he / she*, tāpēc *doesn't*.",
     "After *doesn't* the verb has no *-s*.": "Pēc *doesn't* darbības vārdam nav *-s*.",
     "*Understand* is a state verb: *I don't understand*.": "*Understand* ir stāvokļa darbības vārds: *I don't understand*.",

@@ -599,6 +599,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ar precīzu skaitu lieto Present Perfect Simple: *I've written five emails today.*"
 },
 {
+"id": "ppf-B12-1a",
+"skill": "past_perfect",
+"level": "B1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "When we arrived, the film ___ already ___.",
+"correct": "had ... started",
+"wrong": [
+"has ... started",
+"was ... starting",
+"did ... start"
+],
+"why": "Past perfect = *had* + past participle. It shows an earlier past action.",
+"wrong_why": {},
+"why_lv": "Past Perfect = *had* + 3. forma. Tas rāda agrāku pagātnes darbību."
+},
+{
 "id": "ppf-B12-3c",
 "skill": "past_perfect",
 "level": "B1.2",
@@ -1466,6 +1483,34 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešajā runā darbības vārds parasti iet vienu soli atpakaļ laikā: *am / is → was*."
 },
 {
+"id": "rs-B11-2a",
+"skill": "rep_statements",
+"level": "B1.1",
+"bloom": 2,
+"kind": "match",
+"q": "Match each sentence with its report.",
+"pairs": [
+[
+"'I work in a bank,' she said.",
+"She said she worked in a bank."
+],
+[
+"'I'm working late,' she said.",
+"She said she was working late."
+],
+[
+"'I finished the report,' she said.",
+"She said she had finished the report."
+],
+[
+"'I can come,' she said.",
+"She said she could come."
+]
+],
+"why": "Reported speech goes one step back: *work → worked, am working → was working, finished → had finished, can → could.*",
+"why_lv": "Netiešā runa iet vienu soli atpakaļ: *work → worked, am working → was working, finished → had finished, can → could*."
+},
+{
 "id": "rs-B12-1a",
 "skill": "rep_statements",
 "level": "B1.2",
@@ -1541,6 +1586,22 @@ return json_decode(<<<'EF_JSON_END'
 "must"
 ],
 "why": "*can → could, will → would, must → had to.* *Might, would, could, should* and *ought to* stay the same.",
+"wrong_why": {}
+},
+{
+"id": "rs-B21-2a",
+"skill": "rep_statements",
+"level": "B2.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'The Earth goes round the Sun,' the teacher said. Which report is also correct, and why?",
+"correct": "The teacher said the Earth goes round the Sun, because it is always true.",
+"wrong": [
+"It must be 'went', because said is in the past.",
+"It must be 'had gone'.",
+"It is wrong, because reported speech always changes the tense."
+],
+"why": "When the fact is still true, the tense does not have to go back.",
 "wrong_why": {}
 },
 {
@@ -1729,6 +1790,22 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "ia-C11-2a",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'It depends on whether the budget is approved.' Why whether and not if?",
+"correct": "After a preposition we use whether, not if.",
+"wrong": [
+"Because whether is more polite.",
+"Because the sentence is in the past.",
+"Because if is not a word."
+],
+"why": "after prepositions: depends *on whether*, talk *about whether.*",
+"wrong_why": {}
+},
+{
 "id": "ia-C11-3a",
 "skill": "ind_advanced",
 "level": "C1.1",
@@ -1776,6 +1853,31 @@ return json_decode(<<<'EF_JSON_END'
 "why": "We use the present simple for facts and things that are always true.",
 "wrong_why": {},
 "why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
+},
+{
+"id": "cf-B12-3a-r2",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with unless: If you don't practise, you won't improve.",
+"answers": [
+[
+"Unless you practise, you won't improve.",
+"Unless you practice, you won't improve.",
+"You won't improve unless you practise.",
+"You won't improve unless you practice."
+]
+],
+"why": "*Unless* means *if ... not*. After *unless* we use the present simple (no negative).",
+"hints": [
+[
+"unless you don't",
+"After *unless* we do not use a negative: *Unless you practise, ...*",
+"Pēc *unless* nelieto noliegumu: *Unless you practise*, ..."
+]
+],
+"why_lv": "*Unless* nozīmē *if* ... *not*. Pēc *unless* lieto Present Simple (bez noliegumu)."
 },
 {
 "id": "cf-B12-4a-r2",
@@ -1890,6 +1992,48 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.",
 "wrong_why": {}
+},
+{
+"id": "ip-B21-3a-r2",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it indirect: Why didn't the order arrive?",
+"answers": [
+[
+"Could you tell me why the order didn't arrive?",
+"Do you know why the order didn't arrive?",
+"Can you tell me why the order didn't arrive?",
+"I'd like to know why the order didn't arrive.",
+"Would you mind telling me why the order didn't arrive?",
+"Could you please tell me why the order didn't arrive?",
+"Do you happen to know why the order didn't arrive?",
+"I wonder why the order didn't arrive.",
+"I was wondering why the order didn't arrive.",
+"Could you tell me why the order did not arrive?",
+"Do you know why the order did not arrive?",
+"Could you tell me why the order didn't arrive, please?",
+"Can you please tell me why the order didn't arrive?",
+"Would you tell me why the order didn't arrive?",
+"Could you please tell me why the order did not arrive?",
+"Could you tell me why the order did not arrive, please?",
+"Can you please tell me why the order did not arrive?",
+"Would you mind telling me why the order did not arrive?",
+"Do you happen to know why the order did not arrive?",
+"I wonder why the order did not arrive.",
+"I was wondering why the order did not arrive.",
+"I'd like to know why the order did not arrive.",
+"Would you tell me why the order did not arrive?"
+]
+],
+"why": "Polite phrase + *why* + subject + verb (past simple, no *did*).",
+"hints": [
+[
+"\\bdid\\b",
+"No *did* in the indirect part: *... why the order didn't arrive.*"
+]
+]
 },
 {
 "id": "ia-C11-3a-r4",

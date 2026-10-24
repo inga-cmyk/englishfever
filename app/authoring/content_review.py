@@ -311,6 +311,26 @@ def revise(original):
         bank=['If', 'Until', 'will', 'would'])
     fix('cs-B11-3b', 'If I had a cat, I would sleep all day also fitted; use a card that cannot follow if.',
         bank=['were', 'would', 'will', 'being'])
+    # Guest review (24 October): context, option wording, a realistic distractor, a softer backshift explanation
+    fix('ppf-B12-1a', 'Was already starting is also grammatical with another meaning; give the times so only the past perfect fits.',
+        q='The film began at 7.00. We arrived at 7.15. When we arrived, the film ___ already ___.')
+    fix('rs-B21-2a', 'Keep the report and the reason apart so because does not look like part of the report.',
+        q="'The Earth goes round the Sun,' the teacher said. Which version is also correct?",
+        correct='Report: The teacher said the Earth goes round the Sun. Reason: it is always true, so the tense can stay.',
+        wrong=["Report: The teacher said the Earth went round the Sun. Reason: it must go back, because said is in the past.", "Report: The teacher said the Earth had gone round the Sun. Reason: it must go back two steps.", "Report: The teacher said the Earth goes round the Sun. Reason: this is wrong, because reported speech always changes the tense."])
+    fix('ia-C11-2a', 'Replace an implausible distractor with a realistic misconception.',
+        wrong=['Because whether is more polite.', 'Because the sentence is in the past.', 'Because if can only start a conditional clause, never a noun clause.'])
+    fix('rs-B11-2a', 'With a past reporting verb the tense often goes one step back, but it is not always needed.',
+        why='With a past reporting verb the tense often goes one step back: *work → worked, am working → was working, finished → had finished, can → could.* It is not always needed, for example when the fact is still true.',
+        why_lv='Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *work → worked, am working → was working, finished → had finished, can → could*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess.')
+    # Second guest review: feedback that said too much or the wrong thing
+    fix_again('cf-B12-3a', 'Unless is usually followed by a positive verb, but the feedback must not say a negative can never follow.',
+        why="*Unless* means *if ... not*, so the clause after it is usually positive: *Unless you practise, you won't improve.*",
+        why_lv="*Unless* nozīmē *if ... not*, tāpēc teikums aiz tā parasti ir apgalvojošs: *Unless you practise, you won't improve.*",
+        hints=[["unless you don't", "*Unless* already means *if ... not*, so the verb after it is normally positive: *Unless you practise, ...*", "*Unless* jau nozīmē *if ... not*, tāpēc darbības vārds aiz tā parasti ir apgalvojošā formā: *Unless you practise*, ..."]])
+    fix_again('ip-B21-3a', 'The answer contains didn\'t, so the feedback must not say no did.',
+        why="Polite phrase + *why* + subject + verb in statement order: *why the order didn't arrive*, not *why didn't the order arrive*.",
+        hints=[["\\bdid\\b", "In the indirect part use statement order: *... why the order didn't arrive.*"]])
     fix('pasp-B11-3a', 'The verb and the noun were the same word (film); use a verb that cannot be mistaken for a noun.',
         q='Where ___ this photo ___? (take)', answers=[['was'], ['taken']])
     fix('ct-B22-2a', 'An option that says both sentences are about the past is illogical for this question; use a reversed contrast.',

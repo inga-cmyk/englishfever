@@ -21,7 +21,7 @@ LV_RULES.update({
     },
     "past_continuous": {
         "form": ["was / were + -ing: I was working.", "Noliegums: wasn't / weren't + -ing.", "Jautājums: Was / Were + teik. priekšmets + -ing?",
-                 "Plāns, kas nenotika: was / were going to + pamatforma."],
+                 "Nodoms pagātnē: was / were going to + pamatforma (konteksts parāda, vai tas notika)."],
         "use": ["Darbība, kas pagātnē noteiktā brīdī bija procesā.", "Garāku darbību pārtrauc īsa darbība (Past Simple).", "Stāsta fons."],
         "signals": "at 8 o'clock yesterday, while, when, as",
     },
@@ -100,20 +100,20 @@ LV_RULES.update({
                  "Laiks parasti iet vienu soli atpakaļ: am/is → was, work → worked, worked → had worked, will → would, can → could.",
                  "Mainās vietniekvārdi un laika vārdi: I → he/she, now → then, today → that day, tomorrow → the next day, here → there.",
                  "tell vajag personu: He told me. say bez personas: He said that ..."],
-        "use": ["Pastāstīt, ko cits cilvēks teica.", "Ja fakts joprojām ir patiess vai pastāsti uzreiz, laiku var nemainīt: She says she's tired."],
+        "use": ["Pastāstīt, ko cits cilvēks teica.", "Ja fakts joprojām ir patiess, laiku var nemainīt: She said she is tired. Pēc darbības vārda pagātnē laiku parasti maina uz vienu soli atpakaļ, bet ne vienmēr."],
         "signals": "said, told, now → then, yesterday → the day before",
     },
     "rep_questions": {
         "form": ["Jā/nē jautājumi: asked + if / whether + teik. priekšmets + darbības vārds: She asked if I liked coffee.",
                  "Jautājumi ar jautājamo vārdu: asked + jautājamais vārds + teik. priekšmets + darbības vārds: He asked where I lived.",
-                 "Parasta vārdu secība, bez do / does / did: She asked what I did (nevis what did I do).",
+                 "Teikuma vārdu secība, bez do / does / did jautājuma secībai: She asked what I did (nevis what did I do).",
                  "Lūgumi un rīkojumi: told / asked + persona + (not) to + pamatforma: He told me to wait."],
         "use": ["Pastāstīt, ko kāds jautāja: laiks pāriet pagātnē (Where do you work? → She asked me where I worked). Netiešajos jautājumos (Could you tell me where you work?) laiks nemainās, mainās tikai vārdu secība.", "Pastāstīt, ko kāds lika vai lūdza darīt."],
         "signals": "asked, wondered, wanted to know, told someone to",
     },
     "ind_polite": {
         "form": ["Sāc ar: Could you tell me / Do you know / Can you tell me / I wonder.", "Tad lieto teikuma vārdu secību: ... where the station is (nevis where is the station).",
-                 "Bez do / does / did palīgteikumā: ... what time the shop opens.", "Jā/nē jautājumos lieto if vai whether: Do you know if she is here?"],
+                 "Palīgteikumā nelieto do / does / did jautājuma secībai: ... what time the shop opens.", "Jā/nē jautājumos lieto if vai whether: Do you know if she is here?"],
         "use": ["Pieklājīgs lūgums: Could you tell me where ...? Jautājums ir lūgums.", "Sarunā ar svešiem cilvēkiem, klientiem un darbā.", "Pēc I wonder ... / I'd like to know ... liek punktu; pēc Could you / Do you know ... jautājuma zīmi.", "Laiks nemainās, mainās tikai vārdu secība (Where is the station? → Could you tell me where the station is?). Atstāstītajos jautājumos laiks pāriet pagātnē (She asked where the station was)."],
         "signals": "Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me",
     },
@@ -129,7 +129,7 @@ LV_RULES["modal_verbs"] = {
             "should: padoms (You should see a doctor).",
             "must / have to: tas ir nepieciešams, noteikums vai pienākums (You must wear a seat belt. I have to wear a uniform at work). Bieži der abi.",
             "mustn't = aizliegts. don't have to = nav obligāti (You mustn't park here. You don't have to pay).",
-            "must nav pagātnes ne nākotnes formas: lieto had to / will have to (I had to work late. We will have to leave early)."],
+            "must nav pagātnes formas pienākumam: lieto had to (I had to work late). Nākotnē bieži lieto will have to (We will have to leave early), bet must var norādīt arī uz nākotni (You must call me tomorrow)."],
     "signals": "rule, law, allowed, necessary, advice, ability (noteikums, likums, atļauts, nepieciešams, padoms, spēja)",
 }
 
@@ -137,7 +137,7 @@ LV_RULES["modal_verbs"] = {
 LV_RULES["comparison"] = {
     "form": ["Īsie īpašības vārdi: īpašības vārds + -er + than (Rachel is taller than Tom). Vispārākā pakāpe: the + īpašības vārds + -est (the tallest).",
              "Pareizrakstība: big - bigger - the biggest; nice - nicer - the nicest; heavy - heavier - the heaviest.",
-             "Garie īpašības vārdi (divas vai vairāk zilbes): more / the most + īpašības vārds (more expensive than, the most expensive).",
+             "Lielākā daļa vienzilbes īpašības vārdu un daudzi divzilbju vārdi ar -y galotni lieto -er / -est (heavier, the heaviest). Lielākā daļa garāku vārdu, kā arī daudzi citi divzilbju vārdi lieto more / the most (more expensive than, the most expensive). Daži der ar abiem.",
              "Neregulārie: good - better - the best; bad - worse - the worst; far - further - the furthest.",
              "as + īpašības vārds + as = vienāds (My phone is as fast as yours). not as ... as = mazāk (This bag is not as heavy as that one)."],
     "use": ["Pārākā pakāpe: salīdzina divus cilvēkus vai lietas. Vispārākā pakāpe: viens salīdzināts ar visiem pārējiem grupā (the tallest student in the class).",

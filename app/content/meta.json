@@ -194,7 +194,7 @@
      "*was / were* + verb-ing: *I was working.*",
      "Negative: *wasn't / weren't* + verb-ing.",
      "Question: *Was / Were* + subject + verb-ing?",
-     "Plan that did not happen: *was / were going to* + base verb."
+     "Past intention: *was / were going to* + base verb (the context shows whether it happened)."
     ],
     "use": [
      "An action in progress at a moment in the past.",
@@ -209,7 +209,7 @@
      "*was / were + -ing*: *I was working.*",
      "Noliegums: *wasn't / weren't + -ing*.",
      "Jautājums: *Was / Were* + teik. priekšmets + *-ing*?",
-     "Plāns, kas nenotika: *was / were going to* + pamatforma."
+     "*Nodoms* pagātnē: *was / were going to* + pamatforma (*konteksts* parāda, vai tas notika)."
     ],
     "use": [
      "Darbība, kas pagātnē noteiktā brīdī bija procesā.",
@@ -555,7 +555,7 @@
      "*should*: advice (*You should see a doctor*).",
      "*must / have to*: it is necessary, a rule or a duty (*You must wear a seat belt. I have to wear a uniform at work*). Often both are possible.",
      "*mustn't* = not allowed. *don't have to* = not necessary (*You mustn't park here. You don't have to pay*).",
-     "*must* has no past or future: use *had to / will have to* (*I had to work late. We will have to leave early*)."
+     "*must* has no past form for obligation: use *had to* (*I had to work late*). In the future we often say *will have to* (*We will have to leave early*), but *must* can also point to the future (*You must call me tomorrow*)."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability*",
     "example": "*You must wear a seat belt, but you don't have to wear a hat.*"
@@ -572,7 +572,7 @@
      "*should*: padoms (*You should see a doctor*).",
      "*must / have to*: tas ir nepieciešams, *noteikums* vai pienākums (*You must wear a seat belt.* *I have to wear a uniform at work*). Bieži der abi.",
      "*mustn't = aizliegts*. *don't have to* = nav obligāti (*You mustn't park here.* *You don't have to pay*).",
-     "*must* nav pagātnes *ne* nākotnes formas: lieto *had to / will have to* (*I had to work late.* *We will have to leave early*)."
+     "*must* nav pagātnes formas pienākumam: lieto *had to* (*I had to work late*). Nākotnē bieži lieto *will have to* (*We will have to leave early*), bet *must* var norādīt arī uz nākotni (*You must call me tomorrow*)."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)"
    }
@@ -591,7 +591,7 @@
     "form": [
      "*Short adjectives*: adjective + *-er* + *than* (*Rachel is taller than Tom*). Superlative: *the* + adjective + *-est* (*the tallest*).",
      "Spelling: *big - bigger - the biggest*; *nice - nicer - the nicest*; *heavy - heavier - the heaviest*.",
-     "Longer adjectives (two or more syllables): *more / the most* + adjective (*more expensive than, the most expensive*).",
+     "Most one-syllable adjectives and many two-syllable adjectives ending in *-y* take *-er / -est* (*heavier, the heaviest*). Most longer adjectives, and many other two-syllable ones, take *more / the most* (*more expensive than, the most expensive*). Some allow both.",
      "Irregular: *good - better - the best*; *bad - worse - the worst*; *far - further - the furthest*.",
      "*as* + adjective + *as* = equal (*My phone is as fast as yours*). *not as ... as* = less (*This bag is not as heavy as that one*)."
     ],
@@ -608,7 +608,7 @@
     "form": [
      "Īsie īpašības vārdi: īpašības vārds + *-er + than* (*Rachel is taller than Tom*). Vispārākā pakāpe: *the* + īpašības vārds + *-est* (*the tallest*).",
      "Pareizrakstība: *big - bigger - the biggest; nice - nicer - the nicest; heavy - heavier - the heaviest*.",
-     "*Garie* īpašības vārdi (divas vai vairāk *zilbes*): *more / the most* + īpašības vārds (*more expensive than, the most expensive*).",
+     "Lielākā daļa *vienzilbes* īpašības vārdu un *daudzi divzilbju* vārdi ar *-y galotni* lieto *-er / -est* (*heavier, the heaviest*). Lielākā daļa garāku vārdu, kā arī *daudzi citi divzilbju* vārdi lieto *more / the most* (*more expensive than, the most expensive*). Daži der ar *abiem*.",
      "Neregulārie: *good - better - the best; bad - worse - the worst; far - further - the furthest*.",
      "*as* + īpašības vārds + *as* = vienāds (*My phone is as fast as yours*). *not as* ... *as* = mazāk (*This bag is not as heavy as that one*)."
     ],
@@ -837,7 +837,7 @@
     ],
     "use": [
      "Telling someone what another person said.",
-     "If the fact is still true, or you report it at once, the tense can stay: *She says she's tired.*"
+     "If the fact is still true, the tense can stay: *She said she is tired.* Going one step back is usual after a past reporting verb, but it is not always needed."
     ],
     "signals": "*said, told, now → then, yesterday → the day before*",
     "example": "*\"I'm working late,\" he said.* → *He said he was working late.*"
@@ -851,7 +851,7 @@
     ],
     "use": [
      "Pastāstīt, ko cits cilvēks teica.",
-     "Ja fakts joprojām ir patiess vai pastāsti uzreiz, laiku var nemainīt: *She says she's tired.*"
+     "Ja fakts joprojām ir patiess, laiku var nemainīt: *She said she is tired.* Pēc darbības vārda pagātnē laiku parasti *maina* uz vienu soli atpakaļ, bet *ne* vienmēr."
     ],
     "signals": "*said, told, now → then, yesterday → the day before*"
    }
@@ -869,7 +869,7 @@
     "form": [
      "Yes/no questions: *asked* + *if / whether* + subject + verb: *She asked if I liked coffee.*",
      "Wh-questions: *asked* + question word + subject + verb: *He asked where I lived.*",
-     "Normal word order, no *do / does / did*: *She asked what I did* (not *what did I do*).",
+     "Statement word order, no *do / does / did* to invert the question: *She asked what I did* (not *what did I do*).",
      "Requests and orders: *told / asked* + person + (*not*) *to* + base verb: *He told me to wait.*"
     ],
     "use": [
@@ -883,7 +883,7 @@
     "form": [
      "Jā/nē jautājumi: *asked + if / whether* + teik. priekšmets + darbības vārds: *She asked if I liked coffee.*",
      "Jautājumi ar jautājamo vārdu: *asked* + jautājamais vārds + teik. priekšmets + darbības vārds: *He asked where I lived.*",
-     "Parasta vārdu secība, bez *do / does / did*: *She asked what I did* (nevis *what did I do*).",
+     "Teikuma vārdu secība, bez *do / does / did* jautājuma secībai: *She asked what I did* (nevis *what did I do*).",
      "Lūgumi un rīkojumi: *told / asked* + persona + (*not*) *to* + pamatforma: *He told me to wait.*"
     ],
     "use": [
@@ -931,7 +931,7 @@
     "form": [
      "Start with: *Could you tell me / Do you know / Can you tell me / I wonder.*",
      "Then use statement word order: *... where the station is* (not *where is the station*).",
-     "No *do / does / did* in the second part: *... what time the shop opens.*",
+     "Do not use *do / does / did* to invert the second part: *... what time the shop opens.*",
      "Yes/no questions: use *if* or *whether*: *Do you know if she is here?*"
     ],
     "use": [
@@ -947,7 +947,7 @@
     "form": [
      "Sāc ar: *Could you tell me / Do you know / Can you tell me / I wonder.*",
      "Tad lieto teikuma vārdu secību: ... *where the station is* (nevis *where is the station*).",
-     "Bez *do / does / did* palīgteikumā: ... *what time the shop opens*.",
+     "Palīgteikumā nelieto *do / does / did* jautājuma secībai: ... *what time the shop opens*.",
      "Jā/nē jautājumos lieto *if* vai *whether*: *Do you know if she is here?*"
     ],
     "use": [
@@ -971,17 +971,17 @@
    "rule": {
     "form": [
      "Question word + *to* + base verb: *I don't know what to do. I'm not sure how to start.*",
-     "*if / whether* (+ *or not*): *I can't decide whether to accept.*",
-     "An embedded question can be a subject: *What he said surprised me.*",
+     "*if / whether* + subject + verb: *I wonder if / whether I should accept.* *whether* + *to* + base verb: *I can't decide whether to accept.*",
+     "An embedded question can be a subject: *Whether he will come is still unclear.*",
      "After prepositions: *We talked about how to improve the results.*"
     ],
     "use": [
-     "The same structure as *Could you tell me where ...?*, now inside statements and phrases: *I don't know what to do. What he said surprised me.*",
+     "The same structure as *Could you tell me where ...?*, inside statements and phrases: *I don't know what to do. Whether he will come is still unclear.*",
      "No tense change: only the word order changes. In reported questions the tense shifts back (*She asked what I wanted*).",
-     "Reports, emails and formal writing.",
+     "Reports, emails, formal writing and everyday conversation.",
      "Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*"
     ],
-    "signals": "*I wonder, no idea, not sure, it depends on, the question is, whoever, whatever*",
+    "signals": "*I wonder, no idea, not sure, it depends on, the question is*",
     "example": "*I have no idea how long the meeting will take.*"
    }
   },
@@ -1225,28 +1225,28 @@
    ],
    "rule": {
     "form": [
-     "Object question: question word + auxiliary + subject + verb: *Who did you meet? What does she want?* (*do / does / did* needed)",
-     "Subject question: the question word is the subject, no *do / does / did*: *Who met you? What happened? Who wants coffee?*",
+     "Object question with most main verbs in the present or past simple: question word + *do / does / did* + subject + base verb: *Who did you meet? What does she want?* With another auxiliary or a modal, that word comes first: *What are you doing? Who can you see?*",
+     "Neutral subject question: the question word is the subject, no *do / does / did*: *Who met you? What happened? Who wants coffee?* (Only for emphasis: *Who did call?*)",
      "The verb keeps the normal form: *Who lives here?* (with *-s*), not *Who does live here?*"
     ],
     "use": [
      "Ask about the person or thing that does the action: subject question (*Tom called me → Who called you?*).",
      "Ask about the person or thing the action happens to: object question (*I called Tom → Who did you call?*).",
-     "Look at the answer: if the answer is the subject, the question has no *did / does*."
+     "Look at the answer: if the answer is the subject, the neutral question has no *did / does*."
     ],
     "signals": "*who, what, which, whose as the subject: no do / does / did*",
     "example": "*Who wrote this email? Who did you send it to?*"
    },
    "rule_lv": {
     "form": [
-     "Jautājums par papildinātāju: jautājamais vārds + palīgdarbības vārds + teik. priekšmets + darbības vārds: *Who did you meet?* *What does she want?* (vajag *do / does / did*)",
-     "Jautājums par teikuma priekšmetu: jautājamais vārds pats ir teik. priekšmets, bez *do / does / did*: *Who met you?* *What happened?* *Who wants coffee?*",
+     "Jautājums par papildinātāju ar lielāko daļu darbības vārdu *Present* vai Past Simple: jautājamais vārds + *do / does / did* + teik. priekšmets + pamatforma: *Who did you meet?* *What does she want?* Ar *citu* palīgdarbības vārdu vai modālo vārdu tas ir pirmais: *What are you doing?* *Who can you see?*",
+     "Neitrāls jautājums par teikuma priekšmetu: jautājamais vārds pats ir teik. priekšmets, bez *do / does / did*: *Who met you?* *What happened?* *Who wants coffee?* (Tikai *uzsvaram*: *Who did call*?)",
      "Darbības vārds paliek parastajā formā: *Who lives here?* (ar *-s*), nevis *Who does live here?*"
     ],
     "use": [
      "Jautā par cilvēku vai lietu, kas veic darbību: jautājums par teikuma priekšmetu (*Tom called me → Who called you*?).",
      "Jautā par cilvēku vai lietu, ar ko darbība notiek: jautājums par papildinātāju (*I called Tom → Who did you call*?).",
-     "Paskaties uz atbildi: ja atbilde ir teik. priekšmets, jautājumā nav *did / does*."
+     "Paskaties uz atbildi: ja atbilde ir teik. priekšmets, neitrālajā jautājumā nav *did / does*."
     ],
     "signals": "*who, what, which, whose as the subject*: no *do / does / did* (kā teik. priekšmets: bez *do / does / did*)"
    }
@@ -1265,12 +1265,12 @@
      "verb + *-ing*: *enjoy, finish, keep, avoid, mind, suggest, practise* (*I enjoy reading. She suggested going home.*)",
      "verb + *to* + base verb: *want, need, decide, hope, plan, learn, agree, promise, manage, refuse* (*I want to leave. He decided to stay.*)",
      "preposition + *-ing*: *interested in learning, good at cooking, before leaving, thank you for helping.*",
-     "Some verbs take both with the same meaning: *like, love, hate, start, begin* (*I like swimming. = I like to swim.*)",
+     "Some verbs take both with a very similar meaning: *like, love, hate, start, begin* (*I like swimming. ≈ I like to swim.* The emphasis can differ.)",
      "Different meaning: *stop / remember / forget / try* + *-ing* or *to* (*I stopped smoking = I quit. I stopped to smoke = I stopped in order to smoke.*)"
     ],
     "use": [
      "The verb decides: learn which verbs go with *-ing* and which with *to*.",
-     "After a preposition we always use *-ing*: *She's good at drawing.*",
+     "After a preposition we use *-ing* when a verb follows directly: *She's good at drawing.* (A question word + *to* can also follow: *about how to improve it*.)",
      "*stop / remember / forget / try*: *-ing* = about something done or an experiment; *to* = a task or a purpose."
     ],
     "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition: -ing*",
@@ -1281,12 +1281,12 @@
      "darbības vārds + *-ing*: *enjoy, finish, keep, avoid, mind, suggest, practise* (*I enjoy reading.* *She suggested going home*.)",
      "darbības vārds + to + pamatforma: *want, need, decide, hope, plan, learn, agree, promise, manage, refuse* (*I want to leave.* *He decided to stay*.)",
      "prievārds + *-ing*: *interested in learning, good at cooking, before leaving, thank you for helping*.",
-     "Daži darbības vārdi der ar abiem ar to pašu nozīmi: *like, love, hate, start, begin* (*I like swimming.* = *I like to swim*.)",
+     "Daži darbības vārdi der ar abiem ar ļoti līdzīgu nozīmi: *like, love, hate, start, begin* (*I like swimming.* ≈ *I like to swim.* *Uzsvars* var atšķirties.)",
      "Atšķirīga nozīme: *stop / remember / forget / try + -ing* vai *to* (*I stopped smoking* = es atmetu. *I stopped to smoke* = es apstājos, lai nosmēķētu.)"
     ],
     "use": [
      "Darbības vārds nosaka formu: iemācies, kuri vārdi iet ar *-ing* un kuri ar to.",
-     "Aiz prievārda vienmēr lieto *-ing*: *She's good at drawing.*",
+     "Aiz prievārda lieto *-ing*, ja tieši seko darbības vārds: *She's good at drawing.* (Var *sekot* arī jautājamais vārds + *to*: *about how to improve it*.)",
      "*stop / remember / forget / try*: *-ing* = par jau izdarītu vai izmēģinājumu; to = uzdevums vai mērķis."
     ],
     "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition*: *-ing* (aiz prievārda: *-ing*)"

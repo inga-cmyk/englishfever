@@ -86,7 +86,7 @@ sent = [g.count("sentence") for g in mixes]; word = [g.count("word") for g in mi
 check("at most 2 whole-sentence typed questions in 10 (per session: %s)" % sent, max(sent) <= 2, sent)
 check("at most 3 type-a-word questions in 10 (per session: %s)" % word, max(word) <= 3, word)
 check("at least 2 drag-and-drop questions in 10 even when every answer is wrong (per session: %s); similar questions are asked again after a miss" % drag, min(drag) >= 2, drag)
-check("2 to 5 multiple-choice questions in 10 (per session: %s)" % choose, 2 <= min(choose) and max(choose) <= 5, choose)
+check("2 to 6 multiple-choice questions in 10 (per session: %s); the aim is 3, and a missed question brings a similar one back" % choose, 2 <= min(choose) and max(choose) <= 6, choose)
 check("open writing does not appear in these sessions", all("write" not in g for g in mixes), mixes)
 
 # ---- levels first: whole levels, with or without topics

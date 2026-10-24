@@ -186,7 +186,7 @@ final class CustomItems
                 if (!empty($row['update'])) {
                     $cur = Db::one('SELECT data FROM custom_items WHERE item_id = ?', [$row['update']]);
                     $d = json_decode((string) ($cur['data'] ?? ''), true);
-                    if (is_array($d)) { $nd = $it; unset($nd['skill'], $nd['level'], $nd['bloom'], $nd['kind']); Db::update('custom_items', ['data' => json_encode($nd, JSON_UNESCAPED_UNICODE), 'updated_at' => time()], 'item_id = ?', [$row['update']]); }
+                    if (is_array($d)) { $nd = $it; unset($nd['skill'], $nd['level'], $nd['bloom'], $nd['kind']); Db::update('custom_items', ['data' => json_encode($nd, JSON_UNESCAPED_UNICODE), 'bloom' => $it['bloom'], 'updated_at' => time()], 'item_id = ?', [$row['update']]); }
                     $row['id'] = $row['update'];
                     continue;
                 }

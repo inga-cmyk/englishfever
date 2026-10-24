@@ -7,6 +7,8 @@ drop = ("Nobody forces you, but you feel it is very important", "Your job needs 
 for r in old:
     if any(r[3].startswith(d) for d in drop): continue
     row = r[:8] + [""]
+    if row[2] == "gap" and row[3] in audit_fixes.BANK_TASK:   # a task whose wording did not prove the answer (audit_fixes.py)
+        row = row[:9] + [row[3]]; row[3] = audit_fixes.BANK_TASK[row[3]]
     if row[2] == "mcq":   # corrections from the audit (audit_fixes.py)
         fx = audit_fixes.MCQ.get((row[3], row[4])) or audit_fixes.MCQ.get(("*", row[4]))
         if fx:

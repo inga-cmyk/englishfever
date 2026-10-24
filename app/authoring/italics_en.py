@@ -523,12 +523,12 @@ Negative: *can't* (*cannot*), *shouldn't*, *mustn't* + base verb. Question: *Can
 *should*: advice (*You should see a doctor*).
 *must / have to*: it is necessary, a rule or a duty (*You must wear a seat belt. I have to wear a uniform at work*). Often both are possible.
 *mustn't* = not allowed. *don't have to* = not necessary (*You mustn't park here. You don't have to pay*).
-*must* has no past or future: use *had to / will have to* (*I had to work late. We will have to leave early*).
+*must* has no past form for obligation: use *had to* (*I had to work late*). In the future we often say *will have to* (*We will have to leave early*), but *must* can also point to the future (*You must call me tomorrow*).
 *rule, law, allowed, necessary, advice, ability*
 *You must wear a seat belt, but you don't have to wear a hat.*
 *Short adjectives*: adjective + *-er* + *than* (*Rachel is taller than Tom*). Superlative: *the* + adjective + *-est* (*the tallest*).
 Spelling: *big - bigger - the biggest*; *nice - nicer - the nicest*; *heavy - heavier - the heaviest*.
-Longer adjectives (two or more syllables): *more / the most* + adjective (*more expensive than, the most expensive*).
+Most one-syllable adjectives and many two-syllable adjectives ending in *-y* take *-er / -est* (*heavier, the heaviest*). Most longer adjectives, and many other two-syllable ones, take *more / the most* (*more expensive than, the most expensive*). Some allow both.
 Irregular: *good - better - the best*; *bad - worse - the worst*; *far - further - the furthest*.
 *as* + adjective + *as* = equal (*My phone is as fast as yours*). *not as ... as* = less (*This bag is not as heavy as that one*).
 Comparative: compare two things or people. Superlative: one thing compared with all the others in a group (*the tallest student in the class*).
@@ -561,7 +561,7 @@ Past habits and states (*used to*).
 *was / were* + verb-ing: *I was working.*
 Negative: *wasn't / weren't* + verb-ing.
 Question: *Was / Were* + subject + verb-ing?
-Plan that did not happen: *was / were going to* + base verb.
+Past intention: *was / were going to* + base verb (the context shows whether it happened).
 *at 8 o'clock yesterday, while, when, as*
 *I was cooking when the phone rang.*
 *have / has* + past participle: *I have seen it.*
@@ -654,12 +654,12 @@ Conditions with *unless, as long as, provided that, otherwise, but for.*
 Tenses usually go one step back: *am/is → was, work → worked, worked → had worked, will → would, can → could.*
 Pronouns and time words change: *I → he/she, now → then, today → that day, tomorrow → the next day, here → there.*
 *tell* needs a person: *He told me.* *say* does not: *He said that ...*
-If the fact is still true, or you report it at once, the tense can stay: *She says she's tired.*
+If the fact is still true, the tense can stay: *She said she is tired.* Going one step back is usual after a past reporting verb, but it is not always needed.
 *said, told, now → then, yesterday → the day before*
 *"I'm working late," he said.* → *He said he was working late.*
 Yes/no questions: *asked* + *if / whether* + subject + verb: *She asked if I liked coffee.*
 Wh-questions: *asked* + question word + subject + verb: *He asked where I lived.*
-Normal word order, no *do / does / did*: *She asked what I did* (not *what did I do*).
+Statement word order, no *do / does / did* to invert the question: *She asked what I did* (not *what did I do*).
 Requests and orders: *told / asked* + person + (*not*) *to* + base verb: *He told me to wait.*
 *asked, wondered, wanted to know, told someone to*
 *"Where do you work?"* → *She asked me where I worked.*
@@ -674,7 +674,7 @@ Shorter and more natural than *said that ...*
 Reporting what someone asked: the tense shifts back (*Where do you work?* → *She asked me where I worked*). In indirect questions (*Could you tell me where you work?*) it does not: only the word order changes.
 Start with: *Could you tell me / Do you know / Can you tell me / I wonder.*
 Then use statement word order: *... where the station is* (not *where is the station*).
-No *do / does / did* in the second part: *... what time the shop opens.*
+Do not use *do / does / did* to invert the second part: *... what time the shop opens.*
 Yes/no questions: use *if* or *whether*: *Do you know if she is here?*
 Asking politely: *Could you tell me where ...?* The question is a request.
 A full stop after *I wonder ...* / *I'd like to know ...*; a question mark after *Could you* / *Do you know ...*
@@ -682,13 +682,13 @@ No tense change: only the word order changes (*Where is the station?* → *Could
 *Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*
 *Could you tell me where the meeting room is?*
 Question word + *to* + base verb: *I don't know what to do. I'm not sure how to start.*
-*if / whether* (+ *or not*): *I can't decide whether to accept.*
-An embedded question can be a subject: *What he said surprised me.*
+*if / whether* + subject + verb: *I wonder if / whether I should accept.* *whether* + *to* + base verb: *I can't decide whether to accept.*
+An embedded question can be a subject: *Whether he will come is still unclear.*
 After prepositions: *We talked about how to improve the results.*
-The same structure as *Could you tell me where ...?*, now inside statements and phrases: *I don't know what to do. What he said surprised me.*
+The same structure as *Could you tell me where ...?*, inside statements and phrases: *I don't know what to do. Whether he will come is still unclear.*
 No tense change: only the word order changes. In reported questions the tense shifts back (*She asked what I wanted*).
 Uncertainty: *no idea, not sure, can't remember, unclear, it depends on.*
-*I wonder, no idea, not sure, it depends on, the question is, whoever, whatever*
+*I wonder, no idea, not sure, it depends on, the question is*
 *I have no idea how long the meeting will take.*
 """
 

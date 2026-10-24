@@ -722,6 +722,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Darītāju (*someone*) izlaiž, jo tas nav svarīgs."
 },
 {
+"id": "pasp-B11-1a",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "When ___ this museum opened?",
+"correct": "was",
+"wrong": [
+"did",
+"is",
+"has"
+],
+"why": "Passive question in the past: *When* + *was* + subject + past participle.",
+"wrong_why": {},
+"why_lv": "Jautājums ciešamajā kārtā pagātnē: *When + was* + teik. priekšmets + 3. forma."
+},
+{
 "id": "pasp-B11-3a",
 "skill": "past_simple_passive",
 "level": "B1.1",
@@ -1097,6 +1114,31 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Unless* nozīmē *if* ... *not*: *We won't finish unless we start now.*"
 },
 {
+"id": "cf-B11-3a",
+"skill": "cond_first",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "___ you finish early, we ___ go for a drink.",
+"answers": [
+[
+"If"
+],
+[
+"will"
+]
+],
+"why": "First conditional: *If* + present simple, *will* + base verb.",
+"hints": [],
+"bank": [
+"If",
+"Unless",
+"will",
+"would"
+],
+"why_lv": "First conditional: *If* + Present Simple, *will* + pamatforma."
+},
+{
 "id": "cf-B11-3b",
 "skill": "cond_first",
 "level": "B1.1",
@@ -1159,6 +1201,31 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Unless* already means *if ... not*, so we do not add a second negative.",
 "wrong_why": {},
 "why_lv": "*Unless* jau nozīmē *if* ... *not*, tāpēc otru noliegumu nepievieno."
+},
+{
+"id": "cs-B11-3b",
+"skill": "cond_second",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "If I ___ a cat, I ___ sleep all day.",
+"answers": [
+[
+"were"
+],
+[
+"would"
+]
+],
+"why": "Second conditional: *if* + *were* / past simple, *would* + base verb.",
+"hints": [],
+"bank": [
+"were",
+"would",
+"will",
+"had"
+],
+"why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
 },
 {
 "id": "cs-B12-3a",
@@ -1692,6 +1759,23 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*Whoever* + verb = it does not matter who.",
 "hints": []
+},
+{
+"id": "cf-B12-4a-r2",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence does NOT express this warning: you need to hurry to avoid being late?",
+"correct": "Unless you don't hurry, you will be late.",
+"wrong": [
+"Unless you hurry, you will be late.",
+"If you don't hurry, you will be late.",
+"You will be late unless you hurry."
+],
+"why": "*Unless you hurry* means *if you do not hurry*. Adding *not* changes the condition and loses the intended warning. A negative clause after *unless* can be grammatical when that different meaning is intended.",
+"wrong_why": {},
+"why_lv": "*Unless you hurry* nozīmē *if you do not hurry*. Papildu noliegums maina nosacījumu un vairs neizsaka doto brīdinājumu. Noliegums pēc *unless* var būt pareizs, ja ir domāta cita nozīme."
 },
 {
 "id": "ct-B22-4a-r2",

@@ -296,6 +296,17 @@ def revise(original):
     more_again('ia-C11-3a', R + ' unclear = not clear.', ["It's unclear who made the decision.", 'It is unclear who made the decision.'])
     fix('ps-A22-3a', 'The same sentence without a time word was also a past-simple task; add usually so only the present simple fits.',
         q='What time ___ the film usually ___? (start)')
+    # Audit of the whole bank (24 October): a wrong option or card that also fitted, and the double-negative key sentence once more
+    fix_again('cf-B12-4a', 'Unless you don\'t hurry is not a natural structure (as in the C1 task); ask which sentence has the same meaning, with natural options.',
+        q="Which sentence means the same as: 'If you don't hurry, you will be late.'?", correct='Unless you hurry, you will be late.',
+        wrong=['If you hurry, you will be late.', 'Unless you hurry, you will be on time.', 'You will be on time unless you hurry.'],
+        why='*Unless you hurry* means *if you do not hurry*, so the warning stays the same: you will be late. The other sentences change who must hurry or what happens.')
+    fix('pasp-B11-1a', 'When is this museum opened? is also a correct question; use a form that does not fit the singular noun.',
+        wrong=['did', 'were', 'has'])
+    fix('cf-B11-3a', 'Unless you finish early, we will go also fitted; use a card that cannot start the sentence.',
+        bank=['If', 'Until', 'will', 'would'])
+    fix('cs-B11-3b', 'If I had a cat, I would sleep all day also fitted; use a card that cannot follow if.',
+        bank=['were', 'would', 'will', 'being'])
     fix('pasp-B11-3a', 'The verb and the noun were the same word (film); use a verb that cannot be mistaken for a noun.',
         q='Where ___ this photo ___? (take)', answers=[['was'], ['taken']])
     fix('ct-B22-2a', 'An option that says both sentences are about the past is illogical for this question; use a reversed contrast.',

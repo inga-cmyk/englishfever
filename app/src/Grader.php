@@ -133,7 +133,7 @@ final class Grader
                 // the learner drags cards into order: the same cards must all be used once, and the sentence must be an accepted one
                 $given = is_array($answer) ? array_map('strval', $answer) : preg_split('/\s+/u', trim((string) $answer), -1, PREG_SPLIT_NO_EMPTY);
                 $want = explode(' ', $item['sentence']);
-                $a = $given; $b = $want; sort($a); sort($b);
+                $a = array_map(fn($x) => mb_strtolower($x, 'UTF-8'), $given); $b = array_map(fn($x) => mb_strtolower($x, 'UTF-8'), $want); sort($a); sort($b);   // the cards show proper names with a capital: compare without case
                 $nice = $item['display_answer'] ?? self::nice($item['sentence']);
                 if ($a !== $b) return ['correct' => false, 'show' => $nice, 'specific' => 'Use every card once.', 'specific_lv' => 'Izmanto katru kartīti vienu reizi.', 'notes' => []];
                 $acc = array_map([self::class, 'norm'], $item['answers'][0]);
@@ -183,10 +183,28 @@ final class Grader
         return ['correct' => false, 'show' => '', 'specific' => null, 'notes' => []];
     }
 
+    /** Words that are always written with a capital letter. A word-order task is stored lower case, so they are put back when it is shown. */
+    private const PROPER = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'mondays', 'tuesdays', 'wednesdays', 'thursdays', 'fridays', 'saturdays', 'sundays',
+        'january', 'february', 'march', 'april', 'june', 'july', 'august', 'september', 'october', 'november', 'december',
+        'latvia', 'latvian', 'riga', 'london', 'paris', 'rome', 'berlin', 'madrid', 'spain', 'spanish', 'italy', 'italian', 'germany', 'german', 'france', 'french', 'english', 'ecuador', 'canada', 'brazil',
+        'japan', 'japanese', 'asia', 'europe', 'america', 'australia', 'china', 'chinese', 'india', 'korea', 'korean', 'netherlands', 'poland', 'russian', 'estonia', 'lithuania', 'sweden', 'finland',
+        'picasso', 'adele', 'eiffel', 'everest', 'alps', 'baltic', 'atlantic', 'christmas', 'tom', 'ben', 'anna', 'sam', 'maria', 'kate', 'lena', 'jon', 'max', 'mia', 'mark', 'jack', 'ziya', 'mo', 'jo', 'tim', 'dan', 'lucy', 'novak'];
+
+    /** One word of an order task as it is written in a sentence (not the first word: that gets its capital in nice()). */
+    public static function properCase(string $w): string
+    {
+        $l = mb_strtolower($w, 'UTF-8');
+        if (preg_match('/^i(\'(m|ll|ve|d))?$/u', $l)) return 'I' . mb_substr($l, 1, null, 'UTF-8');
+        if (in_array($l, ['uk', 'usa', 'un', 'eu'], true)) return mb_strtoupper($l, 'UTF-8');
+        if (in_array($l, self::PROPER, true)) return mb_strtoupper(mb_substr($l, 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($l, 1, null, 'UTF-8');
+        return $w;
+    }
+
     /** A word-order answer is stored lower case without punctuation. Show it as a normal sentence. */
     private static function nice(string $s): string
     {
         $q = preg_match('/^(could|can|do|does|did|would|will|is|are|was|were|have|has|what|where|when|why|how|who|which)\b/i', $s);
+        $s = implode(' ', array_map([self::class, 'properCase'], explode(' ', $s)));
         return mb_strtoupper(mb_substr($s, 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($s, 1, null, 'UTF-8') . ($q ? '?' : '.');
     }
 

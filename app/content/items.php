@@ -3500,7 +3500,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "pasp-B11-1a",
+"id": "pasp-B11-1a-r2",
 "skill": "past_simple_passive",
 "level": "B1.1",
 "bloom": 1,
@@ -3509,7 +3509,7 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "was",
 "wrong": [
 "did",
-"is",
+"were",
 "has"
 ],
 "why": "Passive question in the past: *When* + *was* + subject + past participle.",
@@ -4822,7 +4822,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "First conditional apraksta iespējamu nākotnes situāciju un tās ticamo rezultātu."
 },
 {
-"id": "cf-B11-3a",
+"id": "cf-B11-3a-r2",
 "skill": "cond_first",
 "level": "B1.1",
 "bloom": 3,
@@ -4840,7 +4840,7 @@ return json_decode(<<<'EF_JSON_END'
 "hints": [],
 "bank": [
 "If",
-"Unless",
+"Until",
 "will",
 "would"
 ],
@@ -5014,19 +5014,19 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Unless* nozīmē *if* ... *not*. Pēc *unless* lieto Present Simple (bez noliegumu)."
 },
 {
-"id": "cf-B12-4a-r2",
+"id": "cf-B12-4a-r3",
 "skill": "cond_first",
 "level": "B1.2",
 "bloom": 4,
 "kind": "mcq",
-"q": "Which sentence does NOT express this warning: you need to hurry to avoid being late?",
-"correct": "Unless you don't hurry, you will be late.",
+"q": "Which sentence means the same as: 'If you don't hurry, you will be late.'?",
+"correct": "Unless you hurry, you will be late.",
 "wrong": [
-"Unless you hurry, you will be late.",
-"If you don't hurry, you will be late.",
-"You will be late unless you hurry."
+"If you hurry, you will be late.",
+"Unless you hurry, you will be on time.",
+"You will be on time unless you hurry."
 ],
-"why": "*Unless you hurry* means *if you do not hurry*. Adding *not* changes the condition and loses the intended warning. A negative clause after *unless* can be grammatical when that different meaning is intended.",
+"why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: you will be late. The other sentences change who must hurry or what happens.",
 "wrong_why": {},
 "why_lv": "*Unless you hurry* nozīmē *if you do not hurry*. Papildu noliegums maina nosacījumu un vairs neizsaka doto brīdinājumu. Noliegums pēc *unless* var būt pareizs, ja ir domāta cita nozīme."
 },
@@ -5188,7 +5188,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "cs-B11-3b",
+"id": "cs-B11-3b-r2",
 "skill": "cond_second",
 "level": "B1.1",
 "bloom": 3,
@@ -5208,7 +5208,7 @@ return json_decode(<<<'EF_JSON_END'
 "were",
 "would",
 "will",
-"had"
+"being"
 ],
 "why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
 },

@@ -26,23 +26,36 @@ def lv_fix(t):
     t = t.replace("*", "")
     for a, b in LV_SUBS: t = re.sub(a, b, t)
     return italics.lv_mark(t)   # every English word in a Latvian explanation is an example: the same rule the built-in explanations use
-def mc(t, lv, b, q, ok, wrong, why, lvw): rows.append([t, lv, "mcq", q, ok, " | ".join(wrong), why, lvw, b])
+def mc(t, lv, b, q, ok, wrong, why, lvw):
+    fx = audit_fixes.MCQ.get((q, ok)) or audit_fixes.MCQ.get(("*", ok))   # corrections from the audit (audit_fixes.py)
+    old = None
+    if fx:
+        if fx.get("ok", ok) != ok: old = ok
+        wrong, q, ok = fx.get("wrong", wrong), fx.get("q", q), fx.get("ok", ok)
+    rows.append([t, lv, "mcq", q, ok, " | ".join(wrong), why, lvw, b] + ([old] if old else []))
 def replaces(old):
     """The last row replaces an older version that was already imported: the old *correct option* (choose), *sentence* (word order) or *task text* (other types). The importer retires the old one."""
     rows[-1] = rows[-1][:9] + [old]
 def gp(t, lv, b, q, ok, why, lvw, bank=None):
     ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
-    rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b])
+    old = None
+    if bank and q in audit_fixes.BANK_CHIPS: bank = audit_fixes.BANK_CHIPS[q]   # a card that also fitted the sentence is replaced (audit_fixes.py)
+    if q in audit_fixes.BANK_TASK: old, q = q, audit_fixes.BANK_TASK[q]
+    rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b] + ([old] if old else []))
 def tx(t, lv, b, q, ok, why, lvw):
     ok = list(ok) if isinstance(ok, (list, tuple)) else [x.strip() for x in ok.split("|")]
     ok = ok + [x for x in extra_answers.TEXT.get(q, []) if x not in ok]       # added by hand (extra_answers.py)
     ok = auto_answers.extend(q, ok)                                            # time phrase first, that left out, me left out, polite openers (auto_answers.py)
     rows.append([t, lv, "text", q, " | ".join(ok), "", why, lvw, b])
-import alt_orders, auto_answers, extra_answers
+import alt_orders, auto_answers, extra_answers, audit_fixes
 def od(t, lv, b, q, ok, why, lvw, also=None):
     also = list(also or []) + [a for a in alt_orders.alternatives(ok) if a not in (also or [])]   # other correct orders (alt_orders.py)
     rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])
-def mt(t, lv, b, q, pairs, why, lvw): rows.append([t, lv, "match", q, " ; ".join(f"{a} = {c}" for a, c in pairs), "", why, lvw, b])
+def mt(t, lv, b, q, pairs, why, lvw):
+    old = " ; ".join(f"{a} = {c}" for a, c in pairs)
+    fx = audit_fixes.MATCH_BY_OLD.get(old)                                  # an ambiguous matching task is replaced (audit_fixes.py)
+    if fx: q, pairs = fx
+    rows.append([t, lv, "match", q, " ; ".join(f"{a} = {c}" for a, c in pairs), "", why, lvw, b] + ([old] if fx else []))
 def plain(task, typ):
     """Instructions stay plain: no setting in front of a question ("At work: which sentence is NOT correct?"), no hint after a word-order
     instruction, no topic after a matching instruction. The sentence, options and tiles carry the content."""

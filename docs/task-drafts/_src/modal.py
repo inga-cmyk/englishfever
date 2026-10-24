@@ -1,12 +1,18 @@
 import csv, os
 from lib import *
-import alt_orders
+import alt_orders, audit_fixes
 T = "Modal verbs"
 old = list(csv.reader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "modal_base.csv"), encoding="utf-8-sig", newline="")))[1:]
 drop = ("Nobody forces you, but you feel it is very important", "Your job needs a uniform. Which sentence shows a duty from outside?")
 for r in old:
     if any(r[3].startswith(d) for d in drop): continue
     row = r[:8] + [""]
+    if row[2] == "mcq":   # corrections from the audit (audit_fixes.py)
+        fx = audit_fixes.MCQ.get((row[3], row[4])) or audit_fixes.MCQ.get(("*", row[4]))
+        if fx:
+            if fx.get("ok", row[4]) != row[4]: row = row[:9] + [row[4]]
+            row[3], row[4] = fx.get("q", row[3]), fx.get("ok", row[4])
+            if "wrong" in fx: row[5] = " | ".join(fx["wrong"])
     if row[2] == "order":   # other correct orders (alt_orders.py)
         have = [x.strip() for x in row[5].replace("also accepted:", "").split("|") if x.strip()]
         more = [a for a in alt_orders.alternatives(row[4]) if a not in have]

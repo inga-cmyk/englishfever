@@ -182,7 +182,7 @@ final class Content
             if (!empty($it['bank'])) $out['bank'] = self::shuffled($it['bank'], $seed);
         }
         if ($it['kind'] === 'order') {
-            $out['tokens'] = self::shuffled(explode(' ', $it['sentence']), $seed);
+            $out['tokens'] = self::shuffled(array_map(['Grader', 'properCase'], explode(' ', $it['sentence'])), $seed);
         }
         if ($it['kind'] === 'match') {
             $out['lefts'] = array_column($it['pairs'], 0);

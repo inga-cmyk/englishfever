@@ -32,3 +32,4 @@ Latvian text: learners who choose Latvian see it. Approve the English now if you
 
 ## E. Later, not now
 Rotate the database password and the SSO secret (config.php and wp-config.php together); research study stays off until the ethics wording is ready.
+7. Corrections to questions you already imported: import the same files again (`a2-big-1`, `a2-extras-1`, `b1-cond-rep-1`, `b1-new-1` to `b1-new-3`, `b1-passives-1`, `b1-tenses-1`, `b1-tenses-2`, `comparison-1`, `modal-verbs-1`). The check page lists the changed questions as *updated* (they keep their number, status and results) and the rest as *already there*. One matching task is replaced by a new draft (the old one is retired); approve the new draft.

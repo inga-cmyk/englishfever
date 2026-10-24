@@ -5733,7 +5733,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ct-B22-3a",
+"id": "ct-B22-3a-r2",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 3,
@@ -5742,7 +5742,9 @@ return json_decode(<<<'EF_JSON_END'
 "answers": [
 [
 "hadn't driven",
-"had not driven"
+"had not driven",
+"hadn't been driving",
+"had not been driving"
 ],
 [
 "wouldn't have lost",

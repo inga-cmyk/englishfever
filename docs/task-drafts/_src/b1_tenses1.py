@@ -133,7 +133,7 @@ P.gap("B1.1","He ___ his bike when he ___ off. (ride / fall)","was riding / fell
 P.gap("B1.1","While she ___ the report, her colleagues ___ the room. (write / leave)","was writing / left")
 P.gap("B1.1","What ___ you ___ when I called you last night? (do)","were / doing")
 P.gap("B1.2","I ___ to tell you, but you were busy. (try)","was trying")
-P.text("B1.1","Join with when: I was cooking. The smoke alarm went off.",["I was cooking when the smoke alarm went off.","When the smoke alarm went off, I was cooking."])
+P.text("B1.1","Join with when: I was cooking. The smoke alarm went off.",["I was cooking when the smoke alarm went off.","When the smoke alarm went off, I was cooking.","When I was cooking, the smoke alarm went off.","The smoke alarm went off when I was cooking."])
 P.text("B1.1","Join with while: We were waiting. A man asked us for directions.",["While we were waiting, a man asked us for directions.","A man asked us for directions while we were waiting."])
 P.text("B1.2","Make it negative: I was planning to come.",["I wasn't planning to come.","I was not planning to come."],b=4)
 P.match("B1.1","Match each long action with the short event.",[("I was reading in bed","when the lights went out."),("We were crossing the road","when a cyclist hit us."),("She was painting the wall","when she fell off the ladder."),("They were driving home","when the engine stopped.")])

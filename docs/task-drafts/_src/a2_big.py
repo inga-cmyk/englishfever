@@ -89,7 +89,7 @@ P.gap("A2.2","The boys ___ football when it began to rain. (play)","were playing
 P.gap("A2.2","___ it ___ when you left home? (rain)","Was / raining")
 P.text("A2.2","Make a question: They were waiting for a taxi.","Were they waiting for a taxi?")
 P.text("A2.2","Make it negative: We were talking.",["We weren't talking.","We were not talking."])
-P.text("A2.2","Join with when: I was walking home. It started to rain.",["I was walking home when it started to rain.","When it started to rain, I was walking home."],b=4)
+P.text("A2.2","Join with when: I was walking home. It started to rain.",["I was walking home when it started to rain.","When it started to rain, I was walking home.","When I was walking home, it started to rain.","It started to rain when I was walking home."],b=4)
 P.match("A2.2","Match each beginning with its ending.",[("I was cooking","dinner in the kitchen."),("They were playing","tennis in the park."),("She was reading","a newspaper on the sofa."),("We were watching","a film on TV.")],("*Was / were* + *-ing* shows what was in progress.","*Was / were* + *-ing* parāda, kas norisinājās."))
 P.match("A2.2","Match each question with its answer.",[("What were you doing?","I was cleaning my room."),("Was it raining?","Yes, it was."),("Were they sleeping?","No, they weren't."),("Who was she talking to?","Her brother.")])
 P.mcq("A2.2","Choose the correct form: While I ___ a bath, the phone rang.","was taking",["take","am taking","were taking"],b=3)

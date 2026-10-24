@@ -44,3 +44,5 @@
 | An explanation cut to one character, or missing | `draft_rules_test`: length check; `drafts_test` |
 
 | A `;` inside a matching pair (it separates the pairs) | `drafts_test` / `tasks_test`: the importer rejects the row |
+| A word-order task that has a second correct order (time phrase first, *if*-part second, *and* clauses swapped, *my boss is the man who called you*) | `alt_orders.py` adds them; `tests/orders_test.py`; when writing a new order task, say the sentence aloud both ways |
+| A wrong option that is also correct English (*will freeze* after *If water gets very cold, it ___*) | read every option in the sentence; a main-clause blank in a conditional needs distractors that are wrong in that sentence |

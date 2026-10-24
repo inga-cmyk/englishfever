@@ -29,7 +29,10 @@ def lv_fix(t):
 def mc(t, lv, b, q, ok, wrong, why, lvw): rows.append([t, lv, "mcq", q, ok, " | ".join(wrong), why, lvw, b])
 def gp(t, lv, b, q, ok, why, lvw, bank=None): rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b])
 def tx(t, lv, b, q, ok, why, lvw): rows.append([t, lv, "text", q, " | ".join(ok) if isinstance(ok, (list, tuple)) else ok, "", why, lvw, b])
-def od(t, lv, b, q, ok, why, lvw, also=None): rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])
+import alt_orders
+def od(t, lv, b, q, ok, why, lvw, also=None):
+    also = list(also or []) + [a for a in alt_orders.alternatives(ok) if a not in (also or [])]   # other correct orders (alt_orders.py)
+    rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])
 def mt(t, lv, b, q, pairs, why, lvw): rows.append([t, lv, "match", q, " ; ".join(f"{a} = {c}" for a, c in pairs), "", why, lvw, b])
 def plain(task, typ):
     """Instructions stay plain: no setting in front of a question ("At work: which sentence is NOT correct?"), no hint after a word-order

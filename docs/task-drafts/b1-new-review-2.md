@@ -6,8 +6,8 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 ### B1.1 (28)
 
-- [drag the words] **Put the words in order.**   ✔ it might rain later this afternoon  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
-- [drag the words] **Put the words in order.**   ✔ she may not be at home today  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
+- [drag the words] **Put the words in order.**   ✔ it might rain later this afternoon   (also accepted: later this afternoon it might rain)  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
+- [drag the words] **Put the words in order.**   ✔ she may not be at home today   (also accepted: today she may not be at home)  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
 - [drag the words] **Put the words in order.**   ✔ you needn't wait for me  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
 - [drag the words] **Put the words in order.**   ✔ we were able to finish the work on time  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
 - [drag the words] **Put the words in order.**   ✔ children aren't allowed to enter the building  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
@@ -37,8 +37,8 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 ### B1.2 (18)
 
-- [drag the words] **Put the words in order.**   ✔ i haven't been able to reach her all day  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
-- [drag the words] **Put the words in order.**   ✔ we needn't have rushed because the train was late  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
+- [drag the words] **Put the words in order.**   ✔ i haven't been able to reach her all day   (also accepted: all day i haven't been able to reach her)  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
+- [drag the words] **Put the words in order.**   ✔ we needn't have rushed because the train was late   (also accepted: because the train was late we needn't have rushed)  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
 - [drag the words] **Put the words in order.**   ✔ you will be able to swim after a few lessons  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
 - [drag the word] **We needn't ___ hurried. The train was late.**   ✔ have   (chips: have | has | had)  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
 - [drag the word] **I was ___ to fix the bike, and now it works.**   ✔ able   (chips: able | can | could)  — might / may / could = possible. can't = sure it is not true. be able to = can in other tenses. needn't = not necessary. be allowed to = permission.
@@ -62,8 +62,8 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 - [drag the words] **Put the words in order.**   ✔ this form must be signed by the manager  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the words] **Put the words in order.**   ✔ tickets can be bought online  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
-- [drag the words] **Put the words in order.**   ✔ the door should be locked at night  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
-- [drag the words] **Put the words in order.**   ✔ the problem can't be solved today  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
+- [drag the words] **Put the words in order.**   ✔ the door should be locked at night   (also accepted: at night the door should be locked)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
+- [drag the words] **Put the words in order.**   ✔ the problem can't be solved today   (also accepted: today the problem can't be solved)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the words] **Put the words in order.**   ✔ all rooms must be cleaned before noon  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the word] **Shoes must ___ taken off at the door.**   ✔ be   (chips: be | been | being)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the word] **This can't ___ repaired.**   ✔ be   (chips: be | been | is)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
@@ -88,9 +88,9 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 ### B1.2 (18)
 
-- [drag the words] **Put the words in order.**   ✔ the report should have been finished yesterday  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
+- [drag the words] **Put the words in order.**   ✔ the report should have been finished yesterday   (also accepted: yesterday the report should have been finished)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the words] **Put the words in order.**   ✔ the accident could have been avoided  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
-- [drag the words] **Put the words in order.**   ✔ the old building ought to be repaired soon  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
+- [drag the words] **Put the words in order.**   ✔ the old building ought to be repaired soon   (also accepted: soon the old building ought to be repaired)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the word] **The window should have ___ closed.**   ✔ been   (chips: been | be | being)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [drag the word] **The accident could have ___ avoided.**   ✔ been   (chips: been | be | being)  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
 - [type a word] **The windows should ___ cleaned last week, but nobody did it.**   ✔ have been  — modal + be + 3. form: must be signed, can be bought. Past: modal + have been + 3. form: should have been closed.
@@ -111,9 +111,9 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 ### B1.1 (25)
 
-- [drag the words] **Put the words in order.**   ✔ i had my hair cut yesterday  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
+- [drag the words] **Put the words in order.**   ✔ i had my hair cut yesterday   (also accepted: yesterday i had my hair cut)  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
 - [drag the words] **Put the words in order.**   ✔ she is having her car repaired  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
-- [drag the words] **Put the words in order.**   ✔ we are having the kitchen painted next week  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
+- [drag the words] **Put the words in order.**   ✔ we are having the kitchen painted next week   (also accepted: next week we are having the kitchen painted)  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
 - [drag the words] **Put the words in order.**   ✔ where do you get your hair cut  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
 - [drag the word] **I'm going to ___ my laptop repaired.**   ✔ have   (chips: have | has | having)  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
 - [drag the word] **She ___ her hair cut every month.**   ✔ has   (chips: has | have | having)  — have + object + 3. form: someone does it for us. I had my hair cut. She is having her car repaired. get is more informal.
@@ -188,8 +188,8 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 - [drag the words] **Put the words in order.**   ✔ she explained the problem to me  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
 - [drag the words] **Put the words in order.**   ✔ he lent his bike to his neighbour  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
-- [drag the words] **Put the words in order.**   ✔ could you pass me the salt please  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
-- [drag the words] **Put the words in order.**   ✔ i will send it to you tomorrow  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
+- [drag the words] **Put the words in order.**   ✔ could you pass me the salt please   (also accepted: please could you pass me the salt)  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
+- [drag the words] **Put the words in order.**   ✔ i will send it to you tomorrow   (also accepted: tomorrow i will send it to you)  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
 - [drag the word] **She explained the problem ___ me.**   ✔ to   (chips: to | at | in)  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
 - [drag the word] **Please tell ___ the truth.**   ✔ me   (chips: me | I | my | to me)  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
 - [drag the word] **Could you lend ___ some money?**   ✔ me   (chips: me | I | my | to me)  — give me a book = give a book to me. to: give, send, show, tell, lend. for: buy, make, cook. explain, suggest, describe: thing first, then to.
@@ -310,7 +310,7 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 
 - [drag the words] **Put the words in order.**   ✔ she speaks english very well  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the words] **Put the words in order.**   ✔ he always arrives late  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
-- [drag the words] **Put the words in order.**   ✔ they walked slowly to the station  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
+- [drag the words] **Put the words in order.**   ✔ they walked slowly to the station   (also accepted: they walked to the station slowly)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the word] **She sings ___.**   ✔ beautifully   (chips: beautifully | beautiful | beauty)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the word] **He drives very ___.**   ✔ carefully   (chips: carefully | careful | care)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the word] **She works very ___.**   ✔ hard   (chips: hard | hardly | harder)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
@@ -331,7 +331,7 @@ Nine topics, two files: `b1-new-4.csv` (more modals, passive with modals, causat
 ### B1.1 (15)
 
 - [drag the words] **Put the words in order.**   ✔ i can hardly hear you  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
-- [drag the words] **Put the words in order.**   ✔ we rarely eat out on weekdays  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
+- [drag the words] **Put the words in order.**   ✔ we rarely eat out on weekdays   (also accepted: on weekdays we rarely eat out)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the words] **Put the words in order.**   ✔ he has never been to london  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the words] **Put the words in order.**   ✔ she carefully closed the door   (also accepted: she closed the door carefully)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.
 - [drag the word] **I can ___ see anything in the dark.**   ✔ hardly   (chips: hardly | hard | harden)  — Manner: -ly (carefully, but well, fast, hard). Frequency: always, never go before the verb, after be. Degree: very, quite, too, enough.

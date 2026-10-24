@@ -131,7 +131,7 @@ final class CustomItems
             $d = json_decode($r['data'], true);
             if (empty($d['q'])) continue;
             $d += ['skill' => $r['skill'], 'level' => $r['level'], 'kind' => $r['kind']];
-            $existing[self::dupKey($d)] = true; $mine[self::dupKey($d)] = true;
+            $existing[self::dupKey($d)] = true; $mine[self::dupKey($d)] = ['id' => $r['item_id'], 'data' => json_encode(array_diff_key($d, ['skill' => 1, 'level' => 1, 'kind' => 1, 'bloom' => 1]), JSON_UNESCAPED_UNICODE)];
             if (self::contentKey($d) !== '') $byContent[self::contentKey($d)] = ['id' => $r['item_id'], 'q' => $d['q']];
         }
         $rows = []; $line = 1; $ok = 0; $bad = 0; $seen = []; $upd = 0; $same = 0;
@@ -152,8 +152,13 @@ final class CustomItems
                     if (isset($byContent[$ok2])) { $res['replaces'] = $byContent[$ok2]['id']; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
                 }
                 if (isset($seen[$dup])) throw new ApiError('This task is twice in the file.', 400);
-                if (isset($mine[$dup])) {                                   // added from a file before, nothing changed
-                    $res['ok'] = true; $res['same'] = true; $res['warnings'] = []; $same++;
+                if (isset($mine[$dup])) {                                   // added from a file before
+                    $now = json_encode(array_diff_key($item, ['skill' => 1, 'level' => 1, 'kind' => 1, 'bloom' => 1]), JSON_UNESCAPED_UNICODE);
+                    if ($now === $mine[$dup]['data']) {                       // nothing changed
+                        $res['ok'] = true; $res['same'] = true; $res['warnings'] = []; $same++;
+                    } else {                                                  // corrected answers, options or explanations: updated where it is (status and results stay)
+                        $res['ok'] = true; $res['update'] = $mine[$dup]['id']; $res['item'] = $item; $res['warnings'] = ['Already added: the corrected answers, options or explanations are updated.']; $upd++;
+                    }
                     $seen[$dup] = true; $rows[] = $res; continue;
                 }
                 if ($ck !== '' && isset($byContent[$ck]) && $byContent[$ck]['q'] !== $item['q']) {   // same task, new wording: update it where it is
@@ -176,7 +181,7 @@ final class CustomItems
                 if (!empty($row['update'])) {
                     $cur = Db::one('SELECT data FROM custom_items WHERE item_id = ?', [$row['update']]);
                     $d = json_decode((string) ($cur['data'] ?? ''), true);
-                    if (is_array($d)) { $d['q'] = $it['q']; Db::update('custom_items', ['data' => json_encode($d, JSON_UNESCAPED_UNICODE), 'updated_at' => time()], 'item_id = ?', [$row['update']]); }
+                    if (is_array($d)) { $nd = $it; unset($nd['skill'], $nd['level'], $nd['bloom'], $nd['kind']); Db::update('custom_items', ['data' => json_encode($nd, JSON_UNESCAPED_UNICODE), 'updated_at' => time()], 'item_id = ?', [$row['update']]); }
                     $row['id'] = $row['update'];
                     continue;
                 }

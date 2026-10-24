@@ -20,7 +20,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 
 ### B1.1 (12)
 
-- [drag the words] **Put the words in order.**   ✔ she didn't use to enjoy cooking but now she loves it  — Subject + used to + base verb + the rest. Negative: didn't use to.
+- [drag the words] **Put the words in order.**   ✔ she didn't use to enjoy cooking but now she loves it   (also accepted: she didn't use to enjoy cooking but she loves it now)  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the words] **Put the words in order.**   ✔ where did you use to go on holiday as a child   (also accepted: as a child where did you use to go on holiday)  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the words] **Put the words in order.**   ✔ my brother used to be shy but now he talks to everyone  — Subject + used to + base verb + the rest. Negative: didn't use to.
 - [drag the word] **We ___ to the same café every Friday when we were students.**   ✔ used to go   (chips: used to go | use to go | are used to go)  — used to + base verb: a past habit or state that is not true now.
@@ -56,8 +56,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 ### A2.2 (12)
 
 - [drag the words] **Put the words in order.**   ✔ my sister has an old bike  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
-- [drag the words] **Put the words in order.**   ✔ the sun is hot in july  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
-- [drag the words] **Put the words in order.**   ✔ i have a cat and a dog  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
+- [drag the words] **Put the words in order.**   ✔ the sun is hot in july   (also accepted: in july the sun is hot)  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
+- [drag the words] **Put the words in order.**   ✔ i have a cat and a dog   (also accepted: i have a dog and a cat)  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
 - [drag the word] **I eat ___ apple every day.**   ✔ an   (chips: an | a | some)  — a / an before one countable noun (an before a vowel sound). the for something known. No article for general plurals and uncountable nouns.
 - [drag the word] **My brother is ___ doctor.**   ✔ a   (chips: a | an | some)  — a / an before one countable noun (an before a vowel sound). the for something known. No article for general plurals and uncountable nouns.
 - [type a word] **She is ___ honest woman. (a / an)**   ✔ an  — a / an before one countable noun (an before a vowel sound). the for something known or the only one.
@@ -124,7 +124,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 
 ### B1.1 (16)
 
-- [drag the words] **Put the words in order.**   ✔ there are too many cars on the road today  — many + plural, much + uncountable. a few + plural, a little + uncountable.
+- [drag the words] **Put the words in order.**   ✔ there are too many cars on the road today   (also accepted: today there are too many cars on the road)  — many + plural, much + uncountable. a few + plural, a little + uncountable.
 - [drag the words] **Put the words in order.**   ✔ i don't have enough time to finish the report  — many + plural, much + uncountable. a few + plural, a little + uncountable.
 - [drag the words] **Put the words in order.**   ✔ she has only a few friends in this city  — many + plural, much + uncountable. a few + plural, a little + uncountable.
 - [drag the word] **We didn't take ___ photos on holiday.**   ✔ many   (chips: many | much | a little)  — many / a few + plural nouns. much / a little + uncountable nouns. some in positive sentences, any in questions and negatives.
@@ -145,7 +145,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 
 ### B1.1 (19)
 
-- [drag the words] **Put the words in order.**   ✔ the man who called you is my boss  — Noun + who / which / that / where + the rest of the clause.
+- [drag the words] **Put the words in order.**   ✔ the man who called you is my boss   (also accepted: my boss is the man who called you)  — Noun + who / which / that / where + the rest of the clause.
 - [drag the words] **Put the words in order.**   ✔ i love the film that we saw yesterday  — Noun + who / which / that / where + the rest of the clause.
 - [drag the words] **Put the words in order.**   ✔ this is the house where i grew up  — Noun + who / which / that / where + the rest of the clause.
 - [drag the word] **A dentist is a person ___ looks after your teeth.**   ✔ who   (chips: who | which | where)  — who = people, which = things, that = both, where = places, whose = belongs to. After a comma we do not use that.
@@ -168,7 +168,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 ### B1.2 (21)
 
 - [drag the words] **Put the words in order.**   ✔ my brother who lives in berlin is a nurse  — Noun + who / which / that / where + the rest of the clause.
-- [drag the words] **Put the words in order.**   ✔ the woman whose car was stolen called the police  — Noun + who / which / that / where + the rest of the clause.
+- [drag the words] **Put the words in order.**   ✔ the woman whose car was stolen called the police   (also accepted: the police called the woman whose car was stolen)  — Noun + who / which / that / where + the rest of the clause.
 - [drag the words] **Put the words in order.**   ✔ the hotel where we stayed was right next to the beach  — Noun + who / which / that / where + the rest of the clause.
 - [drag the word] **The house ___ roof is red belongs to my aunt.**   ✔ whose   (chips: whose | which | who | where)  — who = people, which = things, that = both, where = places, whose = belongs to. After a comma we do not use that.
 - [drag the word] **Paris, ___ is the capital of France, is very busy in summer.**   ✔ which   (chips: which | that | who)  — who = people, which = things, that = both, where = places, whose = belongs to. After a comma we do not use that.
@@ -187,7 +187,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [type the sentence] **Join the two sentences: My uncle lives in Spain. He is a chef.**   ✔ My uncle, who lives in Spain, is a chef. | My uncle, who is a chef, lives in Spain.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join the two sentences: She passed her driving test. This surprised everyone.**   ✔ She passed her driving test, which surprised everyone.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
 - [type the sentence] **Join the two sentences: I met a man. His dog can open doors.**   ✔ I met a man whose dog can open doors.  — Join two sentences with who / which / that / where / whose. Do not repeat the noun or the object.
-- [match] **Match each clause with its meaning.**   ✔ a clause without commas = tells us which one  ·  a clause with commas = gives extra information  ·  whose = shows who owns something  ·  which after a comma = refers to the whole sentence before it  — who / which / where / whose show what the clause describes.
+- [match] **Match each clause with its meaning.**   ✔ a clause without commas = tells us which one  ·  a clause with commas = gives extra information  ·  whose = shows who owns something  ·  where = refers to a place  — who / which / where / whose show what the clause describes.
 
 ## Time clauses (36 questions)
 
@@ -195,7 +195,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 
 - [drag the words] **Put the words in order.**   ✔ i will call you when i get home   (also accepted: when i get home i will call you)  — Time word + Present Simple, then will or going to in the main clause.
 - [drag the words] **Put the words in order.**   ✔ we will leave as soon as everyone is ready   (also accepted: as soon as everyone is ready we will leave)  — Time word + Present Simple, then will or going to in the main clause.
-- [drag the words] **Put the words in order.**   ✔ wait here until the doctor calls your name  — Time word + Present Simple, then will or going to in the main clause.
+- [drag the words] **Put the words in order.**   ✔ wait here until the doctor calls your name   (also accepted: until the doctor calls your name wait here)  — Time word + Present Simple, then will or going to in the main clause.
 - [drag the word] **Let's leave before it ___ dark.**   ✔ gets   (chips: gets | will get | got)  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [drag the word] **I'll cook dinner when I ___ home.**   ✔ get   (chips: get | will get | am get)  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [drag the word] **We'll go for a walk after we ___ lunch.**   ✔ have   (chips: have | will have | had)  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
@@ -217,7 +217,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 ### B1.2 (16)
 
 - [drag the words] **Put the words in order.**   ✔ i will send you the file as soon as i have finished it   (also accepted: as soon as i have finished it i will send you the file)  — Time word + Present Simple, then will or going to in the main clause.
-- [drag the words] **Put the words in order.**   ✔ by the time you arrive we will have finished dinner  — Time word + Present Simple, then will or going to in the main clause.
+- [drag the words] **Put the words in order.**   ✔ by the time you arrive we will have finished dinner   (also accepted: we will have finished dinner by the time you arrive)  — Time word + Present Simple, then will or going to in the main clause.
 - [drag the words] **Put the words in order.**   ✔ she won't sign the contract until she has read every page   (also accepted: until she has read every page she won't sign the contract)  — Time word + Present Simple, then will or going to in the main clause.
 - [drag the word] **I'll tidy up after the guests ___ .**   ✔ have left   (chips: have left | will leave | left)  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [drag the word] **Let's wait ___ the rain stops.**   ✔ until   (chips: until | while | during)  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
@@ -379,7 +379,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 ### B1.1 (20)
 
 - [drag the words] **Put the words in order.**   ✔ she suggested taking the earlier train  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
-- [drag the words] **Put the words in order.**   ✔ after finishing work she went straight to the gym  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
+- [drag the words] **Put the words in order.**   ✔ after finishing work she went straight to the gym   (also accepted: she went straight to the gym after finishing work)  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the words] **Put the words in order.**   ✔ they can't afford to buy a house in the city centre  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the word] **I avoid ___ coffee in the evening.**   ✔ drinking   (chips: drinking | to drink | drink)  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.
 - [drag the word] **She refused ___ the contract.**   ✔ to sign   (chips: to sign | signing | sign)  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.
@@ -402,7 +402,7 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 ### B1.2 (21)
 
 - [drag the words] **Put the words in order.**   ✔ i will never forget meeting her for the first time  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
-- [drag the words] **Put the words in order.**   ✔ remember to turn off the lights when you leave  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
+- [drag the words] **Put the words in order.**   ✔ remember to turn off the lights when you leave   (also accepted: when you leave remember to turn off the lights)  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the words] **Put the words in order.**   ✔ he stopped to talk to a neighbour on the way home  — Check the verb: enjoy / finish / avoid + -ing; want / decide / hope + to.
 - [drag the word] **I'm thinking of ___ jobs next year.**   ✔ changing   (chips: changing | to change | change)  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.
 - [drag the word] **She was accused of ___ the money.**   ✔ stealing   (chips: stealing | to steal | steal)  — The first verb decides: enjoy / finish / avoid / suggest + -ing; want / decide / hope / manage / refuse + to + base verb. After a preposition: -ing.

@@ -216,6 +216,8 @@ def revise(original):
           "I wouldn't have been fined if I had seen the sign.", "I would not have parked there if I had seen the sign."])
     more('cm-B22-3a', 'Accept the if-clause in second position.',
          ['He would be living in Paris now if he had taken the job.', "He'd be living in Paris now if he'd taken the job."])
+    fix('ct-B22-3a', "The continuous form is also correct: hadn't been driving (reported by a learner).",
+        answers=[["hadn't driven", "had not driven", "hadn't been driving", "had not been driving"], ["wouldn't have lost", "would not have lost", "'d not have lost"]])
     more('cm-C11-3a', 'Accept the inverted clause in second position.',
          ["I wouldn't be in this mess now had I listened to my accountant.", "I'd not be in this mess now had I listened to my accountant."])
     more('ia-C12-3a', 'Accept the wh-ever clause after the instruction.',

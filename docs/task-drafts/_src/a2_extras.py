@@ -119,7 +119,7 @@ mc(T,"A2.2",4,"About history: which sentence is NOT correct?","The castle was bu
 mc(T,"A2.2",3,"Choose the correct option: When ___ the museum ___ ?","was / opened",["did / opened","was / open","is / opened"],"Passive question: *was* + subject + participle.","Pasīva jautājums: *was* + priekšmets + divdabis.")
 # ============ Conditionals ============
 T = "Zero conditional (if + present, present)"
-mc(T,"A2.2",1,"Choose the correct form: If water gets very cold, it ___ .","freezes",["will freeze","froze","freeze"],"Always true: present simple in both parts.","Vienmēr patiess: abās daļās vienkāršā tagadne.")
+mc(T,"A2.2",1,"Choose the correct form: If water gets very cold, it ___ .","freezes",["freezing","froze","freeze"],"Always true: present simple in both parts.","Vienmēr patiess: abās daļās vienkāršā tagadne.")
 mc(T,"A2.2",1,"Choose the correct form: If I ___ tired, I go to bed early.","am",["will be","being","would be"],"Zero conditional: *if* + present simple.","Nulles nosacījums: *if* + vienkāršā tagadne.")
 gp(T,"A2.2",3,"If you ___ a plant, it dies. (not / water)","don't water | do not water","Present simple in the *if* part.","Vienkāršā tagadne *if* daļā.")
 gp(T,"A2.2",3,"When the sun ___ , the snow melts. (come out)","comes out","*When* works like *if* for things that always happen.","*When* darbojas kā *if* lietām, kas notiek vienmēr.")

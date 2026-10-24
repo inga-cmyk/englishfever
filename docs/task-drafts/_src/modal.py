@@ -1,11 +1,17 @@
 import csv, os
 from lib import *
+import alt_orders
 T = "Modal verbs"
 old = list(csv.reader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "modal_base.csv"), encoding="utf-8-sig", newline="")))[1:]
 drop = ("Nobody forces you, but you feel it is very important", "Your job needs a uniform. Which sentence shows a duty from outside?")
 for r in old:
     if any(r[3].startswith(d) for d in drop): continue
-    rows.append(r[:8] + [""])
+    row = r[:8] + [""]
+    if row[2] == "order":   # other correct orders (alt_orders.py)
+        have = [x.strip() for x in row[5].replace("also accepted:", "").split("|") if x.strip()]
+        more = [a for a in alt_orders.alternatives(row[4]) if a not in have]
+        if more: row[5] = "also accepted: " + " | ".join(have + more)
+    rows.append(row)
 # ---- new, in the style of the course books (must / have to are both "necessary"; the contrast is mustn't / don't have to and the past)
 mc(T,"A2.1",2,"Choose the correct word: ___ I use your phone, please?","Can",["Do","Am","Are"],"We ask for permission with *Can I ...?*","Atļauju lūdz ar *Can I ...?*")
 mc(T,"A2.1",2,"Which sentence gives advice?","You should drink more water.",["You can drink water here.","You are drinking water.","You drank water."],"*Should* gives advice.","*Should* dod padomu.")

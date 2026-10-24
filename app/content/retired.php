@@ -1070,6 +1070,27 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "ct-B22-3a",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "If he ___ (not / drive) so fast, he ___ (not / lose) his licence.",
+"answers": [
+[
+"hadn't driven",
+"had not driven"
+],
+[
+"wouldn't have lost",
+"would not have lost",
+"'d not have lost"
+]
+],
+"why": "Negative third conditional: *hadn't* + past participle, *wouldn't have* + past participle.",
+"hints": []
+},
+{
 "id": "ct-B22-4a",
 "skill": "cond_third",
 "level": "B2.2",

@@ -69,3 +69,7 @@ darbības vārds · noliegums · jautājums · vārdu secība · netiešā runa 
 - [LVTB sintaktiskās lomas](https://sintakse.korpuss.lv/docs/v2-16/LVTB_sint_lomas.pdf): *laika (apstākļa) palīgteikums*, *nosacījuma (apstākļa) palīgteikums*, sentence-member functions
 - [enciklopedija.lv: Teikuma loceklis](https://enciklopedija.lv/skirklis/249767-teikuma-loceklis): sentence members (subject, predicate, complement, modifier, adverbial)
 - [valoda.ailab.lv: Jautājamie vietniekvārdi](http://valoda.ailab.lv/latval/vidusskolai/morfol/vietn-jaut.htm) and [uzdevumi.lv: Jautājamie vietniekvārdi](https://www.uzdevumi.lv/p/latviesu-valoda/6-klase/vietniekvards-2922/re-47a5de96-1137-45e3-9579-c6705d1779f6)
+
+## Latviski → Angliski tasks (teacher's decisions, 25 October)
+- A matching task is called **savienošana** in Latvian (not *saskaņošana*).
+- When the Latvian sentence has a time phrase that the English sentence does not have, put it **in brackets at the end** of the Latvian sentence (*Viņš spēlē tenisu. (tieši tagad)*), or translate the whole sentence with the time phrase in both languages.

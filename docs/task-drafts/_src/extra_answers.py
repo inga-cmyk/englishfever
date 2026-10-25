@@ -11,6 +11,8 @@ TEXT = {
     "Say you did not do it yet: I / not / finish / homework / yet.": ["I haven't yet finished my homework.", "I have not yet finished my homework."],
     "Report it: 'Please close the window,' she said to me.": ["She told me to close the window."],
     "Rewrite with enough: The soup is too cold.": ["The soup isn't warm enough.", "The soup is not warm enough."],
+    "Rewrite with before: She checked the windows. Then she left the house.": ["She checked the windows before she left the house.", "Before she left the house, she checked the windows."],   # Cowork issue 24: a clause after before is also correct
+    "Correct the mistake: Before to leave the house, she checked the windows.": ["Before she left the house, she checked the windows.", "She checked the windows before leaving the house.", "She checked the windows before she left the house."],
     "Rewrite with before: First I'll check the dates. After that I'll book the tickets.": ["I'll check the dates before booking the tickets.", "I will check the dates before booking the tickets.", "Before booking the tickets, I'll check the dates.", "Before booking the tickets, I will check the dates."],
     "Join the two plans in one sentence: I'll check the dates first. After that I'll book the tickets.": ["I'll check the dates before booking the tickets.", "I will check the dates before booking the tickets.", "Before booking the tickets, I'll check the dates.", "Before booking the tickets, I will check the dates."],
     "Make a sentence with decide: I will go home early.": ["I have decided to go home early."],

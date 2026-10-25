@@ -118,6 +118,7 @@ EXTRA = {
     "she didn't use to enjoy cooking but now she loves it": ["she didn't use to enjoy cooking but she loves it now"],
     "could you pass me the salt please": ["please could you pass me the salt"],
     "they walked slowly to the station": ["they walked to the station slowly"],
+    "has the manager already signed the contract": ["the manager has already signed the contract", "the manager has signed the contract already"],   # Cowork issue 25: no ? card, so the statement fits too
     "the museum doesn't open on mondays during the winter": ["during the winter the museum doesn't open on mondays", "on mondays during the winter the museum doesn't open", "on mondays the museum doesn't open during the winter"],
     "i have a cat and a dog": ["i have a dog and a cat"],
 }

@@ -74,7 +74,7 @@ order('var-fu-a21-order-01', 'future', 'A2.1',
 order('var-psp-a22-order-01-r2', 'present_simple_passive', 'A2.2',
       'Make a passive sentence. Start with These bicycles.', 'these bicycles are made in Italy',
       'The bicycles receive the action. A plural subject needs *are + past participle*: *are made*.',
-      'Velosipēdi saņem darbību. Daudzskaitlī lieto *are* un 3. formu: *are made*.')
+      'Velosipēdi ir tas, ar ko kaut kas tiek darīts. Daudzskaitlī lieto *are* un 3. formu: *are made*.')
 order('var-pasp-a22-order-01', 'past_simple_passive', 'A2.2',
       'Make a passive sentence. Start with The window.', 'the window was broken during the storm',
       'The past passive uses *was/were + past participle*. With *the window*, use *was broken*.',
@@ -82,7 +82,7 @@ order('var-pasp-a22-order-01', 'past_simple_passive', 'A2.2',
 order('var-pcp-b12-order-01-r2', 'present_continuous_passive', 'B1.2',
       'Describe work in progress. Start with The road and put this week at the end.', 'the road is being repaired this week',
       '*Is being repaired* is the present continuous passive. The work is in progress, and the road receives the action.',
-      '*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un ceļš saņem darbību.')
+      '*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un ceļš ir tas, ar ko kaut kas tiek darīts.')
 order('var-ppp-b11-order-01', 'present_perfect_passive', 'B1.1',
       'Ask whether an action is complete. Start with Has and put yet at the end.', 'has the parcel been delivered yet',
       'A present-perfect passive question uses *has/have + subject + been + past participle*.',
@@ -177,7 +177,7 @@ gap('var-pcp-b12-bank-01-r2', 'present_continuous_passive', 'B1.2',
     'Use the present continuous passive. Your order ___ now, and the tables ___.',
     ['is being prepared', 'are being cleaned'], ['is preparing', 'are cleaning'],
     'The order and tables receive the actions. Use *is/are being + past participle* for passive actions in progress.',
-    'Pasūtījums un galdi saņem darbības. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu.')
+    'Pasūtījums un galdi ir tas, ar ko kaut kas tiek darīts. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu.')
 gap('var-cf-a22-bank-01', 'cond_first', 'A2.2',
     'Make a first conditional: If she ___ early, we ___ the bus.',
     ['arrives', 'will catch'], ['will arrives', 'caught'],
@@ -229,7 +229,7 @@ match('var-pasp-b12-match-01-r2', 'past_simple_passive', 'B1.2', 4,
       'Identify the voice and time in each sentence.',
       [('The technician repaired the printer.', 'Past active: the technician is the subject.'), ('The printer was repaired yesterday.', 'Past passive: the printer is the subject.'), ('The printer is being repaired now.', 'Present continuous passive: the repair is in progress.')],
       'In the active sentence, the subject does the action. In the passive sentences, the printer receives it. The auxiliaries distinguish past completion from work in progress.',
-      'Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris saņem darbību. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba.')
+      'Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris ir tas, ar ko kaut kas tika darīts. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba.')
 match('var-fu-b11-match-01', 'future', 'B1.1', 5,
       'Match each situation with the response that best fits its purpose.',
       [('You decide now to help a colleague with a heavy bag.', "I'll carry that for you."), ('You describe a confirmed appointment for tomorrow.', "I'm seeing the dentist at ten."), ('You predict rain because you can see dark clouds.', "It's going to rain.")],

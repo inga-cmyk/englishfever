@@ -8329,7 +8329,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "These bicycles are made in Italy.",
-"why_lv": "Velosipēdi saņem darbību. Daudzskaitlī lieto *are* un 3. formu: *are made*."
+"why_lv": "Velosipēdi ir tas, ar ko kaut kas tiek darīts. Daudzskaitlī lieto *are* un 3. formu: *are made*."
 },
 {
 "id": "var-pasp-a22-order-01",
@@ -8363,7 +8363,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "The road is being repaired this week.",
-"why_lv": "*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un ceļš saņem darbību."
+"why_lv": "*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un ceļš ir tas, ar ko kaut kas tiek darīts."
 },
 {
 "id": "var-ppp-b11-order-01",
@@ -8805,7 +8805,7 @@ return json_decode(<<<'EF_JSON_END'
 "are cleaning"
 ],
 "hints": [],
-"why_lv": "Pasūtījums un galdi saņem darbības. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu."
+"why_lv": "Pasūtījums un galdi ir tas, ar ko kaut kas tiek darīts. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu."
 },
 {
 "id": "var-cf-a22-bank-01",
@@ -9052,7 +9052,7 @@ return json_decode(<<<'EF_JSON_END'
 "Present continuous passive: the repair is in progress."
 ]
 ],
-"why_lv": "Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris saņem darbību. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba."
+"why_lv": "Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris ir tas, ar ko kaut kas tika darīts. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba."
 },
 {
 "id": "var-fu-b11-match-01",

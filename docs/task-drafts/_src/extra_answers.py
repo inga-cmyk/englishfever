@@ -27,6 +27,11 @@ TEXT = {
 }
 # a gap: the whole answer, blanks separated by " / ", alternatives by " | "
 GAP = {
+    "How long ___ you ___ for this company? (work)": "have / worked | been working",
+    "How long ___ you ___ English? (learn)": "have / been learning | learned",
+    "I ___ all day, so I need a break. (work)": "have been working | have worked",
+    "They ___ for hours, but they haven't found it. (look)": "have been looking | have looked",
+    "How long ___ you ___ for a new job? (look)": "have / been looking | looked",
     "The film was so slow that I was ___.": "bored",
     "I felt very ___ after the long journey.": "tired",
     "That is a very ___ story. I want to read more.": "interesting",

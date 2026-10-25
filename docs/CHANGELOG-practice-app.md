@@ -104,3 +104,4 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Latvian: "Teikuma priekšmets" no longer gets a second "teik."; the lint is case-insensitive.
 - Open writing (built-in): five checks accepted too few verbs (She really enjoys…, I swam / drove / spoke…); new revision ids.
 - Placement result: overall level only; weak topics are named in the Second Chance box.
+- Typed gaps with a verb in brackets and no cue in the sentence now name the tense ("Use the past simple: …"): 34 drafts and 3 built-in tasks (new revisions). Topics with several accepted forms (future, used to) are unchanged.

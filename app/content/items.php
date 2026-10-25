@@ -42,12 +42,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Every morning* rāda ieradumu. Ieradumiem un ikdienas rutīnai lieto Present Simple."
 },
 {
-"id": "ps-A21-3a",
+"id": "ps-A21-3a-r3",
 "skill": "present_simple",
 "level": "A2.1",
 "bloom": 3,
 "kind": "gap",
-"q": "My brother ___ football. (not / like)",
+"q": "Use the present simple: My brother ___ football. (not / like)",
 "answers": [
 [
 "doesn't like",
@@ -1363,12 +1363,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*They = were* + darbības vārds ar *-ing*."
 },
 {
-"id": "pac-A22-3b",
+"id": "pac-A22-3b-r3",
 "skill": "past_continuous",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "___ you ___ at 6 pm? (work)",
+"q": "Use the past continuous: ___ you ___ at 6 pm? (work)",
 "answers": [
 [
 "Were"
@@ -2359,12 +2359,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Past Perfect (*had left*) ir agrākā darbība."
 },
 {
-"id": "ppf-B12-3a",
+"id": "ppf-B12-3a-r3",
 "skill": "past_perfect",
 "level": "B1.2",
 "bloom": 3,
 "kind": "gap",
-"q": "She was upset because she ___ her phone. (lose)",
+"q": "Use the past perfect: She was upset because she ___ her phone. (lose)",
 "answers": [
 [
 "had lost"

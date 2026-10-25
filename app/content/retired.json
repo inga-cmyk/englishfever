@@ -1,5 +1,33 @@
 [
 {
+"id": "ps-A21-3a",
+"skill": "present_simple",
+"level": "A2.1",
+"bloom": 3,
+"kind": "gap",
+"q": "My brother ___ football. (not / like)",
+"answers": [
+[
+"doesn't like",
+"does not like"
+]
+],
+"why": "With *he, she, it* we use *doesn't* + the base verb: *he doesn't like.*",
+"hints": [
+[
+"\\bdoesn't likes\\b|\\bdoes not likes\\b",
+"After *doesn't* we use the base verb: *like*, not *likes.*",
+"Pēc *doesn't* lieto pamatformu: *like*, nevis *likes*."
+],
+[
+"\\bdon't like\\b|\\bdo not like\\b",
+"*My brother* = *he.* With *he/she/it* we use *doesn't*, not *don't.*",
+"*My brother* = *he*. Ar *he/she/it* lieto *doesn't*, nevis *don't*."
+]
+],
+"why_lv": "Ar *he, she, it* lieto *doesn't* + darbības vārda pamatforma: *he doesn't like*."
+},
+{
 "id": "ps-A21-3b",
 "skill": "present_simple",
 "level": "A2.1",
@@ -443,6 +471,25 @@
 "why_lv": "*They = were* + darbības vārds ar *-ing*."
 },
 {
+"id": "pac-A22-3b",
+"skill": "past_continuous",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "___ you ___ at 6 pm? (work)",
+"answers": [
+[
+"Were"
+],
+[
+"working"
+]
+],
+"why": "Question: *Were* + *you* + verb-ing.",
+"hints": [],
+"why_lv": "Jautājums: *Were + you* + darbības vārds ar *-ing*."
+},
+{
 "id": "pac-B11-1a",
 "skill": "past_continuous",
 "level": "B1.1",
@@ -708,6 +755,22 @@
 "why": "Past perfect = *had* + past participle. It shows an earlier past action.",
 "wrong_why": {},
 "why_lv": "Past Perfect = *had* + 3. forma. Tas rāda agrāku pagātnes darbību."
+},
+{
+"id": "ppf-B12-3a",
+"skill": "past_perfect",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "She was upset because she ___ her phone. (lose)",
+"answers": [
+[
+"had lost"
+]
+],
+"why": "The reason came before the feeling: *had* + past participle.",
+"hints": [],
+"why_lv": "Iemesls bija pirms sajūtas: *had* + 3. forma."
 },
 {
 "id": "ppf-B12-3c",

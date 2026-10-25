@@ -37,12 +37,42 @@ def mc(t, lv, b, q, ok, wrong, why, lvw):
 def replaces(old):
     """The last row replaces an older version that was already imported: the old *correct option* (choose), *sentence* (word order) or *task text* (other types). The importer retires the old one."""
     rows[-1] = rows[-1][:9] + [old]
+
+# A typed gap with a verb in brackets and nothing in the sentence that fixes the tense names the tense (teacher's decision, 25 October):
+# otherwise a learner who writes another correct tense is marked wrong. Topics with several accepted forms (future) and used to are left alone.
+_TENSE = {"Present simple": "the present simple", "Present continuous": "the present continuous", "Past simple": "the past simple", "Past continuous": "the past continuous",
+          "Present perfect": "the present perfect", "Present perfect continuous": "the present perfect continuous", "Past perfect": "the past perfect",
+          "Present simple passive": "the present simple passive", "Past simple passive": "the past simple passive", "Present continuous passive": "the present continuous passive",
+          "Present perfect passive": "the present perfect passive", "Future passive (will be done)": "the future passive"}
+_CUE = {
+    "Present simple": r"every|usually|often|never|always|sometimes|twice a|how often|\bon (mon|tues|wednes|thurs|fri|satur|sun)|first thing|at the weekend|vegetarian|loves it|how much|\bbut at\b",
+    "Present continuous": r"\bnow\b|at the moment|right now|\btoday\b|this (week|month)|look!|shh|be quiet|these days|tonight|tomorrow|so there is|haven't decided|\bat (six|\d)|very quiet",
+    "Past simple": r"yesterday|\blast\b|\bago\b|\bin (1|2)\d{3}\b|when i was|at the party|\bwere tired|didn't|after the match|the day before",
+    "Past continuous": r"\bwhen\b|\bwhile\b",
+    "Present perfect": r"\byet\b|since|\bfor \d|so far|\bever\b|\bnever\b|twice|lately|\bjust\b|already|how long",
+    "Present perfect continuous": r"all day|for hours|lately|how long|since|all week|\bfor \d",
+    "Past perfect": r"by the time",
+    "Present simple passive": r"every|\bever\b|a week|a month|often|usually|in most|in many|all over|from milk|how often|\bwhere\b.*\bbuilt|by children",
+    "Past simple passive": r"yesterday|\blast\b|\bago\b|\bin (1|2)\d{3}\b|at the party",
+    "Present continuous passive": r"now|at the moment|right now|be quiet|this week|today",
+    "Present perfect passive": r"\byet\b|so far|already|can you call|\bever\b",
+    "Future passive (will be done)": r"next|tomorrow|before the test|don't worry",
+}
+def tense_named(topic, q):
+    import re as _re
+    key = next((k for k in sorted(_TENSE, key=len, reverse=True) if topic.startswith(k)), None)
+    if 'have to' in q: return q
+    if not key or not _re.search(r"\([a-z /\-']+\)\s*$", q) or _re.match(r"^(Use|Complete|Make|Give|Ask)", q): return q
+    if _re.search(_CUE[key], q, _re.I): return q
+    return "Use %s: %s" % (_TENSE[key], q)
 def gp(t, lv, b, q, ok, why, lvw, bank=None):
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))   # an explanation that fitted another part of the sentence (audit_fixes.py)
     ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
     old = None
     if bank and q in audit_fixes.BANK_CHIPS: bank = audit_fixes.BANK_CHIPS[q]   # a card that also fitted the sentence is replaced (audit_fixes.py)
     if q in audit_fixes.BANK_TASK: old, q = q, audit_fixes.BANK_TASK[q]
+    q2 = tense_named(t, q) if not bank else q
+    if q2 != q: old, q = (old or q), q2
     rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b] + ([old] if old else []))
 def tx(t, lv, b, q, ok, why, lvw):
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))

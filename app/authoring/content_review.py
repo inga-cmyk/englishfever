@@ -283,6 +283,11 @@ def revise(original):
         rules = deepcopy(by_id[id]['must'])
         rules[k][0] = r'\b(\w+ed|' + IRR + r')\b'
         fix_again(id, 'Accept more irregular past verbs (swam, drove, spoke ...).', must=rules)
+    # Typed gaps with nothing in the sentence that fixes the tense name it (teacher's decision, 25 October)
+    for id, q in (('ps-A21-3a', 'Use the present simple: My brother ___ football. (not / like)'),
+                  ('ppf-B12-3a', 'Use the past perfect: She was upset because she ___ her phone. (lose)'),
+                  ('pac-A22-3b', 'Use the past continuous: ___ you ___ at 6 pm? (work)')):
+        fix_again(id, 'Name the tense: another tense would also be correct in this sentence.', q=q)
     # Typed tasks: every correct answer a learner can write is accepted (teacher's request, 24 October)
     def more_again(id, reason, extra):
         have = by_id[id]['answers'][0]

@@ -222,7 +222,8 @@ foreach (Content::items() as $it) {
 $check($lvn >= 300, "Latvian explanations present on $lvn items");
 foreach (Content::meta()['skills'] as $sk) $check(isset($sk['area']), "{$sk['id']} has an area");
 $check(Content::levelFromTheta(1.0) === 'A2.1' && Content::levelFromTheta(4.0) === 'B1.2' && Content::levelFromTheta(5.0) === 'B2.1' && Content::levelFromTheta(6.0) === 'B2.2' && Content::levelFromTheta(7.0) === 'C1.1' && Content::levelFromTheta(8.6) === 'C1.2', 'level boundaries');
-$check(Content::levelFromAbility(1.4) === 'A2.1' && Content::levelFromAbility(1.6) === 'A2.2' && Content::levelFromAbility(2.0) === 'A2.2' && Content::levelFromAbility(2.6) === 'B1.1' && Content::levelFromAbility(4.0) === 'B1.2' && Content::levelFromAbility(7.7) === 'C1.2', 'placement level boundaries');
+// a level when its typical task (difficulty base + 0.4) is right at least half of the time (25 October)
+$check(Content::levelFromAbility(2.3) === 'A2.1' && Content::levelFromAbility(2.4) === 'A2.2' && Content::levelFromAbility(3.3) === 'A2.2' && Content::levelFromAbility(3.4) === 'B1.1' && Content::levelFromAbility(4.4) === 'B1.2' && Content::levelFromAbility(4.86) === 'B1.2' && Content::levelFromAbility(5.4) === 'B2.1' && Content::levelFromAbility(8.4) === 'C1.2', 'placement level boundaries');
 $check(Content::levelFromTheta(4.0, ['A2.1', 'B1.2']) === 'B1.2' && Content::levelFromTheta(7.0, ['A2.1', 'B1.2']) === 'B1.2', 'estimates of topics without high levels stay within their levels');
 
 // normaliser

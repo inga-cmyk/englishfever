@@ -1156,25 +1156,19 @@
     if (s.basics) nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
       h('div', null, h('h2', { style: 'margin:0 0 4px' }, 'Start with A2 basics'), h('div', { class: 'small muted' }, 'Build the foundations first.')),
       h('button', { class: 'btn', onclick: function () { state.prefill = { skills: [], level: 'A2.1' }; location.hash = '#/practice'; } }, 'Practise A2'))));
-    if (s.basics) {
-      // the basics card above says it all: no list of topics
-    } else if (ng) {
-      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, ng === 1 ? 'Start with this topic' : 'Start with these ' + ng + ' topics'),
-        h('ol', { class: 'gaps', style: 'padding-left:20px' }, s.gaps.map(function (g) {
-          return h('li', null, h('div', { class: 'row between' }, h('div', null, h('b', { style: 'color:var(--text)' }, g.label), h('div', { class: 'small muted' }, UI.rich(g.why))),
-            h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: [g.id], level: g.level }; location.hash = '#/practice'; } }, 'Practise ' + lv(g.level))));
-        })),
-        h('div', { class: 'row', style: 'margin-top:8px' }, ng > 1 ? h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.gaps.map(function (g) { return g.id; }), level: s.overall_level }; location.hash = '#/practice'; } }, 'Practise all ' + ng + ' together') : null,
-          h('a', { class: 'btn ghost', href: '#/practice' }, 'Choose my own'))));
-    } else {
-      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No clear gaps'), h('p', { class: 'muted' }, 'Nothing was missed at your level.'),
+    var weak = s.gaps.map(function (g) { return g.label; });
+    if (fresh && s.open_after) {
+      nodes.push(h('div', { class: 'card fn-chance', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
+        h('div', null, h('b', { style: 'color:var(--text)' }, plural(s.open_after, 'mistake', 'mistakes') + ' to fix'),
+          weak.length ? h('div', { class: 'small muted' }, 'Topics: ' + weak.join(', ') + '. A few questions cannot show a real gap; Second Chance does.') : null),
+        comebackButton('btn small fn-chance', 'Second Chance'))));
+    } else if (!s.basics) {
+      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, 'Nothing was missed.'),
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
-    if (fresh && s.open_after) nodes.push(h('div', { class: 'card fn-chance', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, plural(s.open_after, 'mistake', 'mistakes') + ' to fix')), comebackButton('btn small fn-chance', 'Second Chance'))));
     nodes.push(h('div', { class: 'grid g2' },
-      h('div', { class: 'card' }, h('h2', null, 'All tested topics'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
-        return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n + ' '), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))));
+      h('div', { class: 'card' }, h('h2', null, 'Tested topics'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
+        return h('li', { class: 'lvrow' }, h('span', null, k.label), h('span', { class: 'nowrap' }, h('span', { class: 'small muted' }, k.correct + '/' + k.n)));
       })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, plural(s.untested.length, 'topic', 'topics') + ' not covered by this test.') : null),
       h('div', { class: 'card' }, h('h2', null, 'By type of thinking'), bloomBars(s.by_bloom))));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));

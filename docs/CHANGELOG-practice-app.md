@@ -117,3 +117,5 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - ErrorModel: the state of each kind of mistake per learner (learn → practise → mastered: 3 different tasks, 2 days, one without a clue → kept after the 14-day check; a mistake moves one step back), with review dates 1 / 3 / 7 / 14 days.
 - Task files: optional column "error types"; a wrong option may end with its code in brackets ("She work here. [3S]"). Unknown codes are refused.
 - Tests: app/tests/error_model_test.php.
+- Three new A2 topics (rule cards EN + LV): Prepositions after words, Subject and verb, Irregular plurals. Drafts: `docs/task-drafts/a2-mistakes-1.csv` (88 tasks, error type in the last column), review sheet `docs/task-drafts/a2-mistakes-review.md`.
+- Draft files have a new last column, *error types*; the generator writes it from the topic (lib.Topic(err=...)).

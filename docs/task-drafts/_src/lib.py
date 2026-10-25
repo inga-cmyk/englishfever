@@ -5,8 +5,9 @@ import italics
 # Latvian words without Latvian letters that the built-in list does not have yet. Kept here, not in italics.py, so the published explanations are untouched.
 italics.LV_ASCII |= set('''apgriez divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
 beidzas beidzies cita darba divdabi divdabis esam garums grupa ieradums izteikt jebkuru laba ideja lielu lietas likums maigs mana istaba ne nekas nelielu padomu paliek saraksta
-laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
-HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces"]
+tipiska padodas pieder latviski angliski pateicas tos pa draugi abos viens vienam gaidu autobusu klausos draugs laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
+HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types"]
+ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
 import json as _json
 REPL = _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "replaced_match.json"), encoding="utf-8"))
@@ -90,7 +91,7 @@ def _is_question(sentence):
     return w[0] in ("what", "where", "when", "why", "who", "whom", "how", "which") and (w[1] in _AUX or (len(w) > 2 and w[2] in _AUX and w[1] in ("long", "many", "much", "often", "time", "far", "old")))
 def od(t, lv, b, q, ok, why, lvw, also=None):
     also = list(also or []) + [a for a in alt_orders.alternatives(ok) if a not in (also or [])]   # other correct orders (alt_orders.py)
-    if _is_question(ok) and "question" not in t.lower() and not why.lower().startswith(("question", "subject question")) and audit_fixes.ORDER_Q[0] not in why:
+    if _is_question(ok) and "question" not in t.lower() and "question" not in why.lower() and audit_fixes.ORDER_Q[0] not in why:
         why, lvw = why.rstrip() + " " + audit_fixes.ORDER_Q[0], lvw.rstrip() + " " + audit_fixes.ORDER_Q[1]
     rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])
 def mt(t, lv, b, q, pairs, why, lvw):
@@ -117,9 +118,9 @@ def save(name):
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
-        for r in rows:
+        for i, r in enumerate(rows):
             if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
-            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else '')])
+            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, '')])
     print(name, len(rows), "rows")
 
 
@@ -181,8 +182,10 @@ LVMAP = {
 
 class Topic:
     """One topic with default explanations (English, Latvian) per question type. Item-specific explanations override them."""
-    def __init__(self, name, mcq_b=2, text_b=4, match_b=2, **ex):
-        self.t = name; self.ex = ex; self.seen = set(); self.mb = mcq_b; self.tb = text_b; self.xb = match_b
+    def __init__(self, name, mcq_b=2, text_b=4, match_b=2, err="", **ex):
+        self.t = name; self.ex = ex; self.seen = set(); self.mb = mcq_b; self.tb = text_b; self.xb = match_b; self.err = err
+    def _tag(self, err=None):
+        if err or self.err: ERRS[len(rows) - 1] = err or self.err
     def _why(self, kind, why):
         if isinstance(why, (tuple, list)): return why
         if why: return (why, LVMAP[why])   # an English-only explanation must have its Latvian twin in LVMAP
@@ -192,20 +195,20 @@ class Topic:
         if key in self.seen: raise SystemExit("duplicate in script: " + q)
         self.seen.add(key)
     def order(self, lv, sent, also=None, why=None, cue="Put the words in order.", b=3):
-        self._uniq(cue, sent); w = self._why("order", why); od(self.t, lv, b, cue, sent, w[0], w[1], also)
+        self._uniq(cue, sent); w = self._why("order", why); od(self.t, lv, b, cue, sent, w[0], w[1], also); self._tag()
     def bank(self, lv, q, ans, extra, why=None, b=3):
         self._uniq(q); w = self._why("bank", why); ans = [ans] if isinstance(ans, str) else ans
         assert len(set(ans + extra)) == len(ans + extra) and len(extra) >= 1, q
-        gp(self.t, lv, b, q, " / ".join(ans), w[0], w[1], bank=ans + extra)
+        gp(self.t, lv, b, q, " / ".join(ans), w[0], w[1], bank=ans + extra); self._tag()
     def gap(self, lv, q, ans, why=None, b=3):
-        self._uniq(q); w = self._why("gap", why); gp(self.t, lv, b, q, ans, w[0], w[1])
+        self._uniq(q); w = self._why("gap", why); gp(self.t, lv, b, q, ans, w[0], w[1]); self._tag()
     def text(self, lv, q, ans, why=None, b=None):
         self._uniq(q)
         w = self._why("text", why)
         if not why and re.match(r"^(Question|Negative)", w[0]) and not re.match(r"^(Make (it )?(negative|a question)|Make the sentence negative|Ask|Add a question tag)", q):
             w = self.ex.get("gap") or w   # the default text explanation is about questions and negatives: a join or rewrite task gets the topic's general rule
-        tx(self.t, lv, b or self.tb, q, ans, w[0], w[1])
+        tx(self.t, lv, b or self.tb, q, ans, w[0], w[1]); self._tag()
     def mcq(self, lv, q, ok, wrong, why=None, b=None):
-        self._uniq(q); w = self._why("mcq", why); mc(self.t, lv, b or self.mb, q, ok, wrong, w[0], w[1])
+        self._uniq(q); w = self._why("mcq", why); mc(self.t, lv, b or self.mb, q, ok, wrong, w[0], w[1]); self._tag()
     def match(self, lv, q, pairs, why=None, b=None):
-        self._uniq(q); w = self._why("match", why); mt(self.t, lv, b or self.xb, q, pairs, w[0], w[1])
+        self._uniq(q); w = self._why("match", why); mt(self.t, lv, b or self.xb, q, pairs, w[0], w[1]); self._tag()

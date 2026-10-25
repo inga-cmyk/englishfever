@@ -59,6 +59,7 @@ Status: draft. The teacher adds, removes and reorders; nothing is programmed unt
 | THE | *The life is beautiful. · Sun is hot. · He prefers an action instead of a talking.* → *Life… · The sun… · action instead of talking* | Bez artikulu sistēmas skolēns *the* liek vai nu visur, vai nekur. | B1 | 73–76 | Articles |
 | PLURAL | *one of the local bank* → *one of the local banks* | Latviski *viena no vietējām bankām* ir daudzskaitlī, bet skolēns domā par "vienu". | A2–B1 | 79, 88 | (tēmas vēl nav) |
 | POSSESSIVE | *My new colleague name is Marta.* → *My new colleague's name…* | Latviski piederību rāda ar ģenitīvu (*kolēģes vārds*); angliski vajag *'s*. | A2 | 81 | (tēmas vēl nav) |
+| IRR-PLURAL | *childs · childrens · peoples · tooths · foots · mouses · The police is…* → *children · people · teeth · feet · mice · The police are…* | Tipiska kļūda: pievieno *-s* vai otru *-s*. Latviski daudzskaitlim arī ir galotne, bet šie angļu vārdi mainās paši. | A2 | 79 | Irregular plurals |
 | UNCOUNT | *The news are good. · Your advices · My hairs* → *The news is · advice · hair* | Latviski šie vārdi ir daudzskaitlī: *ziņas, padomi, mati, mēbeles*. | A2–B1 | 69, 70 | Quantity |
 
 ## E. Word patterns

@@ -42,6 +42,7 @@ ERRORS = {
     "ARTICLE": ("a / the / my before a noun", "nouns"),
     "THE": ("the or no article (life, the sun)", "nouns"),
     "PLURAL": ("one of the + plural", "nouns"),
+    "IRR-PLURAL": ("children, people, teeth, feet, mice, police", "nouns"),
     "POSSESSIVE": ("'s (my colleague's name)", "nouns"),
     "UNCOUNT": ("uncountable nouns (news, advice, hair)", "nouns"),
     # E. word patterns
@@ -79,6 +80,9 @@ SKILL_ERR = {
     "two_objects": ["TWO-OBJ"],
     "comparison": ["COMPARE"],
     "relative_clauses": ["REL-WHICH", "REL-ORDER"],
+    "dep_prepositions": ["DEP-PREP"],
+    "agreement": ["AGREE", "3S"],
+    "irregular_plurals": ["IRR-PLURAL"],
 }
 
 assert all(c in ERRORS for codes in SKILL_ERR.values() for c in codes)

@@ -33,3 +33,6 @@ Latvian text: learners who choose Latvian see it. Approve the English now if you
 ## E. Later, not now
 Rotate the database password and the SSO secret (config.php and wp-config.php together); research study stays off until the ethics wording is ready.
 7. Corrections to questions you already imported: import the same files again (`a2-big-1`, `a2-extras-1`, `b1-cond-rep-1`, `b1-new-1` to `b1-new-3`, `b1-passives-1`, `b1-tenses-1`, `b1-tenses-2`, `comparison-1`, `modal-verbs-1`). The check page lists the changed questions as *updated* (they keep their number, status and results) and the rest as *already there*. The corrected questions that replace an older one (the film gap, three *used to* tasks) arrive as new drafts and the old version is retired when you press Add; approve the new drafts. Also import `a2-relabelled-1` and `b1-new-1` / `b1-new-2` again. Retire the matching task *Match each clause with its meaning* (c-1449) by hand on the Tasks tab.
+
+### A2 mistakes batch 1 (after the teacher approves the review sheet)
+8. Upload the new update zip first (it has the three new topics: *Prepositions after words*, *Subject and verb*, *Irregular plurals*), then import `a2-mistakes-1.csv` on the Tasks tab and approve the drafts. The last column, *error types*, is read by the app and never shown to learners.

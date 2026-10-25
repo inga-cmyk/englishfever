@@ -413,3 +413,67 @@ LV_CARDS.update({
         "signals": "someone, anything, nobody, everything, anywhere, nowhere (kāds, kaut kas, neviens, viss, kaut kur, nekur)",
     },
 })
+
+
+# ───────── third batch (teacher's plan, 25 October): A2 topics built around frequent mistakes (docs/ERROR-TYPES.md) ─────────
+SKILLS_NEW.extend([
+    ("dep_prepositions", "Prepositions after words (listen to, good at)", "patterns", ["A2.1", "A2.2"]),
+    ("agreement", "Subject and verb (my friend lives, my friends live)", "active", ["A2.1", "A2.2"]),
+    ("irregular_plurals", "Irregular plurals (children, people, teeth)", "nouns", ["A2.1", "A2.2"]),
+])
+ABBR_NEW.update({"dep_prepositions": "dpr", "agreement": "agr", "irregular_plurals": "ipl"})
+
+CARDS.update({
+    "dep_prepositions": {
+        "form": ["Some words always go with the same preposition. Learn them in pairs: *listen to, wait for, look at, talk to, ask for, pay for, belong to, depend on, think about.*",
+                 "Adjectives too: *good at, afraid of, interested in, proud of, different from.*",
+                 "Some verbs take no preposition: *call me, help me, meet you, join the team, answer the question.*"],
+        "use": ["After the preposition comes a noun or a pronoun: *Listen to me. I'm waiting for the bus.*",
+                "In a question the preposition often goes to the end: *What are you looking at? Who are you waiting for?*"],
+        "signals": "*listen to music, wait for the bus, good at maths, call me*",
+        "example": "*I'm waiting for Anna. She's good at maths, but she's afraid of dogs.*",
+    },
+    "agreement": {
+        "form": ["One person or thing (*he, she, it, my friend, everybody, nobody*) + verb with *-s*: *My friend lives in Riga. Everybody knows.*",
+                 "More than one (*they, my friends, Tom and Anna*) + verb without *-s*: *My friends live in Riga.*",
+                 "*is / does / has* for one, *are / do / have* for more: *There is a café. There are two cafés. Does she work? Do they work?*"],
+        "use": ["*and* makes more than one: *Tom and Anna live here.*",
+                "*everybody, everyone, nobody, nothing* take a verb with *-s*: *Nobody knows.*"],
+        "signals": "*he, she, it, everybody, nobody, and, there is / there are*",
+        "example": "*My sister works in a bank, and my parents work in a hospital.*",
+    },
+    "irregular_plurals": {
+        "form": ["Most nouns add *-s*: *a book, two books*. These change: *child → children, person → people, tooth → teeth, foot → feet, mouse → mice.*",
+                 "No extra *-s*: *children*, not *childrens*; *teeth*, not *tooths*.",
+                 "*police* has no *-s*, but it is always plural: *The police are here.*"],
+        "use": ["These words take a plural verb: *The children are tired. People like it. My feet hurt.*"],
+        "signals": "*child, person, tooth, foot, mouse, police*",
+        "example": "*One mouse is cute, but ten mice are a problem!*",
+    },
+})
+
+LV_CARDS.update({
+    "dep_prepositions": {
+        "form": ["Daži vārdi vienmēr iet kopā ar savu prievārdu. Tos mācās pa pāriem: listen to, wait for, look at, talk to, ask for, pay for, belong to, depend on, think about.",
+                 "Arī īpašības vārdi: good at, afraid of, interested in, proud of, different from.",
+                 "Daži darbības vārdi ir bez prievārda: call me, help me, meet you, join the team, answer the question."],
+        "use": ["Aiz prievārda ir lietvārds vai vietniekvārds: Listen to me. I'm waiting for the bus.",
+                "Jautājumā prievārds bieži ir beigās: What are you looking at? Who are you waiting for?"],
+        "signals": "listen to music, wait for the bus, good at maths, call me (klausīties mūziku, gaidīt autobusu, viņai padodas matemātika, piezvani man)",
+    },
+    "agreement": {
+        "form": ["Viens cilvēks vai lieta (he, she, it, my friend, everybody, nobody) + darbības vārds ar -s: My friend lives in Riga. Everybody knows.",
+                 "Vairāki (they, my friends, Tom and Anna) + darbības vārds bez -s: My friends live in Riga.",
+                 "is / does / has vienam, are / do / have vairākiem: There is a café. There are two cafés. Does she work? Do they work?"],
+        "use": ["Latviski draugs dzīvo un draugi dzīvo: forma ir viena. Angliski tā mainās: lives / live.",
+                "and nozīmē vairākus: Tom and Anna live here. everybody, everyone, nobody, nothing lieto ar -s: Nobody knows."],
+        "signals": "he, she, it, everybody, nobody, and, there is / there are (viņš, viņa, visi, neviens, un, ir)",
+    },
+    "irregular_plurals": {
+        "form": ["Lielākajai daļai lietvārdu pievieno -s: a book, two books. Šie mainās: child → children, person → people, tooth → teeth, foot → feet, mouse → mice.",
+                 "Bez papildu -s: children, nevis childrens; teeth, nevis tooths.",
+                 "police ir bez -s, bet vienmēr daudzskaitlī: The police are here."],
+        "use": ["Ar šiem vārdiem lieto daudzskaitļa darbības vārdu: The children are tired. People like it. My feet hurt."],
+        "signals": "child, person, tooth, foot, mouse, police (bērns, cilvēks, zobs, pēda, pele, policija)",
+    },
+})

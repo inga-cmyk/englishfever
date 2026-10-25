@@ -978,7 +978,8 @@
           if (!good && res.pairs) fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Pareizi: ' : 'Correct pairs: '),
             h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
         } else if (!good || it.kind !== 'mcq') {
-          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), res.show));
+          var findWrong = it.kind === 'mcq' && /^Which sentence (is NOT correct|has a mistake)\?/.test(it.q || '');   // the answer is the faulty sentence: do not call it "correct"
+          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), res.show));
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }

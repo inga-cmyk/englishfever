@@ -71,6 +71,17 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
     const txt = await p.locator('.feedback').innerText();
     check('a wrong order is marked wrong and shows the correct sentence', (await p.locator('.feedback.bad').count()) === 1 && /Correct answer/.test(txt) && (await p.locator('.dnd-line.bad').count()) === 1, txt.slice(0, 120));
+    // "Which sentence is NOT correct?": the answer is the faulty sentence, so it is not called "Correct answer" (Cowork issue 18)
+    await p.click('.feedback .btn');
+    const NOTQ = ['Which sentence is NOT correct?', 'Which sentence has a mistake?'];
+    const pub3 = await serve(p, 'mcq', ['present_simple', 'present_continuous', 'past_simple', 'past_continuous', 'present_perfect', 'future', 'present_simple_passive', 'past_simple_passive', 'cond_zero', 'cond_first'], 'A2.2', it => NOTQ.includes(it.q));
+    check('a "NOT correct" question was served', !!pub3);
+    if (pub3) {
+      await p.locator('.task label, .task .opt').filter({ hasText: ITEMS[pub3.id].wrong[0] }).first().click();
+      await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+      const txt3 = await p.locator('.feedback').innerText();
+      check('a "NOT correct" question names the answer "The wrong sentence", not "Correct answer"', /The wrong sentence: /.test(txt3) && !/Correct answer/.test(txt3), txt3.slice(0, 160));
+    }
     await ctx.close();
   }
 
@@ -114,6 +125,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const it = ITEMS[pub.id];
     check('the sentence has gaps and a bank with decoys', (await p.locator('.dnd-sentence .slot').count()) === it.answers.length && (await p.locator('.dnd-bank .chip').count()) > it.answers.length);
     // touch drag with the DevTools protocol: first answer by dragging, the others by tapping
+    await p.evaluate(() => document.querySelector('.dnd-bank').scrollIntoView({ block: 'center' })); await p.waitForTimeout(200);   // a tall task can leave the bank under the bottom menu bar; a learner would scroll first
     const cdp = await ctx.newCDPSession(p);
     const chip = p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(it.answers[0][0]) + '$') }).first();
     const a = await center(chip), t = await center(p.locator('.dnd-sentence .slot').first());

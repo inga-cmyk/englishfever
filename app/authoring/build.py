@@ -210,12 +210,17 @@ with open(os.path.join(OUT, "items.json"), "w", encoding="utf-8") as f:
     json.dump(dsl.ITEMS, f, ensure_ascii=False, indent=0)
 with open(os.path.join(OUT, "retired.json"), "w", encoding="utf-8") as f:
     json.dump(retired, f, ensure_ascii=False, indent=0)
+import error_types
+assert all(k in {s[0] for s in SKILLS} for k in error_types.SKILL_ERR), 'error_types.SKILL_ERR names a topic that does not exist'
 meta = {
     "levels": dsl.LEVELS,
     "areas": [{"id": a[0], "label": a[1]} for a in AREAS],
     "skills": [dict({"id": s[0], "label": s[1], "area": s[2], "levels": s[3], "rule": RULES_MARKED[s[0]]},
                     **({"rule_lv": LV_RULES_MARKED[s[0]]} if s[0] in LV_RULES_MARKED else {})) for s in SKILLS],
     "bloom": {str(k): {"name": v[0], "desc": v[1]} for k, v in BLOOM.items()},
+    # error types work in the background (authoring/error_types.py, docs/ERROR-TYPES.md); learners never see them
+    "errors": {c: {"name": v[0], "group": v[1]} for c, v in error_types.ERRORS.items()},
+    "skill_err": error_types.SKILL_ERR,
 }
 with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8") as f:
     json.dump(meta, f, ensure_ascii=False, indent=1)

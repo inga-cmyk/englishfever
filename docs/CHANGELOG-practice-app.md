@@ -109,3 +109,11 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Built-in typed gaps checked for free word slots: none found (all are word banks or closed). One more correct answer accepted for "It's cold. I ___ my coat." (going to).
 - Latvian read-through of the 378 built-in Latvian explanations: 18 reworded (one did not match the English after an earlier correction: cf-B12-4a; "darbība tiek veikta ar …" → "… saņem darbību"; Simple / Continuous forma; stiff phrasing). New revision ids.
 - Open-writing feedback shortened for low levels: "The form you need is there" / "Check the task rules" and one line: "This only checks the form you need. Compare your answer with the model." (Latvian too).
+
+### 25 October — error types in the background (step 1 of the personal plans)
+- Error types (docs/ERROR-TYPES.md, app/authoring/error_types.py) are in the bank's meta; every task has a support level (0 choose/drag, 1 typed with a clue, 2 typed without a clue, 3 open writing) and the error types it trains (its own, or its topic's). Learners never see them.
+- Every answer stores the error types it is evidence for (attempts.err): the code of the wrong option or hint when the task names one, otherwise the task's codes.
+- New mistake loop in practice: after a wrong answer, an easier task for the same kind of mistake comes straight away; right → a task with the original support comes back 2–3 questions later; wrong again → that kind of mistake is not asked again in the session. At most 2 extra tasks per kind of mistake, at most a third of the session.
+- ErrorModel: the state of each kind of mistake per learner (learn → practise → mastered: 3 different tasks, 2 days, one without a clue → kept after the 14-day check; a mistake moves one step back), with review dates 1 / 3 / 7 / 14 days.
+- Task files: optional column "error types"; a wrong option may end with its code in brackets ("She work here. [3S]"). Unknown codes are refused.
+- Tests: app/tests/error_model_test.php.

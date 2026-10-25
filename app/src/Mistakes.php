@@ -97,8 +97,12 @@ final class Mistakes
         return $out;
     }
 
-    /** A different task that trains the same thing as a mistake: same topic, close level and thinking level. Null when there is none. */
-    public static function twin(int $uid, string $mistakeId, array $exclude, bool $angle = false, ?array $levels = null): ?array
+    /**
+     * A different task that trains the same thing as a mistake: same topic, close level and thinking level. Null when there is none.
+     * $code: prefer tasks for this kind of mistake. $maxScaffold / $minScaffold: prefer tasks with at most / at least this much
+     * independence (Content::scaffold), so an easier task follows a miss and the same support comes back later.
+     */
+    public static function twin(int $uid, string $mistakeId, array $exclude, bool $angle = false, ?array $levels = null, ?string $code = null, ?int $maxScaffold = null, ?int $minScaffold = null): ?array
     {
         $m = Content::item($mistakeId);
         if (!$m) return null;
@@ -111,8 +115,13 @@ final class Mistakes
             if ($it['skill'] !== $m['skill'] || $it['id'] === $mistakeId || isset($exclude[$it['id']]) || isset($paused[$it['id']])) continue;
             if (abs(self::levelIdx($it['level']) - self::levelIdx($m['level'])) > 1 || abs($it['bloom'] - $m['bloom']) > 1) continue;
             if ($levels && !in_array($it['level'], $levels, true)) continue;
+            if ($it['kind'] === 'write' && $m['kind'] !== 'write') continue;   // open writing never stands in for a short task
             $cost = (isset($seen[$it['id']]) ? 0.8 * min(3, $seen[$it['id']]) : 0)
                 + ($angle ? ($it['kind'] === $m['kind'] ? 0.3 : 0) : ($it['kind'] === $m['kind'] ? 0 : 0.3)) + abs($it['bloom'] - $m['bloom']) * 0.2 + random_int(0, 30) / 100;
+            if ($code !== null && !in_array($code, $it['err'] ?? [], true)) $cost += 0.6;
+            $sc = Content::scaffold($it);
+            if ($maxScaffold !== null && $sc > $maxScaffold) $cost += 1.0 * ($sc - $maxScaffold);
+            if ($minScaffold !== null && $sc < $minScaffold) $cost += 1.0 * ($minScaffold - $sc);
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }
         return $best;

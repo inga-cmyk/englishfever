@@ -78,6 +78,7 @@ final class Grader
                     'show' => $item['correct'],
                     'specific' => (!$ok && is_string($answer)) ? ($item['wrong_why'][$answer] ?? null) : null,
                     'specific_lv' => (!$ok && is_string($answer)) ? ($item['wrong_why_lv'][$answer] ?? null) : null,
+                    'err' => (!$ok && is_string($answer)) ? ($item['wrong_err'][$answer] ?? null) : null,   // the error type of this wrong option, when the task names one
                     'notes' => [],
                 ];
 
@@ -101,6 +102,7 @@ final class Grader
                 $show = implode(' / ', array_map(fn($b) => $b[0], $blanks));
                 $specific = null;
                 $specificLv = null;
+                $err = null;
                 $near = false;
                 if ($ok && $item['kind'] === 'text') {
                     $notes = array_merge($notes, self::capitalNotes($given[0], $blanks[0][0]));
@@ -125,6 +127,7 @@ final class Grader
                             if (@preg_match(self::rx($hint[0]), $h) === 1) {
                                 $specific = $hint[1];
                                 $specificLv = $hint[2] ?? null;
+                                $err = $hint[3] ?? null;   // the error type this hint recognises, when it names one
                                 break 2;
                             }
                         }
@@ -139,7 +142,7 @@ final class Grader
                         $specificLv = "Gandrīz: teikums ir pareizs, izņemot vienu vārdu. Tu uzrakstīji “{$nm[0]}”, atbildē ir “{$nm[1]}”.";
                     }
                 }
-                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'near' => $near, 'notes' => array_values(array_unique($notes))];
+                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'err' => $err, 'near' => $near, 'notes' => array_values(array_unique($notes))];
 
             case 'order':
                 // the learner drags cards into order: the same cards must all be used once, and the sentence must be an accepted one

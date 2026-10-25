@@ -28,6 +28,8 @@ final class Content
             self::$byId = [];
             foreach (self::$items as $i => $it) {
                 self::$items[$i]['d'] = self::difficulty($it['level'], $it['bloom']);
+                self::$items[$i]['scaffold'] = self::scaffold($it);
+                self::$items[$i]['err'] = self::errors($it);
                 self::$byId[$it['id']] = &self::$items[$i];
             }
         }
@@ -66,6 +68,33 @@ final class Content
             $keep[] = $it;
         }
         self::$items = $keep;
+    }
+
+
+    /**
+     * How much support a task gives (teacher's plan, 25 October): a task with less support comes only after the learner has managed
+     * one with more. 0 = choose or drag (the answer is on the screen), 1 = type with a clue (a verb in brackets, a named form, word order),
+     * 2 = type without a clue, 3 = open writing. A task may set its own value.
+     */
+    public static function scaffold(array $it): int
+    {
+        if (isset($it['scaffold'])) return (int) $it['scaffold'];
+        switch ($it['kind']) {
+            case 'mcq': case 'match': return 0;
+            case 'order': return 1;
+            case 'gap':
+                if (!empty($it['bank'])) return 0;
+                return (preg_match('/\([^)]*\)\s*$/u', $it['q']) || preg_match('/^(Use|Complete with|Make|Give)\b/u', $it['q'])) ? 1 : 2;
+            case 'text': return 2;
+            default: return 3;
+        }
+    }
+
+    /** The error types a task trains (docs/ERROR-TYPES.md): its own list, else the usual ones of its topic. Never shown to learners. */
+    public static function errors(array $it): array
+    {
+        if (!empty($it['err'])) return array_values((array) $it['err']);
+        return self::meta()['skill_err'][$it['skill']] ?? [];
     }
 
     public static function meta(): array

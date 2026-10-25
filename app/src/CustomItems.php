@@ -117,6 +117,7 @@ final class CustomItems
             elseif (strpos($h, 'explanation in latvian') === 0 || $h === 'latvian') $key = 'why_lv';
             elseif (strpos($h, 'explanation') === 0 || $h === 'why') $key = 'why';
             elseif (strpos($h, 'thinking level') === 0) $key = 'bloom';
+            elseif (strpos($h, 'error type') === 0) $key = 'err';   // optional: the kinds of mistake the task trains (docs/ERROR-TYPES.md), never shown to learners
             if ($key && !isset($col[$key])) $col[$key] = $i;
         }
         foreach (['topic', 'level', 'type', 'task', 'correct', 'why'] as $need) {
@@ -244,6 +245,8 @@ final class CustomItems
         switch ($kind) {
             case 'mcq':
                 $w = self::split($wrong, '|');
+                $wrongErr = [];   // a wrong option may end with its error type in square brackets: "She work here. [3S]"
+                foreach ($w as $k => $o) if (preg_match('/^(.*\S)\s*\[([A-Z0-9-]+)\]$/u', $o, $mm)) { $w[$k] = $mm[1]; $wrongErr[$mm[1]] = self::errCode($mm[2]); }
                 if (count($w) < 2) throw new ApiError('Give at least 2 wrong options, separated by | .', 400);
                 $all = array_merge([$correct], $w);
                 if (count(array_unique(array_map('mb_strtolower', $all))) !== count($all)) throw new ApiError('Two options are the same.', 400);
@@ -253,6 +256,7 @@ final class CustomItems
                 foreach ($all as $o) if (preg_match('/^(Say|Use|Write|Choose)\b/u', $o)) { $res['warnings'][] = 'An option starts with an instruction word (' . strtok($o, ' ') . ').'; break; }
                 $item += ['correct' => $correct, 'wrong' => $w, 'wrong_why' => new stdClass()];
                 $item['wrong_why'] = [];
+                if ($wrongErr) $item['wrong_err'] = $wrongErr;
                 break;
             case 'gap':
                 $blanks = substr_count($q, '___');
@@ -296,7 +300,16 @@ final class CustomItems
                 $item += ['pairs' => $pairs];
                 break;
         }
+        if ($get('err') !== '') $item['err'] = array_values(array_unique(array_map([self::class, 'errCode'], preg_split('/[\s,;]+/u', trim($get('err')), -1, PREG_SPLIT_NO_EMPTY))));
         return $item;
+    }
+
+    /** An error type named in a file must be one of docs/ERROR-TYPES.md. */
+    private static function errCode(string $c): string
+    {
+        $c = strtoupper(trim($c));
+        if (!isset(Content::meta()['errors'][$c])) throw new ApiError("Unknown error type \"$c\". Use a code from the list of error types (docs/ERROR-TYPES.md), or leave the column empty.", 400);
+        return $c;
     }
 
     /**

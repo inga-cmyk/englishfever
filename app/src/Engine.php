@@ -151,6 +151,8 @@ final class Engine
         $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom'], 'level' => substr($item['level'], 0, 2)];
         if ($ses['mode'] === 'placement') self::plAdvance($st, substr($item['level'], 0, 2), $ok);
 
+        // the kinds of mistake this answer is evidence for (background only): a wrong option or hint that names one, else the task's own list
+        $errCodes = (!$ok && !empty($g['err'])) ? [$g['err']] : Content::errors($item);
         $before = $ses['mode'] === 'placement' ? null : Mistakes::scan($uid);
         $now = time();
         Db::insert('attempts', [
@@ -158,6 +160,7 @@ final class Engine
             'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
             'time_ms' => max(0, min(600000, $timeMs)), 'xp' => $xp, 'created_at' => $now,
             'for_item' => !empty($st['comeback']) ? ($st['queue'][count($st['served']) - 1] ?? null) : null,
+            'err' => $errCodes ? implode(',', $errCodes) : null,
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
         if ($row) {
@@ -176,7 +179,7 @@ final class Engine
         $gapNow = self::probeAnswered($st, $itemId, $ok, $ses);
         if (!empty($st['comeback'])) $gapNow = self::comebackGap($st, $ses, $itemId, $ok) || $gapNow;
 
-        if (!$ok && $ses['mode'] === 'practice' && empty($st['comeback'])) self::probeSchedule($st, $itemId, count($st['served']), (int) $ses['target_len']);
+        if (!$ok && $ses['mode'] === 'practice' && empty($st['comeback'])) self::probeSchedule($st, $item, $errCodes, count($st['served']), (int) $ses['target_len']);
         $ses['n']++;
         $ses['n_correct'] += $ok ? 1 : 0;
         $ses['xp'] += $xp;
@@ -369,7 +372,7 @@ final class Engine
         if (!$placement && !empty($st['probes'])) {
             foreach ($st['probes'] as $i => $p) {
                 if (!empty($p['done']) || !empty($p['served']) || $count < $p['due']) continue;
-                $t = Mistakes::twin((int) $ses['user_id'], $p['for'], $served, $p['stage'] > 1, $st['levels'] ?? null);
+                $t = Mistakes::twin((int) $ses['user_id'], $p['for'], $served, $p['stage'] > 1, $st['levels'] ?? null, $p['code'] ?? null, $p['max_scaffold'] ?? null, $p['min_scaffold'] ?? null);
                 if ($t) {
                     $ses['state']['probes'][$i]['served'] = true;
                     $ses['state']['probes'][$i]['item'] = $t['id'];
@@ -549,26 +552,46 @@ final class Engine
     }
 
     /** A wrong answer in practice: ask a task of the same kind again after one or two others (not more than a third of the session, two waiting at most). */
-    private static function probeSchedule(array &$st, string $itemId, int $served, int $len): void
+    /**
+     * A wrong answer in practice (teacher's plan, 25 October): straight away an easier task for the same kind of mistake (more support:
+     * the answer on the screen, or a clue). Not more than two extra tasks for one kind of mistake in a session, and not more than a third
+     * of the session, so the learner never gets stuck on one mistake.
+     */
+    private static function probeSchedule(array &$st, array $item, array $codes, int $served, int $len): void
     {
         $probes = $st['probes'] ?? [];
-        $waiting = count(array_filter($probes, fn($p) => empty($p['done'])));
-        if ($waiting >= 2 || count($probes) >= max(2, intdiv($len, 3))) return;
+        $itemId = $item['id'];
+        if (count($probes) >= max(2, intdiv($len, 3))) return;
         foreach ($probes as $p) if (($p['for'] === $itemId && empty($p['done'])) || ($p['item'] ?? null) === $itemId) return;   // already waiting, or this task is itself a probe
-        $st['probes'][] = ['for' => $itemId, 'stage' => 1, 'due' => $served + random_int(1, 2)];
+        $code = null;
+        foreach ($codes as $c) if (empty($st['stuck'][$c])) { $code = $c; break; }
+        if ($codes && $code === null) return;   // every kind of mistake in this task was already tried twice in this session
+        if ($code !== null && count(array_filter($probes, fn($p) => ($p['code'] ?? null) === $code)) >= 2) return;
+        $sc = Content::scaffold($item);
+        $st['probes'][] = ['for' => $itemId, 'code' => $code, 'stage' => 1, 'due' => $served, 'max_scaffold' => max(0, $sc - 1)];
     }
 
-    /** The answered task was a probe: right = a slip; wrong = a gap, so two more tasks of that kind from other angles follow. Returns true for a gap. */
+    /**
+     * The answered task was a probe. The easier task right: a task with the same support as the missed one comes back a little later.
+     * The easier task wrong: a gap. That kind of mistake is not asked again in this session (it goes to the learner's plan). Returns true for a gap.
+     */
     private static function probeAnswered(array &$st, string $itemId, bool $ok, array $ses): bool
     {
         foreach ($st['probes'] ?? [] as $i => $p) {
             if (empty($p['served']) || ($p['item'] ?? null) !== $itemId || !empty($p['done'])) continue;
             $st['probes'][$i]['done'] = true;
             $st['probe_log'][] = ['for' => $p['for'], 'item' => $itemId, 'stage' => $p['stage'], 'ok' => $ok];
-            if ($ok || $p['stage'] > 1) return false;
-            $n = count($st['served']);
-            foreach ([2, 3] as $k => $stage) $st['probes'][] = ['for' => $p['for'], 'stage' => $stage, 'due' => $n + 1 + 2 * $k + random_int(0, 1)];
-            return true;
+            $code = $p['code'] ?? null;
+            if (!$ok) {
+                if ($code !== null) $st['stuck'][$code] = true;
+                return $p['stage'] === 1;
+            }
+            if ($p['stage'] === 1) {
+                $orig = Content::item($p['for']);
+                $st['probes'][] = ['for' => $p['for'], 'code' => $code, 'stage' => 2, 'due' => count($st['served']) + 2 + random_int(0, 1),
+                                   'min_scaffold' => $orig ? Content::scaffold($orig) : 0];
+            }
+            return false;
         }
         return false;
     }

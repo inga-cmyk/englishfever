@@ -1667,5 +1667,260 @@
    "name": "Create",
    "desc": "Write your own sentence"
   }
+ },
+ "errors": {
+  "3S": {
+   "name": "he / she / it + -s",
+   "group": "verb forms"
+  },
+  "DO": {
+   "name": "questions and negatives need do / does / did",
+   "group": "verb forms"
+  },
+  "BASE": {
+   "name": "base form after do / does / did / can / to",
+   "group": "verb forms"
+  },
+  "MODAL": {
+   "name": "no do and no to with can / should / must",
+   "group": "verb forms"
+  },
+  "BE": {
+   "name": "am / is / are left out",
+   "group": "verb forms"
+  },
+  "BE-VERB": {
+   "name": "is / am before a verb (It's depend, I'm agree)",
+   "group": "verb forms"
+  },
+  "NEG-INF": {
+   "name": "not to + verb (not don't)",
+   "group": "verb forms"
+  },
+  "PAST-FORM": {
+   "name": "past form: -ed and irregular verbs",
+   "group": "verb forms"
+  },
+  "NOW-HABIT": {
+   "name": "now or always / usually",
+   "group": "tense choice"
+  },
+  "STATE-ING": {
+   "name": "know, want, like ... without -ing",
+   "group": "tense choice"
+  },
+  "DURATION": {
+   "name": "how long up to now: have done / have been doing, for / since",
+   "group": "tense choice"
+  },
+  "FINISHED-TIME": {
+   "name": "finished time: past simple, not have done",
+   "group": "tense choice"
+  },
+  "BACKGROUND": {
+   "name": "in progress at a past moment: was / were doing",
+   "group": "tense choice"
+  },
+  "TIME-CLAUSE": {
+   "name": "no will after when / if / as soon as",
+   "group": "tense choice"
+  },
+  "FUTURE": {
+   "name": "future: will / going to, not the present simple",
+   "group": "tense choice"
+  },
+  "BACKSHIFT": {
+   "name": "reported speech: the tense goes back",
+   "group": "tense choice"
+  },
+  "COULD": {
+   "name": "could / was able to / managed to",
+   "group": "tense choice"
+  },
+  "IF-WOULD": {
+   "name": "no would in the if-part",
+   "group": "tense choice"
+  },
+  "Q-ORDER": {
+   "name": "statement order inside a question (where the station is)",
+   "group": "sentence structure"
+  },
+  "IND-YESNO": {
+   "name": "if / whether inside a question",
+   "group": "sentence structure"
+  },
+  "AGREE": {
+   "name": "the verb agrees with the subject",
+   "group": "sentence structure"
+  },
+  "REL-ORDER": {
+   "name": "preposition at the end of a relative clause",
+   "group": "sentence structure"
+  },
+  "REL-WHICH": {
+   "name": ", which for extra information and for a whole idea",
+   "group": "sentence structure"
+  },
+  "CONTRAST": {
+   "name": "although / even though / despite",
+   "group": "sentence structure"
+  },
+  "NP-ORDER": {
+   "name": "My whole section and I",
+   "group": "sentence structure"
+  },
+  "DOUBLE-NEG": {
+   "name": "one negative only",
+   "group": "sentence structure"
+  },
+  "IT-THERE": {
+   "name": "It's cold / There is a park",
+   "group": "sentence structure"
+  },
+  "ADV-PLACE": {
+   "name": "always / never before the verb, after be",
+   "group": "sentence structure"
+  },
+  "SAY-TELL": {
+   "name": "tell + person, say (to) + person",
+   "group": "sentence structure"
+  },
+  "ARTICLE": {
+   "name": "a / the / my before a noun",
+   "group": "nouns"
+  },
+  "THE": {
+   "name": "the or no article (life, the sun)",
+   "group": "nouns"
+  },
+  "PLURAL": {
+   "name": "one of the + plural",
+   "group": "nouns"
+  },
+  "POSSESSIVE": {
+   "name": "'s (my colleague's name)",
+   "group": "nouns"
+  },
+  "UNCOUNT": {
+   "name": "uncountable nouns (news, advice, hair)",
+   "group": "nouns"
+  },
+  "PATTERN": {
+   "name": "-ing or to after a verb",
+   "group": "word patterns"
+  },
+  "ED-ING": {
+   "name": "bored or boring",
+   "group": "word patterns"
+  },
+  "DEP-PREP": {
+   "name": "the preposition after a word (depend on, listen to)",
+   "group": "word patterns"
+  },
+  "TWO-OBJ": {
+   "name": "explain it to me, introduce you to",
+   "group": "word patterns"
+  },
+  "COMPARE": {
+   "name": "cheaper / the same as / as ... as",
+   "group": "word patterns"
+  }
+ },
+ "skill_err": {
+  "present_simple": [
+   "3S",
+   "DO",
+   "BASE"
+  ],
+  "present_continuous": [
+   "BE",
+   "NOW-HABIT",
+   "STATE-ING"
+  ],
+  "past_simple": [
+   "PAST-FORM",
+   "DO",
+   "BASE"
+  ],
+  "past_continuous": [
+   "BACKGROUND",
+   "BE"
+  ],
+  "present_perfect": [
+   "DURATION",
+   "FINISHED-TIME",
+   "PAST-FORM"
+  ],
+  "present_perfect_continuous": [
+   "DURATION"
+  ],
+  "future": [
+   "FUTURE",
+   "TIME-CLAUSE"
+  ],
+  "time_clauses": [
+   "TIME-CLAUSE"
+  ],
+  "cond_first": [
+   "TIME-CLAUSE"
+  ],
+  "cond_second": [
+   "IF-WOULD"
+  ],
+  "cond_third": [
+   "IF-WOULD"
+  ],
+  "rep_statements": [
+   "BACKSHIFT",
+   "SAY-TELL"
+  ],
+  "rep_questions": [
+   "Q-ORDER",
+   "IND-YESNO"
+  ],
+  "ind_polite": [
+   "Q-ORDER",
+   "IND-YESNO"
+  ],
+  "modal_verbs": [
+   "MODAL"
+  ],
+  "more_modals": [
+   "MODAL",
+   "COULD"
+  ],
+  "subject_object_q": [
+   "DO"
+  ],
+  "indefinite_pronouns": [
+   "DOUBLE-NEG"
+  ],
+  "adverbs": [
+   "ADV-PLACE"
+  ],
+  "articles": [
+   "ARTICLE",
+   "THE"
+  ],
+  "quantity": [
+   "UNCOUNT"
+  ],
+  "verb_patterns": [
+   "PATTERN",
+   "NEG-INF"
+  ],
+  "adj_ed_ing": [
+   "ED-ING"
+  ],
+  "two_objects": [
+   "TWO-OBJ"
+  ],
+  "comparison": [
+   "COMPARE"
+  ],
+  "relative_clauses": [
+   "REL-WHICH",
+   "REL-ORDER"
+  ]
  }
 }

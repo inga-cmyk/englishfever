@@ -42,7 +42,7 @@ P.mcq("A2.1", "Choose the correct option: Can you help ___ me?", NONE, ["to", "f
 P.mcq("A2.2", "Choose the correct option: Please call ___ me when you get home.", NONE, ["to", "at"], CALL)
 P.mcq("A2.2", "Which sentence is NOT correct?", "She joined to the team last year.", ["She joined the team last year.", "We are waiting for Anna.", "This bag belongs to me."], JOIN, b=4)
 P.mcq("A2.2", "On the phone: Which sentence is NOT correct?", "It depends from the weather.", ["It depends on the weather.", "He is good at tennis.", "I paid for the tickets."], DEPEND, b=4)
-P.mcq("A2.2", "Which question is correct?", "What are you looking at?", ["What are you looking?", "At what you are looking?"], QEND)
+P.mcq("B1.1", "Which question is correct?", "What are you looking at?", ["What are you looking?", "At what you are looking?"], QEND)
 P.bank("A2.1", "She is very good ___ maths.", "at", ["of", "on"], GOOD)
 P.bank("A2.1", "This phone belongs ___ my sister.", "to", ["at", "for"], BELONG)
 P.bank("A2.2", "Thank you ___ your help.", "for", ["to", "at"], THANK)
@@ -54,14 +54,14 @@ P.gap("A2.1", "Look ___ the board, please.", "at", LOOK)
 P.gap("A2.2", "It depends ___ the weather.", "on", DEPEND)
 P.gap("A2.2", "My little brother is afraid ___ the dark.", "of", AFRAID)
 P.gap("A2.2", "She is interested ___ art.", "in", INTEREST)
-P.gap("A2.2", "Who does this bag belong ___?", "to", BELONG)
+P.gap("B1.1", "Who does this bag belong ___?", "to", BELONG)
 P.gap("A2.2", "Thank you ___ the flowers.", "for", THANK)
 P.text("A2.1", "Correct the mistake: Can you help to me?", "Can you help me?", HELP)
 P.text("A2.2", "Correct the mistake: She joined to our team in May.", "She joined our team in May.", JOIN)
 P.text("A2.2", "Correct the mistake: Please call to me tomorrow.", "Please call me tomorrow.", CALL)
 P.text("A2.1", "Correct the mistake: I am waiting the bus.", "I am waiting for the bus. | I'm waiting for the bus.", WAIT)
-P.order("A2.2", "what are you looking at", why=QEND)
-P.order("A2.2", "who are you waiting for", why=QEND)
+P.order("B1.1", "what are you looking at", why=QEND)
+P.order("B1.1", "who are you waiting for", why=QEND)
 P.match("A2.2", "Match each beginning with its ending.",
         [("Turn up the music. I'm listening", "to my favourite song."), ("She plays the piano very well. She is good", "at music."),
          ("We'll see about the picnic. It depends", "on the weather."), ("He never goes near dogs. He's afraid", "of them.")],
@@ -112,14 +112,15 @@ A.match("A2.2", "Match each beginning with its ending.",
         ("One: *lives*. More than one: *live*. Two cafés: *there are*.", "Viens: *lives*. Vairāki: *live*. Divas kafejnīcas: *there are*."))
 
 # ============ Irregular plurals (A2.1 / A2.2) ============
-I = T("Irregular plurals (children, people, teeth)", "IRR-PLURAL",
-      "These nouns change in the plural: *child → children, person → people, tooth → teeth, foot → feet, mouse → mice*.",
-      "Šie lietvārdi daudzskaitlī mainās: *child → children, person → people, tooth → teeth, foot → feet, mouse → mice*.")
+I = T("Irregular plurals (children, people, men, teeth)", "IRR-PLURAL",
+      "These nouns change in the plural: *child → children, person → people, man → men, woman → women, tooth → teeth, foot → feet, mouse → mice*.",
+      "Šie lietvārdi daudzskaitlī mainās: *child → children, person → people, man → men, woman → women, tooth → teeth, foot → feet, mouse → mice*.")
 CHILD = ("*child → children* (no *-s*).", "*child → children* (bez *-s*). Tipiska kļūda: *childrens*.")
 PERSON = ("*person → people*.", "*person → people*.")
 TOOTH = ("*tooth → teeth*.", "*tooth → teeth*. Tipiska kļūda: *tooths*.")
 FOOT = ("*foot → feet*.", "*foot → feet*.")
 MOUSE = ("*mouse → mice*.", "*mouse → mice*.")
+MAN = ("*man → men*, *woman → women*.", "*man → men*, *woman → women*. Tipiska kļūda: *mans, womans*.")
 POLICE = ("*police* is always plural: *The police are*.", "*police* vienmēr ir daudzskaitlī: *The police are*.")
 
 I.mcq("A2.1", "Choose the correct option: I have two ___.", "children", ["childs", "childrens"], CHILD)
@@ -130,6 +131,10 @@ I.mcq("A2.2", "Choose the correct option: The cat caught two ___.", "mice", ["mo
 I.mcq("A2.2", "Choose the correct option: The police ___ looking for the driver.", "are", ["is", "am"], POLICE)
 I.mcq("A2.2", "Which sentence is NOT correct?", "The childrens are playing outside.", ["The children are playing outside.", "My feet are cold.", "Two people are waiting."], CHILD, b=4)
 I.mcq("A2.2", "In town: Which sentence is NOT correct?", "The police is here.", ["The police are here.", "Mice are small.", "I have a bad tooth."], POLICE, b=4)
+I.mcq("A2.1", "Choose the correct option: Two ___ are waiting outside.", "men", ["mans", "mens"], MAN)
+I.bank("A2.2", "Three ___ work in our office.", "women", ["womans", "woman"], MAN)
+I.gap("A2.1", "There is one woman and two ___ in the lift. (man)", "men", MAN)
+I.gap("A2.2", "One woman, two ___.", "women", MAN)
 I.bank("A2.1", "The ___ are in the garden.", "children", ["childs", "child"], CHILD)
 I.bank("A2.1", "I have two bad ___.", "teeth", ["tooths", "tooth"], TOOTH)
 I.bank("A2.2", "How many ___ live in your town?", "people", ["peoples", "person"], PERSON)
@@ -151,7 +156,7 @@ I.text("A2.2", "Rewrite with Two: The mouse is under the bed.", "Two mice are un
 I.order("A2.1", "the children are playing in the garden", why=CHILD)
 I.order("A2.2", "how many people live in your house", why=PERSON)
 I.match("A2.1", "Match each word with its plural.",
-        [("child", "children"), ("person", "people"), ("tooth", "teeth"), ("foot", "feet"), ("mouse", "mice")],
+        [("child", "children"), ("person", "people"), ("man", "men"), ("tooth", "teeth"), ("foot", "feet"), ("mouse", "mice")],
         ("These plurals have no *-s*: learn them as pairs.", "Šiem daudzskaitļiem nav *-s*: mācies tos pa pāriem."))
 
 save("a2-mistakes-1.csv")

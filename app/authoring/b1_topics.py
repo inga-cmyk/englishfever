@@ -417,9 +417,9 @@ LV_CARDS.update({
 
 # ───────── third batch (teacher's plan, 25 October): A2 topics built around frequent mistakes (docs/ERROR-TYPES.md) ─────────
 SKILLS_NEW.extend([
-    ("dep_prepositions", "Prepositions after words (listen to, good at)", "patterns", ["A2.1", "A2.2"]),
+    ("dep_prepositions", "Prepositions after words (listen to, good at)", "patterns", ["A2.1", "A2.2", "B1.1"]),
     ("agreement", "Subject and verb (my friend lives, my friends live)", "active", ["A2.1", "A2.2"]),
-    ("irregular_plurals", "Irregular plurals (children, people, teeth)", "nouns", ["A2.1", "A2.2"]),
+    ("irregular_plurals", "Irregular plurals (children, people, men, teeth)", "nouns", ["A2.1", "A2.2"]),
 ])
 ABBR_NEW.update({"dep_prepositions": "dpr", "agreement": "agr", "irregular_plurals": "ipl"})
 
@@ -443,11 +443,11 @@ CARDS.update({
         "example": "*My sister works in a bank, and my parents work in a hospital.*",
     },
     "irregular_plurals": {
-        "form": ["Most nouns add *-s*: *a book, two books*. These change: *child → children, person → people, tooth → teeth, foot → feet, mouse → mice.*",
+        "form": ["Most nouns add *-s*: *a book, two books*. These change: *child → children, person → people, man → men, woman → women, tooth → teeth, foot → feet, mouse → mice.*",
                  "No extra *-s*: *children*, not *childrens*; *teeth*, not *tooths*.",
                  "*police* has no *-s*, but it is always plural: *The police are here.*"],
         "use": ["These words take a plural verb: *The children are tired. People like it. My feet hurt.*"],
-        "signals": "*child, person, tooth, foot, mouse, police*",
+        "signals": "*child, person, man, woman, tooth, foot, mouse, police*",
         "example": "*One mouse is cute, but ten mice are a problem!*",
     },
 })
@@ -470,10 +470,10 @@ LV_CARDS.update({
         "signals": "he, she, it, everybody, nobody, and, there is / there are (viņš, viņa, visi, neviens, un, ir)",
     },
     "irregular_plurals": {
-        "form": ["Lielākajai daļai lietvārdu pievieno -s: a book, two books. Šie mainās: child → children, person → people, tooth → teeth, foot → feet, mouse → mice.",
+        "form": ["Lielākajai daļai lietvārdu pievieno -s: a book, two books. Šie mainās: child → children, person → people, man → men, woman → women, tooth → teeth, foot → feet, mouse → mice.",
                  "Bez papildu -s: children, nevis childrens; teeth, nevis tooths.",
                  "police ir bez -s, bet vienmēr daudzskaitlī: The police are here."],
         "use": ["Ar šiem vārdiem lieto daudzskaitļa darbības vārdu: The children are tired. People like it. My feet hurt."],
-        "signals": "child, person, tooth, foot, mouse, police (bērns, cilvēks, zobs, pēda, pele, policija)",
+        "signals": "child, person, man, woman, tooth, foot, mouse, police (bērns, cilvēks, vīrietis, sieviete, zobs, pēda, pele, policija)",
     },
 })

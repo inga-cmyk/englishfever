@@ -1,6 +1,6 @@
 # A2 mistakes batch 1: review sheet (25 October)
 
-88 drafts in `a2-mistakes-1.csv`: three new topics. Support: 0 = choose/drag, 1 = type with a clue, 2 = type without a clue. Nothing is imported until you approve.
+92 drafts in `a2-mistakes-1.csv`: three new topics. Support: 0 = choose/drag, 1 = type with a clue, 2 = type without a clue. Questions with the preposition at the end are B1.1.
 
 
 ## Prepositions after words (listen to, good at)
@@ -16,7 +16,7 @@
 | 7 | A2.2 | mcq | 0 | Choose the correct option: Please call ___ me when you get home. | — | to \| at | *call me*, no preposition. A typical mistake: *call to me*. | *call me*, bez prievārda. Tipiska kļūda: *call to me*. |
 | 8 | A2.2 | mcq | 0 | Which sentence is NOT correct? | She joined to the team last year. | She joined the team last year. \| We are waiting for Anna. \| This bag belongs to me. | *join the team*, no preposition. A typical mistake: *join to*. | *join the team*, bez prievārda. Tipiska kļūda: *join to*. |
 | 9 | A2.2 | mcq | 0 | Which sentence is NOT correct? | It depends from the weather. | It depends on the weather. \| He is good at tennis. \| I paid for the tickets. | *depend on*, not *from*: *It depends on the weather.* | Latviski atkarīgs no, angliski *depend on*: *It depends on the weather.* |
-| 10 | A2.2 | mcq | 0 | Which question is correct? | What are you looking at? | What are you looking? \| At what you are looking? | In a question the preposition goes to the end: *Who are you waiting for?* | Jautājumā prievārds ir beigās: *Who are you waiting for?* |
+| 10 | B1.1 | mcq | 0 | Which question is correct? | What are you looking at? | What are you looking? \| At what you are looking? | In a question the preposition goes to the end: *Who are you waiting for?* | Jautājumā prievārds ir beigās: *Who are you waiting for?* |
 | 11 | A2.1 | gap | 0 | She is very good ___ maths. | at | bank: at \| of \| on | *good at* + a subject or an activity: *good at maths*. | *good at maths* = viņai padodas matemātika. |
 | 12 | A2.1 | gap | 0 | This phone belongs ___ my sister. | to | bank: to \| at \| for | *belong to*: *This bag belongs to me.* | Latviski pieder man, angliski *belongs to me*. |
 | 13 | A2.2 | gap | 0 | Thank you ___ your help. | for | bank: for \| to \| at | *thank you for* + the thing: *Thank you for your help.* | *thank you for* + tas, par ko pateicas: *Thank you for your help.* |
@@ -28,14 +28,14 @@
 | 19 | A2.2 | gap | 2 | It depends ___ the weather. | on |  | *depend on*, not *from*: *It depends on the weather.* | Latviski atkarīgs no, angliski *depend on*: *It depends on the weather.* |
 | 20 | A2.2 | gap | 2 | My little brother is afraid ___ the dark. | of |  | *afraid of*: *afraid of spiders*. | Latviski baidās no, angliski *afraid of* (nevis *from*): *afraid of spiders*. |
 | 21 | A2.2 | gap | 2 | She is interested ___ art. | in |  | *interested in*: *interested in football*. | Latviski interesējas par, angliski *interested in*: *interested in football*. |
-| 22 | A2.2 | gap | 2 | Who does this bag belong ___? | to |  | *belong to*: *This bag belongs to me.* | Latviski pieder man, angliski *belongs to me*. |
+| 22 | B1.1 | gap | 2 | Who does this bag belong ___? | to |  | *belong to*: *This bag belongs to me.* | Latviski pieder man, angliski *belongs to me*. |
 | 23 | A2.2 | gap | 2 | Thank you ___ the flowers. | for |  | *thank you for* + the thing: *Thank you for your help.* | *thank you for* + tas, par ko pateicas: *Thank you for your help.* |
 | 24 | A2.1 | text | 2 | Correct the mistake: Can you help to me? | Can you help me? |  | *help me*, no preposition. A typical mistake: *help to me*. | *help me*, bez prievārda. Tipiska kļūda: *help to me*. |
 | 25 | A2.2 | text | 2 | Correct the mistake: She joined to our team in May. | She joined our team in May. |  | *join the team*, no preposition. A typical mistake: *join to*. | *join the team*, bez prievārda. Tipiska kļūda: *join to*. |
 | 26 | A2.2 | text | 2 | Correct the mistake: Please call to me tomorrow. | Please call me tomorrow. \| Tomorrow Please call me. |  | *call me*, no preposition. A typical mistake: *call to me*. | *call me*, bez prievārda. Tipiska kļūda: *call to me*. |
 | 27 | A2.1 | text | 2 | Correct the mistake: I am waiting the bus. | I am waiting for the bus. \| I'm waiting for the bus. |  | *wait for*: *I'm waiting for the bus.* | Latviski gaidu autobusu (bez prievārda), angliski *wait for*: *I'm waiting for the bus.* |
-| 28 | A2.2 | order | 1 | Put the words in order. | what are you looking at |  | In a question the preposition goes to the end: *Who are you waiting for?* | Jautājumā prievārds ir beigās: *Who are you waiting for?* |
-| 29 | A2.2 | order | 1 | Put the words in order. | who are you waiting for |  | In a question the preposition goes to the end: *Who are you waiting for?* | Jautājumā prievārds ir beigās: *Who are you waiting for?* |
+| 28 | B1.1 | order | 1 | Put the words in order. | what are you looking at |  | In a question the preposition goes to the end: *Who are you waiting for?* | Jautājumā prievārds ir beigās: *Who are you waiting for?* |
+| 29 | B1.1 | order | 1 | Put the words in order. | who are you waiting for |  | In a question the preposition goes to the end: *Who are you waiting for?* | Jautājumā prievārds ir beigās: *Who are you waiting for?* |
 | 30 | A2.2 | match | 0 | Match each beginning with its ending. | Turn up the music. I'm listening = to my favourite song. ; She plays the piano very well. She is good = at music. ; We'll see about the picnic. It depends = on the weather. ; He never goes near dogs. He's afraid = of them. |  | *listen to, good at, depend on, afraid of*: learn them in pairs. | *listen to, good at, depend on, afraid of*: mācies tos pa pāriem. |
 
 ## Subject and verb (my friend lives, my friends live)
@@ -72,7 +72,7 @@
 | 28 | A2.2 | order | 1 | Put the words in order. | does your sister work at the weekend |  | One person: *Does*. More than one: *Do*. In a question the helping verb (or *am / is / are*) goes before the subject. | Vienam: *Does*. Vairākiem: *Do*. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta. |
 | 29 | A2.2 | match | 0 | Match each beginning with its ending. | My sister = lives in Riga. ; My sisters = live in Riga. ; There = are two cafés in our street. |  | One: *lives*. More than one: *live*. Two cafés: *there are*. | Viens: *lives*. Vairāki: *live*. Divas kafejnīcas: *there are*. |
 
-## Irregular plurals (children, people, teeth)
+## Irregular plurals (children, people, men, teeth)
 
 | # | Level | Type | Support | Task | Answer | Wrong / cards | Explanation (EN) | Explanation (LV) |
 |---|---|---|---|---|---|---|---|---|
@@ -84,24 +84,28 @@
 | 6 | A2.2 | mcq | 0 | Choose the correct option: The police ___ looking for the driver. | are | is \| am | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
 | 7 | A2.2 | mcq | 0 | Which sentence is NOT correct? | The childrens are playing outside. | The children are playing outside. \| My feet are cold. \| Two people are waiting. | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
 | 8 | A2.2 | mcq | 0 | Which sentence is NOT correct? | The police is here. | The police are here. \| Mice are small. \| I have a bad tooth. | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
-| 9 | A2.1 | gap | 0 | The ___ are in the garden. | children | bank: children \| childs \| child | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
-| 10 | A2.1 | gap | 0 | I have two bad ___. | teeth | bank: teeth \| tooths \| tooth | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
-| 11 | A2.2 | gap | 0 | How many ___ live in your town? | people | bank: people \| peoples \| person | *person → people*. | *person → people*. |
-| 12 | A2.2 | gap | 0 | We saw three ___ in the kitchen! | mice | bank: mice \| mouses \| mouse | *mouse → mice*. | *mouse → mice*. |
-| 13 | A2.2 | gap | 0 | The police ___ asking questions. | are | bank: are \| is \| was | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
-| 14 | A2.1 | gap | 1 | I have one child, and my sister has three ___. (child) | children |  | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
-| 15 | A2.1 | gap | 1 | I can stand on one foot, but it's easier on two ___. (foot) | feet |  | *foot → feet*. | *foot → feet*. |
-| 16 | A2.2 | gap | 1 | The dentist checked all my ___. (tooth) | teeth |  | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
-| 17 | A2.2 | gap | 1 | There is one person in the shop and five ___ outside. (person) | people |  | *person → people*. | *person → people*. |
-| 18 | A2.2 | gap | 1 | One mouse is cute, but ten ___ are a problem! (mouse) | mice |  | *mouse → mice*. | *mouse → mice*. |
-| 19 | A2.2 | gap | 1 | The police ___ here. (be) | are |  | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
-| 20 | A2.1 | gap | 2 | One tooth, two ___. | teeth |  | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
-| 21 | A2.1 | gap | 2 | One mouse, two ___. | mice |  | *mouse → mice*. | *mouse → mice*. |
-| 22 | A2.2 | gap | 2 | One person, two ___. | people |  | *person → people*. | *person → people*. |
-| 23 | A2.1 | text | 2 | Correct the mistake: My childrens go to school by bus. | My children go to school by bus. |  | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
-| 24 | A2.1 | text | 2 | Correct the mistake: I brush my tooths every morning. | I brush my teeth every morning. \| Every morning I brush my teeth. |  | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
-| 25 | A2.2 | text | 2 | Correct the mistake: The police is outside. | The police are outside. |  | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
-| 26 | A2.2 | text | 2 | Rewrite with Two: The mouse is under the bed. | Two mice are under the bed. |  | *mouse → mice*. | *mouse → mice*. |
-| 27 | A2.1 | order | 1 | Put the words in order. | the children are playing in the garden |  | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
-| 28 | A2.2 | order | 1 | Put the words in order. | how many people live in your house |  | *person → people*. | *person → people*. |
-| 29 | A2.1 | match | 0 | Match each word with its plural. | child = children ; person = people ; tooth = teeth ; foot = feet ; mouse = mice |  | These plurals have no *-s*: learn them as pairs. | Šiem daudzskaitļiem nav *-s*: mācies tos pa pāriem. |
+| 9 | A2.1 | mcq | 0 | Choose the correct option: Two ___ are waiting outside. | men | mans \| mens | *man → men*, *woman → women*. | man → *men, woman → women*. Tipiska kļūda: *mans, womans*. |
+| 10 | A2.2 | gap | 0 | Three ___ work in our office. | women | bank: women \| womans \| woman | *man → men*, *woman → women*. | man → *men, woman → women*. Tipiska kļūda: *mans, womans*. |
+| 11 | A2.1 | gap | 1 | There is one woman and two ___ in the lift. (man) | men |  | *man → men*, *woman → women*. | man → *men, woman → women*. Tipiska kļūda: *mans, womans*. |
+| 12 | A2.2 | gap | 2 | One woman, two ___. | women |  | *man → men*, *woman → women*. | man → *men, woman → women*. Tipiska kļūda: *mans, womans*. |
+| 13 | A2.1 | gap | 0 | The ___ are in the garden. | children | bank: children \| childs \| child | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
+| 14 | A2.1 | gap | 0 | I have two bad ___. | teeth | bank: teeth \| tooths \| tooth | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
+| 15 | A2.2 | gap | 0 | How many ___ live in your town? | people | bank: people \| peoples \| person | *person → people*. | *person → people*. |
+| 16 | A2.2 | gap | 0 | We saw three ___ in the kitchen! | mice | bank: mice \| mouses \| mouse | *mouse → mice*. | *mouse → mice*. |
+| 17 | A2.2 | gap | 0 | The police ___ asking questions. | are | bank: are \| is \| was | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
+| 18 | A2.1 | gap | 1 | I have one child, and my sister has three ___. (child) | children |  | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
+| 19 | A2.1 | gap | 1 | I can stand on one foot, but it's easier on two ___. (foot) | feet |  | *foot → feet*. | *foot → feet*. |
+| 20 | A2.2 | gap | 1 | The dentist checked all my ___. (tooth) | teeth |  | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
+| 21 | A2.2 | gap | 1 | There is one person in the shop and five ___ outside. (person) | people |  | *person → people*. | *person → people*. |
+| 22 | A2.2 | gap | 1 | One mouse is cute, but ten ___ are a problem! (mouse) | mice |  | *mouse → mice*. | *mouse → mice*. |
+| 23 | A2.2 | gap | 1 | The police ___ here. (be) | are |  | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
+| 24 | A2.1 | gap | 2 | One tooth, two ___. | teeth |  | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
+| 25 | A2.1 | gap | 2 | One mouse, two ___. | mice |  | *mouse → mice*. | *mouse → mice*. |
+| 26 | A2.2 | gap | 2 | One person, two ___. | people |  | *person → people*. | *person → people*. |
+| 27 | A2.1 | text | 2 | Correct the mistake: My childrens go to school by bus. | My children go to school by bus. |  | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
+| 28 | A2.1 | text | 2 | Correct the mistake: I brush my tooths every morning. | I brush my teeth every morning. \| Every morning I brush my teeth. |  | *tooth → teeth*. | *tooth → teeth*. Tipiska kļūda: *tooths*. |
+| 29 | A2.2 | text | 2 | Correct the mistake: The police is outside. | The police are outside. |  | *police* is always plural: *The police are*. | *police* vienmēr ir daudzskaitlī: *The police are.* |
+| 30 | A2.2 | text | 2 | Rewrite with Two: The mouse is under the bed. | Two mice are under the bed. |  | *mouse → mice*. | *mouse → mice*. |
+| 31 | A2.1 | order | 1 | Put the words in order. | the children are playing in the garden |  | *child → children* (no *-s*). | *child → children* (bez *-s*). Tipiska kļūda: *childrens*. |
+| 32 | A2.2 | order | 1 | Put the words in order. | how many people live in your house |  | *person → people*. | *person → people*. |
+| 33 | A2.1 | match | 0 | Match each word with its plural. | child = children ; person = people ; man = men ; tooth = teeth ; foot = feet ; mouse = mice |  | These plurals have no *-s*: learn them as pairs. | Šiem daudzskaitļiem nav *-s*: mācies tos pa pāriem. |

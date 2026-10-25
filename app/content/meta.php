@@ -1650,7 +1650,8 @@ return json_decode(<<<'EF_JSON_END'
    "area": "patterns",
    "levels": [
     "A2.1",
-    "A2.2"
+    "A2.2",
+    "B1.1"
    ],
    "rule": {
     "form": [
@@ -1714,7 +1715,7 @@ return json_decode(<<<'EF_JSON_END'
   },
   {
    "id": "irregular_plurals",
-   "label": "Irregular plurals (children, people, teeth)",
+   "label": "Irregular plurals (children, people, men, teeth)",
    "area": "nouns",
    "levels": [
     "A2.1",
@@ -1722,26 +1723,26 @@ return json_decode(<<<'EF_JSON_END'
    ],
    "rule": {
     "form": [
-     "Most nouns add *-s*: *a book, two books*. These change: *child → children, person → people, tooth → teeth, foot → feet, mouse → mice.*",
+     "Most nouns add *-s*: *a book, two books*. These change: *child → children, person → people, man → men, woman → women, tooth → teeth, foot → feet, mouse → mice.*",
      "No extra *-s*: *children*, not *childrens*; *teeth*, not *tooths*.",
      "*police* has no *-s*, but it is always plural: *The police are here.*"
     ],
     "use": [
      "These words take a plural verb: *The children are tired. People like it. My feet hurt.*"
     ],
-    "signals": "*child, person, tooth, foot, mouse, police*",
+    "signals": "*child, person, man, woman, tooth, foot, mouse, police*",
     "example": "*One mouse is cute, but ten mice are a problem!*"
    },
    "rule_lv": {
     "form": [
-     "Lielākajai daļai lietvārdu pievieno *-s*: *a book, two books*. Šie mainās: *child → children, person → people, tooth → teeth, foot → feet, mouse → mice*.",
+     "Lielākajai daļai lietvārdu pievieno *-s*: *a book, two books*. Šie mainās: *child → children, person → people*, man → *men, woman → women, tooth → teeth, foot → feet, mouse → mice*.",
      "Bez papildu *-s*: *children*, nevis *childrens; teeth*, nevis *tooths*.",
      "*police* ir bez *-s*, bet vienmēr daudzskaitlī: *The police are here.*"
     ],
     "use": [
      "Ar šiem vārdiem lieto daudzskaitļa darbības vārdu: *The children are tired.* *People like it.* *My feet hurt.*"
     ],
-    "signals": "*child, person, tooth, foot, mouse, police* (bērns, cilvēks, *zobs*, pēda, *pele, policija*)"
+    "signals": "*child, person*, man, *woman, tooth, foot, mouse, police* (bērns, cilvēks, vīrietis, *sieviete, zobs*, pēda, *pele, policija*)"
    }
   }
  ],

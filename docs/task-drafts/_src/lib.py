@@ -20,13 +20,14 @@ LV_SUBS = [
     (r"[Tt]agadnes ilgstošā forma|[Tt]agadnes ilgstošo formu|[Tt]agadnes ilgstošā", "Present Continuous"), (r"[Pp]agātnes ilgstošā forma|[Pp]agātnes ilgstošo formu", "Past Continuous"),
     (r"[Ii]lgstošā forma", "Continuous forma"), (r"[Ss]alīdzināmā forma", "pārākā pakāpe"), (r"[Ss]alīdzināmo formu", "pārāko pakāpi"),
     (r"pagātnes divdabi\b", "3. formu"), (r"pagātnes divdabis\b", "3. forma"), (r"[Dd]ivdabi\b", "3. formu"), (r"[Dd]ivdabis\b", "3. forma"),
-    (r"(?<!teikuma )(?<!teik\. )\b[Pp]riekšmets\b", "teik. priekšmets"), (r"(?<!teikuma )(?<!teik\. )\bpriekšmeta\b", "teikuma priekšmeta"), (r"(?<!teikuma )(?<!teik\. )\bpriekšmetu\b", "teikuma priekšmetu"),
+    (r"(?<![Tt]eikuma )(?<![Tt]eik\. )\b[Pp]riekšmets\b", "teik. priekšmets"), (r"(?<!teikuma )(?<!teik\. )\bpriekšmeta\b", "teikuma priekšmeta"), (r"(?<!teikuma )(?<!teik\. )\bpriekšmetu\b", "teikuma priekšmetu"),
 ]
 def lv_fix(t):
     t = t.replace("*", "")
     for a, b in LV_SUBS: t = re.sub(a, b, t)
     return italics.lv_mark(t)   # every English word in a Latvian explanation is an example: the same rule the built-in explanations use
 def mc(t, lv, b, q, ok, wrong, why, lvw):
+    why, lvw = audit_fixes.WHY.get(q, (why, lvw))
     fx = audit_fixes.MCQ.get((q, ok)) or audit_fixes.MCQ.get(("*", ok))   # corrections from the audit (audit_fixes.py)
     old = None
     if fx:
@@ -37,19 +38,29 @@ def replaces(old):
     """The last row replaces an older version that was already imported: the old *correct option* (choose), *sentence* (word order) or *task text* (other types). The importer retires the old one."""
     rows[-1] = rows[-1][:9] + [old]
 def gp(t, lv, b, q, ok, why, lvw, bank=None):
+    why, lvw = audit_fixes.WHY.get(q, (why, lvw))   # an explanation that fitted another part of the sentence (audit_fixes.py)
     ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
     old = None
     if bank and q in audit_fixes.BANK_CHIPS: bank = audit_fixes.BANK_CHIPS[q]   # a card that also fitted the sentence is replaced (audit_fixes.py)
     if q in audit_fixes.BANK_TASK: old, q = q, audit_fixes.BANK_TASK[q]
     rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b] + ([old] if old else []))
 def tx(t, lv, b, q, ok, why, lvw):
+    why, lvw = audit_fixes.WHY.get(q, (why, lvw))
     ok = list(ok) if isinstance(ok, (list, tuple)) else [x.strip() for x in ok.split("|")]
     ok = ok + [x for x in extra_answers.TEXT.get(q, []) if x not in ok]       # added by hand (extra_answers.py)
     ok = auto_answers.extend(q, ok)                                            # time phrase first, that left out, me left out, polite openers (auto_answers.py)
     rows.append([t, lv, "text", q, " | ".join(ok), "", why, lvw, b])
 import alt_orders, auto_answers, extra_answers, audit_fixes
+_AUX = "is are was were do does did can could will would have has had shall should may might am".split()
+def _is_question(sentence):
+    w = sentence.lower().split()
+    if len(w) < 3: return False
+    if w[0] in _AUX: return True
+    return w[0] in ("what", "where", "when", "why", "who", "whom", "how", "which") and (w[1] in _AUX or (len(w) > 2 and w[2] in _AUX and w[1] in ("long", "many", "much", "often", "time", "far", "old")))
 def od(t, lv, b, q, ok, why, lvw, also=None):
     also = list(also or []) + [a for a in alt_orders.alternatives(ok) if a not in (also or [])]   # other correct orders (alt_orders.py)
+    if _is_question(ok) and "question" not in t.lower() and not why.lower().startswith(("question", "subject question")) and audit_fixes.ORDER_Q[0] not in why:
+        why, lvw = why.rstrip() + " " + audit_fixes.ORDER_Q[0], lvw.rstrip() + " " + audit_fixes.ORDER_Q[1]
     rows.append([t, lv, "order", q, ok, ("also accepted: " + " | ".join(also)) if also else "", why, lvw, b])
 def mt(t, lv, b, q, pairs, why, lvw):
     old = " ; ".join(f"{a} = {c}" for a, c in pairs)

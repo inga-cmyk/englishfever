@@ -302,6 +302,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Present Continuous bieži rāda, ka kaut kas ir pagaidu vai mainās."
 },
 {
+"id": "pa-A21-6a",
+"skill": "past_simple",
+"level": "A2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about what you did yesterday. Use a past verb and the word yesterday.",
+"must": [
+[
+"\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left)\\b",
+"Use a verb in the past (for example: *met, went, worked*).",
+"Lieto darbības vārdu pagātnē (piemēram, *met, went, worked*)."
+],
+[
+"\\byesterday\\b",
+"Use the word *yesterday.*",
+"Lieto vārdu *yesterday*."
+]
+],
+"model": "Yesterday I met a friend for coffee.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pa-A22-3b",
 "skill": "past_simple",
 "level": "A2.2",
@@ -321,6 +344,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Abi darbības vārdi ir neregulāri: *wake - woke, have - had*."
 },
 {
+"id": "pa-A22-6a",
+"skill": "past_simple",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two short sentences about your last holiday or day off. Use the past simple.",
+"must": [
+[
+"\\b(was|were|went|had|saw|visited|stayed|ate|took|met|bought|\\w+ed)\\b",
+"Use verbs in the past simple (*went, stayed, visited ...*).",
+"Lieto darbības vārdus Past Simple (*went, stayed, visited* ...)."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "I went to the sea. We swam every day.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pa-B11-2a",
 "skill": "past_simple",
 "level": "B1.1",
@@ -336,6 +382,29 @@ return json_decode(<<<'EF_JSON_END'
 "why": "We use the past simple for a series of finished actions in order.",
 "wrong_why": {},
 "why_lv": "Pabeigtu darbību virknei secībā lieto Past Simple."
+},
+{
+"id": "pa-B11-6a",
+"skill": "past_simple",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences that start a story. Say what happened first and what happened next (use Then or After that).",
+"must": [
+[
+"\\b(then|after that|later|next)\\b",
+"Use *Then* or *After that* to show the order.",
+"Lieto *Then* vai *After that*, lai parādītu secību."
+],
+[
+"\\b(\\w+ed|went|had|saw|got|came|took|made|met|woke|was|were|left)\\b",
+"Use verbs in the past simple.",
+"Lieto darbības vārdus Past Simple."
+]
+],
+"model": "I got up late. Then I missed the bus.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "pac-A22-1a",
@@ -445,6 +514,34 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Repeated actions in the past use the past simple (or *used to*), not the past continuous: *I played in the park every day.*",
 "wrong_why": {},
 "why_lv": "Atkārtotām darbībām pagātnē lieto Past Simple (vai *used to*), nevis Past Continuous: *I played in the park every day.*"
+},
+{
+"id": "pac-B11-6a",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence with 'when' about something that interrupted you. Use the past continuous and the past simple.",
+"must": [
+[
+"\\b(was|were)\\s+\\w+ing\\b",
+"Use *was/were* + verb-ing for the longer action.",
+"Garākai darbībai lieto *was/were* + darbības vārds ar *-ing*."
+],
+[
+"\\bwhen\\b",
+"Use the word *when.*",
+"Lieto vārdu *when*."
+],
+[
+"\\b(\\w+ed|rang|came|saw|heard|started|arrived|called|stopped|broke|fell|went|got)\\b",
+"Use the past simple for the short action (*rang, arrived, called ...*).",
+"Īsajai darbībai lieto Past Simple (*rang, arrived, called* ...)."
+]
+],
+"model": "I was cooking dinner when my friend called.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "pac-B12-2a",
@@ -1836,6 +1933,24 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*Whoever* + verb = it does not matter who.",
 "hints": []
+},
+{
+"id": "ps-A21-6a-r2",
+"skill": "present_simple",
+"level": "A2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about a daily habit of your friend or colleague. Start with He or She and use an action verb in the present simple (for example, works, goes or has breakfast).",
+"must": [
+[
+"^\\s*(he|she)\\s+(?:(?:usually|often|always|sometimes|never)\\s+)?(?!is\\b|was\\b)\\w+s\\b",
+"Use *He* or *She* with a present-simple verb, such as *works*, *goes* or *has*.",
+"Lieto *He* vai *She* ar darbības vārdu Present Simple, piemēram, *works*, *goes* vai *has*."
+]
+],
+"model": "She starts work at eight every day.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "ps-B11-2a-r2",

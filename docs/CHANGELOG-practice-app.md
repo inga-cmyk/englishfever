@@ -97,3 +97,10 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 
 ## First release
 - 13 tenses A2.1–B1.2 (241 tasks, all six Bloom levels), placement test, adaptive practice, feedback with rule cards, time/streak/XP/leaderboard, teacher view, Tutor LMS login.
+
+### 25 October — explanation audit (second pass)
+- Explanations that talked about another part of the sentence than the blank tests were rewritten (19 gap tasks: main-clause blanks in first-conditional tasks, future forms, past plans, indirect `if / whether / where`, `until / as soon as`). Table: `docs/task-drafts/_src/audit_fixes.py` (`WHY`).
+- Word-order tasks that are questions now say that the helping verb goes before the subject (36 tasks).
+- Latvian: "Teikuma priekšmets" no longer gets a second "teik."; the lint is case-insensitive.
+- Open writing (built-in): five checks accepted too few verbs (She really enjoys…, I swam / drove / spoke…); new revision ids.
+- Placement result: overall level only; weak topics are named in the Second Chance box.

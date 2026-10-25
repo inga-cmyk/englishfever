@@ -129,7 +129,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *does* lieto pamatformu: *work*, nevis *works*. *Does he work here?*"
 },
 {
-"id": "ps-A21-6a-r2",
+"id": "ps-A21-6a-r3",
 "skill": "present_simple",
 "level": "A2.1",
 "bloom": 6,
@@ -137,7 +137,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Write one sentence about a daily habit of your friend or colleague. Start with He or She and use an action verb in the present simple (for example, works, goes or has breakfast).",
 "must": [
 [
-"^\\s*(he|she)\\s+(?:(?:usually|often|always|sometimes|never)\\s+)?(?!is\\b|was\\b)\\w+s\\b",
+"^\\s*(he|she)\\s+(?:(?:\\w+ly|usually|often|always|sometimes|never|also|still|just)\\s+)?(?!is\\b|was\\b)\\w+s\\b",
 "Use *He* or *She* with a present-simple verb, such as *works*, *goes* or *has*.",
 "Lieto *He* vai *She* ar darbības vārdu Present Simple, piemēram, *works*, *goes* vai *has*."
 ]
@@ -901,7 +901,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Buy* ir neregulārs darbības vārds. Pagātnes forma ir *bought*, nevis *buyed*."
 },
 {
-"id": "pa-A21-6a",
+"id": "pa-A21-6a-r3",
 "skill": "past_simple",
 "level": "A2.1",
 "bloom": 6,
@@ -909,7 +909,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Write one sentence about what you did yesterday. Use a past verb and the word yesterday.",
 "must": [
 [
-"\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left)\\b",
+"\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
 "Use a verb in the past (for example: *met, went, worked*).",
 "Lieto darbības vārdu pagātnē (piemēram, *met, went, worked*)."
 ],
@@ -1030,7 +1030,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums ir Past Simple, tāpēc par pabeigtu laiku atbild ar Past Simple."
 },
 {
-"id": "pa-A22-6a",
+"id": "pa-A22-6a-r3",
 "skill": "past_simple",
 "level": "A2.2",
 "bloom": 6,
@@ -1038,7 +1038,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Write two short sentences about your last holiday or day off. Use the past simple.",
 "must": [
 [
-"\\b(was|were|went|had|saw|visited|stayed|ate|took|met|bought|\\w+ed)\\b",
+"\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
 "Use verbs in the past simple (*went, stayed, visited ...*).",
 "Lieto darbības vārdus Past Simple (*went, stayed, visited* ...)."
 ],
@@ -1160,7 +1160,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*In March* ir pabeigts laiks, tāpēc lieto Past Simple, nevis Present Perfect."
 },
 {
-"id": "pa-B11-6a",
+"id": "pa-B11-6a-r3",
 "skill": "past_simple",
 "level": "B1.1",
 "bloom": 6,
@@ -1173,7 +1173,7 @@ return json_decode(<<<'EF_JSON_END'
 "Lieto *Then* vai *After that*, lai parādītu secību."
 ],
 [
-"\\b(\\w+ed|went|had|saw|got|came|took|made|met|woke|was|were|left)\\b",
+"\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
 "Use verbs in the past simple.",
 "Lieto darbības vārdus Past Simple."
 ]
@@ -1539,7 +1539,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēkšņai, īsai darbībai, kas pārtrauc, lieto Past Simple."
 },
 {
-"id": "pac-B11-6a",
+"id": "pac-B11-6a-r3",
 "skill": "past_continuous",
 "level": "B1.1",
 "bloom": 6,
@@ -1557,7 +1557,7 @@ return json_decode(<<<'EF_JSON_END'
 "Lieto vārdu *when*."
 ],
 [
-"\\b(\\w+ed|rang|came|saw|heard|started|arrived|called|stopped|broke|fell|went|got)\\b",
+"\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
 "Use the past simple for the short action (*rang, arrived, called ...*).",
 "Īsajai darbībai lieto Past Simple (*rang, arrived, called* ...)."
 ]

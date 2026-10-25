@@ -107,3 +107,29 @@ MATCH = [
      [("I'll call you before I leave.", "the call is earlier than leaving"), ("I'll call you after I leave.", "the call is later than leaving"), ("I'll wait until you call.", "waiting continues up to the call"), ("I'll read while you cook.", "both happen at the same time")]),
 ]
 MATCH_BY_OLD = {" ; ".join(f"{a} = {c}" for a, c in old): (task, new) for old, task, new in MATCH}
+
+# Explanation audit (25 October): a shared explanation that talks about another part of the sentence than the blank tests.
+# key = task text  ->  (English explanation, Latvian explanation). Applied by lib.py; the answers do not change.
+WHY = {
+    "We ___ late if we don't leave now.": ("Result part: *will* + base verb. The *if*-part keeps the Present Simple: *we don't leave*.", "Rezultāta daļā: *will* + pamatforma. *If* daļā paliek Present Simple: *we don't leave*."),
+    "She ___ you if you ask her nicely.": ("Result part: *will* + base verb: *she will help*.", "Rezultāta daļā: *will* + pamatforma: *she will help*."),
+    "Don't worry, I ___ you with the luggage.": ("A decision or offer now: *will* + base verb.", "Lēmums vai piedāvājums tagad: *will* + pamatforma."),
+    "The sky is very dark. Look! It ___ rain very soon.": ("We can see it now, so we use *going to*.", "Mēs to redzam tagad, tāpēc lieto *going to*."),
+    "We ___ in Rome next week; the tickets are booked.": ("A fixed arrangement: Present Continuous.", "Noteikta vienošanās: Present Continuous."),
+    "I don't think the team ___ the match.": ("An opinion about the future: *I think / don't think* + *will*.", "Viedoklis par nākotni: *I think / don't think* + *will*."),
+    "He ___ to see the doctor tomorrow at ten.": ("A plan: *is going to* + base verb.", "Plāns: *is going to* + pamatforma."),
+    "Don't worry. I ___ you the answer tomorrow. (send)": ("A promise: *will* + base verb.", "Solījums: *will* + pamatforma."),
+    "The film ___ at eight, so let's meet at seven. (start)": ("A timetable: Present Simple: *starts*.", "Saraksts: Present Simple: *starts*."),
+    "We ___ the kitchen next month. We've already chosen the colour. (paint)": ("A plan or arrangement: *are going to paint* or *are painting*.", "Plāns vai vienošanās: *are going to paint* vai *are painting*."),
+    "I ___ to phone you, but I lost your number.": ("*Was / were going to* + base verb = a plan in the past that did not happen.", "*Was / were going to* + pamatforma = plāns pagātnē, kas nenotika."),
+    "We ___ to move, but then we found a better flat.": ("*Were planning to* = a plan in the past that did not happen.", "*Were planning to* = plāns pagātnē, kas nenotika."),
+    "I ___ to tell you, but you were busy. (try)": ("*Was trying to* = an attempt that was in progress. *Tried to* is also possible.", "*Was trying to* = mēģinājums, kas norisinājās. Der arī *tried to*."),
+    "We ___ to have a dog when I was young. (use)": ("*Used to* + base verb shows a past state that is no longer true.", "*Used to* + pamatforma rāda stāvokli pagātnē, kas vairs nav spēkā."),
+    "Can you tell me ___ this bus stops at the museum?": ("A yes/no question inside another question: *if* or *whether*, then statement order.", "Jautājums ar atbildi jā/nē citā jautājumā: *if* vai *whether*, tad teikuma vārdu secība."),
+    "I wonder ___ he will come.": ("A yes/no question inside a sentence: *whether* or *if*.", "Jautājums ar atbildi jā/nē teikuma iekšpusē: *whether* vai *if*."),
+    "Do you know ___ she lives?": ("The question word starts the indirect question, then statement order: *where she lives*.", "Jautājamais vārds sāk netiešo jautājumu, tad teikuma vārdu secība: *where she lives*."),
+    "Let's wait ___ the rain stops.": ("*Until* = up to that moment. The time clause uses the Present Simple: *stops*.", "*Until* = līdz tam brīdim. Laika palīgteikumā lieto Present Simple: *stops*."),
+    "I'll phone you ___ I know the result.": ("*As soon as* = immediately after. The time clause uses the Present Simple: *know*.", "*As soon as* = tūlīt pēc tam. Laika palīgteikumā lieto Present Simple: *know*."),
+}
+# Word-order tasks that are questions: the statement explanation gets this line (lib.od).
+ORDER_Q = ("In a question the helping verb (or *am / is / are*) goes before the subject.", "Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.")

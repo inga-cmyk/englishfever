@@ -272,7 +272,17 @@ def revise(original):
         n = 3
         while id + '-r%d' % n in ledger: n += 1     # the next revision number that no published version uses
         it['id'] = id + '-r%d' % n
-        REASONS[id] = REASONS[id] + ' ' + reason
+        REASONS[id] = (REASONS[id] + ' ' + reason) if id in REASONS else reason
+    # Open writing (25 October audit): the checks listed too few verbs, so a correct sentence was refused.
+    IRR = ("went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|"
+           "thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught")
+    rules = deepcopy(by_id['ps-A21-6a']['must'])
+    rules[0][0] = r'^\s*(he|she)\s+(?:(?:\w+ly|usually|often|always|sometimes|never|also|still|just)\s+)?(?!is\b|was\b)\w+s\b'
+    fix_again('ps-A21-6a', 'Accept any adverb of manner or frequency before the verb (She really enjoys ...).', must=rules)
+    for id, k in (('pa-A21-6a', 0), ('pa-A22-6a', 0), ('pa-B11-6a', 1), ('pac-B11-6a', 2)):
+        rules = deepcopy(by_id[id]['must'])
+        rules[k][0] = r'\b(\w+ed|' + IRR + r')\b'
+        fix_again(id, 'Accept more irregular past verbs (swam, drove, spoke ...).', must=rules)
     # Typed tasks: every correct answer a learner can write is accepted (teacher's request, 24 October)
     def more_again(id, reason, extra):
         have = by_id[id]['answers'][0]

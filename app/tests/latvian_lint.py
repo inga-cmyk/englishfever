@@ -9,7 +9,7 @@ import lib  # noqa: F401  (extends the Latvian word list the same way the drafts
 import b1_topics, italics as _it
 _BASE = set(_it.LV_ASCII)   # the new B1 topics' drafts (b1-new-*.csv) are written with the extra words of b1_topics.LV_WORDS in the list; the older drafts without
 BANNED = [r"\bpasīv", r"\baktīv", r"divdabi", r"jautājuma vārd", r"tagadnes ilgstoš", r"pagātnes ilgstoš", r"ilgstošā forma", r"salīdzināmā", r"vienkāršā tagadne", r"vienkāršā pagātne", r"vienkāršo tagadni", r"vienkāršo pagātni",
-          r"(?<!teikuma )(?<!teik\. )\bpriekšmet"]
+          r"(?<![Tt]eikuma )(?<![Tt]eik\. )\bpriekšmet"]
 ALLOWED = {"Present", "Past", "Simple", "Continuous", "Perfect", "Future", "Passive", "Conditional", "Zero", "First", "Second", "Third"}
 bad = []
 

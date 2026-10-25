@@ -151,6 +151,20 @@ final class Stats
         ];
     }
 
+    /** The expected answer of a task, in one line (teacher's view of a wrong answer). */
+    public static function answerKey(array $it): string
+    {
+        switch ($it['kind']) {
+            case 'mcq': return (string) $it['correct'];
+            case 'gap': return implode(' … ', array_map(fn($a) => (string) $a[0], $it['answers']));
+            case 'text': return (string) ($it['answers'][0][0] ?? '');
+            case 'order': return (string) $it['sentence'];
+            case 'match': return implode(' | ', array_map(fn($p) => $p[0] . ' → ' . $p[1], $it['pairs']));
+            case 'write': return (string) ($it['model'] ?? '');
+        }
+        return '';
+    }
+
     public static function leaderboard(int $uid, string $period): array
     {
         $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest' AND u.board_hidden = 0" . Research::leaderboardClause();
@@ -249,7 +263,8 @@ final class Stats
             $recent[] = [
                 'at' => (int) $r['created_at'], 'skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'],
                 'correct' => (bool) $r['correct'], 'answer' => $r['answer'], 'seconds' => (int) round($r['time_ms'] / 1000),
-                'q' => $it['q'] ?? $r['item_id'],
+                'q' => $it['q'] ?? $r['item_id'], 'id' => $r['item_id'],
+                'key' => !$r['correct'] && $it ? self::answerKey($it) : null,   // teachers only: what was expected
             ];
         }
         $sessions = [];

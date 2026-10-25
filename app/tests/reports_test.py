@@ -153,6 +153,17 @@ check("at most 30 reports a day per person", codes.count(200) == 30 and codes[30
 d = C(); d.api("guest", {"nickname": "Delete me", "t": 5000}); did = d.api("me")["user"]["id"]
 d.api("report", {"item_id": ids[0], "reason": "unclear"})
 before = sum(len(x["reports"]) for x in teacher.api("teacher/reports", status="all")["groups"])
+# ---- the teacher's page of a learner shows the task ID, and the expected answer of a wrong answer (Cowork issue 27)
+sid3, it3 = serve(student, "past_simple", "A2.1")
+student.api("session/answer", {"session_id": sid3, "item_id": it3, "answer": wrong_answer(ITEMS[it3]), "time_ms": 3000})
+rows = teacher.api("teacher/students")
+rid = next(x["id"] for x in (rows.get("students") or rows.get("rows") or []) if x.get("nickname", "").startswith("Rita"))
+rec = teacher.api("teacher/student", id=rid)["recent"]
+r3 = next(x for x in rec if x["id"] == it3)
+check("teacher page: a wrong answer shows the task ID and what was expected", r3["correct"] is False and r3["key"], r3)
+check("teacher page: a right answer has no key", all(x["key"] is None for x in rec if x["correct"]))
+check("a learner cannot open the teacher page", student.api("teacher/student", id=rid)["_status"] == 403)
+
 d.api("account/delete", {"confirm": True})
 after = sum(len(x["reports"]) for x in teacher.api("teacher/reports", status="all")["groups"])
 check("deleting an account deletes its reports", after == before - 1, (before, after))

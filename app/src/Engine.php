@@ -148,7 +148,7 @@ final class Engine
         $st['theta'][$skill] = round($theta, 3);
         $pg = 1 / (1 + exp(-1.7 * ($st['g'] - $d)));
         $st['g'] = round(max(0.5, min(9.5, $st['g'] + 0.4 * (($ok ? 1 : 0) - $pg))), 3);
-        $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom'], 'level' => substr($item['level'], 0, 2)];
+        $st['last'][] = ['skill' => $skill, 'correct' => $ok ? 1 : 0, 'd' => $d, 'bloom' => $item['bloom'], 'level' => substr($item['level'], 0, 2), 'sc' => Content::scaffold($item)];
         if ($ses['mode'] === 'placement') self::plAdvance($st, substr($item['level'], 0, 2), $ok);
 
         // the kinds of mistake this answer is evidence for (background only): a wrong option or hint that names one, else the task's own list
@@ -382,11 +382,15 @@ final class Engine
             }
         }
         // candidate items
+        $rightHere = [];
+        foreach ($st['last'] as $h) if ($h['correct'] && ($h['sc'] ?? 0) >= 1) $rightHere[$h['skill']] = true;   // a typed answer, not only a choice
         $bySkill = [];
         $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
         foreach (Content::items() as $it) {
             if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
             if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4)) continue;
+            // open writing (the least support) only after a right typed answer on that topic in this session (teacher's scaffolding rule)
+            if (!$placement && $it['kind'] === 'write' && empty($rightHere[$it['skill']])) continue;
             if (!empty($st['levels']) && !in_array($it['level'], $st['levels'], true)) continue;   // the levels the learner chose
             $bySkill[$it['skill']][] = $it;
         }

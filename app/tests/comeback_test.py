@@ -124,7 +124,7 @@ seen = []
 for _ in range(3):
     done, got = run(c2, ["past_simple"], "A2.1", 8, correct)
     seen += [g[0] for g in got]
-pool = [i for i in ITEMS.values() if i["skill"] == "past_simple" and i["level"] in ("A2.1", "A2.2")]
+pool = [i for i in ITEMS.values() if i["skill"] == "past_simple" and i["level"] in ("A2.1", "A2.2") and i["kind"] != "write"]   # open writing waits for a right typed answer in the session
 first = seen[:len(pool)]
 check("tasks do not repeat until every task in reach has been seen once", len(set(first)) == len(first), (len(pool), len(set(first))))
 

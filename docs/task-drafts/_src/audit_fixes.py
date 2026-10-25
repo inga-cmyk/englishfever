@@ -35,7 +35,7 @@ MATCH = [
      [("I was cooking", "dinner in the kitchen."), ("They were playing", "the guitar in the garden."), ("She was reading", "a newspaper on the sofa."), ("We were watching", "a film on TV.")]),
     ([("Watches", "Switzerland"), ("Cars", "Germany"), ("Pasta", "Italy"), ("Tea", "India")],
      "Match each product with what it is made from.",
-     [("Butter is made", "from cream."), ("Chocolate is made", "from cocoa."), ("Honey is made", "by bees."), ("Orange juice is made", "from oranges.")]),
+     [("Butter is made", "from cream."), ("Chocolate is made", "from cocoa."), ("Bread is made", "from flour."), ("Orange juice is made", "from oranges.")]),
     ([("The window", "was broken by a ball."), ("The cake", "was baked by my mother."), ("The film", "was directed by a famous director."), ("The bike", "was stolen by a thief.")],
      "Match each beginning with its ending.",
      [("The song", "was sung by a choir."), ("The cake", "was baked by my mother."), ("The film", "was directed by a famous director."), ("The thief", "was caught by the police.")]),
@@ -147,3 +147,31 @@ NEW_BANK = {
     "He is learning quickly. He ___ speaks Spanish now.": ["already", "very", "enough"],
 }
 BANK_TASK["This coffee is ___ hot to drink."] = "This coffee is ___ hot to drink. I can't drink it."
+
+# Matching tasks whose topic explanation talked about something else (25 October). key = the left side of the first pair.
+MATCH_WHY = {
+    "What were you doing?": ("Questions: *Was / Were* + subject + *-ing*. Short answers repeat *was / were*: *Yes, it was. No, they weren't.*",
+                             "Jautājums: *Was / Were* + teikuma priekšmets + *-ing*. Īsā atbilde atkārto *was / were*: *Yes, it was. No, they weren't.*"),
+    "Butter is made": ("*made from* + what it is made of: *Butter is made from cream.*", "*made from* + tas, no kā to taisa: *Butter is made from cream.*"),
+    "If I had gone, I would have met her.": ("Third: imagined past. Second: imagined now. First: possible future. Zero: always true.",
+                                             "Third: iedomāta pagātne. Second: iedomāta tagadne. First: iespējama nākotne. Zero: vienmēr patiess."),
+    "'Please sit down.'": ("Requests and advice: *asked / told / warned / advised* + person + *(not) to*. An offer: *offered to* + verb.",
+                           "Lūgumi un padomi: *asked / told / warned / advised* + cilvēks + *(not) to*. Piedāvājums: *offered to* + darbības vārds."),
+    "an apple": ("*an* before a vowel sound, *a* before a consonant sound: *an hour, a university*.", "*an* pirms patskaņa skaņas, *a* pirms līdzskaņa skaņas: *an hour, a university*."),
+    "what + a / an": ("Fixed patterns: *What a view! half an hour, the Swiss, the rich*.", "Noteikti modeļi: *What a view! half an hour, the Swiss, the rich*."),
+    "too many": ("*too many* = more than we need, *not enough* = less, *enough* = as much as we need, *very little* = almost nothing.",
+                 "*too many* = vairāk nekā vajag, *not enough* = mazāk, *enough* = tik, cik vajag, *very little* = gandrīz nekā."),
+    "falling voice on the tag": ("Falling voice: you expect agreement. Rising voice: a real question. Positive sentence → negative tag, and the other way.",
+                                 "Balss krītas: gaidi piekrišanu. Balss ceļas: īsts jautājums. Apgalvojums → noliegts tag, un otrādi."),
+    "stop smoking": ("With *stop* and *remember*, *-ing* and *to* have different meanings.", "Ar *stop* un *remember* formām *-ing* un *to* ir dažādas nozīmes."),
+    "Shoes must be taken off.": ("*must* = a rule, *should* = advice, *can* = possible, *can't* = not possible.", "*must* = noteikums, *should* = padoms, *can* = iespējams, *can't* = nav iespējams."),
+    "hard": ("*hard* = with effort, *hardly* = almost not; *late* = not on time, *lately* = recently.", "*hard* = ar pūlēm, *hardly* = gandrīz nē; *late* = novēloti, *lately* = nesen."),
+    "The bridge is being repaired.": ("*is being repaired* = now, *is repaired* = regularly, *has been repaired* = finished, *was repaired* = in the past.",
+                                      "*is being repaired* = tagad, *is repaired* = regulāri, *has been repaired* = pabeigts, *was repaired* = pagātnē."),
+    "Has the room been cleaned?": ("Short answers repeat *has / have*: *Yes, it has. No, he hasn't.*", "Īsā atbilde atkārto *has / have*: *Yes, it has. No, he hasn't.*"),
+    "It will be done.": ("*will be done* = future, *has been done* = finished now, *was done* = past, *is being done* = now.",
+                         "*will be done* = nākotne, *has been done* = pabeigts tagad, *was done* = pagātne, *is being done* = tagad."),
+    "I was going to call you,": ("*was going to / was planning to* = a plan in the past that did not happen.", "*was going to / was planning to* = plāns pagātnē, kas nenotika."),
+    "I'll call you before I leave.": ("*before, after, until, while* show when one action happens compared with the other.",
+                                      "*before, after, until, while* parāda, kad viena darbība notiek salīdzinājumā ar otru."),
+}

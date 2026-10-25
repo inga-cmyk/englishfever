@@ -98,6 +98,7 @@ def mt(t, lv, b, q, pairs, why, lvw):
     old = " ; ".join(f"{a} = {c}" for a, c in pairs)
     fx = audit_fixes.MATCH_BY_OLD.get(old)                                  # an ambiguous matching task is replaced (audit_fixes.py)
     if fx: q, pairs = fx
+    if pairs and pairs[0][0] in audit_fixes.MATCH_WHY: why, lvw = audit_fixes.MATCH_WHY[pairs[0][0]]   # a matching task whose topic explanation was about something else
     rows.append([t, lv, "match", q, " ; ".join(f"{a} = {c}" for a, c in pairs), "", why, lvw, b] + ([old] if fx else []))
 def plain(task, typ):
     """Instructions stay plain: no setting in front of a question ("At work: which sentence is NOT correct?"), no hint after a word-order
@@ -114,13 +115,22 @@ def plain(task, typ):
     return t
 
 
+def en_fix(t):
+    """The English explanation is English only: an earlier term replacement had put the Latvian name of the passive into it."""
+    t = re.sub(r"Ciešamā kārta \(passive\):", "Passive:", t)
+    t = re.sub(r"Ciešamā kārta, (Past Simple|Present Continuous|Present Perfect|Present Simple|Future):", lambda m: m.group(1) + " passive:", t)
+    t = t.replace("Ciešamā kārta:", "Passive:")
+    if re.search(r"[āčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ]", t): raise SystemExit("Latvian in an English explanation: " + t)
+    return t
+
+
 def save(name):
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
         for i, r in enumerate(rows):
             if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
-            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:7] + [lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, '')])
+            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, '')])
     print(name, len(rows), "rows")
 
 

@@ -119,3 +119,6 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Tests: app/tests/error_model_test.php.
 - Three new A2 topics (rule cards EN + LV): Prepositions after words, Subject and verb, Irregular plurals (incl. man → men, woman → women; questions with the preposition at the end are B1.1). Drafts: `docs/task-drafts/a2-mistakes-1.csv` (92 tasks, error type in the last column), review sheet `docs/task-drafts/a2-mistakes-review.md`.
 - Draft files have a new last column, *error types*; the generator writes it from the topic (lib.Topic(err=...)).
+- Matching tasks: 16 explanations that were the topic's general line and talked about something else (e.g. *when* introduces the short event on a question-and-short-answer task) now fit the task (`audit_fixes.MATCH_WHY`). "Match each product with what it is made from": *Honey is made by bees* → *Bread is made from flour*.
+- 135 English explanations in the passive drafts began with the Latvian *Ciešamā kārta*; English explanations are now English only, and the generator stops if Latvian letters appear in one.
+- Open writing comes only after a right typed answer on the same topic in the session (scaffolding).

@@ -54,3 +54,6 @@
 | A matching task with a vague instruction (*Match each clause with its meaning*) | name what is matched (*Match each sentence with its tag*) or drop the task |
 | A typed task where another correct answer exists (*suggested seeing*, *is starting* for a plan, *Every day the rooms are cleaned*) | name the form in the instruction (*Use the present perfect:*) or list the other answers; contractions, clause order and a fronted time phrase are accepted automatically (`auto_answers.py`, the grader) |
 | The same sentence in two topics with different keys (*What time ___ the film ___?*: does / did) | a time word in each (*usually*, *last night*); tested by comparing every typed task |
+| A Latvian "reason" for a mistake that has none (*call to me*: Latvian also says *piezvani man*) | say *Tipiska kļūda* and give the English pattern; compare with Latvian only when the Latvian form really causes the mistake |
+| A choice or word bank about a missing / extra preposition with no "nothing" option | give **—** (no preposition) as one of the options when the right answer is no preposition |
+| A Latvian gloss that translates word for word (*good at = laba kādā jomā*) | say it the Latvian way: *good at maths* = *viņai padodas matemātika* |

@@ -67,9 +67,9 @@ Status: draft. The teacher adds, removes and reorders; nothing is programmed unt
 |---|---|---|---|---|---|
 | PATTERN | *I enjoy to read. · I want going. · I like work with him. · I promised you to tell about…* → *enjoy reading · want to go · like working / like to work · I promised to tell you about…* | Latviski pēc darbības vārda parasti ir nenoteiksme: *man patīk lasīt, gribu iet*. Ar *like* der abas formas (*like working / to work*, Murphy 58), bet ne pamatforma. | B1 | 53, 54 | Verb patterns |
 | ED-ING | *I am boring.* (= man ir garlaicīgi) → *I am bored.* | Latviski abām nozīmēm ir viena sakne: *garlaicīgs / garlaicīgi*. | A2–B1 | 98 | -ed or -ing adjectives |
-| DEP-PREP | nepareizs: *responsible about · depend from · interested about · good in · married with* · lieks: *joined to our group · helped to other workers* · trūkst: *Hope to hear you soon* → *responsible for · depend on · interested in · good at · married to · joined our group · helped other workers · hear from you* | Latviski ir citi prievārdi vai locījumi: *atbildīgs par, atkarīgs no, precējies ar*. Latviešu datīvs (*pievienojās grupai, palīdzēja citiem*) pārvēršas par lieku *to*. Jāmācās kā vārdu pāri. | A2–C1 | 129–136 | (tēmas vēl nav) |
+| DEP-PREP | nepareizs: *responsible about · depend from · interested about · good in · married with* · lieks: *joined to our group · helped to other workers* · trūkst: *Hope to hear you soon* → *responsible for · depend on · interested in · good at · married to · joined our group · helped other workers · hear from you* | Daļai ir latviešu iemesls (*atkarīgs no* → *from*, *gaidu autobusu* → bez *for*). Daļai iemesla latviešu valodā nav: *call to me* (latviski *piezvani man*), *join to the team* (latviski *pievienoties komandai, iestāties armijā*) ir tipiskas kļūdas bez saiknes ar latviešu valodu. Jāmācās kā vārdu pāri. | A2–C1 | 129–136 | (tēmas vēl nav) |
 | COMPARE | *more cheaper · more better · the same age like we are · such as good professional as she is* → *cheaper · better · the same age as we are · as good a professional as she is* | Latviski *tāds pats kā* → *like*; abus salīdzināšanas veidus lieto reizē. (*as good a professional as* ir C1.) | A2–C1 | 105–107 | Comparison |
-| TWO-OBJ | *introduce my colleague for you · explain me the rules* → *introduce you to my colleague · explain the rules to me* | Latviešu datīvs (*tev, man*) → skolēns lieto *for* vai liek personu tieši aiz darbības vārda. | A2–B1 | 132 | Verbs with two objects |
+| TWO-OBJ | *introduce my colleague for you · explain me the rules* → *introduce you to my colleague · explain the rules to me* | Tipiska kļūda; latviešu valoda to izskaidro tikai daļēji, tāpēc skaidrojumā to nesaistām ar latviešu valodu. | A2–B1 | 132 | Verbs with two objects |
 
 ## F. Writing (later, with the AI checker)
 These need a whole text, not a single task: comma splices (*Arvīds seems a nice guy, he is smart*), run-on sentences, unclear contrast between two ideas, misplaced time phrases, noun phrases without a link (*rich knowledge base amazing experience*). They stay out of the personal plans until the AI checker can read free writing.
@@ -80,6 +80,9 @@ These need a whole text, not a single task: comma splices (*Arvīds seems a nice
 |---|---|---|
 | PREP-TIME | *in Monday · on 2020 · at the morning* → *on Monday · in 2020 · in the morning* (latviski: *pirmdien, 2020. gadā, no rīta*) | 121 |
 | IT-THERE | needs its own topic (see C) | 84 |
+
+## Explanations: Latvian reasons only when they are real (teacher, 25 October)
+Many mistakes have no link with Latvian (*call to me*, *join to the team*: Latvian has no preposition there either). Then the feedback does not invent one; it says *Tipiska kļūda* and shows the English pattern. A Latvian comparison is used only where the Latvian form really leads to the mistake.
 
 ## How the system will recognise a type (for later)
 - Each wrong option of a choice task and each specific hint of a typed task gets one code.

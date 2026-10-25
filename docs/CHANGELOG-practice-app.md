@@ -130,3 +130,12 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Grading: an accent alone never makes an answer wrong (café = cafe).
 - Explanations: topics with several rules (used to / be used to, articles, quantity, relative clauses, question tags, verb patterns, more modals) give the line for the task's own rule (`audit_fixes.SUBRULES`); "Make it negative / Make a question" tasks give the negative / question line of their tense (`NEGQ`).
 - rs-B21-2a: asks for the reason only (no option with a right report and a wrong reason). rs-B12-4a: the explanation no longer makes the answer look arguable.
+
+### 25 October — guest session report
+- "Next: a bit harder" is never shown after a wrong answer, "a bit easier" never after a right one.
+- With Latvian explanations on, the headings are Latvian too (Pareizi! / Gandrīz – pārbaudi vienu vārdu / Ne gluži / Agrāka kļūda šajā tēmā izskatās izlabota).
+- One name for the whole session ("Practice"); the "Quick check: 2 of 3" note is gone.
+- Every gap task has an instruction line ("Complete the sentence:") when its text has none.
+- The question strip is there from the first question and drag-and-drop boards keep their height, so the page and the Check button do not jump; the drag hint goes away after checking.
+- The level picker shows only the levels that have questions (A2–C1).
+- "Please call to me tomorrow": *phone / ring* are accepted too.

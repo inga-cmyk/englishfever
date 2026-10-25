@@ -1,5 +1,6 @@
 """Hand-written extra correct answers for typed tasks (see app/authoring/auto_answers.py for the automatic ones). Keyed by the task text."""
 TEXT = {
+    "Correct the mistake: Please call to me tomorrow.": ["Please phone me tomorrow.", "Please ring me tomorrow."],
     "Make it passive: Someone broke the window.": ["The window was broken by someone."],
     "Make it passive: Someone stole my bike.": ["My bike was stolen by someone."],
     "Make it passive: Someone stole my laptop yesterday.": ["My laptop was stolen by someone yesterday."],

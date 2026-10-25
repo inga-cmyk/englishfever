@@ -31,7 +31,7 @@ const OUT = __dirname + '/shots/';
     const M = await (await p.request.get(BASE + '/api.php?r=meta')).json();
     const has = (s, lvls) => lvls.some(l => ((M.skill_counts[s.id] || {})[l] || 0) > 0);
     const topicsAt = lvls => M.skills.filter(s => has(s, lvls)).length;
-    check('the picker shows the six whole levels; A1 and C2 are greyed out (no questions yet)', (await p.locator('.lvseg label').count()) === 6 && (await p.locator('.lvseg input:disabled').count()) === 2 && (await p.locator('.lvseg input[value=A1]').isDisabled()) && (await p.locator('.lvseg input[value=C2]').isDisabled()));
+    check('the picker shows only the levels that have questions (A2 to C1); A1 and C2 are not shown', (await p.locator('.lvseg label').count()) === 4 && (await p.locator('.lvseg input:disabled').count()) === 0 && (await p.locator('.lvseg input[value=A1]').count()) === 0 && (await p.locator('.lvseg input[value=C2]').count()) === 0);
     check('only one level is chosen to start with, and it is A2 for a new learner', (await p.locator('.lvseg input:checked').count()) === 1 && (await p.locator('.lvseg input[value=A2]').isChecked()));
     check('all areas start closed', (await p.locator('details.picker-group[open]').count()) === 0);
     await p.evaluate(() => document.querySelectorAll('details.picker-group').forEach(d => { d.open = true; }));

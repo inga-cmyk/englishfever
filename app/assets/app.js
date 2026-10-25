@@ -765,7 +765,7 @@
       var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
       startBtn.replaceChildren(ids.length ? 'Start' : 'Start mixed practice');
       startBtn.disabled = chosenLevels().length === 0;
-      var levelRow = h('div', { class: 'seg lvseg', role: 'group', 'aria-label': 'Level' }, FULL.map(function (l) {
+      var levelRow = h('div', { class: 'seg lvseg', role: 'group', 'aria-label': 'Level' }, FULL.filter(function (l) { return (COUNT[l] || 0) > 0; }).map(function (l) {   // only the levels that have questions (A2 to C1 now)
         var has = (COUNT[l] || 0) > 0;
         var inp = h('input', { type: 'checkbox', value: l, checked: !!levels[l], disabled: !has, onchange: function () { levels[l] = inp.checked; redraw(); } });
         return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, l));
@@ -837,6 +837,7 @@
     // "Rewrite in the past: I have to get up early." -> the instruction, then the sample sentence on its own line in italics
     var SPLIT = PROMPT_SPLIT;
     var promptSplit = SPLIT.exec(it.q || '');
+    if (!promptSplit && it.kind === 'gap') promptSplit = [it.q, 'Complete the sentence', it.q];   // every gap task has an instruction line, like the other task types
     var promptSample = promptSplit ? promptSplit[2] : (it.q || '');
     function setPrompt(el, text) { // plain prompt text, with the instruction split off when there is one
       var m = SPLIT.exec(text || '');
@@ -861,8 +862,9 @@
         if (promptSplit) { // instruction line, then the sentence (with its gaps) in italics
           var smp = h('em', { class: 'q-sample' }); while (qEl.firstChild) smp.appendChild(qEl.firstChild);
           qEl.appendChild(h('span', { class: 'q-instr' }, UI.rich(UI.markForms(promptSplit[1])), ':')); qEl.appendChild(h('br')); qEl.appendChild(smp);
-        } area.appendChild(h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
+        } area.appendChild(h('p', { class: 'small muted dnd-hint', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
       area.appendChild(board.el);
+      requestAnimationFrame(function () { if (board.el.offsetHeight) board.el.style.minHeight = board.el.offsetHeight + 'px'; });   // the board keeps its first height, so the Check button does not move while cards are placed
       answerGetter = board.answer; canSubmit = board.complete;
     } else if (it.kind === 'gap') {
       var parts = promptSample.split('___');
@@ -918,6 +920,7 @@
 
     function lock() {
       inputs.forEach(function (i) { i.disabled = true; i.readOnly = true; });
+      area.querySelectorAll('.dnd-hint').forEach(function (x) { x.remove(); });   // the drag hint is not needed once the answer is checked
       area.querySelectorAll('input[type=radio]').forEach(function (r) { r.disabled = true; });
       if (board) board.lock();
       submit.remove();
@@ -944,7 +947,7 @@
       var hasLv = !!res.why_lv;
       var lv = hasLv && state.user.lang === 'lv';
       var good = res.correct;
-      var cheers = ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
+      var cheers = lv ? ['Pareizi!', 'Labi izdarīts!', 'Jā, tieši tā!', 'Lieliski!', 'Tieši tā!'] : ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
       var langBtn = hasLv ? h('button', { type: 'button', class: 'linkbtn small', style: 'margin-left:12px', onclick: function () {
@@ -952,10 +955,10 @@
         api('account/profile', { lang: state.user.lang }).catch(function () {});
         drawFeedback(r, ans, false);
       } }, lv ? 'English' : 'Latviski') : null;
-      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (res.near ? 'Almost – one word to check' : 'Not quite')),
+      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
-      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'An earlier mistake on this topic looks fixed.')));
+      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
       if (!good && (it.kind === 'gap' || it.kind === 'text')) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
@@ -996,10 +999,8 @@
         return;
       }
       var adaptNote = null;
-      if (!r.done && ses.mode === 'practice' && ses.phase !== 'diagnostic' && res.adapt !== 'same') {
-        adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? 'Next: a bit harder' : 'Next: a bit easier');
-      } else if (!r.done && ses.mode === 'practice' && ses.phase === 'diagnostic') {
-        adaptNote = h('span', { class: 'adapt' }, 'Quick check: ' + Math.min(3, ses.n) + ' of 3');
+      if (!r.done && ses.mode === 'practice' && res.adapt !== 'same') {
+        adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? (lv ? 'Nākamais: mazliet grūtāks' : 'Next: a bit harder') : (lv ? 'Nākamais: mazliet vieglāks' : 'Next: a bit easier'));
       }
       fb.appendChild(h('div', { class: 'nextrow' }, adaptNote || h('span'), nextBtn));
       var wasOpen = feedback.querySelector('details.rule[open]');
@@ -1018,7 +1019,7 @@
     function olderOf(n) { return H.filter(function (e) { return e.n < n; }).sort(function (a, b) { return b.n - a.n; })[0] || null; }
     var dotsEl = h('div', { class: 'dots', role: 'group', 'aria-label': 'Questions in this session' });
     function drawDots() {
-      if (!H.length) { dotsEl.replaceChildren(); return; }
+
       var items = [];
       for (var i = 0; i < ses.length; i++) {
         (function (i) {
@@ -1048,7 +1049,7 @@
     if (state.reported[it.id]) reportedDone();
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 
-    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Second Chance' : (ses.phase === 'diagnostic' ? 'Quick check' : 'Practice'));
+    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Second Chance' : 'Practice');
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' + (ses.comeback ? ' mode-chance' : '') },

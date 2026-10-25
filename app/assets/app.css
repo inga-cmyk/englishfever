@@ -462,7 +462,7 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .brand-site:hover { text-decoration: underline; }
 .brand-sub { color: #fff; font-weight: 600; margin-left: 4px; }
 .q .q-instr { font-style: normal; }
-.q .q-sample { font-style: italic; display: inline-block; margin-top: 4px; }
+.q .q-sample { font-style: italic; display: block; max-width: 100%; margin-top: 4px; }
 .q .q-sample input { font-style: normal; }
 
 .fixed-line { display: flex; align-items: center; gap: 8px; color: var(--good, #2f8f5b); margin: 6px 0; }

@@ -192,7 +192,8 @@ final class Engine
                 $done = true;
             } else {
                 $diff = $next['d'] - $d;
-                $adapt = $diff > 0.15 ? 'harder' : ($diff < -0.15 ? 'easier' : 'same');
+                // after a wrong answer the next task is never announced as harder, after a right one never as easier (guest test report)
+                $adapt = ($ok && $diff > 0.15) ? 'harder' : ((!$ok && $diff < -0.15) ? 'easier' : 'same');
                 $st['current'] = $next['id'];
                 $st['served'][] = $next['id'];
             }

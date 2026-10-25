@@ -45,7 +45,7 @@ const BASE = 'http://127.0.0.1:8099';
   const dots = () => p.locator('.dots .dot');
   async function nextTask() { await p.click('.feedback .btn:has-text("Next")'); await p.waitForSelector('.task .q'); await p.waitForTimeout(80); }
 
-  check('first task: no dots, no Previous yet', (await dots().count()) === 0 && (await p.locator('.sess-top .linkbtn:has-text("Previous")').count()) === 0);
+  check('first task: the question strip is there from the start (so the page does not jump), only the current dot can be used, no Previous yet', (await dots().count()) > 0 && (await p.locator('.dots .dot:not([disabled])').count()) === 1 && (await p.locator('.sess-top .linkbtn:has-text("Previous")').count()) === 0);
   const plan = [true, false, true, false];
   for (const r of plan) { await answerUI(r); await nextTask(); }
   // now on task 5, nothing answered yet

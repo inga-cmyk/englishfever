@@ -288,6 +288,8 @@ def revise(original):
                   ('ppf-B12-3a', 'Use the past perfect: She was upset because she ___ her phone. (lose)'),
                   ('pac-A22-3b', 'Use the past continuous: ___ you ___ at 6 pm? (work)')):
         fix_again(id, 'Name the tense: another tense would also be correct in this sentence.', q=q)
+    fix_again('fu-A21-3b', 'A correct answer that was not accepted: a decision about the coat can also be going to.',
+        answers=[["'ll take", 'will take', "'m going to take", 'am going to take']])
     # Typed tasks: every correct answer a learner can write is accepted (teacher's request, 24 October)
     def more_again(id, reason, extra):
         have = by_id[id]['answers'][0]

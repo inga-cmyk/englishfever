@@ -2521,7 +2521,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Plāns: *is going to* + pamatforma."
 },
 {
-"id": "fu-A21-3b",
+"id": "fu-A21-3b-r3",
 "skill": "future",
 "level": "A2.1",
 "bloom": 3,
@@ -2530,7 +2530,9 @@ return json_decode(<<<'EF_JSON_END'
 "answers": [
 [
 "'ll take",
-"will take"
+"will take",
+"'m going to take",
+"am going to take"
 ]
 ],
 "why": "A quick decision now: *will* + base verb.",

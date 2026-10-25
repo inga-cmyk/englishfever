@@ -106,3 +106,4 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Placement result: overall level only; weak topics are named in the Second Chance box.
 - Typed gaps with a verb in brackets and no cue in the sentence now name the tense ("Use the past simple: …"): 34 drafts and 3 built-in tasks (new revisions). Topics with several accepted forms (future, used to) are unchanged.
 - Typed gaps with a free word slot became word-bank gaps (8 tasks: bored/boring, tired, interesting, exciting, tiring, surprised, something, already) and nine others accept more correct words (might/will rain, don't drink, might be able to, taken, done...). "This coffee is ___ hot to drink" now ends with "I can't drink it".
+- Built-in typed gaps checked for free word slots: none found (all are word banks or closed). One more correct answer accepted for "It's cold. I ___ my coat." (going to).

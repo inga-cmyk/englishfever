@@ -14,10 +14,10 @@ correct_answer, wrong_answer = ns["correct_answer"], ns["wrong_answer"]
 reps = int(sys.argv[1]) if len(sys.argv) > 1 else 4
 random.seed(11)
 ORDER = list(BASEL)
-def true_level(a):  # the level whose band holds the ability (bands centred on the level bases)
+def true_level(a):  # the highest level whose typical task (thinking level 3, difficulty base + 0.4) the learner gets right half of the time
     out = "A2.1"
     for lv, b in BASEL.items():
-        if a >= b - 0.5: out = lv
+        if a >= b + 0.4: out = lv
     return out
 
 def play(c, ability, session, first):

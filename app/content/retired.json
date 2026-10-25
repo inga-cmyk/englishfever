@@ -2324,6 +2324,23 @@
 "wrong_why": {}
 },
 {
+"id": "rs-B12-4a-r2",
+"skill": "rep_statements",
+"level": "B1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "You are reporting past statements using backshift. Which sentence has NOT backshifted its future verb?",
+"correct": "She said she will call me the next day.",
+"wrong": [
+"She said she would call me the next day.",
+"She told me she had finished the report.",
+"He said he was working at home that day."
+],
+"why": "In this exercise, *will* backshifts to *would*. Without that instruction, keeping *will* can be possible if the promise is still relevant to the future.",
+"wrong_why": {},
+"why_lv": "Šajā uzdevumā *will* jāmaina uz *would*. Citā kontekstā *will* var saglabāt, ja solījums joprojām attiecas uz nākotni."
+},
+{
 "id": "ia-C11-3a-r2",
 "skill": "ind_advanced",
 "level": "C1.1",

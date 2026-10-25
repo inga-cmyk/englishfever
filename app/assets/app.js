@@ -1157,9 +1157,9 @@
       h('div', null, h('h2', { style: 'margin:0 0 4px' }, 'Start with A2 basics'), h('div', { class: 'small muted' }, 'Build the foundations first.')),
       h('button', { class: 'btn', onclick: function () { state.prefill = { skills: [], level: 'A2.1' }; location.hash = '#/practice'; } }, 'Practise A2'))));
     var weak = s.gaps.map(function (g) { return g.label; });
-    if (fresh && s.open_after) {
+    if (fresh && s.open_after && s.n > s.correct) {
       nodes.push(h('div', { class: 'card fn-chance', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
-        h('div', null, h('b', { style: 'color:var(--text)' }, plural(s.open_after, 'mistake', 'mistakes') + ' to fix'),
+        h('div', null, h('b', { style: 'color:var(--text)' }, plural(s.n - s.correct, 'mistake', 'mistakes') + ' in this test'),
           weak.length ? h('div', { class: 'small muted' }, 'Topics: ' + weak.join(', ') + '. A few questions cannot show a real gap; Second Chance does.') : null),
         comebackButton('btn small fn-chance', 'Second Chance'))));
     } else if (!s.basics) {

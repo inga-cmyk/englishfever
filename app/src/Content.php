@@ -176,11 +176,16 @@ final class Content
     }
 
     /** The level for an ability fitted to all answers at once (placement): the boundaries sit halfway between the level bases. */
+    /**
+     * The level a placement result is given: the highest level whose typical task (thinking level 3, difficulty base + 0.4) the learner
+     * gets right at least half of the time (theta >= base + 0.4). Before 25 October the bar was base - 0.5, so a learner who got most
+     * tasks of a level wrong could still be given that level (full test report: "about B2" with 3 of 8 B2 questions right).
+     */
     public static function levelFromAbility(float $theta): string
     {
         $out = 'A2.1';
         foreach (self::BASE as $lv => $base) {
-            if ($theta >= $base - 0.5 + ($lv === 'A2.1' ? 99 : 0)) $out = $lv;
+            if ($lv !== 'A2.1' && $theta >= $base + 0.4) $out = $lv;
         }
         return $out;
     }

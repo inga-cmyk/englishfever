@@ -378,6 +378,15 @@ def revise(original):
         correct='Unless you hurry, we will miss the flight.',
         wrong=['If you hurry, we will miss the flight.', 'Unless you hurry, we will catch the flight.', 'We will catch the flight unless you hurry.'],
         why='*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.')
+    # Full placement test report (25 October): an option whose report was right but whose reason was wrong made the question ambiguous
+    fix_again('rs-B21-2a', 'Ask for the reason only, so no option has a correct report with a wrong reason.',
+        q="'The Earth goes round the Sun,' the teacher said. Why can we report it as 'The teacher said the Earth goes round the Sun'?",
+        correct='Because it is still true.',
+        wrong=['Because said is in the past.', 'Because reported speech never changes the tense.', 'Because goes is an irregular verb.'],
+        why='When a fact is still true, the tense does not have to go back: *The teacher said the Earth goes round the Sun.*')
+    fix_again('rs-B12-4a', 'The explanation must not make the answer look arguable.',
+        why='Only this sentence keeps *will*. With backshift it is: *She said she would call me the next day.*',
+        why_lv='Tikai šajā teikumā paliek *will*. Ar laiku saskaņošanu tas ir: *She said she would call me the next day.*')
     # Every typed-sentence task also accepts the automatic variants (auto_answers.py). A published task gets the next revision id.
     import json, os, re
     from auto_answers import extend

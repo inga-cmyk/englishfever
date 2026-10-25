@@ -5,7 +5,7 @@ import italics
 # Latvian words without Latvian letters that the built-in list does not have yet. Kept here, not in italics.py, so the published explanations are untouched.
 italics.LV_ASCII |= set('''apgriez divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
 beidzas beidzies cita darba divdabi divdabis esam garums grupa ieradums izteikt jebkuru laba ideja lielu lietas likums maigs mana istaba ne nekas nelielu padomu paliek saraksta
-tipiska padodas pieder latviski angliski pateicas tos pa draugi abos viens vienam gaidu autobusu klausos draugs laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
+tipiska padodas pieder latviski angliski nosauktu pateicas tos pa draugi abos viens vienam gaidu autobusu klausos draugs laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
@@ -200,25 +200,35 @@ class Topic:
         if isinstance(why, (tuple, list)): return why
         if why: return (why, LVMAP[why])   # an English-only explanation must have its Latvian twin in LVMAP
         return self.ex[kind]
+    def _sub(self, w, why, q, ans):
+        """A topic with several rules: a task that would get the topic's general line gets the line for its own rule (audit_fixes.SUBRULES)."""
+        if why: return w
+        text = q + " => " + (ans if isinstance(ans, str) else " / ".join(ans))
+        for topic, rx, line in audit_fixes.SUBRULES:
+            if self.t.startswith(topic) and re.search(rx, text, re.I): return line
+        return w
     def _uniq(self, q, extra=""):
         key = (q, extra)
         if key in self.seen: raise SystemExit("duplicate in script: " + q)
         self.seen.add(key)
     def order(self, lv, sent, also=None, why=None, cue="Put the words in order.", b=3):
-        self._uniq(cue, sent); w = self._why("order", why); od(self.t, lv, b, cue, sent, w[0], w[1], also); self._tag()
+        self._uniq(cue, sent); w = self._sub(self._why("order", why), why, cue, sent); od(self.t, lv, b, cue, sent, w[0], w[1], also); self._tag()
     def bank(self, lv, q, ans, extra, why=None, b=3):
-        self._uniq(q); w = self._why("bank", why); ans = [ans] if isinstance(ans, str) else ans
+        self._uniq(q); w = self._why("bank", why); ans = [ans] if isinstance(ans, str) else ans; w = self._sub(w, why, q, ans)
         assert len(set(ans + extra)) == len(ans + extra) and len(extra) >= 1, q
         gp(self.t, lv, b, q, " / ".join(ans), w[0], w[1], bank=ans + extra); self._tag()
     def gap(self, lv, q, ans, why=None, b=3):
-        self._uniq(q); w = self._why("gap", why); gp(self.t, lv, b, q, ans, w[0], w[1]); self._tag()
+        self._uniq(q); w = self._sub(self._why("gap", why), why, q, ans); gp(self.t, lv, b, q, ans, w[0], w[1]); self._tag()
     def text(self, lv, q, ans, why=None, b=None):
         self._uniq(q)
-        w = self._why("text", why)
+        w = self._sub(self._why("text", why), why, q, ans if isinstance(ans, str) else " | ".join(ans))
+        if not why and re.match(r"^(Make it negative|Make the sentence negative|Make a question|Make it a question)", q) and not re.search(r"Negative|Question", w[0]):
+            key = next((k for k in sorted(audit_fixes.NEGQ, key=len, reverse=True) if self.t.startswith(k)), None)
+            if key: w = audit_fixes.NEGQ[key]   # a negative or question task gets the negative / question line of its tense
         if not why and re.match(r"^(Question|Negative)", w[0]) and not re.match(r"^(Make (it )?(negative|a question)|Make the sentence negative|Ask|Add a question tag)", q):
             w = self.ex.get("gap") or w   # the default text explanation is about questions and negatives: a join or rewrite task gets the topic's general rule
         tx(self.t, lv, b or self.tb, q, ans, w[0], w[1]); self._tag()
     def mcq(self, lv, q, ok, wrong, why=None, b=None):
-        self._uniq(q); w = self._why("mcq", why); mc(self.t, lv, b or self.mb, q, ok, wrong, w[0], w[1]); self._tag()
+        self._uniq(q); w = self._sub(self._why("mcq", why), why, q, ok); mc(self.t, lv, b or self.mb, q, ok, wrong, w[0], w[1]); self._tag()
     def match(self, lv, q, pairs, why=None, b=None):
         self._uniq(q); w = self._why("match", why); mt(self.t, lv, b or self.xb, q, pairs, w[0], w[1]); self._tag()

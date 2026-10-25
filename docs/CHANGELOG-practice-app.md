@@ -122,3 +122,11 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - Matching tasks: 16 explanations that were the topic's general line and talked about something else (e.g. *when* introduces the short event on a question-and-short-answer task) now fit the task (`audit_fixes.MATCH_WHY`). "Match each product with what it is made from": *Honey is made by bees* → *Bread is made from flour*.
 - 135 English explanations in the passive drafts began with the Latvian *Ciešamā kārta*; English explanations are now English only, and the generator stops if Latvian letters appear in one.
 - Open writing comes only after a right typed answer on the same topic in the session (scaffolding).
+
+### 25 October — full placement test reports
+- Placement level: a level is given when the learner gets its typical task right at least half of the time (theta ≥ base + 0.4; before: base − 0.5), with a safety net (a level is not given when fewer than 40% of 5 or more of its questions were right). The report "about B2" with B2 3/8 now gives B1.2. Simulation (40 questions): full level right 93%, within one half-level 100%.
+- The full test (40 questions) asks two blocks at the first level (A2), so A2 and B1 can be told apart.
+- The placement result counts the mistakes of this test ("18 mistakes in this test"), not every open mistake.
+- Grading: an accent alone never makes an answer wrong (café = cafe).
+- Explanations: topics with several rules (used to / be used to, articles, quantity, relative clauses, question tags, verb patterns, more modals) give the line for the task's own rule (`audit_fixes.SUBRULES`); "Make it negative / Make a question" tasks give the negative / question line of their tense (`NEGQ`).
+- rs-B21-2a: asks for the reason only (no option with a right report and a wrong reason). rs-B12-4a: the explanation no longer makes the answer look arguable.

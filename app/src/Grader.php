@@ -28,6 +28,7 @@ final class Grader
     public static function norm(string $s): string
     {
         $s = mb_strtolower($s, 'UTF-8');
+        $s = strtr($s, ['é' => 'e', 'è' => 'e', 'ê' => 'e', 'ë' => 'e', 'á' => 'a', 'à' => 'a', 'â' => 'a', 'ä' => 'a', 'í' => 'i', 'ï' => 'i', 'ó' => 'o', 'ö' => 'o', 'ô' => 'o', 'ú' => 'u', 'ü' => 'u', 'ç' => 'c', 'ñ' => 'n']);   // café = cafe, naïve = naive: an accent alone never makes an answer wrong
         $s = str_replace(["\u{2019}", "\u{2018}", "\u{00B4}", '`'], "'", $s);
         $s = preg_replace('/\bwon\'t\b/u', 'will not', $s);
         $s = preg_replace('/\bcan\'t\b/u', 'cannot', $s);

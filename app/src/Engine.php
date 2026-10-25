@@ -77,7 +77,7 @@ final class Engine
         if ($mode === 'placement') {
             // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
             $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
-            $state['pl'] = ['ladder' => $ladder, 'lv' => $ladder[0], 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => []];
+            $state['pl'] = ['ladder' => $ladder, 'lv' => $ladder[0], 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => [], 'long' => $len >= 40];   // the full test asks two blocks at the first level, so A2 and B1 can be told apart
         }
         $state['fixed'] = 0;
         if ($mode === 'practice') {
@@ -614,6 +614,7 @@ final class Engine
         if ($p['n'] < 3) return;
         $p['bn']++;
         $pass = $p['bn'] === 1 ? $p['c'] >= 2 : $p['cc'] >= 4;
+        if ($pass && $p['bn'] === 1 && !empty($p['long']) && $p['lv'] === $p['ladder'][0]) { $p['n'] = 0; $p['c'] = 0; return; }   // full test: a second block at the first level
         if ($pass) {
             $p['passed'][] = $p['lv'];
             $i = array_search($p['lv'], $p['ladder'], true);
@@ -698,6 +699,20 @@ final class Engine
             $overall = $pts ? self::fitAbility($pts) : $ses['state']['g'];
             $out['overall_level'] = Content::levelFromAbility($overall);
             $out['overall_theta'] = round($overall, 2);
+            // safety net: a level is not given when fewer than 40% of its questions (5 or more asked) were right: many right answers to hard
+            // B1 questions must not make "about B2" when most B2 questions were missed (full test report, 25 October)
+            $fullOrder = array_flip(Content::FULL_LEVELS);
+            $perFull = [];
+            foreach ($rows as $r) { $f = substr($r['level'], 0, 2); $perFull[$f]['n'] = ($perFull[$f]['n'] ?? 0) + 1; $perFull[$f]['c'] = ($perFull[$f]['c'] ?? 0) + (int) $r['correct']; }
+            uksort($perFull, fn($a, $b) => ($fullOrder[$a] ?? 0) <=> ($fullOrder[$b] ?? 0));
+            foreach ($perFull as $f => $v) {
+                if ($v['n'] < 5 || $v['c'] / $v['n'] >= 0.4) continue;
+                if (($fullOrder[substr($out['overall_level'], 0, 2)] ?? 0) >= ($fullOrder[$f] ?? 0)) {
+                    $below = Content::FULL_LEVELS[max(0, ($fullOrder[$f] ?? 0) - 1)];
+                    $out['overall_level'] = isset(Content::BASE[$below . '.2']) ? $below . '.2' : array_key_first(Content::BASE);
+                }
+                break;
+            }
             // gaps: topics missed at or below the level found (a miss above it is simply "not yet"), most missed first, lowest level first
             $fullIdx = array_flip(Content::FULL_LEVELS);
             $top = $fullIdx[substr($out['overall_level'], 0, 2)] ?? 0;

@@ -6548,7 +6548,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*I → she, am leaving → was leaving, now → then.*"
 },
 {
-"id": "rs-B12-4a-r2",
+"id": "rs-B12-4a-r3",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 4,
@@ -6560,9 +6560,9 @@ return json_decode(<<<'EF_JSON_END'
 "She told me she had finished the report.",
 "He said he was working at home that day."
 ],
-"why": "In this exercise, *will* backshifts to *would*. Without that instruction, keeping *will* can be possible if the promise is still relevant to the future.",
+"why": "Only this sentence keeps *will*. With backshift it is: *She said she would call me the next day.*",
 "wrong_why": {},
-"why_lv": "Šajā uzdevumā *will* jāmaina uz *would*. Citā kontekstā *will* var saglabāt, ja solījums joprojām attiecas uz nākotni."
+"why_lv": "Tikai šajā teikumā paliek *will*. Ar laiku saskaņošanu tas ir: *She said she would call me the next day.*"
 },
 {
 "id": "rs-B12-5a",
@@ -6643,19 +6643,19 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rs-B21-2a-r2",
+"id": "rs-B21-2a-r3",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "'The Earth goes round the Sun,' the teacher said. Which version is also correct?",
-"correct": "Report: The teacher said the Earth goes round the Sun. Reason: it is always true, so the tense can stay.",
+"q": "'The Earth goes round the Sun,' the teacher said. Why can we report it as 'The teacher said the Earth goes round the Sun'?",
+"correct": "Because it is still true.",
 "wrong": [
-"Report: The teacher said the Earth went round the Sun. Reason: it must go back, because said is in the past.",
-"Report: The teacher said the Earth had gone round the Sun. Reason: it must go back two steps.",
-"Report: The teacher said the Earth goes round the Sun. Reason: this is wrong, because reported speech always changes the tense."
+"Because said is in the past.",
+"Because reported speech never changes the tense.",
+"Because goes is an irregular verb."
 ],
-"why": "When the fact is still true, the tense does not have to go back.",
+"why": "When a fact is still true, the tense does not have to go back: *The teacher said the Earth goes round the Sun.*",
 "wrong_why": {}
 },
 {

@@ -69,6 +69,7 @@ def gp(t, lv, b, q, ok, why, lvw, bank=None):
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))   # an explanation that fitted another part of the sentence (audit_fixes.py)
     ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
     old = None
+    if not bank and q in audit_fixes.NEW_BANK: bank = audit_fixes.NEW_BANK[q]
     if bank and q in audit_fixes.BANK_CHIPS: bank = audit_fixes.BANK_CHIPS[q]   # a card that also fitted the sentence is replaced (audit_fixes.py)
     if q in audit_fixes.BANK_TASK: old, q = q, audit_fixes.BANK_TASK[q]
     q2 = tense_named(t, q) if not bank else q

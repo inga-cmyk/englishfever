@@ -27,6 +27,19 @@ TEXT = {
 }
 # a gap: the whole answer, blanks separated by " / ", alternatives by " | "
 GAP = {
+    "The film was so slow that I was ___.": "bored",
+    "I felt very ___ after the long journey.": "tired",
+    "That is a very ___ story. I want to read more.": "interesting",
+    "The match was so ___ that nobody wanted to leave.": "exciting",
+    "The exam was ___ because it was very long.": "tiring",
+    "I was ___ at the price. It was much higher than I thought.": "surprised",
+    "Would you like ___ to eat? There's some pizza.": "something",
+    "He is learning quickly. He ___ speaks Spanish now.": "already",
+    "I ___ drink coffee in the evening because it keeps me awake.": "never | rarely | hardly ever | seldom | don't | do not | can't | cannot | shouldn't | should not",
+    "It's very cloudy. It ___ rain later.": "might | may | could | will | 'll | is going to",
+    "Next year she ___ speak English fluently.": "will be able to | might be able to | may be able to | should be able to",
+    "I'm going to have my eyes ___.": "tested | checked | examined | done | looked at",
+    "He had his phone ___ on the bus.": "stolen | taken",
     "He ___ a new job next week. (start)": "is going to start | is starting | will start | starts",
     "I think the test ___ difficult. (not / be)": "won't be | will not be | isn't going to be | is not going to be",
     "We ___ dinner with our friends on Friday. They are coming at eight. (have)": "are having | are going to have | will have",

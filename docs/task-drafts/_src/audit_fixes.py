@@ -133,3 +133,17 @@ WHY = {
 }
 # Word-order tasks that are questions: the statement explanation gets this line (lib.od).
 ORDER_Q = ("In a question the helping verb (or *am / is / are*) goes before the subject.", "Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.")
+
+# Typed gaps with a free word slot (25 October): a learner cannot know which of many fitting words is meant. They become word-bank gaps:
+# the right card and two cards that do not fit the sentence. (The answer is set in extra_answers.GAP.)
+NEW_BANK = {
+    "The film was so slow that I was ___.": ["bored", "boring", "bore"],
+    "I felt very ___ after the long journey.": ["tired", "tiring", "tire"],
+    "That is a very ___ story. I want to read more.": ["interesting", "interested", "interest"],
+    "The match was so ___ that nobody wanted to leave.": ["exciting", "excited", "excite"],
+    "The exam was ___ because it was very long.": ["tiring", "tired", "tire"],
+    "I was ___ at the price. It was much higher than I thought.": ["surprised", "surprising", "surprise"],
+    "Would you like ___ to eat? There's some pizza.": ["something", "somewhere", "nowhere"],
+    "He is learning quickly. He ___ speaks Spanish now.": ["already", "very", "enough"],
+}
+BANK_TASK["This coffee is ___ hot to drink."] = "This coffee is ___ hot to drink. I can't drink it."

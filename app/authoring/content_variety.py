@@ -71,18 +71,18 @@ order('var-fu-a21-order-01', 'future', 'A2.1',
       'Describe a plan. Start with I am going to and put tonight at the end.', 'I am going to cook dinner tonight',
       'Use *am going to + base verb* for a plan: *I am going to cook*.',
       'Plānu izsaka ar *am going to* un darbības vārda pamatformu: *I am going to cook*.')
-order('var-psp-a22-order-01', 'present_simple_passive', 'A2.2',
+order('var-psp-a22-order-01-r2', 'present_simple_passive', 'A2.2',
       'Make a passive sentence. Start with These bicycles.', 'these bicycles are made in Italy',
       'The bicycles receive the action. A plural subject needs *are + past participle*: *are made*.',
-      'Darbība tiek veikta ar velosipēdiem. Daudzskaitlī lieto *are* un 3. formu: *are made*.')
+      'Velosipēdi saņem darbību. Daudzskaitlī lieto *are* un 3. formu: *are made*.')
 order('var-pasp-a22-order-01', 'past_simple_passive', 'A2.2',
       'Make a passive sentence. Start with The window.', 'the window was broken during the storm',
       'The past passive uses *was/were + past participle*. With *the window*, use *was broken*.',
       'Pagātnes ciešamo kārtu veido ar *was/were* un 3. formu. Ar *the window* lieto *was broken*.')
-order('var-pcp-b12-order-01', 'present_continuous_passive', 'B1.2',
+order('var-pcp-b12-order-01-r2', 'present_continuous_passive', 'B1.2',
       'Describe work in progress. Start with The road and put this week at the end.', 'the road is being repaired this week',
       '*Is being repaired* is the present continuous passive. The work is in progress, and the road receives the action.',
-      '*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un darbība tiek veikta ar ceļu.')
+      '*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un ceļš saņem darbību.')
 order('var-ppp-b11-order-01', 'present_perfect_passive', 'B1.1',
       'Ask whether an action is complete. Start with Has and put yet at the end.', 'has the parcel been delivered yet',
       'A present-perfect passive question uses *has/have + subject + been + past participle*.',
@@ -173,11 +173,11 @@ gap('var-pasp-a22-bank-01', 'past_simple_passive', 'A2.2',
     ['was delivered', 'were signed'], ['was deliver', 'were sign'],
     '*The parcel* is singular, so use *was delivered*. *The documents* is plural, so use *were signed*.',
     '*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*.')
-gap('var-pcp-b12-bank-01', 'present_continuous_passive', 'B1.2',
+gap('var-pcp-b12-bank-01-r2', 'present_continuous_passive', 'B1.2',
     'Use the present continuous passive. Your order ___ now, and the tables ___.',
     ['is being prepared', 'are being cleaned'], ['is preparing', 'are cleaning'],
     'The order and tables receive the actions. Use *is/are being + past participle* for passive actions in progress.',
-    'Darbības tiek veiktas ar pasūtījumu un galdiem. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu.')
+    'Pasūtījums un galdi saņem darbības. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu.')
 gap('var-cf-a22-bank-01', 'cond_first', 'A2.2',
     'Make a first conditional: If she ___ early, we ___ the bus.',
     ['arrives', 'will catch'], ['will arrives', 'caught'],
@@ -220,16 +220,16 @@ match('var-pp-b11-match-01', 'present_perfect', 'B1.1', 2,
       [('I have worked here for three years.', 'The length of the period: three years.'), ('I have worked here since 2023.', 'The starting point: 2023.'), ('I have not finished yet.', 'The action is still incomplete now.')],
       '*For* introduces a duration; *since* introduces a starting point. *Not ... yet* describes something that has not happened up to now.',
       '*For* ievada ilgumu, bet *since* — sākuma punktu. *Not ... yet* apraksta kaut ko, kas līdz šim vēl nav noticis.')
-match('var-ppc-b12-match-01', 'present_perfect_continuous', 'B1.2', 4,
+match('var-ppc-b12-match-01-r2', 'present_perfect_continuous', 'B1.2', 4,
       'Compare what each sentence focuses on.',
       [('I have painted the wall. It is finished.', 'Completion of one wall.'), ('I have been painting the wall for an hour.', 'The duration of the painting activity.'), ('I have painted three walls today.', 'The number of completed walls.')],
       'The simple form can focus on completion or quantity. The continuous form focuses on the activity and its duration; it does not by itself say the wall is finished.',
-      'Vienkāršā forma var uzsvērt pabeigšanu vai daudzumu. Ilgstošā forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta.')
-match('var-pasp-b12-match-01', 'past_simple_passive', 'B1.2', 4,
+      'Simple forma var uzsvērt pabeigšanu vai daudzumu. Continuous forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta.')
+match('var-pasp-b12-match-01-r2', 'past_simple_passive', 'B1.2', 4,
       'Identify the voice and time in each sentence.',
       [('The technician repaired the printer.', 'Past active: the technician is the subject.'), ('The printer was repaired yesterday.', 'Past passive: the printer is the subject.'), ('The printer is being repaired now.', 'Present continuous passive: the repair is in progress.')],
       'In the active sentence, the subject does the action. In the passive sentences, the printer receives it. The auxiliaries distinguish past completion from work in progress.',
-      'Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā darbība tiek veikta ar printeri. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba.')
+      'Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris saņem darbību. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba.')
 match('var-fu-b11-match-01', 'future', 'B1.1', 5,
       'Match each situation with the response that best fits its purpose.',
       [('You decide now to help a colleague with a heavy bag.', "I'll carry that for you."), ('You describe a confirmed appointment for tomorrow.', "I'm seeing the dentist at ten."), ('You predict rain because you can see dark clouds.', "It's going to rain.")],

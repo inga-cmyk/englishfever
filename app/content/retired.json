@@ -241,6 +241,23 @@
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
+"id": "pc-A22-1a",
+"skill": "present_continuous",
+"level": "A2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "My brother ___ for an exam this week, so he is very busy.",
+"correct": "is studying",
+"wrong": [
+"studies",
+"study",
+"studying"
+],
+"why": "A temporary situation around now: *am/is/are* + verb-ing.",
+"wrong_why": {},
+"why_lv": "Pagaidu situācija ap šo laiku: *am/is/are* + darbības vārds ar *-ing*."
+},
+{
 "id": "pc-A22-3a",
 "skill": "present_continuous",
 "level": "A2.2",
@@ -449,6 +466,23 @@
 "why_lv": "Darbība, kas pagātnē noteiktā brīdī bija procesā: *was/were* + darbības vārds ar *-ing*."
 },
 {
+"id": "pac-A22-2a",
+"skill": "past_continuous",
+"level": "A2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence shows an action in progress at a moment in the past?",
+"correct": "At nine, she was reading in bed.",
+"wrong": [
+"At nine, she reads in bed.",
+"At nine, she read the book.",
+"At nine, she has read in bed."
+],
+"why": "*At nine* is a moment in the past. The past continuous shows what was in progress then.",
+"wrong_why": {},
+"why_lv": "*At nine* ir brīdis pagātnē. Past Continuous rāda, kas tad notika."
+},
+{
 "id": "pac-A22-3a",
 "skill": "past_continuous",
 "level": "A2.2",
@@ -558,6 +592,23 @@
 "why": "Repeated actions in the past use the past simple (or *used to*), not the past continuous: *I played in the park every day.*",
 "wrong_why": {},
 "why_lv": "Atkārtotām darbībām pagātnē lieto Past Simple (vai *used to*), nevis Past Continuous: *I played in the park every day.*"
+},
+{
+"id": "pac-B11-5a",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option.",
+"correct": "ran",
+"wrong": [
+"was running",
+"runs",
+"has run"
+],
+"why": "A sudden, short action that interrupts uses the past simple.",
+"wrong_why": {},
+"why_lv": "Pēkšņai, īsai darbībai, kas pārtrauc, lieto Past Simple."
 },
 {
 "id": "pac-B11-6a",
@@ -829,6 +880,23 @@
 "why_lv": "Ātrs lēmums tagad: *will* + pamatforma."
 },
 {
+"id": "fu-A22-3b",
+"skill": "future",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "We ___ to Rome next month. We've already bought the tickets. (go)",
+"answers": [
+[
+"are going",
+"are going to go"
+]
+],
+"why": "A plan already arranged: *are going (to)*.",
+"hints": [],
+"why_lv": "Jau noorganizēts plāns: *are going* (*to*)."
+},
+{
 "id": "fu-A22-5a",
 "skill": "future",
 "level": "A2.2",
@@ -861,6 +929,40 @@
 "why": "After *if, when* and *as soon as* we use the present simple for the future.",
 "wrong_why": {},
 "why_lv": "Pēc *if, when* un *as soon as* nākotnei lieto Present Simple."
+},
+{
+"id": "fu-B11-2a",
+"skill": "future",
+"level": "B1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence is an arrangement (fixed time and place in your diary)?",
+"correct": "I'm seeing the dentist at 3 pm on Friday.",
+"wrong": [
+"I'll see the dentist someday.",
+"I will probably see the dentist.",
+"The dentist is nice."
+],
+"why": "The present continuous with a time shows a fixed arrangement.",
+"wrong_why": {},
+"why_lv": "Present Continuous ar laiku rāda fiksētu norunu."
+},
+{
+"id": "fu-B11-5a",
+"skill": "future",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Choose the more natural option for an arrangement.",
+"correct": "I'm meeting Anna at 6.",
+"wrong": [
+"I meet Anna at 6 yesterday.",
+"I met Anna at 6 tomorrow.",
+"I'm going to be met Anna at 6."
+],
+"why": "For arrangements with a time we often use the present continuous.",
+"wrong_why": {},
+"why_lv": "Norunām ar laiku bieži lieto Present Continuous."
 },
 {
 "id": "fu-B12-3a",
@@ -896,6 +998,23 @@
 "why_lv": "Redzam, ka tūlīt notiks: *are going to* + pamatforma."
 },
 {
+"id": "psp-B11-5a",
+"skill": "present_simple_passive",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to write a neutral email and not blame anyone. Choose the correct option.",
+"correct": "The invoices are sent on Fridays.",
+"wrong": [
+"You send the invoices on Fridays.",
+"Someone sends the invoices on Fridays.",
+"I think you send the invoices on Fridays."
+],
+"why": "The passive keeps the focus on the action and does not name a person.",
+"wrong_why": {},
+"why_lv": "Ciešamā kārta saglabā uzmanību uz darbību un nenosauc cilvēku."
+},
+{
 "id": "psp-B12-3b",
 "skill": "present_simple_passive",
 "level": "B1.2",
@@ -911,6 +1030,23 @@
 "why": "We leave out the agent (*someone*) because it is not important.",
 "hints": [],
 "why_lv": "Darītāju (*someone*) izlaiž, jo tas nav svarīgs."
+},
+{
+"id": "psp-B12-5a",
+"skill": "present_simple_passive",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Which sentence puts the focus on the data, not on the person?",
+"correct": "The data is collected online.",
+"wrong": [
+"Someone collects the data online.",
+"We collect the data online.",
+"They collect the data online."
+],
+"why": "The passive moves the focus to the data.",
+"wrong_why": {},
+"why_lv": "Ciešamā kārta pārliek uzmanību uz datiem."
 },
 {
 "id": "pasp-B11-1a",
@@ -988,6 +1124,23 @@
 "why": "*New workers* is the subject. *Was/were* + past participle.",
 "hints": [],
 "why_lv": "*New workers* ir teikuma priekšmets. *Was/were* + 3. forma."
+},
+{
+"id": "pasp-B12-5a",
+"skill": "past_simple_passive",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to mention a mistake politely, without blaming anyone. Choose the correct option.",
+"correct": "A mistake was made in the report.",
+"wrong": [
+"You made a mistake in the report.",
+"Someone is making a mistake.",
+"I think you make mistakes."
+],
+"why": "The passive hides the doer and sounds more neutral.",
+"wrong_why": {},
+"why_lv": "Ciešamā kārta paslēpj darītāju un skan neitrālāk."
 },
 {
 "id": "ppp-B11-3a",
@@ -1127,6 +1280,23 @@
 "why": "*will be* + past participle.",
 "hints": [],
 "why_lv": "*will be* + 3. forma."
+},
+{
+"id": "fup-B11-5a",
+"skill": "future_passive",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You do not want to say who will do the action. Choose the correct option.",
+"correct": "The files will be checked on Monday.",
+"wrong": [
+"Someone checks the files on Monday.",
+"The files check on Monday.",
+"The files will checking on Monday."
+],
+"why": "The passive keeps the focus on the files.",
+"wrong_why": {},
+"why_lv": "Ciešamā kārta saglabā uzmanību uz failiem."
 },
 {
 "id": "fup-B11-6a",
@@ -2047,6 +2217,39 @@
 "why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
 },
 {
+"id": "pc-B11-3a-r2",
+"skill": "present_continuous",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "Use the present continuous: These days more people ___ from home. (work)",
+"answers": [
+[
+"are working"
+]
+],
+"why": "A trend around now: *are* + verb-ing.",
+"hints": [],
+"why_lv": "Tendence šajā laikā: *are* + darbības vārds ar *-ing*."
+},
+{
+"id": "pp-B11-5a-r2",
+"skill": "present_perfect",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You cannot open the door because your keys are missing. Which sentence most directly presents the loss as a current problem?",
+"correct": "I've lost my keys.",
+"wrong": [
+"I lost my keys.",
+"Both tell us the same.",
+"Neither tells us this."
+],
+"why": "*I have lost my keys* presents the past loss as relevant now. The past simple reports the past event; context can also connect it to a current problem.",
+"wrong_why": {},
+"why_lv": "*I have lost my keys* uzsver pagātnes notikuma saistību ar tagadni. Past Simple apraksta pagātnes notikumu; arī tam konteksts var piešķirt saistību ar pašreizējo problēmu."
+},
+{
 "id": "cf-B12-3a-r2",
 "skill": "cond_first",
 "level": "B1.2",
@@ -2138,6 +2341,40 @@
 "hints": []
 },
 {
+"id": "var-psp-a22-order-01",
+"skill": "present_simple_passive",
+"level": "A2.2",
+"bloom": 3,
+"kind": "order",
+"q": "Make a passive sentence. Start with These bicycles.",
+"why": "The bicycles receive the action. A plural subject needs *are + past participle*: *are made*.",
+"sentence": "these bicycles are made in Italy",
+"answers": [
+[
+"these bicycles are made in Italy"
+]
+],
+"display_answer": "These bicycles are made in Italy.",
+"why_lv": "Darbība tiek veikta ar velosipēdiem. Daudzskaitlī lieto *are* un 3. formu: *are made*."
+},
+{
+"id": "var-pcp-b12-order-01",
+"skill": "present_continuous_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "order",
+"q": "Describe work in progress. Start with The road and put this week at the end.",
+"why": "*Is being repaired* is the present continuous passive. The work is in progress, and the road receives the action.",
+"sentence": "the road is being repaired this week",
+"answers": [
+[
+"the road is being repaired this week"
+]
+],
+"display_answer": "The road is being repaired this week.",
+"why_lv": "*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un darbība tiek veikta ar ceļu."
+},
+{
 "id": "var-ca-c11-order-01",
 "skill": "cond_advanced",
 "level": "C1.1",
@@ -2152,6 +2389,79 @@
 ]
 ],
 "display_answer": "Had I known, I would have called you."
+},
+{
+"id": "var-pcp-b12-bank-01",
+"skill": "present_continuous_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Use the present continuous passive. Your order ___ now, and the tables ___.",
+"why": "The order and tables receive the actions. Use *is/are being + past participle* for passive actions in progress.",
+"answers": [
+[
+"is being prepared"
+],
+[
+"are being cleaned"
+]
+],
+"bank": [
+"is being prepared",
+"are being cleaned",
+"is preparing",
+"are cleaning"
+],
+"hints": [],
+"why_lv": "Darbības tiek veiktas ar pasūtījumu un galdiem. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu."
+},
+{
+"id": "var-ppc-b12-match-01",
+"skill": "present_perfect_continuous",
+"level": "B1.2",
+"bloom": 4,
+"kind": "match",
+"q": "Compare what each sentence focuses on.",
+"why": "The simple form can focus on completion or quantity. The continuous form focuses on the activity and its duration; it does not by itself say the wall is finished.",
+"pairs": [
+[
+"I have painted the wall. It is finished.",
+"Completion of one wall."
+],
+[
+"I have been painting the wall for an hour.",
+"The duration of the painting activity."
+],
+[
+"I have painted three walls today.",
+"The number of completed walls."
+]
+],
+"why_lv": "Vienkāršā forma var uzsvērt pabeigšanu vai daudzumu. Ilgstošā forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta."
+},
+{
+"id": "var-pasp-b12-match-01",
+"skill": "past_simple_passive",
+"level": "B1.2",
+"bloom": 4,
+"kind": "match",
+"q": "Identify the voice and time in each sentence.",
+"why": "In the active sentence, the subject does the action. In the passive sentences, the printer receives it. The auxiliaries distinguish past completion from work in progress.",
+"pairs": [
+[
+"The technician repaired the printer.",
+"Past active: the technician is the subject."
+],
+[
+"The printer was repaired yesterday.",
+"Past passive: the printer is the subject."
+],
+[
+"The printer is being repaired now.",
+"Present continuous passive: the repair is in progress."
+]
+],
+"why_lv": "Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā darbība tiek veikta ar printeri. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba."
 },
 {
 "id": "ct-B22-4a-r4",

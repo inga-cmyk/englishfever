@@ -952,7 +952,7 @@
         api('account/profile', { lang: state.user.lang }).catch(function () {});
         drawFeedback(r, ans, false);
       } }, lv ? 'English' : 'Latviski') : null;
-      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Nepieciešamās formas atrastas' : 'Required patterns found') : (lv ? 'Pārbaudi norādītos nosacījumus' : 'Check the required patterns')) : (good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (res.near ? 'Almost – one word to check' : 'Not quite')),
+      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? 'Correct – with a small spelling tip' : (lastCheer = lastCheer || cheers[Math.floor(Math.random() * cheers.length)])) : (res.near ? 'Almost – one word to check' : 'Not quite')),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, 'An earlier mistake on this topic looks fixed.')));
@@ -967,7 +967,7 @@
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
       var why = lv ? res.why_lv : res.why;
       if (it.kind === 'write') {
-        fb.appendChild(h('p', { class: 'small' }, lv ? 'Šī pārbaude meklē tikai norādītās formas. Tā neapstiprina visa teikuma gramatisko pareizību vai nozīmi. Salīdzini savu atbildi ar piemēru.' : 'This checks the required patterns only, not the grammar or meaning of your whole sentence. Compare your answer with the model.'));
+        fb.appendChild(h('p', { class: 'small' }, lv ? 'Šī pārbaude redz tikai vajadzīgo formu. Salīdzini savu atbildi ar piemēru.' : 'This only checks the form you need. Compare your answer with the model.'));
         fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Piemēra atbilde: ' : 'Model answer: '), res.show));
         fb.appendChild(h('p', null, UI.rich(why)));
       } else {

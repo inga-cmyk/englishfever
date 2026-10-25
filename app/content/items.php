@@ -543,7 +543,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "pc-A22-1a",
+"id": "pc-A22-1a-r3",
 "skill": "present_continuous",
 "level": "A2.2",
 "bloom": 1,
@@ -557,7 +557,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "A temporary situation around now: *am/is/are* + verb-ing.",
 "wrong_why": {},
-"why_lv": "Pagaidu situācija ap šo laiku: *am/is/are* + darbības vārds ar *-ing*."
+"why_lv": "Pagaidu situācija šobrīd: *am/is/are* + darbības vārds ar *-ing*."
 },
 {
 "id": "pc-A22-2a",
@@ -704,7 +704,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Izmaiņām, kas notiek tagad, lieto Present Continuous: *getting colder, growing, rising*."
 },
 {
-"id": "pc-B11-3a-r2",
+"id": "pc-B11-3a-r3",
 "skill": "present_continuous",
 "level": "B1.1",
 "bloom": 3,
@@ -717,7 +717,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "A trend around now: *are* + verb-ing.",
 "hints": [],
-"why_lv": "Tendence šajā laikā: *are* + darbības vārds ar *-ing*."
+"why_lv": "Tendence mūsdienās: *are* + darbības vārds ar *-ing*."
 },
 {
 "id": "pc-B11-3b",
@@ -1324,7 +1324,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Darbība, kas pagātnē noteiktā brīdī bija procesā: *was/were* + darbības vārds ar *-ing*."
 },
 {
-"id": "pac-A22-2a",
+"id": "pac-A22-2a-r3",
 "skill": "past_continuous",
 "level": "A2.2",
 "bloom": 2,
@@ -1338,7 +1338,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*At nine* is a moment in the past. The past continuous shows what was in progress then.",
 "wrong_why": {},
-"why_lv": "*At nine* ir brīdis pagātnē. Past Continuous rāda, kas tad notika."
+"why_lv": "*At nine* ir brīdis pagātnē. Past Continuous rāda, kas tad norisinājās."
 },
 {
 "id": "pac-A22-3a-r2",
@@ -1522,7 +1522,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ar *they* lieto *were*: *When I arrived, they were having lunch.* Pusdienošana jau bija sākusies."
 },
 {
-"id": "pac-B11-5a",
+"id": "pac-B11-5a-r3",
 "skill": "past_continuous",
 "level": "B1.1",
 "bloom": 5,
@@ -1536,7 +1536,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "A sudden, short action that interrupts uses the past simple.",
 "wrong_why": {},
-"why_lv": "Pēkšņai, īsai darbībai, kas pārtrauc, lieto Past Simple."
+"why_lv": "Pēkšņai īsai darbībai, kas pārtrauc citu darbību, lieto Past Simple."
 },
 {
 "id": "pac-B11-6a-r3",
@@ -1909,7 +1909,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Yesterday* ir pabeigts laiks. Lieto Past Simple: *I saw him yesterday.*"
 },
 {
-"id": "pp-B11-5a-r2",
+"id": "pp-B11-5a-r3",
 "skill": "present_perfect",
 "level": "B1.1",
 "bloom": 5,
@@ -1923,7 +1923,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*I have lost my keys* presents the past loss as relevant now. The past simple reports the past event; context can also connect it to a current problem.",
 "wrong_why": {},
-"why_lv": "*I have lost my keys* uzsver pagātnes notikuma saistību ar tagadni. Past Simple apraksta pagātnes notikumu; arī tam konteksts var piešķirt saistību ar pašreizējo problēmu."
+"why_lv": "*I have lost my keys* uzsver pagātnes notikuma saistību ar tagadni. Past Simple apraksta pagātnes notikumu; arī to konteksts var saistīt ar pašreizējo problēmu."
 },
 {
 "id": "pp-B11-6a",
@@ -2659,7 +2659,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Lēmums runāšanas brīdī: *will* + pamatforma."
 },
 {
-"id": "fu-A22-3b",
+"id": "fu-A22-3b-r3",
 "skill": "future",
 "level": "A2.2",
 "bloom": 3,
@@ -2673,7 +2673,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "A plan already arranged: *are going (to)*.",
 "hints": [],
-"why_lv": "Jau noorganizēts plāns: *are going* (*to*)."
+"why_lv": "Jau sarunāts plāns: *are going* (*to*)."
 },
 {
 "id": "fu-A22-4a",
@@ -2754,7 +2754,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *if, when* un *as soon as* nākotnei lieto Present Simple."
 },
 {
-"id": "fu-B11-2a",
+"id": "fu-B11-2a-r3",
 "skill": "future",
 "level": "B1.1",
 "bloom": 2,
@@ -2768,7 +2768,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The present continuous with a time shows a fixed arrangement.",
 "wrong_why": {},
-"why_lv": "Present Continuous ar laiku rāda fiksētu norunu."
+"why_lv": "Present Continuous ar laiku rāda fiksētu vienošanos."
 },
 {
 "id": "fu-B11-3a",
@@ -2844,7 +2844,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Laika palīgteikumos (*when, as soon as, before*) lieto Present Simple: *when I arrive*."
 },
 {
-"id": "fu-B11-5a",
+"id": "fu-B11-5a-r3",
 "skill": "future",
 "level": "B1.1",
 "bloom": 5,
@@ -2858,7 +2858,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "For arrangements with a time we often use the present continuous.",
 "wrong_why": {},
-"why_lv": "Norunām ar laiku bieži lieto Present Continuous."
+"why_lv": "Vienošanās ar laiku bieži izsaka ar Present Continuous."
 },
 {
 "id": "fu-B11-6a",
@@ -3221,7 +3221,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājumiem ciešamajā kārtā vajag 3. formu: *Are the tickets checked at the door?*"
 },
 {
-"id": "psp-B11-5a",
+"id": "psp-B11-5a-r3",
 "skill": "present_simple_passive",
 "level": "B1.1",
 "bloom": 5,
@@ -3235,7 +3235,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive keeps the focus on the action and does not name a person.",
 "wrong_why": {},
-"why_lv": "Ciešamā kārta saglabā uzmanību uz darbību un nenosauc cilvēku."
+"why_lv": "Ciešamā kārta uzmanību patur uz darbību, un cilvēks nav minēts."
 },
 {
 "id": "psp-B11-6a",
@@ -3344,7 +3344,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamajai kārtai vajag 3. formu: *is sent*."
 },
 {
-"id": "psp-B12-5a",
+"id": "psp-B12-5a-r3",
 "skill": "present_simple_passive",
 "level": "B1.2",
 "bloom": 5,
@@ -3358,7 +3358,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive moves the focus to the data.",
 "wrong_why": {},
-"why_lv": "Ciešamā kārta pārliek uzmanību uz datiem."
+"why_lv": "Ciešamā kārta novirza uzmanību uz datiem."
 },
 {
 "id": "psp-B12-6a",
@@ -3729,7 +3729,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Lieto 3. formu: *The invoice was sent on Monday.*"
 },
 {
-"id": "pasp-B12-5a",
+"id": "pasp-B12-5a-r3",
 "skill": "past_simple_passive",
 "level": "B1.2",
 "bloom": 5,
@@ -3743,7 +3743,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive hides the doer and sounds more neutral.",
 "wrong_why": {},
-"why_lv": "Ciešamā kārta paslēpj darītāju un skan neitrālāk."
+"why_lv": "Ciešamā kārta neuzsver, kas darbību veica, un skan neitrālāk."
 },
 {
 "id": "pasp-B12-6a",
@@ -4213,7 +4213,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Lieto 3. formu: *The prize will be given to the winner.*"
 },
 {
-"id": "fup-B11-5a",
+"id": "fup-B11-5a-r3",
 "skill": "future_passive",
 "level": "B1.1",
 "bloom": 5,
@@ -4227,7 +4227,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "The passive keeps the focus on the files.",
 "wrong_why": {},
-"why_lv": "Ciešamā kārta saglabā uzmanību uz failiem."
+"why_lv": "Ciešamā kārta patur uzmanību uz failiem."
 },
 {
 "id": "fup-B11-6a-r2",
@@ -5030,7 +5030,7 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: you will be late. The other sentences change who must hurry or what happens.",
 "wrong_why": {},
-"why_lv": "*Unless you hurry* nozīmē *if you do not hurry*. Papildu noliegums maina nosacījumu un vairs neizsaka doto brīdinājumu. Noliegums pēc *unless* var būt pareizs, ja ir domāta cita nozīme."
+"why_lv": "*Unless you hurry* nozīmē *if you do not hurry*, tāpēc brīdinājums paliek tāds pats: tu nokavēsi. Pārējie teikumi maina to, kam jāsteidzas, vai to, kas notiks."
 },
 {
 "id": "cf-B12-5a",
@@ -8315,7 +8315,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Plānu izsaka ar *am going to* un darbības vārda pamatformu: *I am going to cook*."
 },
 {
-"id": "var-psp-a22-order-01",
+"id": "var-psp-a22-order-01-r2",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 3,
@@ -8329,7 +8329,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "These bicycles are made in Italy.",
-"why_lv": "Darbība tiek veikta ar velosipēdiem. Daudzskaitlī lieto *are* un 3. formu: *are made*."
+"why_lv": "Velosipēdi saņem darbību. Daudzskaitlī lieto *are* un 3. formu: *are made*."
 },
 {
 "id": "var-pasp-a22-order-01",
@@ -8349,7 +8349,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pagātnes ciešamo kārtu veido ar *was/were* un 3. formu. Ar *the window* lieto *was broken*."
 },
 {
-"id": "var-pcp-b12-order-01",
+"id": "var-pcp-b12-order-01-r2",
 "skill": "present_continuous_passive",
 "level": "B1.2",
 "bloom": 3,
@@ -8363,7 +8363,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "The road is being repaired this week.",
-"why_lv": "*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un darbība tiek veikta ar ceļu."
+"why_lv": "*Is being repaired* ir Present Continuous ciešamajā kārtā. Darbs norisinās, un ceļš saņem darbību."
 },
 {
 "id": "var-ppp-b11-order-01",
@@ -8783,7 +8783,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*."
 },
 {
-"id": "var-pcp-b12-bank-01",
+"id": "var-pcp-b12-bank-01-r2",
 "skill": "present_continuous_passive",
 "level": "B1.2",
 "bloom": 3,
@@ -8805,7 +8805,7 @@ return json_decode(<<<'EF_JSON_END'
 "are cleaning"
 ],
 "hints": [],
-"why_lv": "Darbības tiek veiktas ar pasūtījumu un galdiem. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu."
+"why_lv": "Pasūtījums un galdi saņem darbības. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu."
 },
 {
 "id": "var-cf-a22-bank-01",
@@ -9007,7 +9007,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*For* ievada ilgumu, bet *since* — sākuma punktu. *Not ... yet* apraksta kaut ko, kas līdz šim vēl nav noticis."
 },
 {
-"id": "var-ppc-b12-match-01",
+"id": "var-ppc-b12-match-01-r2",
 "skill": "present_perfect_continuous",
 "level": "B1.2",
 "bloom": 4,
@@ -9028,10 +9028,10 @@ return json_decode(<<<'EF_JSON_END'
 "The number of completed walls."
 ]
 ],
-"why_lv": "Vienkāršā forma var uzsvērt pabeigšanu vai daudzumu. Ilgstošā forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta."
+"why_lv": "Simple forma var uzsvērt pabeigšanu vai daudzumu. Continuous forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta."
 },
 {
-"id": "var-pasp-b12-match-01",
+"id": "var-pasp-b12-match-01-r2",
 "skill": "past_simple_passive",
 "level": "B1.2",
 "bloom": 4,
@@ -9052,7 +9052,7 @@ return json_decode(<<<'EF_JSON_END'
 "Present continuous passive: the repair is in progress."
 ]
 ],
-"why_lv": "Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā darbība tiek veikta ar printeri. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba."
+"why_lv": "Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris saņem darbību. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba."
 },
 {
 "id": "var-fu-b11-match-01",

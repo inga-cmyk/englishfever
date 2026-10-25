@@ -290,6 +290,24 @@ def revise(original):
         fix_again(id, 'Name the tense: another tense would also be correct in this sentence.', q=q)
     fix_again('fu-A21-3b', 'A correct answer that was not accepted: a decision about the coat can also be going to.',
         answers=[["'ll take", 'will take', "'m going to take", 'am going to take']])
+    # Latvian read-through (25 October): wording that was wrong, stiff or did not match the English
+    LVFIX = {
+        'cf-B12-4a': '*Unless you hurry* nozīmē *if you do not hurry*, tāpēc brīdinājums paliek tāds pats: tu nokavēsi. Pārējie teikumi maina to, kam jāsteidzas, vai to, kas notiks.',
+        'pac-A22-2a': '*At nine* ir brīdis pagātnē. Past Continuous rāda, kas tad norisinājās.',
+        'pac-B11-5a': 'Pēkšņai īsai darbībai, kas pārtrauc citu darbību, lieto Past Simple.',
+        'pp-B11-5a': '*I have lost my keys* uzsver pagātnes notikuma saistību ar tagadni. Past Simple apraksta pagātnes notikumu; arī to konteksts var saistīt ar pašreizējo problēmu.',
+        'fu-A22-3b': 'Jau sarunāts plāns: *are going* (*to*).',
+        'fu-B11-2a': 'Present Continuous ar laiku rāda fiksētu vienošanos.',
+        'fu-B11-5a': 'Vienošanās ar laiku bieži izsaka ar Present Continuous.',
+        'pc-A22-1a': 'Pagaidu situācija šobrīd: *am/is/are* + darbības vārds ar *-ing*.',
+        'pc-B11-3a': 'Tendence mūsdienās: *are* + darbības vārds ar *-ing*.',
+        'psp-B11-5a': 'Ciešamā kārta uzmanību patur uz darbību, un cilvēks nav minēts.',
+        'psp-B12-5a': 'Ciešamā kārta novirza uzmanību uz datiem.',
+        'fup-B11-5a': 'Ciešamā kārta patur uzmanību uz failiem.',
+        'pasp-B12-5a': 'Ciešamā kārta neuzsver, kas darbību veica, un skan neitrālāk.',
+    }
+    for id, lv in LVFIX.items():
+        fix_again(id, 'Latvian wording corrected after a read-through.', why_lv=lv)
     # Typed tasks: every correct answer a learner can write is accepted (teacher's request, 24 October)
     def more_again(id, reason, extra):
         have = by_id[id]['answers'][0]

@@ -149,13 +149,13 @@
     hbLast = Date.now();
     hbTimer = setInterval(function () {
       var now = Date.now();
-      var secs = Math.min(30, Math.round((now - hbLast) / 1000));
+      var secs = Math.min(60, Math.round((now - hbLast) / 1000));
       hbLast = now;
       if (!state.user || document.visibilityState !== 'visible' || now - state.lastInteraction > 60000 || secs < 1) return;
       state.todaySeconds += secs;
       renderChips();
       api('heartbeat', { seconds: secs }).then(function (r) { if (r && r.pulse) { state.pulse = r.pulse; renderChips(); } }).catch(function () {});
-    }, 10000);
+    }, 30000);   // every 30 seconds: a third of the requests of before (October outage)
   }
 
   function stopHeartbeat() { if (hbTimer) { clearInterval(hbTimer); hbTimer = null; } state.todaySeconds = 0; state.streak = 0; clearHistories(); }
@@ -277,7 +277,7 @@
         h('p', null, 'Short grammar questions for adult learners, A2 to C1. Clear feedback after every answer.'),
         cfg.beta ? h('p', { class: 'betaline' }, betaPill()) : null,
         h('div', { class: 'points' },
-          h('div', null, h('b', null, 'Placement test'), '24 quick questions.'),
+          h('div', null, h('b', null, 'Placement test'), '12, 24 or 40 questions.'),
           h('div', null, h('b', null, 'Your choice'), 'Pick the topics and level.'),
           h('div', null, h('b', null, 'Real thinking'), 'Spot, judge and write.'))),
       h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
@@ -717,7 +717,7 @@
       h('p', null, 'The questions adapt to your answers.'), seg,
       h('div', { class: 'row', style: 'margin-top:16px' }, go, h('a', { class: 'btn ghost', href: '#/home' }, 'Not now')))));
     go.addEventListener('click', function () {
-      this.disabled = true;
+      this.disabled = true; this.setAttribute('aria-busy', 'true'); this.textContent = 'Starting…';   // the server can take a moment: say so
       api('session/start', { mode: 'placement', length: size }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
     });
   }
@@ -779,11 +779,11 @@
           }))));
     }
     startBtn.addEventListener('click', function () {
-      startBtn.disabled = true;
+      startBtn.disabled = true; startBtn.setAttribute('aria-busy', 'true'); startBtn.textContent = 'Starting…';
       var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
       api('session/start', { mode: 'practice', skills: ids, levels: chosenLevels(), length: length }).then(function (r) {
         state.sess = newSess(r.session, r.item); location.hash = '#/session';
-      }).catch(function (e) { startBtn.disabled = false; err.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+      }).catch(function (e) { startBtn.disabled = false; startBtn.removeAttribute('aria-busy'); redraw(); err.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
     });
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
@@ -984,7 +984,7 @@
       }
       fb.appendChild(ruleDetails(res.skill, !good, lv));
 
-      var nextText = r.done ? (ses.mode === 'placement' ? 'See my result' : 'See my results') : 'Next';
+      var nextText = r.done ? 'See my results' : 'Next';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
       if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
         var older = olderOf(at), newer = H.filter(function (e) { return e.n > at; }).sort(function (a, b) { return a.n - b.n; })[0];
@@ -1115,13 +1115,13 @@
     // real progress only: topics where this session went clearly better than the learner's recent history
     var better = (s.by_skill || []).filter(function (k) { var now = pct(k.correct, k.n); return k.prev_accuracy !== null && k.prev_accuracy !== undefined && k.n >= 3 && now >= k.prev_accuracy + 10; });
     var wins = [];
-    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), plural(fixed, 'earlier mistake', 'earlier mistakes') + ' on these topics look fixed.'));
+    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), (fixed === 1 ? '1 earlier mistake on these topics looks fixed.' : fixed + ' earlier mistakes on these topics look fixed.')));
     better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% → ' + pct(k.correct, k.n) + '%')); });
-    if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), plural(s.fixed_total, 'mistake', 'mistakes') + ' fixed so far'));
+    if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), 'Fixed so far: ' + s.fixed_total));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
-      s.open_after ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, plural(s.open_after, 'mistake', 'mistakes') + ' left'), comebackButton('btn small fn-chance', 'Second Chance')) : (s.comeback ? h('p', { class: 'small muted' }, 'All clear!') : null),
+      s.open_after ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, 'Still to fix: ' + s.open_after), comebackButton('btn small fn-chance', 'Second Chance')) : (s.comeback ? h('p', { class: 'small muted' }, 'All clear!') : null),
       h('div', { class: 'grid g3' },
         h('div', null, h('div', { class: 'big' }, s.correct + '/' + s.n), h('div', { class: 'muted small' }, 'correct')),
         h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),

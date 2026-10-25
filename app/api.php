@@ -118,7 +118,7 @@ try {
 
         case 'heartbeat':
             $u = Auth::require();
-            $req = max(0, min(30, (int) ($in['seconds'] ?? 0)));
+            $req = max(0, min(60, (int) ($in['seconds'] ?? 0)));   // the page sends one every 30 s
             $last = $_SESSION['last_hb'] ?? 0;
             $now = time();
             $credit = $last ? min($req, max(0, $now - $last + 2)) : min($req, 15);

@@ -1160,7 +1160,7 @@
     });
     no.addEventListener('click', function () { card.replaceChildren(h('b', { style: 'color:var(--text)' }, 'Done for today – well done!')); });
     card.append(h('div', { class: 'row between', style: 'gap:12px' },
-      h('div', null, h('b', { style: 'color:var(--text)' }, 'Bonus: ' + plural(s.bonus, 'question', 'questions')), h('div', { class: 'small muted' }, 'Double XP. Only if you want to.')),
+      h('div', null, h('b', { style: 'color:var(--text)' }, 'Bonus: ' + plural(s.bonus, 'question', 'questions')), h('div', { class: 'small muted' }, 'Double XP')),
       h('span', { class: 'row', style: 'gap:8px' }, go, no)));
     return card;
   }

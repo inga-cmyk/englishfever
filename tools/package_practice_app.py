@@ -38,6 +38,10 @@ with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
                 continue
             z.write(os.path.join(base, f), rel)
             n += 1
+    # the prepared question drafts, so the Questions page can add them all with one button
+    import glob as _glob
+    for f in sorted(_glob.glob(os.path.join(APP, "..", "docs", "task-drafts", "*.csv"))):
+        z.write(f, "content/drafts/" + os.path.basename(f)); n += 1
     # an empty writable folder for PHP sessions, protected by .htaccess
     z.writestr("var/sessions/.keep", "")
     # which package is live (shown in the footer of the app)

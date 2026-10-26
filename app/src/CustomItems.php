@@ -93,6 +93,30 @@ final class CustomItems
      * Checks every row. Returns ['rows' => [['line', 'ok', 'errors', 'warnings', 'q', 'kind', 'skill', 'level', 'item']...], 'ok' => n, 'bad' => n].
      * With $save the correct rows are stored as drafts.
      */
+    /** The prepared draft files that come with the app (content/drafts in the package, docs/task-drafts while developing). @return array<string,string> name => path */
+    public static function preparedFiles(): array
+    {
+        $dir = is_dir(__DIR__ . '/../content/drafts') ? __DIR__ . '/../content/drafts' : __DIR__ . '/../../docs/task-drafts';
+        $out = [];
+        foreach (glob($dir . '/*.csv') ?: [] as $f) $out[basename($f)] = $f;
+        ksort($out);
+        return $out;
+    }
+
+    /** All prepared files at once (teacher's wish, 27 October: no file-by-file import). Same checks as one file; a summary per file. */
+    public static function importPrepared(bool $save): array
+    {
+        $files = []; $tot = ['ok' => 0, 'updated' => 0, 'same' => 0, 'bad' => 0];
+        foreach (self::preparedFiles() as $name => $path) {
+            $r = self::import((string) file_get_contents($path), $save);
+            $bad = array_values(array_filter($r['rows'], fn($x) => !$x['ok']));
+            $files[] = ['file' => $name, 'ok' => $r['ok'], 'updated' => $r['updated'] ?? 0, 'same' => $r['same'] ?? 0, 'bad' => $r['bad'],
+                'problems' => array_map(fn($x) => 'Row ' . $x['line'] . ': ' . implode(' ', $x['errors']), array_slice($bad, 0, 5))];
+            foreach ($tot as $k => $v) $tot[$k] += end($files)[$k];
+        }
+        return ['files' => $files] + $tot;
+    }
+
     public static function import(string $csv, bool $save): array
     {
         if (strlen($csv) > 600000) throw new ApiError('The file is too big (600 KB at most).', 400);

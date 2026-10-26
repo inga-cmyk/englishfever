@@ -209,6 +209,10 @@ try {
             Auth::requireTeacher();
             out(CustomItems::import((string) ($in['csv'] ?? ''), !empty($in['confirm'])));
 
+        case 'teacher/items-import-prepared':
+            Auth::requireTeacher();
+            out(CustomItems::importPrepared(!empty($in['confirm'])));
+
         case 'teacher/items-status':
             Auth::requireTeacher();
             $ids = is_array($in['ids'] ?? null) ? array_slice($in['ids'], 0, 3000) : [];

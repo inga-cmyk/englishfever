@@ -647,6 +647,30 @@
   // ───────── teacher: add tasks from a spreadsheet ─────────
   var TASK_TABS = [['draft', 'Drafts'], ['approved', 'Approved'], ['retired', 'Retired']];
 
+  /** All prepared draft files at once: check, then add (they arrive as drafts; "Approve all" on the Drafts tab publishes them). */
+  function preparedCard() {
+    var out = h('div');
+    var check = h('button', { class: 'btn small', type: 'button' }, 'Check prepared questions');
+    function sum(r) { return [r.ok + ' new', r.updated ? r.updated + ' updated' : null, r.same ? r.same + ' already there' : null, r.bad ? r.bad + ' with problems' : null].filter(Boolean).join(' · '); }
+    check.addEventListener('click', function () {
+      check.disabled = true; check.textContent = 'Checking…';
+      api('teacher/items-import-prepared', {}).then(function (r) {
+        check.disabled = false; check.textContent = 'Check prepared questions';
+        var add = (r.ok || r.updated) ? h('button', { class: 'btn', type: 'button', onclick: function (e) {
+          e.target.disabled = true; e.target.textContent = 'Adding…';
+          api('teacher/items-import-prepared', { confirm: true }).then(function (x) { UI.toast(sum(x)); state.taskTab = 'draft'; viewTasks(); })
+            .catch(function (er) { e.target.disabled = false; UI.toast(er.message); });
+        } }, 'Add all (' + (r.ok + r.updated) + ')') : h('p', { class: 'small muted' }, 'Everything is already added.');
+        out.replaceChildren(h('p', null, h('b', null, sum(r))),
+          h('details', null, h('summary', { class: 'small' }, r.files.length + ' files'), h('ul', { class: 'small' }, r.files.map(function (f) {
+            return h('li', null, f.file + ': ' + sum(f), f.problems.length ? h('div', { class: 'err small' }, f.problems.join(' ')) : null);
+          }))), h('div', { class: 'row', style: 'margin-top:10px' }, add));
+      }).catch(function (e) { check.disabled = false; check.textContent = 'Check prepared questions'; UI.toast(e.message); });
+    });
+    return h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', { style: 'margin:0 0 6px' }, 'Prepared questions'),
+      h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'All question files that come with the app, in one go. New ones arrive as drafts; corrected ones are updated where they are.'), check, out);
+  }
+
   function viewTasks() {
     api('teacher/items').then(function (r) {
       var tab = state.taskTab || (r.items.draft.length ? 'draft' : 'approved');
@@ -696,6 +720,7 @@
       show(h('div', null,
         h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Questions')),
           h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/items-template' }, 'Download template')),
+        preparedCard(),
         h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', { style: 'margin:0 0 10px' }, 'Add questions from a CSV file'), file,
           h('details', { style: 'margin-top:12px' }, h('summary', { class: 'small' }, 'Topic names'), h('ul', { class: 'small', style: 'columns:2;margin:8px 0 0' }, r.topics.map(function (t) { return h('li', null, t); })))),
         result,

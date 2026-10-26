@@ -393,6 +393,10 @@ def revise(original):
     fix_again('cm-B21-1a', 'Ask about the meaning, not the name of the type.', q='Which sentence imagines a different past with a result now?')
     fix_again('cm-C11-1a', 'Ask about the meaning, not the name of the type.', q='Which sentence without *if* is correct?')
     fix_again('cz-B11-1a', 'Ask about the meaning, not the name of the type.', q="Which word can replace 'if' here? 'If it rains, the street floods.'")
+    # Teacher (27 October): "a suitable reporting verb" makes clear that the learner chooses the verb
+    fix_again('rv-C11-6a', 'Say that the learner chooses a suitable verb.', q="Report with a suitable reporting verb. 'It wasn't me who broke it!' said Leo.")
+    fix_again('rv-C12-3a', 'Say that the learner chooses a suitable verb.', q="Report with a suitable reporting verb: 'You really should see a doctor about that cough,' my sister said.")
+    fix_again('rv-C12-6a', 'Say that the learner chooses a suitable verb.', q="Report with a suitable reporting verb and a noun phrase: 'Thank you for everything you've done,' Mia said to the team.")
     # Learners' answers (26 October): cards without a question mark also make a correct statement
     fix_again('ip-B11-3b', 'Without a question-mark card the statement order is correct too.',
         answers=[['could you tell me where the station is', 'you could tell me where the station is']])

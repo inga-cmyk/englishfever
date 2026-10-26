@@ -2237,6 +2237,22 @@
 "hints": []
 },
 {
+"id": "rv-C11-6a",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Report with a reporting verb. 'It wasn't me who broke it!' said Leo.",
+"must": [
+[
+"\\b(denied|insisted|claimed|protested)\\b",
+"Use a reporting verb such as *denied* or *insisted.*"
+]
+],
+"model": "Leo denied breaking it.",
+"why": "Compare your sentence with the model answer."
+},
+{
 "id": "rv-C12-3a",
 "skill": "rep_verbs",
 "level": "C1.2",
@@ -2273,6 +2289,22 @@
 ],
 "why": "*recommend* is not followed by person + *to.* Use *recommend* + -ing, *recommend* + *that*, or *advise* + person + *to.*",
 "wrong_why": {}
+},
+{
+"id": "rv-C12-6a",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Report with a reporting verb and a noun phrase: 'Thank you for everything you've done,' Mia said to the team.",
+"must": [
+[
+"\\b(thanked|expressed)\\b",
+"Use *thanked* (or *expressed thanks*)."
+]
+],
+"model": "Mia thanked the team for everything they had done.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "ip-B11-3b",
@@ -2734,6 +2766,41 @@
 ],
 "why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.",
 "wrong_why": {}
+},
+{
+"id": "rv-C12-3a-r2",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report with a reporting verb: 'You really should see a doctor about that cough,' my sister said.",
+"answers": [
+[
+"My sister advised me to see a doctor about that cough.",
+"My sister urged me to see a doctor about that cough.",
+"My sister told me to see a doctor about that cough.",
+"My sister encouraged me to see a doctor about that cough.",
+"My sister recommended that I see a doctor about that cough.",
+"My sister recommended that I should see a doctor about that cough.",
+"My sister suggested that I see a doctor about that cough.",
+"My sister suggested that I should see a doctor about that cough.",
+"My sister suggested seeing a doctor about that cough.",
+"My sister suggested I see a doctor about that cough.",
+"My sister suggested I should see a doctor about that cough.",
+"My sister recommended seeing a doctor about that cough.",
+"My sister recommended I see a doctor about that cough.",
+"My sister recommended I should see a doctor about that cough.",
+"My sister advised seeing a doctor about that cough.",
+"My sister advised that I see a doctor about that cough.",
+"My sister advised that I should see a doctor about that cough.",
+"My sister said I should see a doctor about that cough.",
+"My sister said that I should see a doctor about that cough.",
+"My sister told me I should see a doctor about that cough.",
+"My sister told me that I should see a doctor about that cough."
+]
+],
+"why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
+"hints": []
 },
 {
 "id": "ip-B21-3a-r2",

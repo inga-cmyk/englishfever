@@ -349,7 +349,8 @@
     var s = String(instr || '');
     if (s.indexOf('*') >= 0) return s;                       // already marked by hand
     s = s.replace(/(^|\s)'([^']+)'(?=[\s.,:;?!]|$)/g, '$1*$2*');   // 'any' in quotes
-    if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!the (correct|words?|answers?|verbs?)\b)(.+)$/i, function (m, w, _x, rest) {
+    s = s.replace(/\bthe (verb|word) ([A-Za-z'-]+)(?=\s*[:.?!]|$)/, 'the $1 *$2*');   // with the verb deny, and the word yesterday
+    if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!(?:a|an|the)\s)(.+)$/i, function (m, w, rest) {   // with a suitable reporting verb, using the past continuous: not forms
       var tail = (rest.match(/[:.?!]+$/) || [''])[0];            // the colon or full stop stays plain
       var body = rest.slice(0, rest.length - tail.length), comma = body.search(/,\s/);
       if (comma > 0) { tail = body.slice(comma) + tail; body = body.slice(0, comma); }   // what follows a comma is not part of the form: with who, about the object

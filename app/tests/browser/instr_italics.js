@@ -20,6 +20,12 @@ let ok = true; const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PA
     ["Make the sentence negative", "Make the sentence negative"],
     ["Use the present simple for a timetable", "Use the present simple for a timetable"],
     ["Join with when", "Join with *when*"],
+    ["Report with the verb deny", "Report with the verb *deny*"],
+    ["Use a past verb and the word yesterday.", "Use a past verb and the word *yesterday*."],
+    ["Move the verb one step back", "Move the verb one step back"],
+    ["Rewrite with the correct verb", "Rewrite with the correct verb"],
+    ["Report with a suitable reporting verb", "Report with a suitable reporting verb"],
+    ["Rewrite using the past continuous", "Rewrite using the past continuous"],
   ];
   for (const [a, e] of cases) check('"' + a + '"', (await f(a)) === e, await f(a));
   console.log(ok ? 'ALL PASS' : 'SOME FAILED'); await b.close(); process.exit(ok ? 0 : 1);

@@ -108,7 +108,9 @@ P.match("B1.2","Match each past habit with the person.",[("He used to smoke,","b
 P.mcq("B1.1","Choose the correct option: She ___ the door, looked around and then walked in.","opened",["opens","has opened","opening"])
 P.mcq("B1.1","Choose the correct option: We ___ the concert because the tickets were too expensive.","didn't go to",["didn't going to","don't go to","didn't went to"],b=3)
 P.mcq("B1.1","Choose the correct option: Where ___ you ___ your last holiday?","did / spend",["do / spend","did / spent","are / spending"])
-P.mcq("B1.1","Which sentence tells a story in the correct order?","He woke up, got dressed and left the house.",["He woke up, getting dressed and leaving the house.","He wakes up, got dressed and left.","He woke up, got dressed and leave the house."])
+P.mcq("B1.1","Which sentence is correct?","He woke up, got dressed and left the house.",["He woke up, gets dressed and left the house.","He wakes up, got dressed and left.","He woke up, got dressed and leave the house."],
+      ("In a story about the past, every action is in the past simple: *woke up, got dressed, left*.", "Stāstā par pagātni visas darbības ir Past Simple: *woke up, got dressed, left*."))
+rows[-1] = rows[-1][:9] + ["He woke up, got dressed and left the house."]   # replaces the version whose instruction asked about the order (teacher, 27 October)
 P.mcq("B1.1","Reading an email: which sentence is NOT correct?","Why did you stayed at home yesterday?",["Why did you stay at home yesterday?","Why did she leave early yesterday?","When did you get home yesterday?"],"After *did* the verb is in the base form: *stay*.",b=4)
 P.mcq("B1.2","Choose the correct option: When I was young, I ___ in a small flat above a bakery.","used to live",["use to live","am used to live","was used to live"])
 P.mcq("B1.2","Choose the correct option: We ___ much money when we were students, so we cooked at home.","didn't use to have",["didn't used to have","weren't used to have","don't use to have"],b=3)

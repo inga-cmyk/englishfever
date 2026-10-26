@@ -7185,12 +7185,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C11-6a",
+"id": "rv-C11-6a-r3",
 "skill": "rep_verbs",
 "level": "C1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Report with a reporting verb. 'It wasn't me who broke it!' said Leo.",
+"q": "Report with a suitable reporting verb. 'It wasn't me who broke it!' said Leo.",
 "must": [
 [
 "\\b(denied|insisted|claimed|protested)\\b",
@@ -7233,12 +7233,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r2",
+"id": "rv-C12-3a-r3",
 "skill": "rep_verbs",
 "level": "C1.2",
 "bloom": 3,
 "kind": "text",
-"q": "Report with a reporting verb: 'You really should see a doctor about that cough,' my sister said.",
+"q": "Report with a suitable reporting verb: 'You really should see a doctor about that cough,' my sister said.",
 "answers": [
 [
 "My sister advised me to see a doctor about that cough.",
@@ -7300,12 +7300,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-6a",
+"id": "rv-C12-6a-r3",
 "skill": "rep_verbs",
 "level": "C1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Report with a reporting verb and a noun phrase: 'Thank you for everything you've done,' Mia said to the team.",
+"q": "Report with a suitable reporting verb and a noun phrase: 'Thank you for everything you've done,' Mia said to the team.",
 "must": [
 [
 "\\b(thanked|expressed)\\b",

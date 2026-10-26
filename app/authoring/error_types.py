@@ -49,6 +49,7 @@ ERRORS = {
     "PATTERN": ("-ing or to after a verb", "word patterns"),
     "ED-ING": ("bored or boring", "word patterns"),
     "DEP-PREP": ("the preposition after a word (depend on, listen to)", "word patterns"),
+    "PREP-TP": ("in / on / at for time and place, none before next / last / tomorrow", "word patterns"),
     "TWO-OBJ": ("explain it to me, introduce you to", "word patterns"),
     "COMPARE": ("cheaper / the same as / as ... as", "word patterns"),
 }
@@ -81,6 +82,7 @@ SKILL_ERR = {
     "comparison": ["COMPARE"],
     "relative_clauses": ["REL-WHICH", "REL-ORDER"],
     "dep_prepositions": ["DEP-PREP"],
+    "prep_time_place": ["PREP-TP"],
     "agreement": ["AGREE", "3S"],
     "irregular_plurals": ["IRR-PLURAL"],
 }

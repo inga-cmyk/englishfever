@@ -1736,6 +1736,38 @@
     ],
     "signals": "*child, person*, man, *woman, tooth, foot, mouse, police* (bērns, cilvēks, vīrietis, *sieviete, zobs*, pēda, *pele, policija*)"
    }
+  },
+  {
+   "id": "prep_time_place",
+   "label": "Prepositions of time and place (in, on, at)",
+   "area": "patterns",
+   "levels": [
+    "A2.1",
+    "A2.2"
+   ],
+   "rule": {
+    "form": [
+     "Time: *at* + clock time (*at 7*), *on* + day or date (*on Monday, on 5 May*), *in* + month, year, season or part of the day (*in May, in 2020, in winter, in the morning*). But *at night*.",
+     "No preposition before *tomorrow, yesterday* and *next / last / this / every* + time: *See you next Monday.*",
+     "Place: *at* + a point or a place where you do something (*at the bus stop, at work, at home*), *in* + inside or an area (*in the fridge, in my bag, in Riga*), *on* + a surface (*on the table, on the wall, on the third floor*)."
+    ],
+    "use": [
+     "Ask: is it a clock time, a day or a longer period? Is it a point, inside something, or on a surface?"
+    ],
+    "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall*",
+    "example": "*I start work at 9 on Mondays, but in summer I work from home.*"
+   },
+   "rule_lv": {
+    "form": [
+     "Laiks: *at* + pulksteņa laiks (*at 7*), *on + diena* vai *datums* (*on Monday, on 5 May*), *in* + mēnesis, *gads, gadalaiks* vai *dienas* daļa (*in May, in 2020, in winter, in the morning*). Bet *at night*.",
+     "Bez prievārda pirms *tomorrow, yesterday* un *next / last / this / every* + laiks: *See you next Monday.*",
+     "*Vieta*: *at + punkts* vai *vieta, kur* kaut ko dara (*at the bus stop, at work, at home*), *in* + iekšā vai *teritorija* (*in the fridge, in my bag, in Riga*), *on* + uz *virsmas* (*on the table, on the wall, on the third floor*)."
+    ],
+    "use": [
+     "Pajautā *sev*: vai tas ir pulksteņa laiks, *diena* vai ilgāks laiks? Vai tas ir *punkts*, kaut kā iekšā vai uz *virsmas*?"
+    ],
+    "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall* (septiņos, *pirmdien*, maijā, naktī, darbā, virtuvē, pie *sienas*)"
+   }
   }
  ],
  "bloom": {
@@ -1917,6 +1949,10 @@
    "name": "the preposition after a word (depend on, listen to)",
    "group": "word patterns"
   },
+  "PREP-TP": {
+   "name": "in / on / at for time and place, none before next / last / tomorrow",
+   "group": "word patterns"
+  },
   "TWO-OBJ": {
    "name": "explain it to me, introduce you to",
    "group": "word patterns"
@@ -2024,6 +2060,9 @@
   ],
   "dep_prepositions": [
    "DEP-PREP"
+  ],
+  "prep_time_place": [
+   "PREP-TP"
   ],
   "agreement": [
    "AGREE",

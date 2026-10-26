@@ -3,7 +3,7 @@ import csv, os, re, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "app", "authoring"))
 import italics
 # Latvian words without Latvian letters that the built-in list does not have yet. Kept here, not in italics.py, so the published explanations are untouched.
-italics.LV_ASCII |= set('''apgriez visas divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
+italics.LV_ASCII |= set('''apgriez visas diena datums punkts vieta kur gadalaiks dienas virsmas sienas piektdienas pilsēta divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
 beidzas beidzies cita darba divdabi divdabis esam garums grupa ieradums izteikt jebkuru laba ideja lielu lietas likums maigs mana istaba ne nekas nelielu padomu paliek saraksta
 tipiska padodas pieder latviski angliski nosauktu pateicas tos pa draugi abos viens vienam gaidu autobusu klausos draugs laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics"]

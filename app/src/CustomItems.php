@@ -117,6 +117,7 @@ final class CustomItems
             elseif (strpos($h, 'explanation in latvian') === 0 || $h === 'latvian') $key = 'why_lv';
             elseif (strpos($h, 'explanation') === 0 || $h === 'why') $key = 'why';
             elseif (strpos($h, 'thinking level') === 0) $key = 'bloom';
+            elseif (strpos($h, 'practice only') === 0) $key = 'practice';   // optional: "yes" = never in the placement test (easy first steps, tasks a hint gives away)
             elseif (strpos($h, 'error type') === 0) $key = 'err';   // optional: the kinds of mistake the task trains (docs/ERROR-TYPES.md), never shown to learners
             if ($key && !isset($col[$key])) $col[$key] = $i;
         }
@@ -300,6 +301,7 @@ final class CustomItems
                 $item += ['pairs' => $pairs];
                 break;
         }
+        if (in_array(mb_strtolower($get('practice')), ['yes', 'y', 'jā', '1', 'x'], true)) $item['practice_only'] = true;
         if ($get('err') !== '') $item['err'] = array_values(array_unique(array_map([self::class, 'errCode'], preg_split('/[\s,;]+/u', trim($get('err')), -1, PREG_SPLIT_NO_EMPTY))));
         return $item;
     }

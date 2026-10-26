@@ -205,6 +205,13 @@ validate(dsl.ITEMS, SKILLS, dsl.LEVELS)
 retired = history(dsl.ITEMS, os.path.join(HERE, 'history', 'published_items.json'),
                   record='--record-release' in sys.argv)
 
+# practice only (teacher, 27 October): easy first steps whose answer can be guessed from the cards, and tasks whose hint gives the
+# answer away. Never in the placement test, still in practice. A flag, not content, so it is set after the immutability check.
+PRACTICE_ONLY = {"var-pa-a22-match-01", "var-ca-c11-order-01-r2"}
+for it in dsl.ITEMS:
+    if it["id"] in PRACTICE_ONLY:
+        it["practice_only"] = True
+
 os.makedirs(OUT, exist_ok=True)
 with open(os.path.join(OUT, "items.json"), "w", encoding="utf-8") as f:
     json.dump(dsl.ITEMS, f, ensure_ascii=False, indent=0)

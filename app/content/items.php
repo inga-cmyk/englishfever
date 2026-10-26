@@ -7564,7 +7564,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "ip-B11-3b",
+"id": "ip-B11-3b-r3",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 3,
@@ -7573,7 +7573,8 @@ return json_decode(<<<'EF_JSON_END'
 "sentence": "could you tell me where the station is",
 "answers": [
 [
-"could you tell me where the station is"
+"could you tell me where the station is",
+"you could tell me where the station is"
 ]
 ],
 "why": "Polite phrase + question word + subject + verb.",
@@ -8497,7 +8498,8 @@ return json_decode(<<<'EF_JSON_END'
 "had I known about the delay I would have called you"
 ]
 ],
-"display_answer": "Had I known about the delay, I would have called you."
+"display_answer": "Had I known about the delay, I would have called you.",
+"practice_only": true
 },
 {
 "id": "var-rs-b11-order-01",
@@ -8956,7 +8958,8 @@ return json_decode(<<<'EF_JSON_END'
 "met"
 ]
 ],
-"why_lv": "Šie darbības vārdi ir neregulāri: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Nepievieno *-ed*."
+"why_lv": "Šie darbības vārdi ir neregulāri: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Nepievieno *-ed*.",
+"practice_only": true
 },
 {
 "id": "var-pac-b12-match-01",

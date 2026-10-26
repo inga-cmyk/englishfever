@@ -91,7 +91,7 @@ final class Mistakes
                 }
             }
         }
-        return ['open' => $open, 'parked' => $parked, 'fixed' => $fixed, 'locked' => $locked, 'reopened' => $reopened];
+        return ['open' => $open, 'parked' => $parked, 'solid' => $solid, 'fixed' => $fixed, 'locked' => $locked, 'reopened' => $reopened];
     }
 
     private static function levelIdx(string $level): int
@@ -105,6 +105,19 @@ final class Mistakes
         return $m['skill'] === $r['skill']
             && abs(self::levelIdx($m['level']) - self::levelIdx($r['level'])) <= 1
             && abs((int) $m['bloom'] - (int) $r['bloom']) <= 1;
+    }
+
+    /**
+     * Fixed mistakes due for a check: fixed 2 or more days ago and not yet locked in, the oldest first (spaced review; teacher's
+     * decision 27 October: only 7% of fixed mistakes were ever locked in). @return string[] mistake ids
+     */
+    public static function reviewDue(int $uid, ?array $scan = null): array
+    {
+        $scan = $scan ?? self::scan($uid);
+        $limit = date('Y-m-d', time() - 2 * 86400);
+        $due = array_filter($scan['solid'], fn($v, $id) => $v['day'] <= $limit && Content::item((string) $id), ARRAY_FILTER_USE_BOTH);
+        uasort($due, fn($a, $b) => strcmp($a['day'], $b['day']));
+        return array_map('strval', array_keys($due));
     }
 
     /** Open mistakes in a good teaching order: oldest first, but different topics take turns. @return string[] item ids */

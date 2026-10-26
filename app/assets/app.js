@@ -419,11 +419,12 @@
         (!state.user.guest && dashboardUrl()) ? h('a', { class: 'only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null);
       nodes.push(h('div', { class: 'card focus' }, main, links));
       var cb = d.comeback || { open: 0, fixed: 0 };
-      if (cb.open > 0) {
+      if (cb.open > 0 || cb.review > 0) {   // open mistakes, or mistakes fixed a few days ago that are due for a check
+        var n = Math.min(10, cb.open + (cb.review || 0));
         nodes.push(h('div', { class: 'card pad-s fn-chance' },
           h('div', { class: 'row between', style: 'flex-wrap:nowrap;gap:14px' },
             h('div', null, h('b', { style: 'color:var(--text)' }, 'Second Chance'),
-              h('div', { class: 'small muted' }, plural(cb.open, 'mistake', 'mistakes') + ' to fix · ' + chanceLength(cb.open))),
+              h('div', { class: 'small muted' }, (cb.open ? plural(cb.open, 'mistake', 'mistakes') + ' to fix' : plural(cb.review, 'earlier mistake', 'earlier mistakes') + ' to check again') + ' · ' + chanceLength(n))),
             comebackButton('btn small fn-chance', 'Start'))));
       }
       if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
@@ -1124,7 +1125,7 @@
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
-      (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : ' · nothing left to fix') : null,
+      (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.locked ? ', ' + s.locked + ' checked again' : '', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : ' · nothing left to fix') : null,
       s.bonus ? bonusCard(s) : null,
       (s.open_after && !s.bonus) ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, 'Still to fix: ' + s.open_after), comebackButton('btn small fn-chance', 'Second Chance')) : null,
       h('div', { class: 'grid g3' },
@@ -1441,7 +1442,9 @@
         tbody.replaceChildren.apply(tbody, rows.length ? rows.map(function (s) {
           return h('tr', null,
             h('td', { class: 'name' }, h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' }, UI.avatar(s.avatar, s.nickname, 26), h('a', { href: '#/teacher/student/' + s.id }, s.nickname)), s.provider === 'guest' ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'guest') : null, s.full_name && s.full_name !== s.nickname ? h('div', { class: 'small muted' }, s.full_name) : null, s.provider === 'guest' ? h('div', { class: 'small muted' }, 'first seen ' + UI.fmtAgo(s.joined)) : null),
-            h('td', null, s.level_est ? h('span', { class: 'pill dark' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'muted' }, '–')),
+            h('td', null, s.placement_level ? h('span', { class: 'pill dark', title: 'Placement test' }, lv(s.placement_level)) : null,
+              s.placement_at ? h('span', { class: 'small muted' }, ' ' + new Date(s.placement_at * 1000).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })) : null,
+              s.level_est ? h('div', { class: 'small muted', title: 'Estimate from practice answers' }, 'practice ≈ ' + lv(s.level_est)) : (s.placement_level ? null : h('span', { class: 'muted' }, '–'))),
             h('td', null, UI.fmtAgo(s.last_seen)), h('td', { class: 'r num' }, String(s.week_minutes)), h('td', { class: 'r num' }, String(s.week_answers)),
             h('td', { class: 'r num' }, String(s.total_minutes)), h('td', { class: 'r num' }, String(s.xp)),
             h('td', { class: 'r num' }, s.accuracy === null ? '–' : s.accuracy + '%'), h('td', { class: 'r num' }, String(s.streak)));

@@ -1,5 +1,6 @@
 <?php
 // JSON API. One entry point: api.php?r=<route>
+ob_start();   // anything a server file prints by mistake (a blank line around <?php) is held back, so CSV exports can drop it
 require __DIR__ . '/src/bootstrap.php';
 
 header('Content-Type: application/json; charset=utf-8');
@@ -194,6 +195,7 @@ try {
 
         case 'teacher/reports-export':
             Auth::requireTeacher();
+            while (ob_get_level() > 0) ob_end_clean();   // a stray blank line from a server file (e.g. config.php) must not start the CSV (export of 26 October)
             header('Content-Type: text/csv; charset=utf-8');
             header('Content-Disposition: attachment; filename="reported-tasks-' . date('Y-m-d') . '.csv"');
             echo "\xEF\xBB\xBF" . Reports::exportCsv();
@@ -214,6 +216,7 @@ try {
 
         case 'teacher/items-template':
             Auth::requireTeacher();
+            while (ob_get_level() > 0) ob_end_clean();   // a stray blank line from a server file (e.g. config.php) must not start the CSV (export of 26 October)
             header('Content-Type: text/csv; charset=utf-8');
             header('Content-Disposition: attachment; filename="tasks-template.csv"');
             echo CustomItems::template();
@@ -258,6 +261,7 @@ try {
         case 'teacher/export':
             $t = Auth::requireTeacher();
             $view = in_array($_GET['view'] ?? '', ['mine', 'registered'], true) ? $_GET['view'] : 'all';
+            while (ob_get_level() > 0) ob_end_clean();   // a stray blank line from a server file (e.g. config.php) must not start the CSV (export of 26 October)
             header('Content-Type: text/csv; charset=utf-8');
             header('Content-Disposition: attachment; filename="practice-attempts-' . $view . '-' . date('Y-m-d') . '.csv"');
             echo "\xEF\xBB\xBF" . Stats::exportAttempts($view, (int) $t['id']);
@@ -281,6 +285,7 @@ try {
                 'people' => Research::people(), 'days' => Research::days(), 'answers' => Research::answers(),
                 default => throw new ApiError('Not found.', 404),
             };
+            while (ob_get_level() > 0) ob_end_clean();   // a stray blank line from a server file (e.g. config.php) must not start the CSV (export of 26 October)
             header('Content-Type: text/csv; charset=utf-8');
             header('Content-Disposition: attachment; filename="research-' . $file . '-' . $stamp . '.csv"');
             echo "\xEF\xBB\xBF" . $csv;

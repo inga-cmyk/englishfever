@@ -35,14 +35,19 @@ Izstrādāta tīmekļa lietotne (practice.englishfever.com), kas savienota ar m�
 **Rādītāji:**
 - testa rezultāts kopā (0–24) un katrā kļūdu tipā (0–3);
 - lietotnes dati: izlaboto un apgūto kļūdu skaits, atkārtoto kļūdu skaits;
-- iesaiste: aktīvās dienas, minūtes, atbilžu skaits;
+- iesaiste: aktīvās dienas, minūtes un atbilžu skaits nedēļā;
+- kļūdu dinamika no lietotnes skolotāja skata ("Learning evidence", bez vārdiem): cik pēc kļūdas sekojošo pārbaužu bija nejaušas kļūdas un cik zināšanu robi; cik kļūdu ir izlabotas (pareizi citā teikumā), cik nostiprinātas (pareizi citā dienā un citā uzdevumā) un cik atvērtas no jauna; tēmas ar visvairāk robiem;
 - apguvēju vērtējums (īsa anketa, Likerta skala 1–5).
+
+Piemērs no izmēģinājuma (45 dienas, 11 apguvēji): 114 pārbaudes pēc kļūdas, no tām 75% nejaušas kļūdas un 25% robi; 219 izlabotas kļūdas, bet tikai 7% nostiprinātas un 33% atvērtas no jauna. Tāpēc lietotnei pievienota atkārtošana pēc dažām dienām, un pētījumā tiks salīdzināts nostiprināto kļūdu īpatsvars pirms un pēc šīs izmaiņas.
 
 **Datu analīze:** pirmstesta un pēctesta salīdzinājums ar pāru t-testu (vai Vilkoksona testu, ja dati nav normāli sadalīti) un efekta lielums (Koena d); kļūdu tipu salīdzinājums; aprakstošā statistika lietotnes datiem.
 
 ## 7. Pētījuma instruments
 
 **Zināšanu tests ar divām paralēlām versijām (A un B)** – pielikumā. Tests mēra 8 tipiskus kļūdu tipus: *he/she + -s*; *do/does* jautājumos un noliegumā; *I'm agree*; prievārds pēc vārda; *for/since*; pabeigts laiks (Past Simple); jautājums teikuma iekšienē; *will* pēc *when / as soon as*. Katram tipam ir trīs uzdevumi – izvēle, ierakstīšana un kļūdas labošana – kopā 24 punkti. Abās versijās ir tas pats tips un uzdevuma veids, bet citi teikumi; testa teikumi lietotnē neparādās. Pirms izmantošanas tests tiks izmēģināts ar 3–5 apguvējiem.
+
+**Ierobežojumi:** neliela izlase; nav kontrolgrupas (ja to nevar izveidot); nejaušas kļūdas un roba nošķiršana ir lietotnes pieņēmums (pareiza atbilde nākamajā līdzīgajā uzdevumā), ko pēctests pārbauda tikai daļēji; XP un laiks rāda aktivitāti, ne mācīšanos; lietotnes līmeņa novērtējums ir aptuvens.
 
 ## Īstenojamība
 

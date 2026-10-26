@@ -147,7 +147,7 @@ final class Stats
             'bloom' => self::bloomRows($uid),
             'placement' => $placement,
             'pulse' => self::pulse(),
-            'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed']]; })(),
+            'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed'], 'review' => min(2, count(Mistakes::reviewDue($uid, $m)))]; })(),
         ];
     }
 
@@ -225,6 +225,11 @@ final class Stats
         foreach (Db::all('SELECT user_id, COUNT(1) AS n, SUM(correct) AS c FROM attempts GROUP BY user_id') as $r) $acc[$r['user_id']] = $r;
         $th = [];
         foreach (Db::all('SELECT user_id, SUM(theta * n) AS tn, SUM(n) AS n FROM skill_state GROUP BY user_id') as $r) $th[$r['user_id']] = $r;
+        $pl = [];   // the latest placement result of each learner, with its date
+        foreach (Db::all("SELECT user_id, state, ended_at FROM psessions WHERE mode = 'placement' AND ended_at IS NOT NULL ORDER BY id") as $r) {
+            $lv = json_decode((string) $r['state'], true)['report']['overall_level'] ?? null;
+            if ($lv) $pl[$r['user_id']] = ['level' => $lv, 'at' => (int) $r['ended_at']];
+        }
         $out = [];
         foreach ($users as $u) {
             $id = $u['id'];
@@ -239,6 +244,7 @@ final class Stats
                 'accuracy' => !empty($acc[$id]['n']) ? round(100 * $acc[$id]['c'] / $acc[$id]['n']) : null,
                 'streak' => self::streak((int) $id)['current'],
                 'level_est' => $level,
+                'placement_level' => $pl[$id]['level'] ?? null, 'placement_at' => $pl[$id]['at'] ?? null,
                 'mine' => self::mineState($map, $u),
             ];
         }

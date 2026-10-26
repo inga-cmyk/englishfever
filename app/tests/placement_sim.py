@@ -32,9 +32,10 @@ def play(c, ability, session, first):
         if r["done"]: return r["summary"], seq
         item = r["next"]
 
+AREA = {sk['id']: sk['area'] for sk in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'content', 'meta.json')))['skills']}
 abilities = [1.4, 2.0, 2.6, 3.2, 3.8, 4.4, 5.0, 5.6, 6.4, 7.2]
 for size in [int(x) for x in os.environ.get('SIZES', '12,24,40').split(',')]:
-    errs = []; exact = near = full = 0; n = 0; a2 = a2_high = 0
+    errs = []; exact = near = full = 0; n = 0; a2 = a2_high = 0; shares = []
     for a in abilities:
         for _ in range(reps):
             for f in ("ef.sqlite", "ef.sqlite-wal", "ef.sqlite-shm"):   # a fresh database each time: guests and sessions are rate-limited per connection
@@ -47,8 +48,11 @@ for size in [int(x) for x in os.environ.get('SIZES', '12,24,40').split(',')]:
             errs.append(s["overall_theta"] - a); n += 1
             d = abs(ORDER.index(s["overall_level"]) - ORDER.index(true_level(a)))
             exact += d == 0; near += d <= 1; full += s['overall_level'][:2] == true_level(a)[:2]
+            per = {}
+            for sk, _, _ in seq: per[AREA.get(sk, "?")] = per.get(AREA.get(sk, "?"), 0) + 1
+            shares.append(max(per.values()) / len(seq))
             if s["overall_level"].startswith("A2"):   # found A2: did the learner meet B2 or harder questions on the way? (Cowork test, 26 October)
                 a2 += 1; a2_high += any(lv[:2] in ("B2", "C1") for _, lv, _ in seq)
     print(f"{size:>2} questions: bias {st.mean(errs):+.2f}  mean abs error {st.mean(abs(e) for e in errs):.2f}  rmse {math.sqrt(st.mean(e*e for e in errs)):.2f}  "
           f"exact half-level {100*exact/n:.0f}%  full level {100*full/n:.0f}%  within one half-level {100*near/n:.0f}%  (n={n})  "
-          f"found A2 but met B2+: {a2_high} of {a2}")
+          f"found A2 but met B2+: {a2_high} of {a2}  largest area share: mean {100*st.mean(shares):.0f}% max {100*max(shares):.0f}%")

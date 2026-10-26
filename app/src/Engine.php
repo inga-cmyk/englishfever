@@ -32,7 +32,9 @@ final class Engine
         if ($mode === 'comeback') {
             // "Comeback": the learner's open mistakes, each met again as a similar task
             $queue = Mistakes::queue($uid, 10);
-            if (!$queue) throw new ApiError('No mistakes are waiting right now. Nice work!', 404);
+            $review = array_slice(Mistakes::reviewDue($uid), 0, 2);   // 1-2 mistakes fixed a few days ago, checked again in a new sentence
+            if (!$queue && !$review) throw new ApiError('No mistakes are waiting right now. Nice work!', 404);
+            $queue = array_merge(array_slice($queue, 0, 10 - count($review)), $review);
             $comeback = true;
             $mode = 'practice';
             $skills = array_values(array_unique(array_map(fn($id) => Content::item($id)['skill'], $queue)));
@@ -72,7 +74,7 @@ final class Engine
 
         $state = ['current' => null, 'seed' => random_int(1, 1 << 30), 'served' => [], 'theta' => [], 'g' => 2.0, 'last' => []];
         if ($smart) $state['smart'] = true;
-        if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; }
+        if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['review'] = array_fill_keys($review, true); }
         if (!empty($allowed)) $state['levels'] = $allowed;
         if ($mode === 'placement') {
             // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
@@ -177,6 +179,7 @@ final class Engine
             $lockedNow = $after['locked'] > $before['locked'];   // a mistake the learner has now got right again, on another day: kept quiet, only the sound tells
         }
         if ($fixedNow) $st['fixed'] = ($st['fixed'] ?? 0) + 1;
+        if ($lockedNow) $st['locked'] = ($st['locked'] ?? 0) + 1;
         $gapNow = self::probeAnswered($st, $itemId, $ok, $ses);
         if (!empty($st['comeback'])) $gapNow = self::comebackGap($st, $ses, $itemId, $ok) || $gapNow;
 
@@ -391,7 +394,7 @@ final class Engine
         $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
         foreach (Content::items() as $it) {
             if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
-            if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4)) continue;
+            if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4 || !empty($it['practice_only']))) continue;   // practice only: easy first steps and tasks a hint gives away
             // open writing (the least support) only after a right typed answer on that topic in this session (teacher's scaffolding rule)
             if (!$placement && $it['kind'] === 'write' && empty($rightHere[$it['skill']])) continue;
             if (!empty($st['levels']) && !in_array($it['level'], $st['levels'], true)) continue;   // the levels the learner chose
@@ -497,12 +500,17 @@ final class Engine
             }
         }
 
+        $areaOf = fn($sid) => Content::skill($sid)['area'] ?? '';
+        $areaCount = [];
+        foreach ($st['last'] as $h) $areaCount[$areaOf($h['skill'])] = ($areaCount[$areaOf($h['skill'])] ?? 0) + 1;
+        $areaCap = max(2, (int) ceil(0.2 * (int) $ses['target_len']));
         $best = null;
         $bestCost = PHP_FLOAT_MAX;
         foreach ($pool as $it) {
             $cost = abs($it['d'] - $target) + 0.2 * $bloomCount[$it['bloom']] + random_int(0, 25) / 100;
             if ($soft) {
                 $cost += ($stairs ? 0.6 : 0.3) * $skillCount[$it['skill']];
+                if (($areaCount[$areaOf($it['skill'])] ?? 0) >= $areaCap) $cost += $stairs ? 0.3 : 1.2;   // in a block, different topics come first   // one area (e.g. conditionals) not much more than a fifth of the test (teacher's feedback, 27 October)
                 if ($stairs) { if (!empty($missedHere[$it['skill']])) $cost -= 1.2; }   // a topic missed a moment ago is checked again with a new sentence
                 elseif ($skillCount[$it['skill']] > 0 && !empty($lastWrong[$it['skill']])) $cost -= 0.5;
                 $cost -= 0.1 * $bloomCount[$it['bloom']] + random_int(0, 15) / 100;   // keep it close to the target: fewer random jumps
@@ -551,7 +559,7 @@ final class Engine
     {
         $st = $ses['state'];
         if (empty($st['comeback']) || isset($st['bonus_from'])) return 0;
-        $n = count(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q])));
+        $n = count(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q]) && empty($st['review'][$q])));
         return $n >= 4 ? 2 : ($n >= 1 ? 1 : 0);
     }
 
@@ -566,7 +574,7 @@ final class Engine
         if ($ses['ended_at'] === null || $k < 1 || (int) $ses['ended_at'] < time() - 3600) throw new ApiError('No bonus questions here.', 409);
         $st = &$ses['state'];
         $skip = array_flip($st['served']) + array_fill_keys(array_keys(Mistakes::scan($uid)['open']), true);
-        $mistakes = array_values(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q])));
+        $mistakes = array_values(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q]) && empty($st['review'][$q])));
         $missed = array_values(array_filter($mistakes, fn($q) => !empty($st['refail'][$q])));
         $order = array_merge($missed, array_values(array_diff($mistakes, $missed)));
         $add = [];
@@ -724,6 +732,7 @@ final class Engine
             $out['open_after'] = count($m['open']);
             $out['fixed_total'] = $m['fixed'];
             $out['bonus'] = self::bonusCount($ses);
+            $out['locked'] = (int) ($ses['state']['locked'] ?? 0);   // fixed earlier and still right a few days later
             $out['bonus_done'] = isset($ses['state']['bonus_from']);
             $q = Mistakes::queue((int) $ses['user_id'], 1);   // what comes next time: the topic of the oldest open mistake
             $nextSkill = $q ? Content::skill(Content::item($q[0])['skill']) : null;

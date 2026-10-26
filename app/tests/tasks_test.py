@@ -180,4 +180,11 @@ m = C().api("meta"); sk = [s for s in m["skills"] if s["id"] == "modal_verbs"]
 check("after approval the topic and its area appear, with the grammar card", len(sk) == 1 and sk[0]["rule"]["form"] and sk[0]["rule_lv"]["form"] and "Modal verbs" in [a["label"] for a in m["areas"]], sk[:1])
 sm = student.api("session/start", {"mode": "practice", "skills": ["modal_verbs"], "level": "A2.1", "length": 10})
 check("a learner can practise the new topic", sm["_status"] == 200 and sm["item"]["skill"] == "modal_verbs", sm)
+# practice only: the column is read and kept with the task (never in the placement test)
+import sqlite3
+cmp = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs", "task-drafts", "comparison-1.csv"), encoding="utf-8-sig").read()
+teacher.api("teacher/items-import", {"csv": cmp, "confirm": True})
+db = sqlite3.connect(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "var", "ef.sqlite"))
+po = [json.loads(d) for (d,) in db.execute("select data from custom_items where data like '%practice_only%'")]
+check("a CSV row marked practice only keeps the mark", any(x.get("practice_only") is True and x["q"].startswith("Match each adjective with its comparative") for x in po), [x.get("q") for x in po])
 print("\nALL PASS" if ok else "\nSOME FAILED"); raise SystemExit(0 if ok else 1)

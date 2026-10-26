@@ -387,6 +387,9 @@ def revise(original):
     fix_again('rs-B12-4a', 'The explanation must not make the answer look arguable.',
         why='Only this sentence keeps *will*. With backshift it is: *She said she would call me the next day.*',
         why_lv='Tikai šajā teikumā paliek *will*. Ar laiku saskaņošanu tas ir: *She said she would call me the next day.*')
+    # Learners' answers (26 October): cards without a question mark also make a correct statement
+    fix_again('ip-B11-3b', 'Without a question-mark card the statement order is correct too.',
+        answers=[['could you tell me where the station is', 'you could tell me where the station is']])
     # Every typed-sentence task also accepts the automatic variants (auto_answers.py). A published task gets the next revision id.
     import json, os, re
     from auto_answers import extend

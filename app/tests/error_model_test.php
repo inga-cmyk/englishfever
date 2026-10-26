@@ -121,5 +121,42 @@ foreach (array_slice(array_values(array_filter(Content::items(), fn($i) => $i['k
 }
 check($tried > 20 && $higher / $tried <= 0.1, "the similar task after a mistake is rarely at a higher level: $higher of $tried");
 
+// 6. practice only: never in the placement test
+$po = array_column(array_filter(Content::items(), fn($i) => !empty($i['practice_only'])), 'id');
+check(count($po) >= 2, 'some built-in tasks are practice only: ' . implode(', ', $po));
+$uid4 = (int) Db::insert('users', ['provider' => 'guest', 'nickname' => 'Placement PO', 'nickname_key' => 'placement-po', 'created_at' => time()]);
+$hit = 0;
+for ($round = 0; $round < 15; $round++) {
+    $r = Engine::start($uid4, 'placement', [], null, 24);
+    $sid = (int) $r['session']['id']; $cur = $r['item'];
+    while ($cur) {
+        if (in_array($cur['id'], $po, true)) $hit++;
+        $it = Content::item($cur['id']);
+        $res = Engine::answer($uid4, $sid, $cur['id'], $round % 2 ? $wrong($it) : 'zzz', 1000);
+        if ($res['done']) break;
+        $cur = $res['next'];
+    }
+}
+check($hit === 0, "practice-only tasks never appear in a placement test ($hit)");
+
+// 7. spaced review: a mistake fixed 2 or more days ago comes back once in Second Chance, in a new sentence; right = locked in
+$uid5 = (int) Db::insert('users', ['provider' => 'guest', 'nickname' => 'Review', 'nickname_key' => 'review', 'created_at' => time()]);
+$at5 = function (string $item, bool $ok, int $t) use ($uid5) {
+    $i = Content::item($item);
+    Db::insert('attempts', ['user_id' => $uid5, 'psession_id' => 0, 'item_id' => $item, 'skill' => $i['skill'], 'level' => $i['level'], 'bloom' => $i['bloom'],
+        'correct' => $ok ? 1 : 0, 'answer' => '', 'time_ms' => 1000, 'xp' => 0, 'created_at' => $t]);
+};
+$at5('ps-A21-1a', false, time() - 5 * 86400);
+$tw = Mistakes::twin($uid5, 'ps-A21-1a', []);
+$at5($tw['id'], true, time() - 5 * 86400 + 60);   // fixed by a different sentence five days ago
+check(Mistakes::reviewDue($uid5) === ['ps-A21-1a'], 'a mistake fixed five days ago is due for a check');
+$r = Engine::start($uid5, 'comeback', [], null, 0);
+check($r['session']['comeback'] && $r['session']['length'] === 1, 'Second Chance starts with only the check (no open mistakes)');
+$it5 = Content::item($r['item']['id']);
+check($it5['id'] !== 'ps-A21-1a' && $it5['id'] !== $tw['id'] && $it5['skill'] === 'present_simple', 'the check is a new sentence on the same topic');
+$res = Engine::answer($uid5, (int) $r['session']['id'], $it5['id'], match ($it5['kind']) { 'mcq' => $it5['correct'], 'gap' => array_map(fn($x) => $x[0], $it5['answers']), 'order' => explode(' ', $it5['sentence']), 'match' => array_column($it5['pairs'], 1), 'text' => $it5['answers'][0][0], default => $it5['model'] }, 1000);
+check($res['result']['locked'] && $res['summary']['locked'] === 1 && $res['summary']['bonus'] === 0, 'right again a few days later: locked in, counted, no bonus for a check');
+check(Mistakes::reviewDue($uid5) === [], 'nothing left to check');
+
 echo $bad ? "SOME FAILED ($bad of $n)\n" : "OK: $n error-type checks\n";
 exit($bad ? 1 : 0);

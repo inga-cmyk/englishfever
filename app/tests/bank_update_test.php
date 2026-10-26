@@ -23,7 +23,7 @@ $published = json_decode(file_get_contents(__DIR__ . '/../authoring/history/publ
 foreach ($published as $original) {
     $found = Content::item($original['id']);
     check($found !== null, 'Published question disappeared: ' . $original['id']);
-    unset($found['d'], $found['scaffold'], $found['err']);   // worked out when the bank loads, not stored
+    unset($found['d'], $found['scaffold'], $found['err'], $found['practice_only']);   // worked out when the bank loads, or a flag (not content)
     check($found === $original, 'Published question was rewritten: ' . $original['id']);
 }
 $retired = require __DIR__ . '/../content/retired.php';
@@ -38,7 +38,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 138, 'Unexpected correction count');
+check(count($retired) === 139, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

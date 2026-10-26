@@ -2071,6 +2071,22 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "ip-B11-3b",
+"skill": "ind_polite",
+"level": "B1.1",
+"bloom": 3,
+"kind": "order",
+"q": "Put the words in order.",
+"sentence": "could you tell me where the station is",
+"answers": [
+[
+"could you tell me where the station is"
+]
+],
+"why": "Polite phrase + question word + subject + verb.",
+"why_lv": "Pieklājīga frāze + jautājamais vārds + teik. priekšmets + darbības vārds."
+},
+{
 "id": "ip-B12-3a",
 "skill": "ind_polite",
 "level": "B1.2",

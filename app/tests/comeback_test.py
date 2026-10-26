@@ -103,7 +103,7 @@ check("Comeback is one task per mistake (up to ten)", len(got) == 6, len(got))
 check("every task in Comeback is a different task", len(set(ids)) == len(ids))
 fixed = sum(1 for g in got if g[1].get("fixed"))
 check("every correct answer in Comeback fixes one mistake and says so", fixed == 6 and done["summary"]["fixed"] == 6 and done["summary"]["comeback"] is True, done["summary"])
-check("nothing is left to fix afterwards, and the total is kept", dash(c) == {"open": 0, "fixed": 6}, dash(c))
+check("nothing is left to fix afterwards, and the total is kept", {k: dash(c)[k] for k in ("open", "fixed")} == {"open": 0, "fixed": 6}, dash(c))
 check("Comeback again: nothing to fix", c.api("session/start", {"mode": "comeback"})["_status"] == 404)
 
 # ---- a wrong answer in Comeback keeps the mistake

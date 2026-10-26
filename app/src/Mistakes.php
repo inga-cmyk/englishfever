@@ -1,9 +1,11 @@
 <?php
 // "Comeback": a learner's open mistakes, worked out from their own answers (no extra table, so past results are never touched).
 //
-// A mistake is a task answered wrongly. It is fixed when the learner later answers the same task correctly, or a similar
-// task (same topic, level within one step, thinking level within one step) correctly. A task answered wrongly again after
-// it was fixed becomes a mistake again.
+// A mistake is a task answered wrongly. It is fixed when the learner later answers a similar task (same topic, level within
+// one step, thinking level within one step) correctly: a different sentence. The same task right again counts only on a later
+// day (the same day it is memory, not yet the rule). A task answered wrongly again after it was fixed becomes a mistake again.
+// Placement mistakes above the level the test found are PARKED: they are not offered for Second Chance until the learner
+// practises that level (they mark the edge of the level, not a gap to fix first).
 // A fixed mistake is LOCKED IN when the learner answers another, different task of the same kind correctly on a later day.
 // A wrong answer on the same kind of task after that opens it again ("reopened").
 
@@ -12,10 +14,13 @@ final class Mistakes
     public const DAYS = 45;       // older mistakes are let go
     private const SCAN_LIMIT = 3000;
 
-    /** @return array{open: array<string,array>, fixed: int, locked: int, reopened: int} open mistakes in the order they were made; how many were fixed, locked in, or opened again */
-    public static function scan(int $uid): array
+    /**
+     * @param array<int,string> $plLevels level found by a placement session that has no saved report yet (session id => level)
+     * @return array{open: array<string,array>, parked: array<string,array>, fixed: int, locked: int, reopened: int} open mistakes in the order they were made; parked ones; how many were fixed, locked in, or opened again
+     */
+    public static function scan(int $uid, array $plLevels = []): array
     {
-        $rows = Db::all('SELECT item_id, skill, level, bloom, correct, created_at, for_item FROM attempts WHERE user_id = ? AND created_at > ? ORDER BY id ASC LIMIT ' . self::SCAN_LIMIT, [$uid, time() - self::DAYS * 86400]);
+        $rows = Db::all('SELECT item_id, skill, level, bloom, correct, created_at, for_item, psession_id FROM attempts WHERE user_id = ? AND created_at > ? ORDER BY id ASC LIMIT ' . self::SCAN_LIMIT, [$uid, time() - self::DAYS * 86400]);
         $open = [];
         $solid = [];      // fixed, not yet locked in: id => kind of task, the day it was fixed, the tasks that fixed it
         $fixed = $locked = $reopened = 0;
@@ -23,11 +28,16 @@ final class Mistakes
             $id = $r['item_id'];
             $day = date('Y-m-d', (int) $r['created_at']);
             if (!(int) $r['correct']) {
-                if (!isset($open[$id])) $open[$id] = ['skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'tries' => 0];
+                if (!isset($open[$id])) $open[$id] = ['skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'tries' => 0, 'day' => $day, 'ses' => (int) $r['psession_id']];
                 $open[$id]['tries']++;
+                $open[$id]['day'] = $day;
                 foreach ($solid as $sid => $sv) {
                     if (self::similar($sv, $r)) { unset($solid[$sid]); $reopened++; }
                 }
+                continue;
+            }
+            if (isset($open[$id]) && $open[$id]['day'] === $day) {   // the same sentence right again on the same day: memory, not yet fixed
+                $open[$id]['retried'] = true;
                 continue;
             }
             if (isset($open[$id])) {
@@ -62,7 +72,26 @@ final class Mistakes
         }
         // tasks the teacher has paused (reported as flawed) are not the learner's mistakes
         foreach (array_keys(Reports::pausedIds()) as $pid) unset($open[$pid]);
-        return ['open' => $open, 'fixed' => $fixed, 'locked' => $locked, 'reopened' => $reopened];
+        $parked = [];
+        if ($open) {
+            $pl = $plLevels;   // placement sessions and the level each found
+            foreach (Db::all("SELECT id, state FROM psessions WHERE user_id = ? AND mode = 'placement'", [$uid]) as $p) {
+                if (isset($pl[(int) $p['id']])) continue;
+                $lv = json_decode((string) $p['state'], true)['report']['overall_level'] ?? null;
+                if ($lv) $pl[(int) $p['id']] = $lv;
+            }
+            if ($pl) {
+                $fi = array_flip(Content::FULL_LEVELS);
+                $practised = [];   // full levels the learner has practised outside a placement test
+                foreach (Db::all("SELECT DISTINCT a.level FROM attempts a JOIN psessions s ON s.id = a.psession_id WHERE a.user_id = ? AND s.mode <> 'placement'", [$uid]) as $r) $practised[substr($r['level'], 0, 2)] = true;
+                foreach ($open as $id => $m) {
+                    if (!isset($pl[$m['ses']])) continue;
+                    $f = substr($m['level'], 0, 2);
+                    if (($fi[$f] ?? 0) > ($fi[substr($pl[$m['ses']], 0, 2)] ?? 99) && empty($practised[$f])) { $parked[$id] = $m; unset($open[$id]); }
+                }
+            }
+        }
+        return ['open' => $open, 'parked' => $parked, 'fixed' => $fixed, 'locked' => $locked, 'reopened' => $reopened];
     }
 
     private static function levelIdx(string $level): int
@@ -119,12 +148,21 @@ final class Mistakes
             $cost = (isset($seen[$it['id']]) ? 0.8 * min(3, $seen[$it['id']]) : 0)
                 + ($angle ? ($it['kind'] === $m['kind'] ? 0.3 : 0) : ($it['kind'] === $m['kind'] ? 0 : 0.3)) + abs($it['bloom'] - $m['bloom']) * 0.2 + random_int(0, 30) / 100;
             if ($code !== null && !in_array($code, $it['err'] ?? [], true)) $cost += 0.6;
+            // the check after a mistake tests the same rule, not a harder or longer sentence with new words (Cowork test, 26 October)
+            if (self::levelIdx($it['level']) > self::levelIdx($m['level'])) $cost += 0.8;
+            if (mb_strlen(self::text($it)) > 1.3 * mb_strlen(self::text($m)) + 10) $cost += 0.5;
             $sc = Content::scaffold($it);
             if ($maxScaffold !== null && $sc > $maxScaffold) $cost += 1.0 * ($sc - $maxScaffold);
             if ($minScaffold !== null && $sc < $minScaffold) $cost += 1.0 * ($minScaffold - $sc);
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }
         return $best;
+    }
+
+    /** The words a learner has to read in a task (instruction and sentence), to compare how long two tasks are. */
+    private static function text(array $it): string
+    {
+        return $it['q'] . ' ' . ($it['correct'] ?? '') . ' ' . ($it['sentence'] ?? '');
     }
 
     /** What the teacher can see of how the "slip or gap" probes and the mistake life-cycle work, in numbers only (no names). */

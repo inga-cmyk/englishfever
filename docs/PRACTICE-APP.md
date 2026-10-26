@@ -24,7 +24,7 @@ A small web app for adult learners to practise English grammar: tenses (active a
 - See guests and registered students in one list (guests are marked). A student's password is managed on englishfever.com, not in the app.
 - Export all answers as CSV.
 
-**Content now:** 24 topics, 442 tasks, all six thinking levels at every level of every topic. Counts per level: A2.1 29, A2.2 70, B1.1 115, B1.2 120, B2.1 36, B2.2 30, C1.1 24, C1.2 18. 334 tasks (up to B1.2) have a Latvian explanation.
+**Content now:** 46 topics, 490 built-in tasks (plus the drafts you import on the Tasks tab, about 2,100 more). Built-in counts per level: A2.1 37, A2.2 84, B1.1 126, B1.2 131, B2.1 37, B2.2 31, C1.1 26, C1.2 18. 378 built-in tasks (up to B1.2) have a Latvian explanation.
 
 | Area | Topics (levels) |
 |---|---|

@@ -233,5 +233,19 @@ $check(Grader::norm("Won't") === 'will not', 'norm 3');
 $check(Grader::norm("Can't") === 'cannot', 'norm 4');
 $check(Grader::norm("After I had finished work, I went home.") === 'after i had finished work i went home', 'norm 5');
 
+// typical mistakes in a typed answer: named first, never when an accepted answer has the same pattern
+$typ = fn($g, $a) => (Grader::typical($g, $a) ?? [null, null, null])[2];
+$check($typ('My boss said I must to finish by Friday.', ['My boss said I must finish by Friday.']) === 'MODAL', 'typical: must to');
+$check($typ('She can to swim.', ['She can swim.']) === 'MODAL', 'typical: can to');
+$check($typ('I have lived here since five years.', ['I have lived here for five years.']) === 'DURATION', 'typical: since five years');
+$check($typ('I will call you as soon as I will arrive.', ['I will call you as soon as I arrive.']) === 'TIME-CLAUSE', 'typical: will after as soon as');
+$check($typ('What you do?', ['What do you do?']) === 'DO', 'typical: What you do');
+$check($typ('Where your sister works?', ['Where does your sister work?']) === 'DO', 'typical: Where your sister works');
+$check($typ('I am agree with you.', ['I agree with you.']) === 'BE-VERB', 'typical: I am agree');
+$check($typ("I don't know if he will come.", ["I don't know if he'll come.", "I don't know if he will come."]) === null, 'typical: if + will in an accepted answer is not flagged');
+$check($typ('She has worked here since 2019.', ['She has worked here since 2019.']) === null, 'typical: since + a year is fine');
+$ans = Grader::grade(['id' => 't', 'kind' => 'text', 'q' => 'Report this', 'answers' => [['My boss said I had to finish by Friday.', 'My boss said I must finish by Friday.']], 'hints' => []], 'My boss said I must to finish by Friday.');
+$check(!$ans['correct'] && str_contains((string) $ans['specific'], 'without *to*') && empty($ans['near']), 'typical: the note comes first, not "change must to had"');
+
 echo $fail ? "\n$fail failures in $n items\n" : "OK: $n items graded consistently\n";
 exit($fail ? 1 : 0);

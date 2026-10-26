@@ -112,11 +112,29 @@ check("five new mistakes", dash(c)["open"] == 5, dash(c))
 done, got = run(c, [], "A2.1", 5, wrong, mode="comeback")
 check("answering wrong in Comeback fixes nothing and keeps the mistakes", done["summary"]["fixed"] == 0 and dash(c)["open"] >= 5, (done["summary"], dash(c)))
 
+# ---- placement: mistakes above the level found are parked, not offered for Second Chance, until that level is practised
+p2 = login(UID + 1, "Parked Tester")
+st = p2.api("session/start", {"mode": "placement", "length": 12}); sid = st["session"]["id"]; item = st["item"]
+while item:
+    it = ITEMS[item["id"]]
+    ans = correct(it) if it["level"].startswith("A2") else wrong(it)   # right at A2, wrong above it
+    r = p2.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": ans, "time_ms": 1000})
+    if r["done"]: break
+    item = r["next"]
+summ = r["summary"]
+check("placement: right at A2, wrong above it: level A2", summ["overall_level"].startswith("A2"), summ["overall_level"])
+check("placement: the misses above A2 are parked, nothing is offered for Second Chance", summ["parked"] >= 3 and summ["open_after"] == 0 and dash(p2)["open"] == 0, (summ["parked"], summ["open_after"], dash(p2)))
+check("Second Chance has nothing to offer yet", p2.api("session/start", {"mode": "comeback"})["_status"] == 404)
+b1 = p2.api("session/start", {"mode": "practice", "levels": ["B1"], "skills": [], "length": 5})
+bit = ITEMS[b1["item"]["id"]]
+p2.api("session/answer", {"session_id": b1["session"]["id"], "item_id": bit["id"], "answer": correct(bit), "time_ms": 1000})
+p2.api("session/quit", {"session_id": b1["session"]["id"]})
+check("after practising B1 the parked B1 mistakes come back to Second Chance", dash(p2)["open"] >= 1, (bit["level"], dash(p2)))
 # ---- the history is never rewritten: every attempt is still there
 db = sqlite3.connect(DB)
 uid = db.execute("select id from users where provider='wp' and external_id=?", (str(UID),)).fetchone()[0]
 n_att = db.execute("select count(*) from attempts where user_id=?", (uid,)).fetchone()[0]
-check("all answers are stored as they were (6 + 6 + 5 + 5, and 4 extra tasks that missed Second Chance tasks brought)", n_att == 26, n_att)
+check("all answers are stored as they were (6 + 6 + 5 + 5; Second Chance keeps its length)", n_att == 22, n_att)
 
 # ---- practising a topic brings back a missed task (never right after the mistake) and fresh tasks first
 c2 = login(9900 + int(time.time()) % 90, "Variety Tester")

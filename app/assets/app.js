@@ -423,7 +423,7 @@
         nodes.push(h('div', { class: 'card pad-s fn-chance' },
           h('div', { class: 'row between', style: 'flex-wrap:nowrap;gap:14px' },
             h('div', null, h('b', { style: 'color:var(--text)' }, 'Second Chance'),
-              h('div', { class: 'small muted' }, plural(cb.open, 'mistake', 'mistakes') + ' to fix.')),
+              h('div', { class: 'small muted' }, plural(cb.open, 'mistake', 'mistakes') + ' to fix · ' + chanceLength(cb.open))),
             comebackButton('btn small fn-chance', 'Start'))));
       }
       if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
@@ -475,6 +475,8 @@
     } }, icon('refresh'), label || 'Start');
     return b;
   }
+  /** Second Chance takes up to 10 mistakes at a time, about 40 seconds each: the learner sees the finish line before starting. */
+  function chanceLength(open) { var q = Math.min(10, open); return plural(q, 'question', 'questions') + ' · about ' + Math.max(1, Math.round(q * 0.7)) + ' min'; }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
 
   function stat(ic, v, k, cls) {
@@ -1050,7 +1052,7 @@
     if (state.reported[it.id]) reportedDone();
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 
-    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.comeback ? 'Second Chance' : 'Practice');
+    var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.bonus ? 'Bonus · double XP' : (ses.comeback ? 'Second Chance' : 'Practice'));
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' + (ses.comeback ? ' mode-chance' : '') },
@@ -1122,7 +1124,9 @@
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
-      s.open_after ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, 'Still to fix: ' + s.open_after), comebackButton('btn small fn-chance', 'Second Chance')) : (s.comeback ? h('p', { class: 'small muted' }, 'All clear!') : null),
+      (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : ' · nothing left to fix') : null,
+      s.bonus ? bonusCard(s) : null,
+      (s.open_after && !s.bonus) ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, 'Still to fix: ' + s.open_after), comebackButton('btn small fn-chance', 'Second Chance')) : null,
       h('div', { class: 'grid g3' },
         h('div', null, h('div', { class: 'big' }, s.correct + '/' + s.n), h('div', { class: 'muted small' }, 'correct')),
         h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),
@@ -1144,6 +1148,23 @@
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
   }
 
+  /** After Second Chance: 1 or 2 optional bonus questions for double XP (teacher's rule). Skipping is fine and says so. */
+  function bonusCard(s) {
+    var card = h('div', { class: 'card pad-s fn-chance', style: 'margin:12px 0' });
+    var go = h('button', { class: 'btn small fn-chance', type: 'button' }, 'Try it');
+    var no = h('button', { class: 'btn ghost small', type: 'button' }, 'Enough for today');
+    go.addEventListener('click', function () {
+      go.disabled = no.disabled = true; go.textContent = 'Starting…';
+      api('session/bonus', { session_id: s.session_id }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+        .catch(function (e) { go.disabled = no.disabled = false; go.textContent = 'Try it'; UI.toast(e.message); });
+    });
+    no.addEventListener('click', function () { card.replaceChildren(h('b', { style: 'color:var(--text)' }, 'Done for today – well done!')); });
+    card.append(h('div', { class: 'row between', style: 'gap:12px' },
+      h('div', null, h('b', { style: 'color:var(--text)' }, 'Bonus: ' + plural(s.bonus, 'question', 'questions')), h('div', { class: 'small muted' }, 'Double XP. Only if you want to.')),
+      h('span', { class: 'row', style: 'gap:8px' }, go, no)));
+    return card;
+  }
+
   function summaryPlacement(s) { show(h('div', { class: 'sess', style: 'max-width:860px' }, placementReport(s, true))); }
 
   function placementReport(s, fresh) {
@@ -1159,13 +1180,15 @@
       h('div', null, h('h2', { style: 'margin:0 0 4px' }, 'Start with A2 basics'), h('div', { class: 'small muted' }, 'Build the foundations first.')),
       h('button', { class: 'btn', onclick: function () { state.prefill = { skills: [], level: 'A2.1' }; location.hash = '#/practice'; } }, 'Practise A2'))));
     var weak = s.gaps.map(function (g) { return g.label; });
-    if (fresh && s.open_after && s.n > s.correct) {
+    var atLevel = s.n - s.correct - (s.parked || 0);   // missed above the level found: kept for later, not offered now
+    var parkedNote = s.parked ? h('div', { class: 'small muted' }, plural(s.parked, 'harder question', 'harder questions') + ' you missed will come back when you practise that level.') : null;
+    if (fresh && s.open_after && atLevel > 0) {
       nodes.push(h('div', { class: 'card fn-chance', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
-        h('div', null, h('b', { style: 'color:var(--text)' }, plural(s.n - s.correct, 'mistake', 'mistakes') + ' in this test'),
+        h('div', null, h('b', { style: 'color:var(--text)' }, plural(atLevel, 'mistake', 'mistakes') + ' at your level'), parkedNote,
           weak.length ? h('div', { class: 'small muted' }, 'Topics: ' + weak.join(', ') + '. A few questions cannot show a real gap; Second Chance does.') : null),
         comebackButton('btn small fn-chance', 'Second Chance'))));
     } else if (!s.basics) {
-      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, 'Nothing was missed.'),
+      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, s.parked ? 'Nothing to fix at your level.' : (s.n > s.correct ? 'Nothing left to fix.' : 'Nothing was missed.')), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
     nodes.push(h('div', { class: 'grid g2' },

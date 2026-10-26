@@ -95,5 +95,31 @@ for ($round = 0; $round < 6; $round++) {
 }
 check($missesWithRoom > 0 && $easierNext / $missesWithRoom >= 0.5, "after a miss the next task is usually easier (more support): $easierNext of $missesWithRoom");
 
+// 4. a mistake is fixed by a different sentence; the same sentence right again counts only on a later day (memory is not the rule)
+$uid3 = (int) Db::insert('users', ['provider' => 'guest', 'nickname' => 'Same Day', 'nickname_key' => 'same-day', 'created_at' => time()]);
+$at = function (string $item, bool $ok, int $t) use ($uid3) {
+    $i = Content::item($item);
+    Db::insert('attempts', ['user_id' => $uid3, 'psession_id' => 0, 'item_id' => $item, 'skill' => $i['skill'], 'level' => $i['level'], 'bloom' => $i['bloom'],
+        'correct' => $ok ? 1 : 0, 'answer' => '', 'time_ms' => 1000, 'xp' => 0, 'created_at' => $t]);
+};
+$d0 = strtotime('today 10:00') - 3 * 86400;
+$at('ps-A21-1a', false, $d0);
+$at('ps-A21-1a', true, $d0 + 60);
+$m = Mistakes::scan($uid3);
+check(isset($m['open']['ps-A21-1a']) && $m['fixed'] === 0, 'the same sentence right a minute later: still open');
+$at('ps-A21-1a', true, $d0 + 86400);
+$m = Mistakes::scan($uid3);
+check(!isset($m['open']['ps-A21-1a']) && $m['fixed'] === 1, 'the same sentence right on a later day: fixed');
+
+// 5. the check after a mistake is not harder: same level or lower whenever the topic has such a task
+$lv = array_flip(array_keys(Content::BASE)); $higher = 0; $tried = 0;
+foreach (array_slice(array_values(array_filter(Content::items(), fn($i) => $i['kind'] !== 'write')), 0, 400, true) as $k => $i) {
+    if ($k % 8) continue;
+    $t = Mistakes::twin($uid3, $i['id'], []);
+    if (!$t) continue;
+    $tried++; if ($lv[$t['level']] > $lv[$i['level']]) $higher++;
+}
+check($tried > 20 && $higher / $tried <= 0.1, "the similar task after a mistake is rarely at a higher level: $higher of $tried");
+
 echo $bad ? "SOME FAILED ($bad of $n)\n" : "OK: $n error-type checks\n";
 exit($bad ? 1 : 0);

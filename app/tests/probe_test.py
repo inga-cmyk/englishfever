@@ -131,9 +131,19 @@ while item:
     if a["done"]: break
     item = a["next"]
 check("the first Second Chance task answered wrongly is a gap", flags[0][1] is True, flags[:2])
-check("the session grew by one or two similar tasks (not more)", 1 <= flags[0][2] - n0 <= 2 and i == flags[0][2], (n0, flags[0][2], i))
+check("the session keeps the length the learner chose (no extra tasks)", flags[0][2] == n0 and i == n0, (n0, flags[0][2], i))
 check("all Second Chance tasks are different", len(set(ids)) == len(ids), ids)
 check("right answers afterwards are not gaps", not any(f[1] for f in flags[1:]))
+summ = a["summary"]
+check("1 mistake: the summary offers 1 bonus question", summ.get("bonus") == 1 and summ.get("bonus_done") is False, summ)
+bo = c.api("session/bonus", {"session_id": sid})
+check("the bonus starts with a new task (the mistake missed again, in a new sentence)", bo["_status"] == 200 and bo["item"]["id"] not in ids, bo)
+bit = ITEMS.get(bo["item"]["id"])
+ba = c.api("session/answer", {"session_id": sid, "item_id": bo["item"]["id"], "answer": correct(bit), "time_ms": 1000})
+check("a right bonus answer gives double XP", ba["result"]["correct"] and ba["result"]["xp"] == 2 * (8 + 2 * bit["bloom"]), ba["result"])
+check("one bonus question, then the session ends and no second bonus is offered", ba["done"] and ba["summary"]["bonus"] == 0 and ba["summary"]["bonus_done"] is True, ba.get("summary"))
+check("no second bonus", c.api("session/bonus", {"session_id": sid})["_status"] == 409)
+check("the summary names what comes next time (or nothing when no mistakes are left)", "next_topic" in ba["summary"], ba["summary"])
 
 # 5. the teacher can read the numbers (and nobody else can)
 t = login(9206, "Probe Teacher", True)

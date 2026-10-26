@@ -152,6 +152,10 @@ try {
             Wp::afterResponse((int) $u['id'], !empty($res['done']));
             out($res);
 
+        case 'session/bonus':
+            $u = Auth::require();
+            out(Engine::bonus((int) $u['id'], (int) ($in['session_id'] ?? 0)));
+
         case 'session/quit':
             $u = Auth::require();
             $sum = Engine::quit((int) $u['id'], (int) ($in['session_id'] ?? 0));

@@ -133,6 +133,10 @@ final class Grader
                             }
                         }
                     }
+                    // a typical mistake in the learner's own words comes first (Cowork test: "I must to finish" was told to change must → had)
+                    if ($specific === null && ($t = self::typical(implode(' ', $given), array_merge(...$blanks))) !== null) {
+                        [$specific, $specificLv, $err] = $t;
+                    }
                     if ($specific === null && trim(implode('', $given)) === '') {
                         $specific = 'You did not type an answer.';
                     }
@@ -332,6 +336,33 @@ final class Grader
     }
 
     /** The word as it is written in the accepted answer (capital letter kept), for messages. */
+    /**
+     * Typical mistakes of Latvian learners (teacher's list) found in a wrong typed answer: [note, Latvian note, error type], or null.
+     * A pattern counts only when no accepted answer has it too, so a correct use (I don't know if he will come) is never flagged.
+     */
+    public static function typical(string $given, array $accepted): ?array
+    {
+        $g = ' ' . mb_strtolower(str_replace(['’', '‘'], "'", $given), 'UTF-8') . ' ';
+        $acc = array_map(fn($a) => ' ' . mb_strtolower(str_replace(['’', '‘'], "'", (string) $a), 'UTF-8') . ' ', $accepted);
+        $has = function (string $rx) use ($acc) { foreach ($acc as $a) if (preg_match($rx, $a)) return true; return false; };
+        $rules = [
+            ['/\b(must|can|could|should|might|may|will|would) to ([a-z]+)/u', 'MODAL',
+                fn($m) => ["After *{$m[1]}* use the verb without *to*: *{$m[1]} {$m[2]}*.", "Pēc *{$m[1]}* darbības vārdu lieto bez *to*: *{$m[1]} {$m[2]}*."]],
+            ['/\bsince (a|an|one|two|three|four|five|six|seven|eight|nine|ten|many|several|a few|\d+) (years?|months?|weeks?|days?|hours?|minutes?)\b/u', 'DURATION',
+                fn($m) => ["For a length of time use *for*: *for {$m[1]} {$m[2]}*. *Since* needs a starting point: *since 2019*.", "Laika ilgumam lieto *for*: *for {$m[1]} {$m[2]}*. Pēc *since* vajag sākuma brīdi: *since 2019*."]],
+            ['/\b(when|as soon as|before|after|until|once|if|unless) (?:[a-z\']+ ){1,3}?will\b/u', 'TIME-CLAUSE',
+                fn($m) => ["After *{$m[1]}* use the present simple, not *will*: *{$m[1]} I arrive*.", "Pēc *{$m[1]}* lieto Present Simple, nevis *will*: *{$m[1]} I arrive*."]],
+            ['/^ (what|where|when|why|how often|how much|how many|how long|how) (you|we|they|i|he|she|it|(?:my|your|his|her|our|their|the) [a-z]+) (?!are|is|am|was|were|can|could|will|would|should|have|has|had|must|might|may)[a-z]+/u', 'DO',
+                fn($m) => ["A question needs *do / does / did* before the subject: *What do you do?*", "Jautājumā pirms teikuma priekšmeta vajag *do / does / did*: *What do you do?*"]],
+            ['/\b(i\'m|i am|you\'re|you are|we\'re|we are|they\'re|they are|he\'s|he is|she\'s|she is|it\'s|it is) (agree|disagree|depend|depends)\b/u', 'BE-VERB',
+                fn($m) => ["*Agree* and *depend* are verbs, so no *am / is / are*: *I agree*, *it depends*.", "*Agree* un *depend* ir darbības vārdi, tāpēc bez *am / is / are*: *I agree*, *it depends*."]],
+        ];
+        foreach ($rules as [$rx, $code, $note]) {
+            if (preg_match($rx, $g, $m) && !$has($rx)) { [$en, $lv] = $note($m); return [$en, $lv, $code]; }
+        }
+        return null;
+    }
+
     private static function shown(string $token, string $raw): string
     {
         foreach (preg_split('/\s+/u', $raw, -1, PREG_SPLIT_NO_EMPTY) as $x) {

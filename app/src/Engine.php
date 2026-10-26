@@ -77,7 +77,7 @@ final class Engine
         if ($mode === 'placement') {
             // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
             $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
-            $state['pl'] = ['ladder' => $ladder, 'lv' => $ladder[0], 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => [], 'long' => $len >= 40];   // the full test asks two blocks at the first level, so A2 and B1 can be told apart
+            $state['pl'] = ['ladder' => $ladder, 'lv' => $ladder[0], 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => [], 'long' => $len >= 40, 'strict' => $len <= 12];   // the full test asks two blocks at the first level, so A2 and B1 can be told apart
         }
         $state['fixed'] = 0;
         if ($mode === 'practice') {
@@ -138,6 +138,7 @@ final class Engine
         } else {
             $xp = 2;
         }
+        if ($ok && isset($st['bonus_from']) && count($st['served']) > $st['bonus_from']) $xp *= 2;   // a bonus question after Second Chance: double XP
 
         // learner estimate (Elo style)
         $theta = $st['theta'][$skill] ?? ($ses['mode'] === 'placement' ? $st['g'] : Content::BASE[$ses['level']] + 0.3);
@@ -159,7 +160,7 @@ final class Engine
             'user_id' => $uid, 'psession_id' => $sid, 'item_id' => $itemId, 'skill' => $skill, 'level' => $item['level'],
             'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
             'time_ms' => max(0, min(600000, $timeMs)), 'xp' => $xp, 'created_at' => $now,
-            'for_item' => !empty($st['comeback']) ? ($st['queue'][count($st['served']) - 1] ?? null) : null,
+            'for_item' => !empty($st['comeback']) ? (function () use ($st) { $q = $st['queue'][count($st['served']) - 1] ?? null; return $q === null ? null : ($st['queue_extra'][$q] ?? $q); })() : null,
             'err' => $errCodes ? implode(',', $errCodes) : null,
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
@@ -346,6 +347,7 @@ final class Engine
             'phase' => ($ses['mode'] === 'practice' && $ses['n'] < 3 && empty($ses['state']['smart']) && empty($ses['state']['comeback'])) ? 'diagnostic' : 'adaptive',
             'smart' => !empty($ses['state']['smart']),
             'comeback' => !empty($ses['state']['comeback']),
+            'bonus' => isset($ses['state']['bonus_from']),
         ];
     }
 
@@ -525,35 +527,67 @@ final class Engine
     }
 
     /**
-     * Second Chance: a task that stood for a mistake is missed again = a gap. Up to two more tasks of that kind, from other angles, are
-     * put next in the session (at most four extra tasks per session), so the session grows by those tasks. Returns true for a gap.
+     * Second Chance: a task that stood for a mistake is missed again = a gap. The session keeps the length the learner chose
+     * (Cowork test, 26 October: 3 questions must not turn into 5 and 7); the mistake is remembered, and the optional bonus
+     * question at the end is about it. Returns true for a gap.
      */
     private static function comebackGap(array &$st, array &$ses, string $itemId, bool $ok): bool
     {
         $idx = count($st['served']) - 1;
         $for = $st['queue'][$idx] ?? null;
         if ($for === null) return false;
-        if (!empty($st['queue_extra'][$for])) {   // an extra task: only noted for the evidence
+        if (!empty($st['queue_extra'][$for])) {   // a bonus task: only noted for the evidence
             $st['probe_log'][] = ['for' => $st['queue_extra'][$for], 'item' => $itemId, 'stage' => 2, 'ok' => $ok];
             return false;
         }
         $st['probe_log'][] = ['for' => $for, 'item' => $itemId, 'stage' => 1, 'ok' => $ok];
         if ($ok) return false;
-        $room = 4 - count($st['queue_extra'] ?? []);
-        if ($room < 1) return true;
-        $uid = (int) $ses['user_id'];
-        $skip = array_flip($st['served']) + array_fill_keys(array_keys(Mistakes::scan($uid)['open']), true) + array_fill_keys($st['queue'], true);
-        $add = [];
-        for ($k = 0; $k < min(2, $room); $k++) {
-            $t = Mistakes::twin($uid, $for, $skip, true, $st['levels'] ?? null);
-            if (!$t) break;
-            $skip[$t['id']] = true; $add[] = $t['id']; $st['queue_extra'][$t['id']] = $for;
-        }
-        if ($add) {
-            array_splice($st['queue'], $idx + 1, 0, $add);
-            $ses['target_len'] += count($add);
-        }
+        $st['refail'][$for] = true;
         return true;
+    }
+
+    /** How many bonus questions a finished Second Chance offers: 1 after 1-3 mistakes, 2 after 4 or more (teacher's rule, 26 October). */
+    private static function bonusCount(array $ses): int
+    {
+        $st = $ses['state'];
+        if (empty($st['comeback']) || isset($st['bonus_from'])) return 0;
+        $n = count(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q])));
+        return $n >= 4 ? 2 : ($n >= 1 ? 1 : 0);
+    }
+
+    /**
+     * The learner chose the bonus after Second Chance: the same session goes on with 1 or 2 more questions (double XP).
+     * A mistake missed again in the session: a new sentence for that mistake. All fixed: one task of similar difficulty on the same topics.
+     */
+    public static function bonus(int $uid, int $sid): array
+    {
+        $ses = self::load($uid, $sid);
+        $k = self::bonusCount($ses);
+        if ($ses['ended_at'] === null || $k < 1 || (int) $ses['ended_at'] < time() - 3600) throw new ApiError('No bonus questions here.', 409);
+        $st = &$ses['state'];
+        $skip = array_flip($st['served']) + array_fill_keys(array_keys(Mistakes::scan($uid)['open']), true);
+        $mistakes = array_values(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q])));
+        $missed = array_values(array_filter($mistakes, fn($q) => !empty($st['refail'][$q])));
+        $order = array_merge($missed, array_values(array_diff($mistakes, $missed)));
+        $add = [];
+        foreach ($order as $i => $mid) {
+            if (count($add) >= $k) break;
+            $isMissed = $i < count($missed);
+            if (!$isMissed && $add) break;   // all fixed: one task of similar difficulty is enough
+            $t = Mistakes::twin($uid, $mid, $skip, !$isMissed);
+            if (!$t) continue;
+            $skip[$t['id']] = true; $add[] = $t['id']; $st['queue_extra'][$t['id']] = $mid;
+        }
+        if (!$add) throw new ApiError('No bonus questions here.', 409);
+        $st['bonus_from'] = count($st['served']);
+        $st['queue'] = array_merge(array_slice($st['queue'], 0, count($st['served'])), $add);
+        $ses['target_len'] = $ses['n'] + count($add);
+        $ses['ended_at'] = null;
+        $item = Content::item($add[0]);
+        $st['current'] = $item['id'];
+        $st['served'][] = $item['id'];
+        self::save($ses);
+        return ['session' => self::pub($ses), 'item' => Content::publicItem($item, $st['seed'] + count($st['served']))];
     }
 
     /** A wrong answer in practice: ask a task of the same kind again after one or two others (not more than a third of the session, two waiting at most). */
@@ -614,7 +648,7 @@ final class Engine
         if ($ok) { $p['c']++; $p['cc']++; }
         if ($p['n'] < 3) return;
         $p['bn']++;
-        $pass = $p['bn'] === 1 ? $p['c'] >= 2 : $p['cc'] >= 4;
+        $pass = $p['bn'] === 1 ? $p['c'] >= (!empty($p['strict']) ? 3 : 2) : $p['cc'] >= 4;   // the quick test climbs only on 3 of 3 (Cowork test, 26 October)
         if ($pass && $p['bn'] === 1 && !empty($p['long']) && $p['lv'] === $p['ladder'][0]) { $p['n'] = 0; $p['c'] = 0; return; }   // full test: a second block at the first level
         if ($pass) {
             $p['passed'][] = $p['lv'];
@@ -689,6 +723,11 @@ final class Engine
             $out['comeback'] = !empty($ses['state']['comeback']);
             $out['open_after'] = count($m['open']);
             $out['fixed_total'] = $m['fixed'];
+            $out['bonus'] = self::bonusCount($ses);
+            $out['bonus_done'] = isset($ses['state']['bonus_from']);
+            $q = Mistakes::queue((int) $ses['user_id'], 1);   // what comes next time: the topic of the oldest open mistake
+            $nextSkill = $q ? Content::skill(Content::item($q[0])['skill']) : null;
+            $out['next_topic'] = $nextSkill ? $nextSkill['label'] : null;
         }
 
         if ($ses['mode'] === 'placement') {
@@ -749,7 +788,9 @@ final class Engine
             foreach ($pts as [$d, $ok]) { $p = 1 / (1 + exp(-1.7 * ($overall - $d))); $info += 2.89 * $p * (1 - $p); }
             $se = 1 / sqrt($info + 1 / 9);
             $out['sure'] = $se < 0.32 ? 'high' : ($se < 0.46 ? 'good' : 'rough');
-            $out['open_after'] = count(Mistakes::scan((int) $ses['user_id'])['open']);
+            $pm = Mistakes::scan((int) $ses['user_id'], [(int) $ses['id'] => $out['overall_level']]);
+            $out['open_after'] = count($pm['open']);
+            $out['parked'] = count($pm['parked']);   // missed above the level found: kept for later, not offered now
             $pl = $ses['state']['pl'] ?? null;
             $out['basics'] = $pl && ($pl['ceiling'] ?? null) === $pl['ladder'][0];   // failed even the first level: start with its basics
             $out['gaps'] = $gaps;

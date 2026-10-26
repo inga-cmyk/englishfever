@@ -44,5 +44,5 @@ Edit `tools/units/uNN.py`, then run `python3 tools/build.py` (or `python3 tools/
 A separate web app in `app/`: placement test, adaptive practice for tenses, passive, conditionals, reported speech and indirect questions with all six Bloom levels, drag-and-drop tasks, Latvian explanations up to B1.2, time, streak, leaderboard, and a teacher view. Runs on Hostinger (PHP + MySQL) at a subdomain, with optional sign-in through englishfever.com (Tutor LMS) users.
 - [docs/PRACTICE-APP.md](docs/PRACTICE-APP.md) – what it does, what is not done, Hostinger setup, WordPress plugin, teacher guide, privacy text, maintenance.
 - [docs/RESEARCH-DESIGN.md](docs/RESEARCH-DESIGN.md) – the optional learning study: conditions, export, analysis ideas, ethics checklist.
-- [docs/practice-question-bank-review.csv](docs/practice-question-bank-review.csv) – all 442 tasks for a teacher to review.
+- [docs/practice-question-bank-review.csv](docs/practice-question-bank-review.csv) – the built-in tasks for a teacher to review (the drafts are in docs/task-drafts).
 - Build the upload files: `python3 tools/package_practice_app.py` → `dist/practice-app.zip`, `dist/ef-practice-sso.zip`.

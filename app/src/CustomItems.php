@@ -117,6 +117,7 @@ final class CustomItems
             elseif (strpos($h, 'explanation in latvian') === 0 || $h === 'latvian') $key = 'why_lv';
             elseif (strpos($h, 'explanation') === 0 || $h === 'why') $key = 'why';
             elseif (strpos($h, 'thinking level') === 0) $key = 'bloom';
+            elseif (strpos($h, 'also topic') === 0) $key = 'also';   // optional: a second topic this task compares with (Past simple + Past continuous)
             elseif (strpos($h, 'practice only') === 0) $key = 'practice';   // optional: "yes" = never in the placement test (easy first steps, tasks a hint gives away)
             elseif (strpos($h, 'error type') === 0) $key = 'err';   // optional: the kinds of mistake the task trains (docs/ERROR-TYPES.md), never shown to learners
             if ($key && !isset($col[$key])) $col[$key] = $i;
@@ -148,13 +149,21 @@ final class CustomItems
                 $item = self::buildRow($get, $skills, $res);
                 $dup = self::dupKey($item);
                 $ck = self::contentKey($item);
-                if ($item['kind'] === 'match' && $get('replaces') !== '') {   // a corrected matching task: the older version (if it was added) is retired
+                $from = preg_match('/^from:\s*(.+)$/iu', $get('replaces'), $fm) ? trim($fm[1]) : null;   // "from: Past simple" = the same task moved from another topic ("from: Past simple | old task text" when the text changed too)
+                if ($from !== null) {
+                    $o = $item; $o['skill'] = null;
+                    if (strpos($from, '|') !== false) { [$from, $oq] = array_map('trim', explode('|', $from, 2)); $o['q'] = $oq; }
+                    foreach ($skills as $sk) if (mb_strtolower($sk['label']) === mb_strtolower($from) || $sk['id'] === $from || mb_strtolower(trim(preg_replace('/\s*[(:].*$/u', '', $sk['label']))) === mb_strtolower($from)) $o['skill'] = $sk['id'];
+                    if ($o['skill'] === null) throw new ApiError("Unknown topic \"$from\" after from:.", 400);
+                    if (isset($mine[self::dupKey($o)])) { $res['replaces'] = $mine[self::dupKey($o)]['id']; $res['warnings'][] = "Moves this question from $from: the copy there is retired."; }
+                }
+                if ($from === null && $item['kind'] === 'match' && $get('replaces') !== '') {   // a corrected matching task: the older version (if it was added) is retired
                     $oldPairs = [];
                     foreach (self::split($get('replaces'), ';') as $p) { $x = explode('=', $p, 2); if (count($x) === 2) $oldPairs[] = [trim($x[0]), trim($x[1])]; }
                     $ok2 = self::contentKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => 'match', 'pairs' => $oldPairs]);
                     if (isset($byContent[$ok2])) { $res['replaces'] = $byContent[$ok2]['id']; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
                 }
-                if ($item['kind'] !== 'match' && $get('replaces') !== '') {   // another corrected task: the older version (the old correct option, sentence or task text) is retired
+                if ($from === null && $item['kind'] !== 'match' && $get('replaces') !== '') {   // another corrected task: the older version (the old correct option, sentence or task text) is retired
                     $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $item['kind'], 'q' => $get('replaces'), 'correct' => $get('replaces'), 'sentence' => $get('replaces')]);
                     if (isset($byOld[$ok3])) { $res['replaces'] = $byOld[$ok3]; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
                 }
@@ -302,6 +311,14 @@ final class CustomItems
                 break;
         }
         if (in_array(mb_strtolower($get('practice')), ['yes', 'y', 'jā', '1', 'x'], true)) $item['practice_only'] = true;
+        if ($get('also') !== '') {
+            foreach (self::split($get('also'), ';') as $name) {
+                $found = null;
+                foreach ($skills as $sk) if (in_array(mb_strtolower($name), [$sk['id'], mb_strtolower($sk['label']), mb_strtolower(trim(preg_replace('/\s*[(:].*$/u', '', $sk['label'])))], true)) $found = $sk['id'];
+                if ($found === null) throw new ApiError("Unknown topic \"$name\" in the also topics column.", 400);
+                if ($found !== $item['skill']) $item['also'][] = $found;
+            }
+        }
         if ($get('err') !== '') $item['err'] = array_values(array_unique(array_map([self::class, 'errCode'], preg_split('/[\s,;]+/u', trim($get('err')), -1, PREG_SPLIT_NO_EMPTY))));
         return $item;
     }

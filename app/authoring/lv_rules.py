@@ -15,8 +15,8 @@ LV_RULES.update({
     },
     "past_simple": {
         "form": ["Regulārie darbības vārdi: pamatforma + -ed (worked).", "Neregulārie darbības vārdi ir jāiemācās (go - went, see - saw).",
-                 "Noliegums: didn't + pamatforma.", "Jautājums: Did + teik. priekšmets + pamatforma?", "Pagātnes ieradumi: used to + pamatforma."],
-        "use": ["Pabeigtas darbības pabeigtā laikā.", "Darbību virkne stāstā.", "Pagātnes ieradumi un stāvokļi (used to)."],
+                 "Noliegums: didn't + pamatforma.", "Jautājums: Did + teik. priekšmets + pamatforma?"],
+        "use": ["Pabeigtas darbības pabeigtā laikā.", "Darbību virkne stāstā."],
         "signals": "yesterday, last week, in 2019, three days ago (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)",
     },
     "past_continuous": {

@@ -27,6 +27,9 @@ def err(item, msg):
     errors.append(f"{item['id']}: {msg}")
 
 
+# used to has its own topic (teacher, 27 October): the Past simple B1.2 tasks were all about used to. They leave the bank;
+# learners' earlier answers to them stay readable (retired.json), and the used to topic has its own tasks.
+dsl.ITEMS = [it for it in dsl.ITEMS if not (it["skill"] == "past_simple" and it["level"] == "B1.2")]
 ids = Counter(i["id"] for i in dsl.ITEMS)
 for k, n in ids.items():
     if n > 1:

@@ -187,4 +187,29 @@ teacher.api("teacher/items-import", {"csv": cmp, "confirm": True})
 db = sqlite3.connect(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "var", "ef.sqlite"))
 po = [json.loads(d) for (d,) in db.execute("select data from custom_items where data like '%practice_only%'")]
 check("a CSV row marked practice only keeps the mark", any(x.get("practice_only") is True and x["q"].startswith("Match each adjective with its comparative") for x in po), [x.get("q") for x in po])
+# a task moved to another topic ("from: Past simple" in the replaces column): the old copy is retired, results stay
+HEAD2 = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces"]
+def csv2(rows):
+    out = io.StringIO(); w = csv.writer(out); w.writerow(HEAD2); [w.writerow(r) for r in rows]; return out.getvalue()
+oldrow = ["Past simple", "B1.1", "mcq", "Choose the correct option: As a child I ___ milk every morning.", "used to drink", "use to drink | was used to drink", "Used to + base verb.", "", "2", ""]
+teacher.api("teacher/items-import", {"csv": csv2([oldrow]), "confirm": True})
+oldid = [r[0] for r in db.execute("select item_id from custom_items where data like '%milk every morning%' and status <> 'retired'")]
+mv2 = teacher.api("teacher/items-import", {"csv": csv2([["Used to and be used to"] + oldrow[1:9] + ["from: Past simple"]]), "confirm": True})
+st2 = dict(db.execute("select item_id, status from custom_items where data like '%milk every morning%'").fetchall())
+check("a moved task retires its old copy and adds the new one", len(oldid) == 1 and st2.get(oldid[0]) == "retired" and sum(1 for v in st2.values() if v != "retired") == 1, (oldid, st2, mv2["rows"][0].get("warnings")))
+# comparison tasks: two topics chosen -> some questions compare them ("also topics" column)
+ct = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "docs", "task-drafts", "contrast-1.csv"), encoding="utf-8-sig").read()
+teacher.api("teacher/items-import", {"csv": ct, "confirm": True})
+cids = [r[0] for r in db.execute("select item_id from custom_items where data like '%\"also\"%'")]
+teacher.api("teacher/items-status", {"ids": cids, "status": "approved"})
+seen_c = 0
+for _ in range(3):
+    ss = student.api("session/start", {"mode": "practice", "skills": ["past_simple", "past_continuous"], "levels": ["A2", "B1"], "length": 9})
+    sid3, cur = ss["session"]["id"], ss["item"]
+    while cur:
+        seen_c += cur["id"] in cids
+        rr = student.api("session/answer", {"session_id": sid3, "item_id": cur["id"], "answer": "x", "time_ms": 1000})
+        if rr["done"]: break
+        cur = rr["next"]
+check("comparison tasks are served when both topics are chosen", len(cids) == 15 and seen_c >= 3, (len(cids), seen_c))
 print("\nALL PASS" if ok else "\nSOME FAILED"); raise SystemExit(0 if ok else 1)

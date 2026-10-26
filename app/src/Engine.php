@@ -500,6 +500,8 @@ final class Engine
             }
         }
 
+        $contrastServed = 0;
+        foreach ($st['served'] as $sid2) { $q = Content::item($sid2); if ($q && !empty($q['also']) && array_intersect($q['also'], $skills)) $contrastServed++; }
         $areaOf = fn($sid) => Content::skill($sid)['area'] ?? '';
         $areaCount = [];
         foreach ($st['last'] as $h) $areaCount[$areaOf($h['skill'])] = ($areaCount[$areaOf($h['skill'])] ?? 0) + 1;
@@ -521,6 +523,8 @@ final class Engine
                 if ($m['skill'] === $it['skill'] && !isset($times[$it['id']]) && $it['bloom'] >= $m['bloom'] - 1 && $it['bloom'] <= $m['bloom'] + 1) { $cost -= 0.4; break; } // a fresh task like it
             }
             if (isset($recentQ[mb_strtolower($it['q'])])) $cost += 0.5; // not the same instruction again and again
+            // two or more topics chosen: about a third of the questions compare them (a task that names another chosen topic; teacher, 27 October)
+            if (!$placement && !empty($it['also']) && array_intersect($it['also'], $skills)) $cost += $contrastServed < (int) ceil((int) $ses['target_len'] / 3) ? -0.7 : 0.2;
             if (!$placement && $count > 0) { // over its share so far: less likely; under its share: more likely
                 $grp = self::typeGroup($it);
                 $cost += max(-0.5, min(0.9, 2.0 * (($mixCount[$grp] + 1) / ($served_n + 1) - self::MIX[$grp]))) + ($grp === 'write' ? 0.6 : 0);

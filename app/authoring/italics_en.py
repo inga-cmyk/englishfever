@@ -19,7 +19,6 @@ WHY = r"""
 *Last night* is finished, so past simple. Without a finished time we can use the present perfect.
 *Last year* is a finished time. We use the past simple.
 *Like* is a state verb. We say: *I like this song.*
-*Used to* + *every summer* shows a repeated past habit.
 *Want* is a state verb. We say: *She wants a new phone.*
 *Yesterday* is a finished time. Use the past simple: *I saw him yesterday.*
 A decision at the moment of speaking: *will* + base verb.
@@ -61,7 +60,6 @@ After *as soon as, when* and *before* we use the present simple for the future.
 After *did* we use the base verb: *Did you see the match?*
 After *did* we use the base verb: *Why did you go home early?*
 After *didn't* use the base verb: *I didn't go to school.*
-After *didn't* we write *use to*: *I didn't use to like coffee.*
 After *do* we need the base verb: *Do they speak English?*
 After *does* we use the base verb: *work*, not *works.* *Does he work here?*
 After *going to* we use the base verb: *He is going to arrive soon.*
@@ -134,7 +132,6 @@ In a zero conditional, *when* or *whenever* means the same as *if*: it is always
 In an indirect question the verb comes after the subject.
 In an indirect question there is no *does*: *where Anna lives.*
 In careful English we use *were* for all persons after *if* in the second conditional.
-In questions and negatives we write *use to* (not *used to*): *Did you use to ...?*
 In reported speech the verb usually goes one step back in time: *am / is → was.*
 In the first conditional we describe a possible future situation and its likely result.
 In the if-part we use the present simple, even when we talk about the future.
@@ -158,7 +155,6 @@ Negative past simple: *didn't* + base verb.
 Negative third conditional: *hadn't* + past participle, *wouldn't have* + past participle.
 Negative: *am/is/are* + *not* + verb-ing.
 Negative: *didn't* + base verb.
-Negative: *didn't use to* + base verb.
 Negative: *doesn't* + base verb. With *any* for uncountable or plural nouns.
 Negative: *haven't* + past participle. *Yet* goes with the present perfect.
 *New workers* is the subject. *Was/were* + past participle.
@@ -182,7 +178,6 @@ Passive question: *Will* + subject + *be* + past participle.
 Passive questions need the past participle: *Are the tickets checked at the door?*
 Passive: *was* + past participle. We leave out *someone.*
 Past cause, present result: *if* + past perfect, *would* + base verb.
-Past habits: *used to* + base verb.
 Past passive: *was/were* + past participle. *Tower* = *it*, so *was built.*
 Past perfect = *had* + past participle. It shows an earlier past action.
 Past simple questions: *did* + subject + base verb.
@@ -306,7 +301,6 @@ Use the past participle: *The class will be cancelled.*
 Use the past participle: *The invoice was sent on Monday.*
 Use the past participle: *The prize will be given to the winner.*
 Use the past participle: *The report is being written.*
-*Used to* talks about past habits or states that are no longer true.
 Verbs of thinking, feeling and having (*know, like, want, need, believe*) are state verbs. We use the present simple: *I know.*
 *Was going to* shows an intention in the past that was not completed.
 *Was/were going to* + base verb = a plan in the past that did not happen.
@@ -383,7 +377,6 @@ MSGS = r"""
 *My brother* = *he.* With *he/she/it* we use *doesn't*, not *don't.*
 *They* needs *don't*, not *doesn't.*
 *They* needs *were*, not *was.*
-Add *but ... now ...* to show it has changed.
 After *as soon as* we use the present simple: *... as soon as I arrive.*
 After *did* we use the base verb: *move.*
 After *did* we use the base verb: *play*, not *played.*
@@ -488,7 +481,6 @@ Use the word *when.*
 Use the word *yesterday.*
 Use *to call*, or *if / whether I could call.*
 Use *unless.*
-Use *used to* + base verb.
 Use verbs in the past simple (*went, stayed, visited ...*).
 Use verbs in the past simple.
 Use *was* or *were* + verb-ing, for example: *I was cooking dinner.*
@@ -554,8 +546,6 @@ Regular verbs: verb + *-ed* (*worked*).
 Irregular verbs: learn them (*go - went, see - saw*).
 Negative: *didn't* + base verb.
 Question: *Did* + subject + base verb?
-Past habits: *used to* + base verb.
-Past habits and states (*used to*).
 *yesterday, last week, in 2019, three days ago*
 *I went to the cinema yesterday.*
 *was / were* + verb-ing: *I was working.*

@@ -148,21 +148,18 @@ return json_decode(<<<'EF_JSON_END'
    "levels": [
     "A2.1",
     "A2.2",
-    "B1.1",
-    "B1.2"
+    "B1.1"
    ],
    "rule": {
     "form": [
      "Regular verbs: verb + *-ed* (*worked*).",
      "Irregular verbs: learn them (*go - went, see - saw*).",
      "Negative: *didn't* + base verb.",
-     "Question: *Did* + subject + base verb?",
-     "Past habits: *used to* + base verb."
+     "Question: *Did* + subject + base verb?"
     ],
     "use": [
      "Finished actions at a finished time.",
-     "A series of actions in a story.",
-     "Past habits and states (*used to*)."
+     "A series of actions in a story."
     ],
     "signals": "*yesterday, last week, in 2019, three days ago*",
     "example": "*I went to the cinema yesterday.*"
@@ -172,13 +169,11 @@ return json_decode(<<<'EF_JSON_END'
      "Regulārie darbības vārdi: pamatforma + *-ed* (*worked*).",
      "Neregulārie darbības vārdi ir jāiemācās (*go - went, see - saw*).",
      "Noliegums: *didn't* + pamatforma.",
-     "Jautājums: *Did* + teik. priekšmets + pamatforma?",
-     "Pagātnes ieradumi: *used to* + pamatforma."
+     "Jautājums: *Did* + teik. priekšmets + pamatforma?"
     ],
     "use": [
      "Pabeigtas darbības pabeigtā laikā.",
-     "Darbību virkne stāstā.",
-     "Pagātnes ieradumi un stāvokļi (*used to*)."
+     "Darbību virkne stāstā."
     ],
     "signals": "*yesterday, last week, in 2019, three days ago* (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)"
    }

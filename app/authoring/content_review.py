@@ -387,6 +387,12 @@ def revise(original):
     fix_again('rs-B12-4a', 'The explanation must not make the answer look arguable.',
         why='Only this sentence keeps *will*. With backshift it is: *She said she would call me the next day.*',
         why_lv='Tikai šajā teikumā paliek *will*. Ar laiku saskaņošanu tas ir: *She said she would call me the next day.*')
+    # Teacher's feedback (27 October): ask about the meaning, not the name of the conditional type
+    fix_again('cz-B11-2a', 'Ask about the meaning, not the name of the type.', q='Which sentence is about something that is always true?')
+    fix_again('cf-B11-1b', 'Ask about the meaning, not the name of the type.', q='Which sentence about a possible future is correct?')
+    fix_again('cm-B21-1a', 'Ask about the meaning, not the name of the type.', q='Which sentence imagines a different past with a result now?')
+    fix_again('cm-C11-1a', 'Ask about the meaning, not the name of the type.', q='Which sentence without *if* is correct?')
+    fix_again('cz-B11-1a', 'Ask about the meaning, not the name of the type.', q="Which word can replace 'if' here? 'If it rains, the street floods.'")
     # Learners' answers (26 October): cards without a question mark also make a correct statement
     fix_again('ip-B11-3b', 'Without a question-mark card the statement order is correct too.',
         answers=[['could you tell me where the station is', 'you could tell me where the station is']])

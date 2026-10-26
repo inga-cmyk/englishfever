@@ -1183,130 +1183,6 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "pa-B12-1a",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 1,
-"kind": "mcq",
-"q": "Which sentence is correct?",
-"correct": "We used to play in the park every day.",
-"wrong": [
-"We use to play in the park every day.",
-"We used to playing in the park every day.",
-"We were used to play in the park every day."
-],
-"why": "Past habits: *used to* + base verb.",
-"wrong_why": {},
-"why_lv": "Pagātnes ieradumi: *used to* + pamatforma."
-},
-{
-"id": "pa-B12-2a",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 2,
-"kind": "mcq",
-"q": "What does 'I used to smoke' tell us?",
-"correct": "I smoked in the past, but I don't smoke now.",
-"wrong": [
-"I smoke now, but not very often.",
-"I am starting to smoke.",
-"I will smoke in the future."
-],
-"why": "*Used to* talks about past habits or states that are no longer true.",
-"wrong_why": {},
-"why_lv": "*Used to* runā par pagātnes ieradumiem vai stāvokļiem, kas vairs nav patiesi."
-},
-{
-"id": "pa-B12-3a",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 3,
-"kind": "gap",
-"q": "Did you ___ to live in a flat? (use)",
-"answers": [
-[
-"use"
-]
-],
-"why": "In questions and negatives we write *use to* (not *used to*): *Did you use to ...?*",
-"hints": [],
-"why_lv": "Jautājumos un noliegumos raksta *use to* (nevis *used to*): *Did you use to* ...?"
-},
-{
-"id": "pa-B12-3b",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 3,
-"kind": "gap",
-"q": "He ___ to like fish, but now he loves it. (not / use)",
-"answers": [
-[
-"didn't use",
-"did not use"
-]
-],
-"why": "Negative: *didn't use to* + base verb.",
-"hints": [],
-"why_lv": "Noliegums: *didn't use to* + pamatforma."
-},
-{
-"id": "pa-B12-4a",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 4,
-"kind": "mcq",
-"q": "Which sentence is NOT correct?",
-"correct": "I didn't used to like coffee.",
-"wrong": [
-"She used to live in Paris.",
-"Did you use to play chess?",
-"They used to work here."
-],
-"why": "After *didn't* we write *use to*: *I didn't use to like coffee.*",
-"wrong_why": {},
-"why_lv": "Pēc *didn't* raksta *use to*: *I didn't use to like coffee.*"
-},
-{
-"id": "pa-B12-5a",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 5,
-"kind": "mcq",
-"q": "You want to talk about a repeated habit in the past. Choose the correct option.",
-"correct": "As a child, I used to visit my grandparents every summer.",
-"wrong": [
-"As a child, I visited my grandparents last summer.",
-"As a child, I am visiting my grandparents every summer.",
-"As a child, I have visited my grandparents every summer."
-],
-"why": "*Used to* + *every summer* shows a repeated past habit.",
-"wrong_why": {},
-"why_lv": "*Used to* + *every summer* rāda atkārtotu pagātnes ieradumu."
-},
-{
-"id": "pa-B12-6a",
-"skill": "past_simple",
-"level": "B1.2",
-"bloom": 6,
-"kind": "write",
-"q": "Write one sentence about something you used to do as a child, but don't do now.",
-"must": [
-[
-"\\bused\\s+to\\s+\\w+",
-"Use *used to* + base verb.",
-"Lieto *used to* + pamatforma."
-],
-[
-"\\b(but|now|no longer|any more|anymore)\\b",
-"Add *but ... now ...* to show it has changed.",
-"Pievieno *but* ... *now* ..., lai parādītu, ka tas ir mainījies."
-]
-],
-"model": "I used to collect stickers, but I don't collect them now.",
-"why": "Compare your sentence with the model answer.",
-"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
-},
-{
 "id": "pac-A22-1a-r2",
 "skill": "past_continuous",
 "level": "A2.2",
@@ -4507,12 +4383,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "cz-B11-1a",
+"id": "cz-B11-1a-r3",
 "skill": "cond_zero",
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which word can replace 'if' in a zero conditional? 'If it rains, the street floods.'",
+"q": "Which word can replace 'if' here? 'If it rains, the street floods.'",
 "correct": "whenever",
 "wrong": [
 "unless",
@@ -4524,12 +4400,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Zero conditional *when* vai *whenever* nozīmē to pašu, ko *if*: tas ir vienmēr patiesi."
 },
 {
-"id": "cz-B11-2a",
+"id": "cz-B11-2a-r3",
 "skill": "cond_zero",
 "level": "B1.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is a zero conditional (always true), not a first conditional (one future situation)?",
+"q": "Which sentence is about something that is always true?",
 "correct": "If metal gets hot, it expands.",
 "wrong": [
 "If it gets hot tomorrow, I will go to the beach.",
@@ -4923,12 +4799,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "cf-B11-1b",
+"id": "cf-B11-1b-r3",
 "skill": "cond_first",
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence is a correct first conditional?",
+"q": "Which sentence about a possible future is correct?",
 "correct": "If it snows tonight, the office will close.",
 "wrong": [
 "If it will snow tonight, the office closes.",
@@ -5829,12 +5705,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "cm-B21-1a",
+"id": "cm-B21-1a-r3",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence is a mixed conditional (past condition, present result)?",
+"q": "Which sentence imagines a different past with a result now?",
 "correct": "If I had taken that job, I would be rich now.",
 "wrong": [
 "If I took that job, I would be rich.",
@@ -6035,12 +5911,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "cm-C11-1a",
+"id": "cm-C11-1a-r3",
 "skill": "cond_mixed",
 "level": "C1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence uses inversion in a mixed conditional?",
+"q": "Which sentence without *if* is correct?",
 "correct": "Had I taken that job, I would be rich now.",
 "wrong": [
 "Had I take that job, I would be rich now.",

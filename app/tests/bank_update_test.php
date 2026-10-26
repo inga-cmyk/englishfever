@@ -32,13 +32,14 @@ foreach ($retired as $old) {
     $stem = preg_replace('/-r\d+$/', '', $old['id']); $rev = preg_match('/-r(\d+)$/', $old['id'], $m) ? (int) $m[1] : 1;
     $replacement = null;   // the active version of the same question with a higher revision number (numbers can skip when intermediate versions were recorded)
     foreach ($active as $aid => $a) if (preg_match('/^' . preg_quote($stem, '/') . '-r(\d+)$/', $aid, $mm) && (int) $mm[1] > $rev) $replacement = $a;
+    if ($replacement === null && $old['skill'] === 'past_simple' && $old['level'] === 'B1.2') continue;   // used to moved to its own topic (27 October): removed, no replacement
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
         check($old[$key] === $replacement[$key], "Correction changed $key");
     }
 }
-check(count($active) === 490, 'Unexpected active question count');
-check(count($retired) === 139, 'Unexpected correction count');
+check(count($active) === 483, 'Unexpected active question count');
+check(count($retired) === 151, 'Unexpected correction count');
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

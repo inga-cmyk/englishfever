@@ -14,7 +14,7 @@ SKILLS = [
     # id, label, area, levels
     ("present_simple", "Present simple", "active", ["A2.1", "A2.2", "B1.1"]),
     ("present_continuous", "Present continuous", "active", ["A2.1", "A2.2", "B1.1"]),
-    ("past_simple", "Past simple", "active", ["A2.1", "A2.2", "B1.1", "B1.2"]),
+    ("past_simple", "Past simple", "active", ["A2.1", "A2.2", "B1.1"]),
     ("past_continuous", "Past continuous", "active", ["A2.2", "B1.1", "B1.2"]),
     ("present_perfect", "Present perfect", "active", ["A2.2", "B1.1", "B1.2"]),
     ("present_perfect_continuous", "Present perfect continuous", "active", ["B1.1", "B1.2"]),
@@ -57,9 +57,8 @@ RULES = {
     },
     "past_simple": {
         "form": ["Regular verbs: verb + -ed (worked).", "Irregular verbs: learn them (go - went, see - saw).",
-                 "Negative: didn't + base verb.", "Question: Did + subject + base verb?",
-                 "Past habits: used to + base verb."],
-        "use": ["Finished actions at a finished time.", "A series of actions in a story.", "Past habits and states (used to)."],
+                 "Negative: didn't + base verb.", "Question: Did + subject + base verb?"],
+        "use": ["Finished actions at a finished time.", "A series of actions in a story."],
         "signals": "yesterday, last week, in 2019, three days ago",
         "example": "I went to the cinema yesterday.",
     },

@@ -6,7 +6,7 @@ import italics
 italics.LV_ASCII |= set('''apgriez divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
 beidzas beidzies cita darba divdabi divdabis esam garums grupa ieradums izteikt jebkuru laba ideja lielu lietas likums maigs mana istaba ne nekas nelielu padomu paliek saraksta
 tipiska padodas pieder latviski angliski nosauktu pateicas tos pa draugi abos viens vienam gaidu autobusu klausos draugs laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
-HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only"]
+HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
 import json as _json
@@ -136,6 +136,12 @@ def en_fix(t):
     return t
 
 
+DUP_MOVED = {"Rewrite with used to: When I was young, I played the piano every day."}   # in both Past simple and Used to: one copy
+ALSO = {}   # row index -> a second topic the task compares with ("also topics" column)
+def also(topic):
+    ALSO[len(rows) - 1] = topic
+
+
 PRACTICE_MATCH = re.compile(r"^Match each (base )?(verb|word|adjective) (with|to) its (past|past-simple|3\. form|plural|adverb|comparative)", re.I)
 def practice_only(r):
     """Never in the placement test (teacher, 27 October): form-matching whose pairs can be guessed from how the words look,
@@ -148,8 +154,14 @@ def save(name):
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)
         for i, r in enumerate(rows):
+            if r[0] == "Past simple" and plain(r[3], r[2]) in DUP_MOVED: continue   # the used to topic has the same task: that copy takes over
+            if r[0] == "Used to and be used to" and plain(r[3], r[2]) in DUP_MOVED and len(r) > 9 and not r[9]: r = r[:9] + ["from: Past simple"] + r[10:]
+            elif r[0] == "Used to and be used to" and plain(r[3], r[2]) in DUP_MOVED and len(r) <= 9: r = r + ["from: Past simple"]
+            if r[0] == "Past simple" and re.search(r"\bused? to\b|___ to .*\(use\)", " ".join(str(x) for x in r[3:6]), re.I):   # used to has its own topic (teacher, 27 October)
+                old = plain(r[3], r[2]); new = re.sub(r"^Use the past simple: ", "", old)
+                r = r[:9] + ["from: Past simple" + (" | " + old if new != old else "")] + r[10:]; r[0] = "Used to and be used to"; r[3] = new
             if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
-            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if practice_only(r) else ""])
+            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if practice_only(r) else "", ALSO.get(i, "")])
     print(name, len(rows), "rows")
 
 

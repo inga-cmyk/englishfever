@@ -12,14 +12,40 @@ Pieaugušie latviešu valodā runājošie angļu valodas apguvēji (A2–B2) bie
 
 ## 5. Risinājuma apraksts
 
-Izstrādāta tīmekļa lietotne (practice.englishfever.com), kas savienota ar mācību vidi (WordPress, Tutor LMS). Lietotnes mērķis ir kļūdu diagnostika, izpratne un labošana, nevis runāšanas prasmju attīstīšana.
+Izstrādāta tīmekļa lietotne *English Fever Practice* (practice.englishfever.com), kas savienota ar autores mācību vidi (WordPress, Tutor LMS). Lietotnes mērķis ir gramatikas kļūdu diagnostika, izpratne un labošana; runāšanas prasmes tā neattīsta. Lietotne darbojas datorā un telefonā; apguvējs var sākt kā viesis vai pieslēgties ar mācību vides kontu.
 
-1. **Līmeņa noteikšana.** Adaptīvs tests (12, 24 vai 40 jautājumi) kāpj pa līmeņiem (A2–C1) un nosaka apguvēja līmeni un robus.
-2. **Kļūdu diagnostika.** Katrs uzdevums ir saistīts ar kļūdu tipiem (ap 40, piemēram, *he/she + -s*, prievārds pēc vārda, *for/since*). Apguvējs kļūdu tipu nosaukumus neredz; sistēma tos izmanto nākamā uzdevuma izvēlei. Pēc kļūdas uzreiz seko līdzīgs, ne grūtāks uzdevums par to pašu likumu, lai atšķirtu nejaušu kļūdu no zināšanu roba.
-3. **Atgriezeniskā saite.** Īss skaidrojums angliski vai latviski (līdz B1 līmenim); tipiskas kļūdas atbildē (piemēram, *must to*) tiek nosauktas pirmās. Latviskais skaidrojums dots tikai tad, ja kļūdu patiesi rada latviešu valoda.
-4. **Pakāpenisks atbalsts.** Uzdevumu secība no izvēles un vilkšanas līdz rakstīšanai bez norādes un brīvai rakstīšanai (Wood, Bruner, & Ross, 1976).
-5. **"Second Chance".** Apguvēja kļūdas atgriežas jaunos teikumos; pēc tam pieejami 1–2 brīvprātīgi bonusa jautājumi. Kļūda skaitās izlabota tikai pēc pareizas atbildes citā teikumā, apgūta – pēc pareizām atbildēm vairākās dienās un bez norādes; atkārtojums pēc 1, 3, 7 un 14 dienām (Cepeda et al., 2006; Roediger & Karpicke, 2006).
-6. **Skolotāja skats.** Skolotājs redz katra apguvēja atbildes, sagaidāmo atbildi un apguvēju ziņojumus par uzdevumiem.
+### 5.1. Mērķis: ko vēlos panākt
+
+Apguvējs:
+1. uzzina savu aptuveno līmeni un tipiskās kļūdas;
+2. saprot katras kļūdas cēloni no īsa skaidrojuma (vajadzības gadījumā latviski);
+3. izlabo kļūdu jaunā teikumā un pēc dažām dienām pierāda, ka to joprojām prot.
+
+Skolotājs redz, kuras kļūdas ir nejaušas un kuras ir zināšanu robi, un var nodarbībās mācīt tieši tās tēmas, kurās grupai ir robi.
+
+### 5.2. Kas jau darbojas
+
+- **Līmeņa tests** (12, 24 vai 40 jautājumi). Tests kāpj pa līmeņiem (A2–C1) blokos pa trim jautājumiem no dažādām tēmām. Līmenis tiek aprēķināts no visām atbildēm kopā. Vienas jomas jautājumi neaizņem daudz vairāk par piektdaļu testa. Simulācijā ar 100 virtuāliem apguvējiem 40 jautājumu tests pareizo līmeni noteica ~90% gadījumu, 12 jautājumu tests ~83% gadījumu.
+- **Uzdevumu banka:** 46 gramatikas tēmas un ap 2600 uzdevumu sešos veidos: izvēle, vārdu kārtība, savienošana, vārdu banka, ierakstīšana un brīva rakstīšana. Visi seši domāšanas līmeņi pēc Blūma taksonomijas ir aptverti visās tēmās (Anderson & Krathwohl, 2001). Uzdevumi, ko var atrisināt bez zināšanām vai kuros norāde pasaka atbildi priekšā, ir atzīmēti kā "tikai praksei" un līmeņa testā neparādās.
+- **Kļūdu tipi fonā** (ap 40, piemēram, *he/she + -s*, prievārds pēc vārda, *for/since*, *will* pēc *when*). Tie ir veidoti pēc autores apkopotajām reālajām apguvēju kļūdām. Apguvējs nosaukumus neredz; sistēma tos izmanto nākamā uzdevuma izvēlei un apguves uzskaitei.
+- **Atgriezeniskā saite pēc katras atbildes.** Īss skaidrojums angliski vai latviski (līdz B1 līmenim). Ja atbildē ir tipiska kļūda (piemēram, *I must to finish*, *since five years*, *I'm agree*), tā tiek nosaukta pirmā. Latviskais iemesls dots tikai tad, ja kļūdu patiešām rada latviešu valoda.
+- **Pakāpenisks atbalsts.** Pēc kļūdas uzreiz seko līdzīgs uzdevums par to pašu likumu, ne grūtāks un ne garāks, ar vairāk atbalsta (Wood, Bruner, & Ross, 1976). Ja to atrisina pareizi, kļūda tiek uzskatīta par nejaušu; ja nē, tas ir zināšanu robs. Vienai kļūdai sesijā ne vairāk kā divi papildu uzdevumi, lai apguvējs neiestrēgtu.
+- **"Second Chance".** Apguvēja kļūdas atgriežas jaunos teikumos; garums redzams jau sākumā (piemēram, "5 jautājumi, ap 4 min"). Beigās ir 1–2 brīvprātīgi bonusa jautājumi ar dubultiem punktiem. Pēc līmeņa testa šeit nonāk tikai kļūdas līdz noteiktajam līmenim; grūtākās tiek saglabātas vēlākam laikam.
+- **Apguves kritēriji.** Kļūda skaitās *izlabota* tikai pēc pareizas atbildes citā teikumā. Tā ir *nostiprināta*, ja apguvējs atbild pareizi citā dienā un citā uzdevumā. Izlabotās kļūdas atgriežas pārbaudei pēc 2 un vairāk dienām; kļūdu modelis izmanto atkārtošanas intervālus 1, 3, 7 un 14 dienas (Cepeda et al., 2006; Roediger & Karpicke, 2006).
+- **Motivācija:** punkti (XP), ikdienas sērija, līderu tabula ar segvārdiem un skaņas signāli (pēc izvēles).
+- **Skolotāja skats:** katra apguvēja līmeņa testa rezultāts, aktivitāte, pareizo atbilžu īpatsvars, atbildes ar sagaidāmo atbildi un uzdevuma ID, apguvēju ziņojumi par kļūdainiem uzdevumiem. Lapā "Learning evidence" bez vārdiem redzams: nejaušās kļūdas un robi, izlabotās, nostiprinātās un no jauna atvērtās kļūdas, tēmas ar visvairāk robiem.
+- **Satura pārvaldība:** skolotājs pievieno un labo uzdevumus ar CSV failu; uzdevumi parādās apguvējiem tikai pēc apstiprināšanas.
+- **Izpētes modulis:** informēta piekrišana, nejaušs sadalījums 2×2 eksperimentam (ikdienas sērija ieslēgta vai izslēgta, līderu tabula ieslēgta vai izslēgta) un pseidonimizēts datu eksports.
+
+### 5.3. Kas vēl tiek uzlabots
+
+- **Satura pārbaude.** Uzdevumus un latviešu skaidrojumus pārbauda autore un testētāji. Atrastās kļūdas tiek labotas regulāri (piemēram, pieņemti visi pareizie vārdu kārtības varianti).
+- **Salīdzinājuma uzdevumi.** Ja izvēlētas vairākas tēmas (piemēram, Past Simple un Past Continuous), daļa uzdevumu salīdzinās abas, nevis pārbaudīs katru atsevišķi.
+- **Personīgais mācību plāns.** Pēc līmeņa testa apguvējs izvēlēsies plāna ilgumu (1–4 nedēļas), dienas un laiku (10–30 min). Katru dienu viņš saņems komplektu: ~50% kļūdu labošana, ~30% atkārtošana, ~20% jaunas tēmas. Klāt nāks atgādinājumi e-pastā.
+- **Salīdzināšanas kartītes** ar latviešu piemēriem un tulkošanas uzdevumi tiem, kas izvēlas skaidrojumus latviski.
+- **Rakstīšanas uzdevumu pārbaude ar mākslīgo intelektu**, jo pašlaik brīvās rakstīšanas uzdevumos tiek pārbaudīta tikai vajadzīgā forma.
+- **Audio** uzdevuma instrukcijai (pēc pieprasījuma).
+- **Uzdevumu grūtības kalibrēšana** pēc reālajām apguvēju atbildēm, jo pašlaik grūtību noteikusi autore.
 
 ## 6. Ietekmes mērīšanas plāns
 
@@ -63,6 +89,7 @@ Atšķirībā no vispārīgām valodu lietotnēm risinājums ir veidots tieši l
 
 ## Avoti
 
+- Anderson, L. W., & Krathwohl, D. R. (Eds.). (2001). *A taxonomy for learning, teaching, and assessing: A revision of Bloom's taxonomy of educational objectives*. Longman.
 - Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. *Psychological Bulletin, 132*(3), 354–380.
 - Hattie, J., & Timperley, H. (2007). The power of feedback. *Review of Educational Research, 77*(1), 81–112.
 - Odlin, T. (1989). *Language transfer: Cross-linguistic influence in language learning*. Cambridge University Press.

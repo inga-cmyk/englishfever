@@ -251,9 +251,14 @@ textarea.write { min-height: 110px; resize: vertical; margin-bottom: 18px; }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 /* feedback is information: a neutral card; colour only on the heading and on the learner's own wrong answer */
 .feedback.good, .feedback.bad { background: var(--surface); border: 1px solid var(--line); }
-.langbtn { margin-left: 10px; padding: 2px 9px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font: inherit; font-size: .78rem; font-weight: 700; letter-spacing: .04em; cursor: pointer; }
-.langbtn:hover { color: var(--text); border-color: var(--muted); }
+/* language switch: a glass button showing the flag of the language it switches to, no letters (teacher); the name is in aria-label and title */
+.langbtn { position: relative; overflow: hidden; margin-left: 10px; width: 48px; height: 30px; padding: 0; border: 1px solid rgba(0,0,0,.25); border-radius: 999px; cursor: pointer; background-size: cover; background-position: center; box-shadow: 0 2px 6px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.6); transition: transform .12s, box-shadow .12s; }
+.langbtn::before { content: ''; position: absolute; inset: 0 0 50% 0; background: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.08)); border-radius: 999px 999px 40% 40% / 999px 999px 12px 12px; pointer-events: none; }
+.langbtn.lv { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 5' preserveAspectRatio='none'%3E%3Crect width='10' height='5' fill='%239E3039'/%3E%3Crect y='2' width='10' height='1' fill='%23fff'/%3E%3C/svg%3E"); }
+.langbtn.en { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30' preserveAspectRatio='none'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E"); }
+.langbtn:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.6); }
 .langbtn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.feedback .right-ans { background: var(--good-bg); color: var(--good); border: 1px solid var(--good); border-radius: 6px; padding: 2px 8px; font-weight: 700; font-size: 1.08em; }
 .feedback .mine { background: var(--bad-bg); color: var(--bad); border-radius: 6px; padding: 1px 6px; font-weight: 600; }
 .feedback h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 .feedback.good h3 { color: var(--good); } .feedback.bad h3 { color: var(--bad); }
@@ -483,6 +488,9 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 :root { --chance: #C93A63; --chance-deep: #A82D52; --chance-bg: #FCE9EF; --ref: #5B6B8C; --ref-bg: #EEF1F7; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chance: #C93A63; --chance-deep: #E0557D; --chance-bg: #2C1620; --ref: #9AA9C8; --ref-bg: #1B2030; } }
 :root[data-theme="dark"] { --chance: #C93A63; --chance-deep: #E0557D; --chance-bg: #2C1620; --ref: #9AA9C8; --ref-bg: #1B2030; }
+.card.fn-bonus .btn.ghost { border: 2px solid var(--gold-deep); background: var(--surface); }
+.card.fn-bonus .btn.ghost:hover { border-color: var(--text); background: var(--surface); transform: translateY(-1px); }
+.card.fn-bonus { background: var(--gold-pale); border-color: var(--gold); border-left-width: 6px; }
 .card.fn-chance { background: var(--chance-bg); border-color: var(--chance); border-left-width: 6px; margin-top: 12px; }
 .btn.fn-chance { background: var(--chance); color: #fff; }
 .btn.fn-chance:hover { background: var(--chance-deep); }

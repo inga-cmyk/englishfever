@@ -978,11 +978,11 @@
       var cheers = lv ? ['Pareizi!', 'Labi izdarīts!', 'Jā, tieši tā!', 'Lieliski!', 'Tieši tā!'] : ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
-      var langBtn = hasLv ? h('button', { type: 'button', class: 'langbtn', 'aria-label': lv ? 'Show in English' : 'Rādīt latviski', onclick: function () {
+      var langBtn = hasLv ? h('button', { type: 'button', class: 'langbtn ' + (lv ? 'en' : 'lv'), 'aria-label': lv ? 'Show in English' : 'Rādīt latviski', title: lv ? 'English' : 'Latviski', onclick: function () {
         state.user.lang = lv ? 'en' : 'lv';
         api('account/profile', { lang: state.user.lang }).catch(function () {});
         drawFeedback(r, ans, false);
-      } }, lv ? 'EN' : 'LV') : null;
+      } }) : null;
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
@@ -1007,7 +1007,7 @@
             h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
         } else if (!good || it.kind !== 'mcq') {
           var findWrong = it.kind === 'mcq' && /^Which sentence (is NOT correct|has a mistake)\?/.test(it.q || '');   // the answer is the faulty sentence: do not call it "correct"
-          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), res.show));
+          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), good || findWrong ? res.show : h('span', { class: 'right-ans' }, res.show)));
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
@@ -1176,8 +1176,8 @@
 
   /** After Second Chance: 1 or 2 optional bonus questions for double XP (teacher's rule). Skipping is fine and says so. */
   function bonusCard(s) {
-    var card = h('div', { class: 'card pad-s fn-chance', style: 'margin:12px 0' });
-    var go = h('button', { class: 'btn small fn-chance', type: 'button' }, 'Try it');
+    var card = h('div', { class: 'card pad-s fn-bonus', style: 'margin:12px 0' });
+    var go = h('button', { class: 'btn small', type: 'button' }, 'Try it');
     var no = h('button', { class: 'btn ghost small', type: 'button' }, 'Enough for today');
     go.addEventListener('click', function () {
       go.disabled = no.disabled = true; go.textContent = 'Starting…';

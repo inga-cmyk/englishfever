@@ -978,13 +978,18 @@
       var cheers = lv ? ['Pareizi!', 'Labi izdarīts!', 'Jā, tieši tā!', 'Lieliski!', 'Tieši tā!'] : ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
-      var langBtn = hasLv ? h('button', { type: 'button', class: 'langbtn ' + (lv ? 'en' : 'lv'), 'aria-label': lv ? 'Show in English' : 'Rādīt latviski', title: lv ? 'English' : 'Latviski', onclick: function () {
-        state.user.lang = lv ? 'en' : 'lv';
-        api('account/profile', { lang: state.user.lang }).catch(function () {});
+      function setLang(to) {
+        if ((to === 'lv') === lv) return;
+        state.user.lang = to;
+        api('account/profile', { lang: to }).catch(function () {});
         drawFeedback(r, ans, false);
-      } }) : null;
+      }
+      // the language switch sits under the rule reminder: two small flags, the one in use is marked (teacher, 27 October)
+      var langBtn = hasLv ? h('div', { class: 'langswitch', role: 'group', 'aria-label': lv ? 'Skaidrojuma valoda' : 'Explanation language' },
+        h('button', { type: 'button', class: 'langbtn lv' + (lv ? ' on' : ''), 'aria-pressed': lv ? 'true' : 'false', 'aria-label': 'Latviski', title: 'Latviski', onclick: function () { setLang('lv'); } }),
+        h('button', { type: 'button', class: 'langbtn en' + (lv ? '' : ' on'), 'aria-pressed': lv ? 'false' : 'true', 'aria-label': 'English', title: 'English', onclick: function () { setLang('en'); } })) : null;
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
-        langBtn, res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
+        res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), h('span', { class: 'mine' }, chosen)));
@@ -1012,6 +1017,7 @@
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
       fb.appendChild(ruleDetails(res.skill, !good, lv));
+      if (langBtn) fb.appendChild(langBtn);
 
       var nextText = r.done ? 'See my results' : 'Next';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));

@@ -504,13 +504,14 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 
 /* One look per function, so a card or button tells you what it does before you read it:
    deep teal = practice (the main action, level choice), light raspberry = Second Chance (your mistakes), gold = Surprise me, blue-grey = reference (rule cards). */
-:root { --chance: #C93A63; --chance-deep: #A82D52; --chance-bg: #FCE9EF; --ref: #5B6B8C; --ref-bg: #EEF1F7; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chance: #C93A63; --chance-deep: #E0557D; --chance-bg: #2C1620; --ref: #9AA9C8; --ref-bg: #1B2030; } }
-:root[data-theme="dark"] { --chance: #C93A63; --chance-deep: #E0557D; --chance-bg: #2C1620; --ref: #9AA9C8; --ref-bg: #1B2030; }
+/* Second Chance: a quiet, muted gold (not a celebration), a chance to win the points back (teacher, 27 October); red is kept for the mistake itself */
+:root { --chance: #7D6B43; --chance-deep: #65572F; --chance-bg: #F8F5EE; --ref: #5B6B8C; --ref-bg: #EEF1F7; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --chance: #8F7B4E; --chance-deep: #A08A58; --chance-bg: #1E1B16; --ref: #9AA9C8; --ref-bg: #1B2030; } }
+:root[data-theme="dark"] { --chance: #8F7B4E; --chance-deep: #A08A58; --chance-bg: #1E1B16; --ref: #9AA9C8; --ref-bg: #1B2030; }
 .card.fn-bonus .btn.ghost { border: 2px solid var(--gold-deep); background: var(--surface); }
 .card.fn-bonus .btn.ghost:hover { border-color: var(--text); background: var(--surface); transform: translateY(-1px); }
 .card.fn-bonus { background: var(--gold-pale); border-color: var(--gold); border-left-width: 6px; }
-.card.fn-chance { background: var(--chance-bg); border-color: var(--chance); border-left-width: 6px; margin-top: 12px; }
+.card.fn-chance { background: var(--chance-bg); border-color: var(--line); border-left: 6px solid var(--gold); margin-top: 12px; }
 .btn.fn-chance { background: var(--chance); color: #fff; }
 .btn.fn-chance:hover { background: var(--chance-deep); }
 .btn.fn-chance svg { width: 18px; height: 18px; }

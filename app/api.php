@@ -149,7 +149,7 @@ try {
             if ((int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ? AND created_at > ?', [$u['id'], time() - 86400]) >= $dayCap) {
                 throw new ApiError($u['provider'] === 'guest' ? 'You have done a lot of practice today as a guest. Create a free account to keep going.' : 'That is a lot for one day. Come back tomorrow.', 429);
             }
-            $res = Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0));
+            $res = Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0), !empty($in['skip']));
             Wp::afterResponse((int) $u['id'], !empty($res['done']));
             out($res);
 

@@ -118,16 +118,17 @@ final class Engine
         return ['session' => self::pub($ses), 'item' => Content::publicItem($item, $ses['state']['seed'] + count($ses['state']['served']))];
     }
 
-    public static function answer(int $uid, int $sid, string $itemId, $answer, int $timeMs): array
+    public static function answer(int $uid, int $sid, string $itemId, $answer, int $timeMs, bool $skip = false): array
     {
         $ses = self::load($uid, $sid);
         if ($ses['ended_at'] !== null) throw new ApiError('This session is finished.', 409);
         $st = &$ses['state'];
         if ($st['current'] !== $itemId) throw new ApiError('This task was already answered.', 409);
         $item = Content::item($itemId);
-        $answer = self::cleanAnswer($answer);
-        $g = Grader::grade($item, $answer);
-        $ok = $g['correct'];
+        $answer = $skip ? '' : self::cleanAnswer($answer);   // Skip = "I don't know": counted as not known, no guessing, no XP (teacher, 27 October)
+        $g = Grader::grade($item, $skip ? (in_array($item['kind'], ['gap', 'order', 'match'], true) ? [] : '') : $answer);
+        $ok = $skip ? false : $g['correct'];
+        if ($skip) { $g['specific'] = $g['specific_lv'] = $g['err'] = null; $g['notes'] = []; $g['near'] = false; }
         $skill = $item['skill'];
         $d = $item['d'];
 
@@ -138,7 +139,7 @@ final class Engine
             $dup = Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ? AND item_id = ? AND correct = 1 AND created_at > ?', [$uid, $itemId, time() - 86400]);
             if ($dup) $xp = 0;
         } else {
-            $xp = 2;
+            $xp = $skip ? 0 : 2;
         }
         if ($ok && isset($st['bonus_from']) && count($st['served']) > $st['bonus_from']) $xp *= 2;   // a bonus question after Second Chance: double XP
 
@@ -160,7 +161,7 @@ final class Engine
         $now = time();
         Db::insert('attempts', [
             'user_id' => $uid, 'psession_id' => $sid, 'item_id' => $itemId, 'skill' => $skill, 'level' => $item['level'],
-            'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
+            'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => $skip ? '(skipped)' : mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
             'time_ms' => max(0, min(600000, $timeMs)), 'xp' => $xp, 'created_at' => $now,
             'for_item' => !empty($st['comeback']) ? (function () use ($st) { $q = $st['queue'][count($st['served']) - 1] ?? null; return $q === null ? null : ($st['queue_extra'][$q] ?? $q); })() : null,
             'err' => $errCodes ? implode(',', $errCodes) : null,
@@ -225,6 +226,7 @@ final class Engine
             'fixed' => $fixedNow,
             'locked' => $lockedNow,
             'gap' => $gapNow,
+            'skipped' => $skip,
         ];
         if (isset($g['marks'])) $res['marks'] = $g['marks'];
         if ($item['kind'] === 'match') $res['pairs'] = $item['pairs'];

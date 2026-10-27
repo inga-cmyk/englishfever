@@ -854,6 +854,7 @@
     var it = rev ? rev.item : S.item, ses = S.session;
     var answerGetter, canSubmit = function () { return false; };
     var submit = h('button', { class: 'btn', disabled: true }, 'Check answer');
+    var skipBtn = h('button', { type: 'button', class: 'linkbtn skipbtn' }, 'Skip');   // "I don't know": no guessing, no XP; the topic comes back in Second Chance (teacher, 27 October)
     var area = h('div');
     var qEl = h('div', { class: 'q' });
     var inputs = [];
@@ -928,30 +929,32 @@
     var feedback = h('div', { 'aria-live': 'polite' });
     var taskStart = Date.now();
 
-    function doSubmit() {
-      if (!canSubmit() || submit.disabled) return;
-      submit.disabled = true;
-      var ans = answerGetter();
-      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, time_ms: Date.now() - taskStart }).then(function (r) {
+    function doSubmit(skip) {
+      if (skip !== true && !canSubmit()) return;
+      if (submit.disabled && skip !== true) return;
+      submit.disabled = true; skipBtn.disabled = true;
+      var ans = skip === true ? (it.kind === 'mcq' || it.kind === 'text' || it.kind === 'write' ? '' : []) : answerGetter();
+      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, skip: skip === true, time_ms: Date.now() - taskStart }).then(function (r) {
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
         lock(); showFeedback(r, ans); drawDots(); drawPrev();
         Sound.play(r.result.locked ? 'locked' : r.result.fixed ? 'fixed' : r.result.gap ? 'tricky' : r.result.correct ? 'right' : ((r.result.near || it.kind === 'write') ? 'almost' : 'wrong'));
         if (r.done) S.summary = r.summary;
       }).catch(function (e) {
-        submit.disabled = false;
+        submit.disabled = !canSubmit(); skipBtn.disabled = false;
         if (e.status === 409) { api('session/resume').then(function (x) { if (x.resume) { state.sess = newSess(x.resume.session, x.resume.item); viewSession(); } else { location.hash = '#/home'; } }); return; }
         feedback.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message));
       });
     }
-    submit.addEventListener('click', doSubmit);
+    submit.addEventListener('click', function () { doSubmit(); });
+    skipBtn.addEventListener('click', function () { doSubmit(true); });
 
     function lock() {
       inputs.forEach(function (i) { i.disabled = true; i.readOnly = true; });
       area.querySelectorAll('.dnd-hint').forEach(function (x) { x.remove(); });   // the drag hint is not needed once the answer is checked
       area.querySelectorAll('input[type=radio]').forEach(function (r) { r.disabled = true; });
       if (board) board.lock();
-      submit.remove();
+      submit.remove(); skipBtn.remove();
     }
 
     function showFeedback(r, ans) {
@@ -963,7 +966,7 @@
           if (o === res.show) l.classList.add('right'); else if (o === chosen) l.classList.add('wrong');
         });
       }
-      if (board) board.mark(it.kind === 'match' ? res.marks : res.correct);
+      if (board && !res.skipped) board.mark(it.kind === 'match' ? res.marks : res.correct);
       drawFeedback(r, ans, true);
       var prog = document.getElementById('prog');
       if (prog) prog.style.width = Math.round(100 * ses.n / ses.length) + '%';
@@ -994,16 +997,21 @@
           } });
       }
       var langBtn = hasLv ? [flag('lv'), flag('en')] : [];
-      fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
+      fb.appendChild(h('h3', { class: res.skipped ? 'skipped' : null }, icon(good ? 'check' : res.skipped ? 'arrow' : 'cross'), res.skipped ? (lv ? 'Izlaists – lūk, atbilde' : 'Skipped – here is the answer') : it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
-      if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), h('span', { class: 'mine' }, chosen)));
-      if (!good && (it.kind === 'gap' || it.kind === 'text')) {
+      var cmp = (!good && !res.skipped && (it.kind === 'text' || it.kind === 'order') && typeof res.show === 'string')
+        ? wordDiff(it.kind === 'order' ? (ans || []).join(' ') : String(ans || ''), res.show) : null;   // your sentence and the right one, the different words marked (teacher, 27 October)
+      if (cmp) fb.appendChild(h('div', { class: 'compare' },
+        h('div', { class: 'cmp-row' }, h('span', { class: 'cmp-mark bad', 'aria-hidden': 'true' }, '✗'), h('span', { class: 'sr' }, lv ? 'Tava atbilde: ' : 'Your answer: '), h('span', null, cmp[0])),
+        h('div', { class: 'cmp-row' }, h('span', { class: 'cmp-mark good', 'aria-hidden': 'true' }, '✓'), h('span', { class: 'sr' }, lv ? 'Pareizi: ' : 'Correct: '), h('span', null, cmp[1]))));
+      if (!good && !res.skipped && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), h('span', { class: 'mine' }, chosen)));
+      if (!good && !res.skipped && (it.kind === 'gap' || (it.kind === 'text' && !cmp))) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
         fb.appendChild(h('p', null, h('b', null, lv ? 'Tu uzrakstīji: ' : 'You wrote: '), h('span', { class: 'mine' }, given)));
       }
-      if (!good && it.kind === 'order') fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), h('span', { class: 'mine' }, (ans || []).join(' '))));
+      if (!good && !res.skipped && it.kind === 'order' && !cmp) fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), h('span', { class: 'mine' }, (ans || []).join(' '))));
       var spec = lv && res.specific_lv ? res.specific_lv : res.specific;
       if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), UI.rich(spec)));
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
@@ -1016,7 +1024,7 @@
         if (it.kind === 'match') {
           if (!good && res.pairs) fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Pareizi: ' : 'Correct pairs: '),
             h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
-        } else if (!good || it.kind !== 'mcq') {
+        } else if ((!good || it.kind !== 'mcq') && !cmp) {
           var findWrong = it.kind === 'mcq' && /^Which sentence (is NOT correct|has a mistake)\?/.test(it.q || '');   // the answer is the faulty sentence: do not call it "correct"
           fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), good || findWrong ? res.show : h('span', { class: 'right-ans' }, res.show)));
         }
@@ -1100,9 +1108,9 @@
       dotsEl,
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
-        h('div', { class: 'meta' }, h('span', { class: 'pill dark' }, it.skill_label), levelPill(it.level),
-          h('span', { class: 'pill', title: state.meta.bloom[String(it.bloom)].desc }, bloomName(it.bloom), ' ', bloomDots(it.bloom)), taskIdEl, reportBtn),
-        qEl, area, h('div', { class: 'row' }, submit), feedback)));
+        h('div', { class: 'meta' }, h('span', { class: 'pill dark' }, it.skill_label), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
+          ses.mode === 'placement' ? null : h('span', { class: 'pill', title: state.meta.bloom[String(it.bloom)].desc }, bloomName(it.bloom), ' ', bloomDots(it.bloom)), taskIdEl, reportBtn),
+        qEl, area, h('div', { class: 'row', style: 'gap:18px' }, submit, ses.mode === 'placement' || rev ? null : skipBtn), feedback)));
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
       var a = rev.ans;
       if (it.kind === 'mcq') area.querySelectorAll('input[type=radio]').forEach(function (r) { if (r.value === a) { r.checked = true; chosen = a; } });
@@ -1126,6 +1134,18 @@
         state.sess = null; state.lastSummary = r.summary; go('#/summary');
       }).catch(fail);
     };
+  }
+
+  /** Word-by-word comparison: the words that differ are marked in your answer (red) and in the right one (green). */
+  function wordDiff(a, b) {
+    var A = a.trim().split(/\s+/).filter(Boolean), B = b.trim().split(/\s+/).filter(Boolean);
+    var n = function (w) { return w.toLowerCase().replace(/[^a-z0-9'’]/g, ''); };
+    var L = A.map(function () { return new Array(B.length + 1).fill(0); }); L.push(new Array(B.length + 1).fill(0));
+    for (var i = A.length - 1; i >= 0; i--) for (var j = B.length - 1; j >= 0; j--) L[i][j] = n(A[i]) === n(B[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    var keepA = {}, keepB = {}; i = 0; j = 0;
+    while (i < A.length && j < B.length) { if (n(A[i]) === n(B[j])) { keepA[i++] = keepB[j++] = true; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++; }
+    var out = function (W, keep, cls) { var r = []; W.forEach(function (w, k) { if (k) r.push(' '); r.push(keep[k] ? w : h('mark', { class: cls }, w)); }); return r; };
+    return [out(A, keepA, 'del'), out(B, keepB, 'ins')];
   }
 
   function ruleDetails(skillId, open, lv, flags) {

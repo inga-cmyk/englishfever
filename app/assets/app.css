@@ -264,7 +264,16 @@ details.rule[open] summary { border-color: var(--btn); }
 .langbtn.en { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30' preserveAspectRatio='none'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E"); }
 .langbtn:not(.on):hover { opacity: .85; filter: none; transform: translateY(-1px); }
 .langbtn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-.feedback .right-ans { background: var(--good-bg); color: var(--good); border: 1px solid var(--good); border-radius: 6px; padding: 2px 8px; font-weight: 700; font-size: 1.08em; }
+.feedback.bad h3.skipped svg { color: var(--muted); }
+.feedback .right-ans { background: var(--good-bg); color: var(--good); border: 1px solid var(--good); border-radius: 6px; padding: 2px 8px; font-weight: 700; font-size: 1.08em; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 1.9; }
+.feedback .compare { background: var(--bg); border-radius: 10px; padding: 10px 12px; margin: 8px 0; display: grid; gap: 6px; color: var(--text); font-size: 1.02rem; }
+.feedback .cmp-row { display: flex; gap: 10px; align-items: baseline; }
+.feedback .cmp-mark { flex: none; font-weight: 800; width: 1em; text-align: center; }
+.feedback .cmp-mark.bad { color: var(--bad); } .feedback .cmp-mark.good { color: var(--good); }
+.feedback mark.del { background: var(--bad-bg); color: var(--bad); border-radius: 4px; padding: 0 4px; font-weight: 700; text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.feedback mark.ins { background: var(--good-bg); color: var(--good); border-radius: 4px; padding: 0 4px; font-weight: 700; }
+.skipbtn { color: var(--muted); font-size: .92rem; }
+.skipbtn:hover { color: var(--text); }
 .feedback .mine { background: var(--bad-bg); color: var(--bad); border-radius: 6px; padding: 1px 6px; font-weight: 600; }
 .feedback h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 .feedback.good h3 { color: var(--good); } .feedback.bad h3 { color: var(--text); } .feedback.bad h3 svg { color: var(--bad); }

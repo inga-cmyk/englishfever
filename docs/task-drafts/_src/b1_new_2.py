@@ -86,11 +86,14 @@ P = Topic("Time clauses", **B,
     text=("The time clause has the Present Simple. It can come first (with a comma) or second.", "Laika palīgteikumā ir Present Simple. Tas var būt pirmais (ar komatu) vai otrais."),
     mcq=("After *when / as soon as / until / before / after* we use the Present Simple for the future, not *will*.", "Pēc *when / as soon as / until / before / after* nākotnei lieto Present Simple, nevis *will*."),
     match=("*when, as soon as, until, while* show how two events are connected in time.", "*when, as soon as, until, while* parāda, kā divi notikumi saistīti laikā."))
+# a finished action before the other one: Present Perfect after the time word (Murphy, English Grammar in Use, Unit 25C); reported by a test run, 27 October
+PERF = ("After *when / as soon as / until* we use the Present Simple or the Present Perfect, not *will*. The Present Perfect shows that the first action is finished: *as soon as I have finished it*.",
+        "Pēc *when / as soon as / until* lieto Present Simple vai Present Perfect, nevis *will*. Present Perfect parāda, ka pirmā darbība būs pabeigta: *as soon as I have finished it*.")
 for s, l, al in [("i will call you when i get home", "B1.1", ["when i get home i will call you"]), ("we will leave as soon as everyone is ready", "B1.1", ["as soon as everyone is ready we will leave"]),
                  ("wait here until the doctor calls your name", "B1.1", None),
                  ("i will send you the file as soon as i have finished it", "B1.2", ["as soon as i have finished it i will send you the file"]), ("by the time you arrive we will have finished dinner", "B1.2", None),
                  ("she won't sign the contract until she has read every page", "B1.2", ["until she has read every page she won't sign the contract"])]:
-    P.order(l, s, also=al)
+    P.order(l, s, also=al, why=PERF if (" has " in s or " have finished it" in s) else None)
 P.bank("B1.1", "Let's leave before it ___ dark.", "gets", ["will get", "got"])
 P.bank("B1.1", "I'll cook dinner when I ___ home.", "get", ["will get", "am get"])
 P.bank("B1.1", "We'll go for a walk after we ___ lunch.", "have", ["will have", "had"])
@@ -109,7 +112,7 @@ P.mcq("B1.1", "Choose the correct option: When I ___ the results, I'll tell you.
 P.mcq("B1.1", "Choose the correct option: She'll feel better after she ___ some rest.", "has", ["will have", "had", "is having"])
 P.mcq("B1.1", "Between friends: which sentence is NOT correct?", "I'll text you when I will arrive.", ["I'll text you when I arrive.", "When I arrive, I'll text you.", "I'll text you as soon as I arrive."], b=4)
 P.mcq("B1.1", "At the door: which sentence is correct?", "Don't open the door until I tell you.", ["Don't open the door until I will tell you.", "Don't open the door until I told you.", "Don't open the door until I'm telling you."], b=3)
-P.mcq("B1.2", "Choose the correct option: I'll send the file as soon as I ___ it.", "have finished", ["will finish", "finished", "am finishing"])
+P.mcq("B1.2", "Choose the correct option: I'll send the file as soon as I ___ it.", "have finished", ["will finish", "finished", "am finishing"], PERF)
 P.mcq("B1.2", "In a message: which sentence is NOT correct?", "I'll call you after I will have spoken to her.", ["I'll call you after I have spoken to her.", "I'll call you after I speak to her.", "After I speak to her, I'll call you."], b=4)
 P.text("B1.1", "Rewrite with when: First I will finish work. Then I will call you.", ["I will call you when I finish work.", "I'll call you when I finish work.", "When I finish work, I will call you.", "When I finish work, I'll call you.", "I will call you when I have finished work.", "I'll call you when I have finished work.", "When I have finished work, I will call you.", "When I have finished work, I'll call you."], b=5)
 P.text("B1.1", "Join with as soon as: I will get the tickets. I will let you know.", ["As soon as I get the tickets, I will let you know.", "As soon as I get the tickets, I'll let you know.", "I will let you know as soon as I get the tickets.", "I'll let you know as soon as I get the tickets."], b=5)

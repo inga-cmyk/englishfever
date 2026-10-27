@@ -14,7 +14,7 @@
   --btn: #166B5D;              /* main action (practice): deep teal, 6.3:1 with white text */
   --btn-hover: #11574C;
   --btn-bg: #E3F3EF;
-  --link: #C42554;             /* small raspberry text on cream */
+  --link: #166B5D;             /* links: deep teal (red is kept for mistakes, teacher 27 October) */
   --line: #E7E2D5;
   --good: #2E7D5B;
   --good-bg: #E6F2EC;
@@ -32,13 +32,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0B0A0A; --surface: #171515; --text: #F3EFE6; --text-soft: #BDB8AD; --muted: #A39E93; --line: #2C2926;
-    --ink: #F3EFE6; --body: #BDB8AD; --link: #F0577F; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
+    --ink: #F3EFE6; --body: #BDB8AD; --link: #5CCDB6; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
     --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(63,193,171,.34); --btn: #1A7F70; --btn-hover: #22977F; --btn-bg: #10241F;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0B0A0A; --surface: #171515; --text: #F3EFE6; --text-soft: #BDB8AD; --muted: #A39E93; --line: #2C2926;
-  --ink: #F3EFE6; --body: #BDB8AD; --link: #F0577F; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
+  --ink: #F3EFE6; --body: #BDB8AD; --link: #5CCDB6; --gold-pale: #2A2418; --good: #6FCF9F; --good-bg: #14261D;
   --bad: #FF8FAE; --bad-bg: #2C1620; --shadow: none; --shadow-hover: 0 0 0 1px rgba(222,193,122,.35), 0 12px 30px rgba(222,193,122,.10); --btn-glow: 0 8px 22px rgba(63,193,171,.34); --btn: #1A7F70; --btn-hover: #22977F; --btn-bg: #10241F;
 }
 
@@ -144,7 +144,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 .ok { color: var(--good); background: var(--good-bg); padding: 10px 14px; border-radius: 12px; margin-bottom: 14px; font-size: .92rem; }
 .tabs { display: flex; gap: 4px; padding: 4px; background: var(--bg); border: 1px solid var(--line); border-radius: 999px; margin-bottom: 18px; }
 .tabs button { flex: 1; white-space: nowrap; border: 0; background: none; padding: 9px 10px; border-radius: 999px; cursor: pointer; color: var(--text-soft); font-weight: 600; }
-.tabs button[aria-selected="true"] { background: var(--black); color: var(--gold); }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 4px rgba(0,0,0,.12); }   /* neutral, not black (teacher, 27 October) */
 
 /* welcome */
 .hero { background: var(--black); color: #E9E5DA; border-radius: 24px; padding: clamp(28px, 6vw, 56px); margin-bottom: 22px; position: relative; overflow: hidden; }
@@ -168,7 +168,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 .pill.good { background: var(--good-bg); color: var(--good); }
 .bloomdots { display: inline-flex; gap: 3px; }
 .bloomdots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); display: block; }
-.bloomdots i.on { background: var(--raspberry); }
+.bloomdots i.on { background: var(--gold-deep); }
 
 /* skill list */
 .skillgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -177,14 +177,14 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 .skill .top { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
 .skill .name { font-weight: 650; color: var(--text); }
 .meter { height: 6px; background: var(--line); border-radius: 6px; overflow: hidden; }
-.meter > i { display: block; height: 100%; background: var(--raspberry); border-radius: 6px; transition: width .4s; }
+.meter > i { display: block; height: 100%; background: var(--btn); border-radius: 6px; transition: width .4s; }
 .meter.gold > i { background: var(--gold); }
 
 /* simple bars */
 .bars { display: flex; align-items: end; gap: 8px; height: 110px; }
 .bars .b { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; justify-content: end; }
 .bars .col { width: 100%; max-width: 38px; background: var(--gold); border-radius: 8px 8px 3px 3px; min-height: 3px; }
-.bars .col.today { background: var(--raspberry); }
+.bars .col.is-today { background: var(--gold-deep); }
 .bars .d { font-size: .72rem; color: var(--muted); }
 .bars .m { font-size: .72rem; color: var(--text); font-variant-numeric: tabular-nums; }
 .hbars { display: grid; gap: 10px; }
@@ -319,7 +319,7 @@ td.r, th.r { text-align: right; }
 .lb-row:last-child { border-bottom: 0; }
 .lb-row.me { background: var(--gold-pale); }
 .lb-rank { font-weight: 800; color: var(--text); font-variant-numeric: tabular-nums; text-align: center; }
-.lb-rank.top { color: var(--raspberry); }
+
 .lb-name { color: var(--text); font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
 .lb-xp { font-weight: 750; color: var(--text); font-variant-numeric: tabular-nums; }
 
@@ -569,3 +569,33 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .guestbar { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 0 20px; }
 .guestbar .btn { justify-content: center; min-height: 46px; }
 .guestbar .btn svg { width: 17px; height: 17px; }
+
+/* XP chips keep their own text colour in dark mode too (gold text on gold was unreadable) */
+html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
+:root[data-theme="dark"] .feedback .pill.xp-2 { color: var(--gold); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .feedback .pill.xp-2 { color: var(--gold); } }
+/* the words a writing task asks for: a warm grey mark, italics alone are easy to miss (teacher, 27 October) */
+.q-instr em { font-style: italic; background: #ECE6DA; color: var(--text); border-radius: 5px; padding: 0 5px; }
+:root[data-theme="dark"] .q-instr em { background: #3A342B; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .q-instr em { background: #3A342B; } }
+.home .fn-chance { margin-bottom: 14px; }
+/* quiet sound switch */
+.switch { position: relative; display: inline-block; width: 48px; height: 28px; flex: none; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.switch i { position: absolute; inset: 0; background: var(--line); border-radius: 999px; transition: background .15s; cursor: pointer; }
+.switch i::before { content: ''; position: absolute; left: 3px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform .15s; }
+.switch input:checked + i { background: var(--btn); }
+.switch input:checked + i::before { transform: translateX(20px); }
+.switch input:focus-visible + i { outline: 3px solid var(--gold); outline-offset: 2px; }
+.sound-ic svg { width: 26px; height: 26px; color: var(--text); }
+
+/* leaderboard medals: ribbon + coin (svg), a slow shine over the coin */
+.medal { position: relative; display: inline-block; width: 34px; height: 41px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.22)); }
+.medal svg { display: block; }
+.medal::after { content: ''; position: absolute; left: 4px; top: 13px; width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.85) 50%, transparent 65%) no-repeat; background-size: 250% 100%; background-position: 130% 0; animation: medalshine 3.4s ease-in-out infinite; pointer-events: none; }
+.medal.m2::after { animation-delay: .6s; } .medal.m3::after { animation-delay: 1.2s; }
+@keyframes medalshine { 0% { background-position: 130% 0; } 45%, 100% { background-position: -30% 0; } }
+.lb-min { display: inline-flex; align-items: center; gap: 6px; justify-content: flex-end; }
+.patient { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--btn-bg); }
+.patient svg { width: 15px; height: 15px; color: var(--btn); }
+.fold-icons { display: inline-flex; gap: 10px; } .fold-icons svg { width: 20px; height: 20px; color: var(--muted); }

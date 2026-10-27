@@ -440,7 +440,7 @@
       var ic = started ? installCard(false) : null; if (ic) nodes.push(ic);
       var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
       if (started) {   // progress above the topics (teacher, 27 October)
-        nodes.push(foldCard('progress', 'My progress', 'this week and thinking skills', function () {
+        nodes.push(foldCard('progress', 'My progress', h('span', { class: 'fold-icons', 'aria-label': 'this week and thinking skills' }, icon('clock'), icon('up')), function () {
           return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'Your thinking skills'), bloomBars(d.bloom)));
         }));
       }
@@ -496,7 +496,7 @@
     return h('div', { class: 'bars', role: 'img', 'aria-label': 'Minutes practised in the last 7 days' }, week.map(function (w) {
       var dt = new Date(w.day + 'T12:00:00');
       return h('div', { class: 'b' }, h('div', { class: 'm' }, w.seconds ? String(Math.max(1, Math.round(w.seconds / 60))) : ''),
-        h('div', { class: 'col' + (w.day === today ? ' today' : ''), style: 'height:' + Math.max(3, Math.round(70 * w.seconds / max)) + 'px' }),
+        h('div', { class: 'col' + (w.day === today ? ' is-today' : ''), style: 'height:' + Math.max(3, Math.round(70 * w.seconds / max)) + 'px' }),
         h('div', { class: 'd' }, dt.toLocaleDateString(undefined, { weekday: 'short' }).slice(0, 2)));
     }));
   }
@@ -822,8 +822,7 @@
     redraw();
     show(h('div', { class: 'sess' }, h('div', { class: 'card' },
       h('div', { class: 'row between' }, h('h1', { style: 'margin:0' }, 'Practice'), h('span', { class: 'row', style: 'gap:8px' }, (d.comeback && d.comeback.open) ? comebackButton('btn small fn-chance', 'Second Chance (' + d.comeback.open + ')') : null, surpriseButton('btn small fn-surprise'))),
-      holder, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn,
-        h('a', { class: 'linkbtn small', href: '#/placement' }, 'Placement test')))));
+      holder, err, h('div', { class: 'row', style: 'margin-top:16px' }, startBtn))));
   }
 
   // ───────── session ─────────
@@ -1290,6 +1289,19 @@
     m.el.querySelector('#c').onclick = m.close;
   }
 
+  /** A medal for the top three: a ribbon and a coin with a rim and the place number; the coin shines now and then. */
+  function medal(rank) {
+    var c = [['#FFF1B8', '#E8C45A', '#A87A18'], ['#FFFFFF', '#C9D0D8', '#7F8995'], ['#FFE0C4', '#CD8A4F', '#7E4720']][rank - 1];
+    var id = 'md' + rank + Math.random().toString(36).slice(2, 7);
+    var svg = '<svg viewBox="0 0 40 48" width="34" height="41" aria-hidden="true">'
+      + '<path d="M9 0h9l5 14-6 6z" fill="#1A7F70"/><path d="M31 0h-9l-5 14 6 6z" fill="#C93A63"/>'
+      + '<defs><radialGradient id="' + id + '" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="' + c[0] + '"/><stop offset=".55" stop-color="' + c[1] + '"/><stop offset="1" stop-color="' + c[2] + '"/></radialGradient></defs>'
+      + '<circle cx="20" cy="31" r="15" fill="' + c[2] + '"/><circle cx="20" cy="31" r="12.5" fill="url(#' + id + ')"/><circle cx="20" cy="31" r="10" fill="none" stroke="' + c[2] + '" stroke-opacity=".45" stroke-dasharray="1.5 1.8"/>'
+      + '<text x="20" y="35.5" text-anchor="middle" font-size="12" font-weight="800" font-family="Inter, system-ui, sans-serif" fill="' + (rank === 2 ? '#2b3138' : '#3d2608') + '">' + rank + '</text></svg>';
+    var el = h('span', { class: 'medal m' + rank, title: ['Gold', 'Silver', 'Bronze'][rank - 1] + ' medal' }); el.innerHTML = svg;
+    return el;
+  }
+
   // ───────── leaderboard ─────────
   function viewLeaderboard() {
     if (!feat('leaderboard')) { location.hash = '#/home'; return; }
@@ -1299,16 +1311,18 @@
       holder.replaceChildren(loading());
       api('leaderboard', undefined, { period: period }).then(function (r) {
         var rows = r.rows;
+        // the top three get shining medals; the one who spent the most time thinking gets a clock badge (teacher, 27 October)
+        var maxMin = rows.reduce(function (m, x) { return Math.max(m, x.minutes || 0); }, 0);
         var list = rows.length ? h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, rows.map(function (x) {
-          return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, h('div', { class: 'lb-rank' + (x.rank <= 3 ? ' top' : '') }, String(x.rank)),
+          return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, x.rank <= 3 ? h('div', { class: 'lb-rank' }, medal(x.rank)) : h('div', { class: 'lb-rank' }, String(x.rank)),
             h('div', { class: 'lb-name' }, UI.avatar(x.avatar, x.nickname, 30), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
-            h('div', { class: 'small muted num' }, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
+            h('div', { class: 'small muted num lb-min' }, (maxMin > 0 && x.minutes === maxMin) ? h('span', { class: 'patient', title: 'Most time spent thinking' }, icon('clock')) : null, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
         })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
         holder.replaceChildren(
           list,
           (r.me && r.me.rank > 20) ? h('div', { class: 'card pad-s', style: 'margin-top:12px' }, 'Your rank: ', h('b', { style: 'color:var(--text)' }, '#' + r.me.rank), ' · ' + r.me.xp + ' XP') : null,
-          r.guest ? h('div', { class: 'card pad-s', style: 'margin-top:12px;border-color:var(--gold)' }, h('b', { style: 'color:var(--text)' }, 'Guests are not ranked. '),
-            state.config.register_url ? registerLink('', 'Create a free account') : null)
+          r.guest ? h('div', { class: 'card pad-s row between', style: 'margin-top:12px' }, h('b', { style: 'color:var(--text)' }, 'Guests are not ranked.'),
+            state.config.register_url ? registerLink('btn small', 'Create account') : null)
           : ((r.hidden && state.user.role !== 'teacher') ? h('p', { class: 'small muted', style: 'margin-top:12px' }, 'You are hidden from the leaderboard.') : null));
       }).catch(fail);
     }
@@ -1350,9 +1364,9 @@
         } }, 'Download my data'),
         h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my results'),
         h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener', class: 'small' }, 'Privacy policy'))));
-    cards.push(h('div', null, h('button', { class: 'btn dark', onclick: function () {
+    cards.push(h('div', null, h('button', { class: 'btn ghost', onclick: function () {
       api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
-    } }, icon('logout'), guest ? 'Leave guest session' : 'Sign out')));
+    } }, icon('logout'), guest ? 'Quit' : 'Sign out')));
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
   }
 
@@ -1374,9 +1388,9 @@
   /** Profile: sounds, off by default; kept on this device. */
   function soundCard() {
     var cb = h('input', { type: 'checkbox', id: 'snd', checked: Sound.on(), onchange: function () { Sound.set(cb.checked); if (cb.checked) Sound.play('right'); } });
-    return h('div', { class: 'card' }, h('h2', null, 'Sounds'),
-      h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, cb, 'Play a soft sound for right and wrong answers'),
-      h('p', { class: 'small muted', style: 'margin:8px 0 0' }, 'Off until you switch it on. Saved on this device.'));
+    // an icon and a switch, no explanation (teacher, 27 October: people know these signs)
+    return h('div', { class: 'card pad-s row between', style: 'flex-wrap:nowrap' }, h('span', { class: 'sound-ic', 'aria-hidden': 'true' }, icon('volume')),
+      h('label', { class: 'switch', title: 'Sound on / off' }, cb, h('i'), h('span', { class: 'sr' }, 'Sound for right and wrong answers')));
   }
 
   /** Grammar explanations in English or Latvian (Latvian is written for levels up to B1.2). */

@@ -360,10 +360,11 @@ final class CustomItems
      * "Put the words in order."), so what makes a task its own is the sentence of a word-order task, the correct option of a
      * multiple-choice task and the pairs of a matching task.
      */
+    /** Same topic and text (italics marks * do not count: a task that only gained them is updated in place). */
     private static function dupKey(array $it): string
     {
         $pairs = isset($it['pairs']) ? json_encode($it['pairs'], JSON_UNESCAPED_UNICODE) : '';
-        return mb_strtolower($it['q']) . '|' . $it['skill'] . (isset($it['sentence']) ? '|' . mb_strtolower($it['sentence']) : '')
+        return mb_strtolower(str_replace('*', '', $it['q'])) . '|' . $it['skill'] . (isset($it['sentence']) ? '|' . mb_strtolower($it['sentence']) : '')
             . (isset($it['correct']) && is_string($it['correct']) ? '|' . mb_strtolower($it['correct']) : '') . ($pairs !== '' ? '|' . mb_strtolower($pairs) : '');
     }
 
@@ -371,7 +372,7 @@ final class CustomItems
     private static function oldKey(array $it): string
     {
         $k = $it['kind'] === 'mcq' ? ($it['correct'] ?? '') : ($it['kind'] === 'order' ? ($it['sentence'] ?? '') : ($it['q'] ?? ''));
-        return $it['skill'] . '|' . $it['level'] . '|' . $it['kind'] . '|' . mb_strtolower(trim((string) $k));
+        return $it['skill'] . '|' . $it['level'] . '|' . $it['kind'] . '|' . mb_strtolower(trim(str_replace('*', '', (string) $k)));
     }
 
     /** What a multiple-choice, word-order or matching task is, apart from its wording ('' for other kinds). */

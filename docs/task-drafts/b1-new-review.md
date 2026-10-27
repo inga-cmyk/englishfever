@@ -11,8 +11,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the words] **Put the words in order.**   ✔ did you use to play football as a child   (also accepted: as a child did you use to play football)  — Questions and negatives: did / didn't + use to (no -d): Did you use to…? I didn't use to…
 - [drag the word] **My mother ___ cook every evening, but now she is too busy.**   ✔ used to   (chips: used to | use to | is used to)  — used to + base verb: a past habit or state that is not true now.
 - [drag the word] **I ___ like fish, but now I love it.**   ✔ didn't use to   (chips: didn't use to | didn't used to | don't use to)  — Questions and negatives: did / didn't + use to (no -d): Did you use to…? I didn't use to…
-- [type a word] **Complete with the correct form of use: We ___ to go to the beach every summer.**   ✔ used  — used to + base verb: a past habit or state that is not true now.
-- [type a word] **Complete with the correct form of use: Did you ___ to walk to school?**   ✔ use  — Questions and negatives: did / didn't + use to (no -d): Did you use to…? I didn't use to…
+- [type a word] **Complete with the correct form of *use*: We ___ to go to the beach every summer.**   ✔ used  — used to + base verb: a past habit or state that is not true now.
+- [type a word] **Complete with the correct form of *use*: Did you ___ to walk to school?**   ✔ use  — Questions and negatives: did / didn't + use to (no -d): Did you use to…? I didn't use to…
 - [type a word] **When I was young, I ___ the piano every day. (play)**   ✔ used to play | would play | played  — used to + base verb: a past habit or state that is not true now.
 - [choose] **Choose the correct option: She ___ have long hair, but now it is short.**   ✔ used to   ✗ use to | is used to | was used to  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
 - [choose] **Which sentence is about a past habit?**   ✔ We used to play cards on Sundays.   ✗ We played cards last Sunday. | We are playing cards now. | We will play cards on Sunday.  — used to + base verb = a past habit. be used to + -ing = it is normal for me now.
@@ -76,8 +76,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the word] **She plays ___ violin in an orchestra.**   ✔ the   (chips: the | an | many)  — the with musical instruments: play the violin.
 - [drag the word] **I'd like ___ glass of water, please.**   ✔ a   (chips: a | an | many)  — One glass: a glass of water.
 - [drag the word] **We stayed at ___ hotel near the station. ___ hotel was clean.**   ✔ a / The   (chips: a | The | an | Some)  — a the first time, the when we talk about it again: a hotel … The hotel was clean.
-- [type a word] **Complete with a, an or the: My sister works as ___ nurse in a hospital.**   ✔ a  — a / an with jobs: She is a nurse.
-- [type a word] **Complete with a, an or the: We visited ___ United States last year.**   ✔ the  — the with some names: the United States, the Alps, the Baltic Sea.
+- [type a word] **Complete with *a*, *an* or *the*: My sister works as ___ nurse in a hospital.**   ✔ a  — a / an with jobs: She is a nurse.
+- [type a word] **Complete with *a*, *an* or *the*: We visited ___ United States last year.**   ✔ the  — the with some names: the United States, the Alps, the Baltic Sea.
 - [choose] **Choose the correct option: Mount Everest is ___ highest mountain in the world.**   ✔ the   ✗ a | an | (no article)  — the before a superlative: the highest, the most talented.
 - [choose] **Choose the correct option: He is ___ honest man.**   ✔ an   ✗ a | some | (no article)  — an before a vowel sound: an apple, an hour, an honest man. a before a consonant sound.
 - [choose] **Choose the correct option: ___ Baltic Sea is cold in winter.**   ✔ The   ✗ A | An | (no article)  — the with some names: the United States, the Alps, the Baltic Sea.
@@ -91,15 +91,15 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the words] **Put the words in order.**   ✔ what a lovely surprise to see you here  — a / an = one of many or the first time. the = known or the only one. Names of most cities and countries have no article.
 - [drag the words] **Put the words in order.**   ✔ she spent half an hour waiting for the bus  — half an hour: an before the vowel sound in hour.
 - [drag the word] **He gives money to ___ poor.**   ✔ the   (chips: the | a | an)  — the + adjective = a group of people: the elderly, the poor.
-- [type a word] **Complete with a, an or the: It was such ___ nice day that we went swimming.**   ✔ a  — such a / quite a / what a + adjective + noun: such a nice day, What a view!
-- [type a word] **Complete with a, an or the: She is one of ___ most talented musicians I know.**   ✔ the  — the before a superlative: the highest, the most talented.
-- [type a word] **Complete with a, an or the: I have never been to ___ Alps, but I'd love to go skiing there.**   ✔ the  — the with some names: the United States, the Alps, the Baltic Sea.
+- [type a word] **Complete with *a*, *an* or *the*: It was such ___ nice day that we went swimming.**   ✔ a  — such a / quite a / what a + adjective + noun: such a nice day, What a view!
+- [type a word] **Complete with *a*, *an* or *the*: She is one of ___ most talented musicians I know.**   ✔ the  — the before a superlative: the highest, the most talented.
+- [type a word] **Complete with *a*, *an* or *the*: I have never been to ___ Alps, but I'd love to go skiing there.**   ✔ the  — the with some names: the United States, the Alps, the Baltic Sea.
 - [choose] **Choose the correct option: What ___ beautiful view!**   ✔ a   ✗ an | the | (no article)  — such a / quite a / what a + adjective + noun: such a nice day, What a view!
 - [choose] **Which sentence is correct?**   ✔ She spent half an hour waiting for the bus.   ✗ She spent half hour waiting for the bus. | She spent an half hour waiting for the bus. | She spent a half an hour waiting for the bus.  — half an hour: an before the vowel sound in hour.
 - [choose] **Which sentence is NOT correct?**   ✔ He lives in the Latvia.   ✗ He lives in Latvia. | He lives in the Netherlands. | He lives in the UK.  — No article with most countries: Latvia. But: the United States, the UK.
 - [choose] **Choose the correct option: He is quite ___ good player.**   ✔ a   ✗ an | (no article) | some  — such a / quite a / what a + adjective + noun: such a nice day, What a view!
 - [type the sentence] **Rewrite with the elderly: Old people need more care.**   ✔ The elderly need more care. | The elderly need more care in hospitals.  — the + adjective = a group of people: the elderly, the poor.
-- [type a word] **Complete with a, an or the: In this town, ___ elderly get free bus tickets.**   ✔ the | The  — the + adjective = a group of people: the elderly, the poor.
+- [type a word] **Complete with *a*, *an* or *the*: In this town, ___ elderly get free bus tickets.**   ✔ the | The  — the + adjective = a group of people: the elderly, the poor.
 - [match] **Match each pattern with its example.**   ✔ what + a / an = What a view!  ·  the + nationality = the Swiss  ·  half + a / an = half an hour  ·  the + adjective = the rich  — Fixed patterns: What a view! half an hour, the Swiss, the rich.
 
 ## Quantity (31 questions)
@@ -112,8 +112,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the word] **Would you like ___ tea?**   ✔ some   (chips: some | two | many)  — some in positive sentences and offers, any in questions and negatives.
 - [drag the word] **Is there ___ bread left?**   ✔ any   (chips: any | a | many)  — some in positive sentences and offers, any in questions and negatives.
 - [drag the word] **I need ___ eggs for the cake.**   ✔ some   (chips: some | a | much)  — some in positive sentences and offers, any in questions and negatives.
-- [type a word] **Complete with one word (much, many, too, enough…): There are too ___ cars in the city centre.**   ✔ many  — many + plural nouns: many cars, many people.
-- [type a word] **Complete with one word (much, many, too, enough…): There is too ___ traffic in the city centre.**   ✔ much  — much + uncountable nouns (time, traffic, homework); many + plural nouns.
+- [type a word] **Complete with one word (*much, many, too, enough*…): There are too ___ cars in the city centre.**   ✔ many  — many + plural nouns: many cars, many people.
+- [type a word] **Complete with one word (*much, many, too, enough*…): There is too ___ traffic in the city centre.**   ✔ much  — much + uncountable nouns (time, traffic, homework); many + plural nouns.
 - [choose] **Choose the correct option: We don't have ___ milk.**   ✔ any   ✗ a | many | a few  — some in positive sentences and offers, any in questions and negatives.
 - [choose] **Choose the correct option: How ___ people are in the room?**   ✔ many   ✗ much | a lot | a little  — many + plural nouns: many cars, many people.
 - [choose] **Choose the correct option: There isn't ___ sugar in my tea.**   ✔ much   ✗ many | a few | few  — much + uncountable nouns (time, traffic, homework); many + plural nouns.
@@ -130,15 +130,15 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the word] **We didn't take ___ photos on holiday.**   ✔ many   (chips: many | much | a little)  — many + plural nouns: many cars, many people.
 - [drag the word] **Hurry up! There is very ___ time left.**   ✔ little   (chips: little | few | many)  — little + uncountable noun = almost no: very little time.
 - [drag the word] **The room isn't big ___ for twenty people.**   ✔ enough   (chips: enough | too | very)  — enough after an adjective (big enough), before a noun (enough money).
-- [type a word] **Complete with one word (much, many, too, enough…): There is ___ much sugar in this coffee. I can't drink it.**   ✔ too | so | far too | way too  — too much / too many = more than we need.
-- [type a word] **Complete with one word (much, many, too, enough…): How ___ homework do you have today?**   ✔ much  — much + uncountable nouns (time, traffic, homework); many + plural nouns.
+- [type a word] **Complete with one word (*much, many, too, enough*…): There is ___ much sugar in this coffee. I can't drink it.**   ✔ too | so | far too | way too  — too much / too many = more than we need.
+- [type a word] **Complete with one word (*much, many, too, enough*…): How ___ homework do you have today?**   ✔ much  — much + uncountable nouns (time, traffic, homework); many + plural nouns.
 - [choose] **Choose the correct option: There were ___ people at the concert, so we couldn't find seats.**   ✔ too many   ✗ too much | a little | much  — too much / too many = more than we need.
 - [choose] **Choose the correct option: We haven't got ___ money to buy a car.**   ✔ enough   ✗ many | a few | few  — enough after an adjective (big enough), before a noun (enough money).
 - [choose] **Which sentence is NOT correct?**   ✔ I have many time for hobbies.   ✗ I have a lot of time for hobbies. | I don't have much time for hobbies. | I have a little time for hobbies.  — much + uncountable nouns (time, traffic, homework); many + plural nouns.
 - [choose] **Which sentence is correct?**   ✔ There is little traffic at night, so the drive is quick.   ✗ There are little traffic at night, so the drive is quick. | There is few traffic at night, so the drive is quick. | There is a few traffic at night, so the drive is quick.  — little + uncountable noun = almost no: very little time.
 - [choose] **Choose the correct option: She has ___ experience, so the company hired her at once.**   ✔ a lot of   ✗ many | a few | few  — a lot of + plural or uncountable noun, mostly in positive sentences.
 - [type the sentence] **Rewrite with enough: The soup is too cold.**   ✔ The soup isn't hot enough. | The soup is not hot enough. | The soup isn't warm enough. | The soup is not warm enough.  — enough after an adjective (big enough), before a noun (enough money).
-- [type a word] **Complete with one word (much, many, too, enough…): We can't swim today. The water isn't warm ___ .**   ✔ enough  — enough after an adjective (big enough), before a noun (enough money).
+- [type a word] **Complete with one word (*much, many, too, enough*…): We can't swim today. The water isn't warm ___ .**   ✔ enough  — enough after an adjective (big enough), before a noun (enough money).
 - [match] **Match each phrase with its meaning.**   ✔ too many = more than we need (things we can count)  ·  not enough = less than we need  ·  enough = as much as we need  ·  very little = almost nothing  — too many = more than we need, not enough = less, enough = as much as we need, very little = almost nothing.
 
 ## Relative clauses (40 questions)
@@ -151,8 +151,8 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the word] **A dentist is a person ___ looks after your teeth.**   ✔ who   (chips: who | which | where)  — who for people: the woman who lives next door.
 - [drag the word] **A library is a place ___ you can borrow books.**   ✔ where   (chips: where | who | whose)  — where for places: the café where we met.
 - [drag the word] **This is the song ___ I told you about.**   ✔ that   (chips: that | who | whose | where)  — that for people or things, without commas: the song that I told you about.
-- [type a word] **Complete with a relative word (who, which, whose, where…): She is the girl ___ brother plays for the national team.**   ✔ whose  — whose = belongs to: the man whose car was stolen.
-- [type a word] **Complete with a relative word (who, which, whose, where…): The hotel ___ we stayed was close to the beach.**   ✔ where | in which | at which  — where for places: the café where we met.
+- [type a word] **Complete with a relative word (*who, which, whose, where*…): She is the girl ___ brother plays for the national team.**   ✔ whose  — whose = belongs to: the man whose car was stolen.
+- [type a word] **Complete with a relative word (*who, which, whose, where*…): The hotel ___ we stayed was close to the beach.**   ✔ where | in which | at which  — where for places: the café where we met.
 - [choose] **Choose the correct option: The woman ___ lives next door is a nurse.**   ✔ who   ✗ which | where | whose  — who for people: the woman who lives next door.
 - [choose] **Choose the correct option: This is the phone ___ I bought last week.**   ✔ which   ✗ who | where | whose  — which for things: the phone which I bought.
 - [choose] **Choose the correct option: That is the café ___ we first met.**   ✔ where   ✗ who | which | whose  — where for places: the café where we met.
@@ -172,9 +172,9 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 - [drag the words] **Put the words in order.**   ✔ the hotel where we stayed was right next to the beach  — where for places: the café where we met.
 - [drag the word] **The house ___ roof is red belongs to my aunt.**   ✔ whose   (chips: whose | which | who | where)  — whose = belongs to: the man whose car was stolen.
 - [drag the word] **Paris, ___ is the capital of France, is very busy in summer.**   ✔ which   (chips: which | that | who)  — Extra information about a named person or thing goes between commas, with who / which, never that: Tom, who is my neighbour, …
-- [type a word] **Complete with a relative word (who, which, whose, where…): This is the road along ___ we walked.**   ✔ which  — After a preposition use which: the hotel in which we stayed.
-- [type a word] **Complete with a relative word (who, which, whose, where…): Anna, ___ husband is a pilot, travels a lot.**   ✔ whose  — Extra information about a named person or thing goes between commas, with who / which, never that: Tom, who is my neighbour, …
-- [type a word] **Complete with a relative word (who, which, whose, where…): Last year we visited Rome, ___ my parents got married.**   ✔ where | in which  — where for places: the café where we met.
+- [type a word] **Complete with a relative word (*who, which, whose, where*…): This is the road along ___ we walked.**   ✔ which  — After a preposition use which: the hotel in which we stayed.
+- [type a word] **Complete with a relative word (*who, which, whose, where*…): Anna, ___ husband is a pilot, travels a lot.**   ✔ whose  — Extra information about a named person or thing goes between commas, with who / which, never that: Tom, who is my neighbour, …
+- [type a word] **Complete with a relative word (*who, which, whose, where*…): Last year we visited Rome, ___ my parents got married.**   ✔ where | in which  — where for places: the café where we met.
 - [choose] **Choose the correct option: My brother, ___ lives in Berlin, is a nurse.**   ✔ who   ✗ that | which | whose  — Extra information about a named person or thing goes between commas, with who / which, never that: Tom, who is my neighbour, …
 - [choose] **Choose the correct option: The report, ___ I finished last night, is on your desk.**   ✔ which   ✗ that | who | what  — Extra information about a named person or thing goes between commas, with who / which, never that: Tom, who is my neighbour, …
 - [choose] **Which sentence is NOT correct?**   ✔ My sister, that lives in Paris, is a teacher.   ✗ My sister, who lives in Paris, is a teacher. | My sister who lives in Paris is a teacher. | The sister that lives in Paris is a teacher.  — Extra information about a named person or thing goes between commas, with who / which, never that: Tom, who is my neighbour, …
@@ -216,16 +216,16 @@ Eight topics, three files: `b1-new-1.csv`, `b1-new-2.csv`, `b1-new-3.csv`. Each 
 
 ### B1.2 (16)
 
-- [drag the words] **Put the words in order.**   ✔ i will send you the file as soon as i have finished it   (also accepted: as soon as i have finished it i will send you the file)  — Time word + Present Simple, then will or going to in the main clause.
+- [drag the words] **Put the words in order.**   ✔ i will send you the file as soon as i have finished it   (also accepted: as soon as i have finished it i will send you the file)  — After when / as soon as / until we use the Present Simple or the Present Perfect, not will. The Present Perfect shows that the first action is finished: as soon as I have finished it.
 - [drag the words] **Put the words in order.**   ✔ by the time you arrive we will have finished dinner   (also accepted: we will have finished dinner by the time you arrive)  — Time word + Present Simple, then will or going to in the main clause.
-- [drag the words] **Put the words in order.**   ✔ she won't sign the contract until she has read every page   (also accepted: until she has read every page she won't sign the contract)  — Time word + Present Simple, then will or going to in the main clause.
+- [drag the words] **Put the words in order.**   ✔ she won't sign the contract until she has read every page   (also accepted: until she has read every page she won't sign the contract)  — After when / as soon as / until we use the Present Simple or the Present Perfect, not will. The Present Perfect shows that the first action is finished: as soon as I have finished it.
 - [drag the word] **I'll tidy up after the guests ___ .**   ✔ have left   (chips: have left | will leave | left)  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [drag the word] **Let's wait ___ the rain stops.**   ✔ until   (chips: until | while | during)  — Until = up to that moment. The time clause uses the Present Simple: stops.
 - [drag the word] **I'll phone you ___ I know the result.**   ✔ as soon as   (chips: as soon as | during | since)  — As soon as = immediately after. The time clause uses the Present Simple: know.
 - [type a word] **I'll have a shower after I ___ the washing-up. (finish)**   ✔ finish | have finished  — After when / as soon as / until / before / after we use the Present Simple (or the Present Perfect) for the future, not will.
 - [type a word] **We'll start the meeting when everybody ___ . (arrive)**   ✔ arrives | has arrived  — After when / as soon as / until / before / after we use the Present Simple (or the Present Perfect) for the future, not will.
 - [type a word] **Please don't leave the building until the fire alarm ___ . (stop)**   ✔ stops | has stopped  — After when / as soon as / until / before / after we use the Present Simple (or the Present Perfect) for the future, not will.
-- [choose] **Choose the correct option: I'll send the file as soon as I ___ it.**   ✔ have finished   ✗ will finish | finished | am finishing  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
+- [choose] **Choose the correct option: I'll send the file as soon as I ___ it.**   ✔ have finished   ✗ will finish | finished | am finishing  — After when / as soon as / until we use the Present Simple or the Present Perfect, not will. The Present Perfect shows that the first action is finished: as soon as I have finished it.
 - [choose] **Which sentence is NOT correct?**   ✔ I'll call you after I will have spoken to her.   ✗ I'll call you after I have spoken to her. | I'll call you after I speak to her. | After I speak to her, I'll call you.  — After when / as soon as / until / before / after we use the Present Simple for the future, not will.
 - [type the sentence] **Rewrite with before: First I'll check the dates. After that I'll book the tickets.**   ✔ I'll check the dates before I book the tickets. | I will check the dates before I book the tickets. | Before I book the tickets, I'll check the dates. | Before I book the tickets, I will check the dates. | I'll check the dates before booking the tickets. | I will check the dates before booking the tickets. | Before booking the tickets, I'll check the dates. | Before booking the tickets, I will check the dates.  — The time clause has the Present Simple. It can come first (with a comma) or second.
 - [type the sentence] **Rewrite with until: You can't go out. First you must finish your homework.**   ✔ You can't go out until you finish your homework. | You can't go out until you have finished your homework. | Until you finish your homework, you can't go out. | Until you have finished your homework, you can't go out.  — The time clause has the Present Simple. It can come first (with a comma) or second.

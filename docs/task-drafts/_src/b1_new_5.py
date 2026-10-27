@@ -149,7 +149,9 @@ P.bank("A2.2", "There isn't ___ in the fridge.", "anything", ["nothing", "no one
 P.bank("A2.2", "Everyone ___ here. Let's start.", "is", ["are", "am"])
 P.bank("B1.1", "She didn't tell ___ about the party.", "anyone", ["nobody", "no one"])
 P.bank("B1.1", "___ was late. Everybody arrived on time.", "Nobody", ["Anybody", "Anyone"])
-P.bank("B1.1", "Nothing ___ changed since last year.", "has", ["have", "are"])
+P.bank("B1.1", "Nothing ___ changed since last year.", "has", ["hasn't", "isn't", "have"],   # double negative as a wrong card (teacher, 27 October)
+       ("*Nothing* is already negative, so the verb is positive: *Nothing has changed*, not *Nothing hasn't changed*.",
+        "Latviski saka „nekas nav mainījies” ar diviem noliegumiem, bet angliski noliegums ir tikai vienreiz: *Nothing has changed*, nevis *Nothing hasn't changed*."))
 P.bank("B1.1", "He went to the shop but didn't buy ___.", "anything", ["nothing", "no one"])
 P.bank("B1.1", "Somebody left ___ umbrella here.", "their", ["there", "them"])
 P.gap("A2.2", "I'm hungry. I haven't eaten ___ today.", "anything")

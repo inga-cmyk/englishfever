@@ -306,8 +306,8 @@
   /** Guests: two clear buttons, no explanation text (teacher, 27 October: everyone knows what Log in and Create account do). */
   function guestBanner() {
     var cfg = state.config, pending = regPending();
-    var create = cfg.register_url ? registerLink(pending ? 'btn ghost small' : 'btn ghost small', 'Create account') : null;
-    var signin = cfg.sso ? h('a', { class: 'btn ghost small', href: cfg.wp_login_url }, icon('user'), 'Log in') : null;
+    var create = cfg.register_url ? registerLink('btn', 'Create account') : null;
+    var signin = cfg.sso ? h('a', { class: 'btn ghost', href: cfg.wp_login_url }, icon('user'), 'Log in') : null;
     if (!create && !signin) return null;
     return h('div', { class: 'guestbar' }, signin, create);
   }
@@ -385,7 +385,6 @@
       var started = d.totals.answers > 0;
       var rep = d.placement && d.placement.report;
       var nodes = [];
-      var gb = state.user.guest ? guestBanner() : null; if (gb) nodes.push(gb);
       if (state.welcome) {
         var wl = state.welcome;
         nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--good)' },
@@ -394,7 +393,7 @@
           h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
       }
       nodes.push(h('div', { class: 'hello' },
-        h('div', { class: 'row', style: 'gap:12px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 36),
+        h('div', { class: 'row', style: 'gap:12px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 52),
           h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
             !started ? null : h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!'
               : (!feat('streak') ? 'Answer a few questions today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Answer one question today to start a streak.')))))));
@@ -413,12 +412,18 @@
         main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'A short session picked from your own mistakes.'), mainBtn];
       }
       // the other ways in: small buttons with icons, not underlined text (teacher, 27 October)
-      var links = h('div', { class: 'homelinks iconlinks' },
-        h('a', { class: 'iconlink', href: '#/practice' }, icon('target'), 'Topics'),
-        (!started && !resume) ? null : (rep ? h('button', { type: 'button', class: 'iconlink', onclick: function () { showPlacementReport(rep); } }, icon('up'), 'My level') : h('a', { class: 'iconlink', href: '#/placement' }, icon('up'), 'Level test')),
-        h('a', { class: 'iconlink', href: '#/rules' }, icon('book'), 'Rules'),
-        (!state.user.guest && dashboardUrl()) ? h('a', { class: 'only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null);
-      nodes.push(h('div', { class: 'card focus' }, main, links));
+      var links = h('div', { class: 'tiles' },
+        h('a', { class: 'tile', href: '#/practice' }, h('span', { class: 'tile-ic' }, icon('target')), 'Topics'),
+        (!started && !resume) ? null : (rep ? h('button', { type: 'button', class: 'tile', onclick: function () { showPlacementReport(rep); } }, h('span', { class: 'tile-ic' }, icon('up')), 'My level') : h('a', { class: 'tile', href: '#/placement' }, h('span', { class: 'tile-ic' }, icon('up')), 'Level test')),
+        h('a', { class: 'tile', href: '#/rules' }, h('span', { class: 'tile-ic' }, icon('book')), 'Rules'),
+        (!state.user.guest && dashboardUrl()) ? h('a', { class: 'tile only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, h('span', { class: 'tile-ic' }, icon('home')), 'My dashboard') : null);
+      // the main card: dark like the header, one bright button, the learner's numbers in a quiet strip (teacher, 27 October: stylish, not noisy)
+      var strip = started ? h('div', { class: 'hero-stats' },
+        feat('streak') ? h('span', null, icon('flame'), h('b', null, String(d.streak.current)), d.streak.current === 1 ? ' day' : ' days') : null,
+        h('span', null, icon('bolt'), h('b', null, String(d.totals.xp)), ' XP'),
+        d.totals.accuracy === null ? null : h('span', null, icon('check'), h('b', null, d.totals.accuracy + '%'), ' correct')) : null;
+      nodes.push(h('div', { class: 'card focus hero-card' }, main, strip));
+      nodes.push(links);
       var cb = d.comeback || { open: 0, fixed: 0 };
       if (cb.open > 0 || cb.review > 0) {   // open mistakes, or mistakes fixed a few days ago that are due for a check
         var n = Math.min(10, cb.open + (cb.review || 0));
@@ -428,7 +433,7 @@
               h('div', { class: 'small muted' }, (cb.open ? plural(cb.open, 'mistake', 'mistakes') + ' to fix' : plural(cb.review, 'earlier mistake', 'earlier mistakes') + ' to check again') + ' · ' + chanceLength(n))),
             comebackButton('btn small fn-chance', 'Start'))));
       }
-      if (started) nodes.push(h('p', { class: 'small muted homestat' }, d.totals.xp + ' XP · ' + (d.totals.accuracy === null ? '–' : d.totals.accuracy + '% correct overall')));
+      var gb = state.user.guest ? guestBanner() : null; if (gb) nodes.push(gb);   // guests: Log in / Create account, side by side under the main things
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);
 

@@ -478,7 +478,7 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .report-link[disabled] { cursor: default; text-decoration: none; color: var(--good); }
 .task .meta .taskid { margin-left: 4px; }
 .taskid { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .78rem; }
-.betapill { display: inline-block; background: var(--raspberry); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.betapill { display: inline-block; background: transparent; color: var(--gold); border: 1px solid rgba(222,193,122,.55); font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
 .betapill .short { display: none; }
 @media (max-width: 480px) { .report-link .long { display: none; } .betapill .long { display: none; } .betapill .short { display: inline; } }
 .betanote { margin-bottom: 14px; border-color: var(--gold); font-size: .92rem; color: var(--text-soft); }
@@ -541,3 +541,13 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 /* company in the top bar: a number with a symbol, next to the streak */
 .chip-pulse { font-weight: 700; }
 .pulse-dot { width: 9px; height: 9px; border-radius: 50%; background: #4FD08A; box-shadow: 0 0 0 3px rgba(79,208,138,.25); }
+
+/* Home, calmer (teacher, 27 October): guests get two buttons, the greeting is one small line, the side links are icon buttons */
+.guestbar { display: flex; justify-content: flex-end; gap: 10px; margin: -4px 0 14px; }
+.guestbar .btn svg { width: 17px; height: 17px; }
+.home .hello h1 { font-size: 1.35rem; }
+.home .hello p { font-size: .92rem; margin: 2px 0 0; }
+.iconlinks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.iconlink { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text) !important; text-decoration: none !important; font: inherit; font-size: .92rem; font-weight: 600; cursor: pointer; }
+.iconlink svg { width: 18px; height: 18px; color: var(--btn); }
+.iconlink:hover { border-color: var(--btn); }

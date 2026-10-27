@@ -94,6 +94,7 @@
     if (isStandalone() || (!always && !phone)) return null;
     if (!phone && !deferredInstall) return null;
     if (!always) { try { if (Date.now() - (+localStorage.getItem('ef_install_hidden') || 0) < 30 * 86400000) return null; } catch (e) {} }
+    if (!always) { try { var vd = JSON.parse(localStorage.getItem('ef_visit_days') || '[]'), today = new Date().toDateString(); if (vd.indexOf(today) < 0) { vd.push(today); localStorage.setItem('ef_visit_days', JSON.stringify(vd.slice(-5))); } if (vd.length < 3) return null; } catch (e) {} }   // only from the third day of use: a first visit has enough to look at
     var how;
     if (deferredInstall) {
       how = h('button', { class: 'btn small', onclick: function () {
@@ -302,14 +303,13 @@
     m.el.querySelector('#later').onclick = m.close;
   }
 
+  /** Guests: two clear buttons, no explanation text (teacher, 27 October: everyone knows what Log in and Create account do). */
   function guestBanner() {
     var cfg = state.config, pending = regPending();
-    var create = cfg.register_url ? registerLink(pending ? 'btn ghost small' : 'btn small', 'Create account') : null;
-    var signin = cfg.sso ? h('a', { class: (pending || !cfg.register_url) ? 'btn small' : 'btn ghost small', href: cfg.wp_login_url }, 'Sign in') : null;
-    return h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--gold)' },
-      pending ? h('div', null, h('b', { style: 'color:var(--text)' }, 'Account created?'), h('div', { class: 'small muted' }, 'Confirm the email we sent you, then sign in.'))
-        : h('div', { style: 'color:var(--text)' }, 'Create a free account to keep your results.'),
-      h('div', { class: 'row' }, pending ? [signin, create] : [create, signin]));
+    var create = cfg.register_url ? registerLink(pending ? 'btn ghost small' : 'btn ghost small', 'Create account') : null;
+    var signin = cfg.sso ? h('a', { class: 'btn ghost small', href: cfg.wp_login_url }, icon('user'), 'Log in') : null;
+    if (!create && !signin) return null;
+    return h('div', { class: 'guestbar' }, signin, create);
   }
 
   // ───────── learning study (optional, registered learners only) ─────────
@@ -385,7 +385,7 @@
       var started = d.totals.answers > 0;
       var rep = d.placement && d.placement.report;
       var nodes = [];
-      if (state.user.guest) nodes.push(guestBanner());
+      var gb = state.user.guest ? guestBanner() : null; if (gb) nodes.push(gb);
       if (state.welcome) {
         var wl = state.welcome;
         nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px;border-color:var(--good)' },
@@ -394,7 +394,7 @@
           h('button', { class: 'btn small', onclick: function (e) { state.welcome = null; e.target.closest('.card').remove(); } }, 'Great')));
       }
       nodes.push(h('div', { class: 'hello' },
-        h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 48),
+        h('div', { class: 'row', style: 'gap:12px;flex-wrap:nowrap' }, UI.avatar(state.user.avatar, state.user.nickname, 36),
           h('div', null, h('h1', { style: 'margin:0' }, (started ? 'Welcome back, ' : 'Welcome, ') + state.user.nickname),
             !started ? null : h('p', { class: 'muted' }, d.streak.today_done ? 'You practised today. Nice work!'
               : (!feat('streak') ? 'Answer a few questions today.' : (d.streak.current ? 'Practise today to keep your streak alive.' : 'Answer one question today to start a streak.')))))));
@@ -412,10 +412,11 @@
         mainBtn = surpriseButton('btn pulse', 'Practise now');
         main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'A short session picked from your own mistakes.'), mainBtn];
       }
-      var links = h('p', { class: 'homelinks' },
-        h('a', { href: '#/practice' }, 'Choose topics'),
-        (!started && !resume) ? null : (rep ? h('button', { type: 'button', class: 'linkbtn', onclick: function () { showPlacementReport(rep); } }, 'Placement result') : h('a', { href: '#/placement' }, 'Placement test')),
-        h('a', { href: '#/rules' }, 'Rule cards'),
+      // the other ways in: small buttons with icons, not underlined text (teacher, 27 October)
+      var links = h('div', { class: 'homelinks iconlinks' },
+        h('a', { class: 'iconlink', href: '#/practice' }, icon('target'), 'Topics'),
+        (!started && !resume) ? null : (rep ? h('button', { type: 'button', class: 'iconlink', onclick: function () { showPlacementReport(rep); } }, icon('up'), 'My level') : h('a', { class: 'iconlink', href: '#/placement' }, icon('up'), 'Level test')),
+        h('a', { class: 'iconlink', href: '#/rules' }, icon('book'), 'Rules'),
         (!state.user.guest && dashboardUrl()) ? h('a', { class: 'only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, 'My dashboard ↗') : null);
       nodes.push(h('div', { class: 'card focus' }, main, links));
       var cb = d.comeback || { open: 0, fixed: 0 };
@@ -438,7 +439,7 @@
           return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'Your thinking skills'), bloomBars(d.bloom)));
         }));
       }
-      nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
+      if (started) nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
       show(h('div', { class: 'home' }, nodes));
     }).catch(fail);
   }

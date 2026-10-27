@@ -787,9 +787,9 @@
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : n > 0 },
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
-        h('div', { class: 'chipsel', role: 'group', 'aria-label': area.label }, list.map(function (s) {
+        h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': area.label }, list.map(function (s) {
           var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; redrawLater(); } });
-          return h('label', null, inp, h('span', null, shortLabel(s)));
+          return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')));
         })));
       det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
       return det;
@@ -1271,6 +1271,43 @@
   function showPlacementReport(rep) { state.lastSummary = rep; show(h('div', { class: 'sess', style: 'max-width:860px' }, placementReport(rep, false))); }
 
   // ───────── rules ─────────
+  // Topic tiles (teacher, 27 October): a short, funny sentence per topic, the form in gold; the same tiles on Rules and Practice
+  var TILE_LINES = {
+    present_simple: 'My cat **ignores** me every morning.', present_continuous: "I**'m not procrastinating**. I**'m researching**.",
+    past_simple: 'I **fell asleep** during the meeting.', past_continuous: 'At 3 a.m. I **was** still **scrolling**.',
+    present_perfect: "I**'ve eaten** all the biscuits. Sorry.", present_perfect_continuous: "I**'ve been learning** this grammar rule all week.",
+    past_perfect: 'By midnight, the cake **had disappeared**.', future: "I**'m going to** start my diet on Monday.",
+    present_simple_passive: 'Most emails **are written** by AI now.', past_simple_passive: 'My password **was changed** by my cat.',
+    present_continuous_passive: 'You **are being watched**. By your smartwatch.', present_perfect_passive: 'The coffee machine **has been fixed**! Finally.',
+    future_passive: 'The cake **will be eaten** by midnight.', modal_verbs: "You **should** go to bed. It's 2 a.m.",
+    comparison: 'My phone knows me **better than** I do.', cond_zero: 'If I **open** Instagram, I **lose** an hour.',
+    cond_first: 'If I **say** "five minutes", it**\'ll** be an hour.', cond_second: "If I **had** a euro for every typo, I**'d** be rich.",
+    cond_third: 'If you **had told** me it was a video call, I **would have brushed** my hair.', cond_mixed: 'If I **had bought** Bitcoin in 2010, I **would be** rich now.',
+    cond_advanced: 'I **wish** AI **could** tidy my desk.', rep_statements: 'He said he **would call** me.',
+    rep_questions: 'He asked where the coffee **was**.', rep_verbs: 'The AI **refused** to write my essay. Rude.',
+    ind_polite: 'Could you tell me where the cake **is**?', ind_advanced: "I don't know **what to say**.",
+    used_to: 'I **used to** read books. Now I read comments.', articles: '**An** elephant walked into **a** café.',
+    quantity: "There's **not enough** coffee in this world.", relative_clauses: 'I have a friend **who** talks to plants.',
+    time_clauses: "I'll call you **when** I **wake up**.", question_tags: "You love grammar, **don't you**?",
+    subject_object_q: '**Who** ate my sandwich?', verb_patterns: 'I enjoy **doing** nothing.',
+    more_modals: 'I **might** go to the gym tomorrow.', passive_modals: 'Some meetings **should be replaced** by emails.',
+    causative: 'I **had** my CV **written** by AI. Oops.', two_objects: 'Give **me** the chocolate.',
+    adj_ed_ing: "It's **confusing**. Even AI is **confused**.", adj_order: 'I wear my **comfortable old grey woollen** jumper to every video call.',
+    adverbs: 'My colleague **hardly ever** works.', so_such: 'It was **such** a long meeting.',
+    indefinite_pronouns: "I've got **nothing** to wear. Again.", dep_prepositions: "I'm good **at** sleeping.",
+    agreement: 'Nobody **reads** the instructions.', irregular_plurals: '**Men** work hard. **Women** spend harder.',
+    prep_time_place: 'See you **on** Friday **at** 8.'
+  };
+  function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
+    return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });
+  }
+  function topicTile(s, extra) {
+    var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
+    return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
+      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, levelRange(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
+      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')));
+  }
+
   function viewRules() {
     var lv = state.user.lang === 'lv';
     var toggle = h('button', { type: 'button', class: 'btn ghost small', onclick: function () {
@@ -1279,10 +1316,11 @@
       viewRules();
     } }, lv ? 'English' : 'Latviski');
     show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards')), toggle),
-      state.meta.areas.map(function (a) {
+      state.meta.areas.map(function (a, i) {   // tiles by area; a tile opens its rule card
         var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
-        return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'grid g2' }, list.map(function (s) {
-          return h('div', { class: 'card fn-ref' }, h('div', { class: 'row between' }, h('h3', { style: 'margin:0' }, s.label), h('span', { class: 'pill' }, levelRange(s))), ruleCard(s, lv));
+        if (!list.length) return null;
+        return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'tilegrid' }, list.map(function (s) {
+          return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { rulesModal(s.id); } }, topicTile(s));
         })));
       })));
   }

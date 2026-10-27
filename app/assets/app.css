@@ -197,9 +197,9 @@ input:focus, textarea:focus, select:focus { border-color: var(--gold-deep); outl
 .chipsel { display: flex; flex-wrap: wrap; gap: 8px; }
 .chipsel label { cursor: pointer; }
 .chipsel input { position: absolute; opacity: 0; pointer-events: none; }
-.chipsel span { display: inline-flex; align-items: center; gap: 6px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); font-weight: 550; font-size: .92rem; }
-.chipsel input:checked + span { background: var(--black); color: var(--gold); border-color: var(--black); }
-.chipsel input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 2px; }
+.chipsel:not(.tilesel) span { display: inline-flex; align-items: center; gap: 6px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); font-weight: 550; font-size: .92rem; }
+.chipsel:not(.tilesel) input:checked + span { background: var(--black); color: var(--gold); border-color: var(--black); }
+.chipsel:not(.tilesel) input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 2px; }
 .chipsel span small { color: var(--muted); font-weight: 500; }
 .chipsel input:checked + span small { color: var(--warm-grey); }
 .seg { display: inline-flex; border: 1.5px solid var(--line); border-radius: 999px; padding: 3px; background: var(--surface); flex-wrap: wrap; }
@@ -622,3 +622,29 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .lb-card .lb-row:first-child { border-radius: 16px 16px 0 0; } .lb-card .lb-row:last-child { border-radius: 0 0 16px 16px; }
 .lb-row { position: relative; } .lb-row.pop-open { z-index: 6; }
 .lb-row .lb-name { overflow: visible; }
+
+/* topic tiles: a poster with a pattern (one colour per area), a funny sentence with the form in gold, the topic name below */
+.tilegrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 14px; }
+.ttile-btn { padding: 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; border-radius: 16px; }
+.ttile { display: flex; flex-direction: column; height: 100%; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); transition: transform .12s, box-shadow .12s, border-color .12s; }
+.ttile-btn:hover .ttile, .tilesel label:hover .ttile { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.ttile-art { position: relative; aspect-ratio: 3 / 2; padding: 12px; display: flex; align-items: center; color: #fff; font-weight: 800; line-height: 1.18; font-size: .92rem; }
+.ttile-line b { color: #FFE48A; }
+.ttile-lv { position: absolute; top: 7px; right: 7px; font-size: .62rem; font-weight: 800; background: rgba(255,255,255,.92); color: #1E1E2C; border-radius: 999px; padding: 2px 7px; }
+.ttile-nm { padding: 9px 12px 11px; font-weight: 650; font-size: .82rem; color: var(--text); }
+.pat0 { background-color: #1A7F70; background-image: radial-gradient(rgba(255,255,255,.13) 2px, transparent 2.5px); background-size: 14px 14px; }
+.pat1 { background-color: #C93A63; background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.09) 0 8px, transparent 8px 16px); }
+.pat2 { background-color: #3B4A8C; background-image: repeating-radial-gradient(circle at 0 100%, rgba(255,255,255,.08) 0 6px, transparent 6px 14px); }
+.pat3 { background-color: #A8741A; background-image: linear-gradient(90deg, rgba(255,255,255,.08) 50%, transparent 50%); background-size: 18px 18px; }
+.pat4 { background-color: #6B3E7A; background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,.1) 3px, transparent 3.5px); background-size: 18px 18px; }
+.pat5 { background-color: #2F6E9E; background-image: repeating-linear-gradient(-45deg, rgba(255,255,255,.08) 0 6px, transparent 6px 14px); }
+.pat6 { background-color: #4E7A2E; background-image: linear-gradient(rgba(255,255,255,.08) 50%, transparent 50%); background-size: 16px 16px; }
+.pat7 { background-color: #8A3B2B; background-image: radial-gradient(rgba(255,255,255,.12) 1.5px, transparent 2px); background-size: 10px 10px; }
+.tilesel label { position: relative; display: block; cursor: pointer; }
+.tilesel input { position: absolute; opacity: 0; pointer-events: none; }
+.ttile-check { position: absolute; bottom: 9px; right: 9px; display: none; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--gold); color: #1E1E2C; box-shadow: 0 2px 6px rgba(0,0,0,.25); }
+.ttile-check svg { width: 16px; height: 16px; }
+.tilesel input:checked ~ .ttile-check { display: grid; }
+.tilesel input:checked + .ttile { border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold); }
+.tilesel input:focus-visible + .ttile { outline: 3px solid var(--gold); outline-offset: 2px; }
+.tilesel .ttile-nm { padding-right: 40px; }

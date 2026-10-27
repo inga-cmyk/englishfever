@@ -987,12 +987,12 @@
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
-      if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), chosen));
+      if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), h('span', { class: 'mine' }, chosen)));
       if (!good && (it.kind === 'gap' || it.kind === 'text')) {
         var given = Array.isArray(ans) ? ans.join(' / ') : ans;
-        fb.appendChild(h('p', null, h('b', null, lv ? 'Tu uzrakstīji: ' : 'You wrote: '), given));
+        fb.appendChild(h('p', null, h('b', null, lv ? 'Tu uzrakstīji: ' : 'You wrote: '), h('span', { class: 'mine' }, given)));
       }
-      if (!good && it.kind === 'order') fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), (ans || []).join(' ')));
+      if (!good && it.kind === 'order') fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), h('span', { class: 'mine' }, (ans || []).join(' '))));
       var spec = lv && res.specific_lv ? res.specific_lv : res.specific;
       if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), UI.rich(spec)));
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));

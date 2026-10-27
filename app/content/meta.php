@@ -60,6 +60,10 @@ return json_decode(<<<'EF_JSON_END'
   {
    "id": "adjectives",
    "label": "Adjectives and adverbs"
+  },
+  {
+   "id": "prepositions",
+   "label": "Prepositions"
   }
  ],
  "skills": [
@@ -1642,7 +1646,7 @@ return json_decode(<<<'EF_JSON_END'
   {
    "id": "dep_prepositions",
    "label": "Prepositions after words (listen to, good at)",
-   "area": "patterns",
+   "area": "prepositions",
    "levels": [
     "A2.1",
     "A2.2",
@@ -1743,7 +1747,7 @@ return json_decode(<<<'EF_JSON_END'
   {
    "id": "prep_time_place",
    "label": "Prepositions of time and place (in, on, at)",
-   "area": "patterns",
+   "area": "prepositions",
    "levels": [
     "A2.1",
     "A2.2"

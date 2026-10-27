@@ -417,7 +417,7 @@ LV_CARDS.update({
 
 # ───────── third batch (teacher's plan, 25 October): A2 topics built around frequent mistakes (docs/ERROR-TYPES.md) ─────────
 SKILLS_NEW.extend([
-    ("dep_prepositions", "Prepositions after words (listen to, good at)", "patterns", ["A2.1", "A2.2", "B1.1"]),
+    ("dep_prepositions", "Prepositions after words (listen to, good at)", "prepositions", ["A2.1", "A2.2", "B1.1"]),
     ("agreement", "Subject and verb (my friend lives, my friends live)", "active", ["A2.1", "A2.2"]),
     ("irregular_plurals", "Irregular plurals (children, people, men, teeth)", "nouns", ["A2.1", "A2.2"]),
 ])
@@ -480,7 +480,8 @@ LV_CARDS.update({
 
 
 # ───────── fourth batch (teacher, 28 October): missing A2 topics, one at a time ─────────
-SKILLS_NEW.append(("prep_time_place", "Prepositions of time and place (in, on, at)", "patterns", ["A2.1", "A2.2"]))
+AREAS_NEW.append(("prepositions", "Prepositions"))
+SKILLS_NEW.append(("prep_time_place", "Prepositions of time and place (in, on, at)", "prepositions", ["A2.1", "A2.2"]))
 ABBR_NEW.update({"prep_time_place": "ptp"})
 CARDS.update({
     "prep_time_place": {

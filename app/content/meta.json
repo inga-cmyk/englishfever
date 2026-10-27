@@ -57,6 +57,10 @@
   {
    "id": "adjectives",
    "label": "Adjectives and adverbs"
+  },
+  {
+   "id": "prepositions",
+   "label": "Prepositions"
   }
  ],
  "skills": [
@@ -1639,7 +1643,7 @@
   {
    "id": "dep_prepositions",
    "label": "Prepositions after words (listen to, good at)",
-   "area": "patterns",
+   "area": "prepositions",
    "levels": [
     "A2.1",
     "A2.2",
@@ -1740,7 +1744,7 @@
   {
    "id": "prep_time_place",
    "label": "Prepositions of time and place (in, on, at)",
-   "area": "patterns",
+   "area": "prepositions",
    "levels": [
     "A2.1",
     "A2.2"

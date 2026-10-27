@@ -66,6 +66,28 @@ def tense_named(topic, q):
     if not key or not _re.search(r"\([a-z /\-']+\)\s*$", q) or _re.match(r"^(Use|Complete|Make|Give|Ask)", q): return q
     if _re.search(_CUE[key], q, _re.I): return q
     return "Use %s: %s" % (_TENSE[key], q)
+# typed gaps: the instruction names the kind of word, never the answer (teacher, 27 October: learners do not notice the topic name)
+GAP_INSTR = {
+    "Prepositions after words (listen to, good at)": "Complete with the correct preposition:",
+    "Prepositions of time and place (in, on, at)": "Complete with in, on or at:",
+    "Verbs with two objects (give me, tell her)": "Complete with to or for:",
+    "Subject and verb (my friend lives, my friends live)": "Complete with the correct form of be or do:",
+    "Irregular plurals (children, people, men, teeth)": "Write the plural:",
+    "Reported questions and requests": "Complete the reported question with a modal verb:",
+    "Used to and be used to": "Complete with the correct form of use:",
+    "Articles": "Complete with a, an or the:",
+    "Quantity": "Complete with one word (much, many, too, enough…):",
+    "Relative clauses": "Complete with a relative word (who, which, whose, where…):",
+    "Question tags": "Complete the question tag:",
+    "Subject and object questions": "Complete the question with one word:",
+    "More modals: might, could, be able to": "Complete with a suitable modal verb:",
+    "Passive with modals (must be done)": "Complete the passive form:",
+    "Causative: have something done": "Complete with the correct form of have or get + past participle:",
+    "Adverbs: manner, frequency, degree": "Complete with an adverb:",
+    "So and such": "Complete with so or such:",
+    "Someone, anything, nobody": "Complete with a word like someone, anything, nowhere:",
+    "Comparison": "Complete the comparison with one word:",
+}
 def gp(t, lv, b, q, ok, why, lvw, bank=None):
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))   # an explanation that fitted another part of the sentence (audit_fixes.py)
     ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
@@ -75,6 +97,8 @@ def gp(t, lv, b, q, ok, why, lvw, bank=None):
     if q in audit_fixes.BANK_TASK: old, q = q, audit_fixes.BANK_TASK[q]
     q2 = tense_named(t, q) if not bank else q
     if q2 != q: old, q = (old or q), q2
+    if not bank and t in GAP_INSTR and not re.match(r"^[A-Z][^.?!_]*:\s", q) and not re.search(r"\([^)]+\)\s*[.?!]?$", q):
+        old, q = (old or q), GAP_INSTR[t] + " " + q   # a typed gap with no instruction: say what kind of word goes in (teacher, 27 October); the importer retires the old text
     rows.append([t, lv, "gap", q, ok, ("bank: " + " | ".join(bank)) if bank else "", why, lvw, b] + ([old] if old else []))
 def tx(t, lv, b, q, ok, why, lvw):
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))

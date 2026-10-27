@@ -252,7 +252,11 @@ textarea.write { min-height: 110px; resize: vertical; margin-bottom: 18px; }
 /* feedback is information: a neutral card; colour only on the heading and on the learner's own wrong answer */
 .feedback.good, .feedback.bad { background: var(--surface); border: 1px solid var(--line); }
 /* language switch: a glass button showing the flag of the language it switches to, no letters (teacher); the name is in aria-label and title */
-.langswitch { display: inline-flex; gap: 6px; margin-top: 12px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; }
+.langswitch { display: inline-flex; gap: 8px; align-items: center; }
+details.rule summary { list-style: none; display: inline-flex; align-items: center; gap: 10px; padding: 4px 10px 4px 4px; border: 1px solid var(--line); border-radius: 999px; }
+details.rule summary::-webkit-details-marker { display: none; }
+.rule-q { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--btn); color: #fff; font-weight: 800; font-size: .95rem; }
+details.rule[open] summary { border-color: var(--btn); }
 .langbtn { position: relative; overflow: hidden; width: 34px; height: 22px; padding: 0; border: 1px solid rgba(0,0,0,.25); border-radius: 999px; cursor: pointer; background-size: cover; background-position: center; opacity: .45; filter: saturate(.6); box-shadow: inset 0 1px 0 rgba(255,255,255,.6); transition: opacity .12s, transform .12s, filter .12s; }
 .langbtn.on { opacity: 1; filter: none; box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--btn), inset 0 1px 0 rgba(255,255,255,.6); cursor: default; }
 .langbtn::before { content: ''; position: absolute; inset: 0 0 50% 0; background: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.08)); border-radius: 999px 999px 40% 40% / 999px 999px 12px 12px; pointer-events: none; }

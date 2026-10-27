@@ -970,6 +970,7 @@
     }
 
     // The explanation can be shown in English or Latvian (up to B1.2). The learner's choice is remembered.
+    var openRuleNext = false;   // a flag was pressed: show the rule open in the new language
     function drawFeedback(r, ans, first) {
       var res = r.result;
       var hasLv = !!res.why_lv;
@@ -978,16 +979,21 @@
       var cheers = lv ? ['Pareizi!', 'Labi izdarīts!', 'Jā, tieši tā!', 'Lieliski!', 'Tieši tā!'] : ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
-      function setLang(to) {
-        if ((to === 'lv') === lv) return;
-        state.user.lang = to;
-        api('account/profile', { lang: to }).catch(function () {});
-        drawFeedback(r, ans, false);
+      // rule reminder = a question-mark button and the flags beside it: a flag opens the rule (and the whole explanation) in that language (teacher, 27 October)
+      function flag(code) {
+        var on = (code === 'lv') === lv;
+        return h('button', { type: 'button', class: 'langbtn ' + code + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', 'aria-label': code === 'lv' ? 'Noteikums latviski' : 'Rule in English', title: code === 'lv' ? 'Latviski' : 'English',
+          onclick: function (e) {
+            e.preventDefault(); e.stopPropagation();
+            var d = fb.querySelector('details.rule');
+            if (on) { if (d) d.open = !d.open; return; }
+            state.user.lang = code;
+            api('account/profile', { lang: code }).catch(function () {});
+            openRuleNext = true;
+            drawFeedback(r, ans, false);
+          } });
       }
-      // the language switch sits under the rule reminder: two small flags, the one in use is marked (teacher, 27 October)
-      var langBtn = hasLv ? h('div', { class: 'langswitch', role: 'group', 'aria-label': lv ? 'Skaidrojuma valoda' : 'Explanation language' },
-        h('button', { type: 'button', class: 'langbtn lv' + (lv ? ' on' : ''), 'aria-pressed': lv ? 'true' : 'false', 'aria-label': 'Latviski', title: 'Latviski', onclick: function () { setLang('lv'); } }),
-        h('button', { type: 'button', class: 'langbtn en' + (lv ? '' : ' on'), 'aria-pressed': lv ? 'false' : 'true', 'aria-label': 'English', title: 'English', onclick: function () { setLang('en'); } })) : null;
+      var langBtn = hasLv ? [flag('lv'), flag('en')] : [];
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
@@ -1016,8 +1022,7 @@
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
-      fb.appendChild(ruleDetails(res.skill, !good, lv));
-      if (langBtn) fb.appendChild(langBtn);
+      fb.appendChild(ruleDetails(res.skill, !good, lv, langBtn));
 
       var nextText = r.done ? 'See my results' : 'Next';
       var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
@@ -1040,7 +1045,8 @@
       fb.appendChild(h('div', { class: 'nextrow' }, adaptNote || h('span'), nextBtn));
       var wasOpen = feedback.querySelector('details.rule[open]');
       feedback.replaceChildren(fb);
-      if (wasOpen) { var d = fb.querySelector('details.rule'); if (d) d.open = true; }
+      if (wasOpen || openRuleNext) { var d = fb.querySelector('details.rule'); if (d) d.open = true; }
+      openRuleNext = false;
       if (first) nextBtn.focus();
     }
     var lastCheer = null;
@@ -1122,9 +1128,11 @@
     };
   }
 
-  function ruleDetails(skillId, open, lv) {
+  function ruleDetails(skillId, open, lv, flags) {
     var s = skillById(skillId); if (!s) return h('span');
-    return h('details', { class: 'rule', open: false }, h('summary', null, (lv && s.rule_lv ? 'Atgādinājums: ' : 'Rule reminder: ') + s.label), ruleCard(s, lv));
+    var name = (lv && s.rule_lv ? 'Atgādinājums: ' : 'Rule reminder: ') + s.label;
+    return h('details', { class: 'rule' + (flags && flags.length ? ' flagged' : ''), open: false },
+      h('summary', { 'aria-label': name, title: name }, h('span', { class: 'rule-q', 'aria-hidden': 'true' }, '?'), flags && flags.length ? h('span', { class: 'langswitch' }, flags) : null), ruleCard(s, lv));
   }
 
   function ruleCard(s, lv) {

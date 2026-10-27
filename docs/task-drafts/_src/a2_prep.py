@@ -63,4 +63,19 @@ T.text("A2.2", "Correct the mistake: See you on next Monday!", "See you next Mon
 T.text("A2.2", "Correct the mistake: She is in work now.", "She is at work now.", P_AT)
 T.text("A2.2", "Correct the mistake: There is a clock in the wall.", "There is a clock on the wall.", P_ON)
 
+# ── contrasts the teacher asked for (28 October): on the bus / in a car, at or on the weekend, in or at the park ──
+BUS = ex("*on* + bus, train, plane; *in* + car, taxi: *on the bus, in a taxi*.", "Latviski *autobusā*, bet angliski *on the bus*: *on* + autobuss, vilciens, lidmašīna; *in* + auto, taksometrs.")
+TRAIN = ex("*on* + bus, train, plane: *on the train*.", "Latviski *vilcienā*, bet angliski *on the train*: *on* + autobuss, vilciens, lidmašīna.")
+WKND = ex("Both are right: *at the weekend* (British), *on the weekend* (American). Not *in*.", "Pareizi ir abi: *at the weekend* (britu), *on the weekend* (amerikāņu). Nav pareizi: *in*.")
+WKND_LV = ex("*at the weekend* (British) or *on the weekend* (American), not *in*.", "Latviski *nedēļas nogalē*, bet angliski *at the weekend* vai *on the weekend*, ne *in*.")
+PARK = ex("*at* + a point or a meeting place (*at the gate*), *in* + an area (*in the park*).", "*at* + punkts vai satikšanās vieta (*at the gate*), *in* + teritorija (*in the park*).")
+T.mcq("A2.2", "Choose the correct option: I always read a book ___ the bus.", "on", ["in", "at"], BUS)
+T.bank("A2.2", "I was ___ the bus when you called, and now I'm ___ a taxi.", ["on", "in"], ["at"], BUS)
+T.text("A2.2", "Correct the mistake: I saw her in the train.", "I saw her on the train.", TRAIN)
+T.gap("A2.2", "What did you do ___ the weekend?", "at | on", WKND)
+T.text("A2.2", "Correct the mistake: We usually go shopping in the weekend.", ["We usually go shopping at the weekend.", "We usually go shopping on the weekend.", "At the weekend we usually go shopping.", "On the weekend we usually go shopping."], WKND_LV)
+T.mcq("A2.1", "Choose the correct option: There are lots of old trees ___ the park.", "in", ["on", NONE], P_IN)
+T.bank("A2.2", "Let's meet ___ the park gate and then walk ___ the park.", ["at", "in"], ["on"], PARK)
+T.mcq("A2.2", "Choose the correct option: I'll wait for you ___ the park entrance.", "at", ["in", "on"], PARK)
+
 save("a2-prepositions-1.csv")

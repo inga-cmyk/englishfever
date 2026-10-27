@@ -978,11 +978,11 @@
       var cheers = lv ? ['Pareizi!', 'Labi izdarīts!', 'Jā, tieši tā!', 'Lieliski!', 'Tieši tā!'] : ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
-      var langBtn = hasLv ? h('button', { type: 'button', class: 'linkbtn small', style: 'margin-left:12px', onclick: function () {
+      var langBtn = hasLv ? h('button', { type: 'button', class: 'langbtn', 'aria-label': lv ? 'Show in English' : 'Rādīt latviski', onclick: function () {
         state.user.lang = lv ? 'en' : 'lv';
         api('account/profile', { lang: state.user.lang }).catch(function () {});
         drawFeedback(r, ans, false);
-      } }, lv ? 'English' : 'Latviski') : null;
+      } }, lv ? 'EN' : 'LV') : null;
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 

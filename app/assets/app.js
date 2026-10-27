@@ -859,7 +859,7 @@
     var it = rev ? rev.item : S.item, ses = S.session;
     var answerGetter, canSubmit = function () { return false; };
     var submit = h('button', { class: 'btn', disabled: true }, 'Check answer');
-    var skipBtn = h('button', { type: 'button', class: 'linkbtn skipbtn' }, 'Skip');   // "I don't know": no guessing, no XP; the topic comes back in Second Chance (teacher, 27 October)
+    var skipBtn = h('button', { type: 'button', class: 'btn ghost skipbtn' }, 'Skip');   // "I don't know": no guessing, no XP; the topic comes back in Second Chance (teacher, 27 October)
     var area = h('div');
     var qEl = h('div', { class: 'q' });
     var inputs = [];
@@ -1293,14 +1293,16 @@
   function medal(rank) {
     var c = [['#FFF1B8', '#E8C45A', '#A87A18'], ['#FFFFFF', '#C9D0D8', '#7F8995'], ['#FFE0C4', '#CD8A4F', '#7E4720']][rank - 1];
     var id = 'md' + rank + Math.random().toString(36).slice(2, 7);
-    var svg = '<svg viewBox="0 0 40 48" width="34" height="41" aria-hidden="true">'
-      + '<path d="M9 0h9l5 14-6 6z" fill="#1A7F70"/><path d="M31 0h-9l-5 14 6 6z" fill="#C93A63"/>'
-      + '<defs><radialGradient id="' + id + '" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="' + c[0] + '"/><stop offset=".55" stop-color="' + c[1] + '"/><stop offset="1" stop-color="' + c[2] + '"/></radialGradient></defs>'
-      + '<circle cx="20" cy="31" r="15" fill="' + c[2] + '"/><circle cx="20" cy="31" r="12.5" fill="url(#' + id + ')"/><circle cx="20" cy="31" r="10" fill="none" stroke="' + c[2] + '" stroke-opacity=".45" stroke-dasharray="1.5 1.8"/>'
-      + '<text x="20" y="35.5" text-anchor="middle" font-size="12" font-weight="800" font-family="Inter, system-ui, sans-serif" fill="' + (rank === 2 ? '#2b3138' : '#3d2608') + '">' + rank + '</text></svg>';
-    var el = h('span', { class: 'medal m' + rank, title: ['Gold', 'Silver', 'Bronze'][rank - 1] + ' medal' }); el.innerHTML = svg;
-    return el;
+    function S(tag, at, kids) { var e = document.createElementNS('http://www.w3.org/2000/svg', tag); for (var k in at) e.setAttribute(k, at[k]); (kids || []).forEach(function (x) { e.appendChild(x); }); return e; }
+    var t = S('text', { x: 20, y: 35.5, 'text-anchor': 'middle', 'font-size': 12, 'font-weight': 800, 'font-family': 'Inter, system-ui, sans-serif', fill: rank === 2 ? '#2b3138' : '#3d2608' }); t.textContent = String(rank);
+    var svg = S('svg', { viewBox: '0 0 40 48', width: 34, height: 41, 'aria-hidden': 'true' }, [
+      S('path', { d: 'M9 0h9l5 14-6 6z', fill: '#1A7F70' }), S('path', { d: 'M31 0h-9l-5 14 6 6z', fill: '#C93A63' }),
+      S('defs', {}, [S('radialGradient', { id: id, cx: '35%', cy: '30%', r: '75%' }, [S('stop', { offset: '0', 'stop-color': c[0] }), S('stop', { offset: '.55', 'stop-color': c[1] }), S('stop', { offset: '1', 'stop-color': c[2] })])]),
+      S('circle', { cx: 20, cy: 31, r: 15, fill: c[2] }), S('circle', { cx: 20, cy: 31, r: 12.5, fill: 'url(#' + id + ')' }),
+      S('circle', { cx: 20, cy: 31, r: 10, fill: 'none', stroke: c[2], 'stroke-opacity': '.45', 'stroke-dasharray': '1.5 1.8' }), t]);
+    return h('span', { class: 'medal m' + rank, title: ['Gold', 'Silver', 'Bronze'][rank - 1] + ' medal' }, svg);
   }
+
 
   // ───────── leaderboard ─────────
   function viewLeaderboard() {
@@ -1313,10 +1315,13 @@
         var rows = r.rows;
         // the top three get shining medals; the one who spent the most time thinking gets a clock badge (teacher, 27 October)
         var maxMin = rows.reduce(function (m, x) { return Math.max(m, x.minutes || 0); }, 0);
+        // the fastest: most XP per minute, among those with at least 10 minutes (one lucky minute does not count)
+        var fast = rows.filter(function (x) { return x.minutes >= 10; }).sort(function (a, b) { return b.xp / b.minutes - a.xp / a.minutes; })[0];
         var list = rows.length ? h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, rows.map(function (x) {
           return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, x.rank <= 3 ? h('div', { class: 'lb-rank' }, medal(x.rank)) : h('div', { class: 'lb-rank' }, String(x.rank)),
             h('div', { class: 'lb-name' }, UI.avatar(x.avatar, x.nickname, 30), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
-            h('div', { class: 'small muted num lb-min' }, (maxMin > 0 && x.minutes === maxMin) ? h('span', { class: 'patient', title: 'Most time spent thinking' }, icon('clock')) : null, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
+            h('div', { class: 'small muted num lb-min' }, (maxMin > 0 && x.minutes === maxMin) ? h('span', { class: 'thinking', title: 'Thinker of the week: most time spent thinking' }, h('i'), h('i'), h('i')) : null,
+              (fast && fast === x) ? h('span', { class: 'supersonic', title: 'Supersonic: most XP per minute' }, icon('bolt')) : null, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
         })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
         holder.replaceChildren(
           list,

@@ -272,8 +272,6 @@ details.rule[open] summary { border-color: var(--btn); }
 .feedback .cmp-mark.bad { color: var(--bad); } .feedback .cmp-mark.good { color: var(--good); }
 .feedback mark.del { background: var(--bad-bg); color: var(--bad); border-radius: 4px; padding: 0 4px; font-weight: 700; text-decoration: line-through; text-decoration-thickness: 1.5px; }
 .feedback mark.ins { background: var(--good-bg); color: var(--good); border-radius: 4px; padding: 0 4px; font-weight: 700; }
-.skipbtn { color: var(--muted); font-size: .92rem; }
-.skipbtn:hover { color: var(--text); }
 .feedback .mine { background: var(--bad-bg); color: var(--bad); border-radius: 6px; padding: 1px 6px; font-weight: 600; }
 .feedback h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 .feedback.good h3 { color: var(--good); } .feedback.bad h3 { color: var(--text); } .feedback.bad h3 svg { color: var(--bad); }
@@ -596,6 +594,13 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .medal.m2::after { animation-delay: .6s; } .medal.m3::after { animation-delay: 1.2s; }
 @keyframes medalshine { 0% { background-position: 130% 0; } 45%, 100% { background-position: -30% 0; } }
 .lb-min { display: inline-flex; align-items: center; gap: 6px; justify-content: flex-end; }
-.patient { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--btn-bg); }
-.patient svg { width: 15px; height: 15px; color: var(--btn); }
+/* Thinker of the week: a speech bubble with dots appearing one by one */
+.thinking { position: relative; display: inline-flex; align-items: center; gap: 3px; height: 22px; padding: 0 8px; border-radius: 12px 12px 12px 3px; background: var(--btn-bg); }
+.thinking i { width: 5px; height: 5px; border-radius: 50%; background: var(--btn); opacity: .2; animation: thinkdot 1.5s infinite; }
+.thinking i:nth-child(2) { animation-delay: .25s; } .thinking i:nth-child(3) { animation-delay: .5s; }
+@keyframes thinkdot { 0%, 15% { opacity: .2; } 35%, 70% { opacity: 1; } 100% { opacity: .2; } }
+/* Supersonic: most XP per minute */
+.supersonic { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, #F6E3A1, #D9B157); box-shadow: 0 0 8px rgba(222,193,122,.6); }
+.supersonic svg { width: 14px; height: 14px; color: #3d2e08; }
+.skipbtn { min-height: 44px; color: var(--muted); }
 .fold-icons { display: inline-flex; gap: 10px; } .fold-icons svg { width: 20px; height: 20px; color: var(--muted); }

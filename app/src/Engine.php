@@ -47,7 +47,8 @@ final class Engine
         } else {
             if ($mode === 'smart') {
                 // "Surprise me": the app chooses topics from the learner's own mistakes and gaps
-                [$skills, $level] = self::smartPick($uid, $all);
+                [$skills, $level, $firstTime] = self::smartPick($uid, $all) + [2 => false];
+                if ($firstTime) $len = 8;   // a new learner: a short taste of the most common mistakes (teacher, 27 October)
                 $smart = true;
                 $mode = 'practice';
             }
@@ -281,9 +282,10 @@ final class Engine
         $total = 0; $sum = 0.0;
         foreach ($rows as $r) { $total += (int) $r['n']; $sum += (float) $r['theta'] * (int) $r['n']; }
         if ($total < 5) {
-            $starters = array_values(array_intersect(['present_simple', 'present_continuous', 'past_simple', 'present_perfect', 'future', 'cond_zero', 'cond_first'], $all));
+            // first time: the mistakes Latvian adults make most (he work, no article, I have seen yesterday, What you want?, in Monday, listen music, will after when)
+            $starters = array_values(array_intersect(['present_simple', 'agreement', 'articles', 'present_perfect', 'past_simple', 'prep_time_place', 'dep_prepositions', 'subject_object_q', 'time_clauses'], $all));
             shuffle($starters);
-            return [array_slice($starters, 0, 4), 'A2.2'];
+            return [array_slice($starters, 0, 5), 'A2.2', true];
         }
         $level = Content::levelFromTheta($sum / $total);
         $need = [];

@@ -604,3 +604,21 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .supersonic svg { width: 14px; height: 14px; color: #3d2e08; }
 .skipbtn { min-height: 44px; color: var(--muted); }
 .fold-icons { display: inline-flex; gap: 10px; } .fold-icons svg { width: 20px; height: 20px; color: var(--muted); }
+
+/* Home: a short friendly line at the top of the main card */
+.hero-cheer { position: relative; z-index: 1; color: var(--gold); font-weight: 700; font-size: .9rem; margin-bottom: 10px; letter-spacing: .01em; }
+/* mood sayings */
+.moods { display: flex; flex-wrap: wrap; gap: 8px; }
+.mood { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; }
+.mood:hover { border-color: var(--btn); }
+.mood.on { border-color: var(--btn); background: var(--btn-bg); }
+.mood-em { font-size: 1.05rem; }
+.mood-wrap { position: relative; display: inline-flex; }
+.mood-av { position: relative; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; }
+.mood-dot { position: absolute; right: -6px; bottom: -4px; font-size: .78rem; line-height: 1; background: var(--surface); border-radius: 50%; padding: 1px; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
+.mood-pop { position: absolute; left: 0; top: calc(100% + 8px); z-index: 5; white-space: nowrap; background: var(--text); color: var(--bg); font-size: .85rem; font-weight: 650; padding: 7px 11px; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.2); }
+.mood-pop::before { content: ''; position: absolute; left: 10px; top: -6px; border: 6px solid transparent; border-top: 0; border-bottom-color: var(--text); }
+.lb-row { overflow: visible; }
+.lb-card .lb-row:first-child { border-radius: 16px 16px 0 0; } .lb-card .lb-row:last-child { border-radius: 0 0 16px 16px; }
+.lb-row { position: relative; } .lb-row.pop-open { z-index: 6; }
+.lb-row .lb-name { overflow: visible; }

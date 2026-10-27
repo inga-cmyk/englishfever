@@ -86,6 +86,7 @@ try {
             if (array_key_exists('avatar', $in)) $upd['avatar'] = Auth::validAvatar($in['avatar'] === null ? null : (string) $in['avatar']);
             if (isset($in['show_on_board']) && $u['provider'] !== 'guest') $upd['show_on_board'] = $in['show_on_board'] ? 1 : 0;
             if (isset($in['lang'])) $upd['lang'] = $in['lang'] === 'lv' ? 'lv' : 'en';
+            if (array_key_exists('mood', $in)) $upd['mood'] = Auth::validMood($in['mood'] === null ? null : (string) $in['mood']);
             if ($upd) Db::update('users', $upd, 'id = ?', [$u['id']]);
             out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);
 

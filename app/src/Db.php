@@ -241,6 +241,7 @@ final class Db
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'avatar', "$str NULL");
         self::ensureColumn('users', 'lang', "$str NULL");
+        self::ensureColumn('users', 'mood', "$str NULL");   // a saying under the avatar, chosen from a fixed list (Auth::MOODS)
         self::ensureColumn('users', 'research', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'research_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'research_base', "$int NOT NULL DEFAULT 0");

@@ -418,11 +418,14 @@
         h('a', { class: 'tile', href: '#/rules' }, h('span', { class: 'tile-ic' }, icon('book')), 'Rules'),
         (!state.user.guest && dashboardUrl()) ? h('a', { class: 'tile only-m', target: '_blank', rel: 'noopener', href: dashboardUrl() }, h('span', { class: 'tile-ic' }, icon('home')), 'My dashboard') : null);
       // the main card: dark like the header, one bright button, the learner's numbers in a quiet strip (teacher, 27 October: stylish, not noisy)
+      var CHEERS = ['Ready for 5 minutes of brain gym?', 'Your verbs missed you.', 'Small steps. Big English.', 'Mistakes welcome here.', 'One question at a time.',
+        'Grammar, but make it fun.', 'Coffee first? Then English.', "Let's fix one thing today.", "Today's a good day to be Present Perfect.", 'Your brain called. It wants a challenge.'];
+      var cheer = h('div', { class: 'hero-cheer' }, CHEERS[Math.floor(Math.random() * CHEERS.length)]);   // a short friendly line, a new one each visit (teacher, 27 October)
       var strip = started ? h('div', { class: 'hero-stats' },
         feat('streak') ? h('span', null, icon('flame'), h('b', null, String(d.streak.current)), d.streak.current === 1 ? ' day' : ' days') : null,
         h('span', null, icon('bolt'), h('b', null, String(d.totals.xp)), ' XP'),
         d.totals.accuracy === null ? null : h('span', null, icon('check'), h('b', null, d.totals.accuracy + '%'), ' correct')) : null;
-      nodes.push(h('div', { class: 'card focus hero-card' }, main, strip));
+      nodes.push(h('div', { class: 'card focus hero-card' }, cheer, main, strip));
       nodes.push(links);
       var cb = d.comeback || { open: 0, fixed: 0 };
       if (cb.open > 0 || cb.review > 0) {   // open mistakes, or mistakes fixed a few days ago that are due for a check
@@ -1289,6 +1292,29 @@
     m.el.querySelector('#c').onclick = m.close;
   }
 
+  /** Leaderboard avatar: with a mood, a small emoji sits on it and a tap shows the saying in a bubble. */
+  document.addEventListener('click', function (e) {   // a tap anywhere else closes an open mood bubble
+    if (e.target.closest && e.target.closest('.mood-av')) return;
+    document.querySelectorAll('.mood-pop').forEach(function (p) { p.hidden = true; });
+    document.querySelectorAll('.lb-row.pop-open').forEach(function (r) { r.classList.remove('pop-open'); });
+  });
+  function moodAvatar(x) {
+    var av = UI.avatar(x.avatar, x.nickname, 30);
+    var m = x.mood && MOODS[x.mood];
+    if (!m) return av;
+    var pop = h('span', { class: 'mood-pop', role: 'status', hidden: true }, m[0] + ' ' + m[1]);
+    var btn = h('button', { type: 'button', class: 'mood-av', 'aria-label': x.nickname + ': ' + m[1], 'aria-expanded': 'false', onclick: function (e) {
+      e.stopPropagation();
+      var open = pop.hidden;
+      document.querySelectorAll('.mood-pop').forEach(function (p) { p.hidden = true; });
+      document.querySelectorAll('.mood-av').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+      document.querySelectorAll('.lb-row.pop-open').forEach(function (r) { r.classList.remove('pop-open'); });
+      pop.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+      var row = btn.closest('.lb-row'); if (row && open) row.classList.add('pop-open');   // above the next rows
+    } }, av, h('span', { class: 'mood-dot', 'aria-hidden': 'true' }, m[0]));
+    return h('span', { class: 'mood-wrap' }, btn, pop);
+  }
+
   /** A medal for the top three: a ribbon and a coin with a rim and the place number; the coin shines now and then. */
   function medal(rank) {
     var c = [['#FFF1B8', '#E8C45A', '#A87A18'], ['#FFFFFF', '#C9D0D8', '#7F8995'], ['#FFE0C4', '#CD8A4F', '#7E4720']][rank - 1];
@@ -1317,9 +1343,9 @@
         var maxMin = rows.reduce(function (m, x) { return Math.max(m, x.minutes || 0); }, 0);
         // the fastest: most XP per minute, among those with at least 10 minutes (one lucky minute does not count)
         var fast = rows.filter(function (x) { return x.minutes >= 10; }).sort(function (a, b) { return b.xp / b.minutes - a.xp / a.minutes; })[0];
-        var list = rows.length ? h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, rows.map(function (x) {
+        var list = rows.length ? h('div', { class: 'card lb-card', style: 'padding:0' }, rows.map(function (x) {
           return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, x.rank <= 3 ? h('div', { class: 'lb-rank' }, medal(x.rank)) : h('div', { class: 'lb-rank' }, String(x.rank)),
-            h('div', { class: 'lb-name' }, UI.avatar(x.avatar, x.nickname, 30), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
+            h('div', { class: 'lb-name' }, moodAvatar(x), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
             h('div', { class: 'small muted num lb-min' }, (maxMin > 0 && x.minutes === maxMin) ? h('span', { class: 'thinking', title: 'Thinker of the week: most time spent thinking' }, h('i'), h('i'), h('i')) : null,
               (fast && fast === x) ? h('span', { class: 'supersonic', title: 'Supersonic: most XP per minute' }, icon('bolt')) : null, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
         })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
@@ -1356,6 +1382,7 @@
     var cards = [];
     if (guest) cards.push(guestBanner());
     cards.push(avatarCard());
+    if (!state.user.guest && feat('leaderboard')) cards.push(moodCard());   // only people on the leaderboard can be seen by others
     cards.push(langCard());
     cards.push(soundCard());
     var study = studyProfileCard(); if (study) cards.push(study);
@@ -1411,6 +1438,25 @@
   }
 
   /** Choose a character, symbol or initial and a background colour. Collapsed until "Change" is pressed. */
+  // Mood sayings (teacher, 27 October): chosen from this list in Profile, seen by others on the leaderboard (tap the avatar)
+  var MOODS = { fire: ['🔥', 'On fire'], unstoppable: ['🚀', 'Unstoppable'], thinking: ['🤔', 'Thinking hard'], confused: ['😵‍💫', 'Confused but trying'],
+    coffee: ['☕', 'Powered by coffee'], turtle: ['🐢', 'Slow but sure'], loading: ['🧠', 'Brain loading…'], boss: ['😎', 'Grammar boss'],
+    perfect: ['🙃', 'Present Perfectly confused'], onemore: ['📚', 'Just one more question'], sleep: ['💤', 'Should be sleeping'], unicorn: ['🦄', 'Irregular, like my verbs'] };
+  function moodCard() {
+    var grid = h('div', { class: 'moods' });
+    function draw() {
+      grid.replaceChildren.apply(grid, Object.keys(MOODS).map(function (k) {
+        var on = state.user.mood === k;
+        return h('button', { type: 'button', class: 'mood' + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', onclick: function () {
+          var next = on ? null : k;
+          api('account/profile', { mood: next }).then(function (r) { state.user = r.user; draw(); }).catch(function (e) { UI.toast(e.message); });
+        } }, h('span', { class: 'mood-em', 'aria-hidden': 'true' }, MOODS[k][0]), MOODS[k][1]);
+      }));
+    }
+    draw();
+    return h('div', { class: 'card' }, h('h2', null, 'Your mood'), grid);
+  }
+
   function avatarCard() {
     var u = state.user, cur = (u.avatar || '').split('-');
     var pick = { pic: cur[0] || 'ember', color: cur[1] || 'raspberry' };

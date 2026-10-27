@@ -7,6 +7,8 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 - **Two task fixes** (teacher): *rq-B12-1a* now says *Choose the correct option* (learners did not understand *report*); *ip-B12-1a* (*Do you know ___ the shop is open*) is practice only, because its wrong options miss the typical mistake.
 - **Colours and signs (teacher's review)**: links are teal, not red (red is only for mistakes); thinking bars and level dots teal/gold; today's bar in *This week* sits level with the others (a stray margin) and is gold; XP chips readable in dark mode; the words a writing task asks for have a warm grey mark; *My progress* shows icons instead of a line of text; Second Chance no longer touches the card below.
 - **Leaderboard**: neutral *This week / All time* switch; medals with a ribbon for the top three, with a slow shine; *Thinker of the week* (most time) gets a speech bubble with dots appearing one by one; *Supersonic* (most XP per minute, at least 10 minutes) gets a gold lightning badge; guests get a *Create account* button.
+- **Mood sayings**: registered learners choose one from a fixed list in Profile (*On fire*, *Powered by coffee*, *Irregular, like my verbs*…). On the leaderboard a small emoji sits on the avatar; a tap shows the saying in a bubble. No free text.
+- **Home**: a short friendly line at the top of the main card, a new one each visit (*Your verbs missed you.*, *Mistakes welcome here.*…).
 - **Surprise me for a new learner**: 8 questions from the most common mistakes (he works, articles, present perfect / past, question word order, in/on/at, listen to, will after when).
 - **Skip** is a quiet button, not an underlined link.
 - **Profile**: sound is an icon and a switch; *Quit* is a quiet button.

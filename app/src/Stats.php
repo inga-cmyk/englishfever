@@ -173,14 +173,14 @@ final class Stats
             $where .= ' AND a.day >= ?';
             $p[] = self::weekStart();
         }
-        $rows = Db::all("SELECT u.id, u.nickname, u.avatar, SUM(a.xp) AS pts, SUM(a.seconds) AS secs
+        $rows = Db::all("SELECT u.id, u.nickname, u.avatar, u.mood, SUM(a.xp) AS pts, SUM(a.seconds) AS secs
                          FROM activity a JOIN users u ON u.id = a.user_id
-                         WHERE $where GROUP BY u.id, u.nickname, u.avatar HAVING SUM(a.xp) > 0
+                         WHERE $where GROUP BY u.id, u.nickname, u.avatar, u.mood HAVING SUM(a.xp) > 0
                          ORDER BY pts DESC, u.nickname ASC LIMIT 50", $p);
         $out = [];
         $me = null;
         foreach ($rows as $i => $r) {
-            $row = ['rank' => $i + 1, 'nickname' => $r['nickname'], 'avatar' => Auth::effectiveAvatar($r['avatar'], (int) $r['id']), 'xp' => (int) $r['pts'], 'minutes' => (int) round($r['secs'] / 60), 'me' => (int) $r['id'] === $uid];
+            $row = ['rank' => $i + 1, 'nickname' => $r['nickname'], 'avatar' => Auth::effectiveAvatar($r['avatar'], (int) $r['id']), 'xp' => (int) $r['pts'], 'minutes' => (int) round($r['secs'] / 60), 'mood' => Auth::validMood($r['mood'] ?? null), 'me' => (int) $r['id'] === $uid];
             if ($row['me']) $me = $row;
             if ($i < 20) $out[] = $row;
         }

@@ -81,11 +81,16 @@ final class Auth
             'track_time' => (int) ($u['track_time'] ?? 1) === 1,
             'avatar' => self::effectiveAvatar($u['avatar'] ?? null, (int) $u['id']),
             'lang' => ($u['lang'] ?? '') === 'lv' ? 'lv' : 'en', // language of the grammar explanations
+            'mood' => self::validMood($u['mood'] ?? null),
             'research' => (int) ($u['research'] ?? 0),               // 0 not asked, 1 takes part in the study, 2 said no or left
             'cond' => Research::arms($u) ?: new stdClass(),          // features hidden for this learner by the study, e.g. {"streak":"off"}
             'reports_open' => $u['role'] === 'teacher' ? Reports::openCount() : 0, // reports waiting for the teacher
         ];
     }
+
+    /** Mood sayings a learner can show next to the avatar on the leaderboard: a fixed list (no free text to check). The texts are in the app (assets/app.js). */
+    public const MOODS = ['fire', 'unstoppable', 'thinking', 'confused', 'coffee', 'turtle', 'loading', 'boss', 'perfect', 'onemore', 'sleep', 'unicorn'];
+    public static function validMood(?string $m): ?string { return ($m !== null && in_array($m, self::MOODS, true)) ? $m : null; }
 
     /** A name others can see: a nickname or a real name. 2-30 characters, single spaces allowed. */
     public static function validNickname(string $n): string

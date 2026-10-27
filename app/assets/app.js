@@ -984,7 +984,7 @@
         drawFeedback(r, ans, false);
       } }) : null;
       fb.appendChild(h('h3', null, icon(good ? 'check' : 'cross'), it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
-        langBtn, res.xp ? h('span', { class: 'pill ' + (good ? 'good' : 'pink'), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
+        langBtn, res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
       if (!good && it.kind === 'mcq' && chosen) fb.appendChild(h('p', null, h('b', null, lv ? 'Tu izvēlējies: ' : 'You chose: '), h('span', { class: 'mine' }, chosen)));

@@ -261,12 +261,25 @@ textarea.write { min-height: 110px; resize: vertical; margin-bottom: 18px; }
 .feedback .right-ans { background: var(--good-bg); color: var(--good); border: 1px solid var(--good); border-radius: 6px; padding: 2px 8px; font-weight: 700; font-size: 1.08em; }
 .feedback .mine { background: var(--bad-bg); color: var(--bad); border-radius: 6px; padding: 1px 6px; font-weight: 600; }
 .feedback h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.feedback.good h3 { color: var(--good); } .feedback.bad h3 { color: var(--bad); }
+.feedback.good h3 { color: var(--good); } .feedback.bad h3 { color: var(--text); } .feedback.bad h3 svg { color: var(--bad); }
+/* XP in feedback: from beige to gold with a shine, by the points earned (2 = a try, 10-13, 14-19, 20+ incl. double XP) */
+.pill.xp { border: 1px solid transparent; font-weight: 750; }
+.pill.xp-1 { background: #EFE8DA; color: #7C776E; border-color: #E0D7C4; }
+.pill.xp-2 { background: var(--gold-pale); color: #6d5826; border-color: var(--gold); }
+.pill.xp-3 { background: linear-gradient(180deg, #F1DC9C, #DEC17A); color: #4f3d12; border-color: var(--gold-deep); }
+.pill.xp-4 { position: relative; overflow: hidden; background: linear-gradient(180deg, #F6E3A1, #D9B157 60%, #C99A3A); color: #3d2e08; border-color: #A87F2E; box-shadow: 0 0 10px rgba(222,193,122,.75), inset 0 1px 0 rgba(255,255,255,.7); }
+.pill.xp-4::after { content: ''; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.75), transparent); animation: xpshine 2.2s ease-in-out .3s 2; }
+@keyframes xpshine { to { left: 130%; } }
+:root[data-theme="dark"] .pill.xp-1 { background: #2A2620; color: #BDB8AD; border-color: #3A352D; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pill.xp-1 { background: #2A2620; color: #BDB8AD; border-color: #3A352D; } :root:not([data-theme="light"]) .pill.xp-2 { color: var(--gold); } }
+:root[data-theme="dark"] .pill.xp-2 { color: var(--gold); }
 .feedback .ans { background: var(--bg); border-radius: 10px; padding: 10px 12px; margin: 8px 0; color: var(--text); }
 .feedback .ans b { color: var(--text); }
 .feedback p { margin: 0 0 8px; color: var(--text); }
 details.rule { margin-top: 10px; }
-details.rule summary { cursor: pointer; font-weight: 650; color: var(--link); }
+details.rule summary { cursor: pointer; font-weight: 650; color: var(--btn); }
+:root[data-theme="dark"] details.rule summary { color: #5CCDB6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) details.rule summary { color: #5CCDB6; } }
 .rulecard { background: var(--surface); border-radius: 12px; padding: 14px 16px; margin-top: 8px; color: var(--text-soft); font-size: .93rem; }
 .rulecard ul { margin: 4px 0 10px 18px; padding: 0; }
 .rulecard .ex { background: var(--gold-pale); border-radius: 8px; padding: 8px 10px; color: var(--text); }

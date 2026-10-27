@@ -210,7 +210,7 @@ retired = history(dsl.ITEMS, os.path.join(HERE, 'history', 'published_items.json
 
 # practice only (teacher, 27 October): easy first steps whose answer can be guessed from the cards, and tasks whose hint gives the
 # answer away. Never in the placement test, still in practice. A flag, not content, so it is set after the immutability check.
-PRACTICE_ONLY = {"var-pa-a22-match-01", "var-ca-c11-order-01-r2"}
+PRACTICE_ONLY = {"var-pa-a22-match-01", "var-ca-c11-order-01-r2", "ip-B12-1a"}   # ip-B12-1a: the wrong options miss the typical mistake (is the shop open); an easy practice task (teacher, 27 October)
 for it in dsl.ITEMS:
     if it["id"] in PRACTICE_ONLY:
         it["practice_only"] = True

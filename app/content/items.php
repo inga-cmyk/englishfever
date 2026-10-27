@@ -6613,12 +6613,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rq-B12-1a",
+"id": "rq-B12-1a-r2",
 "skill": "rep_questions",
 "level": "B1.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Choose the correct report. 'Where do you work?' She asked me ___.",
+"q": "Choose the correct option: 'Where do you work?' She asked me ___.",
 "correct": "where I worked",
 "wrong": [
 "where did I work",
@@ -7487,7 +7487,8 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "For a yes/no question inside another question we use *if* or *whether.*",
 "wrong_why": {},
-"why_lv": "Jā/nē jautājumam citā jautājumā lieto *if* vai *whether*."
+"why_lv": "Jā/nē jautājumam citā jautājumā lieto *if* vai *whether*.",
+"practice_only": true
 },
 {
 "id": "ip-B12-2a",

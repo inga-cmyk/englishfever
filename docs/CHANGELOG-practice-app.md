@@ -4,6 +4,7 @@ The version in the app footer ("Version 2026-10-21 18:40") is the time the zip w
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
 - **From the Cowork test run (25 October):** the Home card says *12, 24 or 40 questions.* (not *24 quick questions*); *Start the test* and *Start* change to *Starting…* while the first question loads, so a slow server no longer looks broken; the last button is always *See my results*; *1 earlier mistake on these topics looks fixed.* (singular); the session summary says *Fixed so far: 5* and *Still to fix: 15* instead of *5 mistakes fixed so far | 15 mistakes left*; the page tells the server it is still open every 30 seconds instead of every 10 (a third of the requests; time on task is counted the same). *Mixed conditionals* in the picker works, but only appears once B2 or higher is ticked.
+- **Two task fixes** (teacher): *rq-B12-1a* now says *Choose the correct option* (learners did not understand *report*); *ip-B12-1a* (*Do you know ___ the shop is open*) is practice only, because its wrong options miss the typical mistake.
 - **Language switch in feedback is a small LV / EN button** instead of a red underlined link.
 - **Calmer feedback card**: neutral background for right and wrong answers; colour only on the heading and on the learner's own wrong answer (a small pink chip). The chosen wrong option in the list is now pink, not teal like a selected one.
 - **New area *Prepositions*** with both preposition topics (*in, on, at* and *listen to, good at*); *Verb patterns* keeps only verb topics.

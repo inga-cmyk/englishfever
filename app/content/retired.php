@@ -2179,6 +2179,23 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "rq-B12-1a",
+"skill": "rep_questions",
+"level": "B1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct report. 'Where do you work?' She asked me ___.",
+"correct": "where I worked",
+"wrong": [
+"where did I work",
+"where do I work",
+"where I work did"
+],
+"why": "In a reported question we use normal word order (subject + verb) and no *do / does / did.*",
+"wrong_why": {},
+"why_lv": "Netiešajā jautājumā lieto parasto vārdu secību (teik. priekšmets + darbības vārds) un bez *do / does / did*."
+},
+{
 "id": "rq-B12-3a",
 "skill": "rep_questions",
 "level": "B1.2",

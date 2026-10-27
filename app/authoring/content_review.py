@@ -368,6 +368,8 @@ def revise(original):
         hints=[["\\bdid\\b", "In the indirect part use statement order: *... why the order didn't arrive.*"]])
     fix('pasp-B11-3a', 'The verb and the noun were the same word (film); use a verb that cannot be mistaken for a noun.',
         q='Where ___ this photo ___? (take)', answers=[['was'], ['taken']])
+    fix('rq-B12-1a', 'Learners did not understand "report"; use the usual instruction (teacher, 27 October).',
+        q="Choose the correct option: 'Where do you work?' She asked me ___.")
     fix('ct-B22-2a', 'An option that says both sentences are about the past is illogical for this question; use a reversed contrast.',
         wrong=['A is about now. B is about the past.', 'A is about the future. B is about the past.', 'There is no difference.'])
     fix_again('ct-B22-4a', 'The answer that "needs editing" was arguable and showed an ungrammatical sentence as the correct answer; ask which sentence is not correct.',

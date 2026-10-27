@@ -433,7 +433,8 @@ html.dnd-dragging, html.dnd-dragging * { user-select: none; -webkit-user-select:
 details.card.fold { padding: 0; margin-bottom: 12px; box-shadow: none; }
 details.card.fold > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 16px 20px; }
 details.card.fold > summary::-webkit-details-marker { display: none; }
-details.card.fold > summary .h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+details.card.fold > summary .h3 { font-size: 1.25rem; font-weight: 800; color: var(--text); white-space: nowrap; flex: none; }
+details.card.fold > summary .muted { text-align: right; }
 details.card.fold > summary .h3::before { content: '▸'; margin-right: 8px; color: var(--muted); display: inline-block; }
 details.card.fold[open] > summary .h3::before { content: '▾'; }
 details.card.fold > .fold-body { padding: 0 20px 18px; }
@@ -441,7 +442,9 @@ details.card.fold h3 { font-size: 1rem; margin: 0 0 8px; }
 details.area-fold { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 4px; }
 details.area-fold > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 10px 0; }
 details.area-fold > summary::-webkit-details-marker { display: none; }
-details.area-fold > summary .h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+details.area-fold > summary .h3 { font-size: .98rem; font-weight: 600; color: var(--text-soft); }
+details.area-fold[open] > summary .h3 { color: var(--text); }   /* areas sit one step below the card title (teacher, 27 October) */
+details.area-fold > summary .muted, details.area-fold > summary .small { font-size: .82rem; }
 details.area-fold > summary .h3::before { content: '▸'; margin-right: 8px; color: var(--muted); display: inline-block; }
 details.area-fold[open] > summary .h3::before { content: '▾'; }
 details.area-fold .skillgrid { margin: 4px 0 10px; }

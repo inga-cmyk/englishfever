@@ -433,12 +433,12 @@
 
       var ic = started ? installCard(false) : null; if (ic) nodes.push(ic);
       var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
-      nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
-      if (started) {
+      if (started) {   // progress above the topics (teacher, 27 October)
         nodes.push(foldCard('progress', 'My progress', 'this week and thinking skills', function () {
           return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'Your thinking skills'), bloomBars(d.bloom)));
         }));
       }
+      nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
       show(h('div', { class: 'home' }, nodes));
     }).catch(fail);
   }

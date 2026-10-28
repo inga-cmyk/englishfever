@@ -185,8 +185,8 @@ for sid, r in RULES.items():
     if _w: RULES_MARKED[sid]["watch"] = [mk_en(x) for x in _w]   # "Watch out": the other rules worth knowing (teacher, 28 October; watch.py)
 for sid in RULES_MARKED:   # the new card layout (table, mistakes, uses with examples; cards2.py)
     if sid in cards2.CARDS2:
-        RULES_MARKED[sid]["v2"] = cards2.CARDS2[sid]["en"]
-        if "watch" in cards2.CARDS2[sid]["en"]: RULES_MARKED[sid]["watch"] = cards2.CARDS2[sid]["en"]["watch"]   # only what the card does not say already (teacher, 28 October)
+        RULES_MARKED[sid]["v2"] = cards2.marked(sid, cards2.CARDS2[sid]["en"])
+        if "watch" in cards2.CARDS2[sid]["en"]: RULES_MARKED[sid]["watch"] = RULES_MARKED[sid]["v2"]["watch"]   # only what the card does not say already (teacher, 28 October)
 import b1_topics  # noqa: E402
 LV_RULES_MARKED = {}
 for sid, r in lv_data.LV_RULES.items():
@@ -198,8 +198,8 @@ for sid, r in lv_data.LV_RULES.items():
         _w = r.get("watch") or watch.WATCH.get(sid, {}).get("lv")
         if _w: LV_RULES_MARKED[sid]["watch"] = [mk_lv(x) for x in _w]
         if sid in cards2.CARDS2:
-            LV_RULES_MARKED[sid]["v2"] = cards2.CARDS2[sid]["lv"]
-            if "watch" in cards2.CARDS2[sid]["lv"]: LV_RULES_MARKED[sid]["watch"] = cards2.CARDS2[sid]["lv"]["watch"]
+            LV_RULES_MARKED[sid]["v2"] = cards2.marked(sid, cards2.CARDS2[sid]["lv"])
+            if "watch" in cards2.CARDS2[sid]["lv"]: LV_RULES_MARKED[sid]["watch"] = LV_RULES_MARKED[sid]["v2"]["watch"]
     finally:
         italics.LV_ASCII.clear(); italics.LV_ASCII.update(_saved)
 for key, line in EN_INDEX.items():

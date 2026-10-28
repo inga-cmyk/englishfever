@@ -111,3 +111,47 @@ CARDS2 = {
 
 import cards2_a2  # noqa: E402
 CARDS2.update(cards2_a2.CARDS)
+
+# The form to learn is green in every example (teacher, 28 October): in the italic parts of table cells, notes and
+# Watch out, these words get [[ ]]. Parts after "not" / "nevis" (the wrong version) stay as they are.
+HL = {
+    "present_simple": r"watches|goes|studies|plays|has|know|lives",
+    "present_perfect": r"been|gone|already|yet|for|since|lived|eaten",
+    "prep_time_place": r"at|on|in|tomorrow|yesterday|next|last|this|every",
+    "irregular_plurals": r"days|boys|advice",
+    "articles": r"an|a|the",
+    "quantity": r"a lot of|a few|a little|How many|How much|some|any|many|much|few|little|no",
+    "adverbs": r"\w+ly|well|fast|hard|always|usually|often|sometimes|never|very|really|quite|too|extremely|enough",
+    "verb_patterns": r"\w+ing|to \w+|go|laugh|swim",
+    "past_simple": r"ago|lived|since",
+    "past_continuous": r"went|was going to",
+    "agreement": r"",
+}
+
+
+def _mark(sid, text):
+    import re
+    pat = HL.get(sid)
+    if not pat or "*" not in text:
+        return text
+    rx = re.compile(r"(?<![\w\[])(?:" + pat + r")(?![\w\]])", re.I if sid != "articles" else 0)
+    parts = text.split("*")
+    for i in range(1, len(parts), 2):
+        before = parts[i - 1].rstrip()
+        if "[[" in parts[i] or before.endswith("not") or before.endswith("nevis") or before.endswith("(not") or before.endswith("(nevis"):
+            continue
+        parts[i] = rx.sub(lambda m: "[[" + m.group(0) + "]]", parts[i])
+    return "*".join(parts)
+
+
+def marked(sid, v):
+    """A copy of one language's card with the forms in the examples marked green."""
+    import copy
+    v = copy.deepcopy(v)
+    for k in ("choice", "table"):
+        if k in v:
+            v[k]["rows"] = [[r[0]] + [_mark(sid, c) for c in r[1:]] for r in v[k]["rows"]]
+            for n in ("note", "short"):
+                if v[k].get(n): v[k][n] = _mark(sid, v[k][n])
+    if v.get("watch"): v["watch"] = [_mark(sid, w) for w in v["watch"]]
+    return v

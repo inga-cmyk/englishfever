@@ -775,3 +775,4 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 @media (max-width: 560px) { .rc-wide.rc-keep { display: block; } .rc-stack.rc-plain { display: none; } .rc-table tbody th, .rc-table thead th:first-child { width: 6.2em; } }
 .rc-table th, .rc-table td { white-space: normal !important; }
 .rc-plain thead th { text-transform: none; letter-spacing: 0; font-size: .85rem; }
+.rulecard .watch b.hl, .rc2 .rc-use-t .hl { color: var(--good); }

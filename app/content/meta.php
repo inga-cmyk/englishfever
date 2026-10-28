@@ -475,7 +475,14 @@ return json_decode(<<<'EF_JSON_END'
      "Processes, rules and notices."
     ],
     "signals": "*often, every day, usually, in my country*",
-    "example": "*These cars are built in Germany.*"
+    "example": "*These cars are built in Germany.*",
+    "watch": [
+     "*by* + the doer only when it matters: *This song is sung by everyone.*",
+     "Always the past participle after *be*: *is made* (not *is make* or *is making*).",
+     "Question: *Where are these phones made?* (not *Where these phones are made?*)",
+     "*be born*: *I was born in 1990* (not *I born in 1990*).",
+     "Verbs without an object have no passive: *It happened* (not *It was happened*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -487,7 +494,14 @@ return json_decode(<<<'EF_JSON_END'
      "Kad svarīgāka ir darbība vai tās objekts, nevis darītājs.",
      "Procesi, noteikumi un paziņojumi."
     ],
-    "signals": "*often, every day, usually, in my country*"
+    "signals": "*often, every day, usually, in my country*",
+    "watch": [
+     "*by* + darītājs *tikai* tad, ja tas ir svarīgi: *This song is sung by everyone.*",
+     "Ar *be* vienmēr 3. forma: *is made* (nevis *is make* vai *is making*).",
+     "Jautājums: *Where are these phones made?* (nevis *Where these phones are made*?)",
+     "*be born*: *I was born in 1990* (nevis *I born in 1990*). *Latviski esmu dzimis*, tāpēc palīgdarbības vārdu izlaiž.",
+     "Darbības vārdiem bez papildinātāja ciešamās kārtas nav: *It happened* (nevis *It was happened*)."
+    ]
    }
   },
   {
@@ -755,7 +769,13 @@ return json_decode(<<<'EF_JSON_END'
      "Instructions: *If the light is red, stop.*"
     ],
     "signals": "*if, when, whenever, every time*",
-    "example": "*If you leave biscuits on the desk, someone eats them.*"
+    "example": "*If you leave biscuits on the desk, someone eats them.*",
+    "watch": [
+     "*if* and *when* mean almost the same here: *If / When you mix red and blue, you get purple.*",
+     "Present simple in both parts, not *will*: *If you press this, the door opens* (not *If you will press this, the door opens*).",
+     "A comma after the *if*-part when it comes first: *If it rains, the road gets wet.* No comma when it comes second: *The road gets wet if it rains.*",
+     "The second part can be an instruction: *If you feel sick, stay at home.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -768,7 +788,13 @@ return json_decode(<<<'EF_JSON_END'
      "Vispārīgi noteikumi un ieradumi.",
      "Norādījumi: *If the light is red, stop.*"
     ],
-    "signals": "*if, when, whenever, every time*"
+    "signals": "*if, when, whenever, every time*",
+    "watch": [
+     "*if* un *when* šeit nozīmē gandrīz to pašu: *If / When you mix red and blue, you get purple.*",
+     "Abās daļās Present Simple, nevis *will*: *If you press this, the door opens* (nevis *If you will press this, the door opens*).",
+     "Ja *if* daļa ir pirmā, aiz tās liek komatu: *If it rains, the road gets wet.* Ja otrā, *komata* nav: *The road gets wet if it rains.*",
+     "Otrā daļa var būt pavēle: *If you feel sick, stay at home.*"
+    ]
    }
   },
   {
@@ -793,7 +819,13 @@ return json_decode(<<<'EF_JSON_END'
      "First conditional = one future situation. Zero conditional = always true."
     ],
     "signals": "*if, unless, as soon as, when, in case*",
-    "example": "*If you send the email now, she will reply before lunch.*"
+    "example": "*If you send the email now, she will reply before lunch.*",
+    "watch": [
+     "*unless* = *if not*: *Unless you hurry, you'll miss the bus* (not *Unless you don't hurry*).",
+     "*if* (maybe it happens) and *when* (it will happen): *If I see her, I'll tell her. When I see her, I'll tell her.*",
+     "No *will* after *if*: *If it rains tomorrow…* (not *If it will rain tomorrow…*).",
+     "The comma works the same way as in the zero conditional."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -807,7 +839,13 @@ return json_decode(<<<'EF_JSON_END'
      "Solījumi, brīdinājumi un piedāvājumi.",
      "First conditional = viena nākotnes situācija. Zero conditional = vienmēr patiesi."
     ],
-    "signals": "*if, unless, as soon as, when, in case*"
+    "signals": "*if, unless, as soon as, when, in case*",
+    "watch": [
+     "*unless = if not*: *Unless you hurry, you'll miss the bus* (nevis *Unless you don't hurry*).",
+     "*if* (varbūt notiks) un *when* (*noteikti* notiks): *If I see her, I'll tell her.* *When I see her, I'll tell her.*",
+     "Aiz *if* nav *will*: *If it rains tomorrow*… (nevis *If it will rain tomorrow*…). *Latviski* ja rīt līs, tāpēc *gribas will*.",
+     "*Komats* pēc tā paša *principa* kā *zero conditional*."
+    ]
    }
   },
   {
@@ -1604,7 +1642,13 @@ return json_decode(<<<'EF_JSON_END'
      "*explain, suggest, describe, introduce*: always the thing first: *She explained the problem to me.* (not *She explained me the problem*)"
     ],
     "signals": "*give, send, show, tell, lend, buy, make, to, for*",
-    "example": "*I bought my sister a book, and I gave it to her yesterday.*"
+    "example": "*I bought my sister a book, and I gave it to her yesterday.*",
+    "watch": [
+     "*explain, suggest, describe* with *to*: *Explain it to me* (not *Explain me it*).",
+     "*say* with *to*, *tell* without *to*: *She said to me… / She told me…* (not *She said me*).",
+     "Two pronouns: *Give it to me* (*Give me it* is heard in speech, but not used in tests).",
+     "*for* when we do something to help someone: *I cooked dinner for you.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1617,7 +1661,13 @@ return json_decode(<<<'EF_JSON_END'
      "Abām konstrukcijām ir viena nozīme. Bieži cilvēku liek *pirmo* (*She told me a story*) un lieto *to / for*, kad *lieta* ir svarīgāka.",
      "*explain, suggest, describe, introduce*: vienmēr *vispirms lieta*: *She explained the problem to me.* (nevis *She explained me the problem*)"
     ],
-    "signals": "*give, send, show, tell, lend, buy, make, to, for* (*dot*, sūtīt, parādīt, pastāstīt, *aizdot, pirkt*, taisīt)"
+    "signals": "*give, send, show, tell, lend, buy, make, to, for* (*dot*, sūtīt, parādīt, pastāstīt, *aizdot, pirkt*, taisīt)",
+    "watch": [
+     "*explain, suggest, describe* lieto ar *to*: *Explain it to me* (nevis *Explain me it*). *Latviski paskaidro* man, tāpēc *gribas likt* cilvēku *pirmo*.",
+     "*say* lieto ar *to, tell* bez *to*: *She said to me*… / *She told me*… (nevis *She said me*).",
+     "*Divi* vietniekvārdi: *Give it to me* (*Give me it* bieži *dzird* sarunā, bet *testos* nelieto).",
+     "*for* lieto, kad dara kāda labā: *I cooked dinner for you.*"
+    ]
    }
   },
   {
@@ -1845,7 +1895,14 @@ return json_decode(<<<'EF_JSON_END'
      "In a question the preposition often goes to the end: *What are you looking at? Who are you waiting for?*"
     ],
     "signals": "*listen to music, wait for the bus, good at maths, call me*",
-    "example": "*I'm waiting for Anna. She's good at maths, but she's afraid of dogs.*"
+    "example": "*I'm waiting for Anna. She's good at maths, but she's afraid of dogs.*",
+    "watch": [
+     "Some verbs take no preposition: *discuss the plan* (not *discuss about*), *enter the room* (not *enter into*), *call me* (not *call to me*).",
+     "*married to* (not *married with*).",
+     "*depend on* (not *depend from*).",
+     "After a preposition, a verb takes *-ing*: *good at swimming, interested in learning.*",
+     "*arrive in / at*, never *arrive to* (see *In, on, at*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1857,7 +1914,14 @@ return json_decode(<<<'EF_JSON_END'
      "Aiz prievārda ir lietvārds vai vietniekvārds: *Listen to me.* *I'm waiting for the bus.*",
      "Jautājumā prievārds bieži ir beigās: *What are you looking at?* *Who are you waiting for?*"
     ],
-    "signals": "*listen to music, wait for the bus, good at maths, call me* (klausīties mūziku, gaidīt *autobusu*, viņai *padodas* matemātika, *piezvani* man)"
+    "signals": "*listen to music, wait for the bus, good at maths, call me* (klausīties mūziku, gaidīt *autobusu*, viņai *padodas* matemātika, *piezvani* man)",
+    "watch": [
+     "Daži darbības vārdi ir bez prievārda: *discuss the plan* (nevis *discuss about*), *enter the room* (nevis *enter into*), *call me* (nevis *call to me*). *Latviski apspriest* par, zvanīt kādam, tāpēc *rodas lieks* prievārds.",
+     "*married to* (nevis *married with*). *Latviski* precējies ar, tāpēc *rodas with*.",
+     "*depend on* (nevis *depend from*). *Latviski* atkarīgs no, tāpēc *rodas from*.",
+     "Aiz prievārda darbības vārds ir ar *-ing*: *good at swimming, interested in learning*.",
+     "*arrive in / at*, nekad *arrive to* (*sk*. *In / on / at*)."
+    ]
    }
   },
   {

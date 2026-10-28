@@ -2445,8 +2445,8 @@
        "ex": [
         "I stopped [[smoking]]. (= I don't smoke any more)",
         "I stopped [[to smoke]]. (= I stopped what I was doing so that I could smoke)",
-        "Remember [[to call]] her. (= don't forget, it is something you have to do)",
-        "I remember [[meeting]] her. (= I met her, and I still have this memory)"
+        "Remember [[to call]] her. (= Don't forget to call her.)",
+        "I remember [[watching]] the sunset. (= I watched the sunset, and I still remember it.)"
        ]
       }
      ],
@@ -2526,8 +2526,8 @@
        "ex": [
         "I stopped [[smoking]]. (= vairs nesmēķēju)",
         "I stopped [[to smoke]]. (= pārtraucu to, ko darīju, lai uzsmēķētu)",
-        "Remember [[to call]] her. (= neaizmirsti, tas tev jāizdara)",
-        "I remember [[meeting]] her. (= es viņu satiku, un man ir šī atmiņa)"
+        "Remember [[to call]] her. (= Neaizmirsti viņai piezvanīt.)",
+        "I remember [[watching]] the sunset. (= Es atceros, kā mēs vērojām saulrietu.)"
        ]
       }
      ],

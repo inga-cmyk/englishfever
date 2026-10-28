@@ -255,20 +255,15 @@
       h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name'), nick),
       h('div', { 'aria-hidden': 'true', style: 'position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden' }, h('label', { for: 'website' }, 'Leave this empty'), trap), // a trap for bots
       errBox,
-      h('button', { class: cfg.sso ? 'btn ghost block' : 'btn block', type: 'submit' }, 'Continue as guest'),
+      h('button', { class: 'btn block', type: 'submit' }, 'Continue as guest'),   // the main way in for a new person (teacher, 27 October)
       null);
 
     var card = [];
-    if (cfg.sso) {
-      card.push(
-        h('h2', { style: 'text-align:center' }, 'Registered at englishfever.com?'),
-        h('a', { class: 'btn block', href: cfg.wp_login_url }, 'Continue with my account'),
-        h('div', { class: 'or' }, 'or'),
-        h('h2', { style: 'text-align:center' }, 'Try it as a guest'));
-    } else {
-      card.push(h('h2', { style: 'text-align:center' }, 'Start practising'));
-    }
-    card.push(guestForm);
+    card.push(h('h2', { style: 'text-align:center' }, cfg.sso ? 'Try it as a guest' : 'Start practising'), guestForm);
+    if (cfg.sso) card.push(
+      h('div', { class: 'or' }, 'or'),
+      h('h2', { style: 'text-align:center' }, 'Registered at englishfever.com?'),
+      h('a', { class: 'btn ghost block', href: cfg.wp_login_url }, icon('user'), 'Continue with my account'));
     if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', registerLink('', 'Create a free account')));
 
     show(h('div', null,
@@ -277,10 +272,10 @@
         h('h1', null, 'Practise English grammar. ', h('em', null, 'Know what to fix next.')),
         h('p', null, 'Short grammar questions for adult learners, A2 to C1. Clear feedback after every answer.'),
         cfg.beta ? h('p', { class: 'betaline' }, betaPill()) : null,
-        h('div', { class: 'points' },
-          h('div', null, h('b', null, 'Placement test'), '12, 24 or 40 questions.'),
-          h('div', null, h('b', null, 'Your choice'), 'Pick the topics and level.'),
-          h('div', null, h('b', null, 'Real thinking'), 'Spot, judge and write.'))),
+        h('div', { class: 'hero-feats' },   // what the app gives, as three icons (they looked like buttons as boxes; teacher, 27 October)
+          h('span', null, h('i', null, icon('up')), 'Find your level'),
+          h('span', null, h('i', null, icon('target')), 'Fix your mistakes'),
+          h('span', null, h('i', null, icon('bolt')), 'Think, not guess'))),
       h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
   }
 
@@ -875,7 +870,10 @@
     // "Rewrite in the past: I have to get up early." -> the instruction, then the sample sentence on its own line in italics
     var SPLIT = PROMPT_SPLIT;
     var promptSplit = SPLIT.exec(it.q || '');
-    if (!promptSplit && it.kind === 'gap') promptSplit = [it.q, 'Complete the sentence', it.q];   // every gap task has an instruction line, like the other task types
+    if (!promptSplit && it.kind === 'gap') {   // every gap task has an instruction line, like the other task types
+      var lead = /^((?:Use|Complete|Write|Put|Choose|Add)\b[^.?!_]*)[.]\s+(.*___.*)$/.exec(it.q || '');   // "Use the present simple. My sister ___ here." -> the first sentence is the instruction
+      promptSplit = lead ? [it.q, lead[1], lead[2]] : [it.q, 'Complete the sentence', it.q];
+    }
     var promptSample = promptSplit ? promptSplit[2] : (it.q || '');
     function setPrompt(el, text) { // plain prompt text, with the instruction split off when there is one
       var m = SPLIT.exec(text || '');
@@ -1117,7 +1115,7 @@
       dotsEl,
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
-        h('div', { class: 'meta' }, h('span', { class: 'pill dark' }, it.skill_label), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
+        h('div', { class: 'meta' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
           ses.mode === 'placement' ? null : h('span', { class: 'pill', title: state.meta.bloom[String(it.bloom)].desc }, bloomName(it.bloom), ' ', bloomDots(it.bloom)), taskIdEl, reportBtn),
         qEl, area, h('div', { class: 'row', style: 'gap:18px' }, submit, ses.mode === 'placement' || rev ? null : skipBtn), feedback)));
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again

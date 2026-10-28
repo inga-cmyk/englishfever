@@ -278,9 +278,9 @@ final class Research
                 $t = (new DateTime('@' . $e['created_at']))->setTimezone(Stats::tz());
                 $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $t->format('i'), $e['ev'], $e['detail'] ?? ''];
             }
-            foreach (Db::all('SELECT source, mode, n, started_at FROM psessions WHERE user_id = ? AND started_at >= ? ORDER BY id', [(int) $u['id'], (int) $u['research_at']]) as $p) {
+            foreach (Db::all('SELECT source, mode, state, n, started_at FROM psessions WHERE user_id = ? AND started_at >= ? ORDER BY id', [(int) $u['id'], (int) $u['research_at']]) as $p) {
                 $t = (new DateTime('@' . $p['started_at']))->setTimezone(Stats::tz());
-                $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $t->format('i'), 'session_start', ($p['source'] ?? $p['mode']) . ':' . (int) $p['n']];
+                $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $t->format('i'), 'session_start', Usage::sourceOf($p) . ':' . (int) $p['n']];
             }
         }
         usort($rows, fn($a, $b) => [$a[0], $a[1], $a[3], $a[4]] <=> [$b[0], $b[1], $b[3], $b[4]]);
@@ -339,7 +339,7 @@ correct      1 or 0.   seconds   time to answer.   item   task id (for item anal
 events.csv   (one row per logged action; from 28 October 2026)
 event        page, rule_card, lang, skip, quit, review, report, sound, mood, path_step, bonus, or session_start.
 detail       a page name or topic id; for session_start: where it was started (placement, path, path_check, surprise,
-             second_chance, home_topic, practice_page, rule_card; older sessions: the mode) and the number of answers.
+             second_chance, home_topic, practice_page, rule_card; older sessions: placement, second_chance and surprise are known, the rest is unknown) and the number of answers.
 
 NOTES
 Learners chose to join, so the sample is self-selected. Assignment to conditions is random only among those who joined.

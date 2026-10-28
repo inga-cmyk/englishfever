@@ -662,7 +662,7 @@
       show(h('div', null,
         h('div', { class: 'row between', style: 'margin-bottom:14px;flex-wrap:wrap;gap:10px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Usage')),
           h('div', { class: 'row', style: 'gap:8px;flex-wrap:wrap' }, pick, h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/usage-export' }, 'Download CSV'))),
-        h('p', { class: 'small muted' }, 'Students only, the last ' + days + ' days. Sessions started before 28 October have no start point, except the level test, Second Chance and Surprise me.'),
+        h('p', { class: 'small muted' }, 'Students only, the last ' + days + ' days. Sessions started before 28 October have no start point, except the level test, Second Chance and Surprise me (known from the saved session).'),
         h('div', { class: 'card', style: 'padding:0;overflow:hidden;margin-bottom:16px' }, h('h2', { style: 'padding:18px 18px 0' }, 'How sessions are started'),
           tbl(['Started from', 'Sessions', 'Learners', 'Answers'], srcRows, 'No sessions yet.')),
         h('div', { class: 'card', style: 'padding:0;overflow:hidden;margin-bottom:16px' }, h('h2', { style: 'padding:18px 18px 0' }, 'What learners open and press'),

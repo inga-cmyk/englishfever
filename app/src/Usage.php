@@ -47,7 +47,7 @@ final class Usage
     {
         $since = time() - $days * 86400;
         $sources = [];
-        foreach (Db::all("SELECT COALESCE(p.source, CASE WHEN p.mode = 'placement' THEN 'placement' WHEN p.mode = 'comeback' THEN 'second_chance' WHEN p.mode = 'smart' THEN 'surprise' ELSE 'unknown' END) AS src,
+        foreach (Db::all("SELECT COALESCE(p.source, CASE WHEN p.mode = 'placement' THEN 'placement' WHEN p.state LIKE '%\"comeback\":true%' THEN 'second_chance' WHEN p.state LIKE '%\"smart\":true%' THEN 'surprise' ELSE 'unknown' END) AS src,
                                  COUNT(1) AS n, COUNT(DISTINCT p.user_id) AS people, SUM(p.n) AS answers
                           FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND p.started_at >= ? GROUP BY src ORDER BY n DESC", [$since]) as $r) {
             $sources[] = ['source' => $r['src'], 'sessions' => (int) $r['n'], 'people' => (int) $r['people'], 'answers' => (int) $r['answers']];
@@ -58,7 +58,7 @@ final class Usage
             $events[] = ['ev' => $r['ev'], 'label' => self::EVENTS[$r['ev']] ?? $r['ev'], 'detail' => $r['detail'], 'count' => (int) $r['n'], 'people' => (int) $r['people']];
         }
         $people = [];
-        foreach (Db::all("SELECT u.id, u.nickname, COALESCE(p.source, CASE WHEN p.mode = 'placement' THEN 'placement' WHEN p.mode = 'comeback' THEN 'second_chance' WHEN p.mode = 'smart' THEN 'surprise' ELSE 'unknown' END) AS src, COUNT(1) AS n
+        foreach (Db::all("SELECT u.id, u.nickname, COALESCE(p.source, CASE WHEN p.mode = 'placement' THEN 'placement' WHEN p.state LIKE '%\"comeback\":true%' THEN 'second_chance' WHEN p.state LIKE '%\"smart\":true%' THEN 'surprise' ELSE 'unknown' END) AS src, COUNT(1) AS n
                           FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND p.started_at >= ? GROUP BY u.id, u.nickname, src", [$since]) as $r) {
             $id = (int) $r['id'];
             $people[$id] ??= ['id' => $id, 'nickname' => $r['nickname'], 'sources' => [], 'events' => 0];
@@ -69,6 +69,17 @@ final class Usage
         }
         usort($people, fn($a, $b) => array_sum($b['sources']) <=> array_sum($a['sources']));
         return ['days' => $days, 'sources' => $sources, 'events' => $events, 'people' => array_values($people), 'source_names' => self::SOURCES];
+    }
+
+    /** Where a session was started; sessions from before 28 October: placement, Second Chance and Surprise me are known from the saved state. */
+    public static function sourceOf(array $p): string
+    {
+        if (!empty($p['source'])) return $p['source'];
+        if ($p['mode'] === 'placement') return 'placement';
+        $st = (string) ($p['state'] ?? '');
+        if (str_contains($st, '"comeback":true')) return 'second_chance';
+        if (str_contains($st, '"smart":true')) return 'surprise';
+        return 'unknown';
     }
 
     /** Every logged action of students, oldest first (for the teacher; the research export has its own pseudonymised file). */
@@ -82,9 +93,9 @@ final class Usage
         }
         fputcsv($fh, [], ',', '"', '\\');
         fputcsv($fh, ['session started', 'nickname', 'source', 'mode', 'answers'], ',', '"', '\\');
-        foreach (Db::all("SELECT p.started_at, u.nickname, p.source, p.mode, p.n FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' ORDER BY p.id") as $r) {
+        foreach (Db::all("SELECT p.started_at, u.nickname, p.source, p.mode, p.state, p.n FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' ORDER BY p.id") as $r) {
             $t = (new DateTime('@' . $r['started_at']))->setTimezone(Stats::tz())->format('Y-m-d H:i:s');
-            fputcsv($fh, [$t, Stats::csvCell((string) $r['nickname']), $r['source'] ?? '', $r['mode'], (int) $r['n']], ',', '"', '\\');
+            fputcsv($fh, [$t, Stats::csvCell((string) $r['nickname']), self::sourceOf($r), $r['mode'], (int) $r['n']], ',', '"', '\\');
         }
         rewind($fh);
         return (string) stream_get_contents($fh);

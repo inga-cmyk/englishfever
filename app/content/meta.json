@@ -453,7 +453,7 @@
       [
        "I [[working]] now.",
        "I [[am working]] now.",
-       "Latviski \"es strādāju\" ir viens vārds, tāpēc *am* izlaiž."
+       "Latviski \"es strādāju\" ir viens vārds, tāpēc, tulkojot burtiski, *am* izlaiž."
       ],
       [
        "She is [[work]] at the moment.",
@@ -3145,7 +3145,7 @@
       [
        "What [[you want]]?",
        "What [[do you want]]?",
-       "Latviski \"Ko tu gribi?\" ir bez palīgdarbības vārda, tāpēc *do* izlaiž."
+       "Latviski \"Ko tu gribi?\" ir bez palīgdarbības vārda, tāpēc, tulkojot burtiski, *do* izlaiž."
       ],
       [
        "Who [[does live]] here?",
@@ -4634,10 +4634,10 @@
        ]
       },
       {
-       "t": "*have* = own: *Do you have…?* or *Have you got…?*",
+       "t": "*have* = own: *Do you have…?* or *Have you got…?* The meaning is the same; *have got* is more British.",
        "ex": [
-        "[[Do]] you have a car?",
-        "[[Have]] you got a car?"
+        "[[Do]] you [[have]] a car?",
+        "[[Have]] you [[got]] a car?"
        ]
       }
      ],
@@ -4743,10 +4743,10 @@
        ]
       },
       {
-       "t": "*have* = piederēt: *Do you have…?* vai *Have you got…?*",
+       "t": "*have* = piederēt: *Do you have…?* vai *Have you got…?* Nozīme ir tā pati; *have got* biežāk lieto britu angļu valodā.",
        "ex": [
-        "[[Do]] you have a car?",
-        "[[Have]] you got a car?"
+        "[[Do]] you [[have]] a car?",
+        "[[Have]] you [[got]] a car?"
        ]
       }
      ],

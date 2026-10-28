@@ -89,6 +89,7 @@ GAP_INSTR = {
     "Comparison": "Complete the comparison with one word:",
 }
 def gp(t, lv, b, q, ok, why, lvw, bank=None):
+    if not isinstance(ok, str): raise SystemExit("gap answer must be text like \"did\" or \"does / visit\", not a list: " + q)   # a list was written as ['did'] and no answer matched (28 October)
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))   # an explanation that fitted another part of the sentence (audit_fixes.py)
     ok = extra_answers.GAP.get(q, ok)   # a gap whose other correct answers were added by hand (extra_answers.py)
     old = None

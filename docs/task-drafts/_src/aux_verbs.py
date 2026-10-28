@@ -49,14 +49,14 @@ T.mcq("A2.2", "Choose the correct short answer: 'Have you finished?' 'Yes, I ___
 
 # ── write the missing word ──
 GAP_Q = "Write the missing word (am, is, are, do, does, did, have or has): "
-T.gap("A2.1", GAP_Q + "___ your brother play football?", ["Does"], DOES)
-T.gap("A2.1", GAP_Q + "___ you at work now?", ["Are"], BE)
-T.gap("A2.2", GAP_Q + "___ you finish work early yesterday?", ["Did"], DID)
-T.gap("A2.2", GAP_Q + "___ she ever eaten sushi?", ["Has"], HAVE)
-T.gap("A2.2", GAP_Q + "Why ___ you laughing?", ["are"], BE)
-T.gap("A2.2", GAP_Q + "What time ___ the shop open?", ["does"], DOES)
-T.gap("B1.1", GAP_Q + "___ you been waiting long?", ["Have"], HAVE)
-T.gap("B1.1", GAP_Q + "Where ___ you go on holiday last year?", ["did"], DID)
+T.gap("A2.1", GAP_Q + "___ your brother play football?", "Does", DOES)
+T.gap("A2.1", GAP_Q + "___ you at work now?", "Are", BE)
+T.gap("A2.2", GAP_Q + "___ you finish work early yesterday?", "Did", DID)
+T.gap("A2.2", GAP_Q + "___ she ever eaten sushi?", "Has", HAVE)
+T.gap("A2.2", GAP_Q + "Why ___ you laughing?", "are", BE)
+T.gap("A2.2", GAP_Q + "What time ___ the shop open?", "does", DOES)
+T.gap("B1.1", GAP_Q + "___ you been waiting long?", "Have", HAVE)
+T.gap("B1.1", GAP_Q + "Where ___ you go on holiday last year?", "did", DID)
 
 # ── make a question ──
 T.text("A2.1", "Make a question: She works on Saturdays.", ["Does she work on Saturdays?"], DOES)
@@ -84,6 +84,6 @@ T.mcq("A2.1", Q + "'Were they at the party?'", "No, they weren't.", ["No, they d
 T.mcq("A2.1", Q + "'Can you swim?'", "Yes, I can.", ["Yes, I do.", "Yes, I am."], SHORT)
 T.mcq("A2.2", Q + "'Do your parents live in Riga?'", "No, they don't.", ["No, they doesn't.", "No, they aren't."], SHORT)
 T.mcq("A2.1", Q + "'Is it raining?'", "Yes, it is.", ["Yes, it does.", "Yes, it rains."], SHORT)
-T.gap("A2.2", "Write the short answer: 'Does Anna speak French?' 'No, she ___.'", ["doesn't"], SHORT_LV)
+T.gap("A2.2", "Write the short answer: 'Does Anna speak French?' 'No, she ___.'", "doesn't", SHORT_LV)
 
 save("aux-verbs-1.csv")

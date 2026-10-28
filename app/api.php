@@ -136,7 +136,23 @@ try {
         case 'session/start':
             $u = Auth::require();
             throttle('sess:' . hash('sha256', $_SERVER['REMOTE_ADDR'] ?? '?'), 150, 3600, 'Too many new sessions from this connection. Please wait a little.');
-            out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10), isset($in['levels']) ? (array) $in['levels'] : null));
+            out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10), isset($in['levels']) ? (array) $in['levels'] : null, isset($in['source']) ? (string) $in['source'] : null));
+
+        case 'event':   // what the learner opens and presses (Usage page): a fixed list of names, no text
+            $u = Auth::require();
+            out(['ok' => Usage::record((int) $u['id'], (array) ($in['events'] ?? []))]);
+
+        case 'teacher/usage':
+            Auth::requireTeacher();
+            out(Usage::summary(max(1, min(365, (int) ($_GET['days'] ?? 30)))));
+
+        case 'teacher/usage-export':
+            Auth::requireTeacher();
+            while (ob_get_level() > 0) ob_end_clean();
+            header('Content-Type: text/csv; charset=utf-8');
+            header('Content-Disposition: attachment; filename="practice-usage-' . date('Y-m-d') . '.csv"');
+            echo "\xEF\xBB\xBF" . Usage::export();
+            exit;
 
         case 'session/resume':
             $u = Auth::require();
@@ -291,7 +307,7 @@ try {
                 exit;
             }
             $csv = match ($file) {
-                'people' => Research::people(), 'days' => Research::days(), 'answers' => Research::answers(),
+                'people' => Research::people(), 'days' => Research::days(), 'answers' => Research::answers(), 'events' => Research::events(),
                 default => throw new ApiError('Not found.', 404),
             };
             while (ob_get_level() > 0) ob_end_clean();   // a stray blank line from a server file (e.g. config.php) must not start the CSV (export of 26 October)

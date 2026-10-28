@@ -267,7 +267,27 @@ final class Research
         return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item'], $rows);
     }
 
-    /** Plain-text description of the three files, for the methods section. */
+    /** What participants opened and pressed (Usage), and where each session was started; pseudonymised like the other files. */
+    public static function events(): string
+    {
+        $rows = [];
+        foreach (self::participants() as $u) {
+            $start = self::dayOf((int) $u['research_at']);
+            $pid = self::pid((int) $u['id']);
+            foreach (Db::all('SELECT ev, detail, created_at FROM events WHERE user_id = ? AND created_at >= ? ORDER BY id', [(int) $u['id'], (int) $u['research_at']]) as $e) {
+                $t = (new DateTime('@' . $e['created_at']))->setTimezone(Stats::tz());
+                $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $t->format('i'), $e['ev'], $e['detail'] ?? ''];
+            }
+            foreach (Db::all('SELECT source, mode, n, started_at FROM psessions WHERE user_id = ? AND started_at >= ? ORDER BY id', [(int) $u['id'], (int) $u['research_at']]) as $p) {
+                $t = (new DateTime('@' . $p['started_at']))->setTimezone(Stats::tz());
+                $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $t->format('i'), 'session_start', ($p['source'] ?? $p['mode']) . ':' . (int) $p['n']];
+            }
+        }
+        usort($rows, fn($a, $b) => [$a[0], $a[1], $a[3], $a[4]] <=> [$b[0], $b[1], $b[3], $b[4]]);
+        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'minute', 'event', 'detail'], $rows);
+    }
+
+    /** Plain-text description of the files, for the methods section. */
     public static function codebook(): string
     {
         $now = (new DateTime('now', Stats::tz()))->format('Y-m-d H:i');
@@ -315,6 +335,11 @@ seconds, answers, xp for that day.
 answers.csv  (one row per answered task)
 mode         practice, placement or smart ("Surprise me").   skill, area, level, bloom: the task's topic, area, CEFR sub-level and thinking level (1-6).
 correct      1 or 0.   seconds   time to answer.   item   task id (for item analysis).
+
+events.csv   (one row per logged action; from 28 October 2026)
+event        page, rule_card, lang, skip, quit, review, report, sound, mood, path_step, bonus, or session_start.
+detail       a page name or topic id; for session_start: where it was started (placement, path, path_check, surprise,
+             second_chance, home_topic, practice_page, rule_card; older sessions: the mode) and the number of answers.
 
 NOTES
 Learners chose to join, so the sample is self-selected. Assignment to conditions is random only among those who joined.

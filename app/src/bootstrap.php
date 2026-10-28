@@ -12,6 +12,7 @@ require __DIR__ . '/Reports.php';
 require __DIR__ . '/Mistakes.php';
 require __DIR__ . '/ErrorModel.php';
 require __DIR__ . '/Path.php';
+require __DIR__ . '/Usage.php';
 require __DIR__ . '/CustomItems.php';
 require __DIR__ . '/Wp.php';
 

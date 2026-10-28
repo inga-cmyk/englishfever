@@ -796,3 +796,5 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rc-ex-bad .bad-hl { color: var(--bad); text-decoration: underline wavy; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .rc-pair .rc-why { grid-column: 1 / -1; font-size: .86rem; color: var(--text-soft); padding: 0 4px 4px; font-style: normal; background: none; }
 .rc-line { display: block; }
+.usage-bar { height: 4px; border-radius: 2px; background: var(--btn); margin-top: 5px; opacity: .55; }
+.switch-row { display: flex; gap: 6px; }

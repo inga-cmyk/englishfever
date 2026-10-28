@@ -170,6 +170,13 @@ final class Db
                 xp $int NOT NULL DEFAULT 0,
                 PRIMARY KEY (user_id, day)
             )$tail",
+            "CREATE TABLE IF NOT EXISTS events (
+                id $pk,
+                user_id $big NOT NULL,
+                ev $str NOT NULL,
+                detail $str NULL,
+                created_at $big NOT NULL
+            )$tail",
             "CREATE TABLE IF NOT EXISTS login_attempts (
                 id $pk,
                 akey $str NOT NULL,
@@ -236,7 +243,8 @@ final class Db
         }
         self::ensureColumn('attempts', 'for_item', "$str NULL");
         self::ensureColumn('attempts', 'err', "$str NULL");   // the error types this answer is evidence for (docs/ERROR-TYPES.md)   // Second Chance: the mistake this task stood for (nothing is changed in earlier rows)
-        self::ensureColumn('attempts', 'note', "$txt NULL");   // accepted with a tip (spelling, apostrophe, capital): the teacher sees it next to the answer (teacher, 28 October)
+        self::ensureColumn('attempts', 'note', "$txt NULL");
+        self::ensureColumn('psessions', 'source', "$str NULL");   // where the learner started it: path, surprise, rule card ... (Usage page; teacher, 28 October)   // accepted with a tip (spelling, apostrophe, capital): the teacher sees it next to the answer (teacher, 28 October)
         self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before these columns existed
         self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
@@ -252,6 +260,8 @@ final class Db
             ['attempts', 'ix_att_user', 'user_id, created_at', false],
             ['attempts', 'ix_att_sess', 'psession_id', false],
             ['psessions', 'ix_ps_user', 'user_id, started_at', false],
+            ['events', 'ix_ev_user', 'user_id, created_at', false],
+            ['events', 'ix_ev_time', 'created_at', false],
             ['login_attempts', 'ix_la', 'akey, at', false],
         ];
         foreach ($indexes as [$t, $n, $cols, $uniq]) {

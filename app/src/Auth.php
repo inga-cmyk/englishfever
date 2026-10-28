@@ -203,7 +203,7 @@ final class Auth
     {
         $old = Db::all("SELECT id FROM users WHERE provider = 'guest' AND last_seen < ?", [time() - 60 * 86400]);
         foreach ($old as $u) {
-            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions', 'reports'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions', 'reports', 'events'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM teacher_mine WHERE student_id = ?', [$u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
         }

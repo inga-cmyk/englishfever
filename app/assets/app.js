@@ -49,9 +49,9 @@
     return state.meta.levels[Math.max(levelIdx(s.levels[0]), Math.min(levelIdx(s.levels[s.levels.length - 1]), levelIdx(l)))];
   }
   /** One tap: a 10-question session in this topic. */
-  function startTopic(btn, s, d) {
+  function startTopic(btn, s, d, source) {
     btn.disabled = true;
-    api('session/start', { mode: 'practice', skills: [s.id], levels: [topicLevel(s, d).slice(0, 2)], length: 10 }).then(function (r) {
+    api('session/start', { mode: 'practice', skills: [s.id], levels: [topicLevel(s, d).slice(0, 2)], length: 10, source: source || 'home_topic' }).then(function (r) {
       state.sess = newSess(r.session, r.item); location.hash = '#/session';
     }).catch(function (e) { btn.disabled = false; UI.toast(e.message); });
   }
@@ -166,7 +166,7 @@
     if (!state.user) { chrome.replaceChildren(); return; }
     var teacher = state.user.role === 'teacher';
     var items = teacher
-      ? [['#/teacher', 'Students', 'users'], ['#/reports', 'Reports', 'flag', state.user.reports_open], ['#/tasks', 'Add questions', 'book'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
+      ? [['#/teacher', 'Students', 'users'], ['#/reports', 'Reports', 'flag', state.user.reports_open], ['#/tasks', 'Add questions', 'book'], ['#/usage', 'Usage', 'up'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']]
       : [['#/home', 'Home', 'home'], ['#/practice', 'Practice', 'target'], ['#/leaderboard', 'Leaderboard', 'trophy'], ['#/profile', 'Profile', 'user']];
     if (!feat('leaderboard')) items = items.filter(function (i) { return i[0] !== '#/leaderboard'; });
     var nav = h('nav', { class: 'nav', 'aria-label': 'Main' }, items.map(function (i) {
@@ -215,6 +215,26 @@
   // ───────── router ─────────
   function go(hash) { if (location.hash === hash) route(); else location.hash = hash; }
 
+  /** Usage log (teacher, 28 October; docs/USAGE.md): named actions only, sent in small batches. Teachers are not logged. */
+  var evQueue = [];
+  function track(ev, detail) {
+    if (!state.user || state.user.role === 'teacher') return;
+    evQueue.push([ev, detail || '']);
+    if (evQueue.length >= 20) flushEvents();
+  }
+  function flushEvents() {
+    if (!evQueue.length) return;
+    var batch = evQueue.splice(0, 50);
+    try {
+      fetch('api.php?r=event', { method: 'POST', credentials: 'same-origin', keepalive: true, headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ events: batch }) }).catch(function () {});
+    } catch (e) {}
+  }
+  setInterval(flushEvents, 10000);
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') flushEvents(); });
+  // a reload or a closed tab: what is still waiting is kept in the browser and sent on the next visit (a request at that moment may not get through)
+  window.addEventListener('pagehide', function () { try { if (evQueue.length) localStorage.setItem('ef_evq', JSON.stringify(evQueue.slice(0, 50))); } catch (e) {} evQueue = []; });
+  try { var savedEv = JSON.parse(localStorage.getItem('ef_evq') || '[]'); localStorage.removeItem('ef_evq'); if (Array.isArray(savedEv)) evQueue = savedEv.slice(0, 50); } catch (e) {}
+
   function route() {
     var hash = location.hash || '#/';
     var parts = hash.replace(/^#\/?/, '').split('/');
@@ -225,11 +245,12 @@
     if (!u.nick_set && u.provider === 'wp' && name !== 'nickname') { location.hash = '#/nickname'; return; }
     if (name === '' || name === 'welcome') { location.hash = u.role === 'teacher' ? '#/teacher' : '#/home'; return; }
     renderChrome('#/' + name);
+    if (['home', 'practice', 'rules', 'leaderboard', 'profile', 'placement', 'summary'].indexOf(name) >= 0) track('page', name);
     show(loading());
     var v = {
       home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
       leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
-      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks, evidence: viewEvidence,
+      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks, evidence: viewEvidence, usage: viewUsage,
     }[name];
     if ((name.indexOf('teacher') === 0 || name === 'reports' || name === 'tasks' || name === 'evidence') && u.role !== 'teacher') { location.hash = '#/home'; return; }
     (v || viewHome)(parts);
@@ -305,7 +326,8 @@
     var all = false;
     function start(el, st) {
       el.disabled = true;
-      api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: (st.below && !st.answers) ? 6 : 10 }).then(function (r) {
+      track('path_step', st.id);
+      api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: (st.below && !st.answers) ? 6 : 10, source: (st.below && !st.answers) ? 'path_check' : 'path' }).then(function (r) {
         state.sess = newSess(r.session, r.item); location.hash = '#/session';
       }).catch(function (e) { el.disabled = false; UI.toast(e.message); });
     }
@@ -357,13 +379,13 @@
   var STUDY = {
     en: {
       title: 'Help with a learning study?', yes: 'Yes, I take part', no: 'No, thanks', later: 'Ask me later', info: 'Read the information sheet',
-      body: ['Inga, the teacher behind English Fever, is researching what helps people keep up regular practice. If you take part, your practice data (when and how often you practise, which tasks you do and how you do) is analysed under a random code, not your name. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Your results and the grammar content stay the same.',
+      body: ['Inga, the teacher behind English Fever, is researching what helps people keep up regular practice. If you take part, your practice data (when and how often you practise, which tasks you do and how you do, and which parts of the app you open and use) is analysed under a random code, not your name. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Your results and the grammar content stay the same.',
         'Taking part is optional. By choosing “Yes” you confirm that you are 18 or older, or that a parent or guardian agrees. You can leave at any time on your Profile page; your data is then no longer used.'],
       label: 'Learning study', joined: 'You are taking part in the learning study. Thank you!', left: 'You are not taking part.', leave: 'Leave the study', join: 'Take part', thanks: 'Thank you for taking part!', byebye: 'You have left the study.',
     },
     lv: {
       title: 'Palīdziet pētījumā?', yes: 'Jā, piedalos', no: 'Nē, paldies', later: 'Vēlāk', info: 'Informācija par pētījumu',
-      body: ['Inga, skolotāja, kas veido English Fever, pēta, kas palīdz cilvēkiem mācīties regulāri. Ja piedalīsieties, jūsu mācību dati (kad un cik bieži mācāties, kādus uzdevumus veicat un kā jums sokas) tiks analizēti ar nejaušu kodu, nevis ar jūsu vārdu. Dažas funkcijas, piemēram, dienu skaitītājs vai līderu saraksts, jums var izskatīties citādi nekā citiem. Jūsu rezultāti un gramatikas saturs paliek tie paši.',
+      body: ['Inga, skolotāja, kas veido English Fever, pēta, kas palīdz cilvēkiem mācīties regulāri. Ja piedalīsieties, jūsu mācību dati (kad un cik bieži mācāties, kādus uzdevumus veicat un kā jums sokas, kā arī kuras lietotnes daļas atverat un izmantojat) tiks analizēti ar nejaušu kodu, nevis ar jūsu vārdu. Dažas funkcijas, piemēram, dienu skaitītājs vai līderu saraksts, jums var izskatīties citādi nekā citiem. Jūsu rezultāti un gramatikas saturs paliek tie paši.',
         'Dalība ir brīvprātīga. Izvēloties “Jā”, jūs apliecināt, ka jums ir 18 gadi vai vairāk, vai ka vecāks vai aizbildnis piekrīt. Jūs varat jebkurā brīdī izstāties savā profila lapā; jūsu dati vairs netiks izmantoti.'],
       label: 'Mācību pētījums', joined: 'Jūs piedalāties mācību pētījumā. Paldies!', left: 'Jūs nepiedalāties.', leave: 'Izstāties', join: 'Piedalīties', thanks: 'Paldies par dalību!', byebye: 'Jūs izstājāties no pētījuma.',
     },
@@ -510,7 +532,7 @@
   function surpriseButton(cls, label) {
     var b = h('button', { class: cls, type: 'button', onclick: function () {
       b.disabled = true;
-      api('session/start', { mode: 'smart', length: 12 }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+      api('session/start', { mode: 'smart', length: 12, source: 'surprise' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
         .catch(function (e) { b.disabled = false; UI.toast(e.message); });
     } }, icon('bolt'), label || 'Surprise me');
     return b;
@@ -520,7 +542,7 @@
   function comebackButton(cls, label) {
     var b = h('button', { class: cls, type: 'button', onclick: function () {
       b.disabled = true;
-      api('session/start', { mode: 'comeback' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+      api('session/start', { mode: 'comeback', source: 'second_chance' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
         .catch(function (e) { b.disabled = false; UI.toast(e.message); });
     } }, icon('refresh'), label || 'Start');
     return b;
@@ -611,6 +633,45 @@
   }
 
   // ───────── teacher: does slip-or-gap / locked-in work? numbers only ─────────
+  /** Usage (teacher, 28 October; docs/USAGE.md): how learners start sessions and what they open and press. */
+  var SOURCE_NAMES = { placement: 'Level test', path: 'My learning path: a step', path_check: 'My learning path: quick check', surprise: 'Surprise me',
+    second_chance: 'Second Chance', home_topic: 'Home: a topic', practice_page: 'Practice page: chosen topics', rule_card: 'Rule card: Practise button', unknown: 'Practice (before 28 October)' };
+  function viewUsage(days) {
+    days = days || 30;
+    api('teacher/usage', undefined, { days: days }).then(function (u) {
+      function tbl(head, rows, empty) {
+        return rows.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, head.map(function (t, i) { return h('th', { class: i ? 'num' : null }, t); }))),
+          h('tbody', null, rows))) : h('p', { class: 'empty' }, empty);
+      }
+      var maxS = Math.max.apply(null, [1].concat(u.sources.map(function (x) { return x.sessions; })));
+      var srcRows = u.sources.map(function (x) {
+        return h('tr', null, h('td', null, SOURCE_NAMES[x.source] || x.source, h('div', { class: 'usage-bar', style: 'width:' + Math.round(100 * x.sessions / maxS) + '%' })),
+          h('td', { class: 'num' }, String(x.sessions)), h('td', { class: 'num' }, String(x.people)), h('td', { class: 'num' }, String(x.answers || 0)));
+      });
+      var evRows = u.events.map(function (x) {
+        var det = x.detail ? (x.ev === 'rule_card' || x.ev === 'skip' || x.ev === 'report' || x.ev === 'path_step' ? (x.detail.indexOf('fb-') === 0 ? 'under a task: ' + (skillById(x.detail.slice(3)) || {}).label : (skillById(x.detail) || {}).label || x.detail) : x.detail) : '';
+        return h('tr', null, h('td', null, x.label, det ? h('div', { class: 'small muted' }, det) : null), h('td', { class: 'num' }, String(x.count)), h('td', { class: 'num' }, String(x.people)));
+      });
+      var cols = Object.keys(SOURCE_NAMES).filter(function (k) { return u.people.some(function (p) { return p.sources[k]; }); });
+      var pRows = u.people.map(function (p) {
+        return h('tr', null, h('td', null, h('a', { href: '#/teacher/student/' + p.id }, p.nickname)), cols.map(function (k) { return h('td', { class: 'num' }, p.sources[k] ? String(p.sources[k]) : '·'); }), h('td', { class: 'num' }, String(p.events)));
+      });
+      var pick = h('div', { class: 'switch-row' }, [7, 30, 90].map(function (d) {
+        return h('button', { type: 'button', class: 'btn small ' + (d === days ? '' : 'ghost'), onclick: function () { viewUsage(d); } }, d + ' days');
+      }));
+      show(h('div', null,
+        h('div', { class: 'row between', style: 'margin-bottom:14px;flex-wrap:wrap;gap:10px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Usage')),
+          h('div', { class: 'row', style: 'gap:8px;flex-wrap:wrap' }, pick, h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/usage-export' }, 'Download CSV'))),
+        h('p', { class: 'small muted' }, 'Students only, the last ' + days + ' days. Sessions started before 28 October have no start point, except the level test, Second Chance and Surprise me.'),
+        h('div', { class: 'card', style: 'padding:0;overflow:hidden;margin-bottom:16px' }, h('h2', { style: 'padding:18px 18px 0' }, 'How sessions are started'),
+          tbl(['Started from', 'Sessions', 'Learners', 'Answers'], srcRows, 'No sessions yet.')),
+        h('div', { class: 'card', style: 'padding:0;overflow:hidden;margin-bottom:16px' }, h('h2', { style: 'padding:18px 18px 0' }, 'What learners open and press'),
+          tbl(['Action', 'Times', 'Learners'], evRows, 'Nothing logged yet. The log starts with this version.')),
+        h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Per learner: sessions by start point'),
+          tbl(['Learner'].concat(cols.map(function (k) { return SOURCE_NAMES[k]; })).concat(['Actions']), pRows, 'No learners yet.'))));
+    }).catch(fail);
+  }
+
   function viewEvidence() {
     api('teacher/evidence').then(function (e) {
       var p = e.probes, m = e.mistakes;
@@ -819,7 +880,7 @@
       h('div', { class: 'row', style: 'margin-top:16px' }, go, h('a', { class: 'btn ghost', href: '#/home' }, 'Not now')))));
     go.addEventListener('click', function () {
       this.disabled = true; this.setAttribute('aria-busy', 'true'); this.textContent = 'Starting…';   // the server can take a moment: say so
-      api('session/start', { mode: 'placement', length: size }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
+      api('session/start', { mode: 'placement', length: size, source: 'placement' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
     });
   }
 
@@ -883,7 +944,7 @@
     startBtn.addEventListener('click', function () {
       startBtn.disabled = true; startBtn.setAttribute('aria-busy', 'true'); startBtn.textContent = 'Starting…';
       var ids = Object.keys(selected).filter(function (k) { return selected[k]; });
-      api('session/start', { mode: 'practice', skills: ids, levels: chosenLevels(), length: length }).then(function (r) {
+      api('session/start', { mode: 'practice', skills: ids, levels: chosenLevels(), length: length, source: 'practice_page' }).then(function (r) {
         state.sess = newSess(r.session, r.item); location.hash = '#/session';
       }).catch(function (e) { startBtn.disabled = false; startBtn.removeAttribute('aria-busy'); redraw(); err.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
     });
@@ -920,6 +981,7 @@
     var H = S.history || (S.history = []);
     var entry = function (n) { return H.filter(function (e) { return e.n === n; })[0] || null; };
     var rev = (rv === undefined || rv === null) ? null : entry(rv);   // an earlier task, looked at again
+    if (rev) track('review');
     var reviewing = !!rev;
     var answeredNow = !reviewing && !!S.last && !!entry(S.curN);       // the current task, already answered, feedback still on screen
     if (answeredNow) rev = entry(S.curN);
@@ -1010,6 +1072,7 @@
       if (submit.disabled && skip !== true) return;
       submit.disabled = true; skipBtn.disabled = true;
       var ans = skip === true ? (it.kind === 'mcq' || it.kind === 'text' || it.kind === 'write' ? '' : []) : answerGetter();
+      if (skip === true) track('skip', it.skill);
       api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, skip: skip === true, time_ms: Date.now() - taskStart }).then(function (r) {
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
@@ -1067,7 +1130,7 @@
             var d = fb.querySelector('details.rule');
             if (on) { if (d) d.open = !d.open; return; }
             state.user.lang = code;
-            api('account/profile', { lang: code }).catch(function () {});
+            track('lang', code); api('account/profile', { lang: code }).catch(function () {});
             openRuleNext = true;
             drawFeedback(r, ans, false);
           } });
@@ -1166,6 +1229,7 @@
     function reportedDone() { reportBtn.disabled = true; reportBtn.replaceChildren(icon('check'), h('span', null, 'Reported')); }
     function sendReport() {
       reportBtn.disabled = true;
+      track('report', it.skill);
       api('report', { item_id: it.id }).then(function () { state.reported[it.id] = true; reportedDone(); UI.toast('Reported. Thank you!'); })
         .catch(function (e) { reportBtn.disabled = false; UI.toast(e.message); });
     }
@@ -1206,6 +1270,7 @@
     m.el.querySelector('#no').onclick = m.close;
     m.el.querySelector('#yes').onclick = function () {
       m.close();
+      track('quit', String(ses.mode || ''));
       api('session/quit', { session_id: ses.id }).then(function (r) {
         state.sess = null; state.lastSummary = r.summary; go('#/summary');
       }).catch(fail);
@@ -1227,7 +1292,7 @@
   function ruleDetails(skillId, open, lv, flags) {
     var s = skillById(skillId); if (!s) return h('span');
     var name = (lv && s.rule_lv ? 'Atgādinājums: ' : 'Rule reminder: ') + s.label;
-    return h('details', { class: 'rule' + (flags && flags.length ? ' flagged' : ''), open: false },
+    return h('details', { class: 'rule' + (flags && flags.length ? ' flagged' : ''), open: false, ontoggle: function () { if (this.open) track('rule_card', 'fb-' + skillId); } },
       h('summary', { 'aria-label': name, title: name }, h('span', { class: 'rule-q', 'aria-hidden': 'true' }, '?'), flags && flags.length ? h('span', { class: 'langswitch' }, flags) : null), ruleCard(s, lv));
   }
 
@@ -1428,6 +1493,7 @@
     var no = h('button', { class: 'btn ghost small', type: 'button' }, 'Enough for today');
     go.addEventListener('click', function () {
       go.disabled = no.disabled = true; go.textContent = 'Starting…';
+      track('bonus');
       api('session/bonus', { session_id: s.session_id }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
         .catch(function (e) { go.disabled = no.disabled = false; go.textContent = 'Try it'; UI.toast(e.message); });
     });
@@ -1518,7 +1584,7 @@
     function flagBtn(code) {   // the same flags as under the feedback, no words
       var on = (code === 'lv') === lv;
       return h('button', { type: 'button', class: 'langbtn ' + code + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', 'aria-label': code === 'lv' ? 'Latviski' : 'English', title: code === 'lv' ? 'Latviski' : 'English', onclick: function () {
-        if (on) return; state.user.lang = code; api('account/profile', { lang: code }).catch(function () {}); viewRules();
+        if (on) return; state.user.lang = code; track('lang', code); api('account/profile', { lang: code }).catch(function () {}); viewRules();
       } });
     }
     var toggle = h('span', { class: 'langswitch' }, flagBtn('lv'), flagBtn('en'));
@@ -1533,12 +1599,13 @@
   }
   function rulesModal(id) {
     var s = skillById(id);
+    track('rule_card', id);
     var go = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October)
     var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'),
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, 'Close'))));
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;
-    go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash); m.close(); };
+    go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash, 'rule_card'); m.close(); };
   }
 
   /** Leaderboard avatar: with a mood, a small emoji sits on it and a tap shows the saying in a bubble. */
@@ -1661,14 +1728,14 @@
       b.setAttribute('aria-label', on ? 'Sound is on. Press to turn it off.' : 'Sound is off. Press to turn it on.');
       b.title = on ? 'Sound on' : 'Sound off';
     }
-    b.addEventListener('click', function () { Sound.set(!Sound.on()); if (Sound.on()) Sound.play('right'); draw(); });
+    b.addEventListener('click', function () { Sound.set(!Sound.on()); track('sound', Sound.on() ? 'on' : 'off'); if (Sound.on()) Sound.play('right'); draw(); });
     draw();
     return b;
   }
 
   /** Profile: sounds, off by default; kept on this device. */
   function soundCard() {
-    var cb = h('input', { type: 'checkbox', id: 'snd', checked: Sound.on(), onchange: function () { Sound.set(cb.checked); if (cb.checked) Sound.play('right'); } });
+    var cb = h('input', { type: 'checkbox', id: 'snd', checked: Sound.on(), onchange: function () { Sound.set(cb.checked); track('sound', cb.checked ? 'on' : 'off'); if (cb.checked) Sound.play('right'); } });
     // an icon and a switch, no explanation (teacher, 27 October: people know these signs)
     return h('div', { class: 'card pad-s row between', style: 'flex-wrap:nowrap' }, h('span', { class: 'sound-ic', 'aria-hidden': 'true' }, icon('volume')),
       h('label', { class: 'switch', title: 'Sound on / off' }, cb, h('i'), h('span', { class: 'sr' }, 'Sound for right and wrong answers')));
@@ -1698,7 +1765,7 @@
         var on = state.user.mood === k;
         return h('button', { type: 'button', class: 'mood' + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', onclick: function () {
           var next = on ? null : k;
-          api('account/profile', { mood: next }).then(function (r) { state.user = r.user; draw(); }).catch(function (e) { UI.toast(e.message); });
+          track('mood', next || 'none'); api('account/profile', { mood: next }).then(function (r) { state.user = r.user; draw(); }).catch(function (e) { UI.toast(e.message); });
         } }, h('span', { class: 'mood-em', 'aria-hidden': 'true' }, MOODS[k][0]), MOODS[k][1]);
       }));
     }

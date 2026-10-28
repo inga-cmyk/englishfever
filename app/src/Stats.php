@@ -3,6 +3,12 @@
 
 final class Stats
 {
+    /** A text cell for a CSV that opens in a spreadsheet: no formula injection. */
+    public static function csvCell(string $v): string
+    {
+        return preg_match('/^[=+\-@]/', $v) ? "'" . $v : $v;
+    }
+
     public static function tz(): DateTimeZone
     {
         return new DateTimeZone(Config::get('timezone', 'Europe/Riga'));

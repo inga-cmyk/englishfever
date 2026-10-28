@@ -23,7 +23,7 @@ final class Engine
 
     // ───────── sessions ─────────
 
-    public static function start(int $uid, string $mode, array $skills, ?string $level, int $len, ?array $fullLevels = null): array
+    public static function start(int $uid, string $mode, array $skills, ?string $level, int $len, ?array $fullLevels = null, ?string $source = null): array
     {
         $meta = Content::liveMeta();
         $all = array_column($meta['skills'], 'id');
@@ -94,6 +94,7 @@ final class Engine
         $sid = Db::insert('psessions', [
             'user_id' => $uid, 'mode' => $mode, 'skills' => json_encode($skills), 'level' => $level,
             'target_len' => $len, 'state' => json_encode($state), 'started_at' => time(),
+            'source' => $source !== null && in_array($source, Usage::SOURCES, true) ? $source : null,
         ]);
         $ses = self::load($uid, $sid);
         $item = self::pickNext($ses);

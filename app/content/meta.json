@@ -88,9 +88,7 @@
     "signals": "*always, usually, often, sometimes, never, every day*",
     "example": "*She starts work at eight every day.*",
     "watch": [
-     "Spelling: *watch → watches, go → goes, study → studies, play → plays*; *have → has*.",
-     "*does* + base verb: *Does she work?* (not *Does she works?*); *She doesn't work.*",
-     "Short answers: *Do you like it? Yes, I do. / No, I don't.*",
+     "Spelling: *watch → watches, go → goes, study → studies, play → plays; have → has*.",
      "State verbs (*know, like, want, need, believe*) stay simple: *I know* (not *I'm knowing*).",
      "*Who* as the subject: no *do*: *Who lives here?* (not *Who does live here?*)"
     ],
@@ -131,6 +129,11 @@
        "She works every day."
       ]
      ],
+     "watch": [
+      "Spelling: *watch → watches, go → goes, study → studies, play → plays; have → has*.",
+      "State verbs (*know, like, want, need, believe*) stay simple: *I know* (not *I'm knowing*).",
+      "*Who* as the subject: no *do*: *Who lives here?* (not *Who does live here?*)"
+     ],
      "uses": [
       {
        "t": "Habits and routines",
@@ -141,7 +144,6 @@
         "never",
         "on Mondays"
        ],
-       "tl": "repeat",
        "ex": [
         "I [[go]] to the gym on Mondays.",
         "She never [[drinks]] coffee."
@@ -149,7 +151,6 @@
       },
       {
        "t": "Facts and permanent situations",
-       "tl": "always",
        "ex": [
         "Water [[boils]] at 100 degrees.",
         "I [[live]] in Riga."
@@ -161,7 +162,6 @@
         "at 7.15",
         "on Friday"
        ],
-       "tl": "future",
        "ex": [
         "The train [[leaves]] at 7.15.",
         "The film [[starts]] at eight."
@@ -185,10 +185,8 @@
     "signals": "*always, usually, often, sometimes, never, every day* (vienmēr, parasti, bieži, dažreiz, nekad, katru dienu)",
     "watch": [
      "Rakstība: *watch → watches, go → goes, study → studies, play → plays; have → has*.",
-     "*does* + pamatforma: *Does she work?* (nevis *Does she works*?); *She doesn't work.*",
-     "Īsās *atbildes*: *Do you like it?* *Yes, I do.* / No, *I don't.*",
-     "Stāvokļa darbības vārdi (*know, like, want, need, believe*) *paliek* Present Simple: *I know* (nevis *I'm knowing*).",
-     "Ja *Who* ir teikuma priekšmets, *do nevajag*: *Who lives here?* (nevis *Who does live here*?)"
+     "Stāvokļa darbības vārdi (*know, like, want, need, believe*) paliek Present Simple: *I know* (nevis *I'm knowing*).",
+     "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who lives here?* (nevis *Who does live here?*)"
     ],
     "v2": {
      "table": {
@@ -227,6 +225,11 @@
        "She works every day."
       ]
      ],
+     "watch": [
+      "Rakstība: *watch → watches, go → goes, study → studies, play → plays; have → has*.",
+      "Stāvokļa darbības vārdi (*know, like, want, need, believe*) paliek Present Simple: *I know* (nevis *I'm knowing*).",
+      "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who lives here?* (nevis *Who does live here?*)"
+     ],
      "uses": [
       {
        "t": "Ieradumi un rutīna",
@@ -237,7 +240,6 @@
         "never",
         "on Mondays"
        ],
-       "tl": "repeat",
        "ex": [
         "I [[go]] to the gym on Mondays.",
         "She never [[drinks]] coffee."
@@ -245,7 +247,6 @@
       },
       {
        "t": "Fakti un pastāvīgas situācijas",
-       "tl": "always",
        "ex": [
         "Water [[boils]] at 100 degrees.",
         "I [[live]] in Riga."
@@ -257,7 +258,6 @@
         "at 7.15",
         "on Friday"
        ],
-       "tl": "future",
        "ex": [
         "The train [[leaves]] at 7.15.",
         "The film [[starts]] at eight."
@@ -343,12 +343,83 @@
     "signals": "*yesterday, last week, in 2019, three days ago*",
     "example": "*I went to the cinema yesterday.*",
     "watch": [
-     "Spelling: *stop → stopped, study → studied, play → played, like → liked*.",
-     "*did* + base verb: *Did you go?* (not *Did you went?*); *I didn't see it.*",
-     "*was / were* without *did*: *Were you there?* (not *Did you were there?*)",
-     "*ago* goes after the time: *two days ago*. Finished time: *yesterday, last week, in 2019*.",
+     "*ago* goes after the time: *two days ago*.",
      "Not with *since / for* up to now: *I've lived here since 2019* (not *I lived here since 2019*)."
-    ]
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "all persons",
+        "work[[ed]], [[went]]",
+        "[[didn't]] work, [[didn't]] go",
+        "[[Did]] you work? [[Did]] she go?"
+       ],
+       [
+        "be: I / he / she / it",
+        "[[was]]",
+        "[[wasn't]]",
+        "[[Was]] she there?"
+       ],
+       [
+        "be: you / we / they",
+        "[[were]]",
+        "[[weren't]]",
+        "[[Were]] they late?"
+       ]
+      ],
+      "short": "Irregular verbs: learn them (*go - [[went]], see - [[saw]], buy - [[bought]]*). Spelling: *stop - [[stopped]], study - [[studied]], like - [[liked]]*."
+     },
+     "mistakes": [
+      [
+       "Did you went out?",
+       "Did you go out?"
+      ],
+      [
+       "I didn't saw it.",
+       "I didn't see it."
+      ],
+      [
+       "Did you were there?",
+       "Were you there?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Finished action at a finished time",
+       "s": [
+        "yesterday",
+        "last week",
+        "in 2019",
+        "two days ago"
+       ],
+       "ex": [
+        "I [[went]] to the cinema yesterday.",
+        "We [[moved]] here in 2019."
+       ]
+      },
+      {
+       "t": "A series of actions in a story",
+       "s": [
+        "then",
+        "after that",
+        "first"
+       ],
+       "ex": [
+        "She [[got]] up, [[had]] a coffee and [[left]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*ago* goes after the time: *two days ago*.",
+      "Not with *since / for* up to now: *I've lived here since 2019* (not *I lived here since 2019*)."
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -363,12 +434,83 @@
     ],
     "signals": "*yesterday, last week, in 2019, three days ago* (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)",
     "watch": [
-     "Rakstība: *stop → stopped, study → studied, play → played, like → liked*.",
-     "*did* + pamatforma: *Did you go?* (nevis *Did you went*?); *I didn't see it.*",
-     "*was / were* bez *did*: *Were you there?* (nevis *Did you were there*?)",
-     "*ago* ir aiz laika: *two days ago* (*latviski* pirms divām dienām). Pabeigts laiks: *yesterday, last week, in 2019*.",
-     "*Ne* ar *since / for* līdz šim brīdim: *I've lived here since 2019* (nevis *I lived here since 2019*)."
-    ]
+     "*ago* ir aiz laika: *two days ago* (latviski \"pirms divām dienām\").",
+     "Ne ar *since / for* līdz šim brīdim: *I've lived here since 2019* (nevis *I lived here since 2019*)."
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "visas personas",
+        "work[[ed]], [[went]]",
+        "[[didn't]] work, [[didn't]] go",
+        "[[Did]] you work? [[Did]] she go?"
+       ],
+       [
+        "be: I / he / she / it",
+        "[[was]]",
+        "[[wasn't]]",
+        "[[Was]] she there?"
+       ],
+       [
+        "be: you / we / they",
+        "[[were]]",
+        "[[weren't]]",
+        "[[Were]] they late?"
+       ]
+      ],
+      "short": "Nekārtnie darbības vārdi jāiemācās (*go - [[went]], see - [[saw]], buy - [[bought]]*). Rakstība: *stop - [[stopped]], study - [[studied]], like - [[liked]]*."
+     },
+     "mistakes": [
+      [
+       "Did you went out?",
+       "Did you go out?"
+      ],
+      [
+       "I didn't saw it.",
+       "I didn't see it."
+      ],
+      [
+       "Did you were there?",
+       "Were you there?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Pabeigta darbība pabeigtā laikā",
+       "s": [
+        "yesterday",
+        "last week",
+        "in 2019",
+        "two days ago"
+       ],
+       "ex": [
+        "I [[went]] to the cinema yesterday.",
+        "We [[moved]] here in 2019."
+       ]
+      },
+      {
+       "t": "Darbību virkne stāstā",
+       "s": [
+        "then",
+        "after that",
+        "first"
+       ],
+       "ex": [
+        "She [[got]] up, [[had]] a coffee and [[left]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*ago* ir aiz laika: *two days ago* (latviski \"pirms divām dienām\").",
+      "Ne ar *since / for* līdz šim brīdim: *I've lived here since 2019* (nevis *I lived here since 2019*)."
+     ]
+    }
    }
   },
   {
@@ -395,12 +537,88 @@
     "signals": "*at 8 o'clock yesterday, while, when, as*",
     "example": "*I was cooking when the phone rang.*",
     "watch": [
-     "*when* + past simple, *while* + past continuous: *I was cooking when he called. He called while I was cooking.*",
-     "Two actions at the same time: *While I was cooking, he was watching TV.*",
-     "State verbs stay simple: *I knew her* (not *I was knowing her*).",
-     "*was* for *I / he / she / it*, *were* for *you / we / they*: *We were waiting.*",
-     "Not for finished repeated actions: *I went there three times* (not *I was going there three times*)."
-    ]
+     "Not for finished repeated actions: *I went there three times* (not *I was going there three times*).",
+     "*was / were going to* = a plan in the past: *I was going to call you, but I forgot.*"
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I / he / she / it",
+        "[[was]] work[[ing]]",
+        "[[wasn't]] working",
+        "[[Was]] she working?"
+       ],
+       [
+        "you / we / they",
+        "[[were]] work[[ing]]",
+        "[[weren't]] working",
+        "[[Were]] they working?"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I was knowing her.",
+       "I knew her."
+      ],
+      [
+       "They was waiting.",
+       "They were waiting."
+      ],
+      [
+       "I was work when he called.",
+       "I was working when he called."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "In the middle of an action at a time in the past",
+       "s": [
+        "at 8 o'clock yesterday",
+        "this time last week"
+       ],
+       "ex": [
+        "At 8 o'clock I [[was having]] dinner."
+       ]
+      },
+      {
+       "t": "A longer action, interrupted by a short one (past simple)",
+       "s": [
+        "when",
+        "while"
+       ],
+       "ex": [
+        "I [[was cooking]] when he [[called]].",
+        "He [[called]] while I [[was cooking]]."
+       ]
+      },
+      {
+       "t": "Two actions at the same time",
+       "s": [
+        "while"
+       ],
+       "ex": [
+        "While I [[was cooking]], he [[was watching]] TV."
+       ]
+      },
+      {
+       "t": "The background of a story",
+       "ex": [
+        "It [[was raining]] and people [[were hurrying]] home."
+       ]
+      }
+     ],
+     "watch": [
+      "Not for finished repeated actions: *I went there three times* (not *I was going there three times*).",
+      "*was / were going to* = a plan in the past: *I was going to call you, but I forgot.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -416,12 +634,88 @@
     ],
     "signals": "*at 8 o'clock yesterday, while, when, as*",
     "watch": [
-     "*when* + Past Simple, *while* + Past Continuous: *I was cooking when he called.* *He called while I was cooking.*",
-     "Divas darbības vienlaikus: *While I was cooking, he was watching TV.*",
-     "Stāvokļa darbības vārdi *paliek* Past Simple: *I knew her* (nevis *I was knowing her*).",
-     "*was* ar *I / he / she / it, were* ar *you / we / they*: *We were waiting.*",
-     "*Ne* pabeigtām atkārtotām darbībām: *I went there three times* (nevis *I was going there three times*)."
-    ]
+     "Ne pabeigtām atkārtotām darbībām: *I went there three times* (nevis *I was going there three times*).",
+     "*was / were going to* = plāns pagātnē: *I was going to call you, but I forgot.*"
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I / he / she / it",
+        "[[was]] work[[ing]]",
+        "[[wasn't]] working",
+        "[[Was]] she working?"
+       ],
+       [
+        "you / we / they",
+        "[[were]] work[[ing]]",
+        "[[weren't]] working",
+        "[[Were]] they working?"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I was knowing her.",
+       "I knew her."
+      ],
+      [
+       "They was waiting.",
+       "They were waiting."
+      ],
+      [
+       "I was work when he called.",
+       "I was working when he called."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Darbības vidū kādā brīdī pagātnē",
+       "s": [
+        "at 8 o'clock yesterday",
+        "this time last week"
+       ],
+       "ex": [
+        "At 8 o'clock I [[was having]] dinner."
+       ]
+      },
+      {
+       "t": "Ilgāka darbība, ko pārtrauc īsa (Past Simple)",
+       "s": [
+        "when",
+        "while"
+       ],
+       "ex": [
+        "I [[was cooking]] when he [[called]].",
+        "He [[called]] while I [[was cooking]]."
+       ]
+      },
+      {
+       "t": "Divas darbības vienlaikus",
+       "s": [
+        "while"
+       ],
+       "ex": [
+        "While I [[was cooking]], he [[was watching]] TV."
+       ]
+      },
+      {
+       "t": "Stāsta fons",
+       "ex": [
+        "It [[was raining]] and people [[were hurrying]] home."
+       ]
+      }
+     ],
+     "watch": [
+      "Ne pabeigtām atkārtotām darbībām: *I went there three times* (nevis *I was going there three times*).",
+      "*was / were going to* = plāns pagātnē: *I was going to call you, but I forgot.*"
+     ]
+    }
    }
   },
   {
@@ -448,10 +742,9 @@
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
     "example": "*I have lived here for ten years.*",
     "watch": [
-     "Never with a finished time: *I saw him yesterday* (not *I have seen him yesterday*).",
      "*been* (went and came back) and *gone* (is still there): *She's been to Paris. She's gone to Paris.*",
-     "*yet* at the end in negatives and questions; *already* before the main verb: *I've already eaten. Have you eaten yet?*",
-     "*for* + a period, *since* + a starting point: *for five years, since 2020* (not *since five years*).",
+     "*already* before the main verb, *yet* at the end: *I've already eaten. Have you eaten yet?*",
+     "*for* + a period, *since* + a starting point: *for five years* (not *since five years*).",
      "*How long have you lived here?* (not *How long do you live here?*)"
     ],
     "v2": {
@@ -490,6 +783,12 @@
        "She has went home.",
        "She has gone home."
       ]
+     ],
+     "watch": [
+      "*been* (went and came back) and *gone* (is still there): *She's been to Paris. She's gone to Paris.*",
+      "*already* before the main verb, *yet* at the end: *I've already eaten. Have you eaten yet?*",
+      "*for* + a period, *since* + a starting point: *for five years* (not *since five years*).",
+      "*How long have you lived here?* (not *How long do you live here?*)"
      ],
      "uses": [
       {
@@ -563,11 +862,10 @@
     ],
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
     "watch": [
-     "Nekad ar pabeigtu laiku: *I saw him yesterday* (nevis *I have seen him yesterday*).",
-     "*been* (aizgāja un atgriezās) un *gone* (joprojām ir *tur*): *She's been to Paris.* *She's gone to Paris.*",
-     "*yet* teikuma beigās noliegumā un jautājumā; *already* pirms pamatdarbības vārda: *I've already eaten.* *Have you eaten yet?*",
-     "*for* + laika posms, *since* + sākuma brīdis: *for five years, since 2020* (nevis *since five years*). *Latviski* jau *piecus gadus*, tāpēc *rodas since*.",
-     "*How long have you lived here?* (nevis *How long do you live here*?). *Latviski* Cik ilgi *tu te* dzīvo? ir tagadnē, tāpēc *rodas* šī kļūda."
+     "*been* (aizgāja un atgriezās) un *gone* (joprojām ir tur): *She's been to Paris. She's gone to Paris.*",
+     "*already* pirms pamatdarbības vārda, *yet* beigās: *I've already eaten. Have you eaten yet?*",
+     "*for* + laika posms, *since* + sākuma brīdis: *for five years* (nevis *since five years*). Latviski \"jau piecus gadus\", tāpēc rodas *since*.",
+     "*How long have you lived here?* (nevis *How long do you live here?*). Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
     ],
     "v2": {
      "table": {
@@ -605,6 +903,12 @@
        "She has went home.",
        "She has gone home."
       ]
+     ],
+     "watch": [
+      "*been* (aizgāja un atgriezās) un *gone* (joprojām ir tur): *She's been to Paris. She's gone to Paris.*",
+      "*already* pirms pamatdarbības vārda, *yet* beigās: *I've already eaten. Have you eaten yet?*",
+      "*for* + laika posms, *since* + sākuma brīdis: *for five years* (nevis *since five years*). Latviski \"jau piecus gadus\", tāpēc rodas *since*.",
+      "*How long have you lived here?* (nevis *How long do you live here?*). Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
      ],
      "uses": [
       {
@@ -1535,12 +1839,81 @@
     "signals": "*first mention, already mentioned, the only one, in general*",
     "example": "*I bought a jacket and a hat. The jacket was cheap, but I love hats.*",
     "watch": [
-     "Jobs take *a / an*: *She's a nurse.*",
-     "*a / an* by sound: *a university, a European, an hour, an MBA*.",
-     "No article: meals, sports, languages, *by bus*: *have lunch, play football, speak English*.",
-     "*the* the second time: *I saw a dog. The dog was huge.*",
      "*the* with instruments and some places: *play the piano, go to the cinema, listen to the radio*."
-    ]
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "a / an",
+       "the",
+       "no article"
+      ],
+      "rows": [
+       [
+        "When",
+        "one of many, the first time we mention it, jobs",
+        "we both know which one, the second time, the only one",
+        "things in general, meals, sports, languages, most names"
+       ],
+       [
+        "Examples",
+        "*a film, an apple, She's a nurse.*",
+        "*the film we saw, the sun, the Internet*",
+        "*I like coffee. have lunch, play football, Riga*"
+       ]
+      ],
+      "note": "*a / an* by sound: *a university, a European, an hour, an MBA*."
+     },
+     "mistakes": [
+      [
+       "She is nurse.",
+       "She is a nurse."
+      ],
+      [
+       "I like the coffee. (in general)",
+       "I like coffee."
+      ],
+      [
+       "I go to work by the bus.",
+       "I go to work by bus."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "First time *a*, second time *the*",
+       "ex": [
+        "I saw [[a]] dog. [[The]] dog was huge."
+       ]
+      },
+      {
+       "t": "*the* with the only one, superlatives, seas and rivers, some countries",
+       "s": [
+        "the best",
+        "the Baltic Sea",
+        "the UK"
+       ],
+       "ex": [
+        "It's [[the]] best café in [[the]] city."
+       ]
+      },
+      {
+       "t": "Places used for their purpose: no article",
+       "s": [
+        "at home",
+        "at work",
+        "go to school",
+        "go to bed"
+       ],
+       "ex": [
+        "I'm at [[work]].",
+        "The children go to [[school]] at eight."
+       ]
+      }
+     ],
+     "watch": [
+      "*the* with instruments and some places: *play the piano, go to the cinema, listen to the radio*."
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1556,12 +1929,83 @@
     ],
     "signals": "*first mention, already mentioned, the only one, in general* (pirmoreiz, jau minēts, vienīgais, vispārīgi)",
     "watch": [
-     "Profesijām vajag *a / an*: *She's a nurse.* *Latviski* artikula nav, tāpēc to bieži izlaiž.",
-     "*a / an* pēc skaņas: *a university, a European, an hour, an MBA*.",
-     "Bez artikula: ēdienreizes, *sporta* veidi, *valodas, by bus*: *have lunch, play football, speak English*.",
-     "*the*, kad *pieminam otro reizi*: *I saw a dog.* *The dog was huge.*",
-     "*the* ar mūzikas *instrumentiem* un dažām vietām: *play the piano, go to the cinema, listen to the radio*."
-    ]
+     "Latviešu valodā artikulu nav, tāpēc tos bieži izlaiž, īpaši pie profesijām: *She's [[a]] nurse.*",
+     "*the* ar mūzikas instrumentiem un dažām vietām: *play the piano, go to the cinema, listen to the radio*."
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "a / an",
+       "the",
+       "bez artikula"
+      ],
+      "rows": [
+       [
+        "Kad",
+        "viens no daudziem, pieminam pirmo reizi, profesijas",
+        "abi zinām, kurš; otro reizi; vienīgais",
+        "vispārīgi, ēdienreizes, sports, valodas, vairums vārdu"
+       ],
+       [
+        "Piemēri",
+        "*a film, an apple, She's a nurse.*",
+        "*the film we saw, the sun, the Internet*",
+        "*I like coffee. have lunch, play football, Riga*"
+       ]
+      ],
+      "note": "*a / an* pēc skaņas: *a university, a European, an hour, an MBA*."
+     },
+     "mistakes": [
+      [
+       "She is nurse.",
+       "She is a nurse."
+      ],
+      [
+       "I like the coffee. (vispār)",
+       "I like coffee."
+      ],
+      [
+       "I go to work by the bus.",
+       "I go to work by bus."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Pirmo reizi *a*, otro reizi *the*",
+       "ex": [
+        "I saw [[a]] dog. [[The]] dog was huge."
+       ]
+      },
+      {
+       "t": "*the* ar vienīgo, ar \"vis-\" (superlatīvu), jūrām un upēm, dažām valstīm",
+       "s": [
+        "the best",
+        "the Baltic Sea",
+        "the UK"
+       ],
+       "ex": [
+        "It's [[the]] best café in [[the]] city."
+       ]
+      },
+      {
+       "t": "Vietas, ko lieto to nolūkam: bez artikula",
+       "s": [
+        "at home",
+        "at work",
+        "go to school",
+        "go to bed"
+       ],
+       "ex": [
+        "I'm at [[work]].",
+        "The children go to [[school]] at eight."
+       ]
+      }
+     ],
+     "watch": [
+      "Latviešu valodā artikulu nav, tāpēc tos bieži izlaiž, īpaši pie profesijām: *She's [[a]] nurse.*",
+      "*the* ar mūzikas instrumentiem un dažām vietām: *play the piano, go to the cinema, listen to the radio*."
+     ]
+    }
    }
   },
   {
@@ -1588,12 +2032,86 @@
     "signals": "*how many, how much, a few, a little, enough, too much, too many*",
     "example": "*There isn't much time and there are too many things to do.*",
     "watch": [
-     "Uncountable + singular verb: *There is a lot of traffic. The money is on the table.*",
-     "*some* in questions when we offer or ask: *Would you like some coffee? Can I have some water?*",
+     "Uncountable + singular verb: *There [[is]] a lot of traffic. The money [[is]] on the table.*",
      "*any* = it doesn't matter which: *Take any seat.*",
      "*no* = *not any*: *There's no milk.* = *There isn't any milk.*",
-     "*much* in positive sentences sounds formal: *a lot of time* is more natural than *much time*."
-    ]
+     "*much* in positive sentences sounds formal: *a lot of time* is more natural."
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "plural (books)",
+       "uncountable (milk)"
+      ],
+      "rows": [
+       [
+        "positive",
+        "*some books, a lot of books*",
+        "*some milk, a lot of milk*"
+       ],
+       [
+        "questions, negatives",
+        "*any books? not many books*",
+        "*any milk? not much milk*"
+       ],
+       [
+        "a small amount",
+        "*a few books*",
+        "*a little milk*"
+       ],
+       [
+        "How…?",
+        "*How many books?*",
+        "*How much milk?*"
+       ]
+      ],
+      "note": "*few / little* without *a* = almost none: *Few people came.* (a negative feeling)"
+     },
+     "mistakes": [
+      [
+       "How much people came?",
+       "How many people came?"
+      ],
+      [
+       "I have a few money.",
+       "I have a little money."
+      ],
+      [
+       "There aren't some eggs.",
+       "There aren't any eggs."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*some* in offers and requests, too",
+       "s": [
+        "Would you like…?",
+        "Can I have…?"
+       ],
+       "ex": [
+        "Would you like [[some]] coffee?"
+       ]
+      },
+      {
+       "t": "*enough* and *too*",
+       "s": [
+        "enough",
+        "too much",
+        "too many"
+       ],
+       "ex": [
+        "We have [[enough]] chairs. The room is big [[enough]].",
+        "There are [[too many]] cars in the city."
+       ]
+      }
+     ],
+     "watch": [
+      "Uncountable + singular verb: *There [[is]] a lot of traffic. The money [[is]] on the table.*",
+      "*any* = it doesn't matter which: *Take any seat.*",
+      "*no* = *not any*: *There's no milk.* = *There isn't any milk.*",
+      "*much* in positive sentences sounds formal: *a lot of time* is more natural."
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1610,12 +2128,86 @@
     ],
     "signals": "*how many, how much, a few, a little, enough, too much, too many* (cik, mazliet, pietiekami, par daudz)",
     "watch": [
-     "Nesaskaitāms + vienskaitlis: *There is a lot of traffic.* *The money is on the table.*",
-     "*some* jautājumā, kad piedāvājam vai lūdzam: *Would you like some coffee?* *Can I have some water?*",
-     "*any = vienalga* kurš: *Take any seat.*",
-     "no = *not any*: *There's* no *milk*. = *There isn't any milk.*",
-     "*much* apstiprinājuma teikumā izklausās oficiāli: *a lot of time* ir dabiskāk nekā *much time*."
-    ]
+     "Nesaskaitāms + vienskaitlis: *There [[is]] a lot of traffic. The money [[is]] on the table.* Latviski \"nauda ir\", bet \"mati ir\" daudzskaitlī: angliski *hair* ir nesaskaitāms.",
+     "*any* = vienalga kurš: *Take any seat.*",
+     "*no* = *not any*: *There's no milk.* = *There isn't any milk.*",
+     "*much* apstiprinājumā izklausās oficiāli: *a lot of time* ir dabiskāk."
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "daudzskaitlis (books)",
+       "nesaskaitāms (milk)"
+      ],
+      "rows": [
+       [
+        "apstiprinājums",
+        "*some books, a lot of books*",
+        "*some milk, a lot of milk*"
+       ],
+       [
+        "jautājums, noliegums",
+        "*any books? not many books*",
+        "*any milk? not much milk*"
+       ],
+       [
+        "mazliet",
+        "*a few books*",
+        "*a little milk*"
+       ],
+       [
+        "Cik…?",
+        "*How many books?*",
+        "*How much milk?*"
+       ]
+      ],
+      "note": "*few / little* bez *a* = gandrīz nemaz: *Few people came.* (negatīva nozīme)"
+     },
+     "mistakes": [
+      [
+       "How much people came?",
+       "How many people came?"
+      ],
+      [
+       "I have a few money.",
+       "I have a little money."
+      ],
+      [
+       "There aren't some eggs.",
+       "There aren't any eggs."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*some* arī piedāvājumos un lūgumos",
+       "s": [
+        "Would you like…?",
+        "Can I have…?"
+       ],
+       "ex": [
+        "Would you like [[some]] coffee?"
+       ]
+      },
+      {
+       "t": "*enough* un *too*",
+       "s": [
+        "enough",
+        "too much",
+        "too many"
+       ],
+       "ex": [
+        "We have [[enough]] chairs. The room is big [[enough]].",
+        "There are [[too many]] cars in the city."
+       ]
+      }
+     ],
+     "watch": [
+      "Nesaskaitāms + vienskaitlis: *There [[is]] a lot of traffic. The money [[is]] on the table.* Latviski \"nauda ir\", bet \"mati ir\" daudzskaitlī: angliski *hair* ir nesaskaitāms.",
+      "*any* = vienalga kurš: *Take any seat.*",
+      "*no* = *not any*: *There's no milk.* = *There isn't any milk.*",
+      "*much* apstiprinājumā izklausās oficiāli: *a lot of time* ir dabiskāk."
+     ]
+    }
    }
   },
   {
@@ -1807,10 +2399,71 @@
     "watch": [
      "*want / would like* + person + *to*: *I want you to come* (not *I want that you come*).",
      "*let / make* + person + base verb: *Let me go. She made me laugh.*",
-     "Modal verbs + base verb, without *to*: *I can swim. You must go.*",
+     "Modal verbs + base verb, without *to*: *I can swim.*",
      "*go* + *-ing* for activities: *go shopping, go swimming*.",
      "*look forward to* + *-ing*: *I look forward to seeing you.*"
-    ]
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "+ -ing",
+       "+ to",
+       "both"
+      ],
+      "rows": [
+       [
+        "Verbs",
+        "*enjoy, finish, mind, avoid, suggest, keep, practise*",
+        "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse*",
+        "*like, love, hate, start, begin* (almost the same meaning)"
+       ],
+       [
+        "Examples",
+        "*I enjoy [[reading]].*",
+        "*He decided [[to stay]].*",
+        "*I like [[swimming]]. = I like [[to swim]].*"
+       ]
+      ],
+      "note": "After a preposition: always *-ing*: *good at [[cooking]], before [[leaving]], thank you for [[helping]]*."
+     },
+     "mistakes": [
+      [
+       "I enjoy to read.",
+       "I enjoy reading."
+      ],
+      [
+       "I want going home.",
+       "I want to go home."
+      ],
+      [
+       "She's interested in learn Spanish.",
+       "She's interested in learning Spanish."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Different meaning: *stop, remember, forget, try*",
+       "s": [
+        "stop",
+        "remember",
+        "forget",
+        "try"
+       ],
+       "ex": [
+        "I stopped [[smoking]]. (= I quit)",
+        "I stopped [[to smoke]]. (= to have a cigarette)",
+        "Remember [[to call]] her. (a task) / I remember [[meeting]] her. (a memory)"
+       ]
+      }
+     ],
+     "watch": [
+      "*want / would like* + person + *to*: *I want you to come* (not *I want that you come*).",
+      "*let / make* + person + base verb: *Let me go. She made me laugh.*",
+      "Modal verbs + base verb, without *to*: *I can swim.*",
+      "*go* + *-ing* for activities: *go shopping, go swimming*.",
+      "*look forward to* + *-ing*: *I look forward to seeing you.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1827,12 +2480,73 @@
     ],
     "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition*: *-ing* (aiz prievārda: *-ing*)",
     "watch": [
-     "*want / would like* + cilvēks + *to*: *I want you to come* (nevis *I want that you come*). *Latviski gribu*, lai *tu* atnāc, tāpēc *rodas that*.",
-     "*let / make* + cilvēks + pamatforma: *Let me go.* *She made me laugh.*",
-     "Modālie darbības vārdi + pamatforma bez *to*: *I can swim.* *You must go.*",
-     "*go + -ing* nodarbēm: *go shopping, go swimming*.",
-     "*look forward to + -ing*: *I look forward to seeing you.*"
-    ]
+     "*want / would like* + cilvēks + *to*: *I want you to come* (nevis *I want that you come*). Latviski \"gribu, lai tu atnāc\", tāpēc rodas *that*.",
+     "*let / make* + cilvēks + pamatforma: *Let me go. She made me laugh.*",
+     "Modālie darbības vārdi + pamatforma bez *to*: *I can swim.*",
+     "*go* + *-ing* nodarbēm: *go shopping, go swimming*.",
+     "*look forward to* + *-ing*: *I look forward to seeing you.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "+ -ing",
+       "+ to",
+       "abi"
+      ],
+      "rows": [
+       [
+        "Darbības vārdi",
+        "*enjoy, finish, mind, avoid, suggest, keep, practise*",
+        "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse*",
+        "*like, love, hate, start, begin* (gandrīz tā pati nozīme)"
+       ],
+       [
+        "Piemēri",
+        "*I enjoy [[reading]].*",
+        "*He decided [[to stay]].*",
+        "*I like [[swimming]]. = I like [[to swim]].*"
+       ]
+      ],
+      "note": "Aiz prievārda vienmēr *-ing*: *good at [[cooking]], before [[leaving]], thank you for [[helping]]*."
+     },
+     "mistakes": [
+      [
+       "I enjoy to read.",
+       "I enjoy reading."
+      ],
+      [
+       "I want going home.",
+       "I want to go home."
+      ],
+      [
+       "She's interested in learn Spanish.",
+       "She's interested in learning Spanish."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Cita nozīme: *stop, remember, forget, try*",
+       "s": [
+        "stop",
+        "remember",
+        "forget",
+        "try"
+       ],
+       "ex": [
+        "I stopped [[smoking]]. (= atmetu)",
+        "I stopped [[to smoke]]. (= apstājos, lai uzsmēķētu)",
+        "Remember [[to call]] her. (uzdevums) / I remember [[meeting]] her. (atmiņa)"
+       ]
+      }
+     ],
+     "watch": [
+      "*want / would like* + cilvēks + *to*: *I want you to come* (nevis *I want that you come*). Latviski \"gribu, lai tu atnāc\", tāpēc rodas *that*.",
+      "*let / make* + cilvēks + pamatforma: *Let me go. She made me laugh.*",
+      "Modālie darbības vārdi + pamatforma bez *to*: *I can swim.*",
+      "*go* + *-ing* nodarbēm: *go shopping, go swimming*.",
+      "*look forward to* + *-ing*: *I look forward to seeing you.*"
+     ]
+    }
    }
   },
   {
@@ -2102,12 +2816,84 @@
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely*",
     "example": "*He drives carefully, and he never drives too fast.*",
     "watch": [
-     "Frequency adverbs go after the first auxiliary: *I have never been there. She can always help.*",
-     "Not between the verb and the object: *I like it very much* (not *I like very much it*).",
-     "*good → well*: *She speaks English well.* *fast*, not *fastly*.",
+     "*fast, hard, late* have no *-ly*: *He drives fast.*",
      "*hard* = with effort, *hardly* = almost not; *late* = not on time, *lately* = recently.",
-     "After *be, look, feel, seem, sound*: an adjective: *You look tired* (not *tiredly*)."
-    ]
+     "With two verbs, frequency goes after the first: *I have never been there. She can always help.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "how (manner)",
+       "how often (frequency)",
+       "how much (degree)"
+      ],
+      "rows": [
+       [
+        "Form",
+        "adjective + *-ly*: *slow → slowly, easy → easily*; *good → well*",
+        "*always, usually, often, sometimes, never*",
+        "*very, really, quite, too, extremely*"
+       ],
+       [
+        "Where",
+        "after the verb or the object: *She speaks English well.*",
+        "before the main verb, after *be*: *She often walks. He is always late.*",
+        "before an adjective or adverb: *very quickly*; *enough* after: *warm enough*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "She speaks English very good.",
+       "She speaks English very well."
+      ],
+      [
+       "I like very much it.",
+       "I like it very much."
+      ],
+      [
+       "He always is late.",
+       "He is always late."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Adjective for a noun, adverb for a verb",
+       "ex": [
+        "a [[quick]] answer / She answered [[quickly]]."
+       ]
+      },
+      {
+       "t": "After *be, look, feel, seem, sound*: an adjective",
+       "s": [
+        "look",
+        "feel",
+        "seem",
+        "sound"
+       ],
+       "ex": [
+        "You look [[tired]]. (not *tiredly*)",
+        "That sounds [[great]]."
+       ]
+      },
+      {
+       "t": "Extreme adjectives take *absolutely*, not *very*",
+       "s": [
+        "perfect",
+        "amazing",
+        "exhausted"
+       ],
+       "ex": [
+        "The view was [[absolutely]] amazing."
+       ]
+      }
+     ],
+     "watch": [
+      "*fast, hard, late* have no *-ly*: *He drives fast.*",
+      "*hard* = with effort, *hardly* = almost not; *late* = not on time, *lately* = recently.",
+      "With two verbs, frequency goes after the first: *I have never been there. She can always help.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2124,12 +2910,84 @@
     ],
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely* (vienmēr, nekad, ļoti, *diezgan*, pārāk, pietiekami)",
     "watch": [
-     "Biežuma apstākļa vārdi ir aiz pirmā palīgdarbības vārda: *I have never been there.* *She can always help.*",
-     "Ne starp darbības vārdu un papildinātāju: *I like it very much* (nevis *I like very much it*). *Latviski* vārdu secība ir brīvāka.",
-     "*good → well*: *She speaks English well.* *fast*, nevis *fastly*.",
-     "*hard* = ar piepūli, *hardly* = gandrīz *nemaz; late* = vēlu, *lately* = pēdējā laikā.",
-     "Aiz *be, look, feel, seem, sound* ir īpašības vārds: *You look tired* (nevis *tiredly*)."
-    ]
+     "*fast, hard, late* ir bez *-ly*: *He drives fast.*",
+     "*hard* = ar piepūli, *hardly* = gandrīz nemaz; *late* = vēlu, *lately* = pēdējā laikā.",
+     "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have never been there. She can always help.* Latviski vārdu secība ir brīvāka."
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "kā (veids)",
+       "cik bieži",
+       "cik ļoti (pakāpe)"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "īpašības vārds + *-ly*: *slow → slowly, easy → easily*; *good → well*",
+        "*always, usually, often, sometimes, never*",
+        "*very, really, quite, too, extremely*"
+       ],
+       [
+        "Kur",
+        "aiz darbības vārda vai papildinātāja: *She speaks English well.*",
+        "pirms pamatdarbības vārda, aiz *be*: *She often walks. He is always late.*",
+        "pirms īpašības vai apstākļa vārda: *very quickly*; *enough* aiz tā: *warm enough*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "She speaks English very good.",
+       "She speaks English very well."
+      ],
+      [
+       "I like very much it.",
+       "I like it very much."
+      ],
+      [
+       "He always is late.",
+       "He is always late."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Īpašības vārds lietvārdam, apstākļa vārds darbības vārdam",
+       "ex": [
+        "a [[quick]] answer / She answered [[quickly]]."
+       ]
+      },
+      {
+       "t": "Aiz *be, look, feel, seem, sound*: īpašības vārds",
+       "s": [
+        "look",
+        "feel",
+        "seem",
+        "sound"
+       ],
+       "ex": [
+        "You look [[tired]]. (nevis *tiredly*)",
+        "That sounds [[great]]."
+       ]
+      },
+      {
+       "t": "Galējiem īpašības vārdiem *absolutely*, nevis *very*",
+       "s": [
+        "perfect",
+        "amazing",
+        "exhausted"
+       ],
+       "ex": [
+        "The view was [[absolutely]] amazing."
+       ]
+      }
+     ],
+     "watch": [
+      "*fast, hard, late* ir bez *-ly*: *He drives fast.*",
+      "*hard* = ar piepūli, *hardly* = gandrīz nemaz; *late* = vēlu, *lately* = pēdējā laikā.",
+      "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have never been there. She can always help.* Latviski vārdu secība ir brīvāka."
+     ]
+    }
    }
   },
   {
@@ -2280,13 +3138,92 @@
     "signals": "*he, she, it, everybody, nobody, every, one of, and, there is / there are*",
     "example": "*Everybody in my family likes coffee, but my parents drink tea.*",
     "watch": [
-     "The verb agrees with the main word, not the nearest one: The box of apples is heavy. The people in my office are nice.",
-     "each / every + one: Every student has a book.",
-     "one of + plural noun + verb-s: One of my friends lives in London.",
-     "Uncountable words are singular: The news is good. Money isn't everything. This information is useful.",
-     "Some words are always plural: People are friendly. The police are here. My jeans are new.",
-     "there is + one or uncountable, there are + more: There is some milk. There are two cafés."
-    ]
+     "*people, police, children* are plural: *People [[are]] friendly.*",
+     "*news* takes a singular verb: *The news [[is]] good.*",
+     "*there is* + one, *there are* + more: *There [[are]] two cafés here.*"
+    ],
+    "v2": {
+     "table": {
+      "plain": true,
+      "cols": [
+       "one (he / she / it)",
+       "more than one (they)"
+      ],
+      "rows": [
+       [
+        "most verbs",
+        "my friend live[[s]]",
+        "my friends [[live]]"
+       ],
+       [
+        "be",
+        "[[is]] / [[was]]",
+        "[[are]] / [[were]]"
+       ],
+       [
+        "have",
+        "[[has]]",
+        "[[have]]"
+       ],
+       [
+        "do",
+        "[[does]] / [[doesn't]]",
+        "[[do]] / [[don't]]"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "My sister work in a bank.",
+       "My sister works in a bank."
+      ],
+      [
+       "Everybody know him.",
+       "Everybody knows him."
+      ],
+      [
+       "Tom and Anna lives here.",
+       "Tom and Anna live here."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*and* makes more than one",
+       "ex": [
+        "Tom and Anna [[live]] here."
+       ]
+      },
+      {
+       "t": "*everybody, nobody, something, every* + verb-*s*",
+       "s": [
+        "everybody",
+        "nobody",
+        "everything",
+        "every"
+       ],
+       "ex": [
+        "Everybody [[knows]]. Nothing [[works]].",
+        "Every student [[has]] a book."
+       ]
+      },
+      {
+       "t": "The verb agrees with the main noun, not the one next to it",
+       "s": [
+        "one of",
+        "the people in"
+       ],
+       "ex": [
+        "One of my friends [[lives]] in Oslo.",
+        "The people in this office [[are]] nice."
+       ]
+      }
+     ],
+     "watch": [
+      "*people, police, children* are plural: *People [[are]] friendly.*",
+      "*news* takes a singular verb: *The news [[is]] good.*",
+      "*there is* + one, *there are* + more: *There [[are]] two cafés here.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2300,13 +3237,92 @@
     ],
     "signals": "*he, she, it, everybody, nobody, every, one of, and, there is / there are* (viņš, viņa, *visi, neviens, katrs*, viens no, un, ir)",
     "watch": [
-     "Darbības vārds saskaņojas ar *galveno* vārdu, nevis ar tuvāko: *The box of apples is heavy.* *The people in my office are nice.*",
-     "*each / every* + viens: *Every student has a book.*",
-     "*one of* + daudzskaitlis + darbības vārds ar *-s*: *One of my friends lives in London.*",
-     "Nesaskaitāmie vārdi ir vienskaitlī: *The news is good.* *Money isn't everything.* *Latviski* ziņas ir daudzskaitlī, *angliski news* ir vienskaitlī.",
-     "Daži vārdi vienmēr ir daudzskaitlī: *People are friendly.* *The police are here.* *My jeans are new.*",
-     "*there is* + viens vai nesaskaitāms, *there are* + vairāki: *There is some milk.* *There are two caf*é*s*."
-    ]
+     "*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
+     "*news* lieto ar vienskaitli: *The news [[is]] good.* Latviski \"ziņas\" ir daudzskaitlī, tāpēc gribas *are*.",
+     "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"
+    ],
+    "v2": {
+     "table": {
+      "plain": true,
+      "cols": [
+       "viens (he / she / it)",
+       "vairāki (they)"
+      ],
+      "rows": [
+       [
+        "vairums darbības vārdu",
+        "my friend live[[s]]",
+        "my friends [[live]]"
+       ],
+       [
+        "be",
+        "[[is]] / [[was]]",
+        "[[are]] / [[were]]"
+       ],
+       [
+        "have",
+        "[[has]]",
+        "[[have]]"
+       ],
+       [
+        "do",
+        "[[does]] / [[doesn't]]",
+        "[[do]] / [[don't]]"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "My sister work in a bank.",
+       "My sister works in a bank."
+      ],
+      [
+       "Everybody know him.",
+       "Everybody knows him."
+      ],
+      [
+       "Tom and Anna lives here.",
+       "Tom and Anna live here."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*and* nozīmē vairākus",
+       "ex": [
+        "Tom and Anna [[live]] here."
+       ]
+      },
+      {
+       "t": "*everybody, nobody, something, every* + darbības vārds ar -s",
+       "s": [
+        "everybody",
+        "nobody",
+        "everything",
+        "every"
+       ],
+       "ex": [
+        "Everybody [[knows]]. Nothing [[works]].",
+        "Every student [[has]] a book."
+       ]
+      },
+      {
+       "t": "Darbības vārds saskan ar galveno lietvārdu, nevis ar tuvāko",
+       "s": [
+        "one of",
+        "the people in"
+       ],
+       "ex": [
+        "One of my friends [[lives]] in Oslo.",
+        "The people in this office [[are]] nice."
+       ]
+      }
+     ],
+     "watch": [
+      "*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
+      "*news* lieto ar vienskaitli: *The news [[is]] good.* Latviski \"ziņas\" ir daudzskaitlī, tāpēc gribas *are*.",
+      "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"
+     ]
+    }
    }
   },
   {
@@ -2329,12 +3345,95 @@
     "signals": "*child, person, man, woman, tooth, foot, mouse, police*",
     "example": "*One mouse is cute, but ten mice are a problem!*",
     "watch": [
-     "*-s, -sh, -ch, -x* + *-es*: *buses, dishes, watches, boxes*.",
-     "Consonant + *-y* → *-ies*: *city → cities*; vowel + *-y*: *day → days*.",
-     "*-f / -fe* → *-ves*: *knife → knives, life → lives, wife → wives*.",
-     "Same in both: *sheep, fish*. Always plural: *jeans, trousers, glasses, scissors*.",
-     "No plural (uncountable): *advice, information, furniture, news*."
-    ]
+     "Vowel + *-y* just adds *-s*: *day → days, boy → boys*.",
+     "No plural (uncountable): *advice, information, furniture, news*: *some advice* (not *advices*)."
+    ],
+    "v2": {
+     "table": {
+      "plain": true,
+      "cols": [
+       "one",
+       "more than one"
+      ],
+      "rows": [
+       [
+        "most nouns",
+        "a book",
+        "two book[[s]]"
+       ],
+       [
+        "-s, -sh, -ch, -x",
+        "a bus, a box",
+        "bus[[es]], box[[es]]"
+       ],
+       [
+        "consonant + -y",
+        "a city",
+        "cit[[ies]]"
+       ],
+       [
+        "-f / -fe",
+        "a knife, a wife",
+        "kni[[ves]], wi[[ves]]"
+       ],
+       [
+        "new word",
+        "child, person, man, woman",
+        "[[children]], [[people]], [[men]], [[women]]"
+       ],
+       [
+        "new vowel",
+        "tooth, foot, mouse",
+        "[[teeth]], [[feet]], [[mice]]"
+       ],
+       [
+        "no change",
+        "a sheep, a fish",
+        "two [[sheep]], two [[fish]]"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "two childrens",
+       "two children"
+      ],
+      [
+       "many peoples",
+       "many people"
+      ],
+      [
+       "The police is here.",
+       "The police are here."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "These words take a plural verb",
+       "ex": [
+        "The children [[are]] tired.",
+        "My feet [[hurt]]."
+       ]
+      },
+      {
+       "t": "Always plural: things with two parts",
+       "s": [
+        "jeans",
+        "trousers",
+        "glasses",
+        "scissors"
+       ],
+       "ex": [
+        "My jeans [[are]] new.",
+        "Where [[are]] my glasses?"
+       ]
+      }
+     ],
+     "watch": [
+      "Vowel + *-y* just adds *-s*: *day → days, boy → boys*.",
+      "No plural (uncountable): *advice, information, furniture, news*: *some advice* (not *advices*)."
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2347,12 +3446,95 @@
     ],
     "signals": "*child, person*, man, *woman, tooth, foot, mouse, police* (bērns, cilvēks, vīrietis, *sieviete, zobs*, pēda, *pele, policija*)",
     "watch": [
-     "*-s, -sh, -ch, -x + -es*: *buses, dishes, watches, boxes*.",
-     "Līdzskanis + *-y → -ies*: *city → cities; patskanis + -y*: *day → days*.",
-     "*-f / -fe → -ves*: *knife → knives, life → lives, wife → wives*.",
-     "Vienādi *abos* skaitļos: *sheep, fish*. Vienmēr daudzskaitlī: *jeans, trousers, glasses, scissors*.",
-     "Bez daudzskaitļa: *advice, information, furniture, news*. *Latviski padomi*, mēbeles, ziņas ir daudzskaitlī, *angliski* nē."
-    ]
+     "Patskanis + *-y*: tikai *-s*: *day → days, boy → boys*.",
+     "Bez daudzskaitļa: *advice, information, furniture, news*: *some advice* (nevis *advices*). Latviski \"padomi, mēbeles, ziņas\" ir daudzskaitlī, angliski nē."
+    ],
+    "v2": {
+     "table": {
+      "plain": true,
+      "cols": [
+       "viens",
+       "vairāki"
+      ],
+      "rows": [
+       [
+        "vairums lietvārdu",
+        "a book",
+        "two book[[s]]"
+       ],
+       [
+        "-s, -sh, -ch, -x",
+        "a bus, a box",
+        "bus[[es]], box[[es]]"
+       ],
+       [
+        "līdzskanis + -y",
+        "a city",
+        "cit[[ies]]"
+       ],
+       [
+        "-f / -fe",
+        "a knife, a wife",
+        "kni[[ves]], wi[[ves]]"
+       ],
+       [
+        "cits vārds",
+        "child, person, man, woman",
+        "[[children]], [[people]], [[men]], [[women]]"
+       ],
+       [
+        "cits patskanis",
+        "tooth, foot, mouse",
+        "[[teeth]], [[feet]], [[mice]]"
+       ],
+       [
+        "nemainās",
+        "a sheep, a fish",
+        "two [[sheep]], two [[fish]]"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "two childrens",
+       "two children"
+      ],
+      [
+       "many peoples",
+       "many people"
+      ],
+      [
+       "The police is here.",
+       "The police are here."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Šie vārdi ir ar daudzskaitļa darbības vārdu",
+       "ex": [
+        "The children [[are]] tired.",
+        "My feet [[hurt]]."
+       ]
+      },
+      {
+       "t": "Vienmēr daudzskaitlī: lietas no divām daļām",
+       "s": [
+        "jeans",
+        "trousers",
+        "glasses",
+        "scissors"
+       ],
+       "ex": [
+        "My jeans [[are]] new.",
+        "Where [[are]] my glasses?"
+       ]
+      }
+     ],
+     "watch": [
+      "Patskanis + *-y*: tikai *-s*: *day → days, boy → boys*.",
+      "Bez daudzskaitļa: *advice, information, furniture, news*: *some advice* (nevis *advices*). Latviski \"padomi, mēbeles, ziņas\" ir daudzskaitlī, angliski nē."
+     ]
+    }
    }
   },
   {
@@ -2379,7 +3561,7 @@
      "*at the weekend* (British), *on the weekend* (American).",
      "*at home, at work, at school*, but *in the house, in the office*.",
      "*on the bus / train / plane*, but *in a car / taxi*.",
-     "*arrive in* + city or country, *arrive at* + a place, never *arrive to*: *We arrived in Riga. We arrived at the station.*"
+     "*arrive in* + a city or country, *arrive at* + a place, never *arrive to*: *We arrived in Riga. We arrived at the station.*"
     ],
     "v2": {
      "choice": {
@@ -2418,6 +3600,13 @@
        "The keys are on the table."
       ]
      ],
+     "watch": [
+      "*in the morning*, but *on Monday morning, on Friday evening*.",
+      "*at the weekend* (British), *on the weekend* (American).",
+      "*at home, at work, at school*, but *in the house, in the office*.",
+      "*on the bus / train / plane*, but *in a car / taxi*.",
+      "*arrive in* + a city or country, *arrive at* + a place, never *arrive to*: *We arrived in Riga. We arrived at the station.*"
+     ],
      "uses": [
       {
        "t": "Ask yourself: a clock time, a day or a longer period? A point, a surface or inside?",
@@ -2439,11 +3628,11 @@
     ],
     "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall* (septiņos, *pirmdien*, maijā, naktī, darbā, virtuvē, pie *sienas*)",
     "watch": [
-     "*in the morning*, bet *on Monday morning, on Friday evening*. *Latviski piektdienas* vakarā, *angliski* ar dienu *on*.",
-     "*at the weekend* (*britu*), *on the weekend* (amerikāņu).",
+     "*in the morning*, bet *on Monday morning, on Friday evening*. Latviski \"piektdienas vakarā\", angliski ar dienu *on*.",
+     "*at the weekend* (britu), *on the weekend* (amerikāņu).",
      "*at home, at work, at school*, bet *in the house, in the office*.",
-     "*on the bus / train / plane*, bet *in a car / taxi*. *Latviski* autobusā, *angliski on the bus*.",
-     "*arrive in* + pilsēta vai *valsts, arrive at + vieta*, nekad *arrive to*: *We arrived in Riga.* *We arrived at the station.*"
+     "*on the bus / train / plane*, bet *in a car / taxi*. Latviski \"autobusā\", angliski *on the bus*.",
+     "*arrive in* + pilsēta vai valsts, *arrive at* + vieta, nekad *arrive to*: *We arrived in Riga. We arrived at the station.*"
     ],
     "v2": {
      "choice": {
@@ -2481,6 +3670,13 @@
        "The keys are at the table.",
        "The keys are on the table."
       ]
+     ],
+     "watch": [
+      "*in the morning*, bet *on Monday morning, on Friday evening*. Latviski \"piektdienas vakarā\", angliski ar dienu *on*.",
+      "*at the weekend* (britu), *on the weekend* (amerikāņu).",
+      "*at home, at work, at school*, bet *in the house, in the office*.",
+      "*on the bus / train / plane*, bet *in a car / taxi*. Latviski \"autobusā\", angliski *on the bus*.",
+      "*arrive in* + pilsēta vai valsts, *arrive at* + vieta, nekad *arrive to*: *We arrived in Riga. We arrived at the station.*"
      ],
      "uses": [
       {

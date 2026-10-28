@@ -1288,12 +1288,12 @@
     var T = lv ? { form: 'Kā to veido', bad: 'Biežākās kļūdas', use: 'Kad to lieto', watch: 'Uzmanies' } : { form: 'How to make it', bad: 'Typical mistakes', use: 'When we use it', watch: 'Watch out' };
     parts.push(h('h3', { class: 'rc-h' }, T.form));
     if (v.table) {
-      parts.push(h('div', { class: 'rc-scroll rc-wide' }, h('table', { class: 'rc-table' },
+      parts.push(h('div', { class: 'rc-scroll rc-wide' + (v.table.plain ? ' rc-keep' : '') }, h('table', { class: 'rc-table' + (v.table.plain ? ' rc-plain' : '') },
         h('thead', null, h('tr', null, h('th', null, ''), v.table.cols.map(function (c, i) { return h('th', { class: 'c' + i }, c); }))),
         h('tbody', null, v.table.rows.map(function (r) {
           return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c, i) { return h('td', { class: 'c' + i }, hl(c)); }));
         })))));
-      parts.push(h('div', { class: 'rc-stack' }, v.table.cols.map(function (c, i) {   // the same table for a phone: one block per column
+      parts.push(h('div', { class: 'rc-stack' + (v.table.plain ? ' rc-plain' : '') }, v.table.cols.map(function (c, i) {   // the same table for a phone: one block per column
         return h('div', { class: 'rc-col c' + i }, h('div', { class: 'rc-col-h' }, c), v.table.rows.map(function (r) {
           return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, hl(r[i + 1])));
         }));
@@ -1324,13 +1324,13 @@
       parts.push(h('h3', { class: 'rc-h' }, T.use));
       v.uses.forEach(function (u) {
         parts.push(h('div', { class: 'rc-use' },
-          h('div', { class: 'rc-use-top' }, h('div', null, h('b', { class: 'rc-use-t' }, u.t),
+          h('div', { class: 'rc-use-top' }, h('div', null, h('b', { class: 'rc-use-t' }, richHl(u.t)),
             u.s && u.s.length ? h('div', { class: 'rc-sig' }, u.s.map(function (x) { return h('span', { class: 'chip' }, x); })) : null),
             u.tl ? timeline(u.tl, lv) : null),
           h('ul', { class: 'rc-ex' }, (u.ex || []).map(function (x) { return h('li', null, h('em', null, hl(x))); }))));
       });
     }
-    if (watch && watch.length) parts.push(h('div', { class: 'watch' }, h('b', null, '⚠ ', T.watch), h('ol', null, watch.map(function (x) { return h('li', null, UI.rich(x)); }))));
+    if (watch && watch.length) parts.push(h('div', { class: 'watch' }, h('b', null, '⚠ ', T.watch), h('ol', null, watch.map(function (x) { return h('li', null, richHl(x)); }))));
     return h('div', { class: 'rulecard rc2' }, parts);
   }
   function ruleCard(s, lv) {

@@ -2821,6 +2821,7 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
      "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
+     "*[[very]]* never goes before a verb: *I like it [[very much]]* (not *I very like it*).",
      "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"
     ],
     "v2": {
@@ -2851,8 +2852,8 @@ return json_decode(<<<'EF_JSON_END'
        "She speaks English very [[well]]."
       ],
       [
-       "I like [[very much it]].",
-       "I like [[it very much]]."
+       "I [[very like]] it.",
+       "I [[like]] it [[very much]]."
       ],
       [
        "He [[always is]] late.",
@@ -2894,6 +2895,7 @@ return json_decode(<<<'EF_JSON_END'
      "watch": [
       "*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
       "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
+      "*[[very]]* never goes before a verb: *I like it [[very much]]* (not *I very like it*).",
       "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"
      ]
     }
@@ -2915,6 +2917,7 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
      "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
+     "*[[very]]* nevar likt pirms darbības vārda: *I like it [[very much]]* (nevis *I very like it*). Latviski \"man ļoti patīk\", tāpēc rodas *[[very]] like*.",
      "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."
     ],
     "v2": {
@@ -2945,8 +2948,8 @@ return json_decode(<<<'EF_JSON_END'
        "She speaks English very [[well]]."
       ],
       [
-       "I like [[very much it]].",
-       "I like [[it very much]]."
+       "I [[very like]] it.",
+       "I [[like]] it [[very much]]."
       ],
       [
        "He [[always is]] late.",
@@ -2988,6 +2991,7 @@ return json_decode(<<<'EF_JSON_END'
      "watch": [
       "*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
       "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
+      "*[[very]]* nevar likt pirms darbības vārda: *I like it [[very much]]* (nevis *I very like it*). Latviski \"man ļoti patīk\", tāpēc rodas *[[very]] like*.",
       "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."
      ]
     }

@@ -789,7 +789,8 @@
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
         h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': area.label }, list.map(function (s) {
           var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; redrawLater(); } });
-          return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')));
+          var rule = h('button', { type: 'button', class: 'ttile-rule', 'aria-label': 'Rule: ' + s.label, title: 'Rule', onclick: function (e) { e.preventDefault(); e.stopPropagation(); rulesModal(s.id); } }, '?');   // a quick look at the rule before practising
+          return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
         })));
       det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
       return det;
@@ -808,8 +809,8 @@
         return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, l));
       }));
       holder.replaceChildren(
-        h('div', { class: 'picker-group' }, h('h3', null, 'Level'), levelRow),
-        h('div', { class: 'picker-group' }, h('h3', null, 'Topics'), h('div', null, state.meta.areas.map(group))),
+        h('div', { class: 'picker-group' }, levelRow),
+        h('div', { class: 'picker-group' }, h('div', null, state.meta.areas.map(group))),
         h('div', { class: 'picker-group' }, h('h3', null, 'Questions'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of questions' }, [10, 15, 20].map(function (n) {
             return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, String(n)));
@@ -1163,10 +1164,30 @@
       h('summary', { 'aria-label': name, title: name }, h('span', { class: 'rule-q', 'aria-hidden': 'true' }, '?'), flags && flags.length ? h('span', { class: 'langswitch' }, flags) : null), ruleCard(s, lv));
   }
 
+  /** "Negative: *don't / doesn't* + base verb: *I don't work.*" -> a label, the pattern as blocks (forms in gold, slots in grey) and the example below.
+      A line without "+" stays a plain line. (UDL: the pattern can be seen, not only read; teacher, 28 October) */
+  function formulaRow(x) {
+    var t = String(x || '');
+    if (t.indexOf(' + ') < 0) return h('div', { class: 'f-row f-plain' }, UI.rich(t));
+    var label = '', example = '';
+    var c = t.indexOf(': ');
+    if (c > 0 && t.slice(0, c).indexOf(' + ') < 0) { label = t.slice(0, c); t = t.slice(c + 2); }
+    var c2 = t.lastIndexOf(': ');
+    if (c2 > 0 && t.slice(c2 + 2).indexOf(' + ') < 0) { example = t.slice(c2 + 2); t = t.slice(0, c2); }
+    t = t.replace(/[.]$/, '');
+    var parts = t.split(' + '), blocks = [];
+    parts.forEach(function (p, i) {
+      if (i) blocks.push(h('span', { class: 'f-plus', 'aria-hidden': 'true' }, '+'));
+      var form = /^\*[^*]+\*$/.test(p.trim()) || /\*/.test(p);
+      blocks.push(h('span', { class: 'f-blk' + (form ? ' f-form' : ''), }, UI.rich(p.trim().replace(/^\*([^*]+)\*$/, '$1'))));
+    });
+    return h('div', { class: 'f-row' }, label ? h('div', { class: 'f-label' }, UI.rich(label)) : null, h('div', { class: 'f-blocks' }, blocks),
+      example ? h('div', { class: 'f-ex' }, '→ ', UI.rich(example)) : null);
+  }
   function ruleCard(s, lv) {
     var r = lv && s.rule_lv ? s.rule_lv : s.rule, l = lv && s.rule_lv;
     return h('div', { class: 'rulecard' },
-      h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('ul', null, r.form.map(function (x) { return h('li', null, UI.rich(x)); })),
+      h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('div', { class: 'formulas' }, r.form.map(formulaRow)),
       h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, UI.rich(x)); })),
       h('p', { class: 'small' }, h('b', null, l ? 'Signālvārdi: ' : 'Signal words: '), UI.rich(r.signals)),
       h('div', { class: 'ex' }, h('b', null, l ? 'Piemērs: ' : 'Example: '), UI.rich(s.rule.example)));
@@ -1310,11 +1331,13 @@
 
   function viewRules() {
     var lv = state.user.lang === 'lv';
-    var toggle = h('button', { type: 'button', class: 'btn ghost small', onclick: function () {
-      state.user.lang = lv ? 'en' : 'lv';
-      api('account/profile', { lang: state.user.lang }).catch(function () {});
-      viewRules();
-    } }, lv ? 'English' : 'Latviski');
+    function flagBtn(code) {   // the same flags as under the feedback, no words
+      var on = (code === 'lv') === lv;
+      return h('button', { type: 'button', class: 'langbtn ' + code + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', 'aria-label': code === 'lv' ? 'Latviski' : 'English', title: code === 'lv' ? 'Latviski' : 'English', onclick: function () {
+        if (on) return; state.user.lang = code; api('account/profile', { lang: code }).catch(function () {}); viewRules();
+      } });
+    }
+    var toggle = h('span', { class: 'langswitch' }, flagBtn('lv'), flagBtn('en'));
     show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards')), toggle),
       state.meta.areas.map(function (a, i) {   // tiles by area; a tile opens its rule card
         var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
@@ -1326,8 +1349,11 @@
   }
   function rulesModal(id) {
     var s = skillById(id);
-    var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'), h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn', id: 'c' }, 'Close'))));
+    var go = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October)
+    var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'),
+      h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, 'Close'))));
     m.el.querySelector('#c').onclick = m.close;
+    go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash); m.close(); };
   }
 
   /** Leaderboard avatar: with a mood, a small emoji sits on it and a tap shows the saying in a bubble. */

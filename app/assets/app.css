@@ -648,3 +648,21 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .tilesel input:checked + .ttile { border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold); }
 .tilesel input:focus-visible + .ttile { outline: 3px solid var(--gold); outline-offset: 2px; }
 .tilesel .ttile-nm { padding-right: 40px; }
+
+/* rule card formulas: the pattern as blocks (forms gold, slots grey) and the example under it */
+.formulas { display: grid; gap: 12px; margin: 8px 0 14px; }
+.f-row { display: grid; gap: 6px; }
+.f-plain { color: var(--text-soft); }
+.f-label { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.f-blocks { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.f-blk { padding: 5px 10px; border-radius: 8px; background: var(--bg); border: 1px solid var(--line); color: var(--text); font-size: .9rem; }
+.f-blk.f-form { background: var(--gold-pale); border-color: var(--gold); font-weight: 700; }
+.f-blk em { font-style: normal; }
+.f-plus { color: var(--muted); font-weight: 800; }
+.f-ex { color: var(--text); font-size: .92rem; padding-left: 2px; }
+.f-ex em { font-style: italic; }
+/* practice tiles: ? opens the rule */
+.ttile-rule { position: absolute; top: 7px; left: 7px; z-index: 2; width: 28px; height: 28px; border-radius: 50%; border: 0; background: rgba(255,255,255,.92); color: #166B5D; font-weight: 800; font-size: .95rem; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+.ttile-rule:hover { background: #fff; }
+.tilesel .ttile-art { padding-top: 38px; }
+.lvseg { margin-top: 14px; }

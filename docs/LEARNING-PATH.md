@@ -32,6 +32,7 @@ How the path uses this order (agreed 28 October):
 | 15 | should / must / have to | modal_verbs |
 | 16 | Future: be going to, will for offers | future |
 | 17 | Present perfect: ever / never, just / already / yet | present_perfect |
+| 17a | Auxiliary verbs: Are you…? Do you…? Did you…? Have you…? | aux_verbs |
 | 18 | Zero and first conditional | cond_zero, cond_first |
 | 19 | Prepositions after words (listen to, good at) | dep_prepositions |
 | 20 | Verbs with two objects (give me, tell her) | two_objects |

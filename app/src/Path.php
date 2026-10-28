@@ -26,6 +26,7 @@ final class Path
         ['mod', 'Should, must, have to', 'A2', ['modal_verbs']],
         ['fut1', 'Going to, will', 'A2', ['future']],
         ['pp', 'Present perfect', 'A2', ['present_perfect']],
+        ['aux', 'Are you, do you, have you', 'A2', ['aux_verbs']],   // auxiliary verbs (teacher, 28 October)
         ['c01', 'Zero and first conditional', 'A2', ['cond_zero', 'cond_first']],
         ['dep', 'Listen to, good at', 'A2', ['dep_prepositions']],
         ['two', 'Give me, tell her', 'A2', ['two_objects']],

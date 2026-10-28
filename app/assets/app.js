@@ -1280,6 +1280,13 @@
     if (kind === 'always') svg.appendChild(el('line', { x1: 8, y1: 22, x2: 116, y2: 22, class: 'tl-bar' }));
     if (kind === 'upto') { svg.appendChild(el('line', { x1: 22, y1: 22, x2: 74, y2: 22, class: 'tl-bar' })); svg.appendChild(el('path', { d: 'M72 16 L80 22 L72 28 Z', class: 'tl-head' })); }
     if (kind === 'now') svg.appendChild(el('circle', { cx: 80, cy: 22, r: 5, class: 'tl-head' }));
+    if (kind === 'around') svg.appendChild(el('line', { x1: 62, y1: 22, x2: 98, y2: 22, class: 'tl-bar' }));   // a temporary situation around now
+    if (kind === 'plan' || kind === 'decide_now') {   // going to: decided before; will: decided now (Murphy, Units 22-23)
+      var from = kind === 'plan' ? 40 : 80;
+      svg.appendChild(el('circle', { cx: from, cy: 22, r: 4, class: 'tl-head' }));
+      svg.appendChild(el('path', { d: 'M' + from + ' 16 Q ' + ((from + 104) / 2) + ' 2 104 16', class: 'tl-x' }));
+      svg.appendChild(el('path', { d: 'M' + 100 + ' 18 L' + 108 + ' 26 M' + 108 + ' 18 L' + 100 + ' 26', class: 'tl-x' }));
+    }
     (TL_X[kind] || []).forEach(function (x) { svg.appendChild(el('path', { d: 'M' + (x - 4) + ' 18 L' + (x + 4) + ' 26 M' + (x + 4) + ' 18 L' + (x - 4) + ' 26', class: 'tl-x' })); });
     return svg;
   }

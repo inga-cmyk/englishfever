@@ -514,3 +514,26 @@ LV_CARDS.update({
         "signals": "at 7, on Monday, in May, at night, at work, in the kitchen, on the wall (septiņos, pirmdien, maijā, naktī, darbā, virtuvē, pie sienas)",
     },
 })
+
+# ───────── auxiliary verbs (teacher, 28 October): Are you / Do you / Did you / Have you get mixed up ─────────
+SKILLS_NEW.append(("aux_verbs", "Auxiliary verbs: be, do, have (Are you…? Do you…? Have you…?)", "questions", ["A2.1", "A2.2", "B1.1"]))
+ABBR_NEW.update({"aux_verbs": "aux"})
+CARDS.update({
+    "aux_verbs": {
+        "form": ["*be* with *-ing*, adjectives and places: *Are you working? Is she tired?*",
+                 "*do / does / did* with other verbs in the present and past simple: *Do you work here? Did you see it?*",
+                 "*have / has* with the 3rd form (present perfect): *Have you seen it?*"],
+        "use": ["Questions, negatives and short answers need the auxiliary: *Are you…? I don't… Yes, I have.*"],
+        "signals": "*am, is, are, was, were, do, does, did, have, has*",
+        "example": "*Are you hungry? Do you want a sandwich? Have you eaten today?*",
+    },
+})
+LV_CARDS.update({
+    "aux_verbs": {
+        "form": ["be ar -ing, īpašības vārdiem un vietām: Are you working? Is she tired?",
+                 "do / does / did ar citiem darbības vārdiem Present Simple un Past Simple: Do you work here? Did you see it?",
+                 "have / has ar 3. formu (Present Perfect): Have you seen it?"],
+        "use": ["Jautājumos, noliegumos un īsajās atbildēs vajag palīgdarbības vārdu: Are you…? I don't… Yes, I have."],
+        "signals": "am, is, are, was, were, do, does, did, have, has",
+    },
+})

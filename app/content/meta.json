@@ -291,12 +291,116 @@
     "signals": "*now, at the moment, today, this week, these days, tomorrow* (for plans)",
     "example": "*I'm meeting Anna at five tomorrow.*",
     "watch": [
-     "Spelling: *make → making, sit → sitting, lie → lying*.",
-     "State verbs stay simple: *I need it now* (not *I'm needing it*). But *I'm thinking about it* is fine: here *think* is an action.",
-     "*always* + continuous shows annoyance: *He's always losing his keys!*",
-     "Not for permanent things: *I live in Riga* (not *I'm living in Riga*, if it is your permanent home).",
-     "Short answers: *Are you working? Yes, I am.* (not *Yes, I'm.*)"
-    ]
+     "*think* = have an opinion: simple; *think* = consider: continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
+     "*always* + continuous shows annoyance: *He's always [[losing]] his keys!*",
+     "A permanent situation: present simple; a temporary one: continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.*"
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I",
+        "[[am]] work[[ing]]",
+        "[[am not]] work[[ing]]",
+        "[[Am]] I work[[ing]]?"
+       ],
+       [
+        "he / she / it",
+        "[[is]] work[[ing]]",
+        "[[isn't]] work[[ing]]",
+        "[[Is]] she work[[ing]]?"
+       ],
+       [
+        "you / we / they",
+        "[[are]] work[[ing]]",
+        "[[aren't]] work[[ing]]",
+        "[[Are]] they work[[ing]]?"
+       ]
+      ],
+      "short": "Short answers: *Yes, I [[am]]. / No, she [[isn't]].* Spelling: *make → [[making]], sit → [[sitting]], lie → [[lying]]*."
+     },
+     "mistakes": [
+      [
+       "I [[working]] now.",
+       "I [[am working]] now."
+      ],
+      [
+       "She is [[work]] at the moment.",
+       "She is [[working]] at the moment."
+      ],
+      [
+       "I [[am needing]] help.",
+       "I [[need]] help."
+      ],
+      [
+       "Are you tired? Yes, [[I'm]].",
+       "Are you tired? Yes, [[I am]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Happening now",
+       "s": [
+        "now",
+        "at the moment",
+        "Look!",
+        "Listen!"
+       ],
+       "tl": "now",
+       "ex": [
+        "Look! It [[is snowing]].",
+        "She [[is talking]] on the phone right now."
+       ]
+      },
+      {
+       "t": "A temporary situation around now",
+       "s": [
+        "today",
+        "this week",
+        "these days"
+       ],
+       "tl": "around",
+       "ex": [
+        "I [[am working]] from home this week.",
+        "He [[is staying]] with friends at the moment."
+       ]
+      },
+      {
+       "t": "A change in progress",
+       "s": [
+        "more and more",
+        "getting"
+       ],
+       "tl": "around",
+       "ex": [
+        "Prices [[are going]] up.",
+        "Your English [[is getting]] better."
+       ]
+      },
+      {
+       "t": "A fixed plan for the future",
+       "s": [
+        "tonight",
+        "tomorrow",
+        "on Friday"
+       ],
+       "tl": "future",
+       "ex": [
+        "I [[am meeting]] Anna at six tomorrow."
+       ]
+      }
+     ],
+     "watch": [
+      "*think* = have an opinion: simple; *think* = consider: continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
+      "*always* + continuous shows annoyance: *He's always [[losing]] his keys!*",
+      "A permanent situation: present simple; a temporary one: continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -312,12 +416,117 @@
     ],
     "signals": "*now, at the moment, today, this week, these days, tomorrow* (plāniem)",
     "watch": [
-     "Rakstība: *make → making, sit → sitting, lie → lying*.",
-     "Stāvokļa darbības vārdi *paliek* Present Simple: *I need it now* (nevis *I'm needing it*). Bet *I'm thinking about it* ir *pareizi*, jo *tur think* ir darbība.",
-     "*always + continuous izsaka* īgnumu: *He's always losing his keys!*",
-     "Nelieto pastāvīgām lietām: *I live in Riga* (nevis *I'm living in Riga*, ja tā ir *tava* pastāvīgā dzīvesvieta). *Latviski abos* gadījumos ir viena forma dzīvoju, tāpēc ir grūti izvēlēties.",
-     "Īsās *atbildes*: *Are you working?* *Yes, I am.* (nevis *Yes, I'm*.)"
-    ]
+     "*think* = būt viedoklim: Present Simple; *think* = apdomāt: Continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
+     "*always* + Continuous izsaka īgnumu: *He's always [[losing]] his keys!*",
+     "Pastāvīga situācija: Present Simple, pagaidu: Continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.* Latviski abos gadījumos \"dzīvoju\"."
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I",
+        "[[am]] work[[ing]]",
+        "[[am not]] work[[ing]]",
+        "[[Am]] I work[[ing]]?"
+       ],
+       [
+        "he / she / it",
+        "[[is]] work[[ing]]",
+        "[[isn't]] work[[ing]]",
+        "[[Is]] she work[[ing]]?"
+       ],
+       [
+        "you / we / they",
+        "[[are]] work[[ing]]",
+        "[[aren't]] work[[ing]]",
+        "[[Are]] they work[[ing]]?"
+       ]
+      ],
+      "short": "Īsās atbildes: *Yes, I [[am]]. / No, she [[isn't]].* Rakstība: *make → [[making]], sit → [[sitting]], lie → [[lying]]*."
+     },
+     "mistakes": [
+      [
+       "I [[working]] now.",
+       "I [[am working]] now.",
+       "Latviski \"es strādāju\" ir viens vārds, tāpēc *am* izlaiž."
+      ],
+      [
+       "She is [[work]] at the moment.",
+       "She is [[working]] at the moment."
+      ],
+      [
+       "I [[am needing]] help.",
+       "I [[need]] help."
+      ],
+      [
+       "Are you tired? Yes, [[I'm]].",
+       "Are you tired? Yes, [[I am]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Notiek tagad",
+       "s": [
+        "now",
+        "at the moment",
+        "Look!",
+        "Listen!"
+       ],
+       "tl": "now",
+       "ex": [
+        "Look! It [[is snowing]].",
+        "She [[is talking]] on the phone right now."
+       ]
+      },
+      {
+       "t": "Pagaidu situācija ap šo laiku",
+       "s": [
+        "today",
+        "this week",
+        "these days"
+       ],
+       "tl": "around",
+       "ex": [
+        "I [[am working]] from home this week.",
+        "He [[is staying]] with friends at the moment."
+       ]
+      },
+      {
+       "t": "Pārmaiņas, kas notiek",
+       "s": [
+        "more and more",
+        "getting"
+       ],
+       "tl": "around",
+       "ex": [
+        "Prices [[are going]] up.",
+        "Your English [[is getting]] better."
+       ]
+      },
+      {
+       "t": "Norunāts plāns nākotnei",
+       "s": [
+        "tonight",
+        "tomorrow",
+        "on Friday"
+       ],
+       "tl": "future",
+       "ex": [
+        "I [[am meeting]] Anna at six tomorrow."
+       ]
+      }
+     ],
+     "watch": [
+      "*think* = būt viedoklim: Present Simple; *think* = apdomāt: Continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
+      "*always* + Continuous izsaka īgnumu: *He's always [[losing]] his keys!*",
+      "Pastāvīga situācija: Present Simple, pagaidu: Continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.* Latviski abos gadījumos \"dzīvoju\"."
+     ]
+    }
    }
   },
   {
@@ -1071,12 +1280,92 @@
     "signals": "*tomorrow, next week, soon, when, as soon as, if*",
     "example": "*Look at the clouds! It's going to rain.*",
     "watch": [
-     "No *will* after *when / if / as soon as*: *When I get home, I'll call you* (not *When I will get home*).",
-     "A sudden decision: *will*: *The phone's ringing. I'll get it.* (not *I'm going to get it*)",
-     "*Shall I…? / Shall we…?* for offers: *Shall I open the window?*",
-     "*I think I'll…* and *I don't think I'll…* (not *I think I won't…*).",
-     "Refusal: *won't*: *The car won't start.*"
-    ]
+     "*won't* can mean *refuse*: *The car [[won't]] start.*",
+     "*be about to* = very soon: *Hurry! The train [[is about to]] leave.*",
+     "*I don't think I'll…* is more natural than *I think I won't…*: *I [[don't think]] I'll come.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "will",
+       "going to",
+       "present continuous"
+      ],
+      "rows": [
+       [
+        "Form",
+        "*will* + base verb || *I [[will help]] you.*",
+        "*am / is / are going to* + base verb || *I'[[m going to]] call her.*",
+        "*am / is / are* + *-ing* || *I'[[m meeting]] Anna.*"
+       ],
+       [
+        "Use",
+        "a decision now || *The phone's ringing. I'[[ll get]] it.* ;; offers, promises || *I'[[ll help]] you with that.* ;; an opinion about the future || *I think it'[[ll rain]].*",
+        "a plan || *We'[[re going to]] buy a car.* ;; what we can see now || *Look at the clouds! It'[[s going to]] rain.*",
+        "an arrangement (a time, a place, other people) || *I'[[m meeting]] Anna at six.*"
+       ]
+      ],
+      "note": "Negative: *I [[won't]] tell anyone. She [[isn't going to]] come. We [[aren't]] meet[[ing]] today.*"
+     },
+     "mistakes": [
+      [
+       "When I [[will get]] home, I'll call you.",
+       "When I [[get]] home, I'll call you."
+      ],
+      [
+       "I [[will to]] help you.",
+       "I [[will]] help you."
+      ],
+      [
+       "She [[going to]] call you.",
+       "She [[is going to]] call you."
+      ],
+      [
+       "It [[will raining]] tomorrow.",
+       "It [[will rain]] tomorrow."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Decided before: *going to*",
+       "tl": "plan",
+       "ex": [
+        "I'[[m going to]] visit my aunt this weekend. (I decided last week.)"
+       ]
+      },
+      {
+       "t": "Decided now: *will*",
+       "tl": "decide_now",
+       "ex": [
+        "I'm thirsty. I'[[ll have]] some water."
+       ]
+      },
+      {
+       "t": "After *when, if, as soon as, before, until*: present simple",
+       "s": [
+        "when",
+        "if",
+        "as soon as",
+        "until"
+       ],
+       "ex": [
+        "I'll call you as soon as I [[get]] home."
+       ]
+      },
+      {
+       "t": "*Shall I…? / Shall we…?* for offers and suggestions",
+       "ex": [
+        "[[Shall]] I open the window?",
+        "[[Shall]] we go?"
+       ]
+      }
+     ],
+     "watch": [
+      "*won't* can mean *refuse*: *The car [[won't]] start.*",
+      "*be about to* = very soon: *Hurry! The train [[is about to]] leave.*",
+      "*I don't think I'll…* is more natural than *I think I won't…*: *I [[don't think]] I'll come.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1093,12 +1382,93 @@
     ],
     "signals": "*tomorrow, next week, soon, when, as soon as, if*",
     "watch": [
-     "Aiz *when / if / as soon as* nelieto *will*: *When I get home, I'll call you* (nevis *When I will get home*). *Latviski* kad atnākšu, tāpēc *gribas will*.",
-     "Pēkšņs lēmums: *will*: *The phone's ringing.* *I'll get it.* (nevis *I'm going to get it*)",
-     "*Shall I*…? / *Shall we*…? piedāvājumiem: *Shall I open the window?*",
-     "*I think I'll*… un *I don't think I'll*… (nevis *I think I won't*…).",
-     "*Atteikums*: *won't*: *The car won't start.*"
-    ]
+     "*won't* var nozīmēt atteikšanos: *The car [[won't]] start.* (Mašīna neiedarbojas.)",
+     "*be about to* = tūlīt: *Hurry! The train [[is about to]] leave.*",
+     "*I don't think I'll…* ir dabiskāk nekā *I think I won't…*: *I [[don't think]] I'll come.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "will",
+       "going to",
+       "present continuous"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "*will* + pamatforma || *I [[will help]] you.*",
+        "*am / is / are going to* + pamatforma || *I'[[m going to]] call her.*",
+        "*am / is / are* + *-ing* || *I'[[m meeting]] Anna.*"
+       ],
+       [
+        "Lietojums",
+        "lēmums tagad || *The phone's ringing. I'[[ll get]] it.* ;; piedāvājumi, solījumi || *I'[[ll help]] you with that.* ;; viedoklis par nākotni || *I think it'[[ll rain]].*",
+        "plāns || *We'[[re going to]] buy a car.* ;; to jau var redzēt || *Look at the clouds! It'[[s going to]] rain.*",
+        "norunāts (laiks, vieta, citi cilvēki) || *I'[[m meeting]] Anna at six.*"
+       ]
+      ],
+      "note": "Noliegums: *I [[won't]] tell anyone. She [[isn't going to]] come. We [[aren't]] meet[[ing]] today.*"
+     },
+     "mistakes": [
+      [
+       "When I [[will get]] home, I'll call you.",
+       "When I [[get]] home, I'll call you.",
+       "Latviski \"kad atnākšu\" ir nākotnē, tāpēc gribas *will*."
+      ],
+      [
+       "I [[will to]] help you.",
+       "I [[will]] help you."
+      ],
+      [
+       "She [[going to]] call you.",
+       "She [[is going to]] call you."
+      ],
+      [
+       "It [[will raining]] tomorrow.",
+       "It [[will rain]] tomorrow."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Izlemts iepriekš: *going to*",
+       "tl": "plan",
+       "ex": [
+        "I'[[m going to]] visit my aunt this weekend. (Izlēmu jau pagājušajā nedēļā.)"
+       ]
+      },
+      {
+       "t": "Izlemts tagad: *will*",
+       "tl": "decide_now",
+       "ex": [
+        "I'm thirsty. I'[[ll have]] some water."
+       ]
+      },
+      {
+       "t": "Aiz *when, if, as soon as, before, until*: Present Simple",
+       "s": [
+        "when",
+        "if",
+        "as soon as",
+        "until"
+       ],
+       "ex": [
+        "I'll call you as soon as I [[get]] home."
+       ]
+      },
+      {
+       "t": "*Shall I…? / Shall we…?* piedāvājumiem un ierosinājumiem",
+       "ex": [
+        "[[Shall]] I open the window?",
+        "[[Shall]] we go?"
+       ]
+      }
+     ],
+     "watch": [
+      "*won't* var nozīmēt atteikšanos: *The car [[won't]] start.* (Mašīna neiedarbojas.)",
+      "*be about to* = tūlīt: *Hurry! The train [[is about to]] leave.*",
+      "*I don't think I'll…* ir dabiskāk nekā *I think I won't…*: *I [[don't think]] I'll come.*"
+     ]
+    }
    }
   },
   {
@@ -1306,12 +1676,81 @@
     "signals": "*rule, law, allowed, necessary, advice, ability*",
     "example": "*You must wear a seat belt, but you don't have to wear a hat.*",
     "watch": [
-     "Never *to* after *can / should / must*: *I can go* (not *I can to go*).",
-     "No *will can*: *I will be able to come.*",
-     "*can* in the past: *could*: *I could swim when I was five.*",
-     "Requests: *Could you…?* is more polite than *Can you…?*",
-     "*Must I…?* sounds formal; *Do I have to…?* is more common."
-    ]
+     "*Must I…?* sounds formal; *Do I have to…?* is more common: *[[Do]] I [[have to]] sign here?*",
+     "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "can",
+       "should",
+       "must / have to"
+      ],
+      "rows": [
+       [
+        "Meaning",
+        "ability || *I [[can]] swim.* ;; permission || *[[Can]] I sit here?*",
+        "advice || *You [[should]] see a doctor.*",
+        "it is necessary || *You [[must]] wear a seat belt.* ;; a rule or a duty || *I [[have to]] wear a uniform.*"
+       ],
+       [
+        "Negative",
+        "|| *I [[can't]] swim.*",
+        "|| *You [[shouldn't]] eat so late.*",
+        "not allowed || *You [[mustn't]] park here.* ;; not necessary || *You [[don't have to]] pay.*"
+       ]
+      ],
+      "note": "*can / should / must* + base verb, no *-s*: *She [[can]] swim.* *have to* changes: *She [[has to]] go. [[Do]] you [[have to]] go?*"
+     },
+     "mistakes": [
+      [
+       "I can [[to swim]].",
+       "I can [[swim]]."
+      ],
+      [
+       "She [[cans]] drive.",
+       "She [[can]] drive."
+      ],
+      [
+       "I [[will can]] come.",
+       "I [[will be able to]] come."
+      ],
+      [
+       "I [[must]] work late yesterday.",
+       "I [[had to]] work late yesterday."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*mustn't* and *don't have to* are different",
+       "ex": [
+        "You [[mustn't]] smoke here. (= It's not allowed.)",
+        "You [[don't have to]] come. (= It's not necessary.)"
+       ]
+      },
+      {
+       "t": "In the past: *could* and *had to*",
+       "ex": [
+        "I [[could]] swim when I was five.",
+        "We [[had to]] wait an hour."
+       ]
+      },
+      {
+       "t": "Polite requests",
+       "s": [
+        "Could you…?",
+        "Can you…?"
+       ],
+       "ex": [
+        "[[Could]] you help me, please?"
+       ]
+      }
+     ],
+     "watch": [
+      "*Must I…?* sounds formal; *Do I have to…?* is more common: *[[Do]] I [[have to]] sign here?*",
+      "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1329,12 +1768,81 @@
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)",
     "watch": [
-     "Nekad to aiz *can / should / must*: *I can go* (nevis *I can to go*).",
-     "Nav *will can*: *I will be able to come.*",
-     "*can* pagātnē: *could*: *I could swim when I was five.*",
-     "Lūgumi: *Could you*…? ir pieklājīgāk nekā *Can you*…?",
-     "*Must I*…? izklausās oficiāli; biežāk saka *Do I have to*…?"
-    ]
+     "*Must I…?* izklausās oficiāli; biežāk saka *Do I have to…?*: *[[Do]] I [[have to]] sign here?*",
+     "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "can",
+       "should",
+       "must / have to"
+      ],
+      "rows": [
+       [
+        "Nozīme",
+        "spēja || *I [[can]] swim.* ;; atļauja || *[[Can]] I sit here?*",
+        "padoms || *You [[should]] see a doctor.*",
+        "nepieciešams || *You [[must]] wear a seat belt.* ;; noteikums vai pienākums || *I [[have to]] wear a uniform.*"
+       ],
+       [
+        "Noliegums",
+        "|| *I [[can't]] swim.*",
+        "|| *You [[shouldn't]] eat so late.*",
+        "nedrīkst || *You [[mustn't]] park here.* ;; nav vajadzīgs || *You [[don't have to]] pay.*"
+       ]
+      ],
+      "note": "*can / should / must* + pamatforma, bez *-s*: *She [[can]] swim.* *have to* mainās: *She [[has to]] go. [[Do]] you [[have to]] go?*"
+     },
+     "mistakes": [
+      [
+       "I can [[to swim]].",
+       "I can [[swim]]."
+      ],
+      [
+       "She [[cans]] drive.",
+       "She [[can]] drive."
+      ],
+      [
+       "I [[will can]] come.",
+       "I [[will be able to]] come."
+      ],
+      [
+       "I [[must]] work late yesterday.",
+       "I [[had to]] work late yesterday."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*mustn't* un *don't have to* nozīmē dažādas lietas",
+       "ex": [
+        "You [[mustn't]] smoke here. (= Te nedrīkst smēķēt.)",
+        "You [[don't have to]] come. (= Tev nav jānāk.)"
+       ]
+      },
+      {
+       "t": "Pagātnē: *could* un *had to*",
+       "ex": [
+        "I [[could]] swim when I was five.",
+        "We [[had to]] wait an hour."
+       ]
+      },
+      {
+       "t": "Pieklājīgi lūgumi",
+       "s": [
+        "Could you…?",
+        "Can you…?"
+       ],
+       "ex": [
+        "[[Could]] you help me, please?"
+       ]
+      }
+     ],
+     "watch": [
+      "*Must I…?* izklausās oficiāli; biežāk saka *Do I have to…?*: *[[Do]] I [[have to]] sign here?*",
+      "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+     ]
+    }
    }
   },
   {
@@ -1364,12 +1872,104 @@
     "signals": "*than, as ... as, the ... -est, in, much, a bit, the same as*",
     "example": "*This bike is cheaper than that one, but it is not as fast as mine.*",
     "watch": [
-     "*than me / than him* in everyday English: *She's taller than me.*",
-     "Never both: *bigger* (not *more bigger*), *the best* (not *the most best*).",
-     "*the* + comparative, *the* + comparative: *The sooner, the better.*",
-     "*fun* is an exception: *more fun* (not *funner*). *clever, quiet* take *-er* or *more*.",
-     "*as ... as* with the same adjective: *as tall as* (not *so tall as* or *as tall like*)."
-    ]
+     "*than me* in everyday English: *She's taller [[than me]].*",
+     "*the* + comparative, *the* + comparative: *[[The sooner]], [[the better]].*",
+     "*fun* → *more fun*; *clever, quiet* take *-er* or *more*: *It was [[more fun]] than I thought.*",
+     "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "comparative",
+       "superlative"
+      ],
+      "rows": [
+       [
+        "short adjectives",
+        "+ *-er* || *tall → [[taller]]*",
+        "*the* + *-est* || *[[the tallest]]*"
+       ],
+       [
+        "-y",
+        "*-y* → *-ier* || *easy → [[easier]]*",
+        "*the* + *-iest* || *[[the easiest]]*"
+       ],
+       [
+        "longer adjectives",
+        "*more* + adjective || *[[more expensive]]*",
+        "*the most* + adjective || *[[the most expensive]]*"
+       ],
+       [
+        "irregular",
+        "|| *good → [[better]]* ;; || *bad → [[worse]]* ;; || *far → [[further]]*",
+        "|| *[[the best]]* ;; || *[[the worst]]* ;; || *[[the furthest]]*"
+       ]
+      ],
+      "note": "Spelling: *big → [[bigger]], nice → [[nicer]], hot → [[hotter]]*."
+     },
+     "mistakes": [
+      [
+       "She is [[more tall]] than me.",
+       "She is [[taller]] than me."
+      ],
+      [
+       "This one is [[more bigger]].",
+       "This one is [[bigger]]."
+      ],
+      [
+       "He is older [[that]] me.",
+       "He is older [[than]] me."
+      ],
+      [
+       "It's [[the most good]] café in town.",
+       "It's [[the best]] café in town."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Compare two things: comparative + *than*",
+       "ex": [
+        "Riga is [[bigger than]] Jelgava."
+       ]
+      },
+      {
+       "t": "One compared with all the others: *the* + superlative + *in*",
+       "s": [
+        "in the class",
+        "in the world"
+       ],
+       "ex": [
+        "She is [[the tallest]] student in the class."
+       ]
+      },
+      {
+       "t": "The same: *as … as*; less: *not as … as*",
+       "ex": [
+        "My phone is [[as fast as]] yours.",
+        "This bag is [[not as heavy as]] that one."
+       ]
+      },
+      {
+       "t": "How big the difference is",
+       "s": [
+        "much",
+        "a lot",
+        "a bit",
+        "slightly"
+       ],
+       "ex": [
+        "This one is [[much cheaper]].",
+        "It's [[a bit colder]] today."
+       ]
+      }
+     ],
+     "watch": [
+      "*than me* in everyday English: *She's taller [[than me]].*",
+      "*the* + comparative, *the* + comparative: *[[The sooner]], [[the better]].*",
+      "*fun* → *more fun*; *clever, quiet* take *-er* or *more*: *It was [[more fun]] than I thought.*",
+      "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1387,12 +1987,104 @@
     ],
     "signals": "*than, as* ... *as, the* ... *-est, in, much, a bit, the same as* (nekā, *tikpat* ... kā, visā, *daudz, mazliet*, tāds *pats* kā)",
     "watch": [
-     "*than + me / him* sarunā: *She's taller than me.*",
-     "Nekad *abus* kopā: *bigger* (nevis *more bigger*), *the best* (nevis *the most best*).",
-     "*the + comparative, the + comparative*: *The sooner, the better.*",
-     "*fun* ir izņēmums: *more fun* (nevis *funner*); *clever, quiet* var gan ar *-er*, gan ar *more*.",
-     "*as* ... *as* ar to pašu īpašības vārdu: *as tall as* (nevis *so tall as* vai *as tall like*). *Latviski tikpat* garš kā, tāpēc *rodas like*."
-    ]
+     "*than me* sarunvalodā: *She's taller [[than me]].*",
+     "*the* + pārākā pakāpe, *the* + pārākā pakāpe: *[[The sooner]], [[the better]].* (Jo ātrāk, jo labāk.)",
+     "*fun* → *more fun*; *clever, quiet* var ar *-er* vai *more*: *It was [[more fun]] than I thought.*",
+     "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "pārākā pakāpe",
+       "vispārākā pakāpe"
+      ],
+      "rows": [
+       [
+        "īsi īpašības vārdi",
+        "+ *-er* || *tall → [[taller]]*",
+        "*the* + *-est* || *[[the tallest]]*"
+       ],
+       [
+        "-y",
+        "*-y* → *-ier* || *easy → [[easier]]*",
+        "*the* + *-iest* || *[[the easiest]]*"
+       ],
+       [
+        "gari īpašības vārdi",
+        "*more* + īpašības vārds || *[[more expensive]]*",
+        "*the most* + īpašības vārds || *[[the most expensive]]*"
+       ],
+       [
+        "nekārtni",
+        "|| *good → [[better]]* ;; || *bad → [[worse]]* ;; || *far → [[further]]*",
+        "|| *[[the best]]* ;; || *[[the worst]]* ;; || *[[the furthest]]*"
+       ]
+      ],
+      "note": "Rakstība: *big → [[bigger]], nice → [[nicer]], hot → [[hotter]]*."
+     },
+     "mistakes": [
+      [
+       "She is [[more tall]] than me.",
+       "She is [[taller]] than me."
+      ],
+      [
+       "This one is [[more bigger]].",
+       "This one is [[bigger]]."
+      ],
+      [
+       "He is older [[that]] me.",
+       "He is older [[than]] me."
+      ],
+      [
+       "It's [[the most good]] café in town.",
+       "It's [[the best]] café in town."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Salīdzina divas lietas: pārākā pakāpe + *than*",
+       "ex": [
+        "Riga is [[bigger than]] Jelgava."
+       ]
+      },
+      {
+       "t": "Viens salīdzinājumā ar visiem pārējiem: *the* + vispārākā pakāpe + *in*",
+       "s": [
+        "in the class",
+        "in the world"
+       ],
+       "ex": [
+        "She is [[the tallest]] student in the class."
+       ]
+      },
+      {
+       "t": "Vienāds: *as … as*; mazāk: *not as … as*",
+       "ex": [
+        "My phone is [[as fast as]] yours.",
+        "This bag is [[not as heavy as]] that one."
+       ]
+      },
+      {
+       "t": "Cik liela ir atšķirība",
+       "s": [
+        "much",
+        "a lot",
+        "a bit",
+        "slightly"
+       ],
+       "ex": [
+        "This one is [[much cheaper]].",
+        "It's [[a bit colder]] today."
+       ]
+      }
+     ],
+     "watch": [
+      "*than me* sarunvalodā: *She's taller [[than me]].*",
+      "*the* + pārākā pakāpe, *the* + pārākā pakāpe: *[[The sooner]], [[the better]].* (Jo ātrāk, jo labāk.)",
+      "*fun* → *more fun*; *clever, quiet* var ar *-er* vai *more*: *It was [[more fun]] than I thought.*",
+      "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*"
+     ]
+    }
    }
   },
   {
@@ -2340,12 +3032,74 @@
     "signals": "*who, what, which, whose as the subject: no do / does / did*",
     "example": "*Who wrote this email? Who did you send it to?*",
     "watch": [
-     "A preposition often goes at the end: *Who are you talking to? What are you looking at?*",
-     "*Which / What / How many* + noun as the subject: no *do*: *Which bus goes to the centre? How many people came?*",
-     "*Who* takes a singular verb, even if the answer is two people: *Who lives here? Tom and Anna.*",
-     "Questions with *be*: no *do*: *Where is she? Were they late?*",
-     "Indirect questions have a different order: *Do you know where she lives?* (a separate topic)"
-    ]
+     "A preposition often goes at the end: *Who are you talking [[to]]? What are you looking [[at]]?*",
+     "*Who* takes a singular verb, even if the answer is two people: *Who [[lives]] here? Tom and Anna.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "object question",
+       "subject question"
+      ],
+      "rows": [
+       [
+        "Form",
+        "question word + *do / does / did* + subject + verb || *Who [[did]] you call?*",
+        "question word + verb, no *do / does / did* || *Who [[called]] you?*"
+       ],
+       [
+        "The answer",
+        "the person the action happens to || *I called Tom.*",
+        "the person who does the action || *Tom called me.*"
+       ]
+      ],
+      "note": "With *be*, a modal verb or another auxiliary, that word comes first: *What [[are]] you doing? Who [[can]] you see?*"
+     },
+     "mistakes": [
+      [
+       "What [[did happened]]?",
+       "What [[happened]]?"
+      ],
+      [
+       "What [[you want]]?",
+       "What [[do you want]]?"
+      ],
+      [
+       "Who [[does live]] here?",
+       "Who [[lives]] here?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Ask about the one who does the action: subject question",
+       "ex": [
+        "Tom called me. → [[Who called]] you?"
+       ]
+      },
+      {
+       "t": "Ask about the one the action happens to: object question",
+       "ex": [
+        "I called Tom. → Who [[did you call]]?"
+       ]
+      },
+      {
+       "t": "*Which / What / How many* + noun as the subject: no *do*",
+       "s": [
+        "which bus",
+        "what time",
+        "how many people"
+       ],
+       "ex": [
+        "Which bus [[goes]] to the centre?",
+        "How many people [[came]]?"
+       ]
+      }
+     ],
+     "watch": [
+      "A preposition often goes at the end: *Who are you talking [[to]]? What are you looking [[at]]?*",
+      "*Who* takes a singular verb, even if the answer is two people: *Who [[lives]] here? Tom and Anna.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2360,12 +3114,75 @@
     ],
     "signals": "*who, what, which, whose as the subject*: no *do / does / did* (kā teik. priekšmets: bez *do / does / did*)",
     "watch": [
-     "Prievārds bieži ir beigās: *Who are you talking to?* *What are you looking at?* *Latviski* prievārds ir sākumā: Ar ko *tu* runā?",
-     "*Which / What / How many* + lietvārds kā teikuma priekšmets: bez *do*: *Which bus goes to the centre?* *How many people came?*",
-     "*Who* lieto ar *vienskaitli*, arī ja atbilde ir *divi* cilvēki: *Who lives here?* *Tom and Anna.*",
-     "Jautājumos ar *be do nevajag*: *Where is she?* *Were they late?*",
-     "Netiešajiem jautājumiem ir *cita* secība: *Do you know where she lives?* (atsevišķa tēma)"
-    ]
+     "Prievārds bieži ir beigās: *Who are you talking [[to]]? What are you looking [[at]]?* Latviski prievārds ir sākumā: \"Ar ko tu runā?\"",
+     "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *Who [[lives]] here? Tom and Anna.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "jautājums par papildinātāju",
+       "jautājums par teikuma priekšmetu"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "jautājamais vārds + *do / does / did* + teik. priekšmets + darbības vārds || *Who [[did]] you call?*",
+        "jautājamais vārds + darbības vārds, bez *do / does / did* || *Who [[called]] you?*"
+       ],
+       [
+        "Atbilde",
+        "tas, ar ko darbība notiek || *I called Tom.*",
+        "tas, kurš darbību dara || *Tom called me.*"
+       ]
+      ],
+      "note": "Ar *be*, modālo darbības vārdu vai citu palīgdarbības vārdu tas ir pirmais: *What [[are]] you doing? Who [[can]] you see?*"
+     },
+     "mistakes": [
+      [
+       "What [[did happened]]?",
+       "What [[happened]]?"
+      ],
+      [
+       "What [[you want]]?",
+       "What [[do you want]]?",
+       "Latviski \"Ko tu gribi?\" ir bez palīgdarbības vārda, tāpēc *do* izlaiž."
+      ],
+      [
+       "Who [[does live]] here?",
+       "Who [[lives]] here?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Jautā par to, kurš darbību dara: jautājums par teikuma priekšmetu",
+       "ex": [
+        "Tom called me. → [[Who called]] you?"
+       ]
+      },
+      {
+       "t": "Jautā par to, ar ko darbība notiek: jautājums par papildinātāju",
+       "ex": [
+        "I called Tom. → Who [[did you call]]?"
+       ]
+      },
+      {
+       "t": "*Which / What / How many* + lietvārds kā teikuma priekšmets: bez *do*",
+       "s": [
+        "which bus",
+        "what time",
+        "how many people"
+       ],
+       "ex": [
+        "Which bus [[goes]] to the centre?",
+        "How many people [[came]]?"
+       ]
+      }
+     ],
+     "watch": [
+      "Prievārds bieži ir beigās: *Who are you talking [[to]]? What are you looking [[at]]?* Latviski prievārds ir sākumā: \"Ar ko tu runā?\"",
+      "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *Who [[lives]] here? Tom and Anna.*"
+     ]
+    }
    }
   },
   {
@@ -3715,6 +4532,233 @@
       "*arrive [[in]]* pilsētā vai valstī, *arrive [[at]]* vietā: *We arrived [[at]] the station.*"
      ]
     }
+   }
+  },
+  {
+   "id": "aux_verbs",
+   "label": "Auxiliary verbs: be, do, have (Are you…? Do you…? Have you…?)",
+   "area": "questions",
+   "levels": [
+    "A2.1",
+    "A2.2",
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "*be* with *-ing*, adjectives and places: *Are you working? Is she tired?*",
+     "*do / does / did* with other verbs in the present and past simple: *Do you work here? Did you see it?*",
+     "*have / has* with the 3rd form (present perfect): *Have you seen it?*"
+    ],
+    "use": [
+     "Questions, negatives and short answers need the auxiliary: *Are you…? I don't… Yes, I have.*"
+    ],
+    "signals": "*am, is, are, was, were, do, does, did, have, has*",
+    "example": "*Are you hungry? Do you want a sandwich? Have you eaten today?*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "be",
+       "do",
+       "have"
+      ],
+      "rows": [
+       [
+        "Forms",
+        "|| *am / is / are* ;; past || *was / were*",
+        "|| *do / does* ;; past || *did*",
+        "|| *have / has*"
+       ],
+       [
+        "With",
+        "*-ing* || *[[Are]] you working?* ;; an adjective, a noun, a place || *[[Is]] she tired?* ;; *going to* || *[[Are]] you going to come?*",
+        "other verbs in the present simple || *[[Do]] you work here?* ;; other verbs in the past simple || *[[Did]] you see it?*",
+        "the 3rd form (present perfect) || *[[Have]] you seen it?* ;; || *[[Has]] she finished?*"
+       ],
+       [
+        "Negative",
+        "|| *I'[[m not]] working.*",
+        "|| *I [[don't]] know.* ;; || *She [[didn't]] come.*",
+        "|| *I [[haven't]] seen it.*"
+       ],
+       [
+        "Short answer",
+        "|| *Yes, I [[am]].*",
+        "|| *Yes, I [[do]].*",
+        "|| *Yes, I [[have]].*"
+       ]
+      ],
+      "note": "Ask yourself: what comes after the subject? *-ing*, an adjective or a place → *be*; a normal verb → *do / does / did*; a 3rd form → *have / has*."
+     },
+     "mistakes": [
+      [
+       "[[Are]] you like coffee?",
+       "[[Do]] you like coffee?"
+      ],
+      [
+       "[[Do]] you tired?",
+       "[[Are]] you tired?"
+      ],
+      [
+       "[[Did]] you seen it?",
+       "[[Have]] you seen it?"
+      ],
+      [
+       "[[Do]] she work here?",
+       "[[Does]] she work here?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Question words go before the auxiliary",
+       "s": [
+        "where",
+        "what",
+        "how long"
+       ],
+       "ex": [
+        "Where [[do]] you live?",
+        "What [[are]] you doing?",
+        "How long [[have]] you been here?"
+       ]
+      },
+      {
+       "t": "Modal verbs need no auxiliary",
+       "s": [
+        "can",
+        "should",
+        "will"
+       ],
+       "ex": [
+        "[[Can]] you swim?",
+        "[[Should]] I call her?"
+       ]
+      },
+      {
+       "t": "*have* = own: *Do you have…?* or *Have you got…?*",
+       "ex": [
+        "[[Do]] you have a car?",
+        "[[Have]] you got a car?"
+       ]
+      }
+     ],
+     "watch": [
+      "*be* in the past simple, no *did*: *[[Were]] you at home?*",
+      "The auxiliary takes the *-s* or the past, the main verb stays in the base form: *[[Does]] she work? [[Did]] you go?*"
+     ]
+    },
+    "watch": [
+     "*be* in the past simple, no *did*: *[[Were]] you at home?*",
+     "The auxiliary takes the *-s* or the past, the main verb stays in the base form: *[[Does]] she work? [[Did]] you go?*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*be* ar *-ing*, īpašības vārdiem un vietām: *Are you working?* *Is she tired?*",
+     "*do / does / did* ar *citiem* darbības vārdiem Present Simple un Past Simple: *Do you work here?* *Did you see it?*",
+     "*have / has* ar 3. formu (Present Perfect): *Have you seen it?*"
+    ],
+    "use": [
+     "Jautājumos, noliegumos un īsajās atbildēs vajag palīgdarbības vārdu: *Are you*…? *I don't*… *Yes, I have.*"
+    ],
+    "signals": "*am, is, are, was, were, do, does, did, have, has*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "be",
+       "do",
+       "have"
+      ],
+      "rows": [
+       [
+        "Formas",
+        "|| *am / is / are* ;; pagātnē || *was / were*",
+        "|| *do / does* ;; pagātnē || *did*",
+        "|| *have / has*"
+       ],
+       [
+        "Ar ko",
+        "*-ing* || *[[Are]] you working?* ;; īpašības vārds, lietvārds, vieta || *[[Is]] she tired?* ;; *going to* || *[[Are]] you going to come?*",
+        "citi darbības vārdi Present Simple || *[[Do]] you work here?* ;; citi darbības vārdi Past Simple || *[[Did]] you see it?*",
+        "3. forma (Present Perfect) || *[[Have]] you seen it?* ;; || *[[Has]] she finished?*"
+       ],
+       [
+        "Noliegums",
+        "|| *I'[[m not]] working.*",
+        "|| *I [[don't]] know.* ;; || *She [[didn't]] come.*",
+        "|| *I [[haven't]] seen it.*"
+       ],
+       [
+        "Īsā atbilde",
+        "|| *Yes, I [[am]].*",
+        "|| *Yes, I [[do]].*",
+        "|| *Yes, I [[have]].*"
+       ]
+      ],
+      "note": "Pajautā sev: kas ir aiz teikuma priekšmeta? *-ing*, īpašības vārds vai vieta → *be*; parasts darbības vārds → *do / does / did*; 3. forma → *have / has*."
+     },
+     "mistakes": [
+      [
+       "[[Are]] you like coffee?",
+       "[[Do]] you like coffee?",
+       "Latviešu jautājumā (\"Vai tev garšo kafija?\") palīgdarbības vārda nav, tāpēc to bieži izvēlas nepareizi."
+      ],
+      [
+       "[[Do]] you tired?",
+       "[[Are]] you tired?",
+       "Latviski \"Vai tu esi noguris?\": *tired* ir īpašības vārds, tāpēc vajag *be*."
+      ],
+      [
+       "[[Did]] you seen it?",
+       "[[Have]] you seen it?"
+      ],
+      [
+       "[[Do]] she work here?",
+       "[[Does]] she work here?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Jautājamais vārds ir pirms palīgdarbības vārda",
+       "s": [
+        "where",
+        "what",
+        "how long"
+       ],
+       "ex": [
+        "Where [[do]] you live?",
+        "What [[are]] you doing?",
+        "How long [[have]] you been here?"
+       ]
+      },
+      {
+       "t": "Modālajiem darbības vārdiem palīgdarbības vārds nav vajadzīgs",
+       "s": [
+        "can",
+        "should",
+        "will"
+       ],
+       "ex": [
+        "[[Can]] you swim?",
+        "[[Should]] I call her?"
+       ]
+      },
+      {
+       "t": "*have* = piederēt: *Do you have…?* vai *Have you got…?*",
+       "ex": [
+        "[[Do]] you have a car?",
+        "[[Have]] you got a car?"
+       ]
+      }
+     ],
+     "watch": [
+      "*be* Past Simple, bez *did*: *[[Were]] you at home?*",
+      "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*"
+     ]
+    },
+    "watch": [
+     "*be* Past Simple, bez *did*: *[[Were]] you at home?*",
+     "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*"
+    ]
    }
   }
  ],

@@ -789,3 +789,9 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rc-pair.marked .mk { color: inherit; }
 .rc-pair.marked .no .mk { color: var(--bad); } .rc-pair.marked .yes .mk { color: var(--good); }
 .note-tip { color: var(--gold-deep); }
+.rc-seg { display: block; }
+.rc-seg.more { margin-top: 10px; }
+.rc-ex li.rc-ex-bad { list-style: none; margin-left: -18px; color: var(--text); }
+.rc-ex-bad .mk { color: var(--bad); font-weight: 800; }
+.rc-ex-bad .bad-hl { color: var(--bad); text-decoration: underline wavy; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.rc-pair .rc-why { grid-column: 1 / -1; font-size: .86rem; color: var(--text-soft); padding: 0 4px 4px; font-style: normal; background: none; }

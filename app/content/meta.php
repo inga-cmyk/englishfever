@@ -2819,9 +2819,8 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely*",
     "example": "*He drives carefully, and he never drives too fast.*",
     "watch": [
-     "*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
-     "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
-     "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"
+     "*[[fast]], [[hard]], [[late]]* are adjectives and adverbs, without *-ly*: *He drives [[fast]]. She works [[hard]]. The train arrived [[late]].*",
+     "*[[hardly]]* = almost not, *[[lately]]* = recently: *I can [[hardly]] hear you. I haven't seen him [[lately]].*"
     ],
     "v2": {
      "choice": {
@@ -2833,15 +2832,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Form",
-        "adjective + *-ly* || *slow → [[slowly]], easy → [[easily]], good → [[well]]*",
+        "adjective + *-ly* || *slow → [[slowly]]* ;; || *easy → [[easily]]* ;; irregular || *good → [[well]]*",
         "words for how often || *[[always]], [[usually]], [[often]], [[sometimes]], [[never]]*",
         "words for how much || *[[very]], [[really]], [[quite]], [[too]], [[extremely]]*"
        ],
        [
-        "Where",
-        "after the verb or the object || *She speaks English [[well]].*",
-        "before the main verb, after *be* || *She [[often]] walks. He is [[always]] late.*",
-        "before an adjective; *[[enough]]* after it || *[[very]] cold, warm [[enough]]*"
+        "Position",
+        "after the verb || *She speaks [[fast]].* ;; after the object || *She speaks English [[well]].*",
+        "before the main verb || *She [[often]] walks.* ;; after *be* || *He is [[never]] late.* ;; with two verbs: after the first || *I have [[never]] been there.*",
+        "before an adjective || *It's [[very]] cold.* ;; *[[enough]]* after an adjective || *It's warm [[enough]].*"
        ]
       ]
      },
@@ -2851,12 +2850,12 @@ return json_decode(<<<'EF_JSON_END'
        "She speaks English very [[well]]."
       ],
       [
-       "I [[very like]] it.",
-       "I [[like]] it [[very much]]."
+       "He [[always late]].",
+       "He [[is always]] late."
       ],
       [
-       "He [[always is]] late.",
-       "He [[is always]] late."
+       "I [[very]] like it.",
+       "I like it [[very much]]."
       ]
      ],
      "uses": [
@@ -2867,34 +2866,43 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "After *be, look, feel, seem, sound*: an adjective",
+       "t": "*look, sound, feel, seem, taste* + adjective, but an action + adverb",
        "s": [
         "look",
+        "sound",
         "feel",
         "seem",
-        "sound"
+        "taste"
        ],
        "ex": [
-        "You look [[tired]]. (not *tiredly*)",
-        "That sounds [[great]]."
+        "That sounds [[good]].",
+        "She sings [[well]].",
+        "✗ She sings [[good]]."
        ]
       },
       {
-       "t": "Extreme adjectives take *absolutely*, not *very*",
+       "t": "*I feel good* or *I feel well*?",
+       "ex": [
+        "I feel [[good]] today. (= happy, in a good mood)",
+        "I feel [[well]] again. (= healthy, not ill)"
+       ]
+      },
+      {
+       "t": "Use *absolutely / completely / extremely* with strong adjectives",
        "s": [
         "perfect",
         "amazing",
         "exhausted"
        ],
        "ex": [
-        "The view was [[absolutely]] amazing."
+        "The view was [[absolutely]] amazing.",
+        "✗ The view was [[very]] amazing."
        ]
       }
      ],
      "watch": [
-      "*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
-      "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
-      "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"
+      "*[[fast]], [[hard]], [[late]]* are adjectives and adverbs, without *-ly*: *He drives [[fast]]. She works [[hard]]. The train arrived [[late]].*",
+      "*[[hardly]]* = almost not, *[[lately]]* = recently: *I can [[hardly]] hear you. I haven't seen him [[lately]].*"
      ]
     }
    },
@@ -2913,9 +2921,8 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely* (vienmēr, nekad, ļoti, *diezgan*, pārāk, pietiekami)",
     "watch": [
-     "*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
-     "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
-     "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."
+     "*[[fast]], [[hard]], [[late]]* ir gan īpašības, gan apstākļa vārdi, bez *-ly*: *He drives [[fast]]. She works [[hard]]. The train arrived [[late]].*",
+     "*[[hardly]]* = gandrīz nemaz, *[[lately]]* = pēdējā laikā: *I can [[hardly]] hear you. I haven't seen him [[lately]].*"
     ],
     "v2": {
      "choice": {
@@ -2927,15 +2934,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Forma",
-        "īpašības vārds + *-ly* || *slow → [[slowly]], easy → [[easily]], good → [[well]]*",
+        "īpašības vārds + *-ly* || *slow → [[slowly]]* ;; || *easy → [[easily]]* ;; nekārtns || *good → [[well]]*",
         "vārdi, kas saka, cik bieži || *[[always]], [[usually]], [[often]], [[sometimes]], [[never]]*",
         "vārdi, kas saka, cik ļoti || *[[very]], [[really]], [[quite]], [[too]], [[extremely]]*"
        ],
        [
-        "Kur",
-        "aiz darbības vārda vai papildinātāja || *She speaks English [[well]].*",
-        "pirms pamatdarbības vārda, aiz *be* || *She [[often]] walks. He is [[always]] late.*",
-        "pirms īpašības vārda; *[[enough]]* aiz tā || *[[very]] cold, warm [[enough]]*"
+        "Vieta teikumā",
+        "aiz darbības vārda || *She speaks [[fast]].* ;; aiz papildinātāja || *She speaks English [[well]].*",
+        "pirms pamatdarbības vārda || *She [[often]] walks.* ;; aiz *be* || *He is [[never]] late.* ;; ar diviem darbības vārdiem: aiz pirmā || *I have [[never]] been there.*",
+        "pirms īpašības vārda || *It's [[very]] cold.* ;; *[[enough]]* aiz īpašības vārda || *It's warm [[enough]].*"
        ]
       ]
      },
@@ -2945,12 +2952,14 @@ return json_decode(<<<'EF_JSON_END'
        "She speaks English very [[well]]."
       ],
       [
-       "I [[very like]] it.",
-       "I [[like]] it [[very much]]."
+       "He [[always late]].",
+       "He [[is always]] late.",
+       "Latviski \"kavēt\" ir darbības vārds, bet *late* ir īpašības vārds, tāpēc vajag *be*: *I'm not late* (nevis *I don't late*)."
       ],
       [
-       "He [[always is]] late.",
-       "He [[is always]] late."
+       "I [[very]] like it.",
+       "I like it [[very much]].",
+       "Latviski \"ļoti patīk\", bet angliski *very* viens pats nevar aprakstīt darbības vārdu: *very much* ir teikuma beigās."
       ]
      ],
      "uses": [
@@ -2961,34 +2970,43 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "Aiz *be, look, feel, seem, sound*: īpašības vārds",
+       "t": "*look, sound, feel, seem, taste* + īpašības vārds, bet darbība + apstākļa vārds",
        "s": [
         "look",
+        "sound",
         "feel",
         "seem",
-        "sound"
+        "taste"
        ],
        "ex": [
-        "You look [[tired]]. (nevis *tiredly*)",
-        "That sounds [[great]]."
+        "That sounds [[good]].",
+        "She sings [[well]].",
+        "✗ She sings [[good]]."
        ]
       },
       {
-       "t": "Galējiem īpašības vārdiem *absolutely*, nevis *very*",
+       "t": "*I feel good* vai *I feel well*?",
+       "ex": [
+        "I feel [[good]] today. (= labs garastāvoklis)",
+        "I feel [[well]] again. (= esmu vesels)"
+       ]
+      },
+      {
+       "t": "Ar stipriem īpašības vārdiem lieto *absolutely / completely / extremely*",
        "s": [
         "perfect",
         "amazing",
         "exhausted"
        ],
        "ex": [
-        "The view was [[absolutely]] amazing."
+        "The view was [[absolutely]] amazing.",
+        "✗ The view was [[very]] amazing."
        ]
       }
      ],
      "watch": [
-      "*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
-      "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
-      "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."
+      "*[[fast]], [[hard]], [[late]]* ir gan īpašības, gan apstākļa vārdi, bez *-ly*: *He drives [[fast]]. She works [[hard]]. The train arrived [[late]].*",
+      "*[[hardly]]* = gandrīz nemaz, *[[lately]]* = pēdējā laikā: *I can [[hardly]] hear you. I haven't seen him [[lately]].*"
      ]
     }
    }

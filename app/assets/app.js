@@ -1283,10 +1283,14 @@
     (TL_X[kind] || []).forEach(function (x) { svg.appendChild(el('path', { d: 'M' + (x - 4) + ' 18 L' + (x + 4) + ' 26 M' + (x + 4) + ' 18 L' + (x - 4) + ' 26', class: 'tl-x' })); });
     return svg;
   }
-  function cellRich(c) {   // "description || example": the example on its own line, in italics (teacher, 28 October)
-    var i = String(c).indexOf(' || ');
-    if (i < 0) return richHl(c);
-    return h('span', null, h('span', { class: 'rc-desc' }, richHl(c.slice(0, i))), h('span', { class: 'rc-eg' }, richHl(c.slice(i + 4))));
+  function cellRich(c) {   // "description || example": the example on its own line, in italics; " ;; " = one more position with its own example (teacher, 28 October)
+    var segs = String(c).split(' ;; ');
+    return h('span', null, segs.map(function (seg, k) {
+      var i = seg.indexOf('|| ');
+      if (i < 0) return h('span', { class: 'rc-desc' }, richHl(seg));
+      var d = seg.slice(0, i).trim();
+      return h('span', { class: 'rc-seg' + (k ? ' more' : '') }, d ? h('span', { class: 'rc-desc' }, richHl(d)) : null, h('span', { class: 'rc-eg' }, richHl(seg.slice(i + 3))));
+    }));
   }
   function badHl(t) {   // the wrong part of a wrong sentence: red and underlined, the rest plain
     var frag = document.createDocumentFragment();
@@ -1331,7 +1335,8 @@
       parts.push(h('div', { class: 'rc-bad' }, v.mistakes.map(function (m) {
         var marked = m[0].indexOf('[[') >= 0;   // the changed words are marked: no strike-through, only those words coloured
         return h('div', { class: 'rc-pair' + (marked ? ' marked' : '') }, h('span', { class: 'no' }, h('span', { class: 'mk', 'aria-label': lv ? 'nepareizi' : 'wrong' }, '✗'), marked ? h('em', null, badHl(m[0])) : h('s', null, m[0])),
-          h('span', { class: 'yes' }, h('span', { class: 'mk', 'aria-label': lv ? 'pareizi' : 'right' }, '✓'), marked ? h('em', null, hl(m[1])) : m[1]));
+          h('span', { class: 'yes' }, h('span', { class: 'mk', 'aria-label': lv ? 'pareizi' : 'right' }, '✓'), marked ? h('em', null, hl(m[1])) : m[1]),
+          m[2] ? h('span', { class: 'rc-why' }, richHl(m[2])) : null);   // why Latvian speakers make this mistake
       })));
     }
     if (v.uses && v.uses.length) {
@@ -1341,7 +1346,10 @@
           h('div', { class: 'rc-use-top' }, h('div', null, h('b', { class: 'rc-use-t' }, richHl(u.t)),
             u.s && u.s.length ? h('div', { class: 'rc-sig' }, u.s.map(function (x) { return h('span', { class: 'chip' }, x); })) : null),
             u.tl ? timeline(u.tl, lv) : null),
-          h('ul', { class: 'rc-ex' }, (u.ex || []).map(function (x) { return h('li', null, h('em', null, hl(x))); }))));
+          h('ul', { class: 'rc-ex' }, (u.ex || []).map(function (x) {   // "✗ ..." = a wrong example, in red
+            if (x.indexOf('✗ ') === 0) return h('li', { class: 'rc-ex-bad' }, h('span', { class: 'mk', 'aria-label': lv ? 'nepareizi' : 'wrong' }, '✗ '), h('em', null, badHl(x.slice(2))));
+            return h('li', null, h('em', null, hl(x)));
+          }))));
       });
     }
     if (watch && watch.length) parts.push(h('div', { class: 'watch' }, h('b', null, '⚠ ', T.watch), h('ol', null, watch.map(function (x) { return h('li', null, richHl(x)); }))));

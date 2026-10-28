@@ -46,9 +46,10 @@ _TENSE = {"Present simple": "the present simple", "Present continuous": "the pre
           "Present simple passive": "the present simple passive", "Past simple passive": "the past simple passive", "Present continuous passive": "the present continuous passive",
           "Present perfect passive": "the present perfect passive", "Future passive (will be done)": "the future passive"}
 _CUE = {
-    "Present simple": r"every|usually|often|never|always|sometimes|twice a|how often|\bon (mon|tues|wednes|thurs|fri|satur|sun)|first thing|at the weekend|vegetarian|loves it|how much|\bbut at\b",
+    # every / usually / how often / last / yesterday do not fix the tense: "How often did she visit…?", "I was thinking about you yesterday" (teacher, 28 October, c-1047)
+    "Present simple": r"vegetarian|loves it|how much",
     "Present continuous": r"\bnow\b|at the moment|right now|\btoday\b|this (week|month)|look!|shh|be quiet|these days|tonight|tomorrow|so there is|haven't decided|\bat (six|\d)|very quiet",
-    "Past simple": r"yesterday|\blast\b|\bago\b|\bin (1|2)\d{3}\b|when i was|at the party|\bwere tired|didn't|after the match|the day before",
+    "Past simple": r"when i was|at the party|\bwere tired|didn't|after the match|the day before",
     "Past continuous": r"\bwhen\b|\bwhile\b",
     "Present perfect": r"\byet\b|since|\bfor \d|so far|\bever\b|\bnever\b|twice|lately|\bjust\b|already|how long",
     "Present perfect continuous": r"all day|for hours|lately|how long|since|all week|\bfor \d",

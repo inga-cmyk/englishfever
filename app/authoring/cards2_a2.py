@@ -176,7 +176,6 @@ CARDS = {
                       "ex": ["The view was [[absolutely]] amazing."]}],
             "watch": ["*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
                       "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
-                      "*very* never goes before a verb: *I like it [[very much]]* (not *I very like it*).",
                       "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"],
         },
         "lv": {
@@ -197,7 +196,6 @@ CARDS = {
                       "ex": ["The view was [[absolutely]] amazing."]}],
             "watch": ["*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
                       "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
-                      "*very* nevar likt pirms darbības vārda: *I like it [[very much]]* (nevis *I very like it*). Latviski \"man ļoti patīk\", tāpēc rodas *very like*.",
                       "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."],
         },
     },

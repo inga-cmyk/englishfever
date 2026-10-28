@@ -692,22 +692,24 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .cat b { color: var(--text); margin-top: 2px; } .cat small { color: var(--muted); font-size: .74rem; line-height: 1.25; min-height: 2.5em; }
 .ring { width: 56px; height: 56px; border-radius: 50%; margin-top: 6px; display: grid; place-items: center; font-weight: 800; color: var(--text); font-size: .85rem; }
 
-/* My learning path: a vertical line of steps; done = gold, the current one = teal with a button, combination steps marked with ⇄ */
+/* My learning path: every step opens; colour = accuracy (pink → green), grey dashed = not tried; ★ = the recommended step */
 .pathcard { margin-bottom: 14px; }
 .ppath { position: relative; margin-top: 14px; padding-left: 40px; }
 .ppath::before { content: ''; position: absolute; left: 15px; top: 10px; bottom: 10px; width: 3px; border-radius: 3px; background: var(--line); }
-.pnode { position: relative; margin-bottom: 10px; }
-.pdot { position: absolute; left: -40px; top: 10px; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: .85rem; background: var(--surface); border: 2px solid var(--line); color: var(--muted); }
+.pnode { position: relative; display: block; width: 100%; margin: 0 0 10px; padding: 0; border: 0; background: none; text-align: left; font: inherit; cursor: pointer; }
+.pdot { position: absolute; left: -40px; top: 12px; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: .85rem; background: var(--surface); border: 2.5px solid var(--line); color: var(--muted); }
+.pnode.new .pdot { border-style: dashed; }
+.pnode.refresh .pdot { opacity: .6; }
 .pdot svg { width: 16px; height: 16px; }
-.pnode.done .pdot { background: var(--gold); border-color: var(--gold-deep); color: #1E1E2C; }
-.pnode.now .pdot { background: var(--btn); border-color: var(--btn); color: #fff; box-shadow: 0 0 0 6px rgba(26,127,112,.18); }
-.pnode.check .pdot { border-color: var(--gold-deep); color: var(--gold-deep); }
-.pnode.locked { opacity: .55; }
-.pbody { display: flex; justify-content: space-between; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; background: var(--surface); }
-.pnode.now .pbody { border-color: var(--btn); box-shadow: 0 4px 14px rgba(26,127,112,.15); }
-.pbody b { color: var(--text); } .pbody small { display: block; color: var(--muted); }
-.pbody .mini { height: 6px; border-radius: 6px; background: var(--line); margin-top: 6px; overflow: hidden; width: 140px; }
-.pbody .mini i { display: block; height: 100%; background: var(--gold-deep); }
+.pbody { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; background: var(--surface); transition: border-color .12s, transform .12s; }
+.pnode:hover .pbody { border-color: var(--btn); transform: translateY(-1px); }
+.pnode.rec .pbody { border-color: var(--btn); box-shadow: 0 4px 14px rgba(26,127,112,.15); }
+.ptext { flex: 1; min-width: 0; }
+.ptext b { display: block; color: var(--text); } .ptext small { display: block; color: var(--muted); }
+.prec { display: block; font-size: .72rem; font-weight: 800; letter-spacing: .04em; color: var(--btn); text-transform: uppercase; }
+.ppct { font-weight: 800; font-size: .95rem; }
+.pbody .mini { display: block; height: 6px; border-radius: 6px; background: var(--line); margin-top: 6px; overflow: hidden; max-width: 160px; }
+.pbody .mini i { display: block; height: 100%; }
 
 /* rule card: "Watch out" = the other rules worth knowing */
 .rulecard .watch { margin: 6px 0 14px; padding: 12px 14px 4px; border-radius: 12px; background: var(--bg); border-left: 4px solid var(--gold); }

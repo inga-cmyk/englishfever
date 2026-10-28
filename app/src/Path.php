@@ -63,6 +63,7 @@ final class Path
         ['x_c23m', 'Second, third or mixed conditional', 'B2', ['cond_second', 'cond_third', 'cond_mixed'], ['c2', 'c3', 'cm']],
     ];
     private const LEVELS = ['A2', 'B1', 'B2', 'C1'];
+    private const FRESH_DAYS = 21;   // a mastered topic asks for a refresh after three weeks without practice
 
     /** Mastery of one topic from the learner's last 10 answers in it. */
     public static function mastery(int $uid, string $skill): array
@@ -80,8 +81,12 @@ final class Path
             $days[date('Y-m-d', (int) $r['created_at'])] = true;
         }
         $pct = $n ? (int) round(100 * $ok / $n) : null;
-        $done = $n >= 8 && $pct >= 80 && $recognise && $use && $typed && count($days) >= 2;
-        return ['n' => $n, 'pct' => $pct, 'done' => $done];
+        $met = $n >= 8 && $pct >= 80 && $recognise && $use && $typed && count($days) >= 2;
+        $all = Db::one('SELECT COUNT(1) AS n, SUM(correct) AS c, MAX(created_at) AS last FROM attempts WHERE user_id = ? AND skill = ?', [$uid, $skill]);
+        $fresh = $all && (int) $all['last'] > time() - self::FRESH_DAYS * 86400;
+        // accuracy for the colour: every answer in the topic; mastery fades when the topic has not been practised for a while (teacher, 28 October)
+        return ['n' => (int) ($all['n'] ?? 0), 'pct' => (int) ($all['n'] ?? 0) ? (int) round(100 * (int) $all['c'] / (int) $all['n']) : null,
+                'done' => $met && $fresh, 'stale' => $met && !$fresh];
     }
 
     public static function forUser(int $uid): array
@@ -98,12 +103,12 @@ final class Path
             $topics = array_values(array_filter($s[3], fn($t) => !empty($counts[$t])));   // only topics that have tasks
             if (!$topics) continue;
             foreach ($topics as $t) if (!isset($m[$t])) $m[$t] = self::mastery($uid, $t);
-            $n = 0; $pctSum = 0; $pctN = 0; $done = true;
-            foreach ($topics as $t) { $n += $m[$t]['n']; if ($m[$t]['pct'] !== null) { $pctSum += $m[$t]['pct']; $pctN++; } $done = $done && $m[$t]['done']; }
+            $n = 0; $pctSum = 0; $pctN = 0; $done = true; $stale = false;
+            foreach ($topics as $t) { $n += $m[$t]['n']; if ($m[$t]['pct'] !== null) { $pctSum += $m[$t]['pct']; $pctN++; } $done = $done && $m[$t]['done']; $stale = $stale || $m[$t]['stale']; }
             $needs = $s[4] ?? null;
             if ($done) $doneIds[$s[0]] = true;
             $steps[] = ['id' => $s[0], 'label' => $s[1], 'level' => $s[2], 'topics' => $topics, 'needs' => $needs, 'done' => $done,
-                        'answers' => $n, 'pct' => $pctN ? (int) round($pctSum / $pctN) : null,
+                        'answers' => $n, 'pct' => $pctN ? (int) round($pctSum / $pctN) : null, 'stale' => !$done && $stale,
                         'below' => $placedIdx > array_search($s[2], self::LEVELS, true)];
         }
         // order: the main steps, each combination step right after the last step it needs; status from the order
@@ -118,12 +123,13 @@ final class Path
                 if ($last === $i) $ordered[] = $c;
             }
         }
+        // every step can be opened; the path only recommends (teacher, 28 October): the first step in the book order that is not done
+        $labels = array_column($main, 'label', 'id');
         $current = null;
         foreach ($ordered as &$s) {
-            if ($s['needs'] && array_diff($s['needs'], array_keys($doneIds))) { $s['status'] = 'locked'; continue; }   // a combination waits for its parts
-            if ($s['done']) { $s['status'] = 'done'; continue; }
-            if ($current === null) { $current = $s['id']; $s['status'] = $s['below'] ? 'check' : 'now'; continue; }
-            $s['status'] = $s['below'] ? 'check' : 'later';
+            $s['best_after'] = $s['needs'] ? array_values(array_map(fn($id) => $labels[$id] ?? $id, array_diff($s['needs'], array_keys($doneIds)))) : [];
+            $s['status'] = $s['done'] ? 'done' : ($s['stale'] ? 'refresh' : ($s['answers'] ? 'work' : 'new'));
+            if ($current === null && !$s['done'] && !$s['best_after'] && ($s['pct'] === null || $s['pct'] < 80 || $s['stale'])) $current = $s['id'];   // weak, untried or due for a refresh
         }
         unset($s);
         return ['placed' => $placed, 'current' => $current, 'steps' => $ordered,

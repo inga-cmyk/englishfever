@@ -303,24 +303,29 @@
   function pathCard() {
     var card = h('div', { class: 'card pathcard' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, '…')));
     var all = false;
-    function start(btn, st) {
-      btn.disabled = true;
-      api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: st.status === 'check' ? 6 : 10 }).then(function (r) {
+    function start(el, st) {
+      el.disabled = true;
+      api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: (st.below && !st.answers) ? 6 : 10 }).then(function (r) {
         state.sess = newSess(r.session, r.item); location.hash = '#/session';
-      }).catch(function (e) { btn.disabled = false; UI.toast(e.message); });
+      }).catch(function (e) { el.disabled = false; UI.toast(e.message); });
     }
-    function node(st, i) {
-      var cls = 'pnode ' + st.status + (st.needs ? ' combo' : '');
-      var btn = (st.status === 'now' || (st.status === 'check' && st.id === path.current)) ? h('button', { type: 'button', class: 'btn small' }, st.status === 'check' ? 'Quick check' : 'Go', icon('arrow')) : null;
-      if (btn) btn.addEventListener('click', function () { start(btn, st); });
-      var sub = st.status === 'done' ? 'Done' + (st.pct !== null ? ' · ' + st.pct + '%' : '')
-        : st.status === 'locked' ? 'Opens when the parts are done'
-        : st.status === 'check' ? (st.id === path.current ? 'You may know it: a quick check' : 'Quick check later')
-        : st.status === 'now' ? (st.answers ? plural(st.answers, 'answer', 'answers') + ' so far' + (st.pct !== null ? ' · ' + st.pct + '%' : '') : 'Next for you')
-        : 'Later';
-      return h('div', { class: cls }, h('span', { class: 'pdot', 'aria-hidden': 'true' }, st.status === 'done' ? icon('check') : (st.needs ? '⇄' : String(st.num))),
-        h('div', { class: 'pbody' }, h('div', null, h('b', null, st.label), h('small', null, st.level + ' · ' + sub),
-          (st.status === 'now' && st.pct !== null) ? h('div', { class: 'mini' }, h('i', { style: 'width:' + Math.min(100, st.pct) + '%' })) : null), btn));
+    // accuracy as a colour: pink → orange → yellow → yellow-green → green (hue -15° … 140°); grey = not tried yet
+    function hue(p) { return 'hsl(' + ((-15 + 1.55 * p + 360) % 360) + ' 62% 46%)'; }
+    function node(st) {
+      var rec = st.id === path.current, has = st.pct !== null;
+      var col = has ? hue(st.pct) : null;
+      var sub = st.status === 'done' ? 'Mastered' : st.status === 'refresh' ? 'Time to refresh' : !has ? (st.below ? 'You may know it: a quick check' : 'Not tried yet')
+        : plural(st.answers, 'answer', 'answers');
+      var el = h('button', { type: 'button', class: 'pnode ' + st.status + (rec ? ' rec' : '') + (st.needs ? ' combo' : ''), onclick: function () { start(el, st); } },
+        h('span', { class: 'pdot', style: col ? 'border-color:' + col + ';' + (st.status === 'done' ? 'background:' + col + ';color:#fff' : 'color:' + col) : '', 'aria-hidden': 'true' },
+          (st.status === 'done' || st.status === 'refresh') ? icon('check') : (st.needs ? '⇄' : String(st.num))),
+        h('span', { class: 'pbody' },
+          h('span', { class: 'ptext' }, rec ? h('span', { class: 'prec' }, '★ Recommended') : null, h('b', null, st.label),
+            h('small', null, st.level + ' · ' + sub + (st.best_after && st.best_after.length ? ' · best after ' + st.best_after.join(', ') : '')),
+            has ? h('span', { class: 'mini' }, h('i', { style: 'width:' + Math.max(4, st.pct) + '%;background:' + col })) : null),
+          h('span', { class: 'ppct', style: col ? 'color:' + col : '' }, has ? st.pct + '%' : ''),
+          rec ? h('span', { class: 'btn small' }, (st.below && !st.answers) ? 'Quick check' : 'Go', icon('arrow')) : null));
+      return el;
     }
     var path = null;
     function draw() {
@@ -330,7 +335,7 @@
         : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci - 1 && p[1] <= ci + 3); });
       card.replaceChildren(
         h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, path.done + ' / ' + path.total + ' done')),
-        h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0], p[1]); })),
+        h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0]); })),
         h('button', { type: 'button', class: 'btn ghost small', style: 'margin-top:6px', onclick: function () { all = !all; draw(); } }, all ? 'Show less' : 'All steps'));
     }
     api('path').then(function (r) { var k = 0; r.steps.forEach(function (st) { if (!st.needs) st.num = ++k; }); path = r; draw(); }).catch(function () { card.remove(); });
@@ -1347,12 +1352,7 @@
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, s.parked ? 'Nothing to fix at your level.' : (s.n > s.correct ? 'Nothing left to fix.' : 'Nothing was missed.')), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
-    nodes.push(h('div', { class: 'grid g2' },
-      h('div', { class: 'card' }, h('h2', null, 'Tested topics'), h('div', { class: 'topicchips' }, s.by_skill.map(function (k) {
-        var good = k.correct === k.n, none = k.correct === 0;
-        return h('span', { class: good ? 'ok' : (none ? 'no' : 'mid'), title: k.correct + ' of ' + k.n + ' correct' }, good ? '✓ ' : (none ? '✗ ' : '½ '), String(k.label).replace(/\s*[(:].*$/, ''));
-      })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, plural(s.untested.length, 'topic', 'topics') + ' not covered by this test.') : null),
-      h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_cat))));
+    nodes.push(h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     return nodes;
   }

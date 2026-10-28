@@ -139,7 +139,14 @@
      "Fixed plans for the future."
     ],
     "signals": "*now, at the moment, today, this week, these days, tomorrow* (for plans)",
-    "example": "*I'm meeting Anna at five tomorrow.*"
+    "example": "*I'm meeting Anna at five tomorrow.*",
+    "watch": [
+     "Spelling: *make → making, sit → sitting, lie → lying*.",
+     "State verbs stay simple: *I need it now* (not *I'm needing it*). But *I'm thinking about it* is fine: here *think* is an action.",
+     "*always* + continuous shows annoyance: *He's always losing his keys!*",
+     "Not for permanent things: *I live in Riga* (not *I'm living in Riga*, if it is your permanent home).",
+     "Short answers: *Are you working? Yes, I am.* (not *Yes, I'm.*)"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -153,7 +160,14 @@
      "Mainīgas, norisošas situācijas.",
      "Fiksēti nākotnes plāni."
     ],
-    "signals": "*now, at the moment, today, this week, these days, tomorrow* (plāniem)"
+    "signals": "*now, at the moment, today, this week, these days, tomorrow* (plāniem)",
+    "watch": [
+     "Rakstība: *make → making, sit → sitting, lie → lying*.",
+     "Stāvokļa darbības vārdi *paliek* Present Simple: *I need it now* (nevis *I'm needing it*). Bet *I'm thinking about it* ir *pareizi*, jo *tur think* ir darbība.",
+     "*always + continuous izsaka* īgnumu: *He's always losing his keys!*",
+     "Nelieto pastāvīgām lietām: *I live in Riga* (nevis *I'm living in Riga*, ja tā ir *tava* pastāvīgā dzīvesvieta). *Latviski abos* gadījumos ir viena forma dzīvoju, tāpēc ir grūti izvēlēties.",
+     "Īsās *atbildes*: *Are you working?* *Yes, I am.* (nevis *Yes, I'm*.)"
+    ]
    }
   },
   {
@@ -282,7 +296,14 @@
      "Recent news (*just, already, yet*)."
     ],
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
-    "example": "*I have lived here for ten years.*"
+    "example": "*I have lived here for ten years.*",
+    "watch": [
+     "Never with a finished time: *I saw him yesterday* (not *I have seen him yesterday*).",
+     "*been* (went and came back) and *gone* (is still there): *She's been to Paris. She's gone to Paris.*",
+     "*yet* at the end in negatives and questions; *already* before the main verb: *I've already eaten. Have you eaten yet?*",
+     "*for* + a period, *since* + a starting point: *for five years, since 2020* (not *since five years*).",
+     "*How long have you lived here?* (not *How long do you live here?*)"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -296,7 +317,14 @@
      "Pagātnes darbība ar rezultātu tagad.",
      "Jaunākās ziņas (*just, already, yet*)."
     ],
-    "signals": "*ever, never, just, already, yet, for, since, so far, this week*"
+    "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
+    "watch": [
+     "Nekad ar pabeigtu laiku: *I saw him yesterday* (nevis *I have seen him yesterday*).",
+     "*been* (aizgāja un atgriezās) un *gone* (joprojām ir *tur*): *She's been to Paris.* *She's gone to Paris.*",
+     "*yet* teikuma beigās noliegumā un jautājumā; *already* pirms pamatdarbības vārda: *I've already eaten.* *Have you eaten yet?*",
+     "*for* + laika posms, *since* + sākuma brīdis: *for five years, since 2020* (nevis *since five years*). *Latviski* jau *piecus gadus*, tāpēc *rodas since*.",
+     "*How long have you lived here?* (nevis *How long do you live here*?). *Latviski* Cik ilgi *tu te* dzīvo? ir tagadnē, tāpēc *rodas* šī kļūda."
+    ]
    }
   },
   {
@@ -392,7 +420,14 @@
      "*be about to*: the very near future."
     ],
     "signals": "*tomorrow, next week, soon, when, as soon as, if*",
-    "example": "*Look at the clouds! It's going to rain.*"
+    "example": "*Look at the clouds! It's going to rain.*",
+    "watch": [
+     "No *will* after *when / if / as soon as*: *When I get home, I'll call you* (not *When I will get home*).",
+     "A sudden decision: *will*: *The phone's ringing. I'll get it.* (not *I'm going to get it*)",
+     "*Shall I…? / Shall we…?* for offers: *Shall I open the window?*",
+     "*I think I'll…* and *I don't think I'll…* (not *I think I won't…*).",
+     "Refusal: *won't*: *The car won't start.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -407,7 +442,14 @@
      "Present Continuous: fiksētas norunas.",
      "*be about to*: pavisam tuvā nākotne."
     ],
-    "signals": "*tomorrow, next week, soon, when, as soon as, if*"
+    "signals": "*tomorrow, next week, soon, when, as soon as, if*",
+    "watch": [
+     "Aiz *when / if / as soon as* nelieto *will*: *When I get home, I'll call you* (nevis *When I will get home*). *Latviski* kad atnākšu, tāpēc *gribas will*.",
+     "Pēkšņs lēmums: *will*: *The phone's ringing.* *I'll get it.* (nevis *I'm going to get it*)",
+     "*Shall I*…? / *Shall we*…? piedāvājumiem: *Shall I open the window?*",
+     "*I think I'll*… un *I don't think I'll*… (nevis *I think I won't*…).",
+     "*Atteikums*: *won't*: *The car won't start.*"
+    ]
    }
   },
   {
@@ -599,7 +641,14 @@
      "*must* has no past form for obligation: use *had to* (*I had to work late*). In the future we often say *will have to* (*We will have to leave early*), but *must* can also point to the future (*You must call me tomorrow*)."
     ],
     "signals": "*rule, law, allowed, necessary, advice, ability*",
-    "example": "*You must wear a seat belt, but you don't have to wear a hat.*"
+    "example": "*You must wear a seat belt, but you don't have to wear a hat.*",
+    "watch": [
+     "Never *to* after *can / should / must*: *I can go* (not *I can to go*).",
+     "No *will can*: *I will be able to come.*",
+     "*can* in the past: *could*: *I could swim when I was five.*",
+     "Requests: *Could you…?* is more polite than *Can you…?*",
+     "*Must I…?* sounds formal; *Do I have to…?* is more common."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -615,7 +664,14 @@
      "*mustn't = aizliegts*. *don't have to* = nav obligāti (*You mustn't park here.* *You don't have to pay*).",
      "*must* nav pagātnes formas pienākumam: lieto *had to* (*I had to work late*). Nākotnē bieži lieto *will have to* (*We will have to leave early*), bet *must* var norādīt arī uz nākotni (*You must call me tomorrow*)."
     ],
-    "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)"
+    "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)",
+    "watch": [
+     "Nekad to aiz *can / should / must*: *I can go* (nevis *I can to go*).",
+     "Nav *will can*: *I will be able to come.*",
+     "*can* pagātnē: *could*: *I could swim when I was five.*",
+     "Lūgumi: *Could you*…? ir pieklājīgāk nekā *Can you*…?",
+     "*Must I*…? izklausās oficiāli; biežāk saka *Do I have to*…?"
+    ]
    }
   },
   {
@@ -643,7 +699,14 @@
      "*much / a lot / a bit / slightly* + comparative says how big the difference is (*much cheaper, a bit colder*). *less ... than* and *the least* say the opposite of *more ... than* and *the most*."
     ],
     "signals": "*than, as ... as, the ... -est, in, much, a bit, the same as*",
-    "example": "*This bike is cheaper than that one, but it is not as fast as mine.*"
+    "example": "*This bike is cheaper than that one, but it is not as fast as mine.*",
+    "watch": [
+     "*than me / than him* in everyday English: *She's taller than me.*",
+     "Never both: *bigger* (not *more bigger*), *the best* (not *the most best*).",
+     "*the* + comparative, *the* + comparative: *The sooner, the better.*",
+     "*fun* is an exception: *more fun* (not *funner*). *clever, quiet* take *-er* or *more*.",
+     "*as ... as* with the same adjective: *as tall as* (not *so tall as* or *as tall like*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -659,7 +722,14 @@
      "*the same as, similar to, different from*: *It is the same colour as mine.*",
      "*much / a lot / a bit / slightly* + pārākā pakāpe parāda, cik *liela* ir atšķirība (*much cheaper, a bit colder*). *less* ... *than* un *the least* ir pretējs *more* ... *than* un *the most*."
     ],
-    "signals": "*than, as* ... *as, the* ... *-est, in, much, a bit, the same as* (nekā, *tikpat* ... kā, visā, *daudz, mazliet*, tāds *pats* kā)"
+    "signals": "*than, as* ... *as, the* ... *-est, in, much, a bit, the same as* (nekā, *tikpat* ... kā, visā, *daudz, mazliet*, tāds *pats* kā)",
+    "watch": [
+     "*than + me / him* sarunā: *She's taller than me.*",
+     "Nekad *abus* kopā: *bigger* (nevis *more bigger*), *the best* (nevis *the most best*).",
+     "*the + comparative, the + comparative*: *The sooner, the better.*",
+     "*fun* ir izņēmums: *more fun* (nevis *funner*); *clever, quiet* var gan ar *-er*, gan ar *more*.",
+     "*as* ... *as* ar to pašu īpašības vārdu: *as tall as* (nevis *so tall as* vai *as tall like*). *Latviski tikpat* garš kā, tāpēc *rodas like*."
+    ]
    }
   },
   {

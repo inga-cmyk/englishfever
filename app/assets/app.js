@@ -624,9 +624,9 @@
       h('div', { class: 'row', style: 'margin-top:12px' },
         (st === 'fixed' || st === 'dismissed')
           ? h('button', { class: 'btn ghost small', onclick: function () { setStatus('new'); } }, 'Reopen')
-          : [h('button', { class: 'btn small', onclick: function () { setStatus('fixed'); } }, 'Mark fixed'),
-             h('button', { class: 'btn ghost small', onclick: function () { setStatus('dismissed'); } }, 'Not a problem'),
-             st === 'new' ? h('button', { class: 'linkbtn small', onclick: function () { setStatus('seen'); } }, 'Mark as seen') : null]));
+          : [h('button', { class: 'btn small', title: 'The task has been corrected (by you or in a new upload). It goes back to learners.', onclick: function () { setStatus('fixed'); } }, 'Mark fixed'),
+             h('button', { class: 'btn ghost small', title: 'The task is right as it is. It goes back to learners unchanged.', onclick: function () { setStatus('dismissed'); } }, 'Not a problem'),
+             st === 'new' ? h('button', { class: 'linkbtn small', title: 'You have read it and will decide later. The task stays paused.', onclick: function () { setStatus('seen'); } }, 'Mark as seen') : null]));
   }
 
   function viewReports() {
@@ -636,6 +636,17 @@
       var seg = h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Show' }, REPORT_FILTERS.map(function (f) {
         return h('label', null, h('input', { type: 'radio', name: 'rf', value: f[0], checked: f[0] === filter, onchange: function () { state.repFilter = f[0]; viewReports(); } }), h('span', null, f[1]));
       }));
+      // one block of plain text with every report on this tab, to paste into a chat with Claude (teacher, 28 October)
+      var copyBtn = h('button', { type: 'button', class: 'btn small', disabled: !r.groups.length, onclick: function () {
+        var txt = r.groups.map(function (g, i) {
+          var t = g.task;
+          return [(i + 1) + '. ' + t.id + ' · ' + (t.skill || '') + ' · ' + (t.level || '') + ' · ' + (t.kind || ''), 'Task: ' + (t.q || ''),
+            t.key ? (t.options ? 'Correct: ' : 'Accepted: ') + t.key : null, t.options ? 'Wrong options: ' + t.options.join(' | ') : null,
+            g.reports.map(function (x) { return '- ' + (x.answer ? 'Answered "' + x.answer + '" ' + (x.correct === 1 ? '(marked right)' : '(marked wrong)') : '') + (x.comment ? ' Comment: "' + x.comment + '"' : ''); }).join('\n')].filter(Boolean).join('\n');
+        }).join('\n\n');
+        (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(function () { UI.toast('Copied ' + plural(r.groups.length, 'report', 'reports') + '. Paste it into the chat.'); })
+          .catch(function () { var ta = h('textarea', { style: 'width:100%;height:240px' }); ta.value = txt; UI.modal(h('div', null, h('h2', null, 'Copy this text'), ta)); ta.select(); });
+      } }, 'Copy for Claude');
       var list = r.groups.length ? r.groups.map(reportCard)
         : [h('div', { class: 'card empty' }, 'Nothing here.')];
       var hard = r.hard.length ? [h('h2', { style: 'margin:28px 0 6px' }, 'Often answered wrongly'),
@@ -643,7 +654,8 @@
         r.hard.map(function (x) { return h('div', { class: 'card pad-s rep' }, taskHead(x.task), h('div', { class: 'small muted' }, x.pct + '% wrong · ' + x.n + ' answers')); })] : [];
       show(h('div', null,
         h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Reported questions')),
-          h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/reports-export' }, 'Download CSV')),
+          h('span', { class: 'row', style: 'gap:8px' }, copyBtn, h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/reports-export' }, 'Download CSV'))),
+        h('p', { class: 'small muted', style: 'margin:0 0 12px' }, h('b', null, 'Mark fixed'), ': the task is corrected · ', h('b', null, 'Not a problem'), ': the task is right · ', h('b', null, 'Mark as seen'), ': decide later (the task stays paused).'),
         h('div', { style: 'margin-bottom:16px' }, seg), list, hard));
     }).catch(fail);
   }

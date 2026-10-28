@@ -408,13 +408,13 @@ html.dnd-dragging, html.dnd-dragging * { user-select: none; -webkit-user-select:
 .dnd-line.hover, .slot.hover, .dnd-bank.hover { border-color: var(--btn); background: var(--gold-pale); }
 .dnd-line.ok, .slot.ok { border-color: var(--good); background: var(--good-bg); }
 .dnd-line.bad, .slot.bad { border-color: var(--bad); background: var(--bad-bg); }
-.slot { display: inline-flex; align-items: center; justify-content: center; min-width: 8em; min-height: 44px; vertical-align: middle; margin: 2px 4px; padding: 3px; border: 2px dashed var(--line); border-radius: 12px; background: var(--surface); }
+.slot { display: inline-flex; align-items: center; justify-content: center; min-width: 4.5em; min-height: 36px; vertical-align: middle; margin: 2px 4px; padding: 2px; border: 2px dashed var(--gold-deep); border-radius: 10px; background: var(--gold-pale); }   /* smaller and easier to see on the card (teacher, 28 October) */
 .slot.filled { border-style: solid; }
 .slot .chip { padding: 5px 12px; }
 .dnd-sentence .slot:empty::before { content: '…'; color: var(--muted); }
 .dnd-rows { display: grid; gap: 10px; margin-bottom: 14px; }
 .dnd-row { display: grid; grid-template-columns: 1fr minmax(190px, 1fr); gap: 12px; align-items: center; }
-.dnd-row .slot { display: flex; justify-content: flex-start; margin: 0; padding: 5px 8px; min-height: 50px; }
+.dnd-row .slot { display: flex; justify-content: flex-start; margin: 0; padding: 5px 8px; min-height: 50px; background: var(--surface); border-color: var(--line); }
 .dnd-row .slot:empty::before { content: 'Drop here'; color: var(--muted); }
 .dnd-left { font-weight: 600; color: var(--text); }
 @media (max-width: 600px) { .dnd-row { grid-template-columns: 1fr; gap: 6px; } }

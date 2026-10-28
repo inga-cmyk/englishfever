@@ -652,7 +652,7 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 /* rule card formulas: the pattern as blocks (forms gold, slots grey) and the example under it */
 .formulas { display: grid; gap: 12px; margin: 8px 0 14px; }
 .f-row { display: grid; gap: 6px; }
-.f-plain { color: var(--text-soft); }
+.f-plain { display: block; color: var(--text-soft); }
 .f-label { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 .f-blocks { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .f-blk { padding: 5px 10px; border-radius: 8px; background: var(--bg); border: 1px solid var(--line); color: var(--text); font-size: .9rem; }

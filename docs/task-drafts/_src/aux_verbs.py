@@ -49,12 +49,12 @@ T.mcq("A2.2", "Choose the correct short answer: 'Have you finished?' 'Yes, I ___
 
 # ── write the missing word ──
 GAP_Q = "Write the missing word (am, is, are, do, does, did, have or has): "
-T.gap("A2.1", GAP_Q + "___ your brother play football?", "Does", DOES)
+T.gap("A2.1", GAP_Q + "___ your brother play football?", "Does | Did", DOES)   # Did is right too: no time word (teacher, 28 October)
 T.gap("A2.1", GAP_Q + "___ you at work now?", "Are", BE)
 T.gap("A2.2", GAP_Q + "___ you finish work early yesterday?", "Did", DID)
 T.gap("A2.2", GAP_Q + "___ she ever eaten sushi?", "Has", HAVE)
-T.gap("A2.2", GAP_Q + "Why ___ you laughing?", "are", BE)
-T.gap("A2.2", GAP_Q + "What time ___ the shop open?", "does", DOES)
+T.gap("A2.2", GAP_Q + "Why ___ you laughing?", "are | were", BE)   # were is right too
+T.gap("A2.2", GAP_Q + "What time ___ the shop close on Saturdays?", "does | did", DOES); replaces(GAP_Q + "What time ___ the shop open?")   # "What time is the shop open?" is right too: a new sentence
 T.gap("B1.1", GAP_Q + "___ you been waiting long?", "Have", HAVE)
 T.gap("B1.1", GAP_Q + "Where ___ you go on holiday last year?", "did", DID)
 

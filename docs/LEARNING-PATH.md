@@ -9,6 +9,8 @@ How the path uses this order (agreed 28 October):
 - **Every session**: Second Chance that is due, then 2–3 tasks for **lasting mistakes** (an error type from `ERROR-TYPES.md` seen again and again, or on several days; it stays until right on three separate days), then the **current step**, then one look at the next level.
 - **No time promises** until the study data show how many sessions people really need.
 
+**Combination steps** (teacher, 28 October): when each tense in a pair is done, a combination step opens where the forms are mixed and chosen by meaning. It is a practice session with both topics; about a third of its tasks compare them (the *also topics* column in the drafts). Each pair needs its own comparison tasks (see the last table).
+
 ## A2
 
 | # | Step | App topic |
@@ -23,9 +25,9 @@ How the path uses this order (agreed 28 October):
 | 8 | Prepositions of time and place (in, on, at) | prep_time_place |
 | 9 | was / were | past_simple |
 | 10 | Past simple: regular, irregular, did / didn't, questions | past_simple |
+| 10a | Past continuous (I was working) | past_continuous |
 | 11 | Question word order, subject and object questions | subject_object_q |
 | 12 | Present continuous (now; state verbs) | present_continuous |
-| 13 | Present simple or present continuous | present_simple, present_continuous |
 | 14 | Comparatives and superlatives | comparison |
 | 15 | should / must / have to | modal_verbs |
 | 16 | Future: be going to, will for offers | future |
@@ -39,10 +41,10 @@ How the path uses this order (agreed 28 October):
 
 | # | Step | App topic |
 |---|------|-----------|
-| 22 | Past simple and past continuous (when / while) | past_continuous |
 | 23 | used to / be used to | used_to |
 | 24 | Present perfect: for / since, been / gone, or past simple | present_perfect |
 | 25 | Present perfect continuous | present_perfect_continuous |
+| 25a | Present perfect simple or continuous | present_perfect, present_perfect_continuous |
 | 26 | Articles in full (the / no article) | articles |
 | 27 | Quantity: much / many, a few / a little, enough | quantity |
 | 28 | Someone, anything, nobody | indefinite_pronouns |
@@ -69,7 +71,6 @@ How the path uses this order (agreed 28 October):
 
 | # | Step | App topic |
 |---|------|-----------|
-| 47 | Present perfect simple or continuous | present_perfect, present_perfect_continuous |
 | 48 | Reporting verbs (suggest, admit, promise) | rep_verbs |
 | 49 | Indirect questions, more uses (I don't know what to do) | ind_advanced |
 | 50 | Mixed conditionals | cond_mixed |
@@ -78,3 +79,18 @@ How the path uses this order (agreed 28 October):
 | 53 | Past modals of deduction (must have, can't have) | *no topic yet* |
 | 54 | Passive for beliefs (It is thought that) | *no topic yet* |
 | 55 | Participle clauses, cleft sentences | *no topic yet* |
+
+## Combination steps (open when both parts are done)
+
+| Step | Opens after | Topics mixed | Comparison tasks now |
+|------|-------------|--------------|----------------------|
+| Present simple or present continuous | 1–2, 12 | present_simple, present_continuous | some (contrast-1.csv) |
+| Past simple or past continuous (when / while) | 10, 10a | past_simple, past_continuous | to write |
+| Present perfect or past simple | 17, 10 | present_perfect, past_simple | some |
+| Future forms: will, going to, present continuous | 16, 30 | future, present_continuous | to write |
+| Zero, first and second conditional | 18, 33 | cond_zero, cond_first, cond_second | some |
+| Present perfect simple or continuous | 24, 25 | present_perfect, present_perfect_continuous | to write |
+| Narrative tenses: past simple, past continuous, past perfect | 10, 10a, 35 | past_simple, past_continuous, past_perfect | to write |
+| Active or passive (all tenses) | 21, 36 | the passive topics with their active tenses | to write |
+| Reported speech: statements, questions, verbs | 38, 39, 48 | rep_statements, rep_questions, rep_verbs | some |
+| Second, third and mixed conditionals | 33, 46, 50 | cond_second, cond_third, cond_mixed | some |

@@ -39,7 +39,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 155, 'Unexpected correction count');
+check(count($retired) === 158, 'Unexpected correction count');   // +3: reported questions, what to do (28 October)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

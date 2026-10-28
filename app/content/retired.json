@@ -2234,6 +2234,55 @@
 "hints": []
 },
 {
+"id": "rq-B22-1a",
+"skill": "rep_questions",
+"level": "B2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which report is correct? 'What should I do?' he asked me.",
+"correct": "He asked me what to do.",
+"wrong": [
+"He asked me what should he do.",
+"He asked me what he does.",
+"He asked me what to doing."
+],
+"why": "A wh-question with *should* can be reported with a question word + *to* + base verb: *what to do.*",
+"wrong_why": {}
+},
+{
+"id": "rq-B22-2a",
+"skill": "rep_questions",
+"level": "B2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "What is the difference? A: 'She asked me what to do.' B: 'She asked me what she should do.'",
+"correct": "There is no difference in meaning. A is shorter.",
+"wrong": [
+"A is about the past and B about the future.",
+"A is a request and B is a question.",
+"B is wrong."
+],
+"why": "Both are correct. The to-infinitive form is shorter and common in careful English.",
+"wrong_why": {}
+},
+{
+"id": "rq-B22-3a",
+"skill": "rep_questions",
+"level": "B2.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report this: 'Where should we meet?' they asked.",
+"answers": [
+[
+"They asked where to meet.",
+"They asked where they should meet.",
+"They asked where we should meet."
+]
+],
+"why": "Question word + to-infinitive, or question word + subject + *should.*",
+"hints": []
+},
+{
 "id": "rv-B22-3a",
 "skill": "rep_verbs",
 "level": "B2.2",

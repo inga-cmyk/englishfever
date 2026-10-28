@@ -436,4 +436,15 @@ def revise(original):
     report_fix('ia-C11-3a',
         q="Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
         why="Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.")
+    # what to do is not the same as what she should do (teacher, 28 October): no task may say they mean the same
+    report_fix('rq-B22-1a',
+        why="A reported question has statement word order, so *what should he do* is wrong. The report *what to do* is correct here; *what he should do* is also possible.")
+    report_fix('rq-B22-2a',
+        q="'Where should I park?' she asked me. Which report is correct?",
+        correct='She asked me where she should park.',
+        wrong=['She asked me where should she park.', 'She asked me where she should to park.', 'She asked me where did she should park.'],
+        why='Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.')
+    report_fix('rq-B22-3a',
+        answers=[['They asked where they should meet.', 'They asked where to meet.']],
+        why='Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.')
     return items

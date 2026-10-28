@@ -6882,7 +6882,7 @@
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rq-B22-1a",
+"id": "rq-B22-1a-r2",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 1,
@@ -6894,27 +6894,27 @@
 "He asked me what he does.",
 "He asked me what to doing."
 ],
-"why": "A wh-question with *should* can be reported with a question word + *to* + base verb: *what to do.*",
+"why": "A reported question has statement word order, so *what should he do* is wrong. The report *what to do* is correct here; *what he should do* is also possible.",
 "wrong_why": {}
 },
 {
-"id": "rq-B22-2a",
+"id": "rq-B22-2a-r2",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "What is the difference? A: 'She asked me what to do.' B: 'She asked me what she should do.'",
-"correct": "There is no difference in meaning. A is shorter.",
+"q": "'Where should I park?' she asked me. Which report is correct?",
+"correct": "She asked me where she should park.",
 "wrong": [
-"A is about the past and B about the future.",
-"A is a request and B is a question.",
-"B is wrong."
+"She asked me where should she park.",
+"She asked me where she should to park.",
+"She asked me where did she should park."
 ],
-"why": "Both are correct. The to-infinitive form is shorter and common in careful English.",
+"why": "Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.",
 "wrong_why": {}
 },
 {
-"id": "rq-B22-3a",
+"id": "rq-B22-3a-r2",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 3,
@@ -6922,12 +6922,11 @@
 "q": "Report this: 'Where should we meet?' they asked.",
 "answers": [
 [
-"They asked where to meet.",
 "They asked where they should meet.",
-"They asked where we should meet."
+"They asked where to meet."
 ]
 ],
-"why": "Question word + to-infinitive, or question word + subject + *should.*",
+"why": "Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.",
 "hints": []
 },
 {

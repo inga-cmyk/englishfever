@@ -701,7 +701,7 @@ final class Engine
 
     private static function buildSummary(array $ses): array
     {
-        $rows = Db::all('SELECT skill, level, bloom, correct FROM attempts WHERE psession_id = ?', [$ses['id']]);
+        $rows = Db::all('SELECT item_id, skill, level, bloom, correct FROM attempts WHERE psession_id = ?', [$ses['id']]);
         $bySkill = [];
         $byBloom = [];
         foreach ($rows as $r) {
@@ -731,7 +731,7 @@ final class Engine
         $acc = $ses['n'] ? round(100 * $ses['n_correct'] / $ses['n']) : 0;
         $out = [
             'session_id' => (int) $ses['id'], 'mode' => $ses['mode'], 'n' => $ses['n'], 'correct' => $ses['n_correct'], 'accuracy' => $acc,
-            'xp' => $ses['xp'], 'by_skill' => $skills, 'by_bloom' => $bloomOut, 'finished' => $ses['ended_at'] !== null,
+            'xp' => $ses['xp'], 'by_skill' => $skills, 'by_bloom' => $bloomOut, 'by_cat' => Content::catCounts($rows), 'finished' => $ses['ended_at'] !== null,
         ];
         if ($ses['mode'] !== 'placement') {
             $m = Mistakes::scan((int) $ses['user_id']);

@@ -145,6 +145,7 @@ final class Stats
             'week' => $week,
             'skills' => self::skillRows($uid),
             'bloom' => self::bloomRows($uid),
+            'cats' => Content::catCounts(Db::all('SELECT item_id, correct FROM attempts WHERE user_id = ? ORDER BY id DESC LIMIT 2000', [$uid])),   // three kinds of task for the learner
             'placement' => $placement,
             'pulse' => self::pulse(),
             'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed'], 'review' => min(2, count(Mistakes::reviewDue($uid, $m)))]; })(),

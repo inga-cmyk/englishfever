@@ -73,8 +73,8 @@ final class Path
         foreach ($rows as $r) {
             if (!(int) $r['correct']) continue;
             $ok++;
-            if ((int) $r['bloom'] <= 2) $recognise = true; else $use = true;
             $it = Content::item((string) $r['item_id']);
+            if (Content::taskCat($it) === 'recognise') $recognise = true; else $use = true;
             if ($it && in_array($it['kind'], ['text', 'write'], true)) $typed = true;
             if ($it && $it['kind'] === 'gap' && empty($it['bank'])) $typed = true;
             $days[date('Y-m-d', (int) $r['created_at'])] = true;

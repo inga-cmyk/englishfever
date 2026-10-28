@@ -479,7 +479,7 @@
       var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
       if (started) {   // progress above the topics (teacher, 27 October)
         nodes.push(foldCard('progress', 'My progress', h('span', { class: 'fold-icons', 'aria-label': 'this week and thinking skills' }, icon('clock'), icon('up')), function () {
-          return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'How you do'), catBars(d.bloom)));
+          return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'How you do'), catBars(d.cats)));
         }));
       }
       if (started) nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
@@ -540,11 +540,12 @@
   }
 
   /** Learners see three plain kinds of task instead of six thinking levels (teacher, 28 October): Recognise (levels 1-2), Use (3), Write (4-6). Teachers keep the six levels. */
-  var CATS = [['Recognise', '👀', 'choose, match', [1, 2]], ['Use', '🧩', 'fill in, put in order', [3]], ['Write', '✍️', 'correct, rewrite', [4, 5, 6]]];
-  function catOf(bloom) { return CATS.find(function (c) { return c[3].indexOf(+bloom) >= 0; }) || CATS[0]; }
+  // by the kind of task, not the thinking level (a "choose the correct sentence" task is Recognise even when it is a level-5 task; teacher, 28 October)
+  var CATS = [['Recognise', '👀', 'choose, match', 'recognise'], ['Use', '🧩', 'fill in, put in order', 'use'], ['Write', '✍️', 'correct, rewrite', 'write']];
+  function catOf(kind) { return kind === 'mcq' || kind === 'match' ? CATS[0] : (kind === 'text' || kind === 'write' ? CATS[2] : CATS[1]); }
   function catBars(b) {
     return h('div', { class: 'cats' }, CATS.map(function (c) {
-      var n = 0, ok = 0; c[3].forEach(function (i) { var v = (b || {})[String(i)]; if (v) { n += v.n; ok += v.correct; } });
+      var v = (b || {})[c[3]] || { n: 0, correct: 0 }, n = v.n, ok = v.correct;
       var p = n ? pct(ok, n) : null;
       return h('div', { class: 'cat' }, h('div', { class: 'cat-em', 'aria-hidden': 'true' }, c[1]), h('b', null, c[0]), h('small', null, c[2]),
         h('div', { class: 'ring', style: 'background:radial-gradient(var(--surface) 0 57%, transparent 58%), conic-gradient(var(--btn) 0 ' + (p || 0) + '%, var(--line) 0)' }, p === null ? '–' : p + '%'));
@@ -1179,7 +1180,7 @@
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
         h('div', { class: 'meta' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
-          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.bloom)[1] + ' ' + catOf(it.bloom)[0]), taskIdEl, reportBtn),
+          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, reportBtn),
         qEl, area, h('div', { class: 'row', style: 'gap:18px' }, submit, ses.mode === 'placement' || rev ? null : skipBtn), feedback)));
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
       var a = rev.ans;
@@ -1286,7 +1287,7 @@
         return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))),
           h('div', { class: 'meter gold', style: 'margin:6px 0 3px' }, h('i', { style: 'width:' + pct(k.correct, k.n) + '%' })), h('span', { class: 'small muted' }, k.correct + ' of ' + k.n + ' correct'));
       }))),
-      h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_bloom))));
+      h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_cat))));
     var steps = s.next || [];
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'What next?'),
       h('ul', { class: 'clean' }, steps.length ? steps.map(function (n) {
@@ -1350,7 +1351,7 @@
         var good = k.correct === k.n, none = k.correct === 0;
         return h('span', { class: good ? 'ok' : (none ? 'no' : 'mid'), title: k.correct + ' of ' + k.n + ' correct' }, good ? '✓ ' : (none ? '✗ ' : '½ '), String(k.label).replace(/\s*[(:].*$/, ''));
       })), (s.untested && s.untested.length) ? h('p', { class: 'small muted', style: 'margin-top:10px' }, plural(s.untested.length, 'topic', 'topics') + ' not covered by this test.') : null),
-      h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_bloom))));
+      h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_cat))));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     return nodes;
   }

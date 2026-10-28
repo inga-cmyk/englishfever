@@ -129,6 +129,22 @@ final class Content
         return ['all' => $all, 'by_skill' => $by];
     }
 
+    /** The kind of task a learner sees (teacher, 28 October): recognise = choose or match, use = fill in, word bank, word order, write = typed sentence or open writing. */
+    public static function taskCat(?array $it): string
+    {
+        if (!$it) return 'recognise';
+        if (in_array($it['kind'], ['mcq', 'match'], true)) return 'recognise';
+        if (in_array($it['kind'], ['text', 'write'], true)) return 'write';
+        return 'use';   // gap (typed word or word bank), order
+    }
+    /** Right / all answers per kind of task, from attempts rows that have item_id and correct. */
+    public static function catCounts(array $rows): array
+    {
+        $out = ['recognise' => ['n' => 0, 'correct' => 0], 'use' => ['n' => 0, 'correct' => 0], 'write' => ['n' => 0, 'correct' => 0]];
+        foreach ($rows as $r) { $c = self::taskCat(self::item((string) $r['item_id'])); $out[$c]['n']++; $out[$c]['correct'] += (int) $r['correct']; }
+        return $out;
+    }
+
     public static function item(string $id): ?array
     {
         self::items();

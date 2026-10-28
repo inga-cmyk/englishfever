@@ -175,11 +175,13 @@ for it in dsl.ITEMS:
     for key in ("hints", "must"):
         if it.get(key):
             it[key] = [[h[0], mk_en(h[1])] + ([mk_lv(h[2])] if len(h) > 2 else []) for h in it[key]]
+import watch  # noqa: E402
 RULES_MARKED = {}
 for sid, r in RULES.items():
     RULES_MARKED[sid] = {"form": [mk_en(x) for x in r["form"]], "use": [mk_en(x) for x in r["use"]],
                          "signals": mk_en(r["signals"]), "example": mk_en(r["example"]) if r.get("example") else r.get("example")}
-    if r.get("watch"): RULES_MARKED[sid]["watch"] = [mk_en(x) for x in r["watch"]]   # "Watch out": the other rules worth knowing (teacher, 28 October)
+    _w = r.get("watch") or watch.WATCH.get(sid, {}).get("en")
+    if _w: RULES_MARKED[sid]["watch"] = [mk_en(x) for x in _w]   # "Watch out": the other rules worth knowing (teacher, 28 October; watch.py)
 import b1_topics  # noqa: E402
 LV_RULES_MARKED = {}
 for sid, r in lv_data.LV_RULES.items():
@@ -188,7 +190,8 @@ for sid, r in lv_data.LV_RULES.items():
         italics.LV_ASCII |= b1_topics.LV_WORDS
     try:
         LV_RULES_MARKED[sid] = {"form": [mk_lv(x) for x in r["form"]], "use": [mk_lv(x) for x in r["use"]], "signals": mk_lv(r["signals"])}
-        if r.get("watch"): LV_RULES_MARKED[sid]["watch"] = [mk_lv(x) for x in r["watch"]]
+        _w = r.get("watch") or watch.WATCH.get(sid, {}).get("lv")
+        if _w: LV_RULES_MARKED[sid]["watch"] = [mk_lv(x) for x in _w]
     finally:
         italics.LV_ASCII.clear(); italics.LV_ASCII.update(_saved)
 for key, line in EN_INDEX.items():

@@ -89,7 +89,14 @@ return json_decode(<<<'EF_JSON_END'
      "Timetables (*the train leaves at 7.45*)."
     ],
     "signals": "*always, usually, often, sometimes, never, every day*",
-    "example": "*She starts work at eight every day.*"
+    "example": "*She starts work at eight every day.*",
+    "watch": [
+     "Spelling: *watch → watches, go → goes, study → studies, play → plays*; *have → has*.",
+     "*does* + base verb: *Does she work?* (not *Does she works?*); *She doesn't work.*",
+     "Short answers: *Do you like it? Yes, I do. / No, I don't.*",
+     "State verbs (*know, like, want, need, believe*) stay simple: *I know* (not *I'm knowing*).",
+     "*Who* as the subject: no *do*: *Who lives here?* (not *Who does live here?*)"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -103,7 +110,14 @@ return json_decode(<<<'EF_JSON_END'
      "Vienmēr patiesi fakti.",
      "Saraksti un grafiki (*the train leaves at 7.45*)."
     ],
-    "signals": "*always, usually, often, sometimes, never, every day* (vienmēr, parasti, bieži, dažreiz, nekad, katru dienu)"
+    "signals": "*always, usually, often, sometimes, never, every day* (vienmēr, parasti, bieži, dažreiz, nekad, katru dienu)",
+    "watch": [
+     "Rakstība: *watch → watches, go → goes, study → studies, play → plays; have → has*.",
+     "*does* + pamatforma: *Does she work?* (nevis *Does she works*?); *She doesn't work.*",
+     "Īsās *atbildes*: *Do you like it?* *Yes, I do.* / No, *I don't.*",
+     "Stāvokļa darbības vārdi (*know, like, want, need, believe*) *paliek* Present Simple: *I know* (nevis *I'm knowing*).",
+     "Ja *Who* ir teikuma priekšmets, *do nevajag*: *Who lives here?* (nevis *Who does live here*?)"
+    ]
    }
   },
   {
@@ -1048,7 +1062,14 @@ return json_decode(<<<'EF_JSON_END'
      "No article: general things, meals, and places used for their purpose (*have breakfast, go to school, at work*)."
     ],
     "signals": "*first mention, already mentioned, the only one, in general*",
-    "example": "*I bought a jacket and a hat. The jacket was cheap, but I love hats.*"
+    "example": "*I bought a jacket and a hat. The jacket was cheap, but I love hats.*",
+    "watch": [
+     "Jobs take *a / an*: *She's a nurse.*",
+     "*a / an* by sound: *a university, a European, an hour, an MBA*.",
+     "No article: meals, sports, languages, *by bus*: *have lunch, play football, speak English*.",
+     "*the* the second time: *I saw a dog. The dog was huge.*",
+     "*the* with instruments and some places: *play the piano, go to the cinema, listen to the radio*."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1062,7 +1083,14 @@ return json_decode(<<<'EF_JSON_END'
      "*the* lieto arī ar vispārākās pakāpes formu, upēm, jūrām un dažām valstīm (*the best, the Baltic Sea, the UK*).",
      "Bez artikula: vispārīgas lietas, ēdienreizes un vietas ar to parasto nozīmi (*have breakfast, go to school, at work*)."
     ],
-    "signals": "*first mention, already mentioned, the only one, in general* (pirmoreiz, jau minēts, vienīgais, vispārīgi)"
+    "signals": "*first mention, already mentioned, the only one, in general* (pirmoreiz, jau minēts, vienīgais, vispārīgi)",
+    "watch": [
+     "Profesijām vajag *a / an*: *She's a nurse.* *Latviski* artikula nav, tāpēc to bieži izlaiž.",
+     "*a / an* pēc skaņas: *a university, a European, an hour, an MBA*.",
+     "Bez artikula: ēdienreizes, *sporta* veidi, *valodas, by bus*: *have lunch, play football, speak English*.",
+     "*the*, kad *pieminam otro reizi*: *I saw a dog.* *The dog was huge.*",
+     "*the* ar mūzikas *instrumentiem* un dažām vietām: *play the piano, go to the cinema, listen to the radio*."
+    ]
    }
   },
   {
@@ -1087,7 +1115,14 @@ return json_decode(<<<'EF_JSON_END'
      "*too much / too many* is a problem. *not enough* = less than we need."
     ],
     "signals": "*how many, how much, a few, a little, enough, too much, too many*",
-    "example": "*There isn't much time and there are too many things to do.*"
+    "example": "*There isn't much time and there are too many things to do.*",
+    "watch": [
+     "Uncountable + singular verb: *There is a lot of traffic. The money is on the table.*",
+     "*some* in questions when we offer or ask: *Would you like some coffee? Can I have some water?*",
+     "*any* = it doesn't matter which: *Take any seat.*",
+     "*no* = *not any*: *There's no milk.* = *There isn't any milk.*",
+     "*much* in positive sentences sounds formal: *a lot of time* is more natural than *much time*."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1102,7 +1137,14 @@ return json_decode(<<<'EF_JSON_END'
      "*a few / a little = neliels* daudzums, pozitīvs vērtējums. *few / little* = gandrīz nav, negatīvs vērtējums.",
      "*too much / too many* ir problēma. *not enough* = mazāk, nekā vajag."
     ],
-    "signals": "*how many, how much, a few, a little, enough, too much, too many* (cik, mazliet, pietiekami, par daudz)"
+    "signals": "*how many, how much, a few, a little, enough, too much, too many* (cik, mazliet, pietiekami, par daudz)",
+    "watch": [
+     "Nesaskaitāms + vienskaitlis: *There is a lot of traffic.* *The money is on the table.*",
+     "*some* jautājumā, kad piedāvājam vai lūdzam: *Would you like some coffee?* *Can I have some water?*",
+     "*any = vienalga* kurš: *Take any seat.*",
+     "no = *not any*: *There's* no *milk*. = *There isn't any milk.*",
+     "*much* apstiprinājuma teikumā izklausās oficiāli: *a lot of time* ir dabiskāk nekā *much time*."
+    ]
    }
   },
   {
@@ -1547,7 +1589,14 @@ return json_decode(<<<'EF_JSON_END'
      "Extreme adjectives (*perfect, amazing, exhausted*) take *absolutely / completely*, not *very*."
     ],
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely*",
-    "example": "*He drives carefully, and he never drives too fast.*"
+    "example": "*He drives carefully, and he never drives too fast.*",
+    "watch": [
+     "Frequency adverbs go after the first auxiliary: *I have never been there. She can always help.*",
+     "Not between the verb and the object: *I like it very much* (not *I like very much it*).",
+     "*good → well*: *She speaks English well.* *fast*, not *fastly*.",
+     "*hard* = with effort, *hardly* = almost not; *late* = not on time, *lately* = recently.",
+     "After *be, look, feel, seem, sound*: an adjective: *You look tired* (not *tiredly*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1562,7 +1611,14 @@ return json_decode(<<<'EF_JSON_END'
      "*hard* = ar pūlēm (*work hard*), *hardly* = gandrīz nē (*I can hardly see*). *late* = novēloti, *lately = nesen*.",
      "Ar galējiem īpašības vārdiem (*perfect, amazing, exhausted*) lieto *absolutely / completely*, nevis *very*."
     ],
-    "signals": "*-ly, always, never, very, quite, too, enough, absolutely* (vienmēr, nekad, ļoti, *diezgan*, pārāk, pietiekami)"
+    "signals": "*-ly, always, never, very, quite, too, enough, absolutely* (vienmēr, nekad, ļoti, *diezgan*, pārāk, pietiekami)",
+    "watch": [
+     "Biežuma apstākļa vārdi ir aiz pirmā palīgdarbības vārda: *I have never been there.* *She can always help.*",
+     "Ne starp darbības vārdu un papildinātāju: *I like it very much* (nevis *I like very much it*). *Latviski* vārdu secība ir brīvāka.",
+     "*good → well*: *She speaks English well.* *fast*, nevis *fastly*.",
+     "*hard* = ar piepūli, *hardly* = gandrīz *nemaz; late* = vēlu, *lately* = pēdējā laikā.",
+     "Aiz *be, look, feel, seem, sound* ir īpašības vārds: *You look tired* (nevis *tiredly*)."
+    ]
    }
   },
   {
@@ -1746,7 +1802,14 @@ return json_decode(<<<'EF_JSON_END'
      "These words take a plural verb: *The children are tired. People like it. My feet hurt.*"
     ],
     "signals": "*child, person, man, woman, tooth, foot, mouse, police*",
-    "example": "*One mouse is cute, but ten mice are a problem!*"
+    "example": "*One mouse is cute, but ten mice are a problem!*",
+    "watch": [
+     "*-s, -sh, -ch, -x* + *-es*: *buses, dishes, watches, boxes*.",
+     "Consonant + *-y* → *-ies*: *city → cities*; vowel + *-y*: *day → days*.",
+     "*-f / -fe* → *-ves*: *knife → knives, life → lives, wife → wives*.",
+     "Same in both: *sheep, fish*. Always plural: *jeans, trousers, glasses, scissors*.",
+     "No plural (uncountable): *advice, information, furniture, news*."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1757,7 +1820,14 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Ar šiem vārdiem lieto daudzskaitļa darbības vārdu: *The children are tired.* *People like it.* *My feet hurt.*"
     ],
-    "signals": "*child, person*, man, *woman, tooth, foot, mouse, police* (bērns, cilvēks, vīrietis, *sieviete, zobs*, pēda, *pele, policija*)"
+    "signals": "*child, person*, man, *woman, tooth, foot, mouse, police* (bērns, cilvēks, vīrietis, *sieviete, zobs*, pēda, *pele, policija*)",
+    "watch": [
+     "*-s, -sh, -ch, -x + -es*: *buses, dishes, watches, boxes*.",
+     "Līdzskanis + *-y → -ies*: *city → cities; patskanis + -y*: *day → days*.",
+     "*-f / -fe → -ves*: *knife → knives, life → lives, wife → wives*.",
+     "Vienādi *abos* skaitļos: *sheep, fish*. Vienmēr daudzskaitlī: *jeans, trousers, glasses, scissors*.",
+     "Bez daudzskaitļa: *advice, information, furniture, news*. *Latviski padomi*, mēbeles, ziņas ir daudzskaitlī, *angliski* nē."
+    ]
    }
   },
   {

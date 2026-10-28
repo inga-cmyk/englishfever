@@ -708,3 +708,9 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .pbody b { color: var(--text); } .pbody small { display: block; color: var(--muted); }
 .pbody .mini { height: 6px; border-radius: 6px; background: var(--line); margin-top: 6px; overflow: hidden; width: 140px; }
 .pbody .mini i { display: block; height: 100%; background: var(--gold-deep); }
+
+/* rule card: "Watch out" = the other rules worth knowing */
+.rulecard .watch { margin: 6px 0 14px; padding: 12px 14px 4px; border-radius: 12px; background: var(--bg); border-left: 4px solid var(--gold); }
+.rulecard .watch b { color: var(--text); }
+.rulecard .watch ol { margin: 6px 0 8px 18px; padding: 0; }
+.rulecard .watch li { margin-bottom: 6px; }

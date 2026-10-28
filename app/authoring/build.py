@@ -179,6 +179,7 @@ RULES_MARKED = {}
 for sid, r in RULES.items():
     RULES_MARKED[sid] = {"form": [mk_en(x) for x in r["form"]], "use": [mk_en(x) for x in r["use"]],
                          "signals": mk_en(r["signals"]), "example": mk_en(r["example"]) if r.get("example") else r.get("example")}
+    if r.get("watch"): RULES_MARKED[sid]["watch"] = [mk_en(x) for x in r["watch"]]   # "Watch out": the other rules worth knowing (teacher, 28 October)
 import b1_topics  # noqa: E402
 LV_RULES_MARKED = {}
 for sid, r in lv_data.LV_RULES.items():
@@ -187,6 +188,7 @@ for sid, r in lv_data.LV_RULES.items():
         italics.LV_ASCII |= b1_topics.LV_WORDS
     try:
         LV_RULES_MARKED[sid] = {"form": [mk_lv(x) for x in r["form"]], "use": [mk_lv(x) for x in r["use"]], "signals": mk_lv(r["signals"])}
+        if r.get("watch"): LV_RULES_MARKED[sid]["watch"] = [mk_lv(x) for x in r["watch"]]
     finally:
         italics.LV_ASCII.clear(); italics.LV_ASCII.update(_saved)
 for key, line in EN_INDEX.items():

@@ -1685,28 +1685,44 @@
    ],
    "rule": {
     "form": [
-     "One person or thing (*he, she, it, my friend, everybody, nobody*) + verb with *-s*: *My friend lives in Riga. Everybody knows.*",
-     "More than one (*they, my friends, Tom and Anna*) + verb without *-s*: *My friends live in Riga.*",
-     "*is / does / has* for one, *are / do / have* for more: *There is a café. There are two cafés. Does she work? Do they work?*"
+     "One person or thing + verb-*s*: *My friend lives in Riga.*",
+     "More than one + verb: *My friends live in Riga.*",
+     "One: *is / was / has / does*. More: *are / were / have / do*. *She has a car. They have two.*"
     ],
     "use": [
      "*and* makes more than one: *Tom and Anna live here.*",
-     "*everybody, everyone, nobody, nothing* take a verb with *-s*: *Nobody knows.*"
+     "*everybody, nobody, something, everyone* + verb-*s*: *Everybody knows. Nothing works.*"
     ],
-    "signals": "*he, she, it, everybody, nobody, and, there is / there are*",
-    "example": "*My sister works in a bank, and my parents work in a hospital.*"
+    "signals": "*he, she, it, everybody, nobody, every, one of, and, there is / there are*",
+    "example": "*Everybody in my family likes coffee, but my parents drink tea.*",
+    "watch": [
+     "The verb agrees with the main word, not the nearest one: The box of apples is heavy. The people in my office are nice.",
+     "each / every + one: Every student has a book.",
+     "one of + plural noun + verb-s: One of my friends lives in London.",
+     "Uncountable words are singular: The news is good. Money isn't everything. This information is useful.",
+     "Some words are always plural: People are friendly. The police are here. My jeans are new.",
+     "there is + one or uncountable, there are + more: There is some milk. There are two cafés."
+    ]
    },
    "rule_lv": {
     "form": [
-     "Viens cilvēks vai *lieta* (*he, she, it, my friend, everybody, nobody*) + darbības vārds ar *-s*: *My friend lives in Riga.* *Everybody knows.*",
-     "Vairāki (*they, my friends, Tom and Anna*) + darbības vārds bez *-s*: *My friends live in Riga.*",
-     "*is / does / has* vienam, *are / do / have* vairākiem: *There is a caf*é. *There are two caf*é*s*. *Does she work?* *Do they work?*"
+     "Viens cilvēks vai *lieta* + darbības vārds ar *-s*: *My friend lives in Riga.*",
+     "Vairāki + darbības vārds bez *-s*: *My friends live in Riga.*",
+     "Vienam: *is / was / has / does*. Vairākiem: *are / were / have / do*. *She has a car.* *They have two.*"
     ],
     "use": [
      "*Latviski draugs* dzīvo un *draugi* dzīvo: forma ir viena. *Angliski* tā mainās: *lives / live*.",
-     "*and* nozīmē vairākus: *Tom and Anna live here.* *everybody, everyone, nobody, nothing* lieto ar *-s*: *Nobody knows.*"
+     "*and* nozīmē vairākus: *Tom and Anna live here.* *everybody, nobody, something, everyone* lieto ar *-s*: *Everybody knows.*"
     ],
-    "signals": "*he, she, it, everybody, nobody, and, there is / there are* (viņš, viņa, *visi, neviens*, un, ir)"
+    "signals": "*he, she, it, everybody, nobody, every, one of, and, there is / there are* (viņš, viņa, *visi, neviens, katrs*, viens no, un, ir)",
+    "watch": [
+     "Darbības vārds saskaņojas ar *galveno* vārdu, nevis ar tuvāko: *The box of apples is heavy.* *The people in my office are nice.*",
+     "*each / every* + viens: *Every student has a book.*",
+     "*one of* + daudzskaitlis + darbības vārds ar *-s*: *One of my friends lives in London.*",
+     "Nesaskaitāmie vārdi ir vienskaitlī: *The news is good.* *Money isn't everything.* *Latviski* ziņas ir daudzskaitlī, *angliski news* ir vienskaitlī.",
+     "Daži vārdi vienmēr ir daudzskaitlī: *People are friendly.* *The police are here.* *My jeans are new.*",
+     "*there is* + viens vai nesaskaitāms, *there are* + vairāki: *There is some milk.* *There are two caf*é*s*."
+    ]
    }
   },
   {

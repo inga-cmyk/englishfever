@@ -1251,6 +1251,7 @@
     return h('div', { class: 'rulecard' },
       h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('div', { class: 'formulas' }, r.form.map(formulaRow)),
       h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, UI.rich(x)); })),
+      r.watch && r.watch.length ? h('div', { class: 'watch' }, h('b', null, '⚠ ', l ? 'Uzmanies' : 'Watch out'), h('ol', null, r.watch.map(function (x) { return h('li', null, UI.rich(x)); }))) : null,
       h('p', { class: 'small' }, h('b', null, l ? 'Signālvārdi: ' : 'Signal words: '), UI.rich(r.signals)),
       h('div', { class: 'ex' }, h('b', null, l ? 'Piemērs: ' : 'Example: '), UI.rich(s.rule.example)));
   }

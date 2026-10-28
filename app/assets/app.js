@@ -1251,8 +1251,91 @@
     return h('div', { class: 'f-row' }, label ? h('div', { class: 'f-label' }, UI.rich(label)) : null, h('div', { class: 'f-blocks' }, blocks),
       example ? h('div', { class: 'f-ex' }, '→ ', UI.rich(example)) : null);
   }
+  /** New card layout (teacher, 28 October; authoring/cards2.py): [[x]] = the part of the form to notice, *x* = italics. */
+  function hl(t) {
+    var frag = document.createDocumentFragment();
+    String(t || '').split(/\[\[|\]\]/).forEach(function (part, i) {
+      if (!part) return;
+      if (i % 2) { var b = document.createElement('b'); b.className = 'hl'; b.textContent = part; frag.appendChild(b); }
+      else frag.appendChild(UI.rich(part));
+    });
+    return frag;
+  }
+  function richHl(t) {   // italics around a highlight: *I [[do]].* -> the whole sentence in italics, "do" coloured
+    var out = document.createDocumentFragment();
+    String(t || '').split('*').forEach(function (part, i) {
+      if (!part) return;
+      if (i % 2) { var em = document.createElement('em'); em.appendChild(hl(part)); out.appendChild(em); } else out.appendChild(hl(part));
+    });
+    return out;
+  }
+  var TL_X = { repeat: [18, 36, 54, 72, 90, 108], experience: [26, 46], recent: [70], point: [36], future: [100] };
+  function timeline(kind, lv) {   // a small picture of the meaning: past - now - future
+    var NS = 'http://www.w3.org/2000/svg';
+    function el(n, a) { var e = document.createElementNS(NS, n); Object.keys(a).forEach(function (k) { e.setAttribute(k, a[k]); }); return e; }
+    var svg = el('svg', { viewBox: '0 0 124 40', class: 'tl', 'aria-hidden': 'true' });
+    svg.appendChild(el('line', { x1: 6, y1: 22, x2: 118, y2: 22, class: 'tl-axis' }));
+    svg.appendChild(el('line', { x1: 80, y1: 12, x2: 80, y2: 30, class: 'tl-now' }));
+    var t = el('text', { x: 80, y: 39, 'text-anchor': 'middle', class: 'tl-lbl' }); t.textContent = lv ? 'tagad' : 'now'; svg.appendChild(t);
+    if (kind === 'always') svg.appendChild(el('line', { x1: 8, y1: 22, x2: 116, y2: 22, class: 'tl-bar' }));
+    if (kind === 'upto') { svg.appendChild(el('line', { x1: 22, y1: 22, x2: 74, y2: 22, class: 'tl-bar' })); svg.appendChild(el('path', { d: 'M72 16 L80 22 L72 28 Z', class: 'tl-head' })); }
+    if (kind === 'now') svg.appendChild(el('circle', { cx: 80, cy: 22, r: 5, class: 'tl-head' }));
+    (TL_X[kind] || []).forEach(function (x) { svg.appendChild(el('path', { d: 'M' + (x - 4) + ' 18 L' + (x + 4) + ' 26 M' + (x + 4) + ' 18 L' + (x - 4) + ' 26', class: 'tl-x' })); });
+    return svg;
+  }
+  function ruleCard2(v, lv, watch) {
+    var parts = [];
+    var T = lv ? { form: 'Kā to veido', bad: 'Biežākās kļūdas', use: 'Kad to lieto', watch: 'Uzmanies' } : { form: 'How to make it', bad: 'Typical mistakes', use: 'When we use it', watch: 'Watch out' };
+    parts.push(h('h3', { class: 'rc-h' }, T.form));
+    if (v.table) {
+      parts.push(h('div', { class: 'rc-scroll rc-wide' }, h('table', { class: 'rc-table' },
+        h('thead', null, h('tr', null, h('th', null, ''), v.table.cols.map(function (c, i) { return h('th', { class: 'c' + i }, c); }))),
+        h('tbody', null, v.table.rows.map(function (r) {
+          return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c, i) { return h('td', { class: 'c' + i }, hl(c)); }));
+        })))));
+      parts.push(h('div', { class: 'rc-stack' }, v.table.cols.map(function (c, i) {   // the same table for a phone: one block per column
+        return h('div', { class: 'rc-col c' + i }, h('div', { class: 'rc-col-h' }, c), v.table.rows.map(function (r) {
+          return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, hl(r[i + 1])));
+        }));
+      })));
+      if (v.table.short) parts.push(h('p', { class: 'rc-note' }, richHl(v.table.short)));
+    }
+    if (v.choice) {
+      parts.push(h('div', { class: 'rc-scroll rc-wide' }, h('table', { class: 'rc-table rc-choice' },
+        h('thead', null, h('tr', null, h('th', null, ''), v.choice.cols.map(function (c) { return h('th', { class: 'big' }, c); }))),
+        h('tbody', null, v.choice.rows.map(function (r) {
+          return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c) { return h('td', null, richHl(c)); }));
+        })))));
+      parts.push(h('div', { class: 'rc-stack' }, v.choice.cols.map(function (c, i) {
+        return h('div', { class: 'rc-col' }, h('div', { class: 'rc-col-h big' }, c), v.choice.rows.map(function (r) {
+          return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, richHl(r[i + 1])));
+        }));
+      })));
+      if (v.choice.note) parts.push(h('p', { class: 'rc-note' }, richHl(v.choice.note)));
+    }
+    if (v.mistakes && v.mistakes.length) {
+      parts.push(h('h3', { class: 'rc-h' }, T.bad));
+      parts.push(h('div', { class: 'rc-bad' }, v.mistakes.map(function (m) {
+        return h('div', { class: 'rc-pair' }, h('span', { class: 'no' }, h('span', { class: 'mk', 'aria-label': lv ? 'nepareizi' : 'wrong' }, '✗'), h('s', null, m[0])),
+          h('span', { class: 'yes' }, h('span', { class: 'mk', 'aria-label': lv ? 'pareizi' : 'right' }, '✓'), m[1]));
+      })));
+    }
+    if (v.uses && v.uses.length) {
+      parts.push(h('h3', { class: 'rc-h' }, T.use));
+      v.uses.forEach(function (u) {
+        parts.push(h('div', { class: 'rc-use' },
+          h('div', { class: 'rc-use-top' }, h('div', null, h('b', { class: 'rc-use-t' }, u.t),
+            u.s && u.s.length ? h('div', { class: 'rc-sig' }, u.s.map(function (x) { return h('span', { class: 'chip' }, x); })) : null),
+            u.tl ? timeline(u.tl, lv) : null),
+          h('ul', { class: 'rc-ex' }, (u.ex || []).map(function (x) { return h('li', null, h('em', null, hl(x))); }))));
+      });
+    }
+    if (watch && watch.length) parts.push(h('div', { class: 'watch' }, h('b', null, '⚠ ', T.watch), h('ol', null, watch.map(function (x) { return h('li', null, UI.rich(x)); }))));
+    return h('div', { class: 'rulecard rc2' }, parts);
+  }
   function ruleCard(s, lv) {
     var r = lv && s.rule_lv ? s.rule_lv : s.rule, l = lv && s.rule_lv;
+    if (r.v2) return ruleCard2(r.v2, !!l, r.watch);
     return h('div', { class: 'rulecard' },
       h('b', { style: 'color:var(--text)' }, l ? 'Kā to veido' : 'How to make it'), h('div', { class: 'formulas' }, r.form.map(formulaRow)),
       h('b', { style: 'color:var(--text)' }, l ? 'Kad to lieto' : 'When we use it'), h('ul', null, r.use.map(function (x) { return h('li', null, UI.rich(x)); })),
@@ -1420,6 +1503,7 @@
     var go = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October)
     var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'),
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, 'Close'))));
+    m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;
     go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash); m.close(); };
   }

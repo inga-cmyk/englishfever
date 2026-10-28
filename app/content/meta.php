@@ -96,7 +96,82 @@ return json_decode(<<<'EF_JSON_END'
      "Short answers: *Do you like it? Yes, I do. / No, I don't.*",
      "State verbs (*know, like, want, need, believe*) stay simple: *I know* (not *I'm knowing*).",
      "*Who* as the subject: no *do*: *Who lives here?* (not *Who does live here?*)"
-    ]
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "[[work]]",
+        "[[don't]] work",
+        "[[Do]] you work?"
+       ],
+       [
+        "he / she / it",
+        "work[[s]]",
+        "[[doesn't]] work",
+        "[[Does]] she work?"
+       ]
+      ],
+      "short": "Short answers: *Yes, I [[do]]. / No, she [[doesn't]].*"
+     },
+     "mistakes": [
+      [
+       "He doesn't works.",
+       "He doesn't work."
+      ],
+      [
+       "Does she works?",
+       "Does she work?"
+      ],
+      [
+       "She work every day.",
+       "She works every day."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Habits and routines",
+       "s": [
+        "every day",
+        "usually",
+        "often",
+        "never",
+        "on Mondays"
+       ],
+       "tl": "repeat",
+       "ex": [
+        "I [[go]] to the gym on Mondays.",
+        "She never [[drinks]] coffee."
+       ]
+      },
+      {
+       "t": "Facts and permanent situations",
+       "tl": "always",
+       "ex": [
+        "Water [[boils]] at 100 degrees.",
+        "I [[live]] in Riga."
+       ]
+      },
+      {
+       "t": "Timetables",
+       "s": [
+        "at 7.15",
+        "on Friday"
+       ],
+       "tl": "future",
+       "ex": [
+        "The train [[leaves]] at 7.15.",
+        "The film [[starts]] at eight."
+       ]
+      }
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -117,7 +192,82 @@ return json_decode(<<<'EF_JSON_END'
      "Īsās *atbildes*: *Do you like it?* *Yes, I do.* / No, *I don't.*",
      "Stāvokļa darbības vārdi (*know, like, want, need, believe*) *paliek* Present Simple: *I know* (nevis *I'm knowing*).",
      "Ja *Who* ir teikuma priekšmets, *do nevajag*: *Who lives here?* (nevis *Who does live here*?)"
-    ]
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "[[work]]",
+        "[[don't]] work",
+        "[[Do]] you work?"
+       ],
+       [
+        "he / she / it",
+        "work[[s]]",
+        "[[doesn't]] work",
+        "[[Does]] she work?"
+       ]
+      ],
+      "short": "Īsās atbildes: *Yes, I [[do]]. / No, she [[doesn't]].*"
+     },
+     "mistakes": [
+      [
+       "He doesn't works.",
+       "He doesn't work."
+      ],
+      [
+       "Does she works?",
+       "Does she work?"
+      ],
+      [
+       "She work every day.",
+       "She works every day."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Ieradumi un rutīna",
+       "s": [
+        "every day",
+        "usually",
+        "often",
+        "never",
+        "on Mondays"
+       ],
+       "tl": "repeat",
+       "ex": [
+        "I [[go]] to the gym on Mondays.",
+        "She never [[drinks]] coffee."
+       ]
+      },
+      {
+       "t": "Fakti un pastāvīgas situācijas",
+       "tl": "always",
+       "ex": [
+        "Water [[boils]] at 100 degrees.",
+        "I [[live]] in Riga."
+       ]
+      },
+      {
+       "t": "Saraksti",
+       "s": [
+        "at 7.15",
+        "on Friday"
+       ],
+       "tl": "future",
+       "ex": [
+        "The train [[leaves]] at 7.15.",
+        "The film [[starts]] at eight."
+       ]
+      }
+     ]
+    }
    }
   },
   {
@@ -306,7 +456,101 @@ return json_decode(<<<'EF_JSON_END'
      "*yet* at the end in negatives and questions; *already* before the main verb: *I've already eaten. Have you eaten yet?*",
      "*for* + a period, *since* + a starting point: *for five years, since 2020* (not *since five years*).",
      "*How long have you lived here?* (not *How long do you live here?*)"
-    ]
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "[[have]] seen",
+        "[[haven't]] seen",
+        "[[Have]] you seen it?"
+       ],
+       [
+        "he / she / it",
+        "[[has]] seen",
+        "[[hasn't]] seen",
+        "[[Has]] she seen it?"
+       ]
+      ],
+      "short": "Past participle: regular verbs *-ed* (*work[[ed]]*), irregular verbs: learn them (*see - [[seen]], go - [[gone]], be - [[been]]*)."
+     },
+     "mistakes": [
+      [
+       "I have seen him yesterday.",
+       "I saw him yesterday."
+      ],
+      [
+       "I live here since 2020.",
+       "I have lived here since 2020."
+      ],
+      [
+       "She has went home.",
+       "She has gone home."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Experience: we don't say when",
+       "s": [
+        "ever",
+        "never",
+        "before",
+        "three times"
+       ],
+       "tl": "experience",
+       "ex": [
+        "Have you ever [[been]] to Rome?",
+        "I've [[seen]] this film three times."
+       ]
+      },
+      {
+       "t": "Recent news, a result now",
+       "s": [
+        "just",
+        "already",
+        "yet",
+        "recently"
+       ],
+       "tl": "recent",
+       "ex": [
+        "I've just [[finished]].",
+        "She hasn't [[called]] yet."
+       ]
+      },
+      {
+       "t": "Started in the past, still true now",
+       "s": [
+        "for",
+        "since",
+        "how long",
+        "all my life"
+       ],
+       "tl": "upto",
+       "ex": [
+        "We've [[been]] married for 20 years.",
+        "I've [[lived]] here since 2020."
+       ]
+      },
+      {
+       "t": "A time that is not finished",
+       "s": [
+        "today",
+        "this week",
+        "this year"
+       ],
+       "tl": "upto",
+       "ex": [
+        "I haven't [[seen]] Ted today."
+       ]
+      }
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -327,7 +571,101 @@ return json_decode(<<<'EF_JSON_END'
      "*yet* teikuma beigās noliegumā un jautājumā; *already* pirms pamatdarbības vārda: *I've already eaten.* *Have you eaten yet?*",
      "*for* + laika posms, *since* + sākuma brīdis: *for five years, since 2020* (nevis *since five years*). *Latviski* jau *piecus gadus*, tāpēc *rodas since*.",
      "*How long have you lived here?* (nevis *How long do you live here*?). *Latviski* Cik ilgi *tu te* dzīvo? ir tagadnē, tāpēc *rodas* šī kļūda."
-    ]
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "[[have]] seen",
+        "[[haven't]] seen",
+        "[[Have]] you seen it?"
+       ],
+       [
+        "he / she / it",
+        "[[has]] seen",
+        "[[hasn't]] seen",
+        "[[Has]] she seen it?"
+       ]
+      ],
+      "short": "3. forma: kārtnie darbības vārdi ar -ed (*work[[ed]]*), nekārtnie jāiemācās (*see - [[seen]], go - [[gone]], be - [[been]]*)."
+     },
+     "mistakes": [
+      [
+       "I have seen him yesterday.",
+       "I saw him yesterday."
+      ],
+      [
+       "I live here since 2020.",
+       "I have lived here since 2020."
+      ],
+      [
+       "She has went home.",
+       "She has gone home."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Pieredze: nesakām, kad",
+       "s": [
+        "ever",
+        "never",
+        "before",
+        "three times"
+       ],
+       "tl": "experience",
+       "ex": [
+        "Have you ever [[been]] to Rome?",
+        "I've [[seen]] this film three times."
+       ]
+      },
+      {
+       "t": "Jaunumi, rezultāts tagad",
+       "s": [
+        "just",
+        "already",
+        "yet",
+        "recently"
+       ],
+       "tl": "recent",
+       "ex": [
+        "I've just [[finished]].",
+        "She hasn't [[called]] yet."
+       ]
+      },
+      {
+       "t": "Sākās pagātnē, joprojām turpinās",
+       "s": [
+        "for",
+        "since",
+        "how long",
+        "all my life"
+       ],
+       "tl": "upto",
+       "ex": [
+        "We've [[been]] married for 20 years.",
+        "I've [[lived]] here since 2020."
+       ]
+      },
+      {
+       "t": "Laiks vēl nav beidzies",
+       "s": [
+        "today",
+        "this week",
+        "this year"
+       ],
+       "tl": "upto",
+       "ex": [
+        "I haven't [[seen]] Ted today."
+       ]
+      }
+     ]
+    }
    }
   },
   {
@@ -2045,7 +2383,53 @@ return json_decode(<<<'EF_JSON_END'
      "*at home, at work, at school*, but *in the house, in the office*.",
      "*on the bus / train / plane*, but *in a car / taxi*.",
      "*arrive in* + city or country, *arrive at* + a place, never *arrive to*: *We arrived in Riga. We arrived at the station.*"
-    ]
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "at",
+       "on",
+       "in"
+      ],
+      "rows": [
+       [
+        "Time",
+        "clock time, night: *at 7, at night*",
+        "days and dates: *on Monday, on 5 May, on Friday evening*",
+        "months, years, seasons, parts of the day: *in May, in 2020, in winter, in the morning*"
+       ],
+       [
+        "Place",
+        "a point, a place where you do something: *at the bus stop, at work, at home*",
+        "a surface: *on the table, on the wall, on the third floor*",
+        "inside, a town or a country: *in the fridge, in my bag, in Riga*"
+       ]
+      ],
+      "note": "No preposition: *tomorrow, yesterday, next Monday, last week, this year, every day*."
+     },
+     "mistakes": [
+      [
+       "I was born at 1990.",
+       "I was born in 1990."
+      ],
+      [
+       "See you on next Monday.",
+       "See you next Monday."
+      ],
+      [
+       "The keys are at the table.",
+       "The keys are on the table."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Ask yourself: a clock time, a day or a longer period? A point, a surface or inside?",
+       "ex": [
+        "I start work [[at]] 9 [[on]] Mondays, but [[in]] summer I work from home."
+       ]
+      }
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2063,7 +2447,53 @@ return json_decode(<<<'EF_JSON_END'
      "*at home, at work, at school*, bet *in the house, in the office*.",
      "*on the bus / train / plane*, bet *in a car / taxi*. *Latviski* autobusā, *angliski on the bus*.",
      "*arrive in* + pilsēta vai *valsts, arrive at + vieta*, nekad *arrive to*: *We arrived in Riga.* *We arrived at the station.*"
-    ]
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "at",
+       "on",
+       "in"
+      ],
+      "rows": [
+       [
+        "Laiks",
+        "pulksteņa laiks, nakts: *at 7, at night*",
+        "dienas un datumi: *on Monday, on 5 May, on Friday evening*",
+        "mēneši, gadi, gadalaiki, dienas daļas: *in May, in 2020, in winter, in the morning*"
+       ],
+       [
+        "Vieta",
+        "punkts, vieta, kur kaut ko dara: *at the bus stop, at work, at home*",
+        "uz virsmas: *on the table, on the wall, on the third floor*",
+        "iekšā, pilsēta vai valsts: *in the fridge, in my bag, in Riga*"
+       ]
+      ],
+      "note": "Bez prievārda: *tomorrow, yesterday, next Monday, last week, this year, every day*."
+     },
+     "mistakes": [
+      [
+       "I was born at 1990.",
+       "I was born in 1990."
+      ],
+      [
+       "See you on next Monday.",
+       "See you next Monday."
+      ],
+      [
+       "The keys are at the table.",
+       "The keys are on the table."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Pajautā sev: pulksteņa laiks, diena vai ilgāks laiks? Punkts, virsma vai iekšā?",
+       "ex": [
+        "I start work [[at]] 9 [[on]] Mondays, but [[in]] summer I work from home."
+       ]
+      }
+     ]
+    }
    }
   }
  ],

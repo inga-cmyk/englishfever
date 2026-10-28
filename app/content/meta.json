@@ -177,7 +177,14 @@
      "A series of actions in a story."
     ],
     "signals": "*yesterday, last week, in 2019, three days ago*",
-    "example": "*I went to the cinema yesterday.*"
+    "example": "*I went to the cinema yesterday.*",
+    "watch": [
+     "Spelling: *stop → stopped, study → studied, play → played, like → liked*.",
+     "*did* + base verb: *Did you go?* (not *Did you went?*); *I didn't see it.*",
+     "*was / were* without *did*: *Were you there?* (not *Did you were there?*)",
+     "*ago* goes after the time: *two days ago*. Finished time: *yesterday, last week, in 2019*.",
+     "Not with *since / for* up to now: *I've lived here since 2019* (not *I lived here since 2019*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -190,7 +197,14 @@
      "Pabeigtas darbības pabeigtā laikā.",
      "Darbību virkne stāstā."
     ],
-    "signals": "*yesterday, last week, in 2019, three days ago* (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)"
+    "signals": "*yesterday, last week, in 2019, three days ago* (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)",
+    "watch": [
+     "Rakstība: *stop → stopped, study → studied, play → played, like → liked*.",
+     "*did* + pamatforma: *Did you go?* (nevis *Did you went*?); *I didn't see it.*",
+     "*was / were* bez *did*: *Were you there?* (nevis *Did you were there*?)",
+     "*ago* ir aiz laika: *two days ago* (*latviski* pirms divām dienām). Pabeigts laiks: *yesterday, last week, in 2019*.",
+     "*Ne* ar *since / for* līdz šim brīdim: *I've lived here since 2019* (nevis *I lived here since 2019*)."
+    ]
    }
   },
   {
@@ -215,7 +229,14 @@
      "Background in a story."
     ],
     "signals": "*at 8 o'clock yesterday, while, when, as*",
-    "example": "*I was cooking when the phone rang.*"
+    "example": "*I was cooking when the phone rang.*",
+    "watch": [
+     "*when* + past simple, *while* + past continuous: *I was cooking when he called. He called while I was cooking.*",
+     "Two actions at the same time: *While I was cooking, he was watching TV.*",
+     "State verbs stay simple: *I knew her* (not *I was knowing her*).",
+     "*was* for *I / he / she / it*, *were* for *you / we / they*: *We were waiting.*",
+     "Not for finished repeated actions: *I went there three times* (not *I was going there three times*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -229,7 +250,14 @@
      "Garāku darbību pārtrauc īsa darbība (Past Simple).",
      "Stāsta fons."
     ],
-    "signals": "*at 8 o'clock yesterday, while, when, as*"
+    "signals": "*at 8 o'clock yesterday, while, when, as*",
+    "watch": [
+     "*when* + Past Simple, *while* + Past Continuous: *I was cooking when he called.* *He called while I was cooking.*",
+     "Divas darbības vienlaikus: *While I was cooking, he was watching TV.*",
+     "Stāvokļa darbības vārdi *paliek* Past Simple: *I knew her* (nevis *I was knowing her*).",
+     "*was* ar *I / he / she / it, were* ar *you / we / they*: *We were waiting.*",
+     "*Ne* pabeigtām atkārtotām darbībām: *I went there three times* (nevis *I was going there three times*)."
+    ]
    }
   },
   {
@@ -1276,7 +1304,14 @@
      "Look at the answer: if the answer is the subject, the neutral question has no *did / does*."
     ],
     "signals": "*who, what, which, whose as the subject: no do / does / did*",
-    "example": "*Who wrote this email? Who did you send it to?*"
+    "example": "*Who wrote this email? Who did you send it to?*",
+    "watch": [
+     "A preposition often goes at the end: *Who are you talking to? What are you looking at?*",
+     "*Which / What / How many* + noun as the subject: no *do*: *Which bus goes to the centre? How many people came?*",
+     "*Who* takes a singular verb, even if the answer is two people: *Who lives here? Tom and Anna.*",
+     "Questions with *be*: no *do*: *Where is she? Were they late?*",
+     "Indirect questions have a different order: *Do you know where she lives?* (a separate topic)"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1289,7 +1324,14 @@
      "Jautā par cilvēku vai lietu, ar ko darbība notiek: jautājums par papildinātāju (*I called Tom → Who did you call*?).",
      "Paskaties uz atbildi: ja atbilde ir teik. priekšmets, neitrālajā jautājumā nav *did / does*."
     ],
-    "signals": "*who, what, which, whose as the subject*: no *do / does / did* (kā teik. priekšmets: bez *do / does / did*)"
+    "signals": "*who, what, which, whose as the subject*: no *do / does / did* (kā teik. priekšmets: bez *do / does / did*)",
+    "watch": [
+     "Prievārds bieži ir beigās: *Who are you talking to?* *What are you looking at?* *Latviski* prievārds ir sākumā: Ar ko *tu* runā?",
+     "*Which / What / How many* + lietvārds kā teikuma priekšmets: bez *do*: *Which bus goes to the centre?* *How many people came?*",
+     "*Who* lieto ar *vienskaitli*, arī ja atbilde ir *divi* cilvēki: *Who lives here?* *Tom and Anna.*",
+     "Jautājumos ar *be do nevajag*: *Where is she?* *Were they late?*",
+     "Netiešajiem jautājumiem ir *cita* secība: *Do you know where she lives?* (atsevišķa tēma)"
+    ]
    }
   },
   {
@@ -1315,7 +1357,14 @@
      "*stop / remember / forget / try*: *-ing* = about something done or an experiment; *to* = a task or a purpose."
     ],
     "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition: -ing*",
-    "example": "*I enjoy cooking, but I decided to eat out tonight.*"
+    "example": "*I enjoy cooking, but I decided to eat out tonight.*",
+    "watch": [
+     "*want / would like* + person + *to*: *I want you to come* (not *I want that you come*).",
+     "*let / make* + person + base verb: *Let me go. She made me laugh.*",
+     "Modal verbs + base verb, without *to*: *I can swim. You must go.*",
+     "*go* + *-ing* for activities: *go shopping, go swimming*.",
+     "*look forward to* + *-ing*: *I look forward to seeing you.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1330,7 +1379,14 @@
      "Aiz prievārda lieto *-ing*, ja tieši seko darbības vārds: *She's good at drawing.* (Var *sekot* arī jautājamais vārds + *to*: *about how to improve it*.)",
      "*stop / remember / forget / try*: *-ing* = par jau izdarītu vai izmēģinājumu; to = uzdevums vai mērķis."
     ],
-    "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition*: *-ing* (aiz prievārda: *-ing*)"
+    "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition*: *-ing* (aiz prievārda: *-ing*)",
+    "watch": [
+     "*want / would like* + cilvēks + *to*: *I want you to come* (nevis *I want that you come*). *Latviski gribu*, lai *tu* atnāc, tāpēc *rodas that*.",
+     "*let / make* + cilvēks + pamatforma: *Let me go.* *She made me laugh.*",
+     "Modālie darbības vārdi + pamatforma bez *to*: *I can swim.* *You must go.*",
+     "*go + -ing* nodarbēm: *go shopping, go swimming*.",
+     "*look forward to + -ing*: *I look forward to seeing you.*"
+    ]
    }
   },
   {
@@ -1845,7 +1901,14 @@
      "Ask: is it a clock time, a day or a longer period? Is it a point, inside something, or on a surface?"
     ],
     "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall*",
-    "example": "*I start work at 9 on Mondays, but in summer I work from home.*"
+    "example": "*I start work at 9 on Mondays, but in summer I work from home.*",
+    "watch": [
+     "*in the morning*, but *on Monday morning, on Friday evening*.",
+     "*at the weekend* (British), *on the weekend* (American).",
+     "*at home, at work, at school*, but *in the house, in the office*.",
+     "*on the bus / train / plane*, but *in a car / taxi*.",
+     "*arrive in* + city or country, *arrive at* + a place, never *arrive to*: *We arrived in Riga. We arrived at the station.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1856,7 +1919,14 @@
     "use": [
      "Pajautā *sev*: vai tas ir pulksteņa laiks, *diena* vai ilgāks laiks? Vai tas ir *punkts*, kaut kā iekšā vai uz *virsmas*?"
     ],
-    "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall* (septiņos, *pirmdien*, maijā, naktī, darbā, virtuvē, pie *sienas*)"
+    "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall* (septiņos, *pirmdien*, maijā, naktī, darbā, virtuvē, pie *sienas*)",
+    "watch": [
+     "*in the morning*, bet *on Monday morning, on Friday evening*. *Latviski piektdienas* vakarā, *angliski* ar dienu *on*.",
+     "*at the weekend* (*britu*), *on the weekend* (amerikāņu).",
+     "*at home, at work, at school*, bet *in the house, in the office*.",
+     "*on the bus / train / plane*, bet *in a car / taxi*. *Latviski* autobusā, *angliski on the bus*.",
+     "*arrive in* + pilsēta vai *valsts, arrive at + vieta*, nekad *arrive to*: *We arrived in Riga.* *We arrived at the station.*"
+    ]
    }
   }
  ],

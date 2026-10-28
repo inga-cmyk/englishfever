@@ -69,4 +69,21 @@ T.text("B1.1", "Make a question: You were late again.", ["Were you late again?"]
 T.order("A2.2", "where do your parents live", why=QW, cue="Put the words in order to make a question.")
 T.order("B1.1", "what have you been doing all day", why=QW, cue="Put the words in order to make a question.")
 
+# short answers with a whole reply to choose (teacher, 28 October): Latvian answers with the main verb ("Jā, gribu"), English repeats the auxiliary
+SHORT_LV = ex("A short answer repeats the auxiliary of the question, not the main verb: *Do you want…? Yes, I do.*",
+              "Latviski atbild ar darbības vārdu (Jā, gribu), bet angliski atkārto jautājuma palīgdarbības vārdu: *Do you want…? Yes, I do.*")
+Q = "Choose the correct short answer: "
+T.mcq("A2.1", Q + "'Do you have a car?'", "Yes, I do.", ["Yes, I have.", "Yes, I am."], SHORT_LV)
+T.mcq("A2.2", Q + "'Have you seen Peter today?'", "No, I haven't.", ["No, I don't.", "No, I wasn't."], SHORT)
+T.mcq("A2.1", Q + "'Does she like jazz?'", "Yes, she does.", ["Yes, she like.", "Yes, she likes."], SHORT_LV)
+T.mcq("A2.1", Q + "'Do you want to come with me?'", "Yes, I do.", ["Yes, I want.", "Yes, I am."], SHORT_LV)
+T.mcq("A2.1", Q + "'Did you enjoy the film?'", "Yes, I did.", ["Yes, I enjoyed.", "Yes, I was."], SHORT_LV)
+T.mcq("A2.1", Q + "'Are you hungry?'", "No, I'm not.", ["No, I don't.", "No, I haven't."], SHORT)
+T.mcq("A2.2", Q + "'Has he called you?'", "Yes, he has.", ["Yes, he does.", "Yes, he is."], SHORT)
+T.mcq("A2.1", Q + "'Were they at the party?'", "No, they weren't.", ["No, they didn't.", "No, they don't."], SHORT)
+T.mcq("A2.1", Q + "'Can you swim?'", "Yes, I can.", ["Yes, I do.", "Yes, I am."], SHORT)
+T.mcq("A2.2", Q + "'Do your parents live in Riga?'", "No, they don't.", ["No, they doesn't.", "No, they aren't."], SHORT)
+T.mcq("A2.1", Q + "'Is it raining?'", "Yes, it is.", ["Yes, it does.", "Yes, it rains."], SHORT)
+T.gap("A2.2", "Write the short answer: 'Does Anna speak French?' 'No, she ___.'", ["doesn't"], SHORT_LV)
+
 save("aux-verbs-1.csv")

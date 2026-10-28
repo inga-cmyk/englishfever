@@ -92,8 +92,8 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*She starts work at eight every day.*",
     "watch": [
      "Spelling with *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
-     "State verbs (*[[know]], like, want, need, believe*) stay simple: *I [[know]] the answer.*",
-     "*Who* as the subject, no *do*: *Who [[lives]] here?*"
+     "State verbs (*[[know]], [[like]], [[want]], [[need]], [[believe]]*) stay simple: *I [[know]] the answer.*",
+     "*Who* or *What* as the subject, no *do*: *Who [[lives]] here? What [[makes]] you think so?*"
     ],
     "v2": {
      "table": {
@@ -168,8 +168,8 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "Spelling with *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
-      "State verbs (*[[know]], like, want, need, believe*) stay simple: *I [[know]] the answer.*",
-      "*Who* as the subject, no *do*: *Who [[lives]] here?*"
+      "State verbs (*[[know]], [[like]], [[want]], [[need]], [[believe]]*) stay simple: *I [[know]] the answer.*",
+      "*Who* or *What* as the subject, no *do*: *Who [[lives]] here? What [[makes]] you think so?*"
      ]
     }
    },
@@ -188,8 +188,8 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*always, usually, often, sometimes, never, every day* (vienmēr, parasti, bieži, dažreiz, nekad, katru dienu)",
     "watch": [
      "Rakstība ar *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
-     "Stāvokļa darbības vārdi (*[[know]], like, want, need, believe*) paliek Present Simple: *I [[know]] the answer.*",
-     "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here?*"
+     "Stāvokļa darbības vārdi (*[[know]], [[like]], [[want]], [[need]], [[believe]]*) paliek Present Simple: *I [[know]] the answer.*",
+     "Ja *Who* vai *What* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here? What [[makes]] you think so?*"
     ],
     "v2": {
      "table": {
@@ -264,8 +264,8 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "Rakstība ar *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
-      "Stāvokļa darbības vārdi (*[[know]], like, want, need, believe*) paliek Present Simple: *I [[know]] the answer.*",
-      "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here?*"
+      "Stāvokļa darbības vārdi (*[[know]], [[like]], [[want]], [[need]], [[believe]]*) paliek Present Simple: *I [[know]] the answer.*",
+      "Ja *Who* vai *What* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here? What [[makes]] you think so?*"
      ]
     }
    }
@@ -554,14 +554,14 @@ return json_decode(<<<'EF_JSON_END'
        [
         "I / he / she / it",
         "[[was]] work[[ing]]",
-        "[[wasn't]] working",
-        "[[Was]] she working?"
+        "[[wasn't]] work[[ing]]",
+        "[[Was]] she work[[ing]]?"
        ],
        [
         "you / we / they",
         "[[were]] work[[ing]]",
-        "[[weren't]] working",
-        "[[Were]] they working?"
+        "[[weren't]] work[[ing]]",
+        "[[Were]] they work[[ing]]?"
        ]
       ]
      },
@@ -587,7 +587,7 @@ return json_decode(<<<'EF_JSON_END'
         "this time last week"
        ],
        "ex": [
-        "At 8 o'clock I [[was having]] dinner."
+        "At 8 o'clock I [[was having]] breakfast."
        ]
       },
       {
@@ -613,7 +613,7 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "The background of a story",
        "ex": [
-        "It [[was raining]] and people [[were hurrying]] home."
+        "It [[was raining]], and people [[were hurrying]] home."
        ]
       }
      ],
@@ -651,14 +651,14 @@ return json_decode(<<<'EF_JSON_END'
        [
         "I / he / she / it",
         "[[was]] work[[ing]]",
-        "[[wasn't]] working",
-        "[[Was]] she working?"
+        "[[wasn't]] work[[ing]]",
+        "[[Was]] she work[[ing]]?"
        ],
        [
         "you / we / they",
         "[[were]] work[[ing]]",
-        "[[weren't]] working",
-        "[[Were]] they working?"
+        "[[weren't]] work[[ing]]",
+        "[[Were]] they work[[ing]]?"
        ]
       ]
      },
@@ -684,7 +684,7 @@ return json_decode(<<<'EF_JSON_END'
         "this time last week"
        ],
        "ex": [
-        "At 8 o'clock I [[was having]] dinner."
+        "At 8 o'clock I [[was having]] breakfast."
        ]
       },
       {
@@ -710,7 +710,7 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "Stāsta fons",
        "ex": [
-        "It [[was raining]] and people [[were hurrying]] home."
+        "It [[was raining]], and people [[were hurrying]] home."
        ]
       }
      ],
@@ -745,10 +745,11 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
     "example": "*I have lived here for ten years.*",
     "watch": [
-     "*[[been]]* = went and came back, *[[gone]]* = is still there: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+     "*[[been]]* = was there and came back, *[[gone]]* = is still there: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
      "*[[already]]* before the main verb, *[[yet]]* at the end: *I've [[already]] eaten. Have you eaten [[yet]]?*",
      "*[[for]]* + a period, *[[since]]* + a starting point: *[[for]] five years, [[since]] 2020*.",
-     "*How long* + present perfect: *How long [[have]] you [[lived]] here?*"
+     "*How long* + present perfect: *How long [[have]] you [[lived]] here?*",
+     "An action that is still going on: usually the present perfect continuous: *I've [[been waiting]] for an hour.*"
     ],
     "v2": {
      "table": {
@@ -817,7 +818,7 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "Started in the past, still true now",
+       "t": "Started in the past, still true now: state verbs (*be, know, have*), and *live, work*",
        "s": [
         "for",
         "since",
@@ -827,6 +828,7 @@ return json_decode(<<<'EF_JSON_END'
        "tl": "upto",
        "ex": [
         "We've [[been]] married for 20 years.",
+        "I've [[known]] her since school.",
         "I've [[lived]] here since 2020."
        ]
       },
@@ -844,10 +846,11 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*[[been]]* = went and came back, *[[gone]]* = is still there: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+      "*[[been]]* = was there and came back, *[[gone]]* = is still there: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
       "*[[already]]* before the main verb, *[[yet]]* at the end: *I've [[already]] eaten. Have you eaten [[yet]]?*",
       "*[[for]]* + a period, *[[since]]* + a starting point: *[[for]] five years, [[since]] 2020*.",
-      "*How long* + present perfect: *How long [[have]] you [[lived]] here?*"
+      "*How long* + present perfect: *How long [[have]] you [[lived]] here?*",
+      "An action that is still going on: usually the present perfect continuous: *I've [[been waiting]] for an hour.*"
      ]
     }
    },
@@ -865,10 +868,11 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
     "watch": [
-     "*[[been]]* = aizgāja un atgriezās, *[[gone]]* = joprojām ir tur: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+     "*[[been]]* = bija tur un atgriezās, *[[gone]]* = joprojām ir tur: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
      "*[[already]]* pirms pamatdarbības vārda, *[[yet]]* beigās: *I've [[already]] eaten. Have you eaten [[yet]]?*",
      "*[[for]]* + laika posms, *[[since]]* + sākuma brīdis: *[[for]] five years, [[since]] 2020*. Latviski \"jau piecus gadus\", tāpēc gribas *[[since]]*.",
-     "*How long* + Present Perfect: *How long [[have]] you [[lived]] here?* Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
+     "*How long* + Present Perfect: *How long [[have]] you [[lived]] here?* Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē.",
+     "Darbībai, kas joprojām notiek, parasti lieto Present Perfect Continuous: *I've [[been waiting]] for an hour.*"
     ],
     "v2": {
      "table": {
@@ -938,7 +942,7 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "Sākās pagātnē, joprojām turpinās",
+       "t": "Sākās pagātnē, joprojām turpinās: stāvokļa darbības vārdi (*be, know, have*) un *live, work*",
        "s": [
         "for",
         "since",
@@ -948,6 +952,7 @@ return json_decode(<<<'EF_JSON_END'
        "tl": "upto",
        "ex": [
         "We've [[been]] married for 20 years.",
+        "I've [[known]] her since school.",
         "I've [[lived]] here since 2020."
        ]
       },
@@ -965,10 +970,11 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*[[been]]* = aizgāja un atgriezās, *[[gone]]* = joprojām ir tur: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+      "*[[been]]* = bija tur un atgriezās, *[[gone]]* = joprojām ir tur: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
       "*[[already]]* pirms pamatdarbības vārda, *[[yet]]* beigās: *I've [[already]] eaten. Have you eaten [[yet]]?*",
       "*[[for]]* + laika posms, *[[since]]* + sākuma brīdis: *[[for]] five years, [[since]] 2020*. Latviski \"jau piecus gadus\", tāpēc gribas *[[since]]*.",
-      "*How long* + Present Perfect: *How long [[have]] you [[lived]] here?* Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
+      "*How long* + Present Perfect: *How long [[have]] you [[lived]] here?* Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē.",
+      "Darbībai, kas joprojām notiek, parasti lieto Present Perfect Continuous: *I've [[been waiting]] for an hour.*"
      ]
     }
    }
@@ -2038,23 +2044,23 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "positive",
-        "|| *[[some]] books, [[a lot of]] books*",
-        "|| *[[some]] milk, [[a lot of]] milk*"
+        "|| *I have [[some]] books.* ;; || *I have [[a lot of]] books.*",
+        "|| *There's [[some]] milk.* ;; || *There's [[a lot of]] milk.*"
        ],
        [
-        "questions, negatives",
-        "|| *[[any]] books? not [[many]] books*",
-        "|| *[[any]] milk? not [[much]] milk*"
+        "questions",
+        "|| *Have you got [[any]] books?* ;; || *[[How many]] books have you got?*",
+        "|| *Is there [[any]] milk?* ;; || *[[How much]] milk is there?*"
+       ],
+       [
+        "negatives",
+        "|| *I haven't got [[any]] books.* ;; || *I haven't got [[many]] books.*",
+        "|| *There isn't [[any]] milk.* ;; || *There isn't [[much]] milk.*"
        ],
        [
         "a small amount",
-        "|| *[[a few]] books*",
-        "|| *[[a little]] milk*"
-       ],
-       [
-        "How…?",
-        "|| *[[How many]] books?*",
-        "|| *[[How much]] milk?*"
+        "|| *I have [[a few]] books.*",
+        "|| *There's [[a little]] milk.*"
        ]
       ],
       "note": "*[[few]] / [[little]]* without *a* = almost none: *[[Few]] people came.*"
@@ -2134,23 +2140,23 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "apstiprinājums",
-        "|| *[[some]] books, [[a lot of]] books*",
-        "|| *[[some]] milk, [[a lot of]] milk*"
+        "|| *I have [[some]] books.* ;; || *I have [[a lot of]] books.*",
+        "|| *There's [[some]] milk.* ;; || *There's [[a lot of]] milk.*"
        ],
        [
-        "jautājums, noliegums",
-        "|| *[[any]] books? not [[many]] books*",
-        "|| *[[any]] milk? not [[much]] milk*"
+        "jautājums",
+        "|| *Have you got [[any]] books?* ;; || *[[How many]] books have you got?*",
+        "|| *Is there [[any]] milk?* ;; || *[[How much]] milk is there?*"
+       ],
+       [
+        "noliegums",
+        "|| *I haven't got [[any]] books.* ;; || *I haven't got [[many]] books.*",
+        "|| *There isn't [[any]] milk.* ;; || *There isn't [[much]] milk.*"
        ],
        [
         "mazliet",
-        "|| *[[a few]] books*",
-        "|| *[[a little]] milk*"
-       ],
-       [
-        "Cik…?",
-        "|| *[[How many]] books?*",
-        "|| *[[How much]] milk?*"
+        "|| *I have [[a few]] books.*",
+        "|| *There's [[a little]] milk.*"
        ]
       ],
       "note": "*[[few]] / [[little]]* bez *a* = gandrīz nemaz: *[[Few]] people came.*"
@@ -2440,10 +2446,10 @@ return json_decode(<<<'EF_JSON_END'
         "try"
        ],
        "ex": [
-        "I stopped [[smoking]]. (= I quit)",
-        "I stopped [[to smoke]]. (= to have a cigarette)",
-        "Remember [[to call]] her. (a task)",
-        "I remember [[meeting]] her. (a memory)"
+        "I stopped [[smoking]]. (= I don't smoke any more)",
+        "I stopped [[to smoke]]. (= I stopped what I was doing so that I could smoke)",
+        "Remember [[to call]] her. (= don't forget, it is something you have to do)",
+        "I remember [[meeting]] her. (= I met her, and I still have this memory)"
        ]
       }
      ],
@@ -2521,10 +2527,10 @@ return json_decode(<<<'EF_JSON_END'
         "try"
        ],
        "ex": [
-        "I stopped [[smoking]]. (= atmetu)",
-        "I stopped [[to smoke]]. (= apstājos, lai uzsmēķētu)",
-        "Remember [[to call]] her. (uzdevums)",
-        "I remember [[meeting]] her. (atmiņa)"
+        "I stopped [[smoking]]. (= vairs nesmēķēju)",
+        "I stopped [[to smoke]]. (= pārtraucu to, ko darīju, lai uzsmēķētu)",
+        "Remember [[to call]] her. (= neaizmirsti, tas tev jāizdara)",
+        "I remember [[meeting]] her. (= es viņu satiku, un man ir šī atmiņa)"
        ]
       }
      ],

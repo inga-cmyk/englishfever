@@ -91,9 +91,9 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*always, usually, often, sometimes, never, every day*",
     "example": "*She starts work at eight every day.*",
     "watch": [
-     "Spelling: *watch → [[watches]], go → [[goes]], study → [[studies]], play → [[plays]]; have → [[has]]*.",
-     "State verbs (*[[know]], like, want, need, believe*) stay simple: *I [[know]]* (not *I'm knowing*).",
-     "*Who* as the subject: no *do*: *Who [[lives]] here?* (not *Who does live here?*)"
+     "Spelling with *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
+     "State verbs (*[[know]], like, want, need, believe*) stay simple: *I [[know]] the answer.*",
+     "*Who* as the subject, no *do*: *Who [[lives]] here?*"
     ],
     "v2": {
      "table": {
@@ -120,22 +120,17 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "He doesn't works.",
-       "He doesn't work."
+       "He doesn't [[works]].",
+       "He doesn't [[work]]."
       ],
       [
-       "Does she works?",
-       "Does she work?"
+       "Does she [[works]]?",
+       "Does she [[work]]?"
       ],
       [
-       "She work every day.",
-       "She works every day."
+       "She [[work]] every day.",
+       "She [[works]] every day."
       ]
-     ],
-     "watch": [
-      "Spelling: *watch → [[watches]], go → [[goes]], study → [[studies]], play → [[plays]]; have → [[has]]*.",
-      "State verbs (*[[know]], like, want, need, believe*) stay simple: *I [[know]]* (not *I'm knowing*).",
-      "*Who* as the subject: no *do*: *Who [[lives]] here?* (not *Who does live here?*)"
      ],
      "uses": [
       {
@@ -170,6 +165,11 @@ return json_decode(<<<'EF_JSON_END'
         "The film [[starts]] at eight."
        ]
       }
+     ],
+     "watch": [
+      "Spelling with *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
+      "State verbs (*[[know]], like, want, need, believe*) stay simple: *I [[know]] the answer.*",
+      "*Who* as the subject, no *do*: *Who [[lives]] here?*"
      ]
     }
    },
@@ -187,9 +187,9 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*always, usually, often, sometimes, never, every day* (vienmēr, parasti, bieži, dažreiz, nekad, katru dienu)",
     "watch": [
-     "Rakstība: *watch → [[watches]], go → [[goes]], study → [[studies]], play → [[plays]]; have → [[has]]*.",
-     "Stāvokļa darbības vārdi (*[[know]], like, want, need, believe*) paliek Present Simple: *I [[know]]* (nevis *I'm knowing*).",
-     "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here?* (nevis *Who does live here?*)"
+     "Rakstība ar *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
+     "Stāvokļa darbības vārdi (*[[know]], like, want, need, believe*) paliek Present Simple: *I [[know]] the answer.*",
+     "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here?*"
     ],
     "v2": {
      "table": {
@@ -216,22 +216,17 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "He doesn't works.",
-       "He doesn't work."
+       "He doesn't [[works]].",
+       "He doesn't [[work]]."
       ],
       [
-       "Does she works?",
-       "Does she work?"
+       "Does she [[works]]?",
+       "Does she [[work]]?"
       ],
       [
-       "She work every day.",
-       "She works every day."
+       "She [[work]] every day.",
+       "She [[works]] every day."
       ]
-     ],
-     "watch": [
-      "Rakstība: *watch → [[watches]], go → [[goes]], study → [[studies]], play → [[plays]]; have → [[has]]*.",
-      "Stāvokļa darbības vārdi (*[[know]], like, want, need, believe*) paliek Present Simple: *I [[know]]* (nevis *I'm knowing*).",
-      "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here?* (nevis *Who does live here?*)"
      ],
      "uses": [
       {
@@ -266,6 +261,11 @@ return json_decode(<<<'EF_JSON_END'
         "The film [[starts]] at eight."
        ]
       }
+     ],
+     "watch": [
+      "Rakstība ar *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
+      "Stāvokļa darbības vārdi (*[[know]], like, want, need, believe*) paliek Present Simple: *I [[know]] the answer.*",
+      "Ja *Who* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here?*"
      ]
     }
    }
@@ -346,8 +346,8 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*yesterday, last week, in 2019, three days ago*",
     "example": "*I went to the cinema yesterday.*",
     "watch": [
-     "*[[ago]]* goes after the time: *two days [[ago]]*.",
-     "Not with *[[since]] / for* up to now: *I've [[lived]] here [[since]] 2019* (not *I lived here since 2019*)."
+     "*[[ago]]* goes after the time: *I met him two days [[ago]].*",
+     "Up to now, with *[[since]] / [[for]]*: present perfect: *I've [[lived]] here [[since]] 2019.*"
     ],
     "v2": {
      "table": {
@@ -359,9 +359,9 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "all persons",
-        "work[[ed]], [[went]]",
-        "[[didn't]] work, [[didn't]] go",
-        "[[Did]] you work? [[Did]] she go?"
+        "work[[ed]] ;; [[went]]",
+        "[[didn't]] work ;; [[didn't]] go",
+        "[[Did]] you work? ;; [[Did]] she go?"
        ],
        [
         "be: I / he / she / it",
@@ -376,20 +376,20 @@ return json_decode(<<<'EF_JSON_END'
         "[[Were]] they late?"
        ]
       ],
-      "short": "Irregular verbs: learn them (*go - [[went]], see - [[saw]], buy - [[bought]]*). Spelling: *stop - [[stopped]], study - [[studied]], like - [[liked]]*."
+      "short": "Irregular verbs: learn them (*go → [[went]], see → [[saw]], buy → [[bought]]*). Spelling: *stop → [[stopped]], study → [[studied]], like → [[liked]]*."
      },
      "mistakes": [
       [
-       "Did you went out?",
-       "Did you go out?"
+       "Did you [[went]] out?",
+       "Did you [[go]] out?"
       ],
       [
-       "I didn't saw it.",
-       "I didn't see it."
+       "I didn't [[saw]] it.",
+       "I didn't [[see]] it."
       ],
       [
-       "Did you were there?",
-       "Were you there?"
+       "[[Did you were]] there?",
+       "[[Were you]] there?"
       ]
      ],
      "uses": [
@@ -419,8 +419,8 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*[[ago]]* goes after the time: *two days [[ago]]*.",
-      "Not with *[[since]] / for* up to now: *I've [[lived]] here [[since]] 2019* (not *I lived here since 2019*)."
+      "*[[ago]]* goes after the time: *I met him two days [[ago]].*",
+      "Up to now, with *[[since]] / [[for]]*: present perfect: *I've [[lived]] here [[since]] 2019.*"
      ]
     }
    },
@@ -437,8 +437,8 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*yesterday, last week, in 2019, three days ago* (vakar, pagājušajā nedēļā, 2019. gadā, pirms trim dienām)",
     "watch": [
-     "*[[ago]]* ir aiz laika: *two days [[ago]]* (latviski \"pirms divām dienām\").",
-     "Ne ar *[[since]] / for* līdz šim brīdim: *I've [[lived]] here [[since]] 2019* (nevis *I lived here since 2019*)."
+     "*[[ago]]* ir aiz laika: *I met him two days [[ago]].* Latviski \"pirms divām dienām\", tāpēc gribas likt to priekšā.",
+     "Līdz šim brīdim ar *[[since]] / [[for]]*: Present Perfect: *I've [[lived]] here [[since]] 2019.*"
     ],
     "v2": {
      "table": {
@@ -450,9 +450,9 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "visas personas",
-        "work[[ed]], [[went]]",
-        "[[didn't]] work, [[didn't]] go",
-        "[[Did]] you work? [[Did]] she go?"
+        "work[[ed]] ;; [[went]]",
+        "[[didn't]] work ;; [[didn't]] go",
+        "[[Did]] you work? ;; [[Did]] she go?"
        ],
        [
         "be: I / he / she / it",
@@ -467,20 +467,20 @@ return json_decode(<<<'EF_JSON_END'
         "[[Were]] they late?"
        ]
       ],
-      "short": "Nekārtnie darbības vārdi jāiemācās (*go - [[went]], see - [[saw]], buy - [[bought]]*). Rakstība: *stop - [[stopped]], study - [[studied]], like - [[liked]]*."
+      "short": "Nekārtnie darbības vārdi jāiemācās (*go → [[went]], see → [[saw]], buy → [[bought]]*). Rakstība: *stop → [[stopped]], study → [[studied]], like → [[liked]]*."
      },
      "mistakes": [
       [
-       "Did you went out?",
-       "Did you go out?"
+       "Did you [[went]] out?",
+       "Did you [[go]] out?"
       ],
       [
-       "I didn't saw it.",
-       "I didn't see it."
+       "I didn't [[saw]] it.",
+       "I didn't [[see]] it."
       ],
       [
-       "Did you were there?",
-       "Were you there?"
+       "[[Did you were]] there?",
+       "[[Were you]] there?"
       ]
      ],
      "uses": [
@@ -510,8 +510,8 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*[[ago]]* ir aiz laika: *two days [[ago]]* (latviski \"pirms divām dienām\").",
-      "Ne ar *[[since]] / for* līdz šim brīdim: *I've [[lived]] here [[since]] 2019* (nevis *I lived here since 2019*)."
+      "*[[ago]]* ir aiz laika: *I met him two days [[ago]].* Latviski \"pirms divām dienām\", tāpēc gribas likt to priekšā.",
+      "Līdz šim brīdim ar *[[since]] / [[for]]*: Present Perfect: *I've [[lived]] here [[since]] 2019.*"
      ]
     }
    }
@@ -540,7 +540,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*at 8 o'clock yesterday, while, when, as*",
     "example": "*I was cooking when the phone rang.*",
     "watch": [
-     "Not for finished repeated actions: *I [[went]] there three times* (not *I was going there three times*).",
+     "Finished repeated actions: past simple: *I [[went]] there three times.*",
      "*was / were going to* = a plan in the past: *I [[was going to]] call you, but I forgot.*"
     ],
     "v2": {
@@ -567,16 +567,16 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "I was knowing her.",
-       "I knew her."
+       "I [[was knowing]] her.",
+       "I [[knew]] her."
       ],
       [
-       "They was waiting.",
-       "They were waiting."
+       "They [[was]] waiting.",
+       "They [[were]] waiting."
       ],
       [
-       "I was work when he called.",
-       "I was working when he called."
+       "I [[was work]] when he called.",
+       "I [[was working]] when he called."
       ]
      ],
      "uses": [
@@ -597,8 +597,8 @@ return json_decode(<<<'EF_JSON_END'
         "while"
        ],
        "ex": [
-        "I [[was cooking]] when he [[called]].",
-        "He [[called]] while I [[was cooking]]."
+        "I [[was cooking]] when he called.",
+        "He called while I [[was cooking]]."
        ]
       },
       {
@@ -618,7 +618,7 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Not for finished repeated actions: *I [[went]] there three times* (not *I was going there three times*).",
+      "Finished repeated actions: past simple: *I [[went]] there three times.*",
       "*was / were going to* = a plan in the past: *I [[was going to]] call you, but I forgot.*"
      ]
     }
@@ -637,7 +637,7 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*at 8 o'clock yesterday, while, when, as*",
     "watch": [
-     "Ne pabeigtām atkārtotām darbībām: *I [[went]] there three times* (nevis *I was going there three times*).",
+     "Pabeigtas atkārtotas darbības: Past Simple: *I [[went]] there three times.*",
      "*was / were going to* = plāns pagātnē: *I [[was going to]] call you, but I forgot.*"
     ],
     "v2": {
@@ -664,16 +664,16 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "I was knowing her.",
-       "I knew her."
+       "I [[was knowing]] her.",
+       "I [[knew]] her."
       ],
       [
-       "They was waiting.",
-       "They were waiting."
+       "They [[was]] waiting.",
+       "They [[were]] waiting."
       ],
       [
-       "I was work when he called.",
-       "I was working when he called."
+       "I [[was work]] when he called.",
+       "I [[was working]] when he called."
       ]
      ],
      "uses": [
@@ -694,8 +694,8 @@ return json_decode(<<<'EF_JSON_END'
         "while"
        ],
        "ex": [
-        "I [[was cooking]] when he [[called]].",
-        "He [[called]] while I [[was cooking]]."
+        "I [[was cooking]] when he called.",
+        "He called while I [[was cooking]]."
        ]
       },
       {
@@ -715,7 +715,7 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Ne pabeigtām atkārtotām darbībām: *I [[went]] there three times* (nevis *I was going there three times*).",
+      "Pabeigtas atkārtotas darbības: Past Simple: *I [[went]] there three times.*",
       "*was / were going to* = plāns pagātnē: *I [[was going to]] call you, but I forgot.*"
      ]
     }
@@ -745,10 +745,10 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
     "example": "*I have lived here for ten years.*",
     "watch": [
-     "*[[been]]* (went and came back) and *[[gone]]* (is still there): *She's [[been]] to Paris. She's [[gone]] to Paris.*",
-     "*[[already]]* before the main verb, *[[yet]]* at the end: *I've [[already]] [[eaten]]. Have you [[eaten]] [[yet]]?*",
-     "*[[for]]* + a period, *[[since]]* + a starting point: *[[for]] five years* (not *since five years*).",
-     "*How long have you [[lived]] here?* (not *How long do you live here?*)"
+     "*[[been]]* = went and came back, *[[gone]]* = is still there: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+     "*[[already]]* before the main verb, *[[yet]]* at the end: *I've [[already]] eaten. Have you eaten [[yet]]?*",
+     "*[[for]]* + a period, *[[since]]* + a starting point: *[[for]] five years, [[since]] 2020*.",
+     "*How long* + present perfect: *How long [[have]] you [[lived]] here?*"
     ],
     "v2": {
      "table": {
@@ -771,27 +771,21 @@ return json_decode(<<<'EF_JSON_END'
         "[[Has]] she seen it?"
        ]
       ],
-      "short": "Past participle: regular verbs *-ed* (*work[[ed]]*), irregular verbs: learn them (*see - [[seen]], go - [[gone]], be - [[been]]*)."
+      "short": "Past participle: regular verbs + *-ed* (*work[[ed]]*); irregular verbs: learn them (*see → [[seen]], go → [[gone]], be → [[been]]*)."
      },
      "mistakes": [
       [
-       "I have seen him yesterday.",
-       "I saw him yesterday."
+       "I [[have seen]] him yesterday.",
+       "I [[saw]] him yesterday."
       ],
       [
-       "I live here since 2020.",
-       "I have lived here since 2020."
+       "I [[live]] here since 2020.",
+       "I [[have lived]] here since 2020."
       ],
       [
-       "She has went home.",
-       "She has gone home."
+       "She has [[went]] home.",
+       "She has [[gone]] home."
       ]
-     ],
-     "watch": [
-      "*[[been]]* (went and came back) and *[[gone]]* (is still there): *She's [[been]] to Paris. She's [[gone]] to Paris.*",
-      "*[[already]]* before the main verb, *[[yet]]* at the end: *I've [[already]] [[eaten]]. Have you [[eaten]] [[yet]]?*",
-      "*[[for]]* + a period, *[[since]]* + a starting point: *[[for]] five years* (not *since five years*).",
-      "*How long have you [[lived]] here?* (not *How long do you live here?*)"
      ],
      "uses": [
       {
@@ -848,6 +842,12 @@ return json_decode(<<<'EF_JSON_END'
         "I haven't [[seen]] Ted today."
        ]
       }
+     ],
+     "watch": [
+      "*[[been]]* = went and came back, *[[gone]]* = is still there: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+      "*[[already]]* before the main verb, *[[yet]]* at the end: *I've [[already]] eaten. Have you eaten [[yet]]?*",
+      "*[[for]]* + a period, *[[since]]* + a starting point: *[[for]] five years, [[since]] 2020*.",
+      "*How long* + present perfect: *How long [[have]] you [[lived]] here?*"
      ]
     }
    },
@@ -865,10 +865,10 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*ever, never, just, already, yet, for, since, so far, this week*",
     "watch": [
-     "*[[been]]* (aizgāja un atgriezās) un *[[gone]]* (joprojām ir tur): *She's [[been]] to Paris. She's [[gone]] to Paris.*",
-     "*[[already]]* pirms pamatdarbības vārda, *[[yet]]* beigās: *I've [[already]] [[eaten]]. Have you [[eaten]] [[yet]]?*",
-     "*[[for]]* + laika posms, *[[since]]* + sākuma brīdis: *[[for]] five years* (nevis *since five years*). Latviski \"jau piecus gadus\", tāpēc rodas *[[since]]*.",
-     "*How long have you [[lived]] here?* (nevis *How long do you live here?*). Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
+     "*[[been]]* = aizgāja un atgriezās, *[[gone]]* = joprojām ir tur: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+     "*[[already]]* pirms pamatdarbības vārda, *[[yet]]* beigās: *I've [[already]] eaten. Have you eaten [[yet]]?*",
+     "*[[for]]* + laika posms, *[[since]]* + sākuma brīdis: *[[for]] five years, [[since]] 2020*. Latviski \"jau piecus gadus\", tāpēc gribas *[[since]]*.",
+     "*How long* + Present Perfect: *How long [[have]] you [[lived]] here?* Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
     ],
     "v2": {
      "table": {
@@ -891,27 +891,22 @@ return json_decode(<<<'EF_JSON_END'
         "[[Has]] she seen it?"
        ]
       ],
-      "short": "3. forma: kārtnie darbības vārdi ar -ed (*work[[ed]]*), nekārtnie jāiemācās (*see - [[seen]], go - [[gone]], be - [[been]]*)."
+      "short": "3. forma: kārtnie darbības vārdi + *-ed* (*work[[ed]]*); nekārtnie jāiemācās (*see → [[seen]], go → [[gone]], be → [[been]]*)."
      },
      "mistakes": [
       [
-       "I have seen him yesterday.",
-       "I saw him yesterday."
+       "I [[have seen]] him yesterday.",
+       "I [[saw]] him yesterday."
       ],
       [
-       "I live here since 2020.",
-       "I have lived here since 2020."
+       "I [[live]] here since 2020.",
+       "I [[have lived]] here since 2020.",
+       "Latviski \"dzīvoju kopš 2020. gada\" ir tagadnē, angliski vajag Present Perfect."
       ],
       [
-       "She has went home.",
-       "She has gone home."
+       "She has [[went]] home.",
+       "She has [[gone]] home."
       ]
-     ],
-     "watch": [
-      "*[[been]]* (aizgāja un atgriezās) un *[[gone]]* (joprojām ir tur): *She's [[been]] to Paris. She's [[gone]] to Paris.*",
-      "*[[already]]* pirms pamatdarbības vārda, *[[yet]]* beigās: *I've [[already]] [[eaten]]. Have you [[eaten]] [[yet]]?*",
-      "*[[for]]* + laika posms, *[[since]]* + sākuma brīdis: *[[for]] five years* (nevis *since five years*). Latviski \"jau piecus gadus\", tāpēc rodas *[[since]]*.",
-      "*How long have you [[lived]] here?* (nevis *How long do you live here?*). Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
      ],
      "uses": [
       {
@@ -968,6 +963,12 @@ return json_decode(<<<'EF_JSON_END'
         "I haven't [[seen]] Ted today."
        ]
       }
+     ],
+     "watch": [
+      "*[[been]]* = aizgāja un atgriezās, *[[gone]]* = joprojām ir tur: *She's [[been]] to Paris. She's [[gone]] to Paris.*",
+      "*[[already]]* pirms pamatdarbības vārda, *[[yet]]* beigās: *I've [[already]] eaten. Have you eaten [[yet]]?*",
+      "*[[for]]* + laika posms, *[[since]]* + sākuma brīdis: *[[for]] five years, [[since]] 2020*. Latviski \"jau piecus gadus\", tāpēc gribas *[[since]]*.",
+      "*How long* + Present Perfect: *How long [[have]] you [[lived]] here?* Latviski \"Cik ilgi tu te dzīvo?\" ir tagadnē."
      ]
     }
    }
@@ -1842,7 +1843,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*first mention, already mentioned, the only one, in general*",
     "example": "*I bought a jacket and a hat. The jacket was cheap, but I love hats.*",
     "watch": [
-     "*[[the]]* with instruments and some places: *play [[the]] piano, go to [[the]] cinema, listen to [[the]] radio*."
+     "*[[the]]* with musical instruments and some places: *She plays [[the]] piano. We went to [[the]] cinema.*"
     ],
     "v2": {
      "choice": {
@@ -1854,31 +1855,25 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "When",
-        "one of many, the first time we mention it, jobs",
-        "we both know which one, the second time, the only one",
-        "things in general, meals, sports, languages, most names"
-       ],
-       [
-        "Examples",
-        "*[[a]] film, [[an]] apple, She's [[a]] nurse.*",
-        "*[[the]] film we saw, [[the]] sun, [[the]] Internet*",
-        "*I like coffee. have lunch, play football, Riga*"
+        "one of many, the first time || *I saw [[a]] film.* ;; jobs || *She's [[a]] nurse.*",
+        "we both know which one || *Close [[the]] door, please.* ;; the second time || *[[The]] film was great.* ;; the only one || *[[the]] sun, [[the]] Internet*",
+        "things in general || *I like coffee.* ;; meals, sports, languages || *have lunch, play football, speak English* ;; most names || *Riga, Latvia*"
        ]
       ],
       "note": "*[[a]] / [[an]]* by sound: *[[a]] university, [[a]] European, [[an]] hour, [[an]] MBA*."
      },
      "mistakes": [
       [
-       "She is nurse.",
-       "She is a nurse."
+       "She is [[nurse]].",
+       "She is [[a nurse]]."
       ],
       [
-       "I like the coffee. (in general)",
-       "I like coffee."
+       "I go to work by [[the bus]].",
+       "I go to work by [[bus]]."
       ],
       [
-       "I go to work by the bus.",
-       "I go to work by bus."
+       "[[Sun]] is hot today.",
+       "[[The sun]] is hot today."
       ]
      ],
      "uses": [
@@ -1889,7 +1884,7 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "*the* with the only one, superlatives, seas and rivers, some countries",
+       "t": "*the* with superlatives, seas and rivers, some countries",
        "s": [
         "the best",
         "the Baltic Sea",
@@ -1908,13 +1903,13 @@ return json_decode(<<<'EF_JSON_END'
         "go to bed"
        ],
        "ex": [
-        "I'm at [[work]].",
-        "The children go to [[school]] at eight."
+        "I'm at work.",
+        "The children go to school at eight."
        ]
       }
      ],
      "watch": [
-      "*[[the]]* with instruments and some places: *play [[the]] piano, go to [[the]] cinema, listen to [[the]] radio*."
+      "*[[the]]* with musical instruments and some places: *She plays [[the]] piano. We went to [[the]] cinema.*"
      ]
     }
    },
@@ -1932,8 +1927,7 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*first mention, already mentioned, the only one, in general* (pirmoreiz, jau minēts, vienīgais, vispārīgi)",
     "watch": [
-     "Latviešu valodā artikulu nav, tāpēc tos bieži izlaiž, īpaši pie profesijām: *She's [[a]] nurse.*",
-     "*[[the]]* ar mūzikas instrumentiem un dažām vietām: *play [[the]] piano, go to [[the]] cinema, listen to [[the]] radio*."
+     "*[[the]]* ar mūzikas instrumentiem un dažām vietām: *She plays [[the]] piano. We went to [[the]] cinema.*"
     ],
     "v2": {
      "choice": {
@@ -1945,31 +1939,27 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Kad",
-        "viens no daudziem, pieminam pirmo reizi, profesijas",
-        "abi zinām, kurš; otro reizi; vienīgais",
-        "vispārīgi, ēdienreizes, sports, valodas, vairums vārdu"
-       ],
-       [
-        "Piemēri",
-        "*[[a]] film, [[an]] apple, She's [[a]] nurse.*",
-        "*[[the]] film we saw, [[the]] sun, [[the]] Internet*",
-        "*I like coffee. have lunch, play football, Riga*"
+        "viens no daudziem, pirmo reizi || *I saw [[a]] film.* ;; profesijas || *She's [[a]] nurse.*",
+        "abi zinām, kurš || *Close [[the]] door, please.* ;; otro reizi || *[[The]] film was great.* ;; vienīgais || *[[the]] sun, [[the]] Internet*",
+        "vispārīgi || *I like coffee.* ;; ēdienreizes, sports, valodas || *have lunch, play football, speak English* ;; vairums vārdu || *Riga, Latvia*"
        ]
       ],
       "note": "*[[a]] / [[an]]* pēc skaņas: *[[a]] university, [[a]] European, [[an]] hour, [[an]] MBA*."
      },
      "mistakes": [
       [
-       "She is nurse.",
-       "She is a nurse."
+       "She is [[nurse]].",
+       "She is [[a nurse]].",
+       "Latviešu valodā artikulu nav, tāpēc tos bieži izlaiž, īpaši pie profesijām."
       ],
       [
-       "I like the coffee. (vispār)",
-       "I like coffee."
+       "I go to work by [[the bus]].",
+       "I go to work by [[bus]]."
       ],
       [
-       "I go to work by the bus.",
-       "I go to work by bus."
+       "[[Sun]] is hot today.",
+       "[[The sun]] is hot today.",
+       "Latviski \"saule\" bez artikula, angliski vienīgajam vajag *the*."
       ]
      ],
      "uses": [
@@ -1980,7 +1970,7 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "*the* ar vienīgo, ar \"vis-\" (superlatīvu), jūrām un upēm, dažām valstīm",
+       "t": "*the* ar \"vis-\" (superlatīvu), jūrām un upēm, dažām valstīm",
        "s": [
         "the best",
         "the Baltic Sea",
@@ -1999,14 +1989,13 @@ return json_decode(<<<'EF_JSON_END'
         "go to bed"
        ],
        "ex": [
-        "I'm at [[work]].",
-        "The children go to [[school]] at eight."
+        "I'm at work.",
+        "The children go to school at eight."
        ]
       }
      ],
      "watch": [
-      "Latviešu valodā artikulu nav, tāpēc tos bieži izlaiž, īpaši pie profesijām: *She's [[a]] nurse.*",
-      "*[[the]]* ar mūzikas instrumentiem un dažām vietām: *play [[the]] piano, go to [[the]] cinema, listen to [[the]] radio*."
+      "*[[the]]* ar mūzikas instrumentiem un dažām vietām: *She plays [[the]] piano. We went to [[the]] cinema.*"
      ]
     }
    }
@@ -2035,10 +2024,10 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*how many, how much, a few, a little, enough, too much, too many*",
     "example": "*There isn't much time and there are too many things to do.*",
     "watch": [
-     "Uncountable + singular verb: *There [[is]] a lot of traffic. The money [[is]] on the table.*",
+     "Uncountable + singular verb: *The money [[is]] on the table. Your hair [[looks]] nice.*",
      "*[[any]]* = it doesn't matter which: *Take [[any]] seat.*",
      "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
-     "*[[much]]* in positive sentences sounds formal: *[[a lot of]] time* is more natural."
+     "*[[much]]* in positive sentences sounds formal: *We have [[a lot of]] time.*"
     ],
     "v2": {
      "choice": {
@@ -2049,39 +2038,39 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "positive",
-        "*[[some]] books, [[a lot of]] books*",
-        "*[[some]] milk, [[a lot of]] milk*"
+        "|| *[[some]] books, [[a lot of]] books*",
+        "|| *[[some]] milk, [[a lot of]] milk*"
        ],
        [
         "questions, negatives",
-        "*[[any]] books? not [[many]] books*",
-        "*[[any]] milk? not [[much]] milk*"
+        "|| *[[any]] books? not [[many]] books*",
+        "|| *[[any]] milk? not [[much]] milk*"
        ],
        [
         "a small amount",
-        "*[[a few]] books*",
-        "*[[a little]] milk*"
+        "|| *[[a few]] books*",
+        "|| *[[a little]] milk*"
        ],
        [
         "How…?",
-        "*[[How many]] books?*",
-        "*[[How much]] milk?*"
+        "|| *[[How many]] books?*",
+        "|| *[[How much]] milk?*"
        ]
       ],
-      "note": "*[[few]] / [[little]]* without *a* = almost none: *[[Few]] people came.* (a negative feeling)"
+      "note": "*[[few]] / [[little]]* without *a* = almost none: *[[Few]] people came.*"
      },
      "mistakes": [
       [
-       "How much people came?",
-       "How many people came?"
+       "[[How much]] people came?",
+       "[[How many]] people came?"
       ],
       [
-       "I have a few money.",
-       "I have a little money."
+       "I have [[a few]] money.",
+       "I have [[a little]] money."
       ],
       [
-       "There aren't some eggs.",
-       "There aren't any eggs."
+       "There aren't [[some]] eggs.",
+       "There aren't [[any]] eggs."
       ]
      ],
      "uses": [
@@ -2109,10 +2098,10 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Uncountable + singular verb: *There [[is]] a lot of traffic. The money [[is]] on the table.*",
+      "Uncountable + singular verb: *The money [[is]] on the table. Your hair [[looks]] nice.*",
       "*[[any]]* = it doesn't matter which: *Take [[any]] seat.*",
       "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
-      "*[[much]]* in positive sentences sounds formal: *[[a lot of]] time* is more natural."
+      "*[[much]]* in positive sentences sounds formal: *We have [[a lot of]] time.*"
      ]
     }
    },
@@ -2131,10 +2120,10 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*how many, how much, a few, a little, enough, too much, too many* (cik, mazliet, pietiekami, par daudz)",
     "watch": [
-     "Nesaskaitāms + vienskaitlis: *There [[is]] a lot of traffic. The money [[is]] on the table.* Latviski \"nauda ir\", bet \"mati ir\" daudzskaitlī: angliski *hair* ir nesaskaitāms.",
+     "Nesaskaitāms + vienskaitlis: *The money [[is]] on the table. Your hair [[looks]] nice.* Latviski \"mati\" ir daudzskaitlī, angliski *hair* ir nesaskaitāms.",
      "*[[any]]* = vienalga kurš: *Take [[any]] seat.*",
      "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
-     "*[[much]]* apstiprinājumā izklausās oficiāli: *[[a lot of]] time* ir dabiskāk."
+     "*[[much]]* apstiprinājumā izklausās oficiāli: *We have [[a lot of]] time.*"
     ],
     "v2": {
      "choice": {
@@ -2145,39 +2134,40 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "apstiprinājums",
-        "*[[some]] books, [[a lot of]] books*",
-        "*[[some]] milk, [[a lot of]] milk*"
+        "|| *[[some]] books, [[a lot of]] books*",
+        "|| *[[some]] milk, [[a lot of]] milk*"
        ],
        [
         "jautājums, noliegums",
-        "*[[any]] books? not [[many]] books*",
-        "*[[any]] milk? not [[much]] milk*"
+        "|| *[[any]] books? not [[many]] books*",
+        "|| *[[any]] milk? not [[much]] milk*"
        ],
        [
         "mazliet",
-        "*[[a few]] books*",
-        "*[[a little]] milk*"
+        "|| *[[a few]] books*",
+        "|| *[[a little]] milk*"
        ],
        [
         "Cik…?",
-        "*[[How many]] books?*",
-        "*[[How much]] milk?*"
+        "|| *[[How many]] books?*",
+        "|| *[[How much]] milk?*"
        ]
       ],
-      "note": "*[[few]] / [[little]]* bez *a* = gandrīz nemaz: *[[Few]] people came.* (negatīva nozīme)"
+      "note": "*[[few]] / [[little]]* bez *a* = gandrīz nemaz: *[[Few]] people came.*"
      },
      "mistakes": [
       [
-       "How much people came?",
-       "How many people came?"
+       "[[How much]] people came?",
+       "[[How many]] people came?",
+       "Latviski abos gadījumos \"cik\", angliski jāizvēlas pēc lietvārda."
       ],
       [
-       "I have a few money.",
-       "I have a little money."
+       "I have [[a few]] money.",
+       "I have [[a little]] money."
       ],
       [
-       "There aren't some eggs.",
-       "There aren't any eggs."
+       "There aren't [[some]] eggs.",
+       "There aren't [[any]] eggs."
       ]
      ],
      "uses": [
@@ -2205,10 +2195,10 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Nesaskaitāms + vienskaitlis: *There [[is]] a lot of traffic. The money [[is]] on the table.* Latviski \"nauda ir\", bet \"mati ir\" daudzskaitlī: angliski *hair* ir nesaskaitāms.",
+      "Nesaskaitāms + vienskaitlis: *The money [[is]] on the table. Your hair [[looks]] nice.* Latviski \"mati\" ir daudzskaitlī, angliski *hair* ir nesaskaitāms.",
       "*[[any]]* = vienalga kurš: *Take [[any]] seat.*",
       "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
-      "*[[much]]* apstiprinājumā izklausās oficiāli: *[[a lot of]] time* ir dabiskāk."
+      "*[[much]]* apstiprinājumā izklausās oficiāli: *We have [[a lot of]] time.*"
      ]
     }
    }
@@ -2400,11 +2390,10 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition: -ing*",
     "example": "*I enjoy cooking, but I decided to eat out tonight.*",
     "watch": [
-     "*want / would like* + person + *to*: *I want you [[to come]]* (not *I want that you come*).",
      "*let / make* + person + base verb: *Let me [[go]]. She made me [[laugh]].*",
      "Modal verbs + base verb, without *to*: *I can [[swim]].*",
-     "*[[go]]* + *-ing* for activities: *[[go]] [[shopping]], [[go]] [[swimming]]*.",
-     "*look forward to* + *-ing*: *I look forward [[to seeing]] you.*"
+     "*[[go]]* + *-ing* for activities: *Let's go [[shopping]].*",
+     "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
     ],
     "v2": {
      "choice": {
@@ -2416,31 +2405,29 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Verbs",
-        "*enjoy, finish, mind, avoid, suggest, keep, practise*",
-        "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse*",
-        "*like, love, hate, start, begin* (almost the same meaning)"
-       ],
-       [
-        "Examples",
-        "*I enjoy [[reading]].*",
-        "*He decided [[to stay]].*",
-        "*I like [[swimming]]. = I like [[to swim]].*"
+        "*enjoy, finish, mind, avoid, suggest, keep, practise* || *I enjoy [[reading]].*",
+        "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse* || *He decided [[to stay]].*",
+        "*like, love, hate, start, begin* (almost the same meaning) || *I like [[swimming]].* ;; || *I like [[to swim]].*"
        ]
       ],
       "note": "After a preposition: always *-ing*: *good at [[cooking]], before [[leaving]], thank you for [[helping]]*."
      },
      "mistakes": [
       [
-       "I enjoy to read.",
-       "I enjoy reading."
+       "I enjoy [[to read]].",
+       "I enjoy [[reading]]."
       ],
       [
-       "I want going home.",
-       "I want to go home."
+       "I want [[going]] home.",
+       "I want [[to go]] home."
       ],
       [
-       "She's interested in learn Spanish.",
-       "She's interested in learning Spanish."
+       "She's interested in [[learn]] Spanish.",
+       "She's interested in [[learning]] Spanish."
+      ],
+      [
+       "I want [[that you come]].",
+       "I want [[you to come]]."
       ]
      ],
      "uses": [
@@ -2455,16 +2442,16 @@ return json_decode(<<<'EF_JSON_END'
        "ex": [
         "I stopped [[smoking]]. (= I quit)",
         "I stopped [[to smoke]]. (= to have a cigarette)",
-        "Remember [[to call]] her. (a task) / I remember [[meeting]] her. (a memory)"
+        "Remember [[to call]] her. (a task)",
+        "I remember [[meeting]] her. (a memory)"
        ]
       }
      ],
      "watch": [
-      "*want / would like* + person + *to*: *I want you [[to come]]* (not *I want that you come*).",
       "*let / make* + person + base verb: *Let me [[go]]. She made me [[laugh]].*",
       "Modal verbs + base verb, without *to*: *I can [[swim]].*",
-      "*[[go]]* + *-ing* for activities: *[[go]] [[shopping]], [[go]] [[swimming]]*.",
-      "*look forward to* + *-ing*: *I look forward [[to seeing]] you.*"
+      "*[[go]]* + *-ing* for activities: *Let's go [[shopping]].*",
+      "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
      ]
     }
    },
@@ -2483,11 +2470,10 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*enjoy, avoid, finish + -ing; want, decide, hope + to; after a preposition*: *-ing* (aiz prievārda: *-ing*)",
     "watch": [
-     "*want / would like* + cilvēks + *to*: *I want you [[to come]]* (nevis *I want that you come*). Latviski \"gribu, lai tu atnāc\", tāpēc rodas *that*.",
      "*let / make* + cilvēks + pamatforma: *Let me [[go]]. She made me [[laugh]].*",
      "Modālie darbības vārdi + pamatforma bez *to*: *I can [[swim]].*",
-     "*[[go]]* + *-ing* nodarbēm: *[[go]] [[shopping]], [[go]] [[swimming]]*.",
-     "*look forward to* + *-ing*: *I look forward [[to seeing]] you.*"
+     "*[[go]]* + *-ing* nodarbēm: *Let's go [[shopping]].*",
+     "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
     ],
     "v2": {
      "choice": {
@@ -2499,31 +2485,30 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Darbības vārdi",
-        "*enjoy, finish, mind, avoid, suggest, keep, practise*",
-        "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse*",
-        "*like, love, hate, start, begin* (gandrīz tā pati nozīme)"
-       ],
-       [
-        "Piemēri",
-        "*I enjoy [[reading]].*",
-        "*He decided [[to stay]].*",
-        "*I like [[swimming]]. = I like [[to swim]].*"
+        "*enjoy, finish, mind, avoid, suggest, keep, practise* || *I enjoy [[reading]].*",
+        "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse* || *He decided [[to stay]].*",
+        "*like, love, hate, start, begin* (gandrīz tā pati nozīme) || *I like [[swimming]].* ;; || *I like [[to swim]].*"
        ]
       ],
       "note": "Aiz prievārda vienmēr *-ing*: *good at [[cooking]], before [[leaving]], thank you for [[helping]]*."
      },
      "mistakes": [
       [
-       "I enjoy to read.",
-       "I enjoy reading."
+       "I enjoy [[to read]].",
+       "I enjoy [[reading]]."
       ],
       [
-       "I want going home.",
-       "I want to go home."
+       "I want [[going]] home.",
+       "I want [[to go]] home."
       ],
       [
-       "She's interested in learn Spanish.",
-       "She's interested in learning Spanish."
+       "She's interested in [[learn]] Spanish.",
+       "She's interested in [[learning]] Spanish."
+      ],
+      [
+       "I want [[that you come]].",
+       "I want [[you to come]].",
+       "Latviski \"gribu, lai tu atnāc\", tāpēc rodas *that*."
       ]
      ],
      "uses": [
@@ -2538,16 +2523,16 @@ return json_decode(<<<'EF_JSON_END'
        "ex": [
         "I stopped [[smoking]]. (= atmetu)",
         "I stopped [[to smoke]]. (= apstājos, lai uzsmēķētu)",
-        "Remember [[to call]] her. (uzdevums) / I remember [[meeting]] her. (atmiņa)"
+        "Remember [[to call]] her. (uzdevums)",
+        "I remember [[meeting]] her. (atmiņa)"
        ]
       }
      ],
      "watch": [
-      "*want / would like* + cilvēks + *to*: *I want you [[to come]]* (nevis *I want that you come*). Latviski \"gribu, lai tu atnāc\", tāpēc rodas *that*.",
       "*let / make* + cilvēks + pamatforma: *Let me [[go]]. She made me [[laugh]].*",
       "Modālie darbības vārdi + pamatforma bez *to*: *I can [[swim]].*",
-      "*[[go]]* + *-ing* nodarbēm: *[[go]] [[shopping]], [[go]] [[swimming]]*.",
-      "*look forward to* + *-ing*: *I look forward [[to seeing]] you.*"
+      "*[[go]]* + *-ing* nodarbēm: *Let's go [[shopping]].*",
+      "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
      ]
     }
    }
@@ -3160,8 +3145,8 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*Everybody in my family likes coffee, but my parents drink tea.*",
     "watch": [
      "*people, police, children* are plural: *People [[are]] friendly.*",
-     "*news* takes a singular verb: *The news [[is]] good.*",
-     "*there is* + one, *there are* + more: *There [[are]] two cafés here.*"
+     "*news* is singular: *The news [[is]] good.*",
+     "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*"
     ],
     "v2": {
      "table": {
@@ -3195,16 +3180,16 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "My sister work in a bank.",
-       "My sister works in a bank."
+       "My sister [[work]] in a bank.",
+       "My sister [[works]] in a bank."
       ],
       [
-       "Everybody know him.",
-       "Everybody knows him."
+       "Everybody [[know]] him.",
+       "Everybody [[knows]] him."
       ],
       [
-       "Tom and Anna lives here.",
-       "Tom and Anna live here."
+       "Tom and Anna [[lives]] here.",
+       "Tom and Anna [[live]] here."
       ]
      ],
      "uses": [
@@ -3241,8 +3226,8 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*people, police, children* are plural: *People [[are]] friendly.*",
-      "*news* takes a singular verb: *The news [[is]] good.*",
-      "*there is* + one, *there are* + more: *There [[are]] two cafés here.*"
+      "*news* is singular: *The news [[is]] good.*",
+      "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*"
      ]
     }
    },
@@ -3259,7 +3244,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*he, she, it, everybody, nobody, every, one of, and, there is / there are* (viņš, viņa, *visi, neviens, katrs*, viens no, un, ir)",
     "watch": [
      "*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
-     "*news* lieto ar vienskaitli: *The news [[is]] good.* Latviski \"ziņas\" ir daudzskaitlī, tāpēc gribas *are*.",
+     "*news* ir vienskaitlī: *The news [[is]] good.* Latviski \"ziņas ir\" ir daudzskaitlī, tāpēc gribas *are*.",
      "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"
     ],
     "v2": {
@@ -3294,16 +3279,17 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "My sister work in a bank.",
-       "My sister works in a bank."
+       "My sister [[work]] in a bank.",
+       "My sister [[works]] in a bank."
       ],
       [
-       "Everybody know him.",
-       "Everybody knows him."
+       "Everybody [[know]] him.",
+       "Everybody [[knows]] him.",
+       "Latviski \"visi zina\" ir daudzskaitlī, bet *everybody* ir vienskaitlī."
       ],
       [
-       "Tom and Anna lives here.",
-       "Tom and Anna live here."
+       "Tom and Anna [[lives]] here.",
+       "Tom and Anna [[live]] here."
       ]
      ],
      "uses": [
@@ -3340,7 +3326,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
-      "*news* lieto ar vienskaitli: *The news [[is]] good.* Latviski \"ziņas\" ir daudzskaitlī, tāpēc gribas *are*.",
+      "*news* ir vienskaitlī: *The news [[is]] good.* Latviski \"ziņas ir\" ir daudzskaitlī, tāpēc gribas *are*.",
       "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"
      ]
     }
@@ -3366,8 +3352,8 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*child, person, man, woman, tooth, foot, mouse, police*",
     "example": "*One mouse is cute, but ten mice are a problem!*",
     "watch": [
-     "Vowel + *-y* just adds *-s*: *day → [[days]], boy → [[boys]]*.",
-     "No plural (uncountable): *[[advice]], information, furniture, news*: *some [[advice]]* (not *advices*)."
+     "Vowel + *-y* just adds *-s*: *We stayed three [[days]]. Two [[boys]] came.*",
+     "*information, furniture, news* have no plural: *We need new [[furniture]]. The news [[is]] good.*"
     ],
     "v2": {
      "table": {
@@ -3416,16 +3402,20 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "two childrens",
-       "two children"
+       "two [[childrens]]",
+       "two [[children]]"
       ],
       [
-       "many peoples",
-       "many people"
+       "many [[peoples]]",
+       "many [[people]]"
       ],
       [
-       "The police is here.",
-       "The police are here."
+       "The police [[is]] here.",
+       "The police [[are]] here."
+      ],
+      [
+       "She gave me [[advices]].",
+       "She gave me [[some advice]]."
       ]
      ],
      "uses": [
@@ -3451,8 +3441,8 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Vowel + *-y* just adds *-s*: *day → [[days]], boy → [[boys]]*.",
-      "No plural (uncountable): *[[advice]], information, furniture, news*: *some [[advice]]* (not *advices*)."
+      "Vowel + *-y* just adds *-s*: *We stayed three [[days]]. Two [[boys]] came.*",
+      "*information, furniture, news* have no plural: *We need new [[furniture]]. The news [[is]] good.*"
      ]
     }
    },
@@ -3467,8 +3457,8 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*child, person*, man, *woman, tooth, foot, mouse, police* (bērns, cilvēks, vīrietis, *sieviete, zobs*, pēda, *pele, policija*)",
     "watch": [
-     "Patskanis + *-y*: tikai *-s*: *day → [[days]], boy → [[boys]]*.",
-     "Bez daudzskaitļa: *[[advice]], information, furniture, news*: *some [[advice]]* (nevis *advices*). Latviski \"padomi, mēbeles, ziņas\" ir daudzskaitlī, angliski nē."
+     "Patskanis + *-y*: tikai *-s*: *We stayed three [[days]]. Two [[boys]] came.*",
+     "*information, furniture, news* nav daudzskaitļa: *We need new [[furniture]]. The news [[is]] good.* Latviski \"mēbeles, ziņas\" ir daudzskaitlī."
     ],
     "v2": {
      "table": {
@@ -3517,16 +3507,21 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "two childrens",
-       "two children"
+       "two [[childrens]]",
+       "two [[children]]"
       ],
       [
-       "many peoples",
-       "many people"
+       "many [[peoples]]",
+       "many [[people]]"
       ],
       [
-       "The police is here.",
-       "The police are here."
+       "The police [[is]] here.",
+       "The police [[are]] here."
+      ],
+      [
+       "She gave me [[advices]].",
+       "She gave me [[some advice]].",
+       "Latviski \"padomi\" ir daudzskaitlī, bet *advice* ir nesaskaitāms."
       ]
      ],
      "uses": [
@@ -3552,8 +3547,8 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Patskanis + *-y*: tikai *-s*: *day → [[days]], boy → [[boys]]*.",
-      "Bez daudzskaitļa: *[[advice]], information, furniture, news*: *some [[advice]]* (nevis *advices*). Latviski \"padomi, mēbeles, ziņas\" ir daudzskaitlī, angliski nē."
+      "Patskanis + *-y*: tikai *-s*: *We stayed three [[days]]. Two [[boys]] came.*",
+      "*information, furniture, news* nav daudzskaitļa: *We need new [[furniture]]. The news [[is]] good.* Latviski \"mēbeles, ziņas\" ir daudzskaitlī."
      ]
     }
    }
@@ -3578,11 +3573,11 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall*",
     "example": "*I start work at 9 on Mondays, but in summer I work from home.*",
     "watch": [
-     "*[[in]] the morning*, but *[[on]] Monday morning, [[on]] Friday evening*.",
-     "*[[at]] the weekend* (British), *[[on]] the weekend* (American).",
-     "*[[at]] home, [[at]] work, [[at]] school*, but *[[in]] the house, [[in]] the office*.",
-     "*[[on]] the bus / train / plane*, but *[[in]] a car / taxi*.",
-     "*arrive [[in]]* + a city or country, *arrive [[at]]* + a place, never *arrive to*: *We arrived [[in]] Riga. We arrived [[at]] the station.*"
+     "*[[in]] the morning*, but *[[on]]* + a day: *I work [[in]] the morning. I'm free [[on]] Monday morning.*",
+     "*[[at]] the weekend* (British), *[[on]] the weekend* (American): *What are you doing [[at]] the weekend?*",
+     "*[[at]] home* (where you live), *[[in]] the house* (inside the building): *She's [[at]] home. The cat is [[in]] the house.*",
+     "*[[in]]* a car or taxi, but *[[on]]* public transport: *I came [[in]] a taxi. I read [[on]] the train.*",
+     "*arrive [[in]]* a city or country, *arrive [[at]]* a place: *We arrived [[at]] the station.*"
     ],
     "v2": {
      "choice": {
@@ -3594,39 +3589,36 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Time",
-        "clock time, night: *[[at]] 7, [[at]] night*",
-        "days and dates: *[[on]] Monday, [[on]] 5 May, [[on]] Friday evening*",
-        "months, years, seasons, parts of the day: *[[in]] May, [[in]] 2020, [[in]] winter, [[in]] the morning*"
+        "clock time || *[[at]] 7, [[at]] half past six* ;; night || *[[at]] night*",
+        "days and dates || *[[on]] Monday, [[on]] 5 May* ;; a day + part of the day || *[[on]] Friday evening*",
+        "months, years, seasons || *[[in]] May, [[in]] 2020, [[in]] winter* ;; parts of the day || *[[in]] the morning*"
        ],
        [
         "Place",
-        "a point, a place where you do something: *[[at]] the bus stop, [[at]] work, [[at]] home*",
-        "a surface: *[[on]] the table, [[on]] the wall, [[on]] the third floor*",
-        "inside, a town or a country: *[[in]] the fridge, [[in]] my bag, [[in]] Riga*"
+        "a point || *[[at]] the bus stop* ;; a place where you do something || *[[at]] work, [[at]] home*",
+        "a surface || *[[on]] the table, [[on]] the wall* ;; public transport || *[[on]] the bus*",
+        "inside || *[[in]] the fridge, [[in]] my bag* ;; a town or a country || *[[in]] Riga, [[in]] Latvia*"
        ]
       ],
       "note": "No preposition: *[[tomorrow]], [[yesterday]], [[next]] Monday, [[last]] week, [[this]] year, [[every]] day*."
      },
      "mistakes": [
       [
-       "I was born at 1990.",
-       "I was born in 1990."
+       "I was born [[at]] 1990.",
+       "I was born [[in]] 1990."
       ],
       [
-       "See you on next Monday.",
-       "See you next Monday."
+       "See you [[on next]] Monday.",
+       "See you [[next]] Monday."
       ],
       [
-       "The keys are at the table.",
-       "The keys are on the table."
+       "The keys are [[at]] the table.",
+       "The keys are [[on]] the table."
+      ],
+      [
+       "We arrived [[to]] Riga.",
+       "We arrived [[in]] Riga."
       ]
-     ],
-     "watch": [
-      "*[[in]] the morning*, but *[[on]] Monday morning, [[on]] Friday evening*.",
-      "*[[at]] the weekend* (British), *[[on]] the weekend* (American).",
-      "*[[at]] home, [[at]] work, [[at]] school*, but *[[in]] the house, [[in]] the office*.",
-      "*[[on]] the bus / train / plane*, but *[[in]] a car / taxi*.",
-      "*arrive [[in]]* + a city or country, *arrive [[at]]* + a place, never *arrive to*: *We arrived [[in]] Riga. We arrived [[at]] the station.*"
      ],
      "uses": [
       {
@@ -3635,6 +3627,13 @@ return json_decode(<<<'EF_JSON_END'
         "I start work [[at]] 9 [[on]] Mondays, but [[in]] summer I work from home."
        ]
       }
+     ],
+     "watch": [
+      "*[[in]] the morning*, but *[[on]]* + a day: *I work [[in]] the morning. I'm free [[on]] Monday morning.*",
+      "*[[at]] the weekend* (British), *[[on]] the weekend* (American): *What are you doing [[at]] the weekend?*",
+      "*[[at]] home* (where you live), *[[in]] the house* (inside the building): *She's [[at]] home. The cat is [[in]] the house.*",
+      "*[[in]]* a car or taxi, but *[[on]]* public transport: *I came [[in]] a taxi. I read [[on]] the train.*",
+      "*arrive [[in]]* a city or country, *arrive [[at]]* a place: *We arrived [[at]] the station.*"
      ]
     }
    },
@@ -3649,11 +3648,11 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*at 7, on Monday, in May, at night, at work, in the kitchen, on the wall* (septiņos, *pirmdien*, maijā, naktī, darbā, virtuvē, pie *sienas*)",
     "watch": [
-     "*[[in]] the morning*, bet *[[on]] Monday morning, [[on]] Friday evening*. Latviski \"piektdienas vakarā\", angliski ar dienu *[[on]]*.",
-     "*[[at]] the weekend* (britu), *[[on]] the weekend* (amerikāņu).",
-     "*[[at]] home, [[at]] work, [[at]] school*, bet *[[in]] the house, [[in]] the office*.",
-     "*[[on]] the bus / train / plane*, bet *[[in]] a car / taxi*. Latviski \"autobusā\", angliski *[[on]] the bus*.",
-     "*arrive [[in]]* + pilsēta vai valsts, *arrive [[at]]* + vieta, nekad *arrive to*: *We arrived [[in]] Riga. We arrived [[at]] the station.*"
+     "*[[in]] the morning*, bet ar dienu *[[on]]*: *I work [[in]] the morning. I'm free [[on]] Monday morning.* Latviski \"pirmdienas rītā\", tāpēc gribas *[[in]]*.",
+     "*[[at]] the weekend* (britu), *[[on]] the weekend* (amerikāņu): *What are you doing [[at]] the weekend?*",
+     "*[[at]] home* (kur dzīvo), *[[in]] the house* (ēkas iekšā): *She's [[at]] home. The cat is [[in]] the house.*",
+     "*[[in]]* auto vai taksī, bet *[[on]]* sabiedriskajā transportā: *I came [[in]] a taxi. I read [[on]] the train.* Latviski \"vilcienā\", tāpēc gribas *[[in]]*.",
+     "*arrive [[in]]* pilsētā vai valstī, *arrive [[at]]* vietā: *We arrived [[at]] the station.*"
     ],
     "v2": {
      "choice": {
@@ -3665,39 +3664,37 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Laiks",
-        "pulksteņa laiks, nakts: *[[at]] 7, [[at]] night*",
-        "dienas un datumi: *[[on]] Monday, [[on]] 5 May, [[on]] Friday evening*",
-        "mēneši, gadi, gadalaiki, dienas daļas: *[[in]] May, [[in]] 2020, [[in]] winter, [[in]] the morning*"
+        "pulksteņa laiks || *[[at]] 7, [[at]] half past six* ;; nakts || *[[at]] night*",
+        "dienas un datumi || *[[on]] Monday, [[on]] 5 May* ;; diena + dienas daļa || *[[on]] Friday evening*",
+        "mēneši, gadi, gadalaiki || *[[in]] May, [[in]] 2020, [[in]] winter* ;; dienas daļas || *[[in]] the morning*"
        ],
        [
         "Vieta",
-        "punkts, vieta, kur kaut ko dara: *[[at]] the bus stop, [[at]] work, [[at]] home*",
-        "uz virsmas: *[[on]] the table, [[on]] the wall, [[on]] the third floor*",
-        "iekšā, pilsēta vai valsts: *[[in]] the fridge, [[in]] my bag, [[in]] Riga*"
+        "punkts || *[[at]] the bus stop* ;; vieta, kur kaut ko dara || *[[at]] work, [[at]] home*",
+        "uz virsmas || *[[on]] the table, [[on]] the wall* ;; sabiedriskais transports || *[[on]] the bus*",
+        "iekšā || *[[in]] the fridge, [[in]] my bag* ;; pilsēta vai valsts || *[[in]] Riga, [[in]] Latvia*"
        ]
       ],
       "note": "Bez prievārda: *[[tomorrow]], [[yesterday]], [[next]] Monday, [[last]] week, [[this]] year, [[every]] day*."
      },
      "mistakes": [
       [
-       "I was born at 1990.",
-       "I was born in 1990."
+       "I was born [[at]] 1990.",
+       "I was born [[in]] 1990."
       ],
       [
-       "See you on next Monday.",
-       "See you next Monday."
+       "See you [[on next]] Monday.",
+       "See you [[next]] Monday."
       ],
       [
-       "The keys are at the table.",
-       "The keys are on the table."
+       "The keys are [[at]] the table.",
+       "The keys are [[on]] the table."
+      ],
+      [
+       "We arrived [[to]] Riga.",
+       "We arrived [[in]] Riga.",
+       "Latviski \"atbraucām uz Rīgu\", tāpēc rodas *to*."
       ]
-     ],
-     "watch": [
-      "*[[in]] the morning*, bet *[[on]] Monday morning, [[on]] Friday evening*. Latviski \"piektdienas vakarā\", angliski ar dienu *[[on]]*.",
-      "*[[at]] the weekend* (britu), *[[on]] the weekend* (amerikāņu).",
-      "*[[at]] home, [[at]] work, [[at]] school*, bet *[[in]] the house, [[in]] the office*.",
-      "*[[on]] the bus / train / plane*, bet *[[in]] a car / taxi*. Latviski \"autobusā\", angliski *[[on]] the bus*.",
-      "*arrive [[in]]* + pilsēta vai valsts, *arrive [[at]]* + vieta, nekad *arrive to*: *We arrived [[in]] Riga. We arrived [[at]] the station.*"
      ],
      "uses": [
       {
@@ -3706,6 +3703,13 @@ return json_decode(<<<'EF_JSON_END'
         "I start work [[at]] 9 [[on]] Mondays, but [[in]] summer I work from home."
        ]
       }
+     ],
+     "watch": [
+      "*[[in]] the morning*, bet ar dienu *[[on]]*: *I work [[in]] the morning. I'm free [[on]] Monday morning.* Latviski \"pirmdienas rītā\", tāpēc gribas *[[in]]*.",
+      "*[[at]] the weekend* (britu), *[[on]] the weekend* (amerikāņu): *What are you doing [[at]] the weekend?*",
+      "*[[at]] home* (kur dzīvo), *[[in]] the house* (ēkas iekšā): *She's [[at]] home. The cat is [[in]] the house.*",
+      "*[[in]]* auto vai taksī, bet *[[on]]* sabiedriskajā transportā: *I came [[in]] a taxi. I read [[on]] the train.* Latviski \"vilcienā\", tāpēc gribas *[[in]]*.",
+      "*arrive [[in]]* pilsētā vai valstī, *arrive [[at]]* vietā: *We arrived [[at]] the station.*"
      ]
     }
    }

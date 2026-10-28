@@ -111,6 +111,8 @@ CARDS2 = {
 
 import cards2_a2  # noqa: E402
 CARDS2.update(cards2_a2.CARDS)
+import cards2_rest  # noqa: E402   (reworked after the Adverbs review; replaces the versions above)
+CARDS2.update(cards2_rest.CARDS)
 
 # The form to learn is green in every example (teacher, 28 October): in the italic parts of table cells, notes and
 # Watch out, these words get [[ ]]. Parts after "not" / "nevis" (the wrong version) stay as they are.

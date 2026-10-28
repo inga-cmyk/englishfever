@@ -1292,6 +1292,10 @@
       return h('span', { class: 'rc-seg' + (k ? ' more' : '') }, d ? h('span', { class: 'rc-desc' }, richHl(d)) : null, h('span', { class: 'rc-eg' }, richHl(seg.slice(i + 3))));
     }));
   }
+  function cellHl(c) {   // a form-table cell; " ;; " = one more line
+    var segs = String(c).split(' ;; ');
+    return segs.length < 2 ? hl(c) : h('span', null, segs.map(function (x) { return h('span', { class: 'rc-line' }, hl(x)); }));
+  }
   function badHl(t) {   // the wrong part of a wrong sentence: red and underlined, the rest plain
     var frag = document.createDocumentFragment();
     String(t || '').split(/\[\[|\]\]/).forEach(function (part, i) {
@@ -1308,11 +1312,11 @@
       parts.push(h('div', { class: 'rc-scroll rc-wide' + (v.table.plain ? ' rc-keep' : '') }, h('table', { class: 'rc-table' + (v.table.plain ? ' rc-plain' : '') },
         h('thead', null, h('tr', null, h('th', null, ''), v.table.cols.map(function (c, i) { return h('th', { class: 'c' + i }, c); }))),
         h('tbody', null, v.table.rows.map(function (r) {
-          return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c, i) { return h('td', { class: 'c' + i }, hl(c)); }));
+          return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c, i) { return h('td', { class: 'c' + i }, cellHl(c)); }));
         })))));
       parts.push(h('div', { class: 'rc-stack' + (v.table.plain ? ' rc-plain' : '') }, v.table.cols.map(function (c, i) {   // the same table for a phone: one block per column
         return h('div', { class: 'rc-col c' + i }, h('div', { class: 'rc-col-h' }, c), v.table.rows.map(function (r) {
-          return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, hl(r[i + 1])));
+          return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, cellHl(r[i + 1])));
         }));
       })));
       if (v.table.short) parts.push(h('p', { class: 'rc-note' }, richHl(v.table.short)));

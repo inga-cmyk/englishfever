@@ -442,7 +442,7 @@ def revise(original):
     report_fix('rq-B22-2a',
         q="'Where should I park?' she asked me. Which report is correct?",
         correct='She asked me where she should park.',
-        wrong=['She asked me where should she park.', 'She asked me where she should to park.', 'She asked me where did she should park.'],
+        wrong=['She asked me where should she park.', 'She asked me where she should to park.', 'She asked me where does she should park.'],
         why='Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.')
     report_fix('rq-B22-3a',
         answers=[['They asked where they should meet.', 'They asked where to meet.']],

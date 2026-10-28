@@ -788,3 +788,4 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rc-pair.marked .yes .hl { color: var(--good); font-weight: 800; }
 .rc-pair.marked .mk { color: inherit; }
 .rc-pair.marked .no .mk { color: var(--bad); } .rc-pair.marked .yes .mk { color: var(--good); }
+.note-tip { color: var(--gold-deep); }

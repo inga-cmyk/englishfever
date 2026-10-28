@@ -236,6 +236,7 @@ final class Db
         }
         self::ensureColumn('attempts', 'for_item', "$str NULL");
         self::ensureColumn('attempts', 'err', "$str NULL");   // the error types this answer is evidence for (docs/ERROR-TYPES.md)   // Second Chance: the mistake this task stood for (nothing is changed in earlier rows)
+        self::ensureColumn('attempts', 'note', "$txt NULL");   // accepted with a tip (spelling, apostrophe, capital): the teacher sees it next to the answer (teacher, 28 October)
         self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before these columns existed
         self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");

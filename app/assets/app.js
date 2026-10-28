@@ -1877,7 +1877,7 @@
           r.recent.length ? h('div', { class: 'tablewrap', style: 'border:0;border-radius:0' }, h('table', null, h('thead', null, h('tr', null, ['When', 'Question', 'Answer', '', 'Level', 'Thinking', 'Sec'].map(function (t) { return h('th', null, t); }))),
             h('tbody', null, r.recent.map(function (a) {
               return h('tr', null, h('td', { class: 'small' }, UI.fmtDate(a.at)), h('td', { style: 'max-width:340px;overflow:hidden;text-overflow:ellipsis' }, a.q, h('div', { class: 'small muted' }, a.id)),
-                h('td', { style: 'max-width:260px' }, a.answer || '', a.key ? h('div', { class: 'small muted' }, 'Expected: ' + a.key) : null),
+                h('td', { style: 'max-width:260px' }, a.answer || '', a.key ? h('div', { class: 'small muted' }, 'Expected: ' + a.key) : null, a.note ? h('div', { class: 'small note-tip' }, 'Accepted with a tip: ' + a.note) : null),
                 h('td', null, h('span', { class: 'pill ' + (a.correct ? 'good' : 'pink') }, a.correct ? '✓' : '✗')), h('td', null, a.level), h('td', null, bloomName(a.bloom)), h('td', { class: 'num' }, String(a.seconds)));
             })))) : h('p', { class: 'empty' }, 'No answers yet.'))));
     }).catch(fail);

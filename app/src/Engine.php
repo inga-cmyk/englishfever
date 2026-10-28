@@ -166,6 +166,7 @@ final class Engine
             'time_ms' => max(0, min(600000, $timeMs)), 'xp' => $xp, 'created_at' => $now,
             'for_item' => !empty($st['comeback']) ? (function () use ($st) { $q = $st['queue'][count($st['served']) - 1] ?? null; return $q === null ? null : ($st['queue_extra'][$q] ?? $q); })() : null,
             'err' => $errCodes ? implode(',', $errCodes) : null,
+            'note' => ($ok && !empty($g['notes'])) ? mb_substr(implode(' ', $g['notes']), 0, 300) : null,
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
         if ($row) {

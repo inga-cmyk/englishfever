@@ -265,13 +265,14 @@ final class Stats
             $days[] = ['day' => $d, 'minutes' => (int) round(($rows[$d]['seconds'] ?? 0) / 60), 'answers' => (int) ($rows[$d]['answers'] ?? 0)];
         }
         $recent = [];
-        foreach (Db::all('SELECT item_id, skill, level, bloom, correct, answer, time_ms, created_at FROM attempts WHERE user_id = ? ORDER BY id DESC LIMIT 60', [$id]) as $r) {
+        foreach (Db::all('SELECT item_id, skill, level, bloom, correct, answer, note, time_ms, created_at FROM attempts WHERE user_id = ? ORDER BY id DESC LIMIT 60', [$id]) as $r) {
             $it = Content::item($r['item_id']);
             $recent[] = [
                 'at' => (int) $r['created_at'], 'skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'],
                 'correct' => (bool) $r['correct'], 'answer' => $r['answer'], 'seconds' => (int) round($r['time_ms'] / 1000),
                 'q' => $it['q'] ?? $r['item_id'], 'id' => $r['item_id'],
                 'key' => !$r['correct'] && $it ? self::answerKey($it) : null,   // teachers only: what was expected
+                'note' => $r['note'] ?? null,   // accepted with a spelling (or apostrophe, capital) tip
             ];
         }
         $sessions = [];

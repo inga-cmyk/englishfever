@@ -6911,7 +6911,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "She asked me where should she park.",
 "She asked me where she should to park.",
-"She asked me where did she should park."
+"She asked me where does she should park."
 ],
 "why": "Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.",
 "wrong_why": {}

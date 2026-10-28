@@ -298,6 +298,45 @@
     m.el.querySelector('#later').onclick = m.close;
   }
 
+  /** My learning path: the course-book order and what this learner has mastered (docs/LEARNING-PATH.md).
+      Shows the current step with a button, the next few steps and how many are done; "All steps" opens the whole path. */
+  function pathCard() {
+    var card = h('div', { class: 'card pathcard' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, '…')));
+    var all = false;
+    function start(btn, st) {
+      btn.disabled = true;
+      api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: st.status === 'check' ? 6 : 10 }).then(function (r) {
+        state.sess = newSess(r.session, r.item); location.hash = '#/session';
+      }).catch(function (e) { btn.disabled = false; UI.toast(e.message); });
+    }
+    function node(st, i) {
+      var cls = 'pnode ' + st.status + (st.needs ? ' combo' : '');
+      var btn = (st.status === 'now' || (st.status === 'check' && st.id === path.current)) ? h('button', { type: 'button', class: 'btn small' }, st.status === 'check' ? 'Quick check' : 'Go', icon('arrow')) : null;
+      if (btn) btn.addEventListener('click', function () { start(btn, st); });
+      var sub = st.status === 'done' ? 'Done' + (st.pct !== null ? ' · ' + st.pct + '%' : '')
+        : st.status === 'locked' ? 'Opens when the parts are done'
+        : st.status === 'check' ? (st.id === path.current ? 'You may know it: a quick check' : 'Quick check later')
+        : st.status === 'now' ? (st.answers ? plural(st.answers, 'answer', 'answers') + ' so far' + (st.pct !== null ? ' · ' + st.pct + '%' : '') : 'Next for you')
+        : 'Later';
+      return h('div', { class: cls }, h('span', { class: 'pdot', 'aria-hidden': 'true' }, st.status === 'done' ? icon('check') : (st.needs ? '⇄' : String(st.num))),
+        h('div', { class: 'pbody' }, h('div', null, h('b', null, st.label), h('small', null, st.level + ' · ' + sub),
+          (st.status === 'now' && st.pct !== null) ? h('div', { class: 'mini' }, h('i', { style: 'width:' + Math.min(100, st.pct) + '%' })) : null), btn));
+    }
+    var path = null;
+    function draw() {
+      var steps = path.steps;
+      var ci = steps.findIndex(function (s) { return s.id === path.current; });
+      var show = all ? steps.map(function (s, i) { return [s, i]; })
+        : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci - 1 && p[1] <= ci + 3); });
+      card.replaceChildren(
+        h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, path.done + ' / ' + path.total + ' done')),
+        h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0], p[1]); })),
+        h('button', { type: 'button', class: 'btn ghost small', style: 'margin-top:6px', onclick: function () { all = !all; draw(); } }, all ? 'Show less' : 'All steps'));
+    }
+    api('path').then(function (r) { var k = 0; r.steps.forEach(function (st) { if (!st.needs) st.num = ++k; }); path = r; draw(); }).catch(function () { card.remove(); });
+    return card;
+  }
+
   /** Guests: two clear buttons, no explanation text (teacher, 27 October: everyone knows what Log in and Create account do). */
   function guestBanner() {
     var cfg = state.config, pending = regPending();
@@ -431,6 +470,7 @@
               h('div', { class: 'small muted' }, (cb.open ? plural(cb.open, 'mistake', 'mistakes') + ' to fix' : plural(cb.review, 'earlier mistake', 'earlier mistakes') + ' to check again') + ' · ' + chanceLength(n))),
             comebackButton('btn small fn-chance', 'Start'))));
       }
+      if (started) nodes.push(pathCard());   // My learning path (teacher, 28 October)
       var gb = state.user.guest ? guestBanner() : null; if (gb) nodes.push(gb);   // guests: Log in / Create account, side by side under the main things
       var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
       if (invite) nodes.push(invite);

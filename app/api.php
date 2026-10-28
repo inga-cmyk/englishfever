@@ -118,6 +118,10 @@ try {
             $u = Auth::require();
             out(Stats::dashboard((int) $u['id']));
 
+        case 'path':   // My learning path: the course-book order and what this learner has mastered
+            $u = Auth::require();
+            out(Path::forUser((int) $u['id']));
+
         case 'heartbeat':
             $u = Auth::require();
             $req = max(0, min(60, (int) ($in['seconds'] ?? 0)));   // the page sends one every 30 s

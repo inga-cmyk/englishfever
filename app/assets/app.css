@@ -672,3 +672,22 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .hero-feats span { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; color: #F3EFE6; font-size: .82rem; font-weight: 650; line-height: 1.25; }
 .hero-feats i { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: rgba(222,193,122,.14); border: 1px solid rgba(222,193,122,.35); }
 .hero-feats svg { width: 22px; height: 22px; color: var(--gold); }
+
+/* placement result: big level on the dark card, the ladder of levels, tested topics as chips */
+.lvbig { position: relative; z-index: 1; font-size: 3.4rem; font-weight: 900; line-height: 1; color: #F3EFE6; letter-spacing: -.02em; }
+.lvbig small { font-size: 1rem; color: #BDB8AD; font-weight: 600; margin-left: 8px; letter-spacing: 0; }
+.ladder { position: relative; z-index: 1; display: flex; gap: 8px; margin: 16px 0 18px; }
+.ladder span { flex: 1; text-align: center; padding: 8px 0; border-radius: 10px; background: rgba(255,255,255,.07); color: #BDB8AD; font-size: .8rem; font-weight: 700; }
+.ladder span b { display: block; color: #F3EFE6; font-size: 1rem; }
+.ladder span.on { background: rgba(222,193,122,.22); color: #F3E3B5; outline: 1.5px solid rgba(222,193,122,.6); }
+.topicchips { display: flex; flex-wrap: wrap; gap: 8px; }
+.topicchips span { display: inline-flex; gap: 4px; align-items: center; padding: 7px 11px; border-radius: 999px; font-size: .85rem; font-weight: 650; border: 1.5px solid var(--line); background: var(--surface); color: var(--text); }
+.topicchips .ok { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.topicchips .no { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+.topicchips .mid { border-color: var(--gold); background: var(--gold-pale); }
+/* three kinds of task instead of six thinking levels */
+.cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.cat { border: 1px solid var(--line); border-radius: 14px; padding: 12px 8px; text-align: center; background: var(--surface); display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.cat-em { font-size: 1.5rem; }
+.cat b { color: var(--text); margin-top: 2px; } .cat small { color: var(--muted); font-size: .74rem; line-height: 1.25; min-height: 2.5em; }
+.ring { width: 56px; height: 56px; border-radius: 50%; margin-top: 6px; display: grid; place-items: center; font-weight: 800; color: var(--text); font-size: .85rem; }

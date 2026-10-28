@@ -1283,6 +1283,19 @@
     (TL_X[kind] || []).forEach(function (x) { svg.appendChild(el('path', { d: 'M' + (x - 4) + ' 18 L' + (x + 4) + ' 26 M' + (x + 4) + ' 18 L' + (x - 4) + ' 26', class: 'tl-x' })); });
     return svg;
   }
+  function cellRich(c) {   // "description || example": the example on its own line, in italics (teacher, 28 October)
+    var i = String(c).indexOf(' || ');
+    if (i < 0) return richHl(c);
+    return h('span', null, h('span', { class: 'rc-desc' }, richHl(c.slice(0, i))), h('span', { class: 'rc-eg' }, richHl(c.slice(i + 4))));
+  }
+  function badHl(t) {   // the wrong part of a wrong sentence: red and underlined, the rest plain
+    var frag = document.createDocumentFragment();
+    String(t || '').split(/\[\[|\]\]/).forEach(function (part, i) {
+      if (!part) return;
+      if (i % 2) { var b = document.createElement('b'); b.className = 'bad-hl'; b.textContent = part; frag.appendChild(b); } else frag.appendChild(document.createTextNode(part));
+    });
+    return frag;
+  }
   function ruleCard2(v, lv, watch) {
     var parts = [];
     var T = lv ? { form: 'Kā to veido', bad: 'Biežākās kļūdas', use: 'Kad to lieto', watch: 'Uzmanies' } : { form: 'How to make it', bad: 'Typical mistakes', use: 'When we use it', watch: 'Watch out' };
@@ -1304,11 +1317,11 @@
       parts.push(h('div', { class: 'rc-scroll rc-wide' }, h('table', { class: 'rc-table rc-choice' },
         h('thead', null, h('tr', null, h('th', null, ''), v.choice.cols.map(function (c) { return h('th', { class: 'big' }, c); }))),
         h('tbody', null, v.choice.rows.map(function (r) {
-          return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c) { return h('td', null, richHl(c)); }));
+          return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c) { return h('td', null, cellRich(c)); }));
         })))));
       parts.push(h('div', { class: 'rc-stack' }, v.choice.cols.map(function (c, i) {
         return h('div', { class: 'rc-col' }, h('div', { class: 'rc-col-h big' }, c), v.choice.rows.map(function (r) {
-          return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, richHl(r[i + 1])));
+          return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, cellRich(r[i + 1])));
         }));
       })));
       if (v.choice.note) parts.push(h('p', { class: 'rc-note' }, richHl(v.choice.note)));
@@ -1316,8 +1329,9 @@
     if (v.mistakes && v.mistakes.length) {
       parts.push(h('h3', { class: 'rc-h' }, T.bad));
       parts.push(h('div', { class: 'rc-bad' }, v.mistakes.map(function (m) {
-        return h('div', { class: 'rc-pair' }, h('span', { class: 'no' }, h('span', { class: 'mk', 'aria-label': lv ? 'nepareizi' : 'wrong' }, '✗'), h('s', null, m[0])),
-          h('span', { class: 'yes' }, h('span', { class: 'mk', 'aria-label': lv ? 'pareizi' : 'right' }, '✓'), m[1]));
+        var marked = m[0].indexOf('[[') >= 0;   // the changed words are marked: no strike-through, only those words coloured
+        return h('div', { class: 'rc-pair' + (marked ? ' marked' : '') }, h('span', { class: 'no' }, h('span', { class: 'mk', 'aria-label': lv ? 'nepareizi' : 'wrong' }, '✗'), marked ? h('em', null, badHl(m[0])) : h('s', null, m[0])),
+          h('span', { class: 'yes' }, h('span', { class: 'mk', 'aria-label': lv ? 'pareizi' : 'right' }, '✓'), marked ? h('em', null, hl(m[1])) : m[1]));
       })));
     }
     if (v.uses && v.uses.length) {

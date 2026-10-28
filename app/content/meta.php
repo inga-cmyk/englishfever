@@ -2819,8 +2819,8 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely*",
     "example": "*He drives carefully, and he never drives too fast.*",
     "watch": [
-     "*[[fast]], [[hard]], late* have no *-ly*: *He drives [[fast]].*",
-     "*[[hard]]* = with effort, *[[hardly]]* = almost not; *late* = not on time, *[[lately]]* = recently.",
+     "*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
+     "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
      "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"
     ],
     "v2": {
@@ -2833,30 +2833,30 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Form",
-        "adjective + *-ly*: *slow → [[slowly]], easy → [[easily]]*; *good → [[well]]*",
-        "*[[always]], [[usually]], [[often]], [[sometimes]], [[never]]*",
-        "*[[very]], [[really]], [[quite]], [[too]], [[extremely]]*"
+        "adjective + *-ly* || *slow → [[slowly]], easy → [[easily]], good → [[well]]*",
+        "words for how often || *[[always]], [[usually]], [[often]], [[sometimes]], [[never]]*",
+        "words for how much || *[[very]], [[really]], [[quite]], [[too]], [[extremely]]*"
        ],
        [
         "Where",
-        "after the verb or the object: *She speaks English [[well]].*",
-        "before the main verb, after *be*: *She [[often]] walks. He is [[always]] late.*",
-        "before an adjective or adverb: *[[very]] [[quickly]]*; *[[enough]]* after: *warm [[enough]]*"
+        "after the verb or the object || *She speaks English [[well]].*",
+        "before the main verb, after *be* || *She [[often]] walks. He is [[always]] late.*",
+        "before an adjective; *[[enough]]* after it || *[[very]] cold, warm [[enough]]*"
        ]
       ]
      },
      "mistakes": [
       [
-       "She speaks English very good.",
-       "She speaks English very well."
+       "She speaks English very [[good]].",
+       "She speaks English very [[well]]."
       ],
       [
-       "I like very much it.",
-       "I like it very much."
+       "I like [[very much it]].",
+       "I like [[it very much]]."
       ],
       [
-       "He always is late.",
-       "He is always late."
+       "He [[always is]] late.",
+       "He [[is always]] late."
       ]
      ],
      "uses": [
@@ -2892,8 +2892,8 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*[[fast]], [[hard]], late* have no *-ly*: *He drives [[fast]].*",
-      "*[[hard]]* = with effort, *[[hardly]]* = almost not; *late* = not on time, *[[lately]]* = recently.",
+      "*[[fast]], [[hard]], [[late]]* have no *-ly*: *He drives [[fast]].*",
+      "*[[hard]]* = with effort, *[[hardly]]* = almost not; *[[late]]* = not on time, *[[lately]]* = recently.",
       "With two verbs, frequency goes after the first: *I have [[never]] been there. She can [[always]] help.*"
      ]
     }
@@ -2913,8 +2913,8 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*-ly, always, never, very, quite, too, enough, absolutely* (vienmēr, nekad, ļoti, *diezgan*, pārāk, pietiekami)",
     "watch": [
-     "*[[fast]], [[hard]], late* ir bez *-ly*: *He drives [[fast]].*",
-     "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *late* = vēlu, *[[lately]]* = pēdējā laikā.",
+     "*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
+     "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
      "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."
     ],
     "v2": {
@@ -2927,30 +2927,30 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Forma",
-        "īpašības vārds + *-ly*: *slow → [[slowly]], easy → [[easily]]*; *good → [[well]]*",
-        "*[[always]], [[usually]], [[often]], [[sometimes]], [[never]]*",
-        "*[[very]], [[really]], [[quite]], [[too]], [[extremely]]*"
+        "īpašības vārds + *-ly* || *slow → [[slowly]], easy → [[easily]], good → [[well]]*",
+        "vārdi, kas saka, cik bieži || *[[always]], [[usually]], [[often]], [[sometimes]], [[never]]*",
+        "vārdi, kas saka, cik ļoti || *[[very]], [[really]], [[quite]], [[too]], [[extremely]]*"
        ],
        [
         "Kur",
-        "aiz darbības vārda vai papildinātāja: *She speaks English [[well]].*",
-        "pirms pamatdarbības vārda, aiz *be*: *She [[often]] walks. He is [[always]] late.*",
-        "pirms īpašības vai apstākļa vārda: *[[very]] [[quickly]]*; *[[enough]]* aiz tā: *warm [[enough]]*"
+        "aiz darbības vārda vai papildinātāja || *She speaks English [[well]].*",
+        "pirms pamatdarbības vārda, aiz *be* || *She [[often]] walks. He is [[always]] late.*",
+        "pirms īpašības vārda; *[[enough]]* aiz tā || *[[very]] cold, warm [[enough]]*"
        ]
       ]
      },
      "mistakes": [
       [
-       "She speaks English very good.",
-       "She speaks English very well."
+       "She speaks English very [[good]].",
+       "She speaks English very [[well]]."
       ],
       [
-       "I like very much it.",
-       "I like it very much."
+       "I like [[very much it]].",
+       "I like [[it very much]]."
       ],
       [
-       "He always is late.",
-       "He is always late."
+       "He [[always is]] late.",
+       "He [[is always]] late."
       ]
      ],
      "uses": [
@@ -2986,8 +2986,8 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*[[fast]], [[hard]], late* ir bez *-ly*: *He drives [[fast]].*",
-      "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *late* = vēlu, *[[lately]]* = pēdējā laikā.",
+      "*[[fast]], [[hard]], [[late]]* ir bez *-ly*: *He drives [[fast]].*",
+      "*[[hard]]* = ar piepūli, *[[hardly]]* = gandrīz nemaz; *[[late]]* = vēlu, *[[lately]]* = pēdējā laikā.",
       "Ja ir divi darbības vārdi, biežums ir aiz pirmā: *I have [[never]] been there. She can [[always]] help.* Latviski vārdu secība ir brīvāka."
      ]
     }

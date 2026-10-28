@@ -776,3 +776,15 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rc-table th, .rc-table td { white-space: normal !important; }
 .rc-plain thead th { text-transform: none; letter-spacing: 0; font-size: .85rem; }
 .rulecard .watch b.hl, .rc2 .rc-use-t .hl { color: var(--good); }
+/* cells: description, then the example on its own line; marked mistakes */
+.rc-desc { display: block; color: var(--text-soft); }
+.rc-eg { display: block; margin-top: 4px; color: var(--text); font-style: italic; }
+.rc-eg { padding-left: 10px; border-left: 2px solid var(--gold); }
+.rc-choice td { color: var(--text-soft); }
+.rc-table tbody th { padding-top: 11px; line-height: 1.5; font-size: .86rem; }
+.rc-table td { line-height: 1.5; }
+.rc-pair.marked > span { font-style: normal; color: var(--text); font-weight: 400; }
+.rc-pair.marked .no .bad-hl { color: var(--bad); text-decoration: underline wavy; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.rc-pair.marked .yes .hl { color: var(--good); font-weight: 800; }
+.rc-pair.marked .mk { color: inherit; }
+.rc-pair.marked .no .mk { color: var(--bad); } .rc-pair.marked .yes .mk { color: var(--good); }

@@ -798,3 +798,4 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rc-line { display: block; }
 .usage-bar { height: 4px; border-radius: 2px; background: var(--btn); margin-top: 5px; opacity: .55; }
 .switch-row { display: flex; gap: 6px; }
+.rc-ex li.rc-dlg { list-style: none; margin-left: -18px; } .rc-sp { color: var(--text-soft); font-style: normal; display: inline-block; min-width: 1.6em; }

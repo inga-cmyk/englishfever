@@ -17,7 +17,7 @@ CARDS = {
                      {"t": "Special tags", "s": ["I am", "Let's", "an order"],
                       "ex": ["I'm late, [[aren't I]]?", "Let's go, [[shall we]]?", "Close the door, [[will you]]?"]}],
             "watch": ["*nothing* takes *it*; *nobody, everybody* take *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
-                      "Answer about the fact: *You don't smoke, do you? [[No]], I don't.* (= I don't smoke.)"],
+                      "Answer about the fact: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= I don't smoke.)"],
         },
         "lv": {
             "choice": {"cols": ["apstiprinājums → noliegts jautājums", "noliegums → apstiprinošs jautājums"],
@@ -33,7 +33,7 @@ CARDS = {
                      {"t": "Īpaši gadījumi", "s": ["I am", "Let's", "pavēle"],
                       "ex": ["I'm late, [[aren't I]]?", "Let's go, [[shall we]]?", "Close the door, [[will you]]?"]}],
             "watch": ["*nothing* → *it*; *nobody, everybody* → *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
-                      "Atbild par faktu: *You don't smoke, do you? [[No]], I don't.* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."],
+                      "Atbild par faktu: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."],
         },
     },
     "two_objects": {

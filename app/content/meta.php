@@ -341,8 +341,8 @@ return json_decode(<<<'EF_JSON_END'
        "I [[need]] help."
       ],
       [
-       "Are you tired? Yes, [[I'm]].",
-       "Are you tired? Yes, [[I am]]."
+       "A: Are you tired? B: Yes, [[I'm]].",
+       "A: Are you tired? B: Yes, [[I am]]."
       ]
      ],
      "uses": [
@@ -467,8 +467,8 @@ return json_decode(<<<'EF_JSON_END'
        "I [[need]] help."
       ],
       [
-       "Are you tired? Yes, [[I'm]].",
-       "Are you tired? Yes, [[I am]]."
+       "A: Are you tired? B: Yes, [[I'm]].",
+       "A: Are you tired? B: Yes, [[I am]]."
       ]
      ],
      "uses": [
@@ -1432,7 +1432,7 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "When I arrived, the film [[has]] already started.",
+       "When I [[arrived]], the film [[has]] already started.",
        "When I arrived, the film [[had]] already started."
       ],
       [
@@ -1455,13 +1455,13 @@ return json_decode(<<<'EF_JSON_END'
        ],
        "tl": "pastperfect",
        "ex": [
-        "When I got to the station, the train [[had left]]."
+        "When I [[got]] to the station, the train [[had left]]."
        ]
       },
       {
        "t": "The reason for something in the past",
        "ex": [
-        "She was tired because she [[hadn't slept]] well."
+        "She [[was]] tired because she [[hadn't slept]] well."
        ]
       },
       {
@@ -1473,12 +1473,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*'d* can be *had* or *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
-      "*By the time* + past simple, past perfect in the other part: *By the time we arrived, the shop [[had closed]].*"
+      "*By the time* + past simple, past perfect in the other part: *By the time we [[arrived]], the shop [[had closed]].*"
      ]
     },
     "watch": [
      "*'d* can be *had* or *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
-     "*By the time* + past simple, past perfect in the other part: *By the time we arrived, the shop [[had closed]].*"
+     "*By the time* + past simple, past perfect in the other part: *By the time we [[arrived]], the shop [[had closed]].*"
     ]
    },
    "rule_lv": {
@@ -1511,7 +1511,7 @@ return json_decode(<<<'EF_JSON_END'
      },
      "mistakes": [
       [
-       "When I arrived, the film [[has]] already started.",
+       "When I [[arrived]], the film [[has]] already started.",
        "When I arrived, the film [[had]] already started."
       ],
       [
@@ -1534,13 +1534,13 @@ return json_decode(<<<'EF_JSON_END'
        ],
        "tl": "pastperfect",
        "ex": [
-        "When I got to the station, the train [[had left]]."
+        "When I [[got]] to the station, the train [[had left]]."
        ]
       },
       {
        "t": "Iemesls kaut kam pagātnē",
        "ex": [
-        "She was tired because she [[hadn't slept]] well."
+        "She [[was]] tired because she [[hadn't slept]] well."
        ]
       },
       {
@@ -1552,12 +1552,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*'d* var būt *had* vai *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
-      "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we arrived, the shop [[had closed]].*"
+      "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we [[arrived]], the shop [[had closed]].*"
      ]
     },
     "watch": [
      "*'d* var būt *had* vai *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
-     "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we arrived, the shop [[had closed]].*"
+     "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we [[arrived]], the shop [[had closed]].*"
     ]
    }
   },
@@ -4945,12 +4945,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*nothing* takes *it*; *nobody, everybody* take *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
-      "Answer about the fact: *You don't smoke, do you? [[No]], I don't.* (= I don't smoke.)"
+      "Answer about the fact: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= I don't smoke.)"
      ]
     },
     "watch": [
      "*nothing* takes *it*; *nobody, everybody* take *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
-     "Answer about the fact: *You don't smoke, do you? [[No]], I don't.* (= I don't smoke.)"
+     "Answer about the fact: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= I don't smoke.)"
     ]
    },
    "rule_lv": {
@@ -5035,12 +5035,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*nothing* → *it*; *nobody, everybody* → *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
-      "Atbild par faktu: *You don't smoke, do you? [[No]], I don't.* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."
+      "Atbild par faktu: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."
      ]
     },
     "watch": [
      "*nothing* → *it*; *nobody, everybody* → *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
-     "Atbild par faktu: *You don't smoke, do you? [[No]], I don't.* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."
+     "Atbild par faktu: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."
     ]
    }
   },
@@ -5068,7 +5068,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*Who wrote this email? Who did you send it to?*",
     "watch": [
      "A preposition often goes at the end: *Who are you talking [[to]]? What are you looking [[at]]?*",
-     "*Who* takes a singular verb, even if the answer is two people: *Who [[lives]] here? Tom and Anna.*"
+     "*Who* takes a singular verb, even if the answer is two people: *A: Who [[lives]] here? B: Tom and Anna.*"
     ],
     "v2": {
      "choice": {
@@ -5132,7 +5132,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "A preposition often goes at the end: *Who are you talking [[to]]? What are you looking [[at]]?*",
-      "*Who* takes a singular verb, even if the answer is two people: *Who [[lives]] here? Tom and Anna.*"
+      "*Who* takes a singular verb, even if the answer is two people: *A: Who [[lives]] here? B: Tom and Anna.*"
      ]
     }
    },
@@ -5150,7 +5150,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*who, what, which, whose as the subject*: no *do / does / did* (kā teik. priekšmets: bez *do / does / did*)",
     "watch": [
      "Prievārds bieži ir beigās: *Who are you talking [[to]]? What are you looking [[at]]?* Latviski prievārds ir sākumā: \"Ar ko tu runā?\"",
-     "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *Who [[lives]] here? Tom and Anna.*"
+     "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *A: Who [[lives]] here? B: Tom and Anna.*"
     ],
     "v2": {
      "choice": {
@@ -5215,7 +5215,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "Prievārds bieži ir beigās: *Who are you talking [[to]]? What are you looking [[at]]?* Latviski prievārds ir sākumā: \"Ar ko tu runā?\"",
-      "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *Who [[lives]] here? Tom and Anna.*"
+      "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *A: Who [[lives]] here? B: Tom and Anna.*"
      ]
     }
    }
@@ -7516,7 +7516,7 @@ return json_decode(<<<'EF_JSON_END'
        ],
        "tl": "pcont",
        "ex": [
-        "They started at 10 and finished at 11.30. At 10.30 they [[were playing]] tennis."
+        "They [[started]] at 10 and [[finished]] at 11.30. At 10.30 they [[were playing]] tennis."
        ]
       },
       {
@@ -7533,18 +7533,18 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "One thing after another: past simple",
        "ex": [
-        "When Karen arrived, we [[had]] dinner. (She arrived, and then we had dinner.)",
-        "When Karen arrived, we [[were having]] dinner. (We had already started.)"
+        "When Karen [[arrived]], we [[had]] dinner. (She arrived, and then we had dinner.)",
+        "When Karen [[arrived]], we [[were having]] dinner. (We had already started.)"
        ]
       }
      ],
      "watch": [
-      "A complete or repeated action in the past: past simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.*",
+      "A complete or repeated action in the past: past simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she [[was]] ill.*",
       "*know, want, like* are not continuous: *We [[knew]] each other well.*"
      ]
     },
     "watch": [
-     "A complete or repeated action in the past: past simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.*",
+     "A complete or repeated action in the past: past simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she [[was]] ill.*",
      "*know, want, like* are not continuous: *We [[knew]] each other well.*"
     ]
    },
@@ -7598,7 +7598,7 @@ return json_decode(<<<'EF_JSON_END'
        ],
        "tl": "pcont",
        "ex": [
-        "They started at 10 and finished at 11.30. At 10.30 they [[were playing]] tennis."
+        "They [[started]] at 10 and [[finished]] at 11.30. At 10.30 they [[were playing]] tennis."
        ]
       },
       {
@@ -7615,18 +7615,18 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "Viens pēc otra: Past Simple",
        "ex": [
-        "When Karen arrived, we [[had]] dinner. (Viņa atnāca, un tad mēs paēdām.)",
-        "When Karen arrived, we [[were having]] dinner. (Mēs jau bijām sākuši ēst.)"
+        "When Karen [[arrived]], we [[had]] dinner. (Viņa atnāca, un tad mēs paēdām.)",
+        "When Karen [[arrived]], we [[were having]] dinner. (Mēs jau bijām sākuši ēst.)"
        ]
       }
      ],
      "watch": [
-      "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
+      "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she [[was]] ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
       "*know, want, like* nelieto Continuous formā: *We [[knew]] each other well.*"
      ]
     },
     "watch": [
-     "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
+     "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she [[was]] ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
      "*know, want, like* nelieto Continuous formā: *We [[knew]] each other well.*"
     ]
    }
@@ -7689,8 +7689,9 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "New information, then the details in the past simple",
        "ex": [
-        "Ow! I'[[ve burnt]] myself.",
-        "How [[did]] you [[do]] that? I [[picked]] up a hot dish."
+        "A: Ow! I'[[ve burnt]] myself.",
+        "B: How [[did]] you [[do]] that?",
+        "A: I [[picked]] up a hot dish."
        ]
       },
       {
@@ -7774,8 +7775,9 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "Jaunums, tad sīkāk Past Simple",
        "ex": [
-        "Ow! I'[[ve burnt]] myself.",
-        "How [[did]] you [[do]] that? I [[picked]] up a hot dish."
+        "A: Ow! I'[[ve burnt]] myself.",
+        "B: How [[did]] you [[do]] that?",
+        "A: I [[picked]] up a hot dish."
        ]
       },
       {
@@ -7873,15 +7875,16 @@ return json_decode(<<<'EF_JSON_END'
        ],
        "tl": "pastperfect",
        "ex": [
-        "When Sarah arrived at the party, Paul [[had]] already [[gone]] home.",
-        "When we got home, we found that somebody [[had broken]] into the flat."
+        "When Sarah [[arrived]] at the party, Paul [[had]] already [[gone]] home.",
+        "When we [[got]] home, we [[found]] that somebody [[had broken]] into the flat."
        ]
       },
       {
-       "t": "Was Tom there when you arrived?",
+       "t": "After that, or before that?",
        "ex": [
-        "Yes, but he [[left]] soon afterwards.",
-        "No, he'[[d]] already [[left]]."
+        "A: [[Was]] Tom there when you [[arrived]]?",
+        "B: Yes, but he [[left]] soon afterwards.",
+        "B: No, he'[[d]] already [[left]]."
        ]
       },
       {
@@ -7893,12 +7896,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "Actions told in the order they happened need only the past simple: *She [[opened]] the door and [[went]] in.*",
-      "*have seen* (before now) and *had seen* (before then): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+      "*have seen* (before now) and *had seen* (before then): *I'[[ve seen]] her before. I'[[d seen]] her before, but I [[couldn't remember]] where.*"
      ]
     },
     "watch": [
      "Actions told in the order they happened need only the past simple: *She [[opened]] the door and [[went]] in.*",
-     "*have seen* (before now) and *had seen* (before then): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+     "*have seen* (before now) and *had seen* (before then): *I'[[ve seen]] her before. I'[[d seen]] her before, but I [[couldn't remember]] where.*"
     ]
    },
    "rule_lv": {
@@ -7955,15 +7958,16 @@ return json_decode(<<<'EF_JSON_END'
        ],
        "tl": "pastperfect",
        "ex": [
-        "When Sarah arrived at the party, Paul [[had]] already [[gone]] home.",
-        "When we got home, we found that somebody [[had broken]] into the flat."
+        "When Sarah [[arrived]] at the party, Paul [[had]] already [[gone]] home.",
+        "When we [[got]] home, we [[found]] that somebody [[had broken]] into the flat."
        ]
       },
       {
-       "t": "Vai Toms bija tur, kad tu atnāci?",
+       "t": "Pēc tam vai pirms tam?",
        "ex": [
-        "Yes, but he [[left]] soon afterwards.",
-        "No, he'[[d]] already [[left]]."
+        "A: [[Was]] Tom there when you [[arrived]]?",
+        "B: Yes, but he [[left]] soon afterwards.",
+        "B: No, he'[[d]] already [[left]]."
        ]
       },
       {
@@ -7975,12 +7979,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "Darbībām, kas stāstītas tādā secībā, kā notika, pietiek ar Past Simple: *She [[opened]] the door and [[went]] in.*",
-      "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+      "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I [[couldn't remember]] where.*"
      ]
     },
     "watch": [
      "Darbībām, kas stāstītas tādā secībā, kā notika, pietiek ar Past Simple: *She [[opened]] the door and [[went]] in.*",
-     "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+     "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I [[couldn't remember]] where.*"
     ]
    }
   },
@@ -8022,7 +8026,7 @@ return json_decode(<<<'EF_JSON_END'
         "what was going on at that moment || *The sun [[was shining]].*",
         "the main events || *I [[looked]] out of the window.*",
         "a finished action before that || *Somebody [[had left]] the gate open.*",
-        "an activity that went on before, often with a result you can see || *The ground was wet. It [[had been raining]].*"
+        "an activity that went on before, often with a result you can see || *The ground [[was]] wet. It [[had been raining]].*"
        ]
       ]
      },
@@ -8045,32 +8049,32 @@ return json_decode(<<<'EF_JSON_END'
        "t": "Before now or before a moment in the past?",
        "tl": "ppcont",
        "ex": [
-        "I hope the bus comes soon. I'[[ve been waiting]] for 20 minutes.",
-        "At last the bus came. I'[[d been waiting]] for 20 minutes."
+        "I hope the bus [[comes]] soon. I'[[ve been waiting]] for 20 minutes.",
+        "At last the bus [[came]]. I'[[d been waiting]] for 20 minutes."
        ]
       },
       {
        "t": "*was doing* or *had been doing*?",
        "ex": [
-        "It [[wasn't raining]] when we went out. The sun was shining, but it [[had been raining]], so the ground was wet."
+        "It [[wasn't raining]] when we [[went]] out. The sun [[was shining]], but it [[had been raining]], so the ground [[was]] wet."
        ]
       },
       {
        "t": "How long? *had been doing*. How much or how many? *had done*",
        "ex": [
-        "She was tired because she'[[d been working]] hard all day.",
+        "She [[was]] tired because she'[[d been working]] hard all day.",
         "By lunchtime she'[[d written]] ten emails."
        ]
       }
      ],
      "watch": [
       "*know, have* (= own), *like* are not continuous: *We'[[d known]] each other for years.*",
-      "*for* says how long it went on: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+      "*for* says how long it went on: *We'[[d been playing]] tennis [[for]] half an hour when it [[started]] to rain.*"
      ]
     },
     "watch": [
      "*know, have* (= own), *like* are not continuous: *We'[[d known]] each other for years.*",
-     "*for* says how long it went on: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+     "*for* says how long it went on: *We'[[d been playing]] tennis [[for]] half an hour when it [[started]] to rain.*"
     ]
    },
    "rule_lv": {
@@ -8102,7 +8106,7 @@ return json_decode(<<<'EF_JSON_END'
         "kas notika tajā brīdī || *The sun [[was shining]].*",
         "galvenie notikumi || *I [[looked]] out of the window.*",
         "pabeigta darbība pirms tam || *Somebody [[had left]] the gate open.*",
-        "darbība, kas ilga pirms tam, bieži ar redzamu rezultātu || *The ground was wet. It [[had been raining]].*"
+        "darbība, kas ilga pirms tam, bieži ar redzamu rezultātu || *The ground [[was]] wet. It [[had been raining]].*"
        ]
       ]
      },
@@ -8125,32 +8129,32 @@ return json_decode(<<<'EF_JSON_END'
        "t": "Pirms tagad vai pirms kāda brīža pagātnē?",
        "tl": "ppcont",
        "ex": [
-        "I hope the bus comes soon. I'[[ve been waiting]] for 20 minutes.",
-        "At last the bus came. I'[[d been waiting]] for 20 minutes."
+        "I hope the bus [[comes]] soon. I'[[ve been waiting]] for 20 minutes.",
+        "At last the bus [[came]]. I'[[d been waiting]] for 20 minutes."
        ]
       },
       {
        "t": "*was doing* vai *had been doing*?",
        "ex": [
-        "It [[wasn't raining]] when we went out. The sun was shining, but it [[had been raining]], so the ground was wet."
+        "It [[wasn't raining]] when we [[went]] out. The sun [[was shining]], but it [[had been raining]], so the ground [[was]] wet."
        ]
       },
       {
        "t": "Cik ilgi? *had been doing*. Cik daudz? *had done*",
        "ex": [
-        "She was tired because she'[[d been working]] hard all day.",
+        "She [[was]] tired because she'[[d been working]] hard all day.",
         "By lunchtime she'[[d written]] ten emails."
        ]
       }
      ],
      "watch": [
       "*know, have* (= piederēt), *like* nelieto Continuous formā: *We'[[d known]] each other for years.*",
-      "*for* saka, cik ilgi tas ilga: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+      "*for* saka, cik ilgi tas ilga: *We'[[d been playing]] tennis [[for]] half an hour when it [[started]] to rain.*"
      ]
     },
     "watch": [
      "*know, have* (= piederēt), *like* nelieto Continuous formā: *We'[[d known]] each other for years.*",
-     "*for* saka, cik ilgi tas ilga: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+     "*for* saka, cik ilgi tas ilga: *We'[[d been playing]] tennis [[for]] half an hour when it [[started]] to rain.*"
     ]
    }
   }

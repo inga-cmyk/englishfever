@@ -1437,6 +1437,8 @@
             u.tl ? timeline(u.tl, lv) : null),
           h('ul', { class: 'rc-ex' }, (u.ex || []).map(function (x) {   // "✗ ..." = a wrong example, in red
             if (x.indexOf('✗ ') === 0) return h('li', { class: 'rc-ex-bad' }, h('span', { class: 'mk', 'aria-label': lv ? 'nepareizi' : 'wrong' }, '✗ '), h('em', null, badHl(x.slice(2))));
+            var sp = /^([AB]): /.exec(x);   // a dialogue: the speaker as a label (teacher, 29 October)
+            if (sp) return h('li', { class: 'rc-dlg' }, h('b', { class: 'rc-sp' }, sp[1] + ':'), ' ', h('em', null, hl(x.slice(3))));
             return h('li', null, h('em', null, hl(x)));
           }))));
       });

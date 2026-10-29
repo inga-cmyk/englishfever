@@ -2306,6 +2306,22 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "rv-C11-3a",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Report with congratulate: 'Well done on winning the award!' Tim said to Jo.",
+"answers": [
+[
+"Tim congratulated Jo on winning the award.",
+"Tim congratulated Jo for winning the award."
+]
+],
+"why": "*congratulate* + person + *on* + -ing.",
+"hints": []
+},
+{
 "id": "rv-C11-6a",
 "skill": "rep_verbs",
 "level": "C1.1",
@@ -2320,6 +2336,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "model": "Leo denied breaking it.",
 "why": "Compare your sentence with the model answer."
+},
+{
+"id": "rv-C12-1a",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence reports 'If I were you, I'd take the earlier train,' she said?",
+"correct": "She advised me to take the earlier train.",
+"wrong": [
+"She suggested me to take the earlier train.",
+"She insisted me to take the earlier train.",
+"She advised to me take the earlier train."
+],
+"why": "*advise* + person + *to* + base verb.",
+"wrong_why": {}
 },
 {
 "id": "rv-C12-3a",

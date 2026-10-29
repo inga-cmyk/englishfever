@@ -85,6 +85,8 @@ T.mcq("B1.1", "Choose the correct option: She's ___ best student in the class.",
 T.mcq("B1.1", "Choose the correct option: She speaks ___ English very well.", NONE, ["the", "an"], ex("No article with languages: *She speaks English.*", "Valodām artikulu nelieto: *She speaks English.*"))
 T.gap("A2.2", "Write a or an: I need ___ umbrella. It's raining.", "an", ex("*an* before a vowel sound: *an umbrella.*", "*an* pirms patskaņa skaņas: *an umbrella.*"))
 T.gap("A2.2", "Write a or an: My father is ___ taxi driver.", "a", A_AN)
+T.gap("A2.2", "Write a or an: I waited for ___ hour.", "an", ex("*hour* starts with the sound of *our*, so *an hour*.", "*hour* sākas ar skaņu kā *our*, tāpēc *an hour*."))
+T.gap("A2.2", "Write a or an: He wears ___ uniform at work.", "a", ex("*uniform* starts with the sound of *you*, so *a uniform*.", "*uniform* sākas ar skaņu kā *you*, tāpēc *a uniform*."))
 T.gap("B1.1", "Write the missing word: ___ Danube flows into the Black Sea.", "The", A_RIVER)
 T.text("B1.1", "Correct the mistake: She is nurse in a hospital.", "She is a nurse in a hospital.", A_AN)
 T.text("B1.1", "Correct the mistake: I'm learning the Spanish at evening classes.", "I'm learning Spanish at evening classes.", ex("No article with languages: *I'm learning Spanish.*", "Valodām artikulu nelieto: *I'm learning Spanish.*"))
@@ -149,7 +151,8 @@ T.gap("A2.1", "They ___ dinner at nine yesterday. (have)", "had", PA_IRR)
 T.gap("A2.2", "She ___ the bus yesterday morning. (not / catch)", "didn't catch | did not catch", PA_DID)
 T.gap("A2.2", "Where ___ you ___ your holiday last year? (spend)", "did / spend", PA_DID)
 T.gap("A2.2", "We ___ in the park for two hours yesterday. (walk)", "walked", PA_REG)
-T.text("A2.2", "Make a question: You saw Tom yesterday.", "Did you see Tom yesterday?", PA_DID)
+T.text("A2.2", "Make a question with *Who*: You saw Tom yesterday.", "Who did you see yesterday?", PA_DID)
+replaces("Make a question: You saw Tom yesterday.")
 T.text("A2.2", "Make it negative: He came to the party.", "He didn't come to the party. | He did not come to the party.", PA_DID)
 
 # ── Present simple ──
@@ -167,7 +170,8 @@ T.gap("A2.1", "We ___ meat. We're vegetarians. (not / eat)", "don't eat | do not
 T.gap("A2.2", "How often ___ you ___ your grandparents? (visit)", "do / visit", PS_DO)
 T.gap("A2.2", "My brother ___ his homework after dinner. (do)", "does", PS_S)
 T.text("A2.2", "Make it negative: She likes cats.", "She doesn't like cats. | She does not like cats.", PS_DOES)
-T.text("A2.2", "Make a question: He works at the weekend.", "Does he work at the weekend?", PS_Q)
+T.text("A2.2", "Make a yes/no question: He works at the weekend.", "Does he work at the weekend?", PS_Q)
+replaces("Make a question: He works at the weekend.")
 T.order("A2.1", "my father never drinks coffee", why=ex("*never* goes before the main verb: *My father never drinks coffee.*", "*never* ir pirms pamatdarbības vārda: *My father never drinks coffee.*"))
 T.order("A2.2", "where does your sister work", why=PS_Q, cue="Put the words in order to make a question.")
 

@@ -447,4 +447,10 @@ def revise(original):
     report_fix('rq-B22-3a',
         answers=[['They asked where they should meet.', 'They asked where to meet.']],
         why='Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.')
+    # no "she said" after the quote (teacher, 29 October); congratulate was 70% wrong as a whole typed sentence, now only the key part
+    report_fix('rv-C12-1a', q="Which sentence reports this: 'If I were you, I'd take the earlier train.'")
+    report_fix('rv-C11-3a',
+        q="Complete the report of 'Well done on winning the award, Jo!': I congratulated Jo ___ the award. (win)",
+        answers=[['on winning']], hints=[],
+        why='*congratulate* + person + *on* + -ing.')
     return items

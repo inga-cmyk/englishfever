@@ -8,7 +8,8 @@ P = Topic("Present simple", **B,
     text=("Present Simple: *do / does* for questions and negatives; adverbs like *never* go before the verb.", "Present Simple: *do / does* jautājumiem un noliegumiem; apstākļa vārdi, piemēram, *never*, ir pirms darbības vārda."),
     mcq=("Habits, facts and timetables use the Present Simple.", "Ieradumiem, faktiem un sarakstiem lieto Present Simple."),
     match=("Present Simple covers habits, facts, timetables and permanent situations.", "Present Simple lieto ieradumiem, faktiem, sarakstiem un pastāvīgām situācijām."))
-for s in ["the shop opens at nine on weekdays but closes early on sundays","she rarely eats out because she prefers to cook at home","our train leaves at half past seven so we must hurry","does your brother still work for the same company","water boils at one hundred degrees at sea level","i don't usually drink coffee after lunch because it keeps me awake","he teaches maths at a school near the station","my parents never watch the news but they read a newspaper every day","what does this word mean in your language","the museum doesn't open on mondays during the winter"]: P.order("B1.1",s)
+for s in ["the shop opens at nine on weekdays but closes early on sundays","she rarely eats out because she prefers to cook at home","our train leaves at half past seven so we must hurry","does your brother still work for the same company","i don't usually drink coffee after lunch because it keeps me awake","he teaches maths at a school near the station","my parents never watch the news but they read a newspaper every day","what does this word mean in your language","the museum doesn't open on mondays during the winter"]: P.order("B1.1",s)
+P.order("B1.1","how often does your sister call you"); replaces("water boils at one hundred degrees at sea level")
 P.bank("B1.1","My sister ___ in a hospital, but she ___ to move to the countryside.",["works","wants"],["working","want","is wanting"])
 P.bank("B1.1","The lesson ___ at 9.30, so we ___ to be there early.",["starts","need"],["starting","needs"])
 P.bank("B1.1","He never ___ his phone during a meeting because it ___ rude.",["uses","is"],["use","are"])
@@ -63,7 +64,8 @@ P.gap("B1.1","They ___ to move to the coast, but they haven't decided yet. (thin
 P.gap("B1.1","What ___ the children ___ in the garden? They are very quiet. (do)","are / doing")
 P.text("B1.1","Make a question with Why: She is crying.","Why is she crying?")
 P.text("B1.1","Make it negative: We are staying at a hotel.",["We aren't staying at a hotel.","We are not staying at a hotel.","We're not staying at a hotel."])
-P.text("B1.1","Make a question: Your parents are visiting you this weekend.","Are your parents visiting you this weekend?")
+P.text("B1.1","Make a question with *When*: Your parents are visiting you this weekend.","When are your parents visiting you?")
+replaces("Make a question: Your parents are visiting you this weekend.")
 P.text("B1.1","Rewrite for a change in progress: The weather gets warmer. (it is)","It is getting warmer.",b=5) if False else None
 P.match("B1.1","Match each sentence with its meaning.",[("I'm waiting for a call.","an action now"),("She's staying with us this week.","a temporary situation"),("It's getting darker.","a change"),("We're flying to Rome on Friday.","an arrangement")])
 P.match("B1.1","Match each beginning with its ending: this week.",[("Our neighbours are building","a new garage."),("The students are preparing","for their exams."),("My boss is travelling","to Berlin."),("I'm learning","to drive.")])

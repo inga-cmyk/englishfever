@@ -7133,16 +7133,15 @@
 "wrong_why": {}
 },
 {
-"id": "rv-C11-3a",
+"id": "rv-C11-3a-r2",
 "skill": "rep_verbs",
 "level": "C1.1",
 "bloom": 3,
 "kind": "text",
-"q": "Report with congratulate: 'Well done on winning the award!' Tim said to Jo.",
+"q": "Complete the report of 'Well done on winning the award, Jo!': I congratulated Jo ___ the award. (win)",
 "answers": [
 [
-"Tim congratulated Jo on winning the award.",
-"Tim congratulated Jo for winning the award."
+"on winning"
 ]
 ],
 "why": "*congratulate* + person + *on* + -ing.",
@@ -7197,12 +7196,12 @@
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rv-C12-1a",
+"id": "rv-C12-1a-r2",
 "skill": "rep_verbs",
 "level": "C1.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence reports 'If I were you, I'd take the earlier train,' she said?",
+"q": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
 "correct": "She advised me to take the earlier train.",
 "wrong": [
 "She suggested me to take the earlier train.",

@@ -13,6 +13,14 @@
 8. **Sentence length by layer**: A2 about 5-9 words, one clause, everyday words; B1 about 10-16 words, two clauses, wider vocabulary, no clue word. Negatives and questions are A2 as well.
 9. **New topic**: at least 25 questions per level before it goes live; existing topics aim for 50 per level.
 
+## A situation, never grammar terms (rule from Inga, 29 October)
+- Learners do not know words like *vowel, consonant, present perfect, passive*. A task never asks for them (*Match each phrase with how its first word starts*, *Which sentence is passive?*). Terms belong on the rule card.
+- The sentence itself shows what to use, and a wrong answer is clear from the example (*He wears ___ uniform at work.* → *a*). Learners see the pattern from examples (*an apple, an hour*) or open the card.
+- *Make a question* always says which question: *Make a question with *What*: …* or *Make a yes/no question: …*. Both kinds are mixed.
+- No speaker tag after a quote (*…,' she said.*): *Which sentence reports this: '…'*.
+- A context that leaves the tense open (*this morning? It's four o'clock now*) is replaced by an unambiguous time word (*yesterday*), not explained.
+- In *Which sentence is NOT correct?* the other three sentences are about three different things, not one copy of the wrong sentence.
+
 ## Plain instructions (rule from Inga)
 - The instruction says what to do and nothing else: *Which sentence is NOT correct?*, *Which sentence is correct?*, *Put the words in order.*, *Match each beginning with its ending.* No setting in front (*At work: ...*, *In the team: ...*), no hint after a word-order instruction (*Compare two years.*), no topic after a matching instruction, no *Your friend writes: '...' Choose the correct option.* The sentence, the options and the tiles carry the content.
 - Two tasks may therefore share the same instruction. The importer counts a task as a duplicate only when instruction **and** content (correct option, sentence, pairs) are the same; it never asks for new wording to make a prompt unique.

@@ -59,11 +59,16 @@ T.gap("B1.1", GAP_Q + "___ you been waiting long?", "Have", HAVE)
 T.gap("B1.1", GAP_Q + "Where ___ you go on holiday last year?", "did", DID)
 
 # ── make a question ──
-T.text("A2.1", "Make a question: She works on Saturdays.", ["Does she work on Saturdays?"], DOES)
-T.text("A2.2", "Make a question: They are watching TV.", ["Are they watching TV?"], BE)
-T.text("A2.2", "Make a question: You have seen this film.", ["Have you seen this film?"], HAVE)
-T.text("A2.2", "Make a question: He went to the doctor.", ["Did he go to the doctor?"], DID)
-T.text("B1.1", "Make a question: You were late again.", ["Were you late again?"], WAS)
+T.text("A2.1", "Make a question with *When*: She works on Saturdays.", ["When does she work?"], DOES)
+replaces("Make a question: She works on Saturdays.")
+T.text("A2.2", "Make a question with *What*: They are watching TV.", ["What are they watching?"], BE)
+replaces("Make a question: They are watching TV.")
+T.text("A2.2", "Make a yes/no question: You have seen this film.", ["Have you seen this film?"], HAVE)
+replaces("Make a question: You have seen this film.")
+T.text("A2.2", "Make a question with *Where*: He went to the doctor.", ["Where did he go?"], DID)
+replaces("Make a question: He went to the doctor.")
+T.text("B1.1", "Make a yes/no question: You were late again.", ["Were you late again?"], WAS)
+replaces("Make a question: You were late again.")
 
 # ── word order ──
 T.order("A2.2", "where do your parents live", why=QW, cue="Put the words in order to make a question.")

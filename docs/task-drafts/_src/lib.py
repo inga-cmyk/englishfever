@@ -175,7 +175,16 @@ def practice_only(r):
     return bool((r[2] == "match" and PRACTICE_MATCH.match(r[3])) or (r[2] == "order" and re.search(r"Start with Had I", r[3])))
 
 
+# Articles split in two (teacher, 29 October): these B1 tasks belong to "The or no article"; whichever file they are in, they are moved
+ART_NEW = "The or no article"
+ART_MOVE = ["violin", "to ___ poor", "United States", "Alps", "Baltic Sea", "to ___ work by bus", "go to the bed",
+            "Dogs are loyal", "the Latvia", "elderly", "English very well", "Danube", "the Spanish"]
+def _art_move(r):
+    if r[0].startswith("Articles") and r[1] != "A2.2" and any(k in r[3] or k in r[4] for k in ART_MOVE):
+        r = r + [""] * (10 - len(r)); r[0] = ART_NEW; r[9] = "from: Articles"
+    return r
 def save(name):
+    rows[:] = [_art_move(r) for r in rows]
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)

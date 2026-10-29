@@ -1350,6 +1350,14 @@
       var a = el('text', { x: 30, y: 12, 'text-anchor': 'middle', class: 'tl-lbl' }); a.textContent = '1'; svg.appendChild(a);
       var b2 = el('text', { x: 58, y: 12, 'text-anchor': 'middle', class: 'tl-lbl' }); b2.textContent = '2'; svg.appendChild(b2);
     }
+    if (kind === 'pcont') {   // started before, still going on at that moment in the past (Murphy, Unit 6)
+      svg.appendChild(el('line', { x1: 20, y1: 22, x2: 62, y2: 22, class: 'tl-bar' }));
+      svg.appendChild(el('line', { x1: 42, y1: 13, x2: 42, y2: 31, class: 'tl-now' }));
+    }
+    if (kind === 'ppcont') {   // an activity that went on up to a moment in the past (Murphy, Unit 16)
+      svg.appendChild(el('line', { x1: 14, y1: 22, x2: 52, y2: 22, class: 'tl-bar' }));
+      svg.appendChild(el('path', { d: 'M54 18 L62 26 M62 18 L54 26', class: 'tl-x' }));
+    }
     if (kind === 'around') svg.appendChild(el('line', { x1: 62, y1: 22, x2: 98, y2: 22, class: 'tl-bar' }));   // a temporary situation around now
     if (kind === 'plan' || kind === 'decide_now') {   // going to: decided before; will: decided now (Murphy, Units 22-23)
       var from = kind === 'plan' ? 40 : 80;

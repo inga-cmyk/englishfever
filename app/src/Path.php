@@ -55,11 +55,12 @@ final class Path
         ['ca', 'Wish, unless, inversion', 'B2', ['cond_advanced']],
         // combination steps: open when the steps in "needs" are done
         ['x_pspc', 'Present simple or continuous', 'A2', ['present_simple', 'present_continuous'], ['ps1', 'prc']],
-        ['x_papc', 'Past simple or continuous', 'A2', ['past_simple', 'past_continuous'], ['pa', 'pc']],
-        ['x_pppa', 'Present perfect or past simple', 'B1', ['present_perfect', 'past_simple'], ['pp', 'pa']],
+        ['x_papc', 'Past simple or continuous', 'A2', ['cmp_ps_pc'], ['pa', 'pc']],   // their own comparison topic (teacher, 29 October; Murphy Unit 6)
+        ['x_pppa', 'Present perfect or past simple', 'A2', ['cmp_pp_ps'], ['pp', 'pa']],   // Murphy Units 13-14; at A2.2 (teacher)
         ['x_c012', 'Zero, first or second conditional', 'B1', ['cond_zero', 'cond_first', 'cond_second'], ['c01', 'c2']],
         ['x_ppc', 'Present perfect simple or continuous', 'B1', ['present_perfect', 'present_perfect_continuous'], ['pp', 'ppc']],
-        ['x_narr', 'Telling a story (narrative tenses)', 'B1', ['past_simple', 'past_continuous', 'past_perfect'], ['pa', 'pc', 'pap']],
+        ['x_narr', 'Telling a story (narrative tenses)', 'B1', ['narrative'], ['pa', 'pc', 'pap']],   // Murphy Unit 15
+        ['x_narr2', 'Narrative tenses with had been doing', 'B2', ['narrative_b2'], ['x_narr', 'ppc']],   // Murphy Unit 16
         ['x_rep', 'Reported speech, all of it', 'B1', ['rep_statements', 'rep_questions'], ['rs', 'rq']],
         ['x_c23m', 'Second, third or mixed conditional', 'B2', ['cond_second', 'cond_third', 'cond_mixed'], ['c2', 'c3', 'cm']],
     ];

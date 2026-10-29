@@ -792,6 +792,7 @@
         "at 8 o'clock yesterday",
         "this time last week"
        ],
+       "tl": "pcont",
        "ex": [
         "At 8 o'clock I [[was having]] breakfast."
        ]
@@ -889,6 +890,7 @@
         "at 8 o'clock yesterday",
         "this time last week"
        ],
+       "tl": "pcont",
        "ex": [
         "At 8 o'clock I [[was having]] breakfast."
        ]
@@ -7449,6 +7451,703 @@
     "watch": [
      "*be* Past Simple, bez *did*: *[[Were]] you at home?*",
      "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*"
+    ]
+   }
+  },
+  {
+   "id": "cmp_ps_pc",
+   "label": "Past simple or past continuous",
+   "area": "active",
+   "levels": [
+    "A2.2",
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "*was / were* + *-ing*: in the middle of an action. Past simple: a complete action."
+    ],
+    "use": [
+     "*We were walking home when I met Dan.*"
+    ],
+    "signals": "*when, while, at 10.30*",
+    "example": "*Matt phoned while we were having dinner.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "past continuous (was / were + -ing)",
+       "past simple"
+      ],
+      "rows": [
+       [
+        "Meaning",
+        "in the middle of an action at a time in the past || *At 10.30 they [[were playing]] tennis.*",
+        "a complete action || *They [[played]] tennis yesterday.*"
+       ],
+       [
+        "Together",
+        "the longer action, already going on || *We [[were walking]] home…*",
+        "the short action in the middle of it || *…when I [[met]] Dan.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "They [[was]] playing tennis.",
+       "They [[were]] playing tennis."
+      ],
+      [
+       "While I was [[work]] in the garden, I hurt my back.",
+       "While I was [[working]] in the garden, I hurt my back."
+      ],
+      [
+       "I [[was wanting]] to go home.",
+       "I [[wanted]] to go home."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "In the middle of something at a time in the past",
+       "s": [
+        "at 10.30",
+        "this time last year"
+       ],
+       "tl": "pcont",
+       "ex": [
+        "They started at 10 and finished at 11.30. At 10.30 they [[were playing]] tennis."
+       ]
+      },
+      {
+       "t": "Something happened in the middle of something else",
+       "s": [
+        "when",
+        "while"
+       ],
+       "ex": [
+        "Matt [[phoned]] while we [[were having]] dinner.",
+        "It [[was raining]] when I [[got]] up."
+       ]
+      },
+      {
+       "t": "One thing after another: past simple",
+       "ex": [
+        "When Karen arrived, we [[had]] dinner. (She arrived, and then we had dinner.)",
+        "When Karen arrived, we [[were having]] dinner. (We had already started.)"
+       ]
+      }
+     ],
+     "watch": [
+      "A complete or repeated action in the past: past simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.*",
+      "*know, want, like* are not continuous: *We [[knew]] each other well.*"
+     ]
+    },
+    "watch": [
+     "A complete or repeated action in the past: past simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.*",
+     "*know, want, like* are not continuous: *We [[knew]] each other well.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*was / were + -ing*: darbības vidū. Past Simple: pabeigta darbība."
+    ],
+    "use": [
+     "*We were walking home when I met Dan.*"
+    ],
+    "signals": "*when, while, at 10.30*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Past Continuous (was / were + -ing)",
+       "Past Simple"
+      ],
+      "rows": [
+       [
+        "Nozīme",
+        "darbības vidū kādā brīdī pagātnē || *At 10.30 they [[were playing]] tennis.*",
+        "pabeigta darbība || *They [[played]] tennis yesterday.*"
+       ],
+       [
+        "Kopā",
+        "ilgākā darbība, kas jau notiek || *We [[were walking]] home…*",
+        "īsā darbība tās vidū || *…when I [[met]] Dan.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "They [[was]] playing tennis.",
+       "They [[were]] playing tennis."
+      ],
+      [
+       "While I was [[work]] in the garden, I hurt my back.",
+       "While I was [[working]] in the garden, I hurt my back."
+      ],
+      [
+       "I [[was wanting]] to go home.",
+       "I [[wanted]] to go home."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Darbības vidū kādā brīdī pagātnē",
+       "s": [
+        "at 10.30",
+        "this time last year"
+       ],
+       "tl": "pcont",
+       "ex": [
+        "They started at 10 and finished at 11.30. At 10.30 they [[were playing]] tennis."
+       ]
+      },
+      {
+       "t": "Kaut kas notika citas darbības vidū",
+       "s": [
+        "when",
+        "while"
+       ],
+       "ex": [
+        "Matt [[phoned]] while we [[were having]] dinner.",
+        "It [[was raining]] when I [[got]] up."
+       ]
+      },
+      {
+       "t": "Viens pēc otra: Past Simple",
+       "ex": [
+        "When Karen arrived, we [[had]] dinner. (Viņa atnāca, un tad mēs paēdām.)",
+        "When Karen arrived, we [[were having]] dinner. (Mēs jau bijām sākuši ēst.)"
+       ]
+      }
+     ],
+     "watch": [
+      "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
+      "*know, want, like* nelieto Continuous formā: *We [[knew]] each other well.*"
+     ]
+    },
+    "watch": [
+     "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she was ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
+     "*know, want, like* nelieto Continuous formā: *We [[knew]] each other well.*"
+    ]
+   }
+  },
+  {
+   "id": "cmp_pp_ps",
+   "label": "Present perfect or past simple",
+   "area": "active",
+   "levels": [
+    "A2.2",
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "*have / has* + 3rd form: the situation now. Past simple: only the past."
+    ],
+    "use": [
+     "*Tom has lost his key. Tom lost his key yesterday.*"
+    ],
+    "signals": "*yesterday, ago, today, since*",
+    "example": "*I've burnt myself. How did you do that?*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "present perfect (have / has + 3rd form)",
+       "past simple"
+      ],
+      "rows": [
+       [
+        "Meaning",
+        "the situation now || *Tom [[has lost]] his key. (He doesn't have it now.)*",
+        "only the past || *Tom [[lost]] his key yesterday.*"
+       ],
+       [
+        "Time",
+        "a time up to now || *today, this week, since 2010, recently, ever, never* ;; || *It [[hasn't rained]] this week.*",
+        "a finished time || *yesterday, last week, ten minutes ago, in 2015, When…?* ;; || *It [[didn't rain]] last week.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I [[have seen]] him yesterday.",
+       "I [[saw]] him yesterday."
+      ],
+      [
+       "When [[have]] you [[arrived]]?",
+       "When [[did]] you [[arrive]]?"
+      ],
+      [
+       "I [[live]] here since 2010.",
+       "I [[have lived]] here since 2010."
+      ],
+      [
+       "Who [[has invented]] the telephone?",
+       "Who [[invented]] the telephone?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "New information, then the details in the past simple",
+       "ex": [
+        "Ow! I'[[ve burnt]] myself.",
+        "How [[did]] you [[do]] that? I [[picked]] up a hot dish."
+       ]
+      },
+      {
+       "t": "Is the time finished?",
+       "s": [
+        "this morning",
+        "today",
+        "this week"
+       ],
+       "tl": "upto",
+       "ex": [
+        "[[Have]] you [[seen]] Anna this morning? (It is still morning.)",
+        "[[Did]] you [[see]] Anna this morning? (It is afternoon now.)"
+       ]
+      },
+      {
+       "t": "Still true, or finished?",
+       "ex": [
+        "I'[[ve worked]] here since 2010. (I still work here.)",
+        "I [[worked]] there from 2010 to 2014. (I don't work there now.)"
+       ]
+      }
+     ],
+     "watch": [
+      "Not new or recent: past simple: *Mozart [[wrote]] more than 600 pieces of music.*",
+      "Your life up to now: present perfect; a finished part of your life: past simple: *I'[[ve never ridden]] a horse. I [[never rode]] a bike when I was a child.*"
+     ]
+    },
+    "watch": [
+     "Not new or recent: past simple: *Mozart [[wrote]] more than 600 pieces of music.*",
+     "Your life up to now: present perfect; a finished part of your life: past simple: *I'[[ve never ridden]] a horse. I [[never rode]] a bike when I was a child.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*have / has* + 3. forma: situācija tagad. Past Simple: tikai pagātne."
+    ],
+    "use": [
+     "*Tom has lost his key.* *Tom lost his key yesterday.*"
+    ],
+    "signals": "*yesterday, ago, today, since*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Present Perfect (have / has + 3. forma)",
+       "Past Simple"
+      ],
+      "rows": [
+       [
+        "Nozīme",
+        "situācija tagad || *Tom [[has lost]] his key. (Atslēgas viņam tagad nav.)*",
+        "tikai pagātne || *Tom [[lost]] his key yesterday.*"
+       ],
+       [
+        "Laiks",
+        "laiks līdz šim brīdim || *today, this week, since 2010, recently, ever, never* ;; || *It [[hasn't rained]] this week.*",
+        "pabeigts laiks || *yesterday, last week, ten minutes ago, in 2015, When…?* ;; || *It [[didn't rain]] last week.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I [[have seen]] him yesterday.",
+       "I [[saw]] him yesterday."
+      ],
+      [
+       "When [[have]] you [[arrived]]?",
+       "When [[did]] you [[arrive]]?"
+      ],
+      [
+       "I [[live]] here since 2010.",
+       "I [[have lived]] here since 2010.",
+       "Latviski \"dzīvoju šeit kopš 2010. gada\" ir tagadnē, tāpēc, tulkojot burtiski, rodas *live*."
+      ],
+      [
+       "Who [[has invented]] the telephone?",
+       "Who [[invented]] the telephone?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Jaunums, tad sīkāk Past Simple",
+       "ex": [
+        "Ow! I'[[ve burnt]] myself.",
+        "How [[did]] you [[do]] that? I [[picked]] up a hot dish."
+       ]
+      },
+      {
+       "t": "Vai laiks ir beidzies?",
+       "s": [
+        "this morning",
+        "today",
+        "this week"
+       ],
+       "tl": "upto",
+       "ex": [
+        "[[Have]] you [[seen]] Anna this morning? (Vēl ir rīts.)",
+        "[[Did]] you [[see]] Anna this morning? (Tagad jau ir pēcpusdiena.)"
+       ]
+      },
+      {
+       "t": "Joprojām ir tā vai beidzies?",
+       "ex": [
+        "I'[[ve worked]] here since 2010. (Es joprojām te strādāju.)",
+        "I [[worked]] there from 2010 to 2014. (Tagad es tur nestrādāju.)"
+       ]
+      }
+     ],
+     "watch": [
+      "Nav jaunums un nav nesen: Past Simple: *Mozart [[wrote]] more than 600 pieces of music.*",
+      "Dzīve līdz šim: Present Perfect; pabeigta dzīves daļa: Past Simple: *I'[[ve never ridden]] a horse. I [[never rode]] a bike when I was a child.*"
+     ]
+    },
+    "watch": [
+     "Nav jaunums un nav nesen: Past Simple: *Mozart [[wrote]] more than 600 pieces of music.*",
+     "Dzīve līdz šim: Present Perfect; pabeigta dzīves daļa: Past Simple: *I'[[ve never ridden]] a horse. I [[never rode]] a bike when I was a child.*"
+    ]
+   }
+  },
+  {
+   "id": "narrative",
+   "label": "Narrative tenses: past simple, past continuous, past perfect",
+   "area": "active",
+   "levels": [
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "Past continuous: the background. Past simple: the events. Past perfect: what happened before."
+    ],
+    "use": [
+     "*When Sarah arrived, Paul had gone home.*"
+    ],
+    "signals": "*when, already, by the time*",
+    "example": "*When we got home, somebody had broken into the flat.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "past continuous",
+       "past simple",
+       "past perfect"
+      ],
+      "rows": [
+       [
+        "In a story",
+        "the background: what was going on || *The sun [[was shining]].*",
+        "the main events, one after another || *I [[got]] up and [[looked]] out of the window.*",
+        "what happened before that || *Somebody [[had broken]] into the flat.*"
+       ],
+       [
+        "Form",
+        "|| *was / were* + *-ing*",
+        "|| *-ed* / 2nd form",
+        "|| *had* + 3rd form"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "When I arrived, the film [[has]] already started.",
+       "When I arrived, the film [[had]] already started."
+      ],
+      [
+       "When I [[have got]] home, I found the door open.",
+       "When I [[got]] home, I found the door open."
+      ],
+      [
+       "I didn't go to the cinema. I [[have]] already [[seen]] the film.",
+       "I didn't go to the cinema. I [[had]] already [[seen]] the film."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The story starts in the past simple; what happened before it: past perfect",
+       "s": [
+        "when",
+        "already",
+        "by the time"
+       ],
+       "tl": "pastperfect",
+       "ex": [
+        "When Sarah arrived at the party, Paul [[had]] already [[gone]] home.",
+        "When we got home, we found that somebody [[had broken]] into the flat."
+       ]
+      },
+      {
+       "t": "Was Tom there when you arrived?",
+       "ex": [
+        "Yes, but he [[left]] soon afterwards.",
+        "No, he'[[d]] already [[left]]."
+       ]
+      },
+      {
+       "t": "The background at that moment: past continuous",
+       "ex": [
+        "It [[was raining]], and people [[were hurrying]] home."
+       ]
+      }
+     ],
+     "watch": [
+      "Actions told in the order they happened need only the past simple: *She [[opened]] the door and [[went]] in.*",
+      "*have seen* (before now) and *had seen* (before then): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+     ]
+    },
+    "watch": [
+     "Actions told in the order they happened need only the past simple: *She [[opened]] the door and [[went]] in.*",
+     "*have seen* (before now) and *had seen* (before then): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "Past Continuous: fons. Past Simple: notikumi. Past Perfect: kas notika pirms tam."
+    ],
+    "use": [
+     "*When Sarah arrived, Paul had gone home.*"
+    ],
+    "signals": "*when, already, by the time*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Past Continuous",
+       "Past Simple",
+       "Past Perfect"
+      ],
+      "rows": [
+       [
+        "Stāstā",
+        "fons: kas notika apkārt || *The sun [[was shining]].*",
+        "galvenie notikumi pēc kārtas || *I [[got]] up and [[looked]] out of the window.*",
+        "kas notika pirms tam || *Somebody [[had broken]] into the flat.*"
+       ],
+       [
+        "Forma",
+        "|| *was / were* + *-ing*",
+        "|| *-ed* / 2. forma",
+        "|| *had* + 3. forma"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "When I arrived, the film [[has]] already started.",
+       "When I arrived, the film [[had]] already started."
+      ],
+      [
+       "When I [[have got]] home, I found the door open.",
+       "When I [[got]] home, I found the door open."
+      ],
+      [
+       "I didn't go to the cinema. I [[have]] already [[seen]] the film.",
+       "I didn't go to the cinema. I [[had]] already [[seen]] the film."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Stāsts sākas Past Simple; kas notika pirms tam: Past Perfect",
+       "s": [
+        "when",
+        "already",
+        "by the time"
+       ],
+       "tl": "pastperfect",
+       "ex": [
+        "When Sarah arrived at the party, Paul [[had]] already [[gone]] home.",
+        "When we got home, we found that somebody [[had broken]] into the flat."
+       ]
+      },
+      {
+       "t": "Vai Toms bija tur, kad tu atnāci?",
+       "ex": [
+        "Yes, but he [[left]] soon afterwards.",
+        "No, he'[[d]] already [[left]]."
+       ]
+      },
+      {
+       "t": "Fons tajā brīdī: Past Continuous",
+       "ex": [
+        "It [[was raining]], and people [[were hurrying]] home."
+       ]
+      }
+     ],
+     "watch": [
+      "Darbībām, kas stāstītas tādā secībā, kā notika, pietiek ar Past Simple: *She [[opened]] the door and [[went]] in.*",
+      "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+     ]
+    },
+    "watch": [
+     "Darbībām, kas stāstītas tādā secībā, kā notika, pietiek ar Past Simple: *She [[opened]] the door and [[went]] in.*",
+     "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I couldn't remember where.*"
+    ]
+   }
+  },
+  {
+   "id": "narrative_b2",
+   "label": "Narrative tenses with past perfect continuous",
+   "area": "active",
+   "levels": [
+    "B2.1",
+    "B2.2"
+   ],
+   "rule": {
+    "form": [
+     "*had been* + *-ing*: an activity that went on before a moment in the past."
+    ],
+    "use": [
+     "*It had been raining, so the ground was wet.*"
+    ],
+    "signals": "*for, since, all day, how long*",
+    "example": "*We'd been playing for half an hour when it started to rain.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "past continuous",
+       "past simple",
+       "past perfect",
+       "past perfect continuous"
+      ],
+      "rows": [
+       [
+        "Form",
+        "|| *it [[was raining]]*",
+        "|| *it [[rained]]*",
+        "|| *it [[had rained]]*",
+        "|| *it [[had been raining]]*"
+       ],
+       [
+        "In a story",
+        "what was going on at that moment || *The sun [[was shining]].*",
+        "the main events || *I [[looked]] out of the window.*",
+        "a finished action before that || *Somebody [[had left]] the gate open.*",
+        "an activity that went on before, often with a result you can see || *The ground was wet. It [[had been raining]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "We [[had been knowing]] each other for years.",
+       "We [[had known]] each other for years."
+      ],
+      [
+       "She had been [[work]] all day.",
+       "She had been [[working]] all day."
+      ],
+      [
+       "When it started to rain, we [[have been playing]] for half an hour.",
+       "When it started to rain, we [[had been playing]] for half an hour."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Before now or before a moment in the past?",
+       "tl": "ppcont",
+       "ex": [
+        "I hope the bus comes soon. I'[[ve been waiting]] for 20 minutes.",
+        "At last the bus came. I'[[d been waiting]] for 20 minutes."
+       ]
+      },
+      {
+       "t": "*was doing* or *had been doing*?",
+       "ex": [
+        "It [[wasn't raining]] when we went out. The sun was shining, but it [[had been raining]], so the ground was wet."
+       ]
+      },
+      {
+       "t": "How long? *had been doing*. How much or how many? *had done*",
+       "ex": [
+        "She was tired because she'[[d been working]] hard all day.",
+        "By lunchtime she'[[d written]] ten emails."
+       ]
+      }
+     ],
+     "watch": [
+      "*know, have* (= own), *like* are not continuous: *We'[[d known]] each other for years.*",
+      "*for* says how long it went on: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+     ]
+    },
+    "watch": [
+     "*know, have* (= own), *like* are not continuous: *We'[[d known]] each other for years.*",
+     "*for* says how long it went on: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*had been + -ing*: darbība, kas notika pirms kāda brīža pagātnē."
+    ],
+    "use": [
+     "*It had been raining, so the ground was wet.*"
+    ],
+    "signals": "*for, since, all day, how long*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Past Continuous",
+       "Past Simple",
+       "Past Perfect",
+       "Past Perfect Continuous"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "|| *it [[was raining]]*",
+        "|| *it [[rained]]*",
+        "|| *it [[had rained]]*",
+        "|| *it [[had been raining]]*"
+       ],
+       [
+        "Stāstā",
+        "kas notika tajā brīdī || *The sun [[was shining]].*",
+        "galvenie notikumi || *I [[looked]] out of the window.*",
+        "pabeigta darbība pirms tam || *Somebody [[had left]] the gate open.*",
+        "darbība, kas ilga pirms tam, bieži ar redzamu rezultātu || *The ground was wet. It [[had been raining]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "We [[had been knowing]] each other for years.",
+       "We [[had known]] each other for years."
+      ],
+      [
+       "She had been [[work]] all day.",
+       "She had been [[working]] all day."
+      ],
+      [
+       "When it started to rain, we [[have been playing]] for half an hour.",
+       "When it started to rain, we [[had been playing]] for half an hour."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Pirms tagad vai pirms kāda brīža pagātnē?",
+       "tl": "ppcont",
+       "ex": [
+        "I hope the bus comes soon. I'[[ve been waiting]] for 20 minutes.",
+        "At last the bus came. I'[[d been waiting]] for 20 minutes."
+       ]
+      },
+      {
+       "t": "*was doing* vai *had been doing*?",
+       "ex": [
+        "It [[wasn't raining]] when we went out. The sun was shining, but it [[had been raining]], so the ground was wet."
+       ]
+      },
+      {
+       "t": "Cik ilgi? *had been doing*. Cik daudz? *had done*",
+       "ex": [
+        "She was tired because she'[[d been working]] hard all day.",
+        "By lunchtime she'[[d written]] ten emails."
+       ]
+      }
+     ],
+     "watch": [
+      "*know, have* (= piederēt), *like* nelieto Continuous formā: *We'[[d known]] each other for years.*",
+      "*for* saka, cik ilgi tas ilga: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
+     ]
+    },
+    "watch": [
+     "*know, have* (= piederēt), *like* nelieto Continuous formā: *We'[[d known]] each other for years.*",
+     "*for* saka, cik ilgi tas ilga: *We'd been playing tennis [[for]] half an hour when it started to rain.*"
     ]
    }
   }

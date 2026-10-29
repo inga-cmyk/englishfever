@@ -537,3 +537,29 @@ LV_CARDS.update({
         "signals": "am, is, are, was, were, do, does, did, have, has",
     },
 })
+
+
+# ───────── comparing past tenses (teacher, 29 October; Murphy, English Grammar in Use, Units 6, 13-16) ─────────
+SKILLS_NEW.extend([
+    ("cmp_ps_pc", "Past simple or past continuous", "active", ["A2.2", "B1.1"]),
+    ("cmp_pp_ps", "Present perfect or past simple", "active", ["A2.2", "B1.1"]),
+    ("narrative", "Narrative tenses: past simple, past continuous, past perfect", "active", ["B1.1", "B1.2"]),
+    ("narrative_b2", "Narrative tenses with past perfect continuous", "active", ["B2.1", "B2.2"]),
+])
+ABBR_NEW.update({"cmp_ps_pc": "cpc", "cmp_pp_ps": "cpp", "narrative": "nar", "narrative_b2": "nr2"})
+CARDS.update({
+    "cmp_ps_pc": {"form": ["*was / were* + *-ing*: in the middle of an action. Past simple: a complete action."],
+                  "use": ["*We were walking home when I met Dan.*"], "signals": "*when, while, at 10.30*", "example": "*Matt phoned while we were having dinner.*"},
+    "cmp_pp_ps": {"form": ["*have / has* + 3rd form: the situation now. Past simple: only the past."],
+                  "use": ["*Tom has lost his key. Tom lost his key yesterday.*"], "signals": "*yesterday, ago, today, since*", "example": "*I've burnt myself. How did you do that?*"},
+    "narrative": {"form": ["Past continuous: the background. Past simple: the events. Past perfect: what happened before."],
+                  "use": ["*When Sarah arrived, Paul had gone home.*"], "signals": "*when, already, by the time*", "example": "*When we got home, somebody had broken into the flat.*"},
+    "narrative_b2": {"form": ["*had been* + *-ing*: an activity that went on before a moment in the past."],
+                     "use": ["*It had been raining, so the ground was wet.*"], "signals": "*for, since, all day, how long*", "example": "*We'd been playing for half an hour when it started to rain.*"},
+})
+LV_CARDS.update({
+    "cmp_ps_pc": {"form": ["was / were + -ing: darbības vidū. Past Simple: pabeigta darbība."], "use": ["We were walking home when I met Dan."], "signals": "when, while, at 10.30"},
+    "cmp_pp_ps": {"form": ["have / has + 3. forma: situācija tagad. Past Simple: tikai pagātne."], "use": ["Tom has lost his key. Tom lost his key yesterday."], "signals": "yesterday, ago, today, since"},
+    "narrative": {"form": ["Past Continuous: fons. Past Simple: notikumi. Past Perfect: kas notika pirms tam."], "use": ["When Sarah arrived, Paul had gone home."], "signals": "when, already, by the time"},
+    "narrative_b2": {"form": ["had been + -ing: darbība, kas notika pirms kāda brīža pagātnē."], "use": ["It had been raining, so the ground was wet."], "signals": "for, since, all day, how long"},
+})

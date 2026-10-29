@@ -43,7 +43,7 @@ CARDS = {
     "past_perfect": {
         "en": {
             "table": {"cols": EN_COLS, "rows": PAP_ROWS, "short": "*'d* = *had*: *She'[[d]] already left.*"},
-            "mistakes": [["When I [[arrived]], the film [[has]] already started.", "When I arrived, the film [[had]] already started."],
+            "mistakes": [["When I [[arrived]], the film [[has]] already started.", "When I [[arrived]], the film [[had]] already [[started]]."],
                          ["She [[had went]] home.", "She [[had gone]] home."],
                          ["I [[have]] never seen snow before I moved to Finland.", "I [[had]] never seen snow before I moved to Finland."]],
             "uses": [{"t": "The earlier of two past actions", "s": ["when", "by the time", "already", "before"], "tl": "pastperfect",
@@ -55,7 +55,7 @@ CARDS = {
         },
         "lv": {
             "table": {"cols": LV_COLS, "rows": [["visas personas"] + PAP_ROWS[0][1:]], "short": "*'d* = *had*: *She'[[d]] already left.*"},
-            "mistakes": [["When I [[arrived]], the film [[has]] already started.", "When I arrived, the film [[had]] already started."],
+            "mistakes": [["When I [[arrived]], the film [[has]] already started.", "When I [[arrived]], the film [[had]] already [[started]]."],
                          ["She [[had went]] home.", "She [[had gone]] home."],
                          ["I [[have]] never seen snow before I moved to Finland.", "I [[had]] never seen snow before I moved to Finland."]],
             "uses": [{"t": "Agrākā no divām darbībām pagātnē", "s": ["when", "by the time", "already", "before"], "tl": "pastperfect",

@@ -1433,7 +1433,7 @@ return json_decode(<<<'EF_JSON_END'
      "mistakes": [
       [
        "When I [[arrived]], the film [[has]] already started.",
-       "When I arrived, the film [[had]] already started."
+       "When I [[arrived]], the film [[had]] already [[started]]."
       ],
       [
        "She [[had went]] home.",
@@ -1512,7 +1512,7 @@ return json_decode(<<<'EF_JSON_END'
      "mistakes": [
       [
        "When I [[arrived]], the film [[has]] already started.",
-       "When I arrived, the film [[had]] already started."
+       "When I [[arrived]], the film [[had]] already [[started]]."
       ],
       [
        "She [[had went]] home.",
@@ -7854,11 +7854,11 @@ return json_decode(<<<'EF_JSON_END'
      "mistakes": [
       [
        "When I arrived, the film [[has]] already started.",
-       "When I arrived, the film [[had]] already started."
+       "When I [[arrived]], the film [[had]] already [[started]]."
       ],
       [
        "When I [[have got]] home, I found the door open.",
-       "When I [[got]] home, I found the door open."
+       "When I [[got]] home, I [[found]] the door open."
       ],
       [
        "I didn't go to the cinema. I [[have]] already [[seen]] the film.",
@@ -7937,11 +7937,11 @@ return json_decode(<<<'EF_JSON_END'
      "mistakes": [
       [
        "When I arrived, the film [[has]] already started.",
-       "When I arrived, the film [[had]] already started."
+       "When I [[arrived]], the film [[had]] already [[started]]."
       ],
       [
        "When I [[have got]] home, I found the door open.",
-       "When I [[got]] home, I found the door open."
+       "When I [[got]] home, I [[found]] the door open."
       ],
       [
        "I didn't go to the cinema. I [[have]] already [[seen]] the film.",

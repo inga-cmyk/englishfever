@@ -76,7 +76,7 @@ A_THE2 = ex("*the* the second time: *I saw a cat. The cat was black.*", "*the*, 
 A_ONLY = ex("*the* with the only one and with superlatives: *the Moon, the best.*", "Latviski \"mēness\" bez artikula, bet vienīgajam un ar \"vis-\" vajag *the*: *the Moon, the best.*")
 A_NO = ex("No article with meals and with places used for their purpose: *have lunch, go to bed.*", "Bez artikula ēdienreizēm un vietām, ko lieto to nolūkam: *have lunch, go to bed.*")
 A_RIVER = ex("*the* with rivers and seas: *the Danube, the Baltic Sea.*", "*the* ar upēm un jūrām: *the Danube, the Baltic Sea.*")
-T = Topic("Articles: a, an, the, no article", mcq_b=2, text_b=3, mcq=A_AN, bank=A_AN, gap=A_AN, text=A_AN, order=A_AN, match=A_AN)
+T = Topic("Articles", mcq_b=2, text_b=3, mcq=A_AN, bank=A_AN, gap=A_AN, text=A_AN, order=A_AN, match=A_AN)
 T.mcq("A2.2", "Choose the correct option: My sister is ___ engineer.", "an", ["a", "the"], A_AN)
 T.mcq("A2.2", "Choose the correct option: We usually have ___ lunch at one.", NONE, ["a", "the"], A_NO)
 T.mcq("A2.2", "Choose the correct option: I saw a cat in the garden. ___ cat was black.", "The", ["A", NONE], A_THE2)

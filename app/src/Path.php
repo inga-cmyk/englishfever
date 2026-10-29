@@ -32,6 +32,7 @@ final class Path
         ['two', 'Give me, tell her', 'A2', ['two_objects']],
         ['psp', 'Present simple passive', 'A2', ['present_simple_passive']],
         ['ut', 'Used to', 'B1', ['used_to']],
+        ['art2', 'The or no article', 'B1', ['articles_b1']],   // articles split like Murphy (teacher, 29 October)
         ['ppc', 'Present perfect continuous', 'B1', ['present_perfect_continuous']],
         ['ind', 'Someone, anything, nobody', 'B1', ['indefinite_pronouns']],
         ['rel', 'Relative clauses', 'B1', ['relative_clauses']],

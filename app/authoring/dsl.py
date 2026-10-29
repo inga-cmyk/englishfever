@@ -31,7 +31,7 @@ ABBR = {
     "present_simple_passive": "psp", "past_simple_passive": "pasp",
     "present_continuous_passive": "pcp", "present_perfect_passive": "ppp", "future_passive": "fup",
     "modal_verbs": "mv", "comparison": "cmp", "cond_zero": "cz", "cond_first": "cf", "cond_second": "cs", "cond_third": "ct", "cond_mixed": "cm", "cond_advanced": "ca",
-    "used_to": "ut", "articles": "art", "quantity": "qty", "relative_clauses": "rel", "time_clauses": "tcl", "question_tags": "qtg", "subject_object_q": "soq", "verb_patterns": "vpt",
+    "used_to": "ut", "articles": "art", "articles_b1": "art2", "quantity": "qty", "relative_clauses": "rel", "time_clauses": "tcl", "question_tags": "qtg", "subject_object_q": "soq", "verb_patterns": "vpt",
     "rep_statements": "rs", "rep_questions": "rq", "rep_verbs": "rv", "ind_polite": "ip", "ind_advanced": "ia",
 }
 

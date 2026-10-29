@@ -75,6 +75,7 @@ SKILL_ERR = {
     "indefinite_pronouns": ["DOUBLE-NEG"],
     "adverbs": ["ADV-PLACE"],
     "articles": ["ARTICLE", "THE"],
+    "articles_b1": ["ARTICLE", "THE"],
     "quantity": ["UNCOUNT"],
     "verb_patterns": ["PATTERN", "NEG-INF"],
     "adj_ed_ing": ["ED-ING"],

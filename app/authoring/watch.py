@@ -30,12 +30,10 @@ WATCH = {
     "articles": {
         "en": ["Jobs take *a / an*: *She's a nurse.*",
                "*a / an* by sound: *a university, a European, an hour, an MBA*.",
-               "No article: meals, sports, languages, *by bus*: *have lunch, play football, speak English*.",
                "*the* the second time: *I saw a dog. The dog was huge.*",
                "*the* with instruments and some places: *play the piano, go to the cinema, listen to the radio*."],
         "lv": ["Profesijām vajag a / an: She's a nurse. Latviski artikula nav, tāpēc to bieži izlaiž.",
                "a / an pēc skaņas: a university, a European, an hour, an MBA.",
-               "Bez artikula: ēdienreizes, sporta veidi, valodas, by bus: have lunch, play football, speak English.",
                "the, kad pieminam otro reizi: I saw a dog. The dog was huge.",
                "the ar mūzikas instrumentiem un dažām vietām: play the piano, go to the cinema, listen to the radio."],
     },

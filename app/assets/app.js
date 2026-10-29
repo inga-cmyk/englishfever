@@ -1585,7 +1585,8 @@
     prep_time_place: 'See you **on** Friday **at** 8.',
     aux_verbs: '**Are** you listening? **Did** you hear me? **Have** you fallen asleep?',
     cmp_ps_pc: 'I **was eating** chocolate when my diet **started**.', cmp_pp_ps: "I**'ve been** to Paris. I **saw** the airport.",
-    narrative: 'The party **had** already **finished** when I **arrived** in my best shirt.', narrative_b2: "He **was** out of breath. He**'d been running**."
+    narrative: 'The party **had** already **finished** when I **arrived** in my best shirt.', narrative_b2: "He **was** out of breath. He**'d been running**.",
+    articles_b1: '**The** rich get richer. **The** cat gets **the** sofa.'
   };
   function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
     return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });

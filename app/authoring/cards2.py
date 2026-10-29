@@ -132,6 +132,7 @@ HL = {
     "prep_time_place": r"at|on|in|tomorrow|yesterday|next|last|this|every",
     "irregular_plurals": r"days|boys|advice",
     "articles": r"an|a|the",
+    "articles_b1": r"the",
     "quantity": r"a lot of|a few|a little|How many|How much|some|any|many|much|few|little|no",
     "adverbs": r"\w+ly|well|fast|hard|always|usually|often|sometimes|never|very|really|quite|too|extremely|enough",
     "verb_patterns": r"\w+ing|to \w+|go|laugh|swim",
@@ -146,7 +147,7 @@ def _mark(sid, text):
     pat = HL.get(sid)
     if not pat or "*" not in text:
         return text
-    rx = re.compile(r"(?<![\w\[])(?:" + pat + r")(?![\w\]])", re.I if sid != "articles" else 0)
+    rx = re.compile(r"(?<![\w\[])(?:" + pat + r")(?![\w\]])", re.I if sid not in ("articles", "articles_b1") else 0)
     parts = text.split("*")
     for i in range(1, len(parts), 2):
         before = parts[i - 1].rstrip()

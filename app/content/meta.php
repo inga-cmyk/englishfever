@@ -4145,7 +4145,7 @@ return json_decode(<<<'EF_JSON_END'
   },
   {
    "id": "articles",
-   "label": "Articles: a, an, the, no article",
+   "label": "Articles: a, an, the",
    "area": "nouns",
    "levels": [
     "A2.2",
@@ -4167,24 +4167,21 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*first mention, already mentioned, the only one, in general*",
     "example": "*I bought a jacket and a hat. The jacket was cheap, but I love hats.*",
     "watch": [
-     "*[[the]]* with musical instruments and some places: *She plays [[the]] piano. We went to [[the]] cinema.*"
+     "*What [[a]] lovely day!*"
     ],
     "v2": {
      "choice": {
       "cols": [
        "a / an",
-       "the",
-       "no article"
+       "the"
       ],
       "rows": [
        [
         "When",
-        "one of many, the first time || *I saw [[a]] film.* ;; jobs || *She's [[a]] nurse.*",
-        "we both know which one || *Close [[the]] door, please.* ;; the second time || *[[The]] film was great.* ;; the only one || *[[the]] sun, [[the]] Internet*",
-        "things in general || *I like coffee.* ;; meals, sports, languages || *have lunch, play football, speak English* ;; most names || *Riga, Latvia*"
+        "one of many, the first time || *I saw [[a]] film.* ;; jobs || *She's [[a]] nurse.* ;; by sound || *[[a]] university, [[an]] hour*",
+        "we both know which one || *Close [[the]] door, please.* ;; the second time || *[[The]] film was great.* ;; the only one || *[[the]] sun, [[the]] moon*"
        ]
-      ],
-      "note": "*[[a]] / [[an]]* by sound: *[[a]] university, [[a]] European, [[an]] hour, [[an]] MBA*."
+      ]
      },
      "mistakes": [
       [
@@ -4192,8 +4189,8 @@ return json_decode(<<<'EF_JSON_END'
        "She is [[a nurse]]."
       ],
       [
-       "I go to work by [[the bus]].",
-       "I go to work by [[bus]]."
+       "I eat [[a]] apple every day.",
+       "I eat [[an]] apple every day."
       ],
       [
        "[[Sun]] is hot today.",
@@ -4208,32 +4205,19 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "*the* with superlatives, seas and rivers, some countries",
+       "t": "*the* with superlatives",
        "s": [
         "the best",
-        "the Baltic Sea",
-        "the UK"
+        "the biggest",
+        "the most expensive"
        ],
        "ex": [
-        "It's [[the]] best café in [[the]] city."
-       ]
-      },
-      {
-       "t": "Places used for their purpose: no article",
-       "s": [
-        "at home",
-        "at work",
-        "go to school",
-        "go to bed"
-       ],
-       "ex": [
-        "I'm at work.",
-        "The children go to school at eight."
+        "It's [[the]] best café in town."
        ]
       }
      ],
      "watch": [
-      "*[[the]]* with musical instruments and some places: *She plays [[the]] piano. We went to [[the]] cinema.*"
+      "*What [[a]] lovely day!*"
      ]
     }
    },
@@ -4251,34 +4235,31 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*first mention, already mentioned, the only one, in general* (pirmoreiz, jau minēts, vienīgais, vispārīgi)",
     "watch": [
-     "*[[the]]* ar mūzikas instrumentiem un dažām vietām: *She plays [[the]] piano. We went to [[the]] cinema.*"
+     "*What [[a]] lovely day!*"
     ],
     "v2": {
      "choice": {
       "cols": [
        "a / an",
-       "the",
-       "bez artikula"
+       "the"
       ],
       "rows": [
        [
         "Kad",
-        "viens no daudziem, pirmo reizi || *I saw [[a]] film.* ;; profesijas || *She's [[a]] nurse.*",
-        "abi zinām, kurš || *Close [[the]] door, please.* ;; otro reizi || *[[The]] film was great.* ;; vienīgais || *[[the]] sun, [[the]] Internet*",
-        "vispārīgi || *I like coffee.* ;; ēdienreizes, sports, valodas || *have lunch, play football, speak English* ;; vairums vārdu || *Riga, Latvia*"
+        "viens no daudziem, pirmo reizi || *I saw [[a]] film.* ;; profesijas || *She's [[a]] nurse.* ;; pēc skaņas || *[[a]] university, [[an]] hour*",
+        "abi zinām, kurš || *Close [[the]] door, please.* ;; otro reizi || *[[The]] film was great.* ;; vienīgais || *[[the]] sun, [[the]] moon*"
        ]
-      ],
-      "note": "*[[a]] / [[an]]* pēc skaņas: *[[a]] university, [[a]] European, [[an]] hour, [[an]] MBA*."
+      ]
      },
      "mistakes": [
       [
        "She is [[nurse]].",
        "She is [[a nurse]].",
-       "Latviešu valodā artikulu nav, tāpēc tos bieži izlaiž, īpaši pie profesijām."
+       "Latviešu valodā artikulu nav, tāpēc pie profesijām tos bieži izlaiž."
       ],
       [
-       "I go to work by [[the bus]].",
-       "I go to work by [[bus]]."
+       "I eat [[a]] apple every day.",
+       "I eat [[an]] apple every day."
       ],
       [
        "[[Sun]] is hot today.",
@@ -4294,32 +4275,19 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "*the* ar \"vis-\" (superlatīvu), jūrām un upēm, dažām valstīm",
+       "t": "*the* ar \"vis-\" (superlatīvu)",
        "s": [
         "the best",
-        "the Baltic Sea",
-        "the UK"
+        "the biggest",
+        "the most expensive"
        ],
        "ex": [
-        "It's [[the]] best café in [[the]] city."
-       ]
-      },
-      {
-       "t": "Vietas, ko lieto to nolūkam: bez artikula",
-       "s": [
-        "at home",
-        "at work",
-        "go to school",
-        "go to bed"
-       ],
-       "ex": [
-        "I'm at work.",
-        "The children go to school at eight."
+        "It's [[the]] best café in town."
        ]
       }
      ],
      "watch": [
-      "*[[the]]* ar mūzikas instrumentiem un dažām vietām: *She plays [[the]] piano. We went to [[the]] cinema.*"
+      "*What [[a]] lovely day!*"
      ]
     }
    }
@@ -8157,6 +8125,146 @@ return json_decode(<<<'EF_JSON_END'
      "*for* saka, cik ilgi tas ilga: *We'[[d been playing]] tennis [[for]] half an hour when it [[started]] to rain.*"
     ]
    }
+  },
+  {
+   "id": "articles_b1",
+   "label": "The or no article (school, the school)",
+   "area": "nouns",
+   "levels": [
+    "B1.1",
+    "B1.2"
+   ],
+   "rule": {
+    "form": [
+     "No article: things in general, meals, languages, places used for their purpose, most countries. *the*: a particular one."
+    ],
+    "use": [
+     "*I like coffee. I like the coffee you made.*"
+    ],
+    "signals": "*in general, school, work, bed, the Alps, the poor*",
+    "example": "*Children love games. The children in my class love games.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "no article",
+       "the"
+      ],
+      "rows": [
+       [
+        "When",
+        "in general || *I like [[coffee]]. [[Dogs]] are loyal.* ;; meals, languages, sports || *have [[lunch]], speak [[English]]* ;; a place used for its purpose || *go to [[school]], at [[work]], go to [[bed]]* ;; most countries and cities || *[[Latvia]], [[Riga]]*",
+        "a particular one || *I like [[the coffee]] you made.* ;; a place as a building || *I went to [[the school]] to meet the teacher.* ;; seas, rivers, mountain ranges, some countries || *[[the]] Baltic Sea, [[the]] Danube, [[the]] Alps, [[the]] UK* ;; a group of people || *[[the]] poor, [[the]] elderly*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I'm learning [[the Spanish]].",
+       "I'm learning [[Spanish]]."
+      ],
+      [
+       "He lives in [[the Latvia]].",
+       "He lives in [[Latvia]]."
+      ],
+      [
+       "I go to [[the bed]] at eleven.",
+       "I go to [[bed]] at eleven."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "In general, or a particular group?",
+       "ex": [
+        "[[Children]] love games.",
+        "[[The children]] in my class love games."
+       ]
+      },
+      {
+       "t": "*the* + adjective: a group of people",
+       "s": [
+        "the poor",
+        "the rich",
+        "the elderly",
+        "the young"
+       ],
+       "ex": [
+        "[[The elderly]] need more care."
+       ]
+      }
+     ],
+     "watch": [
+      "*She plays [[the]] piano. We went to [[the]] cinema.*"
+     ]
+    },
+    "watch": [
+     "*She plays [[the]] piano. We went to [[the]] cinema.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "Bez artikula: vispārīgi, ēdienreizes, *valodas*, vietas to nolūkam, *vairums* valstu. *the*: konkrēts."
+    ],
+    "use": [
+     "*I like coffee.* *I like the coffee you made.*"
+    ],
+    "signals": "*in general, school, work, bed, the Alps, the poor*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "bez artikula",
+       "the"
+      ],
+      "rows": [
+       [
+        "Kad",
+        "vispārīgi || *I like [[coffee]]. [[Dogs]] are loyal.* ;; ēdienreizes, valodas, sports || *have [[lunch]], speak [[English]]* ;; vieta, ko lieto tās nolūkam || *go to [[school]], at [[work]], go to [[bed]]* ;; vairums valstu un pilsētu || *[[Latvia]], [[Riga]]*",
+        "konkrēts || *I like [[the coffee]] you made.* ;; vieta kā ēka || *I went to [[the school]] to meet the teacher.* ;; jūras, upes, kalnu grēdas, dažas valstis || *[[the]] Baltic Sea, [[the]] Danube, [[the]] Alps, [[the]] UK* ;; cilvēku grupa || *[[the]] poor, [[the]] elderly*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I'm learning [[the Spanish]].",
+       "I'm learning [[Spanish]]."
+      ],
+      [
+       "He lives in [[the Latvia]].",
+       "He lives in [[Latvia]]."
+      ],
+      [
+       "I go to [[the bed]] at eleven.",
+       "I go to [[bed]] at eleven."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Vispārīgi vai konkrēta grupa?",
+       "ex": [
+        "[[Children]] love games.",
+        "[[The children]] in my class love games."
+       ]
+      },
+      {
+       "t": "*the* + īpašības vārds: cilvēku grupa",
+       "s": [
+        "the poor",
+        "the rich",
+        "the elderly",
+        "the young"
+       ],
+       "ex": [
+        "[[The elderly]] need more care."
+       ]
+      }
+     ],
+     "watch": [
+      "*She plays [[the]] piano. We went to [[the]] cinema.*"
+     ]
+    },
+    "watch": [
+     "*She plays [[the]] piano. We went to [[the]] cinema.*"
+    ]
+   }
   }
  ],
  "bloom": {
@@ -8424,6 +8532,10 @@ return json_decode(<<<'EF_JSON_END'
    "ADV-PLACE"
   ],
   "articles": [
+   "ARTICLE",
+   "THE"
+  ],
+  "articles_b1": [
    "ARTICLE",
    "THE"
   ],

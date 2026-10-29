@@ -5,7 +5,7 @@ AREAS_NEW = [("nouns", "Nouns and articles"), ("clauses", "Joining ideas"), ("qu
 
 SKILLS_NEW = [
     ("used_to", "Used to and be used to", "active", ["A2.2", "B1.1", "B1.2"]),
-    ("articles", "Articles: a, an, the, no article", "nouns", ["A2.2", "B1.1", "B1.2"]),
+    ("articles", "Articles: a, an, the", "nouns", ["A2.2", "B1.1", "B1.2"]),
     ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.2", "B1.1"]),
     ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["B1.1", "B1.2"]),
     ("time_clauses", "Time clauses (when, as soon as, until)", "clauses", ["B1.1", "B1.2"]),
@@ -562,4 +562,17 @@ LV_CARDS.update({
     "cmp_pp_ps": {"form": ["have / has + 3. forma: situācija tagad. Past Simple: tikai pagātne."], "use": ["Tom has lost his key. Tom lost his key yesterday."], "signals": "yesterday, ago, today, since"},
     "narrative": {"form": ["Past Continuous: fons. Past Simple: notikumi. Past Perfect: kas notika pirms tam."], "use": ["When Sarah arrived, Paul had gone home."], "signals": "when, already, by the time"},
     "narrative_b2": {"form": ["had been + -ing: darbība, kas notika pirms kāda brīža pagātnē."], "use": ["It had been raining, so the ground was wet."], "signals": "for, since, all day, how long"},
+})
+
+# ───────── articles split in two, like Murphy (teacher, 29 October): a/an and the at A2, the or no article at B1 ─────────
+SKILLS_NEW.append(("articles_b1", "The or no article (school, the school)", "nouns", ["B1.1", "B1.2"]))
+ABBR_NEW.update({"articles_b1": "art2"})
+CARDS.update({
+    "articles_b1": {"form": ["No article: things in general, meals, languages, places used for their purpose, most countries. *the*: a particular one."],
+                    "use": ["*I like coffee. I like the coffee you made.*"], "signals": "*in general, school, work, bed, the Alps, the poor*",
+                    "example": "*Children love games. The children in my class love games.*"},
+})
+LV_CARDS.update({
+    "articles_b1": {"form": ["Bez artikula: vispārīgi, ēdienreizes, valodas, vietas to nolūkam, vairums valstu. the: konkrēts."],
+                    "use": ["I like coffee. I like the coffee you made."], "signals": "in general, school, work, bed, the Alps, the poor"},
 })

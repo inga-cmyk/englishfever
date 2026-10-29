@@ -319,18 +319,37 @@
     m.el.querySelector('#later').onclick = m.close;
   }
 
+  /** Starts one step of My learning path; remembers it, so the summary can offer the next step (teacher, 29 October). */
+  function startPathStep(el, st) {
+    el.disabled = true;
+    track('path_step', st.id);
+    api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: (st.below && !st.answers) ? 6 : 10, source: (st.below && !st.answers) ? 'path_check' : 'path' }).then(function (r) {
+      state.sess = newSess(r.session, r.item); state.sess.pathStep = st.id;
+      try { localStorage.setItem('ef_pathstep', JSON.stringify({ sid: r.session.id, step: st.id })); } catch (e) {}   // survives a reload in the middle
+      location.hash = '#/session';
+    }).catch(function (e) { el.disabled = false; UI.toast(e.message); });
+  }
+  /** After a step from My learning path: "Continue with" the next step that is not mastered yet. */
+  function pathNextCard(doneId) {
+    var card = h('div', { class: 'card pathnext', style: 'margin-bottom:16px' });
+    api('path').then(function (p) {
+      var i = p.steps.findIndex(function (x) { return x.id === doneId; });
+      var nx = p.steps.slice(i + 1).find(function (x) { return x.status !== 'done'; });
+      if (!nx) { card.remove(); return; }
+      var b = h('button', { type: 'button', class: 'btn' }, 'Continue with ' + nx.label, icon('arrow'));
+      b.addEventListener('click', function () { startPathStep(b, nx); });
+      card.append(h('div', { class: 'row between', style: 'gap:12px' },
+        h('div', null, h('div', { class: 'label' }, 'My learning path'), h('b', { style: 'color:var(--text)' }, 'Next step: ' + nx.label), h('div', { class: 'small muted' }, nx.level)), b));
+    }).catch(function () { card.remove(); });
+    return card;
+  }
+
   /** My learning path: the course-book order and what this learner has mastered (docs/LEARNING-PATH.md).
       Shows the current step with a button, the next few steps and how many are done; "All steps" opens the whole path. */
   function pathCard() {
     var card = h('div', { class: 'card pathcard' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, '…')));
     var all = false;
-    function start(el, st) {
-      el.disabled = true;
-      track('path_step', st.id);
-      api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: (st.below && !st.answers) ? 6 : 10, source: (st.below && !st.answers) ? 'path_check' : 'path' }).then(function (r) {
-        state.sess = newSess(r.session, r.item); location.hash = '#/session';
-      }).catch(function (e) { el.disabled = false; UI.toast(e.message); });
-    }
+    function start(el, st) { startPathStep(el, st); }
     // accuracy as a colour: pink → orange → yellow → yellow-green → green (hue -15° … 140°); grey = not tried yet
     function hue(p) { return 'hsl(' + ((-15 + 1.55 * p + 360) % 360) + ' 62% 46%)'; }
     function node(st) {
@@ -1199,7 +1218,7 @@
     var lastCheer = null;
 
     function next(r) {
-      if (r.done) { state.sess = null; state.lastSummary = r.summary; Sound.play((r.summary && r.summary.fixed) ? 'fixed' : 'done'); go('#/summary'); return; }
+      if (r.done) { if (r.summary && state.sess) r.summary.pathStep = state.sess.pathStep; state.sess = null; state.lastSummary = r.summary; Sound.play((r.summary && r.summary.fixed) ? 'fixed' : 'done'); go('#/summary'); return; }
       state.sess = newSess(r.session, r.next, S.history);
       viewSession();
     }
@@ -1272,7 +1291,7 @@
       m.close();
       track('quit', String(ses.mode || ''));
       api('session/quit', { session_id: ses.id }).then(function (r) {
-        state.sess = null; state.lastSummary = r.summary; go('#/summary');
+        if (r.summary && state.sess) r.summary.pathStep = state.sess.pathStep; state.sess = null; state.lastSummary = r.summary; go('#/summary');
       }).catch(fail);
     };
   }
@@ -1484,6 +1503,9 @@
         h('div', null, h('div', { class: 'big' }, s.correct + '/' + s.n), h('div', { class: 'muted small' }, 'correct')),
         h('div', null, h('div', { class: 'big' }, '+' + s.xp), h('div', { class: 'muted small' }, 'XP points')),
         h('div', null, h('div', { class: 'big' }, s.accuracy + '%'), h('div', { class: 'muted small' }, 'accuracy')))));
+    var ps = s.pathStep;
+    if (!ps) try { var q = JSON.parse(localStorage.getItem('ef_pathstep') || 'null'); if (q && q.sid == s.session_id) ps = q.step; } catch (e) {}
+    if (ps) nodes.push(pathNextCard(ps));   // a step from My learning path: the next step right under the result
     nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
       h('div', { class: 'card' }, h('h2', null, 'By topic'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
         return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))),

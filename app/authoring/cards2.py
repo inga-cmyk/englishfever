@@ -117,6 +117,8 @@ import cards2_b  # noqa: E402   (A2 batch 2 and auxiliary verbs)
 CARDS2.update(cards2_b.CARDS)
 import cards2_c  # noqa: E402   (A2 batch 3)
 CARDS2.update(cards2_c.CARDS)
+import cards2_d  # noqa: E402   (A2 batch 4)
+CARDS2.update(cards2_d.CARDS)
 
 # The form to learn is green in every example (teacher, 28 October): in the italic parts of table cells, notes and
 # Watch out, these words get [[ ]]. Parts after "not" / "nevis" (the wrong version) stay as they are.

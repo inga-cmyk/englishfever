@@ -46,7 +46,7 @@ CARDS = {
         "en": {
             "table": {"cols": EN_COLS, "rows": PAP_ROWS,
                       "short": "3rd form: *build → [[built]], write → [[written]], steal → [[stolen]], paint → [[painted]]*."},
-            "mistakes": [["I [[born]] in 1990.", "I [[was born]] in 1990."],
+            "mistakes": [["I [[am born]] in 1990.", "I [[was born]] in 1990."],
                          ["The bridge [[was build]] in 1890.", "The bridge [[was built]] in 1890."],
                          ["The windows [[was]] broken.", "The windows [[were]] broken."],
                          ["When [[the castle was]] built?", "When [[was the castle]] built?"]],
@@ -60,7 +60,7 @@ CARDS = {
         "lv": {
             "table": {"cols": LV_COLS, "rows": PAP_ROWS,
                       "short": "3. forma: *build → [[built]], write → [[written]], steal → [[stolen]], paint → [[painted]]*."},
-            "mistakes": [["I [[born]] in 1990.", "I [[was born]] in 1990.", "Latviski \"dzimu\" ir viens vārds, tāpēc, tulkojot burtiski, *was* izlaiž."],
+            "mistakes": [["I [[am born]] in 1990.", "I [[was born]] in 1990.", "Latviski \"esmu dzimis\" ir tagadnē, tāpēc, tulkojot burtiski, rodas *am born*."],
                          ["The bridge [[was build]] in 1890.", "The bridge [[was built]] in 1890."],
                          ["The windows [[was]] broken.", "The windows [[were]] broken."],
                          ["When [[the castle was]] built?", "When [[was the castle]] built?"]],

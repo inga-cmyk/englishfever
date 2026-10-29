@@ -1205,7 +1205,90 @@
      "How long something has been happening."
     ],
     "signals": "*for, since, all day, lately, recently, how long*",
-    "example": "*I've been studying English for two years.*"
+    "example": "*I've been studying English for two years.*",
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "[[have been]] work[[ing]]",
+        "[[haven't been]] work[[ing]]",
+        "[[Have]] you [[been]] work[[ing]]?"
+       ],
+       [
+        "he / she / it",
+        "[[has been]] work[[ing]]",
+        "[[hasn't been]] work[[ing]]",
+        "[[Has]] she [[been]] work[[ing]]?"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I [[am waiting]] for an hour.",
+       "I [[have been waiting]] for an hour."
+      ],
+      [
+       "She has been [[work]] all day.",
+       "She has been [[working]] all day."
+      ],
+      [
+       "I [[have been knowing]] him for years.",
+       "I [[have known]] him for years."
+      ],
+      [
+       "How long [[are you learning]] English?",
+       "How long [[have you been learning]] English?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Started in the past and still going on",
+       "s": [
+        "for",
+        "since",
+        "all day",
+        "how long"
+       ],
+       "tl": "upto",
+       "ex": [
+        "I'[[ve been learning]] English for two years.",
+        "It'[[s been raining]] since this morning."
+       ]
+      },
+      {
+       "t": "A recent activity: you can see the result now",
+       "s": [
+        "lately",
+        "recently"
+       ],
+       "tl": "recent",
+       "ex": [
+        "You're out of breath. [[Have]] you [[been running]]?"
+       ]
+      },
+      {
+       "t": "How long? continuous. How much / how many? simple",
+       "ex": [
+        "I'[[ve been reading]] all afternoon.",
+        "I'[[ve read]] three chapters."
+       ]
+      }
+     ],
+     "watch": [
+      "State verbs stay simple (*know, like, believe, have* = own): *I'[[ve had]] this car for ten years.*",
+      "*for* + a period, *since* + a starting point: *[[for]] two hours, [[since]] nine o'clock*."
+     ]
+    },
+    "watch": [
+     "State verbs stay simple (*know, like, believe, have* = own): *I'[[ve had]] this car for ten years.*",
+     "*for* + a period, *since* + a starting point: *[[for]] two hours, [[since]] nine o'clock*."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1218,7 +1301,92 @@
      "Nesena darbība, kas izskaidro situāciju tagad.",
      "Cik ilgi kaut kas notiek."
     ],
-    "signals": "*for, since, all day, lately, recently, how long*"
+    "signals": "*for, since, all day, lately, recently, how long*",
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "[[have been]] work[[ing]]",
+        "[[haven't been]] work[[ing]]",
+        "[[Have]] you [[been]] work[[ing]]?"
+       ],
+       [
+        "he / she / it",
+        "[[has been]] work[[ing]]",
+        "[[hasn't been]] work[[ing]]",
+        "[[Has]] she [[been]] work[[ing]]?"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I [[am waiting]] for an hour.",
+       "I [[have been waiting]] for an hour.",
+       "Latviski \"gaidu jau stundu\" ir tagadnē, tāpēc, tulkojot burtiski, rodas *am waiting*."
+      ],
+      [
+       "She has been [[work]] all day.",
+       "She has been [[working]] all day."
+      ],
+      [
+       "I [[have been knowing]] him for years.",
+       "I [[have known]] him for years."
+      ],
+      [
+       "How long [[are you learning]] English?",
+       "How long [[have you been learning]] English?",
+       "Latviski \"Cik ilgi tu mācies?\" ir tagadnē, tāpēc, tulkojot burtiski, rodas *are you learning*."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Sākās pagātnē un joprojām turpinās",
+       "s": [
+        "for",
+        "since",
+        "all day",
+        "how long"
+       ],
+       "tl": "upto",
+       "ex": [
+        "I'[[ve been learning]] English for two years.",
+        "It'[[s been raining]] since this morning."
+       ]
+      },
+      {
+       "t": "Nesena darbība: rezultāts redzams tagad",
+       "s": [
+        "lately",
+        "recently"
+       ],
+       "tl": "recent",
+       "ex": [
+        "You're out of breath. [[Have]] you [[been running]]?"
+       ]
+      },
+      {
+       "t": "Cik ilgi? Continuous. Cik daudz? Simple",
+       "ex": [
+        "I'[[ve been reading]] all afternoon.",
+        "I'[[ve read]] three chapters."
+       ]
+      }
+     ],
+     "watch": [
+      "Stāvokļa darbības vārdi paliek Simple (*know, like, believe, have* = piederēt): *I'[[ve had]] this car for ten years.*",
+      "*for* + laika posms, *since* + sākuma brīdis: *[[for]] two hours, [[since]] nine o'clock*."
+     ]
+    },
+    "watch": [
+     "Stāvokļa darbības vārdi paliek Simple (*know, like, believe, have* = piederēt): *I'[[ve had]] this car for ten years.*",
+     "*for* + laika posms, *since* + sākuma brīdis: *[[for]] two hours, [[since]] nine o'clock*."
+    ]
    }
   },
   {
@@ -1239,7 +1407,74 @@
      "A reason for something in the past."
     ],
     "signals": "*before, after, by the time, already, when*",
-    "example": "*When we arrived, the film had already started.*"
+    "example": "*When we arrived, the film had already started.*",
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "all persons",
+        "[[had]] finish[[ed]] ;; [[had]] [[gone]]",
+        "[[hadn't]] finish[[ed]]",
+        "[[Had]] you finish[[ed]]?"
+       ]
+      ],
+      "short": "*'d* = *had*: *She'[[d]] already left.*"
+     },
+     "mistakes": [
+      [
+       "When I arrived, the film [[has]] already started.",
+       "When I arrived, the film [[had]] already started."
+      ],
+      [
+       "She [[had went]] home.",
+       "She [[had gone]] home."
+      ],
+      [
+       "I [[have]] never seen snow before I moved to Finland.",
+       "I [[had]] never seen snow before I moved to Finland."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The earlier of two past actions",
+       "s": [
+        "when",
+        "by the time",
+        "already",
+        "before"
+       ],
+       "tl": "pastperfect",
+       "ex": [
+        "When I got to the station, the train [[had left]]."
+       ]
+      },
+      {
+       "t": "The reason for something in the past",
+       "ex": [
+        "She was tired because she [[hadn't slept]] well."
+       ]
+      },
+      {
+       "t": "Actions in the order they happened: past simple is enough",
+       "ex": [
+        "She [[opened]] the door and [[went]] in."
+       ]
+      }
+     ],
+     "watch": [
+      "*'d* can be *had* or *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
+      "*By the time* + past simple, past perfect in the other part: *By the time we arrived, the shop [[had closed]].*"
+     ]
+    },
+    "watch": [
+     "*'d* can be *had* or *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
+     "*By the time* + past simple, past perfect in the other part: *By the time we arrived, the shop [[had closed]].*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1251,7 +1486,74 @@
      "Agrākā no divām pagātnes darbībām.",
      "Pagātnes notikuma iemesls."
     ],
-    "signals": "*before, after, by the time, already, when*"
+    "signals": "*before, after, by the time, already, when*",
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "visas personas",
+        "[[had]] finish[[ed]] ;; [[had]] [[gone]]",
+        "[[hadn't]] finish[[ed]]",
+        "[[Had]] you finish[[ed]]?"
+       ]
+      ],
+      "short": "*'d* = *had*: *She'[[d]] already left.*"
+     },
+     "mistakes": [
+      [
+       "When I arrived, the film [[has]] already started.",
+       "When I arrived, the film [[had]] already started."
+      ],
+      [
+       "She [[had went]] home.",
+       "She [[had gone]] home."
+      ],
+      [
+       "I [[have]] never seen snow before I moved to Finland.",
+       "I [[had]] never seen snow before I moved to Finland."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Agrākā no divām darbībām pagātnē",
+       "s": [
+        "when",
+        "by the time",
+        "already",
+        "before"
+       ],
+       "tl": "pastperfect",
+       "ex": [
+        "When I got to the station, the train [[had left]]."
+       ]
+      },
+      {
+       "t": "Iemesls kaut kam pagātnē",
+       "ex": [
+        "She was tired because she [[hadn't slept]] well."
+       ]
+      },
+      {
+       "t": "Darbības secībā, kā tās notika: pietiek ar Past Simple",
+       "ex": [
+        "She [[opened]] the door and [[went]] in."
+       ]
+      }
+     ],
+     "watch": [
+      "*'d* var būt *had* vai *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
+      "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we arrived, the shop [[had closed]].*"
+     ]
+    },
+    "watch": [
+     "*'d* var būt *had* vai *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
+     "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we arrived, the shop [[had closed]].*"
+    ]
    }
   },
   {
@@ -2770,7 +3072,73 @@
      "Imagining."
     ],
     "signals": "*if, imagine, suppose, if I were you*",
-    "example": "*If I were the boss, I would cancel Mondays.*"
+    "example": "*If I were the boss, I would cancel Mondays.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "if-part",
+       "result"
+      ],
+      "rows": [
+       [
+        "Form",
+        "*If* + past simple || *If I [[won]] the lottery,*",
+        "*would* + base verb || *I [[would]] travel the world.*"
+       ],
+       [
+        "Other results",
+        "|| *If I [[had]] more time,*",
+        "*could, might* || *I [[could]] learn Spanish.*"
+       ]
+      ],
+      "note": "In careful English, *were* for every person: *If I [[were]] you, I'd take the job.*"
+     },
+     "mistakes": [
+      [
+       "If I [[would have]] more money, I'd buy a car.",
+       "If I [[had]] more money, I'd buy a car."
+      ],
+      [
+       "If I [[am]] you, I'd call her.",
+       "If I [[were]] you, I'd call her."
+      ],
+      [
+       "If she knew, she [[will]] tell us.",
+       "If she knew, she [[would]] tell us."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Unreal now: it is not true",
+       "ex": [
+        "If I [[lived]] by the sea, I [[would swim]] every day. (I don't live by the sea.)"
+       ]
+      },
+      {
+       "t": "Unlikely in the future",
+       "ex": [
+        "If I [[won]] a million, I'[[d buy]] a house."
+       ]
+      },
+      {
+       "t": "Advice",
+       "s": [
+        "If I were you"
+       ],
+       "ex": [
+        "If I [[were]] you, I'[[d talk]] to your manager."
+       ]
+      }
+     ],
+     "watch": [
+      "Real and possible: first conditional; unreal or unlikely: second: *If it [[rains]], I'll stay at home. If I [[had]] wings, I'd fly.*",
+      "Asking: *What [[would]] you [[do]] if you lost your phone?*"
+     ]
+    },
+    "watch": [
+     "Real and possible: first conditional; unreal or unlikely: second: *If it [[rains]], I'll stay at home. If I [[had]] wings, I'd fly.*",
+     "Asking: *What [[would]] you [[do]] if you lost your phone?*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -2784,7 +3152,74 @@
      "Padoms: *If I were you, I'd talk to your manager.*",
      "Iztēle."
     ],
-    "signals": "*if, imagine, suppose, if I were you*"
+    "signals": "*if, imagine, suppose, if I were you*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "if daļa",
+       "rezultāts"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "*If* + Past Simple || *If I [[won]] the lottery,*",
+        "*would* + pamatforma || *I [[would]] travel the world.*"
+       ],
+       [
+        "Citi rezultāti",
+        "|| *If I [[had]] more time,*",
+        "*could, might* || *I [[could]] learn Spanish.*"
+       ]
+      ],
+      "note": "Rūpīgā valodā *were* visām personām: *If I [[were]] you, I'd take the job.*"
+     },
+     "mistakes": [
+      [
+       "If I [[would have]] more money, I'd buy a car.",
+       "If I [[had]] more money, I'd buy a car.",
+       "Latviski abās daļās ir \"būtu\" (ja man būtu, es nopirktu), tāpēc, tulkojot burtiski, *would* liek arī *if* daļā."
+      ],
+      [
+       "If I [[am]] you, I'd call her.",
+       "If I [[were]] you, I'd call her."
+      ],
+      [
+       "If she knew, she [[will]] tell us.",
+       "If she knew, she [[would]] tell us."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Nereāls tagad: tā nav",
+       "ex": [
+        "If I [[lived]] by the sea, I [[would swim]] every day. (Es nedzīvoju pie jūras.)"
+       ]
+      },
+      {
+       "t": "Maz ticams nākotnē",
+       "ex": [
+        "If I [[won]] a million, I'[[d buy]] a house."
+       ]
+      },
+      {
+       "t": "Padoms",
+       "s": [
+        "If I were you"
+       ],
+       "ex": [
+        "If I [[were]] you, I'[[d talk]] to your manager."
+       ]
+      }
+     ],
+     "watch": [
+      "Reāls un iespējams: first conditional; nereāls vai maz ticams: second: *If it [[rains]], I'll stay at home. If I [[had]] wings, I'd fly.*",
+      "Jautājums: *What [[would]] you [[do]] if you lost your phone?*"
+     ]
+    },
+    "watch": [
+     "Reāls un iespējams: first conditional; nereāls vai maz ticams: second: *If it [[rains]], I'll stay at home. If I [[had]] wings, I'd fly.*",
+     "Jautājums: *What [[would]] you [[do]] if you lost your phone?*"
+    ]
    }
   },
   {
@@ -2808,7 +3243,64 @@
      "Imagining a different past."
     ],
     "signals": "*if, if only, too late, I wish* (past)",
-    "example": "*If we had left earlier, we wouldn't have missed the train.*"
+    "example": "*If we had left earlier, we wouldn't have missed the train.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "if-part",
+       "result"
+      ],
+      "rows": [
+       [
+        "Form",
+        "*If* + past perfect || *If I [[had known]],*",
+        "*would have* + 3rd form || *I [[would have called]] you.*"
+       ],
+       [
+        "Negative",
+        "|| *If she [[hadn't missed]] the bus,*",
+        "|| *she [[wouldn't have been]] late.*"
+       ]
+      ],
+      "note": "*could have / might have* when the result is less sure: *We [[might have won]].*"
+     },
+     "mistakes": [
+      [
+       "If I [[would have known]], I would have called.",
+       "If I [[had known]], I would have called."
+      ],
+      [
+       "If I had known, I would have [[call]] you.",
+       "If I had known, I would have [[called]] you."
+      ],
+      [
+       "If we had [[took]] a taxi, we wouldn't have been late.",
+       "If we had [[taken]] a taxi, we wouldn't have been late."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Unreal past: it did not happen",
+       "ex": [
+        "If I [[had studied]], I [[would have passed]]. (I didn't study.)"
+       ]
+      },
+      {
+       "t": "Regret and criticism",
+       "ex": [
+        "If you [[had told]] me, I [[could have helped]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*'d* = *had* in the *if*-part, *would* in the result: *If I'[[d]] known, I'[[d]] have come.*",
+      "Now: second conditional; the past: third: *If I [[had]] time, I'd help. If I'[[d had]] time, I'd have helped.*"
+     ]
+    },
+    "watch": [
+     "*'d* = *had* in the *if*-part, *would* in the result: *If I'[[d]] known, I'[[d]] have come.*",
+     "Now: second conditional; the past: third: *If I [[had]] time, I'd help. If I'[[d had]] time, I'd have helped.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -2821,7 +3313,65 @@
      "Nožēla un kritika.",
      "Iztēle par citādu pagātni."
     ],
-    "signals": "*if, if only, too late, I wish* (pagātne)"
+    "signals": "*if, if only, too late, I wish* (pagātne)",
+    "v2": {
+     "choice": {
+      "cols": [
+       "if daļa",
+       "rezultāts"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "*If* + Past Perfect || *If I [[had known]],*",
+        "*would have* + 3. forma || *I [[would have called]] you.*"
+       ],
+       [
+        "Noliegums",
+        "|| *If she [[hadn't missed]] the bus,*",
+        "|| *she [[wouldn't have been]] late.*"
+       ]
+      ],
+      "note": "*could have / might have*, ja rezultāts nav drošs: *We [[might have won]].*"
+     },
+     "mistakes": [
+      [
+       "If I [[would have known]], I would have called.",
+       "If I [[had known]], I would have called.",
+       "Latviski abās daļās ir \"būtu\" (ja es būtu zinājis, es būtu piezvanījis), tāpēc, tulkojot burtiski, *would* liek arī *if* daļā."
+      ],
+      [
+       "If I had known, I would have [[call]] you.",
+       "If I had known, I would have [[called]] you."
+      ],
+      [
+       "If we had [[took]] a taxi, we wouldn't have been late.",
+       "If we had [[taken]] a taxi, we wouldn't have been late."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Nereāla pagātne: tas nenotika",
+       "ex": [
+        "If I [[had studied]], I [[would have passed]]. (Es nemācījos.)"
+       ]
+      },
+      {
+       "t": "Nožēla un kritika",
+       "ex": [
+        "If you [[had told]] me, I [[could have helped]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*'d* = *had* *if* daļā, *would* rezultātā: *If I'[[d]] known, I'[[d]] have come.*",
+      "Tagad: second conditional; pagātnē: third: *If I [[had]] time, I'd help. If I'[[d had]] time, I'd have helped.*"
+     ]
+    },
+    "watch": [
+     "*'d* = *had* *if* daļā, *would* rezultātā: *If I'[[d]] known, I'[[d]] have come.*",
+     "Tagad: second conditional; pagātnē: third: *If I [[had]] time, I'd help. If I'[[d had]] time, I'd have helped.*"
+    ]
    }
   },
   {
@@ -2892,7 +3442,62 @@
      "If the fact is still true, the tense can stay: *She said she is tired.* Going one step back is usual after a past reporting verb, but it is not always needed."
     ],
     "signals": "*said, told, now → then, yesterday → the day before*",
-    "example": "*\"I'm working late,\" he said.* → *He said he was working late.*"
+    "example": "*\"I'm working late,\" he said.* → *He said he was working late.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "direct speech",
+       "reported speech"
+      ],
+      "rows": [
+       [
+        "Tense",
+        "|| *\"I am tired.\"* ;; || *\"I work here.\"* ;; || *\"I saw it.\"* ;; || *\"I will help.\"* ;; || *\"I can swim.\"*",
+        "|| *She said she [[was]] tired.* ;; || *He said he [[worked]] there.* ;; || *She said she [[had seen]] it.* ;; || *He said he [[would]] help.* ;; || *She said she [[could]] swim.*"
+       ],
+       [
+        "Words",
+        "|| *now, today, tomorrow, here*",
+        "|| *[[then]], [[that day]], [[the next day]], [[there]]*"
+       ]
+      ],
+      "note": "*say* (+ *that*): *He said that…*; *tell* + a person: *He told me that…*"
+     },
+     "mistakes": [
+      [
+       "He [[said me]] that he was tired.",
+       "He [[told me]] that he was tired."
+      ],
+      [
+       "She [[told that]] she was busy.",
+       "She [[told me that]] she was busy."
+      ],
+      [
+       "He [[said,]] that he was tired.",
+       "He [[said that]] he was tired."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Telling someone what another person said: the tense goes one step back",
+       "ex": [
+        "\"I'm busy.\" → She said she [[was]] busy."
+       ]
+      },
+      {
+       "t": "If it is still true, the tense can stay",
+       "ex": [
+        "He said he [[lives]] in Riga. (He still lives there.)"
+       ]
+      }
+     ],
+     "watch": [
+      "*that* can be left out: *She said ([[that]]) she was tired.*"
+     ]
+    },
+    "watch": [
+     "*that* can be left out: *She said ([[that]]) she was tired.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -2905,7 +3510,64 @@
      "Pastāstīt, ko cits cilvēks teica.",
      "Ja fakts joprojām ir patiess, laiku var nemainīt: *She said she is tired.* Pēc darbības vārda pagātnē laiku parasti *maina* uz vienu soli atpakaļ, bet *ne* vienmēr."
     ],
-    "signals": "*said, told, now → then, yesterday → the day before*"
+    "signals": "*said, told, now → then, yesterday → the day before*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "tiešā runa",
+       "netiešā runa"
+      ],
+      "rows": [
+       [
+        "Laiks",
+        "|| *\"I am tired.\"* ;; || *\"I work here.\"* ;; || *\"I saw it.\"* ;; || *\"I will help.\"* ;; || *\"I can swim.\"*",
+        "|| *She said she [[was]] tired.* ;; || *He said he [[worked]] there.* ;; || *She said she [[had seen]] it.* ;; || *He said he [[would]] help.* ;; || *She said she [[could]] swim.*"
+       ],
+       [
+        "Vārdi",
+        "|| *now, today, tomorrow, here*",
+        "|| *[[then]], [[that day]], [[the next day]], [[there]]*"
+       ]
+      ],
+      "note": "*say* (+ *that*): *He said that…*; *tell* + cilvēks: *He told me that…*"
+     },
+     "mistakes": [
+      [
+       "He [[said me]] that he was tired.",
+       "He [[told me]] that he was tired.",
+       "Latviski \"viņš man teica\", tāpēc, tulkojot burtiski, rodas *said me*."
+      ],
+      [
+       "She [[told that]] she was busy.",
+       "She [[told me that]] she was busy."
+      ],
+      [
+       "He [[said,]] that he was tired.",
+       "He [[said that]] he was tired.",
+       "Latviski pirms \"ka\" liek komatu, angliski pirms *that* komata nav."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Atstāsta, ko teica cits: laiks pāriet vienu soli atpakaļ",
+       "ex": [
+        "\"I'm busy.\" → She said she [[was]] busy."
+       ]
+      },
+      {
+       "t": "Ja tas joprojām ir patiesi, laiks var palikt",
+       "ex": [
+        "He said he [[lives]] in Riga. (Viņš joprojām tur dzīvo.)"
+       ]
+      }
+     ],
+     "watch": [
+      "*that* var izlaist: *She said ([[that]]) she was tired.*"
+     ]
+    },
+    "watch": [
+     "*that* var izlaist: *She said ([[that]]) she was tired.*"
+    ]
    }
   },
   {
@@ -2929,7 +3591,69 @@
      "Reporting what someone told or asked you to do."
     ],
     "signals": "*asked, wondered, wanted to know, told someone to*",
-    "example": "*\"Where do you work?\"* → *She asked me where I worked.*"
+    "example": "*\"Where do you work?\"* → *She asked me where I worked.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "yes / no question",
+       "wh-question",
+       "request, order"
+      ],
+      "rows": [
+       [
+        "Direct",
+        "|| *\"Do you like coffee?\"*",
+        "|| *\"Where do you live?\"*",
+        "|| *\"Wait here.\"* ;; || *\"Please don't call.\"*"
+       ],
+       [
+        "Reported",
+        "*asked* + *if / whether* + statement order || *She asked [[if I liked]] coffee.*",
+        "*asked* + question word + statement order || *He asked [[where I lived]].*",
+        "*told / asked* + person + (*not*) *to* + verb || *He told me [[to wait]] there.* ;; || *She asked me [[not to]] call.*"
+       ]
+      ],
+      "note": "No question mark: it is a statement now: *He asked where I lived[[.]]*"
+     },
+     "mistakes": [
+      [
+       "He asked where [[did I live]].",
+       "He asked where [[I lived]]."
+      ],
+      [
+       "She asked [[do I like]] coffee.",
+       "She asked [[if I liked]] coffee."
+      ],
+      [
+       "He told me [[wait]].",
+       "He told me [[to wait]]."
+      ],
+      [
+       "She asked me [[don't]] call.",
+       "She asked me [[not to]] call."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The tense goes back, as in reported statements",
+       "ex": [
+        "\"Where do you work?\" → She asked me where I [[worked]]."
+       ]
+      },
+      {
+       "t": "*if* and *whether* mean the same here",
+       "ex": [
+        "He asked [[whether]] I was ready."
+       ]
+      }
+     ],
+     "watch": [
+      "*ask* + person, no *to*: *She asked [[me]] where I lived.*"
+     ]
+    },
+    "watch": [
+     "*ask* + person, no *to*: *She asked [[me]] where I lived.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -2942,7 +3666,71 @@
      "Pastāstīt, ko kāds jautāja: laiks pāriet pagātnē (*Where do you work?* → *She asked me where I worked*). Netiešajos jautājumos (*Could you tell me where you work*?) laiks nemainās, mainās *tikai* vārdu secība.",
      "Pastāstīt, ko kāds lika vai lūdza darīt."
     ],
-    "signals": "*asked, wondered, wanted to know, told someone to*"
+    "signals": "*asked, wondered, wanted to know, told someone to*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "jā / nē jautājums",
+       "jautājums ar jautājamo vārdu",
+       "lūgums, pavēle"
+      ],
+      "rows": [
+       [
+        "Tieši",
+        "|| *\"Do you like coffee?\"*",
+        "|| *\"Where do you live?\"*",
+        "|| *\"Wait here.\"* ;; || *\"Please don't call.\"*"
+       ],
+       [
+        "Atstāstīts",
+        "*asked* + *if / whether* + apgalvojuma secība || *She asked [[if I liked]] coffee.*",
+        "*asked* + jautājamais vārds + apgalvojuma secība || *He asked [[where I lived]].*",
+        "*told / asked* + cilvēks + (*not*) *to* + darbības vārds || *He told me [[to wait]] there.* ;; || *She asked me [[not to]] call.*"
+       ]
+      ],
+      "note": "Bez jautājuma zīmes: tagad tas ir apgalvojums: *He asked where I lived[[.]]*"
+     },
+     "mistakes": [
+      [
+       "He asked where [[did I live]].",
+       "He asked where [[I lived]]."
+      ],
+      [
+       "She asked [[do I like]] coffee.",
+       "She asked [[if I liked]] coffee.",
+       "Latviski \"vai man garšo\" ir bez palīgdarbības vārda, tāpēc *if* vietā atstāj jautājuma formu."
+      ],
+      [
+       "He told me [[wait]].",
+       "He told me [[to wait]]."
+      ],
+      [
+       "She asked me [[don't]] call.",
+       "She asked me [[not to]] call.",
+       "Latviski \"lūdza, lai nezvanu\", tāpēc, tulkojot burtiski, rodas *don't*."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Laiks pāriet atpakaļ, kā atstāstītos apgalvojumos",
+       "ex": [
+        "\"Where do you work?\" → She asked me where I [[worked]]."
+       ]
+      },
+      {
+       "t": "*if* un *whether* šeit nozīmē to pašu",
+       "ex": [
+        "He asked [[whether]] I was ready."
+       ]
+      }
+     ],
+     "watch": [
+      "*ask* + cilvēks, bez *to*: *She asked [[me]] where I lived.* Latviski \"jautāja man\", tāpēc gribas *asked to me*."
+     ]
+    },
+    "watch": [
+     "*ask* + cilvēks, bez *to*: *She asked [[me]] where I lived.* Latviski \"jautāja man\", tāpēc gribas *asked to me*."
+    ]
    }
   },
   {
@@ -2993,7 +3781,67 @@
      "No tense change: only the word order changes (*Where is the station?* → *Could you tell me where the station is?*). In reported questions the tense shifts back (*She asked where the station was*)."
     ],
     "signals": "*Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*",
-    "example": "*Could you tell me where the meeting room is?*"
+    "example": "*Could you tell me where the meeting room is?*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "direct question",
+       "indirect question"
+      ],
+      "rows": [
+       [
+        "wh-question",
+        "|| *Where is the station?*",
+        "*Could you tell me* + question word + statement order || *Could you tell me where [[the station is]]?*"
+       ],
+       [
+        "with do / does / did",
+        "|| *What time does the shop open?*",
+        "no *do / does / did* || *Do you know what time [[the shop opens]]?*"
+       ],
+       [
+        "yes / no question",
+        "|| *Is she at home?*",
+        "*if / whether* || *Do you know [[if she is]] at home?*"
+       ]
+      ],
+      "note": "A question mark after *Could you tell me…? / Do you know…?*; a full stop after *I wonder… / I'd like to know…*"
+     },
+     "mistakes": [
+      [
+       "Could you tell me where [[is the station]]?",
+       "Could you tell me where [[the station is]]?"
+      ],
+      [
+       "Do you know what time [[does the shop open]]?",
+       "Do you know what time [[the shop opens]]?"
+      ],
+      [
+       "Do you know [[is she]] at home?",
+       "Do you know [[if she is]] at home?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Polite questions to strangers, customers and at work",
+       "ex": [
+        "Excuse me, [[could you tell me]] where the toilets are?"
+       ]
+      },
+      {
+       "t": "No tense change: only the word order changes",
+       "ex": [
+        "Where is the bank? → Do you know where the bank [[is]]?"
+       ]
+      }
+     ],
+     "watch": [
+      "*I wonder* + statement order and a full stop: *I wonder where [[she lives]].*"
+     ]
+    },
+    "watch": [
+     "*I wonder* + statement order and a full stop: *I wonder where [[she lives]].*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -3008,7 +3856,68 @@
      "Pēc *I wonder* ... / *I'd like to know* ... liek punktu; pēc *Could you / Do you know* ... jautājuma zīmi.",
      "Laiks nemainās, mainās *tikai* vārdu secība (*Where is the station?* → *Could you tell me where the station is*?). Atstāstītajos jautājumos laiks pāriet pagātnē (*She asked where the station was*)."
     ],
-    "signals": "*Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*"
+    "signals": "*Could you tell me, Do you know, I wonder, I'd like to know, Would you mind telling me*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "tiešs jautājums",
+       "netiešs jautājums"
+      ],
+      "rows": [
+       [
+        "ar jautājamo vārdu",
+        "|| *Where is the station?*",
+        "*Could you tell me* + jautājamais vārds + apgalvojuma secība || *Could you tell me where [[the station is]]?*"
+       ],
+       [
+        "ar do / does / did",
+        "|| *What time does the shop open?*",
+        "bez *do / does / did* || *Do you know what time [[the shop opens]]?*"
+       ],
+       [
+        "jā / nē jautājums",
+        "|| *Is she at home?*",
+        "*if / whether* || *Do you know [[if she is]] at home?*"
+       ]
+      ],
+      "note": "Jautājuma zīme aiz *Could you tell me…? / Do you know…?*; punkts aiz *I wonder… / I'd like to know…*"
+     },
+     "mistakes": [
+      [
+       "Could you tell me where [[is the station]]?",
+       "Could you tell me where [[the station is]]?"
+      ],
+      [
+       "Do you know what time [[does the shop open]]?",
+       "Do you know what time [[the shop opens]]?"
+      ],
+      [
+       "Do you know [[is she]] at home?",
+       "Do you know [[if she is]] at home?",
+       "Latviski \"vai zini, vai viņa ir mājās?\": otro \"vai\" angliski izsaka *if*."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Pieklājīgi jautājumi svešiem cilvēkiem, klientiem un darbā",
+       "ex": [
+        "Excuse me, [[could you tell me]] where the toilets are?"
+       ]
+      },
+      {
+       "t": "Laiks nemainās: mainās tikai vārdu secība",
+       "ex": [
+        "Where is the bank? → Do you know where the bank [[is]]?"
+       ]
+      }
+     ],
+     "watch": [
+      "*I wonder* + apgalvojuma secība un punkts: *I wonder where [[she lives]].*"
+     ]
+    },
+    "watch": [
+     "*I wonder* + apgalvojuma secība un punkts: *I wonder where [[she lives]].*"
+    ]
    }
   },
   {
@@ -3634,7 +4543,69 @@
      "Do not repeat the object: *the book that I bought*, not *the book that I bought it.*"
     ],
     "signals": "*who, which, that, where, whose, commas*",
-    "example": "*The woman who called is my boss, and the office where she works is in Riga.*"
+    "example": "*The woman who called is my boss, and the office where she works is in Riga.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "who",
+       "which",
+       "that",
+       "where",
+       "whose"
+      ],
+      "rows": [
+       [
+        "For",
+        "people || *the woman [[who]] called*",
+        "things || *the phone [[which]] I bought*",
+        "people or things || *the film [[that]] we saw*",
+        "places || *the café [[where]] we met*",
+        "belongs to || *the man [[whose]] car was stolen*"
+       ]
+      ],
+      "note": "*who / which / that* can be left out when it is the object: *the film [[we saw]]*."
+     },
+     "mistakes": [
+      [
+       "The book [[what]] I bought is great.",
+       "The book [[that]] I bought is great."
+      ],
+      [
+       "That's the man [[who's]] car was stolen.",
+       "That's the man [[whose]] car was stolen."
+      ],
+      [
+       "The book that I bought [[it]] is great.",
+       "The book that I [[bought]] is great."
+      ],
+      [
+       "My brother, [[that]] lives in Berlin, is a nurse.",
+       "My brother, [[who]] lives in Berlin, is a nurse."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Defining: tells us which one, no commas",
+       "ex": [
+        "The woman [[who called]] is my boss."
+       ]
+      },
+      {
+       "t": "Non-defining: extra information, with commas, not *that*",
+       "ex": [
+        "My brother, [[who lives in Berlin]], is a nurse."
+       ]
+      }
+     ],
+     "watch": [
+      "A preposition can go at the end: *That's the house [[I live in]].*",
+      "*which* can refer to the whole sentence: *He didn't call, [[which]] was strange.*"
+     ]
+    },
+    "watch": [
+     "A preposition can go at the end: *That's the house [[I live in]].*",
+     "*which* can refer to the whole sentence: *He didn't call, [[which]] was strange.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -3648,7 +4619,70 @@
      "Bez komatiem: informācija vajadzīga, lai zinātu, par kuru cilvēku vai lietu runa. Ar komatiem: papildu informācija, ko var izlaist.",
      "Nekad neatkārto papildinātāju: *the book that I bought*, nevis *the book that I bought it*."
     ],
-    "signals": "*who, which, that, where, whose, commas* (komati)"
+    "signals": "*who, which, that, where, whose, commas* (komati)",
+    "v2": {
+     "choice": {
+      "cols": [
+       "who",
+       "which",
+       "that",
+       "where",
+       "whose"
+      ],
+      "rows": [
+       [
+        "Kam",
+        "cilvēki || *the woman [[who]] called*",
+        "lietas || *the phone [[which]] I bought*",
+        "cilvēki vai lietas || *the film [[that]] we saw*",
+        "vietas || *the café [[where]] we met*",
+        "kam pieder || *the man [[whose]] car was stolen*"
+       ]
+      ],
+      "note": "*who / which / that* var izlaist, ja tas ir papildinātājs: *the film [[we saw]]*."
+     },
+     "mistakes": [
+      [
+       "The book [[what]] I bought is great.",
+       "The book [[that]] I bought is great.",
+       "Latviski \"grāmata, ko es nopirku\", un \"ko\", tulkojot burtiski, kļūst par *what*."
+      ],
+      [
+       "That's the man [[who's]] car was stolen.",
+       "That's the man [[whose]] car was stolen."
+      ],
+      [
+       "The book that I bought [[it]] is great.",
+       "The book that I [[bought]] is great."
+      ],
+      [
+       "My brother, [[that]] lives in Berlin, is a nurse.",
+       "My brother, [[who]] lives in Berlin, is a nurse."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Bez komatiem: pasaka, kurš tieši",
+       "ex": [
+        "The woman [[who called]] is my boss."
+       ]
+      },
+      {
+       "t": "Ar komatiem: papildu informācija, nevis *that*",
+       "ex": [
+        "My brother, [[who lives in Berlin]], is a nurse."
+       ]
+      }
+     ],
+     "watch": [
+      "Prievārds var būt beigās: *That's the house [[I live in]].*",
+      "*which* var attiekties uz visu teikumu: *He didn't call, [[which]] was strange.*"
+     ]
+    },
+    "watch": [
+     "Prievārds var būt beigās: *That's the house [[I live in]].*",
+     "*which* var attiekties uz visu teikumu: *He didn't call, [[which]] was strange.*"
+    ]
    }
   },
   {
@@ -3670,7 +4704,71 @@
      "*when* = at that time. *as soon as* = immediately. *until* = up to that moment (*Wait here until I come back*). *before / after* = which happens first. *while* = at the same time."
     ],
     "signals": "*when, as soon as, until, before, after, while, by the time*",
-    "example": "*I'll tell you the news as soon as I get home.*"
+    "example": "*I'll tell you the news as soon as I get home.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "when",
+       "as soon as",
+       "until",
+       "before / after",
+       "while"
+      ],
+      "rows": [
+       [
+        "Meaning",
+        "at that time || *I'll call you [[when]] I arrive.*",
+        "immediately || *I'll call you [[as soon as]] I arrive.*",
+        "up to that moment || *Wait here [[until]] I come back.*",
+        "which happens first || *Finish this [[before]] you go.*",
+        "at the same time || *I'll read [[while]] I wait.*"
+       ]
+      ],
+      "note": "Future meaning, but present simple after these words: *I'll call you when I [[arrive]].*"
+     },
+     "mistakes": [
+      [
+       "I'll call you when I [[will arrive]].",
+       "I'll call you when I [[arrive]]."
+      ],
+      [
+       "Wait here [[since]] I come back.",
+       "Wait here [[until]] I come back."
+      ],
+      [
+       "[[During]] I was cooking, the phone rang.",
+       "[[While]] I was cooking, the phone rang."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "After *after / before*, the present perfect is also possible",
+       "ex": [
+        "I'll call you [[after]] I'[[ve finished]]."
+       ]
+      },
+      {
+       "t": "*until* = up to a moment; *by* = not later than",
+       "ex": [
+        "Stay here [[until]] five.",
+        "Finish it [[by]] five."
+       ]
+      },
+      {
+       "t": "*during* + a noun, *while* + a sentence",
+       "ex": [
+        "[[During]] the film, I fell asleep.",
+        "[[While]] we were watching the film, I fell asleep."
+       ]
+      }
+     ],
+     "watch": [
+      "A comma when the time clause comes first: *When I get home[[,]] I'll call you.*"
+     ]
+    },
+    "watch": [
+     "A comma when the time clause comes first: *When I get home[[,]] I'll call you.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -3682,7 +4780,73 @@
      "Virsteikumā ir *will / going to* vai pavēle; laika palīgteikumā ir tagadne.",
      "*when* = tajā laikā. *as soon as* = uzreiz. *until* = līdz tam brīdim (*Wait here until I come back*). *before / after* = kas notiek pirmais. *while* = vienlaikus."
     ],
-    "signals": "*when, as soon as, until, before, after, while, by the time* (kad, līdzko, līdz, pirms, pēc, kamēr)"
+    "signals": "*when, as soon as, until, before, after, while, by the time* (kad, līdzko, līdz, pirms, pēc, kamēr)",
+    "v2": {
+     "choice": {
+      "cols": [
+       "when",
+       "as soon as",
+       "until",
+       "before / after",
+       "while"
+      ],
+      "rows": [
+       [
+        "Nozīme",
+        "tajā laikā || *I'll call you [[when]] I arrive.*",
+        "tūlīt || *I'll call you [[as soon as]] I arrive.*",
+        "līdz tam brīdim || *Wait here [[until]] I come back.*",
+        "kas notiek pirmais || *Finish this [[before]] you go.*",
+        "vienlaikus || *I'll read [[while]] I wait.*"
+       ]
+      ],
+      "note": "Nozīme ir nākotne, bet aiz šiem vārdiem Present Simple: *I'll call you when I [[arrive]].*"
+     },
+     "mistakes": [
+      [
+       "I'll call you when I [[will arrive]].",
+       "I'll call you when I [[arrive]].",
+       "Latviski \"kad atbraukšu\" ir nākotnē, tāpēc, tulkojot burtiski, gribas *will*."
+      ],
+      [
+       "Wait here [[since]] I come back.",
+       "Wait here [[until]] I come back."
+      ],
+      [
+       "[[During]] I was cooking, the phone rang.",
+       "[[While]] I was cooking, the phone rang.",
+       "Latviski abos gadījumos \"kamēr\" vai \"laikā\", tāpēc jauc *during* un *while*."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Aiz *after / before* der arī Present Perfect",
+       "ex": [
+        "I'll call you [[after]] I'[[ve finished]]."
+       ]
+      },
+      {
+       "t": "*until* = līdz (visu laiku); *by* = ne vēlāk kā",
+       "ex": [
+        "Stay here [[until]] five.",
+        "Finish it [[by]] five."
+       ]
+      },
+      {
+       "t": "*during* + lietvārds, *while* + teikums",
+       "ex": [
+        "[[During]] the film, I fell asleep.",
+        "[[While]] we were watching the film, I fell asleep."
+       ]
+      }
+     ],
+     "watch": [
+      "Komats, ja laika palīgteikums ir pirmais: *When I get home[[,]] I'll call you.*"
+     ]
+    },
+    "watch": [
+     "Komats, ja laika palīgteikums ir pirmais: *When I get home[[,]] I'll call you.*"
+    ]
    }
   },
   {
@@ -4247,7 +5411,71 @@
      "*be allowed to* = permission from a rule or a person. *can* is shorter, but it has no past or future form."
     ],
     "signals": "*perhaps, maybe, possibly, one time, not necessary, rules, allowed*",
-    "example": "*It might rain, so you needn't water the plants.*"
+    "example": "*It might rain, so you needn't water the plants.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "might / may / could",
+       "must",
+       "can't"
+      ],
+      "rows": [
+       [
+        "How sure?",
+        "possible, not sure || *It [[might]] rain later.*",
+        "sure it is true || *She [[must]] be tired.*",
+        "sure it is not true || *That [[can't]] be Tom. He's in Paris.*"
+       ]
+      ],
+      "note": "*can* has no future or perfect form: *I'll [[be able to]] help. I haven't [[been able to]] call.*"
+     },
+     "mistakes": [
+      [
+       "It [[might rains]] later.",
+       "It [[might rain]] later."
+      ],
+      [
+       "I [[will can]] come on Friday.",
+       "I [[will be able to]] come on Friday."
+      ],
+      [
+       "She [[mustn't]] be at home. Her car isn't here.",
+       "She [[can't]] be at home. Her car isn't here."
+      ],
+      [
+       "We [[are allowed]] park here.",
+       "We [[are allowed to]] park here."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*could* = could do it in general; *was able to* = managed it once",
+       "ex": [
+        "I [[could]] swim when I was five.",
+        "The door was locked, but I [[was able to]] open it."
+       ]
+      },
+      {
+       "t": "*needn't* = not necessary; *mustn't* = not allowed",
+       "ex": [
+        "You [[needn't]] wait for me.",
+        "You [[mustn't]] park here."
+       ]
+      },
+      {
+       "t": "*be allowed to* = permission, in any tense",
+       "ex": [
+        "Children [[weren't allowed to]] go in."
+       ]
+      }
+     ],
+     "watch": [
+      "*needn't have* + 3rd form: you did it, but it wasn't necessary: *We [[needn't have]] hurried. The train was late.*"
+     ]
+    },
+    "watch": [
+     "*needn't have* + 3rd form: you did it, but it wasn't necessary: *We [[needn't have]] hurried. The train was late.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -4264,7 +5492,72 @@
      "*needn't* (vai *don't need to / don't have to*) = nav nepieciešams. *mustn't = aizliegts*.",
      "*be allowed to* = atļauja no *noteikuma* vai cilvēka. *can* ir īsāks, bet tam nav pagātnes un nākotnes formas."
     ],
-    "signals": "*perhaps, maybe, possibly, one time, not necessary, rules, allowed* (varbūt, iespējams, vienu *reizi*, nav vajadzības, noteikumi, atļauts)"
+    "signals": "*perhaps, maybe, possibly, one time, not necessary, rules, allowed* (varbūt, iespējams, vienu *reizi*, nav vajadzības, noteikumi, atļauts)",
+    "v2": {
+     "choice": {
+      "cols": [
+       "might / may / could",
+       "must",
+       "can't"
+      ],
+      "rows": [
+       [
+        "Cik droši?",
+        "iespējams, nav droši || *It [[might]] rain later.*",
+        "droši, ka tā ir || *She [[must]] be tired.*",
+        "droši, ka tā nav || *That [[can't]] be Tom. He's in Paris.*"
+       ]
+      ],
+      "note": "*can* nav nākotnes un perfekta formas: *I'll [[be able to]] help. I haven't [[been able to]] call.*"
+     },
+     "mistakes": [
+      [
+       "It [[might rains]] later.",
+       "It [[might rain]] later."
+      ],
+      [
+       "I [[will can]] come on Friday.",
+       "I [[will be able to]] come on Friday."
+      ],
+      [
+       "She [[mustn't]] be at home. Her car isn't here.",
+       "She [[can't]] be at home. Her car isn't here.",
+       "Latviski \"nevar būt\": angliski *must* pretējais šeit ir *can't*, nevis *mustn't*."
+      ],
+      [
+       "We [[are allowed]] park here.",
+       "We [[are allowed to]] park here."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*could* = varēja vispār; *was able to* = izdevās vienu reizi",
+       "ex": [
+        "I [[could]] swim when I was five.",
+        "The door was locked, but I [[was able to]] open it."
+       ]
+      },
+      {
+       "t": "*needn't* = nav vajadzīgs; *mustn't* = nedrīkst",
+       "ex": [
+        "You [[needn't]] wait for me.",
+        "You [[mustn't]] park here."
+       ]
+      },
+      {
+       "t": "*be allowed to* = atļauja, jebkurā laikā",
+       "ex": [
+        "Children [[weren't allowed to]] go in."
+       ]
+      }
+     ],
+     "watch": [
+      "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*"
+     ]
+    },
+    "watch": [
+     "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*"
+    ]
    }
   },
   {

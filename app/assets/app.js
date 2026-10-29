@@ -1345,6 +1345,11 @@
     if (kind === 'always') svg.appendChild(el('line', { x1: 8, y1: 22, x2: 116, y2: 22, class: 'tl-bar' }));
     if (kind === 'upto') { svg.appendChild(el('line', { x1: 22, y1: 22, x2: 74, y2: 22, class: 'tl-bar' })); svg.appendChild(el('path', { d: 'M72 16 L80 22 L72 28 Z', class: 'tl-head' })); }
     if (kind === 'now') svg.appendChild(el('circle', { cx: 80, cy: 22, r: 5, class: 'tl-head' }));
+    if (kind === 'pastperfect') {   // the earlier past action (past perfect) and the later one (past simple): Murphy, Unit 15
+      [[30, 'tl-x'], [58, 'tl-x']].forEach(function (p) { svg.appendChild(el('path', { d: 'M' + (p[0] - 4) + ' 18 L' + (p[0] + 4) + ' 26 M' + (p[0] + 4) + ' 18 L' + (p[0] - 4) + ' 26', class: p[1] })); });
+      var a = el('text', { x: 30, y: 12, 'text-anchor': 'middle', class: 'tl-lbl' }); a.textContent = '1'; svg.appendChild(a);
+      var b2 = el('text', { x: 58, y: 12, 'text-anchor': 'middle', class: 'tl-lbl' }); b2.textContent = '2'; svg.appendChild(b2);
+    }
     if (kind === 'around') svg.appendChild(el('line', { x1: 62, y1: 22, x2: 98, y2: 22, class: 'tl-bar' }));   // a temporary situation around now
     if (kind === 'plan' || kind === 'decide_now') {   // going to: decided before; will: decided now (Murphy, Units 22-23)
       var from = kind === 'plan' ? 40 : 80;

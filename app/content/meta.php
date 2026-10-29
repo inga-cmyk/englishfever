@@ -1496,12 +1496,88 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*often, every day, usually, in my country*",
     "example": "*These cars are built in Germany.*",
     "watch": [
-     "*by* + the doer only when it matters: *This song is sung by everyone.*",
-     "Always the past participle after *be*: *is made* (not *is make* or *is making*).",
-     "Question: *Where are these phones made?* (not *Where these phones are made?*)",
-     "*be born*: *I was born in 1990* (not *I born in 1990*).",
-     "Verbs without an object have no passive: *It happened* (not *It was happened*)."
-    ]
+     "Verbs without an object have no passive: *Accidents [[happen]] every day.*",
+     "*be* agrees with the subject, the 3rd form stays the same: *The window [[is]] cleaned. The windows [[are]] cleaned.*"
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I",
+        "[[am]] [[invited]]",
+        "[[am not]] [[invited]]",
+        "[[Am]] I [[invited]]?"
+       ],
+       [
+        "he / she / it",
+        "[[is]] [[made]]",
+        "[[isn't]] [[made]]",
+        "[[Is]] it [[made]]?"
+       ],
+       [
+        "you / we / they",
+        "[[are]] [[made]]",
+        "[[aren't]] [[made]]",
+        "[[Are]] they [[made]]?"
+       ]
+      ],
+      "short": "3rd form: regular verbs + *-ed* (*clean → [[cleaned]]*); irregular verbs: learn them (*make → [[made]], speak → [[spoken]], build → [[built]]*)."
+     },
+     "mistakes": [
+      [
+       "English [[is speak]] here.",
+       "English [[is spoken]] here."
+      ],
+      [
+       "These phones [[make]] in China.",
+       "These phones [[are made]] in China."
+      ],
+      [
+       "Where [[these phones are]] made?",
+       "Where [[are these phones]] made?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "What happens is more important than who does it",
+       "s": [
+        "every day",
+        "usually",
+        "all over the world"
+       ],
+       "ex": [
+        "The rooms [[are cleaned]] every day.",
+        "English [[is spoken]] all over the world."
+       ]
+      },
+      {
+       "t": "Processes, rules and notices",
+       "s": [
+        "is made from",
+        "is not allowed"
+       ],
+       "ex": [
+        "Cheese [[is made]] from milk.",
+        "Smoking [[is not allowed]] here."
+       ]
+      },
+      {
+       "t": "*by* + the doer, only when it matters",
+       "ex": [
+        "These cakes [[are made]] [[by]] my grandmother."
+       ]
+      }
+     ],
+     "watch": [
+      "Verbs without an object have no passive: *Accidents [[happen]] every day.*",
+      "*be* agrees with the subject, the 3rd form stays the same: *The window [[is]] cleaned. The windows [[are]] cleaned.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -1515,12 +1591,89 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*often, every day, usually, in my country*",
     "watch": [
-     "*by* + darītājs *tikai* tad, ja tas ir svarīgi: *This song is sung by everyone.*",
-     "Ar *be* vienmēr 3. forma: *is made* (nevis *is make* vai *is making*).",
-     "Jautājums: *Where are these phones made?* (nevis *Where these phones are made*?)",
-     "*be born*: *I was born in 1990* (nevis *I born in 1990*). *Latviski esmu dzimis*, tāpēc palīgdarbības vārdu izlaiž.",
-     "Darbības vārdiem bez papildinātāja ciešamās kārtas nav: *It happened* (nevis *It was happened*)."
-    ]
+     "Darbības vārdiem bez papildinātāja ciešamās kārtas nav: *Accidents [[happen]] every day.*",
+     "*be* saskan ar teikuma priekšmetu, 3. forma nemainās: *The window [[is]] cleaned. The windows [[are]] cleaned.*"
+    ],
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I",
+        "[[am]] [[invited]]",
+        "[[am not]] [[invited]]",
+        "[[Am]] I [[invited]]?"
+       ],
+       [
+        "he / she / it",
+        "[[is]] [[made]]",
+        "[[isn't]] [[made]]",
+        "[[Is]] it [[made]]?"
+       ],
+       [
+        "you / we / they",
+        "[[are]] [[made]]",
+        "[[aren't]] [[made]]",
+        "[[Are]] they [[made]]?"
+       ]
+      ],
+      "short": "3. forma: kārtnie darbības vārdi + *-ed* (*clean → [[cleaned]]*); nekārtnie jāiemācās (*make → [[made]], speak → [[spoken]], build → [[built]]*)."
+     },
+     "mistakes": [
+      [
+       "English [[is speak]] here.",
+       "English [[is spoken]] here."
+      ],
+      [
+       "These phones [[make]] in China.",
+       "These phones [[are made]] in China.",
+       "Latviski \"šos telefonus ražo Ķīnā\" ir bez palīgdarbības vārda, tāpēc, tulkojot burtiski, *are* izlaiž."
+      ],
+      [
+       "Where [[these phones are]] made?",
+       "Where [[are these phones]] made?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Svarīgāk ir tas, kas notiek, nevis kurš to dara",
+       "s": [
+        "every day",
+        "usually",
+        "all over the world"
+       ],
+       "ex": [
+        "The rooms [[are cleaned]] every day.",
+        "English [[is spoken]] all over the world."
+       ]
+      },
+      {
+       "t": "Procesi, noteikumi un paziņojumi",
+       "s": [
+        "is made from",
+        "is not allowed"
+       ],
+       "ex": [
+        "Cheese [[is made]] from milk.",
+        "Smoking [[is not allowed]] here."
+       ]
+      },
+      {
+       "t": "*by* + darītājs, tikai ja tas ir svarīgi",
+       "ex": [
+        "These cakes [[are made]] [[by]] my grandmother."
+       ]
+      }
+     ],
+     "watch": [
+      "Darbības vārdiem bez papildinātāja ciešamās kārtas nav: *Accidents [[happen]] every day.*",
+      "*be* saskan ar teikuma priekšmetu, 3. forma nemainās: *The window [[is]] cleaned. The windows [[are]] cleaned.*"
+     ]
+    }
    }
   },
   {
@@ -1544,7 +1697,84 @@ return json_decode(<<<'EF_JSON_END'
      "*by* + doer when it is important."
     ],
     "signals": "*yesterday, last year, in 1889, when*",
-    "example": "*My bike was stolen last night.*"
+    "example": "*My bike was stolen last night.*",
+    "v2": {
+     "table": {
+      "cols": [
+       "Positive",
+       "Negative",
+       "Question"
+      ],
+      "rows": [
+       [
+        "I / he / she / it",
+        "[[was]] [[built]]",
+        "[[wasn't]] [[built]]",
+        "[[Was]] it [[built]]?"
+       ],
+       [
+        "you / we / they",
+        "[[were]] [[built]]",
+        "[[weren't]] [[built]]",
+        "[[Were]] they [[built]]?"
+       ]
+      ],
+      "short": "3rd form: *build → [[built]], write → [[written]], steal → [[stolen]], paint → [[painted]]*."
+     },
+     "mistakes": [
+      [
+       "I [[born]] in 1990.",
+       "I [[was born]] in 1990."
+      ],
+      [
+       "The bridge [[was build]] in 1890.",
+       "The bridge [[was built]] in 1890."
+      ],
+      [
+       "The windows [[was]] broken.",
+       "The windows [[were]] broken."
+      ],
+      [
+       "When [[the castle was]] built?",
+       "When [[was the castle]] built?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The doer is unknown or not important",
+       "s": [
+        "yesterday",
+        "last year",
+        "in 1890"
+       ],
+       "ex": [
+        "My bike [[was stolen]] yesterday.",
+        "The bridge [[was built]] in 1890."
+       ]
+      },
+      {
+       "t": "History and news",
+       "ex": [
+        "The Eiffel Tower [[was built]] in 1889.",
+        "Two people [[were hurt]] in the accident."
+       ]
+      },
+      {
+       "t": "*by* + the doer, when it matters",
+       "ex": [
+        "This picture [[was painted]] [[by]] my grandfather."
+       ]
+      }
+     ],
+     "watch": [
+      "Active or passive? Ask who does the action: *Somebody stole my bike.* = *My bike [[was stolen]].*",
+      "*be born* is always passive, also in questions: *Where [[were]] you [[born]]?*"
+     ]
+    },
+    "watch": [
+     "Active or passive? Ask who does the action: *Somebody stole my bike.* = *My bike [[was stolen]].*",
+     "*be born* is always passive, also in questions: *Where [[were]] you [[born]]?*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -1557,7 +1787,85 @@ return json_decode(<<<'EF_JSON_END'
      "Vēsture, ziņas.",
      "*by* + darītājs, ja tas ir svarīgi."
     ],
-    "signals": "*yesterday, last year, in 1889, when*"
+    "signals": "*yesterday, last year, in 1889, when*",
+    "v2": {
+     "table": {
+      "cols": [
+       "Apstiprinājums",
+       "Noliegums",
+       "Jautājums"
+      ],
+      "rows": [
+       [
+        "I / he / she / it",
+        "[[was]] [[built]]",
+        "[[wasn't]] [[built]]",
+        "[[Was]] it [[built]]?"
+       ],
+       [
+        "you / we / they",
+        "[[were]] [[built]]",
+        "[[weren't]] [[built]]",
+        "[[Were]] they [[built]]?"
+       ]
+      ],
+      "short": "3. forma: *build → [[built]], write → [[written]], steal → [[stolen]], paint → [[painted]]*."
+     },
+     "mistakes": [
+      [
+       "I [[born]] in 1990.",
+       "I [[was born]] in 1990.",
+       "Latviski \"dzimu\" ir viens vārds, tāpēc, tulkojot burtiski, *was* izlaiž."
+      ],
+      [
+       "The bridge [[was build]] in 1890.",
+       "The bridge [[was built]] in 1890."
+      ],
+      [
+       "The windows [[was]] broken.",
+       "The windows [[were]] broken."
+      ],
+      [
+       "When [[the castle was]] built?",
+       "When [[was the castle]] built?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Darītājs nav zināms vai nav svarīgs",
+       "s": [
+        "yesterday",
+        "last year",
+        "in 1890"
+       ],
+       "ex": [
+        "My bike [[was stolen]] yesterday.",
+        "The bridge [[was built]] in 1890."
+       ]
+      },
+      {
+       "t": "Vēsture un ziņas",
+       "ex": [
+        "The Eiffel Tower [[was built]] in 1889.",
+        "Two people [[were hurt]] in the accident."
+       ]
+      },
+      {
+       "t": "*by* + darītājs, ja tas ir svarīgi",
+       "ex": [
+        "This picture [[was painted]] [[by]] my grandfather."
+       ]
+      }
+     ],
+     "watch": [
+      "Darāmā vai ciešamā kārta? Pajautā, kurš darbību dara: *Somebody stole my bike.* = *My bike [[was stolen]].*",
+      "*be born* vienmēr ir ciešamajā kārtā, arī jautājumā: *Where [[were]] you [[born]]?*"
+     ]
+    },
+    "watch": [
+     "Darāmā vai ciešamā kārta? Pajautā, kurš darbību dara: *Somebody stole my bike.* = *My bike [[was stolen]].*",
+     "*be born* vienmēr ir ciešamajā kārtā, arī jautājumā: *Where [[were]] you [[born]]?*"
+    ]
    }
   },
   {
@@ -2112,11 +2420,73 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*if, when, whenever, every time*",
     "example": "*If you leave biscuits on the desk, someone eats them.*",
     "watch": [
-     "*if* and *when* mean almost the same here: *If / When you mix red and blue, you get purple.*",
-     "Present simple in both parts, not *will*: *If you press this, the door opens* (not *If you will press this, the door opens*).",
-     "A comma after the *if*-part when it comes first: *If it rains, the road gets wet.* No comma when it comes second: *The road gets wet if it rains.*",
-     "The second part can be an instruction: *If you feel sick, stay at home.*"
-    ]
+     "*if* or *when*: here they mean almost the same: *[[If]] / [[When]] I'm tired, I go to bed early.*",
+     "Zero conditional = always true; first conditional = one situation in the future: *If it rains tomorrow, we'[[ll stay]] at home.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "if-part",
+       "result"
+      ],
+      "rows": [
+       [
+        "Form",
+        "*If* + present simple || *If you [[heat]] ice,*",
+        "present simple || *it [[melts]].*"
+       ],
+       [
+        "Negative",
+        "|| *If you [[don't water]] plants,*",
+        "|| *they [[die]].*"
+       ]
+      ],
+      "note": "A comma after the *if*-part when it comes first; no comma when it comes second: *The road gets wet if it rains.*"
+     },
+     "mistakes": [
+      [
+       "If you [[will heat]] ice, it melts.",
+       "If you [[heat]] ice, it melts."
+      ],
+      [
+       "If you heat ice, it [[melt]].",
+       "If you heat ice, it [[melts]]."
+      ],
+      [
+       "If water [[boil]], it turns into steam.",
+       "If water [[boils]], it turns into steam."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Facts that are always true",
+       "s": [
+        "science",
+        "nature"
+       ],
+       "ex": [
+        "If you [[mix]] red and blue, you [[get]] purple.",
+        "Plants [[die]] if they [[don't get]] water."
+       ]
+      },
+      {
+       "t": "General rules and habits",
+       "ex": [
+        "If I [[drink]] coffee late, I [[can't]] sleep."
+       ]
+      },
+      {
+       "t": "Instructions: the result is an order",
+       "ex": [
+        "If you [[feel]] sick, [[stay]] at home."
+       ]
+      }
+     ],
+     "watch": [
+      "*if* or *when*: here they mean almost the same: *[[If]] / [[When]] I'm tired, I go to bed early.*",
+      "Zero conditional = always true; first conditional = one situation in the future: *If it rains tomorrow, we'[[ll stay]] at home.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2131,11 +2501,74 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*if, when, whenever, every time*",
     "watch": [
-     "*if* un *when* šeit nozīmē gandrīz to pašu: *If / When you mix red and blue, you get purple.*",
-     "Abās daļās Present Simple, nevis *will*: *If you press this, the door opens* (nevis *If you will press this, the door opens*).",
-     "Ja *if* daļa ir pirmā, aiz tās liek komatu: *If it rains, the road gets wet.* Ja otrā, *komata* nav: *The road gets wet if it rains.*",
-     "Otrā daļa var būt pavēle: *If you feel sick, stay at home.*"
-    ]
+     "*if* vai *when*: šeit nozīme ir gandrīz tā pati: *[[If]] / [[When]] I'm tired, I go to bed early.*",
+     "Zero conditional = vienmēr patiess; first conditional = viena situācija nākotnē: *If it rains tomorrow, we'[[ll stay]] at home.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "if daļa",
+       "rezultāts"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "*If* + Present Simple || *If you [[heat]] ice,*",
+        "Present Simple || *it [[melts]].*"
+       ],
+       [
+        "Noliegums",
+        "|| *If you [[don't water]] plants,*",
+        "|| *they [[die]].*"
+       ]
+      ],
+      "note": "Komats aiz *if* daļas, ja tā ir pirmā; ja otrā, komata nav: *The road gets wet if it rains.*"
+     },
+     "mistakes": [
+      [
+       "If you [[will heat]] ice, it melts.",
+       "If you [[heat]] ice, it melts.",
+       "Latviski var teikt \"ja sildīsi\", tāpēc, tulkojot burtiski, gribas *will*."
+      ],
+      [
+       "If you heat ice, it [[melt]].",
+       "If you heat ice, it [[melts]]."
+      ],
+      [
+       "If water [[boil]], it turns into steam.",
+       "If water [[boils]], it turns into steam."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Fakti, kas vienmēr ir patiesi",
+       "s": [
+        "science",
+        "nature"
+       ],
+       "ex": [
+        "If you [[mix]] red and blue, you [[get]] purple.",
+        "Plants [[die]] if they [[don't get]] water."
+       ]
+      },
+      {
+       "t": "Vispārīgi noteikumi un ieradumi",
+       "ex": [
+        "If I [[drink]] coffee late, I [[can't]] sleep."
+       ]
+      },
+      {
+       "t": "Norādījumi: rezultāts ir pavēle",
+       "ex": [
+        "If you [[feel]] sick, [[stay]] at home."
+       ]
+      }
+     ],
+     "watch": [
+      "*if* vai *when*: šeit nozīme ir gandrīz tā pati: *[[If]] / [[When]] I'm tired, I go to bed early.*",
+      "Zero conditional = vienmēr patiess; first conditional = viena situācija nākotnē: *If it rains tomorrow, we'[[ll stay]] at home.*"
+     ]
+    }
    }
   },
   {
@@ -2162,11 +2595,75 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*if, unless, as soon as, when, in case*",
     "example": "*If you send the email now, she will reply before lunch.*",
     "watch": [
-     "*unless* = *if not*: *Unless you hurry, you'll miss the bus* (not *Unless you don't hurry*).",
-     "*if* (maybe it happens) and *when* (it will happen): *If I see her, I'll tell her. When I see her, I'll tell her.*",
-     "No *will* after *if*: *If it rains tomorrow…* (not *If it will rain tomorrow…*).",
-     "The comma works the same way as in the zero conditional."
-    ]
+     "*if* = maybe it happens; *when* = it will happen: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
+     "No *will* after *as soon as, before, until* either: *I'll call you as soon as I [[get]] home.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "if-part",
+       "result"
+      ],
+      "rows": [
+       [
+        "Form",
+        "*If* + present simple || *If it [[rains]],*",
+        "*will* + base verb || *we'[[ll stay]] at home.*"
+       ],
+       [
+        "Other results",
+        "|| *If you [[see]] Anna,*",
+        "*can, may, might, should* || *you [[can]] give her this.* ;; an order || *[[tell]] her to call me.*"
+       ]
+      ],
+      "note": "The *if*-part can come second; then there is no comma: *We'll stay at home if it rains.*"
+     },
+     "mistakes": [
+      [
+       "If it [[will rain]], we'll stay at home.",
+       "If it [[rains]], we'll stay at home."
+      ],
+      [
+       "If she [[call]], I'll tell you.",
+       "If she [[calls]], I'll tell you."
+      ],
+      [
+       "Unless you [[don't hurry]], you'll miss the bus.",
+       "Unless you [[hurry]], you'll miss the bus."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "A real, possible situation in the future",
+       "s": [
+        "if",
+        "unless",
+        "as soon as"
+       ],
+       "ex": [
+        "If we [[leave]] now, we'[[ll catch]] the train."
+       ]
+      },
+      {
+       "t": "Promises, warnings and offers",
+       "ex": [
+        "If you [[help]] me, I'[[ll buy]] you lunch.",
+        "If you [[touch]] that, you'[[ll burn]] yourself."
+       ]
+      },
+      {
+       "t": "*unless* = *if … not*",
+       "ex": [
+        "[[Unless]] you hurry, you'll miss the bus.",
+        "[[If]] you [[don't]] hurry, you'll miss the bus."
+       ]
+      }
+     ],
+     "watch": [
+      "*if* = maybe it happens; *when* = it will happen: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
+      "No *will* after *as soon as, before, until* either: *I'll call you as soon as I [[get]] home.*"
+     ]
+    }
    },
    "rule_lv": {
     "form": [
@@ -2182,11 +2679,76 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*if, unless, as soon as, when, in case*",
     "watch": [
-     "*unless = if not*: *Unless you hurry, you'll miss the bus* (nevis *Unless you don't hurry*).",
-     "*if* (varbūt notiks) un *when* (*noteikti* notiks): *If I see her, I'll tell her.* *When I see her, I'll tell her.*",
-     "Aiz *if* nav *will*: *If it rains tomorrow*… (nevis *If it will rain tomorrow*…). *Latviski* ja rīt līs, tāpēc *gribas will*.",
-     "*Komats* pēc tā paša *principa* kā *zero conditional*."
-    ]
+     "*if* = varbūt notiks; *when* = noteikti notiks: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
+     "Arī aiz *as soon as, before, until* nav *will*: *I'll call you as soon as I [[get]] home.*"
+    ],
+    "v2": {
+     "choice": {
+      "cols": [
+       "if daļa",
+       "rezultāts"
+      ],
+      "rows": [
+       [
+        "Forma",
+        "*If* + Present Simple || *If it [[rains]],*",
+        "*will* + pamatforma || *we'[[ll stay]] at home.*"
+       ],
+       [
+        "Citi rezultāti",
+        "|| *If you [[see]] Anna,*",
+        "*can, may, might, should* || *you [[can]] give her this.* ;; pavēle || *[[tell]] her to call me.*"
+       ]
+      ],
+      "note": "*if* daļa var būt otrā; tad komata nav: *We'll stay at home if it rains.*"
+     },
+     "mistakes": [
+      [
+       "If it [[will rain]], we'll stay at home.",
+       "If it [[rains]], we'll stay at home.",
+       "Latviski \"ja līs\" ir nākotnē, tāpēc, tulkojot burtiski, gribas *will*."
+      ],
+      [
+       "If she [[call]], I'll tell you.",
+       "If she [[calls]], I'll tell you."
+      ],
+      [
+       "Unless you [[don't hurry]], you'll miss the bus.",
+       "Unless you [[hurry]], you'll miss the bus."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Reāla, iespējama situācija nākotnē",
+       "s": [
+        "if",
+        "unless",
+        "as soon as"
+       ],
+       "ex": [
+        "If we [[leave]] now, we'[[ll catch]] the train."
+       ]
+      },
+      {
+       "t": "Solījumi, brīdinājumi un piedāvājumi",
+       "ex": [
+        "If you [[help]] me, I'[[ll buy]] you lunch.",
+        "If you [[touch]] that, you'[[ll burn]] yourself."
+       ]
+      },
+      {
+       "t": "*unless* = *if … not*",
+       "ex": [
+        "[[Unless]] you hurry, you'll miss the bus.",
+        "[[If]] you [[don't]] hurry, you'll miss the bus."
+       ]
+      }
+     ],
+     "watch": [
+      "*if* = varbūt notiks; *when* = noteikti notiks: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
+      "Arī aiz *as soon as, before, until* nav *will*: *I'll call you as soon as I [[get]] home.*"
+     ]
+    }
    }
   },
   {
@@ -2500,7 +3062,83 @@ return json_decode(<<<'EF_JSON_END'
      "*be used to / get used to*: something is (or becomes) normal for you. It is different from *used to*!"
     ],
     "signals": "*when I was young, as a child, in those days, now, any more*",
-    "example": "*I used to walk to school, but now I'm used to taking the bus.*"
+    "example": "*I used to walk to school, but now I'm used to taking the bus.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "used to + base verb",
+       "be used to + -ing or a noun"
+      ],
+      "rows": [
+       [
+        "Meaning",
+        "a habit or a state in the past, not true now || *I [[used to]] smoke.*",
+        "something is normal for you || *I'[[m used to]] getting up early.*"
+       ],
+       [
+        "Negative",
+        "|| *I [[didn't use to]] like fish.*",
+        "|| *I'[[m not used to]] the cold.*"
+       ],
+       [
+        "Question",
+        "|| *[[Did]] you [[use to]] play tennis?*",
+        "|| *[[Are]] you [[used to]] it?*"
+       ]
+      ],
+      "note": "*get used to* = it becomes normal: *I [[got used to]] the noise after a week.*"
+     },
+     "mistakes": [
+      [
+       "I [[use to]] get up at seven.",
+       "I [[usually]] get up at seven."
+      ],
+      [
+       "I didn't [[used to]] like fish.",
+       "I didn't [[use to]] like fish."
+      ],
+      [
+       "I'm used to [[get]] up early.",
+       "I'm used to [[getting]] up early."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "True in the past, not true now",
+       "s": [
+        "when I was young",
+        "as a child",
+        "any more"
+       ],
+       "ex": [
+        "I [[used to]] live in Riga, but now I live in Tallinn.",
+        "He [[used to]] be shy."
+       ]
+      },
+      {
+       "t": "One finished event: past simple, not *used to*",
+       "ex": [
+        "We [[went]] to Rome last year.",
+        "✗ We [[used to go]] to Rome last year."
+       ]
+      },
+      {
+       "t": "*be / get used to*: something is, or becomes, normal",
+       "ex": [
+        "She's [[used to]] working at night.",
+        "You'll soon [[get used to]] the new job."
+       ]
+      }
+     ],
+     "watch": [
+      "*would* + verb also tells about past habits, but not about states: *We [[would]] play outside every day. I [[used to]] have a dog.*",
+      "*any more* in the negative: *I don't smoke [[any more]].*"
+     ]
+    },
+    "watch": [
+     "*would* + verb also tells about past habits, but not about states: *We [[would]] play outside every day. I [[used to]] have a dog.*",
+     "*any more* in the negative: *I don't smoke [[any more]].*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -2514,7 +3152,84 @@ return json_decode(<<<'EF_JSON_END'
      "Nelieto vienam pabeigtam notikumam: lieto Past Simple (*We went to Rome last year*).",
      "*be used to / get used to*: kaut kas ir (vai kļūst) ierasts. Tas atšķiras no *used to*!"
     ],
-    "signals": "*when I was young, as a child, in those days, now, any more* (kad biju jauns, bērnībā, tolaik, tagad, vairs)"
+    "signals": "*when I was young, as a child, in those days, now, any more* (kad biju jauns, bērnībā, tolaik, tagad, vairs)",
+    "v2": {
+     "choice": {
+      "cols": [
+       "used to + pamatforma",
+       "be used to + -ing vai lietvārds"
+      ],
+      "rows": [
+       [
+        "Nozīme",
+        "ieradums vai stāvoklis pagātnē, tagad vairs nav || *I [[used to]] smoke.*",
+        "kaut kas tev ir ierasts || *I'[[m used to]] getting up early.*"
+       ],
+       [
+        "Noliegums",
+        "|| *I [[didn't use to]] like fish.*",
+        "|| *I'[[m not used to]] the cold.*"
+       ],
+       [
+        "Jautājums",
+        "|| *[[Did]] you [[use to]] play tennis?*",
+        "|| *[[Are]] you [[used to]] it?*"
+       ]
+      ],
+      "note": "*get used to* = pierast: *I [[got used to]] the noise after a week.*"
+     },
+     "mistakes": [
+      [
+       "I [[use to]] get up at seven.",
+       "I [[usually]] get up at seven.",
+       "Latviski \"parasti\", tāpēc gribas *use to*, bet tagadnē *used to* nelieto."
+      ],
+      [
+       "I didn't [[used to]] like fish.",
+       "I didn't [[use to]] like fish."
+      ],
+      [
+       "I'm used to [[get]] up early.",
+       "I'm used to [[getting]] up early."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Bija pagātnē, tagad vairs nav",
+       "s": [
+        "when I was young",
+        "as a child",
+        "any more"
+       ],
+       "ex": [
+        "I [[used to]] live in Riga, but now I live in Tallinn.",
+        "He [[used to]] be shy."
+       ]
+      },
+      {
+       "t": "Viens pabeigts notikums: Past Simple, nevis *used to*",
+       "ex": [
+        "We [[went]] to Rome last year.",
+        "✗ We [[used to go]] to Rome last year."
+       ]
+      },
+      {
+       "t": "*be / get used to*: kaut kas ir vai kļūst ierasts",
+       "ex": [
+        "She's [[used to]] working at night.",
+        "You'll soon [[get used to]] the new job."
+       ]
+      }
+     ],
+     "watch": [
+      "*would* + darbības vārds arī stāsta par ieradumiem pagātnē, bet ne par stāvokļiem: *We [[would]] play outside every day. I [[used to]] have a dog.*",
+      "*any more* noliegumā: *I don't smoke [[any more]].*"
+     ]
+    },
+    "watch": [
+     "*would* + darbības vārds arī stāsta par ieradumiem pagātnē, bet ne par stāvokļiem: *We [[would]] play outside every day. I [[used to]] have a dog.*",
+     "*any more* noliegumā: *I don't smoke [[any more]].*"
+    ]
    }
   },
   {

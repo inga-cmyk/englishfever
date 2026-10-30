@@ -27,6 +27,16 @@ final class Reports
         $have = Db::one('SELECT id FROM reports WHERE user_id = ? AND item_id = ?', [$u['id'], $itemId]);
         if ($have) Db::update('reports', $row, 'id = ?', [$have['id']]);
         else Db::insert('reports', $row + ['user_id' => (int) $u['id'], 'item_id' => $itemId, 'created_at' => $now]);
+        Db::q('DELETE FROM likes WHERE user_id = ? AND item_id = ?', [$u['id'], $itemId]);   // a thumbs down replaces an earlier thumbs up
+    }
+
+    /** A thumbs up: the learner liked this task. Liking again changes nothing; a later report (thumbs down) removes it. */
+    public static function like(array $u, string $itemId): void
+    {
+        if (!Content::item($itemId)) throw new ApiError('Task not found.', 404);
+        Db::q('DELETE FROM likes WHERE user_id = ? AND item_id = ?', [$u['id'], $itemId]);
+        Db::insert('likes', ['user_id' => (int) $u['id'], 'item_id' => $itemId, 'created_at' => time()]);
+        Db::q("DELETE FROM reports WHERE user_id = ? AND item_id = ? AND status = 'new' AND reason = 'other' AND (comment IS NULL OR comment = '')", [$u['id'], $itemId]);
     }
 
     /** Tasks with a report the teacher has not dealt with yet (new or seen): they are not served to anyone, as a set of ids. */
@@ -74,6 +84,7 @@ final class Reports
         if ($filter === 'open') $where = "WHERE r.status IN ('new', 'seen')";
         elseif (in_array($filter, ['fixed', 'dismissed'], true)) { $where = 'WHERE r.status = ?'; $p[] = $filter; }
         else $filter = 'all';
+        $likes = array_column(Db::all('SELECT item_id, COUNT(*) AS n FROM likes GROUP BY item_id'), 'n', 'item_id');
         $rows = Db::all("SELECT r.*, u.nickname, u.provider FROM reports r LEFT JOIN users u ON u.id = r.user_id $where ORDER BY r.updated_at DESC", $p);
         $groups = [];
         foreach ($rows as $r) {
@@ -90,9 +101,17 @@ final class Reports
         }
         return [
             'filter' => $filter, 'reasons' => self::REASONS, 'open' => self::openCount(),
-            'groups' => array_values($groups),
+            'groups' => array_map(function ($g) use ($likes) { $g['likes'] = $likes[$g['task']['id']] ?? 0; return $g; }, array_values($groups)),
             'hard' => self::hard(),
+            'liked' => self::liked(),
         ];
+    }
+
+    /** The 15 most liked tasks (thumbs up), most likes first. */
+    private static function liked(): array
+    {
+        return array_map(fn($r) => ['task' => self::describe($r['item_id']), 'n' => (int) $r['n']],
+            Db::all('SELECT item_id, COUNT(*) AS n FROM likes GROUP BY item_id ORDER BY n DESC, MAX(created_at) DESC LIMIT 15'));
     }
 
     /** Tasks answered at least 8 times in the last 60 days with 70% or more wrong: often a faulty task, not a hard topic. */

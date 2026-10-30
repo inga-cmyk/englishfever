@@ -8,7 +8,7 @@
 
   var state = {
     config: null, meta: null, user: null, dash: null,
-    todaySeconds: 0, streak: 0, sess: null, prefill: null, lastInteraction: Date.now(), reported: {},
+    todaySeconds: 0, streak: 0, sess: null, prefill: null, lastInteraction: Date.now(), reported: {}, liked: {},
   };
 
   // ───────── helpers ─────────
@@ -747,7 +747,7 @@
     function setStatus(status) {
       api('teacher/report-status', { item_id: g.task.id, status: status }).then(function (x) { state.user.reports_open = x.open; viewReports(); }).catch(function (e) { UI.toast(e.message); });
     }
-    var det = h('details', { class: 'rep-list' }, h('summary', null, g.count + (g.count === 1 ? ' report' : ' reports')),
+    var det = h('details', { class: 'rep-list' }, h('summary', null, g.count + (g.count === 1 ? ' report' : ' reports') + (g.likes ? ' · 👍 ' + g.likes : '')),
       h('ul', null, g.reports.map(function (x) {
         return h('li', null, x.who, ' · ', UI.fmtAgo(x.at),
           x.answer ? h('div', { class: 'small' }, 'Answered: “', x.answer, '” ', x.correct === 1 ? '(marked right)' : '(marked wrong)') : null,
@@ -789,11 +789,14 @@
       var hard = r.hard.length ? [h('h2', { style: 'margin:28px 0 6px' }, 'Often answered wrongly'),
         h('p', { class: 'small muted' }, '70% or more wrong, at least 8 answers.'),
         r.hard.map(function (x) { return h('div', { class: 'card pad-s rep' }, taskHead(x.task), h('div', { class: 'small muted' }, x.pct + '% wrong · ' + x.n + ' answers')); })] : [];
+      var liked = (r.liked || []).length ? [h('h2', { style: 'margin:28px 0 6px' }, 'Liked questions'),
+        h('p', { class: 'small muted' }, 'Thumbs up from learners, most first.'),
+        r.liked.map(function (x) { return h('div', { class: 'card pad-s rep' }, taskHead(x.task), h('div', { class: 'small muted' }, '👍 ' + x.n)); })] : [];
       show(h('div', null,
         h('div', { class: 'row between', style: 'margin-bottom:14px' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Reported questions')),
           h('span', { class: 'row', style: 'gap:8px' }, copyBtn, h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/reports-export' }, 'Download CSV'))),
         h('p', { class: 'small muted', style: 'margin:0 0 12px' }, h('b', null, 'Mark fixed'), ': the task is corrected · ', h('b', null, 'Not a problem'), ': the task is right · ', h('b', null, 'Mark as seen'), ': decide later (the task stays paused).'),
-        h('div', { style: 'margin-bottom:16px' }, seg), list, hard));
+        h('div', { style: 'margin-bottom:16px' }, seg), list, hard, liked));
     }).catch(fail);
   }
 
@@ -1208,9 +1211,25 @@
       if (!r.done && ses.mode === 'practice' && res.adapt !== 'same') {
         adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? (lv ? 'Nākamais: mazliet grūtāks' : 'Next: a bit harder') : (lv ? 'Nākamais: mazliet vieglāks' : 'Next: a bit easier'));
       }
-      fb.appendChild(h('div', { class: 'nextrow' }, adaptNote || h('span'), nextBtn));
+      // one screen (teacher, 30 October): the feedback is a panel at the bottom; its text scrolls inside, Next and the rating always show
+      var body = h('div', { class: 'fb-body' }); while (fb.firstChild) body.appendChild(fb.firstChild);
+      fb.classList.add('sheet');
+      fb.append(body, h('div', { class: 'fb-foot' }, h('div', { class: 'nextrow' }, rateRow(), nextBtn), adaptNote));
       var wasOpen = feedback.querySelector('details.rule[open]');
-      feedback.replaceChildren(fb);
+      var spacer = h('div', { class: 'fb-spacer', 'aria-hidden': 'true' });
+      feedback.replaceChildren(spacer, fb);
+      requestAnimationFrame(function () {   // room under the task for the panel, and the task back in view
+        spacer.style.height = (fb.offsetHeight + 12) + 'px';
+        if (!first) return;
+        var card = feedback.closest('.card') || feedback.parentNode;
+        var marked = card.querySelector('.opt.bad, .opt.good, .opt.right, .opt.wrong') || card.querySelector('.q');
+        var room = window.innerHeight - fb.offsetHeight - 8;   // the space above the panel
+        var top = card.getBoundingClientRect().top - 8, low = 0;
+        card.querySelectorAll('.opt').forEach(function (o) { if (/\b(good|bad|right|wrong)\b/.test(o.className)) low = Math.max(low, o.getBoundingClientRect().bottom); });
+        if (!low && marked) low = marked.getBoundingClientRect().bottom;
+        var by = Math.min(top, Math.max(0, low - room));   // the marked answers just above the panel, but never the question out of view
+        if (Math.abs(by) > 4) window.scrollTo({ top: window.scrollY + by });
+      });
       if (wasOpen || openRuleNext) { var d = fb.querySelector('details.rule'); if (d) d.open = true; }
       openRuleNext = false;
       if (first) nextBtn.focus();
@@ -1244,7 +1263,48 @@
       prevSlot.replaceChildren(o ? h('button', { class: 'linkbtn small', onclick: function () { viewSession(o.n); } }, '‹ Previous') : null);
     }
 
-    // "Report a problem": a small link on every task, and a prompt under a wrong answer
+    /** Was this question OK? 👍 = a like; 👎 opens the reasons and a comment box, and sends a report (teacher, 30 October). */
+    var RATE_REASONS = [['unclear', 'Unclear'], ['ambiguous', 'More than one answer fits'], ['my_answer', 'My answer was right'], ['key_wrong', 'The answer shown is wrong'], ['explanation', 'The explanation is confusing']];
+    function rateRow() {
+      var box = h('div', { class: 'rate' });
+      function thanks(t) { box.replaceChildren(h('span', { class: 'rate-q' }, icon('check'), ' ', t)); }
+      if (state.reported[it.id]) { thanks('Thanks for your feedback.'); return box; }
+      if (state.liked[it.id]) { thanks('Thanks!'); return box; }
+      var up = h('button', { type: 'button', class: 'rate-b', 'aria-label': 'Good question', title: 'Good question' }, '👍');
+      var down = h('button', { type: 'button', class: 'rate-b', 'aria-label': 'Something is wrong', title: 'Something is wrong' }, '👎');
+      up.addEventListener('click', function () {
+        up.disabled = down.disabled = true;
+        api('like', { item_id: it.id }).then(function () { state.liked[it.id] = true; thanks('Thanks!'); })
+          .catch(function (e) { up.disabled = down.disabled = false; UI.toast(e.message); });
+      });
+      down.addEventListener('click', function () {
+        var reason = '';
+        var chips = RATE_REASONS.map(function (x) {
+          var c = h('button', { type: 'button', class: 'chip rate-c', 'aria-pressed': 'false' }, x[1]);
+          c.addEventListener('click', function () { reason = reason === x[0] ? '' : x[0]; chips.forEach(function (o) { o.setAttribute('aria-pressed', 'false'); }); if (reason) c.setAttribute('aria-pressed', 'true'); });
+          return c;
+        });
+        var ta = h('textarea', { class: 'rate-t', rows: 2, maxlength: 400, placeholder: 'Comment', 'aria-label': 'Comment' });
+        var send = h('button', { type: 'button', class: 'btn small' }, 'Send');
+        var cancel = h('button', { type: 'button', class: 'btn ghost small' }, 'Cancel');
+        var panel = h('div', { class: 'rate-p' }, h('div', { class: 'rate-cs' }, chips), ta, h('div', { class: 'row', style: 'gap:8px' }, send, cancel));
+        cancel.addEventListener('click', function () { panel.remove(); box.hidden = false; });
+        send.addEventListener('click', function () {
+          send.disabled = true;
+          track('report', it.skill);
+          api('report', { item_id: it.id, reason: reason, comment: ta.value }).then(function () { state.reported[it.id] = true; panel.remove(); box.hidden = false; thanks('Thanks for your feedback.'); })
+            .catch(function (e) { send.disabled = false; UI.toast(e.message); });
+        });
+        box.hidden = true;
+        var foot = box.closest('.fb-foot'); foot.insertBefore(panel, foot.firstChild);
+        var sp = foot.parentNode.parentNode.querySelector('.fb-spacer'); if (sp) sp.style.height = (foot.parentNode.offsetHeight + 12) + 'px';
+        ta.focus();
+      });
+      box.append(h('span', { class: 'rate-q' }, 'Was this question OK?'), up, down);
+      return box;
+    }
+
+    // "Report a problem": a small link on the placement test (no feedback there)
     function reportedDone() { reportBtn.disabled = true; reportBtn.replaceChildren(icon('check'), h('span', null, 'Reported')); }
     function sendReport() {
       reportBtn.disabled = true;
@@ -1268,7 +1328,7 @@
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
         h('div', { class: 'meta' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
-          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, reportBtn),
+          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, ses.mode === 'placement' ? reportBtn : null),   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
         qEl, area, h('div', { class: 'row', style: 'gap:18px' }, submit, ses.mode === 'placement' || rev ? null : skipBtn), feedback)));
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
       var a = rev.ans;

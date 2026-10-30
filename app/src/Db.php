@@ -217,6 +217,12 @@ final class Db
                 created_at $big NOT NULL,
                 updated_at $big NOT NULL
             )$tail",
+            "CREATE TABLE IF NOT EXISTS likes (
+                user_id $big NOT NULL,
+                item_id $str NOT NULL,
+                created_at $big NOT NULL,
+                PRIMARY KEY (user_id, item_id)
+            )$tail",
             "CREATE TABLE IF NOT EXISTS custom_items (
                 id $pk,
                 item_id $str NOT NULL UNIQUE,

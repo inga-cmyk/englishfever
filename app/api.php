@@ -98,7 +98,7 @@ try {
         case 'account/delete':
             $u = Auth::require();
             if (empty($in['confirm'])) throw new ApiError('Please confirm.', 400);
-            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions', 'reports'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
+            foreach (['attempts', 'psessions', 'skill_state', 'activity', 'conditions', 'reports', 'likes'] as $t) Db::q("DELETE FROM $t WHERE user_id = ?", [$u['id']]);
             Db::q('DELETE FROM teacher_mine WHERE student_id = ? OR teacher_id = ?', [$u['id'], $u['id']]);
             Db::q('DELETE FROM users WHERE id = ?', [$u['id']]);
             Auth::logout();
@@ -203,6 +203,12 @@ try {
             $u = Auth::require();
             throttle('report:' . $u['id'], 30, 86400, 'Thank you! That is a lot of reports for one day. Please try again tomorrow.');
             Reports::save($u, (string) ($in['item_id'] ?? ''), (string) ($in['reason'] ?? ''), (string) ($in['comment'] ?? ''));
+            out(['ok' => true]);
+
+        case 'like':   // thumbs up under the feedback (teacher, 30 October): one per learner and task, no text
+            $u = Auth::require();
+            throttle('like:' . $u['id'], 300, 86400, 'Thank you!');
+            Reports::like($u, (string) ($in['item_id'] ?? ''));
             out(['ok' => true]);
 
         case 'teacher/reports':

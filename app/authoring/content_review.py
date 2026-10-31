@@ -448,6 +448,13 @@ def revise(original):
         answers=[['They asked where they should meet.', 'They asked where to meet.']],
         why='Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.')
     # no "she said" after the quote (teacher, 29 October); congratulate was 70% wrong as a whole typed sentence, now only the key part
+    # reported 31 October: no speaker tag, no grammatical wrong option, no guessed he; the polite question says what to ask
+    report_fix('rv-C11-5a',
+        q="Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.'",
+        wrong=['The manager apologised the delay and promised that it would not happen again.',
+               'The manager apologised for the delay and promised to that it would not happen again.',
+               'The manager apologised for the delay and promised it not happening again.'])
+    report_fix('ip-B21-5a', q="Which is the polite way to ask this: 'When will my order be delivered?'")
     report_fix('rv-C12-1a', q="Which sentence reports this: 'If I were you, I'd take the earlier train.'")
     report_fix('rv-C11-3a',
         q="Complete the report of 'Well done on winning the award, Jo!': I congratulated Jo ___ the award. (win)",

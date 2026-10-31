@@ -2322,6 +2322,22 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "rv-C11-5a",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Report this concisely and naturally: 'I'm very sorry for the delay, and I will make sure it never happens again,' the manager said. Choose the correct option.",
+"correct": "The manager apologised for the delay and promised that it would not happen again.",
+"wrong": [
+"The manager said that he was very sorry for the delay and he will make sure it never happens again.",
+"The manager apologised the delay and promised that it will not happen again.",
+"The manager apologised for the delay and promised to that it would not happen again."
+],
+"why": "A reporting verb says what the speaker did. *apologise for* + noun, *promise* + *that* + clause.",
+"wrong_why": {}
+},
+{
 "id": "rv-C11-6a",
 "skill": "rep_verbs",
 "level": "C1.1",
@@ -2472,6 +2488,22 @@ return json_decode(<<<'EF_JSON_END'
 "No *did* in the indirect part: *... why the order didn't arrive.*"
 ]
 ]
+},
+{
+"id": "ip-B21-5a",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You call customer service. Choose the correct option.",
+"correct": "I was wondering if you could tell me when my order will be delivered.",
+"wrong": [
+"I was wondering when will my order be delivered?",
+"I was wondering if you could tell me when will my order be delivered?",
+"I was wondering that you could tell me when my order will be delivered."
+],
+"why": "*I was wondering if you could tell me* + *when* + subject + verb.",
+"wrong_why": {}
 },
 {
 "id": "ia-C11-1a",

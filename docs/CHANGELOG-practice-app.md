@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Reported tasks, 31 October:** c-2129 *The police is here* with three different correct sentences (re-import the drafts); rv-C11-5a without *the manager said* and with three clearly wrong options; ip-B21-5a now gives the question to ask politely (*When will my order be delivered?*).
 - **One screen for every question:** after *Check answer* the feedback is a panel at the bottom of the screen. The task stays in view, with the chosen and the right answer just above the panel; a long explanation scrolls inside the panel, and *Next* is always visible.
 - **Was this question OK? 👍 👎** next to *Next*: 👍 is one tap; 👎 opens the reasons and a *Comment* box and sends a report (the old *Report* link stays only on the placement test). The Reports page shows 👍 counts and a *Liked questions* list.
 - **My learning path: Continue with the next step.** After a practice started from My learning path, the results show *Next step: …* with a *Continue with …* button right under the score (the next step that is not mastered yet). It also works after a reload in the middle.

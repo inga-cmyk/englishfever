@@ -7167,17 +7167,17 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C11-5a",
+"id": "rv-C11-5a-r2",
 "skill": "rep_verbs",
 "level": "C1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Report this concisely and naturally: 'I'm very sorry for the delay, and I will make sure it never happens again,' the manager said. Choose the correct option.",
+"q": "Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.'",
 "correct": "The manager apologised for the delay and promised that it would not happen again.",
 "wrong": [
-"The manager said that he was very sorry for the delay and he will make sure it never happens again.",
-"The manager apologised the delay and promised that it will not happen again.",
-"The manager apologised for the delay and promised to that it would not happen again."
+"The manager apologised the delay and promised that it would not happen again.",
+"The manager apologised for the delay and promised to that it would not happen again.",
+"The manager apologised for the delay and promised it not happening again."
 ],
 "why": "A reporting verb says what the speaker did. *apologise for* + noun, *promise* + *that* + clause.",
 "wrong_why": {}
@@ -7718,12 +7718,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ip-B21-5a",
+"id": "ip-B21-5a-r2",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You call customer service. Choose the correct option.",
+"q": "Which is the polite way to ask this: 'When will my order be delivered?'",
 "correct": "I was wondering if you could tell me when my order will be delivered.",
 "wrong": [
 "I was wondering when will my order be delivered?",

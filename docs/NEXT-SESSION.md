@@ -28,7 +28,12 @@ and the top of `docs/CHANGELOG-practice-app.md`. Reply to Inga in Latvian.
   runs bank_update_test and builds the zip. Add a line on top of the CHANGELOG for every change.
 
 ## Last uploaded / built
-- Last zip version 2026-11-01 21:14 (research data step 1, Rome word order, panel and wavy-line fixes).
+- Last zip version 2026-11-01 22:15: joining ideas (3 topics, cards, path steps, 84 drafts in conjunctions-1.csv,
+  review list conjunctions-1-review.md), bold `**…**` in rule cards. Inga approved the A2.1 and A2.2 card drafts
+  ("der") and asked for the tasks to be done without her; she has not seen the 84 tasks or the B1 card yet.
+- test-english.com answers 403 to automated requests (bot protection); do not try to get round it. Inga sends
+  screenshots of the explanation pages instead. B2 "clauses of contrast, purpose, reason and result" and
+  "discourse markers" not done yet (no screenshot).
 
 ## Plan, in order (agreed with Inga)
 1. Done: research data step 1 (exposure, served_why, lang, feedback time, app version per answer; test accounts).

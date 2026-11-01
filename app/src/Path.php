@@ -23,6 +23,7 @@ final class Path
         ['soq', 'Questions: word order', 'A2', ['subject_object_q']],
         ['prc', 'Present continuous', 'A2', ['present_continuous']],
         ['cmp', 'Comparison', 'A2', ['comparison']],
+        ['cj1', 'And, but, or, so, because', 'A2', ['conj_basic']],   // joining ideas (teacher, 2 November)
         ['mod', 'Should, must, have to', 'A2', ['modal_verbs']],
         ['fut1', 'Going to, will', 'A2', ['future']],
         ['pp', 'Present perfect', 'A2', ['present_perfect']],
@@ -31,12 +32,14 @@ final class Path
         ['dep', 'Listen to, good at', 'A2', ['dep_prepositions']],
         ['two', 'Give me, tell her', 'A2', ['two_objects']],
         ['psp', 'Present simple passive', 'A2', ['present_simple_passive']],
+        ['cj2', 'However, although, because of, then', 'A2', ['conj_linkers']],
         ['ut', 'Used to', 'B1', ['used_to']],
         ['art2', 'The or no article', 'B1', ['articles_b1']],   // articles split like Murphy (teacher, 29 October)
         ['ppc', 'Present perfect continuous', 'B1', ['present_perfect_continuous']],
         ['ind', 'Someone, anything, nobody', 'B1', ['indefinite_pronouns']],
         ['rel', 'Relative clauses', 'B1', ['relative_clauses']],
         ['tc', 'Time clauses', 'B1', ['time_clauses']],
+        ['cj3', 'Although, despite, so that', 'B1', ['conj_clauses']],
         ['mm', 'Might, could, be able to', 'B1', ['more_modals']],
         ['c2', 'Second conditional', 'B1', ['cond_second']],
         ['qt', 'Question tags', 'B1', ['question_tags']],

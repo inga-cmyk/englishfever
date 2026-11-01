@@ -1410,7 +1410,15 @@
     });
     return frag;
   }
-  function richHl(t) {   // italics around a highlight: *I [[do]].* -> the whole sentence in italics, "do" coloured
+  function richHl(t) {   // **key word** in bold (the meaning a rule turns on; teacher, 2 November, as test-english does), the rest as richHl1
+    var out = document.createDocumentFragment();
+    String(t || '').split('**').forEach(function (seg, j) {
+      if (!seg) return;
+      if (j % 2) { var b = document.createElement('b'); b.className = 'rc-key'; b.appendChild(richHl1(seg)); out.appendChild(b); } else out.appendChild(richHl1(seg));
+    });
+    return out;
+  }
+  function richHl1(t) {   // italics around a highlight: *I [[do]].* -> the whole sentence in italics, "do" coloured
     var out = document.createDocumentFragment();
     String(t || '').split('*').forEach(function (part, i) {
       if (!part) return;
@@ -1673,7 +1681,9 @@
     aux_verbs: '**Are** you listening? **Did** you hear me? **Have** you fallen asleep?',
     cmp_ps_pc: 'I **was eating** chocolate when my diet **started**.', cmp_pp_ps: "I**'ve been** to Paris. I **saw** the airport.",
     narrative: 'The party **had** already **finished** when I **arrived** in my best shirt.', narrative_b2: "He **was** out of breath. He**'d been running**.",
-    articles_b1: '**The** rich get richer. **The** cat gets **the** sofa.'
+    articles_b1: '**The** rich get richer. **The** cat gets **the** sofa.',
+    conj_basic: "I'm on a diet, **but** I eat cake **because** it's Monday.", conj_linkers: '**Although** I set three alarms, I woke up late **because of** my cat.',
+    conj_clauses: 'I bought a treadmill **so that** I **could** dry my clothes on it.'
   };
   function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
     return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });

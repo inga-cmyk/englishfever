@@ -817,3 +817,4 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rate-c[aria-pressed="true"] { background: var(--good-bg); color: var(--good); border-color: var(--good); }
 .rate-t { width: 100%; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font: inherit; font-size: .95rem; background: var(--bg); color: var(--text); resize: vertical; }
 .rate[hidden] { display: none; }
+.rc-key { color: var(--text); font-weight: 700; }

@@ -1,0 +1,141 @@
+"""Joining ideas (teacher, 2 November). Scope from test-english.com (A1 and, but, or, so, because; A2 however,
+although, because of, time connectors; B1 and B1+ clauses of contrast, purpose and reason), grammar checked against
+Murphy, English Grammar in Use, Units 64 and 113. Our own sentences; settings travel, work, hobbies, lifestyle,
+learning, relationships, technology. Where two words fit the meaning, the context leaves only one sensible answer, or
+both are accepted."""
+from lib import *
+
+def ex(en, lv): return (en, lv)
+
+# ── And, but, or, so, because (A2.1, A2.2) ──
+B_ALL = ex("*and* = similar information, *but* = contrast, *or* = choice, *so* = result, *because* = reason.",
+           "*and* = līdzīga informācija, *but* = pretstats, *or* = izvēle, *so* = rezultāts, *because* = iemesls.")
+B_BUT = ex("Different, contrasting information: *but*.", "Pretēja informācija: *but*.")
+B_OR = ex("A choice between two possibilities: *or*.", "Izvēle starp divām iespējām: *or*.")
+B_SO = ex("The second part is the result of the first: *so*.", "Otrā daļa ir pirmās rezultāts: *so*.")
+B_BEC = ex("The second part gives the reason: *because*.", "Otrā daļa ir iemesls: *because*.")
+B_AND = ex("One more similar idea: *and*.", "Vēl viena līdzīga doma: *and*.")
+B_NEG = ex("In a negative sentence we join with *or*, not *and*: *I don't eat meat or fish.*",
+           "Noliegumā savieno ar *or*, nevis *and*: *I don't eat meat or fish.* Tulkojot burtiski \"un\", iznāk *and*.")
+B_SAME = ex("Join the same kind of words: *-ing and -ing*, *to … or to …*.", "Savieno vienādas formas: *-ing and -ing*, *to … or to …*.")
+B_COMMA = ex("*Because* at the start of a sentence: a comma after that part.", "*Because* teikuma sākumā: aiz šīs daļas liek komatu.")
+I_B = "Complete with *and*, *but*, *or*, *so* or *because*: "
+T = Topic("And, but, or, so, because", mcq_b=2, text_b=3, mcq=B_ALL, gap=B_ALL, text=B_ALL, order=B_ALL, match=B_ALL)
+T.mcq("A2.1", "Choose the correct option: The flat is small, ___ it's very cheap.", "but", ["because", "or"], B_BUT)
+T.mcq("A2.1", "Choose the correct option: Do you want to take the train ___ the bus?", "or", ["but", "so"], B_OR)
+T.mcq("A2.1", "Choose the correct option: It started to rain, ___ we went back to the hotel.", "so", ["because", "or"], B_SO)
+T.mcq("A2.1", "Choose the correct option: We went back to the hotel ___ it started to rain.", "because", ["so", "or"], B_BEC)
+T.mcq("A2.1", "Choose the correct option: My sister plays the guitar, ___ my brother plays the drums.", "and", ["or", "so"], B_AND)
+T.mcq("A2.1", "Choose the correct option: I don't drink coffee ___ tea.", "or", ["and", "so"], B_NEG)
+T.mcq("A2.1", "Choose the correct option: I was hungry, ___ I made a sandwich.", "so", ["because", "but"], B_SO)
+T.mcq("A2.1", "Choose the correct option: The test was easy, ___ I got a good mark.", "so", ["because", "or"], B_SO)
+T.mcq("A2.2", "Which sentence is correct?", "Because it was late, we took a taxi.", ["Because, it was late we took a taxi.", "Because it was late we took, a taxi."], B_COMMA)
+T.mcq("A2.2", "Which sentence is NOT correct?", "I like dancing and sing.", ["She got up and left.", "Would you like tea or coffee?", "It was late, so we went home."], B_SAME)
+T.mcq("A2.2", "Choose the correct option: I'd like to visit Rome ___ Paris next summer. I can't afford both.", "or", ["so", "because"], B_OR)
+T.gap("A2.1", I_B + "We missed the last bus, ___ we walked home.", "so", B_SO)
+T.gap("A2.1", I_B + "We walked home ___ we missed the last bus.", "because", B_BEC)
+T.gap("A2.1", I_B + "Is your new phone black ___ white?", "or", B_OR)
+T.gap("A2.1", I_B + "The film was long, ___ it was really good.", "but", B_BUT)
+T.gap("A2.1", I_B + "I'm learning English ___ I want to work in London.", "because", B_BEC)
+T.gap("A2.2", I_B + "My laptop is old ___ slow, so I want a new one.", "and", B_AND)
+T.gap("A2.2", I_B + "Shall we eat at home ___ go to a restaurant?", "or", B_OR)
+T.text("A2.2", "Correct the mistake: I don't eat meat and fish.", "I don't eat meat or fish.", B_NEG)
+T.text("A2.2", "Join with *because*: We stayed at home. It was raining.", ["We stayed at home because it was raining.", "Because it was raining, we stayed at home."], B_BEC)
+T.text("A2.2", "Join with *so*: The shop was closed. I went home.", ["The shop was closed, so I went home.", "The shop was closed so I went home."], B_SO)
+T.text("A2.2", "Correct the mistake: I like reading and to swim.", ["I like reading and swimming.", "I like to read and to swim.", "I like to read and swim."], B_SAME)
+T.order("A2.1", "it was cold so i closed the window", why=B_SO)
+T.order("A2.1", "we can walk or take a taxi", why=B_OR)
+T.order("A2.2", "she got up and left the room", why=ex("*and*: no need to say the subject again (= she got up and she left).", "*and*: teikuma priekšmetu neatkārto (= she got up and she left)."))
+T.order("A2.1", "i'm tired because i worked late", also=["because i worked late i'm tired"], why=B_BEC)
+T.match("A2.1", "Match each beginning with its ending.", [("The museum was closed,", "so we went to a café."), ("I'm saving money", "because I want a new bike."),
+                                                     ("You can pay by card", "or in cash."), ("He's very rich,", "but he isn't happy.")], B_ALL)
+
+# ── However, although, because of, then (A2.2, B1.1) ──
+L_HOW = ex("*However* starts a new sentence and has a comma after it.", "*However* sāk jaunu teikumu, aiz tā liek komatu.")
+L_ALT = ex("*although* + subject + verb, no comma after *although*.", "*although* + teik. priekšmets + darbības vārds, aiz *although* komata nav.")
+L_OF = ex("*because of* + noun; *because* + subject + verb.", "*because of* + lietvārds; *because* + teik. priekšmets + darbības vārds.")
+L_THEN = ex("One action after another: *then* or *after that*, not *after*.", "Viena darbība pēc otras: *then* vai *after that*, nevis *after*. Tulkojot burtiski \"pēc tam\", iznāk *after*.")
+L_WHILE = ex("Two actions at the same time: *while* + subject + verb.", "Divas darbības vienlaikus: *while* + teik. priekšmets + darbības vārds.")
+L_FUT = ex("After *when, as soon as, before, after* we use the present simple for the future, not *will*.",
+           "Pēc *when, as soon as, before, after* par nākotni lieto Present Simple, nevis *will*. Tulkojot burtiski \"kad atnākšu\", iznāk *will*.")
+L_ING = ex("*before / after* + noun, -ing, or subject + verb.", "*before / after* + lietvārds, -ing vai teik. priekšmets + darbības vārds.")
+L_ALL = ex("*however* = a new sentence with a comma; *although* + clause; *because of* + noun; *then* = next.",
+           "*however* = jauns teikums ar komatu; *although* + teikums; *because of* + lietvārds; *then* = nākamais.")
+I_1 = "Complete with one word: "
+T = Topic("However, although, because of, then", mcq_b=2, text_b=3, mcq=L_ALL, gap=L_ALL, text=L_ALL, order=L_ALL, match=L_ALL)
+T.mcq("A2.2", "Choose the correct option: The hotel was old. ___, the staff were really friendly.", "However", ["Although", "Because"], L_HOW)
+T.mcq("A2.2", "Choose the correct option: ___ it was raining, we went for a walk.", "Although", ["However", "Because of"], L_ALT)
+T.mcq("A2.2", "Choose the correct option: The flight was late ___ the snow.", "because of", ["because", "although"], L_OF)
+T.mcq("A2.2", "Choose the correct option: The flight was late ___ it was snowing.", "because", ["because of", "however"], L_OF)
+T.mcq("A2.2", "Choose the correct option: I had a shower. ___, I made breakfast.", "Then", ["After", "While"], L_THEN)
+T.mcq("A2.2", "Choose the correct option: I listen to podcasts ___ I'm cooking.", "while", ["then", "after that"], L_WHILE)
+T.mcq("A2.2", "Choose the correct option: I'll call you as soon as I ___ home.", "get", ["will get", "got"], L_FUT)
+T.mcq("A2.2", "Which sentence is correct?", "Although it was late, we stayed.", ["Although, it was late, we stayed.", "However it was late, we stayed."], L_ALT)
+T.mcq("A2.2", "Choose the correct option: We arrived late ___ the traffic.", "because of", ["because", "so"], L_OF)
+T.mcq("A2.2", "Choose the correct option: The phone was cheap. ___, it broke after a week.", "However", ["Because", "Although"], L_HOW)
+T.mcq("B1.1", "Which sentence is NOT correct?", "We cancelled the trip because of it was raining.", ["I wash the dishes before I go to bed.", "The train was late. However, we arrived on time.", "After lunch, we went to the beach."], L_OF)
+T.mcq("B1.1", "Choose the correct option: Before ___ to bed, I always read for a while.", "going", ["go", "to go"], L_ING)
+T.mcq("B1.1", "Choose the correct option: I always check my email before ___ work.", "starting", ["start", "to start"], L_ING)
+T.gap("A2.2", I_1 + "I was very tired. ___, I finished the report.", "However", L_HOW)
+T.gap("A2.2", I_1 + "The match was cancelled because ___ the storm.", "of", L_OF)
+T.gap("A2.2", I_1 + "My phone rang ___ I was driving.", "while | when", L_WHILE)
+T.gap("A2.2", "Use the correct form: I'll text you when I ___ at the station. (arrive)", "arrive", L_FUT)
+T.gap("A2.2", I_1 + "First we checked in. ___ we went to the beach.", "Then", L_THEN)
+T.gap("B1.1", I_1 + "___ she studied hard, she failed the exam.", "Although | Though", L_ALT)
+T.text("A2.2", "Join with *although*: He was ill. He went to work.", ["Although he was ill, he went to work.", "He went to work although he was ill.", "He went to work, although he was ill."], L_ALT)
+T.text("A2.2", "Join with *however*: I'd love a dog. My flat is too small.", ["I'd love a dog. However, my flat is too small.", "I'd love a dog; however, my flat is too small.", "I would love a dog. However, my flat is too small."], L_HOW)
+T.text("A2.2", "Correct the mistake: When I will finish work, I'll call you.", ["When I finish work, I'll call you.", "When I finish work, I will call you."], L_FUT)
+T.text("A2.2", "Correct the mistake: We stayed at home because the rain.", "We stayed at home because of the rain.", L_OF)
+T.text("B1.1", "Correct the mistake: I had dinner. After, I watched a film.", ["I had dinner. Then I watched a film.", "I had dinner. After that, I watched a film.", "I had dinner. Then, I watched a film.", "I had dinner. After that I watched a film."], L_THEN)
+T.order("A2.2", "although it was expensive we bought it", also=["we bought it although it was expensive"], why=L_ALT)
+T.order("A2.2", "the game was cancelled because of the rain", why=L_OF)
+T.order("B1.1", "she reads the news while she has breakfast", also=["while she has breakfast she reads the news"], why=L_WHILE)
+T.match("A2.2", "Match each beginning with its ending.", [("The plane was late", "because of the fog."), ("Although the hotel was cheap,", "it was very clean."),
+                                                     ("I'll send you the photos", "as soon as I get home."), ("We had lunch.", "Then we visited the castle.")], L_ALL)
+
+# ── Contrast, purpose and reason (B1.1, B1.2, B2.1 = B1+) ──
+C_DES = ex("*despite / in spite of* + noun or -ing; *although / even though* + subject + verb.",
+           "*despite / in spite of* + lietvārds vai -ing; *although / even though* + teik. priekšmets + darbības vārds. Tulkojot burtiski \"neskatoties uz to, ka\", iznāk *despite* + teikums.")
+C_TO = ex("Purpose with a verb: *to* + verb, not *for* + verb.", "Nolūks ar darbības vārdu: *to* + darbības vārds, nevis *for*. Tulkojot burtiski \"priekš tam, lai\", iznāk *for*.")
+C_THAT = ex("*so that* + subject + *can / could / would*.", "*so that* + teik. priekšmets + *can / could / would*.")
+C_FOR = ex("*for* + noun: *for a swim, for a coffee*.", "*for* + lietvārds: *for a swim, for a coffee*.")
+C_NOT = ex("The negative: *in order not to*, *so as not to* + verb.", "Noliegums: *in order not to*, *so as not to* + darbības vārds.")
+C_DUE = ex("*due to / because of* + noun; *as / since / because* + subject + verb.", "*due to / because of* + lietvārds; *as / since / because* + teik. priekšmets + darbības vārds.")
+C_OF = ex("*despite* without *of*; *in spite of* with *of*.", "*despite* bez *of*; *in spite of* ar *of*.")
+C_ALL = ex("Contrast: *although* + clause, *despite* + noun / -ing. Purpose: *to*, *so that*, *for* + noun. Reason: *as, since, due to* + noun.",
+           "Pretstats: *although* + teikums, *despite* + lietvārds / -ing. Nolūks: *to*, *so that*, *for* + lietvārds. Iemesls: *as, since, due to* + lietvārds.")
+T = Topic("Contrast, purpose and reason", mcq_b=2, text_b=3, mcq=C_ALL, gap=C_ALL, text=C_ALL, order=C_ALL, match=C_ALL)
+T.mcq("B1.1", "Choose the correct option: ___ the rain, we went to the concert.", "Despite", ["Although", "Even though"], C_DES)
+T.mcq("B1.1", "Choose the correct option: ___ it was raining, we went to the concert.", "Although", ["Despite", "In spite of"], C_DES)
+T.mcq("B1.1", "Choose the correct option: I went to the shop ___ some milk.", "to buy", ["for buy", "for buying"], C_TO)
+T.mcq("B1.1", "Choose the correct option: We left early ___ we could get a good seat.", "so that", ["in order to", "for"], C_THAT)
+T.mcq("B1.1", "Choose the correct option: She went to the pool ___ a swim.", "for", ["to", "so that"], C_FOR)
+T.mcq("B1.1", "Choose the correct option: We bought the tickets online ___ save money.", "to", ["for", "so that"], C_TO)
+T.mcq("B1.2", "Choose the correct option: He left home early in order ___ late.", "not to be", ["not being", "for not to be"], C_NOT)
+T.mcq("B1.2", "Choose the correct option: The event was cancelled ___ a lack of interest.", "due to", ["since", "as"], C_DUE)
+T.mcq("B1.2", "Choose the correct option: ___ the roads were icy, the school closed early.", "As", ["Due to", "Because of"], C_DUE)
+T.mcq("B1.2", "Choose the correct option: We enjoyed the trip in spite of ___ lost twice.", "getting", ["we got", "get"], C_DES)
+T.mcq("B1.2", "Choose the correct option: I'll write the address down ___ I don't forget it.", "so that", ["in order to", "for"], C_THAT)
+T.mcq("B1.2", "Which sentence is NOT correct?", "Despite it was late, they kept working.", ["Even though it was late, they kept working.", "In spite of the noise, I slept well.", "She saved money so that she could travel."], C_DES)
+T.mcq("B2.1", "Which sentence is correct?", "We went out despite the fact that it was raining.", ["We went out despite of the fact that it was raining.", "We went out in spite the fact that it was raining."], C_OF)
+T.mcq("B2.1", "Choose the correct option: They walked quietly so as ___ the baby.", "not to wake", ["to not waking", "not waking"], C_NOT)
+T.gap("B1.1", I_1 + "I'm learning Spanish ___ that I can talk to my colleagues in Madrid.", "so", C_THAT)
+T.gap("B1.1", I_1 + "In spite ___ the traffic, we arrived on time.", "of", C_OF)
+T.gap("B1.1", I_1 + "We stayed at home ___ we were tired.", "because | as | since", C_DUE)
+T.gap("B1.2", I_1 + "The flight was delayed due ___ bad weather.", "to", C_DUE)
+T.gap("B1.2", I_1 + "___ though she earns a lot, she never buys anything new.", "Even", C_DES)
+T.gap("B2.1", I_1 + "He wore a hat so ___ not to get sunburnt.", "as", C_NOT)
+T.text("B1.1", "Rewrite with *despite*: Although it was cold, we swam in the sea.",
+       ["Despite the cold, we swam in the sea.", "We swam in the sea despite the cold.", "Despite it being cold, we swam in the sea.",
+        "Despite the fact that it was cold, we swam in the sea.", "We swam in the sea despite the fact that it was cold."], C_DES)
+T.text("B1.1", "Correct the mistake: I went to the bank for get some money.", ["I went to the bank to get some money.", "I went to the bank in order to get some money."], C_TO)
+T.text("B1.2", "Join with *so that*: I wrote it down. I wouldn't forget it.", ["I wrote it down so that I wouldn't forget it.", "I wrote it down so I wouldn't forget it."], C_THAT)
+T.text("B1.2", "Rewrite with *because of*: We couldn't land because the fog was thick.", ["We couldn't land because of the thick fog.", "We couldn't land because of the fog."], C_DUE)
+T.text("B2.1", "Correct the mistake: Despite of the rain, the match went ahead.", ["Despite the rain, the match went ahead.", "In spite of the rain, the match went ahead."], C_OF)
+T.order("B1.1", "she saved money so that she could travel", why=C_THAT)
+T.order("B1.2", "despite feeling ill he went to work", also=["he went to work despite feeling ill"], why=C_DES)
+T.order("B1.1", "we left early in order to avoid the traffic", also=["in order to avoid the traffic we left early"], why=C_TO)
+T.match("B1.1", "Match each beginning with its ending.", [("Even though I set an alarm,", "I overslept."), ("She took a taxi", "so that she wouldn't be late."),
+                                                     ("The concert was cancelled", "due to the storm."), ("As it was a sunny day,", "we had lunch in the garden.")], C_ALL)
+
+save("conjunctions-1.csv")

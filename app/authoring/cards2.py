@@ -123,6 +123,8 @@ import cards2_e  # noqa: E402   (B1 batch 1)
 CARDS2.update(cards2_e.CARDS)
 import cards2_f  # noqa: E402   (comparing past tenses)
 CARDS2.update(cards2_f.CARDS)
+import cards2_g  # noqa: E402   (joining ideas: conjunctions and clauses)
+CARDS2.update(cards2_g.CARDS)
 
 # The form to learn is green in every example (teacher, 28 October): in the italic parts of table cells, notes and
 # Watch out, these words get [[ ]]. Parts after "not" / "nevis" (the wrong version) stay as they are.

@@ -8262,6 +8262,616 @@
      "*She plays [[the]] piano. We went to [[the]] cinema.*"
     ]
    }
+  },
+  {
+   "id": "conj_basic",
+   "label": "And, but, or, so, because",
+   "area": "clauses",
+   "levels": [
+    "A2.1",
+    "A2.2"
+   ],
+   "rule": {
+    "form": [
+     "*and* = similar information, *but* = contrast, *or* = choice, *so* = result, *because* = reason."
+    ],
+    "use": [
+     "*The shop was closed, so I went home. I went home because the shop was closed.*"
+    ],
+    "signals": "*and, but, or, so, because*",
+    "example": "*It was late, so we left.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "When",
+       "Example"
+      ],
+      "rows": [
+       [
+        "and",
+        "**similar** information, one more idea",
+        "*My sister lives in Riga, [[and]] my brother lives in Oslo.*"
+       ],
+       [
+        "but",
+        "**different**, contrasting information",
+        "*The hotel was nice, [[but]] the food was terrible.*"
+       ],
+       [
+        "or",
+        "a **choice** between possibilities",
+        "*Shall we take a taxi [[or]] walk?*"
+       ],
+       [
+        "so",
+        "the **result**: the second part follows from the first",
+        "*The shop was closed, [[so]] I went home.*"
+       ],
+       [
+        "because",
+        "the **reason**",
+        "*I went home [[because]] the shop was closed.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I went home [[so]] the shop was closed.",
+       "I went home [[because]] the shop was closed."
+      ],
+      [
+       "I don't eat meat [[and]] fish.",
+       "I don't eat meat [[or]] fish."
+      ],
+      [
+       "I like cooking and [[read]].",
+       "I like cooking and [[reading]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "No need to say the subject again",
+       "ex": [
+        "She got up [[and]] left. (= She got up and she left.)"
+       ]
+      },
+      {
+       "t": "Join the same kind of words",
+       "ex": [
+        "I like cook[[ing]] [[and]] read[[ing]].",
+        "Do you want [[to]] walk [[or to]] take the bus?"
+       ]
+      },
+      {
+       "t": "A comma before so and but, not before because",
+       "ex": [
+        "It was late, [[so]] we left.",
+        "We left [[because]] it was late."
+       ]
+      }
+     ],
+     "watch": [
+      "*Because* at the start: a comma after that part: *[[Because]] it was late, we left.*"
+     ]
+    },
+    "watch": [
+     "*Because* at the start: a comma after that part: *[[Because]] it was late, we left.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*and* = līdzīga informācija, *but = pretstats, or* = izvēle, *so* = rezultāts, *because* = iemesls."
+    ],
+    "use": [
+     "*It was late, so we left.*"
+    ],
+    "signals": "*and, but, or, so, because*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Kad",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "and",
+        "**līdzīga** informācija, vēl viena doma",
+        "*My sister lives in Riga, [[and]] my brother lives in Oslo.*"
+       ],
+       [
+        "but",
+        "**pretēja**, atšķirīga informācija",
+        "*The hotel was nice, [[but]] the food was terrible.*"
+       ],
+       [
+        "or",
+        "**izvēle** starp iespējām",
+        "*Shall we take a taxi [[or]] walk?*"
+       ],
+       [
+        "so",
+        "**rezultāts**: otrā daļa izriet no pirmās",
+        "*The shop was closed, [[so]] I went home.*"
+       ],
+       [
+        "because",
+        "**iemesls**",
+        "*I went home [[because]] the shop was closed.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "I went home [[so]] the shop was closed.",
+       "I went home [[because]] the shop was closed."
+      ],
+      [
+       "I don't eat meat [[and]] fish.",
+       "I don't eat meat [[or]] fish.",
+       "Tulkojot burtiski \"un\", iznāk *and*. Noliegumā angliski saka *or*."
+      ],
+      [
+       "I like cooking and [[read]].",
+       "I like cooking and [[reading]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Teikuma priekšmetu neatkārto",
+       "ex": [
+        "She got up [[and]] left. (= She got up and she left.)"
+       ]
+      },
+      {
+       "t": "Savieno vienādas formas",
+       "ex": [
+        "I like cook[[ing]] [[and]] read[[ing]].",
+        "Do you want [[to]] walk [[or to]] take the bus?"
+       ]
+      },
+      {
+       "t": "Komats pirms so un but, ne pirms because",
+       "ex": [
+        "It was late, [[so]] we left.",
+        "We left [[because]] it was late."
+       ]
+      }
+     ],
+     "watch": [
+      "*Because* teikuma sākumā: aiz šīs daļas liek komatu: *[[Because]] it was late, we left.* Tulkojot burtiski \"jo\", komatu liek arī pirms *because*, bet angliski tur komata nav."
+     ]
+    },
+    "watch": [
+     "*Because* teikuma sākumā: aiz šīs daļas liek komatu: *[[Because]] it was late, we left.* Tulkojot burtiski \"jo\", komatu liek arī pirms *because*, bet angliski tur komata nav."
+    ]
+   }
+  },
+  {
+   "id": "conj_linkers",
+   "label": "However, although, because of, then",
+   "area": "clauses",
+   "levels": [
+    "A2.2",
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "*However,* starts a new sentence; *although* + subject + verb; *because of* + noun; *then* for the next action."
+    ],
+    "use": [
+     "*Although it was raining, we went out.*"
+    ],
+    "signals": "*however, although, because of, then, while, as soon as*",
+    "example": "*The flight was late because of the snow.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "however",
+        "**contrast**: (.) **However,** + a new sentence",
+        "*The hotel was old. [[However]], the staff were lovely.*"
+       ],
+       [
+        "although",
+        "**contrast**: although + subject + verb, **no comma after it**",
+        "*[[Although]] it was raining, we went out.*"
+       ],
+       [
+        "because",
+        "**reason**: because + subject + verb",
+        "*The flight was late [[because]] it was snowing.*"
+       ],
+       [
+        "because of",
+        "**reason**: because of + **noun**",
+        "*The flight was late [[because of]] the snow.*"
+       ],
+       [
+        "before / after",
+        "+ noun / -ing / subject + verb",
+        "*[[before]] work* ;; *[[before]] going* ;; *[[before]] I go*"
+       ],
+       [
+        "then / after that",
+        "one action **after another**",
+        "*I had a shower. [[Then]] I made breakfast.*"
+       ],
+       [
+        "while",
+        "two actions **at the same time**",
+        "*I read the news [[while]] I was waiting.*"
+       ],
+       [
+        "when / as soon as",
+        "+ **present simple** for the future",
+        "*[[As soon as]] I get home, I'll call you.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "The flight was late [[because]] the snow.",
+       "The flight was late [[because of]] the snow."
+      ],
+      [
+       "I had a shower. [[After]], I made breakfast.",
+       "I had a shower. [[Then]] I made breakfast."
+      ],
+      [
+       "When I [[will get]] home, I'll call you.",
+       "When I [[get]] home, I'll call you."
+      ],
+      [
+       "[[Although,]] it was late, we stayed.",
+       "[[Although]] it was late, we stayed."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "However starts a new sentence",
+       "ex": [
+        "I'd love a dog. [[However]], my flat is too small."
+       ]
+      },
+      {
+       "t": "A comma when the sentence starts with before, after, while, when, although",
+       "ex": [
+        "[[Before]] I go to bed, I read.",
+        "I read [[before]] I go to bed."
+       ]
+      }
+     ],
+     "watch": [
+      "*As soon as* = immediately when: *I'll text you [[as soon as]] I land.*"
+     ]
+    },
+    "watch": [
+     "*As soon as* = immediately when: *I'll text you [[as soon as]] I land.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*However*, sāk *jaunu* teikumu; *although* + teikums; *because of* + lietvārds; *then* nākamajai darbībai."
+    ],
+    "use": [
+     "*Although it was raining, we went out.*"
+    ],
+    "signals": "*however, although, because of, then, while*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "however",
+        "**pretstats**: (.) **However,** + jauns teikums",
+        "*The hotel was old. [[However]], the staff were lovely.*"
+       ],
+       [
+        "although",
+        "**pretstats**: although + teik. priekšmets + darbības vārds, **bez komata aiz tā**",
+        "*[[Although]] it was raining, we went out.*"
+       ],
+       [
+        "because",
+        "**iemesls**: because + teik. priekšmets + darbības vārds",
+        "*The flight was late [[because]] it was snowing.*"
+       ],
+       [
+        "because of",
+        "**iemesls**: because of + **lietvārds**",
+        "*The flight was late [[because of]] the snow.*"
+       ],
+       [
+        "before / after",
+        "+ lietvārds / -ing / teik. priekšmets + darbības vārds",
+        "*[[before]] work* ;; *[[before]] going* ;; *[[before]] I go*"
+       ],
+       [
+        "then / after that",
+        "viena darbība **pēc otras**",
+        "*I had a shower. [[Then]] I made breakfast.*"
+       ],
+       [
+        "while",
+        "divas darbības **vienlaikus**",
+        "*I read the news [[while]] I was waiting.*"
+       ],
+       [
+        "when / as soon as",
+        "+ **Present Simple** par nākotni",
+        "*[[As soon as]] I get home, I'll call you.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "The flight was late [[because]] the snow.",
+       "The flight was late [[because of]] the snow."
+      ],
+      [
+       "I had a shower. [[After]], I made breakfast.",
+       "I had a shower. [[Then]] I made breakfast.",
+       "Tulkojot burtiski \"pēc tam\", iznāk *after*. Secīgām darbībām saka *then* vai *after that*."
+      ],
+      [
+       "When I [[will get]] home, I'll call you.",
+       "When I [[get]] home, I'll call you.",
+       "Tulkojot burtiski \"kad atnākšu\", iznāk *will*. Pēc *when* angliski lieto tagadni."
+      ],
+      [
+       "[[Although,]] it was late, we stayed.",
+       "[[Although]] it was late, we stayed."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "However sāk jaunu teikumu",
+       "ex": [
+        "I'd love a dog. [[However]], my flat is too small."
+       ]
+      },
+      {
+       "t": "Komats, ja teikums sākas ar before, after, while, when, although",
+       "ex": [
+        "[[Before]] I go to bed, I read.",
+        "I read [[before]] I go to bed."
+       ]
+      }
+     ],
+     "watch": [
+      "*As soon as* = tūlīt, kad: *I'll text you [[as soon as]] I land.*"
+     ]
+    },
+    "watch": [
+     "*As soon as* = tūlīt, kad: *I'll text you [[as soon as]] I land.*"
+    ]
+   }
+  },
+  {
+   "id": "conj_clauses",
+   "label": "Contrast, purpose and reason (although, despite, so that)",
+   "area": "clauses",
+   "levels": [
+    "B1.1",
+    "B1.2",
+    "B2.1"
+   ],
+   "rule": {
+    "form": [
+     "Contrast: *although* + clause, *despite* + noun or -ing. Purpose: *to*, *so that* + could / would, *for* + noun. Reason: *as, since*, *due to* + noun."
+    ],
+    "use": [
+     "*We went out despite the rain.*"
+    ],
+    "signals": "*although, even though, despite, in spite of, so that, in order to, due to*",
+    "example": "*I wrote it down so that I wouldn't forget it.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Contrast",
+        "**although / even though** + subject + verb",
+        "*[[Even though]] we played well, we lost.*"
+       ],
+       [
+        "",
+        "**despite / in spite of** + **noun** or **-ing**",
+        "*We went out [[despite]] the rain.* ;; *They were late [[in spite of]] leaving early.*"
+       ],
+       [
+        "",
+        "despite / in spite of + **the fact that** + subject + verb",
+        "*We went out [[despite the fact that]] it was raining.*"
+       ],
+       [
+        "Purpose",
+        "**to** + verb (the most common)",
+        "*She works hard [[to]] pass the test.*"
+       ],
+       [
+        "",
+        "**in order to / so as to** + verb (formal); **not**: in order not to, so as not to",
+        "*He left early [[in order not to]] be late.*"
+       ],
+       [
+        "",
+        "**so that** + subject + **can / could / would**",
+        "*We left early [[so that]] we [[could]] park near the centre.*"
+       ],
+       [
+        "",
+        "**for** + **noun**",
+        "*We went to the café [[for]] a coffee.*"
+       ],
+       [
+        "Reason",
+        "**because / as / since** + subject + verb",
+        "*[[As]] the roads were icy, the school closed.*"
+       ],
+       [
+        "",
+        "**because of / due to** + **noun** (due to is formal)",
+        "*The event was cancelled [[due to]] a lack of interest.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "[[Despite]] it was raining, we went out.",
+       "[[Although]] it was raining, we went out."
+      ],
+      [
+       "I went to the bank [[for get]] some money.",
+       "I went to the bank [[to get]] some money."
+      ],
+      [
+       "[[Despite of]] the rain, the match went ahead.",
+       "[[Despite]] the rain, the match went ahead."
+      ],
+      [
+       "He was late [[because]] the traffic.",
+       "He was late [[because of]] the traffic."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Even though is stronger than although",
+       "ex": [
+        "[[Even though]] I set three alarms, I overslept."
+       ]
+      },
+      {
+       "t": "So that: when the subject changes, or with can / could / would",
+       "ex": [
+        "I wrote it down [[so that]] I [[wouldn't]] forget it.",
+        "Speak slowly [[so that]] everyone [[can]] understand."
+       ]
+      }
+     ],
+     "watch": [
+      "*despite* without *of*, *in spite of* with *of*: *[[despite]] the rain = [[in spite of]] the rain*."
+     ]
+    },
+    "watch": [
+     "*despite* without *of*, *in spite of* with *of*: *[[despite]] the rain = [[in spite of]] the rain*."
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*Pretstats*: *although* + teikums, *despite* + lietvārds vai *-ing*. Nolūks: *to, so that + could / would, for* + lietvārds. Iemesls: *as, since, due to* + lietvārds."
+    ],
+    "use": [
+     "*We went out despite the rain.*"
+    ],
+    "signals": "*although, despite, so that, in order to, due to*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Pretstats",
+        "**although / even though** + teik. priekšmets + darbības vārds",
+        "*[[Even though]] we played well, we lost.*"
+       ],
+       [
+        "",
+        "**despite / in spite of** + **lietvārds** vai **-ing**",
+        "*We went out [[despite]] the rain.* ;; *They were late [[in spite of]] leaving early.*"
+       ],
+       [
+        "",
+        "despite / in spite of + **the fact that** + teik. priekšmets + darbības vārds",
+        "*We went out [[despite the fact that]] it was raining.*"
+       ],
+       [
+        "Nolūks",
+        "**to** + darbības vārds (visbiežāk)",
+        "*She works hard [[to]] pass the test.*"
+       ],
+       [
+        "",
+        "**in order to / so as to** + darbības vārds (formāli); **noliegums**: in order not to, so as not to",
+        "*He left early [[in order not to]] be late.*"
+       ],
+       [
+        "",
+        "**so that** + teik. priekšmets + **can / could / would**",
+        "*We left early [[so that]] we [[could]] park near the centre.*"
+       ],
+       [
+        "",
+        "**for** + **lietvārds**",
+        "*We went to the café [[for]] a coffee.*"
+       ],
+       [
+        "Iemesls",
+        "**because / as / since** + teik. priekšmets + darbības vārds",
+        "*[[As]] the roads were icy, the school closed.*"
+       ],
+       [
+        "",
+        "**because of / due to** + **lietvārds** (due to ir formālāks)",
+        "*The event was cancelled [[due to]] a lack of interest.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "[[Despite]] it was raining, we went out.",
+       "[[Although]] it was raining, we went out.",
+       "Tulkojot burtiski \"neskatoties uz to, ka lija\", iznāk *despite* + teikums. Pēc *despite* liek lietvārdu vai *-ing*."
+      ],
+      [
+       "I went to the bank [[for get]] some money.",
+       "I went to the bank [[to get]] some money.",
+       "Tulkojot burtiski \"priekš tam, lai\", iznāk *for*. Nolūkam ar darbības vārdu angliski saka *to*."
+      ],
+      [
+       "[[Despite of]] the rain, the match went ahead.",
+       "[[Despite]] the rain, the match went ahead."
+      ],
+      [
+       "He was late [[because]] the traffic.",
+       "He was late [[because of]] the traffic."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Even though ir stiprāks par although",
+       "ex": [
+        "[[Even though]] I set three alarms, I overslept."
+       ]
+      },
+      {
+       "t": "So that: ja mainās teikuma priekšmets vai ar can / could / would",
+       "ex": [
+        "I wrote it down [[so that]] I [[wouldn't]] forget it.",
+        "Speak slowly [[so that]] everyone [[can]] understand."
+       ]
+      }
+     ],
+     "watch": [
+      "*despite* bez *of*, *in spite of* ar *of*: *[[despite]] the rain = [[in spite of]] the rain*."
+     ]
+    },
+    "watch": [
+     "*despite* bez *of*, *in spite of* ar *of*: *[[despite]] the rain = [[in spite of]] the rain*."
+    ]
+   }
   }
  ],
  "bloom": {
@@ -8536,6 +9146,9 @@
    "ARTICLE",
    "THE"
   ],
+  "conj_basic": [],
+  "conj_linkers": [],
+  "conj_clauses": [],
   "quantity": [
    "UNCOUNT"
   ],

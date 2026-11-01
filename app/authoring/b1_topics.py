@@ -576,3 +576,27 @@ LV_CARDS.update({
     "articles_b1": {"form": ["Bez artikula: vispārīgi, ēdienreizes, valodas, vietas to nolūkam, vairums valstu. the: konkrēts."],
                     "use": ["I like coffee. I like the coffee you made."], "signals": "in general, school, work, bed, the Alps, the poor"},
 })
+
+# ───────── joining ideas (teacher, 2 November; scope from test-english.com A1, A2, B1, B1+; Murphy Units 64, 113) ─────────
+SKILLS_NEW.extend([
+    ("conj_basic", "And, but, or, so, because", "clauses", ["A2.1", "A2.2"]),
+    ("conj_linkers", "However, although, because of, then", "clauses", ["A2.2", "B1.1"]),
+    ("conj_clauses", "Contrast, purpose and reason (although, despite, so that)", "clauses", ["B1.1", "B1.2", "B2.1"]),
+])
+ABBR_NEW.update({"conj_basic": "cj1", "conj_linkers": "cj2", "conj_clauses": "cj3"})
+CARDS.update({
+    "conj_basic": {"form": ["*and* = similar information, *but* = contrast, *or* = choice, *so* = result, *because* = reason."],
+                   "use": ["*The shop was closed, so I went home. I went home because the shop was closed.*"], "signals": "*and, but, or, so, because*",
+                   "example": "*It was late, so we left.*"},
+    "conj_linkers": {"form": ["*However,* starts a new sentence; *although* + subject + verb; *because of* + noun; *then* for the next action."],
+                     "use": ["*Although it was raining, we went out.*"], "signals": "*however, although, because of, then, while, as soon as*",
+                     "example": "*The flight was late because of the snow.*"},
+    "conj_clauses": {"form": ["Contrast: *although* + clause, *despite* + noun or -ing. Purpose: *to*, *so that* + could / would, *for* + noun. Reason: *as, since*, *due to* + noun."],
+                     "use": ["*We went out despite the rain.*"], "signals": "*although, even though, despite, in spite of, so that, in order to, due to*",
+                     "example": "*I wrote it down so that I wouldn't forget it.*"},
+})
+LV_CARDS.update({
+    "conj_basic": {"form": ["and = līdzīga informācija, but = pretstats, or = izvēle, so = rezultāts, because = iemesls."], "use": ["It was late, so we left."], "signals": "and, but, or, so, because"},
+    "conj_linkers": {"form": ["However, sāk jaunu teikumu; although + teikums; because of + lietvārds; then nākamajai darbībai."], "use": ["Although it was raining, we went out."], "signals": "however, although, because of, then, while"},
+    "conj_clauses": {"form": ["Pretstats: although + teikums, despite + lietvārds vai -ing. Nolūks: to, so that + could / would, for + lietvārds. Iemesls: as, since, due to + lietvārds."], "use": ["We went out despite the rain."], "signals": "although, despite, so that, in order to, due to"},
+})

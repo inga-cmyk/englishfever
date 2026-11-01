@@ -60,5 +60,10 @@ Defining and non-defining relative clauses · There and it as preparatory subjec
 Modifying comparatives · Compound adjectives · Inversion with negative adverbials · Noun + preposition ·
 Clauses of contrast, purpose, reason and result · Discourse markers · Participle clauses · Cleft sentences
 
-## B2+, C1
-(to come)
+## C1
+Advanced present simple and present continuous · Advanced past simple, past continuous and past perfect · The perfect tenses: forms and uses ·
+Advanced modals: will, would, should · Advanced modals: can / be able to, may / might · The subjunctive: present and past ·
+Subject-verb agreement: advanced rules · Prepositions: position and advanced patterns · Advanced participle clauses · Advanced word order
+
+## B2+
+(to come, if the teacher has the list)

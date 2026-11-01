@@ -118,8 +118,8 @@ final class Stats
         $c = json_decode((string) Db::kvGet('pulse'), true);
         $today = self::today();
         if (is_array($c) && $c['day'] === $today && time() - (int) $c['at'] < 60) return ['now' => (int) $c['now'], 'today' => (int) $c['today']];
-        $now = (int) Db::val("SELECT COUNT(DISTINCT a.user_id) FROM attempts a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND a.created_at > ?", [time() - 600]);
-        $day = (int) Db::val("SELECT COUNT(DISTINCT a.user_id) FROM activity a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND a.day = ? AND a.answers > 0", [$today]);
+        $now = (int) Db::val("SELECT COUNT(DISTINCT a.user_id) FROM attempts a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND u.is_test = 0 AND a.created_at > ?", [time() - 600]);
+        $day = (int) Db::val("SELECT COUNT(DISTINCT a.user_id) FROM activity a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND u.is_test = 0 AND a.day = ? AND a.answers > 0", [$today]);
         Db::kvSet('pulse', json_encode(['at' => time(), 'day' => $today, 'now' => $now, 'today' => $day]));
         return ['now' => $now, 'today' => $day];
     }
@@ -174,7 +174,7 @@ final class Stats
 
     public static function leaderboard(int $uid, string $period): array
     {
-        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.provider <> 'guest' AND u.board_hidden = 0" . Research::leaderboardClause();
+        $where = "u.show_on_board = 1 AND u.role = 'student' AND u.is_test = 0 AND u.provider <> 'guest' AND u.board_hidden = 0" . Research::leaderboardClause();
         $p = [];
         if ($period === 'week') {
             $where .= ' AND a.day >= ?';
@@ -260,7 +260,7 @@ final class Stats
 
     public static function teacherStudent(int $id, int $teacherId = 0): array
     {
-        $u = Db::one("SELECT id, provider, external_id, nickname, avatar, full_name, created_at, last_seen, show_on_board, board_hidden FROM users WHERE id = ? AND role = 'student'", [$id]);
+        $u = Db::one("SELECT id, provider, external_id, nickname, avatar, full_name, created_at, last_seen, show_on_board, board_hidden, is_test FROM users WHERE id = ? AND role = 'student'", [$id]);
         if (!$u) throw new ApiError('Student not found.', 404);
         $dash = self::dashboard($id);
         $days = [];
@@ -304,9 +304,10 @@ final class Stats
             }
         }
         $fh = fopen('php://temp', 'w+');
-        fputcsv($fh, ['time', 'nickname', 'name', 'account', 'skill', 'level', 'bloom', 'correct', 'answer', 'seconds', 'item'], ',', '"', '\\');
+        fputcsv($fh, ['time', 'nickname', 'name', 'account', 'skill', 'level', 'bloom', 'correct', 'answer', 'seconds', 'item', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version', 'test_account'], ',', '"', '\\');
         $users = [];
-        foreach (Db::all('SELECT id, nickname, full_name, provider FROM users') as $u) $users[$u['id']] = $u;
+        foreach (Db::all('SELECT id, nickname, full_name, provider, is_test FROM users') as $u) $users[$u['id']] = $u;
+        $src = array_column(Db::all('SELECT id, source FROM psessions'), 'source', 'id');
         foreach (Db::all('SELECT * FROM attempts ORDER BY id') as $a) {
             if ($only !== null && !isset($only[(int) $a['user_id']])) continue;
             $u = $users[$a['user_id']] ?? ['nickname' => '?', 'full_name' => '', 'provider' => '?'];
@@ -315,6 +316,7 @@ final class Stats
                 (new DateTime('@' . $a['created_at']))->setTimezone(self::tz())->format('Y-m-d H:i:s'),
                 $cell($u['nickname']), $cell($u['full_name']), $u['provider'] === 'guest' ? 'guest' : 'registered', $a['skill'], $a['level'], $a['bloom'], $a['correct'],
                 $cell($a['answer']), round($a['time_ms'] / 1000), $a['item_id'],
+                $a['exposure'] ?? '', $a['served_why'] ?? '', $src[$a['psession_id']] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? '', (int) ($u['is_test'] ?? 0),
             ], ',', '"', '\\');
         }
         rewind($fh);

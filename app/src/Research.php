@@ -119,7 +119,7 @@ final class Research
 
     private static function participants(): array
     {
-        return Db::all("SELECT * FROM users WHERE research = ? AND provider <> 'guest' AND role = 'student' ORDER BY id", [self::JOINED]);
+        return Db::all("SELECT * FROM users WHERE research = ? AND provider <> 'guest' AND role = 'student' AND is_test = 0 ORDER BY id", [self::JOINED]);
     }
 
     private static function dayOf(int $ts): string
@@ -258,13 +258,14 @@ final class Research
         foreach (self::participants() as $u) {
             $start = self::dayOf((int) $u['research_at']);
             $pid = self::pid((int) $u['id']);
-            $sql = 'SELECT a.item_id, a.skill, a.level, a.bloom, a.correct, a.time_ms, a.created_at, p.mode FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? AND a.created_at >= ? ORDER BY a.id';
+            $sql = 'SELECT a.item_id, a.skill, a.level, a.bloom, a.correct, a.time_ms, a.created_at, a.answer, a.exposure, a.served_why, a.app_ver, a.lang, a.fb_ms, p.mode, p.source FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? AND a.created_at >= ? ORDER BY a.id';
             foreach (Db::all($sql, [(int) $u['id'], (int) $u['research_at']]) as $a) {
                 $t = (new DateTime('@' . $a['created_at']))->setTimezone(Stats::tz());
-                $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $a['mode'] ?? '', $a['skill'], $area[$a['skill']] ?? '', $a['level'], (int) $a['bloom'], (int) $a['correct'], round($a['time_ms'] / 1000, 1), $a['item_id']];
+                $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $a['mode'] ?? '', $a['skill'], $area[$a['skill']] ?? '', $a['level'], (int) $a['bloom'], (int) $a['correct'], round($a['time_ms'] / 1000, 1), $a['item_id'],
+                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? ''];
             }
         }
-        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item'], $rows);
+        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version'], $rows);
     }
 
     /** What participants opened and pressed (Usage), and where each session was started; pseudonymised like the other files. */
@@ -292,14 +293,14 @@ final class Research
     {
         $now = (new DateTime('now', Stats::tz()))->format('Y-m-d H:i');
         $active = self::activeFactors() ? implode(', ', self::activeFactors()) : 'none';
-        $n = (int) Db::val("SELECT COUNT(1) FROM users WHERE research = ? AND provider <> 'guest' AND role = 'student'", [self::JOINED]);
+        $n = (int) Db::val("SELECT COUNT(1) FROM users WHERE research = ? AND provider <> 'guest' AND role = 'student' AND is_test = 0", [self::JOINED]);
         return <<<TXT
 English Fever practice app: research export
 Created: {$now} ({$n} participants now in the study)
 Conditions switched on in the app at the moment: {$active}
 
 WHO IS IN THE FILES
-Registered learners who chose "Yes, I take part" and have not left. Guests, teachers and everyone who said no or left are not included.
+Registered learners who chose "Yes, I take part" and have not left. Guests, teachers, test accounts and everyone who said no or left are not included.
 Only data from the moment of consent onwards is included. If someone leaves, they disappear from the next export.
 A learner who deletes their account disappears from the next export as well.
 
@@ -334,7 +335,15 @@ seconds, answers, xp for that day.
 
 answers.csv  (one row per answered task)
 mode         practice, placement or smart ("Surprise me").   skill, area, level, bloom: the task's topic, area, CEFR sub-level and thinking level (1-6).
-correct      1 or 0.   seconds   time to answer.   item   task id (for item analysis).
+correct      1 or 0.   seconds   time to answer.   item   task id (for item analysis; -r2, -r3 = a corrected version).
+skipped      1 = "I don't know" (counted as wrong in correct).
+             The columns below are recorded from 1 November 2026; older rows have them empty.
+exposure     1 = the first time this learner met this task, 2 = the second time ... (use exposure 1 for learning curves).
+served_why   new | again_after_wrong (the task came back after a mistake) | again_after_right (no new task was left) |
+             second_chance | bonus.
+source       where the session was started (as in events.csv).   lang   explanation language set then (en / lv).
+feedback_seconds  time from the feedback to Next on this task (reading the explanation); empty for the last task of a session.
+app_version  the app version then; content and rules change between versions (docs/CHANGELOG-practice-app.md).
 
 events.csv   (one row per logged action; from 28 October 2026)
 event        page, rule_card, lang, skip, quit, review, report, sound, mood, path_step, bonus, or session_start.

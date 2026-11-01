@@ -256,6 +256,13 @@ final class Db
         self::ensureColumn('users', 'board_hidden', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'avatar', "$str NULL");
         self::ensureColumn('users', 'lang', "$str NULL");
+        // research data (teacher, 1 November): what an answer can only be judged with, recorded at the time; never filled in afterwards
+        self::ensureColumn('attempts', 'exposure', "$int NULL");    // 1 = the first time this learner meets this task, 2 = the second ...
+        self::ensureColumn('attempts', 'served_why', "$str NULL");  // new | again_after_wrong | again_after_right | second_chance | bonus
+        self::ensureColumn('attempts', 'app_ver', "$str NULL");     // the app version (src/version.php) when the answer was given
+        self::ensureColumn('attempts', 'lang', "$str NULL");        // explanation language set for the learner then (en | lv)
+        self::ensureColumn('attempts', 'fb_ms', "$int NULL");       // time from the feedback to Next (reading the explanation), sent with the next answer
+        self::ensureColumn('users', 'is_test', "$int NOT NULL DEFAULT 0");   // the teacher's own and test accounts: left out of evidence, research and exports
         self::ensureColumn('users', 'mood', "$str NULL");   // a saying under the avatar, chosen from a fixed list (Auth::MOODS)
         self::ensureColumn('users', 'research', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'research_at', "$big NOT NULL DEFAULT 0");

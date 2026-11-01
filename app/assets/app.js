@@ -1095,7 +1095,8 @@
       submit.disabled = true; skipBtn.disabled = true;
       var ans = skip === true ? (it.kind === 'mcq' || it.kind === 'text' || it.kind === 'write' ? '' : []) : answerGetter();
       if (skip === true) track('skip', it.skill);
-      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, skip: skip === true, time_ms: Date.now() - taskStart }).then(function (r) {
+      var fbMs = state.fbMs || 0; state.fbMs = 0;
+      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, skip: skip === true, time_ms: Date.now() - taskStart, fb_ms: fbMs }).then(function (r) {
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
         lock(); showFeedback(r, ans); drawDots(); drawPrev();
@@ -1232,11 +1233,13 @@
       });
       if (wasOpen || openRuleNext) { var d = fb.querySelector('details.rule'); if (d) d.open = true; }
       openRuleNext = false;
-      if (first) nextBtn.focus();
+      if (first) { nextBtn.focus(); fbShownAt = Date.now(); }
     }
     var lastCheer = null;
+    var fbShownAt = 0;
 
     function next(r) {
+      if (fbShownAt) { state.fbMs = Date.now() - fbShownAt; fbShownAt = 0; }   // how long the feedback was read (research, teacher 1 November)
       if (r.done) { if (r.summary && state.sess) r.summary.pathStep = state.sess.pathStep; state.sess = null; state.lastSummary = r.summary; Sound.play((r.summary && r.summary.fixed) ? 'fixed' : 'done'); go('#/summary'); return; }
       state.sess = newSess(r.session, r.next, S.history);
       viewSession();
@@ -2040,6 +2043,7 @@
         u.provider === 'guest' ? null : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/moderate', { user_id: u.id, hide: !u.board_hidden }).then(again).catch(fail); } }, u.board_hidden ? 'Show on leaderboard' : 'Hide from leaderboard'),
         u.mine === 'course' ? h('span', { class: 'pill good' }, 'In your Tutor course')
           : h('button', { class: 'btn ghost small', onclick: function () { api('teacher/mine', { user_id: u.id, mine: u.mine !== 'added' }).then(again).catch(fail); } }, u.mine === 'added' ? 'Remove from my students' : 'Add to my students'),
+        h('button', { class: 'btn ghost small' + (u.is_test ? ' on' : ''), title: 'Test accounts are left out of Learning evidence, Usage and the research export', onclick: function () { api('teacher/test-account', { user_id: u.id, test: !u.is_test }).then(again).catch(fail); } }, u.is_test ? 'Test account ✓ (undo)' : 'Mark as test account'),
         h('button', { class: 'btn ghost small', onclick: function () { if (confirm('Replace this name with "Learner ####"?')) api('teacher/moderate', { user_id: u.id, reset_name: true }).then(again).catch(fail); } }, 'Reset name'));
       var maxMin = Math.max.apply(null, r.days.map(function (x) { return x.minutes; }).concat([5]));
       var days = h('div', { class: 'bars', style: 'height:100px', role: 'img', 'aria-label': 'Minutes per day, last 30 days' }, r.days.map(function (x, i) {

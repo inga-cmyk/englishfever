@@ -120,6 +120,14 @@ final class Engine
         return ['session' => self::pub($ses), 'item' => Content::publicItem($item, $ses['state']['seed'] + count($ses['state']['served']))];
     }
 
+    /** How long the learner read the feedback of the task before this one (from the feedback to Next), stored on that answer. */
+    public static function feedbackTime(int $uid, int $sid, int $ms): void
+    {
+        if ($ms <= 0) return;
+        $last = Db::one('SELECT id FROM attempts WHERE user_id = ? AND psession_id = ? ORDER BY id DESC LIMIT 1', [$uid, $sid]);
+        if ($last) Db::q('UPDATE attempts SET fb_ms = ? WHERE id = ? AND fb_ms IS NULL', [min(600000, $ms), $last['id']]);
+    }
+
     public static function answer(int $uid, int $sid, string $itemId, $answer, int $timeMs, bool $skip = false): array
     {
         $ses = self::load($uid, $sid);
@@ -161,6 +169,13 @@ final class Engine
         $errCodes = (!$ok && !empty($g['err'])) ? [$g['err']] : Content::errors($item);
         $before = $ses['mode'] === 'placement' ? null : Mistakes::scan($uid);
         $now = time();
+        // research fields: how often this learner has met the task, and why it was served (judged before this answer is stored)
+        $prev = Db::one('SELECT COUNT(1) AS c, (SELECT correct FROM attempts WHERE user_id = ? AND item_id = ? ORDER BY id DESC LIMIT 1) AS last FROM attempts WHERE user_id = ? AND item_id = ?', [$uid, $itemId, $uid, $itemId]);
+        $seen = (int) ($prev['c'] ?? 0);
+        $why = !empty($ses['bonus']) || (isset($st['bonus_from']) && count($st['served']) > $st['bonus_from']) ? 'bonus'
+            : (!empty($st['comeback']) ? 'second_chance' : ($seen === 0 ? 'new' : ((int) $prev['last'] === 1 ? 'again_after_right' : 'again_after_wrong')));
+        static $ver = null; $ver ??= (string) ((@include __DIR__ . '/version.php')['version'] ?? '');
+        $lang = (string) (Db::val('SELECT lang FROM users WHERE id = ?', [$uid]) ?? '');
         Db::insert('attempts', [
             'user_id' => $uid, 'psession_id' => $sid, 'item_id' => $itemId, 'skill' => $skill, 'level' => $item['level'],
             'bloom' => $item['bloom'], 'correct' => $ok ? 1 : 0, 'answer' => $skip ? '(skipped)' : mb_substr(is_array($answer) ? implode($item['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $answer)) : (string) $answer, 0, 500),
@@ -168,6 +183,7 @@ final class Engine
             'for_item' => !empty($st['comeback']) ? (function () use ($st) { $q = $st['queue'][count($st['served']) - 1] ?? null; return $q === null ? null : ($st['queue_extra'][$q] ?? $q); })() : null,
             'err' => $errCodes ? implode(',', $errCodes) : null,
             'note' => ($ok && !empty($g['notes'])) ? mb_substr(implode(' ', $g['notes']), 0, 300) : null,
+            'exposure' => $seen + 1, 'served_why' => $why, 'app_ver' => $ver ?: null, 'lang' => $lang === 'lv' ? 'lv' : 'en',
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
         if ($row) {

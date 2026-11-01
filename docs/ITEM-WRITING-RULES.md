@@ -13,6 +13,10 @@
 8. **Sentence length by layer**: A2 about 5-9 words, one clause, everyday words; B1 about 10-16 words, two clauses, wider vocabulary, no clue word. Negatives and questions are A2 as well.
 9. **New topic**: at least 25 questions per level before it goes live; existing topics aim for 50 per level.
 
+## Topics of the sentences (rule from Inga, 1 November)
+- New tasks follow the best existing tasks as models (same instruction style, ungrammatical wrong options, one sensible answer) and vary the setting: travel, work, hobbies, lifestyle, learning, relationships, technologies; current events only at B2 and C1.
+- Not the same setting in two tasks in a row of one topic and level; real, adult situations, no children's-book sentences.
+
 ## A situation, never grammar terms (rule from Inga, 29 October)
 - Learners do not know words like *vowel, consonant, present perfect, passive*. A task never asks for them (*Match each phrase with how its first word starts*, *Which sentence is passive?*). Terms belong on the rule card.
 - The sentence itself shows what to use, and a wrong answer is clear from the example (*He wears ___ uniform at work.* → *a*). Learners see the pattern from examples (*an apple, an hour*) or open the card.

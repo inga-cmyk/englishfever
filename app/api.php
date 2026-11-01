@@ -170,6 +170,7 @@ try {
             if ((int) Db::val('SELECT COUNT(1) FROM attempts WHERE user_id = ? AND created_at > ?', [$u['id'], time() - 86400]) >= $dayCap) {
                 throw new ApiError($u['provider'] === 'guest' ? 'You have done a lot of practice today as a guest. Create a free account to keep going.' : 'That is a lot for one day. Come back tomorrow.', 429);
             }
+            Engine::feedbackTime((int) $u['id'], (int) ($in['session_id'] ?? 0), (int) ($in['fb_ms'] ?? 0));   // reading time of the previous feedback (research)
             $res = Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0), !empty($in['skip']));
             Wp::afterResponse((int) $u['id'], !empty($res['done']));
             out($res);
@@ -268,6 +269,11 @@ try {
         case 'teacher/student':
             $t = Auth::requireTeacher();
             out(Stats::teacherStudent((int) ($_GET['id'] ?? 0), (int) $t['id']));
+
+        case 'teacher/test-account':   // the teacher's own or a test account: left out of evidence, research and usage numbers (teacher, 1 November)
+            Auth::requireTeacher();
+            Db::q("UPDATE users SET is_test = ? WHERE id = ? AND role = 'student'", [!empty($in['test']) ? 1 : 0, (int) ($in['user_id'] ?? 0)]);
+            out(['ok' => true]);
 
         case 'teacher/mine':
             $t = Auth::requireTeacher();

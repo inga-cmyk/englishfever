@@ -49,22 +49,22 @@ final class Usage
         $sources = [];
         foreach (Db::all("SELECT COALESCE(p.source, CASE WHEN p.mode = 'placement' THEN 'placement' WHEN p.state LIKE '%\"comeback\":true%' THEN 'second_chance' WHEN p.state LIKE '%\"smart\":true%' THEN 'surprise' ELSE 'unknown' END) AS src,
                                  COUNT(1) AS n, COUNT(DISTINCT p.user_id) AS people, SUM(p.n) AS answers
-                          FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND p.started_at >= ? GROUP BY src ORDER BY n DESC", [$since]) as $r) {
+                          FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND u.is_test = 0 AND p.started_at >= ? GROUP BY src ORDER BY n DESC", [$since]) as $r) {
             $sources[] = ['source' => $r['src'], 'sessions' => (int) $r['n'], 'people' => (int) $r['people'], 'answers' => (int) $r['answers']];
         }
         $events = [];
         foreach (Db::all("SELECT e.ev, e.detail, COUNT(1) AS n, COUNT(DISTINCT e.user_id) AS people FROM events e JOIN users u ON u.id = e.user_id
-                          WHERE u.role = 'student' AND e.created_at >= ? GROUP BY e.ev, e.detail ORDER BY n DESC LIMIT 200", [$since]) as $r) {
+                          WHERE u.role = 'student' AND u.is_test = 0 AND e.created_at >= ? GROUP BY e.ev, e.detail ORDER BY n DESC LIMIT 200", [$since]) as $r) {
             $events[] = ['ev' => $r['ev'], 'label' => self::EVENTS[$r['ev']] ?? $r['ev'], 'detail' => $r['detail'], 'count' => (int) $r['n'], 'people' => (int) $r['people']];
         }
         $people = [];
         foreach (Db::all("SELECT u.id, u.nickname, COALESCE(p.source, CASE WHEN p.mode = 'placement' THEN 'placement' WHEN p.state LIKE '%\"comeback\":true%' THEN 'second_chance' WHEN p.state LIKE '%\"smart\":true%' THEN 'surprise' ELSE 'unknown' END) AS src, COUNT(1) AS n
-                          FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND p.started_at >= ? GROUP BY u.id, u.nickname, src", [$since]) as $r) {
+                          FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND u.is_test = 0 AND p.started_at >= ? GROUP BY u.id, u.nickname, src", [$since]) as $r) {
             $id = (int) $r['id'];
             $people[$id] ??= ['id' => $id, 'nickname' => $r['nickname'], 'sources' => [], 'events' => 0];
             $people[$id]['sources'][$r['src']] = (int) $r['n'];
         }
-        foreach (Db::all("SELECT e.user_id, COUNT(1) AS n FROM events e JOIN users u ON u.id = e.user_id WHERE u.role = 'student' AND e.created_at >= ? GROUP BY e.user_id", [$since]) as $r) {
+        foreach (Db::all("SELECT e.user_id, COUNT(1) AS n FROM events e JOIN users u ON u.id = e.user_id WHERE u.role = 'student' AND u.is_test = 0 AND e.created_at >= ? GROUP BY e.user_id", [$since]) as $r) {
             if (isset($people[(int) $r['user_id']])) $people[(int) $r['user_id']]['events'] = (int) $r['n'];
         }
         usort($people, fn($a, $b) => array_sum($b['sources']) <=> array_sum($a['sources']));
@@ -87,15 +87,22 @@ final class Usage
     {
         $fh = fopen('php://temp', 'w+');
         fputcsv($fh, ['time', 'nickname', 'event', 'detail'], ',', '"', '\\');
-        foreach (Db::all("SELECT e.created_at, u.nickname, e.ev, e.detail FROM events e JOIN users u ON u.id = e.user_id WHERE u.role = 'student' ORDER BY e.id") as $r) {
+        foreach (Db::all("SELECT e.created_at, u.nickname, e.ev, e.detail FROM events e JOIN users u ON u.id = e.user_id WHERE u.role = 'student' AND u.is_test = 0 ORDER BY e.id") as $r) {
             $t = (new DateTime('@' . $r['created_at']))->setTimezone(Stats::tz())->format('Y-m-d H:i:s');
             fputcsv($fh, [$t, Stats::csvCell((string) $r['nickname']), $r['ev'], $r['detail'] ?? ''], ',', '"', '\\');
         }
         fputcsv($fh, [], ',', '"', '\\');
-        fputcsv($fh, ['session started', 'nickname', 'source', 'mode', 'answers'], ',', '"', '\\');
-        foreach (Db::all("SELECT p.started_at, u.nickname, p.source, p.mode, p.state, p.n FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' ORDER BY p.id") as $r) {
+        fputcsv($fh, ['session started', 'nickname', 'source', 'mode', 'answers', 'topics (answers)', 'levels'], ',', '"', '\\');
+        $mix = [];   // what each session actually asked: topic and level of every answer (teacher, 1 November)
+        foreach (Db::all('SELECT psession_id, skill, level, COUNT(1) AS n FROM attempts GROUP BY psession_id, skill, level') as $a) {
+            $mix[$a['psession_id']]['t'][$a['skill']] = ($mix[$a['psession_id']]['t'][$a['skill']] ?? 0) + (int) $a['n'];
+            $mix[$a['psession_id']]['l'][$a['level']] = true;
+        }
+        foreach (Db::all("SELECT p.id, p.started_at, u.nickname, p.source, p.mode, p.state, p.n FROM psessions p JOIN users u ON u.id = p.user_id WHERE u.role = 'student' AND u.is_test = 0 ORDER BY p.id") as $r) {
             $t = (new DateTime('@' . $r['started_at']))->setTimezone(Stats::tz())->format('Y-m-d H:i:s');
-            fputcsv($fh, [$t, Stats::csvCell((string) $r['nickname']), self::sourceOf($r), $r['mode'], (int) $r['n']], ',', '"', '\\');
+            $m = $mix[$r['id']] ?? ['t' => [], 'l' => []];
+            $tp = implode(' ', array_map(fn($k, $v) => "$k ($v)", array_keys($m['t']), $m['t'])); $lv = array_keys($m['l']); sort($lv);
+            fputcsv($fh, [$t, Stats::csvCell((string) $r['nickname']), self::sourceOf($r), $r['mode'], (int) $r['n'], $tp, implode(' ', $lv)], ',', '"', '\\');
         }
         rewind($fh);
         return (string) stream_get_contents($fh);

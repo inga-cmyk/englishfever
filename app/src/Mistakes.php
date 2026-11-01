@@ -195,7 +195,7 @@ final class Mistakes
             }
         }
         $life = ['learners' => 0, 'open' => 0, 'fixed' => 0, 'locked' => 0, 'reopened' => 0];
-        foreach (Db::all("SELECT DISTINCT a.user_id AS id FROM attempts a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND a.created_at > ?", [time() - self::DAYS * 86400]) as $u) {
+        foreach (Db::all("SELECT DISTINCT a.user_id AS id FROM attempts a JOIN users u ON u.id = a.user_id WHERE u.role = 'student' AND u.is_test = 0 AND a.created_at > ?", [time() - self::DAYS * 86400]) as $u) {
             $m = self::scan((int) $u['id']);
             $life['learners']++;
             $life['open'] += count($m['open']);

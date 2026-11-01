@@ -13,6 +13,10 @@
 8. **Sentence length by layer**: A2 about 5-9 words, one clause, everyday words; B1 about 10-16 words, two clauses, wider vocabulary, no clue word. Negatives and questions are A2 as well.
 9. **New topic**: at least 25 questions per level before it goes live; existing topics aim for 50 per level.
 
+## New topics: scope from test-english.com (rule from Inga, 2 November)
+- Before a new topic is added (card or tasks), read what test-english.com teaches about it at that level (the lesson for the topic in docs/LEVEL-LISTS-test-english.md) and cover the same points, in the same order.
+- Use it for the scope only: our own examples and explanations, no copied sentences or exercises. Check the grammar against Murphy as before.
+
 ## Topics of the sentences (rule from Inga, 1 November)
 - New tasks follow the best existing tasks as models (same instruction style, ungrammatical wrong options, one sensible answer) and vary the setting: travel, work, hobbies, lifestyle, learning, relationships, technologies; current events only at B2 and C1.
 - Not the same setting in two tasks in a row of one topic and level; real, adult situations, no children's-book sentences.

@@ -1227,6 +1227,8 @@
         var room = window.innerHeight - fb.offsetHeight - 8;   // the space above the panel
         var top = card.getBoundingClientRect().top - 8, low = 0;
         card.querySelectorAll('.opt').forEach(function (o) { if (/\b(good|bad|right|wrong)\b/.test(o.className)) low = Math.max(low, o.getBoundingClientRect().bottom); });
+        var q = card.querySelector('.q'), area = q && q.nextElementSibling;   // typed and drag tasks: the answer area itself
+        if (!low && area && !area.contains(feedback)) low = area.getBoundingClientRect().bottom;
         if (!low && marked) low = marked.getBoundingClientRect().bottom;
         var by = Math.min(top, Math.max(0, low - room));   // the marked answers just above the panel, but never the question out of view
         if (Math.abs(by) > 4) window.scrollTo({ top: window.scrollY + by });

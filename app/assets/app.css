@@ -270,7 +270,7 @@ details.rule[open] summary { border-color: var(--btn); }
 .feedback .cmp-row { display: flex; gap: 10px; align-items: baseline; }
 .feedback .cmp-mark { flex: none; font-weight: 800; width: 1em; text-align: center; }
 .feedback .cmp-mark.bad { color: var(--bad); } .feedback .cmp-mark.good { color: var(--good); }
-.feedback mark.del { background: var(--bad-bg); color: var(--bad); border-radius: 4px; padding: 0 4px; font-weight: 700; text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.feedback mark.del { background: var(--bad-bg); color: var(--bad); border-radius: 4px; padding: 0 4px; font-weight: 700; text-decoration: underline wavy; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }   /* no strike-through: the same red wavy line as on the rule cards */
 .feedback mark.ins { background: var(--good-bg); color: var(--good); border-radius: 4px; padding: 0 4px; font-weight: 700; }
 .feedback .mine { background: var(--bad-bg); color: var(--bad); border-radius: 6px; padding: 1px 6px; font-weight: 600; }
 .feedback h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }

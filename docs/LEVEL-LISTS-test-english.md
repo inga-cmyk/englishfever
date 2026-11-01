@@ -66,4 +66,6 @@ Advanced modals: will, would, should · Advanced modals: can / be able to, may /
 Subject-verb agreement: advanced rules · Prepositions: position and advanced patterns · Advanced participle clauses · Advanced word order
 
 ## B2+
-(to come, if the teacher has the list)
+There is no separate B2+ list (teacher, 2 November).
+
+The teacher also gave the complete list A1-C1 grouped by grammar area (2 November); it is the same topics as above.

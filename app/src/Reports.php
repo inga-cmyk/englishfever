@@ -39,6 +39,18 @@ final class Reports
         Db::q("DELETE FROM reports WHERE user_id = ? AND item_id = ? AND status = 'new' AND reason = 'other' AND (comment IS NULL OR comment = '')", [$u['id'], $itemId]);
     }
 
+    /** Rule C (teacher, 2 November): tasks that were corrected. A mistake on one of them says nothing about the learner,
+        so it does not count when topics are chosen or mistakes are offered again. */
+    public static function correctedIds(): array
+    {
+        static $ids = null;
+        if ($ids !== null) return $ids;
+        $ids = array_fill_keys(Content::retiredIds(), true);
+        foreach (Db::all("SELECT item_id FROM custom_items WHERE status = 'retired'") as $r) $ids[$r['item_id']] = true;
+        foreach (Db::all("SELECT DISTINCT item_id FROM reports WHERE status = 'fixed'") as $r) $ids[$r['item_id']] = true;
+        return $ids;
+    }
+
     /** Tasks with a report the teacher has not dealt with yet (new or seen): they are not served to anyone, as a set of ids. */
     public static function pausedIds(): array
     {

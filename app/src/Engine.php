@@ -51,6 +51,21 @@ final class Engine
                 if ($firstTime) $len = 8;   // a new learner: a short taste of the most common mistakes (teacher, 27 October)
                 $smart = true;
                 $mode = 'practice';
+                // rule A (teacher, 2 November): after the placement test the topics come from My learning path, not from the most
+                // mistakes: the recommended step and the next open step, at their levels; the mix adds review and a step up
+                $path = Path::forUser($uid);
+                if (!$firstTime && $path['current'] !== null) {
+                    $pick = []; $lv = [];
+                    $from = array_search($path['current'], array_column($path['steps'], 'id'), true);
+                    foreach (array_slice($path['steps'], (int) $from) as $x) {
+                        if (count($pick) >= 2) break;
+                        if ($x['id'] !== $path['current'] && ($x['done'] || $x['status'] === 'known' || $x['level'] !== $path['steps'][$from]['level'])) continue;
+                        $pick[] = $x; $lv = array_merge($lv, $x['levels']);
+                    }
+                    $skills = array_values(array_unique(array_merge(...array_map(fn($x) => $x['topics'], $pick))));
+                    $mixLevels = array_values(array_unique($lv)); sort($mixLevels);
+                    $level = $mixLevels[0];
+                }
             }
             if ($fullLevels !== null) {
                 // levels first: whole levels (A2, B1 ...), with or without topics; no topic = a mix of the topics that have questions there
@@ -78,6 +93,12 @@ final class Engine
         if ($smart) $state['smart'] = true;
         if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['review'] = array_fill_keys($review, true); }
         if (!empty($allowed)) $state['levels'] = $allowed;
+        // 60 / 25 / 15 (teacher, 2 November): a path step and Surprise me mix the step, review and a step up; a chosen topic stays as chosen
+        if ($mode === 'practice' && ($source === 'path' || ($smart && isset($mixLevels)))) {
+            $mainLevels = $mixLevels ?? ($allowed ?? [$level]);
+            $state['mix'] = Path::sessionMix($uid, $skills, $mainLevels, $len, $path ?? null);
+            $state['levels'] = $mainLevels;
+        }
         if ($mode === 'placement') {
             // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
             $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
@@ -410,6 +431,15 @@ final class Engine
                 $ses['state']['probes'][$i]['done'] = true;   // no such task: nothing to ask
             }
         }
+        // the session mix: which part this task belongs to (the step, review, or the step up)
+        $slot = null;
+        if (!empty($st['mix']) && !$placement) {
+            $slot = $st['mix']['plan'][$count] ?? 'main';
+            $spec = $st['mix'][$slot] ?? null;
+            if (!$spec) { $slot = 'main'; $spec = $st['mix']['main']; }
+            $skills = $spec['skills']; $st['levels'] = $spec['levels'];
+            $ses['state']['slot'][$count] = $slot;
+        }
         // candidate items
         $rightHere = [];
         foreach ($st['last'] as $h) if ($h['correct'] && ($h['sc'] ?? 0) >= 1) $rightHere[$h['skill']] = true;   // a typed answer, not only a choice
@@ -433,6 +463,10 @@ final class Engine
                 }));
                 if ($win) $bySkill[$s] = $win;
             }
+        }
+        if (!$bySkill && $slot !== null && $slot !== 'main') {   // nothing left for review or the step up: the step itself
+            $ses['state']['mix']['plan'][$count] = 'main';
+            return self::pickNext($ses);
         }
         if (!$bySkill) return null;
 

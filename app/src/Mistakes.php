@@ -24,9 +24,11 @@ final class Mistakes
         $open = [];
         $solid = [];      // fixed, not yet locked in: id => kind of task, the day it was fixed, the tasks that fixed it
         $fixed = $locked = $reopened = 0;
+        $corrected = Reports::correctedIds();
         foreach ($rows as $r) {
             $id = $r['item_id'];
             $day = date('Y-m-d', (int) $r['created_at']);
+            if (!(int) $r['correct'] && isset($corrected[$id])) continue;   // rule C: a mistake on a task that was faulty and has been corrected
             if (!(int) $r['correct']) {
                 if (!isset($open[$id])) $open[$id] = ['skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'tries' => 0, 'day' => $day, 'ses' => (int) $r['psession_id']];
                 $open[$id]['tries']++;

@@ -162,6 +162,12 @@ final class Content
         return self::$retired[$id] ?? self::$hidden[$id] ?? self::customById($id);
     }
 
+    /** The ids of built-in tasks that have a corrected version (retired.json). */
+    public static function retiredIds(): array
+    {
+        return array_column(self::load('retired'), 'id');
+    }
+
     /** A custom task that is not (or no longer) approved: reports and old answers still point at it. */
     private static function customById(string $id): ?array
     {

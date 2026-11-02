@@ -355,7 +355,7 @@
     function node(st) {
       var rec = st.id === path.current, has = st.pct !== null;
       var col = has ? hue(st.pct) : null;
-      var sub = st.status === 'done' ? 'Mastered' : st.status === 'refresh' ? 'Time to refresh' : !has ? (st.below ? 'You may know it: a quick check' : 'Not tried yet')
+      var sub = st.status === 'done' ? 'Mastered' : st.status === 'known' ? 'Known from your level test' : st.status === 'refresh' ? 'Time to refresh' : !has ? (st.below ? 'You may know it: a quick check' : 'Not tried yet')
         : plural(st.answers, 'answer', 'answers');
       var el = h('button', { type: 'button', class: 'pnode ' + st.status + (rec ? ' rec' : '') + (st.needs ? ' combo' : ''), onclick: function () { start(el, st); } },
         h('span', { class: 'pdot', style: col ? 'border-color:' + col + ';' + (st.status === 'done' ? 'background:' + col + ';color:#fff' : 'color:' + col) : '', 'aria-hidden': 'true' },

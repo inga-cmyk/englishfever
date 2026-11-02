@@ -136,7 +136,9 @@ final class Path
     {
         $lv = $levels ? ' AND level IN (' . implode(',', array_fill(0, count($levels), '?')) . ')' : '';   // mastery at these levels only: a topic comes back at a higher level
         $p = array_merge([$uid, $skill], $levels ?: []);
-        $rows = Db::all("SELECT item_id, correct, bloom, created_at FROM attempts WHERE user_id = ? AND skill = ?$lv ORDER BY id DESC LIMIT 10", $p);
+        $corrected = Reports::correctedIds();
+        $rows = array_slice(array_values(array_filter(Db::all("SELECT item_id, correct, bloom, created_at FROM attempts WHERE user_id = ? AND skill = ?$lv ORDER BY id DESC LIMIT 30", $p),
+            fn($r) => (int) $r['correct'] || !isset($corrected[$r['item_id']]))), 0, 10);   // rule C: mistakes on corrected tasks do not count
         $n = count($rows);
         $ok = 0; $recognise = false; $use = false; $typed = false; $days = [];
         foreach ($rows as $r) {
@@ -160,13 +162,17 @@ final class Path
     public static function forUser(int $uid): array
     {
         $byHalf = Content::levelCounts()['by_half'];
-        $placed = null;
-        $pr = Db::one("SELECT state FROM psessions WHERE user_id = ? AND mode = 'placement' AND ended_at IS NOT NULL ORDER BY id DESC LIMIT 1", [$uid]);
-        if ($pr) { $st = json_decode((string) $pr['state'], true); if (!empty($st['report']['overall_level'])) $placed = substr($st['report']['overall_level'], 0, 2); }
+        $placed = null; $plRight = []; $plWrong = [];
+        $pr = Db::one("SELECT id, state FROM psessions WHERE user_id = ? AND mode = 'placement' AND ended_at IS NOT NULL ORDER BY id DESC LIMIT 1", [$uid]);
+        if ($pr) {
+            $st = json_decode((string) $pr['state'], true);
+            if (!empty($st['report']['overall_level'])) $placed = substr($st['report']['overall_level'], 0, 2);
+            foreach (Db::all('SELECT skill, correct FROM attempts WHERE psession_id = ?', [(int) $pr['id']]) as $a) { if ((int) $a['correct']) $plRight[$a['skill']] = true; else $plWrong[$a['skill']] = true; }
+        }
         $placedIdx = $placed === null ? -1 : array_search($placed, self::LEVELS, true);
+        $corrected = Reports::correctedIds();
         $m = [];
         $steps = [];
-        $current = null;
         foreach (self::STEPS as $s) {
             [$id, $label, $band, $want] = $s;
             $topics = []; $levels = []; $fallback = [];
@@ -186,13 +192,77 @@ final class Path
                 $done = $done && $m[$k]['done']; $stale = $stale || $m[$k]['stale'];
             }
             $pct = $pctN ? (int) round($pctSum / $pctN) : null;
-            $status = $done ? 'done' : ($stale ? 'refresh' : ($n ? 'work' : 'new'));
-            if ($current === null && !$done && ($pct === null || $pct < 80 || $stale)) $current = $id;   // the first step in the book order that is weak, untried or due for a refresh
+            $bandIdx = array_search(substr($band, 0, 2), self::LEVELS, true);
+            $below = $placedIdx > $bandIdx;
+            // variant A (teacher, 2 November): below the placement level a step counts as known unless the answers say otherwise
+            $weak = $n >= 5 && $pct !== null && $pct < 70;
+            $known = $below && !$done && !$weak;
+            $missed = (bool) array_intersect($topics, array_keys($plWrong));
+            $passed = !$missed && count(array_intersect($topics, array_keys($plRight))) === count($topics);
+            $status = $done ? 'done' : ($stale ? 'refresh' : ($known ? 'known' : ($n ? 'work' : 'new')));
             $steps[] = ['id' => $id, 'label' => $label, 'level' => $band, 'levels' => $levels, 'topics' => $topics, 'fallback' => $fallback, 'needs' => null, 'best_after' => [],
-                        'done' => $done, 'answers' => $n, 'pct' => $pct, 'stale' => !$done && $stale, 'status' => $status,
-                        'below' => $placedIdx > array_search(substr($band, 0, 2), self::LEVELS, true)];
+                        'done' => $done, 'answers' => $n, 'pct' => $pct, 'stale' => !$done && $stale, 'status' => $status, 'weak' => $weak,
+                        'missed' => $missed, 'below' => $below || ($passed && !$n),   // "below": a short check first (6 tasks)
+                        'band_idx' => $bandIdx];
         }
+        // the recommended step: a weak step below the level first, then the first step at or above it with a topic missed in
+        // the placement test, then the first step in the book order that is not done (and not known from the level found)
+        $open = fn($x) => !$x['done'] && $x['status'] !== 'known' && ($x['pct'] === null || $x['pct'] < 80 || $x['stale']);
+        $current = null;
+        foreach ($steps as $x) if ($x['weak'] && $x['band_idx'] < $placedIdx && $open($x)) { $current = $x['id']; break; }
+        if ($current === null && $placedIdx >= 0) foreach ($steps as $x) if ($x['missed'] && $x['band_idx'] >= $placedIdx && $open($x)) { $current = $x['id']; break; }
+        if ($current === null) foreach ($steps as $x) if ($open($x)) { $current = $x['id']; break; }
+        foreach ($steps as &$x) unset($x['band_idx']);
+        unset($x);
         return ['placed' => $placed, 'current' => $current, 'steps' => $steps,
-                'done' => count(array_filter($steps, fn($s) => $s['status'] === 'done')), 'total' => count($steps)];
+                'done' => count(array_filter($steps, fn($s) => $s['status'] === 'done' || $s['status'] === 'known')), 'total' => count($steps)];
+    }
+
+    /**
+     * The mix of a session from My learning path or Surprise me (teacher, 2 November; Vygotsky's zone of proximal development):
+     * about 60% the step being learnt at its level, 25% review (weak steps below the learner's level first, then topics with a
+     * mistake fixed 2-7 days ago, then steps practised before), 15% the same topics half a level higher.
+     * @return array{main: array, review: ?array, stretch: ?array, plan: string[]}
+     */
+    public static function sessionMix(int $uid, array $skills, array $levels, int $len, ?array $path = null): array
+    {
+        $path ??= self::forUser($uid);
+        $byHalf = Content::levelCounts()['by_half'];
+        $ids = array_column($path['steps'], 'id');
+        $curPos = false;   // the step being practised (the one started), else the recommended step
+        foreach ($path['steps'] as $k => $x) if (!array_diff($skills, $x['topics']) && array_intersect($levels, $x['levels'])) { $curPos = $k; break; }
+        if ($curPos === false) $curPos = array_search($path['current'], $ids, true);
+        $review = []; $rLevels = [];
+        $add = function ($topics, $lv) use (&$review, &$rLevels, $skills) {
+            foreach ($topics as $t) if (!in_array($t, $skills, true) && !isset($review[$t]) && count($review) < 3) { $review[$t] = true; $rLevels = array_merge($rLevels, $lv); }
+        };
+        foreach ($path['steps'] as $x) if ($x['weak'] && $x['below']) $add($x['topics'], $x['levels']);   // weak below the level
+        $solid = Mistakes::scan($uid)['solid'] ?? [];
+        foreach ($solid as $sv) {   // fixed 2-7 days ago: check it is still right
+            $age = (time() - strtotime($sv['day'])) / 86400;
+            if ($age >= 2 && $age <= 7) $add([$sv['skill']], [$sv['level']]);
+        }
+        if ($curPos !== false) foreach (array_reverse(array_slice($path['steps'], 0, (int) $curPos)) as $x) if ($x['answers'] > 0) $add($x['topics'], $x['levels']);   // practised before
+        $halves = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
+        $top = max(array_map(fn($l) => (int) array_search($l, $halves, true), $levels ?: ['A2.1']));
+        $up = $halves[$top + 1] ?? null;
+        $stretch = $up ? array_values(array_filter($skills, fn($t) => !empty($byHalf[$t][$up]))) : [];
+        $n = max(5, $len);
+        $nS = $stretch ? max(1, (int) floor(0.15 * $n)) : 0;   // 10 tasks: 6 step, 3 review, 1 step up
+        $nR = $review ? (int) round(0.25 * $n) : 0;
+        $nM = $n - $nS - $nR;
+        // the first two tasks are the step itself; review and stretch are spread through the rest
+        $plan = array_merge(array_fill(0, $nM, 'main'));
+        $extra = array_merge(array_fill(0, $nR, 'review'), array_fill(0, $nS, 'stretch'));
+        if ($extra) {
+            $step = ($n - 2) / count($extra);
+            $out = array_fill(0, $n, null);
+            foreach ($extra as $k => $e) { $pos = 2 + (int) floor($k * $step + $step / 2); while ($pos < $n && $out[$pos] !== null) $pos++; if ($pos >= $n) $pos = array_search(null, $out, true); $out[$pos] = $e; }
+            foreach ($out as $k => $v) if ($v === null) $out[$k] = 'main';
+            $plan = $out;
+        }
+        $rLevels = array_values(array_unique($rLevels)); sort($rLevels);
+        return ['main' => ['skills' => $skills, 'levels' => $levels], 'review' => $review ? ['skills' => array_keys($review), 'levels' => $rLevels] : null,
+                'stretch' => $stretch ? ['skills' => $stretch, 'levels' => [$up]] : null, 'plan' => $plan];
     }
 }

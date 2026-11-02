@@ -258,14 +258,14 @@ final class Research
         foreach (self::participants() as $u) {
             $start = self::dayOf((int) $u['research_at']);
             $pid = self::pid((int) $u['id']);
-            $sql = 'SELECT a.item_id, a.skill, a.level, a.bloom, a.correct, a.time_ms, a.created_at, a.answer, a.exposure, a.served_why, a.app_ver, a.lang, a.fb_ms, p.mode, p.source FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? AND a.created_at >= ? ORDER BY a.id';
+            $sql = 'SELECT a.item_id, a.skill, a.level, a.bloom, a.correct, a.time_ms, a.created_at, a.answer, a.exposure, a.served_why, a.app_ver, a.lang, a.fb_ms, a.card, p.mode, p.source FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? AND a.created_at >= ? ORDER BY a.id';
             foreach (Db::all($sql, [(int) $u['id'], (int) $u['research_at']]) as $a) {
                 $t = (new DateTime('@' . $a['created_at']))->setTimezone(Stats::tz());
                 $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $a['mode'] ?? '', $a['skill'], $area[$a['skill']] ?? '', $a['level'], (int) $a['bloom'], (int) $a['correct'], round($a['time_ms'] / 1000, 1), $a['item_id'],
-                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? ''];
+                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? '', (int) ($a['card'] ?? 0)];
             }
         }
-        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version'], $rows);
+        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version', 'rule_card_before'], $rows);
     }
 
     /** What participants opened and pressed (Usage), and where each session was started; pseudonymised like the other files. */
@@ -344,6 +344,7 @@ served_why   new | again_after_wrong (the task came back after a mistake) | agai
 source       where the session was started (as in events.csv).   lang   explanation language set then (en / lv).
 feedback_seconds  time from the feedback to Next on this task (reading the explanation); empty for the last task of a session.
 app_version  the app version then; content and rules change between versions (docs/CHANGELOG-practice-app.md).
+rule_card_before  1 = the learner opened the rule card (the ? button) during this task, before answering; from 2 November 2026.
 
 events.csv   (one row per logged action; from 28 October 2026)
 event        page, rule_card, lang, skip, quit, review, report, sound, mood, path_step, bonus, or session_start.

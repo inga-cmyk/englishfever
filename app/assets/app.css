@@ -822,3 +822,5 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rc-row-d { color: var(--text-soft); font-size: .9rem; }
 .rc-row-eg { margin-top: 3px; color: var(--text); }
 .rc-row-eg em { color: var(--text); }
+.task-rule { margin-left: auto; width: 30px; height: 30px; border-radius: 50%; border: 0; background: var(--btn); color: #fff; font-weight: 800; font-size: 1rem; cursor: pointer; flex: none; }
+.task-rule:hover, .task-rule:focus-visible { filter: brightness(1.1); outline: 2px solid var(--gold); outline-offset: 2px; }

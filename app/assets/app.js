@@ -668,7 +668,7 @@
           h('td', { class: 'num' }, String(x.sessions)), h('td', { class: 'num' }, String(x.people)), h('td', { class: 'num' }, String(x.answers || 0)));
       });
       var evRows = u.events.map(function (x) {
-        var det = x.detail ? (x.ev === 'rule_card' || x.ev === 'skip' || x.ev === 'report' || x.ev === 'path_step' ? (x.detail.indexOf('fb-') === 0 ? 'under a task: ' + (skillById(x.detail.slice(3)) || {}).label : (skillById(x.detail) || {}).label || x.detail) : x.detail) : '';
+        var det = x.detail ? (x.ev === 'rule_card' || x.ev === 'skip' || x.ev === 'report' || x.ev === 'path_step' ? (x.detail.indexOf('fb-') === 0 ? 'under a task: ' + (skillById(x.detail.slice(3)) || {}).label : x.detail.indexOf('task-') === 0 ? 'during a task (?): ' + (skillById(x.detail.slice(5)) || {}).label : (skillById(x.detail) || {}).label || x.detail) : x.detail) : '';
         return h('tr', null, h('td', null, x.label, det ? h('div', { class: 'small muted' }, det) : null), h('td', { class: 'num' }, String(x.count)), h('td', { class: 'num' }, String(x.people)));
       });
       var cols = Object.keys(SOURCE_NAMES).filter(function (k) { return u.people.some(function (p) { return p.sources[k]; }); });
@@ -1096,7 +1096,7 @@
       var ans = skip === true ? (it.kind === 'mcq' || it.kind === 'text' || it.kind === 'write' ? '' : []) : answerGetter();
       if (skip === true) track('skip', it.skill);
       var fbMs = state.fbMs || 0; state.fbMs = 0;
-      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, skip: skip === true, time_ms: Date.now() - taskStart, fb_ms: fbMs }).then(function (r) {
+      api('session/answer', { session_id: ses.id, item_id: it.id, answer: ans, skip: skip === true, time_ms: Date.now() - taskStart, fb_ms: fbMs, card: cardOpened }).then(function (r) {
         S.session = r.session; S.last = r; state.todaySeconds = state.todaySeconds;
         S.history = H.filter(function (e) { return e.n !== at; }).concat([{ n: at, item: it, ans: ans, result: r.result }]); H = S.history; saveHistory(S);
         lock(); showFeedback(r, ans); drawDots(); drawPrev();
@@ -1239,6 +1239,7 @@
     }
     var lastCheer = null;
     var fbShownAt = 0;
+    var cardOpened = false;   // the learner opened the rule card before answering this task
 
     function next(r) {
       if (fbShownAt) { state.fbMs = Date.now() - fbShownAt; fbShownAt = 0; }   // how long the feedback was read (research, teacher 1 November)
@@ -1333,7 +1334,8 @@
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
         h('div', { class: 'meta' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
-          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, ses.mode === 'placement' ? reportBtn : null),   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
+          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, ses.mode === 'placement' ? reportBtn : null,
+          ses.mode === 'placement' ? null : h('button', { type: 'button', class: 'task-rule', 'aria-label': 'Rule card', title: 'Rule card', onclick: function () { cardOpened = true; rulesModal(it.skill, true); } }, '?')),   // the rule card during a task (teacher, 2 November); noted with the answer for the research   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
         qEl, area, h('div', { class: 'row', style: 'gap:18px' }, submit, ses.mode === 'placement' || rev ? null : skipBtn), feedback)));
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
       var a = rev.ans;
@@ -1725,15 +1727,15 @@
         })));
       })));
   }
-  function rulesModal(id) {
+  function rulesModal(id, inTask) {
     var s = skillById(id);
-    track('rule_card', id);
-    var go = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October)
+    track('rule_card', inTask ? 'task-' + id : id);
+    var go = inTask ? null : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October); not from inside a task
     var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'),
-      h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, 'Close'))));
+      h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;
-    go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash, 'rule_card'); m.close(); };
+    if (go) go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash, 'rule_card'); m.close(); };
   }
 
   /** Leaderboard avatar: with a mood, a small emoji sits on it and a tap shows the saying in a bubble. */

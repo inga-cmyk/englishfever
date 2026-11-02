@@ -172,6 +172,10 @@ try {
             }
             Engine::feedbackTime((int) $u['id'], (int) ($in['session_id'] ?? 0), (int) ($in['fb_ms'] ?? 0));   // reading time of the previous feedback (research)
             $res = Engine::answer((int) $u['id'], (int) ($in['session_id'] ?? 0), (string) ($in['item_id'] ?? ''), $in['answer'] ?? '', (int) ($in['time_ms'] ?? 0), !empty($in['skip']));
+            if (!empty($in['card'])) {   // the rule card was opened before this answer (research)
+                $aid = Db::val('SELECT MAX(id) FROM attempts WHERE user_id = ? AND item_id = ?', [(int) $u['id'], (string) ($in['item_id'] ?? '')]);
+                if ($aid) Db::q('UPDATE attempts SET card = 1 WHERE id = ?', [(int) $aid]);
+            }
             Wp::afterResponse((int) $u['id'], !empty($res['done']));
             out($res);
 

@@ -262,7 +262,8 @@ final class Db
         self::ensureColumn('attempts', 'app_ver', "$str NULL");     // the app version (src/version.php) when the answer was given
         self::ensureColumn('attempts', 'lang', "$str NULL");        // explanation language set for the learner then (en | lv)
         self::ensureColumn('attempts', 'fb_ms', "$int NULL");       // time from the feedback to Next (reading the explanation), sent with the next answer
-        self::ensureColumn('users', 'is_test', "$int NOT NULL DEFAULT 0");   // the teacher's own and test accounts: left out of evidence, research and exports
+        self::ensureColumn('users', 'is_test', "$int NOT NULL DEFAULT 0");
+        self::ensureColumn('attempts', 'card', "$int NULL");   // 1 = the rule card was opened during this task, before the answer (teacher, 2 November)   // the teacher's own and test accounts: left out of evidence, research and exports
         self::ensureColumn('users', 'mood', "$str NULL");   // a saying under the avatar, chosen from a fixed list (Auth::MOODS)
         self::ensureColumn('users', 'research', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'research_at', "$big NOT NULL DEFAULT 0");

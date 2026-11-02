@@ -79,6 +79,7 @@ SKILL_ERR = {
     "conj_basic": [],
     "conj_linkers": [],
     "conj_clauses": [],
+    "conj_b2": [],
     "quantity": ["UNCOUNT"],
     "verb_patterns": ["PATTERN", "NEG-INF"],
     "adj_ed_ing": ["ED-ING"],

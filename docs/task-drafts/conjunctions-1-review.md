@@ -1,4 +1,4 @@
-# Joining ideas: 84 draft tasks (review list)
+# Joining ideas: draft tasks (review list)
 
 Topic · level · type · task → answer (wrong options / accepted)
 
@@ -95,3 +95,34 @@ Topic · level · type · task → answer (wrong options / accepted)
 - B1.2 order: Put the words in order. → **despite feeling ill he went to work**  (also accepted: he went to work despite feeling ill)
 - B1.1 order: Put the words in order. → **we left early in order to avoid the traffic**  (also accepted: in order to avoid the traffic we left early)
 - B1.1 match: Match each beginning with its ending. → **Even though I set an alarm, = I overslept. ; She took a taxi = so that she wouldn't be late. ; The concert was cancelled = due to the storm. ; As it was a sunny day, = we had lunch in the garden.**
+
+## Contrast, purpose, reason and result
+
+- B2.1 mcq: Choose the correct option: The roads were flooded. ___, many schools closed. → **As a result**  (Despite | Whereas)
+- B2.1 mcq: Choose the correct option: ___ my brother loves football, I can't stand it. → **Whereas**  (Therefore | Owing to)
+- B2.1 mcq: Choose the correct option: Take a jumper ___ it gets cold later. → **in case**  (in order to | so as to)
+- B2.1 mcq: Choose the correct option: The match was postponed ___ the heavy rain. → **owing to**  (owing | since)
+- B2.1 mcq: Choose the correct option: This app is used ___ tracking your spending. → **for**  (to | so that)
+- B2.2 mcq: Choose the correct option: The project was over budget. The board has ___ decided to cancel it. → **therefore**  (as a result of | in case)
+- B2.1 mcq: Choose the correct option: She was exhausted, ___ she kept working. → **yet**  (therefore | due to)
+- B2.2 mcq: Choose the correct option: We need a bigger budget in order ___ the team to finish on time. → **for**  (that | of)
+- B2.2 mcq: Choose the correct option: The plane was delayed ___ account of a technical problem. → **on**  (in | by)
+- B2.1 mcq: Which sentence is NOT correct? → **The shop closed early owing the strike.**  (She stayed at home because she felt ill. | Rent is high here. For this reason, we moved. | Take a map in case your phone dies.)
+- B2.2 mcq: Which sentence is correct? → **He studied hard; nevertheless, he failed the test.**  (He studied hard nevertheless, he failed the test. | He studied hard; nevertheless he, failed the test.)
+- B2.1 mcq: Choose the correct option: Write the code down ___ you forget it. → **in case**  (so as to | owing to)
+- B2.2 mcq: Choose the correct option: The company failed the safety check and, ___, the factory was closed. → **consequently**  (in case | whereas)
+- B2.1 gap: Complete with one word: The museum was closed. For this ___, we went to the park. → **reason**
+- B2.1 gap: Complete with one word: The meeting was cancelled due ___ the strike. → **to**
+- B2.2 gap: Complete with one word: The concert was cancelled on account ___ low ticket sales. → **of**
+- B2.1 gap: Complete with one word: She spoke quietly so as ___ to wake the baby. → **not**
+- B2.2 gap: Complete with one word: It was a difficult task, and ___ they finished it on time. → **yet**
+- B2.1 gap: Complete with one word: I'll take some cash in ___ the card machine isn't working. → **case**
+- B2.1 text: Correct the mistake: Take an umbrella in case it will rain. → **Take an umbrella in case it rains.**
+- B2.1 text: Correct the mistake: This tool is for cut metal. → **This tool is for cutting metal. | This tool is used for cutting metal.**
+- B2.2 text: Rewrite with *owing to*: The flight was late because the weather was bad. → **The flight was late owing to the bad weather. | The flight was late owing to bad weather. | Owing to the bad weather, the flight was late. | Owing to bad weather, the flight was late.**
+- B2.2 text: Put *therefore* before the main verb: Sales fell. We have decided to close the shop. → **Sales fell. We have therefore decided to close the shop.**
+- B2.1 text: Join with *whereas*: I like early mornings. My partner likes late nights. → **I like early mornings, whereas my partner likes late nights. | Whereas I like early mornings, my partner likes late nights. | I like early mornings whereas my partner likes late nights.**
+- B2.1 order: Put the words in order. → **she kept running even though her legs hurt**  (also accepted: even though her legs hurt she kept running)
+- B2.2 order: Put the words in order. → **we need more staff in order for the shop to open on sundays**  (also accepted: in order for the shop to open on sundays we need more staff | on sundays we need more staff in order for the shop to open)
+- B2.1 order: Put the words in order. → **the train was cancelled and as a result we missed the meeting**
+- B2.1 match: Match each beginning with its ending. → **Pack a raincoat = in case it rains. ; The roads were icy. = As a result, there were many accidents. ; Owing to the strike, = there were no trains. ; This brush is = for cleaning bottles.**

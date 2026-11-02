@@ -8875,6 +8875,224 @@ return json_decode(<<<'EF_JSON_END'
      "*despite* bez *of*, *in spite of* ar *of*: *[[despite]] the rain = [[in spite of]] the rain*."
     ]
    }
+  },
+  {
+   "id": "conj_b2",
+   "label": "Contrast, purpose, reason and result (whereas, in case, therefore)",
+   "area": "clauses",
+   "levels": [
+    "B2.1",
+    "B2.2"
+   ],
+   "rule": {
+    "form": [
+     "Contrast: *nevertheless, yet, whereas*. Purpose: *in order for* + person + *to*, *for* + -ing, *in case*. Reason: *owing to, on account of* + noun. Result: *as a result, therefore, consequently*."
+    ],
+    "use": [
+     "*Take an umbrella in case it rains.*"
+    ],
+    "signals": "*whereas, nevertheless, yet, in case, owing to, as a result, therefore*",
+    "example": "*We have therefore decided to close the shop.*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Contrast",
+        "**however / nevertheless** + comma, after (.) or (;)",
+        "*We played well. [[Nevertheless]], we lost.*"
+       ],
+       [
+        "",
+        "**yet** + subject + verb, after (,) or *and*",
+        "*She was tired, [[yet]] she kept working.*"
+       ],
+       [
+        "",
+        "**while / whereas**: two facts side by side",
+        "*I love cooking, [[whereas]] my partner prefers to eat out.*"
+       ],
+       [
+        "Purpose",
+        "**in order for** + person + **to** + verb",
+        "*We need more staff [[in order for]] the shop [[to]] open on Sundays.*"
+       ],
+       [
+        "",
+        "**for** + **-ing**: what a thing is used for",
+        "*This knife is [[for cutting]] bread.*"
+       ],
+       [
+        "",
+        "**in case** + present: just to be safe",
+        "*Take an umbrella [[in case]] it [[rains]].*"
+       ],
+       [
+        "Reason",
+        "**due to / owing to / on account of** + **noun** (formal)",
+        "*The match was postponed [[owing to]] the rain.*"
+       ],
+       [
+        "Result",
+        "**for this reason / as a result** + comma, at the start",
+        "*Rent is high here. [[As a result]], many people move out.*"
+       ],
+       [
+        "",
+        "**therefore / consequently**: at the start + comma, or **before the main verb**",
+        "*We have [[therefore]] decided to close the shop.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Take an umbrella in case it [[will rain]].",
+       "Take an umbrella in case it [[rains]]."
+      ],
+      [
+       "The flight was cancelled [[owing]] the fog.",
+       "The flight was cancelled [[owing to]] the fog."
+      ],
+      [
+       "[[Whereas]] it was late, we stayed.",
+       "[[Although]] it was late, we stayed."
+      ],
+      [
+       "This tool is for [[cut]] metal.",
+       "This tool is for [[cutting]] metal."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "In case: before something happens, just to be safe",
+       "ex": [
+        "I'll take some cash [[in case]] the card machine [[isn't]] working."
+       ]
+      },
+      {
+       "t": "Formal result words in writing",
+       "ex": [
+        "Sales fell. We have [[therefore]] decided to close the shop.",
+        "The company failed the check and, [[consequently]], the factory was closed."
+       ]
+      }
+     ],
+     "watch": [
+      "*whereas* compares two facts; it does not mean *although*: *[[Although]] it was late, we stayed.*"
+     ]
+    },
+    "watch": [
+     "*whereas* compares two facts; it does not mean *although*: *[[Although]] it was late, we stayed.*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "*Pretstats*: *nevertheless, yet, whereas*. Nolūks: *in order for* + persona + *to, for + -ing, in case*. Iemesls: *owing to, on account of* + lietvārds. Rezultāts: *as a result, therefore, consequently*."
+    ],
+    "use": [
+     "*Take an umbrella in case it rains.*"
+    ],
+    "signals": "*whereas, nevertheless, yet, in case, owing to, therefore*",
+    "v2": {
+     "choice": {
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Pretstats",
+        "**however / nevertheless** + komats, pēc (.) vai (;)",
+        "*We played well. [[Nevertheless]], we lost.*"
+       ],
+       [
+        "",
+        "**yet** + teik. priekšmets + darbības vārds, pēc (,) vai *and*",
+        "*She was tired, [[yet]] she kept working.*"
+       ],
+       [
+        "",
+        "**while / whereas**: divi fakti blakus",
+        "*I love cooking, [[whereas]] my partner prefers to eat out.*"
+       ],
+       [
+        "Nolūks",
+        "**in order for** + persona + **to** + darbības vārds",
+        "*We need more staff [[in order for]] the shop [[to]] open on Sundays.*"
+       ],
+       [
+        "",
+        "**for** + **-ing**: kam lieto lietu",
+        "*This knife is [[for cutting]] bread.*"
+       ],
+       [
+        "",
+        "**in case** + tagadne: drošības pēc",
+        "*Take an umbrella [[in case]] it [[rains]].*"
+       ],
+       [
+        "Iemesls",
+        "**due to / owing to / on account of** + **lietvārds** (formāli)",
+        "*The match was postponed [[owing to]] the rain.*"
+       ],
+       [
+        "Rezultāts",
+        "**for this reason / as a result** + komats, teikuma sākumā",
+        "*Rent is high here. [[As a result]], many people move out.*"
+       ],
+       [
+        "",
+        "**therefore / consequently**: sākumā + komats vai **pirms galvenā darbības vārda**",
+        "*We have [[therefore]] decided to close the shop.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Take an umbrella in case it [[will rain]].",
+       "Take an umbrella in case it [[rains]].",
+       "Tulkojot burtiski \"gadījumam, ja līs\", iznāk *will*. Pēc *in case* angliski lieto tagadni."
+      ],
+      [
+       "The flight was cancelled [[owing]] the fog.",
+       "The flight was cancelled [[owing to]] the fog."
+      ],
+      [
+       "[[Whereas]] it was late, we stayed.",
+       "[[Although]] it was late, we stayed."
+      ],
+      [
+       "This tool is for [[cut]] metal.",
+       "This tool is for [[cutting]] metal.",
+       "Tulkojot burtiski \"griešanai\" vai \"lai grieztu\", iznāk *for cut*. Pēc *for* liek *-ing*."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "In case: pirms kaut kas notiek, drošības pēc",
+       "ex": [
+        "I'll take some cash [[in case]] the card machine [[isn't]] working."
+       ]
+      },
+      {
+       "t": "Formāli rezultāta vārdi rakstos",
+       "ex": [
+        "Sales fell. We have [[therefore]] decided to close the shop.",
+        "The company failed the check and, [[consequently]], the factory was closed."
+       ]
+      }
+     ],
+     "watch": [
+      "*whereas* salīdzina divus faktus, tas nenozīmē *although*: *[[Although]] it was late, we stayed.*"
+     ]
+    },
+    "watch": [
+     "*whereas* salīdzina divus faktus, tas nenozīmē *although*: *[[Although]] it was late, we stayed.*"
+    ]
+   }
   }
  ],
  "bloom": {
@@ -9152,6 +9370,7 @@ return json_decode(<<<'EF_JSON_END'
   "conj_basic": [],
   "conj_linkers": [],
   "conj_clauses": [],
+  "conj_b2": [],
   "quantity": [
    "UNCOUNT"
   ],

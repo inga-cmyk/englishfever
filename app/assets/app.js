@@ -1683,7 +1683,8 @@
     narrative: 'The party **had** already **finished** when I **arrived** in my best shirt.', narrative_b2: "He **was** out of breath. He**'d been running**.",
     articles_b1: '**The** rich get richer. **The** cat gets **the** sofa.',
     conj_basic: "I'm on a diet, **but** I eat cake **because** it's Monday.", conj_linkers: '**Although** I set three alarms, I woke up late **because of** my cat.',
-    conj_clauses: 'I bought a treadmill **so that** I **could** dry my clothes on it.'
+    conj_clauses: 'I bought a treadmill **so that** I **could** dry my clothes on it.',
+    conj_b2: 'I keep a spare charger at work **in case** my phone dies. **As a result**, my phone never dies.'
   };
   function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
     return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });

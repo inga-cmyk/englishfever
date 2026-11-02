@@ -105,7 +105,7 @@ final class Path
         ['b2_rel', 'Relative clauses', 'B2', ['relative_clauses']],
         ['b2_rep', 'Reported questions, indirect questions', 'B2', ['rep_questions', 'ind_advanced']],
         ['b2_cmp', 'Modifying comparatives', 'B2', ['comparison']],
-        ['b2_conj', 'Contrast, purpose, reason and result', 'B2', ['conj_clauses']],
+        ['b2_conj', 'Contrast, purpose, reason and result', 'B2', ['conj_b2', 'conj_clauses']],
         // C1: the C1 list
         ['c1_pspc', 'Advanced present simple and continuous', 'C1', ['present_simple', 'present_continuous']],
         ['c1_past', 'Advanced past tenses', 'C1', ['past_simple', 'past_continuous', 'past_perfect']],

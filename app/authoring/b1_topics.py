@@ -600,3 +600,10 @@ LV_CARDS.update({
     "conj_linkers": {"form": ["However, sāk jaunu teikumu; although + teikums; because of + lietvārds; then nākamajai darbībai."], "use": ["Although it was raining, we went out."], "signals": "however, although, because of, then, while"},
     "conj_clauses": {"form": ["Pretstats: although + teikums, despite + lietvārds vai -ing. Nolūks: to, so that + could / would, for + lietvārds. Iemesls: as, since, due to + lietvārds."], "use": ["We went out despite the rain."], "signals": "although, despite, so that, in order to, due to"},
 })
+SKILLS_NEW.append(("conj_b2", "Contrast, purpose, reason and result (whereas, in case, therefore)", "clauses", ["B2.1", "B2.2"]))
+ABBR_NEW.update({"conj_b2": "cj4"})
+CARDS["conj_b2"] = {"form": ["Contrast: *nevertheless, yet, whereas*. Purpose: *in order for* + person + *to*, *for* + -ing, *in case*. Reason: *owing to, on account of* + noun. Result: *as a result, therefore, consequently*."],
+                    "use": ["*Take an umbrella in case it rains.*"], "signals": "*whereas, nevertheless, yet, in case, owing to, as a result, therefore*",
+                    "example": "*We have therefore decided to close the shop.*"}
+LV_CARDS["conj_b2"] = {"form": ["Pretstats: nevertheless, yet, whereas. Nolūks: in order for + persona + to, for + -ing, in case. Iemesls: owing to, on account of + lietvārds. Rezultāts: as a result, therefore, consequently."],
+                       "use": ["Take an umbrella in case it rains."], "signals": "whereas, nevertheless, yet, in case, owing to, therefore"}

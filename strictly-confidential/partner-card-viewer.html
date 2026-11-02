@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Partner card</title>
+<style>
+:root{--paper:#f4efe5;--ink:#303a38;--wine:#7c344a;--sage:#486b5b;--muted:#5f6156;--card:#fffdf7;--line:#d5cec0}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font:17px/1.55 system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;align-items:center;padding:22px 16px}
+.brand{font-weight:800;font-size:11px;letter-spacing:2px;color:var(--muted);margin-bottom:18px}
+main{width:100%;max-width:460px}
+.card{background:var(--card);border:1px solid #d7c9b2;border-top:6px solid var(--wine);border-radius:10px;padding:22px 20px;box-shadow:3px 4px 0 #ddceb94f}
+.card.b{border-top-color:var(--sage)}
+.cardno{font-size:11px;letter-spacing:1.5px;font-weight:800;color:var(--muted)}
+h1{font:500 26px/1.2 Georgia,serif;margin:8px 0 14px}
+ul{margin:0;padding-left:20px}li{margin:8px 0}
+.tip{margin:18px 0 0;font-size:14px;color:var(--muted)}
+.cover{text-align:center;padding:30px 20px}
+.cover p{margin:0 0 18px}
+button{font:inherit;font-weight:700;background:var(--wine);color:#fff;border:0;border-radius:6px;padding:13px 22px;cursor:pointer}
+button:focus-visible{outline:3px solid #bc8c42;outline-offset:3px}
+.hide{margin-top:16px;background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:600;padding:9px 16px}
+.error{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+</style>
+</head>
+<body>
+<div class="brand">ENGLISH FEVER / CASE FILES · STRICTLY CONFIDENTIAL</div>
+<main id="app" aria-live="polite"></main>
+<script>
+// Partner-card viewer. The card text travels in the address after "#" (scrambled, not encrypted),
+// so this page holds no game content and never needs updating when the game changes.
+const app=document.getElementById('app');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function decode(hash){
+  const b64=hash.replace(/-/g,'+').replace(/_/g,'/');const bin=atob(b64+'==='.slice((b64.length+3)%4));
+  const key='riverside',bytes=new Uint8Array(bin.length);for(let k=0;k<bin.length;k++)bytes[k]=bin.charCodeAt(k)^key.charCodeAt(k%key.length);
+  const card=JSON.parse(new TextDecoder().decode(bytes));
+  if(typeof card.n!=='string'||typeof card.t!=='string'||!Array.isArray(card.l))throw new Error('bad card');
+  return card;
+}
+function show(){
+  const hash=location.hash.slice(1);
+  if(!hash){app.innerHTML='<div class="error"><h1>Scan a partner card</h1><p>Open the game on the classroom screen and scan the QR code for your role, Partner A or Partner B.</p></div>';return;}
+  let card;try{card=decode(hash);}catch{app.innerHTML='<div class="error"><h1>This card could not be read</h1><p>Scan the QR code again, or ask your teacher for the printed card.</p></div>';return;}
+  const role=card.n.charAt(0)==='B'?'B':'A';
+  const cover=()=>{app.innerHTML=`<div class="card ${role==='B'?'b':''} cover"><div class="cardno">CARD ${esc(card.n)} · PARTNER ${role}</div><h1>Your secret card</h1><p>Make sure your partner can’t see your screen.</p><button type="button" id="reveal">Show my card</button></div>`;document.getElementById('reveal').onclick=open;};
+  const open=()=>{app.innerHTML=`<article class="card ${role==='B'?'b':''}"><div class="cardno">CARD ${esc(card.n)} · PARTNER ${role}</div><h1>${esc(card.t)}</h1><ul>${card.l.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p class="tip">Don’t show this card. Answer your partner’s questions and ask your own.</p><button type="button" class="hide" id="hidecard">Hide card</button></article>`;document.getElementById('hidecard').onclick=cover;};
+  cover();
+}
+addEventListener('hashchange',show);show();
+</script>
+</body>
+</html>

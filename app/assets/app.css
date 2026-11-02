@@ -818,3 +818,7 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .rate-t { width: 100%; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font: inherit; font-size: .95rem; background: var(--bg); color: var(--text); resize: vertical; }
 .rate[hidden] { display: none; }
 .rc-key { color: var(--text); font-weight: 700; }
+.rc-row-b { padding: 8px 12px; border-top: 1px solid var(--line); }
+.rc-row-d { color: var(--text-soft); font-size: .9rem; }
+.rc-row-eg { margin-top: 3px; color: var(--text); }
+.rc-row-eg em { color: var(--text); }

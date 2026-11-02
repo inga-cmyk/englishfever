@@ -1504,7 +1504,18 @@
         h('tbody', null, v.choice.rows.map(function (r) {
           return h('tr', null, h('th', { scope: 'row' }, r[0]), r.slice(1).map(function (c) { return h('td', null, cellRich(c)); }));
         })))));
-      parts.push(h('div', { class: 'rc-stack' }, v.choice.cols.map(function (c, i) {
+      if (v.choice.stack === 'rows') {   // phone: one block per row, the form and its example together (teacher, 2 November); a row without a label goes on with the group above
+        var groups = [];
+        v.choice.rows.forEach(function (r) {
+          if (r[0] || !groups.length) groups.push({ label: r[0], rows: [] });
+          groups[groups.length - 1].rows.push(r);
+        });
+        parts.push(h('div', { class: 'rc-stack' }, groups.map(function (g) {
+          return h('div', { class: 'rc-col' }, g.label ? h('div', { class: 'rc-col-h big' }, g.label) : null, g.rows.map(function (r) {
+            return h('div', { class: 'rc-row-b' }, r.slice(1).map(function (c, i) { return h('div', { class: i ? 'rc-row-eg' : 'rc-row-d' }, cellRich(c)); }));
+          }));
+        })));
+      } else parts.push(h('div', { class: 'rc-stack' }, v.choice.cols.map(function (c, i) {
         return h('div', { class: 'rc-col' }, h('div', { class: 'rc-col-h big' }, c), v.choice.rows.map(function (r) {
           return h('div', { class: 'rc-col-r' }, h('span', { class: 'who' }, r[0]), h('span', null, cellRich(r[i + 1])));
         }));

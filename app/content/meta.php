@@ -8285,6 +8285,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*It was late, so we left.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "When",
        "Example"
@@ -8371,6 +8372,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*and, but, or, so, because*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Kad",
        "Piemērs"
@@ -8468,6 +8470,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*The flight was late because of the snow.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Form",
        "Example"
@@ -8566,6 +8569,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*however, although, because of, then, while*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Forma",
        "Piemērs"
@@ -8677,6 +8681,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*I wrote it down so that I wouldn't forget it.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Form",
        "Example"
@@ -8780,6 +8785,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*although, despite, so that, in order to, due to*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Forma",
        "Piemērs"
@@ -8895,6 +8901,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*We have therefore decided to close the shop.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Form",
        "Example"
@@ -8998,6 +9005,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*whereas, nevertheless, yet, in case, owing to, therefore*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Forma",
        "Piemērs"

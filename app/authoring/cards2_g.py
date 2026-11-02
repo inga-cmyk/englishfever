@@ -7,7 +7,7 @@ in Use, Units 64 (to, for, so that) and 113 (although, though, even though, in s
 CARDS = {
     "conj_basic": {
         "en": {
-            "choice": {"cols": ["When", "Example"],
+            "choice": {"stack": "rows", "cols": ["When", "Example"],
                        "rows": [["and", "**similar** information, one more idea", "*My sister lives in Riga, [[and]] my brother lives in Oslo.*"],
                                 ["but", "**different**, contrasting information", "*The hotel was nice, [[but]] the food was terrible.*"],
                                 ["or", "a **choice** between possibilities", "*Shall we take a taxi [[or]] walk?*"],
@@ -22,7 +22,7 @@ CARDS = {
             "watch": ["*Because* at the start: a comma after that part: *[[Because]] it was late, we left.*"],
         },
         "lv": {
-            "choice": {"cols": ["Kad", "Piemērs"],
+            "choice": {"stack": "rows", "cols": ["Kad", "Piemērs"],
                        "rows": [["and", "**līdzīga** informācija, vēl viena doma", "*My sister lives in Riga, [[and]] my brother lives in Oslo.*"],
                                 ["but", "**pretēja**, atšķirīga informācija", "*The hotel was nice, [[but]] the food was terrible.*"],
                                 ["or", "**izvēle** starp iespējām", "*Shall we take a taxi [[or]] walk?*"],
@@ -39,7 +39,7 @@ CARDS = {
     },
     "conj_linkers": {
         "en": {
-            "choice": {"cols": ["Form", "Example"],
+            "choice": {"stack": "rows", "cols": ["Form", "Example"],
                        "rows": [["however", "**contrast**: (.) **However,** + a new sentence", "*The hotel was old. [[However]], the staff were lovely.*"],
                                 ["although", "**contrast**: although + subject + verb, **no comma after it**", "*[[Although]] it was raining, we went out.*"],
                                 ["because", "**reason**: because + subject + verb", "*The flight was late [[because]] it was snowing.*"],
@@ -57,7 +57,7 @@ CARDS = {
             "watch": ["*As soon as* = immediately when: *I'll text you [[as soon as]] I land.*"],
         },
         "lv": {
-            "choice": {"cols": ["Forma", "Piemērs"],
+            "choice": {"stack": "rows", "cols": ["Forma", "Piemērs"],
                        "rows": [["however", "**pretstats**: (.) **However,** + jauns teikums", "*The hotel was old. [[However]], the staff were lovely.*"],
                                 ["although", "**pretstats**: although + teik. priekšmets + darbības vārds, **bez komata aiz tā**", "*[[Although]] it was raining, we went out.*"],
                                 ["because", "**iemesls**: because + teik. priekšmets + darbības vārds", "*The flight was late [[because]] it was snowing.*"],
@@ -77,7 +77,7 @@ CARDS = {
     },
     "conj_clauses": {
         "en": {
-            "choice": {"cols": ["Form", "Example"],
+            "choice": {"stack": "rows", "cols": ["Form", "Example"],
                        "rows": [["Contrast", "**although / even though** + subject + verb", "*[[Even though]] we played well, we lost.*"],
                                 ["", "**despite / in spite of** + **noun** or **-ing**", "*We went out [[despite]] the rain.* ;; *They were late [[in spite of]] leaving early.*"],
                                 ["", "despite / in spite of + **the fact that** + subject + verb", "*We went out [[despite the fact that]] it was raining.*"],
@@ -96,7 +96,7 @@ CARDS = {
             "watch": ["*despite* without *of*, *in spite of* with *of*: *[[despite]] the rain = [[in spite of]] the rain*."],
         },
         "lv": {
-            "choice": {"cols": ["Forma", "Piemērs"],
+            "choice": {"stack": "rows", "cols": ["Forma", "Piemērs"],
                        "rows": [["Pretstats", "**although / even though** + teik. priekšmets + darbības vārds", "*[[Even though]] we played well, we lost.*"],
                                 ["", "**despite / in spite of** + **lietvārds** vai **-ing**", "*We went out [[despite]] the rain.* ;; *They were late [[in spite of]] leaving early.*"],
                                 ["", "despite / in spite of + **the fact that** + teik. priekšmets + darbības vārds", "*We went out [[despite the fact that]] it was raining.*"],
@@ -120,7 +120,7 @@ CARDS = {
 # B2: contrast, purpose, reason and result (test-english.com B2; Murphy Units 113-114)
 CARDS["conj_b2"] = {
     "en": {
-        "choice": {"cols": ["Form", "Example"],
+        "choice": {"stack": "rows", "cols": ["Form", "Example"],
                    "rows": [["Contrast", "**however / nevertheless** + comma, after (.) or (;)", "*We played well. [[Nevertheless]], we lost.*"],
                             ["", "**yet** + subject + verb, after (,) or *and*", "*She was tired, [[yet]] she kept working.*"],
                             ["", "**while / whereas**: two facts side by side", "*I love cooking, [[whereas]] my partner prefers to eat out.*"],
@@ -139,7 +139,7 @@ CARDS["conj_b2"] = {
         "watch": ["*whereas* compares two facts; it does not mean *although*: *[[Although]] it was late, we stayed.*"],
     },
     "lv": {
-        "choice": {"cols": ["Forma", "Piemērs"],
+        "choice": {"stack": "rows", "cols": ["Forma", "Piemērs"],
                    "rows": [["Pretstats", "**however / nevertheless** + komats, pēc (.) vai (;)", "*We played well. [[Nevertheless]], we lost.*"],
                             ["", "**yet** + teik. priekšmets + darbības vārds, pēc (,) vai *and*", "*She was tired, [[yet]] she kept working.*"],
                             ["", "**while / whereas**: divi fakti blakus", "*I love cooking, [[whereas]] my partner prefers to eat out.*"],

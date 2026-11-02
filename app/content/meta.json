@@ -8282,6 +8282,7 @@
     "example": "*It was late, so we left.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "When",
        "Example"
@@ -8368,6 +8369,7 @@
     "signals": "*and, but, or, so, because*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Kad",
        "Piemērs"
@@ -8465,6 +8467,7 @@
     "example": "*The flight was late because of the snow.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Form",
        "Example"
@@ -8563,6 +8566,7 @@
     "signals": "*however, although, because of, then, while*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Forma",
        "Piemērs"
@@ -8674,6 +8678,7 @@
     "example": "*I wrote it down so that I wouldn't forget it.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Form",
        "Example"
@@ -8777,6 +8782,7 @@
     "signals": "*although, despite, so that, in order to, due to*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Forma",
        "Piemērs"
@@ -8892,6 +8898,7 @@
     "example": "*We have therefore decided to close the shop.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Form",
        "Example"
@@ -8995,6 +9002,7 @@
     "signals": "*whereas, nevertheless, yet, in case, owing to, therefore*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
        "Forma",
        "Piemērs"

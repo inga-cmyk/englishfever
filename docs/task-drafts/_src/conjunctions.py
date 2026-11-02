@@ -80,15 +80,15 @@ T.gap("A2.2", I_1 + "I was very tired. ___, I finished the report.", "However | 
 T.gap("A2.2", I_1 + "The match was cancelled because ___ the storm.", "of", L_OF)
 T.gap("A2.2", I_1 + "My phone rang ___ I was driving.", "while | when | as", L_WHILE)
 T.gap("A2.2", "Use the correct form: I'll text you when I ___ at the station. (arrive)", "arrive", L_FUT)
-T.gap("A2.2", I_1 + "First we checked in. ___ we went to the beach.", "Then | Next | Afterwards", L_THEN)
+T.gap("A2.2", I_1 + "First we checked in. ___ we went to the beach.", "Then | Next | Afterwards | Later", L_THEN)
 T.gap("B1.1", I_1 + "___ she studied hard, she failed the exam.", "Although | Though | While", L_ALT)
 T.text("A2.2", "Join with *although*: He was ill. He went to work.", ["Although he was ill, he went to work.", "He went to work although he was ill.", "He went to work, although he was ill."], L_ALT)
 T.text("A2.2", "Join with *however*: I'd love a dog. My flat is too small.", ["I'd love a dog. However, my flat is too small.", "I'd love a dog; however, my flat is too small.", "I would love a dog. However, my flat is too small."], L_HOW)
 T.text("A2.2", "Correct the mistake: When I will finish work, I'll call you.", ["When I finish work, I'll call you.", "When I finish work, I will call you."], L_FUT)
-T.text("A2.2", "Correct the mistake: We stayed at home because the rain.", "We stayed at home because of the rain.", L_OF)
-T.text("B1.1", "Correct the mistake: I had dinner. After, I watched a film.", ["I had dinner. Then I watched a film.", "I had dinner. After that, I watched a film.", "I had dinner. Then, I watched a film.", "I had dinner. After that I watched a film."], L_THEN)
+T.text("A2.2", "Correct the mistake: We stayed at home because the rain.", ["We stayed at home because of the rain.", "We stayed at home due to the rain."], L_OF)
+T.text("B1.1", "Correct the mistake: I had dinner. After, I watched a film.", ["I had dinner. Then I watched a film.", "I had dinner. After that, I watched a film.", "I had dinner. Then, I watched a film.", "I had dinner. After that I watched a film.", "I had dinner. Afterwards, I watched a film.", "I had dinner. Afterwards I watched a film."], L_THEN)
 T.order("A2.2", "although it was expensive we bought it", also=["we bought it although it was expensive"], why=L_ALT)
-T.order("A2.2", "the game was cancelled because of the rain", why=L_OF)
+T.order("A2.2", "the game was cancelled because of the rain", also=["because of the rain the game was cancelled"], why=L_OF)
 T.order("B1.1", "she reads the news while she has breakfast", also=["while she has breakfast she reads the news"], why=L_WHILE)
 T.match("A2.2", "Match each beginning with its ending.", [("The plane was late", "because of the fog."), ("Although the hotel was cheap,", "it was very clean."),
                                                      ("I'll send you the photos", "as soon as I get home."), ("We had lunch.", "Then we visited the castle.")], L_ALL)
@@ -128,7 +128,7 @@ T.gap("B2.1", I_1 + "He wore a hat so ___ not to get sunburnt.", "as", C_NOT)
 T.text("B1.1", "Rewrite with *despite*: Although it was cold, we swam in the sea.",
        ["Despite the cold, we swam in the sea.", "We swam in the sea despite the cold.", "Despite it being cold, we swam in the sea.",
         "Despite the fact that it was cold, we swam in the sea.", "We swam in the sea despite the fact that it was cold."], C_DES)
-T.text("B1.1", "Correct the mistake: I went to the bank for get some money.", ["I went to the bank to get some money.", "I went to the bank in order to get some money."], C_TO)
+T.text("B1.1", "Correct the mistake: I went to the bank for get some money.", ["I went to the bank to get some money.", "I went to the bank in order to get some money.", "I went to the bank so as to get some money."], C_TO)
 T.text("B1.2", "Join with *so that*: I wrote it down. I wouldn't forget it.", ["I wrote it down so that I wouldn't forget it.", "I wrote it down so I wouldn't forget it."], C_THAT)
 T.text("B1.2", "Rewrite with *because of*: We couldn't land because the fog was thick.", ["We couldn't land because of the thick fog.", "We couldn't land because of the fog."], C_DUE)
 T.text("B2.1", "Correct the mistake: Despite of the rain, the match went ahead.", ["Despite the rain, the match went ahead.", "In spite of the rain, the match went ahead."], C_OF)
@@ -177,7 +177,7 @@ T.text("B2.2", "Put *therefore* before the main verb: Sales fell. We have decide
 T.text("B2.1", "Join with *whereas*: I like early mornings. My partner likes late nights.", ["I like early mornings, whereas my partner likes late nights.", "Whereas I like early mornings, my partner likes late nights.", "I like early mornings whereas my partner likes late nights."], D_WH)
 T.order("B2.1", "she kept running even though her legs hurt", also=["even though her legs hurt she kept running"], why=C_DES)
 T.order("B2.2", "we need more staff in order for the shop to open on sundays", also=["in order for the shop to open on sundays we need more staff"], why=D_ORD)
-T.order("B2.1", "the train was cancelled and as a result we missed the meeting", why=D_RES)
+T.order("B2.1", "the train was cancelled and as a result we missed the meeting", also=["the train was cancelled and we missed the meeting as a result"], why=D_RES)
 T.match("B2.1", "Match each beginning with its ending.", [("Pack a raincoat", "in case it rains."), ("The roads were icy.", "As a result, there were many accidents."),
                                                      ("Owing to the strike,", "there were no trains."), ("This brush is", "for cleaning bottles.")], D_ALL)
 

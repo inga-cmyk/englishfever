@@ -54,12 +54,13 @@ final class Engine
             }
             if ($fullLevels !== null) {
                 // levels first: whole levels (A2, B1 ...), with or without topics; no topic = a mix of the topics that have questions there
+                $halfLevels = array_values(array_intersect($meta['levels'], array_map('strval', $fullLevels)));   // a learning-path step sends its own half-levels (A2.2, B1.2 ...)
                 $fullLevels = array_values(array_intersect(Content::FULL_LEVELS, array_map('strval', $fullLevels)));
-                $allowed = array_values(array_filter($meta['levels'], fn($l) => in_array(substr($l, 0, 2), $fullLevels, true)));
-                if (!$fullLevels) throw new ApiError('Choose a level.', 400);
+                $allowed = array_values(array_filter($meta['levels'], fn($l) => in_array($l, $halfLevels, true) || in_array(substr($l, 0, 2), $fullLevels, true)));
+                if (!$fullLevels && !$halfLevels) throw new ApiError('Choose a level.', 400);
                 if (!$allowed) throw new ApiError('No questions at this level yet.', 404);
-                $counts = Content::levelCounts()['by_skill'];
-                $have = fn($sid) => array_sum(array_map(fn($f) => $counts[$sid][$f] ?? 0, $fullLevels));
+                $counts = Content::levelCounts()['by_half'];
+                $have = fn($sid) => array_sum(array_map(fn($f) => $counts[$sid][$f] ?? 0, $allowed));
                 $skills = array_values(array_filter(array_intersect($skills, $all), fn($sid) => $have($sid) > 0));
                 if (!$skills) $skills = array_values(array_filter($all, fn($sid) => $have($sid) >= 8));   // a mix
                 if (!$skills) throw new ApiError('No questions at this level yet.', 404);

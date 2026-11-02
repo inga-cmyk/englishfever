@@ -56,3 +56,4 @@ so results before and after it are not mixed.
 - 28 Oct 2026: faulty reported-questions tasks corrected (rq-B22-1a/2a/3a); topic numbers for reported questions
   before this date are inflated (wrong tasks made the app serve the topic more often).
 - 1 Nov 2026: exposure, served_why, lang, feedback time, app version recorded; test accounts can be marked.
+- 2 Nov 2026: My learning path rebuilt from the test-english level lists; a path step now asks only the tasks of its level (A2.1, A2.2, B1, B1+, B2, C1), and mastery of a step counts only answers at those levels. Path sessions before and after this date are not comparable.

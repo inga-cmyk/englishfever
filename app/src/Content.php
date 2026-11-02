@@ -120,13 +120,14 @@ final class Content
     public static function levelCounts(): array
     {
         $all = array_fill_keys(self::FULL_LEVELS, 0);
-        $by = [];
+        $by = []; $half = [];
         foreach (self::items() as $it) {
             $full = substr($it['level'], 0, 2);
             $all[$full] = ($all[$full] ?? 0) + 1;
             $by[$it['skill']][$full] = ($by[$it['skill']][$full] ?? 0) + 1;
+            $half[$it['skill']][$it['level']] = ($half[$it['skill']][$it['level']] ?? 0) + 1;
         }
-        return ['all' => $all, 'by_skill' => $by];
+        return ['all' => $all, 'by_skill' => $by, 'by_half' => $half];
     }
 
     /** The kind of task a learner sees (teacher, 28 October): recognise = choose or match, use = fill in, word bank, word order, write = typed sentence or open writing. */

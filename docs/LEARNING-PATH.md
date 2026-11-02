@@ -1,3 +1,5 @@
+> **Replaced on 2 November 2026:** the path now follows `docs/LEVEL-LISTS-test-english.md` (one path per level, A1 list = A2.1 basics, A2, B1, B1+, B2, C1); the steps are in `app/src/Path.php`. The text below is the earlier draft.
+
 # My learning path: topic order (draft for the teacher, 28 October)
 
 The order follows the course books the teacher gave (A2 Grammar units 1–8, the Pre-Intermediate book, the B1 and B2 reference lists in `NOTES-picker-and-levels.md`). Each line is one step on the path. **App topic** is the topic id that trains it; *no topic yet* means the step is shown later, when tasks exist.

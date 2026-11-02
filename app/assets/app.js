@@ -323,7 +323,7 @@
   function startPathStep(el, st) {
     el.disabled = true;
     track('path_step', st.id);
-    api('session/start', { mode: 'practice', skills: st.topics, levels: [st.level], length: (st.below && !st.answers) ? 6 : 10, source: (st.below && !st.answers) ? 'path_check' : 'path' }).then(function (r) {
+    api('session/start', { mode: 'practice', skills: st.topics, levels: st.levels || [st.level], length: (st.below && !st.answers) ? 6 : 10, source: (st.below && !st.answers) ? 'path_check' : 'path' }).then(function (r) {
       state.sess = newSess(r.session, r.item); state.sess.pathStep = st.id;
       try { localStorage.setItem('ef_pathstep', JSON.stringify({ sid: r.session.id, step: st.id })); } catch (e) {}   // survives a reload in the middle
       location.hash = '#/session';

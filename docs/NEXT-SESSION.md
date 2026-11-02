@@ -35,6 +35,10 @@ and the top of `docs/CHANGELOG-practice-app.md`. Reply to Inga in Latvian.
   screenshots of the explanation pages instead. B2 "clauses of contrast, purpose, reason and result" and
   "discourse markers" not done yet (no screenshot).
 
+## Status 2 November, morning
+- Done: learning path from the level lists (app/src/Path.php), step 2 session mix 60/25/15 with variant A and rule C (zip 2026-11-02 05:08).
+- Next: B2 joining-ideas topics (Inga sends screenshots), Learning evidence additions, new tasks where banks run out or a path step falls back to a lower level (C1 tenses, B2 future), A2.2 tasks for past perfect, might, second conditional, reported speech, relative clauses.
+
 ## Plan, in order (agreed with Inga)
 1. Done: research data step 1 (exposure, served_why, lang, feedback time, app version per answer; test accounts).
    Inga still has to mark "Fox" as a test account after uploading.

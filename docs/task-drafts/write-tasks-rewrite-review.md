@@ -1,0 +1,44 @@
+# Open writing tasks: what changed (3 November)
+
+Old instruction → new instruction. The check still looks for the form; report and inversion tasks keep their start.
+
+- **ps-A21-6a-r4**: ~~Write one sentence about what your friend or colleague does every day. Start with He or She.~~ → Write one sentence about something a friend or colleague does every day.
+- **ps-A22-6a-r2**: ~~Write a question to ask a new colleague about their free time. Start with Do you or What do you.~~ → You meet a new colleague. Ask them one question about their free time.
+- **ps-B11-6a-r3**: ~~Write two sentences about a timetable, for example a train, a class or a shop. Use the present simple with a time, as in: The train leaves at 7.45.~~ → Write two sentences about a timetable: a train, a class, a shop or a film.
+- **pc-A22-6a-r2**: ~~Write a question to ask a friend about their plans for tonight. Use Are you + verb-ing.~~ → Ask a friend one question about their plans for tonight.
+- **pc-B11-6a-r2**: ~~Write one sentence about a change in your life or your city these days. Use the present continuous.~~ → What is changing in your life or your city these days? Write one sentence.
+- **pa-A21-6a-r4**: ~~Write one sentence about what you did yesterday. Use a past verb and the word yesterday.~~ → What did you do yesterday? Write one sentence.
+- **pa-A22-6a-r4**: ~~Write two short sentences about your last holiday or day off. Use the past simple.~~ → Write two short sentences about your last holiday or day off.
+- **pac-A22-6a-r2**: ~~Write a sentence about what you were doing at 7 pm yesterday. Use was/were + verb-ing.~~ → A friend phoned you at 7 pm yesterday. What was going on at that moment? Write one sentence.
+- **pac-B11-6a-r4**: ~~Write one sentence with 'when' about something that interrupted you. Use the past continuous and the past simple.~~ → Write one sentence about a time when something interrupted you.
+- **pac-B12-6a-r2**: ~~Write a sentence about a plan you had but did not do. Use was/were going to and but.~~ → Write one sentence about a plan you had that did not happen, and why.
+- **pp-A22-6a-r2**: ~~Write one sentence about something you have never done but would like to do. Use I have never.~~ → What have you never done but would like to do? Write one sentence.
+- **ppf-B12-6a-r2**: ~~Write one sentence about something that had already happened when you arrived somewhere. Use When I arrived and had already.~~ → You arrived somewhere too late. Write one sentence about what had happened before you got there.
+- **fu-A21-6a-r2**: ~~Write one sentence about your plan for tomorrow. Use I am going to.~~ → What are you planning to do tomorrow? Write one sentence.
+- **fu-A22-6a-r2**: ~~Write a sentence about your plan for next weekend. Use going to.~~ → What are your plans for next weekend? Write one sentence.
+- **psp-A22-6a-r2**: ~~Write one sentence about a product in your country. Use is made, is grown or are produced.~~ → Write one sentence about a product from your country and where or how it is produced.
+- **psp-B11-6a-r2**: ~~Write one sentence about how something is made or done at your workplace. Use the passive.~~ → How is something made or done at your workplace? Write one sentence.
+- **psp-B12-6a-r2**: ~~Write two sentences about how a product or service in your company is made or delivered. Use the passive and use by in one sentence.~~ → Write two sentences about how a product or service in your company is made or delivered, and who does it.
+- **pasp-A22-6a-r2**: ~~Write one sentence about a famous building or invention. Use was/were built, invented or discovered.~~ → Write one sentence about when or where a famous building or invention was created.
+- **pasp-B11-6a-r2**: ~~Write two sentences about something that was done at your workplace last week. Use the passive.~~ → Write two sentences about things that were done at your workplace last week. You do not need to say who did them.
+- **pasp-B12-6a-r2**: ~~Write two sentences to a customer: say what was done to fix a problem. Use the passive.~~ → A customer complained about a problem. Write two sentences to tell them what was done to fix it.
+- **pcp-B12-6a-r2**: ~~Write one sentence about something that is being built, repaired or changed in your area now. Use is/are being.~~ → What is being built, repaired or changed in your area at the moment? Write one sentence.
+- **ppp-B11-6a-r3**: ~~Write a sentence about something that has been done at your home or office this week. Use has/have been + past participle.~~ → What has been done at your home or office this week? Write one sentence. You do not need to say who did it.
+- **ppp-B12-6a-r3**: ~~Write two sentences about changes that have been made in your company, school or city. Use has/have been + past participle at least once.~~ → Write two sentences about changes that have been made in your company, school or city.
+- **fup-B11-6a-r3**: ~~Write one sentence about something that will be done in your city or company next year. Use will be + past participle.~~ → What will be done in your city or company next year? Write one sentence.
+- **fup-B12-6a-r3**: ~~Write two sentences for a notice at work about changes next month. Use will be + past participle.~~ → Write a two-sentence notice for your workplace about changes next month: say what will happen, not who will do it.
+- **cz-A22-6a-r2**: ~~Write a sentence about something that always happens in your office or at home. Start with If and use the present simple.~~ → What always happens at home or at work in a certain situation? Write one sentence with *if*.
+- **cz-B11-6a-r2**: ~~Write a rule for a new colleague. Use If + present simple, then an instruction (for example: If the light is red, wait).~~ → Write one rule for a new colleague with *if*.
+- **cf-A22-6a-r2**: ~~Write a promise to a colleague. Start with If, use the present simple after if and will in the second part. Put a comma after the if-part.~~ → Promise a colleague something with *if*.
+- **cf-B12-6a-r2**: ~~Write a sentence with in case (for example: I'll take an umbrella in case it rains). Use the present simple after in case.~~ → You are packing for a trip. Write one sentence about something you will take just to be safe.
+- **cs-B11-6a-r2**: ~~Write a sentence about what you would do if you won a free holiday. Start with If, use the past simple after if and would in the second part.~~ → Imagine you won a free holiday. What would you do? Write one sentence.
+- **cs-B12-6a-r2**: ~~Write a sentence about an unlikely job you would like. Use if + past simple and would.~~ → Write one sentence about an unlikely job you would like and what you would do.
+- **cs-B21-6a-r2**: ~~Write advice for a colleague who works too much. Start with If I were you and use would.~~ → A colleague works 12 hours a day. Give them advice in one sentence, from your own point of view.
+- **ct-B12-6a-r3**: ~~Write a sentence about a mistake you made once (for example, a missed bus). Start with If I had and use would have or would not have (wouldn't have).~~ → Write one sentence about a mistake you once made and what would have been different without it.
+- **ct-B21-6a-r3**: ~~Write a sentence about a decision that changed your life. Start with If I hadn't and use would have or would not have (wouldn't have).~~ → Write one sentence about a decision that changed your life: imagine you had not made it.
+- **ct-B22-6a-r2**: ~~Write a sentence about what would have happened in history if one thing had been different (for example a famous discovery).~~ → Write one sentence about what would have happened in history if one thing had been different.
+- **cm-B21-6a-r2**: ~~Write a sentence about how a past decision affects you now. Start with If I had and use would + base verb (not would have).~~ → How does a past decision still affect you today? Imagine you had decided differently. Write one sentence.
+- **cm-B22-6a-r2**: ~~Write a mixed conditional sentence: a present quality + a past result (for example: If I were braver, I would have ...).~~ → Write one sentence about how a quality of yours (patient, brave, organised …) would have changed something in the past.
+- **ip-B11-6a-r2**: ~~Write a polite indirect question to ask a colleague where the meeting room is. Start with Could you tell me.~~ → Ask a colleague politely, in one indirect question, where the meeting room is.
+- **ip-B12-6a-r2**: ~~Write an indirect question to ask a stranger whether the café takes cards. Start with Do you know if.~~ → Ask a stranger politely, in one indirect question, whether the café takes cards.
+- **ip-B21-6a-r2**: ~~Write a polite indirect question to ask when a report will be ready. Start with I was wondering.~~ → Ask politely, in one indirect question, when a report will be ready.

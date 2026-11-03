@@ -454,6 +454,11 @@ def revise(original):
         wrong=['The manager apologised the delay and promised that it would not happen again.',
                'The manager apologised for the delay and promised to that it would not happen again.',
                'The manager apologised for the delay and promised it not happening again.'])
+    # open writing tasks that gave the answer away (teacher, 3 November): write_fixes.py
+    import write_fixes
+    for _id, _ch in write_fixes.FIX.items():
+        _base = re.sub(r'-r\d+$', '', _id)   # by_id holds the original ids; the item may already be a later revision
+        if _base in by_id: report_fix(_base, **_ch)
     # reported 3 November: plain wording, wrong options that are wrong, a writing task that does not give the form away
     report_fix('pc-A21-2a', q='Which sentence is about this moment?')
     report_fix('pc-A21-5a', q='Choose the correct question.', wrong=['What do you doing now?', 'What you are doing now?', 'What are you do now?'])

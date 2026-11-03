@@ -39,7 +39,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 165, 'Unexpected correction count');   // +3: pc-A21-2a, pc-A21-5a, pc-A21-6a (3 November)
+check(count($retired) === 201, 'Unexpected correction count');   // +36: open writing tasks without the answer given away (write_fixes.py, 3 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

@@ -126,17 +126,17 @@
 "why_lv": "Pēc *does* lieto pamatformu: *work*, nevis *works*. *Does he work here?*"
 },
 {
-"id": "ps-A21-6a-r3",
+"id": "ps-A21-6a-r4",
 "skill": "present_simple",
 "level": "A2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about a daily habit of your friend or colleague. Start with He or She and use an action verb in the present simple (for example, works, goes or has breakfast).",
+"q": "Write one sentence about something a friend or colleague does every day.",
 "must": [
 [
-"^\\s*(he|she)\\s+(?:(?:\\w+ly|usually|often|always|sometimes|never|also|still|just)\\s+)?(?!is\\b|was\\b)\\w+s\\b",
-"Use *He* or *She* with a present-simple verb, such as *works*, *goes* or *has*.",
-"Lieto *He* vai *She* ar darbības vārdu Present Simple, piemēram, *works*, *goes* vai *has*."
+"\\b(he|she|it|my\\s+\\w+|our\\s+\\w+|[a-z]+)\\s+(?:(?:usually|often|always|sometimes|never|also|still|just|\\w+ly)\\s+)?(?!is\\b|was\\b)\\w+(?<!ss)s\\b",
+"One person: the verb ends in *-s*: *She starts work at eight.*",
+"Viena persona: darbības vārdam galā *-s*: *She starts work at eight.*"
 ]
 ],
 "model": "She starts work at eight every day.",
@@ -261,22 +261,22 @@
 "why_lv": "Ar *he, she, it* darbības vārdam Present Simple pievieno *-s* vai *-es*: *he goes*."
 },
 {
-"id": "ps-A22-6a",
+"id": "ps-A22-6a-r2",
 "skill": "present_simple",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a question to ask a new colleague about their free time. Start with Do you or What do you.",
+"q": "You meet a new colleague. Ask them one question about their free time.",
 "must": [
 [
-"^\\s*(do|what do|where do|when do|how often do|who do)\\s+you\\b",
-"Start with *Do you ...* or *What do you ...*",
-"Sāc ar *Do you* ... vai *What do you* ..."
+"\\bdo\\s+you\\b",
+"A present simple question: *Do you …?* or *What do you …?*",
+"Present Simple jautājums: *Do you …?* vai *What do you …?*"
 ],
 [
 "\\?\\s*$",
-"End the question with a question mark.",
-"Jautājuma beigās liec jautājuma zīmi."
+"End the question with *?*",
+"Jautājuma beigās liec *?*"
 ]
 ],
 "model": "What do you usually do at the weekend?",
@@ -387,12 +387,12 @@
 "why_lv": "Stāvokļa darbības vārdus (*want, need, like, know*) parasti nelieto Continuous formā."
 },
 {
-"id": "ps-B11-6a-r2",
+"id": "ps-B11-6a-r3",
 "skill": "present_simple",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences about a timetable, for example a train, a class or a shop. Use the present simple with a time, as in: The train leaves at 7.45.",
+"q": "Write two sentences about a timetable: a train, a class, a shop or a film.",
 "must": [
 [
 "\\b(starts?|begins?|opens?|leaves?|ends?|finish(es)?|closes?|arrives?)\\b.{0,40}\\bat\\s+(?:\\d|[a-z])",
@@ -644,12 +644,12 @@
 "why_lv": "Continuous rāda pagaidu situāciju."
 },
 {
-"id": "pc-A22-6a",
+"id": "pc-A22-6a-r2",
 "skill": "present_continuous",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a question to ask a friend about their plans for tonight. Use Are you + verb-ing.",
+"q": "Ask a friend one question about their plans for tonight.",
 "must": [
 [
 "\\bare\\s+you\\s+\\w+ing\\b",
@@ -767,12 +767,12 @@
 "why_lv": "Present Continuous bieži rāda, ka kaut kas ir pagaidu vai mainās."
 },
 {
-"id": "pc-B11-6a",
+"id": "pc-B11-6a-r2",
 "skill": "present_continuous",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about a change in your life or your city these days. Use the present continuous.",
+"q": "What is changing in your life or your city these days? Write one sentence.",
 "must": [
 [
 "\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b",
@@ -898,22 +898,17 @@
 "why_lv": "*Buy* ir neregulārs darbības vārds. Pagātnes forma ir *bought*, nevis *buyed*."
 },
 {
-"id": "pa-A21-6a-r3",
+"id": "pa-A21-6a-r4",
 "skill": "past_simple",
 "level": "A2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about what you did yesterday. Use a past verb and the word yesterday.",
+"q": "What did you do yesterday? Write one sentence.",
 "must": [
 [
 "\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
-"Use a verb in the past (for example: *met, went, worked*).",
-"Lieto darbības vārdu pagātnē (piemēram, *met, went, worked*)."
-],
-[
-"\\byesterday\\b",
-"Use the word *yesterday.*",
-"Lieto vārdu *yesterday*."
+"Use a past form: *I met …, I went …, I watched …*",
+"Lieto pagātnes formu: *I met …, I went …, I watched …*"
 ]
 ],
 "model": "Yesterday I met a friend for coffee.",
@@ -1027,12 +1022,12 @@
 "why_lv": "Jautājums ir Past Simple, tāpēc par pabeigtu laiku atbild ar Past Simple."
 },
 {
-"id": "pa-A22-6a-r3",
+"id": "pa-A22-6a-r4",
 "skill": "past_simple",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write two short sentences about your last holiday or day off. Use the past simple.",
+"q": "Write two short sentences about your last holiday or day off.",
 "must": [
 [
 "\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
@@ -1289,12 +1284,12 @@
 "why_lv": "Jautājumā ir Past Continuous, tāpēc atbilde arī apraksta to, kas bija procesā."
 },
 {
-"id": "pac-A22-6a",
+"id": "pac-A22-6a-r2",
 "skill": "past_continuous",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about what you were doing at 7 pm yesterday. Use was/were + verb-ing.",
+"q": "A friend phoned you at 7 pm yesterday. What was going on at that moment? Write one sentence.",
 "must": [
 [
 "\\b(was|were)\\s+\\w+ing\\b",
@@ -1412,27 +1407,22 @@
 "why_lv": "Pēkšņai īsai darbībai, kas pārtrauc citu darbību, lieto Past Simple."
 },
 {
-"id": "pac-B11-6a-r3",
+"id": "pac-B11-6a-r4",
 "skill": "past_continuous",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence with 'when' about something that interrupted you. Use the past continuous and the past simple.",
+"q": "Write one sentence about a time when something interrupted you.",
 "must": [
 [
 "\\b(was|were)\\s+\\w+ing\\b",
-"Use *was/were* + verb-ing for the longer action.",
-"Garākai darbībai lieto *was/were* + darbības vārds ar *-ing*."
-],
-[
-"\\bwhen\\b",
-"Use the word *when.*",
-"Lieto vārdu *when*."
+"Say what was going on: *I was cooking …*",
+"Pasaki, kas notika: *I was cooking …*"
 ],
 [
 "\\b(\\w+ed|went|had|saw|did|made|took|got|came|ate|bought|met|read|wrote|drank|gave|found|was|were|slept|left|ran|swam|drove|spoke|won|felt|sat|stood|heard|said|knew|thought|brought|taught|paid|sent|told|began|lost|wore|flew|sang|woke|rang|fell|broke|chose|forgot|caught)\\b",
-"Use the past simple for the short action (*rang, arrived, called ...*).",
-"Īsajai darbībai lieto Past Simple (*rang, arrived, called* ...)."
+"Say what happened in the middle of it: *… when the phone rang.*",
+"Pasaki, kas notika tā vidū: *… when the phone rang.*"
 ]
 ],
 "model": "I was cooking dinner when my friend called.",
@@ -1545,12 +1535,12 @@
 "why_lv": "Pagātnes forma + *but* rāda, ka plāns mainījās: *were going to*."
 },
 {
-"id": "pac-B12-6a",
+"id": "pac-B12-6a-r2",
 "skill": "past_continuous",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about a plan you had but did not do. Use was/were going to and but.",
+"q": "Write one sentence about a plan you had that did not happen, and why.",
 "must": [
 [
 "\\b(was|were)\\s+going\\s+to\\s+\\w+",
@@ -1674,17 +1664,17 @@
 "why_lv": "Īsā atbilde atkārto jautājuma palīgdarbības vārdu: *Have you* ...? *Yes, I have.*"
 },
 {
-"id": "pp-A22-6a",
+"id": "pp-A22-6a-r2",
 "skill": "present_perfect",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about something you have never done but would like to do. Use I have never.",
+"q": "What have you never done but would like to do? Write one sentence.",
 "must": [
 [
-"\\bi\\s*(have|'ve)\\s+never\\s+\\w+",
-"Use *I have never* + past participle, for example: *I have never been to Japan.*",
-"Lieto *I have never* + 3. forma, piemēram: *I have never been to Japan.*"
+"\\b(have|has|'ve)\\s+never\\s+\\w+",
+"Your life up to now: *I have never …*",
+"Dzīve līdz šim: *I have never …*"
 ]
 ],
 "model": "I have never been to Japan.",
@@ -2315,22 +2305,22 @@
 "why_lv": "Sapulce sākās pirms Toma ierašanās, tāpēc sapulcei lieto Past Perfect."
 },
 {
-"id": "ppf-B12-6a",
+"id": "ppf-B12-6a-r2",
 "skill": "past_perfect",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about something that had already happened when you arrived somewhere. Use When I arrived and had already.",
+"q": "You arrived somewhere too late. Write one sentence about what had happened before you got there.",
 "must": [
 [
-"\\bhad\\s+already\\s+\\w+",
-"Use *had already* + past participle.",
-"Lieto *had already* + 3. forma."
+"\\bhad\\s+(already\\s+)?\\w+",
+"What happened before: *had* + 3rd form.",
+"Kas notika pirms tam: *had* + 3. forma."
 ],
 [
-"\\bwhen\\b|\\bby the time\\b",
-"Use *When I arrived ...* or *By the time ...*",
-"Lieto *When I arrived* ... vai *By the time* ..."
+"\\bwhen\\b|\\bby the time\\b|\\bbefore\\b",
+"Join the two moments: *When I arrived, …*",
+"Savieno abus brīžus: *When I arrived, …*"
 ]
 ],
 "model": "When I arrived, the film had already started.",
@@ -2463,17 +2453,17 @@
 "why_lv": "Jautājums ir par nākotnes plānu, tāpēc atbild ar *going to*."
 },
 {
-"id": "fu-A21-6a",
+"id": "fu-A21-6a-r2",
 "skill": "future",
 "level": "A2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about your plan for tomorrow. Use I am going to.",
+"q": "What are you planning to do tomorrow? Write one sentence.",
 "must": [
 [
-"\\b(i am|i'm)\\s+going\\s+to\\s+\\w+",
-"Use *I am going to* + base verb, for example: *I'm going to visit a friend.*",
-"Lieto *I am going to* + pamatforma, piemēram: *I'm going to visit a friend.*"
+"\\b(am|is|are|'m|'s|'re)\\s+going\\s+to\\s+\\w+|\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b|\\b(will|'ll)\\s+\\w+",
+"Say what you plan: *I'm going to …*, *I'm meeting …* or *I'll …*",
+"Pasaki, ko plāno: *I'm going to …*, *I'm meeting …* vai *I'll …*"
 ]
 ],
 "model": "I'm going to visit a friend tomorrow.",
@@ -2592,17 +2582,17 @@
 }
 },
 {
-"id": "fu-A22-6a",
+"id": "fu-A22-6a-r2",
 "skill": "future",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about your plan for next weekend. Use going to.",
+"q": "What are your plans for next weekend? Write one sentence.",
 "must": [
 [
-"\\b(am|'m|is|are|'s|'re)\\s+going\\s+to\\s+\\w+",
-"Use *am/is/are going to* + base verb.",
-"Lieto *am/is/are going to* + pamatforma."
+"\\b(am|is|are|'m|'s|'re)\\s+going\\s+to\\s+\\w+|\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b|\\b(will|'ll)\\s+\\w+",
+"Say what you plan: *I'm going to …*, *I'm meeting …* or *I'll …*",
+"Pasaki, ko plāno: *I'm going to …*, *I'm meeting …* vai *I'll …*"
 ]
 ],
 "model": "I'm going to visit my parents next weekend.",
@@ -2987,12 +2977,12 @@
 "why_lv": "Ciešamo kārtu lieto, kad svarīgāka ir darbība vai objekts, nevis darītājs."
 },
 {
-"id": "psp-A22-6a",
+"id": "psp-A22-6a-r2",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about a product in your country. Use is made, is grown or are produced.",
+"q": "Write one sentence about a product from your country and where or how it is produced.",
 "must": [
 [
 "\\b(is|are)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
@@ -3111,12 +3101,12 @@
 "why_lv": "Ciešamā kārta uzmanību patur uz darbību, un cilvēks nav minēts."
 },
 {
-"id": "psp-B11-6a",
+"id": "psp-B11-6a-r2",
 "skill": "present_simple_passive",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about how something is made or done at your workplace. Use the passive.",
+"q": "How is something made or done at your workplace? Write one sentence.",
 "must": [
 [
 "\\b(is|are)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
@@ -3234,12 +3224,12 @@
 "why_lv": "Ciešamā kārta novirza uzmanību uz datiem."
 },
 {
-"id": "psp-B12-6a",
+"id": "psp-B12-6a-r2",
 "skill": "present_simple_passive",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences about how a product or service in your company is made or delivered. Use the passive and use by in one sentence.",
+"q": "Write two sentences about how a product or service in your company is made or delivered, and who does it.",
 "must": [
 [
 "\\b(is|are)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
@@ -3357,12 +3347,12 @@
 "why_lv": "Ciešamā kārta pagātnē: *was/were* + 3. forma. *Bike* = vienskaitlis, tāpēc *was stolen*."
 },
 {
-"id": "pasp-A22-6a",
+"id": "pasp-A22-6a-r2",
 "skill": "past_simple_passive",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about a famous building or invention. Use was/were built, invented or discovered.",
+"q": "Write one sentence about when or where a famous building or invention was created.",
 "must": [
 [
 "\\b(was|were)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
@@ -3485,12 +3475,12 @@
 "why_lv": "Ziņās bieži lieto ciešamo kārtu, ja darītājs nav zināms."
 },
 {
-"id": "pasp-B11-6a",
+"id": "pasp-B11-6a-r2",
 "skill": "past_simple_passive",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences about something that was done at your workplace last week. Use the passive.",
+"q": "Write two sentences about things that were done at your workplace last week. You do not need to say who did them.",
 "must": [
 [
 "\\b(was|were)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
@@ -3619,12 +3609,12 @@
 "why_lv": "Ciešamā kārta neuzsver, kas darbību veica, un skan neitrālāk."
 },
 {
-"id": "pasp-B12-6a",
+"id": "pasp-B12-6a-r2",
 "skill": "past_simple_passive",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences to a customer: say what was done to fix a problem. Use the passive.",
+"q": "A customer complained about a problem. Write two sentences to tell them what was done to fix it.",
 "must": [
 [
 "\\b(was|were)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
@@ -3742,12 +3732,12 @@
 "why_lv": "*Is fixed* nozīmē, ka darbs pabeigts. *Is being fixed* nozīmē, ka tas notiek."
 },
 {
-"id": "pcp-B12-6a",
+"id": "pcp-B12-6a-r2",
 "skill": "present_continuous_passive",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about something that is being built, repaired or changed in your area now. Use is/are being.",
+"q": "What is being built, repaired or changed in your area at the moment? Write one sentence.",
 "must": [
 [
 "\\b(is|are)\\s+being\\s+\\w+",
@@ -3861,12 +3851,12 @@
 "why_lv": "*The email has been sent* izmanto *has been +* 3. formu, lai paziņotu par paveiktu darbību. Arī *The email was sent* ir pareizs teikums, bet tajā lietots Past Simple."
 },
 {
-"id": "ppp-B11-6a-r2",
+"id": "ppp-B11-6a-r3",
 "skill": "present_perfect_passive",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about something that has been done at your home or office this week. Use has/have been + past participle.",
+"q": "What has been done at your home or office this week? Write one sentence. You do not need to say who did it.",
 "must": [
 [
 "(?:\\b(?:has|have)|'(?:s|ve))\\s+been\\s+\\w+",
@@ -3980,12 +3970,12 @@
 "why_lv": "Present Perfect = saikne ar tagadni."
 },
 {
-"id": "ppp-B12-6a-r2",
+"id": "ppp-B12-6a-r3",
 "skill": "present_perfect_passive",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences about changes that have been made in your company, school or city. Use has/have been + past participle at least once.",
+"q": "Write two sentences about changes that have been made in your company, school or city.",
 "must": [
 [
 "(?:\\b(?:has|have)|'(?:s|ve))\\s+been\\s+\\w+",
@@ -4103,12 +4093,12 @@
 "why_lv": "Ciešamā kārta patur uzmanību uz failiem."
 },
 {
-"id": "fup-B11-6a-r2",
+"id": "fup-B11-6a-r3",
 "skill": "future_passive",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write one sentence about something that will be done in your city or company next year. Use will be + past participle.",
+"q": "What will be done in your city or company next year? Write one sentence.",
 "must": [
 [
 "(?:\\bwill|'ll)\\s+be\\s+\\w+",
@@ -4221,12 +4211,12 @@
 "why_lv": "Paziņojumos bieži lieto ciešamo kārtu: *will be informed*."
 },
 {
-"id": "fup-B12-6a-r2",
+"id": "fup-B12-6a-r3",
 "skill": "future_passive",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences for a notice at work about changes next month. Use will be + past participle.",
+"q": "Write a two-sentence notice for your workplace about changes next month: say what will happen, not who will do it.",
 "must": [
 [
 "(?:\\bwill|'ll)\\s+be\\s+\\w+",
@@ -4357,12 +4347,12 @@
 "why_lv": "Zero conditional abi darbības vārdi ir Present Simple. *Will* nelieto."
 },
 {
-"id": "cz-A22-6a",
+"id": "cz-A22-6a-r2",
 "skill": "cond_zero",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about something that always happens in your office or at home. Start with If and use the present simple.",
+"q": "What always happens at home or at work in a certain situation? Write one sentence with *if*.",
 "must": [
 [
 "^\\s*if\\b",
@@ -4471,12 +4461,12 @@
 "why_lv": "Noteikumam lieto *if* + Present Simple, tad norādījumu. Pēc *if* nelieto *will*."
 },
 {
-"id": "cz-B11-6a",
+"id": "cz-B11-6a-r2",
 "skill": "cond_zero",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a rule for a new colleague. Use If + present simple, then an instruction (for example: If the light is red, wait).",
+"q": "Write one rule for a new colleague with *if*.",
 "must": [
 [
 "^\\s*if\\b",
@@ -4588,12 +4578,12 @@
 "why_lv": "Pēc *if* lieto Present Simple: *If I have time, I'll call you.*"
 },
 {
-"id": "cf-A22-6a",
+"id": "cf-A22-6a-r2",
 "skill": "cond_first",
 "level": "A2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a promise to a colleague. Start with If, use the present simple after if and will in the second part. Put a comma after the if-part.",
+"q": "Promise a colleague something with *if*.",
 "must": [
 [
 "^\\s*if\\b",
@@ -4923,12 +4913,12 @@
 "why_lv": "Reāls nākotnes nosacījums: *if* + Present Simple, *will* + pamatforma."
 },
 {
-"id": "cf-B12-6a",
+"id": "cf-B12-6a-r2",
 "skill": "cond_first",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence with in case (for example: I'll take an umbrella in case it rains). Use the present simple after in case.",
+"q": "You are packing for a trip. Write one sentence about something you will take just to be safe.",
 "must": [
 [
 "\\bin case\\b",
@@ -5035,27 +5025,22 @@
 "why_lv": "Padomam saka: *If I were you, I would* + pamatforma."
 },
 {
-"id": "cs-B11-6a",
+"id": "cs-B11-6a-r2",
 "skill": "cond_second",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about what you would do if you won a free holiday. Start with If, use the past simple after if and would in the second part.",
+"q": "Imagine you won a free holiday. What would you do? Write one sentence.",
 "must": [
 [
-"^\\s*if\\b",
-"Start with *If.*",
-"Sāc ar *If*."
+"\\bif\\b",
+"Start the imagined situation with *If …*",
+"Iedomāto situāciju sāc ar *If …*"
 ],
 [
 "\\b(would|'d)\\b",
-"Use *would* in the second part.",
-"Otrajā daļā lieto *would*."
-],
-[
-"^(?!\\s*if\\b(?:[^,]*\\b(?:will|would)\\b[^,]*,|(?!.*,)\\s+(?:(?:the|my|our|your|his|her|their|this|that)\\s+)?\\w+\\s+(?:would|will|'d)\\b))",
-"Use the past simple after *if* (not *would*): *If I won a holiday, I would go to Iceland.*",
-"Pēc *if* lieto Past Simple (bez *would*): *If I won a holiday, I would go to Iceland.*"
+"The result: *would* + verb.",
+"Rezultāts: *would* + darbības vārds."
 ]
 ],
 "model": "If I won a free holiday, I would go to Iceland.",
@@ -5211,27 +5196,22 @@
 "why_lv": "Padoms: *If I were you, I would* + pamatforma."
 },
 {
-"id": "cs-B12-6a",
+"id": "cs-B12-6a-r2",
 "skill": "cond_second",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about an unlikely job you would like. Use if + past simple and would.",
+"q": "Write one sentence about an unlikely job you would like and what you would do.",
 "must": [
 [
-"^\\s*if\\b",
-"Start with *If.*",
-"Sāc ar *If*."
+"\\bif\\b",
+"Start the imagined situation with *If …*",
+"Iedomāto situāciju sāc ar *If …*"
 ],
 [
 "\\b(would|'d)\\b",
-"Use *would* in the second part.",
-"Otrajā daļā lieto *would*."
-],
-[
-"^(?!\\s*if\\b(?:[^,]*\\b(?:will|would)\\b[^,]*,|(?!.*,)\\s+(?:(?:the|my|our|your|his|her|their|this|that)\\s+)?\\w+\\s+(?:would|will|'d)\\b))",
-"Use the past simple after *if* (not *would*): *If I were a pilot, I would fly.*",
-"Pēc *if* lieto Past Simple (bez *would*): *If I were a pilot, I would fly.*"
+"The result: *would* + verb.",
+"Rezultāts: *would* + darbības vārds."
 ]
 ],
 "model": "If I were a pilot, I would fly to Iceland every weekend.",
@@ -5323,20 +5303,22 @@
 "wrong_why": {}
 },
 {
-"id": "cs-B21-6a",
+"id": "cs-B21-6a-r2",
 "skill": "cond_second",
 "level": "B2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write advice for a colleague who works too much. Start with If I were you and use would.",
+"q": "A colleague works 12 hours a day. Give them advice in one sentence, from your own point of view.",
 "must": [
 [
-"^\\s*if i (were|was) you\\b",
-"Start with *If I were you.*"
+"\\bif i (were|was) you\\b",
+"Advice from your point of view: *If I were you, …*",
+"Padoms no tava skatpunkta: *If I were you, …*"
 ],
 [
 "\\b(would|'d)\\b",
-"Use *would* in the second part."
+"Then: *I would …*",
+"Tad: *I would …*"
 ]
 ],
 "model": "If I were you, I would switch off my phone after seven.",
@@ -5437,22 +5419,22 @@
 "why_lv": "Third conditional: *if* + Past Perfect, *would have* + 3. forma."
 },
 {
-"id": "ct-B12-6a-r2",
+"id": "ct-B12-6a-r3",
 "skill": "cond_third",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about a mistake you made once (for example, a missed bus). Start with If I had and use would have or would not have (wouldn't have).",
+"q": "Write one sentence about a mistake you once made and what would have been different without it.",
 "must": [
 [
-"^\\s*if i had\\b",
-"Start with *If I had.*",
-"Sāc ar *If I had.*"
+"\\bif\\b[^.]*\\bhad\\b",
+"The past that did not happen: *If I had …*",
+"Pagātne, kas nenotika: *If I had …*"
 ],
 [
 "\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
-"Use *would have* + past participle in the second part.",
-"Otrajā daļā lieto *would have* + 3. forma."
+"The result: *would have* + 3rd form.",
+"Rezultāts: *would have* + 3. forma."
 ]
 ],
 "model": "If I had checked the time, I wouldn't have missed the bus.",
@@ -5567,20 +5549,22 @@
 "wrong_why": {}
 },
 {
-"id": "ct-B21-6a-r2",
+"id": "ct-B21-6a-r3",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about a decision that changed your life. Start with If I hadn't and use would have or would not have (wouldn't have).",
+"q": "Write one sentence about a decision that changed your life: imagine you had not made it.",
 "must": [
 [
-"^\\s*if i (hadn't|had not)\\b",
-"Start with *If I hadn't.*"
+"\\bif\\b[^.]*\\b(hadn't|had not)\\b",
+"The decision you did not make: *If I hadn't …*",
+"Lēmums, ko nepieņēmi: *If I hadn't …*"
 ],
 [
 "\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
-"Use *would have* + past participle in the second part."
+"The result: *would have* + 3rd form.",
+"Rezultāts: *would have* + 3. forma."
 ]
 ],
 "model": "If I hadn't joined that course, I wouldn't have met my best friend.",
@@ -5678,12 +5662,12 @@
 "wrong_why": {}
 },
 {
-"id": "ct-B22-6a",
+"id": "ct-B22-6a-r2",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about what would have happened in history if one thing had been different (for example a famous discovery).",
+"q": "Write one sentence about what would have happened in history if one thing had been different.",
 "must": [
 [
 "\\bif\\b",
@@ -5786,20 +5770,22 @@
 "wrong_why": {}
 },
 {
-"id": "cm-B21-6a",
+"id": "cm-B21-6a-r2",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence about how a past decision affects you now. Start with If I had and use would + base verb (not would have).",
+"q": "How does a past decision still affect you today? Imagine you had decided differently. Write one sentence.",
 "must": [
 [
-"^\\s*if i had\\b",
-"Start with *If I had.*"
+"\\bif\\b[^.]*\\bhad\\b",
+"The past that was different: *If I had …*",
+"Citāda pagātne: *If I had …*"
 ],
 [
 "\\b(would|'d)\\s+(?!have\\b)\\w+",
-"Use *would* + base verb for the present result."
+"The result now: *would* + verb (not *would have*).",
+"Rezultāts tagad: *would* + darbības vārds (nevis *would have*)."
 ]
 ],
 "model": "If I had gone to bed earlier, I would feel better now.",
@@ -5888,12 +5874,12 @@
 "wrong_why": {}
 },
 {
-"id": "cm-B22-6a",
+"id": "cm-B22-6a-r2",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a mixed conditional sentence: a present quality + a past result (for example: If I were braver, I would have ...).",
+"q": "Write one sentence about how a quality of yours (patient, brave, organised …) would have changed something in the past.",
 "must": [
 [
 "\\bif\\b",
@@ -7412,22 +7398,22 @@
 "why_lv": "Pieklājīga frāze + netiešais jautājums skan maigāk un pieklājīgāk."
 },
 {
-"id": "ip-B11-6a",
+"id": "ip-B11-6a-r2",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a polite indirect question to ask a colleague where the meeting room is. Start with Could you tell me.",
+"q": "Ask a colleague politely, in one indirect question, where the meeting room is.",
 "must": [
 [
-"^\\s*could you tell me where\\b",
-"Start with *Could you tell me where.*",
-"Sāc ar *Could you tell me where.*"
+"\\b(tell me|know|wondering)\\s+where\\b",
+"A polite start: *Could you tell me where …?* / *Do you know where …?*",
+"Pieklājīgs sākums: *Could you tell me where …?* / *Do you know where …?*"
 ],
 [
 "^(?!.*\\bwhere\\s+is\\b)",
-"Use statement word order: *where the meeting room is.*",
-"Lieto teikuma vārdu secību: *where the meeting room is*."
+"After *where*: the subject first, then the verb: *where the meeting room is*.",
+"Pēc *where*: vispirms teik. priekšmets, tad darbības vārds: *where the meeting room is*."
 ]
 ],
 "model": "Could you tell me where the meeting room is?",
@@ -7581,27 +7567,27 @@
 "why_lv": "*Could you let me know + whether / if* + teik. priekšmets + darbības vārds."
 },
 {
-"id": "ip-B12-6a",
+"id": "ip-B12-6a-r2",
 "skill": "ind_polite",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write an indirect question to ask a stranger whether the café takes cards. Start with Do you know if.",
+"q": "Ask a stranger politely, in one indirect question, whether the café takes cards.",
 "must": [
 [
-"^\\s*do you know (if|whether)\\b",
-"Start with *Do you know if.*",
-"Sāc ar *Do you know if.*"
+"\\b(if|whether)\\b",
+"A yes/no question inside a polite one: *… if the café takes cards*.",
+"Jā/nē jautājums pieklājīgā jautājumā: *… if the café takes cards*."
 ],
 [
 "\\b(takes|accepts|take|accept)\\b",
-"Use *takes* or *accepts cards.*",
-"Lieto *takes* vai *accepts cards*."
+"Say what you want to know: *takes cards*.",
+"Pasaki, ko gribi zināt: *takes cards*."
 ],
 [
 "^(?!.*\\bdoes\\b)",
-"No *does* in the indirect part.",
-"Palīgteikumā nav *does*."
+"No *does* inside an indirect question: *if the café takes cards*.",
+"Netiešā jautājumā bez *does*: *if the café takes cards*."
 ]
 ],
 "model": "Do you know if the café takes cards?",
@@ -7731,24 +7717,27 @@
 "wrong_why": {}
 },
 {
-"id": "ip-B21-6a",
+"id": "ip-B21-6a-r2",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Write a polite indirect question to ask when a report will be ready. Start with I was wondering.",
+"q": "Ask politely, in one indirect question, when a report will be ready.",
 "must": [
 [
-"^\\s*i was wondering\\b",
-"Start with *I was wondering.*"
+"\\b(wondering|tell me|know)\\b",
+"A polite start: *I was wondering …* / *Could you tell me …*",
+"Pieklājīgs sākums: *I was wondering …* / *Could you tell me …*"
 ],
 [
 "\\b(when|if|whether)\\b",
-"Use *when, if* or *whether.*"
+"Ask about the time: *when the report will be ready*.",
+"Jautā par laiku: *when the report will be ready*."
 ],
 [
 "^(?!.*\\b(when|where|what|why|how)\\s+(will|would|is|are|was|were|does|do|did)\\b)",
-"Use statement word order: *when the report will be ready.*"
+"After *when*: the subject first: *when the report will be ready*.",
+"Pēc *when*: vispirms teik. priekšmets: *when the report will be ready*."
 ]
 ],
 "model": "I was wondering if you could tell me when the report will be ready.",

@@ -137,6 +137,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ar *he, she, it* darbības vārdam Present Simple pievieno *-s* vai *-es*: *he goes*."
 },
 {
+"id": "ps-A22-6a",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a question to ask a new colleague about their free time. Start with Do you or What do you.",
+"must": [
+[
+"^\\s*(do|what do|where do|when do|how often do|who do)\\s+you\\b",
+"Start with *Do you ...* or *What do you ...*",
+"Sāc ar *Do you* ... vai *What do you* ..."
+],
+[
+"\\?\\s*$",
+"End the question with a question mark.",
+"Jautājuma beigās liec jautājuma zīmi."
+]
+],
+"model": "What do you usually do at the weekend?",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "ps-B11-1a",
 "skill": "present_simple",
 "level": "B1.1",
@@ -349,6 +372,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Continuous rāda pagaidu situāciju."
 },
 {
+"id": "pc-A22-6a",
+"skill": "present_continuous",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a question to ask a friend about their plans for tonight. Use Are you + verb-ing.",
+"must": [
+[
+"\\bare\\s+you\\s+\\w+ing\\b",
+"Use *Are you* + verb-ing, for example: *Are you going out tonight?*",
+"Lieto *Are you* + darbības vārds ar *-ing*, piemēram: *Are you going out tonight?*"
+],
+[
+"\\?\\s*$",
+"End the question with a question mark.",
+"Jautājuma beigās liec jautājuma zīmi."
+]
+],
+"model": "Are you going out tonight?",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pc-B11-3a",
 "skill": "present_continuous",
 "level": "B1.1",
@@ -397,6 +443,24 @@ return json_decode(<<<'EF_JSON_END'
 "why": "The present continuous often shows that something is temporary or changing.",
 "wrong_why": {},
 "why_lv": "Present Continuous bieži rāda, ka kaut kas ir pagaidu vai mainās."
+},
+{
+"id": "pc-B11-6a",
+"skill": "present_continuous",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about a change in your life or your city these days. Use the present continuous.",
+"must": [
+[
+"\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b",
+"Use *am/is/are* + verb-ing.",
+"Lieto *am/is/are* + darbības vārds ar *-ing*."
+]
+],
+"model": "More people are working from home these days.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "pa-A21-6a",
@@ -703,6 +767,24 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums: *Were + you* + darbības vārds ar *-ing*."
 },
 {
+"id": "pac-A22-6a",
+"skill": "past_continuous",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about what you were doing at 7 pm yesterday. Use was/were + verb-ing.",
+"must": [
+[
+"\\b(was|were)\\s+\\w+ing\\b",
+"Use *was* or *were* + verb-ing, for example: *I was cooking dinner.*",
+"Lieto *was* vai *were* + darbības vārds ar *-ing*, piemēram: *I was cooking dinner.*"
+]
+],
+"model": "At 7 pm yesterday, I was cooking dinner.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pac-B11-1a",
 "skill": "past_continuous",
 "level": "B1.1",
@@ -852,6 +934,47 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Two actions in progress at the same time: *while* + past continuous, past continuous.",
 "hints": [],
 "why_lv": "Divas darbības, kas notiek vienlaikus: *while* + Past Continuous, Past Continuous."
+},
+{
+"id": "pac-B12-6a",
+"skill": "past_continuous",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about a plan you had but did not do. Use was/were going to and but.",
+"must": [
+[
+"\\b(was|were)\\s+going\\s+to\\s+\\w+",
+"Use *was/were going to* + base verb.",
+"Lieto *was/were going to* + pamatforma."
+],
+[
+"\\bbut\\b",
+"Use the word *but* to say what happened instead.",
+"Lieto vārdu *but*, lai pateiktu, kas notika tā vietā."
+]
+],
+"model": "I was going to go to the gym, but I was too tired.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "pp-A22-6a",
+"skill": "present_perfect",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about something you have never done but would like to do. Use I have never.",
+"must": [
+[
+"\\bi\\s*(have|'ve)\\s+never\\s+\\w+",
+"Use *I have never* + past participle, for example: *I have never been to Japan.*",
+"Lieto *I have never* + 3. forma, piemēram: *I have never been to Japan.*"
+]
+],
+"model": "I have never been to Japan.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "pp-B11-3b",
@@ -1020,6 +1143,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*After* + Past Perfect (agrākā darbība), Past Simple (vēlākā darbība)."
 },
 {
+"id": "ppf-B12-6a",
+"skill": "past_perfect",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about something that had already happened when you arrived somewhere. Use When I arrived and had already.",
+"must": [
+[
+"\\bhad\\s+already\\s+\\w+",
+"Use *had already* + past participle.",
+"Lieto *had already* + 3. forma."
+],
+[
+"\\bwhen\\b|\\bby the time\\b",
+"Use *When I arrived ...* or *By the time ...*",
+"Lieto *When I arrived* ... vai *By the time* ..."
+]
+],
+"model": "When I arrived, the film had already started.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "fu-A21-3a",
 "skill": "future",
 "level": "A2.1",
@@ -1059,6 +1205,24 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ātrs lēmums tagad: *will* + pamatforma."
 },
 {
+"id": "fu-A21-6a",
+"skill": "future",
+"level": "A2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about your plan for tomorrow. Use I am going to.",
+"must": [
+[
+"\\b(i am|i'm)\\s+going\\s+to\\s+\\w+",
+"Use *I am going to* + base verb, for example: *I'm going to visit a friend.*",
+"Lieto *I am going to* + pamatforma, piemēram: *I'm going to visit a friend.*"
+]
+],
+"model": "I'm going to visit a friend tomorrow.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "fu-A22-3b",
 "skill": "future",
 "level": "A2.2",
@@ -1091,6 +1255,24 @@ return json_decode(<<<'EF_JSON_END'
 "why": "When we see evidence now, *going to* is the natural choice.",
 "wrong_why": {},
 "why_lv": "Ja tagad redzam pierādījumus, dabiskākais ir *going to*."
+},
+{
+"id": "fu-A22-6a",
+"skill": "future",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about your plan for next weekend. Use going to.",
+"must": [
+[
+"\\b(am|'m|is|are|'s|'re)\\s+going\\s+to\\s+\\w+",
+"Use *am/is/are going to* + base verb.",
+"Lieto *am/is/are going to* + pamatforma."
+]
+],
+"model": "I'm going to visit my parents next weekend.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "fu-B11-1a",
@@ -1177,6 +1359,24 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Redzam, ka tūlīt notiks: *are going to* + pamatforma."
 },
 {
+"id": "psp-A22-6a",
+"skill": "present_simple_passive",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about a product in your country. Use is made, is grown or are produced.",
+"must": [
+[
+"\\b(is|are)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
+"Use *is/are* + past participle (*is made, are grown ...*).",
+"Lieto *is/are* + 3. forma (*is made, are grown* ...)."
+]
+],
+"model": "Cheese is made in many parts of Latvia.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "psp-B11-5a",
 "skill": "present_simple_passive",
 "level": "B1.1",
@@ -1192,6 +1392,24 @@ return json_decode(<<<'EF_JSON_END'
 "why": "The passive keeps the focus on the action and does not name a person.",
 "wrong_why": {},
 "why_lv": "Ciešamā kārta saglabā uzmanību uz darbību un nenosauc cilvēku."
+},
+{
+"id": "psp-B11-6a",
+"skill": "present_simple_passive",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about how something is made or done at your workplace. Use the passive.",
+"must": [
+[
+"\\b(is|are)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
+"Use *is/are* + past participle.",
+"Lieto *is/are* + 3. forma."
+]
+],
+"model": "All orders are checked twice before they are sent.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "psp-B12-3b",
@@ -1226,6 +1444,47 @@ return json_decode(<<<'EF_JSON_END'
 "why": "The passive moves the focus to the data.",
 "wrong_why": {},
 "why_lv": "Ciešamā kārta pārliek uzmanību uz datiem."
+},
+{
+"id": "psp-B12-6a",
+"skill": "present_simple_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences about how a product or service in your company is made or delivered. Use the passive and use by in one sentence.",
+"must": [
+[
+"\\b(is|are)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
+"Use *is/are* + past participle.",
+"Lieto *is/are* + 3. forma."
+],
+[
+"\\bby\\s+\\w+",
+"Use *by* + the person or company who does it.",
+"Lieto *by* + cilvēks vai uzņēmums, kas to dara."
+]
+],
+"model": "The orders are packed in our warehouse. They are delivered by a courier company.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "pasp-A22-6a",
+"skill": "past_simple_passive",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about a famous building or invention. Use was/were built, invented or discovered.",
+"must": [
+[
+"\\b(was|were)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
+"Use *was/were* + past participle.",
+"Lieto *was/were* + 3. forma."
+]
+],
+"model": "The telephone was invented in 1876.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "pasp-B11-1a",
@@ -1286,6 +1545,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamā kārta: *was* + 3. forma. Vārdu *someone* izlaiž."
 },
 {
+"id": "pasp-B11-6a",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences about something that was done at your workplace last week. Use the passive.",
+"must": [
+[
+"\\b(was|were)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
+"Use *was/were* + past participle.",
+"Lieto *was/were* + 3. forma."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "A new printer was installed. The old one was thrown away.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pasp-B12-3b",
 "skill": "past_simple_passive",
 "level": "B1.2",
@@ -1320,6 +1602,47 @@ return json_decode(<<<'EF_JSON_END'
 "why": "The passive hides the doer and sounds more neutral.",
 "wrong_why": {},
 "why_lv": "Ciešamā kārta paslēpj darītāju un skan neitrālāk."
+},
+{
+"id": "pasp-B12-6a",
+"skill": "past_simple_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences to a customer: say what was done to fix a problem. Use the passive.",
+"must": [
+[
+"\\b(was|were)\\s+(made|grown|produced|sold|built|eaten|used|called|spoken|cleaned|checked|sent|held|delivered|written|done|kept|opened|closed|\\w+ed)\\b",
+"Use *was/were* + past participle.",
+"Lieto *was/were* + 3. forma."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "Your order was checked again. A new part was sent to you today.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "pcp-B12-6a",
+"skill": "present_continuous_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about something that is being built, repaired or changed in your area now. Use is/are being.",
+"must": [
+[
+"\\b(is|are)\\s+being\\s+\\w+",
+"Use *is/are being* + past participle.",
+"Lieto *is/are being* + 3. forma."
+]
+],
+"model": "A new shopping centre is being built near my house.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "ppp-B11-3a",
@@ -1580,6 +1903,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Zero conditional (*if* + Present Simple, Present Simple) paredzēts faktiem un vispārīgiem noteikumiem."
 },
 {
+"id": "cz-A22-6a",
+"skill": "cond_zero",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about something that always happens in your office or at home. Start with If and use the present simple.",
+"must": [
+[
+"^\\s*if\\b",
+"Start with *If.*",
+"Sāc ar *If*."
+],
+[
+"^(?!.*\\b(will|won't|would|'ll)\\b)",
+"Do not use *will.* In the zero conditional both parts use the present simple.",
+"Nelieto *will*. Zero conditional abās daļās lieto Present Simple."
+]
+],
+"model": "If I skip breakfast, I get grumpy by ten.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "cz-B11-1a",
 "skill": "cond_zero",
 "level": "B1.1",
@@ -1637,6 +1983,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Zero conditional *if* vietā var lietot *when* un *whenever*."
 },
 {
+"id": "cz-B11-6a",
+"skill": "cond_zero",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a rule for a new colleague. Use If + present simple, then an instruction (for example: If the light is red, wait).",
+"must": [
+[
+"^\\s*if\\b",
+"Start with *If.*",
+"Sāc ar *If*."
+],
+[
+"^(?!.*\\b(will|would|won't|'ll)\\b)",
+"Do not use *will* or *would* in a rule like this.",
+"Šādā noteikumā nelieto *will* vai *would*."
+]
+],
+"model": "If the printer jams, ask Marta for help.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "cf-A22-1a",
 "skill": "cond_first",
 "level": "A2.2",
@@ -1669,6 +2038,34 @@ return json_decode(<<<'EF_JSON_END'
 "why": "After *if* we use the present simple: *If I have time, I'll call you.*",
 "wrong_why": {},
 "why_lv": "Pēc *if* lieto Present Simple: *If I have time, I'll call you.*"
+},
+{
+"id": "cf-A22-6a",
+"skill": "cond_first",
+"level": "A2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a promise to a colleague. Start with If, use the present simple after if and will in the second part. Put a comma after the if-part.",
+"must": [
+[
+"^\\s*if\\b",
+"Start with *If.*",
+"Sāc ar *If*."
+],
+[
+"\\b(will|'ll)\\b",
+"Use *will* in the second part.",
+"Otrajā daļā lieto *will*."
+],
+[
+"^(?!\\s*if\\b[^,]*\\b(will|would)\\b)",
+"Use the present simple after *if* (no *will*), and put a comma after the if-part.",
+"Pēc *if* lieto Present Simple (bez *will*) un pēc *if* daļas liec komatu."
+]
+],
+"model": "If you cover my shift, I will bring you cake.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "cf-B11-1a",
@@ -1794,6 +2191,57 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Unless* jau nozīmē *if* ... *not*, tāpēc otru noliegumu nepievieno."
 },
 {
+"id": "cf-B12-6a",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence with in case (for example: I'll take an umbrella in case it rains). Use the present simple after in case.",
+"must": [
+[
+"\\bin case\\b",
+"Use *in case.*",
+"Lieto *in case*."
+],
+[
+"^(?!.*\\bin case\\b.*\\b(will|would)\\b)",
+"After *in case* we use the present simple: *in case it rains.*",
+"Pēc *in case* lieto Present Simple: *in case it rains*."
+]
+],
+"model": "I'll take a charger in case my phone dies.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "cs-B11-6a",
+"skill": "cond_second",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about what you would do if you won a free holiday. Start with If, use the past simple after if and would in the second part.",
+"must": [
+[
+"^\\s*if\\b",
+"Start with *If.*",
+"Sāc ar *If*."
+],
+[
+"\\b(would|'d)\\b",
+"Use *would* in the second part.",
+"Otrajā daļā lieto *would*."
+],
+[
+"^(?!\\s*if\\b(?:[^,]*\\b(?:will|would)\\b[^,]*,|(?!.*,)\\s+(?:(?:the|my|our|your|his|her|their|this|that)\\s+)?\\w+\\s+(?:would|will|'d)\\b))",
+"Use the past simple after *if* (not *would*): *If I won a holiday, I would go to Iceland.*",
+"Pēc *if* lieto Past Simple (bez *would*): *If I won a holiday, I would go to Iceland.*"
+]
+],
+"model": "If I won a free holiday, I would go to Iceland.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "cs-B11-3b",
 "skill": "cond_second",
 "level": "B1.1",
@@ -1841,6 +2289,54 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why_lv": "Second conditional: *if* + Past Simple, *would / could* + pamatforma."
+},
+{
+"id": "cs-B12-6a",
+"skill": "cond_second",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about an unlikely job you would like. Use if + past simple and would.",
+"must": [
+[
+"^\\s*if\\b",
+"Start with *If.*",
+"Sāc ar *If*."
+],
+[
+"\\b(would|'d)\\b",
+"Use *would* in the second part.",
+"Otrajā daļā lieto *would*."
+],
+[
+"^(?!\\s*if\\b(?:[^,]*\\b(?:will|would)\\b[^,]*,|(?!.*,)\\s+(?:(?:the|my|our|your|his|her|their|this|that)\\s+)?\\w+\\s+(?:would|will|'d)\\b))",
+"Use the past simple after *if* (not *would*): *If I were a pilot, I would fly.*",
+"Pēc *if* lieto Past Simple (bez *would*): *If I were a pilot, I would fly.*"
+]
+],
+"model": "If I were a pilot, I would fly to Iceland every weekend.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "cs-B21-6a",
+"skill": "cond_second",
+"level": "B2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write advice for a colleague who works too much. Start with If I were you and use would.",
+"must": [
+[
+"^\\s*if i (were|was) you\\b",
+"Start with *If I were you.*"
+],
+[
+"\\b(would|'d)\\b",
+"Use *would* in the second part."
+]
+],
+"model": "If I were you, I would switch off my phone after seven.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "ct-B12-2a",
@@ -1992,6 +2488,30 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "ct-B22-6a",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about what would have happened in history if one thing had been different (for example a famous discovery).",
+"must": [
+[
+"\\bif\\b",
+"Use *if.*"
+],
+[
+"\\bhad(n't| not)?\\b",
+"Use the past perfect (*had / hadn't*) in the if-part."
+],
+[
+"\\b(would|might|could)\\s+(not\\s+)?have\\b",
+"Use *would / might / could have* + past participle in the result."
+]
+],
+"model": "If Alexander Fleming hadn't left his dish uncovered, penicillin might not have been discovered.",
+"why": "Compare your sentence with the model answer."
+},
+{
 "id": "cm-B21-1a",
 "skill": "cond_mixed",
 "level": "B2.1",
@@ -2008,6 +2528,26 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "cm-B21-6a",
+"skill": "cond_mixed",
+"level": "B2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about how a past decision affects you now. Start with If I had and use would + base verb (not would have).",
+"must": [
+[
+"^\\s*if i had\\b",
+"Start with *If I had.*"
+],
+[
+"\\b(would|'d)\\s+(?!have\\b)\\w+",
+"Use *would* + base verb for the present result."
+]
+],
+"model": "If I had gone to bed earlier, I would feel better now.",
+"why": "Compare your sentence with the model answer."
+},
+{
 "id": "cm-B22-3a",
 "skill": "cond_mixed",
 "level": "B2.2",
@@ -2022,6 +2562,26 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
 "hints": []
+},
+{
+"id": "cm-B22-6a",
+"skill": "cond_mixed",
+"level": "B2.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a mixed conditional sentence: a present quality + a past result (for example: If I were braver, I would have ...).",
+"must": [
+[
+"\\bif\\b",
+"Use *if.*"
+],
+[
+"\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+"Use *would have* + past participle for the past result."
+]
+],
+"model": "If I were more patient, I wouldn't have shouted at the printer yesterday.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "cm-C11-1a",
@@ -2476,6 +3036,29 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
+"id": "ip-B11-6a",
+"skill": "ind_polite",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a polite indirect question to ask a colleague where the meeting room is. Start with Could you tell me.",
+"must": [
+[
+"^\\s*could you tell me where\\b",
+"Start with *Could you tell me where.*",
+"Sāc ar *Could you tell me where.*"
+],
+[
+"^(?!.*\\bwhere\\s+is\\b)",
+"Use statement word order: *where the meeting room is.*",
+"Lieto teikuma vārdu secību: *where the meeting room is*."
+]
+],
+"model": "Could you tell me where the meeting room is?",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "ip-B11-3b",
 "skill": "ind_polite",
 "level": "B1.1",
@@ -2518,6 +3101,34 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*."
 },
 {
+"id": "ip-B12-6a",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write an indirect question to ask a stranger whether the café takes cards. Start with Do you know if.",
+"must": [
+[
+"^\\s*do you know (if|whether)\\b",
+"Start with *Do you know if.*",
+"Sāc ar *Do you know if.*"
+],
+[
+"\\b(takes|accepts|take|accept)\\b",
+"Use *takes* or *accepts cards.*",
+"Lieto *takes* vai *accepts cards*."
+],
+[
+"^(?!.*\\bdoes\\b)",
+"No *does* in the indirect part.",
+"Palīgteikumā nav *does*."
+]
+],
+"model": "Do you know if the café takes cards?",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "ip-B21-3a",
 "skill": "ind_polite",
 "level": "B2.1",
@@ -2556,6 +3167,30 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*I was wondering if you could tell me* + *when* + subject + verb.",
 "wrong_why": {}
+},
+{
+"id": "ip-B21-6a",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a polite indirect question to ask when a report will be ready. Start with I was wondering.",
+"must": [
+[
+"^\\s*i was wondering\\b",
+"Start with *I was wondering.*"
+],
+[
+"\\b(when|if|whether)\\b",
+"Use *when, if* or *whether.*"
+],
+[
+"^(?!.*\\b(when|where|what|why|how)\\s+(will|would|is|are|was|were|does|do|did)\\b)",
+"Use statement word order: *when the report will be ready.*"
+]
+],
+"model": "I was wondering if you could tell me when the report will be ready.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "ia-C11-1a",
@@ -2657,6 +3292,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Faktiem un vienmēr patiesām lietām lieto Present Simple."
 },
 {
+"id": "ps-B11-6a-r2",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences about a timetable, for example a train, a class or a shop. Use the present simple with a time, as in: The train leaves at 7.45.",
+"must": [
+[
+"\\b(starts?|begins?|opens?|leaves?|ends?|finish(es)?|closes?|arrives?)\\b.{0,40}\\bat\\s+(?:\\d|[a-z])",
+"Use a timetable verb with *at* and a time, such as *at nine*, *at 9.00* or *at noon*.",
+"Lieto grafika darbības vārdu ar *at* un laiku, piemēram, *at nine*, *at 9.00* vai *at noon*."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "My class starts at 9.00. It finishes at 11.30.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pc-B11-3a-r2",
 "skill": "present_continuous",
 "level": "B1.1",
@@ -2688,6 +3346,88 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*I have lost my keys* presents the past loss as relevant now. The past simple reports the past event; context can also connect it to a current problem.",
 "wrong_why": {},
 "why_lv": "*I have lost my keys* uzsver pagātnes notikuma saistību ar tagadni. Past Simple apraksta pagātnes notikumu; arī tam konteksts var piešķirt saistību ar pašreizējo problēmu."
+},
+{
+"id": "ppp-B11-6a-r2",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about something that has been done at your home or office this week. Use has/have been + past participle.",
+"must": [
+[
+"(?:\\b(?:has|have)|'(?:s|ve))\\s+been\\s+\\w+",
+"Use *has/have been* + past participle.",
+"Lieto *has/have been* + 3. forma."
+]
+],
+"model": "The windows have been cleaned this week.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ppp-B12-6a-r2",
+"skill": "present_perfect_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences about changes that have been made in your company, school or city. Use has/have been + past participle at least once.",
+"must": [
+[
+"(?:\\b(?:has|have)|'(?:s|ve))\\s+been\\s+\\w+",
+"Use *has/have been* + past participle.",
+"Lieto *has/have been* + 3. forma."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "A new office has been opened. Many old computers have been replaced.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "fup-B11-6a-r2",
+"skill": "future_passive",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about something that will be done in your city or company next year. Use will be + past participle.",
+"must": [
+[
+"(?:\\bwill|'ll)\\s+be\\s+\\w+",
+"Use *will be* + past participle.",
+"Lieto *will be* + 3. forma."
+]
+],
+"model": "A new library will be opened in my city next year.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "fup-B12-6a-r2",
+"skill": "future_passive",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences for a notice at work about changes next month. Use will be + past participle.",
+"must": [
+[
+"(?:\\bwill|'ll)\\s+be\\s+\\w+",
+"Use *will be* + past participle.",
+"Lieto *will be* + 3. forma."
+],
+[
+"[.!?]\\s+\\S",
+"Write two sentences.",
+"Uzraksti divus teikumus."
+]
+],
+"model": "The office will be closed on Monday. All staff will be informed by email.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "cf-B12-3a-r2",
@@ -2730,6 +3470,49 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Unless you hurry* means *if you do not hurry*. Adding *not* changes the condition and loses the intended warning. A negative clause after *unless* can be grammatical when that different meaning is intended.",
 "wrong_why": {},
 "why_lv": "*Unless you hurry* nozīmē *if you do not hurry*. Papildu noliegums maina nosacījumu un vairs neizsaka doto brīdinājumu. Noliegums pēc *unless* var būt pareizs, ja ir domāta cita nozīme."
+},
+{
+"id": "ct-B12-6a-r2",
+"skill": "cond_third",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about a mistake you made once (for example, a missed bus). Start with If I had and use would have or would not have (wouldn't have).",
+"must": [
+[
+"^\\s*if i had\\b",
+"Start with *If I had.*",
+"Sāc ar *If I had.*"
+],
+[
+"\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+"Use *would have* + past participle in the second part.",
+"Otrajā daļā lieto *would have* + 3. forma."
+]
+],
+"model": "If I had checked the time, I wouldn't have missed the bus.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ct-B21-6a-r2",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence about a decision that changed your life. Start with If I hadn't and use would have or would not have (wouldn't have).",
+"must": [
+[
+"^\\s*if i (hadn't|had not)\\b",
+"Start with *If I hadn't.*"
+],
+[
+"\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+"Use *would have* + past participle in the second part."
+]
+],
+"model": "If I hadn't joined that course, I wouldn't have met my best friend.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "ct-B22-4a-r2",

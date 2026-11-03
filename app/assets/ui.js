@@ -169,6 +169,24 @@
       '<path d="M7.2 19.5C7.2 14.4 12.6 12 20 12C27.4 12 32.8 14.4 32.8 19.5C32.8 26.5 26.5 33.5 20 35C13.5 33.5 7.2 26.5 7.2 19.5Z" fill="#E8772E"/>' +
       '<path d="M8.4 22C13 22.6 17 26 20 29.5C23 26 27 22.6 31.6 22C30.6 28 25.5 33.2 20 34.2C14.5 33.2 9.4 28 8.4 22Z" fill="#FBF3E8"/>' +
       '<path d="M12.4 19.6Q14.4 18 16.4 19.6Q14.4 21.2 12.4 19.6Z" fill="' + K + '"/><path d="M23.6 19.6Q25.6 18 27.6 19.6Q25.6 21.2 23.6 19.6Z" fill="' + K + '"/><path d="M18.2 28.4H21.8L20 30.6Z" fill="' + K + '"/>',
+    // Latvia, November (teacher, 3 November): the red-white-red heart, the flag, Auseklis and Lāčplēsis; carmine red #9E3039, the stripes 2 : 1 : 2
+    lvheart: '<defs><clipPath id="avlvh"><path d="M20 33.4C13.2 28.6 7.4 23.8 7.4 17.2C7.4 13 10.4 10 14.2 10C16.8 10 18.8 11.4 20 13.6C21.2 11.4 23.2 10 25.8 10C29.6 10 32.6 13 32.6 17.2C32.6 23.8 26.8 28.6 20 33.4Z"/></clipPath></defs>' +
+      '<g clip-path="url(#avlvh)"><rect x="6" y="9" width="28" height="26" fill="#9E3039"/><rect x="6" y="19.2" width="28" height="4.4" fill="#fff"/></g>' +
+      '<path d="M20 33.4C13.2 28.6 7.4 23.8 7.4 17.2C7.4 13 10.4 10 14.2 10C16.8 10 18.8 11.4 20 13.6C21.2 11.4 23.2 10 25.8 10C29.6 10 32.6 13 32.6 17.2C32.6 23.8 26.8 28.6 20 33.4Z" fill="none" stroke="#fff" stroke-width="1.1"/>' +
+      '<path d="M12 14.4C12.8 13 14 12.4 15.2 12.4" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".6"/>',
+    lvflag: '<path d="M10 7.6V34" stroke="#6B4F2E" stroke-width="1.6" stroke-linecap="round"/><circle cx="10" cy="7" r="1.3" fill="' + GOLD + '"/>' +
+      '<path d="M10.8 9C16 7.4 20 10.8 25 9.4C27.6 8.6 29.4 8.4 31.4 9V25C29.4 24.4 27.6 24.6 25 25.4C20 26.8 16 23.4 10.8 25Z" fill="#9E3039" stroke="#fff" stroke-width=".7" stroke-linejoin="round"/>' +
+      '<path d="M10.8 15.4C16 13.8 20 17.2 25 15.8C27.6 15 29.4 14.8 31.4 15.4V18.6C29.4 18 27.6 18.2 25 19C20 20.4 16 17 10.8 18.6Z" fill="#fff"/>',
+    auseklis: '<path d="M20 5.6L23.4 13.4L30.2 9.8L26.6 16.6L34.4 20L26.6 23.4L30.2 30.2L23.4 26.6L20 34.4L16.6 26.6L9.8 30.2L13.4 23.4L5.6 20L13.4 16.6L9.8 9.8L16.6 13.4Z" fill="#fff" stroke="#9E3039" stroke-width="1.2" stroke-linejoin="round"/>' +
+      '<path d="M20 11.4L22 17.2L28.6 20L22 22.8L20 28.6L18 22.8L11.4 20L18 17.2Z" fill="#9E3039"/><path d="M20 17L23 20L20 23L17 20Z" fill="#fff"/>' +
+      '<path d="M20 5.6V11.4M20 28.6V34.4M5.6 20H11.4M28.6 20H34.4" stroke="#9E3039" stroke-width=".8"/>',
+    lacplesis: '<path d="M6.6 40C7 31.6 11 28 15.6 27.6L20 29.6L24.4 27.6C29 28 33 31.6 33.4 40Z" fill="#9E3039"/><path d="M8.6 34.6H31.4V36.8H8.2Z" fill="#fff"/>' +
+      '<circle cx="11.6" cy="10.8" r="3.6" fill="#6B4A2F" stroke="' + K + '" stroke-width=".5"/><circle cx="11.6" cy="10.8" r="1.8" fill="#C98B6A"/><circle cx="28.4" cy="10.8" r="3.6" fill="#6B4A2F" stroke="' + K + '" stroke-width=".5"/><circle cx="28.4" cy="10.8" r="1.8" fill="#C98B6A"/>' +
+      '<path d="M10.8 19C10 25 11.4 29 13.4 30.6L14.4 20ZM29.2 19C30 25 28.6 29 26.6 30.6L25.6 20Z" fill="#E2B85C"/>' +
+      '<path d="' + FACE + '" fill="#F2CDA8"/><path d="M12.2 17.2C11.2 10.6 14.8 7.8 20 7.8C25.2 7.8 28.8 10.6 27.8 17.2C27 14.4 24.6 12.6 21.6 12.2C18 13.4 14.6 13.8 12.2 17.2Z" fill="#E2B85C"/>' +
+      '<path d="M14.4 16.4L18 17.2M25.6 16.4L22 17.2" stroke="#8A6420" stroke-width="1.1" stroke-linecap="round"/><circle cx="16.6" cy="19" r="1" fill="' + K + '"/><circle cx="23.4" cy="19" r="1" fill="' + K + '"/>' +
+      '<path d="M17.4 23.2Q20 25 22.6 23.2" fill="none" stroke="#9E5A4A" stroke-width="1" stroke-linecap="round"/><circle cx="14.4" cy="22" r="1.1" fill="#E8788A" opacity=".35"/><circle cx="25.6" cy="22" r="1.1" fill="#E8788A" opacity=".35"/>' +
+      '<path d="M30.6 40L36.4 22.4" stroke="#C9CED6" stroke-width="1.6" stroke-linecap="round"/><path d="M29.4 33.6L33.6 35" stroke="' + GOLD + '" stroke-width="1.4" stroke-linecap="round"/>',
     // Halloween: drawn straight on the coloured circle, with their own outlines so they show on every colour
     pumpkin: '<path d="M20.4 10.4C20.4 8 21.8 6.4 24 6L23.4 8.6C22.4 8.8 21.6 9.4 21.4 10.6Z" fill="#4E7A2E"/><path d="M20 10.4C20.2 9 19.4 7.8 18 7.4" fill="none" stroke="#4E7A2E" stroke-width="1" stroke-linecap="round"/>' +
       '<ellipse cx="13.2" cy="22" rx="6.8" ry="10.2" fill="#E8772E"/><ellipse cx="26.8" cy="22" rx="6.8" ry="10.2" fill="#E8772E"/><ellipse cx="20" cy="22" rx="7.2" ry="11" fill="#F28C3C"/>' +
@@ -212,6 +230,7 @@
   };
   var AV_COLORS = { raspberry: ['#DE3163', '#FFFFFF'], gold: ['#DEC17A', '#020101'], ink: ['#1E1E2C', '#DEC17A'], cream: ['#F3EAD3', '#8A6A22'], plum: ['#4A1730', '#DEC17A'], sand: ['#A39E93', '#020101'] };
   var AV_NAMES = { flame: 'Flame', spark: 'Spark', bolt: 'Bolt', sun: 'Sun', thermo: 'Thermometer', wave: 'Wave', comet: 'Comet', leaf: 'Leaf',
+    lvheart: 'Red-white-red heart', lvflag: 'Latvian flag', auseklis: 'Auseklis', lacplesis: 'Lāčplēsis',
     pumpkin: 'Pumpkin', ghost: 'Ghost', witch: 'Witch', vampire: 'Vampire', mummy: 'Mummy', skeleton: 'Skeleton', blackcat: 'Black cat', bat: 'Bat',
     vera: 'Vera', marco: 'Marco', cleo: 'Cleo', hana: 'Hana', fay: 'Fay', june: 'June', dev: 'Dev', eli: 'Eli', gus: 'Gus', ivan: 'Ivan',
     nova: 'Nova', captain: 'Captain', sleuth: 'Sleuth', reggie: 'Reggie', will: 'Will', guard: 'Guard', prof: 'Professor', fox: 'Fox', ember: 'Ember', initial: 'My initial',
@@ -360,5 +379,5 @@
     return s;
   }
 
-  window.UI = { markForms: markForms, rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_HALLOWEEN: ['pumpkin', 'ghost', 'witch', 'vampire', 'mummy', 'skeleton', 'blackcat', 'bat'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
+  window.UI = { markForms: markForms, rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_LATVIA: ['lvheart', 'lvflag', 'auseklis', 'lacplesis'], AV_HALLOWEEN: ['pumpkin', 'ghost', 'witch', 'vampire', 'mummy', 'skeleton', 'blackcat', 'bat'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
 })();

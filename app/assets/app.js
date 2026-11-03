@@ -1911,6 +1911,13 @@
 
 
   // ───────── leaderboard ─────────
+  /** The most patient learner of the week: an hourglass whose sand runs for 30 seconds, then it turns over (teacher, 3 November). */
+  function hourglass() {
+    var w = document.createElement('span'); w.className = 'hourglass'; w.title = 'Most patient: most time spent practising this week';
+    w.innerHTML = '<svg viewBox="0 0 16 20" width="14" height="18" aria-hidden="true"><path class="hg-frame" d="M2 1.5h12M2 18.5h12M4 2c0 5 4 5 4 8s-4 3-4 8M12 2c0 5-4 5-4 8s4 3 4 8"/>'
+      + '<path class="hg-top" d="M4.6 4h6.8c-.6 2.6-3.4 3.4-3.4 6c0-2.6-2.8-3.4-3.4-6z"/><path class="hg-bot" d="M8 12.2c0 1.6 3.4 2.6 3.6 5.8H4.4C4.6 14.8 8 13.8 8 12.2z"/></svg>';
+    return w;
+  }
   function viewLeaderboard() {
     if (!feat('leaderboard')) { location.hash = '#/home'; return; }
     var period = 'week';
@@ -1926,7 +1933,7 @@
         var list = rows.length ? h('div', { class: 'card lb-card', style: 'padding:0' }, rows.map(function (x) {
           return h('div', { class: 'lb-row' + (x.me ? ' me' : '') }, x.rank <= 3 ? h('div', { class: 'lb-rank' }, medal(x.rank)) : h('div', { class: 'lb-rank' }, String(x.rank)),
             h('div', { class: 'lb-name' }, moodAvatar(x), h('span', { class: 'lb-text' }, x.nickname), x.me ? h('span', { class: 'pill', style: 'margin-left:8px' }, 'You') : null),
-            h('div', { class: 'small muted num lb-min' }, (maxMin > 0 && x.minutes === maxMin) ? h('span', { class: 'thinking', title: 'Thinker of the week: most time spent thinking' }, h('i'), h('i'), h('i')) : null,
+            h('div', { class: 'small muted num lb-min' }, (maxMin > 0 && x.minutes === maxMin) ? hourglass() : null,
               (fast && fast === x) ? h('span', { class: 'supersonic', title: 'Supersonic: most XP per minute' }, icon('bolt')) : null, x.minutes + ' min'), h('div', { class: 'lb-xp' }, x.xp + ' XP'));
         })) : h('div', { class: 'card empty' }, h('p', null, period === 'week' ? 'No points yet this week. Be the first!' : 'No points yet.'), h('a', { class: 'btn', href: '#/practice' }, 'Practise now'));
         holder.replaceChildren(

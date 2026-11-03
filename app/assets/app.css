@@ -849,3 +849,15 @@ button.level-scale { cursor: pointer; }
 .ttile-prog { display: block; height: 4px; margin: -4px 12px 10px; border-radius: 4px; background: var(--line); overflow: hidden; }
 .ttile-prog i { display: block; height: 100%; background: var(--good); border-radius: 4px; }
 .ttile-new { display: inline-block; margin-left: 6px; vertical-align: 1px; font-size: .62rem; font-weight: 800; background: var(--gold); color: #1E1E2C; border-radius: 999px; padding: 1px 7px; }
+
+/* the most patient learner on the leaderboard: an hourglass, 30 seconds of sand, then it turns over (teacher, 3 November) */
+.hourglass { display: inline-grid; place-items: center; width: 22px; height: 22px; margin-right: 4px; vertical-align: middle; color: var(--gold); }
+.hourglass svg { animation: hgflip 30s linear infinite; overflow: visible; }
+.hg-frame { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+.hg-top, .hg-bot { fill: currentColor; }
+.hg-top { transform-origin: 8px 10px; animation: hgtop 30s linear infinite; }
+.hg-bot { transform-origin: 8px 18px; animation: hgbot 30s linear infinite; }
+@keyframes hgflip { 0%, 97% { transform: rotate(0); } 100% { transform: rotate(180deg); } }
+@keyframes hgtop { 0% { transform: scale(1); } 97%, 100% { transform: scale(0); } }
+@keyframes hgbot { 0% { transform: scale(0); } 97%, 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .hourglass svg, .hg-top, .hg-bot { animation: none; } }

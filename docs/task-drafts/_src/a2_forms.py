@@ -42,12 +42,12 @@ ip("There are three ___ in our team. (woman)", "woman", "women")
 ip("We saw two ___ in the kitchen! (mouse)", "mouse", "mice")
 
 # the inversion task without the hint (its twin with "Start with Had I" stays as a practice-only first step)
-od("Advanced conditionals: inversion, unless, wish", "C1.1", 3, "Put the words in order.",
-   "had she left earlier she would have caught the train",
-   "*Had she left* means *If she had left*. Inversion removes *if* and puts *had* before the subject.",
-   "*Had she left* nozīmē *If she had left*. Inversija izlaiž *if* un liek *had* pirms teikuma priekšmeta.",
-   also=["she would have caught the train had she left earlier"])
-rows[-1][6] = rows[-1][6].replace(" " + audit_fixes.ORDER_Q[0], "")   # starts with had, but it is not a question
-rows[-1][7] = rows[-1][7].replace(" " + audit_fixes.ORDER_Q[1], "")
+# the word-order version also allowed "she would have left earlier had she caught the train" (grammatical, another meaning; teacher, 3 November):
+# now two blanks with two right words and two extra ones
+gp("Advanced conditionals: inversion, unless, wish", "C1.1", 3, "___ she ___ earlier, she would have caught the train.", "Had / left",
+   "*Had she left* means *If she had left*. Inversion removes *if* and puts *had* before the subject; then the 3rd form.",
+   "*Had she left* nozīmē *If she had left*. Inversija izlaiž *if* un liek *had* pirms teikuma priekšmeta; tad 3. forma.",
+   bank=["Had", "left", "Did", "leaving"])
+replaces("had she left earlier she would have caught the train")
 
 save("a2-forms-1.csv")

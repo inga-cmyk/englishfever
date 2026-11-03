@@ -173,7 +173,9 @@ T.gap("B2.1", I_1 + "I'll take some cash in ___ the card machine isn't working."
 T.text("B2.1", "Correct the mistake: Take an umbrella in case it will rain.", "Take an umbrella in case it rains.", D_CASE)
 T.text("B2.1", "Correct the mistake: This tool is for cut metal.", ["This tool is for cutting metal.", "This tool is used for cutting metal."], D_FOR)
 T.text("B2.2", "Rewrite with *owing to*: The flight was late because the weather was bad.", ["The flight was late owing to the bad weather.", "The flight was late owing to bad weather.", "Owing to the bad weather, the flight was late.", "Owing to bad weather, the flight was late."], D_OW)
-T.text("B2.2", "Put *therefore* before the main verb: Sales fell. We have decided to close the shop.", "Sales fell. We have therefore decided to close the shop.", D_MID)
+# the task that only asked to move a given word tested nothing (teacher, 3 November): the learner now chooses the linker of result
+T.bank("B2.2", "Sales fell. ___, we have decided to close the shop.", "Therefore", ["Whereas", "Despite", "In case"], why=("*Therefore* introduces a result. *Whereas* contrasts two facts, *despite* needs a noun, *in case* is about something that may happen.", "*Therefore* ievada sekas. *Whereas* pretstata divus faktus, aiz *despite* jābūt lietvārdam, *in case* ir par to, kas var notikt."))
+replaces("Put *therefore* before the main verb: Sales fell. We have decided to close the shop.")
 T.text("B2.1", "Join with *whereas*: I like early mornings. My partner likes late nights.", ["I like early mornings, whereas my partner likes late nights.", "Whereas I like early mornings, my partner likes late nights.", "I like early mornings whereas my partner likes late nights."], D_WH)
 T.order("B2.1", "she kept running even though her legs hurt", also=["even though her legs hurt she kept running"], why=C_DES)
 T.order("B2.2", "we need more staff in order for the shop to open on sundays", also=["in order for the shop to open on sundays we need more staff"], why=D_ORD)

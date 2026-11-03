@@ -188,8 +188,11 @@ final class CustomItems
                     if (isset($byContent[$ok2])) { $res['replaces'] = $byContent[$ok2]['id']; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
                 }
                 if ($from === null && $item['kind'] !== 'match' && $get('replaces') !== '') {   // another corrected task: the older version (the old correct option, sentence or task text) is retired
-                    $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $item['kind'], 'q' => $get('replaces'), 'correct' => $get('replaces'), 'sentence' => $get('replaces')]);
-                    if (isset($byOld[$ok3])) { $res['replaces'] = $byOld[$ok3]; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
+                    // the same kind of task first; then any kind, so a corrected task may change its type (a word order that allowed two answers becomes a gap; teacher, 3 November)
+                    foreach (array_unique(array_merge([$item['kind']], ['mcq', 'gap', 'text', 'order', 'write'])) as $k3) {
+                        $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $k3, 'q' => $get('replaces'), 'correct' => $get('replaces'), 'sentence' => $get('replaces')]);
+                        if (isset($byOld[$ok3])) { $res['replaces'] = $byOld[$ok3]; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; break; }
+                    }
                 }
                 if (isset($seen[$dup])) throw new ApiError('This task is twice in the file.', 400);
                 if (isset($mine[$dup])) {                                   // added from a file before

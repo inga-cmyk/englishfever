@@ -34,6 +34,10 @@ def mc(t, lv, b, q, ok, wrong, why, lvw):
     if fx:
         if fx.get("ok", ok) != ok: old = ok
         wrong, q, ok = fx.get("wrong", wrong), fx.get("q", q), fx.get("ok", ok)
+    ox = option_fixes.MCQ.get((q, ok)) or option_fixes.MCQ.get((plain(q, "mcq"), ok))   # options of equal length, one theme (teacher, 3 November; draft_option_fixes.py)
+    if ox:
+        if ox.get("ok", ok) != ok: old = ok   # the version already imported is retired
+        wrong, q, ok = ox.get("wrong", wrong), ox.get("q", q), ox.get("ok", ok)
     rows.append([t, lv, "mcq", q, ok, " | ".join(wrong), why, lvw, b] + ([old] if old else []))
 def replaces(old):
     """The last row replaces an older version that was already imported: the old *correct option* (choose), *sentence* (word order) or *task text* (other types). The importer retires the old one."""
@@ -108,7 +112,7 @@ def tx(t, lv, b, q, ok, why, lvw):
     ok = ok + [x for x in extra_answers.TEXT.get(q, []) if x not in ok]       # added by hand (extra_answers.py)
     ok = auto_answers.extend(q, ok)                                            # time phrase first, that left out, me left out, polite openers (auto_answers.py)
     rows.append([t, lv, "text", q, " | ".join(ok), "", why, lvw, b])
-import alt_orders, auto_answers, extra_answers, audit_fixes
+import alt_orders, auto_answers, extra_answers, audit_fixes, draft_option_fixes as option_fixes
 _AUX = "is are was were do does did can could will would have has had shall should may might am".split()
 def _is_question(sentence):
     w = sentence.lower().split()

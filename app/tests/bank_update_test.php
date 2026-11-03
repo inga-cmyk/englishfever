@@ -36,11 +36,12 @@ foreach ($retired as $old) {
     if ($replacement === null && $old['skill'] === 'past_simple' && $old['level'] === 'B1.2') continue;   // used to moved to its own topic (27 October): removed, no replacement
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
+        if ($key === 'kind' && $stem === 'rv-C11-3a') continue;   // a typed gap became a word-bank gap: the quote already gave the missing words away (teacher, 3 November)
         check($old[$key] === $replacement[$key], "Correction changed $key");
     }
 }
 check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 201, 'Unexpected correction count');   // +36: open writing tasks without the answer given away (write_fixes.py, 3 November)
+check(count($retired) === 258, 'Unexpected correction count');   // +57: choice options of equal length and one theme, and four named tasks (option_fixes.py, 3 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

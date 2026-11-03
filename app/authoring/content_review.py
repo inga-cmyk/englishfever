@@ -472,4 +472,26 @@ def revise(original):
         q="Complete the report of 'Well done on winning the award, Jo!': I congratulated Jo ___ the award. (win)",
         answers=[['on winning']], hints=[],
         why='*congratulate* + person + *on* + -ing.')
+    # options of equal length, one theme, no near-duplicate pair (teacher, 3 November; option_fixes.py)
+    from option_fixes import FIX as _OPT
+    for _id, _ch in _OPT.items():
+        report_fix(_id, **_ch)
+    # teacher, 3 November: a meaning question that the context gives away becomes a form task; options about one theme, the same length;
+    # an instruction without a term the learner may not know; a report whose missing words were already in the quote
+    report_fix('ca-C12-2a',
+        q="I wish you ___ clicking your pen. It's driving me mad.",
+        correct='would stop', wrong=['will stop', 'would stopping', 'to stop'], wrong_why={},
+        why='*wish* + *would* + base form: something someone keeps doing that annoys us.')
+    report_fix('ps-B11-2a',
+        q='Water ___ at 100 degrees Celsius.',
+        correct='boils', wrong=['boil', 'boiling', 'is boil'], wrong_why={},
+        why='A general fact: present simple, *-s* after *he / she / it*: *Water boils at 100 °C.*',
+        why_lv='Vispārīgs fakts: Present Simple, aiz *he / she / it* galotne *-s*: *Water boils at 100 °C.*')
+    report_fix('ia-C12-3a',
+        q="Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+        answers=[["Whoever calls, don't answer.", 'Whoever calls, do not answer.']])
+    report_fix('rv-C11-3a',
+        q="'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam.",
+        kind='gap', answers=[['on']], bank=['on', 'about', 'at', 'with'], hints=[],
+        why='*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*')
     return items

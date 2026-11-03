@@ -7,6 +7,7 @@ require __DIR__ . '/../src/Content.php';
 require __DIR__ . '/../src/Grader.php';
 require __DIR__ . '/../src/Db.php';
 require __DIR__ . '/../src/Stats.php';
+require __DIR__ . '/../src/Path.php';
 require __DIR__ . '/../src/Engine.php';
 require __DIR__ . '/../src/Reports.php';
 require __DIR__ . '/../src/Mistakes.php';

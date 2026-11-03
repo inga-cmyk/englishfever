@@ -848,4 +848,4 @@ button.level-scale { cursor: pointer; }
 .ttile { position: relative; }
 .ttile-prog { display: block; height: 4px; margin: -4px 12px 10px; border-radius: 4px; background: var(--line); overflow: hidden; }
 .ttile-prog i { display: block; height: 100%; background: var(--good); border-radius: 4px; }
-.ttile-new { position: absolute; top: 7px; left: 7px; font-size: .62rem; font-weight: 800; background: var(--gold); color: #1E1E2C; border-radius: 999px; padding: 2px 7px; }
+.ttile-new { display: inline-block; margin-left: 6px; vertical-align: 1px; font-size: .62rem; font-weight: 800; background: var(--gold); color: #1E1E2C; border-radius: 999px; padding: 1px 7px; }

@@ -1833,8 +1833,8 @@
     var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
     return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
       h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, levelRange(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
-      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),
-      tileProgress(s), isNewTopic(s.id) ? h('span', { class: 'ttile-new' }, 'New') : null);
+      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, ''), isNewTopic(s.id) ? h('span', { class: 'ttile-new' }, 'New') : null),
+      tileProgress(s));
   }
   /** The thin green line under a topic tile: progress in the topic; nothing for a topic not practised yet (teacher, 3 November). */
   function tileProgress(s) {

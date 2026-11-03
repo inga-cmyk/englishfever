@@ -328,7 +328,7 @@
   function startPathStep(el, st) {
     el.disabled = true;
     track('path_step', st.id);
-    var check = st.status === 'likely';   // probably known: a 5-task quick check of check / use tasks
+    var check = st.status === 'likely' || !!st.check;   // probably known, or not asked in the level test: a 5-task quick check of check / use tasks (teacher, 3 November)
     api('session/start', { mode: 'practice', skills: st.topics, levels: st.levels || [st.level], length: check ? 5 : 10, source: check ? 'path_check' : 'path' }).then(function (r) {
       state.sess = newSess(r.session, r.item); state.sess.pathStep = st.id;
       try { localStorage.setItem('ef_pathstep', JSON.stringify({ sid: r.session.id, step: st.id })); } catch (e) {}   // survives a reload in the middle
@@ -412,9 +412,9 @@
         h('span', { class: 'pdot' + (ok ? ' ok' : ''), 'aria-hidden': 'true' }, ok ? icon('check') : ''),
         h('span', { class: 'pbody' },
           h('span', { class: 'ptext' }, rec ? h('span', { class: 'prec' }, '★ Recommended') : null, h('b', null, st.label),
-            h('small', null, st.level + ' · ' + (STATE[st.status] || '')),
+            h('small', null, st.level + ' · ' + ((st.check && st.status === 'new') ? 'Quick check' : (STATE[st.status] || ''))),
             st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null),
-          rec ? h('span', { class: 'btn small' }, st.status === 'likely' ? 'Quick check' : 'Go', icon('arrow')) : null));
+          rec ? h('span', { class: 'btn small' }, (st.status === 'likely' || st.check) ? 'Quick check' : 'Go', icon('arrow')) : null));
       return el;
     }
     var path = null;

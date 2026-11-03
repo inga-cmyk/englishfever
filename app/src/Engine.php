@@ -575,6 +575,7 @@ final class Engine
         $areaCount = [];
         foreach ($st['last'] as $h) $areaCount[$areaOf($h['skill'])] = ($areaCount[$areaOf($h['skill'])] ?? 0) + 1;
         $areaCap = max(2, (int) ceil(0.2 * (int) $ses['target_len']));
+        $order = $stairs ? Path::topicOrder($pl['lv']) : [];
         $best = null;
         $bestCost = PHP_FLOAT_MAX;
         foreach ($pool as $it) {
@@ -582,7 +583,12 @@ final class Engine
             if ($soft) {
                 $cost += ($stairs ? 0.6 : 0.3) * $skillCount[$it['skill']];
                 if (($areaCount[$areaOf($it['skill'])] ?? 0) >= $areaCap) $cost += $stairs ? 0.3 : 1.2;   // in a block, different topics come first   // one area (e.g. conditionals) not much more than a fifth of the test (teacher's feedback, 27 October)
-                if ($stairs) { if (!empty($missedHere[$it['skill']])) $cost -= 1.2; }   // a topic missed a moment ago is checked again with a new sentence
+                if ($stairs) {
+                    if (!empty($missedHere[$it['skill']])) $cost -= 1.2;   // a topic missed a moment ago is checked again with a new sentence
+                    // the topics of the level in the order of My learning path: present simple before the passive (teacher, 3 November)
+                    $rank = $order[$it['skill']] ?? null;
+                    if ($rank !== null && !$skillCount[$it['skill']]) $cost += 0.35 * count(array_filter($order, fn($r, $t) => $r < $rank && isset($bySkill[$t]) && !$skillCount[$t], ARRAY_FILTER_USE_BOTH));
+                }
                 elseif ($skillCount[$it['skill']] > 0 && !empty($lastWrong[$it['skill']])) $cost -= 0.5;
                 $cost -= 0.1 * $bloomCount[$it['bloom']] + random_int(0, 15) / 100;   // keep it close to the target: fewer random jumps
             }

@@ -122,6 +122,14 @@ final class Path
     private const LEVELS = ['A2', 'B1', 'B2', 'C1'];
     private const FRESH_DAYS = 21;   // a mastered topic asks for a refresh after three weeks without practice
 
+    /** The topics of a full level (A2, B1, B2, C1) in the order of My learning path: the level test asks them in this order (teacher, 3 November). */
+    public static function topicOrder(string $level): array
+    {
+        $out = [];
+        foreach (self::STEPS as [$id, $title, $band, $topics]) if (substr($band, 0, 2) === $level) foreach ($topics as $t) $out[$t] ??= count($out);
+        return $out;
+    }
+
     /** The levels a topic uses in a band: its own levels there, else the nearest lower level that has tasks (null: none). */
     public static function topicLevels(string $skill, string $band, array $byHalf): ?array
     {
@@ -241,9 +249,11 @@ final class Path
                 $n += $mm['n']; $prog += $mm['progress']; if ($mm['pct'] !== null) { $pctSum += $mm['pct']; $pctN++; }
                 // probably known: below the level found, right in the level test (and not missed there), or strong at a higher level
                 $likely = !isset($plWrong[$t]) && ($below || ($placedIdx >= $bandIdx && isset($plRight[$t])) || $strongAbove($t, $levels));
+                // not asked in the level test, at or above the level found: a quick check first (teacher, 3 November); passed = known
+                $checked = !$likely && $placedIdx >= 0 && $bandIdx >= $placedIdx && !isset($plWrong[$t]) && $mm['evidence'] <= 5 && $mm['confirmed'];
                 $all['learned'] = $all['learned'] && $mm['learned'];
                 $all['mastered'] = $all['mastered'] && $mm['mastered'];
-                $all['known'] = $all['known'] && ($mm['learned'] || ($likely && $mm['confirmed']));
+                $all['known'] = $all['known'] && ($mm['learned'] || ($likely && $mm['confirmed']) || $checked);
                 $all['likely'] = $all['likely'] && ($mm['learned'] || $likely);
                 $all['stale'] = $all['stale'] || $mm['stale'];
                 $all['failed'] = $all['failed'] || ($likely && !$mm['learned'] && $mm['failed_check'] && $mm['evidence'] >= 3);
@@ -258,16 +268,14 @@ final class Path
             $steps[] = ['id' => $id, 'label' => $label, 'level' => $band, 'levels' => $levels, 'topics' => $topics, 'fallback' => $fallback, 'needs' => null, 'best_after' => [],
                         'done' => $done, 'answers' => $n, 'pct' => $pctN ? (int) round($pctSum / $pctN) : null, 'progress' => $done ? 1.0 : $progress,
                         'stale' => $status === 'refresh', 'status' => $status, 'weak' => $status === 'strengthen',
-                        'below' => $status === 'likely', 'band_idx' => $bandIdx];
+                        'below' => $status === 'likely', 'band_idx' => $bandIdx,
+                        'check' => in_array($status, ['likely', 'new'], true) && $placedIdx >= 0 && $bandIdx >= $placedIdx];   // starts as a 5-task quick check
         }
-        // the recommended step: strengthen the basics first, then the first open step at or above the level found
-        // (a step with a topic missed in the level test first), else the first open step in the book order.
-        // "Probably known" steps below the level are confirmed in the review part of the sessions, not one by one.
-        $open = fn($x) => !$x['done'] && $x['status'] !== 'likely';
+        // the recommended step (teacher, 3 November): the first logical one, in the order of the path from the level found, even when the
+        // level test did not ask it (then it starts as a quick check); a step whose quick check failed comes first.
         $current = null;
         foreach ($steps as $x) if ($x['status'] === 'strengthen') { $current = $x['id']; break; }
-        if ($current === null && $placedIdx >= 0) foreach ($steps as $x) if ($x['band_idx'] >= $placedIdx && $open($x) && array_intersect($x['topics'], array_keys($plWrong))) { $current = $x['id']; break; }
-        if ($current === null) foreach ($steps as $x) if ($x['band_idx'] >= max(0, $placedIdx) && $open($x)) { $current = $x['id']; break; }
+        if ($current === null) foreach ($steps as $x) if ($x['band_idx'] >= max(0, $placedIdx) && !$x['done']) { $current = $x['id']; break; }
         if ($current === null) foreach ($steps as $x) if (!$x['done']) { $current = $x['id']; break; }
         foreach ($steps as &$x) unset($x['band_idx']);
         unset($x);

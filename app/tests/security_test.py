@@ -64,7 +64,7 @@ js = open(os.path.join(APP, "assets", "app.js")).read() + open(os.path.join(APP,
 inner = [l.strip() for l in js.splitlines() if "innerHTML" in l]
 check("no eval / document.write in the app code", not re.search(r"eval\(|document\.write|new Function|insertAdjacentHTML", js))
 check("innerHTML is only used for the built-in icon and avatar shapes (fixed strings)", len(inner) == 3 and all(re.match(r"(s|grp)\.innerHTML = (ICONS\[name\] \|\| ''|AV_GLYPHS\[parts\[0\]\];|AV_CHARS\[parts\[0\]\];)", l) for l in inner), inner)
-check("no third-party hosts in the app code", not re.search(r"https?://(?!127\.0\.0\.1|www\.w3\.org)", js), re.findall(r"https?://[^'\" )]+", js)[:3])
+check("no third-party hosts in the app code (links the learner opens: the app itself, Google Calendar)", not re.search(r"https?://(?!127\.0\.0\.1|www\.w3\.org|practice\.englishfever\.com/|calendar\.google\.com/calendar/render)", js), re.findall(r"https?://[^'\" )]+", js)[:3])
 
 # ---- 2. API basics
 r = C().api("config"); hd = r["_headers"]

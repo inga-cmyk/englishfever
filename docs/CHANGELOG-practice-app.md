@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Reminder buttons, the same everywhere:** *Add to Google Calendar* and *Other calendar* (a calendar file for Apple, Outlook and others).
 - **Reminder on iPhone:** next to *Add to my calendar* there is a small *or Google Calendar* link, for people who use the Google Calendar app on an iPhone.
 - **Reminder: one button on a phone.** iPhone opens the calendar file, Android opens Google Calendar, both labelled *Add to my calendar*; a computer shows *Apple / Outlook* and *Google Calendar*.
 - **Remind me every day:** at the end of a session a *🔔 Remind me every day* button lets the learner pick a time and add a daily event to their own calendar (Apple / Outlook file, or Google Calendar with the event filled in). Nothing is stored or sent; Usage counts the button (*Added a daily reminder*).

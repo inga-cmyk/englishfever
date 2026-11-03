@@ -363,12 +363,10 @@
     });
     var open = h('button', { type: 'button', class: 'btn ghost small' }, '🔔 Remind me every day');
     open.addEventListener('click', function () {
-      // one button on a phone (teacher, 3 November): iPhone opens the calendar file, Android opens Google Calendar; a computer gets both
-      var ua = navigator.userAgent || '', android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-      if (android) g.textContent = 'Add to my calendar';
-      if (ios) { g.className = 'linkbtn small'; g.textContent = 'or Google Calendar'; }   // an iPhone with the Google Calendar app too (teacher, 3 November): one button and a small link
-      var btns = android ? [g] : ios ? [ics, g] : [ics, g];
-      if (!android && !ios) ics.textContent = 'Apple / Outlook';
+      // the same two buttons everywhere (teacher, 3 November): Google Calendar, or a calendar file for any other calendar (Apple, Outlook ...)
+      g.className = 'btn small'; g.textContent = 'Add to Google Calendar';
+      ics.className = 'btn ghost small'; ics.textContent = 'Other calendar';
+      var btns = [g, ics];
       card.replaceChildren(h('div', { class: 'row', style: 'gap:10px;flex-wrap:wrap;align-items:center' },
         h('span', null, '🔔 Every day at'), time, btns));
     });

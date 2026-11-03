@@ -23,7 +23,7 @@ P.bank("B1.2", "Paris, ___ is the capital of France, is very busy in summer.", "
 P.gap("B1.1", "She is the girl ___ brother plays for the national team.", "whose")
 P.gap("B1.1", "The hotel ___ we stayed was close to the beach.", "where | in which")
 P.gap("B1.2", "This is the road along ___ we walked.", "which")
-P.gap("B1.2", "Anna, ___ husband is a pilot, travels a lot.", "whose")
+P.gap("B1.2", "Anna, ___ husband is a pilot, travels a lot.", "whose", why=("*whose* = belongs to: Anna's husband. The commas show extra information (a non-defining clause).", "*whose* = kam pieder: Annas vīrs. Komati rāda papildu informāciju."))
 P.gap("B1.2", "Last year we visited Rome, ___ my parents got married.", "where | in which")
 P.mcq("B1.1", "Choose the correct option: The woman ___ lives next door is a nurse.", "who", ["which", "where", "whose"])
 P.mcq("B1.1", "Choose the correct option: This is the phone ___ I bought last week.", "which", ["who", "where", "whose"])

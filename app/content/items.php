@@ -430,12 +430,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Tieši tagad: *am/is/are* + darbības vārds ar *-ing*. *The children* = *they*, tāpēc *are playing*."
 },
 {
-"id": "pc-A21-2a",
+"id": "pc-A21-2a-r2",
 "skill": "present_continuous",
 "level": "A2.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is happening right now?",
+"q": "Which sentence is about this moment?",
 "correct": "I'm cooking dinner.",
 "wrong": [
 "I cook dinner every day.",
@@ -508,15 +508,15 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *are* vajag darbības vārdu ar *-ing*: *They are playing football.*"
 },
 {
-"id": "pc-A21-5a",
+"id": "pc-A21-5a-r2",
 "skill": "present_continuous",
 "level": "A2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend is at the station and you ask about now. Choose the correct option.",
+"q": "Choose the correct question.",
 "correct": "What are you doing now?",
 "wrong": [
-"What do you do now?",
+"What do you doing now?",
 "What you are doing now?",
 "What are you do now?"
 ],
@@ -525,20 +525,20 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājumam par tagadni lieto *are + you* + darbības vārds ar *-ing*."
 },
 {
-"id": "pc-A21-6a",
+"id": "pc-A21-6a-r2",
 "skill": "present_continuous",
 "level": "A2.1",
 "bloom": 6,
 "kind": "write",
-"q": "Look around you. Write one sentence about what you are doing now. Start with I am.",
+"q": "Look around you. Write two sentences about what is going on around you at the moment.",
 "must": [
 [
-"\\bi\\s*(am|'m)\\s+\\w+ing\\b",
-"Use *I am* (or *I'm*) + verb-ing, for example: *I am sitting at my desk.*",
-"Lieto *I am* (vai *I'm*) + darbības vārds ar *-ing*, piemēram: *I am sitting at my desk.*"
+"\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b",
+"Use *am / is / are* + verb-ing, for example: *My neighbour is cutting the grass.*",
+"Lieto *am / is / are* + darbības vārds ar *-ing*, piemēram: *My neighbour is cutting the grass.*"
 ]
 ],
-"model": "I am sitting at my desk.",
+"model": "I am sitting at my desk. My neighbour is cutting the grass.",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },

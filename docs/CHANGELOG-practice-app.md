@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Reported tasks, 3 November:** word order with the two people swapped is accepted (*I had already left when she arrived*, and 8 more like it); *when I have arrived* accepted; *whose* gets its own explanation; pc-A21-2a *Which sentence is about this moment?*; pc-A21-5a *Choose the correct question.* with a clearly wrong option; pc-A21-6a writing task no longer says *Start with I am* (two sentences about what is going on around you). Re-import the draft files.
 - **Reminder buttons, the same everywhere:** *Add to Google Calendar* and *Other calendar* (a calendar file for Apple, Outlook and others).
 - **Reminder on iPhone:** next to *Add to my calendar* there is a small *or Google Calendar* link, for people who use the Google Calendar app on an iPhone.
 - **Reminder: one button on a phone.** iPhone opens the calendar file, Android opens Google Calendar, both labelled *Add to my calendar*; a computer shows *Apple / Outlook* and *Google Calendar*.

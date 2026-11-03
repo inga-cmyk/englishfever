@@ -241,6 +241,58 @@
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
+"id": "pc-A21-2a",
+"skill": "present_continuous",
+"level": "A2.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence is happening right now?",
+"correct": "I'm cooking dinner.",
+"wrong": [
+"I cook dinner every day.",
+"I cooked dinner yesterday.",
+"I will cook dinner tomorrow."
+],
+"why": "The present continuous shows an action in progress now.",
+"wrong_why": {},
+"why_lv": "Present Continuous rāda darbību, kas notiek tieši tagad."
+},
+{
+"id": "pc-A21-5a",
+"skill": "present_continuous",
+"level": "A2.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "A friend is at the station and you ask about now. Choose the correct option.",
+"correct": "What are you doing now?",
+"wrong": [
+"What do you do now?",
+"What you are doing now?",
+"What are you do now?"
+],
+"why": "For right now we use *are* + *you* + verb-ing.",
+"wrong_why": {},
+"why_lv": "Jautājumam par tagadni lieto *are + you* + darbības vārds ar *-ing*."
+},
+{
+"id": "pc-A21-6a",
+"skill": "present_continuous",
+"level": "A2.1",
+"bloom": 6,
+"kind": "write",
+"q": "Look around you. Write one sentence about what you are doing now. Start with I am.",
+"must": [
+[
+"\\bi\\s*(am|'m)\\s+\\w+ing\\b",
+"Use *I am* (or *I'm*) + verb-ing, for example: *I am sitting at my desk.*",
+"Lieto *I am* (vai *I'm*) + darbības vārds ar *-ing*, piemēram: *I am sitting at my desk.*"
+]
+],
+"model": "I am sitting at my desk.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "pc-A22-1a",
 "skill": "present_continuous",
 "level": "A2.2",

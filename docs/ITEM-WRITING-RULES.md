@@ -13,6 +13,11 @@
 8. **Sentence length by layer**: A2 about 5-9 words, one clause, everyday words; B1 about 10-16 words, two clauses, wider vocabulary, no clue word. Negatives and questions are A2 as well.
 9. **New topic**: at least 25 questions per level before it goes live; existing topics aim for 50 per level.
 
+## Learn or check (rule from Inga, 3 November)
+- For every task decide: does it **check** understanding, or **help build** it? A task that can be solved from the meaning alone, without the grammar (matching beginnings and endings by context, "Which sentence is about a habit?"), is a first step in learning a topic, not evidence that the learner knows the form.
+- Writing tasks must not give the answer away: no "Start with He or She and add an activity", no "Use I am going to". Give the situation; the check looks for the form. Name a form only when choosing it is not the point of the task.
+- In word-order tasks, check whether the people can be swapped (*she … I* → *I … she*): if the sentence is still correct, accept it.
+
 ## New topics: scope from test-english.com (rule from Inga, 2 November)
 - Before a new topic is added (card or tasks), read what test-english.com teaches about it at that level (the lesson for the topic in docs/LEVEL-LISTS-test-english.md) and cover the same points, in the same order.
 - Use it for the scope only: our own examples and explanations, no copied sentences or exercises. Check the grammar against Murphy as before.

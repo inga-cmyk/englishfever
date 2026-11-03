@@ -121,6 +121,16 @@ EXTRA = {
     "has the manager already signed the contract": ["the manager has already signed the contract", "the manager has signed the contract already"],   # Cowork issue 25: no ? card, so the statement fits too
     "the museum doesn't open on mondays during the winter": ["during the winter the museum doesn't open on mondays", "on mondays during the winter the museum doesn't open", "on mondays the museum doesn't open during the winter"],
     "i have a cat and a dog": ["i have a dog and a cat"],
+    # the two people swapped: the same words, also correct (learner report c-2664, 3 November)
+    "she had already left when i arrived": ["i had already left when she arrived", "when she arrived i had already left"],
+    "she was reading when i arrived": ["i was reading when she arrived", "when she arrived i was reading"],
+    "they had left before we got to the party": ["we had left before they got to the party", "before they got to the party we had left"],
+    "i asked her how long she had lived there": ["she asked her how long i had lived there"],
+    "he asked her whether she liked her new job": ["she asked her whether he liked her new job"],
+    "he asked if i could help him with the bags": ["i asked if he could help him with the bags"],
+    "i love the film that we saw yesterday": ["we love the film that i saw yesterday"],
+    "by the time you arrive we will have finished dinner": ["by the time we arrive you will have finished dinner", "you will have finished dinner by the time we arrive"],
+    "we need more staff in order for the shop to open on sundays": ["in order for the shop to open on sundays we need more staff"],
 }
 
 _ALT = {}; GROUPS = []

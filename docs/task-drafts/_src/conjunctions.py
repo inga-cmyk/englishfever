@@ -79,7 +79,7 @@ T.mcq("B1.1", "Choose the correct option: I always check my email before ___ wor
 T.gap("A2.2", I_1 + "I was very tired. ___, I finished the report.", "However | Nevertheless | Still", L_HOW)
 T.gap("A2.2", I_1 + "The match was cancelled because ___ the storm.", "of", L_OF)
 T.gap("A2.2", I_1 + "My phone rang ___ I was driving.", "while | when | as", L_WHILE)
-T.gap("A2.2", "Use the correct form: I'll text you when I ___ at the station. (arrive)", "arrive", L_FUT)
+T.gap("A2.2", "Use the correct form: I'll text you when I ___ at the station. (arrive)", "arrive | have arrived", L_FUT)
 T.gap("A2.2", I_1 + "First we checked in. ___ we went to the beach.", "Then | Next | Afterwards | Later", L_THEN)
 T.gap("B1.1", I_1 + "___ she studied hard, she failed the exam.", "Although | Though | While", L_ALT)
 T.text("A2.2", "Join with *although*: He was ill. He went to work.", ["Although he was ill, he went to work.", "He went to work although he was ill.", "He went to work, although he was ill."], L_ALT)

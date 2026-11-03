@@ -454,6 +454,13 @@ def revise(original):
         wrong=['The manager apologised the delay and promised that it would not happen again.',
                'The manager apologised for the delay and promised to that it would not happen again.',
                'The manager apologised for the delay and promised it not happening again.'])
+    # reported 3 November: plain wording, wrong options that are wrong, a writing task that does not give the form away
+    report_fix('pc-A21-2a', q='Which sentence is about this moment?')
+    report_fix('pc-A21-5a', q='Choose the correct question.', wrong=['What do you doing now?', 'What you are doing now?', 'What are you do now?'])
+    report_fix('pc-A21-6a', q='Look around you. Write two sentences about what is going on around you at the moment.',
+        must=[["\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b", "Use *am / is / are* + verb-ing, for example: *My neighbour is cutting the grass.*",
+               "Lieto *am / is / are* + darbības vārds ar *-ing*, piemēram: *My neighbour is cutting the grass.*"]],
+        model='I am sitting at my desk. My neighbour is cutting the grass.')
     report_fix('ip-B21-5a', q="Which is the polite way to ask this: 'When will my order be delivered?'")
     report_fix('rv-C12-1a', q="Which sentence reports this: 'If I were you, I'd take the earlier train.'")
     report_fix('rv-C11-3a',

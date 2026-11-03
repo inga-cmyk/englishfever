@@ -51,6 +51,7 @@ with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("var/sessions/.keep", "")
     # which package is live (shown in the footer of the app)
     import time
+    os.environ["TZ"] = "Europe/Riga"; time.tzset()   # the version in Riga time, as the teacher reads it (it was UTC, two hours behind)
     stamp = time.strftime("%Y-%m-%d %H:%M")
     z.writestr("src/version.php", "<?php\nreturn ['version' => '" + stamp + "'];\n")
     n += 1

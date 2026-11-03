@@ -354,7 +354,7 @@
       ics.setAttribute('download', 'english-fever-reminder.ics');
       track('reminder', 'calendar');
     });
-    var g = h('a', { class: 'btn ghost small', target: '_blank', rel: 'noopener', href: '#' }, 'Google Calendar');
+    var g = h('a', { class: 'btn small', target: '_blank', rel: 'noopener', href: '#' }, 'Google Calendar');
     g.addEventListener('click', function () {
       var t = start();
       g.href = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(TITLE) + '&dates=' + t[0] + '/' + t[1] +
@@ -363,8 +363,13 @@
     });
     var open = h('button', { type: 'button', class: 'btn ghost small' }, '🔔 Remind me every day');
     open.addEventListener('click', function () {
+      // one button on a phone (teacher, 3 November): iPhone opens the calendar file, Android opens Google Calendar; a computer gets both
+      var ua = navigator.userAgent || '', android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (android) g.textContent = 'Add to my calendar';
+      var btns = android ? [g] : ios ? [ics] : [ics, g];
+      if (!android && !ios) ics.textContent = 'Apple / Outlook';
       card.replaceChildren(h('div', { class: 'row', style: 'gap:10px;flex-wrap:wrap;align-items:center' },
-        h('span', null, '🔔 Every day at'), time, ics, g));
+        h('span', null, '🔔 Every day at'), time, btns));
     });
     card.append(open);
     return card;

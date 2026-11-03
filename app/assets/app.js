@@ -307,10 +307,11 @@
         fb.replaceChildren(h('b', null, (right ? '' : 'Not quite. ') + 'After ‘didn’t’, use the base form: use.'), h('i', null, 'I didn’t use to understand grammar. Now I do.'));
       } }, o, h('span', { class: 'lp-tick', 'aria-hidden': 'true' }, icon('check')));
     }));
-    var wave = '<svg viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 120 40, 200 20, 300 38 S 480 30, 600 10" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5"/>'
-      + '<circle cx="60" cy="44" r="5" fill="currentColor"/><circle cx="300" cy="38" r="5" fill="currentColor"/><circle cx="545" cy="18" r="5" fill="currentColor"/></svg>';
-    var stairs = '<svg viewBox="0 0 260 70" aria-hidden="true"><path d="M2 68H40V56H75V44H110V32H150V20H190V6H245V18" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
-    function svg(markup, cls) { var w = h('div', { class: cls }); w.innerHTML = markup; return w; }   // fixed markup from this file
+    var wave = h('div', { class: 'lp-wave' }, sv('svg', { viewBox: '0 0 600 60', preserveAspectRatio: 'none', 'aria-hidden': 'true' }, [
+      sv('path', { d: 'M0 50 C 120 40, 200 20, 300 38 S 480 30, 600 10', fill: 'none', stroke: 'currentColor', 'stroke-width': '1.5', opacity: '.5' }),
+      sv('circle', { cx: '60', cy: '44', r: '5', fill: 'currentColor' }), sv('circle', { cx: '300', cy: '38', r: '5', fill: 'currentColor' }), sv('circle', { cx: '545', cy: '18', r: '5', fill: 'currentColor' })]));
+    var stairs = h('div', { class: 'lp-stairs' }, sv('svg', { viewBox: '0 0 260 70', 'aria-hidden': 'true' }, [
+      sv('path', { d: 'M2 68H40V56H75V44H110V32H150V20H190V6H245V18', fill: 'none', stroke: 'currentColor', 'stroke-width': '2' })]));
     var guestLink = h('button', { type: 'button', class: 'lp-link', onclick: openGuest }, 'Try it as a guest');
 
     show(h('div', { class: 'lp' },
@@ -323,7 +324,7 @@
         startBtn('Start practising'),
         cfg.register_url ? h('div', null, guestLink) : null,
         guestBox,
-        svg(wave, 'lp-wave')),
+        wave),
       h('section', { class: 'lp-band lp-alt lp-split' },
         h('div', null, h('h2', null, 'From guessing to understanding.'),
           h('p', null, 'You recognise the words. But choosing the right answer still feels uncertain.'),
@@ -340,7 +341,7 @@
         h('h2', null, h('span', { class: 'lp-acc' }, 'Practice makes progress.')),
         h('p', { class: 'lp-lead' }, 'Perfect can wait.'),
         h('p', null, 'You don’t need to master everything today.', h('br'), 'Start with one thing that becomes clearer.'),
-        svg(stairs, 'lp-stairs'),
+        stairs,
         startBtn('Take the first step')),
       h('section', { class: 'lp-band' },
         h('h2', null, 'Success is built in small steps.'),
@@ -1968,11 +1969,20 @@
 
 
   // ───────── leaderboard ─────────
+  /** An SVG element built from parts (not from a markup string: the security test allows that only for the icon and avatar tables). */
+  function sv(tag, attrs, kids) {
+    var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    Object.keys(attrs || {}).forEach(function (k) { el.setAttribute(k, attrs[k]); });
+    (kids || []).forEach(function (c) { el.appendChild(c); });
+    return el;
+  }
   /** The most patient learner of the week: an hourglass whose sand runs for 30 seconds, then it turns over (teacher, 3 November). */
   function hourglass() {
-    var w = document.createElement('span'); w.className = 'hourglass'; w.title = 'Most patient: most time spent practising this week';
-    w.innerHTML = '<svg viewBox="0 0 16 20" width="14" height="18" aria-hidden="true"><path class="hg-frame" d="M2 1.5h12M2 18.5h12M4 2c0 5 4 5 4 8s-4 3-4 8M12 2c0 5-4 5-4 8s4 3 4 8"/>'
-      + '<path class="hg-top" d="M4.6 4h6.8c-.6 2.6-3.4 3.4-3.4 6c0-2.6-2.8-3.4-3.4-6z"/><path class="hg-bot" d="M8 12.2c0 1.6 3.4 2.6 3.6 5.8H4.4C4.6 14.8 8 13.8 8 12.2z"/></svg>';
+    var w = h('span', { class: 'hourglass', title: 'Most patient: most time spent practising this week' });
+    w.appendChild(sv('svg', { viewBox: '0 0 16 20', width: '14', height: '18', 'aria-hidden': 'true' }, [
+      sv('path', { class: 'hg-frame', d: 'M2 1.5h12M2 18.5h12M4 2c0 5 4 5 4 8s-4 3-4 8M12 2c0 5-4 5-4 8s4 3 4 8' }),
+      sv('path', { class: 'hg-top', d: 'M4.6 4h6.8c-.6 2.6-3.4 3.4-3.4 6c0-2.6-2.8-3.4-3.4-6z' }),
+      sv('path', { class: 'hg-bot', d: 'M8 12.2c0 1.6 3.4 2.6 3.6 5.8H4.4C4.6 14.8 8 13.8 8 12.2z' })]));
     return w;
   }
   function viewLeaderboard() {

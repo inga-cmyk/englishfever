@@ -235,6 +235,11 @@
   window.addEventListener('pagehide', function () { try { if (evQueue.length) localStorage.setItem('ef_evq', JSON.stringify(evQueue.slice(0, 50))); } catch (e) {} evQueue = []; });
   try { var savedEv = JSON.parse(localStorage.getItem('ef_evq') || '[]'); localStorage.removeItem('ef_evq'); if (Array.isArray(savedEv)) evQueue = savedEv.slice(0, 50); } catch (e) {}
 
+  /** A Home button that also works when the page was opened over Home (the level report from the My level tile): the address is already #/home, so following the link would change nothing (teacher, 3 November). */
+  function homeLink() {
+    return h('a', { class: 'btn ghost', href: '#/home', onclick: function (e) { if (location.hash === '#/home') { e.preventDefault(); route(); window.scrollTo(0, 0); } } }, 'Home');
+  }
+
   function route() {
     var hash = location.hash || '#/';
     var parts = hash.replace(/^#\/?/, '').split('/');
@@ -1685,7 +1690,7 @@
     if (!s.comeback) nodes.push(nextActions(s, ps));   // one clear choice (teacher, 3 November): try again / try harder / next topic
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));
     nodes.push(reminderCard());
-    nodes.push(h('div', { class: 'row' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
+    nodes.push(h('div', { class: 'row' }, homeLink()));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
   }
 
@@ -1785,7 +1790,7 @@
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
     nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
-    nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
+    nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, homeLink()));
     return nodes;
   }
 
@@ -1833,7 +1838,7 @@
     var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
     return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
       h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, levelRange(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
-      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, ''), isNewTopic(s.id) ? h('span', { class: 'ttile-new' }, 'New') : null),
+      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),   // no "New" label on the tile: the New group says it (teacher, 3 November)
       tileProgress(s));
   }
   /** The thin green line under a topic tile: progress in the topic; nothing for a topic not practised yet (teacher, 3 November). */

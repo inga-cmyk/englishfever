@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Home button on the level report works:** the report opened from *My level* sits over Home, so the button did nothing; it now goes back to Home. **No yellow New labels on the tiles:** the *New* group at the top of Topics is enough.
 - **My level scale in four parts:** A2 · B1 · B2 · C1, each with its label under it, the learner's level outlined in gold. It says exactly what the level test says (B2 shows as B2, not as a half-level next to C1).
 - **Level test report:** the last *How you did* heading is now *Skills check*, the same as everywhere else.
 - **Latvia avatars in the flag's own red:** carmine red as the flag standard gives it (Pantone 201 C, RGB 157 34 53), instead of the lighter red before.

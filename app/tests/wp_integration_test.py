@@ -318,9 +318,10 @@ check("signing in later moves the guest results and keeps the assigned avatar", 
 after_merge = {x["id"]: x for x in tapp.api("teacher/students")["students"]}
 check("the teacher's mark moved to the new account and the guest row is gone", g3_id not in after_merge and after_merge.get(me3["user"]["id"], {}).get("mine") == "added", after_merge.get(me3["user"]["id"]))
 check("teacher and student views show an avatar for everyone", all(r.get("avatar") for r in tapp.api("leaderboard", period="all")["rows"]) if tapp.api("leaderboard", period="all")["rows"] else True)
-# administrators are never redirected
+# 1.8.3: an administrator who came from the app goes back too (once: the marker is used up); without the marker, never
 adm = wp_login("admin"); adm.cj.set_cookie(http.cookiejar.Cookie(0, "ef_return", str(int(time.time())), None, False, "127.0.0.1", False, False, "/", True, False, None, False, None, None, {}))
-check("an administrator with the marker is not redirected", adm.req(WP + "/results/")[0] == 200)
+check("an administrator with the marker goes back to the app once", adm.req(WP + "/results/")[0] == 302)
+check("...and the next page is the normal site", adm.req(WP + "/results/")[0] == 200)
 
 # 8d. phones: the account is created in one browser, the confirmation link opens in ANOTHER one (no cookie there).
 # The plugin keeps a note on the account, so the first page after logging in still goes into the app.

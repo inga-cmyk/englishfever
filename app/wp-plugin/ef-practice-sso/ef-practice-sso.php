@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.8.2
+ * Version:     1.8.3
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -27,6 +27,7 @@
  * Signing in works the same way: "Sign in" in the app goes through ?ef_practice=go, which leaves the same marker before it
  * sends a visitor to the login form, so a login form that ignores redirect_to (Tutor's often ends on its dashboard) still
  * ends in the app.
+ * Since 1.8.3 this also works for teachers and administrators, and the Tutor dashboard menu has a "Grammar practice" item that opens the app.
  * Switch the automatic return off with  define( 'EF_PRACTICE_AUTO_RETURN', false );  to always show the bar.
  *
  * The WordPress login page itself (wp-login.php) is shown in the app's colours when someone arrives from the app (not for other
@@ -279,11 +280,7 @@ function ef_practice_came_from_app() {
 		ef_practice_clear_return();
 		return false;
 	}
-	if ( ! ef_practice_is_tracked_student( get_current_user_id() ) ) {
-		ef_practice_clear_return();
-		return false;
-	}
-	return true;
+	return true;   // 1.8.3: teachers and administrators who came from the app go back too (only the activity tracking is for students)
 }
 
 /* the small x on the bar: forget the marker and stay on the same page */
@@ -319,6 +316,39 @@ add_action( 'wp_footer', function () {
 		. '<a href="' . esc_url( ef_practice_link( 'open' ) ) . '" style="' . esc_attr( $btn ) . '">Back to your practice</a>'
 		. '<a href="' . esc_url( add_query_arg( 'ef_practice_dismiss', '1' ) ) . '" aria-label="Close" style="color:#C9C4B8;text-decoration:none;font-size:22px;line-height:1;padding:4px 8px;">&times;</a></div>';
 }, 99 );
+
+/* ───────── "Grammar practice" in the Tutor LMS student dashboard menu (1.8.3) ───────── */
+add_filter( 'tutor_dashboard/nav_items', function ( $items ) {
+	if ( ! ef_practice_configured() || ! is_array( $items ) ) {
+		return $items;
+	}
+	$item = array(
+		'title' => __( 'Grammar practice', 'ef-practice' ),
+		'icon'  => 'tutor-icon-book-open',
+		'url'   => add_query_arg( 'ef_practice', 'open', home_url( '/' ) ),   // signed in at once, straight into the app
+	);
+	$out = array();
+	foreach ( $items as $key => $value ) {   // right after the dashboard itself, near the top
+		$out[ $key ] = $value;
+		if ( 'index' === $key ) {
+			$out['ef-practice'] = $item;
+		}
+	}
+	if ( ! isset( $out['ef-practice'] ) ) {
+		$out = array( 'ef-practice' => $item ) + $out;
+	}
+	return $out;
+} );
+
+/* A Tutor version that ignores the 'url' above opens /dashboard/ef-practice/: send that page into the app as well. */
+add_action( 'template_redirect', function () {
+	if ( 'ef-practice' !== get_query_var( 'tutor_dashboard_page' ) || ! ef_practice_configured() ) {
+		return;
+	}
+	nocache_headers();
+	wp_safe_redirect( add_query_arg( 'ef_practice', 'open', home_url( '/' ) ) );
+	exit;
+}, 4 );
 
 /** The link for the current page, in the "open" mode (works on any front-end page). */
 function ef_practice_link( $mode = 'open' ) {

@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Remind me every day:** at the end of a session a *🔔 Remind me every day* button lets the learner pick a time and add a daily event to their own calendar (Apple / Outlook file, or Google Calendar with the event filled in). Nothing is stored or sent; Usage counts the button (*Added a daily reminder*).
 - **Fix:** after 👍 or 👎 the small tick next to *Thanks* was shown huge on the iPhone; it is small again.
 - **Rule card during a task:** every practice task (not the level test) has a **?** button next to the topic. It opens the rule card for that topic; *Back to the task* returns to the question. Answers given after opening the card are marked in the research export (`rule_card_before`), and Usage shows *during a task (?)*.
 - **Joining ideas, second check:** more accepted answers: *Later* (after *First we checked in.*), *Afterwards* in *I had dinner. After, …*, *due to the rain*, *so as to get*, and second orders for *because of the rain the game was cancelled* and *…we missed the meeting as a result*. Re-import `conjunctions-1.csv`.

@@ -329,6 +329,47 @@
       location.hash = '#/session';
     }).catch(function (e) { el.disabled = false; UI.toast(e.message); });
   }
+  /** "Remind me every day" (teacher, 3 November): a daily event in the learner's own calendar at a time they choose.
+      Nothing is stored or sent: the calendar file is made in the browser (Apple / Outlook), or Google Calendar opens with the event filled in. */
+  function reminderCard() {
+    var card = h('div', { class: 'card pad-s remind', style: 'margin-bottom:16px' });
+    var now = new Date(); now.setMinutes(now.getMinutes() < 30 ? 30 : 60, 0, 0);
+    var two = function (n) { return (n < 10 ? '0' : '') + n; };
+    var time = h('input', { type: 'time', value: two(now.getHours()) + ':' + two(now.getMinutes()), 'aria-label': 'Time', class: 'remind-t' });
+    function start() {   // tomorrow at the chosen time, as local "floating" time: the calendar keeps it at that hour
+      var p = (time.value || '18:00').split(':'), d = new Date(); d.setDate(d.getDate() + 1); d.setHours(+p[0], +p[1], 0, 0);
+      var e = new Date(d.getTime() + 10 * 60000);
+      var f = function (x) { return x.getFullYear() + two(x.getMonth() + 1) + two(x.getDate()) + 'T' + two(x.getHours()) + two(x.getMinutes()) + '00'; };
+      return [f(d), f(e)];
+    }
+    var TITLE = 'English Fever: 5 minutes of grammar', URL_APP = 'https://practice.englishfever.com/', DESC = 'A short practice round: ' + URL_APP;
+    var ics = h('a', { class: 'btn small', href: '#' }, 'Add to my calendar');
+    ics.addEventListener('click', function () {
+      var t = start();
+      var body = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//English Fever//practice//EN', 'BEGIN:VEVENT', 'UID:ef-' + Date.now() + '@practice.englishfever.com',
+        'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z', 'DTSTART:' + t[0], 'DTEND:' + t[1], 'RRULE:FREQ=DAILY',
+        'SUMMARY:' + TITLE, 'DESCRIPTION:' + DESC, 'URL:' + URL_APP,
+        'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' + TITLE, 'TRIGGER:PT0M', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+      ics.href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(body);
+      ics.setAttribute('download', 'english-fever-reminder.ics');
+      track('reminder', 'calendar');
+    });
+    var g = h('a', { class: 'btn ghost small', target: '_blank', rel: 'noopener', href: '#' }, 'Google Calendar');
+    g.addEventListener('click', function () {
+      var t = start();
+      g.href = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(TITLE) + '&dates=' + t[0] + '/' + t[1] +
+        '&recur=' + encodeURIComponent('RRULE:FREQ=DAILY') + '&details=' + encodeURIComponent(DESC);
+      track('reminder', 'google');
+    });
+    var open = h('button', { type: 'button', class: 'btn ghost small' }, '🔔 Remind me every day');
+    open.addEventListener('click', function () {
+      card.replaceChildren(h('div', { class: 'row', style: 'gap:10px;flex-wrap:wrap;align-items:center' },
+        h('span', null, '🔔 Every day at'), time, ics, g));
+    });
+    card.append(open);
+    return card;
+  }
+
   /** After a step from My learning path: "Continue with" the next step that is not mastered yet. */
   function pathNextCard(doneId) {
     var card = h('div', { class: 'card pathnext', style: 'margin-bottom:16px' });
@@ -1605,6 +1646,7 @@
           n.type === 'review' ? h('button', { class: 'btn ghost small', onclick: function () { rulesModal(n.skill); } }, 'Rule card')
             : h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: state.lastSkills || s.by_skill.map(function (k) { return k.id; }), level: n.level }; location.hash = '#/practice'; } }, 'Try harder')));
       }) : h('li', null, (feat('streak') ? 'Do another round to build your streak and see your level move.' : 'Do another round to see your level move.')))));
+    nodes.push(reminderCard());
     nodes.push(h('div', { class: 'row' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.by_skill.map(function (k) { return k.id; }), level: s.level }; location.hash = '#/practice'; } }, 'Practise again'), h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
   }

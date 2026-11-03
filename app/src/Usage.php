@@ -22,6 +22,7 @@ final class Usage
         'mood' => 'Chose a mood saying',
         'path_step' => 'Opened a step on My learning path',
         'bonus' => 'Took the Second Chance bonus',
+        'reminder' => 'Added a daily reminder to the calendar',
     ];
     private const DAY_CAP = 2000;   // per learner per day: a page that loops cannot fill the table
 

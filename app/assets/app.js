@@ -599,12 +599,12 @@
    *  learner's level are filled, darker green the higher they go, and a marker sits on the learner's level. No numbers. */
   function levelScale(lvl, rep) {
     if (!lvl) return null;
-    var L = state.meta.levels, at = L.indexOf(lvl);
+    // four parts, one per level, so the scale says exactly what the level test says ("B2"), not a half-level near the next one (teacher, 3 November)
+    var LV = ['A2', 'B1', 'B2', 'C1'], at = LV.indexOf(String(lvl).slice(0, 2));
     if (at < 0) return null;
-    var cells = L.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); });
-    var bar = h('div', { class: 'ls-bar' }, cells);
-    var labels = h('div', { class: 'ls-labels' }, ['A2', 'B1', 'B2', 'C1'].map(function (x) { return h('span', { class: x === lvl.slice(0, 2) ? 'on' : '' }, x); }));
-    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + lvl + (rep ? '' : ' (from my practice)') }, h('span', { class: 'ls-title' }, 'My level'), bar, labels);
+    var bar = h('div', { class: 'ls-bar' }, LV.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); }));
+    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, x); }));
+    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + LV[at] + (rep ? '' : ' (from my practice)') }, h('span', { class: 'ls-title' }, 'My level'), bar, labels);
     if (rep) { box.type = 'button'; box.addEventListener('click', function () { showPlacementReport(rep); }); }
     return box;
   }

@@ -836,12 +836,12 @@ html .pill.xp.xp-3 { color: #4f3d12; } html .pill.xp.xp-4 { color: #3d2e08; }
 .level-scale { display: block; width: 100%; margin-top: 14px; padding: 0; border: 0; background: none; text-align: left; font: inherit; color: inherit; cursor: default; }
 button.level-scale { cursor: pointer; }
 .ls-title { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; opacity: .7; margin-bottom: 5px; }
-.ls-bar { display: grid; grid-template-columns: repeat(8, 1fr); gap: 3px; }
+.ls-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
 .ls-cell { display: block; height: 8px; border-radius: 4px; background: rgba(255,255,255,.18); position: relative; }
-.ls-cell.on.s0 { background: #BFE8C9; } .ls-cell.on.s1 { background: #A3DDB1; } .ls-cell.on.s2 { background: #86D199; } .ls-cell.on.s3 { background: #67C380; }
-.ls-cell.on.s4 { background: #4AB468; } .ls-cell.on.s5 { background: #34A255; } .ls-cell.on.s6 { background: #238F45; } .ls-cell.on.s7 { background: #187A38; }
-.ls-cell.here::after { content: ''; position: absolute; right: -2px; top: -4px; width: 4px; height: 16px; border-radius: 2px; background: var(--gold); }
-.ls-labels { display: grid; grid-template-columns: repeat(4, 1fr); font-size: .72rem; margin-top: 4px; opacity: .65; }
+.ls-cell.on.s0 { background: #A3DDB1; } .ls-cell.on.s1 { background: #67C380; } .ls-cell.on.s2 { background: #34A255; } .ls-cell.on.s3 { background: #187A38; }
+.ls-cell.here { box-shadow: 0 0 0 2px var(--gold); }
+.ls-labels { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; font-size: .72rem; margin-top: 5px; }
+.ls-labels span { opacity: .65; }
 .ls-labels span.on { opacity: 1; font-weight: 800; color: var(--gold); }
 /* green progress lines on topics (none before the first answer) and the New label */
 .meter.green i { background: var(--good); }

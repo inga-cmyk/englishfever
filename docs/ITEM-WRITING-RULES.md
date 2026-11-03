@@ -78,3 +78,13 @@
 | A Latvian "reason" for a mistake that has none (*call to me*: Latvian also says *piezvani man*) | say *Tipiska kļūda* and give the English pattern; compare with Latvian only when the Latvian form really causes the mistake |
 | A choice or word bank about a missing / extra preposition with no "nothing" option | give **—** (no preposition) as one of the options when the right answer is no preposition |
 | A Latvian gloss that translates word for word (*good at = laba kādā jomā*) | say it the Latvian way: *good at maths* = *viņai padodas matemātika* |
+
+## Added 3 November (teacher's review of the twins, batch 1)
+- **Exactly one answer fits the instruction and the context.** This replaces "wrong options are always ungrammatical": in *Which sentence has a mistake?* the other options must be correct; in *Choose the most formal option* the others may be grammatical. A tense combination is not wrong in itself (mixed conditionals exist): give the situation that rules the other options out (*We got lost yesterday because we didn't check the map. Imagine the opposite.*).
+- **No open gap that several words fit.** *___ you help me?* takes can / could / will / would; *There was ___ much traffic* takes too / so; *play ___ a team* takes for / on. Use a choice with one fitting option, or accept every correct word.
+- **Say what to change when several corrections are possible.** *Correct the sentence. Keep "will"*, *Remove one unnecessary word*. A correction that changes the meaning or the structure (*have to* for *must*) is not the answer to a form task.
+- **Two gaps: say "one word in each gap"**, and give the direction of a change (*Flights cost more every year. They are getting ___ and ___ expensive.*).
+- **Answer keys for typed answers list the contractions the checker cannot work out**: *'d* (had / would) and *'s* in every combination (*If I'd known…, I'd have…*). The checker already accepts *n't* = *not*, *can't* = *cannot*, straight and curly apostrophes, commas and the final full stop.
+- **No grammar terms in instructions**, including *the correct preposition*: use *Complete with one word*.
+- **The level fits the skill.** Basic *unless*, *as long as*, *wish* + past, *apologise for*, *remind someone to* are B1–B2: at C1 use *But for*, *Were it not for / Had it not been for*, inversion with *Were / Should / Had*, *It's high time* + past, *I'd rather you* + past, *wish* + *could have*, *deny / advise / urge* patterns. Basic forms may stay at C1 only as review.
+- **A formal context alone does not make a use task**: choosing the only grammatical sentence of four is recognition, whatever the setting.

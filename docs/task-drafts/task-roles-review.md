@@ -1,0 +1,246 @@
+# Task roles: tasks marked "learn" (3 November)
+
+*learn* = can be solved from the meaning, so it does not count as evidence (mastery, level test); it stays in practice as a first step.
+Everything else is *check* (depends on the form) or *use* (the learner writes it). Tell me any line that should be different.
+
+## Built-in tasks
+
+- ps-A21-2a (mcq): Which sentence is about a habit (something you do again and again)?
+- ps-A22-2a (mcq): Which sentence is about a timetable?
+- ps-B11-1a-r2 (mcq): Which verb is normally NOT used in a continuous tense when it describes a state of knowledge?
+- pc-A21-2a-r2 (mcq): Which sentence is about this moment?
+- pc-A22-2a (mcq): Which sentence is about a plan for the future?
+- pc-B11-2a (mcq): Which sentence describes a change that is happening now?
+- pa-A21-2a (mcq): Which sentence is about something finished in the past?
+- pa-A22-2a (mcq): Which words usually go with the past simple?
+- pa-B11-2a-r2 (mcq): Which sentence uses the past simple to describe two completed actions in sequence?
+- pac-A22-2a-r3 (mcq): Which sentence shows an action in progress at a moment in the past?
+- pp-A22-2a (mcq): Which sentence is about life experience (no exact time)?
+- pp-B11-2a (mcq): Which sentence means: it started in the past and is still true now?
+- pp-B12-2a (mcq): Which sentence has a finished time word, so we must use the past simple?
+- fu-A21-2a (mcq): Which sentence is about the future?
+- fu-A22-2a (mcq): Which sentence is a plan we made before now?
+- fu-B12-2a (mcq): Which sentence means something will happen very soon?
+- psp-A22-2a (mcq): Which sentence is passive?
+- pasp-A22-2a (mcq): Which sentence is passive?
+- pasp-B11-2a (mcq): Which sentence tells us who did the action?
+- pcp-B12-2a (mcq): Which sentence means: the work is in progress now?
+- fup-B11-2a (mcq): Which sentence is a prediction about what will happen to the road?
+- cz-A22-2a-r2 (match): Match each beginning with the right ending. These are things that are always true.
+- cz-B11-2a-r3 (mcq): Which sentence is about something that is always true?
+- cf-B11-2a (match): Match each beginning with the most natural ending.
+- cf-B12-2a (mcq): What is the difference? A: 'If you're late, I'll be angry.' B: 'If you're late, I might be angry.'
+- cf-B12-4a-r3 (mcq): Which sentence means the same as: 'If you don't hurry, you will be late.'?
+- cs-B12-2a (match): Match each sentence with its meaning.
+- cs-B21-2a (mcq): What is the difference? A: 'If I had time, I would help.' B: 'If I had time, I might help.'
+- ct-B22-2a-r2 (mcq): What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'
+- cm-B21-1a-r3 (mcq): Which sentence imagines a different past with a result now?
+- ca-C11-1a (mcq): Which sentence means the same as 'If you should need any help, call me'?
+- ca-C11-4a-r4 (mcq): Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?
+- ca-C12-1a (mcq): Which sentence expresses regret about the present?
+- rs-B11-2a-r2 (match): Match each sentence with its report.
+- rs-B12-2a (mcq): What usually happens to 'tomorrow' and 'now' in reported speech?
+- rv-B22-2a (match): Match each sentence with the best reporting verb.
+- rv-C11-2a (mcq): What is the difference? A: 'He insisted on paying.' B: 'He offered to pay.'
+- ip-B11-2a (match): Match each direct question with its polite, indirect form.
+- ip-B12-1a (mcq): Choose the correct word: Do you know ___ the shop is open on Sundays?
+- ip-B21-2a (mcq): What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?'
+- ia-C11-1a-r2 (mcq): Which sentence uses an embedded question as the subject?
+- var-ca-c11-order-01-r2 (order): Make an inverted third conditional. Start with Had I.
+- var-ps-a21-match-01 (match): Match each sentence to its meaning.
+- var-pc-a22-match-01 (match): Match each sentence to what it expresses.
+- var-pac-b12-match-01 (match): Compare the verb forms and match each sentence to the timing of the cooking.
+- var-pp-b11-match-01 (match): Match each time expression to the information it gives in its sentence.
+- var-ppc-b12-match-01-r2 (match): Compare what each sentence focuses on.
+- var-pasp-b12-match-01-r2 (match): Identify the voice and time in each sentence.
+- var-fu-b11-match-01 (match): Match each situation with the response that best fits its purpose.
+- var-cf-b11-match-01 (match): Match each sentence with the relationship it expresses.
+- var-cs-b12-match-01 (match): Compare the conditionals and match each sentence to its time and meaning.
+- var-rs-b12-match-01 (match): Match each statement by Eva to its report. Use backshift.
+- var-ip-b11-match-01 (match): Match each direct question to the indirect question with the same meaning.
+
+## Your tasks (draft files)
+
+- a2-big-1.csv: Past continuous A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: Past continuous A2.2 match: Match each question with its answer.
+- a2-big-1.csv: Past continuous A2.2 mcq: Which sentence describes an action in progress at a moment in the past?
+- a2-big-1.csv: Present perfect A2.2 match: Match each question with its answer.
+- a2-big-1.csv: Present perfect A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: Present perfect A2.2 match: Match each verb with its 3. form.
+- a2-big-1.csv: Future: will, going to, presen A2.2 match: Match each sentence with its meaning.
+- a2-big-1.csv: Future: will, going to, presen A2.1 match: Match each beginning with its ending.
+- a2-big-1.csv: Present simple passive A2.2 mcq: Which sentence is passive?
+- a2-big-1.csv: Present simple passive A2.2 match: Match each product with what it is made from.
+- a2-big-1.csv: Present simple passive A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: Past simple passive A2.2 mcq: Which sentence is passive?
+- a2-big-1.csv: Past simple passive A2.2 match: Match each famous thing with who made it.
+- a2-big-1.csv: Past simple passive A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: Zero conditional (if + present A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: Zero conditional (if + present A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: First conditional (if + presen A2.2 mcq: Which sentence is a promise?
+- a2-big-1.csv: First conditional (if + presen A2.2 match: Match each beginning with its ending.
+- a2-big-1.csv: First conditional (if + presen A2.2 match: Match each promise with its if-part.
+- a2-extras-1.csv: Present simple A2.1 match: Match each beginning with its ending.
+- a2-extras-1.csv: Present simple A2.2 match: Match each question with its short answer.
+- a2-extras-1.csv: Present continuous A2.2 mcq: Which sentence is about a temporary situation?
+- a2-extras-1.csv: Present continuous A2.2 match: Match each question with its answer.
+- a2-extras-1.csv: Past simple A2.1 match: Match each verb with its past form.
+- a2-extras-1.csv: Present perfect A2.2 match: Match each question with its short answer.
+- a2-extras-1.csv: Future: will, going to, presen A2.2 match: Match each situation with the best sentence.
+- a2-extras-1.csv: First conditional (if + presen A2.2 match: Match each beginning with its ending.
+- a2-mistakes-1.csv: Prepositions after words (list A2.2 match: Match each beginning with its ending.
+- a2-mistakes-1.csv: Subject and verb (my friend li A2.2 match: Match each beginning with its ending.
+- a2-mistakes-1.csv: Irregular plurals (children, p A2.1 match: Match each word with its plural.
+- articles-split-1.csv: The or no article B1.2 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Zero conditional (if + present B1.1 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Zero conditional (if + present B1.1 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Zero conditional (if + present B1.1 match: Match each if-part with the general rule.
+- b1-cond-rep-1.csv: First conditional (if + presen B1.1 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: First conditional (if + presen B1.1 match: Match each situation with the best sentence.
+- b1-cond-rep-1.csv: First conditional (if + presen B1.2 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: First conditional (if + presen B1.2 mcq: Which sentence means the same as: 'If you don't hurry, you will miss it.'?
+- b1-cond-rep-1.csv: Second conditional (if + past, B1.1 match: Match each real situation with the unreal wish.
+- b1-cond-rep-1.csv: Second conditional (if + past, B1.2 match: Match each problem with the advice.
+- b1-cond-rep-1.csv: Second conditional (if + past, B1.2 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Second conditional (if + past, B1.2 mcq: Which sentence is about an unreal situation?
+- b1-cond-rep-1.csv: Third conditional (if + had do B1.2 match: Match each real past with the imagined past.
+- b1-cond-rep-1.csv: Third conditional (if + had do B1.2 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Third conditional (if + had do B1.2 match: Match each sentence with its meaning.
+- b1-cond-rep-1.csv: Third conditional (if + had do B1.2 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Reported statements (tense cha B1.1 match: Match each direct sentence with its reported form.
+- b1-cond-rep-1.csv: Reported statements (tense cha B1.1 match: Match each time word with its reported form.
+- b1-cond-rep-1.csv: Reported statements (tense cha B1.2 match: Match each sentence with the reporting verb.
+- b1-cond-rep-1.csv: Reported questions and request B1.2 match: Match each direct question with its reported form.
+- b1-cond-rep-1.csv: Reported questions and request B1.2 match: Match each request with its report.
+- b1-cond-rep-1.csv: Reported questions and request B1.2 match: Match each question with its report.
+- b1-cond-rep-1.csv: Indirect questions (Could you  B1.1 match: Match each direct question with its polite form.
+- b1-cond-rep-1.csv: Indirect questions (Could you  B1.1 match: Match each beginning with its ending.
+- b1-cond-rep-1.csv: Indirect questions (Could you  B1.2 match: Match each question with its polite form.
+- b1-new-1.csv: Used to and be used to A2.2 mcq: Which sentence is about a past habit?
+- b1-new-1.csv: Used to and be used to B1.2 mcq: Which sentence means the same as 'It is normal for me to live alone'?
+- b1-new-1.csv: Used to and be used to B1.2 match: Match each form with its meaning.
+- b1-new-1.csv: Articles B1.1 match: Match each rule with its example.
+- b1-new-1.csv: Articles B1.2 match: Match each pattern with its example.
+- b1-new-1.csv: Quantity A2.2 match: Match each word with its meaning.
+- b1-new-1.csv: Quantity B1.1 match: Match each phrase with its meaning.
+- b1-new-2.csv: Relative clauses B1.2 match: Match each sentence with its meaning.
+- b1-new-2.csv: Relative clauses B1.1 match: Match each word with what it describes.
+- b1-new-2.csv: Time clauses B1.1 match: Match each word with its meaning.
+- b1-new-2.csv: Time clauses B1.2 match: Match each time phrase with its meaning.
+- b1-new-3.csv: Question tags A2.2 match: Match each sentence with its tag.
+- b1-new-3.csv: Question tags B1.1 match: Match each short sentence with its tag.
+- b1-new-3.csv: Question tags B1.2 match: Match each pattern with its meaning.
+- b1-new-3.csv: Subject and object questions A2.2 match: Match each question with what it asks about.
+- b1-new-3.csv: Subject and object questions B1.1 match: Match each statement with its question.
+- b1-new-3.csv: Subject and object questions B1.2 match: Match each sentence with the question about it.
+- b1-new-3.csv: Verb patterns B1.2 mcq: Which sentence means he quit smoking?
+- b1-new-3.csv: Verb patterns A2.2 match: Match each pattern with its example.
+- b1-new-3.csv: Verb patterns B1.1 match: Match each group of words with its pattern.
+- b1-new-3.csv: Verb patterns B1.2 match: Match each phrase with its meaning.
+- b1-new-4.csv: More modals: might, could, be  B1.1 mcq: Which sentence means the speaker is sure it is NOT true?
+- b1-new-4.csv: More modals: might, could, be  B1.2 mcq: Which sentence means you did something that was not necessary?
+- b1-new-4.csv: More modals: might, could, be  B1.1 match: Match each sentence with its meaning.
+- b1-new-4.csv: More modals: might, could, be  B1.1 match: Match each beginning with its ending.
+- b1-new-4.csv: More modals: might, could, be  B1.2 match: Match each word with its meaning.
+- b1-new-4.csv: Passive with modals (must be d B1.1 match: Match each sentence with its passive version.
+- b1-new-4.csv: Passive with modals (must be d B1.1 match: Match each beginning with its ending.
+- b1-new-4.csv: Passive with modals (must be d B1.2 match: Match each sentence with its use.
+- b1-new-4.csv: Causative: have something done B1.1 mcq: Which sentence means a hairdresser cut her hair?
+- b1-new-4.csv: Causative: have something done B1.2 mcq: Which sentence means the speaker did NOT do it himself?
+- b1-new-4.csv: Causative: have something done B1.1 match: Match each service with the person who does it.
+- b1-new-4.csv: Causative: have something done B1.1 match: Match each beginning with its ending.
+- b1-new-4.csv: Causative: have something done B1.2 match: Match each sentence with its meaning.
+- b1-new-4.csv: Verbs with two objects (give m A2.2 match: Match each beginning with its ending.
+- b1-new-4.csv: Verbs with two objects (give m B1.1 match: Match each sentence with the same meaning.
+- b1-new-4.csv: -ed or -ing adjectives (bored, A2.2 mcq: Which sentence means he makes other people feel bored?
+- b1-new-4.csv: -ed or -ing adjectives (bored, A2.2 match: Match each beginning with its ending.
+- b1-new-4.csv: -ed or -ing adjectives (bored, B1.1 match: Match each description with its adjective.
+- b1-new-4.csv: -ed or -ing adjectives (bored, B1.1 match: Match each sentence with its meaning.
+- b1-new-5.csv: Adjective order (a small old c B1.1 match: Match each adjective with its kind.
+- b1-new-5.csv: Adjective order (a small old c B1.2 match: Match each word with its kind.
+- b1-new-5.csv: Adjective order (a small old c B1.2 match: Match each wrong phrase with its correct version.
+- b1-new-5.csv: Adverbs: manner, frequency, de A2.2 match: Match each adjective with its adverb.
+- b1-new-5.csv: Adverbs: manner, frequency, de B1.1 match: Match each word with its meaning.
+- b1-new-5.csv: Adverbs: manner, frequency, de B1.2 match: Match each adverb with its meaning.
+- b1-new-5.csv: So and such B1.1 match: Match each word with what follows it.
+- b1-new-5.csv: So and such B1.2 match: Match each beginning with its ending.
+- b1-new-5.csv: So and such B1.2 match: Match each wrong sentence with its correct version.
+- b1-new-5.csv: Someone, anything, nobody A2.2 match: Match each word with its meaning.
+- b1-new-5.csv: Someone, anything, nobody B1.1 match: Match each question with its answer.
+- b1-new-5.csv: Someone, anything, nobody B1.1 match: Match each beginning with its ending.
+- b1-passives-1.csv: Present simple passive B1.1 match: Match each product with how it is made.
+- b1-passives-1.csv: Present simple passive B1.1 match: Match each active sentence with its passive.
+- b1-passives-1.csv: Present simple passive B1.2 match: Match each beginning with its ending.
+- b1-passives-1.csv: Present simple passive B1.2 mcq: Which sentence is passive and does not say who does it?
+- b1-passives-1.csv: Past simple passive B1.1 match: Match each famous work with its creator.
+- b1-passives-1.csv: Past simple passive B1.1 match: Match each active sentence with its passive: past.
+- b1-passives-1.csv: Past simple passive B1.2 match: Match each beginning with its ending.
+- b1-passives-1.csv: Past simple passive B1.2 mcq: Which sentence is passive and does not say who did it?
+- b1-passives-1.csv: Present continuous passive B1.2 match: Match each active sentence with its passive: now.
+- b1-passives-1.csv: Present continuous passive B1.2 match: Match each beginning with its ending.
+- b1-passives-1.csv: Present continuous passive B1.2 match: Match each sentence with its meaning.
+- b1-passives-1.csv: Present continuous passive B1.2 mcq: Which sentence shows that the work is happening now?
+- b1-passives-1.csv: Present perfect passive B1.1 match: Match each active sentence with its passive: recent.
+- b1-passives-1.csv: Present perfect passive B1.2 match: Match each beginning with its ending.
+- b1-passives-1.csv: Present perfect passive B1.2 match: Match each question with its answer.
+- b1-passives-1.csv: Future passive (will be done) B1.1 match: Match each active sentence with its passive: future.
+- b1-passives-1.csv: Future passive (will be done) B1.2 match: Match each beginning with its ending.
+- b1-passives-1.csv: Future passive (will be done) B1.2 match: Match each sentence with its meaning.
+- b1-tenses-1.csv: Present simple B1.1 match: Match each sentence with its use.
+- b1-tenses-1.csv: Present simple B1.1 match: Match each beginning with its ending.
+- b1-tenses-1.csv: Present simple B1.1 match: Match each question with its answer.
+- b1-tenses-1.csv: Present simple B1.1 mcq: Which sentence uses the Present Simple for a timetable?
+- b1-tenses-1.csv: Present continuous B1.1 match: Match each sentence with its meaning.
+- b1-tenses-1.csv: Present continuous B1.1 match: Match each beginning with its ending.
+- b1-tenses-1.csv: Present continuous B1.1 match: Match each question with its answer: what is happening.
+- b1-tenses-1.csv: Present continuous B1.1 mcq: Which sentence describes a change that is happening in society now?
+- b1-tenses-1.csv: Present continuous B1.1 mcq: Which sentence is a fixed arrangement?
+- b1-tenses-1.csv: Past simple B1.1 match: Match each beginning with its ending.
+- b1-tenses-1.csv: Used to and be used to B1.2 match: Match each past habit with the person.
+- b1-tenses-1.csv: Past continuous B1.1 match: Match each long action with the short event.
+- b1-tenses-1.csv: Past continuous B1.2 match: Match each past plan with what happened.
+- b1-tenses-2.csv: Present perfect B1.1 match: Match each sentence with its meaning.
+- b1-tenses-2.csv: Present perfect B1.1 match: Match each time word with what it tells us.
+- b1-tenses-2.csv: Present perfect B1.2 match: Match each beginning with its ending.
+- b1-tenses-2.csv: Present perfect B1.2 mcq: Which sentence means the same as 'I have lost my keys'?
+- b1-tenses-2.csv: Present perfect continuous B1.1 match: Match each sentence with its focus.
+- b1-tenses-2.csv: Present perfect continuous B1.2 match: Match each situation with the sentence.
+- b1-tenses-2.csv: Present perfect continuous B1.2 match: Match each sentence with its meaning.
+- b1-tenses-2.csv: Past perfect B1.2 match: Match each result with its cause.
+- b1-tenses-2.csv: Past perfect B1.2 match: Match each beginning with its ending.
+- b1-tenses-2.csv: Past perfect B1.2 match: Match each sentence with the event that came first.
+- b1-tenses-2.csv: Past perfect B1.2 mcq: Which sentence shows that the film started first?
+- b1-tenses-2.csv: Future: will, going to, presen B1.1 match: Match each sentence with its use.
+- b1-tenses-2.csv: Future: will, going to, presen B1.2 match: Match each sentence with its meaning.
+- b1-tenses-2.csv: Future: will, going to, presen B1.2 match: Match each question with its answer: plans.
+- b1-tenses-2.csv: Future: will, going to, presen B1.2 mcq: Which sentence is a promise?
+- b1-tenses-2.csv: Future: will, going to, presen B1.2 mcq: Which sentence is a prediction based on what you can see?
+- compare-past-1.csv: Past simple or past continuous B1.1 mcq: Which sentence means 'we had already started dinner'?
+- compare-past-1.csv: Past simple or past continuous B1.1 mcq: Which sentence means 'first she arrived, then we had dinner'?
+- compare-past-1.csv: Narrative tenses: past simple, B1.2 mcq: Which sentence means 'Paul left before Sarah came'?
+- comparison-1.csv: Comparison A2.1 match: Match each adjective with its comparative.
+- comparison-1.csv: Comparison A2.2 mcq: Which sentence means the same as 'My room is bigger than yours'?
+- comparison-1.csv: Comparison A2.2 match: Match each adjective with its superlative.
+- comparison-1.csv: Comparison B1.1 match: Match each sentence with its meaning.
+- comparison-1.csv: Comparison B1.2 mcq: What is the difference between 'This book is more interesting than that one' and 'This book is as in
+- comparison-1.csv: Comparison B1.2 match: Match each comparison with its meaning.
+- conjunctions-1.csv: And, but, or, so, because A2.1 match: Match each beginning with its ending.
+- conjunctions-1.csv: However, although, because of, A2.2 match: Match each beginning with its ending.
+- conjunctions-1.csv: Contrast, purpose and reason B1.1 match: Match each beginning with its ending.
+- conjunctions-1.csv: Contrast, purpose, reason and  B2.1 match: Match each beginning with its ending.
+- contrast-1.csv: Past continuous A2.2 mcq: Which sentence means the phone rang in the middle of dinner?
+- contrast-1.csv: Past continuous A2.2 mcq: Which sentence means she started cooking after you arrived?
+- contrast-1.csv: Past continuous B1.1 match: Match each sentence with its meaning.
+- contrast-1.csv: Present continuous A2.1 mcq: Which sentence is about now, not a habit?
+- contrast-1.csv: Present continuous A2.1 mcq: Which sentence is about a habit?
+- contrast-1.csv: Present continuous A2.2 match: Match each sentence with its meaning.
+- contrast-1.csv: Present perfect B1.1 match: Match each sentence with its meaning.
+- modal-verbs-1.csv: Modal verbs A2.2 mcq: Which sentence is about a rule?
+- modal-verbs-1.csv: Modal verbs B1.1 mcq: Which sentence means it is not necessary?
+- modal-verbs-1.csv: Modal verbs B1.1 mcq: Which sentence means it is not allowed?
+- modal-verbs-1.csv: Modal verbs B1.1 match: Match each sentence with its meaning.
+- modal-verbs-1.csv: Modal verbs A2.2 mcq: Which sentence means the same as 'It isn't necessary to book a table'?
+- modal-verbs-1.csv: Modal verbs A2.2 mcq: Which sentence means the same as 'You have to show your ticket'?
+- modal-verbs-1.csv: Modal verbs A2.2 match: Match each sign with its meaning.
+- modal-verbs-1.csv: Modal verbs B1.1 mcq: Which sentence means it was not allowed?
+- modal-verbs-1.csv: Modal verbs B1.1 mcq: Which sentence is a weak prohibition (it is better not to)?

@@ -262,10 +262,10 @@ final class Research
             foreach (Db::all($sql, [(int) $u['id'], (int) $u['research_at']]) as $a) {
                 $t = (new DateTime('@' . $a['created_at']))->setTimezone(Stats::tz());
                 $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $a['mode'] ?? '', $a['skill'], $area[$a['skill']] ?? '', $a['level'], (int) $a['bloom'], (int) $a['correct'], round($a['time_ms'] / 1000, 1), $a['item_id'],
-                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? '', (int) ($a['card'] ?? 0)];
+                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? '', (int) ($a['card'] ?? 0), Content::role(Content::item((string) $a['item_id']))];
             }
         }
-        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version', 'rule_card_before'], $rows);
+        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version', 'rule_card_before', 'task_role'], $rows);
     }
 
     /** What participants opened and pressed (Usage), and where each session was started; pseudonymised like the other files. */
@@ -344,6 +344,7 @@ served_why   new | again_after_wrong (the task came back after a mistake) | agai
 source       where the session was started (as in events.csv).   lang   explanation language set then (en / lv).
 feedback_seconds  time from the feedback to Next on this task (reading the explanation); empty for the last task of a session.
 app_version  the app version then; content and rules change between versions (docs/CHANGELOG-practice-app.md).
+task_role    learn (can be solved from the meaning: not evidence of the form) | check (depends on the form) | use (the learner writes it).
 rule_card_before  1 = the learner opened the rule card (the ? button) during this task, before answering; from 2 November 2026.
 
 events.csv   (one row per logged action; from 28 October 2026)

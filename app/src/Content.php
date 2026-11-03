@@ -130,6 +130,26 @@ final class Content
         return ['all' => $all, 'by_skill' => $by, 'by_half' => $half];
     }
 
+    /**
+     * What a task is for (teacher, 3 November): "learn" builds understanding and can be solved from the meaning alone
+     * (matching by context, "Which sentence means …?", a hint gives it away); "check" depends on the form (a choice with
+     * ungrammatical wrong options, a gap, word order); "use" asks the learner to write the form or the sentence.
+     * Only check and use count as evidence (mastery, the knowledge model, the level test). An item may set 'role' itself.
+     */
+    public static function role(?array $it): string
+    {
+        if (!$it) return 'check';
+        if (!empty($it['role']) && in_array($it['role'], ['learn', 'check', 'use'], true)) return $it['role'];
+        $over = ['var-pa-a22-match-01' => 'check'];   // matching base verbs with their past forms needs the form itself
+        if (isset($over[$it['id'] ?? ''])) return $over[$it['id']];
+        if (!empty($it['practice_only'])) return 'learn';
+        if ($it['kind'] === 'match') return 'learn';
+        if (in_array($it['kind'], ['text', 'write'], true)) return 'use';
+        if ($it['kind'] === 'gap' && empty($it['bank'])) return 'use';
+        if ($it['kind'] === 'mcq' && preg_match('/^(Which sentence (means|is about|tells|is a |describes|shows|imagines|expresses|uses|does NOT express|has a finished|is passive)|What is the difference|What usually happens|Which (words|word) usually|Which verb is normally)/i', (string) ($it['q'] ?? ''))) return 'learn';
+        return 'check';
+    }
+
     /** The kind of task a learner sees (teacher, 28 October): recognise = choose or match, use = fill in, word bank, word order, write = typed sentence or open writing. */
     public static function taskCat(?array $it): string
     {

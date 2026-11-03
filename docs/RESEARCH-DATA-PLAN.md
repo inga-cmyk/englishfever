@@ -21,6 +21,7 @@ so results before and after it are not mixed.
 | lang | explanation language set for the learner then (en / lv) | 1 Nov 2026 |
 | feedback_seconds | time from the feedback to Next: reading the explanation | 1 Nov 2026 |
 | app_version | app version then (see docs/CHANGELOG-practice-app.md) | 1 Nov 2026 |
+| task_role | learn (solvable from the meaning, not evidence) / check (depends on the form) / use (the learner writes it); computed from the task (Content::role) | 3 Nov 2026 |
 | rule_card_before | 1 = the learner opened the rule card (the ? button) during this task, before answering | 2 Nov 2026 |
 
 ## Definitions (as used on the Learning evidence page)
@@ -61,3 +62,4 @@ so results before and after it are not mixed.
 - 2 Nov 2026: session mix for My learning path and Surprise me (about 60 % the step at its level, 25 % review, 15 % the same topics half a level higher; the part of each task is stored in the session state as `slot`). Surprise me now takes its topics from the path (the recommended step and the next one), not from the most mistakes. Rule C: mistakes on tasks that were later corrected (a newer version, a retired task, a report marked fixed) are left out of topic choice, Second Chance and the Learning evidence counts. Below the placement level a step counts as known unless the learner has 5+ answers there with under 70 % right.
 - 2 Nov 2026: a ? button on every practice task opens the rule card; answers given after opening it are marked (rule_card_before). Compare or separate them when judging what a learner knows without help.
 - 3 Nov 2026: optional AI check of open writing answers (Claude Haiku 5.5, only when an API key is set in config.php). The answer row keeps the AI verdict and the changed words (`attempts.ai`). When the AI finds a mistake the pattern check missed, the answer counts as wrong. Learner text is sent to Anthropic for this check (no names): say so in the privacy notice and the consent text before switching it on.
+- 3 Nov 2026: task roles (learn / check / use). The level test no longer asks learn tasks (it skipped practice-only tasks before; matching and "Which sentence means …" tasks are now left out too). Use only check and use answers as evidence of knowing a form.

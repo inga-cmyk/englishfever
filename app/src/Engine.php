@@ -458,7 +458,7 @@ final class Engine
         $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
         foreach (Content::items() as $it) {
             if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
-            if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4 || !empty($it['practice_only']))) continue;   // practice only: easy first steps and tasks a hint gives away
+            if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4 || Content::role($it) === 'learn')) continue;   // the level test asks only tasks that need the form (teacher, 3 November)   // practice only: easy first steps and tasks a hint gives away
             // open writing (the least support) only after a right typed answer on that topic in this session (teacher's scaffolding rule)
             if (!$placement && $it['kind'] === 'write' && empty($rightHere[$it['skill']])) continue;
             if (!empty($st['levels']) && !in_array($it['level'], $st['levels'], true)) continue;   // the levels the learner chose

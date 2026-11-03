@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Level test report:** the last *How you did* heading is now *Skills check*, the same as everywhere else.
 - **Latvia avatars in the flag's own red:** carmine red as the flag standard gives it (Pantone 201 C, RGB 157 34 53), instead of the lighter red before.
 - **November avatars for Latvia's holidays:** a red-white-red heart, the Latvian flag, the red-white-red ribbon, Auseklis (as on the badge: eight carmine diamonds in four pairs, gold edges, a white cross between them), Lāčplēsis (linen tunic, woven cap with bear ears, leather strap, brooch and shield) and the map of Latvia (the real border, from Natural Earth data) in the flag colours come first; the ribbon is folded as in the photo in the avatar picker; the Halloween avatars stay, lower down.
 - **Leaderboard: an hourglass for the most patient learner** (most time practised this week) instead of the three thinking dots: the sand runs for 30 seconds, then the hourglass turns over (it stays still for people who turn off motion on their device).

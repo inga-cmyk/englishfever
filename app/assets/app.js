@@ -1784,7 +1784,7 @@
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, s.parked ? 'Nothing to fix at your level.' : (s.n > s.correct ? 'Nothing left to fix.' : 'Nothing was missed.')), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
-    nodes.push(h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
+    nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     return nodes;
   }

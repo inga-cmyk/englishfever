@@ -95,6 +95,12 @@ final class Stats
                 'theta' => $r ? round((float) $r['theta'], 2) : null,
                 'level_est' => ($r && $n >= 3) ? Content::levelFromTheta((float) $r['theta'], $s['levels']) : null,
             ];
+            // the green line on a topic card (teacher, 3 November): progress toward "learned" at the learner's level in this topic; untouched topics have none
+            if ($n > 0) {
+                $est = $out[count($out) - 1]['level_est'];
+                $lv = $est ? [substr($est, 0, 2) . '.1', substr($est, 0, 2) . '.2'] : null;
+                $out[count($out) - 1]['progress'] = Path::mastery($uid, $s['id'], $lv)['progress'];
+            }
         }
         return $out;
     }

@@ -7,7 +7,7 @@
 final class Usage
 {
     /** Where a session can be started. */
-    public const SOURCES = ['placement', 'path', 'path_check', 'surprise', 'second_chance', 'home_topic', 'practice_page', 'rule_card'];
+    public const SOURCES = ['placement', 'path', 'path_check', 'surprise', 'second_chance', 'home_topic', 'practice_page', 'rule_card', 'summary'];
 
     /** Actions that may be logged, with a short meaning for the teacher page. */
     public const EVENTS = [
@@ -23,6 +23,7 @@ final class Usage
         'path_step' => 'Opened a step on My learning path',
         'bonus' => 'Took the Second Chance bonus',
         'reminder' => 'Added a daily reminder to the calendar',
+        'next' => 'Chose what next after a practice (again, harder, topic)',
     ];
     private const DAY_CAP = 2000;   // per learner per day: a page that loops cannot fill the table
 
@@ -69,7 +70,19 @@ final class Usage
             if (isset($people[(int) $r['user_id']])) $people[(int) $r['user_id']]['events'] = (int) $r['n'];
         }
         usort($people, fn($a, $b) => array_sum($b['sources']) <=> array_sum($a['sources']));
-        return ['days' => $days, 'sources' => $sources, 'events' => $events, 'people' => array_values($people), 'source_names' => self::SOURCES];
+        // opened the app but never started a session (teacher, 3 November): when, which pages, where they stopped
+        $idle = [];
+        foreach (Db::all("SELECT u.id, u.nickname, u.provider, u.created_at FROM users u WHERE u.role = 'student' AND u.is_test = 0 AND u.created_at >= ?
+                          AND NOT EXISTS (SELECT 1 FROM psessions p WHERE p.user_id = u.id) ORDER BY u.created_at DESC LIMIT 100", [$since]) as $u) {
+            $pages = []; $lastPage = ''; $lastAt = (int) $u['created_at'];
+            foreach (Db::all("SELECT detail, ev, created_at FROM events WHERE user_id = ? ORDER BY id", [$u['id']]) as $e) {
+                if ($e['ev'] === 'page') { $pages[$e['detail']] = true; $lastPage = (string) $e['detail']; }
+                $lastAt = max($lastAt, (int) $e['created_at']);
+            }
+            $idle[] = ['nickname' => $u['nickname'], 'account' => $u['provider'] === 'guest' ? 'guest' : 'registered', 'joined' => (int) $u['created_at'],
+                       'last' => $lastAt, 'pages' => array_keys($pages), 'last_page' => $lastPage];
+        }
+        return ['days' => $days, 'sources' => $sources, 'events' => $events, 'people' => array_values($people), 'idle' => $idle, 'source_names' => self::SOURCES];
     }
 
     /** Where a session was started; sessions from before 28 October: placement, Second Chance and Surprise me are known from the saved state. */

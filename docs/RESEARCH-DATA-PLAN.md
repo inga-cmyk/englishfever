@@ -17,7 +17,7 @@ so results before and after it are not mixed.
 | skipped | 1 = "I don't know" | 1 Nov 2026 |
 | exposure | 1 = first time this learner meets this task, 2 = second ... | 1 Nov 2026 |
 | served_why | new, again_after_wrong, again_after_right (no new task left), second_chance, bonus | 1 Nov 2026 |
-| source | where the session started: placement, path, path_check, surprise, second_chance, home_topic, practice_page, rule_card | 28 Oct 2026 (older: partly unknown) |
+| source | where the session started: placement, path, path_check, surprise, second_chance, home_topic, practice_page, rule_card, summary (a button on the results page, from 3 Nov 2026) | 28 Oct 2026 (older: partly unknown) |
 | lang | explanation language set for the learner then (en / lv) | 1 Nov 2026 |
 | feedback_seconds | time from the feedback to Next: reading the explanation | 1 Nov 2026 |
 | app_version | app version then (see docs/CHANGELOG-practice-app.md) | 1 Nov 2026 |

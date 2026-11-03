@@ -415,11 +415,19 @@
     var path = null;
     function draw() {
       var steps = path.steps;
+      // no level test yet and fewer than 3 steps practised: the path cannot say much yet (teacher, 3 November)
+      if (!path.placed && steps.filter(function (x) { return x.answers > 0; }).length < 3) {
+        card.replaceChildren(h('h2', { style: 'margin:0 0 6px' }, 'My learning path'),
+          h('p', { class: 'muted', style: 'margin:0 0 12px' }, 'Find your level first, and your path appears here.'),
+          h('div', { class: 'row', style: 'gap:14px;align-items:center' }, h('a', { class: 'btn', href: '#/placement' }, 'Find my level', icon('arrow')),
+            h('a', { class: 'linkbtn', href: '#/practice' }, 'or choose a topic')));
+        return;
+      }
       var ci = steps.findIndex(function (s) { return s.id === path.current; });
       var show = all ? steps.map(function (s, i) { return [s, i]; })
         : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci - 1 && p[1] <= ci + 3); });
       card.replaceChildren(
-        h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path')),
+        h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), path.placed ? null : h('span', { class: 'small muted' }, 'based on your practice')),
         h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0]); })),
         h('button', { type: 'button', class: 'btn ghost small', style: 'margin-top:6px', onclick: function () { all = !all; draw(); } }, all ? 'Show less' : 'All steps'));
     }
@@ -530,10 +538,20 @@
           h('p', { class: 'muted' }, (resume.session.mode === 'placement' ? 'Placement test: ' : 'Practice session: ') + resume.session.n + ' of ' + resume.session.length + ' done.'), mainBtn];
       } else if (!started) {
         mainBtn = h('a', { class: 'btn pulse', href: '#/placement' }, 'Find my level', icon('arrow'));
-        main = [h('h2', null, 'Start here'), h('p', { class: 'muted' }, 'A short test (5 to 18 minutes) shows where to begin.'), mainBtn];
+        main = [h('h2', null, 'Start here'), h('p', { class: 'muted' }, 'A short test without rules or hints shows where to begin.'), mainBtn,
+          h('a', { class: 'linkbtn', href: '#/practice', style: 'margin-left:14px' }, 'or choose a topic')];   // two clear ways in (teacher, 3 November)
       } else {
-        mainBtn = surpriseButton('btn pulse', 'Practise now');
-        main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'A short session picked from your own mistakes.'), mainBtn];
+        // Practise now = the recommended step of My learning path (teacher, 3 November); without a path: Surprise me
+        var fallback = surpriseButton('btn pulse', 'Practise now');
+        mainBtn = h('button', { type: 'button', class: 'btn pulse' }, 'Practise now', icon('arrow'));
+        mainBtn.addEventListener('click', function () {
+          mainBtn.disabled = true;
+          api('path').then(function (p) {
+            var st = p.placed !== null && p.steps.find(function (x) { return x.id === p.current; });
+            if (st) startPathStep(mainBtn, st); else { mainBtn.disabled = false; fallback.click(); }
+          }).catch(function () { mainBtn.disabled = false; fallback.click(); });
+        });
+        main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'Your next step, with a little review.'), mainBtn];
       }
       // the other ways in: small buttons with icons, not underlined text (teacher, 27 October)
       var links = h('div', { class: 'tiles' },
@@ -549,7 +567,7 @@
         feat('streak') ? h('span', null, icon('flame'), h('b', null, String(d.streak.current)), d.streak.current === 1 ? ' day' : ' days') : null,
         h('span', null, icon('bolt'), h('b', null, String(d.totals.xp)), ' XP'),
         d.totals.accuracy === null ? null : h('span', null, icon('check'), h('b', null, d.totals.accuracy + '%'), ' correct')) : null;
-      nodes.push(h('div', { class: 'card focus hero-card' }, cheer, main, strip));
+      nodes.push(h('div', { class: 'card focus hero-card' }, cheer, main, strip, started ? levelScale(learnerLevel(d), rep) : null));
       nodes.push(links);
       var cb = d.comeback || { open: 0, fixed: 0 };
       if (cb.open > 0 || cb.review > 0) {   // open mistakes, or mistakes fixed a few days ago that are due for a check
@@ -569,13 +587,30 @@
       var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
       if (started) {   // progress above the topics (teacher, 27 October)
         nodes.push(foldCard('progress', 'My progress', h('span', { class: 'fold-icons', 'aria-label': 'this week and thinking skills' }, icon('clock'), icon('up')), function () {
-          return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'How you do'), catBars(d.cats)));
+          return h('div', { class: 'grid g2' }, h('div', null, h('h3', null, 'This week'), weekChart(d.week)), h('div', null, h('h3', null, 'Skills check'), catBars(d.cats)));
         }));
       }
       if (started) nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
       show(h('div', { class: 'home' }, nodes));
     }).catch(fail);
   }
+
+  /** The learner's level as one colour scale A2 · B1 · B2 · C1 (teacher, 3 November, option A): the half-levels up to the
+   *  learner's level are filled, darker green the higher they go, and a marker sits on the learner's level. No numbers. */
+  function levelScale(lvl, rep) {
+    if (!lvl) return null;
+    var L = state.meta.levels, at = L.indexOf(lvl);
+    if (at < 0) return null;
+    var cells = L.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); });
+    var bar = h('div', { class: 'ls-bar' }, cells);
+    var labels = h('div', { class: 'ls-labels' }, ['A2', 'B1', 'B2', 'C1'].map(function (x) { return h('span', { class: x === lvl.slice(0, 2) ? 'on' : '' }, x); }));
+    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + lvl + (rep ? '' : ' (from my practice)') }, h('span', { class: 'ls-title' }, 'My level'), bar, labels);
+    if (rep) { box.type = 'button'; box.addEventListener('click', function () { showPlacementReport(rep); }); }
+    return box;
+  }
+  /** Topics added lately (teacher, 3 November): a "New" group on the Topics page and a small label on their tiles for 45 days. */
+  var NEW_TOPICS = { conj_basic: '2026-11-02', conj_linkers: '2026-11-02', conj_clauses: '2026-11-02', conj_b2: '2026-11-02' };
+  function isNewTopic(id) { var d = NEW_TOPICS[id]; return !!d && (Date.now() - Date.parse(d)) < 45 * 86400000; }
 
   /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
   function foldCard(key, title, hint, body) {
@@ -688,7 +723,7 @@
     return h('div', { class: 'skill' },
       h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, levelRange(s))),
         s.level_est ? h('span', { class: 'pill dark', title: 'Your estimated level in this topic' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'pill' }, s.n ? 'Started' : 'New')),
-      h('div', { class: 'meter gold', 'aria-label': 'Accuracy' }, h('i', { style: 'width:' + (s.accuracy || 0) + '%' })),
+      s.n ? h('div', { class: 'meter green', 'aria-label': 'Progress', title: 'Progress in this topic' }, h('i', { style: 'width:' + Math.round(100 * (s.progress || 0)) + '%' })) : null,   // a green progress line, none before the first answer (teacher, 3 November)
       h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.n + ' done · ' + s.accuracy + '% correct' : 'Not started'),
         h('span', { class: 'row', style: 'gap:10px;flex-wrap:nowrap' },
           h('button', { class: 'linkbtn small', type: 'button', title: 'Options', onclick: function () { state.prefill = { skills: [s.id], level: topicLevel(s, d) }; location.hash = '#/practice'; } }, 'Options'),
@@ -730,8 +765,14 @@
           tbl(['Started from', 'Sessions', 'Learners', 'Answers'], srcRows, 'No sessions yet.')),
         h('div', { class: 'card', style: 'padding:0;overflow:hidden;margin-bottom:16px' }, h('h2', { style: 'padding:18px 18px 0' }, 'What learners open and press'),
           tbl(['Action', 'Times', 'Learners'], evRows, 'Nothing logged yet. The log starts with this version.')),
-        h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Per learner: sessions by start point'),
-          tbl(['Learner'].concat(cols.map(function (k) { return SOURCE_NAMES[k]; })).concat(['Actions']), pRows, 'No learners yet.'))));
+        h('div', { class: 'card', style: 'padding:0;overflow:hidden;margin-bottom:16px' }, h('h2', { style: 'padding:18px 18px 0' }, 'Per learner: sessions by start point'),
+          tbl(['Learner'].concat(cols.map(function (k) { return SOURCE_NAMES[k]; })).concat(['Actions']), pRows, 'No learners yet.')),
+        h('div', { class: 'card', style: 'padding:0;overflow:hidden' }, h('h2', { style: 'padding:18px 18px 0' }, 'Opened but never started'),
+          h('p', { class: 'small muted', style: 'padding:0 18px' }, 'Joined in these days and never began a session: the pages they opened, and where they stopped.'),
+          tbl(['Learner', 'Joined', 'Pages opened', 'Stopped at'], (u.idle || []).map(function (x) {
+            return h('tr', null, h('td', null, x.nickname, h('div', { class: 'small muted' }, x.account)), h('td', null, UI.fmtAgo(x.joined)),
+              h('td', null, x.pages.length ? x.pages.join(', ') : '(no page logged)'), h('td', null, x.last_page || '–'));
+          }), 'Nobody: everyone who joined started something.'))));
     }).catch(fail);
   }
 
@@ -973,10 +1014,10 @@
 
     var openMap = {};   // areas start closed, except the ones with chosen topics
     function group(area) {
-      var list = state.meta.skills.filter(function (s) { return s.area === area.id && countAt(s) > 0; });
+      var list = state.meta.skills.filter(function (s) { return (area.id === '_new' ? isNewTopic(s.id) : s.area === area.id) && countAt(s) > 0; });
       if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
-      var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : n > 0 },
+      var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : (n > 0 || area.id === '_new') },
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
         h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': area.label }, list.map(function (s) {
           var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; redrawLater(); } });
@@ -1001,7 +1042,7 @@
       }));
       holder.replaceChildren(
         h('div', { class: 'picker-group' }, levelRow),
-        h('div', { class: 'picker-group' }, h('div', null, state.meta.areas.map(group))),
+        h('div', { class: 'picker-group' }, h('div', null, [group({ id: '_new', label: 'New' })].concat(state.meta.areas.map(group)))),
         h('div', { class: 'picker-group' }, h('h3', null, 'Questions'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of questions' }, [10, 15, 20].map(function (n) {
             return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, String(n)));
@@ -1206,6 +1247,10 @@
       fb.appendChild(h('h3', { class: res.skipped ? 'skipped' : null }, icon(good ? 'check' : res.skipped ? 'arrow' : 'cross'), res.skipped ? (lv ? 'Izlaists – lūk, atbilde' : 'Skipped – here is the answer') : it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
+      if (first && !reviewing) state.wrongRun = good ? 0 : (state.wrongRun || 0) + (res.skipped ? 0 : 1);
+      if (!good && !res.skipped && ses.mode !== 'placement' && (state.wrongRun || 0) >= 3) {   // three mistakes in a row: point to the rule card (teacher, 3 November)
+        fb.appendChild(h('p', { class: 'stuck' }, lv ? 'Grūti? Pirms nākamā atver ' : 'Stuck? Open ', h('b', { class: 'stuck-q' }, '?'), lv ? ' uzdevuma augšā.' : ' at the top of the next task.'));
+      }
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
       var cmp = (!good && !res.skipped && (it.kind === 'text' || it.kind === 'order') && typeof res.show === 'string')
         ? wordDiff(it.kind === 'order' ? (ans || []).join(' ') : String(ans || ''), res.show) : null;   // your sentence and the right one, the different words marked (teacher, 27 October)
@@ -1626,6 +1671,7 @@
     if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), 'Fixed so far: ' + s.fixed_total));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
+      h('p', { class: 'quip' }, quip(s.accuracy)),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
       (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.locked ? ', ' + s.locked + ' checked again' : '', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : ' · nothing left to fix') : null,
       s.bonus ? bonusCard(s) : null,
@@ -1636,23 +1682,58 @@
         h('div', null, h('div', { class: 'big' }, s.accuracy + '%'), h('div', { class: 'muted small' }, 'accuracy')))));
     var ps = s.pathStep;
     if (!ps) try { var q = JSON.parse(localStorage.getItem('ef_pathstep') || 'null'); if (q && q.sid == s.session_id) ps = q.step; } catch (e) {}
-    if (ps) nodes.push(pathNextCard(ps));   // a step from My learning path: the next step right under the result
-    nodes.push(h('div', { class: 'grid g2', style: 'margin-bottom:16px' },
-      h('div', { class: 'card' }, h('h2', null, 'By topic'), h('ul', { class: 'clean' }, s.by_skill.map(function (k) {
-        return h('li', { style: 'margin-bottom:12px' }, h('div', { class: 'row between' }, h('b', { style: 'color:var(--text)' }, k.label), h('span', { class: 'pill dark' }, '≈ ' + lv(k.level_est))),
-          h('div', { class: 'meter gold', style: 'margin:6px 0 3px' }, h('i', { style: 'width:' + pct(k.correct, k.n) + '%' })), h('span', { class: 'small muted' }, k.correct + ' of ' + k.n + ' correct'));
-      }))),
-      h('div', { class: 'card' }, h('h2', null, 'How you did'), catBars(s.by_cat))));
-    var steps = s.next || [];
-    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'What next?'),
-      h('ul', { class: 'clean' }, steps.length ? steps.map(function (n) {
-        return h('li', { style: 'margin-bottom:10px' }, h('div', { class: 'row between' }, h('span', null, n.text),
-          n.type === 'review' ? h('button', { class: 'btn ghost small', onclick: function () { rulesModal(n.skill); } }, 'Rule card')
-            : h('button', { class: 'btn small', onclick: function () { state.prefill = { skills: state.lastSkills || s.by_skill.map(function (k) { return k.id; }), level: n.level }; location.hash = '#/practice'; } }, 'Try harder')));
-      }) : h('li', null, (feat('streak') ? 'Do another round to build your streak and see your level move.' : 'Do another round to see your level move.')))));
+    if (!s.comeback) nodes.push(nextActions(s, ps));   // one clear choice (teacher, 3 November): try again / try harder / next topic
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));
     nodes.push(reminderCard());
-    nodes.push(h('div', { class: 'row' }, h('button', { class: 'btn', onclick: function () { state.prefill = { skills: s.by_skill.map(function (k) { return k.id; }), level: s.level }; location.hash = '#/practice'; } }, 'Practise again'), h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
+    nodes.push(h('div', { class: 'row' }, h('a', { class: 'btn ghost', href: '#/home' }, 'Home')));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
+  }
+
+  /** A short, light line about the result (teacher, 3 November: earned dopamine and a bit of humour). */
+  function quip(acc) {
+    var L = acc >= 90 ? ['Your grammar is showing off.', 'Murphy would be proud.', 'Flawless. Suspiciously flawless.', 'That was a grammar victory lap.']
+      : acc >= 75 ? ['Solid work. Your brain did push-ups.', 'Nearly perfect. Nearly is the fun part.', 'Good stuff. A few rules are still negotiating.']
+      : acc >= 50 ? ['Halfway there, and halfway is a real place.', 'Mistakes today, muscles tomorrow.', 'Your brain is rewiring. It makes a little noise.']
+      : ['Tough round. That is how brains grow.', 'Every mistake here is one you will not make later.', 'Grammar 1, you 0. Rematch?'];
+    return L[Math.floor(Math.random() * L.length)];
+  }
+
+  /** What next after a practice (teacher, 3 November): one topic under 75% → Try again (same level); one topic at 75%+ → Try harder
+      (the next level of that topic, if it has tasks) or Next topic; a mixed session → Next topic only. Next topic = My learning path. */
+  function nextActions(s, doneStep) {
+    var card = h('div', { class: 'card next-act', style: 'margin-bottom:16px' }, h('h2', null, 'What next?'));
+    var one = (s.skills || []).length === 1 ? s.skills[0] : null, sk = one ? skillById(one) : null;
+    var btns = [];
+    function go(btn, skills, levels, src) {
+      btn.disabled = true;
+      api('session/start', { mode: 'practice', skills: skills, levels: levels, length: 10, source: src }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; })
+        .catch(function (e) { btn.disabled = false; UI.toast(e.message); });
+    }
+    if (sk && s.accuracy < 75) {
+      var again = h('button', { type: 'button', class: 'btn' }, 'Try again', icon('arrow'));
+      again.addEventListener('click', function () { track('next', 'again'); go(again, [one], [s.level], 'summary'); });
+      btns.push(again);
+    } else if (sk && s.accuracy >= 75) {
+      var lvls = sk.levels || [], up = lvls[lvls.indexOf(s.level) + 1];
+      if (up) {
+        var harder = h('button', { type: 'button', class: 'btn' + '' }, 'Try harder', icon('up'));
+        harder.addEventListener('click', function () { track('next', 'harder'); go(harder, [one], [up], 'summary'); });
+        btns.push(harder);
+      }
+    }
+    var nextSlot = h('span');
+    btns.push(nextSlot);
+    card.append(h('div', { class: 'row', style: 'gap:10px;flex-wrap:wrap' }, btns));
+    api('path').then(function (p) {   // Next topic: the recommended step; if that is the step just practised, the next open one
+      var ids = p.steps.map(function (x) { return x.id; });
+      var nx = p.steps.find(function (x) { return x.id === p.current; });
+      if (nx && nx.id === doneStep) nx = p.steps.slice(ids.indexOf(doneStep) + 1).find(function (x) { return !x.done && x.status !== 'likely'; }) || null;
+      if (!nx) { if (btns.length === 1) card.remove(); return; }
+      var b = h('button', { type: 'button', class: btns.length > 1 ? 'btn ghost' : 'btn' }, 'Next topic: ' + nx.label, icon('arrow'));
+      b.addEventListener('click', function () { track('next', 'topic'); startPathStep(b, nx); });
+      nextSlot.replaceWith(b);
+    }).catch(function () { nextSlot.remove(); if (btns.length === 1) card.remove(); });
+    return card;
   }
 
   /** After Second Chance: 1 or 2 optional bonus questions for double XP (teacher's rule). Skipping is fine and says so. */
@@ -1752,7 +1833,14 @@
     var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
     return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
       h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, levelRange(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
-      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')));
+      h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),
+      tileProgress(s), isNewTopic(s.id) ? h('span', { class: 'ttile-new' }, 'New') : null);
+  }
+  /** The thin green line under a topic tile: progress in the topic; nothing for a topic not practised yet (teacher, 3 November). */
+  function tileProgress(s) {
+    var row = state.dash && state.dash.skills.find(function (k) { return k.id === s.id; });
+    if (!row || !row.n) return null;
+    return h('span', { class: 'ttile-prog', 'aria-label': 'Progress' }, h('i', { style: 'width:' + Math.max(4, Math.round(100 * (row.progress || 0))) + '%' }));
   }
 
   function viewRules() {

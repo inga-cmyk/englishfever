@@ -177,16 +177,24 @@
     lvflag: '<path d="M10 7.6V34" stroke="#6B4F2E" stroke-width="1.6" stroke-linecap="round"/><circle cx="10" cy="7" r="1.3" fill="' + GOLD + '"/>' +
       '<path d="M10.8 9C16 7.4 20 10.8 25 9.4C27.6 8.6 29.4 8.4 31.4 9V25C29.4 24.4 27.6 24.6 25 25.4C20 26.8 16 23.4 10.8 25Z" fill="#9E3039" stroke="#fff" stroke-width=".7" stroke-linejoin="round"/>' +
       '<path d="M10.8 15.4C16 13.8 20 17.2 25 15.8C27.6 15 29.4 14.8 31.4 15.4V18.6C29.4 18 27.6 18.2 25 19C20 20.4 16 17 10.8 18.6Z" fill="#fff"/>',
-    auseklis: '<path d="M20 5.6L23.4 13.4L30.2 9.8L26.6 16.6L34.4 20L26.6 23.4L30.2 30.2L23.4 26.6L20 34.4L16.6 26.6L9.8 30.2L13.4 23.4L5.6 20L13.4 16.6L9.8 9.8L16.6 13.4Z" fill="#fff" stroke="#9E3039" stroke-width="1.2" stroke-linejoin="round"/>' +
-      '<path d="M20 11.4L22 17.2L28.6 20L22 22.8L20 28.6L18 22.8L11.4 20L18 17.2Z" fill="#9E3039"/><path d="M20 17L23 20L20 23L17 20Z" fill="#fff"/>' +
-      '<path d="M20 5.6V11.4M20 28.6V34.4M5.6 20H11.4M28.6 20H34.4" stroke="#9E3039" stroke-width=".8"/>',
-    lacplesis: '<path d="M6.6 40C7 31.6 11 28 15.6 27.6L20 29.6L24.4 27.6C29 28 33 31.6 33.4 40Z" fill="#9E3039"/><path d="M8.6 34.6H31.4V36.8H8.2Z" fill="#fff"/>' +
-      '<circle cx="11.6" cy="10.8" r="3.6" fill="#6B4A2F" stroke="' + K + '" stroke-width=".5"/><circle cx="11.6" cy="10.8" r="1.8" fill="#C98B6A"/><circle cx="28.4" cy="10.8" r="3.6" fill="#6B4A2F" stroke="' + K + '" stroke-width=".5"/><circle cx="28.4" cy="10.8" r="1.8" fill="#C98B6A"/>' +
-      '<path d="M10.8 19C10 25 11.4 29 13.4 30.6L14.4 20ZM29.2 19C30 25 28.6 29 26.6 30.6L25.6 20Z" fill="#E2B85C"/>' +
-      '<path d="' + FACE + '" fill="#F2CDA8"/><path d="M12.2 17.2C11.2 10.6 14.8 7.8 20 7.8C25.2 7.8 28.8 10.6 27.8 17.2C27 14.4 24.6 12.6 21.6 12.2C18 13.4 14.6 13.8 12.2 17.2Z" fill="#E2B85C"/>' +
-      '<path d="M14.4 16.4L18 17.2M25.6 16.4L22 17.2" stroke="#8A6420" stroke-width="1.1" stroke-linecap="round"/><circle cx="16.6" cy="19" r="1" fill="' + K + '"/><circle cx="23.4" cy="19" r="1" fill="' + K + '"/>' +
-      '<path d="M17.4 23.2Q20 25 22.6 23.2" fill="none" stroke="#9E5A4A" stroke-width="1" stroke-linecap="round"/><circle cx="14.4" cy="22" r="1.1" fill="#E8788A" opacity=".35"/><circle cx="25.6" cy="22" r="1.1" fill="#E8788A" opacity=".35"/>' +
-      '<path d="M30.6 40L36.4 22.4" stroke="#C9CED6" stroke-width="1.6" stroke-linecap="round"/><path d="M29.4 33.6L33.6 35" stroke="' + GOLD + '" stroke-width="1.4" stroke-linecap="round"/>',
+    auseklis: '<path d="M20.0 5.2L23.1 12.4L30.5 9.5L27.6 16.9L34.8 20.0L27.6 23.1L30.5 30.5L23.1 27.6L20.0 34.8L16.9 27.6L9.5 30.5L12.4 23.1L5.2 20.0L12.4 16.9L9.5 9.5L16.9 12.4Z" fill="#9E3039" stroke="#D4A63A" stroke-width="1.3" stroke-linejoin="round"/>' +
+      '<path d="M20 7.2L21.3 18.7L32.8 20L21.3 21.3L20 32.8L18.7 21.3L7.2 20L18.7 18.7Z" fill="#fff"/><path d="M20.0 5.2L23.1 12.4L30.5 9.5L27.6 16.9L34.8 20.0L27.6 23.1L30.5 30.5L23.1 27.6L20.0 34.8L16.9 27.6L9.5 30.5L12.4 23.1L5.2 20.0L12.4 16.9L9.5 9.5L16.9 12.4Z" fill="none" stroke="#D4A63A" stroke-width="1.3" stroke-linejoin="round"/>',
+    lacplesis: '<path d="M6.6 40C7 31.6 11 28 15.6 27.6L20 29.2L24.4 27.6C29 28 33 31.6 33.4 40Z" fill="#D8C08A"/><path d="M10 33.4C10.8 32 11.8 31 13 30.4M30 33.4C29.2 32 28.2 31 27 30.4" fill="none" stroke="#B89C62" stroke-width=".6"/>' +
+      '<path d="M11.4 29.6L14 28.4L27.4 40H23.4Z" fill="#8A5A32" stroke="#5E3B1E" stroke-width=".4"/><g fill="#B8434A"><circle cx="15.6" cy="31.4" r=".6"/><circle cx="18.8" cy="34.2" r=".6"/><circle cx="22" cy="37" r=".6"/></g>' +
+      '<circle cx="20" cy="32.4" r="1.9" fill="none" stroke="#F4F1EA" stroke-width=".9"/><path d="M18.6 32.4H21.4" stroke="#F4F1EA" stroke-width=".7"/>' +
+      '<ellipse cx="33.4" cy="34" rx="5" ry="7.4" fill="#8A5A32" stroke="#5E3B1E" stroke-width=".7"/><ellipse cx="33.4" cy="34" rx="1.6" ry="2.4" fill="#6B4424" stroke="#5E3B1E" stroke-width=".5"/>' +
+      '<path d="M11.6 15C10.2 20.6 10.8 25.6 13.2 28.2L15 18.6ZM28.4 15C29.8 20.6 29.2 25.6 26.8 28.2L25 18.6Z" fill="#E6C870"/>' +
+      '<path d="M17.2 24.6H22.8V29.2C21.2 30 18.8 30 17.2 29.2Z" fill="#DDB08A"/><path d="' + FACE + '" fill="#F0C9A0"/>' +
+      '<path d="M12.6 16.4C13.4 15.2 15 14.6 16.4 14.8L15 17.6ZM27.4 16.4C26.6 15.2 25 14.6 23.6 14.8L25 17.6Z" fill="#E6C870"/>' +
+      '<path d="M12.2 14.6C11.6 9.4 15 6.8 20 6.8C25 6.8 28.4 9.4 27.8 14.6C25.6 13.4 14.4 13.4 12.2 14.6Z" fill="#CDB27A" stroke="#A88E58" stroke-width=".5"/><path d="M13.6 10.6C17 9.8 23 9.8 26.4 10.6M13 12.6C16.6 11.8 23.4 11.8 27 12.6" fill="none" stroke="#A88E58" stroke-width=".4"/>' +
+      '<ellipse cx="11.4" cy="12" rx="2.9" ry="3.6" fill="#7A4E2A" stroke="#5E3B1E" stroke-width=".5"/><ellipse cx="11.6" cy="12.2" rx="1.5" ry="2.1" fill="#A9744A"/><ellipse cx="28.6" cy="12" rx="2.9" ry="3.6" fill="#7A4E2A" stroke="#5E3B1E" stroke-width=".5"/><ellipse cx="28.4" cy="12.2" rx="1.5" ry="2.1" fill="#A9744A"/>' +
+      '<path d="M14.8 16.6L18.2 17.6M25.2 16.6L21.8 17.6" stroke="#8A6A2A" stroke-width="1.1" stroke-linecap="round"/><circle cx="16.7" cy="19.2" r=".95" fill="' + K + '"/><circle cx="23.3" cy="19.2" r=".95" fill="' + K + '"/>' +
+      '<path d="M19.6 20.4L19 22.6H20.4" fill="none" stroke="#C99A78" stroke-width=".6" stroke-linecap="round"/><path d="M17.8 24Q20 25 22.4 23.6" fill="none" stroke="#9E5A4A" stroke-width="1" stroke-linecap="round"/>',
+    lvribbon: '<path d="M13.4 34L21.6 15.4C23.4 11.2 22.6 7.6 20 7.6C17.4 7.6 16.6 11.2 18.4 15.4L26.6 34" fill="none" stroke="#9E3039" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M13.4 34L21.6 15.4C23.4 11.2 22.6 7.6 20 7.6C17.4 7.6 16.6 11.2 18.4 15.4L26.6 34" fill="none" stroke="#fff" stroke-width="1.1" stroke-linejoin="round"/>' +
+      '<path d="M17.8 14L26.6 34" fill="none" stroke="#9E3039" stroke-width="5"/><path d="M17.8 14L26.6 34" fill="none" stroke="#fff" stroke-width="1.1"/>',
+    lvmap: '<defs><clipPath id="avlvm"><path d="M5 27L4.6 22.4L5.4 18L7 15.2L9.6 12.4L11.6 14.6L13.6 17.6L16 18.6L17.4 17L16.8 13.6L17.6 11L20.6 10.6L24 11.4L27 12.6L29.6 12.2L32.4 13.6L34.2 16.4L35.4 19.6L34.6 23L33 25.6L30 26.6L26.6 27.4L23 26.4L19.6 28L15.6 27.6L12 28.2L8.4 27.6Z"/></clipPath></defs><g clip-path="url(#avlvm)"><rect x="4" y="10" width="32" height="19" fill="#9E3039"/><rect x="4" y="18" width="32" height="3.4" fill="#fff"/></g>' +
+      '<path d="M5 27L4.6 22.4L5.4 18L7 15.2L9.6 12.4L11.6 14.6L13.6 17.6L16 18.6L17.4 17L16.8 13.6L17.6 11L20.6 10.6L24 11.4L27 12.6L29.6 12.2L32.4 13.6L34.2 16.4L35.4 19.6L34.6 23L33 25.6L30 26.6L26.6 27.4L23 26.4L19.6 28L15.6 27.6L12 28.2L8.4 27.6Z" fill="none" stroke="#D4A63A" stroke-width="1" stroke-linejoin="round"/>',
     // Halloween: drawn straight on the coloured circle, with their own outlines so they show on every colour
     pumpkin: '<path d="M20.4 10.4C20.4 8 21.8 6.4 24 6L23.4 8.6C22.4 8.8 21.6 9.4 21.4 10.6Z" fill="#4E7A2E"/><path d="M20 10.4C20.2 9 19.4 7.8 18 7.4" fill="none" stroke="#4E7A2E" stroke-width="1" stroke-linecap="round"/>' +
       '<ellipse cx="13.2" cy="22" rx="6.8" ry="10.2" fill="#E8772E"/><ellipse cx="26.8" cy="22" rx="6.8" ry="10.2" fill="#E8772E"/><ellipse cx="20" cy="22" rx="7.2" ry="11" fill="#F28C3C"/>' +
@@ -230,7 +238,7 @@
   };
   var AV_COLORS = { raspberry: ['#DE3163', '#FFFFFF'], gold: ['#DEC17A', '#020101'], ink: ['#1E1E2C', '#DEC17A'], cream: ['#F3EAD3', '#8A6A22'], plum: ['#4A1730', '#DEC17A'], sand: ['#A39E93', '#020101'] };
   var AV_NAMES = { flame: 'Flame', spark: 'Spark', bolt: 'Bolt', sun: 'Sun', thermo: 'Thermometer', wave: 'Wave', comet: 'Comet', leaf: 'Leaf',
-    lvheart: 'Red-white-red heart', lvflag: 'Latvian flag', auseklis: 'Auseklis', lacplesis: 'Lāčplēsis',
+    lvheart: 'Red-white-red heart', lvflag: 'Latvian flag', auseklis: 'Auseklis', lacplesis: 'Lāčplēsis', lvribbon: 'Red-white-red ribbon', lvmap: 'Map of Latvia',
     pumpkin: 'Pumpkin', ghost: 'Ghost', witch: 'Witch', vampire: 'Vampire', mummy: 'Mummy', skeleton: 'Skeleton', blackcat: 'Black cat', bat: 'Bat',
     vera: 'Vera', marco: 'Marco', cleo: 'Cleo', hana: 'Hana', fay: 'Fay', june: 'June', dev: 'Dev', eli: 'Eli', gus: 'Gus', ivan: 'Ivan',
     nova: 'Nova', captain: 'Captain', sleuth: 'Sleuth', reggie: 'Reggie', will: 'Will', guard: 'Guard', prof: 'Professor', fox: 'Fox', ember: 'Ember', initial: 'My initial',
@@ -379,5 +387,5 @@
     return s;
   }
 
-  window.UI = { markForms: markForms, rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_LATVIA: ['lvheart', 'lvflag', 'auseklis', 'lacplesis'], AV_HALLOWEEN: ['pumpkin', 'ghost', 'witch', 'vampire', 'mummy', 'skeleton', 'blackcat', 'bat'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
+  window.UI = { markForms: markForms, rich: rich, avatar: avatar, AV_GLYPHS: Object.keys(AV_GLYPHS), AV_CHARS: Object.keys(AV_CHARS), AV_PEOPLE: ['vera', 'marco', 'cleo', 'hana', 'fay', 'june', 'dev', 'eli', 'gus', 'ivan'], AV_FUN: ['nova', 'captain', 'sleuth', 'reggie', 'will', 'guard', 'prof', 'ember', 'fox'], AV_LATVIA: ['lvheart', 'lvflag', 'lvribbon', 'auseklis', 'lacplesis', 'lvmap'], AV_HALLOWEEN: ['pumpkin', 'ghost', 'witch', 'vampire', 'mummy', 'skeleton', 'blackcat', 'bat'], AV_COLORS: Object.keys(AV_COLORS), AV_NAMES: AV_NAMES, AV_COLOR_VALUES: AV_COLORS, h: h, icon: icon, api: api, fmtDuration: fmtDuration, fmtAgo: fmtAgo, fmtDate: fmtDate, toast: toast, modal: modal };
 })();

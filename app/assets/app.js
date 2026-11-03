@@ -265,7 +265,7 @@
   function viewWelcome() {
     var cfg = state.config;
     var errBox = h('div');
-    var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'words', spellcheck: 'false', maxlength: '30', placeholder: 'Your name (or a nickname)' });
+    var nick = h('input', { type: 'text', id: 'nick', autocomplete: 'off', autocapitalize: 'words', spellcheck: 'false', maxlength: '30', placeholder: 'e.g. Anna' });
     var shownAt = Date.now();
     var trap = h('input', { type: 'text', name: 'website', id: 'website', tabindex: '-1', autocomplete: 'off' });
     var guestForm = h('form', { novalidate: true, onsubmit: function (e) {
@@ -278,31 +278,83 @@
         }).catch(function (err) { btn.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, err.message)); });
       }, Math.max(0, 1300 - (Date.now() - shownAt)));
     } },
-      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name'), nick),
+      h('div', { class: 'field' }, h('label', { for: 'nick' }, 'Your name or a nickname'), nick),
       h('div', { 'aria-hidden': 'true', style: 'position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden' }, h('label', { for: 'website' }, 'Leave this empty'), trap), // a trap for bots
       errBox,
       h('button', { class: 'btn block', type: 'submit' }, 'Continue as guest'),   // the main way in for a new person (teacher, 27 October)
       null);
 
-    var card = [];
-    card.push(h('h2', { style: 'text-align:center' }, cfg.sso ? 'Try it as a guest' : 'Start practising'), guestForm);
-    if (cfg.sso) card.push(
-      h('div', { class: 'or' }, 'or'),
-      h('h2', { style: 'text-align:center' }, 'Registered at englishfever.com?'),
-      h('a', { class: 'btn ghost block', href: cfg.wp_login_url }, icon('user'), 'Continue with my account'));
-    if (cfg.register_url) card.push(h('p', { class: 'small', style: 'text-align:center;margin:16px 0 0' }, 'No account yet? ', registerLink('', 'Create a free account')));
+    // The landing page (teacher's design, 3 November): one idea per band, one main button, the guest way one tap away.
+    var guestBox = h('div', { class: 'lp-guest', hidden: !navigator.webdriver }, guestForm);   // open for automated browser tests (they fill in the name straight away)
+    function openGuest() {
+      guestBox.hidden = false; track('page', 'welcome_guest');
+      guestBox.scrollIntoView({ behavior: 'smooth', block: 'center' }); setTimeout(function () { nick.focus(); }, 350);
+    }
+    function startBtn(label) {   // the main way in: a free account when englishfever.com accounts exist, else straight in as a guest
+      if (cfg.register_url) return registerLink('btn lp-btn', label + ' →');
+      return h('button', { type: 'button', class: 'btn lp-btn', onclick: openGuest }, label + ' →');
+    }
+    var loginBtn = cfg.sso ? h('a', { class: 'lp-login', href: cfg.wp_login_url }, 'Log in') : null;
+    // the sample question: tap an option, see the explanation
+    var fb = h('div', { class: 'lp-fb', hidden: true });
+    var opts = h('div', { class: 'lp-opts' }, ['used', 'use', 'using'].map(function (o) {
+      return h('button', { type: 'button', class: 'lp-opt', onclick: function (e) {
+        var right = o === 'use';
+        opts.querySelectorAll('.lp-opt').forEach(function (b) { b.classList.remove('ok', 'no'); b.disabled = true; });
+        e.currentTarget.classList.add(right ? 'ok' : 'no');
+        if (!right) opts.children[1].classList.add('ok');
+        fb.hidden = false;
+        fb.replaceChildren(h('b', null, (right ? '' : 'Not quite. ') + 'After ‘didn’t’, use the base form: use.'), h('i', null, 'I didn’t use to understand grammar. Now I do.'));
+      } }, o, h('span', { class: 'lp-tick', 'aria-hidden': 'true' }, icon('check')));
+    }));
+    var wave = '<svg viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 120 40, 200 20, 300 38 S 480 30, 600 10" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".5"/>'
+      + '<circle cx="60" cy="44" r="5" fill="currentColor"/><circle cx="300" cy="38" r="5" fill="currentColor"/><circle cx="545" cy="18" r="5" fill="currentColor"/></svg>';
+    var stairs = '<svg viewBox="0 0 260 70" aria-hidden="true"><path d="M2 68H40V56H75V44H110V32H150V20H190V6H245V18" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+    function svg(markup, cls) { var w = h('div', { class: cls }); w.innerHTML = markup; return w; }   // fixed markup from this file
+    var guestLink = h('button', { type: 'button', class: 'lp-link', onclick: openGuest }, 'Try it as a guest');
 
-    show(h('div', null,
-      h('section', { class: 'hero' },
-        h('div', { class: 'bar' }),
-        h('h1', null, 'Practise English grammar. ', h('em', null, 'Know what to fix next.')),
-        h('p', null, 'Short grammar questions for adult learners, A2 to C1. Clear feedback after every answer.'),
-        cfg.beta ? h('p', { class: 'betaline' }, betaPill()) : null,
-        h('div', { class: 'hero-feats' },   // what the app gives, as three icons (they looked like buttons as boxes; teacher, 27 October)
-          h('span', null, h('i', null, icon('up')), 'Find your level'),
-          h('span', null, h('i', null, icon('target')), 'Fix your mistakes'),
-          h('span', null, h('i', null, icon('bolt')), 'Think, not guess'))),
-      h('div', { class: 'card', style: 'max-width:480px;margin:0 auto' }, card)));
+    show(h('div', { class: 'lp' },
+      h('div', { class: 'lp-top' }, h('span', { class: 'lp-brand' }, 'englishfever'), cfg.beta ? h('span', { class: 'lp-beta' }, 'Beta') : null, h('span', { class: 'spacer' }), loginBtn),
+      h('section', { class: 'lp-band lp-hero' },
+        h('p', { class: 'lp-eyebrow' }, 'English grammar · A2–C1'),
+        h('h1', null, 'I didn’t use to ', h('span', { class: 'lp-acc' }, 'understand grammar.')),
+        h('p', { class: 'lp-lead' }, 'Now the rules are starting to make sense.'),
+        h('p', { class: 'lp-sub' }, 'Short practice. Clear explanations. One step at a time.'),
+        startBtn('Start practising'),
+        cfg.register_url ? h('div', null, guestLink) : null,
+        guestBox,
+        svg(wave, 'lp-wave')),
+      h('section', { class: 'lp-band lp-alt lp-split' },
+        h('div', null, h('h2', null, 'From guessing to understanding.'),
+          h('p', null, 'You recognise the words. But choosing the right answer still feels uncertain.'),
+          h('p', null, 'Practise a little, understand the reason, and try again.')),
+        h('div', { class: 'lp-gu', 'aria-hidden': 'true' }, h('s', null, 'Guess.'), h('span', { class: 'lp-acc' }, 'Understand.'))),
+      h('section', { class: 'lp-band' },
+        h('h2', { class: 'lp-c' }, 'A small question.', h('br'), 'A useful explanation.'),
+        h('div', { class: 'lp-demo' },
+          h('p', { class: 'lp-eyebrow lp-acc' }, 'Used to · past habits'),
+          h('p', { class: 'lp-q' }, 'I didn’t ___ to understand grammar.'),
+          opts, fb),
+        h('p', { class: 'lp-c' }, h('button', { type: 'button', class: 'lp-link lp-teal', onclick: openGuest }, 'Try a question yourself →'))),
+      h('section', { class: 'lp-band lp-alt lp-c' },
+        h('h2', null, h('span', { class: 'lp-acc' }, 'Practice makes progress.')),
+        h('p', { class: 'lp-lead' }, 'Perfect can wait.'),
+        h('p', null, 'You don’t need to master everything today.', h('br'), 'Start with one thing that becomes clearer.'),
+        svg(stairs, 'lp-stairs'),
+        startBtn('Take the first step')),
+      h('section', { class: 'lp-band' },
+        h('h2', null, 'Success is built in small steps.'),
+        h('div', { class: 'lp-steps' },
+          [['01', 'Choose your level', 'A2 to C1'], ['02', 'Practise a little', 'Short grammar questions'], ['03', 'Understand why', 'Feedback after every answer']].map(function (x) {
+            return h('div', null, h('b', { class: 'lp-acc' }, x[0]), h('strong', null, x[1]), h('span', null, x[2]));
+          }))),
+      h('section', { class: 'lp-band lp-alt lp-c' },
+        h('h2', null, 'Your next step can be small.'),
+        h('p', { class: 'lp-lead' }, 'Make it a little grammar practice.'),
+        startBtn('Start practising'),
+        cfg.sso ? h('p', { class: 'lp-sub' }, 'Already have an account? ', h('a', { href: cfg.wp_login_url }, 'Log in')) : h('p', { class: 'lp-sub' }, guestLink.cloneNode(true)))));
+    var lastGuest = document.querySelector('.lp .lp-band:last-child .lp-link');
+    if (lastGuest) lastGuest.addEventListener('click', openGuest);
   }
 
   // The invitation shown to guests after practice: create a free account to keep the results.

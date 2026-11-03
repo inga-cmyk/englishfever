@@ -20,12 +20,12 @@ const OUT = __dirname + '/shots/';
   });
 
   await page.goto(BASE + '/index.html');
-  await page.waitForSelector('.hero');
+  await page.waitForSelector('.lp-hero');
   await noJunk(page,'01-welcome'); await page.screenshot({ path: OUT + '01-welcome.png', fullPage: true });
 
   const nick = 'Guest ' + Math.floor(Math.random() * 90000 + 10000);
   const wtxt = await page.evaluate(() => document.body.innerText);
-  for (const needle of ['Registered at englishfever.com?', 'Continue with my account', 'Try it as a guest', 'Your name', 'Continue as guest', 'Create a free account']) if (!wtxt.includes(needle)) errors.push('welcome page misses: ' + needle);
+  for (const needle of ['Log in', 'Try it as a guest', 'Your name or a nickname', 'Continue as guest', 'Start practising', 'Already have an account?']) if (!wtxt.includes(needle)) errors.push('welcome page misses: ' + needle);
   if (/Remember it|teacher can help|do not use your real name/i.test(wtxt)) errors.push('old long hint texts still on the welcome page');
   await page.fill('#nick', nick);
   await page.click('button[type=submit]');
@@ -120,7 +120,7 @@ const OUT = __dirname + '/shots/';
   const m = await browser.newContext({ viewport: { width: 390, height: 800 }, isMobile: true });
   const mp = await m.newPage();
   mp.on('pageerror', e => errors.push('mobile pageerror: ' + e.message));
-  await mp.goto(BASE + '/index.html'); await mp.waitForSelector('.hero'); await mp.screenshot({ path: OUT + '14-mobile-welcome.png', fullPage: true });
+  await mp.goto(BASE + '/index.html'); await mp.waitForSelector('.lp-hero'); await mp.screenshot({ path: OUT + '14-mobile-welcome.png', fullPage: true });
   await mp.click('button[type=submit]'); await mp.waitForSelector('.hello h1'); const gname = await mp.locator('.hello h1').innerText(); if (!/^Welcome, Guest \d{4}$/.test(gname)) errors.push('anonymous guest name wrong: ' + gname); await mp.waitForTimeout(400);
   await mp.screenshot({ path: OUT + '15-mobile-home.png', fullPage: true });
 

@@ -21,7 +21,7 @@ const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PASS ' : 'FAIL ')
   const ctx = await b.newContext({ viewport: { width: 1200, height: 800 } });
   const p = await ctx.newPage();
   p.on('pageerror', e => errs.push(e.message));
-  await p.goto(BASE + '/index.html'); await p.waitForSelector('.hero');
+  await p.goto(BASE + '/index.html'); await p.waitForSelector('.lp-hero');
   const man = await p.evaluate(async () => { const l = document.querySelector('link[rel=manifest]'); const r = await fetch(l.href); return await r.json(); });
   check('manifest has name, standalone display and brand colours', man.name === 'English Fever Practice' && man.display === 'standalone' && man.theme_color === '#020101' && man.background_color === '#F7F5EE', man);
   const sizes = await p.evaluate(async (icons) => Promise.all(icons.map(async i => { const r = await fetch(i.src); const bm = await createImageBitmap(await r.blob()); return [i.sizes, bm.width + 'x' + bm.height, i.purpose]; })), man.icons);
@@ -29,7 +29,7 @@ const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PASS ' : 'FAIL ')
   const touch = await p.evaluate(async () => { const l = document.querySelector('link[rel=apple-touch-icon]'); const bm = await createImageBitmap(await (await fetch(l.href)).blob()); return bm.width; });
   check('apple touch icon is 180 px', touch === 180, touch);
   check('iOS web app meta tags', await p.evaluate(() => !!document.querySelector('meta[name=apple-mobile-web-app-capable]') && /viewport-fit=cover/.test(document.querySelector('meta[name=viewport]').content)));
-  await p.evaluate(() => navigator.serviceWorker.ready); await p.reload(); await p.waitForSelector('.hero'); await p.waitForTimeout(500);
+  await p.evaluate(() => navigator.serviceWorker.ready); await p.reload(); await p.waitForSelector('.lp-hero'); await p.waitForTimeout(500);
   check('service worker active and controlling the page', await p.evaluate(() => !!navigator.serviceWorker.controller));
   // sign in as guest so the API gets used, then check what is cached
   await p.fill('#nick', 'Pwa tester'); await p.click('button[type=submit]'); await p.waitForSelector('.hello h1');
@@ -53,7 +53,7 @@ const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PASS ' : 'FAIL ')
 
   // ---- iPhone Safari
   const ip = await b.newContext({ ...devices['iPhone 13'] }); const i = await ip.newPage(); i.on('pageerror', e => errs.push(e.message));
-  await i.goto(BASE + '/index.html'); await i.waitForSelector('.hero'); await i.fill('#nick', 'Phone tester'); await i.click('button[type=submit]'); await i.waitForSelector('.hello h1'); await practise(i);
+  await i.goto(BASE + '/index.html'); await i.waitForSelector('.lp-hero'); await i.fill('#nick', 'Phone tester'); await i.click('button[type=submit]'); await i.waitForSelector('.hello h1'); await practise(i);
   const ic = i.locator('#install-card'); await ic.waitFor();
   const it = await ic.innerText();
   check('iPhone: card explains Share > Add to Home Screen', /Share/.test(it) && /Add to Home Screen/.test(it), it);
@@ -65,13 +65,13 @@ const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PASS ' : 'FAIL ')
 
   // ---- installed (standalone): never shown
   const st = await b.newContext({ ...devices['iPhone 13'] }); await st.addInitScript(() => { Object.defineProperty(navigator, 'standalone', { get: () => true }); });
-  const s = await st.newPage(); await s.goto(BASE + '/index.html'); await s.waitForSelector('.hero'); await s.fill('#nick', 'Installed'); await s.click('button[type=submit]'); await s.waitForSelector('.hello h1');
+  const s = await st.newPage(); await s.goto(BASE + '/index.html'); await s.waitForSelector('.lp-hero'); await s.fill('#nick', 'Installed'); await s.click('button[type=submit]'); await s.waitForSelector('.hello h1');
   await s.goto(BASE + '/index.html#/profile'); await s.waitForSelector('#pn');
   check('installed app: no install hint anywhere', !(await s.locator('#install-card').count()));
 
   // ---- Android Chrome: real install button
   const an = await b.newContext({ ...devices['Pixel 7'] }); const a = await an.newPage(); a.on('pageerror', e => errs.push(e.message));
-  await a.goto(BASE + '/index.html'); await a.waitForSelector('.hero');
+  await a.goto(BASE + '/index.html'); await a.waitForSelector('.lp-hero');
   await a.evaluate(() => { window.__prompted = 0; const e = new Event('beforeinstallprompt'); e.prompt = () => { window.__prompted++; return Promise.resolve(); }; e.userChoice = Promise.resolve({ outcome: 'accepted' }); window.dispatchEvent(e); });
   await a.fill('#nick', 'Droid'); await a.click('button[type=submit]'); await a.waitForSelector('.hello h1'); await practise(a);
   const btn = a.locator('#install-card button:has-text("Install the app")'); await btn.waitFor();
@@ -79,7 +79,7 @@ const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PASS ' : 'FAIL ')
   check('Android: "Install the app" calls the browser prompt', (await a.evaluate(() => window.__prompted)) === 1);
 
   const an2 = await b.newContext({ ...devices['Pixel 7'] }); const a2 = await an2.newPage(); a2.on('pageerror', e => errs.push(e.message));
-  await a2.goto(BASE + '/index.html'); await a2.waitForSelector('.hero'); await a2.fill('#nick', 'Droid2'); await a2.click('button[type=submit]'); await a2.waitForSelector('.hello h1'); await practise(a2);
+  await a2.goto(BASE + '/index.html'); await a2.waitForSelector('.lp-hero'); await a2.fill('#nick', 'Droid2'); await a2.click('button[type=submit]'); await a2.waitForSelector('.hello h1'); await practise(a2);
   const at = await a2.locator('#install-card').innerText();
   check('Android without a prompt: menu wording, for the phone', /On your phone/.test(at) && /Install app/.test(at) && /Add to Home screen/.test(at), at);
   console.log(errs.length ? 'ERRORS: ' + errs.join('; ') : 'no page errors');

@@ -30,6 +30,11 @@ so results before and after it are not mixed.
 - **Locked in**: a fixed mistake answered correctly again on another day with another task of that kind.
 - **Reopened**: a fixed mistake made again.
 
+## Learning path states (from 3 Nov 2026)
+- **learned**: 10+ different check/use tasks right at the step's levels, 80%+ of the last 12 right, recognise + use + one typed answer, two days. A topic with fewer than 10 check/use tasks at that level cannot be learned yet.
+- **mastered**: learned, and 3+ days later three never-seen tasks right.
+- **probably known**: below the placement level, right in the level test, or 80%+ on 5+ answers at a higher level of the same topic; confirmed (**known**) by 3 right answers on 3 different tasks in a row, else **strengthen the basics**.
+
 ## Leave out before analysis
 1. Test accounts (`is_test`; the teacher marks them on the student's page). Already left out of the research export,
    Learning evidence and Usage.
@@ -63,3 +68,4 @@ so results before and after it are not mixed.
 - 2 Nov 2026: a ? button on every practice task opens the rule card; answers given after opening it are marked (rule_card_before). Compare or separate them when judging what a learner knows without help.
 - 3 Nov 2026: optional AI check of open writing answers (Claude Haiku 5.5, only when an API key is set in config.php). The answer row keeps the AI verdict and the changed words (`attempts.ai`). When the AI finds a mistake the pattern check missed, the answer counts as wrong. Learner text is sent to Anthropic for this check (no names): say so in the privacy notice and the consent text before switching it on.
 - 3 Nov 2026: task roles (learn / check / use). The level test no longer asks learn tasks (it skipped practice-only tasks before; matching and "Which sentence means …" tasks are now left out too). Use only check and use answers as evidence of knowing a form.
+- 3 Nov 2026: mastery rule 1a and the path states above replace the earlier rule (8 of the last 10 answers right). Path statistics before and after are not comparable.

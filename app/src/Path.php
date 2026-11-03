@@ -132,31 +132,67 @@ final class Path
         return null;
     }
 
+    /**
+     * Mastery of a topic at some levels (teacher, 3 November, rule "1a"): evidence, not the size of the topic.
+     * Only check and use tasks count (Content::role); mistakes on corrected tasks do not count (rule C).
+     * learned  = at least 10 different tasks answered right, 80% or more of the last 12 answers right, recognise + use +
+     *            one typed answer among the right ones, right answers on two different days;
+     * mastered = learned, and later (3+ days) three tasks the learner had never seen, all right;
+     * confirmed = a quick check passed: the last 3 evidence answers right, on 3 different tasks (used when the topic is
+     *            probably known already, e.g. from a higher level or the level test);
+     * progress = the green line: different right tasks out of 10, held back while accuracy is under 80%.
+     * A topic with fewer than 10 check / use tasks at these levels cannot be learned yet ("almost there").
+     */
+    public const LEARN_N = 10;
     public static function mastery(int $uid, string $skill, ?array $levels = null): array
     {
-        $lv = $levels ? ' AND level IN (' . implode(',', array_fill(0, count($levels), '?')) . ')' : '';   // mastery at these levels only: a topic comes back at a higher level
+        $lv = $levels ? ' AND level IN (' . implode(',', array_fill(0, count($levels), '?')) . ')' : '';
         $p = array_merge([$uid, $skill], $levels ?: []);
         $corrected = Reports::correctedIds();
-        $rows = array_slice(array_values(array_filter(Db::all("SELECT item_id, correct, bloom, created_at FROM attempts WHERE user_id = ? AND skill = ?$lv ORDER BY id DESC LIMIT 30", $p),
-            fn($r) => (int) $r['correct'] || !isset($corrected[$r['item_id']]))), 0, 10);   // rule C: mistakes on corrected tasks do not count
-        $n = count($rows);
-        $ok = 0; $recognise = false; $use = false; $typed = false; $days = [];
-        foreach ($rows as $r) {
-            if (!(int) $r['correct']) continue;
-            $ok++;
+        $rows = [];   // oldest first, evidence only
+        foreach (Db::all("SELECT item_id, correct, created_at FROM attempts WHERE user_id = ? AND skill = ?$lv ORDER BY id ASC", $p) as $r) {
             $it = Content::item((string) $r['item_id']);
-            if (Content::taskCat($it) === 'recognise') $recognise = true; else $use = true;
-            if ($it && in_array($it['kind'], ['text', 'write'], true)) $typed = true;
-            if ($it && $it['kind'] === 'gap' && empty($it['bank'])) $typed = true;
+            if (!$it || Content::role($it) === 'learn') continue;
+            if (!(int) $r['correct'] && isset($corrected[$r['item_id']])) continue;
+            $r['it'] = $it; $rows[] = $r;
+        }
+        $n = count($rows);
+        $last = array_slice($rows, -12);
+        $acc = $last ? array_sum(array_map(fn($r) => (int) $r['correct'], $last)) / count($last) : 0.0;
+        $right = []; $cats = []; $typed = false; $days = []; $firstSeen = [];
+        foreach ($rows as $r) {
+            $id = preg_replace('/-r\d+$/', '', (string) $r['item_id']);
+            $firstSeen[$id] ??= (int) $r['created_at'];
+            if (!(int) $r['correct']) continue;
+            $right[$id] = true;
+            $cats[Content::taskCat($r['it'])] = true;
+            if (Content::role($r['it']) === 'use') $typed = true;
             $days[date('Y-m-d', (int) $r['created_at'])] = true;
         }
-        $pct = $n ? (int) round(100 * $ok / $n) : null;
-        $met = $n >= 8 && $pct >= 80 && $recognise && $use && $typed && count($days) >= 2;
-        $all = Db::one("SELECT COUNT(1) AS n, SUM(correct) AS c, MAX(created_at) AS last FROM attempts WHERE user_id = ? AND skill = ?$lv", $p);
-        $fresh = $all && (int) $all['last'] > time() - self::FRESH_DAYS * 86400;
-        // accuracy for the colour: every answer in the topic; mastery fades when the topic has not been practised for a while (teacher, 28 October)
-        return ['n' => (int) ($all['n'] ?? 0), 'pct' => (int) ($all['n'] ?? 0) ? (int) round(100 * (int) $all['c'] / (int) $all['n']) : null,
-                'done' => $met && $fresh, 'stale' => $met && !$fresh];
+        static $banks = [];   // check / use tasks per topic and level
+        if (!$banks) foreach (Content::items() as $it) if (Content::role($it) !== 'learn') $banks[$it['skill']][$it['level']] = ($banks[$it['skill']][$it['level']] ?? 0) + 1;
+        $bank = 0;
+        foreach ($banks[$skill] ?? [] as $l => $c) if (!$levels || in_array($l, $levels, true)) $bank += $c;
+        $distinct = count($right);
+        $learned = $bank >= self::LEARN_N && $distinct >= self::LEARN_N && $acc >= 0.8 && isset($cats['recognise']) && (isset($cats['use']) || isset($cats['write'])) && $typed && count($days) >= 2;
+        $mastered = false;
+        if ($learned) {   // the day it became learned: the 10th different right task
+            $seen = []; $at = null;
+            foreach ($rows as $r) { if ((int) $r['correct']) { $seen[preg_replace('/-r\d+$/', '', (string) $r['item_id'])] = true; if (count($seen) >= self::LEARN_N) { $at = (int) $r['created_at']; break; } } }
+            $later = array_values(array_filter($rows, fn($r) => $at !== null && (int) $r['created_at'] >= $at + 3 * 86400 && $firstSeen[preg_replace('/-r\d+$/', '', (string) $r['item_id'])] >= $at + 3 * 86400));
+            $mastered = count($later) >= 3 && !in_array(0, array_map(fn($r) => (int) $r['correct'], array_slice($later, -3)), true);
+        }
+        $tail = array_slice($rows, -3);
+        $confirmed = count($tail) === 3 && !in_array(0, array_map(fn($r) => (int) $r['correct'], $tail), true)
+                     && count(array_unique(array_map(fn($r) => preg_replace('/-r\d+$/', '', (string) $r['item_id']), $tail))) === 3;
+        $failedCheck = (bool) array_filter($tail, fn($r) => !(int) $r['correct']);
+        $progress = $learned ? 1.0 : min($bank >= self::LEARN_N ? 0.95 : 0.9, ($distinct / self::LEARN_N) * ($acc >= 0.8 || !$last ? 1 : $acc / 0.8));
+        $allRow = Db::one("SELECT COUNT(1) AS n, SUM(correct) AS c, MAX(created_at) AS last FROM attempts WHERE user_id = ? AND skill = ?$lv", $p);
+        $fresh = $allRow && (int) $allRow['last'] > time() - self::FRESH_DAYS * 86400;
+        return ['n' => (int) ($allRow['n'] ?? 0), 'pct' => (int) ($allRow['n'] ?? 0) ? (int) round(100 * (int) $allRow['c'] / (int) $allRow['n']) : null,
+                'evidence' => $n, 'distinct' => $distinct, 'acc' => round($acc, 2), 'bank' => $bank,
+                'learned' => $learned, 'mastered' => $mastered, 'confirmed' => $confirmed, 'failed_check' => $failedCheck, 'progress' => round($progress, 2),
+                'done' => $learned && $fresh, 'stale' => $learned && !$fresh];
     }
 
     public static function forUser(int $uid): array
@@ -170,7 +206,18 @@ final class Path
             foreach (Db::all('SELECT skill, correct FROM attempts WHERE psession_id = ?', [(int) $pr['id']]) as $a) { if ((int) $a['correct']) $plRight[$a['skill']] = true; else $plWrong[$a['skill']] = true; }
         }
         $placedIdx = $placed === null ? -1 : array_search($placed, self::LEVELS, true);
-        $corrected = Reports::correctedIds();
+        // evidence per topic above a level: right answers at higher levels make the lower level probably known (teacher, 3 November)
+        $high = [];
+        foreach (Db::all('SELECT skill, level, correct, item_id FROM attempts WHERE user_id = ?', [$uid]) as $a) {
+            if (Content::role(Content::item((string) $a['item_id'])) === 'learn') continue;
+            $h = &$high[$a['skill']][$a['level']]; $h = $h ?? [0, 0]; $h[0]++; $h[1] += (int) $a['correct']; unset($h);
+        }
+        $strongAbove = function (string $t, array $levels) use ($high): bool {
+            $top = max(array_map(fn($l) => (int) array_search($l, self::HALVES, true), $levels));
+            $n = 0; $c = 0;
+            foreach ($high[$t] ?? [] as $l => [$nn, $cc]) if ((int) array_search($l, self::HALVES, true) > $top) { $n += $nn; $c += $cc; }
+            return $n >= 5 && $c / $n >= 0.8;
+        };
         $m = [];
         $steps = [];
         foreach (self::STEPS as $s) {
@@ -184,38 +231,48 @@ final class Path
             }
             if (!$topics) continue;
             $levels = array_values(array_unique($levels)); sort($levels);
-            $n = 0; $pctSum = 0; $pctN = 0; $done = true; $stale = false;
-            foreach ($topics as $t) {
-                $k = $t . '|' . implode(',', $levels);
-                $m[$k] ??= self::mastery($uid, $t, $levels);
-                $n += $m[$k]['n']; if ($m[$k]['pct'] !== null) { $pctSum += $m[$k]['pct']; $pctN++; }
-                $done = $done && $m[$k]['done']; $stale = $stale || $m[$k]['stale'];
-            }
-            $pct = $pctN ? (int) round($pctSum / $pctN) : null;
             $bandIdx = array_search(substr($band, 0, 2), self::LEVELS, true);
             $below = $placedIdx > $bandIdx;
-            // variant A (teacher, 2 November): below the placement level a step counts as known unless the answers say otherwise
-            $weak = $n >= 5 && $pct !== null && $pct < 70;
-            $known = $below && !$done && !$weak;
-            $missed = (bool) array_intersect($topics, array_keys($plWrong));
-            $passed = !$missed && count(array_intersect($topics, array_keys($plRight))) === count($topics);
-            $status = $done ? 'done' : ($stale ? 'refresh' : ($known ? 'known' : ($n ? 'work' : 'new')));
+            $all = ['learned' => true, 'mastered' => true, 'known' => true, 'likely' => true, 'stale' => false, 'failed' => false];
+            $n = 0; $prog = 0.0; $pctSum = 0; $pctN = 0;
+            foreach ($topics as $t) {
+                $k = $t . '|' . implode(',', $levels);
+                $mm = $m[$k] ??= self::mastery($uid, $t, $levels);
+                $n += $mm['n']; $prog += $mm['progress']; if ($mm['pct'] !== null) { $pctSum += $mm['pct']; $pctN++; }
+                // probably known: below the level found, right in the level test (and not missed there), or strong at a higher level
+                $likely = !isset($plWrong[$t]) && ($below || ($placedIdx >= $bandIdx && isset($plRight[$t])) || $strongAbove($t, $levels));
+                $all['learned'] = $all['learned'] && $mm['learned'];
+                $all['mastered'] = $all['mastered'] && $mm['mastered'];
+                $all['known'] = $all['known'] && ($mm['learned'] || ($likely && $mm['confirmed']));
+                $all['likely'] = $all['likely'] && ($mm['learned'] || $likely);
+                $all['stale'] = $all['stale'] || $mm['stale'];
+                $all['failed'] = $all['failed'] || ($likely && !$mm['learned'] && $mm['failed_check'] && $mm['evidence'] >= 3);
+            }
+            $progress = round($prog / count($topics), 2);
+            $status = $all['mastered'] ? 'mastered'
+                : ($all['learned'] ? ($all['stale'] ? 'refresh' : 'learned')
+                : ($all['known'] ? 'known'
+                : ($all['failed'] ? 'strengthen'
+                : ($all['likely'] ? 'likely' : ($n ? 'work' : 'new')))));
+            $done = in_array($status, ['mastered', 'learned', 'known'], true);
             $steps[] = ['id' => $id, 'label' => $label, 'level' => $band, 'levels' => $levels, 'topics' => $topics, 'fallback' => $fallback, 'needs' => null, 'best_after' => [],
-                        'done' => $done, 'answers' => $n, 'pct' => $pct, 'stale' => !$done && $stale, 'status' => $status, 'weak' => $weak,
-                        'missed' => $missed, 'below' => $below || ($passed && !$n),   // "below": a short check first (6 tasks)
-                        'band_idx' => $bandIdx];
+                        'done' => $done, 'answers' => $n, 'pct' => $pctN ? (int) round($pctSum / $pctN) : null, 'progress' => $done ? 1.0 : $progress,
+                        'stale' => $status === 'refresh', 'status' => $status, 'weak' => $status === 'strengthen',
+                        'below' => $status === 'likely', 'band_idx' => $bandIdx];
         }
-        // the recommended step: a weak step below the level first, then the first step at or above it with a topic missed in
-        // the placement test, then the first step in the book order that is not done (and not known from the level found)
-        $open = fn($x) => !$x['done'] && $x['status'] !== 'known' && ($x['pct'] === null || $x['pct'] < 80 || $x['stale']);
+        // the recommended step: strengthen the basics first, then the first open step at or above the level found
+        // (a step with a topic missed in the level test first), else the first open step in the book order.
+        // "Probably known" steps below the level are confirmed in the review part of the sessions, not one by one.
+        $open = fn($x) => !$x['done'] && $x['status'] !== 'likely';
         $current = null;
-        foreach ($steps as $x) if ($x['weak'] && $x['band_idx'] < $placedIdx && $open($x)) { $current = $x['id']; break; }
-        if ($current === null && $placedIdx >= 0) foreach ($steps as $x) if ($x['missed'] && $x['band_idx'] >= $placedIdx && $open($x)) { $current = $x['id']; break; }
-        if ($current === null) foreach ($steps as $x) if ($open($x)) { $current = $x['id']; break; }
+        foreach ($steps as $x) if ($x['status'] === 'strengthen') { $current = $x['id']; break; }
+        if ($current === null && $placedIdx >= 0) foreach ($steps as $x) if ($x['band_idx'] >= $placedIdx && $open($x) && array_intersect($x['topics'], array_keys($plWrong))) { $current = $x['id']; break; }
+        if ($current === null) foreach ($steps as $x) if ($x['band_idx'] >= max(0, $placedIdx) && $open($x)) { $current = $x['id']; break; }
+        if ($current === null) foreach ($steps as $x) if (!$x['done']) { $current = $x['id']; break; }
         foreach ($steps as &$x) unset($x['band_idx']);
         unset($x);
         return ['placed' => $placed, 'current' => $current, 'steps' => $steps,
-                'done' => count(array_filter($steps, fn($s) => $s['status'] === 'done' || $s['status'] === 'known')), 'total' => count($steps)];
+                'done' => count(array_filter($steps, fn($s) => $s['done'])), 'total' => count($steps)];
     }
 
     /**
@@ -236,7 +293,8 @@ final class Path
         $add = function ($topics, $lv) use (&$review, &$rLevels, $skills) {
             foreach ($topics as $t) if (!in_array($t, $skills, true) && !isset($review[$t]) && count($review) < 3) { $review[$t] = true; $rLevels = array_merge($rLevels, $lv); }
         };
-        foreach ($path['steps'] as $x) if ($x['weak'] && $x['below']) $add($x['topics'], $x['levels']);   // weak below the level
+        foreach ($path['steps'] as $x) if ($x['weak']) $add($x['topics'], $x['levels']);   // strengthen the basics
+        foreach ($path['steps'] as $x) if ($x['status'] === 'likely') $add($x['topics'], $x['levels']);   // probably known: confirm with a few tasks
         $solid = Mistakes::scan($uid)['solid'] ?? [];
         foreach ($solid as $sv) {   // fixed 2-7 days ago: check it is still right
             $age = (time() - strtotime($sv['day'])) / 86400;

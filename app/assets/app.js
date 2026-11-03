@@ -323,7 +323,8 @@
   function startPathStep(el, st) {
     el.disabled = true;
     track('path_step', st.id);
-    api('session/start', { mode: 'practice', skills: st.topics, levels: st.levels || [st.level], length: (st.below && !st.answers) ? 6 : 10, source: (st.below && !st.answers) ? 'path_check' : 'path' }).then(function (r) {
+    var check = st.status === 'likely';   // probably known: a 5-task quick check of check / use tasks
+    api('session/start', { mode: 'practice', skills: st.topics, levels: st.levels || [st.level], length: check ? 5 : 10, source: check ? 'path_check' : 'path' }).then(function (r) {
       state.sess = newSess(r.session, r.item); state.sess.pathStep = st.id;
       try { localStorage.setItem('ef_pathstep', JSON.stringify({ sid: r.session.id, step: st.id })); } catch (e) {}   // survives a reload in the middle
       location.hash = '#/session';
@@ -397,20 +398,18 @@
     function start(el, st) { startPathStep(el, st); }
     // accuracy as a colour: pink → orange → yellow → yellow-green → green (hue -15° … 140°); grey = not tried yet
     function hue(p) { return 'hsl(' + ((-15 + 1.55 * p + 360) % 360) + ' 62% 46%)'; }
+    // no numbers (teacher, 3 November): a word for the state and a green line for how far it is learned
+    var STATE = { mastered: 'Mastered ★', learned: 'Learned', known: 'Known ✓', refresh: 'Time to refresh', strengthen: 'Strengthen the basics',
+                  likely: 'Probably known: a quick check', work: 'In progress', 'new': 'New' };
     function node(st) {
-      var rec = st.id === path.current, has = st.pct !== null;
-      var col = has ? hue(st.pct) : null;
-      var sub = st.status === 'done' ? 'Mastered' : st.status === 'known' ? 'Known from your level test' : st.status === 'refresh' ? 'Time to refresh' : !has ? (st.below ? 'You may know it: a quick check' : 'Not tried yet')
-        : plural(st.answers, 'answer', 'answers');
-      var el = h('button', { type: 'button', class: 'pnode ' + st.status + (rec ? ' rec' : '') + (st.needs ? ' combo' : ''), onclick: function () { start(el, st); } },
-        h('span', { class: 'pdot', style: col ? 'border-color:' + col + ';' + (st.status === 'done' ? 'background:' + col + ';color:#fff' : 'color:' + col) : '', 'aria-hidden': 'true' },
-          (st.status === 'done' || st.status === 'refresh') ? icon('check') : (st.needs ? '⇄' : String(st.num))),
+      var rec = st.id === path.current, ok = ['mastered', 'learned', 'known', 'refresh'].indexOf(st.status) >= 0;
+      var el = h('button', { type: 'button', class: 'pnode ' + st.status + (rec ? ' rec' : ''), onclick: function () { start(el, st); } },
+        h('span', { class: 'pdot' + (ok ? ' ok' : ''), 'aria-hidden': 'true' }, ok ? icon('check') : ''),
         h('span', { class: 'pbody' },
           h('span', { class: 'ptext' }, rec ? h('span', { class: 'prec' }, '★ Recommended') : null, h('b', null, st.label),
-            h('small', null, st.level + ' · ' + sub + (st.best_after && st.best_after.length ? ' · best after ' + st.best_after.join(', ') : '')),
-            has ? h('span', { class: 'mini' }, h('i', { style: 'width:' + Math.max(4, st.pct) + '%;background:' + col })) : null),
-          h('span', { class: 'ppct', style: col ? 'color:' + col : '' }, has ? st.pct + '%' : ''),
-          rec ? h('span', { class: 'btn small' }, (st.below && !st.answers) ? 'Quick check' : 'Go', icon('arrow')) : null));
+            h('small', null, st.level + ' · ' + (STATE[st.status] || '')),
+            st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null),
+          rec ? h('span', { class: 'btn small' }, st.status === 'likely' ? 'Quick check' : 'Go', icon('arrow')) : null));
       return el;
     }
     var path = null;
@@ -420,7 +419,7 @@
       var show = all ? steps.map(function (s, i) { return [s, i]; })
         : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci - 1 && p[1] <= ci + 3); });
       card.replaceChildren(
-        h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, path.done + ' / ' + path.total + ' done')),
+        h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path')),
         h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0]); })),
         h('button', { type: 'button', class: 'btn ghost small', style: 'margin-top:6px', onclick: function () { all = !all; draw(); } }, all ? 'Show less' : 'All steps'));
     }

@@ -59,7 +59,7 @@ final class Engine
                     $from = array_search($path['current'], array_column($path['steps'], 'id'), true);
                     foreach (array_slice($path['steps'], (int) $from) as $x) {
                         if (count($pick) >= 2) break;
-                        if ($x['id'] !== $path['current'] && ($x['done'] || $x['status'] === 'known' || $x['level'] !== $path['steps'][$from]['level'])) continue;
+                        if ($x['id'] !== $path['current'] && ($x['done'] || $x['status'] === 'likely' || $x['level'] !== $path['steps'][$from]['level'])) continue;
                         $pick[] = $x; $lv = array_merge($lv, $x['levels']);
                     }
                     $skills = array_values(array_unique(array_merge(...array_map(fn($x) => $x['topics'], $pick))));
@@ -458,7 +458,8 @@ final class Engine
         $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
         foreach (Content::items() as $it) {
             if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
-            if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4 || Content::role($it) === 'learn')) continue;   // the level test asks only tasks that need the form (teacher, 3 November)   // practice only: easy first steps and tasks a hint gives away
+            if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4 || Content::role($it) === 'learn')) continue;
+            if (($ses['source'] ?? '') === 'path_check' && Content::role($it) === 'learn') continue;   // a quick check asks only tasks that need the form   // the level test asks only tasks that need the form (teacher, 3 November)   // practice only: easy first steps and tasks a hint gives away
             // open writing (the least support) only after a right typed answer on that topic in this session (teacher's scaffolding rule)
             if (!$placement && $it['kind'] === 'write' && empty($rightHere[$it['skill']])) continue;
             if (!empty($st['levels']) && !in_array($it['level'], $st['levels'], true)) continue;   // the levels the learner chose

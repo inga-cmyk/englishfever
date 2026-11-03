@@ -54,4 +54,8 @@ return [
 
     // Set true while testing locally (no HTTPS).
     'debug' => false,
+
+    // AI check of open writing answers (optional): an Anthropic API key. Empty = the app grades writing as before.
+    'ai_key'   => '',
+    'ai_model' => 'claude-haiku-5-5',
 ];

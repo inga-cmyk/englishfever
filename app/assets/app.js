@@ -1224,7 +1224,8 @@
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
       var why = lv ? res.why_lv : res.why;
       if (it.kind === 'write') {
-        fb.appendChild(h('p', { class: 'small' }, lv ? 'Šī pārbaude redz tikai vajadzīgo formu. Salīdzini savu atbildi ar piemēru.' : 'This only checks the form you need. Compare your answer with the model.'));
+        fb.appendChild(h('p', { class: 'small' }, res.ai_checked ? (lv ? 'Tavu teikumu pārbaudīja AI. Salīdzini ar piemēru.' : 'Your sentence was checked by AI. Compare it with the model.')
+          : (lv ? 'Šī pārbaude redz tikai vajadzīgo formu. Salīdzini savu atbildi ar piemēru.' : 'This only checks the form you need. Compare your answer with the model.')));
         fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Piemēra atbilde: ' : 'Model answer: '), res.show));
         fb.appendChild(h('p', null, UI.rich(why)));
       } else {

@@ -15,6 +15,8 @@ require __DIR__ . '/Path.php';
 require __DIR__ . '/Usage.php';
 require __DIR__ . '/CustomItems.php';
 require __DIR__ . '/Wp.php';
+require __DIR__ . '/AiGrader.php';
+if (is_file(__DIR__ . '/../vendor/autoload.php')) require __DIR__ . '/../vendor/autoload.php';   // the Anthropic SDK for AiGrader
 
 Config::load();
 date_default_timezone_set(Config::get('timezone', 'Europe/Riga'));

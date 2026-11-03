@@ -19,8 +19,13 @@ subprocess.run([sys.executable, os.path.join(APP, "tests", "bank_integrity_test.
 subprocess.run(["php", os.path.join(APP, "tests", "grader_test.php")], check=True, env=env)
 subprocess.run(["php", os.path.join(APP, "tests", "bank_update_test.php")], check=True, env=env)
 
-EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git"}
-EXCLUDE_FILES = {"config/config.php", "config/config.local.php", "sso-demo.php", "README.md", "content/items.json", "content/meta.json", "content/retired.json"}
+EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git", "examples", "fixtures", "scripts", ".github"}   # the last four: inside vendor/ (the Anthropic SDK), not needed on the server
+EXCLUDE_FILES = {"composer.json", "composer.lock", "config/config.php", "config/config.local.php", "sso-demo.php", "README.md", "content/items.json", "content/meta.json", "content/retired.json"}
+# the Anthropic SDK for the AI writing check: installed from composer.lock, not kept in git
+if not os.path.isfile(os.path.join(APP, "vendor", "autoload.php")):
+    subprocess.run(["composer", "install", "--no-dev", "--optimize-autoloader", "--no-interaction", "-d", APP], check=True)
+with open(os.path.join(APP, "vendor", ".htaccess"), "w") as fh:
+    fh.write("Require all denied\n")
 os.makedirs(DIST, exist_ok=True)
 out = os.path.join(DIST, "practice-app.zip")
 n = 0

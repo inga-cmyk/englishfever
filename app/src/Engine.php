@@ -160,6 +160,15 @@ final class Engine
         $answer = $skip ? '' : self::cleanAnswer($answer);   // Skip = "I don't know": counted as not known, no guessing, no XP (teacher, 27 October)
         $g = Grader::grade($item, $skip ? (in_array($item['kind'], ['gap', 'order', 'match'], true) ? [] : '') : $answer);
         $ok = $skip ? false : $g['correct'];
+        // open writing: the AI check adds what the pattern check cannot see (agreement, word order ...); without a key nothing changes
+        $ai = (!$skip && $item['kind'] === 'write') ? AiGrader::check($item, is_array($answer) ? (string) ($answer[0] ?? '') : (string) $answer) : null;
+        if ($ai && !$ai['correct'] && $g['correct']) {
+            $ok = false;
+            $g['correct'] = false;
+            $g['specific'] = AiGrader::line($ai, false);
+            $g['specific_lv'] = AiGrader::line($ai, true) ?: null;
+            $g['notes'] = [];
+        }
         if ($skip) { $g['specific'] = $g['specific_lv'] = $g['err'] = null; $g['notes'] = []; $g['near'] = false; }
         $skill = $item['skill'];
         $d = $item['d'];
@@ -205,6 +214,7 @@ final class Engine
             'for_item' => !empty($st['comeback']) ? (function () use ($st) { $q = $st['queue'][count($st['served']) - 1] ?? null; return $q === null ? null : ($st['queue_extra'][$q] ?? $q); })() : null,
             'err' => $errCodes ? implode(',', $errCodes) : null,
             'note' => ($ok && !empty($g['notes'])) ? mb_substr(implode(' ', $g['notes']), 0, 300) : null,
+            'ai' => $ai ? json_encode(['ok' => $ai['correct'], 'fixes' => $ai['fixes'], 'model' => $ai['model']], JSON_UNESCAPED_UNICODE) : null,
             'exposure' => $seen + 1, 'served_why' => $why, 'app_ver' => $ver ?: null, 'lang' => $lang === 'lv' ? 'lv' : 'en',
         ]);
         $row = Db::one('SELECT n, n_correct FROM skill_state WHERE user_id = ? AND skill = ?', [$uid, $skill]);
@@ -275,6 +285,7 @@ final class Engine
         if (!empty($item['why_lv'])) {
             $res['why_lv'] = $item['why_lv'];
             $res['specific_lv'] = $g['specific_lv'] ?? null;
+            if ($ai) $res['ai_checked'] = true;   // the answer was also read by the AI check
         }
         return [
             'result' => $res,

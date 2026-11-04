@@ -1,6 +1,6 @@
 # Learning drag tasks, set 2 (40)
 
-Option A: the eight topic-levels that had no drag task get five learning tasks each. Each uses the sentence of an existing check / use task of that topic-level (named below), as a word order (only natural orders) or a word bank (the right words and two that do not fit). All are *practice only*: practised, never counted as evidence. Not added yet.
+Option A: the eight topic-levels that had no drag task get five learning tasks each. Each uses the sentence of an existing check / use task of that topic-level (named below), as a word order (only natural orders) or a word bank (the right words and two that do not fit). All are *practice only*: practised, never counted as evidence. Approved by the teacher on 4 November.
 
 
 ## Auxiliary verbs: be, do, have (Are you…? Do you…? Have you…?) · A2.1

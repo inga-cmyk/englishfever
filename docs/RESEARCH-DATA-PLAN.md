@@ -78,3 +78,4 @@ so results before and after it are not mixed.
 - 4 Nov 2026: 9 more tasks for *Unreal time and preferences* (docs/task-drafts/unreal-time-1.csv), so the C1 topic has 12 check / use tasks and its path step can reach *Learned*.
 - 4 Nov 2026: twins batch 3 (33 tasks, docs/task-drafts/twins-3.csv) offered as prepared questions: the nine topic-levels left below 10 check / use tasks reach 10.
 - 4 Nov 2026: first **learning tasks** (docs/task-drafts/learn-drag-3.csv): 33 drag tasks with the same sentences as batch 3, marked *practice only* (`Content::role` = learn). They are served in practice sessions but never in the level test or the quick check and never counted for *Learned*. In analysis, answers to learn tasks are practice, not evidence (filter by `task_role`).
+- 4 Nov 2026: 40 more learning tasks (docs/task-drafts/learn-drag-4.csv), five drag tasks for each topic-level that had none; *practice only*, never evidence.

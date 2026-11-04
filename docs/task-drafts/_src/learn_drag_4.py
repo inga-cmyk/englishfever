@@ -1,7 +1,7 @@
 """Learning drag tasks, set 2 (teacher, 4 November, option A): the topic-levels that had no drag task at all get five each.
 Every task uses the sentence of an existing check / use task of that topic-level (named in the review), as a word order
 (only natural orders: both clause orders around if / despite) or a word bank (the right words and two that do not fit).
-All are *practice only* (learning tasks, never evidence). Saved to pending/ until the teacher has seen them."""
+All are *practice only* (learning tasks, never evidence). Approved by the teacher on 4 November."""
 import csv
 from pathlib import Path
 from lib import Topic, rows, save, learning_task
@@ -98,17 +98,17 @@ bank(RQ, "B2.1", "app/content/items.json · rq-B21-4a", "He asked me what time _
 order(RQ, "B2.1", "app/content/items.json · rq-B21-5a", "the customer asked how long the repair would take", REP)
 
 assert len(rows) == len(LINKS) == 40, len(rows)
-save("pending/learn-drag-4.csv")
+save("learn-drag-4.csv")   # approved by the teacher on 4 November
 
-out = list(csv.reader((ROOT / "docs/task-drafts/pending/learn-drag-4.csv").open(encoding="utf-8-sig")))[1:]
+out = list(csv.reader((ROOT / "docs/task-drafts/learn-drag-4.csv").open(encoding="utf-8-sig")))[1:]
 L = ["# Learning drag tasks, set 2 (40)", "",
      "Option A: the eight topic-levels that had no drag task get five learning tasks each. Each uses the sentence of an existing check / use task of that topic-level (named below), "
-     "as a word order (only natural orders) or a word bank (the right words and two that do not fit). All are *practice only*: practised, never counted as evidence. Not added yet.", ""]
+     "as a word order (only natural orders) or a word bank (the right words and two that do not fit). All are *practice only*: practised, never counted as evidence. Approved by the teacher on 4 November.", ""]
 cur = None
 for n, (r, src) in enumerate(zip(out, LINKS), 1):
     if (r[0], r[1]) != cur: cur = (r[0], r[1]); L += ["", f"## {r[0]} · {r[1]}", ""]
     extra = (" · " + r[5].replace("bank: ", "words: ").replace(" | ", " / ")) if r[5] else ""
     L += [f"{n}. *{r[2]}* · {r[3]} → **{r[4].replace(' | ', ' / ')}**{extra}" + ("" if r[11] == "yes" else " · NOT practice only!"),
           f"   - EN: {r[6]}", f"   - LV: {r[7]}", f"   - sentence from: {src}"]
-(ROOT / "docs/task-drafts/pending/learn-drag-4-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+(ROOT / "docs/task-drafts/learn-drag-4-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 print("40 learning tasks:", sum(1 for r in out if r[2] == "order"), "word orders,", sum(1 for r in out if r[2] == "gap"), "word banks; practice only:", sum(1 for r in out if r[11] == "yes"))

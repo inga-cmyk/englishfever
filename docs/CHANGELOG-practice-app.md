@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **40 more learning drag tasks:** five each for the topics that had no drag task (auxiliary verbs A2.1, present perfect / past simple B1.1, second and third conditionals, despite / so as to, polite questions, reported questions), with the sentences of existing tasks; *practice only*. After uploading: Prepared questions → Add all → Approve all.
 - **Twins batch 3 (33 tasks)** after ChatGPT's review and Claude's corrections: mixed conditionals B2.2 and C1.1, reported statements and questions, reporting verbs C1.2, *what to do / whoever*, *although / after that*, *the homeless*. All 9 topics reach 10 tasks that count.
 - **First learning drag tasks (33):** the same sentences as batch 3 as word orders and word banks, marked *practice only*: practised in learning mode, never counted as evidence. After uploading: Prepared questions → Add all → Approve all.
 - **Unreal time and preferences: 9 more tasks** (*It's about / high time* + past, *I'd rather / I'd sooner* + base form, *I'd rather you* + past). The topic now has 12 tasks and can reach *Learned*. After uploading: Prepared questions → Add all → Approve all.

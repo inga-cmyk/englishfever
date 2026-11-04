@@ -20,7 +20,7 @@ def check(where, text):
     if italics.lv_mark(text.replace("*", "")) != text: bad.append((where, "English words not marked as examples (run the drafts through lib.save)", text[:110]))
 
 for f in sorted(glob.glob(os.path.join(APP, "..", "docs", "task-drafts", "*.csv"))):
-    _it.LV_ASCII.clear(); _it.LV_ASCII.update(_BASE | (b1_topics.LV_WORDS if os.path.basename(f).startswith("b1-new") else set()))
+    _it.LV_ASCII.clear(); _it.LV_ASCII.update(_BASE | (b1_topics.LV_WORDS if os.path.basename(f).startswith("b1-new") else set()) | lib.LV_BY_FILE.get(os.path.basename(f), set()))
     for n, r in enumerate(list(csv.reader(open(f, encoding="utf-8-sig")))[1:], 2):
         if len(r[6].strip()) < 12: bad.append((os.path.basename(f) + ":" + str(n), "English explanation too short", r[6]))
         if r[7].strip(): check(os.path.basename(f) + ":" + str(n), r[7])

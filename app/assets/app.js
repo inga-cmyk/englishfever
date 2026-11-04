@@ -1068,17 +1068,25 @@
 
     function chosenLevels() { return FULL.filter(function (l) { return levels[l]; }); }
     function countAt(s) { return chosenLevels().reduce(function (n, l) { return n + ((SKC[s.id] || {})[l] || 0); }, 0); }
+    function countAll(s) { return FULL.reduce(function (n, l) { return n + ((SKC[s.id] || {})[l] || 0); }, 0); }
     function shortLabel(s) { return s.label.replace(/\s*[(:].*$/, ''); }
 
     var openMap = {};   // areas start closed, except the ones with chosen topics
     function group(area) {
-      var list = state.meta.skills.filter(function (s) { return (area.id === '_new' ? isNewTopic(s.id) : s.area === area.id) && countAt(s) > 0; });
+      // the New group shows new topics at every level (a C1 topic was hidden at the learner's B2; teacher, 4 November)
+      var list = state.meta.skills.filter(function (s) { return area.id === '_new' ? (isNewTopic(s.id) && countAll(s) > 0) : (s.area === area.id && countAt(s) > 0); });
       if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : (n > 0 || area.id === '_new') },
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
         h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': area.label }, list.map(function (s) {
-          var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () { selected[s.id] = inp.checked; redrawLater(); } });
+          var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () {
+            selected[s.id] = inp.checked;
+            if (inp.checked && countAt(s) === 0) {   // a new topic outside the chosen levels: choose its levels too
+              FULL.forEach(function (l) { if ((SKC[s.id] || {})[l]) levels[l] = true; });
+            }
+            redrawLater();
+          } });
           var rule = h('button', { type: 'button', class: 'ttile-rule', 'aria-label': 'Rule: ' + s.label, title: 'Rule', onclick: function (e) { e.preventDefault(); e.stopPropagation(); rulesModal(s.id); } }, '?');   // a quick look at the rule before practising
           return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
         })));

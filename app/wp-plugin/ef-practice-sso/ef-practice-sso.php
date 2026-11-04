@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.8.3
+ * Version:     1.8.4
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -27,7 +27,7 @@
  * Signing in works the same way: "Sign in" in the app goes through ?ef_practice=go, which leaves the same marker before it
  * sends a visitor to the login form, so a login form that ignores redirect_to (Tutor's often ends on its dashboard) still
  * ends in the app.
- * Since 1.8.3 this also works for teachers and administrators, and the Tutor dashboard menu has a "Grammar practice" item that opens the app.
+ * Since 1.8.3 this also works for teachers and administrators, and the Tutor dashboard menu has a "Grammar practice" item (the last one, with a line icon) that opens the app.
  * Switch the automatic return off with  define( 'EF_PRACTICE_AUTO_RETURN', false );  to always show the bar.
  *
  * The WordPress login page itself (wp-login.php) is shown in the app's colours when someone arrives from the app (not for other
@@ -322,22 +322,25 @@ add_filter( 'tutor_dashboard/nav_items', function ( $items ) {
 	if ( ! ef_practice_configured() || ! is_array( $items ) ) {
 		return $items;
 	}
-	$item = array(
+	// 1.8.4: the last item of the menu (under Audio Recordings), with a plain line icon like My activity (teacher, 4 November)
+	$items['ef-practice'] = array(
 		'title' => __( 'Grammar practice', 'ef-practice' ),
-		'icon'  => 'tutor-icon-book-open',
+		'icon'  => 'ef-practice-icon',
 		'url'   => add_query_arg( 'ef_practice', 'open', home_url( '/' ) ),   // signed in at once, straight into the app
 	);
-	$out = array();
-	foreach ( $items as $key => $value ) {   // right after the dashboard itself, near the top
-		$out[ $key ] = $value;
-		if ( 'index' === $key ) {
-			$out['ef-practice'] = $item;
-		}
+	return $items;
+}, PHP_INT_MAX );   // after the items other plugins add
+
+/* The icon: "A" with a tick, one colour (the text colour of the menu), drawn with a CSS mask so it needs no icon font. */
+add_action( 'wp_head', function () {
+	if ( ! is_user_logged_in() || ! ef_practice_configured() ) {
+		return;
 	}
-	if ( ! isset( $out['ef-practice'] ) ) {
-		$out = array( 'ef-practice' => $item ) + $out;
-	}
-	return $out;
+	$svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 16 6-12 6 12'/><path d='M8 12h8'/><path d='m16 20 2 2 4-4'/></svg>";
+	$url = 'data:image/svg+xml,' . rawurlencode( $svg );
+	echo '<style id="ef-practice-icon">.ef-practice-icon{display:inline-block;width:1.25em;height:1.25em;vertical-align:-0.2em;background-color:currentColor;'
+		. '-webkit-mask:url("' . esc_attr( $url ) . '") center/contain no-repeat;mask:url("' . esc_attr( $url ) . '") center/contain no-repeat;}'
+		. '.ef-practice-icon::before{content:none!important;}</style>' . "\n";
 } );
 
 /* A Tutor version that ignores the 'url' above opens /dashboard/ef-practice/: send that page into the app as well. */

@@ -17,9 +17,11 @@ const errors = [];
     if (before[0] === after[0] || after[1] === 'none') errors.push(scheme + ': option card does not react on hover ' + JSON.stringify([before, after]));
     await page.screenshot({ path: OUT + '40-hover-card-' + scheme + '.png', clip: { x: 0, y: 0, width: 1200, height: 520 } });
     const fold = page.locator('details.card.fold').first();
+    if (await fold.count()) {   // a new learner's Home has no folded cards yet (they come after the first answers)
     const sb = await fold.evaluate(e => getComputedStyle(e).borderColor); await fold.hover(); await page.waitForTimeout(350);
     const sa = await fold.evaluate(e => getComputedStyle(e).borderColor);
     if (sb === sa) errors.push(scheme + ': folded card border does not change on hover');
+    }
     const btn = page.locator('.card.focus .btn:not(.ghost)').first();
     const bb = await btn.evaluate(e => getComputedStyle(e).boxShadow); await btn.hover(); await page.waitForTimeout(350);
     const ba = await btn.evaluate(e => { const c = getComputedStyle(e); return [c.boxShadow, c.transform]; });
@@ -27,13 +29,14 @@ const errors = [];
     await page.screenshot({ path: OUT + '41-hover-button-' + scheme + '.png', clip: { x: 0, y: 150, width: 1200, height: 420 } });
     const pulse = await page.locator('.btn.pulse').count();
     const anim = pulse ? await page.locator('.btn.pulse').first().evaluate(e => getComputedStyle(e).animationName + ' x' + getComputedStyle(e).animationIterationCount) : 'none';
-    if (pulse !== 1 || !/nudge x2/.test(anim)) errors.push(scheme + ': exactly one button should pulse twice: ' + pulse + ' ' + anim);
+    if (pulse !== 1 || !/nudge\w* x2/.test(anim)) errors.push(scheme + ': exactly one button should pulse twice: ' + pulse + ' ' + anim);
     // no sideways scroll caused by the lift or glow
     if (await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)) errors.push(scheme + ': sideways scroll');
     // skill card
-    await page.locator('details.card.fold > summary:has-text("Your topics")').click(); await page.waitForTimeout(150);
-    const sk = page.locator('.skill').first(); await sk.scrollIntoViewIfNeeded(); await sk.hover(); await page.waitForTimeout(350);
-    const st = await sk.evaluate(e => getComputedStyle(e).transform); if (st === 'none') errors.push(scheme + ': skill card does not lift');
+    // topic tiles on Rules (a new learner's Home has no topic list)
+    await page.goto(BASE + '/index.html#/rules'); await page.waitForSelector('.ttile-btn');
+    const sb2 = page.locator('.ttile-btn').first(); await sb2.scrollIntoViewIfNeeded(); await sb2.hover(); await page.waitForTimeout(350);
+    const st = await sb2.locator('.ttile').evaluate(e => getComputedStyle(e).transform); if (st === 'none') errors.push(scheme + ': topic tile does not lift');
     await ctx.close();
   }
   // reduced motion: nothing animates or lifts

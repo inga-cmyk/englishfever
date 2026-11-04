@@ -23,13 +23,20 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
   META.skills = (await (await p.request.get(BASE + '/api.php?r=meta')).json()).skills;
   // ── Home topics, new learner (level unknown: A2.1)
   const hiddenExpected = META.skills.filter(s => idx(s.levels[0]) > 0 + 2).length;
+  { // Home shows the topics once the learner has answered something: one answer in another topic
+    let c0 = await post('session/start', { mode: 'practice', skills: ['past_simple'], level: 'A2.1', length: 10 });
+    const it = ITEMS[c0.item.id]; const ans = it.kind === 'mcq' ? it.correct : (it.kind === 'gap' ? it.answers.map(a => a[0]) : (it.kind === 'order' ? it.sentence.split(' ') : (it.kind === 'match' ? it.pairs.map(x => x[1]) : it.answers[0][0])));
+    await post('session/answer', { session_id: c0.session.id, item_id: c0.item.id, answer: ans, time_ms: 2000 });
+    await post('session/quit', { session_id: c0.session.id });
+    await p.reload(); await p.waitForSelector('.hello h1');
+  }
   await p.locator('details.card.fold > summary:has-text("Your topics")').click(); await p.waitForTimeout(150);   // Home keeps the topics folded
   const folds = () => p.locator('details.area-fold');
   check('areas are fold-away sections; only the first is open for a new learner', (await folds().count()) === 5 || (await folds().count()) >= 3, await folds().count());
   const openNames = await p.locator('details.area-fold[open] > summary .h3').allInnerTexts();
   check('first area open, the others folded', openNames.length === 1 && /Active/.test(openNames[0]), openNames);
   const sum0 = await p.locator('details.area-fold > summary').first().innerText();
-  check('each area says how many topics are started', /0 of \d+ started/.test(sum0), sum0);
+  check('each area says how many topics are started', /\d+ of \d+ started/.test(sum0), sum0);
   const shown = await p.locator('.skill').count();
   check('topics far above A2 are not listed; the link says how many wait', (await p.locator('button:has-text("Show topics for higher levels")').innerText()).includes('(' + hiddenExpected + ')') && shown === META.skills.length - hiddenExpected, [hiddenExpected, shown]);
   await p.locator('button:has-text("Show topics for higher levels")').click(); await p.waitForTimeout(100);
@@ -65,7 +72,7 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
   check('the picker has no "higher levels" link: the level buttons do that job', (await p.locator('button:has-text("Show topics for higher levels")').count()) === 0 && (await p.locator('.lvseg input:checked').count()) === 1);
 
   // ── sound: off by default, on by choice
-  await p.goto(BASE + '/index.html#/profile'); await p.waitForSelector('#snd');
+  await p.goto(BASE + '/index.html#/profile'); await p.waitForSelector('#snd', { state: 'attached' });
   check('Profile has a Sounds card and it is OFF by default', (await p.locator('#snd').isChecked()) === false);
   await post('session/start', { mode: 'practice', skills: ['present_simple'], level: 'A2.1', length: 10 });
   await p.goto(BASE + '/index.html#/session'); await p.reload(); await p.waitForSelector('.task .q');
@@ -98,11 +105,11 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
   await p.evaluate(() => { window.__notes = 0; });
   await p.click('.sess-top .linkbtn:has-text("Previous")'); await p.waitForSelector('.feedback'); await p.waitForTimeout(100);
   check('looking back at a task plays nothing', (await p.evaluate(() => window.__notes)) === 0);
-  await p.goto(BASE + '/index.html#/profile'); await p.waitForSelector('#snd');
+  await p.goto(BASE + '/index.html#/profile'); await p.waitForSelector('#snd', { state: 'attached' });
   check('Profile shows the same choice (on) and can switch it off', (await p.locator('#snd').isChecked()) === true);
-  await p.locator('#snd').uncheck();
+  await p.locator('label.switch').click();
   check('switched off again and remembered', (await p.evaluate(() => localStorage.getItem('ef_sound'))) === '0');
-  await p.reload(); await p.waitForSelector('#snd');
+  await p.reload(); await p.waitForSelector('#snd', { state: 'attached' });
   check('after a reload it is still off', (await p.locator('#snd').isChecked()) === false);
 
   check('no page errors', errs.length === 0, errs);

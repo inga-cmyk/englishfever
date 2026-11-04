@@ -1,3 +1,5 @@
+**Handing over to another agent, or checking its work: see `docs/AGENT-HANDOVER.md`.**
+
 # Handover for the next session (2 November 2026)
 
 Read this first, then `docs/ITEM-WRITING-RULES.md`, `docs/LEVEL-LISTS-test-english.md`, `docs/RESEARCH-DATA-PLAN.md`

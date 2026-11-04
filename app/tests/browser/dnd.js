@@ -70,7 +70,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     for (const t of [...toks2].reverse()) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(t) + '$') }).first().click();
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
     const txt = await p.locator('.feedback').innerText();
-    check('a wrong order is marked wrong and shows the correct sentence', (await p.locator('.feedback.bad').count()) === 1 && /Correct answer/.test(txt) && (await p.locator('.dnd-line.bad').count()) === 1, txt.slice(0, 120));
+    check('a wrong order is marked wrong and shows the correct sentence', (await p.locator('.feedback.bad').count()) === 1 && /Correct answer|Correct:/.test(txt) && (await p.locator(".feedback .compare mark.ins").count()) > 0 && (await p.locator('.dnd-line.bad').count()) === 1, txt.slice(0, 120));
     // "Which sentence is NOT correct?": the answer is the faulty sentence, so it is not called "Correct answer" (Cowork issue 18)
     await p.click('.feedback .btn');
     const NOTQ = ['Which sentence is NOT correct?', 'Which sentence has a mistake?'];

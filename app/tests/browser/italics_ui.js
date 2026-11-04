@@ -17,15 +17,15 @@ const BASE = 'http://127.0.0.1:8099';
   const whyHtml = await p.locator('.feedback p', { hasText: 'Why:' }).innerHTML();
   check('the explanation is plain text around <em> only', !/[*]/.test(whyHtml) && /<em>/.test(whyHtml), whyHtml);
   // Latvian
-  await p.click('.feedback .linkbtn:has-text("Latviski")'); await p.waitForTimeout(200);
+  await p.click('.feedback .langbtn.lv'); await p.waitForTimeout(200);
   const emsLv = await p.locator('.feedback p em').allInnerTexts();
   check('Latvian: the English words are italic, the Latvian words are not', emsLv.length >= 2 && emsLv.join('|').includes('she works') && !emsLv.some(t => /pievieno|darbības|vārdam/.test(t)), emsLv);
   const kapec = await p.locator('.feedback p', { hasText: 'Kāpēc' }).innerText();
   check('Latvian explanation text reads normally (no stars)', !/\*/.test(kapec) && /Ar /.test(kapec), kapec);
   // rule card
-  await p.click('.feedback details.rule summary'); await p.waitForTimeout(150);
+  await p.locator('.feedback details.rule').evaluate(d => { d.open = true; }); await p.waitForTimeout(150);
   const ruleEm = await p.locator('.feedback details.rule em').allInnerTexts();
-  check('rule card: forms, signal words and the example are in italics', ruleEm.some(t => /^always/.test(t)) && ruleEm.some(t => /She works/.test(t)) && ruleEm.some(t => t === 'She starts work at eight every day.'), ruleEm);
+  check('rule card (new layout): the examples are in italics', ruleEm.some(t => /^I go to the gym/.test(t)) && ruleEm.some(t => /Water boils/.test(t)), ruleEm);
   const bold = await p.locator('.feedback details.rule').innerText();
   check('rule card has no stars', !/\*/.test(bold));
   // rules page

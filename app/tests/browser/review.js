@@ -93,8 +93,8 @@ const BASE = 'http://127.0.0.1:8099';
 
   // language toggle inside a looked-at task still works
   await p.click('.sess-top .linkbtn:has-text("Previous")'); await p.waitForSelector('.feedback');
-  const toggle = p.locator('.feedback .linkbtn:has-text("Latviski")');
-  if (await toggle.count()) { await toggle.click(); await p.waitForTimeout(200); check('Latvian toggle works while looking back', (await p.locator('.feedback').innerText()).match(/Kāpēc|Pareizā|Padoms|Tu /) !== null); await p.locator('.feedback .linkbtn:has-text("English")').click(); }
+  const toggle = p.locator('.feedback .langbtn.lv');
+  if (await toggle.count()) { await toggle.click(); await p.waitForTimeout(200); check('Latvian toggle works while looking back', (await p.locator('.feedback').innerText()).match(/Kāpēc|Pareizā|Padoms|Tu /) !== null); await p.locator('.feedback .langbtn.en').click(); }
 
   // finishing the session clears the stored history
   for (let i = 0; i < 4; i++) { await p.click('.sess-top .linkbtn:has-text("Stop")').catch(() => {}); break; }

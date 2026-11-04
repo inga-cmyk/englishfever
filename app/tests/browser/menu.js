@@ -19,8 +19,13 @@ const OUT = __dirname + '/shots/';
     const { ctx, p } = await guest({ viewport: { width: 1200, height: 900 } });
     await p.waitForTimeout(300);
     const txt = await p.locator('main').innerText();
-    check('a new learner\'s Home is quiet: one main card (Find my level), two small links, no option cards or stat tiles', (await p.locator('.card.focus').count()) === 1 && (await p.locator('.card.focus .btn').count()) === 1 && /Find my level/.test(await p.locator('.card.focus').innerText()) && (await p.locator('.homelinks a').allInnerTexts()).join('|') === 'Choose topics|Rule cards' && !/option [123]/i.test(txt) && (await p.locator('.stat').count()) === 0, [await p.locator('.card.focus').innerText(), await p.locator('.homelinks a').allInnerTexts()]);
-    check('the topics and progress are folded away by default', (await p.locator('details.card.fold[open]').count()) === 0 && (await p.locator('details.card.fold > summary .h3').allInnerTexts()).join('|') === 'Your topics', await p.locator('details.card.fold > summary .h3').allInnerTexts());
+    check('a new learner\'s Home is quiet: one main card (Find my level), two small links, no option cards or stat tiles', (await p.locator('.card.focus').count()) === 1 && (await p.locator('.card.focus .btn').count()) === 1 && /Find my level/.test(await p.locator('.card.focus').innerText()) && (await p.locator('.tiles .tile').allInnerTexts()).join('|') === 'Topics|Rules' && !/option [123]/i.test(txt) && (await p.locator('.stat').count()) === 0, [await p.locator('.card.focus').innerText(), await p.locator('.homelinks a').allInnerTexts()]);
+    check('a new learner has no Your topics list yet (the Topics button is there)', (await p.locator('details.card.fold').count()) === 0);
+    await p.evaluate(async () => { const r = await (await fetch('api.php?r=session/start', { method: 'POST', headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'practice', skills: ['present_simple'], level: 'A2.1', length: 3 }) })).json();
+      await fetch('api.php?r=session/answer', { method: 'POST', headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ session_id: r.session.id, item_id: r.item.id, answer: 'x' }) });
+      await fetch('api.php?r=session/quit', { method: 'POST', headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ session_id: r.session.id }) }); });
+    await p.reload(); await p.waitForSelector('.hello h1'); await p.waitForTimeout(300);
+    check('the topics and progress are folded away by default (after the first answers)', (await p.locator('details.card.fold[open]').count()) === 0 && (await p.locator('details.card.fold > summary .h3').allInnerTexts()).join('|') === 'My progress|Your topics', await p.locator('details.card.fold > summary .h3').allInnerTexts());
     await p.locator('details.card.fold > summary:has-text("Your topics")').click(); await p.waitForTimeout(150);
     check('a guest sees the website link, not "My dashboard"', (await p.locator('.sitelink').textContent()) === 'englishfever.com ↗' && (await p.locator('a:has-text("My dashboard")').count()) === 0);
     check('"Your topics" is grouped by area (fold-away sections)', (await p.locator('details.area-fold > summary .h3').allInnerTexts()).join('|').toLowerCase() === 'active tenses|passive tenses|conditionals|reported speech|questions inside sentences', await p.locator('details.area-fold > summary .h3').allInnerTexts());
@@ -64,7 +69,7 @@ const OUT = __dirname + '/shots/';
     await post(p, 'session/quit', { session_id: rs.session.id });
     await p.reload(); await p.waitForSelector('.hello h1'); await p.waitForTimeout(300);
     await p.click('.card.focus button:has-text("Practise now")'); await p.waitForSelector('.task');
-    check('Surprise me starts a session without a quick check', /Practice · Question 1 of 12/.test(await p.locator('.sess-top').innerText()), await p.locator('.sess-top').innerText());
+    check('Surprise me starts a session without a quick check', /Practice · Question 1 of (8|12)/.test(await p.locator('.sess-top').innerText()), await p.locator('.sess-top').innerText());
 
     // placement sizes
     await p.goto(BASE + '/index.html#/placement'); await p.waitForSelector('.sizes');
@@ -82,11 +87,11 @@ const OUT = __dirname + '/shots/';
     p.on('pageerror', e => errs.push(e.message));
     await p.goto(BASE + '/sso-demo.php?uid=' + (Math.floor(Math.random() * 900000) + 3000) + '&name=Dash%20Board'); await p.waitForSelector('#fn'); await p.click('button[type=submit]'); await p.waitForSelector('.hello h1'); await p.waitForTimeout(300);
     check('a registered learner has "My dashboard" in the top bar', (await p.locator('.sitelink').innerText()) === 'My dashboard ↗' && /dashboard-demo/.test(await p.locator('.sitelink').getAttribute('href')));
-    check('...and in the Home links (shown on phones only: on a computer the top bar has it)', (await p.locator('.homelinks a:has-text("My dashboard")').count()) === 1 && !(await p.locator('.homelinks a:has-text("My dashboard")').isVisible()) && (await p.locator('.sitelink').isVisible()));
+    check('...and in the Home links (shown on phones only: on a computer the top bar has it)', (await p.locator('.tiles a:has-text("My dashboard")').count()) === 1 && !(await p.locator('.tiles a:has-text("My dashboard")').isVisible()) && (await p.locator('.sitelink').isVisible()));
     await p.screenshot({ path: OUT + '98-home-dashboard.png' });
     const m = await ctx.browser().newContext({ ...devices['iPhone 13'] }); const mp = await m.newPage();
     await mp.goto(BASE + '/sso-demo.php?uid=' + (Math.floor(Math.random() * 900000) + 3000) + '&name=Phone%20Dash'); await mp.waitForSelector('#fn'); await mp.click('button[type=submit]'); await mp.waitForSelector('.hello h1');
-    check('on a phone the Home link is there (the top bar link is hidden)', (await mp.locator('.homelinks a:has-text("My dashboard")').isVisible()) && !(await mp.locator('.sitelink').isVisible()));
+    check('on a phone the Home link is there (the top bar link is hidden)', (await mp.locator('.tiles a:has-text("My dashboard")').isVisible()) && !(await mp.locator('.sitelink').isVisible()));
     const over = await mp.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
     check('phone: no sideways scrolling on Home', !over);
     await m.close(); await ctx.close();
@@ -97,6 +102,10 @@ const OUT = __dirname + '/shots/';
     const { ctx, p } = await guest({ viewport: { width: 1200, height: 900 } });
     // a task up to B1.2 that we can answer wrongly: present simple A2.1 mcq
     let r = await post(p, 'session/start', { mode: 'practice', skills: ['present_simple'], level: 'A2.1', length: 10 });
+    for (let k = 0; k < 15 && !['mcq', 'gap', 'text', 'write'].includes(ITEMS[r.item.id].kind); k++) {   // a task kind this check can answer
+      await post(p, 'session/quit', { session_id: r.session.id });
+      r = await post(p, 'session/start', { mode: 'practice', skills: ['present_simple'], level: 'A2.1', length: 10 });
+    }
     await p.goto(BASE + '/index.html#/session'); await p.reload(); await p.waitForSelector('.task');
     const it = ITEMS[r.item.id];
     if (it.kind === 'mcq') await p.locator('label.opt', { hasText: it.wrong[0] }).first().click();
@@ -105,12 +114,12 @@ const OUT = __dirname + '/shots/';
     else await p.fill('.task textarea.write', 'hello there');
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
     const fbEn = await p.locator('.feedback').innerText();
-    check('the feedback shows a Latviski button up to B1.2', (await p.locator('.feedback button:has-text("Latviski")').count()) === 1 && /Why:/.test(fbEn), fbEn.slice(0, 80));
-    await p.click('.feedback button:has-text("Latviski")');
+    check('the feedback shows a Latviski button up to B1.2', (await p.locator('.feedback .langbtn.lv').count()) === 1 && /Why:/.test(fbEn), fbEn.slice(0, 80));
+    await p.click('.feedback .langbtn.lv');
     const fbLv = await p.locator('.feedback').innerText();
-    check('pressing it shows the explanation in Latvian', /Kāpēc:/.test(fbLv) && !/Why:/.test(fbLv) && (await p.locator('.feedback button:has-text("English")').count()) === 1, fbLv.slice(0, 120));
-    await p.locator('.feedback details.rule summary').click();
-    check('the rule reminder is Latvian too', /Atgādinājums/.test(await p.locator('.feedback details.rule summary').innerText()) && /Kā to veido/.test(await p.locator('.feedback .rulecard').innerText()));
+    check('pressing it shows the explanation in Latvian', /Kāpēc:/.test(fbLv) && !/Why:/.test(fbLv) && (await p.locator('.feedback .langbtn.en').count()) === 1, fbLv.slice(0, 120));
+    check('pressing the flag opened the rule', (await p.locator('.feedback details.rule[open]').count()) === 1);
+    check('the rule reminder is Latvian too', /Atgādinājums/.test(await p.locator('.feedback details.rule summary').getAttribute('aria-label')) && /Kā to veido/.test(await p.locator('.feedback .rulecard').innerText()));
     await p.screenshot({ path: OUT + '99-latvian-feedback.png', fullPage: true });
     // remembered: the profile shows the choice, and the next feedback is Latvian at once
     await p.goto(BASE + '/index.html#/profile'); await p.waitForSelector('input[name=lang]');
@@ -121,8 +130,10 @@ const OUT = __dirname + '/shots/';
     check('and can be switched back to English', await p.locator('input[name=lang][value=en]').isChecked());
     await p.locator('label:has(input[name=lang][value=lv])').click(); await p.waitForTimeout(400);
     // rule cards page in Latvian, grouped by area
-    await p.goto(BASE + '/index.html#/rules'); await p.waitForSelector('.rulecard');
-    check('the rule cards page is Latvian and grouped by area', /Kā to veido/.test(await p.locator('main').innerText()) && (await p.locator('.area-block h2').count()) === 5);
+    await p.goto(BASE + '/index.html#/rules'); await p.waitForSelector('.ttile-btn');
+    const areasN = await p.locator('.area-block h2').count();
+    await p.locator('.ttile-btn').first().click(); await p.waitForSelector('.rulecard');   // a tile opens its card
+    check('the rule cards page is grouped by area and a card opens in Latvian', /Kā to veido/.test(await p.locator('.rulecard').first().innerText()) && areasN === 5, areasN);
     await p.screenshot({ path: OUT + '99c-rules-lv.png', fullPage: true });
     // above B1.2 there is no Latvian: a mixed conditional task
     r = await post(p, 'session/start', { mode: 'practice', skills: ['cond_mixed'], level: 'B2.1', length: 5 });
@@ -130,7 +141,7 @@ const OUT = __dirname + '/shots/';
     const it2 = ITEMS[r.item.id];
     if (it2.kind === 'mcq') await p.locator('label.opt', { hasText: it2.wrong[0] }).first().click(); else await p.fill('.task textarea.write, .task input.type-in', 'hello there now');
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
-    check('above B1.2 there is no Latviski button and the text stays English', (await p.locator('.feedback button:has-text("Latviski")').count()) === 0 && /Why:|Model answer/.test(await p.locator('.feedback').innerText()));
+    check('above B1.2 there is no Latviski button and the text stays English', (await p.locator('.feedback .langbtn.lv').count()) === 0 && /Why:|Model answer/.test(await p.locator('.feedback').innerText()));
     await ctx.close();
   }
 

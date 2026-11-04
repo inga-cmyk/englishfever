@@ -9,6 +9,8 @@ async function practise(pg) {
   const it = ITEMS[cur.item.id]; const ans = it.kind === 'mcq' ? it.correct : (it.kind === 'gap' ? it.answers.map(a => a[0]) : (it.answers ? it.answers[0][0] : 'x'));
   cur = await post('session/answer', { session_id: cur.session.id, item_id: cur.item.id, answer: ans, time_ms: 2000 });
   await post('session/quit', { session_id: cur.session.id });
+  // the install card shows from the third day of use: pretend two earlier visit days
+  await pg.evaluate(() => { const d = n => new Date(Date.now() - n * 86400000).toDateString(); localStorage.setItem('ef_visit_days', JSON.stringify([d(2), d(1)])); });
   await pg.evaluate(() => { location.hash = '#/rules'; }); await pg.waitForTimeout(200);
   await pg.evaluate(() => { location.hash = '#/home'; }); await pg.waitForSelector('.card.focus h2:has-text("Ready to practise")');
 }

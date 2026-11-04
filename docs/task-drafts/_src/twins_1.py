@@ -36,7 +36,7 @@ CM.text("A2.1", "Correct the mistake: My sister is more young than me.", ["My si
 CM.mcq("B1.1", "Choose the correct option: My phone is the same ___ yours.", "as", ["like", "than"], why=("*the same as*.", "*the same as*."))
 CM.mcq("B1.1", "Choose the correct option: This film is not as good ___ the book.", "as", ["than", "like"], why=("*not as ... as*.", "*not as ... as*."))
 CM.gap("B1.1", "The weather is getting ___ and ___. (cold)", "colder / colder", why=("A change: comparative + *and* + comparative.", "Pārmaiņas: pārākā pakāpe + *and* + pārākā pakāpe."))
-CM.gap("B1.1", "Flights cost more every year. They are getting ___ and ___ expensive. Write one word in each gap.", "more / more", why=("A long adjective: *more and more expensive*.", "Garš īpašības vārds: *more and more expensive*."))
+CM.gap("B1.1", "Write one word in each gap: Flights cost more every year. They are getting ___ and ___ expensive.", "more / more", why=("A long adjective: *more and more expensive*.", "Garš īpašības vārds: *more and more expensive*."))
 CM.text("B1.1", "Correct the mistake: This course is more easier than the last one.", "This course is easier than the last one.",
         why=("*-er* or *more*, never both.", "Vai nu *-er*, vai *more*, ne abi kopā."))
 CM.text("B1.1", "Correct the mistake: My new job is more better than my old one.", "My new job is better than my old one.",

@@ -65,7 +65,7 @@ Not added yet. Changed after your review: the ten tasks you listed; C1.1 and C1.
 18. *gap* · The weather is getting ___ and ___. (cold) → **colder / colder**
    - EN: A change: comparative + *and* + comparative.
    - LV: Pārmaiņas: pārākā pakāpe + *and* + pārākā pakāpe.
-19. *gap* · Complete the comparison with one word: Flights cost more every year. They are getting ___ and ___ expensive. Write one word in each gap. → **more / more**
+19. *gap* · Write one word in each gap: Flights cost more every year. They are getting ___ and ___ expensive. → **more / more**
    - EN: A long adjective: *more and more expensive*.
    - LV: Garš īpašības vārds: *more and more expensive*.
 20. *text* · Correct the mistake: This course is more easier than the last one. → **This course is easier than the last one.**

@@ -51,7 +51,7 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. Where the work stands, and what is open
 
-**Done and published (latest zip 2026-11-04 08:52):** twins batches 1–3 (76 + 50 + 33 tasks; every topic-level with fewer than
+**Latest zip 2026-11-04 23:02 (rule cards: all 58 now in the new layout; `app/authoring/cards2_h.py` holds the last 12, and four C1 cards got a Latvian version; Inga uploads it).** **Done and published (zip 2026-11-04 08:52):** twins batches 1–3 (76 + 50 + 33 tasks; every topic-level with fewer than
 10 check / use tasks now has 10, except C1 topics whose two levels together already have 10 or more); the C1 topic
 *Unreal time and preferences* (12 tasks, rule card, path step); learning drag tasks `learn-drag-3.csv` (33) and `learn-drag-4.csv`
 (40): every topic-level has at least one drag task. Each batch has a `*-review.md` next to its CSV and a generator in `_src/`.
@@ -68,8 +68,10 @@ tasks (`learning_task()` marks them *practice only*).
 5. Inga's review lists still open: `docs/task-drafts/task-roles-review.md` (236 learn tasks) and `docs/task-drafts/write-tasks-rewrite-review.md` (40 writing tasks).
 6. My learning path: the empty circles of steps not started. Proposal waiting for her choice: D = a green ring for progress, a grey ✓ for "probably known", a green ✓ / ★ when learned / mastered.
 7. The optional AI check of writing (`AiGrader.php`, model `claude-haiku-5-5`): a dry run with `tools/ai_dryrun.php` needs `ANTHROPIC_API_KEY` set by Inga in the cloud environment settings and an answers export from her.
-8. Later (only when she asks): A2.2 tasks for past perfect, might, second conditional, reported speech, relative clauses; about 50 topics from the test-english.com lists not yet in the app (`docs/LEVEL-LISTS-test-english.md`); 11 rule cards still in the old format; a held-out set of level-test tasks for the pre / post test; the language experiment.
+8. Later (only when she asks): A2.2 tasks for past perfect, might, second conditional, reported speech, relative clauses; about 50 topics from the test-english.com lists not yet in the app (`docs/LEVEL-LISTS-test-english.md`); a held-out set of level-test tasks for the pre / post test; the language experiment.
 9. WordPress plugin 1.8.5 (Grammar practice in the Tutor menu with Tutor's `edit-2` icon): Inga uploads it and checks that the icon shows; change the icon name in `ef-practice-sso.php` if she prefers another (`book`, `lesson`, `feather`, `font`).
+
+**Rule cards:** every card is in `app/authoring/cards2_*.py` (one style: a form table, exactly three typical mistakes, two or three "When we use it" blocks, one to three "Watch out" points, EN and LV in the same structure). A new topic's card follows `cards2_h.py`. Show EN and LV phone screenshots to Inga before packaging.
 
 **How a batch of tasks is made and approved:**
 1. Write the generator in `docs/task-drafts/_src/`, ending with `save("pending/<name>.csv")` and a review file `pending/<name>-review.md` (task, answer, wrong options or words, EN and LV explanation, the source task).

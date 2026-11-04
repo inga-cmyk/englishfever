@@ -202,6 +202,10 @@ for sid, r in lv_data.LV_RULES.items():
             if "watch" in cards2.CARDS2[sid]["lv"]: LV_RULES_MARKED[sid]["watch"] = LV_RULES_MARKED[sid]["v2"]["watch"]
     finally:
         italics.LV_ASCII.clear(); italics.LV_ASCII.update(_saved)
+for sid in cards2.CARDS2:   # a card with only the new layout in Latvian (the four C1 cards had no Latvian card before; teacher, 4 November)
+    if sid not in LV_RULES_MARKED and "lv" in cards2.CARDS2[sid]:
+        LV_RULES_MARKED[sid] = {"v2": cards2.marked(sid, cards2.CARDS2[sid]["lv"])}
+        if "watch" in cards2.CARDS2[sid]["lv"]: LV_RULES_MARKED[sid]["watch"] = LV_RULES_MARKED[sid]["v2"]["watch"]
 for key, line in EN_INDEX.items():
     if key not in en_used:
         errors.append("italics_en.py: this line matches no explanation text: " + line)

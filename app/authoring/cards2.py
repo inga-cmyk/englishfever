@@ -170,3 +170,5 @@ def marked(sid, v):
                 if v[k].get(n): v[k][n] = _mark(sid, v[k][n])
     if v.get("watch"): v["watch"] = [_mark(sid, w) for w in v["watch"]]
     return v
+import cards2_h  # noqa: E402   (the last twelve old-layout cards, 4 November)
+CARDS2.update(cards2_h.CARDS)

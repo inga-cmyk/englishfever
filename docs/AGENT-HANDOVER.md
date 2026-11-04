@@ -51,6 +51,9 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. The open job: twins for small banks (Inga chose option B)
 
+Status 4 November: batch 1 (76) and batch 2 (50) are published as prepared questions; **batch 3 (33) waits in `pending/`** for Inga and a review by another agent (`docs/AGENT-REVIEW-twins-3.md`). After batch 3 the per-level gaps left are C1 topics whose two levels together already have 10 or more.
+
+
 43 topic-levels have fewer than 10 check / use tasks (about 177 tasks missing): `python3 tools/small_banks.py` lists them,
 `--tasks` also prints the existing tasks of each one to write twins from. Batch 1 (13 topic-levels,
 76 tasks) is in `docs/task-drafts/pending/` and waits for Inga's OK. Next batches: the remaining topic-levels under 10, then the

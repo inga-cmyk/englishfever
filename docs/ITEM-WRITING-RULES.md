@@ -88,3 +88,13 @@
 - **No grammar terms in instructions**, including *the correct preposition*: use *Complete with one word*.
 - **The level fits the skill.** Basic *unless*, *as long as*, *wish* + past, *apologise for*, *remind someone to* are B1–B2: at C1 use *But for*, *Were it not for / Had it not been for*, inversion with *Were / Should / Had*, *It's high time* + past, *I'd rather you* + past, *wish* + *could have*, *deny / advise / urge* patterns. Basic forms may stay at C1 only as review.
 - **A formal context alone does not make a use task**: choosing the only grammatical sentence of four is recognition, whatever the setting.
+
+## Added 4 November (review of twins batch 2)
+- **One twin per source task.** Never clone one sentence frame with new nouns (*the sun / the meeting / the concert had begun when we arrived*): ten near-copies would let a learner reach *Learned* by recognising one frame. Take twins of different source tasks; the generator stops on a second twin of the same source.
+- **A word count must not give the answer away.** In a task about choosing a tense, *Complete with one word* rules out *were walking* or *have managed*. Write *Use the verb in brackets:* (or *Use the verbs in brackets:*) and let the situation decide.
+- **No tense names in instructions** (*Use the past simple, past continuous or past perfect* is a grammar term too): *Use the verb(s) in brackets:*.
+- **Accept only one answer where the task is about that form.** *By the end of the lesson, Eva ___ (answer)* that also accepts *answered* does not test the past perfect: give a situation that needs it (*By the time the bell rang, … so she left early*) and accept only that form.
+- **Do not accept forms that change the meaning** (*should know* in a mixed conditional reads as an obligation).
+- **Every sentence makes sense**, also the wrong options (*If I had save a copy, I would have kept the original file* is illogical even when corrected).
+- **Word-order tasks accept only natural orders.** Two clause orders around *when / while / if* are fine; fronted phrases like *half an hour she spent choosing…* or *all morning what have you been cooking* are not.
+- **Different topics or levels do not reuse the same scene** (*it was snowing when we arrived* and *…when we reached the hotel*).

@@ -61,7 +61,7 @@ checks for grammar terms and word counts, a review with the original next to eac
 tasks (`learning_task()` marks them *practice only*).
 
 **Open, in the order Inga is likely to want them (propose before starting; she decides):**
-1. *Learning drag tasks for every path step* (her "option B"): about five per step, with sentences of existing tasks. Same process as `learn_drag_4.py`; every learning task must import as **new** (see the last rule in `ITEM-WRITING-RULES.md`).
+1. *Learning drag tasks for every path step* (her "option B"): about five per step. **The source is always a check / use task that is not a drag task** (a choice, a typed gap, a rewrite), and the learning task turns its sentence into a word order or a word bank. Never copy an existing word order, word bank or matching task: same sentence + same type = the same task. Same process as `learn_drag_4.py`; every learning task must import as **new** (the last rules in `ITEM-WRITING-RULES.md`).
 2. *Twins where tasks repeat most*: needs the Usage → Repeats table from the server (ask Inga for a screenshot or export; never log in yourself).
 3. `tools/small_banks.py` does not map some short topic names to their skill ids (found in the batch-2 review); `twins_3.py` has a correct `ALIASES` map to reuse.
 4. `Content::role` treats *'…' What does it say?* (a meaning question) as *check*; the regex in `app/src/Content.php` could include it. This changes which answers count as evidence: log it in `RESEARCH-DATA-PLAN.md`.

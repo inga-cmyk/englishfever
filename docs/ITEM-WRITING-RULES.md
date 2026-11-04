@@ -104,3 +104,6 @@
 - The same rules apply: only natural word orders (both clause orders around *if / when / because / whatever*), extra words in a bank that do not fit (*won't / had* for *wouldn't have*), the explanation of the task with the same sentence.
 - First set: `pending/learn-drag-3.csv` for twins batch 3 (`_src/learn_drag_3.py`). The principle can be applied to every topic.
 - Before adding learning tasks, import them next to every prepared file (`php` check as in `docs/AGENT-HANDOVER.md`): a word order with the same sentence as an existing one at another level is taken as the same task and would overwrite it (*despite feeling ill he went to work* already existed at B1.2). Every learning task must import as **new**.
+
+- **A learning task is never a copy.** Its source is a check / use task that is **not** a drag task (a choice, a typed gap, a rewrite); the learning task turns that sentence into a word order or a word bank. Never take a word order, a word bank or a matching task as the source: a drag task with the same sentence and the same type is the same task (nothing new to practise, and the import would overwrite the existing one). Different wording of the instruction does not make it new.
+- Before showing samples, check every one against the bank: same sentence + same task type anywhere in `app/content/items.json` or `docs/task-drafts/*.csv` = not allowed.

@@ -6,6 +6,8 @@ import italics
 italics.LV_ASCII |= set('''apgriez visas diena datums punkts vieta kur gadalaiks dienas virsmas sienas piektdienas pilsēta divi filma gariem grupai ieradumam nesens notikums noliegts noteikums nulles otrais pirmais tagadnes vienas zilbes abus aizliegts atbildes
 beidzas beidzies cita darba divdabi divdabis esam garums grupa ieradums izteikt jebkuru laba ideja lielu lietas likums maigs mana istaba ne nekas nelielu padomu paliek saraksta
 tipiska padodas pieder latviski angliski nosauktu pateicas tos pa draugi abos viens vienam gaidu autobusu klausos draugs laikiem stingri tagadne tagadnei tam tava tur zilbe celtnieks viedoklis lielāks mazāks dod rezultatu jauns vecs vecaks gads gadu pasaule pilsetas pilseta cena cenas darbs darbi'''.split())
+# File-scoped vocabulary keeps new Latvian words plain without changing older drafts' markup.
+LV_BY_FILE = {"twins-2.csv": set('''aizliegums apgalvojuma atgriezusies atvainoties diskusija ieraksti ievada ilgst izsaka izveidot maina mainoties noteiktu notikumam notikumu otrs pabeigtam pabeigto periodam pieredzi sekas uzsver vakardienas vietai visu ziemas'''.split())}
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
@@ -27,6 +29,15 @@ def lv_fix(t):
     t = t.replace("*", "")
     for a, b in LV_SUBS: t = re.sub(a, b, t)
     return italics.lv_mark(t)   # every English word in a Latvian explanation is an example: the same rule the built-in explanations use
+
+def lv_for_file(t, name):
+    previous = set(italics.LV_ASCII)
+    try:
+        italics.LV_ASCII.update(LV_BY_FILE.get(os.path.basename(name), set()))
+        return lv_fix(t)
+    finally:
+        italics.LV_ASCII.clear()
+        italics.LV_ASCII.update(previous)
 def mc(t, lv, b, q, ok, wrong, why, lvw):
     why, lvw = audit_fixes.WHY.get(q, (why, lvw))
     fx = audit_fixes.MCQ.get((q, ok)) or audit_fixes.MCQ.get(("*", ok))   # corrections from the audit (audit_fixes.py)
@@ -200,7 +211,7 @@ def save(name):
                 old = plain(r[3], r[2]); new = re.sub(r"^Use the past simple: ", "", old)
                 r = r[:9] + ["from: Past simple" + (" | " + old if new != old else "")] + r[10:]; r[0] = "Used to and be used to"; r[3] = new
             if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
-            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_fix(r[7])] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if practice_only(r) else "", ALSO.get(i, "")])
+            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_for_file(r[7], name)] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if practice_only(r) else "", ALSO.get(i, "")])
     print(name, len(rows), "rows")
 
 

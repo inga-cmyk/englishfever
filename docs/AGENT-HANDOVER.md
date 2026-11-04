@@ -1,7 +1,7 @@
 # Handover: the grammar practice app (practice.englishfever.com)
 
 For another AI agent who continues the work, and for checking afterwards what that agent added or changed.
-Written 4 November 2026. The owner is Inga, an English teacher (her account in the app is "Fox"; "Inga" in the app is a student).
+Written 4 November 2026, updated the same day after twins batch 3 and the first learning tasks. The owner is Inga, an English teacher (her account in the app is "Fox"; "Inga" in the app is a student).
 The app is part of her master's research, so every change that affects what learners see or how answers are counted is logged
 (see *Research* below).
 
@@ -20,7 +20,7 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 | The built-in question bank (source) | `app/authoring/*.py` (topics `content_*.py`, `b1_topics.py`, `cards2_*.py`); corrections of published tasks in `content_review.py` (`report_fix`), choice-option fixes `option_fixes.py`, writing-task fixes `write_fixes.py` |
 | The built-in bank (built, used by the app) | `app/content/` (made by `app/authoring/build.py`; do not edit by hand) |
 | Prepared questions (imported on the server: Questions → Prepared questions → Add all → Approve all) | `docs/task-drafts/*.csv`, made by the scripts in `docs/task-drafts/_src/*.py` with the helpers in `_src/lib.py` |
-| Drafts waiting for Inga's review (NOT packaged) | `docs/task-drafts/pending/` (now: `twins-1.csv` + `twins-1-review.md`, 76 tasks, corrected after her review, still waiting for her OK) |
+| Drafts waiting for Inga's review (NOT packaged) | `docs/task-drafts/pending/` (empty now: everything she saw is approved and published) |
 | WordPress plugin (sign-in from englishfever.com, My activity, dashboard menu item) | `app/wp-plugin/ef-practice-sso/ef-practice-sso.php` (now 1.8.5) |
 | Tests | `app/tests/` (PHP and Python), browser tests `app/tests/browser/` |
 | Packaging | `tools/package_practice_app.py` → `dist/practice-app-update.zip` (Inga uploads it), `dist/practice-app.zip` (first install), `dist/ef-practice-sso.zip` (plugin) |
@@ -49,26 +49,43 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 - A Latvian explanation for every task up to B1.2 (we write one for all); a Latvian note on a typical mistake only where Latvian causes it, starting *Tulkojot burtiski…*. Learners never see error-type names.
 - Task roles (`Content::role`): *learn* (matching, "Which sentence means…", practice-only) is never evidence; *check* depends on the form; *use* = the learner writes. A topic needs 10 different check / use tasks at a level before it can count as learned.
 
-## 4. The open job: twins for small banks (Inga chose option B)
+## 4. Where the work stands, and what is open
 
-Status 4 November: batch 1 (76) and batch 2 (50) are published as prepared questions; **batch 3 (33) waits in `pending/`** for Inga and a review by another agent (`docs/AGENT-REVIEW-twins-3.md`). After batch 3 the per-level gaps left are C1 topics whose two levels together already have 10 or more.
+**Done and published (latest zip 2026-11-04 08:52):** twins batches 1–3 (76 + 50 + 33 tasks; every topic-level with fewer than
+10 check / use tasks now has 10, except C1 topics whose two levels together already have 10 or more); the C1 topic
+*Unreal time and preferences* (12 tasks, rule card, path step); learning drag tasks `learn-drag-3.csv` (33) and `learn-drag-4.csv`
+(40): every topic-level has at least one drag task. Each batch has a `*-review.md` next to its CSV and a generator in `_src/`.
 
+**Templates to copy:** `_src/twins_3.py` for check / use tasks (sources linked with `src_built` / `src_csv`, one twin per source,
+checks for grammar terms and word counts, a review with the original next to each twin); `_src/learn_drag_4.py` for learning
+tasks (`learning_task()` marks them *practice only*).
 
-43 topic-levels have fewer than 10 check / use tasks (about 177 tasks missing): `python3 tools/small_banks.py` lists them,
-`--tasks` also prints the existing tasks of each one to write twins from. Batch 1 (13 topic-levels,
-76 tasks) is in `docs/task-drafts/pending/` and waits for Inga's OK. Next batches: the remaining topic-levels under 10, then the
-topics whose tasks repeat most (Usage → Repeats on the server). A twin is very like an existing task (same grammar, same type)
-in another setting. Next to every twin, write the original task it copies, so the review can compare them (Inga asked for this).
+**Open, in the order Inga is likely to want them (propose before starting; she decides):**
+1. *Learning drag tasks for every path step* (her "option B"): about five per step, with sentences of existing tasks. Same process as `learn_drag_4.py`; every learning task must import as **new** (see the last rule in `ITEM-WRITING-RULES.md`).
+2. *Twins where tasks repeat most*: needs the Usage → Repeats table from the server (ask Inga for a screenshot or export; never log in yourself).
+3. `tools/small_banks.py` does not map some short topic names to their skill ids (found in the batch-2 review); `twins_3.py` has a correct `ALIASES` map to reuse.
+4. `Content::role` treats *'…' What does it say?* (a meaning question) as *check*; the regex in `app/src/Content.php` could include it. This changes which answers count as evidence: log it in `RESEARCH-DATA-PLAN.md`.
+5. Inga's review lists still open: `docs/task-drafts/task-roles-review.md` (236 learn tasks) and `docs/task-drafts/write-tasks-rewrite-review.md` (40 writing tasks).
+6. My learning path: the empty circles of steps not started. Proposal waiting for her choice: D = a green ring for progress, a grey ✓ for "probably known", a green ✓ / ★ when learned / mastered.
+7. The optional AI check of writing (`AiGrader.php`, model `claude-haiku-5-5`): a dry run with `tools/ai_dryrun.php` needs `ANTHROPIC_API_KEY` set by Inga in the cloud environment settings and an answers export from her.
+8. Later (only when she asks): A2.2 tasks for past perfect, might, second conditional, reported speech, relative clauses; about 50 topics from the test-english.com lists not yet in the app (`docs/LEVEL-LISTS-test-english.md`); 11 rule cards still in the old format; a held-out set of level-test tasks for the pre / post test; the language experiment.
+9. WordPress plugin 1.8.5 (Grammar practice in the Tutor menu with Tutor's `edit-2` icon): Inga uploads it and checks that the icon shows; change the icon name in `ef-practice-sso.php` if she prefers another (`book`, `lesson`, `feather`, `font`).
 
-How to make a batch:
-1. Write `docs/task-drafts/_src/twins_N.py` like `twins_1.py` (Topic(...).mcq / gap / bank / text / order with an English and a Latvian explanation each), ending with `save("pending/twins-N.csv")`. Topic names are the ones the existing CSV files use (first column).
-2. `cd docs/task-drafts/_src && python3 twins_N.py`
-3. `php tools/check_draft.php docs/task-drafts/pending/twins-N.csv` (must say 0 refused twice) and `python3 tools/option_audit.py docs/task-drafts/pending/twins-N.csv` (read every flag).
-4. The writing rules test on the pending file: `sed 's#"task-drafts", "\*.csv"#"task-drafts", "pending", "*.csv"#' app/tests/draft_rules_test.py > /tmp/drt.py && cp /tmp/drt.py app/tests/_drt.py && python3 app/tests/_drt.py; rm app/tests/_drt.py`
-5. Write `pending/twins-N-review.md` (task, answer, wrong options or words, EN and LV explanation, and the original) for Inga.
-6. Only after her OK: move the CSV from `pending/` to `docs/task-drafts/` (it is then packaged and offered under Prepared questions).
+**How a batch of tasks is made and approved:**
+1. Write the generator in `docs/task-drafts/_src/`, ending with `save("pending/<name>.csv")` and a review file `pending/<name>-review.md` (task, answer, wrong options or words, EN and LV explanation, the source task).
+2. Checks: `php tools/check_draft.php docs/task-drafts/pending/<name>.csv` (0 refused, twice), `python3 tools/option_audit.py …` (read every flag), the writing-rules and Latvian tests on `pending/` (sed the glob in `app/tests/draft_rules_test.py` and `app/tests/latvian_lint.py` to `"pending", "*.csv"` in a temporary copy), and an import next to every published CSV that must report only new tasks (no "Already added").
+3. Latvian words that the italics marking takes for English (*sekas, mums, rakstura…*) go into `LV_BY_FILE["<name>.csv"]` in `_src/lib.py`; the English tense names (*Past Simple*) are the correct Latvian terms.
+4. Show the review to Inga. Reviews by other agents are welcome, but weigh each point against the rules: take the sound ones, say briefly why you do not take the others.
+5. After her OK: save to `docs/task-drafts/<name>.csv` (no `pending/`), move the review next to it, add lines to `CHANGELOG-practice-app.md` and `RESEARCH-DATA-PLAN.md`, run the full test suite, package, give her the zip link and the reminder *Prepared questions → Add all → Approve all*.
 
-Correcting a task that is already on the server: built-in tasks with `report_fix(base_id, **changes)` in `app/authoring/content_review.py` (a new `-rN` version; update the expected count in `app/tests/bank_update_test.php`); prepared drafts by changing the generator and adding `replaces("old correct option / sentence / task text")` after the row, so the import retires the old one.
+Correcting a task that is already on the server: built-in tasks with `report_fix(base_id, **changes)` in `app/authoring/content_review.py` (a new `-rN` version; update the expected count in `app/tests/bank_update_test.php`); prepared drafts by changing the generator and adding `replaces("old correct option / sentence / task text")` after the row, so the import retires the old one (it may change the task type).
+
+## Working with Inga (what she expects)
+- She writes in Latvian, often briefly ("A, apstiprinu, iedod zip"). Answer in Latvian: what was done, the test results, what is in the zip, what waits for her. Tables are welcome; no filler.
+- She approves content herself. Nothing goes into `docs/task-drafts/*.csv` (and so into the zip) before her OK.
+- Every zip answer gives the version (from the package output), the link `https://github.com/inga-cmyk/englishfever/raw/claude/intelligent-albattani-2e9bfi/dist/practice-app-update.zip` and what to do after uploading.
+- Say proactively how a change affects her research data.
+- She remembers past corrections and expects them never to come back: read the dated sections of `ITEM-WRITING-RULES.md` before writing anything.
 
 ## 5. Build, test, package
 

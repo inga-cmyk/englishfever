@@ -1,6 +1,6 @@
-# Twins, batch 1 (76 tasks), corrected after your review
+# Twins, batch 1 (76 tasks), second correction
 
-Not added yet. Changed after your review: the ten tasks you listed; C1.1 and C1.2 advanced conditionals and C1.1 reporting verbs now use C1 forms (*But for*, *Had it not been for*, *Were* inversion, *It's high time*, *I'd rather you*, *wish … could have*, *advise not to*, *deny*); answer keys with *'d* contractions; *Complete with one word* instead of *the correct preposition*. The checker accepts *n't / not*, *can't / cannot*, curly apostrophes and a missing final full stop (all 204 typed variants tested).
+Not added yet. Changed after the second review: no. 9 keeps *would* only; no. 12 wrong option *If we had knew…* instead of a possible mixed conditional; no. 20 also *I'd rather you not call…* (*did not* = *didn't* is accepted by the checker anyway); no. 21 is now a report with *advise* and backshift; no. 22 reports a cleft sentence with *deny* and accepts the forms without *that*. The checker accepts *n't / not*, *can't / cannot*, curly apostrophes and a missing final full stop (147 typed variants tested, none refused).
 
 
 ## Modal verbs · B1.1
@@ -158,7 +158,7 @@ Not added yet. Changed after your review: the ten tasks you listed; C1.1 and C1.
 45. *mcq* · I don't have a car, so I take the bus. Imagine it is different. Choose the correct sentence. → **If I had a car, I wouldn't take the bus.** · wrong: If I have a car, I wouldn't take the bus. / If I would have a car, I wouldn't take the bus. / If I had a car, I won't take the bus.
    - EN: An imagined present: *if* + past, *would* + base form.
    - LV: Iedomāta tagadne: *if* + pagātne, *would* + pamatforma.
-46. *text* · Write the sentence with if: I don't have a garden, so I don't grow vegetables. → **If I had a garden, I would grow vegetables. / If I had a garden, I'd grow vegetables. / I would grow vegetables if I had a garden. / I'd grow vegetables if I had a garden. / If I had a garden, I could grow vegetables. / I could grow vegetables if I had a garden.**
+46. *text* · Write the sentence with if: I don't have a garden, so I don't grow vegetables. → **If I had a garden, I would grow vegetables. / If I had a garden, I'd grow vegetables. / I would grow vegetables if I had a garden. / I'd grow vegetables if I had a garden.**
    - EN: *if* + past, *would* + base form.
    - LV: *if* + pagātne, *would* + pamatforma.
 
@@ -173,7 +173,7 @@ Not added yet. Changed after your review: the ten tasks you listed; C1.1 and C1.
 49. *mcq* · Which sentence is NOT correct? → **If they'd have asked me, I would've helped.** · wrong: If it had rained, we'd have stayed in. / She would have come if you'd invited her. / If I had known, I wouldn't have said it.
    - EN: No *would have* after *if*: *If they had asked me*.
    - LV: Aiz *if* nelieto *would have*: *If they had asked me.*
-50. *mcq* · We didn't know about the problem yesterday, so we didn't call you. Choose the sentence that says the opposite. → **If we had known about the problem, we would have called you.** · wrong: If we knew about the problem, we would have called you. / If we would have known about the problem, we would call you. / If we had known about the problem, we will have called you.
+50. *mcq* · We didn't know about the problem yesterday, so we didn't call you. Choose the sentence that says the opposite. → **If we had known about the problem, we would have called you.** · wrong: If we had knew about the problem, we would have called you. / If we would have known about the problem, we would call you. / If we had known about the problem, we will have called you.
    - EN: *if* + *had* + 3rd form, *would have* + 3rd form.
    - LV: *if + had* + 3. forma, *would have* + 3. forma.
 51. *text* · Write the sentence with if: I didn't know about the sale, so I didn't buy the coat. → **If I had known about the sale, I would have bought the coat. / I would have bought the coat if I had known about the sale. / If I'd known about the sale, I'd have bought the coat. / If I'd known about the sale, I would have bought the coat. / If I had known about the sale, I'd have bought the coat. / I'd have bought the coat if I'd known about the sale. / I would have bought the coat if I'd known about the sale. / I'd have bought the coat if I had known about the sale.**
@@ -212,7 +212,7 @@ Not added yet. Changed after your review: the ten tasks you listed; C1.1 and C1.
 60. *mcq* · You talk about a past mistake in a meeting. Choose the correct option. → **If only we had tested the app, we would not have these problems.** · wrong: If only we would have tested the app, we would not have these problems. / If only we tested the app, we would not have these problems. / If only we had tested the app, we will not have these problems.
    - EN: *If only* + past perfect for the past; *would* for the result now.
    - LV: *If only* + Past Perfect par pagātni; *would* par sekām tagad.
-61. *text* · Write one sentence that starts with *I'd rather*: Please don't call me after ten. → **I'd rather you didn't call me after ten. / I would rather you didn't call me after ten. / I'd rather you didn't call me after ten o'clock. / I would rather you didn't call me after ten o'clock.**
+61. *text* · Write one sentence that starts with *I'd rather*: Please don't call me after ten. → **I'd rather you didn't call me after ten. / I would rather you didn't call me after ten. / I'd rather you didn't call me after ten o'clock. / I would rather you didn't call me after ten o'clock. / I'd rather you not call me after ten. / I would rather you not call me after ten.**
    - EN: *I'd rather* + another person + past.
    - LV: *I'd rather* + cits cilvēks + pagātne.
 
@@ -221,16 +221,16 @@ Not added yet. Changed after your review: the ten tasks you listed; C1.1 and C1.
 62. *mcq* · Which sentence reports 'You lost my keys!' as an accusation? → **He accused me of losing his keys.** · wrong: He accused me to lose his keys. / He accused me that I lost his keys. / He accused me for losing his keys.
    - EN: *accuse* someone *of* + -ing.
    - LV: *accuse* kādu *of + -ing*.
-63. *mcq* · Choose the correct option: The lawyer advised her ___ anything. → **not to sign** · wrong: to not signing / not signing
-   - EN: *advise* someone (*not*) *to* + verb.
-   - LV: *advise* kādu (*not*) *to* + darbības vārds.
+63. *text* · Report with *advise*: 'Don't sign anything until you've read it,' the lawyer told her. → **The lawyer advised her not to sign anything until she had read it. / The lawyer advised her not to sign anything until she'd read it. / The lawyer advised her not to sign anything until she read it.**
+   - EN: *advise* someone *not to* + verb; *you've read* becomes *she had read*.
+   - LV: *advise* kādu *not to* + darbības vārds; *you've read* kļūst par *she had read*.
 64. *mcq* · Which sentence is NOT correct? → **She insisted to pay for dinner.** · wrong: She offered to pay for the tickets. / He admitted taking the money. / They suggested going by train.
    - EN: *insist on* + -ing: *She insisted on paying*.
    - LV: *insist on + -ing*: *She insisted on paying.*
 65. *mcq* · Which sentence reports this: 'We're sorry the train was late, and we'll give you a refund.' → **The company apologised for the delay and promised a refund.** · wrong: The company apologised the delay and promised a refund. / The company apologised for the delay and promised refunding. / The company apologised for the delay and promised of a refund.
    - EN: *apologise for* something; *promise* + noun or *to* + verb.
    - LV: *apologise for; promise* + lietvārds vai to + darbības vārds.
-66. *text* · Report with *deny*: 'I didn't take the money,' said Leo. → **Leo denied taking the money. / Leo denied having taken the money. / Leo denied that he had taken the money. / Leo denied that he took the money.**
+66. *text* · Report with *deny*: 'It wasn't me who sent that email to the whole company,' said Leo. → **Leo denied sending that email to the whole company. / Leo denied having sent that email to the whole company. / Leo denied that he had sent that email to the whole company. / Leo denied he had sent that email to the whole company. / Leo denied that he sent that email to the whole company. / Leo denied he sent that email to the whole company. / Leo denied sending the email to the whole company. / Leo denied having sent the email to the whole company.**
    - EN: *deny* + -ing (or *having* + 3rd form).
    - LV: *deny + -ing* (vai *having* + 3. forma).
 

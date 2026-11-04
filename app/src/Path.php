@@ -113,6 +113,7 @@ final class Path
         ['c1_mod', 'Advanced modal verbs', 'C1', ['modal_verbs', 'more_modals']],
         ['c1_agr', 'Subject-verb agreement', 'C1', ['agreement']],
         ['c1_ca', 'Conditionals, inversion, wish', 'C1', ['cond_advanced', 'cond_mixed']],
+        ['c1_unreal', 'Unreal time and preferences', 'C1', ['unreal_time']],   // it's high time, I'd rather (teacher, 4 November)
         ['c1_rv', 'Reporting verbs, indirect questions', 'C1', ['rep_verbs', 'ind_advanced']],
     ];
     /** the task levels of each band; a step's level for the "below the placement level" check is the first two letters */

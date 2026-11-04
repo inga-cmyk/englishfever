@@ -607,3 +607,14 @@ CARDS["conj_b2"] = {"form": ["Contrast: *nevertheless, yet, whereas*. Purpose: *
                     "example": "*We have therefore decided to close the shop.*"}
 LV_CARDS["conj_b2"] = {"form": ["Pretstats: nevertheless, yet, whereas. Nolūks: in order for + persona + to, for + -ing, in case. Iemesls: owing to, on account of + lietvārds. Rezultāts: as a result, therefore, consequently."],
                        "use": ["Take an umbrella in case it rains."], "signals": "whereas, nevertheless, yet, in case, owing to, therefore"}
+
+# C1: unreal time and preferences (teacher, 4 November, option A): it's (high / about) time, would rather / would sooner.
+# British Council "Unreal time" (C1); Murphy Unit 38 (it's time) and Unit 60 (would rather). Not conditionals, so a topic of its own.
+SKILLS_NEW.append(("unreal_time", "Unreal time and preferences (it's high time, I'd rather)", "conditionals", ["C1.1", "C1.2"]))
+ABBR_NEW.update({"unreal_time": "unr"})
+CARDS["unreal_time"] = {"form": ["*It's (high / about) time* + subject + past: it should happen now, and it is late. *I'd rather / I'd sooner* + base form: what I prefer to do. *I'd rather* + another person + past: what I want someone else to do."],
+                        "use": ["*It's high time we left. I'd rather stay at home. I'd rather you didn't tell anyone.*"],
+                        "signals": "*it's time, it's high time, it's about time, would rather, would sooner*",
+                        "example": "*It's about time you called your mother.*"}
+LV_CARDS["unreal_time"] = {"form": ["It's (high / about) time + teikuma priekšmets + pagātne: tam jau vajadzētu notikt. I'd rather / I'd sooner + pamatforma: ko es labāk darītu. I'd rather + cits cilvēks + pagātne: ko gribu, lai dara kāds cits."],
+                           "use": ["It's high time we left. I'd rather you didn't tell anyone."], "signals": "it's high time, it's about time, would rather, would sooner"}

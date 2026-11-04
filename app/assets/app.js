@@ -667,7 +667,7 @@
     return box;
   }
   /** Topics added lately (teacher, 3 November): a "New" group on the Topics page and a small label on their tiles for 45 days. */
-  var NEW_TOPICS = { conj_basic: '2026-11-02', conj_linkers: '2026-11-02', conj_clauses: '2026-11-02', conj_b2: '2026-11-02' };
+  var NEW_TOPICS = { conj_basic: '2026-11-02', conj_linkers: '2026-11-02', conj_clauses: '2026-11-02', conj_b2: '2026-11-02', unreal_time: '2026-11-04' };
   function isNewTopic(id) { var d = NEW_TOPICS[id]; return !!d && (Date.now() - Date.parse(d)) < 45 * 86400000; }
 
   /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
@@ -1882,7 +1882,8 @@
     articles_b1: '**The** rich get richer. **The** cat gets **the** sofa.',
     conj_basic: "I'm on a diet, **but** I eat cake **because** it's Monday.", conj_linkers: '**Although** I set three alarms, I woke up late **because of** my cat.',
     conj_clauses: 'I bought a treadmill **so that** I **could** dry my clothes on it.',
-    conj_b2: 'I keep a spare charger at work **in case** my phone dies. **As a result**, my phone never dies.'
+    conj_b2: 'I keep a spare charger at work **in case** my phone dies. **As a result**, my phone never dies.',
+    unreal_time: "**It's high time** I **cleaned** my desk. But **I'd rather** you **didn't** watch."
   };
   function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
     return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });

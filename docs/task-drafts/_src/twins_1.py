@@ -1,7 +1,7 @@
 """Twins, batch 1 (teacher, 3 November, option B): the topics and levels with fewer than 10 check / use tasks get tasks that are
 very like the existing ones but in another setting (travel, work, hobbies, lifestyle, learning, relationships, technologies).
 Wrong options are ungrammatical, of one length, all about one theme (or each about its own); no speaker tag before a gap that
-already names the speaker. Saved to pending/ until the teacher has seen them."""
+already names the speaker. Approved by the teacher on 4 November after two rounds of corrections."""
 from lib import *
 
 MV = Topic("Modal verbs")
@@ -86,16 +86,17 @@ C3.mcq("B2.2", "We didn't know about the problem yesterday, so we didn't call yo
 C3.text("B2.2", "Write the sentence with if: I didn't know about the sale, so I didn't buy the coat.", ["If I had known about the sale, I would have bought the coat.", "I would have bought the coat if I had known about the sale.", "If I'd known about the sale, I'd have bought the coat.", "If I'd known about the sale, I would have bought the coat.", "If I had known about the sale, I'd have bought the coat.", "I'd have bought the coat if I'd known about the sale.", "I would have bought the coat if I'd known about the sale.", "I'd have bought the coat if I had known about the sale."], why=T3)
 
 CA = Topic("Advanced conditionals: inversion, unless, wish")
+UT = Topic("Unreal time and preferences (it's high time, I'd rather)")   # its own topic since 4 November (teacher, option A)
 CA.mcq("C1.1", "Choose the correct option: ___ for your help, we would never have finished on time.", "But", ["Without", "Unless"], why=("*But for* + noun = *If it hadn't been for*.", "*But for* + lietvārds = *If it hadn't been for*."))
 CA.text("C1.1", "Rewrite starting with *Were*: If the price were lower, more people would buy it.", ["Were the price lower, more people would buy it.", "Were the price lower, more people would buy the product."], why=("*Were* + subject = *If* + subject + *were*, in formal English.", "*Were* + teikuma priekšmets = *If* + teikuma priekšmets + *were* (formāli)."))
 CA.mcq("C1.1", "Choose the most formal option.", "Should you have questions, let us know.", ["If you've got questions, just shout.", "Got any questions? Just let us know.", "Any questions, just give us a call."], why=("*Should you ...* = *If you ...*, in formal writing.", "*Should you ...* = *If you ...* formālā tekstā."))
 CA.bank("C1.1", "___ he ___ harder, he would have passed the exam.", ["Had", "studied"], ["Did", "studying"], why=("*Had he studied* = *If he had studied*: *had* before the subject, then the 3rd form.", "*Had he studied* = *If he had studied*: *had* pirms teikuma priekšmeta, tad 3. forma."))
 CA.bank("C1.1", "___ it not been for the rain, the match would have finished on time.", "Had", ["Were", "Did", "Has"], why=("*Had it not been for* = *If it hadn't been for*.", "*Had it not been for* = *If it hadn't been for*."))
-CA.mcq("C1.2", "Choose the correct option: It's high time we ___ a decision.", "made", ["make", "have made", "making"], why=("*It's (high) time* + subject + past: something should already be happening.", "*It's (high) time* + teikuma priekšmets + pagātne: tam jau būtu jānotiek."))
-CA.bank("C1.2", "I'd rather you ___ anyone about this yet.", "didn't tell", ["don't tell", "won't tell", "not to tell"], why=("*I'd rather* + another person + past: what we want someone else to do.", "*I'd rather* + cits cilvēks + pagātne: ko gribam, lai dara kāds cits."))
+UT.mcq("C1.2", "Choose the correct option: It's high time we ___ a decision.", "made", ["make", "have made", "making"], why=("*It's (high) time* + subject + past: something should already be happening.", "*It's (high) time* + teikuma priekšmets + pagātne: tam jau būtu jānotiek."))
+UT.bank("C1.2", "I'd rather you ___ anyone about this yet.", "didn't tell", ["don't tell", "won't tell", "not to tell"], why=("*I'd rather* + another person + past: what we want someone else to do.", "*I'd rather* + cits cilvēks + pagātne: ko gribam, lai dara kāds cits."))
 CA.mcq("C1.2", "I was in hospital, so I missed your wedding. Choose the correct sentence.", "I wish I could have come to your wedding.", ["I wish I could come to your wedding.", "I wish I can have come to your wedding.", "I wish I would come to your wedding."], why=("A past ability we regret: *wish* + *could have* + 3rd form.", "Nožēla par pagātnē neiespējamo: *wish* + *could have* + 3. forma."))
 CA.mcq("C1.2", "You talk about a past mistake in a meeting. Choose the correct option.", "If only we had tested the app, we would not have these problems.", ["If only we would have tested the app, we would not have these problems.", "If only we tested the app, we would not have these problems.", "If only we had tested the app, we will not have these problems."], why=("*If only* + past perfect for the past; *would* for the result now.", "*If only* + Past Perfect par pagātni; *would* par sekām tagad."))
-CA.text("C1.2", "Write one sentence that starts with *I'd rather*: Please don't call me after ten.", ["I'd rather you didn't call me after ten.", "I would rather you didn't call me after ten.", "I'd rather you didn't call me after ten o'clock.", "I would rather you didn't call me after ten o'clock.", "I'd rather you not call me after ten.", "I would rather you not call me after ten."], why=("*I'd rather* + another person + past.", "*I'd rather* + cits cilvēks + pagātne."))
+UT.text("C1.2", "Write one sentence that starts with *I'd rather*: Please don't call me after ten.", ["I'd rather you didn't call me after ten.", "I would rather you didn't call me after ten.", "I'd rather you didn't call me after ten o'clock.", "I would rather you didn't call me after ten o'clock.", "I'd rather you not call me after ten.", "I would rather you not call me after ten."], why=("*I'd rather* + another person + past.", "*I'd rather* + cits cilvēks + pagātne."))
 
 RV = Topic("Reporting verbs (suggest, admit, promise...)")
 RV.mcq("C1.1", "Which sentence reports 'You lost my keys!' as an accusation?", "He accused me of losing his keys.", ["He accused me to lose his keys.", "He accused me that I lost his keys.", "He accused me for losing his keys."], why=("*accuse* someone *of* + -ing.", "*accuse* kādu *of* + -ing."))
@@ -119,4 +120,4 @@ QY.gap("B1.1", "Write the missing word: Is your car big ___ for five people?", "
 QY.mcq("B1.1", "Choose the correct option: There was ___ much traffic, so we were late.", "too", ["many", "enough"], why=("*too much* = more than is good.", "*too much* = vairāk nekā vajag."))
 QY.mcq("B1.1", "Choose the correct option: I've got ___ money, so I can't come to the cinema.", "very little", ["very few", "a few"], why=("*little* + uncountable nouns (*money*); *few* + plurals.", "*little* + neskaitāmi lietvārdi (*money*); *few* + daudzskaitlis."))
 
-save("pending/twins-1.csv")
+save("twins-1.csv")   # approved by the teacher on 4 November

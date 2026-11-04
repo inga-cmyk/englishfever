@@ -9098,6 +9098,34 @@
      "*whereas* salīdzina divus faktus, tas nenozīmē *although*: *[[Although]] it was late, we stayed.*"
     ]
    }
+  },
+  {
+   "id": "unreal_time",
+   "label": "Unreal time and preferences (it's high time, I'd rather)",
+   "area": "conditionals",
+   "levels": [
+    "C1.1",
+    "C1.2"
+   ],
+   "rule": {
+    "form": [
+     "*It's (high / about) time* + subject + past: it should happen now, and it is late. *I'd rather / I'd sooner* + base form: what I prefer to do. *I'd rather* + another person + past: what I want someone else to do."
+    ],
+    "use": [
+     "*It's high time we left. I'd rather stay at home. I'd rather you didn't tell anyone.*"
+    ],
+    "signals": "*it's time, it's high time, it's about time, would rather, would sooner*",
+    "example": "*It's about time you called your mother.*"
+   },
+   "rule_lv": {
+    "form": [
+     "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*. *I'd rather / I'd sooner* + pamatforma: ko es labāk darītu. *I'd rather* + cits cilvēks + pagātne: ko *gribu*, lai dara kāds cits."
+    ],
+    "use": [
+     "*It's high time we left.* *I'd rather you didn't tell anyone.*"
+    ],
+    "signals": "*it's high time, it's about time, would rather, would sooner*"
+   }
   }
  ],
  "bloom": {
@@ -9376,6 +9404,7 @@
   "conj_linkers": [],
   "conj_clauses": [],
   "conj_b2": [],
+  "unreal_time": [],
   "quantity": [
    "UNCOUNT"
   ],

@@ -80,6 +80,7 @@ SKILL_ERR = {
     "conj_linkers": [],
     "conj_clauses": [],
     "conj_b2": [],
+    "unreal_time": [],
     "quantity": ["UNCOUNT"],
     "verb_patterns": ["PATTERN", "NEG-INF"],
     "adj_ed_ing": ["ED-ING"],

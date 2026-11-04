@@ -85,15 +85,21 @@ EARLIER = ("*Had* + 3rd form marks the earlier event; *when* introduces the late
            "*Had* + 3. forma norāda agrāko notikumu; *when* ievada vēlāko notikumu.")
 order(N_ORDER, "the sun had risen when we arrived",
       ["when we arrived the sun had risen"], EARLIER)
-order(N_ORDER, "the meeting had begun when i joined",
-      ["when i joined the meeting had begun"], EARLIER)
-order(N_ORDER, "the download had begun when i logged in",
-      ["when i logged in the download had begun"], EARLIER)
+# one twin per source (Claude's review, 4 November): the three clones of N_ORDER became twins of other sources
+N_SHINE = original("compare-past-1.csv", "looked / was shining")
+N_LUNCH = original("compare-past-1.csv", "had just had")
+N_KATE = original("compare-past-1.csv", "was", skill="narrative", level="B1.2")
+twin(N_SHINE, "gap", "Use the verbs in brackets: I opened the curtains and ___ outside. It ___ heavily. (look / snow)", "looked / was snowing",
+     why=("The event: past simple (*looked*); what was going on at that time: *was* + *-ing* (*was snowing*).",
+          "Notikums: Past Simple (*looked*); kas tobrīd notika: *was* + *-ing* (*was snowing*)."))
+twin(N_LUNCH, "gap", "Use the verb in brackets: Tom didn't want a coffee. He ___ one. (just / drink)", "had just drunk",
+     why=("Before the moment in the story: *had* + *just* + 3rd form: *had just drunk*.",
+          "Pirms stāsta brīža: *had* + *just* + 3. forma: *had just drunk*."))
 twin(N_JUST, "gap", "Write one word in each gap: I missed the first minute of the lesson. It ___ just ___ when I joined. (start)", "had / started",
      why=("*Had just started* places the start before the moment I joined. Each gap takes one word.",
           "*Had just started*: nodarbība bija sākusies pirms pievienošanās. Katrā tukšumā ieraksti vienu vārdu."))
-order(N_ORDER, "the concert had begun when we arrived",
-      ["when we arrived the concert had begun"], EARLIER)
+twin(N_KATE, "gap", "Use the verb in brackets: Leo didn't answer my call. He ___ in a meeting at that moment. (be)", "was",
+     why=("At that moment, not before it: past simple *was*.", "Tajā brīdī, nevis pirms tā: Past Simple *was*."))
 
 # Mixed conditionals, B2.1: finance, technology, travel, learning.
 M_ORDER = original("built-in", "var-cm-b21-order-01")
@@ -123,9 +129,9 @@ twin(M_BAD, "mcq", "Which sentence is NOT correct?",
      why=("After *would* use *be*, not *are*: *we would be in Rome now*.",
           "Pēc *would* lieto *be*, nevis *are*: *we would be in Rome now*."))
 twin(M_GAP, "gap", "Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know)",
-     "had / taken / would | could | might | should / know", why=(
-         "*Had taken* changes the past. *Would know* gives a present result; *could/might* express possibility and *should* an expected result.",
-         "*Had taken* maina pagātni. *Would know* izsaka sekas tagad; *could/might* izsaka iespējamību, *should* norāda gaidāmo rezultātu."))
+     "had / taken / would | could | might / know", why=(
+         "*Had taken* changes the past. *Would know* gives a present result; *could/might* express possibility.",
+         "*Had taken* maina pagātni. *Would know* izsaka sekas tagad; *could/might* izsaka iespējamību."))
 
 # Reporting verbs, B2.2: travel, technology, learning, relationships.
 R_ORDER = original("built-in", "var-rv-b22-order-01")
@@ -134,7 +140,10 @@ R_TEXT = original("built-in", "rv-B22-3a-r2")
 APOLOGY = ("*Apologise for* + *-ing*: say sorry for an action.",
            "*Apologise for* + *-ing*: atvainoties par darbību.")
 order(R_ORDER, "she apologised for losing my luggage", ["for losing my luggage she apologised"], APOLOGY)
-order(R_ORDER, "she apologised for deleting the photos", ["for deleting the photos she apologised"], APOLOGY)
+R_BAD = original("built-in", "rv-B22-4a")
+twin(R_BAD, "mcq", "Which sentence is NOT correct?", "He suggested to meet on Friday.", [
+    "She offered to drive us home.", "They admitted breaking the window.", "I promised to call back later."],
+    why=("*suggest* + *-ing* or *that*: *He suggested meeting on Friday*.", "*suggest* + *-ing* vai *that*: *He suggested meeting on Friday*."))
 twin(R_MCQ, "mcq", "Which sentence reports this: 'No, I won't take another exam.'",
      "He refused to take another exam.", ["He refused taking another exam.",
      "He refused take another exam.", "He refused to taking another exam."],
@@ -154,9 +163,11 @@ I_TEXT = original("built-in", "ia-C11-3a-r6")
 EMBEDDED = ("Inside the question clause, the subject comes before the verb: *whether the payment has arrived*.",
             "Jautājuma palīgteikumā teikuma priekšmets ir pirms darbības vārda: *whether the payment has arrived*.")
 order(I_ORDER, "whether the payment has arrived remains unclear", [], EMBEDDED)
-order(I_ORDER, "whether the venue is available remains uncertain", [], (
-    "A clause beginning with *whether* can be the subject: *whether the venue is available*.",
-    "Palīgteikums ar *whether* var būt teikuma priekšmets: *whether the venue is available*."))
+I_BAD = original("built-in", "ia-C11-4a")
+twin(I_BAD, "mcq", "Which sentence is NOT correct?", "We discussed where should we hold the party.", [
+    "Nobody knows why the train stopped.", "It depends on whether the client agrees.", "I wonder what the new boss will say."],
+    why=("Inside a question clause, the subject comes before the verb: *where we should hold the party*.",
+         "Jautājuma palīgteikumā teikuma priekšmets ir pirms darbības vārda: *where we should hold the party*."))
 twin(I_MCQ, "mcq", "Choose the correct option: The question is ___.", "whether the supplier can meet the deadline", [
     "whether can the supplier meet the deadline", "whether the supplier can meets the deadline",
     "whether the supplier can to meet the deadline"], why=(
@@ -179,10 +190,11 @@ twin(P_MCQ, "mcq", "Choose the correct option: We ___ the answer in yesterday's 
      "knew", ["were knowing", "was knowing"], why=(
          "For a state of knowledge, use *knew*, not *was/were knowing*.",
          "Zināšanu stāvoklim lieto *knew*, nevis *was/were knowing*."))
-order(P_ORDER, "the phone rang while i was painting", clause_orders("the phone rang", "i was painting", "while"), BACKGROUND)
-twin(P_GAP, "gap", "Complete with one word: Yesterday we ___ all the way from the hotel to the museum and back. (walk)", "walked",
-     why=("*Walked* presents the whole completed journey yesterday.",
-          "*Walked* izsaka visu vakar pabeigto ceļu."))
+P_ROAD = original("compare-past-1.csv", "was walking / saw")
+twin(P_ROAD, "gap", "Use the verbs in brackets: I ___ to work when I ___ a strange noise from the engine. So I stopped the car. (drive / hear)", "was driving / heard", why=BACKGROUND)
+twin(P_GAP, "gap", "Use the verb in brackets: Last Saturday we ___ ten kilometres along the coast. (walk)", "walked",
+     why=("A finished walk with its whole distance: past simple *walked*.",
+          "Pabeigta pastaiga ar visu attālumu: Past Simple *walked*."))
 
 # Third conditional, B2.1: learning, technology, travel, relationships.
 T_MCQ = original("built-in", "ct-B21-1a")
@@ -193,7 +205,7 @@ THIRD = ("An unreal past: *if* + *had* + 3rd form; *would/could have* + 3rd form
          "Iedomāta pagātne: *if* + *had* + 3. forma; *would/could have* + 3. forma izsaka iedomātās sekas.")
 twin(T_MCQ, "mcq", "Choose the correct option: She would have understood the lesson if she ___ the notes.",
      "had read", ["had reading", "have read"], why=THIRD)
-twin(T_BAD, "mcq", "Which sentence has a mistake?", "If I had save a copy, I would have kept the original file.", [
+twin(T_BAD, "mcq", "Which sentence has a mistake?", "If I had save a copy, I wouldn't have lost my work.", [
     "If she had booked earlier, she would have paid less for the flight.",
     "If we had trained harder, we could have finished the race together.",
     "If he had checked the date, he would have attended the right meeting."], why=(
@@ -241,7 +253,7 @@ twin(Q_TEXT, "text", "Report this request. Start with *Omar asked me*: 'Could yo
 A_ORDER = original("aux-verbs-1.csv", "what have you been doing all day")
 A_MCQ = original("aux-verbs-1.csv", "have", "aux_verbs", "B1.1")
 A_TEXT = original("aux-verbs-1.csv", "Were you late again?")
-order(A_ORDER, "what have you been cooking all morning", ["all morning what have you been cooking"], (
+order(A_ORDER, "what have you been cooking all morning", [], (
     "Question order: *what have you been cooking*; the activity continues over a period.",
     "Jautājuma vārdu secība: *what have you been cooking*; darbība ilgst noteiktu laiku."))
 twin(A_MCQ, "mcq", "Choose the correct option: How long ___ you owned this laptop?", "have", ["are", "do"],
@@ -268,9 +280,9 @@ def original_task(file, task):
 
 
 ART_GAP = original_task("b1-new-1.csv", "Complete with *a*, *an* or *the*: It was such ___ nice day that we went swimming.")
-order(ART_ORDER, "she spent half an hour choosing a jacket", ["half an hour she spent choosing a jacket"], (
+order(ART_ORDER, "she spent half an hour choosing a jacket", [], (
     "Say *half an hour*: *hour* begins with a vowel sound.", "Lieto *half an hour*: *hour* sākas ar patskaņa skaņu."))
-order(ART_EXCL, "what a useful skill to have at work", ["at work what a useful skill to have"], (
+order(ART_EXCL, "what a useful skill to have at work", [], (
     "*What a* + adjective + singular noun: *what a useful skill*.",
     "*What a* + īpašības vārds + vienskaitļa lietvārds: *what a useful skill*."))
 twin(ART_GAP, "gap", "Complete with one word: It was such ___ long journey that we stopped twice.", "a",
@@ -303,10 +315,10 @@ order(NB_ORDER, "we had been hiking for hours when the storm began", [
     "when the storm began for hours we had been hiking"], PAST_DURATION)
 twin(NB_MCQ, "mcq", "Choose the correct option: The floor was wet. Water ___ from a pipe all night.",
      "had been leaking", ["had been leak", "had leaking"], why=PAST_DURATION)
-twin(NB_GAP, "gap", "Complete the sentence: By the end of yesterday's lesson, Eva ___ all ten questions. (answer)",
-     "had answered | answered", why=(
-         "*Had answered* emphasises completion before the past deadline. *Answered* can also describe the completed result.",
-         "*Had answered* uzsver pabeigtību pirms pagātnes robežpunkta. Arī *answered* var izteikt pabeigto rezultātu."))
+twin(NB_GAP, "gap", "Use the verb in brackets: By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)",
+     "had answered", why=(
+         "*By the time* + past event: what was finished before it takes *had* + 3rd form.",
+         "*By the time* + pagātnes notikums: tam, kas jau bija pabeigts, lieto *had* + 3. formu."))
 
 # Present perfect or past simple, B1.1: hobbies, work, learning.
 PB_MCQ = original("compare-past-1.csv", "have never ridden")
@@ -316,7 +328,7 @@ twin(PB_MCQ, "mcq", "Choose the correct option: I ___ a marathon. Never in my li
     "have never ran", "has never run"], why=(
         "Experience up to now: *have never* + 3rd form, *run*.",
         "Pieredze līdz šim brīdim: *have never* + 3. forma, *run*."))
-twin(PB_PAST, "gap", "Complete with one word: I ___ that office from 2018 to 2021. Now I work elsewhere. (manage)", "managed",
+twin(PB_PAST, "gap", "Use the verb in brackets: I ___ that office from 2018 to 2021. Now I work elsewhere. (manage)", "managed",
      why=("The finished period *from 2018 to 2021* takes *managed*.",
           "Pabeigtam periodam *from 2018 to 2021* lieto *managed*."))
 twin(PB_QUESTION, "gap", "Complete with one word in each gap: ___ you ___ the workshop yesterday? (enjoy)", "Did / enjoy",
@@ -353,7 +365,7 @@ twin(NB2_TEXT, "text", "Correct the sentence. Keep *had*: We had been knowing ea
 
 # The final one-task gaps: narrative B1.1 and comparison B1.2.
 N1_ORDER = original("compare-past-1.csv", "it was raining when we left the house")
-order(N1_ORDER, "it was snowing when we reached the hotel", clause_orders("it was snowing", "we reached the hotel", "when"), BACKGROUND)
+order(N1_ORDER, "the shop was closing when we got there", clause_orders("the shop was closing", "we got there", "when"), BACKGROUND)
 C1_ORDER = original("comparison-1.csv", "this year was not as busy as last year")
 order(C1_ORDER, "this winter was not as cold as last winter", ["last winter was not as cold as this winter"], (
     "*Not as cold as* compares two winters. Either winter can be the subject with these tiles.",
@@ -369,10 +381,12 @@ def role(row):
 def validate():
     assert len(rows) == len(PROVENANCE) == 50
     kinds = Counter(r[2] for r in rows)
-    assert kinds == {"order": 20, "mcq": 16, "gap": 8, "text": 6}, kinds
-    assert kinds["order"] / len(rows) >= .4
+    assert kinds == {"order": 14, "mcq": 18, "gap": 12, "text": 6}, kinds
+    assert kinds["order"] / len(rows) >= .25
+    sources = Counter((s["path"], s["locator"]) for s in PROVENANCE)
+    assert max(sources.values()) == 1, [k for k, v in sources.items() if v > 1]   # one twin per source: no clones (Claude's review, 4 November)
     pending_one = {(canonical(r["topic"]), r["level"]) for r in
-                   csv.DictReader((DRAFTS / "pending/twins-1.csv").open(encoding="utf-8-sig"))}
+                   csv.DictReader((DRAFTS / "twins-1.csv").open(encoding="utf-8-sig"))}
     counts = Counter((canonical(r[0]), r[1]) for r in rows)
     assert len(counts) == 16
     assert not (set(counts) & pending_one)
@@ -388,7 +402,7 @@ def validate():
             for variant in accepted:
                 assert Counter(variant.split()) == Counter(row[4].split()), (row[4], variant)
         assert not (len(row) > 9 and row[9]), ("Twins must never retire a published task", row[3], row[9])
-    print("Validated 50 source links, 16 topic-levels, 20 drag tasks (40%), and all alternative tile multisets.")
+    n_order = kinds["order"]; print(f"Validated 50 source links, 16 topic-levels, {n_order} drag tasks ({n_order * 2}%), one twin per source, and all alternative tile multisets.")
 
 
 def write_review():
@@ -396,6 +410,10 @@ def write_review():
     output = list(csv.DictReader((DRAFTS / "pending/twins-2.csv").open(encoding="utf-8-sig")))
     lines = ["# Dvīņi, 2. partija: 50 uzdevumi pārskatīšanai", "",
              "Statuss: melnraksts. Nav pievienots sagatavotajiem jautājumiem vai publicēts.", "",
+             "**Claude labojumi (4. novembris):** katram oriģinālam tikai viens dvīnis (nr. 2, 3, 5, 11, 15 un 20 bija kloni; tagad tie ir citu oriģinālu dvīņi: tukšumi un izvēles uzdevumi); "
+             "instrukcijas bez *one word*, kas izslēdza otru laiku (*Last Saturday we ___ ten kilometres*, *from 2018 to 2021*); *By the time the bell rang, Eva ___* pieņem tikai *had answered*; "
+             "jauktajā nosacījuma teikumā vairs nav *should*; *If I had save a copy, I wouldn't have lost my work*; nedabiskās vārdu secības vairs netiek pieņemtas; "
+             "B1.1 secības uzdevums ir cita aina (*the shop was closing when we got there*). Visas 16 tēmas joprojām sasniedz 10 uzdevumus.", "",
              "16 tēmu un līmeņu pāri; 16 izvēles, 20 vārdu secības, 8 rakstāmu tukšumu un 6 teikuma rakstīšanas uzdevumi.",
              "Vilkšanas uzdevumi: 40%. Katram dvīnim saglabāta oriģināla tēma, līmenis un uzdevuma veids.", "",
              "Oriģināli atspoguļo šī zara sākuma versiju. Tie ir salīdzināšanai, nevis jauniem uzdevumiem paredzēti paraugi bez pārbaudes.",

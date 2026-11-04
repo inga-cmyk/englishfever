@@ -2,6 +2,8 @@
 
 Statuss: melnraksts. Nav pievienots sagatavotajiem jautājumiem vai publicēts.
 
+**Claude labojumi (4. novembris):** katram oriģinālam tikai viens dvīnis (nr. 2, 3, 5, 11, 15 un 20 bija kloni; tagad tie ir citu oriģinālu dvīņi: tukšumi un izvēles uzdevumi); instrukcijas bez *one word*, kas izslēdza otru laiku (*Last Saturday we ___ ten kilometres*, *from 2018 to 2021*); *By the time the bell rang, Eva ___* pieņem tikai *had answered*; jauktajā nosacījuma teikumā vairs nav *should*; *If I had save a copy, I wouldn't have lost my work*; nedabiskās vārdu secības vairs netiek pieņemtas; B1.1 secības uzdevums ir cita aina (*the shop was closing when we got there*). Visas 16 tēmas joprojām sasniedz 10 uzdevumus.
+
 16 tēmu un līmeņu pāri; 16 izvēles, 20 vārdu secības, 8 rakstāmu tukšumu un 6 teikuma rakstīšanas uzdevumi.
 Vilkšanas uzdevumi: 40%. Katram dvīnim saglabāta oriģināla tēma, līmenis un uzdevuma veids.
 
@@ -51,47 +53,39 @@ Oriģināla varianti / pieņemtās secības: also accepted: when i arrived she h
 
 **LV:** *Had* + 3. forma norāda agrāko notikumu; *when* ievada vēlāko notikumu.
 
-## 2. Narrative tenses: past simple, past continuous, past perfect · B1.2 · order
+## 2. Narrative tenses: past simple, past continuous, past perfect · B1.2 · gap
 
-**Loma:** check.
+**Loma:** use.
 
-**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 45).
-> Put the words in order.
+**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 38).
+> Use the past simple, past continuous or past perfect: I got up and ___ out of the window. The sun ___. (look / shine)
 
-Oriģināla atslēga: she had already left when i arrived
+Oriģināla atslēga: looked / was shining
 
-Oriģināla varianti / pieņemtās secības: also accepted: when i arrived she had already left | i had already left when she arrived | when she arrived i had already left
+**Dvīnis:** Use the verbs in brackets: I opened the curtains and ___ outside. It ___ heavily. (look / snow)
 
-**Dvīnis:** Put the words in order.
+**Atbilde:** looked / was snowing
 
-**Atbilde:** the meeting had begun when I joined
+**EN:** The event: past simple (*looked*); what was going on at that time: *was* + *-ing* (*was snowing*).
 
-**Varianti / citas pieņemtās secības:** also accepted: when I joined the meeting had begun
+**LV:** Notikums: Past Simple (*looked*); kas tobrīd notika: *was + -ing* (*was snowing*).
 
-**EN:** *Had* + 3rd form marks the earlier event; *when* introduces the later event.
+## 3. Narrative tenses: past simple, past continuous, past perfect · B1.2 · gap
 
-**LV:** *Had* + 3. forma norāda agrāko notikumu; *when* ievada vēlāko notikumu.
+**Loma:** use.
 
-## 3. Narrative tenses: past simple, past continuous, past perfect · B1.2 · order
+**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 39).
+> Use the past simple, past continuous or past perfect: We weren't hungry. We ___ lunch. (just / have)
 
-**Loma:** check.
+Oriģināla atslēga: had just had
 
-**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 45).
-> Put the words in order.
+**Dvīnis:** Use the verb in brackets: Tom didn't want a coffee. He ___ one. (just / drink)
 
-Oriģināla atslēga: she had already left when i arrived
+**Atbilde:** had just drunk
 
-Oriģināla varianti / pieņemtās secības: also accepted: when i arrived she had already left | i had already left when she arrived | when she arrived i had already left
+**EN:** Before the moment in the story: *had* + *just* + 3rd form: *had just drunk*.
 
-**Dvīnis:** Put the words in order.
-
-**Atbilde:** the download had begun when I logged in
-
-**Varianti / citas pieņemtās secības:** also accepted: when I logged in the download had begun
-
-**EN:** *Had* + 3rd form marks the earlier event; *when* introduces the later event.
-
-**LV:** *Had* + 3. forma norāda agrāko notikumu; *when* ievada vēlāko notikumu.
+**LV:** Pirms stāsta brīža: *had + just* + 3. forma: *had just drunk*.
 
 ## 4. Narrative tenses: past simple, past continuous, past perfect · B1.2 · gap
 
@@ -110,26 +104,22 @@ Oriģināla atslēga: had / got
 
 **LV:** *Had just started*: nodarbība bija sākusies pirms pievienošanās. Katrā tukšumā ieraksti vienu vārdu.
 
-## 5. Narrative tenses: past simple, past continuous, past perfect · B1.2 · order
+## 5. Narrative tenses: past simple, past continuous, past perfect · B1.2 · gap
 
-**Loma:** check.
+**Loma:** use.
 
-**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 45).
-> Put the words in order.
+**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 42).
+> Use the past simple, past continuous or past perfect: Kate wasn't at home when I phoned. She ___ at her mother's house at that moment. (be)
 
-Oriģināla atslēga: she had already left when i arrived
+Oriģināla atslēga: was
 
-Oriģināla varianti / pieņemtās secības: also accepted: when i arrived she had already left | i had already left when she arrived | when she arrived i had already left
+**Dvīnis:** Use the verb in brackets: Leo didn't answer my call. He ___ in a meeting at that moment. (be)
 
-**Dvīnis:** Put the words in order.
+**Atbilde:** was
 
-**Atbilde:** the concert had begun when we arrived
+**EN:** At that moment, not before it: past simple *was*.
 
-**Varianti / citas pieņemtās secības:** also accepted: when we arrived the concert had begun
-
-**EN:** *Had* + 3rd form marks the earlier event; *when* introduces the later event.
-
-**LV:** *Had* + 3. forma norāda agrāko notikumu; *when* ievada vēlāko notikumu.
+**LV:** Tajā brīdī, nevis pirms tā: Past Simple *was*.
 
 ## 6. Mixed conditionals · B2.1 · order
 
@@ -203,11 +193,11 @@ Oriģināla atslēga: had learned | had learnt / would be | 'd be
 
 **Dvīnis:** Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know)
 
-**Atbilde:** had / taken / would | could | might | should / know
+**Atbilde:** had / taken / would | could | might / know
 
-**EN:** *Had taken* changes the past. *Would know* gives a present result; *could/might* express possibility and *should* an expected result.
+**EN:** *Had taken* changes the past. *Would know* gives a present result; *could/might* express possibility.
 
-**LV:** *Had taken* maina pagātni. *Would know* izsaka sekas tagad; *could/might* izsaka iespējamību, *should* norāda gaidāmo rezultātu.
+**LV:** *Had taken* maina pagātni. *Would know* izsaka sekas tagad; *could/might* izsaka iespējamību.
 
 ## 10. Reporting verbs (suggest, admit, promise...) · B2.2 · order
 
@@ -228,24 +218,26 @@ Oriģināla atslēga: she apologised for missing the meeting
 
 **LV:** *Apologise for + -ing*: atvainoties par darbību.
 
-## 11. Reporting verbs (suggest, admit, promise...) · B2.2 · order
+## 11. Reporting verbs (suggest, admit, promise...) · B2.2 · mcq
 
 **Loma:** check.
 
-**Oriģināls:** `app/content/items.json` (var-rv-b22-order-01).
-> Report an apology. Start with She.
+**Oriģināls:** `app/content/items.json` (rv-B22-4a).
+> Which sentence is NOT correct?
 
-Oriģināla atslēga: she apologised for missing the meeting
+Oriģināla atslēga: She suggested to go by train.
 
-**Dvīnis:** Put the words in order.
+Oriģināla varianti / pieņemtās secības: She suggested going by train. | She suggested that we go by train. | She suggested we should go by train.
 
-**Atbilde:** she apologised for deleting the photos
+**Dvīnis:** Which sentence is NOT correct?
 
-**Varianti / citas pieņemtās secības:** also accepted: for deleting the photos she apologised
+**Atbilde:** He suggested to meet on Friday.
 
-**EN:** *Apologise for* + *-ing*: say sorry for an action.
+**Varianti / citas pieņemtās secības:** She offered to drive us home. | They admitted breaking the window. | I promised to call back later.
 
-**LV:** *Apologise for + -ing*: atvainoties par darbību.
+**EN:** *suggest* + *-ing* or *that*: *He suggested meeting on Friday*.
+
+**LV:** *suggest + -ing* vai *that*: *He suggested meeting on Friday.*
 
 ## 12. Reporting verbs (suggest, admit, promise...) · B2.2 · mcq
 
@@ -302,22 +294,26 @@ Oriģināla atslēga: whether the plan will work remains uncertain
 
 **LV:** Jautājuma palīgteikumā teikuma priekšmets ir pirms darbības vārda: *whether the payment has arrived*.
 
-## 15. Indirect questions, more uses (I don't know what to do) · C1.1 · order
+## 15. Indirect questions, more uses (I don't know what to do) · C1.1 · mcq
 
 **Loma:** check.
 
-**Oriģināls:** `app/content/items.json` (var-ia-c11-order-01).
-> Use an embedded yes/no question as the subject. Start with Whether.
+**Oriģināls:** `app/content/items.json` (ia-C11-4a).
+> Which sentence is NOT correct?
 
-Oriģināla atslēga: whether the plan will work remains uncertain
+Oriģināla atslēga: We talked about how could we improve the results.
 
-**Dvīnis:** Put the words in order.
+Oriģināla varianti / pieņemtās secības: We talked about how to improve the results. | We talked about how we could improve the results. | We talked about whether to improve the results.
 
-**Atbilde:** whether the venue is available remains uncertain
+**Dvīnis:** Which sentence is NOT correct?
 
-**EN:** A clause beginning with *whether* can be the subject: *whether the venue is available*.
+**Atbilde:** We discussed where should we hold the party.
 
-**LV:** Palīgteikums ar *whether* var būt teikuma priekšmets: *whether the venue is available*.
+**Varianti / citas pieņemtās secības:** Nobody knows why the train stopped. | It depends on whether the client agrees. | I wonder what the new boss will say.
+
+**EN:** Inside a question clause, the subject comes before the verb: *where we should hold the party*.
+
+**LV:** Jautājuma palīgteikumā teikuma priekšmets ir pirms darbības vārda: *where we should hold the party*.
 
 ## 16. Indirect questions, more uses (I don't know what to do) · C1.1 · mcq
 
@@ -399,22 +395,18 @@ Oriģināla varianti / pieņemtās secības: were knowing | was knowing
 
 **LV:** Zināšanu stāvoklim lieto *knew*, nevis *was/were knowing*.
 
-## 20. Past simple or past continuous · B1.1 · order
+## 20. Past simple or past continuous · B1.1 · gap
 
-**Loma:** check.
+**Loma:** use.
 
-**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 16).
-> Put the words in order.
+**Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 11).
+> Use the past simple or the past continuous: I ___ along the road when I ___ Dan. So I stopped, and we talked. (walk / see)
 
-Oriģināla atslēga: the phone rang while i was having a shower
+Oriģināla atslēga: was walking / saw
 
-Oriģināla varianti / pieņemtās secības: also accepted: while i was having a shower the phone rang
+**Dvīnis:** Use the verbs in brackets: I ___ to work when I ___ a strange noise from the engine. So I stopped the car. (drive / hear)
 
-**Dvīnis:** Put the words in order.
-
-**Atbilde:** the phone rang while I was painting
-
-**Varianti / citas pieņemtās secības:** also accepted: while I was painting the phone rang | I was painting while the phone rang | while the phone rang I was painting
+**Atbilde:** was driving / heard
 
 **EN:** *Was/were* + *-ing* gives the activity in progress; the other verb gives the event during it.
 
@@ -429,13 +421,13 @@ Oriģināla varianti / pieņemtās secības: also accepted: while i was having a
 
 Oriģināla atslēga: walked
 
-**Dvīnis:** Complete with one word: Yesterday we ___ all the way from the hotel to the museum and back. (walk)
+**Dvīnis:** Use the verb in brackets: Last Saturday we ___ ten kilometres along the coast. (walk)
 
 **Atbilde:** walked
 
-**EN:** *Walked* presents the whole completed journey yesterday.
+**EN:** A finished walk with its whole distance: past simple *walked*.
 
-**LV:** *Walked* izsaka visu vakar pabeigto ceļu.
+**LV:** Pabeigta pastaiga ar visu attālumu: Past Simple *walked*.
 
 ## 22. Third conditional (if + had done, would have done) · B2.1 · mcq
 
@@ -471,7 +463,7 @@ Oriģināla varianti / pieņemtās secības: If the team had been better prepare
 
 **Dvīnis:** Which sentence has a mistake?
 
-**Atbilde:** If I had save a copy, I would have kept the original file.
+**Atbilde:** If I had save a copy, I wouldn't have lost my work.
 
 **Varianti / citas pieņemtās secības:** If she had booked earlier, she would have paid less for the flight. | If we had trained harder, we could have finished the race together. | If he had checked the date, he would have attended the right meeting.
 
@@ -610,8 +602,6 @@ Oriģināla atslēga: what have you been doing all day
 
 **Atbilde:** what have you been cooking all morning
 
-**Varianti / citas pieņemtās secības:** also accepted: all morning what have you been cooking
-
 **EN:** Question order: *what have you been cooking*; the activity continues over a period.
 
 **LV:** Jautājuma vārdu secība: *what have you been cooking*; darbība ilgst noteiktu laiku.
@@ -667,8 +657,6 @@ Oriģināla atslēga: she spent half an hour waiting for the bus
 
 **Atbilde:** she spent half an hour choosing a jacket
 
-**Varianti / citas pieņemtās secības:** also accepted: half an hour she spent choosing a jacket
-
 **EN:** Say *half an hour*: *hour* begins with a vowel sound.
 
 **LV:** Lieto *half an hour*: *hour* sākas ar patskaņa skaņu.
@@ -685,8 +673,6 @@ Oriģināla atslēga: what a lovely surprise to see you here
 **Dvīnis:** Put the words in order.
 
 **Atbilde:** what a useful skill to have at work
-
-**Varianti / citas pieņemtās secības:** also accepted: at work what a useful skill to have
 
 **EN:** *What a* + adjective + singular noun: *what a useful skill*.
 
@@ -819,13 +805,13 @@ Oriģināla varianti / pieņemtās secības: has been raining | had been rain
 
 Oriģināla atslēga: had written
 
-**Dvīnis:** Complete the sentence: By the end of yesterday's lesson, Eva ___ all ten questions. (answer)
+**Dvīnis:** Use the verb in brackets: By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)
 
-**Atbilde:** had answered | answered
+**Atbilde:** had answered
 
-**EN:** *Had answered* emphasises completion before the past deadline. *Answered* can also describe the completed result.
+**EN:** *By the time* + past event: what was finished before it takes *had* + 3rd form.
 
-**LV:** *Had answered* uzsver pabeigtību pirms pagātnes robežpunkta. Arī *answered* var izteikt pabeigto rezultātu.
+**LV:** *By the time* + pagātnes notikums: tam, kas jau bija pabeigts, lieto *had* + 3. formu.
 
 ## 42. Present perfect or past simple · B1.1 · mcq
 
@@ -857,7 +843,7 @@ Oriģināla varianti / pieņemtās secības: have never rode | has never ridden
 
 Oriģināla atslēga: worked
 
-**Dvīnis:** Complete with one word: I ___ that office from 2018 to 2021. Now I work elsewhere. (manage)
+**Dvīnis:** Use the verb in brackets: I ___ that office from 2018 to 2021. Now I work elsewhere. (manage)
 
 **Atbilde:** managed
 
@@ -971,9 +957,9 @@ Oriģināla varianti / pieņemtās secības: also accepted: when we left the hou
 
 **Dvīnis:** Put the words in order.
 
-**Atbilde:** it was snowing when we reached the hotel
+**Atbilde:** the shop was closing when we got there
 
-**Varianti / citas pieņemtās secības:** also accepted: when we reached the hotel it was snowing | we reached the hotel when it was snowing | when it was snowing we reached the hotel
+**Varianti / citas pieņemtās secības:** also accepted: when we got there the shop was closing | we got there when the shop was closing | when the shop was closing we got there
 
 **EN:** *Was/were* + *-ing* gives the activity in progress; the other verb gives the event during it.
 

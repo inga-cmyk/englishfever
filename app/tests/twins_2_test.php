@@ -10,8 +10,7 @@ foreach (glob('../docs/task-drafts/*.csv') as $f) {
     $r = CustomItems::import(file_get_contents($f), true);
     if ($r['bad']) throw new Exception('Existing CSV rejected: ' . basename($f));
 }
-$r = CustomItems::import(file_get_contents('../docs/task-drafts/pending/twins-1.csv'), true);
-if ($r['bad']) throw new Exception('Batch 1 rejected');
+// batch 1 (docs/task-drafts/twins-1.csv) is published since 4 November, so the loop above has imported it
 function counts() {
     $items = array_merge(Content::items(), array_map(fn($r) => CustomItems::find($r['id']), CustomItems::listAll()['draft']));
     $counts = [];

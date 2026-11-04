@@ -54,19 +54,19 @@ def contractions(sentences):
 
 # ── Mixed conditionals · B2.2 ─────────────────────────────────────────────────────────────────────────────
 MIX = ("A quality now, a result in the past: *if* + past (*weren't*), *would have* + 3rd form.",
-       "Īpašība tagad, sekas pagātnē: *if* + pagātne (*weren't*), *would have* + 3. forma.")
+       "Rakstura īpašība tagad un sekas pagātnē: *if* + Past Simple (*weren't*), *would have* + 3. forma.")
 twin(src_built("cm-B22-1a"), "mcq", "Complete: 'If I weren't so impatient, I ___ sold my flat so cheaply last spring.'",
      "wouldn't have", ["wouldn't", "won't have", "hadn't"], why=MIX)
-twin(src_built("cm-B22-3a-r2"), "text", "Rewrite as one sentence with *if*: She didn't learn German at school, so she can't understand her new colleagues now.",
-     contractions([f"If she had {v} German at school, she {r} understand her new colleagues now." for v in ("learned", "learnt") for r in ("would be able to", "could")]
-                  + [f"She {r} understand her new colleagues now if she had {v} German at school." for v in ("learned", "learnt") for r in ("would be able to", "could")]),
-     why=("A past event changed (*had learned*), a result now (*would be able to / could*).", "Mainīts pagātnes notikums (*had learned*), sekas tagad (*would be able to / could*)."))
-twin(src_built("cm-B22-4a"), "mcq", "Which sentence is NOT correct?", "If she is more patient, she wouldn't have shouted at him.",
+twin(src_built("cm-B22-3a-r2"), "text", "Imagine it was different. Rewrite as one sentence with *if*: She didn't learn German at school, so she can't understand her new colleagues now.",
+     contractions([f"If she had {v} German at school, she {r} understand her new colleagues now." for v in ("learned", "learnt") for r in ("would be able to", "could", "would")]
+                  + [f"She {r} understand her new colleagues now if she had {v} German at school." for v in ("learned", "learnt") for r in ("would be able to", "could", "would")]),
+     why=("Imagine a different past (*had learned*) with a result now (*would understand / could understand / would be able to understand*).", "Iztēlojamies citādu pagātni (*had learned*) un tās sekas tagad (*would understand / could understand / would be able to understand*)."))
+twin(src_built("cm-B22-4a"), "mcq", "Which sentence is NOT correct?", "If she would be more patient, she wouldn't have shouted at him.",
      ["If he spoke Italian, he would have enjoyed the tour more.", "If we hadn't sold the car, we would drive to the coast now.", "If I had slept well, I wouldn't feel so tired today."],
-     why=("A quality that is not true now: *If she were more patient*, not *is*.", "Īpašība, kas tagad nav patiesa: *If she were more patient*, nevis *is*."))
-twin(src_built("cm-B22-2a-r2"), "mcq", "'If he were more confident, he would have asked for a pay rise.' What does it say?",
-     "He isn't confident, so he didn't ask.", ["He is confident, but he didn't ask.", "He will be more confident next year.", "He isn't confident, but he asked."],
-     why=("*were more confident* = he is not confident (now, in general); *would have asked* = he did not ask.", "*were more confident* = viņš nav pārliecināts (tagad, kopumā); *would have asked* = viņš nepajautāja."))
+     why=("No *would* after *if*: *If she were more patient*. A quality now, a result in the past.", "Aiz *if* nelieto *would*: *If she were more patient*. Rakstura īpašība tagad, sekas pagātnē."))
+twin(src_built("cm-B22-2a-r2"), "mcq", "He isn't a confident person, so he didn't ask for a pay rise. Choose the correct sentence.",
+     "If he were more confident, he would have asked for a pay rise.", ["If he were more confident, he would asked for a pay rise.", "If he would be more confident, he would have asked for a pay rise.", "If he were more confident, he will have asked for a pay rise."],
+     why=("A quality now (*were more confident*), a result in the past (*would have asked*).", "Rakstura īpašība tagad (*were more confident*), sekas pagātnē (*would have asked*)."))
 
 # ── Mixed conditionals · C1.1 ─────────────────────────────────────────────────────────────────────────────
 INV = ("*Had* + subject + 3rd form = *If* + subject + *had* + 3rd form; the result is about now.", "*Had* + teikuma priekšmets + 3. forma = *If* + teikuma priekšmets + *had* + 3. forma; sekas ir par tagadni.")
@@ -77,89 +77,97 @@ twin(src_built("cm-C11-3a-r2"), "text", "Rewrite starting with *Had*: If I had r
 twin(src_built("cm-C11-4a-r2"), "mcq", "Which sentence is NOT correct?", "Hadn't she missed the train, she'd be here now.",
      ["Had he trained harder, he would be in the team now.", "Were she less shy, she would have spoken up.", "Had they not moved, they would live next door now."],
      why=("In the negative, *not* comes after the subject: *Had she not missed the train*.", "Noliegumā *not* liek aiz teikuma priekšmeta: *Had she not missed the train*."))
-twin(src_built("cm-C11-5a"), "mcq", "You write a formal report about a past decision with an effect today. Choose the correct option.",
+twin(src_built("cm-C11-5a"), "mcq", "Choose the correct option.",
      "Had the software been tested earlier, we would not be fixing these errors now.",
-     ["If the software had tested earlier, we would not be fixing these errors now.", "Had the software tested earlier, we would not be fixing these errors now.",
+     ["Had the software be tested earlier, we would not be fixing these errors now.", "Had the software been tested earlier, we would not fixing these errors now.",
       "Had the software been tested earlier, we will not be fixing these errors now."],
-     why=("The software was tested by someone: *had been tested*; the result now: *would not be fixing*.", "Programmu kāds pārbaudīja: *had been tested*; sekas tagad: *would not be fixing*."))
+     why=("Imagine earlier testing: *had been tested* (passive). The result now: *would not be fixing*.", "Iztēlojamies agrāku programmas pārbaudi: *had been tested* (ciešamā kārta). Sekas tagad: *would not be fixing*."))
 
 # ── Reported statements · B2.1 ────────────────────────────────────────────────────────────────────────────
 twin(src_built("rs-B21-3a-r2"), "text", "Report this. Start with *The coach told us*: 'You must warm up before every match.'",
      ["The coach told us we had to warm up before every match.", "The coach told us that we had to warm up before every match.",
-      "The coach told us we must warm up before every match.", "The coach told us that we must warm up before every match."],
-     why=("*must* becomes *had to* (or stays *must*); *you* becomes *we*.", "*must* kļūst par *had to* (vai paliek *must*); *you* kļūst par *we*."))
+      "The coach told us we must warm up before every match.", "The coach told us that we must warm up before every match.", "The coach told us to warm up before every match."],
+     why=("Report the obligation with *had to* or *must*, or the instruction with *told us to warm up*.", "Pienākumu atstāsta ar *had to* vai *must*, norādījumu arī ar *told us to warm up*."))
 twin(src_built("rs-B21-4a"), "mcq", "Which sentence is NOT correct?", "He told that the shop was closed.",
      ["She said that the bus was full.", "They told me the film had started.", "He told us he was moving abroad."],
-     why=("*tell* needs a person: *He told me / us that…*; or use *said*.", "Aiz *tell* jābūt personai: *He told me / us that…*; vai lieto *said*."))
-twin(src_built("rs-B21-5a"), "mcq", "Report this naturally: 'I'll call you as soon as I land,' my sister said.",
+     why=("*tell* needs a person: *He told me / us that…*; or use *said*.", "Aiz *tell* norāda adresātu: *He told me / us that…*. Bez adresāta lieto *said*."))
+twin(src_built("rs-B21-5a"), "mcq", "Choose the correct report of your sister's words to you: 'I'll call you as soon as I land.'",
      "My sister said she would call me as soon as she landed.",
-     ["My sister said she will call me as soon as she will land.", "My sister said I would call her as soon as I landed.", "My sister said she would calling me as soon as she landed."],
-     why=("*will* becomes *would*; after *as soon as* no *will*; *I* becomes *she* and *you* becomes *me*.", "*will* kļūst par *would*; aiz *as soon as* nav *will*; *I* kļūst par *she*, *you* par *me*."))
-twin(src_built("rs-B21-1a-r2"), "mcq", "Report this: 'You might need a visa,' the agent said.", "The agent said I might need a visa.",
-     ["The agent said I might needed a visa.", "The agent said I might to need a visa.", "The agent said me I might need a visa."],
-     why=("*might* stays *might* + base form; *say* without a person.", "*might* paliek *might* + pamatforma; *say* bez personas."))
+     ["My sister said she would call me as soon as she would land.", "My sister said she would call me as soon as she did landed.", "My sister said she would calling me as soon as she landed."],
+     why=("*will* becomes *would*; after *as soon as* no *would*: *as soon as she landed*.", "*will* kļūst par *would*; aiz *as soon as* nelieto *would*: *as soon as she landed*."))
+twin(src_built("rs-B21-1a-r2"), "mcq", "Choose the correct report of the agent's words to you: 'You might need a visa.'", "The agent said I might need a visa.",
+     ["The agent said I mighted need a visa.", "The agent said I might to need a visa.", "The agent said me I might need a visa."],
+     why=("*might* does not change, and the base form follows it. A listener after *say* takes *to*: *said to me*, not *said me*.", "*might* nemainās, aiz tā lieto pamatformu. Adresātu aiz *say* pievieno ar *to*: *said to me*, nevis *said me*."))
 
 # ── Reported questions and requests · B2.2 ────────────────────────────────────────────────────────────────
 WORD = ("In a reported question the word order is like a statement: *how she should start* or *how to start*.", "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: *how she should start* vai *how to start*.")
-twin(src_built("rq-B22-1a-r2"), "mcq", "Which report is correct? 'How should I start?' she asked me.", "She asked me how to start.",
-     ["She asked me how should she start.", "She asked me how she starts.", "She asked me how to starting."], why=WORD)
+twin(src_built("rq-B22-1a-r2"), "mcq", "Choose the correct report of her question to you: 'How should I start?'", "She asked me how to start.",
+     ["She asked me how should she start.", "She asked me how she should starts.", "She asked me how to starting."], why=WORD)
 twin(src_built("rq-B22-3a-r2"), "text", "Report this. Start with *They asked*: 'What time should we arrive?'",
-     ["They asked what time they should arrive.", "They asked what time to arrive."], why=WORD)
+     ["They asked what time they should arrive.", "They asked what time to arrive.", "They asked what time we should arrive.",
+      "They asked me what time they should arrive.", "They asked us what time we should arrive.", "They asked me what time to arrive.", "They asked us what time to arrive."],
+     why=("Statement order: *what time they should arrive*, or the short *what time to arrive*.", "Apgalvojuma secība: *what time they should arrive* vai īsāk *what time to arrive*."))
 twin(src_built("rq-B22-4a-r2"), "mcq", "Which sentence is NOT correct?", "He asked whether or not was I coming.",
      ["She asked if the hotel had a pool.", "They asked how much the tickets cost.", "He asked whether I had finished."],
      why=("After *whether (or not)*: subject + verb: *whether or not I was coming*.", "Aiz *whether (or not)*: teikuma priekšmets + darbības vārds: *whether or not I was coming*."))
-twin(src_built("rq-B22-5a"), "mcq", "You write meeting minutes: 'Have the invoices been sent?' Mr Ozols asked. Choose the correct option.",
+twin(src_built("rq-B22-5a"), "mcq", "Choose the correct report of Mr Ozols's question: 'Have the invoices been sent?'",
      "Mr Ozols asked whether the invoices had been sent.",
      ["Mr Ozols asked have the invoices been sent.", "Mr Ozols asked whether had the invoices been sent.", "Mr Ozols asked that the invoices had been sent."],
-     why=("A yes/no question: *whether* + statement order, one tense back: *had been sent*.", "Jā / nē jautājums: *whether* + apgalvojuma secība, laiks vienu soli atpakaļ: *had been sent*."))
+     why=("A yes/no question: *whether* (or *if*) + statement order; here *had been sent*.", "Jā / nē jautājumu ievada ar *whether* (vai *if*) un apgalvojuma vārdu secību; šeit *had been sent*."))
 
 # ── Reporting verbs · C1.2 ────────────────────────────────────────────────────────────────────────────────
-twin(src_built("rv-C12-1a-r2"), "mcq", "Which sentence reports this: 'Why don't we take a taxi?'", "She suggested taking a taxi.",
-     ["She suggested us to take a taxi.", "She suggested to take a taxi.", "She suggested take a taxi."],
-     why=("*suggest* + *-ing* (or *that* + clause), never *suggest (someone) to*.", "*suggest* + *-ing* (vai *that* + palīgteikums), nekad *suggest (someone) to*."))
-twin(src_built("rv-C12-3a-r3"), "text", "Report with a suitable reporting verb: 'Don't forget to bring your passport,' my mother said.",
-     ["My mother reminded me to bring my passport.", "My mother told me to bring my passport.", "My mother reminded me not to forget my passport.",
-      "My mother told me not to forget my passport.", "My mother warned me not to forget my passport."],
-     why=("*remind / tell* someone *to* do something; *warn* someone *not to*.", "*remind / tell* kādu *to* + darbības vārds; *warn* kādu *not to*."))
+twin(src_built("rv-C12-1a-r2"), "mcq", "Which sentence reports this advice: 'If I were you, I'd get a second opinion before the operation.'", "She advised me to get a second opinion before the operation.",
+     ["She advised me getting a second opinion before the operation.", "She suggested me to get a second opinion before the operation.", "She advised to me get a second opinion before the operation."],
+     why=("*advise* + person + *to* + verb; *suggest* never takes a person + *to*.", "*advise* + persona + *to* + darbības vārds; aiz *suggest* nekad nav persona + *to*."))
+twin(src_built("rv-C12-3a-r3"), "text", "My colleague told me: 'You really should have the figures checked before you submit the report.' Report it, starting with *My colleague urged me*.",
+     ["My colleague urged me to have the figures checked before submitting the report.", "My colleague urged me to have the figures checked before I submitted the report.",
+      "My colleague urged me to have the figures checked before I submit the report.", "My colleague urged me to get the figures checked before submitting the report.",
+      "My colleague urged me to get the figures checked before I submitted the report."],
+     why=("*urge* + person + *to* + verb: *urged me to have the figures checked* (= arrange for someone to check them).", "*urge* + persona + *to* + darbības vārds: *urged me to have the figures checked* (= panākt, lai skaitļus pārbauda)."))
 twin(src_built("rv-C12-4a-r2"), "mcq", "Which sentence has a mistake?", "She threatened calling the police.",
      ["He promised to pay me back.", "He admitted that he had lied.", "They accused him of cheating."],
      why=("*threaten* + *to* + verb: *She threatened to call the police*.", "*threaten* + *to* + darbības vārds: *She threatened to call the police*."))
-twin(src_built("rv-C12-5a-r2"), "mcq", "You report in formal English: 'The delivery was three days late,' the client said. Choose the correct option.",
+twin(src_built("rv-C12-5a-r2"), "mcq", "Which sentence reports the client's complaint: 'The delivery was three days late.'",
      "The client complained that the delivery had been three days late.",
-     ["The client complained about the delivery had been three days late.", "The client complained to be three days late the delivery.", "The client complained me that the delivery was three days late."],
-     why=("*complain (to someone) that* + clause, one tense back: *had been*.", "*complain (to someone) that* + palīgteikums, laiks vienu soli atpakaļ: *had been*."))
+     ["The client complained about the delivery had been three days late.", "The client complained that the delivery had be three days late.", "The client complained me that the delivery had been three days late."],
+     why=("*complain that* + clause, here *had been*; a listener takes *to*: *complained to me*.", "*complain that* + palīgteikums, šeit *had been*; adresātu pievieno ar *to*: *complained to me*."))
 
 # ── Indirect questions, more uses · B2.2 ──────────────────────────────────────────────────────────────────
 TO = ("Question word + *to* + base form: *where to go* = where we should go.", "Jautājamais vārds + *to* + pamatforma: *where to go* = kur mums vajadzētu iet.")
-twin(src_built("ia-B22-1a"), "mcq", "Which is correct? 'We weren't sure ___.'", "where to go", ["where to going", "where go we", "where to we go"], why=TO)
+twin(src_built("ia-B22-1a"), "mcq", "Which is correct? 'We weren't sure ___.'", "where to go", ["where to going", "where go we", "where to we go"],
+     why=("Question word + *to* + base form: *where to go* = where we should go.", "Jautājamais vārds + *to* + pamatforma: *where to go* nozīmē, kur mums vajadzētu doties."))
 twin(src_built("ia-B22-3a"), "text", "Join the sentences, using *to*: She didn't know. Who should she ask?",
-     ["She didn't know who to ask.", "She didn't know whom to ask."], why=TO)
+     ["She didn't know who to ask.", "She didn't know whom to ask."],
+     why=("Question word + *to* + base form: *who to ask* = who she should ask; formal *whom to ask*.", "Jautājamais vārds + *to* + pamatforma: *who to ask* nozīmē, kam viņai vajadzētu jautāt; formāli arī *whom to ask*."))
 twin(src_built("ia-B22-4a"), "mcq", "Which sentence is NOT correct?", "We can't decide whether booking the hotel.",
      ["We can't decide where to stay.", "She asked how to reset the router.", "I don't know whether to laugh or cry."],
      why=("*whether* + *to* + base form: *whether to book the hotel*.", "*whether* + *to* + pamatforma: *whether to book the hotel*."))
-twin(src_built("ia-B22-5a"), "mcq", "You write a formal email. Choose the correct option.", "It remains unclear who will pay for the repairs.",
-     ["It remains unclear who will be pay for the repairs.", "It remains unclear who pay will for the repairs.", "It remains unclear who does will pay for the repairs."],
-     why=("Inside the clause, normal order: *who will pay*.", "Palīgteikumā parastā secība: *who will pay*."))
+twin(src_built("ia-B22-5a"), "mcq", "Choose the correct option.", "It remains unclear how we will pay for the repairs.",
+     ["It remains unclear how will we pay for the repairs.", "It remains unclear how we will to pay for the repairs.", "It remains unclear how we do will pay for the repairs."],
+     why=("Statement order in the clause: *how we will pay*, not *how will we pay*.", "Palīgteikumā apgalvojuma secība: *how we will pay*, nevis *how will we pay*."))
 
 # ── Indirect questions, more uses · C1.2 ──────────────────────────────────────────────────────────────────
 EVER = ("*whoever / whatever* = it does not matter who / what; *whoever* is the subject of its verb.", "*whoever / whatever* = nav svarīgi, kas; *whoever* ir sava darbības vārda teikuma priekšmets.")
-twin(src_built("ia-C12-1a"), "mcq", "Choose the correct word: ___ arrives last has to wash the dishes.", "Whoever", ["Whomever", "Whatever", "However"], why=EVER)
+twin(src_built("ia-C12-1a"), "mcq", "Choose the correct word: ___ arrives last has to wash the dishes.", "Whoever", ["Whomever", "Whatever", "However"],
+     why=("*Whoever arrives last* = the person who arrives last; *whoever* is the subject of *arrives*.", "*Whoever arrives last* nozīmē “tas, kurš ierodas pēdējais”; *whoever* ir palīgteikuma teikuma priekšmets, tāpēc neder *whomever*."))
 twin(src_built("ia-C12-3a-r3"), "text", "Write one sentence that starts with *Wh…*: It doesn't matter what you decide. I'll support you.",
-     ["Whatever you decide, I'll support you.", "Whatever you decide, I will support you."], why=EVER)
+     ["Whatever you decide, I'll support you.", "Whatever you decide, I will support you.", "Whatever you decide, you'll have my support.", "Whatever you decide, you will have my support."],
+     why=("*Whatever you decide* = it does not matter what you decide; a comma after it.", "*Whatever you decide* nozīmē “lai ko tu izlemtu”; aiz tā raksta komatu."))
 twin(src_built("ia-C12-4a"), "mcq", "Which sentence is NOT correct?", "Whomever finishes first can go home.",
      ["Invite whoever you like to the party.", "Take whichever seat is free.", "Wherever you go, call me first."],
      why=("The subject of *finishes* is *whoever*, not *whomever*.", "Darbības vārda *finishes* teikuma priekšmets ir *whoever*, nevis *whomever*."))
-twin(src_built("ia-C12-5a"), "mcq", "You write a formal report. Choose the correct option.", "Why the system failed remains to be explained.",
+twin(src_built("ia-C12-5a"), "mcq", "Choose the correct option.", "Why the system failed remains to be explained.",
      ["Why did the system fail remains to be explained.", "Why the system failed it remains to be explained.", "Why failed the system remains to be explained."],
-     why=("A question clause as the subject: statement order, no extra *it*.", "Jautājuma palīgteikums kā teikuma priekšmets: apgalvojuma secība, bez lieka *it*."))
+     why=("A question clause as the subject: statement order, no extra *it*.", "Viss palīgteikums *Why the system failed* ir teikuma priekšmets: apgalvojuma vārdu secība, papildu *it* nav vajadzīgs."))
 
 # ── However, although, because of, then · B1.1 ────────────────────────────────────────────────────────────
 twin(src_csv("conjunctions-1.csv", "I had dinner. After, I watched a film."), "text", "Correct the mistake: I finished work. After, I went to the gym.",
      ["I finished work. Then I went to the gym.", "I finished work. Then, I went to the gym.", "I finished work. After that, I went to the gym.",
-      "I finished work. After that I went to the gym.", "I finished work. Afterwards, I went to the gym.", "I finished work. Afterwards I went to the gym."],
-     why=("*After* alone does not start a sentence: *Then*, *After that* or *Afterwards*.", "Ar *After* vienu pašu teikumu nesāk: *Then*, *After that* vai *Afterwards*."))
-twin(src_csv("conjunctions-1.csv", "___ she studied hard, she failed the exam."), "gap", "Complete with one word: ___ the hotel was expensive, we stayed there for a week.",
-     "Although | Though | While", why=("*Although* + subject + verb: a contrast.", "*Although* + teikuma priekšmets + darbības vārds: pretstats."))
+      "I finished work. After that I went to the gym.", "I finished work. Afterwards, I went to the gym.", "I finished work. Afterwards I went to the gym.",
+      "I finished work. Afterward, I went to the gym.", "I finished work. Afterward I went to the gym.", "I finished work. Later, I went to the gym.", "I finished work. Later I went to the gym."],
+     why=("To introduce the next event, use *Then*, *After that* or *Afterwards*, not *After* on its own.", "Nākamo notikumu ievada ar *Then*, *After that* vai *Afterwards*, nevis ar *After* vienu pašu."))
+twin(src_csv("conjunctions-1.csv", "___ she studied hard, she failed the exam."), "gap", "Complete with one word: ___ it rained all day, we enjoyed our trip.",
+     "Although | Though | While", why=("*Although* + subject + verb: a contrast (rain, but we enjoyed it).", "*Although* + teikuma priekšmets + darbības vārds: pretstats (lija, tomēr mums patika)."))
 twin(src_csv("conjunctions-1.csv", "Before ___ to bed"), "mcq", "Choose the correct option: After ___ the exam, we went out to celebrate.",
      "finishing", ["finish", "to finish"], why=("*before / after* + *-ing*.", "*before / after* + *-ing*."))
 twin(src_csv("conjunctions-1.csv", "We cancelled the trip because of it was raining"), "mcq", "Which sentence is NOT correct?", "The match was cancelled because of it was snowing.",
@@ -186,7 +194,14 @@ def review():
     out = list(csv.reader((DRAFTS / "pending/twins-3.csv").open(encoding="utf-8-sig")))[1:]
     L = ["# Twins, batch 3: 33 tasks for review", "",
          "The nine topic-levels the batch-2 report left under 10 check / use tasks. One twin per source task, the same topic, level and task type, another setting. "
-         "Written to docs/ITEM-WRITING-RULES.md including the lessons of batches 1 and 2. Not added yet: pending/ until the teacher's OK.", ""]
+         "Written to docs/ITEM-WRITING-RULES.md including the lessons of batches 1 and 2. Not added yet: pending/ until the teacher's OK.", "",
+         "**Corrected after the review in agent/review-twins-3 (4 November):** no speaker tag after a quote (11, 12, 13, 16, 18, 20); no setting that adds nothing (8, 16, 20, 24, 28); "
+         "2 asks to imagine it was different and accepts *would understand*; 3 has an unmistakable mistake (*If she would be…*); 4 is a form task with a situation instead of a meaning question; "
+         "9, 14, 26, 29 accept more correct answers (*told us to…*, *asked us what time we…*, *you'll have my support*, *Afterward / Later*); 12 and 13 have cleaner wrong options; "
+         "17 reports advice with *advise*, the source's skill; 18 reports with *urge* + *have something checked*, with one fitting answer and no grammar term; 24 tests word order with *how we will pay*; "
+         "30 has a sentence where only a contrast fits (*___ it rained all day, we enjoyed our trip*); every explanation is about its own task; Latvian words are no longer printed as English examples.", "",
+         "**Not taken over:** a 40% share of drag tasks (not a project rule: a twin keeps its source's type, and these sources are mostly choices); *She advised that I have…* for 17 (a formal subjunctive that reads oddly with *I*; *advise me to* keeps the source's skill); "
+         "*Complete with one word beginning with Al* for 30 (it gives the answer away; a sentence where only a contrast fits is better); practice-only for 20 (it is a check of the form, the project's rule for evidence).", ""]
     cur = None
     for n, (r, s) in enumerate(zip(out, SOURCES), 1):
         if (r[0], r[1]) != cur: cur = (r[0], r[1]); L += ["", f"## {r[0]} · {r[1]}", ""]

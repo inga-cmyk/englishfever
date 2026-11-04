@@ -1,6 +1,6 @@
 """Unreal time and preferences (C1; teacher, 4 November, option A): it's (high / about) time + past, would rather / would sooner.
 Sources: British Council LearnEnglish "Unreal time" (C1), Murphy Units 38 and 60. Our own sentences; exactly one option fits;
-American "I'd rather you not ..." is accepted where the learner types. Saved to pending/ until the teacher has seen them."""
+American "I'd rather you not ..." is accepted where the learner types. Approved by the teacher on 4 November."""
 from lib import *
 
 UT = Topic("Unreal time and preferences (it's high time, I'd rather)")
@@ -23,4 +23,4 @@ UT.text("C1.2", "Write one sentence that starts with *I'd rather you*: Please do
         ["I'd rather you didn't bring your dog to the office.", "I would rather you didn't bring your dog to the office.",
          "I'd rather you not bring your dog to the office.", "I would rather you not bring your dog to the office."], why=YOU)
 
-save("pending/unreal-time-1.csv")
+save("unreal-time-1.csv")   # approved by the teacher on 4 November

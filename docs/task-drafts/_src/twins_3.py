@@ -191,10 +191,10 @@ def validate():
 
 
 def review():
-    out = list(csv.reader((DRAFTS / "pending/twins-3.csv").open(encoding="utf-8-sig")))[1:]
+    out = list(csv.reader((DRAFTS / "twins-3.csv").open(encoding="utf-8-sig")))[1:]
     L = ["# Twins, batch 3: 33 tasks for review", "",
          "The nine topic-levels the batch-2 report left under 10 check / use tasks. One twin per source task, the same topic, level and task type, another setting. "
-         "Written to docs/ITEM-WRITING-RULES.md including the lessons of batches 1 and 2. Not added yet: pending/ until the teacher's OK.", "",
+         "Written to docs/ITEM-WRITING-RULES.md including the lessons of batches 1 and 2. Approved by the teacher on 4 November.", "",
          "**Corrected after the review in agent/review-twins-3 (4 November):** no speaker tag after a quote (11, 12, 13, 16, 18, 20); no setting that adds nothing (8, 16, 20, 24, 28); "
          "2 asks to imagine it was different and accepts *would understand*; 3 has an unmistakable mistake (*If she would be…*); 4 is a form task with a situation instead of a meaning question; "
          "9, 14, 26, 29 accept more correct answers (*told us to…*, *asked us what time we…*, *you'll have my support*, *Afterward / Later*); 12 and 13 have cleaner wrong options; "
@@ -209,9 +209,9 @@ def review():
         L += [f"{n}. *{r[2]}* · {r[3]} → **{r[4].replace(' | ', ' / ')}**{extra}",
               f"   - EN: {r[6]}", f"   - LV: {r[7]}",
               f"   - original ({s['where']}): {s['task']} → {s['answer']}" + (f" · {s['options']}" if s["options"] else "")]
-    (DRAFTS / "pending/twins-3-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+    (DRAFTS / "twins-3-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
 validate()
-save("pending/twins-3.csv")
+save("twins-3.csv")   # approved by the teacher on 4 November
 review()

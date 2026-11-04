@@ -2,13 +2,13 @@
 sentence, a word order or a word bank (the right words and two extra ones), marked "practice only". They are practised in
 learning mode but are never evidence: not in the level test, not in the quick check, not in the count for "Learned" (the
 check / use task with the same sentence is the evidence). The same principle can later be applied to every topic.
-Each keeps the explanation of the batch-3 task with the same sentence. Saved to pending/ with batch 3."""
+Each keeps the explanation of the batch-3 task with the same sentence. Approved by the teacher on 4 November."""
 import csv
 from pathlib import Path
 from lib import Topic, rows, save, learning_task
 
 ROOT = Path(__file__).resolve().parents[3]
-SRC = list(csv.reader((ROOT / "docs/task-drafts/pending/twins-3.csv").open(encoding="utf-8-sig")))[1:]
+SRC = list(csv.reader((ROOT / "docs/task-drafts/twins-3.csv").open(encoding="utf-8-sig")))[1:]
 LINKS = []
 
 
@@ -62,9 +62,9 @@ order(32, "the match was cancelled because it was snowing", ["because it was sno
 bank(33, "___ homeless often sleep in the station in winter.", "The", ["A", "An"])
 
 assert LINKS == list(range(1, 34)), LINKS
-save("pending/learn-drag-3.csv")
+save("learn-drag-3.csv")   # approved by the teacher on 4 November
 
-out = list(csv.reader((ROOT / "docs/task-drafts/pending/learn-drag-3.csv").open(encoding="utf-8-sig")))[1:]
+out = list(csv.reader((ROOT / "docs/task-drafts/learn-drag-3.csv").open(encoding="utf-8-sig")))[1:]
 L = ["# Learning drag tasks for twins batch 3 (33)", "",
      "One new drag task for every sentence of batch 3: the same sentence as a word order, or as a word bank with the right words and two extra ones. "
      "Marked *practice only*: practised in learning mode, never evidence (not in the level test, the quick check or the count for *Learned*). "
@@ -76,5 +76,5 @@ for n, r in enumerate(out, 1):
     extra = (" · " + r[5].replace("bank: ", "words: ").replace(" | ", " / ")) if r[5] else ""
     L += [f"{n}. *{r[2]}* · {r[3]} → **{r[4].replace(' | ', ' / ')}**{extra}" + (" · practice only" if r[11] == "yes" else " · NOT practice only!"),
           f"   - same sentence as batch 3, no. {n}: {s[3]} → {s[4].split(' | ')[0]}"]
-(ROOT / "docs/task-drafts/pending/learn-drag-3-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+(ROOT / "docs/task-drafts/learn-drag-3-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 print("33 learning tasks:", sum(1 for r in out if r[2] == "order"), "word orders,", sum(1 for r in out if r[2] == "gap"), "word banks; practice only:", sum(1 for r in out if r[11] == "yes"))

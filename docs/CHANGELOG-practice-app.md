@@ -3,6 +3,8 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Twins batch 3 (33 tasks)** after ChatGPT's review and Claude's corrections: mixed conditionals B2.2 and C1.1, reported statements and questions, reporting verbs C1.2, *what to do / whoever*, *although / after that*, *the homeless*. All 9 topics reach 10 tasks that count.
+- **First learning drag tasks (33):** the same sentences as batch 3 as word orders and word banks, marked *practice only*: practised in learning mode, never counted as evidence. After uploading: Prepared questions → Add all → Approve all.
 - **Unreal time and preferences: 9 more tasks** (*It's about / high time* + past, *I'd rather / I'd sooner* + base form, *I'd rather you* + past). The topic now has 12 tasks and can reach *Learned*. After uploading: Prepared questions → Add all → Approve all.
 - **50 more tasks for small banks (twins, batch 2):** narrative tenses, past simple or continuous, present perfect or past simple, mixed and third conditionals, reporting verbs, reported questions, embedded questions, auxiliary verbs, articles, comparison. Each of these 16 topics and levels now has 10 tasks that count, so it can reach *Learned*. After uploading: Prepared questions → Add all → Approve all.
 - **The New group shows new topics at every level:** the C1 topic *Unreal time and preferences* was hidden when the level row was set to the learner's own level (e.g. B2). Choosing a new topic outside the chosen levels now ticks its level too.

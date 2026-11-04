@@ -1,4 +1,6 @@
 config/config.php
 var/*.sqlite
+var/*.sqlite-shm
+var/*.sqlite-wal
 var/sessions/
 __pycache__/

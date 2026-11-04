@@ -7,6 +7,7 @@ require 'src/Auth.php';
 spl_autoload_register(function ($c) { $f = 'src/' . $c . '.php'; if (is_file($f)) require_once $f; });
 Config::load(); Db::connect(['driver' => 'sqlite', 'sqlite' => ':memory:']); Db::migrate();
 foreach (glob('../docs/task-drafts/*.csv') as $f) {
+    if (basename($f) === 'twins-2.csv') continue;   // the batch under test: imported below
     $r = CustomItems::import(file_get_contents($f), true);
     if ($r['bad']) throw new Exception('Existing CSV rejected: ' . basename($f));
 }
@@ -21,7 +22,7 @@ function counts() {
 }
 $before = counts();
 
-$r = CustomItems::import(file_get_contents('../docs/task-drafts/pending/twins-2.csv'), true);
+$r = CustomItems::import(file_get_contents('../docs/task-drafts/twins-2.csv'), true);
 if ($r['bad'] || $r['ok'] !== 50 || $r['updated'] || $r['same']) {
     echo json_encode($r, JSON_PRETTY_PRINT); exit(1);
 }
@@ -70,8 +71,8 @@ foreach(array_keys($groups) as $g) {
     echo $g . ': ' . ($before[$g]??0) . ' + ' . (($after[$g]??0)-($before[$g]??0)) . ' = ' . ($after[$g]??0) . "\n";
     if (($before[$g]??0) >= 10 || ($after[$g]??0) !== 10) $bad++;
 }
-if (isset(CustomItems::preparedFiles()['twins-2.csv'])) { $bad++; echo "FAIL: batch is packaged before review\n"; }
-$again=CustomItems::import(file_get_contents('../docs/task-drafts/pending/twins-2.csv'),true);
+// approved on 4 November: from now on it must be offered under Prepared questions (the package copies docs/task-drafts/*.csv)
+$again=CustomItems::import(file_get_contents('../docs/task-drafts/twins-2.csv'),true);
 if ($again['same']!==50 || $again['updated'] || $again['bad']) { $bad++; echo "FAIL: non-idempotent re-import\n"; }
 echo 'Integrated import: 50 new, 0 duplicates, 0 replacements, 0 refused. Roles: ' . json_encode($roles) . "\n";
 echo "$checks grading cases (all gap combinations, all order alternatives, MCQ distractors and invalid controls): $bad failures\n";

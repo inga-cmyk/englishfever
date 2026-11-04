@@ -1,6 +1,6 @@
 # Dvīņi, 2. partija: 50 uzdevumi pārskatīšanai
 
-Statuss: melnraksts. Nav pievienots sagatavotajiem jautājumiem vai publicēts.
+Statuss: Inga apstiprināja 4. novembrī; pievienots sagatavotajiem jautājumiem (docs/task-drafts/twins-2.csv).
 
 **Claude labojumi (4. novembris):** katram oriģinālam tikai viens dvīnis (nr. 2, 3, 5, 11, 15 un 20 bija kloni; tagad tie ir citu oriģinālu dvīņi: tukšumi un izvēles uzdevumi); instrukcijas bez *one word*, kas izslēdza otru laiku (*Last Saturday we ___ ten kilometres*, *from 2018 to 2021*); *By the time the bell rang, Eva ___* pieņem tikai *had answered*; jauktajā nosacījuma teikumā vairs nav *should*; *If I had save a copy, I wouldn't have lost my work*; nedabiskās vārdu secības vairs netiek pieņemtas; B1.1 secības uzdevums ir cita aina (*the shop was closing when we got there*). Visas 16 tēmas joprojām sasniedz 10 uzdevumus.
 

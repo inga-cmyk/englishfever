@@ -9,6 +9,7 @@ tipiska padodas pieder latviski angliski nosauktu pateicas tos pa draugi abos vi
 # File-scoped vocabulary keeps new Latvian words plain without changing older drafts' markup.
 LV_BY_FILE = {"twins-3.csv": set("""viss ierodas neder notikumu papildu tu izlemtu rakstura programmas ievada doties kam lija patika sekas programmu apgalvojuma lieka mums patiesa personai pretstats sava viņai viņš tagad kurš tomēr palikām nepalūdza adresātu adresāts pagātne past simple""".split()),
               "twins-2.csv": set('''aizliegums apgalvojuma atgriezusies atvainoties diskusija ieraksti ievada ilgst izsaka izveidot maina mainoties noteiktu notikumam notikumu otrs pabeigtam pabeigto periodam pieredzi sekas uzsver vakardienas vietai visu ziemas pastaiga past simple continuous present perfect'''.split())}   # the English tense names are the Latvian terms (docs/LATVIAN-TERMS.md)
+LV_BY_FILE["learn-drag-3.csv"] = LV_BY_FILE["twins-3.csv"]   # the learning tasks reuse the batch-3 explanations
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
@@ -185,6 +186,10 @@ def also(topic):
 
 
 PRACTICE_MATCH = re.compile(r"^Match each (base )?(verb|word|adjective) (with|to) its (past|past-simple|3\. form|plural|adverb|comparative)", re.I)
+PRACTICE_IDX = set()   # rows marked "practice only" by the generator: learning tasks, never evidence (teacher, 4 November)
+def learning_task():
+    """The last row is a learning task (Content::role = learn): practised, never in the level test, the quick check or the mastery count."""
+    PRACTICE_IDX.add(len(rows) - 1)
 def practice_only(r):
     """Never in the placement test (teacher, 27 October): form-matching whose pairs can be guessed from how the words look,
     and word-order tasks whose hint gives the tested form away (Start with Had I)."""
@@ -212,7 +217,7 @@ def save(name):
                 old = plain(r[3], r[2]); new = re.sub(r"^Use the past simple: ", "", old)
                 r = r[:9] + ["from: Past simple" + (" | " + old if new != old else "")] + r[10:]; r[0] = "Used to and be used to"; r[3] = new
             if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
-            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_for_file(r[7], name)] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if practice_only(r) else "", ALSO.get(i, "")])
+            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_for_file(r[7], name)] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if (practice_only(r) or i in PRACTICE_IDX) else "", ALSO.get(i, "")])
     print(name, len(rows), "rows")
 
 

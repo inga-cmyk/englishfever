@@ -98,3 +98,8 @@
 - **Every sentence makes sense**, also the wrong options (*If I had save a copy, I would have kept the original file* is illogical even when corrected).
 - **Word-order tasks accept only natural orders.** Two clause orders around *when / while / if* are fine; fronted phrases like *half an hour she spent choosing…* or *all morning what have you been cooking* are not.
 - **Different topics or levels do not reuse the same scene** (*it was snowing when we arrived* and *…when we reached the hotel*).
+
+## Learning drag tasks (teacher, 4 November)
+- Next to a check / use task, a **new drag task with the same sentence** may be added for learning: a word order, or a word bank with the right words and two extra ones. It is marked *practice only* (`learning_task()` in `_src/lib.py`), so `Content::role` gives *learn*: it is practised in learning mode but never counts as evidence (not in the level test, not in the quick check, not in the ten for *Learned*). The check / use task stays the evidence.
+- The same rules apply: only natural word orders (both clause orders around *if / when / because / whatever*), extra words in a bank that do not fit (*won't / had* for *wouldn't have*), the explanation of the task with the same sentence.
+- First set: `pending/learn-drag-3.csv` for twins batch 3 (`_src/learn_drag_3.py`). The principle can be applied to every topic.

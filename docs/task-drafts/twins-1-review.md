@@ -44,9 +44,9 @@ Not added yet. Changed after the second review: no. 9 keeps *would* only; no. 12
 12. *gap* · My suitcase is ___ than yours. (heavy) → **heavier**
    - EN: *-y* changes to *-ier*: *heavy → heavier*.
    - LV: *-y* kļūst par *-ier*: *heavy → heavier*.
-13. *gap* · Today is ___ than yesterday. (hot) → **hotter**
-   - EN: One vowel + one consonant: double the consonant: *hot → hotter*.
-   - LV: Viens *patskanis* + viens līdzskanis: līdzskani dubulto: *hot → hotter*.
+13. *gap* · My new flat is ___ than my old one. (big) → **bigger**
+   - EN: One vowel + one consonant: double the consonant: *big → bigger*.
+   - LV: Viens *patskanis* + viens līdzskanis: līdzskani dubulto: *big → bigger*.
 14. *mcq* · Choose the correct option: Who is the ___ person in your family? → **oldest** · wrong: most old / more old
    - EN: *the* + adjective + *-est*: *the oldest*.
    - LV: *the* + īpašības vārds + *-est*: *the oldest*.

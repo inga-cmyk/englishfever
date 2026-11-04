@@ -28,7 +28,7 @@ CM.mcq("A2.1", "Choose the correct option: This is the ___ day of my holiday.", 
        why=("*good → better → the best*: an irregular adjective.", "*good → better → the best*: neregulārs īpašības vārds."))
 CM.gap("A2.1", "My new phone is ___ than my old one. (cheap)", "cheaper", why=ER)
 CM.gap("A2.1", "My suitcase is ___ than yours. (heavy)", "heavier", why=("*-y* changes to *-ier*: *heavy → heavier*.", "*-y* kļūst par *-ier*: *heavy → heavier*."))
-CM.gap("A2.1", "Today is ___ than yesterday. (hot)", "hotter", why=("One vowel + one consonant: double the consonant: *hot → hotter*.", "Viens patskanis + viens līdzskanis: līdzskani dubulto: *hot → hotter*."))
+CM.gap("A2.1", "My new flat is ___ than my old one. (big)", "bigger", why=("One vowel + one consonant: double the consonant: *big → bigger*.", "Viens patskanis + viens līdzskanis: līdzskani dubulto: *big → bigger*."))
 CM.mcq("A2.1", "Choose the correct option: Who is the ___ person in your family?", "oldest", ["most old", "more old"],
        why=("*the* + adjective + *-est*: *the oldest*.", "*the* + īpašības vārds + *-est*: *the oldest*."))
 CM.text("A2.1", "Correct the mistake: My sister is more young than me.", ["My sister is younger than me.", "My sister is younger than I am."],

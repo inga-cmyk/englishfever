@@ -2,7 +2,7 @@
 // "Comeback": a learner's open mistakes, worked out from their own answers (no extra table, so past results are never touched).
 //
 // A mistake is a task answered wrongly. It is fixed when the learner later answers a similar task (same topic, level within
-// one step, thinking level within one step) correctly: a different sentence. The same task right again counts only on a later
+// one step, thinking level within one step, same construction for used to) correctly: a different sentence. The same task right again counts only on a later
 // day (the same day it is memory, not yet the rule). A task answered wrongly again after it was fixed becomes a mistake again.
 // Placement mistakes above the level the test found are PARKED: they are not offered for Second Chance until the learner
 // practises that level (they mark the edge of the level, not a gap to fix first).
@@ -27,10 +27,12 @@ final class Mistakes
         $corrected = Reports::correctedIds();
         foreach ($rows as $r) {
             $id = $r['item_id'];
+            $task = Content::item($id);
+            if (!$task || Content::role($task) === 'learn') continue;
             $day = date('Y-m-d', (int) $r['created_at']);
             if (!(int) $r['correct'] && isset($corrected[$id])) continue;   // rule C: a mistake on a task that was faulty and has been corrected
             if (!(int) $r['correct']) {
-                if (!isset($open[$id])) $open[$id] = ['skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'tries' => 0, 'day' => $day, 'ses' => (int) $r['psession_id']];
+                if (!isset($open[$id])) $open[$id] = ['item_id' => $id, 'skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'tries' => 0, 'day' => $day, 'ses' => (int) $r['psession_id']];
                 $open[$id]['tries']++;
                 $open[$id]['day'] = $day;
                 foreach ($solid as $sid => $sv) {
@@ -43,15 +45,15 @@ final class Mistakes
                 continue;
             }
             if (isset($open[$id])) {
-                $solid[$id] = ['skill' => $open[$id]['skill'], 'level' => $open[$id]['level'], 'bloom' => $open[$id]['bloom'], 'day' => $day, 'items' => [$id => 1]];
+                $solid[$id] = ['item_id' => $id, 'skill' => $open[$id]['skill'], 'level' => $open[$id]['level'], 'bloom' => $open[$id]['bloom'], 'day' => $day, 'items' => [$id => 1]];
                 unset($open[$id]); $fixed++;
                 continue;
             }
             // Second Chance knows which mistake the task stood for: that one is fixed
             $for = $r['for_item'] ?? null;
-            if ($for !== null && isset($open[$for])) {
+            if ($for !== null && isset($open[$for]) && self::similar($open[$for], $r)) {
                 $m = $open[$for];
-                $solid[$for] = ['skill' => $m['skill'], 'level' => $m['level'], 'bloom' => $m['bloom'], 'day' => $day, 'items' => [$id => 1]];
+                $solid[$for] = ['item_id' => $for, 'skill' => $m['skill'], 'level' => $m['level'], 'bloom' => $m['bloom'], 'day' => $day, 'items' => [$id => 1]];
                 unset($open[$for]); $fixed++;
                 continue;
             }
@@ -64,7 +66,7 @@ final class Mistakes
             }
             if ($best !== null) {
                 $m = $open[$best];
-                $solid[$best] = ['skill' => $m['skill'], 'level' => $m['level'], 'bloom' => $m['bloom'], 'day' => $day, 'items' => [$id => 1]];
+                $solid[$best] = ['item_id' => $best, 'skill' => $m['skill'], 'level' => $m['level'], 'bloom' => $m['bloom'], 'day' => $day, 'items' => [$id => 1]];
                 unset($open[$best]); $fixed++;
                 continue;
             }
@@ -104,9 +106,34 @@ final class Mistakes
 
     private static function similar(array $m, array $r): bool
     {
-        return $m['skill'] === $r['skill']
+        return self::sameConstruction(Content::item($m['item_id']), Content::item($r['item_id']))
+            && $m['skill'] === $r['skill']
             && abs(self::levelIdx($m['level']) - self::levelIdx($r['level'])) <= 1
             && abs((int) $m['bloom'] - (int) $r['bloom']) <= 1;
+    }
+
+    /** Unknown or mixed constructions cannot stand in for one specific rule. */
+    public static function sameConstruction(?array $a, ?array $b): bool
+    {
+        if (!$a || !$b || $a['skill'] !== $b['skill']) return false;
+        if ($a['skill'] !== 'used_to') return true;
+        $ka = self::construction($a); $kb = self::construction($b);
+        return $ka !== null && $ka === $kb;
+    }
+
+    private static function construction(array $it): ?string
+    {
+        $s = $it['sentence'] ?? $it['q'];
+        if ($it['kind'] === 'text') $s = $it['answers'][0][0] ?? '';
+        elseif ($it['kind'] === 'mcq') $s = str_contains($s, '___') ? str_replace('___', $it['correct'], $s) : $it['correct'];
+        elseif ($it['kind'] === 'gap') foreach ($it['answers'] as $blank) $s = preg_replace('/___/', $blank[0], $s, 1);
+        $s = strtolower(str_replace(['’', '*'], ["'", ''], $s));
+        $s = str_replace("n't", ' not', $s);
+        $accustomed = preg_match("/\b(?:am|is|are|was|were|be|been|get|gets|got|getting)(?: not)? used to\b|(?:'m|'s|'re) used to\b/", $s);
+        $rest = preg_replace("/\b(?:am|is|are|was|were|be|been|get|gets|got|getting)(?: not)? used to\b|(?:'m|'s|'re) used to\b/", '', $s);
+        $habit = preg_match('/\bused? to\b/', $rest);
+        if ($habit && $accustomed) return null;
+        return $accustomed ? 'accustomed' : ($habit ? 'past_habit' : null);
     }
 
     /**
@@ -158,6 +185,7 @@ final class Mistakes
         foreach (Content::items() as $it) {
             if ($it['skill'] !== $m['skill'] || $it['id'] === $mistakeId || isset($exclude[$it['id']]) || isset($paused[$it['id']])) continue;
             if (abs(self::levelIdx($it['level']) - self::levelIdx($m['level'])) > 1 || abs($it['bloom'] - $m['bloom']) > 1) continue;
+            if (!self::sameConstruction($m, $it) || Content::role($it) === 'learn') continue;
             if ($levels && !in_array($it['level'], $levels, true)) continue;
             if ($it['kind'] === 'write' && $m['kind'] !== 'write') continue;   // open writing never stands in for a short task
             $cost = (isset($seen[$it['id']]) ? 0.8 * min(3, $seen[$it['id']]) : 0)

@@ -59,6 +59,7 @@ so results before and after it are not mixed.
 - **Hypotheses written down before looking**: 2-3 main questions, the rest is exploration.
 
 ## Changes
+- 5 Nov 2026: *used to do* un *be/get used to doing* uzdevumi vairs neaizstāj cits citu kļūdas izlabošanā, nostiprināšanā vai atkārtotā atvēršanā; tas attiecas arī uz Second Chance atlasi un `for_item`. Mācīšanās (`learn`) uzdevumi neietilpst šajā pierādījumu aprēķinā; nozīmes jautājumi “What does it/this/that say/mean?” tagad tiek atpazīti kā `learn`. Atbilžu rindas un XP netiek pārrakstīti, taču no vēstures aprēķinātie kļūdu kopsavilkumi var mainīties. Pieci iebūvētie uzdevumi iegūst jaunas versijas; divi B2 ierakstāmie uzdevumi kļūst par vārdu bankas uzdevumiem, un *It's time* uzdevumu aizstāj *It's high time* ar ticamākiem maldinātājiem. Šo trīs sagatavoto uzdevumu iepriekšējās versijas imports arhivē. Rezultātus salīdzina pēc lietotnes versijas, uzdevuma versijas un sniegtā atbalsta; jaunās izvēles nav neatkarīgas rakstīšanas pierādījums. Zemāka līmeņa atkārtošanas marķējums, nepārbaudītas kategorijas teksts un telefona izkārtojums maina attēlojumu; tēmu secība un līmeņa noteikšana paliek iepriekšējās.
 - 28 Oct 2026: session source recorded.
 - 28 Oct 2026: faulty reported-questions tasks corrected (rq-B22-1a/2a/3a); topic numbers for reported questions
   before this date are inflated (wrong tasks made the app serve the topic more often).

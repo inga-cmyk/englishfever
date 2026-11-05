@@ -466,6 +466,7 @@
         h('span', { class: 'pbody' },
           h('span', { class: 'ptext' }, rec ? h('span', { class: 'prec' }, '★ Recommended') : null, h('b', null, st.label),
             h('small', null, st.level + ' · ' + ((st.check && st.status === 'new') ? 'Quick check' : (STATE[st.status] || ''))),
+            st.status === 'strengthen' ? h('small', { class: 'path-reason' }, 'Recent answers suggest revisiting this topic. Your overall level has not changed.') : null,
             st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null),
           rec ? h('span', { class: 'btn small' }, (st.status === 'likely' || st.check) ? 'Quick check' : 'Go', icon('arrow')) : null));
       return el;
@@ -731,7 +732,7 @@
       var v = (b || {})[c[3]] || { n: 0, correct: 0 }, n = v.n, ok = v.correct;
       var p = n ? pct(ok, n) : null;
       return h('div', { class: 'cat' }, h('div', { class: 'cat-em', 'aria-hidden': 'true' }, c[1]), h('b', null, c[0]), h('small', null, c[2]),
-        h('div', { class: 'ring', style: 'background:radial-gradient(var(--surface) 0 57%, transparent 58%), conic-gradient(var(--btn) 0 ' + (p || 0) + '%, var(--line) 0)' }, p === null ? '–' : p + '%'));
+        h('div', { class: 'ring', style: 'background:radial-gradient(var(--surface) 0 57%, transparent 58%), conic-gradient(var(--btn) 0 ' + (p || 0) + '%, var(--line) 0)' }, p === null ? '–' : p + '%'), h('small', null, n ? ok + '/' + n + ' correct' : 'Not checked'));
     }));
   }
   function bloomBars(b) {
@@ -1221,7 +1222,7 @@
       canSubmit = function () { return inputs.every(function (i) { return i.value.trim() !== ''; }); };
     } else if (it.kind === 'text') {
       setPrompt(qEl, it.q);
-      var t = h('input', { type: 'text', class: 'type-in', autocomplete: 'off', autocapitalize: 'sentences', spellcheck: 'false', placeholder: 'Type your answer', 'aria-label': 'Your answer', oninput: ready });
+      var t = h('textarea', { rows: '2', class: 'type-in', autocomplete: 'off', autocapitalize: 'sentences', spellcheck: 'false', placeholder: 'Type your answer', 'aria-label': 'Your answer', oninput: function (e) { growBox(e.target); ready(); } });
       inputs.push(t); area.appendChild(t);
       answerGetter = function () { return t.value; };
       canSubmit = function () { return t.value.trim() !== ''; };
@@ -1317,7 +1318,8 @@
       if (!good && !res.skipped && ses.mode !== 'placement' && (state.wrongRun || 0) >= 3) {   // three mistakes in a row: point to the rule card (teacher, 3 November)
         fb.appendChild(h('p', { class: 'stuck' }, lv ? 'Grūti? Pirms nākamā atver ' : 'Stuck? Open ', h('b', { class: 'stuck-q' }, '?'), lv ? ' uzdevuma augšā.' : ' at the top of the next task.'));
       }
-      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
+      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šīs konstrukcijas lietojumā izskatās izlabota.' : 'An earlier mistake with this construction looks fixed.')));
+      if (good && it.kind === 'text') fb.appendChild(h('p', { class: 'submitted-answer' }, h('b', null, lv ? 'Tava atbilde: ' : 'Your answer: '), String(ans || '')));
       var cmp = (!good && !res.skipped && (it.kind === 'text' || it.kind === 'order') && typeof res.show === 'string')
         ? wordDiff(it.kind === 'order' ? (ans || []).join(' ') : String(ans || ''), res.show) : null;   // your sentence and the right one, the different words marked (teacher, 27 October)
       if (cmp) fb.appendChild(h('div', { class: 'compare' },
@@ -1480,6 +1482,8 @@
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 
     var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.bonus ? 'Bonus · double XP' : (ses.comeback ? 'Second Chance' : 'Practice'));
+    if (ses.mode !== 'placement' && it.practice_context === 'review') phaseLabel += ' · Review';
+    if (ses.mode !== 'placement' && it.practice_context === 'stretch') phaseLabel += ' · Next step';
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' + (ses.comeback ? ' mode-chance' : '') },
@@ -1498,7 +1502,7 @@
       if (it.kind === 'mcq') area.querySelectorAll('input[type=radio]').forEach(function (r) { if (r.value === a) { r.checked = true; chosen = a; } });
       else if (board) board.set(a);
       else if (it.kind === 'gap') inputs.forEach(function (inp, i) { inp.value = (a && a[i]) || ''; fitBlank(inp); });
-      else if (inputs[0]) { inputs[0].value = a || ''; if (it.kind === 'write') growBox(inputs[0]); }
+      else if (inputs[0]) { inputs[0].value = a || ''; if (it.kind === 'write' || it.kind === 'text') growBox(inputs[0]); }
       lock(); showFeedback(answeredNow ? S.last : { result: rev.result, done: false }, a);
       return;
     }
@@ -1749,7 +1753,7 @@
     var ps = s.pathStep;
     if (!ps) try { var q = JSON.parse(localStorage.getItem('ef_pathstep') || 'null'); if (q && q.sid == s.session_id) ps = q.step; } catch (e) {}
     if (!s.comeback) nodes.push(nextActions(s, ps));   // one clear choice (teacher, 3 November): try again / try harder / next topic
-    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat), h('p', { class: 'small muted' }, 'These results describe this session. Choosing or arranging words does not show that you can write a sentence independently.')));
     nodes.push(reminderCard());
     nodes.push(h('div', { class: 'row' }, homeLink()));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
@@ -1850,7 +1854,7 @@
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, s.parked ? 'Nothing to fix at your level.' : (s.n > s.correct ? 'Nothing left to fix.' : 'Nothing was missed.')), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
-    nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
+    nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat), h('p', { class: 'small muted' }, 'These results describe this session. Choosing or arranging words does not show that you can write a sentence independently.')));   // the topics tested are on My learning path, where they can be opened
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, homeLink()));
     return nodes;
   }

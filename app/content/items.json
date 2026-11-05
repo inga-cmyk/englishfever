@@ -5928,20 +5928,21 @@
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "cm-C11-1a-r3",
+"id": "cm-C11-1a-r5",
 "skill": "cond_mixed",
 "level": "C1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence without *if* is correct?",
+"q": "Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now.",
 "correct": "Had I taken that job, I would be rich now.",
 "wrong": [
-"Had I take that job, I would be rich now.",
-"If had I taken that job, I would be rich now.",
-"Did I take that job, I would be rich now."
+"Had I taken that job, I would have been rich then.",
+"Had I not taken that job, I would be rich now.",
+"Were I rich now, I would have taken that job."
 ],
-"why": "Inversion replaces *if* with *Had* + subject + past participle.",
-"wrong_why": {}
+"why": "The past decision has a result now: *Had I taken* + *I would be rich now*. The other options change the time or reverse the situation.",
+"wrong_why": {},
+"why_lv": "Pagātnes lēmumam ir sekas tagad: *Had I taken* + *I would be rich now*. Pārējie varianti maina laiku vai apgriež situāciju."
 },
 {
 "id": "cm-C11-2a",
@@ -6525,20 +6526,21 @@
 "why_lv": "Netiešā runa: *said* + teik. priekšmets + darbības vārds, kas iet soli atpakaļ. *Today* kļūst par *that day*."
 },
 {
-"id": "rs-B21-1a-r2",
+"id": "rs-B21-1a-r3",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which modal normally stays in the same form when we backshift a report?",
-"correct": "might",
+"q": "Which sentence reports this: 'I might be late.'",
+"correct": "She said she might be late.",
 "wrong": [
-"can",
-"will",
-"may"
+"She said she might was late.",
+"She said she might to be late.",
+"She said she might been late."
 ],
-"why": "*can → could, will → would, must → had to.* *Might, would, could, should* and *ought to* stay the same.",
-"wrong_why": {}
+"why": "*might* stays the same in the report and is followed by *be*: *She said she might be late.*",
+"wrong_why": {},
+"why_lv": "Atstāstījumā *might* nemainās; pēc tā lieto *be*: *She said she might be late.*"
 },
 {
 "id": "rs-B21-2a-r4",
@@ -6815,20 +6817,21 @@
 "wrong_why": {}
 },
 {
-"id": "rq-B21-2a",
+"id": "rq-B21-2a-r2",
 "skill": "rep_questions",
 "level": "B2.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "'Don't touch that!' the nurse said. Which report is correct?",
+"q": "Which sentence reports this instruction: 'Don't touch that!'",
 "correct": "The nurse told me not to touch it.",
 "wrong": [
-"The nurse told me to not touching it.",
-"The nurse told me that I don't touch it.",
+"The nurse told me not touch it.",
+"The nurse told me not touching it.",
 "The nurse said me not to touch it."
 ],
-"why": "A negative order: *told* + person + *not* + *to* + base verb.",
-"wrong_why": {}
+"why": "*told me not to touch*: after *told*, name the person, then use *not to* + base form.",
+"wrong_why": {},
+"why_lv": "*told me not to touch*: pēc *told* nosauc cilvēku un lieto *not to* ar pamatformu."
 },
 {
 "id": "rq-B21-3a-r2",
@@ -7523,21 +7526,21 @@
 "practice_only": true
 },
 {
-"id": "ip-B12-2a-r2",
+"id": "ip-B12-2a-r3",
 "skill": "ind_polite",
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Why is 'Could you tell me where is the station?' wrong?",
-"correct": "It needs statement order: where the station is.",
+"q": "Could you tell me ___?",
+"correct": "where the station is",
 "wrong": [
-"It needs 'what' instead of 'where' here.",
-"It needs two question marks at the end.",
-"'Could' must be 'Can' in a question."
+"where is the station",
+"where does the station be",
+"where the station it is"
 ],
-"why": "In an indirect question the verb comes after the subject.",
+"why": "After *Could you tell me*, use *where the station is*. Do not turn the second part into a separate question.",
 "wrong_why": {},
-"why_lv": "Netiešajā jautājumā darbības vārds ir aiz teikuma priekšmeta.",
+"why_lv": "Pēc *Could you tell me* lieto *where the station is*. Otrajā daļā neveido atsevišķu jautājumu.",
 "wrong_why_lv": {}
 },
 {
@@ -7913,21 +7916,22 @@
 }
 },
 {
-"id": "ia-C11-2a-r3",
+"id": "ia-C11-2a-r4",
 "skill": "ind_advanced",
 "level": "C1.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "'It depends on whether the budget is approved.' Why whether and not if?",
-"correct": "After a preposition we use whether, not if.",
+"q": "The decision depends on ___ the budget is approved.",
+"correct": "whether",
 "wrong": [
-"Because whether is more polite.",
-"Because the sentence is in the past.",
-"If can only start a conditional clause."
+"if",
+"that",
+"unless"
 ],
-"why": "after prepositions: depends *on whether*, talk *about whether.*",
+"why": "After *on*, use *whether*: *depends on whether the budget is approved*.",
 "wrong_why": {},
-"wrong_why_lv": {}
+"wrong_why_lv": {},
+"why_lv": "Pēc *on* lieto *whether*: *depends on whether the budget is approved*."
 },
 {
 "id": "ia-C11-3a-r6",

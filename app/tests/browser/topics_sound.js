@@ -1,7 +1,7 @@
 const { chromium, devices } = require('playwright');
 const fs = require('fs');
-const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync('/home/user/englishfever/app/content/items.json')).map(i => [i.id, i]));
-const META = JSON.parse(fs.readFileSync('/home/user/englishfever/app/content/meta.json'));
+const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync(require('path').resolve(__dirname, '../../content/items.json'))).map(i => [i.id, i]));
+const META = JSON.parse(fs.readFileSync(require('path').resolve(__dirname, '../../content/meta.json')));
 const BASE = 'http://127.0.0.1:8099', OUT = __dirname + '/shots/';
 const LV = META.levels; const idx = l => LV.indexOf(l);
 (async () => {
@@ -84,7 +84,7 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
     else if (it.kind === 'gap' && it.bank) { const esc = t => new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$');
       for (let i = 0; i < it.answers.length; i++) { const good = it.answers[i][0]; const pick = right ? good : (it.bank.find(b => !it.answers[i].includes(b)) || 'zzz');
         await p.locator('.dnd-bank .chip', { hasText: esc(pick) }).first().click(); } }
-    else if (it.kind === 'text') await p.fill('.task input.type-in', right ? it.answers[0][0] : 'zzz');
+    else if (it.kind === 'text') await p.fill('.task textarea.type-in', right ? it.answers[0][0] : 'zzz');
     else if (it.kind === 'order') { const toks = it.sentence.split(' '); for (const t of (right ? toks : toks.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }
     else if (it.kind === 'match') { const rs = it.pairs.map(x => x[1]); for (const t of (right ? rs : rs.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');

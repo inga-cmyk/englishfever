@@ -1,6 +1,6 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
-const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync('/home/user/englishfever/app/content/items.json')).map(i => [i.id, i]));
+const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync(require('path').resolve(__dirname, '../../content/items.json'))).map(i => [i.id, i]));
 const BASE = 'http://127.0.0.1:8099';
 const OUT = __dirname + '/shots/';
 
@@ -51,7 +51,7 @@ const OUT = __dirname + '/shots/';
       const n = await inputs.count();
       for (let i = 0; i < n; i++) await inputs.nth(i).fill(correct ? it.answers[i][0] : 'zzz');
     } else if (it.kind === 'text') {
-      await page.fill('.task input.type-in', correct ? it.answers[0][0] : 'zzz');
+      await page.fill('.task textarea.type-in', correct ? it.answers[0][0] : 'zzz');
     } else if (it.kind === 'order') {
       const toks = it.sentence.split(' ');
       for (const t of (correct ? toks : [...toks].reverse())) await page.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click();

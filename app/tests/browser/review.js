@@ -1,6 +1,6 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
-const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync('/home/user/englishfever/app/content/items.json')).map(i => [i.id, i]));
+const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync(require('path').resolve(__dirname, '../../content/items.json'))).map(i => [i.id, i]));
 const BASE = 'http://127.0.0.1:8099';
 (async () => {
   const b = await chromium.launch(); let ok = true; const errs = [];
@@ -23,7 +23,7 @@ const BASE = 'http://127.0.0.1:8099';
     if (it.kind === 'mcq' && !dom.opts.includes(right ? it.correct : it.wrong[0])) console.log('MISMATCH', id, JSON.stringify(dom), '| item q:', it.q, '| correct', it.correct, '| wrong', it.wrong);
     if (it.kind === 'mcq') { given = right ? it.correct : it.wrong[0]; await p.locator('label.opt[data-opt="' + given.replace(/"/g, '\\"') + '"]').click(); }
     else if (it.kind === 'gap' && !it.bank) { given = it.answers.map(a => right ? a[0] : 'zzz'); const inp = p.locator('.task input.blank'); for (let i = 0; i < given.length; i++) await inp.nth(i).fill(given[i]); }
-    else if (it.kind === 'text') { given = right ? it.answers[0][0] : 'zzz'; await p.fill('.task input.type-in', given); }
+    else if (it.kind === 'text') { given = right ? it.answers[0][0] : 'zzz'; await p.fill('.task textarea.type-in', given); }
     else if (it.kind === 'gap' && it.bank) {
       const ws = it.answers.map(a => a[0]); given = right ? ws : ws.map(() => 'zzz');
       for (const w of (right ? ws : it.bank.filter(x => !ws.includes(x)).slice(0, ws.length))) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + w.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&') + '$') }).first().click();

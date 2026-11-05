@@ -3467,6 +3467,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*."
 },
 {
+"id": "rq-B21-2a",
+"skill": "rep_questions",
+"level": "B2.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'Don't touch that!' the nurse said. Which report is correct?",
+"correct": "The nurse told me not to touch it.",
+"wrong": [
+"The nurse told me to not touching it.",
+"The nurse told me that I don't touch it.",
+"The nurse said me not to touch it."
+],
+"why": "A negative order: *told* + person + *not* + *to* + base verb.",
+"wrong_why": {}
+},
+{
 "id": "rq-B21-3a",
 "skill": "rep_questions",
 "level": "B2.1",
@@ -4477,6 +4493,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Šajā uzdevumā *will* jāmaina uz *would*. Citā kontekstā *will* var saglabāt, ja solījums joprojām attiecas uz nākotni."
 },
 {
+"id": "rs-B21-1a-r2",
+"skill": "rep_statements",
+"level": "B2.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which modal normally stays in the same form when we backshift a report?",
+"correct": "might",
+"wrong": [
+"can",
+"will",
+"may"
+],
+"why": "*can → could, will → would, must → had to.* *Might, would, could, should* and *ought to* stay the same.",
+"wrong_why": {}
+},
+{
 "id": "ia-C11-3a-r2",
 "skill": "ind_advanced",
 "level": "C1.1",
@@ -4829,6 +4861,88 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*It's not clear* + *who* + verb (statement order).",
 "hints": []
+},
+{
+"id": "cm-C11-1a-r3",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence without *if* is correct?",
+"correct": "Had I taken that job, I would be rich now.",
+"wrong": [
+"Had I take that job, I would be rich now.",
+"If had I taken that job, I would be rich now.",
+"Did I take that job, I would be rich now."
+],
+"why": "Inversion replaces *if* with *Had* + subject + past participle.",
+"wrong_why": {}
+},
+{
+"id": "ip-B12-2a-r2",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "Why is 'Could you tell me where is the station?' wrong?",
+"correct": "It needs statement order: where the station is.",
+"wrong": [
+"It needs 'what' instead of 'where' here.",
+"It needs two question marks at the end.",
+"'Could' must be 'Can' in a question."
+],
+"why": "In an indirect question the verb comes after the subject.",
+"wrong_why": {},
+"why_lv": "Netiešajā jautājumā darbības vārds ir aiz teikuma priekšmeta.",
+"wrong_why_lv": {}
+},
+{
+"id": "ia-C11-2a-r3",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'It depends on whether the budget is approved.' Why whether and not if?",
+"correct": "After a preposition we use whether, not if.",
+"wrong": [
+"Because whether is more polite.",
+"Because the sentence is in the past.",
+"If can only start a conditional clause."
+],
+"why": "after prepositions: depends *on whether*, talk *about whether.*",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
+"id": "rv-C11-3a-r2",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Complete the report of 'Well done on winning the award, Jo!': I congratulated Jo ___ the award. (win)",
+"answers": [
+[
+"on winning"
+]
+],
+"why": "*congratulate* + person + *on* + -ing.",
+"hints": []
+},
+{
+"id": "ia-C11-2a-r2",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'It depends on whether the budget is approved.' Why whether and not if?",
+"correct": "After a preposition we use whether, not if.",
+"wrong": [
+"Because whether is more polite.",
+"Because the sentence is in the past.",
+"Because if can only start a conditional clause, never a noun clause."
+],
+"why": "after prepositions: depends *on whether*, talk *about whether.*",
+"wrong_why": {}
 }
 ]
 EF_JSON_END

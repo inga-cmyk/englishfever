@@ -41,7 +41,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 258, 'Unexpected correction count');   // +57: choice options of equal length and one theme, and four named tasks (option_fixes.py, 3 November)
+check(count($retired) === 265, 'Unexpected correction count');   // +7: five revised tasks and two recovered historical versions (4 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

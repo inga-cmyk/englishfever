@@ -1,6 +1,6 @@
 const { chromium, devices } = require('playwright');
 const fs = require('fs');
-const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync('/home/user/englishfever/app/content/items.json')).map(i => [i.id, i]));
+const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync(require('path').resolve(__dirname, '../../content/items.json'))).map(i => [i.id, i]));
 const BASE = 'http://127.0.0.1:8099';
 const OUT = __dirname + '/shots/';
 (async () => {
@@ -110,7 +110,7 @@ const OUT = __dirname + '/shots/';
     const it = ITEMS[r.item.id];
     if (it.kind === 'mcq') await p.locator('label.opt', { hasText: it.wrong[0] }).first().click();
     else if (it.kind === 'gap') { const ins = p.locator('.task .q input.blank'); for (let i = 0; i < await ins.count(); i++) await ins.nth(i).fill('zzz'); }
-    else if (it.kind === 'text') await p.fill('.task input.type-in', 'zzz');
+    else if (it.kind === 'text') await p.fill('.task textarea.type-in', 'zzz');
     else await p.fill('.task textarea.write', 'hello there');
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
     const fbEn = await p.locator('.feedback').innerText();
@@ -139,7 +139,7 @@ const OUT = __dirname + '/shots/';
     r = await post(p, 'session/start', { mode: 'practice', skills: ['cond_mixed'], level: 'B2.1', length: 5 });
     await p.goto(BASE + '/index.html#/session'); await p.reload(); await p.waitForSelector('.task');
     const it2 = ITEMS[r.item.id];
-    if (it2.kind === 'mcq') await p.locator('label.opt', { hasText: it2.wrong[0] }).first().click(); else await p.fill('.task textarea.write, .task input.type-in', 'hello there now');
+    if (it2.kind === 'mcq') await p.locator('label.opt', { hasText: it2.wrong[0] }).first().click(); else await p.fill('.task textarea.write, .task textarea.type-in', 'hello there now');
     await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
     check('above B1.2 there is no Latviski button and the text stays English', (await p.locator('.feedback .langbtn.lv').count()) === 0 && /Why:|Model answer/.test(await p.locator('.feedback').innerText()));
     await ctx.close();

@@ -1,6 +1,6 @@
 const { chromium, devices } = require('playwright');
 const fs = require('fs');
-const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync('/home/user/englishfever/app/content/items.json')).map(i => [i.id, i]));
+const ITEMS = Object.fromEntries(JSON.parse(fs.readFileSync(require('path').resolve(__dirname, '../../content/items.json'))).map(i => [i.id, i]));
 const BASE = 'http://127.0.0.1:8099';
 // the install hint appears on Home after the first practice (Home is quiet for a brand-new learner): practise a little, then show Home again without reloading
 async function practise(pg) {

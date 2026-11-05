@@ -124,7 +124,7 @@ final class Engine
         $ses['state']['current'] = $item['id'];
         $ses['state']['served'][] = $item['id'];
         self::save($ses);
-        return ['session' => self::pub($ses), 'item' => Content::publicItem($item, $ses['state']['seed'] + count($ses['state']['served']))];
+        return ['session' => self::pub($ses), 'item' => self::publicTask($ses, $item, $ses['state']['seed'] + count($ses['state']['served']))];
     }
 
     public static function resume(int $uid): ?array
@@ -139,7 +139,7 @@ final class Engine
         $ses = self::load($uid, $sid);
         if ($ses['ended_at'] !== null || !$ses['state']['current']) throw new ApiError('This session is finished.', 409);
         $item = Content::item($ses['state']['current']);
-        return ['session' => self::pub($ses), 'item' => Content::publicItem($item, $ses['state']['seed'] + count($ses['state']['served']))];
+        return ['session' => self::pub($ses), 'item' => self::publicTask($ses, $item, $ses['state']['seed'] + count($ses['state']['served']))];
     }
 
     /** How long the learner read the feedback of the task before this one (from the feedback to Next), stored on that answer. */
@@ -291,7 +291,7 @@ final class Engine
             'result' => $res,
             'session' => self::pub($ses),
             'done' => $done,
-            'next' => $next ? Content::publicItem($next, $st['seed'] + count($st['served'])) : null,
+            'next' => $next ? self::publicTask($ses, $next, $st['seed'] + count($st['served'])) : null,
             'summary' => $summary,
         ];
     }
@@ -409,6 +409,14 @@ final class Engine
         ];
     }
 
+    private static function publicTask(array $ses, array $it, int $seed): array
+    {
+        $out = Content::publicItem($it, $seed);
+        $index = array_search($it['id'], $ses['state']['served'], true);
+        $out['practice_context'] = $index === false ? 'main' : ($ses['state']['slot'][$index] ?? 'main');
+        return $out;
+    }
+
     private static function pickNext(array &$ses): ?array
     {
         $st = $ses['state'];
@@ -426,7 +434,9 @@ final class Engine
             if ($mid === null) return null;
             if (!empty($st['queue_extra'][$mid])) return Content::item($mid);   // a task added after a gap: already a similar task
             // never another open mistake as the "similar task": it would fix itself and leave the one it stood for
-            $open = array_fill_keys(array_keys(Mistakes::scan((int) $ses['user_id'])['open']), true);
+            $scan = Mistakes::scan((int) $ses['user_id']);
+            $open = array_fill_keys(array_keys($scan['open']), true);
+            if (!empty($st['review'][$mid])) $open += $scan['solid'][$mid]['items'] ?? [];
             return Mistakes::twin((int) $ses['user_id'], $mid, $served + $open) ?? Content::item($mid);
         }
         // slip or gap: a task like the one just missed comes back soon, in a different sentence (and from other angles when it is missed again)
@@ -674,7 +684,7 @@ final class Engine
         $st['current'] = $item['id'];
         $st['served'][] = $item['id'];
         self::save($ses);
-        return ['session' => self::pub($ses), 'item' => Content::publicItem($item, $st['seed'] + count($st['served']))];
+        return ['session' => self::pub($ses), 'item' => self::publicTask($ses, $item, $st['seed'] + count($st['served']))];
     }
 
     /** A wrong answer in practice: ask a task of the same kind again after one or two others (not more than a third of the session, two waiting at most). */

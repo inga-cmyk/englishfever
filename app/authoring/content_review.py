@@ -494,4 +494,34 @@ def revise(original):
         q="'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam.",
         kind='gap', answers=[['on']], bank=['on', 'about', 'at', 'with'], hints=[],
         why='*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*')
+    # Teacher reports, 4 November: test language in context, not terminology.
+    report_fix('ip-B12-2a',
+        q='Could you tell me ___?', correct='where the station is',
+        wrong=['where is the station', 'where does the station be', 'where the station it is'],
+        why='After *Could you tell me*, use *where the station is*. Do not turn the second part into a separate question.',
+        why_lv='Pēc *Could you tell me* lieto *where the station is*. Otrajā daļā neveido atsevišķu jautājumu.', wrong_why={}, wrong_why_lv={})
+    report_fix('cm-C11-1a',
+        q='Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now.',
+        correct='Had I taken that job, I would be rich now.',
+        wrong=['Had I taken that job, I would have been rich then.',
+               'Had I not taken that job, I would be rich now.',
+               'Were I rich now, I would have taken that job.'],
+        why='The past decision has a result now: *Had I taken* + *I would be rich now*. The other options change the time or reverse the situation.',
+        why_lv='Pagātnes lēmumam ir sekas tagad: *Had I taken* + *I would be rich now*. Pārējie varianti maina laiku vai apgriež situāciju.', wrong_why={})
+    report_fix('rq-B21-2a',
+        q="Which sentence reports this instruction: 'Don't touch that!'",
+        wrong=['The nurse told me not touch it.', 'The nurse told me not touching it.', 'The nurse said me not to touch it.'],
+        why='*told me not to touch*: after *told*, name the person, then use *not to* + base form.',
+        why_lv='*told me not to touch*: pēc *told* nosauc cilvēku un lieto *not to* ar pamatformu.', wrong_why={})
+    report_fix('rs-B21-1a',
+        q="Which sentence reports this: 'I might be late.'",
+        correct='She said she might be late.',
+        wrong=['She said she might was late.', 'She said she might to be late.', 'She said she might been late.'],
+        why='*might* stays the same in the report and is followed by *be*: *She said she might be late.*',
+        why_lv='Atstāstījumā *might* nemainās; pēc tā lieto *be*: *She said she might be late.*', wrong_why={})
+    report_fix('ia-C11-2a',
+        q='The decision depends on ___ the budget is approved.', correct='whether',
+        wrong=['if', 'that', 'unless'],
+        why='After *on*, use *whether*: *depends on whether the budget is approved*.',
+        why_lv='Pēc *on* lieto *whether*: *depends on whether the budget is approved*.', wrong_why={}, wrong_why_lv={})
     return items

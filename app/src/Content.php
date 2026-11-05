@@ -147,6 +147,7 @@ final class Content
         if (in_array($it['kind'], ['text', 'write'], true)) return 'use';
         if ($it['kind'] === 'gap' && empty($it['bank'])) return 'use';
         if ($it['kind'] === 'mcq' && preg_match('/^(Which sentence (means|is about|tells|is a |describes|shows|imagines|expresses|uses|does NOT express|has a finished|is passive)|What is the difference|What usually happens|Which (words|word) usually|Which verb is normally)/i', (string) ($it['q'] ?? ''))) return 'learn';
+        if ($it['kind'] === 'mcq' && preg_match('/What does (it|this|that) (say|mean)\?/i', (string) ($it['q'] ?? ''))) return 'learn';
         return 'check';
     }
 

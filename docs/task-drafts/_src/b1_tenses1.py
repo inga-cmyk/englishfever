@@ -96,7 +96,7 @@ P.bank("B1.1","The thieves ___ through the window and ___ the jewellery.",["clim
 P.bank("B1.1","___ you ___ my message last night?",["Did","get"],["Do","got","Does"])
 P.bank("B1.1","She ___ in London for two years before she ___ to Paris.",["lived","moved"],["live","move"])
 P.bank("B1.1","We ___ a great meal, but the service ___ very slow.",["had","was"],["having","being"])
-P.bank("B1.2","When I was a child, we ___ to the lake every summer.","used to go",["use to go","were used to go"])
+P.bank("B1.2","When I was a child, we ___ to the lake every summer.","used to go",["use to go","were used to go"], why=("*used to go* describes a repeated past habit. *be used to going* means being accustomed to it; it needs *-ing*.", "*used to go* apraksta atkārtotu pagātnes ieradumu. *be used to going* nozīmē būt pieradušam; pēc tā vajadzīga forma ar *-ing*."))
 P.bank("B1.2","He ___ to like fish, but now he eats it every week.","didn't use",["didn't used","wasn't used"]) if False else None
 P.gap("B1.1","I ___ him at the party, so I didn't say hello. (not / recognise)","didn't recognise | did not recognise | didn't recognize | did not recognize")
 P.gap("B1.1","After the match, the players ___ the fans and ___ into the bus. (thank / climb)","thanked / climbed")

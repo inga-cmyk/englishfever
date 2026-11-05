@@ -9,7 +9,8 @@ ME = ("*I'd rather / I'd sooner* + base form: what I prefer to do myself.", "*I'
 YOU = ("*I'd rather* + another person + past: what I want someone else to do (or not to do).", "*I'd rather* + cits cilvēks + pagātne: ko gribu, lai dara (vai nedara) kāds cits.")
 
 UT.mcq("C1.1", "Choose the correct option: It's about time you ___ your mother.", "called", ["will call", "calling", "to call"], why=TIME)
-UT.bank("C1.1", "It's time we ___ home. The last bus leaves in ten minutes.", "went", ["will go", "going", "to going"], why=TIME)
+UT.bank("C1.1", "It's high time we ___ home. The last bus leaves in ten minutes.", "went", ["have gone", "will go", "had went"], why=TIME)
+replaces("It's time we ___ home. The last bus leaves in ten minutes.")
 UT.mcq("C1.1", "Choose the correct option: It's high time the city ___ something about the traffic.", "did", ["will do", "doing", "to do"], why=TIME)
 UT.text("C1.1", "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
         ["It's high time you started looking for a new job.", "It's high time you started to look for a new job.", "It's high time you looked for a new job.",

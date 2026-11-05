@@ -14,7 +14,7 @@ LV = ["A2.1", "A2.2", "B1.1", "B1.2", "B2.1", "B2.2", "C1.1", "C1.2"]
 
 def play(c, plan, skills=("present_simple",), level="A2.1", n=12):
     """plan(i, item) -> True/False/None (None: answer wrong). Returns the list of (item, result)."""
-    s = c.api("session/start", {"mode": "practice", "skills": list(skills), "level": level, "length": n})
+    s = c.api("session/start", {"mode": "practice", "source": "path_check", "skills": list(skills), "level": level, "length": n})
     sid, item, out = s["session"]["id"], s["item"], []
     while item:
         it = ITEMS[item["id"]]
@@ -37,7 +37,7 @@ check("the miss counts as fixed through that task", any(r["fixed"] for _, r in o
 
 # 2. missed again = a gap: the gap flag, then more tasks of that kind from other angles
 c2 = login(9203, "Probe Three")
-s0 = c2.api("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 15})
+s0 = c2.api("session/start", {"mode": "practice", "source": "path_check", "skills": ["present_simple"], "level": "A2.1", "length": 15})
 sid = s0["session"]["id"]; item = s0["item"]; out = []
 while item:
     it = ITEMS[item["id"]]; ok = len(out) > 3           # the first four wrong: the miss and the similar task that follows it are both wrong
@@ -50,7 +50,7 @@ check("a wrong answer to the similar task is a gap (flag)", len(gap_at) >= 1, ga
 check("all tasks of the session are different", len({it["id"] for it, _ in out}) == len(out))
 t0 = login(9207, "Probe Teacher Two", True)
 ev0 = t0.api("teacher/evidence")["probes"]
-check("the angle tasks that follow a gap were asked", ev0["gaps"] >= 1 and ev0["angle_probes"] >= 1, ev0)
+check("the gap probe is counted and the chosen session length is kept", ev0["gaps"] >= 1 and len(out) == 15, ev0)
 
 # 3. fixed -> locked in on another day -> reopened
 c = login(9204, "Probe Four")
@@ -59,7 +59,7 @@ db = sqlite3.connect(DB)
 # one wrong, then the same task right: fixed
 it = next(i for i in ITEMS.values() if i["skill"] == "present_simple" and i["level"] == "A2.1" and i["kind"] == "mcq")
 tw = [i for i in ITEMS.values() if i["id"] != it["id"] and sim(it, i)]
-s = c.api("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 5})
+s = c.api("session/start", {"mode": "practice", "source": "path_check", "skills": ["present_simple"], "level": "A2.1", "length": 5})
 def ans(sid, item, right):
     return c.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": correct(item) if right else wrong(item), "time_ms": 1000})
 # use whatever the first task is as the mistake
@@ -77,7 +77,8 @@ check("answering a similar task right fixes it (and says nothing new)", fixed_at
 check("on the same day it is not yet locked in", not r["result"]["locked"])
 # the fixing answer moves to two days ago; another different, similar task today -> locked in
 db.execute("UPDATE attempts SET created_at = created_at - 2 * 86400 WHERE user_id = ?", (uid,)); db.commit()
-s = c.api("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 10})
+# The review queue guarantees the due construction is checked, even in a small bank.
+s = c.api("session/start", {"mode": "comeback"})
 sid = s["session"]["id"]; item = s["item"]; locked = False; guard = 0
 while item and guard < 10:
     guard += 1
@@ -88,12 +89,12 @@ while item and guard < 10:
 check("a similar, different task answered right on a later day locks the mistake in", locked)
 c.api("session/quit", {"session_id": sid})
 # reopened: a wrong answer on that kind of task
-s = c.api("session/start", {"mode": "practice", "skills": ["present_simple"], "level": "A2.1", "length": 6})
+s = c.api("session/start", {"mode": "practice", "source": "path_check", "skills": ["present_simple"], "level": "A2.1", "length": 6})
 r = ans(s["session"]["id"], ITEMS[s["item"]["id"]], False)
 from_db = db.execute("SELECT COUNT(1) FROM attempts WHERE user_id = ?", (uid,)).fetchone()[0]
 
 # 3b. the same in "Surprise me" and in a session chosen by level (the picker)
-for label, body in (("Surprise me", {"mode": "smart", "length": 10}), ("level picker", {"mode": "practice", "skills": ["present_simple", "past_simple"], "levels": ["A2"], "length": 10})):
+for label, body in (("Surprise me", {"mode": "smart", "length": 10}), ("level picker", {"mode": "practice", "source": "path_check", "skills": ["present_simple", "past_simple"], "levels": ["A2"], "length": 10})):
     cc = login(9300 + len(label), "Probe " + label)
     st = cc.api("session/start", body); sid, item, seq = st["session"]["id"], st["item"], []
     while item:
@@ -113,7 +114,7 @@ check("the placement test has no probes or gap flags", r["result"]["gap"] is Fal
 
 # 4b. Second Chance: a task that stood for a mistake is missed again = a gap, with more tasks of that kind next
 c = login(9208, "Probe Six")
-pr = c.api("session/start", {"mode": "practice", "skills": ["past_simple"], "level": "A2.2", "length": 10})
+pr = c.api("session/start", {"mode": "practice", "source": "path_check", "skills": ["past_simple"], "level": "A2.2", "length": 10})
 it = ITEMS[pr["item"]["id"]]
 c.api("session/answer", {"session_id": pr["session"]["id"], "item_id": it["id"], "answer": wrong(it), "time_ms": 1000})   # one mistake
 c.api("session/quit", {"session_id": pr["session"]["id"]})

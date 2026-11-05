@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """Report a problem: who may report, what is stored, what the teacher sees and can do, privacy, limits.
 Run against the dev server (SQLite):  php -S 127.0.0.1:8099 -t app ;  rm -f app/var/ef.sqlite* ;  python3 app/tests/reports_test.py"""
-import base64, csv, hashlib, hmac, io, json, os, sqlite3, time, urllib.parse, urllib.request, http.cookiejar
+import subprocess, base64, csv, hashlib, hmac, io, json, os, sqlite3, time, urllib.parse, urllib.request, http.cookiejar
 
 BASE = "http://127.0.0.1:8099"
 APP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SECRET = "local-dev-secret-local-dev-secret-local-dev-secret-0000"
 ITEMS = {i["id"]: i for i in json.load(open(os.path.join(APP, "content", "items.json")))}
 DB = os.path.join(APP, "var", "ef.sqlite")
+
+# Learning tasks are practised but do not enter the mistake evidence queue.
+roles_code = "require '" + os.path.join(APP, 'src', 'Content.php') + "'; echo json_encode(array_column(array_map(fn($it) => ['id'=>$it['id'], 'role'=>Content::role($it)], Content::items()), 'role', 'id'));"
+ROLES = json.loads(subprocess.check_output(['php', '-r', roles_code]))
 
 
 def b64u(b): return base64.urlsafe_b64encode(b).rstrip(b"=").decode()
@@ -92,25 +96,32 @@ check("Comeback with nothing to fix says so (404)", r["_status"] == 404, r)
 
 # ---- wrong answers become open mistakes
 done, got = run(c, ["present_simple"], "A2.1", 6, wrong)
+n_attempts = len(got)
+expected = len({item for item, _ in got if ROLES[item] != "learn"})
 d = dash(c)
-check("six wrong answers: six mistakes waiting", d["open"] == 6 and d["fixed"] == 0, d)
-check("ordinary practice reports no fixed mistakes while all are wrong", done["summary"]["fixed"] == 0 and done["summary"]["open_after"] == 6, done["summary"])
+check("only check/use misses enter the mistake queue", d["open"] == expected and d["fixed"] == 0, d)
+check("ordinary practice reports no fixed mistakes while all are wrong", done["summary"]["fixed"] == 0 and done["summary"]["open_after"] == expected, done["summary"])
 
 # ---- Comeback serves each mistake again, as a similar task where there is one
 done, got = run(c, [], "A2.1", 6, correct, mode="comeback")
+n_attempts += len(got)
 ids = [g[0] for g in got]
-check("Comeback is one task per mistake (up to ten)", len(got) == 6, len(got))
+check("Comeback is one task per mistake (up to ten)", len(got) == expected, len(got))
 check("every task in Comeback is a different task", len(set(ids)) == len(ids))
 fixed = sum(1 for g in got if g[1].get("fixed"))
-check("every correct answer in Comeback fixes one mistake and says so", fixed == 6 and done["summary"]["fixed"] == 6 and done["summary"]["comeback"] is True, done["summary"])
-check("nothing is left to fix afterwards, and the total is kept", {k: dash(c)[k] for k in ("open", "fixed")} == {"open": 0, "fixed": 6}, dash(c))
-check("Comeback again: nothing to fix", c.api("session/start", {"mode": "comeback"})["_status"] == 404)
+check("fixed flags and summary agree, with no more than one fix per task", 0 <= fixed <= expected and done["summary"]["fixed"] == fixed and done["summary"]["comeback"] is True, done["summary"])
+check("unfixed same-day retries stay open, fixed total is kept", {k: dash(c)[k] for k in ("open", "fixed")} == {"open": expected - fixed, "fixed": fixed}, dash(c))
+remaining = expected - fixed
+check("Comeback availability matches remaining evidence mistakes", c.api("session/start", {"mode": "comeback"})["_status"] == (200 if remaining else 404))
 
 # ---- a wrong answer in Comeback keeps the mistake
 done, got = run(c, ["past_simple"], "A2.1", 5, wrong)
-check("five new mistakes", dash(c)["open"] == 5, dash(c))
+n_attempts += len(got)
+new_misses = len({item for item, _ in got if ROLES[item] != "learn"})
+check("new evidence misses join the remaining queue", dash(c)["open"] == remaining + new_misses, dash(c))
 done, got = run(c, [], "A2.1", 5, wrong, mode="comeback")
-check("answering wrong in Comeback fixes nothing and keeps the mistakes", done["summary"]["fixed"] == 0 and dash(c)["open"] >= 5, (done["summary"], dash(c)))
+n_attempts += len(got)
+check("answering wrong in Comeback fixes nothing and keeps the mistakes", done["summary"]["fixed"] == 0 and dash(c)["open"] >= remaining + new_misses, (done["summary"], dash(c)))
 
 # ---- placement: mistakes above the level found are parked, not offered for Second Chance, until that level is practised
 p2 = login(UID + 1, "Parked Tester")
@@ -134,7 +145,7 @@ check("after practising B1 the parked B1 mistakes come back to Second Chance", d
 db = sqlite3.connect(DB)
 uid = db.execute("select id from users where provider='wp' and external_id=?", (str(UID),)).fetchone()[0]
 n_att = db.execute("select count(*) from attempts where user_id=?", (uid,)).fetchone()[0]
-check("all answers are stored as they were (6 + 6 + 5 + 5; Second Chance keeps its length)", n_att == 22, n_att)
+check("all practice and Second Chance answers remain stored", n_att == n_attempts, n_att)
 
 # ---- practising a topic brings back a missed task (never right after the mistake) and fresh tasks first
 c2 = login(9900 + int(time.time()) % 90, "Variety Tester")

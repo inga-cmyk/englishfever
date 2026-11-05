@@ -918,3 +918,13 @@ button.level-scale { cursor: pointer; }
   .lp-split { grid-template-columns: 1fr; } .lp-split > div:first-child { padding-right: 0; border-right: 0; }
   .lp-steps > div { padding: 0 10px; } .lp-steps strong { font-size: .92rem; } .lp-steps span { font-size: .8rem; } .lp-steps b { font-size: 1.25rem; }
 }
+
+/* Keep long prompts, answers and session controls readable on narrow phones. */
+.sess-top { flex-wrap:wrap; gap:10px; }
+.sess-top > span:first-child { flex:1 1 180px; min-width:0; }
+.sess-top > .row { flex-shrink:0; margin-left:auto; }
+.task .meta { flex-wrap:wrap; }
+.task .meta .pill { white-space:normal; overflow-wrap:anywhere; max-width:100%; }
+textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre-wrap; }
+.submitted-answer, .cmp-row > span, .task .ans { overflow-wrap:anywhere; min-width:0; }
+.path-reason { display:block; margin-top:6px; }

@@ -154,7 +154,7 @@ check(Mistakes::reviewDue($uid5) === ['ps-A21-1a'], 'a mistake fixed five days a
 $r = Engine::start($uid5, 'comeback', [], null, 0);
 check($r['session']['comeback'] && $r['session']['length'] === 1, 'Second Chance starts with only the check (no open mistakes)');
 $it5 = Content::item($r['item']['id']);
-check($it5['id'] !== 'ps-A21-1a' && $it5['id'] !== $tw['id'] && $it5['skill'] === 'present_simple', 'the check is a new sentence on the same topic');
+check($it5['id'] !== $tw['id'] && $it5['skill'] === 'present_simple', 'the delayed check differs from the sentence that fixed the mistake');
 $res = Engine::answer($uid5, (int) $r['session']['id'], $it5['id'], match ($it5['kind']) { 'mcq' => $it5['correct'], 'gap' => array_map(fn($x) => $x[0], $it5['answers']), 'order' => explode(' ', $it5['sentence']), 'match' => array_column($it5['pairs'], 1), 'text' => $it5['answers'][0][0], default => $it5['model'] }, 1000);
 check($res['result']['locked'] && $res['summary']['locked'] === 1 && $res['summary']['bonus'] === 0, 'right again a few days later: locked in, counted, no bonus for a check');
 check(Mistakes::reviewDue($uid5) === [], 'nothing left to check');

@@ -1291,7 +1291,7 @@
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
-      fb.appendChild(funLine(good, res.skipped, (!r.done && ses.mode === 'practice') ? res.adapt : 'same', lv));   // instead of the rule and the flags: the ? is already on the task (teacher, 5 November)
+      fb.appendChild(funLine(good, res.skipped, (!r.done && ses.mode === 'practice') ? res.adapt : 'same'));   // instead of the rule and the flags: the ? is already on the task (teacher, 5 November)
 
       var nextText = r.done ? 'See my results' : 'Continue';   // the long button turns into Continue in the same place (teacher, 5 November)
       var nextBtn = h('button', { class: 'btn block nextbtn', onclick: function () { next(r); } }, nextText);
@@ -1474,18 +1474,16 @@
   }
 
   /** A short line under the explanation that changes every time: praise when right, a smile when wrong, and where the next task goes (teacher, 5 November). */
-  var FUN = {
-    good: { en: ['Nailed it! 🎯', 'Your grammar is on fire 🔥', 'Smooth as butter 🧈', 'Brain 1, grammar 0 🧠', 'Teacher would be proud 😎', 'That\'s the one! ✨', 'Look at you go! 🚀', 'Easy peasy 🍋'],
-            lv: ['Trāpīts! 🎯', 'Tava gramatika deg 🔥', 'Gludi kā sviests 🧈', 'Smadzenes 1, gramatika 0 🧠', 'Skolotāja lepotos 😎', 'Tieši tas! ✨', 'Skaties, kā tev iet! 🚀', 'Vieglāk par vieglu 🍋'] },
-    bad: { en: ['Oops! Happens to the best of us 🙃', 'Mistake = learning in progress 🛠️', 'Plot twist! The next one is yours 🎬', 'Even the English trip over this one 🇬🇧', 'No stress, grammar is tricky 🐢', 'Oops! Now you\'ll never forget it 🐘', 'Your brain is warming up ☕', 'Close call! Shake it off 🐕'],
-           lv: ['Ups! Gadās arī labākajiem 🙃', 'Kļūda = mācīšanās procesā 🛠️', 'Negaidīts pavērsiens! Nākamais būs tavs 🎬', 'Te paklūp pat angļi 🇬🇧', 'Mierīgi, gramatika ir viltīga 🐢', 'Ups! Tagad to vairs neaizmirsīsi 🐘', 'Smadzenes iesilst ☕', 'Gandrīz! Nopurini un aiziet 🐕'] },
-    skip: { en: ['Now you know it 💡'], lv: ['Tagad tu to zini 💡'] },
+  var FUN = {   // in English only, for everyone (teacher, 5 November)
+    good: ['Nailed it! 🎯', 'Your grammar is on fire 🔥', 'Smooth as butter 🧈', 'Brain 1, grammar 0 🧠', 'Teacher would be proud 😎', 'That\'s the one! ✨', 'Look at you go! 🚀', 'Easy peasy 🍋'],
+    bad: ['Oops! Happens to the best of us 🙃', 'Mistake = learning in progress 🛠️', 'Plot twist! The next one is yours 🎬', 'Even the English trip over this one 🇬🇧', 'No stress, grammar is tricky 🐢', 'Oops! Now you\'ll never forget it 🐘', 'Your brain is warming up ☕', 'Close call! Shake it off 🐕'],
+    skip: ['Now you know it 💡'],
   };
   var funLast = -1;
-  function funLine(good, skipped, adapt, lv) {
-    var list = FUN[skipped ? 'skip' : good ? 'good' : 'bad'][lv ? 'lv' : 'en'];
+  function funLine(good, skipped, adapt) {
+    var list = FUN[skipped ? 'skip' : good ? 'good' : 'bad'];
     var i = Math.floor(Math.random() * list.length); if (list.length > 1 && i === funLast) i = (i + 1) % list.length; funLast = i;
-    var next = adapt === 'harder' ? (lv ? ' Nākamais būs mazliet grūtāks.' : ' Next one is a bit harder.') : adapt === 'easier' ? (lv ? ' Nākamais būs mazliet vieglāks.' : ' Next one is a bit easier.') : '';
+    var next = adapt === 'harder' ? ' Next one is a bit harder.' : adapt === 'easier' ? ' Next one is a bit easier.' : '';
     return h('p', { class: 'fun-line' }, list[i], next);
   }
 

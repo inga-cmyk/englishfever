@@ -954,3 +954,15 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .signout svg { width: 20px; height: 20px; }
 .btn.danger { background: var(--bad); border-color: var(--bad); color: #fff; }
 .btn.danger-text { color: var(--bad); border-color: var(--bad); }
+/* Duolingo-like buttons (teacher, 5 November): one long Check, which becomes Continue in the same place; Skip small on the left */
+.actbar .checkbtn { flex: 1 1 auto; min-width: 0; }
+.actbar .skipbtn { flex: 0 0 auto; }
+@media (max-width: 720px) { .actbar .checkbtn { flex: 1 1 auto; } }
+.feedback.sheet .nextrow { flex-direction: column; align-items: stretch; gap: 8px; }
+.feedback.sheet .nextrow .rate { justify-content: flex-end; }
+.btn.nextbtn { min-height: 52px; }
+/* popups: a cross in the corner instead of a Close button */
+.modal.has-x { position: relative; padding-top: 28px; }
+.modal-x { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: none; color: var(--muted); font-size: 1.7rem; line-height: 1; cursor: pointer; }
+.modal-x:hover, .modal-x:focus-visible { background: var(--line); color: var(--text); }
+.modal.has-x h2 { padding-right: 36px; }

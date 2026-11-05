@@ -89,7 +89,7 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
     else if (it.kind === 'match') { const rs = it.pairs.map(x => x[1]); for (const t of (right ? rs : rs.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }
     await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
   };
-  const next = async () => { await p.click('.feedback .btn:has-text("Next")'); await p.waitForSelector('.task .q'); await p.waitForTimeout(60); };
+  const next = async () => { await p.click('.feedback .nextbtn'); await p.waitForSelector('.task .q'); await p.waitForTimeout(60); };
   await answerFirst(true);
   check('with sound off, nothing is played', (await p.evaluate(() => window.__notes)) === 0);
   await next();

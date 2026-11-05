@@ -514,10 +514,9 @@
   function studyModal() {
     var d = STUDY[state.user.lang === 'lv' ? 'lv' : 'en'], msg = h('div');
     var out = state.user.research === 2;
-    var btn = h('button', { class: out ? 'btn ghost' : 'btn ghost danger-text', id: 'study-btn' }, out ? d.back : d.no);
-    var m = UI.modal(h('div', null, h('h2', null, d.title), h('p', null, d.body), out ? h('p', null, h('b', null, d.out)) : null, msg,
-      h('div', { class: 'row', style: 'margin-top:14px;justify-content:flex-end' }, h('button', { class: 'btn ghost', id: 'study-close' }, state.user.lang === 'lv' ? 'Aizvērt' : 'Close'), btn)));
-    m.el.querySelector('#study-close').onclick = m.close;
+    var btn = h('button', { class: 'btn block ' + (out ? 'ghost' : 'ghost danger-text'), id: 'study-btn', style: 'margin-top:14px' }, out ? d.back : d.no);
+    var m = UI.modal(h('div', null, h('h2', null, d.title), h('p', null, d.body), out ? h('p', null, h('b', null, d.out)) : null, msg, btn));
+    closeX(m);
     btn.onclick = function () {
       api('account/research', { join: out }).then(function (r) { state.user = r.user; m.close(); UI.toast(out ? d.thanks : d.done); })
         .catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
@@ -1308,8 +1307,8 @@
       }
       fb.appendChild(ruleDetails(res.skill, !good, lv, langBtn));
 
-      var nextText = r.done ? 'See my results' : 'Next';
-      var nextBtn = h('button', { class: 'btn', onclick: function () { next(r); } }, nextText, icon('arrow'));
+      var nextText = r.done ? 'See my results' : 'Continue';   // the long button turns into Continue in the same place (teacher, 5 November)
+      var nextBtn = h('button', { class: 'btn block nextbtn', onclick: function () { next(r); } }, nextText);
       if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
         var older = olderOf(at), newer = H.filter(function (e) { return e.n > at; }).sort(function (a, b) { return a.n - b.n; })[0];
         fb.appendChild(h('div', { class: 'nextrow' },
@@ -2130,11 +2129,17 @@
     return h('div', { class: 'card' }, head, panel);
   }
 
+  /** A cross in the top right corner of a popup: enough to close it (teacher, 5 November). */
+  function closeX(m) {
+    m.el.classList.add('has-x');
+    m.el.prepend(h('button', { type: 'button', class: 'modal-x', 'aria-label': 'Close', onclick: m.close }, '×'));
+  }
+
   function signOut(guest) {
     var m = UI.modal(h('div', null, h('h2', null, guest ? 'Quit?' : 'Sign out?'),
       guest ? h('p', null, 'As a guest, your results stay only on this device.') : null,
-      h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn danger', id: 'so' }, guest ? 'Quit' : 'Sign out'), h('button', { class: 'btn ghost', id: 'cancel' }, 'Cancel'))));
-    m.el.querySelector('#cancel').onclick = m.close;
+      h('button', { class: 'btn block danger', id: 'so', style: 'margin-top:14px' }, guest ? 'Quit' : 'Sign out')));
+    closeX(m);
     m.el.querySelector('#so').onclick = function () {
       api('logout', {}).then(function () { m.close(); state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
     };

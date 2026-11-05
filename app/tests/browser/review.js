@@ -43,7 +43,7 @@ const BASE = 'http://127.0.0.1:8099';
   }
   const label = () => p.locator('.sess-top > span').first().innerText();
   const dots = () => p.locator('.dots .dot');
-  async function nextTask() { await p.click('.feedback .btn:has-text("Next")'); await p.waitForSelector('.task .q'); await p.waitForTimeout(80); }
+  async function nextTask() { await p.click('.feedback .nextbtn'); await p.waitForSelector('.task .q'); await p.waitForTimeout(80); }
 
   check('first task: the question strip is there from the start (so the page does not jump), only the current dot can be used, no Previous yet', (await dots().count()) > 0 && (await p.locator('.dots .dot:not([disabled])').count()) === 1 && (await p.locator('.sess-top .linkbtn:has-text("Previous")').count()) === 0);
   const plan = [true, false, true, false];
@@ -87,7 +87,7 @@ const BASE = 'http://127.0.0.1:8099';
   await dots().nth(1).click(); await p.waitForSelector('.feedback');
   check('looking back from an answered task', /Question 2 of 10 · looking back/.test(await label()));
   await dots().nth(4).click(); await p.waitForSelector('.feedback');
-  check('the current dot returns to the feedback with the real "Next" button', (await p.locator('.feedback .btn:has-text("Next")').count()) === 1 && !/looking back/.test(await label()) && /Question 5 of 10/.test(await label()), await label());
+  check('the current dot returns to the feedback with the real "Next" button', (await p.locator('.feedback .nextbtn').count()) === 1 && !/looking back/.test(await label()) && /Question 5 of 10/.test(await label()), await label());
   await nextTask();
   check('next task is 6; five answered', /Question 6 of 10$/.test(await label()) && (await p.locator('.dot.good, .dot.bad').count()) === 5, await label());
 

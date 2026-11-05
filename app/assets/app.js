@@ -2044,7 +2044,7 @@
     } },
       h('div', { class: 'field' }, h('label', { for: 'pn' }, guest ? 'Your name' : 'Display name'), nick),
       (guest || !feat('leaderboard')) ? null : h('div', { class: 'field' }, h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:500' }, board, 'Show me on the leaderboard')),
-      msg, h('button', { class: 'btn', type: 'submit' }, 'Save'));
+      msg, h('div', { class: 'row', style: 'justify-content:flex-end' }, h('button', { class: 'btn', type: 'submit' }, 'Save')));
 
     var cards = [];
     if (guest) cards.push(guestBanner());
@@ -2157,7 +2157,7 @@
           h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Background colour' }, UI.AV_COLORS.map(function (c) {
             return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; drawPanel(); } });
           }))),
-        msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { type: 'button', class: 'btn', onclick: save }, 'Save')));
+        msg, h('div', { class: 'row', style: 'margin-top:14px;justify-content:flex-end' }, h('button', { type: 'button', class: 'btn', onclick: save }, 'Save')));   // Save on the right, under the thumb (teacher, 5 November)
     }
     function drawHead() {
       headAv.replaceChildren(UI.avatar(u.avatar, u.nickname, 56));

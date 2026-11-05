@@ -60,6 +60,7 @@ so results before and after it are not mixed.
 
 ## Changes
 - 5 Nov 2026: *used to do* and *be / get used to doing* tasks no longer stand in for each other when a mistake is fixed, locked in or reopened (also in Second Chance and `for_item`). Learn tasks are left out of this count; meaning questions *What does it / this / that say / mean?* are now learn tasks. Answer rows and XP are not rewritten, but mistake summaries worked out from history can change (more conservative). Five built-in tasks get new versions; two B2 typed tasks (narrative tenses: tennis, bus) become word banks, so their results are not evidence of writing the form unaided; the *It's time* task becomes *It's high time* with better wrong options. The import retires the old versions of these three prepared tasks. Compare results by app version, task version and help given. Review / Next step labels, the reason line for a topic to strengthen, answer counts in the Skills check and the phone layout change only the display; topic order and placement are unchanged.
+- 5 Nov 2026: seven typed narrative-tense tasks (B2.1 / B2.2) lose the instruction that named the tenses; they stay typed (use). One accepts a second form (*had worked*), so its right-answer rate may rise; compare by task version.
 - 28 Oct 2026: session source recorded.
 - 28 Oct 2026: faulty reported-questions tasks corrected (rq-B22-1a/2a/3a); topic numbers for reported questions
   before this date are inflated (wrong tasks made the app serve the topic more often).

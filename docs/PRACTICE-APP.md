@@ -187,32 +187,19 @@ Learners choose an avatar instead of a photo in **Profile → Your avatar** (the
 
 ## Learning study (research)
 
-For a thesis or any study of what keeps people practising. **Off by default**: uploading the app changes nothing until you switch it on. Design notes, analysis ideas and an ethics checklist are in [RESEARCH-DESIGN.md](RESEARCH-DESIGN.md).
+For the master's thesis at the University of Latvia on English learning habits. **Decided by the teacher on 5 November 2026:**
 
-**Switch it on** in `config/config.php` (all lines are in `config.sample.php`):
-
-```php
-'research_enabled' => true,
-'experiments' => ['streak', 'leaderboard'],   // leave [] to collect data without changing anything
-'research_info_url' => 'https://englishfever.com/en/learning-study/',   // your information sheet
-// 'research_text' => "Paragraph one.\n\nParagraph two.",   // your own, ethics-approved wording (English)
-// 'research_text_lv' => "...",                              // and Latvian
-```
-
-- **Who is asked:** registered learners only (a guest is a cookie in one browser, so there is nobody to ask or to follow). They see a card on Home with *Yes, I take part* / *No, thanks* / *Ask me later* (later = one week), in English or, for learners who use the Latvian explanations, in Latvian. The default wording is a plain placeholder: replace it with the text your ethics review approved.
-- **Leaving:** Profile → *Learning study* → *Leave the study*, any time (also when the study is switched off). The person is back on the normal app and disappears from the next export. Deleting the account removes everything, including the conditions.
-- **Conditions:** only people who joined are randomised. Each factor (streak counter, leaderboard) is allocated in shuffled blocks of four (two see it, two do not), made when the person joins; the order inside a block comes from a keyed hash, so it is reproducible by you and unpredictable for anyone else. Someone who leaves and joins again keeps the same conditions. *Hidden leaderboard* also means the person is not listed on it. The streak is still counted, only not shown.
-- **Teacher page → Students → *Learning study* card** (teachers only): how many take part, the split per factor, and four downloads:
-  - `people.csv` one row per learner (conditions, totals, first/last active day, longest streak, weeks active, active on day 1/7/30, placement level),
+- **Everyone is in the study:** every registered learner, with all their data from registration. There is no invitation and no consent card. Guests are not included (a guest is a cookie in one browser, so there is no person to follow).
+- **Saying no:** Profile → *Your data* → **Research** (next to *Privacy policy*) explains the study in one paragraph (English, or Latvian for learners who use the Latvian explanations) and has one button, *I do not agree to take part in the study*. The learner is then left out of the next export. The same window offers *Take part again*. Deleting the account removes everything.
+- **No random conditions:** everyone sees the same app (streak counter, leaderboard). `research_enabled` and `experiments` in `config.php` are no longer read.
+- **Leaderboard:** everyone is on it; a learner can leave it in Profile (*Show me on the leaderboard*). **Explanations** are in English for everyone at first; a learner can switch to Latvian.
+- **Teacher page → Students → *Learning study* card** (teachers only): how many are in the study and how many said no, and four downloads:
+  - `people.csv` one row per learner (totals, first/last active day, longest streak, weeks active, active on day 1/7/30, placement level),
   - `days.csv` one row per learner and active day,
   - `answers.csv` one row per answered task (topic, level, thinking level, correct, seconds, hour, weekday),
   - `readme.txt` the codebook for your methods section.
-- **What the files contain:** no names, nicknames, e-mail addresses or typed answers, and no calendar dates (only *study day*, with day 0 = the day of consent, and ISO weeks). Learners are a 12-character code made with a key that stays in the app database, so the same person has the same code in every export. Only data from the moment of consent is included.
-- **Honest wording for the ethics board:** the data are *pseudonymised*, not anonymous. You, as the owner of the database, can link a code to a person, so the files are personal data and need the same care as the database itself.
-
-**Add to your privacy policy** (adapt it, it is not legal advice):
-
-> **Learning study (optional).** If you choose to take part, your practice data (when and how often you practise, which tasks you do and how you do) is analysed under a random code, not your name, for research on how people keep up regular learning. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Taking part is voluntary and based on your consent, which you can withdraw at any time in your profile; your data is then no longer used. [Name, institution and contact of the researcher; how long the data is kept; where results are published.]
+- **What the files contain:** no names, nicknames, e-mail addresses or typed answers, and no calendar dates (only *study day*, with day 0 = the day of registration, and ISO weeks). Learners are a 12-character code made with a key that stays in the app database, so the same person has the same code in every export. Test accounts are left out.
+- **Honest wording for the thesis:** the files are *pseudonymised* (you, as the owner of the database, could link a code to a person); the results in the thesis are anonymous.
 
 ## Using it like an app on a phone
 

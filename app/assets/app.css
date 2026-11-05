@@ -953,3 +953,4 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .signout { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; font: inherit; font-weight: 700; color: var(--bad); cursor: pointer; padding: 16px; }
 .signout svg { width: 20px; height: 20px; }
 .btn.danger { background: var(--bad); border-color: var(--bad); color: #fff; }
+.btn.danger-text { color: var(--bad); border-color: var(--bad); }

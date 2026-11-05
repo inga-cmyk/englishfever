@@ -1,5 +1,7 @@
 # Learning study: what keeps people coming back to practise
 
+> **Changed 5 November 2026 (teacher's decision):** no consent card and no random conditions. Every registered learner is in the study with all their data from registration, unless they press *I do not agree to take part in the study* (Profile → Your data → Research). The sections below on the experiment (streak and leaderboard switched off at random) and on consent are kept as background only; they no longer describe the app.
+
 Notes for the thesis. How the practice app supports a study, what it can and cannot tell you, and what to settle before the first participant. How to switch it on is in [PRACTICE-APP.md](PRACTICE-APP.md), section *Learning study*.
 
 ## The question

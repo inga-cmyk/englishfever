@@ -1,6 +1,7 @@
 <?php
-// Research study: consent, random conditions and the anonymised export.
-// Nothing here is active until config.php says so ('research_enabled' => true), so uploading the app changes nothing by itself.
+// Research study: the anonymised export for the master's thesis (University of Latvia).
+// Teacher's decision, 5 November 2026: every registered learner is in the study from registration, with all their data; a learner
+// can say "I do not agree" (Profile → Your data → Research) and is then left out. No random conditions: everyone sees the same app.
 
 final class Research
 {
@@ -12,14 +13,13 @@ final class Research
 
     public static function enabled(): bool
     {
-        return (bool) Config::get('research_enabled', false);
+        return true;   // always on (teacher, 5 November); 'research_enabled' in config.php is no longer read
     }
 
     /** The factors listed in config ('experiments' => ['streak', 'leaderboard']). Unknown names are ignored. */
     public static function activeFactors(): array
     {
-        if (!self::enabled()) return [];
-        return array_values(array_unique(array_filter((array) Config::get('experiments', []), fn($f) => is_string($f) && isset(self::FACTORS[$f]))));
+        return [];   // no random conditions any more (teacher, 5 November): 'experiments' in config.php is ignored
     }
 
     /** Registered learners only: a guest is a cookie in one browser, so there is no person to ask or to follow over time. */
@@ -32,7 +32,6 @@ final class Research
     public static function join(array $u, bool $join): void
     {
         if (!self::eligible($u)) throw new ApiError('The study is for registered learners.', 403);
-        if ($join && !self::enabled()) throw new ApiError('There is no study running at the moment.', 403);
         // The app keeps time per day, so remember how much of today was already recorded: the export starts at the moment of consent.
         $base = (int) Db::val('SELECT seconds FROM activity WHERE user_id = ? AND day = ?', [$u['id'], Stats::today()]);
         Db::update('users', ['research' => $join ? self::JOINED : self::DECLINED, 'research_at' => time(), 'research_base' => $base], 'id = ?', [$u['id']]);
@@ -97,7 +96,7 @@ final class Research
         $out = [
             'enabled' => self::enabled(),
             'registered' => (int) Db::val("SELECT COUNT(1) FROM users WHERE $reg"),
-            'joined' => (int) Db::val("SELECT COUNT(1) FROM users WHERE $reg AND research = ?", [self::JOINED]),
+            'joined' => (int) Db::val("SELECT COUNT(1) FROM users WHERE $reg AND is_test = 0 AND research <> ?", [self::DECLINED]),
             'declined' => (int) Db::val("SELECT COUNT(1) FROM users WHERE $reg AND research = ?", [self::DECLINED]),
             'factors' => [],
         ];
@@ -119,7 +118,13 @@ final class Research
 
     private static function participants(): array
     {
-        return Db::all("SELECT * FROM users WHERE research = ? AND provider <> 'guest' AND role = 'student' AND is_test = 0 ORDER BY id", [self::JOINED]);
+        // everyone except those who said no; all their data, from registration (the study day 0 is the day of registration)
+        $out = [];
+        foreach (Db::all("SELECT * FROM users WHERE research <> ? AND provider <> 'guest' AND role = 'student' AND is_test = 0 ORDER BY id", [self::DECLINED]) as $u) {
+            $u['research_at'] = (int) $u['created_at']; $u['research_base'] = 0;
+            $out[] = $u;
+        }
+        return $out;
     }
 
     private static function dayOf(int $ts): string
@@ -148,7 +153,7 @@ final class Research
     }
 
     /**
-     * Totals per day since consent: day => [seconds, answers, xp]. Answers and points come from the time-stamped answers; seconds come
+     * Totals per day since registration (research_at is set to the registration time in participants()): day => [seconds, answers, xp]. Answers and points come from the time-stamped answers; seconds come
      * from the daily record, minus what it already held when the learner joined. Nothing from before the consent is counted.
      */
     private static function daily(array $u): array
@@ -178,7 +183,7 @@ final class Research
     public static function people(): string
     {
         $today = Stats::today();
-        $factors = array_keys(self::FACTORS);
+        $factors = [];   // no conditions any more (teacher, 5 November)
         $rows = [];
         foreach (self::participants() as $u) {
             $id = (int) $u['id'];
@@ -292,42 +297,37 @@ final class Research
     public static function codebook(): string
     {
         $now = (new DateTime('now', Stats::tz()))->format('Y-m-d H:i');
-        $active = self::activeFactors() ? implode(', ', self::activeFactors()) : 'none';
-        $n = (int) Db::val("SELECT COUNT(1) FROM users WHERE research = ? AND provider <> 'guest' AND role = 'student' AND is_test = 0", [self::JOINED]);
+        $n = count(self::participants());
         return <<<TXT
 English Fever practice app: research export
 Created: {$now} ({$n} participants now in the study)
-Conditions switched on in the app at the moment: {$active}
 
 WHO IS IN THE FILES
-Registered learners who chose "Yes, I take part" and have not left. Guests, teachers, test accounts and everyone who said no or left are not included.
-Only data from the moment of consent onwards is included. If someone leaves, they disappear from the next export.
+All registered learners, with all their data from registration, except those who pressed "I do not agree to take part in the study"
+(Profile → Your data → Research). Guests, teachers and test accounts are not included. Someone who says no disappears from the next export.
+There are no random conditions: everyone sees the same app (decided 5 November 2026).
 A learner who deletes their account disappears from the next export as well.
 
 IDENTITY AND DATES
 pid            12-character code for one learner, the same in every file and every export. It is a keyed hash made on the server; the key is
                stored in the app database, so the code cannot be turned back into a person without access to that database.
                The files contain no names, nicknames, e-mail addresses or the learners' own typed answers.
-study_day      Whole days since the day of consent (day 0 = the day of consent). Calendar dates are not included.
+study_day      Whole days since registration (day 0 = the day of registration). Calendar dates are not included.
 weekday        1 = Monday ... 7 = Sunday (Riga time).    hour   0-23 (Riga time).
-join_week      ISO week of registration, consent_week = ISO week of consent (coarse cohort markers).
+join_week      ISO week of registration (coarse cohort marker); consent_week is the same week (kept for older scripts).
 
 people.csv   (one row per learner)
-cond_streak, cond_leaderboard   Condition: "on" = feature visible (the normal app, control), "off" = hidden. Empty = not randomised for that factor.
-                      Allocation: shuffled blocks of four per factor (two "on", two "off"), made when the learner joined the study.
-                      In the "off" leaderboard condition the learner also does not appear on the leaderboard.
 explanations_lv       1 if the learner uses Latvian grammar explanations (current setting).
 avatar_chosen         1 if the learner picked an avatar themselves.   board_opt_in   1 if the learner chose to appear on the leaderboard (current setting).
-observed_days         Days from consent day to the day of export, counting both. Use it to avoid counting a late joiner as a drop-out.
+observed_days         Days from registration to the day of export, counting both. Use it to avoid counting a late joiner as a drop-out.
 active_days           Number of days with at least one answered task.
-answers, seconds, xp  Totals since consent. seconds = active time recorded by the app (0 if the learner turned time tracking off on the website);
-                      on the consent day the time recorded before consent is subtracted.
-correct_pct           Share of correct answers since consent.
+answers, seconds, xp  Totals since registration. seconds = active time recorded by the app (0 if the learner turned time tracking off on the website);
+correct_pct           Share of correct answers since registration.
 sessions, sessions_smart   Practice sessions with at least one answer; how many of them were "Surprise me".
-placement_level       Overall level from the latest placement test taken after consent.
+placement_level       Overall level from the latest placement test (any time since registration).
 first_active_day, last_active_day   study_day of first and last day with an answer.
 longest_streak        Longest run of consecutive active days.
-weeks_active          Number of 7-day blocks since consent (days 0-6, 7-13, ...) with at least one active day.
+weeks_active          Number of 7-day blocks since registration (days 0-6, 7-13, ...) with at least one active day.
 active_day1/7/30      1 if the learner answered at least one task exactly on study day 1 / 7 / 30. Only meaningful when observed_days is above 1 / 7 / 30.
 
 days.csv     (one row per learner and day with activity; a missing day means no activity)

@@ -6,7 +6,8 @@ so results before and after it are not mixed.
 
 ## Where the data come from
 - **Research export** (teacher: Research): `people.csv`, `days.csv`, `answers.csv`, `events.csv`, `codebook.txt`.
-  Pseudonymised (a code per learner). Only learners who joined the study, from the moment they joined. This is the file for the thesis.
+  Pseudonymised (a code per learner). Every registered learner (not guests, teachers or test accounts) with all their data from registration,
+  except those who pressed *I do not agree to take part in the study* (since 5 Nov 2026; before that: only those who joined, from joining). This is the file for the thesis.
 - **Teacher exports** (answers of all learners, Usage): with nicknames. For checking the app, not for the thesis.
 
 ## One row per answer (answers.csv)
@@ -59,6 +60,7 @@ so results before and after it are not mixed.
 - **Hypotheses written down before looking**: 2-3 main questions, the rest is exploration.
 
 ## Changes
+- 5 Nov 2026: the study no longer asks for consent and has no random conditions (teacher's decision). Every registered learner is in the export with all data from registration (study day 0 = registration day); a learner can opt out under Profile → Your data → Research, and is then left out of the next export. Everyone sees the streak counter and the leaderboard (a learner can leave the leaderboard in Profile). `people.csv` has no `cond_*` columns; `consent_week` = `join_week`. Learners who had said no to the earlier invitation stay left out.
 - 5 Nov 2026: *used to do* and *be / get used to doing* tasks no longer stand in for each other when a mistake is fixed, locked in or reopened (also in Second Chance and `for_item`). Learn tasks are left out of this count; meaning questions *What does it / this / that say / mean?* are now learn tasks. Answer rows and XP are not rewritten, but mistake summaries worked out from history can change (more conservative). Five built-in tasks get new versions; two B2 typed tasks (narrative tenses: tennis, bus) become word banks, so their results are not evidence of writing the form unaided; the *It's time* task becomes *It's high time* with better wrong options. The import retires the old versions of these three prepared tasks. Compare results by app version, task version and help given. Review / Next step labels, the reason line for a topic to strengthen, answer counts in the Skills check and the phone layout change only the display; topic order and placement are unchanged.
 - 5 Nov 2026: seven typed narrative-tense tasks (B2.1 / B2.2) lose the instruction that named the tenses; they stay typed (use). One accepts a second form (*had worked*), so its right-answer rate may rise; compare by task version.
 - 28 Oct 2026: session source recorded.

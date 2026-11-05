@@ -503,67 +503,25 @@
     return h('div', { class: 'guestbar' }, signin, create);
   }
 
-  // ───────── learning study (optional, registered learners only) ─────────
-  // Switched on in config.php. The wording below is a plain default: replace it with the text your ethics review approved
-  // ('research_text' and 'research_text_lv' in config.php, paragraphs separated by an empty line).
+  // ───────── research (teacher, 5 November) ─────────
+  // Every registered learner is in the study with anonymised data; Profile → Your data → Research explains it and has one button to say no.
   var STUDY = {
-    en: {
-      title: 'Help with a learning study?', yes: 'Yes, I take part', no: 'No, thanks', later: 'Ask me later', info: 'Read the information sheet',
-      body: ['Inga, the teacher behind English Fever, is researching what helps people keep up regular practice. If you take part, your practice data (when and how often you practise, which tasks you do and how you do, and which parts of the app you open and use) is analysed under a random code, not your name. Some features, such as the streak counter or the leaderboard, may look different for you than for other learners. Your results and the grammar content stay the same.',
-        'Taking part is optional. By choosing “Yes” you confirm that you are 18 or older, or that a parent or guardian agrees. You can leave at any time on your Profile page; your data is then no longer used.'],
-      label: 'Learning study', joined: 'You are taking part in the learning study. Thank you!', left: 'You are not taking part.', leave: 'Leave the study', join: 'Take part', thanks: 'Thank you for taking part!', byebye: 'You have left the study.',
-    },
-    lv: {
-      title: 'Palīdziet pētījumā?', yes: 'Jā, piedalos', no: 'Nē, paldies', later: 'Vēlāk', info: 'Informācija par pētījumu',
-      body: ['Inga, skolotāja, kas veido English Fever, pēta, kas palīdz cilvēkiem mācīties regulāri. Ja piedalīsieties, jūsu mācību dati (kad un cik bieži mācāties, kādus uzdevumus veicat un kā jums sokas, kā arī kuras lietotnes daļas atverat un izmantojat) tiks analizēti ar nejaušu kodu, nevis ar jūsu vārdu. Dažas funkcijas, piemēram, dienu skaitītājs vai līderu saraksts, jums var izskatīties citādi nekā citiem. Jūsu rezultāti un gramatikas saturs paliek tie paši.',
-        'Dalība ir brīvprātīga. Izvēloties “Jā”, jūs apliecināt, ka jums ir 18 gadi vai vairāk, vai ka vecāks vai aizbildnis piekrīt. Jūs varat jebkurā brīdī izstāties savā profila lapā; jūsu dati vairs netiks izmantoti.'],
-      label: 'Mācību pētījums', joined: 'Jūs piedalāties mācību pētījumā. Paldies!', left: 'Jūs nepiedalāties.', leave: 'Izstāties', join: 'Piedalīties', thanks: 'Paldies par dalību!', byebye: 'Jūs izstājāties no pētījuma.',
-    },
+    en: { title: 'Research', body: 'Your learning data may be collected in anonymous form and used in a study for a master\'s thesis at the University of Latvia about English learning habits. Your name is never used. If you do not want to take part, press the button below: your data will then be left out of the study.',
+      no: 'I do not agree to take part in the study', out: 'You are not taking part in the study. Your data is left out.', back: 'Take part again', done: 'You are not taking part in the study.', thanks: 'Thank you! You are taking part again.' },
+    lv: { title: 'Pētījums', body: 'Tavi mācību dati anonīmā veidā var tikt apkopoti un izmantoti Latvijas Universitātes maģistra darba pētījumā par angļu valodas mācību ieradumiem. Tavs vārds netiek izmantots. Ja nevēlies piedalīties, nospied pogu zemāk: tad tavi dati pētījumā netiks iekļauti.',
+      no: 'Nepiekrītu dalībai pētījumā', out: 'Tu nepiedalies pētījumā. Tavi dati netiek iekļauti.', back: 'Piedalīties atkal', done: 'Tu nepiedalies pētījumā.', thanks: 'Paldies! Tu atkal piedalies.' },
   };
-  function studyTexts() {
-    var lv = state.user && state.user.lang === 'lv', d = STUDY[lv ? 'lv' : 'en'];
-    var custom = lv ? state.config.research_text_lv : state.config.research_text;
-    return { d: d, body: custom ? custom.split(/\n\s*\n/) : d.body };
-  }
-  function studyEligible() { return !!state.user && !state.user.guest && state.user.role === 'student'; }
-  function setStudy(join) {
-    return api('account/research', { join: join }).then(function (r) { state.user = r.user; renderChrome(location.hash.split('/').slice(0, 2).join('/')); return r; });
-  }
-  function studyLater() { try { return Date.now() - (+localStorage.getItem('ef_study_later') || 0) < 7 * 86400000; } catch (e) { return false; } }
-
-  /** The invitation on the home page: once per learner, "Ask me later" waits a week. */
-  function studyPrompt() {
-    if (!state.config.research || !studyEligible() || state.user.research !== 0 || studyLater()) return null;
-    var t = studyTexts(), d = t.d, msg = h('div');
-    function answer(join) {
-      setStudy(join).then(function () { UI.toast(join ? d.thanks : d.byebye); route(); }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
-    }
-    return h('div', { class: 'card', style: 'margin-bottom:16px;border-color:var(--gold)' },
-      h('div', { class: 'label' }, d.label), h('h2', null, d.title),
-      t.body.map(function (p) { return h('p', null, p); }),
-      state.config.research_info_url ? h('p', null, h('a', { href: state.config.research_info_url, target: '_blank', rel: 'noopener' }, d.info)) : null,
-      msg,
-      h('div', { class: 'row' },
-        h('button', { class: 'btn', onclick: function () { answer(true); } }, d.yes),
-        h('button', { class: 'btn ghost', onclick: function () { answer(false); } }, d.no),
-        h('button', { class: 'linkbtn', onclick: function (e) { try { localStorage.setItem('ef_study_later', String(Date.now())); } catch (er) {} e.target.closest('.card').remove(); } }, d.later)));
-  }
-
-  /** On the profile page: shows the state and lets the learner join or leave at any time. */
-  function studyProfileCard() {
-    if (!studyEligible() || !(state.config.research || state.user.research === 1)) return null;
-    var t = studyTexts(), d = t.d, msg = h('div');
-    var joined = state.user.research === 1;
-    function change(join) {
-      setStudy(join).then(function () { UI.toast(join ? d.thanks : d.byebye); viewProfile(); }).catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
-    }
-    return h('div', { class: 'card' }, h('h2', null, d.label),
-      h('p', null, joined ? d.joined : d.left),
-      joined ? null : [t.body.map(function (p) { return h('p', { class: 'small muted' }, p); }),
-        state.config.research_info_url ? h('p', { class: 'small' }, h('a', { href: state.config.research_info_url, target: '_blank', rel: 'noopener' }, d.info)) : null],
-      msg,
-      joined ? h('button', { class: 'btn ghost small', onclick: function () { change(false); } }, d.leave)
-        : h('button', { class: 'btn small', onclick: function () { change(true); } }, d.join));
+  function studyModal() {
+    var d = STUDY[state.user.lang === 'lv' ? 'lv' : 'en'], msg = h('div');
+    var out = state.user.research === 2;
+    var btn = h('button', { class: out ? 'btn ghost' : 'btn ghost danger-text', id: 'study-btn' }, out ? d.back : d.no);
+    var m = UI.modal(h('div', null, h('h2', null, d.title), h('p', null, d.body), out ? h('p', null, h('b', null, d.out)) : null, msg,
+      h('div', { class: 'row', style: 'margin-top:14px;justify-content:flex-end' }, h('button', { class: 'btn ghost', id: 'study-close' }, state.user.lang === 'lv' ? 'Aizvērt' : 'Close'), btn)));
+    m.el.querySelector('#study-close').onclick = m.close;
+    btn.onclick = function () {
+      api('account/research', { join: out }).then(function (r) { state.user = r.user; m.close(); UI.toast(out ? d.thanks : d.done); })
+        .catch(function (e) { msg.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    };
   }
 
   // ───────── home ─────────
@@ -639,8 +597,6 @@
       }
       if (started) nodes.push(pathCard());   // My learning path (teacher, 28 October)
       var gb = state.user.guest ? guestBanner() : null; if (gb) nodes.push(gb);   // guests: Log in / Create account, side by side under the main things
-      var invite = studyPrompt();   // the learning-study invitation comes after the main card, never before it
-      if (invite) nodes.push(invite);
 
       var ic = started ? installCard(false) : null; if (ic) nodes.push(ic);
       var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
@@ -2052,7 +2008,6 @@
     if (!state.user.guest && feat('leaderboard')) cards.push(moodCard());   // only people on the leaderboard can be seen by others
     cards.push(langCard());
     cards.push(soundCard());
-    var study = studyProfileCard(); if (study) cards.push(study);
     var pic = installCard(true); if (pic) cards.push(pic);
     cards.push(h('div', { class: 'card' }, h('h2', null, 'Profile'), profile));
     if (!guest && !u.track_time) cards.push(h('div', { class: 'card pad-s' }, h('b', { style: 'color:var(--text)' }, 'Time tracking is off '), '(set on englishfever.com). Your answers are still saved.'));
@@ -2061,8 +2016,10 @@
         h('button', { class: 'btn ghost small', onclick: function () {
           api('account/export').then(function (d) { var a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' })), download: 'my-practice-data.json' }); document.body.appendChild(a); a.click(); a.remove(); }).catch(fail);
         } }, 'Download my data'),
-        h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my results'),
-        h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener', class: 'small' }, 'Privacy policy'))));
+        h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my results')),
+      h('div', { class: 'row', style: 'margin-top:12px;gap:18px' },
+        h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener', class: 'small' }, 'Privacy policy'),
+        guest ? null : h('a', { href: '#', class: 'small study-link', onclick: function (e) { e.preventDefault(); studyModal(); } }, state.user.lang === 'lv' ? 'Pētījums' : 'Research'))));   // next to the privacy policy (teacher, 5 November)
     cards.push(h('button', { type: 'button', class: 'card signout', onclick: function () { signOut(guest); } }, icon('logout'), guest ? 'Quit' : 'Sign out'));   // the last row, asks first (teacher, 5 November)
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
   }
@@ -2279,15 +2236,13 @@
       }).catch(function () {});
       api('teacher/research').then(function (st) {
         var box = document.getElementById('researchbox');
-        if (!box || !(st.enabled || st.joined)) return;
+        if (!box) return;
         function dl(file, label) { return h('a', { class: 'btn ghost small', href: 'api.php?r=teacher/research-export&file=' + file, download: '' }, label); }
         box.replaceChildren(h('div', { class: 'card', style: 'margin-bottom:14px' },
           h('div', { class: 'label' }, 'Learning study'),
-          h('p', { style: 'margin:4px 0 8px' }, h('b', { style: 'color:var(--text)' }, st.joined + ' of ' + st.registered), ' registered learners take part (' + st.declined + ' said no).' + (st.enabled ? '' : ' The study is switched off in config.php; people can still leave and you can still download.')),
-          st.factors.length ? h('ul', { class: 'clean small', style: 'margin:0 0 10px' }, st.factors.map(function (f) { return h('li', null, f.label + ': ' + f.on + ' see it, ' + f.off + ' do not'); }))
-            : h('p', { class: 'small muted', style: 'margin:0 0 10px' }, 'No conditions switched on. Add them under “experiments” in config.php.'),
+          h('p', { style: 'margin:4px 0 10px' }, h('b', { style: 'color:var(--text)' }, String(st.joined)), ' registered learners in the study, ' + st.declined + ' said no (Profile → Your data → Research).'),
           h('div', { class: 'row' }, dl('people', 'People (CSV)'), dl('days', 'Days (CSV)'), dl('answers', 'Answers (CSV)'), dl('readme', 'Read me (TXT)')),
-          h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'No names in these files. Data starts at each person’s consent.')));
+          h('p', { class: 'small muted', style: 'margin:10px 0 0' }, 'No names in these files. All data from registration; test accounts and those who said no are left out.')));
       }).catch(function () {});
       show(h('div', null,
         h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Teacher'), h('h1', { style: 'margin:0' }, 'Students')),

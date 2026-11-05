@@ -110,7 +110,7 @@ try {
                 'user' => ['nickname' => $u['nickname'], 'provider' => $u['provider'], 'joined' => $u['created_at']],
                 'attempts' => Db::all('SELECT item_id, skill, level, bloom, correct, answer, time_ms, created_at FROM attempts WHERE user_id = ? ORDER BY id', [$u['id']]),
                 'activity' => Db::all('SELECT day, seconds, answers, xp FROM activity WHERE user_id = ? ORDER BY day', [$u['id']]),
-                'study' => ['status' => [0 => 'not asked', 1 => 'taking part', 2 => 'not taking part'][(int) $u['research']] ?? 'not asked', 'since' => (int) $u['research'] === 1 ? (int) $u['research_at'] : null, 'conditions' => Research::arms($u)],
+                'study' => ['status' => (int) $u['research'] === Research::DECLINED ? 'not taking part' : ($u['provider'] === 'guest' ? 'not in the study (guest)' : 'taking part (anonymised; can say no under Your data → Research)')],
             ];
             out($data);
 

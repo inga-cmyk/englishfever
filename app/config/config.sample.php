@@ -35,17 +35,11 @@ return [
     'site_url' => 'https://englishfever.com/',
     'dashboard_url' => 'https://englishfever.com/en/dashboard/', // the student dashboard: the app links to it (top bar, Home)
 
-    // Learning study (research). Off by default. When on, registered learners are invited to take part; only people who agree
-    // are randomised to the conditions listed under 'experiments' and appear in the research export (teacher page, Students).
-    // Switch it on only when your ethics review and information sheet are ready, and replace the default wording with the approved text.
     // The "test version" notice for everyone (top bar, Home, welcome page). Set to false when the tasks are checked.
     'beta_notice' => true,
 
-    'research_enabled' => false,
-    'experiments' => [],            // any of: 'streak' (daily streak counter), 'leaderboard'. Half of the participants get the feature hidden.
-    'research_info_url' => '',      // page with the information sheet (shown as a link in the invitation)
-    // 'research_text' => "Paragraph one.\n\nParagraph two.",      // optional: your own wording (English)
-    // 'research_text_lv' => "Pirmā rindkopa.\n\nOtrā rindkopa.",  // optional: your own wording (Latvian)
+    // Learning study: always on since 5 November 2026 (every registered learner, unless they say no under Profile → Your data → Research).
+    // 'research_enabled' and 'experiments' are no longer read.
 
     // Shown in the footer and the privacy note.
     'site_name'   => 'English Fever',

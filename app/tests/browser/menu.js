@@ -112,7 +112,7 @@ const OUT = __dirname + '/shots/';
     else if (it.kind === 'gap') { const ins = p.locator('.task .q input.blank'); for (let i = 0; i < await ins.count(); i++) await ins.nth(i).fill('zzz'); }
     else if (it.kind === 'text') await p.fill('.task textarea.type-in', 'zzz');
     else await p.fill('.task textarea.write', 'hello there');
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     const fbEn = await p.locator('.feedback').innerText();
     check('the feedback shows a Latviski button up to B1.2', (await p.locator('.feedback .langbtn.lv').count()) === 1 && /Why:/.test(fbEn), fbEn.slice(0, 80));
     await p.click('.feedback .langbtn.lv');
@@ -140,7 +140,7 @@ const OUT = __dirname + '/shots/';
     await p.goto(BASE + '/index.html#/session'); await p.reload(); await p.waitForSelector('.task');
     const it2 = ITEMS[r.item.id];
     if (it2.kind === 'mcq') await p.locator('label.opt', { hasText: it2.wrong[0] }).first().click(); else await p.fill('.task textarea.write, .task textarea.type-in', 'hello there now');
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     check('above B1.2 there is no Latviski button and the text stays English', (await p.locator('.feedback .langbtn.lv').count()) === 0 && /Why:|Model answer/.test(await p.locator('.feedback').innerText()));
     await ctx.close();
   }

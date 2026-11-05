@@ -11,7 +11,7 @@ const BASE = 'http://127.0.0.1:8099';
   await p.goto(BASE + '/index.html#/session'); await p.reload(); await p.waitForSelector('.task .q');
   const opts = await p.locator('label.opt').evaluateAll(a => a.map(x => x.getAttribute('data-opt')));
   const wrong = opts.find(o => o !== 'works');
-  await p.locator('label.opt[data-opt="' + wrong + '"]').click(); await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+  await p.locator('label.opt[data-opt="' + wrong + '"]').click(); await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
   const ems = await p.locator('.feedback p em, .feedback .ans em').allInnerTexts();
   check('English: examples in the explanation are in italics', ems.length >= 2 && ems.join('|').includes('she works'), ems);
   const whyHtml = await p.locator('.feedback p', { hasText: 'Why:' }).innerHTML();

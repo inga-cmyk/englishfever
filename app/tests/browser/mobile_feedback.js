@@ -41,7 +41,7 @@ const APP = path.resolve(__dirname, '../..');
     assert(stop && stop.x >= 0 && stop.x + stop.width <= width); checks++;
     await page.locator('textarea.type-in').fill(answer);
     assert(await page.locator('textarea.type-in').evaluate(el=>el.scrollHeight<=el.clientHeight+2)); checks++;
-    await page.getByRole('button',{name:'Check answer',exact:true}).click();
+    await page.getByRole("button",{name:"Check",exact:true}).click();
     await page.waitForSelector('.submitted-answer');
     assert((await page.locator('.submitted-answer').innerText()).includes(answer)); checks++;
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)); checks++;

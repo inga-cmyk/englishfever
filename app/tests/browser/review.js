@@ -38,7 +38,7 @@ const BASE = 'http://127.0.0.1:8099';
       for (const t of seq) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click();
     }
     else { throw new Error('unexpected kind ' + it.kind); }
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     answered.push({ id, kind: it.kind, given, right });
   }
   const label = () => p.locator('.sess-top > span').first().innerText();
@@ -61,7 +61,7 @@ const BASE = 'http://127.0.0.1:8099';
   const lockedAll = await p.evaluate(() => [...document.querySelectorAll('.task input')].every(i => i.disabled));
   check('task 4 is read-only and shows the saved answer', lockedAll && (t4.kind === 'order' || t4.kind === 'match' || (t4.kind === 'gap' && (await p.locator('.task input[type=text]').count()) === 0) ? true : t4.kind === 'mcq' ? (await p.locator('.task input[type=radio]:checked').getAttribute('value')) === t4.given : (await p.locator('.task input[type=text]').evaluateAll(a => a.map(x => x.value))).join('|') === [].concat(t4.given).join('|')), t4);
   check('the feedback of task 4 is shown (it was wrong)', (await p.locator('.feedback.bad').count()) === 1);
-  check('no Check answer button while looking back', (await p.locator('.task .btn:has-text("Check answer")').count()) === 0);
+  check('no Check answer button while looking back', (await p.locator('.task .checkbtn').count()) === 0);
   check('the XP / progress did not change by looking', /Question 4/.test(await label()));
   // dot 1
   await dots().nth(0).click(); await p.waitForSelector('.feedback');
@@ -72,7 +72,7 @@ const BASE = 'http://127.0.0.1:8099';
   check('Next › moves to task 2 (wrong)', /Question 2 of 10/.test(await label()) && (await p.locator('.feedback.bad').count()) === 1, await label());
   // back to where we were
   await p.click('.feedback .btn:has-text("Back to question 5")'); await p.waitForSelector('.task .q');
-  check('back on task 5: not answered, Check answer is there (disabled), no feedback', /Question 5 of 10$/.test(await label()) && (await p.locator('.feedback').count()) === 0 && (await p.locator('.task .btn:has-text("Check answer")').isDisabled()), await label());
+  check('back on task 5: not answered, Check answer is there (disabled), no feedback', /Question 5 of 10$/.test(await label()) && (await p.locator('.feedback').count()) === 0 && (await p.locator('.task .checkbtn').isDisabled()), await label());
   // the current dot works too
   await dots().nth(1).click(); await p.waitForSelector('.feedback'); await dots().nth(4).click(); await p.waitForSelector('.task .q');
   check('clicking the current dot returns to the task', /Question 5 of 10$/.test(await label()) && (await p.locator('.feedback').count()) === 0, await label());

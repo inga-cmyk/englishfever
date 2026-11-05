@@ -928,3 +928,28 @@ button.level-scale { cursor: pointer; }
 textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre-wrap; }
 .submitted-answer, .cmp-row > span, .task .ans { overflow-wrap:anywhere; min-width:0; }
 .path-reason { display:block; margin-top:6px; }
+
+/* Task buttons: Skip under the left thumb, Check under the right; on a phone they stay above the menu (teacher, 5 November) */
+.actbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 18px; }
+.actbar .checkbtn { min-width: 150px; }
+@media (max-width: 720px) {
+  .actbar { position: sticky; bottom: calc(60px + env(safe-area-inset-bottom)); z-index: 5; background: var(--surface); margin: 14px -20px 0; padding: 12px 16px; border-top: 1px solid var(--line); }
+  .actbar .btn { min-height: 52px; }
+  .actbar .checkbtn { flex: 0 0 58%; }
+  .actbar .skipbtn { flex: 0 0 auto; min-width: 96px; }
+}
+/* Avatar: the picture opens the choice */
+.av-head { padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; }
+.av-head:focus-visible { outline: 2px solid var(--btn); outline-offset: 3px; }
+/* Mood: a folded drawer */
+.mood-drawer > summary { list-style: none; display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.mood-drawer > summary::-webkit-details-marker { display: none; }
+.mood-drawer > summary h2 { margin: 0; flex: 1; }
+.mood-now { color: var(--text-soft); font-weight: 600; }
+.mood-drawer > summary svg { width: 18px; height: 18px; color: var(--muted); transition: transform .2s ease; }
+.mood-drawer[open] > summary svg { transform: rotate(90deg); }
+.mood-drawer[open] .moods { margin-top: 16px; }
+/* Sign out: the last row, red text */
+.signout { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; font: inherit; font-weight: 700; color: var(--bad); cursor: pointer; padding: 16px; }
+.signout svg { width: 20px; height: 20px; }
+.btn.danger { background: var(--bad); border-color: var(--bad); color: #fff; }

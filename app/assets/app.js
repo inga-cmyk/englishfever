@@ -1162,7 +1162,7 @@
     var at = rev ? rev.n : S.curN;                                   // number of the task on screen (0-based)
     var it = rev ? rev.item : S.item, ses = S.session;
     var answerGetter, canSubmit = function () { return false; };
-    var submit = h('button', { class: 'btn', disabled: true }, 'Check answer');
+    var submit = h('button', { class: 'btn checkbtn', disabled: true }, 'Check');
     var skipBtn = h('button', { type: 'button', class: 'btn ghost skipbtn' }, 'Skip');   // "I don't know": no guessing, no XP; the topic comes back in Second Chance (teacher, 27 October)
     var area = h('div');
     var qEl = h('div', { class: 'q' });
@@ -1268,7 +1268,7 @@
       area.querySelectorAll('.dnd-hint').forEach(function (x) { x.remove(); });   // the drag hint is not needed once the answer is checked
       area.querySelectorAll('input[type=radio]').forEach(function (r) { r.disabled = true; });
       if (board) board.lock();
-      submit.remove(); skipBtn.remove();
+      var bar = submit.parentNode; submit.remove(); skipBtn.remove(); if (bar && bar.classList && bar.classList.contains('actbar')) bar.remove();
     }
 
     function showFeedback(r, ans) {
@@ -1496,7 +1496,7 @@
         h('div', { class: 'meta' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
           ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, ses.mode === 'placement' ? reportBtn : null,
           ses.mode === 'placement' ? null : h('button', { type: 'button', class: 'task-rule', 'aria-label': 'Rule card', title: 'Rule card', onclick: function () { cardOpened = true; rulesModal(it.skill, true); } }, '?')),   // the rule card during a task (teacher, 2 November); noted with the answer for the research   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
-        qEl, area, h('div', { class: 'row', style: 'gap:18px' }, submit, ses.mode === 'placement' || rev ? null : skipBtn), feedback)));
+        qEl, area, h('div', { class: 'actbar' }, ses.mode === 'placement' || rev ? h('span') : skipBtn, submit), feedback)));   // Skip under the left thumb, Check under the right (teacher, 5 November)
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
       var a = rev.ans;
       if (it.kind === 'mcq') area.querySelectorAll('input[type=radio]').forEach(function (r) { if (r.value === a) { r.checked = true; chosen = a; } });
@@ -2063,9 +2063,7 @@
         } }, 'Download my data'),
         h('button', { class: 'btn ghost small', onclick: deleteAccount }, 'Delete my results'),
         h('a', { href: state.config.privacy_url, target: '_blank', rel: 'noopener', class: 'small' }, 'Privacy policy'))));
-    cards.push(h('div', null, h('button', { class: 'btn ghost', onclick: function () {
-      api('logout', {}).then(function () { state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
-    } }, icon('logout'), guest ? 'Quit' : 'Sign out')));
+    cards.push(h('button', { type: 'button', class: 'card signout', onclick: function () { signOut(guest); } }, icon('logout'), guest ? 'Quit' : 'Sign out'));   // the last row, asks first (teacher, 5 November)
     show(h('div', { class: 'sess', style: 'max-width:620px' }, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, guest ? 'Guest' : 'Account'), h('h1', { style: 'margin:0' }, u.nickname))), h('div', { class: 'grid' }, cards)));
   }
 
@@ -2120,8 +2118,16 @@
         } }, h('span', { class: 'mood-em', 'aria-hidden': 'true' }, MOODS[k][0]), MOODS[k][1]);
       }));
     }
+    var sum = h('summary', { class: 'mood-sum' });
+    var box = h('details', { class: 'card mood-drawer' }, sum, grid);
+    function drawSum() {
+      var m = state.user.mood && MOODS[state.user.mood];
+      sum.replaceChildren(h('h2', null, 'Your mood'), h('span', { class: 'mood-now' }, m ? m[0] + ' ' + m[1] : 'Not set'), icon('arrow'));
+    }
+    var draw0 = draw; draw = function () { draw0(); drawSum(); };
     draw();
-    return h('div', { class: 'card' }, h('h2', null, 'Your mood'), grid);
+    grid.addEventListener('click', function (e) { if (e.target.closest('.mood')) setTimeout(function () { box.open = false; }, 250); });
+    return box;   // folded: one line with the chosen mood (teacher, 5 November)
   }
 
   function avatarCard() {
@@ -2130,11 +2136,12 @@
     var open = false;
     var head = h('div', { class: 'row between', style: 'flex-wrap:nowrap' });
     var panel = h('div', { class: 'avpanel', hidden: true });
+    var headAv = h('button', { type: 'button', class: 'av-head', 'aria-label': 'Change your avatar', 'aria-expanded': 'false', 'aria-controls': 'avpanel', onclick: function () { setOpen(!open); } });
     var toggle = h('button', { type: 'button', class: 'btn ghost small', 'aria-expanded': 'false', 'aria-controls': 'avpanel', onclick: function () { setOpen(!open); } });
     panel.id = 'avpanel';
     var msg = h('div');
     function setOpen(v) {
-      open = v; panel.hidden = !v; toggle.setAttribute('aria-expanded', String(v)); toggle.textContent = v ? 'Close' : 'Change';
+      open = v; panel.hidden = !v; toggle.setAttribute('aria-expanded', String(v)); toggle.textContent = 'Change'; toggle.hidden = v; headAv.setAttribute('aria-expanded', String(v));
       if (v) { var c = u.avatar ? u.avatar.split('-') : []; pick.pic = c[0] || pick.pic; pick.color = c[1] || pick.color; drawPanel(); }
     }
     function group(title, pics) {
@@ -2150,10 +2157,11 @@
           h('div', { class: 'avcolors', role: 'radiogroup', 'aria-label': 'Background colour' }, UI.AV_COLORS.map(function (c) {
             return h('button', { type: 'button', class: 'avcolor', role: 'radio', 'aria-checked': String(c === pick.color), 'aria-label': UI.AV_NAMES[c], title: UI.AV_NAMES[c], style: 'background:' + UI.AV_COLOR_VALUES[c][0], onclick: function () { pick.color = c; drawPanel(); } });
           }))),
-        msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { type: 'button', class: 'btn small', onclick: save }, 'Save')));
+        msg, h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { type: 'button', class: 'btn', onclick: save }, 'Save')));
     }
     function drawHead() {
-      head.replaceChildren(h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, UI.avatar(u.avatar, u.nickname, 56), h('h2', { style: 'margin:0' }, 'Your avatar')), toggle);
+      headAv.replaceChildren(UI.avatar(u.avatar, u.nickname, 56));
+      head.replaceChildren(h('div', { class: 'row', style: 'gap:14px;flex-wrap:nowrap' }, headAv, h('h2', { style: 'margin:0' }, 'Your avatar')), toggle);
     }
     function save() {
       msg.replaceChildren();
@@ -2163,6 +2171,16 @@
     }
     drawHead(); setOpen(false);
     return h('div', { class: 'card' }, head, panel);
+  }
+
+  function signOut(guest) {
+    var m = UI.modal(h('div', null, h('h2', null, guest ? 'Quit?' : 'Sign out?'),
+      guest ? h('p', null, 'As a guest, your results stay only on this device.') : null,
+      h('div', { class: 'row', style: 'margin-top:14px' }, h('button', { class: 'btn danger', id: 'so' }, guest ? 'Quit' : 'Sign out'), h('button', { class: 'btn ghost', id: 'cancel' }, 'Cancel'))));
+    m.el.querySelector('#cancel').onclick = m.close;
+    m.el.querySelector('#so').onclick = function () {
+      api('logout', {}).then(function () { m.close(); state.user = null; state.dash = null; stopHeartbeat(); go('#/'); });
+    };
   }
 
   function deleteAccount() {

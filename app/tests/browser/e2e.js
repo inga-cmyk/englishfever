@@ -61,7 +61,7 @@ const OUT = __dirname + '/shots/';
     } else {
       await page.fill('.task textarea.write', correct ? it.model : 'hello there');
     }
-    await page.click('.task .btn:has-text("Check answer")');
+    await page.click('.task .checkbtn');
     await page.waitForSelector('.feedback');
     if (shot) await page.screenshot({ path: OUT + shot + '-feedback.png', fullPage: true });
     return it;

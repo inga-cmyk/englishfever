@@ -21,7 +21,7 @@ const tok = (uid, name, teacher) => { const x = Buffer.from(JSON.stringify({ uid
   check('the avatar menu is collapsed at first', !(await main.locator('.avpanel').isVisible()) && (await main.locator('button:has-text("Change")').getAttribute('aria-expanded')) === 'false');
   await main.screenshot({ path: __dirname + '/shots/69-profile-collapsed.png', fullPage: true });
   await main.click('button:has-text("Change")');
-  check('Change opens it', await main.locator('.avpanel').isVisible() && (await main.locator('button:has-text("Close")').getAttribute('aria-expanded')) === 'true');
+  check('Change opens it; one Save, no Close (teacher, 5 November)', await main.locator('.avpanel').isVisible() && (await main.locator('.av-head').getAttribute('aria-expanded')) === 'true' && (await main.locator('.card:has(.avpanel) button:visible', { hasText: /^(Save|Close)$/ }).count()) === 1);
   check('it offers Latvia, people, characters, Halloween and symbols', (await main.locator('.avpanel .avopt').count()) === 6 + 10 + 9 + 8 + 8 + 1);
   await main.click('.avopt[aria-label="Captain"]'); await main.click('.avcolor[aria-label="Plum"]');
   await main.screenshot({ path: __dirname + '/shots/70-profile-avatar.png', fullPage: true });

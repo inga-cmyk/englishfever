@@ -87,7 +87,7 @@ const LV = META.levels; const idx = l => LV.indexOf(l);
     else if (it.kind === 'text') await p.fill('.task textarea.type-in', right ? it.answers[0][0] : 'zzz');
     else if (it.kind === 'order') { const toks = it.sentence.split(' '); for (const t of (right ? toks : toks.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }
     else if (it.kind === 'match') { const rs = it.pairs.map(x => x[1]); for (const t of (right ? rs : rs.slice().reverse())) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).first().click(); }
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
   };
   const next = async () => { await p.click('.feedback .btn:has-text("Next")'); await p.waitForSelector('.task .q'); await p.waitForTimeout(60); };
   await answerFirst(true);

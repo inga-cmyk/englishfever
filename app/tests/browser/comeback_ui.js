@@ -43,7 +43,7 @@ const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     else if (it.kind === 'match') { for (const t of it.pairs.map(p => p[1])) await page.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(t) + '$') }).first().click(); }
     else await page.fill('.task textarea.write', it.model);
     const notesBefore = await page.evaluate(() => window.__notes);
-    await page.click('.task .btn:has-text("Check answer")'); await page.waitForSelector('.feedback');
+    await page.click('.task .checkbtn'); await page.waitForSelector('.feedback');
     if (await page.locator('.fixed-line').count()) fixedLines++;
     if (k === 0) { await page.screenshot({ path: OUT + 'comeback-feedback.png', fullPage: true }); check('the chime matches whether a mistake was fixed', (await page.evaluate(() => window.__notes)) - notesBefore === (lastAnswer.result.fixed ? 4 : 2), lastAnswer.result); }
     n++; await page.click('.feedback .nextrow .btn'); await page.waitForTimeout(300);

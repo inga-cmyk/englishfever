@@ -45,7 +45,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const it = ITEMS[pub.id]; const toks = it.sentence.split(' ');
     const shown = await p.locator('.dnd-bank .chip').allInnerTexts();
     check('the cards are the words of the sentence, in a different order', JSON.stringify([...shown].sort()) === JSON.stringify([...toks].sort()) && shown.join(' ') !== toks.join(' '), shown);
-    check('Check answer is off until every card is placed', await p.locator('.task .btn:has-text("Check answer")').isDisabled());
+    check('Check answer is off until every card is placed', await p.locator('.task .checkbtn').isDisabled());
     await p.screenshot({ path: OUT + '90-order-start.png', fullPage: true });
     // first card by mouse drag into the line, the rest by tapping
     const first = p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(toks[0]) + '$') }).first();
@@ -58,8 +58,8 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(toks[0]) + '$') }).first().focus(); await p.keyboard.press('Enter');
     check('Enter on a focused card places it', (await p.locator('.dnd-line .chip').count()) === 1);
     for (let i = 1; i < toks.length; i++) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(toks[i]) + '$') }).first().click();
-    check('Check answer turns on when all cards are placed', !(await p.locator('.task .btn:has-text("Check answer")').isDisabled()));
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    check('Check answer turns on when all cards are placed', !(await p.locator('.task .checkbtn').isDisabled()));
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     check('the right order is marked correct', (await p.locator('.feedback.good').count()) === 1 && (await p.locator('.dnd-line.ok').count()) === 1, await p.locator('.feedback').innerText());
     check('the cards are locked after checking', (await p.locator('.dnd .chip:not([disabled])').count()) === 0);
     await p.screenshot({ path: OUT + '91-order-done.png', fullPage: true });
@@ -68,7 +68,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const pub2 = await serve(p, 'order', ['cond_first', 'cond_second', 'rep_questions', 'ind_polite'], 'B1.1');
     const toks2 = ITEMS[pub2.id].sentence.split(' ');
     for (const t of [...toks2].reverse()) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(t) + '$') }).first().click();
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     const txt = await p.locator('.feedback').innerText();
     check('a wrong order is marked wrong and shows the correct sentence', (await p.locator('.feedback.bad').count()) === 1 && /Correct answer|Correct:/.test(txt) && (await p.locator(".feedback .compare mark.ins").count()) > 0 && (await p.locator('.dnd-line.bad').count()) === 1, txt.slice(0, 120));
     // "Which sentence is NOT correct?": the answer is the faulty sentence, so it is not called "Correct answer" (Cowork issue 18)
@@ -78,7 +78,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     check('a "NOT correct" question was served', !!pub3);
     if (pub3) {
       await p.locator('.task label, .task .opt').filter({ hasText: ITEMS[pub3.id].wrong[0] }).first().click();
-      await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+      await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
       const txt3 = await p.locator('.feedback').innerText();
       check('a "NOT correct" question names the answer "The wrong sentence", not "Correct answer"', /The wrong sentence: /.test(txt3) && !/Correct answer/.test(txt3), txt3.slice(0, 160));
     }
@@ -104,14 +104,14 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     // put everything right: clear slot 0 and tap in order
     await p.locator('.dnd-row .slot .chip').first().click();
     for (const pr of it.pairs) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(pr[1]) + '$') }).first().click();
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     check('correct pairs are marked correct', (await p.locator('.feedback.good').count()) === 1 && (await p.locator('.slot.ok').count()) === it.pairs.length);
     await p.click('.feedback .btn');
     // wrong: rotate the answers
     const pub2 = await serve(p, 'match', ['cond_zero', 'cond_first', 'ind_polite', 'rep_statements'], 'B1.1');
     const it2 = ITEMS[pub2.id]; const rot = [...it2.pairs.slice(1), it2.pairs[0]];
     for (const pr of rot) await p.locator('.dnd-bank .chip', { hasText: new RegExp('^' + esc(pr[1]) + '$') }).first().click();
-    await p.click('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     check('wrong pairs are marked and the right pairs are shown', (await p.locator('.slot.bad').count()) >= 2 && (await p.locator('.feedback .pairs li').count()) === it2.pairs.length);
     await p.screenshot({ path: OUT + '93-match-wrong.png', fullPage: true });
     await ctx.close();
@@ -137,7 +137,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const over = await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
     check('phone: no sideways scrolling', !over);
     await p.screenshot({ path: OUT + '94-bank-phone.png', fullPage: true });
-    await p.tap('.task .btn:has-text("Check answer")'); await p.waitForSelector('.feedback');
+    await p.tap('.task .checkbtn'); await p.waitForSelector('.feedback');
     check('the right words are marked correct', (await p.locator('.feedback.good').count()) === 1 && (await p.locator('.slot.ok').count()) === it.answers.length);
     await ctx.close();
   }

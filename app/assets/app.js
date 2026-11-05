@@ -1318,7 +1318,7 @@
       if (!good && !res.skipped && ses.mode !== 'placement' && (state.wrongRun || 0) >= 3) {   // three mistakes in a row: point to the rule card (teacher, 3 November)
         fb.appendChild(h('p', { class: 'stuck' }, lv ? 'Grūti? Pirms nākamā atver ' : 'Stuck? Open ', h('b', { class: 'stuck-q' }, '?'), lv ? ' uzdevuma augšā.' : ' at the top of the next task.'));
       }
-      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šīs konstrukcijas lietojumā izskatās izlabota.' : 'An earlier mistake with this construction looks fixed.')));
+      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
       if (good && it.kind === 'text') fb.appendChild(h('p', { class: 'submitted-answer' }, h('b', null, lv ? 'Tava atbilde: ' : 'Your answer: '), String(ans || '')));
       var cmp = (!good && !res.skipped && (it.kind === 'text' || it.kind === 'order') && typeof res.show === 'string')
         ? wordDiff(it.kind === 'order' ? (ans || []).join(' ') : String(ans || ''), res.show) : null;   // your sentence and the right one, the different words marked (teacher, 27 October)
@@ -1753,7 +1753,7 @@
     var ps = s.pathStep;
     if (!ps) try { var q = JSON.parse(localStorage.getItem('ef_pathstep') || 'null'); if (q && q.sid == s.session_id) ps = q.step; } catch (e) {}
     if (!s.comeback) nodes.push(nextActions(s, ps));   // one clear choice (teacher, 3 November): try again / try harder / next topic
-    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat), h('p', { class: 'small muted' }, 'These results describe this session. Choosing or arranging words does not show that you can write a sentence independently.')));
+    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));
     nodes.push(reminderCard());
     nodes.push(h('div', { class: 'row' }, homeLink()));
     show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
@@ -1854,7 +1854,7 @@
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, s.parked ? 'Nothing to fix at your level.' : (s.n > s.correct ? 'Nothing left to fix.' : 'Nothing was missed.')), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
-    nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat), h('p', { class: 'small muted' }, 'These results describe this session. Choosing or arranging words does not show that you can write a sentence independently.')));   // the topics tested are on My learning path, where they can be opened
+    nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, homeLink()));
     return nodes;
   }

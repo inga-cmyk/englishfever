@@ -1252,20 +1252,6 @@
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
       var tips = (good && res.notes) ? res.notes : [];
       // rule reminder = a question-mark button and the flags beside it: a flag opens the rule (and the whole explanation) in that language (teacher, 27 October)
-      function flag(code) {
-        var on = (code === 'lv') === lv;
-        return h('button', { type: 'button', class: 'langbtn ' + code + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', 'aria-label': code === 'lv' ? 'Noteikums latviski' : 'Rule in English', title: code === 'lv' ? 'Latviski' : 'English',
-          onclick: function (e) {
-            e.preventDefault(); e.stopPropagation();
-            var d = fb.querySelector('details.rule');
-            if (on) { if (d) d.open = !d.open; return; }
-            state.user.lang = code;
-            track('lang', code); api('account/profile', { lang: code }).catch(function () {});
-            openRuleNext = true;
-            drawFeedback(r, ans, false);
-          } });
-      }
-      var langBtn = hasLv ? [flag('lv'), flag('en')] : [];
       fb.appendChild(h('h3', { class: res.skipped ? 'skipped' : null }, icon(good ? 'check' : res.skipped ? 'arrow' : 'cross'), res.skipped ? (lv ? 'Izlaists – lūk, atbilde' : 'Skipped – here is the answer') : it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
         res.xp ? h('span', { class: 'pill xp xp-' + (res.xp >= 20 ? 4 : res.xp >= 14 ? 3 : res.xp >= 10 ? 2 : 1), style: 'margin-left:auto' }, '+' + res.xp + ' XP') : null));
 
@@ -1305,7 +1291,7 @@
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
-      fb.appendChild(ruleDetails(res.skill, !good, lv, langBtn));
+      fb.appendChild(funLine(good, res.skipped, (!r.done && ses.mode === 'practice') ? res.adapt : 'same', lv));   // instead of the rule and the flags: the ? is already on the task (teacher, 5 November)
 
       var nextText = r.done ? 'See my results' : 'Continue';   // the long button turns into Continue in the same place (teacher, 5 November)
       var nextBtn = h('button', { class: 'btn block nextbtn', onclick: function () { next(r); } }, nextText);
@@ -1321,10 +1307,7 @@
         if (wasOpenR) { var dr = fb.querySelector('details.rule'); if (dr) dr.open = true; }
         return;
       }
-      var adaptNote = null;
-      if (!r.done && ses.mode === 'practice' && res.adapt !== 'same') {
-        adaptNote = h('span', { class: 'adapt' }, icon(res.adapt === 'harder' ? 'up' : 'down'), res.adapt === 'harder' ? (lv ? 'Nākamais: mazliet grūtāks' : 'Next: a bit harder') : (lv ? 'Nākamais: mazliet vieglāks' : 'Next: a bit easier'));
-      }
+      var adaptNote = null;   // "Next: a bit harder / easier" is now part of the fun line above
       // one screen (teacher, 30 October): the feedback is a panel at the bottom; its text scrolls inside, Next and the rating always show
       var body = h('div', { class: 'fb-body' }); while (fb.firstChild) body.appendChild(fb.firstChild);
       fb.classList.add('sheet');
@@ -1442,8 +1425,8 @@
     var done = ses.n;
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' + (ses.comeback ? ' mode-chance' : '') },
-      h('div', { class: 'sess-top' }, h('span', null, phaseLabel + ' · Question ' + (at + 1) + ' of ' + ses.length + (reviewing ? ' · looking back' : '')),
-        h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, soundButton(), h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Stop'))),
+      h('div', { class: 'sess-top' }, h('span', null, phaseLabel, h('span', { class: 'sr' }, ' · Question ' + (at + 1) + ' of ' + ses.length), reviewing ? ' · looking back' : ''),   // the dots show the count (teacher, 5 November)
+        h('span', { class: 'row', style: 'gap:16px;flex-wrap:nowrap' }, prevSlot, soundButton(), h('button', { class: 'linkbtn small', onclick: function () { stopSession(ses); } }, 'Quit'))),
       h('div', { class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(ses.length), 'aria-valuenow': String(done) }, h('i', { id: 'prog', style: 'width:' + Math.round(100 * done / ses.length) + '%' })),
       dotsEl,
       h('div', { class: 'card task' },
@@ -1466,8 +1449,8 @@
   }
 
   function stopSession(ses) {
-    var m = UI.modal(h('div', null, h('h2', null, 'Stop now?'), h('p', null, 'Your answers so far are saved.'),
-      h('div', { class: 'row' }, h('button', { class: 'btn', id: 'yes' }, 'Stop and see result'), h('button', { class: 'btn ghost', id: 'no' }, 'Keep going'))));
+    var m = UI.modal(h('div', null, h('h2', null, 'Quit now?'), h('p', null, 'Your answers so far are saved.'),
+      h('div', { class: 'row' }, h('button', { class: 'btn', id: 'yes' }, 'Quit and see result'), h('button', { class: 'btn ghost', id: 'no' }, 'Keep going'))));
     m.el.querySelector('#no').onclick = m.close;
     m.el.querySelector('#yes').onclick = function () {
       m.close();
@@ -1488,6 +1471,22 @@
     while (i < A.length && j < B.length) { if (n(A[i]) === n(B[j])) { keepA[i++] = keepB[j++] = true; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++; }
     var out = function (W, keep, cls) { var r = []; W.forEach(function (w, k) { if (k) r.push(' '); r.push(keep[k] ? w : h('mark', { class: cls }, w)); }); return r; };
     return [out(A, keepA, 'del'), out(B, keepB, 'ins')];
+  }
+
+  /** A short line under the explanation that changes every time: praise when right, a smile when wrong, and where the next task goes (teacher, 5 November). */
+  var FUN = {
+    good: { en: ['Nailed it! 🎯', 'Your grammar is on fire 🔥', 'Smooth as butter 🧈', 'Brain 1, grammar 0 🧠', 'Teacher would be proud 😎', 'That\'s the one! ✨', 'Look at you go! 🚀', 'Easy peasy 🍋'],
+            lv: ['Trāpīts! 🎯', 'Tava gramatika deg 🔥', 'Gludi kā sviests 🧈', 'Smadzenes 1, gramatika 0 🧠', 'Skolotāja lepotos 😎', 'Tieši tas! ✨', 'Skaties, kā tev iet! 🚀', 'Vieglāk par vieglu 🍋'] },
+    bad: { en: ['Oops! Happens to the best of us 🙃', 'Mistake = learning in progress 🛠️', 'Plot twist! The next one is yours 🎬', 'Even the English trip over this one 🇬🇧', 'No stress, grammar is tricky 🐢', 'Oops! Now you\'ll never forget it 🐘', 'Your brain is warming up ☕', 'Close call! Shake it off 🐕'],
+           lv: ['Ups! Gadās arī labākajiem 🙃', 'Kļūda = mācīšanās procesā 🛠️', 'Negaidīts pavērsiens! Nākamais būs tavs 🎬', 'Te paklūp pat angļi 🇬🇧', 'Mierīgi, gramatika ir viltīga 🐢', 'Ups! Tagad to vairs neaizmirsīsi 🐘', 'Smadzenes iesilst ☕', 'Gandrīz! Nopurini un aiziet 🐕'] },
+    skip: { en: ['Now you know it 💡'], lv: ['Tagad tu to zini 💡'] },
+  };
+  var funLast = -1;
+  function funLine(good, skipped, adapt, lv) {
+    var list = FUN[skipped ? 'skip' : good ? 'good' : 'bad'][lv ? 'lv' : 'en'];
+    var i = Math.floor(Math.random() * list.length); if (list.length > 1 && i === funLast) i = (i + 1) % list.length; funLast = i;
+    var next = adapt === 'harder' ? (lv ? ' Nākamais būs mazliet grūtāks.' : ' Next one is a bit harder.') : adapt === 'easier' ? (lv ? ' Nākamais būs mazliet vieglāks.' : ' Next one is a bit easier.') : '';
+    return h('p', { class: 'fun-line' }, list[i], next);
   }
 
   function ruleDetails(skillId, open, lv, flags) {

@@ -37,7 +37,7 @@ const APP = path.resolve(__dirname, '../..');
     await page.goto('http://ef-test.invalid/index.html#/session');
     await page.waitForSelector('textarea.type-in');
     assert((await page.locator('.sess-top').innerText()).includes('Review')); checks++;
-    const stop = await page.getByRole('button',{name:'Stop',exact:true}).boundingBox();
+    const stop = await page.getByRole('button',{name:'Quit',exact:true}).boundingBox();
     assert(stop && stop.x >= 0 && stop.x + stop.width <= width); checks++;
     await page.locator('textarea.type-in').fill(answer);
     assert(await page.locator('textarea.type-in').evaluate(el=>el.scrollHeight<=el.clientHeight+2)); checks++;

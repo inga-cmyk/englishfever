@@ -17,17 +17,19 @@ const BASE = 'http://127.0.0.1:8099';
   const whyHtml = await p.locator('.feedback p', { hasText: 'Why:' }).innerHTML();
   check('the explanation is plain text around <em> only', !/[*]/.test(whyHtml) && /<em>/.test(whyHtml), whyHtml);
   // Latvian
-  await p.click('.feedback .langbtn.lv'); await p.waitForTimeout(200);
+  await post('account/profile', { lang: 'lv' }); await p.reload(); await p.waitForSelector('.task'); await p.click('button:has-text("Previous")'); await p.waitForSelector('.feedback'); await p.waitForTimeout(200);   // Latvian is chosen in Profile now; look back at the answered task
   const emsLv = await p.locator('.feedback p em').allInnerTexts();
   check('Latvian: the English words are italic, the Latvian words are not', emsLv.length >= 2 && emsLv.join('|').includes('she works') && !emsLv.some(t => /pievieno|darbības|vārdam/.test(t)), emsLv);
   const kapec = await p.locator('.feedback p', { hasText: 'Kāpēc' }).innerText();
   check('Latvian explanation text reads normally (no stars)', !/\*/.test(kapec) && /Ar /.test(kapec), kapec);
-  // rule card
-  await p.locator('.feedback details.rule').evaluate(d => { d.open = true; }); await p.waitForTimeout(150);
-  const ruleEm = await p.locator('.feedback details.rule em').allInnerTexts();
+  await post('account/profile', { lang: 'en' }); await p.reload(); await p.waitForSelector('.task-rule');
+  // rule card: the ? on the task
+  await p.click('.task-rule'); await p.waitForSelector('.modal .rulecard'); await p.waitForTimeout(150);
+  const ruleEm = await p.locator('.modal .rulecard em').allInnerTexts();
   check('rule card (new layout): the examples are in italics', ruleEm.some(t => /^I go to the gym/.test(t)) && ruleEm.some(t => /Water boils/.test(t)), ruleEm);
-  const bold = await p.locator('.feedback details.rule').innerText();
+  const bold = await p.locator('.modal .rulecard').innerText();
   check('rule card has no stars', !/\*/.test(bold));
+  await p.keyboard.press('Escape');
   // rules page
   await p.goto(BASE + '/index.html#/rules'); await p.waitForSelector('details.rule, .rulecard, h1'); await p.waitForTimeout(300);
   check('rules page: no stars anywhere on screen', !/\*/.test(await p.locator('body').innerText()));

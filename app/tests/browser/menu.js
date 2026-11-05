@@ -69,7 +69,7 @@ const OUT = __dirname + '/shots/';
     await post(p, 'session/quit', { session_id: rs.session.id });
     await p.reload(); await p.waitForSelector('.hello h1'); await p.waitForTimeout(300);
     await p.click('.card.focus button:has-text("Practise now")'); await p.waitForSelector('.task');
-    check('Surprise me starts a session without a quick check', /Practice · Question 1 of (8|12)/.test(await p.locator('.sess-top').innerText()), await p.locator('.sess-top').innerText());
+    check('Surprise me starts a session without a quick check', /Practice · Question 1 of (8|12)/.test((await p.locator('.sess-top').textContent()).replace(/\s+/g, ' ')), await p.locator('.sess-top').textContent());
 
     // placement sizes
     await p.goto(BASE + '/index.html#/placement'); await p.waitForSelector('.sizes');
@@ -77,7 +77,7 @@ const OUT = __dirname + '/shots/';
     check('Medium (24) is chosen by default', await p.locator('input[name=sz][value="24"]').isChecked());
     await p.locator('.size', { hasText: 'Quick' }).click(); await p.screenshot({ path: OUT + '97-placement-sizes.png' });
     await p.click('#go'); await p.waitForSelector('.task');
-    check('Quick starts a 12-question test', /Question 1 of 12/.test(await p.locator('.sess-top').innerText()));
+    check('Quick starts a 12-question test', /Question 1 of 12/.test(await p.locator('.sess-top').textContent()));
     await ctx.close();
   }
 
@@ -106,6 +106,7 @@ const OUT = __dirname + '/shots/';
       await post(p, 'session/quit', { session_id: r.session.id });
       r = await post(p, 'session/start', { mode: 'practice', skills: ['present_simple'], level: 'A2.1', length: 10 });
     }
+    await post(p, 'account/profile', { lang: 'lv' });   // the language is chosen in Profile; the feedback has no flags any more (teacher, 5 November)
     await p.goto(BASE + '/index.html#/session'); await p.reload(); await p.waitForSelector('.task');
     const it = ITEMS[r.item.id];
     if (it.kind === 'mcq') await p.locator('label.opt', { hasText: it.wrong[0] }).first().click();
@@ -113,13 +114,9 @@ const OUT = __dirname + '/shots/';
     else if (it.kind === 'text') await p.fill('.task textarea.type-in', 'zzz');
     else await p.fill('.task textarea.write', 'hello there');
     await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
-    const fbEn = await p.locator('.feedback').innerText();
-    check('the feedback shows a Latviski button up to B1.2', (await p.locator('.feedback .langbtn.lv').count()) === 1 && /Why:/.test(fbEn), fbEn.slice(0, 80));
-    await p.click('.feedback .langbtn.lv');
     const fbLv = await p.locator('.feedback').innerText();
-    check('pressing it shows the explanation in Latvian', /Kāpēc:/.test(fbLv) && !/Why:/.test(fbLv) && (await p.locator('.feedback .langbtn.en').count()) === 1, fbLv.slice(0, 120));
-    check('pressing the flag opened the rule', (await p.locator('.feedback details.rule[open]').count()) === 1);
-    check('the rule reminder is Latvian too', /Atgādinājums/.test(await p.locator('.feedback details.rule summary').getAttribute('aria-label')) && /Kā to veido/.test(await p.locator('.feedback .rulecard').innerText()));
+    check('with Latvian chosen the explanation is in Latvian', /Kāpēc:/.test(fbLv) && !/Why:/.test(fbLv), fbLv.slice(0, 120));
+    check('no rule or flags under the feedback, a fun line instead', (await p.locator('.feedback details.rule, .feedback .langbtn').count()) === 0 && (await p.locator('.feedback .fun-line').count()) === 1);
     await p.screenshot({ path: OUT + '99-latvian-feedback.png', fullPage: true });
     // remembered: the profile shows the choice, and the next feedback is Latvian at once
     await p.goto(BASE + '/index.html#/profile'); await p.waitForSelector('input[name=lang]');

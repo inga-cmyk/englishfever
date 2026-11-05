@@ -41,7 +41,7 @@ const BASE = 'http://127.0.0.1:8099';
     await p.click('.task .checkbtn'); await p.waitForSelector('.feedback');
     answered.push({ id, kind: it.kind, given, right });
   }
-  const label = () => p.locator('.sess-top > span').first().innerText();
+  const label = async () => (await p.locator('.sess-top > span').first().textContent()).replace(/\s+/g, ' ').trim();
   const dots = () => p.locator('.dots .dot');
   async function nextTask() { await p.click('.feedback .nextbtn'); await p.waitForSelector('.task .q'); await p.waitForTimeout(80); }
 

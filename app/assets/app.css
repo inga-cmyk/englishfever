@@ -966,3 +966,4 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .modal-x { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: none; color: var(--muted); font-size: 1.7rem; line-height: 1; cursor: pointer; }
 .modal-x:hover, .modal-x:focus-visible { background: var(--line); color: var(--text); }
 .modal.has-x h2 { padding-right: 36px; }
+.fun-line { margin: 10px 0 2px; font-weight: 650; color: var(--text); }

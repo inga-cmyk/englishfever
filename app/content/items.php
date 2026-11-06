@@ -42,12 +42,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Every morning* rāda ieradumu. Ieradumiem un ikdienas rutīnai lieto Present Simple."
 },
 {
-"id": "ps-A21-3a-r3",
+"id": "ps-A21-3a-r4",
 "skill": "present_simple",
 "level": "A2.1",
 "bloom": 3,
 "kind": "gap",
-"q": "Use the present simple: My brother ___ football. (not / like)",
+"q": "My brother ___ football. He never watches it. (not / like)",
 "answers": [
 [
 "doesn't like",
@@ -1221,12 +1221,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*At nine* ir brīdis pagātnē. Past Continuous rāda, kas tad norisinājās."
 },
 {
-"id": "pac-A22-3a-r2",
+"id": "pac-A22-3a-r3",
 "skill": "past_continuous",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Use the past continuous: They ___ TV when I arrived. (watch)",
+"q": "When I arrived, they ___ TV. They were in the middle of a film. (watch)",
 "answers": [
 [
 "were watching"
@@ -1243,12 +1243,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*They = were* + darbības vārds ar *-ing*."
 },
 {
-"id": "pac-A22-3b-r3",
+"id": "pac-A22-3b-r4",
 "skill": "past_continuous",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Use the past continuous: ___ you ___ at 6 pm? (work)",
+"q": "I called you at 6 pm, but you didn't answer. ___ you ___? (work)",
 "answers": [
 [
 "Were"
@@ -2243,20 +2243,29 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ppf-B12-3a-r3",
+"id": "ppf-B12-3a-r4",
 "skill": "past_perfect",
 "level": "B1.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Use the past perfect: She was upset because she ___ her phone. (lose)",
+"q": "She was upset because she ___ her phone. (lose)",
 "answers": [
 [
-"had lost"
+"had lost",
+"'d lost",
+"lost"
 ]
 ],
 "why": "The reason came before the feeling: *had* + past participle.",
 "hints": [],
-"why_lv": "Iemesls bija pirms sajūtas: *had* + 3. forma."
+"why_lv": "Iemesls bija pirms sajūtas: *had* + 3. forma.",
+"answer_notes": [
+[
+"lost",
+"Correct too in everyday speech. *Had lost* makes it clear that she lost it before she was upset.",
+"Ikdienas runā arī pareizi. *Had lost* skaidri pasaka, ka viņa to pazaudēja, pirms bija bēdīga."
+]
+]
 },
 {
 "id": "ppf-B12-3b",
@@ -8672,13 +8681,13 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Am going to start* izsaka iepriekš pieņemtu plānu. *I will answer* ir piedāvājums, kas izteikts runāšanas brīdī."
 },
 {
-"id": "var-psp-a22-bank-01",
+"id": "var-psp-a22-bank-01-r2",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Use the present simple passive. This room ___ every day. The windows ___ once a month.",
-"why": "Use *is* for one room and *are* for several windows. The passive needs the past participles *cleaned* and *washed*.",
+"q": "Complete: This room ___ every day. The windows ___ once a month.",
+"why": "Use *is* for one room and *are* for several windows: *is cleaned*, *are washed*.",
 "answers": [
 [
 "is cleaned"
@@ -8697,12 +8706,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Vienai istabai lieto *is*, bet vairākiem logiem — *are*. Ciešamajā kārtā vajadzīgas 3. formas *cleaned* un *washed*."
 },
 {
-"id": "var-pasp-a22-bank-01",
+"id": "var-pasp-a22-bank-01-r2",
 "skill": "past_simple_passive",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Use the past simple passive. The parcel ___ yesterday, and the documents ___ this morning.",
+"q": "Complete: The parcel ___ yesterday, and the documents ___ this morning.",
 "why": "*The parcel* is singular, so use *was delivered*. *The documents* is plural, so use *were signed*.",
 "answers": [
 [

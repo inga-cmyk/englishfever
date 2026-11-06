@@ -3,6 +3,7 @@ lib.save() passes every row through fix(): a task whose text names a form gets a
 the old text goes into "replaces" (so the import retires the published version), and a second correct form can get its own note
 ("answer notes": the explanation shown only to whoever wrote that form)."""
 import re
+import term_free_b2
 
 PREFIX = [   # old start of the task -> new start ("" = no instruction: the sentence does the work)
     ("Use the present perfect or the past simple: ", ""),
@@ -97,9 +98,13 @@ def fix(task, typ, correct, wrong, line_no=None):
             if task.startswith(old):
                 new = rep + task[len(old):]; break
         if new in WHOLE: new = WHOLE[new]["task"]   # Mozart: the prefix goes, then the sentence gets "who died in 1791"
+    if new == task:   # batch 2 (approved by the teacher, 6 November)
+        n2 = term_free_b2.fix(task, typ, correct)
+        if n2: new = n2
     notes = ""
-    if new in NOTES:
-        alt, en, lv = NOTES[new]
+    allnotes = {**NOTES, **term_free_b2.NOTES}
+    if new in allnotes:
+        alt, en, lv = allnotes[new]
         groups = [g.strip() for g in c.split(" / ")]
         parts = [p.strip() for p in alt.split(" / ")]
         if len(parts) == len(groups):   # add the second form to each blank that needs it

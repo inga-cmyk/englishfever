@@ -4348,6 +4348,28 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pabeigtu darbību virknei secībā lieto Past Simple."
 },
 {
+"id": "pac-A22-3a-r2",
+"skill": "past_continuous",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Use the past continuous: They ___ TV when I arrived. (watch)",
+"answers": [
+[
+"were watching"
+]
+],
+"why": "*They* = *were* + verb-ing.",
+"hints": [
+[
+"\\bwas watching\\b",
+"*They* needs *were*, not *was.*",
+"Ar *They* vajag *were*, nevis *was*."
+]
+],
+"why_lv": "*They = were* + darbības vārds ar *-ing*."
+},
+{
 "id": "pac-B11-2a-r2",
 "skill": "past_continuous",
 "level": "B1.1",
@@ -4955,6 +4977,56 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "display_answer": "She said that she was tired.",
 "why_lv": "Ja jāveic laiku saskaņošana, *I am tired* kļūst par *she was tired*. *That* ievada atstāstīto izteikumu."
+},
+{
+"id": "var-psp-a22-bank-01",
+"skill": "present_simple_passive",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Use the present simple passive. This room ___ every day. The windows ___ once a month.",
+"why": "Use *is* for one room and *are* for several windows. The passive needs the past participles *cleaned* and *washed*.",
+"answers": [
+[
+"is cleaned"
+],
+[
+"are washed"
+]
+],
+"bank": [
+"is cleaned",
+"are washed",
+"is clean",
+"are wash"
+],
+"hints": [],
+"why_lv": "Vienai istabai lieto *is*, bet vairākiem logiem — *are*. Ciešamajā kārtā vajadzīgas 3. formas *cleaned* un *washed*."
+},
+{
+"id": "var-pasp-a22-bank-01",
+"skill": "past_simple_passive",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Use the past simple passive. The parcel ___ yesterday, and the documents ___ this morning.",
+"why": "*The parcel* is singular, so use *was delivered*. *The documents* is plural, so use *were signed*.",
+"answers": [
+[
+"was delivered"
+],
+[
+"were signed"
+]
+],
+"bank": [
+"was delivered",
+"were signed",
+"was deliver",
+"were sign"
+],
+"hints": [],
+"why_lv": "*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*."
 },
 {
 "id": "var-pcp-b12-bank-01",

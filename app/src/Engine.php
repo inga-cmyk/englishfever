@@ -610,10 +610,10 @@ final class Engine
         foreach ($pool as $it) {
             $cost = abs($it['d'] - $target) + 0.2 * $bloomCount[$it['bloom']] + random_int(0, 25) / 100;
             if ($soft) {
-                $cost += ($stairs ? 0.6 : 0.3) * $skillCount[$it['skill']];
+                $cost += ($stairs ? 1.2 : 0.3) * $skillCount[$it['skill']];   // in the level test, three different topics in a block come before typed forms (6 November)
                 if (($areaCount[$areaOf($it['skill'])] ?? 0) >= $areaCap) $cost += $stairs ? 0.3 : 1.2;   // in a block, different topics come first   // one area (e.g. conditionals) not much more than a fifth of the test (teacher's feedback, 27 October)
                 if ($stairs) {
-                    if (!empty($missedHere[$it['skill']])) $cost -= 1.2;   // a topic missed a moment ago is checked again with a new sentence
+                    if (!empty($missedHere[$it['skill']])) $cost -= 2.0;   // a topic missed a moment ago is checked again with a new sentence
                     // the topics of the level in the order of My learning path: present simple before the passive (teacher, 3 November)
                     $rank = $order[$it['skill']] ?? null;
                     if ($rank !== null && !$skillCount[$it['skill']]) $cost += 0.35 * count(array_filter($order, fn($r, $t) => $r < $rank && isset($bySkill[$t]) && !$skillCount[$t], ARRAY_FILTER_USE_BOTH));

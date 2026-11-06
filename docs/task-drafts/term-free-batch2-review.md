@@ -1,7 +1,7 @@
-# Batch 2 without grammar terms: 120 tasks (draft, 6 November)
+# Batch 2 without grammar terms: 120 tasks (approved by the teacher, 6 November)
 
 The instruction that names a tense or *passive* goes. Where the sentence alone would also allow another tense, a time word is added (marked **+**).
-Where a second form is also correct, it is accepted and gets its own note. Answers stay as now. Not in the app until the teacher approves.
+Where a second form is also correct, it is accepted and gets its own note. Answers stay as now.
 
 
 ## Use the present simple (15)
@@ -161,7 +161,7 @@ Where a second form is also correct, it is accepted and gets its own note. Answe
 
 ## Built-in tasks (6)
 
-- ps-A21-3a: *My brother ___ football. (not / like)* → **doesn't like**
+- ps-A21-3a: *My brother ___ football. He never watches it. (not / like)* → **doesn't like** **+**
 - pac-A22-3a: *When I arrived, they ___ TV. They were in the middle of a film. (watch)* → **were watching** **+**
 - pac-A22-3b: *I called you at 6 pm, but you didn't answer. ___ you ___? (work)* → **Were / working** **+**
 - ppf-B12-3a: *She was upset because she ___ her phone. (lose)* → **had lost**  

@@ -1,5 +1,5 @@
-"""Batch 2 without grammar terms (draft, 6 November): the instruction that names a tense or "passive" goes; where the sentence
-alone would allow another tense, a time word is added. Not applied until the teacher approves (term_free.BATCHES)."""
+"""Batch 2 without grammar terms (approved by the teacher, 6 November): the instruction that names a tense or "passive" goes; where the sentence
+alone would allow another tense, a time word is added. Applied through term_free.fix()."""
 import re
 
 PREFIX = [

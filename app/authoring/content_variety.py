@@ -163,13 +163,13 @@ gap('var-fu-a22-bank-01', 'future', 'A2.2',
     ['am going to start', 'will answer'], ['will to start', 'answer'],
     '*Am going to start* expresses an existing plan. *I will answer* is an offer made at the moment of speaking.',
     '*Am going to start* izsaka iepriekš pieņemtu plānu. *I will answer* ir piedāvājums, kas izteikts runāšanas brīdī.')
-gap('var-psp-a22-bank-01', 'present_simple_passive', 'A2.2',
-    'Use the present simple passive. This room ___ every day. The windows ___ once a month.',
+gap('var-psp-a22-bank-01-r2', 'present_simple_passive', 'A2.2',
+    'Complete: This room ___ every day. The windows ___ once a month.',
     ['is cleaned', 'are washed'], ['is clean', 'are wash'],
-    'Use *is* for one room and *are* for several windows. The passive needs the past participles *cleaned* and *washed*.',
+    'Use *is* for one room and *are* for several windows: *is cleaned*, *are washed*.',
     'Vienai istabai lieto *is*, bet vairākiem logiem — *are*. Ciešamajā kārtā vajadzīgas 3. formas *cleaned* un *washed*.')
-gap('var-pasp-a22-bank-01', 'past_simple_passive', 'A2.2',
-    'Use the past simple passive. The parcel ___ yesterday, and the documents ___ this morning.',
+gap('var-pasp-a22-bank-01-r2', 'past_simple_passive', 'A2.2',   # no grammar terms in the task (teacher, 6 November)
+    'Complete: The parcel ___ yesterday, and the documents ___ this morning.',
     ['was delivered', 'were signed'], ['was deliver', 'were sign'],
     '*The parcel* is singular, so use *was delivered*. *The documents* is plural, so use *were signed*.',
     '*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*.')

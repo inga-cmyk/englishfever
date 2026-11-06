@@ -559,4 +559,11 @@ def revise(original):
     report_fix('rs-B12-4a', q='All these people spoke to you last week. Which report is NOT correct?')
     report_fix('rq-B12-3a', q="Report it: 'What time does the film start?' → She asked what time the film ___. (start)", answers=[['started', 'starts']],
         answer_notes=[['starts', 'Correct too when the film has not started yet: the time is still true now.', 'Arī pareizi, ja filma vēl nav sākusies: laiks joprojām ir patiess.']])
+    # batch 2 without grammar terms (teacher, 6 November; docs/task-drafts/term-free-batch2-review.md)
+    report_fix('ps-A21-3a', q='My brother ___ football. He never watches it. (not / like)')   # without a time word "didn't like" would also fit
+    report_fix('pac-A22-3a', q='When I arrived, they ___ TV. They were in the middle of a film. (watch)')
+    report_fix('pac-A22-3b', q="I called you at 6 pm, but you didn't answer. ___ you ___? (work)")
+    report_fix('ppf-B12-3a', q='She was upset because she ___ her phone. (lose)', answers=[['had lost', "'d lost", 'lost']],
+        answer_notes=[['lost', 'Correct too in everyday speech. *Had lost* makes it clear that she lost it before she was upset.',
+                       'Ikdienas runā arī pareizi. *Had lost* skaidri pasaka, ka viņa to pazaudēja, pirms bija bēdīga.']])
     return items

@@ -41,7 +41,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 292, 'Unexpected correction count');   // +27: tasks without grammar terms (6 November)   // +7: five revised tasks and two recovered historical versions (4 November)
+check(count($retired) === 295, 'Unexpected correction count');   // +27 and +6: tasks without grammar terms (6 November)   // +7: five revised tasks and two recovered historical versions (4 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

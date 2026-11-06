@@ -468,7 +468,7 @@
             h('small', null, st.level + ' · ' + ((st.check && st.status === 'new') ? 'Quick check' : (STATE[st.status] || ''))),
             st.status === 'strengthen' ? h('small', { class: 'path-reason' }, 'Recent answers suggest revisiting this topic. Your overall level has not changed.') : null,
             st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null),
-          rec ? h('span', { class: 'btn small' }, (st.status === 'likely' || st.check) ? 'Quick check' : 'Go', icon('arrow')) : null));
+          rec ? h('span', { class: 'prec-go', 'aria-hidden': 'true' }, icon('arrow')) : null));   // no separate Go button: the step itself is the button, like Practise now on Home (teacher, 6 November)
       return el;
     }
     var path = null;

@@ -1,6 +1,6 @@
-# Typed forms for B2 and C1: typical mistakes (41), draft
+# Typed forms for B2 and C1: typical mistakes (41)
 
-For the level test (type the form, nothing to guess) and for practice. Each task has one gap; the word in brackets is the base. *catches* = the typical wrong answer the task is there to find. Not in the app until the teacher approves.
+For the level test (type the form, nothing to guess) and for practice. Each task has one gap; the word in brackets is the base. *catches* = the typical wrong answer the task is there to find. Approved by the teacher on 6 November.
 
 
 ## B2.1
@@ -38,12 +38,12 @@ For the level test (type the form, nothing to guess) and for practice. Each task
 11. *When I finally got through, I ___ on hold for forty minutes. (wait)* → **had been waiting | 'd been waiting** · catches: *was waiting* · Narrative tenses with past perfect continuous
    - EN: How long something went on before a moment in the past: *had been* + *-ing*.
    - LV: Cik ilgi kaut kas notika līdz kādam brīdim pagātnē: *had been + -ing*.
-12. *___ the rain, we finished the hike. (despite / although)* → **Despite** · catches: *Although* · Contrast, purpose and reason (although, despite, so that)
-   - EN: *Despite* + noun (*the rain*); *although* + subject + verb.
-   - LV: *Despite* + lietvārds (*the rain*); *although* + teikuma priekšmets + darbības vārds.
-13. *She took notes ___ she wouldn't forget anything. (so that / in order to)* → **so that** · catches: *in order to* · Contrast, purpose and reason (although, despite, so that)
-   - EN: *so that* + subject + verb; *in order to* + base form.
-   - LV: *so that* + teikuma priekšmets + darbības vārds; *in order to* + pamatforma.
+12. *___ the rain, we finished the hike.* → **Despite | In spite of** · catches: *Although* · Contrast, purpose and reason (although, despite, so that)
+   - EN: *Despite / In spite of* + noun (*the rain*); *although* needs subject + verb.
+   - LV: *Despite / In spite of* + lietvārds (*the rain*); aiz *although* vajag teikuma priekšmetu un darbības vārdu.
+13. *She wrote everything down so as ___ anything. (not / forget)* → **not to forget** · catches: *to not forget* · Contrast, purpose and reason (although, despite, so that)
+   - EN: Purpose, negative: *so as not to* + base form.
+   - LV: Nolūks noliegumā: *so as not to* + pamatforma.
 14. *Take an umbrella in case it ___ later. (rain)* → **rains** · catches: *will rain* · Contrast, purpose, reason and result (whereas, in case, therefore)
    - EN: After *in case* the present, not *will*.
    - LV: Aiz *in case* tagadne, nevis *will*. *Tulkojot burtiski* "ja *nu* līs", *gribas will*.
@@ -56,7 +56,7 @@ For the level test (type the form, nothing to guess) and for practice. Each task
 16. *If she hadn't checked the code, the app ___ . (crash)* → **would have crashed | 'd have crashed** · catches: *would crash* · Third conditional (if + had done, would have done)
    - EN: The result in an imagined past: *would have* + 3rd form.
    - LV: *Sekas* iedomātā pagātnē: *would have* + 3. forma.
-17. *The doctor told me ___ lift anything heavy for a week. (not)* → **not to** · catches: *don't* · Reported questions and requests
+17. *The doctor told me ___ anything heavy for a week. (not / lift)* → **not to lift** · catches: *don't lift* · Reported questions and requests
    - EN: A reported instruction: *told me not to* + base form.
    - LV: Atstāstīts norādījums: *told me not to* + pamatforma.
 18. *He apologised ___ late for the meeting. (be)* → **for being** · catches: *to be* · Reporting verbs (suggest, admit, promise...)
@@ -77,9 +77,9 @@ For the level test (type the form, nothing to guess) and for practice. Each task
 23. *If I ___ so shy, I would have spoken to her at the party. (not / be)* → **weren't | wasn't | were not | was not** · catches: *hadn't been* · Mixed conditionals
    - EN: A quality now (*so shy*) with a result in the past: *if* + past.
    - LV: Īpašība tagad (*so shy*) ar sekām pagātnē: *if* + pagātne.
-24. *Sales fell sharply; ___ , the company cut its prices. (therefore / because)* → **therefore** · catches: *because* · Contrast, purpose, reason and result (whereas, in case, therefore)
-   - EN: A result as a new step after a semicolon: *therefore*.
-   - LV: Rezultāts kā jauns *solis* aiz *semikola*: *therefore*.
+24. *Sales fell sharply; ___ , the company cut its prices.* → **therefore | as a result | consequently | thus** · catches: *because* · Contrast, purpose, reason and result (whereas, in case, therefore)
+   - EN: A result as a new step after a semicolon: *therefore*, *as a result*.
+   - LV: Rezultāts kā jauns *solis* aiz *semikola*: *therefore, as a result*.
 
 ## C1.1
 
@@ -128,7 +128,7 @@ For the level test (type the form, nothing to guess) and for practice. Each task
 38. *___ wins the competition will get a trip to Lisbon. (who)* → **Whoever** · catches: *Who* · Indirect questions, more uses (I don't know what to do)
    - EN: *Whoever* = it does not matter who: the person who.
    - LV: *Whoever* = nav svarīgi, kurš: tas, kurš.
-39. *It depends on ___ the budget is approved. (whether / if)* → **whether** · catches: *if* · Indirect questions, more uses (I don't know what to do)
+39. *It depends on ___ the budget is approved.* → **whether** · catches: *if* · Indirect questions, more uses (I don't know what to do)
    - EN: After a preposition use *whether*, not *if*.
    - LV: Aiz prievārda lieto *whether*, nevis *if*.
 40. *It's about time you ___ to the dentist. (go)* → **went** · catches: *go* · Unreal time and preferences (it's high time, I'd rather)

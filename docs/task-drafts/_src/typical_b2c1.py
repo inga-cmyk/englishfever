@@ -1,6 +1,6 @@
 """Typed forms for B2 and C1 with the typical mistakes of Latvian adults (teacher, 6 November): the level test asks the learner to type
 the form, and B2 had only 23 such tasks, C1 none. Every task is one gap with the verb or word in brackets; only one answer fits the
-sentence. A Latvian note ("Tulkojot burtiski") only where Latvian causes the mistake. Draft: saved in pending/ until the teacher approves."""
+sentence. A Latvian note ("Tulkojot burtiski") only where Latvian causes the mistake. Approved by the teacher on 6 November."""
 import csv
 from pathlib import Path
 from lib import Topic, rows, save
@@ -50,17 +50,17 @@ g(IP, "B2.1", "Could you tell me what time the museum ___? (open)", "opens", "do
   ("After *Could you tell me* the word order is like a statement, without *does*.", "Aiz *Could you tell me* vārdu secība ir kā apgalvojumā, bez *does*."))
 g(NB, "B2.1", "When I finally got through, I ___ on hold for forty minutes. (wait)", "had been waiting | 'd been waiting", "was waiting",
   ("How long something went on before a moment in the past: *had been* + *-ing*.", "Cik ilgi kaut kas notika līdz kādam brīdim pagātnē: *had been* + *-ing*."))
-g(CC, "B2.1", "___ the rain, we finished the hike. (despite / although)", "Despite", "Although",
-  ("*Despite* + noun (*the rain*); *although* + subject + verb.", "*Despite* + lietvārds (*the rain*); *although* + teikuma priekšmets + darbības vārds."))
-g(CC, "B2.1", "She took notes ___ she wouldn't forget anything. (so that / in order to)", "so that", "in order to",
-  ("*so that* + subject + verb; *in order to* + base form.", "*so that* + teikuma priekšmets + darbības vārds; *in order to* + pamatforma."))
+g(CC, "B2.1", "___ the rain, we finished the hike.", "Despite | In spite of", "Although",
+  ("*Despite / In spite of* + noun (*the rain*); *although* needs subject + verb.", "*Despite / In spite of* + lietvārds (*the rain*); aiz *although* vajag teikuma priekšmetu un darbības vārdu."))
+g(CC, "B2.1", "She wrote everything down so as ___ anything. (not / forget)", "not to forget", "to not forget",
+  ("Purpose, negative: *so as not to* + base form.", "Nolūks noliegumā: *so as not to* + pamatforma."))
 g(CB, "B2.1", "Take an umbrella in case it ___ later. (rain)", "rains", "will rain",
   ("After *in case* the present, not *will*.", "Aiz *in case* tagadne, nevis *will*. Tulkojot burtiski \"ja nu līs\", gribas *will*."))
 
 # ── B2.2 ──
 g(C3, "B2.2", "I would have gone to the concert if I ___ about it. (know)", "had known | 'd known", "would have known", IFHAD)
 g(C3, "B2.2", "If she hadn't checked the code, the app ___ . (crash)", "would have crashed | 'd have crashed", "would crash", WOULDHAVE)
-g(RQ, "B2.2", "The doctor told me ___ lift anything heavy for a week. (not)", "not to", "don't",
+g(RQ, "B2.2", "The doctor told me ___ anything heavy for a week. (not / lift)", "not to lift", "don't lift",
   ("A reported instruction: *told me not to* + base form.", "Atstāstīts norādījums: *told me not to* + pamatforma."))
 g(RV, "B2.2", "He apologised ___ late for the meeting. (be)", "for being", "to be",
   ("*apologise for* + *-ing*.", "*apologise for* + *-ing*."))
@@ -74,8 +74,8 @@ g(CM, "B2.2", "If I had studied medicine, I ___ a doctor now. (be)", "would be |
   ("A past choice with a result now: *would* + base form, because of *now*.", "Pagātnes izvēle ar sekām tagad: *would* + pamatforma, jo ir *now*."))
 g(CM, "B2.2", "If I ___ so shy, I would have spoken to her at the party. (not / be)", "weren't | wasn't | were not | was not", "hadn't been",
   ("A quality now (*so shy*) with a result in the past: *if* + past.", "Īpašība tagad (*so shy*) ar sekām pagātnē: *if* + pagātne."))
-g(CB, "B2.2", "Sales fell sharply; ___ , the company cut its prices. (therefore / because)", "therefore", "because",
-  ("A result as a new step after a semicolon: *therefore*.", "Rezultāts kā jauns solis aiz semikola: *therefore*."))
+g(CB, "B2.2", "Sales fell sharply; ___ , the company cut its prices.", "therefore | as a result | consequently | thus", "because",
+  ("A result as a new step after a semicolon: *therefore*, *as a result*.", "Rezultāts kā jauns solis aiz semikola: *therefore*, *as a result*."))
 
 # ── C1.1 ──
 g(CM, "C1.1", "If she ___ the job in London, she would be living there now. (accept)", "had accepted | 'd accepted", "accepted",
@@ -108,7 +108,7 @@ g(RV, "C1.2", "They accused the company ___ the data of its users. (sell)", "of 
   ("*accuse someone of* + *-ing*.", "*accuse someone of* + *-ing*. Tulkojot burtiski \"apsūdzēja par\", gribas *for*."))
 g(IA, "C1.2", "___ wins the competition will get a trip to Lisbon. (who)", "Whoever", "Who",
   ("*Whoever* = it does not matter who: the person who.", "*Whoever* = nav svarīgi, kurš: tas, kurš."))
-g(IA, "C1.2", "It depends on ___ the budget is approved. (whether / if)", "whether", "if",
+g(IA, "C1.2", "It depends on ___ the budget is approved.", "whether", "if",
   ("After a preposition use *whether*, not *if*.", "Aiz prievārda lieto *whether*, nevis *if*."))
 g(UT, "C1.2", "It's about time you ___ to the dentist. (go)", "went", "go",
   ("*It's about time* + subject + past.", "*It's about time* + teikuma priekšmets + pagātne."))
@@ -116,14 +116,14 @@ g(CA, "C1.2", "If only I ___ my passport at home! (not / leave)", "hadn't left |
   ("Regret about the past: *If only* + *had* + 3rd form.", "Nožēla par pagātni: *If only* + *had* + 3. forma."))
 
 assert len(rows) == len(MISTAKE) == 41, len(rows)
-save("pending/typical-b2c1-1.csv")
+save("typical-b2c1-1.csv")   # approved by the teacher on 6 November
 
-out = list(csv.reader((ROOT / "docs/task-drafts/pending/typical-b2c1-1.csv").open(encoding="utf-8-sig")))[1:]
-L = ["# Typed forms for B2 and C1: typical mistakes (41), draft", "",
+out = list(csv.reader((ROOT / "docs/task-drafts/typical-b2c1-1.csv").open(encoding="utf-8-sig")))[1:]
+L = ["# Typed forms for B2 and C1: typical mistakes (41)", "",
      "For the level test (type the form, nothing to guess) and for practice. Each task has one gap; the word in brackets is the base. "
-     "*catches* = the typical wrong answer the task is there to find. Not in the app until the teacher approves.", ""]
+     "*catches* = the typical wrong answer the task is there to find. Approved by the teacher on 6 November.", ""]
 cur = None
 for n, (r, m) in enumerate(zip(out, MISTAKE), 1):
     if r[1] != cur: cur = r[1]; L += ["", f"## {cur}", ""]
     L += [f"{n}. *{r[3]}* → **{r[4]}** · catches: *{m}* · {r[0]}", f"   - EN: {r[6]}", f"   - LV: {r[7]}"]
-(ROOT / "docs/task-drafts/pending/typical-b2c1-1-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+(ROOT / "docs/task-drafts/typical-b2c1-1-review.md").write_text("\n".join(L) + "\n", encoding="utf-8")

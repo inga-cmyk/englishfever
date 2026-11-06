@@ -993,3 +993,4 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .test-size.pulse { animation: nudgegold 2.4s ease-out 1.2s 2; }
 @media (prefers-reduced-motion: reduce) { .test-size.pulse { animation: none; } }
 .test-size:hover, .test-size:focus-visible { box-shadow: 0 8px 20px rgba(0,0,0,.28); }
+.prec-go { margin-left: auto; color: var(--btn); display: inline-flex; } .prec-go svg { width: 22px; height: 22px; }

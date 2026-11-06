@@ -524,4 +524,39 @@ def revise(original):
         wrong=['if', 'that', 'unless'],
         why='After *on*, use *whether*: *depends on whether the budget is approved*.',
         why_lv='Pēc *on* lieto *whether*: *depends on whether the budget is approved*.', wrong_why={}, wrong_why_lv={})
+    # No grammar terms in the task (teacher, 6 November; docs/task-drafts/pending/term-free-review.md and term-free-batch1-review.md):
+    # the context or a start makes the form necessary; a second correct form gets its own note (answer_notes)
+    report_fix('ps-B11-1a', q='Choose the correct option: Sorry, I ___ the answer.', correct="don't know", wrong=['am not knowing', 'not know', "doesn't know"],
+        why="*know* (to have the answer in your head) is not used with *-ing*: *I don't know*.", why_lv="*know* (zināt) nelieto ar *-ing*: *I don't know*.", wrong_why={}, wrong_why_lv={})
+    report_fix('pa-A22-2a', q='Which words fit: I visited my aunt ___.', wrong=['already, yet, just, so far', 'now, at the moment, right now', 'always, usually, never'], wrong_why={}, wrong_why_lv={})
+    report_fix('pa-B11-2a', q='Which sentence says that she first opened the door and then walked in?')
+    report_fix('pp-B12-2a', q='Choose the correct option: I ___ the film last night.', correct='saw', wrong=['have seen', "'ve seen", 'was see'],
+        why='*Last night* is a finished time, so *saw*.', why_lv='*Last night* ir pabeigts laiks, tāpēc *saw*.', wrong_why={}, wrong_why_lv={})
+    report_fix('psp-A22-2a', q='Which sentence says that people grow rice in Asia, without saying who?')
+    report_fix('psp-B12-2a', q="Which sentence says the same as 'People often call him Mo'?")
+    report_fix('pasp-A22-2a', q='Which sentence says that someone broke the window, without saying who?')
+    report_fix('ppp-B11-2a', q="Which sentence says the same as 'They have finished the project'?")
+    report_fix('fup-B12-2a', q="Which sentence says the same as 'They will announce the winner tomorrow'?")
+    report_fix('rv-B22-1a', q="Which sentence correctly reports 'I'm sorry I'm late'?")
+    report_fix('rv-B22-2a', q='Match each sentence with the word that says what the person did.')
+    report_fix('ia-C11-1a', q='Choose the correct option: ___ remains unclear.', correct='Whether he will attend', wrong=['Will he attend', 'Whether will he attend', 'That will he attend'],
+        why='A question inside a sentence has the order of a statement: *Whether he will attend* remains unclear.',
+        why_lv='Jautājumam teikuma iekšienē ir apgalvojuma vārdu secība: *Whether he will attend* remains unclear.', wrong_why={}, wrong_why_lv={})
+    report_fix('psp-B11-3b', q='Start with *Fresh bread*: They sell fresh bread here.')
+    report_fix('psp-B12-3b', q='Start with *The rooms*, and do not say who: Someone cleans the rooms daily.')
+    report_fix('pasp-B11-3b', q='Start with *My wallet*: Someone stole my wallet.')
+    report_fix('pasp-B12-3b', q='Start with *Twenty new workers*: The company hired 20 new workers last year.')
+    report_fix('ppp-B11-3b', q='Start with *My bag*: Someone has stolen my bag.')
+    report_fix('ppp-B12-3b', q='Start with *The invoice*: They have already sent the invoice.')
+    report_fix('fup-B11-3b', q='Start with *The shop*: They will open the shop at 9.', answers=[['The shop will be opened at 9.', 'The shop will open at 9.']],
+        answer_notes=[['The shop will open at 9.', 'Correct English too, but it means the shop opens (its opening time). *Will be opened* says that someone opens it.',
+                       'Arī pareiza angļu valoda, bet tas nozīmē, ka veikals atveras (darba laiks). *Will be opened* pasaka, ka kāds to atver.']])
+    report_fix('fup-B12-3b', q='Start with *The tickets*: We will send the tickets by email.')
+    report_fix('cs-B12-3a', q="Imagine it is different. Start with *If I*: I don't have enough money, so I can't buy a new laptop.")
+    report_fix('ct-B21-3a', q="Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.")
+    report_fix('cm-B22-3a', q="Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.")
+    report_fix('rs-B12-1a', q="'I have finished the report,' he said. Later he found more mistakes in it. Report it: He said he ___ finished the report.")
+    report_fix('rs-B12-4a', q='All these people spoke to you last week. Which report is NOT correct?')
+    report_fix('rq-B12-3a', q="Report it: 'What time does the film start?' → She asked what time the film ___. (start)", answers=[['started', 'starts']],
+        answer_notes=[['starts', 'Correct too when the film has not started yet: the time is still true now.', 'Arī pareizi, ja filma vēl nav sākusies: laiks joprojām ir patiess.']])
     return items

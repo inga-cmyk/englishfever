@@ -11,7 +11,7 @@ LV_BY_FILE = {"twins-3.csv": set("""viss ierodas neder notikumu papildu tu izlem
               "twins-2.csv": set('''aizliegums apgalvojuma atgriezusies atvainoties diskusija ieraksti ievada ilgst izsaka izveidot maina mainoties noteiktu notikumam notikumu otrs pabeigtam pabeigto periodam pieredzi sekas uzsver vakardienas vietai visu ziemas pastaiga past simple continuous present perfect'''.split())}   # the English tense names are the Latvian terms (docs/LATVIAN-TERMS.md)
 LV_BY_FILE["learn-drag-3.csv"] = LV_BY_FILE["twins-3.csv"]   # the learning tasks reuse the batch-3 explanations
 LV_BY_FILE["learn-drag-4.csv"] = set("visa apgalvojuma".split()) | LV_BY_FILE["twins-3.csv"]
-HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics"]
+HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics", "answer notes"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
 import json as _json
@@ -126,7 +126,7 @@ def tx(t, lv, b, q, ok, why, lvw):
     ok = ok + [x for x in extra_answers.TEXT.get(q, []) if x not in ok]       # added by hand (extra_answers.py)
     ok = auto_answers.extend(q, ok)                                            # time phrase first, that left out, me left out, polite openers (auto_answers.py)
     rows.append([t, lv, "text", q, " | ".join(ok), "", why, lvw, b])
-import alt_orders, auto_answers, extra_answers, audit_fixes, draft_option_fixes as option_fixes
+import alt_orders, auto_answers, extra_answers, audit_fixes, draft_option_fixes as option_fixes, term_free
 _AUX = "is are was were do does did can could will would have has had shall should may might am".split()
 def _is_question(sentence):
     w = sentence.lower().split()
@@ -218,7 +218,11 @@ def save(name):
                 old = plain(r[3], r[2]); new = re.sub(r"^Use the past simple: ", "", old)
                 r = r[:9] + ["from: Past simple" + (" | " + old if new != old else "")] + r[10:]; r[0] = "Used to and be used to"; r[3] = new
             if r[2] == "text" and isinstance(r[8], int) and r[8] > 3 and re.match(r"^(Make|Rewrite|Join|Ask|Add|Say|Change|Correct|Report|Write the phrase|Combine)", r[3]): r[8] = 3   # a routine transformation is Apply, not Analyse or Evaluate
-            w.writerow(r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_for_file(r[7], name)] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if (practice_only(r) or i in PRACTICE_IDX) else "", ALSO.get(i, "")])
+            out = r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_for_file(r[7], name)] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if (practice_only(r) or i in PRACTICE_IDX) else "", ALSO.get(i, ""), ""]
+            t, c, wr, rep, notes = term_free.fix(out[3], out[2], out[4], out[5])   # no grammar terms in the task (teacher, 6 November)
+            out[3], out[4], out[5], out[13] = t, c, wr, notes
+            if rep: out[9] = rep
+            w.writerow(out)
     print(name, len(rows), "rows")
 
 

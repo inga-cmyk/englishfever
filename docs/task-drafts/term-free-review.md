@@ -1,4 +1,4 @@
-# Tasks that ask for a grammar term: proposed wording without terms (draft, 6 November)
+# Tasks that ask for a grammar term: proposed wording without terms (approved by the teacher, 6 November)
 
 Found by a search of every task (built-in and prepared) for grammar words in the task text. **42 tasks** can only be solved by knowing
 the term (group A below). The answers and wrong options stay the same unless a line says otherwise; only the task text changes.

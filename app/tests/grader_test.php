@@ -144,6 +144,13 @@ $check(!Grader::grade($neg, "They don't play tenis on Sundays")['correct'], 'str
 $check(Grader::grade($neg, "they don't play tennis on sundays")['correct'], 'strict: capital letters still never matter');
 $setSpelling('forgiving');
 
+// a second correct form gets its own explanation (teacher, 6 November)
+$shop = Content::item('fup-B11-3b-r2');
+$g = Grader::grade($shop, 'The shop will open at 9.');
+$check($g['correct'] && $g['alt'] && str_contains($g['specific'], 'opening time'), 'second correct form: accepted, with its own note');
+$g = Grader::grade($shop, 'The shop will be opened at 9.');
+$check($g['correct'] && !$g['alt'] && $g['specific'] === null, 'the main answer: no note');
+
 // No grammar slip may pass: change the END of each word of every accepted answer, the result must be rejected
 $bad = 0; $tried = 0;
 foreach (Content::items() as $it) {
@@ -164,6 +171,8 @@ foreach (Content::items() as $it) {
                 $t2 = $tokens; $t2[$ti] = $mu;
                 $cand = implode(' ', $t2);
                 if (in_array($cand, $accNorm, true)) continue; // happens to be another accepted answer
+                $nearOther = false; foreach ($accNorm as $an) if ($an !== Grader::norm($alts[0]) && levenshtein($cand, $an) <= 1) $nearOther = true;
+                if ($nearOther) continue; // a typo of another accepted answer (started / starts → startes), not a grammar slip
                 $try = $firsts; $try[$bi] = $cand;
                 $tried++;
                 if (Grader::grade($it, $it['kind'] === 'gap' ? $try : $try[0])['correct']) {

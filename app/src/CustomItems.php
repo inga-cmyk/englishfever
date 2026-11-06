@@ -143,6 +143,7 @@ final class CustomItems
             elseif (strpos($h, 'thinking level') === 0) $key = 'bloom';
             elseif (strpos($h, 'also topic') === 0) $key = 'also';   // optional: a second topic this task compares with (Past simple + Past continuous)
             elseif (strpos($h, 'practice only') === 0) $key = 'practice';   // optional: "yes" = never in the placement test (easy first steps, tasks a hint gives away)
+            elseif (strpos($h, 'answer note') === 0) $key = 'anotes';   // optional: "answer :: English note :: Latvian note || …", the explanation for a second correct form (teacher, 6 November)
             elseif (strpos($h, 'error type') === 0) $key = 'err';   // optional: the kinds of mistake the task trains (docs/ERROR-TYPES.md), never shown to learners
             if ($key && !isset($col[$key])) $col[$key] = $i;
         }
@@ -278,6 +279,14 @@ final class CustomItems
         $correct = $get('correct'); $wrong = $get('wrong');
         $item = ['skill' => $skill['id'], 'level' => $lv, 'bloom' => $bloom, 'kind' => $kind, 'q' => $q, 'why' => $why];
         if ($get('why_lv') !== '') $item['why_lv'] = $get('why_lv');
+        if (($an = $get('anotes')) !== '') {
+            $item['answer_notes'] = [];
+            foreach (preg_split('/\s*\|\|\s*/u', $an) as $part) {
+                $bits = array_map('trim', explode('::', $part));
+                if (count($bits) < 2 || $bits[0] === '' || $bits[1] === '') throw new ApiError('An answer note needs "answer :: English note :: Latvian note".', 400);
+                $item['answer_notes'][] = [$bits[0], $bits[1], $bits[2] ?? null];
+            }
+        }
         if ($correct === '') throw new ApiError('The correct answer is empty.', 400);
         switch ($kind) {
             case 'mcq':
@@ -347,6 +356,10 @@ final class CustomItems
             }
         }
         if ($get('err') !== '') $item['err'] = array_values(array_unique(array_map([self::class, 'errCode'], preg_split('/[\s,;]+/u', trim($get('err')), -1, PREG_SPLIT_NO_EMPTY))));
+        foreach ($item['answer_notes'] ?? [] as $an) {   // a note belongs to an answer the task accepts
+            $parts = $item['kind'] === 'gap' ? array_map('trim', explode('/', $an[0])) : $an[0];
+            if (!in_array($item['kind'], ['gap', 'text'], true) || !Grader::grade($item, $parts)['correct']) throw new ApiError('The answer "' . $an[0] . '" in the answer notes is not one of the accepted answers.', 400);
+        }
         return $item;
     }
 

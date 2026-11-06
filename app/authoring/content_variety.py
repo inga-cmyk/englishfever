@@ -114,10 +114,10 @@ order('var-cm-b21-order-01', 'cond_mixed', 'B2.1',
 order('var-ca-c11-order-01-r2', 'cond_advanced', 'C1.1',
       'Make an inverted third conditional. Start with Had I.', 'had I known about the delay I would have called you',
       '*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.')
-order('var-rs-b11-order-01', 'rep_statements', 'B1.1',
-      'Report a past statement using backshift. Start with She said.', 'she said that she was tired',
-      'When backshift is required, *I am tired* becomes *she was tired*. *That* introduces the reported statement.',
-      'Ja jāveic laiku saskaņošana, *I am tired* kļūst par *she was tired*. *That* ievada atstāstīto izteikumu.')
+order('var-rs-b11-order-01-r2', 'rep_statements', 'B1.1',   # no grammar terms in the task (teacher, 6 November)
+      'Put the words in order to report what she said.', 'she said that she was tired',
+      'Reported later, *I am tired* becomes *she was tired*. *That* can introduce what she said.',
+      'Atstāstot vēlāk, *I am tired* kļūst par *she was tired*. Ar *that* var ievadīt to, ko viņa teica.')
 order('var-rq-b12-order-01', 'rep_questions', 'B1.2',
       'Make a reported yes/no question. Start with He asked me.', 'he asked me whether I needed help',
       'After *whether*, use statement word order: *I needed help*, not *did I need help*.',
@@ -205,8 +205,8 @@ match('var-pc-a22-match-01', 'present_continuous', 'A2.2', 2,
       [('I work in the office every Monday.', 'My regular routine.'), ('I am working from home this week only.', 'A temporary situation around now.'), ('I am meeting Eva at the café at six tomorrow.', 'An arrangement for tomorrow.')],
       'Time expressions help distinguish the uses. The present continuous can describe a temporary situation or a future arrangement.',
       'Laika norādes palīdz atšķirt nozīmes. Present Continuous var aprakstīt pagaidu situāciju vai norunātu nākotnes darbību.')
-match('var-pa-a22-match-01', 'past_simple', 'A2.2', 1,
-      'Match each base verb to its past-simple form.',
+match('var-pa-a22-match-01-r2', 'past_simple', 'A2.2', 1,
+      "Match each word with the form that fits 'Yesterday I ___.'",
       [('bring', 'brought'), ('choose', 'chose'), ('leave', 'left'), ('meet', 'met')],
       'These verbs are irregular: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Do not add *-ed*.',
       'Šie darbības vārdi ir neregulāri: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Nepievieno *-ed*.')
@@ -225,11 +225,11 @@ match('var-ppc-b12-match-01-r2', 'present_perfect_continuous', 'B1.2', 4,
       [('I have painted the wall. It is finished.', 'Completion of one wall.'), ('I have been painting the wall for an hour.', 'The duration of the painting activity.'), ('I have painted three walls today.', 'The number of completed walls.')],
       'The simple form can focus on completion or quantity. The continuous form focuses on the activity and its duration; it does not by itself say the wall is finished.',
       'Simple forma var uzsvērt pabeigšanu vai daudzumu. Continuous forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta.')
-match('var-pasp-b12-match-01-r2', 'past_simple_passive', 'B1.2', 4,
-      'Identify the voice and time in each sentence.',
-      [('The technician repaired the printer.', 'Past active: the technician is the subject.'), ('The printer was repaired yesterday.', 'Past passive: the printer is the subject.'), ('The printer is being repaired now.', 'Present continuous passive: the repair is in progress.')],
-      'In the active sentence, the subject does the action. In the passive sentences, the printer receives it. The auxiliaries distinguish past completion from work in progress.',
-      'Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris ir tas, ar ko kaut kas tika darīts. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba.')
+match('var-pasp-b12-match-01-r3', 'past_simple_passive', 'B1.2', 4,
+      'Match each sentence with what it tells us.',
+      [('The technician repaired the printer.', 'We know who did it.'), ('The printer was repaired yesterday.', "It is done, we don't know who did it."), ('The printer is being repaired now.', 'Someone is working on it now.')],
+      "*repaired the printer*: we know who did it. *was repaired*: it is done, we don't know who. *is being repaired*: it is happening now.",
+      '*repaired the printer*: zinām, kurš to izdarīja. *was repaired*: tas ir izdarīts, nezinām, kurš. *is being repaired*: tas notiek tagad.')
 match('var-fu-b11-match-01', 'future', 'B1.1', 5,
       'Match each situation with the response that best fits its purpose.',
       [('You decide now to help a colleague with a heavy bag.', "I'll carry that for you."), ('You describe a confirmed appointment for tomorrow.', "I'm seeing the dentist at ten."), ('You predict rain because you can see dark clouds.', "It's going to rain.")],
@@ -245,13 +245,13 @@ match('var-cs-b12-match-01', 'cond_second', 'B1.2', 4,
       [("If I had enough money now, I'd buy a car.", 'An imagined present situation.'), ("If I have enough money next month, I'll buy a car.", 'A possible future situation.'), ("If I had had enough money yesterday, I'd have bought a car.", 'An imagined alternative to the past.')],
       '*Had ... would buy* imagines the present; *have ... will buy* concerns a possible future; *had had ... would have bought* imagines a different past.',
       '*Had ... would buy* izsaka iedomātu tagadni, *have ... will buy* — iespējamu nākotni, bet *had had ... would have bought* — iedomātu pagātni.')
-match('var-rs-b12-match-01', 'rep_statements', 'B1.2', 3,
-      'Match each statement by Eva to its report. Use backshift.',
+match('var-rs-b12-match-01-r2', 'rep_statements', 'B1.2', 3,
+      'Match each thing Eva said with its report.',
       [("'I am busy,' Eva said.", 'Eva said she was busy.'), ("'I have finished,' Eva said.", 'Eva said she had finished.'), ("'I can help,' Eva said.", 'Eva said she could help.')],
-      'In these backshifted reports, *am → was*, *have finished → had finished*, and *can → could*. Eva becomes *she*.',
+      'Reported later: *am → was*, *have finished → had finished*, *can → could*. Eva becomes *she*.',
       'Saskaņojot laikus šajos teikumos, *am → was*, *have finished → had finished* un *can → could*. Evas vietā lieto *she*.')
-match('var-ip-b11-match-01', 'ind_polite', 'B1.1', 3,
-      'Match each direct question to the indirect question with the same meaning.',
+match('var-ip-b11-match-01-r2', 'ind_polite', 'B1.1', 3,
+      'Match each question with the polite question that means the same.',
       [('Where is the meeting room?', 'Could you tell me where the meeting room is?'), ('What time does the café close?', 'Do you know what time the café closes?'), ('Does this bus stop at the station?', 'Could you tell me if this bus stops at the station?')],
       'Use statement word order in the indirect part. For a yes/no question, add *if* or *whether*. The auxiliary *does* disappears and the main verb takes *-s*.',
       'Netiešajā daļā lieto apgalvojuma vārdu secību. Jā/nē jautājumam pievieno *if* vai *whether*. Palīgdarbības vārds *does* pazūd, un pamatdarbības vārdam pievieno *-s*.')

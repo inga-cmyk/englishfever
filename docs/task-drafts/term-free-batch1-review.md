@@ -1,8 +1,8 @@
-# Batch 1 without grammar terms: 91 tasks (draft, 6 November)
+# Batch 1 without grammar terms: 91 tasks (approved by the teacher, 6 November)
 
 The instruction no longer names the form. The context (a time word, a situation, a frame, a start) makes the form necessary.
 Where a second form is also correct, it is accepted, and the feedback for **that** answer explains what it means (*note for this answer*).
-Answers stay as now unless a line says otherwise. Nothing here is in the app until the teacher approves.
+Answers stay as now unless a line says otherwise.
 
 ## 1. "Use the present perfect or the past simple:" (11, compare-past-1)
 

@@ -120,6 +120,14 @@ final class Grader
                         break;
                     }
                 }
+                // a second correct form has its own explanation (teacher, 6 November): shown only to whoever wrote that form
+                $alt = false;
+                if ($ok && !empty($item['answer_notes'])) {
+                    $mine = self::norm(implode(' / ', $given));
+                    foreach ($item['answer_notes'] as $an) {
+                        if (self::norm((string) $an[0]) === $mine) { $specific = $an[1]; $specificLv = $an[2] ?? null; $alt = true; break; }
+                    }
+                }
                 if (!$ok) {
                     $notes = [];
                     $hay = [mb_strtolower(implode(' / ', $given), 'UTF-8'), self::norm(implode(' / ', $given))];
@@ -147,7 +155,7 @@ final class Grader
                         $specificLv = "Gandrīz: teikums ir pareizs, izņemot vienu vārdu. Tu uzrakstīji “{$nm[0]}”, atbildē ir “{$nm[1]}”.";
                     }
                 }
-                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'err' => $err, 'near' => $near, 'notes' => array_values(array_unique($notes))];
+                return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'err' => $err, 'near' => $near, 'alt' => $alt, 'notes' => array_values(array_unique($notes))];
 
             case 'order':
                 // the learner drags cards into order: the same cards must all be used once, and the sentence must be an accepted one

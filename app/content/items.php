@@ -289,21 +289,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "ps-B11-1a-r2",
+"id": "ps-B11-1a-r3",
 "skill": "present_simple",
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which verb is normally NOT used in a continuous tense when it describes a state of knowledge?",
-"correct": "know",
+"q": "Choose the correct option: Sorry, I ___ the answer.",
+"correct": "don't know",
 "wrong": [
-"run",
-"swim",
-"jump"
+"am not knowing",
+"not know",
+"doesn't know"
 ],
-"why": "When *know* describes knowledge, we normally use a simple tense: *I know the answer*, not *I am knowing the answer*.",
+"why": "*know* (to have the answer in your head) is not used with *-ing*: *I don't know*.",
 "wrong_why": {},
-"why_lv": "Ja *know* apzīmē zināšanas, parasti lieto vienkāršo laiku: *I know the answer*, nevis *I am knowing the answer*."
+"why_lv": "*know* (zināt) nelieto ar *-ing*: *I don't know*.",
+"wrong_why_lv": {}
 },
 {
 "id": "ps-B11-2a-r4",
@@ -943,16 +944,16 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājumi Past Simple: *did* + teik. priekšmets + pamatforma."
 },
 {
-"id": "pa-A22-2a-r2",
+"id": "pa-A22-2a-r3",
 "skill": "past_simple",
 "level": "A2.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which words usually go with the past simple?",
+"q": "Which words fit: I visited my aunt ___.",
 "correct": "yesterday, last week, in 2010",
 "wrong": [
 "already, yet, just, so far",
-"now, at the moment, today",
+"now, at the moment, right now",
 "always, usually, never"
 ],
 "why": "Finished time words (*yesterday, last week, ago*) go with the past simple.",
@@ -1073,12 +1074,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Get* ir neregulārs. Past Simple forma ir *got*."
 },
 {
-"id": "pa-B11-2a-r2",
+"id": "pa-B11-2a-r3",
 "skill": "past_simple",
 "level": "B1.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence uses the past simple to describe two completed actions in sequence?",
+"q": "Which sentence says that she first opened the door and then walked in?",
 "correct": "She opened the door and walked in.",
 "wrong": [
 "She was opening the door and walking in.",
@@ -1848,21 +1849,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *It's the first time* lieto Present Perfect."
 },
 {
-"id": "pp-B12-2a",
+"id": "pp-B12-2a-r2",
 "skill": "present_perfect",
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence has a finished time word, so we must use the past simple?",
-"correct": "I saw the film last night.",
+"q": "Choose the correct option: I ___ the film last night.",
+"correct": "saw",
 "wrong": [
-"I've seen the film already.",
-"I've seen the film this week.",
-"I've seen the film twice."
+"have seen",
+"'ve seen",
+"was see"
 ],
-"why": "*Last night* is finished, so past simple. Without a finished time we can use the present perfect.",
+"why": "*Last night* is a finished time, so *saw*.",
 "wrong_why": {},
-"why_lv": "*Last night* ir pabeigts laiks, tāpēc Past Simple. Bez pabeigta laika var lietot Present Perfect."
+"why_lv": "*Last night* ir pabeigts laiks, tāpēc *saw*.",
+"wrong_why_lv": {}
 },
 {
 "id": "pp-B12-3a",
@@ -2904,12 +2906,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamā kārta = *be* + 3. forma. *English* ir vienskaitlī, tāpēc *is spoken*."
 },
 {
-"id": "psp-A22-2a",
+"id": "psp-A22-2a-r2",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is passive?",
+"q": "Which sentence says that people grow rice in Asia, without saying who?",
 "correct": "Rice is grown in Asia.",
 "wrong": [
 "Farmers grow rice in Asia.",
@@ -3063,12 +3065,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamā kārta, Present Simple: *is* + 3. forma."
 },
 {
-"id": "psp-B11-3b",
+"id": "psp-B11-3b-r2",
 "skill": "present_simple_passive",
 "level": "B1.1",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: They sell fresh bread here.",
+"q": "Start with *Fresh bread*: They sell fresh bread here.",
 "answers": [
 [
 "Fresh bread is sold here."
@@ -3155,12 +3157,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums ciešamajā kārtā: *Is* + teik. priekšmets + 3. forma."
 },
 {
-"id": "psp-B12-2a",
+"id": "psp-B12-2a-r2",
 "skill": "present_simple_passive",
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is the passive of 'People often call him Mo'?",
+"q": "Which sentence says the same as 'People often call him Mo'?",
 "correct": "He is often called Mo.",
 "wrong": [
 "He often calls Mo.",
@@ -3191,12 +3193,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums ciešamajā kārtā: *How often + is* + teik. priekšmets + 3. forma."
 },
 {
-"id": "psp-B12-3b-r2",
+"id": "psp-B12-3b-r3",
 "skill": "present_simple_passive",
 "level": "B1.2",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive without 'by': Someone cleans the rooms daily.",
+"q": "Start with *The rooms*, and do not say who: Someone cleans the rooms daily.",
 "answers": [
 [
 "The rooms are cleaned daily.",
@@ -3283,12 +3285,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamā kārta pagātnē: *was/were* + 3. forma. *Tower = it*, tāpēc *was built*."
 },
 {
-"id": "pasp-A22-2a-r2",
+"id": "pasp-A22-2a-r3",
 "skill": "past_simple_passive",
 "level": "A2.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is passive?",
+"q": "Which sentence says that someone broke the window, without saying who?",
 "correct": "The window was broken yesterday.",
 "wrong": [
 "Someone broke the window yesterday.",
@@ -3439,12 +3441,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums: *Where + was* + teik. priekšmets + 3. forma."
 },
 {
-"id": "pasp-B11-3b-r2",
+"id": "pasp-B11-3b-r3",
 "skill": "past_simple_passive",
 "level": "B1.1",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: Someone stole my wallet.",
+"q": "Start with *My wallet*: Someone stole my wallet.",
 "answers": [
 [
 "My wallet was stolen.",
@@ -3575,12 +3577,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Divas ciešamās kārtas formas: *was cancelled, were given*."
 },
 {
-"id": "pasp-B12-3b-r2",
+"id": "pasp-B12-3b-r3",
 "skill": "past_simple_passive",
 "level": "B1.2",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: The company hired 20 new workers last year.",
+"q": "Start with *Twenty new workers*: The company hired 20 new workers last year.",
 "answers": [
 [
 "Twenty new workers were hired last year.",
@@ -3792,12 +3794,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Present Perfect ciešamajā kārtā: *has/have been* + 3. forma."
 },
 {
-"id": "ppp-B11-2a",
+"id": "ppp-B11-2a-r2",
 "skill": "present_perfect_passive",
 "level": "B1.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is the passive of 'They have finished the project'?",
+"q": "Which sentence says the same as 'They have finished the project'?",
 "correct": "The project has been finished.",
 "wrong": [
 "The project have been finished.",
@@ -3825,12 +3827,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Tickets* = daudzskaitlis, tāpēc *have been sold*."
 },
 {
-"id": "ppp-B11-3b-r2",
+"id": "ppp-B11-3b-r3",
 "skill": "present_perfect_passive",
 "level": "B1.1",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: Someone has stolen my bag.",
+"q": "Start with *My bag*: Someone has stolen my bag.",
 "answers": [
 [
 "My bag has been stolen.",
@@ -3945,12 +3947,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*So far* = līdz šim brīdim: *have been found*."
 },
 {
-"id": "ppp-B12-3b-r2",
+"id": "ppp-B12-3b-r3",
 "skill": "present_perfect_passive",
 "level": "B1.2",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: They have already sent the invoice.",
+"q": "Start with *The invoice*: They have already sent the invoice.",
 "answers": [
 [
 "The invoice has already been sent.",
@@ -4069,20 +4071,28 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*will be* + 3. forma."
 },
 {
-"id": "fup-B11-3b",
+"id": "fup-B11-3b-r2",
 "skill": "future_passive",
 "level": "B1.1",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: They will open the shop at 9.",
+"q": "Start with *The shop*: They will open the shop at 9.",
 "answers": [
 [
-"The shop will be opened at 9."
+"The shop will be opened at 9.",
+"The shop will open at 9."
 ]
 ],
 "why": "*will be* + past participle.",
 "hints": [],
-"why_lv": "*will be* + 3. forma."
+"why_lv": "*will be* + 3. forma.",
+"answer_notes": [
+[
+"The shop will open at 9.",
+"Correct English too, but it means the shop opens (its opening time). *Will be opened* says that someone opens it.",
+"Arī pareiza angļu valoda, bet tas nozīmē, ka veikals atveras (darba laiks). *Will be opened* pasaka, ka kāds to atver."
+]
+]
 },
 {
 "id": "fup-B11-4a",
@@ -4154,12 +4164,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājums ciešamajā kārtā: *Will* + teik. priekšmets + *be* + 3. forma."
 },
 {
-"id": "fup-B12-2a",
+"id": "fup-B12-2a-r2",
 "skill": "future_passive",
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is the passive of 'They will announce the winner tomorrow'?",
+"q": "Which sentence says the same as 'They will announce the winner tomorrow'?",
 "correct": "The winner will be announced tomorrow.",
 "wrong": [
 "The winner will announce tomorrow.",
@@ -4187,12 +4197,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*will be* + 3. forma."
 },
 {
-"id": "fup-B12-3b",
+"id": "fup-B12-3b-r2",
 "skill": "future_passive",
 "level": "B1.2",
 "bloom": 3,
 "kind": "text",
-"q": "Change to the passive: We will send the tickets by email.",
+"q": "Start with *The tickets*: We will send the tickets by email.",
 "answers": [
 [
 "The tickets will be sent by email."
@@ -5164,12 +5174,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Zero: vienmēr patiess. First: reāla nākotne. Second: nereāls tagad. Third: nereāls pagātnē."
 },
 {
-"id": "cs-B12-3a-r2",
+"id": "cs-B12-3a-r3",
 "skill": "cond_second",
 "level": "B1.2",
 "bloom": 3,
 "kind": "text",
-"q": "Rewrite as a second conditional: I don't have enough money, so I can't buy a new laptop.",
+"q": "Imagine it is different. Start with *If I*: I don't have enough money, so I can't buy a new laptop.",
 "answers": [
 [
 "If I had enough money, I could buy a new laptop.",
@@ -5524,12 +5534,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ct-B21-3a-r2",
+"id": "ct-B21-3a-r3",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 3,
 "kind": "text",
-"q": "Rewrite as a third conditional: I didn't see the sign, so I parked there and got a fine.",
+"q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.",
 "answers": [
 [
 "If I had seen the sign, I wouldn't have parked there.",
@@ -5860,12 +5870,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cm-B22-3a-r2",
+"id": "cm-B22-3a-r3",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Rewrite as a mixed conditional: He didn't take the job, so he isn't living in Paris now.",
+"q": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
 "answers": [
 [
 "If he had taken the job, he would be living in Paris now.",
@@ -6382,12 +6392,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "rs-B12-1a-r2",
+"id": "rs-B12-1a-r3",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Use backshift. Direct: 'I have finished.' Reported: He said he ___ finished.",
+"q": "'I have finished the report,' he said. Later he found more mistakes in it. Report it: He said he ___ finished the report.",
 "correct": "had",
 "wrong": [
 "has",
@@ -6449,12 +6459,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*I → she, am leaving → was leaving, now → then.*"
 },
 {
-"id": "rs-B12-4a-r4",
+"id": "rs-B12-4a-r5",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 4,
 "kind": "mcq",
-"q": "You are reporting past statements using backshift. Which sentence has NOT backshifted its future verb?",
+"q": "All these people spoke to you last week. Which report is NOT correct?",
 "correct": "She said she will call me the next day.",
 "wrong": [
 "She said she would visit us on Monday.",
@@ -6676,15 +6686,16 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rq-B12-3a-r2",
+"id": "rq-B12-3a-r3",
 "skill": "rep_questions",
 "level": "B1.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Report with backshift: 'What time does the film start?' → She asked what time the film ___. (start)",
+"q": "Report it: 'What time does the film start?' → She asked what time the film ___. (start)",
 "answers": [
 [
-"started"
+"started",
+"starts"
 ]
 ],
 "why": "Reported question: normal word order, the verb goes back to the past: *started.*",
@@ -6695,7 +6706,14 @@ return json_decode(<<<'EF_JSON_END'
 "Netiešajā jautājumā nav *does* vai *did*: ... *what time the film started*."
 ]
 ],
-"why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*."
+"why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*.",
+"answer_notes": [
+[
+"starts",
+"Correct too when the film has not started yet: the time is still true now.",
+"Arī pareizi, ja filma vēl nav sākusies: laiks joprojām ir patiess."
+]
+]
 },
 {
 "id": "rq-B12-4a",
@@ -7016,12 +7034,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rv-B22-1a",
+"id": "rv-B22-1a-r2",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence reports 'I'm sorry I'm late' with a reporting verb?",
+"q": "Which sentence correctly reports 'I'm sorry I'm late'?",
 "correct": "He apologised for being late.",
 "wrong": [
 "He apologised that he was late.",
@@ -7032,12 +7050,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-B22-2a",
+"id": "rv-B22-2a-r2",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 2,
 "kind": "match",
-"q": "Match each sentence with the best reporting verb.",
+"q": "Match each sentence with the word that says what the person did.",
 "pairs": [
 [
 "'I'll definitely be there on time,' she said.",
@@ -7899,24 +7917,22 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ia-C11-1a-r2",
+"id": "ia-C11-1a-r3",
 "skill": "ind_advanced",
 "level": "C1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence uses an embedded question as the subject?",
-"correct": "Whether he will attend remains unclear.",
+"q": "Choose the correct option: ___ remains unclear.",
+"correct": "Whether he will attend",
 "wrong": [
-"He asked whether I would attend.",
-"Will he attend the meeting?",
-"We do not know whether he will attend."
+"Will he attend",
+"Whether will he attend",
+"That will he attend"
 ],
-"why": "*Whether he will attend* expresses an unresolved yes/no question and is the subject of *remains unclear*. In the other statements, the embedded question is not the subject.",
-"wrong_why": {
-"He asked whether I would attend.": "The embedded question complements *asked*. The subject of the main clause is *He*.",
-"Will he attend the meeting?": "This is a direct question, not a question embedded inside another clause.",
-"We do not know whether he will attend.": "The embedded question complements *know*. The subject of the main clause is *We*."
-}
+"why": "A question inside a sentence has the order of a statement: *Whether he will attend* remains unclear.",
+"wrong_why": {},
+"why_lv": "Jautājumam teikuma iekšienē ir apgalvojuma vārdu secība: *Whether he will attend* remains unclear.",
+"wrong_why_lv": {}
 },
 {
 "id": "ia-C11-2a-r4",
@@ -8423,13 +8439,13 @@ return json_decode(<<<'EF_JSON_END'
 "practice_only": true
 },
 {
-"id": "var-rs-b11-order-01",
+"id": "var-rs-b11-order-01-r2",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 3,
 "kind": "order",
-"q": "Report a past statement using backshift. Start with She said.",
-"why": "When backshift is required, *I am tired* becomes *she was tired*. *That* introduces the reported statement.",
+"q": "Put the words in order to report what she said.",
+"why": "Reported later, *I am tired* becomes *she was tired*. *That* can introduce what she said.",
 "sentence": "she said that she was tired",
 "answers": [
 [
@@ -8437,7 +8453,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "She said that she was tired.",
-"why_lv": "Ja jāveic laiku saskaņošana, *I am tired* kļūst par *she was tired*. *That* ievada atstāstīto izteikumu."
+"why_lv": "Atstāstot vēlāk, *I am tired* kļūst par *she was tired*. Ar *that* var ievadīt to, ko viņa teica."
 },
 {
 "id": "var-rq-b12-order-01",
@@ -8854,12 +8870,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Laika norādes palīdz atšķirt nozīmes. Present Continuous var aprakstīt pagaidu situāciju vai norunātu nākotnes darbību."
 },
 {
-"id": "var-pa-a22-match-01",
+"id": "var-pa-a22-match-01-r2",
 "skill": "past_simple",
 "level": "A2.2",
 "bloom": 1,
 "kind": "match",
-"q": "Match each base verb to its past-simple form.",
+"q": "Match each word with the form that fits 'Yesterday I ___.'",
 "why": "These verbs are irregular: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Do not add *-ed*.",
 "pairs": [
 [
@@ -8955,28 +8971,28 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Simple forma var uzsvērt pabeigšanu vai daudzumu. Continuous forma uzsver darbību un tās ilgumu; tā pati par sevi nenorāda, ka siena ir pabeigta."
 },
 {
-"id": "var-pasp-b12-match-01-r2",
+"id": "var-pasp-b12-match-01-r3",
 "skill": "past_simple_passive",
 "level": "B1.2",
 "bloom": 4,
 "kind": "match",
-"q": "Identify the voice and time in each sentence.",
-"why": "In the active sentence, the subject does the action. In the passive sentences, the printer receives it. The auxiliaries distinguish past completion from work in progress.",
+"q": "Match each sentence with what it tells us.",
+"why": "*repaired the printer*: we know who did it. *was repaired*: it is done, we don't know who. *is being repaired*: it is happening now.",
 "pairs": [
 [
 "The technician repaired the printer.",
-"Past active: the technician is the subject."
+"We know who did it."
 ],
 [
 "The printer was repaired yesterday.",
-"Past passive: the printer is the subject."
+"It is done, we don't know who did it."
 ],
 [
 "The printer is being repaired now.",
-"Present continuous passive: the repair is in progress."
+"Someone is working on it now."
 ]
 ],
-"why_lv": "Darāmajā kārtā teikuma priekšmets veic darbību. Ciešamajā kārtā printeris ir tas, ar ko kaut kas tika darīts. Palīgdarbības vārdi atšķir pagātnes darbību no pašlaik notiekoša darba."
+"why_lv": "*repaired the printer*: zinām, kurš to izdarīja. *was repaired*: tas ir izdarīts, nezinām, kurš. *is being repaired*: tas notiek tagad."
 },
 {
 "id": "var-fu-b11-match-01",
@@ -9051,13 +9067,13 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Had ... would buy* izsaka iedomātu tagadni, *have ... will buy* — iespējamu nākotni, bet *had had ... would have bought* — iedomātu pagātni."
 },
 {
-"id": "var-rs-b12-match-01",
+"id": "var-rs-b12-match-01-r2",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 3,
 "kind": "match",
-"q": "Match each statement by Eva to its report. Use backshift.",
-"why": "In these backshifted reports, *am → was*, *have finished → had finished*, and *can → could*. Eva becomes *she*.",
+"q": "Match each thing Eva said with its report.",
+"why": "Reported later: *am → was*, *have finished → had finished*, *can → could*. Eva becomes *she*.",
 "pairs": [
 [
 "'I am busy,' Eva said.",
@@ -9075,12 +9091,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Saskaņojot laikus šajos teikumos, *am → was*, *have finished → had finished* un *can → could*. Evas vietā lieto *she*."
 },
 {
-"id": "var-ip-b11-match-01",
+"id": "var-ip-b11-match-01-r2",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 3,
 "kind": "match",
-"q": "Match each direct question to the indirect question with the same meaning.",
+"q": "Match each question with the polite question that means the same.",
 "why": "Use statement word order in the indirect part. For a yes/no question, add *if* or *whether*. The auxiliary *does* disappears and the main verb takes *-s*.",
 "pairs": [
 [

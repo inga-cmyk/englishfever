@@ -283,6 +283,7 @@ final class Engine
             'specific' => $g['specific'],
             'notes' => $g['notes'] ?? [],
             'near' => !empty($g['near']),
+            'alt' => !empty($g['alt']),   // a second correct form: 'specific' is its own explanation
             'why' => $item['why'],
             'skill' => $skill,
             'kind' => $item['kind'],

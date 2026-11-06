@@ -19,7 +19,7 @@
   function lv(l) { return String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
-  var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
+  var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Start|Imagine|Add|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
   // the main site: the configured address, else the root of the dashboard / registration address
   function mainSiteUrl() {
     var c = state.config || {};
@@ -1312,9 +1312,10 @@
       }
       if (!good && !res.skipped && it.kind === 'order' && !cmp) fb.appendChild(h('p', null, h('b', null, lv ? 'Tava secība: ' : 'Your order: '), h('span', { class: 'mine' }, (ans || []).join(' '))));
       var spec = lv && res.specific_lv ? res.specific_lv : res.specific;
+      var altWhy = (good && res.alt && spec) ? spec : null; if (altWhy) spec = null;   // the learner wrote the second correct form: its own explanation replaces the general one (teacher, 6 November)
       if (spec) fb.appendChild(h('p', null, h('b', null, lv ? 'Padoms: ' : 'Tip: '), UI.rich(spec)));
       if (tips.length) fb.appendChild(h('p', null, h('b', null, 'Small tips: '), tips.join(' ')));
-      var why = lv ? res.why_lv : res.why;
+      var why = altWhy || (lv ? res.why_lv : res.why);
       if (it.kind === 'write') {
         fb.appendChild(h('p', { class: 'small' }, res.ai_checked ? (lv ? 'Tavu teikumu pārbaudīja AI. Salīdzini ar piemēru.' : 'Your sentence was checked by AI. Compare it with the model.')
           : (lv ? 'Šī pārbaude redz tikai vajadzīgo formu. Salīdzini savu atbildi ar piemēru.' : 'This only checks the form you need. Compare your answer with the model.')));
@@ -1326,7 +1327,7 @@
             h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
         } else if ((!good || it.kind !== 'mcq') && !cmp) {
           var findWrong = it.kind === 'mcq' && /^Which sentence (is NOT correct|has a mistake)\?/.test(it.q || '');   // the answer is the faulty sentence: do not call it "correct"
-          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (lv ? 'Atbilde: ' : 'Answer: ') : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), good || findWrong ? res.show : h('span', { class: 'right-ans' }, res.show)));
+          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (altWhy ? (lv ? 'Iespējams arī: ' : 'Also possible: ') : (lv ? 'Atbilde: ' : 'Answer: ')) : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), good || findWrong ? res.show : h('span', { class: 'right-ans' }, res.show)));
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }

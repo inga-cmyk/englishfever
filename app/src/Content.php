@@ -140,8 +140,11 @@ final class Content
     {
         if (!$it) return 'check';
         if (!empty($it['role']) && in_array($it['role'], ['learn', 'check', 'use'], true)) return $it['role'];
-        $over = ['var-pa-a22-match-01' => 'check'];   // matching base verbs with their past forms needs the form itself
-        if (isset($over[$it['id'] ?? ''])) return $over[$it['id']];
+        // matching forms stays a learning step (the pairs can be guessed from how the words look; teacher, 27 October and 6 November);
+        // these two choice tasks need the form itself (teacher, 6 November)
+        $over = ['rs-B12-2a' => 'check'];   // ip-B12-1a stays practice only: its wrong options miss the typical mistake (27 October)
+        $base = preg_replace('/-r\d+$/', '', (string) ($it['id'] ?? ''));
+        if (isset($over[$base])) return $over[$base];
         if (!empty($it['practice_only'])) return 'learn';
         if ($it['kind'] === 'match') return 'learn';
         if (in_array($it['kind'], ['text', 'write'], true)) return 'use';

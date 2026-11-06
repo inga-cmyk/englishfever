@@ -192,7 +192,7 @@ cmp = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", 
 teacher.api("teacher/items-import", {"csv": cmp, "confirm": True})
 db = sqlite3.connect(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "var", "ef.sqlite"))
 po = [json.loads(d) for (d,) in db.execute("select data from custom_items where data like '%practice_only%'")]
-check("a CSV row marked practice only keeps the mark", any(x.get("practice_only") is True and x["q"].startswith("Match each adjective with its comparative") for x in po), [x.get("q") for x in po])
+check("a CSV row marked practice only keeps the mark", any(x.get("practice_only") is True and x["q"].startswith("Match each word with the form that fits 'This one is") for x in po), [x.get("q") for x in po])
 # a task moved to another topic ("from: Past simple" in the replaces column): the old copy is retired, results stay
 HEAD2 = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces"]
 def csv2(rows):

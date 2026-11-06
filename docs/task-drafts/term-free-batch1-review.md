@@ -51,7 +51,7 @@ New instruction: **Start with …** (the thing the action happens to); never the
 | pasp-B12-3b-r2 | Start with *Twenty new workers*: The company hired 20 new workers last year. | Twenty new workers were hired last year. | |
 | ppp-B11-3b-r2 | Start with *My bag*: Someone has stolen my bag. | My bag has been stolen. | |
 | ppp-B12-3b-r2 | Start with *The invoice*: They have already sent the invoice. | The invoice has already been sent. | |
-| fup-B11-3b | Start with *The shop*: They will open the shop at 9. | The shop will be opened at 9. | **The shop will open at 9.**: *Correct English too, but it means the shop opens (its opening time). "Will be opened" says that someone opens it.* |
+| fup-B11-3b | Start with *The shop*: They will open the shop at 9. | The shop will be opened at 9. | **The shop will open at 9.**: *Correct English too, but it means the shop opens (its opening time). "Will be opened" says that someone will open it.* |
 | fup-B12-3b | Start with *The tickets*: We will send the tickets by email. | The tickets will be sent by email. | |
 
 ## 4. "Complete the question tag" / "Add a question tag" (14, b1-new-3)

@@ -549,8 +549,8 @@ def revise(original):
     report_fix('ppp-B11-3b', q='Start with *My bag*: Someone has stolen my bag.')
     report_fix('ppp-B12-3b', q='Start with *The invoice*: They have already sent the invoice.')
     report_fix('fup-B11-3b', q='Start with *The shop*: They will open the shop at 9.', answers=[['The shop will be opened at 9.', 'The shop will open at 9.']],
-        answer_notes=[['The shop will open at 9.', 'Correct English too, but it means the shop opens (its opening time). *Will be opened* says that someone opens it.',
-                       'Arī pareiza angļu valoda, bet tas nozīmē, ka veikals atveras (darba laiks). *Will be opened* pasaka, ka kāds to atver.']])
+        answer_notes=[['The shop will open at 9.', 'Correct English too, but it means the shop opens (its opening time). *Will be opened* says that someone will open it.',
+                       'Arī pareiza angļu valoda, bet tas nozīmē, ka veikals atveras (darba laiks). *Will be opened* pasaka, ka kāds to atvērs.']])
     report_fix('fup-B12-3b', q='Start with *The tickets*: We will send the tickets by email.')
     report_fix('cs-B12-3a', q="Imagine it is different. Start with *If I*: I don't have enough money, so I can't buy a new laptop.")
     report_fix('ct-B21-3a', q="Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.")

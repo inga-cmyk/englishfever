@@ -147,7 +147,7 @@ $setSpelling('forgiving');
 // a second correct form gets its own explanation (teacher, 6 November)
 $shop = Content::item('fup-B11-3b-r2');
 $g = Grader::grade($shop, 'The shop will open at 9.');
-$check($g['correct'] && $g['alt'] && str_contains($g['specific'], 'opening time'), 'second correct form: accepted, with its own note');
+$check($g['correct'] && $g['alt'] && str_contains($g['specific'], 'someone will open it'), 'second correct form: accepted, with its own note');
 $g = Grader::grade($shop, 'The shop will be opened at 9.');
 $check($g['correct'] && !$g['alt'] && $g['specific'] === null, 'the main answer: no note');
 

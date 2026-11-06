@@ -484,7 +484,7 @@
       }
       var ci = steps.findIndex(function (s) { return s.id === path.current; });
       var show = all ? steps.map(function (s, i) { return [s, i]; })
-        : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci - 1 && p[1] <= ci + 3); });
+        : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci && p[1] <= ci + 3); });   // the recommended step is always the first one shown (teacher, 6 November)
       card.replaceChildren(
         h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), path.placed ? null : h('span', { class: 'small muted' }, 'based on your practice')),
         h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0]); })),

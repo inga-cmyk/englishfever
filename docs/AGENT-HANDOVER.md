@@ -51,7 +51,7 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. Where the work stands, and what is open
 
-**Latest zip 2026-11-04 23:02 (rule cards: all 58 now in the new layout; `app/authoring/cards2_h.py` holds the last 12, and four C1 cards got a Latvian version; Inga uploads it).** **Done and published (zip 2026-11-04 08:52):** twins batches 1–3 (76 + 50 + 33 tasks; every topic-level with fewer than
+**Latest zip 2026-11-05 22:04** (Duolingo-like buttons, research without a consent card, fun line under the feedback, ChatGPT's reported-task fixes, seven B2 instructions without tense names; before that 2026-11-04 23:02: all 58 rule cards in the new layout). **Done and published (zip 2026-11-04 08:52):** twins batches 1–3 (76 + 50 + 33 tasks; every topic-level with fewer than
 10 check / use tasks now has 10, except C1 topics whose two levels together already have 10 or more); the C1 topic
 *Unreal time and preferences* (12 tasks, rule card, path step); learning drag tasks `learn-drag-3.csv` (33) and `learn-drag-4.csv`
 (40): every topic-level has at least one drag task. Each batch has a `*-review.md` next to its CSV and a generator in `_src/`.
@@ -64,7 +64,9 @@ tasks (`learning_task()` marks them *practice only*).
 1. *Learning drag tasks for every path step* (her "option B"): about five per step. **The source is always a check / use task that is not a drag task** (a choice, a typed gap, a rewrite), and the learning task turns its sentence into a word order or a word bank. Never copy an existing word order, word bank or matching task: same sentence + same type = the same task. Same process as `learn_drag_4.py`; every learning task must import as **new** (the last rules in `ITEM-WRITING-RULES.md`).
 2. *Twins where tasks repeat most*: needs the Usage → Repeats table from the server (ask Inga for a screenshot or export; never log in yourself).
 3. `tools/small_banks.py` does not map some short topic names to their skill ids (found in the batch-2 review); `twins_3.py` has a correct `ALIASES` map to reuse.
-4. `Content::role` treats *'…' What does it say?* (a meaning question) as *check*; the regex in `app/src/Content.php` could include it. This changes which answers count as evidence: log it in `RESEARCH-DATA-PLAN.md`.
+4. Done 5 November (ChatGPT): *What does it / this / that say / mean?* is a learn task.
+10. 74 built-in explanations use *past participle / infinitive / gerund*; the rule cards say *3rd form / base form*. Ask Inga whether to make them the same.
+11. The path and the session summary are English only (Latvian learners see English there): a full Latvian version only if Inga asks.
 5. Inga's review lists still open: `docs/task-drafts/task-roles-review.md` (236 learn tasks) and `docs/task-drafts/write-tasks-rewrite-review.md` (40 writing tasks).
 6. My learning path: the empty circles of steps not started. Proposal waiting for her choice: D = a green ring for progress, a grey ✓ for "probably known", a green ✓ / ★ when learned / mastered.
 7. The optional AI check of writing (`AiGrader.php`, model `claude-haiku-5-5`): a dry run with `tools/ai_dryrun.php` needs `ANTHROPIC_API_KEY` set by Inga in the cloud environment settings and an answers export from her.

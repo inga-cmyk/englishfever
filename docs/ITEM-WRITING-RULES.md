@@ -107,3 +107,11 @@
 
 - **A learning task is never a copy.** Its source is a check / use task that is **not** a drag task (a choice, a typed gap, a rewrite); the learning task turns that sentence into a word order or a word bank. Never take a word order, a word bank or a matching task as the source: a drag task with the same sentence and the same type is the same task (nothing new to practise, and the import would overwrite the existing one). Different wording of the instruction does not make it new.
 - Before showing samples, check every one against the bank: same sentence + same task type anywhere in `app/content/items.json` or `docs/task-drafts/*.csv` = not allowed.
+
+## No grammar terms, precise prompts (teacher, 6 November)
+
+- A task never needs a grammar term to be solved (*passive, past simple, question tag, adverb, backshift, modal, plural, conditional, preposition* …). The learner must be able to do it without knowing what the term means.
+- Instead of the term, the prompt makes the form necessary: a time word or a situation (*yesterday*, *still*, *for weeks*), a frame (*one child, two ___*), or a start (*Start with My wallet*). The prompt is short, precise and easy to take in.
+- A start or an example never contains the answer: *Start with My wallet* is fine, *Start with My wallet was* is not.
+- When the context allows a second correct form, accept it, and the feedback for that answer explains what it means and how it differs (*answer notes* column): never show "Correct" with an explanation of a different form as if the learner had written that one.
+- In Latvian texts the people who use the app are *izglītojamie*, not *skolēni*.

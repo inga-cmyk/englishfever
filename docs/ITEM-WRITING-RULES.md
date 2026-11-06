@@ -115,3 +115,4 @@
 - A start or an example never contains the answer: *Start with My wallet* is fine, *Start with My wallet was* is not.
 - When the context allows a second correct form, accept it, and the feedback for that answer explains what it means and how it differs (*answer notes* column): never show "Correct" with an explanation of a different form as if the learner had written that one.
 - In Latvian texts the people who use the app are *izglītojamie*, not *skolēni*.
+- Scope (teacher, 6 November): only the **task instructions** lose the grammar terms. Explanations (*Why*), answer notes and rule cards keep the grammar words (*present perfect, passive, 3rd form, verb, subject* …): there the learner may meet and learn the names.

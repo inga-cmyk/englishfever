@@ -980,3 +980,16 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .test-sizes .btn { flex-direction: column; gap: 2px; padding: 12px 8px; }
 .test-sizes .btn small { font-weight: 500; opacity: .85; }
 .card.focus .test-sizes .btn { min-width: 0; width: 100%; padding: 12px 6px; }
+/* the level test card, less is more (teacher, 6 November): three rows with their own colour, one clear way out */
+.test-sizes { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; grid-template-columns: none; }
+.test-size { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 56px; padding: 0 20px; border-radius: 16px; border: 0; font: inherit; font-size: 1.05rem; cursor: pointer; transition: transform .15s ease, filter .15s; }
+.test-size span { font-weight: 600; opacity: .8; }
+.test-size:hover, .test-size:focus-visible { filter: brightness(1.08); transform: translateY(-1px); }
+.test-size.ts-quick { background: #F3EAD3; color: #1E1E2C; }
+.test-size.ts-medium { background: var(--gold); color: #1E1E2C; }
+.test-size.ts-full { background: #1A7F70; color: #fff; }
+.skip-test { display: block; margin: 18px auto 2px; background: none; border: 0; font: inherit; font-weight: 600; color: #F3EFE6; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; padding: 8px 12px; }
+.skip-test:hover, .skip-test:focus-visible { color: var(--gold); }
+.test-size.pulse { animation: nudgegold 2.4s ease-out 1.2s 2; }
+@media (prefers-reduced-motion: reduce) { .test-size.pulse { animation: none; } }
+.test-size:hover, .test-size:focus-visible { box-shadow: 0 8px 20px rgba(0,0,0,.28); }

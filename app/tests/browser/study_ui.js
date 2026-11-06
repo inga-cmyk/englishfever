@@ -22,7 +22,7 @@ const me = page => page.evaluate(() => fetch('api.php?r=me').then(r => r.json())
   let { ctx, page } = await newLearner(browser, 'Ada Study');
   if (await page.locator('text=learning study').count()) errors.push('there should be no study invitation on Home');
   const dashLinks = await page.locator('a:has-text("My dashboard")').evaluateAll(a => a.map(x => [x.getAttribute('target'), x.getAttribute('rel')]));
-  if (dashLinks.length !== 2 || dashLinks.some(d => d[0] !== '_blank' || !/noopener/.test(d[1] || ''))) errors.push('"My dashboard" links should open in a new tab: ' + JSON.stringify(dashLinks));
+  if (dashLinks.length < 1 || dashLinks.some(d => d[0] !== '_blank' || !/noopener/.test(d[1] || ''))) errors.push('"My dashboard" links should open in a new tab: ' + JSON.stringify(dashLinks));
   let u = await me(page);
   if (u.research !== 0 || Object.keys(u.cond).length) errors.push('a new learner should be in the study without conditions: ' + JSON.stringify(u));
   await page.goto(BASE + '/#/profile'); await page.waitForSelector('h2:has-text("Your data")');

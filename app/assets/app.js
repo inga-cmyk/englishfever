@@ -581,8 +581,9 @@
         feat('streak') ? h('span', null, icon('flame'), h('b', null, String(d.streak.current)), d.streak.current === 1 ? ' day' : ' days') : null,
         h('span', null, icon('bolt'), h('b', null, String(d.totals.xp)), ' XP'),
         d.totals.accuracy === null ? null : h('span', null, icon('check'), h('b', null, d.totals.accuracy + '%'), ' correct')) : null;
-      nodes.push(h('div', { class: 'card focus hero-card' }, cheer, main, strip, started ? levelScale(learnerLevel(d), rep) : null));
-      nodes.push(links);
+      var first = !started && !resume;   // the first visit: nothing else on the screen (teacher, 6 November)
+      nodes.push(h('div', { class: 'card focus hero-card' + (first ? ' first-visit' : '') }, first ? null : cheer, main, strip, started ? levelScale(learnerLevel(d), rep) : null));
+      if (!first) nodes.push(links);
       var cb = d.comeback || { open: 0, fixed: 0 };
       if (cb.open > 0 || cb.review > 0) {   // open mistakes, or mistakes fixed a few days ago that are due for a check
         var n = Math.min(10, cb.open + (cb.review || 0));
@@ -593,7 +594,7 @@
             comebackButton('btn small fn-chance', 'Start'))));
       }
       if (started) nodes.push(pathCard());   // My learning path (teacher, 28 October)
-      var gb = state.user.guest ? guestBanner() : null; if (gb) nodes.push(gb);   // guests: Log in / Create account, side by side under the main things
+      var gb = (state.user.guest && !first) ? guestBanner() : null; if (gb) nodes.push(gb);   // Log in / Create account once something is done   // guests: Log in / Create account, side by side under the main things
 
       var ic = started ? installCard(false) : null; if (ic) nodes.push(ic);
       var nStarted = d.skills.filter(function (s) { return s.n > 0; }).length;
@@ -663,25 +664,20 @@
         api('session/start', { mode: 'placement', length: len, source: 'placement' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
       };
     }
-    var later = known ? h('button', { type: 'button', class: 'linkbtn' }, 'Not now: start at ' + sl)
-      : h('button', { type: 'button', class: 'linkbtn' }, 'Not now: try the Tricky ones');
+    var later = h('button', { type: 'button', class: 'skip-test' }, 'Skip the test');
     later.addEventListener('click', function () {
       later.disabled = true;
-      if (!known) { api('session/start', { mode: 'smart', length: 8, source: 'surprise' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(function (e) { later.disabled = false; UI.toast(e.message); }); return; }
+      if (!known) { api('session/start', { mode: 'smart', length: 8, source: 'surprise' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(function (e) { later.disabled = false; UI.toast(e.message); }); return; }   // "I don't know": the Tricky ones
       api('path').then(function (p) {
         var st = p.steps.find(function (x) { return x.id === p.current; });
         if (st) startPathStep(later, st); else location.hash = '#/practice';
       }).catch(fail);
     });
+    // less is more (teacher, 6 November): a title, three lengths, one way out
+    function size(cls, name, mins, len) { return h('button', { type: 'button', class: 'test-size ' + cls, onclick: test(len) }, h('b', null, name), h('span', null, mins)); }
     return [h('h2', null, 'Take the level test?'),
-      h('p', { class: 'muted' }, (known ? 'It starts at ' + sl + '. ' : '') + 'You type the missing words. A longer test gives a more exact result.'),
-      h('div', { class: 'test-sizes' },
-        h('button', { type: 'button', class: 'btn', onclick: test(12) }, 'Quick', h('small', null, '5 min')),
-        h('button', { type: 'button', class: 'btn pulse', onclick: test(24) }, 'Medium', h('small', null, '10 min')),
-        h('button', { type: 'button', class: 'btn', onclick: test(40) }, 'Full', h('small', null, '18 min'))),
-      known ? null : h('p', { class: 'small muted', style: 'margin-top:12px' }, 'Tricky ones: 8 questions with the mistakes most people make.'),
-      h('div', { class: 'row', style: 'margin-top:10px;gap:18px' }, later,
-        h('button', { type: 'button', class: 'linkbtn small', onclick: function () { askLevelAgain = true; redraw(); } }, 'Change my level'))];
+      h('div', { class: 'test-sizes' }, size('ts-quick', 'Quick', '5 min', 12), size('ts-medium pulse', 'Medium', '10 min', 24), size('ts-full', 'Full', '18 min', 40)),
+      later];
   }
 
   function surpriseButton(cls, label) {

@@ -204,6 +204,39 @@ final class Path
                 'done' => $learned && $fresh, 'stale' => $learned && !$fresh];
     }
 
+    /**
+     * The review half of the recommended training (teacher, 6 November): after a session on a step, the next recommended training
+     * reviews the steps learnt before the current one: gaps first (a quick check that failed, weak recent answers), then steps with
+     * open mistakes, then steps due for a refresh, then the ones practised longest ago. Up to three steps. Null: the step itself.
+     * @return array{topics: string[], levels: string[], steps: string[]}|null
+     */
+    public static function reviewPlan(int $uid): ?array
+    {
+        $last = Db::one("SELECT source FROM psessions WHERE user_id = ? AND mode = 'practice' AND n > 0 AND source IN ('path', 'path_check', 'path_review') ORDER BY id DESC LIMIT 1", [$uid]);
+        if (!$last || $last['source'] === 'path_review') return null;   // the first time, and after a review: the step itself
+        $path = self::forUser($uid);
+        $ids = array_column($path['steps'], 'id');
+        $cur = array_search($path['current'], $ids, true);
+        if ($cur === false || $cur === 0) return null;
+        $open = [];
+        foreach (Mistakes::scan($uid)['open'] as $m) $open[$m['skill']] = true;
+        $lastAt = [];
+        foreach (Db::all('SELECT skill, MAX(created_at) AS t FROM attempts WHERE user_id = ? GROUP BY skill', [$uid]) as $r) $lastAt[$r['skill']] = (int) $r['t'];
+        $cand = [];
+        foreach (array_slice($path['steps'], 0, $cur) as $x) {
+            $gap = $x['status'] === 'strengthen';
+            $mist = (bool) array_intersect_key($open, array_flip($x['topics']));
+            if (!$gap && !$mist && !$x['answers']) continue;   // never practised and no gap: nothing to review
+            $when = 0; foreach ($x['topics'] as $t) $when = max($when, $lastAt[$t] ?? 0);
+            $cand[] = [$gap ? 0 : ($mist ? 1 : ($x['status'] === 'refresh' ? 2 : 3)), $when, $x];
+        }
+        if (!$cand) return null;
+        usort($cand, fn($a, $b) => [$a[0], $a[1]] <=> [$b[0], $b[1]]);
+        $topics = []; $levels = []; $steps = [];
+        foreach (array_slice($cand, 0, 3) as [, , $x]) { $topics = array_merge($topics, $x['topics']); $levels = array_merge($levels, $x['levels']); $steps[] = $x['id']; }
+        return ['topics' => array_values(array_unique($topics)), 'levels' => array_values(array_unique($levels)), 'steps' => $steps];
+    }
+
     public static function forUser(int $uid): array
     {
         $byHalf = Content::levelCounts()['by_half'];
@@ -280,7 +313,7 @@ final class Path
         // the recommended step (teacher, 3 November): the first logical one, in the order of the path from the level found, even when the
         // level test did not ask it (then it starts as a quick check); a step whose quick check failed comes first.
         $current = null;
-        foreach ($steps as $x) if ($x['status'] === 'strengthen') { $current = $x['id']; break; }
+        // a step with a gap is no longer put first: the review half of the recommended training starts with it (reviewPlan; teacher, 6 November)
         if ($current === null) foreach ($steps as $x) if ($x['band_idx'] >= max(0, $placedIdx) && !$x['done']) { $current = $x['id']; break; }
         if ($current === null) foreach ($steps as $x) if (!$x['done']) { $current = $x['id']; break; }
         foreach ($steps as &$x) unset($x['band_idx']);

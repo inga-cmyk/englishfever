@@ -378,11 +378,11 @@
   }
 
   /** Starts one step of My learning path; remembers it, so the summary can offer the next step (teacher, 29 October). */
-  function startPathStep(el, st) {
+  function startPathStep(el, st, recommended) {   // recommended: every other time the server makes it a review of earlier steps (teacher, 6 November)
     el.disabled = true;
     track('path_step', st.id);
     var check = st.status === 'likely' || !!st.check;   // probably known, or not asked in the level test: a 5-task quick check of check / use tasks (teacher, 3 November)
-    api('session/start', { mode: 'practice', skills: st.topics, levels: st.levels || [st.level], length: check ? 5 : 10, source: check ? 'path_check' : 'path' }).then(function (r) {
+    api('session/start', { mode: 'practice', skills: st.topics, levels: st.levels || [st.level], length: check ? 5 : 10, source: check ? 'path_check' : 'path', recommended: !!recommended }).then(function (r) {
       state.sess = newSess(r.session, r.item); state.sess.pathStep = st.id;
       try { localStorage.setItem('ef_pathstep', JSON.stringify({ sid: r.session.id, step: st.id })); } catch (e) {}   // survives a reload in the middle
       location.hash = '#/session';
@@ -453,7 +453,7 @@
   function pathCard() {
     var card = h('div', { class: 'card pathcard' }, h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), h('span', { class: 'small muted' }, '…')));
     var all = false;
-    function start(el, st) { startPathStep(el, st); }
+    function start(el, st) { startPathStep(el, st, st.id === path.current); }
     // accuracy as a colour: pink → orange → yellow → yellow-green → green (hue -15° … 140°); grey = not tried yet
     function hue(p) { return 'hsl(' + ((-15 + 1.55 * p + 360) % 360) + ' 62% 46%)'; }
     // no numbers (teacher, 3 November): a word for the state and a green line for how far it is learned
@@ -562,7 +562,7 @@
           mainBtn.disabled = true;
           api('path').then(function (p) {
             var st = p.placed !== null && p.steps.find(function (x) { return x.id === p.current; });
-            if (st) startPathStep(mainBtn, st); else { mainBtn.disabled = false; fallback.click(); }
+            if (st) startPathStep(mainBtn, st, true); else { mainBtn.disabled = false; fallback.click(); }
           }).catch(function () { mainBtn.disabled = false; fallback.click(); });
         });
         main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'Your next step, with a little review.'), mainBtn];
@@ -670,7 +670,7 @@
       if (!known) { api('session/start', { mode: 'smart', length: 8, source: 'surprise' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(function (e) { later.disabled = false; UI.toast(e.message); }); return; }   // "I don't know": the Tricky ones
       api('path').then(function (p) {
         var st = p.steps.find(function (x) { return x.id === p.current; });
-        if (st) startPathStep(later, st); else location.hash = '#/practice';
+        if (st) startPathStep(later, st, true); else location.hash = '#/practice';
       }).catch(fail);
     });
     // less is more (teacher, 6 November): a title, three lengths, one way out

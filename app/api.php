@@ -137,6 +137,10 @@ try {
         case 'session/start':
             $u = Auth::require();
             throttle('sess:' . hash('sha256', $_SERVER['REMOTE_ADDR'] ?? '?'), 150, 3600, 'Too many new sessions from this connection. Please wait a little.');
+            // the recommended training on My learning path (teacher, 6 November): every other time a review of what was learnt before
+            if (!empty($in['recommended']) && in_array($in['source'] ?? '', ['path', 'path_check'], true) && ($rv = Path::reviewPlan((int) $u['id']))) {
+                $in = ['mode' => 'practice', 'skills' => $rv['topics'], 'levels' => $rv['levels'], 'length' => 10, 'source' => 'path_review'];
+            }
             out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10), isset($in['levels']) ? (array) $in['levels'] : null, isset($in['source']) ? (string) $in['source'] : null));
 
         case 'event':   // what the learner opens and presses (Usage page): a fixed list of names, no text

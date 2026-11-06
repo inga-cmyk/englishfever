@@ -7,7 +7,7 @@
 final class Usage
 {
     /** Where a session can be started. */
-    public const SOURCES = ['placement', 'path', 'path_check', 'surprise', 'second_chance', 'home_topic', 'practice_page', 'rule_card', 'summary'];
+    public const SOURCES = ['placement', 'path', 'path_check', 'path_review', 'surprise', 'second_chance', 'home_topic', 'practice_page', 'rule_card', 'summary'];
 
     /** Actions that may be logged, with a short meaning for the teacher page. */
     public const EVENTS = [

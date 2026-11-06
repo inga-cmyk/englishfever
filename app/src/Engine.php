@@ -105,7 +105,7 @@ final class Engine
         if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['review'] = array_fill_keys($review, true); }
         if (!empty($allowed)) $state['levels'] = $allowed;
         // 60 / 25 / 15 (teacher, 2 November): a path step and Surprise me mix the step, review and a step up; a chosen topic stays as chosen
-        if ($mode === 'practice' && ($source === 'path' || ($smart && isset($mixLevels)))) {
+        if ($mode === 'practice' && $smart && isset($mixLevels)) {   // a path step is only its own topic now (teacher, 6 November); Surprise me keeps the mix
             $mainLevels = $mixLevels ?? ($allowed ?? [$level]);
             $state['mix'] = Path::sessionMix($uid, $skills, $mainLevels, $len, $path ?? null);
             $state['levels'] = $mainLevels;
@@ -427,7 +427,7 @@ final class Engine
     {
         $out = Content::publicItem($it, $seed);
         $index = array_search($it['id'], $ses['state']['served'], true);
-        $out['practice_context'] = $index === false ? 'main' : ($ses['state']['slot'][$index] ?? 'main');
+        $out['practice_context'] = ($ses['source'] ?? '') === 'path_review' ? 'review' : ($index === false ? 'main' : ($ses['state']['slot'][$index] ?? 'main'));
         return $out;
     }
 
@@ -638,7 +638,12 @@ final class Engine
                 $cost += max(-0.5, min(0.9, 2.0 * (($mixCount[$grp] + 1) / ($served_n + 1) - self::MIX[$grp]))) + ($grp === 'write' ? 0.6 : 0);
                 if ($grp === 'sentence' && $mixCount['sentence'] >= (int) ceil(0.1 * ($served_n + 10))) $cost += 3.0; // typing whole sentences stays at about one in ten, even when other tasks pull the other way
             }
-            if ($st['last'] && end($st['last'])['bloom'] === $it['bloom']) $cost += 0.3; // avoid the same thinking level twice in a row
+            if (($ses['source'] ?? '') === 'path') {   // a step: from Recognise to Understand to Apply (teacher, 6 November); after a mistake, the same level once more
+                $tb = $count < 3 ? 1 : ($count < 6 ? 2 : 3);
+                $lastH = $st['last'] ? end($st['last']) : null;
+                if ($lastH && !$lastH['correct']) $tb = min($tb, max(1, (int) $lastH['bloom']));
+                $cost += 0.9 * abs(min(3, (int) $it['bloom']) - $tb) + ($it['bloom'] > 3 ? 0.6 : 0);
+            } elseif ($st['last'] && end($st['last'])['bloom'] === $it['bloom']) $cost += 0.3; // avoid the same thinking level twice in a row
             if (!$placement && !$smart && $count < 3 && $it['level'] !== $ses['level']) $cost += 0.5;
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }

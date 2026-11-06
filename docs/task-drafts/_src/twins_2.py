@@ -28,6 +28,9 @@ def canonical(topic):
 
 
 BUILT = {it["id"]: it for it in json.loads((ROOT / "app/content/items.json").read_text())}
+for _it in list(BUILT.values()):   # a source revised later (no grammar terms, 6 November) is still found by its older id
+    _base = re.sub(r"-r\d+$", "", _it["id"])
+    for _k in [_base] + [f"{_base}-r{n}" for n in range(2, 10)]: BUILT.setdefault(_k, _it)
 PROVENANCE = []
 
 
@@ -86,7 +89,7 @@ EARLIER = ("*Had* + 3rd form marks the earlier event; *when* introduces the late
 order(N_ORDER, "the sun had risen when we arrived",
       ["when we arrived the sun had risen"], EARLIER)
 # one twin per source (Claude's review, 4 November): the three clones of N_ORDER became twins of other sources
-N_SHINE = original("compare-past-1.csv", "looked / was shining")
+N_SHINE = original("compare-past-1.csv", "looked / was shining | shone")
 N_LUNCH = original("compare-past-1.csv", "had just had")
 N_KATE = original("compare-past-1.csv", "was", skill="narrative", level="B1.2")
 twin(N_SHINE, "gap", "Use the verbs in brackets: I opened the curtains and ___ outside. It ___ heavily. (look / snow)", "looked / was snowing",

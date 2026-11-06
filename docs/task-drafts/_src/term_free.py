@@ -4,6 +4,7 @@ the old text goes into "replaces" (so the import retires the published version),
 ("answer notes": the explanation shown only to whoever wrote that form)."""
 import re
 import term_free_b2
+import term_free_b3
 
 PREFIX = [   # old start of the task -> new start ("" = no instruction: the sentence does the work)
     ("Use the present perfect or the past simple: ", ""),
@@ -101,6 +102,9 @@ def fix(task, typ, correct, wrong, line_no=None):
     if new == task:   # batch 2 (approved by the teacher, 6 November)
         n2 = term_free_b2.fix(task, typ, correct)
         if n2: new = n2
+    if new == task:   # batch 3 (approved by the teacher, 6 November)
+        n3 = term_free_b3.fix(task)
+        if n3: new, c = n3[0], (n3[1] or c)
     notes = ""
     allnotes = {**NOTES, **term_free_b2.NOTES}
     if new in allnotes:

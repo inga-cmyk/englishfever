@@ -1,8 +1,8 @@
-# Batch 3 without grammar terms: the last 66 tasks (draft, 6 November)
+# Batch 3 without grammar terms: the last 66 tasks (approved by the teacher, 6 November)
 
 Only the task instruction changes (explanations and rule cards keep the grammar words). Where the instruction was the only thing
 that ruled out another form, the sentence gets a context or a meaning cue (marked **+**). A second correct form gets its own note.
-Answers stay as now unless a line says otherwise. Not in the app until the teacher approves.
+Answers stay as now unless a line says otherwise.
 
 ## Choice tasks (built-in)
 
@@ -23,7 +23,7 @@ Answers stay as now unless a line says otherwise. Not in the app until the teach
 
 | Task | New task | Answer | Also accepted, with its note |
 |---|---|---|---|
-| pc-A22-3a | Ask about someone's plans: What ___ you ___ this weekend? (do) | are / doing | **will / do**: *Correct too. "Are you doing" asks about plans that are already made.* |
+| pc-A22-3a | Ask about someone's plans: What ___ this weekend? (you / do) (one gap: the two words go together) | are you doing | **will you do**: *Correct too. "Are you doing" asks about plans that are already made.* |
 | var-cf-a22-bank-01 | Complete: If she ___ early, we ___ the bus. | arrives / will catch | |
 | var-cs-b11-bank-01 | Imagine it is different. Complete: If I ___ more free time, I ___ a new language. | had / would learn | |
 | var-ct-b12-bank-01 | Imagine it happened differently. Complete: If we ___ earlier, we ___ the train. | had left / would have caught | |

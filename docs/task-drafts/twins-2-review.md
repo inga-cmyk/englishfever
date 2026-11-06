@@ -58,9 +58,9 @@ Oriģināla varianti / pieņemtās secības: also accepted: when i arrived she h
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 38).
-> Use the past simple, past continuous or past perfect: I got up and ___ out of the window. The sun ___. (look / shine)
+> I got up and ___ out of the window. The sun ___. (look / shine)
 
-Oriģināla atslēga: looked / was shining
+Oriģināla atslēga: looked / was shining | shone
 
 **Dvīnis:** Use the verbs in brackets: I opened the curtains and ___ outside. It ___ heavily. (look / snow)
 
@@ -75,11 +75,11 @@ Oriģināla atslēga: looked / was shining
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 39).
-> Use the past simple, past continuous or past perfect: We weren't hungry. We ___ lunch. (just / have)
+> We weren't hungry. We ___ lunch. (just / have)
 
 Oriģināla atslēga: had just had
 
-**Dvīnis:** Use the verb in brackets: Tom didn't want a coffee. He ___ one. (just / drink)
+**Dvīnis:** Tom didn't want a coffee. He ___ one. (just / drink)
 
 **Atbilde:** had just drunk
 
@@ -92,7 +92,7 @@ Oriģināla atslēga: had just had
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 43).
-> Use the past simple, past continuous or past perfect: Kate ___ just ___ home when I phoned. (get)
+> Kate ___ just ___ home when I phoned. (get)
 
 Oriģināla atslēga: had / got
 
@@ -109,11 +109,11 @@ Oriģināla atslēga: had / got
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 42).
-> Use the past simple, past continuous or past perfect: Kate wasn't at home when I phoned. She ___ at her mother's house at that moment. (be)
+> Kate wasn't at home when I phoned. She ___ at her mother's house at that moment. (be)
 
 Oriģināla atslēga: was
 
-**Dvīnis:** Use the verb in brackets: Leo didn't answer my call. He ___ in a meeting at that moment. (be)
+**Dvīnis:** Leo didn't answer my call. He ___ in a meeting at that moment. (be)
 
 **Atbilde:** was
 
@@ -265,7 +265,7 @@ Oriģināla varianti / pieņemtās secības: Sam refused working that weekend. |
 **Loma:** use.
 
 **Oriģināls:** `app/content/items.json` (rv-B22-3a-r2).
-> Report with the verb deny: 'I didn't take your phone,' Max said.
+> Report it with *deny*. Max said: 'I didn't take your phone.'
 
 Oriģināla atslēga: Max denied taking my phone. | Max denied taking your phone. | Max denied that he had taken my phone. | Max denied having taken my phone. | Max denied that he took my phone. | Max denied that he had taken your phone. | Max denied taking the phone. | Max denied that he had taken the phone. | Max denied that he took the phone. | Max denied having taken the phone.
 
@@ -282,7 +282,7 @@ Oriģināla atslēga: Max denied taking my phone. | Max denied taking your phone
 **Loma:** check.
 
 **Oriģināls:** `app/content/items.json` (var-ia-c11-order-01).
-> Use an embedded yes/no question as the subject. Start with Whether.
+> Put the words in order. Start with *Whether*.
 
 Oriģināla atslēga: whether the plan will work remains uncertain
 
@@ -400,7 +400,7 @@ Oriģināla varianti / pieņemtās secības: were knowing | was knowing
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 11).
-> Use the past simple or the past continuous: I ___ along the road when I ___ Dan. So I stopped, and we talked. (walk / see)
+> I ___ along the road when I ___ Dan. So I stopped, and we talked. (walk / see)
 
 Oriģināla atslēga: was walking / saw
 
@@ -417,11 +417,11 @@ Oriģināla atslēga: was walking / saw
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 14).
-> Use the past simple or the past continuous: We ___ all the way home after the party last night. (walk)
+> We ___ all the way home after the party last night. (walk)
 
 Oriģināla atslēga: walked
 
-**Dvīnis:** Use the verb in brackets: Last Saturday we ___ ten kilometres along the coast. (walk)
+**Dvīnis:** Last Saturday we ___ ten kilometres along the coast. (walk)
 
 **Atbilde:** walked
 
@@ -497,7 +497,7 @@ Oriģināla varianti / pieņemtās secības: If you told us earlier, we could ha
 **Loma:** use.
 
 **Oriģināls:** `app/content/items.json` (ct-B21-3a-r2).
-> Rewrite as a third conditional: I didn't see the sign, so I parked there and got a fine.
+> Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.
 
 Oriģināla atslēga: If I had seen the sign, I wouldn't have parked there. | If I had seen the sign, I wouldn't have got a fine. | If I had seen the sign, I would not have got a fine. | If I had seen the sign, I wouldn't have gotten a fine. | If I had seen the sign, I wouldn't have been fined. | If I had seen the sign, I would not have parked there. | I wouldn't have parked there if I had seen the sign. | I wouldn't have got a fine if I had seen the sign. | I would not have got a fine if I had seen the sign. | I wouldn't have gotten a fine if I had seen the sign. | I wouldn't have been fined if I had seen the sign. | I would not have parked there if I had seen the sign.
 
@@ -535,11 +535,11 @@ Oriģināla varianti / pieņemtās secības: She asked if could I help her. | Sh
 **Loma:** check.
 
 **Oriģināls:** `app/content/items.json` (rq-B21-2a).
-> 'Don't touch that!' the nurse said. Which report is correct?
+> Which sentence reports this instruction: 'Don't touch that!'
 
 Oriģināla atslēga: The nurse told me not to touch it.
 
-Oriģināla varianti / pieņemtās secības: The nurse told me to not touching it. | The nurse told me that I don't touch it. | The nurse said me not to touch it.
+Oriģināla varianti / pieņemtās secības: The nurse told me not touch it. | The nurse told me not touching it. | The nurse said me not to touch it.
 
 **Dvīnis:** Which sentence reports this: 'Don't leave your bag here!'
 
@@ -742,7 +742,7 @@ Oriģināla varianti / pieņemtās secības: played | was playing
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 10).
-> Use the past simple or the past continuous: I ___ my back while I ___ in the garden. (hurt / work)
+> I ___ my back while I ___ in the garden. (hurt / work)
 
 Oriģināla atslēga: hurt / was working
 
@@ -801,11 +801,11 @@ Oriģināla varianti / pieņemtās secības: has been raining | had been rain
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 52).
-> Use the past perfect, the past perfect continuous or the present perfect continuous: By lunchtime she ___ ten emails. (write)
+> Yesterday was busy. By lunchtime she ___ ten emails. (write)
 
 Oriģināla atslēga: had written
 
-**Dvīnis:** Use the verb in brackets: By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)
+**Dvīnis:** By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)
 
 **Atbilde:** had answered
 
@@ -839,11 +839,11 @@ Oriģināla varianti / pieņemtās secības: have never rode | has never ridden
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 25).
-> Use the present perfect or the past simple: I ___ there from 2010 to 2014. Now I work in Riga. (work)
+> I ___ there from 2010 to 2014. Now I work in Riga. (work)
 
 Oriģināla atslēga: worked
 
-**Dvīnis:** Use the verb in brackets: I ___ that office from 2018 to 2021. Now I work elsewhere. (manage)
+**Dvīnis:** I ___ that office from 2018 to 2021. Now I work elsewhere. (manage)
 
 **Atbilde:** managed
 
@@ -856,7 +856,7 @@ Oriģināla atslēga: worked
 **Loma:** use.
 
 **Oriģināls:** `docs/task-drafts/compare-past-1.csv` (CSV line 27).
-> Use the present perfect or the past simple: ___ you ___ Anna yesterday? (see)
+> ___ you ___ Anna yesterday? (see)
 
 Oriģināla atslēga: Did / see
 

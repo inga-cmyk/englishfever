@@ -566,4 +566,46 @@ def revise(original):
     report_fix('ppf-B12-3a', q='She was upset because she ___ her phone. (lose)', answers=[['had lost', "'d lost", 'lost']],
         answer_notes=[['lost', 'Correct too in everyday speech. *Had lost* makes it clear that she lost it before she was upset.',
                        'Ikdienas runā arī pareizi. *Had lost* skaidri pasaka, ka viņa to pazaudēja, pirms bija bēdīga.']])
+    # batch 3 without grammar terms (teacher, 6 November; docs/task-drafts/term-free-batch3-review.md)
+    report_fix('rv-C12-2a', q="'I'm not going to tell you who did it,' the officer said. Which word says what he did?")
+    report_fix('ct-B12-5a', q='A colleague forgot to save a file and lost two hours of work. Choose the correct comment about what could have been different.')
+    report_fix('pac-A22-1a', q='At 8 o\'clock yesterday I was in the middle of making dinner. At 8 o\'clock I ___ dinner.')
+    report_fix('pac-B11-1a', q='Choose the option that shows the walk was already going on: I ___ along the street when I saw an old friend.')
+    report_fix('ppc-B11-1a', q="I'm tired and I'm still at my desk. I ___ all day.")
+    report_fix('ct-B22-1a', q="Imagine the past was different: 'If she ___ the warning, she ___ the accident.'")
+    report_fix('cz-A22-1a', q='This is always true: If you heat ice, it ___.', wrong=['melted', 'melting', 'is melt'], wrong_why={}, wrong_why_lv={})
+    report_fix('rs-B11-1a', q="'I am tired,' she said last night. Now she feels fine. Report it: She said she ___ tired.")
+    report_fix('rs-B12-2a', q="'I'll call you tomorrow, I'm busy now,' Ann said last week. When you report it a week later, what happens to *tomorrow* and *now*?")
+    report_fix('ppp-B11-5a', q="You want to tell a colleague the news: the email is sent, and you don't say who sent it. Which sentence?",
+        correct='The email has just been sent.', wrong=['The email was just send.', 'The email will be sent.', 'The email is sending.'], wrong_why={}, wrong_why_lv={})
+    report_fix('pc-A22-3a', q="Ask about someone's plans: What ___ this weekend? (you / do)", answers=[['are you doing', 'will you do']],   # one gap: the two words go together
+        answer_notes=[['will you do', 'Correct too. *Are you doing* asks about plans that are already made.', 'Arī pareizi. *Are you doing* jautā par plāniem, kas jau ir sarunāti.']])
+    report_fix('pc-B11-3a', q='These days more people ___ from home. (work)', answers=[['are working', 'work']],
+        answer_notes=[['work', 'Correct too. *Are working* stresses that this is a change happening these days.', 'Arī pareizi. *Are working* uzsver, ka tās ir pārmaiņas, kas notiek tagad.']])
+    report_fix('ppc-B11-3a', q='She started six months ago and she still goes to class. She ___ Spanish for six months. (learn)', answers=[['has been learning', 'has learned', 'has learnt']],
+        answer_notes=[['has learned', 'Correct too. *Has been learning* stresses that it is still going on.', 'Arī pareizi. *Has been learning* uzsver, ka tas joprojām turpinās.'],
+                      ['has learnt', 'Correct too. *Has been learning* stresses that it is still going on.', 'Arī pareizi. *Has been learning* uzsver, ka tas joprojām turpinās.']])
+    report_fix('ppp-B11-3a', q="Sorry, you can't buy one now. All the tickets ___. (sell)", answers=[['have been sold', 'are sold']],
+        answer_notes=[['are sold', 'Correct too: *are sold* describes the situation now; *have been sold* says that it has happened.', 'Arī pareizi: *are sold* apraksta situāciju tagad; *have been sold* pasaka, ka tas ir noticis.']])
+    report_fix('pp-B12-3b', q='I ___ in three countries in my life, so I speak a little of each language. (live)', answers=[['have lived', 'lived']],
+        answer_notes=[['lived', 'Correct too. *Have lived* links that experience with now: you speak the languages now.', 'Arī pareizi. *Have lived* saista šo pieredzi ar tagadni: valodas tu runā tagad.']])
+    report_fix('ps-B11-3a', q='Look at the ticket: our flight ___ at 6.40 tomorrow morning. (leave)', answers=[['leaves', 'is leaving', 'will leave']],
+        answer_notes=[['is leaving', 'Correct too. For a timetable we usually say *leaves*.', 'Arī pareizi. Par sarakstu parasti saka *leaves*.'],
+                      ['will leave', 'Correct too. For a timetable we usually say *leaves*.', 'Arī pareizi. Par sarakstu parasti saka *leaves*.']])
+    report_fix('fup-B12-3a', q="Don't worry. Everything ___ before the guests arrive. (prepare)")
+    report_fix('fup-B11-3a', q='Next Friday the results ___. (announce)', answers=[['will be announced', 'are going to be announced']])
+    report_fix('ppf-B12-3c', q='Join with *After*, and show which came first: I finished work. Then I went home.',
+        answers=[['After I had finished work, I went home.', 'I went home after I had finished work.', 'After I finished work, I went home.']],
+        answer_notes=[['After I finished work, I went home.', 'Correct too: *after* already shows the order; *had finished* makes it even clearer.', 'Arī pareizi: *after* jau parāda secību; *had finished* to pasaka vēl skaidrāk.']])
+    report_fix('rv-B22-3a', q="Report it with *deny*. Max said: 'I didn't take your phone.'")
+    report_fix('rv-C12-3a', q="Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'")
+    report_fix('ip-B11-6a', q='Ask a colleague politely where the meeting room is. Start with *Could you tell me* or *Do you know*.')
+    report_fix('ip-B12-6a', q='Ask a stranger politely if the café takes cards. Start with *Do you know* or *Could you tell me*.')
+    report_fix('ip-B21-6a', q='Ask very politely, in one sentence, when the report will be ready.')
+    report_fix('rv-C12-6a', q="Say what Mia did, in one sentence, without her words in quotes. Mia said to the team: 'Thank you for everything you've done.'")
+    report_fix('rv-C11-6a', q="Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!'")
+    report_fix('cm-C11-6a', q='Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*.')
+    report_fix('ia-C11-6a', q='Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.')
+    report_fix('pp-B12-6a', q='Write two sentences: say that you have been to a place (no time), then say when you went there.')
+    report_fix('ppc-B12-6a', q='Write two sentences about this week: something you have been doing (it is still going on), and something you have finished.')
     return items

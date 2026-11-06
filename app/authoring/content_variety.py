@@ -16,11 +16,11 @@ def add(id, skill, level, bloom, kind, q, why, lv=None, **fields):
 def order(id, skill, level, q, sentence, why, lv=None, alternatives=()):
     punctuated = {
         'var-cz-a22-order-01': 'If you heat butter, it melts.',
-        'var-cf-a22-order-01': 'If it rains, we will stay indoors.',
+        'var-cf-a22-order-01-r2': 'If it rains, we will stay indoors.',
         'var-cs-b11-order-01': 'If I had a car, I would drive.',
         'var-ct-b12-order-01': 'If I had left earlier, I would have caught the bus.',
         'var-cm-b21-order-01': 'If I had studied medicine, I would be a doctor now.',
-        'var-ca-c11-order-01-r2': 'Had I known about the delay, I would have called you.',
+        'var-ca-c11-order-01-r3': 'Had I known about the delay, I would have called you.',
     }
     question = sentence.split()[0] in {'did', 'have', 'has', 'how', 'could'}
     display = punctuated.get(id, sentence[0].upper() + sentence[1:] + ('?' if question else '.'))
@@ -71,12 +71,12 @@ order('var-fu-a21-order-01', 'future', 'A2.1',
       'Describe a plan. Start with I am going to and put tonight at the end.', 'I am going to cook dinner tonight',
       'Use *am going to + base verb* for a plan: *I am going to cook*.',
       'Plānu izsaka ar *am going to* un darbības vārda pamatformu: *I am going to cook*.')
-order('var-psp-a22-order-01-r2', 'present_simple_passive', 'A2.2',
-      'Make a passive sentence. Start with These bicycles.', 'these bicycles are made in Italy',
+order('var-psp-a22-order-01-r3', 'present_simple_passive', 'A2.2',
+      'Put the words in order. Start with *These bicycles*.', 'these bicycles are made in Italy',
       'The bicycles receive the action. A plural subject needs *are + past participle*: *are made*.',
       'Velosipēdi ir tas, ar ko kaut kas tiek darīts. Daudzskaitlī lieto *are* un 3. formu: *are made*.')
-order('var-pasp-a22-order-01', 'past_simple_passive', 'A2.2',
-      'Make a passive sentence. Start with The window.', 'the window was broken during the storm',
+order('var-pasp-a22-order-01-r2', 'past_simple_passive', 'A2.2',
+      'Put the words in order. Start with *The window*.', 'the window was broken during the storm',
       'The past passive uses *was/were + past participle*. With *the window*, use *was broken*.',
       'Pagātnes ciešamo kārtu veido ar *was/were* un 3. formu. Ar *the window* lieto *was broken*.')
 order('var-pcp-b12-order-01-r2', 'present_continuous_passive', 'B1.2',
@@ -87,16 +87,16 @@ order('var-ppp-b11-order-01', 'present_perfect_passive', 'B1.1',
       'Ask whether an action is complete. Start with Has and put yet at the end.', 'has the parcel been delivered yet',
       'A present-perfect passive question uses *has/have + subject + been + past participle*.',
       'Present Perfect ciešamās kārtas jautājumā lieto *has/have*, teikuma priekšmetu, *been* un 3. formu.')
-order('var-fup-b11-order-01', 'future_passive', 'B1.1',
-      'Make a future passive sentence. Start with The results.', 'the results will be announced on Friday',
+order('var-fup-b11-order-01-r2', 'future_passive', 'B1.1',
+      'Put the words in order. Start with *The results*.', 'the results will be announced on Friday',
       'Use *will be + past participle* for a future passive: *will be announced*. The results are the focus.',
       'Nākotnes ciešamo kārtu veido ar *will be* un 3. formu: *will be announced*. Uzmanība ir pievērsta rezultātiem.')
 order('var-cz-a22-order-01', 'cond_zero', 'A2.2',
       'Make a general rule. Start with If.', 'if you heat butter it melts',
       'For this general cause-and-effect rule, both clauses use the present simple. In writing: *If you heat butter, it melts.*',
       'Šajā vispārīgajā cēloņa un seku sakarībā abās daļās lieto Present Simple. Rakstot: *If you heat butter, it melts.*')
-order('var-cf-a22-order-01', 'cond_first', 'A2.2',
-      'Make a first conditional. Start with If.', 'if it rains we will stay indoors',
+order('var-cf-a22-order-01-r2', 'cond_first', 'A2.2',
+      'Put the words in order. Start with *If*.', 'if it rains we will stay indoors',
       'Use *if + present simple* and *will + base verb* for a possible future: *If it rains, we will stay indoors.*',
       'Iespējamu nākotnes situāciju izsaka ar *if +* Present Simple un *will* ar pamatformu: *If it rains, we will stay indoors.*')
 order('var-cs-b11-order-01', 'cond_second', 'B1.1',
@@ -111,8 +111,8 @@ order('var-cm-b21-order-01', 'cond_mixed', 'B2.1',
       'Link a different past decision to a present result. Start with If I had and put now at the end.',
       'if I had studied medicine I would be a doctor now',
       '*Had studied* imagines a different past decision. *Would be ... now* describes the present consequence.')
-order('var-ca-c11-order-01-r2', 'cond_advanced', 'C1.1',
-      'Make an inverted third conditional. Start with Had I.', 'had I known about the delay I would have called you',
+order('var-ca-c11-order-01-r3', 'cond_advanced', 'C1.1',
+      'Put the words in order. Start with *Had I*.', 'had I known about the delay I would have called you',
       '*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.')
 order('var-rs-b11-order-01-r2', 'rep_statements', 'B1.1',   # no grammar terms in the task (teacher, 6 November)
       'Put the words in order to report what she said.', 'she said that she was tired',
@@ -125,18 +125,18 @@ order('var-rq-b12-order-01', 'rep_questions', 'B1.2',
 order('var-rv-b22-order-01', 'rep_verbs', 'B2.2',
       'Report an apology. Start with She.', 'she apologised for missing the meeting',
       'The pattern is *apologise for + noun or -ing form*: *apologised for missing the meeting*.')
-order('var-ip-b11-order-01', 'ind_polite', 'B1.1',
-      'Make a polite indirect question. Start with Could you tell me.', 'could you tell me where the bank is',
+order('var-ip-b11-order-01-r2', 'ind_polite', 'B1.1',
+      'Put the words in order to ask politely. Start with *Could you tell me*.', 'could you tell me where the bank is',
       'Inside the indirect question, put the subject before the verb: *where the bank is*.',
       'Netiešā jautājuma daļā teikuma priekšmets ir pirms darbības vārda: *where the bank is*.')
-order('var-ia-c11-order-01', 'ind_advanced', 'C1.1',
-      'Use an embedded yes/no question as the subject. Start with Whether.', 'whether the plan will work remains uncertain',
+order('var-ia-c11-order-01-r2', 'ind_advanced', 'C1.1',
+      'Put the words in order. Start with *Whether*.', 'whether the plan will work remains uncertain',
       '*Whether the plan will work* is the subject of *remains uncertain*. The embedded question uses statement word order.')
 
 # Word-bank gaps: every card is a whole answer for one slot; decoys do not
 # introduce a second correct answer under the stated tense requirement.
-gap('var-ps-a21-bank-01', 'present_simple', 'A2.1',
-    'Use the present simple. My sister ___ here, but her friends ___ in another office.',
+gap('var-ps-a21-bank-01-r2', 'present_simple', 'A2.1',
+    'Complete: My sister ___ here, but her friends ___ in another office.',
     ['works', 'work'], ['working', 'does'],
     '*My sister* (= *she*) needs *works*. *Her friends* (= *they*) needs the base form *work*.',
     'Ar *my sister* (= *she*) lieto *works*. Ar *her friends* (= *they*) lieto pamatformu *work*.')
@@ -173,23 +173,23 @@ gap('var-pasp-a22-bank-01-r2', 'past_simple_passive', 'A2.2',   # no grammar ter
     ['was delivered', 'were signed'], ['was deliver', 'were sign'],
     '*The parcel* is singular, so use *was delivered*. *The documents* is plural, so use *were signed*.',
     '*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*.')
-gap('var-pcp-b12-bank-01-r2', 'present_continuous_passive', 'B1.2',
-    'Use the present continuous passive. Your order ___ now, and the tables ___.',
+gap('var-pcp-b12-bank-01-r3', 'present_continuous_passive', 'B1.2',
+    'Complete: Your order ___ now, and the tables ___.',
     ['is being prepared', 'are being cleaned'], ['is preparing', 'are cleaning'],
     'The order and tables receive the actions. Use *is/are being + past participle* for passive actions in progress.',
     'Pasūtījums un galdi ir tas, ar ko kaut kas tiek darīts. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu.')
-gap('var-cf-a22-bank-01', 'cond_first', 'A2.2',
-    'Make a first conditional: If she ___ early, we ___ the bus.',
+gap('var-cf-a22-bank-01-r2', 'cond_first', 'A2.2',
+    'Complete: If she ___ early, we ___ the bus.',
     ['arrives', 'will catch'], ['will arrives', 'caught'],
     'After *if*, use the present simple *arrives*. The possible future result is *will catch*.',
     'Pēc *if* lieto Present Simple formu *arrives*. Iespējamo nākotnes rezultātu izsaka *will catch*.')
-gap('var-cs-b11-bank-01', 'cond_second', 'B1.1',
-    'Make a second conditional about an imagined present: If I ___ more free time, I ___ a new language.',
+gap('var-cs-b11-bank-01-r2', 'cond_second', 'B1.1',
+    'Imagine it is different. Complete: If I ___ more free time, I ___ a new language.',
     ['had', 'would learn'], ['have', 'will learn'],
     'For this imagined present, use *had* in the condition and *would learn* in the result. *Have/will learn* would express a different, first-conditional meaning.',
     'Iedomātam tagadnes nosacījumam lieto *had*, bet rezultātam — *would learn*. *Have/will learn* izteiktu citu nozīmi — First conditional.')
-gap('var-ct-b12-bank-01', 'cond_third', 'B1.2',
-    'Make a third conditional about a different past: If we ___ earlier, we ___ the train.',
+gap('var-ct-b12-bank-01-r2', 'cond_third', 'B1.2',
+    'Imagine it happened differently. Complete: If we ___ earlier, we ___ the train.',
     ['had left', 'would have caught'], ['left', 'would catch'],
     'The unreal past condition needs *had left*. Its imagined past result needs *would have caught*.',
     'Nereālam pagātnes nosacījumam vajag *had left*. Iedomātajam pagātnes rezultātam vajag *would have caught*.')
@@ -210,8 +210,8 @@ match('var-pa-a22-match-01-r2', 'past_simple', 'A2.2', 1,
       [('bring', 'brought'), ('choose', 'chose'), ('leave', 'left'), ('meet', 'met')],
       'These verbs are irregular: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Do not add *-ed*.',
       'Šie darbības vārdi ir neregulāri: *bring → brought*, *choose → chose*, *leave → left*, *meet → met*. Nepievieno *-ed*.')
-match('var-pac-b12-match-01', 'past_continuous', 'B1.2', 4,
-      'Compare the verb forms and match each sentence to the timing of the cooking.',
+match('var-pac-b12-match-01-r2', 'past_continuous', 'B1.2', 4,
+      'Match each sentence with when the cooking happened.',
       [('When Eva arrived, I was cooking.', 'Cooking was still in progress at her arrival.'), ('When Eva arrived, I started cooking.', 'Cooking began at her arrival.'), ('When Eva arrived, I had finished cooking.', 'Cooking was already complete at her arrival.')],
       '*Was cooking* gives background in progress; *started* marks the beginning; *had finished* places completion before the arrival.',
       '*Was cooking* apraksta notiekošu fona darbību, *started* — tās sākumu, bet *had finished* — pabeigšanu pirms ierašanās.')

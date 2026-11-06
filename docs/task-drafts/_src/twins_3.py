@@ -17,6 +17,9 @@ for s in SKILLS.values():
     for name in (s["id"], s["label"], re.split(r"\s*[(:]", s["label"])[0].strip()):
         ALIASES[name.lower()] = s["id"]
 BUILT = {it["id"]: it for it in json.loads((ROOT / "app/content/items.json").read_text())}
+for _it in list(BUILT.values()):   # a source revised later (no grammar terms, 6 November) is still found by its older id
+    _base = re.sub(r"-r\d+$", "", _it["id"])
+    for _k in [_base] + [f"{_base}-r{n}" for n in range(2, 10)]: BUILT.setdefault(_k, _it)
 SOURCES = []
 
 

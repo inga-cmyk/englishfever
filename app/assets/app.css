@@ -967,3 +967,16 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .modal-x:hover, .modal-x:focus-visible { background: var(--line); color: var(--text); }
 .modal.has-x h2 { padding-right: 36px; }
 .fun-line { margin: 10px 0 2px; font-weight: 650; color: var(--text); }
+/* the first visit: the learner's own level, then the level test (teacher, 6 November) */
+.self-levels { display: grid; gap: 10px; margin-top: 12px; }
+.self-lv { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; font: inherit; color: var(--text); background: var(--surface); border: 1.5px solid var(--line); border-radius: 14px; padding: 12px 16px; cursor: pointer; }
+.self-lv b { min-width: 2.2em; font-size: 1.05rem; }
+.self-lv span { color: var(--text-soft); }
+.self-lv:hover, .self-lv:focus-visible { border-color: var(--btn); }
+.self-lv.unknown { justify-content: center; }
+.hero-card .self-lv { background: rgba(255,255,255,.06); color: #F3EFE6; border-color: rgba(255,255,255,.18); }
+.hero-card .self-lv span { color: #BDB8AD; }
+.test-sizes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+.test-sizes .btn { flex-direction: column; gap: 2px; padding: 12px 8px; }
+.test-sizes .btn small { font-weight: 500; opacity: .85; }
+.card.focus .test-sizes .btn { min-width: 0; width: 100%; padding: 12px 6px; }

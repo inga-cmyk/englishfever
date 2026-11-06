@@ -24,6 +24,7 @@ final class Usage
         'bonus' => 'Took the Second Chance bonus',
         'reminder' => 'Added a daily reminder to the calendar',
         'next' => 'Chose what next after a practice (again, harder, topic)',
+        'self_level' => 'Said their own level on the first visit',
     ];
     private const DAY_CAP = 2000;   // per learner per day: a page that loops cannot fill the table
 

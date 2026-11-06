@@ -553,9 +553,7 @@
         main = [h('h2', null, 'Continue where you stopped'),
           h('p', { class: 'muted' }, (resume.session.mode === 'placement' ? 'Placement test: ' : 'Practice session: ') + resume.session.n + ' of ' + resume.session.length + ' done.'), mainBtn];
       } else if (!started) {
-        mainBtn = h('a', { class: 'btn pulse', href: '#/placement' }, 'Find my level', icon('arrow'));
-        main = [h('h2', null, 'Start here'), h('p', { class: 'muted' }, 'A short test without rules or hints shows where to begin.'), mainBtn,
-          h('a', { class: 'linkbtn', href: '#/practice', style: 'margin-left:14px' }, 'or choose a topic')];   // two clear ways in (teacher, 3 November)
+        main = firstSteps(viewHome);   // the first visit: the learner's own level, then the level test or a start (teacher, 6 November)
       } else {
         // Practise now = the recommended step of My learning path (teacher, 3 November); without a path: Surprise me
         var fallback = surpriseButton('btn pulse', 'Practise now');
@@ -641,6 +639,51 @@
   }
 
   /** "Surprise me": the server picks topics from the learner's own mistakes and gaps. */
+  // ───────── the first visit (teacher, 6 November) ─────────
+  // 1. "What's your English level?" (stored for the research as self_level), 2. the level test from that level, or 3. "Not now":
+  // the learning path from that level, or for "I don't know" the Tricky ones (the mistakes Latvian adults make most).
+  var SELF_LEVELS = [['A2', 'I can talk about everyday things.'], ['B1', 'I can manage most situations.'], ['B2', 'I can discuss most topics with ease.'],
+    ['C1', 'I can speak fluently about almost anything.'], ['unknown', "I don't know"]];
+  var askLevelAgain = false;
+  function firstSteps(redraw) {
+    var sl = state.user.self_level;
+    if (!sl || askLevelAgain) {
+      return [h('h2', null, "What's your English level?"),
+        h('div', { class: 'self-levels' }, SELF_LEVELS.map(function (x) {
+          return h('button', { type: 'button', class: 'self-lv' + (x[0] === 'unknown' ? ' unknown' : ''), onclick: function (e) {
+            e.currentTarget.disabled = true;
+            api('account/profile', { self_level: x[0] }).then(function (r) { state.user = r.user; askLevelAgain = false; track('self_level', x[0]); redraw(); }).catch(fail);
+          } }, x[0] === 'unknown' ? h('b', null, x[1]) : [h('b', null, x[0]), h('span', null, x[1])]);
+        }))];
+    }
+    var known = sl !== 'unknown';
+    function test(len) {
+      return function (e) {
+        e.currentTarget.disabled = true;
+        api('session/start', { mode: 'placement', length: len, source: 'placement' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
+      };
+    }
+    var later = known ? h('button', { type: 'button', class: 'linkbtn' }, 'Not now: start at ' + sl)
+      : h('button', { type: 'button', class: 'linkbtn' }, 'Not now: try the Tricky ones');
+    later.addEventListener('click', function () {
+      later.disabled = true;
+      if (!known) { api('session/start', { mode: 'smart', length: 8, source: 'surprise' }).then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(function (e) { later.disabled = false; UI.toast(e.message); }); return; }
+      api('path').then(function (p) {
+        var st = p.steps.find(function (x) { return x.id === p.current; });
+        if (st) startPathStep(later, st); else location.hash = '#/practice';
+      }).catch(fail);
+    });
+    return [h('h2', null, 'Take the level test?'),
+      h('p', { class: 'muted' }, (known ? 'It starts at ' + sl + '. ' : '') + 'You type the missing words. A longer test gives a more exact result.'),
+      h('div', { class: 'test-sizes' },
+        h('button', { type: 'button', class: 'btn', onclick: test(12) }, 'Quick', h('small', null, '5 min')),
+        h('button', { type: 'button', class: 'btn pulse', onclick: test(24) }, 'Medium', h('small', null, '10 min')),
+        h('button', { type: 'button', class: 'btn', onclick: test(40) }, 'Full', h('small', null, '18 min'))),
+      known ? null : h('p', { class: 'small muted', style: 'margin-top:12px' }, 'Tricky ones: 8 questions with the mistakes most people make.'),
+      h('div', { class: 'row', style: 'margin-top:10px;gap:18px' }, later,
+        h('button', { type: 'button', class: 'linkbtn small', onclick: function () { askLevelAgain = true; redraw(); } }, 'Change my level'))];
+  }
+
   function surpriseButton(cls, label) {
     var b = h('button', { class: cls, type: 'button', onclick: function () {
       b.disabled = true;

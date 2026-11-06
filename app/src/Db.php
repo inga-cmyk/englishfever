@@ -265,7 +265,9 @@ final class Db
         self::ensureColumn('users', 'is_test', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('attempts', 'card', "$int NULL");
         self::ensureColumn('attempts', 'ai', "$txt NULL");   // the AI check of an open writing answer: its verdict and the changed words (research: compare with the pattern check)   // 1 = the rule card was opened during this task, before the answer (teacher, 2 November)   // the teacher's own and test accounts: left out of evidence, research and exports
-        self::ensureColumn('users', 'mood', "$str NULL");   // a saying under the avatar, chosen from a fixed list (Auth::MOODS)
+        self::ensureColumn('users', 'mood', "$str NULL");
+        self::ensureColumn('users', 'self_level', "$str NULL");   // the level the learner says they have, asked on the first visit (teacher, 6 November): A2 B1 B2 C1 or unknown
+        self::ensureColumn('users', 'self_level_at', "$int NULL");   // a saying under the avatar, chosen from a fixed list (Auth::MOODS)
         self::ensureColumn('users', 'research', "$int NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'research_at', "$big NOT NULL DEFAULT 0");
         self::ensureColumn('users', 'research_base', "$int NOT NULL DEFAULT 0");

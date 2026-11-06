@@ -7,6 +7,17 @@ final class Engine
     private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
     public const PLACEMENT_SIZES = [12, 24, 40];
     /** Share of each question type in a practice session, per 10: 3 choose, 4 drag (order, word bank, matching), 2 type a word or words, 1 type the whole sentence. Open writing is rare on purpose. */
+    /** Topics with the mistakes Latvian adults make most (he work, no article, I have seen yesterday, What you want?, in Monday, listen music, will after when, if I would, must to ...). */
+    public const TYPICAL = ['present_simple' => 1, 'agreement' => 1, 'articles' => 1, 'articles_b1' => 1, 'present_perfect' => 1, 'past_simple' => 1, 'prep_time_place' => 1,
+        'dep_prepositions' => 1, 'subject_object_q' => 1, 'time_clauses' => 1, 'cond_first' => 1, 'cond_second' => 1, 'cond_third' => 1, 'modal_verbs' => 1, 'verb_patterns' => 1,
+        'quantity' => 1, 'rep_statements' => 1, 'ind_polite' => 1, 'comparison' => 1, 'future' => 1, 'used_to' => 1, 'compare_past' => 1, 'unreal_time' => 1];
+
+    /** A task where the learner types the form into a gap (no word bank): it cannot be guessed. */
+    public static function typedForm(array $it): bool
+    {
+        return $it['kind'] === 'gap' && empty($it['bank']);
+    }
+
     public const MIX = ['choose' => 0.3, 'drag' => 0.4, 'word' => 0.2, 'sentence' => 0.1, 'write' => 0.0];
 
     /** @return string choose | drag | word | sentence | write */
@@ -102,7 +113,10 @@ final class Engine
         if ($mode === 'placement') {
             // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
             $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
-            $state['pl'] = ['ladder' => $ladder, 'lv' => $ladder[0], 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => [], 'long' => $len >= 40, 'strict' => $len <= 12];   // the full test asks two blocks at the first level, so A2 and B1 can be told apart
+            // start at the level the learner gave (teacher, 6 November: tasks far too easy or too hard lower engagement); "I don't know": the first level
+            $sl = (string) Db::val('SELECT self_level FROM users WHERE id = ?', [$uid]);
+            $startLv = in_array($sl, $ladder, true) ? $sl : $ladder[0];
+            $state['pl'] = ['ladder' => $ladder, 'start' => $startLv, 'down' => false, 'lv' => $startLv, 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => [], 'long' => $len >= 40, 'strict' => $len <= 12];   // the full test asks two blocks at the first level, so A2 and B1 can be told apart
         }
         $state['fixed'] = 0;
         if ($mode === 'practice') {
@@ -515,10 +529,14 @@ final class Engine
                 $ses['state']['pl']['done'] = true;
                 return self::pickNext($ses);
             }
+            // the level test asks the learner to type the form (teacher, 6 November): a topic with typed tasks offers only those;
+            // a topic without any keeps its other tasks, so a block still has three different topics
+            foreach ($bySkill as $s => $list) { $t = array_values(array_filter($list, fn($it) => self::typedForm($it))); if ($t) $bySkill[$s] = $t; }
         } elseif ($placement) {
             // leave out topics whose easiest task is far too hard for the ability found (unless that would leave nothing)
             $near = array_filter($bySkill, fn($list) => min(array_column($list, 'd')) <= $theta + 1.0);
             if ($near) $bySkill = $near;
+            foreach ($bySkill as $s => $list) { $t = array_values(array_filter($list, fn($it) => self::typedForm($it))); if ($t) $bySkill[$s] = $t; }
         }
 
         // choose the skill: least used so far; in placement, skills just answered wrongly are re-checked first
@@ -571,7 +589,7 @@ final class Engine
         if (!$placement && !$smart && $count < 3) {
             $target = Content::BASE[$ses['level']] + 0.2 * $count; // diagnostic: Bloom 1, 2, 3 at the chosen level
         } else {
-            if ($stairs) $target = Content::BASE[$pl['lv'] . ($pl['lv'] === $pl['ladder'][0] ? '.2' : '.1')] ?? $theta;
+            if ($stairs) $target = Content::BASE[$pl['lv'] . ($pl['lv'] === $pl['ladder'][0] ? '.2' : '.1')] ?? $theta;   // the first level: its harder half
             elseif ($placement) $target = $theta + 0.05;   // the most informative task is one the learner has a 50-50 chance on
             else {
                 $theta = $st['theta'][$bestSkill] ?? Content::BASE[$ses['level']] + 0.3;
@@ -601,6 +619,11 @@ final class Engine
                 }
                 elseif ($skillCount[$it['skill']] > 0 && !empty($lastWrong[$it['skill']])) $cost -= 0.5;
                 $cost -= 0.1 * $bloomCount[$it['bloom']] + random_int(0, 15) / 100;   // keep it close to the target: fewer random jumps
+            }
+            if ($placement) {   // the mistakes Latvian adults make most come first, so they are found at once (teacher, 6 November)
+                if (isset(self::TYPICAL[$it['skill']])) $cost -= 0.5;
+                if (self::typedForm($it)) $cost -= 0.8;   // typed first: a choice only when no topic in reach has a typed task
+                if (!empty($it['hints'])) $cost -= 0.4;   // a task with notes on a typical wrong answer
             }
             if (isset($missed[$it['id']])) $cost -= 0.8; // the task itself, a while later
             else if (isset($times[$it['id']])) $cost += 2.0 + 0.35 * min(3, $times[$it['id']]) + ((time() - $lastSeen[$it['id']]) < 7 * 86400 ? 0.4 : 0); // met before: only when nothing new is in reach
@@ -746,16 +769,24 @@ final class Engine
         if ($p['n'] < 3) return;
         $p['bn']++;
         $pass = $p['bn'] === 1 ? $p['c'] >= (!empty($p['strict']) ? 3 : 2) : $p['cc'] >= 4;   // the quick test climbs only on 3 of 3 (Cowork test, 26 October)
-        if ($pass && $p['bn'] === 1 && !empty($p['long']) && $p['lv'] === $p['ladder'][0]) { $p['n'] = 0; $p['c'] = 0; return; }   // full test: a second block at the first level
+        if ($pass && $p['bn'] === 1 && !empty($p['long']) && empty($p['down']) && $p['lv'] === ($p['start'] ?? $p['ladder'][0])) { $p['n'] = 0; $p['c'] = 0; return; }   // full test: a second block at the first level
         if ($pass) {
             $p['passed'][] = $p['lv'];
             $i = array_search($p['lv'], $p['ladder'], true);
+            if (!empty($p['down'])) { $p['done'] = true; $p['ceiling'] = $p['ladder'][$i + 1] ?? null; return; }   // came down and passed: the level above is the ceiling
             if (!isset($p['ladder'][$i + 1])) { $p['done'] = true; return; }
             $p['lv'] = $p['ladder'][$i + 1];
             $p['n'] = $p['c'] = $p['nn'] = $p['cc'] = $p['bn'] = 0;
         } elseif ($p['bn'] === 1) {
             $p['n'] = 0; $p['c'] = 0;
         } else {
+            $i = array_search($p['lv'], $p['ladder'], true);
+            if ($i > 0 && ($p['lv'] === ($p['start'] ?? $p['ladder'][0]) || !empty($p['down']))) {   // started above the first level and missed it: one level down
+                $p['down'] = true;
+                $p['lv'] = $p['ladder'][$i - 1];
+                $p['n'] = $p['c'] = $p['nn'] = $p['cc'] = $p['bn'] = 0;
+                return;
+            }
             $p['done'] = true;
             $p['ceiling'] = $p['lv'];
         }

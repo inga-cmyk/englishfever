@@ -221,6 +221,7 @@ final class Research
             $row = [
                 self::pid($id), self::weekOf((int) $u['created_at']), self::weekOf((int) $u['research_at']),
                 ($u['lang'] ?? '') === 'lv' ? 1 : 0, !empty($u['avatar']) ? 1 : 0, (int) $u['show_on_board'] === 1 ? 1 : 0,
+                (string) ($u['self_level'] ?? ''),
             ];
             foreach ($factors as $f) $row[] = $cond[$f] ?? '';
             array_push(
@@ -234,7 +235,7 @@ final class Research
             $rows[] = $row;
         }
         return self::csv(array_merge(
-            ['pid', 'join_week', 'consent_week', 'explanations_lv', 'avatar_chosen', 'board_opt_in'],
+            ['pid', 'join_week', 'consent_week', 'explanations_lv', 'avatar_chosen', 'board_opt_in', 'self_level'],
             array_map(fn($f) => 'cond_' . $f, $factors),
             ['observed_days', 'active_days', 'answers', 'seconds', 'xp', 'correct_pct', 'sessions', 'sessions_smart', 'placement_level',
                 'first_active_day', 'last_active_day', 'longest_streak', 'weeks_active', 'active_day1', 'active_day7', 'active_day30']
@@ -324,6 +325,8 @@ active_days           Number of days with at least one answered task.
 answers, seconds, xp  Totals since registration. seconds = active time recorded by the app (0 if the learner turned time tracking off on the website);
 correct_pct           Share of correct answers since registration.
 sessions, sessions_smart   Practice sessions with at least one answer; how many of them were "Surprise me".
+self_level            The level the learner said they have on the first visit: A2, B1, B2, C1 or unknown (empty = not asked; asked from 6 November 2026).
+                      Compare it with placement_level to see who over- or underestimates themselves.
 placement_level       Overall level from the latest placement test (any time since registration).
 first_active_day, last_active_day   study_day of first and last day with an answer.
 longest_streak        Longest run of consecutive active days.

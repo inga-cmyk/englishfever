@@ -9,6 +9,7 @@ const errors = [];
     page.on('pageerror', e => errors.push(scheme + ' pageerror: ' + e.message));
     await page.goto(BASE + '/sso-demo.php?uid=' + (7000 + Math.floor(Math.random() * 9000)) + '&name=Hover%20Tester');
     await page.waitForSelector('#fn'); await page.click('button[type=submit]'); await page.waitForSelector('.hello h1');
+    await page.evaluate(() => fetch('api.php?r=account/profile', { method: 'POST', headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ self_level: 'B1' }) })); await page.reload(); await page.waitForSelector('.test-sizes');   // past the first-visit question
     // ask not about the study here
     const card = page.locator('.card.focus');
     const before = await card.evaluate(e => { const c = getComputedStyle(e); return [c.boxShadow, c.transform, c.borderColor]; });
@@ -42,12 +43,14 @@ const errors = [];
   // reduced motion: nothing animates or lifts
   const rctx = await browser.newContext({ viewport: { width: 1200, height: 900 }, reducedMotion: 'reduce' }); const rp = await rctx.newPage();
   await rp.goto(BASE + '/sso-demo.php?uid=' + (7000 + Math.floor(Math.random() * 9000)) + '&name=Calm%20Tester'); await rp.waitForSelector('#fn'); await rp.click('button[type=submit]'); await rp.waitForSelector('.hello h1');
+  await rp.evaluate(() => fetch('api.php?r=account/profile', { method: 'POST', headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ self_level: 'B1' }) })); await rp.reload(); await rp.waitForSelector('.test-sizes');
   const ra = await rp.locator('.btn.pulse').first().evaluate(e => getComputedStyle(e).animationName);
   if (ra !== 'none') errors.push('reduced motion: the pulse still runs: ' + ra);
   await rctx.close();
   // phone (no hover): the pulse still runs
   const pctx = await browser.newContext({ viewport: { width: 390, height: 800 }, hasTouch: true, isMobile: true }); const pp = await pctx.newPage();
   await pp.goto(BASE + '/sso-demo.php?uid=' + (7000 + Math.floor(Math.random() * 9000)) + '&name=Phone%20Tester'); await pp.waitForSelector('#fn'); await pp.click('button[type=submit]'); await pp.waitForSelector('.hello h1');
+  await pp.evaluate(() => fetch('api.php?r=account/profile', { method: 'POST', headers: { 'X-EF': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ self_level: 'B1' }) })); await pp.reload(); await pp.waitForSelector('.test-sizes');
   if ((await pp.locator('.btn.pulse').count()) !== 1) errors.push('phone: the pulse is missing');
   if (await pp.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)) errors.push('phone: sideways scroll');
   await pctx.close();

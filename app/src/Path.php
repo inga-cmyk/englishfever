@@ -214,6 +214,11 @@ final class Path
             if (!empty($st['report']['overall_level'])) $placed = substr($st['report']['overall_level'], 0, 2);
             foreach (Db::all('SELECT skill, correct FROM attempts WHERE psession_id = ?', [(int) $pr['id']]) as $a) { if ((int) $a['correct']) $plRight[$a['skill']] = true; else $plWrong[$a['skill']] = true; }
         }
+        $self = false;
+        if ($placed === null) {   // no level test yet: start from the level the learner gave (teacher, 6 November)
+            $sl = (string) Db::val('SELECT self_level FROM users WHERE id = ?', [$uid]);
+            if (in_array($sl, self::LEVELS, true)) { $placed = $sl; $self = true; }
+        }
         $placedIdx = $placed === null ? -1 : array_search($placed, self::LEVELS, true);
         // evidence per topic above a level: right answers at higher levels make the lower level probably known (teacher, 3 November)
         $high = [];
@@ -280,7 +285,7 @@ final class Path
         if ($current === null) foreach ($steps as $x) if (!$x['done']) { $current = $x['id']; break; }
         foreach ($steps as &$x) unset($x['band_idx']);
         unset($x);
-        return ['placed' => $placed, 'current' => $current, 'steps' => $steps,
+        return ['placed' => $placed, 'placed_by' => $placed === null ? null : ($self ? 'self' : 'test'), 'current' => $current, 'steps' => $steps,
                 'done' => count(array_filter($steps, fn($s) => $s['done'])), 'total' => count($steps)];
     }
 

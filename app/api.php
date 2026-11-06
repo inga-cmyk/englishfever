@@ -87,6 +87,7 @@ try {
             if (isset($in['show_on_board']) && $u['provider'] !== 'guest') $upd['show_on_board'] = $in['show_on_board'] ? 1 : 0;
             if (isset($in['lang'])) $upd['lang'] = $in['lang'] === 'lv' ? 'lv' : 'en';
             if (array_key_exists('mood', $in)) $upd['mood'] = Auth::validMood($in['mood'] === null ? null : (string) $in['mood']);
+            if (isset($in['self_level']) && in_array($in['self_level'], ['A2', 'B1', 'B2', 'C1', 'unknown'], true)) { $upd['self_level'] = $in['self_level']; $upd['self_level_at'] = time(); }
             if ($upd) Db::update('users', $upd, 'id = ?', [$u['id']]);
             out(['user' => Auth::publicUser(Db::one('SELECT * FROM users WHERE id = ?', [$u['id']]))]);
 

@@ -16,6 +16,7 @@ def play(c, size, decide):
         it = ITEMS[item["id"]]; seen.append(it)
         ok = decide(it, len(seen))
         a = c.api("session/answer", {"session_id": sid, "item_id": it["id"], "answer": correct(it) if ok else wrong(it), "time_ms": 3000})
+        if "done" not in a: print("ERR", a, it["id"]); raise SystemExit(1)
         if a["done"]: return seen, a["summary"]
         item = a["next"]
     return seen, None
@@ -52,6 +53,20 @@ check("2 of 3 right goes up to B1", [FULL(i) for i in seen[:3]] == ["A2"] * 3 an
 check("1 of 3 right stays at B1 for another block", [FULL(i) for i in seen[3:9]] == ["B1"] * 6, [FULL(i) for i in seen[3:9]])
 missed = {i["skill"] for i in seen[5:6] + seen[3:4] if True}
 check("the second block re-checks a topic missed in the first", len({i["skill"] for i in seen[3:6]} & {i["skill"] for i in seen[6:9]}) >= 1, [i["skill"] for i in seen[3:9]])
+
+# the learner's own level (teacher, 6 November): the test starts there and goes down when it is too hard
+c = login(7150, "Dace Says B2"); c.api("account/profile", {"self_level": "B2"})
+seen, s = play(c, 24, lambda it, n: FULL(it) == "A2")
+check("says B2: the test starts at B2", FULL(seen[0]) == "B2", [FULL(i) for i in seen])
+check("misses B2 and B1: it comes down to A2", [FULL(i) for i in seen].index("A2") > [FULL(i) for i in seen].index("B1") > 0, [FULL(i) for i in seen])
+check("placed at A2, not above", s["overall_level"][:2] == "A2", s["overall_level"])
+c = login(7151, "Edgars Says B1"); c.api("account/profile", {"self_level": "B1"})
+seen, s = play(c, 12, lambda it, n: True)
+check("says B1 and knows everything: starts at B1 and climbs", FULL(seen[0]) == "B1" and "A2" not in [FULL(i) for i in seen] and s["overall_level"][:2] in ("B2", "C1"), ([FULL(i) for i in seen], s["overall_level"]))
+c = login(7152, "Gints Unknown"); c.api("account/profile", {"self_level": "unknown"})
+seen, s = play(c, 12, lambda it, n: True)
+check("\"I don't know\": starts at A2", FULL(seen[0]) == "A2")
+check("typed forms first where a topic has them", sum(1 for i in seen if i["kind"] == "gap" and not i.get("bank")) >= len(seen) // 3, [i["kind"] for i in seen])
 
 # no repeats inside one test, the three lengths
 for size in (12, 24, 40):

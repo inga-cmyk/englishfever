@@ -82,6 +82,7 @@ final class Auth
             'avatar' => self::effectiveAvatar($u['avatar'] ?? null, (int) $u['id']),
             'lang' => ($u['lang'] ?? '') === 'lv' ? 'lv' : 'en', // language of the grammar explanations
             'mood' => self::validMood($u['mood'] ?? null),
+            'self_level' => $u['self_level'] ?? null,
             'research' => (int) ($u['research'] ?? 0),               // 0 not asked, 1 takes part in the study, 2 said no or left
             'cond' => Research::arms($u) ?: new stdClass(),          // features hidden for this learner by the study, e.g. {"streak":"off"}
             'reports_open' => $u['role'] === 'teacher' ? Reports::openCount() : 0, // reports waiting for the teacher

@@ -32,6 +32,7 @@
   function levelIdx(l) { return state.meta.levels.indexOf(l); }
   /** The learner's level: the placement result, else the average of the topic estimates, else unknown (null). */
   function learnerLevel(d) {
+    if (d && d.level_now && d.level_now.level) return d.level_now.level;   // from the answers, the level test only as the start (teacher, 6 November)
     if (d && d.placement && d.placement.report && d.placement.report.overall_level) return d.placement.report.overall_level;
     var est = d ? d.skills.filter(function (s) { return s.level_est; }).map(function (s) { return levelIdx(s.level_est); }) : [];
     if (!est.length) return null;
@@ -605,6 +606,7 @@
       }
       if (started) nodes.push(foldCard('topics', 'Your topics', nStarted ? nStarted + ' started' : 'practise one topic at a time', function () { return topicsCard(d); }));
       show(h('div', { class: 'home' }, nodes));
+      if (!resume && !state.welcome) welcomeBack(d);   // a greeting when they come back (teacher, 6 November)
     }).catch(fail);
   }
 
@@ -617,7 +619,8 @@
     if (at < 0) return null;
     var bar = h('div', { class: 'ls-bar' }, LV.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); }));
     var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, x); }));
-    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + LV[at] + (rep ? '' : ' (from my practice)') }, h('span', { class: 'ls-title' }, 'My level'), bar, labels);
+    var from = (state.dash && state.dash.level_now && state.dash.level_now.from === 'answers') ? 'From your answers' : (rep ? 'From the level test' : 'From your answers');
+    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + LV[at] + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
     if (rep) { box.type = 'button'; box.addEventListener('click', function () { showPlacementReport(rep); }); }
     return box;
   }
@@ -678,6 +681,61 @@
     return [h('h2', null, 'Take the level test?'),
       h('div', { class: 'test-sizes' }, size('ts-quick', 'Quick', '5 min', 12), size('ts-medium pulse', 'Medium', '10 min', 24), size('ts-full', 'Full', '18 min', 40)),
       later];
+  }
+
+  // ───────── welcome back (teacher, 6 November) ─────────
+  // A short greeting when the learner comes back: friendly, a joke, sometimes a little teasing or a little sad, never a lecture.
+  // A2 learners get plain English (the tone is clear even if a word is new). The button only closes it; Home is where they choose.
+  var WELCOME = {
+    b: {
+      second: ['Back already? Your brain clearly likes it here.', "Round two. The verbs were hoping you'd come back.", 'Hello again! Twice in one day, we feel special.', "Couldn't stay away, could you?"],
+      third: ['Third time today. Are you training for the Grammar Olympics?', 'At this point the past simple should pay you rent.', "You again! We're running out of ways to say hello.", 'Another visit? The tenses are starting a fan club.'],
+      nextday: ['Two days in a row. Look at you, building a habit.', 'Same time tomorrow? Your streak says yes.', "Back for more. Yesterday's you would be proud.", "Hello again! The grammar didn't go anywhere overnight."],
+      long: ['Yesterday you did {min} minutes. Today, even 5 would make us happy.', '{min} minutes yesterday! Your brain deserves a coffee today.'],
+      short: ['Yesterday was a quick hello. Today, maybe a proper chat?', "Yesterday: a quick visit. Today: let's stay a little longer?"],
+      gap2: ['Two days off. The present perfect asked about you.', 'Nice to see you again. We kept your seat warm.', 'Hello! Two days felt like a long time here.'],
+      gap3: ['{days} days! The prepositions were starting to worry.', "You're back! The articles missed you. Well, *the* articles did.", "{days} days without you. The question tags kept asking, didn't they?"],
+      week: ['A whole week. We almost sent a search party.', "Long time no see. Let's shake off the dust with something easy.", "You're back! We left the light on for you."],
+      weeks: ["We're not crying, you're crying. Welcome back.", "It's been a while. Shall we pretend nothing happened?", "Look who's here! The grammar has been waiting patiently."],
+      month: ['A month! Your grammar has been waiting by the window.', "Welcome back! It's like you never left. Almost."],
+    },
+    a: {
+      second: ['Hello again! Nice to see you twice today.', 'You are back! Great.'],
+      third: ['Wow, three times today! Good work.', 'Hello again! You love English today.'],
+      nextday: ['Hello again! Two days in a row. Good work.', 'Welcome back! You were here yesterday too.'],
+      long: ['Yesterday you studied for {min} minutes. Great!'],
+      short: ["Welcome back! Let's do a little more today."],
+      gap2: ['Welcome back! We missed you.'],
+      gap3: ['Welcome back! {days} days is a long time. We missed you.'],
+      week: ['Welcome back! One week! We missed you.'],
+      weeks: ["Welcome back! It's been a long time. Nice to see you."],
+      month: ["Welcome back! It's been a month. We are happy to see you."],
+    },
+  };
+  var WELCOME_ICON = { second: '👋', third: '🔥', nextday: '🌱', long: '☕', short: '🙂', gap2: '🪑', gap3: '🧭', week: '🔦', weeks: '🥲', month: '🪟' };
+  var WELCOME_BTN = { b: ['Happy to be back', "I'm ready", 'Challenge me', "Let's go", 'Continue'], a: ["I'm ready", "Let's go", 'Continue'] };
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } return null; }
+  function welcomeBack(d) {
+    if (!d || !d.visit || !d.totals.answers) return;
+    var once = false; try { once = sessionStorage.getItem('ef_welcomed') === '1'; sessionStorage.setItem('ef_welcomed', '1'); } catch (e) {}
+    if (once) return;   // once each time the app is opened
+    var day = d.week[d.week.length - 1].day, key = 'ef_visits_' + day, visits = (+store(key) || 0) + 1; store(key, String(visits));
+    var v = d.visit, kase = null;
+    if (d.today.answers > 0 && visits >= 2) kase = visits === 2 ? 'second' : 'third';
+    else if (d.today.answers === 0 && v.gap) {
+      if (v.gap === 1) kase = v.yesterday.seconds >= 1200 ? 'long' : (v.yesterday.answers <= 2 ? 'short' : 'nextday');
+      else if (v.gap === 2) kase = 'gap2'; else if (v.gap <= 4) kase = 'gap3'; else if (v.gap <= 13) kase = 'week'; else if (v.gap <= 29) kase = 'weeks'; else kase = 'month';
+    }
+    if (!kase) return;
+    var lvl = learnerLevel(d), set = (!lvl || String(lvl).slice(0, 2) === 'A2') ? 'a' : 'b';
+    var list = WELCOME[set][kase], i = Math.floor(Math.random() * list.length);
+    var text = list[i].replace('{min}', String(Math.round(v.yesterday.seconds / 60))).replace('{days}', String(v.gap));
+    var btns = WELCOME_BTN[set], label = btns[Math.floor(Math.random() * btns.length)];
+    track('welcome', kase + ':' + set + i);
+    var ok = h('button', { class: 'btn block', type: 'button' }, label);
+    var m = UI.modal(h('div', { class: 'welcome-back' }, h('div', { class: 'wb-icon', 'aria-hidden': 'true' }, WELCOME_ICON[kase]), h('p', { class: 'wb-text' }, UI.rich(text)),
+      v.week_days > 0 ? h('p', { class: 'small muted wb-week' }, 'This week: ' + v.week_days + (v.week_days === 1 ? ' day' : ' days') + ' · ' + Math.max(1, Math.round(v.week_seconds / 60)) + ' min') : null, ok));
+    ok.onclick = function () { track('welcome_ok', kase); m.close(); };
   }
 
   function surpriseButton(cls, label) {

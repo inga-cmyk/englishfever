@@ -130,6 +130,39 @@ final class Stats
         return ['now' => $now, 'today' => $day];
     }
 
+    /**
+     * "My level" from the answers (teacher, 6 November): the ability that best explains the last 60 answers that count as evidence
+     * (check / use tasks, the level test included), each weighed by how hard its task is. The level test is only the start: as practice
+     * answers come in, its answers drop out of the window. With fewer than 15 practice answers the level test result is shown.
+     * @return array{level: string, from: string, n: int}|null
+     */
+    public static function levelNow(int $uid, ?array $placement = null): ?array
+    {
+        $pts = []; $practice = 0;
+        foreach (Db::all('SELECT a.item_id, a.level, a.bloom, a.correct, p.mode FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? ORDER BY a.id DESC LIMIT 200', [$uid]) as $r) {
+            $it = Content::item($r['item_id']);
+            if (!$it || Content::role($it) === 'learn') continue;
+            $pts[] = [Content::difficulty($r['level'], (int) $r['bloom']), (int) $r['correct']];
+            if (($r['mode'] ?? '') !== 'placement') $practice++;
+            if (count($pts) >= 60) break;
+        }
+        $test = $placement['report']['overall_level'] ?? null;
+        if ($practice < 15) return $test ? ['level' => $test, 'from' => 'test', 'n' => $practice] : (count($pts) >= 10 ? ['level' => Content::levelFromAbility(Engine::fitAbility($pts)), 'from' => 'answers', 'n' => count($pts)] : null);
+        return ['level' => Content::levelFromAbility(Engine::fitAbility($pts)), 'from' => 'answers', 'n' => count($pts)];
+    }
+
+    /** What the welcome-back message needs (teacher, 6 November): the last day with practice before today, yesterday, this week. */
+    public static function visit(int $uid, array $week): array
+    {
+        $today = self::today();
+        $last = Db::val('SELECT MAX(day) FROM activity WHERE user_id = ? AND day < ? AND answers > 0', [$uid, $today]);
+        $gap = $last ? (int) round((strtotime($today . ' 12:00:00 UTC') - strtotime($last . ' 12:00:00 UTC')) / 86400) : null;
+        $y = Db::one('SELECT seconds, answers FROM activity WHERE user_id = ? AND day = ?', [$uid, self::dayOffset(-1)]) ?: ['seconds' => 0, 'answers' => 0];
+        $days = 0; $secs = 0;
+        foreach ($week as $w) { if ($w['answers'] > 0) $days++; $secs += $w['seconds']; }
+        return ['gap' => $gap, 'yesterday' => ['seconds' => (int) $y['seconds'], 'answers' => (int) $y['answers']], 'week_days' => $days, 'week_seconds' => $secs];
+    }
+
     public static function dashboard(int $uid): array
     {
         $today = self::today();
@@ -159,6 +192,8 @@ final class Stats
             'bloom' => self::bloomRows($uid),
             'cats' => Content::catCounts(Db::all('SELECT item_id, correct FROM attempts WHERE user_id = ? ORDER BY id DESC LIMIT 2000', [$uid])),   // three kinds of task for the learner
             'placement' => $placement,
+            'level_now' => self::levelNow($uid, $placement),
+            'visit' => self::visit($uid, $week),
             'pulse' => self::pulse(),
             'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed'], 'review' => min(2, count(Mistakes::reviewDue($uid, $m)))]; })(),
         ];

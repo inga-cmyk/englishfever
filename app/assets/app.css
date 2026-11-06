@@ -994,3 +994,9 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 @media (prefers-reduced-motion: reduce) { .test-size.pulse { animation: none; } }
 .test-size:hover, .test-size:focus-visible { box-shadow: 0 8px 20px rgba(0,0,0,.28); }
 .prec-go { margin-left: auto; color: var(--btn); display: inline-flex; } .prec-go svg { width: 22px; height: 22px; }
+.ls-from { font-weight: 500; text-transform: none; letter-spacing: 0; opacity: .75; }
+/* welcome back (teacher, 6 November) */
+.welcome-back { text-align: center; }
+.welcome-back .wb-icon { font-size: 2.6rem; line-height: 1; margin: 4px 0 10px; }
+.welcome-back .wb-text { font-size: 1.15rem; font-weight: 650; color: var(--text); margin: 0 0 8px; }
+.welcome-back .wb-week { margin: 0 0 16px; }

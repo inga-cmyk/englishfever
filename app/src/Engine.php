@@ -799,7 +799,7 @@ final class Engine
     }
 
     /** Ability that best explains the answers (logistic model, weak prior), by Newton steps. @param array $pts list of [difficulty, 1|0] */
-    private static function fitAbility(array $pts): float
+    public static function fitAbility(array $pts): float
     {
         $th = 3.0;
         for ($i = 0; $i < 30; $i++) {

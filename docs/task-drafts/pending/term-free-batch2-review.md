@@ -100,7 +100,8 @@ Where a second form is also correct, it is accepted and gets its own note. Answe
 - b1-passives-1 101: *Start with *The windows*: Someone is cleaning the windows.* → **The windows are being cleaned. | The windows are being cleaned by someone.**
 - b1-passives-1 133: *Start with *My umbrella*: Someone has taken my umbrella.* → **My umbrella has been taken. | My umbrella has been taken by someone.**
 - b1-passives-1 134: *Start with *The match*: They have cancelled the match.* → **The match has been cancelled.**
-- b1-passives-1 166: *Start with *The new road*: They will open the new road next month.* → **The new road will be opened next month. | Next month the new road will be opened.**
+- b1-passives-1 166: *Start with *The new road*: They will open the new road next month.* → **The new road will be opened next month. | Next month the new road will be opened.**  
+  also **The new road will open next month.**: _Correct English too, but it means the road opens (the day it is ready). *Will be opened* says that someone will open it._
 - b1-passives-1 167: *Start with *The room*: Someone will clean the room.* → **The room will be cleaned. | The room will be cleaned by someone.**
 - b1-upgrades-1 38: *Start with *The road*: They are repairing the road.* → **The road is being repaired.**
 - b1-upgrades-1 42: *Start with *The winner*: They will announce the winner on Friday.* → **The winner will be announced on Friday. | On friday the winner will be announced.**

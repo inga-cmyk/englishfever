@@ -19,7 +19,7 @@ done
 cd tests/browser
 rm -f "$APP"/var/ef.sqlite*
 for t in e2e e2e_teacher; do printf "== %-16s" $t; timeout 250 node $t.js 2>&1 | tail -1; done   # one database: the teacher test looks at the guest the first one made
-for t in comeback_ui study_ui hover dnd dnd_stuck menu blank avatars pwa xss phonebar review review_dnd italics_ui topbar topics_sound evidence usage mobile_feedback; do
+for t in comeback_ui study_ui hover dnd dnd_stuck menu blank avatars pwa xss phonebar review review_dnd italics_ui topbar topics_sound evidence usage mobile_feedback welcome_back; do
   rm -f "$APP"/var/ef.sqlite*; printf "== %-16s" $t; timeout 290 node $t.js 2>&1 | tail -1
 done
 rm -f "$APP"/var/ef.sqlite*

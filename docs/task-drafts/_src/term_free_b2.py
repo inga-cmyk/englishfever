@@ -48,6 +48,7 @@ CONTEXT = {
 }
 # a second correct form, with its own note (new text -> (answer, English, Latvian))
 NOTES = {
+    "Start with *The new road*: They will open the new road next month.": ("The new road will open next month.", "Correct English too, but it means the road opens (the day it is ready). *Will be opened* says that someone will open it.", "Arī pareiza angļu valoda, bet tas nozīmē, ka ceļš atveras (diena, kad tas ir gatavs). *Will be opened* pasaka, ka kāds to atvērs."),
     "My sister ___ a red bike. (have)": ("has got", "Correct too: *has got* means the same as *has*.", "Arī pareizi: *has got* nozīmē to pašu, ko *has*."),
     "I ___ my phone. Can you help me look? (lose)": ("lost", "Correct too. *I lost my phone* only tells what happened; *have lost* also says that you still haven't got it.", "Arī pareizi. *I lost my phone* tikai pasaka, kas notika; *have lost* pasaka arī to, ka tālruņa joprojām nav."),
     "I ___ my passport, so I need a new one. (lose)": ("lost", "Correct too. *I lost my passport* only tells what happened; *have lost* also says that you still haven't got it now.", "Arī pareizi. *I lost my passport* tikai pasaka, kas notika; *have lost* pasaka arī to, ka pases joprojām nav."),

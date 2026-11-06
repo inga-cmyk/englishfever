@@ -68,8 +68,9 @@ PP.mcq("A2.2", "Which sentence does not say when?", "I've lost my keys.",
        ["I lost my keys yesterday.", "I lost my keys at the station on Monday."],
        ("Present perfect: the result now, no time. Past simple: a finished time.", "Present Perfect: rezultāts tagad, bez laika. Past Simple: pabeigts laiks."), b=2)
 also("Past simple")
-PP.bank("B1.1", "I ___ to Paris twice, and I ___ there again last May.", ["have been", "went"], ["have gone", "been"],
-        ("Experience up to now: *have been*. A finished time (*last May*): *went*.", "Pieredze līdz šim: *have been*. Pabeigts laiks (*last May*): *went*."), b=3)
+PP.bank("B1.1", "I ___ to Paris twice. The last time I ___ there was in May.", ["have been", "went"], ["have gone", "been"],   # teacher, 6 November
+        ("Experience up to now: *have been*. A finished time (*in May*): *went*.", "Pieredze līdz šim: *have been*. Pabeigts laiks (*in May*): *went*."), b=3)
+replaces("I ___ to Paris twice, and I ___ there again last May.")
 also("Past simple")
 PP.text("A2.2", "Correct the mistake: I have finished the report yesterday.", "I finished the report yesterday.",
         ("*yesterday* is a finished time: past simple.", "*yesterday* ir pabeigts laiks: Past Simple."), b=3)
@@ -77,9 +78,9 @@ also("Past simple")
 PP.match("B1.1", "Match each sentence with its meaning.",
          [("I have lived here for ten years.", "I still live here."),
           ("I lived here for ten years.", "I don't live here now."),
-          ("I have just moved here.", "The move happened a moment ago.")],
-         ("*have lived* = up to now; *lived* = finished; *have just moved* = a moment ago.",
-          "*have lived* = līdz šim; *lived* = beidzies; *have just moved* = tikko."), b=4)
+          ("I have never lived in a big city.", "Not at any time in my life.")],   # no two meanings that can be mixed up (teacher, 6 November)
+         ("*have lived* = up to now; *lived* = finished; *have never lived* = not at any time in my life.",
+          "*have lived* = līdz šim; *lived* = beidzies; *have never lived* = nekad mūžā."), b=4)
 also("Past simple")
 
 save("contrast-1.csv")

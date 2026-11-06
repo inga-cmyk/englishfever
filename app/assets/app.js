@@ -715,11 +715,32 @@
   var WELCOME_ICON = { second: '👋', third: '🔥', nextday: '🌱', long: '☕', short: '🙂', gap2: '🪑', gap3: '🧭', week: '🔦', weeks: '🥲', month: '🪟' };
   var WELCOME_BTN = { b: ['Happy to be back', "I'm ready", 'Challenge me', "Let's go", 'Continue'], a: ["I'm ready", "Let's go", 'Continue'] };
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } return null; }
+  // When: each time the app is opened, and each time it comes back from the background after 30 minutes or more (an app or a tab
+  // left open, teacher, 6 November); never more often than every 3 hours; never in the middle of a practice (it waits for Home).
+  var welcomeDue = (function () { try { return sessionStorage.getItem('ef_welcomed') !== '1'; } catch (e) { return true; } })();
+  var hiddenAt = 0;
+  function visitToday(day) {   // a visit = the app opened (not a reload of the same tab) or back after a break of 30 minutes or more
+    var key = 'ef_visits_' + day, n = +store(key) || 0;
+    var counted = false; try { counted = sessionStorage.getItem('ef_visit_counted') === day; sessionStorage.setItem('ef_visit_counted', day); } catch (e) {}
+    if (!counted || welcomeBack.returned) { n++; store(key, String(n)); welcomeBack.returned = false; }
+    return n;
+  }
+  function welcomeReturn() {   // the app or tab is back after a break
+    welcomeDue = true; welcomeBack.returned = true;
+    if ((location.hash || '#/home').indexOf('#/home') === 0 && state.user && state.user.role !== 'teacher') refreshDash().then(welcomeBack).catch(function () {});
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { hiddenAt = Date.now(); return; }
+    if (hiddenAt && Date.now() - hiddenAt >= 30 * 60000) welcomeReturn();
+    hiddenAt = 0;
+  });
+  if (navigator.webdriver) window.__efWelcomeReturn = welcomeReturn;   // for the browser tests only
   function welcomeBack(d) {
-    if (!d || !d.visit || !d.totals.answers) return;
-    var once = false; try { once = sessionStorage.getItem('ef_welcomed') === '1'; sessionStorage.setItem('ef_welcomed', '1'); } catch (e) {}
-    if (once) return;   // once each time the app is opened
-    var day = d.week[d.week.length - 1].day, key = 'ef_visits_' + day, visits = (+store(key) || 0) + 1; store(key, String(visits));
+    if (!d || !d.visit || !d.totals.answers || !welcomeDue) return;
+    if (document.querySelector('.modal-back')) return;   // another window is open: next time
+    var day = d.week[d.week.length - 1].day, visits = visitToday(day);
+    welcomeDue = false; try { sessionStorage.setItem('ef_welcomed', '1'); } catch (e) {}
+    if (Date.now() - (+store('ef_welcome_at') || 0) < 3 * 3600000) return;   // not more often than every 3 hours
     var v = d.visit, kase = null;
     if (d.today.answers > 0 && visits >= 2) kase = visits === 2 ? 'second' : 'third';
     else if (d.today.answers === 0 && v.gap) {
@@ -731,6 +752,7 @@
     var list = WELCOME[set][kase], i = Math.floor(Math.random() * list.length);
     var text = list[i].replace('{min}', String(Math.round(v.yesterday.seconds / 60))).replace('{days}', String(v.gap));
     var btns = WELCOME_BTN[set], label = btns[Math.floor(Math.random() * btns.length)];
+    store('ef_welcome_at', String(Date.now()));
     track('welcome', kase + ':' + set + i);
     var ok = h('button', { class: 'btn block', type: 'button' }, label);
     var m = UI.modal(h('div', { class: 'welcome-back' }, h('div', { class: 'wb-icon', 'aria-hidden': 'true' }, WELCOME_ICON[kase]), h('p', { class: 'wb-text' }, UI.rich(text)),

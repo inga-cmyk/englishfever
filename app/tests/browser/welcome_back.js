@@ -30,6 +30,22 @@ const BASE = 'http://127.0.0.1:8099', OUT = __dirname + '/shots/';
   check('two weeks away: no week line when there was nothing this week', r.txt && !/This week/.test(r.txt), r.txt);
   r = await open({ gap: null, yesterday: { seconds: 0, answers: 0 }, ...week }, 5, 'B1.1');
   check('first visit of the day after practising today already: no message', r.txt === null, r.txt);
+  // the app left open: back after a break of 30 minutes or more (teacher, 6 November); not again within 3 hours
+  {
+    const ctx = await b.newContext({ viewport: { width: 390, height: 844 } }); const p = await ctx.newPage(); p.on('pageerror', e => errs.push(e.message));
+    await p.goto(BASE + '/index.html'); await p.waitForSelector('#nick'); await p.fill('#nick', 'Open Tab'); await p.click('button[type=submit]'); await p.waitForSelector('.hello h1');
+    await p.route(/api\.php\?r=dash/, async r => { const res = await r.fetch(); const j = await res.json();
+      j.totals.answers = 40; j.today.answers = 6; j.visit = { gap: 1, yesterday: { seconds: 300, answers: 10 }, week_days: 2, week_seconds: 900 }; j.level_now = { level: 'B1.1', from: 'answers', n: 40 }; r.fulfill({ response: res, json: j }); });
+    await p.goto(BASE + '/index.html#/home'); await p.reload(); await p.waitForSelector('.hello h1'); await p.waitForTimeout(400);
+    check('opened once today, already practised: no message yet', (await p.locator('.welcome-back').count()) === 0);
+    await p.evaluate(() => window.__efWelcomeReturn()); await p.waitForTimeout(600);
+    const t = (await p.locator('.welcome-back').count()) ? await p.locator('.welcome-back').innerText() : null;
+    check('back to the open app after a break: the second-visit message', t && /Back already|Round two|Twice in one day|stay away/.test(t), t);
+    if (t) await p.locator('.welcome-back .btn').click();
+    await p.evaluate(() => window.__efWelcomeReturn()); await p.waitForTimeout(600);
+    check('another break soon after: nothing (not more often than every 3 hours)', (await p.locator('.welcome-back').count()) === 0);
+    await ctx.close();
+  }
   console.log(errs.length ? 'ERR ' + errs.join(' | ') : (ok ? 'ALL PASS: ' + n + ' welcome-back checks' : 'SOME FAILED'));
   await b.close(); process.exit(ok && !errs.length ? 0 : 1);
 })();

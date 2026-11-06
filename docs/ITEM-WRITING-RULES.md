@@ -116,3 +116,4 @@
 - When the context allows a second correct form, accept it, and the feedback for that answer explains what it means and how it differs (*answer notes* column): never show "Correct" with an explanation of a different form as if the learner had written that one.
 - In Latvian texts the people who use the app are *izglītojamie*, not *skolēni*.
 - Scope (teacher, 6 November): only the **task instructions** lose the grammar terms. Explanations (*Why*), answer notes and rule cards keep the grammar words (*present perfect, passive, 3rd form, verb, subject* …): there the learner may meet and learn the names.
+- Matching (teacher, 6 November): no two pairs whose meanings could be swapped. *I have just moved here* also means "I didn't live here before", so it cannot stand next to *I lived here … = I don't live here now*. Each right-hand side must fit only its own sentence.

@@ -608,4 +608,16 @@ def revise(original):
     report_fix('ia-C11-6a', q='Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.')
     report_fix('pp-B12-6a', q='Write two sentences: say that you have been to a place (no time), then say when you went there.')
     report_fix('ppc-B12-6a', q='Write two sentences about this week: something you have been doing (it is still going on), and something you have finished.')
+    # Phone screenshots and 27 reports, 7 November: explicit situations, no accidental option clues.
+    report_fix('ps-A22-2a',
+        q='Which sentence gives a scheduled departure, rather than a hope, a past event or an action happening now?',
+        correct='The train leaves at 7.45 tomorrow, according to the timetable.',
+        wrong=['We hope the train will leave at 7.45 tomorrow.', 'The train left at 7.45 yesterday, according to the records.', 'The train is leaving at 7.45 right now; I can see it.'],
+        why='A timetable gives a fixed departure time: *The train leaves at 7.45 tomorrow*. A hope is not a timetable.',
+        why_lv='Saraksts nosaka atiešanas laiku: *The train leaves at 7.45 tomorrow*. Cerība nav sarakstā noteikts laiks.')
+    report_fix('fu-B12-6a',
+        q='Look at those dark clouds. Your friend has no umbrella. Write two sentences: say what is about to happen, then offer to lend your umbrella.',
+        model="It is going to rain. I'll lend you my umbrella.",
+        why='The clouds support a prediction: *It is going to rain*. *I will lend you my umbrella* offers help now.',
+        why_lv='Mākoņi pamato prognozi: *It is going to rain*. *I will lend you my umbrella* ir palīdzības piedāvājums tagad.')
     return items

@@ -19,7 +19,7 @@ for f, n, r in rows:
     # 1. plain instructions: no setting in front, no hint after a word-order instruction, no topic after a matching instruction
     if t == "mcq" and re.match(r"^[^:?.]{2,45}: which\b", q, re.I): flag(f, n, "a setting in front of the instruction", q)
     if t == "mcq" and re.search(r"\b(writes|says|asks|texts)\b[^.?]*: '.*' Choose the correct option\.$", q): flag(f, n, "'Your friend writes: ...' intro", q)
-    if t == "order" and q != "Put the words in order.": flag(f, n, "a hint after the word-order instruction", q)
+    if t == "order" and q not in ("Put the words in order.", "Put the words in order to make a question."): flag(f, n, "a hint after the word-order instruction", q)
     if t == "match" and re.match(r"^Match each beginning with its ending[:.]", q) and q != "Match each beginning with its ending.": flag(f, n, "a topic after the matching instruction", q)
     # 2. matching: one sensible pairing. A net, not a proof: fragments that start alike or end alike are the ones that can be swapped
     if t == "match" and not ans.startswith(REVIEWED):

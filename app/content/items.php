@@ -165,21 +165,21 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Jautājumi Present Simple: *do/does* + teik. priekšmets + pamatforma. *Sister = she*, tāpēc *does*."
 },
 {
-"id": "ps-A22-2a-r2",
+"id": "ps-A22-2a-r3",
 "skill": "present_simple",
 "level": "A2.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Which sentence is about a timetable?",
-"correct": "The train leaves at 7.45 tomorrow.",
+"q": "Which sentence gives a scheduled departure, rather than a hope, a past event or an action happening now?",
+"correct": "The train leaves at 7.45 tomorrow, according to the timetable.",
 "wrong": [
-"The train is leaving right now.",
-"The train left at 7.45 yesterday.",
-"The train was late this morning."
+"We hope the train will leave at 7.45 tomorrow.",
+"The train left at 7.45 yesterday, according to the records.",
+"The train is leaving at 7.45 right now; I can see it."
 ],
-"why": "We use the present simple for fixed timetables, even for the future.",
+"why": "A timetable gives a fixed departure time: *The train leaves at 7.45 tomorrow*. A hope is not a timetable.",
 "wrong_why": {},
-"why_lv": "Fiksētiem sarakstiem un grafikiem lieto Present Simple, pat runājot par nākotni.",
+"why_lv": "Saraksts nosaka atiešanas laiku: *The train leaves at 7.45 tomorrow*. Cerība nav sarakstā noteikts laiks.",
 "wrong_why_lv": {}
 },
 {
@@ -2932,12 +2932,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Spontānam piedāvājumam dabiskākais ir *will*."
 },
 {
-"id": "fu-B12-6a",
+"id": "fu-B12-6a-r2",
 "skill": "future",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write two sentences: one prediction with going to (with a reason) and one spontaneous offer with will.",
+"q": "Look at those dark clouds. Your friend has no umbrella. Write two sentences: say what is about to happen, then offer to lend your umbrella.",
 "must": [
 [
 "\\bgoing\\s+to\\s+\\w+",
@@ -2950,9 +2950,9 @@ return json_decode(<<<'EF_JSON_END'
 "Piedāvājumam lieto *I'll* vai *I will.*"
 ]
 ],
-"model": "It's going to rain; look at the clouds. I'll bring an umbrella for you.",
-"why": "Compare your sentence with the model answer.",
-"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+"model": "It is going to rain. I'll lend you my umbrella.",
+"why": "The clouds support a prediction: *It is going to rain*. *I will lend you my umbrella* offers help now.",
+"why_lv": "Mākoņi pamato prognozi: *It is going to rain*. *I will lend you my umbrella* ir palīdzības piedāvājums tagad."
 },
 {
 "id": "psp-A22-1a",

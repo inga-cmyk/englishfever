@@ -1000,3 +1000,16 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .welcome-back .wb-icon { font-size: 2.6rem; line-height: 1; margin: 4px 0 10px; }
 .welcome-back .wb-text { font-size: 1.15rem; font-weight: 650; color: var(--text); margin: 0 0 8px; }
 .welcome-back .wb-week { margin: 0 0 16px; }
+
+/* Phone feedback must fit including padding, safe areas and long XP headings. */
+.feedback.sheet { box-sizing: border-box; width: 100%; }
+.feedback.sheet h3 { flex-wrap: wrap; min-width: 0; }
+.feedback.sheet .fb-foot, .feedback.sheet .nextrow, .feedback.sheet .nextbtn { min-width: 0; max-width: 100%; box-sizing: border-box; }
+.summary-cheer { margin-bottom: 16px; text-align: center; }
+.summary-cheer .fun-line { margin: 0; }
+@media (max-width: 600px) { .summary .grid.g3 { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; } .summary .big { font-size: clamp(1.4rem,7vw,2.6rem); } }
+
+/* Preserve dialogue turns (A/B) in both typed and word-bank gaps. */
+.q, .q-sample { white-space: pre-line; }
+
+.task .blank:disabled { opacity: 1; color: var(--text); -webkit-text-fill-color: var(--text); }

@@ -1379,7 +1379,7 @@
         fb.appendChild(h('p', { class: 'stuck' }, lv ? 'Grūti? Pirms nākamā atver ' : 'Stuck? Open ', h('b', { class: 'stuck-q' }, '?'), lv ? ' uzdevuma augšā.' : ' at the top of the next task.'));
       }
       if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
-      if (good && it.kind === 'text') fb.appendChild(h('p', { class: 'submitted-answer' }, h('b', null, lv ? 'Tava atbilde: ' : 'Your answer: '), String(ans || '')));
+      if (good && (it.kind === 'text' || it.kind === 'gap')) fb.appendChild(h('p', { class: 'submitted-answer' }, h('b', null, lv ? 'Tava atbilde: ' : 'Your answer: '), Array.isArray(ans) ? ans.join(' / ') : String(ans || '')));
       var cmp = (!good && !res.skipped && (it.kind === 'text' || it.kind === 'order') && typeof res.show === 'string')
         ? wordDiff(it.kind === 'order' ? (ans || []).join(' ') : String(ans || ''), res.show) : null;   // your sentence and the right one, the different words marked (teacher, 27 October)
       if (cmp) fb.appendChild(h('div', { class: 'compare' },
@@ -1405,9 +1405,9 @@
         if (it.kind === 'match') {
           if (!good && res.pairs) fb.appendChild(h('div', { class: 'ans' }, h('b', null, lv ? 'Pareizi: ' : 'Correct pairs: '),
             h('ul', { class: 'pairs' }, res.pairs.map(function (p) { return h('li', null, p[0], ' → ', h('b', null, p[1])); }))));
-        } else if ((!good || it.kind !== 'mcq') && !cmp) {
+        } else if ((!good || it.kind !== 'mcq') && !cmp && !(good && (it.kind === 'gap' || it.kind === 'text') && String(Array.isArray(ans) ? ans.join(' / ') : ans).trim().toLowerCase() === String(res.show).trim().toLowerCase())) {
           var findWrong = it.kind === 'mcq' && /^Which sentence (is NOT correct|has a mistake)\?/.test(it.q || '');   // the answer is the faulty sentence: do not call it "correct"
-          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (altWhy ? (lv ? 'Iespējams arī: ' : 'Also possible: ') : (lv ? 'Atbilde: ' : 'Answer: ')) : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), good || findWrong ? res.show : h('span', { class: 'right-ans' }, res.show)));
+          fb.appendChild(h('div', { class: 'ans' }, h('b', null, good ? (altWhy || it.kind === 'gap' || it.kind === 'text' ? (lv ? 'Iespējams arī: ' : 'Also possible: ') : (lv ? 'Atbilde: ' : 'Answer: ')) : findWrong ? (lv ? 'Nepareizais teikums: ' : 'The wrong sentence: ') : (lv ? 'Pareizā atbilde: ' : 'Correct answer: ')), good || findWrong ? res.show : h('span', { class: 'right-ans' }, res.show)));
         }
         fb.appendChild(h('p', null, h('b', null, lv ? 'Kāpēc: ' : 'Why: '), UI.rich(why)));
       }
@@ -1501,6 +1501,9 @@
       });
       down.addEventListener('click', function () {
         var reason = '';
+        var continueButton = box.closest('.fb-foot').querySelector('.nextbtn');
+        if (continueButton) continueButton.disabled = true;
+        function unlockContinue() { if (continueButton) continueButton.disabled = false; }
         var chips = RATE_REASONS.map(function (x) {
           var c = h('button', { type: 'button', class: 'chip rate-c', 'aria-pressed': 'false' }, x[1]);
           c.addEventListener('click', function () { reason = reason === x[0] ? '' : x[0]; chips.forEach(function (o) { o.setAttribute('aria-pressed', 'false'); }); if (reason) c.setAttribute('aria-pressed', 'true'); });
@@ -1510,11 +1513,11 @@
         var send = h('button', { type: 'button', class: 'btn small' }, 'Send');
         var cancel = h('button', { type: 'button', class: 'btn ghost small' }, 'Cancel');
         var panel = h('div', { class: 'rate-p' }, h('div', { class: 'rate-cs' }, chips), ta, h('div', { class: 'row', style: 'gap:8px' }, send, cancel));
-        cancel.addEventListener('click', function () { panel.remove(); box.hidden = false; });
+        cancel.addEventListener('click', function () { panel.remove(); box.hidden = false; unlockContinue(); });
         send.addEventListener('click', function () {
           send.disabled = true;
           track('report', it.skill);
-          api('report', { item_id: it.id, reason: reason, comment: ta.value }).then(function () { state.reported[it.id] = true; panel.remove(); box.hidden = false; thanks('Thanks for your feedback.'); })
+          api('report', { item_id: it.id, reason: reason, comment: ta.value }).then(function () { state.reported[it.id] = true; panel.remove(); box.hidden = false; unlockContinue(); thanks('Thanks for your feedback.'); })
             .catch(function (e) { send.disabled = false; UI.toast(e.message); });
         });
         box.hidden = true;
@@ -1540,7 +1543,7 @@
     var taskIdEl = state.user.role === 'teacher' ? h('span', { class: 'small muted taskid', title: 'Task ID' }, it.id) : null;
 
     var phaseLabel = ses.mode === 'placement' ? 'Placement test' : (ses.bonus ? 'Bonus · double XP' : (ses.comeback ? 'Second Chance' : 'Practice'));
-    if (ses.mode !== 'placement' && it.practice_context === 'review') phaseLabel += ' · Review';
+    if (ses.mode !== 'placement' && it.practice_context === 'review') phaseLabel += (ses.skills && ses.skills.length > 1 ? ' · Review · mixed topics' : ' · Review');
     if (ses.mode !== 'placement' && it.practice_context === 'stretch') phaseLabel += ' · Next step';
     var done = ses.n;
     drawDots(); drawPrev();
@@ -1803,7 +1806,7 @@
     var nodes = [];
     var fixed = s.fixed || 0;
     var headline = s.comeback
-      ? (fixed ? 'Great job! ' + plural(fixed, 'mistake', 'mistakes') + ' fixed.' : 'Good try. Look at these again.')
+      ? (fixed ? 'Great job! ' + plural(fixed, 'mistake', 'mistakes') + ' fixed.' : (s.accuracy === 100 ? 'Great job! Checked again and still right.' : 'Good try. Keep practising these.'))
       : (s.accuracy >= 80 ? 'Great work!' : (s.accuracy >= 50 ? 'Good effort!' : 'Keep going – this is how you learn.'));
     // real progress only: topics where this session went clearly better than the learner's recent history
     var better = (s.by_skill || []).filter(function (k) { var now = pct(k.correct, k.n); return k.prev_accuracy !== null && k.prev_accuracy !== undefined && k.n >= 3 && now >= k.prev_accuracy + 10; });
@@ -1815,7 +1818,7 @@
       h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
       h('p', { class: 'quip' }, quip(s.accuracy)),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
-      (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.locked ? ', ' + s.locked + ' checked again' : '', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : ' · nothing left to fix') : null,
+      (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.locked ? ', ' + s.locked + ' checked again' : '', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : (s.open_after ? ' · more mistakes are waiting' : s.review_due ? ' · another earlier mistake is ready to check again' : ' · no open mistakes right now')) : null,
       s.bonus ? bonusCard(s) : null,
       (s.open_after && !s.bonus) ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, 'Still to fix: ' + s.open_after), comebackButton('btn small fn-chance', 'Second Chance')) : null,
       h('div', { class: 'grid g3' },
@@ -1825,10 +1828,10 @@
     var ps = s.pathStep;
     if (!ps) try { var q = JSON.parse(localStorage.getItem('ef_pathstep') || 'null'); if (q && q.sid == s.session_id) ps = q.step; } catch (e) {}
     if (!s.comeback) nodes.push(nextActions(s, ps));   // one clear choice (teacher, 3 November): try again / try harder / next topic
-    nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));
+    nodes.push(h('div', { class: 'card summary-cheer' }, funLine(s.accuracy >= 80, false, 'same')));
     nodes.push(reminderCard());
     nodes.push(h('div', { class: 'row' }, homeLink()));
-    show(h('div', { class: 'sess', style: 'max-width:860px' }, nodes));
+    show(h('div', { class: 'sess summary', style: 'max-width:860px' }, nodes));
   }
 
   /** A short, light line about the result (teacher, 3 November: earned dopamine and a bit of humour). */
@@ -1923,10 +1926,10 @@
           weak.length ? h('div', { class: 'small muted' }, 'Topics: ' + weak.join(', ') + '. A few questions cannot show a real gap; Second Chance does.') : null),
         comebackButton('btn small fn-chance', 'Second Chance'))));
     } else if (!s.basics) {
-      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, 'No mistakes to fix'), h('p', { class: 'muted' }, s.parked ? 'Nothing to fix at your level.' : (s.n > s.correct ? 'Nothing left to fix.' : 'Nothing was missed.')), parkedNote,
+      nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, s.n > s.correct ? 'Keep building on your result' : 'All answers correct!'), h('p', { class: 'muted' }, s.n > s.correct ? (fresh ? 'Some answers were missed. Practice will help check which topics need another look.' : 'This is your saved test result. Open Second Chance on Home to see what needs checking now.') : 'Nothing was missed.'), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
-    nodes.push(h('div', { class: 'card' }, h('h2', null, 'Skills check'), catBars(s.by_cat)));   // the topics tested are on My learning path, where they can be opened
+    nodes.push(h('div', { class: 'card summary-cheer' }, funLine(s.accuracy >= 80, false, 'same')));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, homeLink()));
     return nodes;
   }

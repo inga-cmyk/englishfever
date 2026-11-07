@@ -270,7 +270,7 @@ final class CustomItems
         $kind = self::TYPES[mb_strtolower($get('type'))] ?? null;
         if (!$kind) throw new ApiError('Type "' . $get('type') . '" is not supported. Use: mcq, gap, text, order, match.', 400);
         $res['kind'] = $kind;
-        $q = preg_replace('/\s+/u', ' ', $get('task'));
+        $q = preg_replace('/[^\S\r\n]+/u', ' ', str_replace(["\r\n", "\r"], "\n", $get('task')));   // keep intentional dialogue turns
         $why = $get('why');
         if ($q === '' || mb_strlen($q) > 300) throw new ApiError('The task text is empty or longer than 300 characters.', 400);
         if ($why === '') throw new ApiError('The explanation is empty. Add one short sentence.', 400);

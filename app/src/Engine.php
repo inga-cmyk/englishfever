@@ -856,6 +856,7 @@ final class Engine
             $out['fixed'] = (int) ($ses['state']['fixed'] ?? 0);
             $out['comeback'] = !empty($ses['state']['comeback']);
             $out['open_after'] = count($m['open']);
+            $out['review_due'] = count(Mistakes::reviewDue((int) $ses['user_id'], $m));
             $out['fixed_total'] = $m['fixed'];
             $out['bonus'] = self::bonusCount($ses);
             $out['locked'] = (int) ($ses['state']['locked'] ?? 0);   // fixed earlier and still right a few days later

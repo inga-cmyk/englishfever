@@ -11058,5 +11058,23 @@
 ],
 "why": "after prepositions: depends *on whether*, talk *about whether.*",
 "wrong_why": {}
+},
+{
+"id": "ps-A22-2a-r2",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence is about a timetable?",
+"correct": "The train leaves at 7.45 tomorrow.",
+"wrong": [
+"The train is leaving right now.",
+"The train left at 7.45 yesterday.",
+"The train was late this morning."
+],
+"why": "We use the present simple for fixed timetables, even for the future.",
+"wrong_why": {},
+"why_lv": "Fiksētiem sarakstiem un grafikiem lieto Present Simple, pat runājot par nākotni.",
+"wrong_why_lv": {}
 }
 ]

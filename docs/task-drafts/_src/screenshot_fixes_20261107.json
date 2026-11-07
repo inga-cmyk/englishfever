@@ -1,0 +1,131 @@
+{
+  "comparison-1.csv": [
+    {
+      "match": [
+        "order",
+        "Put the words in order.",
+        "riga is smaller than london"
+      ],
+      "set": {
+        "5": "also accepted: london is smaller than riga",
+        "6": "Both city orders form a correct sentence: subject + *is smaller than* + the other city. This task checks grammar, not geography.",
+        "7": "Abas pilsētu secības veido pareizu teikumu: teikuma priekšmets + *is smaller than* + otra pilsēta. Uzdevums pārbauda gramatiku, nevis ģeogrāfiju."
+      }
+    }
+  ],
+  "b1-tenses-2.csv": [
+    {
+      "match": [
+        "match",
+        "Match each sentence with its focus.",
+        "I've been reading. = the activity ; I've read three chapters. = the result ; I've been waiting for an hour. = how long ; I've written five emails. = how many"
+      ],
+      "set": {
+        "3": "Match each sentence with what we know about the action.",
+        "4": "I've been reading, but I haven't finished the book. = The reading is not finished. ; I've read the whole book. = The reading is finished. ; I've been waiting since nine and I'm still here. = The waiting continues now. ; I've written all five emails and sent them. = The emails are ready and sent.",
+        "6": "Read the whole sentence: *not finished* and *still here* show continuing actions; *the whole book* and *all five emails ... sent* show completed results.",
+        "7": "Izlasi visu teikumu: *not finished* un *still here* norāda uz turpinātu darbību; *the whole book* un *all five emails ... sent* — uz pabeigtu rezultātu.",
+        "9": "I've been reading. = the activity ; I've read three chapters. = the result ; I've been waiting for an hour. = how long ; I've written five emails. = how many",
+        "11": "yes"
+      }
+    },
+    {
+      "match": [
+        "order",
+        "Put the words in order.",
+        "will you be at home when the parcel arrives"
+      ],
+      "set": {
+        "3": "Put the words in order to make a question.",
+        "5": "also accepted: when the parcel arrives will you be at home",
+        "6": "In the question, put *will* before *you*. After *when*, use *arrives* for the future, not *will arrive*.",
+        "7": "Jautājumā liec *will* pirms *you*. Pēc *when* nākotnes nozīmē lieto *arrives*, nevis *will arrive*.",
+        "9": "will you be at home when the parcel arrives"
+      }
+    },
+    {
+      "match": [
+        "gap",
+        "I don't think the team ___ the match.",
+        "will win"
+      ],
+      "set": {
+        "3": "The final is tomorrow. I don't think the team ___ the match. (win)",
+        "5": "",
+        "9": "I don't think the team ___ the match."
+      }
+    },
+    {
+      "match": [
+        "gap",
+        "We ___ the kitchen next month. We've already chosen the colour. (paint)",
+        "are going to paint | are painting"
+      ],
+      "set": {
+        "13": "are painting :: Correct: *are painting* presents this as an arrangement. *Are going to paint* presents it as an existing plan. :: Pareizi: *are painting* parāda norunātu pasākumu. *Are going to paint* parāda jau pieņemtu plānu."
+      }
+    },
+    {
+      "match": [
+        "text",
+        "Join with when: I'll finish the report. Then I'll call you.",
+        "I'll call you when I finish the report. | I'll call you when I've finished the report. | When I finish the report, I'll call you. | When I've finished the report, I'll call you."
+      ],
+      "set": {
+        "6": "After *when* we use *finish* or *have finished* for the future, not *will finish*. The main clause keeps *will*: *I will call you*.",
+        "7": "Pēc *when* nākotnes nozīmē lieto *finish* vai *have finished*, nevis *will finish*. Galvenajā daļā paliek *will*: *I will call you*."
+      }
+    },
+    {
+      "match": [
+        "mcq",
+        "Choose the correct option: We ___ some friends for dinner on Saturday, so I need to go shopping.",
+        "are having"
+      ],
+      "set": {
+        "3": "Choose the correct option: We ___ some friends for dinner this Saturday. We've arranged it, so I need to go shopping.",
+        "5": "have had | had | were having",
+        "6": "*Are having* describes an arrangement for this Saturday. The other forms describe past situations.",
+        "7": "*Are having* apzīmē norunātu pasākumu šajā sestdienā. Pārējās formas apraksta pagātnes situācijas.",
+        "9": "Choose the correct option: We ___ some friends for dinner on Saturday, so I need to go shopping."
+      }
+    }
+  ],
+  "compare-past-1.csv": [
+    {
+      "match": [
+        "gap",
+        "A: I've burnt myself. B: How ___ you ___ that? (do)",
+        "did / do"
+      ],
+      "set": {
+        "3": "A: I've hurt my hand.\nB: How ___ you ___ that? (do)",
+        "9": "A: I've burnt myself. B: How ___ you ___ that? (do)"
+      }
+    },
+    {
+      "match": [
+        "gap",
+        "Tom was tired when he got home. He ___ hard all day. (work)",
+        "had been working | had worked"
+      ],
+      "set": {
+        "13": "had worked :: Correct too: *had worked* focuses on the work completed before he got home. *Had been working* emphasises its duration and explains his tiredness. :: Arī pareizi: *had worked* uzsver pirms pārnākšanas paveikto. *Had been working* uzsver ilgumu un izskaidro nogurumu."
+      }
+    }
+  ],
+  "a2-big-1.csv": [
+    {
+      "match": [
+        "match",
+        "Match each word with the form that fits 'I have ___ it.'",
+        "write = written ; take = taken ; see = seen ; go = gone"
+      ],
+      "set": {
+        "4": "write = written ; take = taken ; see = seen ; break = broken",
+        "6": "Learn the past participle with each irregular verb: *write → written*, *take → taken*, *see → seen*, *break → broken*.",
+        "9": "write = written ; take = taken ; see = seen ; go = gone"
+      }
+    }
+  ]
+}

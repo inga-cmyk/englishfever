@@ -50,14 +50,22 @@ const APP = path.resolve(__dirname, '../..');
       await page.waitForTimeout(400);
       await page.screenshot({path:path.join(process.env.EF_REVIEW_SHOTS,'feedback-'+lang+'.png'),fullPage:true});
     }
+    await page.getByRole('button',{name:'Something is wrong',exact:true}).click();
+    assert(!(await page.getByRole('button',{name:'See my results',exact:true}).isEnabled())); checks++;
+    await page.getByRole('textbox',{name:'Comment',exact:true}).fill('Regression test comment');
+    await page.getByRole('button',{name:'Cancel',exact:true}).click();
+    assert(await page.getByRole('button',{name:'See my results',exact:true}).isEnabled()); checks++;
     await page.getByRole('button',{name:/Previous/}).click();
     await page.waitForSelector('textarea.type-in:disabled');
     assert((await page.locator('.sess-top').innerText()).includes('looking back')); checks++;
     // Return to current answered task through the question strip, then results.
     await page.locator('.dots .dot').last().click();
     await page.getByRole('button',{name:'See my results',exact:true}).click();
-    await page.waitForSelector('.cats');
-    assert((await page.locator('.cat').last().innerText()).includes('Not checked')); checks++;
+    await page.waitForSelector('.summary-cheer');
+    assert(await page.locator('.cats').count() === 0); assert((await page.locator('.summary-cheer').innerText()).length > 0); checks++;
+    await page.screenshot({path:path.join(process.env.EF_REVIEW_SHOTS || '/tmp','summary-'+width+'-'+lang+'.png'),fullPage:true});
+    const stats = page.locator('.summary .grid.g3').first();
+    assert((await stats.locator('.big').count())===3); checks++;
     assert(errors.length === 0, errors.join('\n')); checks++;
     await context.close();
   }

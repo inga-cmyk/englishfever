@@ -222,7 +222,8 @@ def save(name):
             t, c, wr, rep, notes = term_free.fix(out[3], out[2], out[4], out[5])   # no grammar terms in the task (teacher, 6 November)
             out[3], out[4], out[5], out[13] = t, c, wr, notes
             if rep: out[9] = rep
-            w.writerow(out)
+            from screenshot_fixes import apply as screenshot_fix
+            w.writerow(screenshot_fix(name, out))
     print(name, len(rows), "rows")
 
 

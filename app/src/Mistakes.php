@@ -20,7 +20,7 @@ final class Mistakes
      */
     public static function scan(int $uid, array $plLevels = []): array
     {
-        $rows = Db::all('SELECT item_id, skill, level, bloom, correct, created_at, for_item, psession_id FROM attempts WHERE user_id = ? AND created_at > ? ORDER BY id ASC LIMIT ' . self::SCAN_LIMIT, [$uid, time() - self::DAYS * 86400]);
+        $rows = Db::all('SELECT item_id, skill, level, bloom, correct, answer, created_at, for_item, psession_id FROM attempts WHERE user_id = ? AND created_at > ? ORDER BY id ASC LIMIT ' . self::SCAN_LIMIT, [$uid, time() - self::DAYS * 86400]);
         $open = [];
         $solid = [];      // fixed, not yet locked in: id => kind of task, the day it was fixed, the tasks that fixed it
         $fixed = $locked = $reopened = 0;
@@ -29,6 +29,8 @@ final class Mistakes
             $id = $r['item_id'];
             $task = Content::item($id);
             if (!$task || Content::role($task) === 'learn') continue;
+            // A valid alternative simple form is correct English, but not evidence of the continuous construction.
+            if ((int) $r['correct'] && !self::demonstratesTarget($task, $r['answer'] ?? '')) continue;
             $day = date('Y-m-d', (int) $r['created_at']);
             if (!(int) $r['correct'] && isset($corrected[$id])) continue;   // rule C: a mistake on a task that was faulty and has been corrected
             if (!(int) $r['correct']) {
@@ -71,7 +73,10 @@ final class Mistakes
                 continue;
             }
             foreach ($solid as $sid => $sv) {
-                if ($sv['day'] !== $day && !isset($sv['items'][$id]) && self::similar($sv, $r)) { unset($solid[$sid]); $locked++; break; }
+                if (!self::similar($sv, $r)) continue;
+                if ($sv['day'] !== $day && !isset($sv['items'][$id])) { unset($solid[$sid]); $locked++; break; }
+                // A successful repeat is not new transfer evidence, but do not ask it again immediately.
+                $solid[$sid]['checked_day'] = $day;
             }
         }
         // tasks the teacher has paused (reported as flawed) are not the learner's mistakes
@@ -96,6 +101,19 @@ final class Mistakes
             }
         }
         return ['open' => $open, 'parked' => $parked, 'solid' => $solid, 'fixed' => $fixed, 'locked' => $locked, 'reopened' => $reopened];
+    }
+
+    /** Accepted past-perfect-simple alternatives do not establish the continuous form. */
+    public static function demonstratesTarget(array $task, $answer): bool
+    {
+        if (($task['skill'] ?? '') !== 'narrative_b2' || ($task['kind'] ?? '') !== 'gap') return true;
+        $given = is_array($answer) ? $answer : json_decode((string) $answer, true);
+        if (!is_array($given)) $given = [(string) $answer];
+        foreach ($task['answers'] ?? [] as $n => $options) {
+            if (preg_match('/\bhad been\s+\w+ing\b/i', $options[0] ?? '')
+                && !preg_match('/\bhad been\s+\w+ing\b/i', (string) ($given[$n] ?? ''))) return false;
+        }
+        return true;
     }
 
     private static function levelIdx(string $level): int
@@ -144,7 +162,7 @@ final class Mistakes
     {
         $scan = $scan ?? self::scan($uid);
         $limit = date('Y-m-d', time() - 2 * 86400);
-        $due = array_filter($scan['solid'], fn($v, $id) => $v['day'] <= $limit && Content::item((string) $id), ARRAY_FILTER_USE_BOTH);
+        $due = array_filter($scan['solid'], fn($v, $id) => ($v['checked_day'] ?? $v['day']) <= $limit && Content::item((string) $id), ARRAY_FILTER_USE_BOTH);
         uasort($due, fn($a, $b) => strcmp($a['day'], $b['day']));
         return array_map('strval', array_keys($due));
     }

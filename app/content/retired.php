@@ -1660,6 +1660,29 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *going to* lieto pamatformu: *He is going to arrive soon.*"
 },
 {
+"id": "fu-B12-6a",
+"skill": "future",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write two sentences: one prediction with going to (with a reason) and one spontaneous offer with will.",
+"must": [
+[
+"\\bgoing\\s+to\\s+\\w+",
+"Use *going to* + base verb in the prediction.",
+"Prognozē lieto *going to* + pamatforma."
+],
+[
+"\\b(i'll|i will|shall i)\\b",
+"Use *I'll* or *I will* for the offer.",
+"Piedāvājumam lieto *I'll* vai *I will.*"
+]
+],
+"model": "It's going to rain; look at the clouds. I'll bring an umbrella for you.",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
 "id": "psp-A22-2a",
 "skill": "present_simple_passive",
 "level": "A2.2",
@@ -6170,6 +6193,24 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "after prepositions: depends *on whether*, talk *about whether.*",
 "wrong_why": {}
+},
+{
+"id": "ps-A22-2a-r2",
+"skill": "present_simple",
+"level": "A2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "Which sentence is about a timetable?",
+"correct": "The train leaves at 7.45 tomorrow.",
+"wrong": [
+"The train is leaving right now.",
+"The train left at 7.45 yesterday.",
+"The train was late this morning."
+],
+"why": "We use the present simple for fixed timetables, even for the future.",
+"wrong_why": {},
+"why_lv": "Fiksētiem sarakstiem un grafikiem lieto Present Simple, pat runājot par nākotni.",
+"wrong_why_lv": {}
 }
 ]
 EF_JSON_END

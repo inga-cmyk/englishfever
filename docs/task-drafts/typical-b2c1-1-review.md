@@ -32,9 +32,9 @@ For the level test (type the form, nothing to guess) and for practice. Each task
 9. *She asked me how long I ___ English. (study)* → **had been studying | had studied | 'd been studying | 'd studied** · catches: *have been studying* · Reported questions and requests
    - EN: A reported question: one step back in time: *had been studying*.
    - LV: Atstāstītā jautājumā laiks soli atpakaļ: *had been studying*.
-10. *Could you tell me what time the museum ___? (open)* → **opens** · catches: *does open* · Indirect questions (Could you tell me where...)
-   - EN: After *Could you tell me* the word order is like a statement, without *does*.
-   - LV: Aiz *Could you tell me* vārdu secība ir kā apgalvojumā, bez *does*.
+10. *Could you tell me what time the museum ___? (open)* → **opens | will be open | will open | is opening | is going to open** · catches: *does open* · Indirect questions (Could you tell me where...)
+   - EN: The embedded question has subject before verb: *the museum opens*. A future form also fits when asking about a future opening time.
+   - LV: Netiešajā jautājumā teikuma priekšmets ir pirms darbības vārda: *the museum opens*. Jautājot par nākotnes atvēršanas laiku, der arī nākotnes forma.
 11. *When I finally got through, I ___ on hold for forty minutes. (wait)* → **had been waiting | 'd been waiting** · catches: *was waiting* · Narrative tenses with past perfect continuous
    - EN: How long something went on before a moment in the past: *had been* + *-ing*.
    - LV: Cik ilgi kaut kas notika līdz kādam brīdim pagātnē: *had been + -ing*.

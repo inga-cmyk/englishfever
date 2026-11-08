@@ -1,0 +1,583 @@
+{
+  "twins-1.csv": [
+    {
+      "id": "c-2892",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "we should take an umbrella"
+      ],
+      "set": {
+        "5": "also accepted: should we take an umbrella",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "A statement has *we should take*; a question has *should we take*. Both fit the open instruction.",
+        "7": "Apgalvojumā ir *we should take*, jautājumā — *should we take*. Atvērtajai instrukcijai atbilst abi varianti."
+      }
+    }
+  ],
+  "a2-big-1.csv": [
+    {
+      "id": "c-1143",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "we are going to buy a new sofa"
+      ],
+      "set": {
+        "5": "also accepted: are we going to buy a new sofa",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "Use *we are going to buy* in a statement or *are we going to buy* in a question.",
+        "7": "Apgalvojumā lieto *we are going to buy*, jautājumā — *are we going to buy*."
+      }
+    },
+    {
+      "id": "c-2152",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "the children are playing in the garden"
+      ],
+      "set": {
+        "5": "also accepted: are the children playing in the garden",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "A statement starts *the children are playing*; a question starts *are the children playing*.",
+        "7": "Apgalvojums sākas ar *the children are playing*, jautājums — ar *are the children playing*."
+      }
+    },
+    {
+      "id": "c-1085",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "were you sleeping when i called"
+      ],
+      "set": {
+        "5": "also accepted: when i called were you sleeping | you were sleeping when i called | when i called you were sleeping",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "A question has *were you sleeping*; a statement has *you were sleeping*. The when-clause can also come first.",
+        "7": "Jautājumā ir *were you sleeping*, apgalvojumā — *you were sleeping*. Palīgteikums ar *when* var būt arī sākumā."
+      }
+    },
+    {
+      "id": "c-1055",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "is it raining in your city"
+      ],
+      "set": {
+        "5": "also accepted: it is raining in your city | in your city it is raining",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "A question has *is it raining*; a statement has *it is raining*. The place phrase *in your city* can come first.",
+        "7": "Jautājumā ir *is it raining*, apgalvojumā — *it is raining*. Vietas apstāklis *in your city* var būt sākumā."
+      }
+    },
+    {
+      "id": "c-1230",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "plants die if they don't get water"
+      ],
+      "set": {
+        "5": "also accepted: if they don't get water plants die | if plants don't get water they die",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "Both clauses use the present simple for a general result. The if-clause can come first or last.",
+        "7": "Vispārīgu rezultātu izsaka ar Present Simple abās daļās. Palīgteikums ar *if* var būt sākumā vai beigās."
+      }
+    },
+    {
+      "id": "c-2665",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "it was raining when we left the house"
+      ],
+      "set": {
+        "5": "also accepted: when we left the house it was raining | we left the house when it was raining",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "The rain was in progress when they left. Either clause can describe the background or the time of the other event.",
+        "7": "Lietus lija brīdī, kad viņi izgāja. Abi teikumu varianti saista iziešanu ar tobrīd notiekošo lietu."
+      }
+    },
+    {
+      "id": "c-1287",
+      "match": [
+        "text",
+        "Make it negative: If she comes, I will stay.",
+        "If she doesn't come, I won't stay. | If she does not come, I will not stay."
+      ],
+      "set": {
+        "3": "Make only the result negative. Keep 'If she comes': If she comes, I will stay.",
+        "4": "If she comes, I won't stay. | If she comes, I will not stay.",
+        "6": "Keep the condition *If she comes*. Make only the result negative: *I won't stay*.",
+        "7": "Saglabā nosacījumu *If she comes*. Noliedz tikai rezultātu: *I won't stay*.",
+        "9": "Make it negative: If she comes, I will stay."
+      }
+    },
+    {
+      "id": "c-1142",
+      "match": [
+        "text",
+        "Say you did not do it yet: I / not / finish / homework / yet.",
+        "I haven't finished my homework yet. | I have not finished my homework yet. | I haven't yet finished my homework. | I have not yet finished my homework."
+      ],
+      "set": {
+        "4": "I haven't finished my homework yet. | I have not finished my homework yet. | I haven't yet finished my homework. | I have not yet finished my homework. | I haven't finished homework yet. | I have not finished homework yet. | I haven't yet finished homework. | I have not yet finished homework.",
+        "6": "*Have not finished* describes something not completed up to now. *Homework* can stand alone or have *my* before it.",
+        "7": "*Have not finished* apraksta līdz šim nepabeigtu darbību. *Homework* var lietot vienu pašu vai ar *my* pirms tā."
+      }
+    }
+  ],
+  "a2-mistakes-1.csv": [
+    {
+      "id": "c-2152",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "the children are playing in the garden"
+      ],
+      "set": {
+        "5": "also accepted: are the children playing in the garden",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "A statement starts *the children are playing*; a question starts *are the children playing*.",
+        "7": "Apgalvojums sākas ar *the children are playing*, jautājums — ar *are the children playing*."
+      }
+    }
+  ],
+  "learn-drag-4.csv": [
+    {
+      "id": "c-3036",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "did you see Anna yesterday"
+      ],
+      "set": {
+        "5": "also accepted: did Anna see you yesterday",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "After *did*, use the base form *see*. Either *you* or *Anna* can be the subject when no situation is specified.",
+        "7": "Pēc *did* lieto pamatformu *see*. Ja situācija nav norādīta, teikuma priekšmets var būt gan *you*, gan *Anna*."
+      }
+    },
+    {
+      "id": "c-3217",
+      "match": [
+        "gap",
+        "___ you ___ Anna this morning? It's only ten o'clock.",
+        "Have / seen"
+      ],
+      "set": {
+        "3": "I ___ Anna since primary school, and we are still friends. (know)",
+        "4": "have known",
+        "5": "",
+        "6": "Since primary school gives the starting point of a friendship that continues now: *I have known Anna since primary school*. Use *have known*, not *knew* or *have been knowing*.",
+        "7": "*Since primary school* norāda sākumu draudzībai, kas turpinās tagad: *I have known Anna since primary school*. Lieto *have known*, nevis *knew* vai *have been knowing*.",
+        "9": "___ you ___ Anna this morning? It's only ten o'clock.",
+        "13": ""
+      }
+    }
+  ],
+  "b1-new-2.csv": [
+    {
+      "id": "c-1414",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "the woman whose car was stolen called the police"
+      ],
+      "set": {
+        "5": "also accepted: the police called the woman whose car was stolen",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "The woman or the police can make the call. *Whose car was stolen* describes the woman in either order.",
+        "7": "Zvanīt var gan sieviete, gan policija. *Whose car was stolen* abos variantos raksturo sievieti."
+      }
+    },
+    {
+      "id": "c-1410",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "the man who called you is my boss"
+      ],
+      "set": {
+        "5": "also accepted: my boss is the man who called you",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "The identifying phrases can change places around *is*. In both orders, *who called you* describes the man.",
+        "7": "Daļas, kas nosauc vienu un to pašu cilvēku, var mainīt vietām ap *is*. Abos variantos *who called you* raksturo vīrieti."
+      }
+    },
+    {
+      "id": "c-1482",
+      "match": [
+        "text",
+        "Join the two plans in one sentence: I'll check the dates first. After that I'll book the tickets.",
+        "I'll check the dates before I book the tickets. | Before I book the tickets, I'll check the dates. | I will check the dates before I book the tickets. | Before I book the tickets, I will check the dates. | I'll book the tickets after I check the dates. | After I check the dates, I'll book the tickets. | I'll book the tickets once I check the dates. | Once I check the dates, I'll book the tickets. | I'll book the tickets after I have checked the dates. | After I have checked the dates, I'll book the tickets. | I'll book the tickets once I have checked the dates. | Once I have checked the dates, I'll book the tickets. | I'll book the tickets after I've checked the dates. | After I've checked the dates, I'll book the tickets. | I'll book the tickets once I've checked the dates. | Once I've checked the dates, I'll book the tickets. | I will book the tickets after I check the dates. | After I check the dates, I will book the tickets. | I will book the tickets once I check the dates. | Once I check the dates, I will book the tickets. | I will book the tickets after I have checked the dates. | After I have checked the dates, I will book the tickets. | I will book the tickets once I have checked the dates. | Once I have checked the dates, I will book the tickets. | I will book the tickets after I've checked the dates. | After I've checked the dates, I will book the tickets. | I will book the tickets once I've checked the dates. | Once I've checked the dates, I will book the tickets. | I'll check the dates before booking the tickets. | I will check the dates before booking the tickets. | Before booking the tickets, I'll check the dates. | Before booking the tickets, I will check the dates."
+      ],
+      "set": {
+        "3": "Join the two plans in one sentence. Keep their order; you can use before, after, once or and then: I'll check the dates first. After that I'll book the tickets.",
+        "4": "I'll check the dates before I book the tickets. | Before I book the tickets, I'll check the dates. | I will check the dates before I book the tickets. | Before I book the tickets, I will check the dates. | I'll book the tickets after I check the dates. | After I check the dates, I'll book the tickets. | I'll book the tickets once I check the dates. | Once I check the dates, I'll book the tickets. | I'll book the tickets after I have checked the dates. | After I have checked the dates, I'll book the tickets. | I'll book the tickets once I have checked the dates. | Once I have checked the dates, I'll book the tickets. | I'll book the tickets after I've checked the dates. | After I've checked the dates, I'll book the tickets. | I'll book the tickets once I've checked the dates. | Once I've checked the dates, I'll book the tickets. | I will book the tickets after I check the dates. | After I check the dates, I will book the tickets. | I will book the tickets once I check the dates. | Once I check the dates, I will book the tickets. | I will book the tickets after I have checked the dates. | After I have checked the dates, I will book the tickets. | I will book the tickets once I have checked the dates. | Once I have checked the dates, I will book the tickets. | I will book the tickets after I've checked the dates. | After I've checked the dates, I will book the tickets. | I will book the tickets once I've checked the dates. | Once I've checked the dates, I will book the tickets. | I'll check the dates before booking the tickets. | I will check the dates before booking the tickets. | Before booking the tickets, I'll check the dates. | Before booking the tickets, I will check the dates. | I'll check the dates and then I'll book the tickets. | I will check the dates and then I will book the tickets. | I'll check the dates and then book the tickets. | I will check the dates and then book the tickets.",
+        "6": "*Before*, *after* and *once* link the plans with a time clause; *and then* links the plans in the same order. Both types of sentence fit this instruction.",
+        "7": "*Before*, *after* un *once* saista plānus ar laika palīgteikumu; *and then* saista plānus tajā pašā secībā. Šai instrukcijai atbilst abi teikumu veidi.",
+        "9": "Join the two plans in one sentence: I'll check the dates first. After that I'll book the tickets."
+      }
+    }
+  ],
+  "compare-past-1.csv": [
+    {
+      "id": "c-2635",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "the phone rang while i was having a shower"
+      ],
+      "set": {
+        "5": "also accepted: while i was having a shower the phone rang",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "The phone rang during the shower. The while-clause can come before or after the main clause.",
+        "7": "Telefons zvanīja dušas laikā. Palīgteikums ar *while* var būt pirms vai pēc virsteikuma."
+      }
+    },
+    {
+      "id": "c-2680",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "she had been working there for ten years when she left"
+      ],
+      "set": {
+        "5": "also accepted: when she left she had been working there for ten years",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "The work continued for ten years before she left: *had been working*. The when-clause can come first or last.",
+        "7": "Darbs turpinājās desmit gadus, pirms viņa aizgāja: *had been working*. Palīgteikums ar *when* var būt sākumā vai beigās."
+      }
+    },
+    {
+      "id": "c-2665",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "it was raining when we left the house"
+      ],
+      "set": {
+        "5": "also accepted: when we left the house it was raining | we left the house when it was raining",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "The rain was in progress when they left. Either clause can describe the background or the time of the other event.",
+        "7": "Lietus lija brīdī, kad viņi izgāja. Abi teikumu varianti saista iziešanu ar tobrīd notiekošo lietu."
+      }
+    },
+    {
+      "id": "c-3217",
+      "match": [
+        "gap",
+        "___ you ___ Anna this morning? It's only ten o'clock. (see)",
+        "Have / seen"
+      ],
+      "set": {
+        "3": "I ___ Anna since primary school, and we are still friends. (know)",
+        "4": "have known",
+        "5": "",
+        "6": "Since primary school gives the starting point of a friendship that continues now: *I have known Anna since primary school*. Use *have known*, not *knew* or *have been knowing*.",
+        "7": "*Since primary school* norāda sākumu draudzībai, kas turpinās tagad: *I have known Anna since primary school*. Lieto *have known*, nevis *knew* vai *have been knowing*.",
+        "9": "___ you ___ Anna this morning? It's only ten o'clock. (see)",
+        "13": ""
+      }
+    },
+    {
+      "id": "c-3352",
+      "match": [
+        "gap",
+        "Kate ___ TV a lot when she was ill last year. (watch)",
+        "watched"
+      ],
+      "set": {
+        "4": "watched | was watching",
+        "6": "*Watched* sums up the illness period. *Was watching* describes a temporary repeated activity during that period; both fit this situation.",
+        "7": "*Watched* apkopo slimošanas periodu. *Was watching* apraksta īslaicīgu, atkārtotu darbību šajā periodā; šajā situācijā der abi varianti.",
+        "13": "was watching :: This describes a temporary repeated activity while she was ill. :: Tas apraksta īslaicīgu, atkārtotu darbību slimošanas laikā."
+      }
+    }
+  ],
+  "b1-new-1.csv": [
+    {
+      "id": "c-1309",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "i am not used to getting up so early"
+      ],
+      "set": {
+        "5": "also accepted: i am used to not getting up so early",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*Not used to getting up early* means early rising is unfamiliar. *Used to not getting up early* means late rising is normal. Both are grammatical, with different meanings.",
+        "7": "*Not used to getting up early* nozīmē, ka agra celšanās nav ierasta. *Used to not getting up early* nozīmē, ka necelties agri ir ierasti. Abi varianti ir gramatiski pareizi, bet to nozīmes atšķiras."
+      }
+    },
+    {
+      "id": "c-1304",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "she didn't use to enjoy cooking but now she loves it"
+      ],
+      "set": {
+        "5": "also accepted: she didn't use to enjoy cooking but she loves it now",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "Use *did not use to* for a past habit. *Now* can come before *she loves it* or at the end of that clause.",
+        "7": "Par pagātnes ieradumu lieto *did not use to*. *Now* var būt pirms *she loves it* vai šīs daļas beigās."
+      }
+    },
+    {
+      "id": "c-1319",
+      "match": [
+        "gap",
+        "When I was a teenager, I ___ any money, so I walked everywhere. (not / have)",
+        "didn't use to have | did not use to have | didn't have | did not have"
+      ],
+      "set": {
+        "4": "didn't use to have | did not use to have | didn't have | did not have | used not to have",
+        "13": "used not to have :: Correct, but formal. In everyday English we usually say did not use to have or did not have. :: Pareizi, bet formāli. Ikdienas angļu valodā parasti saka did not use to have vai did not have."
+      }
+    }
+  ],
+  "b1-new-5.csv": [
+    {
+      "id": "c-1923",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "they walked slowly to the station"
+      ],
+      "set": {
+        "5": "also accepted: they walked to the station slowly | they slowly walked to the station",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*Slowly* describes how they walked. It can come before *walked*, after it or at the end of the sentence.",
+        "7": "*Slowly* raksturo, kā viņi gāja. Tas var būt pirms vai pēc *walked*, kā arī teikuma beigās."
+      }
+    }
+  ],
+  "b1-new-3.csv": [
+    {
+      "id": "c-1489",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "you haven't seen my keys have you"
+      ],
+      "set": {
+        "5": "also accepted: you have seen my keys haven't you",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "A positive statement takes a negative tag: *have seen ... haven't you?* A negative statement takes a positive tag: *haven't seen ... have you?*",
+        "7": "Apgalvojošai daļai pievieno noliedzošu jautājuma piebildi: *have seen ... haven't you?* Noliedzošai daļai pievieno apgalvojošu: *haven't seen ... have you?*"
+      }
+    },
+    {
+      "id": "c-1491",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "she wasn't at the meeting was she"
+      ],
+      "set": {
+        "5": "also accepted: she was at the meeting wasn't she",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "Use *was ... wasn't she?* or *wasn't ... was she?* The statement and tag normally have opposite polarity.",
+        "7": "Lieto *was ... wasn't she?* vai *wasn't ... was she?* Teikuma daļai un jautājuma piebildei parasti ir pretējs noliegums."
+      }
+    }
+  ],
+  "more-1.csv": [
+    {
+      "id": "c-2463",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "my best friend lives near the station"
+      ],
+      "set": {
+        "5": "also accepted: the best friend lives near my station",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*My* can describe the friend or the station. Both arrangements have subject + *lives* + a place phrase, but refer to different situations.",
+        "7": "*My* var attiekties uz draugu vai staciju. Abos variantos ir teikuma priekšmets + *lives* + vietas apstāklis, bet tie apraksta atšķirīgas situācijas."
+      }
+    }
+  ],
+  "typical-b2c1-1.csv": [
+    {
+      "id": "c-3128",
+      "match": [
+        "gap",
+        "Could you tell me what time the museum ___? (open)",
+        "opens"
+      ],
+      "set": {
+        "4": "opens | will be open | will open | is opening | is going to open",
+        "6": "The embedded question has subject before verb: *the museum opens*. A future form also fits when asking about a future opening time.",
+        "7": "Netiešajā jautājumā teikuma priekšmets ir pirms darbības vārda: *the museum opens*. Jautājot par nākotnes atvēršanas laiku, der arī nākotnes forma.",
+        "13": "will be open :: Correct when asking about future opening hours. :: Pareizi, jautājot par darba laiku nākotnē."
+      }
+    }
+  ],
+  "a2-prepositions-1.csv": [
+    {
+      "id": "c-2292",
+      "match": [
+        "text",
+        "Correct the mistake: My birthday is in 5 May.",
+        "My birthday is on 5 May. | My birthday is on May 5. | My birthday is on the 5th of May."
+      ],
+      "set": {
+        "4": "My birthday is on 5 May. | My birthday is on May 5. | My birthday is on the 5th of May. | My birthday is on 5th May."
+      }
+    }
+  ],
+  "a2-forms-1.csv": [
+    {
+      "id": "c-2209",
+      "match": [
+        "gap",
+        "Many ___ came to the party. (person)",
+        "people"
+      ],
+      "set": {
+        "4": "people | persons",
+        "6": "*People* is the usual plural of *person* in everyday English. *Persons* is also grammatical, but is mainly used in formal or legal contexts.",
+        "7": "*People* ir parastā vārda *person* daudzskaitļa forma ikdienas angļu valodā. Arī *persons* ir gramatiski pareizi, bet to galvenokārt lieto formālā vai juridiskā valodā.",
+        "13": "persons :: Grammatically correct, but formal. People is more natural when talking about a party. :: Gramatiski pareizi, bet formāli. Runājot par ballīti, dabiskāk ir people."
+      }
+    }
+  ],
+  "modal-verbs-1.csv": [
+    {
+      "id": "c-0008",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "can you open the window please"
+      ],
+      "set": {
+        "5": "also accepted: please can you open the window | can you please open the window",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "In a request, *can* comes before *you*. *Please* can go at the start, after *you* or at the end.",
+        "7": "Lūgumā *can* ir pirms *you*. *Please* var būt sākumā, pēc *you* vai beigās."
+      }
+    },
+    {
+      "id": "c-0872",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "you don't have to pay for parking here"
+      ],
+      "set": {
+        "5": "also accepted: you don't have to pay here for parking",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*Do not have to* means it is not necessary. *Here* can come before or after *for parking*.",
+        "7": "*Do not have to* nozīmē, ka tas nav nepieciešams. *Here* var būt pirms vai pēc *for parking*."
+      }
+    }
+  ],
+  "a2-extras-1.csv": [
+    {
+      "id": "c-0133",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "how often do you visit your grandparents"
+      ],
+      "set": {
+        "5": "also accepted: how often do your grandparents visit you",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*How often do* introduces the question. Either *you* or *your grandparents* can be the subject; this changes who visits whom.",
+        "7": "Jautājumu ievada *How often do*. Teikuma priekšmets var būt *you* vai *your grandparents*; tas maina, kurš kuru apciemo."
+      }
+    }
+  ],
+  "b1-tenses-1.csv": [
+    {
+      "id": "c-0369",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "we missed the last train so we took a taxi home"
+      ],
+      "set": {
+        "5": "also accepted: we missed the last train home so we took a taxi",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*Home* can describe the train destination or the taxi journey. Both arrangements link the missed train to taking a taxi.",
+        "7": "*Home* var norādīt vilciena galamērķi vai taksometra brauciena virzienu. Abi varianti saista nokavēto vilcienu ar taksometra izvēli."
+      }
+    },
+    {
+      "id": "c-0290",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "the shop opens at nine on weekdays but closes early on sundays"
+      ],
+      "set": {
+        "5": "also accepted: on weekdays the shop opens early but on sundays closes at nine",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "Time phrases can change position. With no opening-hours facts supplied, *early* can describe weekdays or Sundays.",
+        "7": "Laika apstākļi var mainīt vietu. Ja darba laiki nav doti, *early* var attiekties uz darbdienām vai svētdienām."
+      }
+    },
+    {
+      "id": "c-0420",
+      "match": [
+        "text",
+        "Join with while: We were waiting. A man asked us for directions.",
+        "While we were waiting, a man asked us for directions. | A man asked us for directions while we were waiting."
+      ],
+      "set": {
+        "4": "While we were waiting, a man asked us for directions. | A man asked us for directions while we were waiting. | We were waiting while a man asked us for directions.",
+        "6": "*While* links overlapping events. Either event can be in the while-clause here: the people were waiting during the conversation.",
+        "7": "*While* saista notikumus, kas pārklājas laikā. Šeit jebkurš no tiem var būt *while* palīgteikumā: cilvēki gaidīja sarunas laikā."
+      }
+    }
+  ],
+  "b1-tenses-2.csv": [
+    {
+      "id": "c-0924",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "i have been waiting for the bus for twenty minutes"
+      ],
+      "set": {
+        "5": "also accepted: for twenty minutes i have been waiting for the bus | i have been waiting for twenty minutes for the bus",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "Use *have been waiting* for an activity continuing now. *For the bus* and *for twenty minutes* can appear in either order after it.",
+        "7": "Par darbību, kas turpinās tagad, lieto *have been waiting*. Aiz tā *for the bus* un *for twenty minutes* var būt abās secībās."
+      }
+    },
+    {
+      "id": "c-0896",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "my brother has been to australia twice but i have never been"
+      ],
+      "set": {
+        "5": "also accepted: i have never been to australia but my brother has been twice",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*But* contrasts two experiences. State *to Australia* in either clause; it can be left out of the other clause because the destination is understood.",
+        "7": "*But* pretstata divas pieredzes. *To Australia* var minēt jebkurā daļā un izlaist otrā, jo galamērķis ir saprotams."
+      }
+    },
+    {
+      "id": "c-0961",
+      "match": [
+        "order",
+        "Put the words in order.",
+        "we had finished dinner when our guests arrived"
+      ],
+      "set": {
+        "5": "also accepted: when our guests arrived we had finished dinner | when guests arrived we had finished our dinner",
+        "3": "Put all the words in order. More than one answer is possible.",
+        "6": "*Had finished* puts dinner before the guests arrived. The when-clause may come first, and *our* can describe the guests or the dinner.",
+        "7": "*Had finished* norāda, ka vakariņas bija pabeigtas pirms viesu ierašanās. Palīgteikums ar *when* var būt sākumā; *our* var attiekties uz viesiem vai vakariņām."
+      }
+    }
+  ]
+}

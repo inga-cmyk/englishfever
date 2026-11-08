@@ -241,6 +241,25 @@
 "why_lv": "Grafikiem lieto Present Simple, pat runājot par nākotni: *the flight leaves*."
 },
 {
+"id": "ps-B11-3b",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it negative and use 'any': She has money.",
+"answers": [
+[
+"She doesn't have any money.",
+"She does not have any money.",
+"She hasn't any money.",
+"She has not any money."
+]
+],
+"why": "Negative: *doesn't* + base verb. With *any* for uncountable or plural nouns.",
+"hints": [],
+"why_lv": "Noliegums: *doesn't* + pamatforma. Ar *any* pie neskaitāmiem vai daudzskaitļa lietvārdiem."
+},
+{
 "id": "ps-B11-4a",
 "skill": "present_simple",
 "level": "B1.1",
@@ -6208,5 +6227,30 @@
 "wrong_why": {},
 "why_lv": "Fiksētiem sarakstiem un grafikiem lieto Present Simple, pat runājot par nākotni.",
 "wrong_why_lv": {}
+},
+{
+"id": "cf-B12-3a-r3",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with unless: If you don't practise, you won't improve.",
+"answers": [
+[
+"Unless you practise, you won't improve.",
+"Unless you practice, you won't improve.",
+"You won't improve unless you practise.",
+"You won't improve unless you practice."
+]
+],
+"why": "*Unless* means *if ... not*, so the clause after it is usually positive: *Unless you practise, you won't improve.*",
+"hints": [
+[
+"unless you don't",
+"*Unless* already means *if ... not*, so the verb after it is normally positive: *Unless you practise, ...*",
+"*Unless* jau nozīmē *if ... not*, tāpēc darbības vārds aiz tā parasti ir apgalvojošā formā: *Unless you practise*, ..."
+]
+],
+"why_lv": "*Unless* nozīmē *if ... not*, tāpēc teikums aiz tā parasti ir apgalvojošs: *Unless you practise, you won't improve.*"
 }
 ]

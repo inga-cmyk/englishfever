@@ -354,7 +354,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "ps-B11-3b",
+"id": "ps-B11-3b-r2",
 "skill": "present_simple",
 "level": "B1.1",
 "bloom": 3,
@@ -365,12 +365,14 @@ return json_decode(<<<'EF_JSON_END'
 "She doesn't have any money.",
 "She does not have any money.",
 "She hasn't any money.",
-"She has not any money."
+"She has not any money.",
+"She hasn't got any money.",
+"She has not got any money."
 ]
 ],
-"why": "Negative: *doesn't* + base verb. With *any* for uncountable or plural nouns.",
+"why": "For possession, both *does not have any money* and *has not got any money* are correct negatives.",
 "hints": [],
-"why_lv": "Noliegums: *doesn't* + pamatforma. Ar *any* pie neskaitāmiem vai daudzskaitļa lietvārdiem."
+"why_lv": "Runājot par to, kas kādam ir, pareizi noliegumi ir gan *does not have any money*, gan *has not got any money*."
 },
 {
 "id": "ps-B11-4a-r3",
@@ -4960,7 +4962,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cf-B12-3a-r3",
+"id": "cf-B12-3a-r5",
 "skill": "cond_first",
 "level": "B1.2",
 "bloom": 3,
@@ -4971,10 +4973,12 @@ return json_decode(<<<'EF_JSON_END'
 "Unless you practise, you won't improve.",
 "Unless you practice, you won't improve.",
 "You won't improve unless you practise.",
-"You won't improve unless you practice."
+"You won't improve unless you practice.",
+"You will not improve unless you practise.",
+"You will not improve unless you practice."
 ]
 ],
-"why": "*Unless* means *if ... not*, so the clause after it is usually positive: *Unless you practise, you won't improve.*",
+"why": "*Unless* means *if not*. The unless-clause can come before or after the main clause.",
 "hints": [
 [
 "unless you don't",
@@ -4982,7 +4986,7 @@ return json_decode(<<<'EF_JSON_END'
 "*Unless* jau nozīmē *if ... not*, tāpēc darbības vārds aiz tā parasti ir apgalvojošā formā: *Unless you practise*, ..."
 ]
 ],
-"why_lv": "*Unless* nozīmē *if ... not*, tāpēc teikums aiz tā parasti ir apgalvojošs: *Unless you practise, you won't improve.*"
+"why_lv": "*Unless* nozīmē *if not*. Palīgteikums ar *unless* var būt pirms vai pēc virsteikuma."
 },
 {
 "id": "cf-B12-4a-r3",

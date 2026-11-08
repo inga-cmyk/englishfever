@@ -620,4 +620,29 @@ def revise(original):
         model="It is going to rain. I'll lend you my umbrella.",
         why='The clouds support a prediction: *It is going to rain*. *I will lend you my umbrella* offers help now.',
         why_lv='Mākoņi pamato prognozi: *It is going to rain*. *I will lend you my umbrella* ir palīdzības piedāvājums tagad.')
+    # Learner-answer audit, 8 November: unrestricted clause order and a valid
+    # possession negative. Preserve published originals under their earlier IDs.
+    report_fix('cf-B12-3a',
+        answers=[["Unless you practise, you won't improve.", "Unless you practice, you won't improve.",
+                  "You won't improve unless you practise.", "You won't improve unless you practice.",
+                  "You will not improve unless you practise.", "You will not improve unless you practice."]],
+        why='*Unless* means *if not*. The unless-clause can come before or after the main clause.',
+        why_lv='*Unless* nozīmē *if not*. Palīgteikums ar *unless* var būt pirms vai pēc virsteikuma.')
+    report_fix('ps-B11-3b',
+        answers=[["She doesn't have any money.", "She does not have any money.",
+                  "She hasn't any money.", "She has not any money.",
+                  "She hasn't got any money.", "She has not got any money."]],
+        why='For possession, both *does not have any money* and *has not got any money* are correct negatives.',
+        why_lv='Runājot par to, kas kādam ir, pareizi noliegumi ir gan *does not have any money*, gan *has not got any money*.')
+    # A rebuild must not allocate new IDs to unchanged published corrections.
+    # Some earlier passes choose an unused revision before the final wording is
+    # known; reuse the recorded final version when its content is identical.
+    for it in items:
+        base = re.sub(r'-r\d+$', '', it['id'])
+        content = {k: v for k, v in it.items() if k != 'id'}
+        same = [p for p in published.values()
+                if re.sub(r'-r\d+$', '', p['id']) == base
+                and {k: v for k, v in p.items() if k != 'id'} == content]
+        if same:
+            it['id'] = max(same, key=lambda p: int(re.search(r'-r(\d+)$', p['id']).group(1)) if re.search(r'-r(\d+)$', p['id']) else 1)['id']
     return items

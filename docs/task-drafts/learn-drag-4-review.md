@@ -28,9 +28,9 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
 
 ## Present perfect or past simple · B1.1
 
-6. *gap* · ___ you ___ Anna this morning? It's only ten o'clock. → **Have / seen** · words: Have / seen / Did / saw
-   - EN: Up to now (*since 2010*, *this morning* while it is still morning): *have* + 3rd form.
-   - LV: Līdz šim brīdim (*since 2010, this morning*, kamēr vēl ir rīts): *have* + 3. forma.
+6. *gap* · I ___ Anna since primary school, and we are still friends. (know) → **have known**
+   - EN: Since primary school gives the starting point of a friendship that continues now: *I have known Anna since primary school*. Use *have known*, not *knew* or *have been knowing*.
+   - LV: *Since primary school* norāda sākumu draudzībai, kas turpinās tagad: *I have known Anna since primary school*. Lieto *have known*, nevis *knew* vai *have been knowing*.
    - sentence from: compare-past-1.csv · line 28
 7. *gap* · I ___ there from 2010 to 2014. Now I work in Riga. → **worked** · words: worked / have worked / work
    - EN: A finished time (*from 2010 to 2014*, *yesterday*): past simple.
@@ -44,9 +44,9 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
    - EN: Your whole life up to now: *have never* + 3rd form.
    - LV: Visa dzīve līdz šim: *have never* + 3. forma.
    - sentence from: compare-past-1.csv · line 19
-10. *order* · Put the words in order. → **did you see Anna yesterday**
-   - EN: A finished time (*from 2010 to 2014*, *yesterday*): past simple. In a question the helping verb (or *am / is / are*) goes before the subject.
-   - LV: Pabeigts laiks (*from 2010* to 2014, *yesterday*): Past Simple. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.
+10. *order* · Put all the words in order. More than one answer is possible. → **did you see Anna yesterday** · also accepted: did Anna see you yesterday
+   - EN: After *did*, use the base form *see*. Either *you* or *Anna* can be the subject when no situation is specified.
+   - LV: Pēc *did* lieto pamatformu *see*. Ja situācija nav norādīta, teikuma priekšmets var būt gan *you*, gan *Anna*.
    - sentence from: compare-past-1.csv · line 27
 
 ## Second conditional (if + past, would) · B2.1

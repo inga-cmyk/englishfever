@@ -223,7 +223,8 @@ def save(name):
             out[3], out[4], out[5], out[13] = t, c, wr, notes
             if rep: out[9] = rep
             from screenshot_fixes import apply as screenshot_fix
-            w.writerow(screenshot_fix(name, out))
+            from learner_fixes import apply as learner_fix
+            w.writerow(learner_fix(name, screenshot_fix(name, out)))
     print(name, len(rows), "rows")
 
 

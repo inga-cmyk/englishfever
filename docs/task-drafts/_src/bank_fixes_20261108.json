@@ -886,6 +886,17 @@
     "5": "bank: were planning | are planning | have planned"
    },
    "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "When I was a child, we ___ to the lake every summer.",
+    "used to go"
+   ],
+   "set": {
+    "5": "bank: used to go | use to go | were used to going"
+   },
+   "batch": 4
   }
  ],
  "b1-tenses-2.csv": [
@@ -1666,6 +1677,160 @@
     "5": "bank: would have been | had told | had been | would have told"
    },
    "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "'I live in Riga.' She said she ___ in Riga.",
+    "lived"
+   ],
+   "set": {
+    "5": "bank: lived | had lived | will live"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'I'm tired.' He said he ___ tired.",
+    "was"
+   ],
+   "set": {
+    "5": "bank: was | had been | has been"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'We will help you.' They said they ___ help me.",
+    "would"
+   ],
+   "set": {
+    "5": "bank: would | did | had"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'I've finished.' She said she ___ finished.",
+    "had"
+   ],
+   "set": {
+    "5": "bank: had | have | did"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'I can swim.' He said he ___ swim.",
+    "could"
+   ],
+   "set": {
+    "5": "bank: could | was | had"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'I saw her yesterday.' He said he ___ her the day before.",
+    "had seen"
+   ],
+   "set": {
+    "5": "bank: had seen | has seen | is seeing"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'I'm leaving tomorrow.' She told me she ___ the next day.",
+    "was leaving"
+   ],
+   "set": {
+    "5": "bank: was leaving | is leaving | had left"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "'I don't like it.' He said he ___ it.",
+    "didn't like"
+   ],
+   "set": {
+    "5": "bank: didn't like | don't like | hadn't liked"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "He asked if I ___ help him.",
+    "could"
+   ],
+   "set": {
+    "5": "bank: could | can I | could I"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The teacher asked why we ___ late.",
+    "were"
+   ],
+   "set": {
+    "5": "bank: were | were we | did we"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "Could you tell me where ___ ?",
+    "the toilets are"
+   ],
+   "set": {
+    "5": "bank: the toilets are | are the toilets | is the toilet"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "Do you know what time the film ___ ?",
+    "starts"
+   ],
+   "set": {
+    "5": "bank: starts | does start | does it start"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "I'd like to know how much ___ .",
+    "it costs"
+   ],
+   "set": {
+    "5": "bank: it costs | does it cost | it does cost"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "Could you tell me why the shop ___ closed?",
+    "is"
+   ],
+   "set": {
+    "5": "bank: is | does | did"
+   },
+   "batch": 4
   }
  ],
  "learn-drag-3.csv": [
@@ -1690,6 +1855,17 @@
     "5": "bank: Had | read | Did | have"
    },
    "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "Mr Ozols asked whether the invoices ___ ___ sent.",
+    "had / been"
+   ],
+   "set": {
+    "5": "bank: had | been | did | is"
+   },
+   "batch": 4
   }
  ],
  "twins-1.csv": [
@@ -1716,6 +1892,160 @@
     "5": "bank: has | is having | does"
    },
    "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "You ___ wait. The shop is open all night.",
+    "needn't"
+   ],
+   "set": {
+    "5": "bank: needn't | must | can't"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "I was ___ in the film because it was so slow.",
+    "bored"
+   ],
+   "set": {
+    "5": "bank: bored | boring | excited"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "I am ___ in learning Japanese.",
+    "interested"
+   ],
+   "set": {
+    "5": "bank: interested | interesting | bored"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The lesson was very ___.",
+    "interesting"
+   ],
+   "set": {
+    "5": "bank: interesting | interested | bored"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The news was ___. Nobody expected it.",
+    "surprising"
+   ],
+   "set": {
+    "5": "bank: surprising | surprised | amazed"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "She was ___ after running ten kilometres.",
+    "exhausted"
+   ],
+   "set": {
+    "5": "bank: exhausted | exhausting | tiring"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The instructions were ___, so nobody understood them.",
+    "confusing"
+   ],
+   "set": {
+    "5": "bank: confusing | confused | puzzled"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "We are really ___ about the holiday.",
+    "excited"
+   ],
+   "set": {
+    "5": "bank: excited | exciting | bored"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The film was so slow that I was ___.",
+    "bored"
+   ],
+   "set": {
+    "5": "bank: bored | boring | interested"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "I felt very ___ after the long journey.",
+    "tired"
+   ],
+   "set": {
+    "5": "bank: tired | tiring | relaxing"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "That is a very ___ story. I want to read more.",
+    "interesting"
+   ],
+   "set": {
+    "5": "bank: interesting | interested | boring"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The match was so ___ that nobody wanted to leave.",
+    "exciting"
+   ],
+   "set": {
+    "5": "bank: exciting | excited | boring"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The exam was ___ because it was very long.",
+    "tiring"
+   ],
+   "set": {
+    "5": "bank: tiring | tired | relaxing"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "I was ___ at the price. It was much higher than I thought.",
+    "surprised"
+   ],
+   "set": {
+    "5": "bank: surprised | surprising | relaxed"
+   },
+   "batch": 4
   }
  ],
  "b1-passives-1.csv": [
@@ -2140,6 +2470,185 @@
     "5": "bank: will be | will | have"
    },
    "batch": 3
+  }
+ ],
+ "b1-new-1.csv": [
+  {
+   "match": [
+    "gap",
+    "We ___ to the same café every Friday when we were students.",
+    "used to go"
+   ],
+   "set": {
+    "5": "bank: used to go | use to go | were used to going"
+   },
+   "batch": 4
+  }
+ ],
+ "b1-new-2.csv": [
+  {
+   "match": [
+    "gap",
+    "I'll cook dinner when I ___ home.",
+    "get"
+   ],
+   "set": {
+    "5": "bank: get | will get | got"
+   },
+   "batch": 4
+  }
+ ],
+ "b1-new-3.csv": [
+  {
+   "match": [
+    "gap",
+    "Who ___ the window? Sam broke it.",
+    "broke"
+   ],
+   "set": {
+    "5": "bank: broke | breaks | was broken"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "Who ___ this beautiful picture? Picasso painted it.",
+    "painted"
+   ],
+   "set": {
+    "5": "bank: painted | paints | was painted"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "Who ___ you to the party? Sam invited me.",
+    "invited"
+   ],
+   "set": {
+    "5": "bank: invited | invites | was invited"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "What ___ to the old cinema last year?",
+    "happened"
+   ],
+   "set": {
+    "5": "bank: happened | happens | was happened"
+   },
+   "batch": 4
+  }
+ ],
+ "b1-new-5.csv": [
+  {
+   "match": [
+    "gap",
+    "She sings ___.",
+    "beautifully"
+   ],
+   "set": {
+    "5": "bank: beautifully | beautiful | good"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "He drives very ___.",
+    "carefully"
+   ],
+   "set": {
+    "5": "bank: carefully | careful | good"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "I can ___ see anything in the dark.",
+    "hardly"
+   ],
+   "set": {
+    "5": "bank: hardly | hard | almost"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ goes to the gym. Maybe once a year.",
+    "rarely"
+   ],
+   "set": {
+    "5": "bank: rarely | often | usually"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "The test was ___ easy.",
+    "extremely"
+   ],
+   "set": {
+    "5": "bank: extremely | extreme | enough"
+   },
+   "batch": 4
+  }
+ ],
+ "compare-past-1.csv": [
+  {
+   "match": [
+    "gap",
+    "We ___ tennis for half an hour when it started to rain.",
+    "had been playing"
+   ],
+   "set": {
+    "5": "bank: had been playing | have been playing | had been played | are playing"
+   },
+   "batch": 4
+  },
+  {
+   "match": [
+    "gap",
+    "At last the bus came. I ___ for twenty minutes.",
+    "had been waiting"
+   ],
+   "set": {
+    "5": "bank: had been waiting | have been waiting | had been waited | am waiting"
+   },
+   "batch": 4
+  }
+ ],
+ "comparison-1.csv": [
+  {
+   "match": [
+    "gap",
+    "The new model is much ___ than the old one. (reliable)",
+    "more reliable"
+   ],
+   "set": {
+    "5": "bank: more reliable | reliable | most reliable"
+   },
+   "batch": 4
+  }
+ ],
+ "unreal-time-1.csv": [
+  {
+   "match": [
+    "gap",
+    "It's high time we ___ home. The last bus leaves in ten minutes.",
+    "went"
+   ],
+   "set": {
+    "5": "bank: went | have gone | will go | had gone"
+   },
+   "batch": 4
   }
  ]
 }

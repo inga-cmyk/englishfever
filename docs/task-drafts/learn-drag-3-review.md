@@ -44,7 +44,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
    - same sentence as batch 3, no. 14: Report this. Start with *They asked*: 'What time should we arrive?' → They asked what time they should arrive.
 15. *gap* · He asked whether or not ___ ___ coming. → **I / was** · words: I / was / did / am · practice only
    - same sentence as batch 3, no. 15: Which sentence is NOT correct? → He asked whether or not was I coming.
-16. *gap* · Mr Ozols asked whether the invoices ___ ___ sent. → **had / been** · words: had / been / have / being · practice only
+16. *gap* · Mr Ozols asked whether the invoices ___ ___ sent. → **had / been** · words: had / been / did / is · practice only
    - same sentence as batch 3, no. 16: Choose the correct report of Mr Ozols's question: 'Have the invoices been sent?' → Mr Ozols asked whether the invoices had been sent.
 
 ## Reporting verbs (suggest, admit, promise...) · C1.2

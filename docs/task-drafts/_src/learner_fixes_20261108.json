@@ -159,23 +159,6 @@
         "6": "After *did*, use the base form *see*. Either *you* or *Anna* can be the subject when no situation is specified.",
         "7": "Pēc *did* lieto pamatformu *see*. Ja situācija nav norādīta, teikuma priekšmets var būt gan *you*, gan *Anna*."
       }
-    },
-    {
-      "id": "c-3217",
-      "match": [
-        "gap",
-        "___ you ___ Anna this morning? It's only ten o'clock.",
-        "Have / seen"
-      ],
-      "set": {
-        "3": "I ___ Anna since primary school, and we are still friends. (know)",
-        "4": "have known",
-        "5": "",
-        "6": "Since primary school gives the starting point of a friendship that continues now: *I have known Anna since primary school*. Use *have known*, not *knew* or *have been knowing*.",
-        "7": "*Since primary school* norāda sākumu draudzībai, kas turpinās tagad: *I have known Anna since primary school*. Lieto *have known*, nevis *knew* vai *have been knowing*.",
-        "9": "___ you ___ Anna this morning? It's only ten o'clock.",
-        "13": ""
-      }
     }
   ],
   "b1-new-2.csv": [

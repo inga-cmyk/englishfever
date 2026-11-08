@@ -4,7 +4,7 @@ Every task uses the sentence of an existing check / use task of that topic-level
 All are *practice only* (learning tasks, never evidence). Approved by the teacher on 4 November."""
 import csv
 from pathlib import Path
-from lib import Topic, rows, save, learning_task
+from lib import Topic, rows, save, learning_task, replaces
 
 ROOT = Path(__file__).resolve().parents[3]
 LINKS = []
@@ -37,7 +37,10 @@ bank(AUX, "A2.1", "aux-verbs-1.csv · line 44", "'Is it raining?' 'Yes, it ___.'
 PPS = "Present perfect or past simple"
 NOW = ("Up to now (*since 2010*, *this morning* while it is still morning): *have* + 3rd form.", "Līdz šim brīdim (*since 2010*, *this morning*, kamēr vēl ir rīts): *have* + 3. forma.")
 DONE = ("A finished time (*from 2010 to 2014*, *yesterday*): past simple.", "Pabeigts laiks (*from 2010 to 2014*, *yesterday*): Past Simple.")
-bank(PPS, "B1.1", "compare-past-1.csv · line 28", "___ you ___ Anna this morning? It's only ten o'clock.", ["Have", "seen"], ["Did", "saw"], NOW)
+bank(PPS, "B1.1", "compare-past-1.csv · line 28", "We ___ ___ this car since 2018, and it still runs perfectly.", ["have", "had"], ["were", "having"],   # new sentence: the old one was ambiguous and its check copy is now in compare-past-1 (teacher, 8 November, variant 2)
+     ("*Since 2018* and we still own it: up to now, use *have* + 3rd form: *have had*, not *were having*.",
+      "*Since 2018*, un mašīna joprojām ir mūsu: līdz šim brīdim, tāpēc lieto *have* + 3. formu: *have had*, nevis *were having*."))
+replaces("___ you ___ Anna this morning? It's only ten o'clock.")
 bank(PPS, "B1.1", "compare-past-1.csv · line 25", "I ___ there from 2010 to 2014. Now I work in Riga.", "worked", ["have worked", "work"], DONE)
 bank(PPS, "B1.1", "compare-past-1.csv · line 24", "I ___ here since 2010. I still work here.", "have worked", ["worked", "work"], NOW)
 order(PPS, "B1.1", "compare-past-1.csv · line 19", "I have never ridden a horse", ("Your whole life up to now: *have never* + 3rd form.", "Visa dzīve līdz šim: *have never* + 3. forma."))

@@ -117,3 +117,10 @@
 - In Latvian texts the people who use the app are *izglītojamie*, not *skolēni*.
 - Scope (teacher, 6 November): only the **task instructions** lose the grammar terms. Explanations (*Why*), answer notes and rule cards keep the grammar words (*present perfect, passive, 3rd form, verb, subject* …): there the learner may meet and learn the names.
 - Matching (teacher, 6 November): no two pairs whose meanings could be swapped. *I have just moved here* also means "I didn't live here before", so it cannot stand next to *I lived here … = I don't live here now*. Each right-hand side must fit only its own sentence.
+
+## Word-bank wrong options (teacher, 8 November)
+- Gaps may stay one word each, but the bank words must combine into **real tenses / forms**
+  (e.g. *We ___ ___ this car since 2018.* → were · have · had · having: *have had* is right, *were having* is a real
+  form that does not fit). The learner must know which form the sentence needs.
+- No wrong option that can be rejected without knowing the topic: no subject–verb mismatch (*We has*, *We is*),
+  no non-existent forms (*is get*), no word of another kind.

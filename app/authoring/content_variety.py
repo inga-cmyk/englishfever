@@ -140,9 +140,9 @@ gap('var-ps-a21-bank-01-r2', 'present_simple', 'A2.1',
     ['works', 'work'], ['working', 'does'],
     '*My sister* (= *she*) needs *works*. *Her friends* (= *they*) needs the base form *work*.',
     'Ar *my sister* (= *she*) lieto *works*. Ar *her friends* (= *they*) lieto pamatformu *work*.')
-gap('var-pc-a21-bank-01', 'present_continuous', 'A2.1',
+gap('var-pc-a21-bank-01-r2', 'present_continuous', 'A2.1',
     'Look! Anna ___ dinner and we ___ the table.',
-    ['is cooking', 'are setting'], ['is cook', 'sets'],
+    ['is cooking', 'are setting'], ['cooks', 'set'],   # real forms that do not fit Look! (teacher, 8 November)
     'Both actions are happening now. Use *is cooking* with *Anna* and *are setting* with *we*.',
     'Abas darbības notiek tagad. Ar *Anna* lieto *is cooking*, bet ar *we* — *are setting*.')
 gap('var-pa-a21-bank-01', 'past_simple', 'A2.1',
@@ -158,9 +158,9 @@ gap('var-pp-a22-bank-01', 'present_perfect', 'A2.2',
     'I have ___ my report, but I have not sent it ___.', ['already finished', 'yet'], ['finish', 'ago'],
     '*Already* says the first action is complete. *Not ... yet* says the second action has not happened up to now.',
     '*Already* norāda, ka pirmā darbība jau ir pabeigta. *Not ... yet* nozīmē, ka otrā darbība līdz šim vēl nav notikusi.')
-gap('var-fu-a22-bank-01', 'future', 'A2.2',
+gap('var-fu-a22-bank-01-r2', 'future', 'A2.2',
     'I decided yesterday: I ___ a course next month. The phone is ringing — I ___ it!',
-    ['am going to start', 'will answer'], ['will to start', 'answer'],
+    ['am going to start', 'will answer'], ['started', 'answer'],   # real forms (teacher, 8 November)
     '*Am going to start* expresses an existing plan. *I will answer* is an offer made at the moment of speaking.',
     '*Am going to start* izsaka iepriekš pieņemtu plānu. *I will answer* ir piedāvājums, kas izteikts runāšanas brīdī.')
 gap('var-psp-a22-bank-01-r2', 'present_simple_passive', 'A2.2',

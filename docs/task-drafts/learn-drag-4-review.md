@@ -21,7 +21,7 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
    - EN: A short answer repeats the helping verb of the question: *Did you…? Yes, I did.*
    - LV: Īsajā atbildē atkārto jautājuma palīgdarbības vārdu: *Did you*…? *Yes, I did.*
    - sentence from: aux-verbs-1.csv · line 38
-5. *gap* · 'Is it raining?' 'Yes, it ___.' → **is** · words: is / does / raining
+5. *gap* · 'Is it raining?' 'Yes, it ___.' → **is** · words: is / does / was
    - EN: A short answer repeats the helping verb of the question: *Did you…? Yes, I did.*
    - LV: Īsajā atbildē atkārto jautājuma palīgdarbības vārdu: *Did you*…? *Yes, I did.*
    - sentence from: aux-verbs-1.csv · line 44

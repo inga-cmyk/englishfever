@@ -224,7 +224,8 @@ def save(name):
             if rep: out[9] = rep
             from screenshot_fixes import apply as screenshot_fix
             from learner_fixes import apply as learner_fix
-            w.writerow(learner_fix(name, screenshot_fix(name, out)))
+            from bank_fixes import apply as bank_fix
+            w.writerow(bank_fix(name, learner_fix(name, screenshot_fix(name, out))))
     print(name, len(rows), "rows")
 
 

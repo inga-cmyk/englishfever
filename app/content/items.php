@@ -8619,7 +8619,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ar *my sister* (= *she*) lieto *works*. Ar *her friends* (= *they*) lieto pamatformu *work*."
 },
 {
-"id": "var-pc-a21-bank-01",
+"id": "var-pc-a21-bank-01-r2",
 "skill": "present_continuous",
 "level": "A2.1",
 "bloom": 3,
@@ -8637,8 +8637,8 @@ return json_decode(<<<'EF_JSON_END'
 "bank": [
 "is cooking",
 "are setting",
-"is cook",
-"sets"
+"cooks",
+"set"
 ],
 "hints": [],
 "why_lv": "Abas darbības notiek tagad. Ar *Anna* lieto *is cooking*, bet ar *we* — *are setting*."
@@ -8719,7 +8719,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Already* norāda, ka pirmā darbība jau ir pabeigta. *Not ... yet* nozīmē, ka otrā darbība līdz šim vēl nav notikusi."
 },
 {
-"id": "var-fu-a22-bank-01",
+"id": "var-fu-a22-bank-01-r2",
 "skill": "future",
 "level": "A2.2",
 "bloom": 3,
@@ -8737,7 +8737,7 @@ return json_decode(<<<'EF_JSON_END'
 "bank": [
 "am going to start",
 "will answer",
-"will to start",
+"started",
 "answer"
 ],
 "hints": [],

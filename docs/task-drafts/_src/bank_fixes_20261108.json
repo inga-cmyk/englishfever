@@ -1,0 +1,915 @@
+{
+ "a2-big-1.csv": [
+  {
+   "match": [
+    "gap",
+    "My dad ___ the dishes after dinner.",
+    "washes"
+   ],
+   "set": {
+    "5": "bank: washes | wash | has washed"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Ben ___ up at six, but his sisters ___ up at eight.",
+    "gets / get"
+   ],
+   "set": {
+    "5": "bank: gets | get | does | do"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Look! The cat ___ on the sofa.",
+    "is sleeping"
+   ],
+   "set": {
+    "5": "bank: is sleeping | sleeps | slept"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ dinner at the moment.",
+    "are having"
+   ],
+   "set": {
+    "5": "bank: are having | have | had"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Why ___ you ___ at me?",
+    "are / looking"
+   ],
+   "set": {
+    "5": "bank: are | looking | did | looked"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ a letter to my friend now.",
+    "am writing"
+   ],
+   "set": {
+    "5": "bank: am writing | write | was writing"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The students ___ not ___ because the teacher is late.",
+    "are / studying"
+   ],
+   "set": {
+    "5": "bank: are | studying | were | study"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Last night I ___ a good film.",
+    "watched"
+   ],
+   "set": {
+    "5": "bank: watched | have watched | am watching"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "___ you ___ your homework yesterday?",
+    "Did / do"
+   ],
+   "set": {
+    "5": "bank: Did | do | Have | done"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ a cake and ___ it to her friend.",
+    "made / took"
+   ],
+   "set": {
+    "5": "bank: made | took | has made | is taking",
+    "3": "Yesterday she ___ a cake and ___ it to her friend.",
+    "9": "She ___ a cake and ___ it to her friend."
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ at home because it ___ cold.",
+    "stayed / was"
+   ],
+   "set": {
+    "5": "bank: stayed | was | have stayed | is",
+    "3": "Yesterday they ___ at home because it ___ cold.",
+    "9": "They ___ at home because it ___ cold."
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "At eight o'clock I ___ my homework.",
+    "was doing"
+   ],
+   "set": {
+    "5": "bank: was doing | am doing | have done",
+    "3": "At eight o'clock last night I ___ my homework.",
+    "9": "At eight o'clock I ___ my homework."
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ lunch when the phone rang.",
+    "were having"
+   ],
+   "set": {
+    "5": "bank: were having | are having | have had"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "While Mum ___ dinner, Dad ___ the table.",
+    "was cooking / was setting"
+   ],
+   "set": {
+    "5": "bank: was cooking | was setting | is cooking | has set",
+    "3": "Yesterday evening, while Mum ___ dinner, Dad ___ the table.",
+    "9": "While Mum ___ dinner, Dad ___ the table."
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "___ you ___ when I knocked?",
+    "Were / sleeping"
+   ],
+   "set": {
+    "5": "bank: Were | sleeping | Did | slept"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The children ___ in the garden when it started to rain.",
+    "were playing"
+   ],
+   "set": {
+    "5": "bank: were playing | are playing | have played"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ a book when the lights went out.",
+    "was reading"
+   ],
+   "set": {
+    "5": "bank: was reading | is reading | has read"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ for the bus when it began to snow.",
+    "were waiting"
+   ],
+   "set": {
+    "5": "bank: were waiting | are waiting | have waited"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "It ___ heavily when we left, so we took umbrellas.",
+    "was raining"
+   ],
+   "set": {
+    "5": "bank: was raining | is raining | has rained"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "___ you ___ your lunch yet?",
+    "Have / eaten"
+   ],
+   "set": {
+    "5": "bank: Have | eaten | Did | ate"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ never ___ to Italy.",
+    "have / been"
+   ],
+   "set": {
+    "5": "bank: have | been | did | went"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ just ___ a new phone.",
+    "has / bought"
+   ],
+   "set": {
+    "5": "bank: has | bought | does | buying"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ already ___ the dishes.",
+    "have / washed"
+   ],
+   "set": {
+    "5": "bank: have | washed | are | wash"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "My parents ___ a trip to Spain next month.",
+    "are going to take"
+   ],
+   "set": {
+    "5": "bank: are going to take | take | have taken"
+   },
+   "batch": 1
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "match": [
+    "gap",
+    "My sister ___ in a hospital, but she ___ to move to the countryside.",
+    "works / wants"
+   ],
+   "set": {
+    "5": "bank: works | wants | is wanting"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The lesson ___ at 9.30, so we ___ to be there early.",
+    "starts / need"
+   ],
+   "set": {
+    "5": "bank: starts | need | started | are needing"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "He never ___ his phone during a meeting because it ___ rude.",
+    "uses / is"
+   ],
+   "set": {
+    "5": "bank: uses | is | is using | was"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Your sister speaks Italian, but ___ she speak French?",
+    "does"
+   ],
+   "set": {
+    "5": "bank: does | is | has"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "This bus ___ to the airport every twenty minutes.",
+    "goes"
+   ],
+   "set": {
+    "5": "bank: goes | is going | has gone"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ understand why she ___ always late.",
+    "don't / is"
+   ],
+   "set": {
+    "5": "bank: don't | is | am | does"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The company ___ over two hundred people and ___ offices in five countries.",
+    "employs / has"
+   ],
+   "set": {
+    "5": "bank: employs | has | is having"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The sun ___ in the east and ___ in the west.",
+    "rises / sets"
+   ],
+   "set": {
+    "5": "bank: rises | sets | is rising | has set"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Please don't call now. I ___ a very important meeting.",
+    "am having"
+   ],
+   "set": {
+    "5": "bank: am having | had | was having"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Our company ___ a new office, so everything ___ chaotic this week.",
+    "is opening / is"
+   ],
+   "set": {
+    "5": "bank: is opening | is | was opening | opens"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Children ___ taller than their parents these days.",
+    "are growing"
+   ],
+   "set": {
+    "5": "bank: are growing | grew | were growing"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I can't talk. I ___ for an exam tomorrow.",
+    "am studying"
+   ],
+   "set": {
+    "5": "bank: am studying | study | have studied"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Look! They ___ the old bridge with a new one.",
+    "are replacing"
+   ],
+   "set": {
+    "5": "bank: are replacing | replace | replaced"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Why ___ you ___ so quietly today? Is something wrong?",
+    "are / speaking"
+   ],
+   "set": {
+    "5": "bank: are | speaking | did | spoke"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Anna ___ for a new flat because her rent is too high.",
+    "is looking"
+   ],
+   "set": {
+    "5": "bank: is looking | looks | was looking"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ the report on Monday, but I ___ it to my boss until Friday.",
+    "finished / didn't send"
+   ],
+   "set": {
+    "5": "bank: finished | didn't send | have finished | haven't sent"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The thieves ___ through the window and ___ the jewellery.",
+    "climbed / stole"
+   ],
+   "set": {
+    "5": "bank: climbed | stole | have climbed | have stolen",
+    "3": "Last night the thieves ___ through the window and ___ the jewellery.",
+    "9": "The thieves ___ through the window and ___ the jewellery."
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "___ you ___ my message last night?",
+    "Did / get"
+   ],
+   "set": {
+    "5": "bank: Did | get | Have | got"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ in London for two years before she ___ to Paris.",
+    "lived / moved"
+   ],
+   "set": {
+    "5": "bank: lived | moved | has lived | has moved"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ a great meal, but the service ___ very slow.",
+    "had / was"
+   ],
+   "set": {
+    "5": "bank: had | was | have had | has been",
+    "3": "Last night we ___ a great meal, but the service ___ very slow.",
+    "9": "We ___ a great meal, but the service ___ very slow."
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ the shopping when I ___ my old teacher.",
+    "was doing / saw"
+   ],
+   "set": {
+    "5": "bank: was doing | saw | am doing | have seen"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "While we ___ for the train, it ___ to snow.",
+    "were waiting / began"
+   ],
+   "set": {
+    "5": "bank: were waiting | began | have waited | has begun"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The guests ___ when the power ___ off.",
+    "were dancing / went"
+   ],
+   "set": {
+    "5": "bank: were dancing | went | are dancing | has gone"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ to phone you, but I lost your number.",
+    "was going"
+   ],
+   "set": {
+    "5": "bank: was going | will go | have gone"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ to move, but then we found a better flat.",
+    "were planning"
+   ],
+   "set": {
+    "5": "bank: were planning | are planning | have planned"
+   },
+   "batch": 1
+  }
+ ],
+ "b1-tenses-2.csv": [
+  {
+   "match": [
+    "gap",
+    "I ___ my keys, so I can't get into the flat.",
+    "have lost"
+   ],
+   "set": {
+    "5": "bank: have lost | am losing | had lost"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ here since 2018, but she ___ to move next year.",
+    "has worked / plans"
+   ],
+   "set": {
+    "5": "bank: has worked | plans | works | is working"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ for an hour, and the bus still ___ .",
+    "have waited / hasn't come"
+   ],
+   "set": {
+    "5": "bank: have waited | hasn't come | are waiting | wasn't coming"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "How many countries ___ you ___ ?",
+    "have / visited"
+   ],
+   "set": {
+    "5": "bank: have | visited | did | were"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ never ___ a horse.",
+    "has / ridden"
+   ],
+   "set": {
+    "5": "bank: has | ridden | did | rode"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ this film three times, and I want to see it again.",
+    "have seen"
+   ],
+   "set": {
+    "5": "bank: have seen | am seeing | had seen"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ just ___ the final exam.",
+    "have / passed"
+   ],
+   "set": {
+    "5": "bank: have | passed | were | pass"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "It ___ rained for a week, so the river is very high.",
+    "has"
+   ],
+   "set": {
+    "5": "bank: has | is | was"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "My eyes hurt because I ___ at the screen all day.",
+    "have been looking"
+   ],
+   "set": {
+    "5": "bank: have been looking | am looking | had been looking"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "How long ___ they ___ for the results?",
+    "have / been waiting"
+   ],
+   "set": {
+    "5": "bank: have | been waiting | did | are"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ been ___ here since June.",
+    "have / living"
+   ],
+   "set": {
+    "5": "bank: have | living | are | lived"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ been ___ the guitar since he was ten.",
+    "has / playing"
+   ],
+   "set": {
+    "5": "bank: has | playing | is | played"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ all morning, so I'm tired.",
+    "have been working"
+   ],
+   "set": {
+    "5": "bank: have been working | am working | had been working"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "It ___ snowing since midnight.",
+    "has been"
+   ],
+   "set": {
+    "5": "bank: has been | is | was"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ for you for ages!",
+    "have been waiting"
+   ],
+   "set": {
+    "5": "bank: have been waiting | are waiting | wait"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ the report before the meeting started.",
+    "had finished"
+   ],
+   "set": {
+    "5": "bank: had finished | has finished | is finishing"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ never ___ snow before that day.",
+    "had / seen"
+   ],
+   "set": {
+    "5": "bank: had | seen | have | saw"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "He was angry because someone ___ his car.",
+    "had damaged"
+   ],
+   "set": {
+    "5": "bank: had damaged | has damaged | is damaging"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "By the time I called, they ___ .",
+    "had gone"
+   ],
+   "set": {
+    "5": "bank: had gone | have gone | are going"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "After they ___ dinner, they watched a film.",
+    "had eaten"
+   ],
+   "set": {
+    "5": "bank: had eaten | have eaten | were eating"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "___ you ___ the news before I told you?",
+    "Had / heard"
+   ],
+   "set": {
+    "5": "bank: Had | heard | Have | hear"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ the house when it started to rain.",
+    "had left"
+   ],
+   "set": {
+    "5": "bank: had left | have left | are leaving"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ her keys, so she couldn't get in.",
+    "had lost"
+   ],
+   "set": {
+    "5": "bank: had lost | has lost | is losing"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ you when I get to the airport.",
+    "will text"
+   ],
+   "set": {
+    "5": "bank: will text | text | texted"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Don't worry, I ___ you with the luggage.",
+    "'ll help"
+   ],
+   "set": {
+    "5": "bank: 'll help | help | helped"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "The sky is very dark. Look! It ___ rain very soon.",
+    "is going to"
+   ],
+   "set": {
+    "5": "bank: is going to | was going to | does"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ in Rome next week; the tickets are booked.",
+    "are staying"
+   ],
+   "set": {
+    "5": "bank: are staying | stay | stayed"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ to see the doctor tomorrow at ten.",
+    "is going"
+   ],
+   "set": {
+    "5": "bank: is going | went | has gone"
+   },
+   "batch": 1
+  }
+ ],
+ "contrast-1.csv": [
+  {
+   "match": [
+    "gap",
+    "I ___ my leg while I ___.",
+    "broke / was skiing"
+   ],
+   "set": {
+    "5": "bank: broke | was skiing | was breaking | have broken"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "Tom usually ___ to work, but today he ___ the bus.",
+    "walks / is taking"
+   ],
+   "set": {
+    "5": "bank: walks | is taking | is walking | takes"
+   },
+   "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ to Paris twice. The last time I ___ there was in May.",
+    "have been / went"
+   ],
+   "set": {
+    "5": "bank: have been | went | have gone | go"
+   },
+   "batch": 1
+  }
+ ],
+ "learn-drag-4.csv": [
+  {
+   "match": [
+    "gap",
+    "'Is it raining?' 'Yes, it ___.'",
+    "is"
+   ],
+   "set": {
+    "5": "bank: is | does | was"
+   },
+   "batch": 1
+  }
+ ]
+}

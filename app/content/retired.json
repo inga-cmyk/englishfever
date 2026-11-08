@@ -5521,6 +5521,56 @@
 "why_lv": "Ar *my sister* (= *she*) lieto *works*. Ar *her friends* (= *they*) lieto pamatformu *work*."
 },
 {
+"id": "var-pc-a21-bank-01",
+"skill": "present_continuous",
+"level": "A2.1",
+"bloom": 3,
+"kind": "gap",
+"q": "Look! Anna ___ dinner and we ___ the table.",
+"why": "Both actions are happening now. Use *is cooking* with *Anna* and *are setting* with *we*.",
+"answers": [
+[
+"is cooking"
+],
+[
+"are setting"
+]
+],
+"bank": [
+"is cooking",
+"are setting",
+"is cook",
+"sets"
+],
+"hints": [],
+"why_lv": "Abas darbības notiek tagad. Ar *Anna* lieto *is cooking*, bet ar *we* — *are setting*."
+},
+{
+"id": "var-fu-a22-bank-01",
+"skill": "future",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "I decided yesterday: I ___ a course next month. The phone is ringing — I ___ it!",
+"why": "*Am going to start* expresses an existing plan. *I will answer* is an offer made at the moment of speaking.",
+"answers": [
+[
+"am going to start"
+],
+[
+"will answer"
+]
+],
+"bank": [
+"am going to start",
+"will answer",
+"will to start",
+"answer"
+],
+"hints": [],
+"why_lv": "*Am going to start* izsaka iepriekš pieņemtu plānu. *I will answer* ir piedāvājums, kas izteikts runāšanas brīdī."
+},
+{
 "id": "var-psp-a22-bank-01",
 "skill": "present_simple_passive",
 "level": "A2.2",

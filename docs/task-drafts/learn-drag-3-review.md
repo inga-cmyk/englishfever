@@ -8,7 +8,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 1. *gap* · If I weren't so impatient, I ___ ___ sold my flat so cheaply last spring. → **wouldn't / have** · words: wouldn't / have / won't / had · practice only
    - same sentence as batch 3, no. 1: Complete: 'If I weren't so impatient, I ___ sold my flat so cheaply last spring.' → wouldn't have
 2. *gap* · If she ___ ___ German at school, she would be able to understand her new colleagues now. → **had / learned** · words: had / learned / has / learning · practice only
-   - same sentence as batch 3, no. 2: Imagine it was different. Rewrite as one sentence with *if*: She didn't learn German at school, so she can't understand her new colleagues now. → If she'd learned German at school, she would be able to understand her new colleagues now.
+   - same sentence as batch 3, no. 2: Imagine it was different. Rewrite as one sentence with *if*: She didn't learn German at school, so she can't understand her new colleagues now. → If she'd learned German at school, she'd be able to understand her new colleagues now.
 3. *order* · Put the words in order. → **if she were more patient she wouldn't have shouted at him** · also accepted: she wouldn't have shouted at him if she were more patient · practice only
    - same sentence as batch 3, no. 3: Which sentence is NOT correct? → If she would be more patient, she wouldn't have shouted at him.
 4. *gap* · If he ___ more confident, he ___ asked for a pay rise. → **were / would have** · words: were / would have / would be / will have · practice only

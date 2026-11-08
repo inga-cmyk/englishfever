@@ -8744,7 +8744,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Am going to start* izsaka iepriekš pieņemtu plānu. *I will answer* ir piedāvājums, kas izteikts runāšanas brīdī."
 },
 {
-"id": "var-psp-a22-bank-01-r2",
+"id": "var-psp-a22-bank-01-r3",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 3,
@@ -8762,14 +8762,14 @@ return json_decode(<<<'EF_JSON_END'
 "bank": [
 "is cleaned",
 "are washed",
-"is clean",
-"are wash"
+"cleans",
+"wash"
 ],
 "hints": [],
 "why_lv": "Vienai istabai lieto *is*, bet vairākiem logiem — *are*. Ciešamajā kārtā vajadzīgas 3. formas *cleaned* un *washed*."
 },
 {
-"id": "var-pasp-a22-bank-01-r2",
+"id": "var-pasp-a22-bank-01-r3",
 "skill": "past_simple_passive",
 "level": "A2.2",
 "bloom": 3,
@@ -8787,8 +8787,8 @@ return json_decode(<<<'EF_JSON_END'
 "bank": [
 "was delivered",
 "were signed",
-"was deliver",
-"were sign"
+"delivered",
+"signed"
 ],
 "hints": [],
 "why_lv": "*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*."

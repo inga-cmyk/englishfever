@@ -447,6 +447,164 @@
     "5": "bank: help | will help | helped"
    },
    "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "Pizza ___ in Italy and all over the world.",
+    "is eaten"
+   ],
+   "set": {
+    "5": "bank: is eaten | eats | is eating"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "These toys ___ in China.",
+    "are made"
+   ],
+   "set": {
+    "5": "bank: are made | make | are making"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "___ the shops closed on Sundays?",
+    "Are"
+   ],
+   "set": {
+    "5": "bank: Are | Do | Have"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Our homework ___ on the website every week.",
+    "is posted"
+   ],
+   "set": {
+    "5": "bank: is posted | posts | is posting"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Coffee ___ in Brazil.",
+    "is grown"
+   ],
+   "set": {
+    "5": "bank: is grown | grows | is growing",
+    "3": "Coffee ___ by farmers in Brazil.",
+    "9": "Coffee ___ in Brazil."
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The tickets ___ at the station.",
+    "are sold"
+   ],
+   "set": {
+    "5": "bank: are sold | sell | have sold"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Newspapers ___ at the corner shop.",
+    "are sold"
+   ],
+   "set": {
+    "5": "bank: are sold | sell | have sold"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The cake ___ by my grandmother.",
+    "was made"
+   ],
+   "set": {
+    "5": "bank: was made | made | has made"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Two windows ___ in the storm.",
+    "were broken"
+   ],
+   "set": {
+    "5": "bank: were broken | broke | have broken",
+    "3": "Two windows ___ by the storm.",
+    "9": "Two windows ___ in the storm."
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "___ the film shot in Spain?",
+    "Was"
+   ],
+   "set": {
+    "5": "bank: Was | Did | Has"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "This song ___ in 1985.",
+    "was written"
+   ],
+   "set": {
+    "5": "bank: was written | wrote | has been written"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The prizes ___ to the best students.",
+    "were given"
+   ],
+   "set": {
+    "5": "bank: were given | gave | have given"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "My bag ___ at the airport.",
+    "was found"
+   ],
+   "set": {
+    "5": "bank: was found | found | has found"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The room ___ before the guests arrived.",
+    "was cleaned"
+   ],
+   "set": {
+    "5": "bank: was cleaned | cleaned | has cleaned"
+   },
+   "batch": 3
   }
  ],
  "b1-tenses-1.csv": [
@@ -1545,6 +1703,443 @@
     "5": "bank: Had | studied | Did | study"
    },
    "batch": 2
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "match": [
+    "gap",
+    "She ___ her hair cut every month.",
+    "has"
+   ],
+   "set": {
+    "5": "bank: has | is having | does"
+   },
+   "batch": 3
+  }
+ ],
+ "b1-passives-1.csv": [
+  {
+   "match": [
+    "gap",
+    "The reports ___ by the manager every Friday.",
+    "are signed"
+   ],
+   "set": {
+    "5": "bank: are signed | sign | are signing"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Where ___ these chocolates ___ ?",
+    "are / made"
+   ],
+   "set": {
+    "5": "bank: are | made | do | making"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Wine ___ in many parts of Italy.",
+    "is produced"
+   ],
+   "set": {
+    "5": "bank: is produced | produces | is producing"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The shop ___ by two sisters, and the products ___ locally.",
+    "is run / are made"
+   ],
+   "set": {
+    "5": "bank: is run | are made | runs | make"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Tickets ___ online and ___ by email.",
+    "are sold / are sent"
+   ],
+   "set": {
+    "5": "bank: are sold | are sent | have sold | send"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "This room ___ for meetings only.",
+    "is used"
+   ],
+   "set": {
+    "5": "bank: is used | uses | is using"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "___ the instructions ___ in several languages?",
+    "Are / written"
+   ],
+   "set": {
+    "5": "bank: Are | written | Do | writing"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Nothing ___ without a reason in this company.",
+    "is done"
+   ],
+   "set": {
+    "5": "bank: is done | does | is doing"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The windows ___ once a month by a professional.",
+    "are cleaned"
+   ],
+   "set": {
+    "5": "bank: are cleaned | clean | are cleaning"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The letter ___ to the wrong address.",
+    "was sent"
+   ],
+   "set": {
+    "5": "bank: was sent | sent | has sent"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Two men ___ after the robbery.",
+    "were arrested"
+   ],
+   "set": {
+    "5": "bank: were arrested | arrested | have arrested"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The film ___ in Spain in 2015.",
+    "was shot"
+   ],
+   "set": {
+    "5": "bank: was shot | shot | has been shot"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The prizes ___ by the mayor last night.",
+    "were presented"
+   ],
+   "set": {
+    "5": "bank: were presented | presented | have been presented"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Several people ___ in the accident.",
+    "were injured"
+   ],
+   "set": {
+    "5": "bank: were injured | injured | have injured"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The village ___ by a flood in 1990.",
+    "was destroyed"
+   ],
+   "set": {
+    "5": "bank: was destroyed | destroyed | has been destroyed"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The meeting ___ because the manager was ill.",
+    "was cancelled"
+   ],
+   "set": {
+    "5": "bank: was cancelled | cancelled | has cancelled"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "All the documents ___ before the deadline.",
+    "were sent"
+   ],
+   "set": {
+    "5": "bank: were sent | sent | have sent"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The streets ___ cleaned right now.",
+    "are being"
+   ],
+   "set": {
+    "5": "bank: are being | have been | were"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Our flat ___ painted this week.",
+    "is being"
+   ],
+   "set": {
+    "5": "bank: is being | is | has been",
+    "3": "Our flat ___ painted at the moment.",
+    "9": "Our flat ___ painted this week."
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The new library ___ ___ at the moment.",
+    "is / being built"
+   ],
+   "set": {
+    "5": "bank: is | being built | was | building"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Please wait. Your food ___ prepared.",
+    "is being"
+   ],
+   "set": {
+    "5": "bank: is being | was being | is"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Sorry, the computers ___ updated, so you can't use them.",
+    "are being"
+   ],
+   "set": {
+    "5": "bank: are being | have been | were being"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Look! The old building ___ down.",
+    "is being pulled"
+   ],
+   "set": {
+    "5": "bank: is being pulled | is pulling | was pulled"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "I can't answer now: my application ___ checked.",
+    "is being"
+   ],
+   "set": {
+    "5": "bank: is being | has been | was"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The patients ___ looked after by two nurses.",
+    "are being"
+   ],
+   "set": {
+    "5": "bank: are being | have been | were being",
+    "3": "At the moment the patients ___ looked after by two nurses.",
+    "9": "The patients ___ looked after by two nurses."
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "A film ___ ___ in our street this week.",
+    "is / being shot"
+   ],
+   "set": {
+    "5": "bank: is | being shot | has | shot"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Two new teachers ___ ___ this year.",
+    "have / been hired"
+   ],
+   "set": {
+    "5": "bank: have | been hired | are | hired"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "___ the winner ___ announced yet?",
+    "Has / been"
+   ],
+   "set": {
+    "5": "bank: Has | been | Did | be"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Our flight ___ cancelled, so we are staying here.",
+    "has been"
+   ],
+   "set": {
+    "5": "bank: has been | had been | is being"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "These rules ___ changed several times.",
+    "have been"
+   ],
+   "set": {
+    "5": "bank: have been | are being | are"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ asked to speak at the conference.",
+    "have been"
+   ],
+   "set": {
+    "5": "bank: have been | am being | was being"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Your parcel ___ tomorrow morning.",
+    "will be delivered"
+   ],
+   "set": {
+    "5": "bank: will be delivered | will deliver | was delivered"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The new school ___ next autumn.",
+    "will be opened"
+   ],
+   "set": {
+    "5": "bank: will be opened | was opened | has been opened"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "___ the results ___ online?",
+    "Will / be published"
+   ],
+   "set": {
+    "5": "bank: Will | be published | Are | publish"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The tickets ___ sold after Friday.",
+    "won't be"
+   ],
+   "set": {
+    "5": "bank: won't be | won't | haven't"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Everyone ___ informed by email.",
+    "will be"
+   ],
+   "set": {
+    "5": "bank: will be | will | has"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "The old building ___ down next year.",
+    "will be pulled"
+   ],
+   "set": {
+    "5": "bank: will be pulled | will pull | was pulled"
+   },
+   "batch": 3
+  },
+  {
+   "match": [
+    "gap",
+    "Your questions ___ answered soon.",
+    "will be"
+   ],
+   "set": {
+    "5": "bank: will be | will | have"
+   },
+   "batch": 3
   }
  ]
 }

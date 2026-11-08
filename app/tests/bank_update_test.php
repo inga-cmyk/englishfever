@@ -41,7 +41,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 335, 'Unexpected correction count');   // +2: learner-answer audit, +2: word-bank options batches 1-2 (8 November); active count unchanged
+check(count($retired) === 337, 'Unexpected correction count');   // +2: learner-answer audit, +2: word-bank options batches 1-3 (8 November); active count unchanged
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

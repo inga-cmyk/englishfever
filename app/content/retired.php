@@ -6332,6 +6332,56 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
 },
 {
+"id": "var-psp-a22-bank-01-r2",
+"skill": "present_simple_passive",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Complete: This room ___ every day. The windows ___ once a month.",
+"why": "Use *is* for one room and *are* for several windows: *is cleaned*, *are washed*.",
+"answers": [
+[
+"is cleaned"
+],
+[
+"are washed"
+]
+],
+"bank": [
+"is cleaned",
+"are washed",
+"is clean",
+"are wash"
+],
+"hints": [],
+"why_lv": "Vienai istabai lieto *is*, bet vairākiem logiem — *are*. Ciešamajā kārtā vajadzīgas 3. formas *cleaned* un *washed*."
+},
+{
+"id": "var-pasp-a22-bank-01-r2",
+"skill": "past_simple_passive",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Complete: The parcel ___ yesterday, and the documents ___ this morning.",
+"why": "*The parcel* is singular, so use *was delivered*. *The documents* is plural, so use *were signed*.",
+"answers": [
+[
+"was delivered"
+],
+[
+"were signed"
+]
+],
+"bank": [
+"was delivered",
+"were signed",
+"was deliver",
+"were sign"
+],
+"hints": [],
+"why_lv": "*The parcel* ir vienskaitlī, tāpēc lieto *was delivered*. *The documents* ir daudzskaitlī, tāpēc lieto *were signed*."
+},
+{
 "id": "var-cf-a22-bank-01-r2",
 "skill": "cond_first",
 "level": "A2.2",

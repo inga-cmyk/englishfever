@@ -634,6 +634,8 @@ def revise(original):
                   "She hasn't got any money.", "She has not got any money."]],
         why='For possession, both *does not have any money* and *has not got any money* are correct negatives.',
         why_lv='Runājot par to, kas kādam ir, pareizi noliegumi ir gan *does not have any money*, gan *has not got any money*.')
+    # Word banks with real forms (teacher, 8 November, batch 2): wrong chips are real forms that do not fit
+    report_fix('cs-B11-3b', bank=['were', 'would', 'am', 'will'])
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

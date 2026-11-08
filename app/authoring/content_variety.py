@@ -178,9 +178,9 @@ gap('var-pcp-b12-bank-01-r3', 'present_continuous_passive', 'B1.2',
     ['is being prepared', 'are being cleaned'], ['is preparing', 'are cleaning'],
     'The order and tables receive the actions. Use *is/are being + past participle* for passive actions in progress.',
     'Pasūtījums un galdi ir tas, ar ko kaut kas tiek darīts. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu.')
-gap('var-cf-a22-bank-01-r2', 'cond_first', 'A2.2',
+gap('var-cf-a22-bank-01-r3', 'cond_first', 'A2.2',
     'Complete: If she ___ early, we ___ the bus.',
-    ['arrives', 'will catch'], ['will arrives', 'caught'],
+    ['arrives', 'will catch'], ['will arrive', 'caught'],   # real forms (teacher, 8 November)
     'After *if*, use the present simple *arrives*. The possible future result is *will catch*.',
     'Pēc *if* lieto Present Simple formu *arrives*. Iespējamo nākotnes rezultātu izsaka *will catch*.')
 gap('var-cs-b11-bank-01-r2', 'cond_second', 'B1.1',

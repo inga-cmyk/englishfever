@@ -5159,7 +5159,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "cs-B11-3b-r2",
+"id": "cs-B11-3b-r3",
 "skill": "cond_second",
 "level": "B1.1",
 "bloom": 3,
@@ -5178,8 +5178,8 @@ return json_decode(<<<'EF_JSON_END'
 "bank": [
 "were",
 "would",
-"will",
-"being"
+"am",
+"will"
 ],
 "why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
 },
@@ -8819,7 +8819,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pasūtījums un galdi ir tas, ar ko kaut kas tiek darīts. Pašlaik notiekošai darbībai ciešamajā kārtā lieto *is/are being* un 3. formu."
 },
 {
-"id": "var-cf-a22-bank-01-r2",
+"id": "var-cf-a22-bank-01-r3",
 "skill": "cond_first",
 "level": "A2.2",
 "bloom": 3,
@@ -8837,7 +8837,7 @@ return json_decode(<<<'EF_JSON_END'
 "bank": [
 "arrives",
 "will catch",
-"will arrives",
+"will arrive",
 "caught"
 ],
 "hints": [],

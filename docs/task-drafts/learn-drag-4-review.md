@@ -74,7 +74,7 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
 
 ## Third conditional (if + had done, would have done) · B2.1
 
-16. *gap* · She would have passed the exam if she ___ ___ harder. → **had / studied** · words: had / studied / has / studying
+16. *gap* · She would have passed the exam if she ___ ___ harder. → **had / studied** · words: had / studied / has / was
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B21-1a
@@ -97,7 +97,7 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
 
 ## Third conditional (if + had done, would have done) · B2.2
 
-21. *gap* · If she ___ ___ the warning, she would have avoided the accident. → **had / heard** · words: had / heard / has / hearing
+21. *gap* · If she ___ ___ the warning, she would have avoided the accident. → **had / heard** · words: had / heard / has / was
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B22-1a-r2

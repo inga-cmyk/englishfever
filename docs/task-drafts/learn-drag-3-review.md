@@ -7,7 +7,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 
 1. *gap* · If I weren't so impatient, I ___ ___ sold my flat so cheaply last spring. → **wouldn't / have** · words: wouldn't / have / won't / had · practice only
    - same sentence as batch 3, no. 1: Complete: 'If I weren't so impatient, I ___ sold my flat so cheaply last spring.' → wouldn't have
-2. *gap* · If she ___ ___ German at school, she would be able to understand her new colleagues now. → **had / learned** · words: had / learned / has / learning · practice only
+2. *gap* · If she ___ ___ German at school, she would be able to understand her new colleagues now. → **had / learned** · words: had / learned / has / would · practice only
    - same sentence as batch 3, no. 2: Imagine it was different. Rewrite as one sentence with *if*: She didn't learn German at school, so she can't understand her new colleagues now. → If she'd learned German at school, she'd be able to understand her new colleagues now.
 3. *order* · Put the words in order. → **if she were more patient she wouldn't have shouted at him** · also accepted: she wouldn't have shouted at him if she were more patient · practice only
    - same sentence as batch 3, no. 3: Which sentence is NOT correct? → If she would be more patient, she wouldn't have shouted at him.
@@ -18,7 +18,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 
 5. *order* · Put the words in order. → **had we booked earlier we would be on the beach now** · also accepted: we would be on the beach now had we booked earlier · practice only
    - same sentence as batch 3, no. 5: Which sentence without *if* is correct? → Had we booked earlier, we would be on the beach now.
-6. *gap* · ___ I ___ the contract more carefully, I wouldn't be paying these fees now. → **Had / read** · words: Had / read / Did / reading · practice only
+6. *gap* · ___ I ___ the contract more carefully, I wouldn't be paying these fees now. → **Had / read** · words: Had / read / Did / have · practice only
    - same sentence as batch 3, no. 6: Rewrite starting with *Had*: If I had read the contract more carefully, I wouldn't be paying these fees now. → Had I read the contract more carefully, I wouldn't be paying these fees now.
 7. *order* · Put the words in order. → **had she not missed the train she would be here now** · also accepted: she would be here now had she not missed the train · practice only
    - same sentence as batch 3, no. 7: Which sentence is NOT correct? → Hadn't she missed the train, she'd be here now.

@@ -271,6 +271,182 @@
     "5": "bank: are going to take | take | have taken"
    },
    "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ metal, it gets hot.",
+    "heat"
+   ],
+   "set": {
+    "5": "bank: heat | will heat | heated"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ too much coffee, I can't sleep.",
+    "drink"
+   ],
+   "set": {
+    "5": "bank: drink | will drink | would drink"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "Water ___ if the temperature goes below zero.",
+    "freezes"
+   ],
+   "set": {
+    "5": "bank: freezes | froze | would freeze"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ a cold, you often feel tired.",
+    "have"
+   ],
+   "set": {
+    "5": "bank: have | will have | had"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "When it ___ , the grass grows.",
+    "rains"
+   ],
+   "set": {
+    "5": "bank: rains | will rain | rained"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ butter in the sun, it melts.",
+    "leave"
+   ],
+   "set": {
+    "5": "bank: leave | will leave | would leave"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If people ___ enough, they get ill.",
+    "don't sleep"
+   ],
+   "set": {
+    "5": "bank: don't sleep | won't sleep | didn't sleep"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "The ice ___ if you put it in a warm room.",
+    "melts"
+   ],
+   "set": {
+    "5": "bank: melts | melted | would melt"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If a baby ___ hungry, it cries.",
+    "is"
+   ],
+   "set": {
+    "5": "bank: is | will be | was"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ time tomorrow, I will call you.",
+    "have"
+   ],
+   "set": {
+    "5": "bank: have | will have | had"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ late if we don't leave now.",
+    "will be"
+   ],
+   "set": {
+    "5": "bank: will be | would be | were"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ the exam, your parents will be proud.",
+    "pass"
+   ],
+   "set": {
+    "5": "bank: pass | will pass | passed"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If it ___ tonight, we won't go out.",
+    "rains"
+   ],
+   "set": {
+    "5": "bank: rains | will rain | rained"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ you if you ask her nicely.",
+    "will help"
+   ],
+   "set": {
+    "5": "bank: will help | would help | helped"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If they ___ early, they will get good seats.",
+    "arrive"
+   ],
+   "set": {
+    "5": "bank: arrive | will arrive | arrived"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ me, I'll tell you a secret.",
+    "help"
+   ],
+   "set": {
+    "5": "bank: help | will help | helped"
+   },
+   "batch": 2
   }
  ],
  "b1-tenses-1.csv": [
@@ -910,6 +1086,465 @@
     "5": "bank: is | does | was"
    },
    "batch": 1
+  },
+  {
+   "match": [
+    "gap",
+    "She would have passed the exam if she ___ ___ harder.",
+    "had / studied"
+   ],
+   "set": {
+    "5": "bank: had | studied | has | was"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If she ___ ___ the warning, she would have avoided the accident.",
+    "had / heard"
+   ],
+   "set": {
+    "5": "bank: had | heard | has | was"
+   },
+   "batch": 2
+  }
+ ],
+ "a2-forms-1.csv": [
+  {
+   "match": [
+    "gap",
+    "___ she ___ earlier, she would have caught the train.",
+    "Had / left"
+   ],
+   "set": {
+    "5": "bank: Had | left | Did | leave"
+   },
+   "batch": 2
+  }
+ ],
+ "b1-cond-rep-1.csv": [
+  {
+   "match": [
+    "gap",
+    "If the alarm ___ , everybody ___ the building.",
+    "goes off / leaves"
+   ],
+   "set": {
+    "5": "bank: goes off | leaves | will go off | would leave"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ the ice, it ___ quickly.",
+    "heat / melts"
+   ],
+   "set": {
+    "5": "bank: heat | melts | will heat | melted"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "When the temperature ___ below zero, the water ___ .",
+    "drops / freezes"
+   ],
+   "set": {
+    "5": "bank: drops | freezes | will drop | froze"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If people ___ enough water, they ___ tired.",
+    "don't drink / feel"
+   ],
+   "set": {
+    "5": "bank: don't drink | feel | won't drink | felt"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "Customers ___ extra if they ___ late.",
+    "pay / are"
+   ],
+   "set": {
+    "5": "bank: pay | are | paid | will be"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If it ___ , the match ___ postponed.",
+    "rains / is"
+   ],
+   "set": {
+    "5": "bank: rains | is | will rain | was"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ the app, it ___ your location.",
+    "open / shows"
+   ],
+   "set": {
+    "5": "bank: open | shows | will open | showed"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "My phone ___ down if I ___ too many apps.",
+    "slows / open"
+   ],
+   "set": {
+    "5": "bank: slows | open | will open | slowed"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If a student ___ ill, the school ___ the parents.",
+    "is / calls"
+   ],
+   "set": {
+    "5": "bank: is | calls | will be | called"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "Bread ___ hard if you ___ it open.",
+    "goes / leave"
+   ],
+   "set": {
+    "5": "bank: goes | leave | will leave | went"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If she ___ the interview, she ___ the job.",
+    "passes / will get"
+   ],
+   "set": {
+    "5": "bank: passes | will get | will pass | would get"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ the match if the rain ___ .",
+    "will cancel / doesn't stop"
+   ],
+   "set": {
+    "5": "bank: will cancel | doesn't stop | would cancel | won't stop"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "Unless you ___ now, you ___ the last bus.",
+    "leave / will miss"
+   ],
+   "set": {
+    "5": "bank: leave | will miss | will leave | would miss"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If it ___ tomorrow, we ___ the picnic.",
+    "rains / will move"
+   ],
+   "set": {
+    "5": "bank: rains | will move | will rain | moved"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ you a lift if you ___ ready by eight.",
+    "will give / are"
+   ],
+   "set": {
+    "5": "bank: will give | are | will be | gave"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ her, she ___ you.",
+    "help / will thank"
+   ],
+   "set": {
+    "5": "bank: help | will thank | will help | thanked"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ late unless they ___ a taxi.",
+    "will be / take"
+   ],
+   "set": {
+    "5": "bank: will be | take | will take | were"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If he ___ the keys, we ___ in.",
+    "finds / will get"
+   ],
+   "set": {
+    "5": "bank: finds | will get | will find | got"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ a car, I ___ to work.",
+    "had / would drive"
+   ],
+   "set": {
+    "5": "bank: had | would drive | will have | will drive"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ happier if she ___ a new job.",
+    "would be / found"
+   ],
+   "set": {
+    "5": "bank: would be | found | will be | would find"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If we ___ more space, we ___ a dog.",
+    "had / would get"
+   ],
+   "set": {
+    "5": "bank: had | would get | will have | will get"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "What ___ you do if you ___ a million?",
+    "would / won"
+   ],
+   "set": {
+    "5": "bank: would | won | will | would win"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ you, I ___ apologise.",
+    "were / would"
+   ],
+   "set": {
+    "5": "bank: were | would | am | will"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ better if he ___ harder.",
+    "would play / practised"
+   ],
+   "set": {
+    "5": "bank: would play | practised | will play | would practise"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ the flat if it ___ cheaper.",
+    "would buy / were"
+   ],
+   "set": {
+    "5": "bank: would buy | were | will buy | would be"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ the alarm, I ___ late.",
+    "had heard / wouldn't have been"
+   ],
+   "set": {
+    "5": "bank: had heard | wouldn't have been | would have heard | wasn't"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ the exam if she ___ harder.",
+    "would have passed / had studied"
+   ],
+   "set": {
+    "5": "bank: would have passed | had studied | had passed | would have studied"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If we ___ the map, we ___ lost.",
+    "had taken / wouldn't have got"
+   ],
+   "set": {
+    "5": "bank: had taken | wouldn't have got | would have taken | didn't get"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ surprised if they ___ the news.",
+    "would have been / had known"
+   ],
+   "set": {
+    "5": "bank: would have been | had known | had been | would have known"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ you if I ___ your number.",
+    "would have called / had had"
+   ],
+   "set": {
+    "5": "bank: would have called | had had | will call | would have had"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If he ___ earlier, he ___ the train.",
+    "had left / would have caught"
+   ],
+   "set": {
+    "5": "bank: had left | would have caught | would have left | caught"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ the match if the goalkeeper ___ ill.",
+    "would have won / hadn't been"
+   ],
+   "set": {
+    "5": "bank: would have won | hadn't been | had won | wouldn't have been"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If you ___ me, I ___ you.",
+    "had asked / would have helped"
+   ],
+   "set": {
+    "5": "bank: had asked | would have helped | would have asked | helped"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "If it ___ , we ___ a picnic.",
+    "hadn't rained / would have had"
+   ],
+   "set": {
+    "5": "bank: hadn't rained | would have had | wouldn't have rained | had had"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "He ___ angry if you ___ him the truth.",
+    "would have been / had told"
+   ],
+   "set": {
+    "5": "bank: would have been | had told | had been | would have told"
+   },
+   "batch": 2
+  }
+ ],
+ "learn-drag-3.csv": [
+  {
+   "match": [
+    "gap",
+    "If she ___ ___ German at school, she would be able to understand her new colleagues now.",
+    "had / learned"
+   ],
+   "set": {
+    "5": "bank: had | learned | has | would"
+   },
+   "batch": 2
+  },
+  {
+   "match": [
+    "gap",
+    "___ I ___ the contract more carefully, I wouldn't be paying these fees now.",
+    "Had / read"
+   ],
+   "set": {
+    "5": "bank: Had | read | Did | have"
+   },
+   "batch": 2
+  }
+ ],
+ "twins-1.csv": [
+  {
+   "match": [
+    "gap",
+    "___ he ___ harder, he would have passed the exam.",
+    "Had / studied"
+   ],
+   "set": {
+    "5": "bank: Had | studied | Did | study"
+   },
+   "batch": 2
   }
  ]
 }

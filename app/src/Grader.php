@@ -100,6 +100,12 @@ final class Grader
                         $notes = array_merge($notes, $m);
                     }
                 }
+                // Correct the mistake: the corrected words alone count as well as the whole sentence (teacher, 11 November: the evidence is the corrected form)
+                if (!$ok && $item['kind'] === 'text' && count($given) === 1 && count($blanks) === 1
+                    && ($whole = self::correctedPart($item['q'], $given[0], $blanks[0])) !== null) {
+                    $ok = true;
+                    $notes = ['The whole sentence: ' . $whole];
+                }
                 $show = implode(' / ', array_map(fn($b) => $b[0], $blanks));
                 $specific = null;
                 $specificLv = null;
@@ -209,6 +215,35 @@ final class Grader
                 ];
         }
         return ['correct' => false, 'show' => '', 'specific' => null, 'notes' => []];
+    }
+
+    /**
+     * A "Correct the mistake" answer that gives only the corrected part: a run of words of an accepted sentence that covers
+     * every word changed from the wrong sentence (for a removed word, the words on both sides of the gap: "help me" for
+     * "Can you help to me?"). Returns the accepted sentence, or null.
+     */
+    public static function correctedPart(string $q, string $given, array $accepted): ?string
+    {
+        if (!preg_match('/^Correct the (?:mistake|sentence)[^:]{0,40}:\s*(.+)$/iu', trim($q), $m)) return null;
+        $g = preg_split('/\s+/u', self::norm($given), -1, PREG_SPLIT_NO_EMPTY);
+        $w = preg_split('/\s+/u', self::norm($m[1]), -1, PREG_SPLIT_NO_EMPTY);
+        if (!$g) return null;
+        foreach ($accepted as $acc) {
+            $a = preg_split('/\s+/u', self::norm($acc), -1, PREG_SPLIT_NO_EMPTY);
+            $p = 0;
+            while ($p < count($a) && $p < count($w) && $a[$p] === $w[$p]) $p++;
+            $sfx = 0;
+            while ($sfx < count($a) - $p && $sfx < count($w) - $p && $a[count($a) - 1 - $sfx] === $w[count($w) - 1 - $sfx]) $sfx++;
+            $from = $p; $to = count($a) - $sfx;          // the changed words of the accepted sentence: [$from, $to)
+            if ($from === $to) { $from = max(0, $from - 1); $to = min(count($a), $to + 1); }   // a word was removed: both neighbours
+            if ($from >= $to) continue;
+            for ($i = 0; $i <= $from; $i++) {
+                $j = $i + count($g);
+                if ($j < $to || $j > count($a)) continue;
+                if (array_slice($a, $i, count($g)) === $g) return $acc;
+            }
+        }
+        return null;
     }
 
     /** Words that are always written with a capital letter. A word-order task is stored lower case, so they are put back when it is shown. */

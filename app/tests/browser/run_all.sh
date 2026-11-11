@@ -12,7 +12,7 @@ php tests/grader_test.php 2>&1 | tail -1; php tests/selfgrade_test.php 2>&1 | ta
 rm -f var/ef.sqlite*; python3 tests/drafts_test.py >/dev/null 2>&1; php tests/selfgrade_drafts_test.php 2>&1 | tail -1
 php tests/mistake_construction_test.php 2>&1 | tail -1
 php tests/reported_drafts_test.php 2>&1 | tail -1
-php tests/error_model_test.php 2>&1 | tail -1; php tests/bank_update_test.php 2>&1 | tail -1
+php tests/error_model_test.php 2>&1 | tail -1; php tests/bank_update_test.php 2>&1 | tail -1; php tests/correct_part_test.php 2>&1 | tail -1
 for t in orders_test sso_test security_test research_test reports_test tasks_test comeback_test drafts_test placement_test pulse_test probe_test path_review_test reword_test draft_rules_test item_gates_test; do
   rm -f var/ef.sqlite*; printf "== %-16s" $t; python3 tests/$t.py 2>&1 | grep -v "^PASS" | tail -2 | tr "\n" " "; echo
 done

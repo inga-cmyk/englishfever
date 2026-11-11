@@ -158,7 +158,8 @@ Piezīmes:
 
 ## E. Atstāts tavam lēmumam
 
-- **b1-cond-rep-1:207, *'Do you like jazz?'*:** arī *He asked me if I like jazz* ir pareiza angļu valoda, ja viņam džezs joprojām patīk vai nepatīk (tas pats, kas *doesn't like* pie rs-B11-3a). Tur pieliku situāciju. Šeit varianti: **A** pieņemt *like* ar piezīmi *Also possible*; **B** atstāt tikai *liked*, jo B1.2 līmenī uzdevums ir par laika maiņu. Iesaku A.
+- **Izlemts (Inga, 11. novembris): atstāstījumā pieturamies pie mācītā noteikuma.** Pēc *said / told / asked* pagātnē laiks iet soli atpakaļ, un tikai šo formu ieskaita. *He asked me if I like jazz* netiek pieņemts (b1-cond-rep-1:207 un līdzīgie). Skaidrojums pasaka, kāpēc: *After a past reporting verb (asked, said) the tense goes one step back: like → liked. This is always correct. In everyday English the present is also heard while something is still true; here we practise the rule.* LV: *Pēc ievadošā darbības vārda pagātnē (asked, said) laiks iet soli atpakaļ: like → liked. Tā vienmēr ir pareizi. Sarunvalodā dzird arī tagadni, ja teiktais joprojām ir spēkā; šeit trenējam noteikumu.* Murphy (48. nodaļa) to apstiprina: pagātnes forma der vienmēr, tagadne tikai tad, ja situācija nav mainījusies.
+- **Noteikumu kartes piemērs ar piebildi** (*"I'm working late," he said.*) paliek kā izņēmums (Inga, 11. novembris).
 - **Sākums *Tom told me* (b1-cond-rep-1:172):** sākums tagad dod *told me*, bet skaidrojums māca atšķirību *say / tell*. Ja gribi, lai izglītojamais izvēlas pats, norāde var būt *Tom's words to me: '…' Report them.* un pieņemtas abas: *Tom told me…* un *Tom said he would call me…*.
 
 ## F. Papildu atradumi esošajās atslēgās (nav saistīti ar piebildi)

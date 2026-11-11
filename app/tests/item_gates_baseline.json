@@ -71,5 +71,22 @@
   "present_simple | B1.1 | match | Match each sentence with its use. | The sun rises in the east. = a general truth ; I go to the gym on Tuesdays. = a habit ; The bus leaves at 6.15. = a timetable ; She works in a bank. = a permanent situation",
   "subject_object_q | A2.2 | match | Match each question with what it asks about. | Who called Tom? = the person who called ; Who did Anna call? = the person Anna called ; What fell? = the thing that fell ; What did Anna buy? = the thing Anna bought"
  ],
- "lv": []
+ "lv": [],
+ "cond_situation": [
+  "cond_mixed | B2.1 | gap | If I ___ English at school, I ___ fluent now. (learn / be) | ",
+  "cond_second | B1.1 | gap | If I ___ taller, I ___ basketball. (be / play) | ",
+  "cond_second | B1.1 | gap | If I ___ the boss, I ___ cancel all Monday meetings. (be) | ",
+  "cond_second | B1.1 | gap | If she ___ the job, she ___ to Berlin. (get / move) | ",
+  "cond_second | B1.2 | gap | I ___ her if I ___ her address. (visit / know) | ",
+  "cond_second | B1.2 | gap | If it ___ cheaper, we ___ it. (be / buy) | ",
+  "cond_second | B2.1 | gap | If the city ___ more cycle lanes, more people ___ by bike. (build / travel) | ",
+  "cond_second | B2.1 | gap | If the company ___ more flexible hours, people ___ happier. (offer / be) | ",
+  "cond_third | B1.2 | gap | If I ___ harder, I ___ the test. (study / pass) | ",
+  "cond_third | B1.2 | gap | If he ___ the keys, he ___ the door. (not lose / open) | ",
+  "cond_third | B1.2 | gap | If she ___ the message, she ___ . (see / reply) | ",
+  "cond_third | B1.2 | gap | If we ___ earlier, we ___ the film. (leave / not miss) | ",
+  "cond_third | B1.2 | gap | If you ___ me about the meeting, I ___ there. (tell / be) | ",
+  "cond_third | B1.2 | gap | They ___ lost if they ___ the signs. (not get / follow) | ",
+  "cond_third | B2.2 | gap | If he ___ (not / drive) so fast, he ___ (not / lose) his licence. | "
+ ]
 }

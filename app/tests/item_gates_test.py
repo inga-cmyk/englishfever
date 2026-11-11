@@ -89,8 +89,17 @@ def g_lv(i):        # 6 November: izglītojamie, never skolēni
     return ["'skolēni' in a Latvian text: say izglītojamie"] if re.search(r"skolēn", t, re.I) else []
 
 
+def g_cond_situation(i):   # 11 November (c-0737): a typed conditional with both parts open and no situation sentence: real and unreal, present and past all fit
+    if i["skill"] not in ("cond_second", "cond_third", "cond_mixed") or i["kind"] != "gap" or i.get("bank"): return []
+    q = re.sub(r"\([^)]*\)", "", i["q"]); q = re.sub(r"^[^:]{0,90}:\s*", "", q).strip()
+    if len([x for x in re.split(r"(?<=[.!?])\s+", q) if x.strip()]) != 1: return []
+    m = re.search(r",\s*|\s(?=(?:if|unless)\b)", q, re.I)
+    if not m or "___" not in q[:m.start()] or "___" not in q[m.end():]: return []
+    return ["typed conditional with both parts open and no situation sentence: give the situation (I failed the test last week. If I ___ …)"]
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation}
 
 
 def key(i):

@@ -298,5 +298,41 @@
  {
   "what": "A joining task that is only copying",
   "reader": "Join with if: You leave now. You will catch the train. At B1 the learner must change something (Leave now or you'll miss the train → If you don't leave now, …)."
+ },
+ {
+  "what": "c-0737: If I ___ harder, I ___ the test. (study / pass): only had studied / would have passed accepted, but studied / would pass is correct too (report of 11 November)",
+  "gate": "cond_situation",
+  "task": {
+   "skill": "cond_third",
+   "level": "B1.2",
+   "kind": "gap",
+   "q": "If I ___ harder, I ___ the test. (study / pass)",
+   "answers": [
+    [
+     "had studied"
+    ],
+    [
+     "would have passed"
+    ]
+   ]
+  }
+ },
+ {
+  "what": "The same mistake with the result first: I ___ her if I ___ her address. (visit / know) (11 November)",
+  "gate": "cond_situation",
+  "task": {
+   "skill": "cond_second",
+   "level": "B1.2",
+   "kind": "gap",
+   "q": "I ___ her if I ___ her address. (visit / know)",
+   "answers": [
+    [
+     "would visit"
+    ],
+    [
+     "knew"
+    ]
+   ]
+  }
  }
 ]

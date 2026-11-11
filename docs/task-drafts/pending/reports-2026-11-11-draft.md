@@ -6,10 +6,9 @@ Gaida Ingas apstiprinājumu. Nekas nav pievienots uzdevumu failiem. **Otrs lasī
 
 ### 1. ppc-B11-5a-r2 · Present perfect continuous · B1.1 · izvēle
 - **Bija:** Your friend is out of breath because she was running until a minute ago. Which sentence explains why? → *I've been running.*
-- **Problēma:** jautājums ir par draudzeni, bet atbilde ir pirmajā personā.
-- **Jaunais:** Your friend arrives out of breath. You ask why. What does she say?
-- ✔ I've been running. ✘ I'm going to run. · I run every day. · I ran last year.
-- Skaidrojumi nemainās.
+- **Jaunais:** Why is your friend out of breath?
+- ✔ She has been running. ✘ She is been running. · She has been run. · She has running.
+- Īss jautājums; visi četri varianti ir par to pašu, atšķiras tikai forma, un trīs nepareizie ir kļūdas, ko izglītojamie tiešām raksta. Pārbauda *has been* + *-ing*.
 
 ### 2. var-pp-b11-match-01 · Present perfect · B1.1 · savienošana ("too easy")
 - **Ieteikums: izņemt.** Labās puses ir teorijas uzlīmes (*The length of the period*, *The starting point*), tāpēc uzdevums ir par viegli un neko nemāca. Tas nav tas pats saturs kā B.1 (šeit ir *for / since / yet*); ja gribi *for / since* savienošanu paturēt, uzrakstīšu jaunu ar teikumiem, nevis uzlīmēm.
@@ -23,22 +22,25 @@ Gaida Ingas apstiprinājumu. Nekas nav pievienots uzdevumu failiem. **Otrs lasī
 
 ### 5. fu-B11-5a-r3 · Future · B1.1 · izvēle
 - **Bija:** Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Choose the more natural option for an arrangement.
-- **Problēma:** komats starp diviem teikumiem; nepareizie varianti ir neiespējami (*I meet Anna at 6 yesterday*).
-- **Jaunais:** Yesterday you and Anna agreed to meet at 6 today. At lunch a colleague asks about your plans for this evening. What do you say?
-- ✔ I'm meeting Anna at 6. ✘ I've met Anna at 6. · I was meeting Anna at 6. · I met Anna at 6.
-- *At lunch … plans for this evening* nosaka, ka runa ir par nākotni (otrā lasītāja atradums: bez tā *I met Anna at 6* būtu pareizi nākamajā rītā). Nepareizie varianti ir īstas formas, kas nerunā par nākotni. *I'll meet* un *I meet* apzināti nav doti, jo par tiem var strīdēties.
-- Skaidrojumi nemainās.
+- **Jaunais:** 'Are you free this evening?' 'Sorry, ___ Anna at 6. We booked a table yesterday.'
+- ✔ I'm meeting ✘ I'll meet · I meet · I've met
+- Trīs no četriem variantiem ir par nākotni, tāpēc jāzina atšķirība: norunāta tikšanās (*booked yesterday*) ir Present Continuous. *I'll meet* ir lēmums runāšanas brīdī (Murphy, 21. nodaļa: norunātām lietām *will* nelieto), *I meet* ir sarakstiem un grafikiem.
+- Skaidrojums pie *I'll meet*: *will* is for a decision made now; this was arranged yesterday.
+
+### 6. c-0409 · Past continuous · B1.1 · vārdu banka
+- **Bija:** I ___ the shopping when I ___ my old teacher.
+- **Jaunais:** I ___ for the bus when I ___ my old teacher. ✔ was waiting / saw · banka: was waiting · saw · am waiting · have seen
+- *do the shopping* ir pareizi, bet par to strīdas; teikums nomainīts.
 
 ### 7. c-0037 · Modal verbs · B1.1 · vārdu secība
 - **Bija:** Put the words in order. → *should we leave before it gets dark*
 - **Problēma:** arī *We should leave before it gets dark* ir pareizs teikums.
 - **Jaunais:** Put the words in order to make a question.
-- ✔ should we leave before it gets dark · arī: before it gets dark should we leave
+- ✔ should we leave before it gets dark. **Otrā secība *before it gets dark should we leave* ir izņemta: tā neviens nesaka.**
 - Skaidrojums nemainās. Tas pats labojums kā c-1001; aizver arī GitHub pieteikumu #38.
 
 ### Bez izmaiņām
 - 3 (var-fu-a22-bank-01-r2), 8 (pa-A21-5a-r2), 9 (var-pc-a21-order-01): bez komentāra, atslēgas pareizas.
-- 6 (c-0409): *do the shopping* ir pareizs izteiciens.
 
 ## B. Savienošanas uzdevumi
 
@@ -46,11 +48,12 @@ Visi ir mācību uzdevumi (neskaitās pierādījumos). Pārbaude katram: samaino
 
 ### B.1. Present perfect · B1.1 (b1-tenses-2, 26. rinda)
 - **Bija:** Match each sentence with its meaning. (*a result now / something that continues / life experience / a very recent action*)
-- **Jaunais:** Match each sentence with what it tells us.
-  - I've lost my keys. = I can't open the door now.
-  - I've lived here for ten years. = I moved here ten years ago and I'm still here.
-  - I've been to Italy twice. = I have visited it two times in my life.
-  - I've just finished. = The work was done a minute ago.
+- **Jaunais:** Match each sentence with what follows from it.
+  - I've lost my keys. = I can't get into my flat.
+  - I've lived here for ten years. = All the neighbours know me.
+  - I've been to Italy twice. = I can tell you what Rome is like.
+  - I've just finished. = I'm free to help you now.
+- Labajā pusē nav neviena vārda no kreisās, tāpēc pāri nevar atrast pēc vārdiem: jāsaprot, ko Present Perfect saka par tagadni.
 - EN: The present perfect links the past with now: a result, a time up to now, an experience or a very recent action.
 - LV: Present Perfect saista pagātni ar tagadni: rezultāts, laiks līdz šim brīdim, pieredze vai nupat notikusi darbība.
 
@@ -123,30 +126,34 @@ Piezīmes:
 - rs-B11-3a: bez situācijas arī *doesn't like* būtu pareizi (viņam kafija joprojām negaršo). *Ten years ago … Now he drinks it every day* to izslēdz.
 - rs-B11-1a-r3: teikumā tagad ir *Anna*, lai būtu skaidrs, kas runā; varianti nemainās.
 
-### Pārrakstāmie teikumi un rakstīšana
+### Atstāstījums, ko izglītojamais raksta pats
 
-| ID vai rinda · līmenis | Bija | Jaunais | Pieņemtās atbildes |
-|---|---|---|---|
-| rs-B11-6a · B1.1 | Report this sentence. 'I'm learning Spanish,' Elena said. Start with Elena said. | Report this sentence. Start with *Elena said*: 'I'm learning Spanish.' | kā līdz šim |
-| rs-B12-3a-r2 · B1.2 | Report this: 'I'm leaving now,' Kate said. | Report this. Start with *Kate said*: 'I'm leaving now.' | Kate said (that) she was leaving then. |
-| rq-B21-3a-r2 · B2.1 | Report this: 'Could you send me the invoice?' Lena asked. | Report this. Start with *Lena asked*: 'Could you send me the invoice?' | kā līdz šim, un klāt: Lena asked (me) whether I could send her the invoice / send the invoice to her. |
-| rq-B22-3a-r2 · B2.2 | Report this: 'Where should we meet?' they asked. | Report this. Start with *They asked*: 'Where should we meet?' | kā līdz šim, un klāt: They asked (me) where we should meet. · They asked me where to meet. · They asked me where they should meet. |
-| rq-B22-6a · B2.2 | Report this question using whether. 'Is the data accurate?' the editor asked. Start with The editor asked whether. | Report this question. Start with *The editor asked whether*: 'Is the data accurate?' | kā līdz šim, un pārbaude pieņem arī *the data were accurate* |
-| rv-B22-6a · B2.2 | Report this apology with apologise: 'Sorry I forgot the meeting,' Dana said. | Report Dana's apology with *apologise*: 'Sorry I forgot the meeting.' | kā līdz šim |
-| b1-cond-rep-1:169 · B1.1 | Report it: 'I'm working late,' she said. | Report it. Start with *She said*: 'I'm working late.' | kā līdz šim |
-| b1-cond-rep-1:170 · B1.1 | Report it: 'We have finished,' they said. | Report it. Start with *They said*: 'We have finished.' | kā līdz šim |
-| b1-cond-rep-1:171 · B1.2 | Report it: 'I can help you,' he said. | Report it. Start with *He said*: 'I can help you.' | kā līdz šim, un klāt: He said (that) he could help us. |
-| b1-cond-rep-1:172 · B1.2 | Report it: 'I'll call you tomorrow,' Tom said to me. | Report it. Start with *Tom told me*: 'I'll call you tomorrow.' | kā līdz šim, **bez** *The next day Tom told me he would call me.* (maina nozīmi) |
-| b1-cond-rep-1:173 · B1.2 | Report it: 'I didn't see him,' she said. | Report it. Start with *She said*: 'I didn't see him.' | kā līdz šim |
-| b1-cond-rep-1:206 · B1.2 | Report it: 'Where are you going?' she asked. | Report it. Start with *She asked*: 'Where are you going?' | kā līdz šim, un klāt: She asked (us) where we were going. |
-| b1-cond-rep-1:207 · B1.2 | Report it: 'Do you like jazz?' he asked me. | At school, years ago: 'Do you like jazz?' Report it. Start with *He asked me*. | He asked me if / whether I liked jazz. **Izņemts:** atbildes bez *me* un *If I liked jazz, he asked me.* (nav dabiska angļu valoda) |
-| b1-cond-rep-1:208 · B1.2 | Report it: 'Please close the window,' she said to me. | Report her request to you. Start with *She*: 'Please close the window.' | She asked me to close the window. · She told me to close the window. |
-| b1-cond-rep-1:209 · B1.2 | Report it: 'Don't be late,' he told us. | Report it. Start with *He told us*: 'Don't be late.' | kā līdz šim |
-| b1-cond-rep-1:210 · B1.2 | Report it: 'What did you do last night?' she asked me. | Report it. Start with *She asked me*: 'What did you do last night?' | kā līdz šim, un klāt: She asked me what I did the previous night. |
-| b1-upgrades-1:52 · B1.1 | Report it: 'We will finish the report tomorrow,' they said. | Report it. Start with *They said*: 'We will finish the report tomorrow.' | kā līdz šim, **bez** *The next day they said they would finish the report.* (maina nozīmi) |
-| b1-upgrades-1:54 · B1.2 | Report it: 'Did you enjoy the film?' he asked me. | Report it. Start with *He asked me*: 'Did you enjoy the film?' | He asked me if / whether I (had) enjoyed the film. **Izņemts:** atbildes bez *me* un *If I had enjoyed the film, he asked me.* |
-| twins-1:64 · C1.1 | Report with *advise*: 'Don't sign anything until you've read it,' the lawyer told her. | Report the lawyer's words to her with *advise*: 'Don't sign anything until you've read it.' | kā līdz šim, un klāt: The lawyer advised her against signing anything until she had read it. |
-| rs-B21-3a-r2 · B2.1 | Report this: 'You must finish by Friday,' my boss said. | Report this. Start with *My boss*: 'You must finish by Friday.' | kā līdz šim |
+Pēc tava ieteikuma norādes *Report it. Start with…* vairs nav. Uzdevums rāda citātu un atstāstījuma sākumu; jāuzraksta tikai turpinājums. Ekrānā virs tā ir *Complete the sentence:*. Tā nav jāsaprot vārds *report*, nevar rasties *said me*, un tiek pārbaudīta laika, vietniekvārdu un vārdu secības maiņa.
+
+| ID vai rinda · līmenis | Jaunais | Pieņem |
+|---|---|---|
+| rs-B11-6a · B1.1 | 'I'm learning Spanish.' → Elena said ___. | (that) she was learning Spanish |
+| b1-cond-rep-1:169 · B1.1 | 'I'm working late.' → She said ___. | (that) she was working late |
+| b1-cond-rep-1:170 · B1.1 | 'We have finished.' → They said ___. | (that) they had finished |
+| b1-upgrades-1:52 · B1.1 | 'We will finish the report tomorrow.' → They said ___. | (that) they would finish the report the next day / the following day |
+| rs-B12-3a-r2 · B1.2 | 'I'm leaving now.' → Kate said ___. | (that) she was leaving then |
+| b1-cond-rep-1:171 · B1.2 | 'I can help you.' → He told me ___. | (that) he could help me |
+| b1-cond-rep-1:172 · B1.2 | 'I'll call you tomorrow.' → Tom told me ___. | (that) he would call me the next day / the following day |
+| b1-cond-rep-1:173 · B1.2 | 'I didn't see him.' → She said ___. | (that) she hadn't seen him / had not seen him |
+| b1-cond-rep-1:206 · B1.2 | 'Where are you going?' → She asked me ___. | where I was going |
+| b1-cond-rep-1:207 · B1.2 | At school, years ago: 'Do you like jazz?' → He asked me ___. | if I liked jazz · whether I liked jazz |
+| b1-cond-rep-1:208 · B1.2 | 'Please close the window.' → She asked me ___. | to close the window |
+| b1-cond-rep-1:209 · B1.2 | 'Don't be late.' → He told us ___. | not to be late |
+| b1-cond-rep-1:210 · B1.2 | 'What did you do last night?' → She asked me ___. | what I had done / what I did + the night before / the previous night |
+| b1-upgrades-1:54 · B1.2 | 'Did you enjoy the film?' → He asked me ___. | if / whether I had enjoyed the film · if / whether I enjoyed the film |
+| rs-B21-3a-r2 · B2.1 | 'You must finish by Friday.' → My boss told me ___. | (that) I had to finish by Friday · (that) I must finish by Friday |
+| rq-B21-3a-r2 · B2.1 | 'Could you send me the invoice?' → Lena asked ___. | me to send her the invoice · (me) if / whether I could send her the invoice |
+| rq-B22-3a-r2 · B2.2 | 'Where should we meet?' → They asked me ___. | where they should meet · where we should meet · where to meet |
+| rq-B22-6a · B2.2 | 'Is the data accurate?' → The editor asked ___. | whether / if the data was accurate · whether / if the data were accurate |
+| rv-B22-6a · B2.2 | 'Sorry I forgot the meeting.' → Dana apologised ___. | for forgetting the meeting · for having forgotten the meeting |
+| twins-1:64 · C1.1 | 'Don't sign anything until you've read it.' → The lawyer advised her ___. | not to sign anything until she had read it / she'd read it / she read it · against signing anything until she had read it |
+
+Atslēgās vairs nav automātiski veidoto secību (*If I liked jazz, he asked me.*, *The next day they said…*).
 
 ### Savienošanas uzdevumi ar piebildi pāros (otrā lasītāja atradums)
 
@@ -186,3 +193,50 @@ Norāde visiem: **Complete with *said* or *told*.**
 - LV: Pēc *tell* uzreiz nāk persona: *told me, told us*. Pēc *say* persona nenāk: *said (that)…* vai *said to me*. Tulkojot burtiski no "teica man", rodas *said me*.
 - Loma: *use* (izglītojamais raksta vārdu); skaitās pierādījumos tēmā *Reported statements*.
 - Šos sešus otrs lasītājs vēl nav lasījis; izlasīs pirms pievienošanas.
+
+## H. Četri jauni ziņojumi (11. novembris) un ko tie nozīmē visai bankai
+
+### H.1. c-0737 · Third conditional · B1.2: nav norādes, kuru nosacījuma teikumu vajag
+- **Bija:** If I ___ harder, I ___ the test. (study / pass) → tikai *had studied / would have passed*.
+- Ziņojums ir pamatots: arī *studied / would pass* ir pareizs teikums.
+- **Jaunais:** I failed the test last week. If I ___ harder, I ___ it. (study / pass) ✔ had studied / would have passed
+- **Tā pati kļūda vēl 14 uzdevumos**, kur abas teikuma daļas ir tukšas un nav situācijas. Visiem pielieku vienu situācijas teikumu:
+
+| Rinda | Jaunais |
+|---|---|
+| cs built-in | I'm not the boss. If I ___ the boss, I ___ cancel all Monday meetings. (be) |
+| cs built-in | Our company has fixed hours. If the company ___ more flexible hours, people ___ happier. (offer / be) |
+| ct built-in | Nobody told me about the meeting, so I missed it. If you ___ me about it, I ___ there. (tell / be) |
+| ct built-in | He lost his licence last month. If he ___ so fast, he ___ it. (not drive / not lose) |
+| cm built-in | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) |
+| b1-cond-rep-1:92 | I'm not tall. If I ___ taller, I ___ basketball. (be / play) |
+| b1-cond-rep-1:94 | This phone is too expensive. If it ___ cheaper, we ___ it. (be / buy) |
+| b1-cond-rep-1:95 | I don't know where she lives. I ___ her if I ___ her address. (visit / know) |
+| b1-cond-rep-1:129 | We left late and missed the film. If we ___ earlier, we ___ it. (leave / not miss) |
+| b1-cond-rep-1:130 | He lost the keys yesterday. If he ___ them, he ___ the door. (not lose / open) |
+| b1-cond-rep-1:131 | They didn't follow the signs. They ___ lost if they ___ them. (not get / follow) |
+| b1-cond-rep-1:132 | She never saw the message. If she ___ it, she ___ . (see / reply) |
+| b1-upgrades-1:49 | She probably won't get the job. If she ___ it, she ___ to Berlin. (get / move) |
+| twins-1:44 | The city has very few cycle lanes. If the city ___ more, more people ___ by bike. (build / travel) |
+
+- Jauna slūža: nosacījuma teikums ar diviem tukšumiem un bez situācijas teikuma aptur iepakošanu.
+
+### H.2. c-0673 · First conditional · B1.1: par vieglu
+- **Bija:** Join with if: You leave now. You will catch the train. Atbilde ir abu teikumu norakstīšana ar *if* priekšā.
+- **Jaunais:** Say the same with *if*: Leave now or you'll miss the train. ✔ If you don't leave now, you'll miss the train. · You'll miss the train if you don't leave now. (arī *do not*, *you will*)
+- Jāveido noliegums un tagadne pēc *if*, nevis jānoraksta. Tipiskā kļūda *If you won't leave* tiek noķerta.
+- **Tāda paša veida uzdevumu ir 32** (*Join with if / when…*, kur atbildē ir ne vairāk kā viens jauns vārds). A2.2 līmenī (15) tie paliek kā pirmais solis. B1 un augstāk (17) pārrakstu pēc šī parauga un parādīšu tev vienā sarakstā.
+
+### H.3. c-1660 · *Correct the mistake*: viss teikums vai tikai labojums?
+- **Lēmums: ieskaita abus.** Izglītojamais drīkst uzrakstīt visu izlaboto teikumu vai tikai izlaboto vietu (*used to* vai *we used to visit*). Norāde: *Correct the mistake. Write the corrected words or the whole sentence.*
+- Kāpēc: pierādījums ir izlabotā forma. Pārrakstot 10 vārdus telefonā, rodas drukas kļūdas citur, un pareizs labojums tiek ieskaitīts kā kļūda.
+- Tas skar 96 uzdevumus un vērtētāju (izmaiņa kodā). Pētījuma datiem: no šī datuma pareizo atbilžu daļa šajos uzdevumos var pieaugt; datēta rinda plānā.
+
+### H.4. c-1338 · Used to and be used to · B1.2 · savienošana ar uzlīmēm
+- **Bija:** used to = a past habit that has stopped; be used to = something is normal for me; …
+- **Jaunais:** Match each sentence with what follows from it.
+  - I used to smoke. = I stopped years ago.
+  - I'm used to getting up early. = Six o'clock is no problem for me.
+  - I'm getting used to my new job. = Every week it feels a little easier.
+  - I didn't use to like coffee. = Now I drink three cups a day.
+- Pilni teikumi, un pāri nav atrodami pēc kopīgiem vārdiem.

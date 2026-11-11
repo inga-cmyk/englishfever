@@ -278,5 +278,25 @@
  {
   "what": "Generated word orders in a key that are not natural English or change the meaning",
   "reader": "If I liked jazz, he asked me. / The next day they said they would finish the report. Read every accepted answer of a typed task aloud; a start (Start with He asked me) must fit every accepted answer."
+ },
+ {
+  "what": "A task that can be solved without the grammar it is about (teacher, 11 November)",
+  "reader": "Ask of every task: what does the learner have to know to get it right? 'I've been to Italy twice. = I have visited it two times in my life.' is matched by the word two. A choice whose three wrong options are in another time (I've met / I was meeting / I met for a plan this evening) is solved without knowing the future forms: the wrong options must compete (I'm meeting / I'll meet / I meet). A long situation in front of an easy choice is the same fault."
+ },
+ {
+  "what": "An instruction the learner may not understand",
+  "reader": "'Report it. Start with He asked me.' Learners may not know report. Show the quote and the start of the answer and let them complete it: 'Do you like jazz?' → He asked me ___."
+ },
+ {
+  "what": "An accepted word order that nobody says",
+  "reader": "before it gets dark should we leave (generated). Read every accepted alternative aloud."
+ },
+ {
+  "what": "A typed conditional with both parts open and no situation",
+  "reader": "If I ___ harder, I ___ the test. (study / pass): studied / would pass is as correct as had studied / would have passed. One situation sentence decides (I failed the test last week.)."
+ },
+ {
+  "what": "A joining task that is only copying",
+  "reader": "Join with if: You leave now. You will catch the train. At B1 the learner must change something (Leave now or you'll miss the train → If you don't leave now, …)."
  }
 ]

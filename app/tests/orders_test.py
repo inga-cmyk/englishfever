@@ -28,7 +28,7 @@ texts = {}
 for f in sorted(glob.glob(os.path.join(ROOT, "docs", "task-drafts", "*.csv"))):
     for r in csv.DictReader(open(f, encoding="utf-8-sig")):
         if r["type"] == "text": texts[r["task"]] = [x.strip().lower() for x in r["correct answer"].split("|")]
-for task, want in (("Join with when: I was walking home. It started to rain.", "when I was walking home, it started to rain."), ("Join with when: I was cooking. The smoke alarm went off.", "when I was cooking, the smoke alarm went off."),
-                   ("Join with while: I was cooking. My brother was setting the table.", "while my brother was setting the table, I was cooking.")):
+for task, want in (("Join with when: I was walking home. It started to rain.", "when I was walking home, it started to rain."), 
+                   ("Write it about last night. Start with *Last night, while*: I'm cooking. At the same time, my brother is setting the table.", "last night, while my brother was setting the table, I was cooking.")):   # rewritten 12 November
     check("accepted: " + want, want.lower().rstrip(".") in [a.rstrip(".") for a in texts[task]], texts[task])
 print("\nALL PASS" if ok else "\nSOME FAILED"); sys.exit(0 if ok else 1)

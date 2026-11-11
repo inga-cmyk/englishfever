@@ -57,7 +57,9 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. Where the work stands, and what is open
 
-**START HERE (written 11 November, end of the session).** Live on the server: **zip 2026-11-11 08:03** (Inga uploaded it; c-3394 approved). Nothing newer is packaged. The branch is clean and pushed.
+**START HERE (12 November).** Stage 2 is **done and packaged** (zip below, not yet uploaded by Inga): the draft of 11-12 November applied after a second reader (`docs/task-drafts/reports-2026-11-11-review.md`, section I has the final versions; overlays `_src/draft_fixes.py`, `said_told.py`), the `cond_situation` gate, *Correct the mistake* grading (`Grader::correctedPart`, `correct_part_test.php`). The gates baseline now holds only order 8 and match_labels 6. After her upload she must press *Retire* on 5 prepared matching tasks (list in the changelog). Next: stage 3 (U1, U2, U4, U3: ask her for the variants in `docs/REVIEW-2026-11.md`). The *Correct the mistake* instruction text was NOT changed (the 96 tasks keep their ids; the grader accepts both). Older notes on stage 2 below are history.
+
+**(11 November)** Live on the server: **zip 2026-11-11 08:03** (Inga uploaded it; c-3394 approved). Nothing newer is packaged. The branch is clean and pushed.
 
 **Zip link** (the `github.com/.../raw/...` link sometimes times out; this one works): `https://raw.githubusercontent.com/inga-cmyk/englishfever/claude/intelligent-albattani-2e9bfi/dist/practice-app-update.zip`
 

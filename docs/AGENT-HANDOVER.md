@@ -1,7 +1,7 @@
 # Handover: the grammar practice app (practice.englishfever.com)
 
 For another AI agent who continues the work, and for checking afterwards what that agent added or changed.
-Written 4 November 2026, updated the same day after twins batch 3 and the first learning tasks. The owner is Inga, an English teacher (her account in the app is "Fox"; "Inga" in the app is a student).
+Written 4 November 2026, last updated 11 November 2026 (after the word-bank audit, zip 2026-11-08 17:31, uploaded by Inga). The owner is Inga, an English teacher (her account in the app is "Fox"; "Inga" in the app is a student).
 The app is part of her master's research, so every change that affects what learners see or how answers are counted is logged
 (see *Research* below).
 
@@ -20,7 +20,8 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 | The built-in question bank (source) | `app/authoring/*.py` (topics `content_*.py`, `b1_topics.py`, `cards2_*.py`); corrections of published tasks in `content_review.py` (`report_fix`), choice-option fixes `option_fixes.py`, writing-task fixes `write_fixes.py` |
 | The built-in bank (built, used by the app) | `app/content/` (made by `app/authoring/build.py`; do not edit by hand) |
 | Prepared questions (imported on the server: Questions → Prepared questions → Add all → Approve all) | `docs/task-drafts/*.csv`, made by the scripts in `docs/task-drafts/_src/*.py` with the helpers in `_src/lib.py` |
-| Drafts waiting for Inga's review (NOT packaged) | `docs/task-drafts/pending/` (empty now: everything she saw is approved and published) |
+| Drafts waiting for Inga's review (NOT packaged) | `docs/task-drafts/pending/` (only `learn-drag-4-fix-draft.md`, already applied) |
+| Overlays that keep later fixes when the draft generators run again (applied in `_src/lib.py` `save()`, in this order) | `_src/term_free*.py` (no grammar terms in instructions), `screenshot_fixes.py` + `_20261107.json`, `learner_fixes.py` + `_20261108.json`, `bank_fixes.py` + `bank_fixes_20261108.json` (word-bank options). Each fix matches a row by type, task and answer; a new task text also sets `replaces` (column 9) to the old text |
 | WordPress plugin (sign-in from englishfever.com, My activity, dashboard menu item) | `app/wp-plugin/ef-practice-sso/ef-practice-sso.php` (now 1.8.5) |
 | Tests | `app/tests/` (PHP and Python), browser tests `app/tests/browser/` |
 | Packaging | `tools/package_practice_app.py` → `dist/practice-app-update.zip` (Inga uploads it), `dist/practice-app.zip` (first install), `dist/ef-practice-sso.zip` (plugin) |
@@ -29,20 +30,25 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 2. Rules that are not negotiable
 
-- Work only on a **new branch made from `claude/intelligent-albattani-2e9bfi`** (see *How to hand the work back*). Never push to `live`, never to the working branch itself, never force-push.
+- A **Claude Code session that Inga starts on `claude/intelligent-albattani-2e9bfi`** develops and pushes on that branch. **Any other agent** (ChatGPT, Codex) works on a new branch made from it (see *How to hand the work back*). Never push to `live`, never force-push.
 - **Never touch WordPress or Hostinger** (no logins, no uploads, no settings). Never deploy: Inga uploads the zip and the plugin herself.
 - Never ask for, print or store the Anthropic API key or any password. The key lives in the server's `config.php` (`ai_key`), which Inga sets.
 - No GitHub comments, issues or closing anything without Inga's OK. No pull request unless she asks for one.
 - Learners' names are never stored in research data; never guess who an account belongs to.
 - Inga reads in **Latvian**: reply to her in Latvian. Code, comments and commit messages in English. No double dash in her documents. Her `.docx` files are never committed.
 - **Propose variants before changing anything she has not asked for, and show drafted tasks before adding them.**
+- In Latvian texts say *izglītojamie*, never *skolēni*. Inga's account *Fox* is a teacher account (teachers do not see the welcome popup).
+- The fun / feedback lines under an answer are English only.
 
 ## 3. How tasks are written (summary; the full list is `docs/ITEM-WRITING-RULES.md`)
 
 - Exactly one answer fits the instruction and the context. In *Which sentence has a mistake?* the other options are correct; in a form task the wrong options are ungrammatical; where a tense mix could be right (mixed conditionals), give the situation that rules it out.
 - Options: about the same length, all on one theme or each on its own theme, never one odd one out; no near-identical pair in *NOT correct* tasks; four different sentences there. Use "—" for "no article / no preposition".
 - No open gap that several words fit (*___ you help me?*: can / could / will / would). Then use a choice or accept every correct word. Say what to change when several corrections are possible (*Correct the sentence. Keep "will"*, *Remove one unnecessary word*). Two gaps: *Write one word in each gap*.
-- No grammar terms in instructions (also not *the correct preposition*); *Make a question with What*, *Make a yes/no question*. No speaker tag after a quote when the sentence already names the speaker. Writing tasks never give the answer away.
+- No grammar terms in task **instructions** (also not *the correct preposition*); explanations (*Why*), answer notes and rule cards **keep** the grammar terms; *Make a question with What*, *Make a yes/no question*. No speaker tag after a quote when the sentence already names the speaker. Writing tasks never give the answer away.
+- When the context allows a second correct form, accept it and give it its own note (*answer notes* column, `answer :: EN :: LV || …`; the learner sees *Also possible:*). Never show *Correct* with the explanation of another form.
+- Sentence starts and examples never contain the answer. In matching, no two pairs whose meanings could be swapped.
+- **Word banks (8 November):** one word or word group per chip; the wrong chips build **real forms** that do not fit this sentence (*We ___ ___ this car since 2018* → have · had · were · having). No *We has / We is*, no forms that do not exist (*is get, wills, had went*), no bare *-ing* without a helping word, no word of another kind (*bore, rarity*). Check that no other combination of chips gives a correct sentence; where another tense would also fit, add a time word. Gaps after a fixed helping word (*has ___*, *must ___*) keep form options.
 - Answer keys list the contractions the checker cannot work out (*'d*, *'s*: *If I'd known…, I'd have…*). The checker already accepts *n't = not*, *can't = cannot*, curly apostrophes, commas and the final full stop. Alternative word orders with swapped people are accepted.
 - The level fits the skill: basic *unless*, *wish* + past, *apologise for* are B1–B2; at C1 use *But for*, *Had it not been for*, inversion, *It's high time*, *I'd rather you*, *wish … could have*.
 - Settings: travel, work, hobbies, lifestyle, learning, relationships, technologies; current events only at B2/C1. Grammar decisions are checked against Murphy (*English Grammar in Use*). New topics follow what test-english.com teaches at that level (Inga sends screenshots: the site blocks automated access; do not try to get round it), with our own sentences.
@@ -51,27 +57,19 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. Where the work stands, and what is open
 
-**Latest zip 2026-11-05 22:04** (Duolingo-like buttons, research without a consent card, fun line under the feedback, ChatGPT's reported-task fixes, seven B2 instructions without tense names; before that 2026-11-04 23:02: all 58 rule cards in the new layout). **Done and published (zip 2026-11-04 08:52):** twins batches 1–3 (76 + 50 + 33 tasks; every topic-level with fewer than
-10 check / use tasks now has 10, except C1 topics whose two levels together already have 10 or more); the C1 topic
-*Unreal time and preferences* (12 tasks, rule card, path step); learning drag tasks `learn-drag-3.csv` (33) and `learn-drag-4.csv`
-(40): every topic-level has at least one drag task. Each batch has a `*-review.md` next to its CSV and a generator in `_src/`.
+**Latest zip 2026-11-08 17:31, uploaded by Inga on 11 November.** It contains, after the 5 November zip: *My level* from the last 60 answers; first visit (level question → test sizes or *Skip the test*); level test starting at the learner's own level and asking typed forms first; My learning path alternating a review and the next step (R → U → A); welcome-back popup; research with everyone in (opt-out button under *Your data → Research*); no grammar terms in any task instruction (3 batches); answer notes; 41 typed B2/C1 tasks; ChatGPT's two commits of 7 and 8 November (phone summaries without *Skills check*, Second Chance headlines, *Also possible* for typed alternatives, 27 reported tasks, issues #44–#81); the learning drag task *We ___ ___ this car since 2018*; the word-bank audit (`docs/task-drafts/bank-options-batch1..4-review.md`, 242 tasks; three tasks had marked correct English wrong: *Coffee grows*, *Two windows broke*, the *Mr Ozols … invoices* task). Every change is in `docs/CHANGELOG-practice-app.md`.
 
-**Templates to copy:** `_src/twins_3.py` for check / use tasks (sources linked with `src_built` / `src_csv`, one twin per source,
-checks for grammar terms and word counts, a review with the original next to each twin); `_src/learn_drag_4.py` for learning
-tasks (`learning_task()` marks them *practice only*).
+**Zip link** (the `github.com/.../raw/...` link sometimes times out; this one works): `https://raw.githubusercontent.com/inga-cmyk/englishfever/claude/intelligent-albattani-2e9bfi/dist/practice-app-update.zip`
 
-**Open, in the order Inga is likely to want them (propose before starting; she decides):**
-1. *Learning drag tasks for every path step* (her "option B"): about five per step. **The source is always a check / use task that is not a drag task** (a choice, a typed gap, a rewrite), and the learning task turns its sentence into a word order or a word bank. Never copy an existing word order, word bank or matching task: same sentence + same type = the same task. Same process as `learn_drag_4.py`; every learning task must import as **new** (the last rules in `ITEM-WRITING-RULES.md`).
-2. *Twins where tasks repeat most*: needs the Usage → Repeats table from the server (ask Inga for a screenshot or export; never log in yourself).
-3. `tools/small_banks.py` does not map some short topic names to their skill ids (found in the batch-2 review); `twins_3.py` has a correct `ALIASES` map to reuse.
-4. Done 5 November (ChatGPT): *What does it / this / that say / mean?* is a learn task.
-10. 74 built-in explanations use *past participle / infinitive / gerund*; the rule cards say *3rd form / base form*. Ask Inga whether to make them the same.
-11. The path and the session summary are English only (Latvian learners see English there): a full Latvian version only if Inga asks.
-5. Inga's review lists still open: `docs/task-drafts/task-roles-review.md` (236 learn tasks) and `docs/task-drafts/write-tasks-rewrite-review.md` (40 writing tasks).
-6. My learning path: the empty circles of steps not started. Proposal waiting for her choice: D = a green ring for progress, a grey ✓ for "probably known", a green ✓ / ★ when learned / mastered.
-7. The optional AI check of writing (`AiGrader.php`, model `claude-haiku-5-5`): a dry run with `tools/ai_dryrun.php` needs `ANTHROPIC_API_KEY` set by Inga in the cloud environment settings and an answers export from her.
-8. Later (only when she asks): A2.2 tasks for past perfect, might, second conditional, reported speech, relative clauses; about 50 topics from the test-english.com lists not yet in the app (`docs/LEVEL-LISTS-test-english.md`); a held-out set of level-test tasks for the pre / post test; the language experiment.
-9. WordPress plugin 1.8.5 (Grammar practice in the Tutor menu with Tutor's `edit-2` icon): Inga uploads it and checks that the icon shows; change the icon name in `ef-practice-sso.php` if she prefers another (`book`, `lesson`, `feather`, `font`).
+**Open, proposed to Inga on 11 November (she has not chosen yet):**
+1. **5 matching tasks whose meanings could be swapped**: b1-tenses-2 line 26, b1-tenses-1 line 67, b1-passives lines 106 and 172, a2-big line 124. Draft new pairs in `pending/`, show them, then add with the `match` replacement (`_src/replaced_match.json`).
+2. **Research export**: flag the answers that were marked wrong unfairly before 8 November (*grows*, *broke*, *have been / were being* in the Ozols task) with a column in the export (`app/src/Research.php`), and add a dated line in `RESEARCH-DATA-PLAN.md`.
+3. **GitHub issues #44–#82** are fixed in the uploaded zip but still open; close them with a short comment only after Inga's OK.
+4. After her upload: she checks that *Prepared questions → Add all* now finds nothing new or changed.
+
+**Older open items (only when she asks):** learning drag tasks for every path step (*option B*: the source is always a check / use task that is not a drag task; never copy an existing order / bank / match); twins where tasks repeat most (needs her Usage → Repeats screenshot); `tools/small_banks.py` short-name map; 74 built-in explanations with *past participle / infinitive / gerund* vs *3rd form / base form* on the cards; Latvian path and summary; her review lists `task-roles-review.md` and `write-tasks-rewrite-review.md`; path circles proposal D; AI check of writing dry run (`tools/ai_dryrun.php`, the key is set by Inga in the environment settings, never asked in chat); A2.2 tasks and the missing test-english.com topics; WordPress plugin 1.8.5 icon.
+
+**Templates to copy:** `_src/twins_3.py` for check / use tasks, `_src/learn_drag_4.py` for learning tasks (`learning_task()` marks them *practice only*), `_src/bank_fixes.py` for changing published draft rows without touching their generators.
 
 **Rule cards:** every card is in `app/authoring/cards2_*.py` (one style: a form table, exactly three typical mistakes, two or three "When we use it" blocks, one to three "Watch out" points, EN and LV in the same structure). A new topic's card follows `cards2_h.py`. Show EN and LV phone screenshots to Inga before packaging.
 
@@ -82,12 +80,12 @@ tasks (`learning_task()` marks them *practice only*).
 4. Show the review to Inga. Reviews by other agents are welcome, but weigh each point against the rules: take the sound ones, say briefly why you do not take the others.
 5. After her OK: save to `docs/task-drafts/<name>.csv` (no `pending/`), move the review next to it, add lines to `CHANGELOG-practice-app.md` and `RESEARCH-DATA-PLAN.md`, run the full test suite, package, give her the zip link and the reminder *Prepared questions → Add all → Approve all*.
 
-Correcting a task that is already on the server: built-in tasks with `report_fix(base_id, **changes)` in `app/authoring/content_review.py` (a new `-rN` version; update the expected count in `app/tests/bank_update_test.php`); prepared drafts by changing the generator and adding `replaces("old correct option / sentence / task text")` after the row, so the import retires the old one (it may change the task type).
+Correcting a task that is already on the server: built-in tasks with `report_fix(base_id, **changes)` in `app/authoring/content_review.py` (a new `-rN` version; update the expected retired count in `app/tests/bank_update_test.php`, now 337); `var-*` tasks in `content_variety.py` by renaming the id to the next `-rN` in place; prepared drafts by changing the generator and adding `replaces("old correct option / sentence / task text")` after the row, so the import retires the old one (it may change the task type).
 
 ## Working with Inga (what she expects)
 - She writes in Latvian, often briefly ("A, apstiprinu, iedod zip"). Answer in Latvian: what was done, the test results, what is in the zip, what waits for her. Tables are welcome; no filler.
 - She approves content herself. Nothing goes into `docs/task-drafts/*.csv` (and so into the zip) before her OK.
-- Every zip answer gives the version (from the package output), the link `https://github.com/inga-cmyk/englishfever/raw/claude/intelligent-albattani-2e9bfi/dist/practice-app-update.zip` and what to do after uploading.
+- Every zip answer gives the version (from the package output), the link (above), what is inside, and *Prepared questions → Add all → Approve all*.
 - Say proactively how a change affects her research data.
 - She remembers past corrections and expects them never to come back: read the dated sections of `ITEM-WRITING-RULES.md` before writing anything.
 
@@ -96,7 +94,7 @@ Correcting a task that is already on the server: built-in tasks with `report_fix
 ```
 python3 app/authoring/build.py                 # after any change in app/authoring
 bash app/tests/browser/run_all.sh 2>&1 | tee /tmp/run_all.log   # everything, ~15 min; each line must end ALL PASS / OK / no errors
-python3 tools/package_practice_app.py          # builds and tests the bank, then writes dist/*.zip with a version stamp (Riga time)
+python3 tools/package_practice_app.py          # do not pipe into head (it stops the packaging); builds and tests the bank, then writes dist/*.zip with a version stamp (Riga time)
 ```
 Before packaging: add a line at the top of `docs/CHANGELOG-practice-app.md` (under "Fixes and polish"), and bump `?v=` in
 `app/index.html` and `app/assets/app.js` when the front end changed. Commit messages end with the attribution lines the session gives.

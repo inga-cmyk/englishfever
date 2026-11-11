@@ -63,9 +63,10 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 **Open, proposed to Inga on 11 November (she has not chosen yet):**
 1. **5 matching tasks whose meanings could be swapped**: b1-tenses-2 line 26, b1-tenses-1 line 67, b1-passives lines 106 and 172, a2-big line 124. Draft new pairs in `pending/`, show them, then add with the `match` replacement (`_src/replaced_match.json`).
-2. **Research export**: flag the answers that were marked wrong unfairly before 8 November (*grows*, *broke*, *have been / were being* in the Ozols task) with a column in the export (`app/src/Research.php`), and add a dated line in `RESEARCH-DATA-PLAN.md`.
+2. **Research export**: done on 11 November (`unfair_wrong` column in answers.csv, `Research::unfairWrong`); in zip 2026-11-11 07:23, not uploaded yet.
 3. **GitHub issues #44–#82** are fixed in the uploaded zip but still open; close them with a short comment only after Inga's OK.
-4. After her upload: she checks that *Prepared questions → Add all* now finds nothing new or changed.
+4. After her upload *Prepared questions* showed **1 new in b1-tenses-2.csv** (2829 already there). A replay of every past zip on a clean database gives 0 new, so the row is missing or retired only on the server: ask her for the task text after *Add all*.
+5. **9 new reports of 11 November** (ppc-B11-5a-r2, var-pp-b11-match-01, var-fu-a22-bank-01-r2, c-3118 *Madrid*, fu-B11-5a-r3, c-0409 *the shopping*, c-0037 *should we leave*, pa-A21-5a-r2, var-pc-a21-order-01): proposals given to Inga, nothing changed yet. For item 1 she chose to see the five matching tasks first and decide which to rewrite or drop.
 
 **Older open items (only when she asks):** learning drag tasks for every path step (*option B*: the source is always a check / use task that is not a drag task; never copy an existing order / bank / match); twins where tasks repeat most (needs her Usage → Repeats screenshot); `tools/small_banks.py` short-name map; 74 built-in explanations with *past participle / infinitive / gerund* vs *3rd form / base form* on the cards; Latvian path and summary; her review lists `task-roles-review.md` and `write-tasks-rewrite-review.md`; path circles proposal D; AI check of writing dry run (`tools/ai_dryrun.php`, the key is set by Inga in the environment settings, never asked in chat); A2.2 tasks and the missing test-english.com topics; WordPress plugin 1.8.5 icon.
 

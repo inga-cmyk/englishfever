@@ -15,11 +15,11 @@ BASE = os.path.join(HERE, "item_gates_baseline.json"); BAD = os.path.join(HERE, 
 TERMS = (r"\b(passive|present perfect|past simple|present simple|past perfect|future simple|continuous|conditional|modal|preposition|adverb|"
          r"adjective|noun|tense|plural|singular|gerund|infinitive|participle|article|pronoun|backshift|question tag|auxiliary|clause|"
          r"comparative|superlative|reported speech)s?\b")
-NONFORM = (r"\b(wills|coulds|cans|musts|shoulds|woulds|mights|goed|wented|buyed|boughted|catched|teached|thinked|bringed|eated|drinked|"
-           r"writed|taked|maked|comed|mouses|childs|childrens|mans|womans|peoples|foots|tooths|gooder|badder|reliabler|beautifuler)\b|"
-           r"\bmore (better|easier|bigger|cheaper)\b|\bhad (went|did|saw|came|took|ate|wrote|gave|knew|spoke)\b|"
-           r"\b(is|are|am|was|were) (get|go|make|do|have|work|play)\b|\b(doesn't|does not|didn't|did not) \w+(?<!ss)(s|ed)\b|"
-           r"\bwill \w+(?<!ss)(s|ed|ing)\b|(?<!used )(?<!forward )\bto \w+ing\b")
+# Not real forms and not typical learner mistakes. Over-regular forms that learners really write (womans, childs, buyed, didn't used to)
+# may be wrong options: they are the mistake the task is about (teacher, 11 November).
+NONFORM = (r"\b(wills|coulds|cans|musts|shoulds|woulds|mights|wented|boughted|childrens|gooder|badder|reliabler|beautifuler)\b|"
+           r"\bhad (went|did|saw|came|took|ate|wrote|gave|knew|spoke)\b|\b(is|are|am|was|were) (get|go|make|do|have|work|play)\b|"
+           r"\bwill \w+(?<!s)(s|ed|ing)\b")
 AUX = r"(should|shall|can|could|will|would|must|may|might|is|are|am|was|were|have|has|had)\b"
 
 
@@ -65,8 +65,11 @@ def g_which_question(i):   # 29 October: "Make a question" says which question
     return ["'Make a question' does not say which (with What / a yes/no question)"]
 
 
-def g_speaker(i):   # 29 October: no speaker tag after a quote
-    return ["speaker tag after a quote"] if re.search(r"[,?!.]['’]\s+(she|he|they|I|we|the \w+|[A-Z]\w+)\s+(said|asked|told|replied)\b", i["q"]) else []
+SPEAKER = r"(she|he|they|we|the \w+|(?!She\b|He\b|They\b|We\b|I\b)[A-Z]\w+)"
+def g_speaker(i):   # 29 October, 11 November: no speaker tag after a quote ('…,' she said.); who speaks is said before the quote or by "Start with"
+    q = i["q"]   # not a tag: 'I live in Riga.' She said she ___ (the report itself starts after the quote)
+    return ["speaker tag after a quote"] if re.search(r",['’]\s+" + SPEAKER + r"\s+(said|asked|told|replied)\b", q) \
+        or re.search(r"[?!]['’]\s+" + SPEAKER + r"\s+(said|asked|told|replied)( me| us| her| him)?\s*[.?]", q) else []
 
 
 def g_contraction(i):   # 3 November: I'd / she'd must be accepted in a typed sentence (tools/dump_items.php asks the real checker)

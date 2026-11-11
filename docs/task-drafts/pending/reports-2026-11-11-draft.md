@@ -139,7 +139,7 @@ Piezīmes:
 | b1-cond-rep-1:172 · B1.2 | Report it: 'I'll call you tomorrow,' Tom said to me. | Report it. Start with *Tom told me*: 'I'll call you tomorrow.' | kā līdz šim, **bez** *The next day Tom told me he would call me.* (maina nozīmi) |
 | b1-cond-rep-1:173 · B1.2 | Report it: 'I didn't see him,' she said. | Report it. Start with *She said*: 'I didn't see him.' | kā līdz šim |
 | b1-cond-rep-1:206 · B1.2 | Report it: 'Where are you going?' she asked. | Report it. Start with *She asked*: 'Where are you going?' | kā līdz šim, un klāt: She asked (us) where we were going. |
-| b1-cond-rep-1:207 · B1.2 | Report it: 'Do you like jazz?' he asked me. | Report it. Start with *He asked me*: 'Do you like jazz?' | He asked me if / whether I liked jazz. **Izņemts:** atbildes bez *me* un *If I liked jazz, he asked me.* (nav dabiska angļu valoda) |
+| b1-cond-rep-1:207 · B1.2 | Report it: 'Do you like jazz?' he asked me. | At school, years ago: 'Do you like jazz?' Report it. Start with *He asked me*. | He asked me if / whether I liked jazz. **Izņemts:** atbildes bez *me* un *If I liked jazz, he asked me.* (nav dabiska angļu valoda) |
 | b1-cond-rep-1:208 · B1.2 | Report it: 'Please close the window,' she said to me. | Report her request to you. Start with *She*: 'Please close the window.' | She asked me to close the window. · She told me to close the window. |
 | b1-cond-rep-1:209 · B1.2 | Report it: 'Don't be late,' he told us. | Report it. Start with *He told us*: 'Don't be late.' | kā līdz šim |
 | b1-cond-rep-1:210 · B1.2 | Report it: 'What did you do last night?' she asked me. | Report it. Start with *She asked me*: 'What did you do last night?' | kā līdz šim, un klāt: She asked me what I did the previous night. |
@@ -160,8 +160,29 @@ Piezīmes:
 
 - **Izlemts (Inga, 11. novembris): atstāstījumā pieturamies pie mācītā noteikuma.** Pēc *said / told / asked* pagātnē laiks iet soli atpakaļ, un tikai šo formu ieskaita. *He asked me if I like jazz* netiek pieņemts (b1-cond-rep-1:207 un līdzīgie). Skaidrojums pasaka, kāpēc: *After a past reporting verb (asked, said) the tense goes one step back: like → liked. This is always correct. In everyday English the present is also heard while something is still true; here we practise the rule.* LV: *Pēc ievadošā darbības vārda pagātnē (asked, said) laiks iet soli atpakaļ: like → liked. Tā vienmēr ir pareizi. Sarunvalodā dzird arī tagadni, ja teiktais joprojām ir spēkā; šeit trenējam noteikumu.* Murphy (48. nodaļa) to apstiprina: pagātnes forma der vienmēr, tagadne tikai tad, ja situācija nav mainījusies.
 - **Noteikumu kartes piemērs ar piebildi** (*"I'm working late," he said.*) paliek kā izņēmums (Inga, 11. novembris).
-- **Sākums *Tom told me* (b1-cond-rep-1:172):** sākums tagad dod *told me*, bet skaidrojums māca atšķirību *say / tell*. Ja gribi, lai izglītojamais izvēlas pats, norāde var būt *Tom's words to me: '…' Report them.* un pieņemtas abas: *Tom told me…* un *Tom said he would call me…*.
+- **Izlemts (Inga, 11. novembris): pārrakstāmajos atstāstījuma teikumos sākums ir dots** (*Start with *Tom told me**, *Start with *She said**). Tā izglītojamā paša teikumā nevar rasties *said me* vai *told to me*, un uzdevums pārbauda vienu lietu: laika maiņu. *said / told* izvēli pārbauda atsevišķos uzdevumos (skat. G sadaļu).
+- **Izlemts: kur iespējams, uzdevumā ir situācija, kas ir mainījusies**, lai pagātne būtu obligāta arī pēc Murphy.
 
 ## F. Papildu atradumi esošajās atslēgās (nav saistīti ar piebildi)
 
 Otrs lasītājs pamanīja, ka dažos pārrakstāmajos uzdevumos atslēgā ir automātiski veidotas vārdu secības, kas nav dabiska angļu valoda (*If I liked jazz, he asked me.*, *The next day they said they would finish the report.*). Šajā melnrakstā tās ir izņemtas piecos uzdevumos. Visu 420 pārrakstāmo uzdevumu atslēgu pārlasīšana ir U7 (6. posms); šis atradums to padara steidzamāku.
+
+## G. *said* vai *told*: atsevišķi uzdevumi (jauni, apstiprināšanai)
+
+Šobrīd *said me / told that* pārbauda 9 izvēles uzdevumi (B1.1: 2, B1.2: 2, B2.1: 5) un viens mācību vilkšanas uzdevums; rakstāma uzdevuma nav. Lai izvēli pārbaudītu arī ar paša rakstītu vārdu, piedāvāju sešus īsus uzdevumus, kuros jāieraksta tikai *said* vai *told* (laika maiņa jau ir dota).
+
+Norāde visiem: **Complete with *said* or *told*.**
+
+| Līmenis | Teikums | ✔ |
+|---|---|---|
+| B1.1 | Anna ___ me she was moving to Tallinn. | told |
+| B1.1 | Anna ___ she was moving to Tallinn. | said |
+| B1.1 | The doctor ___ that I needed more sleep. | said |
+| B1.2 | Our manager ___ us the office would close at four. | told |
+| B1.2 | The driver ___ to us that the road was closed. | said |
+| B1.2 | Nobody ___ me that the meeting had been moved. | told |
+
+- EN: *tell* needs a person right after it: *told me, told us*. *say* does not: *said (that)…*, or *said to me*.
+- LV: Pēc *tell* uzreiz nāk persona: *told me, told us*. Pēc *say* persona nenāk: *said (that)…* vai *said to me*. Tulkojot burtiski no "teica man", rodas *said me*.
+- Loma: *use* (izglītojamais raksta vārdu); skaitās pierādījumos tēmā *Reported statements*.
+- Šos sešus otrs lasītājs vēl nav lasījis; izlasīs pirms pievienošanas.

@@ -1,0 +1,111 @@
+# Slūžu atrastie esošie uzdevumi (zināmais saraksts)
+
+11. novembrī pievienotās pārbaudes (`app/tests/item_gates_test.py`) atrada šos jau publicētos uzdevumus. Tie neaptur iepakošanu, jo ir pierakstīti kā zināmi (`app/tests/item_gates_baseline.json`); jebkurš **jauns** uzdevums ar tādu pašu pazīmi iepakošanu aptur. Daļa ir īstas kļūdas, daļa pēc izlasīšanas var izrādīties kārtībā. Lemj Inga.
+
+## Gramatikas termins norādē (1)
+
+- cond_second · B1.2 · match: Compare the conditionals and match each sentence to its time and meaning. → If I had enough money now, I'd buy a car. = An imagined present situation. ; If I have enough money next month, I'll buy a car. = A possible future situation. ; If I had had enough money yesterday, I'd have bought a car. = An imagined alternative to the past.
+
+## Vārdu bankā forma, kas neeksistē (10)
+
+- cond_first · A2.2 · gap: If you ___ the exam, your parents will be proud.
+- cond_first · B1.1 · gap: If she ___ the interview, she ___ the job.
+- cond_first · B1.1 · gap: Unless you ___ now, you ___ the last bus.
+- irregular_plurals · A2.1 · gap: I have two bad ___.
+- irregular_plurals · A2.1 · gap: The ___ are in the garden.
+- irregular_plurals · A2.2 · gap: How many ___ live in your town?
+- irregular_plurals · A2.2 · gap: Three ___ work in our office.
+- irregular_plurals · A2.2 · gap: We saw three ___ in the kitchen!
+- used_to · A2.2 · gap: I ___ like fish, but now I love it.
+- verb_patterns · A2.2 · gap: She likes ___ in the garden.
+
+## Vārdu secība: jautājums bez norādes "to make a question" (9)
+
+- causative · B1.2 · order: Put the words in order. → have you ever had your teeth whitened
+- cmp_pp_ps · A2.2 · order: Put the words in order. → have you ever eaten sushi
+- cmp_pp_ps · A2.2 · order: Put the words in order. → have you ever tried skiing
+- indefinite_pronouns · A2.2 · order: Put the words in order. → is there anything to eat
+- modal_verbs · B1.1 · order: Put the words in order. → should we leave before it gets dark
+- past_perfect · B1.2 · order: Put the words in order. → had you ever visited london before that trip
+- present_continuous · B1.1 · order: Put the words in order. → are you using this chair or can i take it
+- present_perfect · A2.2 · order: Put the words in order. → have you ever been to london
+- present_perfect_passive · B1.1 · order: Put the words in order. → have the tickets been sold yet
+
+## "Make a question" bez norādes, kāds jautājums (2)
+
+- future · A2.1 · text: Make a question: You are going to travel by train.
+- past_simple · A2.1 · text: Make a question: He played football.
+
+## Runātāja piebilde pēc citāta (59)
+
+- rep_questions · B1.2 · gap: 'Have you finished?' He asked if I ___ . (finish)
+- rep_questions · B1.2 · gap: 'Open the door.' She asked me ___ the door. (open)
+- rep_questions · B1.2 · gap: 'What time is it?' He asked what time it ___ . (be)
+- rep_questions · B1.2 · gap: 'Where do you live?' She asked me where I ___ . (live)
+- rep_questions · B1.2 · gap: Report the question: 'Can you help me?' She asked if I ___ help her.
+- rep_questions · B1.2 · mcq: Choose the correct option: 'Are you ready?' He asked me ___ ready. → if I was
+- rep_questions · B1.2 · mcq: Choose the correct option: 'Close the window.' She told me ___ the window. → to close
+- rep_questions · B1.2 · mcq: Choose the correct option: 'Where do you work?' She asked me ___. → where I worked
+- rep_questions · B1.2 · mcq: Choose the correct option: 'Where do you work?' She asked me where I ___ . → worked
+- rep_questions · B1.2 · mcq: Which sentence reports the request 'Please wait here,' the guard said? → The guard told me to wait there.
+- rep_questions · B1.2 · text: Report it: 'Did you enjoy the film?' he asked me.
+- rep_questions · B1.2 · text: Report it: 'Do you like jazz?' he asked me.
+- rep_questions · B1.2 · text: Report it: 'Don't be late,' he told us.
+- rep_questions · B1.2 · text: Report it: 'Please close the window,' she said to me.
+- rep_questions · B1.2 · text: Report it: 'What did you do last night?' she asked me.
+- rep_questions · B1.2 · text: Report it: 'Where are you going?' she asked.
+- rep_questions · B2.1 · mcq: Which report is correct? 'Can you help me?' she asked. → She asked if I could help her.
+- rep_questions · B2.1 · mcq: You report a customer's question to your team: 'How long will the repair take?' the customer asked. Choose the correct option. → The customer asked how long the repair would take.
+- rep_questions · B2.1 · text: Report this: 'Could you send me the invoice?' Lena asked.
+- rep_questions · B2.2 · mcq: 'Where should I park?' she asked me. Which report is correct? → She asked me where she should park.
+- rep_questions · B2.2 · mcq: Which report is correct? 'What should I do?' he asked me. → He asked me what to do.
+- rep_questions · B2.2 · text: Report this: 'Where should we meet?' they asked.
+- rep_questions · B2.2 · write: Report this question using whether. 'Is the data accurate?' the editor asked. Start with The editor asked whether.
+- rep_statements · B1.1 · gap: 'I don't like coffee,' Mark said. → Mark said he ___ coffee. (not / like)
+- rep_statements · B1.1 · gap: 'I live in Riga.' She said she ___ in Riga.
+- rep_statements · B1.1 · gap: 'I will call you.' He told me he ___ me. (call)
+- rep_statements · B1.1 · gap: 'I'm busy.' She said she ___ busy. (be)
+- rep_statements · B1.1 · gap: 'I'm tired.' He said he ___ tired.
+- rep_statements · B1.1 · gap: 'I've finished.' She said she ___ finished.
+- rep_statements · B1.1 · gap: 'We will help you.' They said they ___ help me.
+- rep_statements · B1.1 · mcq: 'I am tired,' she said last night. Now she feels fine. Report it: She said she ___ tired. → was
+- rep_statements · B1.1 · mcq: Choose the correct option: 'I'm working on a new project.' She said that she ___ on a new project. → was working
+- rep_statements · B1.1 · mcq: Choose the correct option: 'I'm working today.' He said he ___ that day. → was working
+- rep_statements · B1.1 · mcq: Report this: 'I can't come to the meeting,' Jon said. Choose the correct option. → Jon said he couldn't come to the meeting.
+- rep_statements · B1.1 · text: Report it: 'I'm working late,' she said.
+- rep_statements · B1.1 · text: Report it: 'We have finished,' they said.
+- rep_statements · B1.1 · text: Report it: 'We will finish the report tomorrow,' they said.
+- rep_statements · B1.1 · write: Report this sentence. 'I'm learning Spanish,' Elena said. Start with Elena said.
+- rep_statements · B1.2 · gap: 'I can swim.' He said he ___ swim.
+- rep_statements · B1.2 · gap: 'I can't swim.' He said he ___ swim. (can't)
+- rep_statements · B1.2 · gap: 'I don't like it.' He said he ___ it.
+- rep_statements · B1.2 · gap: 'I saw her yesterday.' He said he ___ her the day before.
+- rep_statements · B1.2 · gap: 'I'm leaving tomorrow.' She told me she ___ the next day.
+- rep_statements · B1.2 · gap: 'We have won!' They said they ___ . (win)
+- rep_statements · B1.2 · mcq: 'I have finished the report,' he said. Later he found more mistakes in it. Report it: He said he ___ finished the report. → had
+- rep_statements · B1.2 · mcq: 'I'll call you tomorrow, I'm busy now,' Ann said last week. When you report it a week later, what happens to *tomorrow* and *now*? → They change to 'the next day' and 'then'.
+- rep_statements · B1.2 · mcq: Choose the correct option: 'We have lost.' They said they ___ lost. → had
+- rep_statements · B1.2 · mcq: You report a message to your manager: 'We are almost ready,' the team said. Choose the correct option. → The team told me they were almost ready.
+- rep_statements · B1.2 · text: Report it: 'I can help you,' he said.
+- rep_statements · B1.2 · text: Report it: 'I didn't see him,' she said.
+- rep_statements · B1.2 · text: Report it: 'I'll call you tomorrow,' Tom said to me.
+- rep_statements · B1.2 · text: Report this: 'I'm leaving now,' Kate said.
+- rep_statements · B2.1 · mcq: 'The Earth goes round the Sun,' the teacher said. Why can we report it as 'The teacher said the Earth goes round the Sun'? → Because it is still true.
+- rep_statements · B2.1 · mcq: Report this naturally: 'I won't sign it until the lawyer reads it,' the client said. Choose the correct option. → The client said he wouldn't sign it until the lawyer had read it.
+- rep_verbs · B2.2 · mcq: Report a polite refusal: 'No, I won't work this weekend,' Sam said. Choose the correct option. → Sam refused to work that weekend.
+- rep_verbs · B2.2 · write: Report this apology with apologise: 'Sorry I forgot the meeting,' Dana said.
+- rep_verbs · C1.1 · text: Report with *advise*: 'Don't sign anything until you've read it,' the lawyer told her.
+- rep_verbs · C1.2 · mcq: 'I'm not going to tell you who did it,' the officer said. Which word says what he did? → refused
+- rep_verbs · C1.2 · mcq: You report a complaint in formal English: 'The service was terrible,' the customer said. Choose the correct option. → The customer complained that the service had been terrible.
+
+## Savienošana ar īsām nozīmju uzlīmēm (jāizlasa, vai nav samaināmas) (9)
+
+- adj_order · B1.2 · match: Match each wrong phrase with its correct version. → a red big car = a big red car ; an old lovely house = a lovely old house ; a wooden small box = a small wooden box ; a French old film = an old French film
+- causative · B1.1 · match: Match each service with the person who does it. → have a car repaired = a mechanic ; have your teeth checked = a dentist ; have your hair cut = a hairdresser ; have a photo taken = a photographer
+- comparison · A2.2 · match: Match each word with the form that fits 'It is ___ of all.' → long = the longest ; easy = the easiest ; expensive = the most expensive ; bad = the worst
+- future · B1.1 · match: Match each sentence with its use. → I'll help you with that. = an offer ; I'm going to learn to drive. = a plan ; It's going to rain. = a prediction from evidence ; I'm meeting Jo at five. = an arrangement
+- present_continuous · B1.1 · match: Match each sentence with its meaning. → I'm waiting for a call. = an action now ; She's staying with us this week. = a temporary situation ; It's getting darker. = a change ; We're flying to Rome on Friday. = an arrangement
+- present_continuous_passive · B1.2 · match: Match each sentence with its meaning. → The bridge is being repaired. = the work is in progress ; The bridge is repaired every spring. = it happens regularly ; The bridge has been repaired. = the work is finished ; The bridge was repaired. = it happened in the past
+- present_perfect · B1.1 · match: Match each sentence with its meaning. → I've lost my keys. = a result now ; I've lived here for ten years. = something that continues ; I've been to Italy twice. = life experience ; I've just finished. = a very recent action
+- present_simple · B1.1 · match: Match each sentence with its use. → The sun rises in the east. = a general truth ; I go to the gym on Tuesdays. = a habit ; The bus leaves at 6.15. = a timetable ; She works in a bank. = a permanent situation
+- subject_object_q · A2.2 · match: Match each question with what it asks about. → Who called Tom? = the person who called ; Who did Anna call? = the person Anna called ; What fell? = the thing that fell ; What did Anna buy? = the thing Anna bought

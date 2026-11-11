@@ -1369,6 +1369,7 @@
       var good = res.correct;
       var cheers = lv ? ['Pareizi!', 'Labi izdarīts!', 'Jā, tieši tā!', 'Lieliski!', 'Tieši tā!'] : ['Correct!', 'Well done!', 'Yes, that is right!', 'Good job!', 'Exactly right!'];
       var fb = h('div', { class: 'feedback ' + (good ? 'good' : 'bad') });
+      metaTags.hidden = false;   // the answer is in: now the topic may be named
       var tips = (good && res.notes) ? res.notes : [];
       // rule reminder = a question-mark button and the flags beside it: a flag opens the rule (and the whole explanation) in that language (teacher, 27 October)
       fb.appendChild(h('h3', { class: res.skipped ? 'skipped' : null }, icon(good ? 'check' : res.skipped ? 'arrow' : 'cross'), res.skipped ? (lv ? 'Izlaists – lūk, atbilde' : 'Skipped – here is the answer') : it.kind === 'write' ? (good ? (lv ? 'Vajadzīgā forma ir' : 'The form you need is there') : (lv ? 'Pārbaudi uzdevuma prasības' : 'Check the task rules')) : (good ? (tips.length ? (lv ? 'Pareizi – ar nelielu rakstības padomu' : 'Correct – with a small spelling tip') : cheers[lastCheer = (lastCheer === null ? Math.floor(Math.random() * cheers.length) : lastCheer)]) : (res.near ? (lv ? 'Gandrīz – pārbaudi vienu vārdu' : 'Almost – one word to check') : (lv ? 'Ne gluži' : 'Not quite'))),
@@ -1546,6 +1547,11 @@
     if (ses.mode !== 'placement' && it.practice_context === 'review') phaseLabel += (ses.skills && ses.skills.length > 1 ? ' · Review · mixed topics' : ' · Review');
     if (ses.mode !== 'placement' && it.practice_context === 'stretch') phaseLabel += ' · Next step';
     var done = ses.n;
+    // The topic, level and kind of task are shown only after the answer, with the explanation: before it, a label like "Present simple"
+    // gives the form away (teacher, 11 November). Teachers always see them.
+    var metaTags = h('span', { class: 'meta-tags' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
+      ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]));
+    metaTags.hidden = !(rev || state.user.role === 'teacher');
     drawDots(); drawPrev();
     show(h('div', { class: 'sess' + (ses.comeback ? ' mode-chance' : '') },
       h('div', { class: 'sess-top' }, h('span', null, phaseLabel, h('span', { class: 'sr' }, ' · Question ' + (at + 1) + ' of ' + ses.length), reviewing ? ' · looking back' : ''),   // the dots show the count (teacher, 5 November)
@@ -1554,8 +1560,7 @@
       dotsEl,
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
-        h('div', { class: 'meta' }, h('span', { class: 'pill dark', title: it.skill_label }, String(it.skill_label || '').replace(/\s*[(:].*$/, '')), ses.mode === 'placement' ? null : levelPill(it.level),   // no level or thinking-level labels in the test: they can worry a learner (teacher, 27 October)
-          ses.mode === 'placement' ? null : h('span', { class: 'pill' }, catOf(it.kind)[1] + ' ' + catOf(it.kind)[0]), taskIdEl, ses.mode === 'placement' ? reportBtn : null,
+        h('div', { class: 'meta' }, metaTags, taskIdEl, ses.mode === 'placement' ? reportBtn : null,
           ses.mode === 'placement' ? null : h('button', { type: 'button', class: 'task-rule', 'aria-label': 'Rule card', title: 'Rule card', onclick: function () { cardOpened = true; rulesModal(it.skill, true); } }, '?')),   // the rule card during a task (teacher, 2 November); noted with the answer for the research   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
         qEl, area, h('div', { class: 'actbar' }, ses.mode === 'placement' || rev ? h('span') : skipBtn, submit), feedback)));   // Skip under the left thumb, Check under the right (teacher, 5 November)
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
@@ -1801,8 +1806,8 @@
   function viewSummary() {
     var s = state.lastSummary;
     if (!s) { location.hash = '#/home'; return; }
+    if (s.mode === 'placement') return summaryPlacement(s);   // the level test result is shown first, undisturbed: the invitation to make an account comes after a practice (teacher, 11 November)
     setTimeout(function () { if (location.hash === '#/summary') guestInvite(false); }, 700);
-    if (s.mode === 'placement') return summaryPlacement(s);
     var nodes = [];
     var fixed = s.fixed || 0;
     var headline = s.comeback

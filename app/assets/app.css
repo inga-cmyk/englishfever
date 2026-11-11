@@ -475,6 +475,8 @@ details.area-fold .skillgrid { margin: 4px 0 10px; }
 .report-link:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 .report-link[disabled] { cursor: default; text-decoration: none; color: var(--good); }
 .task .meta .taskid { margin-left: 4px; }
+.task .meta .meta-tags { display: contents; }
+.task .meta .meta-tags[hidden] { display: none; }
 .taskid { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .78rem; }
 .betapill { display: inline-block; background: transparent; color: var(--gold); border: 1px solid rgba(222,193,122,.55); font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
 .betapill .short { display: none; }

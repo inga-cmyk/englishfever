@@ -124,3 +124,10 @@
   form that does not fit). The learner must know which form the sentence needs.
 - No wrong option that can be rejected without knowing the topic: no subject–verb mismatch (*We has*, *We is*),
   no non-existent forms (*is get*), no word of another kind.
+
+## Gates: rules that are tested, and the second reader (teacher, 11 November)
+- A rule that a script can measure is a test in `app/tests/item_gates_test.py`; the packaging stops when a **new** task breaks it. Now tested: no grammar term in an instruction; word-bank chips are real forms that agree with the subject; a word order that starts with *should / can / will / is / have …* says *to make a question* (or accepts the statement); *Make a question* says which question; no speaker tag after a quote; a typed sentence accepts *'d*; matching with short labels is read for swappable pairs; *izglītojamie*, not *skolēni*.
+- Findings that existed when a gate was added are in `app/tests/item_gates_baseline.json` (list for the teacher: `docs/task-drafts/pending/gates-known-findings.md`). When a gate flags a task that is fine, read it, then run the test with `--update`; never bend the task to pass.
+- Every corrected mistake stays as an example in `app/tests/bad_examples.json`. With `gate`: the test proves the gate still catches it. With `reader`: no script can catch it.
+- **Second reader.** Before a draft goes to the teacher, a different agent (not the writer) reads it with one job: for every task, try to find a second correct answer, a swappable pair, a wrong option that is correct English, and check each `reader` case in `bad_examples.json`. Its findings go into the review file next to the tasks.
+- **Every report ends in one of three:** a new gate, a new line in `bad_examples.json`, or a note why no rule is needed (the report was not a mistake).

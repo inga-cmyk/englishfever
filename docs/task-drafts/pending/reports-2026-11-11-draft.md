@@ -265,3 +265,41 @@ Skaidrojumi (EN; LV tāpat, kā līdz šim tēmā): paliek tēmas esošie, papil
   - I'm getting used to my new job. = Every week it feels a little easier.
   - I didn't use to like coffee. = Now I drink three cups a day.
 - Pilni teikumi, un pāri nav atrodami pēc kopīgiem vārdiem.
+
+## I. Otrā lasītāja atradumi (12. novembris) un galīgās versijas
+
+Otrs lasītājs izlasīja 90 uzdevumus un atrada 40 problēmas (pilns saraksts: `reports-2026-11-11-second-reader-2.md`). **Šī sadaļa aizstāj iepriekšējās versijas** tiem uzdevumiem, kas te minēti. Visās atslēgās, kur ir *had / would*, pieņem arī *'d* (*they'd finished*, *If I'd studied…, I'd have passed*).
+
+### I.1. Nosacījuma teikumi (H.1): situācija vēl neizslēdza citu veidu
+| Rinda | Galīgais teksts | Pieņem |
+|---|---|---|
+| cs built-in (boss) | I'm not the boss. If I ___ (be) the boss, I ___ (cancel) all Monday meetings. | were / would cancel · **piezīmes:** *was* (sarunvalodā arī pareizi), *could cancel* (= varētu) |
+| cs built-in (company) | Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be) | offered / would be |
+| ct built-in (licence) | He drove too fast just once and lost his licence. If he ___ so fast that day, he ___ it. (not drive / not lose) | hadn't driven / wouldn't have lost |
+| b1-cond-rep-1:92, :94, :95 | teksts kā H.1 | + *could play / could buy / could visit* ar piezīmi (*could* = varētu) |
+| b1-cond-rep-1:130 | He lost his keys yesterday and had to wait outside for two hours. If he ___ them, he ___ outside. (not lose / not wait) | hadn't lost / wouldn't have waited |
+| b1-cond-rep-1:131 | They didn't follow the signs and got lost. They ___ lost if they ___ the signs. (not get / follow) | wouldn't have got · wouldn't have gotten / had followed |
+| b1-cond-rep-1:132 | She never saw the message. If she ___ it, she ___ to it. (see / reply) | had seen / would have replied |
+| b1-upgrades-1:49 | She can't get the job: she doesn't speak German. If she ___ it, she ___ to Berlin. (get / move) | got / would move |
+| twins-1:44 | The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel) | built / would travel |
+
+### I.2. Atstāstījums (D)
+- **Kas runā un kam, pirms citāta:** rq-B21-1a *Anna's question to you: 'Can you help me?'* · rq-B22-1a-r2 *Tom's question to you: 'What should I do?'* · rq-B22-2a-r2 *Eva's question to you: 'Where should I park?'* (varianti nemainās).
+- **Uzvedne vairs nepasaka atbildi:** rv-B22-5a *Which sentence reports Sam's answer: …* (nevis *refusal*) · rv-C12-5a *Which sentence reports the customer's words in formal English: …* (nevis *complaint*).
+- **Bez *Report it*:** rs-B11-1a-r3 *Last night Anna said: 'I am tired.' Now she feels fine. → Anna said she ___ tired.* · rs-B12-1a-r3 *On Monday Tom said: 'I have finished the report.' Later he found mistakes in it. → Tom said he ___ finished the report.* · rs-B11-3a *Ten years ago Mark said: 'I don't like coffee.' Now he drinks it every day. → Mark said he ___ coffee. (not / like)*
+- **Situācija, kas ir mainījusies:** rs-B11-5a *Last month Jon said: 'I can't come to the meeting.' In the end, he came.* · rs-B12-5a *Yesterday the team said: 'We are almost ready.' Today the work is finished.* · rs-B21-5a *Last week the client said: 'I won't sign it until the lawyer reads it.' Yesterday he signed it.* (jautājums un varianti nemainās)
+- **Brīdis noteikts:** b1-upgrades-1:52 *Last Monday: 'We will finish the report tomorrow.' → They said ___.* · b1-cond-rep-1:172 *Last week: 'I'll call you tomorrow.' → Tom told me ___.* (pieņem *the next day / the following day / the day after*) · rs-B12-3a-r2 *Yesterday at five: 'I'm leaving now.' → Kate said ___.* (pieņem *she was leaving / … then / … at that moment / … right then*).
+- **Tikai solis atpakaļ (tavs noteikums):** b1-cond-rep-1:210 *A week ago: 'What did you do last night?' → She asked me ___.* pieņem tikai *what I had done the night before / the previous night* · b1-upgrades-1:54 *A week ago: 'Did you enjoy the film?' → He asked me ___.* pieņem tikai *if / whether I had enjoyed the film*. (*what I did*, *if I enjoyed* vairs netiek pieņemti.)
+- **Klausītājs dots:** rq-B21-3a-r2 *→ Lena asked me ___.* (to send her the invoice · if / whether I could send her the invoice) · rq-B22-6a *→ The editor asked me ___.*
+- **Pievienotas dabiskas atbildes:** rs-B21-3a-r2 + *I would have to finish by Friday* (piezīme) · rv-B22-6a + *for forgetting about the meeting*, *to me for forgetting (about) the meeting* · twins-1:64 + *not to sign anything before reading it / before she had read it / before she read it*.
+- **Savienošana, kur bija tikai norakstīšana:** rs-B11-2a-r2 tagad visi četri citāti par vienu un to pašu, atšķiras tikai forma: *'I work in a bank.' = She said she worked in a bank.* · *'I'm working in a bank.' = She said she was working in a bank.* · *'I will work in a bank.' = She said she would work in a bank.* · *'I have worked in a bank.' = She said she had worked in a bank.* · var-rs-b12-match-01-r2 tāpat: *'I am tired.' = Eva said she was tired.* · *'I was tired.' = Eva said she had been tired.* · *'I will be tired.' = Eva said she would be tired.* Norāde: *Match Eva's words with the sentences that start "Eva said".*
+
+### I.3. Pārējie
+- **A.1 ppc-B11-5a-r2:** *Your friend is out of breath, but she isn't running now. Why is she out of breath?* ✔ She has been running. ✘ She is running. · She runs. · She has run. (visi ir reālas formas; *is running* ir tas, ko izglītojamie tiešām izvēlas)
+- **A.6 c-0409:** banka *was waiting · saw · waited · was seeing*.
+- **B.1, B.2, B.3: izņemt, nevis pārrakstīt.** Otrs lasītājs pierādīja, ka arī jaunos pārus var atrast pēc tēmas vārdiem (*Italy → Rome*, *clouds → rain*, *toothache → dentist*). Laika nozīmju savienošanā no tā nevar izvairīties: vai nu uzlīmes, ko var samainīt, vai teikumi, ko savieno saturs. Tās pašas nozīmes pārbauda izvēles un ierakstāmie uzdevumi. Tie ir mācību uzdevumi, tāpēc pētījuma datiem ietekmes nav; serverī jānospiež *Retire*.
+- **H.4 c-1338 (used to):** visi četri par kafiju, tāpēc pāri nav atrodami pēc vārdiem: *I used to drink coffee. = but I stopped years ago.* · *I'm used to drinking coffee late. = It doesn't keep me awake.* · *I'm getting used to drinking it black. = Each cup tastes a little better.* · *I didn't use to drink coffee. = Now I have three cups a day.*
+- **H.2 c-0673:** pieņem arī *If you leave now, you won't miss the train.* (tā pati nozīme).
+- **G 2. rinda:** *My neighbour ___ the parcel had arrived.* (said)
+- **H.2a atslēgas papildinātas:** c-0644 + *will get / 'll get* (piezīme), *If you don't drink…, you get…*, *If people drink too little water…* · c-0646 + *Unless you water them, plants die.*, *… they will die* · c-0680 + *there will be no seats left / there'll be no seats left* · c-1006 + *which nobody had expected* · c-1969 + *has run* (piezīme: ar nogurumu parasti *has been running*) · c-1868 + *after finishing work* (piezīme). c-1899, c-1900, c-2065 sākums dots, lai laika vārds būtu vienā vietā: *Start with "Last night I"* (c-1899, pieņem arī ar *suddenly*), *Start with "Yesterday, while"* (c-1900), *Start with "Last night, while"* (c-2065, abas secības). c-2091: *Start with "If customers pay"* (+ *will charge* ar piezīmi, *they are charged extra*).
+- **Nepieņemts:** *Make a yes/no question* paliek (apstiprināts 11. novembrī; A2 līmenī *yes/no question* ir saprotams). A.7 atslēga beidzas ar *?* (pārbaudītājs pieturzīmes neņem vērā).

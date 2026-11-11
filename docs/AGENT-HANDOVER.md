@@ -61,7 +61,7 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 **Zip link** (the `github.com/.../raw/...` link sometimes times out; this one works): `https://raw.githubusercontent.com/inga-cmyk/englishfever/claude/intelligent-albattani-2e9bfi/dist/practice-app-update.zip`
 
-**The critical evaluation below was done on 11 November: `docs/REVIEW-2026-11.md` (proposals U1–U7 tasks, S1–S10 interface, C1–C8 feedback loop). Nothing was changed; wait for Inga's choices by number. Also agreed on 11 November and still to do: drafts in `pending/` for reports 1, 2, 4, 5, 7 (ppc-B11-5a, var-pp-b11-match-01, c-3118 Madrid, fu-B11-5a, c-0037) and for three matching tasks (b1-tenses-2:26, b1-tenses-1:67, a2-big:124); retire the two passive matching tasks (b1-passives:106 and :172); close issues #44–#82 with a short comment (Inga's OK given). The 1 new task on the server was c-3394, the corrected c-1001 (*will you be at home when the parcel arrives*): she can approve it.**
+**The critical evaluation below was done on 11 November: `docs/REVIEW-2026-11.md` (proposals U1–U7 tasks, S1–S10 interface, C1–C8 feedback loop). Nothing was changed; wait for Inga's choices by number. Also on 11 November: the drafts for reports 1, 2, 4, 5, 7 and for the matching tasks are in `pending/reports-2026-11-11-draft.md` (shown to Inga, not approved, nothing added to the CSVs or the bank); issues #44–#82 are closed with a comment (her OK). Issues #33–#43 and older stay open; #38 (c-0037) is fixed by draft 7. The 1 new task on the server was c-3394, the corrected c-1001 (*will you be at home when the parcel arrives*): she can approve it.**
 
 **(Done) The task as it was set (Inga, 11 November): a critical evaluation, before any new work.** Look at everything built so far as an outside expert would, write the findings down, and propose improvements; change nothing until Inga has chosen. Three parts:
 
@@ -74,7 +74,7 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 **Open, proposed to Inga on 11 November (she has not chosen yet):**
 1. **5 matching tasks whose meanings could be swapped**: b1-tenses-2 line 26, b1-tenses-1 line 67, b1-passives lines 106 and 172, a2-big line 124. Draft new pairs in `pending/`, show them, then add with the `match` replacement (`_src/replaced_match.json`).
 2. **Research export**: done on 11 November (`unfair_wrong` column in answers.csv, `Research::unfairWrong`); in zip 2026-11-11 07:23, not uploaded yet.
-3. **GitHub issues #44–#82** are fixed in the uploaded zip but still open; close them with a short comment only after Inga's OK.
+3. **GitHub issues #44–#82**: closed on 11 November with Inga's OK.
 4. After her upload *Prepared questions* showed **1 new in b1-tenses-2.csv** (2829 already there). A replay of every past zip on a clean database gives 0 new, so the row is missing or retired only on the server: ask her for the task text after *Add all*.
 5. **9 new reports of 11 November** (ppc-B11-5a-r2, var-pp-b11-match-01, var-fu-a22-bank-01-r2, c-3118 *Madrid*, fu-B11-5a-r3, c-0409 *the shopping*, c-0037 *should we leave*, pa-A21-5a-r2, var-pc-a21-order-01): proposals given to Inga, nothing changed yet. For item 1 she chose to see the five matching tasks first and decide which to rewrite or drop.
 

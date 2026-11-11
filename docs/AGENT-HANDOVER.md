@@ -61,6 +61,8 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 **Zip link** (the `github.com/.../raw/...` link sometimes times out; this one works): `https://raw.githubusercontent.com/inga-cmyk/englishfever/claude/intelligent-albattani-2e9bfi/dist/practice-app-update.zip`
 
+**Live on the server: zip 2026-11-11 08:03 (uploaded by Inga on 11 November; c-3394 approved).** Stage 2 draft `pending/reports-2026-11-11-draft.md` (sections A–F, read by a second agent) waits for her OK and her two answers in section E; nothing of it is in the CSVs or the bank yet.
+
 **Agreed order of work (Inga, 11 November), one zip per stage:** 0 gates (done) → 1 honest measurement: S1 A and S2 A (done, zip of 11 November) → 2 the drafts in `pending/reports-2026-11-11-draft.md` (wait for her OK) → 3 what *Learned* and C1 mean: U1, U2, U4, U3 together, one date (she has not chosen the variants) → 4 first five minutes: S3–S9 → 5 loop: C1, C2 → 6 content audits U5, U7, U6 → 7 later: C4–C8, S10, trial period for new tasks. Changes that affect the research data are grouped so there are few dates.
 
 **Gates (stage 0, done):** `app/tests/item_gates_test.py` (in `run_all.sh` and in the packaging), baseline `item_gates_baseline.json`, old mistakes `bad_examples.json`, task dump `tools/dump_items.php`. 90 existing tasks are flagged: `docs/task-drafts/pending/gates-known-findings.md`, for Inga to read (not changed). Before a draft goes to her, a second agent reads it (see the last section of `ITEM-WRITING-RULES.md`). The gate test reads `docs/task-drafts/*.csv`, not `pending/`: for a pending file, copy it next to the others in a temporary checkout or run the gate functions on it.

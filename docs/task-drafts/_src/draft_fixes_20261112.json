@@ -1,0 +1,697 @@
+{
+ "compare-past-1.csv": [
+  {
+   "match": [
+    "gap",
+    "She ___ in Madrid very long, but she knew the city well. (not / live)",
+    "hadn't been living | had not been living | hadn't lived | had not lived"
+   ],
+   "line": 58,
+   "set": {
+    "3": "When I first met her, she ___ in Madrid very long, but she already knew the city well. (not / live)",
+    "9": "She ___ in Madrid very long, but she knew the city well. (not / live)"
+   }
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "match": [
+    "gap",
+    "I ___ the shopping when I ___ my old teacher.",
+    "was doing / saw"
+   ],
+   "line": 120,
+   "set": {
+    "3": "I ___ for the bus when I ___ my old teacher.",
+    "4": "was waiting / saw",
+    "5": "bank: was waiting | saw | waited | was seeing",
+    "9": "I ___ the shopping when I ___ my old teacher."
+   }
+  },
+  {
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "I'm waiting for a call. = an action now ; She's staying with us this week. = a temporary situation ; It's getting darker. = a change ; We're flying to Rome on Friday. = an arrangement"
+   ],
+   "line": 67,
+   "drop": true
+  },
+  {
+   "match": [
+    "text",
+    "Join with after: I finished work. I went to the gym.",
+    "After I finished work, I went to the gym. | I went to the gym after I finished work."
+   ],
+   "line": 99,
+   "set": {
+    "3": "Write it about yesterday. Start with *Yesterday, after*: I finish work. Then I go to the gym.",
+    "4": "Yesterday, after I finished work, I went to the gym. | Yesterday, after I had finished work, I went to the gym. | Yesterday, after finishing work, I went to the gym.",
+    "13": "Yesterday, after finishing work, I went to the gym. :: Correct too: *after finishing* without a subject. Here we practise the past form *finished*. :: Arī pareizi: *after finishing* bez teikuma priekšmeta. Šeit trenējam pagātnes formu *finished*.",
+    "9": "Join with after: I finished work. I went to the gym."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with when: I was cooking. The smoke alarm went off.",
+    "I was cooking when the smoke alarm went off. | When the smoke alarm went off, I was cooking. | When I was cooking, the smoke alarm went off. | The smoke alarm went off when I was cooking."
+   ],
+   "line": 130,
+   "set": {
+    "3": "Write it about last night. Start with *Last night I*, and use *when*: I'm cooking dinner. Suddenly the smoke alarm goes off.",
+    "4": "Last night I was cooking dinner when the smoke alarm went off. | Last night I was cooking dinner when suddenly the smoke alarm went off. | Last night I was cooking dinner when the smoke alarm suddenly went off.",
+    "9": "Join with when: I was cooking. The smoke alarm went off."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with while: We were waiting. A man asked us for directions.",
+    "While we were waiting, a man asked us for directions. | A man asked us for directions while we were waiting. | We were waiting while a man asked us for directions."
+   ],
+   "line": 131,
+   "set": {
+    "3": "Write it about yesterday. Start with *Yesterday, while*: We're waiting for the bus. A man asks us for directions.",
+    "4": "Yesterday, while we were waiting for the bus, a man asked us for directions.",
+    "9": "Join with while: We were waiting. A man asked us for directions."
+   }
+  }
+ ],
+ "modal-verbs-1.csv": [
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "should we leave before it gets dark"
+   ],
+   "line": 38,
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "5": ""
+   }
+  }
+ ],
+ "b1-tenses-2.csv": [
+  {
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "I've lost my keys. = a result now ; I've lived here for ten years. = something that continues ; I've been to Italy twice. = life experience ; I've just finished. = a very recent action"
+   ],
+   "line": 26,
+   "drop": true
+  },
+  {
+   "match": [
+    "text",
+    "Join with because: She is tired. She has been running.",
+    "She is tired because she has been running."
+   ],
+   "line": 58,
+   "set": {
+    "3": "It's 11 a.m. Explain with *because*: Kate is very tired. (run / all morning)",
+    "4": "Kate is very tired because she has been running all morning. | Because she has been running all morning, Kate is very tired. | Kate is very tired because she has run all morning.",
+    "13": "Kate is very tired because she has run all morning. :: Correct too, but with tiredness *has been running* is usual: the activity explains how she feels now. :: Arī pareizi, bet ar nogurumu parasti lieto *has been running*: darbība izskaidro, kā viņa jūtas tagad.",
+    "6": "*has been running*: an activity up to now that explains how she feels now. *ran* does not fit, because the morning is not over.",
+    "7": "*has been running*: darbība līdz šim brīdim, kas izskaidro, kā viņa jūtas tagad. *ran* neder, jo rīts vēl nav beidzies.",
+    "9": "Join with because: She is tired. She has been running."
+   }
+  }
+ ],
+ "a2-big-1.csv": [
+  {
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "I'll carry that for you. = an offer ; I'm going to learn French. = a plan ; It's going to rain. = a prediction from what I see ; I'm seeing the dentist at 4. = an arrangement"
+   ],
+   "line": 124,
+   "drop": true
+  }
+ ],
+ "b1-passives-1.csv": [
+  {
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "The bridge is being repaired. = the work is in progress ; The bridge is repaired every spring. = it happens regularly ; The bridge has been repaired. = the work is finished ; The bridge was repaired. = it happened in the past"
+   ],
+   "line": 106,
+   "drop": true
+  },
+  {
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "It will be done. = it happens in the future ; It has been done. = it is finished and matters now ; It was done. = it happened at a past time ; It is being done. = it is happening now"
+   ],
+   "line": 172,
+   "drop": true
+  }
+ ],
+ "b1-new-1.csv": [
+  {
+   "match": [
+    "match",
+    "Match each form with its meaning.",
+    "used to = a past habit that has stopped ; be used to = something is normal for me ; get used to = something is becoming normal ; didn't use to = this was not true in the past"
+   ],
+   "line": 39,
+   "set": {
+    "3": "Match each sentence with what follows from it.",
+    "4": "I used to drink coffee. = but I stopped years ago. ; I'm used to drinking coffee late. = It doesn't keep me awake. ; I'm getting used to drinking coffee black. = Each cup tastes a little better. ; I didn't use to drink coffee. = Now I have three cups a day.",
+    "6": "*used to* + base form: a past habit that has stopped. *be used to* + *-ing*: it is normal for me. *get used to* + *-ing*: it is becoming normal. *didn't use to*: it was not true in the past.",
+    "7": "*used to* + pamatforma: pagātnes paradums, kas beidzies. *be used to* + *-ing*: tas man ir ierasts. *get used to* + *-ing*: tas kļūst ierasts. *didn't use to*: pagātnē tā nebija.",
+    "9": "used to = a past habit that has stopped ; be used to = something is normal for me ; get used to = something is becoming normal ; didn't use to = this was not true in the past"
+   }
+  }
+ ],
+ "b1-cond-rep-1.csv": [
+  {
+   "match": [
+    "text",
+    "Report it: 'I'm working late,' she said.",
+    "She said she was working late. | She said that she was working late."
+   ],
+   "line": 169,
+   "set": {
+    "2": "gap",
+    "3": "'I'm working late.' → She said ___.",
+    "4": "she was working late | that she was working late",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'I'm working late,' she said."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'We have finished,' they said.",
+    "They said they had finished. | They said that they had finished."
+   ],
+   "line": 170,
+   "set": {
+    "2": "gap",
+    "3": "'We have finished.' → They said ___.",
+    "4": "they had finished | that they had finished | they'd finished | that they'd finished",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'We have finished,' they said."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'I can help you,' he said.",
+    "He said he could help me. | He said that he could help me."
+   ],
+   "line": 171,
+   "set": {
+    "2": "gap",
+    "3": "'I can help you.' → He told me ___.",
+    "4": "he could help me | that he could help me",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'I can help you,' he said."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'I'll call you tomorrow,' Tom said to me.",
+    "Tom told me he would call me the next day. | Tom told me that he would call me the next day. | Tom told me he would call me the following day. | Tom told me that he would call me the following day. | The next day Tom told me he would call me."
+   ],
+   "line": 172,
+   "set": {
+    "2": "gap",
+    "3": "Last week: 'I'll call you tomorrow.' → Tom told me ___.",
+    "4": "he would call me the next day | that he would call me the next day | he would call me the following day | that he would call me the following day | he would call me the day after | that he would call me the day after | he 'd call me the next day | that he 'd call me the next day | he 'd call me the following day | that he 'd call me the following day | he 'd call me the day after | that he 'd call me the day after",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'I'll call you tomorrow,' Tom said to me."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'I didn't see him,' she said.",
+    "She said she hadn't seen him. | She said she had not seen him. | She said that she hadn't seen him. | She said that she had not seen him. | She said she didn't see him. | She said that she didn't see him."
+   ],
+   "line": 173,
+   "set": {
+    "2": "gap",
+    "3": "'I didn't see him.' → She said ___.",
+    "4": "she hadn't seen him | that she hadn't seen him | she had not seen him | that she had not seen him",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'I didn't see him,' she said."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'Where are you going?' she asked.",
+    "She asked where I was going. | She asked me where I was going."
+   ],
+   "line": 206,
+   "set": {
+    "2": "gap",
+    "3": "'Where are you going?' → She asked me ___.",
+    "4": "where I was going",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'Where are you going?' she asked."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'Do you like jazz?' he asked me.",
+    "He asked me if I liked jazz. | He asked me whether I liked jazz. | He asked if I liked jazz. | He asked whether I liked jazz."
+   ],
+   "line": 207,
+   "set": {
+    "2": "gap",
+    "3": "At school, years ago: 'Do you like jazz?' → He asked me ___.",
+    "4": "if I liked jazz | whether I liked jazz",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'Do you like jazz?' he asked me."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'Please close the window,' she said to me.",
+    "She asked me to close the window. | She told me to close the window."
+   ],
+   "line": 208,
+   "set": {
+    "2": "gap",
+    "3": "'Please close the window.' → She asked me ___.",
+    "4": "to close the window",
+    "5": "",
+    "9": "Report it: 'Please close the window,' she said to me."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'Don't be late,' he told us.",
+    "He told us not to be late."
+   ],
+   "line": 209,
+   "set": {
+    "2": "gap",
+    "3": "'Don't be late.' → He told us ___.",
+    "4": "not to be late",
+    "5": "",
+    "9": "Report it: 'Don't be late,' he told us."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'What did you do last night?' she asked me.",
+    "She asked me what I had done the night before. | She asked me what I had done the previous night. | She asked me what I did the night before."
+   ],
+   "line": 210,
+   "set": {
+    "2": "gap",
+    "3": "A week ago: 'What did you do last night?' → She asked me ___.",
+    "4": "what I had done the night before | what I had done the previous night | what I 'd done the night before | what I 'd done the previous night",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'What did you do last night?' she asked me."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ taller, I ___ basketball. (be / play)",
+    "were | was / would play"
+   ],
+   "line": 92,
+   "set": {
+    "3": "I'm not tall. If I ___ taller, I ___ basketball. (be / play)",
+    "4": "were | was / would play | 'd play | could play",
+    "13": "were / could play :: Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible. :: Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams. || was / could play :: Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible. :: Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams.",
+    "9": "If I ___ taller, I ___ basketball. (be / play)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If it ___ cheaper, we ___ it. (be / buy)",
+    "were | was / would buy"
+   ],
+   "line": 94,
+   "set": {
+    "3": "This phone is too expensive. If it ___ cheaper, we ___ it. (be / buy)",
+    "4": "were | was / would buy | 'd buy | could buy",
+    "13": "were / could buy :: Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible. :: Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams. || was / could buy :: Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible. :: Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams.",
+    "9": "If it ___ cheaper, we ___ it. (be / buy)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ her if I ___ her address. (visit / know)",
+    "would visit / knew"
+   ],
+   "line": 95,
+   "set": {
+    "3": "I don't know where she lives. I ___ her if I ___ her address. (visit / know)",
+    "4": "would visit | 'd visit | could visit / knew",
+    "13": "could visit / knew :: Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible. :: Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams.",
+    "9": "I ___ her if I ___ her address. (visit / know)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If I ___ harder, I ___ the test. (study / pass)",
+    "had studied / would have passed"
+   ],
+   "line": 128,
+   "set": {
+    "3": "I failed the test last week. If I ___ harder, I ___ it. (study / pass)",
+    "4": "had studied | 'd studied / would have passed | 'd have passed",
+    "9": "If I ___ harder, I ___ the test. (study / pass)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If we ___ earlier, we ___ the film. (leave / not miss)",
+    "had left / wouldn't have missed | would not have missed"
+   ],
+   "line": 129,
+   "set": {
+    "3": "We left late and missed the film. If we ___ earlier, we ___ it. (leave / not miss)",
+    "4": "had left | 'd left / wouldn't have missed | would not have missed",
+    "9": "If we ___ earlier, we ___ the film. (leave / not miss)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If he ___ the keys, he ___ the door. (not lose / open)",
+    "hadn't lost | had not lost / would have opened"
+   ],
+   "line": 130,
+   "set": {
+    "3": "He lost his keys yesterday and had to wait outside for two hours. If he ___ them, he ___ outside. (not lose / not wait)",
+    "4": "hadn't lost | had not lost / wouldn't have waited | would not have waited",
+    "9": "If he ___ the keys, he ___ the door. (not lose / open)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ lost if they ___ the signs. (not get / follow)",
+    "wouldn't have got | would not have got | wouldn't have gotten / had followed"
+   ],
+   "line": 131,
+   "set": {
+    "3": "They didn't follow the signs and got lost. They ___ lost if they ___ the signs. (not get / follow)",
+    "4": "wouldn't have got | would not have got | wouldn't have gotten / had followed | 'd followed",
+    "9": "They ___ lost if they ___ the signs. (not get / follow)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If she ___ the message, she ___ . (see / reply)",
+    "had seen / would have replied"
+   ],
+   "line": 132,
+   "set": {
+    "3": "She never saw the message. If she ___ it, she ___ to it. (see / reply)",
+    "4": "had seen | 'd seen / would have replied | 'd have replied",
+    "9": "If she ___ the message, she ___ . (see / reply)"
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with if: You leave now. You will catch the train.",
+    "If you leave now, you will catch the train. | You will catch the train if you leave now."
+   ],
+   "line": 64,
+   "set": {
+    "3": "Say the same with *if*: Leave now or you'll miss the train.",
+    "4": "If you don't leave now, you'll miss the train. | You'll miss the train if you don't leave now. | If you leave now, you won't miss the train. | You won't miss the train if you leave now.",
+    "6": "*If* + present, *will* + base form. *If you don't leave now* = *Leave now or…*; not *If you won't leave*.",
+    "7": "*If* + tagadne, *will* + pamatforma. *If you don't leave now* = *Leave now or…*; nevis *If you won't leave*.",
+    "9": "Join with if: You leave now. You will catch the train."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with if: People don't drink enough water. They get headaches.",
+    "If people don't drink enough water, they get headaches. | People get headaches if they don't drink enough water."
+   ],
+   "line": 29,
+   "set": {
+    "3": "Say the same with *if*: Without enough water, people get headaches. (drink)",
+    "4": "If people don't drink enough water, they get headaches. | People get headaches if they don't drink enough water. | If you don't drink enough water, you get headaches. | You get headaches if you don't drink enough water. | If people drink too little water, they get headaches. | People get headaches if they drink too little water. | If people don't drink enough water, they will get headaches. | People will get headaches if they don't drink enough water.",
+    "13": "If people don't drink enough water, they will get headaches. :: Correct too: *will* for a likely result. For something that is always true, the present is usual. :: Arī pareizi: *will* izsaka iespējamas sekas. Tam, kas ir vienmēr patiess, parasti lieto tagadni. || People will get headaches if they don't drink enough water. :: Correct too: *will* for a likely result. For something that is always true, the present is usual. :: Arī pareizi: *will* izsaka iespējamas sekas. Tam, kas ir vienmēr patiess, parasti lieto tagadni.",
+    "9": "Join with if: People don't drink enough water. They get headaches."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with when: Water reaches 100 degrees. It boils.",
+    "When water reaches 100 degrees, it boils. | Water boils when it reaches 100 degrees."
+   ],
+   "line": 30,
+   "set": {
+    "3": "Say the same with *when*: At 100 degrees, water boils. (reach)",
+    "4": "When water reaches 100 degrees, it boils. | Water boils when it reaches 100 degrees. | When it reaches 100 degrees, water boils.",
+    "9": "Join with when: Water reaches 100 degrees. It boils."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with unless: You don't water plants. They die.",
+    "Unless you water plants, they die. | Plants die unless you water them."
+   ],
+   "line": 31,
+   "set": {
+    "3": "Say the same with *unless*: If you don't water plants, they die.",
+    "4": "Unless you water plants, they die. | Plants die unless you water them. | Unless plants are watered, they die. | Plants die unless they are watered. | Unless you water them, plants die. | Unless you water plants, they will die.",
+    "13": "Unless you water plants, they will die. :: Correct too: *will* for a likely result. For something that is always true, the present is usual. :: Arī pareizi: *will* izsaka iespējamas sekas. Tam, kas ir vienmēr patiess, parasti lieto tagadni.",
+    "6": "*Unless* means *if not*, so the verb after it is positive: *Unless you water…*, not *Unless you don't water…*.",
+    "7": "*Unless* nozīmē *if not*, tāpēc pēc tā darbības vārds ir apstiprinājuma formā: *Unless you water…*, nevis *Unless you don't water…*.",
+    "9": "Join with unless: You don't water plants. They die."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with unless: You hurry. You will miss the train.",
+    "Unless you hurry, you will miss the train. | You will miss the train unless you hurry."
+   ],
+   "line": 65,
+   "set": {
+    "3": "Say the same with *unless*: If we don't book today, there won't be any seats left.",
+    "4": "Unless we book today, there won't be any seats left. | There won't be any seats left unless we book today. | Unless we book today, there will be no seats left. | There will be no seats left unless we book today.",
+    "6": "*Unless* means *if not*, so the verb after it is positive: *Unless we book today*. After *unless*, use the present, not *will*.",
+    "7": "*Unless* nozīmē *if not*, tāpēc pēc tā darbības vārds ir apstiprinājuma formā: *Unless we book today*. Pēc *unless* lieto tagadni, nevis *will*.",
+    "9": "Join with unless: You hurry. You will miss the train."
+   }
+  }
+ ],
+ "b1-upgrades-1.csv": [
+  {
+   "match": [
+    "text",
+    "Report it: 'We will finish the report tomorrow,' they said.",
+    "They said they would finish the report the next day. | They said that they would finish the report the next day. | They said they would finish the report the following day. | They said that they would finish the report the following day. | The next day they said they would finish the report."
+   ],
+   "line": 52,
+   "set": {
+    "2": "gap",
+    "3": "Last Monday: 'We will finish the report tomorrow.' → They said ___.",
+    "4": "they would finish the report the next day | that they would finish the report the next day | they would finish the report the following day | that they would finish the report the following day | they would finish the report the day after | that they would finish the report the day after | they 'd finish the report the next day | that they 'd finish the report the next day | they 'd finish the report the following day | that they 'd finish the report the following day | they 'd finish the report the day after | that they 'd finish the report the day after",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'We will finish the report tomorrow,' they said."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Report it: 'Did you enjoy the film?' he asked me.",
+    "He asked me if I had enjoyed the film. | He asked me whether I had enjoyed the film. | He asked me if I enjoyed the film. | He asked me whether I enjoyed the film. | He asked if I had enjoyed the film. | He asked whether I had enjoyed the film. | He asked if I enjoyed the film. | He asked whether I enjoyed the film."
+   ],
+   "line": 54,
+   "set": {
+    "2": "gap",
+    "3": "A week ago: 'Did you enjoy the film?' → He asked me ___.",
+    "4": "if I had enjoyed the film | if I 'd enjoyed the film | whether I had enjoyed the film | whether I 'd enjoyed the film",
+    "5": "",
+    "6": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+    "7": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+    "9": "Report it: 'Did you enjoy the film?' he asked me."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If she ___ the job, she ___ to Berlin. (get / move)",
+    "got / would move"
+   ],
+   "line": 49,
+   "set": {
+    "3": "She can't get the job: she doesn't speak German. If she ___ it, she ___ to Berlin. (get / move)",
+    "4": "got / would move | 'd move",
+    "9": "If she ___ the job, she ___ to Berlin. (get / move)"
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with if: Customers don't pay on time. The company charges extra.",
+    "If customers don't pay on time, the company charges extra. | The company charges extra if customers don't pay on time."
+   ],
+   "line": 44,
+   "set": {
+    "3": "Start with *If customers pay*: The company charges extra for late payment.",
+    "4": "If customers pay late, the company charges extra. | If customers pay late, the company charges them extra. | If customers pay late, they are charged extra. | If customers pay late, the company will charge extra. | If customers pay late, the company will charge them extra.",
+    "13": "If customers pay late, the company will charge extra. :: Correct too: *will charge* for what the company will do. For a fixed rule, the present is usual. :: Arī pareizi: *will charge* saka, ko uzņēmums darīs. Noteikumam parasti lieto tagadni. || If customers pay late, the company will charge them extra. :: Correct too: *will charge* for what the company will do. For a fixed rule, the present is usual. :: Arī pareizi: *will charge* saka, ko uzņēmums darīs. Noteikumam parasti lieto tagadni.",
+    "9": "Join with if: Customers don't pay on time. The company charges extra."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with while: I was cooking. My brother was setting the table.",
+    "While I was cooking, my brother was setting the table. | My brother was setting the table while I was cooking. | While my brother was setting the table, I was cooking. | I was cooking while my brother was setting the table."
+   ],
+   "line": 18,
+   "set": {
+    "3": "Write it about last night. Start with *Last night, while*: I'm cooking. At the same time, my brother is setting the table.",
+    "4": "Last night, while I was cooking, my brother was setting the table. | Last night, while my brother was setting the table, I was cooking.",
+    "9": "Join with while: I was cooking. My brother was setting the table."
+   }
+  }
+ ],
+ "twins-1.csv": [
+  {
+   "match": [
+    "text",
+    "Report with *advise*: 'Don't sign anything until you've read it,' the lawyer told her.",
+    "The lawyer advised her not to sign anything until she had read it. | The lawyer advised her not to sign anything until she'd read it. | The lawyer advised her not to sign anything until she read it."
+   ],
+   "line": 64,
+   "set": {
+    "2": "gap",
+    "3": "'Don't sign anything until you've read it.' → The lawyer advised her ___.",
+    "4": "not to sign anything until she had read it | not to sign anything until she'd read it | not to sign anything until she read it | against signing anything until she had read it | not to sign anything before reading it | not to sign anything before she had read it | not to sign anything before she read it",
+    "5": "",
+    "9": "Report with *advise*: 'Don't sign anything until you've read it,' the lawyer told her."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "If the city ___ more cycle lanes, more people ___ by bike. (build / travel)",
+    "built / would travel"
+   ],
+   "line": 44,
+   "set": {
+    "3": "The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel)",
+    "4": "built / would travel",
+    "9": "If the city ___ more cycle lanes, more people ___ by bike. (build / travel)"
+   }
+  }
+ ],
+ "b1-new-2.csv": [
+  {
+   "match": [
+    "text",
+    "Join with who: I know a woman. She speaks five languages.",
+    "I know a woman who speaks five languages."
+   ],
+   "line": 31,
+   "set": {
+    "3": "Join with *who*: The woman lives next door. She speaks five languages.",
+    "4": "The woman who lives next door speaks five languages. | The woman who speaks five languages lives next door.",
+    "9": "Join with who: I know a woman. She speaks five languages."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with where: This is the town. I was born there.",
+    "This is the town where I was born."
+   ],
+   "line": 33,
+   "set": {
+    "3": "Join with *where*: The hotel was very quiet. We stayed there last summer.",
+    "4": "The hotel where we stayed last summer was very quiet.",
+    "6": "*where* replaces *there*: *the hotel where we stayed* (not *where we stayed there*).",
+    "7": "*where* aizstāj *there*: *the hotel where we stayed* (nevis *where we stayed there*).",
+    "9": "Join with where: This is the town. I was born there."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with which: She passed her driving test. This surprised everyone.",
+    "She passed her driving test, which surprised everyone."
+   ],
+   "line": 34,
+   "set": {
+    "3": "Join with *which*: She passed her driving test the first time. Nobody expected this.",
+    "4": "She passed her driving test the first time, which nobody expected. | She passed her driving test the first time, which nobody had expected.",
+    "9": "Join with which: She passed her driving test. This surprised everyone."
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Join with whose: I met a man. His dog can open doors.",
+    "I met a man whose dog can open doors."
+   ],
+   "line": 35,
+   "set": {
+    "3": "Join with *whose*: The man lives next door. His dog can open doors.",
+    "4": "The man whose dog can open doors lives next door.",
+    "9": "Join with whose: I met a man. His dog can open doors."
+   }
+  }
+ ],
+ "conjunctions-1.csv": [
+  {
+   "match": [
+    "text",
+    "Join with *whereas*: I like early mornings. My partner likes late nights.",
+    "I like early mornings, whereas my partner likes late nights. | Whereas I like early mornings, my partner likes late nights. | I like early mornings whereas my partner likes late nights."
+   ],
+   "line": 109,
+   "set": {
+    "3": "Start with *Whereas*: My partner likes late nights, but I like early mornings.",
+    "4": "Whereas my partner likes late nights, I like early mornings.",
+    "6": "*whereas* already joins the two parts, so *but* is not needed.",
+    "7": "*whereas* jau savieno abas daļas, tāpēc *but* nav vajadzīgs.",
+    "9": "Join with *whereas*: I like early mornings. My partner likes late nights."
+   }
+  }
+ ]
+}

@@ -34,14 +34,16 @@ foreach ($retired as $old) {
     $replacement = null;   // the active version of the same question with a higher revision number (numbers can skip when intermediate versions were recorded)
     foreach ($active as $aid => $a) if (preg_match('/^' . preg_quote($stem, '/') . '-r(\d+)$/', $aid, $mm) && (int) $mm[1] > $rev) $replacement = $a;
     if ($replacement === null && $old['skill'] === 'past_simple' && $old['level'] === 'B1.2') continue;   // used to moved to its own topic (27 October): removed, no replacement
+    if ($replacement === null && $stem === 'var-pp-b11-match-01') continue;   // retired without a replacement (12 November: too easy)
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
-        if ($key === 'kind' && $stem === 'rv-C11-3a') continue;   // a typed gap became a word-bank gap: the quote already gave the missing words away (teacher, 3 November)
+        if ($key === 'kind' && $stem === 'rv-C11-3a') continue;
+        if ($key === 'kind' && in_array($stem, ['rs-B11-6a', 'rs-B12-3a', 'rs-B21-3a', 'rq-B21-3a', 'rq-B22-3a', 'rq-B22-6a', 'rv-B22-6a'], true)) continue;   // typed reports became "complete from the start" gaps (12 November)   // a typed gap became a word-bank gap: the quote already gave the missing words away (teacher, 3 November)
         check($old[$key] === $replacement[$key], "Correction changed $key");
     }
 }
-check(count($active) === 483, 'Unexpected active question count');
-check(count($retired) === 337, 'Unexpected correction count');   // +2: learner-answer audit, +2: word-bank options batches 1-3 (8 November); active count unchanged
+check(count($active) === 482, 'Unexpected active question count');   // -1: var-pp-b11-match-01 retired (12 November)
+check(count($retired) === 375, 'Unexpected correction count');   // +38: the draft of 11-12 November (reports, speaker tags, situations)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);
@@ -73,7 +75,7 @@ check($grade('ppp-B11-6a-r2', "The room's been cleaned this week.")['correct'], 
 check($grade('fup-B11-6a-r2', "The library'll be opened next year.")['correct'], 'contracted will rejected');
 
 $new = array_filter($active, fn($i) => strpos($i['id'], 'var-') === 0);
-check(count($new) === 48, 'Expected 48 new variety tasks');
+check(count($new) === 47, 'Expected 47 new variety tasks');   // -1: var-pp-b11-match-01 retired (12 November)
 foreach ($new as $it) {
     check(in_array($it['kind'], ['order', 'match', 'gap'], true), 'Variety task is not drag and drop');
     if ($it['kind'] === 'gap') {

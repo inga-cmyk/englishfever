@@ -878,12 +878,12 @@
 "why_lv": "Noliegums Past Simple: *didn't* + darbības vārda pamatforma."
 },
 {
-"id": "pa-A21-3b",
+"id": "pa-A21-3b-r2",
 "skill": "past_simple",
 "level": "A2.1",
 "bloom": 3,
 "kind": "text",
-"q": "Make a question: He played football.",
+"q": "Make a yes/no question: He played football.",
 "answers": [
 [
 "Did he play football?"
@@ -2093,21 +2093,21 @@
 "why_lv": "*Know* ir stāvokļa darbības vārds. Saka: *I have known him for years.*"
 },
 {
-"id": "ppc-B11-5a-r2",
+"id": "ppc-B11-5a-r3",
 "skill": "present_perfect_continuous",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend is out of breath because she was running until a minute ago. Which sentence explains why?",
-"correct": "I've been running.",
+"q": "Your friend is out of breath, but she isn't running now. Why is she out of breath?",
+"correct": "She has been running.",
 "wrong": [
-"I'm going to run.",
-"I run every day.",
-"I ran last year."
+"She is running.",
+"She runs.",
+"She has run."
 ],
-"why": "We use the present perfect continuous to explain a present situation by a recent activity.",
+"why": "*Has been running*: an activity that has just stopped and explains how she is now. *Has run* is for a finished result (*She has run 10 km*).",
 "wrong_why": {},
-"why_lv": "Present Perfect Continuous lieto, lai ar nesenu darbību izskaidrotu situāciju tagad.",
+"why_lv": "*Has been running*: darbība, kas nupat beigusies un izskaidro, kāda viņa ir tagad. *Has run* lieto pabeigtam rezultātam (*She has run 10 km*).",
 "wrong_why_lv": {}
 },
 {
@@ -2490,12 +2490,12 @@
 "why_lv": "Ātrs lēmums tagad: *will* + pamatforma."
 },
 {
-"id": "fu-A21-3c",
+"id": "fu-A21-3c-r2",
 "skill": "future",
 "level": "A2.1",
 "bloom": 3,
 "kind": "text",
-"q": "Make a question: You are going to travel by train.",
+"q": "Make a yes/no question: You are going to travel by train.",
 "answers": [
 [
 "Are you going to travel by train?"
@@ -2789,21 +2789,26 @@
 "why_lv": "Laika palīgteikumos (*when, as soon as, before*) lieto Present Simple: *when I arrive*."
 },
 {
-"id": "fu-B11-5a-r3",
+"id": "fu-B11-5a-r5",
 "skill": "future",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend says: 'I will meet Anna at 6, we agreed yesterday.' Choose the more natural option for an arrangement.",
-"correct": "I'm meeting Anna at 6.",
+"q": "'Are you free this evening?' 'Sorry, ___ Anna at 6. We booked a table yesterday.'",
+"correct": "I'm meeting",
 "wrong": [
-"I meet Anna at 6 yesterday.",
-"I met Anna at 6 tomorrow.",
-"I'm going to be met Anna at 6."
+"I'll meet",
+"I meet",
+"I've met"
 ],
-"why": "For arrangements with a time we often use the present continuous.",
-"wrong_why": {},
-"why_lv": "Vienošanās ar laiku bieži izsaka ar Present Continuous."
+"why": "An arrangement made earlier, with a time: present continuous (*I'm meeting*). *I'll meet* is a decision made now; *I meet* is for timetables.",
+"wrong_why": {
+"I'll meet": "*will* is for a decision made now; this was arranged yesterday."
+},
+"why_lv": "Iepriekš norunāta lieta ar laiku: Present Continuous (*I'm meeting*). *I'll meet* ir lēmums runāšanas brīdī; *I meet* lieto sarakstiem un grafikiem.",
+"wrong_why_lv": {
+"I'll meet": "*will* lieto lēmumam šajā brīdī; šis tika norunāts vakar."
+}
 },
 {
 "id": "fu-B11-6a",
@@ -5078,25 +5083,38 @@
 "wrong_why_lv": {}
 },
 {
-"id": "cs-B11-3a",
+"id": "cs-B11-3a-r2",
 "skill": "cond_second",
 "level": "B1.1",
 "bloom": 3,
 "kind": "gap",
-"q": "If I ___ the boss, I ___ cancel all Monday meetings. (be)",
+"q": "I'm not the boss. If I ___ (be) the boss, I ___ (cancel) all Monday meetings.",
 "answers": [
 [
 "were",
 "was"
 ],
 [
-"would",
-"'d"
+"would cancel",
+"'d cancel",
+"could cancel"
 ]
 ],
 "why": "Second conditional: *if* + past simple (*were*), *would* + base verb.",
 "hints": [],
-"why_lv": "Second conditional: *if* + Past Simple (*were*), *would* + pamatforma."
+"why_lv": "Second conditional: *if* + Past Simple (*were*), *would* + pamatforma.",
+"answer_notes": [
+[
+"were / could cancel",
+"Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible.",
+"Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams."
+],
+[
+"was / could cancel",
+"Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible.",
+"Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams."
+]
+]
 },
 {
 "id": "cs-B11-4a",
@@ -5360,12 +5378,12 @@
 "wrong_why_lv": {}
 },
 {
-"id": "cs-B21-3a",
+"id": "cs-B21-3a-r2",
 "skill": "cond_second",
 "level": "B2.1",
 "bloom": 3,
 "kind": "gap",
-"q": "If the company ___ more flexible hours, people ___ happier. (offer / be)",
+"q": "Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be)",
 "answers": [
 [
 "offered",
@@ -5470,15 +5488,16 @@
 "wrong_why_lv": {}
 },
 {
-"id": "ct-B12-3a",
+"id": "ct-B12-3a-r2",
 "skill": "cond_third",
 "level": "B1.2",
 "bloom": 3,
 "kind": "gap",
-"q": "If you ___ me about the meeting, I ___ there. (tell / be)",
+"q": "Nobody told me about the meeting, so I missed it. If you ___ me about it, I ___ there. (tell / be)",
 "answers": [
 [
-"had told"
+"had told",
+"'d told"
 ],
 [
 "would have been",
@@ -5720,12 +5739,12 @@
 "wrong_why_lv": {}
 },
 {
-"id": "ct-B22-3a-r2",
+"id": "ct-B22-3a-r3",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "If he ___ (not / drive) so fast, he ___ (not / lose) his licence.",
+"q": "He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it.",
 "answers": [
 [
 "hadn't been driving",
@@ -5832,16 +5851,18 @@
 "wrong_why_lv": {}
 },
 {
-"id": "cm-B21-3a",
+"id": "cm-B21-3a-r2",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 3,
 "kind": "gap",
-"q": "If I ___ English at school, I ___ fluent now. (learn / be)",
+"q": "I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be)",
 "answers": [
 [
 "had learned",
-"had learnt"
+"had learnt",
+"'d learned",
+"'d learnt"
 ],
 [
 "would be",
@@ -6322,12 +6343,12 @@
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rs-B11-1a-r3",
+"id": "rs-B11-1a-r4",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "'I am tired,' she said last night. Now she feels fine. Report it: She said she ___ tired.",
+"q": "Last night Anna said: 'I am tired.' Now she feels fine. → Anna said she ___ tired.",
 "correct": "was",
 "wrong": [
 "is",
@@ -6348,40 +6369,40 @@
 }
 },
 {
-"id": "rs-B11-2a-r2",
+"id": "rs-B11-2a-r3",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 2,
 "kind": "match",
-"q": "Match each sentence with its report.",
+"q": "Match what she said with the sentences that start \"She said\".",
 "pairs": [
 [
-"'I work in a bank,' she said.",
+"'I work in a bank.'",
 "She said she worked in a bank."
 ],
 [
-"'I'm working late,' she said.",
-"She said she was working late."
+"'I'm working in a bank.'",
+"She said she was working in a bank."
 ],
 [
-"'I finished the report,' she said.",
-"She said she had finished the report."
+"'I will work in a bank.'",
+"She said she would work in a bank."
 ],
 [
-"'I can come,' she said.",
-"She said she could come."
+"'I have worked in a bank.'",
+"She said she had worked in a bank."
 ]
 ],
-"why": "With a past reporting verb the tense often goes one step back: *work → worked, am working → was working, finished → had finished, can → could.* It is not always needed, for example when the fact is still true.",
-"why_lv": "Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *work → worked, am working → was working, finished → had finished, can → could*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess."
+"why": "Reported later, each tense goes one step back: *work → worked, am working → was working, will work → would work, have worked → had worked*.",
+"why_lv": "Atstāstot vēlāk, katrs laiks iet soli atpakaļ: *work → worked, am working → was working, will work → would work, have worked → had worked*."
 },
 {
-"id": "rs-B11-3a",
+"id": "rs-B11-3a-r2",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 3,
 "kind": "gap",
-"q": "'I don't like coffee,' Mark said. → Mark said he ___ coffee. (not / like)",
+"q": "Ten years ago Mark said: 'I don't like coffee.' Now he drinks it every day. → Mark said he ___ coffee. (not / like)",
 "answers": [
 [
 "didn't like",
@@ -6416,12 +6437,12 @@
 "why_lv": "Pēc *said* personu tieši nelieto. Lieto *told me* vai *said to me*."
 },
 {
-"id": "rs-B11-5a",
+"id": "rs-B11-5a-r2",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Report this: 'I can't come to the meeting,' Jon said. Choose the correct option.",
+"q": "Last month Jon said: 'I can't come to the meeting.' In the end, he came. Which sentence reports Jon's words?",
 "correct": "Jon said he couldn't come to the meeting.",
 "wrong": [
 "Jon said I couldn't come to the meeting.",
@@ -6433,40 +6454,31 @@
 "why_lv": "*can't → couldn't*, un *I → he* (Jons runā par sevi)."
 },
 {
-"id": "rs-B11-6a",
+"id": "rs-B11-6a-r2",
 "skill": "rep_statements",
 "level": "B1.1",
 "bloom": 6,
-"kind": "write",
-"q": "Report this sentence. 'I'm learning Spanish,' Elena said. Start with Elena said.",
-"must": [
+"kind": "gap",
+"q": "'I'm learning Spanish.' → Elena said ___.",
+"must": [],
+"model": null,
+"why": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+"why_lv": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+"answers": [
 [
-"^\\s*elena said\\b",
-"Start with *Elena said.*",
-"Sāc ar *Elena said.*"
-],
-[
-"\\bshe\\b",
-"Change *I* to *she.*",
-"*I* nomaini uz *she*."
-],
-[
-"\\bwas learning\\b",
-"*am learning* becomes *was learning.*",
-"*am learning* kļūst par *was learning*."
+"she was learning Spanish",
+"that she was learning Spanish"
 ]
 ],
-"model": "Elena said she was learning Spanish.",
-"why": "Compare your sentence with the model answer.",
-"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+"hints": []
 },
 {
-"id": "rs-B12-1a-r3",
+"id": "rs-B12-1a-r4",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "'I have finished the report,' he said. Later he found more mistakes in it. Report it: He said he ___ finished the report.",
+"q": "On Monday Tom said: 'I have finished the report.' Later he found mistakes in it. → Tom said he ___ finished the report.",
 "correct": "had",
 "wrong": [
 "has",
@@ -6478,12 +6490,12 @@
 "why_lv": "Present Perfect (*have finished*) pāriet uz Past Perfect (*had finished*)."
 },
 {
-"id": "rs-B12-2a-r3",
+"id": "rs-B12-2a-r4",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "'I'll call you tomorrow, I'm busy now,' Ann said last week. When you report it a week later, what happens to *tomorrow* and *now*?",
+"q": "Last week Ann said: 'I'm busy now. I'll call you tomorrow.' When you report it a week later, what happens to *tomorrow* and *now*?",
 "correct": "They change to 'the next day' and 'then'.",
 "wrong": [
 "They stay 'tomorrow' and 'now'.",
@@ -6496,28 +6508,25 @@
 "wrong_why_lv": {}
 },
 {
-"id": "rs-B12-3a-r2",
+"id": "rs-B12-3a-r3",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 3,
-"kind": "text",
-"q": "Report this: 'I'm leaving now,' Kate said.",
+"kind": "gap",
+"q": "Yesterday at five: 'I'm leaving now.' → Kate said ___.",
 "answers": [
 [
-"Kate said she was leaving then.",
-"Kate said that she was leaving then.",
-"Kate said she was leaving at that moment.",
-"Kate said that she was leaving at that moment.",
-"Kate said she was leaving at that time.",
-"Kate said that she was leaving at that time.",
-"Kate said she was leaving right then.",
-"Kate said she was leaving now.",
-"Kate said that she was leaving now.",
-"Kate said she was leaving.",
-"Kate said that she was leaving."
+"she was leaving",
+"that she was leaving",
+"she was leaving then",
+"that she was leaving then",
+"she was leaving at that moment",
+"that she was leaving at that moment",
+"she was leaving right then",
+"that she was leaving right then"
 ]
 ],
-"why": "*I → she, am leaving → was leaving, now → then.*",
+"why": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
 "hints": [
 [
 "\\bnow\\b",
@@ -6525,7 +6534,7 @@
 "*Now* parasti kļūst par *then* vai *at that moment*."
 ]
 ],
-"why_lv": "*I → she, am leaving → was leaving, now → then.*"
+"why_lv": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu."
 },
 {
 "id": "rs-B12-4a-r5",
@@ -6546,12 +6555,12 @@
 "wrong_why_lv": {}
 },
 {
-"id": "rs-B12-5a",
+"id": "rs-B12-5a-r2",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You report a message to your manager: 'We are almost ready,' the team said. Choose the correct option.",
+"q": "Yesterday the team said: 'We are almost ready.' Today the work is finished. Which sentence reports the team's message to you?",
 "correct": "The team told me they were almost ready.",
 "wrong": [
 "The team told me we were almost ready.",
@@ -6625,12 +6634,12 @@
 "why_lv": "Atstāstījumā *might* nemainās; pēc tā lieto *be*: *She said she might be late.*"
 },
 {
-"id": "rs-B21-2a-r4",
+"id": "rs-B21-2a-r5",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "'The Earth goes round the Sun,' the teacher said. Why can we report it as 'The teacher said the Earth goes round the Sun'?",
+"q": "The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'?",
 "correct": "Because it is still true.",
 "wrong": [
 "Because said is in the past.",
@@ -6642,26 +6651,31 @@
 "wrong_why_lv": {}
 },
 {
-"id": "rs-B21-3a-r2",
+"id": "rs-B21-3a-r3",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 3,
-"kind": "text",
-"q": "Report this: 'You must finish by Friday,' my boss said.",
+"kind": "gap",
+"q": "'You must finish by Friday.' → My boss told me ___.",
 "answers": [
 [
-"My boss said I had to finish by Friday.",
-"My boss said that I had to finish by Friday.",
-"My boss told me I had to finish by Friday.",
-"My boss told me that I had to finish by Friday.",
-"My boss said I must finish by Friday.",
-"My boss told me I must finish by Friday.",
-"My boss said that I must finish by Friday.",
-"My boss told me that I must finish by Friday."
+"I had to finish by Friday",
+"that I had to finish by Friday",
+"I must finish by Friday",
+"that I must finish by Friday",
+"I would have to finish by Friday",
+"that I would have to finish by Friday"
 ]
 ],
 "why": "*must* can become *had to.* It can also stay *must* when the duty is still there.",
-"hints": []
+"hints": [],
+"answer_notes": [
+[
+"I would have to finish by Friday",
+"Correct too: *would have to* looks at the obligation from that moment in the past.",
+"Arī pareizi: *would have to* skatās uz pienākumu no šī brīža pagātnē."
+]
+]
 },
 {
 "id": "rs-B21-4a",
@@ -6680,12 +6694,12 @@
 "wrong_why": {}
 },
 {
-"id": "rs-B21-5a",
+"id": "rs-B21-5a-r2",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Report this naturally: 'I won't sign it until the lawyer reads it,' the client said. Choose the correct option.",
+"q": "Last week the client said: 'I won't sign it until the lawyer reads it.' Yesterday he signed it. Which sentence reports the client's words?",
 "correct": "The client said he wouldn't sign it until the lawyer had read it.",
 "wrong": [
 "The client said he won't sign it until the lawyer will read it.",
@@ -6842,12 +6856,12 @@
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "rq-B12-1b",
+"id": "rq-B12-1b-r2",
 "skill": "rep_questions",
 "level": "B1.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence reports the request 'Please wait here,' the guard said?",
+"q": "Which sentence reports the guard's request: 'Please wait here.'",
 "correct": "The guard told me to wait there.",
 "wrong": [
 "The guard told me wait there.",
@@ -6891,12 +6905,12 @@
 "why_lv": "Jā/nē jautājums: *asked + if* + teik. priekšmets + darbības vārds."
 },
 {
-"id": "rq-B21-1a",
+"id": "rq-B21-1a-r2",
 "skill": "rep_questions",
 "level": "B2.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which report is correct? 'Can you help me?' she asked.",
+"q": "Anna's question to you: 'Can you help me?' Which sentence reports it?",
 "correct": "She asked if I could help her.",
 "wrong": [
 "She asked if could I help her.",
@@ -6924,26 +6938,17 @@
 "why_lv": "*told me not to touch*: pēc *told* nosauc cilvēku un lieto *not to* ar pamatformu."
 },
 {
-"id": "rq-B21-3a-r2",
+"id": "rq-B21-3a-r3",
 "skill": "rep_questions",
 "level": "B2.1",
 "bloom": 3,
-"kind": "text",
-"q": "Report this: 'Could you send me the invoice?' Lena asked.",
+"kind": "gap",
+"q": "'Could you send me the invoice?' → Lena asked me ___.",
 "answers": [
 [
-"Lena asked me to send her the invoice.",
-"Lena asked if I could send her the invoice.",
-"Lena asked whether I could send her the invoice.",
-"Lena asked me if I could send her the invoice.",
-"Lena asked me whether I could send her the invoice.",
-"Lena asked me to send the invoice to her.",
-"Lena asked if I would send her the invoice.",
-"Lena asked whether I would send her the invoice.",
-"Lena asked me if I would send her the invoice.",
-"Lena asked me whether I would send her the invoice.",
-"Lena asked if I could send the invoice to her.",
-"Lena asked me if I could send the invoice to her."
+"to send her the invoice",
+"if I could send her the invoice",
+"whether I could send her the invoice"
 ]
 ],
 "why": "A request can be reported with *asked* + person + *to* + base verb, or with *if / whether* + *could.*",
@@ -6966,12 +6971,12 @@
 "wrong_why": {}
 },
 {
-"id": "rq-B21-5a",
+"id": "rq-B21-5a-r2",
 "skill": "rep_questions",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You report a customer's question to your team: 'How long will the repair take?' the customer asked. Choose the correct option.",
+"q": "Which sentence reports the customer's question: 'How long will the repair take?'",
 "correct": "The customer asked how long the repair would take.",
 "wrong": [
 "The customer asked how long would the repair take.",
@@ -7002,12 +7007,12 @@
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rq-B22-1a-r2",
+"id": "rq-B22-1a-r3",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which report is correct? 'What should I do?' he asked me.",
+"q": "Tom's question to you: 'What should I do?' Which sentence reports it?",
 "correct": "He asked me what to do.",
 "wrong": [
 "He asked me what should he do.",
@@ -7018,12 +7023,12 @@
 "wrong_why": {}
 },
 {
-"id": "rq-B22-2a-r2",
+"id": "rq-B22-2a-r3",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "'Where should I park?' she asked me. Which report is correct?",
+"q": "Eva's question to you: 'Where should I park?' Which sentence reports it?",
 "correct": "She asked me where she should park.",
 "wrong": [
 "She asked me where should she park.",
@@ -7034,16 +7039,17 @@
 "wrong_why": {}
 },
 {
-"id": "rq-B22-3a-r2",
+"id": "rq-B22-3a-r3",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 3,
-"kind": "text",
-"q": "Report this: 'Where should we meet?' they asked.",
+"kind": "gap",
+"q": "'Where should we meet?' → They asked me ___.",
 "answers": [
 [
-"They asked where they should meet.",
-"They asked where to meet."
+"where they should meet",
+"where we should meet",
+"where to meet"
 ]
 ],
 "why": "Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.",
@@ -7083,24 +7089,25 @@
 "wrong_why": {}
 },
 {
-"id": "rq-B22-6a",
+"id": "rq-B22-6a-r2",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 6,
-"kind": "write",
-"q": "Report this question using whether. 'Is the data accurate?' the editor asked. Start with The editor asked whether.",
-"must": [
+"kind": "gap",
+"q": "'Is the data accurate?' → The editor asked me ___.",
+"must": [],
+"model": null,
+"why": "A yes/no question is reported with *whether* or *if* and statement word order: *whether the data was accurate*.",
+"answers": [
 [
-"^\\s*the editor asked whether\\b",
-"Start with *The editor asked whether.*"
-],
-[
-"\\bthe data (was|had been)\\b",
-"Use statement word order and the past: *the data was accurate.*"
+"whether the data was accurate",
+"whether the data were accurate",
+"if the data was accurate",
+"if the data were accurate"
 ]
 ],
-"model": "The editor asked whether the data was accurate.",
-"why": "Compare your sentence with the model answer."
+"hints": [],
+"why_lv": "Jā/nē jautājumu atstāsta ar *whether* vai *if* un apgalvojuma vārdu secību: *whether the data was accurate*."
 },
 {
 "id": "rv-B22-1a-r2",
@@ -7119,27 +7126,27 @@
 "wrong_why": {}
 },
 {
-"id": "rv-B22-2a-r2",
+"id": "rv-B22-2a-r3",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 2,
 "kind": "match",
-"q": "Match each sentence with the word that says what the person did.",
+"q": "Match each sentence with the word that says what the speaker did.",
 "pairs": [
 [
-"'I'll definitely be there on time,' she said.",
+"'I'll definitely be there on time.'",
 "promised"
 ],
 [
-"'Don't touch the red button!' he said.",
+"'Don't touch the red button!'",
 "warned"
 ],
 [
-"'Why don't we try the new café?' she said.",
+"'Why don't we try the new café?'",
 "suggested"
 ],
 [
-"'Yes, I broke the vase,' he said.",
+"'Yes, I broke the vase.'",
 "admitted"
 ]
 ],
@@ -7186,12 +7193,12 @@
 "wrong_why": {}
 },
 {
-"id": "rv-B22-5a",
+"id": "rv-B22-5a-r2",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Report a polite refusal: 'No, I won't work this weekend,' Sam said. Choose the correct option.",
+"q": "Which sentence reports Sam's answer: 'No, I won't work this weekend.'",
 "correct": "Sam refused to work that weekend.",
 "wrong": [
 "Sam refused working that weekend.",
@@ -7202,24 +7209,26 @@
 "wrong_why": {}
 },
 {
-"id": "rv-B22-6a",
+"id": "rv-B22-6a-r2",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 6,
-"kind": "write",
-"q": "Report this apology with apologise: 'Sorry I forgot the meeting,' Dana said.",
-"must": [
+"kind": "gap",
+"q": "'Sorry I forgot the meeting.' → Dana apologised ___.",
+"must": [],
+"model": null,
+"why": "*apologise for* + *-ing*: *apologised for forgetting the meeting*.",
+"answers": [
 [
-"\\bapologi[sz]ed\\b",
-"Use *apologised.*"
-],
-[
-"\\bfor\\s+(forgetting|having forgotten)\\b",
-"Use *for* + -ing: *apologised for forgetting.*"
+"for forgetting the meeting",
+"for having forgotten the meeting",
+"for forgetting about the meeting",
+"to me for forgetting the meeting",
+"to me for forgetting about the meeting"
 ]
 ],
-"model": "Dana apologised for forgetting the meeting.",
-"why": "Compare your sentence with the model answer."
+"hints": [],
+"why_lv": "*apologise for* + *-ing*: *apologised for forgetting the meeting*."
 },
 {
 "id": "rv-C11-1a",
@@ -7340,12 +7349,12 @@
 "wrong_why": {}
 },
 {
-"id": "rv-C12-2a-r2",
+"id": "rv-C12-2a-r3",
 "skill": "rep_verbs",
 "level": "C1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "'I'm not going to tell you who did it,' the officer said. Which word says what he did?",
+"q": "The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did?",
 "correct": "refused",
 "wrong": [
 "promised",
@@ -7407,12 +7416,12 @@
 "wrong_why": {}
 },
 {
-"id": "rv-C12-5a-r2",
+"id": "rv-C12-5a-r3",
 "skill": "rep_verbs",
 "level": "C1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You report a complaint in formal English: 'The service was terrible,' the customer said. Choose the correct option.",
+"q": "Which sentence reports the customer's words in formal English: 'The service was terrible.'",
 "correct": "The customer complained that the service had been terrible.",
 "wrong": [
 "The customer complained about the service had been terrible.",
@@ -7922,20 +7931,20 @@
 "wrong_why": {}
 },
 {
-"id": "ia-B22-3a",
+"id": "ia-B22-3a-r2",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Join with a question word + to: I don't know. What should I say?",
+"q": "Say it shorter with *to*: Can you tell me how I can get to the museum?",
 "answers": [
 [
-"I don't know what to say.",
-"I do not know what to say."
+"Can you tell me how to get to the museum?"
 ]
 ],
-"why": "*I don't know* + *what* + *to* + base verb.",
-"hints": []
+"why": "*how* + *to* + base form: *how to get*.",
+"hints": [],
+"why_lv": "*how* + *to* + pamatforma: *how to get*."
 },
 {
 "id": "ia-B22-4a",
@@ -8992,30 +9001,6 @@
 "why_lv": "*Was cooking* apraksta notiekošu fona darbību, *started* — tās sākumu, bet *had finished* — pabeigšanu pirms ierašanās."
 },
 {
-"id": "var-pp-b11-match-01",
-"skill": "present_perfect",
-"level": "B1.1",
-"bloom": 2,
-"kind": "match",
-"q": "Match each time expression to the information it gives in its sentence.",
-"why": "*For* introduces a duration; *since* introduces a starting point. *Not ... yet* describes something that has not happened up to now.",
-"pairs": [
-[
-"I have worked here for three years.",
-"The length of the period: three years."
-],
-[
-"I have worked here since 2023.",
-"The starting point: 2023."
-],
-[
-"I have not finished yet.",
-"The action is still incomplete now."
-]
-],
-"why_lv": "*For* ievada ilgumu, bet *since* — sākuma punktu. *Not ... yet* apraksta kaut ko, kas līdz šim vēl nav noticis."
-},
-{
 "id": "var-ppc-b12-match-01-r2",
 "skill": "present_perfect_continuous",
 "level": "B1.2",
@@ -9112,12 +9097,12 @@
 "why_lv": "*If* ievada solījuma nosacījumu. *Unless* nozīmē *if not*. *In case* pamato iepriekš veiktu piesardzības pasākumu."
 },
 {
-"id": "var-cs-b12-match-01",
+"id": "var-cs-b12-match-01-r2",
 "skill": "cond_second",
 "level": "B1.2",
 "bloom": 4,
 "kind": "match",
-"q": "Compare the conditionals and match each sentence to its time and meaning.",
+"q": "Match each sentence with its time and meaning.",
 "why": "*Had ... would buy* imagines the present; *have ... will buy* concerns a possible future; *had had ... would have bought* imagines a different past.",
 "pairs": [
 [
@@ -9136,28 +9121,28 @@
 "why_lv": "*Had ... would buy* izsaka iedomātu tagadni, *have ... will buy* — iespējamu nākotni, bet *had had ... would have bought* — iedomātu pagātni."
 },
 {
-"id": "var-rs-b12-match-01-r2",
+"id": "var-rs-b12-match-01-r3",
 "skill": "rep_statements",
 "level": "B1.2",
 "bloom": 3,
 "kind": "match",
-"q": "Match each thing Eva said with its report.",
-"why": "Reported later: *am → was*, *have finished → had finished*, *can → could*. Eva becomes *she*.",
+"q": "Match Eva's words with the sentences that start \"Eva said\".",
+"why": "Reported later, each tense goes one step back: *am → was*, *have been → had been*, *will be → would be*.",
 "pairs": [
 [
-"'I am busy,' Eva said.",
-"Eva said she was busy."
+"'I am tired.'",
+"Eva said she was tired."
 ],
 [
-"'I have finished,' Eva said.",
-"Eva said she had finished."
+"'I have been tired.'",
+"Eva said she had been tired."
 ],
 [
-"'I can help,' Eva said.",
-"Eva said she could help."
+"'I will be tired.'",
+"Eva said she would be tired."
 ]
 ],
-"why_lv": "Saskaņojot laikus šajos teikumos, *am → was*, *have finished → had finished* un *can → could*. Evas vietā lieto *she*."
+"why_lv": "Atstāstot vēlāk, katrs laiks iet soli atpakaļ: *am → was*, *have been → had been*, *will be → would be*."
 },
 {
 "id": "var-ip-b11-match-01-r2",

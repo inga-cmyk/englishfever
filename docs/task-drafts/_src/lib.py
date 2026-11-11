@@ -225,7 +225,9 @@ def save(name):
             from screenshot_fixes import apply as screenshot_fix
             from learner_fixes import apply as learner_fix
             from bank_fixes import apply as bank_fix
-            w.writerow(bank_fix(name, learner_fix(name, screenshot_fix(name, out))))
+            from draft_fixes import apply as draft_fix
+            out = draft_fix(name, bank_fix(name, learner_fix(name, screenshot_fix(name, out))))
+            if out is not None: w.writerow(out)
     print(name, len(rows), "rows")
 
 

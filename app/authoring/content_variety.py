@@ -215,11 +215,7 @@ match('var-pac-b12-match-01-r2', 'past_continuous', 'B1.2', 4,
       [('When Eva arrived, I was cooking.', 'Cooking was still in progress at her arrival.'), ('When Eva arrived, I started cooking.', 'Cooking began at her arrival.'), ('When Eva arrived, I had finished cooking.', 'Cooking was already complete at her arrival.')],
       '*Was cooking* gives background in progress; *started* marks the beginning; *had finished* places completion before the arrival.',
       '*Was cooking* apraksta notiekošu fona darbību, *started* — tās sākumu, bet *had finished* — pabeigšanu pirms ierašanās.')
-match('var-pp-b11-match-01', 'present_perfect', 'B1.1', 2,
-      'Match each time expression to the information it gives in its sentence.',
-      [('I have worked here for three years.', 'The length of the period: three years.'), ('I have worked here since 2023.', 'The starting point: 2023.'), ('I have not finished yet.', 'The action is still incomplete now.')],
-      '*For* introduces a duration; *since* introduces a starting point. *Not ... yet* describes something that has not happened up to now.',
-      '*For* ievada ilgumu, bet *since* — sākuma punktu. *Not ... yet* apraksta kaut ko, kas līdz šim vēl nav noticis.')
+# var-pp-b11-match-01 retired 12 November (report: too easy, theory labels on the right)
 match('var-ppc-b12-match-01-r2', 'present_perfect_continuous', 'B1.2', 4,
       'Compare what each sentence focuses on.',
       [('I have painted the wall. It is finished.', 'Completion of one wall.'), ('I have been painting the wall for an hour.', 'The duration of the painting activity.'), ('I have painted three walls today.', 'The number of completed walls.')],
@@ -240,16 +236,16 @@ match('var-cf-b11-match-01', 'cond_first', 'B1.1', 2,
       [("If you help me, I'll buy you lunch.", 'A promise depending on your help.'), ("We won't start unless everyone is here.", 'Everyone being present is necessary for us to start.'), ("I'll take water in case the shop is closed.", 'A precaution against a possible problem.')],
       '*If* introduces the condition for the promise. *Unless* means *if not*. *In case* gives the reason for taking a precaution in advance.',
       '*If* ievada solījuma nosacījumu. *Unless* nozīmē *if not*. *In case* pamato iepriekš veiktu piesardzības pasākumu.')
-match('var-cs-b12-match-01', 'cond_second', 'B1.2', 4,
-      'Compare the conditionals and match each sentence to its time and meaning.',
+match('var-cs-b12-match-01-r2', 'cond_second', 'B1.2', 4,   # no grammar term in the instruction (12 November)
+      'Match each sentence with its time and meaning.',
       [("If I had enough money now, I'd buy a car.", 'An imagined present situation.'), ("If I have enough money next month, I'll buy a car.", 'A possible future situation.'), ("If I had had enough money yesterday, I'd have bought a car.", 'An imagined alternative to the past.')],
       '*Had ... would buy* imagines the present; *have ... will buy* concerns a possible future; *had had ... would have bought* imagines a different past.',
       '*Had ... would buy* izsaka iedomātu tagadni, *have ... will buy* — iespējamu nākotni, bet *had had ... would have bought* — iedomātu pagātni.')
-match('var-rs-b12-match-01-r2', 'rep_statements', 'B1.2', 3,
-      'Match each thing Eva said with its report.',
-      [("'I am busy,' Eva said.", 'Eva said she was busy.'), ("'I have finished,' Eva said.", 'Eva said she had finished.'), ("'I can help,' Eva said.", 'Eva said she could help.')],
-      'Reported later: *am → was*, *have finished → had finished*, *can → could*. Eva becomes *she*.',
-      'Saskaņojot laikus šajos teikumos, *am → was*, *have finished → had finished* un *can → could*. Evas vietā lieto *she*.')
+match('var-rs-b12-match-01-r3', 'rep_statements', 'B1.2', 3,   # one sentence in three tenses, so only the tense change decides (second reader, 12 November)
+      'Match Eva\'s words with the sentences that start "Eva said".',
+      [("'I am tired.'", 'Eva said she was tired.'), ("'I have been tired.'", 'Eva said she had been tired.'), ("'I will be tired.'", 'Eva said she would be tired.')],
+      'Reported later, each tense goes one step back: *am → was*, *have been → had been*, *will be → would be*.',
+      'Atstāstot vēlāk, katrs laiks iet soli atpakaļ: *am → was*, *have been → had been*, *will be → would be*.')
 match('var-ip-b11-match-01-r2', 'ind_polite', 'B1.1', 3,
       'Match each question with the polite question that means the same.',
       [('Where is the meeting room?', 'Could you tell me where the meeting room is?'), ('What time does the café close?', 'Do you know what time the café closes?'), ('Does this bus stop at the station?', 'Could you tell me if this bus stops at the station?')],

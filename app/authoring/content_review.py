@@ -636,6 +636,84 @@ def revise(original):
         why_lv='Runājot par to, kas kādam ir, pareizi noliegumi ir gan *does not have any money*, gan *has not got any money*.')
     # Word banks with real forms (teacher, 8 November, batch 2): wrong chips are real forms that do not fit
     report_fix('cs-B11-3b', bank=['were', 'would', 'am', 'will'])
+    # Draft of 11-12 November (reports, speaker tags, situations), approved by the teacher on 12 November; read by a second reader
+    BS_EN = ('After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). '
+             'This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.')
+    BS_LV = ('Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). '
+             'Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.')
+    def opt_that(*xs):
+        out = []
+        for x in xs: out += [x, 'that ' + x]
+        return out
+    report_fix('ppc-B11-5a', q="Your friend is out of breath, but she isn't running now. Why is she out of breath?",
+        correct='She has been running.', wrong=['She is running.', 'She runs.', 'She has run.'], wrong_why={}, wrong_why_lv={},
+        why='*Has been running*: an activity that has just stopped and explains how she is now. *Has run* is for a finished result (*She has run 10 km*).',
+        why_lv='*Has been running*: darbība, kas nupat beigusies un izskaidro, kāda viņa ir tagad. *Has run* lieto pabeigtam rezultātam (*She has run 10 km*).')
+    report_fix('fu-B11-5a', q="'Are you free this evening?' 'Sorry, ___ Anna at 6. We booked a table yesterday.'",
+        correct="I'm meeting", wrong=["I'll meet", 'I meet', "I've met"],
+        why='An arrangement made earlier, with a time: present continuous (*I\'m meeting*). *I\'ll meet* is a decision made now; *I meet* is for timetables.',
+        why_lv='Iepriekš norunāta lieta ar laiku: Present Continuous (*I\'m meeting*). *I\'ll meet* ir lēmums runāšanas brīdī; *I meet* lieto sarakstiem un grafikiem.',
+        wrong_why={"I'll meet": '*will* is for a decision made now; this was arranged yesterday.'},
+        wrong_why_lv={"I'll meet": '*will* lieto lēmumam šajā brīdī; šis tika norunāts vakar.'})
+    report_fix('pa-A21-3b', q='Make a yes/no question: He played football.')
+    report_fix('fu-A21-3c', q='Make a yes/no question: You are going to travel by train.')
+    report_fix('rs-B11-1a', q="Last night Anna said: 'I am tired.' Now she feels fine. → Anna said she ___ tired.")
+    report_fix('rs-B11-3a', q="Ten years ago Mark said: 'I don't like coffee.' Now he drinks it every day. → Mark said he ___ coffee. (not / like)")
+    report_fix('rs-B11-5a', q="Last month Jon said: 'I can't come to the meeting.' In the end, he came. Which sentence reports Jon's words?")
+    report_fix('rs-B12-1a', q="On Monday Tom said: 'I have finished the report.' Later he found mistakes in it. → Tom said he ___ finished the report.")
+    report_fix('rs-B12-2a', q="Last week Ann said: 'I'm busy now. I'll call you tomorrow.' When you report it a week later, what happens to *tomorrow* and *now*?")
+    report_fix('rs-B12-5a', q="Yesterday the team said: 'We are almost ready.' Today the work is finished. Which sentence reports the team's message to you?")
+    report_fix('rs-B21-2a', q="The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'?")
+    report_fix('rs-B21-5a', q="Last week the client said: 'I won't sign it until the lawyer reads it.' Yesterday he signed it. Which sentence reports the client's words?")
+    report_fix('rq-B12-1b', q="Which sentence reports the guard's request: 'Please wait here.'")
+    report_fix('rq-B21-1a', q="Anna's question to you: 'Can you help me?' Which sentence reports it?")
+    report_fix('rq-B21-5a', q="Which sentence reports the customer's question: 'How long will the repair take?'")
+    report_fix('rq-B22-1a', q="Tom's question to you: 'What should I do?' Which sentence reports it?")
+    report_fix('rq-B22-2a', q="Eva's question to you: 'Where should I park?' Which sentence reports it?")
+    report_fix('rv-B22-5a', q="Which sentence reports Sam's answer: 'No, I won't work this weekend.'")
+    report_fix('rv-C12-2a', q="The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did?")
+    report_fix('rv-C12-5a', q="Which sentence reports the customer's words in formal English: 'The service was terrible.'")
+    # typed reports: the quote and the start are shown, the learner completes it (kind gap)
+    report_fix('rs-B11-6a', kind='gap', q="'I'm learning Spanish.' → Elena said ___.", answers=[opt_that('she was learning Spanish')], hints=[], must=[], model=None, why=BS_EN, why_lv=BS_LV)
+    report_fix('rs-B12-3a', kind='gap', q="Yesterday at five: 'I'm leaving now.' → Kate said ___.",
+        answers=[opt_that('she was leaving', 'she was leaving then', 'she was leaving at that moment', 'she was leaving right then')], why=BS_EN, why_lv=BS_LV)
+    report_fix('rs-B21-3a', kind='gap', q="'You must finish by Friday.' → My boss told me ___.",
+        answers=[opt_that('I had to finish by Friday', 'I must finish by Friday', 'I would have to finish by Friday')],
+        answer_notes=[['I would have to finish by Friday', 'Correct too: *would have to* looks at the obligation from that moment in the past.',
+                       'Arī pareizi: *would have to* skatās uz pienākumu no šī brīža pagātnē.']])
+    report_fix('rq-B21-3a', kind='gap', q="'Could you send me the invoice?' → Lena asked me ___.",
+        answers=[['to send her the invoice', 'if I could send her the invoice', 'whether I could send her the invoice']])
+    report_fix('rq-B22-3a', kind='gap', q="'Where should we meet?' → They asked me ___.",
+        answers=[['where they should meet', 'where we should meet', 'where to meet']])
+    report_fix('rq-B22-6a', kind='gap', q="'Is the data accurate?' → The editor asked me ___.",
+        answers=[['whether the data was accurate', 'whether the data were accurate', 'if the data was accurate', 'if the data were accurate']], hints=[], must=[], model=None,
+        why='A yes/no question is reported with *whether* or *if* and statement word order: *whether the data was accurate*.',
+        why_lv='Jā/nē jautājumu atstāsta ar *whether* vai *if* un apgalvojuma vārdu secību: *whether the data was accurate*.')
+    report_fix('rv-B22-6a', kind='gap', q="'Sorry I forgot the meeting.' → Dana apologised ___.",
+        answers=[['for forgetting the meeting', 'for having forgotten the meeting', 'for forgetting about the meeting', 'to me for forgetting the meeting', 'to me for forgetting about the meeting']], hints=[], must=[], model=None,
+        why='*apologise for* + *-ing*: *apologised for forgetting the meeting*.', why_lv='*apologise for* + *-ing*: *apologised for forgetting the meeting*.')
+    report_fix('rs-B11-2a', q='Match what she said with the sentences that start "She said".',
+        pairs=[["'I work in a bank.'", 'She said she worked in a bank.'], ["'I'm working in a bank.'", 'She said she was working in a bank.'],
+               ["'I will work in a bank.'", 'She said she would work in a bank.'], ["'I have worked in a bank.'", 'She said she had worked in a bank.']],
+        why='Reported later, each tense goes one step back: *work → worked, am working → was working, will work → would work, have worked → had worked*.',
+        why_lv='Atstāstot vēlāk, katrs laiks iet soli atpakaļ: *work → worked, am working → was working, will work → would work, have worked → had worked*.')
+    report_fix('rv-B22-2a', q='Match each sentence with the word that says what the speaker did.',
+        pairs=[["'I'll definitely be there on time.'", 'promised'], ["'Don't touch the red button!'", 'warned'], ["'Why don't we try the new café?'", 'suggested'], ["'Yes, I broke the vase.'", 'admitted']])
+    # typed conditionals: one situation sentence decides the type (c-0737, 11 November)
+    COULD_EN = 'Correct too: *could* = would be able to. *Would* says what you would do; *could* says what would be possible.'
+    COULD_LV = 'Arī pareizi: *could* = varētu. *Would* saka, ko tu darītu; *could*, kas būtu iespējams.'
+    report_fix('cs-B11-3a', q="I'm not the boss. If I ___ (be) the boss, I ___ (cancel) all Monday meetings.",
+        answers=[['were', 'was'], ['would cancel', "'d cancel", 'could cancel']],
+        answer_notes=[['were / could cancel', COULD_EN, COULD_LV], ['was / could cancel', COULD_EN, COULD_LV]])
+    report_fix('cs-B21-3a', q='Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be)')
+    report_fix('ct-B12-3a', q='Nobody told me about the meeting, so I missed it. If you ___ me about it, I ___ there. (tell / be)',
+        answers=[['had told', "'d told"], ['would have been', "'d have been"]])
+    report_fix('ct-B22-3a', q='He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it.')
+    report_fix('cm-B21-3a', q="I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be)",
+        answers=[['had learned', 'had learnt', "'d learned", "'d learnt"], ['would be', "'d be"]])
+    report_fix('ia-B22-3a', q='Say it shorter with *to*: Can you tell me how I can get to the museum?',
+        answers=[['Can you tell me how to get to the museum?']],
+        why='*how* + *to* + base form: *how to get*.', why_lv='*how* + *to* + pamatforma: *how to get*.')
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

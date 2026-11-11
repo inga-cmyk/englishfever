@@ -24,6 +24,7 @@ so results before and after it are not mixed.
 | app_version | app version then (see docs/CHANGELOG-practice-app.md) | 1 Nov 2026 |
 | task_role | learn (solvable from the meaning, not evidence) / check (depends on the form) / use (the learner writes it); computed from the task (Content::role) | 3 Nov 2026 |
 | rule_card_before | 1 = the learner opened the rule card (the ? button) during this task, before answering | 2 Nov 2026 |
+| unfair_wrong | 1 = marked wrong although the answer is correct English (a faulty key, fixed 8 Nov 2026): *Coffee grows in Brazil*, *Two windows broke in the storm*, *…whether the invoices have been sent*. `correct` stays 0; leave these rows out or count them as right | all rows (computed at export) |
 
 ## Definitions (as used on the Learning evidence page)
 - **Slip / gap**: a missed task is asked again later in the session; right = slip, wrong again = gap.
@@ -60,6 +61,7 @@ so results before and after it are not mixed.
 - **Hypotheses written down before looking**: 2-3 main questions, the rest is exploration.
 
 ## Changes
+- 11 Nov 2026: answers.csv has a new column `unfair_wrong`. It marks the answers *grows* (*Coffee ___ in Brazil.*), *broke* (*Two windows ___ in the storm.*) and *have been* (*Mr Ozols asked whether the invoices ___ ___ sent.*, a practice-only task) that were marked wrong before the keys were fixed on 8 November. Stored results, levels and XP are not rewritten; the flag is worked out from the old task text and the stored answer at export. Leave these rows out of right-answer rates or count them as right.
 - 6 Nov 2026 (later): the welcome-back message also appears when the app or tab comes back from the background after 30+ minutes, at most every 3 hours (before: only when the app was opened). More `welcome` events per learner from this time on.
 - 6 Nov 2026: batch 3 without grammar terms: 66 tasks (43 built-in get new versions, 23 prepared tasks are replaced on import). From now no task instruction names a grammar form. 8 accept a second form; *ppp-B11-5a* gets *just* in its answer; *pc-A22-3a* becomes one gap (*are you doing / will you do*). Compare by task version.
 - 6 Nov 2026: batch 2 without grammar terms: 120 tasks (6 built-in get new versions, 114 prepared tasks are replaced on import); time words added where another tense would also fit; 9 accept a second form (*lost*, *left*, *worked*, *finished*, *has got*, *will open* …). Compare by task version.

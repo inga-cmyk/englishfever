@@ -255,6 +255,21 @@ final class Research
         return self::csv(['pid', 'study_day', 'weekday', 'seconds', 'answers', 'xp'], $rows);
     }
 
+    /** Answers that were correct English but were marked wrong by a faulty key (fixed on 8 November 2026): task text => the answers. */
+    private const UNFAIR = [
+        'Coffee ___ in Brazil.' => ['grows'],
+        'Two windows ___ in the storm.' => ['broke'],
+        'Mr Ozols asked whether the invoices ___ ___ sent.' => ['have / been', 'were / being'],
+    ];
+
+    /** 1 = this answer was marked wrong although it is correct English (see UNFAIR). The stored result is not changed. */
+    public static function unfairWrong(?array $item, string $answer, int $correct): int
+    {
+        if ($correct || !$item || !isset(self::UNFAIR[$item['q'] ?? ''])) return 0;
+        $a = mb_strtolower(trim(preg_replace('/\s+/u', ' ', $answer)));
+        return in_array($a, self::UNFAIR[$item['q']], true) ? 1 : 0;
+    }
+
     /** One row per answered task. The learner's own text is left out. */
     public static function answers(): string
     {
@@ -267,11 +282,12 @@ final class Research
             $sql = 'SELECT a.item_id, a.skill, a.level, a.bloom, a.correct, a.time_ms, a.created_at, a.answer, a.exposure, a.served_why, a.app_ver, a.lang, a.fb_ms, a.card, p.mode, p.source FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? AND a.created_at >= ? ORDER BY a.id';
             foreach (Db::all($sql, [(int) $u['id'], (int) $u['research_at']]) as $a) {
                 $t = (new DateTime('@' . $a['created_at']))->setTimezone(Stats::tz());
+                $it = Content::item((string) $a['item_id']);
                 $rows[] = [$pid, self::between($start, $t->format('Y-m-d')), (int) $t->format('N'), (int) $t->format('G'), $a['mode'] ?? '', $a['skill'], $area[$a['skill']] ?? '', $a['level'], (int) $a['bloom'], (int) $a['correct'], round($a['time_ms'] / 1000, 1), $a['item_id'],
-                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? '', (int) ($a['card'] ?? 0), Content::role(Content::item((string) $a['item_id']))];
+                    $a['answer'] === '(skipped)' ? 1 : 0, $a['exposure'] ?? '', $a['served_why'] ?? '', $a['source'] ?? '', $a['lang'] ?? '', $a['fb_ms'] === null ? '' : round($a['fb_ms'] / 1000, 1), $a['app_ver'] ?? '', (int) ($a['card'] ?? 0), Content::role($it), self::unfairWrong($it, (string) $a['answer'], (int) $a['correct'])];
             }
         }
-        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version', 'rule_card_before', 'task_role'], $rows);
+        return self::csv(['pid', 'study_day', 'weekday', 'hour', 'mode', 'skill', 'area', 'level', 'bloom', 'correct', 'seconds', 'item', 'skipped', 'exposure', 'served_why', 'source', 'lang', 'feedback_seconds', 'app_version', 'rule_card_before', 'task_role', 'unfair_wrong'], $rows);
     }
 
     /** What participants opened and pressed (Usage), and where each session was started; pseudonymised like the other files. */
@@ -351,6 +367,8 @@ feedback_seconds  time from the feedback to Next on this task (reading the expla
 app_version  the app version then; content and rules change between versions (docs/CHANGELOG-practice-app.md).
 task_role    learn (can be solved from the meaning: not evidence of the form) | check (depends on the form) | use (the learner writes it).
 rule_card_before  1 = the learner opened the rule card (the ? button) during this task, before answering; from 2 November 2026.
+unfair_wrong 1 = marked wrong (correct = 0) although the answer is correct English: a faulty key in three tasks, fixed on 8 November 2026
+             (Coffee grows in Brazil; Two windows broke in the storm; ...whether the invoices have been sent). Leave these rows out or count them as right.
 
 events.csv   (one row per logged action; from 28 October 2026)
 event        page, rule_card, lang, skip, quit, review, report, sound, mood, path_step, bonus, or session_start.

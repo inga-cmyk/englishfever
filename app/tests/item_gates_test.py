@@ -65,9 +65,9 @@ def g_which_question(i):   # 29 October: "Make a question" says which question
     return ["'Make a question' does not say which (with What / a yes/no question)"]
 
 
-SPEAKER = r"(she|he|they|we|the \w+|(?!She\b|He\b|They\b|We\b|I\b)[A-Z]\w+)"
+SPEAKER = r"(she|he|they|we|(the|my|our|her|his) \w+|(?!She\b|He\b|They\b|We\b|I\b)[A-Z]\w+)"
 def g_speaker(i):   # 29 October, 11 November: no speaker tag after a quote ('…,' she said.); who speaks is said before the quote or by "Start with"
-    q = i["q"]   # not a tag: 'I live in Riga.' She said she ___ (the report itself starts after the quote)
+    q = i["q"] + " " + " ".join(x[0] for x in i.get("pairs") or [])   # also the left sides of matching pairs; not a tag: 'I live in Riga.' She said she ___ (the report itself starts after the quote)
     return ["speaker tag after a quote"] if re.search(r",['’]\s+" + SPEAKER + r"\s+(said|asked|told|replied)\b", q) \
         or re.search(r"[?!]['’]\s+" + SPEAKER + r"\s+(said|asked|told|replied)( me| us| her| him)?\s*[.?]", q) else []
 

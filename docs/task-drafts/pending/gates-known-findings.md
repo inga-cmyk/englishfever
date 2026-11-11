@@ -1,6 +1,6 @@
 # Slūžu atrastie esošie uzdevumi (zināmais saraksts)
 
-Pārbaudes `app/tests/item_gates_test.py` atrada šos jau publicētos uzdevumus (kopā 56). Tie neaptur iepakošanu, jo ir pierakstīti kā zināmi (`app/tests/item_gates_baseline.json`); jauns uzdevums ar tādu pašu pazīmi iepakošanu aptur. Labojumu melnraksts: `reports-2026-11-11-draft.md` (C un D sadaļa). Pēc 11. novembra noteikuma vārdu bankas ar tipiskām kļūdainām formām (*womans, childs, didn't used to*) vairs netiek atzīmētas.
+Pārbaudes `app/tests/item_gates_test.py` atrada šos jau publicētos uzdevumus (kopā 60). Tie neaptur iepakošanu, jo ir pierakstīti kā zināmi (`app/tests/item_gates_baseline.json`); jauns uzdevums ar tādu pašu pazīmi iepakošanu aptur. Labojumu melnraksts: `reports-2026-11-11-draft.md` (C un D sadaļa). Pēc 11. novembra noteikuma vārdu bankas ar tipiskām kļūdainām formām (*womans, childs, didn't used to*) netiek atzīmētas.
 
 ## Gramatikas termins norādē (1)
 
@@ -23,7 +23,7 @@ Pārbaudes `app/tests/item_gates_test.py` atrada šos jau publicētos uzdevumus 
 - future · A2.1 · text: Make a question: You are going to travel by train.
 - past_simple · A2.1 · text: Make a question: He played football.
 
-## Runātāja piebilde pēc citāta (35)
+## Runātāja piebilde pēc citāta (39)
 
 - rep_questions · B1.2 · mcq: Which sentence reports the request 'Please wait here,' the guard said? → The guard told me to wait there.
 - rep_questions · B1.2 · text: Report it: 'Did you enjoy the film?' he asked me.
@@ -40,12 +40,14 @@ Pārbaudes `app/tests/item_gates_test.py` atrada šos jau publicētos uzdevumus 
 - rep_questions · B2.2 · text: Report this: 'Where should we meet?' they asked.
 - rep_questions · B2.2 · write: Report this question using whether. 'Is the data accurate?' the editor asked. Start with The editor asked whether.
 - rep_statements · B1.1 · gap: 'I don't like coffee,' Mark said. → Mark said he ___ coffee. (not / like)
+- rep_statements · B1.1 · match: Match each sentence with its report. → 'I work in a bank,' she said. = She said she worked in a bank. ; 'I'm working late,' she said. = She said she was working late. ; 'I finished the report,' she said. = She said she had finished the report. ; 'I can come,' she said. = She said she could come.
 - rep_statements · B1.1 · mcq: 'I am tired,' she said last night. Now she feels fine. Report it: She said she ___ tired. → was
 - rep_statements · B1.1 · mcq: Report this: 'I can't come to the meeting,' Jon said. Choose the correct option. → Jon said he couldn't come to the meeting.
 - rep_statements · B1.1 · text: Report it: 'I'm working late,' she said.
 - rep_statements · B1.1 · text: Report it: 'We have finished,' they said.
 - rep_statements · B1.1 · text: Report it: 'We will finish the report tomorrow,' they said.
 - rep_statements · B1.1 · write: Report this sentence. 'I'm learning Spanish,' Elena said. Start with Elena said.
+- rep_statements · B1.2 · match: Match each thing Eva said with its report. → 'I am busy,' Eva said. = Eva said she was busy. ; 'I have finished,' Eva said. = Eva said she had finished. ; 'I can help,' Eva said. = Eva said she could help.
 - rep_statements · B1.2 · mcq: 'I have finished the report,' he said. Later he found more mistakes in it. Report it: He said he ___ finished the report. → had
 - rep_statements · B1.2 · mcq: 'I'll call you tomorrow, I'm busy now,' Ann said last week. When you report it a week later, what happens to *tomorrow* and *now*? → They change to 'the next day' and 'then'.
 - rep_statements · B1.2 · mcq: You report a message to your manager: 'We are almost ready,' the team said. Choose the correct option. → The team told me they were almost ready.
@@ -55,6 +57,8 @@ Pārbaudes `app/tests/item_gates_test.py` atrada šos jau publicētos uzdevumus 
 - rep_statements · B1.2 · text: Report this: 'I'm leaving now,' Kate said.
 - rep_statements · B2.1 · mcq: 'The Earth goes round the Sun,' the teacher said. Why can we report it as 'The teacher said the Earth goes round the Sun'? → Because it is still true.
 - rep_statements · B2.1 · mcq: Report this naturally: 'I won't sign it until the lawyer reads it,' the client said. Choose the correct option. → The client said he wouldn't sign it until the lawyer had read it.
+- rep_statements · B2.1 · text: Report this: 'You must finish by Friday,' my boss said.
+- rep_verbs · B2.2 · match: Match each sentence with the word that says what the person did. → 'I'll definitely be there on time,' she said. = promised ; 'Don't touch the red button!' he said. = warned ; 'Why don't we try the new café?' she said. = suggested ; 'Yes, I broke the vase,' he said. = admitted
 - rep_verbs · B2.2 · mcq: Report a polite refusal: 'No, I won't work this weekend,' Sam said. Choose the correct option. → Sam refused to work that weekend.
 - rep_verbs · B2.2 · write: Report this apology with apologise: 'Sorry I forgot the meeting,' Dana said.
 - rep_verbs · C1.1 · text: Report with *advise*: 'Don't sign anything until you've read it,' the lawyer told her.

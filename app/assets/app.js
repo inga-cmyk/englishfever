@@ -16,8 +16,10 @@
   /** Features the learning study can hide for a learner (state.user.cond, e.g. {streak: 'off'}). Everyone outside the study sees everything. */
   function feat(name) { return !(state.user && state.user.cond && state.user.cond[name] === 'off'); }
   /** Learners see A2, B1, B2, C1; the half-levels (A2.1, A2.2 ...) only steer the difficulty inside the app. */
-  // the app's C1 topics are B2 grammar at the top of the app (teacher, 12 November, U3 A): learners see them as B2+; data keep C1.1 / C1.2
-  function lv(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'B2+' : x; }
+  // the app's C1 topics are B2 grammar (teacher, 12 November, U3 A): topics and tasks show B2.2, the top level is called Top; data keep C1.1 / C1.2
+  function lv(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'B2.2' : x; }
+  /** The level scale, the test ladder, the test result and the level picker: the app's top level is called Top, not C1. */
+  function lvTop(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'Top' : x; }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Start|Imagine|Add|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
@@ -618,9 +620,9 @@
     var LV = ['A2', 'B1', 'B2', 'C1'], at = LV.indexOf(String(lvl).slice(0, 2));
     if (at < 0) return null;
     var bar = h('div', { class: 'ls-bar' }, LV.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); }));
-    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, lv(x)); }));
+    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, lvTop(x)); }));
     var from = (state.dash && state.dash.level_now && state.dash.level_now.from === 'answers') ? 'From your answers' : (rep ? 'From the level test' : 'From your answers');
-    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + lv(LV[at]) + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
+    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + lvTop(LV[at]) + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
     if (rep) { box.type = 'button'; box.addEventListener('click', function () { showPlacementReport(rep); }); }
     return box;
   }
@@ -1179,7 +1181,7 @@
       var levelRow = h('div', { class: 'seg lvseg', role: 'group', 'aria-label': 'Level' }, FULL.filter(function (l) { return (COUNT[l] || 0) > 0; }).map(function (l) {   // only the levels that have questions (A2 to C1 now)
         var has = (COUNT[l] || 0) > 0;
         var inp = h('input', { type: 'checkbox', value: l, checked: !!levels[l], disabled: !has, onchange: function () { levels[l] = inp.checked; redraw(); } });
-        return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, lv(l)));
+        return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, lvTop(l)));
       }));
       holder.replaceChildren(
         h('div', { class: 'picker-group' }, levelRow),
@@ -1911,8 +1913,8 @@
     var found = String(lv(s.overall_level)).slice(0, 2);   // the result as a big level on a dark card, the ladder under it, one gold button (teacher, 28 October)
     nodes.push(h('div', { class: 'card focus hero-card', style: 'margin-bottom:16px' },
       h('div', { class: 'hero-cheer' }, fresh ? 'Placement test finished' : 'Placement result'),
-      h('div', { class: 'lvbig' }, lv(s.overall_level), h('small', null, 'your level')),
-      (s.ladder && s.ladder.length) ? h('div', { class: 'ladder' }, s.ladder.map(function (l) { return h('span', { class: l.level === found ? 'on' : '' }, lv(l.level), h('b', null, l.correct + '/' + l.n)); })) : null,
+      h('div', { class: 'lvbig' }, lvTop(s.overall_level), h('small', null, 'your level')),
+      (s.ladder && s.ladder.length) ? h('div', { class: 'ladder' }, s.ladder.map(function (l) { return h('span', { class: l.level === found ? 'on' : '' }, lvTop(l.level), h('b', null, l.correct + '/' + l.n)); })) : null,
       firstStep(s, fresh),
       h('div', { class: 'hero-stats' }, h('span', null, icon('check'), h('b', null, s.correct + ' / ' + s.n), ' correct')),
       (s.sure === 'rough' && s.n < 20) ? h('p', { class: 'small muted' }, 'A short test gives a rough level. The Full test is more exact.') : h('p', { class: 'small muted' }, 'A guide, not an exam grade.'),

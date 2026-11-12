@@ -89,7 +89,7 @@ const OUT = __dirname + '/shots/';
   await page.waitForSelector('.lvseg');
   for (const l of ['A2', 'B1', 'B2', 'C1']) {   // B1 only
     const on = await page.locator('.lvseg input[value="' + l + '"]').isChecked();
-    if (on !== (l === 'B1')) await page.locator('.lvseg label', { hasText: new RegExp('^' + (l === 'C1' ? 'B2\\+' : l) + '$') }).click();
+    if (on !== (l === 'B1')) await page.locator('.lvseg label', { hasText: new RegExp('^' + (l === 'C1' ? 'Top' : l) + '$') }).click();
   }
   await page.waitForSelector('details.picker-group'); await page.evaluate(() => document.querySelectorAll('details.picker-group').forEach(d => { d.open = true; }));   // the areas start closed
   await page.waitForSelector('.chipsel');

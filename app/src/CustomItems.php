@@ -259,6 +259,7 @@ final class CustomItems
         $res['skill'] = $skill['label'];
         // level: A2.1 ... C1.2, or just A2, B1, B2, C1 (the first half-level of it that the topic has)
         $lv = strtoupper(str_replace(' ', '', $get('level')));
+        if (strncmp($lv, 'C1', 2) === 0) $lv = 'B2.2';   // the app has no C1 level any more: C1 tasks are B2.2 (teacher, 12 November, U3 A)
         if (preg_match('/^(A2|B1|B2|C1)$/', $lv)) {
             $cand = array_values(array_filter($skill['levels'], fn($x) => strpos($x, $lv) === 0));
             if (!$cand) throw new ApiError("This topic has no $lv tasks (it covers " . self::range($skill['levels']) . ').', 400);
@@ -388,7 +389,8 @@ final class CustomItems
     private static function oldKey(array $it): string
     {
         $k = $it['kind'] === 'mcq' ? ($it['correct'] ?? '') : ($it['kind'] === 'order' ? ($it['sentence'] ?? '') : ($it['q'] ?? ''));
-        return $it['skill'] . '|' . $it['level'] . '|' . $it['kind'] . '|' . mb_strtolower(trim(str_replace('*', '', (string) $k)));
+        $lv = strncmp((string) $it['level'], 'C1', 2) === 0 ? 'B2.2' : $it['level'];   // C1 = B2.2 (U3 A)
+        return $it['skill'] . '|' . $lv . '|' . $it['kind'] . '|' . mb_strtolower(trim(str_replace('*', '', (string) $k)));
     }
 
     /** What a multiple-choice, word-order or matching task is, apart from its wording ('' for other kinds). */

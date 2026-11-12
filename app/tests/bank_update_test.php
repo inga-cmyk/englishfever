@@ -38,12 +38,13 @@ foreach ($retired as $old) {
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
         if ($key === 'kind' && $stem === 'rv-C11-3a') continue;
+        if ($key === 'level' && strncmp((string) $old['level'], 'C1', 2) === 0 && $replacement['level'] === 'B2.2') continue;   // no C1 level any more: C1 tasks became B2.2 (teacher, 12 November, U3 A)
         if ($key === 'kind' && in_array($stem, ['rs-B11-6a', 'rs-B12-3a', 'rs-B21-3a', 'rq-B21-3a', 'rq-B22-3a', 'rq-B22-6a', 'rv-B22-6a'], true)) continue;   // typed reports became "complete from the start" gaps (12 November)   // a typed gap became a word-bank gap: the quote already gave the missing words away (teacher, 3 November)
         check($old[$key] === $replacement[$key], "Correction changed $key");
     }
 }
 check(count($active) === 482, 'Unexpected active question count');   // -1: var-pp-b11-match-01 retired (12 November)
-check(count($retired) === 375, 'Unexpected correction count');   // +38: the draft of 11-12 November (reports, speaker tags, situations)
+check(count($retired) === 417, 'Unexpected correction count');   // +38: the draft of 11-12 November; +42: C1 tasks became B2.2 (12 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

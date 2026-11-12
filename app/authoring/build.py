@@ -221,6 +221,16 @@ from bank_integrity import validate, history
 dsl.ITEMS = revise(dsl.ITEMS)
 from content_variety import ITEMS as VARIETY
 dsl.ITEMS.extend(VARIETY)
+# The app's C1 tasks are B2 grammar (teacher, 12 November, U3 A): they are B2.2 tasks now, so the data, the export and
+# My learning path say what the learner sees. The app has no C1 level any more; "Top" is the top of B2.2.
+import re as _re
+for it in dsl.ITEMS:
+    if it["level"].startswith("C1"):   # a new revision: published content is never rewritten
+        it["level"] = "B2.2"
+        m = _re.match(r"^(.*)-r(\d+)$", it["id"])
+        it["id"] = f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else it["id"] + "-r2"
+SKILLS[:] = [tuple([s[0], s[1], s[2], list(dict.fromkeys("B2.2" if l.startswith("C1") else l for l in s[3]))] + list(s[4:])) for s in SKILLS]
+dsl.LEVELS[:] = [l for l in dsl.LEVELS if not l.startswith("C1")]
 validate(dsl.ITEMS, SKILLS, dsl.LEVELS)
 retired = history(dsl.ITEMS, os.path.join(HERE, 'history', 'published_items.json'),
                   record='--record-release' in sys.argv)

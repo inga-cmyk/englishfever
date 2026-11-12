@@ -24,6 +24,7 @@ final class Content
         if (self::$items === null) {
             self::$items = self::load('items');
             if (class_exists('CustomItems', false)) self::$items = array_merge(self::$items, CustomItems::approved()); // tasks the teacher added and approved
+            foreach (self::$items as $i => $it) if (strncmp((string) $it['level'], 'C1', 2) === 0) self::$items[$i]['level'] = 'B2.2';   // no C1 level in the app (teacher, 12 November, U3 A): prepared C1 tasks are B2.2
             self::hideRelabelled();
             self::$byId = [];
             foreach (self::$items as $i => $it) {
@@ -158,6 +159,27 @@ final class Content
         if ($it['kind'] === 'gap' && empty($it['bank'])) return 'use';
         if ($it['kind'] === 'mcq' && preg_match('/^(Which sentence (means|is about|tells|is a |describes|shows|imagines|expresses|uses|does NOT express|has a finished|is passive)|What is the difference|What usually happens|Which (words|word) usually|Which verb is normally)/i', (string) ($it['q'] ?? ''))) return 'learn';
         if ($it['kind'] === 'mcq' && preg_match('/What does (it|this|that) (say|mean)\?/i', (string) ($it['q'] ?? ''))) return 'learn';
+        // meaning questions whose wrong options are correct sentences with another meaning (teacher, 12 November, U2 A, read one by one)
+        static $learnQ = [
+            "'I have no idea how to start.' What does 'how to start' mean?" => true,
+            "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?" => true,
+            "'Whatever he says, don't sign it.' What does 'whatever' mean here?" => true,
+            "A technician is still working on your computer. Choose the correct option." => true,
+            "Choose the correct meaning: 'Mum has gone to the shop.'" => true,
+            "Choose the correct meaning: 'Our guests have arrived.'" => true,
+            "Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now." => true,
+            "Compare 'The bridge was closed' and 'The bridge has been closed'. Which one tells us the bridge is probably still closed now?" => true,
+            "In 'The report is checked by the manager', what is the focus?" => true,
+            "Which sentence compares two things?" => true,
+            "Which sentence focuses on a recent event with a result now?" => true,
+            "Which sentence focuses on the activity, not the result?" => true,
+            "Which sentence focuses on the result or number (not the activity)?" => true,
+            "Which sentence has the same meaning as 'The police arrested two men'?" => true,
+            "Which sentence puts the focus on the data, not on the person?" => true,
+            "Which sentence says that people grow rice in Asia, without saying who?" => true,
+            "Which sentence says that someone broke the window, without saying who?" => true,
+        ];
+        if ($it['kind'] === 'mcq' && isset($learnQ[(string) ($it['q'] ?? '')])) return 'learn';
         // questions about meaning (what a sentence tells us, which action came first) can be answered without forming the tense (teacher, 12 November, U2 A)
         if ($it['kind'] === 'mcq' && preg_match("/^(What does .{2,80} (mean|tell us)\\??|What does this sentence mean\\?|In (the story )?'.+', which (action|thing)? ?(started|happened) first\\?|Which sentence says (how long|the difference|the train was missed|that she first))/i", (string) ($it['q'] ?? ''))) return 'learn';
         return 'check';
@@ -240,7 +262,7 @@ final class Content
     public static function levelFromTheta(float $theta, ?array $allowed = null): string
     {
         // boundaries calibrated with simulated learners (tests/sim.py): estimates run slightly low at the top and high at the bottom
-        $lv = $theta < 1.8 ? 'A2.1' : ($theta < 2.5 ? 'A2.2' : ($theta < 3.5 ? 'B1.1' : ($theta < 4.5 ? 'B1.2' : ($theta < 5.5 ? 'B2.1' : ($theta < 6.5 ? 'B2.2' : ($theta < 7.5 ? 'C1.1' : 'C1.2'))))));
+        $lv = $theta < 1.8 ? 'A2.1' : ($theta < 2.5 ? 'A2.2' : ($theta < 3.5 ? 'B1.1' : ($theta < 4.5 ? 'B1.2' : ($theta < 5.5 ? 'B2.1' : 'B2.2'))));   // B2.2 is the top (U3 A)
         if ($allowed) {
             $order = array_keys(self::BASE);
             $idx = array_search($lv, $order);
@@ -263,7 +285,7 @@ final class Content
     {
         $out = 'A2.1';
         foreach (self::BASE as $lv => $base) {
-            if ($lv !== 'A2.1' && $theta >= $base + 0.4) $out = $lv;
+            if ($lv !== 'A2.1' && strncmp($lv, 'C1', 2) !== 0 && $theta >= $base + 0.4) $out = $lv;   // never C1: B2.2 is the top (U3 A)
         }
         return $out;
     }

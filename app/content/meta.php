@@ -8,9 +8,7 @@ return json_decode(<<<'EF_JSON_END'
   "B1.1",
   "B1.2",
   "B2.1",
-  "B2.2",
-  "C1.1",
-  "C1.2"
+  "B2.2"
  ],
  "areas": [
   {
@@ -3806,8 +3804,7 @@ return json_decode(<<<'EF_JSON_END'
    "area": "conditionals",
    "levels": [
     "B2.1",
-    "B2.2",
-    "C1.1"
+    "B2.2"
    ],
    "rule": {
     "form": [
@@ -3967,8 +3964,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Advanced conditionals: inversion, unless, wish",
    "area": "conditionals",
    "levels": [
-    "C1.1",
-    "C1.2"
+    "B2.2"
    ],
    "rule": {
     "form": [
@@ -4455,9 +4451,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Reporting verbs (suggest, admit, promise...)",
    "area": "reported",
    "levels": [
-    "B2.2",
-    "C1.1",
-    "C1.2"
+    "B2.2"
    ],
    "rule": {
     "form": [
@@ -4797,9 +4791,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Indirect questions, more uses (I don't know what to do)",
    "area": "indirect",
    "levels": [
-    "B2.2",
-    "C1.1",
-    "C1.2"
+    "B2.2"
    ],
    "rule": {
     "form": [
@@ -10689,8 +10681,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Unreal time and preferences (it's high time, I'd rather)",
    "area": "conditionals",
    "levels": [
-    "C1.1",
-    "C1.2"
+    "B2.2"
    ],
    "rule": {
     "form": [

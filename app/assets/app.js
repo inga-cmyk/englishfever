@@ -19,7 +19,7 @@
   // the app's C1 topics are B2 grammar (teacher, 12 November, U3 A): topics and tasks show B2.2, the top level is called Top; data keep C1.1 / C1.2
   function lv(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'B2.2' : x; }
   /** The level scale, the test ladder, the test result and the level picker: the app's top level is called Top, not C1. */
-  function lvTop(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'Top' : x; }
+  function lvTop(l) { var r = String(l === null || l === undefined ? '' : l), x = r.replace(/\.\d$/, ''); return (x === 'C1' || r === 'B2.2') ? 'Top' : x; }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Start|Imagine|Add|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
@@ -617,12 +617,13 @@
   function levelScale(lvl, rep) {
     if (!lvl) return null;
     // four parts, one per level, so the scale says exactly what the level test says ("B2"), not a half-level near the next one (teacher, 3 November)
-    var LV = ['A2', 'B1', 'B2', 'C1'], at = LV.indexOf(String(lvl).slice(0, 2));
+    // A2 · B1 · B2 · Top: Top is B2.2, the top of the app (teacher, 12 November, U3 A)
+    var LV = ['A2', 'B1', 'B2', 'C1'], at = String(lvl) === 'B2.2' ? 3 : LV.indexOf(String(lvl).slice(0, 2));
     if (at < 0) return null;
     var bar = h('div', { class: 'ls-bar' }, LV.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); }));
-    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, lvTop(x)); }));
+    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, x === 'C1' ? 'Top' : x); }));
     var from = (state.dash && state.dash.level_now && state.dash.level_now.from === 'answers') ? 'From your answers' : (rep ? 'From the level test' : 'From your answers');
-    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + lvTop(LV[at]) + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
+    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + (at === 3 ? 'Top' : LV[at]) + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
     if (rep) { box.type = 'button'; box.addEventListener('click', function () { showPlacementReport(rep); }); }
     return box;
   }
@@ -1300,6 +1301,7 @@
       setPrompt(qEl, it.q);
       var t = h('textarea', { rows: '2', class: 'type-in', autocomplete: 'off', autocapitalize: 'sentences', spellcheck: 'false', placeholder: 'Type your answer', 'aria-label': 'Your answer', oninput: function (e) { growBox(e.target); ready(); } });
       inputs.push(t); area.appendChild(t);
+      if (/^Correct the mistake/i.test(it.q || '')) area.appendChild(h('div', { class: 'small muted hint-under' }, 'You can write only the corrected words'));   // the grader accepts both (teacher, 12 November, H.3)
       answerGetter = function () { return t.value; };
       canSubmit = function () { return t.value.trim() !== ''; };
     } else {
@@ -1954,10 +1956,25 @@
     if (!g) return h('a', { class: 'btn', href: '#/practice', style: 'margin-top:4px' }, 'Start practising', icon('arrow'));
     var lvs = { A2: ['A2.1', 'A2.2'], B1: ['B1.1', 'B1.2'], B2: ['B2.1', 'B2.2'], C1: ['C1.1', 'C1.2'] }[g.level] || [s.overall_level];
     var b = h('button', { class: 'btn', style: 'margin-top:4px' }, 'Start with ' + g.label, icon('arrow'));
-    b.addEventListener('click', function () {
-      b.disabled = true; track('first_step', g.id);
+    var go = function () {
+      track('first_step', g.id);
       api('session/start', { mode: 'practice', skills: [g.id], levels: lvs, length: 5, source: 'path', first_step: true })
-        .then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(function (e) { b.disabled = false; fail(e); });
+        .then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(fail);
+    };
+    b.addEventListener('click', function () {
+      var m = s.first_mistake;
+      if (!m) { b.disabled = true; go(); return; }
+      // first the learner's own mistake: what they wrote, the right answer, why; then new sentences on the same topic (S4 A)
+      var useLv = state.user.lang === 'lv' && m.why_lv;
+      show(h('div', { class: 'sess', style: 'max-width:720px' },
+        h('div', { class: 'card focus' },
+          h('div', { class: 'label' }, g.label),
+          h('h2', { style: 'margin:4px 0 12px' }, 'Your mistake in the test'),
+          h('p', { class: 'q' }, UI.rich(m.q)),
+          h('p', null, h('span', { class: 'small muted' }, 'You wrote: '), h('s', null, m.given || '—')),
+          h('p', null, h('span', { class: 'small muted' }, 'Right answer: '), h('b', null, m.show)),
+          h('div', { class: 'why' }, UI.rich(useLv ? m.why_lv : m.why)),
+          h('button', { class: 'btn block', style: 'margin-top:16px', onclick: function (e) { e.currentTarget.disabled = true; go(); } }, 'Now try new sentences', icon('arrow')))));
     });
     return b;
   }

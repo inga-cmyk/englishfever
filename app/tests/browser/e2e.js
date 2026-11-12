@@ -82,14 +82,23 @@ const OUT = __dirname + '/shots/';
   { const res = await page.locator('.sess').innerText();   // S3 A, S4 A (12 November): what you know, where we start, the first training on a missed topic
     if (!/You already know|We start with/.test(res)) errors.push('placement result misses the known / start lists');
     if (/We start with/.test(res) && !(await page.locator('.hero-card button:has-text("Start with")').count())) errors.push('placement result: no Start with button'); }
-  await noJunk(page,'06-placement-result'); await page.screenshot({ path: OUT + '06-placement-result.png', fullPage: true });
+  await noJunk(page,'06-placement-result');
+  if (await page.locator('.hero-card button:has-text("Start with")').count()) {   // S4 A: the learner's own test mistake first, then new sentences
+    await page.click('.hero-card button:has-text("Start with")');
+    await page.waitForSelector('text=Your mistake in the test');
+    const mt = await page.locator('.sess').innerText();
+    if (!/You wrote:/.test(mt) || !/Right answer:/.test(mt)) errors.push('first step: the test mistake card misses what was written or the right answer');
+    await page.screenshot({ path: OUT + '06b-first-mistake.png', fullPage: true });
+    await page.click('button:has-text("Now try new sentences")'); await page.waitForSelector('.task .q');
+    await page.goto(BASE + '/index.html#/home'); await page.waitForTimeout(400);
+  } await page.screenshot({ path: OUT + '06-placement-result.png', fullPage: true });
 
   // practice picker + session of 10 with all kinds
   await page.goto(BASE + '/index.html#/practice');
   await page.waitForSelector('.lvseg');
-  for (const l of ['A2', 'B1', 'B2', 'C1']) {   // B1 only
+  for (const l of ['A2', 'B1', 'B2']) {   // B1 only (no C1 level since 12 November)
     const on = await page.locator('.lvseg input[value="' + l + '"]').isChecked();
-    if (on !== (l === 'B1')) await page.locator('.lvseg label', { hasText: new RegExp('^' + (l === 'C1' ? 'Top' : l) + '$') }).click();
+    if (on !== (l === 'B1')) await page.locator('.lvseg label', { hasText: new RegExp('^' + l + '$') }).click();
   }
   await page.waitForSelector('details.picker-group'); await page.evaluate(() => document.querySelectorAll('details.picker-group').forEach(d => { d.open = true; }));   // the areas start closed
   await page.waitForSelector('.chipsel');

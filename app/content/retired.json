@@ -3505,6 +3505,22 @@
 "wrong_why": {}
 },
 {
+"id": "cm-C11-2a",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace?",
+"correct": "If I were",
+"wrong": [
+"If I had been",
+"If I will be",
+"Unless I was"
+],
+"why": "*Were I* = *If I were.* It is formal.",
+"wrong_why": {}
+},
+{
 "id": "cm-C11-3a",
 "skill": "cond_mixed",
 "level": "C1.1",
@@ -3537,6 +3553,22 @@
 "wrong_why": {}
 },
 {
+"id": "cm-C11-5a",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a formal report about a past failure with a present effect. Choose the correct option.",
+"correct": "Had the contract been checked properly, we would not be facing these penalties now.",
+"wrong": [
+"If the contract had checked properly, we would not be facing these penalties now.",
+"Had the contract been checked properly, we wouldn't facing these penalties now.",
+"Had checked the contract properly, we would not be facing these penalties now."
+],
+"why": "Passive inversion: *Had* + object + *been* + past participle.",
+"wrong_why": {}
+},
+{
 "id": "cm-C11-6a",
 "skill": "cond_mixed",
 "level": "C1.1",
@@ -3555,6 +3587,59 @@
 ],
 "model": "Had I saved more when I was young, I would be more relaxed about money today.",
 "why": "Compare your sentence with the model answer."
+},
+{
+"id": "ca-C11-1a",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence means the same as 'If you should need any help, call me'?",
+"correct": "Should you need any help, call me.",
+"wrong": [
+"Did you need any help, call me.",
+"Would you need any help, call me.",
+"Need you any help, call me."
+],
+"why": "*Should* + subject + base verb is a formal way to say *if you should ...*",
+"wrong_why": {}
+},
+{
+"id": "ca-C11-2a",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "What does 'unless' mean in 'We'll start unless it rains'?",
+"correct": "if it does not rain",
+"wrong": [
+"if it rains",
+"because it rains",
+"although it rains"
+],
+"why": "*Unless* = *if ... not.*",
+"wrong_why": {}
+},
+{
+"id": "ca-C11-3a",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with unless: You will not get a refund if you don't have a receipt.",
+"answers": [
+[
+"You will not get a refund unless you have a receipt.",
+"Unless you have a receipt, you will not get a refund."
+]
+],
+"why": "*Unless* replaces *if ... not*, so the verb after *unless* is positive.",
+"hints": [
+[
+"unless you don't",
+"After *unless* we do not use a negative: *... unless you have a receipt.*"
+]
+]
 },
 {
 "id": "ca-C11-4a",
@@ -3589,6 +3674,38 @@
 "wrong_why": {}
 },
 {
+"id": "ca-C11-6a",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence with 'provided that' or 'as long as' to give a condition for a favour.",
+"must": [
+[
+"\\b(provided that|providing that|as long as|so long as)\\b",
+"Use *provided that* or *as long as.*"
+]
+],
+"model": "You can borrow my laptop as long as you bring it back by Friday.",
+"why": "Compare your sentence with the model answer."
+},
+{
+"id": "ca-C12-1a",
+"skill": "cond_advanced",
+"level": "C1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence expresses regret about the present?",
+"correct": "I wish I lived closer to the sea.",
+"wrong": [
+"I wish I had lived closer to the sea.",
+"I wish I will live closer to the sea.",
+"I wish I would live closer to the sea."
+],
+"why": "*wish* + past simple = regret about a present situation.",
+"wrong_why": {}
+},
+{
 "id": "ca-C12-2a",
 "skill": "cond_advanced",
 "level": "C1.2",
@@ -3605,6 +3722,27 @@
 "wrong_why": {}
 },
 {
+"id": "ca-C12-3a",
+"skill": "cond_advanced",
+"level": "C1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "I wish I ___ that email yesterday. Now everyone knows.",
+"answers": [
+[
+"hadn't sent"
+]
+],
+"why": "*wish* + past perfect = regret about the past.",
+"hints": [],
+"bank": [
+"hadn't sent",
+"didn't send",
+"wouldn't send",
+"haven't sent"
+]
+},
+{
 "id": "ca-C12-4a",
 "skill": "cond_advanced",
 "level": "C1.2",
@@ -3619,6 +3757,42 @@
 ],
 "why": "*If only* + past perfect is used for regret about the past. Not *would have.*",
 "wrong_why": {}
+},
+{
+"id": "ca-C12-5a",
+"skill": "cond_advanced",
+"level": "C1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You give a speech about a past failure. Choose the correct option.",
+"correct": "If only we had listened to the warning signs, we would not be in this position.",
+"wrong": [
+"If only we would have listened to the warning signs, we would not be in this position.",
+"If only we listened to the warning signs, we would not be in this position.",
+"If only we had listen to the warning signs, we would not be in this position."
+],
+"why": "*If only* + *had* + past participle, then *would* + base verb for the present result.",
+"wrong_why": {}
+},
+{
+"id": "ca-C12-6a",
+"skill": "cond_advanced",
+"level": "C1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence with 'I wish' or 'If only' about something you regret from last year.",
+"must": [
+[
+"\\b(i wish|if only)\\b",
+"Use *I wish* or *If only.*"
+],
+[
+"\\bhad(n't| not)?\\b",
+"For a regret about the past use the past perfect (*had / hadn't*)."
+]
+],
+"model": "I wish I had started learning Spanish last year.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "rs-B11-1a",
@@ -4222,6 +4396,22 @@
 "why": "Compare your sentence with the model answer."
 },
 {
+"id": "rv-C11-1a",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence reports 'You broke the printer!' as an accusation?",
+"correct": "She accused me of breaking the printer.",
+"wrong": [
+"She accused me to break the printer.",
+"She accused me that I broke the printer.",
+"She accused me for breaking the printer."
+],
+"why": "*accuse* + person + *of* + -ing.",
+"wrong_why": {}
+},
+{
 "id": "rv-C11-2a",
 "skill": "rep_verbs",
 "level": "C1.1",
@@ -4252,6 +4442,22 @@
 ],
 "why": "*congratulate* + person + *on* + -ing.",
 "hints": []
+},
+{
+"id": "rv-C11-4a",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "He blamed me for to lose the file.",
+"wrong": [
+"He blamed me for losing the file.",
+"He accused me of losing the file.",
+"He admitted losing the file."
+],
+"why": "*blame* + person + *for* + -ing.",
+"wrong_why": {}
 },
 {
 "id": "rv-C11-5a",
@@ -4659,6 +4865,38 @@
 "hints": []
 },
 {
+"id": "ia-C11-4a",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "We talked about how could we improve the results.",
+"wrong": [
+"We talked about how to improve the results.",
+"We talked about how we could improve the results.",
+"We talked about whether to improve the results."
+],
+"why": "No question order after *about*: *how we could improve the results.*",
+"wrong_why": {}
+},
+{
+"id": "ia-C11-5a",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a report: 'The question is ___.' Choose the correct option.",
+"correct": "whether the project is worth the cost",
+"wrong": [
+"is the project worth the cost",
+"if is the project worth the cost",
+"whether is the project worth the cost"
+],
+"why": "The question is + *whether* + subject + verb.",
+"wrong_why": {}
+},
+{
 "id": "ia-C11-6a",
 "skill": "ind_advanced",
 "level": "C1.1",
@@ -4673,6 +4911,22 @@
 ],
 "model": "The question is whether we can afford the delay.",
 "why": "Compare your sentence with the model answer."
+},
+{
+"id": "ia-C12-1a",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct word: ___ finishes first wins a prize.",
+"correct": "Whoever",
+"wrong": [
+"Whomever",
+"Whatever",
+"However"
+],
+"why": "*Whoever* is the subject of *finishes.* It means *any person who.*",
+"wrong_why": {}
 },
 {
 "id": "ia-C12-2a",
@@ -4705,6 +4959,54 @@
 ],
 "why": "*Whoever* + verb = it does not matter who.",
 "hints": []
+},
+{
+"id": "ia-C12-4a",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "Whomever wins the contract will celebrate.",
+"wrong": [
+"Whoever wins the contract will celebrate.",
+"Give it to whomever you trust.",
+"Give it to whoever wants it."
+],
+"why": "*Whoever wins*: *whoever* is the subject. In *whomever you trust*, *whomever* is the object.",
+"wrong_why": {}
+},
+{
+"id": "ia-C12-5a",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a formal report. Choose the correct option.",
+"correct": "How the funds were spent remains to be investigated.",
+"wrong": [
+"How were the funds spent remains to be investigated.",
+"How the funds were spent it remains to be investigated.",
+"How funds were the spent remains to be investigated."
+],
+"why": "An embedded question used as the subject keeps statement word order.",
+"wrong_why": {}
+},
+{
+"id": "ia-C12-6a",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence with 'whoever', 'whatever' or 'wherever' to describe a flexible rule at your workplace.",
+"must": [
+[
+"\\b(whoever|whatever|wherever|whenever|whichever|however)\\b",
+"Use *whoever, whatever, wherever* or similar."
+]
+],
+"model": "You can sit wherever you like.",
+"why": "Compare your sentence with the model answer."
 },
 {
 "id": "ps-A21-6a-r2",
@@ -5499,6 +5801,24 @@
 "hints": []
 },
 {
+"id": "cm-C11-3a-r2",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now.",
+"answers": [
+[
+"Had I listened to my accountant, I wouldn't be in this mess now.",
+"Had I listened to my accountant, I'd not be in this mess now.",
+"I wouldn't be in this mess now had I listened to my accountant.",
+"I'd not be in this mess now had I listened to my accountant."
+]
+],
+"why": "Inversion: *Had* + subject + past participle replaces *if I had* + past participle.",
+"hints": []
+},
+{
 "id": "ca-C11-4a-r2",
 "skill": "cond_advanced",
 "level": "C1.1",
@@ -5635,6 +5955,22 @@
 ],
 "why": "*deny* + -ing, or *deny* + *that* + clause.",
 "hints": []
+},
+{
+"id": "rv-C12-4a-r2",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence has a mistake?",
+"correct": "He recommended to reading the report carefully.",
+"wrong": [
+"He recommended reading the report carefully.",
+"He recommended that I read the report carefully.",
+"He advised me to read the report carefully."
+],
+"why": "Use *recommended reading* or *recommended that I read*. *Recommended to reading* is not a grammatical verb pattern.",
+"wrong_why": {}
 },
 {
 "id": "ia-C11-1a-r2",
@@ -6862,6 +7198,126 @@
 "why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
 },
 {
+"id": "cm-C11-1a-r5",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now.",
+"correct": "Had I taken that job, I would be rich now.",
+"wrong": [
+"Had I taken that job, I would have been rich then.",
+"Had I not taken that job, I would be rich now.",
+"Were I rich now, I would have taken that job."
+],
+"why": "The past decision has a result now: *Had I taken* + *I would be rich now*. The other options change the time or reverse the situation.",
+"wrong_why": {},
+"why_lv": "Pagātnes lēmumam ir sekas tagad: *Had I taken* + *I would be rich now*. Pārējie varianti maina laiku vai apgriež situāciju."
+},
+{
+"id": "cm-C11-4a-r2",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "Hadn't I moved here, I'd be in Riga now.",
+"wrong": [
+"Had she known, she would have stayed.",
+"Had I taken that job, I would be rich now.",
+"Were I braver, I would have said no."
+],
+"why": "Negative inversion is *Had I not ...*, not *Hadn't I ...*",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
+"id": "cm-C11-6a-r2",
+"skill": "cond_mixed",
+"level": "C1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*.",
+"must": [
+[
+"^\\s*had i\\b",
+"Start with *Had I.*"
+],
+[
+"\\b(would|wouldn't|'d)\\b",
+"Use *would* in the second part."
+]
+],
+"model": "Had I saved more when I was young, I would be more relaxed about money today.",
+"why": "Compare your sentence with the model answer."
+},
+{
+"id": "ca-C11-4a-r4",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
+"correct": "Unless you hurry, we will miss the flight.",
+"wrong": [
+"If you hurry, we will miss the flight.",
+"Unless you hurry, we will catch the flight.",
+"We will catch the flight unless you hurry."
+],
+"why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.",
+"wrong_why": {}
+},
+{
+"id": "ca-C11-5a-r2",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Choose the most formal option.",
+"correct": "Should you need more details, contact us.",
+"wrong": [
+"If you want more info, just give us a ring.",
+"If you need any more information, call us.",
+"Call us if you need more info about it."
+],
+"why": "*Should* + subject + verb is formal and common in business letters.",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
+"id": "ca-C12-2a-r2",
+"skill": "cond_advanced",
+"level": "C1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "I wish you ___ clicking your pen. It's driving me mad.",
+"correct": "would stop",
+"wrong": [
+"will stop",
+"would stopping",
+"to stop"
+],
+"why": "*wish* + *would* + base form: something someone keeps doing that annoys us.",
+"wrong_why": {}
+},
+{
+"id": "ca-C12-4a-r2",
+"skill": "cond_advanced",
+"level": "C1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence has a mistake?",
+"correct": "If only I would have saved more money.",
+"wrong": [
+"I wish I had saved more when I was young.",
+"If only I earned a bit more money now.",
+"If only you had told me about it earlier."
+],
+"why": "*If only* + past perfect is used for regret about the past. Not *would have.*",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
 "id": "rs-B11-1a-r3",
 "skill": "rep_statements",
 "level": "B1.1",
@@ -7043,6 +7499,92 @@
 "why": "A reporting verb shows what the speaker did: *promise, warn, suggest, admit.*"
 },
 {
+"id": "rv-C11-2a-r2",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "What is the difference? A: 'He insisted on paying.' B: 'He offered to pay.'",
+"correct": "A: he wouldn't let others pay. B: an offer.",
+"wrong": [
+"A: a polite offer. B: a strong demand.",
+"A and B mean exactly the same thing.",
+"A is about the past, B the future."
+],
+"why": "*insist on* = refuse to accept a different decision. *offer* = suggest you will do something.",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
+"id": "rv-C11-3a-r3",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam.",
+"answers": [
+[
+"on"
+]
+],
+"why": "*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*",
+"hints": [],
+"bank": [
+"on",
+"about",
+"at",
+"with"
+]
+},
+{
+"id": "rv-C11-5a-r2",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.'",
+"correct": "The manager apologised for the delay and promised that it would not happen again.",
+"wrong": [
+"The manager apologised the delay and promised that it would not happen again.",
+"The manager apologised for the delay and promised to that it would not happen again.",
+"The manager apologised for the delay and promised it not happening again."
+],
+"why": "A reporting verb says what the speaker did. *apologise for* + noun, *promise* + *that* + clause.",
+"wrong_why": {}
+},
+{
+"id": "rv-C11-6a-r4",
+"skill": "rep_verbs",
+"level": "C1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!'",
+"must": [
+[
+"\\b(denied|insisted|claimed|protested)\\b",
+"Use a reporting verb such as *denied* or *insisted.*"
+]
+],
+"model": "Leo denied breaking it.",
+"why": "Compare your sentence with the model answer."
+},
+{
+"id": "rv-C12-1a-r2",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
+"correct": "She advised me to take the earlier train.",
+"wrong": [
+"She suggested me to take the earlier train.",
+"She insisted me to take the earlier train.",
+"She advised to me take the earlier train."
+],
+"why": "*advise* + person + *to* + base verb.",
+"wrong_why": {}
+},
+{
 "id": "rv-C12-2a-r2",
 "skill": "rep_verbs",
 "level": "C1.2",
@@ -7057,6 +7599,41 @@
 ],
 "why": "*refuse (to* + base verb*)* means to say no.",
 "wrong_why": {}
+},
+{
+"id": "rv-C12-3a-r4",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'",
+"answers": [
+[
+"My sister advised me to see a doctor about that cough.",
+"My sister urged me to see a doctor about that cough.",
+"My sister told me to see a doctor about that cough.",
+"My sister encouraged me to see a doctor about that cough.",
+"My sister recommended that I see a doctor about that cough.",
+"My sister recommended that I should see a doctor about that cough.",
+"My sister suggested that I see a doctor about that cough.",
+"My sister suggested that I should see a doctor about that cough.",
+"My sister suggested seeing a doctor about that cough.",
+"My sister suggested I see a doctor about that cough.",
+"My sister suggested I should see a doctor about that cough.",
+"My sister recommended seeing a doctor about that cough.",
+"My sister recommended I see a doctor about that cough.",
+"My sister recommended I should see a doctor about that cough.",
+"My sister advised seeing a doctor about that cough.",
+"My sister advised that I see a doctor about that cough.",
+"My sister advised that I should see a doctor about that cough.",
+"My sister said I should see a doctor about that cough.",
+"My sister said that I should see a doctor about that cough.",
+"My sister told me I should see a doctor about that cough.",
+"My sister told me that I should see a doctor about that cough."
+]
+],
+"why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
+"hints": []
 },
 {
 "id": "rv-C12-5a-r2",
@@ -7074,6 +7651,158 @@
 "why": "*complain* + *that* + clause. The past goes back to the past perfect.",
 "wrong_why": {},
 "wrong_why_lv": {}
+},
+{
+"id": "rv-C12-6a-r4",
+"skill": "rep_verbs",
+"level": "C1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Say what Mia did, in one sentence, without her words in quotes. Mia said to the team: 'Thank you for everything you've done.'",
+"must": [
+[
+"\\b(thanked|expressed)\\b",
+"Use *thanked* (or *expressed thanks*)."
+]
+],
+"model": "Mia thanked the team for everything they had done.",
+"why": "Compare your sentence with the model answer."
+},
+{
+"id": "ia-C11-1a-r3",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct option: ___ remains unclear.",
+"correct": "Whether he will attend",
+"wrong": [
+"Will he attend",
+"Whether will he attend",
+"That will he attend"
+],
+"why": "A question inside a sentence has the order of a statement: *Whether he will attend* remains unclear.",
+"wrong_why": {},
+"why_lv": "Jautājumam teikuma iekšienē ir apgalvojuma vārdu secība: *Whether he will attend* remains unclear.",
+"wrong_why_lv": {}
+},
+{
+"id": "ia-C11-2a-r4",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "The decision depends on ___ the budget is approved.",
+"correct": "whether",
+"wrong": [
+"if",
+"that",
+"unless"
+],
+"why": "After *on*, use *whether*: *depends on whether the budget is approved*.",
+"wrong_why": {},
+"wrong_why_lv": {},
+"why_lv": "Pēc *on* lieto *whether*: *depends on whether the budget is approved*."
+},
+{
+"id": "ia-C11-3a-r6",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+"answers": [
+[
+"It's not clear who made the decision.",
+"It is not clear who made the decision.",
+"Who made the decision is not clear.",
+"It's unclear who made the decision.",
+"It is unclear who made the decision."
+]
+],
+"why": "Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.",
+"hints": []
+},
+{
+"id": "ia-C11-6a-r2",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
+"must": [
+[
+"^\\s*the question is (whether|how|why|what|who|where|when)\\b",
+"Start with *The question is* + a question word."
+]
+],
+"model": "The question is whether we can afford the delay.",
+"why": "Compare your sentence with the model answer."
+},
+{
+"id": "ia-C12-2a-r2",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "'Whatever he says, don't sign it.' What does 'whatever' mean here?",
+"correct": "it does not matter what he says",
+"wrong": [
+"he says everything he thinks",
+"it matters a lot what he says",
+"he never says what he means"
+],
+"why": "*whatever / whoever / wherever* + clause: it does not matter what / who / where.",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
+"id": "ia-C12-3a-r3",
+"skill": "ind_advanced",
+"level": "C1.2",
+"bloom": 3,
+"kind": "text",
+"q": "Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+"answers": [
+[
+"Whoever calls, don't answer.",
+"Whoever calls, do not answer."
+]
+],
+"why": "*Whoever* + verb = it does not matter who.",
+"hints": []
+},
+{
+"id": "var-ca-c11-order-01-r3",
+"skill": "cond_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "order",
+"q": "Put the words in order. Start with *Had I*.",
+"why": "*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.",
+"sentence": "had I known about the delay I would have called you",
+"answers": [
+[
+"had I known about the delay I would have called you"
+]
+],
+"display_answer": "Had I known about the delay, I would have called you."
+},
+{
+"id": "var-ia-c11-order-01-r2",
+"skill": "ind_advanced",
+"level": "C1.1",
+"bloom": 3,
+"kind": "order",
+"q": "Put the words in order. Start with *Whether*.",
+"why": "*Whether the plan will work* is the subject of *remains uncertain*. The embedded question uses statement word order.",
+"sentence": "whether the plan will work remains uncertain",
+"answers": [
+[
+"whether the plan will work remains uncertain"
+]
+],
+"display_answer": "Whether the plan will work remains uncertain."
 },
 {
 "id": "var-psp-a22-bank-01-r2",

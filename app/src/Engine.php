@@ -4,7 +4,7 @@
 final class Engine
 {
     public const PLACEMENT_LEN = 24;
-    private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
+    private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2'];
     public const PLACEMENT_SIZES = [12, 24, 40];
     /** Share of each question type in a practice session, per 10: 3 choose, 4 drag (order, word bank, matching), 2 type a word or words, 1 type the whole sentence. Open writing is rare on purpose. */
     /** Topics with the mistakes Latvian adults make most (he work, no article, I have seen yesterday, What you want?, in Monday, listen music, will after when, if I would, must to ...). */
@@ -115,6 +115,7 @@ final class Engine
             $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
             // start at the level the learner gave (teacher, 6 November: tasks far too easy or too hard lower engagement); "I don't know": the first level
             $sl = (string) Db::val('SELECT self_level FROM users WHERE id = ?', [$uid]);
+            if ($sl === 'C1') $sl = end($ladder);   // the app has no C1 any more: the top level (teacher, 12 November, U3 A)
             $startLv = in_array($sl, $ladder, true) ? $sl : $ladder[0];
             $state['pl'] = ['ladder' => $ladder, 'start' => $startLv, 'down' => false, 'lv' => $startLv, 'n' => 0, 'c' => 0, 'nn' => 0, 'cc' => 0, 'bn' => 0, 'done' => false, 'passed' => [], 'long' => $len >= 40, 'strict' => $len <= 12];   // the full test asks two blocks at the first level, so A2 and B1 can be told apart
         }
@@ -923,6 +924,17 @@ final class Engine
                 $lvl = Content::FULL_LEVELS[$c['low']];
                 $gaps[] = ['id' => $c['id'], 'label' => Content::skill($c['id'])['label'], 'level' => $lvl,
                     'why' => $c['miss'] === $c['n'] ? "Missed {$c['miss']} " . ($c['miss'] === 1 ? 'question' : 'questions') : "Missed {$c['miss']} of {$c['n']} questions"];
+            }
+            // the first training starts with the learner's own mistake in the test (teacher, 12 November, S4 A): the task, what they wrote, the right answer, why
+            if ($gaps) {
+                $w = Db::one('SELECT item_id, answer FROM attempts WHERE psession_id = ? AND skill = ? AND correct = 0 ORDER BY id DESC LIMIT 1', [$ses['id'], $gaps[0]['id']]);
+                $wit = $w ? Content::item((string) $w['item_id']) : null;
+                if ($wit) {
+                    $given = json_decode((string) $w['answer'], true);
+                    $given = is_array($given) ? implode($wit['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $given)) : (string) ($given ?? $w['answer']);
+                    $g = Grader::grade($wit, json_decode((string) $w['answer'], true) ?? $w['answer']);
+                    $out['first_mistake'] = ['q' => $wit['q'], 'given' => $given, 'show' => $g['show'], 'why' => $wit['why'] ?? '', 'why_lv' => $wit['why_lv'] ?? null];
+                }
             }
             // what the learner already knows (teacher, 12 November, S3 A): topics with every answer right, highest level first
             $strong = [];

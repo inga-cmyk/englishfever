@@ -6034,9 +6034,9 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "cm-C11-1a-r5",
+"id": "cm-C11-1a-r6",
 "skill": "cond_mixed",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now.",
@@ -6051,9 +6051,9 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pagātnes lēmumam ir sekas tagad: *Had I taken* + *I would be rich now*. Pārējie varianti maina laiku vai apgriež situāciju."
 },
 {
-"id": "cm-C11-2a",
+"id": "cm-C11-2a-r2",
 "skill": "cond_mixed",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace?",
@@ -6067,9 +6067,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "cm-C11-3a-r2",
+"id": "cm-C11-3a-r3",
 "skill": "cond_mixed",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 3,
 "kind": "text",
 "q": "Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now.",
@@ -6085,9 +6085,9 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "cm-C11-4a-r2",
+"id": "cm-C11-4a-r3",
 "skill": "cond_mixed",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
@@ -6102,9 +6102,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cm-C11-5a",
+"id": "cm-C11-5a-r2",
 "skill": "cond_mixed",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "You write a formal report about a past failure with a present effect. Choose the correct option.",
@@ -6118,9 +6118,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "cm-C11-6a-r2",
+"id": "cm-C11-6a-r3",
 "skill": "cond_mixed",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*.",
@@ -6138,9 +6138,9 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ca-C11-1a",
+"id": "ca-C11-1a-r2",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Which sentence means the same as 'If you should need any help, call me'?",
@@ -6154,9 +6154,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ca-C11-2a",
+"id": "ca-C11-2a-r2",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "What does 'unless' mean in 'We'll start unless it rains'?",
@@ -6170,9 +6170,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ca-C11-3a",
+"id": "ca-C11-3a-r2",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 3,
 "kind": "text",
 "q": "Rewrite with unless: You will not get a refund if you don't have a receipt.",
@@ -6191,9 +6191,9 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "ca-C11-4a-r4",
+"id": "ca-C11-4a-r5",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
@@ -6207,9 +6207,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ca-C11-5a-r2",
+"id": "ca-C11-5a-r3",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "Choose the most formal option.",
@@ -6224,9 +6224,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ca-C11-6a",
+"id": "ca-C11-6a-r2",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Write a sentence with 'provided that' or 'as long as' to give a condition for a favour.",
@@ -6240,9 +6240,9 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ca-C12-1a",
+"id": "ca-C12-1a-r2",
 "skill": "cond_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Which sentence expresses regret about the present?",
@@ -6256,9 +6256,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ca-C12-2a-r2",
+"id": "ca-C12-2a-r3",
 "skill": "cond_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "I wish you ___ clicking your pen. It's driving me mad.",
@@ -6272,9 +6272,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ca-C12-3a",
+"id": "ca-C12-3a-r2",
 "skill": "cond_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 3,
 "kind": "gap",
 "q": "I wish I ___ that email yesterday. Now everyone knows.",
@@ -6293,9 +6293,9 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "ca-C12-4a-r2",
+"id": "ca-C12-4a-r3",
 "skill": "cond_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence has a mistake?",
@@ -6310,9 +6310,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ca-C12-5a",
+"id": "ca-C12-5a-r2",
 "skill": "cond_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "You give a speech about a past failure. Choose the correct option.",
@@ -6326,9 +6326,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ca-C12-6a",
+"id": "ca-C12-6a-r2",
 "skill": "cond_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Write a sentence with 'I wish' or 'If only' about something you regret from last year.",
@@ -7234,9 +7234,9 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*apologise for* + *-ing*: *apologised for forgetting the meeting*."
 },
 {
-"id": "rv-C11-1a",
+"id": "rv-C11-1a-r2",
 "skill": "rep_verbs",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Which sentence reports 'You broke the printer!' as an accusation?",
@@ -7250,9 +7250,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C11-2a-r2",
+"id": "rv-C11-2a-r3",
 "skill": "rep_verbs",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "What is the difference? A: 'He insisted on paying.' B: 'He offered to pay.'",
@@ -7267,9 +7267,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rv-C11-3a-r3",
+"id": "rv-C11-3a-r4",
 "skill": "rep_verbs",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 3,
 "kind": "gap",
 "q": "'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam.",
@@ -7288,9 +7288,9 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "rv-C11-4a",
+"id": "rv-C11-4a-r2",
 "skill": "rep_verbs",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
@@ -7304,9 +7304,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C11-5a-r2",
+"id": "rv-C11-5a-r3",
 "skill": "rep_verbs",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.'",
@@ -7320,9 +7320,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C11-6a-r4",
+"id": "rv-C11-6a-r5",
 "skill": "rep_verbs",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!'",
@@ -7336,9 +7336,9 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rv-C12-1a-r2",
+"id": "rv-C12-1a-r3",
 "skill": "rep_verbs",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
@@ -7352,9 +7352,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-2a-r3",
+"id": "rv-C12-2a-r4",
 "skill": "rep_verbs",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did?",
@@ -7368,9 +7368,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r4",
+"id": "rv-C12-3a-r5",
 "skill": "rep_verbs",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 3,
 "kind": "text",
 "q": "Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'",
@@ -7403,9 +7403,9 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "rv-C12-4a-r2",
+"id": "rv-C12-4a-r3",
 "skill": "rep_verbs",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence has a mistake?",
@@ -7419,9 +7419,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-5a-r3",
+"id": "rv-C12-5a-r4",
 "skill": "rep_verbs",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "Which sentence reports the customer's words in formal English: 'The service was terrible.'",
@@ -7436,9 +7436,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rv-C12-6a-r4",
+"id": "rv-C12-6a-r5",
 "skill": "rep_verbs",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Say what Mia did, in one sentence, without her words in quotes. Mia said to the team: 'Thank you for everything you've done.'",
@@ -7998,9 +7998,9 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ia-C11-1a-r3",
+"id": "ia-C11-1a-r4",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Choose the correct option: ___ remains unclear.",
@@ -8016,9 +8016,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ia-C11-2a-r4",
+"id": "ia-C11-2a-r5",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "The decision depends on ___ the budget is approved.",
@@ -8034,9 +8034,9 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *on* lieto *whether*: *depends on whether the budget is approved*."
 },
 {
-"id": "ia-C11-3a-r6",
+"id": "ia-C11-3a-r7",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 3,
 "kind": "text",
 "q": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
@@ -8053,9 +8053,9 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "ia-C11-4a",
+"id": "ia-C11-4a-r2",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
@@ -8069,9 +8069,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C11-5a",
+"id": "ia-C11-5a-r2",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "You write a report: 'The question is ___.' Choose the correct option.",
@@ -8085,9 +8085,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C11-6a-r2",
+"id": "ia-C11-6a-r3",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
@@ -8101,9 +8101,9 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ia-C12-1a",
+"id": "ia-C12-1a-r2",
 "skill": "ind_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Choose the correct word: ___ finishes first wins a prize.",
@@ -8117,9 +8117,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C12-2a-r2",
+"id": "ia-C12-2a-r3",
 "skill": "ind_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "'Whatever he says, don't sign it.' What does 'whatever' mean here?",
@@ -8134,9 +8134,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ia-C12-3a-r3",
+"id": "ia-C12-3a-r4",
 "skill": "ind_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 3,
 "kind": "text",
 "q": "Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
@@ -8150,9 +8150,9 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "ia-C12-4a",
+"id": "ia-C12-4a-r2",
 "skill": "ind_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
@@ -8166,9 +8166,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C12-5a",
+"id": "ia-C12-5a-r2",
 "skill": "ind_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
 "q": "You write a formal report. Choose the correct option.",
@@ -8182,9 +8182,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C12-6a",
+"id": "ia-C12-6a-r2",
 "skill": "ind_advanced",
-"level": "C1.2",
+"level": "B2.2",
 "bloom": 6,
 "kind": "write",
 "q": "Write a sentence with 'whoever', 'whatever' or 'wherever' to describe a flexible rule at your workplace.",
@@ -8503,9 +8503,9 @@ return json_decode(<<<'EF_JSON_END'
 "display_answer": "If I had studied medicine, I would be a doctor now."
 },
 {
-"id": "var-ca-c11-order-01-r3",
+"id": "var-ca-c11-order-01-r4",
 "skill": "cond_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 3,
 "kind": "order",
 "q": "Put the words in order. Start with *Had I*.",
@@ -8516,8 +8516,7 @@ return json_decode(<<<'EF_JSON_END'
 "had I known about the delay I would have called you"
 ]
 ],
-"display_answer": "Had I known about the delay, I would have called you.",
-"practice_only": true
+"display_answer": "Had I known about the delay, I would have called you."
 },
 {
 "id": "var-rs-b11-order-01-r2",
@@ -8587,9 +8586,9 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešā jautājuma daļā teikuma priekšmets ir pirms darbības vārda: *where the bank is*."
 },
 {
-"id": "var-ia-c11-order-01-r2",
+"id": "var-ia-c11-order-01-r3",
 "skill": "ind_advanced",
-"level": "C1.1",
+"level": "B2.2",
 "bloom": 3,
 "kind": "order",
 "q": "Put the words in order. Start with *Whether*.",

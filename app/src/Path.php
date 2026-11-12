@@ -106,21 +106,13 @@ final class Path
         ['b2_rep', 'Reported questions, indirect questions', 'B2', ['rep_questions', 'ind_advanced']],
         ['b2_cmp', 'Modifying comparatives', 'B2', ['comparison']],
         ['b2_conj', 'Contrast, purpose, reason and result', 'B2', ['conj_b2', 'conj_clauses']],
-        // C1: the C1 list
-        ['c1_pspc', 'Advanced present simple and continuous', 'C1', ['present_simple', 'present_continuous']],
-        ['c1_past', 'Advanced past tenses', 'C1', ['past_simple', 'past_continuous', 'past_perfect']],
-        ['c1_perf', 'The perfect tenses', 'C1', ['present_perfect', 'present_perfect_continuous', 'past_perfect']],
-        ['c1_mod', 'Advanced modal verbs', 'C1', ['modal_verbs', 'more_modals']],
-        ['c1_agr', 'Subject-verb agreement', 'C1', ['agreement']],
-        ['c1_ca', 'Conditionals, inversion, wish', 'C1', ['cond_advanced', 'cond_mixed']],
-        ['c1_unreal', 'Unreal time and preferences', 'C1', ['unreal_time']],   // it's high time, I'd rather (teacher, 4 November)
-        ['c1_rv', 'Reporting verbs, indirect questions', 'C1', ['rep_verbs', 'ind_advanced']],
+        ['b2_unreal', 'Unreal time and preferences', 'B2', ['unreal_time']],   // it's high time, I'd rather; the C1 list is gone: its tasks are B2.2 (teacher, 12 November, U3 A)
     ];
     /** the task levels of each band; a step's level for the "below the placement level" check is the first two letters */
     private const BANDS = ['A2.1' => ['A2.1'], 'A2.2' => ['A2.2'], 'B1' => ['B1.1', 'B1.2'], 'B1+' => ['B1.2', 'B2.1'],
-                           'B2' => ['B2.1', 'B2.2'], 'C1' => ['C1.1', 'C1.2']];
-    private const HALVES = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
-    private const LEVELS = ['A2', 'B1', 'B2', 'C1'];
+                           'B2' => ['B2.1', 'B2.2']];
+    private const HALVES = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2'];
+    private const LEVELS = ['A2', 'B1', 'B2'];
     private const FRESH_DAYS = 21;   // a mastered topic asks for a refresh after three weeks without practice
 
     /** The topics of a full level (A2, B1, B2, C1) in the order of My learning path: the level test asks them in this order (teacher, 3 November). */
@@ -361,7 +353,7 @@ final class Path
             if ($age >= 2 && $age <= 7) $add([$sv['skill']], [$sv['level']]);
         }
         if ($curPos !== false) foreach (array_reverse(array_slice($path['steps'], 0, (int) $curPos)) as $x) if ($x['answers'] > 0) $add($x['topics'], $x['levels']);   // practised before
-        $halves = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2', 'C1.1', 'C1.2'];
+        $halves = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2'];
         $top = max(array_map(fn($l) => (int) array_search($l, $halves, true), $levels ?: ['A2.1']));
         $up = $halves[$top + 1] ?? null;
         $stretch = $up ? array_values(array_filter($skills, fn($t) => !empty($byHalf[$t][$up]))) : [];

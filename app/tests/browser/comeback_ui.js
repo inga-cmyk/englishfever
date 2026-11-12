@@ -55,7 +55,7 @@ const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   check('the summary praises with the number of fixed mistakes', h1.includes('Great job! ' + fixedLines + (fixedLines === 1 ? ' mistake fixed.' : ' mistakes fixed.')), h1);
   const body = await page.locator('body').innerText();
   check('the summary ends with one line: today and next time', body.includes('Today: ' + fixedLines + (fixedLines === 1 ? ' mistake fixed' : ' mistakes fixed')), body.slice(0, 300));
-  check('5 mistakes: 2 optional bonus questions are offered', /Bonus: 2 questions/.test(body) && (await page.locator('button:has-text("Enough for today")').count()) === 1, body.slice(0, 400));
+  check('all 5 fixed: the bonus offers the 1 task that can really be served (12 November)', /Bonus: 1 question\b/.test(body) && (await page.locator('button:has-text("Enough for today")').count()) === 1, body.slice(0, 400));
   await page.screenshot({ path: OUT + 'comeback-summary.png', fullPage: true });
   await page.click('button:has-text("Try it")'); await page.waitForSelector('.task .q');
   check('the bonus is labelled with double XP', /Bonus · double XP/.test(await page.locator('.sess-top').innerText()), await page.locator('.sess-top').innerText());

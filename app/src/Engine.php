@@ -682,15 +682,14 @@ final class Engine
     }
 
     /**
-     * The learner chose the bonus after Second Chance: the same session goes on with 1 or 2 more questions (double XP).
-     * A mistake missed again in the session: a new sentence for that mistake. All fixed: one task of similar difficulty on the same topics.
+     * The bonus tasks a finished Second Chance can really offer: task id => the mistake it stands for. Empty when no new task is
+     * left for these mistakes (12 November: the summary offered a bonus that then said "No bonus questions here").
      */
-    public static function bonus(int $uid, int $sid): array
+    private static function bonusPlan(int $uid, array $ses): array
     {
-        $ses = self::load($uid, $sid);
+        $st = $ses['state'];
         $k = self::bonusCount($ses);
-        if ($ses['ended_at'] === null || $k < 1 || (int) $ses['ended_at'] < time() - 3600) throw new ApiError('No bonus questions here.', 409);
-        $st = &$ses['state'];
+        if ($k < 1) return [];
         $skip = array_flip($st['served']) + array_fill_keys(array_keys(Mistakes::scan($uid)['open']), true);
         $mistakes = array_values(array_filter($st['queue'], fn($q) => empty($st['queue_extra'][$q]) && empty($st['review'][$q])));
         $missed = array_values(array_filter($mistakes, fn($q) => !empty($st['refail'][$q])));
@@ -702,8 +701,23 @@ final class Engine
             if (!$isMissed && $add) break;   // all fixed: one task of similar difficulty is enough
             $t = Mistakes::twin($uid, $mid, $skip, !$isMissed);
             if (!$t) continue;
-            $skip[$t['id']] = true; $add[] = $t['id']; $st['queue_extra'][$t['id']] = $mid;
+            $skip[$t['id']] = true; $add[$t['id']] = $mid;
         }
+        return $add;
+    }
+
+    /**
+     * The learner chose the bonus after Second Chance: the same session goes on with 1 or 2 more questions (double XP).
+     * A mistake missed again in the session: a new sentence for that mistake. All fixed: one task of similar difficulty on the same topics.
+     */
+    public static function bonus(int $uid, int $sid): array
+    {
+        $ses = self::load($uid, $sid);
+        if ($ses['ended_at'] === null || (int) $ses['ended_at'] < time() - 3600) throw new ApiError('No bonus questions here.', 409);
+        $st = &$ses['state'];
+        $add = self::bonusPlan($uid, $ses);
+        foreach ($add as $tid => $mid) $st['queue_extra'][$tid] = $mid;
+        $add = array_keys($add);
         if (!$add) throw new ApiError('No bonus questions here.', 409);
         $st['bonus_from'] = count($st['served']);
         $st['queue'] = array_merge(array_slice($st['queue'], 0, count($st['served'])), $add);
@@ -858,7 +872,7 @@ final class Engine
             $out['open_after'] = count($m['open']);
             $out['review_due'] = count(Mistakes::reviewDue((int) $ses['user_id'], $m));
             $out['fixed_total'] = $m['fixed'];
-            $out['bonus'] = self::bonusCount($ses);
+            $out['bonus'] = ($ses['ended_at'] !== null && !isset($ses['state']['bonus_from'])) ? count(self::bonusPlan((int) $ses['user_id'], $ses)) : 0;   // only what can really be served
             $out['locked'] = (int) ($ses['state']['locked'] ?? 0);   // fixed earlier and still right a few days later
             $out['bonus_done'] = isset($ses['state']['bonus_from']);
             $q = Mistakes::queue((int) $ses['user_id'], 1);   // what comes next time: the topic of the oldest open mistake

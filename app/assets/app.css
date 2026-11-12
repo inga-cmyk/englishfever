@@ -1015,3 +1015,7 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .q, .q-sample { white-space: pre-line; }
 
 .task .blank:disabled { opacity: 1; color: var(--text); -webkit-text-fill-color: var(--text); }
+/* placement result: what you already know, where we start (teacher, 12 November, S3 A) */
+.knowlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.knowlist li { display: flex; align-items: center; gap: 4px; color: var(--text); }
+.knowlist li svg { color: var(--good, #2bb673); width: 18px; height: 18px; }

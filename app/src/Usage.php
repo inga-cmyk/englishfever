@@ -27,6 +27,7 @@ final class Usage
         'self_level' => 'Said their own level on the first visit',
         'welcome' => 'Saw a welcome-back message (which situation and text)',
         'welcome_ok' => 'Closed the welcome-back message with its button',
+        'first_step' => 'Started the first training from the level test result (the topic missed)',
     ];
     private const DAY_CAP = 2000;   // per learner per day: a page that loops cannot fill the table
 

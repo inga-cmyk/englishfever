@@ -350,5 +350,13 @@
  {
   "what": "A one-key typo in a word copied from the task marked a correct sentence wrong (report of 12 November)",
   "reader": "'wheh I finish the report, I'll call you.' The grader now accepts a neighbouring-key slip in a copied word (not in a last letter that can be an ending); tested in correct_part_test.php."
+ },
+ {
+  "what": "The instruction contains the answer (report of 12 November)",
+  "reader": "'Complete with will have to: Tomorrow we ___ leave early.' The learner copies the words. Give the verb in brackets and a situation (Our train is at 5 a.m., so tomorrow we ___ leave very early. (have to))."
+ },
+ {
+  "what": "An open gap with nothing that points to the answer (report of 12 November)",
+  "reader": "'Children ___ to enter without an adult.' (aren't allowed): want, need, have, are not able all fit or nearly fit. Give the situation (The sign says…) and a word bank with real forms that do not fit."
  }
 ]

@@ -924,6 +924,13 @@ final class Engine
                 $gaps[] = ['id' => $c['id'], 'label' => Content::skill($c['id'])['label'], 'level' => $lvl,
                     'why' => $c['miss'] === $c['n'] ? "Missed {$c['miss']} " . ($c['miss'] === 1 ? 'question' : 'questions') : "Missed {$c['miss']} of {$c['n']} questions"];
             }
+            // what the learner already knows (teacher, 12 November, S3 A): topics with every answer right, highest level first
+            $strong = [];
+            foreach ($by as $sid => $g) if (empty($g['miss']) && ($g['n'] ?? 0) >= 1) $strong[] = $sid;
+            $hi = [];
+            foreach ($rows as $r) if ((int) $r['correct']) $hi[$r['skill']] = max($hi[$r['skill']] ?? 0, $fullIdx[substr($r['level'], 0, 2)] ?? 0);
+            usort($strong, fn($a, $b) => ($hi[$b] ?? 0) <=> ($hi[$a] ?? 0));
+            $out['strong'] = array_map(fn($sid) => ['id' => $sid, 'label' => Content::skill($sid)['label'], 'level' => Content::FULL_LEVELS[$hi[$sid] ?? 0]], array_slice($strong, 0, 3));
             // how each level went, and how sure the result is
             $ladder = [];
             foreach ($rows as $r) {

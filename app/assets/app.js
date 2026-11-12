@@ -292,8 +292,7 @@
       guestBox.hidden = false; track('page', 'welcome_guest');
       guestBox.scrollIntoView({ behavior: 'smooth', block: 'center' }); setTimeout(function () { nick.focus(); }, 350);
     }
-    function startBtn(label) {   // the main way in: a free account when englishfever.com accounts exist, else straight in as a guest
-      if (cfg.register_url) return registerLink('btn lp-btn', label + ' →');
+    function startBtn(label) {   // the main way in: straight in as a guest, the account is the second way (teacher, 12 November, S9 A)
       return h('button', { type: 'button', class: 'btn lp-btn', onclick: openGuest }, label + ' →');
     }
     var loginBtn = cfg.sso ? h('a', { class: 'lp-login', href: cfg.wp_login_url }, 'Log in') : null;
@@ -314,7 +313,7 @@
       sv('circle', { cx: '60', cy: '44', r: '5', fill: 'currentColor' }), sv('circle', { cx: '300', cy: '38', r: '5', fill: 'currentColor' }), sv('circle', { cx: '545', cy: '18', r: '5', fill: 'currentColor' })]));
     var stairs = h('div', { class: 'lp-stairs' }, sv('svg', { viewBox: '0 0 260 70', 'aria-hidden': 'true' }, [
       sv('path', { d: 'M2 68H40V56H75V44H110V32H150V20H190V6H245V18', fill: 'none', stroke: 'currentColor', 'stroke-width': '2' })]));
-    var guestLink = h('button', { type: 'button', class: 'lp-link', onclick: openGuest }, 'Try it as a guest');
+    var guestLink = cfg.register_url ? registerLink('lp-link', 'Or create a free account') : null;
 
     show(h('div', { class: 'lp' },
       h('div', { class: 'lp-top' }, h('span', { class: 'lp-brand' }, 'englishfever'), cfg.beta ? h('span', { class: 'lp-beta' }, 'Beta') : null, h('span', { class: 'spacer' }), loginBtn),
@@ -1180,7 +1179,7 @@
       var levelRow = h('div', { class: 'seg lvseg', role: 'group', 'aria-label': 'Level' }, FULL.filter(function (l) { return (COUNT[l] || 0) > 0; }).map(function (l) {   // only the levels that have questions (A2 to C1 now)
         var has = (COUNT[l] || 0) > 0;
         var inp = h('input', { type: 'checkbox', value: l, checked: !!levels[l], disabled: !has, onchange: function () { levels[l] = inp.checked; redraw(); } });
-        return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, l));
+        return h('label', { class: has ? '' : 'off', title: has ? LEVEL_NAMES[l] : LEVEL_NAMES[l] + ': coming soon' }, inp, h('span', null, lv(l)));
       }));
       holder.replaceChildren(
         h('div', { class: 'picker-group' }, levelRow),
@@ -1913,12 +1912,19 @@
     nodes.push(h('div', { class: 'card focus hero-card', style: 'margin-bottom:16px' },
       h('div', { class: 'hero-cheer' }, fresh ? 'Placement test finished' : 'Placement result'),
       h('div', { class: 'lvbig' }, lv(s.overall_level), h('small', null, 'your level')),
-      (s.ladder && s.ladder.length) ? h('div', { class: 'ladder' }, s.ladder.map(function (l) { return h('span', { class: l.level === found ? 'on' : '' }, l.level, h('b', null, l.correct + '/' + l.n)); })) : null,
-      h('a', { class: 'btn', href: '#/practice', style: 'margin-top:4px' }, 'Start practising', icon('arrow')),
+      (s.ladder && s.ladder.length) ? h('div', { class: 'ladder' }, s.ladder.map(function (l) { return h('span', { class: l.level === found ? 'on' : '' }, lv(l.level), h('b', null, l.correct + '/' + l.n)); })) : null,
+      firstStep(s, fresh),
       h('div', { class: 'hero-stats' }, h('span', null, icon('check'), h('b', null, s.correct + ' / ' + s.n), ' correct')),
       (s.sure === 'rough' && s.n < 20) ? h('p', { class: 'small muted' }, 'A short test gives a rough level. The Full test is more exact.') : h('p', { class: 'small muted' }, 'A guide, not an exam grade.'),
       s.overall_level === 'C1.2' ? h('p', { class: 'small muted' }, 'This is the top level in the app.') : null,
       (s.overall_level === 'A2.1' && !s.basics) ? h('p', { class: 'small muted' }, 'A2 is the first level here. Ask your teacher about easier material.') : null));
+    // what the learner already knows, and where we start (teacher, 12 November, S3 A)
+    var strong = s.strong || [], start = (s.gaps || []).slice(0, 2);
+    if (strong.length || start.length) nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
+      strong.length ? h('div', null, h('h2', { style: 'margin:0 0 6px' }, 'You already know'),
+        h('ul', { class: 'knowlist' }, strong.map(function (t) { return h('li', null, icon('check'), ' ', t.label, h('span', { class: 'small muted' }, ' · ' + lv(t.level))); }))) : null,
+      start.length ? h('div', { style: strong.length ? 'margin-top:12px' : '' }, h('h2', { style: 'margin:0 0 6px' }, 'We start with'),
+        h('ul', { class: 'knowlist' }, start.map(function (t) { return h('li', null, t.label, h('span', { class: 'small muted' }, ' · ' + lv(t.level))); }))) : null));
     var ng = s.gaps.length;
     if (s.basics) nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
       h('div', null, h('h2', { style: 'margin:0 0 4px' }, 'Start with A2 basics'), h('div', { class: 'small muted' }, 'Build the foundations first.')),
@@ -1931,13 +1937,27 @@
         h('div', null, h('b', { style: 'color:var(--text)' }, plural(atLevel, 'mistake', 'mistakes') + ' at your level'), parkedNote,
           weak.length ? h('div', { class: 'small muted' }, 'Topics: ' + weak.join(', ') + '. A few questions cannot show a real gap; Second Chance does.') : null),
         comebackButton('btn small fn-chance', 'Second Chance'))));
-    } else if (!s.basics) {
+    } else if (!s.basics && !(fresh && start.length)) {   // the start list above already says what comes next
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, s.n > s.correct ? 'Keep building on your result' : 'All answers correct!'), h('p', { class: 'muted' }, s.n > s.correct ? (fresh ? 'Some answers were missed. Practice will help check which topics need another look.' : 'This is your saved test result. Open Second Chance on Home to see what needs checking now.') : 'Nothing was missed.'), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
     nodes.push(h('div', { class: 'card summary-cheer' }, funLine(s.accuracy >= 80, false, 'same')));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, homeLink()));
     return nodes;
+  }
+
+  /** After the level test the first training is about a topic missed in the test (teacher, 12 November, S4 A): the explanation, then new sentences. */
+  function firstStep(s, fresh) {
+    var g = fresh && s.gaps && s.gaps[0];
+    if (!g) return h('a', { class: 'btn', href: '#/practice', style: 'margin-top:4px' }, 'Start practising', icon('arrow'));
+    var lvs = { A2: ['A2.1', 'A2.2'], B1: ['B1.1', 'B1.2'], B2: ['B2.1', 'B2.2'], C1: ['C1.1', 'C1.2'] }[g.level] || [s.overall_level];
+    var b = h('button', { class: 'btn', style: 'margin-top:4px' }, 'Start with ' + g.label, icon('arrow'));
+    b.addEventListener('click', function () {
+      b.disabled = true; track('first_step', g.id);
+      api('session/start', { mode: 'practice', skills: [g.id], levels: lvs, length: 5, source: 'path', first_step: true })
+        .then(function (r) { state.sess = newSess(r.session, r.item); location.hash = '#/session'; }).catch(function (e) { b.disabled = false; fail(e); });
+    });
+    return b;
   }
 
   function showPlacementReport(rep) { state.lastSummary = rep; show(h('div', { class: 'sess', style: 'max-width:860px' }, placementReport(rep, false))); }

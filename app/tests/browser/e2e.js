@@ -25,7 +25,7 @@ const OUT = __dirname + '/shots/';
 
   const nick = 'Guest ' + Math.floor(Math.random() * 90000 + 10000);
   const wtxt = await page.evaluate(() => document.body.innerText);
-  for (const needle of ['Log in', 'Try it as a guest', 'Your name or a nickname', 'Continue as guest', 'Start practising', 'Already have an account?']) if (!wtxt.includes(needle)) errors.push('welcome page misses: ' + needle);
+  for (const needle of ['Log in', 'Or create a free account', 'Your name or a nickname', 'Continue as guest', 'Start practising', 'Already have an account?']) if (!wtxt.includes(needle)) errors.push('welcome page misses: ' + needle);
   if (/Remember it|teacher can help|do not use your real name/i.test(wtxt)) errors.push('old long hint texts still on the welcome page');
   await page.fill('#nick', nick);
   await page.click('button[type=submit]');
@@ -79,6 +79,9 @@ const OUT = __dirname + '/shots/';
   }
   await page.waitForSelector('.lvbig');
   await page.waitForTimeout(300);
+  { const res = await page.locator('.sess').innerText();   // S3 A, S4 A (12 November): what you know, where we start, the first training on a missed topic
+    if (!/You already know|We start with/.test(res)) errors.push('placement result misses the known / start lists');
+    if (/We start with/.test(res) && !(await page.locator('.hero-card button:has-text("Start with")').count())) errors.push('placement result: no Start with button'); }
   await noJunk(page,'06-placement-result'); await page.screenshot({ path: OUT + '06-placement-result.png', fullPage: true });
 
   // practice picker + session of 10 with all kinds
@@ -86,7 +89,7 @@ const OUT = __dirname + '/shots/';
   await page.waitForSelector('.lvseg');
   for (const l of ['A2', 'B1', 'B2', 'C1']) {   // B1 only
     const on = await page.locator('.lvseg input[value="' + l + '"]').isChecked();
-    if (on !== (l === 'B1')) await page.locator('.lvseg label', { hasText: new RegExp('^' + l + '$') }).click();
+    if (on !== (l === 'B1')) await page.locator('.lvseg label', { hasText: new RegExp('^' + (l === 'C1' ? 'B2\\+' : l) + '$') }).click();
   }
   await page.waitForSelector('details.picker-group'); await page.evaluate(() => document.querySelectorAll('details.picker-group').forEach(d => { d.open = true; }));   // the areas start closed
   await page.waitForSelector('.chipsel');

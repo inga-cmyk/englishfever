@@ -90,6 +90,18 @@
     "3": "Put the words in order to make a question.",
     "5": ""
    }
+  },
+  {
+   "match": [
+    "gap",
+    "Complete with will have to: Tomorrow we ___ leave early.",
+    "will have to | 'll have to"
+   ],
+   "line": 40,
+   "set": {
+    "3": "Our train is at 5 a.m., so tomorrow we ___ leave very early. (have to)",
+    "9": "Complete with will have to: Tomorrow we ___ leave early."
+   }
   }
  ],
  "b1-tenses-2.csv": [
@@ -705,6 +717,22 @@
    "set": {
     "6": "Size and shape (*long*) come before colour (*red*), and colour before material (*silk*): *a long red silk dress*. The full order: opinion, size, age, shape, colour, origin, material, then the noun.",
     "7": "Izmērs un forma (*long*) ir pirms krāsas (*red*), bet krāsa pirms materiāla (*silk*): *a long red silk dress*. Pilnā secība: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds."
+   }
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "match": [
+    "gap",
+    "Write the missing word or words: Children ___ to enter without an adult.",
+    "aren't allowed | are not allowed"
+   ],
+   "line": 22,
+   "set": {
+    "3": "The sign says: 'No children without an adult.' Children ___ to enter without an adult.",
+    "5": "bank: aren't allowed | don't allow | aren't allow | can't",
+    "9": "Write the missing word or words: Children ___ to enter without an adult.",
+    "4": "aren't allowed"
    }
   }
  ]

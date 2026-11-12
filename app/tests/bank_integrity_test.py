@@ -11,6 +11,9 @@ sys.path.insert(0, str(ROOT / 'authoring'))
 from bank_integrity import history, validate
 from rules import SKILLS
 from dsl import LEVELS
+# no C1 level since 12 November (U3 A): the built bank has C1 tasks as B2.2, as build.py does
+SKILLS = [tuple([s[0], s[1], s[2], list(dict.fromkeys("B2.2" if l.startswith("C1") else l for l in s[3]))] + list(s[4:])) for s in SKILLS]
+LEVELS = [l for l in LEVELS if not l.startswith("C1")]
 
 
 class IntegrityTest(unittest.TestCase):

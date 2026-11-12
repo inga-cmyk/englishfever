@@ -346,5 +346,9 @@
  {
   "what": "Matching by topic words instead of grammar (second reader, 12 November)",
   "reader": "'I've been to Italy twice. = I can tell you what Rome is like.' Italy → Rome. Give all left sides the same topic so only the form decides ('I used to drink coffee / I'm used to drinking coffee / …'), or do not use matching for it."
+ },
+ {
+  "what": "A one-key typo in a word copied from the task marked a correct sentence wrong (report of 12 November)",
+  "reader": "'wheh I finish the report, I'll call you.' The grader now accepts a neighbouring-key slip in a copied word (not in a last letter that can be an ending); tested in correct_part_test.php."
  }
 ]

@@ -693,5 +693,19 @@
     "9": "Join with *whereas*: I like early mornings. My partner likes late nights."
    }
   }
+ ],
+ "b1-new-5.csv": [
+  {
+   "match": [
+    "gap",
+    "She wore a ___ dress. (silk / red / long)",
+    "long red silk"
+   ],
+   "line": 20,
+   "set": {
+    "6": "Size and shape (*long*) come before colour (*red*), and colour before material (*silk*): *a long red silk dress*. The full order: opinion, size, age, shape, colour, origin, material, then the noun.",
+    "7": "Izmērs un forma (*long*) ir pirms krāsas (*red*), bet krāsa pirms materiāla (*silk*): *a long red silk dress*. Pilnā secība: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds."
+   }
+  }
  ]
 }

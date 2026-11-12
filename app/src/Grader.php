@@ -443,9 +443,36 @@ final class Grader
                 $notes[] = "Spelling: {$g[$i]} → $word.";
                 continue;
             }
+            if (isset($prompt[$word]) && self::keySlip($g[$i], $word)) {   // a word copied from the task, one key next to the right one (wheh for when, report of 12 November)
+                $notes[] = "Spelling: {$g[$i]} → $word.";
+                continue;
+            }
             return null;
         }
         return ($notes && count($notes) <= 2) ? $notes : null;
+    }
+
+    private const KEYROWS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
+    /**
+     * One letter of a word of 4 or more letters hit on a neighbouring key (same length, no other change). Not a last letter that can be an ending
+     * (s, d, e, r, t, y, n).
+     */
+    private static function keySlip(string $s, string $t): bool
+    {
+        if (mb_strlen($t, 'UTF-8') < 4 || strlen($s) !== strlen($t) || !preg_match('/^[a-z]+$/', $s . $t)) return false;
+        $diff = [];
+        for ($i = 0; $i < strlen($t); $i++) if ($s[$i] !== $t[$i]) $diff[] = $i;
+        if (count($diff) !== 1) return false;
+        $i = $diff[0]; $a = $s[$i]; $b = $t[$i];
+        if ($i === strlen($t) - 1 && strpos('sdertyn', $a) !== false) return false;   // a last letter that can be an ending (likes, liked, were/wers) is grammar, not a slip
+        foreach (self::KEYROWS as $r => $row) {
+            $pa = strpos($row, $a); $pb = strpos($row, $b);
+            if ($pa !== false && $pb !== false && abs($pa - $pb) === 1) return true;
+        }
+        $pos = [];
+        foreach (self::KEYROWS as $r => $row) foreach ([$a, $b] as $c) if (($p = strpos($row, $c)) !== false) $pos[$c] = [$r, $p];
+        if (count($pos) === 2 && abs($pos[$a][0] - $pos[$b][0]) === 1 && abs($pos[$a][1] - $pos[$b][1]) <= 1) return true;
+        return false;
     }
 
     /**

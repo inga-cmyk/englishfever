@@ -13,4 +13,9 @@ foreach ($cases as [$q, $acc, $tests]) foreach ($tests as $ans => $want) {
   $r = Grader::grade(['kind'=>'text','q'=>$q,'answers'=>[$acc]], $ans);
   if ((int)$r['correct'] !== $want) { $bad++; echo "FAIL $q | '$ans' => ".($r['correct']?'right':'wrong')."\n"; }
 }
+// a key next to the right one in a word copied from the task (report of 12 November: wheh for when)
+$it = ['kind'=>'text','q'=>"Join with when: I'll finish the report. Then I'll call you.",'answers'=>[["I'll call you when I finish the report.","When I finish the report, I'll call you."]]];
+foreach (["wheh I finish the report, I'll call you."=>1, "then I finish the report, I'll call you."=>0, "When I finish the report, I'll calls you."=>0] as $ans => $want) {
+  $r = Grader::grade($it, $ans); if ((int)$r['correct'] !== $want) { $bad++; echo "FAIL key slip | '$ans'\n"; }
+}
 echo $bad ? "SOME FAILED\n" : "ALL PASS\n";

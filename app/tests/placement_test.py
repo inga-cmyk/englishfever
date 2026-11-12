@@ -26,10 +26,10 @@ def play(c, size, decide):
 c = login(7001, "Aija Strong")
 seen, s = play(c, 12, lambda it, n: True)
 check("strong learner: 12 questions", len(seen) == 12, len(seen))
-check("climbs A2 -> B1 -> B2 -> C1, 3 questions per level", [FULL(i) for i in seen] == ["A2"] * 3 + ["B1"] * 3 + ["B2"] * 3 + ["C1"] * 3, [FULL(i) for i in seen])
+check("climbs A2 -> B1 -> B2, 3 questions per level, then more at B2 (the top since 12 November)", [FULL(i) for i in seen] == ["A2"] * 3 + ["B1"] * 3 + ["B2"] * 6, [FULL(i) for i in seen])
 check("a block uses different topics", all(len({i["skill"] for i in seen[k:k + 3]}) == 3 for k in (0, 3, 6, 9)), [i["skill"] for i in seen])
 check("strong learner is placed at B2 or C1", s["overall_level"][:2] in ("B2", "C1"), s["overall_level"])
-check("summary has the level ladder", [l["level"] for l in s["ladder"]] == ["A2", "B1", "B2", "C1"] and all(l["correct"] == l["n"] == 3 for l in s["ladder"]), s["ladder"])
+check("summary has the level ladder", [l["level"] for l in s["ladder"]] == ["A2", "B1", "B2"] and all(l["correct"] == l["n"] for l in s["ladder"]), s["ladder"])   # no C1 since 12 November
 check("no gaps when nothing was missed", s["gaps"] == [], s["gaps"])
 check("a strong learner gets no basics message", s["basics"] is False, s.get("basics"))
 check("confidence is reported", s["sure"] in ("rough", "good", "high"), s["sure"])

@@ -153,6 +153,9 @@ final class Path
      * A topic with fewer than 10 check / use tasks at these levels cannot be learned yet ("almost there").
      */
     public const LEARN_N = 10;
+    public const MAX_ORDERS = 3;   // word orders that count towards Learned in a topic about a form (teacher, 12 November, U1 B)
+    /** Topics where the word order is the skill itself: there every word order counts. */
+    public const ORDER_SKILLS = ['rep_questions', 'ind_polite', 'ind_advanced', 'adverbs', 'adj_order', 'subject_object_q', 'aux_verbs'];
     public static function mastery(int $uid, string $skill, ?array $levels = null): array
     {
         $lv = $levels ? ' AND level IN (' . implode(',', array_fill(0, count($levels), '?')) . ')' : '';
@@ -168,18 +171,28 @@ final class Path
         $n = count($rows);
         $last = array_slice($rows, -12);
         $acc = $last ? array_sum(array_map(fn($r) => (int) $r['correct'], $last)) / count($last) : 0.0;
-        $right = []; $cats = []; $typed = false; $days = []; $firstSeen = [];
+        $right = []; $cats = []; $typed = false; $days = []; $firstSeen = []; $orders = 0;
+        $orderIsSkill = in_array($skill, self::ORDER_SKILLS, true);
         foreach ($rows as $r) {
             $id = preg_replace('/-r\d+$/', '', (string) $r['item_id']);
             $firstSeen[$id] ??= (int) $r['created_at'];
             if (!(int) $r['correct']) continue;
-            $right[$id] = true;
+            // one sentence counts once, in whatever kind of task (U4 A); at most 3 word orders where the form is the skill (U1 B, teacher, 12 November)
+            $sk = Content::sentenceKey($r['it']);
+            if (!isset($right[$sk])) {
+                if ($r['it']['kind'] === 'order' && !$orderIsSkill) { if ($orders >= self::MAX_ORDERS) continue; $orders++; }
+                $right[$sk] = true;
+            }
             $cats[Content::taskCat($r['it'])] = true;
             if (Content::role($r['it']) === 'use') $typed = true;
             $days[date('Y-m-d', (int) $r['created_at'])] = true;
         }
         static $banks = [];   // check / use tasks per topic and level
-        if (!$banks) foreach (Content::items() as $it) if (Content::role($it) !== 'learn') $banks[$it['skill']][$it['level']] = ($banks[$it['skill']][$it['level']] ?? 0) + 1;
+        if (!$banks) {   // different sentences, word orders at most 3 where the form is the skill (the same rule as above)
+            $keys = [];
+            foreach (Content::items() as $it) if (Content::role($it) !== 'learn') $keys[$it['skill']][$it['level']][$it['kind'] === 'order' && !in_array($it['skill'], self::ORDER_SKILLS, true) ? 'o' : 'x'][Content::sentenceKey($it)] = true;
+            foreach ($keys as $sk => $byL) foreach ($byL as $l => $g) $banks[$sk][$l] = count($g['x'] ?? []) + min(self::MAX_ORDERS, count($g['o'] ?? []));
+        }
         $bank = 0;
         foreach ($banks[$skill] ?? [] as $l => $c) if (!$levels || in_array($l, $levels, true)) $bank += $c;
         $distinct = count($right);
@@ -187,7 +200,7 @@ final class Path
         $mastered = false;
         if ($learned) {   // the day it became learned: the 10th different right task
             $seen = []; $at = null;
-            foreach ($rows as $r) { if ((int) $r['correct']) { $seen[preg_replace('/-r\d+$/', '', (string) $r['item_id'])] = true; if (count($seen) >= self::LEARN_N) { $at = (int) $r['created_at']; break; } } }
+            foreach ($rows as $r) { if ((int) $r['correct']) { $seen[Content::sentenceKey($r['it'])] = true; if (count($seen) >= self::LEARN_N) { $at = (int) $r['created_at']; break; } } }
             $later = array_values(array_filter($rows, fn($r) => $at !== null && (int) $r['created_at'] >= $at + 3 * 86400 && $firstSeen[preg_replace('/-r\d+$/', '', (string) $r['item_id'])] >= $at + 3 * 86400));
             $mastered = count($later) >= 3 && !in_array(0, array_map(fn($r) => (int) $r['correct'], array_slice($later, -3)), true);
         }

@@ -16,7 +16,8 @@
   /** Features the learning study can hide for a learner (state.user.cond, e.g. {streak: 'off'}). Everyone outside the study sees everything. */
   function feat(name) { return !(state.user && state.user.cond && state.user.cond[name] === 'off'); }
   /** Learners see A2, B1, B2, C1; the half-levels (A2.1, A2.2 ...) only steer the difficulty inside the app. */
-  function lv(l) { return String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); }
+  // the app's C1 topics are B2 grammar at the top of the app (teacher, 12 November, U3 A): learners see them as B2+; data keep C1.1 / C1.2
+  function lv(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'B2+' : x; }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Start|Imagine|Add|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
@@ -444,7 +445,7 @@
       var b = h('button', { type: 'button', class: 'btn' }, 'Continue with ' + nx.label, icon('arrow'));
       b.addEventListener('click', function () { startPathStep(b, nx); });
       card.append(h('div', { class: 'row between', style: 'gap:12px' },
-        h('div', null, h('div', { class: 'label' }, 'My learning path'), h('b', { style: 'color:var(--text)' }, 'Next step: ' + nx.label), h('div', { class: 'small muted' }, nx.level)), b));
+        h('div', null, h('div', { class: 'label' }, 'My learning path'), h('b', { style: 'color:var(--text)' }, 'Next step: ' + nx.label), h('div', { class: 'small muted' }, lv(nx.level))), b));
     }).catch(function () { card.remove(); });
     return card;
   }
@@ -466,7 +467,7 @@
         h('span', { class: 'pdot' + (ok ? ' ok' : ''), 'aria-hidden': 'true' }, ok ? icon('check') : ''),
         h('span', { class: 'pbody' },
           h('span', { class: 'ptext' }, rec ? h('span', { class: 'prec' }, '★ Recommended') : null, h('b', null, st.label),
-            h('small', null, st.level + ' · ' + ((st.check && st.status === 'new') ? 'Quick check' : (STATE[st.status] || ''))),
+            h('small', null, lv(st.level) + ' · ' + ((st.check && st.status === 'new') ? 'Quick check' : (STATE[st.status] || ''))),
             st.status === 'strengthen' ? h('small', { class: 'path-reason' }, 'Recent answers suggest revisiting this topic. Your overall level has not changed.') : null,
             st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null),
           rec ? h('span', { class: 'prec-go', 'aria-hidden': 'true' }, icon('arrow')) : null));   // no separate Go button: the step itself is the button, like Practise now on Home (teacher, 6 November)
@@ -618,9 +619,9 @@
     var LV = ['A2', 'B1', 'B2', 'C1'], at = LV.indexOf(String(lvl).slice(0, 2));
     if (at < 0) return null;
     var bar = h('div', { class: 'ls-bar' }, LV.map(function (l, i) { return h('i', { class: 'ls-cell' + (i <= at ? ' on s' + i : '') + (i === at ? ' here' : '') }); }));
-    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, x); }));
+    var labels = h('div', { class: 'ls-labels' }, LV.map(function (x, i) { return h('span', { class: i === at ? 'on' : '' }, lv(x)); }));
     var from = (state.dash && state.dash.level_now && state.dash.level_now.from === 'answers') ? 'From your answers' : (rep ? 'From the level test' : 'From your answers');
-    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + LV[at] + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
+    var box = h(rep ? 'button' : 'div', { class: 'level-scale', 'aria-label': 'My level: ' + lv(LV[at]) + ' (' + from.toLowerCase() + ')' }, h('span', { class: 'ls-title' }, 'My level', h('small', { class: 'ls-from' }, ' · ' + from)), bar, labels);
     if (rep) { box.type = 'button'; box.addEventListener('click', function () { showPlacementReport(rep); }); }
     return box;
   }

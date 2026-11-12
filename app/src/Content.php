@@ -36,6 +36,13 @@ final class Content
         return self::$items;
     }
 
+    /** Tests only: add tasks to the loaded bank. */
+    public static function addTest(array $tasks): void
+    {
+        self::items();
+        foreach ($tasks as $t) { $t['d'] = self::difficulty($t['level'], $t['bloom']); self::$items[] = $t; self::$byId[$t['id']] = &self::$items[count(self::$items) - 1]; }
+    }
+
     /** Built-in tasks that were given a lower level as a copy (content/relabelled.php): ids => true. */
     public static function relabelled(): array
     {
@@ -151,7 +158,31 @@ final class Content
         if ($it['kind'] === 'gap' && empty($it['bank'])) return 'use';
         if ($it['kind'] === 'mcq' && preg_match('/^(Which sentence (means|is about|tells|is a |describes|shows|imagines|expresses|uses|does NOT express|has a finished|is passive)|What is the difference|What usually happens|Which (words|word) usually|Which verb is normally)/i', (string) ($it['q'] ?? ''))) return 'learn';
         if ($it['kind'] === 'mcq' && preg_match('/What does (it|this|that) (say|mean)\?/i', (string) ($it['q'] ?? ''))) return 'learn';
+        // questions about meaning (what a sentence tells us, which action came first) can be answered without forming the tense (teacher, 12 November, U2 A)
+        if ($it['kind'] === 'mcq' && preg_match("/^(What does .{2,80} (mean|tell us)\\??|What does this sentence mean\\?|In (the story )?'.+', which (action|thing)? ?(started|happened) first\\?|Which sentence says (how long|the difference|the train was missed|that she first))/i", (string) ($it['q'] ?? ''))) return 'learn';
         return 'check';
+    }
+
+    /**
+     * The sentence behind a task, so that the same sentence in a choice, a word bank and a word order counts once towards Learned
+     * (teacher, 12 November, U4 A): the correct sentence with the gaps filled, lower case, letters and digits only.
+     */
+    public static function sentenceKey(array $it): string
+    {
+        $q = (string) ($it['q'] ?? '');
+        $q = preg_replace('/^[^:]{0,90}:\s*/u', '', $q);   // without the instruction
+        switch ($it['kind']) {
+            case 'order': $s = (string) ($it['sentence'] ?? ''); break;
+            case 'text': $s = (string) ($it['answers'][0][0] ?? $q); break;
+            case 'write': $s = (string) ($it['model'] ?? $q); break;
+            case 'match': $s = (string) ($it['id'] ?? ''); break;
+            case 'gap':
+                $i = 0; $s = preg_replace_callback('/___/', function () use ($it, &$i) { return (string) ($it['answers'][$i++][0] ?? ''); }, $q); break;
+            default:   // mcq: the option in the gap, or the correct sentence
+                $s = strpos($q, '___') !== false ? str_replace('___', (string) ($it['correct'] ?? ''), $q) : (string) ($it['correct'] ?? $q);
+        }
+        $s = preg_replace('/\([^)]*\)/u', '', $s);
+        return trim(preg_replace('/[^a-z0-9]+/u', ' ', mb_strtolower($s, 'UTF-8')));
     }
 
     /** The kind of task a learner sees (teacher, 28 October): recognise = choose or match, use = fill in, word bank, word order, write = typed sentence or open writing. */

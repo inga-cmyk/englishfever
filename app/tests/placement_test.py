@@ -43,7 +43,7 @@ check("weak learner is placed at A2.1", s["overall_level"] == "A2.1", s["overall
 check("ceiling reached: no climbing above B1 for someone who misses all", all(FULL(i) in ("A2", "B1") for i in seen[6:]), [FULL(i) for i in seen])
 check("gaps are found, at most 3, with a level", 1 <= len(s["gaps"]) <= 3 and all(g["level"] in ("A2", "B1") for g in s["gaps"]), s["gaps"])
 check("failing the first level twice gives the A2 basics message", s["basics"] is True, s.get("basics"))
-check("mistakes are left for Second Chance", s["open_after"] > 0, s.get("open_after"))
+check("level-test mistakes wait until their topic is practised (teacher, 12 November, A)", s["open_after"] == 0 and s.get("parked", 0) > 0, (s.get("open_after"), s.get("parked")))
 
 # 2 of 3 right moves up; 1 of 3 gives a second block whose misses come back as the same topics
 c = login(7003, "Cilda Mixed")

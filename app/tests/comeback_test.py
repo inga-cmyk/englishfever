@@ -129,6 +129,7 @@ st = p2.api("session/start", {"mode": "placement", "length": 12}); sid = st["ses
 while item:
     it = ITEMS[item["id"]]
     ans = correct(it) if it["level"].startswith("A2") else wrong(it)   # right at A2, wrong above it
+    if not it["level"].startswith("A2") and ROLES[it["id"]] != "learn": missed_skill = it["skill"]; ITEMS_LEVEL = {it["skill"]: it["level"]}
     r = p2.api("session/answer", {"session_id": sid, "item_id": item["id"], "answer": ans, "time_ms": 1000})
     if r["done"]: break
     item = r["next"]
@@ -136,11 +137,11 @@ summ = r["summary"]
 check("placement: right at A2, wrong above it: level A2", summ["overall_level"].startswith("A2"), summ["overall_level"])
 check("placement: the misses above A2 are parked, nothing is offered for Second Chance", summ["parked"] >= 3 and summ["open_after"] == 0 and dash(p2)["open"] == 0, (summ["parked"], summ["open_after"], dash(p2)))
 check("Second Chance has nothing to offer yet", p2.api("session/start", {"mode": "comeback"})["_status"] == 404)
-b1 = p2.api("session/start", {"mode": "practice", "levels": ["B1"], "skills": [], "length": 5})
+b1 = p2.api("session/start", {"mode": "practice", "skills": [missed_skill], "level": ITEMS_LEVEL[missed_skill], "length": 5})   # a level-test mistake waits until its topic is practised (teacher, 12 November, A)
 bit = ITEMS[b1["item"]["id"]]
 p2.api("session/answer", {"session_id": b1["session"]["id"], "item_id": bit["id"], "answer": correct(bit), "time_ms": 1000})
 p2.api("session/quit", {"session_id": b1["session"]["id"]})
-check("after practising B1 the parked B1 mistakes come back to Second Chance", dash(p2)["open"] >= 1, (bit["level"], dash(p2)))
+check("after practising that topic, its level-test mistake comes back to Second Chance", dash(p2)["open"] >= 1, (missed_skill, dash(p2)))
 # ---- the history is never rewritten: every attempt is still there
 db = sqlite3.connect(DB)
 uid = db.execute("select id from users where provider='wp' and external_id=?", (str(UID),)).fetchone()[0]

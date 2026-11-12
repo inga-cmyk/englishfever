@@ -86,17 +86,14 @@ final class Mistakes
             $pl = $plLevels;   // placement sessions and the level each found
             foreach (Db::all("SELECT id, state FROM psessions WHERE user_id = ? AND mode = 'placement'", [$uid]) as $p) {
                 if (isset($pl[(int) $p['id']])) continue;
-                $lv = json_decode((string) $p['state'], true)['report']['overall_level'] ?? null;
-                if ($lv) $pl[(int) $p['id']] = $lv;
+                $pl[(int) $p['id']] = json_decode((string) $p['state'], true)['report']['overall_level'] ?? '';   // also a test not finished
             }
-            if ($pl) {
-                $fi = array_flip(Content::FULL_LEVELS);
-                $practised = [];   // full levels the learner has practised outside a placement test
-                foreach (Db::all("SELECT DISTINCT a.level FROM attempts a JOIN psessions s ON s.id = a.psession_id WHERE a.user_id = ? AND s.mode <> 'placement'", [$uid]) as $r) $practised[substr($r['level'], 0, 2)] = true;
+            if ($pl) {   // a level-test mistake waits until the learner has practised that topic at least once (teacher, 12 November, A)
+                $practised = [];   // topics practised outside a placement test
+                foreach (Db::all("SELECT DISTINCT a.skill FROM attempts a JOIN psessions s ON s.id = a.psession_id WHERE a.user_id = ? AND s.mode <> 'placement'", [$uid]) as $r) $practised[$r['skill']] = true;
                 foreach ($open as $id => $m) {
                     if (!isset($pl[$m['ses']])) continue;
-                    $f = substr($m['level'], 0, 2);
-                    if (($fi[$f] ?? 0) > ($fi[substr($pl[$m['ses']], 0, 2)] ?? 99) && empty($practised[$f])) { $parked[$id] = $m; unset($open[$id]); }
+                    if (empty($practised[$m['skill']])) { $parked[$id] = $m; unset($open[$id]); }
                 }
             }
         }

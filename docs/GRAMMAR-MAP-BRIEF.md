@@ -21,6 +21,14 @@ Columns:
 ## How levels are decided
 Three sources that check each other: Inga's test-english.com lists (scope and order; the site blocks automated access, do not try to get round it), Murphy (the rules), the Cambridge English Grammar Profile (the CEFR level at which learners really use a form). Where they disagree, give both and a recommendation with the reason. Do not quote books from memory as if checked: say what was checked and what is from memory.
 
+## Sources Inga gives in the chat (13 November)
+She will upload screenshots of the test-english.com C1 explanation and exercise pages, and PDFs of C1 course books with the explanations and examples of these topics, so that the new content matches the CEFR and good practice. Use them like this:
+- For **scope, level, order and the way a point is explained**: which uses belong to C1, which examples show the contrast, what the book treats as one unit. Record in the `sources` column which book and unit, or which test-english page, a point comes from.
+- **Never copy** sentences, exercises or explanations: our own examples and wording (rule of 2 November). A typical context from a book may be imitated with a new sentence.
+- **Do not commit** the screenshots or the PDFs to the repository (copyright; her files are never committed). Keep notes about them in the map, not the files.
+- Where a book and test-english disagree about a level or about what belongs to a point, show both to Inga with a recommendation.
+- Say for every C1 strand whether a source was seen for it; a strand written without one is marked *from memory, not checked*.
+
 ## C1
 The reference list has ten strands: advanced present tenses; advanced past tenses; the perfect tenses; modals *will, would, should*; modals *can / be able to, may / might*; the subjunctive; advanced agreement; prepositions (position, advanced patterns); participle clauses; advanced word order. Each C1 point names the B2 points it stands on. Note for each strand which task forms it needs: C1 is mostly a choice between two correct forms by meaning or register (two correct sentences with different meanings, key-word transformations, finding mistakes in a paragraph, longer sentences and C1 vocabulary).
 

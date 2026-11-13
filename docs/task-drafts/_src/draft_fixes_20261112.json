@@ -735,5 +735,18 @@
     "4": "aren't allowed"
    }
   }
+ ],
+ "learn-drag-4.csv": [
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she asked if I could help her"
+   ],
+   "line": 37,
+   "set": {
+    "3": "Anna's question to you: 'Can you help me?' Put the words in order."
+   }
+  }
  ]
 }

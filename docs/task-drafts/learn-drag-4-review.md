@@ -166,7 +166,7 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
 
 ## Reported questions and requests · B2.1
 
-36. *order* · Put the words in order. → **she asked if I could help her**
+36. *order* · Anna's question to you: 'Can you help me?' Put the words in order. → **she asked if I could help her**
    - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
    - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
    - sentence from: app/content/items.json · rq-B21-1a

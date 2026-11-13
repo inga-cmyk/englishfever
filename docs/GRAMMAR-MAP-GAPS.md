@@ -2,7 +2,7 @@
 
 Sagatavots 2026. gada 13. novembrī kopā ar `docs/GRAMMAR-MAP.md`. Punktu `id` ir tie paši, kas kartē. Uzdevumu skaits pie punktiem ir **aptuvens** (automātiska šķirošana pēc teikuma un atbildes vārdiem); tēmas un līmeņa summas 3. sadaļas sākumā ir precīzas.
 
-Saturs: 1. punkti bez satura · 2. līmeņu atšķirības starp lietotni un karti · 3. punkti ar mazāk nekā 10 uzdevumiem · 4. kontrasta pāri bez izvēles uzdevumiem · 5. Ingas lēmumi un kas vēl vajadzīgs.
+Saturs: 1. punkti bez satura · 2. līmeņu atšķirības starp lietotni un karti · 3. punkti ar mazāk nekā 10 uzdevumiem · 4. kontrasta pāri bez izvēles uzdevumiem · 5. Ingas lēmumi un materiāli.
 
 ## 1. Atsauces sarakstu A1 līdz B2 punkti, kuriem lietotnē satura nav (75)
 
@@ -114,7 +114,7 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `cleft` | Cleft sentences: It was Tom who …, What I need is … | B2: Cleft sentences | jā |
 | `neg_inversion` | Inversion after negative adverbials: Never have I seen …, Not only … but also | B2: Inversion with negative adverbials | jā |
 
-C1: visi 86 punkti ir bez satura (lietotnē C1 līmeņa nav).
+C1: visi 90 punkti ir bez satura (lietotnē C1 līmeņa nav).
 
 ## 2. Kur līmenis lietotnē atšķiras no kartes
 
@@ -329,18 +329,18 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 ## 4. Kontrasta pāri bez izvēles uzdevumiem
 
-Kartē ir 412 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīmē: abas formas ir starp atbilžu variantiem, un pareizā ir viena no tām.
+Kartē ir 416 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīmē: abas formas ir starp atbilžu variantiem, un pareizā ir viena no tām.
 
 ### 4.1. Pāri, kuros vienai pusei satura nav vispār
 
-Tādu ir 184: 74 līmeņos A2 līdz B2 un 110, kuros ir C1 punkts. A2 līdz B2 pāri:
+Tādu ir 188: 74 līmeņos A2 līdz B2 un 114, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `be_pres` ↔ `ps_form` · `obj_pron` ↔ `poss_adj` · `vp_like_ing` ↔ `would_like` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `have_got` · `poss_adj` ↔ `poss_s` · `there_is` ↔ `there_it` · `be_pres` ↔ `q_yesno`
-- **A2.2:** `poss_adj` ↔ `poss_pron` · `requests` ↔ `would_like` · `vp_like_ing` ↔ `what_like` · `most_of` ↔ `sup`
-- **B1.1:** `during_while` ↔ `for_since_from` · `so_neither` ↔ `tag_basic` · `obj_pron` ↔ `reflexive` · `too_to` ↔ `vp_adj_to` · `for_since_from` ↔ `pp_for_since`
-- **B1.2:** `adv_extreme` ↔ `quite_rather` · `q_negative` ↔ `tag_basic` · `all_both` ↔ `both_and` · `so_that` ↔ `too_to` · `link_adj` ↔ `senses_like` · `fut_cont` ↔ `will_form` · `would_like` ↔ `would_rather` · `quite_rather` ↔ `so_such_basic` · `adv_degree` ↔ `quite_rather` · `all_both` ↔ `each_every` · `pp_just` ↔ `still_yet` · `its_time` ↔ `ought_to` · `both_and` ↔ `so_neither` · `no_longer` ↔ `still_yet` · `all_both` ↔ `no_none` · `ought_to` ↔ `should` · `adv_position` ↔ `word_order`
-- **B2.1:** `eding` ↔ `part_reduced` · `pas_report` ↔ `rep_backshift` · `reciprocal` ↔ `reflexive` · `must_have_to` ↔ `supposed_to` · `deduction` ↔ `deduction_past` · `there_it` ↔ `there_it_prep` · `compound_nouns` ↔ `poss_s` · `pas_cont` ↔ `pas_other` · `pas_inf_ing` ↔ `vp_to` · `cmp_modify` ↔ `cmp_modify_b2` · `deduction_past` ↔ `should_have` · `dep_verb` ↔ `noun_prep` · `part_reduced` ↔ `rel_subj` · `its_time` ↔ `its_time_past` · `vp_make_let` ↔ `vp_see_do` · `cmp_as` ↔ `like_as` · `likely_bound` ↔ `should_expect` · `fut_cont` ↔ `fut_perf` · `compound_adj_num` ↔ `poss_time` · `pas_other` ↔ `pas_perf` · `vp_meaning` ↔ `vp_need_help` · `get_b2` ↔ `vp_make_let` · `deduction` ↔ `likely_bound` · `pas_inf_ing` ↔ `vp_ing` · `deduction` ↔ `modals_cont` · `have_aux` ↔ `have_got` · `pas_two_obj` ↔ `two_obj` · `caus_get` ↔ `get_b2` · `deduction` ↔ `should_expect` · `vp_obj_ing` ↔ `vp_obj_to` · `like_as` ↔ `senses_like`
-- **B2.2:** `ellipsis` ↔ `vp_reduced` · `fut_perf` ↔ `fut_perf_cont` · `cleft` ↔ `rel_what` · `distancing` ↔ `pas_report` · `part_adv` ↔ `part_reduced` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `one_ones` · `pas_inf_ing` ↔ `vp_complex` · `aux_uses` ↔ `ellipsis`
+- **A2.1:** `there_is` ↔ `there_it` · `be_pres` ↔ `q_yesno` · `be_pres` ↔ `have_got` · `poss_adj` ↔ `poss_s` · `vp_like_ing` ↔ `would_like` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `ps_form`
+- **A2.2:** `requests` ↔ `would_like` · `poss_adj` ↔ `poss_pron` · `most_of` ↔ `sup` · `vp_like_ing` ↔ `what_like`
+- **B1.1:** `during_while` ↔ `for_since_from` · `too_to` ↔ `vp_adj_to` · `obj_pron` ↔ `reflexive` · `for_since_from` ↔ `pp_for_since` · `so_neither` ↔ `tag_basic`
+- **B1.2:** `link_adj` ↔ `senses_like` · `so_that` ↔ `too_to` · `adv_position` ↔ `word_order` · `would_like` ↔ `would_rather` · `fut_cont` ↔ `will_form` · `all_both` ↔ `no_none` · `ought_to` ↔ `should` · `adv_extreme` ↔ `quite_rather` · `q_negative` ↔ `tag_basic` · `all_both` ↔ `both_and` · `quite_rather` ↔ `so_such_basic` · `both_and` ↔ `so_neither` · `no_longer` ↔ `still_yet` · `adv_degree` ↔ `quite_rather` · `its_time` ↔ `ought_to` · `pp_just` ↔ `still_yet` · `all_both` ↔ `each_every`
+- **B2.1:** `eding` ↔ `part_reduced` · `part_reduced` ↔ `rel_subj` · `pas_cont` ↔ `pas_other` · `vp_make_let` ↔ `vp_see_do` · `deduction` ↔ `should_expect` · `pas_report` ↔ `rep_backshift` · `caus_get` ↔ `get_b2` · `cmp_as` ↔ `like_as` · `likely_bound` ↔ `should_expect` · `pas_inf_ing` ↔ `vp_ing` · `like_as` ↔ `senses_like` · `deduction` ↔ `modals_cont` · `pas_two_obj` ↔ `two_obj` · `vp_meaning` ↔ `vp_need_help` · `compound_nouns` ↔ `poss_s` · `there_it` ↔ `there_it_prep` · `pas_other` ↔ `pas_perf` · `get_b2` ↔ `vp_make_let` · `vp_obj_ing` ↔ `vp_obj_to` · `pas_inf_ing` ↔ `vp_to` · `reciprocal` ↔ `reflexive` · `deduction_past` ↔ `should_have` · `compound_adj_num` ↔ `poss_time` · `have_aux` ↔ `have_got` · `cmp_modify` ↔ `cmp_modify_b2` · `deduction` ↔ `likely_bound` · `deduction` ↔ `deduction_past` · `its_time` ↔ `its_time_past` · `dep_verb` ↔ `noun_prep` · `fut_cont` ↔ `fut_perf` · `must_have_to` ↔ `supposed_to`
+- **B2.2:** `pas_inf_ing` ↔ `vp_complex` · `fut_perf` ↔ `fut_perf_cont` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `vp_reduced` · `distancing` ↔ `pas_report` · `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `part_adv` ↔ `part_reduced` · `ellipsis` ↔ `one_ones`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
@@ -392,7 +392,7 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 
 Kartē ir 228 pāri, kuros abām pusēm saturs ir. Tabulā 4.2 saskaitīti 39 formu pāri, kam ir skaidra pazīme vārdos; pārējiem tādas pazīmes nav, un tie nav saskaitīti. Tos varēs saskaitīt precīzi, kad uzdevumi būs piesaistīti punktiem (nākamais posms). Līdz tam drošākais rādītājs ir 3. sadaļa: ja vienam pāra punktam ir zem 10 uzdevumiem, arī izvēles uzdevumu starp abiem gandrīz noteikti nav.
 
-## 5. Ingas lēmumi un kas vēl vajadzīgs
+## 5. Ingas lēmumi un materiāli
 
 ### 5.1. Lēmumi par līmeni (Inga, 13. novembris)
 
@@ -406,20 +406,20 @@ Vietas, kur avoti nesakrita. Karte ir izlabota pēc šiem lēmumiem; pie punktie
 | 4 | Inversija un *cleft sentences*: saraksts B2, EGP un *Gold C1* liek C1 | **Dalīt** | B2.2 (`c_inv`, `neg_inversion`, `cleft`): atpazīt formu un izveidot to, kad sākums ir dots. C1 (`x_inv_cond`, `x_inv_neg`, `x_inv_main`, `x_cleft_adv`): pašam izvēlēties un pārveidot |
 | 5 | C1 dalījums divās pusēs | **Bez dalījuma** | Viens līmenis C1, desmit virzieni saraksta secībā. Lietotnē līmeņu saraksts tad ir A2.1, A2.2, B1.1, B1.2, B2.1, B2.2, C1 |
 
-### 5.2. Kas vēl vajadzīgs no Ingas, lai karte būtu pabeigta
+### 5.2. Materiāli
 
-Tikai materiāli, pa vienam, šādā secībā:
-1. *Advanced participle clauses* (skaidrojums un viens uzdevums): vienīgais virziens, kura lapu vēl neesmu redzējis.
-2. *Prepositions: position and advanced patterns*: lapas pirmā daļa (pirms *Common formal patterns with which*).
-3. *will, would*: *would* daļas beigas.
-4. *Advanced past simple, past continuous and past perfect*: skaidrojuma augšējā puse.
-5. Pa vienam uzdevumam no lapām, kurām redzēju tikai skaidrojumu (*Subject-verb agreement*, *Prepositions*, *Advanced word order*, *will, would*, *should*): tie rāda, kādas uzdevumu formas vietne lieto.
+Visi desmit C1 virzieni ir salīdzināti ar test-english lapām (Ingas ekrānuzņēmumi, 13. novembris). Kopumā lapas sakrita ar Hewings; pēc tām pielikti 13 punkti (teikums kā teikuma priekšmets, *one of … who*, prievārds ciešamajā kārtā un aiz nenoteiksmes, vairākvārdu prievārdi, *the extent to which*, *fronting* ar *as / though* un ar divdabi, *perfect* vienkāršā vai ilgstošā forma visos laikos, *with* + lietvārds + divdabis, *There being*, *Generally speaking*, rezultāta teiciens ar *-ing*).
 
-Divdabja teicienu virziens ir rakstīts pēc Hewings un *Gold C1*, tāpēc apjoms var atšķirties no vietnes. Pārējie deviņi virzieni ir salīdzināti ar lapām: kopumā tie sakrita ar Hewings, un pēc lapām pielikti deviņi punkti (teikums kā teikuma priekšmets, *one of … who*, prievārds ciešamajā kārtā un aiz nenoteiksmes, vairākvārdu prievārdi, *the extent to which*, *fronting* ar *as / though* un ar divdabi, *perfect* vienkāršā vai ilgstošā forma visos laikos).
+Nav redzētas trīs lapu daļas; karti tās nekavē, bet attiecīgie punkti ir rakstīti pēc Hewings un atzīmēti:
+1. *Prepositions: position and advanced patterns*: lapas pirmā daļa (pirms *Common formal patterns with which*).
+2. *will, would*: *would* daļas beigas.
+3. *Advanced past simple, past continuous and past perfect*: skaidrojuma augšējā puse.
+
+Kad rakstīsim C1 uzdevumus, noderēs pa vienam uzdevumam no lapām, kurām redzēju tikai skaidrojumu (*Subject-verb agreement*, *Prepositions*, *Advanced word order*, *will, would*, *should*): tie rāda, kādas uzdevumu formas vietne lieto.
 
 ### 5.3. Zināšanai (lēmums nav vajadzīgs)
 
-- **Cik sīka ir karte.** Kartē ir 383 punkti (222 esošajām tēmām; uzdevuma aprakstā bija gaidīti ap 150). Dalījumu paturu: punkts ir vienība, uz kuru pēc kļūdas sūtīt izglītojamo atpakaļ (*been / gone*, nevis "Present perfect") un pēc kuras rakstīt uzdevumus. *Learned* un ceļa soļus arī turpmāk var skaitīt pa tēmu un līmeni kā tagad. Ja gribi rupjāku karti, ap 60 punktu, kas uz kartītes ir tikai *Watch out* rinda, var apvienot ar lielākajiem.
+- **Cik sīka ir karte.** Kartē ir 387 punkti (222 esošajām tēmām; uzdevuma aprakstā bija gaidīti ap 150). Dalījumu paturu: punkts ir vienība, uz kuru pēc kļūdas sūtīt izglītojamo atpakaļ (*been / gone*, nevis "Present perfect") un pēc kuras rakstīt uzdevumus. *Learned* un ceļa soļus arī turpmāk var skaitīt pa tēmu un līmeni kā tagad. Ja gribi rupjāku karti, ap 60 punktu, kas uz kartītes ir tikai *Watch out* rinda, var apvienot ar lielākajiem.
 - ***To* un *for* mērķim** (`purpose_to`) kartē ir A2.2, kā sarakstā; lietotnē uzdevumi sākas no B1.1, bet A2.2 ceļā šāda soļa nav, tāpēc tas nevienu netraucē. A2.2 uzdevumi būs vajadzīgi, kad ceļu rēķinās no kartes.
 - **Secība līmeņa iekšienē** paliek saraksta secība. Karte to maina tikai tur, kur priekšnosacījums to prasa; ir divas tādas vietas. *Be used to* (B1 sarakstā pirms *Gerund or infinitive*) prasa *-ing* aiz prievārda (`vp_prep_ing`). *So am I, neither do I* (A2 sarakstā pirms *Auxiliary verbs do, be, have*) prasa prast izvēlēties palīgdarbības vārdu (`aux_mix`). Abos gadījumos solis jāliek pēc priekšnosacījuma.
 - **Divi punkti, ko test-english rāda tikai C1 lapā**, bet Murphy un EGP liek zemāk: *should* gaidāmajam (*She should be there by now*) un *won't* atteikumam (*The door won't open*). Kartē tiem ir zemāka rinda (`should_expect` B2.1, `wont_refuse` B1.2), un C1 paliek tikai smalkākā daļa.

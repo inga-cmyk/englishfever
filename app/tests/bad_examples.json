@@ -362,5 +362,28 @@
  {
   "what": "A word order whose cards make another correct sentence when who asks whom is not given (report of 13 November)",
   "reader": "'she asked if I could help her': the same cards give 'I asked her if she could help'. Say who speaks to whom before the task (Anna's question to you: 'Can you help me?')."
+ },
+ {
+  "what": "A long situation before an easy choice (report of 13 November)",
+  "reader": "'You want to say your report was finished in March. Choose the correct option.' Say only Choose the correct option, and put the time word in the sentence (I ___ my report last March). A situation only where the form depends on it, and then as natural as possible."
+ },
+ {
+  "what": "A typed question whose key drops words the learner may keep (report of 13 November)",
+  "reader": "'Make a question with What: You are going to cook dinner.' → What are you going to cook for dinner? is correct too. For every Make a question task, also accept the question that keeps the rest of the sentence or leaves out an extra phrase (Why did he leave?)."
+ },
+ {
+  "what": "A long situation before an easy choice (report of 13 November)",
+  "gate": "long_frame",
+  "task": {
+   "skill": "past_simple",
+   "level": "B1.1",
+   "kind": "mcq",
+   "q": "You want to say your report was finished in March, and you are telling your manager about it now. Choose the correct option.",
+   "correct": "I finished it in March.",
+   "wrong": [
+    "I have finished it in March.",
+    "I finish it in March."
+   ]
+  }
  }
 ]

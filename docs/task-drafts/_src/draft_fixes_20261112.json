@@ -76,6 +76,28 @@
     "4": "Yesterday, while we were waiting for the bus, a man asked us for directions.",
     "9": "Join with while: We were waiting. A man asked us for directions."
    }
+  },
+  {
+   "match": [
+    "text",
+    "Make a question with *When*: Your parents are visiting you this weekend.",
+    "When are your parents visiting you?"
+   ],
+   "line": 66,
+   "set": {
+    "4": "When are your parents visiting you? | When are your parents visiting?"
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Make a question with How long: They stayed in Rome for a week.",
+    "How long did they stay in Rome?"
+   ],
+   "line": 99,
+   "set": {
+    "4": "How long did they stay in Rome? | How long did they stay?"
+   }
   }
  ],
  "modal-verbs-1.csv": [
@@ -160,6 +182,17 @@
    ],
    "line": 172,
    "drop": true
+  },
+  {
+   "match": [
+    "text",
+    "Make a question with *Who*: The report is checked by the manager.",
+    "Who is the report checked by?"
+   ],
+   "line": 28,
+   "set": {
+    "4": "Who is the report checked by? | By whom is the report checked?"
+   }
   }
  ],
  "b1-new-1.csv": [
@@ -746,6 +779,43 @@
    "line": 37,
    "set": {
     "3": "Anna's question to you: 'Can you help me?' Put the words in order."
+   }
+  }
+ ],
+ "a2-extras-1.csv": [
+  {
+   "match": [
+    "text",
+    "Make a question with *What*: You are going to cook dinner.",
+    "What are you going to cook?"
+   ],
+   "line": 77,
+   "set": {
+    "4": "What are you going to cook? | What are you going to cook for dinner?"
+   }
+  },
+  {
+   "match": [
+    "text",
+    "Make a question with Why: He left early.",
+    "Why did he leave early?"
+   ],
+   "line": 52,
+   "set": {
+    "4": "Why did he leave early? | Why did he leave?"
+   }
+  }
+ ],
+ "more-1.csv": [
+  {
+   "match": [
+    "text",
+    "Make a question with *Who*: You saw Tom yesterday.",
+    "Who did you see yesterday?"
+   ],
+   "line": 86,
+   "set": {
+    "4": "Who did you see yesterday? | Who did you see? | Whom did you see yesterday? | Whom did you see?"
    }
   }
  ]

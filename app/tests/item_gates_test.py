@@ -98,8 +98,13 @@ def g_cond_situation(i):   # 11 November (c-0737): a typed conditional with both
     return ["typed conditional with both parts open and no situation sentence: give the situation (I failed the test last week. If I ___ …)"]
 
 
+def g_long_frame(i):   # 13 November: "Choose the correct option" needs no story; a situation only where the form depends on it, and short
+    m = re.match(r"^(.*?)\s*Choose the (correct|right|more natural) option", i["q"])
+    return ["a long situation before 'Choose the correct option' (" + str(len(m.group(1).split())) + " words): keep it only if the form depends on it"] if (i["kind"] == "mcq" and m and len(m.group(1).split()) > 10) else []
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame}
 
 
 def key(i):

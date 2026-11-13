@@ -1134,7 +1134,7 @@
 "why_lv": "Noliegums: *didn't* + pamatforma."
 },
 {
-"id": "pa-B11-3b",
+"id": "pa-B11-3b-r2",
 "skill": "past_simple",
 "level": "B1.1",
 "bloom": 3,
@@ -1142,7 +1142,8 @@
 "q": "Make a question with When: She moved to London.",
 "answers": [
 [
-"When did she move to London?"
+"When did she move to London?",
+"When did she move?"
 ]
 ],
 "why": "Question word + *did* + subject + base verb.",
@@ -1173,21 +1174,22 @@
 "why_lv": "Pēc *did* lieto pamatformu: *Why did you go home early?*"
 },
 {
-"id": "pa-B11-5a",
+"id": "pa-B11-5a-r2",
 "skill": "past_simple",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to say your report was finished in March. Choose the correct option.",
-"correct": "I finished it in March.",
+"q": "Choose the correct option: I ___ my report last March.",
+"correct": "finished",
 "wrong": [
-"I have finished it in March.",
-"I am finishing it in March.",
-"I finish it in March."
+"have finished",
+"finish",
+"am finishing"
 ],
-"why": "*In March* is a finished time, so we use the past simple, not the present perfect.",
+"why": "*last March* is a finished time: past simple *finished*.",
 "wrong_why": {},
-"why_lv": "*In March* ir pabeigts laiks, tāpēc lieto Past Simple, nevis Present Perfect."
+"why_lv": "*last March* ir pabeigts laiks: Past Simple *finished*.",
+"wrong_why_lv": {}
 },
 {
 "id": "pa-B11-6a-r3",

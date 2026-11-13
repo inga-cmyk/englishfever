@@ -23,5 +23,23 @@
   "subject_object_q | A2.2 | match | Match each question with what it asks about. | Who called Tom? = the person who called ; Who did Anna call? = the person Anna called ; What fell? = the thing that fell ; What did Anna buy? = the thing Anna bought"
  ],
  "lv": [],
- "cond_situation": []
+ "cond_situation": [],
+ "long_frame": [
+  "cond_first | A2.2 | mcq | A friend writes: 'If I will have time, I will call you.' Choose the correct option. | If I have time, I'll call you.",
+  "cond_first | B1.1 | mcq | You want to warn a friend who keeps forgetting his password. Choose the correct option. | If you forget it again, you'll be locked out.",
+  "cond_first | B1.2 | mcq | In an email to a client you want to sound confident but polite. Choose the correct option. | If you send us the documents today, we will process your request by Friday.",
+  "cond_mixed | B2.1 | mcq | You explain why someone is tired today because of last night. Choose the correct option. | If I hadn't stayed up so late, I wouldn't be so tired now.",
+  "cond_mixed | B2.2 | mcq | You write a formal report about a past failure with a present effect. Choose the correct option. | Had the contract been checked properly, we would not be facing these penalties now.",
+  "cond_second | B1.1 | mcq | Your friend can't decide whether to quit and become a baker. You give advice. Choose the correct option. | If I were you, I would talk to a few bakers first.",
+  "cond_zero | A2.2 | mcq | A learner wrote: 'If you will mix blue and yellow, you get green.' Choose the correct option. | Remove will before mix.",
+  "cond_zero | B1.1 | mcq | Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Choose the correct option. | If a visitor arrives, sign them in at reception.",
+  "future | A2.1 | mcq | A friend asks: 'What are you going to do at the weekend?' Choose the correct option. | I'm going to visit my parents.",
+  "future_passive | B1.1 | mcq | You do not want to say who will do the action. Choose the correct option. | The files will be checked on Monday.",
+  "past_continuous | B1.1 | mcq | You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option. | ran",
+  "past_simple_passive | B1.1 | mcq | A news report says what happened but the person who did it is unknown. Choose the correct option. | A car was stolen last night.",
+  "present_perfect_continuous | B1.2 | mcq | Your boss asks why you look tired. You were in traffic for an hour until now. Choose the correct option. | I've been sitting in traffic for an hour.",
+  "present_simple_passive | B1.1 | mcq | You want to write a neutral email and not blame anyone. Choose the correct option. | The invoices are sent on Fridays.",
+  "rep_questions | B1.2 | mcq | A hotel guest asked: 'Is breakfast included?' You report the question. Choose the correct option. | The guest asked whether breakfast was included.",
+  "rep_questions | B2.2 | mcq | You write meeting minutes: 'Has the budget been approved?' Ms Novak asked. Choose the correct option. | Ms Novak asked whether the budget had been approved."
+ ]
 }

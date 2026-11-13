@@ -688,6 +688,45 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pabeigtu darbību virknei secībā lieto Past Simple."
 },
 {
+"id": "pa-B11-3b",
+"skill": "past_simple",
+"level": "B1.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make a question with When: She moved to London.",
+"answers": [
+[
+"When did she move to London?"
+]
+],
+"why": "Question word + *did* + subject + base verb.",
+"hints": [
+[
+"\\bmoved\\b",
+"After *did* we use the base verb: *move.*",
+"Pēc *did* lieto pamatformu: *move*."
+]
+],
+"why_lv": "Jautājamais vārds + *did* + teik. priekšmets + pamatforma."
+},
+{
+"id": "pa-B11-5a",
+"skill": "past_simple",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to say your report was finished in March. Choose the correct option.",
+"correct": "I finished it in March.",
+"wrong": [
+"I have finished it in March.",
+"I am finishing it in March.",
+"I finish it in March."
+],
+"why": "*In March* is a finished time, so we use the past simple, not the present perfect.",
+"wrong_why": {},
+"why_lv": "*In March* ir pabeigts laiks, tāpēc lieto Past Simple, nevis Present Perfect."
+},
+{
 "id": "pa-B11-6a",
 "skill": "past_simple",
 "level": "B1.1",

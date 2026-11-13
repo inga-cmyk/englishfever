@@ -714,6 +714,10 @@ def revise(original):
     report_fix('ia-B22-3a', q='Say it shorter with *to*: Can you tell me how I can get to the museum?',
         answers=[['Can you tell me how to get to the museum?']],
         why='*how* + *to* + base form: *how to get*.', why_lv='*how* + *to* + pamatforma: *how to get*.')
+    # Reports of 13 November: a short instruction; the time word decides the form (teacher: context only where the form depends on it)
+    report_fix('pa-B11-5a', q='Choose the correct option: I ___ my report last March.', correct='finished', wrong=['have finished', 'finish', 'am finishing'],
+        why='*last March* is a finished time: past simple *finished*.', why_lv='*last March* ir pabeigts laiks: Past Simple *finished*.', wrong_why={}, wrong_why_lv={})
+    report_fix('pa-B11-3b', answers=[['When did she move to London?', 'When did she move?']])
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

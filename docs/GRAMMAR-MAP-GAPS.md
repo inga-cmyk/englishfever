@@ -4,7 +4,7 @@ Sagatavots 2026. gada 13. novembrī kopā ar `docs/GRAMMAR-MAP.md`. Punktu `id` 
 
 Saturs: 1. punkti bez satura · 2. līmeņu atšķirības starp lietotni un karti · 3. punkti ar mazāk nekā 10 uzdevumiem · 4. kontrasta pāri bez izvēles uzdevumiem · 5. jautājumi Ingai.
 
-## 1. Atsauces sarakstu A1 līdz B2 punkti, kuriem lietotnē satura nav (69)
+## 1. Atsauces sarakstu A1 līdz B2 punkti, kuriem lietotnē satura nav (75)
 
 Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu balstās kāds C1 punkts.
 
@@ -25,7 +25,7 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `word_order` | Basic word order: subject, verb, object, place, time | A1: Basic word order | jā |
 | `prep_place2` | Next to, under, between, behind, in front of, opposite | A1: Next to, under, between… |  |
 
-**A2.2** (7)
+**A2.2** (8)
 
 | id | Punkts | Rinda atsauces sarakstā | Vajadzīgs C1 |
 |---|---|---|---|
@@ -36,8 +36,9 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `most_of` | Most, most of, the most | A2: Most, most of, the most |  |
 | `poss_pron` | Mine, yours, hers, ours, theirs; a friend of mine | A2: Pronouns and possessives |  |
 | `on_time` | On time / in time, at the end / in the end | A2: On time / in time, at the end / in the end |  |
+| `what_like` | What is she like? What does he look like? How is she? | no line in the lists |  |
 
-**B1.1** (6)
+**B1.1** (8)
 
 | id | Punkts | Rinda atsauces sarakstā | Vajadzīgs C1 |
 |---|---|---|---|
@@ -45,15 +46,18 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `phr_sep` | Phrasal verbs and the object: turn it off, look after her | B1: Phrasal verbs 1-3 |  |
 | `too_to` | Too … to, … enough to | A2: Too, too much, enough (from memory) |  |
 | `another_other` | Another, other, others, the other | B1: Another, other, others |  |
-| `reflexive` | Myself, yourself, themselves; by myself | B1: Reflexive pronouns |  |
+| `reflexive` | Myself, yourself, themselves; by myself, on my own | B1: Reflexive pronouns |  |
 | `for_since_from` | For, since, from … to | B1: For, since, from |  |
+| `one_ones` | One and ones: the red one, Which ones? | B2: Ellipsis and substitution |  |
+| `prep_phrases` | Fixed phrases with a preposition: on holiday, by mistake, at the age of, in my opinion | no line in the lists |  |
 
-**B1.2** (10)
+**B1.2** (12)
 
 | id | Punkts | Rinda atsauces sarakstā | Vajadzīgs C1 |
 |---|---|---|---|
+| `pp_first_time` | It's the first time I've … | no line in the lists | jā |
 | `still_yet` | Already, still, yet | B1+: Already, still, yet |  |
-| `fut_cont` | Future continuous: will be doing | B1+: Future continuous and future perfect |  |
+| `fut_cont` | Future continuous: will be doing | B1+: Future continuous and future perfect | jā |
 | `ought_to` | Ought to and had better | B1: Had better, it's time |  |
 | `its_time` | It's time to go; it's time for a break | B1: Had better, it's time |  |
 | `q_negative` | Negative questions: Don't you …? Why didn't you …? | B1+: Questions: different types |  |
@@ -62,12 +66,12 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `quite_rather` | Quite, pretty, rather, fairly | B1+: Pretty, rather, quite, fairly |  |
 | `senses_like` | Look like + noun, look as if + clause | B1+: Verbs of the senses; B2: Verbs of the senses | jā |
 | `compound_adj_num` | Compound adjectives with numbers: a five-star hotel, a ten-minute walk | B1: Compound adjectives with numbers |  |
+| `both_and` | Both … and, either … or, neither … nor | B1: Both, either, neither | jā |
 
-**B2.1** (25)
+**B2.1** (26)
 
 | id | Punkts | Rinda atsauces sarakstā | Vajadzīgs C1 |
 |---|---|---|---|
-| `pp_first_time` | It's the first time I've … | no line in the lists | jā |
 | `fut_perf` | Future perfect: will have done | B1+: Future continuous and future perfect | jā |
 | `likely_bound` | Likely, bound, sure to; probably and definitely with will | B1+: Likely, bound, probably | jā |
 | `deduction_past` | Deduction about the past: must have, might have, can't have done | B1+: Past modals of deduction; B2: Speculation and deduction | jā |
@@ -92,12 +96,14 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `noun_prep` | Noun + preposition: a reason for, an increase in, a solution to | B2: Noun + preposition | jā |
 | `there_it_prep` | There and it as preparatory subjects | B2: There and it as preparatory subjects | jā |
 | `have_aux` | Have: auxiliary or main verb | B2: Have: auxiliary or main verb |  |
+| `should_expect` | Should for what we expect: She should be there by now | C1: Advanced modals: will, would, should (page seen); no B2 line | jā |
+| `vp_need_help` | Need + -ing, help (to) do, can't help -ing; afraid to do / afraid of doing | no line in the lists |  |
 
 **B2.2** (10)
 
 | id | Punkts | Rinda atsauces sarakstā | Vajadzīgs C1 |
 |---|---|---|---|
-| `fut_perf_cont` | Future perfect continuous: will have been doing | B2: Future forms (from memory) |  |
+| `fut_perf_cont` | Future perfect continuous: will have been doing | B2: Future forms (from memory) | jā |
 | `distancing` | Distancing: seem, appear, apparently, is believed to have done | B2: Distancing and passive of reporting verbs |  |
 | `vp_complex` | Complex gerunds and infinitives: having done, to have done, being told | B2: Complex gerunds and infinitives | jā |
 | `vp_reduced` | Reduced infinitives: I'd love to. I didn't mean to. | B2: Reduced infinitives |  |
@@ -108,7 +114,7 @@ Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu ba
 | `cleft` | Cleft sentences: It was Tom who …, What I need is … | B2: Cleft sentences | jā |
 | `neg_inversion` | Inversion after negative adverbials: Never have I seen …, Not only … but also | B2: Inversion with negative adverbials | jā |
 
-C1: visi 72 punkti ir bez satura (lietotnē C1 līmeņa nav).
+C1: visi 79 punkti ir bez satura (lietotnē C1 līmeņa nav).
 
 ## 2. Kur līmenis lietotnē atšķiras no kartes
 
@@ -124,15 +130,18 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `wish_pres` | I wish / if only + past: a wish about now | B1.2 | B2.2 | cond_advanced | 6 |
 | `would_rather` | Would rather, would sooner, would prefer: what I prefer to do | B1.2 | B2.2 | unreal_time | 3 |
 | `iq_to` | Question word + to: I don't know what to do | B1.2 | B2.2 | ind_advanced | 7 |
-| `vp_like_ing` | Like, love, hate + -ing; want, would like + to | A2.1 | A2.2 | verb_patterns | 2 |
+| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | A2.2 | verb_patterns | 2 |
 | `plural_reg` | Regular plurals: -s, -es, -ies | A2.1 | A2.2 | irregular_plurals | 1 |
 | `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | A2.2–B1.1 | quantity | 7 |
 | `much_many` | Much, many, a lot of; How much? How many? | A2.1 | A2.2–B1.1 | quantity | 15 |
 | `a_few` | A few, a little | A2.1 | A2.2–B1.1 | quantity | 5 |
 | `a_an` | A / an with a singular noun; jobs | A2.1 | A2.2–B1.2 | articles | 21 |
-| `a_the` | A or the: first mention, then known | A2.1 | A2.2–B1.2 | articles | 16 |
+| `a_the` | A or the: first mention, then known | A2.1 | A2.2–B1.2 | articles | 15 |
 | `adj_adv` | Adjective or adverb: quick / quickly, good / well | A2.1 | A2.2–B1.2 | adverbs | 15 |
+| `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.1 | A2.2 | prep_time_place | 5 |
+| `art_zero` | No article: I like cats. She drinks tea. He lives in Riga. | A2.1 | A2.2 | articles | 1 |
 | `might` | Might and may: possibility | A2.2 | B1.1–B1.2 | more_modals | 7 |
+| `rep_say_tell` | Say or tell | A2.2 | B1.1–B2.1 | rep_statements | 15 |
 | `q_prep_end` | Questions with a preposition at the end | A2.2 | B1.1–B1.2 | subject_object_q, dep_prepositions | 7 |
 | `purpose_to` | Purpose: to + verb, for + noun | A2.2 | B1.1–B2.1 | conj_clauses | 4 |
 | `rel_subj` | Defining relative clauses: who, which, that as the subject | A2.2 | B1.1–B1.2 | relative_clauses | 16 |
@@ -140,7 +149,7 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `pastp_form` | Past perfect: had + third form, the earlier past | B1.1 | B1.2 | past_perfect, narrative | 31 |
 | `c1_modal` | First conditional with may, might, can, should or an order in the result | B1.1 | B1.2 | cond_first | 1 |
 | `rep_stay` | When the tense can stay: still true, says, has said | B1.2 | B2.1 | rep_statements | 1 |
-| `c_alt` | As long as, provided (that), even if, in case, supposing | B2.1 | B2.2 | cond_advanced | 1 |
+| `c_alt` | As long as, provided (that), even if, supposing | B2.1 | B2.2 | cond_advanced | 1 |
 | `wish_past` | I wish / if only + had done: regret about the past | B2.1 | B2.2 | cond_advanced | 4 |
 | `wish_would` | I wish … would: wanting somebody or something to change | B2.1 | B2.2 | cond_advanced | 1 |
 | `its_time_past` | It's (high / about) time + subject + past | B2.1 | B2.2 | unreal_time | 7 |
@@ -164,7 +173,6 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `neednt_have` | Didn't need to or needn't have | B2.1 | B1.1 | 4 no 4 | more_modals |
 | `c0_c1` | Zero or first conditional: always, or this one time? | B1.2 | A2.2 | 4 no 4 | cond_zero, cond_first |
 | `purpose_b2` | In order to, so as not to, in order for … to, for + -ing | B2.1 | B1.1 | 4 no 18 | conj_b2, conj_clauses |
-| `pas_negq` | Passive negatives and questions | B1.1 | A2.2 | 33 no 64 | present_simple_passive, past_simple_passive |
 | `caus_have` | Have something done | B1.2 | B1.1 | 22 no 33 | causative |
 | `iq_wh` | Indirect questions with a question word: Could you tell me where … is? | B1.2 | B1.1 | 22 no 50 | ind_polite |
 | `adj_order` | Adjective order: a lovely old house, a big red car | B1.2 | B1.1 | 22 no 41 | adj_order |
@@ -188,7 +196,7 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 **Precīzi, pa tēmas un līmeņa pāriem:** no 137 pāriem mazāk par 10 uzdevumiem, kas skaitās (*check* + *use*), ir Mixed conditionals B2.1 (9).
 
-**Aptuveni, pa punktiem:** no 218 punktiem ar tēmu lietotnē 90 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 25 punktiem šķirošana neatrada nevienu. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
+**Aptuveni, pa punktiem:** no 222 punktiem ar tēmu lietotnē 91 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 28 punktiem šķirošana neatrada nevienu. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
 
 ### 3.1. Neviens uzdevums nav atrasts
 
@@ -210,6 +218,7 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `vp_both` | Verbs with both forms and the same meaning: start, begin, continue, like | B1.1 | verb_patterns | yes |
 | `few_little` | Few and little without a: almost none | B1.1 | quantity | yes |
 | `no_none` | No, none, not any | B1.1 | quantity | partly |
+| `must_vs_have_to` | Must or have to: my own view or somebody else's rule | B1.1 | modal_verbs | partly |
 | `pc_always` | Always + continuous: an annoying habit | B1.2 | present_continuous | partly |
 | `would_habit` | Would for past habits (not states) | B1.2 | used_to | partly |
 | `pastp_order` | Past perfect or past simple: is the order already clear? | B1.2 | past_perfect, narrative | yes · skaitīts citur: pastp_form, narr_mix |
@@ -217,18 +226,22 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `c1_c2` | First or second conditional: real or imagined? | B1.2 | cond_second, cond_first | partly · skaitīts citur: c1, c2 |
 | `reason_b1` | As and since for a reason | B1.2 | conj_clauses | yes |
 | `rel_what` | What = the thing that | B1.2 | relative_clauses | partly |
+| `wont_refuse` | Won't for refusing: The door won't open | B1.2 | future | partly |
 | `c2_c3` | Second or third conditional: now or then? | B2.1 | cond_third, cond_second | partly · skaitīts citur: c2, c3 |
 | `rel_prep` | Prepositions in relative clauses: the man I was talking to / to whom | B2.1 | relative_clauses | partly |
+| `rv_that` | Reporting verbs + that: admit, explain, complain, claim, warn somebody that | B2.1 | rep_verbs | yes |
 
 ### 3.2. No 1 līdz 9 uzdevumiem, kas skaitās
 
 | id | Punkts | Karte | check | use | learn | Tēma |
 |---|---|---|---|---|---|---|
 | `plural_reg` | Regular plurals: -s, -es, -ies | A2.1 | 0 | 1 | 0 | irregular_plurals |
-| `vp_like_ing` | Like, love, hate + -ing; want, would like + to | A2.1 | 2 | 0 | 0 | verb_patterns |
+| `art_zero` | No article: I like cats. She drinks tea. He lives in Riga. | A2.1 | 1 | 0 | 0 | articles |
+| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | 2 | 0 | 0 | verb_patterns |
 | `adv_freq` | Always, usually, often, sometimes, never: where they go | A2.1 | 2 | 1 | 1 | adverbs |
 | `a_few` | A few, a little | A2.1 | 4 | 0 | 1 | quantity |
 | `sup` | Superlatives: the -est, the most …; the best, the worst | A2.1 | 2 | 2 | 1 | comparison |
+| `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.1 | 3 | 2 | 0 | prep_time_place |
 | `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | 4 | 3 | 0 | quantity |
 | `conj_and_but` | And, but, or | A2.1 | 6 | 1 | 0 | conj_basic |
 | `was_were` | Was / were | A2.1 | 5 | 3 | 1 | past_simple |
@@ -243,7 +256,6 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `the_unique` | The: the sun, the same, the best, the first; play the piano | A2.2 | 4 | 0 | 1 | articles, articles_b1 |
 | `purpose_to` | Purpose: to + verb, for + noun | A2.2 | 1 | 3 | 0 | conj_clauses |
 | `adv_degree` | Very, really, quite, too + adjective; I like it very much | A2.2 | 3 | 2 | 0 | adverbs |
-| `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.2 | 3 | 2 | 0 | prep_time_place |
 | `might` | Might and may: possibility | A2.2 | 5 | 1 | 1 | more_modals |
 | `plural_only` | Always plural: jeans, glasses, scissors; the police are | A2.2 | 4 | 2 | 0 | irregular_plurals, agreement |
 | `will_now` | Will for a decision made now: offers, promises, requests | A2.2 | 4 | 3 | 1 | future |
@@ -294,7 +306,7 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `neednt` | Needn't and don't need to | B1.2 | 4 | 3 | 0 | more_modals |
 | `pp_ppc` | Present perfect simple or continuous: how much or how long? | B1.2 | 7 | 2 | 3 | present_perfect_continuous, present_perfect |
 | `about_to` | Be about to, be due to, be to | B2.1 | 0 | 0 | 1 | future |
-| `c_alt` | As long as, provided (that), even if, in case, supposing | B2.1 | 0 | 1 | 0 | cond_advanced |
+| `c_alt` | As long as, provided (that), even if, supposing | B2.1 | 0 | 1 | 0 | cond_advanced |
 | `wish_would` | I wish … would: wanting somebody or something to change | B2.1 | 1 | 0 | 0 | cond_advanced |
 | `rel_which_all` | , which = the whole idea before it | B2.1 | 0 | 1 | 1 | relative_clauses |
 | `neednt_have` | Didn't need to or needn't have | B2.1 | 2 | 0 | 2 | more_modals |
@@ -317,18 +329,18 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 ## 4. Kontrasta pāri bez izvēles uzdevumiem
 
-Kartē ir 370 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīmē: abas formas ir starp atbilžu variantiem, un pareizā ir viena no tām.
+Kartē ir 399 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīmē: abas formas ir starp atbilžu variantiem, un pareizā ir viena no tām.
 
 ### 4.1. Pāri, kuros vienai pusei satura nav vispār
 
-Tādu ir 150: 66 līmeņos A2 līdz B2 un 84, kuros ir C1 punkts. A2 līdz B2 pāri:
+Tādu ir 171: 74 līmeņos A2 līdz B2 un 97, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `be_pres` ↔ `ps_form` · `obj_pron` ↔ `poss_adj` · `vp_like_ing` ↔ `would_like` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `q_yesno` · `poss_adj` ↔ `poss_s` · `there_is` ↔ `there_it`
-- **A2.2:** `requests` ↔ `would_like` · `poss_adj` ↔ `poss_pron` · `most_of` ↔ `sup`
-- **B1.1:** `for_since_from` ↔ `pp_for_since` · `too_to` ↔ `vp_adj_to` · `obj_pron` ↔ `reflexive` · `so_neither` ↔ `tag_basic` · `during_while` ↔ `for_since_from`
-- **B1.2:** `so_that` ↔ `too_to` · `fut_cont` ↔ `will_form` · `quite_rather` ↔ `so_such_basic` · `its_time` ↔ `ought_to` · `adv_extreme` ↔ `quite_rather` · `pp_just` ↔ `still_yet` · `adv_position` ↔ `word_order` · `all_both` ↔ `no_none` · `link_adj` ↔ `senses_like` · `all_both` ↔ `each_every` · `q_negative` ↔ `tag_basic` · `no_longer` ↔ `still_yet` · `ought_to` ↔ `should` · `would_like` ↔ `would_rather` · `adv_degree` ↔ `quite_rather`
-- **B2.1:** `compound_adj_num` ↔ `poss_time` · `there_it` ↔ `there_it_prep` · `eding` ↔ `part_reduced` · `caus_get` ↔ `get_b2` · `cmp_modify` ↔ `cmp_modify_b2` · `get_b2` ↔ `vp_make_let` · `deduction` ↔ `likely_bound` · `have_aux` ↔ `have_got` · `part_reduced` ↔ `rel_subj` · `its_time` ↔ `its_time_past` · `must_have_to` ↔ `supposed_to` · `cmp_as` ↔ `like_as` · `dep_verb` ↔ `noun_prep` · `deduction_past` ↔ `should_have` · `pas_cont` ↔ `pas_other` · `deduction` ↔ `deduction_past` · `deduction` ↔ `modals_cont` · `vp_make_let` ↔ `vp_see_do` · `reciprocal` ↔ `reflexive` · `pas_two_obj` ↔ `two_obj` · `fut_cont` ↔ `fut_perf` · `compound_nouns` ↔ `poss_s` · `pas_inf_ing` ↔ `vp_ing` · `pas_report` ↔ `rep_backshift` · `vp_obj_ing` ↔ `vp_obj_to` · `pas_other` ↔ `pas_perf` · `pas_inf_ing` ↔ `vp_to` · `like_as` ↔ `senses_like`
-- **B2.2:** `aux_uses` ↔ `ellipsis` · `ellipsis` ↔ `vp_reduced` · `cleft` ↔ `rel_what` · `part_adv` ↔ `part_reduced` · `distancing` ↔ `pas_report` · `pas_inf_ing` ↔ `vp_complex` · `fut_perf` ↔ `fut_perf_cont` · `c_inv` ↔ `neg_inversion`
+- **A2.1:** `poss_adj` ↔ `poss_s` · `vp_like_ing` ↔ `would_like` · `be_pres` ↔ `have_got` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `ps_form` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `q_yesno` · `there_is` ↔ `there_it`
+- **A2.2:** `most_of` ↔ `sup` · `poss_adj` ↔ `poss_pron` · `vp_like_ing` ↔ `what_like` · `requests` ↔ `would_like`
+- **B1.1:** `for_since_from` ↔ `pp_for_since` · `obj_pron` ↔ `reflexive` · `too_to` ↔ `vp_adj_to` · `so_neither` ↔ `tag_basic` · `during_while` ↔ `for_since_from`
+- **B1.2:** `all_both` ↔ `no_none` · `all_both` ↔ `each_every` · `pp_just` ↔ `still_yet` · `adv_extreme` ↔ `quite_rather` · `link_adj` ↔ `senses_like` · `quite_rather` ↔ `so_such_basic` · `would_like` ↔ `would_rather` · `so_that` ↔ `too_to` · `ought_to` ↔ `should` · `adv_position` ↔ `word_order` · `both_and` ↔ `so_neither` · `its_time` ↔ `ought_to` · `all_both` ↔ `both_and` · `fut_cont` ↔ `will_form` · `adv_degree` ↔ `quite_rather` · `no_longer` ↔ `still_yet` · `q_negative` ↔ `tag_basic`
+- **B2.1:** `get_b2` ↔ `vp_make_let` · `have_aux` ↔ `have_got` · `deduction` ↔ `should_expect` · `cmp_modify` ↔ `cmp_modify_b2` · `pas_inf_ing` ↔ `vp_to` · `dep_verb` ↔ `noun_prep` · `vp_make_let` ↔ `vp_see_do` · `pas_inf_ing` ↔ `vp_ing` · `like_as` ↔ `senses_like` · `pas_cont` ↔ `pas_other` · `compound_nouns` ↔ `poss_s` · `part_reduced` ↔ `rel_subj` · `pas_two_obj` ↔ `two_obj` · `caus_get` ↔ `get_b2` · `pas_other` ↔ `pas_perf` · `cmp_as` ↔ `like_as` · `likely_bound` ↔ `should_expect` · `vp_meaning` ↔ `vp_need_help` · `vp_obj_ing` ↔ `vp_obj_to` · `fut_cont` ↔ `fut_perf` · `deduction` ↔ `deduction_past` · `there_it` ↔ `there_it_prep` · `deduction` ↔ `likely_bound` · `must_have_to` ↔ `supposed_to` · `compound_adj_num` ↔ `poss_time` · `eding` ↔ `part_reduced` · `deduction` ↔ `modals_cont` · `reciprocal` ↔ `reflexive` · `pas_report` ↔ `rep_backshift` · `its_time` ↔ `its_time_past` · `deduction_past` ↔ `should_have`
+- **B2.2:** `distancing` ↔ `pas_report` · `fut_perf` ↔ `fut_perf_cont` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `one_ones` · `ellipsis` ↔ `vp_reduced` · `part_adv` ↔ `part_reduced` · `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `pas_inf_ing` ↔ `vp_complex`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
@@ -378,9 +390,79 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 
 ### 4.3. Pārējie pāri
 
-Kartē ir 220 pāri, kuros abām pusēm saturs ir. Tabulā 4.2 saskaitīti 39 formu pāri, kam ir skaidra pazīme vārdos; pārējiem tādas pazīmes nav, un tie nav saskaitīti. Tos varēs saskaitīt precīzi, kad uzdevumi būs piesaistīti punktiem (nākamais posms). Līdz tam drošākais rādītājs ir 3. sadaļa: ja vienam pāra punktam ir zem 10 uzdevumiem, arī izvēles uzdevumu starp abiem gandrīz noteikti nav.
+Kartē ir 228 pāri, kuros abām pusēm saturs ir. Tabulā 4.2 saskaitīti 39 formu pāri, kam ir skaidra pazīme vārdos; pārējiem tādas pazīmes nav, un tie nav saskaitīti. Tos varēs saskaitīt precīzi, kad uzdevumi būs piesaistīti punktiem (nākamais posms). Līdz tam drošākais rādītājs ir 3. sadaļa: ja vienam pāra punktam ir zem 10 uzdevumiem, arī izvēles uzdevumu starp abiem gandrīz noteikti nav.
 
 ## 5. Jautājumi Ingai
 
-(tiks pievienoti)
+Šeit ir tikai tas, ko nevar izlemt bez tevis. Katram ir mans ieteikums; ja piekrīti, pietiek ar "1 A, 2 A …".
+
+### J1. Trīs A2 saraksta tēmas, kuras EGP un lietotne liek B1
+
+| Punkts | Atsauces saraksts | EGP | Lietotnē tagad | Kartē ielikts |
+|---|---|---|---|---|
+| Past perfect (`pastp_form`) | A2 un vēlreiz B1 | B1 | B1.2 | B1.1 |
+| Second conditional (`c2`) | A2 un vēlreiz B1 | B1 | B1.1 | B1.1 |
+| Reported speech ar laika maiņu (`rep_backshift`) | A2 un vēlreiz B1 | A2 tikai *say / tell* ar vietniekvārda maiņu; laika maiņa B1 | B1.1 | B1.1 |
+
+- **A (iesaku):** kartē tie paliek B1.1. A2.2 ceļā soļi *Past perfect*, *Second conditional* un *Reported speech* tad nav vajadzīgi (tagad tie A2.2 izglītojamajam dod B1 uzdevumus).
+- **B:** sekot sarakstam burtiski: A2.2, un katram jāuzraksta ap 25 A2 garuma uzdevumu (viena forma, viens teikums, bez laiku jaukšanas).
+
+Tikai *say* un *tell* bez laika maiņas (`rep_say_tell`: *He told me that …*) kartē ir A2.2, jo tur saraksts un EGP sakrīt.
+
+Iemesls A: divi avoti no trim un pati lietotne ir vienisprātis, un visiem trim punktiem priekšnosacījumi (trešā forma, *would*, pagātnes laiki) A2.2 beigās vēl ir svaigi.
+
+### J2. Punkti, kas kartē ir A2.2, bet lietotnē sākas tikai B1
+
+*Defining relative clauses* ar *who / which / that* (`rel_subj`: saraksts A2, EGP A2), *might / may* (`might`: saraksts A2, EGP A2), *to* un *for* mērķim (`purpose_to`: saraksts A2). A2.2 ceļā šie soļi jau ir, bet uzdevumi nāk no B1.
+
+- **A (iesaku):** uzrakstīt A2.2 uzdevumus šiem trim punktiem (katram ap 25), šādā secībā: `rel_subj`, `might`, `purpose_to`.
+- **B:** pārcelt punktus uz B1.1 un izņemt soļus no A2.2 ceļa.
+
+### J3. *Wish*, *would rather*, *it's time*: saraksts tos liek B1 un B1+, lietotnē tie ir tikai B2.2
+
+`wish_pres` (*I wish I had more time*) un `would_rather` (*I'd rather walk*) sarakstā ir B1 un B1+, EGP *wish* + past ir B1. Lietotnē visi uzdevumi ir B2.2 (bijušais C1).
+
+- **A (iesaku):** kartē B1.2; uzrakstīt B1.2 uzdevumus šiem diviem punktiem. Esošie B2.2 uzdevumi paliek punktiem `wish_past`, `wish_would`, `its_time_past`, `rather_you` (kartē B2.1).
+- **B:** atstāt visu B2 un kartē punktus pacelt uz B2.1.
+
+### J4. Kas ir B2 un kas ir C1: inversija, *cleft sentences*, jauktie nosacījuma teikumi
+
+Atsauces saraksts tos liek B2. EGP tos liek C1 līdz C2 (apgrieztie nosacījuma teikumi: *should* C1, *had / were* C2; *what*-cleft C1, *it*-cleft C2; *not only* ar inversiju C1, *hardly … when* C2). *Gold C1* tos māca C1 līmenī, un tavs 3. novembra noteikums arī sauc inversiju par C1.
+
+- **A (iesaku):** dalīt pēc tā, kas no izglītojamā tiek prasīts. **B2.2:** atpazīt un izveidot formu, kad sākums ir dots (*Had I known …*, *Never have I …*, *What I need is …*): punkti `c_inv`, `neg_inversion`, `cleft`. **C1.2:** pašam izvēlēties un pārveidot (*key-word transformation*, pilns komplekts, *but for*, *were … to*, *Not until … did*): punkti `x_inv_cond`, `x_inv_neg`, `x_inv_main`, `x_cleft_adv`. Tā karte seko sarakstam, un C1 ir īsts C1.
+- **B:** visu pārcelt uz C1 un B2.2 atstāt tikai jauktos nosacījuma teikumus.
+
+### J5. C1 dalījums divās pusēs
+
+Kartē pirmie pieci saraksta virzieni (laiki un modālie darbības vārdi) ir C1.1, pēdējie pieci (*subjunctive*, saskaņošana, prievārdi, divdabja teicieni, vārdu secība) ir C1.2.
+
+- **A (iesaku):** tā atstāt: secība ir saraksta secība, un C1.2 virzieni balstās uz B2 punktiem, kuru lietotnē vēl nav (sk. kartes beigas), tāpēc tie tāpat jāraksta vēlāk.
+- **B:** cits dalījums pēc tavas izvēles.
+
+### J6. Cik sīka ir karte
+
+Kartē ir 376 punkti; uzdevuma aprakstā bija gaidīti ap 150 esošajām tēmām, sanāca 222. Sīkāks dalījums ļauj pēc kļūdas sūtīt izglītojamo atpakaļ uz precīzu vietu (*been / gone*, nevis "Present perfect"), bet katram punktam tad vajag savus 10 uzdevumus.
+
+- **A (iesaku):** paturēt šo dalījumu kartē, bet *Learned* un ceļa soļus skaitīt pa punktu grupām (tēma un līmenis kā tagad). Punkts ir vienība kļūdu atgriešanai un uzdevumu rakstīšanai, nevis ceļa solis.
+- **B:** apvienot sīkos punktus (ap 60 punktu, kas uz kartītes ir tikai *Watch out* rinda) ar lielākajiem.
+
+### J7. Vēl vajadzīgie materiāli
+
+Septiņas C1 lapas esmu redzējis (piecas pilnībā, divas daļēji); kartē pie katra punkta ir atzīmēts. Vēl lūdzu tādā pašā veidā:
+1. *Advanced past simple, past continuous and past perfect*: skaidrojuma augšējo pusi (pirms *Politeness or tentativeness*).
+2. *will, would*: *would* daļas beigas un uzdevumus.
+3. *Subject-verb agreement: advanced rules*.
+4. *Prepositions: position and advanced patterns*.
+5. *Advanced participle clauses*.
+6. *Advanced word order*.
+
+Šie četri neredzētie virzieni ir rakstīti pēc Hewings un *Gold C1*, tāpēc apjoms var atšķirties no vietnes. Pēc katras lapas attiecīgo virzienu salīdzināšu un izlabošu. Līdz šim salīdzinātie virzieni (*perfect tenses*, *can / may / might*, *subjunctive*, *should*) sakrita ar Hewings gandrīz pilnībā.
+
+### Zināšanai (lēmums nav vajadzīgs)
+
+- **Secība līmeņa iekšienē** paliek saraksta secība. Karte to maina tikai tur, kur priekšnosacījums to prasa; ir divas tādas vietas. *Be used to* (B1 sarakstā pirms *Gerund or infinitive*) prasa *-ing* aiz prievārda (`vp_prep_ing`). *So am I, neither do I* (A2 sarakstā pirms *Auxiliary verbs do, be, have*) prasa prast izvēlēties palīgdarbības vārdu (`aux_mix`). Abos gadījumos solis jāliek pēc priekšnosacījuma.
+- **Divi punkti, ko test-english rāda tikai C1 lapā**, bet Murphy un EGP liek zemāk: *should* gaidāmajam (*She should be there by now*) un *won't* atteikumam (*The door won't open*). Kartē tiem ir zemāka rinda (`should_expect` B2.1, `wont_refuse` B1.2), un C1 paliek tikai smalkākā daļa.
+- **Tēmas, kas lietotnē sākas agrāk nekā sarakstā** (*-ed / -ing adjectives* A2.2, *question tags* A2.2, *indirect questions* B1.1, *have something done* B1.1): ceļā tās jau tagad atveras saraksta līmenī, tāpēc nekas nav jāmaina; agrākie uzdevumi paliek kā vieglie pirmie uzdevumi.
+- **Punkti bez savas rindas sarakstā**, bet ar Murphy nodaļu (`should_have`, `iq_to`, `requests`, `by_until`, `pp_first_time`, `vp_worth`, `like_as`, `what_like`, `one_ones`, `vp_need_help`, `prep_phrases`): kartē ir, jo uz tiem balstās citi punkti vai tie ir tipisku kļūdu vieta.
+- **EGP lietošanas noteikumi:** līmeņu pārbaudei to drīkst izmantot; reklamēt lietotni kā "English Profile informed" bez rakstiskas atļaujas nedrīkst.
 

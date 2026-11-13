@@ -1,8 +1,8 @@
-# Gramatikas karte: robi un jautājumi
+# Gramatikas karte: robi un lēmumi
 
 Sagatavots 2026. gada 13. novembrī kopā ar `docs/GRAMMAR-MAP.md`. Punktu `id` ir tie paši, kas kartē. Uzdevumu skaits pie punktiem ir **aptuvens** (automātiska šķirošana pēc teikuma un atbildes vārdiem); tēmas un līmeņa summas 3. sadaļas sākumā ir precīzas.
 
-Saturs: 1. punkti bez satura · 2. līmeņu atšķirības starp lietotni un karti · 3. punkti ar mazāk nekā 10 uzdevumiem · 4. kontrasta pāri bez izvēles uzdevumiem · 5. jautājumi Ingai.
+Saturs: 1. punkti bez satura · 2. līmeņu atšķirības starp lietotni un karti · 3. punkti ar mazāk nekā 10 uzdevumiem · 4. kontrasta pāri bez izvēles uzdevumiem · 5. Ingas lēmumi un kas vēl vajadzīgs.
 
 ## 1. Atsauces sarakstu A1 līdz B2 punkti, kuriem lietotnē satura nav (75)
 
@@ -335,12 +335,12 @@ Kartē ir 399 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīm�
 
 Tādu ir 171: 74 līmeņos A2 līdz B2 un 97, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `poss_adj` ↔ `poss_s` · `vp_like_ing` ↔ `would_like` · `be_pres` ↔ `have_got` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `ps_form` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `q_yesno` · `there_is` ↔ `there_it`
-- **A2.2:** `most_of` ↔ `sup` · `poss_adj` ↔ `poss_pron` · `vp_like_ing` ↔ `what_like` · `requests` ↔ `would_like`
-- **B1.1:** `for_since_from` ↔ `pp_for_since` · `obj_pron` ↔ `reflexive` · `too_to` ↔ `vp_adj_to` · `so_neither` ↔ `tag_basic` · `during_while` ↔ `for_since_from`
-- **B1.2:** `all_both` ↔ `no_none` · `all_both` ↔ `each_every` · `pp_just` ↔ `still_yet` · `adv_extreme` ↔ `quite_rather` · `link_adj` ↔ `senses_like` · `quite_rather` ↔ `so_such_basic` · `would_like` ↔ `would_rather` · `so_that` ↔ `too_to` · `ought_to` ↔ `should` · `adv_position` ↔ `word_order` · `both_and` ↔ `so_neither` · `its_time` ↔ `ought_to` · `all_both` ↔ `both_and` · `fut_cont` ↔ `will_form` · `adv_degree` ↔ `quite_rather` · `no_longer` ↔ `still_yet` · `q_negative` ↔ `tag_basic`
-- **B2.1:** `get_b2` ↔ `vp_make_let` · `have_aux` ↔ `have_got` · `deduction` ↔ `should_expect` · `cmp_modify` ↔ `cmp_modify_b2` · `pas_inf_ing` ↔ `vp_to` · `dep_verb` ↔ `noun_prep` · `vp_make_let` ↔ `vp_see_do` · `pas_inf_ing` ↔ `vp_ing` · `like_as` ↔ `senses_like` · `pas_cont` ↔ `pas_other` · `compound_nouns` ↔ `poss_s` · `part_reduced` ↔ `rel_subj` · `pas_two_obj` ↔ `two_obj` · `caus_get` ↔ `get_b2` · `pas_other` ↔ `pas_perf` · `cmp_as` ↔ `like_as` · `likely_bound` ↔ `should_expect` · `vp_meaning` ↔ `vp_need_help` · `vp_obj_ing` ↔ `vp_obj_to` · `fut_cont` ↔ `fut_perf` · `deduction` ↔ `deduction_past` · `there_it` ↔ `there_it_prep` · `deduction` ↔ `likely_bound` · `must_have_to` ↔ `supposed_to` · `compound_adj_num` ↔ `poss_time` · `eding` ↔ `part_reduced` · `deduction` ↔ `modals_cont` · `reciprocal` ↔ `reflexive` · `pas_report` ↔ `rep_backshift` · `its_time` ↔ `its_time_past` · `deduction_past` ↔ `should_have`
-- **B2.2:** `distancing` ↔ `pas_report` · `fut_perf` ↔ `fut_perf_cont` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `one_ones` · `ellipsis` ↔ `vp_reduced` · `part_adv` ↔ `part_reduced` · `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `pas_inf_ing` ↔ `vp_complex`
+- **A2.1:** `there_is` ↔ `there_it` · `vp_like_ing` ↔ `would_like` · `be_pres` ↔ `ps_form` · `be_pres` ↔ `have_got` · `be_pres` ↔ `q_yesno` · `be_pres` ↔ `ps_negq` · `obj_pron` ↔ `poss_adj` · `poss_adj` ↔ `poss_s`
+- **A2.2:** `poss_adj` ↔ `poss_pron` · `vp_like_ing` ↔ `what_like` · `requests` ↔ `would_like` · `most_of` ↔ `sup`
+- **B1.1:** `for_since_from` ↔ `pp_for_since` · `too_to` ↔ `vp_adj_to` · `during_while` ↔ `for_since_from` · `so_neither` ↔ `tag_basic` · `obj_pron` ↔ `reflexive`
+- **B1.2:** `adv_degree` ↔ `quite_rather` · `adv_position` ↔ `word_order` · `both_and` ↔ `so_neither` · `no_longer` ↔ `still_yet` · `q_negative` ↔ `tag_basic` · `so_that` ↔ `too_to` · `all_both` ↔ `no_none` · `would_like` ↔ `would_rather` · `ought_to` ↔ `should` · `link_adj` ↔ `senses_like` · `its_time` ↔ `ought_to` · `adv_extreme` ↔ `quite_rather` · `all_both` ↔ `both_and` · `all_both` ↔ `each_every` · `fut_cont` ↔ `will_form` · `pp_just` ↔ `still_yet` · `quite_rather` ↔ `so_such_basic`
+- **B2.1:** `dep_verb` ↔ `noun_prep` · `pas_two_obj` ↔ `two_obj` · `caus_get` ↔ `get_b2` · `compound_adj_num` ↔ `poss_time` · `vp_meaning` ↔ `vp_need_help` · `like_as` ↔ `senses_like` · `pas_inf_ing` ↔ `vp_to` · `vp_make_let` ↔ `vp_see_do` · `deduction` ↔ `deduction_past` · `must_have_to` ↔ `supposed_to` · `deduction` ↔ `should_expect` · `likely_bound` ↔ `should_expect` · `reciprocal` ↔ `reflexive` · `its_time` ↔ `its_time_past` · `cmp_as` ↔ `like_as` · `deduction_past` ↔ `should_have` · `compound_nouns` ↔ `poss_s` · `part_reduced` ↔ `rel_subj` · `deduction` ↔ `likely_bound` · `cmp_modify` ↔ `cmp_modify_b2` · `pas_other` ↔ `pas_perf` · `have_aux` ↔ `have_got` · `get_b2` ↔ `vp_make_let` · `deduction` ↔ `modals_cont` · `there_it` ↔ `there_it_prep` · `eding` ↔ `part_reduced` · `vp_obj_ing` ↔ `vp_obj_to` · `fut_cont` ↔ `fut_perf` · `pas_inf_ing` ↔ `vp_ing` · `pas_cont` ↔ `pas_other` · `pas_report` ↔ `rep_backshift`
+- **B2.2:** `ellipsis` ↔ `one_ones` · `aux_uses` ↔ `ellipsis` · `distancing` ↔ `pas_report` · `part_adv` ↔ `part_reduced` · `fut_perf` ↔ `fut_perf_cont` · `ellipsis` ↔ `vp_reduced` · `c_inv` ↔ `neg_inversion` · `pas_inf_ing` ↔ `vp_complex` · `cleft` ↔ `rel_what`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
@@ -392,74 +392,36 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 
 Kartē ir 228 pāri, kuros abām pusēm saturs ir. Tabulā 4.2 saskaitīti 39 formu pāri, kam ir skaidra pazīme vārdos; pārējiem tādas pazīmes nav, un tie nav saskaitīti. Tos varēs saskaitīt precīzi, kad uzdevumi būs piesaistīti punktiem (nākamais posms). Līdz tam drošākais rādītājs ir 3. sadaļa: ja vienam pāra punktam ir zem 10 uzdevumiem, arī izvēles uzdevumu starp abiem gandrīz noteikti nav.
 
-## 5. Jautājumi Ingai
+## 5. Ingas lēmumi un kas vēl vajadzīgs
 
-Šeit ir tikai tas, ko nevar izlemt bez tevis. Katram ir mans ieteikums; ja piekrīti, pietiek ar "1 A, 2 A …".
+### 5.1. Lēmumi par līmeni (Inga, 13. novembris)
 
-### J1. Trīs A2 saraksta tēmas, kuras EGP un lietotne liek B1
+Vietas, kur avoti nesakrita. Karte ir izlabota pēc šiem lēmumiem; pie punktiem rakstīts *Decided by the teacher*.
 
-| Punkts | Atsauces saraksts | EGP | Lietotnē tagad | Kartē ielikts |
-|---|---|---|---|---|
-| Past perfect (`pastp_form`) | A2 un vēlreiz B1 | B1 | B1.2 | B1.1 |
-| Second conditional (`c2`) | A2 un vēlreiz B1 | B1 | B1.1 | B1.1 |
-| Reported speech ar laika maiņu (`rep_backshift`) | A2 un vēlreiz B1 | A2 tikai *say / tell* ar vietniekvārda maiņu; laika maiņa B1 | B1.1 | B1.1 |
+| Nr. | Jautājums | Lēmums | Kas no tā izriet |
+|---|---|---|---|
+| 1 | *Past perfect*, *second conditional*, *reported speech* ar laika maiņu: saraksts A2, EGP un lietotne B1 | **B1** (`pastp_form`, `c2`, `rep_backshift` paliek B1.1) | A2.2 ceļā soļi *Past perfect*, *Second conditional* un *Reported speech* nav vajadzīgi (ceļa izmaiņa ir nākamais posms). Jauni uzdevumi nav jāraksta. *Say / tell* bez laika maiņas (`rep_say_tell`) ir A2.2 |
+| 2 | *Defining relative clauses* un *might / may*: saraksts un EGP A2, lietotnē uzdevumi no B1 | **A2.2** (`rel_subj`, `might`) | Jāuzraksta ap 25 A2.2 uzdevumu katram punktam; kartītes ir |
+| 3 | *I wish* + past un *would rather* + verb: saraksts B1 un B1+, lietotnē B2.2 | **B1.2** (`wish_pres`, `would_rather`) | Jāuzraksta B1.2 uzdevumi šiem diviem; esošie B2.2 uzdevumi paliek punktiem `wish_past`, `wish_would`, `its_time_past`, `rather_you` |
+| 4 | Inversija un *cleft sentences*: saraksts B2, EGP un *Gold C1* liek C1 | **Dalīt** | B2.2 (`c_inv`, `neg_inversion`, `cleft`): atpazīt formu un izveidot to, kad sākums ir dots. C1 (`x_inv_cond`, `x_inv_neg`, `x_inv_main`, `x_cleft_adv`): pašam izvēlēties un pārveidot |
+| 5 | C1 dalījums divās pusēs | **Bez dalījuma** | Viens līmenis C1, desmit virzieni saraksta secībā. Lietotnē līmeņu saraksts tad ir A2.1, A2.2, B1.1, B1.2, B2.1, B2.2, C1 |
 
-- **A (iesaku):** kartē tie paliek B1.1. A2.2 ceļā soļi *Past perfect*, *Second conditional* un *Reported speech* tad nav vajadzīgi (tagad tie A2.2 izglītojamajam dod B1 uzdevumus).
-- **B:** sekot sarakstam burtiski: A2.2, un katram jāuzraksta ap 25 A2 garuma uzdevumu (viena forma, viens teikums, bez laiku jaukšanas).
+### 5.2. Kas vēl vajadzīgs no Ingas, lai karte būtu pabeigta
 
-Tikai *say* un *tell* bez laika maiņas (`rep_say_tell`: *He told me that …*) kartē ir A2.2, jo tur saraksts un EGP sakrīt.
+Tikai materiāli, pa vienam, šādā secībā:
+1. *Subject-verb agreement: advanced rules* (skaidrojums un viens uzdevums).
+2. *Prepositions: position and advanced patterns*.
+3. *Advanced participle clauses*.
+4. *Advanced word order*.
+5. *will, would*: *would* daļas beigas un uzdevumi.
+6. *Advanced past simple, past continuous and past perfect*: skaidrojuma augšējā puse.
 
-Iemesls A: divi avoti no trim un pati lietotne ir vienisprātis, un visiem trim punktiem priekšnosacījumi (trešā forma, *would*, pagātnes laiki) A2.2 beigās vēl ir svaigi.
+Šie četri neredzētie virzieni ir rakstīti pēc Hewings un *Gold C1*, tāpēc apjoms var atšķirties no vietnes. Līdz šim salīdzinātie virzieni (*perfect tenses*, *can / may / might*, *subjunctive*, *should*) sakrita ar Hewings gandrīz pilnībā; pēc katras lapas attiecīgo virzienu salīdzinu un izlaboju.
 
-### J2. Punkti, kas kartē ir A2.2, bet lietotnē sākas tikai B1
+### 5.3. Zināšanai (lēmums nav vajadzīgs)
 
-*Defining relative clauses* ar *who / which / that* (`rel_subj`: saraksts A2, EGP A2), *might / may* (`might`: saraksts A2, EGP A2), *to* un *for* mērķim (`purpose_to`: saraksts A2). A2.2 ceļā šie soļi jau ir, bet uzdevumi nāk no B1.
-
-- **A (iesaku):** uzrakstīt A2.2 uzdevumus šiem trim punktiem (katram ap 25), šādā secībā: `rel_subj`, `might`, `purpose_to`.
-- **B:** pārcelt punktus uz B1.1 un izņemt soļus no A2.2 ceļa.
-
-### J3. *Wish*, *would rather*, *it's time*: saraksts tos liek B1 un B1+, lietotnē tie ir tikai B2.2
-
-`wish_pres` (*I wish I had more time*) un `would_rather` (*I'd rather walk*) sarakstā ir B1 un B1+, EGP *wish* + past ir B1. Lietotnē visi uzdevumi ir B2.2 (bijušais C1).
-
-- **A (iesaku):** kartē B1.2; uzrakstīt B1.2 uzdevumus šiem diviem punktiem. Esošie B2.2 uzdevumi paliek punktiem `wish_past`, `wish_would`, `its_time_past`, `rather_you` (kartē B2.1).
-- **B:** atstāt visu B2 un kartē punktus pacelt uz B2.1.
-
-### J4. Kas ir B2 un kas ir C1: inversija, *cleft sentences*, jauktie nosacījuma teikumi
-
-Atsauces saraksts tos liek B2. EGP tos liek C1 līdz C2 (apgrieztie nosacījuma teikumi: *should* C1, *had / were* C2; *what*-cleft C1, *it*-cleft C2; *not only* ar inversiju C1, *hardly … when* C2). *Gold C1* tos māca C1 līmenī, un tavs 3. novembra noteikums arī sauc inversiju par C1.
-
-- **A (iesaku):** dalīt pēc tā, kas no izglītojamā tiek prasīts. **B2.2:** atpazīt un izveidot formu, kad sākums ir dots (*Had I known …*, *Never have I …*, *What I need is …*): punkti `c_inv`, `neg_inversion`, `cleft`. **C1.2:** pašam izvēlēties un pārveidot (*key-word transformation*, pilns komplekts, *but for*, *were … to*, *Not until … did*): punkti `x_inv_cond`, `x_inv_neg`, `x_inv_main`, `x_cleft_adv`. Tā karte seko sarakstam, un C1 ir īsts C1.
-- **B:** visu pārcelt uz C1 un B2.2 atstāt tikai jauktos nosacījuma teikumus.
-
-### J5. C1 dalījums divās pusēs
-
-Kartē pirmie pieci saraksta virzieni (laiki un modālie darbības vārdi) ir C1.1, pēdējie pieci (*subjunctive*, saskaņošana, prievārdi, divdabja teicieni, vārdu secība) ir C1.2.
-
-- **A (iesaku):** tā atstāt: secība ir saraksta secība, un C1.2 virzieni balstās uz B2 punktiem, kuru lietotnē vēl nav (sk. kartes beigas), tāpēc tie tāpat jāraksta vēlāk.
-- **B:** cits dalījums pēc tavas izvēles.
-
-### J6. Cik sīka ir karte
-
-Kartē ir 376 punkti; uzdevuma aprakstā bija gaidīti ap 150 esošajām tēmām, sanāca 222. Sīkāks dalījums ļauj pēc kļūdas sūtīt izglītojamo atpakaļ uz precīzu vietu (*been / gone*, nevis "Present perfect"), bet katram punktam tad vajag savus 10 uzdevumus.
-
-- **A (iesaku):** paturēt šo dalījumu kartē, bet *Learned* un ceļa soļus skaitīt pa punktu grupām (tēma un līmenis kā tagad). Punkts ir vienība kļūdu atgriešanai un uzdevumu rakstīšanai, nevis ceļa solis.
-- **B:** apvienot sīkos punktus (ap 60 punktu, kas uz kartītes ir tikai *Watch out* rinda) ar lielākajiem.
-
-### J7. Vēl vajadzīgie materiāli
-
-Septiņas C1 lapas esmu redzējis (piecas pilnībā, divas daļēji); kartē pie katra punkta ir atzīmēts. Vēl lūdzu tādā pašā veidā:
-1. *Advanced past simple, past continuous and past perfect*: skaidrojuma augšējo pusi (pirms *Politeness or tentativeness*).
-2. *will, would*: *would* daļas beigas un uzdevumus.
-3. *Subject-verb agreement: advanced rules*.
-4. *Prepositions: position and advanced patterns*.
-5. *Advanced participle clauses*.
-6. *Advanced word order*.
-
-Šie četri neredzētie virzieni ir rakstīti pēc Hewings un *Gold C1*, tāpēc apjoms var atšķirties no vietnes. Pēc katras lapas attiecīgo virzienu salīdzināšu un izlabošu. Līdz šim salīdzinātie virzieni (*perfect tenses*, *can / may / might*, *subjunctive*, *should*) sakrita ar Hewings gandrīz pilnībā.
-
-### Zināšanai (lēmums nav vajadzīgs)
-
+- **Cik sīka ir karte.** Kartē ir 376 punkti (222 esošajām tēmām; uzdevuma aprakstā bija gaidīti ap 150). Dalījumu paturu: punkts ir vienība, uz kuru pēc kļūdas sūtīt izglītojamo atpakaļ (*been / gone*, nevis "Present perfect") un pēc kuras rakstīt uzdevumus. *Learned* un ceļa soļus arī turpmāk var skaitīt pa tēmu un līmeni kā tagad. Ja gribi rupjāku karti, ap 60 punktu, kas uz kartītes ir tikai *Watch out* rinda, var apvienot ar lielākajiem.
+- ***To* un *for* mērķim** (`purpose_to`) kartē ir A2.2, kā sarakstā; lietotnē uzdevumi sākas no B1.1, bet A2.2 ceļā šāda soļa nav, tāpēc tas nevienu netraucē. A2.2 uzdevumi būs vajadzīgi, kad ceļu rēķinās no kartes.
 - **Secība līmeņa iekšienē** paliek saraksta secība. Karte to maina tikai tur, kur priekšnosacījums to prasa; ir divas tādas vietas. *Be used to* (B1 sarakstā pirms *Gerund or infinitive*) prasa *-ing* aiz prievārda (`vp_prep_ing`). *So am I, neither do I* (A2 sarakstā pirms *Auxiliary verbs do, be, have*) prasa prast izvēlēties palīgdarbības vārdu (`aux_mix`). Abos gadījumos solis jāliek pēc priekšnosacījuma.
 - **Divi punkti, ko test-english rāda tikai C1 lapā**, bet Murphy un EGP liek zemāk: *should* gaidāmajam (*She should be there by now*) un *won't* atteikumam (*The door won't open*). Kartē tiem ir zemāka rinda (`should_expect` B2.1, `wont_refuse` B1.2), un C1 paliek tikai smalkākā daļa.
 - **Tēmas, kas lietotnē sākas agrāk nekā sarakstā** (*-ed / -ing adjectives* A2.2, *question tags* A2.2, *indirect questions* B1.1, *have something done* B1.1): ceļā tās jau tagad atveras saraksta līmenī, tāpēc nekas nav jāmaina; agrākie uzdevumi paliek kā vieglie pirmie uzdevumi.

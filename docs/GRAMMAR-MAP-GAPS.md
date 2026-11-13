@@ -1,12 +1,12 @@
 # Gramatikas karte: robi un lēmumi
 
-Sagatavots 2026. gada 13. novembrī kopā ar `docs/GRAMMAR-MAP.md`. Punktu `id` ir tie paši, kas kartē. Uzdevumu skaits pie punktiem ir **aptuvens** (automātiska šķirošana pēc teikuma un atbildes vārdiem); tēmas un līmeņa summas 3. sadaļas sākumā ir precīzas.
+Sagatavots 2026. gada 13. novembrī kopā ar `docs/GRAMMAR-MAP.md`. Punktu `id` ir tie paši, kas kartē. Uzdevumu skaits pie punktiem ir pēc piesaistes failā `docs/GRAMMAR-MAP-TASKS.csv` (visi 3314 uzdevumi; 3041 izlasīts pa vienam, 273 sašķiroti pēc pazīmes teikumā).
 
 Saturs: 1. punkti bez satura · 2. līmeņu atšķirības starp lietotni un karti · 3. punkti ar mazāk nekā 10 uzdevumiem · 4. kontrasta pāri bez izvēles uzdevumiem · 5. Ingas lēmumi un materiāli.
 
 ## 1. Atsauces sarakstu A1 līdz B2 punkti, kuriem lietotnē satura nav (75)
 
-Nav ne kartītes, ne uzdevumu. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu balstās kāds C1 punkts.
+Nav ne kartītes, ne savas tēmas. 6 no tiem ir daži uzdevumi citās tēmās (`would_like` 1, `there_is` 4, `pp_first_time` 3, `fut_perf` 1, `too_to` 4, `quite_rather` 1); pārējiem nav neviena. Sleja *Vajadzīgs C1* rāda, vai uz šo punktu balstās kāds C1 punkts.
 
 
 **A2.1** (11)
@@ -126,206 +126,210 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 | id | Punkts | Karte | Uzdevumi lietotnē | Tēma | Uzd. |
 |---|---|---|---|---|---|
-| `adv_freq` | Always, usually, often, sometimes, never: where they go | A2.1 | B1.1 | adverbs | 4 |
-| `wish_pres` | I wish / if only + past: a wish about now | B1.2 | B2.2 | cond_advanced | 6 |
+| `adj_basic` | Adjectives: before the noun, after be, no plural | A2.1 | B1.1 | adj_order | 1 |
+| `wish_pres` | I wish / if only + past: a wish about now | B1.2 | B2.2 | cond_advanced | 2 |
 | `would_rather` | Would rather, would sooner, would prefer: what I prefer to do | B1.2 | B2.2 | unreal_time | 3 |
-| `iq_to` | Question word + to: I don't know what to do | B1.2 | B2.2 | ind_advanced | 7 |
-| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | A2.2 | verb_patterns | 2 |
+| `iq_to` | Question word + to: I don't know what to do | B1.2 | B2.2 | ind_advanced | 11 |
+| `would_like` | Would like: I'd like …, Would you like …? | A2.1 | A2.2 | new | 1 |
+| `there_is` | There is / are, there was / were | A2.1 | A2.2 | new | 4 |
+| `was_were` | Was / were | A2.1 | A2.2 | past_simple | 4 |
+| `will_form` | Will / won't + verb: predictions and what I think will happen | A2.1 | A2.2–B1.2 | future | 10 |
+| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | A2.2 | verb_patterns | 1 |
 | `plural_reg` | Regular plurals: -s, -es, -ies | A2.1 | A2.2 | irregular_plurals | 1 |
-| `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | A2.2–B1.1 | quantity | 7 |
-| `much_many` | Much, many, a lot of; How much? How many? | A2.1 | A2.2–B1.1 | quantity | 15 |
-| `a_few` | A few, a little | A2.1 | A2.2–B1.1 | quantity | 5 |
-| `a_an` | A / an with a singular noun; jobs | A2.1 | A2.2–B1.2 | articles | 21 |
-| `a_the` | A or the: first mention, then known | A2.1 | A2.2–B1.2 | articles | 15 |
-| `adj_adv` | Adjective or adverb: quick / quickly, good / well | A2.1 | A2.2–B1.2 | adverbs | 15 |
+| `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | A2.2–B1.1 | quantity | 8 |
+| `much_many` | Much, many, a lot of; How much? How many? | A2.1 | A2.2–B1.1 | quantity | 14 |
+| `a_few` | A few, a little | A2.1 | A2.2–B1.1 | quantity | 4 |
+| `a_an` | A / an with a singular noun; jobs | A2.1 | A2.2–B1.2 | articles | 22 |
+| `a_the` | A or the: first mention, then known | A2.1 | A2.2–B1.2 | articles | 7 |
+| `adj_adv` | Adjective or adverb: quick / quickly, good / well | A2.1 | A2.2–B1.2 | adverbs | 17 |
+| `adv_freq` | Always, usually, often, sometimes, never: where they go | A2.1 | A2.2–B1.2 | adverbs | 11 |
 | `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.1 | A2.2 | prep_time_place | 5 |
-| `art_zero` | No article: I like cats. She drinks tea. He lives in Riga. | A2.1 | A2.2 | articles | 1 |
-| `might` | Might and may: possibility | A2.2 | B1.1–B1.2 | more_modals | 7 |
-| `rep_say_tell` | Say or tell | A2.2 | B1.1–B2.1 | rep_statements | 15 |
-| `q_prep_end` | Questions with a preposition at the end | A2.2 | B1.1–B1.2 | subject_object_q, dep_prepositions | 7 |
-| `purpose_to` | Purpose: to + verb, for + noun | A2.2 | B1.1–B2.1 | conj_clauses | 4 |
-| `rel_subj` | Defining relative clauses: who, which, that as the subject | A2.2 | B1.1–B1.2 | relative_clauses | 16 |
-| `be_used_to` | Be used to and get used to + noun / -ing | B1.1 | B1.2 | used_to | 8 |
-| `pastp_form` | Past perfect: had + third form, the earlier past | B1.1 | B1.2 | past_perfect, narrative | 31 |
+| `could_past` | Could / couldn't: ability in the past | A2.2 | B1.1–B1.2 | modal_verbs, more_modals | 3 |
+| `might` | Might and may: possibility | A2.2 | B1.1–B1.2 | more_modals | 10 |
+| `rep_say_tell` | Say or tell | A2.2 | B1.1–B2.1 | rep_statements | 12 |
+| `cmp_adv` | Comparing adverbs: more slowly, faster, better, the most carefully | A2.2 | B1.1 | comparison | 2 |
+| `purpose_to` | Purpose: to + verb, for + noun | A2.2 | B1.1 | conj_clauses | 4 |
+| `rel_subj` | Defining relative clauses: who, which, that as the subject | A2.2 | B1.1 | relative_clauses | 7 |
+| `be_used_to` | Be used to and get used to + noun / -ing | B1.1 | B1.2 | used_to | 10 |
+| `fut_mix` | Future forms: choosing among will, going to, present continuous, present simple | B1.1 | B1.2 | future | 1 |
 | `c1_modal` | First conditional with may, might, can, should or an order in the result | B1.1 | B1.2 | cond_first | 1 |
+| `so_much_many` | So much, so many | B1.1 | B1.2 | so_such | 5 |
+| `by_until` | By or until; by the time | B1.1 | B1.2 | time_clauses | 1 |
 | `rep_stay` | When the tense can stay: still true, says, has said | B1.2 | B2.1 | rep_statements | 1 |
 | `c_alt` | As long as, provided (that), even if, supposing | B2.1 | B2.2 | cond_advanced | 1 |
-| `wish_past` | I wish / if only + had done: regret about the past | B2.1 | B2.2 | cond_advanced | 4 |
+| `wish_past` | I wish / if only + had done: regret about the past | B2.1 | B2.2 | cond_advanced | 8 |
 | `wish_would` | I wish … would: wanting somebody or something to change | B2.1 | B2.2 | cond_advanced | 1 |
 | `its_time_past` | It's (high / about) time + subject + past | B2.1 | B2.2 | unreal_time | 7 |
 | `rather_you` | I'd rather you + past: what I want somebody else to do | B2.1 | B2.2 | unreal_time | 5 |
-| `rv_to` | Reporting verbs + to: offer, refuse, promise, agree, threaten | B2.1 | B2.2 | rep_verbs | 9 |
-| `rv_obj_to` | Reporting verbs + person + to: advise, warn, remind, invite, encourage, persuade | B2.1 | B2.2 | rep_verbs | 8 |
+| `rv_obj_to` | Reporting verbs + person + to: advise, warn, remind, invite, encourage, persuade | B2.1 | B2.2 | rep_verbs | 7 |
 | `rv_ing` | Reporting verbs + -ing: suggest, admit, deny, recommend | B2.1 | B2.2 | rep_verbs | 9 |
-| `rv_prep_ing` | Reporting verbs + preposition + -ing: apologise for, insist on, accuse of, congratulate on | B2.1 | B2.2 | rep_verbs | 15 |
-| `iq_whether` | Whether: after prepositions, with to, with or not | B2.1 | B2.2 | ind_advanced | 20 |
+| `rv_prep_ing` | Reporting verbs + preposition + -ing: apologise for, insist on, accuse of, congratulate on | B2.1 | B2.2 | rep_verbs | 13 |
+| `iq_whether` | Whether: after prepositions, with to, with or not | B2.1 | B2.2 | ind_advanced | 9 |
 | `whoever` | Whatever, whoever, whenever, wherever, however | B2.1 | B2.2 | ind_advanced | 12 |
+| `rv_that` | Reporting verbs + that: admit, explain, complain, claim, warn somebody that | B2.1 | B2.2 | rep_verbs | 3 |
 
 ### 2.2. Lietotnē agrāk nekā kartē (vismaz par veselu līmeni vai vairāk nekā 5 uzdevumi)
 
 | id | Punkts | Karte | Agrākais uzdevums | Uzdevumi zem kartes līmeņa | Tēma |
 |---|---|---|---|---|---|
-| `each_every` | Each, every, all, whole | B1.2 | A2.1 | 2 no 2 | agreement |
-| `dep_adj` | Adjective + preposition: good at, afraid of, interested in, married to | B1.1 | A2.1 | 13 no 17 | dep_prepositions, adj_ed_ing |
-| `caus_get` | Get something done; something bad that happened: had my bag stolen | B2.1 | B1.1 | 9 no 9 | causative |
-| `dep_verb` | Verb + preposition: depend on, belong to, apologise for, think about / of | B1.1 | A2.1 | 9 no 12 | dep_prepositions |
-| `adv_position` | Position of adverbs: verb + object, place before time, mid-position | B1.2 | A2.2 | 7 no 10 | adverbs |
-| `neednt_have` | Didn't need to or needn't have | B2.1 | B1.1 | 4 no 4 | more_modals |
-| `c0_c1` | Zero or first conditional: always, or this one time? | B1.2 | A2.2 | 4 no 4 | cond_zero, cond_first |
-| `purpose_b2` | In order to, so as not to, in order for … to, for + -ing | B2.1 | B1.1 | 4 no 18 | conj_b2, conj_clauses |
-| `caus_have` | Have something done | B1.2 | B1.1 | 22 no 33 | causative |
-| `iq_wh` | Indirect questions with a question word: Could you tell me where … is? | B1.2 | B1.1 | 22 no 50 | ind_polite |
-| `adj_order` | Adjective order: a lovely old house, a big red car | B1.2 | B1.1 | 22 no 41 | adj_order |
-| `eding` | Bored or boring: -ed and -ing adjectives | B1.1 | A2.2 | 15 no 34 | adj_ed_ing |
-| `tag_basic` | Question tags: isn't it? don't you? did she? | B1.1 | A2.2 | 14 no 34 | question_tags |
-| `narr_mix` | Narrative tenses: past simple, past continuous, past perfect together | B1.2 | B1.1 | 10 no 21 | narrative |
-| `sup_ever` | Superlative + present perfect: the best film I've ever seen | B1.1 | A2.2 | 9 no 12 | comparison, present_perfect |
-| `fut_past` | Future in the past: was going to, would, was about to | B2.1 | B1.2 | 9 no 9 | past_continuous |
+| `dep_adj` | Adjective + preposition: good at, afraid of, interested in, married to | B1.1 | A2.1 | 10 no 12 | dep_prepositions, adj_ed_ing |
+| `dep_verb` | Verb + preposition: depend on, belong to, apologise for, think about / of | B1.1 | A2.1 | 8 no 11 | dep_prepositions |
+| `caus_get` | Get something done; something bad that happened: had my bag stolen | B2.1 | B1.1 | 7 no 7 | causative |
+| `neednt_have` | Didn't need to or needn't have | B2.1 | B1.1 | 5 no 5 | more_modals |
+| `adv_position` | Position of adverbs: verb + object, place before time, mid-position | B1.2 | A2.2 | 5 no 10 | adverbs |
+| `c0_c1` | Zero or first conditional: always, or this one time? | B1.2 | A2.2 | 2 no 2 | cond_zero, cond_first |
+| `purpose_b2` | In order to, so as not to, in order for … to, for + -ing | B2.1 | B1.1 | 2 no 13 | conj_b2, conj_clauses |
+| `pp_first_time` | It's the first time I've … | B1.2 | A2.2 | 1 no 3 | new |
+| `iq_wh` | Indirect questions with a question word: Could you tell me where … is? | B1.2 | B1.1 | 26 no 61 | ind_polite |
+| `caus_have` | Have something done | B1.2 | B1.1 | 23 no 35 | causative |
+| `adj_order` | Adjective order: a lovely old house, a big red car | B1.2 | B1.1 | 21 no 40 | adj_order |
+| `eding` | Bored or boring: -ed and -ing adjectives | B1.1 | A2.2 | 19 no 40 | adj_ed_ing |
+| `tag_basic` | Question tags: isn't it? don't you? did she? | B1.1 | A2.2 | 14 no 30 | question_tags |
+| `fut_past` | Future in the past: was going to, would, was about to | B2.1 | B1.2 | 13 no 13 | past_continuous |
+| `pas_act` | Active or passive? | B1.1 | A2.2 | 12 no 29 | present_simple_passive, past_simple_passive |
+| `pas_modal_past` | Passive after a past modal: should have been done | B2.1 | B1.2 | 12 no 12 | passive_modals |
 | `should` | Should / shouldn't: advice | A2.2 | A2.1 | 8 no 15 | modal_verbs |
-| `pas_act` | Active or passive? | B1.1 | A2.2 | 8 no 23 | present_simple_passive, past_simple_passive |
-| `pas_modal_past` | Passive after a past modal: should have been done | B2.1 | B1.2 | 7 no 7 | passive_modals |
-| `iq_yn` | Indirect yes / no questions: Do you know if …? | B1.2 | B1.1 | 7 no 17 | ind_polite |
-| `art_names` | Names with and without the: Latvia, the Netherlands, the Daugava | B1.2 | B1.1 | 7 no 10 | articles_b1, articles |
-| `adv_irreg` | Fast, hard, late; hardly, lately | B1.1 | A2.2 | 7 no 18 | adverbs |
-| `pp_ppc` | Present perfect simple or continuous: how much or how long? | B1.2 | B1.1 | 6 no 12 | present_perfect_continuous, present_perfect |
-| `deduction` | Deduction about the present: must, might, could, can't + be | B1.2 | B1.1 | 6 no 6 | more_modals |
-| `neednt` | Needn't and don't need to | B1.2 | B1.1 | 6 no 7 | more_modals |
-| `tag_special` | Special tags: aren't I? shall we? will you? nobody … they | B1.2 | B1.1 | 6 no 15 | question_tags |
+| `deduction` | Deduction about the present: must, might, could, can't + be | B1.2 | B1.1 | 7 no 7 | more_modals |
+| `tag_special` | Special tags: aren't I? shall we? will you? nobody … they | B1.2 | B1.1 | 7 no 19 | question_tags |
+| `so_that` | So … that, such … that: the result | B1.2 | B1.1 | 7 no 19 | so_such |
+| `neednt` | Needn't and don't need to | B1.2 | B1.1 | 6 no 6 | more_modals |
+| `art_names` | Names with and without the: Latvia, the Netherlands, the Daugava | B1.2 | B1.1 | 6 no 9 | articles_b1, articles |
+| `because_of` | Because or because of; due to + noun | B1.1 | A2.2 | 6 no 13 | conj_linkers, conj_clauses |
+| `reason_result_b2` | Owing to, on account of; therefore, consequently, as a result | B2.2 | B2.1 | 6 no 13 | conj_b2 |
 
 ## 3. Punkti ar mazāk nekā 10 pārbaudes un lietošanas uzdevumiem
 
 **Precīzi, pa tēmas un līmeņa pāriem:** no 137 pāriem mazāk par 10 uzdevumiem, kas skaitās (*check* + *use*), ir Mixed conditionals B2.1 (9).
 
-**Aptuveni, pa punktiem:** no 222 punktiem ar tēmu lietotnē 91 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 28 punktiem šķirošana neatrada nevienu. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
+**Pa punktiem:** no 222 punktiem ar tēmu lietotnē 100 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 18 punktiem nav neviena. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
 
-### 3.1. Neviens uzdevums nav atrasts
+### 3.1. Punkti ar tēmu lietotnē, kuriem nav neviena uzdevuma
 
 | id | Punkts | Karte | Tēma | Kartīte |
 |---|---|---|---|---|
 | `have_got` | Have got and have | A2.1 | aux_verbs | yes |
 | `shall` | Shall I …? Shall we …? | A2.1 | future | yes |
-| `adj_basic` | Adjectives: before the noun, after be, no plural | A2.1 | adj_order | partly |
+| `art_zero` | No article: I like cats. She drinks tea. He lives in Riga. | A2.1 | articles | yes |
 | `no_longer` | No longer, any more, any longer | A2.2 | used_to | partly |
-| `v3` | The third form (past participle) of regular and irregular verbs | A2.2 | present_perfect, present_simple_passive, past_simple_passive | no · skaitīts citur: pp_form, pas_pres, pas_past |
-| `could_past` | Could / couldn't: ability in the past | A2.2 | modal_verbs, more_modals | yes |
 | `requests` | Polite requests and permission: Could you …? Can I …? Would you …? | A2.2 | modal_verbs | yes |
 | `vp_ing_subject` | -ing as the subject: Swimming is good for you | A2.2 | verb_patterns | no |
 | `vp_go_ing` | Go + -ing, go to, go for: go shopping, go for a walk | A2.2 | verb_patterns | partly |
-| `cmp_adv` | Comparing adverbs: more slowly, faster, better, the most carefully | A2.2 | comparison | no |
-| `stative2` | Verbs with two meanings: think, have, see, taste, be | B1.1 | present_continuous, present_simple | partly |
-| `used_to_ps` | Used to or past simple; usually for the present | B1.1 | used_to | yes |
-| `past_seq` | One after another or in the middle? When + past simple / continuous | B1.1 | cmp_ps_pc, past_continuous | yes |
+| `if_when` | If or when | B1.1 | cond_first, cond_zero, time_clauses | partly |
 | `vp_both` | Verbs with both forms and the same meaning: start, begin, continue, like | B1.1 | verb_patterns | yes |
-| `few_little` | Few and little without a: almost none | B1.1 | quantity | yes |
 | `no_none` | No, none, not any | B1.1 | quantity | partly |
+| `during_while` | During, for, while | B1.1 | time_clauses | yes |
 | `must_vs_have_to` | Must or have to: my own view or somebody else's rule | B1.1 | modal_verbs | partly |
 | `pc_always` | Always + continuous: an annoying habit | B1.2 | present_continuous | partly |
 | `would_habit` | Would for past habits (not states) | B1.2 | used_to | partly |
-| `pastp_order` | Past perfect or past simple: is the order already clear? | B1.2 | past_perfect, narrative | yes · skaitīts citur: pastp_form, narr_mix |
-| `should_have` | Should have, could have done: criticism and regret | B1.2 | passive_modals | no · skaitīts citur: pas_modal_past (passive only) |
-| `c1_c2` | First or second conditional: real or imagined? | B1.2 | cond_second, cond_first | partly · skaitīts citur: c1, c2 |
-| `reason_b1` | As and since for a reason | B1.2 | conj_clauses | yes |
+| `should_have` | Should have, could have done: criticism and regret | B1.2 | passive_modals | no |
+| `each_every` | Each, every, all, whole | B1.2 | agreement | yes |
 | `rel_what` | What = the thing that | B1.2 | relative_clauses | partly |
 | `wont_refuse` | Won't for refusing: The door won't open | B1.2 | future | partly |
-| `c2_c3` | Second or third conditional: now or then? | B2.1 | cond_third, cond_second | partly · skaitīts citur: c2, c3 |
-| `rel_prep` | Prepositions in relative clauses: the man I was talking to / to whom | B2.1 | relative_clauses | partly |
-| `rv_that` | Reporting verbs + that: admit, explain, complain, claim, warn somebody that | B2.1 | rep_verbs | yes |
 
 ### 3.2. No 1 līdz 9 uzdevumiem, kas skaitās
 
 | id | Punkts | Karte | check | use | learn | Tēma |
 |---|---|---|---|---|---|---|
+| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | 1 | 0 | 0 | verb_patterns |
 | `plural_reg` | Regular plurals: -s, -es, -ies | A2.1 | 0 | 1 | 0 | irregular_plurals |
-| `art_zero` | No article: I like cats. She drinks tea. He lives in Riga. | A2.1 | 1 | 0 | 0 | articles |
-| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | 2 | 0 | 0 | verb_patterns |
-| `adv_freq` | Always, usually, often, sometimes, never: where they go | A2.1 | 2 | 1 | 1 | adverbs |
-| `a_few` | A few, a little | A2.1 | 4 | 0 | 1 | quantity |
-| `sup` | Superlatives: the -est, the most …; the best, the worst | A2.1 | 2 | 2 | 1 | comparison |
+| `adj_basic` | Adjectives: before the noun, after be, no plural | A2.1 | 1 | 0 | 0 | adj_order |
+| `ps_pc` | Present simple or continuous: habit or now | A2.1 | 3 | 1 | 5 | present_simple, present_continuous |
+| `was_were` | Was / were | A2.1 | 2 | 2 | 0 | past_simple |
+| `a_few` | A few, a little | A2.1 | 4 | 0 | 0 | quantity |
+| `a_the` | A or the: first mention, then known | A2.1 | 5 | 0 | 2 | articles |
 | `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.1 | 3 | 2 | 0 | prep_time_place |
-| `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | 4 | 3 | 0 | quantity |
-| `conj_and_but` | And, but, or | A2.1 | 6 | 1 | 0 | conj_basic |
-| `was_were` | Was / were | A2.1 | 5 | 3 | 1 | past_simple |
+| `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | 5 | 3 | 0 | quantity |
 | `pp_been_gone` | Been or gone | A2.2 | 0 | 0 | 1 | present_perfect |
-| `indef_form` | Someone, anything, nobody, everywhere | A2.2 | 1 | 0 | 0 | indefinite_pronouns |
 | `unc_nouns` | Uncountable in English: advice, information, furniture, news, luggage | A2.2 | 0 | 1 | 0 | quantity, irregular_plurals, agreement |
-| `prep_transport` | By car, on the bus, in a taxi, on foot | A2.2 | 0 | 1 | 0 | prep_time_place |
-| `stative` | State verbs stay simple: know, like, want, need | A2.2 | 1 | 1 | 0 | present_continuous, present_simple |
-| `prep_move` | Movement: to, into, out of, across, through, along, past; arrive in / at | A2.2 | 0 | 2 | 0 | prep_time_place, dep_prepositions |
+| `prep_move` | Movement: to, into, out of, across, through, along, past; arrive in / at | A2.2 | 0 | 1 | 0 | prep_time_place, dep_prepositions |
+| `adv_degree` | Very, really, quite, too + adjective; I like it very much | A2.2 | 1 | 1 | 0 | adverbs |
+| `cmp_adv` | Comparing adverbs: more slowly, faster, better, the most carefully | A2.2 | 2 | 0 | 0 | comparison |
+| `could_past` | Could / couldn't: ability in the past | A2.2 | 0 | 3 | 0 | modal_verbs, more_modals |
+| `indef_form` | Someone, anything, nobody, everywhere | A2.2 | 2 | 1 | 2 | indefinite_pronouns |
 | `conj_parallel` | The same kind of words on both sides: cooking and reading | A2.2 | 2 | 1 | 0 | conj_basic |
-| `fut_arr` | Present continuous for arrangements | A2.2 | 4 | 0 | 3 | future, present_continuous |
-| `the_unique` | The: the sun, the same, the best, the first; play the piano | A2.2 | 4 | 0 | 1 | articles, articles_b1 |
-| `purpose_to` | Purpose: to + verb, for + noun | A2.2 | 1 | 3 | 0 | conj_clauses |
-| `adv_degree` | Very, really, quite, too + adjective; I like it very much | A2.2 | 3 | 2 | 0 | adverbs |
-| `might` | Might and may: possibility | A2.2 | 5 | 1 | 1 | more_modals |
+| `prep_transport` | By car, on the bus, in a taxi, on foot | A2.2 | 2 | 1 | 0 | prep_time_place |
+| `purpose_to` | Purpose: to + verb, for + noun | A2.2 | 3 | 1 | 0 | conj_clauses |
+| `pas_by` | The doer with by, only when it matters | A2.2 | 5 | 0 | 6 | present_simple_passive, past_simple_passive |
 | `plural_only` | Always plural: jeans, glasses, scissors; the police are | A2.2 | 4 | 2 | 0 | irregular_plurals, agreement |
-| `will_now` | Will for a decision made now: offers, promises, requests | A2.2 | 4 | 3 | 1 | future |
-| `q_prep_end` | Questions with a preposition at the end | A2.2 | 4 | 3 | 0 | subject_object_q, dep_prepositions |
+| `rel_subj` | Defining relative clauses: who, which, that as the subject | A2.2 | 4 | 2 | 1 | relative_clauses |
+| `link_time` | Time connectors: then, after that, before, after, while, when | A2.2 | 3 | 4 | 1 | conj_linkers |
+| `the_unique` | The: the sun, the same, the best, the first; play the piano | A2.2 | 7 | 1 | 0 | articles, articles_b1 |
+| `might` | Might and may: possibility | A2.2 | 6 | 3 | 1 | more_modals |
+| `dep_none` | Verbs with no preposition: call me, discuss it, answer the question, join the team | A2.2 | 6 | 3 | 0 | dep_prepositions |
+| `used_to_ps` | Used to or past simple; usually for the present | B1.1 | 0 | 0 | 1 | used_to |
+| `fut_mix` | Future forms: choosing among will, going to, present continuous, present simple | B1.1 | 0 | 0 | 1 | future |
 | `c1_modal` | First conditional with may, might, can, should or an order in the result | B1.1 | 0 | 0 | 1 | cond_first |
-| `during_while` | During, for, while | B1.1 | 0 | 0 | 1 | time_clauses |
-| `allowed_to` | Permission: can, could, be allowed to | B1.1 | 1 | 0 | 0 | more_modals |
+| `by_until` | By or until; by the time | B1.1 | 0 | 0 | 1 | time_clauses |
+| `stative2` | Verbs with two meanings: think, have, see, taste, be | B1.1 | 0 | 1 | 0 | present_continuous, present_simple |
 | `vp_obj_to` | Verb + person + to: I want you to come | B1.1 | 0 | 1 | 0 | verb_patterns |
 | `two_obj_pron` | Give it to me: a pronoun as the thing | B1.1 | 1 | 0 | 0 | two_objects |
-| `agr_head` | The verb agrees with the main noun: one of my friends lives … | B1.1 | 1 | 0 | 0 | agreement |
 | `indef_adj` | Something nice, anyone else, nothing to do | B1.1 | 1 | 0 | 0 | indefinite_pronouns |
+| `sup_ever` | Superlative + present perfect: the best film I've ever seen | B1.1 | 1 | 1 | 0 | comparison, present_perfect |
+| `agr_head` | The verb agrees with the main noun: one of my friends lives … | B1.1 | 2 | 0 | 0 | agreement |
 | `link_adj` | Look, sound, feel, seem, taste + adjective | B1.1 | 2 | 0 | 0 | adverbs |
 | `cmp_less` | Less … than, the least; than me / than I am | B1.1 | 0 | 2 | 0 | comparison |
-| `rel_obj` | Who, which, that as the object; leaving the word out | B1.1 | 2 | 0 | 0 | relative_clauses |
-| `ppc_result` | Present perfect continuous: a recent activity you can see | B1.1 | 3 | 0 | 1 | present_perfect_continuous |
-| `q_which_subj` | Which / What / How many + noun as the subject | B1.1 | 3 | 0 | 0 | subject_object_q |
-| `so_much_many` | So much, so many | B1.1 | 3 | 0 | 3 | so_such |
+| `past_seq` | One after another or in the middle? When + past simple / continuous | B1.1 | 0 | 3 | 6 | cmp_ps_pc, past_continuous |
+| `few_little` | Few and little without a: almost none | B1.1 | 3 | 0 | 0 | quantity |
+| `q_which_subj` | Which / What / How many + noun as the subject | B1.1 | 3 | 1 | 0 | subject_object_q |
 | `some_offers` | Some in offers and requests; any = it does not matter which | B1.1 | 4 | 0 | 0 | quantity, indefinite_pronouns |
-| `pp_ps_now` | Still true or finished? News and details; today, this week | B1.1 | 1 | 4 | 1 | cmp_pp_ps, present_perfect |
-| `able_once` | Could or was able to / managed to: one success | B1.1 | 3 | 2 | 0 | more_modals |
-| `if_when` | If or when | B1.1 | 5 | 0 | 0 | cond_first, cond_zero, time_clauses |
-| `be_used_to` | Be used to and get used to + noun / -ing | B1.1 | 4 | 2 | 2 | used_to |
-| `pastc_two` | Two actions in progress; the background of a story | B1.1 | 5 | 1 | 0 | past_continuous, narrative |
-| `fut_timetable` | Present simple for timetables and programmes | B1.1 | 5 | 1 | 1 | present_simple, future |
-| `art_places` | School or the school: places used for their purpose; meals; by bus | B1.1 | 5 | 1 | 1 | articles_b1 |
-| `c2_were` | If I were you, I'd … | B1.1 | 4 | 3 | 4 | cond_second |
+| `art_general` | No article for things in general: Life is short. I like coffee. | B1.1 | 3 | 1 | 0 | articles_b1, articles |
+| `rel_obj` | Who, which, that as the object; leaving the word out | B1.1 | 4 | 0 | 0 | relative_clauses |
+| `allowed_to` | Permission: can, could, be allowed to | B1.1 | 5 | 0 | 1 | more_modals |
+| `so_much_many` | So much, so many | B1.1 | 4 | 1 | 0 | so_such |
+| `pp_ps_now` | Still true or finished? News and details; today, this week | B1.1 | 1 | 5 | 2 | cmp_pp_ps, present_perfect |
+| `able_once` | Could or was able to / managed to: one success | B1.1 | 4 | 2 | 0 | more_modals |
+| `pastc_two` | Two actions in progress; the background of a story | B1.1 | 5 | 2 | 0 | past_continuous, narrative |
+| `rep_pron_time` | Reported speech: pronouns, time and place words | B1.1 | 4 | 3 | 1 | rep_statements |
 | `two_obj_explain` | Explain, describe, suggest, say: the thing first, then to + person | B1.1 | 5 | 2 | 0 | two_objects |
-| `art_general` | No article for things in general: Life is short. I like coffee. | B1.1 | 6 | 2 | 1 | articles_b1, articles |
-| `because_of` | Because or because of; due to + noun | B1.1 | 6 | 2 | 1 | conj_linkers, conj_clauses |
-| `by_until` | By or until; by the time | B1.1 | 4 | 5 | 1 | time_clauses |
+| `art_places` | School or the school: places used for their purpose; meals; by bus | B1.1 | 6 | 1 | 1 | articles_b1 |
+| `be_used_to` | Be used to and get used to + noun / -ing | B1.1 | 6 | 2 | 2 | used_to |
+| `ppc_result` | Present perfect continuous: a recent activity you can see | B1.1 | 6 | 3 | 1 | present_perfect_continuous |
+| `c1_c2` | First or second conditional: real or imagined? | B1.2 | 0 | 0 | 1 | cond_second, cond_first |
+| `pastp_order` | Past perfect or past simple: is the order already clear? | B1.2 | 0 | 1 | 0 | past_perfect, narrative |
+| `wish_pres` | I wish / if only + past: a wish about now | B1.2 | 0 | 1 | 1 | cond_advanced |
 | `rep_stay` | When the tense can stay: still true, says, has said | B1.2 | 1 | 0 | 0 | rep_statements |
 | `vp_make_let` | Make and let + person + base form | B1.2 | 1 | 0 | 0 | verb_patterns |
-| `each_every` | Each, every, all, whole | B1.2 | 0 | 1 | 1 | agreement |
-| `the_adj` | The + adjective: the rich, the elderly, the unemployed | B1.2 | 0 | 1 | 0 | articles_b1 |
 | `adv_extreme` | Absolutely amazing, very good: strong and normal adjectives | B1.2 | 1 | 0 | 0 | adverbs |
-| `when_done` | When I do or when I've done; if and when | B1.2 | 2 | 0 | 0 | time_clauses |
+| `reason_b1` | As and since for a reason | B1.2 | 1 | 0 | 0 | conj_clauses |
+| `c0_c1` | Zero or first conditional: always, or this one time? | B1.2 | 2 | 0 | 0 | cond_zero, cond_first |
 | `vp_to_ing` | To + -ing: look forward to, be used to, object to | B1.2 | 2 | 0 | 0 | verb_patterns |
-| `cmp_modify` | How big is the difference: much, a lot, far, a bit, slightly + comparative | B1.2 | 2 | 0 | 3 | comparison |
-| `cmp_double` | The sooner, the better; more and more | B1.2 | 2 | 0 | 0 | comparison |
 | `would_rather` | Would rather, would sooner, would prefer: what I prefer to do | B1.2 | 3 | 0 | 0 | unreal_time |
-| `purpose_so_that` | So that + can / could / would | B1.2 | 2 | 1 | 0 | conj_clauses |
-| `deduction` | Deduction about the present: must, might, could, can't + be | B1.2 | 2 | 2 | 2 | more_modals |
-| `c0_c1` | Zero or first conditional: always, or this one time? | B1.2 | 4 | 0 | 0 | cond_zero, cond_first |
-| `rep_backshift2` | Reported statements: past → past perfect, present perfect → past perfect | B1.2 | 1 | 3 | 3 | rep_statements |
-| `iq_to` | Question word + to: I don't know what to do | B1.2 | 2 | 2 | 3 | ind_advanced |
-| `rel_nondef` | Non-defining relative clauses: commas, who / which, never that | B1.2 | 2 | 2 | 0 | relative_clauses |
-| `wish_pres` | I wish / if only + past: a wish about now | B1.2 | 3 | 2 | 1 | cond_advanced |
-| `neednt` | Needn't and don't need to | B1.2 | 4 | 3 | 0 | more_modals |
-| `pp_ppc` | Present perfect simple or continuous: how much or how long? | B1.2 | 7 | 2 | 3 | present_perfect_continuous, present_perfect |
-| `about_to` | Be about to, be due to, be to | B2.1 | 0 | 0 | 1 | future |
+| `cmp_modify` | How big is the difference: much, a lot, far, a bit, slightly + comparative | B1.2 | 2 | 1 | 2 | comparison |
+| `pp_ppc` | Present perfect simple or continuous: how much or how long? | B1.2 | 2 | 2 | 4 | present_perfect_continuous, present_perfect |
+| `narr_mix` | Narrative tenses: past simple, past continuous, past perfect together | B1.2 | 0 | 4 | 0 | narrative |
+| `when_done` | When I do or when I've done; if and when | B1.2 | 5 | 0 | 0 | time_clauses |
+| `deduction` | Deduction about the present: must, might, could, can't + be | B1.2 | 4 | 1 | 2 | more_modals |
+| `purpose_so_that` | So that + can / could / would | B1.2 | 3 | 2 | 0 | conj_clauses |
+| `neednt` | Needn't and don't need to | B1.2 | 3 | 3 | 0 | more_modals |
+| `the_adj` | The + adjective: the rich, the elderly, the unemployed | B1.2 | 4 | 2 | 1 | articles_b1 |
+| `iq_to` | Question word + to: I don't know what to do | B1.2 | 4 | 3 | 4 | ind_advanced |
+| `cmp_double` | The sooner, the better; more and more | B1.2 | 3 | 4 | 0 | comparison |
+| `rel_nondef` | Non-defining relative clauses: commas, who / which, never that | B1.2 | 6 | 1 | 1 | relative_clauses |
+| `iq_yn` | Indirect yes / no questions: Do you know if …? | B1.2 | 6 | 3 | 1 | ind_polite |
+| `art_names` | Names with and without the: Latvia, the Netherlands, the Daugava | B1.2 | 4 | 5 | 0 | articles_b1, articles |
+| `about_to` | Be about to, be due to, be to | B2.1 | 1 | 0 | 1 | future |
+| `c2_c3` | Second or third conditional: now or then? | B2.1 | 1 | 0 | 2 | cond_third, cond_second |
 | `c_alt` | As long as, provided (that), even if, supposing | B2.1 | 0 | 1 | 0 | cond_advanced |
 | `wish_would` | I wish … would: wanting somebody or something to change | B2.1 | 1 | 0 | 0 | cond_advanced |
-| `rel_which_all` | , which = the whole idea before it | B2.1 | 0 | 1 | 1 | relative_clauses |
-| `neednt_have` | Didn't need to or needn't have | B2.1 | 2 | 0 | 2 | more_modals |
-| `c3_modal` | Third conditional with could have, might have | B2.1 | 3 | 0 | 1 | cond_third |
-| `pastpc_vs` | Had been doing, was doing or had done? | B2.1 | 2 | 2 | 0 | narrative_b2 |
-| `wish_past` | I wish / if only + had done: regret about the past | B2.1 | 2 | 2 | 0 | cond_advanced |
-| `in_case` | In case | B2.1 | 2 | 2 | 0 | conj_b2 |
+| `rv_that` | Reporting verbs + that: admit, explain, complain, claim, warn somebody that | B2.1 | 2 | 0 | 1 | rep_verbs |
+| `neednt_have` | Didn't need to or needn't have | B2.1 | 3 | 0 | 2 | more_modals |
+| `c3_modal` | Third conditional with could have, might have | B2.1 | 3 | 0 | 2 | cond_third |
+| `rel_which_all` | , which = the whole idea before it | B2.1 | 1 | 2 | 0 | relative_clauses |
+| `rel_prep` | Prepositions in relative clauses: the man I was talking to / to whom | B2.1 | 2 | 1 | 0 | relative_clauses |
 | `rather_you` | I'd rather you + past: what I want somebody else to do | B2.1 | 2 | 3 | 0 | unreal_time |
-| `fut_past` | Future in the past: was going to, would, was about to | B2.1 | 5 | 1 | 3 | past_continuous |
-| `rv_to` | Reporting verbs + to: offer, refuse, promise, agree, threaten | B2.1 | 6 | 0 | 3 | rep_verbs |
-| `rv_obj_to` | Reporting verbs + person + to: advise, warn, remind, invite, encourage, persuade | B2.1 | 3 | 3 | 2 | rep_verbs |
-| `pas_modal_past` | Passive after a past modal: should have been done | B2.1 | 3 | 4 | 0 | passive_modals |
-| `caus_get` | Get something done; something bad that happened: had my bag stolen | B2.1 | 4 | 3 | 2 | causative |
+| `rv_obj_to` | Reporting verbs + person + to: advise, warn, remind, invite, encourage, persuade | B2.1 | 2 | 3 | 2 | rep_verbs |
+| `in_case` | In case | B2.1 | 2 | 3 | 0 | conj_b2 |
+| `contrast_b2` | Whereas, while, nevertheless, yet, even so | B2.1 | 3 | 2 | 1 | conj_b2 |
+| `pastpc_vs` | Had been doing, was doing or had done? | B2.1 | 0 | 6 | 0 | narrative_b2 |
+| `rv_to` | Reporting verbs + to: offer, refuse, promise, agree, threaten | B2.1 | 6 | 0 | 4 | rep_verbs |
+| `caus_get` | Get something done; something bad that happened: had my bag stolen | B2.1 | 4 | 3 | 0 | causative |
 | `its_time_past` | It's (high / about) time + subject + past | B2.1 | 4 | 3 | 0 | unreal_time |
+| `iq_whether` | Whether: after prepositions, with to, with or not | B2.1 | 5 | 2 | 2 | ind_advanced |
+| `wish_past` | I wish / if only + had done: regret about the past | B2.1 | 5 | 3 | 0 | cond_advanced |
 | `whoever` | Whatever, whoever, whenever, wherever, however | B2.1 | 4 | 4 | 4 | ind_advanced |
 | `rv_ing` | Reporting verbs + -ing: suggest, admit, deny, recommend | B2.1 | 3 | 6 | 0 | rep_verbs |
-| `iq_subject` | A question clause as the subject: Why the system failed remains unclear | B2.2 | 3 | 0 | 1 | ind_advanced |
-| `c_mixed2` | Mixed conditional: present condition, past result | B2.2 | 4 | 1 | 2 | cond_mixed |
-| `reason_result_b2` | Owing to, on account of; therefore, consequently, as a result | B2.2 | 5 | 2 | 0 | conj_b2 |
+| `c_mixed2` | Mixed conditional: present condition, past result | B2.2 | 6 | 2 | 4 | cond_mixed |
+| `iq_subject` | A question clause as the subject: Why the system failed remains unclear | B2.2 | 7 | 2 | 1 | ind_advanced |
 
 ## 4. Kontrasta pāri bez izvēles uzdevumiem
 
@@ -335,16 +339,16 @@ Kartē ir 416 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīm�
 
 Tādu ir 188: 74 līmeņos A2 līdz B2 un 114, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `there_is` ↔ `there_it` · `be_pres` ↔ `q_yesno` · `be_pres` ↔ `have_got` · `poss_adj` ↔ `poss_s` · `vp_like_ing` ↔ `would_like` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `ps_form`
-- **A2.2:** `requests` ↔ `would_like` · `poss_adj` ↔ `poss_pron` · `most_of` ↔ `sup` · `vp_like_ing` ↔ `what_like`
-- **B1.1:** `during_while` ↔ `for_since_from` · `too_to` ↔ `vp_adj_to` · `obj_pron` ↔ `reflexive` · `for_since_from` ↔ `pp_for_since` · `so_neither` ↔ `tag_basic`
-- **B1.2:** `link_adj` ↔ `senses_like` · `so_that` ↔ `too_to` · `adv_position` ↔ `word_order` · `would_like` ↔ `would_rather` · `fut_cont` ↔ `will_form` · `all_both` ↔ `no_none` · `ought_to` ↔ `should` · `adv_extreme` ↔ `quite_rather` · `q_negative` ↔ `tag_basic` · `all_both` ↔ `both_and` · `quite_rather` ↔ `so_such_basic` · `both_and` ↔ `so_neither` · `no_longer` ↔ `still_yet` · `adv_degree` ↔ `quite_rather` · `its_time` ↔ `ought_to` · `pp_just` ↔ `still_yet` · `all_both` ↔ `each_every`
-- **B2.1:** `eding` ↔ `part_reduced` · `part_reduced` ↔ `rel_subj` · `pas_cont` ↔ `pas_other` · `vp_make_let` ↔ `vp_see_do` · `deduction` ↔ `should_expect` · `pas_report` ↔ `rep_backshift` · `caus_get` ↔ `get_b2` · `cmp_as` ↔ `like_as` · `likely_bound` ↔ `should_expect` · `pas_inf_ing` ↔ `vp_ing` · `like_as` ↔ `senses_like` · `deduction` ↔ `modals_cont` · `pas_two_obj` ↔ `two_obj` · `vp_meaning` ↔ `vp_need_help` · `compound_nouns` ↔ `poss_s` · `there_it` ↔ `there_it_prep` · `pas_other` ↔ `pas_perf` · `get_b2` ↔ `vp_make_let` · `vp_obj_ing` ↔ `vp_obj_to` · `pas_inf_ing` ↔ `vp_to` · `reciprocal` ↔ `reflexive` · `deduction_past` ↔ `should_have` · `compound_adj_num` ↔ `poss_time` · `have_aux` ↔ `have_got` · `cmp_modify` ↔ `cmp_modify_b2` · `deduction` ↔ `likely_bound` · `deduction` ↔ `deduction_past` · `its_time` ↔ `its_time_past` · `dep_verb` ↔ `noun_prep` · `fut_cont` ↔ `fut_perf` · `must_have_to` ↔ `supposed_to`
-- **B2.2:** `pas_inf_ing` ↔ `vp_complex` · `fut_perf` ↔ `fut_perf_cont` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `vp_reduced` · `distancing` ↔ `pas_report` · `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `part_adv` ↔ `part_reduced` · `ellipsis` ↔ `one_ones`
+- **A2.1:** `be_pres` ↔ `ps_form` · `be_pres` ↔ `q_yesno` · `there_is` ↔ `there_it` · `vp_like_ing` ↔ `would_like` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `have_got` · `be_pres` ↔ `ps_negq` · `poss_adj` ↔ `poss_s`
+- **A2.2:** `vp_like_ing` ↔ `what_like` · `most_of` ↔ `sup` · `requests` ↔ `would_like` · `poss_adj` ↔ `poss_pron`
+- **B1.1:** `obj_pron` ↔ `reflexive` · `for_since_from` ↔ `pp_for_since` · `so_neither` ↔ `tag_basic` · `during_while` ↔ `for_since_from` · `too_to` ↔ `vp_adj_to`
+- **B1.2:** `so_that` ↔ `too_to` · `quite_rather` ↔ `so_such_basic` · `adv_extreme` ↔ `quite_rather` · `all_both` ↔ `no_none` · `all_both` ↔ `both_and` · `q_negative` ↔ `tag_basic` · `no_longer` ↔ `still_yet` · `both_and` ↔ `so_neither` · `its_time` ↔ `ought_to` · `adv_degree` ↔ `quite_rather` · `fut_cont` ↔ `will_form` · `adv_position` ↔ `word_order` · `link_adj` ↔ `senses_like` · `ought_to` ↔ `should` · `all_both` ↔ `each_every` · `pp_just` ↔ `still_yet` · `would_like` ↔ `would_rather`
+- **B2.1:** `dep_verb` ↔ `noun_prep` · `its_time` ↔ `its_time_past` · `deduction` ↔ `deduction_past` · `there_it` ↔ `there_it_prep` · `likely_bound` ↔ `should_expect` · `deduction` ↔ `modals_cont` · `get_b2` ↔ `vp_make_let` · `compound_adj_num` ↔ `poss_time` · `vp_obj_ing` ↔ `vp_obj_to` · `caus_get` ↔ `get_b2` · `pas_inf_ing` ↔ `vp_ing` · `compound_nouns` ↔ `poss_s` · `pas_other` ↔ `pas_perf` · `pas_report` ↔ `rep_backshift` · `have_aux` ↔ `have_got` · `vp_make_let` ↔ `vp_see_do` · `pas_two_obj` ↔ `two_obj` · `deduction` ↔ `likely_bound` · `eding` ↔ `part_reduced` · `pas_cont` ↔ `pas_other` · `fut_cont` ↔ `fut_perf` · `pas_inf_ing` ↔ `vp_to` · `reciprocal` ↔ `reflexive` · `deduction` ↔ `should_expect` · `deduction_past` ↔ `should_have` · `cmp_as` ↔ `like_as` · `like_as` ↔ `senses_like` · `part_reduced` ↔ `rel_subj` · `cmp_modify` ↔ `cmp_modify_b2` · `must_have_to` ↔ `supposed_to` · `vp_meaning` ↔ `vp_need_help`
+- **B2.2:** `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `pas_inf_ing` ↔ `vp_complex` · `ellipsis` ↔ `vp_reduced` · `part_adv` ↔ `part_reduced` · `fut_perf` ↔ `fut_perf_cont` · `distancing` ↔ `pas_report` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `one_ones`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
-Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbilde ir viena forma un starp nepareizajām ir otra. Vārdu bankas un ierakstāmie uzdevumi nav skaitīti. Skaits ir aptuvens.
+Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbilde ir viena forma un starp nepareizajām ir otra. Vārdu bankas un ierakstāmie uzdevumi nav skaitīti. Skaitīts pēc formām atbilžu variantos, tāpēc skaits var atšķirties par vienu vai diviem.
 
 | Formu pāris | Tēmas, kurās skaitīts | Izvēles uzdevumi | Vērtējums |
 |---|---|---|---|
@@ -390,7 +394,7 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 
 ### 4.3. Pārējie pāri
 
-Kartē ir 228 pāri, kuros abām pusēm saturs ir. Tabulā 4.2 saskaitīti 39 formu pāri, kam ir skaidra pazīme vārdos; pārējiem tādas pazīmes nav, un tie nav saskaitīti. Tos varēs saskaitīt precīzi, kad uzdevumi būs piesaistīti punktiem (nākamais posms). Līdz tam drošākais rādītājs ir 3. sadaļa: ja vienam pāra punktam ir zem 10 uzdevumiem, arī izvēles uzdevumu starp abiem gandrīz noteikti nav.
+Kartē ir 228 pāri, kuros abām pusēm saturs ir. Tabulā 4.2 saskaitīti 39 formu pāri, kam ir skaidra pazīme vārdos; pārējiem tādas pazīmes nav, un tie nav saskaitīti. Drošākais rādītājs tiem ir 3. sadaļa: ja vienam pāra punktam ir zem 10 uzdevumiem, arī izvēles uzdevumu starp abiem gandrīz noteikti nav.
 
 ## 5. Ingas lēmumi un materiāli
 

@@ -31,8 +31,12 @@ MEAN = r"Which sentence (means|says|shows|is about|describes|gives|focuses|expre
 def gate(i):
     m = re.match(r"^(.*?)\s*Choose the (correct|right|more natural) option", i["q"]); return "yes" if m and len(m.group(1).split()) > 10 else ""
 os.makedirs(out("docs/review"), exist_ok=True)
+def filled(path):   # a work list that already has verdicts is a record of the reading (14 November): never overwritten
+    p = out(path)
+    if os.path.isfile(p) and any(r.get("verdict") for r in csv.DictReader(open(p, encoding="utf-8"))): print("kept (verdicts filled):", path); return True
+    return False
 c1 = [i for i in B.items if i["kind"] == "mcq" and situation(i)]
-with open(out("docs/review/choice-with-situation-2026-11-14.csv"), "w", newline="", encoding="utf-8") as f:
+with open(out("docs/review/choice-with-situation-2026-11-14.csv") if not filled("docs/review/choice-with-situation-2026-11-14.csv") else os.devnull, "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["group", "caught_by_long_frame_gate", "topic", "level", "role", "question", "correct", "wrong", "verdict", "new_question", "source", "key"])
     for i in sorted(c1, key=lambda i: (bool(re.search(MEAN, i["q"])), i["skill"], i["level"])):
         w.writerow(["meaning question" if re.search(MEAN, i["q"]) else "situation + choice", gate(i), i["skill"], i["level"], i["role"], i["q"], i["correct"], " / ".join(map(str, i["wrong"])), "", "", i["src"], R.key(i)])
@@ -45,7 +49,7 @@ RISK = {"present perfect simple or continuous": r"^(have|has|haven't|hasn't) (be
         "past simple or past perfect": r"^had (\w+ly )?\w+(ed|en|wn|t|ne)$", "past simple or past continuous": r"^(was|were) \w+ing$"}
 c2 = [i for i in B.items if i["kind"] in ("gap", "text") and len(i["answers"]) == 1 and len(i["answers"][0]) == 1]
 def risk(a): return next((k for k, rx in RISK.items() if re.match(rx, a.strip().lower())), "")
-with open(out("docs/review/typed-one-answer-2026-11-14.csv"), "w", newline="", encoding="utf-8") as f:
+with open(out("docs/review/typed-one-answer-2026-11-14.csv") if not filled("docs/review/typed-one-answer-2026-11-14.csv") else os.devnull, "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["risk_group", "topic", "level", "kind", "point", "question", "accepted", "verdict", "answers_to_add", "source", "key"])
     for i in sorted(c2, key=lambda i: (not risk(i["answers"][0][0]), risk(i["answers"][0][0]), i["skill"], i["level"])):
         w.writerow([risk(i["answers"][0][0]), i["skill"], i["level"], i["kind"], R.point(i), i["q"], i["answers"][0][0], "", "", i["src"], R.key(i)])

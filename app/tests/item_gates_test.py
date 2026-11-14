@@ -98,9 +98,20 @@ def g_cond_situation(i):   # 11 November (c-0737): a typed conditional with both
     return ["typed conditional with both parts open and no situation sentence: give the situation (I failed the test last week. If I ___ …)"]
 
 
+FRAME = re.compile(r"^(.+?[.!?'’])\s+(Which (sentence|question|option) is (correct|right)\?|Choose the (correct|right|best|more natural|most polite) (option|sentence|answer)\.?)$")
+
+
 def g_long_frame(i):   # 13 November: "Choose the correct option" needs no story; a situation only where the form depends on it, and short
+    if i["kind"] != "mcq": return []
     m = re.match(r"^(.*?)\s*Choose the (correct|right|more natural) option", i["q"])
-    return ["a long situation before 'Choose the correct option' (" + str(len(m.group(1).split())) + " words): keep it only if the form depends on it"] if (i["kind"] == "mcq" and m and len(m.group(1).split()) > 10) else []
+    if m and len(m.group(1).split()) > 10:
+        return ["a long situation before 'Choose the correct option' (" + str(len(m.group(1).split())) + " words): keep it only if the form depends on it"]
+    # 14 November (part A): the rule is not about length. A choice without a gap with any sentence before the instruction is read:
+    # the situation stays only if a wrong option would be correct English in another situation (baseline = the tasks read and kept)
+    m = FRAME.match(i["q"])
+    if m and "___" not in i["q"]:
+        return ["a situation before '" + m.group(2) + "': cover it; if only one option is still possible English, remove it"]
+    return []
 
 
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,

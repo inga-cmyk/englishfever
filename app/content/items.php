@@ -657,12 +657,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "pc-A22-5a-r2",
+"id": "pc-A22-5a-r3",
 "skill": "present_continuous",
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You are staying in Riga temporarily for one month. Which sentence best emphasises your temporary situation now?",
+"q": "You are in Riga for one month only. Which sentence is correct?",
 "correct": "I'm living in a small flat this month.",
 "wrong": [
 "I live in a small flat this month.",
@@ -1435,12 +1435,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "pac-B11-5a-r3",
+"id": "pac-B11-5a-r5",
 "skill": "past_continuous",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option.",
+"q": "Choose the correct option: I was walking home. Suddenly a dog ___ out of the garden.",
 "correct": "ran",
 "wrong": [
 "was running",
@@ -1564,12 +1564,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*They* vajag *were*: *They were going to meet us.*"
 },
 {
-"id": "pac-B12-5a",
+"id": "pac-B12-5a-r2",
 "skill": "past_continuous",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to describe a plan that did not happen. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "We were going to travel to Italy, but we cancelled.",
 "wrong": [
 "We are going to travel to Italy, but we cancelled.",
@@ -1762,12 +1762,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Present Perfect ar *for/since* savieno pagātni ar tagadni."
 },
 {
-"id": "pp-B11-3a",
+"id": "pp-B11-3a-r2",
 "skill": "present_perfect",
 "level": "B1.1",
 "bloom": 3,
 "kind": "gap",
-"q": "They ___ married for 20 years. (be)",
+"q": "My grandparents ___ married for 50 years, and they still go dancing together. (be)",
 "answers": [
 [
 "have been"
@@ -2379,12 +2379,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Agrākai pagātnes darbībai lieto *had* + 3. forma: *she had already left*."
 },
 {
-"id": "ppf-B12-5a",
+"id": "ppf-B12-5a-r2",
 "skill": "past_perfect",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Tom arrived at 9. The meeting started at 8.30. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "When Tom arrived, the meeting had already started.",
 "wrong": [
 "When Tom arrived, the meeting has already started.",
@@ -3020,12 +3020,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamā kārta, Present Simple: *is/are* + 3. forma. *Bread = it.*"
 },
 {
-"id": "psp-A22-3b",
+"id": "psp-A22-3b-r2",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "These cars ___ in Germany. (build)",
+"q": "These cars ___ in Germany, and they are sold all over the world. (build)",
 "answers": [
 [
 "are built"
@@ -3427,12 +3427,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Write* 3. forma ir *written*: *The book was written by Tom.*"
 },
 {
-"id": "pasp-A22-5a",
+"id": "pasp-A22-5a-r2",
 "skill": "past_simple_passive",
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A past event: we don't know who did it. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "My bike was stolen.",
 "wrong": [
 "My bike stole.",
@@ -3557,12 +3557,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "pasp-B11-5a",
+"id": "pasp-B11-5a-r2",
 "skill": "past_simple_passive",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "A news report says what happened but the person who did it is unknown. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "A car was stolen last night.",
 "wrong": [
 "Someone stealing a car last night.",
@@ -3944,12 +3944,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Rooms* ir daudzskaitlī, tāpēc *have been prepared*."
 },
 {
-"id": "ppp-B11-5a-r3",
+"id": "ppp-B11-5a-r4",
 "skill": "present_perfect_passive",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to tell a colleague the news: the email is sent, and you don't say who sent it. Which sentence?",
+"q": "Tell a colleague the news: the email is now sent. Which sentence is correct?",
 "correct": "The email has just been sent.",
 "wrong": [
 "The email was just send.",
@@ -4266,7 +4266,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*will + be* + 3. forma."
 },
 {
-"id": "fup-B12-3a-r3",
+"id": "fup-B12-3a-r4",
 "skill": "future_passive",
 "level": "B1.2",
 "bloom": 3,
@@ -4274,12 +4274,26 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Don't worry. Everything ___ before the guests arrive. (prepare)",
 "answers": [
 [
-"will be prepared"
+"will be prepared",
+"will have been prepared",
+"is going to be prepared"
 ]
 ],
 "why": "*will be* + past participle.",
 "hints": [],
-"why_lv": "*will be* + 3. forma."
+"why_lv": "*will be* + 3. forma.",
+"answer_notes": [
+[
+"will have been prepared",
+"Correct too: *will have been prepared* = ready before they arrive.",
+"Arī pareizi: *will have been prepared* = viss būs gatavs, pirms viesi ieradīsies."
+],
+[
+"is going to be prepared",
+"Correct too: *be going to* = it is the plan.",
+"Arī pareizi: *be going to* = tā ir ieplānots."
+]
+]
 },
 {
 "id": "fup-B12-3b-r2",
@@ -4315,12 +4329,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Lieto 3. formu: *The class will be cancelled.*"
 },
 {
-"id": "fup-B12-5a",
+"id": "fup-B12-5a-r2",
 "skill": "future_passive",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write an airport announcement. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "Passengers will be informed of any changes.",
 "wrong": [
 "Passengers informing of any changes.",
@@ -4558,12 +4572,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Vispārējai patiesībai abās daļās lieto Present Simple: *they get grumpy*."
 },
 {
-"id": "cz-B11-5a",
+"id": "cz-B11-5a-r2",
 "skill": "cond_zero",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If a visitor arrives, sign them in at reception.",
 "wrong": [
 "If a visitor would arrive, sign them in at reception.",
@@ -4675,12 +4689,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*If* daļā nav *will*. Saki: *If I see him, I will tell him.*"
 },
 {
-"id": "cf-A22-5a-r2",
+"id": "cf-A22-5a-r3",
 "skill": "cond_first",
 "level": "A2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A friend writes: 'If I will have time, I will call you.' Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If I have time, I'll call you.",
 "wrong": [
 "If I would have time, I will call you.",
@@ -4826,7 +4840,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "First conditional: *If* + Present Simple, *will* + pamatforma."
 },
 {
-"id": "cf-B11-3b-r2",
+"id": "cf-B11-3b-r3",
 "skill": "cond_first",
 "level": "B1.1",
 "bloom": 3,
@@ -4834,7 +4848,9 @@ return json_decode(<<<'EF_JSON_END'
 "q": "I'll call you as soon as I ___ at the station. (arrive)",
 "answers": [
 [
-"arrive"
+"arrive",
+"have arrived",
+"'ve arrived"
 ]
 ],
 "why": "After *as soon as, when* and *before* we use the present simple for the future.",
@@ -4845,7 +4861,14 @@ return json_decode(<<<'EF_JSON_END'
 "Pēc *as soon as* lieto Present Simple: ... *as soon as I arrive*."
 ]
 ],
-"why_lv": "Pēc *as soon as, when* un *before* nākotnei lieto Present Simple."
+"why_lv": "Pēc *as soon as, when* un *before* nākotnei lieto Present Simple.",
+"answer_notes": [
+[
+"have arrived",
+"Correct too: *have arrived* = after you have arrived. Not *will* after *when / as soon as*.",
+"Arī pareizi: *have arrived* = kad būsi ieradies. Pēc *when / as soon as* nelieto *will*."
+]
+]
 },
 {
 "id": "cf-B11-4a",
@@ -4865,12 +4888,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *when, as soon as, if* un *unless* nākotnei lieto Present Simple: *when I get home*."
 },
 {
-"id": "cf-B11-5a",
+"id": "cf-B11-5a-r2",
 "skill": "cond_first",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You want to warn a friend who keeps forgetting his password. Choose the correct option.",
+"q": "Your friend keeps forgetting his password. Choose the correct option.",
 "correct": "If you forget it again, you'll be locked out.",
 "wrong": [
 "If you will forget it again, you'll be locked out.",
@@ -4900,12 +4923,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
-"id": "cf-B11-1b-r3",
+"id": "cf-B11-1b-r5",
 "skill": "cond_first",
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence about a possible future is correct?",
+"q": "Which sentence is correct?",
 "correct": "If it snows tonight, the office will close.",
 "wrong": [
 "If it will snow tonight, the office closes.",
@@ -5139,12 +5162,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*If* daļā lieto Past Simple, nevis *will*: *If I won the lottery*, ..."
 },
 {
-"id": "cs-B11-5a",
+"id": "cs-B11-5a-r2",
 "skill": "cond_second",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Your friend can't decide whether to quit and become a baker. You give advice. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If I were you, I would talk to a few bakers first.",
 "wrong": [
 "If I am you, I will talk to a few bakers first.",
@@ -5310,12 +5333,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*If* daļā nelieto *would*. Saki: *If I had more free time*, ..."
 },
 {
-"id": "cs-B12-5a",
+"id": "cs-B12-5a-r2",
 "skill": "cond_second",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You advise a manager politely. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If I were you, I would speak to the team before the meeting.",
 "wrong": [
 "If I were you, I will speak to the team before the meeting.",
@@ -5419,12 +5442,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "cs-B21-5a",
+"id": "cs-B21-5a-r2",
 "skill": "cond_second",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a polite request in a formal email. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "I would be grateful if you could send me the report by Friday.",
 "wrong": [
 "I would be grateful if you will send me the report by Friday.",
@@ -5669,12 +5692,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ct-B21-5a",
+"id": "ct-B21-5a-r2",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a polite criticism in a work review. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If you had told us earlier, we could have adjusted the schedule.",
 "wrong": [
 "If you told us earlier, we could have adjusted the schedule.",
@@ -5783,12 +5806,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ct-B22-5a",
+"id": "ct-B22-5a-r2",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You express regret in a formal apology. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If I had realised the impact of my decision, I would have acted differently.",
 "wrong": [
 "If I realised the impact of my decision, I would have acted differently.",
@@ -5894,12 +5917,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "cm-B21-5a",
+"id": "cm-B21-5a-r2",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You explain why someone is tired today because of last night. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "If I hadn't stayed up so late, I wouldn't be so tired now.",
 "wrong": [
 "If I didn't stay up so late, I wouldn't have been so tired now.",
@@ -6104,12 +6127,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cm-C11-5a-r2",
+"id": "cm-C11-5a-r3",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a formal report about a past failure with a present effect. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "Had the contract been checked properly, we would not be facing these penalties now.",
 "wrong": [
 "If the contract had checked properly, we would not be facing these penalties now.",
@@ -6821,12 +6844,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešajam jautājumam ir teikuma vārdu secība: *where I lived*, nevis *where did I live*."
 },
 {
-"id": "rq-B12-5a",
+"id": "rq-B12-5a-r2",
 "skill": "rep_questions",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A hotel guest asked: 'Is breakfast included?' You report the question. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "The guest asked whether breakfast was included.",
 "wrong": [
 "The guest asked was breakfast included.",
@@ -7078,12 +7101,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rq-B22-5a",
+"id": "rq-B22-5a-r2",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write meeting minutes: 'Has the budget been approved?' Ms Novak asked. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "Ms Novak asked whether the budget had been approved.",
 "wrong": [
 "Ms Novak asked has the budget been approved.",
@@ -7709,12 +7732,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *I wonder* lieto teikuma vārdu secību: *what she wants*."
 },
 {
-"id": "ip-B12-5a",
+"id": "ip-B12-5a-r2",
 "skill": "ind_polite",
 "level": "B1.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a polite email to a client. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "Could you let me know whether the contract has been signed?",
 "wrong": [
 "Could you let me know has the contract been signed?",
@@ -7861,12 +7884,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ip-B21-5a-r2",
+"id": "ip-B21-5a-r3",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which is the polite way to ask this: 'When will my order be delivered?'",
+"q": "Which sentence is correct?",
 "correct": "I was wondering if you could tell me when my order will be delivered.",
 "wrong": [
 "I was wondering when will my order be delivered?",
@@ -7968,12 +7991,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-B22-5a",
+"id": "ia-B22-5a-r2",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a formal email. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "It remains unclear who is responsible for the delay.",
 "wrong": [
 "It remains unclear who is the responsible for the delay.",
@@ -8168,12 +8191,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C12-5a-r2",
+"id": "ia-C12-5a-r3",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a formal report. Choose the correct option.",
+"q": "Which sentence is correct?",
 "correct": "How the funds were spent remains to be investigated.",
 "wrong": [
 "How were the funds spent remains to be investigated.",

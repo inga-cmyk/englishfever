@@ -11,6 +11,18 @@
     "3": "When I first met her, she ___ in Madrid very long, but she already knew the city well. (not / live)",
     "9": "She ___ in Madrid very long, but she knew the city well. (not / live)"
    }
+  },
+  {
+   "match": [
+    "gap",
+    "I hope the bus comes soon. I ___ for twenty minutes. (wait)",
+    "have been waiting"
+   ],
+   "line": 55,
+   "set": {
+    "4": "have been waiting | have waited",
+    "13": "have waited :: Correct too. *have been waiting* stresses that the waiting is still going on. :: Arī pareizi. *have been waiting* uzsver, ka gaidīšana vēl turpinās."
+   }
   }
  ],
  "b1-tenses-1.csv": [
@@ -124,6 +136,61 @@
     "3": "Our train is at 5 a.m., so tomorrow we ___ leave very early. (have to)",
     "9": "Complete with will have to: Tomorrow we ___ leave early."
    }
+  },
+  {
+   "match": [
+    "mcq",
+    "You cannot find your keys. Which sentence is correct?",
+    "I can't find my keys."
+   ],
+   "line": 4,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Your brother has a bad cough. Which sentence is correct?",
+    "He should see a doctor."
+   ],
+   "line": 11,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Anna and Tom speak German. Which sentence is correct?",
+    "Anna and Tom can speak German."
+   ],
+   "line": 14,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Your sister's job needs a uniform. Which sentence is correct?",
+    "She has to wear a uniform."
+   ],
+   "line": 18,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Parking is not allowed here. Which sentence is correct?",
+    "You mustn't park here."
+   ],
+   "line": 23,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
   }
  ],
  "b1-tenses-2.csv": [
@@ -151,6 +218,54 @@
     "7": "*has been running*: darbība līdz šim brīdim, kas izskaidro, kā viņa jūtas tagad. *ran* neder, jo rīts vēl nav beidzies.",
     "9": "Join with because: She is tired. She has been running."
    }
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ all day, so I need a break. (work)",
+    "have been working"
+   ],
+   "line": 51,
+   "set": {
+    "4": "have been working | have worked",
+    "13": "have worked :: Correct too. *have been working* stresses the activity; *have worked* states it as a fact. :: Arī pareizi. *have been working* uzsver darbību, *have worked* to pasaka kā faktu."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ for hours, but they haven't found it. (look)",
+    "have been looking"
+   ],
+   "line": 54,
+   "set": {
+    "4": "have been looking | have looked",
+    "13": "have looked :: Correct too: *have looked* = the whole time up to now, as a fact; *have been looking* stresses the activity. :: Arī pareizi: *have looked* = visu laiku līdz šim, kā fakts; *have been looking* uzsver darbību."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The final is tomorrow. I don't think the team ___ the match. (win)",
+    "will win"
+   ],
+   "line": 118,
+   "set": {
+    "4": "will win | is going to win",
+    "13": "is going to win :: Correct too. After *I don't think* we usually use *will*. :: Arī pareizi. Pēc *I don't think* parasti lieto *will*."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Call me when you ___ . (arrive)",
+    "arrive"
+   ],
+   "line": 123,
+   "set": {
+    "4": "arrive | have arrived",
+    "13": "have arrived :: Correct too: *have arrived* = after you have arrived. Not *will* after *when / as soon as*. :: Arī pareizi: *have arrived* = kad būsi ieradies. Pēc *when / as soon as* nelieto *will*."
+   }
   }
  ],
  "a2-big-1.csv": [
@@ -172,6 +287,30 @@
    "line": 198,
    "set": {
     "5": "also accepted: the soup tastes better if you add salt | if you add the salt soup tastes better | soup tastes better if you add the salt"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The boys ___ football when it began to rain. (play)",
+    "were playing"
+   ],
+   "line": 63,
+   "set": {
+    "3": "The boys ___ football when it began to rain. They were in the middle of a game. (play)",
+    "9": "The boys ___ football when it began to rain. (play)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ a lot of photos so far this week. (take)",
+    "have taken"
+   ],
+   "line": 89,
+   "set": {
+    "4": "have taken | have been taking",
+    "13": "have been taking :: Correct too: *have been taking* stresses the activity; *have taken* the number of photos. :: Arī pareizi: *have been taking* uzsver darbību, *have taken* fotogrāfiju skaitu."
    }
   }
  ],
@@ -203,6 +342,54 @@
    "line": 28,
    "set": {
     "4": "Who is the report checked by? | By whom is the report checked?"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "I ___ asked to speak at the conference.",
+    "have been"
+   ],
+   "line": 127,
+   "set": {
+    "3": "I ___ asked to speak at the conference, so I'm preparing a talk now.",
+    "9": "I ___ asked to speak at the conference."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The bridge ___ next summer. (repair)",
+    "will be repaired"
+   ],
+   "line": 161,
+   "set": {
+    "4": "will be repaired | is going to be repaired",
+    "13": "is going to be repaired :: Correct too: *be going to* for something already planned. :: Arī pareizi: *be going to* tam, kas jau ieplānots."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Don't worry, you ___ before the test. (tell)",
+    "will be told"
+   ],
+   "line": 162,
+   "set": {
+    "4": "will be told | are going to be told",
+    "13": "are going to be told :: Correct too: *be going to* = it is certain, it is the plan. :: Arī pareizi: *be going to* = tas ir droši, tā ir ieplānots."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The parcels ___ to customers within two days. (deliver)",
+    "are delivered"
+   ],
+   "line": 21,
+   "set": {
+    "3": "The parcels usually ___ to customers within two days. (deliver)",
+    "9": "The parcels ___ to customers within two days. (deliver)"
    }
   }
  ],
@@ -675,6 +862,39 @@
     "4": "built / would travel",
     "9": "If the city ___ more cycle lanes, more people ___ by bike. (build / travel)"
    }
+  },
+  {
+   "match": [
+    "mcq",
+    "I don't have a car, so I take the bus. Imagine it is different. Choose the correct sentence.",
+    "If I had a car, I wouldn't take the bus."
+   ],
+   "line": 46,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "We didn't know about the problem yesterday, so we didn't call you. Choose the sentence that says the opposite.",
+    "If we had known about the problem, we would have called you."
+   ],
+   "line": 51,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which is the polite way to ask this: 'Where is the meeting room?'",
+    "I was wondering if you could tell me where the meeting room is."
+   ],
+   "line": 71,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
   }
  ],
  "b1-new-2.csv": [
@@ -815,6 +1035,30 @@
    "set": {
     "4": "Why did he leave early? | Why did he leave?"
    }
+  },
+  {
+   "match": [
+    "gap",
+    "We ___ dinner when the lights went out. (have)",
+    "were having"
+   ],
+   "line": 58,
+   "set": {
+    "3": "We ___ dinner when the lights went out, so we finished it by candlelight. (have)",
+    "9": "We ___ dinner when the lights went out. (have)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Mia ___ to school by bus every day. (go)",
+    "goes"
+   ],
+   "line": 5,
+   "set": {
+    "3": "Mia ___ to school by bus every day. She never walks. (go)",
+    "9": "Mia ___ to school by bus every day. (go)"
+   }
   }
  ],
  "more-1.csv": [
@@ -827,6 +1071,227 @@
    "line": 86,
    "set": {
     "4": "Who did you see yesterday? | Who did you see? | Whom did you see yesterday? | Whom did you see?"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The news ___ good today. (be)",
+    "is"
+   ],
+   "line": 10,
+   "set": {
+    "3": "Listen! The news ___ good. (be)",
+    "9": "The news ___ good today. (be)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ dinner at nine yesterday. (have)",
+    "had"
+   ],
+   "line": 82,
+   "set": {
+    "4": "had | were having",
+    "13": "were having :: Correct too: *were having* = in the middle of dinner at nine. :: Arī pareizi: *were having* = deviņos viņi tieši vakariņoja."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "She ___ English and German. (speak)",
+    "speaks"
+   ],
+   "line": 92,
+   "set": {
+    "3": "She ___ English and German, so she can help you. (speak)",
+    "9": "She ___ English and German. (speak)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "My brother always ___ his homework after dinner. (do)",
+    "does"
+   ],
+   "line": 95,
+   "set": {
+    "3": "My brother always ___ his homework after dinner. He's doing it now. (do)",
+    "9": "My brother always ___ his homework after dinner. (do)"
+   }
+  }
+ ],
+ "twins-3.csv": [
+  {
+   "match": [
+    "mcq",
+    "He isn't a confident person, so he didn't ask for a pay rise. Choose the correct sentence.",
+    "If he were more confident, he would have asked for a pay rise."
+   ],
+   "line": 5,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct report of her question to you: 'How should I start?'",
+    "She asked me how to start."
+   ],
+   "line": 14,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct report of Mr Ozols's question: 'Have the invoices been sent?'",
+    "Mr Ozols asked whether the invoices had been sent."
+   ],
+   "line": 17,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct report of your sister's words to you: 'I'll call you as soon as I land.'",
+    "My sister said she would call me as soon as she landed."
+   ],
+   "line": 12,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct report of the agent's words to you: 'You might need a visa.'",
+    "The agent said I might need a visa."
+   ],
+   "line": 13,
+   "set": {
+    "3": "Which sentence is correct?"
+   }
+  }
+ ],
+ "a2-relabelled-1.csv": [
+  {
+   "match": [
+    "gap",
+    "They ___ married for 20 years. (be)",
+    "have been"
+   ],
+   "line": 7,
+   "set": {
+    "3": "They ___ married for 20 years, and they are still happy together. (be)",
+    "9": "They ___ married for 20 years. (be)"
+   }
+  }
+ ],
+ "typical-b2c1-1.csv": [
+  {
+   "match": [
+    "gap",
+    "It depends on ___ the budget is approved.",
+    "whether"
+   ],
+   "line": 40,
+   "set": {
+    "3": "It depends on ___ the budget is approved or not.",
+    "9": "It depends on ___ the budget is approved."
+   }
+  }
+ ],
+ "a2-mistakes-1.csv": [
+  {
+   "match": [
+    "gap",
+    "My best friend ___ in London. (live)",
+    "lives"
+   ],
+   "line": 45,
+   "set": {
+    "3": "My best friend ___ in London now. (live)",
+    "9": "My best friend ___ in London. (live)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Tom and Anna ___ in London. (live)",
+    "live"
+   ],
+   "line": 46,
+   "set": {
+    "3": "Tom and Anna ___ in London now. (live)",
+    "9": "Tom and Anna ___ in London. (live)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Our neighbours ___ a big dog. (have)",
+    "have"
+   ],
+   "line": 50,
+   "set": {
+    "3": "Our neighbours ___ a big dog. It barks every morning. (have)",
+    "9": "Our neighbours ___ a big dog. (have)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Nobody ___ the answer. (know)",
+    "knows"
+   ],
+   "line": 47,
+   "set": {
+    "3": "Nobody ___ the answer. Can you help us? (know)",
+    "9": "Nobody ___ the answer. (know)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "There ___ three chairs in the room. (be)",
+    "are"
+   ],
+   "line": 48,
+   "set": {
+    "3": "Look! There ___ three chairs in the room. (be)",
+    "9": "There ___ three chairs in the room. (be)"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The police ___ here. (be)",
+    "are"
+   ],
+   "line": 83,
+   "set": {
+    "3": "Look! The police ___ here. (be)",
+    "9": "The police ___ here. (be)"
+   }
+  }
+ ],
+ "a2-forms-1.csv": [
+  {
+   "match": [
+    "gap",
+    "I ___ about you yesterday. (think)",
+    "thought"
+   ],
+   "line": 8,
+   "set": {
+    "4": "thought | was thinking",
+    "13": "was thinking :: Correct too: *was thinking* = for some time yesterday. :: Arī pareizi: *was thinking* = vakar kādu laiku domāju."
    }
   }
  ]

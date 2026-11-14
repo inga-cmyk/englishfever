@@ -13254,5 +13254,237 @@
 "unreal_time | B2.2 | text | Write one sentence that starts with *I'd rather you*: Please don't bring your dog to the office. | ": [
 "rather_you",
 "read"
+],
+"present_continuous | A2.2 | mcq | You are in Riga for one month only. Which sentence is correct? | I'm living in a small flat this month.": [
+"pc_temp",
+"read"
+],
+"past_continuous | B1.1 | mcq | Choose the correct option: I was walking home. Suddenly a dog ___ out of the garden. | ran": [
+"pastc_when",
+"read"
+],
+"past_continuous | B1.2 | mcq | Which sentence is correct? | We were going to travel to Italy, but we cancelled.": [
+"fut_past",
+"read"
+],
+"past_perfect | B1.2 | mcq | Which sentence is correct? | When Tom arrived, the meeting had already started.": [
+"pastp_by",
+"read"
+],
+"past_simple_passive | A2.2 | mcq | Which sentence is correct? | My bike was stolen.": [
+"pas_act",
+"read"
+],
+"past_simple_passive | B1.1 | mcq | Which sentence is correct? | A car was stolen last night.": [
+"pas_act",
+"read"
+],
+"present_perfect_passive | B1.1 | mcq | Tell a colleague the news: the email is now sent. Which sentence is correct? | The email has just been sent.": [
+"pas_perf",
+"rule"
+],
+"future_passive | B1.2 | mcq | Which sentence is correct? | Passengers will be informed of any changes.": [
+"pas_will",
+"rule"
+],
+"cond_zero | B1.1 | mcq | Which sentence is correct? | If a visitor arrives, sign them in at reception.": [
+"c0",
+"read"
+],
+"cond_first | A2.2 | mcq | Which sentence is correct? | If I have time, I'll call you.": [
+"c1",
+"read"
+],
+"cond_first | B1.1 | mcq | Your friend keeps forgetting his password. Choose the correct option. | If you forget it again, you'll be locked out.": [
+"c1",
+"read"
+],
+"cond_first | B1.1 | mcq | Which sentence is correct? | If it snows tonight, the office will close.": [
+"c1",
+"read"
+],
+"cond_second | B1.1 | mcq | Which sentence is correct? | If I were you, I would talk to a few bakers first.": [
+"c2_were",
+"read"
+],
+"cond_second | B1.2 | mcq | Which sentence is correct? | If I were you, I would speak to the team before the meeting.": [
+"c2_were",
+"read"
+],
+"cond_second | B2.1 | mcq | Which sentence is correct? | I would be grateful if you could send me the report by Friday.": [
+"c2",
+"read"
+],
+"cond_third | B2.1 | mcq | Which sentence is correct? | If you had told us earlier, we could have adjusted the schedule.": [
+"c3_modal",
+"read"
+],
+"cond_third | B2.2 | mcq | Which sentence is correct? | If I had realised the impact of my decision, I would have acted differently.": [
+"c3",
+"read"
+],
+"cond_mixed | B2.1 | mcq | Which sentence is correct? | If I hadn't stayed up so late, I wouldn't be so tired now.": [
+"c_mixed",
+"read"
+],
+"cond_mixed | B2.2 | mcq | Which sentence is correct? | Had the contract been checked properly, we would not be facing these penalties now.": [
+"c_inv",
+"read"
+],
+"rep_questions | B1.2 | mcq | Which sentence is correct? | The guest asked whether breakfast was included.": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B2.2 | mcq | Which sentence is correct? | Ms Novak asked whether the budget had been approved.": [
+"rep_q_yn",
+"read"
+],
+"ind_polite | B1.2 | mcq | Which sentence is correct? | Could you let me know whether the contract has been signed?": [
+"iq_yn",
+"read"
+],
+"ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me when my order will be delivered.": [
+"iq_wh",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence is correct? | It remains unclear who is responsible for the delay.": [
+"iq_subject",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence is correct? | How the funds were spent remains to be investigated.": [
+"iq_subject",
+"read"
+],
+"rep_questions | B2.1 | order | Anna's question to you: 'Can you help me?' Put the words in order. | she asked if I could help her": [
+"rep_q_yn",
+"read"
+],
+"modal_verbs | A2.1 | mcq | Which sentence is correct? | I can't find my keys.": [
+"can",
+"read"
+],
+"modal_verbs | A2.1 | mcq | Which sentence is correct? | He should see a doctor.": [
+"should",
+"read"
+],
+"modal_verbs | A2.1 | mcq | Which sentence is correct? | Anna and Tom can speak German.": [
+"can",
+"read"
+],
+"modal_verbs | A2.2 | mcq | Which sentence is correct? | She has to wear a uniform.": [
+"must_have_to",
+"read"
+],
+"modal_verbs | A2.2 | mcq | Which sentence is correct? | You mustn't park here.": [
+"mustnt_dont",
+"read"
+],
+"cond_second | B2.1 | mcq | Which sentence is correct? | If I had a car, I wouldn't take the bus.": [
+"c2",
+"read"
+],
+"cond_third | B2.2 | mcq | Which sentence is correct? | If we had known about the problem, we would have called you.": [
+"c3",
+"read"
+],
+"ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me where the meeting room is.": [
+"iq_wh",
+"read"
+],
+"cond_mixed | B2.2 | mcq | Which sentence is correct? | If he were more confident, he would have asked for a pay rise.": [
+"c_mixed2",
+"read"
+],
+"rep_statements | B2.1 | mcq | Which sentence is correct? | My sister said she would call me as soon as she landed.": [
+"rep_backshift",
+"read"
+],
+"rep_statements | B2.1 | mcq | Which sentence is correct? | The agent said I might need a visa.": [
+"rep_backshift",
+"read"
+],
+"rep_questions | B2.2 | mcq | Which sentence is correct? | She asked me how to start.": [
+"iq_to",
+"read"
+],
+"rep_questions | B2.2 | mcq | Which sentence is correct? | Mr Ozols asked whether the invoices had been sent.": [
+"rep_q_yn",
+"read"
+],
+"past_simple | B1.1 | mcq | Choose the correct option: I ___ my report last March. | finished": [
+"pp_ps",
+"read"
+],
+"present_perfect_passive | B1.2 | gap | I ___ asked to speak at the conference, so I'm preparing a talk now. | ": [
+"pas_perf",
+"rule"
+],
+"present_perfect | B1.1 | gap | My grandparents ___ married for 50 years, and they still go dancing together. (be) | ": [
+"pp_for_since",
+"read"
+],
+"present_simple_passive | A2.2 | gap | These cars ___ in Germany, and they are sold all over the world. (build) | ": [
+"pas_pres",
+"read"
+],
+"past_continuous | A2.2 | gap | The boys ___ football when it began to rain. They were in the middle of a game. (play) | ": [
+"pastc_when",
+"read"
+],
+"present_simple | A2.1 | gap | Mia ___ to school by bus every day. She never walks. (go) | ": [
+"ps_form",
+"read"
+],
+"past_continuous | A2.2 | gap | We ___ dinner when the lights went out, so we finished it by candlelight. (have) | ": [
+"pastc_when",
+"read"
+],
+"agreement | A2.1 | gap | My best friend ___ in London now. (live) | ": [
+"agr_basic",
+"read"
+],
+"agreement | A2.1 | gap | Tom and Anna ___ in London now. (live) | ": [
+"agr_basic",
+"read"
+],
+"agreement | A2.2 | gap | Nobody ___ the answer. Can you help us? (know) | ": [
+"indef_sing",
+"read"
+],
+"agreement | A2.2 | gap | Look! There ___ three chairs in the room. (be) | ": [
+"there_is",
+"read"
+],
+"agreement | A2.1 | gap | Our neighbours ___ a big dog. It barks every morning. (have) | ": [
+"agr_basic",
+"read"
+],
+"irregular_plurals | A2.2 | gap | Look! The police ___ here. (be) | ": [
+"plural_only",
+"read"
+],
+"present_perfect | A2.2 | gap | They ___ married for 20 years, and they are still happy together. (be) | ": [
+"pp_for_since",
+"read"
+],
+"present_simple_passive | B1.1 | gap | The parcels usually ___ to customers within two days. (deliver) | ": [
+"pas_pres",
+"read"
+],
+"agreement | A2.2 | gap | Listen! The news ___ good. (be) | ": [
+"unc_nouns",
+"read"
+],
+"present_simple | A2.1 | gap | She ___ English and German, so she can help you. (speak) | ": [
+"ps_form",
+"read"
+],
+"present_simple | A2.2 | gap | My brother always ___ his homework after dinner. He's doing it now. (do) | ": [
+"ps_form",
+"read"
+],
+"ind_advanced | B2.2 | gap | It depends on ___ the budget is approved or not. | ": [
+"iq_whether",
+"read"
 ]
 }

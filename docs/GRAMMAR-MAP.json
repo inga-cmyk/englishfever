@@ -553,7 +553,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 11,
+    "check": 10,
     "use": 7,
     "learn": 3
    },
@@ -1176,7 +1176,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 13,
+    "check": 14,
     "use": 9,
     "learn": 1
    },

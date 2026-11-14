@@ -1118,6 +1118,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Divas darbības, kas notiek vienlaikus: *while* + Past Continuous, Past Continuous."
 },
 {
+"id": "pac-B12-5a",
+"skill": "past_continuous",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to describe a plan that did not happen. Choose the correct option.",
+"correct": "We were going to travel to Italy, but we cancelled.",
+"wrong": [
+"We are going to travel to Italy, but we cancelled.",
+"We travel to Italy, but we cancelled.",
+"We have travelled to Italy, but we cancelled."
+],
+"why": "Past tense + *but* shows the plan changed: *were going to.*",
+"wrong_why": {},
+"why_lv": "Pagātnes forma + *but* rāda, ka plāns mainījās: *were going to*."
+},
+{
 "id": "pac-B12-6a",
 "skill": "past_continuous",
 "level": "B1.2",
@@ -1157,6 +1174,28 @@ return json_decode(<<<'EF_JSON_END'
 "model": "I have never been to Japan.",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "pp-B11-3a",
+"skill": "present_perfect",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "They ___ married for 20 years. (be)",
+"answers": [
+[
+"have been"
+]
+],
+"why": "Unfinished period: *have been* + *for 20 years.*",
+"hints": [
+[
+"\\bare\\b|\\bwere\\b",
+"With *for/since* and a situation that continues, use the present perfect: *have been.*",
+"Ar *for/since* un situāciju, kas turpinās, lieto Present Perfect: *have been*."
+]
+],
+"why_lv": "Nebeigts laika posms: *have been + for 20 years*."
 },
 {
 "id": "pp-B11-3b",
@@ -1454,6 +1493,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*After* + past perfect (earlier action), past simple (later action).",
 "hints": [],
 "why_lv": "*After* + Past Perfect (agrākā darbība), Past Simple (vēlākā darbība)."
+},
+{
+"id": "ppf-B12-5a",
+"skill": "past_perfect",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Tom arrived at 9. The meeting started at 8.30. Choose the correct option.",
+"correct": "When Tom arrived, the meeting had already started.",
+"wrong": [
+"When Tom arrived, the meeting has already started.",
+"When Tom arrived, the meeting would already start.",
+"When Tom arrived, the meeting is already started."
+],
+"why": "The meeting started before Tom arrived, so we use the past perfect for the meeting.",
+"wrong_why": {},
+"why_lv": "Sapulce sākās pirms Toma ierašanās, tāpēc sapulcei lieto Past Perfect."
 },
 {
 "id": "ppf-B12-6a",
@@ -1796,6 +1852,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamās kārtas teikumā teikuma priekšmets ir tas, kas saņem darbību: *Rice is grown.*"
 },
 {
+"id": "psp-A22-3b",
+"skill": "present_simple_passive",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "These cars ___ in Germany. (build)",
+"answers": [
+[
+"are built"
+]
+],
+"why": "*These cars* = *they*, so *are built.*",
+"hints": [],
+"why_lv": "*These cars = they*, tāpēc *are built*."
+},
+{
 "id": "psp-A22-5a",
 "skill": "present_simple_passive",
 "level": "A2.2",
@@ -2013,6 +2085,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Logs saņem darbību. Ciešamā kārta: *was + broken*."
 },
 {
+"id": "pasp-A22-5a",
+"skill": "past_simple_passive",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A past event: we don't know who did it. Choose the correct option.",
+"correct": "My bike was stolen.",
+"wrong": [
+"My bike stole.",
+"My bike was stealing.",
+"My bike were stolen."
+],
+"why": "Passive past: *was/were* + past participle. *Bike* = singular, so *was stolen.*",
+"wrong_why": {},
+"why_lv": "Ciešamā kārta pagātnē: *was/were* + 3. forma. *Bike* = vienskaitlis, tāpēc *was stolen*."
+},
+{
 "id": "pasp-A22-6a",
 "skill": "past_simple_passive",
 "level": "A2.2",
@@ -2121,6 +2210,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "The past participle of *give* is *given*: *She was given a prize.*",
 "wrong_why": {},
 "why_lv": "*Give* 3. forma ir *given*: *She was given a prize.*"
+},
+{
+"id": "pasp-B11-5a",
+"skill": "past_simple_passive",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "A news report says what happened but the person who did it is unknown. Choose the correct option.",
+"correct": "A car was stolen last night.",
+"wrong": [
+"Someone stealing a car last night.",
+"A car steals last night.",
+"A car were stolen last night."
+],
+"why": "The passive is common in news reports when the doer is unknown.",
+"wrong_why": {},
+"why_lv": "Ziņās bieži lieto ciešamo kārtu, ja darītājs nav zināms."
 },
 {
 "id": "pasp-B11-6a",
@@ -2513,6 +2619,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*will be* + 3. forma."
 },
 {
+"id": "fup-B12-5a",
+"skill": "future_passive",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write an airport announcement. Choose the correct option.",
+"correct": "Passengers will be informed of any changes.",
+"wrong": [
+"Passengers informing of any changes.",
+"Passengers inform of any changes.",
+"Passengers are informing of any changes."
+],
+"why": "Announcements often use the passive: *will be informed.*",
+"wrong_why": {},
+"why_lv": "Paziņojumos bieži lieto ciešamo kārtu: *will be informed*."
+},
+{
 "id": "fup-B12-6a",
 "skill": "future_passive",
 "level": "B1.2",
@@ -2676,6 +2799,23 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why_lv": "Zero conditional *if* vietā var lietot *when* un *whenever*."
+},
+{
+"id": "cz-B11-5a",
+"skill": "cond_zero",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Choose the correct option.",
+"correct": "If a visitor arrives, sign them in at reception.",
+"wrong": [
+"If a visitor would arrive, sign them in at reception.",
+"If a visitor arrived, sign them in at reception.",
+"If a visitor will arrive, signing them in at reception."
+],
+"why": "A rule uses *if* + present simple, then an instruction. We do not use *will* after *if.*",
+"wrong_why": {},
+"why_lv": "Noteikumam lieto *if* + Present Simple, tad norādījumu. Pēc *if* nelieto *will*."
 },
 {
 "id": "cz-B11-6a",
@@ -2846,6 +2986,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *as soon as, when* un *before* nākotnei lieto Present Simple."
 },
 {
+"id": "cf-B11-5a",
+"skill": "cond_first",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to warn a friend who keeps forgetting his password. Choose the correct option.",
+"correct": "If you forget it again, you'll be locked out.",
+"wrong": [
+"If you will forget it again, you'll be locked out.",
+"If you forgot it again, you'll be locked out.",
+"If you forget it again, you locked out."
+],
+"why": "A warning uses *if* + present simple, then *will* + base verb.",
+"wrong_why": {},
+"why_lv": "Brīdinājumam lieto *if* + Present Simple, tad *will* + pamatforma."
+},
+{
 "id": "cf-B11-1b",
 "skill": "cond_first",
 "level": "B1.1",
@@ -2981,6 +3138,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Second conditional: *if* + Past Simple (*were*), *would* + pamatforma."
 },
 {
+"id": "cs-B11-5a",
+"skill": "cond_second",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your friend can't decide whether to quit and become a baker. You give advice. Choose the correct option.",
+"correct": "If I were you, I would talk to a few bakers first.",
+"wrong": [
+"If I am you, I will talk to a few bakers first.",
+"If I would be you, I talk to a few bakers first.",
+"If I was you, I will talk to a few bakers first."
+],
+"why": "For advice we say: *If I were you, I would* + base verb.",
+"wrong_why": {},
+"why_lv": "Padomam saka: *If I were you, I would* + pamatforma."
+},
+{
 "id": "cs-B11-6a",
 "skill": "cond_second",
 "level": "B1.1",
@@ -3058,6 +3232,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Second conditional: *if* + Past Simple, *would / could* + pamatforma."
 },
 {
+"id": "cs-B12-5a",
+"skill": "cond_second",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You advise a manager politely. Choose the correct option.",
+"correct": "If I were you, I would speak to the team before the meeting.",
+"wrong": [
+"If I were you, I will speak to the team before the meeting.",
+"If I am you, I would speak to the team before the meeting.",
+"If you were me, I would speak to the team before the meeting."
+],
+"why": "Advice: *If I were you, I would* + base verb.",
+"wrong_why": {},
+"why_lv": "Padoms: *If I were you, I would* + pamatforma."
+},
+{
 "id": "cs-B12-6a",
 "skill": "cond_second",
 "level": "B1.2",
@@ -3120,6 +3311,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Second conditional: *if* + past simple (or *were to* + base verb), *would* + base verb.",
 "hints": []
+},
+{
+"id": "cs-B21-5a",
+"skill": "cond_second",
+"level": "B2.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a polite request in a formal email. Choose the correct option.",
+"correct": "I would be grateful if you could send me the report by Friday.",
+"wrong": [
+"I would be grateful if you will send me the report by Friday.",
+"I would grateful if you could send me the report by Friday.",
+"I would be grateful if you could to send me the report by Friday."
+],
+"why": "A polite request: *I would be grateful if you could* + base verb.",
+"wrong_why": {}
 },
 {
 "id": "cs-B21-6a",
@@ -3278,6 +3485,22 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "ct-B21-5a",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a polite criticism in a work review. Choose the correct option.",
+"correct": "If you had told us earlier, we could have adjusted the schedule.",
+"wrong": [
+"If you told us earlier, we could have adjusted the schedule.",
+"If you had told us earlier, we could adjust have the schedule.",
+"If you would tell us earlier, we could have adjusted the schedule."
+],
+"why": "Third conditional with *could have*: *if* + past perfect, *could have* + past participle.",
+"wrong_why": {}
+},
+{
 "id": "ct-B21-6a",
 "skill": "cond_third",
 "level": "B2.1",
@@ -3367,6 +3590,22 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
+"id": "ct-B22-5a",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You express regret in a formal apology. Choose the correct option.",
+"correct": "If I had realised the impact of my decision, I would have acted differently.",
+"wrong": [
+"If I realised the impact of my decision, I would have acted differently.",
+"If I would have realised the impact of my decision, I acted differently.",
+"If I had realise the impact of my decision, I would have acted differently."
+],
+"why": "Formal regret about the past: *if* + past perfect, *would have* + past participle.",
+"wrong_why": {}
+},
+{
 "id": "ct-B22-6a",
 "skill": "cond_third",
 "level": "B2.2",
@@ -3441,6 +3680,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
 "hints": []
+},
+{
+"id": "cm-B21-5a",
+"skill": "cond_mixed",
+"level": "B2.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You explain why someone is tired today because of last night. Choose the correct option.",
+"correct": "If I hadn't stayed up so late, I wouldn't be so tired now.",
+"wrong": [
+"If I didn't stay up so late, I wouldn't have been so tired now.",
+"If I hadn't stayed up so late, I wouldn't have been so tired now.",
+"If I wouldn't have stayed up so late, I wasn't so tired now."
+],
+"why": "Past cause, present result: *if* + past perfect, *would* + base verb.",
+"wrong_why": {}
 },
 {
 "id": "cm-B21-6a",
@@ -4170,6 +4425,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešais jautājums: parasta vārdu secība, darbības vārds iet atpakaļ pagātnē: *started*."
 },
 {
+"id": "rq-B12-5a",
+"skill": "rep_questions",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A hotel guest asked: 'Is breakfast included?' You report the question. Choose the correct option.",
+"correct": "The guest asked whether breakfast was included.",
+"wrong": [
+"The guest asked was breakfast included.",
+"The guest asked that breakfast was included.",
+"The guest asked is breakfast included."
+],
+"why": "Yes/no question: *asked* + *if / whether* + subject + verb.",
+"wrong_why": {},
+"why_lv": "Jā/nē jautājums: *asked + if / whether* + teik. priekšmets + darbības vārds."
+},
+{
 "id": "rq-B12-1b",
 "skill": "rep_questions",
 "level": "B1.2",
@@ -4316,6 +4588,22 @@ return json_decode(<<<'EF_JSON_END'
 "She asked if I agreed."
 ],
 "why": "After *whether* we use statement word order: *whether or not I agreed.*",
+"wrong_why": {}
+},
+{
+"id": "rq-B22-5a",
+"skill": "rep_questions",
+"level": "B2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write meeting minutes: 'Has the budget been approved?' Ms Novak asked. Choose the correct option.",
+"correct": "Ms Novak asked whether the budget had been approved.",
+"wrong": [
+"Ms Novak asked has the budget been approved.",
+"Ms Novak asked whether had the budget been approved.",
+"Ms Novak asked that the budget had been approved."
+],
+"why": "Yes/no question: *asked* + *whether* + subject + verb. The present perfect goes back to the past perfect.",
 "wrong_why": {}
 },
 {
@@ -4735,6 +5023,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*."
 },
 {
+"id": "ip-B12-5a",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a polite email to a client. Choose the correct option.",
+"correct": "Could you let me know whether the contract has been signed?",
+"wrong": [
+"Could you let me know has the contract been signed?",
+"Could you let me know if has the contract been signed?",
+"Could you let me know whether has been the contract signed?"
+],
+"why": "*Could you let me know* + *whether / if* + subject + verb.",
+"wrong_why": {},
+"why_lv": "*Could you let me know + whether / if* + teik. priekšmets + darbības vārds."
+},
+{
 "id": "ip-B12-6a",
 "skill": "ind_polite",
 "level": "B1.2",
@@ -4857,6 +5162,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*I don't know* + *what* + *to* + base verb.",
 "hints": []
+},
+{
+"id": "ia-B22-5a",
+"skill": "ind_advanced",
+"level": "B2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You write a formal email. Choose the correct option.",
+"correct": "It remains unclear who is responsible for the delay.",
+"wrong": [
+"It remains unclear who is the responsible for the delay.",
+"It remains unclear who responsible is for the delay.",
+"It remains unclear who does responsible for the delay."
+],
+"why": "Embedded question: *who + is + responsible* (statement order).",
+"wrong_why": {}
 },
 {
 "id": "ia-C11-1a",
@@ -5176,6 +5497,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Question: *What* + *are* + *you* + verb-ing.",
 "hints": [],
 "why_lv": "Jautājums: *What + are + you* + darbības vārds ar *-ing*."
+},
+{
+"id": "pc-A22-5a-r2",
+"skill": "present_continuous",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "You are staying in Riga temporarily for one month. Which sentence best emphasises your temporary situation now?",
+"correct": "I'm living in a small flat this month.",
+"wrong": [
+"I live in a small flat this month.",
+"I lived in a small flat this month.",
+"I will living in a small flat."
+],
+"why": "The continuous shows a temporary situation.",
+"wrong_why": {},
+"why_lv": "Continuous rāda pagaidu situāciju."
 },
 {
 "id": "pc-B11-3a-r2",
@@ -5632,6 +5970,45 @@ return json_decode(<<<'EF_JSON_END'
 "melting": "*Melting* viens pats šeit nevar būt izteicējs. Lieto *it melts*.",
 "is melt": "*Is melt* nav pareiza forma. Vispārīgajā noteikumā lieto *it melts*."
 }
+},
+{
+"id": "cf-A22-5a-r2",
+"skill": "cond_first",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A friend writes: 'If I will have time, I will call you.' Choose the correct option.",
+"correct": "If I have time, I'll call you.",
+"wrong": [
+"If I would have time, I will call you.",
+"If I had time, I will call you.",
+"If I will have time, I will call you."
+],
+"why": "After *if* we use the present simple: *If I have time, I'll call you.*",
+"wrong_why": {},
+"why_lv": "Pēc *if* lieto Present Simple: *If I have time, I'll call you.*"
+},
+{
+"id": "cf-B11-3b-r2",
+"skill": "cond_first",
+"level": "B1.1",
+"bloom": 3,
+"kind": "gap",
+"q": "I'll call you as soon as I ___ at the station. (arrive)",
+"answers": [
+[
+"arrive"
+]
+],
+"why": "After *as soon as, when* and *before* we use the present simple for the future.",
+"hints": [
+[
+"will",
+"After *as soon as* we use the present simple: *... as soon as I arrive.*",
+"Pēc *as soon as* lieto Present Simple: ... *as soon as I arrive*."
+]
+],
+"why_lv": "Pēc *as soon as, when* un *before* nākotnei lieto Present Simple."
 },
 {
 "id": "cf-B12-3a-r2",
@@ -7155,6 +7532,23 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
+"id": "pac-B11-5a-r3",
+"skill": "past_continuous",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option.",
+"correct": "ran",
+"wrong": [
+"was running",
+"runs",
+"has run"
+],
+"why": "A sudden, short action that interrupts uses the past simple.",
+"wrong_why": {},
+"why_lv": "Pēkšņai īsai darbībai, kas pārtrauc citu darbību, lieto Past Simple."
+},
+{
 "id": "ppc-B11-5a-r2",
 "skill": "present_perfect_continuous",
 "level": "B1.1",
@@ -7188,6 +7582,57 @@ return json_decode(<<<'EF_JSON_END'
 "why": "For arrangements with a time we often use the present continuous.",
 "wrong_why": {},
 "why_lv": "Vienošanās ar laiku bieži izsaka ar Present Continuous."
+},
+{
+"id": "ppp-B11-5a-r3",
+"skill": "present_perfect_passive",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to tell a colleague the news: the email is sent, and you don't say who sent it. Which sentence?",
+"correct": "The email has just been sent.",
+"wrong": [
+"The email was just send.",
+"The email will be sent.",
+"The email is sending."
+],
+"why": "*The email has been sent* uses *has been + past participle* to announce completion. *The email was sent* is also grammatical, but uses the past simple.",
+"wrong_why": {},
+"why_lv": "*The email has been sent* izmanto *has been +* 3. formu, lai paziņotu par paveiktu darbību. Arī *The email was sent* ir pareizs teikums, bet tajā lietots Past Simple.",
+"wrong_why_lv": {}
+},
+{
+"id": "fup-B12-3a-r3",
+"skill": "future_passive",
+"level": "B1.2",
+"bloom": 3,
+"kind": "gap",
+"q": "Don't worry. Everything ___ before the guests arrive. (prepare)",
+"answers": [
+[
+"will be prepared"
+]
+],
+"why": "*will be* + past participle.",
+"hints": [],
+"why_lv": "*will be* + 3. forma."
+},
+{
+"id": "cf-B11-1b-r3",
+"skill": "cond_first",
+"level": "B1.1",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence about a possible future is correct?",
+"correct": "If it snows tonight, the office will close.",
+"wrong": [
+"If it will snow tonight, the office closes.",
+"If it snowed tonight, the office will close.",
+"If it snows tonight, the office would close."
+],
+"why": "First conditional: *if* + present simple, *will* + base verb.",
+"wrong_why": {},
+"why_lv": "First conditional: *if* + Present Simple, *will* + pamatforma."
 },
 {
 "id": "cf-B12-3a-r3",
@@ -7709,6 +8154,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "model": "Mia thanked the team for everything they had done.",
 "why": "Compare your sentence with the model answer."
+},
+{
+"id": "ip-B21-5a-r2",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "Which is the polite way to ask this: 'When will my order be delivered?'",
+"correct": "I was wondering if you could tell me when my order will be delivered.",
+"wrong": [
+"I was wondering when will my order be delivered?",
+"I was wondering if you could tell me when will my order be delivered?",
+"I was wondering that you could tell me when my order will be delivered."
+],
+"why": "*I was wondering if you could tell me* + *when* + subject + verb.",
+"wrong_why": {}
 },
 {
 "id": "ia-C11-1a-r3",

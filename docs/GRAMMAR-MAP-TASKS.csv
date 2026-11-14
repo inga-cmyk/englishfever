@@ -66,9 +66,9 @@ agr_basic,A2.1,agreement,A2.1,check,mcq,read,,a2-mistakes-1.csv:34,agreement | A
 agr_basic,A2.1,agreement,A2.1,check,mcq,read,,a2-mistakes-1.csv:39,agreement | A2.1 | mcq | Which sentence is NOT correct? | My friends lives near the school.
 agr_basic,A2.1,agreement,A2.1,check,gap,read,,a2-mistakes-1.csv:40,agreement | A2.1 | gap | Tom and his brother ___ to the same school. | 
 agr_basic,A2.1,agreement,A2.1,check,gap,read,,a2-mistakes-1.csv:41,agreement | A2.1 | gap | My mother ___ in a hospital. | 
-agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:45,agreement | A2.1 | gap | My best friend ___ in London. (live) | 
-agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:46,agreement | A2.1 | gap | Tom and Anna ___ in London. (live) | 
-agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:50,agreement | A2.1 | gap | Our neighbours ___ a big dog. (have) | 
+agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:45,agreement | A2.1 | gap | My best friend ___ in London now. (live) | 
+agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:46,agreement | A2.1 | gap | Tom and Anna ___ in London now. (live) | 
+agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:50,agreement | A2.1 | gap | Our neighbours ___ a big dog. It barks every morning. (have) | 
 agr_basic,A2.1,agreement,A2.1,use,gap,read,,a2-mistakes-1.csv:54,agreement | A2.1 | gap | Complete with the correct form of *be* or *do*: My brother and I ___ twins. | 
 agr_basic,A2.1,agreement,A2.1,use,text,read,,a2-mistakes-1.csv:57,agreement | A2.1 | text | Rewrite with My friends: My friend lives in Riga. | 
 agr_basic,A2.1,agreement,A2.1,check,order,read,,a2-mistakes-1.csv:58,agreement | A2.1 | order | Put the words in order. | my parents live in a small village
@@ -84,13 +84,13 @@ agr_basic,A2.1,agreement,A2.2,learn,match,read,,a2-mistakes-1.csv:60,agreement |
 agr_basic,A2.1,agreement,A2.2,use,text,read,,more-1.csv:11,agreement | A2.2 | text | Correct the mistake: My sister work in a bank. | 
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:2,modal_verbs | A2.1 | mcq | Choose the correct form: My brother ___ swim very well. | can
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:3,modal_verbs | A2.1 | mcq | Choose the correct word: ___ you help me with this bag? | Can
-can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:4,modal_verbs | A2.1 | mcq | You cannot find your keys. Which sentence is correct? | I can't find my keys.
+can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:4,modal_verbs | A2.1 | mcq | Which sentence is correct? | I can't find my keys.
 can,A2.1,modal_verbs,A2.1,use,gap,read,,modal-verbs-1.csv:5,"modal_verbs | A2.1 | gap | Complete with can or can't: Dan has never learned to drive, so he ___ drive a car. | "
 can,A2.1,modal_verbs,A2.1,use,gap,read,,modal-verbs-1.csv:6,"modal_verbs | A2.1 | gap | Complete with can or can't: I'm sorry, I ___ come tomorrow. I'm busy. | "
 can,A2.1,modal_verbs,A2.1,use,text,read,,modal-verbs-1.csv:7,modal_verbs | A2.1 | text | Make it negative: Anna can swim. | 
 can,A2.1,modal_verbs,A2.1,use,text,read,,modal-verbs-1.csv:8,modal_verbs | A2.1 | text | Make a question with can: You can play the guitar. | 
 can,A2.1,modal_verbs,A2.1,check,order,read,,modal-verbs-1.csv:9,modal_verbs | A2.1 | order | Put all the words in order. More than one answer is possible. | can you open the window please
-can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:14,modal_verbs | A2.1 | mcq | Anna and Tom speak German. Which sentence is correct? | Anna and Tom can speak German.
+can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:14,modal_verbs | A2.1 | mcq | Which sentence is correct? | Anna and Tom can speak German.
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:15,modal_verbs | A2.1 | mcq | Choose the correct form: Can your sister ___ the piano? | play
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:43,"modal_verbs | A2.1 | mcq | Choose the correct word: ___ I use your phone, please? | Can"
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,more-1.csv:137,modal_verbs | A2.1 | mcq | Choose the correct option: She ___ speak three languages. | can
@@ -387,18 +387,18 @@ ps_form,A2.1,present_simple,A2.1,check,mcq,read,,a2-big-1.csv:14,present_simple 
 ps_form,A2.1,present_simple,A2.1,check,mcq,read,,a2-extras-1.csv:2,present_simple | A2.1 | mcq | Choose the correct form: My parents ___ in a small village. | live
 ps_form,A2.1,present_simple,A2.1,check,mcq,read,,a2-extras-1.csv:3,present_simple | A2.1 | mcq | Choose the correct form: Sam ___ his teeth after breakfast. | brushes
 ps_form,A2.1,present_simple,A2.1,use,gap,read,,a2-extras-1.csv:4,present_simple | A2.1 | gap | My sister ___ a red bike. (have) | 
-ps_form,A2.1,present_simple,A2.1,use,gap,read,,a2-extras-1.csv:5,present_simple | A2.1 | gap | Mia ___ to school by bus every day. (go) | 
+ps_form,A2.1,present_simple,A2.1,use,gap,read,,a2-extras-1.csv:5,present_simple | A2.1 | gap | Mia ___ to school by bus every day. She never walks. (go) | 
 ps_form,A2.1,present_simple,A2.1,learn,match,read,,a2-extras-1.csv:8,present_simple | A2.1 | match | Match each beginning with its ending. | He plays = football on Saturdays. ; She teaches = English at a school. ; They live = near the park. ; We watch = TV in the evening.
 ps_form,A2.1,present_simple,A2.1,check,order,read,,a2-extras-1.csv:9,present_simple | A2.1 | order | Put the words in order. | my grandmother never drinks coffee
 ps_form,A2.1,present_simple,A2.1,check,mcq,read,,more-1.csv:90,present_simple | A2.1 | mcq | Choose the correct option: He ___ to work by bus. | goes
-ps_form,A2.1,present_simple,A2.1,use,gap,read,,more-1.csv:92,present_simple | A2.1 | gap | She ___ English and German. (speak) | 
+ps_form,A2.1,present_simple,A2.1,use,gap,read,,more-1.csv:92,"present_simple | A2.1 | gap | She ___ English and German, so she can help you. (speak) | "
 ps_form,A2.1,present_simple,A2.1,check,order,read,,more-1.csv:98,present_simple | A2.1 | order | Put the words in order. | my father never drinks coffee
 ps_form,A2.1,present_simple,A2.2,check,mcq,read,ps-A22-5a-r2,built-in,present_simple | A2.2 | mcq | Choose the correct option. | He goes to the gym on Mondays.
 ps_form,A2.1,present_simple,A2.2,check,gap,read,,a2-big-1.csv:9,"present_simple | A2.2 | gap | Ben ___ up at six, but his sisters ___ up at eight. | "
 ps_form,A2.1,present_simple,A2.2,check,mcq,read,,a2-extras-1.csv:13,present_simple | A2.2 | mcq | Choose the correct sentence. | My brother never eats breakfast.
 ps_form,A2.1,present_simple,A2.2,use,gap,read,,a2-extras-1.csv:15,"present_simple | A2.2 | gap | She ___ her homework on Sunday evening, never on Friday. (do) | "
 ps_form,A2.1,present_simple,A2.2,check,mcq,read,,a2-extras-1.csv:21,"present_simple | A2.2 | mcq | Choose the correct option: In my country, the shops ___ at 9 a.m. on weekdays. | open"
-ps_form,A2.1,present_simple,A2.2,use,gap,read,,more-1.csv:95,present_simple | A2.2 | gap | My brother always ___ his homework after dinner. (do) | 
+ps_form,A2.1,present_simple,A2.2,use,gap,read,,more-1.csv:95,present_simple | A2.2 | gap | My brother always ___ his homework after dinner. He's doing it now. (do) | 
 ps_form,A2.1,present_simple,B1.1,check,mcq,read,ps-B11-2a-r4,built-in,present_simple | B1.1 | mcq | Water ___ at 100 degrees Celsius. | boils
 ps_form,A2.1,present_simple,B1.1,check,order,read,,b1-tenses-1.csv:2,present_simple | B1.1 | order | Put all the words in order. More than one answer is possible. | the shop opens at nine on weekdays but closes early on sundays
 ps_form,A2.1,present_simple,B1.1,check,order,read,,b1-tenses-1.csv:3,present_simple | B1.1 | order | Put the words in order. | she rarely eats out because she prefers to cook at home
@@ -581,7 +581,6 @@ pst_reg,A2.1,past_simple,A2.2,use,write,read,pa-A22-6a-r4,built-in,past_simple |
 pst_reg,A2.1,past_simple,A2.2,check,gap,read,,a2-big-1.csv:37,past_simple | A2.2 | gap | Yesterday they ___ at home because it ___ cold. | 
 pst_reg,A2.1,past_simple,A2.2,use,gap,read,,more-1.csv:85,past_simple | A2.2 | gap | We ___ in the park for two hours yesterday. (walk) | 
 pst_reg,A2.1,past_simple,B1.1,learn,mcq,read,pa-B11-2a-r3,built-in,past_simple | B1.1 | mcq | Which sentence says that she first opened the door and then walked in? | She opened the door and walked in.
-pst_reg,A2.1,past_simple,B1.1,check,mcq,rule (new or changed task),pa-B11-5a-r2,built-in,past_simple | B1.1 | mcq | Choose the correct option: I ___ my report last March. | finished
 pst_reg,A2.1,past_simple,B1.1,use,write,read,pa-B11-6a-r3,built-in,past_simple | B1.1 | write | Write two sentences that start a story. Say what happened first and what happened next (use Then or After that). | 
 pst_reg,A2.1,past_simple,B1.1,check,gap,read,,b1-tenses-1.csv:88,"past_simple | B1.1 | gap | I ___ the report on Monday, but I ___ it to my boss until Friday. | "
 pst_reg,A2.1,past_simple,B1.1,check,gap,read,,b1-tenses-1.csv:89,past_simple | B1.1 | gap | Last night the thieves ___ through the window and ___ the jewellery. | 
@@ -642,7 +641,7 @@ sup,A2.1,comparison,B1.2,check,mcq,read,,comparison-1.csv:44,comparison | B1.2 |
 sup,A2.1,comparison,B1.2,use,text,read,,comparison-1.csv:45,"comparison | B1.2 | text | Say the same, starting with *Mount Hill*: No other mountain in this country is as high as Mount Hill. | "
 there_is,A2.1,agreement,A2.2,check,mcq,read,,a2-mistakes-1.csv:37,agreement | A2.2 | mcq | Choose the correct option: There ___ a big park near my house. | is
 there_is,A2.1,agreement,A2.2,check,gap,read,,a2-mistakes-1.csv:42,agreement | A2.2 | gap | There ___ two cafés near my house. | 
-there_is,A2.1,agreement,A2.2,use,gap,read,,a2-mistakes-1.csv:48,agreement | A2.2 | gap | There ___ three chairs in the room. (be) | 
+there_is,A2.1,agreement,A2.2,use,gap,read,,a2-mistakes-1.csv:48,agreement | A2.2 | gap | Look! There ___ three chairs in the room. (be) | 
 there_is,A2.1,agreement,A2.2,use,gap,read,,a2-mistakes-1.csv:53,agreement | A2.2 | gap | Complete with the correct form of *be* or *do*: Now there ___ two banks in my street. | 
 vp_like_ing,A2.1,verb_patterns,A2.2,check,gap,read,,b1-new-3.csv:112,verb_patterns | A2.2 | gap | She likes ___ in the garden. | 
 was_were,A2.1,past_simple,A2.2,use,gap,read,pa-A22-3a,built-in,past_simple | A2.2 | gap | We ___ late because the bus ___ slow. (be) | 
@@ -730,7 +729,7 @@ c0,A2.2,cond_zero,B1.1,check,mcq,read,cz-B11-1a-r3,built-in,"cond_zero | B1.1 | 
 c0,A2.2,cond_zero,B1.1,learn,mcq,read,cz-B11-2a-r3,built-in,"cond_zero | B1.1 | mcq | Which sentence is about something that is always true? | If metal gets hot, it expands."
 c0,A2.2,cond_zero,B1.1,use,text,read,cz-B11-3a-r2,built-in,"cond_zero | B1.1 | text | Rewrite with when: If you press this button, the door opens. | "
 c0,A2.2,cond_zero,B1.1,check,mcq,read,cz-B11-4a,built-in,"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If people don't sleep enough, they would be grumpy."
-c0,A2.2,cond_zero,B1.1,check,mcq,read,cz-B11-5a,built-in,"cond_zero | B1.1 | mcq | Your manager writes a rule: 'If a visitor will arrive, sign them in at reception.' Choose the correct option. | If a visitor arrives, sign them in at reception."
+c0,A2.2,cond_zero,B1.1,check,mcq,read,cz-B11-5a-r2,built-in,"cond_zero | B1.1 | mcq | Which sentence is correct? | If a visitor arrives, sign them in at reception."
 c0,A2.2,cond_zero,B1.1,use,write,read,cz-B11-6a-r2,built-in,cond_zero | B1.1 | write | Write one rule for a new colleague with *if*. | 
 c0,A2.2,cond_zero,B1.1,check,order,rule,,b1-cond-rep-1.csv:2,cond_zero | B1.1 | order | Put the words in order. | if you heat water to one hundred degrees it boils
 c0,A2.2,cond_zero,B1.1,check,order,rule,,b1-cond-rep-1.csv:3,cond_zero | B1.1 | order | Put the words in order. | if customers pay late the company charges extra
@@ -777,7 +776,7 @@ c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-1a-r2,built-in,"cond_first | A2.2 
 c1,A2.2,cond_first,A2.2,learn,mcq,read,cf-A22-2a-r2,built-in,"cond_first | A2.2 | mcq | What does this sentence mean? 'If you finish the report, I'll buy you a coffee.' | It is a promise about the future."
 c1,A2.2,cond_first,A2.2,use,gap,read,cf-A22-3a,built-in,"cond_first | A2.2 | gap | If she ___ late, we ___ without her. (be / start) | "
 c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-4a,built-in,"cond_first | A2.2 | mcq | Which sentence is NOT correct? | If I will see him, I will tell him."
-c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-5a-r2,built-in,"cond_first | A2.2 | mcq | A friend writes: 'If I will have time, I will call you.' Choose the correct option. | If I have time, I'll call you."
+c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-5a-r3,built-in,"cond_first | A2.2 | mcq | Which sentence is correct? | If I have time, I'll call you."
 c1,A2.2,cond_first,A2.2,use,write,read,cf-A22-6a-r2,built-in,cond_first | A2.2 | write | Promise a colleague something with *if*. | 
 c1,A2.2,cond_first,A2.2,check,order,rule,cf-A22-3b,built-in,cond_first | A2.2 | order | Put the words in order. | if you ask nicely I will help you
 c1,A2.2,cond_first,A2.2,use,gap,read,cf-A22-3c,built-in,"cond_first | A2.2 | gap | If you ___ the bus, you ___ be late. (miss / will) | "
@@ -830,8 +829,8 @@ c1,A2.2,cond_first,A2.2,check,gap,read,,a2-relabelled-1.csv:21,"cond_first | A2.
 c1,A2.2,future,B1.1,check,mcq,read,fu-B11-1a-r2,built-in,"future | B1.1 | mcq | If it ___ tomorrow, we will stay at home. | rains"
 c1,A2.2,cond_first,B1.1,learn,match,read,cf-B11-2a,built-in,"cond_first | B1.1 | match | Match each beginning with the most natural ending. | If the train is late, = we will take a taxi. ; If you eat that curry, = you will need a glass of milk. ; If you don't back up your files, = you might lose everything. ; Unless it stops raining, = the picnic will be cancelled."
 c1,A2.2,cond_first,B1.1,check,gap,read,cf-B11-3a-r2,built-in,"cond_first | B1.1 | gap | ___ you finish early, we ___ go for a drink. | "
-c1,A2.2,cond_first,B1.1,check,mcq,read,cf-B11-5a,built-in,"cond_first | B1.1 | mcq | You want to warn a friend who keeps forgetting his password. Choose the correct option. | If you forget it again, you'll be locked out."
-c1,A2.2,cond_first,B1.1,check,mcq,read,cf-B11-1b-r3,built-in,"cond_first | B1.1 | mcq | Which sentence about a possible future is correct? | If it snows tonight, the office will close."
+c1,A2.2,cond_first,B1.1,check,mcq,read,cf-B11-5a-r2,built-in,"cond_first | B1.1 | mcq | Your friend keeps forgetting his password. Choose the correct option. | If you forget it again, you'll be locked out."
+c1,A2.2,cond_first,B1.1,check,mcq,read,cf-B11-1b-r5,built-in,"cond_first | B1.1 | mcq | Which sentence is correct? | If it snows tonight, the office will close."
 c1,A2.2,cond_first,B1.1,learn,match,read,var-cf-b11-match-01,built-in,"cond_first | B1.1 | match | Match each sentence with the relationship it expresses. | If you help me, I'll buy you lunch. = A promise depending on your help. ; We won't start unless everyone is here. = Everyone being present is necessary for us to start. ; I'll take water in case the shop is closed. = A precaution against a possible problem."
 c1,A2.2,cond_first,B1.1,check,order,rule,,b1-cond-rep-1.csv:44,cond_first | B1.1 | order | Put the words in order. | if you call me tomorrow i will explain the new plan
 c1,A2.2,cond_first,B1.1,check,order,rule,,b1-cond-rep-1.csv:46,cond_first | B1.1 | order | Put the words in order. | if the weather is good we will have the party outside
@@ -915,7 +914,7 @@ fut_time_clause,A2.2,conj_linkers,A2.2,use,text,read,,conjunctions-1.csv:50,"con
 fut_time_clause,A2.2,future,B1.1,use,gap,read,fu-B11-3a,built-in,future | B1.1 | gap | I'll call you when I ___ home. (get) | 
 fut_time_clause,A2.2,future,B1.1,check,mcq,read,fu-B11-4a,built-in,future | B1.1 | mcq | Which sentence is NOT correct? | I'll call you when I will arrive.
 fut_time_clause,A2.2,future,B1.1,use,write,read,fu-B11-6a,built-in,future | B1.1 | write | Write a sentence with when or as soon as about what you will do after class or work. | 
-fut_time_clause,A2.2,cond_first,B1.1,use,gap,read,cf-B11-3b-r2,built-in,cond_first | B1.1 | gap | I'll call you as soon as I ___ at the station. (arrive) | 
+fut_time_clause,A2.2,cond_first,B1.1,use,gap,read,cf-B11-3b-r3,built-in,cond_first | B1.1 | gap | I'll call you as soon as I ___ at the station. (arrive) | 
 fut_time_clause,A2.2,cond_first,B1.1,check,mcq,read,cf-B11-4a,built-in,cond_first | B1.1 | mcq | Which sentence is NOT correct? | I'll text you when I will get home.
 fut_time_clause,A2.2,time_clauses,B1.1,check,order,read,,b1-new-2.csv:42,time_clauses | B1.1 | order | Put the words in order. | i will call you when i get home
 fut_time_clause,A2.2,time_clauses,B1.1,check,order,read,,b1-new-2.csv:43,time_clauses | B1.1 | order | Put the words in order. | we will leave as soon as everyone is ready
@@ -995,7 +994,7 @@ indef_sing,A2.2,agreement,A2.1,check,mcq,read,,a2-mistakes-1.csv:33,agreement | 
 indef_sing,A2.2,agreement,A2.1,check,mcq,read,,more-1.csv:4,agreement | A2.1 | mcq | Choose the correct option: Everybody in my class ___ English. | speaks
 indef_sing,A2.2,agreement,A2.2,check,mcq,read,,a2-mistakes-1.csv:35,agreement | A2.2 | mcq | Choose the correct option: Nobody ___ my name here. | knows
 indef_sing,A2.2,agreement,A2.2,check,gap,read,,a2-mistakes-1.csv:43,agreement | A2.2 | gap | Everyone in my family ___ coffee. | 
-indef_sing,A2.2,agreement,A2.2,use,gap,read,,a2-mistakes-1.csv:47,agreement | A2.2 | gap | Nobody ___ the answer. (know) | 
+indef_sing,A2.2,agreement,A2.2,use,gap,read,,a2-mistakes-1.csv:47,agreement | A2.2 | gap | Nobody ___ the answer. Can you help us? (know) | 
 indef_sing,A2.2,agreement,A2.2,use,text,read,,a2-mistakes-1.csv:56,agreement | A2.2 | text | Correct the mistake: Everybody know the rules. | 
 indef_sing,A2.2,indefinite_pronouns,A2.2,check,order,read,,b1-new-5.csv:134,indefinite_pronouns | A2.2 | order | Put the words in order. | someone is knocking at the door
 indef_sing,A2.2,indefinite_pronouns,A2.2,check,gap,read,,b1-new-5.csv:142,indefinite_pronouns | A2.2 | gap | Everyone ___ here. Let's start. | 
@@ -1038,7 +1037,7 @@ might,A2.2,more_modals,B1.2,learn,match,read,,b1-new-4.csv:47,more_modals | B1.2
 might,A2.2,future,B1.2,check,mcq,read,,b1-upgrades-1.csv:31,"future | B1.2 | mcq | Choose the correct option: I don't know yet, but I ___ come to the party if I finish work early. | might"
 must_have_to,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:16,modal_verbs | A2.2 | mcq | Choose the correct form: You ___ wear a seat belt in a car. It is the law. | must
 must_have_to,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:17,modal_verbs | A2.2 | mcq | Choose the correct form: My sister ___ work on Saturdays. | has to
-must_have_to,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:18,modal_verbs | A2.2 | mcq | Your sister's job needs a uniform. Which sentence is correct? | She has to wear a uniform.
+must_have_to,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:18,modal_verbs | A2.2 | mcq | Which sentence is correct? | She has to wear a uniform.
 must_have_to,A2.2,modal_verbs,A2.2,use,gap,read,,modal-verbs-1.csv:19,modal_verbs | A2.2 | gap | Complete with have to or has to: I ___ get up early tomorrow. | 
 must_have_to,A2.2,modal_verbs,A2.2,use,gap,read,,modal-verbs-1.csv:20,modal_verbs | A2.2 | gap | Complete with have to or has to: Tom ___ wear a tie at work. | 
 must_have_to,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:21,modal_verbs | A2.2 | mcq | Choose the correct question: ___ wear a jacket today? | Do I have to
@@ -1053,7 +1052,7 @@ must_have_to,A2.2,modal_verbs,B1.1,use,text,read,,twins-1.csv:6,modal_verbs | B1
 mustnt_dont,A2.2,modal_verbs,A2.1,check,mcq,read,,more-1.csv:136,modal_verbs | A2.1 | mcq | Choose the correct option: You ___ smoke in the hospital. | mustn't
 mustnt_dont,A2.2,modal_verbs,A2.1,check,mcq,read,,twins-1.csv:24,modal_verbs | A2.1 | mcq | Choose the correct option: You ___ use your phone in the exam. | mustn't
 mustnt_dont,A2.2,modal_verbs,A2.1,check,order,read,,twins-1.csv:30,modal_verbs | A2.1 | order | Put the words in order. | you must not park here
-mustnt_dont,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:23,modal_verbs | A2.2 | mcq | Parking is not allowed here. Which sentence is correct? | You mustn't park here.
+mustnt_dont,A2.2,modal_verbs,A2.2,check,mcq,read,,modal-verbs-1.csv:23,modal_verbs | A2.2 | mcq | Which sentence is correct? | You mustn't park here.
 mustnt_dont,A2.2,modal_verbs,A2.2,use,gap,read,,modal-verbs-1.csv:24,modal_verbs | A2.2 | gap | Complete with must or mustn't: You ___ use your phone in the exam. It is not allowed. | 
 mustnt_dont,A2.2,modal_verbs,A2.2,check,order,read,,modal-verbs-1.csv:25,modal_verbs | A2.2 | order | Put the words in order. | you must not touch the red button
 mustnt_dont,A2.2,modal_verbs,A2.2,use,text,read,,modal-verbs-1.csv:26,modal_verbs | A2.2 | text | Make it negative with don't have to: We have to pay today. | 
@@ -1188,7 +1187,7 @@ pas_past,A2.2,past_simple_passive,B1.2,check,mcq,read,,b1-passives-1.csv:74,past
 pas_past,A2.2,past_simple_passive,B1.2,check,mcq,read,,b1-passives-1.csv:76,past_simple_passive | B1.2 | mcq | Which sentence is NOT correct? | Many trees was damaged last night.
 pas_pres,A2.2,present_simple_passive,A2.2,check,mcq,read,psp-A22-1a,built-in,present_simple_passive | A2.2 | mcq | English ___ in many countries. | is spoken
 pas_pres,A2.2,present_simple_passive,A2.2,use,gap,read,psp-A22-3a,built-in,present_simple_passive | A2.2 | gap | Bread ___ from flour. (make) | 
-pas_pres,A2.2,present_simple_passive,A2.2,use,gap,read,psp-A22-3b,built-in,present_simple_passive | A2.2 | gap | These cars ___ in Germany. (build) | 
+pas_pres,A2.2,present_simple_passive,A2.2,use,gap,read,psp-A22-3b-r2,built-in,"present_simple_passive | A2.2 | gap | These cars ___ in Germany, and they are sold all over the world. (build) | "
 pas_pres,A2.2,present_simple_passive,A2.2,check,mcq,read,psp-A22-5a-r2,built-in,"present_simple_passive | A2.2 | mcq | Why do we say 'Tickets are sold here'? | The action matters, not who sells them."
 pas_pres,A2.2,present_simple_passive,A2.2,use,write,read,psp-A22-6a-r2,built-in,present_simple_passive | A2.2 | write | Write one sentence about a product from your country and where or how it is produced. | 
 pas_pres,A2.2,present_simple_passive,A2.2,check,order,read,var-psp-a22-order-01-r3,built-in,present_simple_passive | A2.2 | order | Put the words in order. Start with *These bicycles*. | these bicycles are made in Italy
@@ -1230,7 +1229,7 @@ pas_pres,A2.2,present_simple_passive,B1.1,check,order,read,,b1-passives-1.csv:5,
 pas_pres,A2.2,present_simple_passive,B1.1,check,gap,read,,b1-passives-1.csv:12,present_simple_passive | B1.1 | gap | The reports ___ by the manager every Friday. | 
 pas_pres,A2.2,present_simple_passive,B1.1,check,gap,read,,b1-passives-1.csv:14,present_simple_passive | B1.1 | gap | Wine ___ in many parts of Italy. | 
 pas_pres,A2.2,present_simple_passive,B1.1,check,gap,read,,b1-passives-1.csv:15,"present_simple_passive | B1.1 | gap | The shop ___ by two sisters, and the products ___ locally. | "
-pas_pres,A2.2,present_simple_passive,B1.1,use,gap,read,,b1-passives-1.csv:21,present_simple_passive | B1.1 | gap | The parcels ___ to customers within two days. (deliver) | 
+pas_pres,A2.2,present_simple_passive,B1.1,use,gap,read,,b1-passives-1.csv:21,present_simple_passive | B1.1 | gap | The parcels usually ___ to customers within two days. (deliver) | 
 pas_pres,A2.2,present_simple_passive,B1.1,learn,match,read,,b1-passives-1.csv:29,present_simple_passive | B1.1 | match | Match each product with how it is made. | Cheese = is made from milk. ; Glass = is made from sand. ; Paper = is made from wood. ; Bread = is baked in an oven.
 pas_pres,A2.2,present_simple_passive,B1.1,check,mcq,read,,b1-passives-1.csv:32,"present_simple_passive | B1.1 | mcq | Choose the correct option: In this restaurant, all the food ___ fresh every morning. | is prepared"
 pas_pres,A2.2,present_simple_passive,B1.1,check,mcq,read,,b1-passives-1.csv:33,present_simple_passive | B1.1 | mcq | Choose the correct option: These emails ___ by a secretary. | are written
@@ -1298,13 +1297,13 @@ pastc_when,A2.2,past_continuous,A2.2,check,gap,read,,a2-big-1.csv:57,past_contin
 pastc_when,A2.2,past_continuous,A2.2,check,gap,read,,a2-big-1.csv:58,past_continuous | A2.2 | gap | We ___ for the bus when it began to snow. | 
 pastc_when,A2.2,past_continuous,A2.2,check,gap,read,,a2-big-1.csv:59,"past_continuous | A2.2 | gap | It ___ heavily when we left, so we took umbrellas. | "
 pastc_when,A2.2,past_continuous,A2.2,use,gap,read,,a2-big-1.csv:62,past_continuous | A2.2 | gap | I ___ TV when you called. (not / watch) | 
-pastc_when,A2.2,past_continuous,A2.2,use,gap,read,,a2-big-1.csv:63,past_continuous | A2.2 | gap | The boys ___ football when it began to rain. (play) | 
+pastc_when,A2.2,past_continuous,A2.2,use,gap,read,,a2-big-1.csv:63,past_continuous | A2.2 | gap | The boys ___ football when it began to rain. They were in the middle of a game. (play) | 
 pastc_when,A2.2,past_continuous,A2.2,use,gap,read,,a2-big-1.csv:64,past_continuous | A2.2 | gap | ___ it ___ when you left home? (rain) | 
 pastc_when,A2.2,past_continuous,A2.2,use,text,read,,a2-big-1.csv:67,past_continuous | A2.2 | text | Join with when: I was walking home. It started to rain. | 
 pastc_when,A2.2,past_continuous,A2.2,check,mcq,read,,a2-big-1.csv:70,"past_continuous | A2.2 | mcq | Choose the correct form: While I ___ a bath, the phone rang. | was taking"
 pastc_when,A2.2,past_continuous,A2.2,check,mcq,read,,a2-big-1.csv:75,past_continuous | A2.2 | mcq | Choose the correct form: The students ___ when the teacher walked in. | were talking
 pastc_when,A2.2,past_continuous,A2.2,check,mcq,read,,a2-extras-1.csv:55,past_continuous | A2.2 | mcq | Choose the correct form: I ___ a book when the phone rang. | was reading
-pastc_when,A2.2,past_continuous,A2.2,use,gap,read,,a2-extras-1.csv:58,past_continuous | A2.2 | gap | We ___ dinner when the lights went out. (have) | 
+pastc_when,A2.2,past_continuous,A2.2,use,gap,read,,a2-extras-1.csv:58,"past_continuous | A2.2 | gap | We ___ dinner when the lights went out, so we finished it by candlelight. (have) | "
 pastc_when,A2.2,cmp_ps_pc,A2.2,use,gap,read,,compare-past-1.csv:7,cmp_ps_pc | A2.2 | gap | We ___ home when I ___ Dan. (walk / meet) | 
 pastc_when,A2.2,cmp_ps_pc,A2.2,use,gap,read,,compare-past-1.csv:8,cmp_ps_pc | A2.2 | gap | It ___ when I ___ up this morning. (rain / get) | 
 pastc_when,A2.2,cmp_ps_pc,A2.2,use,gap,read,,compare-past-1.csv:9,cmp_ps_pc | A2.2 | gap | Matt ___ while we ___ dinner. We were in the middle of it. (phone / have) | 
@@ -1319,7 +1318,7 @@ pastc_when,A2.2,past_continuous,B1.1,learn,mcq,read,pac-B11-2a-r3,built-in,"past
 pastc_when,A2.2,past_continuous,B1.1,use,gap,read,pac-B11-3a-r2,built-in,"past_continuous | B1.1 | gap | While she ___, her phone ___. (drive / ring) | "
 pastc_when,A2.2,past_continuous,B1.1,use,gap,read,pac-B11-3b,built-in,"past_continuous | B1.1 | gap | It ___ when we left the house, so we took umbrellas. (rain) | "
 pastc_when,A2.2,past_continuous,B1.1,check,mcq,read,pac-B11-4a-r3,built-in,"past_continuous | B1.1 | mcq | Which sentence is NOT correct? | When I arrived, they was having lunch."
-pastc_when,A2.2,past_continuous,B1.1,check,mcq,read,pac-B11-5a-r3,built-in,past_continuous | B1.1 | mcq | You tell a story: 'I was walking home. Suddenly a dog ___ out of the garden.' Choose the correct option. | ran
+pastc_when,A2.2,past_continuous,B1.1,check,mcq,read,pac-B11-5a-r5,built-in,past_continuous | B1.1 | mcq | Choose the correct option: I was walking home. Suddenly a dog ___ out of the garden. | ran
 pastc_when,A2.2,past_continuous,B1.1,use,write,read,pac-B11-6a-r4,built-in,past_continuous | B1.1 | write | Write one sentence about a time when something interrupted you. | 
 pastc_when,A2.2,past_continuous,B1.1,check,order,read,,b1-tenses-1.csv:112,past_continuous | B1.1 | order | Put the words in order. | while i was walking to work i met an old friend
 pastc_when,A2.2,past_continuous,B1.1,check,order,read,,b1-tenses-1.csv:113,past_continuous | B1.1 | order | Put the words in order. | the phone rang while we were having dinner
@@ -1350,7 +1349,7 @@ pastc_when,A2.2,narrative,B1.1,check,order,read,,twins-2.csv:50,narrative | B1.1
 pastc_when,A2.2,past_continuous,B1.2,check,mcq,read,,b1-tenses-1.csv:139,past_continuous | B1.2 | mcq | Choose the correct option: We ___ about moving house when we got the news. | were thinking
 pastc_when,A2.2,past_continuous,B1.2,check,mcq,read,,b1-upgrades-1.csv:17,past_continuous | B1.2 | mcq | Choose the correct option: What ___ when the fire alarm went off? | were you doing
 pc_temp,A2.2,present_continuous,A2.2,check,mcq,read,pc-A22-1a-r3,built-in,"present_continuous | A2.2 | mcq | My brother ___ for an exam this week, so he is very busy. | is studying"
-pc_temp,A2.2,present_continuous,A2.2,check,mcq,read,pc-A22-5a-r2,built-in,present_continuous | A2.2 | mcq | You are staying in Riga temporarily for one month. Which sentence best emphasises your temporary situation now? | I'm living in a small flat this month.
+pc_temp,A2.2,present_continuous,A2.2,check,mcq,read,pc-A22-5a-r3,built-in,present_continuous | A2.2 | mcq | You are in Riga for one month only. Which sentence is correct? | I'm living in a small flat this month.
 pc_temp,A2.2,present_continuous,A2.2,learn,match,read,var-pc-a22-match-01,built-in,present_continuous | A2.2 | match | Match each sentence to what it expresses. | I work in the office every Monday. = My regular routine. ; I am working from home this week only. = A temporary situation around now. ; I am meeting Eva at the café at six tomorrow. = An arrangement for tomorrow.
 pc_temp,A2.2,present_continuous,A2.2,learn,mcq,read,,a2-extras-1.csv:30,present_continuous | A2.2 | mcq | Which sentence is about a temporary situation? | I'm staying with my uncle this week.
 pc_temp,A2.2,present_continuous,A2.2,check,mcq,read,,a2-extras-1.csv:35,present_continuous | A2.2 | mcq | Choose the correct option: My English ___ better these days. | is getting
@@ -1376,7 +1375,7 @@ pc_temp,A2.2,present_continuous,B1.1,check,mcq,read,,b1-upgrades-1.csv:7,present
 plural_only,A2.2,irregular_plurals,A2.2,check,mcq,read,,a2-mistakes-1.csv:66,irregular_plurals | A2.2 | mcq | Choose the correct option: The police ___ looking for the driver. | are
 plural_only,A2.2,irregular_plurals,A2.2,check,mcq,read,,a2-mistakes-1.csv:68,irregular_plurals | A2.2 | mcq | Which sentence is NOT correct? | The police is here.
 plural_only,A2.2,irregular_plurals,A2.2,check,gap,read,,a2-mistakes-1.csv:77,irregular_plurals | A2.2 | gap | The police ___ asking questions. | 
-plural_only,A2.2,irregular_plurals,A2.2,use,gap,read,,a2-mistakes-1.csv:83,irregular_plurals | A2.2 | gap | The police ___ here. (be) | 
+plural_only,A2.2,irregular_plurals,A2.2,use,gap,read,,a2-mistakes-1.csv:83,irregular_plurals | A2.2 | gap | Look! The police ___ here. (be) | 
 plural_only,A2.2,irregular_plurals,A2.2,use,text,read,,a2-mistakes-1.csv:89,irregular_plurals | A2.2 | text | Correct the mistake: The police is outside. | 
 plural_only,A2.2,irregular_plurals,A2.2,check,order,read,,more-1.csv:63,irregular_plurals | A2.2 | order | Put the words in order. | the police are looking for him
 pp_been_gone,A2.2,present_perfect,A2.2,learn,mcq,read,,a2-extras-1.csv:71,present_perfect | A2.2 | mcq | Choose the correct meaning: 'Mum has gone to the shop.' | She is at the shop now.
@@ -1407,11 +1406,11 @@ pp_exp,A2.2,present_perfect,B1.2,check,mcq,read,,b1-tenses-2.csv:34,"present_per
 pp_exp,A2.2,present_perfect,B1.2,check,mcq,read,,b1-upgrades-1.csv:22,present_perfect | B1.2 | mcq | Choose the correct option: ___ you ever ___ a presentation in English? | Have / given
 pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-big-1.csv:93,present_perfect | A2.2 | gap | We ___ here since Monday. (not / be) | 
 pp_for_since,A2.2,present_perfect,A2.2,check,mcq,read,,a2-relabelled-1.csv:6,present_perfect | A2.2 | mcq | I've worked here ___ five years. | for
-pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-relabelled-1.csv:7,present_perfect | A2.2 | gap | They ___ married for 20 years. (be) | 
+pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-relabelled-1.csv:7,"present_perfect | A2.2 | gap | They ___ married for 20 years, and they are still happy together. (be) | "
 pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-relabelled-1.csv:9,present_perfect | A2.2 | gap | How long ___ you ___ English? (study) | 
 pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,pp-B11-1a,built-in,present_perfect | B1.1 | mcq | I've worked here ___ five years. | for
 pp_for_since,A2.2,present_perfect,B1.1,learn,mcq,read,pp-B11-2a,built-in,present_perfect | B1.1 | mcq | Which sentence means: it started in the past and is still true now? | I have known Tom for ten years.
-pp_for_since,A2.2,present_perfect,B1.1,use,gap,read,pp-B11-3a,built-in,present_perfect | B1.1 | gap | They ___ married for 20 years. (be) | 
+pp_for_since,A2.2,present_perfect,B1.1,use,gap,read,pp-B11-3a-r2,built-in,"present_perfect | B1.1 | gap | My grandparents ___ married for 50 years, and they still go dancing together. (be) | "
 pp_for_since,A2.2,present_perfect,B1.1,use,text,read,pp-B11-3b-r2,built-in,present_perfect | B1.1 | text | Make a question with How long: She has worked here since June. | 
 pp_for_since,A2.2,present_perfect,B1.1,use,write,read,pp-B11-6a,built-in,present_perfect | B1.1 | write | Write two sentences about how long you have lived in your city or worked in your job. Use for in one and since in the other. | 
 pp_for_since,A2.2,aux_verbs,B1.1,check,mcq,read,,aux-verbs-1.csv:13,aux_verbs | B1.1 | mcq | Choose the correct option: How long ___ you known her? | have
@@ -1484,6 +1483,7 @@ pp_ps,A2.2,cmp_pp_ps,A2.2,use,gap,read,,compare-past-1.csv:29,"cmp_pp_ps | A2.2 
 pp_ps,A2.2,present_perfect,A2.2,check,mcq,read,,contrast-1.csv:12,present_perfect | A2.2 | mcq | Which sentence is correct? | I saw that film last week.
 pp_ps,A2.2,present_perfect,A2.2,check,mcq,read,,contrast-1.csv:13,present_perfect | A2.2 | mcq | Which sentence does not say when? | I've lost my keys again.
 pp_ps,A2.2,present_perfect,A2.2,use,text,read,,contrast-1.csv:15,present_perfect | A2.2 | text | Correct the mistake: I have finished the report yesterday. | 
+pp_ps,A2.2,past_simple,B1.1,check,mcq,read,pa-B11-5a-r2,built-in,past_simple | B1.1 | mcq | Choose the correct option: I ___ my report last March. | finished
 pp_ps,A2.2,present_perfect,B1.1,check,mcq,read,pp-B11-4a,built-in,present_perfect | B1.1 | mcq | Which sentence is NOT correct? | I have seen him yesterday.
 pp_ps,A2.2,present_perfect,B1.1,check,mcq,read,,b1-tenses-2.csv:31,present_perfect | B1.1 | mcq | Choose the correct option: They moved to Rome three years ___ . | ago
 pp_ps,A2.2,cmp_pp_ps,B1.1,use,gap,read,,compare-past-1.csv:27,cmp_pp_ps | B1.1 | gap | ___ you ___ Anna yesterday? (see) | 
@@ -1578,7 +1578,7 @@ rep_say_tell,A2.2,rep_statements,B2.1,check,mcq,read,rs-B21-4a,built-in,rep_stat
 rep_say_tell,A2.2,rep_statements,B2.1,learn,gap,read,,learn-drag-3.csv:11,rep_statements | B2.1 | gap | He ___ ___ that the shop was closed. | 
 rep_say_tell,A2.2,rep_statements,B2.1,check,mcq,read,,twins-3.csv:11,rep_statements | B2.1 | mcq | Which sentence is NOT correct? | He told that the shop was closed.
 should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:10,modal_verbs | A2.1 | mcq | Choose the correct form: You look tired. You ___ go to bed early. | should
-should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:11,modal_verbs | A2.1 | mcq | Your brother has a bad cough. Which sentence is correct? | He should see a doctor.
+should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:11,modal_verbs | A2.1 | mcq | Which sentence is correct? | He should see a doctor.
 should,A2.2,modal_verbs,A2.1,use,gap,read,,modal-verbs-1.csv:12,modal_verbs | A2.1 | gap | Give advice. Complete with should: You ___ drink more water. | 
 should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:13,modal_verbs | A2.1 | mcq | Which question is correct? | Should I call the doctor?
 should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:44,modal_verbs | A2.1 | mcq | Which sentence gives advice? | You should drink more water.
@@ -1662,7 +1662,7 @@ two_obj,A2.2,two_objects,B1.1,check,mcq,read,,b1-new-4.csv:163,two_objects | B1.
 two_obj,A2.2,two_objects,B1.1,use,text,read,,b1-new-4.csv:168,two_objects | B1.1 | text | Rewrite with to: He sent his boss an email. | 
 two_obj,A2.2,two_objects,B1.1,use,text,read,,b1-new-4.csv:169,two_objects | B1.1 | text | Correct the mistake: He sent an email his boss. | 
 two_obj,A2.2,two_objects,B1.1,learn,match,read,,b1-new-4.csv:172,two_objects | B1.1 | match | Match each sentence with the same meaning. | She gave me a book. = She gave a book to me. ; He bought her a coat. = He bought a coat for her. ; I told him a joke. = I told a joke to him. ; We sent them a card. = We sent a card to them.
-unc_nouns,A2.2,agreement,A2.2,use,gap,read,,more-1.csv:10,agreement | A2.2 | gap | The news ___ good today. (be) | 
+unc_nouns,A2.2,agreement,A2.2,use,gap,read,,more-1.csv:10,agreement | A2.2 | gap | Listen! The news ___ good. (be) | 
 used_to,A2.2,used_to,A2.2,use,gap,read,,a2-relabelled-1.csv:5,used_to | A2.2 | gap | Did you ___ to live in a flat? (use) | 
 used_to,A2.2,used_to,A2.2,check,order,read,,b1-new-1.csv:2,used_to | A2.2 | order | Put the words in order. | we used to live in a small flat
 used_to,A2.2,used_to,A2.2,check,order,read,,b1-new-1.csv:3,used_to | A2.2 | order | Put the words in order. | my grandfather used to work on a farm
@@ -1927,26 +1927,26 @@ c2,B1.1,cond_second,B1.2,check,mcq,read,,b1-cond-rep-1.csv:107,"cond_second | B1
 c2,B1.1,cond_second,B2.1,learn,mcq,read,cs-B21-2a-r2,built-in,"cond_second | B2.1 | mcq | What is the difference? A: 'If I had time, I would help.' B: 'If I had time, I might help.' | B is less certain than A."
 c2,B1.1,cond_second,B2.1,use,gap,read,cs-B21-3a-r2,built-in,"cond_second | B2.1 | gap | Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be) | "
 c2,B1.1,cond_second,B2.1,check,mcq,read,cs-B21-4a,built-in,"cond_second | B2.1 | mcq | Which sentence has a mistake? | If I would know the answer, I would tell you."
-c2,B1.1,cond_second,B2.1,check,mcq,read,cs-B21-5a,built-in,cond_second | B2.1 | mcq | You write a polite request in a formal email. Choose the correct option. | I would be grateful if you could send me the report by Friday.
+c2,B1.1,cond_second,B2.1,check,mcq,read,cs-B21-5a-r2,built-in,cond_second | B2.1 | mcq | Which sentence is correct? | I would be grateful if you could send me the report by Friday.
 c2,B1.1,cond_second,B2.1,learn,gap,read,,learn-drag-4.csv:13,"cond_second | B2.1 | gap | If the company ___ more flexible hours, people ___ happier. | "
 c2,B1.1,cond_second,B2.1,learn,order,rule,,learn-drag-4.csv:14,cond_second | B2.1 | order | Put the words in order. | if I knew the answer I would tell you
 c2,B1.1,cond_second,B2.1,learn,gap,read,,learn-drag-4.csv:15,cond_second | B2.1 | gap | I would be grateful if you ___ send me the report by Friday. | 
 c2,B1.1,cond_second,B2.1,learn,order,rule,,learn-drag-4.csv:16,cond_second | B2.1 | order | Put the words in order. | if I had a garden I would grow vegetables
 c2,B1.1,cond_second,B2.1,use,gap,read,,twins-1.csv:44,"cond_second | B2.1 | gap | The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel) | "
 c2,B1.1,cond_second,B2.1,check,mcq,read,,twins-1.csv:45,"cond_second | B2.1 | mcq | Which sentence has a mistake? | If I would have a car, I would drive to work."
-c2,B1.1,cond_second,B2.1,check,mcq,read,,twins-1.csv:46,"cond_second | B2.1 | mcq | I don't have a car, so I take the bus. Imagine it is different. Choose the correct sentence. | If I had a car, I wouldn't take the bus."
+c2,B1.1,cond_second,B2.1,check,mcq,read,,twins-1.csv:46,"cond_second | B2.1 | mcq | Which sentence is correct? | If I had a car, I wouldn't take the bus."
 c2,B1.1,cond_second,B2.1,use,text,read,,twins-1.csv:47,"cond_second | B2.1 | text | Write the sentence with if: I don't have a garden, so I don't grow vegetables. | "
 c2,B1.1,cond_second,B2.1,use,gap,read,,typical-b2c1-1.csv:2,"cond_second | B2.1 | gap | If I ___ her number, I would call her right now. (know) | "
 c2,B1.1,cond_second,B2.1,use,gap,read,,typical-b2c1-1.csv:3,"cond_second | B2.1 | gap | If the train ___ faster, more people would use it for work. (be) | "
 c2,B1.1,cond_second,B2.1,use,gap,read,,typical-b2c1-1.csv:4,cond_second | B2.1 | gap | I ___ more if the gym were closer to my office. (exercise) | 
 c2_were,B1.1,cond_second,B1.1,learn,mcq,read,cs-B11-2a-r2,built-in,"cond_second | B1.1 | mcq | What does this sentence mean? 'If I were taller, I would play basketball.' | I am not tall, so I don't play basketball."
 c2_were,B1.1,cond_second,B1.1,use,gap,read,cs-B11-3a-r2,built-in,"cond_second | B1.1 | gap | I'm not the boss. If I ___ (be) the boss, I ___ (cancel) all Monday meetings. | "
-c2_were,B1.1,cond_second,B1.1,check,mcq,read,cs-B11-5a,built-in,"cond_second | B1.1 | mcq | Your friend can't decide whether to quit and become a baker. You give advice. Choose the correct option. | If I were you, I would talk to a few bakers first."
+c2_were,B1.1,cond_second,B1.1,check,mcq,read,cs-B11-5a-r2,built-in,"cond_second | B1.1 | mcq | Which sentence is correct? | If I were you, I would talk to a few bakers first."
 c2_were,B1.1,cond_second,B1.1,check,gap,read,cs-B11-3b-r3,built-in,"cond_second | B1.1 | gap | If I ___ a cat, I ___ sleep all day. | "
 c2_were,B1.1,cond_second,B1.1,check,order,rule,,b1-cond-rep-1.csv:80,cond_second | B1.1 | order | Put the words in order. | if i were you i would talk to your manager
 c2_were,B1.1,cond_second,B1.1,use,gap,read,,b1-cond-rep-1.csv:92,"cond_second | B1.1 | gap | I'm not tall. If I ___ taller, I ___ basketball. (be / play) | "
 c2_were,B1.1,cond_second,B1.1,check,mcq,read,,b1-cond-rep-1.csv:104,"cond_second | B1.1 | mcq | Choose the correct option: If I were you, I ___ that offer. | would accept"
-c2_were,B1.1,cond_second,B1.2,check,mcq,read,cs-B12-5a,built-in,"cond_second | B1.2 | mcq | You advise a manager politely. Choose the correct option. | If I were you, I would speak to the team before the meeting."
+c2_were,B1.1,cond_second,B1.2,check,mcq,read,cs-B12-5a-r2,built-in,"cond_second | B1.2 | mcq | Which sentence is correct? | If I were you, I would speak to the team before the meeting."
 c2_were,B1.1,cond_second,B1.2,check,gap,read,,b1-cond-rep-1.csv:89,"cond_second | B1.2 | gap | If I ___ you, I ___ apologise. | "
 c2_were,B1.1,cond_second,B1.2,use,gap,read,,b1-cond-rep-1.csv:94,"cond_second | B1.2 | gap | This phone is too expensive. If it ___ cheaper, we ___ it. (be / buy) | "
 c2_were,B1.1,cond_second,B1.2,use,text,read,,b1-cond-rep-1.csv:98,cond_second | B1.2 | text | Give advice with If I were you: Tell your boss. | 
@@ -2075,7 +2075,7 @@ link_adj,B1.1,adverbs,A2.2,check,mcq,read,,b1-new-5.csv:70,adverbs | A2.2 | mcq 
 link_adj,B1.1,adverbs,A2.2,check,mcq,read,,more-1.csv:103,adverbs | A2.2 | mcq | Choose the correct option: You look ___ today. | tired
 pas_act,B1.1,present_simple_passive,A2.2,learn,mcq,read,psp-A22-2a-r2,built-in,"present_simple_passive | A2.2 | mcq | Which sentence says that people grow rice in Asia, without saying who? | Rice is grown in Asia."
 pas_act,B1.1,past_simple_passive,A2.2,learn,mcq,read,pasp-A22-2a-r3,built-in,"past_simple_passive | A2.2 | mcq | Which sentence says that someone broke the window, without saying who? | The window was broken yesterday."
-pas_act,B1.1,past_simple_passive,A2.2,check,mcq,read,pasp-A22-5a,built-in,past_simple_passive | A2.2 | mcq | A past event: we don't know who did it. Choose the correct option. | My bike was stolen.
+pas_act,B1.1,past_simple_passive,A2.2,check,mcq,read,pasp-A22-5a-r2,built-in,past_simple_passive | A2.2 | mcq | Which sentence is correct? | My bike was stolen.
 pas_act,B1.1,present_simple_passive,A2.2,use,text,read,,a2-big-1.csv:143,present_simple_passive | A2.2 | text | Start with *The streets*: They clean the streets every night. | 
 pas_act,B1.1,present_simple_passive,A2.2,check,mcq,read,,a2-big-1.csv:148,"present_simple_passive | A2.2 | mcq | Which sentence says that people make paper from wood, without saying who? | Paper is made from wood."
 pas_act,B1.1,present_simple_passive,A2.2,use,text,read,,a2-big-1.csv:157,present_simple_passive | A2.2 | text | Start with *Phones*: People use phones everywhere. | 
@@ -2087,7 +2087,7 @@ pas_act,B1.1,past_simple_passive,A2.2,use,text,read,,a2-extras-1.csv:100,past_si
 pas_act,B1.1,past_simple_passive,A2.2,use,text,read,,a2-relabelled-1.csv:19,past_simple_passive | A2.2 | text | Start with *My wallet*: Someone stole my wallet. | 
 pas_act,B1.1,present_simple_passive,B1.1,use,text,read,psp-B11-3b-r2,built-in,present_simple_passive | B1.1 | text | Start with *Fresh bread*: They sell fresh bread here. | 
 pas_act,B1.1,past_simple_passive,B1.1,use,text,read,pasp-B11-3b-r3,built-in,past_simple_passive | B1.1 | text | Start with *My wallet*: Someone stole my wallet. | 
-pas_act,B1.1,past_simple_passive,B1.1,check,mcq,read,pasp-B11-5a,built-in,past_simple_passive | B1.1 | mcq | A news report says what happened but the person who did it is unknown. Choose the correct option. | A car was stolen last night.
+pas_act,B1.1,past_simple_passive,B1.1,check,mcq,read,pasp-B11-5a-r2,built-in,past_simple_passive | B1.1 | mcq | Which sentence is correct? | A car was stolen last night.
 pas_act,B1.1,present_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:25,present_simple_passive | B1.1 | text | Start with *Fresh bread*: They sell fresh bread here every morning. | 
 pas_act,B1.1,present_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:26,present_simple_passive | B1.1 | text | Start with *Tea*: People grow tea in the mountains. | 
 pas_act,B1.1,present_simple_passive,B1.1,learn,match,read,,b1-passives-1.csv:30,"present_simple_passive | B1.1 | match | Match each sentence with the one that means the same, without saying who. | They build houses here. = Houses are built here. ; People speak English here. = English is spoken here. ; Someone cleans the office. = The office is cleaned. ; They sell tickets online. = Tickets are sold online."
@@ -2137,7 +2137,7 @@ pas_perf,B1.1,present_perfect_passive,B1.1,check,mcq,rule,ppp-B11-2a-r2,built-in
 pas_perf,B1.1,present_perfect_passive,B1.1,use,gap,rule,ppp-B11-3a-r3,built-in,"present_perfect_passive | B1.1 | gap | Sorry, you can't buy one now. All the tickets ___. (sell) | "
 pas_perf,B1.1,present_perfect_passive,B1.1,use,text,rule,ppp-B11-3b-r3,built-in,present_perfect_passive | B1.1 | text | Start with *My bag*: Someone has stolen my bag. | 
 pas_perf,B1.1,present_perfect_passive,B1.1,check,mcq,rule,ppp-B11-4a,built-in,present_perfect_passive | B1.1 | mcq | Which sentence is NOT correct? | The rooms has been prepared.
-pas_perf,B1.1,present_perfect_passive,B1.1,check,mcq,rule,ppp-B11-5a-r3,built-in,"present_perfect_passive | B1.1 | mcq | You want to tell a colleague the news: the email is sent, and you don't say who sent it. Which sentence? | The email has just been sent."
+pas_perf,B1.1,present_perfect_passive,B1.1,check,mcq,rule,ppp-B11-5a-r4,built-in,present_perfect_passive | B1.1 | mcq | Tell a colleague the news: the email is now sent. Which sentence is correct? | The email has just been sent.
 pas_perf,B1.1,present_perfect_passive,B1.1,use,write,rule,ppp-B11-6a-r3,built-in,present_perfect_passive | B1.1 | write | What has been done at your home or office this week? Write one sentence. You do not need to say who did it. | 
 pas_perf,B1.1,present_perfect_passive,B1.1,check,order,rule,var-ppp-b11-order-01,built-in,present_perfect_passive | B1.1 | order | Ask whether an action is complete. Start with Has and put yet at the end. | has the parcel been delivered yet
 pas_perf,B1.1,present_perfect_passive,B1.1,check,order,rule,,b1-passives-1.csv:114,present_perfect_passive | B1.1 | order | Put the words in order. | the new library has been opened by the mayor
@@ -2169,7 +2169,7 @@ pas_perf,B1.1,present_perfect_passive,B1.2,check,order,rule,,b1-passives-1.csv:1
 pas_perf,B1.1,present_perfect_passive,B1.2,check,order,rule,,b1-passives-1.csv:121,present_perfect_passive | B1.2 | order | Put the words in order. | has the parcel been delivered
 pas_perf,B1.1,present_perfect_passive,B1.2,check,gap,rule,,b1-passives-1.csv:125,"present_perfect_passive | B1.2 | gap | Our flight ___ cancelled, so we are staying here. | "
 pas_perf,B1.1,present_perfect_passive,B1.2,check,gap,rule,,b1-passives-1.csv:126,present_perfect_passive | B1.2 | gap | These rules ___ changed several times. | 
-pas_perf,B1.1,present_perfect_passive,B1.2,check,gap,rule,,b1-passives-1.csv:127,present_perfect_passive | B1.2 | gap | I ___ asked to speak at the conference. | 
+pas_perf,B1.1,present_perfect_passive,B1.2,check,gap,rule,,b1-passives-1.csv:127,"present_perfect_passive | B1.2 | gap | I ___ asked to speak at the conference, so I'm preparing a talk now. | "
 pas_perf,B1.1,present_perfect_passive,B1.2,use,gap,rule,,b1-passives-1.csv:130,present_perfect_passive | B1.2 | gap | The order ___ yet. (not / send) | 
 pas_perf,B1.1,present_perfect_passive,B1.2,use,gap,rule,,b1-passives-1.csv:131,present_perfect_passive | B1.2 | gap | How many tickets ___ so far? (sell) | 
 pas_perf,B1.1,present_perfect_passive,B1.2,use,text,rule,,b1-passives-1.csv:134,present_perfect_passive | B1.2 | text | Make a yes/no question: The email has been sent. | 
@@ -2208,10 +2208,10 @@ pas_will,B1.1,future_passive,B1.1,check,mcq,rule,,b1-passives-1.csv:176,future_p
 pas_will,B1.1,future_passive,B1.1,check,mcq,rule,,b1-upgrades-1.csv:41,future_passive | B1.1 | mcq | Choose the correct option: Don't worry about the parcel. It ___ to your address tomorrow morning. | will be delivered
 pas_will,B1.1,future_passive,B1.2,check,mcq,rule,fup-B12-1a,built-in,future_passive | B1.2 | mcq | ___ the new rules be explained to us? | Will
 pas_will,B1.1,future_passive,B1.2,check,mcq,rule,fup-B12-2a-r2,built-in,future_passive | B1.2 | mcq | Which sentence says the same as 'They will announce the winner tomorrow'? | The winner will be announced tomorrow.
-pas_will,B1.1,future_passive,B1.2,use,gap,rule,fup-B12-3a-r3,built-in,future_passive | B1.2 | gap | Don't worry. Everything ___ before the guests arrive. (prepare) | 
+pas_will,B1.1,future_passive,B1.2,use,gap,rule,fup-B12-3a-r4,built-in,future_passive | B1.2 | gap | Don't worry. Everything ___ before the guests arrive. (prepare) | 
 pas_will,B1.1,future_passive,B1.2,use,text,rule,fup-B12-3b-r2,built-in,future_passive | B1.2 | text | Start with *The tickets*: We will send the tickets by email. | 
 pas_will,B1.1,future_passive,B1.2,check,mcq,rule,fup-B12-4a,built-in,future_passive | B1.2 | mcq | Which sentence is NOT correct? | The class will be cancel.
-pas_will,B1.1,future_passive,B1.2,check,mcq,rule,fup-B12-5a,built-in,future_passive | B1.2 | mcq | You write an airport announcement. Choose the correct option. | Passengers will be informed of any changes.
+pas_will,B1.1,future_passive,B1.2,check,mcq,rule,fup-B12-5a-r2,built-in,future_passive | B1.2 | mcq | Which sentence is correct? | Passengers will be informed of any changes.
 pas_will,B1.1,future_passive,B1.2,use,write,rule,fup-B12-6a-r3,built-in,"future_passive | B1.2 | write | Write a two-sentence notice for your workplace about changes next month: say what will happen, not who will do it. | "
 pas_will,B1.1,future_passive,B1.2,check,order,rule,,b1-passives-1.csv:150,future_passive | B1.2 | order | Put the words in order. | you will be told as soon as the decision is made
 pas_will,B1.1,future_passive,B1.2,check,order,rule,,b1-passives-1.csv:151,future_passive | B1.2 | order | Put the words in order. | the meeting won't be held in the main hall
@@ -2397,8 +2397,8 @@ rep_backshift,B1.1,rep_statements,B2.1,use,write,read,rs-B21-6a,built-in,rep_sta
 rep_backshift,B1.1,rep_statements,B2.1,learn,gap,read,,learn-drag-3.csv:12,rep_statements | B2.1 | gap | My sister said she ___ call me as soon as she ___. | 
 rep_backshift,B1.1,rep_statements,B2.1,learn,order,read,,learn-drag-3.csv:13,rep_statements | B2.1 | order | Put the words in order. | the agent said I might need a visa
 rep_backshift,B1.1,rep_statements,B2.1,use,text,read,,twins-3.csv:10,rep_statements | B2.1 | text | Report this. Start with *The coach told us*: 'You must warm up before every match.' | 
-rep_backshift,B1.1,rep_statements,B2.1,check,mcq,read,,twins-3.csv:12,rep_statements | B2.1 | mcq | Choose the correct report of your sister's words to you: 'I'll call you as soon as I land.' | My sister said she would call me as soon as she landed.
-rep_backshift,B1.1,rep_statements,B2.1,check,mcq,read,,twins-3.csv:13,rep_statements | B2.1 | mcq | Choose the correct report of the agent's words to you: 'You might need a visa.' | The agent said I might need a visa.
+rep_backshift,B1.1,rep_statements,B2.1,check,mcq,read,,twins-3.csv:12,rep_statements | B2.1 | mcq | Which sentence is correct? | My sister said she would call me as soon as she landed.
+rep_backshift,B1.1,rep_statements,B2.1,check,mcq,read,,twins-3.csv:13,rep_statements | B2.1 | mcq | Which sentence is correct? | The agent said I might need a visa.
 rep_backshift,B1.1,rep_statements,B2.1,use,gap,read,,typical-b2c1-1.csv:7,rep_statements | B2.1 | gap | Tom said he ___ the report the next day. (send) | 
 rep_pron_time,B1.1,rep_statements,B1.1,check,order,read,,b1-cond-rep-1.csv:150,rep_statements | B1.1 | order | Put the words in order. | he told me that he would call me the next day
 rep_pron_time,B1.1,rep_statements,B1.1,learn,match,read,,b1-cond-rep-1.csv:175,rep_statements | B1.1 | match | Match each time word with its reported form. | tomorrow = the next day ; yesterday = the day before ; now = then ; here = there
@@ -2626,7 +2626,7 @@ c3,B1.2,cond_third,B2.1,use,gap,read,,typical-b2c1-1.csv:6,"cond_third | B2.1 | 
 c3,B1.2,cond_third,B2.2,check,mcq,read,ct-B22-1a-r3,built-in,"cond_third | B2.2 | mcq | Imagine the past was different: 'If she ___ the warning, she ___ the accident.' | had heard / would have avoided"
 c3,B1.2,cond_third,B2.2,use,gap,read,ct-B22-3a-r3,built-in,"cond_third | B2.2 | gap | He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it. | "
 c3,B1.2,cond_third,B2.2,check,mcq,read,ct-B22-4a-r5,built-in,"cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier."
-c3,B1.2,cond_third,B2.2,check,mcq,read,ct-B22-5a,built-in,"cond_third | B2.2 | mcq | You express regret in a formal apology. Choose the correct option. | If I had realised the impact of my decision, I would have acted differently."
+c3,B1.2,cond_third,B2.2,check,mcq,read,ct-B22-5a-r2,built-in,"cond_third | B2.2 | mcq | Which sentence is correct? | If I had realised the impact of my decision, I would have acted differently."
 c3,B1.2,cond_third,B2.2,use,write,read,ct-B22-6a-r2,built-in,cond_third | B2.2 | write | Write one sentence about what would have happened in history if one thing had been different. | 
 c3,B1.2,cond_third,B2.2,learn,gap,read,,learn-drag-4.csv:22,"cond_third | B2.2 | gap | If she ___ ___ the warning, she would have avoided the accident. | "
 c3,B1.2,cond_third,B2.2,learn,gap,read,,learn-drag-4.csv:23,"cond_third | B2.2 | gap | If he hadn't been driving so fast, he ___ ___ lost his licence. | "
@@ -2636,7 +2636,7 @@ c3,B1.2,cond_third,B2.2,learn,order,rule,,learn-drag-4.csv:26,cond_third | B2.2 
 c3,B1.2,cond_third,B2.2,check,mcq,read,,twins-1.csv:48,"cond_third | B2.2 | mcq | We got lost yesterday because we didn't check the map. Imagine the opposite: 'If we ___ the map, we ___ lost.' | had checked / wouldn't have got"
 c3,B1.2,cond_third,B2.2,use,gap,read,,twins-1.csv:49,"cond_third | B2.2 | gap | She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus. | "
 c3,B1.2,cond_third,B2.2,check,mcq,read,,twins-1.csv:50,"cond_third | B2.2 | mcq | Which sentence is NOT correct? | If they'd have asked me, I would've helped."
-c3,B1.2,cond_third,B2.2,check,mcq,read,,twins-1.csv:51,"cond_third | B2.2 | mcq | We didn't know about the problem yesterday, so we didn't call you. Choose the sentence that says the opposite. | If we had known about the problem, we would have called you."
+c3,B1.2,cond_third,B2.2,check,mcq,read,,twins-1.csv:51,"cond_third | B2.2 | mcq | Which sentence is correct? | If we had known about the problem, we would have called you."
 c3,B1.2,cond_third,B2.2,use,text,read,,twins-1.csv:52,"cond_third | B2.2 | text | Write the sentence with if: I didn't know about the sale, so I didn't buy the coat. | "
 c3,B1.2,cond_third,B2.2,use,gap,read,,typical-b2c1-1.csv:16,cond_third | B2.2 | gap | I would have gone to the concert if I ___ about it. (know) | 
 c3,B1.2,cond_third,B2.2,use,gap,read,,typical-b2c1-1.csv:17,"cond_third | B2.2 | gap | If she hadn't checked the code, the app ___ . (crash) | "
@@ -2701,7 +2701,7 @@ iq_to,B1.2,ind_advanced,B2.2,use,text,read,ia-B22-3a-r2,built-in,ind_advanced | 
 iq_to,B1.2,rep_questions,B2.2,learn,order,read,,learn-drag-3.csv:14,rep_questions | B2.2 | order | Put the words in order. | she asked me how to start
 iq_to,B1.2,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:22,ind_advanced | B2.2 | order | Put the words in order. | we weren't sure where to go
 iq_to,B1.2,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:23,ind_advanced | B2.2 | order | Put the words in order. | she didn't know who to ask
-iq_to,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:14,rep_questions | B2.2 | mcq | Choose the correct report of her question to you: 'How should I start?' | She asked me how to start.
+iq_to,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:14,rep_questions | B2.2 | mcq | Which sentence is correct? | She asked me how to start.
 iq_to,B1.2,ind_advanced,B2.2,check,mcq,read,,twins-3.csv:22,ind_advanced | B2.2 | mcq | Which is correct? 'We weren't sure ___.' | where to go
 iq_to,B1.2,ind_advanced,B2.2,use,text,read,,twins-3.csv:23,"ind_advanced | B2.2 | text | Join the sentences, using *to*: She didn't know. Who should she ask? | "
 iq_to,B1.2,ind_advanced,B2.2,use,gap,read,,typical-b2c1-1.csv:34,ind_advanced | B2.2 | gap | We couldn't decide where ___ on holiday. (go) | 
@@ -2749,7 +2749,7 @@ iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-1a,built-in,ind_polite | B2.1 |
 iq_wh,B1.2,ind_polite,B2.1,learn,mcq,read,ip-B21-2a,built-in,ind_polite | B2.1 | mcq | What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?' | B is more polite and indirect.
 iq_wh,B1.2,ind_polite,B2.1,use,text,read,ip-B21-3a-r3,built-in,ind_polite | B2.1 | text | Make it indirect: Why didn't the order arrive? | 
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-4a-r2,built-in,ind_polite | B2.1 | mcq | Which sentence is NOT correct? | I'd like to know where did you go.
-iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-5a-r2,built-in,ind_polite | B2.1 | mcq | Which is the polite way to ask this: 'When will my order be delivered?' | I was wondering if you could tell me when my order will be delivered.
+iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-5a-r3,built-in,ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me when my order will be delivered.
 iq_wh,B1.2,ind_polite,B2.1,use,write,read,ip-B21-6a-r3,built-in,"ind_polite | B2.1 | write | Ask very politely, in one sentence, when the report will be ready. | "
 iq_wh,B1.2,ind_polite,B2.1,learn,order,rule,,learn-drag-4.csv:32,ind_polite | B2.1 | order | Put the words in order. | would you mind telling me how long the repair will take
 iq_wh,B1.2,ind_polite,B2.1,learn,order,rule,,learn-drag-4.csv:33,ind_polite | B2.1 | order | Put the words in order. | could you tell me why the order didn't arrive
@@ -2759,7 +2759,7 @@ iq_wh,B1.2,ind_polite,B2.1,learn,order,rule,,learn-drag-4.csv:36,ind_polite | B2
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:68,ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me where the nearest pharmacy is?
 iq_wh,B1.2,ind_polite,B2.1,use,text,read,,twins-1.csv:69,"ind_polite | B2.1 | text | Ask politely, starting with *Could you tell me*: Why is the flight delayed? | "
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:70,ind_polite | B2.1 | mcq | Which sentence is NOT correct? | Do you know what time does it open?
-iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:71,ind_polite | B2.1 | mcq | Which is the polite way to ask this: 'Where is the meeting room?' | I was wondering if you could tell me where the meeting room is.
+iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:71,ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me where the meeting room is.
 iq_wh,B1.2,ind_polite,B2.1,use,text,read,,twins-1.csv:72,"ind_polite | B2.1 | text | Ask politely, starting with *Do you know*: When does the shop close? | "
 iq_wh,B1.2,ind_polite,B2.1,use,gap,read,,typical-b2c1-1.csv:11,ind_polite | B2.1 | gap | Could you tell me what time the museum ___? (open) | 
 iq_wh,B1.2,ind_advanced,B2.2,use,write,read,ia-B22-6a,built-in,"ind_advanced | B2.2 | write | Write a sentence with 'I have no idea' and a question word (how, what, where, when, who or why). | "
@@ -2770,7 +2770,7 @@ iq_yn,B1.2,ind_polite,B1.1,check,order,rule,,b1-cond-rep-1.csv:223,ind_polite | 
 iq_yn,B1.2,ind_polite,B1.1,check,gap,read,,b1-cond-rep-1.csv:230,ind_polite | B1.1 | gap | Can you tell me ___ this bus stops at the museum? | 
 iq_yn,B1.2,ind_polite,B1.1,check,mcq,read,,b1-cond-rep-1.csv:248,ind_polite | B1.1 | mcq | Choose the correct option: Could you tell me ___ the library is open on Sundays? | if
 iq_yn,B1.2,ind_polite,B1.2,learn,mcq,read,ip-B12-1a,built-in,ind_polite | B1.2 | mcq | Choose the correct word: Do you know ___ the shop is open on Sundays? | if
-iq_yn,B1.2,ind_polite,B1.2,check,mcq,read,ip-B12-5a,built-in,ind_polite | B1.2 | mcq | You write a polite email to a client. Choose the correct option. | Could you let me know whether the contract has been signed?
+iq_yn,B1.2,ind_polite,B1.2,check,mcq,read,ip-B12-5a-r2,built-in,ind_polite | B1.2 | mcq | Which sentence is correct? | Could you let me know whether the contract has been signed?
 iq_yn,B1.2,ind_polite,B1.2,use,write,read,ip-B12-6a-r3,built-in,ind_polite | B1.2 | write | Ask a stranger politely if the café takes cards. Start with *Do you know* or *Could you tell me*. | 
 iq_yn,B1.2,ind_polite,B1.2,check,order,rule,,b1-cond-rep-1.csv:224,ind_polite | B1.2 | order | Put the words in order. | i wonder whether she has already left
 iq_yn,B1.2,ind_polite,B1.2,check,gap,read,,b1-cond-rep-1.csv:234,ind_polite | B1.2 | gap | I wonder ___ he will come. | 
@@ -2840,7 +2840,7 @@ pastp_by,B1.2,narrative,B1.1,use,gap,read,,compare-past-1.csv:40,"narrative | B1
 pastp_by,B1.2,past_perfect,B1.2,check,mcq,read,ppf-B12-1a-r2,built-in,"past_perfect | B1.2 | mcq | The film began at 7.00. We arrived at 7.15. When we arrived, the film ___ already ___. | had ... started"
 pastp_by,B1.2,past_perfect,B1.2,use,gap,read,ppf-B12-3b,built-in,"past_perfect | B1.2 | gap | By the time I called, he ___ out. (already / go) | "
 pastp_by,B1.2,past_perfect,B1.2,check,mcq,read,ppf-B12-4a,built-in,"past_perfect | B1.2 | mcq | Which sentence is NOT correct? | When I arrived, she already has left."
-pastp_by,B1.2,past_perfect,B1.2,check,mcq,read,ppf-B12-5a,built-in,"past_perfect | B1.2 | mcq | Tom arrived at 9. The meeting started at 8.30. Choose the correct option. | When Tom arrived, the meeting had already started."
+pastp_by,B1.2,past_perfect,B1.2,check,mcq,read,ppf-B12-5a-r2,built-in,"past_perfect | B1.2 | mcq | Which sentence is correct? | When Tom arrived, the meeting had already started."
 pastp_by,B1.2,past_perfect,B1.2,use,write,read,ppf-B12-6a-r2,built-in,past_perfect | B1.2 | write | You arrived somewhere too late. Write one sentence about what had happened before you got there. | 
 pastp_by,B1.2,past_perfect,B1.2,check,order,read,,b1-tenses-2.csv:67,past_perfect | B1.2 | order | Put the words in order. | when i arrived the film had already started
 pastp_by,B1.2,past_perfect,B1.2,check,order,read,,b1-tenses-2.csv:70,past_perfect | B1.2 | order | Put the words in order. | had you ever visited london before that trip
@@ -2953,7 +2953,7 @@ rep_q_wh,B1.2,rep_questions,B2.2,use,gap,read,rq-B22-3a-r3,built-in,rep_question
 rep_q_wh,B1.2,rep_questions,B2.2,learn,order,read,,learn-drag-3.csv:15,rep_questions | B2.2 | order | Put the words in order. | they asked what time they should arrive
 rep_q_wh,B1.2,rep_questions,B2.2,use,text,read,,twins-3.csv:15,rep_questions | B2.2 | text | Report this. Start with *They asked*: 'What time should we arrive?' | 
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,rq-B12-2a-r2,built-in,rep_questions | B1.2 | mcq | Which word(s) do we use to report a yes/no question? | if or whether
-rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,rq-B12-5a,built-in,rep_questions | B1.2 | mcq | A hotel guest asked: 'Is breakfast included?' You report the question. Choose the correct option. | The guest asked whether breakfast was included.
+rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,rq-B12-5a-r2,built-in,rep_questions | B1.2 | mcq | Which sentence is correct? | The guest asked whether breakfast was included.
 rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,rq-B12-3c,built-in,rep_questions | B1.2 | order | Put the words in order. | he asked if I had finished the report
 rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,var-rq-b12-order-01,built-in,rep_questions | B1.2 | order | Make a reported yes/no question. Start with He asked me. | he asked me whether I needed help
 rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,,b1-cond-rep-1.csv:183,rep_questions | B1.2 | order | Put the words in order. | he asked if i could help him with the bags
@@ -2970,15 +2970,15 @@ rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,b1-cond-rep-1.csv:215,rep_quest
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,b1-cond-rep-1.csv:219,rep_questions | B1.2 | mcq | Which sentence is NOT correct? | He asked me did I like the job.
 rep_q_yn,B1.2,rep_questions,B1.2,use,gap,read,,b1-upgrades-1.csv:54,rep_questions | B1.2 | gap | A week ago: 'Did you enjoy the film?' → He asked me ___. | 
 rep_q_yn,B1.2,rep_questions,B2.1,check,mcq,read,rq-B21-1a-r2,built-in,rep_questions | B2.1 | mcq | Anna's question to you: 'Can you help me?' Which sentence reports it? | She asked if I could help her.
-rep_q_yn,B1.2,rep_questions,B2.1,learn,order,rule (new or changed task),,learn-drag-4.csv:37,rep_questions | B2.1 | order | Anna's question to you: 'Can you help me?' Put the words in order. | she asked if I could help her
+rep_q_yn,B1.2,rep_questions,B2.1,learn,order,read,,learn-drag-4.csv:37,rep_questions | B2.1 | order | Anna's question to you: 'Can you help me?' Put the words in order. | she asked if I could help her
 rep_q_yn,B1.2,rep_questions,B2.1,check,mcq,read,,twins-2.csv:27,rep_questions | B2.1 | mcq | Which sentence reports this: 'Can you fix my laptop?' | She asked if I could fix her laptop.
 rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,rq-B22-4a-r2,built-in,rep_questions | B2.2 | mcq | Which sentence is NOT correct? | She asked me whether or not did I agree.
-rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,rq-B22-5a,built-in,rep_questions | B2.2 | mcq | You write meeting minutes: 'Has the budget been approved?' Ms Novak asked. Choose the correct option. | Ms Novak asked whether the budget had been approved.
+rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,rq-B22-5a-r2,built-in,rep_questions | B2.2 | mcq | Which sentence is correct? | Ms Novak asked whether the budget had been approved.
 rep_q_yn,B1.2,rep_questions,B2.2,use,gap,read,rq-B22-6a-r2,built-in,rep_questions | B2.2 | gap | 'Is the data accurate?' → The editor asked me ___. | 
 rep_q_yn,B1.2,rep_questions,B2.2,learn,gap,read,,learn-drag-3.csv:16,rep_questions | B2.2 | gap | He asked whether or not ___ ___ coming. | 
 rep_q_yn,B1.2,rep_questions,B2.2,learn,gap,read,,learn-drag-3.csv:17,rep_questions | B2.2 | gap | Mr Ozols asked whether the invoices ___ ___ sent. | 
 rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:16,rep_questions | B2.2 | mcq | Which sentence is NOT correct? | He asked whether or not was I coming.
-rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:17,rep_questions | B2.2 | mcq | Choose the correct report of Mr Ozols's question: 'Have the invoices been sent?' | Mr Ozols asked whether the invoices had been sent.
+rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:17,rep_questions | B2.2 | mcq | Which sentence is correct? | Mr Ozols asked whether the invoices had been sent.
 rep_stay,B1.2,rep_statements,B2.1,check,mcq,read,rs-B21-2a-r5,built-in,rep_statements | B2.1 | mcq | The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'? | Because it is still true.
 so_that,B1.2,so_such,B1.1,check,order,read,,b1-new-5.csv:93,so_such | B1.1 | order | Put the words in order. | he was so late that we left
 so_that,B1.2,so_such,B1.1,check,gap,read,,b1-new-5.csv:102,so_such | B1.1 | gap | She was ___ tired that she fell asleep at once. | 
@@ -3060,7 +3060,7 @@ c2_c3,B2.1,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:146,"cond_third | B
 c2_c3,B2.1,cond_third,B2.2,learn,mcq,read,ct-B22-2a-r3,built-in,"cond_third | B2.2 | mcq | What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.' | A is about the past, B about now."
 c3_modal,B2.1,cond_third,B1.2,check,mcq,read,ct-B12-5a-r2,built-in,"cond_third | B1.2 | mcq | A colleague forgot to save a file and lost two hours of work. Choose the correct comment about what could have been different. | If you had saved it every ten minutes, you wouldn't have lost so much work."
 c3_modal,B2.1,cond_third,B2.1,learn,mcq,read,ct-B21-2a-r2,built-in,"cond_third | B2.1 | mcq | 'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show? | The deal was possible, not certain."
-c3_modal,B2.1,cond_third,B2.1,check,mcq,read,ct-B21-5a,built-in,"cond_third | B2.1 | mcq | You write a polite criticism in a work review. Choose the correct option. | If you had told us earlier, we could have adjusted the schedule."
+c3_modal,B2.1,cond_third,B2.1,check,mcq,read,ct-B21-5a-r2,built-in,"cond_third | B2.1 | mcq | Which sentence is correct? | If you had told us earlier, we could have adjusted the schedule."
 c3_modal,B2.1,cond_third,B2.1,learn,gap,read,,learn-drag-4.csv:20,"cond_third | B2.1 | gap | If you had told us earlier, we ___ ___ adjusted the schedule. | "
 c3_modal,B2.1,cond_third,B2.1,check,mcq,read,,twins-2.csv:25,"cond_third | B2.1 | mcq | Choose the correct option: We missed the bus yesterday. If we had left earlier, we ___. | could have caught it"
 c_alt,B2.1,cond_advanced,B2.2,use,write,read,ca-C11-6a-r2,built-in,cond_advanced | B2.2 | write | Write a sentence with 'provided that' or 'as long as' to give a condition for a favour. | 
@@ -3068,7 +3068,7 @@ c_mixed,B2.1,cond_mixed,B2.1,learn,mcq,read,cm-B21-1a-r3,built-in,"cond_mixed | 
 c_mixed,B2.1,cond_mixed,B2.1,learn,mcq,read,cm-B21-2a-r2,built-in,"cond_mixed | B2.1 | mcq | 'If I hadn't moved to Riga, I wouldn't have this job now.' What does it mean? | I moved to Riga, so I have this job today."
 c_mixed,B2.1,cond_mixed,B2.1,use,gap,read,cm-B21-3a-r2,built-in,"cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | "
 c_mixed,B2.1,cond_mixed,B2.1,check,mcq,read,cm-B21-4a,built-in,"cond_mixed | B2.1 | mcq | Which sentence is NOT correct? | If I would have studied medicine, I would be a doctor now."
-c_mixed,B2.1,cond_mixed,B2.1,check,mcq,read,cm-B21-5a,built-in,"cond_mixed | B2.1 | mcq | You explain why someone is tired today because of last night. Choose the correct option. | If I hadn't stayed up so late, I wouldn't be so tired now."
+c_mixed,B2.1,cond_mixed,B2.1,check,mcq,read,cm-B21-5a-r2,built-in,"cond_mixed | B2.1 | mcq | Which sentence is correct? | If I hadn't stayed up so late, I wouldn't be so tired now."
 c_mixed,B2.1,cond_mixed,B2.1,use,write,read,cm-B21-6a-r2,built-in,cond_mixed | B2.1 | write | How does a past decision still affect you today? Imagine you had decided differently. Write one sentence. | 
 c_mixed,B2.1,cond_mixed,B2.1,check,order,read,var-cm-b21-order-01,built-in,cond_mixed | B2.1 | order | Link a different past decision to a present result. Start with If I had and put now at the end. | if I had studied medicine I would be a doctor now
 c_mixed,B2.1,cond_mixed,B2.1,check,order,read,,twins-2.csv:7,cond_mixed | B2.1 | order | Put the words in order. | if I had saved more money I would own a flat now
@@ -3097,7 +3097,7 @@ fut_past,B2.1,past_continuous,B1.2,check,mcq,read,pac-B12-1a,built-in,"past_cont
 fut_past,B2.1,past_continuous,B1.2,learn,mcq,read,pac-B12-2a-r3,built-in,past_continuous | B1.2 | mcq | What does 'I was going to call you' mean? | I planned to call you.
 fut_past,B2.1,past_continuous,B1.2,use,gap,read,pac-B12-3a,built-in,"past_continuous | B1.2 | gap | Sorry, I ___ to answer your email, but I was very busy. (go) | "
 fut_past,B2.1,past_continuous,B1.2,check,mcq,read,pac-B12-4a,built-in,"past_continuous | B1.2 | mcq | Which sentence is NOT correct? | They was going to meet us, but they were late."
-fut_past,B2.1,past_continuous,B1.2,check,mcq,read,pac-B12-5a,built-in,"past_continuous | B1.2 | mcq | You want to describe a plan that did not happen. Choose the correct option. | We were going to travel to Italy, but we cancelled."
+fut_past,B2.1,past_continuous,B1.2,check,mcq,read,pac-B12-5a-r2,built-in,"past_continuous | B1.2 | mcq | Which sentence is correct? | We were going to travel to Italy, but we cancelled."
 fut_past,B2.1,past_continuous,B1.2,use,write,read,pac-B12-6a-r2,built-in,"past_continuous | B1.2 | write | Write one sentence about a plan you had that did not happen, and why. | "
 fut_past,B2.1,past_continuous,B1.2,check,order,read,,b1-tenses-1.csv:117,past_continuous | B1.2 | order | Put the words in order. | i was going to call you but i lost your number
 fut_past,B2.1,past_continuous,B1.2,check,gap,read,,b1-tenses-1.csv:123,"past_continuous | B1.2 | gap | I ___ to phone you, but I lost your number. | "
@@ -3120,7 +3120,7 @@ iq_whether,B2.1,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:24,ind_adva
 iq_whether,B2.1,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:29,ind_advanced | B2.2 | order | Put the words in order. | why the system failed remains to be explained
 iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,,twins-2.csv:17,ind_advanced | B2.2 | mcq | Choose the correct option: The question is ___. | whether the supplier can meet the deadline
 iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,,twins-3.csv:24,ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We can't decide whether booking the hotel.
-iq_whether,B2.1,ind_advanced,B2.2,use,gap,read,,typical-b2c1-1.csv:40,ind_advanced | B2.2 | gap | It depends on ___ the budget is approved. | 
+iq_whether,B2.1,ind_advanced,B2.2,use,gap,read,,typical-b2c1-1.csv:40,ind_advanced | B2.2 | gap | It depends on ___ the budget is approved or not. | 
 its_time_past,B2.1,unreal_time,B2.2,check,mcq,read,,twins-1.csv:58,unreal_time | B2.2 | mcq | Choose the correct option: It's high time we ___ a decision. | made
 its_time_past,B2.1,unreal_time,B2.2,use,gap,read,,typical-b2c1-1.csv:31,unreal_time | B2.2 | gap | It's high time the government ___ something about housing. (do) | 
 its_time_past,B2.1,unreal_time,B2.2,use,gap,read,,typical-b2c1-1.csv:41,unreal_time | B2.2 | gap | It's about time you ___ to the dentist. (go) | 
@@ -3257,7 +3257,7 @@ c_inv,B2.2,cond_mixed,B2.2,learn,mcq,read,cm-C11-1a-r6,built-in,"cond_mixed | B2
 c_inv,B2.2,cond_mixed,B2.2,check,mcq,read,cm-C11-2a-r2,built-in,"cond_mixed | B2.2 | mcq | 'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace? | If I were"
 c_inv,B2.2,cond_mixed,B2.2,use,text,read,cm-C11-3a-r3,built-in,"cond_mixed | B2.2 | text | Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now. | "
 c_inv,B2.2,cond_mixed,B2.2,check,mcq,read,cm-C11-4a-r3,built-in,"cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | Hadn't I moved here, I'd be in Riga now."
-c_inv,B2.2,cond_mixed,B2.2,check,mcq,read,cm-C11-5a-r2,built-in,"cond_mixed | B2.2 | mcq | You write a formal report about a past failure with a present effect. Choose the correct option. | Had the contract been checked properly, we would not be facing these penalties now."
+c_inv,B2.2,cond_mixed,B2.2,check,mcq,read,cm-C11-5a-r3,built-in,"cond_mixed | B2.2 | mcq | Which sentence is correct? | Had the contract been checked properly, we would not be facing these penalties now."
 c_inv,B2.2,cond_mixed,B2.2,use,write,read,cm-C11-6a-r3,built-in,cond_mixed | B2.2 | write | Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*. | 
 c_inv,B2.2,cond_advanced,B2.2,learn,mcq,read,ca-C11-1a-r2,built-in,"cond_advanced | B2.2 | mcq | Which sentence means the same as 'If you should need any help, call me'? | Should you need any help, call me."
 c_inv,B2.2,cond_advanced,B2.2,check,mcq,read,ca-C11-5a-r3,built-in,"cond_advanced | B2.2 | mcq | Choose the most formal option. | Should you need more details, contact us."
@@ -3286,12 +3286,12 @@ c_mixed2,B2.2,cond_mixed,B2.2,learn,order,read,,learn-drag-3.csv:4,cond_mixed | 
 c_mixed2,B2.2,cond_mixed,B2.2,learn,gap,read,,learn-drag-3.csv:5,"cond_mixed | B2.2 | gap | If he ___ more confident, he ___ asked for a pay rise. | "
 c_mixed2,B2.2,cond_mixed,B2.2,check,mcq,read,,twins-3.csv:2,"cond_mixed | B2.2 | mcq | Complete: 'If I weren't so impatient, I ___ sold my flat so cheaply last spring.' | wouldn't have"
 c_mixed2,B2.2,cond_mixed,B2.2,check,mcq,read,,twins-3.csv:4,"cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | If she would be more patient, she wouldn't have shouted at him."
-c_mixed2,B2.2,cond_mixed,B2.2,check,mcq,read,,twins-3.csv:5,"cond_mixed | B2.2 | mcq | He isn't a confident person, so he didn't ask for a pay rise. Choose the correct sentence. | If he were more confident, he would have asked for a pay rise."
+c_mixed2,B2.2,cond_mixed,B2.2,check,mcq,read,,twins-3.csv:5,"cond_mixed | B2.2 | mcq | Which sentence is correct? | If he were more confident, he would have asked for a pay rise."
 c_mixed2,B2.2,cond_mixed,B2.2,use,gap,read,,typical-b2c1-1.csv:24,"cond_mixed | B2.2 | gap | If I ___ so shy, I would have spoken to her at the party. (not / be) | "
-iq_subject,B2.2,ind_advanced,B2.2,check,mcq,read,ia-B22-5a,built-in,ind_advanced | B2.2 | mcq | You write a formal email. Choose the correct option. | It remains unclear who is responsible for the delay.
+iq_subject,B2.2,ind_advanced,B2.2,check,mcq,read,ia-B22-5a-r2,built-in,ind_advanced | B2.2 | mcq | Which sentence is correct? | It remains unclear who is responsible for the delay.
 iq_subject,B2.2,ind_advanced,B2.2,check,mcq,read,ia-C11-1a-r4,built-in,ind_advanced | B2.2 | mcq | Choose the correct option: ___ remains unclear. | Whether he will attend
 iq_subject,B2.2,ind_advanced,B2.2,use,text,read,ia-C11-3a-r7,built-in,ind_advanced | B2.2 | text | Combine the two sentences without changing their meaning: Who made the decision? It's not clear. | 
-iq_subject,B2.2,ind_advanced,B2.2,check,mcq,read,ia-C12-5a-r2,built-in,ind_advanced | B2.2 | mcq | You write a formal report. Choose the correct option. | How the funds were spent remains to be investigated.
+iq_subject,B2.2,ind_advanced,B2.2,check,mcq,read,ia-C12-5a-r3,built-in,ind_advanced | B2.2 | mcq | Which sentence is correct? | How the funds were spent remains to be investigated.
 iq_subject,B2.2,ind_advanced,B2.2,check,order,rule,var-ia-c11-order-01-r3,built-in,ind_advanced | B2.2 | order | Put the words in order. Start with *Whether*. | whether the plan will work remains uncertain
 iq_subject,B2.2,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:25,ind_advanced | B2.2 | order | Put the words in order. | it remains unclear how we will pay for the repairs
 iq_subject,B2.2,ind_advanced,B2.2,check,order,rule,,twins-2.csv:15,ind_advanced | B2.2 | order | Put the words in order. | whether the payment has arrived remains unclear

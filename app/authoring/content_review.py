@@ -718,6 +718,38 @@ def revise(original):
     report_fix('pa-B11-5a', q='Choose the correct option: I ___ my report last March.', correct='finished', wrong=['have finished', 'finish', 'am finishing'],
         why='*last March* is a finished time: past simple *finished*.', why_lv='*last March* ir pabeigts laiks: Past Simple *finished*.', wrong_why={}, wrong_why_lv={})
     report_fix('pa-B11-3b', answers=[['When did she move to London?', 'When did she move?']])
+    # Part A of 14 November: the situation before a choice goes where only one option is possible English anyway
+    # (teacher: Choose the correct option / Which sentence is correct? is enough); docs/review/choice-with-situation-2026-11-14.csv
+    report_fix('cf-A22-5a', q='Which sentence is correct?')
+    report_fix('cf-B11-5a', q='Your friend keeps forgetting his password. Choose the correct option.')
+    report_fix('cf-B11-1b', q='Which sentence is correct?')
+    report_fix('cm-B21-5a', q='Which sentence is correct?')
+    report_fix('cm-C11-5a', q='Which sentence is correct?')
+    report_fix('cs-B11-5a', q='Which sentence is correct?')
+    report_fix('cs-B12-5a', q='Which sentence is correct?')
+    report_fix('cs-B21-5a', q='Which sentence is correct?')
+    report_fix('ct-B21-5a', q='Which sentence is correct?')
+    report_fix('ct-B22-5a', q='Which sentence is correct?')
+    report_fix('cz-B11-5a', q='Which sentence is correct?')
+    report_fix('fup-B12-5a', q='Which sentence is correct?')
+    report_fix('ia-B22-5a', q='Which sentence is correct?')
+    report_fix('ia-C12-5a', q='Which sentence is correct?')
+    report_fix('ip-B12-5a', q='Which sentence is correct?')
+    report_fix('ip-B21-5a', q='Which sentence is correct?')
+    report_fix('pac-B11-5a', q='Choose the correct option: I was walking home. Suddenly a dog ___ out of the garden.')
+    report_fix('pac-B12-5a', q='Which sentence is correct?')
+    report_fix('ppf-B12-5a', q='Which sentence is correct?')
+    report_fix('pasp-A22-5a', q='Which sentence is correct?')
+    report_fix('pasp-B11-5a', q='Which sentence is correct?')
+    report_fix('pc-A22-5a', q='You are in Riga for one month only. Which sentence is correct?')
+    report_fix('ppp-B11-5a', q='Tell a colleague the news: the email is now sent. Which sentence is correct?')
+    report_fix('rq-B12-5a', q='Which sentence is correct?')
+    report_fix('rq-B22-5a', q='Which sentence is correct?')
+    # Part B of 14 November: correct answers that were refused (docs/review/typed-one-answer-2026-11-14.csv, after a second reader)
+    report_fix('pp-B11-3a', q='My grandparents ___ married for 50 years, and they still go dancing together. (be)')
+    report_fix('cf-B11-3b', answers=[['arrive', 'have arrived', "'ve arrived"]], answer_notes=[['have arrived', 'Correct too: *have arrived* = after you have arrived. Not *will* after *when / as soon as*.', 'Arī pareizi: *have arrived* = kad būsi ieradies. Pēc *when / as soon as* nelieto *will*.']])
+    report_fix('fup-B12-3a', answers=[['will be prepared', 'will have been prepared', 'is going to be prepared']], answer_notes=[['will have been prepared', 'Correct too: *will have been prepared* = ready before they arrive.', 'Arī pareizi: *will have been prepared* = viss būs gatavs, pirms viesi ieradīsies.'], ['is going to be prepared', 'Correct too: *be going to* = it is the plan.', 'Arī pareizi: *be going to* = tā ir ieplānots.']])
+    report_fix('psp-A22-3b', q='These cars ___ in Germany, and they are sold all over the world. (build)')
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

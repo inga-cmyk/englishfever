@@ -94,9 +94,10 @@ P.text("B1.1","Rewrite as a second conditional: I don't have enough money, so I 
 P.text("B1.1","Make a yes/no question: You would move abroad if you got a good job.","Would you move abroad if you got a good job?")
 replaces("Make a question: You would move abroad if you got a good job.")
 # report of 14 November (c-0707): "Tell your boss." read as an order, without a problem to advise on; the situation and the advice are given.
-# Not "tell your boss" (your / my boss is awkward after "If I were you") and no advice about talking to someone (teacher, 14 November)
-P.text("B1.2","Your friend's laptop is old and very slow. Give advice with *If I were you* and *buy a new laptop*.",["If I were you, I would buy a new laptop.", "If I were you, I'd buy a new laptop.", "If I were you, I would buy a new one.", "If I were you, I'd buy a new one."],b=5,
-       why=("Advice: *If I were you, I would* + base verb: *If I were you, I'd buy a new laptop.*", "Padoms: *If I were you, I would* + pamatforma: *If I were you, I'd buy a new laptop.*"))
+# Not "tell your boss" (your / my boss is awkward after "If I were you"), no advice about talking to someone, and nothing given away:
+# the learner writes were and would buy (teacher, 14 November)
+P.gap("B1.2","Your friend's laptop is old and very slow. If I ___ you, I ___ a new one. (be / buy)","were | was / would buy | 'd buy",
+      why=("Advice: *If I were you, I would* + base verb. *If I was you* is also used in everyday English.", "Padoms: *If I were you, I would* + pamatforma. Ikdienas runā lieto arī *If I was you*."))
 replaces("Give advice with If I were you: Tell your boss.")
 P.text("B1.2","Rewrite as a second conditional: He doesn't practise, so he doesn't win.",["If he practised, he would win.","If he practised, he'd win.","If he practiced, he would win.","If he practiced, he'd win."],b=5)
 P.match("B1.1","Match each real situation with the unreal wish.",[("I don't have a car.","If I had a car, I'd drive to work."),("She lives far away.","If she lived closer, we'd meet more often."),("We have no time.","If we had time, we'd travel."),("He is shy.","If he weren't shy, he'd speak up.")])

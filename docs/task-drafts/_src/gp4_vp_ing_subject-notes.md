@@ -97,7 +97,7 @@ Swimming is good for you. Learning a language takes time.*
   should stay plain, add `tulkojot burtiski` to `LV_BY_FILE` for the file name this batch is saved under. Every other Latvian
   word was chosen so that it is read as Latvian (*aktivitāte* instead of *nodarbe*, which the marker takes for English); if
   Inga prefers *nodarbe*, add `nodarbe nodarbi nodarbei` to `LV_BY_FILE` and change the helper texts.
-- Word orders 9 and 12-type sentences with *is* can also be turned into a question with the same cards (*is travelling alone
+- Word orders with *is* (9, 11 has the question instruction) can also be turned into a question with the same cards (*is travelling alone
   not always easy*); as in the house style, that order is not accepted (the instruction gives no question).
 - Task 23: *Flying never makes me nervous* is negative in meaning; it is not accepted (the instruction asks for the negative
   of the same sentence). Readers may list it.

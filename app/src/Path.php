@@ -29,11 +29,12 @@ final class Path
         ['a1_ptp', 'At, in, on', 'A2.1', ['prep_time_place']],
         ['a1_q', 'Questions: word order', 'A2.1', ['subject_object_q', 'aux_verbs']],
         // A2.2: the A2 list
+        // past perfect, second conditional and reported speech with the tense change are B1 (teacher, 13 November, grammar map decision 1):
+        // no A2.2 steps for them; their B1 steps are b1_narr, b1_c2, b1_rep
         ['a2_pspc', 'Present simple or continuous', 'A2.2', ['present_simple', 'present_continuous']],
         ['a2_pp', 'Present perfect', 'A2.2', ['present_perfect']],
         ['a2_pppa', 'Present perfect or past simple', 'A2.2', ['cmp_pp_ps']],
         ['a2_papc', 'Past continuous and past simple', 'A2.2', ['cmp_ps_pc', 'past_continuous']],
-        ['a2_pap', 'Past perfect', 'A2.2', ['past_perfect']],
         ['a2_fut', 'Will or going to; plans', 'A2.2', ['future']],
         ['a2_rev', 'Review of all tenses A2', 'A2.2', ['present_simple', 'present_continuous', 'past_simple', 'past_continuous', 'present_perfect', 'future']],
         ['a2_mod', 'Have to, must, should', 'A2.2', ['modal_verbs']],
@@ -41,9 +42,7 @@ final class Path
         ['a2_ut', 'Used to', 'A2.2', ['used_to']],
         ['a2_two', 'Verbs with two objects', 'A2.2', ['two_objects']],
         ['a2_c1', 'First conditional and time clauses', 'A2.2', ['cond_zero', 'cond_first', 'time_clauses']],
-        ['a2_c2', 'Second conditional', 'A2.2', ['cond_second']],
         ['a2_pas', 'Present and past simple passive', 'A2.2', ['present_simple_passive', 'past_simple_passive']],
-        ['a2_rep', 'Reported speech', 'A2.2', ['rep_statements']],
         ['a2_ing', 'Infinitives and gerunds', 'A2.2', ['verb_patterns']],
         ['a2_ind', 'Something, anything, nothing', 'A2.2', ['indefinite_pronouns']],
         ['a2_qty', 'Much, many, few, too, enough', 'A2.2', ['quantity']],

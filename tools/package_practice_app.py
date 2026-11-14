@@ -19,6 +19,7 @@ subprocess.run([sys.executable, os.path.join(APP, "tests", "bank_integrity_test.
 subprocess.run(["php", os.path.join(APP, "tests", "grader_test.php")], check=True, env=env)
 subprocess.run(["php", os.path.join(APP, "tests", "bank_update_test.php")], check=True, env=env)
 subprocess.run(["php", os.path.join(APP, "tests", "map_followup_test.php")], check=True, env=env)   # the grammar map after a mistake (14 November, C2)
+subprocess.run(["php", os.path.join(APP, "tests", "path_map_test.php")], check=True, env=env)   # My learning path follows the map (14 November, C3)
 subprocess.run([sys.executable, os.path.join(APP, "tests", "item_gates_test.py")], check=True, env=env, stdout=subprocess.DEVNULL)   # the task-writing gates: a new task that breaks a rule is never packaged
 
 EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git", "examples", "fixtures", "scripts", ".github"}   # the last four: inside vendor/ (the Anthropic SDK), not needed on the server

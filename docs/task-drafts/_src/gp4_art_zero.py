@@ -13,7 +13,7 @@ NAME = ("No article with names of people, cities and most countries: *Anna, Riga
 UNC = ("No article with an uncountable noun when we mean it in general: *I don't eat meat.*",
        "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *I don't eat meat.*")
 PL = ("No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
-      "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* Ar *the* tie būtu kādi noteikti.")
+      "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.")
 SPORT = ("Sports and school subjects are uncountable nouns: no article (*play golf, teach maths*). But instruments take *the*: *play the piano*.",
          "Sporta veidi un mācību priekšmeti ir neskaitāmi lietvārdi: bez artikula (*play golf, teach maths*). Bet mūzikas instrumentiem vajag *the*: *play the piano*.")
 
@@ -77,4 +77,4 @@ gp(T, L, 3, "My son collects ___. He has hundreds. (stamp)", "stamps",
 tx(T, L, 4, "Correct the mistake: My uncle works in the London.", "My uncle works in London.", *NAME)
 tx(T, L, 4, "Correct the mistake: We play the basketball on Fridays.", "We play basketball on Fridays. | On Fridays we play basketball.", *SPORT)
 tx(T, L, 4, "Correct the mistake: I eat the bread with every meal.", "I eat bread with every meal.",
-   "*with every meal* = a habit, bread in general: no article.", "*with every meal* = ieradums, maize vispārīgi: bez artikula.")
+   "*with every meal* = a habit, bread in general: no article.", "*with every meal* = ieradums, *bread* vispārīgā nozīmē: bez artikula.")

@@ -63,7 +63,7 @@ mc(T, L, 2, "Which sentence is correct?", "Can you give me a lift to work?",
 gp(T, L, 3, "Could you ___ this word to me? (explain)", "explain", *base("Could you explain this word?", "Could you to explain"))
 gp(T, L, 3, "Write the missing word: Can ___ borrow your charger? Mine is at home.", "I | we",
    "*Can I…?* asks if I may do something: *Can I borrow your charger?* (I take it for a short time). *Mine is at home* shows who needs it.",
-   "*Can I…?* jautā, vai es drīkstu kaut ko darīt: *Can I borrow your charger?* (es aizņemos uz laiku). *Mine is at home* parāda, kuram vajag lādētāju.")
+   "*Can I…?* jautā, vai es drīkstu kaut ko darīt: *Can I borrow your charger?* (es aizņemos uz laiku). *Mine is at home* parāda, ka lādētājs vajadzīgs man.")
 gp(T, L, 3, "Would you ___ quiet, please? I'm on the phone. (be)", "be", *base("Would you be quiet, please?", "Would you are quiet"))
 gp(T, L, 3, "Write the missing word: 'Can I take a photo of your garden?' 'Yes, go ___.'", "ahead | on",
    "To say yes to *Can I…?*: *Yes, go ahead.* (also *Sure.* or *Yes, of course.*).",

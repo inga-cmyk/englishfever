@@ -1,0 +1,69 @@
+[
+ {
+  "id": "r1c-001",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1c-002",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1c-003",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Ask politely. Start with *Could you tell me*: Why hasn't the order arrived?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1c-004",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Join with *which*: We visited a museum. It has a collection of old cars.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1c-005",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Join with *which*: The app helps me learn new words. It is free.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1c-006",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *might*: Perhaps the concert tickets are sold out.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1c-007",
+  "level": "A2.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "She'll call.",
+   "She might call.",
+   "She won't call.",
+   "She might not call."
+  ],
+  "right": [
+   "Perhaps.",
+   "Definitely not.",
+   "Perhaps not.",
+   "Definitely."
+  ]
+ },
+ {
+  "id": "r1c-008",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I've decided*: I will go home early.",
+  "note": "the learner types a whole sentence"
+ }
+]

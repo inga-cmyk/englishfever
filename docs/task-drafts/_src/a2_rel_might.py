@@ -36,11 +36,11 @@ gp(REL, L, 3, "Write the missing word: Do you like songs ___ tell a story?", "wh
 gp(REL, L, 3, "Write the missing word: On our trip we met a guide ___ spoke perfect English.", "who | that", R_EN, R_LV)
 # whole sentence (3)
 tx(REL, L, 4, "Join with *who*: I have a cousin. He works in a hotel.", "I have a cousin who works in a hotel.", *R_JOIN)
-tx(REL, L, 4, "Join with *which*: We visited a museum. It has old cars.",
-   "We visited a museum which has old cars. | We visited a museum that has old cars. | We visited a museum which had old cars. | We visited a museum that had old cars.", *R_JOIN)
+tx(REL, L, 4, "Join with *which*: We visited a museum. It has a collection of old cars.",
+   "We visited a museum which has a collection of old cars. | We visited a museum that has a collection of old cars. | We visited a museum which had a collection of old cars. | We visited a museum that had a collection of old cars.", *R_JOIN)
 replaces("Join the two sentences: We visited a museum. It has old cars.")
 tx(REL, L, 4, "Join with *which*: The app helps me learn new words. It is free.",
-   "The app which helps me learn new words is free. | The app that helps me learn new words is free. | The app which is free helps me learn new words. | The app that is free helps me learn new words. | The app which helps me to learn new words is free. | The app that helps me to learn new words is free. | The app, which is free, helps me learn new words.", *R_JOIN)
+   "The app which helps me learn new words is free. | The app that helps me learn new words is free. | The app which is free helps me learn new words. | The app that is free helps me learn new words. | The app which helps me to learn new words is free. | The app that helps me to learn new words is free. | The app, which is free, helps me learn new words. | The app, which helps me learn new words, is free. | The app, which helps me to learn new words, is free. | The app, which is free, helps me to learn new words.", *R_JOIN)
 replaces("Join the two sentences: The app helps me learn new words. It is free.")
 # word order (5)
 od(REL, L, 3, "Put the words in order.", "i have a neighbour who plays the piano", R_EN, R_LV)
@@ -86,7 +86,7 @@ gp(MOD, L, 3, "I can't see Anna's car. She might ___ at home. (not / be)", "not 
 gp(MOD, L, 3, "Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip.", "might | may | could", *M_ANY)
 gp(MOD, L, 3, "Write the missing word: I'm not sure, but they ___ have a map of the town at the desk.", "might | may | could", *M_ANY)
 # whole sentence (3)
-tx(MOD, L, 4, "Rewrite with *might*: Perhaps the concert tickets are sold out.", "The concert tickets might be sold out. | The tickets for the concert might be sold out. | The concert tickets might have sold out.", M_EN, M_LV)
+tx(MOD, L, 4, "Rewrite with *might*: Perhaps the concert tickets are sold out.", "The concert tickets might be sold out. | The tickets for the concert might be sold out. | The concert tickets might have sold out. | The concert tickets might already be sold out. | The concert might be sold out.", M_EN, M_LV)
 tx(MOD, L, 4, "Make it negative: We might finish the project today.", "We might not finish the project today. | We mightn't finish the project today.", *M_NEG)
 tx(MOD, L, 4, "Say it another way with *may*: It's possible that she knows Anna.", "She may know Anna.", M_EN, M_LV)
 # word order (5)
@@ -100,7 +100,7 @@ gp(MOD, L, 3, "It ___ ___ tomorrow, so I'm taking my boots.", "might / snow", M_
 gp(MOD, L, 3, "She may ___ ___ the meeting today.", "not / join", *M_NEG, bank=["not", "join", "doesn't", "joins"])
 gp(MOD, L, 3, "You ___ ___ this film. It's very funny.", "might / like", M_EN, M_LV, bank=["might", "like", "likes", "liking"])
 # matching (1): a learning task
-mt(MOD, L, 2, "Match each sentence with its meaning.", [("She'll call.", "Yes, I'm sure."), ("She might call.", "Yes, perhaps."), ("She won't call.", "No, I'm sure."), ("She might not call.", "Perhaps not.")],
+mt(MOD, L, 2, "Match each sentence with its meaning.", [("She'll call.", "Definitely."), ("She might call.", "Perhaps."), ("She won't call.", "Definitely not."), ("She might not call.", "Perhaps not.")],
    "*will* = sure; *might* = perhaps. *won't* and *might not* are the negatives.", "*will* = droši; *might* = varbūt. *won't* un *might not* ir nolieguma formas.")
 
 save("a2-rel-might-1.csv")   # approved by the teacher, 14 November

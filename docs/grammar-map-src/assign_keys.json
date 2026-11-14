@@ -13778,5 +13778,25 @@
 "verb_patterns | A2.2 | text | Make a sentence with *decide*: I will go home early. | ": [
 "vp_to",
 "read"
+],
+"cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | ": [
+"c3",
+"read"
+],
+"rep_verbs | B2.2 | text | Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.' | ": [
+"rv_obj_to",
+"read"
+],
+"relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has a collection of old cars. | ": [
+"rel_subj",
+"read"
+],
+"more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Definitely. ; She might call. = Perhaps. ; She won't call. = Definitely not. ; She might not call. = Perhaps not.": [
+"might",
+"read"
+],
+"verb_patterns | A2.2 | text | Start with *I've decided*: I will go home early. | ": [
+"vp_to",
+"read"
 ]
 }

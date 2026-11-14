@@ -5649,39 +5649,37 @@
 "wrong_why_lv": {}
 },
 {
-"id": "ct-B21-3a-r4",
+"id": "ct-B21-3a-r5",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 3,
 "kind": "text",
-"q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.",
+"q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine.",
 "answers": [
 [
-"If I had seen the sign, I wouldn't have parked there.",
+"If I had seen the sign, I wouldn't have got a parking fine.",
+"If I had seen the sign, I wouldn't have gotten a parking fine.",
 "If I had seen the sign, I wouldn't have got a fine.",
-"If I had seen the sign, I would not have got a fine.",
 "If I had seen the sign, I wouldn't have gotten a fine.",
 "If I had seen the sign, I wouldn't have been fined.",
-"If I had seen the sign, I would not have parked there.",
-"I wouldn't have parked there if I had seen the sign.",
-"I wouldn't have got a fine if I had seen the sign.",
-"I would not have got a fine if I had seen the sign.",
-"I wouldn't have gotten a fine if I had seen the sign.",
-"I wouldn't have been fined if I had seen the sign.",
-"I would not have parked there if I had seen the sign.",
-"If I had seen the sign, I wouldn't have parked there and I wouldn't have got a fine.",
-"If I had seen the sign, I wouldn't have parked there and I wouldn't have gotten a fine.",
-"If I had seen the sign, I wouldn't have parked there and wouldn't have got a fine.",
-"If I had seen the sign, I wouldn't have parked there and wouldn't have gotten a fine.",
-"If I had seen the sign, I wouldn't have parked there or got a fine.",
-"If I had seen the sign, I wouldn't have parked there or gotten a fine.",
-"If I had seen the sign, I wouldn't have parked there and got a fine.",
-"If I had seen the sign, I wouldn't have parked there and gotten a fine.",
-"If I had seen the sign, I would have parked somewhere else."
+"If I had noticed the sign, I wouldn't have got a parking fine.",
+"If I had noticed the sign, I wouldn't have got a fine."
 ]
 ],
 "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
-"hints": []
+"hints": [],
+"answer_notes": [
+[
+"If I had noticed the sign, I wouldn't have got a parking fine.",
+"Correct too: *noticed* = saw.",
+"Arī pareizi: *noticed* = pamanīju."
+],
+[
+"If I had noticed the sign, I wouldn't have got a fine.",
+"Correct too: *noticed* = saw.",
+"Arī pareizi: *noticed* = pamanīju."
+]
+]
 },
 {
 "id": "ct-B21-4a",
@@ -7445,68 +7443,62 @@
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r6",
+"id": "rv-C12-3a-r7",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'",
+"q": "Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.'",
 "answers": [
 [
 "My sister advised me to see a doctor about that cough.",
-"My sister urged me to see a doctor about that cough.",
-"My sister told me to see a doctor about that cough.",
-"My sister encouraged me to see a doctor about that cough.",
-"My sister recommended that I see a doctor about that cough.",
-"My sister recommended that I should see a doctor about that cough.",
-"My sister suggested that I see a doctor about that cough.",
-"My sister suggested that I should see a doctor about that cough.",
-"My sister suggested seeing a doctor about that cough.",
-"My sister suggested I see a doctor about that cough.",
-"My sister suggested I should see a doctor about that cough.",
-"My sister recommended seeing a doctor about that cough.",
-"My sister recommended I see a doctor about that cough.",
-"My sister recommended I should see a doctor about that cough.",
 "My sister advised seeing a doctor about that cough.",
 "My sister advised that I see a doctor about that cough.",
 "My sister advised that I should see a doctor about that cough.",
-"My sister said I should see a doctor about that cough.",
-"My sister said that I should see a doctor about that cough.",
-"My sister told me I should see a doctor about that cough.",
-"My sister told me that I should see a doctor about that cough.",
 "My sister advised me to see a doctor about my cough.",
-"My sister urged me to see a doctor about my cough.",
-"My sister told me to see a doctor about my cough.",
-"My sister encouraged me to see a doctor about my cough.",
-"My sister recommended that I see a doctor about my cough.",
-"My sister recommended that I should see a doctor about my cough.",
-"My sister suggested that I see a doctor about my cough.",
-"My sister suggested that I should see a doctor about my cough.",
-"My sister suggested seeing a doctor about my cough.",
-"My sister suggested I see a doctor about my cough.",
-"My sister suggested I should see a doctor about my cough.",
-"My sister recommended seeing a doctor about my cough.",
-"My sister recommended I see a doctor about my cough.",
-"My sister recommended I should see a doctor about my cough.",
 "My sister advised seeing a doctor about my cough.",
 "My sister advised that I see a doctor about my cough.",
 "My sister advised that I should see a doctor about my cough.",
-"My sister said I should see a doctor about my cough.",
-"My sister said that I should see a doctor about my cough.",
-"My sister told me I should see a doctor about my cough.",
-"My sister told me that I should see a doctor about my cough.",
-"My sister said I really should see a doctor about that cough.",
-"My sister said I really should see a doctor about my cough.",
-"My sister said that I really should see a doctor about that cough.",
-"My sister said that I really should see a doctor about my cough.",
-"My sister told me I really should see a doctor about that cough.",
-"My sister told me I really should see a doctor about my cough.",
-"My sister told me that I really should see a doctor about that cough.",
-"My sister told me that I really should see a doctor about my cough."
+"My sister advised me to see a doctor about the cough.",
+"My sister advised me to go to the doctor about that cough.",
+"My sister advised me to go to the doctor about my cough."
 ]
 ],
-"why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
-"hints": []
+"why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
+"hints": [],
+"answer_notes": [
+[
+"My sister advised seeing a doctor about that cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised that I see a doctor about that cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised that I should see a doctor about that cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised seeing a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised that I see a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised that I should see a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+]
+],
+"why_lv": "*advise* + persona + *to* + pamatforma: *My sister advised me to see a doctor.*"
 },
 {
 "id": "rv-C12-4a-r3",
@@ -7906,7 +7898,7 @@
 "wrong_why": {}
 },
 {
-"id": "ip-B21-3a-r5",
+"id": "ip-B21-3a-r6",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 3,
@@ -7918,7 +7910,11 @@
 "Could you please tell me why the order hasn't arrived?",
 "Could you tell me why the order hasn't arrived, please?",
 "Could you tell me why the order hasn't arrived yet?",
-"Could you tell me why the order has not arrived?"
+"Could you tell me why the order has not arrived?",
+"Could you tell me why my order hasn't arrived?",
+"Could you please tell me why my order hasn't arrived?",
+"Could you tell me why my order hasn't arrived, please?",
+"Could you tell me why my order hasn't arrived yet?"
 ]
 ],
 "why": "Polite phrase + *why* + subject + verb in statement order: *why the order hasn't arrived*, not *why hasn't the order arrived*.",

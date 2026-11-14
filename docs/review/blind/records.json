@@ -89,6 +89,11 @@
 "round": "r1",
 "task": "r1-044"
 },
+"3753e90a9c0a6989": {
+"gate_key": "rep_questions | B1.2 | mcq | Choose the correct option: 'Where do you work?' She asked me ___. | where I worked",
+"round": "r1b",
+"task": "r1b-003"
+},
 "38430a41d99b424e": {
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
 "round": "r1",
@@ -183,6 +188,11 @@
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | they might move to another city",
 "round": "r1",
 "task": "r1-058"
+},
+"6e8956261c46a9ff": {
+"gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: I use an app ___ edits my videos. | that",
+"round": "r1b",
+"task": "r1b-007"
 },
 "729b169818761aad": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: He was late for work ___ he overslept. | because",
@@ -289,6 +299,11 @@
 "round": "r1",
 "task": "r1-015"
 },
+"9a4322ab37477a3e": {
+"gate_key": "rep_verbs | B2.2 | gap | 'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam. | ",
+"round": "r1b",
+"task": "r1b-004"
+},
 "9adac3f228496601": {
 "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home. | can't",
 "round": "r1",
@@ -359,6 +374,11 @@
 "round": "r1",
 "task": "r1-097"
 },
+"cc6f4d8e8b15405a": {
+"gate_key": "more_modals | A2.2 | mcq | Choose the correct option: He ___ to the party tonight. | might not come",
+"round": "r1b",
+"task": "r1b-011"
+},
 "cd8a089500910cea": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: We took a taxi ___ it was raining very hard. | because",
 "round": "r1",
@@ -378,6 +398,11 @@
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: The road is icy. You ___ fall, so be careful. | ",
 "round": "r1",
 "task": "r1-049"
+},
+"d8b0c1bec954c6c1": {
+"gate_key": "cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | ",
+"round": "r1b",
+"task": "r1b-002"
 },
 "db025510c7d4db8b": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ having a cold, Anna sang at the concert. | Despite",
@@ -428,6 +453,11 @@
 "gate_key": "relative_clauses | A2.2 | mcq | Which sentence is NOT correct? | I know a woman which speaks five languages.",
 "round": "r1",
 "task": "r1-022"
+},
+"f2fb132fbe6a83d8": {
+"gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.",
+"round": "r1b",
+"task": "r1b-010"
 },
 "f45ef099d62e0143": {
 "gate_key": "more_modals | A2.2 | text | Say it another way with *may*: It's possible that she knows Anna. | ",

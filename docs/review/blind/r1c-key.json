@@ -1,0 +1,491 @@
+{
+ "r1c-001": {
+  "hash": "34071884b29168a4",
+  "gate_key": "cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "If I had seen the sign, I wouldn't have got a parking fine.",
+     "If I had seen the sign, I wouldn't have gotten a parking fine.",
+     "If I had seen the sign, I wouldn't have got a fine.",
+     "If I had seen the sign, I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have been fined.",
+     "If I had noticed the sign, I wouldn't have got a parking fine.",
+     "If I had noticed the sign, I wouldn't have got a fine."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ct-B21-3a-r5",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine.",
+   "answers": [
+    [
+     "If I had seen the sign, I wouldn't have got a parking fine.",
+     "If I had seen the sign, I wouldn't have gotten a parking fine.",
+     "If I had seen the sign, I wouldn't have got a fine.",
+     "If I had seen the sign, I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have been fined.",
+     "If I had noticed the sign, I wouldn't have got a parking fine.",
+     "If I had noticed the sign, I wouldn't have got a fine."
+    ]
+   ],
+   "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
+   "hints": [],
+   "answer_notes": [
+    [
+     "If I had noticed the sign, I wouldn't have got a parking fine.",
+     "Correct too: *noticed* = saw.",
+     "Arī pareizi: *noticed* = pamanīju."
+    ],
+    [
+     "If I had noticed the sign, I wouldn't have got a fine.",
+     "Correct too: *noticed* = saw.",
+     "Arī pareizi: *noticed* = pamanīju."
+    ]
+   ],
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r1c-002": {
+  "hash": "46de15b6bb90693d",
+  "gate_key": "rep_verbs | B2.2 | text | Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.' | ",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister advised me to see a doctor about the cough.",
+     "My sister advised me to go to the doctor about that cough.",
+     "My sister advised me to go to the doctor about my cough."
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C12-3a-r7",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.'",
+   "answers": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister advised me to see a doctor about the cough.",
+     "My sister advised me to go to the doctor about that cough.",
+     "My sister advised me to go to the doctor about my cough."
+    ]
+   ],
+   "why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
+   "hints": [],
+   "answer_notes": [
+    [
+     "My sister advised seeing a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I should see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised seeing a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I should see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ]
+   ],
+   "why_lv": "*advise* + persona + *to* + pamatforma: *My sister advised me to see a doctor.*",
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_obj_to",
+   "src": "built-in"
+  }
+ },
+ "r1c-003": {
+  "hash": "a66e3a0ed0621726",
+  "gate_key": "ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you tell me why the order hasn't arrived?",
+     "Could you please tell me why the order hasn't arrived?",
+     "Could you tell me why the order hasn't arrived, please?",
+     "Could you tell me why the order hasn't arrived yet?",
+     "Could you tell me why the order has not arrived?",
+     "Could you tell me why my order hasn't arrived?",
+     "Could you please tell me why my order hasn't arrived?",
+     "Could you tell me why my order hasn't arrived, please?",
+     "Could you tell me why my order hasn't arrived yet?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ip-B21-3a-r6",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Ask politely. Start with *Could you tell me*: Why hasn't the order arrived?",
+   "answers": [
+    [
+     "Could you tell me why the order hasn't arrived?",
+     "Could you please tell me why the order hasn't arrived?",
+     "Could you tell me why the order hasn't arrived, please?",
+     "Could you tell me why the order hasn't arrived yet?",
+     "Could you tell me why the order has not arrived?",
+     "Could you tell me why my order hasn't arrived?",
+     "Could you please tell me why my order hasn't arrived?",
+     "Could you tell me why my order hasn't arrived, please?",
+     "Could you tell me why my order hasn't arrived yet?"
+    ]
+   ],
+   "why": "Polite phrase + *why* + subject + verb in statement order: *why the order hasn't arrived*, not *why hasn't the order arrived*.",
+   "hints": [
+    [
+     "\\bhas the order\\b",
+     "Use statement order after *why*: *… why the order hasn't arrived.*",
+     "Pēc *why* lieto apgalvojuma vārdu secību: *… why the order hasn't arrived.*"
+    ]
+   ],
+   "why_lv": "Pieklājīga frāze + *why* + teikuma priekšmets + darbības vārds apgalvojuma secībā: *why the order hasn't arrived*, nevis *why hasn't the order arrived*.",
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r1c-004": {
+  "hash": "2b3967fc2c89b843",
+  "gate_key": "relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has a collection of old cars. | ",
+  "src": "a2-rel-might-1.csv:16",
+  "point": "rel_subj",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We visited a museum which has a collection of old cars.",
+     "We visited a museum that has a collection of old cars.",
+     "We visited a museum which had a collection of old cars.",
+     "We visited a museum that had a collection of old cars."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0555",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join with *which*: We visited a museum. It has a collection of old cars.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answer_notes": [
+    [
+     "We visited a museum which had a collection of old cars.",
+     "Correct too: *had* follows *visited*; *has* says the museum still has them.",
+     "Arī pareizi: *had* saskan ar *visited*; *has* nozīmē, ka muzejā tās ir joprojām."
+    ],
+    [
+     "We visited a museum that had a collection of old cars.",
+     "Correct too: *had* follows *visited*; *has* says the museum still has them.",
+     "Arī pareizi: *had* saskan ar *visited*; *has* nozīmē, ka muzejā tās ir joprojām."
+    ]
+   ],
+   "answers": [
+    [
+     "We visited a museum which has a collection of old cars.",
+     "We visited a museum that has a collection of old cars.",
+     "We visited a museum which had a collection of old cars.",
+     "We visited a museum that had a collection of old cars."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:16"
+  }
+ },
+ "r1c-005": {
+  "hash": "bf6017c8c21de9fc",
+  "gate_key": "relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | ",
+  "src": "a2-rel-might-1.csv:17",
+  "point": "rel_subj",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The app which helps me learn new words is free.",
+     "The app that helps me learn new words is free.",
+     "The app which is free helps me learn new words.",
+     "The app that is free helps me learn new words.",
+     "The app which helps me to learn new words is free.",
+     "The app that helps me to learn new words is free.",
+     "The app, which is free, helps me learn new words.",
+     "The app, which helps me learn new words, is free.",
+     "The app, which helps me to learn new words, is free.",
+     "The app, which is free, helps me to learn new words."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0556",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join with *which*: The app helps me learn new words. It is free.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answer_notes": [
+    [
+     "The app, which is free, helps me learn new words.",
+     "Correct too: with commas the clause only adds information about the one app.",
+     "Arī pareizi: ar komatiem palīgteikums tikai pievieno informāciju par šo vienu lietotni."
+    ],
+    [
+     "The app, which helps me learn new words, is free.",
+     "Correct too: with commas the clause only adds information about the one app.",
+     "Arī pareizi: ar komatiem palīgteikums tikai pievieno informāciju par šo vienu lietotni."
+    ],
+    [
+     "The app, which helps me to learn new words, is free.",
+     "Correct too: with commas the clause only adds information about the one app.",
+     "Arī pareizi: ar komatiem palīgteikums tikai pievieno informāciju par šo vienu lietotni."
+    ],
+    [
+     "The app, which is free, helps me to learn new words.",
+     "Correct too: with commas the clause only adds information about the one app.",
+     "Arī pareizi: ar komatiem palīgteikums tikai pievieno informāciju par šo vienu lietotni."
+    ]
+   ],
+   "answers": [
+    [
+     "The app which helps me learn new words is free.",
+     "The app that helps me learn new words is free.",
+     "The app which is free helps me learn new words.",
+     "The app that is free helps me learn new words.",
+     "The app which helps me to learn new words is free.",
+     "The app that helps me to learn new words is free.",
+     "The app, which is free, helps me learn new words.",
+     "The app, which helps me learn new words, is free.",
+     "The app, which helps me to learn new words, is free.",
+     "The app, which is free, helps me to learn new words."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:17"
+  }
+ },
+ "r1c-006": {
+  "hash": "01f7672daa7b7790",
+  "gate_key": "more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ",
+  "src": "a2-rel-might-1.csv:40",
+  "point": "might",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The concert tickets might be sold out.",
+     "The tickets for the concert might be sold out.",
+     "The concert tickets might have sold out.",
+     "The concert tickets might already be sold out.",
+     "The concert might be sold out."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0579",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *might*: Perhaps the concert tickets are sold out.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answer_notes": [
+    [
+     "The concert tickets might already be sold out.",
+     "Correct too: *already* adds 'by now'.",
+     "Arī pareizi: *already* = jau."
+    ]
+   ],
+   "answers": [
+    [
+     "The concert tickets might be sold out.",
+     "The tickets for the concert might be sold out.",
+     "The concert tickets might have sold out.",
+     "The concert tickets might already be sold out.",
+     "The concert might be sold out."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:40"
+  }
+ },
+ "r1c-007": {
+  "hash": "ae44462a4afbf317",
+  "gate_key": "more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Definitely. ; She might call. = Perhaps. ; She won't call. = Definitely not. ; She might not call. = Perhaps not.",
+  "src": "a2-rel-might-1.csv:51",
+  "point": "might",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "She'll call.",
+     "Definitely."
+    ],
+    [
+     "She might call.",
+     "Perhaps."
+    ],
+    [
+     "She won't call.",
+     "Definitely not."
+    ],
+    [
+     "She might not call.",
+     "Perhaps not."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0590",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "why": "*will* = sure; *might* = perhaps. *won't* and *might not* are the negatives.",
+   "why_lv": "*will* = droši; *might* = varbūt. *won't* un *might not* ir nolieguma formas.",
+   "pairs": [
+    [
+     "She'll call.",
+     "Definitely."
+    ],
+    [
+     "She might call.",
+     "Perhaps."
+    ],
+    [
+     "She won't call.",
+     "Definitely not."
+    ],
+    [
+     "She might not call.",
+     "Perhaps not."
+    ]
+   ],
+   "role": "learn",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:51"
+  }
+ },
+ "r1c-008": {
+  "hash": "488e0a470d8c3184",
+  "gate_key": "verb_patterns | A2.2 | text | Start with *I've decided*: I will go home early. | ",
+  "src": "b1-new-3.csv:144",
+  "point": "vp_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I decided to go home early.",
+     "I have decided to go home early.",
+     "I've decided to go home early.",
+     "I've decided I'll go home early.",
+     "I've decided that I'll go home early.",
+     "I have decided that I will go home early.",
+     "I have decided I will go home early.",
+     "I decided that I would go home early.",
+     "I decided I would go home early."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1241",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *I've decided*: I will go home early.",
+   "why": "*want, decide, hope, manage, refuse, promise, pretend, afford* + *to* + verb.",
+   "why_lv": "*want, decide, hope, manage, refuse, promise, pretend, afford + to* + darbības vārds.",
+   "answers": [
+    [
+     "I decided to go home early.",
+     "I have decided to go home early.",
+     "I've decided to go home early.",
+     "I've decided I'll go home early.",
+     "I've decided that I'll go home early.",
+     "I have decided that I will go home early.",
+     "I have decided I will go home early.",
+     "I decided that I would go home early.",
+     "I decided I would go home early."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "vp_to",
+   "src": "b1-new-3.csv:144"
+  }
+ }
+}

@@ -1049,7 +1049,7 @@ might,A2.2,more_modals,A2.2,check,order,read,,a2-rel-might-1.csv:47,more_modals 
 might,A2.2,more_modals,A2.2,check,gap,read,,a2-rel-might-1.csv:48,"more_modals | A2.2 | gap | It ___ ___ tomorrow, so I'm taking my boots. | "
 might,A2.2,more_modals,A2.2,check,gap,read,,a2-rel-might-1.csv:49,more_modals | A2.2 | gap | She may ___ ___ the meeting today. | 
 might,A2.2,more_modals,A2.2,check,gap,read,,a2-rel-might-1.csv:50,more_modals | A2.2 | gap | You ___ ___ this film. It's very funny. | 
-might,A2.2,more_modals,A2.2,learn,match,read,,a2-rel-might-1.csv:51,"more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Yes, I'm sure. ; She might call. = Yes, perhaps. ; She won't call. = No, I'm sure. ; She might not call. = Perhaps not."
+might,A2.2,more_modals,A2.2,learn,match,read,,a2-rel-might-1.csv:51,more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Definitely. ; She might call. = Perhaps. ; She won't call. = Definitely not. ; She might not call. = Perhaps not.
 might,A2.2,more_modals,B1.1,check,order,read,,b1-new-4.csv:2,more_modals | B1.1 | order | Put the words in order. | it might rain later this afternoon
 might,A2.2,more_modals,B1.1,check,gap,read,,b1-new-4.csv:14,"more_modals | B1.1 | gap | She might ___ late, so don't wait for her. | "
 might,A2.2,more_modals,B1.1,use,gap,read,,b1-new-4.csv:19,more_modals | B1.1 | gap | Write the missing word or words: It's very cloudy. It ___ rain later. | 
@@ -1597,7 +1597,7 @@ rel_subj,A2.2,relative_clauses,A2.2,use,gap,read,,a2-rel-might-1.csv:12,relative
 rel_subj,A2.2,relative_clauses,A2.2,use,gap,read,,a2-rel-might-1.csv:13,relative_clauses | A2.2 | gap | Write the missing word: Do you like songs ___ tell a story? | 
 rel_subj,A2.2,relative_clauses,A2.2,use,gap,read,,a2-rel-might-1.csv:14,relative_clauses | A2.2 | gap | Write the missing word: On our trip we met a guide ___ spoke perfect English. | 
 rel_subj,A2.2,relative_clauses,A2.2,use,text,read,,a2-rel-might-1.csv:15,relative_clauses | A2.2 | text | Join with *who*: I have a cousin. He works in a hotel. | 
-rel_subj,A2.2,relative_clauses,A2.2,use,text,read,,a2-rel-might-1.csv:16,relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has old cars. | 
+rel_subj,A2.2,relative_clauses,A2.2,use,text,read,,a2-rel-might-1.csv:16,relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has a collection of old cars. | 
 rel_subj,A2.2,relative_clauses,A2.2,use,text,read,,a2-rel-might-1.csv:17,relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | 
 rel_subj,A2.2,relative_clauses,A2.2,check,order,read,,a2-rel-might-1.csv:18,relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano
 rel_subj,A2.2,relative_clauses,A2.2,check,order,read,,a2-rel-might-1.csv:19,relative_clauses | A2.2 | order | Put the words in order. | we stayed in a flat that had a garden
@@ -1799,7 +1799,7 @@ vp_to,A2.2,verb_patterns,A2.2,check,order,read,,b1-new-3.csv:103,verb_patterns |
 vp_to,A2.2,verb_patterns,A2.2,use,gap,read,,b1-new-3.csv:119,verb_patterns | A2.2 | gap | He hopes ___ a job soon. (find) | 
 vp_to,A2.2,verb_patterns,A2.2,check,mcq,read,,b1-new-3.csv:128,verb_patterns | A2.2 | mcq | Choose the correct option: She wants ___ a new phone. | to buy
 vp_to,A2.2,verb_patterns,A2.2,check,mcq,read,,b1-new-3.csv:130,verb_patterns | A2.2 | mcq | Choose the correct option: We decided ___ at home. | to stay
-vp_to,A2.2,verb_patterns,A2.2,use,text,read,,b1-new-3.csv:144,verb_patterns | A2.2 | text | Make a sentence with *decide*: I will go home early. | 
+vp_to,A2.2,verb_patterns,A2.2,use,text,read,,b1-new-3.csv:144,verb_patterns | A2.2 | text | Start with *I've decided*: I will go home early. | 
 vp_to,A2.2,verb_patterns,A2.2,use,text,read,,b1-new-3.csv:150,verb_patterns | A2.2 | text | Correct the mistake: We decided staying at home. | 
 vp_to,A2.2,verb_patterns,A2.2,check,mcq,read,,more-1.csv:113,verb_patterns | A2.2 | mcq | Choose the correct option: We decided ___ a new car. | to buy
 vp_to,A2.2,verb_patterns,A2.2,check,mcq,read,,more-1.csv:114,verb_patterns | A2.2 | mcq | Choose the correct option: Do you want ___ with us? | to come
@@ -2661,7 +2661,7 @@ c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:145,cond_third | B1.2 
 c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:147,"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If I would have studied, I would have passed."
 c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:148,"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If we had left earlier, we wouldn't have miss the train."
 c3,B1.2,cond_third,B2.1,check,mcq,read,ct-B21-1a,built-in,cond_third | B2.1 | mcq | Choose the correct form: She would have passed the exam if she ___ harder. | had studied
-c3,B1.2,cond_third,B2.1,use,text,read,ct-B21-3a-r4,built-in,"cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine. | "
+c3,B1.2,cond_third,B2.1,use,text,read,ct-B21-3a-r5,built-in,"cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | "
 c3,B1.2,cond_third,B2.1,check,mcq,read,ct-B21-4a,built-in,"cond_third | B2.1 | mcq | Which sentence has a mistake? | If the team has been better prepared, we would have won."
 c3,B1.2,cond_third,B2.1,use,write,read,ct-B21-6a-r3,built-in,cond_third | B2.1 | write | Write one sentence about a decision that changed your life: imagine you had not made it. | 
 c3,B1.2,cond_third,B2.1,learn,gap,read,,learn-drag-4.csv:17,cond_third | B2.1 | gap | She would have passed the exam if she ___ ___ harder. | 
@@ -2797,7 +2797,7 @@ iq_wh,B1.2,ind_polite,B1.2,learn,match,read,,b1-cond-rep-1.csv:246,ind_polite | 
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,b1-cond-rep-1.csv:250,ind_polite | B1.2 | mcq | Which sentence is NOT correct? | Do you know what time does breakfast start?
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-1a,built-in,ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me how long the repair will take?
 iq_wh,B1.2,ind_polite,B2.1,learn,mcq,read,ip-B21-2a,built-in,ind_polite | B2.1 | mcq | What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?' | B is more polite and indirect.
-iq_wh,B1.2,ind_polite,B2.1,use,text,read,ip-B21-3a-r5,built-in,ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | 
+iq_wh,B1.2,ind_polite,B2.1,use,text,read,ip-B21-3a-r6,built-in,ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | 
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-4a-r2,built-in,ind_polite | B2.1 | mcq | Which sentence is NOT correct? | I'd like to know where did you go.
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-5a-r3,built-in,ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me when my order will be delivered.
 iq_wh,B1.2,ind_polite,B2.1,use,write,read,ip-B21-6a-r3,built-in,"ind_polite | B2.1 | write | Ask very politely, in one sentence, when the report will be ready. | "
@@ -3250,7 +3250,7 @@ rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-2.csv:14,rep_verbs | B2.2 | text
 rv_ing,B2.1,rep_verbs,B2.2,use,gap,read,,typical-b2c1-1.csv:20,rep_verbs | B2.2 | gap | My colleague suggested ___ a taxi to the airport. (take) | 
 rv_ing,B2.1,rep_verbs,B2.2,use,gap,read,,typical-b2c1-1.csv:37,rep_verbs | B2.2 | gap | The minister denied ___ the report before it was published. (see) | 
 rv_obj_to,B2.1,rep_verbs,B2.2,check,mcq,read,rv-C12-1a-r3,built-in,"rep_verbs | B2.2 | mcq | Which sentence reports this: 'If I were you, I'd take the earlier train.' | She advised me to take the earlier train."
-rv_obj_to,B2.1,rep_verbs,B2.2,use,text,read,rv-C12-3a-r6,built-in,"rep_verbs | B2.2 | text | Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.' | "
+rv_obj_to,B2.1,rep_verbs,B2.2,use,text,read,rv-C12-3a-r7,built-in,rep_verbs | B2.2 | text | Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.' | 
 rv_obj_to,B2.1,rep_verbs,B2.2,learn,gap,read,,learn-drag-3.csv:18,rep_verbs | B2.2 | gap | She advised me ___ ___ a second opinion before the operation. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,learn,gap,read,,learn-drag-3.csv:19,rep_verbs | B2.2 | gap | My colleague urged me ___ have the figures ___ before submitting the report. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,use,gap,read,,twins-1.csv:64,rep_verbs | B2.2 | gap | 'Don't sign anything until you've read it.' → The lawyer advised her ___. | 

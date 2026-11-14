@@ -158,7 +158,7 @@ P.mcq("B1.2", "Which sentence means he quit smoking?", "He stopped smoking.", ["
 P.mcq("B1.2", "In a letter: which sentence is NOT correct?", "She enjoys to cook for her friends.", ["She enjoys cooking for her friends.", "She loves to cook for her friends.", "She likes cooking for her friends."], b=4)
 P.mcq("B1.2", "Choose the correct option: She apologised for ___ late.", "being", ["to be", "be", "been"])
 # blind check round 1 (14 November): decide in italics; I've decided (the grader does not expand 've) and decide + that-clause accepted with a note
-P.text("A2.2", "Make a sentence with *decide*: I will go home early.", ["I decided to go home early.", "I have decided to go home early.", "I've decided to go home early.",
+P.text("A2.2", "Start with *I've decided*: I will go home early.", ["I decided to go home early.", "I have decided to go home early.", "I've decided to go home early.",
        "I've decided I'll go home early.", "I've decided that I'll go home early.", "I have decided that I will go home early.", "I have decided I will go home early.",
        "I decided that I would go home early.", "I decided I would go home early."], b=4)
 replaces("Make a sentence with decide: I will go home early.")

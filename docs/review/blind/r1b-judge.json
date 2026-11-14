@@ -1,0 +1,86 @@
+[
+ {
+  "id": "r1b-001",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Question: Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. Answers (replace the list): \"If I had seen the sign, I wouldn't have got a parking fine.\" / \"If I had seen the sign, I wouldn't have gotten a parking fine.\" / \"If I had seen the sign, I wouldn't have got a fine.\" / \"If I had seen the sign, I wouldn't have gotten a fine.\" / \"If I had seen the sign, I wouldn't have been fined.\" / \"If I had noticed the sign, I wouldn't have got a parking fine. :: Correct too: *noticed* = saw. :: Arī pareizi: *noticed* = pamanīju.\" / \"If I had noticed the sign, I wouldn't have got a fine. :: (same note)\" (the grader adds the other clause order and the contractions).",
+  "reason": "Two results (parked / got a fine) leave open how many go into the answer, so readers keep finding combinations after the round-1 additions (reader 2: instruction). One result closes it; this replaces r1-003's additions for that reason."
+ },
+ {
+  "id": "r1b-002",
+  "src": "built-in",
+  "decision": "ok",
+  "change": "",
+  "reason": "A gap task with the verbs in brackets needs no instruction line (the app's style); two verbs in brackets for two gaps show that a gap may take more than one word. r1-005's *might / could be* stay."
+ },
+ {
+  "id": "r1b-003",
+  "src": "built-in",
+  "decision": "ok",
+  "change": "",
+  "reason": "The reader accepts it; *if I worked* (yes/no pattern for a wh-question) is a real learner mistake and was chosen by r1-006 for error type IND-YESNO."
+ },
+ {
+  "id": "r1b-004",
+  "src": "built-in",
+  "decision": "ok",
+  "change": "",
+  "reason": "No instruction line is the app's gap style; the quote is the source being reported. *congratulate* + person + *on* + -ing is a reporting-verb pattern (Murphy Intermediate 62, 133), C1 relabelled B2.2. *for* is not added: *congratulate for* is found in standard use, so it would be a second correct answer."
+ },
+ {
+  "id": "r1b-005",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Question: Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.' Answers: keep only the *advised* answers (*advised me to see* / *advised that I (should) see* / *advised seeing* … about that cough / my cough) and add \"My sister advised me to see a doctor about the cough.\" / \"My sister advised me to go to the doctor about that cough.\" / \"My sister advised me to go to the doctor about my cough.\" Note on *advised that I (should) see* and *advised seeing*: \"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*. :: Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*.\" Why: \"*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*\"",
+  "reason": "Both readers: *Say what my sister did* does not ask for a reporting verb, so every paraphrase (*said I should*, *go to the doctor*) is correct and the list never closes; naming the verb keeps the point (the pattern after *advise*) and closes it."
+ },
+ {
+  "id": "r1b-006",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Add answers: \"Could you tell me why my order hasn't arrived?\" / \"Could you please tell me why my order hasn't arrived?\" / \"Could you tell me why my order hasn't arrived, please?\" / \"Could you tell me why my order hasn't arrived yet?\" (same meaning, no note).",
+  "reason": "Both readers wrote *my order*; a natural, correct choice of the customer, refused."
+ },
+ {
+  "id": "r1b-008",
+  "src": "a2-rel-might-1.csv:16",
+  "decision": "fix",
+  "change": "Question: Join with *which*: We visited a museum. It has a collection of old cars. Answers: the same four with *a collection of old cars* (which / that + has / had; keep r1-029's note on *had*).",
+  "reason": "Both readers: *a museum which has old cars* is not natural; *has a collection of* is what a native says and keeps the A2 relative clause."
+ },
+ {
+  "id": "r1b-009",
+  "src": "a2-rel-might-1.csv:17",
+  "decision": "fix",
+  "change": "Add answers: \"The app, which helps me learn new words, is free.\" / \"The app, which helps me to learn new words, is free.\" / \"The app, which is free, helps me to learn new words.\" with note \"Correct too: with commas the clause only adds information about the one app. :: Arī pareizi: ar komatiem palīgteikums tikai pievieno informāciju par šo vienu lietotni.\"",
+  "reason": "Both clause choices are already accepted (no instruction change needed), but the commas version with *which helps me learn* is correct (reader 1) and refused. Level: a clause inside the subject is A2 in Murphy Essential Grammar (r1-030)."
+ },
+ {
+  "id": "r1b-010",
+  "src": "a2-rel-might-1.csv:26",
+  "decision": "ok",
+  "change": "",
+  "reason": "A learning task (role learn): matching by meaning is acceptable, and no two endings can be swapped (people take *who*, things *which*). *travels for fun* is a fair A2 definition."
+ },
+ {
+  "id": "r1b-012",
+  "src": "a2-rel-might-1.csv:40",
+  "decision": "fix",
+  "change": "Add answers: \"The concert tickets might already be sold out. :: Correct too: *already* adds 'by now'. :: Arī pareizi: *already* = jau.\" / \"The concert might be sold out.\" (same meaning, no note).",
+  "reason": "Both readers wrote *might already be*; reader 2 *The concert might be sold out*; both are correct rewrites with *might*, refused."
+ },
+ {
+  "id": "r1b-013",
+  "src": "a2-rel-might-1.csv:51",
+  "decision": "fix",
+  "change": "Right cards: *Yes, I'm sure.* -> *Definitely.*; *Yes, perhaps.* -> *Perhaps.*; *No, I'm sure.* -> *Definitely not.*; *Perhaps not.* stays. Pairs: She'll call. = Definitely. | She might call. = Perhaps. | She won't call. = Definitely not. | She might not call. = Perhaps not.",
+  "reason": "Both readers: *No, I'm sure.* reads as a reply, not a meaning. *Definitely / Perhaps (not)* are clear, and no two can be swapped."
+ },
+ {
+  "id": "r1b-014",
+  "src": "b1-new-3.csv:144",
+  "decision": "fix",
+  "change": "Question: Start with *I've decided*: I will go home early. Answers unchanged (the *I've / I have decided* ones fit; the *I decided* ones are harmless).",
+  "reason": "Both readers: *Make a sentence with decide* leaves the tense open and allows *I will decide to go home early*. The start fixes the tense and leaves the pattern (*decided to go*) to the learner; r1-067's answers stay."
+ }
+]

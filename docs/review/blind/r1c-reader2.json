@@ -1,0 +1,74 @@
+[
+ {
+  "id": "r1c-001",
+  "answer": "If I had seen the sign, I wouldn't have got a parking fine.",
+  "other_correct": ["If I had seen the sign, I wouldn't have gotten a parking fine.", "If I had seen the sign, I would not have got a parking fine.", "If I had noticed the sign, I wouldn't have got a parking fine."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-002",
+  "answer": "My sister advised me to see a doctor about my cough.",
+  "other_correct": ["My sister advised me to see a doctor about that cough.", "My sister advised me to really see a doctor about my cough.", "My sister advised me that I should see a doctor about my cough.", "My sister advised me that I should really see a doctor about my cough."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'that cough' may be kept or changed to 'my cough', and 'really' may be dropped or kept; the checker must accept all of these."
+ },
+ {
+  "id": "r1c-003",
+  "answer": "Could you tell me why the order hasn't arrived?",
+  "other_correct": ["Could you tell me why the order has not arrived?", "Could you tell me why the order hasn't arrived yet?"],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Indirect questions are usually taught at B1. This is quite easy for B2.1 but acceptable as revision.",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-004",
+  "answer": "We visited a museum which has a collection of old cars.",
+  "other_correct": ["We visited a museum, which has a collection of old cars.", "We visited a museum which had a collection of old cars.", "The museum which we visited has a collection of old cars."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The instruction does not say which sentence should become the relative clause, so 'The museum which we visited has...' is also a valid join.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-005",
+  "answer": "The app which helps me learn new words is free.",
+  "other_correct": ["The app, which helps me learn new words, is free.", "The app which is free helps me learn new words.", "The app, which is free, helps me learn new words.", "The app which helps me to learn new words is free."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "This is ambiguous. Either sentence can become the relative clause ('The app which is free helps me learn new words' is equally correct), and the learner has no way to tell which one is expected.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-006",
+  "answer": "The concert tickets might be sold out.",
+  "other_correct": ["The concert tickets might have sold out."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-007",
+  "answer": [["She'll call.", "Definitely."], ["She might call.", "Perhaps."], ["She won't call.", "Definitely not."], ["She might not call.", "Perhaps not."]],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'She'll call' = 'Definitely' overstates it, because 'will' is a confident prediction, not a certainty. This is acceptable as an A2 simplification."
+ },
+ {
+  "id": "r1c-008",
+  "answer": "I've decided to go home early.",
+  "other_correct": ["I've decided that I will go home early.", "I've decided I'll go home early.", "I've decided that I'll go home early.", "I've decided I will go home early."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The instruction does not mention the target structure (decide + to-infinitive), so a correct 'that'-clause with 'will' cannot be ruled out. Adding 'Use to + verb' or giving a gap '(go)' would fix it.",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

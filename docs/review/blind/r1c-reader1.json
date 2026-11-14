@@ -1,0 +1,74 @@
+[
+ {
+  "id": "r1c-001",
+  "answer": "If I had seen the sign, I wouldn't have got a parking fine.",
+  "other_correct": ["If I'd seen the sign, I wouldn't have got a parking fine.", "If I had seen the sign, I would not have got a parking fine.", "If I had seen the sign, I wouldn't have gotten a parking fine. (US, common usage)", "If I had seen the sign, I wouldn't have been given a parking fine.", "If I had seen the sign, I wouldn't have had to pay a parking fine."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-002",
+  "answer": "My sister advised me to see a doctor about my cough.",
+  "other_correct": ["My sister advised me to see a doctor about that cough.", "My sister advised me to see a doctor about the cough.", "My sister advised me that I should see a doctor about my cough.", "My sister advised me to go and see a doctor about my cough."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The source keeps 'that cough'; in reported speech 'my cough' is the natural shift, so the key should accept my/the/that cough.",
+  "level_problem": "advise + object + to-infinitive is B1/B2.1 material; a bit easy for B2.2.",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-003",
+  "answer": "Could you tell me why the order hasn't arrived?",
+  "other_correct": ["Could you tell me why the order has not arrived?", "Could you tell me why my order hasn't arrived? (only if the learner changes the article; not strictly required)"],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-004",
+  "answer": "We visited a museum which has a collection of old cars.",
+  "other_correct": ["We visited a museum, which has a collection of old cars."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Joining with a relative clause makes it a two-clause sentence, which is more B1 than A2.2.",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-005",
+  "answer": "The app which helps me learn new words is free.",
+  "other_correct": ["The app, which helps me learn new words, is free.", "The app which is free helps me learn new words.", "The app, which is free, helps me learn new words.", "The app which helps me to learn new words is free."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Unclear which sentence should become the relative clause; both embeddings are correct, so the key must accept both.",
+  "level_problem": "A relative clause embedded in the middle of the subject is hard for A2.2; the commas question (defining vs non-defining) is beyond the level.",
+  "sense_problem": "Without context, 'The app which helps me learn new words is free' sounds as if there are several apps; the non-defining version with commas is more natural."
+ },
+ {
+  "id": "r1c-006",
+  "answer": "The concert tickets might be sold out.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1c-007",
+  "answer": [["She'll call.", "Definitely."], ["She might call.", "Perhaps."], ["She won't call.", "Definitely not."], ["She might not call.", "Perhaps not."]],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Minor: 'will' is a prediction rather than a certainty, so 'Definitely.' slightly overstates it, but it is a usual teaching simplification."
+ },
+ {
+  "id": "r1c-008",
+  "answer": "I've decided to go home early.",
+  "other_correct": ["I have decided to go home early.", "I've decided that I'll go home early.", "I've decided I'll go home early.", "I've decided that I will go home early."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The checker does not expand 've, so 'I have decided to go home early.' may be rejected; it is correct and should be accepted. 'I've decided I'll go home early' is also correct, so the task does not force the to-infinitive.",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

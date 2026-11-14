@@ -37,6 +37,42 @@ final class Content
         return self::$items;
     }
 
+    /** The grammar map (content/map.php, made by authoring/build.py from docs/GRAMMAR-MAP*): points with level and prerequisites, and each task's point. */
+    public static function map(): array
+    {
+        static $m = null;
+        if ($m === null) { $f = __DIR__ . '/../content/map.php'; $m = is_file($f) ? (require $f) : ['points' => [], 'builtin' => [], 'tasks' => []]; }
+        return $m;
+    }
+
+    /** The key of a task in the map, as docs/grammar-map-src and app/tests/item_gates_test.py write it, without the level. */
+    public static function mapKey(array $it): string
+    {
+        $body = '';
+        if (isset($it['correct']) && is_string($it['correct']) && $it['correct'] !== '') $body = $it['correct'];
+        elseif (!empty($it['sentence'])) $body = (string) $it['sentence'];
+        elseif (!empty($it['pairs'])) $body = implode(' ; ', array_map(fn($p) => $p[0] . ' = ' . $p[1], $it['pairs']));
+        return implode(' | ', [(string) $it['skill'], (string) $it['kind'], (string) ($it['q'] ?? ''), $body]);
+    }
+
+    /** The grammar point of a task (14 November, C1), or null when the map does not know the task. */
+    public static function point(?array $it): ?string
+    {
+        if (!$it) return null;
+        $m = self::map();
+        $base = preg_replace('/-r\d+$/', '', (string) ($it['id'] ?? ''));
+        return $m['builtin'][$base] ?? $m['tasks'][self::mapKey($it)] ?? null;
+    }
+
+    /** One point of the map: level, needs (prerequisite points), name, topics; null for an unknown id. */
+    public static function mapPoint(string $id): ?array
+    {
+        return self::map()['points'][$id] ?? null;
+    }
+
+    /** Tests only: read the bank again (after prepared tasks were imported into the test database). */
+    public static function reset(): void { self::$items = null; self::$byId = []; }
+
     /** Tests only: add tasks to the loaded bank. */
     public static function addTest(array $tasks): void
     {

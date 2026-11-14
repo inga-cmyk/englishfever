@@ -9,7 +9,7 @@ require 'src/Auth.php';
 spl_autoload_register(function ($c) { $f = 'src/' . $c . '.php'; if (is_file($f)) require_once $f; });
 Config::load(); Db::connect(['driver' => 'sqlite', 'sqlite' => ':memory:']); Db::migrate();
 $items = [];
-foreach (Content::items() as $it) { $it['role'] = Content::role($it); $it['src'] = 'built-in'; $items[] = $it; }
+foreach (Content::items() as $it) { $it['role'] = Content::role($it); $it['point'] = Content::point($it); $it['src'] = 'built-in'; $items[] = $it; }
 $src = []; $bad = 0;
 foreach (CustomItems::preparedFiles() as $name => $path) {
     $r = CustomItems::import((string) file_get_contents($path), true);
@@ -17,7 +17,7 @@ foreach (CustomItems::preparedFiles() as $name => $path) {
     foreach ($r['rows'] as $x) if (!empty($x['id'])) $src[$x['id']] = $name . ':' . $x['line'];
 }
 foreach (Db::all('SELECT item_id FROM custom_items ORDER BY id') as $r) {
-    $it = CustomItems::find($r['item_id']); $it['role'] = Content::role($it); $it['src'] = $src[$r['item_id']] ?? '?'; $items[] = $it;
+    $it = CustomItems::find($r['item_id']); $it['role'] = Content::role($it); $it['point'] = Content::point($it); $it['src'] = $src[$r['item_id']] ?? '?'; $items[] = $it;
 }
 // a typed sentence with "I had done" / "I would": is the same answer with 'd graded right? (the key must list it when the checker cannot work it out)
 foreach ($items as &$it) {

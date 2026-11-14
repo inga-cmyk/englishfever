@@ -114,8 +114,12 @@ def g_long_frame(i):   # 13 November: "Choose the correct option" needs no story
     return []
 
 
+def g_point(i):   # 14 November (C1): the app knows the grammar point of every task (content/map.php); a new task gets its point when it is written
+    return [] if i.get("point") else ["no grammar point: add the task to docs/grammar-map-src/assign_keys.json, run export.py, then app/authoring/build.py"]
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point}
 
 
 def key(i):

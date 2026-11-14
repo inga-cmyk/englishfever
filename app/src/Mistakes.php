@@ -188,10 +188,22 @@ final class Mistakes
      * $code: prefer tasks for this kind of mistake. $maxScaffold / $minScaffold: prefer tasks with at most / at least this much
      * independence (Content::scaffold), so an easier task follows a miss and the same support comes back later.
      */
-    public static function twin(int $uid, string $mistakeId, array $exclude, bool $angle = false, ?array $levels = null, ?string $code = null, ?int $maxScaffold = null, ?int $minScaffold = null): ?array
+    public static function twin(int $uid, string $mistakeId, array $exclude, bool $angle = false, ?array $levels = null, ?string $code = null, ?int $maxScaffold = null, ?int $minScaffold = null, ?string $point = null): ?array
     {
         $m = Content::item($mistakeId);
         if (!$m) return null;
+        // the grammar map (14 November, C2): first a task of the same point (been / gone after been / gone, not any present perfect task);
+        // only when the point has no other task does the old choice by topic apply
+        if ($point !== null) {
+            $same = self::twinPick($uid, $m, $mistakeId, $exclude, $angle, $levels, $code, $maxScaffold, $minScaffold, $point);
+            if ($same) return $same;
+        }
+        return self::twinPick($uid, $m, $mistakeId, $exclude, $angle, $levels, $code, $maxScaffold, $minScaffold, null);
+    }
+
+    /** The task of the same kind of mistake with the lowest cost; $only = a grammar point the task must have. */
+    private static function twinPick(int $uid, array $m, string $mistakeId, array $exclude, bool $angle, ?array $levels, ?string $code, ?int $maxScaffold, ?int $minScaffold, ?string $only): ?array
+    {
         $paused = Reports::pausedIds();
         $seen = [];
         foreach (Db::all('SELECT item_id, COUNT(1) AS c FROM attempts WHERE user_id = ? GROUP BY item_id', [$uid]) as $r) $seen[$r['item_id']] = (int) $r['c'];
@@ -203,6 +215,7 @@ final class Mistakes
             if (!self::sameConstruction($m, $it) || Content::role($it) === 'learn') continue;
             if ($levels && !in_array($it['level'], $levels, true)) continue;
             if ($it['kind'] === 'write' && $m['kind'] !== 'write') continue;   // open writing never stands in for a short task
+            if ($only !== null && Content::point($it) !== $only) continue;
             $cost = (isset($seen[$it['id']]) ? 0.8 * min(3, $seen[$it['id']]) : 0)
                 + ($angle ? ($it['kind'] === $m['kind'] ? 0.3 : 0) : ($it['kind'] === $m['kind'] ? 0 : 0.3)) + abs($it['bloom'] - $m['bloom']) * 0.2 + random_int(0, 30) / 100;
             if ($code !== null && !in_array($code, $it['err'] ?? [], true)) $cost += 0.6;
@@ -212,6 +225,30 @@ final class Mistakes
             $sc = Content::scaffold($it);
             if ($maxScaffold !== null && $sc > $maxScaffold) $cost += 1.0 * ($sc - $maxScaffold);
             if ($minScaffold !== null && $sc < $minScaffold) $cost += 1.0 * ($minScaffold - $sc);
+            if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
+        }
+        return $best;
+    }
+
+    /**
+     * After a second wrong answer in one grammar point (14 November, C2): one task from a point it stands on (its "needs" in the map)
+     * that has tasks at the learner's level or below. A task that needs the form (not a learning task), not open writing, not seen
+     * in this session; the first prerequisite in the map's order is preferred, then a task the learner has met least. Null if none.
+     */
+    public static function needsTask(int $uid, string $point, array $exclude, string $maxLevel): ?array
+    {
+        $p = Content::mapPoint($point);
+        if (!$p || !$p['needs']) return null;
+        $order = array_flip($p['needs']);
+        $paused = Reports::pausedIds();
+        $seen = [];
+        foreach (Db::all('SELECT item_id, COUNT(1) AS c FROM attempts WHERE user_id = ? GROUP BY item_id', [$uid]) as $r) $seen[$r['item_id']] = (int) $r['c'];
+        $best = null; $bestCost = PHP_FLOAT_MAX;
+        foreach (Content::items() as $it) {
+            $pt = Content::point($it);
+            if ($pt === null || !isset($order[$pt]) || isset($exclude[$it['id']]) || isset($paused[$it['id']])) continue;
+            if (self::levelIdx($it['level']) > self::levelIdx($maxLevel) || Content::role($it) === 'learn' || $it['kind'] === 'write' || !empty($it['practice_only'])) continue;
+            $cost = $order[$pt] * 0.5 + (isset($seen[$it['id']]) ? 0.8 * min(3, $seen[$it['id']]) : 0) + random_int(0, 30) / 100;
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }
         return $best;

@@ -5,6 +5,9 @@ final class Engine
 {
     public const PLACEMENT_LEN = 24;
     private const LEVELS = ['A2.1', 'A2.2', 'B1.1', 'B1.2', 'B2.1', 'B2.2'];
+
+    /** The levels of the app, lowest first (tests). */
+    public static function levels(): array { return self::LEVELS; }
     public const PLACEMENT_SIZES = [12, 24, 40];
     /** Share of each question type in a practice session, per 10: 3 choose, 4 drag (order, word bank, matching), 2 type a word or words, 1 type the whole sentence. Open writing is rare on purpose. */
     /** Topics with the mistakes Latvian adults make most (he work, no article, I have seen yesterday, What you want?, in Monday, listen music, will after when, if I would, must to ...). */
@@ -219,7 +222,7 @@ final class Engine
         $prev = Db::one('SELECT COUNT(1) AS c, (SELECT correct FROM attempts WHERE user_id = ? AND item_id = ? ORDER BY id DESC LIMIT 1) AS last FROM attempts WHERE user_id = ? AND item_id = ?', [$uid, $itemId, $uid, $itemId]);
         $seen = (int) ($prev['c'] ?? 0);
         $why = !empty($ses['bonus']) || (isset($st['bonus_from']) && count($st['served']) > $st['bonus_from']) ? 'bonus'
-            : (!empty($st['comeback']) ? 'second_chance' : ($seen === 0 ? 'new' : ((int) $prev['last'] === 1 ? 'again_after_right' : 'again_after_wrong')));
+            : (!empty($st['comeback']) ? 'second_chance' : ($st['why'][$itemId] ?? ($seen === 0 ? 'new' : ((int) $prev['last'] === 1 ? 'again_after_right' : 'again_after_wrong'))));   // same_point / needs_point: chosen by the grammar map after a mistake (14 November)
         static $ver = null; $ver ??= (string) ((@include __DIR__ . '/version.php')['version'] ?? '');
         $lang = (string) (Db::val('SELECT lang FROM users WHERE id = ?', [$uid]) ?? '');
         Db::insert('attempts', [
@@ -459,10 +462,21 @@ final class Engine
         if (!$placement && !empty($st['probes'])) {
             foreach ($st['probes'] as $i => $p) {
                 if (!empty($p['done']) || !empty($p['served']) || $count < $p['due']) continue;
-                $t = Mistakes::twin((int) $ses['user_id'], $p['for'], $served, $p['stage'] > 1, $st['levels'] ?? null, $p['code'] ?? null, $p['max_scaffold'] ?? null, $p['min_scaffold'] ?? null);
+                $point = $p['point'] ?? null;
+                if ($p['stage'] === 3) {   // a second wrong answer in this point: one task from a point it stands on (14 November, C2)
+                    $lv = $ses['level'] ?? null;
+                    $miss = Content::item($p['for']);
+                    if (!$lv || !in_array($lv, self::LEVELS, true)) $lv = $miss['level'] ?? 'B2.2';
+                    $t = $point !== null ? Mistakes::needsTask((int) $ses['user_id'], $point, $served, $lv) : null;
+                } else {
+                    $t = Mistakes::twin((int) $ses['user_id'], $p['for'], $served, $p['stage'] > 1, $st['levels'] ?? null, $p['code'] ?? null, $p['max_scaffold'] ?? null, $p['min_scaffold'] ?? null, $point);
+                }
                 if ($t) {
                     $ses['state']['probes'][$i]['served'] = true;
                     $ses['state']['probes'][$i]['item'] = $t['id'];
+                    // why it was served, for the research export: the same grammar point, or a point it stands on
+                    if ($p['stage'] === 3) $ses['state']['why'][$t['id']] = 'needs_point';
+                    elseif ($point !== null && Content::point($t) === $point) $ses['state']['why'][$t['id']] = 'same_point';
                     return $t;
                 }
                 $ses['state']['probes'][$i]['done'] = true;   // no such task: nothing to ask
@@ -748,7 +762,7 @@ final class Engine
         if ($codes && $code === null) return;   // every kind of mistake in this task was already tried twice in this session
         if ($code !== null && count(array_filter($probes, fn($p) => ($p['code'] ?? null) === $code)) >= 2) return;
         $sc = Content::scaffold($item);
-        $st['probes'][] = ['for' => $itemId, 'code' => $code, 'stage' => 1, 'due' => $served, 'max_scaffold' => max(0, $sc - 1)];
+        $st['probes'][] = ['for' => $itemId, 'code' => $code, 'stage' => 1, 'due' => $served, 'max_scaffold' => max(0, $sc - 1), 'point' => Content::point($item)];
     }
 
     /**
@@ -763,7 +777,9 @@ final class Engine
             $st['probe_log'][] = ['for' => $p['for'], 'item' => $itemId, 'stage' => $p['stage'], 'ok' => $ok];
             $code = $p['code'] ?? null;
             if (!$ok) {
-                if ($code !== null) $st['stuck'][$code] = true;
+                if ($code !== null && $p['stage'] !== 3) $st['stuck'][$code] = true;
+                // the second wrong answer in this point: next, one task from a point it stands on (14 November, C2)
+                if ($p['stage'] === 1 && !empty($p['point']) && Content::point(Content::item($itemId)) === $p['point'] && count($st['probes']) < max(2, intdiv((int) $ses['target_len'], 3))) $st['probes'][] = ['for' => $p['for'], 'code' => null, 'stage' => 3, 'due' => count($st['served']), 'point' => $p['point']];
                 return $p['stage'] === 1;
             }
             if ($p['stage'] === 1) {

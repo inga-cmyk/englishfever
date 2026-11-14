@@ -8,6 +8,7 @@ php tools/dump_items.php $GM_WORK/items.json     # every task as the importer re
 python3 docs/grammar-map-src/check.py            # ids, prerequisites, levels, cycles: must print no UNKNOWN / NEED LATER / CYCLE
 python3 docs/grammar-map-src/gaps.py             # writes GRAMMAR-MAP.md and GRAMMAR-MAP-GAPS.md
 python3 docs/grammar-map-src/export.py           # writes GRAMMAR-MAP.json, GRAMMAR-MAP-TASKS.csv, docs/review/*.csv
+python3 app/authoring/build.py                 # the app reads the map: app/content/map.php (run it after export.py)
 python3 docs/grammar-map-src/page.py             # writes $GM_WORK/gramatikas-karte.html (the page Inga opens)
 ```
 

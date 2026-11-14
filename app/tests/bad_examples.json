@@ -389,5 +389,24 @@
  {
   "what": "A word order where an article card can move to another noun (report of 14 November)",
   "reader": "'if you add salt the soup tastes better': the cards also give 'if you add the salt, soup tastes better', which is correct. Move every the / a card to each other noun and read the sentence; accept what is correct or change the sentence."
+ },
+ {
+  "what": "A new task without a grammar point (14 November, C1): the app could not choose the next task from the same point",
+  "gate": "point",
+  "task": {
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "kind": "gap",
+   "q": "I ___ never ___ to Japan. (be)",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "been"
+    ]
+   ],
+   "src": "example"
+  }
  }
 ]

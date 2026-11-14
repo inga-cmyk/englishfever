@@ -361,7 +361,8 @@ skipped      1 = "I don't know" (counted as wrong in correct).
              The columns below are recorded from 1 November 2026; older rows have them empty.
 exposure     1 = the first time this learner met this task, 2 = the second time ... (use exposure 1 for learning curves).
 served_why   new | again_after_wrong (the task came back after a mistake) | again_after_right (no new task was left) |
-             second_chance | bonus.
+             second_chance | bonus | same_point (from the upload after 14 Nov 2026: after a mistake, a task of the same
+             grammar point in another sentence) | needs_point (after a second mistake in that point: a task of a point it stands on).
 source       where the session was started (as in events.csv).   lang   explanation language set then (en / lv).
 feedback_seconds  time from the feedback to Next on this task (reading the explanation); empty for the last task of a session.
 app_version  the app version then; content and rules change between versions (docs/CHANGELOG-practice-app.md).

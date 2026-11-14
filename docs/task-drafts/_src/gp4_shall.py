@@ -2,28 +2,30 @@
 Murphy unit 22 (will/shall 2: Shall I …? Shall we …? to ask somebody's opinion, in offers and suggestions; shall is used
 with I and we) and unit 21 (I'll … for an offer as a statement). Should I …? / Can I …? / Could I …? / Do you want me to …?
 are also correct offers and Let's … / Why don't we …? correct suggestions: they are never a wrong option, and no typed gap
-here has shall itself as the answer (the gaps are the verb after shall or the question word, so every answer is fixed)."""
+here has shall itself as the answer (the gaps are the verb after shall or the question word, so every answer is fixed).
+The word orders are all question-word questions: plain() turns 'to make a question' into 'Put the words in order.', and the
+cards of a yes/no question (shall i carry your bag) would also make a correct statement (I shall carry your bag)."""
 from lib import gp, od, mc, tx, mt, learning_task
 T = "Future: will, going to, present continuous"
 L = "A2.1"
 
 
 def base(ok, bad):
-    """After shall: the base verb."""
+    """After shall: the base verb (the Latvian line shows to / -ing in the wrong example only: a bare 'to' reads as Latvian)."""
     return (f"After *shall* comes the base verb, without *to* or *-ing*: *{ok}* (not *{bad}*).",
-            f"Aiz *shall* ir pamatforma bez *to* un bez *-ing*: *{ok}* (nevis *{bad}*).")
+            f"Aiz *shall* lieto pamatformu: *{ok}* (nevis *{bad}*).")
 
 
 def offer(ok):
     """Shall I …? as an offer."""
     return (f"*Shall I…?* offers to do something for somebody: *{ok}* We don't use *Will I…?* or *Do I…?* for an offer.",
-            f"*Shall I…?* piedāvā kaut ko izdarīt citam cilvēkam: *{ok}* Piedāvājumam nelieto *Will I…?* vai *Do I…?*.")
+            f"*Shall I…?* piedāvā palīdzību: *{ok}* Piedāvājumam nelieto *Will I…?* vai *Do I…?*.")
 
 
 def sugg(ok):
     """Shall we …? as a suggestion."""
     return (f"*Shall we…?* suggests doing something together: *{ok}* *Will we…?* and *Do we…?* ask about facts or the future; they don't make a suggestion.",
-            f"*Shall we…?* ierosina kaut ko darīt kopā: *{ok}* *Will we…?* un *Do we…?* jautā par faktiem vai nākotni; ierosinājumam tos nelieto.")
+            f"*Shall we…?* ir ierosinājums darīt kaut ko kopā: *{ok}* *Will we…?* un *Do we…?* jautā par faktiem vai nākotni; ierosinājumam tos nelieto.")
 
 
 def wh(ok, bad):
@@ -46,25 +48,25 @@ mc(T, L, 2, "Which sentence is correct?", "Where shall we have lunch?",
 mc(T, L, 2, "Which sentence is NOT correct?", "Shall we to meet at six?",
    ["Shall I turn off the music?", "Where shall we sit?", "What shall we buy for Tom?"],
    "After *shall* comes the base verb, without *to*: *Shall we meet at six?* The others are correct: an offer (*Shall I…?*) and two questions with *Where / What shall we…?*.",
-   "Aiz *shall* ir pamatforma bez *to*: *Shall we meet at six?* Pārējie teikumi ir pareizi: piedāvājums (*Shall I…?*) un divi jautājumi ar *Where / What shall we…?*.")
+   "Aiz *shall* lieto pamatformu bez *to*: *Shall we meet at six?* Pārējie teikumi ir bez kļūdām: piedāvājums (*Shall I…?*) un divi jautājumi ar *Where / What shall we…?*.")
 mc(T, L, 2, "Which sentence is NOT correct?", "Shall you call me later?",
    ["Shall we walk home?", "What time shall we leave?", "Shall I order a pizza?"],
    "In questions *shall* goes with *I* and *we* only. To ask somebody to do something, say *Can you…?* or *Will you…?*: *Can you call me later?*",
-   "Jautājumos *shall* lieto tikai ar *I* un *we*. Lai palūgtu otram kaut ko izdarīt, saka *Can you…?* vai *Will you…?*: *Can you call me later?*")
+   "Jautājumos *shall* lieto vienīgi ar *I* un *we*. Lai kādu palūgtu kaut ko izdarīt, saka *Can you…?* vai *Will you…?*: *Can you call me later?*")   # Murphy 22: shall with I and we
 mc(T, L, 2, "A friend asks: 'Shall I make you a sandwich?' Choose the correct answer.", "Yes, please.",
    ["Yes, you shall.", "Yes, I shall.", "Yes, you will."],
    "To accept an offer, say *Yes, please.* (or *No, thanks.* to say no). We don't answer *Shall I…?* with a short answer with *shall* or *will*.",
-   "Pieņemot piedāvājumu, saka *Yes, please.* (atsakot *No, thanks.*). Uz *Shall I…?* neatbild ar īso atbildi ar *shall* vai *will*.")
+   "Pieņemot piedāvājumu, saka *Yes, please.* Īsā atbilde ar *shall* vai *will* šeit nav iespējama.")
 
-# ---------- word order (5) ----------
-od(T, L, 3, "Put the words in order to make a question.", "shall i carry your bag",
-   *offer("Shall I carry your bag?"))
-od(T, L, 3, "Put the words in order to make a question.", "shall we take the train or the bus",
-   *sugg("Shall we take the train or the bus?"), also=["shall we take the bus or the train"])
+# ---------- word order (5): question-word questions, no statement can be built from the cards ----------
+od(T, L, 3, "Put the words in order to make a question.", "what shall i bring to the party",
+   *wh("What shall I bring to the party?", "What I shall bring…?"))
 od(T, L, 3, "Put the words in order to make a question.", "how shall we get to the airport",
    *wh("How shall we get to the airport?", "How we shall get…?"))
-od(T, L, 3, "Put the words in order to make a question.", "shall i send you the photos",
-   *offer("Shall I send you the photos?"))
+od(T, L, 3, "Put the words in order to make a question.", "where shall i put these boxes",
+   *wh("Where shall I put these boxes?", "Where I shall put…?"))
+od(T, L, 3, "Put the words in order to make a question.", "which bus shall we take",
+   *wh("Which bus shall we take?", "Which bus we shall take?"))
 od(T, L, 3, "Put the words in order to make a question.", "what time shall we start the meeting",
    *wh("What time shall we start the meeting?", "What time we shall start…?"))
 
@@ -83,7 +85,7 @@ mt(T, L, 2, "Match each question with its answer.",
    [("Shall I open the window?", "Yes, please. It's hot in here."), ("Where shall we meet?", "Outside the cinema."),
     ("What shall we have for dinner?", "Fish and rice."), ("When shall I call you?", "After six. I'm at work till then.")],
    "Answer an offer (*Shall I…?*) with *Yes, please* or *No, thanks*. *Where / What / When shall we…?* asks for an idea: answer with a place, a thing or a time.",
-   "Uz piedāvājumu (*Shall I…?*) atbild *Yes, please* vai *No, thanks*. *Where / What / When shall we…?* prasa ideju: atbild ar vietu, lietu vai laiku.")
+   "Uz piedāvājumu (*Shall I…?*) atbild ar *Yes, please*. *Where / What / When shall we…?* jautā pēc ierosinājuma: atbildē ir vieta, ēdiens vai laiks.")
 
 # ---------- typed gap (5): the verb after shall, or the question word ----------
 gp(T, L, 3, "It's raining. Shall we ___ a taxi? (take)", "take",
@@ -101,7 +103,7 @@ gp(T, L, 3, "We're free tonight. What shall we ___? (do)", "do",
 tx(T, L, 4, "Say it another way with *Shall I*: Do you want me to book a table?",
    "Shall I book a table? | Shall I book a table for you? | Shall I book a table for us?",
    "*Shall I…?* means *Do you want me to…?* After *shall* comes the base verb, without *to*: *Shall I book a table?*",
-   "*Shall I…?* nozīmē *Do you want me to…?* Aiz *shall* ir pamatforma bez *to*: *Shall I book a table?*")
+   "*Shall I…?* nozīmē *Do you want me to…?* Aiz *shall* lieto pamatformu bez *to*: *Shall I book a table?*")
 tx(T, L, 4, "Make a question with *Where*: Shall we go to Italy this summer?",
    "Where shall we go this summer? | Where shall we go?",
    *wh("Where shall we go this summer?", "Where we shall go…?"))

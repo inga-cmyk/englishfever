@@ -8,10 +8,10 @@ L = "A2.2"
 
 NL_POS = ("*no longer* goes before the main verb, and the verb stays positive: *He no longer plays the guitar.*",
           "*no longer* liek pirms darbības vārda, un darbības vārds nav noliegumā: *He no longer plays the guitar.*")
-NL_BE = ("With *be*, *no longer* goes after it: *This app is no longer free.*",
-         "Ja teikumā ir *be*, *no longer* liek aiz tā: *This app is no longer free.*")
-AM = ("*any more* (or *any longer*) goes at the end, after a negative verb: *My grandfather doesn't drive any more.*",
-      "*any more* (vai *any longer*) liek teikuma beigās, ja darbības vārds ir noliegumā: *My grandfather doesn't drive any more.*")
+NL_BE = ("With *be*, *no longer* goes after it: *We're no longer in the same team.*",
+         "Ja teikumā ir *be*, *no longer* liek aiz tā: *We're no longer in the same team.*")
+AM = ("*any more* (or *any longer*) goes at the end, after a negative verb: *I don't drive to work any more.*",
+      "*any more* (vai *any longer*) liek teikuma beigās, ja darbības vārds ir noliegumā: *I don't drive to work any more.*")
 ONE_NEG = ("Only one negative: *no longer* + a positive verb, or *don't* ... *any more* at the end. Not *don't ... no more*.",
            "Tulkojot burtiski *vairs ne...*, sanāk divkāršs noliegums (*I don't live there no more*). Angliski lieto vienu noliegumu: *I no longer live there* vai *I don't live there any more*.")
 
@@ -70,11 +70,12 @@ tx(T, L, 4, "Say it another way with *any more*: Ben no longer studies Spanish."
    "*no longer studies* = *doesn't study* ... *any more*: darbības vārds ir noliegumā, un *any more* liek beigās.")
 
 # word order (5): no longer at the end (I drink coffee no longer) is literary, not accepted; any more only at the end
+# subjects with a contraction or I, so the cards do not also make a question (is this app no longer free?)
 od(T, L, 3, "Put the words in order.", "i no longer drink coffee", *NL_POS)
-od(T, L, 3, "Put the words in order.", "this app is no longer free", *NL_BE)
-od(T, L, 3, "Put the words in order.", "my grandfather doesn't drive any more", *AM)
-od(T, L, 3, "Put the words in order.", "she no longer works for us", *NL_POS)
-od(T, L, 3, "Put the words in order.", "he isn't my neighbour any longer", *AM)
+od(T, L, 3, "Put the words in order.", "we're no longer in the same team", *NL_BE)
+od(T, L, 3, "Put the words in order.", "my old printer no longer works", *NL_POS)
+od(T, L, 3, "Put the words in order.", "i don't drive to work any more", *AM)
+od(T, L, 3, "Put the words in order.", "he's not my neighbour any longer", *AM)
 
 # word bank (4): the wrong chips are the mistakes of this point (no more, any more in the wrong place, a positive verb)
 gp(T, L, 3, "She is ___ my teacher.", "no longer",

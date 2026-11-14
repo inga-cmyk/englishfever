@@ -6083,7 +6083,7 @@ return json_decode(<<<'EF_JSON_END'
 "cond_second | mcq | Choose the correct option: If I were you, I ___ that offer. | would accept": "c2_were",
 "cond_second | gap | If I ___ you, I ___ apologise. | ": "c2_were",
 "cond_second | gap | This phone is too expensive. If it ___ cheaper, we ___ it. (be / buy) | ": "c2_were",
-"cond_second | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *tell your boss*. | ": "c2_were",
+"cond_second | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *talk to the manager*. | ": "c2_were",
 "cond_second | match | Match each problem with the advice. | I'm always tired. = If I were you, I'd go to bed earlier. ; I can't find my keys. = If I were you, I'd check your coat. ; I have a toothache. = If I were you, I'd see a dentist. ; I'm bored. = If I were you, I'd learn a new hobby.": "c2_were",
 "cond_second | order | Put the words in order. | if I were you I'd think twice about that offer": "c2_were",
 "cond_second | mcq | Which is correct? 'If I ___ in your position, I'd ask for a pay rise.' | were": "c2_were",

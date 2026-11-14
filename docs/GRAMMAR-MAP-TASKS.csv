@@ -1999,7 +1999,7 @@ c2_were,B1.1,cond_second,B1.1,check,mcq,read,,b1-cond-rep-1.csv:104,"cond_second
 c2_were,B1.1,cond_second,B1.2,check,mcq,read,cs-B12-5a-r2,built-in,"cond_second | B1.2 | mcq | Which sentence is correct? | If I were you, I would speak to the team before the meeting."
 c2_were,B1.1,cond_second,B1.2,check,gap,read,,b1-cond-rep-1.csv:89,"cond_second | B1.2 | gap | If I ___ you, I ___ apologise. | "
 c2_were,B1.1,cond_second,B1.2,use,gap,read,,b1-cond-rep-1.csv:94,"cond_second | B1.2 | gap | This phone is too expensive. If it ___ cheaper, we ___ it. (be / buy) | "
-c2_were,B1.1,cond_second,B1.2,use,text,read,,b1-cond-rep-1.csv:98,cond_second | B1.2 | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *tell your boss*. | 
+c2_were,B1.1,cond_second,B1.2,use,text,read,,b1-cond-rep-1.csv:98,cond_second | B1.2 | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *talk to the manager*. | 
 c2_were,B1.1,cond_second,B1.2,learn,match,read,,b1-cond-rep-1.csv:101,"cond_second | B1.2 | match | Match each problem with the advice. | I'm always tired. = If I were you, I'd go to bed earlier. ; I can't find my keys. = If I were you, I'd check your coat. ; I have a toothache. = If I were you, I'd see a dentist. ; I'm bored. = If I were you, I'd learn a new hobby."
 c2_were,B1.1,cond_second,B2.1,check,mcq,read,cs-B21-1a,built-in,"cond_second | B2.1 | mcq | Which is correct? 'If I ___ you, I'd think twice about that offer.' | were"
 c2_were,B1.1,cond_second,B2.1,use,write,read,cs-B21-6a-r2,built-in,"cond_second | B2.1 | write | A colleague works 12 hours a day. Give them advice in one sentence, from your own point of view. | "

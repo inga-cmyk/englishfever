@@ -13726,5 +13726,9 @@
 "cond_second | B1.2 | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *tell your boss*. | ": [
 "c2_were",
 "read"
+],
+"cond_second | B1.2 | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *talk to the manager*. | ": [
+"c2_were",
+"read"
 ]
 }

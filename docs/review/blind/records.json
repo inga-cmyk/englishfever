@@ -184,6 +184,11 @@
 "round": "r1c",
 "task": "answers added"
 },
+"5ec372dfcc1506aa": {
+"gate_key": "rep_verbs | B2.2 | text | My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*. | ",
+"round": "r2b",
+"task": "answers added"
+},
 "5fe41f9ff4a1a681": {
 "gate_key": "relative_clauses | A2.2 | gap | We bought a car ___ uses very little petrol. | ",
 "round": "r1",
@@ -278,6 +283,11 @@
 "gate_key": "present_simple | A2.1 | text | Make it negative: They play tennis on Sundays. | ",
 "round": "r1",
 "task": "r1-001"
+},
+"82202e47e3fb62b2": {
+"gate_key": "rep_verbs | B2.2 | text | Max said to you: 'I didn't take your phone.' Start with *Max denied*. | ",
+"round": "r2b",
+"task": "r2b-001"
 },
 "8604712d7407e201": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I fell asleep ___ the film, so I don't know how it ends. | during",

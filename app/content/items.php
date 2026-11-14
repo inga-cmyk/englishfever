@@ -7458,6 +7458,12 @@ return json_decode(<<<'EF_JSON_END'
 "q": "My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*.",
 "answers": [
 [
+"My sister advised me I should see a doctor about that cough.",
+"My sister advised me I really should see a doctor about that cough.",
+"My sister advised me I should see a doctor about my cough.",
+"My sister advised me I really should see a doctor about my cough.",
+"My sister advised me I should see a doctor about the cough.",
+"My sister advised me I really should see a doctor about the cough.",
 "My sister advised me to see a doctor about that cough.",
 "My sister advised seeing a doctor about that cough.",
 "My sister advised that I see a doctor about that cough.",

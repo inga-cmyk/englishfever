@@ -157,7 +157,11 @@ P.mcq("B1.2", "Choose the correct option: I'll never forget ___ the Eiffel Tower
 P.mcq("B1.2", "Which sentence means he quit smoking?", "He stopped smoking.", ["He stopped to smoke.", "He started smoking.", "He wanted to smoke."], b=3)
 P.mcq("B1.2", "In a letter: which sentence is NOT correct?", "She enjoys to cook for her friends.", ["She enjoys cooking for her friends.", "She loves to cook for her friends.", "She likes cooking for her friends."], b=4)
 P.mcq("B1.2", "Choose the correct option: She apologised for ___ late.", "being", ["to be", "be", "been"])
-P.text("A2.2", "Make a sentence with decide: I will go home early.", ["I decided to go home early."], b=4)
+# blind check round 1 (14 November): decide in italics; I've decided (the grader does not expand 've) and decide + that-clause accepted with a note
+P.text("A2.2", "Make a sentence with *decide*: I will go home early.", ["I decided to go home early.", "I have decided to go home early.", "I've decided to go home early.",
+       "I've decided I'll go home early.", "I've decided that I'll go home early.", "I have decided that I will go home early.", "I have decided I will go home early.",
+       "I decided that I would go home early.", "I decided I would go home early."], b=4)
+replaces("Make a sentence with decide: I will go home early.")
 P.text("A2.2", "Make a sentence with finish: I cleaned the kitchen.", ["I finished cleaning the kitchen."], b=4)
 P.text("B1.1", "Rewrite with suggested: 'Let's go to the cinema,' said Ben.", ["Ben suggested going to the cinema.", "Ben suggested that we go to the cinema."], b=5)
 P.text("B1.1", "Rewrite with before: She checked the windows. Then she left the house.", ["She checked the windows before leaving the house.", "Before leaving the house, she checked the windows."], b=5)

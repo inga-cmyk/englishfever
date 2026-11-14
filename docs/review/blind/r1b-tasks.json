@@ -1,0 +1,143 @@
+[
+ {
+  "id": "r1b-001",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1b-002",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r1b-003",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: 'Where do you work?' She asked me ___.",
+  "options": [
+   "where did I work",
+   "where do I work",
+   "if I worked",
+   "where I worked"
+  ]
+ },
+ {
+  "id": "r1b-004",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+  "word_cards": [
+   "with",
+   "on",
+   "at",
+   "about"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r1b-005",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1b-006",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Ask politely. Start with *Could you tell me*: Why hasn't the order arrived?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1b-007",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I use an app ___ edits my videos.",
+  "options": [
+   "that",
+   "who",
+   "what",
+   "where"
+  ]
+ },
+ {
+  "id": "r1b-008",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Join with *which*: We visited a museum. It has old cars.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1b-009",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Join with *which*: The app helps me learn new words. It is free.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1b-010",
+  "level": "A2.2",
+  "kind": "match",
+  "instruction_and_task": "Match each beginning with its ending.",
+  "left": [
+   "A baker is a person",
+   "A fridge is a machine",
+   "A tourist is someone",
+   "A map is a drawing"
+  ],
+  "right": [
+   "which keeps food cold.",
+   "who makes bread.",
+   "which shows roads and towns.",
+   "who travels for fun."
+  ]
+ },
+ {
+  "id": "r1b-011",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He ___ to the party tonight.",
+  "options": [
+   "might not comes",
+   "doesn't might come",
+   "might not come",
+   "might not to come"
+  ]
+ },
+ {
+  "id": "r1b-012",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *might*: Perhaps the concert tickets are sold out.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r1b-013",
+  "level": "A2.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "She'll call.",
+   "She might call.",
+   "She won't call.",
+   "She might not call."
+  ],
+  "right": [
+   "No, I'm sure.",
+   "Yes, I'm sure.",
+   "Perhaps not.",
+   "Yes, perhaps."
+  ]
+ },
+ {
+  "id": "r1b-014",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Make a sentence with *decide*: I will go home early.",
+  "note": "the learner types a whole sentence"
+ }
+]

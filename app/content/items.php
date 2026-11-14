@@ -5652,7 +5652,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ct-B21-3a-r3",
+"id": "ct-B21-3a-r4",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 3,
@@ -5671,7 +5671,16 @@ return json_decode(<<<'EF_JSON_END'
 "I would not have got a fine if I had seen the sign.",
 "I wouldn't have gotten a fine if I had seen the sign.",
 "I wouldn't have been fined if I had seen the sign.",
-"I would not have parked there if I had seen the sign."
+"I would not have parked there if I had seen the sign.",
+"If I had seen the sign, I wouldn't have parked there and I wouldn't have got a fine.",
+"If I had seen the sign, I wouldn't have parked there and I wouldn't have gotten a fine.",
+"If I had seen the sign, I wouldn't have parked there and wouldn't have got a fine.",
+"If I had seen the sign, I wouldn't have parked there and wouldn't have gotten a fine.",
+"If I had seen the sign, I wouldn't have parked there or got a fine.",
+"If I had seen the sign, I wouldn't have parked there or gotten a fine.",
+"If I had seen the sign, I wouldn't have parked there and got a fine.",
+"If I had seen the sign, I wouldn't have parked there and gotten a fine.",
+"If I had seen the sign, I would have parked somewhere else."
 ]
 ],
 "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
@@ -5881,7 +5890,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cm-B21-3a-r2",
+"id": "cm-B21-3a-r3",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 3,
@@ -5896,11 +5905,55 @@ return json_decode(<<<'EF_JSON_END'
 ],
 [
 "would be",
-"'d be"
+"'d be",
+"might be",
+"could be"
 ]
 ],
 "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
-"hints": []
+"hints": [],
+"answer_notes": [
+[
+"had learned / might be",
+"Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+"Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+],
+[
+"had learned / could be",
+"Correct too: *could be* = it would be possible for me to be fluent.",
+"Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+],
+[
+"had learnt / might be",
+"Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+"Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+],
+[
+"had learnt / could be",
+"Correct too: *could be* = it would be possible for me to be fluent.",
+"Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+],
+[
+"'d learned / might be",
+"Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+"Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+],
+[
+"'d learned / could be",
+"Correct too: *could be* = it would be possible for me to be fluent.",
+"Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+],
+[
+"'d learnt / might be",
+"Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+"Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+],
+[
+"'d learnt / could be",
+"Correct too: *could be* = it would be possible for me to be fluent.",
+"Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+]
+]
 },
 {
 "id": "cm-B21-4a",
@@ -6764,7 +6817,7 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rq-B12-1a-r2",
+"id": "rq-B12-1a-r3",
 "skill": "rep_questions",
 "level": "B1.2",
 "bloom": 1,
@@ -6774,7 +6827,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "where did I work",
 "where do I work",
-"where I work did"
+"if I worked"
 ],
 "why": "In a reported question we use normal word order (subject + verb) and no *do / does / did.*",
 "wrong_why": {},
@@ -7294,12 +7347,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rv-C11-3a-r4",
+"id": "rv-C11-3a-r5",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam.",
+"q": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
 "answers": [
 [
 "on"
@@ -7395,7 +7448,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r5",
+"id": "rv-C12-3a-r6",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
@@ -7423,7 +7476,36 @@ return json_decode(<<<'EF_JSON_END'
 "My sister said I should see a doctor about that cough.",
 "My sister said that I should see a doctor about that cough.",
 "My sister told me I should see a doctor about that cough.",
-"My sister told me that I should see a doctor about that cough."
+"My sister told me that I should see a doctor about that cough.",
+"My sister advised me to see a doctor about my cough.",
+"My sister urged me to see a doctor about my cough.",
+"My sister told me to see a doctor about my cough.",
+"My sister encouraged me to see a doctor about my cough.",
+"My sister recommended that I see a doctor about my cough.",
+"My sister recommended that I should see a doctor about my cough.",
+"My sister suggested that I see a doctor about my cough.",
+"My sister suggested that I should see a doctor about my cough.",
+"My sister suggested seeing a doctor about my cough.",
+"My sister suggested I see a doctor about my cough.",
+"My sister suggested I should see a doctor about my cough.",
+"My sister recommended seeing a doctor about my cough.",
+"My sister recommended I see a doctor about my cough.",
+"My sister recommended I should see a doctor about my cough.",
+"My sister advised seeing a doctor about my cough.",
+"My sister advised that I see a doctor about my cough.",
+"My sister advised that I should see a doctor about my cough.",
+"My sister said I should see a doctor about my cough.",
+"My sister said that I should see a doctor about my cough.",
+"My sister told me I should see a doctor about my cough.",
+"My sister told me that I should see a doctor about my cough.",
+"My sister said I really should see a doctor about that cough.",
+"My sister said I really should see a doctor about my cough.",
+"My sister said that I really should see a doctor about that cough.",
+"My sister said that I really should see a doctor about my cough.",
+"My sister told me I really should see a doctor about that cough.",
+"My sister told me I really should see a doctor about my cough.",
+"My sister told me that I really should see a doctor about that cough.",
+"My sister told me that I really should see a doctor about my cough."
 ]
 ],
 "why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
@@ -7827,46 +7909,30 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ip-B21-3a-r3",
+"id": "ip-B21-3a-r5",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 3,
 "kind": "text",
-"q": "Make it indirect: Why didn't the order arrive?",
+"q": "Ask politely. Start with *Could you tell me*: Why hasn't the order arrived?",
 "answers": [
 [
-"Could you tell me why the order didn't arrive?",
-"Do you know why the order didn't arrive?",
-"Can you tell me why the order didn't arrive?",
-"I'd like to know why the order didn't arrive.",
-"Would you mind telling me why the order didn't arrive?",
-"Could you please tell me why the order didn't arrive?",
-"Do you happen to know why the order didn't arrive?",
-"I wonder why the order didn't arrive.",
-"I was wondering why the order didn't arrive.",
-"Could you tell me why the order did not arrive?",
-"Do you know why the order did not arrive?",
-"Could you tell me why the order didn't arrive, please?",
-"Can you please tell me why the order didn't arrive?",
-"Would you tell me why the order didn't arrive?",
-"Could you please tell me why the order did not arrive?",
-"Could you tell me why the order did not arrive, please?",
-"Can you please tell me why the order did not arrive?",
-"Would you mind telling me why the order did not arrive?",
-"Do you happen to know why the order did not arrive?",
-"I wonder why the order did not arrive.",
-"I was wondering why the order did not arrive.",
-"I'd like to know why the order did not arrive.",
-"Would you tell me why the order did not arrive?"
+"Could you tell me why the order hasn't arrived?",
+"Could you please tell me why the order hasn't arrived?",
+"Could you tell me why the order hasn't arrived, please?",
+"Could you tell me why the order hasn't arrived yet?",
+"Could you tell me why the order has not arrived?"
 ]
 ],
-"why": "Polite phrase + *why* + subject + verb in statement order: *why the order didn't arrive*, not *why didn't the order arrive*.",
+"why": "Polite phrase + *why* + subject + verb in statement order: *why the order hasn't arrived*, not *why hasn't the order arrived*.",
 "hints": [
 [
-"\\bdid\\b",
-"In the indirect part use statement order: *... why the order didn't arrive.*"
+"\\bhas the order\\b",
+"Use statement order after *why*: *… why the order hasn't arrived.*",
+"Pēc *why* lieto apgalvojuma vārdu secību: *… why the order hasn't arrived.*"
 ]
-]
+],
+"why_lv": "Pieklājīga frāze + *why* + teikuma priekšmets + darbības vārds apgalvojuma secībā: *why the order hasn't arrived*, nevis *why hasn't the order arrived*."
 },
 {
 "id": "ip-B21-4a-r2",

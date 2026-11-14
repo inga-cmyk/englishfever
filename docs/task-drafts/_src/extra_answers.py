@@ -15,7 +15,6 @@ TEXT = {
     "Correct the mistake: Before to leave the house, she checked the windows.": ["Before she left the house, she checked the windows.", "She checked the windows before leaving the house.", "She checked the windows before she left the house."],
     "Rewrite with before: First I'll check the dates. After that I'll book the tickets.": ["I'll check the dates before booking the tickets.", "I will check the dates before booking the tickets.", "Before booking the tickets, I'll check the dates.", "Before booking the tickets, I will check the dates."],
     "Join the two plans in one sentence: I'll check the dates first. After that I'll book the tickets.": ["I'll check the dates before booking the tickets.", "I will check the dates before booking the tickets.", "Before booking the tickets, I'll check the dates.", "Before booking the tickets, I will check the dates."],
-    "Make a sentence with decide: I will go home early.": ["I have decided to go home early."],
     "Make a sentence with finish: I cleaned the kitchen.": ["I have finished cleaning the kitchen."],
     "Rewrite with suggested: 'Let's go to the cinema,' said Ben.": ["Ben suggested we go to the cinema.", "Ben suggested that we should go to the cinema.", "Ben suggested we should go to the cinema."],
     "Rewrite with be able to: I couldn't open the door.": ["I was unable to open the door."],

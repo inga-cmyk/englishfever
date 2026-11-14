@@ -1,0 +1,798 @@
+{
+ "r1b-001": {
+  "hash": "057a7459a95126d4",
+  "gate_key": "cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "If I had seen the sign, I wouldn't have parked there.",
+     "If I had seen the sign, I wouldn't have got a fine.",
+     "If I had seen the sign, I would not have got a fine.",
+     "If I had seen the sign, I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have been fined.",
+     "If I had seen the sign, I would not have parked there.",
+     "I wouldn't have parked there if I had seen the sign.",
+     "I wouldn't have got a fine if I had seen the sign.",
+     "I would not have got a fine if I had seen the sign.",
+     "I wouldn't have gotten a fine if I had seen the sign.",
+     "I wouldn't have been fined if I had seen the sign.",
+     "I would not have parked there if I had seen the sign.",
+     "If I had seen the sign, I wouldn't have parked there and I wouldn't have got a fine.",
+     "If I had seen the sign, I wouldn't have parked there and I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have parked there and wouldn't have got a fine.",
+     "If I had seen the sign, I wouldn't have parked there and wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have parked there or got a fine.",
+     "If I had seen the sign, I wouldn't have parked there or gotten a fine.",
+     "If I had seen the sign, I wouldn't have parked there and got a fine.",
+     "If I had seen the sign, I wouldn't have parked there and gotten a fine.",
+     "If I had seen the sign, I would have parked somewhere else."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ct-B21-3a-r4",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.",
+   "answers": [
+    [
+     "If I had seen the sign, I wouldn't have parked there.",
+     "If I had seen the sign, I wouldn't have got a fine.",
+     "If I had seen the sign, I would not have got a fine.",
+     "If I had seen the sign, I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have been fined.",
+     "If I had seen the sign, I would not have parked there.",
+     "I wouldn't have parked there if I had seen the sign.",
+     "I wouldn't have got a fine if I had seen the sign.",
+     "I would not have got a fine if I had seen the sign.",
+     "I wouldn't have gotten a fine if I had seen the sign.",
+     "I wouldn't have been fined if I had seen the sign.",
+     "I would not have parked there if I had seen the sign.",
+     "If I had seen the sign, I wouldn't have parked there and I wouldn't have got a fine.",
+     "If I had seen the sign, I wouldn't have parked there and I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have parked there and wouldn't have got a fine.",
+     "If I had seen the sign, I wouldn't have parked there and wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have parked there or got a fine.",
+     "If I had seen the sign, I wouldn't have parked there or gotten a fine.",
+     "If I had seen the sign, I wouldn't have parked there and got a fine.",
+     "If I had seen the sign, I wouldn't have parked there and gotten a fine.",
+     "If I had seen the sign, I would have parked somewhere else."
+    ]
+   ],
+   "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
+   "hints": [],
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r1b-002": {
+  "hash": "d8b0c1bec954c6c1",
+  "gate_key": "cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | ",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had learned",
+     "had learnt",
+     "'d learned",
+     "'d learnt"
+    ],
+    [
+     "would be",
+     "'d be",
+     "might be",
+     "could be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "cm-B21-3a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be)",
+   "answers": [
+    [
+     "had learned",
+     "had learnt",
+     "'d learned",
+     "'d learnt"
+    ],
+    [
+     "would be",
+     "'d be",
+     "might be",
+     "could be"
+    ]
+   ],
+   "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
+   "hints": [],
+   "answer_notes": [
+    [
+     "had learned / might be",
+     "Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+     "Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+    ],
+    [
+     "had learned / could be",
+     "Correct too: *could be* = it would be possible for me to be fluent.",
+     "Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+    ],
+    [
+     "had learnt / might be",
+     "Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+     "Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+    ],
+    [
+     "had learnt / could be",
+     "Correct too: *could be* = it would be possible for me to be fluent.",
+     "Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+    ],
+    [
+     "'d learned / might be",
+     "Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+     "Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+    ],
+    [
+     "'d learned / could be",
+     "Correct too: *could be* = it would be possible for me to be fluent.",
+     "Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+    ],
+    [
+     "'d learnt / might be",
+     "Correct too: *might be* = perhaps I would be fluent; *would be* is sure.",
+     "Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti."
+    ],
+    [
+     "'d learnt / could be",
+     "Correct too: *could be* = it would be possible for me to be fluent.",
+     "Arī pareizi: *could be* = es tagad varētu runāt brīvi."
+    ]
+   ],
+   "d": 5.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r1b-003": {
+  "hash": "3753e90a9c0a6989",
+  "gate_key": "rep_questions | B1.2 | mcq | Choose the correct option: 'Where do you work?' She asked me ___. | where I worked",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "where I worked",
+   "wrong": [
+    "where did I work",
+    "where do I work",
+    "if I worked"
+   ]
+  },
+  "item": {
+   "id": "rq-B12-1a-r3",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct option: 'Where do you work?' She asked me ___.",
+   "correct": "where I worked",
+   "wrong": [
+    "where did I work",
+    "where do I work",
+    "if I worked"
+   ],
+   "why": "In a reported question we use normal word order (subject + verb) and no *do / does / did.*",
+   "wrong_why": [],
+   "why_lv": "Netiešajā jautājumā lieto parasto vārdu secību (teik. priekšmets + darbības vārds) un bez *do / does / did*.",
+   "d": 4,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "built-in"
+  }
+ },
+ "r1b-004": {
+  "hash": "9a4322ab37477a3e",
+  "gate_key": "rep_verbs | B2.2 | gap | 'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam. | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C11-3a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "why": "*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*",
+   "hints": [],
+   "bank": [
+    "on",
+    "about",
+    "at",
+    "with"
+   ],
+   "d": 6.4,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r1b-005": {
+  "hash": "6384e437b4902c1a",
+  "gate_key": "rep_verbs | B2.2 | text | Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.' | ",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister urged me to see a doctor about that cough.",
+     "My sister told me to see a doctor about that cough.",
+     "My sister encouraged me to see a doctor about that cough.",
+     "My sister recommended that I see a doctor about that cough.",
+     "My sister recommended that I should see a doctor about that cough.",
+     "My sister suggested that I see a doctor about that cough.",
+     "My sister suggested that I should see a doctor about that cough.",
+     "My sister suggested seeing a doctor about that cough.",
+     "My sister suggested I see a doctor about that cough.",
+     "My sister suggested I should see a doctor about that cough.",
+     "My sister recommended seeing a doctor about that cough.",
+     "My sister recommended I see a doctor about that cough.",
+     "My sister recommended I should see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister said I should see a doctor about that cough.",
+     "My sister said that I should see a doctor about that cough.",
+     "My sister told me I should see a doctor about that cough.",
+     "My sister told me that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister urged me to see a doctor about my cough.",
+     "My sister told me to see a doctor about my cough.",
+     "My sister encouraged me to see a doctor about my cough.",
+     "My sister recommended that I see a doctor about my cough.",
+     "My sister recommended that I should see a doctor about my cough.",
+     "My sister suggested that I see a doctor about my cough.",
+     "My sister suggested that I should see a doctor about my cough.",
+     "My sister suggested seeing a doctor about my cough.",
+     "My sister suggested I see a doctor about my cough.",
+     "My sister suggested I should see a doctor about my cough.",
+     "My sister recommended seeing a doctor about my cough.",
+     "My sister recommended I see a doctor about my cough.",
+     "My sister recommended I should see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister said I should see a doctor about my cough.",
+     "My sister said that I should see a doctor about my cough.",
+     "My sister told me I should see a doctor about my cough.",
+     "My sister told me that I should see a doctor about my cough.",
+     "My sister said I really should see a doctor about that cough.",
+     "My sister said I really should see a doctor about my cough.",
+     "My sister said that I really should see a doctor about that cough.",
+     "My sister said that I really should see a doctor about my cough.",
+     "My sister told me I really should see a doctor about that cough.",
+     "My sister told me I really should see a doctor about my cough.",
+     "My sister told me that I really should see a doctor about that cough.",
+     "My sister told me that I really should see a doctor about my cough."
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C12-3a-r6",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'",
+   "answers": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister urged me to see a doctor about that cough.",
+     "My sister told me to see a doctor about that cough.",
+     "My sister encouraged me to see a doctor about that cough.",
+     "My sister recommended that I see a doctor about that cough.",
+     "My sister recommended that I should see a doctor about that cough.",
+     "My sister suggested that I see a doctor about that cough.",
+     "My sister suggested that I should see a doctor about that cough.",
+     "My sister suggested seeing a doctor about that cough.",
+     "My sister suggested I see a doctor about that cough.",
+     "My sister suggested I should see a doctor about that cough.",
+     "My sister recommended seeing a doctor about that cough.",
+     "My sister recommended I see a doctor about that cough.",
+     "My sister recommended I should see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister said I should see a doctor about that cough.",
+     "My sister said that I should see a doctor about that cough.",
+     "My sister told me I should see a doctor about that cough.",
+     "My sister told me that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister urged me to see a doctor about my cough.",
+     "My sister told me to see a doctor about my cough.",
+     "My sister encouraged me to see a doctor about my cough.",
+     "My sister recommended that I see a doctor about my cough.",
+     "My sister recommended that I should see a doctor about my cough.",
+     "My sister suggested that I see a doctor about my cough.",
+     "My sister suggested that I should see a doctor about my cough.",
+     "My sister suggested seeing a doctor about my cough.",
+     "My sister suggested I see a doctor about my cough.",
+     "My sister suggested I should see a doctor about my cough.",
+     "My sister recommended seeing a doctor about my cough.",
+     "My sister recommended I see a doctor about my cough.",
+     "My sister recommended I should see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister said I should see a doctor about my cough.",
+     "My sister said that I should see a doctor about my cough.",
+     "My sister told me I should see a doctor about my cough.",
+     "My sister told me that I should see a doctor about my cough.",
+     "My sister said I really should see a doctor about that cough.",
+     "My sister said I really should see a doctor about my cough.",
+     "My sister said that I really should see a doctor about that cough.",
+     "My sister said that I really should see a doctor about my cough.",
+     "My sister told me I really should see a doctor about that cough.",
+     "My sister told me I really should see a doctor about my cough.",
+     "My sister told me that I really should see a doctor about that cough.",
+     "My sister told me that I really should see a doctor about my cough."
+    ]
+   ],
+   "why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_obj_to",
+   "src": "built-in"
+  }
+ },
+ "r1b-006": {
+  "hash": "3deb703775dd84d1",
+  "gate_key": "ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you tell me why the order hasn't arrived?",
+     "Could you please tell me why the order hasn't arrived?",
+     "Could you tell me why the order hasn't arrived, please?",
+     "Could you tell me why the order hasn't arrived yet?",
+     "Could you tell me why the order has not arrived?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ip-B21-3a-r5",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Ask politely. Start with *Could you tell me*: Why hasn't the order arrived?",
+   "answers": [
+    [
+     "Could you tell me why the order hasn't arrived?",
+     "Could you please tell me why the order hasn't arrived?",
+     "Could you tell me why the order hasn't arrived, please?",
+     "Could you tell me why the order hasn't arrived yet?",
+     "Could you tell me why the order has not arrived?"
+    ]
+   ],
+   "why": "Polite phrase + *why* + subject + verb in statement order: *why the order hasn't arrived*, not *why hasn't the order arrived*.",
+   "hints": [
+    [
+     "\\bhas the order\\b",
+     "Use statement order after *why*: *… why the order hasn't arrived.*",
+     "Pēc *why* lieto apgalvojuma vārdu secību: *… why the order hasn't arrived.*"
+    ]
+   ],
+   "why_lv": "Pieklājīga frāze + *why* + teikuma priekšmets + darbības vārds apgalvojuma secībā: *why the order hasn't arrived*, nevis *why hasn't the order arrived*.",
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r1b-007": {
+  "hash": "6e8956261c46a9ff",
+  "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: I use an app ___ edits my videos. | that",
+  "src": "a2-rel-might-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "that",
+   "wrong": [
+    "who",
+    "what",
+    "where"
+   ]
+  },
+  "item": {
+   "id": "c-0543",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I use an app ___ edits my videos.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "correct": "that",
+   "wrong": [
+    "who",
+    "what",
+    "where"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "a2-rel-might-1.csv:4"
+  }
+ },
+ "r1b-008": {
+  "hash": "7191ee2dab94c9e8",
+  "gate_key": "relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has old cars. | ",
+  "src": "a2-rel-might-1.csv:16",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We visited a museum which has old cars.",
+     "We visited a museum that has old cars.",
+     "We visited a museum which had old cars.",
+     "We visited a museum that had old cars."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0555",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join with *which*: We visited a museum. It has old cars.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answers": [
+    [
+     "We visited a museum which has old cars.",
+     "We visited a museum that has old cars.",
+     "We visited a museum which had old cars.",
+     "We visited a museum that had old cars."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "a2-rel-might-1.csv:16"
+  }
+ },
+ "r1b-009": {
+  "hash": "a13302f62648105e",
+  "gate_key": "relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | ",
+  "src": "a2-rel-might-1.csv:17",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The app which helps me learn new words is free.",
+     "The app that helps me learn new words is free.",
+     "The app which is free helps me learn new words.",
+     "The app that is free helps me learn new words.",
+     "The app which helps me to learn new words is free.",
+     "The app that helps me to learn new words is free.",
+     "The app, which is free, helps me learn new words."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0556",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join with *which*: The app helps me learn new words. It is free.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answers": [
+    [
+     "The app which helps me learn new words is free.",
+     "The app that helps me learn new words is free.",
+     "The app which is free helps me learn new words.",
+     "The app that is free helps me learn new words.",
+     "The app which helps me to learn new words is free.",
+     "The app that helps me to learn new words is free.",
+     "The app, which is free, helps me learn new words."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "a2-rel-might-1.csv:17"
+  }
+ },
+ "r1b-010": {
+  "hash": "f2fb132fbe6a83d8",
+  "gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.",
+  "src": "a2-rel-might-1.csv:26",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "A baker is a person",
+     "who makes bread."
+    ],
+    [
+     "A fridge is a machine",
+     "which keeps food cold."
+    ],
+    [
+     "A tourist is someone",
+     "who travels for fun."
+    ],
+    [
+     "A map is a drawing",
+     "which shows roads and towns."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0565",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "pairs": [
+    [
+     "A baker is a person",
+     "who makes bread."
+    ],
+    [
+     "A fridge is a machine",
+     "which keeps food cold."
+    ],
+    [
+     "A tourist is someone",
+     "who travels for fun."
+    ],
+    [
+     "A map is a drawing",
+     "which shows roads and towns."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "a2-rel-might-1.csv:26"
+  }
+ },
+ "r1b-011": {
+  "hash": "cc6f4d8e8b15405a",
+  "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: He ___ to the party tonight. | might not come",
+  "src": "a2-rel-might-1.csv:30",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "might not come",
+   "wrong": [
+    "doesn't might come",
+    "might not to come",
+    "might not comes"
+   ]
+  },
+  "item": {
+   "id": "c-0569",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: He ___ to the party tonight.",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "correct": "might not come",
+   "wrong": [
+    "doesn't might come",
+    "might not to come",
+    "might not comes"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "a2-rel-might-1.csv:30"
+  }
+ },
+ "r1b-012": {
+  "hash": "72ca51b7a775e7a9",
+  "gate_key": "more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ",
+  "src": "a2-rel-might-1.csv:40",
+  "point": "might",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The concert tickets might be sold out.",
+     "The tickets for the concert might be sold out.",
+     "The concert tickets might have sold out."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0579",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *might*: Perhaps the concert tickets are sold out.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answers": [
+    [
+     "The concert tickets might be sold out.",
+     "The tickets for the concert might be sold out.",
+     "The concert tickets might have sold out."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:40"
+  }
+ },
+ "r1b-013": {
+  "hash": "8dffdc7dadb2a664",
+  "gate_key": "more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Yes, I'm sure. ; She might call. = Yes, perhaps. ; She won't call. = No, I'm sure. ; She might not call. = Perhaps not.",
+  "src": "a2-rel-might-1.csv:51",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "She'll call.",
+     "Yes, I'm sure."
+    ],
+    [
+     "She might call.",
+     "Yes, perhaps."
+    ],
+    [
+     "She won't call.",
+     "No, I'm sure."
+    ],
+    [
+     "She might not call.",
+     "Perhaps not."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0590",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "why": "*will* = sure; *might* = perhaps. *won't* and *might not* are the negatives.",
+   "why_lv": "*will* = droši; *might* = varbūt. *won't* un *might not* ir nolieguma formas.",
+   "pairs": [
+    [
+     "She'll call.",
+     "Yes, I'm sure."
+    ],
+    [
+     "She might call.",
+     "Yes, perhaps."
+    ],
+    [
+     "She won't call.",
+     "No, I'm sure."
+    ],
+    [
+     "She might not call.",
+     "Perhaps not."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "a2-rel-might-1.csv:51"
+  }
+ },
+ "r1b-014": {
+  "hash": "efc04f9d2c42e08b",
+  "gate_key": "verb_patterns | A2.2 | text | Make a sentence with *decide*: I will go home early. | ",
+  "src": "b1-new-3.csv:144",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I decided to go home early.",
+     "I have decided to go home early.",
+     "I've decided to go home early.",
+     "I've decided I'll go home early.",
+     "I've decided that I'll go home early.",
+     "I have decided that I will go home early.",
+     "I have decided I will go home early.",
+     "I decided that I would go home early.",
+     "I decided I would go home early."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1241",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a sentence with *decide*: I will go home early.",
+   "why": "*want, decide, hope, manage, refuse, promise, pretend, afford* + *to* + verb.",
+   "why_lv": "*want, decide, hope, manage, refuse, promise, pretend, afford + to* + darbības vārds.",
+   "answers": [
+    [
+     "I decided to go home early.",
+     "I have decided to go home early.",
+     "I've decided to go home early.",
+     "I've decided I'll go home early.",
+     "I've decided that I'll go home early.",
+     "I have decided that I will go home early.",
+     "I have decided I will go home early.",
+     "I decided that I would go home early.",
+     "I decided I would go home early."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "b1-new-3.csv:144"
+  }
+ }
+}

@@ -131,10 +131,14 @@ def task_hash(i):
 
 _REC = os.path.join(ROOT, "docs", "review", "blind", "records.json")
 BLIND = json.load(open(_REC, encoding="utf-8")) if os.path.isfile(_REC) else {}
+_BH = os.path.join(ROOT, "docs", "review", "blind", "baseline_hashes.json")
+BLIND_DEBT = set(json.load(open(_BH, encoding="utf-8"))) if os.path.isfile(_BH) else set()   # tasks as they were when the gate came (to be checked in rounds)
 
 
 def g_blind(i):   # 14 November (docs/BLIND-CHECK.md): two readers solved the task without the key, a judge decided every flag
-    return [] if task_hash(i) in BLIND else ["no blind check: python3 tools/blind_check.py (docs/BLIND-CHECK.md)"]
+    # by the content hash, not the key: a task whose answers or options changed needs a new check, even with the same question
+    h = task_hash(i)
+    return [] if h in BLIND or h in BLIND_DEBT else ["no blind check: python3 tools/blind_check.py (docs/BLIND-CHECK.md)"]
 
 
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,

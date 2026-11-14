@@ -1,0 +1,452 @@
+{
+"048ad6985e7c9183": {
+"gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live",
+"round": "r1",
+"task": "r1-020"
+},
+"0870ffe13b70e777": {
+"gate_key": "rep_questions | B1.2 | mcq | Which sentence is NOT correct? | He asked me did I like the job.",
+"round": "r1",
+"task": "r1-065"
+},
+"0ba173a586ec8afb": {
+"gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: I couldn't sleep ___ the noise from the street. | because of",
+"round": "r1",
+"task": "r1-103"
+},
+"0c0f50e7e81e9431": {
+"gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ she studied hard, she didn't pass the driving test. | Although",
+"round": "r1",
+"task": "r1-095"
+},
+"18d8681c4516bf6f": {
+"gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The trains stopped ___ the strong wind. | because of",
+"round": "r1",
+"task": "r1-100"
+},
+"19913fb0b7cf8f3b": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Please pay the bill ___ Friday. | by",
+"round": "r1",
+"task": "r1-082"
+},
+"1a226113aeadce44": {
+"gate_key": "present_simple | B1.1 | write | Write two sentences about a timetable: a train, a class, a shop or a film. | ",
+"round": "r1",
+"task": "r1-002"
+},
+"1d6d494bab962f25": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Guests must leave their rooms ___ eleven o'clock on the last day. | by",
+"round": "r1",
+"task": "r1-085"
+},
+"214d2322ac43f282": {
+"gate_key": "more_modals | A2.2 | order | Put the words in order. | i may not have time for lunch",
+"round": "r1",
+"task": "r1-057"
+},
+"25170a641d9c4a07": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: The shop is open ___ ten tonight, so we still have time. | until",
+"round": "r1",
+"task": "r1-083"
+},
+"26ab55af63fa0b5a": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I'll wait for you here ___ six. Then I'm going home. | until",
+"round": "r1",
+"task": "r1-084"
+},
+"28aa3d2cc24d8038": {
+"gate_key": "more_modals | B1.2 | mcq | Choose the correct option: She's been running for an hour in this heat. She ___ be thirsty. | must",
+"round": "r1",
+"task": "r1-071"
+},
+"2b8bf606b075b29b": {
+"gate_key": "more_modals | B1.2 | mcq | Choose the correct option: This ___ be the right address. There's no number 52 on this street. | can't",
+"round": "r1",
+"task": "r1-074"
+},
+"2b9ec6ab18c22696": {
+"gate_key": "ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me how long the repair will take?",
+"round": "r1",
+"task": "r1-010"
+},
+"2c4ccc3de57d704b": {
+"gate_key": "more_modals | B1.2 | mcq | Choose the correct option: That ___ be Tom's car. He sold it last month. | can't",
+"round": "r1",
+"task": "r1-072"
+},
+"2da3315b6100d8b0": {
+"gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but they ___ have a map of the town at the desk. | ",
+"round": "r1",
+"task": "r1-052"
+},
+"2ef29f98dee49c14": {
+"gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: We stayed at a hotel ___ has a big pool. | which",
+"round": "r1",
+"task": "r1-016"
+},
+"2fa0abcd16d39dfb": {
+"gate_key": "more_modals | A2.2 | mcq | Which sentence is NOT correct? | Maybe it will might snow tonight.",
+"round": "r1",
+"task": "r1-044"
+},
+"38430a41d99b424e": {
+"gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
+"round": "r1",
+"task": "r1-004"
+},
+"3e79cfe0459102e4": {
+"gate_key": "more_modals | A2.2 | order | Put the words in order. | my phone might not work in the mountains",
+"round": "r1",
+"task": "r1-060"
+},
+"4323c9e66de42d66": {
+"gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | should we leave before it gets dark",
+"round": "r1",
+"task": "r1-069"
+},
+"4448fcf35b40024d": {
+"gate_key": "relative_clauses | A2.2 | order | Put the words in order. | we stayed in a flat that had a garden",
+"round": "r1",
+"task": "r1-032"
+},
+"479c3001b530acbf": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We have lived in this flat ___ 2019, and we still like it. | since",
+"round": "r1",
+"task": "r1-086"
+},
+"4e9f14df9f1b48f2": {
+"gate_key": "ind_polite | B2.1 | mcq | Which sentence is NOT correct? | I'd like to know where did you go.",
+"round": "r1",
+"task": "r1-012"
+},
+"4efac020b31b258d": {
+"gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The sofa was very heavy, but the two of us ___ carry it upstairs. | managed to",
+"round": "r1",
+"task": "r1-092"
+},
+"4f465f414d6a5693": {
+"gate_key": "more_modals | B1.1 | mcq | Choose the correct option: My grandfather ___ speak four languages when he was young. | could",
+"round": "r1",
+"task": "r1-093"
+},
+"4fe5f65bc6ffc9c5": {
+"gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The museum was closed, ___ we went to a café instead. | so",
+"round": "r1",
+"task": "r1-102"
+},
+"555928df8141d51c": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ the time we reached the airport, our plane had already left. | By",
+"round": "r1",
+"task": "r1-087"
+},
+"566165cfb67e8d31": {
+"gate_key": "more_modals | A2.2 | order | Put the words in order. | you might need a warm jacket",
+"round": "r1",
+"task": "r1-059"
+},
+"5fe41f9ff4a1a681": {
+"gate_key": "relative_clauses | A2.2 | gap | We bought a car ___ uses very little petrol. | ",
+"round": "r1",
+"task": "r1-037"
+},
+"617efd301e5eb820": {
+"gate_key": "more_modals | A2.2 | gap | She may ___ ___ the meeting today. | ",
+"round": "r1",
+"task": "r1-062"
+},
+"6431518d1a0b7623": {
+"gate_key": "present_simple_passive | A2.2 | mcq | Which sentence is NOT correct? | The bread are baked every morning.",
+"round": "r1",
+"task": "r1-013"
+},
+"647e5c07c5bf5fbf": {
+"gate_key": "relative_clauses | A2.2 | mcq | Which sentence is correct? | I need a laptop that is light.",
+"round": "r1",
+"task": "r1-019"
+},
+"6554da038f855226": {
+"gate_key": "relative_clauses | A2.2 | mcq | Which sentence is correct? | The man who fixed my car was very kind.",
+"round": "r1",
+"task": "r1-018"
+},
+"67a489225b9528c9": {
+"gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The bus which ___ to the airport leaves at six. | goes",
+"round": "r1",
+"task": "r1-021"
+},
+"6d98c519b40bd0d5": {
+"gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but I ___ visit my aunt this weekend. | ",
+"round": "r1",
+"task": "r1-048"
+},
+"6e848d9e922c5849": {
+"gate_key": "more_modals | A2.2 | order | Put the words in order. | they might move to another city",
+"round": "r1",
+"task": "r1-058"
+},
+"729b169818761aad": {
+"gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: He was late for work ___ he overslept. | because",
+"round": "r1",
+"task": "r1-104"
+},
+"73f1ed991535112f": {
+"gate_key": "more_modals | A2.2 | order | Put the words in order. | the café might be busy today",
+"round": "r1",
+"task": "r1-056"
+},
+"750e1de5a39b0044": {
+"gate_key": "relative_clauses | A2.2 | gap | Write the missing word: A pilot is a person ___ flies planes. | ",
+"round": "r1",
+"task": "r1-023"
+},
+"778cb03ed1ed9f02": {
+"gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | She may be at home now.",
+"round": "r1",
+"task": "r1-041"
+},
+"7aaaff2198b8a9f0": {
+"gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ the long journey, the children were not tired at all. | Despite",
+"round": "r1",
+"task": "r1-094"
+},
+"7dc3155ceb33fe5d": {
+"gate_key": "more_modals | A2.2 | gap | It ___ ___ tomorrow, so I'm taking my boots. | ",
+"round": "r1",
+"task": "r1-061"
+},
+"7e7777898babf4ea": {
+"gate_key": "more_modals | B1.1 | mcq | Choose the correct option: In the end she ___ pass the exam, although it was very hard. | managed to",
+"round": "r1",
+"task": "r1-090"
+},
+"7ec2397aee0c3ccc": {
+"gate_key": "relative_clauses | A2.2 | order | Put the words in order. | she met a man who makes furniture",
+"round": "r1",
+"task": "r1-035"
+},
+"7fa3c0eec8676c3c": {
+"gate_key": "more_modals | A2.2 | mcq | Choose the correct option: Take an umbrella. It might ___ later. | rain",
+"round": "r1",
+"task": "r1-040"
+},
+"80b99cfba86107e9": {
+"gate_key": "present_simple | A2.1 | text | Make it negative: They play tennis on Sundays. | ",
+"round": "r1",
+"task": "r1-001"
+},
+"8604712d7407e201": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I fell asleep ___ the film, so I don't know how it ends. | during",
+"round": "r1",
+"task": "r1-079"
+},
+"88b27676dc9db80a": {
+"gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The main road was closed, but we ___ find another way home. | were able to",
+"round": "r1",
+"task": "r1-089"
+},
+"897105eff5cfa067": {
+"gate_key": "relative_clauses | A2.2 | gap | Write the missing word: I bought a bike ___ has ten gears. | ",
+"round": "r1",
+"task": "r1-024"
+},
+"8f9749a7effe3e47": {
+"gate_key": "rep_questions | B2.1 | mcq | Which sentence is NOT correct? | He asked me what time was it.",
+"round": "r1",
+"task": "r1-007"
+},
+"915c200f97b435e0": {
+"gate_key": "used_to | B1.2 | mcq | Which sentence is NOT correct? | She is used to get up early.",
+"round": "r1",
+"task": "r1-066"
+},
+"91da6e3ecd6fe02a": {
+"gate_key": "relative_clauses | A2.2 | gap | Write the missing word: On our trip we met a guide ___ spoke perfect English. | ",
+"round": "r1",
+"task": "r1-027"
+},
+"97496d76402d2550": {
+"gate_key": "more_modals | A2.2 | gap | Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip. | ",
+"round": "r1",
+"task": "r1-051"
+},
+"97de748c5814430d": {
+"gate_key": "more_modals | B1.2 | mcq | Choose the correct option: The lights are off and nobody answers the door. They ___ be at home. | can't",
+"round": "r1",
+"task": "r1-070"
+},
+"984d7f117e39a64c": {
+"gate_key": "relative_clauses | A2.2 | text | Join with *who*: I have a cousin. He works in a hotel. | ",
+"round": "r1",
+"task": "r1-028"
+},
+"998b1e6643ad0dfd": {
+"gate_key": "more_modals | A2.2 | mcq | Choose the correct option: Don't wait for me. I ___ be late. | may",
+"round": "r1",
+"task": "r1-047"
+},
+"9a36d61076e012a9": {
+"gate_key": "relative_clauses | A2.2 | gap | I have a friend ___ lives in Canada. | ",
+"round": "r1",
+"task": "r1-015"
+},
+"9adac3f228496601": {
+"gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home. | can't",
+"round": "r1",
+"task": "r1-075"
+},
+"9d1a5e0fb79aee5b": {
+"gate_key": "more_modals | A2.2 | mcq | Choose the correct option: I'm not sure yet. We ___ go to the beach on Saturday. | might",
+"round": "r1",
+"task": "r1-042"
+},
+"9d56f9c7cc12e2e3": {
+"gate_key": "relative_clauses | A2.2 | order | Put the words in order. | my uncle has a shop that sells bikes",
+"round": "r1",
+"task": "r1-034"
+},
+"9d880fa0f74ecbae": {
+"gate_key": "relative_clauses | A2.2 | gap | Write the missing word: Do you like songs ___ tell a story? | ",
+"round": "r1",
+"task": "r1-026"
+},
+"a3d358ee4888a7e3": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Someone stole my bag ___ I was looking at the menu. | while",
+"round": "r1",
+"task": "r1-077"
+},
+"a8fb840bdd68e7bd": {
+"gate_key": "relative_clauses | A2.2 | gap | The women who ___ in the next office are my colleagues. | ",
+"round": "r1",
+"task": "r1-038"
+},
+"a9152b400c1e00fb": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: My phone rang ___ the meeting, and everyone looked at me. | during",
+"round": "r1",
+"task": "r1-076"
+},
+"ac9a303b621fd87d": {
+"gate_key": "more_modals | A2.2 | gap | I can't see Anna's car. She might ___ at home. (not / be) | ",
+"round": "r1",
+"task": "r1-050"
+},
+"afb4ab7df41ae4aa": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I made a lot of good friends ___ my time at university. | during",
+"round": "r1",
+"task": "r1-081"
+},
+"b1997f0c2d78a97a": {
+"gate_key": "relative_clauses | A2.2 | order | Put the words in order. | she wants a job which pays well",
+"round": "r1",
+"task": "r1-033"
+},
+"b52e2d3dc8fdc31f": {
+"gate_key": "more_modals | B1.1 | mcq | Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one. | were able to",
+"round": "r1",
+"task": "r1-091"
+},
+"b5d56c8fbe870141": {
+"gate_key": "more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ",
+"round": "r1",
+"task": "r1-046"
+},
+"c4e96662d685a3ba": {
+"gate_key": "more_modals | A2.2 | gap | You ___ ___ this film. It's very funny. | ",
+"round": "r1",
+"task": "r1-063"
+},
+"c898be990d19eb3c": {
+"gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: He still goes to work by bike ___ he is seventy. | although",
+"round": "r1",
+"task": "r1-097"
+},
+"cd8a089500910cea": {
+"gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: We took a taxi ___ it was raining very hard. | because",
+"round": "r1",
+"task": "r1-101"
+},
+"d1edf45b084f178f": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We lived in Spain ___ three years before we moved to Riga. | for",
+"round": "r1",
+"task": "r1-078"
+},
+"d3d95e8a49e89b3d": {
+"gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: We had a great holiday ___ the bad weather. | despite",
+"round": "r1",
+"task": "r1-096"
+},
+"d47f56ae674fe0f1": {
+"gate_key": "more_modals | A2.2 | gap | Write the missing word: The road is icy. You ___ fall, so be careful. | ",
+"round": "r1",
+"task": "r1-049"
+},
+"db025510c7d4db8b": {
+"gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ having a cold, Anna sang at the concert. | Despite",
+"round": "r1",
+"task": "r1-098"
+},
+"db6e4dee8b2ca95e": {
+"gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The fire was big, but everyone ___ get out of the building. | was able to",
+"round": "r1",
+"task": "r1-088"
+},
+"e0f9ac1958445388": {
+"gate_key": "more_modals | A2.2 | text | Make it negative: We might finish the project today. | ",
+"round": "r1",
+"task": "r1-054"
+},
+"e17ebea3505790fa": {
+"gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Everyone outside is wearing a coat and a hat. It ___ be very cold today. | must",
+"round": "r1",
+"task": "r1-073"
+},
+"e21be0296df89ac6": {
+"gate_key": "present_simple | A2.1 | text | Make a question with *What*: Your friends play chess. | ",
+"round": "r1",
+"task": "r1-014"
+},
+"e51bde269ce4f0ed": {
+"gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | Ask Tom. He might know the answer.",
+"round": "r1",
+"task": "r1-045"
+},
+"e53e6a053ecec58d": {
+"gate_key": "relative_clauses | A2.2 | gap | I know a man ___ ___ three languages. | ",
+"round": "r1",
+"task": "r1-036"
+},
+"e75b4941c6b25713": {
+"gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: The flat is quite small. ___, it is very close to the centre. | However",
+"round": "r1",
+"task": "r1-099"
+},
+"e981641208ce24aa": {
+"gate_key": "relative_clauses | A2.2 | gap | Write the missing word: The woman ___ teaches us yoga is from India. | ",
+"round": "r1",
+"task": "r1-025"
+},
+"ea35f432560c5c18": {
+"gate_key": "relative_clauses | A2.2 | mcq | Which sentence is NOT correct? | I know a woman which speaks five languages.",
+"round": "r1",
+"task": "r1-022"
+},
+"f45ef099d62e0143": {
+"gate_key": "more_modals | A2.2 | text | Say it another way with *may*: It's possible that she knows Anna. | ",
+"round": "r1",
+"task": "r1-055"
+},
+"f635bfe33714faf3": {
+"gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The concert was cancelled ___ the singer was ill. | because",
+"round": "r1",
+"task": "r1-105"
+},
+"fb6e6b42f38f5273": {
+"gate_key": "relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano",
+"round": "r1",
+"task": "r1-031"
+},
+"fbf84cdaf69e5651": {
+"gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ we were waiting for the train, it started to snow. | While",
+"round": "r1",
+"task": "r1-080"
+}
+}

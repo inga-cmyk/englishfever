@@ -2,7 +2,7 @@
 rel_subj (who / which / that as the subject) and might (might / may: possibility). 25 each, mix of the rules (3 choose, 4 drag,
 2 type a word, 1 whole sentence per 10). Approved by the teacher on 14 November after a second reader.
 Grammar checked against Murphy 92 (relative clauses) and 29-30 (may, might)."""
-from lib import rows, save, gp, od, mc, tx, mt
+from lib import rows, save, gp, od, mc, tx, mt, replaces
 
 REL = "Relative clauses"
 R_EN = "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*."
@@ -18,7 +18,8 @@ L = "A2.2"
 # choose (8)
 gp(REL, L, 3, "I have a friend ___ lives in Canada.", "who", R_EN, R_LV, bank=["who", "which", "what"])
 mc(REL, L, 2, "Choose the correct option: We stayed at a hotel ___ has a big pool.", "which", ["who", "what", "where"], R_EN, R_LV)
-mc(REL, L, 2, "Choose the correct option: I use an app ___ makes short videos.", "that", ["who", "what", "where"], R_EN, R_LV)
+mc(REL, L, 2, "Choose the correct option: I use an app ___ edits my videos.", "that", ["who", "what", "where"], R_EN, R_LV)
+replaces("that")   # blind check round 1: the app edits the videos
 mc(REL, L, 2, "Which sentence is correct?", "The man who fixed my car was very kind.",
    ["The man which fixed my car was very kind.", "The man who he fixed my car was very kind.", "The man what fixed my car was very kind."], *R_NO2)
 mc(REL, L, 2, "Which sentence is correct?", "I need a laptop that is light.",
@@ -35,10 +36,12 @@ gp(REL, L, 3, "Write the missing word: Do you like songs ___ tell a story?", "wh
 gp(REL, L, 3, "Write the missing word: On our trip we met a guide ___ spoke perfect English.", "who | that", R_EN, R_LV)
 # whole sentence (3)
 tx(REL, L, 4, "Join with *who*: I have a cousin. He works in a hotel.", "I have a cousin who works in a hotel.", *R_JOIN)
-tx(REL, L, 4, "Join the two sentences: We visited a museum. It has old cars.",
-   "We visited a museum which has old cars. | We visited a museum that has old cars.", *R_JOIN)
-tx(REL, L, 4, "Join the two sentences: The app helps me learn new words. It is free.",
-   "The app which helps me learn new words is free. | The app that helps me learn new words is free. | The app which is free helps me learn new words. | The app that is free helps me learn new words.", *R_JOIN)
+tx(REL, L, 4, "Join with *which*: We visited a museum. It has old cars.",
+   "We visited a museum which has old cars. | We visited a museum that has old cars. | We visited a museum which had old cars. | We visited a museum that had old cars.", *R_JOIN)
+replaces("Join the two sentences: We visited a museum. It has old cars.")
+tx(REL, L, 4, "Join with *which*: The app helps me learn new words. It is free.",
+   "The app which helps me learn new words is free. | The app that helps me learn new words is free. | The app which is free helps me learn new words. | The app that is free helps me learn new words. | The app which helps me to learn new words is free. | The app that helps me to learn new words is free. | The app, which is free, helps me learn new words.", *R_JOIN)
+replaces("Join the two sentences: The app helps me learn new words. It is free.")
 # word order (5)
 od(REL, L, 3, "Put the words in order.", "i have a neighbour who plays the piano", R_EN, R_LV)
 od(REL, L, 3, "Put the words in order.", "we stayed in a flat that had a garden", R_EN, R_LV)
@@ -51,7 +54,8 @@ gp(REL, L, 3, "We bought a car ___ uses very little petrol.", "which", R_EN, R_L
 gp(REL, L, 3, "The women who ___ in the next office are my colleagues.", "work", *R_AGR, bank=["work", "works", "working"])
 # matching (1): a learning task
 mt(REL, L, 2, "Match each beginning with its ending.", [("A baker is a person", "who makes bread."), ("A fridge is a machine", "which keeps food cold."),
-   ("A tourist is someone", "who travels for fun."), ("A map is a picture", "which shows roads and towns.")], R_EN, R_LV)
+   ("A tourist is someone", "who travels for fun."), ("A map is a drawing", "which shows roads and towns.")], R_EN, R_LV)
+replaces("A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a picture = which shows roads and towns.")
 
 MOD = "More modals: might, could, be able to"
 M_EN = "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*"
@@ -67,7 +71,7 @@ M_ANY = ("*might, may* and *could* all say that something is possible here.",
 mc(MOD, L, 2, "Choose the correct option: Take an umbrella. It might ___ later.", "rain", ["rains", "to rain", "raining"], M_EN, M_LV)
 mc(MOD, L, 2, "Which sentence is correct?", "She may be at home now.", ["She may is at home now.", "She may to be at home now.", "She may being at home now."], M_EN, M_LV)
 mc(MOD, L, 2, "Choose the correct option: I'm not sure yet. We ___ go to the beach on Saturday.", "might", ["might to", "may to", "maybe"], M_EN, M_LV)
-mc(MOD, L, 2, "Choose the correct option: He's very tired. He ___ not come to the party.", "might", ["doesn't", "is", "don't"], *M_NEG)
+mc(MOD, L, 2, "Choose the correct option: He ___ to the party tonight.", "might not come", ["doesn't might come", "might not to come", "might not comes"], *M_NEG)
 mc(MOD, L, 2, "Which sentence is NOT correct?", "Maybe it will might snow tonight.",
    ["Our flight might be late.", "They may not have time today.", "I might buy a new phone."],
    "Don't use *will* and *might* together: *It might snow.* or *Maybe it will snow.*", "Nelieto *will* un *might* kopā: *It might snow.* vai *Maybe it will snow.*")
@@ -82,7 +86,7 @@ gp(MOD, L, 3, "I can't see Anna's car. She might ___ at home. (not / be)", "not 
 gp(MOD, L, 3, "Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip.", "might | may | could", *M_ANY)
 gp(MOD, L, 3, "Write the missing word: I'm not sure, but they ___ have a map of the town at the desk.", "might | may | could", *M_ANY)
 # whole sentence (3)
-tx(MOD, L, 4, "Rewrite with *might*: Perhaps the concert tickets are sold out.", "The concert tickets might be sold out.", M_EN, M_LV)
+tx(MOD, L, 4, "Rewrite with *might*: Perhaps the concert tickets are sold out.", "The concert tickets might be sold out. | The tickets for the concert might be sold out. | The concert tickets might have sold out.", M_EN, M_LV)
 tx(MOD, L, 4, "Make it negative: We might finish the project today.", "We might not finish the project today. | We mightn't finish the project today.", *M_NEG)
 tx(MOD, L, 4, "Say it another way with *may*: It's possible that she knows Anna.", "She may know Anna.", M_EN, M_LV)
 # word order (5)
@@ -96,8 +100,7 @@ gp(MOD, L, 3, "It ___ ___ tomorrow, so I'm taking my boots.", "might / snow", M_
 gp(MOD, L, 3, "She may ___ ___ the meeting today.", "not / join", *M_NEG, bank=["not", "join", "doesn't", "joins"])
 gp(MOD, L, 3, "You ___ ___ this film. It's very funny.", "might / like", M_EN, M_LV, bank=["might", "like", "likes", "liking"])
 # matching (1): a learning task
-mt(MOD, L, 2, "Match each sentence with its meaning.", [("It will rain.", "I'm sure about the rain."), ("She might call.", "Perhaps she will call."),
-   ("He won't come.", "I'm sure he will stay at home."), ("They might not win.", "Perhaps they will lose.")],
+mt(MOD, L, 2, "Match each sentence with its meaning.", [("She'll call.", "Yes, I'm sure."), ("She might call.", "Yes, perhaps."), ("She won't call.", "No, I'm sure."), ("She might not call.", "Perhaps not.")],
    "*will* = sure; *might* = perhaps. *won't* and *might not* are the negatives.", "*will* = droši; *might* = varbūt. *won't* un *might not* ir nolieguma formas.")
 
 save("a2-rel-might-1.csv")   # approved by the teacher, 14 November

@@ -1,0 +1,257 @@
+[
+ {
+  "id": "r1-002",
+  "src": "built-in",
+  "decision": "ok",
+  "reason": "Not naming the form is intended (rules 3 Nov/6 Nov); the check needs a timetable verb + at + time, so a past form (started, opened, left) is refused; shop opening times are a normal present-simple timetable use."
+ },
+ {
+  "id": "r1-003",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Add answers: \"If I had seen the sign, I wouldn't have parked there and I wouldn't have got a fine.\" | \"If I had seen the sign, I wouldn't have parked there and wouldn't have got a fine.\" | \"If I had seen the sign, I wouldn't have parked there or got a fine.\" | \"If I had seen the sign, I wouldn't have parked there and got a fine.\" | \"If I had seen the sign, I would have parked somewhere else.\" | the same five with *gotten* where *got a fine* occurs (the grader adds the reversed clause order and the contractions).",
+  "reason": "Both results are in the prompt; the key accepts only one of them."
+ },
+ {
+  "id": "r1-004",
+  "src": "built-in",
+  "decision": "ok",
+  "reason": "Reader only notes that *If I'd have known* is informal; the key and the explanation already say it is not the standard form."
+ },
+ {
+  "id": "r1-005",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Gap 2: add \"might be :: Correct too: *might be* = perhaps I would be fluent; *would be* is sure. :: Arī pareizi: *might be* = varbūt es tagad runātu brīvi; *would be* = noteikti.\" and \"could be :: Correct too: *could be* = it would be possible for me to be fluent. :: Arī pareizi: *could be* = es tagad varētu runāt brīvi.\" (reader 1's other answers are already accepted).",
+  "reason": "*might be / could be* make a correct mixed conditional (Murphy 38: would / could / might); not accepted."
+ },
+ {
+  "id": "r1-006",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Replace the wrong option *where I work did* with *if I worked* (a believable mistake: the yes/no pattern for a *Where* question).",
+  "reason": "*where I work did* is not a mistake anyone makes; the task's own error type IND-YESNO has no option."
+ },
+ {
+  "id": "r1-008",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Question: 'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+  "reason": "British English per Murphy for news with *finally*: present perfect. The prompt is model text."
+ },
+ {
+  "id": "r1-009",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "For every accepted answer add the same sentence with *my cough* in place of *that cough*. Add: \"My sister said (that) I really should see a doctor about that / my cough.\" and \"My sister told me (that) I really should see a doctor about that / my cough.\" (each combination written out).",
+  "reason": "In a report *that cough* naturally becomes *my cough*; both readers wrote it and were refused. *really* kept in a *said / told me … should* report is also refused."
+ },
+ {
+  "id": "r1-011",
+  "src": "built-in",
+  "decision": "fix",
+  "change": "Question: Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? Answers: \"Could you tell me why the order hasn't arrived?\" | \"Could you please tell me why the order hasn't arrived?\" | \"Could you tell me why the order hasn't arrived, please?\" | \"Could you tell me why the order hasn't arrived yet?\" Hint regex \\bhas the order\\b: \"Use statement order after *why*: *… why the order hasn't arrived.*\" Why: \"Polite phrase + *why* + subject + verb in statement order: *why the order hasn't arrived*, not *why hasn't the order arrived*.\"",
+  "reason": "*Make it indirect* is a grammar term, gives no start, and *Why didn't the order arrive?* is not British English for an order still missing (both readers)."
+ },
+ {
+  "id": "r1-013",
+  "src": "a2-big-1.csv:149",
+  "decision": "ok",
+  "reason": "The wrong sentence is wrong and *is / are* agreement is half of the A2 passive form (*am / is / are* + 3rd form); the explanation says why."
+ },
+ {
+  "id": "r1-016",
+  "src": "a2-rel-might-1.csv:3",
+  "decision": "ok",
+  "reason": "*that* is also right but not offered; one option fits."
+ },
+ {
+  "id": "r1-017",
+  "src": "a2-rel-might-1.csv:4",
+  "decision": "fix",
+  "change": "Question: Choose the correct option: I use an app ___ edits my videos. (options and key unchanged: *that* correct; who / what / where)",
+  "reason": "An app that *makes* videos reads oddly (the user makes them); the model sentence should be natural."
+ },
+ {
+  "id": "r1-023",
+  "src": "a2-rel-might-1.csv:10",
+  "decision": "ok",
+  "reason": "The reader's answer (*who / which / that*) is already in the key."
+ },
+ {
+  "id": "r1-024",
+  "src": "a2-rel-might-1.csv:11",
+  "decision": "ok",
+  "reason": "The reader's answer (*who / which / that*) is already in the key."
+ },
+ {
+  "id": "r1-025",
+  "src": "a2-rel-might-1.csv:12",
+  "decision": "ok",
+  "reason": "The reader's answer (*who / which / that*) is already in the key."
+ },
+ {
+  "id": "r1-026",
+  "src": "a2-rel-might-1.csv:13",
+  "decision": "ok",
+  "reason": "The reader's answer (*who / which / that*) is already in the key."
+ },
+ {
+  "id": "r1-027",
+  "src": "a2-rel-might-1.csv:14",
+  "decision": "ok",
+  "reason": "The reader's answer (*who / which / that*) is already in the key."
+ },
+ {
+  "id": "r1-028",
+  "src": "a2-rel-might-1.csv:15",
+  "decision": "ok",
+  "reason": "The instruction says *Join with who*; *that* does not follow it."
+ },
+ {
+  "id": "r1-029",
+  "src": "a2-rel-might-1.csv:16",
+  "decision": "fix",
+  "change": "Question: Join with *which*: We visited a museum. It has old cars. Keep both answers; add \"We visited a museum which had old cars. :: Correct too: *had* follows *visited*; *has* says the museum still has them. :: Arī pareizi: *had* saskan ar *visited*; *has* nozīmē, ka muzejā tās ir joprojām.\" and the same with *that*.",
+  "reason": "No joining word is named, so *and it has*, *with old cars* also join the sentences; *which had* (after *visited*) is correct and refused."
+ },
+ {
+  "id": "r1-030",
+  "src": "a2-rel-might-1.csv:17",
+  "decision": "fix",
+  "change": "Question: Join with *which*: The app helps me learn new words. It is free. Add answers: \"The app which helps me to learn new words is free.\" | \"The app that helps me to learn new words is free.\" | \"The app, which is free, helps me learn new words.\"",
+  "reason": "No joining word is named (*and it is free* is correct); *helps me to learn* and the commas version are refused. A clause inside the subject is A2 in Murphy (Essential Grammar), so the level stays."
+ },
+ {
+  "id": "r1-031",
+  "src": "a2-rel-might-1.csv:18",
+  "decision": "ok",
+  "reason": "*I have the neighbour who plays a piano* is not natural English; only the key order is."
+ },
+ {
+  "id": "r1-039",
+  "src": "a2-rel-might-1.csv:26",
+  "decision": "fix",
+  "change": "Left card: *A map is a drawing* (pair: which shows roads and towns.).",
+  "reason": "*A map is a picture* is a loose definition (both readers)."
+ },
+ {
+  "id": "r1-043",
+  "src": "a2-rel-might-1.csv:30",
+  "decision": "fix",
+  "change": "Question: Choose the correct option: He ___ to the party tonight. Options: *might not come* (correct) | *doesn't might come* | *might not to come* | *might not comes*.",
+  "reason": "With *not* after the gap the wrong options give *doesn't not come / is not come*: nobody writes them, so the task is solved by elimination. The situation is not needed (no wrong option is correct anywhere)."
+ },
+ {
+  "id": "r1-048",
+  "src": "a2-rel-might-1.csv:35",
+  "decision": "ok",
+  "reason": "*may / could* (and *can*) are already in the key."
+ },
+ {
+  "id": "r1-049",
+  "src": "a2-rel-might-1.csv:36",
+  "decision": "ok",
+  "reason": "*may / could* (and *can*) are already in the key."
+ },
+ {
+  "id": "r1-051",
+  "src": "a2-rel-might-1.csv:38",
+  "decision": "ok",
+  "reason": "*may / could* (and *can*) are already in the key."
+ },
+ {
+  "id": "r1-052",
+  "src": "a2-rel-might-1.csv:39",
+  "decision": "ok",
+  "reason": "*may / could* (and *can*) are already in the key."
+ },
+ {
+  "id": "r1-053",
+  "src": "a2-rel-might-1.csv:40",
+  "decision": "fix",
+  "change": "Add answer: \"The concert tickets might have sold out. :: Correct too: *might have sold out* = perhaps all the tickets have already been sold. :: Arī pareizi: *might have sold out* = varbūt visas biļetes jau ir izpārdotas.\" and \"The tickets for the concert might be sold out.\"",
+  "reason": "*might have sold out* is correct English with the same meaning; refused."
+ },
+ {
+  "id": "r1-054",
+  "src": "a2-rel-might-1.csv:41",
+  "decision": "ok",
+  "reason": "*mightn't* is already accepted."
+ },
+ {
+  "id": "r1-064",
+  "src": "a2-rel-might-1.csv:51",
+  "decision": "fix",
+  "change": "Pairs: She'll call. = I'm sure she will call. | She might call. = Perhaps she will call. | She won't call. = I'm sure she will not call. | She might not call. = Perhaps she will not call.",
+  "reason": "Pairs are matched by the subject (rain / she / he / they), not by *will / might*; *He won't come ≠ he will stay at home*; *I'm sure about the rain* is unnatural."
+ },
+ {
+  "id": "r1-065",
+  "src": "b1-cond-rep-1.csv:219",
+  "decision": "ok",
+  "reason": "*He asked me did I like the job* is not standard (Murphy 48); *asked if I had liked* is a correct sentence, as the instruction needs."
+ },
+ {
+  "id": "r1-067",
+  "src": "b1-new-3.csv:144",
+  "decision": "fix",
+  "change": "Question: Make a sentence with *decide*: I will go home early. Add answers: \"I've decided to go home early.\" | \"I've decided I'll go home early. :: Correct too, but the usual pattern is *decide to* + verb: *I've decided to go home early.* :: Arī pareizi, bet parasti saka *decide to* + darbības vārds: *I've decided to go home early.*\" with the same note on \"I've decided that I'll go home early.\", \"I have decided (that) I will go home early.\", \"I decided (that) I would go home early.\"",
+  "reason": "*I've decided* is refused (the grader does not expand *'ve*); *I've decided (that) I'll go* is correct; *decide* is not marked as the word to use."
+ },
+ {
+  "id": "r1-068",
+  "src": "b1-tenses-1.csv:64",
+  "decision": "teacher",
+  "reason": "A *Why* question in the present continuous is A2 (rule 8); the brief forbids relabelling outside the five decisions.",
+  "question": "r1-068 *Make a question with Why: She is crying.* is A2 content labelled B1.1: move it to A2.1 (recommended) or keep it at B1.1 as review?"
+ },
+ {
+  "id": "r1-070",
+  "src": "zz-blind-pairs-1.csv:2",
+  "decision": "ok",
+  "reason": "*mustn't* is not used for being sure something is untrue in British English (Murphy 28: *can't*); the contracted *mustn't* is not the American deduction form either."
+ },
+ {
+  "id": "r1-072",
+  "src": "zz-blind-pairs-1.csv:4",
+  "decision": "ok",
+  "reason": "*mustn't* is not used for being sure something is untrue in British English (Murphy 28: *can't*); the contracted *mustn't* is not the American deduction form either."
+ },
+ {
+  "id": "r1-074",
+  "src": "zz-blind-pairs-1.csv:6",
+  "decision": "ok",
+  "reason": "*mustn't* is not used for being sure something is untrue in British English (Murphy 28: *can't*); the contracted *mustn't* is not the American deduction form either."
+ },
+ {
+  "id": "r1-075",
+  "src": "zz-blind-pairs-1.csv:7",
+  "decision": "ok",
+  "reason": "*mustn't* is not used for being sure something is untrue in British English (Murphy 28: *can't*); the contracted *mustn't* is not the American deduction form either."
+ },
+ {
+  "id": "r1-088",
+  "src": "zz-blind-pairs-1.csv:20",
+  "decision": "ok",
+  "reason": "Murphy 26: *could* is not used for one success in a positive sentence; that is exactly the point, and the verbs are not *see / hear / understand*."
+ },
+ {
+  "id": "r1-089",
+  "src": "zz-blind-pairs-1.csv:21",
+  "decision": "ok",
+  "reason": "Murphy 26: *could* is not used for one success in a positive sentence; that is exactly the point, and the verbs are not *see / hear / understand*."
+ },
+ {
+  "id": "r1-091",
+  "src": "zz-blind-pairs-1.csv:23",
+  "decision": "ok",
+  "reason": "Murphy 26: *could* is not used for one success in a positive sentence; that is exactly the point, and the verbs are not *see / hear / understand*."
+ },
+ {
+  "id": "r1-092",
+  "src": "zz-blind-pairs-1.csv:24",
+  "decision": "ok",
+  "reason": "Murphy 26: *could* is not used for one success in a positive sentence; that is exactly the point, and the verbs are not *see / hear / understand*."
+ }
+]

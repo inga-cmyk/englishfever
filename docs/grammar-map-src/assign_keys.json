@@ -13742,5 +13742,41 @@
 "rep_questions | B2.1 | order | Put all the words in order. More than one answer is possible. | she asked if I could help her": [
 "rep_q_yn",
 "read"
+],
+"rep_verbs | B2.2 | gap | 'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam. | ": [
+"rv_prep_ing",
+"read"
+],
+"ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ": [
+"iq_wh",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Choose the correct option: I use an app ___ edits my videos. | that": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has old cars. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.": [
+"rel_subj",
+"read"
+],
+"more_modals | A2.2 | mcq | Choose the correct option: He ___ to the party tonight. | might not come": [
+"might",
+"read"
+],
+"more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Yes, I'm sure. ; She might call. = Yes, perhaps. ; She won't call. = No, I'm sure. ; She might not call. = Perhaps not.": [
+"might",
+"read"
+],
+"verb_patterns | A2.2 | text | Make a sentence with *decide*: I will go home early. | ": [
+"vp_to",
+"read"
 ]
 }

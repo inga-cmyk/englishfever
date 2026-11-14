@@ -7770,6 +7770,32 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Third conditional: *if* + Past Perfect, *would have* + 3. forma."
 },
 {
+"id": "ct-B21-3a-r3",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.",
+"answers": [
+[
+"If I had seen the sign, I wouldn't have parked there.",
+"If I had seen the sign, I wouldn't have got a fine.",
+"If I had seen the sign, I would not have got a fine.",
+"If I had seen the sign, I wouldn't have gotten a fine.",
+"If I had seen the sign, I wouldn't have been fined.",
+"If I had seen the sign, I would not have parked there.",
+"I wouldn't have parked there if I had seen the sign.",
+"I wouldn't have got a fine if I had seen the sign.",
+"I would not have got a fine if I had seen the sign.",
+"I wouldn't have gotten a fine if I had seen the sign.",
+"I wouldn't have been fined if I had seen the sign.",
+"I would not have parked there if I had seen the sign."
+]
+],
+"why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
+"hints": []
+},
+{
 "id": "cm-C11-1a-r5",
 "skill": "cond_mixed",
 "level": "C1.1",
@@ -7994,6 +8020,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "When a fact is still true, the tense does not have to go back: *The teacher said the Earth goes round the Sun.*",
 "wrong_why": {},
 "wrong_why_lv": {}
+},
+{
+"id": "rq-B12-1a-r2",
+"skill": "rep_questions",
+"level": "B1.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Choose the correct option: 'Where do you work?' She asked me ___.",
+"correct": "where I worked",
+"wrong": [
+"where did I work",
+"where do I work",
+"where I work did"
+],
+"why": "In a reported question we use normal word order (subject + verb) and no *do / does / did.*",
+"wrong_why": {},
+"why_lv": "Netiešajā jautājumā lieto parasto vārdu secību (teik. priekšmets + darbības vārds) un bez *do / does / did*."
 },
 {
 "id": "rq-B22-1a-r2",
@@ -8255,6 +8298,48 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "model": "Mia thanked the team for everything they had done.",
 "why": "Compare your sentence with the model answer."
+},
+{
+"id": "ip-B21-3a-r3",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 3,
+"kind": "text",
+"q": "Make it indirect: Why didn't the order arrive?",
+"answers": [
+[
+"Could you tell me why the order didn't arrive?",
+"Do you know why the order didn't arrive?",
+"Can you tell me why the order didn't arrive?",
+"I'd like to know why the order didn't arrive.",
+"Would you mind telling me why the order didn't arrive?",
+"Could you please tell me why the order didn't arrive?",
+"Do you happen to know why the order didn't arrive?",
+"I wonder why the order didn't arrive.",
+"I was wondering why the order didn't arrive.",
+"Could you tell me why the order did not arrive?",
+"Do you know why the order did not arrive?",
+"Could you tell me why the order didn't arrive, please?",
+"Can you please tell me why the order didn't arrive?",
+"Would you tell me why the order didn't arrive?",
+"Could you please tell me why the order did not arrive?",
+"Could you tell me why the order did not arrive, please?",
+"Can you please tell me why the order did not arrive?",
+"Would you mind telling me why the order did not arrive?",
+"Do you happen to know why the order did not arrive?",
+"I wonder why the order did not arrive.",
+"I was wondering why the order did not arrive.",
+"I'd like to know why the order did not arrive.",
+"Would you tell me why the order did not arrive?"
+]
+],
+"why": "Polite phrase + *why* + subject + verb in statement order: *why the order didn't arrive*, not *why didn't the order arrive*.",
+"hints": [
+[
+"\\bdid\\b",
+"In the indirect part use statement order: *... why the order didn't arrive.*"
+]
+]
 },
 {
 "id": "ip-B21-5a-r2",

@@ -64,7 +64,10 @@ def norm(s):
 def export(name, src, keys_file, limit):
     items = dump(src)
     want = None
-    if keys_file: want = set(l.rstrip("\n") for l in open(keys_file, encoding="utf-8") if l.strip())
+    if keys_file and keys_file != "unchecked": want = set(l.rstrip("\n") for l in open(keys_file, encoding="utf-8") if l.strip())
+    if keys_file == "unchecked":   # every task the blind gate stops: not in the records and not in the debt of the gate's start
+        from item_gates_test import BLIND, BLIND_DEBT
+        want = {key(i) for i in items if task_hash(i) not in BLIND and task_hash(i) not in BLIND_DEBT}
     names = {"zz-blind-" + os.path.basename(f) for f in src}
     sel = [i for i in items if (want is not None and key(i) in want) or i["src"].split(":")[0] in names or (want is None and not src)]
     if limit: sel = sel[:limit]

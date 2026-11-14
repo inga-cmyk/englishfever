@@ -128,7 +128,7 @@ For the level test (type the form, nothing to guess) and for practice. Each task
 38. *___ wins the competition will get a trip to Lisbon. (who)* → **Whoever** · catches: *Who* · Indirect questions, more uses (I don't know what to do)
    - EN: *Whoever* = it does not matter who: the person who.
    - LV: *Whoever* = nav svarīgi, kurš: tas, kurš.
-39. *It depends on ___ the budget is approved.* → **whether** · catches: *if* · Indirect questions, more uses (I don't know what to do)
+39. *It depends on ___ the budget is approved or not.* → **whether** · catches: *if* · Indirect questions, more uses (I don't know what to do)
    - EN: After a preposition use *whether*, not *if*.
    - LV: Aiz prievārda lieto *whether*, nevis *if*.
 40. *It's about time you ___ to the dentist. (go)* → **went** · catches: *go* · Unreal time and preferences (it's high time, I'd rather)

@@ -1781,5 +1781,62 @@
     "11": "yes"
    }
   }
+ ],
+ "rq-order-1.csv": [
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "do you know where mark works"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "5": ""
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "could you tell me what time the bank closes"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "5": ""
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "do you know how much the tickets are"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "5": ""
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "do you know if there is a café near the station"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "5": ""
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "do you know where the car park is"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "5": ""
+   }
+  }
  ]
 }

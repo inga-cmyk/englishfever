@@ -1,0 +1,205 @@
+[
+ {
+  "id": "r5-001",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "where",
+   "my",
+   "me",
+   "office",
+   "was",
+   "asked",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-002",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "asked",
+   "she",
+   "came",
+   "me",
+   "when",
+   "bus",
+   "the",
+   "usually"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-003",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "arrived",
+   "had",
+   "parcel",
+   "asked",
+   "the",
+   "she",
+   "if"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-004",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "deliver",
+   "asked",
+   "sunday",
+   "if",
+   "on",
+   "the",
+   "he",
+   "could",
+   "shop"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-005",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "her",
+   "keys",
+   "were",
+   "asked",
+   "where",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-006",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "long",
+   "she",
+   "how",
+   "had",
+   "shop",
+   "the",
+   "been",
+   "open",
+   "asked"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-007",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "closed",
+   "asked",
+   "why",
+   "shop",
+   "the",
+   "was",
+   "he"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-008",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "where",
+   "do",
+   "works",
+   "you",
+   "mark",
+   "know"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-009",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "closes",
+   "could",
+   "time",
+   "me",
+   "you",
+   "tell",
+   "the",
+   "what",
+   "bank"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-010",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "how",
+   "tickets",
+   "know",
+   "are",
+   "much",
+   "you",
+   "the",
+   "do"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-011",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "is",
+   "a",
+   "you",
+   "do",
+   "café",
+   "if",
+   "near",
+   "there",
+   "station",
+   "the",
+   "know"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r5-012",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "is",
+   "know",
+   "park",
+   "car",
+   "where",
+   "you",
+   "do",
+   "the"
+  ],
+  "note": "the learner puts all the cards in order"
+ }
+]

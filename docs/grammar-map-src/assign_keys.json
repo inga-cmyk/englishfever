@@ -14046,5 +14046,53 @@
 "rep_questions | B1.2 | text | 'Why are you late?'\nFinish the sentence: The teacher asked us why … | ": [
 "rep_q_wh",
 "read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | she asked me where my office was": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | she asked me when the bus usually came": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | she asked if the parcel had arrived": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | he asked if the shop could deliver on sunday": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | she asked where her keys were": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B2.1 | order | Put the words in order. | she asked how long the shop had been open": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | he asked why the shop was closed": [
+"rep_q_wh",
+"read"
+],
+"ind_polite | B1.1 | order | Put the words in order to make a question. | do you know where mark works": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | order | Put the words in order to make a question. | could you tell me what time the bank closes": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | order | Put the words in order to make a question. | do you know how much the tickets are": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | order | Put the words in order to make a question. | do you know if there is a café near the station": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | order | Put the words in order to make a question. | do you know where the car park is": [
+"iq_wh",
+"read"
 ]
 }

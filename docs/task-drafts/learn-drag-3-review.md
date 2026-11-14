@@ -12,7 +12,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 3. *order* · Put the words in order. → **if she were more patient she wouldn't have shouted at him** · also accepted: she wouldn't have shouted at him if she were more patient · practice only
    - same sentence as batch 3, no. 3: Which sentence is NOT correct? → If she would be more patient, she wouldn't have shouted at him.
 4. *gap* · If he ___ more confident, he ___ asked for a pay rise. → **were / would have** · words: were / would have / would be / will have · practice only
-   - same sentence as batch 3, no. 4: He isn't a confident person, so he didn't ask for a pay rise. Choose the correct sentence. → If he were more confident, he would have asked for a pay rise.
+   - same sentence as batch 3, no. 4: Which sentence is correct? → If he were more confident, he would have asked for a pay rise.
 
 ## Mixed conditionals · C1.1
 
@@ -32,20 +32,20 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 10. *gap* · He ___ ___ that the shop was closed. → **told / me** · words: told / me / said / to · practice only
    - same sentence as batch 3, no. 10: Which sentence is NOT correct? → He told that the shop was closed.
 11. *gap* · My sister said she ___ call me as soon as she ___. → **would / landed** · words: would / landed / will / would land · practice only
-   - same sentence as batch 3, no. 11: Choose the correct report of your sister's words to you: 'I'll call you as soon as I land.' → My sister said she would call me as soon as she landed.
+   - same sentence as batch 3, no. 11: Which sentence is correct? → My sister said she would call me as soon as she landed.
 12. *order* · Put the words in order. → **the agent said I might need a visa** · practice only
-   - same sentence as batch 3, no. 12: Choose the correct report of the agent's words to you: 'You might need a visa.' → The agent said I might need a visa.
+   - same sentence as batch 3, no. 12: Which sentence is correct? → The agent said I might need a visa.
 
 ## Reported questions and requests · B2.2
 
 13. *order* · Put the words in order. → **she asked me how to start** · practice only
-   - same sentence as batch 3, no. 13: Choose the correct report of her question to you: 'How should I start?' → She asked me how to start.
+   - same sentence as batch 3, no. 13: Which sentence is correct? → She asked me how to start.
 14. *order* · Put the words in order. → **they asked what time they should arrive** · practice only
    - same sentence as batch 3, no. 14: Report this. Start with *They asked*: 'What time should we arrive?' → They asked what time they should arrive.
 15. *gap* · He asked whether or not ___ ___ coming. → **I / was** · words: I / was / did / am · practice only
    - same sentence as batch 3, no. 15: Which sentence is NOT correct? → He asked whether or not was I coming.
 16. *gap* · Mr Ozols asked whether the invoices ___ ___ sent. → **had / been** · words: had / been / did / is · practice only
-   - same sentence as batch 3, no. 16: Choose the correct report of Mr Ozols's question: 'Have the invoices been sent?' → Mr Ozols asked whether the invoices had been sent.
+   - same sentence as batch 3, no. 16: Which sentence is correct? → Mr Ozols asked whether the invoices had been sent.
 
 ## Reporting verbs (suggest, admit, promise...) · C1.2
 

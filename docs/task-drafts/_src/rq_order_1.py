@@ -28,7 +28,8 @@ def typed(t, lv, quote, start, conts, why):
 
 
 def order(t, lv, quote, sentence, why, question=False, also=None):
-    od(t, lv, 3, f"'{quote}'\nPut the words in order" + (" to make a question." if question else "."), sentence, *why, also=also)
+    """Only 'Put the words in order.': the direct question is not shown in a word-order task (teacher, 14 November)."""
+    od(t, lv, 3, "Put the words in order" + (" to make a question." if question else "."), sentence, *why, also=also)
 
 
 # ---- reported questions (B1.2; how long B2.1) ----

@@ -1,0 +1,364 @@
+{
+ "r5-001": {
+  "hash": "fc0c016ed85f9eb0",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked me where my office was",
+  "src": "rq-order-1.csv:5",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked me where my office was",
+   "also": []
+  },
+  "item": {
+   "id": "c-2671",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "she asked me where my office was",
+   "answers": [
+    [
+     "she asked me where my office was"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:5"
+  }
+ },
+ "r5-002": {
+  "hash": "563e7dfe4864353d",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked me when the bus usually came",
+  "src": "rq-order-1.csv:9",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked me when the bus usually came",
+   "also": []
+  },
+  "item": {
+   "id": "c-2675",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "she asked me when the bus usually came",
+   "answers": [
+    [
+     "she asked me when the bus usually came"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:9"
+  }
+ },
+ "r5-003": {
+  "hash": "fb40d619cfaf6f42",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked if the parcel had arrived",
+  "src": "rq-order-1.csv:13",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked if the parcel had arrived",
+   "also": []
+  },
+  "item": {
+   "id": "c-2679",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A reported yes/no question: *if* + subject + verb, one step back in time (*if I had finished*), not *if had I finished*.",
+   "why_lv": "Atstāstīts jautājums ar atbildi jā / nē: *if* + teikuma priekšmets + darbības vārds, laiks soli atpakaļ (*if I had finished*), nevis *if had I finished*.",
+   "sentence": "she asked if the parcel had arrived",
+   "answers": [
+    [
+     "she asked if the parcel had arrived"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "rq-order-1.csv:13"
+  }
+ },
+ "r5-004": {
+  "hash": "9fa455c3a25a9c62",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | he asked if the shop could deliver on sunday",
+  "src": "rq-order-1.csv:17",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "order",
+   "sentence": "he asked if the shop could deliver on sunday",
+   "also": []
+  },
+  "item": {
+   "id": "c-2683",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A reported yes/no question: *if* + subject + verb, one step back in time (*if I had finished*), not *if had I finished*.",
+   "why_lv": "Atstāstīts jautājums ar atbildi jā / nē: *if* + teikuma priekšmets + darbības vārds, laiks soli atpakaļ (*if I had finished*), nevis *if had I finished*.",
+   "sentence": "he asked if the shop could deliver on sunday",
+   "answers": [
+    [
+     "he asked if the shop could deliver on sunday",
+     "he asked on sunday if the shop could deliver",
+     "on sunday he asked if the shop could deliver"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "rq-order-1.csv:17"
+  }
+ },
+ "r5-005": {
+  "hash": "2aa0bbc629f57311",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked where her keys were",
+  "src": "rq-order-1.csv:21",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked where her keys were",
+   "also": []
+  },
+  "item": {
+   "id": "c-2687",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "she asked where her keys were",
+   "answers": [
+    [
+     "she asked where her keys were"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:21"
+  }
+ },
+ "r5-006": {
+  "hash": "efd28a6cf44ccd40",
+  "gate_key": "rep_questions | B2.1 | order | Put the words in order. | she asked how long the shop had been open",
+  "src": "rq-order-1.csv:25",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked how long the shop had been open",
+   "also": []
+  },
+  "item": {
+   "id": "c-2691",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "she asked how long the shop had been open",
+   "answers": [
+    [
+     "she asked how long the shop had been open"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:25"
+  }
+ },
+ "r5-007": {
+  "hash": "5983f638aaccbb50",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | he asked why the shop was closed",
+  "src": "rq-order-1.csv:29",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "he asked why the shop was closed",
+   "also": []
+  },
+  "item": {
+   "id": "c-2695",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "he asked why the shop was closed",
+   "answers": [
+    [
+     "he asked why the shop was closed"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:29"
+  }
+ },
+ "r5-008": {
+  "hash": "2f11b8089a00745a",
+  "gate_key": "ind_polite | B1.1 | order | Put the words in order to make a question. | do you know where mark works",
+  "src": "rq-order-1.csv:33",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "do you know where mark works",
+   "also": []
+  },
+  "item": {
+   "id": "c-2699",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Anna lives*, with no *does*; the tense stays.",
+   "why_lv": "Pēc *Do you know*…? / *Could you tell me*…? vārdu secība ir kā apgalvojumā: *where Anna lives*, bez *does*; laiks nemainās.",
+   "sentence": "do you know where mark works",
+   "answers": [
+    [
+     "do you know where mark works"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "rq-order-1.csv:33"
+  }
+ },
+ "r5-009": {
+  "hash": "6d10ef0e8fdf57a2",
+  "gate_key": "ind_polite | B1.1 | order | Put the words in order to make a question. | could you tell me what time the bank closes",
+  "src": "rq-order-1.csv:37",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "could you tell me what time the bank closes",
+   "also": []
+  },
+  "item": {
+   "id": "c-2703",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Anna lives*, with no *does*; the tense stays.",
+   "why_lv": "Pēc *Do you know*…? / *Could you tell me*…? vārdu secība ir kā apgalvojumā: *where Anna lives*, bez *does*; laiks nemainās.",
+   "sentence": "could you tell me what time the bank closes",
+   "answers": [
+    [
+     "could you tell me what time the bank closes"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "rq-order-1.csv:37"
+  }
+ },
+ "r5-010": {
+  "hash": "a982e98830a650b6",
+  "gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know how much the tickets are",
+  "src": "rq-order-1.csv:41",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "do you know how much the tickets are",
+   "also": []
+  },
+  "item": {
+   "id": "c-2707",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Anna lives*, with no *does*; the tense stays.",
+   "why_lv": "Pēc *Do you know*…? / *Could you tell me*…? vārdu secība ir kā apgalvojumā: *where Anna lives*, bez *does*; laiks nemainās.",
+   "sentence": "do you know how much the tickets are",
+   "answers": [
+    [
+     "do you know how much the tickets are"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "rq-order-1.csv:41"
+  }
+ },
+ "r5-011": {
+  "hash": "ca0d9ae98ced06d7",
+  "gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know if there is a café near the station",
+  "src": "rq-order-1.csv:45",
+  "point": "iq_yn",
+  "key": {
+   "kind": "order",
+   "sentence": "do you know if there is a café near the station",
+   "also": []
+  },
+  "item": {
+   "id": "c-2711",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "A yes/no question inside *Do you know…?*: *if* + subject + verb: *if there is*, not *if is there*.",
+   "why_lv": "Jautājums ar atbildi jā / nē pēc *Do you know*…?: *if* + teikuma priekšmets + darbības vārds: *if there is*, nevis *if is there*.",
+   "sentence": "do you know if there is a café near the station",
+   "answers": [
+    [
+     "do you know if there is a café near the station"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "rq-order-1.csv:45"
+  }
+ },
+ "r5-012": {
+  "hash": "56dc9cf562ce44bd",
+  "gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know where the car park is",
+  "src": "rq-order-1.csv:49",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "do you know where the car park is",
+   "also": []
+  },
+  "item": {
+   "id": "c-2715",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Anna lives*, with no *does*; the tense stays.",
+   "why_lv": "Pēc *Do you know*…? / *Could you tell me*…? vārdu secība ir kā apgalvojumā: *where Anna lives*, bez *does*; laiks nemainās.",
+   "sentence": "do you know where the car park is",
+   "answers": [
+    [
+     "do you know where the car park is"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "rq-order-1.csv:49"
+  }
+ }
+}

@@ -2787,16 +2787,14 @@ iq_wh,B1.2,ind_polite,B1.1,check,gap,read,,rq-order-1.csv:31,"ind_polite | B1.1 
 Do you know where ___ ___ ? | "
 iq_wh,B1.2,ind_polite,B1.1,check,mcq,read,,rq-order-1.csv:32,"ind_polite | B1.1 | mcq | 'Where does your teacher live?'
 Choose the correct option: Do you know where ___? | your teacher lives"
-iq_wh,B1.2,ind_polite,B1.1,check,order,read,,rq-order-1.csv:33,"ind_polite | B1.1 | order | 'Where does Mark work?'
-Put the words in order to make a question. | do you know where mark works"
+iq_wh,B1.2,ind_polite,B1.1,check,order,read,,rq-order-1.csv:33,ind_polite | B1.1 | order | Put the words in order to make a question. | do you know where mark works
 iq_wh,B1.2,ind_polite,B1.1,use,text,read,,rq-order-1.csv:34,"ind_polite | B1.1 | text | 'What time does the bus leave?'
 Finish the sentence: Could you tell me what time … | "
 iq_wh,B1.2,ind_polite,B1.1,check,gap,read,,rq-order-1.csv:35,"ind_polite | B1.1 | gap | 'What time does the museum open?'
 Could you tell me what time ___ ___ ? | "
 iq_wh,B1.2,ind_polite,B1.1,check,mcq,read,,rq-order-1.csv:36,"ind_polite | B1.1 | mcq | 'What time does the concert start?'
 Choose the correct option: Do you know what time ___? | the concert starts"
-iq_wh,B1.2,ind_polite,B1.1,check,order,read,,rq-order-1.csv:37,"ind_polite | B1.1 | order | 'What time does the bank close?'
-Put the words in order to make a question. | could you tell me what time the bank closes"
+iq_wh,B1.2,ind_polite,B1.1,check,order,read,,rq-order-1.csv:37,ind_polite | B1.1 | order | Put the words in order to make a question. | could you tell me what time the bank closes
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,ip-B12-2a-r3,built-in,ind_polite | B1.2 | mcq | Could you tell me ___? | where the station is
 iq_wh,B1.2,ind_polite,B1.2,use,text,read,ip-B12-3a-r2,built-in,ind_polite | B1.2 | text | Make it polite: What time does the museum close? | 
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,ip-B12-4a,built-in,ind_polite | B1.2 | mcq | Which sentence is NOT correct? | I wonder what does she want.
@@ -2817,16 +2815,14 @@ iq_wh,B1.2,ind_polite,B1.2,check,gap,read,,rq-order-1.csv:39,"ind_polite | B1.2 
 I'd like to know how much ___ ___ . | "
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,rq-order-1.csv:40,"ind_polite | B1.2 | mcq | 'How much is the ticket?'
 Choose the correct option: Can you tell me how much ___? | the ticket is"
-iq_wh,B1.2,ind_polite,B1.2,check,order,read,,rq-order-1.csv:41,"ind_polite | B1.2 | order | 'How much are the tickets?'
-Put the words in order to make a question. | do you know how much the tickets are"
+iq_wh,B1.2,ind_polite,B1.2,check,order,read,,rq-order-1.csv:41,ind_polite | B1.2 | order | Put the words in order to make a question. | do you know how much the tickets are
 iq_wh,B1.2,ind_polite,B1.2,use,text,read,,rq-order-1.csv:46,"ind_polite | B1.2 | text | 'Where is the post office?'
 Finish the sentence: Do you know where … | "
 iq_wh,B1.2,ind_polite,B1.2,check,gap,read,,rq-order-1.csv:47,"ind_polite | B1.2 | gap | 'Where is the toilet?'
 Could you tell me where ___ ___ ? | "
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,rq-order-1.csv:48,"ind_polite | B1.2 | mcq | 'Where is the library?'
 Choose the correct option: Can you tell me where ___? | the library is"
-iq_wh,B1.2,ind_polite,B1.2,check,order,read,,rq-order-1.csv:49,"ind_polite | B1.2 | order | 'Where is the car park?'
-Put the words in order to make a question. | do you know where the car park is"
+iq_wh,B1.2,ind_polite,B1.2,check,order,read,,rq-order-1.csv:49,ind_polite | B1.2 | order | Put the words in order to make a question. | do you know where the car park is
 iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,ip-B21-1a,built-in,ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me how long the repair will take?
 iq_wh,B1.2,ind_polite,B2.1,learn,mcq,read,ip-B21-2a,built-in,ind_polite | B2.1 | mcq | What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?' | B is more polite and indirect.
 iq_wh,B1.2,ind_polite,B2.1,use,text,read,ip-B21-3a-r6,built-in,ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | 
@@ -2864,8 +2860,7 @@ iq_yn,B1.2,ind_polite,B1.2,check,gap,read,,rq-order-1.csv:43,"ind_polite | B1.2 
 Do you know if ___ ___ a bank near here? | "
 iq_yn,B1.2,ind_polite,B1.2,check,mcq,read,,rq-order-1.csv:44,"ind_polite | B1.2 | mcq | 'Is there a lift in this building?'
 Choose the correct option: Do you know if ___ a lift in this building? | there is"
-iq_yn,B1.2,ind_polite,B1.2,check,order,read,,rq-order-1.csv:45,"ind_polite | B1.2 | order | 'Is there a café near the station?'
-Put the words in order to make a question. | do you know if there is a café near the station"
+iq_yn,B1.2,ind_polite,B1.2,check,order,read,,rq-order-1.csv:45,ind_polite | B1.2 | order | Put the words in order to make a question. | do you know if there is a café near the station
 narr_mix,B1.2,narrative,B1.2,use,gap,read,,compare-past-1.csv:38,narrative | B1.2 | gap | I got up and ___ out of the window. The sun ___. (look / shine) | 
 narr_mix,B1.2,narrative,B1.2,use,gap,read,,compare-past-1.csv:42,narrative | B1.2 | gap | Kate wasn't at home when I phoned. She ___ at her mother's house at that moment. (be) | 
 narr_mix,B1.2,narrative,B1.2,use,gap,read,,twins-2.csv:3,narrative | B1.2 | gap | Use the verbs in brackets: I opened the curtains and ___ outside. It ___ heavily. (look / snow) | 
@@ -3037,32 +3032,28 @@ rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:3,"rep_questions
 He asked me where ___ ___ . | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:4,"rep_questions | B1.2 | mcq | 'Where do you study?'
 Choose the correct option: She asked him where ___. | he studied"
-rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:5,"rep_questions | B1.2 | order | 'Where is your office?'
-Put the words in order. | she asked me where my office was"
+rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:5,rep_questions | B1.2 | order | Put the words in order. | she asked me where my office was
 rep_q_wh,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:6,"rep_questions | B1.2 | text | 'What time does the film start?'
 Finish the sentence: He asked what time … | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:7,"rep_questions | B1.2 | gap | 'What time does the train leave?'
 She asked me what time ___ ___ . | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:8,"rep_questions | B1.2 | mcq | 'What time does the shop close?'
 Choose the correct option: He asked what time ___. | the shop closed"
-rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:9,"rep_questions | B1.2 | order | 'When does the bus usually come?'
-Put the words in order. | she asked me when the bus usually came"
+rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:9,rep_questions | B1.2 | order | Put the words in order. | she asked me when the bus usually came
 rep_q_wh,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:18,"rep_questions | B1.2 | text | 'Where is the manager?'
 Finish the sentence: She asked where … | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:19,"rep_questions | B1.2 | gap | 'Where is the station?'
 He asked me where ___ ___ . | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:20,"rep_questions | B1.2 | mcq | 'Where is the lift?'
 Choose the correct option: He asked where ___. | the lift was"
-rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:21,"rep_questions | B1.2 | order | 'Where are my keys?'
-Put the words in order. | she asked where her keys were"
+rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:21,rep_questions | B1.2 | order | Put the words in order. | she asked where her keys were
 rep_q_wh,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:26,"rep_questions | B1.2 | text | 'Why are you late?'
 Finish the sentence: The teacher asked us why … | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:27,"rep_questions | B1.2 | gap | 'Why is he angry?'
 She asked me why ___ ___ angry. | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:28,"rep_questions | B1.2 | mcq | 'Why are you tired?'
 Choose the correct option: He asked me why ___ tired. | I was"
-rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:29,"rep_questions | B1.2 | order | 'Why is the shop closed?'
-Put the words in order. | he asked why the shop was closed"
+rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:29,rep_questions | B1.2 | order | Put the words in order. | he asked why the shop was closed
 rep_q_wh,B1.2,rep_questions,B2.1,check,mcq,read,rq-B21-4a,built-in,rep_questions | B2.1 | mcq | Which sentence is NOT correct? | He asked me what time was it.
 rep_q_wh,B1.2,rep_questions,B2.1,check,mcq,read,rq-B21-5a-r2,built-in,rep_questions | B2.1 | mcq | Which sentence reports the customer's question: 'How long will the repair take?' | The customer asked how long the repair would take.
 rep_q_wh,B1.2,rep_questions,B2.1,learn,gap,read,,learn-drag-4.csv:40,rep_questions | B2.1 | gap | He asked me what time ___ ___. | 
@@ -3073,8 +3064,7 @@ rep_q_wh,B1.2,rep_questions,B2.1,check,gap,read,,rq-order-1.csv:23,"rep_question
 He asked me how long ___ ___ ___ there. | "
 rep_q_wh,B1.2,rep_questions,B2.1,check,mcq,read,,rq-order-1.csv:24,"rep_questions | B2.1 | mcq | 'How long have you worked here?'
 Choose the correct option: She asked how long ___ there. | I had worked"
-rep_q_wh,B1.2,rep_questions,B2.1,check,order,read,,rq-order-1.csv:25,"rep_questions | B2.1 | order | 'How long has the shop been open?'
-Put the words in order. | she asked how long the shop had been open"
+rep_q_wh,B1.2,rep_questions,B2.1,check,order,read,,rq-order-1.csv:25,rep_questions | B2.1 | order | Put the words in order. | she asked how long the shop had been open
 rep_q_wh,B1.2,rep_questions,B2.1,check,mcq,read,,twins-2.csv:29,rep_questions | B2.1 | mcq | Which sentence is NOT correct? | She asked me where did I buy the flowers.
 rep_q_wh,B1.2,rep_questions,B2.1,learn,gap,read,,typical-b2c1-1.csv:9,rep_questions | B2.1 | gap | The receptionist asked me where I ___ from. (be) | 
 rep_q_wh,B1.2,rep_questions,B2.1,learn,gap,read,,typical-b2c1-1.csv:10,rep_questions | B2.1 | gap | She asked me how long I ___ English. (study) | 
@@ -3105,16 +3095,14 @@ rep_q_yn,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:11,"rep_question
 She asked me if ___ ___ ___ . | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:12,"rep_questions | B1.2 | mcq | 'Have you seen the film?'
 Choose the correct option: He asked me if ___ the film. | I had seen"
-rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:13,"rep_questions | B1.2 | order | 'Has the parcel arrived?'
-Put the words in order. | she asked if the parcel had arrived"
+rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:13,rep_questions | B1.2 | order | Put the words in order. | she asked if the parcel had arrived
 rep_q_yn,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:14,"rep_questions | B1.2 | text | 'Can you help me?'
 Finish the sentence: She asked me if … | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:15,"rep_questions | B1.2 | gap | 'Can you drive?'
 He asked me if ___ ___ drive. | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:16,"rep_questions | B1.2 | mcq | 'Can you swim?'
 Choose the correct option: She asked me if ___. | I could swim"
-rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:17,"rep_questions | B1.2 | order | 'Can the shop deliver on Sunday?'
-Put the words in order. | he asked if the shop could deliver on sunday"
+rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:17,rep_questions | B1.2 | order | Put the words in order. | he asked if the shop could deliver on sunday
 rep_q_yn,B1.2,rep_questions,B2.1,check,mcq,read,rq-B21-1a-r2,built-in,rep_questions | B2.1 | mcq | Anna's question to you: 'Can you help me?' Which sentence reports it? | She asked if I could help her.
 rep_q_yn,B1.2,rep_questions,B2.1,learn,order,read,,learn-drag-4.csv:37,rep_questions | B2.1 | order | Put all the words in order. More than one answer is possible. | she asked if I could help her
 rep_q_yn,B1.2,rep_questions,B2.1,check,mcq,read,,twins-2.csv:27,rep_questions | B2.1 | mcq | Which sentence reports this: 'Can you fix my laptop?' | She asked if I could fix her laptop.

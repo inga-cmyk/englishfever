@@ -5,7 +5,7 @@ AREAS_NEW = [("nouns", "Nouns and articles"), ("clauses", "Joining ideas"), ("qu
 
 SKILLS_NEW = [
     ("used_to", "Used to and be used to", "active", ["A2.2", "B1.1", "B1.2"]),
-    ("articles", "Articles: a, an, the", "nouns", ["A2.2", "B1.1", "B1.2"]),
+    ("articles", "Articles: a, an, the", "nouns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: no article (art_zero), prepared tasks only (teacher, 14 November)
     ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.2", "B1.1"]),
     ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["A2.2", "B1.1", "B1.2"]),
     ("time_clauses", "Time clauses (when, as soon as, until)", "clauses", ["A2.2", "B1.1", "B1.2"]),

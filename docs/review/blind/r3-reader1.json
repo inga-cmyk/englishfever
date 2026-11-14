@@ -1,0 +1,29 @@
+[
+ {
+  "id": "r3-001",
+  "answer": "Max denied taking Anna's phone.",
+  "other_correct": "Max denied taking her phone. / Max denied having taken Anna's (her) phone. / Max denied that he had taken Anna's (her) phone. / Max denied that he took her phone. / Max denied taking it. / Max denied having taken it. (Bare 'Max denied it.' is also grammatical but skips the target structure.)",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r3-002",
+  "answer": "Sarah advised Peter to see a doctor.",
+  "other_correct": "Sarah advised him to see a doctor. / Sarah advised Peter (him) to go to a doctor / to go and see a doctor. / Sarah advised Peter (him) that he should see a doctor. / Sarah advised that Peter (he) (should) see a doctor. / Sarah advised seeing a doctor. (less natural but grammatical)",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r3-003",
+  "answer": "Leo denied sending the email to the whole company.",
+  "other_correct": "Leo denied sending that email (to the whole company). / Leo denied sending it. / Leo denied having sent the (that) email (to the whole company). / Leo denied that he had sent (that he sent) the email (to the whole company). / Leo denied being the one who sent the email. / Leo denied that it was him (that it was he) who sent the email. (Bare 'Leo denied it.' is also grammatical but skips the target structure.)",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

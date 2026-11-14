@@ -26,6 +26,12 @@ let ok = true; const check = (n, c, x) => { ok = ok && !!c; console.log((c ? 'PA
     ["Rewrite with the correct verb", "Rewrite with the correct verb"],
     ["Report with a suitable reporting verb", "Report with a suitable reporting verb"],
     ["Rewrite using the past continuous", "Rewrite using the past continuous"],
+    ["Write a or an", "Write *a* or *an*"],
+    ["Write in, on or at", "Write *in*, *on* or *at*"],
+    ["Write the missing word (am, is, are or has)", "Write the missing word (*am*, *is*, *are* or *has*)"],
+    ["Complete with the past of have to", "Complete with the past of *have to*"],
+    ["Rewrite without to", "Rewrite without *to*"],
+    ["Use be going to for a plan", "Use *be going to* for a plan"],
   ];
   for (const [a, e] of cases) check('"' + a + '"', (await f(a)) === e, await f(a));
   console.log(ok ? 'ALL PASS' : 'SOME FAILED'); await b.close(); process.exit(ok ? 0 : 1);

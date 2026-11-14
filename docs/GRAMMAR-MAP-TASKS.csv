@@ -248,6 +248,7 @@ pc_form,A2.1,present_continuous,A2.1,use,text,read,,a2-extras-1.csv:26,present_c
 pc_form,A2.1,present_continuous,A2.1,use,text,read,,a2-extras-1.csv:27,present_continuous | A2.1 | text | Make a yes/no question: The children are swimming. | 
 pc_form,A2.1,present_continuous,A2.1,check,order,read,,a2-extras-1.csv:28,present_continuous | A2.1 | order | Put the words in order. | the students are writing a test
 pc_form,A2.1,present_continuous,A2.1,check,mcq,read,,a2-extras-1.csv:29,present_continuous | A2.1 | mcq | Which sentence is NOT correct? | She is wait for the bus.
+pc_form,A2.1,present_continuous,A2.1,use,text,read,,b1-tenses-1.csv:64,present_continuous | A2.1 | text | Make a question with Why: She is crying. | 
 pc_form,A2.1,present_continuous,A2.2,use,text,read,pc-A22-3b,built-in,present_continuous | A2.2 | text | Make it negative: They are waiting for the bus. | 
 pc_form,A2.1,present_continuous,A2.2,check,mcq,read,pc-A22-4a-r2,built-in,present_continuous | A2.2 | mcq | Which sentence is NOT correct? | She is have a shower.
 pc_form,A2.1,present_continuous,A2.2,check,order,read,,a2-big-1.csv:17,present_continuous | A2.2 | order | Put the words in order. | what are you reading at the moment
@@ -274,7 +275,6 @@ pc_form,A2.1,present_continuous,B1.1,check,gap,read,,b1-tenses-1.csv:54,present_
 pc_form,A2.1,present_continuous,B1.1,check,gap,read,,b1-tenses-1.csv:55,present_continuous | B1.1 | gap | Look! They ___ the old bridge with a new one. | 
 pc_form,A2.1,present_continuous,B1.1,check,gap,read,,b1-tenses-1.csv:57,present_continuous | B1.1 | gap | Why ___ you ___ so quietly today? Is something wrong? | 
 pc_form,A2.1,present_continuous,B1.1,use,gap,read,,b1-tenses-1.csv:63,present_continuous | B1.1 | gap | What ___ the children ___ in the garden? They are very quiet. (do) | 
-pc_form,A2.1,present_continuous,B1.1,use,text,read,,b1-tenses-1.csv:64,present_continuous | B1.1 | text | Make a question with Why: She is crying. | 
 pc_form,A2.1,present_continuous,B1.1,use,text,read,,b1-tenses-1.csv:65,present_continuous | B1.1 | text | Make it negative: We are staying at a hotel. | 
 pc_form,A2.1,present_continuous,B1.1,learn,match,read,,b1-tenses-1.csv:67,present_continuous | B1.1 | match | Match each beginning with its ending. | Our neighbours are building = a new garage. ; The students are preparing = for their exams. ; My boss is travelling = to Berlin. ; I'm learning = to drive.
 pc_form,A2.1,present_continuous,B1.1,learn,match,read,,b1-tenses-1.csv:68,"present_continuous | B1.1 | match | Match each question with its answer: what is happening. | What are you doing? = I'm sorting my emails. ; Why are they shouting? = They're watching the match. ; Who is he talking to? = His new neighbour. ; Is it raining? = Not now, it has stopped."
@@ -2661,7 +2661,7 @@ c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:145,cond_third | B1.2 
 c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:147,"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If I would have studied, I would have passed."
 c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:148,"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If we had left earlier, we wouldn't have miss the train."
 c3,B1.2,cond_third,B2.1,check,mcq,read,ct-B21-1a,built-in,cond_third | B2.1 | mcq | Choose the correct form: She would have passed the exam if she ___ harder. | had studied
-c3,B1.2,cond_third,B2.1,use,text,read,ct-B21-3a-r5,built-in,"cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | "
+c3,B1.2,cond_third,B2.1,use,text,read,ct-B21-3a-r6,built-in,"cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | "
 c3,B1.2,cond_third,B2.1,check,mcq,read,ct-B21-4a,built-in,"cond_third | B2.1 | mcq | Which sentence has a mistake? | If the team has been better prepared, we would have won."
 c3,B1.2,cond_third,B2.1,use,write,read,ct-B21-6a-r3,built-in,cond_third | B2.1 | write | Write one sentence about a decision that changed your life: imagine you had not made it. | 
 c3,B1.2,cond_third,B2.1,learn,gap,read,,learn-drag-4.csv:17,cond_third | B2.1 | gap | She would have passed the exam if she ___ ___ harder. | 
@@ -3071,7 +3071,7 @@ tag_special,B1.2,question_tags,B1.2,use,text,read,,b1-new-3.csv:47,question_tags
 the_adj,B1.2,articles_b1,B1.2,check,mcq,read,,articles-split-1.csv:3,articles_b1 | B1.2 | mcq | Choose the correct option: ___ unemployed need help to find work. | The
 the_adj,B1.2,articles_b1,B1.2,check,mcq,read,,articles-split-1.csv:11,articles_b1 | B1.2 | mcq | Choose the correct option: ___ rich should pay more tax. | The
 the_adj,B1.2,articles_b1,B1.2,check,gap,read,,b1-new-1.csv:53,articles_b1 | B1.2 | gap | He gives money to ___ poor. | 
-the_adj,B1.2,articles_b1,B1.2,use,text,read,,b1-new-1.csv:75,articles_b1 | B1.2 | text | Rewrite with the elderly: Old people need more care. | 
+the_adj,B1.2,articles_b1,B1.2,use,text,read,,b1-new-1.csv:75,articles_b1 | B1.2 | text | Rewrite with *the elderly*: Old people need more care. | 
 the_adj,B1.2,articles_b1,B1.2,use,gap,read,,b1-new-1.csv:76,"articles_b1 | B1.2 | gap | Complete with *a*, *an* or *the*: In this town, ___ elderly get free bus tickets. | "
 the_adj,B1.2,articles_b1,B1.2,learn,gap,read,,learn-drag-3.csv:34,articles_b1 | B1.2 | gap | ___ homeless often sleep in the station in winter. | 
 the_adj,B1.2,articles_b1,B1.2,check,mcq,read,,twins-3.csv:34,articles_b1 | B1.2 | mcq | Choose the correct option: ___ homeless often sleep in the station in winter. | The
@@ -3240,17 +3240,17 @@ rel_prep,B2.1,relative_clauses,B1.2,check,mcq,read,,b1-new-2.csv:29,relative_cla
 rel_which_all,B2.1,relative_clauses,B1.2,check,mcq,read,,b1-new-2.csv:30,"relative_clauses | B1.2 | mcq | Choose the correct option: She won the prize, ___ surprised everyone. | which"
 rel_which_all,B2.1,relative_clauses,B1.2,use,text,read,,b1-new-2.csv:34,relative_clauses | B1.2 | text | Join with *which*: She passed her driving test the first time. Nobody expected this. | 
 rel_which_all,B2.1,relative_clauses,B1.2,use,text,read,,b1-new-2.csv:38,relative_clauses | B1.2 | text | Join the two sentences: She passed her driving test. This surprised everyone. | 
-rv_ing,B2.1,rep_verbs,B2.2,use,text,read,rv-B22-3a-r3,built-in,rep_verbs | B2.2 | text | Report it with *deny*. Max said: 'I didn't take your phone.' | 
+rv_ing,B2.1,rep_verbs,B2.2,use,text,read,rv-B22-3a-r4,built-in,rep_verbs | B2.2 | text | Start with *Max denied*: 'I didn't take your phone.' | 
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,rv-B22-4a,built-in,rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | She suggested to go by train.
 rv_ing,B2.1,rep_verbs,B2.2,use,write,read,rv-C11-6a-r5,built-in,"rep_verbs | B2.2 | write | Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!' | "
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,rv-C12-4a-r3,built-in,rep_verbs | B2.2 | mcq | Which sentence has a mistake? | He recommended to reading the report carefully.
-rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-1.csv:67,"rep_verbs | B2.2 | text | Report with *deny*: 'It wasn't me who sent that email to the whole company,' said Leo. | "
+rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-1.csv:67,rep_verbs | B2.2 | text | Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.' | 
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,,twins-2.csv:12,rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | He suggested to meet on Friday.
 rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-2.csv:14,rep_verbs | B2.2 | text | Report with *deny*: 'I didn't share the secret.' Start with *Nora denied*. | 
 rv_ing,B2.1,rep_verbs,B2.2,use,gap,read,,typical-b2c1-1.csv:20,rep_verbs | B2.2 | gap | My colleague suggested ___ a taxi to the airport. (take) | 
 rv_ing,B2.1,rep_verbs,B2.2,use,gap,read,,typical-b2c1-1.csv:37,rep_verbs | B2.2 | gap | The minister denied ___ the report before it was published. (see) | 
 rv_obj_to,B2.1,rep_verbs,B2.2,check,mcq,read,rv-C12-1a-r3,built-in,"rep_verbs | B2.2 | mcq | Which sentence reports this: 'If I were you, I'd take the earlier train.' | She advised me to take the earlier train."
-rv_obj_to,B2.1,rep_verbs,B2.2,use,text,read,rv-C12-3a-r7,built-in,rep_verbs | B2.2 | text | Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.' | 
+rv_obj_to,B2.1,rep_verbs,B2.2,use,text,read,rv-C12-3a-r9,built-in,rep_verbs | B2.2 | text | Start with *My sister advised*: 'You really should see a doctor about that cough.' | 
 rv_obj_to,B2.1,rep_verbs,B2.2,learn,gap,read,,learn-drag-3.csv:18,rep_verbs | B2.2 | gap | She advised me ___ ___ a second opinion before the operation. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,learn,gap,read,,learn-drag-3.csv:19,rep_verbs | B2.2 | gap | My colleague urged me ___ have the figures ___ before submitting the report. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,use,gap,read,,twins-1.csv:64,rep_verbs | B2.2 | gap | 'Don't sign anything until you've read it.' → The lawyer advised her ___. | 

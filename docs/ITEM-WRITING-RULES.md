@@ -137,3 +137,7 @@
 
 ## Blind check (teacher, 14 November)
 - Every task the app serves is solved by two readers who do not see the key; a script compares them with the key and a judge decides every flag (`docs/BLIND-CHECK.md`, `tools/blind_check.py`). The readers also judge the instruction (natural, meaningful, nothing superfluous, nothing given away) and the fit to the level. Gate `blind`: a new or changed task without a record stops the packaging. The teacher sees only what the judge cannot decide.
+
+## Instructions (teacher, 14 November)
+- **A report task gives the start of the sentence**, with the speaker and the reporting verb: *Start with *Max denied*: 'I didn't take your phone.'*, never only *Report it with deny*. An open writing task that asks the learner to choose the verb (*Say what Leo did*) is the exception.
+- **Every word the learner is to use is in italics**, apart from the instruction: *Write *a* or *an**, *(*am*, *is* … or *has*)*, *the past of *have to**, *Rewrite without *to**. The app does it (`UI.markForms`); a word it cannot find is marked by hand (*Rewrite with *the elderly**). Test: `app/tests/instr_italics_test.js` (in the packaging).

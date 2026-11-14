@@ -13798,5 +13798,25 @@
 "verb_patterns | A2.2 | text | Start with *I've decided*: I will go home early. | ": [
 "vp_to",
 "read"
+],
+"rep_verbs | B2.2 | text | Start with *Max denied*: 'I didn't take your phone.' | ": [
+"rv_ing",
+"read"
+],
+"rep_verbs | B2.2 | text | Start with *My sister advised*: 'You really should see a doctor about that cough.' | ": [
+"rv_obj_to",
+"read"
+],
+"articles_b1 | B1.2 | text | Rewrite with *the elderly*: Old people need more care. | ": [
+"the_adj",
+"read"
+],
+"present_continuous | A2.1 | text | Make a question with Why: She is crying. | ": [
+"pc_form",
+"read"
+],
+"rep_verbs | B2.2 | text | Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.' | ": [
+"rv_ing",
+"read"
 ]
 }

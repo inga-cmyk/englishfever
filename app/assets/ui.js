@@ -376,7 +376,13 @@
     if (s.indexOf('*') >= 0) return s;                       // already marked by hand
     s = s.replace(/(^|\s)'([^']+)'(?=[\s.,:;?!]|$)/g, '$1*$2*');   // 'any' in quotes
     s = s.replace(/\bthe (verb|word) ([A-Za-z'-]+)(?=\s*[:.?!]|$)/, 'the $1 *$2*');   // with the verb deny, and the word yesterday
-    if (s.indexOf('*') < 0) s = s.replace(/\b(with|using)\s+(?!(?:a|an|the)\s)(.+)$/i, function (m, w, rest) {   // with a suitable reporting verb, using the past continuous: not forms
+    // every word the learner is to use is in italics, apart from the instruction (teacher, 14 November)
+    function ital(list) { return list.split(/(,\s+|\s+or\s+|\s+and\s+)/).map(function (p) { return /^(,\s+|\s+or\s+|\s+and\s+)$/.test(p) || !p ? p : '*' + p + '*'; }).join(''); }
+    s = s.replace(/\(([A-Za-z' ]+(?:,\s+[A-Za-z' ]+)*,?\s+or\s+[A-Za-z' ]+)\)/, function (m, l) { return '(' + ital(l) + ')'; });   // (am, is, are … or has)
+    s = s.replace(/^(Write|Choose|Use)\s+((?:[A-Za-z']+,\s+)*[A-Za-z']+\s+or\s+[A-Za-z']+)(?=\s*[:.?!]|$)/, function (m, v, l) { return v + ' ' + ital(l); });   // Write a or an, Write in, on or at
+    s = s.replace(/\bthe (past|negative|question) of ([A-Za-z' ]+?)(?=\s*[:.?!]|$)/, 'the $1 of *$2*');   // the past of have to
+    s = s.replace(/^Use (?!(?:a|an|the|one|two|it|this|these)\s)([A-Za-z' ]+?) (for|to say|to talk)\b/, 'Use *$1* $2');   // Use be going to for a plan
+    if (s.indexOf('*') < 0) s = s.replace(/\b(with|without|using)\s+(?!(?:a|an|the)\s)(.+)$/i, function (m, w, rest) {   // with a suitable reporting verb, using the past continuous: not forms
       var tail = (rest.match(/[:.?!]+$/) || [''])[0];            // the colon or full stop stays plain
       var body = rest.slice(0, rest.length - tail.length), comma = body.search(/,\s/);
       if (comma > 0) { tail = body.slice(comma) + tail; body = body.slice(0, comma); }   // what follows a comma is not part of the form: with who, about the object

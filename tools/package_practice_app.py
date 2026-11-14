@@ -7,7 +7,7 @@
     python3 tools/package_practice_app.py
 Runs the content build and the grading test first, so a broken question bank is never packaged.
 """
-import os, subprocess, sys, zipfile
+import tempfile, os, subprocess, sys, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 APP = os.path.join(ROOT, "app")
@@ -20,6 +20,9 @@ subprocess.run(["php", os.path.join(APP, "tests", "grader_test.php")], check=Tru
 subprocess.run(["php", os.path.join(APP, "tests", "bank_update_test.php")], check=True, env=env)
 subprocess.run(["php", os.path.join(APP, "tests", "map_followup_test.php")], check=True, env=env)   # the grammar map after a mistake (14 November, C2)
 subprocess.run(["php", os.path.join(APP, "tests", "path_map_test.php")], check=True, env=env)   # My learning path follows the map (14 November, C3)
+_dump = os.path.join(tempfile.mkdtemp(), "items.json")   # every named word in an instruction is in italics (teacher, 14 November)
+subprocess.run(["php", os.path.join(ROOT, "tools", "dump_items.php"), _dump], check=True, env=env, stdout=subprocess.DEVNULL)
+subprocess.run(["node", os.path.join(APP, "tests", "instr_italics_test.js"), _dump], check=True)
 subprocess.run([sys.executable, os.path.join(APP, "tests", "item_gates_test.py")], check=True, env=env, stdout=subprocess.DEVNULL)   # the task-writing gates: a new task that breaks a rule is never packaged
 
 EXCLUDE_DIRS = {"authoring", "tests", "wp-plugin", "__pycache__", ".git", "examples", "fixtures", "scripts", ".github"}   # the last four: inside vendor/ (the Anthropic SDK), not needed on the server

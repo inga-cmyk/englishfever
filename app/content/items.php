@@ -7236,12 +7236,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "A reporting verb shows what the speaker did: *promise, warn, suggest, admit.*"
 },
 {
-"id": "rv-B22-3a-r3",
+"id": "rv-B22-3a-r4",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Report it with *deny*. Max said: 'I didn't take your phone.'",
+"q": "Start with *Max denied*: 'I didn't take your phone.'",
 "answers": [
 [
 "Max denied taking my phone.",
@@ -7448,12 +7448,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r8",
+"id": "rv-C12-3a-r9",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.'",
+"q": "Start with *My sister advised*: 'You really should see a doctor about that cough.'",
 "answers": [
 [
 "My sister advised me to see a doctor about that cough.",

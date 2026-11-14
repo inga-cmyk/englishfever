@@ -8127,6 +8127,30 @@
 "why": "A reporting verb shows what the speaker did: *promise, warn, suggest, admit.*"
 },
 {
+"id": "rv-B22-3a-r3",
+"skill": "rep_verbs",
+"level": "B2.2",
+"bloom": 3,
+"kind": "text",
+"q": "Report it with *deny*. Max said: 'I didn't take your phone.'",
+"answers": [
+[
+"Max denied taking my phone.",
+"Max denied taking your phone.",
+"Max denied that he had taken my phone.",
+"Max denied having taken my phone.",
+"Max denied that he took my phone.",
+"Max denied that he had taken your phone.",
+"Max denied taking the phone.",
+"Max denied that he had taken the phone.",
+"Max denied that he took the phone.",
+"Max denied having taken the phone."
+]
+],
+"why": "*deny* + -ing, or *deny* + *that* + clause.",
+"hints": []
+},
+{
 "id": "rv-C11-2a-r2",
 "skill": "rep_verbs",
 "level": "C1.1",

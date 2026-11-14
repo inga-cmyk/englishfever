@@ -1,0 +1,294 @@
+{
+ "r2-001": {
+  "hash": "15c82c665dff7680",
+  "gate_key": "rep_verbs | B2.2 | text | Start with *Max denied*: 'I didn't take your phone.' | ",
+  "src": "built-in",
+  "point": "rv_ing",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Max denied taking my phone.",
+     "Max denied taking your phone.",
+     "Max denied that he had taken my phone.",
+     "Max denied having taken my phone.",
+     "Max denied that he took my phone.",
+     "Max denied that he had taken your phone.",
+     "Max denied taking the phone.",
+     "Max denied that he had taken the phone.",
+     "Max denied that he took the phone.",
+     "Max denied having taken the phone."
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-B22-3a-r4",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *Max denied*: 'I didn't take your phone.'",
+   "answers": [
+    [
+     "Max denied taking my phone.",
+     "Max denied taking your phone.",
+     "Max denied that he had taken my phone.",
+     "Max denied having taken my phone.",
+     "Max denied that he took my phone.",
+     "Max denied that he had taken your phone.",
+     "Max denied taking the phone.",
+     "Max denied that he had taken the phone.",
+     "Max denied that he took the phone.",
+     "Max denied having taken the phone."
+    ]
+   ],
+   "why": "*deny* + -ing, or *deny* + *that* + clause.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "built-in"
+  }
+ },
+ "r2-002": {
+  "hash": "16c137ceb9099b6b",
+  "gate_key": "rep_verbs | B2.2 | text | Start with *My sister advised*: 'You really should see a doctor about that cough.' | ",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister advised me to see a doctor about the cough.",
+     "My sister advised me to go to the doctor about that cough.",
+     "My sister advised me to go to the doctor about my cough.",
+     "My sister advised me that I should see a doctor about that cough.",
+     "My sister advised me that I should really see a doctor about that cough.",
+     "My sister advised me to really see a doctor about that cough.",
+     "My sister advised me to go and see a doctor about that cough.",
+     "My sister advised me that I should see a doctor about my cough.",
+     "My sister advised me that I should really see a doctor about my cough.",
+     "My sister advised me to really see a doctor about my cough.",
+     "My sister advised me to go and see a doctor about my cough."
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C12-3a-r9",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *My sister advised*: 'You really should see a doctor about that cough.'",
+   "answers": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister advised me to see a doctor about the cough.",
+     "My sister advised me to go to the doctor about that cough.",
+     "My sister advised me to go to the doctor about my cough.",
+     "My sister advised me that I should see a doctor about that cough.",
+     "My sister advised me that I should really see a doctor about that cough.",
+     "My sister advised me to really see a doctor about that cough.",
+     "My sister advised me to go and see a doctor about that cough.",
+     "My sister advised me that I should see a doctor about my cough.",
+     "My sister advised me that I should really see a doctor about my cough.",
+     "My sister advised me to really see a doctor about my cough.",
+     "My sister advised me to go and see a doctor about my cough."
+    ]
+   ],
+   "why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
+   "hints": [],
+   "answer_notes": [
+    [
+     "My sister advised seeing a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I should see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised seeing a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I should see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should really see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should really see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ]
+   ],
+   "why_lv": "*advise* + persona + *to* + pamatforma: *My sister advised me to see a doctor.*",
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_obj_to",
+   "src": "built-in"
+  }
+ },
+ "r2-003": {
+  "hash": "4400bccc89390775",
+  "gate_key": "articles_b1 | B1.2 | text | Rewrite with *the elderly*: Old people need more care. | ",
+  "src": "b1-new-1.csv:75",
+  "point": "the_adj",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The elderly need more care.",
+     "The elderly need more care in hospitals."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0988",
+   "skill": "articles_b1",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *the elderly*: Old people need more care.",
+   "why": "*the* + adjective = a group of people: *the elderly, the poor*.",
+   "why_lv": "*the* + īpašības vārds = cilvēku grupa: *the elderly, the poor*.",
+   "answers": [
+    [
+     "The elderly need more care.",
+     "The elderly need more care in hospitals."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "the_adj",
+   "src": "b1-new-1.csv:75"
+  }
+ },
+ "r2-004": {
+  "hash": "263a346cef45afba",
+  "gate_key": "present_continuous | A2.1 | text | Make a question with Why: She is crying. | ",
+  "src": "b1-tenses-1.csv:64",
+  "point": "pc_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Why is she crying?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1880",
+   "skill": "present_continuous",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with Why: She is crying.",
+   "why": "Question: *am / is / are* before the subject. Negative: *not* after *am / is / are*.",
+   "why_lv": "Jautājums: *am / is / are* pirms teik. priekšmeta. Noliegums: *not* aiz *am / is / are*.",
+   "answers": [
+    [
+     "Why is she crying?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pc_form",
+   "src": "b1-tenses-1.csv:64"
+  }
+ },
+ "r2-005": {
+  "hash": "de114139d13da778",
+  "gate_key": "rep_verbs | B2.2 | text | Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.' | ",
+  "src": "twins-1.csv:67",
+  "point": "rv_ing",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Leo denied sending that email to the whole company.",
+     "Leo denied having sent that email to the whole company.",
+     "Leo denied that he had sent that email to the whole company.",
+     "Leo denied he had sent that email to the whole company.",
+     "Leo denied that he sent that email to the whole company.",
+     "Leo denied he sent that email to the whole company.",
+     "Leo denied sending the email to the whole company.",
+     "Leo denied having sent the email to the whole company."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2739",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.'",
+   "why": "*deny* + -ing (or *having* + 3rd form).",
+   "why_lv": "*deny + -ing* (vai *having* + 3. forma).",
+   "answers": [
+    [
+     "Leo denied sending that email to the whole company.",
+     "Leo denied having sent that email to the whole company.",
+     "Leo denied that he had sent that email to the whole company.",
+     "Leo denied he had sent that email to the whole company.",
+     "Leo denied that he sent that email to the whole company.",
+     "Leo denied he sent that email to the whole company.",
+     "Leo denied sending the email to the whole company.",
+     "Leo denied having sent the email to the whole company."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "twins-1.csv:67"
+  }
+ }
+}

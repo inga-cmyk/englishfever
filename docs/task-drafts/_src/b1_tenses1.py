@@ -63,7 +63,7 @@ P.gap("B1.1","My neighbour ___ his house this month, so there is a lot of noise.
 P.gap("B1.1","I ___ my brother at the airport at six, so I can't come to the meeting. (meet)","am meeting | 'm meeting")
 P.gap("B1.1","They ___ to move to the coast, but they haven't decided yet. (think)","are thinking")
 P.gap("B1.1","What ___ the children ___ in the garden? They are very quiet. (do)","are / doing")
-P.text("B1.1","Make a question with Why: She is crying.","Why is she crying?")
+P.text("A2.1","Make a question with Why: She is crying.","Why is she crying?")   # A2 content (blind check r1-068; teacher, 14 November)
 P.text("B1.1","Make it negative: We are staying at a hotel.",["We aren't staying at a hotel.","We are not staying at a hotel.","We're not staying at a hotel."])
 P.text("B1.1","Make a question with *When*: Your parents are visiting you this weekend.","When are your parents visiting you?")
 replaces("Make a question: Your parents are visiting you this weekend.")

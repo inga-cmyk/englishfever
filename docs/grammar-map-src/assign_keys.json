@@ -13818,5 +13818,13 @@
 "rep_verbs | B2.2 | text | Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.' | ": [
 "rv_ing",
 "read"
+],
+"rep_verbs | B2.2 | text | Max said to you: 'I didn't take your phone.' Start with *Max denied*. | ": [
+"rv_ing",
+"read"
+],
+"rep_verbs | B2.2 | text | My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*. | ": [
+"rv_obj_to",
+"read"
 ]
 }

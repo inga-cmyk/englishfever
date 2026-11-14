@@ -3240,7 +3240,7 @@ rel_prep,B2.1,relative_clauses,B1.2,check,mcq,read,,b1-new-2.csv:29,relative_cla
 rel_which_all,B2.1,relative_clauses,B1.2,check,mcq,read,,b1-new-2.csv:30,"relative_clauses | B1.2 | mcq | Choose the correct option: She won the prize, ___ surprised everyone. | which"
 rel_which_all,B2.1,relative_clauses,B1.2,use,text,read,,b1-new-2.csv:34,relative_clauses | B1.2 | text | Join with *which*: She passed her driving test the first time. Nobody expected this. | 
 rel_which_all,B2.1,relative_clauses,B1.2,use,text,read,,b1-new-2.csv:38,relative_clauses | B1.2 | text | Join the two sentences: She passed her driving test. This surprised everyone. | 
-rv_ing,B2.1,rep_verbs,B2.2,use,text,read,rv-B22-3a-r4,built-in,rep_verbs | B2.2 | text | Start with *Max denied*: 'I didn't take your phone.' | 
+rv_ing,B2.1,rep_verbs,B2.2,use,text,read,rv-B22-3a-r5,built-in,rep_verbs | B2.2 | text | Max said to you: 'I didn't take your phone.' Start with *Max denied*. | 
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,rv-B22-4a,built-in,rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | She suggested to go by train.
 rv_ing,B2.1,rep_verbs,B2.2,use,write,read,rv-C11-6a-r5,built-in,"rep_verbs | B2.2 | write | Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!' | "
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,rv-C12-4a-r3,built-in,rep_verbs | B2.2 | mcq | Which sentence has a mistake? | He recommended to reading the report carefully.
@@ -3250,7 +3250,7 @@ rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-2.csv:14,rep_verbs | B2.2 | text
 rv_ing,B2.1,rep_verbs,B2.2,use,gap,read,,typical-b2c1-1.csv:20,rep_verbs | B2.2 | gap | My colleague suggested ___ a taxi to the airport. (take) | 
 rv_ing,B2.1,rep_verbs,B2.2,use,gap,read,,typical-b2c1-1.csv:37,rep_verbs | B2.2 | gap | The minister denied ___ the report before it was published. (see) | 
 rv_obj_to,B2.1,rep_verbs,B2.2,check,mcq,read,rv-C12-1a-r3,built-in,"rep_verbs | B2.2 | mcq | Which sentence reports this: 'If I were you, I'd take the earlier train.' | She advised me to take the earlier train."
-rv_obj_to,B2.1,rep_verbs,B2.2,use,text,read,rv-C12-3a-r9,built-in,rep_verbs | B2.2 | text | Start with *My sister advised*: 'You really should see a doctor about that cough.' | 
+rv_obj_to,B2.1,rep_verbs,B2.2,use,text,read,rv-C12-3a-r10,built-in,rep_verbs | B2.2 | text | My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,learn,gap,read,,learn-drag-3.csv:18,rep_verbs | B2.2 | gap | She advised me ___ ___ a second opinion before the operation. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,learn,gap,read,,learn-drag-3.csv:19,rep_verbs | B2.2 | gap | My colleague urged me ___ have the figures ___ before submitting the report. | 
 rv_obj_to,B2.1,rep_verbs,B2.2,use,gap,read,,twins-1.csv:64,rep_verbs | B2.2 | gap | 'Don't sign anything until you've read it.' → The lawyer advised her ___. | 

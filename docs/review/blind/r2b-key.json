@@ -1,0 +1,217 @@
+{
+ "r2b-001": {
+  "hash": "82202e47e3fb62b2",
+  "gate_key": "rep_verbs | B2.2 | text | Max said to you: 'I didn't take your phone.' Start with *Max denied*. | ",
+  "src": "built-in",
+  "point": "rv_ing",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Max denied taking my phone.",
+     "Max denied taking your phone.",
+     "Max denied that he had taken my phone.",
+     "Max denied having taken my phone.",
+     "Max denied that he took my phone.",
+     "Max denied that he had taken your phone.",
+     "Max denied taking the phone.",
+     "Max denied that he had taken the phone.",
+     "Max denied that he took the phone.",
+     "Max denied having taken the phone.",
+     "Max denied he had taken my phone.",
+     "Max denied he took my phone."
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-B22-3a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Max said to you: 'I didn't take your phone.' Start with *Max denied*.",
+   "answers": [
+    [
+     "Max denied taking my phone.",
+     "Max denied taking your phone.",
+     "Max denied that he had taken my phone.",
+     "Max denied having taken my phone.",
+     "Max denied that he took my phone.",
+     "Max denied that he had taken your phone.",
+     "Max denied taking the phone.",
+     "Max denied that he had taken the phone.",
+     "Max denied that he took the phone.",
+     "Max denied having taken the phone.",
+     "Max denied he had taken my phone.",
+     "Max denied he took my phone."
+    ]
+   ],
+   "why": "*deny* + -ing, or *deny* + *that* + clause.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "built-in"
+  }
+ },
+ "r2b-002": {
+  "hash": "1d33dc494623ce06",
+  "gate_key": "rep_verbs | B2.2 | text | My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*. | ",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister advised me to see a doctor about the cough.",
+     "My sister advised me to go to the doctor about that cough.",
+     "My sister advised me to go to the doctor about my cough.",
+     "My sister advised me that I should see a doctor about that cough.",
+     "My sister advised me that I should really see a doctor about that cough.",
+     "My sister advised me to really see a doctor about that cough.",
+     "My sister advised me to go and see a doctor about that cough.",
+     "My sister advised me that I should see a doctor about my cough.",
+     "My sister advised me that I should really see a doctor about my cough.",
+     "My sister advised me to really see a doctor about my cough.",
+     "My sister advised me to go and see a doctor about my cough.",
+     "My sister strongly advised me to see a doctor about that cough.",
+     "My sister advised me that I really should see a doctor about that cough.",
+     "My sister strongly advised me to see a doctor about my cough.",
+     "My sister advised me that I really should see a doctor about my cough.",
+     "My sister strongly advised me to see a doctor about the cough.",
+     "My sister advised me that I should see a doctor about the cough.",
+     "My sister advised me that I really should see a doctor about the cough."
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C12-3a-r10",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*.",
+   "answers": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister advised me to see a doctor about my cough.",
+     "My sister advised seeing a doctor about my cough.",
+     "My sister advised that I see a doctor about my cough.",
+     "My sister advised that I should see a doctor about my cough.",
+     "My sister advised me to see a doctor about the cough.",
+     "My sister advised me to go to the doctor about that cough.",
+     "My sister advised me to go to the doctor about my cough.",
+     "My sister advised me that I should see a doctor about that cough.",
+     "My sister advised me that I should really see a doctor about that cough.",
+     "My sister advised me to really see a doctor about that cough.",
+     "My sister advised me to go and see a doctor about that cough.",
+     "My sister advised me that I should see a doctor about my cough.",
+     "My sister advised me that I should really see a doctor about my cough.",
+     "My sister advised me to really see a doctor about my cough.",
+     "My sister advised me to go and see a doctor about my cough.",
+     "My sister strongly advised me to see a doctor about that cough.",
+     "My sister advised me that I really should see a doctor about that cough.",
+     "My sister strongly advised me to see a doctor about my cough.",
+     "My sister advised me that I really should see a doctor about my cough.",
+     "My sister strongly advised me to see a doctor about the cough.",
+     "My sister advised me that I should see a doctor about the cough.",
+     "My sister advised me that I really should see a doctor about the cough."
+    ]
+   ],
+   "why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
+   "hints": [],
+   "answer_notes": [
+    [
+     "My sister advised seeing a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I should see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised seeing a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised that I should see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should really see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should really see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I really should see a doctor about that cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I really should see a doctor about my cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I should see a doctor about the cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ],
+    [
+     "My sister advised me that I really should see a doctor about the cough.",
+     "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+     "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+    ]
+   ],
+   "why_lv": "*advise* + persona + *to* + pamatforma: *My sister advised me to see a doctor.*",
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_obj_to",
+   "src": "built-in"
+  }
+ }
+}

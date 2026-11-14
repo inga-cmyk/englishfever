@@ -1,0 +1,16 @@
+[
+ {
+  "id": "r2b-001",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Max said to you: 'I didn't take your phone.' Start with *Max denied*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r2b-002",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*.",
+  "note": "the learner types a whole sentence"
+ }
+]

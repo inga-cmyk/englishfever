@@ -7236,12 +7236,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "A reporting verb shows what the speaker did: *promise, warn, suggest, admit.*"
 },
 {
-"id": "rv-B22-3a-r4",
+"id": "rv-B22-3a-r5",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Start with *Max denied*: 'I didn't take your phone.'",
+"q": "Max said to you: 'I didn't take your phone.' Start with *Max denied*.",
 "answers": [
 [
 "Max denied taking my phone.",
@@ -7253,7 +7253,9 @@ return json_decode(<<<'EF_JSON_END'
 "Max denied taking the phone.",
 "Max denied that he had taken the phone.",
 "Max denied that he took the phone.",
-"Max denied having taken the phone."
+"Max denied having taken the phone.",
+"Max denied he had taken my phone.",
+"Max denied he took my phone."
 ]
 ],
 "why": "*deny* + -ing, or *deny* + *that* + clause.",
@@ -7448,12 +7450,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r9",
+"id": "rv-C12-3a-r10",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Start with *My sister advised*: 'You really should see a doctor about that cough.'",
+"q": "My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*.",
 "answers": [
 [
 "My sister advised me to see a doctor about that cough.",
@@ -7474,7 +7476,14 @@ return json_decode(<<<'EF_JSON_END'
 "My sister advised me that I should see a doctor about my cough.",
 "My sister advised me that I should really see a doctor about my cough.",
 "My sister advised me to really see a doctor about my cough.",
-"My sister advised me to go and see a doctor about my cough."
+"My sister advised me to go and see a doctor about my cough.",
+"My sister strongly advised me to see a doctor about that cough.",
+"My sister advised me that I really should see a doctor about that cough.",
+"My sister strongly advised me to see a doctor about my cough.",
+"My sister advised me that I really should see a doctor about my cough.",
+"My sister strongly advised me to see a doctor about the cough.",
+"My sister advised me that I should see a doctor about the cough.",
+"My sister advised me that I really should see a doctor about the cough."
 ]
 ],
 "why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
@@ -7527,6 +7536,26 @@ return json_decode(<<<'EF_JSON_END'
 ],
 [
 "My sister advised me that I should really see a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I really should see a doctor about that cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I really should see a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I should see a doctor about the cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I really should see a doctor about the cough.",
 "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
 "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
 ]

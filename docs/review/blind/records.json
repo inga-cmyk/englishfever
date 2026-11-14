@@ -59,6 +59,11 @@
 "round": "r1",
 "task": "r1-083"
 },
+"263a346cef45afba": {
+"gate_key": "present_continuous | A2.1 | text | Make a question with Why: She is crying. | ",
+"round": "r2",
+"task": "r2-004"
+},
 "26ab55af63fa0b5a": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I'll wait for you here ___ six. Then I'm going home. | until",
 "round": "r1",
@@ -118,6 +123,11 @@
 "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | should we leave before it gets dark",
 "round": "r1",
 "task": "r1-069"
+},
+"4400bccc89390775": {
+"gate_key": "articles_b1 | B1.2 | text | Rewrite with *the elderly*: Old people need more care. | ",
+"round": "r2",
+"task": "r2-003"
 },
 "4448fcf35b40024d": {
 "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | we stayed in a flat that had a garden",
@@ -398,6 +408,11 @@
 "gate_key": "more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ",
 "round": "r1",
 "task": "r1-046"
+},
+"bcc51d813fc00a1f": {
+"gate_key": "rep_verbs | B2.2 | text | Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.' | ",
+"round": "r2",
+"task": "answers added"
 },
 "bf6017c8c21de9fc": {
 "gate_key": "relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | ",

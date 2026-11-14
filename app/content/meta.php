@@ -5504,6 +5504,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Relative clauses (who, which, that, where)",
    "area": "clauses",
    "levels": [
+    "A2.2",
     "B1.1",
     "B1.2"
    ],
@@ -5667,6 +5668,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Time clauses (when, as soon as, until)",
    "area": "clauses",
    "levels": [
+    "A2.2",
     "B1.1",
     "B1.2"
    ],
@@ -6369,6 +6371,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "More modals: might, could, be able to",
    "area": "modals",
    "levels": [
+    "A2.2",
     "B1.1",
     "B1.2"
    ],

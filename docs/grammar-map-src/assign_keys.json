@@ -13522,5 +13522,205 @@
 "present_perfect_continuous | B1.2 | mcq | Choose the correct option: Sorry I'm late. I ___ in traffic since eight. | have been sitting": [
 "ppc_result",
 "read"
+],
+"relative_clauses | A2.2 | gap | I have a friend ___ lives in Canada. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Choose the correct option: We stayed at a hotel ___ has a big pool. | which": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Choose the correct option: I use an app ___ makes short videos. | that": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Which sentence is correct? | The man who fixed my car was very kind.": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Which sentence is correct? | I need a laptop that is light.": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Choose the correct option: The bus which ___ to the airport leaves at six. | goes": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | mcq | Which sentence is NOT correct? | I know a woman which speaks five languages.": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | Write the missing word: A pilot is a person ___ flies planes. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | Write the missing word: I bought a bike ___ has ten gears. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | Write the missing word: The woman ___ teaches us yoga is from India. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | Write the missing word: Do you like songs ___ tell a story? | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | Write the missing word: On our trip we met a guide ___ spoke perfect English. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | text | Join with *who*: I have a cousin. He works in a hotel. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | text | Join the two sentences: We visited a museum. It has old cars. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | text | Join the two sentences: The app helps me learn new words. It is free. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | order | Put the words in order. | we stayed in a flat that had a garden": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | order | Put the words in order. | she wants a job which pays well": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | order | Put the words in order. | my uncle has a shop that sells bikes": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | order | Put the words in order. | she met a man who makes furniture": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | I know a man ___ ___ three languages. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | We bought a car ___ uses very little petrol. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | gap | The women who ___ in the next office are my colleagues. | ": [
+"rel_subj",
+"read"
+],
+"relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a picture = which shows roads and towns.": [
+"rel_subj",
+"read"
+],
+"more_modals | A2.2 | mcq | Choose the correct option: Take an umbrella. It might ___ later. | rain": [
+"might",
+"read"
+],
+"more_modals | A2.2 | mcq | Which sentence is correct? | She may be at home now.": [
+"might",
+"read"
+],
+"more_modals | A2.2 | mcq | Choose the correct option: I'm not sure yet. We ___ go to the beach on Saturday. | might": [
+"might",
+"read"
+],
+"more_modals | A2.2 | mcq | Choose the correct option: He's very tired. He ___ not come to the party. | might": [
+"might",
+"read"
+],
+"more_modals | A2.2 | mcq | Which sentence is NOT correct? | Maybe it will might snow tonight.": [
+"might",
+"read"
+],
+"more_modals | A2.2 | mcq | Which sentence is correct? | Ask Tom. He might know the answer.": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | mcq | Choose the correct option: Don't wait for me. I ___ be late. | may": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | Write the missing word: I'm not sure, but I ___ visit my aunt this weekend. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | Write the missing word: The road is icy. You ___ fall, so be careful. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | I can't see Anna's car. She might ___ at home. (not / be) | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | Write the missing word: I'm not sure, but they ___ have a map of the town at the desk. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | text | Make it negative: We might finish the project today. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | text | Say it another way with *may*: It's possible that she knows Anna. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | order | Put the words in order. | the café might be busy today": [
+"might",
+"read"
+],
+"more_modals | A2.2 | order | Put the words in order. | i may not have time for lunch": [
+"might",
+"read"
+],
+"more_modals | A2.2 | order | Put the words in order. | they might move to another city": [
+"might",
+"read"
+],
+"more_modals | A2.2 | order | Put the words in order. | you might need a warm jacket": [
+"might",
+"read"
+],
+"more_modals | A2.2 | order | Put the words in order. | my phone might not work in the mountains": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | It ___ ___ tomorrow, so I'm taking my boots. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | She may ___ ___ the meeting today. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | gap | You ___ ___ this film. It's very funny. | ": [
+"might",
+"read"
+],
+"more_modals | A2.2 | match | Match each sentence with its meaning. | It will rain. = I'm sure about the rain. ; She might call. = Perhaps she will call. ; He won't come. = I'm sure he will stay at home. ; They might not win. = Perhaps they will lose.": [
+"might",
+"read"
 ]
 }

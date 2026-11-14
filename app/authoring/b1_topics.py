@@ -7,8 +7,8 @@ SKILLS_NEW = [
     ("used_to", "Used to and be used to", "active", ["A2.2", "B1.1", "B1.2"]),
     ("articles", "Articles: a, an, the", "nouns", ["A2.2", "B1.1", "B1.2"]),
     ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.2", "B1.1"]),
-    ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["B1.1", "B1.2"]),
-    ("time_clauses", "Time clauses (when, as soon as, until)", "clauses", ["B1.1", "B1.2"]),
+    ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["A2.2", "B1.1", "B1.2"]),
+    ("time_clauses", "Time clauses (when, as soon as, until)", "clauses", ["A2.2", "B1.1", "B1.2"]),
     ("question_tags", "Question tags (isn't it? don't you?)", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("subject_object_q", "Subject and object questions", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("verb_patterns", "Verb patterns: -ing or to", "patterns", ["A2.2", "B1.1", "B1.2"]),
@@ -201,7 +201,7 @@ kam pieder nolieguma jautajums darbibas vards verbs lietvards nosaukums laiks la
 # ───────── second batch: more structures the B1 reference teaches ─────────
 AREAS_NEW.append(("adjectives", "Adjectives and adverbs"))
 SKILLS_NEW.extend([
-    ("more_modals", "More modals: might, could, be able to", "modals", ["B1.1", "B1.2"]),
+    ("more_modals", "More modals: might, could, be able to", "modals", ["A2.2", "B1.1", "B1.2"]),
     ("passive_modals", "Passive with modals (must be done)", "passive", ["B1.1", "B1.2"]),
     ("causative", "Causative: have something done", "patterns", ["B1.1", "B1.2"]),
     ("two_objects", "Verbs with two objects (give me, tell her)", "patterns", ["A2.2", "B1.1"]),

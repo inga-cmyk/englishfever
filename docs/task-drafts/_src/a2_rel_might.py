@@ -1,6 +1,6 @@
 """A2.2 tasks for two points the teacher moved to A2.2 (13 November, decision 2; docs/GRAMMAR-MAP-GAPS.md section 5):
 rel_subj (who / which / that as the subject) and might (might / may: possibility). 25 each, mix of the rules (3 choose, 4 drag,
-2 type a word, 1 whole sentence per 10). DRAFT: written to pending/, not packaged, until the teacher has read it.
+2 type a word, 1 whole sentence per 10). Approved by the teacher on 14 November after a second reader.
 Grammar checked against Murphy 92 (relative clauses) and 29-30 (may, might)."""
 from lib import rows, save, gp, od, mc, tx, mt
 
@@ -100,4 +100,4 @@ mt(MOD, L, 2, "Match each sentence with its meaning.", [("It will rain.", "I'm s
    ("He won't come.", "I'm sure he will stay at home."), ("They might not win.", "Perhaps they will lose.")],
    "*will* = sure; *might* = perhaps. *won't* and *might not* are the negatives.", "*will* = droši; *might* = varbūt. *won't* un *might not* ir nolieguma formas.")
 
-save("pending/a2-rel-might-1.csv")
+save("a2-rel-might-1.csv")   # approved by the teacher, 14 November

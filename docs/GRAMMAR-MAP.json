@@ -2405,11 +2405,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 6,
-    "use": 3,
-    "learn": 1
+    "check": 22,
+    "use": 11,
+    "learn": 2
    },
    "task_levels": [
+    "A2.2",
     "B1.1",
     "B1.2"
    ]
@@ -8274,11 +8275,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 4,
-    "use": 2,
-    "learn": 1
+    "check": 20,
+    "use": 10,
+    "learn": 2
    },
    "task_levels": [
+    "A2.2",
     "B1.1"
    ]
   },

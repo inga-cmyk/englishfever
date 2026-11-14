@@ -1,0 +1,497 @@
+[
+ {
+  "id": "r4-001",
+  "answer": "I lived",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-002",
+  "answer": [
+   "I",
+   "worked"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-003",
+  "answer": "he studied",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-004",
+  "answer": "She asked me where my office was.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-005",
+  "answer": "the film started",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-006",
+  "answer": [
+   "the train",
+   "left"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-007",
+  "answer": "the shop closed",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-008",
+  "answer": "She asked me when the bus came.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "For a timetabled bus 'when the bus would come' is more natural; 'when the bus came' is acceptable but slightly odd."
+ },
+ {
+  "id": "r4-009",
+  "answer": "I had finished",
+  "other_correct": [
+   "I'd finished",
+   "he had finished",
+   "she had finished",
+   "we had finished",
+   "they had finished"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'He asked if …' has no object, so the person addressed ('you') is unknown; 'he/she/we/they had finished' are equally correct and must be accepted or the frame should be 'He asked me if …'.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-010",
+  "answer": [
+   "I",
+   "had",
+   "eaten"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-011",
+  "answer": "I had seen",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-012",
+  "answer": "She asked if the parcel had arrived.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-013",
+  "answer": "I could help her",
+  "other_correct": [
+   "he could help her",
+   "she could help her",
+   "we could help her",
+   "they could help her"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'She asked if …' has no object, so 'you' could be I/he/she/we/they; all must be accepted or the frame should be 'She asked me if …'. Learners must also change 'me' to 'her' - worth a hint.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-014",
+  "answer": [
+   "I",
+   "could"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-015",
+  "answer": "I could swim",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-016",
+  "answer": "He asked if the shop could deliver on Sunday.",
+  "other_correct": [
+   "He asked on Sunday if the shop could deliver.",
+   "On Sunday he asked if the shop could deliver."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Card 'sunday' is shown in lowercase; a proper noun card should be 'Sunday'. Alternative orders with 'on Sunday' moved are grammatical (different meaning) and may be rejected.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-017",
+  "answer": "the manager was",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-018",
+  "answer": [
+   "the station",
+   "was"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-019",
+  "answer": "the lift was",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-020",
+  "answer": "She asked where her keys were.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-021",
+  "answer": "I had been learning English",
+  "other_correct": [
+   "I'd been learning English"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-022",
+  "answer": [
+   "I",
+   "had",
+   "lived"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-023",
+  "answer": "I had worked",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-024",
+  "answer": "She asked how long the shop had been open.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-025",
+  "answer": "I was late",
+  "other_correct": [
+   "we were late",
+   "he was late",
+   "she was late",
+   "they were late"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'The teacher asked why …' does not say who was addressed; 'he/she/we/they was/were late' are equally correct and must be accepted, or the frame should be 'The teacher asked me why …'.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-026",
+  "answer": [
+   "he",
+   "was"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-027",
+  "answer": "I was",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-028",
+  "answer": "He asked why the shop was closed.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-029",
+  "answer": "Anna lives",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-030",
+  "answer": [
+   "Tom",
+   "works"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-031",
+  "answer": "your teacher lives",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-032",
+  "answer": "Do you know where Mark works?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Card 'mark' is shown in lowercase; a name card should be 'Mark' (lowercase also reads as the common noun 'mark').",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-033",
+  "answer": "the bus leaves",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-034",
+  "answer": [
+   "the museum",
+   "opens"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-035",
+  "answer": "the concert starts",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-036",
+  "answer": "Could you tell me what time the bank closes?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-037",
+  "answer": "this jacket is",
+  "other_correct": [
+   "this jacket costs"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-038",
+  "answer": [
+   "this lamp",
+   "costs"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-039",
+  "answer": "the ticket is",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-040",
+  "answer": "Do you know how much the tickets are?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-041",
+  "answer": "there is a pharmacy near here",
+  "other_correct": [
+   "there's a pharmacy near here"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-042",
+  "answer": [
+   "there",
+   "is"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-043",
+  "answer": "there is",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-044",
+  "answer": "Do you know if there is a café near the station?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-045",
+  "answer": "the post office is",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-046",
+  "answer": [
+   "the toilet",
+   "is"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-047",
+  "answer": "the library is",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r4-048",
+  "answer": "Do you know where the car park is?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

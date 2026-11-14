@@ -14098,5 +14098,9 @@
 "rep_questions | B1.2 | order | Put the words in order. | she asked me what time the bus arrived": [
 "rep_q_wh",
 "read"
+],
+"rep_verbs | B2.2 | text | Anna: 'Leo, where are all my cookies?'\nLeo: 'I didn't eat them!'\nFinish the sentence: Leo denied … | ": [
+"rv_ing",
+"read"
 ]
 }

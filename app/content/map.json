@@ -7170,7 +7170,7 @@
 "relative_clauses | mcq | Choose the correct option: She won the prize, ___ surprised everyone. | which": "rel_which_all",
 "relative_clauses | text | Join with *which*: She passed her driving test the first time. Nobody expected this. | ": "rel_which_all",
 "relative_clauses | text | Join the two sentences: She passed her driving test. This surprised everyone. | ": "rel_which_all",
-"rep_verbs | text | Anna: 'Who sent that email to the whole company?'\nLeo: 'It wasn't me!'\nFinish the sentence: Leo denied … | ": "rv_ing",
+"rep_verbs | text | Anna: 'Leo, where are all my cookies?'\nLeo: 'I didn't eat them!'\nFinish the sentence: Leo denied … | ": "rv_ing",
 "rep_verbs | mcq | Which sentence is NOT correct? | He suggested to meet on Friday.": "rv_ing",
 "rep_verbs | text | Report with *deny*: 'I didn't share the secret.' Start with *Nora denied*. | ": "rv_ing",
 "rep_verbs | gap | My colleague suggested ___ a taxi to the airport. (take) | ": "rv_ing",

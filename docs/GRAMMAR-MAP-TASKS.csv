@@ -3330,8 +3330,8 @@ Finish the sentence: Max denied … | "
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,rv-B22-4a,built-in,rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | She suggested to go by train.
 rv_ing,B2.1,rep_verbs,B2.2,use,write,read,rv-C11-6a-r5,built-in,"rep_verbs | B2.2 | write | Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!' | "
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,rv-C12-4a-r3,built-in,rep_verbs | B2.2 | mcq | Which sentence has a mistake? | He recommended to reading the report carefully.
-rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-1.csv:67,"rep_verbs | B2.2 | text | Anna: 'Who sent that email to the whole company?'
-Leo: 'It wasn't me!'
+rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-1.csv:67,"rep_verbs | B2.2 | text | Anna: 'Leo, where are all my cookies?'
+Leo: 'I didn't eat them!'
 Finish the sentence: Leo denied … | "
 rv_ing,B2.1,rep_verbs,B2.2,check,mcq,read,,twins-2.csv:12,rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | He suggested to meet on Friday.
 rv_ing,B2.1,rep_verbs,B2.2,use,text,read,,twins-2.csv:14,rep_verbs | B2.2 | text | Report with *deny*: 'I didn't share the secret.' Start with *Nora denied*. | 

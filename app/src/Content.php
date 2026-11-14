@@ -26,6 +26,7 @@ final class Content
             if (class_exists('CustomItems', false)) self::$items = array_merge(self::$items, CustomItems::approved()); // tasks the teacher added and approved
             foreach (self::$items as $i => $it) if (strncmp((string) $it['level'], 'C1', 2) === 0) self::$items[$i]['level'] = 'B2.2';   // no C1 level in the app (teacher, 12 November, U3 A): prepared C1 tasks are B2.2
             self::hideRelabelled();
+            self::hideDuplicates();
             self::$byId = [];
             foreach (self::$items as $i => $it) {
                 self::$items[$i]['d'] = self::difficulty($it['level'], $it['bloom']);
@@ -78,6 +79,22 @@ final class Content
     {
         self::items();
         foreach ($tasks as $t) { $t['d'] = self::difficulty($t['level'], $t['bloom']); self::$items[] = $t; self::$byId[$t['id']] = &self::$items[count(self::$items) - 1]; }
+    }
+
+    /**
+     * Two active tasks with the same text and the same answer are one task (report of 14 November: the same *the elderly* gap was
+     * served twice, an older copy in another topic had not been retired on the server). The later one stays.
+     */
+    private static function hideDuplicates(): void
+    {
+        $seen = [];
+        foreach (self::$items as $i => $it) {
+            $body = $it['correct'] ?? $it['sentence'] ?? (isset($it['answers']) ? json_encode($it['answers']) : (isset($it['pairs']) ? json_encode($it['pairs']) : ''));
+            $k = $it['kind'] . '|' . mb_strtolower(trim((string) $it['q'])) . '|' . mb_strtolower((string) $body);
+            if (isset($seen[$k])) unset(self::$items[$seen[$k]]);
+            $seen[$k] = $i;
+        }
+        self::$items = array_values(self::$items);
     }
 
     /** Built-in tasks that were given a lower level as a copy (content/relabelled.php): ids => true. */

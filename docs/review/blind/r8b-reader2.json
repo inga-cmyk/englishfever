@@ -1,0 +1,70 @@
+[
+ {
+  "id": "r8b-001",
+  "answer": ["lived"],
+  "other_correct": ["could live", "would live (possible if the speaker means the sister's choice, but weaker with a state verb)"],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r8b-002",
+  "answer": ["could"],
+  "other_correct": ["was able to", "were able to"],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r8b-003",
+  "answer": "I wish I spoke French.",
+  "other_correct": ["I wish I could speak French.", "I wish I knew French."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r8b-004",
+  "answer": ["were"],
+  "other_correct": ["was", "could be", "would be (wish about his behaviour)"],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r8b-005",
+  "answer": ["were"],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r8b-006",
+  "answer": [
+   ["I don't have a car.", "I wish I had one."],
+   ["I can't sing.", "I wish I could sing."],
+   ["My room is small.", "I wish it were bigger."],
+   ["I don't know her name.", "I wish I knew her name."]
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r8b-007",
+  "answer": "I'd rather go to the mountains than to the beach.",
+  "other_correct": ["I'd rather go to the mountains than the beach.", "I'd rather go to the mountains than go to the beach.", "I'd rather go to the mountains.", "I'd rather not go to the beach.", "I'd rather not go to the beach. I'd rather go to the mountains.", "I'd rather go to the mountains, not to the beach."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Two input sentences but the instruction does not say to make ONE sentence or to use 'than', so the learner cannot know which of many correct outputs is expected ('I'd rather not go to the beach.', 'I'd rather go to the mountains.', '... than the beach', '... than to the beach', '... than go to the beach'). The key must accept all of these, or the instruction should say 'one sentence with than'.",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

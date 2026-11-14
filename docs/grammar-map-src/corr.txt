@@ -1,0 +1,53 @@
+# read by hand, 13 November: topic: task numbers > point
+present_simple: 7,9,29,33,49,64,70,79,92,94,101,103,106>ps_negq; 16,68,77,8>fut_timetable; 18,19>stative; 1>ps_pc; 82>ps_form; 84,57>ps_form
+present_continuous: 1,100,101>ps_pc; 13,77,75,9,82,86>fut_arr; 18,53,90,91>stative; 78>stative2; 60,88,7,19,52,58,68,72,74,76,87,89,103>pc_temp; 2,3,22,28,29,34,39,41,50,85,96>pc_form
+agreement: 5,10,16,21>there_is; 4,12,19,20,27>ps_negq; 11,31>indef_sing; 33>agr_head; 39>plural_irr; 28,36>agr_basic
+aux_verbs: 9,10,15,41,43>q_yesno; 11,50>pp_for_since; 31,49>ppc_form
+past_simple: 4,11,18,54,35,84,105,43,52,104,70,73,42,87>pst_negq; 6,13,20,37,85>pst_reg; 93>conj_so_bec; 10>pst_irr; 19>pp_ps
+cmp_pp_ps: 0,24,2,20>v3; 7,11,15,17>pp_for_since; 9>pp_ps_now; 14,23,18>pp_exp
+past_continuous: 12,65,66>pastc_when; 14,16,76,77>fut_past; 22,34,17>pastc_two; 23,100,101,102>past_seq
+cmp_ps_pc: 0,20,1>pastc_form; 2,3,11,12,18>past_seq; 4,16,10>stative
+narrative: 0,5,7,17,11,18,8,13>pastp_by; 1,2,3,4,12,15>pastp_form; 9>pastp_order; 14,20>pastc_when
+past_perfect: 36>pastp_form; 12,46>pastp_by
+narrative_b2: 0,16>pastpc; 8>ppc_form; 10,12,19,17>pastpc_vs
+present_perfect: 0,35,64,68,69,4,29,65,67,70,71,52,34>v3; 51,63,100,5,50>pp_form; 116,115>pp_ps; 118>pp_ps_now; 6,21,23,25,41,58,83,79,17,88>pp_exp; 7,72,103>pp_for_since; 14,74,82>pp_first_time; 96>ppc_form
+present_perfect_continuous: 4,44,10,13,49>pp_ppc; 9,24,28,31,37,47>ppc_result; 11,25,26,27,29,32,48,45>ppc_form
+used_to: 14,15>be_used_to; 23>used_to_ps
+future: 0,27,48,53,84>going_to; 3,10,41,47,59,68,18,79,25,85,99>will_now; 11,38,45,62,21,70,81>fut_arr; 66,15,76>c1; 26,42,80,73,29,31,32,65,92>will_going; 94>fut_mix; 12,52,96,72,82,89>will_form; 23>about_to; 86,95>fut_timetable; 103>might; 17,20,67,69,91,93>fut_time_clause
+time_clauses: 4>fut_perf; 9,24,25>when_done; 2,10,13,14,17,19,23,29,33,34>fut_time_clause
+modal_verbs: 50>mustnt_dont; 56,55>deduction; 70,76>be_able; 78,79>could_past; 39,57>had_to; 52>allowed_to
+more_modals: 37,38>might; 14>neednt_have; 11,20,27>allowed_to; 15>able_once; 18>deduction; 21>could_past
+passive_modals: 13,14,19,20,27>pas_modal_past; 10>pas_will
+causative: 40,41>caus_have
+present_simple_passive: 1,15,44>pas_act; 4,18>v3; 5,12,19,45,62,103,104,33,78,81,86,99,105,106,13,20>pas_pres; 75>allowed_to; 26,76,94>pas_negq
+past_simple_passive: 12,19,5,45,15>pas_act; 27,71,78>pas_negq; 48,8>pas_by; 4,11,18,63>v3; 46,104,105,13,14,30,31,37,43,56,59,68,83,85,91,100,106,98>pas_past
+cond_zero: 84,88>c1_unless; 41,98>c0_c1; 3,4,10,42,57,99,100>c0
+cond_first: 11,17,99,104,12>fut_time_clause; 8>c1_unless; 9,25>c1
+cond_second: 2,6,38,40,14,62,35>c2_were; 51>c1_c2; 22>c2_c3; 13,48>c2
+cond_third: 14,59>c2_c3; 65>c3_modal
+cond_mixed: 9,19,22,33,40>c_mixed2; 13,12,14,15,16,17,23,24,25,26,35,36,37,38>c_inv
+cond_advanced: 14,18,26>x_inv_cond; 8,22,9,19>wish_past
+rep_statements: 23,32,45,51,6,34>rep_backshift2; 48>rv_to; 56>rep_orders; 1,20,46,9,10,17,49,53,70,35>rep_backshift
+rep_questions: 57,67>rep_orders; 59>rep_q_yn; 53,25,30>rep_q_wh; 15,62,75>iq_to
+rep_verbs: 16,22,35>rv_that; 28>rv_prep_ing
+ind_polite: 1,22,47,48,19,64,20>iq_wh
+ind_advanced: 4,6,8,30,34,38>iq_subject; 5,9,28,39>iq_wh; 40>iq_to
+subject_object_q: 6,7,32,33>q_prep_end; 22,31>q_which_subj; 26>q_wh; 35>q_subject
+question_tags: 13,45,14,38>tag_special
+relative_clauses: 3,10,22,23,37>rel_nondef; 8,17>rel_obj; 13,25,27>rel_prep; 28,32>rel_which_all; 39>rel_subj
+verb_patterns: 24>vp_prep_ing; 33>vp_to; 54>vp_ing; 9>would_like
+dep_prepositions: 27,28,45,46,42>q_prep_end; 11>dep_verb; 39>dep_adj; 23>dep_none
+prep_time_place: 26,38,39,40>prep_place; 33,34>prep_transport; 24>prep_time
+adverbs: 4,58,1,26,43,44,50>adv_freq; 45,11,29,48,56>adj_adv; 17>adv_degree; 24,35>adv_position; 30>adv_irreg; 15,16,23,33>too_to
+adj_ed_ing: 23,31,32,35,36,34>eding
+comparison: 2,8,52,57,64,68,4,19,42>sup; 26,32>cmp_modify; 28,29>cmp_adv; 40,59,72,73,76>cmp_double; 41,50>cmp_as; 18,31>cmp_er
+so_such: 11,24,29,13>so_that; 12,18>so_much_many; 38,39,40>so_such_basic
+quantity: 10,23,47>few_little; 29,15>much_many
+indefinite_pronouns: 13>indef_sing; 19,3,40,41>indef_form
+articles: 15,41>so_such_basic; 16,31,32>the_unique; 27,26>a_the; 9,23,6,40>a_an; 18>count_unc; 20,29>art_places; 25>quite_rather
+articles_b1: 23,25>art_general; 1,9,12,21,22,26>the_adj; 11>the_unique; 24>art_names
+conj_basic: 13,17,14,16>conj_and_but
+conj_linkers: 3,14,31>because_of; 9,27>link_however; 11,12,30,34>vp_prep_ing
+conj_clauses: 4,5>purpose_to; 8>reason_b1; 14,25>purpose_so_that; 16,17>because_of; 19,36>purpose_b2; 26,29,31,33,28>contrast_b1
+conj_b2: 4>purpose_b2; 8,15,9,13,14,26>reason_result_b2; 18>in_case; 24>contrast_b1; 27>contrast_b2
+adj_order: 27>adj_basic

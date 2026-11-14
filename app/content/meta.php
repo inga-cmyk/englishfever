@@ -5165,6 +5165,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Articles: a, an, the",
    "area": "nouns",
    "levels": [
+    "A2.1",
     "A2.2",
     "B1.1",
     "B1.2"

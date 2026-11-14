@@ -15,7 +15,7 @@ UNC = ("No article with an uncountable noun when we mean it in general: *I don't
 PL = ("No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
       "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.")
 SPORT = ("Sports and school subjects are uncountable nouns: no article (*play golf, teach maths*). But instruments take *the*: *play the piano*.",
-         "Sporta veidi un mācību priekšmeti ir neskaitāmi lietvārdi: bez artikula (*play golf, teach maths*). Bet mūzikas instrumentiem vajag *the*: *play the piano*.")
+         "Sporta veidi un skolas mācības (matemātika, vēsture) ir neskaitāmi lietvārdi: bez artikula (*play golf, teach maths*). Bet mūzikas instrumentiem vajag *the*: *play the piano*.")
 
 # ── choice (7) ──
 # Murphy 77: country name, no article; "a / an Croatia" is the learner who puts an article before every noun
@@ -38,7 +38,7 @@ mc(T, L, 2, "Which sentence is NOT correct?", "My parents live in the Spain.",
 mc(T, L, 2, "Which sentence is NOT correct?", "She studies the history at university.",
    ["Anna and her sister live in Paris.", "Horses need a lot of space to run.", "I don't drink milk with my coffee."],
    "School subjects in general have no article: *She studies history.* (*the history of Rome* is one particular history.)",
-   "Mācību priekšmetiem vispārīgi artikula nav: *She studies history.* (*the history of Rome* ir kāda noteikta vēsture.)")
+   "Skolas mācībām (vēsture, matemātika) vispārīgi artikula nav: *She studies history.* (*the history of Rome* ir kāda noteikta vēsture.)")
 
 # ── word order (5) ──
 # moving the card gives "the green tea in morning": wrong, so one place for "the"

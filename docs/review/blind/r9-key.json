@@ -1,0 +1,6284 @@
+{
+ "r9-001": {
+  "hash": "cd500283b67869aa",
+  "gate_key": "aux_verbs | A2.1 | mcq | Choose the correct option: ___ your neighbours got a dog? | Have",
+  "src": "zz-blind-gap-points-a2-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Have",
+   "wrong": [
+    "Has",
+    "Do",
+    "Are"
+   ]
+  },
+  "item": {
+   "id": "c-3017",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ your neighbours got a dog?",
+   "why": "*your neighbours* = *they*: *Have they got …?* With *got* the question starts with *have / has*, not *do* or *are*.",
+   "why_lv": "*your neighbours = they*: *Have they got* …? Ar *got* jautājums sākas ar *have / has*, nevis *do* vai *are*.",
+   "correct": "Have",
+   "wrong": [
+    "Has",
+    "Do",
+    "Are"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:2"
+  }
+ },
+ "r9-002": {
+  "hash": "94e5395908b941a7",
+  "gate_key": "aux_verbs | A2.1 | mcq | Which sentence is correct? | Has your office got a kitchen?",
+  "src": "zz-blind-gap-points-a2-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Has your office got a kitchen?",
+   "wrong": [
+    "Does your office have got a kitchen?",
+    "Have your office got a kitchen?",
+    "Is your office having a kitchen?"
+   ]
+  },
+  "item": {
+   "id": "c-3018",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "Question: *Have / Has* + subject + *got*: *Has she got a car?* Or with *do*: *Does she have a car?* Not *Does she have got …?*",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *got*: *Has she got a car?* Vai ar *do*: *Does she have a car?* Nevis *Does she have got* …?",
+   "correct": "Has your office got a kitchen?",
+   "wrong": [
+    "Does your office have got a kitchen?",
+    "Have your office got a kitchen?",
+    "Is your office having a kitchen?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:3"
+  }
+ },
+ "r9-003": {
+  "hash": "908310af0d4dff3a",
+  "gate_key": "aux_verbs | A2.1 | mcq | Which sentence is correct? | She doesn't have a laptop at home.",
+  "src": "zz-blind-gap-points-a2-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "She doesn't have a laptop at home.",
+   "wrong": [
+    "She doesn't has a laptop at home.",
+    "She doesn't have got a laptop at home.",
+    "She don't have a laptop at home."
+   ]
+  },
+  "item": {
+   "id": "c-3019",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "After *do / does / don't / doesn't* use *have*: no *-s*, no *got*: *Does she have …? We don't have …*",
+   "why_lv": "Aiz *do / does / don't / doesn't* lieto *have*: bez *-s*, bez *got*: *Does she have* …? *We don't have* …",
+   "correct": "She doesn't have a laptop at home.",
+   "wrong": [
+    "She doesn't has a laptop at home.",
+    "She doesn't have got a laptop at home.",
+    "She don't have a laptop at home."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:4"
+  }
+ },
+ "r9-004": {
+  "hash": "c75c6fb4e0828130",
+  "gate_key": "aux_verbs | A2.1 | mcq | Choose the correct short answer: 'Have you got a bike?' | Yes, I have.",
+  "src": "zz-blind-gap-points-a2-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Yes, I have.",
+   "wrong": [
+    "Yes, I have got.",
+    "Yes, I do.",
+    "Yes, I've."
+   ]
+  },
+  "item": {
+   "id": "c-3020",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct short answer: 'Have you got a bike?'",
+   "why": "A short answer to *Have you got …?* repeats *have / has* without *got*: *Yes, I have. No, she hasn't.* To *Do you have …?*: *Yes, I do.*",
+   "why_lv": "Īsajā atbildē uz *Have you got* …? atkārto *have / has* bez *got*: *Yes, I have.* (nevis *Yes, I have got*.) Uz *Do you have* …?: *Yes, I do.*",
+   "correct": "Yes, I have.",
+   "wrong": [
+    "Yes, I have got.",
+    "Yes, I do.",
+    "Yes, I've."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:5"
+  }
+ },
+ "r9-005": {
+  "hash": "6d4ad2d25143e11f",
+  "gate_key": "aux_verbs | A2.1 | mcq | Choose the correct option: We ___ any milk. | haven't got",
+  "src": "zz-blind-gap-points-a2-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "haven't got",
+   "wrong": [
+    "don't have got",
+    "hasn't got",
+    "not have got"
+   ]
+  },
+  "item": {
+   "id": "c-3021",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We ___ any milk.",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "correct": "haven't got",
+   "wrong": [
+    "don't have got",
+    "hasn't got",
+    "not have got"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:6"
+  }
+ },
+ "r9-006": {
+  "hash": "e3903329868b8a73",
+  "gate_key": "aux_verbs | A2.1 | mcq | Which sentence is NOT correct? | My sister is having blue eyes.",
+  "src": "zz-blind-gap-points-a2-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My sister is having blue eyes.",
+   "wrong": [
+    "Have you got any plans for Saturday?",
+    "Our flat doesn't have a lift.",
+    "My phone's got a great camera."
+   ]
+  },
+  "item": {
+   "id": "c-3022",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*have* (own) is a state: no *-ing*. *She has got blue eyes*, not *She is having blue eyes*.",
+   "why_lv": "*have* (piederēt) ir stāvoklis: bez *-ing*. *She has got blue eyes*, nevis *She is having blue eyes.*",
+   "correct": "My sister is having blue eyes.",
+   "wrong": [
+    "Have you got any plans for Saturday?",
+    "Our flat doesn't have a lift.",
+    "My phone's got a great camera."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:7"
+  }
+ },
+ "r9-007": {
+  "hash": "76fc5525854297a1",
+  "gate_key": "aux_verbs | A2.1 | mcq | Choose the correct option: What kind of car ___ got? | has she",
+  "src": "zz-blind-gap-points-a2-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "has she",
+   "wrong": [
+    "she has",
+    "does she",
+    "have she"
+   ]
+  },
+  "item": {
+   "id": "c-3023",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: What kind of car ___ got?",
+   "why": "Question word + *has* + subject + *got*: *What kind of car has she got?* Or: *What kind of car does she have?*",
+   "why_lv": "Jautājamais vārds + *has* + teik. priekšmets + *got*: *What kind of car has she got?* Vai: *What kind of car does she have?*",
+   "correct": "has she",
+   "wrong": [
+    "she has",
+    "does she",
+    "have she"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:8"
+  }
+ },
+ "r9-008": {
+  "hash": "7d8121d0a5e0f130",
+  "gate_key": "aux_verbs | A2.1 | order | Put the words in order to make a question. | have you got a minute",
+  "src": "zz-blind-gap-points-a2-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "have you got a minute",
+   "also": []
+  },
+  "item": {
+   "id": "c-3024",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question: *Have / Has* + subject + *got*: *Has she got a car?* Or with *do*: *Does she have a car?* Not *Does she have got …?*",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *got*: *Has she got a car?* Vai ar *do*: *Does she have a car?* Nevis *Does she have got* …?",
+   "sentence": "have you got a minute",
+   "answers": [
+    [
+     "have you got a minute"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:9"
+  }
+ },
+ "r9-009": {
+  "hash": "8d8fcf471fc36113",
+  "gate_key": "aux_verbs | A2.1 | order | Put the words in order. | my brother hasn't got a driving licence",
+  "src": "zz-blind-gap-points-a2-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my brother hasn't got a driving licence",
+   "also": []
+  },
+  "item": {
+   "id": "c-3025",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "sentence": "my brother hasn't got a driving licence",
+   "answers": [
+    [
+     "my brother hasn't got a driving licence"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:10"
+  }
+ },
+ "r9-010": {
+  "hash": "200cf9bfc7a17c26",
+  "gate_key": "aux_verbs | A2.1 | order | Put the words in order to make a question. | does your flat have a balcony",
+  "src": "zz-blind-gap-points-a2-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "does your flat have a balcony",
+   "also": []
+  },
+  "item": {
+   "id": "c-3026",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "After *do / does / don't / doesn't* use *have*: no *-s*, no *got*: *Does she have …? We don't have …* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Aiz *do / does / don't / doesn't* lieto *have*: bez *-s*, bez *got*: *Does she have* …? *We don't have* … Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "does your flat have a balcony",
+   "answers": [
+    [
+     "does your flat have a balcony"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:11"
+  }
+ },
+ "r9-011": {
+  "hash": "612b7ade6b561570",
+  "gate_key": "aux_verbs | A2.1 | order | Put the words in order. | we don't have time for lunch today",
+  "src": "zz-blind-gap-points-a2-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we don't have time for lunch today",
+   "also": []
+  },
+  "item": {
+   "id": "c-3027",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "sentence": "we don't have time for lunch today",
+   "answers": [
+    [
+     "we don't have time for lunch today",
+     "today we don't have time for lunch"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:12"
+  }
+ },
+ "r9-012": {
+  "hash": "e92d96cbeb4c26f0",
+  "gate_key": "aux_verbs | A2.1 | order | Put the words in order. | my gym has got a new sauna",
+  "src": "zz-blind-gap-points-a2-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my gym has got a new sauna",
+   "also": []
+  },
+  "item": {
+   "id": "c-3028",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*have got* = *have* (own). *I / you / we / they have got*, *he / she / it has got*: *She's got two sisters.*",
+   "why_lv": "*have got = have* (piederēt). *I / you / we / they have got, he / she / it has got*: *She's got two sisters.*",
+   "sentence": "my gym has got a new sauna",
+   "answers": [
+    [
+     "my gym has got a new sauna"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:13"
+  }
+ },
+ "r9-013": {
+  "hash": "3c19c7f0d4e89d3e",
+  "gate_key": "aux_verbs | A2.1 | gap | Does this bus ___ wifi? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:14",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3029",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Does this bus ___ wifi?",
+   "why": "After *do / does / don't / doesn't* use *have*: no *-s*, no *got*: *Does she have …? We don't have …*",
+   "why_lv": "Aiz *do / does / don't / doesn't* lieto *have*: bez *-s*, bez *got*: *Does she have* …? *We don't have* …",
+   "answers": [
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "has",
+    "have got"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:14"
+  }
+ },
+ "r9-014": {
+  "hash": "0ff18698d54250df",
+  "gate_key": "aux_verbs | A2.1 | gap | My parents ___ ___ a big garden. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:15",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3030",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My parents ___ ___ a big garden.",
+   "why": "*have* (own) is a state: no *-ing*. *She has got blue eyes*, not *She is having blue eyes*.",
+   "why_lv": "*have* (piederēt) ir stāvoklis: bez *-ing*. *She has got blue eyes*, nevis *She is having blue eyes.*",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "got"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "got",
+    "are",
+    "having"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:15"
+  }
+ },
+ "r9-015": {
+  "hash": "b5211c81e6edb1de",
+  "gate_key": "aux_verbs | A2.1 | gap | Sorry, I ___ ___ any change. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:16",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "haven't"
+    ],
+    [
+     "got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3031",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Sorry, I ___ ___ any change.",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "answers": [
+    [
+     "haven't"
+    ],
+    [
+     "got"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "haven't",
+    "got",
+    "don't"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:16"
+  }
+ },
+ "r9-016": {
+  "hash": "48a3e44f2792556a",
+  "gate_key": "aux_verbs | A2.1 | gap | ___ the room ___ a fridge? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:17",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Has"
+    ],
+    [
+     "got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3032",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ the room ___ a fridge?",
+   "why": "Question: *Have / Has* + subject + *got*: *Has she got a car?* Or with *do*: *Does she have a car?* Not *Does she have got …?*",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *got*: *Has she got a car?* Vai ar *do*: *Does she have a car?* Nevis *Does she have got* …?",
+   "answers": [
+    [
+     "Has"
+    ],
+    [
+     "got"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Has",
+    "got",
+    "Does"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:17"
+  }
+ },
+ "r9-017": {
+  "hash": "866203a4a0f219d2",
+  "gate_key": "aux_verbs | A2.1 | match | Match each question with its short answer. | Have you got a pen? = Yes, I have. ; Do you have a ticket? = No, I don't. ; Has Mark got a job? = No, he hasn't. ; Does Anna have a sister? = Yes, she does.",
+  "src": "zz-blind-gap-points-a2-1.csv:18",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Have you got a pen?",
+     "Yes, I have."
+    ],
+    [
+     "Do you have a ticket?",
+     "No, I don't."
+    ],
+    [
+     "Has Mark got a job?",
+     "No, he hasn't."
+    ],
+    [
+     "Does Anna have a sister?",
+     "Yes, she does."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3033",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each question with its short answer.",
+   "why": "A short answer to *Have you got …?* repeats *have / has* without *got*: *Yes, I have. No, she hasn't.* To *Do you have …?*: *Yes, I do.*",
+   "why_lv": "Īsajā atbildē uz *Have you got* …? atkārto *have / has* bez *got*: *Yes, I have.* (nevis *Yes, I have got*.) Uz *Do you have* …?: *Yes, I do.*",
+   "pairs": [
+    [
+     "Have you got a pen?",
+     "Yes, I have."
+    ],
+    [
+     "Do you have a ticket?",
+     "No, I don't."
+    ],
+    [
+     "Has Mark got a job?",
+     "No, he hasn't."
+    ],
+    [
+     "Does Anna have a sister?",
+     "Yes, she does."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:18"
+  }
+ },
+ "r9-018": {
+  "hash": "8e0dae8bb22a7650",
+  "gate_key": "aux_verbs | A2.1 | gap | My sister ___ three cats. (have got) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:19",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has got",
+     "'s got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3034",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My sister ___ three cats. (have got)",
+   "why": "*have got* = *have* (own). *I / you / we / they have got*, *he / she / it has got*: *She's got two sisters.*",
+   "why_lv": "*have got = have* (piederēt). *I / you / we / they have got, he / she / it has got*: *She's got two sisters.*",
+   "answers": [
+    [
+     "has got",
+     "'s got"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:19"
+  }
+ },
+ "r9-019": {
+  "hash": "0cb98ee42f3204f1",
+  "gate_key": "aux_verbs | A2.1 | gap | We ___ a car, so we cycle to work. (not / have got) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:20",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "haven't got",
+     "have not got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3035",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We ___ a car, so we cycle to work. (not / have got)",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "answers": [
+    [
+     "haven't got",
+     "have not got"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:20"
+  }
+ },
+ "r9-020": {
+  "hash": "06664f9b76036e2d",
+  "gate_key": "aux_verbs | A2.1 | gap | 'Has the new library got a café?' 'Yes, it ___.' | ",
+  "src": "zz-blind-gap-points-a2-1.csv:21",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3036",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Has the new library got a café?' 'Yes, it ___.'",
+   "why": "A short answer to *Have you got …?* repeats *have / has* without *got*: *Yes, I have. No, she hasn't.* To *Do you have …?*: *Yes, I do.*",
+   "why_lv": "Īsajā atbildē uz *Have you got* …? atkārto *have / has* bez *got*: *Yes, I have.* (nevis *Yes, I have got*.) Uz *Do you have* …?: *Yes, I do.*",
+   "answers": [
+    [
+     "has"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:21"
+  }
+ },
+ "r9-021": {
+  "hash": "f1af014f6a295064",
+  "gate_key": "aux_verbs | A2.1 | gap | ___ you ___ an umbrella? (have got) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:22",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Have"
+    ],
+    [
+     "got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3037",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ you ___ an umbrella? (have got)",
+   "why": "Question: *Have / Has* + subject + *got*: *Has she got a car?* Or with *do*: *Does she have a car?* Not *Does she have got …?*",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *got*: *Has she got a car?* Vai ar *do*: *Does she have a car?* Nevis *Does she have got* …?",
+   "answers": [
+    [
+     "Have"
+    ],
+    [
+     "got"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:22"
+  }
+ },
+ "r9-022": {
+  "hash": "08602c540d4251d3",
+  "gate_key": "aux_verbs | A2.1 | gap | My grandparents ___ a computer. (not / have) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:23",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "don't have",
+     "haven't got",
+     "haven't",
+     "have no"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3038",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My grandparents ___ a computer. (not / have)",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "answers": [
+    [
+     "don't have",
+     "haven't got",
+     "haven't",
+     "have no"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:23"
+  }
+ },
+ "r9-023": {
+  "hash": "f244570e4ca3c8d2",
+  "gate_key": "aux_verbs | A2.1 | text | Make it negative: My laptop has got a camera. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:24",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My laptop hasn't got a camera.",
+     "My laptop doesn't have a camera.",
+     "My laptop has no camera.",
+     "My laptop hasn't a camera."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3039",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: My laptop has got a camera.",
+   "why": "Negative: *haven't got / hasn't got* or *don't have / doesn't have*. *got* never comes after *do*: not *don't have got*.",
+   "why_lv": "Noliegums: *haven't got / hasn't got* vai *don't have / doesn't have*. Aiz *do* nekad nav *got*: nevis *don't have got*.",
+   "answers": [
+    [
+     "My laptop hasn't got a camera.",
+     "My laptop doesn't have a camera.",
+     "My laptop has no camera.",
+     "My laptop hasn't a camera."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:24"
+  }
+ },
+ "r9-024": {
+  "hash": "3730c157043bf58e",
+  "gate_key": "aux_verbs | A2.1 | text | Make a yes/no question: Tom has got a motorbike. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:25",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Has Tom got a motorbike?",
+     "Does Tom have a motorbike?",
+     "Has Tom a motorbike?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3040",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a yes/no question: Tom has got a motorbike.",
+   "why": "Question: *Have / Has* + subject + *got*: *Has she got a car?* Or with *do*: *Does she have a car?* Not *Does she have got …?*",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *got*: *Has she got a car?* Vai ar *do*: *Does she have a car?* Nevis *Does she have got* …?",
+   "answers": [
+    [
+     "Has Tom got a motorbike?",
+     "Does Tom have a motorbike?",
+     "Has Tom a motorbike?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:25"
+  }
+ },
+ "r9-025": {
+  "hash": "3015b0a2bf74de93",
+  "gate_key": "aux_verbs | A2.1 | text | Make a question with *How many*: She has got two children. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:26",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "How many children has she got?",
+     "How many children does she have?",
+     "How many children has she?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3041",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with *How many*: She has got two children.",
+   "why": "Question: *Have / Has* + subject + *got*: *Has she got a car?* Or with *do*: *Does she have a car?* Not *Does she have got …?*",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *got*: *Has she got a car?* Vai ar *do*: *Does she have a car?* Nevis *Does she have got* …?",
+   "answers": [
+    [
+     "How many children has she got?",
+     "How many children does she have?",
+     "How many children has she?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:26"
+  }
+ },
+ "r9-026": {
+  "hash": "4700330f05e757ed",
+  "gate_key": "future | A2.1 | mcq | Choose the correct option: Your hands are full. ___ I open the door? | Shall",
+  "src": "zz-blind-gap-points-a2-1.csv:27",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Shall",
+   "wrong": [
+    "Will",
+    "Do"
+   ]
+  },
+  "item": {
+   "id": "c-3042",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Your hands are full. ___ I open the door?",
+   "why": "*Shall I…?* offers to do something for somebody: *Shall I open the door?* We don't use *Will I…?* or *Do I…?* for an offer.",
+   "why_lv": "*Shall I*…? piedāvā palīdzību: *Shall I open the door?* Piedāvājumam nelieto *Will I*…? vai *Do I*…?.",
+   "correct": "Shall",
+   "wrong": [
+    "Will",
+    "Do"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:27"
+  }
+ },
+ "r9-027": {
+  "hash": "b56222fcf2f5986c",
+  "gate_key": "future | A2.1 | mcq | Choose the correct option: Shall we ___ a break? | have",
+  "src": "zz-blind-gap-points-a2-1.csv:28",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "have",
+   "wrong": [
+    "to have",
+    "having",
+    "had"
+   ]
+  },
+  "item": {
+   "id": "c-3043",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Shall we ___ a break?",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall we have a break?* (not *Shall we to have / having*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall we have a break?* (nevis *Shall we to have / having*).",
+   "correct": "have",
+   "wrong": [
+    "to have",
+    "having",
+    "had"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:28"
+  }
+ },
+ "r9-028": {
+  "hash": "20772b1da0d54f9e",
+  "gate_key": "future | A2.1 | mcq | Which sentence is correct? | Shall I help you with your suitcase?",
+  "src": "zz-blind-gap-points-a2-1.csv:29",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Shall I help you with your suitcase?",
+   "wrong": [
+    "Shall I to help you with your suitcase?",
+    "Shall I helping you with your suitcase?",
+    "Shall I helped you with your suitcase?"
+   ]
+  },
+  "item": {
+   "id": "c-3044",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall I help you with your suitcase?* (not *Shall I to help*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall I help you with your suitcase?* (nevis *Shall I to help*).",
+   "correct": "Shall I help you with your suitcase?",
+   "wrong": [
+    "Shall I to help you with your suitcase?",
+    "Shall I helping you with your suitcase?",
+    "Shall I helped you with your suitcase?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:29"
+  }
+ },
+ "r9-029": {
+  "hash": "31e8eb5112ed8219",
+  "gate_key": "future | A2.1 | mcq | Which sentence is correct? | Where shall we have lunch?",
+  "src": "zz-blind-gap-points-a2-1.csv:30",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Where shall we have lunch?",
+   "wrong": [
+    "Where we shall have lunch?",
+    "Where shall we to have lunch?",
+    "Where shall have we lunch?"
+   ]
+  },
+  "item": {
+   "id": "c-3045",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *Where shall we have lunch?* (not *Where we shall have lunch?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *Where shall we have lunch?* (nevis *Where we shall have lunch*?).",
+   "correct": "Where shall we have lunch?",
+   "wrong": [
+    "Where we shall have lunch?",
+    "Where shall we to have lunch?",
+    "Where shall have we lunch?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:30"
+  }
+ },
+ "r9-030": {
+  "hash": "67cf720b2ffc6588",
+  "gate_key": "future | A2.1 | mcq | Which sentence is NOT correct? | Shall we to meet at six?",
+  "src": "zz-blind-gap-points-a2-1.csv:31",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Shall we to meet at six?",
+   "wrong": [
+    "Shall I turn off the music?",
+    "Where shall we sit?",
+    "What shall we buy for Tom?"
+   ]
+  },
+  "item": {
+   "id": "c-3046",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *shall* comes the base verb, without *to*: *Shall we meet at six?* The others are correct: an offer (*Shall I…?*) and two questions with *Where / What shall we…?*.",
+   "why_lv": "Aiz *shall* lieto pamatformu bez *to*: *Shall we meet at six?* Pārējie teikumi ir bez kļūdām: piedāvājums (*Shall I*…?) un divi jautājumi ar *Where / What shall we*…?.",
+   "correct": "Shall we to meet at six?",
+   "wrong": [
+    "Shall I turn off the music?",
+    "Where shall we sit?",
+    "What shall we buy for Tom?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:31"
+  }
+ },
+ "r9-031": {
+  "hash": "9923307467f9eead",
+  "gate_key": "future | A2.1 | mcq | Which sentence is NOT correct? | Shall you call me later?",
+  "src": "zz-blind-gap-points-a2-1.csv:32",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Shall you call me later?",
+   "wrong": [
+    "Shall we walk home?",
+    "What time shall we leave?",
+    "Shall I order a pizza?"
+   ]
+  },
+  "item": {
+   "id": "c-3047",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "In questions *shall* goes with *I* and *we* only. To ask somebody to do something, say *Can you…?* or *Will you…?*: *Can you call me later?*",
+   "why_lv": "Jautājumos *shall* lieto vienīgi ar *I* un *we*. Lai kādu palūgtu kaut ko izdarīt, saka *Can you*…? vai *Will you*…?: *Can you call me later?*",
+   "correct": "Shall you call me later?",
+   "wrong": [
+    "Shall we walk home?",
+    "What time shall we leave?",
+    "Shall I order a pizza?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:32"
+  }
+ },
+ "r9-032": {
+  "hash": "bcb5497f2870fe71",
+  "gate_key": "future | A2.1 | mcq | A friend asks: 'Shall I make you a sandwich?' Choose the correct answer. | Yes, please.",
+  "src": "zz-blind-gap-points-a2-1.csv:33",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Yes, please.",
+   "wrong": [
+    "Yes, you shall.",
+    "Yes, I shall.",
+    "Yes, you will."
+   ]
+  },
+  "item": {
+   "id": "c-3048",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "A friend asks: 'Shall I make you a sandwich?' Choose the correct answer.",
+   "why": "To accept an offer, say *Yes, please.* (or *No, thanks.* to say no). We don't answer *Shall I…?* with a short answer with *shall* or *will*.",
+   "why_lv": "Pieņemot piedāvājumu, saka *Yes, please.* Īsā atbilde ar *shall* vai *will* šeit nav iespējama.",
+   "correct": "Yes, please.",
+   "wrong": [
+    "Yes, you shall.",
+    "Yes, I shall.",
+    "Yes, you will."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:33"
+  }
+ },
+ "r9-033": {
+  "hash": "77515bbf36c95fe8",
+  "gate_key": "future | A2.1 | order | Put the words in order to make a question. | what shall i bring to the party",
+  "src": "zz-blind-gap-points-a2-1.csv:34",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "what shall i bring to the party",
+   "also": []
+  },
+  "item": {
+   "id": "c-3049",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *What shall I bring to the party?* (not *What I shall bring…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *What shall I bring to the party?* (nevis *What I shall bring*…?).",
+   "sentence": "what shall i bring to the party",
+   "answers": [
+    [
+     "what shall i bring to the party"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:34"
+  }
+ },
+ "r9-034": {
+  "hash": "6dd0d20376571c30",
+  "gate_key": "future | A2.1 | order | Put the words in order to make a question. | how shall we get to the airport",
+  "src": "zz-blind-gap-points-a2-1.csv:35",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "how shall we get to the airport",
+   "also": []
+  },
+  "item": {
+   "id": "c-3050",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *How shall we get to the airport?* (not *How we shall get…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *How shall we get to the airport?* (nevis *How we shall get*…?).",
+   "sentence": "how shall we get to the airport",
+   "answers": [
+    [
+     "how shall we get to the airport"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:35"
+  }
+ },
+ "r9-035": {
+  "hash": "d0c67db4bf2deb50",
+  "gate_key": "future | A2.1 | order | Put the words in order to make a question. | where shall i put these boxes",
+  "src": "zz-blind-gap-points-a2-1.csv:36",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "where shall i put these boxes",
+   "also": []
+  },
+  "item": {
+   "id": "c-3051",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *Where shall I put these boxes?* (not *Where I shall put…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *Where shall I put these boxes?* (nevis *Where I shall put*…?).",
+   "sentence": "where shall i put these boxes",
+   "answers": [
+    [
+     "where shall i put these boxes"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:36"
+  }
+ },
+ "r9-036": {
+  "hash": "0d9f7d42066e14ac",
+  "gate_key": "future | A2.1 | order | Put the words in order to make a question. | which bus shall we take",
+  "src": "zz-blind-gap-points-a2-1.csv:37",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "which bus shall we take",
+   "also": []
+  },
+  "item": {
+   "id": "c-3052",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *Which bus shall we take?* (not *Which bus we shall take?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *Which bus shall we take?* (nevis *Which bus we shall take*?).",
+   "sentence": "which bus shall we take",
+   "answers": [
+    [
+     "which bus shall we take"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:37"
+  }
+ },
+ "r9-037": {
+  "hash": "c2cd08153aada2b8",
+  "gate_key": "future | A2.1 | order | Put the words in order to make a question. | what time shall we start the meeting",
+  "src": "zz-blind-gap-points-a2-1.csv:38",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "what time shall we start the meeting",
+   "also": []
+  },
+  "item": {
+   "id": "c-3053",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *What time shall we start the meeting?* (not *What time we shall start…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *What time shall we start the meeting?* (nevis *What time we shall start*…?).",
+   "sentence": "what time shall we start the meeting",
+   "answers": [
+    [
+     "what time shall we start the meeting"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:38"
+  }
+ },
+ "r9-038": {
+  "hash": "836b9965576e9020",
+  "gate_key": "future | A2.1 | gap | I'm bored. ___ we go for a walk? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:39",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Shall"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3054",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm bored. ___ we go for a walk?",
+   "why": "*Shall we…?* suggests doing something together: *Shall we go for a walk?* *Will we…?* and *Do we…?* ask about facts or the future; they don't make a suggestion.",
+   "why_lv": "*Shall we*…? ir ierosinājums darīt kaut ko kopā: *Shall we go for a walk?* *Will we*…? un *Do we*…? jautā par faktiem vai nākotni; ierosinājumam tos nelieto.",
+   "answers": [
+    [
+     "Shall"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Shall",
+    "Will",
+    "Do"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:39"
+  }
+ },
+ "r9-039": {
+  "hash": "a6555143fe4fed79",
+  "gate_key": "future | A2.1 | gap | Shall I ___ you a taxi? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:40",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "call"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3055",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Shall I ___ you a taxi?",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall I call you a taxi?* (not *Shall I to call / calling*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall I call you a taxi?* (nevis *Shall I to call / calling*).",
+   "answers": [
+    [
+     "call"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "call",
+    "to call",
+    "calling"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:40"
+  }
+ },
+ "r9-040": {
+  "hash": "ac439eb74dc65691",
+  "gate_key": "future | A2.1 | gap | What ___ ___ watch tonight? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:41",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "shall"
+    ],
+    [
+     "we"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3056",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "What ___ ___ watch tonight?",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *What shall we watch tonight?* (not *What we shall watch?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *What shall we watch tonight?* (nevis *What we shall watch*?).",
+   "answers": [
+    [
+     "shall"
+    ],
+    [
+     "we"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "shall",
+    "we",
+    "you"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:41"
+  }
+ },
+ "r9-041": {
+  "hash": "6fb2c7d34e6efb04",
+  "gate_key": "future | A2.1 | gap | Shall we ___ ___ the beach on Sunday? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:42",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "go"
+    ],
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3057",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Shall we ___ ___ the beach on Sunday?",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall we go to the beach on Sunday?* (not *Shall we going to / to go*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall we go to the beach on Sunday?* (nevis *Shall we going to / to go*).",
+   "answers": [
+    [
+     "go"
+    ],
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "go",
+    "to",
+    "going"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:42"
+  }
+ },
+ "r9-042": {
+  "hash": "037254009c17f5a0",
+  "gate_key": "future | A2.1 | match | Match each question with its answer. | Shall I open the window? = Yes, please. It's hot in here. ; Where shall we meet? = Outside the cinema. ; What shall we have for dinner? = Fish and rice. ; When shall I call you? = After six. I'm at work till then.",
+  "src": "zz-blind-gap-points-a2-1.csv:43",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Shall I open the window?",
+     "Yes, please. It's hot in here."
+    ],
+    [
+     "Where shall we meet?",
+     "Outside the cinema."
+    ],
+    [
+     "What shall we have for dinner?",
+     "Fish and rice."
+    ],
+    [
+     "When shall I call you?",
+     "After six. I'm at work till then."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3058",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each question with its answer.",
+   "why": "Answer an offer (*Shall I…?*) with *Yes, please* or *No, thanks*. *Where / What / When shall we…?* asks for an idea: answer with a place, a thing or a time.",
+   "why_lv": "Uz piedāvājumu (*Shall I*…?) atbild ar *Yes, please.* *Where / What / When shall we*…? jautā pēc ierosinājuma: atbildē ir vieta, ēdiens vai laiks.",
+   "pairs": [
+    [
+     "Shall I open the window?",
+     "Yes, please. It's hot in here."
+    ],
+    [
+     "Where shall we meet?",
+     "Outside the cinema."
+    ],
+    [
+     "What shall we have for dinner?",
+     "Fish and rice."
+    ],
+    [
+     "When shall I call you?",
+     "After six. I'm at work till then."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:43"
+  }
+ },
+ "r9-043": {
+  "hash": "a2c04004fb3bb609",
+  "gate_key": "future | A2.1 | gap | It's raining. Shall we ___ a taxi? (take) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:44",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "take"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3059",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's raining. Shall we ___ a taxi? (take)",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall we take a taxi?* (not *Shall we to take*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall we take a taxi?* (nevis *Shall we to take*).",
+   "answers": [
+    [
+     "take"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:44"
+  }
+ },
+ "r9-044": {
+  "hash": "eb85d9174a810699",
+  "gate_key": "future | A2.1 | gap | Your phone is dead. Shall I ___ you mine? (lend) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:45",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "lend"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3060",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Your phone is dead. Shall I ___ you mine? (lend)",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall I lend you mine?* (not *Shall I to lend*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall I lend you mine?* (nevis *Shall I to lend*).",
+   "answers": [
+    [
+     "lend"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:45"
+  }
+ },
+ "r9-045": {
+  "hash": "43b2a18fa7a3e576",
+  "gate_key": "future | A2.1 | gap | Write the missing word: ___ shall I put your coat? On the chair? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:46",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Where"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3061",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: ___ shall I put your coat? On the chair?",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *Where shall I put your coat?* (not *Where I shall put…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *Where shall I put your coat?* (nevis *Where I shall put*…?).",
+   "answers": [
+    [
+     "Where"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:46"
+  }
+ },
+ "r9-046": {
+  "hash": "21e34e555d985607",
+  "gate_key": "future | A2.1 | gap | I'm going to the shop. Shall I ___ you anything? (get) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:47",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "get"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3062",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm going to the shop. Shall I ___ you anything? (get)",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *Shall I get you anything?* (not *Shall I to get*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *Shall I get you anything?* (nevis *Shall I to get*).",
+   "answers": [
+    [
+     "get"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:47"
+  }
+ },
+ "r9-047": {
+  "hash": "b1157cb7971d14fd",
+  "gate_key": "future | A2.1 | gap | We're free tonight. What shall we ___? (do) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:48",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "do"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3063",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We're free tonight. What shall we ___? (do)",
+   "why": "After *shall* comes the base verb, without *to* or *-ing*: *What shall we do?* (not *What shall we to do*).",
+   "why_lv": "Aiz *shall* lieto pamatformu: *What shall we do?* (nevis *What shall we to do*).",
+   "answers": [
+    [
+     "do"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:48"
+  }
+ },
+ "r9-048": {
+  "hash": "90cf5c5c1902200f",
+  "gate_key": "future | A2.1 | text | Say it another way with *Shall I*: Do you want me to book a table? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:49",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Shall I book a table?",
+     "Shall I book a table for you?",
+     "Shall I book a table for us?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3064",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *Shall I*: Do you want me to book a table?",
+   "why": "*Shall I…?* means *Do you want me to…?* After *shall* comes the base verb, without *to*: *Shall I book a table?*",
+   "why_lv": "*Shall I*…? nozīmē *Do you want me to*…? Aiz *shall* lieto pamatformu bez *to*: *Shall I book a table?*",
+   "answers": [
+    [
+     "Shall I book a table?",
+     "Shall I book a table for you?",
+     "Shall I book a table for us?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:49"
+  }
+ },
+ "r9-049": {
+  "hash": "f522c80e6689db93",
+  "gate_key": "future | A2.1 | text | Make a question with *Where*: Shall we go to Italy this summer? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:50",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Where shall we go this summer?",
+     "Where shall we go?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3065",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with *Where*: Shall we go to Italy this summer?",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *Where shall we go this summer?* (not *Where we shall go…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *Where shall we go this summer?* (nevis *Where we shall go*…?).",
+   "answers": [
+    [
+     "Where shall we go this summer?",
+     "Where shall we go?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:50"
+  }
+ },
+ "r9-050": {
+  "hash": "364e471927ffe0f0",
+  "gate_key": "future | A2.1 | text | Make a question with *What*: Shall we cook pasta tonight? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:51",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What shall we cook tonight?",
+     "What shall we cook?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3066",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with *What*: Shall we cook pasta tonight?",
+   "why": "Question word, then *shall*, then *we* or *I*, then the base verb: *What shall we cook tonight?* (not *What we shall cook…?*).",
+   "why_lv": "Jautājamais vārds, tad *shall*, tad *we* vai *I*, tad pamatforma: *What shall we cook tonight?* (nevis *What we shall cook*…?).",
+   "answers": [
+    [
+     "What shall we cook tonight?",
+     "What shall we cook?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:51"
+  }
+ },
+ "r9-051": {
+  "hash": "68107cccbf47db64",
+  "gate_key": "articles | A2.1 | mcq | Choose the correct option: We went to ___ Croatia last summer. | —",
+  "src": "zz-blind-gap-points-a2-1.csv:52",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "—",
+   "wrong": [
+    "the",
+    "a"
+   ]
+  },
+  "item": {
+   "id": "c-3067",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We went to ___ Croatia last summer.",
+   "why": "No article with names of people, cities and most countries: *Anna, Riga, Latvia*.",
+   "why_lv": "Ar cilvēku, pilsētu un lielākās daļas valstu nosaukumiem artikulu nelieto: *Anna, Riga, Latvia.*",
+   "correct": "—",
+   "wrong": [
+    "the",
+    "a"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:52"
+  }
+ },
+ "r9-052": {
+  "hash": "74333ca21a5b9363",
+  "gate_key": "articles | A2.1 | mcq | Choose the correct option: My sister teaches ___ maths in Riga. | —",
+  "src": "zz-blind-gap-points-a2-1.csv:53",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "—",
+   "wrong": [
+    "the",
+    "a"
+   ]
+  },
+  "item": {
+   "id": "c-3068",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My sister teaches ___ maths in Riga.",
+   "why": "Sports and school subjects are uncountable nouns: no article (*play golf, teach maths*). But instruments take *the*: *play the piano*.",
+   "why_lv": "Sporta veidi un skolas mācības (matemātika, vēsture) ir neskaitāmi lietvārdi: bez artikula (*play golf, teach maths*). Bet mūzikas instrumentiem vajag *the*: *play the piano*.",
+   "correct": "—",
+   "wrong": [
+    "the",
+    "a"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:53"
+  }
+ },
+ "r9-053": {
+  "hash": "00829c6992ff1011",
+  "gate_key": "articles | A2.1 | mcq | Choose the correct option: I'm vegetarian. I don't eat ___ meat. | —",
+  "src": "zz-blind-gap-points-a2-1.csv:54",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "—",
+   "wrong": [
+    "the",
+    "a"
+   ]
+  },
+  "item": {
+   "id": "c-3069",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I'm vegetarian. I don't eat ___ meat.",
+   "why": "*I'm vegetarian* = meat in general, so no article: *I don't eat meat.* *The meat* would be some particular meat.",
+   "why_lv": "*I'm vegetarian* = gaļa vispārīgi, tāpēc bez artikula: *I don't eat meat.* *The meat* būtu kāda noteikta gaļa.",
+   "correct": "—",
+   "wrong": [
+    "the",
+    "a"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:54"
+  }
+ },
+ "r9-054": {
+  "hash": "f4e497affa910bdd",
+  "gate_key": "articles | A2.1 | mcq | Which sentence is correct? | Peter is from Canada.",
+  "src": "zz-blind-gap-points-a2-1.csv:55",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Peter is from Canada.",
+   "wrong": [
+    "Peter is from the Canada.",
+    "The Peter is from Canada.",
+    "The Peter is from the Canada."
+   ]
+  },
+  "item": {
+   "id": "c-3070",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "No article with names of people, cities and most countries: *Anna, Riga, Latvia*.",
+   "why_lv": "Ar cilvēku, pilsētu un lielākās daļas valstu nosaukumiem artikulu nelieto: *Anna, Riga, Latvia.*",
+   "correct": "Peter is from Canada.",
+   "wrong": [
+    "Peter is from the Canada.",
+    "The Peter is from Canada.",
+    "The Peter is from the Canada."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:55"
+  }
+ },
+ "r9-055": {
+  "hash": "abd92d9deb54a8e3",
+  "gate_key": "articles | A2.1 | mcq | Which sentence is correct? | My husband plays golf at weekends.",
+  "src": "zz-blind-gap-points-a2-1.csv:56",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My husband plays golf at weekends.",
+   "wrong": [
+    "My husband plays the golf at weekends.",
+    "My husband plays a golf at weekends."
+   ]
+  },
+  "item": {
+   "id": "c-3071",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "Sports and school subjects are uncountable nouns: no article (*play golf, teach maths*). But instruments take *the*: *play the piano*.",
+   "why_lv": "Sporta veidi un skolas mācības (matemātika, vēsture) ir neskaitāmi lietvārdi: bez artikula (*play golf, teach maths*). Bet mūzikas instrumentiem vajag *the*: *play the piano*.",
+   "correct": "My husband plays golf at weekends.",
+   "wrong": [
+    "My husband plays the golf at weekends.",
+    "My husband plays a golf at weekends."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:56"
+  }
+ },
+ "r9-056": {
+  "hash": "b26aba311a14c618",
+  "gate_key": "articles | A2.1 | mcq | Which sentence is NOT correct? | My parents live in the Spain.",
+  "src": "zz-blind-gap-points-a2-1.csv:57",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My parents live in the Spain.",
+   "wrong": [
+    "We eat fish on Fridays.",
+    "Tom collects old cameras.",
+    "They live in the UK."
+   ]
+  },
+  "item": {
+   "id": "c-3072",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Most countries have no article: *Spain, Latvia*. A few names take *the*: *the UK, the USA*.",
+   "why_lv": "Lielākajai daļai valstu artikula nav: *Spain, Latvia.* Daži nosaukumi ir ar *the*: *the UK, the USA*.",
+   "correct": "My parents live in the Spain.",
+   "wrong": [
+    "We eat fish on Fridays.",
+    "Tom collects old cameras.",
+    "They live in the UK."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:57"
+  }
+ },
+ "r9-057": {
+  "hash": "9b6d2cf70612c1fd",
+  "gate_key": "articles | A2.1 | mcq | Which sentence is NOT correct? | She studies the history at university.",
+  "src": "zz-blind-gap-points-a2-1.csv:58",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "She studies the history at university.",
+   "wrong": [
+    "Anna and her sister live in Paris.",
+    "Horses need a lot of space to run.",
+    "I don't drink milk with my coffee."
+   ]
+  },
+  "item": {
+   "id": "c-3073",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "School subjects in general have no article: *She studies history.* (*the history of Rome* is one particular history.)",
+   "why_lv": "Skolas mācībām (vēsture, matemātika) vispārīgi artikula nav: *She studies history.* (*the history of Rome* ir kāda noteikta vēsture.)",
+   "correct": "She studies the history at university.",
+   "wrong": [
+    "Anna and her sister live in Paris.",
+    "Horses need a lot of space to run.",
+    "I don't drink milk with my coffee."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:58"
+  }
+ },
+ "r9-058": {
+  "hash": "f8cb757e4f37d607",
+  "gate_key": "articles | A2.1 | order | Put the words in order. | i drink green tea in the morning",
+  "src": "zz-blind-gap-points-a2-1.csv:59",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i drink green tea in the morning",
+   "also": []
+  },
+  "item": {
+   "id": "c-3074",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "No article with an uncountable noun when we mean it in general: *I don't eat meat.*",
+   "why_lv": "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *I don't eat meat.*",
+   "sentence": "i drink green tea in the morning",
+   "answers": [
+    [
+     "i drink green tea in the morning",
+     "in the morning i drink green tea"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:59"
+  }
+ },
+ "r9-059": {
+  "hash": "4406c70f60f25619",
+  "gate_key": "articles | A2.1 | order | Put the words in order. | my grandfather doesn't like computers",
+  "src": "zz-blind-gap-points-a2-1.csv:60",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my grandfather doesn't like computers",
+   "also": []
+  },
+  "item": {
+   "id": "c-3075",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
+   "why_lv": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.",
+   "sentence": "my grandfather doesn't like computers",
+   "answers": [
+    [
+     "my grandfather doesn't like computers"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:60"
+  }
+ },
+ "r9-060": {
+  "hash": "9f75fec0073d63a3",
+  "gate_key": "articles | A2.1 | order | Put the words in order. | my wife and i met in paris",
+  "src": "zz-blind-gap-points-a2-1.csv:61",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my wife and i met in paris",
+   "also": []
+  },
+  "item": {
+   "id": "c-3076",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "No article with names of people, cities and most countries: *Anna, Riga, Latvia*.",
+   "why_lv": "Ar cilvēku, pilsētu un lielākās daļas valstu nosaukumiem artikulu nelieto: *Anna, Riga, Latvia.*",
+   "sentence": "my wife and i met in paris",
+   "answers": [
+    [
+     "my wife and i met in paris"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:61"
+  }
+ },
+ "r9-061": {
+  "hash": "d6a4e029d9db4796",
+  "gate_key": "articles | A2.1 | order | Put the words in order to make a question. | do you like classical music",
+  "src": "zz-blind-gap-points-a2-1.csv:62",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "do you like classical music",
+   "also": []
+  },
+  "item": {
+   "id": "c-3077",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "No article with an uncountable noun when we mean it in general: *I don't eat meat.* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *I don't eat meat.* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "do you like classical music",
+   "answers": [
+    [
+     "do you like classical music"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:62"
+  }
+ },
+ "r9-062": {
+  "hash": "91043af22060be3a",
+  "gate_key": "articles | A2.1 | order | Put the words in order. | we want to visit japan next year",
+  "src": "zz-blind-gap-points-a2-1.csv:63",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we want to visit japan next year",
+   "also": []
+  },
+  "item": {
+   "id": "c-3078",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "No article with names of people, cities and most countries: *Anna, Riga, Latvia*.",
+   "why_lv": "Ar cilvēku, pilsētu un lielākās daļas valstu nosaukumiem artikulu nelieto: *Anna, Riga, Latvia.*",
+   "sentence": "we want to visit japan next year",
+   "answers": [
+    [
+     "we want to visit japan next year",
+     "next year we want to visit japan"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:63"
+  }
+ },
+ "r9-063": {
+  "hash": "08d378f0f9fdf058",
+  "gate_key": "articles | A2.1 | gap | Our new manager is from ___ Sweden. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:64",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "—"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3079",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our new manager is from ___ Sweden.",
+   "why": "No article with names of people, cities and most countries: *Anna, Riga, Latvia*.",
+   "why_lv": "Ar cilvēku, pilsētu un lielākās daļas valstu nosaukumiem artikulu nelieto: *Anna, Riga, Latvia.*",
+   "answers": [
+    [
+     "—"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "—",
+    "the"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:64"
+  }
+ },
+ "r9-064": {
+  "hash": "f608635d61d9e92a",
+  "gate_key": "articles | A2.1 | gap | I usually listen to ___ jazz in the car. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:65",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "—"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3080",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I usually listen to ___ jazz in the car.",
+   "why": "Kinds of music in general have no article: *I listen to jazz.* *usually* shows it is a habit, not one particular piece.",
+   "why_lv": "Mūzikas veidiem vispārīgi artikula nav: *I listen to jazz.* *usually* rāda, ka tas ir ieradums, nevis kāds noteikts skaņdarbs.",
+   "answers": [
+    [
+     "—"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "—",
+    "the"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:65"
+  }
+ },
+ "r9-065": {
+  "hash": "6956773386c48819",
+  "gate_key": "articles | A2.1 | gap | I think ___ dogs are better pets than cats. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:66",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "—"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3081",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I think ___ dogs are better pets than cats.",
+   "why": "No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
+   "why_lv": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.",
+   "answers": [
+    [
+     "—"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "—",
+    "the"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:66"
+  }
+ },
+ "r9-066": {
+  "hash": "7a637f97551c0100",
+  "gate_key": "articles | A2.1 | gap | My kids spend hours on ___ social media. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:67",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "—"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3082",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My kids spend hours on ___ social media.",
+   "why": "No article with an uncountable noun when we mean it in general: *I don't eat meat.*",
+   "why_lv": "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *I don't eat meat.*",
+   "answers": [
+    [
+     "—"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "—",
+    "the"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:67"
+  }
+ },
+ "r9-067": {
+  "hash": "3d74218c6752cbc9",
+  "gate_key": "articles | A2.1 | match | Match each beginning with its ending. | My cousin lives in = Rome. ; Every morning I drink = orange juice. ; My daughter is afraid of = snakes. ; At weekends we play = volleyball.",
+  "src": "zz-blind-gap-points-a2-1.csv:68",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "My cousin lives in",
+     "Rome."
+    ],
+    [
+     "Every morning I drink",
+     "orange juice."
+    ],
+    [
+     "My daughter is afraid of",
+     "snakes."
+    ],
+    [
+     "At weekends we play",
+     "volleyball."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3083",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "No article with names (*Rome*), uncountable nouns (*orange juice*, *volleyball*) and plurals (*snakes*) in general.",
+   "why_lv": "Bez artikula: nosaukumi (*Rome*), neskaitāmi lietvārdi (*orange juice, volleyball*) un daudzskaitlis (*snakes*) vispārīgā nozīmē.",
+   "pairs": [
+    [
+     "My cousin lives in",
+     "Rome."
+    ],
+    [
+     "Every morning I drink",
+     "orange juice."
+    ],
+    [
+     "My daughter is afraid of",
+     "snakes."
+    ],
+    [
+     "At weekends we play",
+     "volleyball."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:68"
+  }
+ },
+ "r9-068": {
+  "hash": "6ecc5049636f2888",
+  "gate_key": "articles | A2.1 | gap | My daughter is afraid of ___, even small ones. (spider) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:69",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "spiders"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3084",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My daughter is afraid of ___, even small ones. (spider)",
+   "why": "No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
+   "why_lv": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.",
+   "answers": [
+    [
+     "spiders"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:69"
+  }
+ },
+ "r9-069": {
+  "hash": "3fb33c7eb527a42f",
+  "gate_key": "articles | A2.1 | gap | In big cities, ___ are often faster than cars. (bike) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:70",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "bikes"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3085",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "In big cities, ___ are often faster than cars. (bike)",
+   "why": "No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
+   "why_lv": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.",
+   "answers": [
+    [
+     "bikes"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:70"
+  }
+ },
+ "r9-070": {
+  "hash": "56070318cc83f58f",
+  "gate_key": "articles | A2.1 | gap | ___ are cheaper than laptops. (tablet) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:71",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "tablets"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3086",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ are cheaper than laptops. (tablet)",
+   "why": "No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
+   "why_lv": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.",
+   "answers": [
+    [
+     "tablets"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:71"
+  }
+ },
+ "r9-071": {
+  "hash": "9d71e69b8bc903ae",
+  "gate_key": "articles | A2.1 | gap | ___ are my favourite flowers. (rose) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:72",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "roses"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3087",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ are my favourite flowers. (rose)",
+   "why": "No article with a plural noun when we mean all of them in general: *Spiders scare me.* With *the* it would mean some particular ones.",
+   "why_lv": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Spiders scare me.* *the* norādītu uz kādiem noteiktiem.",
+   "answers": [
+    [
+     "roses"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:72"
+  }
+ },
+ "r9-072": {
+  "hash": "68344fb59db19aa4",
+  "gate_key": "articles | A2.1 | gap | My son collects ___. He has hundreds. (stamp) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:73",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "stamps"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3088",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My son collects ___. He has hundreds. (stamp)",
+   "why": "A hobby is about the things in general: *He collects stamps.* Plural, no article.",
+   "why_lv": "Hobijs ir par lietām vispārīgi: *He collects stamps.* Daudzskaitlis, bez artikula.",
+   "answers": [
+    [
+     "stamps"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:73"
+  }
+ },
+ "r9-073": {
+  "hash": "36c7696efb1d6b3b",
+  "gate_key": "articles | A2.1 | text | Correct the mistake: My uncle works in the London. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:74",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My uncle works in London."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3089",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My uncle works in the London.",
+   "why": "No article with names of people, cities and most countries: *Anna, Riga, Latvia*.",
+   "why_lv": "Ar cilvēku, pilsētu un lielākās daļas valstu nosaukumiem artikulu nelieto: *Anna, Riga, Latvia.*",
+   "answers": [
+    [
+     "My uncle works in London."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:74"
+  }
+ },
+ "r9-074": {
+  "hash": "3720f543a059f8b7",
+  "gate_key": "articles | A2.1 | text | Correct the mistake: We play the basketball on Fridays. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:75",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We play basketball on Fridays.",
+     "On Fridays we play basketball.",
+     "On fridays we play basketball."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3090",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: We play the basketball on Fridays.",
+   "why": "Sports and school subjects are uncountable nouns: no article (*play golf, teach maths*). But instruments take *the*: *play the piano*.",
+   "why_lv": "Sporta veidi un skolas mācības (matemātika, vēsture) ir neskaitāmi lietvārdi: bez artikula (*play golf, teach maths*). Bet mūzikas instrumentiem vajag *the*: *play the piano*.",
+   "answers": [
+    [
+     "We play basketball on Fridays.",
+     "On Fridays we play basketball.",
+     "On fridays we play basketball."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:75"
+  }
+ },
+ "r9-075": {
+  "hash": "03aadd40d137e13e",
+  "gate_key": "articles | A2.1 | text | Correct the mistake: I eat the bread with every meal. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:76",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I eat bread with every meal."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3091",
+   "skill": "articles",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I eat the bread with every meal.",
+   "why": "*with every meal* = a habit, bread in general: no article.",
+   "why_lv": "*with every meal* = ieradums, *bread* vispārīgā nozīmē: bez artikula.",
+   "answers": [
+    [
+     "I eat bread with every meal."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:76"
+  }
+ },
+ "r9-076": {
+  "hash": "4099c8613f8350bd",
+  "gate_key": "used_to | A2.2 | mcq | Choose the correct option: I ___ eat meat. | no longer",
+  "src": "zz-blind-gap-points-a2-1.csv:77",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "no longer",
+   "wrong": [
+    "no more",
+    "any more",
+    "don't any more"
+   ]
+  },
+  "item": {
+   "id": "c-3092",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I ___ eat meat.",
+   "why": "*no longer* goes before the verb: *I no longer eat meat.* *any more* goes at the end, after *don't*: *I don't eat meat any more.*",
+   "why_lv": "*no longer* liek pirms darbības vārda: *I no longer eat meat.* *any more* liek beigās, aiz *don't*: *I don't eat meat any more.*",
+   "correct": "no longer",
+   "wrong": [
+    "no more",
+    "any more",
+    "don't any more"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:77"
+  }
+ },
+ "r9-077": {
+  "hash": "0f69d4dfaa1b7995",
+  "gate_key": "used_to | A2.2 | mcq | Choose the correct option: She doesn't work here ___. | any more",
+  "src": "zz-blind-gap-points-a2-1.csv:78",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "any more",
+   "wrong": [
+    "no more",
+    "no longer",
+    "more"
+   ]
+  },
+  "item": {
+   "id": "c-3093",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She doesn't work here ___.",
+   "why": "After a negative verb, use *any more* at the end: *She doesn't work here any more.* *no more* and *no longer* would add a second negative.",
+   "why_lv": "Tulkojot burtiski vairs kā *more* vai *no more*, sanāk kļūda. Ja darbības vārds ir noliegumā, teikuma beigās liek *any more*: *She doesn't work here any more.*",
+   "correct": "any more",
+   "wrong": [
+    "no more",
+    "no longer",
+    "more"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:78"
+  }
+ },
+ "r9-078": {
+  "hash": "9b434eba7e08b2a3",
+  "gate_key": "used_to | A2.2 | mcq | Which sentence is correct? | We are no longer friends.",
+  "src": "zz-blind-gap-points-a2-1.csv:79",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "We are no longer friends.",
+   "wrong": [
+    "We are no more friends.",
+    "We aren't no longer friends.",
+    "We aren't friends no more."
+   ]
+  },
+  "item": {
+   "id": "c-3094",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*no longer* goes after *be*, and *be* stays positive: *We are no longer friends.* Not *no more*, and not two negatives.",
+   "why_lv": "Tulkojot burtiski, sanāk *no more* vai divkāršs noliegums. Angliski: *We are no longer friends*: aiz *are* liek *no longer*, un *are* nav noliegumā.",
+   "correct": "We are no longer friends.",
+   "wrong": [
+    "We are no more friends.",
+    "We aren't no longer friends.",
+    "We aren't friends no more."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:79"
+  }
+ },
+ "r9-079": {
+  "hash": "72c926a7abf4604b",
+  "gate_key": "used_to | A2.2 | mcq | Which sentence is correct? | He no longer plays the guitar.",
+  "src": "zz-blind-gap-points-a2-1.csv:80",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "He no longer plays the guitar.",
+   "wrong": [
+    "He plays no longer the guitar.",
+    "He no longer doesn't play the guitar.",
+    "He doesn't no longer play the guitar."
+   ]
+  },
+  "item": {
+   "id": "c-3095",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*no longer* goes before the main verb, and the verb stays positive: *He no longer plays the guitar.*",
+   "why_lv": "*no longer* liek pirms darbības vārda, un darbības vārds nav noliegumā: *He no longer plays the guitar.*",
+   "correct": "He no longer plays the guitar.",
+   "wrong": [
+    "He plays no longer the guitar.",
+    "He no longer doesn't play the guitar.",
+    "He doesn't no longer play the guitar."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:80"
+  }
+ },
+ "r9-080": {
+  "hash": "fe34fddc6777a94b",
+  "gate_key": "used_to | A2.2 | mcq | Which sentence is NOT correct? | I don't live there no more.",
+  "src": "zz-blind-gap-points-a2-1.csv:81",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I don't live there no more.",
+   "wrong": [
+    "My phone no longer works.",
+    "She isn't my boss any more.",
+    "We don't go to that gym any longer."
+   ]
+  },
+  "item": {
+   "id": "c-3096",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Only one negative: *no longer* + a positive verb, or *don't* ... *any more* at the end. Not *don't ... no more*.",
+   "why_lv": "Tulkojot burtiski vairs ne..., sanāk divkāršs noliegums (*I don't live there no more*). Angliski lieto vienu noliegumu: *I no longer live there* vai *I don't live there any more.*",
+   "correct": "I don't live there no more.",
+   "wrong": [
+    "My phone no longer works.",
+    "She isn't my boss any more.",
+    "We don't go to that gym any longer."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:81"
+  }
+ },
+ "r9-081": {
+  "hash": "274bec782fdf6829",
+  "gate_key": "used_to | A2.2 | mcq | Choose the correct option: The bank ___ open on Saturdays. | is no longer",
+  "src": "zz-blind-gap-points-a2-1.csv:82",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "is no longer",
+   "wrong": [
+    "is no more",
+    "no longer",
+    "is any more"
+   ]
+  },
+  "item": {
+   "id": "c-3097",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The bank ___ open on Saturdays.",
+   "why": "Keep *is* and put *no longer* after it: *The bank is no longer open.* Not *no more*; *any more* goes at the end, after *isn't*.",
+   "why_lv": "Teikumā vajag *is*, un *no longer* liek aiz tā: *The bank is no longer open.* Nevis *no more; any more* liek beigās, aiz *isn't*.",
+   "correct": "is no longer",
+   "wrong": [
+    "is no more",
+    "no longer",
+    "is any more"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:82"
+  }
+ },
+ "r9-082": {
+  "hash": "95c67e8739863e27",
+  "gate_key": "used_to | A2.2 | mcq | Choose the correct option: Tom moved to Oslo. He ___ lives in Riga. | no longer",
+  "src": "zz-blind-gap-points-a2-1.csv:83",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "no longer",
+   "wrong": [
+    "still",
+    "any more",
+    "no more"
+   ]
+  },
+  "item": {
+   "id": "c-3098",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Tom moved to Oslo. He ___ lives in Riga.",
+   "why": "*still* = it continues; *no longer* = it has ended. Tom moved, so he *no longer* lives in Riga.",
+   "why_lv": "*still* = joprojām turpinās; *no longer* = ir beidzies. Viņš pārcēlās, tāpēc: *He no longer lives in Riga.*",
+   "correct": "no longer",
+   "wrong": [
+    "still",
+    "any more",
+    "no more"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:83"
+  }
+ },
+ "r9-083": {
+  "hash": "460159214f84b495",
+  "gate_key": "used_to | A2.2 | gap | Complete with one word: My sister doesn't live with us any ___. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:84",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "more",
+     "longer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3099",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: My sister doesn't live with us any ___.",
+   "why": "*any more* or *any longer*: both go at the end, after a negative verb.",
+   "why_lv": "*any more* vai *any longer*: abi liek teikuma beigās, ja darbības vārds ir noliegumā.",
+   "answers": [
+    [
+     "more",
+     "longer"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:84"
+  }
+ },
+ "r9-084": {
+  "hash": "6483b887d2c6c42e",
+  "gate_key": "used_to | A2.2 | gap | Complete with one word: I no ___ use this app. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:85",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "longer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3100",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: I no ___ use this app.",
+   "why": "*no longer* goes before the verb: *I no longer use this app.* We don't say *no more* here.",
+   "why_lv": "*no longer* liek pirms darbības vārda: *I no longer use this app.* Šeit nelieto *no more*.",
+   "answers": [
+    [
+     "longer"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:85"
+  }
+ },
+ "r9-085": {
+  "hash": "dc08e3a5037a0d84",
+  "gate_key": "used_to | A2.2 | gap | Write *no longer* or *any more*: The airline ___ flies to Riga. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:86",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "no longer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3101",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *no longer* or *any more*: The airline ___ flies to Riga.",
+   "why": "*flies* is positive, so *no longer* goes before it. *any more* needs a negative verb and goes at the end.",
+   "why_lv": "*flies* nav noliegumā, tāpēc pirms tā liek *no longer*. *any more* vajag noliegumu, un to liek beigās.",
+   "answers": [
+    [
+     "no longer"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:86"
+  }
+ },
+ "r9-086": {
+  "hash": "15ff89ed11c975b7",
+  "gate_key": "used_to | A2.2 | gap | Write *no longer* or *any more*: We don't go camping ___. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:87",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "any more",
+     "anymore",
+     "any longer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3102",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *no longer* or *any more*: We don't go camping ___.",
+   "why": "*don't* is already negative, so *any more* goes at the end: *We don't go camping any more.*",
+   "why_lv": "*don't* jau ir noliegums, tāpēc beigās liek *any more*: *We don't go camping any more.*",
+   "answers": [
+    [
+     "any more",
+     "anymore",
+     "any longer"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:87"
+  }
+ },
+ "r9-087": {
+  "hash": "666fd422e5248497",
+  "gate_key": "used_to | A2.2 | gap | Complete with one word: They're ___ longer married. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:88",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "no"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3103",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: They're ___ longer married.",
+   "why": "*no longer*, not *not longer*: *They're no longer married.* (= *They aren't married any more.*)",
+   "why_lv": "*no longer*, nevis *not longer*: *They're no longer married.* (= *They aren't married any more*.)",
+   "answers": [
+    [
+     "no"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:88"
+  }
+ },
+ "r9-088": {
+  "hash": "28c92518f38ca6a7",
+  "gate_key": "used_to | A2.2 | text | Say it another way with *no longer*: I don't work there any more. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:89",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I no longer work there.",
+     "I am no longer working there.",
+     "I'm no longer working there."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3104",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *no longer*: I don't work there any more.",
+   "why": "*don't ... any more* = *no longer* before a positive verb: *I no longer work there.*",
+   "why_lv": "*don't* ... *any more = no longer* + darbības vārds, kas nav noliegumā: *I no longer work there.*",
+   "answers": [
+    [
+     "I no longer work there.",
+     "I am no longer working there.",
+     "I'm no longer working there."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:89"
+  }
+ },
+ "r9-089": {
+  "hash": "c1b01ef61d03b5c6",
+  "gate_key": "used_to | A2.2 | text | Say it another way with *no longer*: The museum isn't free any more. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:90",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The museum is no longer free.",
+     "The museum's no longer free."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3105",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *no longer*: The museum isn't free any more.",
+   "why": "*isn't ... any more* = *is no longer*: *no longer* goes after *is*, and *is* stays positive.",
+   "why_lv": "*isn't* ... *any more = is no longer*: *no longer* liek aiz *is*, un *is* nav noliegumā.",
+   "answers": [
+    [
+     "The museum is no longer free.",
+     "The museum's no longer free."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:90"
+  }
+ },
+ "r9-090": {
+  "hash": "432c3b0977aaa5fa",
+  "gate_key": "used_to | A2.2 | text | Say it another way with *any more*: Ben no longer studies Spanish. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:91",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Ben doesn't study Spanish any more.",
+     "Ben doesn't study Spanish anymore.",
+     "Ben isn't studying Spanish any more.",
+     "Ben isn't studying Spanish anymore.",
+     "Ben's not studying Spanish any more.",
+     "Ben's not studying Spanish anymore."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3106",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *any more*: Ben no longer studies Spanish.",
+   "why": "*no longer studies* = *doesn't study* ... *any more*: the verb becomes negative and *any more* goes at the end.",
+   "why_lv": "*no longer studies = doesn't study* ... *any more*: darbības vārds ir noliegumā, un *any more* liek beigās.",
+   "answers": [
+    [
+     "Ben doesn't study Spanish any more.",
+     "Ben doesn't study Spanish anymore.",
+     "Ben isn't studying Spanish any more.",
+     "Ben isn't studying Spanish anymore.",
+     "Ben's not studying Spanish any more.",
+     "Ben's not studying Spanish anymore."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:91"
+  }
+ },
+ "r9-091": {
+  "hash": "e784f8fa5dcc58fe",
+  "gate_key": "used_to | A2.2 | order | Put the words in order. | i no longer drink coffee",
+  "src": "zz-blind-gap-points-a2-1.csv:92",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i no longer drink coffee",
+   "also": []
+  },
+  "item": {
+   "id": "c-3107",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*no longer* goes before the main verb, and the verb stays positive: *He no longer plays the guitar.*",
+   "why_lv": "*no longer* liek pirms darbības vārda, un darbības vārds nav noliegumā: *He no longer plays the guitar.*",
+   "sentence": "i no longer drink coffee",
+   "answers": [
+    [
+     "i no longer drink coffee"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:92"
+  }
+ },
+ "r9-092": {
+  "hash": "e291ae85599d3af2",
+  "gate_key": "used_to | A2.2 | order | Put the words in order. | we're no longer in the same team",
+  "src": "zz-blind-gap-points-a2-1.csv:93",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we're no longer in the same team",
+   "also": []
+  },
+  "item": {
+   "id": "c-3108",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "With *be*, *no longer* goes after it: *We're no longer in the same team.*",
+   "why_lv": "Ja teikumā ir *be, no longer* liek aiz tā: *We're no longer in the same team.*",
+   "sentence": "we're no longer in the same team",
+   "answers": [
+    [
+     "we're no longer in the same team"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:93"
+  }
+ },
+ "r9-093": {
+  "hash": "1efcd4357a460bf6",
+  "gate_key": "used_to | A2.2 | order | Put the words in order. | my old printer no longer works",
+  "src": "zz-blind-gap-points-a2-1.csv:94",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my old printer no longer works",
+   "also": []
+  },
+  "item": {
+   "id": "c-3109",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*no longer* goes before the main verb, and the verb stays positive: *He no longer plays the guitar.*",
+   "why_lv": "*no longer* liek pirms darbības vārda, un darbības vārds nav noliegumā: *He no longer plays the guitar.*",
+   "sentence": "my old printer no longer works",
+   "answers": [
+    [
+     "my old printer no longer works"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:94"
+  }
+ },
+ "r9-094": {
+  "hash": "c9bf79bcff21060c",
+  "gate_key": "used_to | A2.2 | order | Put the words in order. | i don't drive to work any more",
+  "src": "zz-blind-gap-points-a2-1.csv:95",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i don't drive to work any more",
+   "also": []
+  },
+  "item": {
+   "id": "c-3110",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*any more* (or *any longer*) goes at the end, after a negative verb: *I don't drive to work any more.*",
+   "why_lv": "*any more* (vai *any longer*) liek teikuma beigās, ja darbības vārds ir noliegumā: *I don't drive to work any more.*",
+   "sentence": "i don't drive to work any more",
+   "answers": [
+    [
+     "i don't drive to work any more"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:95"
+  }
+ },
+ "r9-095": {
+  "hash": "afd4d78a563a265f",
+  "gate_key": "used_to | A2.2 | order | Put the words in order. | he's not my neighbour any longer",
+  "src": "zz-blind-gap-points-a2-1.csv:96",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "he's not my neighbour any longer",
+   "also": []
+  },
+  "item": {
+   "id": "c-3111",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*any more* (or *any longer*) goes at the end, after a negative verb: *I don't drive to work any more.*",
+   "why_lv": "*any more* (vai *any longer*) liek teikuma beigās, ja darbības vārds ir noliegumā: *I don't drive to work any more.*",
+   "sentence": "he's not my neighbour any longer",
+   "answers": [
+    [
+     "he's not my neighbour any longer"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:96"
+  }
+ },
+ "r9-096": {
+  "hash": "980b5535e119de7f",
+  "gate_key": "used_to | A2.2 | gap | She is ___ my teacher. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:97",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "no longer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3112",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She is ___ my teacher.",
+   "why": "After *is*, use *no longer*: *She is no longer my teacher.* *any more* goes at the end after *isn't*; *no more* is not used here.",
+   "why_lv": "Tulkojot burtiski vairs kā *no more*, sanāk kļūda. Aiz *is* liek *no longer*: *She is no longer my teacher.* *any more* liek beigās aiz *isn't*.",
+   "answers": [
+    [
+     "no longer"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "no longer",
+    "no more",
+    "any more"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:97"
+  }
+ },
+ "r9-097": {
+  "hash": "3064a5a5615c583f",
+  "gate_key": "used_to | A2.2 | gap | We don't use cash ___ ___. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:98",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "any"
+    ],
+    [
+     "more"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3113",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We don't use cash ___ ___.",
+   "why": "*don't* is already negative, so the end is *any more*, not *no more*.",
+   "why_lv": "*don't* jau ir noliegums, tāpēc beigās ir *any more*, nevis *no more*.",
+   "answers": [
+    [
+     "any"
+    ],
+    [
+     "more"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "any",
+    "no",
+    "more"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:98"
+  }
+ },
+ "r9-098": {
+  "hash": "4600bdb88b323782",
+  "gate_key": "used_to | A2.2 | gap | This bus ___ goes to the airport. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:99",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "no longer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3114",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "This bus ___ goes to the airport.",
+   "why": "Before a positive verb, use *no longer*: *This bus no longer goes to the airport.* *any more* goes at the end, after *doesn't*.",
+   "why_lv": "Ja darbības vārds nav noliegumā, pirms tā liek *no longer*: *This bus no longer goes to the airport.* *any more* liek beigās, aiz *doesn't*.",
+   "answers": [
+    [
+     "no longer"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "no longer",
+    "any more",
+    "no more"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:99"
+  }
+ },
+ "r9-099": {
+  "hash": "488ebe8715ed2bee",
+  "gate_key": "used_to | A2.2 | gap | These shoes ___ comfortable ___. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:100",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "aren't"
+    ],
+    [
+     "any more"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3115",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "These shoes ___ comfortable ___.",
+   "why": "*any more* needs a negative verb: *These shoes aren't comfortable any more.*",
+   "why_lv": "*any more* lieto ar noliegumu: *These shoes aren't comfortable any more.*",
+   "answers": [
+    [
+     "aren't"
+    ],
+    [
+     "any more"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "aren't",
+    "are",
+    "any more"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:100"
+  }
+ },
+ "r9-100": {
+  "hash": "c268816a272ea35d",
+  "gate_key": "used_to | A2.2 | match | Match each beginning with its ending. | He no longer = plays football. ; She is no longer = our manager. ; They don't live here = any more. ; We aren't = neighbours any longer.",
+  "src": "zz-blind-gap-points-a2-1.csv:101",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "He no longer",
+     "plays football."
+    ],
+    [
+     "She is no longer",
+     "our manager."
+    ],
+    [
+     "They don't live here",
+     "any more."
+    ],
+    [
+     "We aren't",
+     "neighbours any longer."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3116",
+   "skill": "used_to",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*no longer* before the verb (*He no longer plays*) or after *be* (*She is no longer*); *any more / any longer* at the end, after a negative verb.",
+   "why_lv": "*no longer* pirms darbības vārda (*He no longer plays*) vai aiz *be* (*She is no longer*); *any more / any longer* beigās, ja darbības vārds ir noliegumā.",
+   "pairs": [
+    [
+     "He no longer",
+     "plays football."
+    ],
+    [
+     "She is no longer",
+     "our manager."
+    ],
+    [
+     "They don't live here",
+     "any more."
+    ],
+    [
+     "We aren't",
+     "neighbours any longer."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:101"
+  }
+ },
+ "r9-101": {
+  "hash": "4e8f58a5ee829965",
+  "gate_key": "modal_verbs | A2.2 | mcq | Choose the correct option: Could you ___ the window, please? | open",
+  "src": "zz-blind-gap-points-a2-1.csv:102",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "open",
+   "wrong": [
+    "to open",
+    "opening",
+    "opens"
+   ]
+  },
+  "item": {
+   "id": "c-3117",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Could you ___ the window, please?",
+   "why": "After *can / could / would / may* comes the base verb, without *to* or *-ing*: *Could you open the window?* (not *Could you to open*).",
+   "why_lv": "Aiz *can / could / would / may* ir darbības vārda pamatforma bez to un bez *-ing*: *Could you open the window?* (nevis *Could you to open*).",
+   "correct": "open",
+   "wrong": [
+    "to open",
+    "opening",
+    "opens"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:102"
+  }
+ },
+ "r9-102": {
+  "hash": "7a30b4f19b8fc1ab",
+  "gate_key": "modal_verbs | A2.2 | mcq | Which sentence is correct? | Would you check my email, please?",
+  "src": "zz-blind-gap-points-a2-1.csv:103",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Would you check my email, please?",
+   "wrong": [
+    "Would you to check my email, please?",
+    "Would you checking my email, please?",
+    "Would you checked my email, please?"
+   ]
+  },
+  "item": {
+   "id": "c-3118",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "After *can / could / would / may* comes the base verb, without *to* or *-ing*: *Would you check my email?* (not *Would you to check*).",
+   "why_lv": "Aiz *can / could / would / may* ir darbības vārda pamatforma bez to un bez *-ing*: *Would you check my email?* (nevis *Would you to check*).",
+   "correct": "Would you check my email, please?",
+   "wrong": [
+    "Would you to check my email, please?",
+    "Would you checking my email, please?",
+    "Would you checked my email, please?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:103"
+  }
+ },
+ "r9-103": {
+  "hash": "a580916e4de20c41",
+  "gate_key": "modal_verbs | A2.2 | mcq | Which sentence is NOT correct? | May you help me with this form?",
+  "src": "zz-blind-gap-points-a2-1.csv:104",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "May you help me with this form?",
+   "wrong": [
+    "May I use your charger?",
+    "Could you call me back later?",
+    "Can I try this jacket on?"
+   ]
+  },
+  "item": {
+   "id": "c-3119",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*May* asks for permission with *I*: *May I use your charger?* To ask somebody to do something, say *Can / Could / Would you…?*: *Could you help me with this form?* The other sentences are correct.",
+   "why_lv": "*May* lieto atļaujas lūgšanai ar *I*: *May I use your charger?* Lūdzot, lai cits cilvēks kaut ko izdarītu, saka *Can / Could / Would you*…?: *Could you help me with this form?* Pārējie teikumi ir bez kļūdām.",
+   "correct": "May you help me with this form?",
+   "wrong": [
+    "May I use your charger?",
+    "Could you call me back later?",
+    "Can I try this jacket on?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:104"
+  }
+ },
+ "r9-104": {
+  "hash": "dbf3f88d75c63022",
+  "gate_key": "modal_verbs | A2.2 | mcq | Choose the correct option: Can I ___ a coffee and a croissant, please? | have",
+  "src": "zz-blind-gap-points-a2-1.csv:105",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "have",
+   "wrong": [
+    "to have",
+    "having"
+   ]
+  },
+  "item": {
+   "id": "c-3120",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Can I ___ a coffee and a croissant, please?",
+   "why": "To ask for something: *Can I have…?* (or *Could I have…?*), with the base verb: *Can I have a coffee, please?*",
+   "why_lv": "Lūdzot kaut ko saņemt: *Can I have*…? (vai *Could I have*…?) ar pamatformu: *Can I have a coffee, please?*",
+   "correct": "have",
+   "wrong": [
+    "to have",
+    "having"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:105"
+  }
+ },
+ "r9-105": {
+  "hash": "ccae2bcf9d0bbbfd",
+  "gate_key": "modal_verbs | A2.2 | mcq | Which sentence is correct? | Can I borrow your pen for a moment?",
+  "src": "zz-blind-gap-points-a2-1.csv:106",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Can I borrow your pen for a moment?",
+   "wrong": [
+    "Can you borrow me your pen for a moment?",
+    "Can I to borrow your pen for a moment?",
+    "Can I lend your pen for a moment?"
+   ]
+  },
+  "item": {
+   "id": "c-3121",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*Can I borrow your pen?* = I take it and give it back later. *Can you lend me your pen?* = you give it to me for a short time. Not *borrow me*, not *Can I lend…?*",
+   "why_lv": "*Can I borrow your pen?* = es aizņemos (paņemu uz laiku). *Can you lend me your pen?* = jūs man aizdodat. Nevis *borrow me*, nevis *Can I lend*…?",
+   "correct": "Can I borrow your pen for a moment?",
+   "wrong": [
+    "Can you borrow me your pen for a moment?",
+    "Can I to borrow your pen for a moment?",
+    "Can I lend your pen for a moment?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:106"
+  }
+ },
+ "r9-106": {
+  "hash": "48e63180aeb5a5ef",
+  "gate_key": "modal_verbs | A2.2 | mcq | Which sentence is correct? | May I see your passport, please?",
+  "src": "zz-blind-gap-points-a2-1.csv:107",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "May I see your passport, please?",
+   "wrong": [
+    "May I to see your passport, please?",
+    "May I seeing your passport, please?",
+    "May you show me your passport, please?"
+   ]
+  },
+  "item": {
+   "id": "c-3122",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*May I* + base verb asks for permission politely: *May I see your passport?* There is no *May you…?* request: *Could you show me your passport?*",
+   "why_lv": "*May I* + pamatforma pieklājīgi lūdz atļauju: *May I see your passport?* Lūgums *May you*…? nepastāv: *Could you show me your passport?*",
+   "correct": "May I see your passport, please?",
+   "wrong": [
+    "May I to see your passport, please?",
+    "May I seeing your passport, please?",
+    "May you show me your passport, please?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:107"
+  }
+ },
+ "r9-107": {
+  "hash": "c236e1cf8c9d6026",
+  "gate_key": "modal_verbs | A2.2 | mcq | Which sentence is correct? | Can you give me a lift to work?",
+  "src": "zz-blind-gap-points-a2-1.csv:108",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Can you give me a lift to work?",
+   "wrong": [
+    "Do you can give me a lift to work?",
+    "Can you to give me a lift to work?",
+    "Can you giving me a lift to work?"
+   ]
+  },
+  "item": {
+   "id": "c-3123",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "A question with *can* needs no *do*: *Can you* + base verb: *Can you give me a lift?* (not *Do you can…?*).",
+   "why_lv": "Jautājumā ar *can* nelieto *do*: *Can you* + pamatforma: *Can you give me a lift?* (nevis *Do you can*…?).",
+   "correct": "Can you give me a lift to work?",
+   "wrong": [
+    "Do you can give me a lift to work?",
+    "Can you to give me a lift to work?",
+    "Can you giving me a lift to work?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:108"
+  }
+ },
+ "r9-108": {
+  "hash": "6d6706caceac3eb8",
+  "gate_key": "modal_verbs | A2.2 | gap | Could you ___ this word to me? (explain) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:109",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "explain"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3124",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Could you ___ this word to me? (explain)",
+   "why": "After *can / could / would / may* comes the base verb, without *to* or *-ing*: *Could you explain this word?* (not *Could you to explain*).",
+   "why_lv": "Aiz *can / could / would / may* ir darbības vārda pamatforma bez to un bez *-ing*: *Could you explain this word?* (nevis *Could you to explain*).",
+   "answers": [
+    [
+     "explain"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:109"
+  }
+ },
+ "r9-109": {
+  "hash": "41cec34432bb0289",
+  "gate_key": "modal_verbs | A2.2 | gap | Write the missing word: Can ___ borrow your charger? Mine is at home. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:110",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "I",
+     "we"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3125",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: Can ___ borrow your charger? Mine is at home.",
+   "why": "*Can I…?* asks if I may do something: *Can I borrow your charger?* (I take it for a short time). *Mine is at home* shows who needs it.",
+   "why_lv": "*Can I*…? jautā, vai es drīkstu kaut ko darīt: *Can I borrow your charger?* (es aizņemos uz laiku). *Mine is at home* parāda, ka lādētājs vajadzīgs man.",
+   "answers": [
+    [
+     "I",
+     "we"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:110"
+  }
+ },
+ "r9-110": {
+  "hash": "da68da1c763216a3",
+  "gate_key": "modal_verbs | A2.2 | gap | Would you ___ quiet, please? I'm on the phone. (be) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:111",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3126",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Would you ___ quiet, please? I'm on the phone. (be)",
+   "why": "After *can / could / would / may* comes the base verb, without *to* or *-ing*: *Would you be quiet, please?* (not *Would you are quiet*).",
+   "why_lv": "Aiz *can / could / would / may* ir darbības vārda pamatforma bez to un bez *-ing*: *Would you be quiet, please?* (nevis *Would you are quiet*).",
+   "answers": [
+    [
+     "be"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:111"
+  }
+ },
+ "r9-111": {
+  "hash": "ec9b28d7ffc5bcdd",
+  "gate_key": "modal_verbs | A2.2 | gap | Write the missing word: 'Can I take a photo of your garden?' 'Yes, go ___.' | ",
+  "src": "zz-blind-gap-points-a2-1.csv:112",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "ahead",
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3127",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: 'Can I take a photo of your garden?' 'Yes, go ___.'",
+   "why": "To say yes to *Can I…?*: *Yes, go ahead.* (also *Sure.* or *Yes, of course.*).",
+   "why_lv": "Lai atļautu (atbilde uz *Can I*…?): *Yes, go ahead.* (arī *Sure*. vai *Yes, of course*.).",
+   "answers": [
+    [
+     "ahead",
+     "on"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:112"
+  }
+ },
+ "r9-112": {
+  "hash": "eb15c03dddd77d13",
+  "gate_key": "modal_verbs | A2.2 | gap | Could your sister ___ me to the airport tomorrow? (take) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:113",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "take"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3128",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Could your sister ___ me to the airport tomorrow? (take)",
+   "why": "After *could* the verb has no *-s*, also with *he / she*: *Could your sister take me?* (not *takes*).",
+   "why_lv": "Aiz *could* darbības vārdam nav *-s* arī ar *he / she*: *Could your sister take me?* (nevis *takes*).",
+   "answers": [
+    [
+     "take"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:113"
+  }
+ },
+ "r9-113": {
+  "hash": "2f556eec6c32714a",
+  "gate_key": "modal_verbs | A2.2 | text | Start with *Could you*: Please wait here. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:114",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you wait here?",
+     "Could you please wait here?",
+     "Could you wait here, please?",
+     "Could you wait here for me?",
+     "Could you please wait here for me?",
+     "Could you wait here for me, please?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3129",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *Could you*: Please wait here.",
+   "why": "To ask somebody to do something: *Can / Could / Would you* + base verb: *Could you wait here, please?*",
+   "why_lv": "Lūdzot, lai cits cilvēks kaut ko izdarītu: *Can / Could / Would you* + pamatforma: *Could you wait here, please?*",
+   "answers": [
+    [
+     "Could you wait here?",
+     "Could you please wait here?",
+     "Could you wait here, please?",
+     "Could you wait here for me?",
+     "Could you please wait here for me?",
+     "Could you wait here for me, please?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:114"
+  }
+ },
+ "r9-114": {
+  "hash": "24d590c425a213dc",
+  "gate_key": "modal_verbs | A2.2 | text | Start with *May I*: I want to ask you a question. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:115",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "May I ask you a question?",
+     "May I ask you a question, please?",
+     "May I please ask you a question?",
+     "May I ask a question?",
+     "May I ask a question, please?",
+     "May I please ask a question?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3130",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *May I*: I want to ask you a question.",
+   "why": "To ask if you may do something yourself: *Can / Could / May I* + base verb: *May I ask you a question?*",
+   "why_lv": "Jautājot atļauju kaut ko darīt pašam: *Can / Could / May I* + pamatforma: *May I ask you a question?*",
+   "answers": [
+    [
+     "May I ask you a question?",
+     "May I ask you a question, please?",
+     "May I please ask you a question?",
+     "May I ask a question?",
+     "May I ask a question, please?",
+     "May I please ask a question?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:115"
+  }
+ },
+ "r9-115": {
+  "hash": "344c36396fb52e51",
+  "gate_key": "modal_verbs | A2.2 | text | Say it another way with *Can I*: Can you lend me some money? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:116",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Can I borrow some money?",
+     "Can I borrow some money from you?",
+     "Can I borrow some money, please?",
+     "Can I please borrow some money?",
+     "Can I borrow some money from you, please?",
+     "Can I please borrow some money from you?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3131",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *Can I*: Can you lend me some money?",
+   "why": "*Can I borrow some money?* = I take it and give it back later. *Can you lend me some money?* = you give it to me for a short time. Not *borrow me*, not *Can I lend…?*",
+   "why_lv": "*Can I borrow some money?* = es aizņemos (paņemu uz laiku). *Can you lend me some money?* = jūs man aizdodat. Nevis *borrow me*, nevis *Can I lend*…?",
+   "answers": [
+    [
+     "Can I borrow some money?",
+     "Can I borrow some money from you?",
+     "Can I borrow some money, please?",
+     "Can I please borrow some money?",
+     "Can I borrow some money from you, please?",
+     "Can I please borrow some money from you?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:116"
+  }
+ },
+ "r9-116": {
+  "hash": "f106809055a9065f",
+  "gate_key": "modal_verbs | A2.2 | order | Put the words in order to make a question. | can i pay by card",
+  "src": "zz-blind-gap-points-a2-1.csv:117",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "can i pay by card",
+   "also": []
+  },
+  "item": {
+   "id": "c-3132",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "To ask if you may do something yourself: *Can / Could / May I* + base verb: *Can I pay by card?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Jautājot atļauju kaut ko darīt pašam: *Can / Could / May I* + pamatforma: *Can I pay by card?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "can i pay by card",
+   "answers": [
+    [
+     "can i pay by card"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:117"
+  }
+ },
+ "r9-117": {
+  "hash": "6293ec0433a45c28",
+  "gate_key": "modal_verbs | A2.2 | order | Put the words in order to make a question. | could you speak more slowly",
+  "src": "zz-blind-gap-points-a2-1.csv:118",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "could you speak more slowly",
+   "also": []
+  },
+  "item": {
+   "id": "c-3133",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "To ask somebody to do something: *Can / Could / Would you* + base verb: *Could you speak more slowly?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Lūdzot, lai cits cilvēks kaut ko izdarītu: *Can / Could / Would you* + pamatforma: *Could you speak more slowly?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "could you speak more slowly",
+   "answers": [
+    [
+     "could you speak more slowly"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:118"
+  }
+ },
+ "r9-118": {
+  "hash": "a73c729669c02fd2",
+  "gate_key": "modal_verbs | A2.2 | order | Put the words in order to make a question. | may i sit next to you",
+  "src": "zz-blind-gap-points-a2-1.csv:119",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "may i sit next to you",
+   "also": []
+  },
+  "item": {
+   "id": "c-3134",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "To ask if you may do something yourself: *Can / Could / May I* + base verb: *May I sit next to you?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Jautājot atļauju kaut ko darīt pašam: *Can / Could / May I* + pamatforma: *May I sit next to you?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "may i sit next to you",
+   "answers": [
+    [
+     "may i sit next to you"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:119"
+  }
+ },
+ "r9-119": {
+  "hash": "da46de31bb4328a6",
+  "gate_key": "modal_verbs | A2.2 | order | Put the words in order to make a question. | can you send me the link",
+  "src": "zz-blind-gap-points-a2-1.csv:120",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "can you send me the link",
+   "also": []
+  },
+  "item": {
+   "id": "c-3135",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "To ask somebody to do something: *Can / Could / Would you* + base verb: *Can you send me the link?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Lūdzot, lai cits cilvēks kaut ko izdarītu: *Can / Could / Would you* + pamatforma: *Can you send me the link?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "can you send me the link",
+   "answers": [
+    [
+     "can you send me the link"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:120"
+  }
+ },
+ "r9-120": {
+  "hash": "ef0b47ceb895883a",
+  "gate_key": "modal_verbs | A2.2 | order | Put the words in order to make a question. | could you help me with my bags",
+  "src": "zz-blind-gap-points-a2-1.csv:121",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "could you help me with my bags",
+   "also": []
+  },
+  "item": {
+   "id": "c-3136",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "To ask somebody to do something: *Can / Could / Would you* + base verb: *Could you help me with my bags?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Lūdzot, lai cits cilvēks kaut ko izdarītu: *Can / Could / Would you* + pamatforma: *Could you help me with my bags?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "could you help me with my bags",
+   "answers": [
+    [
+     "could you help me with my bags"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:121"
+  }
+ },
+ "r9-121": {
+  "hash": "8127f6a01b2cfb7f",
+  "gate_key": "modal_verbs | A2.2 | gap | Could you ___ me your notes from the lesson? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:122",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "lend"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3137",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Could you ___ me your notes from the lesson?",
+   "why": "*Can I borrow your notes?* = I take it and give it back later. *Could you lend me your notes?* = you give it to me for a short time. Not *borrow me*, not *Can I lend…?*",
+   "why_lv": "*Can I borrow your notes?* = es aizņemos (paņemu uz laiku). *Could you lend me your notes?* = jūs man aizdodat. Nevis *borrow me*, nevis *Can I lend*…?",
+   "answers": [
+    [
+     "lend"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "lend",
+    "borrow",
+    "to lend"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:122"
+  }
+ },
+ "r9-122": {
+  "hash": "041b1d561b324297",
+  "gate_key": "modal_verbs | A2.2 | gap | Can I ___ your bike this afternoon? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:123",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "use"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3138",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Can I ___ your bike this afternoon?",
+   "why": "After *can / could / would / may* comes the base verb, without *to* or *-ing*: *Can I use your bike?* (not *Can I to use*).",
+   "why_lv": "Aiz *can / could / would / may* ir darbības vārda pamatforma bez to un bez *-ing*: *Can I use your bike?* (nevis *Can I to use*).",
+   "answers": [
+    [
+     "use"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "use",
+    "to use",
+    "using"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:123"
+  }
+ },
+ "r9-123": {
+  "hash": "b1fc30c9f6c75dbf",
+  "gate_key": "modal_verbs | A2.2 | gap | Would you ___ me a favour? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:124",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "do"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3139",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Would you ___ me a favour?",
+   "why": "After *can / could / would / may* comes the base verb, without *to* or *-ing*: *Would you do me a favour?* (not *Would you to do*).",
+   "why_lv": "Aiz *can / could / would / may* ir darbības vārda pamatforma bez to un bez *-ing*: *Would you do me a favour?* (nevis *Would you to do*).",
+   "answers": [
+    [
+     "do"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "do",
+    "to do",
+    "doing"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:124"
+  }
+ },
+ "r9-124": {
+  "hash": "3d99d24cde1fd720",
+  "gate_key": "modal_verbs | A2.2 | gap | ___ you ___ the door, please? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:125",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Would"
+    ],
+    [
+     "close"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3140",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ you ___ the door, please?",
+   "why": "To ask somebody to do something: *Would / Could / Can you* + base verb: *Would you close the door?* Not *May you…?* and not *to close*.",
+   "why_lv": "Lūdzot, lai cits cilvēks kaut ko izdarītu: *Would / Could / Can you* + pamatforma: *Would you close the door?* Nevis *May you*…? un nevis *to close*.",
+   "answers": [
+    [
+     "Would"
+    ],
+    [
+     "close"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Would",
+    "close",
+    "May",
+    "to close"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:125"
+  }
+ },
+ "r9-125": {
+  "hash": "f8051087f4b23ed0",
+  "gate_key": "modal_verbs | A2.2 | match | Match each beginning with its ending. | Could you lend = me your charger? ; Can I borrow = your umbrella? ; Would you help = me with this bag? ; May I = come in?",
+  "src": "zz-blind-gap-points-a2-1.csv:126",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Could you lend",
+     "me your charger?"
+    ],
+    [
+     "Can I borrow",
+     "your umbrella?"
+    ],
+    [
+     "Would you help",
+     "me with this bag?"
+    ],
+    [
+     "May I",
+     "come in?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3141",
+   "skill": "modal_verbs",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*Could you lend me…? / Would you help me…?*: you do it for me. *Can I borrow…? / May I come in?*: I ask if I may do it.",
+   "why_lv": "*Could you lend me*…? / *Would you help me*…?: jūs to izdarāt manā labā. *Can I borrow*…? / *May I come in*?: es jautāju, vai drīkstu to darīt.",
+   "pairs": [
+    [
+     "Could you lend",
+     "me your charger?"
+    ],
+    [
+     "Can I borrow",
+     "your umbrella?"
+    ],
+    [
+     "Would you help",
+     "me with this bag?"
+    ],
+    [
+     "May I",
+     "come in?"
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:126"
+  }
+ },
+ "r9-126": {
+  "hash": "17ee9844309dc8c0",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: ___ is good for your heart. | Walking",
+  "src": "zz-blind-gap-points-a2-1.csv:127",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Walking",
+   "wrong": [
+    "Walk",
+    "To walking"
+   ]
+  },
+  "item": {
+   "id": "c-3142",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ is good for your heart.",
+   "why": "An activity at the start of a sentence takes *-ing*: *Walking is good for your heart.* Not *Walk* or *To walking*.",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*: *Walking is good for your heart.* Nevis *Walk* vai *To walking.* Tulkojot burtiski \"Staigāt ir veselīgi\", sanāk *Walk is good.*",
+   "correct": "Walking",
+   "wrong": [
+    "Walk",
+    "To walking"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:127"
+  }
+ },
+ "r9-127": {
+  "hash": "c0c2776dd7c219a8",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: Meeting new people ___ fun. | is",
+  "src": "zz-blind-gap-points-a2-1.csv:128",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "is",
+   "wrong": [
+    "are",
+    "were"
+   ]
+  },
+  "item": {
+   "id": "c-3143",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Meeting new people ___ fun.",
+   "why": "*Meeting new people* is one activity, so the verb is singular: *Meeting new people is fun.* Not *are*.",
+   "why_lv": "*Meeting new people* ir viena aktivitāte, tāpēc darbības vārds ir vienskaitlī: *Meeting new people is fun.* Nevis *are*.",
+   "correct": "is",
+   "wrong": [
+    "are",
+    "were"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:128"
+  }
+ },
+ "r9-128": {
+  "hash": "d4a765351eeee2dc",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: ___ a new language takes time. | Learning",
+  "src": "zz-blind-gap-points-a2-1.csv:129",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Learning",
+   "wrong": [
+    "Learn",
+    "To learning"
+   ]
+  },
+  "item": {
+   "id": "c-3144",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ a new language takes time.",
+   "why": "An activity at the start of a sentence takes *-ing*: *Learning a new language takes time.* Not *Learn* or *To learning*.",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*: *Learning a new language takes time.* Nevis *Learn* vai *To learning.* Tulkojot burtiski \"Mācīties svešvalodu aizņem laiku\", sanāk *Learn a new language takes time.*",
+   "correct": "Learning",
+   "wrong": [
+    "Learn",
+    "To learning"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:129"
+  }
+ },
+ "r9-129": {
+  "hash": "891557b8472c9fba",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: Booking flights early ___ money. | saves",
+  "src": "zz-blind-gap-points-a2-1.csv:130",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "saves",
+   "wrong": [
+    "save",
+    "saving"
+   ]
+  },
+  "item": {
+   "id": "c-3145",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Booking flights early ___ money.",
+   "why": "*Booking flights early* is one activity, so the verb is singular: *Booking flights early saves money.* Not *save*.",
+   "why_lv": "*Booking flights early* ir viena aktivitāte, tāpēc darbības vārds ir vienskaitlī: *Booking flights early saves money.* Nevis *save*.",
+   "correct": "saves",
+   "wrong": [
+    "save",
+    "saving"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:130"
+  }
+ },
+ "r9-130": {
+  "hash": "284e7108bc448375",
+  "gate_key": "verb_patterns | A2.2 | mcq | Which sentence is correct? | Cooking relaxes me after work.",
+  "src": "zz-blind-gap-points-a2-1.csv:131",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Cooking relaxes me after work.",
+   "wrong": [
+    "Cook relaxes me after work.",
+    "Cooking relax me after work.",
+    "To cooking relaxes me after work."
+   ]
+  },
+  "item": {
+   "id": "c-3146",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "An activity at the start of a sentence takes *-ing*, and the verb after it is singular: *Cooking relaxes me after work.*",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*, un darbības vārds aiz tās ir vienskaitlī: *Cooking relaxes me after work.*",
+   "correct": "Cooking relaxes me after work.",
+   "wrong": [
+    "Cook relaxes me after work.",
+    "Cooking relax me after work.",
+    "To cooking relaxes me after work."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:131"
+  }
+ },
+ "r9-131": {
+  "hash": "893682ff22ba21f5",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: ___ long hours makes me tired. | Working",
+  "src": "zz-blind-gap-points-a2-1.csv:132",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Working",
+   "wrong": [
+    "Work",
+    "To working"
+   ]
+  },
+  "item": {
+   "id": "c-3147",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ long hours makes me tired.",
+   "why": "An activity at the start of a sentence takes *-ing*: *Working long hours makes me tired.* Not *Work* or *To working*.",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*: *Working long hours makes me tired.* Nevis *Work* vai *To working.*",
+   "correct": "Working",
+   "wrong": [
+    "Work",
+    "To working"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:132"
+  }
+ },
+ "r9-132": {
+  "hash": "e4a2d63543322525",
+  "gate_key": "verb_patterns | A2.2 | mcq | Which sentence is NOT correct? | Watching the news make me sad.",
+  "src": "zz-blind-gap-points-a2-1.csv:133",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Watching the news make me sad.",
+   "wrong": [
+    "Driving at night is tiring.",
+    "Is parking free at the hotel?",
+    "Learning to cook takes time."
+   ]
+  },
+  "item": {
+   "id": "c-3148",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Watching the news* is one activity, so the verb is singular: *Watching the news makes me sad.* Not *make*.",
+   "why_lv": "*Watching the news* ir viena aktivitāte, tāpēc darbības vārds ir vienskaitlī: *Watching the news makes me sad.* Nevis *make*.",
+   "correct": "Watching the news make me sad.",
+   "wrong": [
+    "Driving at night is tiring.",
+    "Is parking free at the hotel?",
+    "Learning to cook takes time."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:133"
+  }
+ },
+ "r9-133": {
+  "hash": "83113b1ea252e345",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | cycling to work saves me money",
+  "src": "zz-blind-gap-points-a2-1.csv:134",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "cycling to work saves me money",
+   "also": []
+  },
+  "item": {
+   "id": "c-3149",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An activity at the start of a sentence takes *-ing*, and the verb after it is singular: *Cycling to work saves me money.*",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*, un darbības vārds aiz tās ir vienskaitlī: *Cycling to work saves me money.*",
+   "sentence": "cycling to work saves me money",
+   "answers": [
+    [
+     "cycling to work saves me money"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:134"
+  }
+ },
+ "r9-134": {
+  "hash": "6a163f3a26aea90e",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | travelling alone is not always easy",
+  "src": "zz-blind-gap-points-a2-1.csv:135",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "travelling alone is not always easy",
+   "also": []
+  },
+  "item": {
+   "id": "c-3150",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An activity at the start of a sentence takes *-ing*, and the verb after it is singular: *Travelling alone is not always easy.*",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*, un darbības vārds aiz tās ir vienskaitlī: *Travelling alone is not always easy.*",
+   "sentence": "travelling alone is not always easy",
+   "answers": [
+    [
+     "travelling alone is not always easy"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:135"
+  }
+ },
+ "r9-135": {
+  "hash": "d988164c30888be6",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | playing the guitar helps me relax",
+  "src": "zz-blind-gap-points-a2-1.csv:136",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "playing the guitar helps me relax",
+   "also": []
+  },
+  "item": {
+   "id": "c-3151",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An activity at the start of a sentence takes *-ing*, and the verb after it is singular: *Playing the guitar helps me relax.*",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*, un darbības vārds aiz tās ir vienskaitlī: *Playing the guitar helps me relax.*",
+   "sentence": "playing the guitar helps me relax",
+   "answers": [
+    [
+     "playing the guitar helps me relax"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:136"
+  }
+ },
+ "r9-136": {
+  "hash": "529218fe9f1716da",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order to make a question. | is learning english hard for you",
+  "src": "zz-blind-gap-points-a2-1.csv:137",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "is learning english hard for you",
+   "also": []
+  },
+  "item": {
+   "id": "c-3152",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "The *-ing* activity is the subject: *Is learning English hard for you?* *Is* comes first, then the activity. In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Is learning English hard for you?* Sākumā *is*, tad aktivitāte. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "is learning english hard for you",
+   "answers": [
+    [
+     "is learning english hard for you"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:137"
+  }
+ },
+ "r9-137": {
+  "hash": "c7a39ed7fca8cd5d",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | charging my phone takes two hours",
+  "src": "zz-blind-gap-points-a2-1.csv:138",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "charging my phone takes two hours",
+   "also": []
+  },
+  "item": {
+   "id": "c-3153",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An activity at the start of a sentence takes *-ing*, and the verb after it is singular: *Charging my phone takes two hours.*",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*, un darbības vārds aiz tās ir vienskaitlī: *Charging my phone takes two hours.*",
+   "sentence": "charging my phone takes two hours",
+   "answers": [
+    [
+     "charging my phone takes two hours"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:138"
+  }
+ },
+ "r9-138": {
+  "hash": "3d9d5b4b937b50ff",
+  "gate_key": "verb_patterns | A2.2 | gap | ___ is my favourite way to relax. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:139",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Reading"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3154",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ is my favourite way to relax.",
+   "why": "An activity at the start of a sentence takes *-ing*: *Reading is my favourite way to relax.* Not *Read* or *To reading*.",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*: *Reading is my favourite way to relax.* Nevis *Read* vai *To reading.*",
+   "answers": [
+    [
+     "Reading"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Reading",
+    "Read",
+    "To reading"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:139"
+  }
+ },
+ "r9-139": {
+  "hash": "730475caa75f439a",
+  "gate_key": "verb_patterns | A2.2 | gap | Riding a bike ___ me fit. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:140",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "keeps"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3155",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Riding a bike ___ me fit.",
+   "why": "*Riding a bike* is one activity, so the verb is singular: *Riding a bike keeps me fit.* Not *keep*.",
+   "why_lv": "*Riding a bike* ir viena aktivitāte, tāpēc darbības vārds ir vienskaitlī: *Riding a bike keeps me fit.* Nevis *keep*.",
+   "answers": [
+    [
+     "keeps"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "keeps",
+    "keep",
+    "keeping"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:140"
+  }
+ },
+ "r9-140": {
+  "hash": "aebc6dfaf1c61b60",
+  "gate_key": "verb_patterns | A2.2 | gap | ___ ___ English help you at work? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:141",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Does"
+    ],
+    [
+     "speaking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3156",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ ___ English help you at work?",
+   "why": "The *-ing* activity is the subject: *Does speaking English help you at work?* One activity, so *does*, not *do*; after *does* the base verb.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Does speaking English help you at work?* Viena aktivitāte, tāpēc *does*, nevis *do*; aiz *does* pamatforma.",
+   "answers": [
+    [
+     "Does"
+    ],
+    [
+     "speaking"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Does",
+    "speaking",
+    "Do",
+    "speak"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:141"
+  }
+ },
+ "r9-141": {
+  "hash": "03b12d532ce39cc4",
+  "gate_key": "verb_patterns | A2.2 | gap | ___ ___ not allowed in this lake. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:142",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Swimming"
+    ],
+    [
+     "is"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3157",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ ___ not allowed in this lake.",
+   "why": "An activity at the start of a sentence takes *-ing*, and the verb after it is singular: *Swimming is not allowed in this lake.*",
+   "why_lv": "Ja teikums sākas ar aktivitāti, lieto formu ar *-ing*, un darbības vārds aiz tās ir vienskaitlī: *Swimming is not allowed in this lake.*",
+   "answers": [
+    [
+     "Swimming"
+    ],
+    [
+     "is"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Swimming",
+    "is",
+    "Swim",
+    "are"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:142"
+  }
+ },
+ "r9-142": {
+  "hash": "584f829c356ff1fa",
+  "gate_key": "verb_patterns | A2.2 | match | Match each beginning with its ending. | Brushing your teeth twice a day = keeps them healthy. ; Wearing a helmet on a bike = protects your head. ; Speaking English well = helps you find a good job. ; Booking a hotel early = makes it cheaper.",
+  "src": "zz-blind-gap-points-a2-1.csv:143",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Brushing your teeth twice a day",
+     "keeps them healthy."
+    ],
+    [
+     "Wearing a helmet on a bike",
+     "protects your head."
+    ],
+    [
+     "Speaking English well",
+     "helps you find a good job."
+    ],
+    [
+     "Booking a hotel early",
+     "makes it cheaper."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3158",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "Each activity at the start takes *-ing*, and the verb after it is singular: *Wearing a helmet on a bike protects your head.*",
+   "why_lv": "Visām aktivitātēm teikuma sākumā lieto formu ar *-ing*, un darbības vārds aiz tām ir vienskaitlī: *Wearing a helmet on a bike protects your head.*",
+   "pairs": [
+    [
+     "Brushing your teeth twice a day",
+     "keeps them healthy."
+    ],
+    [
+     "Wearing a helmet on a bike",
+     "protects your head."
+    ],
+    [
+     "Speaking English well",
+     "helps you find a good job."
+    ],
+    [
+     "Booking a hotel early",
+     "makes it cheaper."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:143"
+  }
+ },
+ "r9-143": {
+  "hash": "16383d0cf85df719",
+  "gate_key": "verb_patterns | A2.2 | gap | Is ___ a car expensive in Riga? (rent) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:144",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "renting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3159",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Is ___ a car expensive in Riga? (rent)",
+   "why": "The *-ing* activity is the subject: *Is renting a car expensive in Riga?* Not *Is rent* or *Is to rent*.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Is renting a car expensive in Riga?* Nevis *Is rent* vai *Is to rent.*",
+   "answers": [
+    [
+     "renting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:144"
+  }
+ },
+ "r9-144": {
+  "hash": "2595f698bc619076",
+  "gate_key": "verb_patterns | A2.2 | gap | ___ late at night is bad for you. (eat) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:145",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Eating",
+     "To eat"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3160",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ late at night is bad for you. (eat)",
+   "why": "An activity at the start of a sentence usually takes *-ing*: *Eating late at night is bad for you.* *To eat late at night* is also correct, but formal and less common.",
+   "why_lv": "Ja teikums sākas ar aktivitāti, parasti lieto formu ar *-ing*: *Eating late at night is bad for you.* Arī *To eat late at night* ir iespējams, bet tā runā retāk un oficiālāk.",
+   "answers": [
+    [
+     "Eating",
+     "To eat"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:145"
+  }
+ },
+ "r9-145": {
+  "hash": "287b5331b5e3c93a",
+  "gate_key": "verb_patterns | A2.2 | gap | Why is ___ so popular in Denmark? (cycle) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:146",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "cycling"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3161",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Why is ___ so popular in Denmark? (cycle)",
+   "why": "The *-ing* activity is the subject: *Why is cycling so popular in Denmark?* Not *Why is cycle* or *Why is to cycle*.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Why is cycling so popular in Denmark?* Nevis *Why is cycle* vai *Why is to cycle.*",
+   "answers": [
+    [
+     "cycling"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:146"
+  }
+ },
+ "r9-146": {
+  "hash": "3d7999ce5d1b1a1b",
+  "gate_key": "verb_patterns | A2.2 | gap | ___ to music helps me work. (listen) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:147",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Listening",
+     "To listen"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3162",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ to music helps me work. (listen)",
+   "why": "An activity at the start of a sentence usually takes *-ing*: *Listening to music helps me work.* *To listen to music* is also correct, but formal and less common.",
+   "why_lv": "Ja teikums sākas ar aktivitāti, parasti lieto formu ar *-ing*: *Listening to music helps me work.* Arī *To listen to music* ir iespējams, bet tā runā retāk un oficiālāk.",
+   "answers": [
+    [
+     "Listening",
+     "To listen"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:147"
+  }
+ },
+ "r9-147": {
+  "hash": "16b4cb4f761b3705",
+  "gate_key": "verb_patterns | A2.2 | gap | Getting up early ___ never easy for me. (be) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:148",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is",
+     "was"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3163",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Getting up early ___ never easy for me. (be)",
+   "why": "*Getting up early* is one activity, so the verb is singular: *Getting up early is never easy for me.* Not *are*. (*was* for the past.)",
+   "why_lv": "*Getting up early* ir viena aktivitāte, tāpēc darbības vārds ir vienskaitlī: *Getting up early is never easy for me.* Nevis *are*. (*was* pagātnē.)",
+   "answers": [
+    [
+     "is",
+     "was"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:148"
+  }
+ },
+ "r9-148": {
+  "hash": "f9c00ba7098e0b59",
+  "gate_key": "verb_patterns | A2.2 | text | Make it negative: Flying makes me nervous. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:149",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Flying doesn't make me nervous."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3164",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: Flying makes me nervous.",
+   "why": "The *-ing* activity is the subject: *Flying doesn't make me nervous.* One activity, so *doesn't*, not *don't*.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Flying doesn't make me nervous.* Viena aktivitāte, tāpēc *doesn't*, nevis *don't*.",
+   "answers": [
+    [
+     "Flying doesn't make me nervous."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:149"
+  }
+ },
+ "r9-149": {
+  "hash": "9d1ae661f22b7eb3",
+  "gate_key": "verb_patterns | A2.2 | text | Make a yes/no question: Living in a big city is expensive. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:150",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Is living in a big city expensive?",
+     "Is living expensive in a big city?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3165",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a yes/no question: Living in a big city is expensive.",
+   "why": "The *-ing* activity is the subject: *Is living in a big city expensive?* *Is* goes before the whole activity: *living in a big city*.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Is living in a big city expensive?* *Is* stāv pirms teikuma priekšmeta: *living in a big city*.",
+   "answers": [
+    [
+     "Is living in a big city expensive?",
+     "Is living expensive in a big city?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:150"
+  }
+ },
+ "r9-150": {
+  "hash": "0170504c928b6bc1",
+  "gate_key": "verb_patterns | A2.2 | text | Make a yes/no question: Using this app saves you time. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:151",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Does using this app save you time?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3166",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a yes/no question: Using this app saves you time.",
+   "why": "The *-ing* activity is the subject: *Does using this app save you time?* One activity, so *does*, not *do*; after *does* the base verb.",
+   "why_lv": "Aktivitāte ar *-ing* ir teikuma priekšmets: *Does using this app save you time?* Viena aktivitāte, tāpēc *does*, nevis *do*; aiz *does* pamatforma.",
+   "answers": [
+    [
+     "Does using this app save you time?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:151"
+  }
+ },
+ "r9-151": {
+  "hash": "541a0daa9aa29ede",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: We often go ___ fishing at the lake. | —",
+  "src": "zz-blind-gap-points-a2-1.csv:152",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "—",
+   "wrong": [
+    "to",
+    "for"
+   ]
+  },
+  "item": {
+   "id": "c-3167",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We often go ___ fishing at the lake.",
+   "why": "*go* + *-ing* for activities, with nothing in between: *go fishing, go skiing, go camping*. Not *go to fishing* or *go for fishing*.",
+   "why_lv": "*go + -ing* nodarbēm, bez nekā starp tiem: *go fishing, go skiing, go camping*. Nevis *go to fishing* vai *go for fishing*.",
+   "correct": "—",
+   "wrong": [
+    "to",
+    "for"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:152"
+  }
+ },
+ "r9-152": {
+  "hash": "27df70b9c13da4e9",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: Let's go ___ a coffee after the meeting. | for",
+  "src": "zz-blind-gap-points-a2-1.csv:153",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "for",
+   "wrong": [
+    "to",
+    "on",
+    "—"
+   ]
+  },
+  "item": {
+   "id": "c-3168",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Let's go ___ a coffee after the meeting.",
+   "why": "*go for a* + noun for a short activity: *go for a coffee, a drink, a walk, a run*.",
+   "why_lv": "*go for a* + lietvārds īsām nodarbēm: *go for a coffee, a drink, a walk, a run*.",
+   "correct": "for",
+   "wrong": [
+    "to",
+    "on",
+    "—"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:153"
+  }
+ },
+ "r9-153": {
+  "hash": "b802fb20d280bfd7",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: They're going ___ holiday to Greece in May. | on",
+  "src": "zz-blind-gap-points-a2-1.csv:154",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "on",
+   "wrong": [
+    "to",
+    "for",
+    "in"
+   ]
+  },
+  "item": {
+   "id": "c-3169",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: They're going ___ holiday to Greece in May.",
+   "why": "*go on* + *holiday* or *a trip*: *go on holiday, go on a trip*. Not *go to holiday* or *go for holiday*.",
+   "why_lv": "*go on + holiday* vai *a trip*: *go on holiday, go on a trip*. Nevis *go to holiday* vai *go for holiday*.",
+   "correct": "on",
+   "wrong": [
+    "to",
+    "for",
+    "in"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:154"
+  }
+ },
+ "r9-154": {
+  "hash": "494f1530d1114c4d",
+  "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: Do you want to go ___ before breakfast? | for a swim",
+  "src": "zz-blind-gap-points-a2-1.csv:155",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "for a swim",
+   "wrong": [
+    "for swimming",
+    "to swimming",
+    "for a swimming"
+   ]
+  },
+  "item": {
+   "id": "c-3170",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Do you want to go ___ before breakfast?",
+   "why": "*go for a swim* (*a* + noun) = *go swimming* (*-ing*, no *for*). Not *go for swimming* or *go for a swimming*.",
+   "why_lv": "*go for a swim* (*a* + lietvārds) = *go swimming* (*-ing*, bez *for*). Nevis *go for swimming* vai *go for a swimming*.",
+   "correct": "for a swim",
+   "wrong": [
+    "for swimming",
+    "to swimming",
+    "for a swimming"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:155"
+  }
+ },
+ "r9-155": {
+  "hash": "fd1758f8e9248495",
+  "gate_key": "verb_patterns | A2.2 | mcq | Which sentence is correct? | We went skiing in Austria last winter.",
+  "src": "zz-blind-gap-points-a2-1.csv:156",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "We went skiing in Austria last winter.",
+   "wrong": [
+    "We went to skiing in Austria last winter.",
+    "We went for skiing in Austria last winter.",
+    "We went for a skiing in Austria last winter."
+   ]
+  },
+  "item": {
+   "id": "c-3171",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*go* + *-ing* for activities, with nothing in between: *go fishing, go skiing, go camping*. Not *go to fishing* or *go for fishing*.",
+   "why_lv": "*go + -ing* nodarbēm, bez nekā starp tiem: *go fishing, go skiing, go camping*. Nevis *go to fishing* vai *go for fishing*.",
+   "correct": "We went skiing in Austria last winter.",
+   "wrong": [
+    "We went to skiing in Austria last winter.",
+    "We went for skiing in Austria last winter.",
+    "We went for a skiing in Austria last winter."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:156"
+  }
+ },
+ "r9-156": {
+  "hash": "27f617deb6ca32c6",
+  "gate_key": "verb_patterns | A2.2 | mcq | Which sentence is NOT correct? | Shall we go to shopping on Saturday?",
+  "src": "zz-blind-gap-points-a2-1.csv:157",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Shall we go to shopping on Saturday?",
+   "wrong": [
+    "I go to the gym after work.",
+    "Let's go for a walk by the river.",
+    "We're going on a trip next month."
+   ]
+  },
+  "item": {
+   "id": "c-3172",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*go shopping*, not *go to shopping*. *go to* + a place: *go to the shops, go to the gym*.",
+   "why_lv": "*go shopping*, nevis *go to shopping*. *go to* + vieta: *go to the shops, go to the gym*.",
+   "correct": "Shall we go to shopping on Saturday?",
+   "wrong": [
+    "I go to the gym after work.",
+    "Let's go for a walk by the river.",
+    "We're going on a trip next month."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:157"
+  }
+ },
+ "r9-157": {
+  "hash": "e04203572530c2c7",
+  "gate_key": "verb_patterns | A2.2 | mcq | Which sentence is NOT correct? | I went to home early yesterday.",
+  "src": "zz-blind-gap-points-a2-1.csv:158",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I went to home early yesterday.",
+   "wrong": [
+    "She goes running every morning.",
+    "We went for a drink after work.",
+    "He goes to bed very late."
+   ]
+  },
+  "item": {
+   "id": "c-3173",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*go home*, not *go to home* or *go at home*: *I'm going home.*",
+   "why_lv": "Saka *go home*, nevis *go to home* vai *go at home*: *I'm going home.*",
+   "correct": "I went to home early yesterday.",
+   "wrong": [
+    "She goes running every morning.",
+    "We went for a drink after work.",
+    "He goes to bed very late."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:158"
+  }
+ },
+ "r9-158": {
+  "hash": "bcb980803837b4eb",
+  "gate_key": "verb_patterns | A2.2 | gap | Write the missing word: I usually go ___ bed at eleven. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:159",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3174",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: I usually go ___ bed at eleven.",
+   "why": "*go to* + a place: *go to bed* (with no *the*), *go to work*, *go to the gym*.",
+   "why_lv": "*go to* + vieta: *go to bed* (bez *the*), *go to work, go to the gym*.",
+   "answers": [
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:159"
+  }
+ },
+ "r9-159": {
+  "hash": "33002066a5f470a1",
+  "gate_key": "verb_patterns | A2.2 | gap | Write the missing word: Where are you going ___ holiday this year? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:160",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3175",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: Where are you going ___ holiday this year?",
+   "why": "*go on* + *holiday* or *a trip*: *go on holiday, go on a trip*. Not *go to holiday* or *go for holiday*.",
+   "why_lv": "*go on + holiday* vai *a trip*: *go on holiday, go on a trip*. Nevis *go to holiday* vai *go for holiday*.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:160"
+  }
+ },
+ "r9-160": {
+  "hash": "d22b68c787310c70",
+  "gate_key": "verb_patterns | A2.2 | gap | Write the missing word: What time do you go ___ work? | ",
+  "src": "zz-blind-gap-points-a2-1.csv:161",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to",
+     "into"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3176",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: What time do you go ___ work?",
+   "why": "*go to work*: *go to* + a place, with no *the*. In British English *go into work* is also said.",
+   "why_lv": "*go to work*: *go to* + vieta, bez *the*. Lielbritānijā saka arī *go into work*.",
+   "answers": [
+    [
+     "to",
+     "into"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:161"
+  }
+ },
+ "r9-161": {
+  "hash": "413a389f4c6da836",
+  "gate_key": "verb_patterns | A2.2 | gap | Write the missing word: We went ___ a long walk on the beach. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:162",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for",
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3177",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: We went ___ a long walk on the beach.",
+   "why": "*go for a walk*: *for a* + noun. *go on a walk* is also used, especially in American English.",
+   "why_lv": "*go for a walk*: *for a* + lietvārds. Lieto arī *go on a walk*, īpaši amerikāņu angļu valodā.",
+   "answers": [
+    [
+     "for",
+     "on"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:162"
+  }
+ },
+ "r9-162": {
+  "hash": "6fe73768c9bc0f09",
+  "gate_key": "verb_patterns | A2.2 | gap | She goes ___ in the park every morning. (run) | ",
+  "src": "zz-blind-gap-points-a2-1.csv:163",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "running",
+     "for a run"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3178",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She goes ___ in the park every morning. (run)",
+   "why": "*go running* (*-ing*, no *for*) = *go for a run* (*a* + noun). Not *go for running*.",
+   "why_lv": "*go running* (*-ing*, bez *for*) = *go for a run* (*a* + lietvārds). Nevis *go for running*.",
+   "answers": [
+    [
+     "running",
+     "for a run"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:163"
+  }
+ },
+ "r9-163": {
+  "hash": "f0c43562b4e4fc56",
+  "gate_key": "verb_patterns | A2.2 | text | Say it another way with *for*: Let's go swimming after work. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:164",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Let's go for a swim after work.",
+     "After work, let's go for a swim.",
+     "Shall we go for a swim after work?",
+     "Let's go out for a swim after work.",
+     "let's go for a swim after work.",
+     "After work, shall we go for a swim?",
+     "After work, let's go out for a swim."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3179",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *for*: Let's go swimming after work.",
+   "why": "*go for a swim* (*a* + noun) = *go swimming* (*-ing*, no *for*). Not *go for swimming* or *go for a swimming*.",
+   "why_lv": "*go for a swim* (*a* + lietvārds) = *go swimming* (*-ing*, bez *for*). Nevis *go for swimming* vai *go for a swimming*.",
+   "answers": [
+    [
+     "Let's go for a swim after work.",
+     "After work, let's go for a swim.",
+     "Shall we go for a swim after work?",
+     "Let's go out for a swim after work.",
+     "let's go for a swim after work.",
+     "After work, shall we go for a swim?",
+     "After work, let's go out for a swim."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:164"
+  }
+ },
+ "r9-164": {
+  "hash": "99a67f858b1a745c",
+  "gate_key": "verb_patterns | A2.2 | text | Say it another way with *shopping*: Let's go to the shops this afternoon. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:165",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Let's go shopping this afternoon.",
+     "This afternoon, let's go shopping.",
+     "Shall we go shopping this afternoon?",
+     "Let's do some shopping this afternoon.",
+     "Let's do the shopping this afternoon.",
+     "Shall we do some shopping this afternoon?",
+     "Let's go and do some shopping this afternoon.",
+     "This afternoon Let's go shopping.",
+     "This afternoon Let's do some shopping.",
+     "This afternoon Let's do the shopping."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3180",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *shopping*: Let's go to the shops this afternoon.",
+   "why": "*go shopping*, not *go to shopping*. *go to* + a place: *go to the shops, go to the gym*.",
+   "why_lv": "*go shopping*, nevis *go to shopping*. *go to* + vieta: *go to the shops, go to the gym*.",
+   "answers": [
+    [
+     "Let's go shopping this afternoon.",
+     "This afternoon, let's go shopping.",
+     "Shall we go shopping this afternoon?",
+     "Let's do some shopping this afternoon.",
+     "Let's do the shopping this afternoon.",
+     "Shall we do some shopping this afternoon?",
+     "Let's go and do some shopping this afternoon.",
+     "This afternoon Let's go shopping.",
+     "This afternoon Let's do some shopping.",
+     "This afternoon Let's do the shopping."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:165"
+  }
+ },
+ "r9-165": {
+  "hash": "53f183437f045514",
+  "gate_key": "verb_patterns | A2.2 | text | Say it another way with *for*: I took a short walk after lunch. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:166",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I went for a short walk after lunch.",
+     "After lunch, I went for a short walk.",
+     "I went out for a short walk after lunch.",
+     "After lunch, I went out for a short walk."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3181",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *for*: I took a short walk after lunch.",
+   "why": "*go for a* + noun for a short activity: *go for a coffee, a drink, a walk, a run*.",
+   "why_lv": "*go for a* + lietvārds īsām nodarbēm: *go for a coffee, a drink, a walk, a run*.",
+   "answers": [
+    [
+     "I went for a short walk after lunch.",
+     "After lunch, I went for a short walk.",
+     "I went out for a short walk after lunch.",
+     "After lunch, I went out for a short walk."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:166"
+  }
+ },
+ "r9-166": {
+  "hash": "50da8ab1b8f811b8",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | we go cycling every saturday",
+  "src": "zz-blind-gap-points-a2-1.csv:167",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we go cycling every saturday",
+   "also": []
+  },
+  "item": {
+   "id": "c-3182",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*go* + *-ing* for activities, with nothing in between: *go fishing, go skiing, go camping*. Not *go to fishing* or *go for fishing*.",
+   "why_lv": "*go + -ing* nodarbēm, bez nekā starp tiem: *go fishing, go skiing, go camping*. Nevis *go to fishing* vai *go for fishing*.",
+   "sentence": "we go cycling every saturday",
+   "answers": [
+    [
+     "we go cycling every saturday",
+     "every saturday we go cycling"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:167"
+  }
+ },
+ "r9-167": {
+  "hash": "603bae35c644962f",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | my dad goes for a bike ride every sunday",
+  "src": "zz-blind-gap-points-a2-1.csv:168",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my dad goes for a bike ride every sunday",
+   "also": []
+  },
+  "item": {
+   "id": "c-3183",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*go for a* + noun for a short activity: *go for a coffee, a drink, a walk, a run*.",
+   "why_lv": "*go for a* + lietvārds īsām nodarbēm: *go for a coffee, a drink, a walk, a run*.",
+   "sentence": "my dad goes for a bike ride every sunday",
+   "answers": [
+    [
+     "my dad goes for a bike ride every sunday",
+     "every sunday my dad goes for a bike ride"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:168"
+  }
+ },
+ "r9-168": {
+  "hash": "bfd3468f72186bf4",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | she goes to the gym before work",
+  "src": "zz-blind-gap-points-a2-1.csv:169",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "she goes to the gym before work",
+   "also": []
+  },
+  "item": {
+   "id": "c-3184",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*go to* + a place: *go to the gym, go to the cinema, go to work, go to bed*.",
+   "why_lv": "*go to* + vieta: *go to the gym, go to the cinema, go to work, go to bed*.",
+   "sentence": "she goes to the gym before work",
+   "answers": [
+    [
+     "she goes to the gym before work",
+     "before work she goes to the gym"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:169"
+  }
+ },
+ "r9-169": {
+  "hash": "29273bd8b639be5f",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | we're going on holiday next week",
+  "src": "zz-blind-gap-points-a2-1.csv:170",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we're going on holiday next week",
+   "also": []
+  },
+  "item": {
+   "id": "c-3185",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*go on* + *holiday* or *a trip*: *go on holiday, go on a trip*. Not *go to holiday* or *go for holiday*.",
+   "why_lv": "*go on + holiday* vai *a trip*: *go on holiday, go on a trip*. Nevis *go to holiday* vai *go for holiday*.",
+   "sentence": "we're going on holiday next week",
+   "answers": [
+    [
+     "we're going on holiday next week",
+     "next week we're going on holiday"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:170"
+  }
+ },
+ "r9-170": {
+  "hash": "eb8d0b2925289b82",
+  "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | he went home after the meeting",
+  "src": "zz-blind-gap-points-a2-1.csv:171",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "he went home after the meeting",
+   "also": []
+  },
+  "item": {
+   "id": "c-3186",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*go home*, not *go to home* or *go at home*: *I'm going home.*",
+   "why_lv": "Saka *go home*, nevis *go to home* vai *go at home*: *I'm going home.*",
+   "sentence": "he went home after the meeting",
+   "answers": [
+    [
+     "he went home after the meeting",
+     "after the meeting he went home"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:171"
+  }
+ },
+ "r9-171": {
+  "hash": "d2a43c673b91a973",
+  "gate_key": "verb_patterns | A2.2 | gap | We went ___ a boat trip on the river. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:172",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3187",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We went ___ a boat trip on the river.",
+   "why": "*go on* + *holiday* or *a trip*: *go on holiday, go on a trip*. Not *go to holiday* or *go for holiday*.",
+   "why_lv": "*go on + holiday* vai *a trip*: *go on holiday, go on a trip*. Nevis *go to holiday* vai *go for holiday*.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "on",
+    "to",
+    "—"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:172"
+  }
+ },
+ "r9-172": {
+  "hash": "840de68f1c12c1ca",
+  "gate_key": "verb_patterns | A2.2 | gap | Last summer we went ___ in the forest. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:173",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "camping"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3188",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Last summer we went ___ in the forest.",
+   "why": "*go* + *-ing* for activities, with nothing in between: *go fishing, go skiing, go camping*. Not *go to fishing* or *go for fishing*.",
+   "why_lv": "*go + -ing* nodarbēm, bez nekā starp tiem: *go fishing, go skiing, go camping*. Nevis *go to fishing* vai *go for fishing*.",
+   "answers": [
+    [
+     "camping"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "camping",
+    "to camping",
+    "for camping"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:173"
+  }
+ },
+ "r9-173": {
+  "hash": "72ecdcb942506e17",
+  "gate_key": "verb_patterns | A2.2 | gap | It's late, so I'm going ___. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:174",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "home"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3189",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's late, so I'm going ___.",
+   "why": "*go home*, not *go to home* or *go at home*: *I'm going home.*",
+   "why_lv": "Saka *go home*, nevis *go to home* vai *go at home*: *I'm going home.*",
+   "answers": [
+    [
+     "home"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "home",
+    "to home",
+    "at home"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:174"
+  }
+ },
+ "r9-174": {
+  "hash": "4a8722c7eff7542a",
+  "gate_key": "verb_patterns | A2.2 | gap | Let's go ___ a ___ before dinner. | ",
+  "src": "zz-blind-gap-points-a2-1.csv:175",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for"
+    ],
+    [
+     "run"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3190",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Let's go ___ a ___ before dinner.",
+   "why": "*go running* (*-ing*, no *for*) = *go for a run* (*a* + noun). Not *go for running*.",
+   "why_lv": "*go running* (*-ing*, bez *for*) = *go for a run* (*a* + lietvārds). Nevis *go for running*.",
+   "answers": [
+    [
+     "for"
+    ],
+    [
+     "run"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "for",
+    "run",
+    "to",
+    "running"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:175"
+  }
+ },
+ "r9-175": {
+  "hash": "14f3c012ede0fcbf",
+  "gate_key": "verb_patterns | A2.2 | match | Match each beginning with its ending. | Let's go for = a coffee after work. ; She goes to = the gym every morning. ; We're going on = holiday in July. ; They often go = fishing at the weekend.",
+  "src": "zz-blind-gap-points-a2-1.csv:176",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Let's go for",
+     "a coffee after work."
+    ],
+    [
+     "She goes to",
+     "the gym every morning."
+    ],
+    [
+     "We're going on",
+     "holiday in July."
+    ],
+    [
+     "They often go",
+     "fishing at the weekend."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3191",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*go* + *-ing* (*go fishing*), *go for a* + noun (*go for a coffee*), *go to* + place (*go to the gym*), *go on holiday*, *go home*.",
+   "why_lv": "*go + -ing* (*go fishing*), *go for a* + lietvārds (*go for a coffee*), *go to* + vieta (*go to the gym*), *go on holiday, go home*.",
+   "pairs": [
+    [
+     "Let's go for",
+     "a coffee after work."
+    ],
+    [
+     "She goes to",
+     "the gym every morning."
+    ],
+    [
+     "We're going on",
+     "holiday in July."
+    ],
+    [
+     "They often go",
+     "fishing at the weekend."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:176"
+  }
+ }
+}

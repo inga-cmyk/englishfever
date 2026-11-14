@@ -12,6 +12,8 @@ LV_BY_FILE = {"twins-3.csv": set("""viss ierodas neder notikumu papildu tu izlem
 LV_BY_FILE["learn-drag-3.csv"] = LV_BY_FILE["twins-3.csv"]
 LV_BY_FILE["a2-rel-might-1.csv"] = set("neliek saskan izpaliek visi nolieguma".split())   # A2.2 draft of 14 November
 LV_BY_FILE["pairs-1.csv"] = set("vienreiz Vienreiz jaunu laikam noticis noteikti izdevās konkrētā situācijā norāda sekām sākuma brīdis".split())   # form pairs, 14 November   # the learning tasks reuse the batch-3 explanations
+LV_BY_FILE["gap-points-a2-1.csv"] = set("""tulkojot burtiski Tulkojot artikula artikulu valstu nosaukumiem nosaukumi noteikta noteikts noteiktiem visi veidiem
+Sporta sporta instrumentiem Hobijs hobijs citam tikai pareizi ideju lieta atsakot aizdodat veidi skolas mācības mācībām matemātika vēsture""".split())   # batch 4, A2 part (14 November)
 LV_BY_FILE["learn-drag-4.csv"] = set("visa apgalvojuma".split()) | LV_BY_FILE["twins-3.csv"]
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics", "answer notes"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners

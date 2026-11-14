@@ -84,6 +84,9 @@ def lv_mark(text):
             kind.append("?")
         else:
             kind.append("E")
+    for i, (w, a, b) in enumerate(toks):   # "no longer / no more" is English (Latvian "no" = from; 14 November)
+        if w.lower() == "no" and i + 1 < len(toks) and toks[i + 1][0].lower() in ("longer", "more"):
+            kind[i] = "E"
     # ambiguous words are English next to an English word, otherwise Latvian
     for i, k in enumerate(kind):
         if k == "?":

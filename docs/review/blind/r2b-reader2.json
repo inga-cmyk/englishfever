@@ -1,0 +1,20 @@
+[
+ {
+  "id": "r2b-001",
+  "answer": "Max denied taking my phone.",
+  "other_correct": ["Max denied having taken my phone.", "Max denied that he had taken my phone.", "Max denied that he took my phone.", "Max denied he had taken my phone.", "Max denied he took my phone."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Many correct forms are possible (gerund, perfect gerund, that-clause with past or past perfect), so the checker must accept all of them. The prompt does not say which pattern is being practised. 'your phone' must become 'my phone'. Learners who keep 'your' will be marked wrong, but that shift is a reasonable thing to test.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r2b-002",
+  "answer": "My sister advised me to see a doctor about my cough.",
+  "other_correct": ["My sister advised me to see a doctor about the cough.", "My sister advised me to see a doctor about that cough.", "My sister advised me that I should see a doctor about my cough.", "My sister advised me that I should see a doctor about the cough.", "My sister advised seeing a doctor about my cough.", "My sister advised that I (should) see a doctor about my cough.", "My sister advised me to go and see a doctor about my cough."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The prompt does not say what to do with 'that cough' (my / the / that). All three are acceptable and the checker must accept each one. It also does not say whether 'really' should stay ('strongly advised' or 'really advised' would capture it). With the given start, 'advised me to' is the obvious pattern, but 'advised that I should' and 'advised seeing' are also correct and must be accepted.",
+  "level_problem": "Fairly easy for B2.2 (advise + object + to-infinitive is B1).",
+  "sense_problem": ""
+ }
+]

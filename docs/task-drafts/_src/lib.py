@@ -10,7 +10,8 @@ tipiska padodas pieder latviski angliski nosauktu pateicas tos pa draugi abos vi
 LV_BY_FILE = {"twins-3.csv": set("""viss ierodas neder notikumu papildu tu izlemtu rakstura programmas ievada doties kam lija patika sekas programmu apgalvojuma lieka mums patiesa personai pretstats sava viņai viņš tagad kurš tomēr palikām nepalūdza adresātu adresāts pagātne past simple""".split()),
               "twins-2.csv": set('''aizliegums apgalvojuma atgriezusies atvainoties diskusija ieraksti ievada ilgst izsaka izveidot maina mainoties noteiktu notikumam notikumu otrs pabeigtam pabeigto periodam pieredzi sekas uzsver vakardienas vietai visu ziemas pastaiga past simple continuous present perfect'''.split())}   # the English tense names are the Latvian terms (docs/LATVIAN-TERMS.md)
 LV_BY_FILE["learn-drag-3.csv"] = LV_BY_FILE["twins-3.csv"]
-LV_BY_FILE["a2-rel-might-1.csv"] = set("neliek saskan izpaliek visi nolieguma".split())   # A2.2 draft of 14 November   # the learning tasks reuse the batch-3 explanations
+LV_BY_FILE["a2-rel-might-1.csv"] = set("neliek saskan izpaliek visi nolieguma".split())   # A2.2 draft of 14 November
+LV_BY_FILE["pairs-1.csv"] = set("vienreiz Vienreiz jaunu laikam noticis noteikti izdevās konkrētā situācijā norāda sekām sākuma brīdis".split())   # form pairs, 14 November   # the learning tasks reuse the batch-3 explanations
 LV_BY_FILE["learn-drag-4.csv"] = set("visa apgalvojuma".split()) | LV_BY_FILE["twins-3.csv"]
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics", "answer notes"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners

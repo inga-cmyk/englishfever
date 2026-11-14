@@ -1,0 +1,1189 @@
+[
+ {
+  "id": "r1-001",
+  "answer": "They don't play tennis on Sundays.",
+  "other_correct": [
+   "They do not play tennis on Sundays."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-002",
+  "answer": "The train to Riga leaves at 7.30 every morning. The film starts at eight and finishes at ten.",
+  "other_correct": [
+   "Any two present-simple timetable sentences, e.g. 'The shop opens at nine and closes at six.', 'Our English class begins at 6 pm on Mondays.'"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Does not say which form to use (present simple for timetables), yet the app checks forms. 'A shop' has opening hours, not a timetable.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-003",
+  "answer": "If I had seen the sign, I wouldn't have parked there and I wouldn't have got a fine.",
+  "other_correct": [
+   "If I'd seen the sign, I wouldn't have parked there.",
+   "If I had seen the sign, I wouldn't have got a fine.",
+   "If I had seen the sign, I wouldn't have parked there and got a fine.",
+   "If I had seen the sign, I would not have parked there.",
+   "... wouldn't have gotten a fine (American)",
+   "If I had seen the sign, I would have parked somewhere else."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'Imagine it happened differently' is vague, and the prompt has two results (parked, got a fine), so many valid sentences are possible. A typed checker must accept all of them.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-004",
+  "answer": "If I'd have known about the traffic, I would've left earlier.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-005",
+  "answer": [
+   "had learned",
+   "would be"
+  ],
+  "other_correct": [
+   [
+    "had learnt",
+    "would be"
+   ],
+   [
+    "'d learned",
+    "'d be"
+   ],
+   [
+    "had learned",
+    "might be"
+   ],
+   [
+    "had learned",
+    "could be"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-006",
+  "answer": "where I worked",
+  "other_correct": [
+   "where I work (no backshift, still true; not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'where I work did' is not a believable learner mistake."
+ },
+ {
+  "id": "r1-007",
+  "answer": "He asked me what time was it.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-008",
+  "answer": [
+   "on"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-009",
+  "answer": "My sister advised me to see a doctor about my cough.",
+  "other_correct": [
+   "My sister told me (that) I really should see a doctor about my cough.",
+   "My sister said (that) I should see a doctor about my cough.",
+   "My sister urged me to see a doctor about my cough.",
+   "My sister recommended that I (should) see a doctor about my cough.",
+   "My sister told me to see a doctor about my cough."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'Say what my sister did' is vague: it does not say a reporting verb (advise) is wanted, so many different correct sentences are possible for a typed answer.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-010",
+  "answer": "Would you mind telling me how long the repair will take?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-011",
+  "answer": "Could you tell me why the order didn't arrive?",
+  "other_correct": [
+   "Do you know why the order didn't arrive?",
+   "I wonder why the order didn't arrive.",
+   "Can you tell me why the order hasn't arrived?",
+   "I'd like to know why the order didn't arrive.",
+   "Could you tell me why the order did not arrive?"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'Make it indirect' gives no opening phrase, so the answer is completely open for a typed task.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-012",
+  "answer": "I'd like to know where did you go.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-013",
+  "answer": "The bread are baked every morning.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-014",
+  "answer": "What do your friends play?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-015",
+  "answer": [
+   "who"
+  ],
+  "other_correct": [
+   "that (not a card)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-016",
+  "answer": "which",
+  "other_correct": [
+   "that (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-017",
+  "answer": "that",
+  "other_correct": [
+   "which (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-018",
+  "answer": "The man who fixed my car was very kind.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-019",
+  "answer": "I need a laptop that is light.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-020",
+  "answer": "live",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-021",
+  "answer": "goes",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-022",
+  "answer": "I know a woman which speaks five languages.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-023",
+  "answer": [
+   "who"
+  ],
+  "other_correct": [
+   [
+    "that"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-024",
+  "answer": [
+   "that"
+  ],
+  "other_correct": [
+   [
+    "which"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-025",
+  "answer": [
+   "who"
+  ],
+  "other_correct": [
+   [
+    "that"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-026",
+  "answer": [
+   "that"
+  ],
+  "other_correct": [
+   [
+    "which"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-027",
+  "answer": [
+   "who"
+  ],
+  "other_correct": [
+   [
+    "that"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-028",
+  "answer": "I have a cousin who works in a hotel.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-029",
+  "answer": "We visited a museum which has old cars.",
+  "other_correct": [
+   "We visited a museum that has old cars.",
+   "We visited a museum which had old cars.",
+   "We visited a museum that had old cars.",
+   "We visited a museum with old cars.",
+   "We visited a museum, and it has old cars."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Does not say how to join (with which/that), so 'and' or 'with' also joins the sentences correctly.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-030",
+  "answer": "The app which helps me learn new words is free.",
+  "other_correct": [
+   "The app that helps me learn new words is free.",
+   "The app, which is free, helps me learn new words.",
+   "The app which is free helps me learn new words.",
+   "The app helps me learn new words, and it is free."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Does not say how to join or which sentence becomes the relative clause; several structures are correct.",
+  "level_problem": "Relative clause inside the subject is a step harder than the other A2.2 items (all others add the clause at the end).",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-031",
+  "answer": "I have a neighbour who plays the piano.",
+  "other_correct": [
+   "I have the neighbour who plays a piano. (grammatical but unnatural)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-032",
+  "answer": "We stayed in a flat that had a garden.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-033",
+  "answer": "She wants a job which pays well.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-034",
+  "answer": "My uncle has a shop that sells bikes.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-035",
+  "answer": "She met a man who makes furniture.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-036",
+  "answer": [
+   "who",
+   "speaks"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-037",
+  "answer": [
+   "which"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-038",
+  "answer": [
+   "work"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-039",
+  "answer": [
+   [
+    "A baker is a person",
+    "who makes bread."
+   ],
+   [
+    "A fridge is a machine",
+    "which keeps food cold."
+   ],
+   [
+    "A tourist is someone",
+    "who travels for fun."
+   ],
+   [
+    "A map is a picture",
+    "which shows roads and towns."
+   ]
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'A map is a picture' is a slightly odd definition (a drawing/plan)."
+ },
+ {
+  "id": "r1-040",
+  "answer": "rain",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-041",
+  "answer": "She may be at home now.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-042",
+  "answer": "might",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-043",
+  "answer": "might",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-044",
+  "answer": "Maybe it will might snow tonight.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-045",
+  "answer": "Ask Tom. He might know the answer.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-046",
+  "answer": [
+   "be"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-047",
+  "answer": "may",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-048",
+  "answer": [
+   "might"
+  ],
+  "other_correct": [
+   [
+    "may"
+   ],
+   [
+    "could"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-049",
+  "answer": [
+   "might"
+  ],
+  "other_correct": [
+   [
+    "may"
+   ],
+   [
+    "could"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-050",
+  "answer": [
+   "not be"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-051",
+  "answer": [
+   "might"
+  ],
+  "other_correct": [
+   [
+    "may"
+   ],
+   [
+    "could"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-052",
+  "answer": [
+   "might"
+  ],
+  "other_correct": [
+   [
+    "may"
+   ],
+   [
+    "could"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-053",
+  "answer": "The concert tickets might be sold out.",
+  "other_correct": [
+   "The concert tickets might have sold out."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-054",
+  "answer": "We might not finish the project today.",
+  "other_correct": [
+   "We mightn't finish the project today. (British, rare)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-055",
+  "answer": "She may know Anna.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-056",
+  "answer": "The café might be busy today.",
+  "other_correct": [
+   "Today the café might be busy."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-057",
+  "answer": "I may not have time for lunch.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-058",
+  "answer": "They might move to another city.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-059",
+  "answer": "You might need a warm jacket.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-060",
+  "answer": "My phone might not work in the mountains.",
+  "other_correct": [
+   "In the mountains my phone might not work."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-061",
+  "answer": [
+   "might",
+   "snow"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-062",
+  "answer": [
+   "not",
+   "join"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-063",
+  "answer": [
+   "might",
+   "like"
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-064",
+  "answer": [
+   [
+    "It will rain.",
+    "I'm sure about the rain."
+   ],
+   [
+    "She might call.",
+    "Perhaps she will call."
+   ],
+   [
+    "He won't come.",
+    "I'm sure he will stay at home."
+   ],
+   [
+    "They might not win.",
+    "Perhaps they will lose."
+   ]
+  ],
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'I'm sure about the rain' is unnatural; 'He won't come' does not mean 'he will stay at home' (he may go elsewhere); 'might not win' = 'perhaps they will lose' ignores a draw."
+ },
+ {
+  "id": "r1-065",
+  "answer": "He asked me did I like the job.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-066",
+  "answer": "She is used to get up early.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-067",
+  "answer": "I decided to go home early.",
+  "other_correct": [
+   "I've decided to go home early.",
+   "I have decided to go home early.",
+   "I decided that I would go home early."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Unclear what to do: no tense or pattern is given ('decide' could be used in many ways), and 'decide' is not marked like other key words.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-068",
+  "answer": "Why is she crying?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for B1.1: a present continuous Why-question is A1/A2.",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-069",
+  "answer": "Should we leave before it gets dark?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-070",
+  "answer": "can't",
+  "other_correct": "",
+  "wrong_options_that_fit": [
+   "mustn't is only marginal: American English uses 'must not' for negative deduction (e.g. 'They must not be home'); fine for a British-English course, but a careful AmE speaker might accept it"
+  ],
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-071",
+  "answer": "must",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-072",
+  "answer": "can't",
+  "other_correct": "",
+  "wrong_options_that_fit": [
+   "mustn't is only marginal: American English uses 'must not' for negative deduction (e.g. 'They must not be home'); fine for a British-English course, but a careful AmE speaker might accept it"
+  ],
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-073",
+  "answer": "must",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-074",
+  "answer": "can't",
+  "other_correct": "",
+  "wrong_options_that_fit": [
+   "mustn't is only marginal: American English uses 'must not' for negative deduction (e.g. 'They must not be home'); fine for a British-English course, but a careful AmE speaker might accept it"
+  ],
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-075",
+  "answer": "can't",
+  "other_correct": "",
+  "wrong_options_that_fit": [
+   "mustn't is only marginal: American English uses 'must not' for negative deduction (e.g. 'They must not be home'); fine for a British-English course, but a careful AmE speaker might accept it"
+  ],
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-076",
+  "answer": "during",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-077",
+  "answer": "while",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-078",
+  "answer": "for",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-079",
+  "answer": "during",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-080",
+  "answer": "While",
+  "other_correct": [
+   "As (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-081",
+  "answer": "during",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-082",
+  "answer": "by",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-083",
+  "answer": "until",
+  "other_correct": [
+   "till (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-084",
+  "answer": "until",
+  "other_correct": [
+   "till (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-085",
+  "answer": "by",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-086",
+  "answer": "since",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-087",
+  "answer": "By",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-088",
+  "answer": "was able to",
+  "other_correct": [
+   "managed to (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-089",
+  "answer": "were able to",
+  "other_correct": [
+   "managed to (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-090",
+  "answer": "managed to",
+  "other_correct": [
+   "was able to (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-091",
+  "answer": "were able to",
+  "other_correct": [
+   "managed to (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-092",
+  "answer": "managed to",
+  "other_correct": [
+   "were able to (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-093",
+  "answer": "could",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-094",
+  "answer": "Despite",
+  "other_correct": [
+   "In spite of (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-095",
+  "answer": "Although",
+  "other_correct": [
+   "Even though / Though (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-096",
+  "answer": "despite",
+  "other_correct": [
+   "in spite of (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-097",
+  "answer": "although",
+  "other_correct": [
+   "even though (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-098",
+  "answer": "Despite",
+  "other_correct": [
+   "In spite of (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-099",
+  "answer": "However",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-100",
+  "answer": "because of",
+  "other_correct": [
+   "due to (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-101",
+  "answer": "because",
+  "other_correct": [
+   "as / since (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-102",
+  "answer": "so",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-103",
+  "answer": "because of",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-104",
+  "answer": "because",
+  "other_correct": [
+   "as (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r1-105",
+  "answer": "because",
+  "other_correct": [
+   "as (not offered)"
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

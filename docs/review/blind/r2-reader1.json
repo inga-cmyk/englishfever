@@ -1,0 +1,47 @@
+[
+ {
+  "id": "r2-001",
+  "answer": "Max denied taking my phone.",
+  "other_correct": ["Max denied having taken my phone.", "Max denied that he had taken my phone.", "Max denied that he took my phone.", "Max denied taking her phone.", "Max denied taking his phone.", "Max denied taking your phone.", "Max denied taking the phone."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Who 'your' refers to is not said, so 'my/her/his/the phone' are all possible; the checker must accept them.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r2-002",
+  "answer": "My sister advised me to see a doctor about my cough.",
+  "other_correct": ["My sister advised me to go and see a doctor about my cough.", "My sister advised me to see a doctor about that cough.", "My sister advised me to see a doctor about the cough.", "My sister advised me to really see a doctor about my cough.", "My sister advised that I (should) see a doctor about my cough.", "My sister advised seeing a doctor about my cough.", "My sister advised him/her/us to see a doctor about his/her/our cough."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The listener is not named, so the object (me/him/her) and possessive (my/his/her/that) are open; many variants must be accepted.",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r2-003",
+  "answer": "The elderly need more care.",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r2-004",
+  "answer": "Why is she crying?",
+  "other_correct": "",
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "r2-005",
+  "answer": "Leo denied sending that email to the whole company.",
+  "other_correct": ["Leo denied having sent that email to the whole company.", "Leo denied sending the email to the whole company.", "Leo denied that he had sent that email to the whole company.", "Leo denied that he sent the email to the whole company.", "Leo denied being the one who sent that email to the whole company.", "Leo denied that it was him who had sent that email to the whole company.", "Leo denied that it had been him who sent the email to the whole company."],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The cleft 'It wasn't me who...' allows many correct reports (gerund, perfect gerund, that-clause, 'being the one who'); the checker must accept them.",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

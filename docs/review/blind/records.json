@@ -84,6 +84,11 @@
 "round": "r1",
 "task": "r1-085"
 },
+"1ef5d0427e41fc6a": {
+"gate_key": "rep_questions | B1.2 | order | 'Can the shop deliver on Sunday?'\nPut the words in order. | he asked if the shop could deliver on sunday",
+"round": "r4b",
+"task": "r4b-004"
+},
 "1fbb99675c7661bf": {
 "gate_key": "ind_polite | B1.2 | order | 'How much are the tickets?'\nPut the words in order to make a question. | do you know how much the tickets are",
 "round": "r4",
@@ -178,6 +183,11 @@
 "gate_key": "ind_polite | B1.2 | order | 'Where is the car park?'\nPut the words in order to make a question. | do you know where the car park is",
 "round": "r4",
 "task": "r4-048"
+},
+"366d805fb82584e5": {
+"gate_key": "rep_questions | B1.2 | text | 'Have you finished?'\nFinish the sentence: He asked me if … | ",
+"round": "r4b",
+"task": "r4b-002"
 },
 "3753e90a9c0a6989": {
 "gate_key": "rep_questions | B1.2 | mcq | Choose the correct option: 'Where do you work?' She asked me ___. | where I worked",
@@ -279,6 +289,11 @@
 "round": "r1",
 "task": "r1-037"
 },
+"6032f473a4031557": {
+"gate_key": "rep_questions | B1.2 | order | 'When does the bus usually come?'\nPut the words in order. | she asked me when the bus usually came",
+"round": "r4b",
+"task": "r4b-001"
+},
 "617efd301e5eb820": {
 "gate_key": "more_modals | A2.2 | gap | She may ___ ___ the meeting today. | ",
 "round": "r1",
@@ -288,6 +303,11 @@
 "gate_key": "rep_questions | B1.2 | text | 'Where is the manager?'\nFinish the sentence: She asked where … | ",
 "round": "r4",
 "task": "r4-017"
+},
+"64280d5f6aa0cae5": {
+"gate_key": "ind_polite | B1.2 | mcq | 'Where is the library?'\nChoose the correct option: Can you tell me where ___? | the library is",
+"round": "r4b",
+"task": "r4b-007"
 },
 "6431518d1a0b7623": {
 "gate_key": "present_simple_passive | A2.2 | mcq | Which sentence is NOT correct? | The bread are baked every morning.",
@@ -358,6 +378,11 @@
 "gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | She may be at home now.",
 "round": "r1",
 "task": "r1-041"
+},
+"78480ac5c5a5e1d9": {
+"gate_key": "ind_polite | B1.2 | text | 'How much is this jacket?'\nFinish the sentence: Could you tell me how much … | ",
+"round": "r4b",
+"task": "r4b-006"
 },
 "7997813cb6b04732": {
 "gate_key": "rep_questions | B1.2 | gap | 'Have you eaten?'\nShe asked me if ___ ___ ___ . | ",
@@ -533,6 +558,11 @@
 "gate_key": "rep_questions | B1.2 | text | 'What time does the film start?'\nFinish the sentence: He asked what time … | ",
 "round": "r4",
 "task": "r4-005"
+},
+"a5ea14f973e677eb": {
+"gate_key": "rep_questions | B1.2 | text | 'Why are you late?'\nFinish the sentence: The teacher asked us why … | ",
+"round": "r4b",
+"task": "r4b-005"
 },
 "a66e3a0ed0621726": {
 "gate_key": "ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ",
@@ -763,5 +793,10 @@
 "gate_key": "ind_polite | B1.1 | text | 'What time does the bus leave?'\nFinish the sentence: Could you tell me what time … | ",
 "round": "r4",
 "task": "r4-033"
+},
+"ffb09da54dfba264": {
+"gate_key": "rep_questions | B1.2 | text | 'Can you help me?'\nFinish the sentence: She asked me if … | ",
+"round": "r4b",
+"task": "r4b-003"
 }
 }

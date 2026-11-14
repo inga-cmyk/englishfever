@@ -21,12 +21,12 @@ mc(W, L, 2, "Choose the correct option: My phone is so slow. I wish it ___ faste
 gp(W, L, 3, "I wish I ___ how to cook. (know)", "knew", *W_EN)
 gp(W, L, 3, "My flat is tiny. I wish it ___ bigger. (be)", "were | was", *W_BE)
 gp(W, L, 3, "If only I ___ a car! The bus takes ages. (have)", "had", *W_EN)
-gp(W, L, 3, "I wish my sister ___ nearer. (live)", "lived | could live", *W_EN)
+gp(W, L, 3, "I wish my sister ___ nearer. (live)", "lived | could live | would live", *W_EN)
 gp(W, L, 3, "I can't dance. I wish I ___ dance.", "could | was able to | were able to", *W_EN)
 # whole sentence (3)
 tx(W, L, 4, "Start with *I wish*: I don't speak French.", "I wish I spoke French. | I wish I could speak French. | I wish I knew French.", *W_EN)
 tx(W, L, 4, "Start with *If only*: I don't have enough time.", "If only I had enough time. | If only I had more time.", *W_EN)
-gp(W, L, 3, "My boss is very strict. I wish he ___ more relaxed. (be)", "were | was", *W_BE)   # blind check r8: the open rewrite had too many answers
+gp(W, L, 3, "My boss is very strict. I wish he ___ more relaxed. (be)", "were | was | could be | would be", *W_BE)   # blind check r8: the open rewrite had too many answers
 # word order (5)
 od(W, L, 3, "Put the words in order.", "i wish i had more free time", *W_EN)
 od(W, L, 3, "Put the words in order.", "if only we lived closer", *W_EN)
@@ -65,7 +65,7 @@ gp(R, L, 3, "She'd rather ___ a film than read a book. (watch)", "watch", *R_EN)
 # whole sentence (3)
 tx(R, L, 4, "Start with *I'd rather*: I prefer to cook at home.", "I'd rather cook at home. | I would rather cook at home.", *R_EN)
 tx(R, L, 4, "Start with *I'd rather not*: I don't want to drive tonight.", "I'd rather not drive tonight.", *R_EN)
-tx(R, L, 4, "Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains.", "I'd rather go to the mountains than to the beach. | I'd rather go to the mountains than go to the beach. | I would rather go to the mountains than to the beach. | I would rather go to the mountains than go to the beach. | I'd rather go to the mountains. | I would rather go to the mountains. | I'd rather not go to the beach. | I would rather not go to the beach.", *R_EN)   # blind check r8: the old one gave the answer away
+tx(R, L, 4, "Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains.", "I'd rather go to the mountains than to the beach. | I'd rather go to the mountains than the beach. | I would rather go to the mountains than the beach. | I'd rather go to the mountains, not to the beach. | I'd rather not go to the beach. I'd rather go to the mountains. | I'd rather go to the mountains than go to the beach. | I would rather go to the mountains than to the beach. | I would rather go to the mountains than go to the beach. | I'd rather go to the mountains. | I would rather go to the mountains. | I'd rather not go to the beach. | I would rather not go to the beach.", *R_EN)   # blind check r8: the old one gave the answer away
 # word order (5)
 od(R, L, 3, "Put the words in order.", "i'd rather stay in tonight", *R_EN, also=["tonight i'd rather stay in"])
 od(R, L, 3, "Put the words in order to make a question.", "would you rather have tea or coffee", *R_EN, also=["would you rather have coffee or tea"])

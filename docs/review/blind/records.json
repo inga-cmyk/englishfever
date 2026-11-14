@@ -84,6 +84,11 @@
 "round": "r8",
 "task": "r8-009"
 },
+"0e0d3625f7e0305b": {
+"gate_key": "cond_advanced | B1.2 | gap | I can't dance. I wish I ___ dance. | ",
+"round": "r8b",
+"task": "r8b-002"
+},
 "15bf88bd0a725a4a": {
 "gate_key": "rep_questions | B2.1 | text | 'How long have you been learning English?'\nFinish the sentence: She asked me how long … | ",
 "round": "r4",
@@ -273,6 +278,11 @@
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
 "round": "r1",
 "task": "r1-004"
+},
+"38d8225da4ccddb2": {
+"gate_key": "cond_advanced | B1.2 | match | Match each fact with the wish. | I don't have a car. = I wish I had one. ; I can't sing. = I wish I could sing. ; My room is small. = I wish it were bigger. ; I don't know her name. = I wish I knew her name.",
+"round": "r8b",
+"task": "r8b-006"
 },
 "38ffd4e6c9e6eae4": {
 "gate_key": "cond_advanced | B1.2 | order | Put the words in order. | she wishes she could drive",
@@ -484,6 +494,11 @@
 "round": "r1b",
 "task": "r1b-007"
 },
+"6fd06ec7d07e272b": {
+"gate_key": "cond_advanced | B1.2 | gap | My boss is very strict. I wish he ___ more relaxed. (be) | ",
+"round": "r8b",
+"task": "answers added"
+},
 "729b169818761aad": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: He was late for work ___ he overslept. | because",
 "round": "r1",
@@ -664,6 +679,11 @@
 "round": "r1",
 "task": "r1-047"
 },
+"9a083ca9e8ba3dfc": {
+"gate_key": "cond_advanced | B1.2 | text | Start with *I wish*: I don't speak French. | ",
+"round": "r8b",
+"task": "r8b-003"
+},
 "9a36d61076e012a9": {
 "gate_key": "relative_clauses | A2.2 | gap | I have a friend ___ lives in Canada. | ",
 "round": "r1",
@@ -774,6 +794,11 @@
 "round": "r1",
 "task": "r1-050"
 },
+"aca7b5b1fdda6424": {
+"gate_key": "cond_advanced | B1.2 | gap | If only it ___ sunny today! | ",
+"round": "r8b",
+"task": "r8b-005"
+},
 "ad9319b3c112e976": {
 "gate_key": "unreal_time | B1.2 | gap | I'd rather ___ at home than go out. (eat) | ",
 "round": "r8",
@@ -823,6 +848,11 @@
 "gate_key": "more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ",
 "round": "r1",
 "task": "r1-046"
+},
+"b68362368253d178": {
+"gate_key": "unreal_time | B1.2 | text | Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains. | ",
+"round": "r8b",
+"task": "answers added"
 },
 "b7414049cf30deff": {
 "gate_key": "rep_questions | B2.1 | mcq | 'How long have you worked here?'\nChoose the correct option: She asked how long ___ there. | I had worked",
@@ -943,6 +973,11 @@
 "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The fire was big, but everyone ___ get out of the building. | was able to",
 "round": "r1",
 "task": "r1-088"
+},
+"db8bf62666b1f1a8": {
+"gate_key": "cond_advanced | B1.2 | gap | I wish my sister ___ nearer. (live) | ",
+"round": "r8b",
+"task": "answers added"
 },
 "dbe380d14ea94f1e": {
 "gate_key": "cond_advanced | B1.2 | text | Start with *If only*: I don't have enough time. | ",

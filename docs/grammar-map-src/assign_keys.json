@@ -13826,5 +13826,17 @@
 "rep_verbs | B2.2 | text | My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*. | ": [
 "rv_obj_to",
 "read"
+],
+"rep_verbs | B2.2 | text | Anna: 'Did you take my phone?'\nMax: 'No, I didn't take your phone.'\nFinish the sentence: Max denied … | ": [
+"rv_ing",
+"read"
+],
+"rep_verbs | B2.2 | text | Peter: 'I don't feel very well.'\nSarah: 'You should see a doctor.'\nFinish the sentence: Sarah advised … | ": [
+"rv_obj_to",
+"read"
+],
+"rep_verbs | B2.2 | text | Anna: 'Who sent that email to the whole company?'\nLeo: 'It wasn't me!'\nFinish the sentence: Leo denied … | ": [
+"rv_ing",
+"read"
 ]
 }

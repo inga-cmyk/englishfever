@@ -1013,6 +1013,7 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 
 /* Preserve dialogue turns (A/B) in both typed and word-bank gaps. */
 .q, .q-sample { white-space: pre-line; }
+.q-dialog { margin-bottom: 2px; }   /* a mini dialogue: one speaker per line (teacher, 14 November) */
 
 .task .blank:disabled { opacity: 1; color: var(--text); -webkit-text-fill-color: var(--text); }
 /* placement result: what you already know, where we start (teacher, 12 November, S3 A) */

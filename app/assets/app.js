@@ -948,8 +948,9 @@
 
   /** The task as the teacher needs to judge it: text, key, wrong options. */
   function promptNodes(q) { // instruction on one line, the sample sentence below in italics (as learners see it)
-    var m = PROMPT_SPLIT.exec(q || '');
-    return m ? [h('span', null, UI.rich(UI.markForms(m[1])), ':'), h('br'), h('em', null, m[2])] : [q || ''];
+    var lines = String(q || '').split('\n'), last = lines.pop(), pre = lines.map(function (l) { return h('div', { class: 'q-dialog' }, l); });   // a mini dialogue first
+    var m = PROMPT_SPLIT.exec(last || '');
+    return pre.concat(m ? [h('span', null, UI.rich(UI.markForms(m[1])), ':'), h('br'), h('em', null, m[2])] : [last || '']);
   }
 
   function taskHead(t) {
@@ -1258,6 +1259,9 @@
     }
     var promptSample = promptSplit ? promptSplit[2] : (it.q || '');
     function setPrompt(el, text) { // plain prompt text, with the instruction split off when there is one
+      // a mini dialogue (teacher, 14 November): every speaker on a new line, then the instruction on the last line
+      var lines = String(text || '').split('\n');
+      if (lines.length > 1) { text = lines.pop(); lines.forEach(function (l) { el.appendChild(h('div', { class: 'q-dialog' }, l)); }); }
       var m = SPLIT.exec(text || '');
       if (!m) { el.textContent = text; return; }
       el.appendChild(h('span', { class: 'q-instr' }, UI.rich(UI.markForms(m[1])), ':')); el.appendChild(h('br')); el.appendChild(h('em', { class: 'q-sample' }, m[2]));

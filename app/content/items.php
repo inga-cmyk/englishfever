@@ -7236,26 +7236,62 @@ return json_decode(<<<'EF_JSON_END'
 "why": "A reporting verb shows what the speaker did: *promise, warn, suggest, admit.*"
 },
 {
-"id": "rv-B22-3a-r5",
+"id": "rv-B22-3a-r6",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Max said to you: 'I didn't take your phone.' Start with *Max denied*.",
+"q": "Anna: 'Did you take my phone?'\nMax: 'No, I didn't take your phone.'\nFinish the sentence: Max denied …",
 "answers": [
 [
-"Max denied taking my phone.",
-"Max denied taking your phone.",
-"Max denied that he had taken my phone.",
-"Max denied having taken my phone.",
-"Max denied that he took my phone.",
-"Max denied that he had taken your phone.",
+"Max denied taking her phone.",
+"taking her phone.",
+"Max denied having taken her phone.",
+"having taken her phone.",
+"Max denied that he had taken her phone.",
+"that he had taken her phone.",
+"Max denied that he took her phone.",
+"that he took her phone.",
+"Max denied he had taken her phone.",
+"he had taken her phone.",
+"Max denied he took her phone.",
+"he took her phone.",
+"Max denied taking Anna's phone.",
+"taking Anna's phone.",
+"Max denied having taken Anna's phone.",
+"having taken Anna's phone.",
+"Max denied that he had taken Anna's phone.",
+"that he had taken Anna's phone.",
+"Max denied that he took Anna's phone.",
+"that he took Anna's phone.",
+"Max denied he had taken Anna's phone.",
+"he had taken Anna's phone.",
+"Max denied he took Anna's phone.",
+"he took Anna's phone.",
+"Max denied taking it.",
+"taking it.",
+"Max denied having taken it.",
+"having taken it.",
+"Max denied that he had taken it.",
+"that he had taken it.",
+"Max denied that he took it.",
+"that he took it.",
+"Max denied he had taken it.",
+"he had taken it.",
+"Max denied he took it.",
+"he took it.",
 "Max denied taking the phone.",
-"Max denied that he had taken the phone.",
-"Max denied that he took the phone.",
+"taking the phone.",
 "Max denied having taken the phone.",
-"Max denied he had taken my phone.",
-"Max denied he took my phone."
+"having taken the phone.",
+"Max denied that he had taken the phone.",
+"that he had taken the phone.",
+"Max denied that he took the phone.",
+"that he took the phone.",
+"Max denied he had taken the phone.",
+"he had taken the phone.",
+"Max denied he took the phone.",
+"he took the phone."
 ]
 ],
 "why": "*deny* + -ing, or *deny* + *that* + clause.",
@@ -7450,123 +7486,109 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r10",
+"id": "rv-C12-3a-r11",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "My sister said to me: 'You really should see a doctor about that cough.' Start with *My sister advised*.",
+"q": "Peter: 'I don't feel very well.'\nSarah: 'You should see a doctor.'\nFinish the sentence: Sarah advised …",
 "answers": [
 [
-"My sister advised me I should see a doctor about that cough.",
-"My sister advised me I really should see a doctor about that cough.",
-"My sister advised me I should see a doctor about my cough.",
-"My sister advised me I really should see a doctor about my cough.",
-"My sister advised me I should see a doctor about the cough.",
-"My sister advised me I really should see a doctor about the cough.",
-"My sister advised me to see a doctor about that cough.",
-"My sister advised seeing a doctor about that cough.",
-"My sister advised that I see a doctor about that cough.",
-"My sister advised that I should see a doctor about that cough.",
-"My sister advised me to see a doctor about my cough.",
-"My sister advised seeing a doctor about my cough.",
-"My sister advised that I see a doctor about my cough.",
-"My sister advised that I should see a doctor about my cough.",
-"My sister advised me to see a doctor about the cough.",
-"My sister advised me to go to the doctor about that cough.",
-"My sister advised me to go to the doctor about my cough.",
-"My sister advised me that I should see a doctor about that cough.",
-"My sister advised me that I should really see a doctor about that cough.",
-"My sister advised me to really see a doctor about that cough.",
-"My sister advised me to go and see a doctor about that cough.",
-"My sister advised me that I should see a doctor about my cough.",
-"My sister advised me that I should really see a doctor about my cough.",
-"My sister advised me to really see a doctor about my cough.",
-"My sister advised me to go and see a doctor about my cough.",
-"My sister strongly advised me to see a doctor about that cough.",
-"My sister advised me that I really should see a doctor about that cough.",
-"My sister strongly advised me to see a doctor about my cough.",
-"My sister advised me that I really should see a doctor about my cough.",
-"My sister strongly advised me to see a doctor about the cough.",
-"My sister advised me that I should see a doctor about the cough.",
-"My sister advised me that I really should see a doctor about the cough."
+"Sarah advised him to see a doctor.",
+"him to see a doctor.",
+"Sarah advised Peter to see a doctor.",
+"Peter to see a doctor.",
+"Sarah advised him that he should see a doctor.",
+"him that he should see a doctor.",
+"Sarah advised Peter that he should see a doctor.",
+"Peter that he should see a doctor.",
+"Sarah advised him he should see a doctor.",
+"him he should see a doctor.",
+"Sarah advised Peter he should see a doctor.",
+"Peter he should see a doctor.",
+"Sarah advised that he should see a doctor.",
+"that he should see a doctor.",
+"Sarah advised that he see a doctor.",
+"that he see a doctor.",
+"Sarah advised seeing a doctor.",
+"seeing a doctor."
 ]
 ],
-"why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
+"why": "*advise* + person + *to* + base verb: *Sarah advised him to see a doctor.*",
 "hints": [],
 "answer_notes": [
 [
-"My sister advised seeing a doctor about that cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised him that he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised that I see a doctor about that cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"him that he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised that I should see a doctor about that cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised Peter that he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised seeing a doctor about my cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Peter that he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised that I see a doctor about my cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised him he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised that I should see a doctor about my cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"him he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I should see a doctor about that cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised Peter he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I should really see a doctor about that cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Peter he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I should see a doctor about my cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised that he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I should really see a doctor about my cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"that he should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I really should see a doctor about that cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised that he see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I really should see a doctor about my cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"that he see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I should see a doctor about the cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"Sarah advised seeing a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ],
 [
-"My sister advised me that I really should see a doctor about the cough.",
-"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
-"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+"seeing a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
 ]
 ],
-"why_lv": "*advise* + persona + *to* + pamatforma: *My sister advised me to see a doctor.*"
+"why_lv": "*advise* + persona + *to* + pamatforma: *Sarah advised him to see a doctor.*"
 },
 {
 "id": "rv-C12-4a-r3",

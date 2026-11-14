@@ -6879,7 +6879,8 @@ return json_decode(<<<'EF_JSON_END'
 "Correct too when the film has not started yet: the time is still true now.",
 "Arī pareizi, ja filma vēl nav sākusies: laiks joprojām ir patiess."
 ]
-]
+],
+"practice_only": true
 },
 {
 "id": "rq-B12-4a",
@@ -7754,7 +7755,8 @@ return json_decode(<<<'EF_JSON_END'
 "Palīgteikumā nav *does*: ... *where Anna lives*."
 ]
 ],
-"why_lv": "Netiešajā jautājumā *does* nav: *where Anna lives*."
+"why_lv": "Netiešajā jautājumā *does* nav: *where Anna lives*.",
+"practice_only": true
 },
 {
 "id": "ip-B11-4a",

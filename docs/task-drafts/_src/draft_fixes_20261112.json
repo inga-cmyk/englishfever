@@ -874,6 +874,204 @@
     "7": "*Unless* nozīmē *if not*, tāpēc pēc tā darbības vārds ir apstiprinājuma formā: *Unless we book today*. Pēc *unless* lieto tagadni, nevis *will*.",
     "9": "Join with unless: You hurry. You will miss the train."
    }
+  },
+  {
+   "match": [
+    "gap",
+    "She asked me where I ___ .",
+    "lived"
+   ],
+   "line": 192,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "He asked if I ___ help him.",
+    "could"
+   ],
+   "line": 193,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "She asked me what time the train ___ .",
+    "left"
+   ],
+   "line": 198,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "They wanted to know how much the tickets ___ .",
+    "cost"
+   ],
+   "line": 199,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "The teacher asked why we ___ late.",
+    "were"
+   ],
+   "line": 200,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "'Where do you live?' She asked me where I ___ . (live)",
+    "lived"
+   ],
+   "line": 201,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "'Have you finished?' He asked if I ___ . (finish)",
+    "had finished"
+   ],
+   "line": 202,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Report the question: 'Can you help me?' She asked if I ___ help her.",
+    "could | would"
+   ],
+   "line": 203,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "'What time is it?' He asked what time it ___ . (be)",
+    "was"
+   ],
+   "line": 204,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct option: She asked me where I ___ .",
+    "lived"
+   ],
+   "line": 214,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Do you know what time the film ___ ?",
+    "starts"
+   ],
+   "line": 229,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "I'd like to know how much ___ .",
+    "it costs"
+   ],
+   "line": 231,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Could you tell me why the shop ___ closed?",
+    "is"
+   ],
+   "line": 233,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Could you tell me how much this ___ ? (cost)",
+    "costs"
+   ],
+   "line": 235,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Do you know where the manager ___ ? (be)",
+    "is"
+   ],
+   "line": 236,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "I don't know what time the bus ___ . (leave)",
+    "leaves"
+   ],
+   "line": 237,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Can you tell me if there ___ a pharmacy near here? (be)",
+    "is"
+   ],
+   "line": 238,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct option: Do you know what time ___ ?",
+    "the shop closes"
+   ],
+   "line": 247,
+   "set": {
+    "11": "yes"
+   }
   }
  ],
  "b1-upgrades-1.csv": [
@@ -949,6 +1147,17 @@
     "3": "Write it about last night. Start with *Last night, while*: I'm cooking. At the same time, my brother is setting the table.",
     "4": "Last night, while I was cooking, my brother was setting the table. | Last night, while my brother was setting the table, I was cooking.",
     "9": "Join with while: I was cooking. My brother was setting the table."
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Choose the correct option: 'Where do you work?' She asked me where I ___ .",
+    "worked"
+   ],
+   "line": 53,
+   "set": {
+    "11": "yes"
    }
   }
  ],
@@ -1129,6 +1338,28 @@
    "set": {
     "3": "Put all the words in order. More than one answer is possible.",
     "5": "also accepted: I asked her if she could help"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "I'd like to know where you ___ last night.",
+    "went"
+   ],
+   "line": 34,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "He asked me what time ___ ___.",
+    "it / was"
+   ],
+   "line": 40,
+   "set": {
+    "11": "yes"
    }
   }
  ],
@@ -1335,6 +1566,50 @@
     "3": "It depends on ___ the budget is approved or not.",
     "9": "It depends on ___ the budget is approved."
    }
+  },
+  {
+   "match": [
+    "gap",
+    "The receptionist asked me where I ___ from. (be)",
+    "was"
+   ],
+   "line": 9,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "She asked me how long I ___ English. (study)",
+    "had been studying | had studied | 'd been studying | 'd studied"
+   ],
+   "line": 10,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Could you tell me what time the museum ___? (open)",
+    "opens | will be open | will open | is opening | is going to open"
+   ],
+   "line": 11,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "I'm not sure what time the meeting ___ . (start)",
+    "starts | will start"
+   ],
+   "line": 21,
+   "set": {
+    "11": "yes"
+   }
   }
  ],
  "a2-mistakes-1.csv": [
@@ -1480,6 +1755,30 @@
    ],
    "set": {
     "13": "The concert tickets might already be sold out. :: Correct too: *already* adds 'by now'. :: Arī pareizi: *already* = jau."
+   }
+  }
+ ],
+ "learn-drag-3.csv": [
+  {
+   "match": [
+    "gap",
+    "He asked whether or not ___ ___ coming.",
+    "I / was"
+   ],
+   "line": 16,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "Mr Ozols asked whether the invoices ___ ___ sent.",
+    "had / been"
+   ],
+   "line": 17,
+   "set": {
+    "11": "yes"
    }
   }
  ]

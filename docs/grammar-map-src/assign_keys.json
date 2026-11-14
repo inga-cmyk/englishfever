@@ -13838,5 +13838,197 @@
 "rep_verbs | B2.2 | text | Anna: 'Who sent that email to the whole company?'\nLeo: 'It wasn't me!'\nFinish the sentence: Leo denied … | ": [
 "rv_ing",
 "read"
+],
+"rep_questions | B1.2 | text | 'Where do you live?'\nFinish the sentence: She asked me where … | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | gap | 'Where do you work?'\nHe asked me where ___ ___ . | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | mcq | 'Where do you study?'\nChoose the correct option: She asked him where ___. | he studied": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | 'Where is your office?'\nPut the words in order. | she asked me where my office was": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | text | 'What time does the film start?'\nFinish the sentence: He asked what time … | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | gap | 'What time does the train leave?'\nShe asked me what time ___ ___ . | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | mcq | 'What time does the shop close?'\nChoose the correct option: He asked what time ___. | the shop closed": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | 'When does the bus come?'\nPut the words in order. | she asked me when the bus came": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | text | 'Have you finished?'\nFinish the sentence: He asked if … | ": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | gap | 'Have you eaten?'\nShe asked me if ___ ___ ___ . | ": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | mcq | 'Have you seen the film?'\nChoose the correct option: He asked me if ___ the film. | I had seen": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | order | 'Has the parcel arrived?'\nPut the words in order. | she asked if the parcel had arrived": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | text | 'Can you help me?'\nFinish the sentence: She asked if … | ": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | gap | 'Can you drive?'\nHe asked me if ___ ___ drive. | ": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | mcq | 'Can you swim?'\nChoose the correct option: She asked me if ___. | I could swim": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | order | 'Can the shop deliver on Sunday?'\nPut the words in order. | he asked if the shop could deliver on sunday": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | text | 'Where is the manager?'\nFinish the sentence: She asked where … | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | gap | 'Where is the station?'\nHe asked me where ___ ___ . | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | mcq | 'Where is the lift?'\nChoose the correct option: He asked where ___. | the lift was": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | 'Where are my keys?'\nPut the words in order. | she asked where her keys were": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B2.1 | text | 'How long have you been learning English?'\nFinish the sentence: She asked me how long … | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B2.1 | gap | 'How long have you lived here?'\nHe asked me how long ___ ___ ___ there. | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B2.1 | mcq | 'How long have you worked here?'\nChoose the correct option: She asked how long ___ there. | I had worked": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B2.1 | order | 'How long has the shop been open?'\nPut the words in order. | she asked how long the shop had been open": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | text | 'Why are you late?'\nFinish the sentence: The teacher asked why … | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | gap | 'Why is he angry?'\nShe asked me why ___ ___ angry. | ": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | mcq | 'Why are you tired?'\nChoose the correct option: He asked me why ___ tired. | I was": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | order | 'Why is the shop closed?'\nPut the words in order. | he asked why the shop was closed": [
+"rep_q_wh",
+"read"
+],
+"ind_polite | B1.1 | text | 'Where does Anna live?'\nFinish the sentence: Do you know where … | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | gap | 'Where does Tom work?'\nDo you know where ___ ___ ? | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | mcq | 'Where does your teacher live?'\nChoose the correct option: Do you know where ___? | your teacher lives": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | order | 'Where does Mark work?'\nPut the words in order to make a question. | do you know where mark works": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | text | 'What time does the bus leave?'\nFinish the sentence: Could you tell me what time … | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | gap | 'What time does the museum open?'\nCould you tell me what time ___ ___ ? | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | mcq | 'What time does the concert start?'\nChoose the correct option: Do you know what time ___? | the concert starts": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | order | 'What time does the bank close?'\nPut the words in order to make a question. | could you tell me what time the bank closes": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | text | 'How much is this jacket?'\nFinish the sentence: Could you tell me how much … | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | gap | 'How much does this lamp cost?'\nI'd like to know how much ___ ___ . | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | mcq | 'How much is the ticket?'\nChoose the correct option: Can you tell me how much ___? | the ticket is": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | order | 'How much are the tickets?'\nPut the words in order to make a question. | do you know how much the tickets are": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | text | 'Is there a pharmacy near here?'\nFinish the sentence: Can you tell me if … | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | gap | 'Is there a bank near here?'\nDo you know if ___ ___ a bank near here? | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | mcq | 'Is there a lift in this building?'\nChoose the correct option: Do you know if ___ a lift in this building? | there is": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | order | 'Is there a café near the station?'\nPut the words in order to make a question. | do you know if there is a café near the station": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | text | 'Where is the post office?'\nFinish the sentence: Do you know where … | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | gap | 'Where is the toilet?'\nCould you tell me where ___ ___ ? | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | mcq | 'Where is the library?'\nChoose the correct option: Can you tell me where ___? | the library is": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | order | 'Where is the car park?'\nPut the words in order to make a question. | do you know where the car park is": [
+"iq_wh",
+"read"
 ]
 }

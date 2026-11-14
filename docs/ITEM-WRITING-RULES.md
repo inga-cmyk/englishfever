@@ -134,3 +134,6 @@
 - Every corrected mistake stays as an example in `app/tests/bad_examples.json`. With `gate`: the test proves the gate still catches it. With `reader`: no script can catch it.
 - **Second reader.** Before a draft goes to the teacher, a different agent (not the writer) reads it with one job: for every task, try to find a second correct answer, a swappable pair, a wrong option that is correct English, and check each `reader` case in `bad_examples.json`. Its findings go into the review file next to the tasks.
 - **Every report ends in one of three:** a new gate, a new line in `bad_examples.json`, or a note why no rule is needed (the report was not a mistake).
+
+## Blind check (teacher, 14 November)
+- Every task the app serves is solved by two readers who do not see the key; a script compares them with the key and a judge decides every flag (`docs/BLIND-CHECK.md`, `tools/blind_check.py`). The readers also judge the instruction (natural, meaningful, nothing superfluous, nothing given away) and the fit to the level. Gate `blind`: a new or changed task without a record stops the packaging. The teacher sees only what the judge cannot decide.

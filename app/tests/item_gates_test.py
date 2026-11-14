@@ -8,7 +8,7 @@ breaks one of them stops this test, and the packaging with it.
 - bad_examples.json: old faulty tasks. Every one with a "gate" must still be caught by that gate, so a gate cannot be weakened
   unnoticed. Those with "reader" cannot be caught by a script: they are the cases the second reader of a draft looks for.
 A gate is a heuristic: when it flags a task that is fine, read it, then add it with --update; never loosen the task to pass."""
-import json, os, re, subprocess, sys, tempfile
+import hashlib, json, os, re, subprocess, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(os.path.dirname(HERE))
 BASE = os.path.join(HERE, "item_gates_baseline.json"); BAD = os.path.join(HERE, "bad_examples.json")
 
@@ -118,8 +118,27 @@ def g_point(i):   # 14 November (C1): the app knows the grammar point of every t
     return [] if i.get("point") else ["no grammar point: add the task to docs/grammar-map-src/assign_keys.json, run export.py, then app/authoring/build.py"]
 
 
+BLIND_FIELDS = ("skill", "level", "kind", "q", "correct", "wrong", "answers", "bank", "sentence", "pairs", "must", "model")
+
+
+def task_hash(i):
+    """What makes a task this task for the learner: text, answers, options, level. A change of one word needs a new blind check."""
+    level = "B2.2" if str(i.get("level", "")).startswith("C1") else i.get("level")
+    body = {k: i.get(k) for k in BLIND_FIELDS if i.get(k) is not None}
+    body["level"] = level
+    return hashlib.sha1(json.dumps(body, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
+
+
+_REC = os.path.join(ROOT, "docs", "review", "blind", "records.json")
+BLIND = json.load(open(_REC, encoding="utf-8")) if os.path.isfile(_REC) else {}
+
+
+def g_blind(i):   # 14 November (docs/BLIND-CHECK.md): two readers solved the task without the key, a judge decided every flag
+    return [] if task_hash(i) in BLIND else ["no blind check: python3 tools/blind_check.py (docs/BLIND-CHECK.md)"]
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind}
 
 
 def key(i):

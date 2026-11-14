@@ -1,0 +1,1583 @@
+{
+ "r1-001": {
+  "hash": "80b99cfba86107e9",
+  "gate_key": "present_simple | A2.1 | text | Make it negative: They play tennis on Sundays. | ",
+  "src": "built-in",
+  "point": "ps_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "They don't play tennis on Sundays.",
+     "They do not play tennis on Sundays.",
+     "On sundays they don't play tennis.",
+     "On sundays they do not play tennis."
+    ]
+   ]
+  }
+ },
+ "r1-002": {
+  "hash": "1a226113aeadce44",
+  "gate_key": "present_simple | B1.1 | write | Write two sentences about a timetable: a train, a class, a shop or a film. | ",
+  "src": "built-in",
+  "point": "fut_timetable",
+  "key": {
+   "kind": "write",
+   "model": "My class starts at 9.00. It finishes at 11.30.",
+   "must": [
+    "Use a timetable verb with *at* and a time, such as *at nine*, *at 9.00* or *at noon*.",
+    "Write two sentences."
+   ]
+  }
+ },
+ "r1-003": {
+  "hash": "1886b6f78eb3353e",
+  "gate_key": "cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "If I had seen the sign, I wouldn't have parked there.",
+     "If I had seen the sign, I wouldn't have got a fine.",
+     "If I had seen the sign, I would not have got a fine.",
+     "If I had seen the sign, I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have been fined.",
+     "If I had seen the sign, I would not have parked there.",
+     "I wouldn't have parked there if I had seen the sign.",
+     "I wouldn't have got a fine if I had seen the sign.",
+     "I would not have got a fine if I had seen the sign.",
+     "I wouldn't have gotten a fine if I had seen the sign.",
+     "I wouldn't have been fined if I had seen the sign.",
+     "I would not have parked there if I had seen the sign."
+    ]
+   ]
+  }
+ },
+ "r1-004": {
+  "hash": "38430a41d99b424e",
+  "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I'd have known about the traffic, I would've left earlier.",
+   "wrong": [
+    "If I'd known about the traffic, I would've left earlier.",
+    "If I had known about the traffic, I would have left earlier.",
+    "Had I known about the traffic, I would have left earlier."
+   ]
+  }
+ },
+ "r1-005": {
+  "hash": "935dfa6f8ee09d21",
+  "gate_key": "cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | ",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had learned",
+     "had learnt",
+     "'d learned",
+     "'d learnt"
+    ],
+    [
+     "would be",
+     "'d be"
+    ]
+   ]
+  }
+ },
+ "r1-006": {
+  "hash": "cec30038191afcea",
+  "gate_key": "rep_questions | B1.2 | mcq | Choose the correct option: 'Where do you work?' She asked me ___. | where I worked",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "where I worked",
+   "wrong": [
+    "where did I work",
+    "where do I work",
+    "where I work did"
+   ]
+  }
+ },
+ "r1-007": {
+  "hash": "8f9749a7effe3e47",
+  "gate_key": "rep_questions | B2.1 | mcq | Which sentence is NOT correct? | He asked me what time was it.",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "He asked me what time was it.",
+   "wrong": [
+    "He asked me what time it was.",
+    "He asked me when the train left.",
+    "He asked me if I knew the way."
+   ]
+  }
+ },
+ "r1-008": {
+  "hash": "04ecb5bceb1010cc",
+  "gate_key": "rep_verbs | B2.2 | gap | 'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam. | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  }
+ },
+ "r1-009": {
+  "hash": "2d586a654b22fc73",
+  "gate_key": "rep_verbs | B2.2 | text | Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.' | ",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister urged me to see a doctor about that cough.",
+     "My sister told me to see a doctor about that cough.",
+     "My sister encouraged me to see a doctor about that cough.",
+     "My sister recommended that I see a doctor about that cough.",
+     "My sister recommended that I should see a doctor about that cough.",
+     "My sister suggested that I see a doctor about that cough.",
+     "My sister suggested that I should see a doctor about that cough.",
+     "My sister suggested seeing a doctor about that cough.",
+     "My sister suggested I see a doctor about that cough.",
+     "My sister suggested I should see a doctor about that cough.",
+     "My sister recommended seeing a doctor about that cough.",
+     "My sister recommended I see a doctor about that cough.",
+     "My sister recommended I should see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister said I should see a doctor about that cough.",
+     "My sister said that I should see a doctor about that cough.",
+     "My sister told me I should see a doctor about that cough.",
+     "My sister told me that I should see a doctor about that cough."
+    ]
+   ]
+  }
+ },
+ "r1-010": {
+  "hash": "2b9ec6ab18c22696",
+  "gate_key": "ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me how long the repair will take?",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "Would you mind telling me how long the repair will take?",
+   "wrong": [
+    "Would you mind telling me how long will the repair take?",
+    "Would you mind to tell me how long the repair will take?",
+    "Would you mind telling me how long does the repair take?"
+   ]
+  }
+ },
+ "r1-011": {
+  "hash": "9daf8d103a5c3673",
+  "gate_key": "ind_polite | B2.1 | text | Make it indirect: Why didn't the order arrive? | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you tell me why the order didn't arrive?",
+     "Do you know why the order didn't arrive?",
+     "Can you tell me why the order didn't arrive?",
+     "I'd like to know why the order didn't arrive.",
+     "Would you mind telling me why the order didn't arrive?",
+     "Could you please tell me why the order didn't arrive?",
+     "Do you happen to know why the order didn't arrive?",
+     "I wonder why the order didn't arrive.",
+     "I was wondering why the order didn't arrive.",
+     "Could you tell me why the order did not arrive?",
+     "Do you know why the order did not arrive?",
+     "Could you tell me why the order didn't arrive, please?",
+     "Can you please tell me why the order didn't arrive?",
+     "Would you tell me why the order didn't arrive?",
+     "Could you please tell me why the order did not arrive?",
+     "Could you tell me why the order did not arrive, please?",
+     "Can you please tell me why the order did not arrive?",
+     "Would you mind telling me why the order did not arrive?",
+     "Do you happen to know why the order did not arrive?",
+     "I wonder why the order did not arrive.",
+     "I was wondering why the order did not arrive.",
+     "I'd like to know why the order did not arrive.",
+     "Would you tell me why the order did not arrive?"
+    ]
+   ]
+  }
+ },
+ "r1-012": {
+  "hash": "4e9f14df9f1b48f2",
+  "gate_key": "ind_polite | B2.1 | mcq | Which sentence is NOT correct? | I'd like to know where did you go.",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'd like to know where did you go.",
+   "wrong": [
+    "Do you remember where you parked?",
+    "I wonder where I left my phone.",
+    "I'd like to know what time it is."
+   ]
+  }
+ },
+ "r1-013": {
+  "hash": "6431518d1a0b7623",
+  "gate_key": "present_simple_passive | A2.2 | mcq | Which sentence is NOT correct? | The bread are baked every morning.",
+  "src": "a2-big-1.csv:149",
+  "point": "pas_pres",
+  "key": {
+   "kind": "mcq",
+   "correct": "The bread are baked every morning.",
+   "wrong": [
+    "Milk is delivered every morning.",
+    "The rolls are baked in the oven.",
+    "Cakes are sold at the market."
+   ]
+  }
+ },
+ "r1-014": {
+  "hash": "e21be0296df89ac6",
+  "gate_key": "present_simple | A2.1 | text | Make a question with *What*: Your friends play chess. | ",
+  "src": "a2-extras-1.csv:7",
+  "point": "ps_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What do your friends play?"
+    ]
+   ]
+  }
+ },
+ "r1-015": {
+  "hash": "9a36d61076e012a9",
+  "gate_key": "relative_clauses | A2.2 | gap | I have a friend ___ lives in Canada. | ",
+  "src": "a2-rel-might-1.csv:2",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "who"
+    ]
+   ]
+  }
+ },
+ "r1-016": {
+  "hash": "2ef29f98dee49c14",
+  "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: We stayed at a hotel ___ has a big pool. | which",
+  "src": "a2-rel-might-1.csv:3",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "which",
+   "wrong": [
+    "who",
+    "what",
+    "where"
+   ]
+  }
+ },
+ "r1-017": {
+  "hash": "53fa1268751deb83",
+  "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: I use an app ___ makes short videos. | that",
+  "src": "a2-rel-might-1.csv:4",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "that",
+   "wrong": [
+    "who",
+    "what",
+    "where"
+   ]
+  }
+ },
+ "r1-018": {
+  "hash": "6554da038f855226",
+  "gate_key": "relative_clauses | A2.2 | mcq | Which sentence is correct? | The man who fixed my car was very kind.",
+  "src": "a2-rel-might-1.csv:5",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "The man who fixed my car was very kind.",
+   "wrong": [
+    "The man which fixed my car was very kind.",
+    "The man who he fixed my car was very kind.",
+    "The man what fixed my car was very kind."
+   ]
+  }
+ },
+ "r1-019": {
+  "hash": "647e5c07c5bf5fbf",
+  "gate_key": "relative_clauses | A2.2 | mcq | Which sentence is correct? | I need a laptop that is light.",
+  "src": "a2-rel-might-1.csv:6",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "I need a laptop that is light.",
+   "wrong": [
+    "I need a laptop who is light.",
+    "I need a laptop that it is light.",
+    "I need a laptop what is light."
+   ]
+  }
+ },
+ "r1-020": {
+  "hash": "048ad6985e7c9183",
+  "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live",
+  "src": "a2-rel-might-1.csv:7",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "live",
+   "wrong": [
+    "lives",
+    "living",
+    "is living"
+   ]
+  }
+ },
+ "r1-021": {
+  "hash": "67a489225b9528c9",
+  "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The bus which ___ to the airport leaves at six. | goes",
+  "src": "a2-rel-might-1.csv:8",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "goes",
+   "wrong": [
+    "go",
+    "going",
+    "gone"
+   ]
+  }
+ },
+ "r1-022": {
+  "hash": "ea35f432560c5c18",
+  "gate_key": "relative_clauses | A2.2 | mcq | Which sentence is NOT correct? | I know a woman which speaks five languages.",
+  "src": "a2-rel-might-1.csv:9",
+  "point": "rel_subj",
+  "key": {
+   "kind": "mcq",
+   "correct": "I know a woman which speaks five languages.",
+   "wrong": [
+    "We need a teacher who can sing.",
+    "It's a film that makes people laugh.",
+    "The shop which sells fresh bread is closed today."
+   ]
+  }
+ },
+ "r1-023": {
+  "hash": "750e1de5a39b0044",
+  "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: A pilot is a person ___ flies planes. | ",
+  "src": "a2-rel-might-1.csv:10",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "who",
+     "that"
+    ]
+   ]
+  }
+ },
+ "r1-024": {
+  "hash": "897105eff5cfa067",
+  "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: I bought a bike ___ has ten gears. | ",
+  "src": "a2-rel-might-1.csv:11",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "which",
+     "that"
+    ]
+   ]
+  }
+ },
+ "r1-025": {
+  "hash": "e981641208ce24aa",
+  "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: The woman ___ teaches us yoga is from India. | ",
+  "src": "a2-rel-might-1.csv:12",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "who",
+     "that"
+    ]
+   ]
+  }
+ },
+ "r1-026": {
+  "hash": "9d880fa0f74ecbae",
+  "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: Do you like songs ___ tell a story? | ",
+  "src": "a2-rel-might-1.csv:13",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "which",
+     "that"
+    ]
+   ]
+  }
+ },
+ "r1-027": {
+  "hash": "91da6e3ecd6fe02a",
+  "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: On our trip we met a guide ___ spoke perfect English. | ",
+  "src": "a2-rel-might-1.csv:14",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "who",
+     "that"
+    ]
+   ]
+  }
+ },
+ "r1-028": {
+  "hash": "984d7f117e39a64c",
+  "gate_key": "relative_clauses | A2.2 | text | Join with *who*: I have a cousin. He works in a hotel. | ",
+  "src": "a2-rel-might-1.csv:15",
+  "point": "rel_subj",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I have a cousin who works in a hotel."
+    ]
+   ]
+  }
+ },
+ "r1-029": {
+  "hash": "6e964a7d36d4036e",
+  "gate_key": "relative_clauses | A2.2 | text | Join the two sentences: We visited a museum. It has old cars. | ",
+  "src": "a2-rel-might-1.csv:16",
+  "point": "rel_subj",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We visited a museum which has old cars.",
+     "We visited a museum that has old cars."
+    ]
+   ]
+  }
+ },
+ "r1-030": {
+  "hash": "73beb93429abf424",
+  "gate_key": "relative_clauses | A2.2 | text | Join the two sentences: The app helps me learn new words. It is free. | ",
+  "src": "a2-rel-might-1.csv:17",
+  "point": "rel_subj",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The app which helps me learn new words is free.",
+     "The app that helps me learn new words is free.",
+     "The app which is free helps me learn new words.",
+     "The app that is free helps me learn new words."
+    ]
+   ]
+  }
+ },
+ "r1-031": {
+  "hash": "fb6e6b42f38f5273",
+  "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano",
+  "src": "a2-rel-might-1.csv:18",
+  "point": "rel_subj",
+  "key": {
+   "kind": "order",
+   "sentence": "i have a neighbour who plays the piano",
+   "also": []
+  }
+ },
+ "r1-032": {
+  "hash": "4448fcf35b40024d",
+  "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | we stayed in a flat that had a garden",
+  "src": "a2-rel-might-1.csv:19",
+  "point": "rel_subj",
+  "key": {
+   "kind": "order",
+   "sentence": "we stayed in a flat that had a garden",
+   "also": []
+  }
+ },
+ "r1-033": {
+  "hash": "b1997f0c2d78a97a",
+  "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | she wants a job which pays well",
+  "src": "a2-rel-might-1.csv:20",
+  "point": "rel_subj",
+  "key": {
+   "kind": "order",
+   "sentence": "she wants a job which pays well",
+   "also": []
+  }
+ },
+ "r1-034": {
+  "hash": "9d56f9c7cc12e2e3",
+  "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | my uncle has a shop that sells bikes",
+  "src": "a2-rel-might-1.csv:21",
+  "point": "rel_subj",
+  "key": {
+   "kind": "order",
+   "sentence": "my uncle has a shop that sells bikes",
+   "also": []
+  }
+ },
+ "r1-035": {
+  "hash": "7ec2397aee0c3ccc",
+  "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | she met a man who makes furniture",
+  "src": "a2-rel-might-1.csv:22",
+  "point": "rel_subj",
+  "key": {
+   "kind": "order",
+   "sentence": "she met a man who makes furniture",
+   "also": []
+  }
+ },
+ "r1-036": {
+  "hash": "e53e6a053ecec58d",
+  "gate_key": "relative_clauses | A2.2 | gap | I know a man ___ ___ three languages. | ",
+  "src": "a2-rel-might-1.csv:23",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "who"
+    ],
+    [
+     "speaks"
+    ]
+   ]
+  }
+ },
+ "r1-037": {
+  "hash": "5fe41f9ff4a1a681",
+  "gate_key": "relative_clauses | A2.2 | gap | We bought a car ___ uses very little petrol. | ",
+  "src": "a2-rel-might-1.csv:24",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "which"
+    ]
+   ]
+  }
+ },
+ "r1-038": {
+  "hash": "a8fb840bdd68e7bd",
+  "gate_key": "relative_clauses | A2.2 | gap | The women who ___ in the next office are my colleagues. | ",
+  "src": "a2-rel-might-1.csv:25",
+  "point": "rel_subj",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "work"
+    ]
+   ]
+  }
+ },
+ "r1-039": {
+  "hash": "7e22a2d504a573f9",
+  "gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a picture = which shows roads and towns.",
+  "src": "a2-rel-might-1.csv:26",
+  "point": "rel_subj",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "A baker is a person",
+     "who makes bread."
+    ],
+    [
+     "A fridge is a machine",
+     "which keeps food cold."
+    ],
+    [
+     "A tourist is someone",
+     "who travels for fun."
+    ],
+    [
+     "A map is a picture",
+     "which shows roads and towns."
+    ]
+   ]
+  }
+ },
+ "r1-040": {
+  "hash": "7fa3c0eec8676c3c",
+  "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: Take an umbrella. It might ___ later. | rain",
+  "src": "a2-rel-might-1.csv:27",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "rain",
+   "wrong": [
+    "rains",
+    "to rain",
+    "raining"
+   ]
+  }
+ },
+ "r1-041": {
+  "hash": "778cb03ed1ed9f02",
+  "gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | She may be at home now.",
+  "src": "a2-rel-might-1.csv:28",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "She may be at home now.",
+   "wrong": [
+    "She may is at home now.",
+    "She may to be at home now.",
+    "She may being at home now."
+   ]
+  }
+ },
+ "r1-042": {
+  "hash": "9d1a5e0fb79aee5b",
+  "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: I'm not sure yet. We ___ go to the beach on Saturday. | might",
+  "src": "a2-rel-might-1.csv:29",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "might",
+   "wrong": [
+    "might to",
+    "may to",
+    "maybe"
+   ]
+  }
+ },
+ "r1-043": {
+  "hash": "b18d73cb8fa49fad",
+  "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: He's very tired. He ___ not come to the party. | might",
+  "src": "a2-rel-might-1.csv:30",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "might",
+   "wrong": [
+    "doesn't",
+    "is",
+    "don't"
+   ]
+  }
+ },
+ "r1-044": {
+  "hash": "2fa0abcd16d39dfb",
+  "gate_key": "more_modals | A2.2 | mcq | Which sentence is NOT correct? | Maybe it will might snow tonight.",
+  "src": "a2-rel-might-1.csv:31",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "Maybe it will might snow tonight.",
+   "wrong": [
+    "Our flight might be late.",
+    "They may not have time today.",
+    "I might buy a new phone."
+   ]
+  }
+ },
+ "r1-045": {
+  "hash": "e51bde269ce4f0ed",
+  "gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | Ask Tom. He might know the answer.",
+  "src": "a2-rel-might-1.csv:32",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "Ask Tom. He might know the answer.",
+   "wrong": [
+    "Ask Tom. He might knows the answer.",
+    "Ask Tom. He might to know the answer.",
+    "Ask Tom. He might knowing the answer."
+   ]
+  }
+ },
+ "r1-046": {
+  "hash": "b5d56c8fbe870141",
+  "gate_key": "more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ",
+  "src": "a2-rel-might-1.csv:33",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "be"
+    ]
+   ]
+  }
+ },
+ "r1-047": {
+  "hash": "998b1e6643ad0dfd",
+  "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: Don't wait for me. I ___ be late. | may",
+  "src": "a2-rel-might-1.csv:34",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "may",
+   "wrong": [
+    "maybe",
+    "may to"
+   ]
+  }
+ },
+ "r1-048": {
+  "hash": "6d98c519b40bd0d5",
+  "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but I ___ visit my aunt this weekend. | ",
+  "src": "a2-rel-might-1.csv:35",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might",
+     "may",
+     "could"
+    ]
+   ]
+  }
+ },
+ "r1-049": {
+  "hash": "d47f56ae674fe0f1",
+  "gate_key": "more_modals | A2.2 | gap | Write the missing word: The road is icy. You ___ fall, so be careful. | ",
+  "src": "a2-rel-might-1.csv:36",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might",
+     "may",
+     "could",
+     "can"
+    ]
+   ]
+  }
+ },
+ "r1-050": {
+  "hash": "ac9a303b621fd87d",
+  "gate_key": "more_modals | A2.2 | gap | I can't see Anna's car. She might ___ at home. (not / be) | ",
+  "src": "a2-rel-might-1.csv:37",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not be"
+    ]
+   ]
+  }
+ },
+ "r1-051": {
+  "hash": "97496d76402d2550",
+  "gate_key": "more_modals | A2.2 | gap | Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip. | ",
+  "src": "a2-rel-might-1.csv:38",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might",
+     "may",
+     "could"
+    ]
+   ]
+  }
+ },
+ "r1-052": {
+  "hash": "2da3315b6100d8b0",
+  "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but they ___ have a map of the town at the desk. | ",
+  "src": "a2-rel-might-1.csv:39",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might",
+     "may",
+     "could"
+    ]
+   ]
+  }
+ },
+ "r1-053": {
+  "hash": "0502c4c431f218b9",
+  "gate_key": "more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ",
+  "src": "a2-rel-might-1.csv:40",
+  "point": "might",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The concert tickets might be sold out."
+    ]
+   ]
+  }
+ },
+ "r1-054": {
+  "hash": "e0f9ac1958445388",
+  "gate_key": "more_modals | A2.2 | text | Make it negative: We might finish the project today. | ",
+  "src": "a2-rel-might-1.csv:41",
+  "point": "might",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We might not finish the project today.",
+     "We mightn't finish the project today.",
+     "Today we might not finish the project.",
+     "Today we mightn't finish the project."
+    ]
+   ]
+  }
+ },
+ "r1-055": {
+  "hash": "f45ef099d62e0143",
+  "gate_key": "more_modals | A2.2 | text | Say it another way with *may*: It's possible that she knows Anna. | ",
+  "src": "a2-rel-might-1.csv:42",
+  "point": "might",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She may know Anna."
+    ]
+   ]
+  }
+ },
+ "r1-056": {
+  "hash": "73f1ed991535112f",
+  "gate_key": "more_modals | A2.2 | order | Put the words in order. | the café might be busy today",
+  "src": "a2-rel-might-1.csv:43",
+  "point": "might",
+  "key": {
+   "kind": "order",
+   "sentence": "the café might be busy today",
+   "also": []
+  }
+ },
+ "r1-057": {
+  "hash": "214d2322ac43f282",
+  "gate_key": "more_modals | A2.2 | order | Put the words in order. | i may not have time for lunch",
+  "src": "a2-rel-might-1.csv:44",
+  "point": "might",
+  "key": {
+   "kind": "order",
+   "sentence": "i may not have time for lunch",
+   "also": []
+  }
+ },
+ "r1-058": {
+  "hash": "6e848d9e922c5849",
+  "gate_key": "more_modals | A2.2 | order | Put the words in order. | they might move to another city",
+  "src": "a2-rel-might-1.csv:45",
+  "point": "might",
+  "key": {
+   "kind": "order",
+   "sentence": "they might move to another city",
+   "also": []
+  }
+ },
+ "r1-059": {
+  "hash": "566165cfb67e8d31",
+  "gate_key": "more_modals | A2.2 | order | Put the words in order. | you might need a warm jacket",
+  "src": "a2-rel-might-1.csv:46",
+  "point": "might",
+  "key": {
+   "kind": "order",
+   "sentence": "you might need a warm jacket",
+   "also": []
+  }
+ },
+ "r1-060": {
+  "hash": "3e79cfe0459102e4",
+  "gate_key": "more_modals | A2.2 | order | Put the words in order. | my phone might not work in the mountains",
+  "src": "a2-rel-might-1.csv:47",
+  "point": "might",
+  "key": {
+   "kind": "order",
+   "sentence": "my phone might not work in the mountains",
+   "also": []
+  }
+ },
+ "r1-061": {
+  "hash": "7dc3155ceb33fe5d",
+  "gate_key": "more_modals | A2.2 | gap | It ___ ___ tomorrow, so I'm taking my boots. | ",
+  "src": "a2-rel-might-1.csv:48",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might"
+    ],
+    [
+     "snow"
+    ]
+   ]
+  }
+ },
+ "r1-062": {
+  "hash": "617efd301e5eb820",
+  "gate_key": "more_modals | A2.2 | gap | She may ___ ___ the meeting today. | ",
+  "src": "a2-rel-might-1.csv:49",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not"
+    ],
+    [
+     "join"
+    ]
+   ]
+  }
+ },
+ "r1-063": {
+  "hash": "c4e96662d685a3ba",
+  "gate_key": "more_modals | A2.2 | gap | You ___ ___ this film. It's very funny. | ",
+  "src": "a2-rel-might-1.csv:50",
+  "point": "might",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might"
+    ],
+    [
+     "like"
+    ]
+   ]
+  }
+ },
+ "r1-064": {
+  "hash": "e4ba47773c137814",
+  "gate_key": "more_modals | A2.2 | match | Match each sentence with its meaning. | It will rain. = I'm sure about the rain. ; She might call. = Perhaps she will call. ; He won't come. = I'm sure he will stay at home. ; They might not win. = Perhaps they will lose.",
+  "src": "a2-rel-might-1.csv:51",
+  "point": "might",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "It will rain.",
+     "I'm sure about the rain."
+    ],
+    [
+     "She might call.",
+     "Perhaps she will call."
+    ],
+    [
+     "He won't come.",
+     "I'm sure he will stay at home."
+    ],
+    [
+     "They might not win.",
+     "Perhaps they will lose."
+    ]
+   ]
+  }
+ },
+ "r1-065": {
+  "hash": "0870ffe13b70e777",
+  "gate_key": "rep_questions | B1.2 | mcq | Which sentence is NOT correct? | He asked me did I like the job.",
+  "src": "b1-cond-rep-1.csv:219",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "He asked me did I like the job.",
+   "wrong": [
+    "He asked me if I liked the job.",
+    "He asked me whether I liked the job.",
+    "He asked if I had liked the job."
+   ]
+  }
+ },
+ "r1-066": {
+  "hash": "915c200f97b435e0",
+  "gate_key": "used_to | B1.2 | mcq | Which sentence is NOT correct? | She is used to get up early.",
+  "src": "b1-new-1.csv:30",
+  "point": "be_used_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "She is used to get up early.",
+   "wrong": [
+    "She used to get up early.",
+    "She is used to getting up early.",
+    "She got used to getting up early."
+   ]
+  }
+ },
+ "r1-067": {
+  "hash": "127f676b9474ad0b",
+  "gate_key": "verb_patterns | A2.2 | text | Make a sentence with decide: I will go home early. | ",
+  "src": "b1-new-3.csv:144",
+  "point": "vp_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I decided to go home early.",
+     "I have decided to go home early."
+    ]
+   ]
+  }
+ },
+ "r1-068": {
+  "hash": "e63dcdc4e302edf3",
+  "gate_key": "present_continuous | B1.1 | text | Make a question with Why: She is crying. | ",
+  "src": "b1-tenses-1.csv:64",
+  "point": "pc_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Why is she crying?"
+    ]
+   ]
+  }
+ },
+ "r1-069": {
+  "hash": "4323c9e66de42d66",
+  "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | should we leave before it gets dark",
+  "src": "modal-verbs-1.csv:38",
+  "point": "should",
+  "key": {
+   "kind": "order",
+   "sentence": "should we leave before it gets dark",
+   "also": []
+  }
+ },
+ "r1-070": {
+  "hash": "97de748c5814430d",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: The lights are off and nobody answers the door. They ___ be at home. | can't",
+  "src": "zz-blind-pairs-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ]
+  }
+ },
+ "r1-071": {
+  "hash": "28aa3d2cc24d8038",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: She's been running for an hour in this heat. She ___ be thirsty. | must",
+  "src": "zz-blind-pairs-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "must",
+   "wrong": [
+    "can't",
+    "mustn't"
+   ]
+  }
+ },
+ "r1-072": {
+  "hash": "2c4ccc3de57d704b",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: That ___ be Tom's car. He sold it last month. | can't",
+  "src": "zz-blind-pairs-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ]
+  }
+ },
+ "r1-073": {
+  "hash": "e17ebea3505790fa",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Everyone outside is wearing a coat and a hat. It ___ be very cold today. | must",
+  "src": "zz-blind-pairs-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "must",
+   "wrong": [
+    "can't",
+    "mustn't"
+   ]
+  }
+ },
+ "r1-074": {
+  "hash": "2b8bf606b075b29b",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: This ___ be the right address. There's no number 52 on this street. | can't",
+  "src": "zz-blind-pairs-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ]
+  }
+ },
+ "r1-075": {
+  "hash": "9adac3f228496601",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home. | can't",
+  "src": "zz-blind-pairs-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ]
+  }
+ },
+ "r1-076": {
+  "hash": "a9152b400c1e00fb",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: My phone rang ___ the meeting, and everyone looked at me. | during",
+  "src": "zz-blind-pairs-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "during",
+   "wrong": [
+    "while",
+    "for"
+   ]
+  }
+ },
+ "r1-077": {
+  "hash": "a3d358ee4888a7e3",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Someone stole my bag ___ I was looking at the menu. | while",
+  "src": "zz-blind-pairs-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "while",
+   "wrong": [
+    "during",
+    "for"
+   ]
+  }
+ },
+ "r1-078": {
+  "hash": "d1edf45b084f178f",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We lived in Spain ___ three years before we moved to Riga. | for",
+  "src": "zz-blind-pairs-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "for",
+   "wrong": [
+    "during",
+    "while"
+   ]
+  }
+ },
+ "r1-079": {
+  "hash": "8604712d7407e201",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I fell asleep ___ the film, so I don't know how it ends. | during",
+  "src": "zz-blind-pairs-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "during",
+   "wrong": [
+    "while",
+    "for"
+   ]
+  }
+ },
+ "r1-080": {
+  "hash": "fbf84cdaf69e5651",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ we were waiting for the train, it started to snow. | While",
+  "src": "zz-blind-pairs-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "While",
+   "wrong": [
+    "During",
+    "For"
+   ]
+  }
+ },
+ "r1-081": {
+  "hash": "afb4ab7df41ae4aa",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I made a lot of good friends ___ my time at university. | during",
+  "src": "zz-blind-pairs-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "during",
+   "wrong": [
+    "while",
+    "for"
+   ]
+  }
+ },
+ "r1-082": {
+  "hash": "19913fb0b7cf8f3b",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Please pay the bill ___ Friday. | by",
+  "src": "zz-blind-pairs-1.csv:14",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "by",
+   "wrong": [
+    "until",
+    "since"
+   ]
+  }
+ },
+ "r1-083": {
+  "hash": "25170a641d9c4a07",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: The shop is open ___ ten tonight, so we still have time. | until",
+  "src": "zz-blind-pairs-1.csv:15",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "until",
+   "wrong": [
+    "by",
+    "since"
+   ]
+  }
+ },
+ "r1-084": {
+  "hash": "26ab55af63fa0b5a",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I'll wait for you here ___ six. Then I'm going home. | until",
+  "src": "zz-blind-pairs-1.csv:16",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "until",
+   "wrong": [
+    "by",
+    "since"
+   ]
+  }
+ },
+ "r1-085": {
+  "hash": "1d6d494bab962f25",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Guests must leave their rooms ___ eleven o'clock on the last day. | by",
+  "src": "zz-blind-pairs-1.csv:17",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "by",
+   "wrong": [
+    "until",
+    "since"
+   ]
+  }
+ },
+ "r1-086": {
+  "hash": "479c3001b530acbf",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We have lived in this flat ___ 2019, and we still like it. | since",
+  "src": "zz-blind-pairs-1.csv:18",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "since",
+   "wrong": [
+    "by",
+    "until"
+   ]
+  }
+ },
+ "r1-087": {
+  "hash": "555928df8141d51c",
+  "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ the time we reached the airport, our plane had already left. | By",
+  "src": "zz-blind-pairs-1.csv:19",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "By",
+   "wrong": [
+    "Until",
+    "Since"
+   ]
+  }
+ },
+ "r1-088": {
+  "hash": "db6e4dee8b2ca95e",
+  "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The fire was big, but everyone ___ get out of the building. | was able to",
+  "src": "zz-blind-pairs-1.csv:20",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "was able to",
+   "wrong": [
+    "could",
+    "was able"
+   ]
+  }
+ },
+ "r1-089": {
+  "hash": "88b27676dc9db80a",
+  "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The main road was closed, but we ___ find another way home. | were able to",
+  "src": "zz-blind-pairs-1.csv:21",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "were able to",
+   "wrong": [
+    "could",
+    "were able"
+   ]
+  }
+ },
+ "r1-090": {
+  "hash": "7e7777898babf4ea",
+  "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: In the end she ___ pass the exam, although it was very hard. | managed to",
+  "src": "zz-blind-pairs-1.csv:22",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "managed to",
+   "wrong": [
+    "could",
+    "managed"
+   ]
+  }
+ },
+ "r1-091": {
+  "hash": "b52e2d3dc8fdc31f",
+  "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one. | were able to",
+  "src": "zz-blind-pairs-1.csv:23",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "were able to",
+   "wrong": [
+    "could",
+    "could to"
+   ]
+  }
+ },
+ "r1-092": {
+  "hash": "4efac020b31b258d",
+  "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The sofa was very heavy, but the two of us ___ carry it upstairs. | managed to",
+  "src": "zz-blind-pairs-1.csv:24",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "managed to",
+   "wrong": [
+    "could",
+    "could to"
+   ]
+  }
+ },
+ "r1-093": {
+  "hash": "4f465f414d6a5693",
+  "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: My grandfather ___ speak four languages when he was young. | could",
+  "src": "zz-blind-pairs-1.csv:25",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "could",
+   "wrong": [
+    "managed to",
+    "can"
+   ]
+  }
+ },
+ "r1-094": {
+  "hash": "7aaaff2198b8a9f0",
+  "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ the long journey, the children were not tired at all. | Despite",
+  "src": "zz-blind-pairs-1.csv:26",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Despite",
+   "wrong": [
+    "Although",
+    "However"
+   ]
+  }
+ },
+ "r1-095": {
+  "hash": "0c0f50e7e81e9431",
+  "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ she studied hard, she didn't pass the driving test. | Although",
+  "src": "zz-blind-pairs-1.csv:27",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Although",
+   "wrong": [
+    "Despite",
+    "However"
+   ]
+  }
+ },
+ "r1-096": {
+  "hash": "d3d95e8a49e89b3d",
+  "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: We had a great holiday ___ the bad weather. | despite",
+  "src": "zz-blind-pairs-1.csv:28",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "despite",
+   "wrong": [
+    "although",
+    "however"
+   ]
+  }
+ },
+ "r1-097": {
+  "hash": "c898be990d19eb3c",
+  "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: He still goes to work by bike ___ he is seventy. | although",
+  "src": "zz-blind-pairs-1.csv:29",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "although",
+   "wrong": [
+    "despite",
+    "however"
+   ]
+  }
+ },
+ "r1-098": {
+  "hash": "db025510c7d4db8b",
+  "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ having a cold, Anna sang at the concert. | Despite",
+  "src": "zz-blind-pairs-1.csv:30",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Despite",
+   "wrong": [
+    "Although",
+    "However"
+   ]
+  }
+ },
+ "r1-099": {
+  "hash": "e75b4941c6b25713",
+  "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: The flat is quite small. ___, it is very close to the centre. | However",
+  "src": "zz-blind-pairs-1.csv:31",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "However",
+   "wrong": [
+    "Although",
+    "Despite"
+   ]
+  }
+ },
+ "r1-100": {
+  "hash": "18d8681c4516bf6f",
+  "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The trains stopped ___ the strong wind. | because of",
+  "src": "zz-blind-pairs-1.csv:32",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "because of",
+   "wrong": [
+    "because",
+    "so"
+   ]
+  }
+ },
+ "r1-101": {
+  "hash": "cd8a089500910cea",
+  "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: We took a taxi ___ it was raining very hard. | because",
+  "src": "zz-blind-pairs-1.csv:33",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "because",
+   "wrong": [
+    "because of",
+    "so"
+   ]
+  }
+ },
+ "r1-102": {
+  "hash": "4fe5f65bc6ffc9c5",
+  "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The museum was closed, ___ we went to a café instead. | so",
+  "src": "zz-blind-pairs-1.csv:34",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "so",
+   "wrong": [
+    "because",
+    "because of"
+   ]
+  }
+ },
+ "r1-103": {
+  "hash": "0ba173a586ec8afb",
+  "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: I couldn't sleep ___ the noise from the street. | because of",
+  "src": "zz-blind-pairs-1.csv:35",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "because of",
+   "wrong": [
+    "because",
+    "so"
+   ]
+  }
+ },
+ "r1-104": {
+  "hash": "729b169818761aad",
+  "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: He was late for work ___ he overslept. | because",
+  "src": "zz-blind-pairs-1.csv:36",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "because",
+   "wrong": [
+    "because of",
+    "so"
+   ]
+  }
+ },
+ "r1-105": {
+  "hash": "f635bfe33714faf3",
+  "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The concert was cancelled ___ the singer was ill. | because",
+  "src": "zz-blind-pairs-1.csv:37",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "because",
+   "wrong": [
+    "because of",
+    "so"
+   ]
+  }
+ }
+}

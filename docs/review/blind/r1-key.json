@@ -14,6 +14,41 @@
      "On sundays they do not play tennis."
     ]
    ]
+  },
+  "item": {
+   "id": "ps-A21-3b-r2",
+   "skill": "present_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: They play tennis on Sundays.",
+   "answers": [
+    [
+     "They don't play tennis on Sundays.",
+     "They do not play tennis on Sundays.",
+     "On sundays they don't play tennis.",
+     "On sundays they do not play tennis."
+    ]
+   ],
+   "why": "With *I, you, we, they* we make the negative with *don't* + base verb.",
+   "hints": [
+    [
+     "\\bdoesn't\\b|\\bdoes not\\b",
+     "*They* needs *don't*, not *doesn't.*",
+     "Ar *They* vajag *don't*, nevis *doesn't*."
+    ]
+   ],
+   "why_lv": "Ar *I, you, we, they* noliegumu veido ar *don't* + pamatforma.",
+   "d": 1.4,
+   "scaffold": 2,
+   "err": [
+    "3S",
+    "DO",
+    "BASE"
+   ],
+   "role": "use",
+   "point": "ps_negq",
+   "src": "built-in"
   }
  },
  "r1-002": {
@@ -28,6 +63,39 @@
     "Use a timetable verb with *at* and a time, such as *at nine*, *at 9.00* or *at noon*.",
     "Write two sentences."
    ]
+  },
+  "item": {
+   "id": "ps-B11-6a-r3",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write two sentences about a timetable: a train, a class, a shop or a film.",
+   "must": [
+    [
+     "\\b(starts?|begins?|opens?|leaves?|ends?|finish(es)?|closes?|arrives?)\\b.{0,40}\\bat\\s+(?:\\d|[a-z])",
+     "Use a timetable verb with *at* and a time, such as *at nine*, *at 9.00* or *at noon*.",
+     "Lieto grafika darbības vārdu ar *at* un laiku, piemēram, *at nine*, *at 9.00* vai *at noon*."
+    ],
+    [
+     "[.!?]\\s+\\S",
+     "Write two sentences.",
+     "Uzraksti divus teikumus."
+    ]
+   ],
+   "model": "My class starts at 9.00. It finishes at 11.30.",
+   "why": "Compare your sentence with the model answer.",
+   "why_lv": "Salīdzini savu teikumu ar piemēra atbildi.",
+   "d": 4,
+   "scaffold": 3,
+   "err": [
+    "3S",
+    "DO",
+    "BASE"
+   ],
+   "role": "use",
+   "point": "fut_timetable",
+   "src": "built-in"
   }
  },
  "r1-003": {
@@ -53,6 +121,40 @@
      "I would not have parked there if I had seen the sign."
     ]
    ]
+  },
+  "item": {
+   "id": "ct-B21-3a-r3",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Imagine it happened differently. Start with *If I*: I didn't see the sign, so I parked there and got a fine.",
+   "answers": [
+    [
+     "If I had seen the sign, I wouldn't have parked there.",
+     "If I had seen the sign, I wouldn't have got a fine.",
+     "If I had seen the sign, I would not have got a fine.",
+     "If I had seen the sign, I wouldn't have gotten a fine.",
+     "If I had seen the sign, I wouldn't have been fined.",
+     "If I had seen the sign, I would not have parked there.",
+     "I wouldn't have parked there if I had seen the sign.",
+     "I wouldn't have got a fine if I had seen the sign.",
+     "I would not have got a fine if I had seen the sign.",
+     "I wouldn't have gotten a fine if I had seen the sign.",
+     "I wouldn't have been fined if I had seen the sign.",
+     "I would not have parked there if I had seen the sign."
+    ]
+   ],
+   "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
+   "hints": [],
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c3",
+   "src": "built-in"
   }
  },
  "r1-004": {
@@ -68,6 +170,30 @@
     "If I had known about the traffic, I would have left earlier.",
     "Had I known about the traffic, I would have left earlier."
    ]
+  },
+  "item": {
+   "id": "ct-B22-4a-r5",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "If I'd have known about the traffic, I would've left earlier.",
+   "wrong": [
+    "If I'd known about the traffic, I would've left earlier.",
+    "If I had known about the traffic, I would have left earlier.",
+    "Had I known about the traffic, I would have left earlier."
+   ],
+   "why": "In standard written English use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs informally but is not the standard form.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3",
+   "src": "built-in"
   }
  },
  "r1-005": {
@@ -89,6 +215,34 @@
      "'d be"
     ]
    ]
+  },
+  "item": {
+   "id": "cm-B21-3a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be)",
+   "answers": [
+    [
+     "had learned",
+     "had learnt",
+     "'d learned",
+     "'d learnt"
+    ],
+    [
+     "would be",
+     "'d be"
+    ]
+   ],
+   "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
+   "hints": [],
+   "d": 5.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "built-in"
   }
  },
  "r1-006": {
@@ -104,6 +258,32 @@
     "where do I work",
     "where I work did"
    ]
+  },
+  "item": {
+   "id": "rq-B12-1a-r2",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct option: 'Where do you work?' She asked me ___.",
+   "correct": "where I worked",
+   "wrong": [
+    "where did I work",
+    "where do I work",
+    "where I work did"
+   ],
+   "why": "In a reported question we use normal word order (subject + verb) and no *do / does / did.*",
+   "wrong_why": [],
+   "why_lv": "Netiešajā jautājumā lieto parasto vārdu secību (teik. priekšmets + darbības vārds) un bez *do / does / did*.",
+   "d": 4,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "built-in"
   }
  },
  "r1-007": {
@@ -119,6 +299,31 @@
     "He asked me when the train left.",
     "He asked me if I knew the way."
    ]
+  },
+  "item": {
+   "id": "rq-B21-4a",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "He asked me what time was it.",
+   "wrong": [
+    "He asked me what time it was.",
+    "He asked me when the train left.",
+    "He asked me if I knew the way."
+   ],
+   "why": "In a reported question the subject comes before the verb: *what time it was.*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "built-in"
   }
  },
  "r1-008": {
@@ -133,6 +338,33 @@
      "on"
     ]
    ]
+  },
+  "item": {
+   "id": "rv-C11-3a-r4",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Congratulations, Jo! You finally passed the exam!' I congratulated Jo ___ passing the exam.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "why": "*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*",
+   "hints": [],
+   "bank": [
+    "on",
+    "about",
+    "at",
+    "with"
+   ],
+   "d": 6.4,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
   }
  },
  "r1-009": {
@@ -167,6 +399,47 @@
      "My sister told me that I should see a doctor about that cough."
     ]
    ]
+  },
+  "item": {
+   "id": "rv-C12-3a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'",
+   "answers": [
+    [
+     "My sister advised me to see a doctor about that cough.",
+     "My sister urged me to see a doctor about that cough.",
+     "My sister told me to see a doctor about that cough.",
+     "My sister encouraged me to see a doctor about that cough.",
+     "My sister recommended that I see a doctor about that cough.",
+     "My sister recommended that I should see a doctor about that cough.",
+     "My sister suggested that I see a doctor about that cough.",
+     "My sister suggested that I should see a doctor about that cough.",
+     "My sister suggested seeing a doctor about that cough.",
+     "My sister suggested I see a doctor about that cough.",
+     "My sister suggested I should see a doctor about that cough.",
+     "My sister recommended seeing a doctor about that cough.",
+     "My sister recommended I see a doctor about that cough.",
+     "My sister recommended I should see a doctor about that cough.",
+     "My sister advised seeing a doctor about that cough.",
+     "My sister advised that I see a doctor about that cough.",
+     "My sister advised that I should see a doctor about that cough.",
+     "My sister said I should see a doctor about that cough.",
+     "My sister said that I should see a doctor about that cough.",
+     "My sister told me I should see a doctor about that cough.",
+     "My sister told me that I should see a doctor about that cough."
+    ]
+   ],
+   "why": "*advise / urge / tell / encourage* + person + *to* + base verb; *recommend / suggest / advise* + *-ing* or + *that* + subject + base verb; or *said / told me* + *I should* + base verb.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_obj_to",
+   "src": "built-in"
   }
  },
  "r1-010": {
@@ -182,6 +455,31 @@
     "Would you mind to tell me how long the repair will take?",
     "Would you mind telling me how long does the repair take?"
    ]
+  },
+  "item": {
+   "id": "ip-B21-1a",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence is correct and polite?",
+   "correct": "Would you mind telling me how long the repair will take?",
+   "wrong": [
+    "Would you mind telling me how long will the repair take?",
+    "Would you mind to tell me how long the repair will take?",
+    "Would you mind telling me how long does the repair take?"
+   ],
+   "why": "*Would you mind* + -ing, then statement word order.",
+   "wrong_why": [],
+   "d": 5,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
   }
  },
  "r1-011": {
@@ -218,6 +516,57 @@
      "Would you tell me why the order did not arrive?"
     ]
    ]
+  },
+  "item": {
+   "id": "ip-B21-3a-r3",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it indirect: Why didn't the order arrive?",
+   "answers": [
+    [
+     "Could you tell me why the order didn't arrive?",
+     "Do you know why the order didn't arrive?",
+     "Can you tell me why the order didn't arrive?",
+     "I'd like to know why the order didn't arrive.",
+     "Would you mind telling me why the order didn't arrive?",
+     "Could you please tell me why the order didn't arrive?",
+     "Do you happen to know why the order didn't arrive?",
+     "I wonder why the order didn't arrive.",
+     "I was wondering why the order didn't arrive.",
+     "Could you tell me why the order did not arrive?",
+     "Do you know why the order did not arrive?",
+     "Could you tell me why the order didn't arrive, please?",
+     "Can you please tell me why the order didn't arrive?",
+     "Would you tell me why the order didn't arrive?",
+     "Could you please tell me why the order did not arrive?",
+     "Could you tell me why the order did not arrive, please?",
+     "Can you please tell me why the order did not arrive?",
+     "Would you mind telling me why the order did not arrive?",
+     "Do you happen to know why the order did not arrive?",
+     "I wonder why the order did not arrive.",
+     "I was wondering why the order did not arrive.",
+     "I'd like to know why the order did not arrive.",
+     "Would you tell me why the order did not arrive?"
+    ]
+   ],
+   "why": "Polite phrase + *why* + subject + verb in statement order: *why the order didn't arrive*, not *why didn't the order arrive*.",
+   "hints": [
+    [
+     "\\bdid\\b",
+     "In the indirect part use statement order: *... why the order didn't arrive.*"
+    ]
+   ],
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
   }
  },
  "r1-012": {
@@ -233,6 +582,32 @@
     "I wonder where I left my phone.",
     "I'd like to know what time it is."
    ]
+  },
+  "item": {
+   "id": "ip-B21-4a-r2",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "I'd like to know where did you go.",
+   "wrong": [
+    "Do you remember where you parked?",
+    "I wonder where I left my phone.",
+    "I'd like to know what time it is."
+   ],
+   "why": "Statement word order after *I'd like to know*: *where you put the keys.*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
   }
  },
  "r1-013": {
@@ -248,6 +623,26 @@
     "The rolls are baked in the oven.",
     "Cakes are sold at the market."
    ]
+  },
+  "item": {
+   "id": "c-0148",
+   "skill": "present_simple_passive",
+   "level": "A2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Bread* is uncountable: *is baked*.",
+   "why_lv": "*Bread* ir neskaitāms: *is baked*.",
+   "correct": "The bread are baked every morning.",
+   "wrong": [
+    "Milk is delivered every morning.",
+    "The rolls are baked in the oven.",
+    "Cakes are sold at the market."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_pres",
+   "src": "a2-big-1.csv:149"
   }
  },
  "r1-014": {
@@ -262,6 +657,25 @@
      "What do your friends play?"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0268",
+   "skill": "present_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with *What*: Your friends play chess.",
+   "why": "*Friends* is plural, so *Do* + subject + base verb.",
+   "why_lv": "*Friends* ir daudzskaitlī, tāpēc *Do* + teik. priekšmets + pamatforma.",
+   "answers": [
+    [
+     "What do your friends play?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "ps_negq",
+   "src": "a2-extras-1.csv:7"
   }
  },
  "r1-015": {
@@ -276,6 +690,30 @@
      "who"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0541",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I have a friend ___ lives in Canada.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "who"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "who",
+    "which",
+    "what"
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:2"
   }
  },
  "r1-016": {
@@ -291,6 +729,26 @@
     "what",
     "where"
    ]
+  },
+  "item": {
+   "id": "c-0542",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We stayed at a hotel ___ has a big pool.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "correct": "which",
+   "wrong": [
+    "who",
+    "what",
+    "where"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:3"
   }
  },
  "r1-017": {
@@ -306,6 +764,26 @@
     "what",
     "where"
    ]
+  },
+  "item": {
+   "id": "c-0543",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I use an app ___ makes short videos.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "correct": "that",
+   "wrong": [
+    "who",
+    "what",
+    "where"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:4"
   }
  },
  "r1-018": {
@@ -321,6 +799,26 @@
     "The man who he fixed my car was very kind.",
     "The man what fixed my car was very kind."
    ]
+  },
+  "item": {
+   "id": "c-0544",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*who / which / that* is already the subject: no second *he / she / it* (*the girl who lives here*, not *the girl who she lives here*).",
+   "why_lv": "*who / which / that* jau ir teikuma priekšmets: otru *he / she / it* neliek (*the girl who lives here*, nevis *the girl who she lives here*).",
+   "correct": "The man who fixed my car was very kind.",
+   "wrong": [
+    "The man which fixed my car was very kind.",
+    "The man who he fixed my car was very kind.",
+    "The man what fixed my car was very kind."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:5"
   }
  },
  "r1-019": {
@@ -336,6 +834,26 @@
     "I need a laptop that it is light.",
     "I need a laptop what is light."
    ]
+  },
+  "item": {
+   "id": "c-0545",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*who / which / that* is already the subject: no second *he / she / it* (*the girl who lives here*, not *the girl who she lives here*).",
+   "why_lv": "*who / which / that* jau ir teikuma priekšmets: otru *he / she / it* neliek (*the girl who lives here*, nevis *the girl who she lives here*).",
+   "correct": "I need a laptop that is light.",
+   "wrong": [
+    "I need a laptop who is light.",
+    "I need a laptop that it is light.",
+    "I need a laptop what is light."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:6"
   }
  },
  "r1-020": {
@@ -351,6 +869,26 @@
     "living",
     "is living"
    ]
+  },
+  "item": {
+   "id": "c-0546",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The people who ___ next door are very friendly.",
+   "why": "After *who / which / that* the verb agrees with the noun before it: *the people who live*, *the bus which goes*.",
+   "why_lv": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the people who live, the bus which goes*.",
+   "correct": "live",
+   "wrong": [
+    "lives",
+    "living",
+    "is living"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:7"
   }
  },
  "r1-021": {
@@ -366,6 +904,26 @@
     "going",
     "gone"
    ]
+  },
+  "item": {
+   "id": "c-0547",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The bus which ___ to the airport leaves at six.",
+   "why": "After *who / which / that* the verb agrees with the noun before it: *the people who live*, *the bus which goes*.",
+   "why_lv": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the people who live, the bus which goes*.",
+   "correct": "goes",
+   "wrong": [
+    "go",
+    "going",
+    "gone"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:8"
   }
  },
  "r1-022": {
@@ -381,6 +939,26 @@
     "It's a film that makes people laugh.",
     "The shop which sells fresh bread is closed today."
    ]
+  },
+  "item": {
+   "id": "c-0548",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "correct": "I know a woman which speaks five languages.",
+   "wrong": [
+    "We need a teacher who can sing.",
+    "It's a film that makes people laugh.",
+    "The shop which sells fresh bread is closed today."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:9"
   }
  },
  "r1-023": {
@@ -396,6 +974,26 @@
      "that"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0549",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: A pilot is a person ___ flies planes.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "who",
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:10"
   }
  },
  "r1-024": {
@@ -411,6 +1009,26 @@
      "that"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0550",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: I bought a bike ___ has ten gears.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "which",
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:11"
   }
  },
  "r1-025": {
@@ -426,6 +1044,26 @@
      "that"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0551",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: The woman ___ teaches us yoga is from India.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "who",
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:12"
   }
  },
  "r1-026": {
@@ -441,6 +1079,26 @@
      "that"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0552",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: Do you like songs ___ tell a story?",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "which",
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:13"
   }
  },
  "r1-027": {
@@ -456,6 +1114,26 @@
      "that"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0553",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: On our trip we met a guide ___ spoke perfect English.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "who",
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:14"
   }
  },
  "r1-028": {
@@ -470,6 +1148,25 @@
      "I have a cousin who works in a hotel."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0554",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join with *who*: I have a cousin. He works in a hotel.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answers": [
+    [
+     "I have a cousin who works in a hotel."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:15"
   }
  },
  "r1-029": {
@@ -485,6 +1182,26 @@
      "We visited a museum that has old cars."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0555",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join the two sentences: We visited a museum. It has old cars.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answers": [
+    [
+     "We visited a museum which has old cars.",
+     "We visited a museum that has old cars."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:16"
   }
  },
  "r1-030": {
@@ -502,6 +1219,28 @@
      "The app that is free helps me learn new words."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0556",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join the two sentences: The app helps me learn new words. It is free.",
+   "why": "Join with *who* (people) or *which / that* (things); the second *he / she / it* goes.",
+   "why_lv": "Savieno ar *who* (cilvēki) vai *which / that* (lietas); otrais *he / she / it* izpaliek.",
+   "answers": [
+    [
+     "The app which helps me learn new words is free.",
+     "The app that helps me learn new words is free.",
+     "The app which is free helps me learn new words.",
+     "The app that is free helps me learn new words."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:17"
   }
  },
  "r1-031": {
@@ -513,6 +1252,25 @@
    "kind": "order",
    "sentence": "i have a neighbour who plays the piano",
    "also": []
+  },
+  "item": {
+   "id": "c-0557",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "sentence": "i have a neighbour who plays the piano",
+   "answers": [
+    [
+     "i have a neighbour who plays the piano"
+    ]
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:18"
   }
  },
  "r1-032": {
@@ -524,6 +1282,25 @@
    "kind": "order",
    "sentence": "we stayed in a flat that had a garden",
    "also": []
+  },
+  "item": {
+   "id": "c-0558",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "sentence": "we stayed in a flat that had a garden",
+   "answers": [
+    [
+     "we stayed in a flat that had a garden"
+    ]
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:19"
   }
  },
  "r1-033": {
@@ -535,6 +1312,25 @@
    "kind": "order",
    "sentence": "she wants a job which pays well",
    "also": []
+  },
+  "item": {
+   "id": "c-0559",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "sentence": "she wants a job which pays well",
+   "answers": [
+    [
+     "she wants a job which pays well"
+    ]
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:20"
   }
  },
  "r1-034": {
@@ -546,6 +1342,25 @@
    "kind": "order",
    "sentence": "my uncle has a shop that sells bikes",
    "also": []
+  },
+  "item": {
+   "id": "c-0560",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "sentence": "my uncle has a shop that sells bikes",
+   "answers": [
+    [
+     "my uncle has a shop that sells bikes"
+    ]
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:21"
   }
  },
  "r1-035": {
@@ -557,6 +1372,25 @@
    "kind": "order",
    "sentence": "she met a man who makes furniture",
    "also": []
+  },
+  "item": {
+   "id": "c-0561",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "sentence": "she met a man who makes furniture",
+   "answers": [
+    [
+     "she met a man who makes furniture"
+    ]
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:22"
   }
  },
  "r1-036": {
@@ -574,6 +1408,34 @@
      "speaks"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0562",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I know a man ___ ___ three languages.",
+   "why": "After *who / which / that* the verb agrees with the noun before it: *the people who live*, *the bus which goes*.",
+   "why_lv": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the people who live, the bus which goes*.",
+   "answers": [
+    [
+     "who"
+    ],
+    [
+     "speaks"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "who",
+    "speaks",
+    "which",
+    "speak"
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:23"
   }
  },
  "r1-037": {
@@ -588,6 +1450,30 @@
      "which"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0563",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We bought a car ___ uses very little petrol.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "answers": [
+    [
+     "which"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "which",
+    "who",
+    "what"
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:24"
   }
  },
  "r1-038": {
@@ -602,6 +1488,30 @@
      "work"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0564",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The women who ___ in the next office are my colleagues.",
+   "why": "After *who / which / that* the verb agrees with the noun before it: *the people who live*, *the bus which goes*.",
+   "why_lv": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the people who live, the bus which goes*.",
+   "answers": [
+    [
+     "work"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "work",
+    "works",
+    "working"
+   ],
+   "role": "check",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:25"
   }
  },
  "r1-039": {
@@ -629,6 +1539,37 @@
      "which shows roads and towns."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0565",
+   "skill": "relative_clauses",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who lives next door*.",
+   "why_lv": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who lives next door*.",
+   "pairs": [
+    [
+     "A baker is a person",
+     "who makes bread."
+    ],
+    [
+     "A fridge is a machine",
+     "which keeps food cold."
+    ],
+    [
+     "A tourist is someone",
+     "who travels for fun."
+    ],
+    [
+     "A map is a picture",
+     "which shows roads and towns."
+    ]
+   ],
+   "role": "learn",
+   "point": "rel_subj",
+   "src": "a2-rel-might-1.csv:26"
   }
  },
  "r1-040": {
@@ -644,6 +1585,26 @@
     "to rain",
     "raining"
    ]
+  },
+  "item": {
+   "id": "c-0566",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Take an umbrella. It might ___ later.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "correct": "rain",
+   "wrong": [
+    "rains",
+    "to rain",
+    "raining"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:27"
   }
  },
  "r1-041": {
@@ -659,6 +1620,26 @@
     "She may to be at home now.",
     "She may being at home now."
    ]
+  },
+  "item": {
+   "id": "c-0567",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "correct": "She may be at home now.",
+   "wrong": [
+    "She may is at home now.",
+    "She may to be at home now.",
+    "She may being at home now."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:28"
   }
  },
  "r1-042": {
@@ -674,6 +1655,26 @@
     "may to",
     "maybe"
    ]
+  },
+  "item": {
+   "id": "c-0568",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I'm not sure yet. We ___ go to the beach on Saturday.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "correct": "might",
+   "wrong": [
+    "might to",
+    "may to",
+    "maybe"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:29"
   }
  },
  "r1-043": {
@@ -689,6 +1690,26 @@
     "is",
     "don't"
    ]
+  },
+  "item": {
+   "id": "c-0569",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: He's very tired. He ___ not come to the party.",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "correct": "might",
+   "wrong": [
+    "doesn't",
+    "is",
+    "don't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:30"
   }
  },
  "r1-044": {
@@ -704,6 +1725,26 @@
     "They may not have time today.",
     "I might buy a new phone."
    ]
+  },
+  "item": {
+   "id": "c-0570",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Don't use *will* and *might* together: *It might snow.* or *Maybe it will snow.*",
+   "why_lv": "Nelieto *will* un *might* kopā: *It might snow.* vai *Maybe it will snow.*",
+   "correct": "Maybe it will might snow tonight.",
+   "wrong": [
+    "Our flight might be late.",
+    "They may not have time today.",
+    "I might buy a new phone."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:31"
   }
  },
  "r1-045": {
@@ -719,6 +1760,26 @@
     "Ask Tom. He might to know the answer.",
     "Ask Tom. He might knowing the answer."
    ]
+  },
+  "item": {
+   "id": "c-0571",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "correct": "Ask Tom. He might know the answer.",
+   "wrong": [
+    "Ask Tom. He might knows the answer.",
+    "Ask Tom. He might to know the answer.",
+    "Ask Tom. He might knowing the answer."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:32"
   }
  },
  "r1-046": {
@@ -733,6 +1794,30 @@
      "be"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0572",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The pharmacy may ___ closed on Sunday.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answers": [
+    [
+     "be"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "be",
+    "is",
+    "being"
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:33"
   }
  },
  "r1-047": {
@@ -747,6 +1832,25 @@
     "maybe",
     "may to"
    ]
+  },
+  "item": {
+   "id": "c-0573",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Don't wait for me. I ___ be late.",
+   "why": "*may* is the verb: *I may be late.* *maybe* means *perhaps* and needs its own verb: *Maybe I'll be late.*",
+   "why_lv": "*may* ir darbības vārds: *I may be late.* *maybe* nozīmē varbūt, un tam vajag savu darbības vārdu: *Maybe I'll be late.*",
+   "correct": "may",
+   "wrong": [
+    "maybe",
+    "may to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:34"
   }
  },
  "r1-048": {
@@ -763,6 +1867,27 @@
      "could"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0574",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: I'm not sure, but I ___ visit my aunt this weekend.",
+   "why": "*might, may* and *could* all say that something is possible here.",
+   "why_lv": "*might, may* un *could* šeit visi saka, ka kaut kas ir iespējams.",
+   "answers": [
+    [
+     "might",
+     "may",
+     "could"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:35"
   }
  },
  "r1-049": {
@@ -780,6 +1905,28 @@
      "can"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0575",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: The road is icy. You ___ fall, so be careful.",
+   "why": "*might, may* and *could* all say that something is possible here.",
+   "why_lv": "*might, may* un *could* šeit visi saka, ka kaut kas ir iespējams.",
+   "answers": [
+    [
+     "might",
+     "may",
+     "could",
+     "can"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:36"
   }
  },
  "r1-050": {
@@ -794,6 +1941,25 @@
      "not be"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0576",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I can't see Anna's car. She might ___ at home. (not / be)",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "answers": [
+    [
+     "not be"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:37"
   }
  },
  "r1-051": {
@@ -810,6 +1976,27 @@
      "could"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0577",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip.",
+   "why": "*might, may* and *could* all say that something is possible here.",
+   "why_lv": "*might, may* un *could* šeit visi saka, ka kaut kas ir iespējams.",
+   "answers": [
+    [
+     "might",
+     "may",
+     "could"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:38"
   }
  },
  "r1-052": {
@@ -826,6 +2013,27 @@
      "could"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0578",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write the missing word: I'm not sure, but they ___ have a map of the town at the desk.",
+   "why": "*might, may* and *could* all say that something is possible here.",
+   "why_lv": "*might, may* un *could* šeit visi saka, ka kaut kas ir iespējams.",
+   "answers": [
+    [
+     "might",
+     "may",
+     "could"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:39"
   }
  },
  "r1-053": {
@@ -840,6 +2048,25 @@
      "The concert tickets might be sold out."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0579",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *might*: Perhaps the concert tickets are sold out.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answers": [
+    [
+     "The concert tickets might be sold out."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:40"
   }
  },
  "r1-054": {
@@ -857,6 +2084,28 @@
      "Today we mightn't finish the project."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0580",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: We might finish the project today.",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "answers": [
+    [
+     "We might not finish the project today.",
+     "We mightn't finish the project today.",
+     "Today we might not finish the project.",
+     "Today we mightn't finish the project."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:41"
   }
  },
  "r1-055": {
@@ -871,6 +2120,25 @@
      "She may know Anna."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0581",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *may*: It's possible that she knows Anna.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answers": [
+    [
+     "She may know Anna."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:42"
   }
  },
  "r1-056": {
@@ -882,6 +2150,26 @@
    "kind": "order",
    "sentence": "the café might be busy today",
    "also": []
+  },
+  "item": {
+   "id": "c-0582",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "sentence": "the café might be busy today",
+   "answers": [
+    [
+     "the café might be busy today",
+     "today the café might be busy"
+    ]
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:43"
   }
  },
  "r1-057": {
@@ -893,6 +2181,25 @@
    "kind": "order",
    "sentence": "i may not have time for lunch",
    "also": []
+  },
+  "item": {
+   "id": "c-0583",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "sentence": "i may not have time for lunch",
+   "answers": [
+    [
+     "i may not have time for lunch"
+    ]
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:44"
   }
  },
  "r1-058": {
@@ -904,6 +2211,25 @@
    "kind": "order",
    "sentence": "they might move to another city",
    "also": []
+  },
+  "item": {
+   "id": "c-0584",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "sentence": "they might move to another city",
+   "answers": [
+    [
+     "they might move to another city"
+    ]
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:45"
   }
  },
  "r1-059": {
@@ -915,6 +2241,25 @@
    "kind": "order",
    "sentence": "you might need a warm jacket",
    "also": []
+  },
+  "item": {
+   "id": "c-0585",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "sentence": "you might need a warm jacket",
+   "answers": [
+    [
+     "you might need a warm jacket"
+    ]
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:46"
   }
  },
  "r1-060": {
@@ -926,6 +2271,26 @@
    "kind": "order",
    "sentence": "my phone might not work in the mountains",
    "also": []
+  },
+  "item": {
+   "id": "c-0586",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "sentence": "my phone might not work in the mountains",
+   "answers": [
+    [
+     "my phone might not work in the mountains",
+     "in the mountains my phone might not work"
+    ]
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:47"
   }
  },
  "r1-061": {
@@ -943,6 +2308,34 @@
      "snow"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0587",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It ___ ___ tomorrow, so I'm taking my boots.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answers": [
+    [
+     "might"
+    ],
+    [
+     "snow"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "might",
+    "snow",
+    "snows",
+    "to"
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:48"
   }
  },
  "r1-062": {
@@ -960,6 +2353,34 @@
      "join"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0588",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She may ___ ___ the meeting today.",
+   "why": "Negative: *might not / may not* + base verb, without *don't / doesn't*: *He might not come.*",
+   "why_lv": "Noliegums: *might not / may not* + pamatforma, bez *don't / doesn't*: *He might not come.*",
+   "answers": [
+    [
+     "not"
+    ],
+    [
+     "join"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "not",
+    "join",
+    "doesn't",
+    "joins"
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:49"
   }
  },
  "r1-063": {
@@ -977,6 +2398,34 @@
      "like"
     ]
    ]
+  },
+  "item": {
+   "id": "c-0589",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "You ___ ___ this film. It's very funny.",
+   "why": "*might / may* + base verb (no *to*, no *-s*) = it is possible: *It might rain.*",
+   "why_lv": "*might / may* + pamatforma (bez to, bez *-s*) = iespējams: *It might rain.*",
+   "answers": [
+    [
+     "might"
+    ],
+    [
+     "like"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "might",
+    "like",
+    "likes",
+    "liking"
+   ],
+   "role": "check",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:50"
   }
  },
  "r1-064": {
@@ -1004,6 +2453,37 @@
      "Perhaps they will lose."
     ]
    ]
+  },
+  "item": {
+   "id": "c-0590",
+   "skill": "more_modals",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "why": "*will* = sure; *might* = perhaps. *won't* and *might not* are the negatives.",
+   "why_lv": "*will* = droši; *might* = varbūt. *won't* un *might not* ir nolieguma formas.",
+   "pairs": [
+    [
+     "It will rain.",
+     "I'm sure about the rain."
+    ],
+    [
+     "She might call.",
+     "Perhaps she will call."
+    ],
+    [
+     "He won't come.",
+     "I'm sure he will stay at home."
+    ],
+    [
+     "They might not win.",
+     "Perhaps they will lose."
+    ]
+   ],
+   "role": "learn",
+   "point": "might",
+   "src": "a2-rel-might-1.csv:51"
   }
  },
  "r1-065": {
@@ -1019,6 +2499,26 @@
     "He asked me whether I liked the job.",
     "He asked if I had liked the job."
    ]
+  },
+  "item": {
+   "id": "c-0883",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *asked* the question has normal word order, without *did*.",
+   "why_lv": "Pēc *asked* jautājumam ir parastā vārdu secība, bez *did*.",
+   "correct": "He asked me did I like the job.",
+   "wrong": [
+    "He asked me if I liked the job.",
+    "He asked me whether I liked the job.",
+    "He asked if I had liked the job."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "b1-cond-rep-1.csv:219"
   }
  },
  "r1-066": {
@@ -1034,6 +2534,26 @@
     "She is used to getting up early.",
     "She got used to getting up early."
    ]
+  },
+  "item": {
+   "id": "c-0943",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*be used to* + *-ing* = something is normal for you: *She isn't used to living in a big city.*",
+   "why_lv": "*be used to + -ing* = kaut kas ir ierasts: *She isn't used to living in a big city.*",
+   "correct": "She is used to get up early.",
+   "wrong": [
+    "She used to get up early.",
+    "She is used to getting up early.",
+    "She got used to getting up early."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "be_used_to",
+   "src": "b1-new-1.csv:30"
   }
  },
  "r1-067": {
@@ -1049,6 +2569,26 @@
      "I have decided to go home early."
     ]
    ]
+  },
+  "item": {
+   "id": "c-1241",
+   "skill": "verb_patterns",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a sentence with decide: I will go home early.",
+   "why": "*want, decide, hope, manage, refuse, promise, pretend, afford* + *to* + verb.",
+   "why_lv": "*want, decide, hope, manage, refuse, promise, pretend, afford + to* + darbības vārds.",
+   "answers": [
+    [
+     "I decided to go home early.",
+     "I have decided to go home early."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "vp_to",
+   "src": "b1-new-3.csv:144"
   }
  },
  "r1-068": {
@@ -1063,6 +2603,25 @@
      "Why is she crying?"
     ]
    ]
+  },
+  "item": {
+   "id": "c-1880",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with Why: She is crying.",
+   "why": "Question: *am / is / are* before the subject. Negative: *not* after *am / is / are*.",
+   "why_lv": "Jautājums: *am / is / are* pirms teik. priekšmeta. Noliegums: *not* aiz *am / is / are*.",
+   "answers": [
+    [
+     "Why is she crying?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pc_form",
+   "src": "b1-tenses-1.csv:64"
   }
  },
  "r1-069": {
@@ -1074,6 +2633,25 @@
    "kind": "order",
    "sentence": "should we leave before it gets dark",
    "also": []
+  },
+  "item": {
+   "id": "c-2497",
+   "skill": "modal_verbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "*Should* + subject + base verb asks for advice.",
+   "why_lv": "*Should* + teik. priekšmets + pamatforma jautā padomu.",
+   "sentence": "should we leave before it gets dark",
+   "answers": [
+    [
+     "should we leave before it gets dark"
+    ]
+   ],
+   "role": "check",
+   "point": "should",
+   "src": "modal-verbs-1.csv:38"
   }
  },
  "r1-070": {
@@ -1088,6 +2666,25 @@
     "must",
     "mustn't"
    ]
+  },
+  "item": {
+   "id": "c-2883",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The lights are off and nobody answers the door. They ___ be at home.",
+   "why": "*must* = I am sure it is true; *can't* = I am sure it is not true. Not *mustn't*: it means that something is not allowed.",
+   "why_lv": "*must* = noteikti tā ir; *can't* = noteikti tā nav. Ne *mustn't*: tas nozīmē, ka kaut ko nedrīkst.",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:2"
   }
  },
  "r1-071": {
@@ -1102,6 +2699,25 @@
     "can't",
     "mustn't"
    ]
+  },
+  "item": {
+   "id": "c-2884",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She's been running for an hour in this heat. She ___ be thirsty.",
+   "why": "*must* = I am sure it is true; *can't* = I am sure it is not true. Not *mustn't*: it means that something is not allowed.",
+   "why_lv": "*must* = noteikti tā ir; *can't* = noteikti tā nav. Ne *mustn't*: tas nozīmē, ka kaut ko nedrīkst.",
+   "correct": "must",
+   "wrong": [
+    "can't",
+    "mustn't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:3"
   }
  },
  "r1-072": {
@@ -1116,6 +2732,25 @@
     "must",
     "mustn't"
    ]
+  },
+  "item": {
+   "id": "c-2885",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: That ___ be Tom's car. He sold it last month.",
+   "why": "*must* = I am sure it is true; *can't* = I am sure it is not true. Not *mustn't*: it means that something is not allowed.",
+   "why_lv": "*must* = noteikti tā ir; *can't* = noteikti tā nav. Ne *mustn't*: tas nozīmē, ka kaut ko nedrīkst.",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:4"
   }
  },
  "r1-073": {
@@ -1130,6 +2765,25 @@
     "can't",
     "mustn't"
    ]
+  },
+  "item": {
+   "id": "c-2886",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Everyone outside is wearing a coat and a hat. It ___ be very cold today.",
+   "why": "*must* = I am sure it is true; *can't* = I am sure it is not true. Not *mustn't*: it means that something is not allowed.",
+   "why_lv": "*must* = noteikti tā ir; *can't* = noteikti tā nav. Ne *mustn't*: tas nozīmē, ka kaut ko nedrīkst.",
+   "correct": "must",
+   "wrong": [
+    "can't",
+    "mustn't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:5"
   }
  },
  "r1-074": {
@@ -1144,6 +2798,25 @@
     "must",
     "mustn't"
    ]
+  },
+  "item": {
+   "id": "c-2887",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: This ___ be the right address. There's no number 52 on this street.",
+   "why": "*must* = I am sure it is true; *can't* = I am sure it is not true. Not *mustn't*: it means that something is not allowed.",
+   "why_lv": "*must* = noteikti tā ir; *can't* = noteikti tā nav. Ne *mustn't*: tas nozīmē, ka kaut ko nedrīkst.",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:6"
   }
  },
  "r1-075": {
@@ -1158,6 +2831,25 @@
     "must",
     "mustn't"
    ]
+  },
+  "item": {
+   "id": "c-2888",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home.",
+   "why": "*must* = I am sure it is true; *can't* = I am sure it is not true. Not *mustn't*: it means that something is not allowed.",
+   "why_lv": "*must* = noteikti tā ir; *can't* = noteikti tā nav. Ne *mustn't*: tas nozīmē, ka kaut ko nedrīkst.",
+   "correct": "can't",
+   "wrong": [
+    "must",
+    "mustn't"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:7"
   }
  },
  "r1-076": {
@@ -1172,6 +2864,25 @@
     "while",
     "for"
    ]
+  },
+  "item": {
+   "id": "c-2889",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My phone rang ___ the meeting, and everyone looked at me.",
+   "why": "*during* + a noun (*during the meeting*); *while* + a subject and a verb (*while I was looking*); *for* + how long (*for three years*).",
+   "why_lv": "*during* + lietvārds (*during the meeting*); *while* + teikuma priekšmets un darbības vārds (*while I was looking*); *for* + cik ilgi (*for three years*).",
+   "correct": "during",
+   "wrong": [
+    "while",
+    "for"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:8"
   }
  },
  "r1-077": {
@@ -1186,6 +2897,25 @@
     "during",
     "for"
    ]
+  },
+  "item": {
+   "id": "c-2890",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Someone stole my bag ___ I was looking at the menu.",
+   "why": "*during* + a noun (*during the meeting*); *while* + a subject and a verb (*while I was looking*); *for* + how long (*for three years*).",
+   "why_lv": "*during* + lietvārds (*during the meeting*); *while* + teikuma priekšmets un darbības vārds (*while I was looking*); *for* + cik ilgi (*for three years*).",
+   "correct": "while",
+   "wrong": [
+    "during",
+    "for"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:9"
   }
  },
  "r1-078": {
@@ -1200,6 +2930,25 @@
     "during",
     "while"
    ]
+  },
+  "item": {
+   "id": "c-2891",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We lived in Spain ___ three years before we moved to Riga.",
+   "why": "*during* + a noun (*during the meeting*); *while* + a subject and a verb (*while I was looking*); *for* + how long (*for three years*).",
+   "why_lv": "*during* + lietvārds (*during the meeting*); *while* + teikuma priekšmets un darbības vārds (*while I was looking*); *for* + cik ilgi (*for three years*).",
+   "correct": "for",
+   "wrong": [
+    "during",
+    "while"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:10"
   }
  },
  "r1-079": {
@@ -1214,6 +2963,25 @@
     "while",
     "for"
    ]
+  },
+  "item": {
+   "id": "c-2892",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I fell asleep ___ the film, so I don't know how it ends.",
+   "why": "*during* + a noun (*during the meeting*); *while* + a subject and a verb (*while I was looking*); *for* + how long (*for three years*).",
+   "why_lv": "*during* + lietvārds (*during the meeting*); *while* + teikuma priekšmets un darbības vārds (*while I was looking*); *for* + cik ilgi (*for three years*).",
+   "correct": "during",
+   "wrong": [
+    "while",
+    "for"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:11"
   }
  },
  "r1-080": {
@@ -1228,6 +2996,25 @@
     "During",
     "For"
    ]
+  },
+  "item": {
+   "id": "c-2893",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ we were waiting for the train, it started to snow.",
+   "why": "*during* + a noun (*during the meeting*); *while* + a subject and a verb (*while I was looking*); *for* + how long (*for three years*).",
+   "why_lv": "*during* + lietvārds (*during the meeting*); *while* + teikuma priekšmets un darbības vārds (*while I was looking*); *for* + cik ilgi (*for three years*).",
+   "correct": "While",
+   "wrong": [
+    "During",
+    "For"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:12"
   }
  },
  "r1-081": {
@@ -1242,6 +3029,25 @@
     "while",
     "for"
    ]
+  },
+  "item": {
+   "id": "c-2894",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I made a lot of good friends ___ my time at university.",
+   "why": "*during* + a noun (*during the meeting*); *while* + a subject and a verb (*while I was looking*); *for* + how long (*for three years*).",
+   "why_lv": "*during* + lietvārds (*during the meeting*); *while* + teikuma priekšmets un darbības vārds (*while I was looking*); *for* + cik ilgi (*for three years*).",
+   "correct": "during",
+   "wrong": [
+    "while",
+    "for"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:13"
   }
  },
  "r1-082": {
@@ -1256,6 +3062,25 @@
     "until",
     "since"
    ]
+  },
+  "item": {
+   "id": "c-2895",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Please pay the bill ___ Friday.",
+   "why": "*by* = not later than that time (a deadline); *until* = up to that time (something goes on). *since* + the start of a time up to now (*since 2019*). *By the time* + past: something had already happened.",
+   "why_lv": "*by* = ne vēlāk kā (termiņš); *until* = līdz tam laikam (kaut kas turpinās). *since* + sākuma brīdis līdz tagadnei (*since 2019*). *By the time* + pagātne: kaut kas jau bija noticis.",
+   "correct": "by",
+   "wrong": [
+    "until",
+    "since"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:14"
   }
  },
  "r1-083": {
@@ -1270,6 +3095,25 @@
     "by",
     "since"
    ]
+  },
+  "item": {
+   "id": "c-2896",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The shop is open ___ ten tonight, so we still have time.",
+   "why": "*by* = not later than that time (a deadline); *until* = up to that time (something goes on). *since* + the start of a time up to now (*since 2019*). *By the time* + past: something had already happened.",
+   "why_lv": "*by* = ne vēlāk kā (termiņš); *until* = līdz tam laikam (kaut kas turpinās). *since* + sākuma brīdis līdz tagadnei (*since 2019*). *By the time* + pagātne: kaut kas jau bija noticis.",
+   "correct": "until",
+   "wrong": [
+    "by",
+    "since"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:15"
   }
  },
  "r1-084": {
@@ -1284,6 +3128,25 @@
     "by",
     "since"
    ]
+  },
+  "item": {
+   "id": "c-2897",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I'll wait for you here ___ six. Then I'm going home.",
+   "why": "*by* = not later than that time (a deadline); *until* = up to that time (something goes on). *since* + the start of a time up to now (*since 2019*). *By the time* + past: something had already happened.",
+   "why_lv": "*by* = ne vēlāk kā (termiņš); *until* = līdz tam laikam (kaut kas turpinās). *since* + sākuma brīdis līdz tagadnei (*since 2019*). *By the time* + pagātne: kaut kas jau bija noticis.",
+   "correct": "until",
+   "wrong": [
+    "by",
+    "since"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:16"
   }
  },
  "r1-085": {
@@ -1298,6 +3161,25 @@
     "until",
     "since"
    ]
+  },
+  "item": {
+   "id": "c-2898",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Guests must leave their rooms ___ eleven o'clock on the last day.",
+   "why": "*by* = not later than that time (a deadline); *until* = up to that time (something goes on). *since* + the start of a time up to now (*since 2019*). *By the time* + past: something had already happened.",
+   "why_lv": "*by* = ne vēlāk kā (termiņš); *until* = līdz tam laikam (kaut kas turpinās). *since* + sākuma brīdis līdz tagadnei (*since 2019*). *By the time* + pagātne: kaut kas jau bija noticis.",
+   "correct": "by",
+   "wrong": [
+    "until",
+    "since"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:17"
   }
  },
  "r1-086": {
@@ -1312,6 +3194,25 @@
     "by",
     "until"
    ]
+  },
+  "item": {
+   "id": "c-2899",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We have lived in this flat ___ 2019, and we still like it.",
+   "why": "*by* = not later than that time (a deadline); *until* = up to that time (something goes on). *since* + the start of a time up to now (*since 2019*). *By the time* + past: something had already happened.",
+   "why_lv": "*by* = ne vēlāk kā (termiņš); *until* = līdz tam laikam (kaut kas turpinās). *since* + sākuma brīdis līdz tagadnei (*since 2019*). *By the time* + pagātne: kaut kas jau bija noticis.",
+   "correct": "since",
+   "wrong": [
+    "by",
+    "until"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:18"
   }
  },
  "r1-087": {
@@ -1326,6 +3227,25 @@
     "Until",
     "Since"
    ]
+  },
+  "item": {
+   "id": "c-2900",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ the time we reached the airport, our plane had already left.",
+   "why": "*by* = not later than that time (a deadline); *until* = up to that time (something goes on). *since* + the start of a time up to now (*since 2019*). *By the time* + past: something had already happened.",
+   "why_lv": "*by* = ne vēlāk kā (termiņš); *until* = līdz tam laikam (kaut kas turpinās). *since* + sākuma brīdis līdz tagadnei (*since 2019*). *By the time* + pagātne: kaut kas jau bija noticis.",
+   "correct": "By",
+   "wrong": [
+    "Until",
+    "Since"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:19"
   }
  },
  "r1-088": {
@@ -1340,6 +3260,25 @@
     "could",
     "was able"
    ]
+  },
+  "item": {
+   "id": "c-2901",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The fire was big, but everyone ___ get out of the building.",
+   "why": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *I could swim when I was five.*",
+   "why_lv": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *I could swim when I was five.*",
+   "correct": "was able to",
+   "wrong": [
+    "could",
+    "was able"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:20"
   }
  },
  "r1-089": {
@@ -1354,6 +3293,25 @@
     "could",
     "were able"
    ]
+  },
+  "item": {
+   "id": "c-2902",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The main road was closed, but we ___ find another way home.",
+   "why": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *I could swim when I was five.*",
+   "why_lv": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *I could swim when I was five.*",
+   "correct": "were able to",
+   "wrong": [
+    "could",
+    "were able"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:21"
   }
  },
  "r1-090": {
@@ -1368,6 +3326,25 @@
     "could",
     "managed"
    ]
+  },
+  "item": {
+   "id": "c-2903",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: In the end she ___ pass the exam, although it was very hard.",
+   "why": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *I could swim when I was five.*",
+   "why_lv": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *I could swim when I was five.*",
+   "correct": "managed to",
+   "wrong": [
+    "could",
+    "managed"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:22"
   }
  },
  "r1-091": {
@@ -1382,6 +3359,25 @@
     "could",
     "could to"
    ]
+  },
+  "item": {
+   "id": "c-2904",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one.",
+   "why": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *I could swim when I was five.*",
+   "why_lv": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *I could swim when I was five.*",
+   "correct": "were able to",
+   "wrong": [
+    "could",
+    "could to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:23"
   }
  },
  "r1-092": {
@@ -1396,6 +3392,25 @@
     "could",
     "could to"
    ]
+  },
+  "item": {
+   "id": "c-2905",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The sofa was very heavy, but the two of us ___ carry it upstairs.",
+   "why": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *I could swim when I was five.*",
+   "why_lv": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *I could swim when I was five.*",
+   "correct": "managed to",
+   "wrong": [
+    "could",
+    "could to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:24"
   }
  },
  "r1-093": {
@@ -1410,6 +3425,25 @@
     "managed to",
     "can"
    ]
+  },
+  "item": {
+   "id": "c-2906",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My grandfather ___ speak four languages when he was young.",
+   "why": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *I could swim when I was five.*",
+   "why_lv": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *I could swim when I was five.*",
+   "correct": "could",
+   "wrong": [
+    "managed to",
+    "can"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:25"
   }
  },
  "r1-094": {
@@ -1424,6 +3458,25 @@
     "Although",
     "However"
    ]
+  },
+  "item": {
+   "id": "c-2907",
+   "skill": "conj_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ the long journey, the children were not tired at all.",
+   "why": "*although* + a subject and a verb (*although she studied*); *despite* + a noun or *-ing* (*despite the weather, despite having a cold*); *However,* starts a new sentence.",
+   "why_lv": "*although* + teikuma priekšmets un darbības vārds (*although she studied*); *despite* + lietvārds vai *-ing* (*despite the weather, despite having a cold*); *However*, sāk jaunu teikumu.",
+   "correct": "Despite",
+   "wrong": [
+    "Although",
+    "However"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:26"
   }
  },
  "r1-095": {
@@ -1438,6 +3491,25 @@
     "Despite",
     "However"
    ]
+  },
+  "item": {
+   "id": "c-2908",
+   "skill": "conj_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ she studied hard, she didn't pass the driving test.",
+   "why": "*although* + a subject and a verb (*although she studied*); *despite* + a noun or *-ing* (*despite the weather, despite having a cold*); *However,* starts a new sentence.",
+   "why_lv": "*although* + teikuma priekšmets un darbības vārds (*although she studied*); *despite* + lietvārds vai *-ing* (*despite the weather, despite having a cold*); *However*, sāk jaunu teikumu.",
+   "correct": "Although",
+   "wrong": [
+    "Despite",
+    "However"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:27"
   }
  },
  "r1-096": {
@@ -1452,6 +3524,25 @@
     "although",
     "however"
    ]
+  },
+  "item": {
+   "id": "c-2909",
+   "skill": "conj_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We had a great holiday ___ the bad weather.",
+   "why": "*although* + a subject and a verb (*although she studied*); *despite* + a noun or *-ing* (*despite the weather, despite having a cold*); *However,* starts a new sentence.",
+   "why_lv": "*although* + teikuma priekšmets un darbības vārds (*although she studied*); *despite* + lietvārds vai *-ing* (*despite the weather, despite having a cold*); *However*, sāk jaunu teikumu.",
+   "correct": "despite",
+   "wrong": [
+    "although",
+    "however"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:28"
   }
  },
  "r1-097": {
@@ -1466,6 +3557,25 @@
     "despite",
     "however"
    ]
+  },
+  "item": {
+   "id": "c-2910",
+   "skill": "conj_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: He still goes to work by bike ___ he is seventy.",
+   "why": "*although* + a subject and a verb (*although she studied*); *despite* + a noun or *-ing* (*despite the weather, despite having a cold*); *However,* starts a new sentence.",
+   "why_lv": "*although* + teikuma priekšmets un darbības vārds (*although she studied*); *despite* + lietvārds vai *-ing* (*despite the weather, despite having a cold*); *However*, sāk jaunu teikumu.",
+   "correct": "although",
+   "wrong": [
+    "despite",
+    "however"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:29"
   }
  },
  "r1-098": {
@@ -1480,6 +3590,25 @@
     "Although",
     "However"
    ]
+  },
+  "item": {
+   "id": "c-2911",
+   "skill": "conj_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ having a cold, Anna sang at the concert.",
+   "why": "*although* + a subject and a verb (*although she studied*); *despite* + a noun or *-ing* (*despite the weather, despite having a cold*); *However,* starts a new sentence.",
+   "why_lv": "*although* + teikuma priekšmets un darbības vārds (*although she studied*); *despite* + lietvārds vai *-ing* (*despite the weather, despite having a cold*); *However*, sāk jaunu teikumu.",
+   "correct": "Despite",
+   "wrong": [
+    "Although",
+    "However"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:30"
   }
  },
  "r1-099": {
@@ -1494,6 +3623,25 @@
     "Although",
     "Despite"
    ]
+  },
+  "item": {
+   "id": "c-2912",
+   "skill": "conj_clauses",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The flat is quite small. ___, it is very close to the centre.",
+   "why": "*although* + a subject and a verb (*although she studied*); *despite* + a noun or *-ing* (*despite the weather, despite having a cold*); *However,* starts a new sentence.",
+   "why_lv": "*although* + teikuma priekšmets un darbības vārds (*although she studied*); *despite* + lietvārds vai *-ing* (*despite the weather, despite having a cold*); *However*, sāk jaunu teikumu.",
+   "correct": "However",
+   "wrong": [
+    "Although",
+    "Despite"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:31"
   }
  },
  "r1-100": {
@@ -1508,6 +3656,25 @@
     "because",
     "so"
    ]
+  },
+  "item": {
+   "id": "c-2913",
+   "skill": "conj_linkers",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The trains stopped ___ the strong wind.",
+   "why": "*because* + a subject and a verb (*because it was raining*); *because of* + a noun (*because of the wind*); *so* gives the result (*It was closed, so we left*).",
+   "why_lv": "*because* + teikuma priekšmets un darbības vārds (*because it was raining*); *because of* + lietvārds (*because of the wind*); *so* norāda uz sekām (*It was closed, so we left*).",
+   "correct": "because of",
+   "wrong": [
+    "because",
+    "so"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:32"
   }
  },
  "r1-101": {
@@ -1522,6 +3689,25 @@
     "because of",
     "so"
    ]
+  },
+  "item": {
+   "id": "c-2914",
+   "skill": "conj_linkers",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We took a taxi ___ it was raining very hard.",
+   "why": "*because* + a subject and a verb (*because it was raining*); *because of* + a noun (*because of the wind*); *so* gives the result (*It was closed, so we left*).",
+   "why_lv": "*because* + teikuma priekšmets un darbības vārds (*because it was raining*); *because of* + lietvārds (*because of the wind*); *so* norāda uz sekām (*It was closed, so we left*).",
+   "correct": "because",
+   "wrong": [
+    "because of",
+    "so"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:33"
   }
  },
  "r1-102": {
@@ -1536,6 +3722,25 @@
     "because",
     "because of"
    ]
+  },
+  "item": {
+   "id": "c-2915",
+   "skill": "conj_linkers",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The museum was closed, ___ we went to a café instead.",
+   "why": "*because* + a subject and a verb (*because it was raining*); *because of* + a noun (*because of the wind*); *so* gives the result (*It was closed, so we left*).",
+   "why_lv": "*because* + teikuma priekšmets un darbības vārds (*because it was raining*); *because of* + lietvārds (*because of the wind*); *so* norāda uz sekām (*It was closed, so we left*).",
+   "correct": "so",
+   "wrong": [
+    "because",
+    "because of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:34"
   }
  },
  "r1-103": {
@@ -1550,6 +3755,25 @@
     "because",
     "so"
    ]
+  },
+  "item": {
+   "id": "c-2916",
+   "skill": "conj_linkers",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I couldn't sleep ___ the noise from the street.",
+   "why": "*because* + a subject and a verb (*because it was raining*); *because of* + a noun (*because of the wind*); *so* gives the result (*It was closed, so we left*).",
+   "why_lv": "*because* + teikuma priekšmets un darbības vārds (*because it was raining*); *because of* + lietvārds (*because of the wind*); *so* norāda uz sekām (*It was closed, so we left*).",
+   "correct": "because of",
+   "wrong": [
+    "because",
+    "so"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:35"
   }
  },
  "r1-104": {
@@ -1564,6 +3788,25 @@
     "because of",
     "so"
    ]
+  },
+  "item": {
+   "id": "c-2917",
+   "skill": "conj_linkers",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: He was late for work ___ he overslept.",
+   "why": "*because* + a subject and a verb (*because it was raining*); *because of* + a noun (*because of the wind*); *so* gives the result (*It was closed, so we left*).",
+   "why_lv": "*because* + teikuma priekšmets un darbības vārds (*because it was raining*); *because of* + lietvārds (*because of the wind*); *so* norāda uz sekām (*It was closed, so we left*).",
+   "correct": "because",
+   "wrong": [
+    "because of",
+    "so"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:36"
   }
  },
  "r1-105": {
@@ -1578,6 +3821,25 @@
     "because of",
     "so"
    ]
+  },
+  "item": {
+   "id": "c-2918",
+   "skill": "conj_linkers",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The concert was cancelled ___ the singer was ill.",
+   "why": "*because* + a subject and a verb (*because it was raining*); *because of* + a noun (*because of the wind*); *so* gives the result (*It was closed, so we left*).",
+   "why_lv": "*because* + teikuma priekšmets un darbības vārds (*because it was raining*); *because of* + lietvārds (*because of the wind*); *so* norāda uz sekām (*It was closed, so we left*).",
+   "correct": "because",
+   "wrong": [
+    "because of",
+    "so"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-pairs-1.csv:37"
   }
  }
 }

@@ -73,7 +73,7 @@ def export(name, src, keys_file, limit):
     for n, i in enumerate(sel, 1):
         tid = f"{name}-{n:03d}"
         t = as_learner(i, rnd); t["id"] = tid; tasks.append(t)
-        keyout[tid] = {"hash": task_hash(i), "gate_key": key(i), "src": i["src"], "point": i.get("point"), "key": the_key(i)}
+        keyout[tid] = {"hash": task_hash(i), "gate_key": key(i), "src": i["src"], "point": i.get("point"), "key": the_key(i), "item": i}
     os.makedirs(OUT, exist_ok=True)
     json.dump(tasks, open(os.path.join(OUT, name + "-tasks.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(keyout, open(os.path.join(OUT, name + "-key.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -96,6 +96,25 @@ def accepted(k, ans):
     return True   # open writing: no fixed answer
 
 
+def grade_all(pairs):
+    """[(item, answer)] -> [bool], with the app's grader (tools/grade_items.php)."""
+    if not pairs: return []
+    tmp = tempfile.mkdtemp(); a = os.path.join(tmp, "in.json"); b = os.path.join(tmp, "out.json")
+    json.dump([{"item": i, "answer": x} for i, x in pairs], open(a, "w", encoding="utf-8"), ensure_ascii=False)
+    subprocess.run(["php", os.path.join(ROOT, "tools", "grade_items.php"), a, b], check=True)
+    return json.load(open(b))
+
+
+NOT_ENTERABLE = re.compile(r"not (offered|a card|among|in the options|an option)", re.I)
+
+
+def enterable(item, ans):
+    """A typed task takes any answer; in a choice or with cards the learner can only give what is offered."""
+    if item["kind"] in ("gap", "text") and not item.get("bank"): return True
+    if item["kind"] == "order": return True
+    return False
+
+
 def compare(name):
     keyd = json.load(open(os.path.join(OUT, name + "-key.json"), encoding="utf-8"))
     tasks = {t["id"]: t for t in json.load(open(os.path.join(OUT, name + "-tasks.json"), encoding="utf-8"))}
@@ -105,6 +124,22 @@ def compare(name):
         if os.path.isfile(p): readers.append({x["id"]: x for x in json.load(open(p, encoding="utf-8"))})
     lines = [f"# Blind check {name}: flags for the judge", "", f"{len(keyd)} tasks, {len(readers)} readers.", ""]
     flags = {}
+    todo = []   # every answer a reader gave or listed, graded once by the app's grader
+    for tid, k in keyd.items():
+        for r in readers:
+            x = r.get(tid) or {}
+            oc = x.get("other_correct")
+            for a in [x.get("answer")] + (oc if isinstance(oc, list) else ([oc] if oc else [])):
+                if a not in (None, "", "none") and k["item"]["kind"] in ("gap", "text", "order"): todo.append((tid, a))
+    res = grade_all([(keyd[t]["item"], a) for t, a in todo])
+    graded = {(t, json.dumps(a, ensure_ascii=False)): ok for (t, a), ok in zip(todo, res)}
+
+    def ok_of(k, a):
+        if a in (None, ""): return False
+        tid = next(t for t, v in keyd.items() if v is k)
+        g = graded.get((tid, json.dumps(a, ensure_ascii=False)))
+        return g if g is not None else accepted(k["key"], a)
+
     for tid, k in keyd.items():
         why = []
         answers = []
@@ -112,12 +147,18 @@ def compare(name):
             x = r.get(tid)
             if not x: why.append(f"reader {n}: no answer"); continue
             answers.append(norm(json.dumps(x.get("answer"), ensure_ascii=False)))
-            if not accepted(k["key"], x.get("answer")): why.append(f"reader {n}: answer not accepted: {x.get('answer')}")
-            for f, label in (("other_correct", "another correct answer"), ("wrong_options_that_fit", "a wrong option that fits"),
+            if not ok_of(k, x.get("answer")): why.append(f"reader {n}: answer not accepted: {x.get('answer')}")
+            oc = x.get("other_correct")
+            if oc and oc not in ("none", "no", [], ""):
+                rest = [o for o in (oc if isinstance(oc, list) else [oc]) if isinstance(o, (str, list)) and not NOT_ENTERABLE.search(json.dumps(o))
+                        and enterable(k["item"], o) and not ok_of(k, o)]   # what the grader accepts, or what cannot be entered, is no flag
+                if rest: why.append(f"reader {n}: another correct answer, not accepted: {rest}")
+            for f, label in (("wrong_options_that_fit", "a wrong option that fits"),
                              ("instruction_problem", "instruction"), ("level_problem", "level"), ("sense_problem", "sense")):
                 v = x.get(f)
                 if v and v not in ("none", "no", [], ""): why.append(f"reader {n}: {label}: {v}")
-        if len(set(answers)) > 1 and k["key"]["kind"] != "write": why.append("the readers disagree")
+        oks = [ok_of(k, r.get(tid, {}).get("answer")) for r in readers]
+        if len(set(answers)) > 1 and k["key"]["kind"] != "write" and not all(oks): why.append("the readers disagree")
         if why: flags[tid] = why
     for tid, why in flags.items():
         t = tasks[tid]; k = keyd[tid]

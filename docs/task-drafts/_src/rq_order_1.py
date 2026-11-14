@@ -42,7 +42,7 @@ order(RQ, L, "Where is your office?", "she asked me where my office was", R_EN)
 typed(RQ, L, "What time does the film start?", "He asked what time", ["the film started"], R_EN)
 gp(RQ, L, 3, "'What time does the train leave?'\nShe asked me what time ___ ___ .", "the train / left", *R_EN, bank=["the train", "left", "did", "leave"])
 mc(RQ, L, 2, "'What time does the shop close?'\nChoose the correct option: He asked what time ___.", "the shop closed", ["did the shop close", "does the shop close", "the shop did close"], *R_EN)
-order(RQ, L, "When does the bus usually come?", "she asked me when the bus usually came", R_EN)
+order(RQ, L, "When does the bus usually come?", "she asked me when the bus usually came", R_EN, also=["she usually asked me when the bus came"])
 
 typed(RQ, L, "Have you finished?", "He asked me if", ["I had finished", "I'd finished"], R_YN)
 gp(RQ, L, 3, "'Have you eaten?'\nShe asked me if ___ ___ ___ .", "I / had / eaten", *R_YN, bank=["I", "had", "eaten", "did", "eat"])

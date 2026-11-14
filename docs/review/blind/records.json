@@ -124,6 +124,11 @@
 "round": "r1",
 "task": "r1-071"
 },
+"2aa0bbc629f57311": {
+"gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked where her keys were",
+"round": "r5",
+"task": "r5-005"
+},
 "2b4d2a73fe99d93d": {
 "gate_key": "ind_polite | B1.2 | gap | 'Where is the toilet?'\nCould you tell me where ___ ___ ? | ",
 "round": "r4",
@@ -168,6 +173,11 @@
 "gate_key": "rep_questions | B1.2 | text | 'Where do you live?'\nFinish the sentence: She asked me where … | ",
 "round": "r4",
 "task": "r4-001"
+},
+"2f11b8089a00745a": {
+"gate_key": "ind_polite | B1.1 | order | Put the words in order to make a question. | do you know where mark works",
+"round": "r5",
+"task": "r5-008"
 },
 "2fa0abcd16d39dfb": {
 "gate_key": "more_modals | A2.2 | mcq | Which sentence is NOT correct? | Maybe it will might snow tonight.",
@@ -274,6 +284,16 @@
 "round": "r1",
 "task": "r1-059"
 },
+"56dc9cf562ce44bd": {
+"gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know where the car park is",
+"round": "r5",
+"task": "r5-012"
+},
+"5983f638aaccbb50": {
+"gate_key": "rep_questions | B1.2 | order | Put the words in order. | he asked why the shop was closed",
+"round": "r5",
+"task": "r5-007"
+},
 "5a373b25b6108ffc": {
 "gate_key": "cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | ",
 "round": "r1c",
@@ -338,6 +358,11 @@
 "gate_key": "rep_questions | B1.2 | order | 'Where are my keys?'\nPut the words in order. | she asked where her keys were",
 "round": "r4",
 "task": "r4-020"
+},
+"6d10ef0e8fdf57a2": {
+"gate_key": "ind_polite | B1.1 | order | Put the words in order to make a question. | could you tell me what time the bank closes",
+"round": "r5",
+"task": "r5-009"
 },
 "6d98c519b40bd0d5": {
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but I ___ visit my aunt this weekend. | ",
@@ -549,6 +574,11 @@
 "round": "r1",
 "task": "r1-026"
 },
+"9fa455c3a25a9c62": {
+"gate_key": "rep_questions | B1.2 | order | Put the words in order. | he asked if the shop could deliver on sunday",
+"round": "r5",
+"task": "r5-004"
+},
 "a3d358ee4888a7e3": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Someone stole my bag ___ I was looking at the menu. | while",
 "round": "r1",
@@ -583,6 +613,11 @@
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: My phone rang ___ the meeting, and everyone looked at me. | during",
 "round": "r1",
 "task": "r1-076"
+},
+"a982e98830a650b6": {
+"gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know how much the tickets are",
+"round": "r5",
+"task": "r5-010"
 },
 "ac9a303b621fd87d": {
 "gate_key": "more_modals | A2.2 | gap | I can't see Anna's car. She might ___ at home. (not / be) | ",
@@ -659,6 +694,11 @@
 "round": "r1",
 "task": "r1-097"
 },
+"ca0d9ae98ced06d7": {
+"gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know if there is a café near the station",
+"round": "r5",
+"task": "r5-011"
+},
 "cc6f4d8e8b15405a": {
 "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: He ___ to the party tonight. | might not come",
 "round": "r1b",
@@ -693,6 +733,11 @@
 "gate_key": "cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | ",
 "round": "r1b",
 "task": "r1b-002"
+},
+"dae2a7d974ce5d3b": {
+"gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked me when the bus usually came",
+"round": "r5",
+"task": "answers added"
 },
 "db025510c7d4db8b": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ having a cold, Anna sang at the concert. | Despite",
@@ -759,6 +804,11 @@
 "round": "r4",
 "task": "r4-028"
 },
+"efd28a6cf44ccd40": {
+"gate_key": "rep_questions | B2.1 | order | Put the words in order. | she asked how long the shop had been open",
+"round": "r5",
+"task": "r5-006"
+},
 "f2fb132fbe6a83d8": {
 "gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.",
 "round": "r1b",
@@ -779,6 +829,11 @@
 "round": "r4",
 "task": "r4-039"
 },
+"fb40d619cfaf6f42": {
+"gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked if the parcel had arrived",
+"round": "r5",
+"task": "r5-003"
+},
 "fb6e6b42f38f5273": {
 "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano",
 "round": "r1",
@@ -788,6 +843,11 @@
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ we were waiting for the train, it started to snow. | While",
 "round": "r1",
 "task": "r1-080"
+},
+"fc0c016ed85f9eb0": {
+"gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked me where my office was",
+"round": "r5",
+"task": "r5-001"
 },
 "fe9f314e3298d28c": {
 "gate_key": "ind_polite | B1.1 | text | 'What time does the bus leave?'\nFinish the sentence: Could you tell me what time … | ",

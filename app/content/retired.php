@@ -1405,6 +1405,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ar precīzu skaitu lieto Present Perfect Simple: *I've written five emails today.*"
 },
 {
+"id": "ppc-B12-5a",
+"skill": "present_perfect_continuous",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Your boss asks why you look tired. You were in traffic for an hour until now. Choose the correct option.",
+"correct": "I've been sitting in traffic for an hour.",
+"wrong": [
+"I sit in traffic for an hour.",
+"I will sit in traffic for an hour.",
+"I sat in traffic tomorrow."
+],
+"why": "A recent, continuing activity that explains the present: present perfect continuous.",
+"wrong_why": {},
+"why_lv": "Nesena, turpinoša darbība, kas izskaidro tagadni: Present Perfect Continuous."
+},
+{
 "id": "ppc-B12-6a",
 "skill": "present_perfect_continuous",
 "level": "B1.2",
@@ -3075,6 +3092,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*Unless* already means *if ... not*, so we do not add a second negative.",
 "wrong_why": {},
 "why_lv": "*Unless* jau nozīmē *if* ... *not*, tāpēc otru noliegumu nepievieno."
+},
+{
+"id": "cf-B12-5a",
+"skill": "cond_first",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "In an email to a client you want to sound confident but polite. Choose the correct option.",
+"correct": "If you send us the documents today, we will process your request by Friday.",
+"wrong": [
+"If you will send us the documents today, we will process your request by Friday.",
+"If you sent us the documents today, we will process your request by Friday.",
+"If you send us the documents today, we would process your request by Friday."
+],
+"why": "Real future condition: *if* + present simple, *will* + base verb.",
+"wrong_why": {},
+"why_lv": "Reāls nākotnes nosacījums: *if* + Present Simple, *will* + pamatforma."
 },
 {
 "id": "cf-B12-6a",
@@ -7549,6 +7583,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēkšņai īsai darbībai, kas pārtrauc citu darbību, lieto Past Simple."
 },
 {
+"id": "pp-B11-5a-r3",
+"skill": "present_perfect",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You cannot open the door because your keys are missing. Which sentence most directly presents the loss as a current problem?",
+"correct": "I've lost my keys.",
+"wrong": [
+"I lost my keys.",
+"Both tell us the same.",
+"Neither tells us this."
+],
+"why": "*I have lost my keys* presents the past loss as relevant now. The past simple reports the past event; context can also connect it to a current problem.",
+"wrong_why": {},
+"why_lv": "*I have lost my keys* uzsver pagātnes notikuma saistību ar tagadni. Past Simple apraksta pagātnes notikumu; arī to konteksts var saistīt ar pašreizējo problēmu."
+},
+{
 "id": "ppc-B11-5a-r2",
 "skill": "present_perfect_continuous",
 "level": "B1.1",
@@ -7582,6 +7633,23 @@ return json_decode(<<<'EF_JSON_END'
 "why": "For arrangements with a time we often use the present continuous.",
 "wrong_why": {},
 "why_lv": "Vienošanās ar laiku bieži izsaka ar Present Continuous."
+},
+{
+"id": "psp-B11-5a-r3",
+"skill": "present_simple_passive",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You want to write a neutral email and not blame anyone. Choose the correct option.",
+"correct": "The invoices are sent on Fridays.",
+"wrong": [
+"You send the invoices on Fridays.",
+"Someone sends the invoices on Fridays.",
+"I think you send the invoices on Fridays."
+],
+"why": "The passive keeps the focus on the action and does not name a person.",
+"wrong_why": {},
+"why_lv": "Ciešamā kārta uzmanību patur uz darbību, un cilvēks nav minēts."
 },
 {
 "id": "ppp-B11-5a-r3",
@@ -7683,6 +7751,23 @@ return json_decode(<<<'EF_JSON_END'
 "being"
 ],
 "why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
+},
+{
+"id": "ct-B12-5a-r2",
+"skill": "cond_third",
+"level": "B1.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A colleague forgot to save a file and lost two hours of work. Choose the correct comment about what could have been different.",
+"correct": "If you had saved it every ten minutes, you wouldn't have lost so much work.",
+"wrong": [
+"If you saved it every ten minutes, you wouldn't have lost so much work.",
+"If you had saved it every ten minutes, you won't lose so much work.",
+"If you would have saved it every ten minutes, you wouldn't have lost so much work."
+],
+"why": "Third conditional: *if* + past perfect, *would have* + past participle.",
+"wrong_why": {},
+"why_lv": "Third conditional: *if* + Past Perfect, *would have* + 3. forma."
 },
 {
 "id": "cm-C11-1a-r5",
@@ -7957,6 +8042,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.",
 "hints": []
+},
+{
+"id": "rv-B22-1a-r2",
+"skill": "rep_verbs",
+"level": "B2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which sentence correctly reports 'I'm sorry I'm late'?",
+"correct": "He apologised for being late.",
+"wrong": [
+"He apologised that he was late.",
+"He apologised to be late.",
+"He apologised of being late."
+],
+"why": "*apologise for* + -ing.",
+"wrong_why": {}
 },
 {
 "id": "rv-B22-2a-r2",

@@ -750,6 +750,17 @@ def revise(original):
     report_fix('cf-B11-3b', answers=[['arrive', 'have arrived', "'ve arrived"]], answer_notes=[['have arrived', 'Correct too: *have arrived* = after you have arrived. Not *will* after *when / as soon as*.', 'Arī pareizi: *have arrived* = kad būsi ieradies. Pēc *when / as soon as* nelieto *will*.']])
     report_fix('fup-B12-3a', answers=[['will be prepared', 'will have been prepared', 'is going to be prepared']], answer_notes=[['will have been prepared', 'Correct too: *will have been prepared* = ready before they arrive.', 'Arī pareizi: *will have been prepared* = viss būs gatavs, pirms viesi ieradīsies.'], ['is going to be prepared', 'Correct too: *be going to* = it is the plan.', 'Arī pareizi: *be going to* = tā ir ieplānots.']])
     report_fix('psp-A22-3b', q='These cars ___ in Germany, and they are sold all over the world. (build)')
+    # Rebuilds of 14 November (teacher approved the list docs/review/for-inga-2026-11-14.md): a wrong option that was correct English is replaced
+    report_fix('cf-B12-5a', q='Which sentence is correct?', wrong=['If you will sending us the documents today, we will process your request by Friday.',
+        'If you send us the documents today, we will processing your request by Friday.', 'If you send us the documents today, we would process your request by Friday.'])
+    report_fix('ct-B12-5a', q='Which sentence is correct?', wrong=["If you had save it every ten minutes, you wouldn't have lost so much work.",
+        "If you had saved it every ten minutes, you won't lose so much work.", "If you would have saved it every ten minutes, you wouldn't have lost so much work."])
+    report_fix('pp-B11-5a', q="Choose the correct option: I can't open the door. I ___ my keys.", correct='have lost', wrong=['lose', 'am losing', 'had lost'],
+        why='The loss was in the past, the problem is now: *have lost*.', why_lv='Zaudējums bija pagātnē, problēma ir tagad: Present Perfect *have lost*.', wrong_why={}, wrong_why_lv={})
+    report_fix('ppc-B12-5a', q="Choose the correct option: Sorry I'm late. I ___ in traffic since eight.", correct='have been sitting', wrong=['sit', 'am sitting', 'sat'],
+        why='From eight until now, and it explains why you are late: *have been sitting*.', why_lv='No astoņiem līdz tagadnei, un tas izskaidro kavēšanos: Present Perfect Continuous *have been sitting*.', wrong_why={}, wrong_why_lv={})
+    report_fix('psp-B11-5a', wrong=['You send the invoices on Fridays.', 'The invoices are send on Fridays.', 'I think you send the invoices on Fridays.'])
+    report_fix('rv-B22-1a', q='Which sentence is correct?', wrong=['He apologised for be late.', 'He apologised to be late.', 'He apologised of being late.'])
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

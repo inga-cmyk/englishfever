@@ -13486,5 +13486,41 @@
 "ind_advanced | B2.2 | gap | It depends on ___ the budget is approved or not. | ": [
 "iq_whether",
 "read"
+],
+"cond_first | B1.2 | mcq | Which sentence is correct? | If you send us the documents today, we will process your request by Friday.": [
+"c1",
+"read"
+],
+"cond_third | B1.2 | mcq | Which sentence is correct? | If you had saved it every ten minutes, you wouldn't have lost so much work.": [
+"c3_modal",
+"read"
+],
+"rep_verbs | B2.2 | mcq | Which sentence is correct? | He apologised for being late.": [
+"rv_prep_ing",
+"read"
+],
+"present_simple_passive | A2.2 | gap | These books ___ by millions of children every year. (read) | ": [
+"pas_pres",
+"read"
+],
+"present_continuous | B1.1 | gap | They ___ about moving to the coast at the moment, but they haven't decided yet. (think) | ": [
+"stative2",
+"read"
+],
+"past_continuous | B1.2 | mcq | Which sentence is correct? | I was going to buy a car, but I changed my mind.": [
+"fut_past",
+"read"
+],
+"modal_verbs | B1.1 | mcq | Which question is correct? | Do I have to pay now?": [
+"must_have_to",
+"read"
+],
+"present_perfect | B1.1 | mcq | Choose the correct option: I can't open the door. I ___ my keys. | have lost": [
+"pp_form",
+"read"
+],
+"present_perfect_continuous | B1.2 | mcq | Choose the correct option: Sorry I'm late. I ___ in traffic since eight. | have been sitting": [
+"ppc_result",
+"read"
 ]
 }

@@ -110,6 +110,44 @@
    "set": {
     "4": "How long did they stay in Rome? | How long did they stay?"
    }
+  },
+  {
+   "match": [
+    "mcq",
+    "You want to say you planned something but did not do it. Choose the best option.",
+    "I was going to buy a car, but I changed my mind."
+   ],
+   "line": 142,
+   "set": {
+    "3": "Which sentence is correct?",
+    "5": "I am going to buy a car, but I changed my mind. | I was go to buy a car, but I changed my mind. | I will buy a car, but I changed my mind.",
+    "6": "A plan in the past that did not happen: *was / were going to* + base form.",
+    "7": "Plāns pagātnē, kas nenotika: *was / were going to* + pamatforma.",
+    "9": "I was going to buy a car, but I changed my mind."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "They ___ to move to the coast, but they haven't decided yet. (think)",
+    "are thinking"
+   ],
+   "line": 62,
+   "set": {
+    "3": "They ___ about moving to the coast at the moment, but they haven't decided yet. (think)",
+    "9": "They ___ to move to the coast, but they haven't decided yet. (think)"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which sentence gives the time in the concert programme?",
+    "The concert starts at eight."
+   ],
+   "line": 35,
+   "set": {
+    "11": "yes"
+   }
   }
  ],
  "modal-verbs-1.csv": [
@@ -190,6 +228,19 @@
    "line": 23,
    "set": {
     "3": "Which sentence is correct?"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "You want to know if paying is necessary. Which question is correct?",
+    "Do I have to pay now?"
+   ],
+   "line": 35,
+   "set": {
+    "3": "Which question is correct?",
+    "5": "Do I has to pay now? | Do I must pay now? | Must I to pay now?",
+    "9": "Do I have to pay now?"
    }
   }
  ],
@@ -312,6 +363,51 @@
     "4": "have taken | have been taking",
     "13": "have been taking :: Correct too: *have been taking* stresses the activity; *have taken* the number of photos. :: Arī pareizi: *have been taking* uzsver darbību, *have taken* fotogrāfiju skaitu."
    }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which sentence says what happened to the shop, without saying who did it?",
+    "The shop was robbed last night."
+   ],
+   "line": 180,
+   "set": {
+    "5": "The shop robbed last night. | The robbers took money from the shop. | We went to the shop last night."
+   }
+  },
+  {
+   "match": [
+    "gap",
+    "These books ___ by children. (read)",
+    "are read"
+   ],
+   "line": 141,
+   "set": {
+    "3": "These books ___ by millions of children every year. (read)",
+    "9": "These books ___ by children. (read)"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "A man carries a very full cup. Which sentence is a prediction?",
+    "He's going to spill it."
+   ],
+   "line": 123,
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which sentence says that people make paper from wood, without saying who?",
+    "Paper is made from wood."
+   ],
+   "line": 148,
+   "set": {
+    "11": "yes"
+   }
   }
  ],
  "b1-passives-1.csv": [
@@ -390,6 +486,28 @@
    "set": {
     "3": "The parcels usually ___ to customers within two days. (deliver)",
     "9": "The parcels ___ to customers within two days. (deliver)"
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which sentence says that someone stole my phone, without saying who?",
+    "My phone was stolen on the bus."
+   ],
+   "line": 73,
+   "set": {
+    "5": "My phone stole on the bus. | The thief stole my phone. | I lost my phone on the bus."
+   }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which sentence says that someone empties the bins on Mondays, without saying who?",
+    "The bins are emptied on Mondays."
+   ],
+   "line": 35,
+   "set": {
+    "11": "yes"
    }
   }
  ],
@@ -1059,6 +1177,17 @@
     "3": "Mia ___ to school by bus every day. She never walks. (go)",
     "9": "Mia ___ to school by bus every day. (go)"
    }
+  },
+  {
+   "match": [
+    "mcq",
+    "Which sentence is an arrangement with a time?",
+    "I'm meeting Jack at six."
+   ],
+   "line": 85,
+   "set": {
+    "11": "yes"
+   }
   }
  ],
  "more-1.csv": [
@@ -1292,6 +1421,32 @@
    "set": {
     "4": "thought | was thinking",
     "13": "was thinking :: Correct too: *was thinking* = for some time yesterday. :: Arī pareizi: *was thinking* = vakar kādu laiku domāju."
+   }
+  }
+ ],
+ "twins-2.csv": [
+  {
+   "match": [
+    "mcq",
+    "Choose the correct option: I didn't charge my phone last night. Imagine a different past and its result now.",
+    "If I had charged my phone, it would be working now."
+   ],
+   "line": 8,
+   "set": {
+    "5": "If I charged my phone, it would be working now. | If I had charged my phone, it would have been working now. | If I would have charged my phone, it would be working now."
+   }
+  }
+ ],
+ "b1-new-3.csv": [
+  {
+   "match": [
+    "mcq",
+    "She said something. Which question asks what it was?",
+    "What did she say?"
+   ],
+   "line": 81,
+   "set": {
+    "11": "yes"
    }
   }
  ]

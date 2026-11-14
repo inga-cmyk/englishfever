@@ -44,7 +44,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 482, 'Unexpected active question count');   // -1: var-pp-b11-match-01 retired (12 November)
-check(count($retired) === 446, 'Unexpected correction count');   // +23: part A of 14 November (situation removed before a choice); +4: part B (refused correct answers); +2: reports of 13 November; +38: the draft of 11-12 November; +42: C1 tasks became B2.2 (12 November)
+check(count($retired) === 452, 'Unexpected correction count');   // +6: rebuilds of 14 November; +23: part A of 14 November (situation removed before a choice); +4: part B (refused correct answers); +2: reports of 13 November; +38: the draft of 11-12 November; +42: C1 tasks became B2.2 (12 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

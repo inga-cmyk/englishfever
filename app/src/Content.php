@@ -161,6 +161,20 @@ final class Content
         if ($it['kind'] === 'mcq' && preg_match('/What does (it|this|that) (say|mean)\?/i', (string) ($it['q'] ?? ''))) return 'learn';
         // meaning questions whose wrong options are correct sentences with another meaning (teacher, 12 November, U2 A, read one by one)
         static $learnQ = [
+            "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar." => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Which word can replace 'if' here? 'If it rains, the street floods.'" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "You see dark clouds. Which sentence is a prediction from what you can see now?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Which sentence is an arrangement (fixed time and place in your diary)?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "You want to mention a mistake politely, without blaming anyone. Choose the correct option." => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Is this statement true? 'I'm living with my parents at the moment' sounds more temporary than 'I live with my parents.'" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Which sentence sounds like news that is important right now?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Which word(s) do we use to report a yes/no question?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "'If we had booked earlier, we would have got a cheaper flight.' What really happened?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Which sentence gives a scheduled departure, rather than a hope, a past event or an action happening now?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "Why do we say 'Tickets are sold here'?" => true,   // 14 November: wrong options are correct sentences with another meaning
+            "The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'?" => true,   // 14 November: wrong options are correct sentences with another meaning
             "'I have no idea how to start.' What does 'how to start' mean?" => true,
             "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?" => true,
             "'Whatever he says, don't sign it.' What does 'whatever' mean here?" => true,

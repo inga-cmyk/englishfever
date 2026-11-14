@@ -229,9 +229,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 16,
+    "check": 15,
     "use": 3,
-    "learn": 5
+    "learn": 6
    },
    "task_levels": [
     "A2.2",
@@ -1784,9 +1784,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 8,
+    "check": 6,
     "use": 2,
-    "learn": 5
+    "learn": 7
    },
    "task_levels": [
     "A2.2",
@@ -1818,9 +1818,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 10,
+    "check": 8,
     "use": 7,
-    "learn": 2
+    "learn": 4
    },
    "task_levels": [
     "A2.2",
@@ -1851,9 +1851,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 7,
+    "check": 5,
     "use": 4,
-    "learn": 0
+    "learn": 2
    },
    "task_levels": [
     "A2.2",
@@ -2786,9 +2786,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 45,
+    "check": 44,
     "use": 17,
-    "learn": 4
+    "learn": 5
    },
    "task_levels": [
     "A2.2",
@@ -2928,9 +2928,9 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 8,
+    "check": 5,
     "use": 15,
-    "learn": 6
+    "learn": 9
    },
    "task_levels": [
     "A2.2",
@@ -2995,9 +2995,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 29,
+    "check": 28,
     "use": 15,
-    "learn": 5
+    "learn": 6
    },
    "task_levels": [
     "B1.1",
@@ -3323,9 +3323,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 65,
+    "check": 64,
     "use": 27,
-    "learn": 7
+    "learn": 8
    },
    "task_levels": [
     "A2.2",
@@ -3633,9 +3633,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 41,
+    "check": 40,
     "use": 23,
-    "learn": 14
+    "learn": 15
    },
    "task_levels": [
     "B1.2",
@@ -3759,9 +3759,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 6,
+    "check": 5,
     "use": 2,
-    "learn": 4
+    "learn": 5
    },
    "task_levels": [
     "B2.2"
@@ -3821,9 +3821,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 11,
+    "check": 10,
     "use": 6,
-    "learn": 6
+    "learn": 7
    },
    "task_levels": [
     "B2.2"
@@ -4208,9 +4208,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 1,
+    "check": 0,
     "use": 0,
-    "learn": 0
+    "learn": 1
    },
    "task_levels": [
     "B2.1"
@@ -4304,9 +4304,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 18,
+    "check": 17,
     "use": 5,
-    "learn": 4
+    "learn": 5
    },
    "task_levels": [
     "B1.2",
@@ -4338,9 +4338,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 6,
+    "check": 5,
     "use": 0,
-    "learn": 4
+    "learn": 5
    },
    "task_levels": [
     "B1.2",
@@ -4609,9 +4609,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 21,
+    "check": 20,
     "use": 14,
-    "learn": 3
+    "learn": 4
    },
    "task_levels": [
     "A2.2",

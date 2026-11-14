@@ -1,0 +1,9 @@
+[
+ {"id":"r4b-001","answer":"She asked me when the bus usually came.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-002","answer":"I had finished.","other_correct":["I'd finished.","He asked me if I had finished."],"wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-003","answer":"I could help her.","other_correct":["She asked me if I could help her."],"wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-004","answer":"He asked if the shop could deliver on Sunday.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-005","answer":"we were late.","other_correct":["The teacher asked us why we were late."],"wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-006","answer":"this jacket is?","other_correct":["Could you tell me how much this jacket is?","this jacket costs?"],"wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-007","answer":"the library is","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""}
+]

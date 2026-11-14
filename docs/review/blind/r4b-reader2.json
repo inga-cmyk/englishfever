@@ -1,0 +1,9 @@
+[
+ {"id":"r4b-001","answer":"She asked me when the bus usually came.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-002","answer":"I had finished.","other_correct":["I'd finished."],"wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-003","answer":"I could help her.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-004","answer":"He asked if the shop could deliver on Sunday.","other_correct":["He asked if on Sunday the shop could deliver. (grammatical but marked word order; probably should be accepted or the card set left as is knowingly)"],"wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-005","answer":"we were late.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r4b-006","answer":"this jacket is?","other_correct":["this jacket costs?","this jacket is.","this jacket costs."],"wrong_options_that_fit":"","instruction_problem":"The frame 'Could you tell me ...' is a polite question, so a learner will naturally end with '?'; the checker is only said to accept full stops, so '?' must be accepted too. Also 'how much this jacket costs' is a natural correct indirect question and should be accepted or excluded by the instruction (e.g. 'use the verb from the question').","level_problem":"","sense_problem":""},
+ {"id":"r4b-007","answer":"the library is","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""}
+]

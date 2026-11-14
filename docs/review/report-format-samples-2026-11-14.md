@@ -1,3 +1,5 @@
+> **Not used (teacher, 14 November):** these samples were not taken. A dialogue is written only where the report could be misunderstood (who speaks to whom); no notes in brackets such as *(to you)*. See `docs/ITEM-WRITING-RULES.md`.
+
 # Atstāstīšanas uzdevumi mini dialoga formātā: 5 paraugi (14. novembris)
 
 Formāts:

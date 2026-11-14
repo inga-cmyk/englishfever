@@ -1,0 +1,14 @@
+[
+ {"id":"r5-001","answer":"She asked me where my office was.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-002","answer":"She asked me when the bus usually came.","other_correct":["She usually asked me when the bus came."],"wrong_options_that_fit":"","instruction_problem":"Two correct orders: 'usually' can go with 'asked' (She usually asked me when the bus came) as well as with 'came'. The meaning changes, but both are grammatical and natural, so a checker that accepts only one order will mark a correct answer wrong. Fix: accept both, or change the cards (e.g. drop 'usually' or use 'every day').","level_problem":"","sense_problem":""},
+ {"id":"r5-003","answer":"She asked if the parcel had arrived.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-004","answer":"He asked if the shop could deliver on Sunday.","other_correct":["He asked on Sunday if the shop could deliver.","On Sunday he asked if the shop could deliver."],"wrong_options_that_fit":"","instruction_problem":"'on Sunday' can attach to 'asked' (when he asked) as well as to 'deliver', so other orders using all the cards are grammatical and natural. Fix: accept these orders, or change the cards to block them (e.g. 'deliver it on Sunday' / 'deliver on Sundays').","level_problem":"","sense_problem":""},
+ {"id":"r5-005","answer":"She asked where her keys were.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-006","answer":"She asked how long the shop had been open.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-007","answer":"He asked why the shop was closed.","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-008","answer":"Do you know where Mark works?","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-009","answer":"Could you tell me what time the bank closes?","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-010","answer":"Do you know how much the tickets are?","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-011","answer":"Do you know if there is a café near the station?","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""},
+ {"id":"r5-012","answer":"Do you know where the car park is?","other_correct":"","wrong_options_that_fit":"","instruction_problem":"","level_problem":"","sense_problem":""}
+]

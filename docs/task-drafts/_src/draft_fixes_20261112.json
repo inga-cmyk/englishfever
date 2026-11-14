@@ -162,6 +162,17 @@
    ],
    "line": 124,
    "drop": true
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "if you add salt the soup tastes better"
+   ],
+   "line": 198,
+   "set": {
+    "5": "also accepted: the soup tastes better if you add salt | if you add the salt soup tastes better | soup tastes better if you add the salt"
+   }
   }
  ],
  "b1-passives-1.csv": [

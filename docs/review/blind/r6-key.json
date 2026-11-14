@@ -1,0 +1,32 @@
+{
+ "r6-001": {
+  "hash": "28380603923717e6",
+  "gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked me what time the bus arrived",
+  "src": "rq-order-1.csv:9",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked me what time the bus arrived",
+   "also": []
+  },
+  "item": {
+   "id": "c-2675",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "she asked me what time the bus arrived",
+   "answers": [
+    [
+     "she asked me what time the bus arrived"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:9"
+  }
+ }
+}

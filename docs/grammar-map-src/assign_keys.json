@@ -14094,5 +14094,9 @@
 "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know where the car park is": [
 "iq_wh",
 "read"
+],
+"rep_questions | B1.2 | order | Put the words in order. | she asked me what time the bus arrived": [
+"rep_q_wh",
+"read"
 ]
 }

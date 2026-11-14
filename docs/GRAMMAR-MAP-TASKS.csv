@@ -3039,7 +3039,7 @@ rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:7,"rep_questions
 She asked me what time ___ ___ . | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:8,"rep_questions | B1.2 | mcq | 'What time does the shop close?'
 Choose the correct option: He asked what time ___. | the shop closed"
-rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:9,rep_questions | B1.2 | order | Put the words in order. | she asked me when the bus usually came
+rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:9,rep_questions | B1.2 | order | Put the words in order. | she asked me what time the bus arrived
 rep_q_wh,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:18,"rep_questions | B1.2 | text | 'Where is the manager?'
 Finish the sentence: She asked where … | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:19,"rep_questions | B1.2 | gap | 'Where is the station?'

@@ -6943,7 +6943,7 @@ return json_decode(<<<'EF_JSON_END'
 "rep_questions | text | 'What time does the film start?'\nFinish the sentence: He asked what time … | ": "rep_q_wh",
 "rep_questions | gap | 'What time does the train leave?'\nShe asked me what time ___ ___ . | ": "rep_q_wh",
 "rep_questions | mcq | 'What time does the shop close?'\nChoose the correct option: He asked what time ___. | the shop closed": "rep_q_wh",
-"rep_questions | order | Put the words in order. | she asked me when the bus usually came": "rep_q_wh",
+"rep_questions | order | Put the words in order. | she asked me what time the bus arrived": "rep_q_wh",
 "rep_questions | text | 'Where is the manager?'\nFinish the sentence: She asked where … | ": "rep_q_wh",
 "rep_questions | gap | 'Where is the station?'\nHe asked me where ___ ___ . | ": "rep_q_wh",
 "rep_questions | mcq | 'Where is the lift?'\nChoose the correct option: He asked where ___. | the lift was": "rep_q_wh",

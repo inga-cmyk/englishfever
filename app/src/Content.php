@@ -112,16 +112,27 @@ final class Content
      * A task that was relabelled (for example B1 to A2) leaves the active pool as soon as its approved copy exists at the lower level.
      * The original stays readable, so every old answer and unfinished session keeps working.
      */
+    /**
+     * The first sentence of a task, lower case, without a verb in brackets: an A2 copy that later got a situation sentence
+     * (They ___ married for 20 years, and they are still happy together.) still counts as the copy of the built-in task.
+     */
+    public static function copyStem(string $q): string
+    {
+        $q = mb_strtolower(trim(preg_replace('/\([^)]*\)/u', '', $q)));
+        $first = preg_split('/(?<=[.?!,])\s/u', $q)[0] ?? $q;
+        return trim(rtrim($first, '.?!, '));
+    }
+
     private static function hideRelabelled(): void
     {
         $rel = self::relabelled();
         if (!$rel || !class_exists('CustomItems', false)) return;
         $copies = [];
-        foreach (CustomItems::approved() as $c) if (strpos($c['level'], 'A2') === 0) $copies[$c['skill'] . '|' . mb_strtolower($c['q'])] = true;
+        foreach (CustomItems::approved() as $c) if (strpos($c['level'], 'A2') === 0) $copies[$c['skill'] . '|' . self::copyStem($c['q'])] = true;
         if (!$copies) return;
         $keep = [];
         foreach (self::$items as $it) {
-            if (isset($rel[$it['id']]) && isset($copies[$it['skill'] . '|' . mb_strtolower($it['q'])])) {
+            if (isset($rel[$it['id']]) && isset($copies[$it['skill'] . '|' . self::copyStem($it['q'])])) {
                 $it['d'] = self::difficulty($it['level'], $it['bloom']);
                 self::$hidden[$it['id']] = $it;
                 continue;

@@ -1127,7 +1127,8 @@
    ],
    "line": 37,
    "set": {
-    "3": "Anna's question to you: 'Can you help me?' Put the words in order."
+    "3": "Put all the words in order. More than one answer is possible.",
+    "5": "also accepted: I asked her if she could help"
    }
   }
  ],

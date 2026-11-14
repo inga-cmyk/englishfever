@@ -123,6 +123,7 @@ check("each new topic has at least 25 questions", all(sum(cnt.get(i, {}).values(
 check("the new areas are in the topic list", {"nouns", "clauses", "questions", "patterns", "adjectives"} <= {a["id"] for a in learner.api("meta")["areas"]})
 for i in NEW8:
     st, seen = run_levels(["B1"], [i])
-    check("a B1 session on " + i + " starts and stays on that topic", st["_status"] == 200 and seen and all(q["skill"] == i for q in seen), (st["_status"], i))
+    other = [q for q in seen if q["skill"] != i]   # after a second mistake in a point the map may ask one task from a point it stands on (14 November, C2): at most a third
+    check("a B1 session on " + i + " starts and stays on that topic", st["_status"] == 200 and seen and seen[0]["skill"] == i and len(other) <= len(seen) // 3, (st["_status"], i, len(other)))
 
 print("\nALL PASS" if ok else "\nSOME FAILED"); raise SystemExit(0 if ok else 1)

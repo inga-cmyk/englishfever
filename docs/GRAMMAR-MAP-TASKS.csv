@@ -3045,8 +3045,8 @@ rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:7,"rep_questions
 She asked me what time ___ ___ . | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:8,"rep_questions | B1.2 | mcq | 'What time does the shop close?'
 Choose the correct option: He asked what time ___. | the shop closed"
-rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:9,"rep_questions | B1.2 | order | 'When does the bus come?'
-Put the words in order. | she asked me when the bus came"
+rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:9,"rep_questions | B1.2 | order | 'When does the bus usually come?'
+Put the words in order. | she asked me when the bus usually came"
 rep_q_wh,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:18,"rep_questions | B1.2 | text | 'Where is the manager?'
 Finish the sentence: She asked where … | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:19,"rep_questions | B1.2 | gap | 'Where is the station?'
@@ -3056,7 +3056,7 @@ Choose the correct option: He asked where ___. | the lift was"
 rep_q_wh,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:21,"rep_questions | B1.2 | order | 'Where are my keys?'
 Put the words in order. | she asked where her keys were"
 rep_q_wh,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:26,"rep_questions | B1.2 | text | 'Why are you late?'
-Finish the sentence: The teacher asked why … | "
+Finish the sentence: The teacher asked us why … | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:27,"rep_questions | B1.2 | gap | 'Why is he angry?'
 She asked me why ___ ___ angry. | "
 rep_q_wh,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:28,"rep_questions | B1.2 | mcq | 'Why are you tired?'
@@ -3100,7 +3100,7 @@ rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,b1-cond-rep-1.csv:215,rep_quest
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,b1-cond-rep-1.csv:219,rep_questions | B1.2 | mcq | Which sentence is NOT correct? | He asked me did I like the job.
 rep_q_yn,B1.2,rep_questions,B1.2,use,gap,read,,b1-upgrades-1.csv:54,rep_questions | B1.2 | gap | A week ago: 'Did you enjoy the film?' → He asked me ___. | 
 rep_q_yn,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:10,"rep_questions | B1.2 | text | 'Have you finished?'
-Finish the sentence: He asked if … | "
+Finish the sentence: He asked me if … | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:11,"rep_questions | B1.2 | gap | 'Have you eaten?'
 She asked me if ___ ___ ___ . | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:12,"rep_questions | B1.2 | mcq | 'Have you seen the film?'
@@ -3108,7 +3108,7 @@ Choose the correct option: He asked me if ___ the film. | I had seen"
 rep_q_yn,B1.2,rep_questions,B1.2,check,order,read,,rq-order-1.csv:13,"rep_questions | B1.2 | order | 'Has the parcel arrived?'
 Put the words in order. | she asked if the parcel had arrived"
 rep_q_yn,B1.2,rep_questions,B1.2,use,text,read,,rq-order-1.csv:14,"rep_questions | B1.2 | text | 'Can you help me?'
-Finish the sentence: She asked if … | "
+Finish the sentence: She asked me if … | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,gap,read,,rq-order-1.csv:15,"rep_questions | B1.2 | gap | 'Can you drive?'
 He asked me if ___ ___ drive. | "
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,rq-order-1.csv:16,"rep_questions | B1.2 | mcq | 'Can you swim?'

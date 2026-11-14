@@ -1,0 +1,281 @@
+{
+ "r4b-001": {
+  "hash": "6032f473a4031557",
+  "gate_key": "rep_questions | B1.2 | order | 'When does the bus usually come?'\nPut the words in order. | she asked me when the bus usually came",
+  "src": "rq-order-1.csv:9",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked me when the bus usually came",
+   "also": []
+  },
+  "item": {
+   "id": "c-2675",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "'When does the bus usually come?'\nPut the words in order.",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "sentence": "she asked me when the bus usually came",
+   "answers": [
+    [
+     "she asked me when the bus usually came"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:9"
+  }
+ },
+ "r4b-002": {
+  "hash": "366d805fb82584e5",
+  "gate_key": "rep_questions | B1.2 | text | 'Have you finished?'\nFinish the sentence: He asked me if … | ",
+  "src": "rq-order-1.csv:10",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "He asked me if I had finished.",
+     "I had finished.",
+     "He asked me if I'd finished.",
+     "I'd finished.",
+     "He asked if I had finished.",
+     "He asked if I'd finished.",
+     "If I had finished, he asked me.",
+     "If I'd finished, he asked me.",
+     "If I had finished, he asked.",
+     "If I'd finished, he asked."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2676",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "'Have you finished?'\nFinish the sentence: He asked me if …",
+   "why": "A reported yes/no question: *if* + subject + verb, one step back in time (*if I had finished*), not *if had I finished*.",
+   "why_lv": "Atstāstīts jautājums ar atbildi jā / nē: *if* + teikuma priekšmets + darbības vārds, laiks soli atpakaļ (*if I had finished*), nevis *if had I finished*.",
+   "answers": [
+    [
+     "He asked me if I had finished.",
+     "I had finished.",
+     "He asked me if I'd finished.",
+     "I'd finished.",
+     "He asked if I had finished.",
+     "He asked if I'd finished.",
+     "If I had finished, he asked me.",
+     "If I'd finished, he asked me.",
+     "If I had finished, he asked.",
+     "If I'd finished, he asked."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_yn",
+   "src": "rq-order-1.csv:10"
+  }
+ },
+ "r4b-003": {
+  "hash": "ffb09da54dfba264",
+  "gate_key": "rep_questions | B1.2 | text | 'Can you help me?'\nFinish the sentence: She asked me if … | ",
+  "src": "rq-order-1.csv:14",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She asked me if I could help her.",
+     "I could help her.",
+     "She asked me if I could help.",
+     "I could help.",
+     "She asked if I could help her.",
+     "She asked if I could help.",
+     "If I could help her, she asked me.",
+     "If I could help, she asked me.",
+     "If I could help her, she asked.",
+     "If I could help, she asked."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2680",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "'Can you help me?'\nFinish the sentence: She asked me if …",
+   "why": "A reported yes/no question: *if* + subject + verb, one step back in time (*if I had finished*), not *if had I finished*.",
+   "why_lv": "Atstāstīts jautājums ar atbildi jā / nē: *if* + teikuma priekšmets + darbības vārds, laiks soli atpakaļ (*if I had finished*), nevis *if had I finished*.",
+   "answers": [
+    [
+     "She asked me if I could help her.",
+     "I could help her.",
+     "She asked me if I could help.",
+     "I could help.",
+     "She asked if I could help her.",
+     "She asked if I could help.",
+     "If I could help her, she asked me.",
+     "If I could help, she asked me.",
+     "If I could help her, she asked.",
+     "If I could help, she asked."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_yn",
+   "src": "rq-order-1.csv:14"
+  }
+ },
+ "r4b-004": {
+  "hash": "1ef5d0427e41fc6a",
+  "gate_key": "rep_questions | B1.2 | order | 'Can the shop deliver on Sunday?'\nPut the words in order. | he asked if the shop could deliver on sunday",
+  "src": "rq-order-1.csv:17",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "order",
+   "sentence": "he asked if the shop could deliver on sunday",
+   "also": []
+  },
+  "item": {
+   "id": "c-2683",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "'Can the shop deliver on Sunday?'\nPut the words in order.",
+   "why": "A reported yes/no question: *if* + subject + verb, one step back in time (*if I had finished*), not *if had I finished*.",
+   "why_lv": "Atstāstīts jautājums ar atbildi jā / nē: *if* + teikuma priekšmets + darbības vārds, laiks soli atpakaļ (*if I had finished*), nevis *if had I finished*.",
+   "sentence": "he asked if the shop could deliver on sunday",
+   "answers": [
+    [
+     "he asked if the shop could deliver on sunday",
+     "he asked on sunday if the shop could deliver",
+     "on sunday he asked if the shop could deliver"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "rq-order-1.csv:17"
+  }
+ },
+ "r4b-005": {
+  "hash": "a5ea14f973e677eb",
+  "gate_key": "rep_questions | B1.2 | text | 'Why are you late?'\nFinish the sentence: The teacher asked us why … | ",
+  "src": "rq-order-1.csv:26",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The teacher asked us why we were late.",
+     "we were late."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2692",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "'Why are you late?'\nFinish the sentence: The teacher asked us why …",
+   "why": "In a reported question the word order is like a statement: subject + verb (*where I lived*), with no *do / does / did*, and the verb goes one step back.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds (*where I lived*), bez *do / does / did*, un laiks pāriet vienu soli atpakaļ.",
+   "answers": [
+    [
+     "The teacher asked us why we were late.",
+     "we were late."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_wh",
+   "src": "rq-order-1.csv:26"
+  }
+ },
+ "r4b-006": {
+  "hash": "78480ac5c5a5e1d9",
+  "gate_key": "ind_polite | B1.2 | text | 'How much is this jacket?'\nFinish the sentence: Could you tell me how much … | ",
+  "src": "rq-order-1.csv:38",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you tell me how much this jacket is.",
+     "this jacket is.",
+     "Could you tell me how much this jacket costs.",
+     "this jacket costs.",
+     "Could you tell me how much it is.",
+     "it is.",
+     "Could you tell me how much it costs.",
+     "it costs."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2704",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "'How much is this jacket?'\nFinish the sentence: Could you tell me how much …",
+   "why": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Anna lives*, with no *does*; the tense stays.",
+   "why_lv": "Pēc *Do you know*…? / *Could you tell me*…? vārdu secība ir kā apgalvojumā: *where Anna lives*, bez *does*; laiks nemainās.",
+   "answers": [
+    [
+     "Could you tell me how much this jacket is.",
+     "this jacket is.",
+     "Could you tell me how much this jacket costs.",
+     "this jacket costs.",
+     "Could you tell me how much it is.",
+     "it is.",
+     "Could you tell me how much it costs.",
+     "it costs."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "rq-order-1.csv:38"
+  }
+ },
+ "r4b-007": {
+  "hash": "64280d5f6aa0cae5",
+  "gate_key": "ind_polite | B1.2 | mcq | 'Where is the library?'\nChoose the correct option: Can you tell me where ___? | the library is",
+  "src": "rq-order-1.csv:48",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "the library is",
+   "wrong": [
+    "is the library",
+    "is there the library"
+   ]
+  },
+  "item": {
+   "id": "c-2714",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'Where is the library?'\nChoose the correct option: Can you tell me where ___?",
+   "why": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Anna lives*, with no *does*; the tense stays.",
+   "why_lv": "Pēc *Do you know*…? / *Could you tell me*…? vārdu secība ir kā apgalvojumā: *where Anna lives*, bez *does*; laiks nemainās.",
+   "correct": "the library is",
+   "wrong": [
+    "is the library",
+    "is there the library"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "rq-order-1.csv:48"
+  }
+ }
+}

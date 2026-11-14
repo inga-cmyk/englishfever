@@ -9,15 +9,30 @@
 "round": "r1c",
 "task": "r1c-006"
 },
+"02711d6ff1c8e0da": {
+"gate_key": "ind_polite | B1.1 | mcq | 'Where does your teacher live?'\nChoose the correct option: Do you know where ___? | your teacher lives",
+"round": "r4",
+"task": "r4-031"
+},
 "048ad6985e7c9183": {
 "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live",
 "round": "r1",
 "task": "r1-020"
 },
+"05f7d903c9d0026c": {
+"gate_key": "ind_polite | B1.2 | gap | 'How much does this lamp cost?'\nI'd like to know how much ___ ___ . | ",
+"round": "r4",
+"task": "r4-038"
+},
 "0870ffe13b70e777": {
 "gate_key": "rep_questions | B1.2 | mcq | Which sentence is NOT correct? | He asked me did I like the job.",
 "round": "r1",
 "task": "r1-065"
+},
+"0947c1a2d806ccb0": {
+"gate_key": "rep_questions | B1.2 | order | 'Has the parcel arrived?'\nPut the words in order. | she asked if the parcel had arrived",
+"round": "r4",
+"task": "r4-012"
 },
 "0ba173a586ec8afb": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: I couldn't sleep ___ the noise from the street. | because of",
@@ -34,6 +49,16 @@
 "round": "r1c",
 "task": "answers added"
 },
+"0d3aac0b4f80b52c": {
+"gate_key": "ind_polite | B1.2 | text | 'Where is the post office?'\nFinish the sentence: Do you know where … | ",
+"round": "r4",
+"task": "r4-045"
+},
+"15bf88bd0a725a4a": {
+"gate_key": "rep_questions | B2.1 | text | 'How long have you been learning English?'\nFinish the sentence: She asked me how long … | ",
+"round": "r4",
+"task": "r4-021"
+},
 "18d8681c4516bf6f": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The trains stopped ___ the strong wind. | because of",
 "round": "r1",
@@ -49,10 +74,20 @@
 "round": "r1",
 "task": "r1-002"
 },
+"1b2a3b82fc41b40c": {
+"gate_key": "ind_polite | B1.2 | mcq | 'Is there a lift in this building?'\nChoose the correct option: Do you know if ___ a lift in this building? | there is",
+"round": "r4",
+"task": "r4-043"
+},
 "1d6d494bab962f25": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: Guests must leave their rooms ___ eleven o'clock on the last day. | by",
 "round": "r1",
 "task": "r1-085"
+},
+"1fbb99675c7661bf": {
+"gate_key": "ind_polite | B1.2 | order | 'How much are the tickets?'\nPut the words in order to make a question. | do you know how much the tickets are",
+"round": "r4",
+"task": "r4-040"
 },
 "214d2322ac43f282": {
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | i may not have time for lunch",
@@ -63,6 +98,11 @@
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: The shop is open ___ ten tonight, so we still have time. | until",
 "round": "r1",
 "task": "r1-083"
+},
+"260f8761c9dbd589": {
+"gate_key": "rep_questions | B2.1 | gap | 'How long have you lived here?'\nHe asked me how long ___ ___ ___ there. | ",
+"round": "r4",
+"task": "r4-022"
 },
 "263a346cef45afba": {
 "gate_key": "present_continuous | A2.1 | text | Make a question with Why: She is crying. | ",
@@ -78,6 +118,16 @@
 "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: She's been running for an hour in this heat. She ___ be thirsty. | must",
 "round": "r1",
 "task": "r1-071"
+},
+"2b4d2a73fe99d93d": {
+"gate_key": "ind_polite | B1.2 | gap | 'Where is the toilet?'\nCould you tell me where ___ ___ ? | ",
+"round": "r4",
+"task": "r4-046"
+},
+"2b58555168f93496": {
+"gate_key": "rep_questions | B1.2 | mcq | 'Have you seen the film?'\nChoose the correct option: He asked me if ___ the film. | I had seen",
+"round": "r4",
+"task": "r4-011"
 },
 "2b8bf606b075b29b": {
 "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: This ___ be the right address. There's no number 52 on this street. | can't",
@@ -109,15 +159,35 @@
 "round": "r1",
 "task": "r1-016"
 },
+"2f03d14ae05a36b9": {
+"gate_key": "rep_questions | B1.2 | text | 'Where do you live?'\nFinish the sentence: She asked me where … | ",
+"round": "r4",
+"task": "r4-001"
+},
 "2fa0abcd16d39dfb": {
 "gate_key": "more_modals | A2.2 | mcq | Which sentence is NOT correct? | Maybe it will might snow tonight.",
 "round": "r1",
 "task": "r1-044"
 },
+"30ddc918ae98e2bb": {
+"gate_key": "ind_polite | B1.1 | gap | 'What time does the museum open?'\nCould you tell me what time ___ ___ ? | ",
+"round": "r4",
+"task": "r4-034"
+},
+"32429af468000bb8": {
+"gate_key": "ind_polite | B1.2 | order | 'Where is the car park?'\nPut the words in order to make a question. | do you know where the car park is",
+"round": "r4",
+"task": "r4-048"
+},
 "3753e90a9c0a6989": {
 "gate_key": "rep_questions | B1.2 | mcq | Choose the correct option: 'Where do you work?' She asked me ___. | where I worked",
 "round": "r1b",
 "task": "r1b-003"
+},
+"379ae02276514da5": {
+"gate_key": "rep_questions | B2.1 | order | 'How long has the shop been open?'\nPut the words in order. | she asked how long the shop had been open",
+"round": "r4",
+"task": "r4-024"
 },
 "38430a41d99b424e": {
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
@@ -128,6 +198,11 @@
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | my phone might not work in the mountains",
 "round": "r1",
 "task": "r1-060"
+},
+"411615ee8a40533e": {
+"gate_key": "ind_polite | B1.2 | order | 'Is there a café near the station?'\nPut the words in order to make a question. | do you know if there is a café near the station",
+"round": "r4",
+"task": "r4-044"
 },
 "4323c9e66de42d66": {
 "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | should we leave before it gets dark",
@@ -209,6 +284,11 @@
 "round": "r1",
 "task": "r1-062"
 },
+"632c1a2e79aff4da": {
+"gate_key": "rep_questions | B1.2 | text | 'Where is the manager?'\nFinish the sentence: She asked where … | ",
+"round": "r4",
+"task": "r4-017"
+},
 "6431518d1a0b7623": {
 "gate_key": "present_simple_passive | A2.2 | mcq | Which sentence is NOT correct? | The bread are baked every morning.",
 "round": "r1",
@@ -224,15 +304,30 @@
 "round": "r1",
 "task": "r1-018"
 },
+"6703d3eceea6420d": {
+"gate_key": "rep_questions | B1.2 | mcq | 'Where do you study?'\nChoose the correct option: She asked him where ___. | he studied",
+"round": "r4",
+"task": "r4-003"
+},
 "67a489225b9528c9": {
 "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The bus which ___ to the airport leaves at six. | goes",
 "round": "r1",
 "task": "r1-021"
 },
+"6ab58dc6576639f9": {
+"gate_key": "rep_questions | B1.2 | order | 'Where are my keys?'\nPut the words in order. | she asked where her keys were",
+"round": "r4",
+"task": "r4-020"
+},
 "6d98c519b40bd0d5": {
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but I ___ visit my aunt this weekend. | ",
 "round": "r1",
 "task": "r1-048"
+},
+"6e2eddf659981107": {
+"gate_key": "rep_questions | B1.2 | order | 'Where is your office?'\nPut the words in order. | she asked me where my office was",
+"round": "r4",
+"task": "r4-004"
 },
 "6e848d9e922c5849": {
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | they might move to another city",
@@ -264,10 +359,20 @@
 "round": "r1",
 "task": "r1-041"
 },
+"7997813cb6b04732": {
+"gate_key": "rep_questions | B1.2 | gap | 'Have you eaten?'\nShe asked me if ___ ___ ___ . | ",
+"round": "r4",
+"task": "r4-010"
+},
 "7aaaff2198b8a9f0": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ the long journey, the children were not tired at all. | Despite",
 "round": "r1",
 "task": "r1-094"
+},
+"7cc20a214213ff06": {
+"gate_key": "rep_questions | B1.2 | gap | 'Where is the station?'\nHe asked me where ___ ___ . | ",
+"round": "r4",
+"task": "r4-018"
 },
 "7dc3155ceb33fe5d": {
 "gate_key": "more_modals | A2.2 | gap | It ___ ___ tomorrow, so I'm taking my boots. | ",
@@ -289,6 +394,11 @@
 "round": "r1",
 "task": "r1-040"
 },
+"7fd509cc6c06631b": {
+"gate_key": "ind_polite | B1.1 | gap | 'Where does Tom work?'\nDo you know where ___ ___ ? | ",
+"round": "r4",
+"task": "r4-030"
+},
 "80b99cfba86107e9": {
 "gate_key": "present_simple | A2.1 | text | Make it negative: They play tennis on Sundays. | ",
 "round": "r1",
@@ -299,10 +409,25 @@
 "round": "r2b",
 "task": "r2b-001"
 },
+"83d4c9c40d45e284": {
+"gate_key": "ind_polite | B1.2 | gap | 'Is there a bank near here?'\nDo you know if ___ ___ a bank near here? | ",
+"round": "r4",
+"task": "r4-042"
+},
+"8467f8c7016727e8": {
+"gate_key": "rep_questions | B1.2 | mcq | 'What time does the shop close?'\nChoose the correct option: He asked what time ___. | the shop closed",
+"round": "r4",
+"task": "r4-007"
+},
 "8604712d7407e201": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I fell asleep ___ the film, so I don't know how it ends. | during",
 "round": "r1",
 "task": "r1-079"
+},
+"881e26fd14952c9d": {
+"gate_key": "rep_questions | B1.2 | gap | 'What time does the train leave?'\nShe asked me what time ___ ___ . | ",
+"round": "r4",
+"task": "r4-006"
 },
 "88b27676dc9db80a": {
 "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The main road was closed, but we ___ find another way home. | were able to",
@@ -324,6 +449,11 @@
 "round": "r1",
 "task": "r1-066"
 },
+"91b8bc5c0cfb3c75": {
+"gate_key": "ind_polite | B1.1 | mcq | 'What time does the concert start?'\nChoose the correct option: Do you know what time ___? | the concert starts",
+"round": "r4",
+"task": "r4-035"
+},
 "91da6e3ecd6fe02a": {
 "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: On our trip we met a guide ___ spoke perfect English. | ",
 "round": "r1",
@@ -338,6 +468,11 @@
 "gate_key": "rep_verbs | B2.2 | text | Anna: 'Did you take my phone?'\nMax: 'No, I didn't take your phone.'\nFinish the sentence: Max denied … | ",
 "round": "r3",
 "task": "answers added"
+},
+"977ad020bc70a66f": {
+"gate_key": "rep_questions | B1.2 | mcq | 'Where is the lift?'\nChoose the correct option: He asked where ___. | the lift was",
+"round": "r4",
+"task": "r4-019"
 },
 "97de748c5814430d": {
 "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: The lights are off and nobody answers the door. They ___ be at home. | can't",
@@ -369,6 +504,11 @@
 "round": "r1",
 "task": "r1-075"
 },
+"9d075cea5b774626": {
+"gate_key": "rep_questions | B1.2 | mcq | 'Can you swim?'\nChoose the correct option: She asked me if ___. | I could swim",
+"round": "r4",
+"task": "r4-015"
+},
 "9d1a5e0fb79aee5b": {
 "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: I'm not sure yet. We ___ go to the beach on Saturday. | might",
 "round": "r1",
@@ -389,10 +529,20 @@
 "round": "r1",
 "task": "r1-077"
 },
+"a45e79f931f0a8f3": {
+"gate_key": "rep_questions | B1.2 | text | 'What time does the film start?'\nFinish the sentence: He asked what time … | ",
+"round": "r4",
+"task": "r4-005"
+},
 "a66e3a0ed0621726": {
 "gate_key": "ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ",
 "round": "r1c",
 "task": "r1c-003"
+},
+"a823da6e06e03452": {
+"gate_key": "rep_questions | B1.2 | gap | 'Why is he angry?'\nShe asked me why ___ ___ angry. | ",
+"round": "r4",
+"task": "r4-026"
 },
 "a8fb840bdd68e7bd": {
 "gate_key": "relative_clauses | A2.2 | gap | The women who ___ in the next office are my colleagues. | ",
@@ -414,6 +564,11 @@
 "round": "r1c",
 "task": "r1c-007"
 },
+"af0081b3276f070a": {
+"gate_key": "rep_questions | B1.2 | gap | 'Can you drive?'\nHe asked me if ___ ___ drive. | ",
+"round": "r4",
+"task": "r4-014"
+},
 "afb4ab7df41ae4aa": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I made a lot of good friends ___ my time at university. | during",
 "round": "r1",
@@ -424,6 +579,11 @@
 "round": "r1",
 "task": "r1-033"
 },
+"b2f21aa34aa523e4": {
+"gate_key": "ind_polite | B1.2 | text | 'Is there a pharmacy near here?'\nFinish the sentence: Can you tell me if … | ",
+"round": "r4",
+"task": "r4-041"
+},
 "b52e2d3dc8fdc31f": {
 "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one. | were able to",
 "round": "r1",
@@ -433,6 +593,21 @@
 "gate_key": "more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ",
 "round": "r1",
 "task": "r1-046"
+},
+"b7414049cf30deff": {
+"gate_key": "rep_questions | B2.1 | mcq | 'How long have you worked here?'\nChoose the correct option: She asked how long ___ there. | I had worked",
+"round": "r4",
+"task": "r4-023"
+},
+"b9f1d71dd58a465a": {
+"gate_key": "ind_polite | B1.1 | order | 'What time does the bank close?'\nPut the words in order to make a question. | could you tell me what time the bank closes",
+"round": "r4",
+"task": "r4-036"
+},
+"bbc68d44f38013a3": {
+"gate_key": "ind_polite | B1.1 | order | 'Where does Mark work?'\nPut the words in order to make a question. | do you know where mark works",
+"round": "r4",
+"task": "r4-032"
 },
 "bcc51d813fc00a1f": {
 "gate_key": "rep_verbs | B2.2 | text | Start with *Leo denied*: 'It wasn't me who sent that email to the whole company.' | ",
@@ -463,6 +638,11 @@
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: We took a taxi ___ it was raining very hard. | because",
 "round": "r1",
 "task": "r1-101"
+},
+"ceacb76bcbce3280": {
+"gate_key": "rep_questions | B1.2 | mcq | 'Why are you tired?'\nChoose the correct option: He asked me why ___ tired. | I was",
+"round": "r4",
+"task": "r4-027"
 },
 "d1edf45b084f178f": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We lived in Spain ___ three years before we moved to Riga. | for",
@@ -509,6 +689,11 @@
 "round": "r1",
 "task": "r1-014"
 },
+"e37c6f44b11ec22f": {
+"gate_key": "rep_questions | B1.2 | gap | 'Where do you work?'\nHe asked me where ___ ___ . | ",
+"round": "r4",
+"task": "r4-002"
+},
 "e51bde269ce4f0ed": {
 "gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | Ask Tom. He might know the answer.",
 "round": "r1",
@@ -518,6 +703,11 @@
 "gate_key": "relative_clauses | A2.2 | gap | I know a man ___ ___ three languages. | ",
 "round": "r1",
 "task": "r1-036"
+},
+"e65004a45f2a3b0c": {
+"gate_key": "ind_polite | B1.1 | text | 'Where does Anna live?'\nFinish the sentence: Do you know where … | ",
+"round": "r4",
+"task": "r4-029"
 },
 "e75b4941c6b25713": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: The flat is quite small. ___, it is very close to the centre. | However",
@@ -534,6 +724,11 @@
 "round": "r1",
 "task": "r1-022"
 },
+"eea2036add42a7be": {
+"gate_key": "rep_questions | B1.2 | order | 'Why is the shop closed?'\nPut the words in order. | he asked why the shop was closed",
+"round": "r4",
+"task": "r4-028"
+},
 "f2fb132fbe6a83d8": {
 "gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.",
 "round": "r1b",
@@ -549,6 +744,11 @@
 "round": "r1",
 "task": "r1-105"
 },
+"f713302092265d08": {
+"gate_key": "ind_polite | B1.2 | mcq | 'How much is the ticket?'\nChoose the correct option: Can you tell me how much ___? | the ticket is",
+"round": "r4",
+"task": "r4-039"
+},
 "fb6e6b42f38f5273": {
 "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano",
 "round": "r1",
@@ -558,5 +758,10 @@
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ we were waiting for the train, it started to snow. | While",
 "round": "r1",
 "task": "r1-080"
+},
+"fe9f314e3298d28c": {
+"gate_key": "ind_polite | B1.1 | text | 'What time does the bus leave?'\nFinish the sentence: Could you tell me what time … | ",
+"round": "r4",
+"task": "r4-033"
 }
 }

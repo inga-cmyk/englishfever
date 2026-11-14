@@ -41,17 +41,17 @@ order(RQ, L, "Where is your office?", "she asked me where my office was", R_EN)
 typed(RQ, L, "What time does the film start?", "He asked what time", ["the film started"], R_EN)
 gp(RQ, L, 3, "'What time does the train leave?'\nShe asked me what time ___ ___ .", "the train / left", *R_EN, bank=["the train", "left", "did", "leave"])
 mc(RQ, L, 2, "'What time does the shop close?'\nChoose the correct option: He asked what time ___.", "the shop closed", ["did the shop close", "does the shop close", "the shop did close"], *R_EN)
-order(RQ, L, "When does the bus come?", "she asked me when the bus came", R_EN)
+order(RQ, L, "When does the bus usually come?", "she asked me when the bus usually came", R_EN)
 
-typed(RQ, L, "Have you finished?", "He asked if", ["I had finished", "I'd finished"], R_YN)
+typed(RQ, L, "Have you finished?", "He asked me if", ["I had finished", "I'd finished"], R_YN)
 gp(RQ, L, 3, "'Have you eaten?'\nShe asked me if ___ ___ ___ .", "I / had / eaten", *R_YN, bank=["I", "had", "eaten", "did", "eat"])
 mc(RQ, L, 2, "'Have you seen the film?'\nChoose the correct option: He asked me if ___ the film.", "I had seen", ["had I seen", "did I see", "I did see"], *R_YN)
 order(RQ, L, "Has the parcel arrived?", "she asked if the parcel had arrived", R_YN)
 
-typed(RQ, L, "Can you help me?", "She asked if", ["I could help her"], R_YN)
+typed(RQ, L, "Can you help me?", "She asked me if", ["I could help her", "I could help"], R_YN)
 gp(RQ, L, 3, "'Can you drive?'\nHe asked me if ___ ___ drive.", "I / could", *R_YN, bank=["I", "could", "can"])
 mc(RQ, L, 2, "'Can you swim?'\nChoose the correct option: She asked me if ___.", "I could swim", ["could I swim", "can I swim", "I could to swim"], *R_YN)
-order(RQ, L, "Can the shop deliver on Sunday?", "he asked if the shop could deliver on sunday", R_YN)
+order(RQ, L, "Can the shop deliver on Sunday?", "he asked if the shop could deliver on sunday", R_YN, also=["he asked on sunday if the shop could deliver", "on sunday he asked if the shop could deliver"])
 
 typed(RQ, L, "Where is the manager?", "She asked where", ["the manager was"], R_EN)
 gp(RQ, L, 3, "'Where is the station?'\nHe asked me where ___ ___ .", "the station / was", *R_EN, bank=["the station", "was", "did"])
@@ -63,7 +63,7 @@ gp(RQ, "B2.1", 3, "'How long have you lived here?'\nHe asked me how long ___ ___
 mc(RQ, "B2.1", 2, "'How long have you worked here?'\nChoose the correct option: She asked how long ___ there.", "I had worked", ["had I worked", "have I worked", "did I work"], *R_EN)
 order(RQ, "B2.1", "How long has the shop been open?", "she asked how long the shop had been open", R_EN)
 
-typed(RQ, L, "Why are you late?", "The teacher asked why", ["we were late"], R_EN)
+typed(RQ, L, "Why are you late?", "The teacher asked us why", ["we were late"], R_EN)
 gp(RQ, L, 3, "'Why is he angry?'\nShe asked me why ___ ___ angry.", "he / was", *R_EN, bank=["he", "was", "did"])
 mc(RQ, L, 2, "'Why are you tired?'\nChoose the correct option: He asked me why ___ tired.", "I was", ["was I", "am I", "did I"], *R_EN)
 order(RQ, L, "Why is the shop closed?", "he asked why the shop was closed", R_EN)
@@ -81,7 +81,7 @@ mc(IQ, L, 2, "'What time does the concert start?'\nChoose the correct option: Do
 order(IQ, L, "What time does the bank close?", "could you tell me what time the bank closes", I_EN, question=True)
 
 L = "B1.2"
-typed(IQ, L, "How much is this jacket?", "Could you tell me how much", ["this jacket is", "this jacket costs"], I_EN)
+typed(IQ, L, "How much is this jacket?", "Could you tell me how much", ["this jacket is", "this jacket costs", "it is", "it costs"], I_EN)
 gp(IQ, L, 3, "'How much does this lamp cost?'\nI'd like to know how much ___ ___ .", "this lamp / costs", *I_EN, bank=["this lamp", "costs", "does", "cost"])
 mc(IQ, L, 2, "'How much is the ticket?'\nChoose the correct option: Can you tell me how much ___?", "the ticket is", ["is the ticket", "does the ticket cost"], *I_EN)
 order(IQ, L, "How much are the tickets?", "do you know how much the tickets are", I_EN, question=True)
@@ -93,7 +93,7 @@ order(IQ, L, "Is there a café near the station?", "do you know if there is a ca
 
 typed(IQ, L, "Where is the post office?", "Do you know where", ["the post office is"], I_EN)
 gp(IQ, L, 3, "'Where is the toilet?'\nCould you tell me where ___ ___ ?", "the toilet / is", *I_EN, bank=["the toilet", "is", "does"])
-mc(IQ, L, 2, "'Where is the library?'\nChoose the correct option: Can you tell me where ___?", "the library is", ["is the library", "is it the library"], *I_EN)
+mc(IQ, L, 2, "'Where is the library?'\nChoose the correct option: Can you tell me where ___?", "the library is", ["is the library", "is there the library"], *I_EN)
 order(IQ, L, "Where is the car park?", "do you know where the car park is", I_EN, question=True)
 
 save("rq-order-1.csv")

@@ -14030,5 +14030,21 @@
 "ind_polite | B1.2 | order | 'Where is the car park?'\nPut the words in order to make a question. | do you know where the car park is": [
 "iq_wh",
 "read"
+],
+"rep_questions | B1.2 | order | 'When does the bus usually come?'\nPut the words in order. | she asked me when the bus usually came": [
+"rep_q_wh",
+"read"
+],
+"rep_questions | B1.2 | text | 'Have you finished?'\nFinish the sentence: He asked me if … | ": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | text | 'Can you help me?'\nFinish the sentence: She asked me if … | ": [
+"rep_q_yn",
+"read"
+],
+"rep_questions | B1.2 | text | 'Why are you late?'\nFinish the sentence: The teacher asked us why … | ": [
+"rep_q_wh",
+"read"
 ]
 }

@@ -1,0 +1,76 @@
+[
+ {
+  "id": "r4b-001",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "'When does the bus usually come?'\nPut the words in order.",
+  "word_cards": [
+   "when",
+   "the",
+   "me",
+   "bus",
+   "she",
+   "came",
+   "usually",
+   "asked"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r4b-002",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "'Have you finished?'\nFinish the sentence: He asked me if …",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r4b-003",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "'Can you help me?'\nFinish the sentence: She asked me if …",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r4b-004",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "'Can the shop deliver on Sunday?'\nPut the words in order.",
+  "word_cards": [
+   "shop",
+   "the",
+   "asked",
+   "he",
+   "if",
+   "sunday",
+   "could",
+   "on",
+   "deliver"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r4b-005",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "'Why are you late?'\nFinish the sentence: The teacher asked us why …",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r4b-006",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "'How much is this jacket?'\nFinish the sentence: Could you tell me how much …",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r4b-007",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "'Where is the library?'\nChoose the correct option: Can you tell me where ___?",
+  "options": [
+   "is there the library",
+   "the library is",
+   "is the library"
+  ]
+ }
+]

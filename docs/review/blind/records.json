@@ -34,6 +34,11 @@
 "round": "r4",
 "task": "r4-012"
 },
+"09bec4789f3d74b4": {
+"gate_key": "rep_verbs | B2.2 | text | Anna: 'Leo, where are all my cookies?'\nLeo: 'I didn't eat them!'\nFinish the sentence: Leo denied … | ",
+"round": "r7",
+"task": "answers added"
+},
 "0ba173a586ec8afb": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: I couldn't sleep ___ the noise from the street. | because of",
 "round": "r1",

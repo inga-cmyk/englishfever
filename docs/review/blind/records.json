@@ -1,4 +1,9 @@
 {
+"0119215123eff966": {
+"gate_key": "rep_verbs | B2.2 | text | Peter: 'I don't feel very well.'\nSarah: 'You should see a doctor.'\nFinish the sentence: Sarah advised … | ",
+"round": "r3",
+"task": "answers added"
+},
 "01f7672daa7b7790": {
 "gate_key": "more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ",
 "round": "r1c",
@@ -88,6 +93,11 @@
 "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: That ___ be Tom's car. He sold it last month. | can't",
 "round": "r1",
 "task": "r1-072"
+},
+"2d2da4297f1192e3": {
+"gate_key": "rep_verbs | B2.2 | text | Anna: 'Who sent that email to the whole company?'\nLeo: 'It wasn't me!'\nFinish the sentence: Leo denied … | ",
+"round": "r3",
+"task": "answers added"
 },
 "2da3315b6100d8b0": {
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but they ___ have a map of the town at the desk. | ",
@@ -323,6 +333,11 @@
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip. | ",
 "round": "r1",
 "task": "r1-051"
+},
+"97797a9ba2858f9a": {
+"gate_key": "rep_verbs | B2.2 | text | Anna: 'Did you take my phone?'\nMax: 'No, I didn't take your phone.'\nFinish the sentence: Max denied … | ",
+"round": "r3",
+"task": "answers added"
 },
 "97de748c5814430d": {
 "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: The lights are off and nobody answers the door. They ___ be at home. | can't",

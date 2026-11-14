@@ -7244,6 +7244,8 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Anna: 'Did you take my phone?'\nMax: 'No, I didn't take your phone.'\nFinish the sentence: Max denied …",
 "answers": [
 [
+"Max denied it.",
+"it.",
 "Max denied taking her phone.",
 "taking her phone.",
 "Max denied having taken her phone.",
@@ -7295,7 +7297,19 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "*deny* + -ing, or *deny* + *that* + clause.",
-"hints": []
+"hints": [],
+"answer_notes": [
+[
+"Max denied it.",
+"Correct. You can also say what he denied: *Max denied taking her phone.*",
+"Pareizi. Var pateikt arī, ko viņš noliedza: *Max denied taking her phone.*"
+],
+[
+"it.",
+"Correct. You can also say what he denied: *Max denied taking her phone.*",
+"Pareizi. Var pateikt arī, ko viņš noliedza: *Max denied taking her phone.*"
+]
+]
 },
 {
 "id": "rv-B22-4a",
@@ -7494,6 +7508,22 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Peter: 'I don't feel very well.'\nSarah: 'You should see a doctor.'\nFinish the sentence: Sarah advised …",
 "answers": [
 [
+"Sarah advised him to go and see a doctor.",
+"him to go and see a doctor.",
+"Sarah advised him to go to a doctor.",
+"him to go to a doctor.",
+"Sarah advised him to go to the doctor.",
+"him to go to the doctor.",
+"Sarah advised Peter to go and see a doctor.",
+"Peter to go and see a doctor.",
+"Sarah advised Peter to go to a doctor.",
+"Peter to go to a doctor.",
+"Sarah advised Peter to go to the doctor.",
+"Peter to go to the doctor.",
+"Sarah advised that Peter should see a doctor.",
+"that Peter should see a doctor.",
+"Sarah advised that Peter see a doctor.",
+"that Peter see a doctor.",
 "Sarah advised him to see a doctor.",
 "him to see a doctor.",
 "Sarah advised Peter to see a doctor.",
@@ -7517,6 +7547,26 @@ return json_decode(<<<'EF_JSON_END'
 "why": "*advise* + person + *to* + base verb: *Sarah advised him to see a doctor.*",
 "hints": [],
 "answer_notes": [
+[
+"Sarah advised that Peter should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
+],
+[
+"that Peter should see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
+],
+[
+"Sarah advised that Peter see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
+],
+[
+"that Peter see a doctor.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*."
+],
 [
 "Sarah advised him that he should see a doctor.",
 "Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.",

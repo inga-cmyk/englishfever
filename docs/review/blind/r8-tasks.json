@@ -1,0 +1,558 @@
+[
+ {
+  "id": "r8-001",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I don't have a car. I wish I ___ one.",
+  "options": [
+   "have",
+   "would have",
+   "will have",
+   "had"
+  ]
+ },
+ {
+  "id": "r8-002",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I can't swim. I wish I ___ swim.",
+  "options": [
+   "could to",
+   "could",
+   "will",
+   "can"
+  ]
+ },
+ {
+  "id": "r8-003",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "I wish I knew the answer.",
+   "I wish I know the answer.",
+   "I wish I would know the answer.",
+   "I wish I am knowing the answer."
+  ]
+ },
+ {
+  "id": "r8-004",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I live in the city. I wish I ___ by the sea.",
+  "options": [
+   "live",
+   "lived",
+   "am living",
+   "would live"
+  ]
+ },
+ {
+  "id": "r8-005",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: If only I ___ more free time!",
+  "options": [
+   "would have",
+   "have",
+   "had",
+   "will have"
+  ]
+ },
+ {
+  "id": "r8-006",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If only my boss were less strict.",
+   "I wish I can speak Japanese.",
+   "I wish we lived nearer each other.",
+   "I wish I had a bigger flat."
+  ]
+ },
+ {
+  "id": "r8-007",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My phone is so slow. I wish it ___ faster.",
+  "options": [
+   "has been",
+   "was",
+   "is",
+   "will be"
+  ]
+ },
+ {
+  "id": "r8-008",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wish I ___ how to cook. (know)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-009",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "My flat is tiny. I wish it ___ bigger. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-010",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "If only I ___ a car! The bus takes ages. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-011",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wish my sister ___ nearer. (live)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-012",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I can't dance. I wish I ___ dance.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-013",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I wish*: I don't speak French.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8-014",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *If only*: I don't have enough time.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8-015",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I wish*: My job is boring.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8-016",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "i",
+   "wish",
+   "free",
+   "i",
+   "more",
+   "time",
+   "had"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-017",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "only",
+   "lived",
+   "closer",
+   "we",
+   "if"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-018",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "faster",
+   "my",
+   "laptop",
+   "was",
+   "i",
+   "wish"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-019",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "she",
+   "wishes",
+   "could",
+   "she",
+   "drive"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-020",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "wish",
+   "i",
+   "name",
+   "his",
+   "i",
+   "knew"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-021",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wish I ___ a bigger flat.",
+  "word_cards": [
+   "have",
+   "had",
+   "would have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-022",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wish I ___ ___ the guitar.",
+  "word_cards": [
+   "could",
+   "can",
+   "play",
+   "plays"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-023",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "If only it ___ sunny today!",
+  "word_cards": [
+   "is",
+   "were",
+   "will"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-024",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "He wishes he ___ in London.",
+  "word_cards": [
+   "lived",
+   "lives",
+   "would live"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-025",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each fact with the wish.",
+  "left": [
+   "I don't have a car.",
+   "I can't sing.",
+   "My room is small.",
+   "I don't know her name."
+  ],
+  "right": [
+   "I wish I knew it.",
+   "I wish it were bigger.",
+   "I wish I had one.",
+   "I wish I could sing."
+  ]
+ },
+ {
+  "id": "r8-026",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: It's raining. I'd rather ___ a taxi.",
+  "options": [
+   "took",
+   "to take",
+   "taking",
+   "take"
+  ]
+ },
+ {
+  "id": "r8-027",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "I'd rather not to go out tonight.",
+   "I'd rather not go out tonight.",
+   "I'd not rather go out tonight.",
+   "I'd rather don't go out tonight."
+  ]
+ },
+ {
+  "id": "r8-028",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I'd rather walk ___ take the bus.",
+  "options": [
+   "than",
+   "then",
+   "that",
+   "as"
+  ]
+ },
+ {
+  "id": "r8-029",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Would you rather ___ tea or coffee?",
+  "options": [
+   "had",
+   "having",
+   "to have",
+   "have"
+  ]
+ },
+ {
+  "id": "r8-030",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'd prefer to work from home.",
+   "She'd prefer not to drive.",
+   "I'd rather to work from home.",
+   "We'd rather eat out tonight."
+  ]
+ },
+ {
+  "id": "r8-031",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I'd prefer ___ by train.",
+  "options": [
+   "travel",
+   "travelled",
+   "to travel",
+   "to travelling"
+  ]
+ },
+ {
+  "id": "r8-032",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We'd rather ___ a small wedding.",
+  "options": [
+   "to have",
+   "had",
+   "having",
+   "have"
+  ]
+ },
+ {
+  "id": "r8-033",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He'd rather ___ alone than with a big group.",
+  "options": [
+   "travelling",
+   "travels",
+   "to travel",
+   "travel"
+  ]
+ },
+ {
+  "id": "r8-034",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd rather ___ at home than go out. (eat)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-035",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd rather not ___ about it. (talk)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-036",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Would you rather ___ in the city or in the country? (live)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-037",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd prefer ___ by the window. (sit)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-038",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "She'd rather ___ a film than read a book. (watch)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8-039",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I'd rather*: I prefer to cook at home.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8-040",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I'd rather not*: I don't want to drive tonight.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8-041",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Ask with *Would you rather*: go to the beach or to the mountains?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8-042",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "rather",
+   "i'd",
+   "in",
+   "stay",
+   "tonight"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-043",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "rather",
+   "you",
+   "would",
+   "have",
+   "coffee",
+   "or",
+   "tea"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-044",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "go",
+   "rather",
+   "car",
+   "we'd",
+   "not",
+   "by"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-045",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "home",
+   "she",
+   "would",
+   "from",
+   "rather",
+   "work"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-046",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "eat",
+   "prefer",
+   "early",
+   "i'd",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r8-047",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd rather ___ a book.",
+  "word_cards": [
+   "read",
+   "to read",
+   "reading"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-048",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd rather ___ ___ out tonight.",
+  "word_cards": [
+   "not",
+   "don't",
+   "to",
+   "go"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-049",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd rather walk ___ wait for the bus.",
+  "word_cards": [
+   "that",
+   "then",
+   "than"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8-050",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd prefer ___ ___ at home.",
+  "word_cards": [
+   "stay",
+   "staying",
+   "to"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

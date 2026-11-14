@@ -3964,6 +3964,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Advanced conditionals: inversion, unless, wish",
    "area": "conditionals",
    "levels": [
+    "B1.2",
     "B2.2"
    ],
    "rule": {
@@ -4057,6 +4058,18 @@ return json_decode(<<<'EF_JSON_END'
     ]
    },
    "rule_lv": {
+    "form": [
+     "*I wish / If only* + pagātne: vēlēšanās par tagadni (*I wish I had more time.* *I wish I could drive*.).",
+     "*I wish / If only* + Past Perfect: nožēla par pagātni (*I wish I had listened*.).",
+     "*unless = if* ... *not; as long as / provided that = tikai* ja.",
+     "*Inversija* (formāli): *Had I known* ... = *If I had known ...; Were she here* ... = *If she were here* ..."
+    ],
+    "use": [
+     "Vēlēšanās un nožēla.",
+     "Nosacījumi ar *unless, as long as, provided that*.",
+     "Formāls *teksts* un runa."
+    ],
+    "signals": "*I wish, if only, unless, provided that, as long as, had I, were I, should you*",
     "v2": {
      "choice": {
       "stack": "rows",
@@ -10684,6 +10697,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Unreal time and preferences (it's high time, I'd rather)",
    "area": "conditionals",
    "levels": [
+    "B1.2",
     "B2.2"
    ],
    "rule": {

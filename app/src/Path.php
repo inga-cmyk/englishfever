@@ -84,7 +84,7 @@ final class Path
         ['bp_ut', 'Used to, be used to, get used to', 'B1+', ['used_to']],
         ['bp_c1', 'Zero and first conditional, time clauses', 'B1+', ['cond_zero', 'cond_first', 'time_clauses']],
         ['bp_c23', 'Second and third conditionals', 'B1+', ['cond_second', 'cond_third']],
-        ['bp_wish', 'I wish, if only', 'B1+', ['cond_advanced']],
+        ['bp_wish', 'I wish, if only, would rather', 'B1+', ['cond_advanced', 'unreal_time']],   // would rather is B1.2 (teacher, 13 November, decision 3)
         ['bp_pas', 'Passive: all tenses', 'B1+', ['present_simple_passive', 'past_simple_passive', 'present_continuous_passive', 'present_perfect_passive', 'future_passive', 'passive_modals']],
         ['bp_caus', 'Have something done', 'B1+', ['causative']],
         ['bp_ing', 'Gerund or infinitive', 'B1+', ['verb_patterns']],

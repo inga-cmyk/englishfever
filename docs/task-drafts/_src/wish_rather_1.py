@@ -1,0 +1,81 @@
+"""B1.2 tasks for two points the teacher moved to B1.2 (13 November, decision 3; docs/GRAMMAR-MAP-GAPS.md 5.1):
+wish_pres (I wish / if only + past: a wish about now) and would_rather (would rather / would prefer: what I prefer to do).
+About 25 each; the mix of the rules (choose, drag, type a word, whole sentence). Murphy 41 (wish), 60 (would rather, prefer)."""
+from lib import rows, save, gp, od, mc, tx, mt
+
+W = "Advanced conditionals: inversion, unless, wish"
+W_EN = ("A wish about now: *I wish / If only* + past (*I wish I had, I wish I knew, I wish I could*), not the present or *would have*.",
+        "Vēlēšanās par tagadni: *I wish / If only* + pagātne (*I wish I had, I wish I knew, I wish I could*), nevis tagadne vai *would have*.")
+W_BE = ("After *I wish* use *were* (or *was* in everyday English): *I wish it were bigger.*",
+        "Pēc *I wish* lieto *were* (ikdienā arī *was*): *I wish it were bigger.*")
+L = "B1.2"
+# choose (7)
+mc(W, L, 2, "Choose the correct option: I don't have a car. I wish I ___ one.", "had", ["have", "would have", "will have"], *W_EN)
+mc(W, L, 2, "Choose the correct option: I can't swim. I wish I ___ swim.", "could", ["can", "will", "could to"], *W_EN)
+mc(W, L, 2, "Which sentence is correct?", "I wish I knew the answer.", ["I wish I know the answer.", "I wish I would know the answer.", "I wish I am knowing the answer."], *W_EN)
+mc(W, L, 2, "Choose the correct option: I live in the city. I wish I ___ by the sea.", "lived", ["live", "would live", "am living"], *W_EN)
+mc(W, L, 2, "Choose the correct option: If only I ___ more free time!", "had", ["have", "will have", "would have"], *W_EN)
+mc(W, L, 2, "Which sentence is NOT correct?", "I wish I can speak Japanese.", ["I wish I had a bigger flat.", "If only my boss were less strict.", "I wish we lived nearer each other."], *W_EN)
+mc(W, L, 2, "Choose the correct option: My phone is so slow. I wish it ___ faster.", "was", ["is", "will be", "has been"], *W_BE)
+# type a word (5)
+gp(W, L, 3, "I wish I ___ how to cook. (know)", "knew", *W_EN)
+gp(W, L, 3, "My flat is tiny. I wish it ___ bigger. (be)", "were | was", *W_BE)
+gp(W, L, 3, "If only I ___ a car! The bus takes ages. (have)", "had", *W_EN)
+gp(W, L, 3, "I wish my sister ___ nearer. (live)", "lived", *W_EN)
+gp(W, L, 3, "I can't dance. I wish I ___ dance.", "could", *W_EN)
+# whole sentence (3)
+tx(W, L, 4, "Start with *I wish*: I don't speak French.", "I wish I spoke French. | I wish I could speak French.", *W_EN)
+tx(W, L, 4, "Start with *If only*: I don't have enough time.", "If only I had enough time. | If only I had more time.", *W_EN)
+tx(W, L, 4, "Start with *I wish*: My job is boring.", "I wish my job wasn't boring. | I wish my job weren't boring. | I wish my job was more interesting. | I wish my job were more interesting. | I wish my job was not boring. | I wish my job were not boring.", *W_BE)
+# word order (5)
+od(W, L, 3, "Put the words in order.", "i wish i had more free time", *W_EN)
+od(W, L, 3, "Put the words in order.", "if only we lived closer", *W_EN)
+od(W, L, 3, "Put the words in order.", "i wish my laptop was faster", *W_BE)
+od(W, L, 3, "Put the words in order.", "she wishes she could drive", *W_EN)
+od(W, L, 3, "Put the words in order.", "i wish i knew his name", *W_EN)
+# word bank (4)
+gp(W, L, 3, "I wish I ___ a bigger flat.", "had", *W_EN, bank=["had", "have", "would have"])
+gp(W, L, 3, "I wish I ___ ___ the guitar.", "could / play", *W_EN, bank=["could", "play", "can", "plays"])
+gp(W, L, 3, "If only it ___ sunny today!", "were", *W_BE, bank=["were", "is", "will"])
+gp(W, L, 3, "He wishes he ___ in London.", "lived", *W_EN, bank=["lived", "lives", "would live"])
+# matching (1, learning)
+mt(W, L, 2, "Match each fact with the wish.", [("I don't have a car.", "I wish I had one."), ("I can't sing.", "I wish I could sing."),
+   ("My room is small.", "I wish it were bigger."), ("I don't know her name.", "I wish I knew it.")], *W_EN)
+
+R = "Unreal time and preferences (it's high time, I'd rather)"
+R_EN = ("*I'd rather* + base verb (no *to*): *I'd rather stay.* Negative: *I'd rather not go.* Two things: *I'd rather walk than drive.*",
+        "*I'd rather* + pamatforma (bez *to*): *I'd rather stay.* Noliegums: *I'd rather not go.* Divas lietas: *I'd rather walk than drive.*")
+R_PREF = ("*I'd prefer* + *to* + verb: *I'd prefer to stay.* *I'd rather* has no *to*: *I'd rather stay.*",
+          "*I'd prefer* + *to* + darbības vārds: *I'd prefer to stay.* Pēc *I'd rather* nav *to*: *I'd rather stay.*")
+# choose (8)
+mc(R, L, 2, "Choose the correct option: It's raining. I'd rather ___ a taxi.", "take", ["to take", "taking", "took"], *R_EN)
+mc(R, L, 2, "Which sentence is correct?", "I'd rather not go out tonight.", ["I'd rather don't go out tonight.", "I'd not rather go out tonight.", "I'd rather not to go out tonight."], *R_EN)
+mc(R, L, 2, "Choose the correct option: I'd rather walk ___ take the bus.", "than", ["that", "as", "then"], *R_EN)
+mc(R, L, 2, "Choose the correct option: Would you rather ___ tea or coffee?", "have", ["to have", "having", "had"], *R_EN)
+mc(R, L, 2, "Which sentence is NOT correct?", "I'd rather to work from home.", ["I'd prefer to work from home.", "We'd rather eat out tonight.", "She'd prefer not to drive."], *R_PREF)
+mc(R, L, 2, "Choose the correct option: I'd prefer ___ by train.", "to travel", ["travel", "travelled", "to travelling"], *R_PREF)
+mc(R, L, 2, "Choose the correct option: We'd rather ___ a small wedding.", "have", ["to have", "having", "had"], *R_EN)
+mc(R, L, 2, "Choose the correct option: He'd rather ___ alone than with a big group.", "travel", ["to travel", "travelling", "travels"], *R_EN)
+# type a word (5)
+gp(R, L, 3, "I'd rather ___ at home than go out. (eat)", "eat", *R_EN)
+gp(R, L, 3, "I'd rather not ___ about it. (talk)", "talk", *R_EN)
+gp(R, L, 3, "Would you rather ___ in the city or in the country? (live)", "live", *R_EN)
+gp(R, L, 3, "I'd prefer ___ by the window. (sit)", "to sit", *R_PREF)
+gp(R, L, 3, "She'd rather ___ a film than read a book. (watch)", "watch", *R_EN)
+# whole sentence (3)
+tx(R, L, 4, "Start with *I'd rather*: I prefer to cook at home.", "I'd rather cook at home. | I would rather cook at home.", *R_EN)
+tx(R, L, 4, "Start with *I'd rather not*: I don't want to drive tonight.", "I'd rather not drive tonight.", *R_EN)
+tx(R, L, 4, "Ask with *Would you rather*: go to the beach or to the mountains?", "Would you rather go to the beach or to the mountains? | Would you rather go to the beach or the mountains?", *R_EN)
+# word order (5)
+od(R, L, 3, "Put the words in order.", "i'd rather stay in tonight", *R_EN)
+od(R, L, 3, "Put the words in order to make a question.", "would you rather have tea or coffee", *R_EN, also=["would you rather have coffee or tea"])
+od(R, L, 3, "Put the words in order.", "we'd rather not go by car", *R_EN)
+od(R, L, 3, "Put the words in order.", "she would rather work from home", *R_EN)
+od(R, L, 3, "Put the words in order.", "i'd prefer to eat early", *R_PREF)
+# word bank (4)
+gp(R, L, 3, "I'd rather ___ a book.", "read", *R_EN, bank=["read", "to read", "reading"])
+gp(R, L, 3, "I'd rather ___ ___ out tonight.", "not / go", *R_EN, bank=["not", "go", "don't", "to"])
+gp(R, L, 3, "I'd rather walk ___ wait for the bus.", "than", *R_EN, bank=["than", "that", "then"])
+gp(R, L, 3, "I'd prefer ___ ___ at home.", "to / stay", *R_PREF, bank=["to", "stay", "staying"])
+
+save("wish-rather-1.csv")

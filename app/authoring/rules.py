@@ -32,7 +32,7 @@ SKILLS = [
     ("cond_second", "Second conditional (if + past, would)", "conditionals", ["B1.1", "B1.2", "B2.1"]),
     ("cond_third", "Third conditional (if + had done, would have done)", "conditionals", ["B1.2", "B2.1", "B2.2"]),
     ("cond_mixed", "Mixed conditionals", "conditionals", ["B2.1", "B2.2", "C1.1"]),
-    ("cond_advanced", "Advanced conditionals: inversion, unless, wish", "conditionals", ["C1.1", "C1.2"]),
+    ("cond_advanced", "Advanced conditionals: inversion, unless, wish", "conditionals", ["B1.2", "C1.1", "C1.2"]),
     ("rep_statements", "Reported statements (tense changes)", "reported", ["B1.1", "B1.2", "B2.1"]),
     ("rep_questions", "Reported questions and requests", "reported", ["B1.2", "B2.1", "B2.2"]),
     ("rep_verbs", "Reporting verbs (suggest, admit, promise...)", "reported", ["B2.2", "C1.1", "C1.2"]),

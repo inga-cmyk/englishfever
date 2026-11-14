@@ -610,7 +610,7 @@ LV_CARDS["conj_b2"] = {"form": ["Pretstats: nevertheless, yet, whereas. Nolūks:
 
 # C1: unreal time and preferences (teacher, 4 November, option A): it's (high / about) time, would rather / would sooner.
 # British Council "Unreal time" (C1); Murphy Unit 38 (it's time) and Unit 60 (would rather). Not conditionals, so a topic of its own.
-SKILLS_NEW.append(("unreal_time", "Unreal time and preferences (it's high time, I'd rather)", "conditionals", ["C1.1", "C1.2"]))
+SKILLS_NEW.append(("unreal_time", "Unreal time and preferences (it's high time, I'd rather)", "conditionals", ["B1.2", "C1.1", "C1.2"]))
 ABBR_NEW.update({"unreal_time": "unr"})
 CARDS["unreal_time"] = {"form": ["*It's (high / about) time* + subject + past: it should happen now, and it is late. *I'd rather / I'd sooner* + base form: what I prefer to do. *I'd rather* + another person + past: what I want someone else to do."],
                         "use": ["*It's high time we left. I'd rather stay at home. I'd rather you didn't tell anyone.*"],

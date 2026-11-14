@@ -120,6 +120,14 @@ LV_RULES.update({
 })
 
 
+# cond_advanced starts at B1.2 now (I wish + past, teacher 13 November, decision 3): the card in Latvian
+LV_RULES["cond_advanced"] = {
+    "form": ["I wish / If only + pagātne: vēlēšanās par tagadni (I wish I had more time. I wish I could drive.).", "I wish / If only + Past Perfect: nožēla par pagātni (I wish I had listened.).",
+             "unless = if ... not; as long as / provided that = tikai ja.", "Inversija (formāli): Had I known ... = If I had known ...; Were she here ... = If she were here ..."],
+    "use": ["Vēlēšanās un nožēla.", "Nosacījumi ar unless, as long as, provided that.", "Formāls teksts un runa."],
+    "signals": "I wish, if only, unless, provided that, as long as, had I, were I, should you",
+}
+
 LV_RULES["modal_verbs"] = {
     "form": ["can / should / must + darbības vārda pamatforma: I can swim. You should rest. He must go.",
              "Nav -s ar he / she / it: he can, she should, it must.",

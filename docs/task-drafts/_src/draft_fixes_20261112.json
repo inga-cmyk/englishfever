@@ -1838,5 +1838,17 @@
     "5": ""
    }
   }
+ ],
+ "wish-rather-1.csv": [
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "would you rather have tea or coffee"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question."
+   }
+  }
  ]
 }

@@ -3218,8 +3218,58 @@ when_done,B1.2,time_clauses,B1.2,check,order,read,,b1-new-2.csv:47,time_clauses 
 when_done,B1.2,time_clauses,B1.2,check,gap,read,,b1-new-2.csv:51,time_clauses | B1.2 | gap | I'll tidy up after the guests ___ . | 
 when_done,B1.2,time_clauses,B1.2,check,mcq,read,,b1-new-2.csv:66,time_clauses | B1.2 | mcq | Choose the correct option: I'll send the file as soon as I ___ it. | have finished
 when_done,B1.2,time_clauses,B1.2,check,mcq,read,,b1-new-2.csv:67,time_clauses | B1.2 | mcq | Which sentence is NOT correct? | I'll call you after I will have spoken to her.
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:2,cond_advanced | B1.2 | mcq | Choose the correct option: I don't have a car. I wish I ___ one. | had
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:3,cond_advanced | B1.2 | mcq | Choose the correct option: I can't swim. I wish I ___ swim. | could
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:4,cond_advanced | B1.2 | mcq | Which sentence is correct? | I wish I knew the answer.
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:5,cond_advanced | B1.2 | mcq | Choose the correct option: I live in the city. I wish I ___ by the sea. | lived
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:6,cond_advanced | B1.2 | mcq | Choose the correct option: If only I ___ more free time! | had
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:7,cond_advanced | B1.2 | mcq | Which sentence is NOT correct? | I wish I can speak Japanese.
+wish_pres,B1.2,cond_advanced,B1.2,check,mcq,read,,wish-rather-1.csv:8,cond_advanced | B1.2 | mcq | Choose the correct option: My phone is so slow. I wish it ___ faster. | was
+wish_pres,B1.2,cond_advanced,B1.2,use,gap,read,,wish-rather-1.csv:9,cond_advanced | B1.2 | gap | I wish I ___ how to cook. (know) | 
+wish_pres,B1.2,cond_advanced,B1.2,use,gap,read,,wish-rather-1.csv:10,cond_advanced | B1.2 | gap | My flat is tiny. I wish it ___ bigger. (be) | 
+wish_pres,B1.2,cond_advanced,B1.2,use,gap,read,,wish-rather-1.csv:11,cond_advanced | B1.2 | gap | If only I ___ a car! The bus takes ages. (have) | 
+wish_pres,B1.2,cond_advanced,B1.2,use,gap,read,,wish-rather-1.csv:12,cond_advanced | B1.2 | gap | I wish my sister ___ nearer. (live) | 
+wish_pres,B1.2,cond_advanced,B1.2,use,gap,read,,wish-rather-1.csv:13,cond_advanced | B1.2 | gap | I can't dance. I wish I ___ dance. | 
+wish_pres,B1.2,cond_advanced,B1.2,use,text,read,,wish-rather-1.csv:14,cond_advanced | B1.2 | text | Start with *I wish*: I don't speak French. | 
+wish_pres,B1.2,cond_advanced,B1.2,use,text,read,,wish-rather-1.csv:15,cond_advanced | B1.2 | text | Start with *If only*: I don't have enough time. | 
+wish_pres,B1.2,cond_advanced,B1.2,use,text,read,,wish-rather-1.csv:16,cond_advanced | B1.2 | text | Start with *I wish*: My job is boring. | 
+wish_pres,B1.2,cond_advanced,B1.2,check,order,read,,wish-rather-1.csv:17,cond_advanced | B1.2 | order | Put the words in order. | i wish i had more free time
+wish_pres,B1.2,cond_advanced,B1.2,check,order,read,,wish-rather-1.csv:18,cond_advanced | B1.2 | order | Put the words in order. | if only we lived closer
+wish_pres,B1.2,cond_advanced,B1.2,check,order,read,,wish-rather-1.csv:19,cond_advanced | B1.2 | order | Put the words in order. | i wish my laptop was faster
+wish_pres,B1.2,cond_advanced,B1.2,check,order,read,,wish-rather-1.csv:20,cond_advanced | B1.2 | order | Put the words in order. | she wishes she could drive
+wish_pres,B1.2,cond_advanced,B1.2,check,order,read,,wish-rather-1.csv:21,cond_advanced | B1.2 | order | Put the words in order. | i wish i knew his name
+wish_pres,B1.2,cond_advanced,B1.2,check,gap,read,,wish-rather-1.csv:22,cond_advanced | B1.2 | gap | I wish I ___ a bigger flat. | 
+wish_pres,B1.2,cond_advanced,B1.2,check,gap,read,,wish-rather-1.csv:23,cond_advanced | B1.2 | gap | I wish I ___ ___ the guitar. | 
+wish_pres,B1.2,cond_advanced,B1.2,check,gap,read,,wish-rather-1.csv:24,cond_advanced | B1.2 | gap | If only it ___ sunny today! | 
+wish_pres,B1.2,cond_advanced,B1.2,check,gap,read,,wish-rather-1.csv:25,cond_advanced | B1.2 | gap | He wishes he ___ in London. | 
+wish_pres,B1.2,cond_advanced,B1.2,learn,match,read,,wish-rather-1.csv:26,cond_advanced | B1.2 | match | Match each fact with the wish. | I don't have a car. = I wish I had one. ; I can't sing. = I wish I could sing. ; My room is small. = I wish it were bigger. ; I don't know her name. = I wish I knew it.
 wish_pres,B1.2,cond_advanced,B2.2,learn,mcq,read,ca-C12-1a-r2,built-in,cond_advanced | B2.2 | mcq | Which sentence expresses regret about the present? | I wish I lived closer to the sea.
 wish_pres,B1.2,cond_advanced,B2.2,use,gap,read,,typical-b2c1-1.csv:27,cond_advanced | B2.2 | gap | I wish I ___ more time to travel this year. (have) | 
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:27,unreal_time | B1.2 | mcq | Choose the correct option: It's raining. I'd rather ___ a taxi. | take
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:28,unreal_time | B1.2 | mcq | Which sentence is correct? | I'd rather not go out tonight.
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:29,unreal_time | B1.2 | mcq | Choose the correct option: I'd rather walk ___ take the bus. | than
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:30,unreal_time | B1.2 | mcq | Choose the correct option: Would you rather ___ tea or coffee? | have
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:31,unreal_time | B1.2 | mcq | Which sentence is NOT correct? | I'd rather to work from home.
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:32,unreal_time | B1.2 | mcq | Choose the correct option: I'd prefer ___ by train. | to travel
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:33,unreal_time | B1.2 | mcq | Choose the correct option: We'd rather ___ a small wedding. | have
+would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:34,unreal_time | B1.2 | mcq | Choose the correct option: He'd rather ___ alone than with a big group. | travel
+would_rather,B1.2,unreal_time,B1.2,use,gap,read,,wish-rather-1.csv:35,unreal_time | B1.2 | gap | I'd rather ___ at home than go out. (eat) | 
+would_rather,B1.2,unreal_time,B1.2,use,gap,read,,wish-rather-1.csv:36,unreal_time | B1.2 | gap | I'd rather not ___ about it. (talk) | 
+would_rather,B1.2,unreal_time,B1.2,use,gap,read,,wish-rather-1.csv:37,unreal_time | B1.2 | gap | Would you rather ___ in the city or in the country? (live) | 
+would_rather,B1.2,unreal_time,B1.2,use,gap,read,,wish-rather-1.csv:38,unreal_time | B1.2 | gap | I'd prefer ___ by the window. (sit) | 
+would_rather,B1.2,unreal_time,B1.2,use,gap,read,,wish-rather-1.csv:39,unreal_time | B1.2 | gap | She'd rather ___ a film than read a book. (watch) | 
+would_rather,B1.2,unreal_time,B1.2,use,text,read,,wish-rather-1.csv:40,unreal_time | B1.2 | text | Start with *I'd rather*: I prefer to cook at home. | 
+would_rather,B1.2,unreal_time,B1.2,use,text,read,,wish-rather-1.csv:41,unreal_time | B1.2 | text | Start with *I'd rather not*: I don't want to drive tonight. | 
+would_rather,B1.2,unreal_time,B1.2,use,text,read,,wish-rather-1.csv:42,unreal_time | B1.2 | text | Ask with *Would you rather*: go to the beach or to the mountains? | 
+would_rather,B1.2,unreal_time,B1.2,check,order,read,,wish-rather-1.csv:43,unreal_time | B1.2 | order | Put the words in order. | i'd rather stay in tonight
+would_rather,B1.2,unreal_time,B1.2,check,order,read,,wish-rather-1.csv:44,unreal_time | B1.2 | order | Put the words in order to make a question. | would you rather have tea or coffee
+would_rather,B1.2,unreal_time,B1.2,check,order,read,,wish-rather-1.csv:45,unreal_time | B1.2 | order | Put the words in order. | we'd rather not go by car
+would_rather,B1.2,unreal_time,B1.2,check,order,read,,wish-rather-1.csv:46,unreal_time | B1.2 | order | Put the words in order. | she would rather work from home
+would_rather,B1.2,unreal_time,B1.2,check,order,read,,wish-rather-1.csv:47,unreal_time | B1.2 | order | Put the words in order. | i'd prefer to eat early
+would_rather,B1.2,unreal_time,B1.2,check,gap,read,,wish-rather-1.csv:48,unreal_time | B1.2 | gap | I'd rather ___ a book. | 
+would_rather,B1.2,unreal_time,B1.2,check,gap,read,,wish-rather-1.csv:49,unreal_time | B1.2 | gap | I'd rather ___ ___ out tonight. | 
+would_rather,B1.2,unreal_time,B1.2,check,gap,read,,wish-rather-1.csv:50,unreal_time | B1.2 | gap | I'd rather walk ___ wait for the bus. | 
+would_rather,B1.2,unreal_time,B1.2,check,gap,read,,wish-rather-1.csv:51,unreal_time | B1.2 | gap | I'd prefer ___ ___ at home. | 
 would_rather,B1.2,unreal_time,B2.2,check,mcq,read,,unreal-time-1.csv:6,unreal_time | B2.2 | mcq | Choose the correct option: I'd rather ___ at home tonight. I'm exhausted. | stay
 would_rather,B1.2,unreal_time,B2.2,check,gap,read,,unreal-time-1.csv:7,unreal_time | B2.2 | gap | I'd sooner ___ the train than drive in this snow. | 
 would_rather,B1.2,unreal_time,B2.2,check,mcq,read,,unreal-time-1.csv:9,unreal_time | B2.2 | mcq | Which sentence has a mistake? | I'd rather to walk than take the bus.

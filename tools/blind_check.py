@@ -194,5 +194,13 @@ if __name__ == "__main__":
     opt = lambda f: [a[i + 1] for i, x in enumerate(a) if x == f]
     if cmd == "export": export(name, opt("--src"), (opt("--keys") or [None])[0], int((opt("--limit") or [0])[0]))
     elif cmd == "compare": compare(name)
+    elif cmd == "record-current":   # the tasks the gate stops now, after a change that only added accepted answers (docs/BLIND-CHECK.md)
+        from item_gates_test import BLIND, BLIND_DEBT
+        rec = json.load(open(REC, encoding="utf-8")) if os.path.isfile(REC) else {}
+        n = 0
+        for i in dump([]):
+            h = task_hash(i)
+            if h not in BLIND and h not in BLIND_DEBT: rec[h] = {"round": name, "task": "answers added", "gate_key": key(i)}; n += 1; print("recorded:", key(i)[:90])
+        json.dump(rec, open(REC, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True); print(n, "records")
     elif cmd == "record": record(name, set(a[a.index("--ids") + 1:]) if "--ids" in a else set())
     else: sys.exit(__doc__)

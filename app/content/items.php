@@ -5652,7 +5652,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ct-B21-3a-r5",
+"id": "ct-B21-3a-r6",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 3,
@@ -5666,7 +5666,9 @@ return json_decode(<<<'EF_JSON_END'
 "If I had seen the sign, I wouldn't have gotten a fine.",
 "If I had seen the sign, I wouldn't have been fined.",
 "If I had noticed the sign, I wouldn't have got a parking fine.",
-"If I had noticed the sign, I wouldn't have got a fine."
+"If I had noticed the sign, I wouldn't have got a fine.",
+"If I had seen the sign, I wouldn't have been given a parking fine.",
+"If I had seen the sign, I wouldn't have had to pay a parking fine."
 ]
 ],
 "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
@@ -7446,7 +7448,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-C12-3a-r7",
+"id": "rv-C12-3a-r8",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
@@ -7464,7 +7466,15 @@ return json_decode(<<<'EF_JSON_END'
 "My sister advised that I should see a doctor about my cough.",
 "My sister advised me to see a doctor about the cough.",
 "My sister advised me to go to the doctor about that cough.",
-"My sister advised me to go to the doctor about my cough."
+"My sister advised me to go to the doctor about my cough.",
+"My sister advised me that I should see a doctor about that cough.",
+"My sister advised me that I should really see a doctor about that cough.",
+"My sister advised me to really see a doctor about that cough.",
+"My sister advised me to go and see a doctor about that cough.",
+"My sister advised me that I should see a doctor about my cough.",
+"My sister advised me that I should really see a doctor about my cough.",
+"My sister advised me to really see a doctor about my cough.",
+"My sister advised me to go and see a doctor about my cough."
 ]
 ],
 "why": "*advise* + person + *to* + base verb: *My sister advised me to see a doctor.*",
@@ -7497,6 +7507,26 @@ return json_decode(<<<'EF_JSON_END'
 ],
 [
 "My sister advised that I should see a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I should see a doctor about that cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I should really see a doctor about that cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I should see a doctor about my cough.",
+"Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
+"Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
+],
+[
+"My sister advised me that I should really see a doctor about my cough.",
 "Correct too; the most common pattern is *advise* + person + *to*: *advised me to see*.",
 "Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised me to see*."
 ]

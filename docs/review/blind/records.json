@@ -1,4 +1,9 @@
 {
+"01f7672daa7b7790": {
+"gate_key": "more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ",
+"round": "r1c",
+"task": "r1c-006"
+},
 "048ad6985e7c9183": {
 "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live",
 "round": "r1",
@@ -18,6 +23,11 @@
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: ___ she studied hard, she didn't pass the driving test. | Although",
 "round": "r1",
 "task": "r1-095"
+},
+"0c2c7abee5a5390c": {
+"gate_key": "rep_verbs | B2.2 | text | Report it with *advise*: My sister said to me: 'You really should see a doctor about that cough.' | ",
+"round": "r1c",
+"task": "answers added"
 },
 "18d8681c4516bf6f": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The trains stopped ___ the strong wind. | because of",
@@ -119,6 +129,16 @@
 "round": "r1",
 "task": "r1-086"
 },
+"488e0a470d8c3184": {
+"gate_key": "verb_patterns | A2.2 | text | Start with *I've decided*: I will go home early. | ",
+"round": "r1c",
+"task": "r1c-008"
+},
+"4acbbfb523c96019": {
+"gate_key": "relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has a collection of old cars. | ",
+"round": "r1c",
+"task": "answers added"
+},
 "4e9f14df9f1b48f2": {
 "gate_key": "ind_polite | B2.1 | mcq | Which sentence is NOT correct? | I'd like to know where did you go.",
 "round": "r1",
@@ -148,6 +168,11 @@
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | you might need a warm jacket",
 "round": "r1",
 "task": "r1-059"
+},
+"5a373b25b6108ffc": {
+"gate_key": "cond_third | B2.1 | text | Imagine it happened differently. Start with *If I*: I didn't see the sign, so I got a parking fine. | ",
+"round": "r1c",
+"task": "answers added"
 },
 "5fe41f9ff4a1a681": {
 "gate_key": "relative_clauses | A2.2 | gap | We bought a car ___ uses very little petrol. | ",
@@ -329,6 +354,11 @@
 "round": "r1",
 "task": "r1-077"
 },
+"a66e3a0ed0621726": {
+"gate_key": "ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ",
+"round": "r1c",
+"task": "r1c-003"
+},
 "a8fb840bdd68e7bd": {
 "gate_key": "relative_clauses | A2.2 | gap | The women who ___ in the next office are my colleagues. | ",
 "round": "r1",
@@ -343,6 +373,11 @@
 "gate_key": "more_modals | A2.2 | gap | I can't see Anna's car. She might ___ at home. (not / be) | ",
 "round": "r1",
 "task": "r1-050"
+},
+"ae44462a4afbf317": {
+"gate_key": "more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Definitely. ; She might call. = Perhaps. ; She won't call. = Definitely not. ; She might not call. = Perhaps not.",
+"round": "r1c",
+"task": "r1c-007"
 },
 "afb4ab7df41ae4aa": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: I made a lot of good friends ___ my time at university. | during",
@@ -363,6 +398,11 @@
 "gate_key": "more_modals | A2.2 | gap | The pharmacy may ___ closed on Sunday. | ",
 "round": "r1",
 "task": "r1-046"
+},
+"bf6017c8c21de9fc": {
+"gate_key": "relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | ",
+"round": "r1c",
+"task": "r1c-005"
 },
 "c4e96662d685a3ba": {
 "gate_key": "more_modals | A2.2 | gap | You ___ ___ this film. It's very funny. | ",

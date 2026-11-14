@@ -34,7 +34,9 @@ For each task, at its level (A2.1 … B2.2; C1 tasks are B2.2):
 `app/tests/item_gates_test.py`, gate `blind`: a task without a record stops the packaging. The tasks that existed when the gate
 was added are its debt (`docs/review/blind/baseline_hashes.json`, content hashes; to be checked in rounds, the most served first); a new or
 changed task (also when only an answer or an option changed) has a new hash and needs its own record. `export NAME --keys unchecked`
-exports every task the gate stops. Changing a task after its check (even one word) means checking it again.
+exports every task the gate stops. Changing a task after its check (even one word) means checking it again, with one exception
+(14 November): a change that only **adds accepted answers** the readers listed as correct needs no new round, because an extra
+correct answer cannot make the task worse; `record-current NAME` then records the task's new hash with that round's name.
 
 ## Learner data (the second mechanism)
 Tasks that learners answer wrongly in the same way, or far below their level, are found from the research export and checked

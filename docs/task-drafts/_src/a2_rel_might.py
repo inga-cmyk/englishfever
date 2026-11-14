@@ -37,7 +37,7 @@ gp(REL, L, 3, "Write the missing word: On our trip we met a guide ___ spoke perf
 # whole sentence (3)
 tx(REL, L, 4, "Join with *who*: I have a cousin. He works in a hotel.", "I have a cousin who works in a hotel.", *R_JOIN)
 tx(REL, L, 4, "Join with *which*: We visited a museum. It has a collection of old cars.",
-   "We visited a museum which has a collection of old cars. | We visited a museum that has a collection of old cars. | We visited a museum which had a collection of old cars. | We visited a museum that had a collection of old cars.", *R_JOIN)
+   "We visited a museum which has a collection of old cars. | We visited a museum that has a collection of old cars. | We visited a museum which had a collection of old cars. | We visited a museum that had a collection of old cars. | The museum which we visited has a collection of old cars. | The museum that we visited has a collection of old cars. | The museum which we visited had a collection of old cars. | The museum that we visited had a collection of old cars.", *R_JOIN)
 replaces("Join the two sentences: We visited a museum. It has old cars.")
 tx(REL, L, 4, "Join with *which*: The app helps me learn new words. It is free.",
    "The app which helps me learn new words is free. | The app that helps me learn new words is free. | The app which is free helps me learn new words. | The app that is free helps me learn new words. | The app which helps me to learn new words is free. | The app that helps me to learn new words is free. | The app, which is free, helps me learn new words. | The app, which helps me learn new words, is free. | The app, which helps me to learn new words, is free. | The app, which is free, helps me to learn new words.", *R_JOIN)

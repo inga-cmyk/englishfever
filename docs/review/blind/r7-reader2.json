@@ -1,0 +1,30 @@
+[
+ {
+  "id": "r7-001",
+  "answer": "Leo denied eating her cookies.",
+  "other_correct": [
+   "Leo denied eating them.",
+   "Leo denied eating the cookies.",
+   "Leo denied eating Anna's cookies.",
+   "Leo denied having eaten her cookies.",
+   "Leo denied having eaten them.",
+   "Leo denied having eaten the cookies.",
+   "Leo denied having eaten Anna's cookies.",
+   "Leo denied that he had eaten her cookies.",
+   "Leo denied that he had eaten them.",
+   "Leo denied that he had eaten the cookies.",
+   "Leo denied that he had eaten Anna's cookies.",
+   "Leo denied he had eaten her cookies.",
+   "Leo denied he had eaten them.",
+   "Leo denied that he ate her cookies.",
+   "Leo denied that he ate them.",
+   "Leo denied he ate her cookies.",
+   "Leo denied eating all her cookies.",
+   "Leo denied eating them all."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "Open-ended: nothing tells the learner which pattern is wanted (denied + -ing / denied having + past participle / denied (that) he had eaten / denied (that) he ate), or which object to use (her cookies / them / the cookies / Anna's cookies, with or without 'all'). That gives at least 16 correct answers. The checker must accept all of them; the 'that he had' and 'having' forms will often be missing from a key. Also note the checker does not accept the 've contraction, which is irrelevant here. If the target is denied + -ing, a hint such as '(use -ing)' would help.",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

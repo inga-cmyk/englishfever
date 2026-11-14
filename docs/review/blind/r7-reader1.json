@@ -1,0 +1,28 @@
+[
+ {
+  "id": "r7-001",
+  "answer": "Leo denied eating the cookies.",
+  "other_correct": [
+   "Leo denied eating them.",
+   "Leo denied eating her cookies.",
+   "Leo denied eating Anna's cookies.",
+   "Leo denied eating all her cookies.",
+   "Leo denied eating all the cookies.",
+   "Leo denied having eaten the cookies.",
+   "Leo denied having eaten them.",
+   "Leo denied having eaten her cookies.",
+   "Leo denied having eaten Anna's cookies.",
+   "Leo denied that he had eaten the cookies.",
+   "Leo denied that he had eaten them.",
+   "Leo denied that he had eaten her cookies.",
+   "Leo denied that he ate the cookies.",
+   "Leo denied that he ate them.",
+   "Leo denied he had eaten the cookies.",
+   "Leo denied he ate the cookies."
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "The object is open: 'the cookies', 'them', 'her cookies', 'Anna's cookies' and 'all (of) her/the cookies' are all natural. The verb pattern is open too: 'eating', 'having eaten' and a that-clause in the past or past perfect (with or without 'that') are all correct. The checker has to accept all of these, or the task should state the target pattern, for example 'use -ing'.",
+  "level_problem": "",
+  "sense_problem": ""
+ }
+]

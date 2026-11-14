@@ -6936,7 +6936,7 @@ return json_decode(<<<'EF_JSON_END'
 "rep_questions | mcq | Choose the correct option: 'Are you ready?' He asked me ___ ready. | if I was": "rep_q_yn",
 "rep_questions | mcq | Which sentence is NOT correct? | He asked me did I like the job.": "rep_q_yn",
 "rep_questions | gap | A week ago: 'Did you enjoy the film?' → He asked me ___. | ": "rep_q_yn",
-"rep_questions | order | Anna's question to you: 'Can you help me?' Put the words in order. | she asked if I could help her": "rep_q_yn",
+"rep_questions | order | Put all the words in order. More than one answer is possible. | she asked if I could help her": "rep_q_yn",
 "rep_questions | mcq | Which sentence reports this: 'Can you fix my laptop?' | She asked if I could fix her laptop.": "rep_q_yn",
 "rep_questions | gap | He asked whether or not ___ ___ coming. | ": "rep_q_yn",
 "rep_questions | gap | Mr Ozols asked whether the invoices ___ ___ sent. | ": "rep_q_yn",

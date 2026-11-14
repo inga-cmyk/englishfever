@@ -13738,5 +13738,9 @@
 "cond_second | B1.2 | gap | Your friend's laptop is old and very slow. If I ___ you, I ___ a new one. (be / buy) | ": [
 "c2_were",
 "read"
+],
+"rep_questions | B2.1 | order | Put all the words in order. More than one answer is possible. | she asked if I could help her": [
+"rep_q_yn",
+"read"
 ]
 }

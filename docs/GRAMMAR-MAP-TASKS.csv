@@ -3020,7 +3020,7 @@ rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,b1-cond-rep-1.csv:215,rep_quest
 rep_q_yn,B1.2,rep_questions,B1.2,check,mcq,read,,b1-cond-rep-1.csv:219,rep_questions | B1.2 | mcq | Which sentence is NOT correct? | He asked me did I like the job.
 rep_q_yn,B1.2,rep_questions,B1.2,use,gap,read,,b1-upgrades-1.csv:54,rep_questions | B1.2 | gap | A week ago: 'Did you enjoy the film?' → He asked me ___. | 
 rep_q_yn,B1.2,rep_questions,B2.1,check,mcq,read,rq-B21-1a-r2,built-in,rep_questions | B2.1 | mcq | Anna's question to you: 'Can you help me?' Which sentence reports it? | She asked if I could help her.
-rep_q_yn,B1.2,rep_questions,B2.1,learn,order,read,,learn-drag-4.csv:37,rep_questions | B2.1 | order | Anna's question to you: 'Can you help me?' Put the words in order. | she asked if I could help her
+rep_q_yn,B1.2,rep_questions,B2.1,learn,order,read,,learn-drag-4.csv:37,rep_questions | B2.1 | order | Put all the words in order. More than one answer is possible. | she asked if I could help her
 rep_q_yn,B1.2,rep_questions,B2.1,check,mcq,read,,twins-2.csv:27,rep_questions | B2.1 | mcq | Which sentence reports this: 'Can you fix my laptop?' | She asked if I could fix her laptop.
 rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,rq-B22-4a-r2,built-in,rep_questions | B2.2 | mcq | Which sentence is NOT correct? | She asked me whether or not did I agree.
 rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,rq-B22-5a-r2,built-in,rep_questions | B2.2 | mcq | Which sentence is correct? | Ms Novak asked whether the budget had been approved.

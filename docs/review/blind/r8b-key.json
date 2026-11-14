@@ -1,0 +1,289 @@
+{
+ "r8b-001": {
+  "hash": "8bfdb09c703c72d9",
+  "gate_key": "cond_advanced | B1.2 | gap | I wish my sister ___ nearer. (live) | ",
+  "src": "wish-rather-1.csv:12",
+  "point": "wish_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "lived",
+     "could live"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2977",
+   "skill": "cond_advanced",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wish my sister ___ nearer. (live)",
+   "why": "A wish about now: *I wish / If only* + past (*I wish I had, I wish I knew, I wish I could*), not the present or *would have*.",
+   "why_lv": "Vēlēšanās par tagadni: *I wish / If only* + pagātne (*I wish I had, I wish I knew, I wish I could*), nevis tagadne vai *would have*.",
+   "answers": [
+    [
+     "lived",
+     "could live"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_pres",
+   "src": "wish-rather-1.csv:12"
+  }
+ },
+ "r8b-002": {
+  "hash": "0e0d3625f7e0305b",
+  "gate_key": "cond_advanced | B1.2 | gap | I can't dance. I wish I ___ dance. | ",
+  "src": "wish-rather-1.csv:13",
+  "point": "wish_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "could",
+     "was able to",
+     "were able to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2978",
+   "skill": "cond_advanced",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I can't dance. I wish I ___ dance.",
+   "why": "A wish about now: *I wish / If only* + past (*I wish I had, I wish I knew, I wish I could*), not the present or *would have*.",
+   "why_lv": "Vēlēšanās par tagadni: *I wish / If only* + pagātne (*I wish I had, I wish I knew, I wish I could*), nevis tagadne vai *would have*.",
+   "answers": [
+    [
+     "could",
+     "was able to",
+     "were able to"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_pres",
+   "src": "wish-rather-1.csv:13"
+  }
+ },
+ "r8b-003": {
+  "hash": "9a083ca9e8ba3dfc",
+  "gate_key": "cond_advanced | B1.2 | text | Start with *I wish*: I don't speak French. | ",
+  "src": "wish-rather-1.csv:14",
+  "point": "wish_pres",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I wish I spoke French.",
+     "I wish I could speak French.",
+     "I wish I knew French."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2979",
+   "skill": "cond_advanced",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *I wish*: I don't speak French.",
+   "why": "A wish about now: *I wish / If only* + past (*I wish I had, I wish I knew, I wish I could*), not the present or *would have*.",
+   "why_lv": "Vēlēšanās par tagadni: *I wish / If only* + pagātne (*I wish I had, I wish I knew, I wish I could*), nevis tagadne vai *would have*.",
+   "answers": [
+    [
+     "I wish I spoke French.",
+     "I wish I could speak French.",
+     "I wish I knew French."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_pres",
+   "src": "wish-rather-1.csv:14"
+  }
+ },
+ "r8b-004": {
+  "hash": "80e0ad6e07ab0c4e",
+  "gate_key": "cond_advanced | B1.2 | gap | My boss is very strict. I wish he ___ more relaxed. (be) | ",
+  "src": "wish-rather-1.csv:16",
+  "point": "wish_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "were",
+     "was"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2981",
+   "skill": "cond_advanced",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My boss is very strict. I wish he ___ more relaxed. (be)",
+   "why": "After *I wish* use *were* (or *was* in everyday English): *I wish it were bigger.*",
+   "why_lv": "Pēc *I wish* lieto *were* (ikdienā arī *was*): *I wish it were bigger.*",
+   "answers": [
+    [
+     "were",
+     "was"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_pres",
+   "src": "wish-rather-1.csv:16"
+  }
+ },
+ "r8b-005": {
+  "hash": "aca7b5b1fdda6424",
+  "gate_key": "cond_advanced | B1.2 | gap | If only it ___ sunny today! | ",
+  "src": "wish-rather-1.csv:24",
+  "point": "wish_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "were"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2989",
+   "skill": "cond_advanced",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If only it ___ sunny today!",
+   "why": "After *I wish* use *were* (or *was* in everyday English): *I wish it were bigger.*",
+   "why_lv": "Pēc *I wish* lieto *were* (ikdienā arī *was*): *I wish it were bigger.*",
+   "answers": [
+    [
+     "were"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "were",
+    "is",
+    "has been"
+   ],
+   "role": "check",
+   "point": "wish_pres",
+   "src": "wish-rather-1.csv:24"
+  }
+ },
+ "r8b-006": {
+  "hash": "38d8225da4ccddb2",
+  "gate_key": "cond_advanced | B1.2 | match | Match each fact with the wish. | I don't have a car. = I wish I had one. ; I can't sing. = I wish I could sing. ; My room is small. = I wish it were bigger. ; I don't know her name. = I wish I knew her name.",
+  "src": "wish-rather-1.csv:26",
+  "point": "wish_pres",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "I don't have a car.",
+     "I wish I had one."
+    ],
+    [
+     "I can't sing.",
+     "I wish I could sing."
+    ],
+    [
+     "My room is small.",
+     "I wish it were bigger."
+    ],
+    [
+     "I don't know her name.",
+     "I wish I knew her name."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2991",
+   "skill": "cond_advanced",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each fact with the wish.",
+   "why": "A wish about now: *I wish / If only* + past (*I wish I had, I wish I knew, I wish I could*), not the present or *would have*.",
+   "why_lv": "Vēlēšanās par tagadni: *I wish / If only* + pagātne (*I wish I had, I wish I knew, I wish I could*), nevis tagadne vai *would have*.",
+   "pairs": [
+    [
+     "I don't have a car.",
+     "I wish I had one."
+    ],
+    [
+     "I can't sing.",
+     "I wish I could sing."
+    ],
+    [
+     "My room is small.",
+     "I wish it were bigger."
+    ],
+    [
+     "I don't know her name.",
+     "I wish I knew her name."
+    ]
+   ],
+   "role": "learn",
+   "point": "wish_pres",
+   "src": "wish-rather-1.csv:26"
+  }
+ },
+ "r8b-007": {
+  "hash": "3c939112370e2c05",
+  "gate_key": "unreal_time | B1.2 | text | Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains. | ",
+  "src": "wish-rather-1.csv:42",
+  "point": "would_rather",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'd rather go to the mountains than to the beach.",
+     "I'd rather go to the mountains than go to the beach.",
+     "I would rather go to the mountains than to the beach.",
+     "I would rather go to the mountains than go to the beach.",
+     "I'd rather go to the mountains.",
+     "I would rather go to the mountains.",
+     "I'd rather not go to the beach.",
+     "I would rather not go to the beach."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3007",
+   "skill": "unreal_time",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains.",
+   "why": "*I'd rather* + base verb (no *to*): *I'd rather stay.* Negative: *I'd rather not go.* Two things: *I'd rather walk than drive.*",
+   "why_lv": "*I'd rather* + pamatforma (bez *to*): *I'd rather stay.* Noliegums: *I'd rather not go.* Divas lietas: *I'd rather walk than drive.*",
+   "answers": [
+    [
+     "I'd rather go to the mountains than to the beach.",
+     "I'd rather go to the mountains than go to the beach.",
+     "I would rather go to the mountains than to the beach.",
+     "I would rather go to the mountains than go to the beach.",
+     "I'd rather go to the mountains.",
+     "I would rather go to the mountains.",
+     "I'd rather not go to the beach.",
+     "I would rather not go to the beach."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "would_rather",
+   "src": "wish-rather-1.csv:42"
+  }
+ }
+}

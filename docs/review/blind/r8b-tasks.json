@@ -1,0 +1,67 @@
+[
+ {
+  "id": "r8b-001",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wish my sister ___ nearer. (live)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8b-002",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I can't dance. I wish I ___ dance.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8b-003",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I wish*: I don't speak French.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r8b-004",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "My boss is very strict. I wish he ___ more relaxed. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r8b-005",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "If only it ___ sunny today!",
+  "word_cards": [
+   "is",
+   "has been",
+   "were"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r8b-006",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each fact with the wish.",
+  "left": [
+   "I don't have a car.",
+   "I can't sing.",
+   "My room is small.",
+   "I don't know her name."
+  ],
+  "right": [
+   "I wish I could sing.",
+   "I wish it were bigger.",
+   "I wish I knew her name.",
+   "I wish I had one."
+  ]
+ },
+ {
+  "id": "r8b-007",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains.",
+  "note": "the learner types a whole sentence"
+ }
+]

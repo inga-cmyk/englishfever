@@ -1,4 +1,9 @@
 {
+"00f632121b1acb18": {
+"gate_key": "unreal_time | B1.2 | order | Put the words in order. | she would rather work from home",
+"round": "r8",
+"task": "r8-045"
+},
 "0119215123eff966": {
 "gate_key": "rep_verbs | B2.2 | text | Peter: 'I don't feel very well.'\nSarah: 'You should see a doctor.'\nFinish the sentence: Sarah advised … | ",
 "round": "r3",
@@ -14,10 +19,25 @@
 "round": "r4",
 "task": "r4-031"
 },
+"04544c738216d969": {
+"gate_key": "cond_advanced | B1.2 | gap | He wishes he ___ in London. | ",
+"round": "r8",
+"task": "r8-024"
+},
 "048ad6985e7c9183": {
 "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live",
 "round": "r1",
 "task": "r1-020"
+},
+"054229a2edbc9686": {
+"gate_key": "unreal_time | B1.2 | gap | I'd rather ___ ___ out tonight. | ",
+"round": "r8",
+"task": "r8-048"
+},
+"056c97f9db0e3707": {
+"gate_key": "cond_advanced | B1.2 | mcq | Choose the correct option: I can't swim. I wish I ___ swim. | could",
+"round": "r8",
+"task": "r8-002"
 },
 "05f7d903c9d0026c": {
 "gate_key": "ind_polite | B1.2 | gap | 'How much does this lamp cost?'\nI'd like to know how much ___ ___ . | ",
@@ -58,6 +78,11 @@
 "gate_key": "ind_polite | B1.2 | text | 'Where is the post office?'\nFinish the sentence: Do you know where … | ",
 "round": "r4",
 "task": "r4-045"
+},
+"0dc2dd90fcfcb90f": {
+"gate_key": "cond_advanced | B1.2 | gap | My flat is tiny. I wish it ___ bigger. (be) | ",
+"round": "r8",
+"task": "r8-009"
 },
 "15bf88bd0a725a4a": {
 "gate_key": "rep_questions | B2.1 | text | 'How long have you been learning English?'\nFinish the sentence: She asked me how long … | ",
@@ -108,6 +133,11 @@
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: The shop is open ___ ten tonight, so we still have time. | until",
 "round": "r1",
 "task": "r1-083"
+},
+"2523f33b43f4ce09": {
+"gate_key": "unreal_time | B1.2 | gap | I'd prefer ___ by the window. (sit) | ",
+"round": "r8",
+"task": "r8-037"
 },
 "260f8761c9dbd589": {
 "gate_key": "rep_questions | B2.1 | gap | 'How long have you lived here?'\nHe asked me how long ___ ___ ___ there. | ",
@@ -169,6 +199,11 @@
 "round": "r3",
 "task": "answers added"
 },
+"2d3c9cfc26dc4074": {
+"gate_key": "cond_advanced | B1.2 | order | Put the words in order. | if only we lived closer",
+"round": "r8",
+"task": "r8-017"
+},
 "2da3315b6100d8b0": {
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but they ___ have a map of the town at the desk. | ",
 "round": "r1",
@@ -189,6 +224,11 @@
 "round": "r5",
 "task": "r5-008"
 },
+"2f79210b601168d1": {
+"gate_key": "unreal_time | B1.2 | gap | I'd rather not ___ about it. (talk) | ",
+"round": "r8",
+"task": "r8-035"
+},
 "2fa0abcd16d39dfb": {
 "gate_key": "more_modals | A2.2 | mcq | Which sentence is NOT correct? | Maybe it will might snow tonight.",
 "round": "r1",
@@ -203,6 +243,11 @@
 "gate_key": "ind_polite | B1.2 | order | 'Where is the car park?'\nPut the words in order to make a question. | do you know where the car park is",
 "round": "r4",
 "task": "r4-048"
+},
+"33392c7dadff10c4": {
+"gate_key": "cond_advanced | B1.2 | mcq | Choose the correct option: I don't have a car. I wish I ___ one. | had",
+"round": "r8",
+"task": "r8-001"
 },
 "366d805fb82584e5": {
 "gate_key": "rep_questions | B1.2 | text | 'Have you finished?'\nFinish the sentence: He asked me if … | ",
@@ -219,20 +264,40 @@
 "round": "r4",
 "task": "r4-024"
 },
+"37b25732d41a88ba": {
+"gate_key": "unreal_time | B1.2 | order | Put the words in order. | we'd rather not go by car",
+"round": "r8",
+"task": "r8-044"
+},
 "38430a41d99b424e": {
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
 "round": "r1",
 "task": "r1-004"
+},
+"38ffd4e6c9e6eae4": {
+"gate_key": "cond_advanced | B1.2 | order | Put the words in order. | she wishes she could drive",
+"round": "r8",
+"task": "r8-019"
 },
 "3e79cfe0459102e4": {
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | my phone might not work in the mountains",
 "round": "r1",
 "task": "r1-060"
 },
+"3edff03e53869028": {
+"gate_key": "cond_advanced | B1.2 | mcq | Which sentence is correct? | I wish I knew the answer.",
+"round": "r8",
+"task": "r8-003"
+},
 "411615ee8a40533e": {
 "gate_key": "ind_polite | B1.2 | order | 'Is there a café near the station?'\nPut the words in order to make a question. | do you know if there is a café near the station",
 "round": "r4",
 "task": "r4-044"
+},
+"42b2e870a56dc878": {
+"gate_key": "cond_advanced | B1.2 | gap | If only I ___ a car! The bus takes ages. (have) | ",
+"round": "r8",
+"task": "r8-010"
 },
 "4323c9e66de42d66": {
 "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | should we leave before it gets dark",
@@ -248,6 +313,11 @@
 "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | we stayed in a flat that had a garden",
 "round": "r1",
 "task": "r1-032"
+},
+"46ebd51633b61002": {
+"gate_key": "unreal_time | B1.2 | text | Start with *I'd rather*: I prefer to cook at home. | ",
+"round": "r8",
+"task": "r8-039"
 },
 "479c3001b530acbf": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We have lived in this flat ___ 2019, and we still like it. | since",
@@ -284,6 +354,11 @@
 "round": "r1",
 "task": "r1-102"
 },
+"505eff947359fcf8": {
+"gate_key": "cond_advanced | B1.2 | gap | I wish I ___ how to cook. (know) | ",
+"round": "r8",
+"task": "r8-008"
+},
 "555928df8141d51c": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: ___ the time we reached the airport, our plane had already left. | By",
 "round": "r1",
@@ -319,10 +394,20 @@
 "round": "r1",
 "task": "r1-037"
 },
+"60178856c3f1d377": {
+"gate_key": "cond_advanced | B1.2 | gap | I wish I ___ a bigger flat. | ",
+"round": "r8",
+"task": "r8-021"
+},
 "6032f473a4031557": {
 "gate_key": "rep_questions | B1.2 | order | 'When does the bus usually come?'\nPut the words in order. | she asked me when the bus usually came",
 "round": "r4b",
 "task": "r4b-001"
+},
+"608bcab0924f1e6d": {
+"gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: I'd rather walk ___ take the bus. | than",
+"round": "r8",
+"task": "r8-028"
 },
 "617efd301e5eb820": {
 "gate_key": "more_modals | A2.2 | gap | She may ___ ___ the meeting today. | ",
@@ -333,6 +418,11 @@
 "gate_key": "rep_questions | B1.2 | text | 'Where is the manager?'\nFinish the sentence: She asked where … | ",
 "round": "r4",
 "task": "r4-017"
+},
+"64007b265c47fd3d": {
+"gate_key": "cond_advanced | B1.2 | order | Put the words in order. | i wish i had more free time",
+"round": "r8",
+"task": "r8-016"
 },
 "64280d5f6aa0cae5": {
 "gate_key": "ind_polite | B1.2 | mcq | 'Where is the library?'\nChoose the correct option: Can you tell me where ___? | the library is",
@@ -419,6 +509,11 @@
 "round": "r4b",
 "task": "r4b-006"
 },
+"784d16c28df2dc8c": {
+"gate_key": "cond_advanced | B1.2 | order | Put the words in order. | i wish my laptop was faster",
+"round": "r8",
+"task": "r8-018"
+},
 "7997813cb6b04732": {
 "gate_key": "rep_questions | B1.2 | gap | 'Have you eaten?'\nShe asked me if ___ ___ ___ . | ",
 "round": "r4",
@@ -464,6 +559,11 @@
 "round": "r1",
 "task": "r1-001"
 },
+"81047403e116c159": {
+"gate_key": "unreal_time | B1.2 | mcq | Which sentence is NOT correct? | I'd rather to work from home.",
+"round": "r8",
+"task": "r8-030"
+},
 "82202e47e3fb62b2": {
 "gate_key": "rep_verbs | B2.2 | text | Max said to you: 'I didn't take your phone.' Start with *Max denied*. | ",
 "round": "r2b",
@@ -499,6 +599,11 @@
 "round": "r1",
 "task": "r1-024"
 },
+"8f22f9c654f9a24a": {
+"gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: I'd prefer ___ by train. | to travel",
+"round": "r8",
+"task": "r8-031"
+},
 "8f9749a7effe3e47": {
 "gate_key": "rep_questions | B2.1 | mcq | Which sentence is NOT correct? | He asked me what time was it.",
 "round": "r1",
@@ -518,6 +623,16 @@
 "gate_key": "relative_clauses | A2.2 | gap | Write the missing word: On our trip we met a guide ___ spoke perfect English. | ",
 "round": "r1",
 "task": "r1-027"
+},
+"932f0987d27be9fa": {
+"gate_key": "unreal_time | B1.2 | order | Put the words in order to make a question. | would you rather have tea or coffee",
+"round": "r8",
+"task": "r8-043"
+},
+"964ff0701ec0f2ed": {
+"gate_key": "unreal_time | B1.2 | gap | Would you rather ___ in the city or in the country? (live) | ",
+"round": "r8",
+"task": "r8-036"
 },
 "97496d76402d2550": {
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: Take your laptop. I'm not sure, but we ___ need it on the trip. | ",
@@ -594,6 +709,11 @@
 "round": "r1",
 "task": "r1-077"
 },
+"a41007adc32c3a3b": {
+"gate_key": "unreal_time | B1.2 | order | Put the words in order. | i'd prefer to eat early",
+"round": "r8",
+"task": "r8-046"
+},
 "a45e79f931f0a8f3": {
 "gate_key": "rep_questions | B1.2 | text | 'What time does the film start?'\nFinish the sentence: He asked what time … | ",
 "round": "r4",
@@ -608,6 +728,16 @@
 "gate_key": "ind_polite | B2.1 | text | Ask politely. Start with *Could you tell me*: Why hasn't the order arrived? | ",
 "round": "r1c",
 "task": "r1c-003"
+},
+"a679d22c336cb966": {
+"gate_key": "cond_advanced | B1.2 | gap | I wish I ___ ___ the guitar. | ",
+"round": "r8",
+"task": "r8-022"
+},
+"a7652057e1840cf9": {
+"gate_key": "unreal_time | B1.2 | gap | I'd rather walk ___ wait for the bus. | ",
+"round": "r8",
+"task": "r8-049"
 },
 "a823da6e06e03452": {
 "gate_key": "rep_questions | B1.2 | gap | 'Why is he angry?'\nShe asked me why ___ ___ angry. | ",
@@ -629,10 +759,25 @@
 "round": "r5",
 "task": "r5-010"
 },
+"a9aa608437b38b9b": {
+"gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: It's raining. I'd rather ___ a taxi. | take",
+"round": "r8",
+"task": "r8-026"
+},
+"aac4e116d6ae839e": {
+"gate_key": "unreal_time | B1.2 | mcq | Which sentence is correct? | I'd rather not go out tonight.",
+"round": "r8",
+"task": "r8-027"
+},
 "ac9a303b621fd87d": {
 "gate_key": "more_modals | A2.2 | gap | I can't see Anna's car. She might ___ at home. (not / be) | ",
 "round": "r1",
 "task": "r1-050"
+},
+"ad9319b3c112e976": {
+"gate_key": "unreal_time | B1.2 | gap | I'd rather ___ at home than go out. (eat) | ",
+"round": "r8",
+"task": "r8-034"
 },
 "ae44462a4afbf317": {
 "gate_key": "more_modals | A2.2 | match | Match each sentence with its meaning. | She'll call. = Definitely. ; She might call. = Perhaps. ; She won't call. = Definitely not. ; She might not call. = Perhaps not.",
@@ -649,6 +794,11 @@
 "round": "r1",
 "task": "r1-081"
 },
+"afeb7eb0c66cba85": {
+"gate_key": "unreal_time | B1.2 | order | Put the words in order. | i'd rather stay in tonight",
+"round": "r8",
+"task": "r8-042"
+},
 "b1997f0c2d78a97a": {
 "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | she wants a job which pays well",
 "round": "r1",
@@ -658,6 +808,11 @@
 "gate_key": "ind_polite | B1.2 | text | 'Is there a pharmacy near here?'\nFinish the sentence: Can you tell me if … | ",
 "round": "r4",
 "task": "r4-041"
+},
+"b437e0e156734420": {
+"gate_key": "cond_advanced | B1.2 | mcq | Which sentence is NOT correct? | I wish I can speak Japanese.",
+"round": "r8",
+"task": "r8-006"
 },
 "b52e2d3dc8fdc31f": {
 "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one. | were able to",
@@ -673,6 +828,11 @@
 "gate_key": "rep_questions | B2.1 | mcq | 'How long have you worked here?'\nChoose the correct option: She asked how long ___ there. | I had worked",
 "round": "r4",
 "task": "r4-023"
+},
+"b78b5452495ecbc7": {
+"gate_key": "unreal_time | B1.2 | text | Start with *I'd rather not*: I don't want to drive tonight. | ",
+"round": "r8",
+"task": "r8-040"
 },
 "b9f1d71dd58a465a": {
 "gate_key": "ind_polite | B1.1 | order | 'What time does the bank close?'\nPut the words in order to make a question. | could you tell me what time the bank closes",
@@ -693,6 +853,11 @@
 "gate_key": "relative_clauses | A2.2 | text | Join with *which*: The app helps me learn new words. It is free. | ",
 "round": "r1c",
 "task": "r1c-005"
+},
+"c0d3dce25d0640fb": {
+"gate_key": "cond_advanced | B1.2 | mcq | Choose the correct option: My phone is so slow. I wish it ___ faster. | was",
+"round": "r8",
+"task": "r8-007"
 },
 "c4e96662d685a3ba": {
 "gate_key": "more_modals | A2.2 | gap | You ___ ___ this film. It's very funny. | ",
@@ -719,15 +884,30 @@
 "round": "r1",
 "task": "r1-101"
 },
+"cdf9790e170656c8": {
+"gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: We'd rather ___ a small wedding. | have",
+"round": "r8",
+"task": "r8-032"
+},
 "ceacb76bcbce3280": {
 "gate_key": "rep_questions | B1.2 | mcq | 'Why are you tired?'\nChoose the correct option: He asked me why ___ tired. | I was",
 "round": "r4",
 "task": "r4-027"
 },
+"d1b9c0b1c3165d40": {
+"gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: He'd rather ___ alone than with a big group. | travel",
+"round": "r8",
+"task": "r8-033"
+},
 "d1edf45b084f178f": {
 "gate_key": "time_clauses | B1.1 | mcq | Choose the correct option: We lived in Spain ___ three years before we moved to Riga. | for",
 "round": "r1",
 "task": "r1-078"
+},
+"d25a89937eff96e0": {
+"gate_key": "cond_advanced | B1.2 | mcq | Choose the correct option: I live in the city. I wish I ___ by the sea. | lived",
+"round": "r8",
+"task": "r8-004"
 },
 "d3d95e8a49e89b3d": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: We had a great holiday ___ the bad weather. | despite",
@@ -738,6 +918,11 @@
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: The road is icy. You ___ fall, so be careful. | ",
 "round": "r1",
 "task": "r1-049"
+},
+"d4bb74a75986a100": {
+"gate_key": "cond_advanced | B1.2 | order | Put the words in order. | i wish i knew his name",
+"round": "r8",
+"task": "r8-020"
 },
 "d8b0c1bec954c6c1": {
 "gate_key": "cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | ",
@@ -759,6 +944,11 @@
 "round": "r1",
 "task": "r1-088"
 },
+"dbe380d14ea94f1e": {
+"gate_key": "cond_advanced | B1.2 | text | Start with *If only*: I don't have enough time. | ",
+"round": "r8",
+"task": "r8-014"
+},
 "e0f9ac1958445388": {
 "gate_key": "more_modals | A2.2 | text | Make it negative: We might finish the project today. | ",
 "round": "r1",
@@ -778,6 +968,11 @@
 "gate_key": "rep_questions | B1.2 | gap | 'Where do you work?'\nHe asked me where ___ ___ . | ",
 "round": "r4",
 "task": "r4-002"
+},
+"e38f7cda435ed2ba": {
+"gate_key": "cond_advanced | B1.2 | mcq | Choose the correct option: If only I ___ more free time! | had",
+"round": "r8",
+"task": "r8-005"
 },
 "e51bde269ce4f0ed": {
 "gate_key": "more_modals | A2.2 | mcq | Which sentence is correct? | Ask Tom. He might know the answer.",
@@ -809,6 +1004,21 @@
 "round": "r1",
 "task": "r1-022"
 },
+"ec3c2846db7b1f86": {
+"gate_key": "unreal_time | B1.2 | gap | I'd rather ___ a book. | ",
+"round": "r8",
+"task": "r8-047"
+},
+"ec50e82dc9741358": {
+"gate_key": "unreal_time | B1.2 | gap | I'd prefer ___ ___ at home. | ",
+"round": "r8",
+"task": "r8-050"
+},
+"ee1ba9606807a944": {
+"gate_key": "unreal_time | B1.2 | gap | She'd rather ___ a film than read a book. (watch) | ",
+"round": "r8",
+"task": "r8-038"
+},
 "eea2036add42a7be": {
 "gate_key": "rep_questions | B1.2 | order | 'Why is the shop closed?'\nPut the words in order. | he asked why the shop was closed",
 "round": "r4",
@@ -823,6 +1033,11 @@
 "gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.",
 "round": "r1b",
 "task": "r1b-010"
+},
+"f44b14cdb3d28f8f": {
+"gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: Would you rather ___ tea or coffee? | have",
+"round": "r8",
+"task": "r8-029"
 },
 "f45ef099d62e0143": {
 "gate_key": "more_modals | A2.2 | text | Say it another way with *may*: It's possible that she knows Anna. | ",

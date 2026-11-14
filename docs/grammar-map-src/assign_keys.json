@@ -14102,5 +14102,149 @@
 "rep_verbs | B2.2 | text | Anna: 'Leo, where are all my cookies?'\nLeo: 'I didn't eat them!'\nFinish the sentence: Leo denied … | ": [
 "rv_ing",
 "read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: The lights are off and nobody answers the door. They ___ be at home. | can't": [
+"deduction",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: She's been running for an hour in this heat. She ___ be thirsty. | must": [
+"deduction",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: That ___ be Tom's car. He sold it last month. | can't": [
+"deduction",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: Everyone outside is wearing a coat and a hat. It ___ be very cold today. | must": [
+"deduction",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: This ___ be the right address. There's no number 52 on this street. | can't": [
+"deduction",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home. | can't": [
+"deduction",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: My phone rang ___ the meeting, and everyone looked at me. | during": [
+"during_while",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: Someone stole my bag ___ I was looking at the menu. | while": [
+"during_while",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: We lived in Spain ___ three years before we moved to Riga. | for": [
+"during_while",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: I fell asleep ___ the film, so I don't know how it ends. | during": [
+"during_while",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: ___ we were waiting for the train, it started to snow. | While": [
+"during_while",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: I made a lot of good friends ___ my time at university. | during": [
+"during_while",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: Please pay the bill ___ Friday. | by": [
+"by_until",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: The shop is open ___ ten tonight, so we still have time. | until": [
+"by_until",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: I'll wait for you here ___ six. Then I'm going home. | until": [
+"by_until",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: Guests must leave their rooms ___ eleven o'clock on the last day. | by": [
+"by_until",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: We have lived in this flat ___ 2019, and we still like it. | since": [
+"by_until",
+"read"
+],
+"time_clauses | B1.1 | mcq | Choose the correct option: ___ the time we reached the airport, our plane had already left. | By": [
+"by_until",
+"read"
+],
+"more_modals | B1.1 | mcq | Choose the correct option: The fire was big, but everyone ___ get out of the building. | was able to": [
+"able_once",
+"read"
+],
+"more_modals | B1.1 | mcq | Choose the correct option: The main road was closed, but we ___ find another way home. | were able to": [
+"able_once",
+"read"
+],
+"more_modals | B1.1 | mcq | Choose the correct option: In the end she ___ pass the exam, although it was very hard. | managed to": [
+"able_once",
+"read"
+],
+"more_modals | B1.1 | mcq | Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one. | were able to": [
+"able_once",
+"read"
+],
+"more_modals | B1.1 | mcq | Choose the correct option: The sofa was very heavy, but the two of us ___ carry it upstairs. | managed to": [
+"able_once",
+"read"
+],
+"more_modals | B1.1 | mcq | Choose the correct option: My grandfather ___ speak four languages when he was young. | could": [
+"able_once",
+"read"
+],
+"conj_clauses | B1.1 | mcq | Choose the correct option: ___ the long journey, the children were not tired at all. | Despite": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B1.1 | mcq | Choose the correct option: ___ she studied hard, she didn't pass the driving test. | Although": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B1.1 | mcq | Choose the correct option: We had a great holiday ___ the bad weather. | despite": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B1.1 | mcq | Choose the correct option: He still goes to work by bike ___ he is seventy. | although": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B1.1 | mcq | Choose the correct option: ___ having a cold, Anna sang at the concert. | Despite": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B1.1 | mcq | Choose the correct option: The flat is quite small. ___, it is very close to the centre. | However": [
+"contrast_b1",
+"read"
+],
+"conj_linkers | B1.1 | mcq | Choose the correct option: The trains stopped ___ the strong wind. | because of": [
+"because_of",
+"read"
+],
+"conj_linkers | B1.1 | mcq | Choose the correct option: We took a taxi ___ it was raining very hard. | because": [
+"because_of",
+"read"
+],
+"conj_linkers | B1.1 | mcq | Choose the correct option: The museum was closed, ___ we went to a café instead. | so": [
+"because_of",
+"read"
+],
+"conj_linkers | B1.1 | mcq | Choose the correct option: I couldn't sleep ___ the noise from the street. | because of": [
+"because_of",
+"read"
+],
+"conj_linkers | B1.1 | mcq | Choose the correct option: He was late for work ___ he overslept. | because": [
+"because_of",
+"read"
+],
+"conj_linkers | B1.1 | mcq | Choose the correct option: The concert was cancelled ___ the singer was ill. | because": [
+"because_of",
+"read"
 ]
 }

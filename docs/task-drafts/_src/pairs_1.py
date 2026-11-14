@@ -84,4 +84,4 @@ for ctx, ok, wrong in [
 ]:
     mc(LINK, "B1.1", 2, Q + ctx, ok, wrong, *BEC)
 
-save("pending/pairs-1.csv")
+save("pairs-1.csv")   # approved by the teacher, 14 November

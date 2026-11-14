@@ -2474,7 +2474,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 4,
+    "check": 10,
     "use": 2,
     "learn": 0
    },
@@ -2569,12 +2569,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 4,
+    "check": 10,
     "use": 1,
     "learn": 2
    },
    "task_levels": [
-    "B1.1"
+    "B1.1",
+    "B1.2"
    ]
   },
   {
@@ -7862,7 +7863,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 7,
+    "check": 13,
     "use": 5,
     "learn": 1
    },
@@ -7899,7 +7900,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 9,
+    "check": 15,
     "use": 7,
     "learn": 5
    },
@@ -7995,11 +7996,13 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
+    "check": 6,
     "use": 0,
     "learn": 0
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.1"
+   ]
   },
   {
    "id": "by_until",
@@ -8021,11 +8024,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
+    "check": 6,
     "use": 0,
     "learn": 1
    },
    "task_levels": [
+    "B1.1",
     "B1.2"
    ]
   },

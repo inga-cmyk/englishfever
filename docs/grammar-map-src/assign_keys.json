@@ -13722,5 +13722,9 @@
 "more_modals | A2.2 | match | Match each sentence with its meaning. | It will rain. = I'm sure about the rain. ; She might call. = Perhaps she will call. ; He won't come. = I'm sure he will stay at home. ; They might not win. = Perhaps they will lose.": [
 "might",
 "read"
+],
+"cond_second | B1.2 | text | Your friend's colleague always takes her ideas. Give advice with *If I were you* and *tell your boss*. | ": [
+"c2_were",
+"read"
 ]
 }

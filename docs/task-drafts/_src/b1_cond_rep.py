@@ -93,7 +93,10 @@ P.gap("B1.2","I ___ her if I ___ her address. (visit / know)","would visit / kne
 P.text("B1.1","Rewrite as a second conditional: I don't have enough money, so I can't buy it.",["If I had enough money, I could buy it.","If I had enough money, I would buy it."],b=5)
 P.text("B1.1","Make a yes/no question: You would move abroad if you got a good job.","Would you move abroad if you got a good job?")
 replaces("Make a question: You would move abroad if you got a good job.")
-P.text("B1.2","Give advice with If I were you: Tell your boss.",["If I were you, I would tell your boss.","If I were you, I'd tell your boss."],b=5)
+# report of 14 November (c-0707): "Tell your boss." read as an order, without a problem to advise on; the situation and the advice are given
+P.text("B1.2","Your friend's colleague always takes her ideas. Give advice with *If I were you* and *tell your boss*.",["If I were you, I would tell your boss.","If I were you, I'd tell your boss.","If I were you, I would tell your boss about it.","If I were you, I'd tell your boss about it."],b=5,
+       why=("Advice: *If I were you, I would* + base verb: *If I were you, I'd tell your boss.*", "Padoms: *If I were you, I would* + pamatforma: *If I were you, I'd tell your boss.*"))
+replaces("Give advice with If I were you: Tell your boss.")
 P.text("B1.2","Rewrite as a second conditional: He doesn't practise, so he doesn't win.",["If he practised, he would win.","If he practised, he'd win.","If he practiced, he would win.","If he practiced, he'd win."],b=5)
 P.match("B1.1","Match each real situation with the unreal wish.",[("I don't have a car.","If I had a car, I'd drive to work."),("She lives far away.","If she lived closer, we'd meet more often."),("We have no time.","If we had time, we'd travel."),("He is shy.","If he weren't shy, he'd speak up.")])
 P.match("B1.2","Match each problem with the advice.",[("I'm always tired.","If I were you, I'd go to bed earlier."),("I can't find my keys.","If I were you, I'd check your coat."),("I have a toothache.","If I were you, I'd see a dentist."),("I'm bored.","If I were you, I'd learn a new hobby.")])

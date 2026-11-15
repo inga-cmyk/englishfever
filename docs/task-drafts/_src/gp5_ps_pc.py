@@ -8,17 +8,14 @@ T = "Present continuous"
 S = "Present simple"   # the one task whose answer is the habit form
 L = "A2.1"
 
-NOW = ("Happening now (*Look!*, *at the moment*, *right now*): *am / is / are* + verb-ing. A habit (*usually*, *never*, *every day*): present simple.",
-       "Notiek tagad (*Look!*, *at the moment*, *right now*): *am / is / are* + darbības vārds ar *-ing*. Ieradums (*usually*, *never*, *every day*): Present Simple.")
-
 # choice (2)
 mc(S, L, 2, "Choose the correct option: What time ___ you usually finish work?", "do", ["are", "—"],
    "*usually* shows a habit, so the present simple: *What time do you usually finish work?* *Are you finishing* is about now or a plan; without *do* the question is not correct.",
-   "*usually* norāda uz ieradumu, tāpēc Present Simple: *What time do you usually finish work?* *Are you finishing* ir par tagadni vai plānu; bez *do* jautājums nav pareizs.")
-mc(T, L, 2, "Which sentence has a mistake?", "Look! Our bus comes.",
+   "*usually* norāda uz ieradumu, tāpēc Present Simple: *What time do you usually finish work?* *Are you finishing* ir par tagadni vai plānu; bez *do* jautājums ir kļūdains.")
+mc(T, L, 2, "Which sentence has a mistake?", "Look! Our bus comes round the corner.",
    ["We usually have dinner at seven.", "My brother is sleeping at the moment.", "Does your shop open on Sundays?"],
-   "*Look!* shows it is happening now: *Look! Our bus is coming.* The other three are correct: a habit, an action now, a question about a regular time.",
-   "*Look!* norāda, ka tas notiek tagad: *Look! Our bus is coming.* Pārējie trīs ir pareizi: ieradums, darbība tagad, jautājums par regulāru laiku. Tulkojot burtiski *Skaties! Nāk mūsu autobuss*, iznāk *Our bus comes*; angļu valodā tagad notiekošam vajag *is coming*.")
+   "*Look!* shows it is happening now: *Look! Our bus is coming round the corner.* The other three are correct: a habit, an action now, a question about a regular time.",
+   "*Look!* norāda, ka tas notiek tagad: *Look! Our bus is coming round the corner.* Pārējie trīs teikumi ir bez kļūdām: ieradums, darbība tagad, jautājums par regulāru laiku. Tulkojot burtiski, latviešu tagadne dod *Our bus comes*; angļu valodā tagad notiekošam vajag *is coming*.")
 # word order (1): usually goes with the simple form, today with the continuous one
 od(T, L, 3, "Put the words in order.", "she usually swims but today she is running",
    "*usually* + present simple (*she usually swims*), *today* + present continuous (*today she is running*).",

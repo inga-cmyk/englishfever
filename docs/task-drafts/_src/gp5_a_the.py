@@ -26,4 +26,4 @@ gp(T, L, 3, "Complete with *a*, *an* or *the*: We rented ___ car in Spain. ___ c
 tx(T, L, 4, "Correct the mistake: I bought a new laptop. A laptop is very fast.",
    "I bought a new laptop. The laptop is very fast. | I bought a new laptop. It is very fast. | I bought a new laptop. It's very fast.",
    "We already know which laptop (the new one), so the second time it is *the laptop* (or *it*).",
-   "Mēs jau zinām, kurš klēpjdators domāts (tas, ko nopirkām), tāpēc otrajā reizē ir *the laptop* (vai *it*).")
+   "Mēs jau zinām, kurš klēpjdators domāts, tāpēc otrajā reizē ir *the laptop* (vai *it*).")

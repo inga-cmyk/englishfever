@@ -10,7 +10,7 @@ LIKE_LV = ("*like, love, hate* + *-ing* (or *to* + verb): *Ben likes playing ten
 WANT = ("*want* + *to* + base verb: *I want to go.* Not *I want go* or *I want going*.",
         "*want* + *to* + pamatforma: *I want to go.* Nevis *I want go* vai *I want going*.")
 WANT_LV = ("*want* + *to* + base verb: *Maria wants to take a taxi.* Not *wants take*.",
-           "Tulkojot burtiski *Marija grib braukt* → *Maria wants take*. Angļu valodā pēc *want* vajag *to* + pamatforma: *Maria wants to take a taxi.*")
+           "Tulkojot burtiski *gribu iet* → *I want go*. Angļu valodā pēc *want* vajag *to* + pamatforma: *Maria wants to take a taxi.*")
 
 # choose (2): Murphy 58 (like / love / hate + -ing or to: to is not a wrong option), Murphy 54 (want + to)
 mc(T, L, 2, "Choose the correct option: My brother hates ___ early.", "getting up", ["get up", "gets up", "to getting up"], *LIKE)

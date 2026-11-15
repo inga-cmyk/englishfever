@@ -5,13 +5,13 @@ T = "Adverbs: manner, frequency, degree"
 L = "A2.2"
 
 VM = ("*very much* goes at the end, after the verb and its object: *We enjoyed the class very much.* Not *very* or *much* alone, and not *much very*.",
-      "*very much* ir teikuma beigās, aiz darbības vārda un tā papildinātāja: *We enjoyed the class very much.* Nevis tikai *very* vai *much*, un nevis *much very*.")
+      "*very much* ir teikuma beigās, aiz darbības vārda un tā papildinātāja: *We enjoyed the class very much.* Nevis *very*, *much* vai *much very*.")
 VERB = ("*very* goes before an adjective or an adverb (*very good, very fast*), never before a verb. With a verb: *I really like it* or *I like it very much*.",
-        "Tulkojot burtiski *man ļoti patīk*, sanāk *I very like it*. Angliski *very* ir tikai pirms īpašības vārda vai apstākļa vārda (*very good*); ar darbības vārdu saka *I really like it* vai *I like it very much*.")
+        "Tulkojot burtiski ļoti patīk, sanāk *I very like it*. Angliski *very* liek pirms īpašības vārda vai apstākļa vārda (*very good*); ar darbības vārdu saka *I really like it* vai *I like it very much*.")
 ADJ = ("A degree word goes right before the adjective: *a very nice holiday*, *really good*, *quite small*.",
        "Pakāpes apstākļa vārds ir tieši pirms īpašības vārda: *a very nice holiday*, *really good*, *quite small*.")
-TOO = ("*too* + adjective = more than is good: *too heavy*. Not *too much heavy* or *very much heavy*: *much* does not go before an adjective.",
-       "*too* + īpašības vārds = vairāk, nekā vajag: *too heavy*. Nevis *too much heavy* vai *very much heavy*: *much* nav pirms īpašības vārda.")
+TOO = ("*too* + adjective = more than is good: *too heavy*. Not *too much heavy* or *very much heavy*; *too much* goes with a noun (*too much luggage*).",
+       "*too* + īpašības vārds = vairāk, nekā vajag: *too heavy*. Nevis *too much heavy* vai *very much heavy*; *too much* lieto ar lietvārdu (*too much luggage*).")
 
 # choose (2)
 mc(T, L, 2, "Choose the correct option: We enjoyed the cooking class ___.", "very much", ["very", "much", "much very"], *VM)

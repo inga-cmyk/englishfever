@@ -12,9 +12,8 @@ UNC = ("*advice, information, furniture, news, luggage* are uncountable: no *a /
        "*advice, information, furniture, news, luggage* ir neskaitāmi lietvārdi: bez *a / an*, bez daudzskaitļa *-s*, un darbības vārds vienskaitlī: *some news, The furniture is new.*")
 VERB = ("An uncountable noun takes a singular verb: *is*, *has*, verb + *-s*. *luggage* has no plural: *My luggage is …*",
         "Neskaitāmam lietvārdam darbības vārds ir vienskaitlī: *is*, *has*, darbības vārds + *-s*. *luggage* nav daudzskaitļa: *My luggage is …*")
-ADV = ("*advice* is uncountable: *some advice*, *a piece of advice*, never *an advice* or *advices*. "
-       "Tulkojot burtiski, latviešu *padoms, padomi* dod *an advice, advices*.",
-       "*advice* ir neskaitāms lietvārds: *some advice*, *a piece of advice*, nekad *an advice* vai *advices*. "
+ADV = ("*advice* is uncountable: *some advice*, *a piece of advice*, never *an advice* or *advices*; the verb is singular: *Your advice is…*",
+       "*advice* ir neskaitāms lietvārds: *some advice*, *a piece of advice*, nekad *an advice* vai *advices*; darbības vārds vienskaitlī: *Your advice is…* "
        "Tulkojot burtiski, latviešu *padoms, padomi* dod *an advice, advices*.")
 PIECE = ("To count an uncountable noun, use *a piece of / two pieces of*: *a piece of advice*, *How many pieces of luggage?*",
          "Lai saskaitītu neskaitāmu lietvārdu, lieto *a piece of / two pieces of*: *a piece of advice*, *How many pieces of luggage?*")
@@ -22,8 +21,7 @@ PIECE = ("To count an uncountable noun, use *a piece of / two pieces of*: *a pie
 # 1 choice (check), relationships: news is uncountable, no a / an. Learners write "a good news" (Latvian "laba ziņa")
 # and "a good new"; "good news" without some would also be correct, so it is not an option.
 mc(T, L, 2, "Choose the correct option: I have ___ for you!", "some good news", ["a good news", "a good new"],
-   "*news* is uncountable and always ends in *-s*: *some good news*, *the news*, never *a news* or *a new*. "
-   "Tulkojot burtiski, *laba ziņa* dod *a good news*.",
+   "*news* is uncountable and always ends in *-s*: *some good news*, *the news*, never *a news* or *a new*.",
    "*news* ir neskaitāms lietvārds un vienmēr beidzas ar *-s*: *some good news*, *the news*, nekad *a news* vai *a new*. "
    "Tulkojot burtiski, *laba ziņa* dod *a good news*.")
 
@@ -47,8 +45,9 @@ gp(T, L, 3, "My ___ ___ still at the airport.", "luggage / is", *VERB,
 mc(T, L, 2, "Choose the correct option: We need ___ for our new office.", "some furniture",
    ["a furniture", "furnitures", "some furnitures"], *UNC)
 
-# 7 typed gap (use), learning: a singular verb after advice; was and has been are correct English too, so they are accepted
-gp(T, L, 3, "Your advice about the exam ___ really helpful. (be)", "is | was | has been", *ADV)
+# 7 typed gap (use), learning: a singular verb after advice. Thank you! rules out would be (a polite request);
+# was, has been and will be are correct English with it and are accepted: the task is about singular / plural, not the time
+gp(T, L, 3, "Thank you! Your advice about the exam ___ really helpful. (be)", "is | was | has been | will be", *ADV)
 
 # 8 word order (check), travel: How many + pieces of luggage (not How much luggages, not How many luggage)
 od(T, L, 3, "Put the words in order to make a question.", "how many pieces of luggage do you have", *PIECE)
@@ -58,6 +57,6 @@ tx(T, L, 4, "Rewrite with *furniture*: The chairs and tables in this café are n
    "The furniture in this café is new. | The furniture in this café is all new. | All the furniture in this café is new. | "
    "All of the furniture in this café is new. | The furniture in the café is new. | This café's furniture is new. | "
    "The café's furniture is new. | This café has new furniture. | The café has new furniture.",
-   "*furniture* = chairs, tables, beds… It is uncountable: no plural, and a singular verb: *The furniture is new.*",
-   "*furniture* = krēsli, galdi, gultas… Tas ir neskaitāms lietvārds: bez daudzskaitļa, un darbības vārds vienskaitlī: *The furniture is new.* "
-   "Latviski *mēbeles* ir daudzskaitlī, tāpēc gribas *are*.")
+   "*furniture* (chairs, tables, beds…) is uncountable: no plural, and a singular verb: *The furniture is new.*",
+   "*furniture* (mēbeles) ir neskaitāms lietvārds: bez daudzskaitļa, un darbības vārds vienskaitlī: *The furniture is new.* "
+   "Tulkojot burtiski, *mēbeles ir* dod *furnitures are*.")

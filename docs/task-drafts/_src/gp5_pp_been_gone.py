@@ -3,8 +3,6 @@ from lib import gp, od, mc, tx
 T = "Present perfect"
 L = "A2.2"
 
-BG = ("*been to* = went and came back; *gone to* = went and is still there now: *She's been to Paris* (she is back). *She's gone to Paris* (she is there now).",
-      "*been to* = aizgāja un atgriezās; *gone to* = aizgāja un tagad vēl ir tur: *She's been to Paris* (viņa ir atpakaļ). *She's gone to Paris* (viņa tagad ir tur).")
 GONE = ("The person is not here now, so *gone*: *has / have gone* = went and is still there. *been* would mean they are back. After *have / has* use the 3rd form, not *went*.",
         "Cilvēks tagad nav šeit, tāpēc *gone*: *has / have gone* = aizgāja un vēl ir tur. *been* nozīmētu, ka viņš jau ir atpakaļ. Aiz *have / has* lieto 3. formu, nevis *went*.")
 BEEN = ("The person is back (or is here and speaking), so *been*: *have / has been to* = went and came back. *gone* would mean they are still there. After *have / has* use the 3rd form, not *went*.",
@@ -16,7 +14,7 @@ mc(T, L, 2, "Choose the correct option: I've ___ to the gym. I feel great now.",
 mc(T, L, 2, "Which sentence has a mistake?", "My parents have gone to Italy twice.",
    ["Have you ever been to a jazz concert?", "Ivo has gone home. He felt ill.", "I haven't seen my cousin this year."],
    "Visits that are over can be counted (*twice, three times*): *My parents have been to Italy twice.* *gone* means they are still there, so it cannot happen twice.",
-   "Apmeklējumus, kas jau beigušies, var saskaitīt (*twice, three times*): *My parents have been to Italy twice.* *gone* nozīmē, ka viņi vēl ir tur, tāpēc divreiz tas nevar notikt.")
+   "Apmeklējumus, kas jau beigušies, var saskaitīt (*twice, three times*): *My parents have been to Italy twice.* *gone* nozīmē, ka viņi vēl ir tur, tāpēc ar *twice* jālieto *been*.")
 # typed gap (2)
 gp(T, L, 3, "Write *been* or *gone*: We have ___ to the cinema twice this month.", "been",
    "*twice* counts visits that are over: we went and came back, so *been*.",
@@ -33,4 +31,4 @@ gp(T, L, 3, "Our friends are back from their holiday. They ___ ___ to Greece.", 
 tx(T, L, 4, "Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there.",
    "Rita has gone to Tokyo. | Rita has gone to Tokyo, and she is still there. | Rita has gone to Tokyo and is still there.",
    "She went and is still there: *has gone to*. *has been to* would mean she is back.",
-   "Viņa aizbrauca un vēl ir tur: *has gone to*. *has been to* nozīmētu, ka viņa ir atpakaļ.")
+   "Viņa aizgāja un vēl ir tur: *has gone to*. *has been to* nozīmētu, ka viņa ir atpakaļ.")

@@ -20,7 +20,7 @@ mc(T, L, 2, "Which sentence has a mistake?", "My daughter goes to school by foot
 gp(T, L, 3, "Today I'm going to work ___ Tom's car.", "in", *IN, bank=["in", "by", "on", "with"])
 gp(T, L, 3, "I met an old friend ___ the tram yesterday.", "on", *ON, bank=["on", "in", "at"])
 # typed gap (2): own instruction, so the topic's "Complete with in, on or at" is not added (it would give "on foot" a wrong hint)
-gp(T, L, 3, "Write the missing word: The museum isn't far. Let's go ___ foot.", "on", *FOOT)
+gp(T, L, 3, "Write the missing word: Let's go to the museum ___ foot.", "on", *FOOT)
 gp(T, L, 3, "Write the missing word: We went to the airport ___ a taxi.", "in", *IN)
 # whole sentence (1): both corrections are right (in my car / by car)
 tx(T, L, 4, "Correct the mistake: I go to work by my car.", "I go to work in my car. | I go to work by car.",

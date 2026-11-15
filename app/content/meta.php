@@ -12532,44 +12532,54 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "is always + -ing",
-        "now || *He'[[s always losing]] his keys!*"
+        "it annoys me (now) || *He'[[s always losing]] his keys! It drives me mad.*"
        ],
        [
         "was always + -ing",
-        "past || *She [[was always complaining]].*"
+        "it annoyed me (then) || *At work she [[was always complaining]] about the coffee.*"
        ],
        [
-        "constantly / forever + -ing",
-        "also || *constantly, forever*: *They're [[constantly arguing]].*"
+        "always + verb",
+        "just a fact || *He [[always loses]] at chess.* (no complaint)"
        ]
       ],
       "stack": "rows"
      },
      "mistakes": [
       [
-       "He [[always is]] losing his keys.",
-       "He [[is always]] losing his keys."
+       "I'm always [[loving]] your cakes!",
+       "I [[always love]] your cakes!"
       ],
       [
-       "She's always [[lose]] her keys.",
-       "She's always [[losing]] her keys."
+       "She's always [[complaining]] yesterday.",
+       "She [[complained]] yesterday."
+      ],
+      [
+       "He [[always is]] losing his keys.",
+       "He [[is always]] losing his keys."
       ]
      ],
      "uses": [
       {
-       "t": "It happens too often, and it annoys me",
+       "t": "A complaint about a habit",
+       "s": [
+        "always",
+        "constantly",
+        "forever"
+       ],
        "ex": [
-        "My flatmate [[is always borrowing]] my charger. (and it drives me mad)",
-        "My flatmate [[always borrows]] my charger. (correct too, but neutral)"
+        "Why [[are]] you [[always checking]] your phone at dinner?",
+        "My neighbours [[are constantly arguing]].",
+        "He'[[s forever telling]] us how busy he is."
        ]
       }
      ],
      "watch": [
-      "*always* goes between *is / was* and the verb-*ing*."
+      "Often with words that show the feeling: *It drives me mad. I'm tired of it. Why …?*"
      ]
     },
     "watch": [
-     "*always* goes between *is / was* and the verb-*ing*."
+     "Often with words that show the feeling: *It drives me mad. I'm tired of it. Why …?*"
     ]
    },
    "rule_lv": {
@@ -12581,44 +12591,56 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "is always + -ing",
-        "tagad || *He'[[s always losing]] his keys!*"
+        "tas mani kaitina (tagad) || *He'[[s always losing]] his keys! It drives me mad.*"
        ],
        [
         "was always + -ing",
-        "pagātne || *She [[was always complaining]].*"
+        "tas mani kaitināja (toreiz) || *At work she [[was always complaining]] about the coffee.*"
        ],
        [
-        "constantly / forever + -ing",
-        "arī || *constantly, forever*: *They're [[constantly arguing]].*"
+        "always + darbības vārds",
+        "tikai fakts || *He [[always loses]] at chess.* (bez īgnuma)"
        ]
       ],
       "stack": "rows"
      },
      "mistakes": [
       [
-       "He [[always is]] losing his keys.",
-       "He [[is always]] losing his keys."
+       "I'm always [[loving]] your cakes!",
+       "I [[always love]] your cakes!",
+       "Uzslavai un stāvokļa darbības vārdiem (*love, know, have*) šo formu nelieto."
       ],
       [
-       "She's always [[lose]] her keys.",
-       "She's always [[losing]] her keys."
+       "She's always [[complaining]] yesterday.",
+       "She [[complained]] yesterday.",
+       "Viens notikums nav ieradums, par ko sūdzēties."
+      ],
+      [
+       "He [[always is]] losing his keys.",
+       "He [[is always]] losing his keys."
       ]
      ],
      "uses": [
       {
-       "t": "Tas notiek pārāk bieži, un tas mani kaitina",
+       "t": "Sūdzība par ieradumu",
+       "s": [
+        "always",
+        "constantly",
+        "forever"
+       ],
        "ex": [
-        "My flatmate [[is always borrowing]] my charger. (un tas mani kaitina)",
-        "My flatmate [[always borrows]] my charger. (arī pareizi, bet neitrāli)"
+        "Why [[are]] you [[always checking]] your phone at dinner?",
+        "My neighbours [[are constantly arguing]].",
+        "He'[[s forever telling]] us how busy he is."
        ]
       }
      ],
      "watch": [
-      "*always* liek starp *is / was* un darbības vārdu ar *-ing*."
+      "Bieži kopā ar vārdiem, kas parāda sajūtu: *It drives me mad. I'm tired of it. Why …?*"
      ]
     },
     "watch": [
-     "*always* liek starp *is / was* un darbības vārdu ar *-ing*."
+     "Bieži kopā ar vārdiem, kas parāda sajūtu: *It drives me mad. I'm tired of it. Why …?*"
     ]
    }
   },

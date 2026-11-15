@@ -294,7 +294,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*I'm meeting Anna at five tomorrow.*",
     "watch": [
      "*think* = have an opinion: simple; *think* = consider: continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
-     "*always* + continuous shows annoyance: *He's always [[losing]] his keys!*",
+     "*always / constantly / forever* + continuous shows annoyance: *He's always [[losing]] his keys! She was always [[complaining]].*",
      "A permanent situation: present simple; a temporary one: continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.*"
     ],
     "v2": {
@@ -399,7 +399,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*think* = have an opinion: simple; *think* = consider: continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
-      "*always* + continuous shows annoyance: *He's always [[losing]] his keys!*",
+      "*always / constantly / forever* + continuous shows annoyance: *He's always [[losing]] his keys! She was always [[complaining]].*",
       "A permanent situation: present simple; a temporary one: continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.*"
      ]
     }
@@ -419,7 +419,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*now, at the moment, today, this week, these days, tomorrow* (plāniem)",
     "watch": [
      "*think* = būt viedoklim: Present Simple; *think* = apdomāt: Continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
-     "*always* + Continuous izsaka īgnumu: *He's always [[losing]] his keys!*",
+     "*always / constantly / forever* + Continuous izsaka īgnumu: *He's always [[losing]] his keys! She was always [[complaining]].*",
      "Pastāvīga situācija: Present Simple, pagaidu: Continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.* Latviski abos gadījumos \"dzīvoju\"."
     ],
     "v2": {
@@ -525,7 +525,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*think* = būt viedoklim: Present Simple; *think* = apdomāt: Continuous: *I [[think]] it's a good idea. I'm [[thinking]] about it.*",
-      "*always* + Continuous izsaka īgnumu: *He's always [[losing]] his keys!*",
+      "*always / constantly / forever* + Continuous izsaka īgnumu: *He's always [[losing]] his keys! She was always [[complaining]].*",
       "Pastāvīga situācija: Present Simple, pagaidu: Continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.* Latviski abos gadījumos \"dzīvoju\"."
      ]
     }
@@ -1586,7 +1586,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*tomorrow, next week, soon, when, as soon as, if*",
     "example": "*Look at the clouds! It's going to rain.*",
     "watch": [
-     "*won't* can mean *refuse*: *The car [[won't]] start.*",
+     "*won't* can mean *refuse*: *The car [[won't]] start.* In the past: *The car [[wouldn't]] start this morning.*",
      "*be about to* = very soon: *Hurry! The train [[is about to]] leave.*",
      "*I don't think I'll…* is more natural than *I think I won't…*: *I [[don't think]] I'll come.*"
     ],
@@ -1669,7 +1669,7 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*won't* can mean *refuse*: *The car [[won't]] start.*",
+      "*won't* can mean *refuse*: *The car [[won't]] start.* In the past: *The car [[wouldn't]] start this morning.*",
       "*be about to* = very soon: *Hurry! The train [[is about to]] leave.*",
       "*I don't think I'll…* is more natural than *I think I won't…*: *I [[don't think]] I'll come.*"
      ]
@@ -1690,7 +1690,7 @@ return json_decode(<<<'EF_JSON_END'
     ],
     "signals": "*tomorrow, next week, soon, when, as soon as, if*",
     "watch": [
-     "*won't* var nozīmēt atteikšanos: *The car [[won't]] start.* (Mašīna neiedarbojas.)",
+     "*won't* var nozīmēt atteikšanos: *The car [[won't]] start.* (Mašīna neiedarbojas.) Pagātnē: *The car [[wouldn't]] start this morning.*",
      "*be about to* = tūlīt: *Hurry! The train [[is about to]] leave.*",
      "*I don't think I'll…* ir dabiskāk nekā *I think I won't…*: *I [[don't think]] I'll come.*"
     ],
@@ -1774,7 +1774,7 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "*won't* var nozīmēt atteikšanos: *The car [[won't]] start.* (Mašīna neiedarbojas.)",
+      "*won't* var nozīmēt atteikšanos: *The car [[won't]] start.* (Mašīna neiedarbojas.) Pagātnē: *The car [[wouldn't]] start this morning.*",
       "*be about to* = tūlīt: *Hurry! The train [[is about to]] leave.*",
       "*I don't think I'll…* ir dabiskāk nekā *I think I won't…*: *I [[don't think]] I'll come.*"
      ]
@@ -5628,6 +5628,14 @@ return json_decode(<<<'EF_JSON_END'
        "ex": [
         "My brother, [[who lives in Berlin]], is a nurse."
        ]
+      },
+      {
+       "t": "*what* = the thing(s) that, with no noun before it",
+       "ex": [
+        "I didn't hear [[what]] he said.",
+        "[[What]] I need is a holiday.",
+        "Everything [[that]] he said was true. (after a noun or *everything*: *that*, not *what*)"
+       ]
       }
      ],
      "watch": [
@@ -5704,6 +5712,14 @@ return json_decode(<<<'EF_JSON_END'
        "t": "Ar komatiem: papildu informācija, nevis *that*",
        "ex": [
         "My brother, [[who lives in Berlin]], is a nurse."
+       ]
+      },
+      {
+       "t": "*what* = tas, ko / tas, kas (pirms tā nav lietvārda)",
+       "ex": [
+        "I didn't hear [[what]] he said.",
+        "[[What]] I need is a holiday.",
+        "Everything [[that]] he said was true. (aiz lietvārda vai *everything*: *that*, nevis *what*)"
        ]
       }
      ],
@@ -6518,14 +6534,24 @@ return json_decode(<<<'EF_JSON_END'
        "ex": [
         "Children [[weren't allowed to]] go in."
        ]
+      },
+      {
+       "t": "*should have / could have* + 3rd form: the past",
+       "ex": [
+        "You [[should have told]] me. (it was right, but you didn't)",
+        "You [[shouldn't have shouted]]. (you did, and it was wrong)",
+        "We [[could have won]]. (it was possible, but it didn't happen)"
+       ]
       }
      ],
      "watch": [
-      "*needn't have* + 3rd form: you did it, but it wasn't necessary: *We [[needn't have]] hurried. The train was late.*"
+      "*needn't have* + 3rd form: you did it, but it wasn't necessary: *We [[needn't have]] hurried. The train was late.*",
+      "We say *should've*, but we write *should [[have]]*, never *should of*."
      ]
     },
     "watch": [
-     "*needn't have* + 3rd form: you did it, but it wasn't necessary: *We [[needn't have]] hurried. The train was late.*"
+     "*needn't have* + 3rd form: you did it, but it wasn't necessary: *We [[needn't have]] hurried. The train was late.*",
+     "We say *should've*, but we write *should [[have]]*, never *should of*."
     ]
    },
    "rule_lv": {
@@ -6600,14 +6626,24 @@ return json_decode(<<<'EF_JSON_END'
        "ex": [
         "Children [[weren't allowed to]] go in."
        ]
+      },
+      {
+       "t": "*should have / could have* + 3. forma: pagātne",
+       "ex": [
+        "You [[should have told]] me. (tā būtu bijis pareizi, bet tu to neizdarīji)",
+        "You [[shouldn't have shouted]]. (tu to izdarīji, un tas bija nepareizi)",
+        "We [[could have won]]. (tas bija iespējams, bet nenotika)"
+       ]
       }
      ],
      "watch": [
-      "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*"
+      "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*",
+      "Runā saka *should've*, bet raksta *should [[have]]*, nekad *should of*."
      ]
     },
     "watch": [
-     "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*"
+     "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*",
+     "Runā saka *should've*, bet raksta *should [[have]]*, nekad *should of*."
     ]
    }
   },
@@ -8279,7 +8315,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*people, police, children* are plural: *People [[are]] friendly.*",
      "*news* is singular: *The news [[is]] good.*",
-     "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*"
+     "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*",
+     "*each / every* + singular: *Every room [[has]] a balcony.* *each of* the rooms (not *every of*). *all day* = the whole day; *every day* = each day; *my whole life* (not *my all life*)."
     ],
     "v2": {
      "table": {
@@ -8360,7 +8397,8 @@ return json_decode(<<<'EF_JSON_END'
      "watch": [
       "*people, police, children* are plural: *People [[are]] friendly.*",
       "*news* is singular: *The news [[is]] good.*",
-      "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*"
+      "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*",
+      "*each / every* + singular: *Every room [[has]] a balcony.* *each of* the rooms (not *every of*). *all day* = the whole day; *every day* = each day; *my whole life* (not *my all life*)."
      ]
     }
    },
@@ -8378,7 +8416,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
      "*news* ir vienskaitlī: *The news [[is]] good.* Latviski \"ziņas ir\" ir daudzskaitlī, tāpēc gribas *are*.",
-     "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"
+     "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*",
+     "*each / every* + vienskaitlis: *Every room [[has]] a balcony.* *each of* the rooms (nevis *every of*). *all day* = visu dienu; *every day* = katru dienu; *my whole life* (nevis *my all life*)."
     ],
     "v2": {
      "table": {
@@ -8460,7 +8499,8 @@ return json_decode(<<<'EF_JSON_END'
      "watch": [
       "*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
       "*news* ir vienskaitlī: *The news [[is]] good.* Latviski \"ziņas ir\" ir daudzskaitlī, tāpēc gribas *are*.",
-      "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"
+      "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*",
+      "*each / every* + vienskaitlis: *Every room [[has]] a balcony.* *each of* the rooms (nevis *every of*). *all day* = visu dienu; *every day* = katru dienu; *my whole life* (nevis *my all life*)."
      ]
     }
    }

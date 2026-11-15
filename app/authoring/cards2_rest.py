@@ -152,7 +152,8 @@ CARDS = {
                       "ex": ["One of my friends [[lives]] in Oslo.", "The people in this office [[are]] nice."]}],
             "watch": ["*people, police, children* are plural: *People [[are]] friendly.*",
                       "*news* is singular: *The news [[is]] good.*",
-                      "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*"],
+                      "*there is* + one, *there are* + more than one: *There [[are]] two cafés here.*",
+                      "*each / every* + singular: *Every room [[has]] a balcony.* *each of* the rooms (not *every of*). *all day* = the whole day; *every day* = each day; *my whole life* (not *my all life*)."],
         },
         "lv": {
             "table": {"plain": True, "cols": ["viens (he / she / it)", "vairāki (they)"],
@@ -170,7 +171,8 @@ CARDS = {
                       "ex": ["One of my friends [[lives]] in Oslo.", "The people in this office [[are]] nice."]}],
             "watch": ["*people, police, children* ir daudzskaitlī: *People [[are]] friendly.*",
                       "*news* ir vienskaitlī: *The news [[is]] good.* Latviski \"ziņas ir\" ir daudzskaitlī, tāpēc gribas *are*.",
-                      "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*"],
+                      "*there is* + viens, *there are* + vairāki: *There [[are]] two cafés here.*",
+                      "*each / every* + vienskaitlis: *Every room [[has]] a balcony.* *each of* the rooms (nevis *every of*). *all day* = visu dienu; *every day* = katru dienu; *my whole life* (nevis *my all life*)."],
         },
     },
     "irregular_plurals": {

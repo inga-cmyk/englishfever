@@ -1,0 +1,1769 @@
+[
+{
+"id": "r11-001",
+"answer": "is always borrowing",
+"other_correct": "",
+"wrong_options_that_fit": "'always is borrowing' is unnatural word order (marginal, not standard)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-002",
+"answer": "My neighbours are always parking in front of our garage, so I can't get out.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-003",
+"answer": "was always complaining",
+"other_correct": "",
+"wrong_options_that_fit": "'always was complaining' is unusual word order (marginal, less natural)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-004",
+"answer": "My dad is always lose his glasses somewhere in the house.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-005",
+"answer": "are",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-006",
+"answer": "sending",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-007",
+"answer": "My partner is always leaving the lights on.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-008",
+"answer": [
+"are always leaving"
+],
+"other_correct": [
+[
+"always leave"
+],
+[
+"are forever leaving"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense is not stated, so simple present 'always leave' is correct English too (less emphatic as a complaint); the continuous is not forced.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-009",
+"answer": [
+"was always humming"
+],
+"other_correct": [
+[
+"always hummed"
+],
+[
+"would always hum"
+],
+[
+"always used to hum"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not forced: simple past 'always hummed' and 'would always hum' are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-010",
+"answer": [
+"is",
+"jamming"
+],
+"other_correct": [
+[
+"has",
+"jammed"
+],
+[
+"will",
+"jam"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "One word per gap does not force the continuous: 'has always jammed' and 'will always jam' are correct English.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-011",
+"answer": [
+"was",
+"breaking"
+],
+"other_correct": [
+[
+"had",
+"broken"
+],
+[
+"would",
+"break"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not forced: 'had constantly broken down' and 'would constantly break down' are also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-012",
+"answer": [
+"always forgets"
+],
+"other_correct": [
+[
+"is always forgetting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both simple present and continuous are correct; 'but every year he calls the next day' slightly favours simple, but 'is always forgetting' is fine as a complaint.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-013",
+"answer": "My boss is constantly calling me during my lunch break.",
+"other_correct": [
+"My boss constantly calls me during my lunch break.",
+"My boss is constantly phoning me during my lunch break.",
+"My boss is constantly calling me in my lunch break."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not force the continuous; simple present with constantly is correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-014",
+"answer": "When we were students, my flatmate was always borrowing my notes.",
+"other_correct": [
+"When we were students, my flatmate always borrowed my notes.",
+"When we were students, my flatmate would always borrow my notes.",
+"My flatmate was always borrowing my notes when we were students."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Past continuous not forced; 'always borrowed' / 'would always borrow' are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-015",
+"answer": "Why are you always interrupting me in meetings?",
+"other_correct": [
+"Why do you always interrupt me in meetings?",
+"Why do you keep interrupting me in meetings?",
+"Why are you always interrupting me during meetings?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Form not forced: 'Why do you always interrupt me in meetings?' is correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-016",
+"answer": "my sister's always borrowing my clothes without asking",
+"other_correct": [
+"without asking, my sister's always borrowing my clothes"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-017",
+"answer": "i always want to go cycling when it's raining",
+"other_correct": [
+"when it's raining i always want to go cycling"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-018",
+"answer": "why are you always checking your phone at dinner",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-019",
+"answer": "he's forever telling us how busy he is",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'forever' (= always, complaint) is a B2-ish usage.",
+"sense_problem": ""
+},
+{
+"id": "r11-020",
+"answer": "you're always making plans for the weekend without telling me",
+"other_correct": [
+"without telling me, you're always making plans for the weekend",
+"you're always making plans without telling me for the weekend (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-021",
+"answer": [
+"is",
+"always",
+"taking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only 3 gaps for 5 cards: the unused cards 'takes' and 'does' are obviously out. 'always is taking' (unnatural order) would not be accepted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-022",
+"answer": [
+"was",
+"dropping"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-023",
+"answer": [
+"are",
+"asking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-024",
+"answer": [
+"is",
+"reminding"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-025",
+"answer": [
+[
+"My flatmate is always leaving",
+"the front door unlocked."
+],
+[
+"Our manager is constantly changing",
+"the meeting times."
+],
+[
+"My cousin is forever borrowing",
+"my phone charger."
+],
+[
+"The neighbours' dogs are always barking",
+"at the postman."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'leaving my phone charger' / 'changing my phone charger' are weakly possible but no full alternative pairing works."
+},
+{
+"id": "r11-026",
+"answer": "used to have",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-027",
+"answer": "used to live",
+"other_correct": "",
+"wrong_options_that_fit": "'would live' is doubtful (stative verb with 'would' for past state; not standard)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-028",
+"answer": "We would know all our neighbours when we lived in the village.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-029",
+"answer": "When my children were small, I would sing to them every night.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-030",
+"answer": "didn't use to like",
+"other_correct": "",
+"wrong_options_that_fit": "'didn't used to like' is widely used informally/American-written; strict standard is 'didn't use to'",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-031",
+"answer": "went",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-032",
+"answer": "used to own",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-033",
+"answer": "when we lived by the sea we would swim before breakfast",
+"other_correct": [
+"we would swim before breakfast when we lived by the sea"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-034",
+"answer": "my uncle used to be a fisherman and he would get up at four",
+"other_correct": [
+"my uncle would get up at four and he used to be a fisherman (grammatical but illogical)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "14 cards: long for B1.2",
+"sense_problem": ""
+},
+{
+"id": "r11-035",
+"answer": "my grandmother would sing old songs while she cooked dinner",
+"other_correct": [
+"while she cooked dinner my grandmother would sing old songs"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-036",
+"answer": "my brother and i would play word games on long car journeys",
+"other_correct": [
+"i and my brother would play word games on long car journeys (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-037",
+"answer": "we used to have a garden where we would grow our own vegetables",
+"other_correct": [
+"we would have a garden where we used to grow our own vegetables (grammatical but 'would have' stative: poor)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "13 cards, long for B1.2",
+"sense_problem": ""
+},
+{
+"id": "r11-038",
+"answer": "used to have",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-039",
+"answer": "would make",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-040",
+"answer": "used to live",
+"other_correct": "",
+"wrong_options_that_fit": "'would live' is doubtful (stative verb)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-041",
+"answer": [
+"would",
+"bring"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-042",
+"answer": [
+[
+"When I was a student, I used to",
+"have very long hair."
+],
+[
+"When it snowed, my dad would",
+"take us sledging in the park."
+],
+[
+"Before the bridge was built, people would",
+"cross the river by ferry."
+],
+[
+"My parents didn't use to",
+"like my friends, but now they do."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Some individual alternatives exist ('I used to cross the river by ferry', 'my dad would cross the river by ferry', 'My parents didn't use to have very long hair') but no full alternative pairing."
+},
+{
+"id": "r11-043",
+"answer": [
+"had"
+],
+"other_correct": [
+[
+"used to have"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both 'had' and 'used to have' are correct and nothing in the instruction chooses between them.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-044",
+"answer": [
+"knew"
+],
+"other_correct": [
+[
+"used to know"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both 'knew' and 'used to know' are correct; nothing chooses between them.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-045",
+"answer": [
+"would take"
+],
+"other_correct": [
+[
+"'d take"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-046",
+"answer": [
+"argued"
+],
+"other_correct": [
+[
+"would argue"
+],
+[
+"used to argue"
+],
+[
+"were arguing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Nothing says which form to use: 'argued', 'would argue', 'used to argue' all correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-047",
+"answer": [
+"went"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-048",
+"answer": "When I was young, my father would cook pancakes every Saturday.",
+"other_correct": [
+"Every Saturday my father would cook pancakes when I was young.",
+"When I was young, every Saturday my father would cook pancakes.",
+"When I was young, my father would make pancakes every Saturday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-049",
+"answer": "When I was a child, I had a little garden of my own.",
+"other_correct": [
+"When I was a child, I used to have a little garden of my own."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-050",
+"answer": "Last weekend we went hiking in the mountains.",
+"other_correct": [
+"We went hiking in the mountains last weekend."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-051",
+"answer": "should have taken",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-052",
+"answer": "shouldn't have shouted",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-053",
+"answer": "could have been",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-054",
+"answer": "should have told",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-055",
+"answer": "have",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-056",
+"answer": "You should have checked the figures before you sent the report.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-057",
+"answer": "You should of booked the tickets much earlier.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-058",
+"answer": "you should have told me that the train was cancelled",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-059",
+"answer": "i shouldn't have bought these shoes without trying them on",
+"other_correct": [
+"i shouldn't have bought them without trying these shoes on (grammatical, odd)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-060",
+"answer": "she could have got the job but she didn't apply in time",
+"other_correct": [
+"she didn't apply in time but she could have got the job (logic weaker)",
+"she could have got the job in time but she didn't apply (odd)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-061",
+"answer": "you could have asked me for help instead of doing it alone",
+"other_correct": [
+"instead of doing it alone you could have asked me for help"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-062",
+"answer": "what should i have said when my boss asked about the delay",
+"other_correct": [
+"what should my boss have said about the delay when i asked",
+"what should my boss have said when i asked about the delay",
+"what should i have said about the delay when my boss asked",
+"when my boss asked about the delay what should i have said",
+"when i asked about the delay what should my boss have said"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards allow several correct questions (who asked, who should have spoken); the task is ambiguous.",
+"level_problem": "12 cards, complex question with two clauses; heavy for B1.2",
+"sense_problem": ""
+},
+{
+"id": "r11-063",
+"answer": [
+"have",
+"left"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-064",
+"answer": [
+"have",
+"taken"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-065",
+"answer": [
+"have told"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-066",
+"answer": [
+"should",
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'must have' is wrong here; but 'could have' not offered."
+},
+{
+"id": "r11-067",
+"answer": [
+[
+"You didn't wear a coat, and now you've got a cold.",
+"You should have worn one."
+],
+[
+"You laughed at his new haircut, and he was upset.",
+"You shouldn't have laughed."
+],
+[
+"We missed the last bus and walked home in the rain.",
+"We could have taken a taxi."
+],
+[
+"You knew about the problem but said nothing.",
+"You should have told someone."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-068",
+"answer": [
+"should have told"
+],
+"other_correct": [
+[
+"could have told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should / tell' hint is given, but 'could have told' is also correct if learner uses own judgement; hint largely gives the form away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-069",
+"answer": [
+"shouldn't have drunk"
+],
+"other_correct": [
+[
+"should not have drunk"
+],
+[
+"shouldn't have drank"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(should / not / drink)' names the form; only the participle 'drunk' is tested.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-070",
+"answer": [
+"could have won"
+],
+"other_correct": [
+[
+"could've won"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint names the form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-071",
+"answer": [
+"could have spent"
+],
+"other_correct": [
+[
+"could've spent"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint names the form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-072",
+"answer": [
+"could have called"
+],
+"other_correct": [
+[
+"could've called"
+],
+[
+"could have phoned"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint names the form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-073",
+"answer": "I shouldn't have told Anna what you said about her new boyfriend.",
+"other_correct": [
+"I should not have told Anna what you said about her new boyfriend."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-074",
+"answer": "You shouldn't have lent him your car for the whole weekend.",
+"other_correct": [
+"You shouldn't have lent your car to him for the whole weekend.",
+"You shouldn't have loaned him your car for the whole weekend."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-075",
+"answer": "Should I have told the manager about the mistake in the invoice?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-076",
+"answer": "Every room",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-077",
+"answer": "student gets",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-078",
+"answer": "my whole life",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-079",
+"answer": "all day",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-080",
+"answer": "Each of the flats in our building has its own parking space.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-081",
+"answer": "Every player in our club get a free shirt in spring.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-082",
+"answer": "each",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-083",
+"answer": [
+"each"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Choice given in the instruction.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-084",
+"answer": [
+"every"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-085",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-086",
+"answer": [
+"visitors"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-087",
+"answer": [
+"whole"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-088",
+"answer": "I spent the whole day at the airport because my flight was cancelled.",
+"other_correct": [
+"Because my flight was cancelled, I spent the whole day at the airport.",
+"I spent a whole day at the airport because my flight was cancelled."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-089",
+"answer": "Every lesson at our language school lasts ninety minutes.",
+"other_correct": [
+"Every lesson at our language school lasts for ninety minutes.",
+"Every lesson at our language school is ninety minutes long.",
+"Every lesson at our language school takes ninety minutes."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Learner must also change the verb to singular; not mentioned but fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-090",
+"answer": "Does every member of the team have access to the shared folder?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-091",
+"answer": "each of my sisters lives in a different country so we talk online",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-092",
+"answer": "does every guest need a ticket for tomorrow's boat trip",
+"other_correct": [
+"does every guest need a boat ticket for tomorrow's trip"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-093",
+"answer": "we were stuck in traffic all day and missed the start of the wedding",
+"other_correct": [
+"all day we were stuck in traffic and missed the start of the wedding",
+"we missed the start of the wedding and were stuck in traffic all day"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "14 cards: long for B1.2",
+"sense_problem": ""
+},
+{
+"id": "r11-094",
+"answer": "i spent the whole evening answering emails because i missed the match",
+"other_correct": [
+"i missed the match because i spent the whole evening answering emails"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two correct orders with all cards.",
+"level_problem": "",
+"sense_problem": "First order is illogical (missing a match is not a reason to answer emails); second is the natural one."
+},
+{
+"id": "r11-095",
+"answer": "i've read every single review but i can't decide which phone to buy",
+"other_correct": [
+"i can't decide which phone to buy but i've read every single review"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "13 cards: long for B1.2",
+"sense_problem": ""
+},
+{
+"id": "r11-096",
+"answer": [
+"brothers",
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-097",
+"answer": [
+"the",
+"whole"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-098",
+"answer": [
+"every",
+"day"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'all day' is grammatical; only the context 'usually just after her lunch' rules it out",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-099",
+"answer": [
+"every"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'each' (almost each colleague) is marginal/unnatural, not standard",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-100",
+"answer": [
+[
+"We invited forty people, and each of",
+"them brought a small gift."
+],
+[
+"It was a long night, but every",
+"guest stayed until the end."
+],
+[
+"The food was great, and all the",
+"guests asked for the recipes."
+],
+[
+"When the band started, the whole",
+"room got up to dance."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-101",
+"answer": "what",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option '—' (nothing) is unclear for a learner.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-102",
+"answer": "which",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-103",
+"answer": "Everything that he told us about the hotel was true.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-104",
+"answer": "What I really need right now is a long holiday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-105",
+"answer": "The film what we watched last night was far too long.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-106",
+"answer": "All what I want for my birthday is a quiet dinner.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-107",
+"answer": "what",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option '—' (nothing) is unclear.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-108",
+"answer": [
+"that"
+],
+"other_correct": [
+[
+"which"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction restricts to what/that.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-109",
+"answer": [
+"what"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-110",
+"answer": [
+"that"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-111",
+"answer": [
+"What"
+],
+"other_correct": [
+[
+"what"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap is at the start of a sentence: capital letter issue; accept both cases.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-112",
+"answer": [
+"that"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-113",
+"answer": "What I enjoy most about my job is meeting new people.",
+"other_correct": [
+"What I enjoy most about my job is to meet new people.",
+"What I like most about my job is meeting new people."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-114",
+"answer": "Everything she told me about the course was useful.",
+"other_correct": [
+"Everything that she told me about the course was useful.",
+"All that she told me about the course was useful.",
+"What she told me about the course was useful."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-115",
+"answer": "I didn't understand what the mechanic said about my car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-116",
+"answer": "what she said at the wedding surprised everyone",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-117",
+"answer": "i didn't understand what the doctor told me about the test",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-118",
+"answer": "all i want after work is a hot shower",
+"other_correct": [
+"all i want is a hot shower after work",
+"after work all i want is a hot shower"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-119",
+"answer": "i'm sorry about everything that happened last night",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-120",
+"answer": "did you find what you were looking for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-121",
+"answer": [
+"What"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-122",
+"answer": [
+"that"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-123",
+"answer": [
+"that"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-124",
+"answer": [
+"what"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-125",
+"answer": [
+[
+"Thank you so much for everything",
+"you did for my family."
+],
+[
+"The waiter didn't understand",
+"what I wanted to order."
+],
+[
+"The laptop that I bought last month",
+"stopped working after a week."
+],
+[
+"What I like most about my job",
+"is the people I work with."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-126",
+"answer": "won't switch on",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-127",
+"answer": "wouldn't open",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-128",
+"answer": "won't listen",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-129",
+"answer": "The key card wouldn't open my hotel room last night.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-130",
+"answer": "My sister won't to lend me her car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-131",
+"answer": "My landlord wouldn't fixed the heating.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-132",
+"answer": "won't the dog come",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-133",
+"answer": [
+"wouldn't"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-134",
+"answer": [
+"won't"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-135",
+"answer": [
+"wouldn't"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-136",
+"answer": [
+"speak"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-137",
+"answer": [
+"do"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-138",
+"answer": "My computer won't open this file.",
+"other_correct": [
+"This file won't open on my computer."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-139",
+"answer": "My neighbour wouldn't move his car last night.",
+"other_correct": [
+"Last night my neighbour wouldn't move his car."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-140",
+"answer": "Why won't the baby eat her soup?",
+"other_correct": [
+"Why won't she eat her soup?",
+"Why will the baby not eat her soup?",
+"Why does the baby refuse to eat her soup?",
+"Why isn't the baby eating her soup?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Why' question not forced to use won't; other forms are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-141",
+"answer": "my dad won't wear his glasses even when he's driving",
+"other_correct": [
+"my dad won't even wear his glasses when he's driving",
+"even when he's driving my dad won't wear his glasses"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-142",
+"answer": "my car wouldn't start this morning so i worked from home",
+"other_correct": [
+"this morning my car wouldn't start so i worked from home"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-143",
+"answer": "why won't you tell me what happened at work",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-144",
+"answer": "my friend wouldn't let me pay for dinner last night",
+"other_correct": [
+"last night my friend wouldn't let me pay for dinner"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-145",
+"answer": "i've tried two keys but this door still won't open",
+"other_correct": [
+"this door still won't open but i've tried two keys (but illogical)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-146",
+"answer": [
+"wouldn't",
+"move"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "A lift 'wouldn't move' is slightly odd ('work'/'come' more natural) but fine."
+},
+{
+"id": "r11-147",
+"answer": [
+"won't",
+"let"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-148",
+"answer": [
+"won't",
+"she",
+"answer"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-149",
+"answer": [
+"wouldn't",
+"give"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11-150",
+"answer": [
+[
+"My laptop won't",
+"switch on."
+],
+[
+"Why won't",
+"the tap stop dripping?"
+],
+[
+"Last night the baby wouldn't",
+"stop crying."
+],
+[
+"I asked twice, but she",
+"wouldn't tell me."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

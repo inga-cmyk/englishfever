@@ -11,13 +11,13 @@ L = "A2.2"
 # or "When" chip: both would be correct English here.
 gp(T, L, 3, "___ we had dinner, we went for a walk by the sea.", "After",
    "*after* + subject + verb joins two actions in one sentence: *After we had dinner, we went for a walk.* *Then* and *after that* start a new sentence: *We had dinner. Then we went for a walk.*",
-   "*after* + teik. priekšmets + darbības vārds savieno abas darbības vienā teikumā: *After we had dinner, we went for a walk.* *Then* un *after that* sāk jaunu teikumu: *We had dinner. Then we went for a walk.*",
+   "*after* + teik. priekšmets + darbības vārds savieno divas darbības vienā teikumā: *After we had dinner, we went for a walk.* *Then* un *after that* stāv nākamā teikuma sākumā: *We had dinner. Then we went for a walk.*",
    bank=["After", "Then", "After that"])
 # word bank (2): only before can stand before a noun here; while and when need subject + verb (while the film is on,
 # when the film starts). No "after" chip: "after the film" is correct English too.
 gp(T, L, 3, "We always buy popcorn ___ the film.", "before",
    "*before* (and *after*) can come before a noun: *before the film*. *while* and *when* need subject + verb: *while the film is on*, *when the film starts*.",
-   "*before* (un *after*) var likt pirms lietvārda: *before the film*. Aiz *while* un *when* vajag teik. priekšmetu + darbības vārdu: *while the film is on*, *when the film starts*.",
+   "*before* (un *after*) lieto arī pirms lietvārda: *before the film*. Aiz *while* un *when* vajag teik. priekšmetu + darbības vārdu: *while the film is on*, *when the film starts*.",
    bank=["before", "while", "when"])
 # choice (1): the map's typical error "Before go to bed"; the other three are correct and about three different things
 mc(T, L, 2, "Which sentence has a mistake?", "Before go to work, I walk the dog.",

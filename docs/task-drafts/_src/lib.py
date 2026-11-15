@@ -38,7 +38,7 @@ def lv_fix(t):
     for a, b in LV_SUBS: t = re.sub(a, b, t)
     return italics.lv_mark(t)   # every English word in a Latvian explanation is an example: the same rule the built-in explanations use
 
-NO_EN_FILES = {"gap-points-b11-1.csv"}   # files written with italics.NO_BEFORE_EN (English "no" before an English word; 15 November)
+NO_EN_FILES = {"gap-points-b11-1.csv", "gap-points-b12-1.csv"}   # files written with italics.NO_BEFORE_EN (English "no" before an English word; 15 November)
 def lv_for_file(t, name):
     previous = set(italics.LV_ASCII)
     try:

@@ -21,6 +21,7 @@ def check(where, text):
 
 for f in sorted(glob.glob(os.path.join(APP, "..", "docs", "task-drafts", "*.csv"))):
     _it.LV_ASCII.clear(); _it.LV_ASCII.update(_BASE | (b1_topics.LV_WORDS if os.path.basename(f).startswith("b1-new") else set()) | lib.LV_BY_FILE.get(os.path.basename(f), set()))
+    _it.NO_BEFORE_EN = os.path.basename(f) in lib.NO_EN_FILES
     for n, r in enumerate(list(csv.reader(open(f, encoding="utf-8-sig")))[1:], 2):
         if len(r[6].strip()) < 12: bad.append((os.path.basename(f) + ":" + str(n), "English explanation too short", r[6]))
         if r[7].strip(): check(os.path.basename(f) + ":" + str(n), r[7])

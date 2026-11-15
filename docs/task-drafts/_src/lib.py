@@ -14,6 +14,7 @@ LV_BY_FILE["a2-rel-might-1.csv"] = set("neliek saskan izpaliek visi nolieguma".s
 LV_BY_FILE["pairs-1.csv"] = set("vienreiz Vienreiz jaunu laikam noticis noteikti izdevās konkrētā situācijā norāda sekām sākuma brīdis".split())   # form pairs, 14 November   # the learning tasks reuse the batch-3 explanations
 LV_BY_FILE["gap-points-a2-1.csv"] = set("""tulkojot burtiski Tulkojot artikula artikulu valstu nosaukumiem nosaukumi noteikta noteikts noteiktiem visi veidiem
 Sporta sporta instrumentiem Hobijs hobijs citam tikai pareizi ideju lieta atsakot aizdodat veidi skolas mācības mācībām matemātika vēsture""".split())   # batch 4, A2 part (14 November)
+LV_BY_FILE["gap-points-b11-1.csv"] = set("""Vilciena esi noteikti beigsies gribas Pusdienas Tomu satiksi notikumam Tulkojot tulkojot burtiski vietas piena noliegumi tikai Tikai vilkt attiecas abas pareizas mums""".split())   # batch 4, B1.1 part (15 November)
 LV_BY_FILE["learn-drag-4.csv"] = set("visa apgalvojuma".split()) | LV_BY_FILE["twins-3.csv"]
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics", "answer notes"]
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
@@ -37,12 +38,15 @@ def lv_fix(t):
     for a, b in LV_SUBS: t = re.sub(a, b, t)
     return italics.lv_mark(t)   # every English word in a Latvian explanation is an example: the same rule the built-in explanations use
 
+NO_EN_FILES = {"gap-points-b11-1.csv"}   # files written with italics.NO_BEFORE_EN (English "no" before an English word; 15 November)
 def lv_for_file(t, name):
     previous = set(italics.LV_ASCII)
     try:
         italics.LV_ASCII.update(LV_BY_FILE.get(os.path.basename(name), set()))
+        italics.NO_BEFORE_EN = os.path.basename(name) in NO_EN_FILES
         return lv_fix(t)
     finally:
+        italics.NO_BEFORE_EN = False
         italics.LV_ASCII.clear()
         italics.LV_ASCII.update(previous)
 def mc(t, lv, b, q, ok, wrong, why, lvw):

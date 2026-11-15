@@ -60,6 +60,9 @@ DIACRITIC = re.compile(r"[ĀČĒĢĪĶĻŅŠŪŽāčēģīķļņšūž]")
 GAP_OK = re.compile(r"^[\s/,+=→\-–.?!;\"]*$")   # no quote mark, colon or bracket: each ends an example
 
 
+NO_BEFORE_EN = False   # set per draft file (docs/task-drafts/_src/lib.py NO_EN_FILES): English "no" before an English word after ":" or in an example (batch 4, 15 November)
+
+
 def lv_mark(text):
     held = []
 
@@ -85,7 +88,7 @@ def lv_mark(text):
         else:
             kind.append("E")
     for i, (w, a, b) in enumerate(toks):   # "no longer / no more" is English (Latvian "no" = from; 14 November)
-        if w.lower() == "no" and i + 1 < len(toks) and toks[i + 1][0].lower() in ("longer", "more"):
+        if w.lower() == "no" and i + 1 < len(toks) and (toks[i + 1][0].lower() in ("longer", "more") or (NO_BEFORE_EN and kind[i + 1] == "E" and (i == 0 or re.search(r"[:(=/'\"]", s[toks[i - 1][2]:a]) or (kind[i - 1] == "E" and not re.search(r"[.?!]\s", s[toks[i - 1][2]:a]))))):
             kind[i] = "E"
     # ambiguous words are English next to an English word, otherwise Latvian
     for i, k in enumerate(kind):

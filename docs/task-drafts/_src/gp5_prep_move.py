@@ -5,23 +5,23 @@ T = "Prepositions of time and place (in, on, at)"
 L = "A2.2"
 
 ARR_AT = ("*arrive at* + a place such as a hotel, a station or a cinema; *arrive in* + a city or country. Never *arrive to*.",
-          "*arrive at* + vieta (viesnīca, stacija, kino); *arrive in* + pilsēta vai valsts. Nekad *arrive to*. Tulkojot burtiski *ieradāmies uz viesnīcu*, rodas kļūda *arrived to*.")
+          "*arrive at* + konkrēta vieta, piemēram, viesnīca; *arrive in* = ierasties pilsētā vai valstī. Nekad *arrive to*. Tulkojot burtiski *ieradāmies uz viesnīcu*, sanāk kļūda *arrived to*.")
 ARR_IN = ("*arrive in* + a city or country: *We arrived in Oslo.* Never *arrive to*.",
-          "*arrive in* + pilsēta vai valsts: *We arrived in Oslo.* Tulkojot burtiski *atbraucām uz Oslo*, rodas kļūda *arrived to*.")
+          "*arrive in* = ierasties pilsētā vai valstī: *We arrived in Oslo.* Tulkojot burtiski *atbraucām uz Norvēģiju*, sanāk kļūda *arrived to*.")
 GET_TO = ("*get to* + a place = arrive there: *What time did you get to the office?* *arrive* needs *at*: *arrive at the office*.",
-          "*get to* + vieta = nokļūt, ierasties: *What time did you get to the office?* Ar *arrive* vajag *at*: *arrive at the office*.")
+          "*get to* + vieta = nokļūt: *What time did you get to the office?* Ar *arrive* vajag *at*: *arrive at the office*.")
 PAST = ("*past* = going by something without stopping: *Walk past the bank.* *passed* is the past of the verb *pass*.",
         "*past* = garām: *Walk past the bank.* *passed* ir darbības vārda *pass* pagātnes forma.")
 ACROSS = ("*across* = from one side to the other: *swim across the river*.",
-          "*across* = pāri, no vienas puses uz otru: *swim across the river*.")
+          "*across* = pāri, uz otru krastu vai pusi: *swim across the river*.")
 THROUGH = ("*through* = in at one side and out at the other of something with sides or an opening: *through the window, through the tunnel*.",
-           "*through* = cauri, caur: *through the window, through the tunnel*.")
+           "*through* = caur, cauri: *through the window, through the tunnel*.")
 ALONG = ("*along* = following a line such as a river, a road or a beach: *walk along the beach*.",
-         "*along* = gar, pa: *walk along the beach*.")
+         "*along* = pa: *walk along the beach*.")
 OUT_OF = ("*out of* = from inside to outside: *take your laptop out of your bag*. Opposite: *into*.",
-          "*out of* = no iekšpuses ārā: *take your laptop out of your bag*. Pretējais: *into*.")
+          "*out of* = no iekšienes ārā: *take your laptop out of your bag*. Pretējais: *into*.")
 HOME = ("*go home, get home, come home*: no *to* before *home*.",
-        "*go home, get home, come home*: pirms *home* nelieto *to*. Tulkojot burtiski *nokļuvi uz mājām*, rodas kļūda *get to home*.")
+        "*go home, get home, come home*: pirms *home* nelieto *to*. Tulkojot burtiski *nokļuvi uz mājām*, sanāk kļūda *get to home*.")
 
 # ── choice (4) ──
 # Murphy 126: arrive at + a building; "to" is the Latvian "uz", "—" the learner who drops it

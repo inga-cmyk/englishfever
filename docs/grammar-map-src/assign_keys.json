@@ -14523,10 +14523,6 @@
 "have_got",
 "read"
 ],
-"aux_verbs | A2.1 | match | Match each question with its short answer. | Have you got a pen? = Yes, I have. ; Do you have a ticket? = No, I don't. ; Has Mark got a job? = No, he hasn't. ; Does Anna have a sister? = Yes, she does.": [
-"have_got",
-"read"
-],
 "aux_verbs | A2.1 | gap | My sister ___ three cats. (have got) | ": [
 "have_got",
 "read"
@@ -15157,6 +15153,10 @@
 ],
 "verb_patterns | A2.2 | match | Match each beginning with its ending. | Let's go for = a coffee after work. ; She goes to = the gym every morning. ; We're going on = holiday in July. ; They often go = fishing at the weekend.": [
 "vp_go_ing",
+"read"
+],
+"aux_verbs | A2.1 | match | Match each question with its short answer. | Have you got a pen? = Yes, I have. ; Do they have a garden? = No, they don't. ; Has Mark got a job? = No, he hasn't. ; Does Anna have a sister? = Yes, she does.": [
+"have_got",
 "read"
 ]
 }

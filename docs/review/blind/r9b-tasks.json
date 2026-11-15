@@ -1,0 +1,32 @@
+[
+ {
+  "id": "r9b-001",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct short answer: 'Have you got a bike?'",
+  "options": [
+   "Yes, I have got.",
+   "Yes, I have.",
+   "Yes, I've.",
+   "Yes, I am."
+  ]
+ },
+ {
+  "id": "r9b-002",
+  "level": "A2.1",
+  "kind": "match",
+  "instruction_and_task": "Match each question with its short answer.",
+  "left": [
+   "Have you got a pen?",
+   "Do they have a garden?",
+   "Has Mark got a job?",
+   "Does Anna have a sister?"
+  ],
+  "right": [
+   "No, they don't.",
+   "Yes, she does.",
+   "No, he hasn't.",
+   "Yes, I have."
+  ]
+ }
+]

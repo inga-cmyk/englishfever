@@ -1,0 +1,37 @@
+[
+{
+"id": "r9b-001",
+"answer": "Yes, I have.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r9b-002",
+"answer": [
+[
+"Have you got a pen?",
+"Yes, I have."
+],
+[
+"Do they have a garden?",
+"No, they don't."
+],
+[
+"Has Mark got a job?",
+"No, he hasn't."
+],
+[
+"Does Anna have a sister?",
+"Yes, she does."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

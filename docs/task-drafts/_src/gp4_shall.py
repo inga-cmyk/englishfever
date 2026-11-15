@@ -101,12 +101,12 @@ gp(T, L, 3, "We're free tonight. What shall we ___? (do)", "do",
 
 # ---------- whole sentence (3) ----------
 tx(T, L, 4, "Say it another way with *Shall I*: Do you want me to book a table?",
-   "Shall I book a table? | Shall I book a table for you? | Shall I book a table for us?",
+   "Shall I book a table? | Shall I book a table for you? | Shall I book a table for us? | Shall I book you a table? | Shall I book us a table? | Shall I reserve a table? | Shall I reserve a table for you? | Shall I reserve a table for us?",
    "*Shall I…?* means *Do you want me to…?* After *shall* comes the base verb, without *to*: *Shall I book a table?*",
    "*Shall I…?* nozīmē *Do you want me to…?* Aiz *shall* lieto pamatformu bez *to*: *Shall I book a table?*")
 tx(T, L, 4, "Make a question with *Where*: Shall we go to Italy this summer?",
-   "Where shall we go this summer? | Where shall we go?",
+   "Where shall we go this summer? | Where shall we go? | Where shall we go in the summer? | Where shall we go for the summer?",
    *wh("Where shall we go this summer?", "Where we shall go…?"))
 tx(T, L, 4, "Make a question with *What*: Shall we cook pasta tonight?",
-   "What shall we cook tonight? | What shall we cook?",
+   "What shall we cook tonight? | What shall we cook? | What shall we cook for dinner tonight? | What shall we cook for dinner?",
    *wh("What shall we cook tonight?", "What we shall cook…?"))

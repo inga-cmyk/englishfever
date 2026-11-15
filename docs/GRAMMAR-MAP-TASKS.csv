@@ -82,6 +82,31 @@ agr_basic,A2.1,agreement,A2.2,use,gap,read,,a2-mistakes-1.csv:49,"agreement | A2
 agr_basic,A2.1,agreement,A2.2,use,text,read,,a2-mistakes-1.csv:55,agreement | A2.2 | text | Correct the mistake: My sister and her friend works in a café. | 
 agr_basic,A2.1,agreement,A2.2,learn,match,read,,a2-mistakes-1.csv:60,agreement | A2.2 | match | Match each beginning with its ending. | My sister = lives in Riga. ; My sisters = live in Riga. ; There = are two cafés in our street.
 agr_basic,A2.1,agreement,A2.2,use,text,read,,more-1.csv:11,agreement | A2.2 | text | Correct the mistake: My sister work in a bank. | 
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:52,articles | A2.1 | mcq | Choose the correct option: We went to ___ Croatia last summer. | —
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:53,articles | A2.1 | mcq | Choose the correct option: My sister teaches ___ maths in Riga. | —
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:54,articles | A2.1 | mcq | Choose the correct option: I'm vegetarian. I don't eat ___ meat. | —
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:55,articles | A2.1 | mcq | Which sentence is correct? | Peter is from Canada.
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:56,articles | A2.1 | mcq | Which sentence is correct? | My husband plays golf at weekends.
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:57,articles | A2.1 | mcq | Which sentence is NOT correct? | My parents live in the Spain.
+art_zero,A2.1,articles,A2.1,check,mcq,read,,gap-points-a2-1.csv:58,articles | A2.1 | mcq | Which sentence is NOT correct? | She studies the history at university.
+art_zero,A2.1,articles,A2.1,check,order,read,,gap-points-a2-1.csv:59,articles | A2.1 | order | Put the words in order. | i drink green tea in the morning
+art_zero,A2.1,articles,A2.1,check,order,read,,gap-points-a2-1.csv:60,articles | A2.1 | order | Put the words in order. | my grandfather doesn't like computers
+art_zero,A2.1,articles,A2.1,check,order,read,,gap-points-a2-1.csv:61,articles | A2.1 | order | Put the words in order. | my wife and i met in paris
+art_zero,A2.1,articles,A2.1,check,order,read,,gap-points-a2-1.csv:62,articles | A2.1 | order | Put the words in order to make a question. | do you like classical music
+art_zero,A2.1,articles,A2.1,check,order,read,,gap-points-a2-1.csv:63,articles | A2.1 | order | Put the words in order. | we want to visit japan next year
+art_zero,A2.1,articles,A2.1,check,gap,read,,gap-points-a2-1.csv:64,articles | A2.1 | gap | Our new manager is from ___ Sweden. | 
+art_zero,A2.1,articles,A2.1,check,gap,read,,gap-points-a2-1.csv:65,articles | A2.1 | gap | I usually listen to ___ jazz in the car. | 
+art_zero,A2.1,articles,A2.1,check,gap,read,,gap-points-a2-1.csv:66,articles | A2.1 | gap | I think ___ dogs are better pets than cats. | 
+art_zero,A2.1,articles,A2.1,check,gap,read,,gap-points-a2-1.csv:67,articles | A2.1 | gap | My kids spend hours on ___ social media. | 
+art_zero,A2.1,articles,A2.1,learn,match,read,,gap-points-a2-1.csv:68,articles | A2.1 | match | Match each beginning with its ending. | My cousin lives in = Rome. ; Every morning I drink = orange juice. ; My daughter is afraid of = snakes. ; At weekends we play = volleyball.
+art_zero,A2.1,articles,A2.1,use,gap,read,,gap-points-a2-1.csv:69,"articles | A2.1 | gap | My daughter is afraid of ___, even small ones. (spider) | "
+art_zero,A2.1,articles,A2.1,use,gap,read,,gap-points-a2-1.csv:70,"articles | A2.1 | gap | In big cities, ___ are often faster than cars. (bike) | "
+art_zero,A2.1,articles,A2.1,use,gap,read,,gap-points-a2-1.csv:71,articles | A2.1 | gap | ___ are cheaper than laptops. (tablet) | 
+art_zero,A2.1,articles,A2.1,use,gap,read,,gap-points-a2-1.csv:72,articles | A2.1 | gap | ___ are my favourite flowers. (rose) | 
+art_zero,A2.1,articles,A2.1,use,gap,read,,gap-points-a2-1.csv:73,articles | A2.1 | gap | My son collects ___. He has hundreds. (stamp) | 
+art_zero,A2.1,articles,A2.1,use,text,read,,gap-points-a2-1.csv:74,articles | A2.1 | text | Correct the mistake: My uncle works in the London. | 
+art_zero,A2.1,articles,A2.1,use,text,read,,gap-points-a2-1.csv:75,articles | A2.1 | text | Correct the mistake: We play the basketball on Fridays. | 
+art_zero,A2.1,articles,A2.1,use,text,read,,gap-points-a2-1.csv:76,articles | A2.1 | text | Correct the mistake: I eat the bread with every meal. | 
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:2,modal_verbs | A2.1 | mcq | Choose the correct form: My brother ___ swim very well. | can
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:3,modal_verbs | A2.1 | mcq | Choose the correct word: ___ you help me with this bag? | Can
 can,A2.1,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:4,modal_verbs | A2.1 | mcq | Which sentence is correct? | I can't find my keys.
@@ -208,6 +233,31 @@ going_to,A2.1,future,B1.2,check,order,read,,b1-tenses-2.csv:110,future | B1.2 | 
 going_to,A2.1,future,B1.2,check,order,read,,b1-tenses-2.csv:111,future | B1.2 | order | Put the words in order. | i'm going to ask my boss for a day off
 going_to,A2.1,future,B1.2,check,gap,read,,b1-tenses-2.csv:120,future | B1.2 | gap | He ___ to see the doctor tomorrow at ten. | 
 going_to,A2.1,future,B1.2,use,gap,read,,b1-tenses-2.csv:124,future | B1.2 | gap | We ___ the kitchen next month. We've already chosen the colour. (paint) | 
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:2,aux_verbs | A2.1 | mcq | Choose the correct option: ___ your neighbours got a dog? | Have
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:3,aux_verbs | A2.1 | mcq | Which sentence is correct? | Has your office got a kitchen?
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:4,aux_verbs | A2.1 | mcq | Which sentence is correct? | She doesn't have a laptop at home.
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:5,"aux_verbs | A2.1 | mcq | Choose the correct short answer: 'Have you got a bike?' | Yes, I have."
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:6,aux_verbs | A2.1 | mcq | Choose the correct option: We ___ any milk. | haven't got
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:7,aux_verbs | A2.1 | mcq | Which sentence is NOT correct? | My sister is having blue eyes.
+have_got,A2.1,aux_verbs,A2.1,check,mcq,read,,gap-points-a2-1.csv:8,aux_verbs | A2.1 | mcq | Choose the correct option: What kind of car ___ got? | has she
+have_got,A2.1,aux_verbs,A2.1,check,order,read,,gap-points-a2-1.csv:9,aux_verbs | A2.1 | order | Put the words in order to make a question. | have you got a minute
+have_got,A2.1,aux_verbs,A2.1,check,order,read,,gap-points-a2-1.csv:10,aux_verbs | A2.1 | order | Put the words in order. | my brother hasn't got a driving licence
+have_got,A2.1,aux_verbs,A2.1,check,order,read,,gap-points-a2-1.csv:11,aux_verbs | A2.1 | order | Put the words in order to make a question. | does your flat have a balcony
+have_got,A2.1,aux_verbs,A2.1,check,order,read,,gap-points-a2-1.csv:12,aux_verbs | A2.1 | order | Put the words in order. | we don't have time for lunch today
+have_got,A2.1,aux_verbs,A2.1,check,order,read,,gap-points-a2-1.csv:13,aux_verbs | A2.1 | order | Put the words in order. | my gym has got a new sauna
+have_got,A2.1,aux_verbs,A2.1,check,gap,read,,gap-points-a2-1.csv:14,aux_verbs | A2.1 | gap | Does this bus ___ wifi? | 
+have_got,A2.1,aux_verbs,A2.1,check,gap,read,,gap-points-a2-1.csv:15,aux_verbs | A2.1 | gap | My parents ___ ___ a big garden. | 
+have_got,A2.1,aux_verbs,A2.1,check,gap,read,,gap-points-a2-1.csv:16,"aux_verbs | A2.1 | gap | Sorry, I ___ ___ any change. | "
+have_got,A2.1,aux_verbs,A2.1,check,gap,read,,gap-points-a2-1.csv:17,aux_verbs | A2.1 | gap | ___ the room ___ a fridge? | 
+have_got,A2.1,aux_verbs,A2.1,learn,match,read,,gap-points-a2-1.csv:18,"aux_verbs | A2.1 | match | Match each question with its short answer. | Have you got a pen? = Yes, I have. ; Do they have a garden? = No, they don't. ; Has Mark got a job? = No, he hasn't. ; Does Anna have a sister? = Yes, she does."
+have_got,A2.1,aux_verbs,A2.1,use,gap,read,,gap-points-a2-1.csv:19,aux_verbs | A2.1 | gap | My sister ___ three cats. (have got) | 
+have_got,A2.1,aux_verbs,A2.1,use,gap,read,,gap-points-a2-1.csv:20,"aux_verbs | A2.1 | gap | We ___ a car, so we cycle to work. (not / have got) | "
+have_got,A2.1,aux_verbs,A2.1,use,gap,read,,gap-points-a2-1.csv:21,"aux_verbs | A2.1 | gap | 'Has the new library got a café?' 'Yes, it ___.' | "
+have_got,A2.1,aux_verbs,A2.1,use,gap,read,,gap-points-a2-1.csv:22,aux_verbs | A2.1 | gap | ___ you ___ an umbrella? (have got) | 
+have_got,A2.1,aux_verbs,A2.1,use,gap,read,,gap-points-a2-1.csv:23,aux_verbs | A2.1 | gap | My grandparents ___ a computer. (not / have) | 
+have_got,A2.1,aux_verbs,A2.1,use,text,read,,gap-points-a2-1.csv:24,aux_verbs | A2.1 | text | Make it negative: My laptop has got a camera. | 
+have_got,A2.1,aux_verbs,A2.1,use,text,read,,gap-points-a2-1.csv:25,aux_verbs | A2.1 | text | Make a yes/no question: Tom has got a motorbike. | 
+have_got,A2.1,aux_verbs,A2.1,use,text,read,,gap-points-a2-1.csv:26,aux_verbs | A2.1 | text | Make a question with *How many*: She has got two children. | 
 much_many,A2.1,quantity,A2.2,check,order,read,,b1-new-1.csv:79,quantity | A2.2 | order | Put the words in order. | there is not much milk in the fridge
 much_many,A2.1,quantity,A2.2,check,order,read,,b1-new-1.csv:80,quantity | A2.2 | order | Put the words in order. | how many brothers and sisters do you have
 much_many,A2.1,quantity,A2.2,check,mcq,read,,b1-new-1.csv:96,quantity | A2.2 | mcq | Choose the correct option: How ___ people are in the room? | many
@@ -626,6 +676,31 @@ q_yesno,A2.1,aux_verbs,A2.2,check,mcq,read,,aux-verbs-1.csv:12,aux_verbs | A2.2 
 q_yesno,A2.1,aux_verbs,A2.2,check,mcq,read,,aux-verbs-1.csv:17,"aux_verbs | A2.2 | mcq | Choose the correct short answer: 'Is she your sister?' 'No, she ___.' | isn't"
 q_yesno,A2.1,aux_verbs,A2.2,check,mcq,read,,aux-verbs-1.csv:43,"aux_verbs | A2.2 | mcq | Choose the correct short answer: 'Do your parents live in Riga?' | No, they don't."
 q_yesno,A2.1,aux_verbs,A2.2,use,gap,read,,aux-verbs-1.csv:45,"aux_verbs | A2.2 | gap | Write the short answer: 'Does Anna speak French?' 'No, she ___.' | "
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:27,future | A2.1 | mcq | Choose the correct option: Your hands are full. ___ I open the door? | Shall
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:28,future | A2.1 | mcq | Choose the correct option: Shall we ___ a break? | have
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:29,future | A2.1 | mcq | Which sentence is correct? | Shall I help you with your suitcase?
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:30,future | A2.1 | mcq | Which sentence is correct? | Where shall we have lunch?
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:31,future | A2.1 | mcq | Which sentence is NOT correct? | Shall we to meet at six?
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:32,future | A2.1 | mcq | Which sentence is NOT correct? | Shall you call me later?
+shall,A2.1,future,A2.1,check,mcq,read,,gap-points-a2-1.csv:33,"future | A2.1 | mcq | A friend asks: 'Shall I make you a sandwich?' Choose the correct answer. | Yes, please."
+shall,A2.1,future,A2.1,check,order,read,,gap-points-a2-1.csv:34,future | A2.1 | order | Put the words in order to make a question. | what shall i bring to the party
+shall,A2.1,future,A2.1,check,order,read,,gap-points-a2-1.csv:35,future | A2.1 | order | Put the words in order to make a question. | how shall we get to the airport
+shall,A2.1,future,A2.1,check,order,read,,gap-points-a2-1.csv:36,future | A2.1 | order | Put the words in order to make a question. | where shall i put these boxes
+shall,A2.1,future,A2.1,check,order,read,,gap-points-a2-1.csv:37,future | A2.1 | order | Put the words in order to make a question. | which bus shall we take
+shall,A2.1,future,A2.1,check,order,read,,gap-points-a2-1.csv:38,future | A2.1 | order | Put the words in order to make a question. | what time shall we start the meeting
+shall,A2.1,future,A2.1,check,gap,read,,gap-points-a2-1.csv:39,future | A2.1 | gap | I'm bored. ___ we go for a walk? | 
+shall,A2.1,future,A2.1,check,gap,read,,gap-points-a2-1.csv:40,future | A2.1 | gap | Shall I ___ you a taxi? | 
+shall,A2.1,future,A2.1,check,gap,read,,gap-points-a2-1.csv:41,future | A2.1 | gap | What ___ ___ watch tonight? | 
+shall,A2.1,future,A2.1,check,gap,read,,gap-points-a2-1.csv:42,future | A2.1 | gap | Shall we ___ ___ the beach on Sunday? | 
+shall,A2.1,future,A2.1,learn,match,read,,gap-points-a2-1.csv:43,"future | A2.1 | match | Match each question with its answer. | Shall I open the window? = Yes, please. It's hot in here. ; Where shall we meet? = Outside the cinema. ; What shall we have for dinner? = Fish and rice. ; When shall I call you? = After six. I'm at work till then."
+shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:44,future | A2.1 | gap | It's raining. Shall we ___ a taxi? (take) | 
+shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:45,future | A2.1 | gap | Your phone is dead. Shall I ___ you mine? (lend) | 
+shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:46,future | A2.1 | gap | Write the missing word: ___ shall I put your coat? On the chair? | 
+shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:47,future | A2.1 | gap | I'm going to the shop. Shall I ___ you anything? (get) | 
+shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:48,future | A2.1 | gap | We're free tonight. What shall we ___? (do) | 
+shall,A2.1,future,A2.1,use,text,read,,gap-points-a2-1.csv:49,future | A2.1 | text | Say it another way with *Shall I*: Do you want me to book a table? | 
+shall,A2.1,future,A2.1,use,text,read,,gap-points-a2-1.csv:50,future | A2.1 | text | Make a question with *Where*: Shall we go to Italy this summer? | 
+shall,A2.1,future,A2.1,use,text,read,,gap-points-a2-1.csv:51,future | A2.1 | text | Make a question with *What*: Shall we cook pasta tonight? | 
 sup,A2.1,comparison,A2.1,check,mcq,read,,comparison-1.csv:4,comparison | A2.1 | mcq | Choose the correct form: Anna is the ___ girl in our class. | tallest
 sup,A2.1,comparison,A2.1,check,mcq,read,,comparison-1.csv:6,comparison | A2.1 | mcq | Choose the correct word: Mount Everest is ___ highest mountain in the world. | the
 sup,A2.1,comparison,A2.1,use,gap,read,,comparison-1.csv:10,comparison | A2.1 | gap | This is the ___ cake in the shop. (big) | 
@@ -1096,6 +1171,31 @@ mustnt_dont,A2.2,modal_verbs,B1.1,learn,mcq,read,,modal-verbs-1.csv:29,modal_ver
 mustnt_dont,A2.2,modal_verbs,B1.1,learn,match,read,,modal-verbs-1.csv:36,modal_verbs | B1.1 | match | Match each sentence with its meaning. | You must wear a seat belt. = It is the law. ; You don't have to come. = It is not necessary. ; You mustn't park here. = It is not allowed. ; You should sleep more. = It is good advice.
 mustnt_dont,A2.2,modal_verbs,B1.1,use,text,read,,modal-verbs-1.csv:61,modal_verbs | B1.1 | text | Rewrite with mustn't: It is not allowed to use phones in the cinema. | 
 mustnt_dont,A2.2,modal_verbs,B1.1,check,order,read,,twins-1.csv:9,modal_verbs | B1.1 | order | Put the words in order. | you don't have to bring any food
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:77,used_to | A2.2 | mcq | Choose the correct option: I ___ eat meat. | no longer
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:78,used_to | A2.2 | mcq | Choose the correct option: She doesn't work here ___. | any more
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:79,used_to | A2.2 | mcq | Which sentence is correct? | We are no longer friends.
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:80,used_to | A2.2 | mcq | Which sentence is correct? | He no longer plays the guitar.
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:81,used_to | A2.2 | mcq | Which sentence is NOT correct? | I don't live there no more.
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:82,used_to | A2.2 | mcq | Choose the correct option: The bank ___ open on Saturdays. | is no longer
+no_longer,A2.2,used_to,A2.2,check,mcq,read,,gap-points-a2-1.csv:83,used_to | A2.2 | mcq | Choose the correct option: Tom moved to Oslo. He ___ lives in Riga. | no longer
+no_longer,A2.2,used_to,A2.2,use,gap,read,,gap-points-a2-1.csv:84,used_to | A2.2 | gap | Complete with one word: My sister doesn't live with us any ___. | 
+no_longer,A2.2,used_to,A2.2,use,gap,read,,gap-points-a2-1.csv:85,used_to | A2.2 | gap | Complete with one word: I no ___ use this app. | 
+no_longer,A2.2,used_to,A2.2,use,gap,read,,gap-points-a2-1.csv:86,used_to | A2.2 | gap | Write *no longer* or *any more*: The airline ___ flies to Riga. | 
+no_longer,A2.2,used_to,A2.2,use,gap,read,,gap-points-a2-1.csv:87,used_to | A2.2 | gap | Write *no longer* or *any more*: We don't go camping ___. | 
+no_longer,A2.2,used_to,A2.2,use,gap,read,,gap-points-a2-1.csv:88,used_to | A2.2 | gap | Complete with one word: They're ___ longer married. | 
+no_longer,A2.2,used_to,A2.2,use,text,read,,gap-points-a2-1.csv:89,used_to | A2.2 | text | Say it another way with *no longer*: I don't work there any more. | 
+no_longer,A2.2,used_to,A2.2,use,text,read,,gap-points-a2-1.csv:90,used_to | A2.2 | text | Say it another way with *no longer*: The museum isn't free any more. | 
+no_longer,A2.2,used_to,A2.2,use,text,read,,gap-points-a2-1.csv:91,used_to | A2.2 | text | Say it another way with *any more*: Ben no longer studies Spanish. | 
+no_longer,A2.2,used_to,A2.2,check,order,read,,gap-points-a2-1.csv:92,used_to | A2.2 | order | Put the words in order. | i no longer drink coffee
+no_longer,A2.2,used_to,A2.2,check,order,read,,gap-points-a2-1.csv:93,used_to | A2.2 | order | Put the words in order. | we're no longer in the same team
+no_longer,A2.2,used_to,A2.2,check,order,read,,gap-points-a2-1.csv:94,used_to | A2.2 | order | Put the words in order. | my old printer no longer works
+no_longer,A2.2,used_to,A2.2,check,order,read,,gap-points-a2-1.csv:95,used_to | A2.2 | order | Put the words in order. | i don't drive to work any more
+no_longer,A2.2,used_to,A2.2,check,order,read,,gap-points-a2-1.csv:96,used_to | A2.2 | order | Put the words in order. | he's not my neighbour any longer
+no_longer,A2.2,used_to,A2.2,check,gap,read,,gap-points-a2-1.csv:97,used_to | A2.2 | gap | She is ___ my teacher. | 
+no_longer,A2.2,used_to,A2.2,check,gap,read,,gap-points-a2-1.csv:98,used_to | A2.2 | gap | We don't use cash ___ ___. | 
+no_longer,A2.2,used_to,A2.2,check,gap,read,,gap-points-a2-1.csv:99,used_to | A2.2 | gap | This bus ___ goes to the airport. | 
+no_longer,A2.2,used_to,A2.2,check,gap,read,,gap-points-a2-1.csv:100,used_to | A2.2 | gap | These shoes ___ comfortable ___. | 
+no_longer,A2.2,used_to,A2.2,learn,match,read,,gap-points-a2-1.csv:101,used_to | A2.2 | match | Match each beginning with its ending. | He no longer = plays football. ; She is no longer = our manager. ; They don't live here = any more. ; We aren't = neighbours any longer.
 pas_by,A2.2,present_simple_passive,A2.2,learn,match,read,,a2-big-1.csv:152,present_simple_passive | A2.2 | match | Match each beginning with its ending. | Letters are delivered = by the postman. ; Meals are cooked = by the chef. ; Lessons are taught = by the teachers. ; Planes are flown = by pilots.
 pas_by,A2.2,past_simple_passive,A2.2,check,order,read,,a2-big-1.csv:161,past_simple_passive | A2.2 | order | Put the words in order. | these pictures were painted by children
 pas_by,A2.2,past_simple_passive,A2.2,learn,match,read,,a2-big-1.csv:183,past_simple_passive | A2.2 | match | Match each famous thing with who made it. | Hamlet = was written by Shakespeare. ; The Mona Lisa = was painted by Leonardo. ; The telephone = was invented by Bell. ; Harry Potter = was written by Rowling.
@@ -1627,6 +1727,31 @@ rep_say_tell,A2.2,rep_statements,B1.2,use,gap,read,,said-told-1.csv:7,rep_statem
 rep_say_tell,A2.2,rep_statements,B2.1,check,mcq,read,rs-B21-4a,built-in,rep_statements | B2.1 | mcq | Which sentence is NOT correct? | She told that she would be late.
 rep_say_tell,A2.2,rep_statements,B2.1,learn,gap,read,,learn-drag-3.csv:11,rep_statements | B2.1 | gap | He ___ ___ that the shop was closed. | 
 rep_say_tell,A2.2,rep_statements,B2.1,check,mcq,read,,twins-3.csv:11,rep_statements | B2.1 | mcq | Which sentence is NOT correct? | He told that the shop was closed.
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:102,"modal_verbs | A2.2 | mcq | Choose the correct option: Could you ___ the window, please? | open"
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:103,"modal_verbs | A2.2 | mcq | Which sentence is correct? | Would you check my email, please?"
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:104,modal_verbs | A2.2 | mcq | Which sentence is NOT correct? | May you help me with this form?
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:105,"modal_verbs | A2.2 | mcq | Choose the correct option: Can I ___ a coffee and a croissant, please? | have"
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:106,modal_verbs | A2.2 | mcq | Which sentence is correct? | Can I borrow your pen for a moment?
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:107,"modal_verbs | A2.2 | mcq | Which sentence is correct? | May I see your passport, please?"
+requests,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-points-a2-1.csv:108,modal_verbs | A2.2 | mcq | Which sentence is correct? | Can you give me a lift to work?
+requests,A2.2,modal_verbs,A2.2,use,gap,read,,gap-points-a2-1.csv:109,modal_verbs | A2.2 | gap | Could you ___ this word to me? (explain) | 
+requests,A2.2,modal_verbs,A2.2,use,gap,read,,gap-points-a2-1.csv:110,modal_verbs | A2.2 | gap | Write the missing word: Can ___ borrow your charger? Mine is at home. | 
+requests,A2.2,modal_verbs,A2.2,use,gap,read,,gap-points-a2-1.csv:111,"modal_verbs | A2.2 | gap | Would you ___ quiet, please? I'm on the phone. (be) | "
+requests,A2.2,modal_verbs,A2.2,use,gap,read,,gap-points-a2-1.csv:112,"modal_verbs | A2.2 | gap | Write the missing word: 'Can I take a photo of your garden?' 'Yes, go ___.' | "
+requests,A2.2,modal_verbs,A2.2,use,gap,read,,gap-points-a2-1.csv:113,modal_verbs | A2.2 | gap | Could your sister ___ me to the airport tomorrow? (take) | 
+requests,A2.2,modal_verbs,A2.2,use,text,read,,gap-points-a2-1.csv:114,modal_verbs | A2.2 | text | Start with *Could you*: Please wait here. | 
+requests,A2.2,modal_verbs,A2.2,use,text,read,,gap-points-a2-1.csv:115,modal_verbs | A2.2 | text | Start with *May I*: I want to ask you a question. | 
+requests,A2.2,modal_verbs,A2.2,use,text,read,,gap-points-a2-1.csv:116,modal_verbs | A2.2 | text | Say it another way with *Can I*: Can you lend me some money? | 
+requests,A2.2,modal_verbs,A2.2,check,order,read,,gap-points-a2-1.csv:117,modal_verbs | A2.2 | order | Put the words in order to make a question. | can i pay by card
+requests,A2.2,modal_verbs,A2.2,check,order,read,,gap-points-a2-1.csv:118,modal_verbs | A2.2 | order | Put the words in order to make a question. | could you speak more slowly
+requests,A2.2,modal_verbs,A2.2,check,order,read,,gap-points-a2-1.csv:119,modal_verbs | A2.2 | order | Put the words in order to make a question. | may i sit next to you
+requests,A2.2,modal_verbs,A2.2,check,order,read,,gap-points-a2-1.csv:120,modal_verbs | A2.2 | order | Put the words in order to make a question. | can you send me the link
+requests,A2.2,modal_verbs,A2.2,check,order,read,,gap-points-a2-1.csv:121,modal_verbs | A2.2 | order | Put the words in order to make a question. | could you help me with my bags
+requests,A2.2,modal_verbs,A2.2,check,gap,read,,gap-points-a2-1.csv:122,modal_verbs | A2.2 | gap | Could you ___ me your notes from the lesson? | 
+requests,A2.2,modal_verbs,A2.2,check,gap,read,,gap-points-a2-1.csv:123,modal_verbs | A2.2 | gap | Can I ___ your bike this afternoon? | 
+requests,A2.2,modal_verbs,A2.2,check,gap,read,,gap-points-a2-1.csv:124,modal_verbs | A2.2 | gap | Would you ___ me a favour? | 
+requests,A2.2,modal_verbs,A2.2,check,gap,read,,gap-points-a2-1.csv:125,"modal_verbs | A2.2 | gap | ___ you ___ the door, please? | "
+requests,A2.2,modal_verbs,A2.2,learn,match,read,,gap-points-a2-1.csv:126,modal_verbs | A2.2 | match | Match each beginning with its ending. | Could you lend = me your charger? ; Can I borrow = your umbrella? ; Would you help = me with this bag? ; May I = come in?
 should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:10,modal_verbs | A2.1 | mcq | Choose the correct form: You look tired. You ___ go to bed early. | should
 should,A2.2,modal_verbs,A2.1,check,mcq,read,,modal-verbs-1.csv:11,modal_verbs | A2.1 | mcq | Which sentence is correct? | He should see a doctor.
 should,A2.2,modal_verbs,A2.1,use,gap,read,,modal-verbs-1.csv:12,modal_verbs | A2.1 | gap | Give advice. Complete with should: You ___ drink more water. | 
@@ -1775,6 +1900,31 @@ v3,A2.2,cmp_pp_ps,B1.1,check,mcq,read,,compare-past-1.csv:19,cmp_pp_ps | B1.1 | 
 v3,A2.2,cmp_pp_ps,B1.1,check,mcq,read,,twins-2.csv:43,cmp_pp_ps | B1.1 | mcq | Choose the correct option: I ___ a marathon. Never in my life. | have never run
 v3,A2.2,present_simple_passive,B1.2,check,mcq,read,psp-B12-4a,built-in,present_simple_passive | B1.2 | mcq | Which sentence is NOT correct? | The email is send every week.
 v3,A2.2,past_simple_passive,B1.2,check,mcq,read,pasp-B12-4a-r2,built-in,past_simple_passive | B1.2 | mcq | Which sentence is NOT correct? | The invoice was send on Monday.
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:152,verb_patterns | A2.2 | mcq | Choose the correct option: We often go ___ fishing at the lake. | —
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:153,verb_patterns | A2.2 | mcq | Choose the correct option: Let's go ___ a coffee after the meeting. | for
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:154,verb_patterns | A2.2 | mcq | Choose the correct option: They're going ___ holiday to Greece in May. | on
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:155,verb_patterns | A2.2 | mcq | Choose the correct option: Do you want to go ___ before breakfast? | for a swim
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:156,verb_patterns | A2.2 | mcq | Which sentence is correct? | We went skiing in Austria last winter.
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:157,verb_patterns | A2.2 | mcq | Which sentence is NOT correct? | Shall we go to shopping on Saturday?
+vp_go_ing,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:158,verb_patterns | A2.2 | mcq | Which sentence is NOT correct? | I went to home early yesterday.
+vp_go_ing,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:159,verb_patterns | A2.2 | gap | Write the missing word: I usually go ___ bed at eleven. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:160,verb_patterns | A2.2 | gap | Write the missing word: Where are you going ___ holiday this year? | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:161,verb_patterns | A2.2 | gap | Write the missing word: What time do you go ___ work? | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:162,verb_patterns | A2.2 | gap | Write the missing word: We went ___ a long walk on the beach. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:163,verb_patterns | A2.2 | gap | She goes ___ in the park every morning. (run) | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,text,read,,gap-points-a2-1.csv:164,verb_patterns | A2.2 | text | Say it another way with *for*: Let's go swimming after work. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,text,read,,gap-points-a2-1.csv:165,verb_patterns | A2.2 | text | Say it another way with *shopping*: Let's go to the shops this afternoon. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,use,text,read,,gap-points-a2-1.csv:166,verb_patterns | A2.2 | text | Say it another way with *for*: I took a short walk after lunch. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:167,verb_patterns | A2.2 | order | Put the words in order. | we go cycling every saturday
+vp_go_ing,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:168,verb_patterns | A2.2 | order | Put the words in order. | my dad goes for a bike ride every sunday
+vp_go_ing,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:169,verb_patterns | A2.2 | order | Put the words in order. | she goes to the gym before work
+vp_go_ing,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:170,verb_patterns | A2.2 | order | Put the words in order. | we're going on holiday next week
+vp_go_ing,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:171,verb_patterns | A2.2 | order | Put the words in order. | he went home after the meeting
+vp_go_ing,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:172,verb_patterns | A2.2 | gap | We went ___ a boat trip on the river. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:173,verb_patterns | A2.2 | gap | Last summer we went ___ in the forest. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:174,"verb_patterns | A2.2 | gap | It's late, so I'm going ___. | "
+vp_go_ing,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:175,verb_patterns | A2.2 | gap | Let's go ___ a ___ before dinner. | 
+vp_go_ing,A2.2,verb_patterns,A2.2,learn,match,read,,gap-points-a2-1.csv:176,verb_patterns | A2.2 | match | Match each beginning with its ending. | Let's go for = a coffee after work. ; She goes to = the gym every morning. ; We're going on = holiday in July. ; They often go = fishing at the weekend.
 vp_ing,A2.2,verb_patterns,A2.2,check,order,read,,b1-new-3.csv:102,verb_patterns | A2.2 | order | Put the words in order. | i enjoy reading before bed
 vp_ing,A2.2,verb_patterns,A2.2,check,order,read,,b1-new-3.csv:104,verb_patterns | A2.2 | order | Put the words in order. | he finished cleaning his room
 vp_ing,A2.2,verb_patterns,A2.2,use,gap,read,,b1-new-3.csv:120,verb_patterns | A2.2 | gap | They avoid ___ in the rush hour. (drive) | 
@@ -1795,6 +1945,31 @@ vp_ing,A2.2,verb_patterns,B1.1,use,text,read,,b1-new-3.csv:152,verb_patterns | B
 vp_ing,A2.2,verb_patterns,B1.1,learn,match,read,,b1-new-3.csv:157,"verb_patterns | B1.1 | match | Match each group of words with its pattern. | enjoy, avoid, finish = + -ing ; want, decide, hope = + to + base verb ; good at, interested in = preposition + -ing ; can, must, should = + base verb, no to"
 vp_ing,A2.2,verb_patterns,B1.1,use,gap,read,,more-1.csv:120,verb_patterns | B1.1 | gap | Would you mind ___ the window? (open) | 
 vp_ing,A2.2,verb_patterns,B1.2,check,mcq,read,,b1-new-3.csv:142,verb_patterns | B1.2 | mcq | Which sentence is NOT correct? | She enjoys to cook for her friends.
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:127,verb_patterns | A2.2 | mcq | Choose the correct option: ___ is good for your heart. | Walking
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:128,verb_patterns | A2.2 | mcq | Choose the correct option: Meeting new people ___ fun. | is
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:129,verb_patterns | A2.2 | mcq | Choose the correct option: ___ a new language takes time. | Learning
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:130,verb_patterns | A2.2 | mcq | Choose the correct option: Booking flights early ___ money. | saves
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:131,verb_patterns | A2.2 | mcq | Which sentence is correct? | Cooking relaxes me after work.
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:132,verb_patterns | A2.2 | mcq | Choose the correct option: ___ long hours makes me tired. | Working
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,mcq,read,,gap-points-a2-1.csv:133,verb_patterns | A2.2 | mcq | Which sentence is NOT correct? | Watching the news make me sad.
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:134,verb_patterns | A2.2 | order | Put the words in order. | cycling to work saves me money
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:135,verb_patterns | A2.2 | order | Put the words in order. | travelling alone is not always easy
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:136,verb_patterns | A2.2 | order | Put the words in order. | playing the guitar helps me relax
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:137,verb_patterns | A2.2 | order | Put the words in order to make a question. | is learning english hard for you
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,order,read,,gap-points-a2-1.csv:138,verb_patterns | A2.2 | order | Put the words in order. | charging my phone takes two hours
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:139,verb_patterns | A2.2 | gap | ___ is my favourite way to relax. | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:140,verb_patterns | A2.2 | gap | Riding a bike ___ me fit. | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:141,verb_patterns | A2.2 | gap | ___ ___ English help you at work? | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,check,gap,read,,gap-points-a2-1.csv:142,verb_patterns | A2.2 | gap | ___ ___ not allowed in this lake. | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,learn,match,read,,gap-points-a2-1.csv:143,verb_patterns | A2.2 | match | Match each beginning with its ending. | Brushing your teeth twice a day = keeps them healthy. ; Wearing a helmet on a bike = protects your head. ; Speaking English well = helps you find a good job. ; Booking a hotel early = makes it cheaper.
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:144,verb_patterns | A2.2 | gap | Is ___ a car expensive in Riga? (rent) | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:145,verb_patterns | A2.2 | gap | ___ late at night is bad for you. (eat) | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:146,verb_patterns | A2.2 | gap | Why is ___ so popular in Denmark? (cycle) | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:147,verb_patterns | A2.2 | gap | ___ to music helps me work. (listen) | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,gap,read,,gap-points-a2-1.csv:148,verb_patterns | A2.2 | gap | Getting up early ___ never easy for me. (be) | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,text,read,,gap-points-a2-1.csv:149,verb_patterns | A2.2 | text | Make it negative: Flying makes me nervous. | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,text,read,,gap-points-a2-1.csv:150,verb_patterns | A2.2 | text | Make a yes/no question: Living in a big city is expensive. | 
+vp_ing_subject,A2.2,verb_patterns,A2.2,use,text,read,,gap-points-a2-1.csv:151,verb_patterns | A2.2 | text | Make a yes/no question: Using this app saves you time. | 
 vp_to,A2.2,verb_patterns,A2.2,check,order,read,,b1-new-3.csv:103,verb_patterns | A2.2 | order | Put the words in order. | she wants to learn spanish
 vp_to,A2.2,verb_patterns,A2.2,use,gap,read,,b1-new-3.csv:119,verb_patterns | A2.2 | gap | He hopes ___ a job soon. (find) | 
 vp_to,A2.2,verb_patterns,A2.2,check,mcq,read,,b1-new-3.csv:128,verb_patterns | A2.2 | mcq | Choose the correct option: She wants ___ a new phone. | to buy

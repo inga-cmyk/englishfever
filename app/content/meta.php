@@ -1661,7 +1661,9 @@ return json_decode(<<<'EF_JSON_END'
        "t": "*Shall I…? / Shall we…?* for offers and suggestions",
        "ex": [
         "[[Shall]] I open the window?",
-        "[[Shall]] we go?"
+        "[[Shall]] we go?",
+        "What [[shall]] we do tonight?",
+        "✗ [[Will]] I open the window? (as an offer)"
        ]
       }
      ],
@@ -1764,7 +1766,9 @@ return json_decode(<<<'EF_JSON_END'
        "t": "*Shall I…? / Shall we…?* piedāvājumiem un ierosinājumiem",
        "ex": [
         "[[Shall]] I open the window?",
-        "[[Shall]] we go?"
+        "[[Shall]] we go?",
+        "What [[shall]] we do tonight?",
+        "✗ [[Will]] I open the window? (piedāvājot)"
        ]
       }
      ],
@@ -2711,7 +2715,8 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*You must wear a seat belt, but you don't have to wear a hat.*",
     "watch": [
      "*Must I…?* sounds formal; *Do I have to…?* is more common: *[[Do]] I [[have to]] sign here?*",
-     "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+     "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+     "*may* asks for permission only with *I / we*: *[[May]] I sit here?* (not *May you help me?*)"
     ],
     "v2": {
      "choice": {
@@ -2770,19 +2775,22 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "Polite requests",
+       "t": "Polite requests and permission",
        "s": [
-        "Could you…?",
-        "Can you…?"
+        "Can / Could / Would you…?",
+        "Can / Could / May I…?"
        ],
        "ex": [
-        "[[Could]] you help me, please?"
+        "[[Could]] you help me, please? (you do it)",
+        "[[May]] I come in? (I do it; *may* is more formal)",
+        "Can I [[borrow]] your pen? = Can you [[lend]] me your pen?"
        ]
       }
      ],
      "watch": [
       "*Must I…?* sounds formal; *Do I have to…?* is more common: *[[Do]] I [[have to]] sign here?*",
-      "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+      "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+      "*may* asks for permission only with *I / we*: *[[May]] I sit here?* (not *May you help me?*)"
      ]
     }
    },
@@ -2803,7 +2811,8 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)",
     "watch": [
      "*Must I…?* izklausās oficiāli; biežāk saka *Do I have to…?*: *[[Do]] I [[have to]] sign here?*",
-     "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+     "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+     "Ar *may* atļauju lūdz tikai *I / we*: *[[May]] I sit here?* (nevis *May you help me?*)"
     ],
     "v2": {
      "choice": {
@@ -2862,19 +2871,22 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "Pieklājīgi lūgumi",
+       "t": "Pieklājīgi lūgumi un atļauja",
        "s": [
-        "Could you…?",
-        "Can you…?"
+        "Can / Could / Would you…?",
+        "Can / Could / May I…?"
        ],
        "ex": [
-        "[[Could]] you help me, please?"
+        "[[Could]] you help me, please? (to dara otrs)",
+        "[[May]] I come in? (to daru es; *may* ir oficiālāk)",
+        "Can I [[borrow]] your pen? = Can you [[lend]] me your pen?"
        ]
       }
      ],
      "watch": [
       "*Must I…?* izklausās oficiāli; biežāk saka *Do I have to…?*: *[[Do]] I [[have to]] sign here?*",
-      "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*"
+      "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+      "Ar *may* atļauju lūdz tikai *I / we*: *[[May]] I sit here?* (nevis *May you help me?*)"
      ]
     }
    }
@@ -5060,12 +5072,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*would* + verb also tells about past habits, but not about states: *We [[would]] play outside every day. I [[used to]] have a dog.*",
-      "*any more* in the negative: *I don't smoke [[any more]].*"
+      "A situation has ended: *I [[no longer]] smoke.* (before the verb; after *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (at the end, after a negative). Not *no more*."
      ]
     },
     "watch": [
      "*would* + verb also tells about past habits, but not about states: *We [[would]] play outside every day. I [[used to]] have a dog.*",
-     "*any more* in the negative: *I don't smoke [[any more]].*"
+     "A situation has ended: *I [[no longer]] smoke.* (before the verb; after *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (at the end, after a negative). Not *no more*."
     ]
    },
    "rule_lv": {
@@ -5151,12 +5163,12 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*would* + darbības vārds arī stāsta par ieradumiem pagātnē, bet ne par stāvokļiem: *We [[would]] play outside every day. I [[used to]] have a dog.*",
-      "*any more* noliegumā: *I don't smoke [[any more]].*"
+      "Situācija ir beigusies: *I [[no longer]] smoke.* (pirms darbības vārda; aiz *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (beigās, aiz nolieguma). Nevis *no more*."
      ]
     },
     "watch": [
      "*would* + darbības vārds arī stāsta par ieradumiem pagātnē, bet ne par stāvokļiem: *We [[would]] play outside every day. I [[used to]] have a dog.*",
-     "*any more* noliegumā: *I don't smoke [[any more]].*"
+     "Situācija ir beigusies: *I [[no longer]] smoke.* (pirms darbības vārda; aiz *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (beigās, aiz nolieguma). Nevis *no more*."
     ]
    }
   },
@@ -6235,7 +6247,7 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*let / make* + person + base verb: *Let me [[go]]. She made me [[laugh]].*",
      "Modal verbs + base verb, without *to*: *I can [[swim]].*",
-     "*[[go]]* + *-ing* for activities: *Let's go [[shopping]].*",
+     "*[[go]]* + *-ing* for activities: *Let's go [[shopping]].* Also *go [[for]] a walk / a run*, *go [[to]] the gym*, *go [[on]] holiday*, *go [[home]]* (no *to*).",
      "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
     ],
     "v2": {
@@ -6288,12 +6300,20 @@ return json_decode(<<<'EF_JSON_END'
         "Remember [[to call]] her. (= Don't forget to call her.)",
         "I remember [[watching]] the sunset. (= I watched the sunset, and I still remember it.)"
        ]
+      },
+      {
+       "t": "*-ing* at the start: the activity is the subject",
+       "ex": [
+        "[[Swimming]] is good for you.",
+        "[[Learning]] a language takes time.",
+        "Watching old films [[is]] relaxing. (one activity: *is*)"
+       ]
       }
      ],
      "watch": [
       "*let / make* + person + base verb: *Let me [[go]]. She made me [[laugh]].*",
       "Modal verbs + base verb, without *to*: *I can [[swim]].*",
-      "*[[go]]* + *-ing* for activities: *Let's go [[shopping]].*",
+      "*[[go]]* + *-ing* for activities: *Let's go [[shopping]].* Also *go [[for]] a walk / a run*, *go [[to]] the gym*, *go [[on]] holiday*, *go [[home]]* (no *to*).",
       "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
      ]
     }
@@ -6315,7 +6335,7 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*let / make* + cilvēks + pamatforma: *Let me [[go]]. She made me [[laugh]].*",
      "Modālie darbības vārdi + pamatforma bez *to*: *I can [[swim]].*",
-     "*[[go]]* + *-ing* nodarbēm: *Let's go [[shopping]].*",
+     "*[[go]]* + *-ing* nodarbēm: *Let's go [[shopping]].* Arī *go [[for]] a walk / a run*, *go [[to]] the gym*, *go [[on]] holiday*, *go [[home]]* (bez *to*).",
      "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
     ],
     "v2": {
@@ -6369,12 +6389,20 @@ return json_decode(<<<'EF_JSON_END'
         "Remember [[to call]] her. (= Neaizmirsti viņai piezvanīt.)",
         "I remember [[watching]] the sunset. (= Es atceros, kā mēs vērojām saulrietu.)"
        ]
+      },
+      {
+       "t": "*-ing* teikuma sākumā: darbība ir teikuma priekšmets",
+       "ex": [
+        "[[Swimming]] is good for you.",
+        "[[Learning]] a language takes time.",
+        "Watching old films [[is]] relaxing. (viena darbība: *is*)"
+       ]
       }
      ],
      "watch": [
       "*let / make* + cilvēks + pamatforma: *Let me [[go]]. She made me [[laugh]].*",
       "Modālie darbības vārdi + pamatforma bez *to*: *I can [[swim]].*",
-      "*[[go]]* + *-ing* nodarbēm: *Let's go [[shopping]].*",
+      "*[[go]]* + *-ing* nodarbēm: *Let's go [[shopping]].* Arī *go [[for]] a walk / a run*, *go [[to]] the gym*, *go [[on]] holiday*, *go [[home]]* (bez *to*).",
       "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
      ]
     }
@@ -8891,19 +8919,22 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "*have* = own: *Do you have…?* or *Have you got…?* The meaning is the same; *have got* is more British.",
        "ex": [
-        "[[Do]] you [[have]] a car?",
-        "[[Have]] you [[got]] a car?"
+        "[[Do]] you [[have]] a car? / [[Have]] you [[got]] a car? Yes, I [[do]]. / Yes, I [[have]].",
+        "She'[[s got]] two sisters. = She [[has]] two sisters.",
+        "I [[haven't got]] a car. = I [[don't have]] a car."
        ]
       }
      ],
      "watch": [
       "*be* in the past simple, no *did*: *[[Were]] you at home?*",
-      "The auxiliary takes the *-s* or the past, the main verb stays in the base form: *[[Does]] she work? [[Did]] you go?*"
+      "The auxiliary takes the *-s* or the past, the main verb stays in the base form: *[[Does]] she work? [[Did]] you go?*",
+      "No *got* after *do / does*, and no *-ing* for owning: *[[Do]] you [[have]] a pen?* (not *Do you have got*). *She [[has got]] blue eyes.* (not *is having*)"
      ]
     },
     "watch": [
      "*be* in the past simple, no *did*: *[[Were]] you at home?*",
-     "The auxiliary takes the *-s* or the past, the main verb stays in the base form: *[[Does]] she work? [[Did]] you go?*"
+     "The auxiliary takes the *-s* or the past, the main verb stays in the base form: *[[Does]] she work? [[Did]] you go?*",
+     "No *got* after *do / does*, and no *-ing* for owning: *[[Do]] you [[have]] a pen?* (not *Do you have got*). *She [[has got]] blue eyes.* (not *is having*)"
     ]
    },
    "rule_lv": {
@@ -9000,19 +9031,22 @@ return json_decode(<<<'EF_JSON_END'
       {
        "t": "*have* = piederēt: *Do you have…?* vai *Have you got…?* Nozīme ir tā pati; *have got* biežāk lieto britu angļu valodā.",
        "ex": [
-        "[[Do]] you [[have]] a car?",
-        "[[Have]] you [[got]] a car?"
+        "[[Do]] you [[have]] a car? / [[Have]] you [[got]] a car? Yes, I [[do]]. / Yes, I [[have]].",
+        "She'[[s got]] two sisters. = She [[has]] two sisters.",
+        "I [[haven't got]] a car. = I [[don't have]] a car."
        ]
       }
      ],
      "watch": [
       "*be* Past Simple, bez *did*: *[[Were]] you at home?*",
-      "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*"
+      "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*",
+      "Aiz *do / does* nav *got*, un piederībai nelieto *-ing*: *[[Do]] you [[have]] a pen?* (nevis *Do you have got*). *She [[has got]] blue eyes.* (nevis *is having*)"
      ]
     },
     "watch": [
      "*be* Past Simple, bez *did*: *[[Were]] you at home?*",
-     "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*"
+     "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*",
+     "Aiz *do / does* nav *got*, un piederībai nelieto *-ing*: *[[Do]] you [[have]] a pen?* (nevis *Do you have got*). *She [[has got]] blue eyes.* (nevis *is having*)"
     ]
    }
   },

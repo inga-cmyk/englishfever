@@ -155,7 +155,7 @@ CARDS = {
                      {"t": "*be / get used to*: something is, or becomes, normal",
                       "ex": ["She's [[used to]] working at night.", "You'll soon [[get used to]] the new job."]}],
             "watch": ["*would* + verb also tells about past habits, but not about states: *We [[would]] play outside every day. I [[used to]] have a dog.*",
-                      "*any more* in the negative: *I don't smoke [[any more]].*"],
+                      "A situation has ended: *I [[no longer]] smoke.* (before the verb; after *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (at the end, after a negative). Not *no more*."],
         },
         "lv": {
             "choice": {"cols": ["used to + pamatforma", "be used to + -ing vai lietvārds"],
@@ -173,7 +173,7 @@ CARDS = {
                      {"t": "*be / get used to*: kaut kas ir vai kļūst ierasts",
                       "ex": ["She's [[used to]] working at night.", "You'll soon [[get used to]] the new job."]}],
             "watch": ["*would* + darbības vārds arī stāsta par ieradumiem pagātnē, bet ne par stāvokļiem: *We [[would]] play outside every day. I [[used to]] have a dog.*",
-                      "*any more* noliegumā: *I don't smoke [[any more]].*"],
+                      "Situācija ir beigusies: *I [[no longer]] smoke.* (pirms darbības vārda; aiz *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (beigās, aiz nolieguma). Nevis *no more*."],
         },
     },
 }

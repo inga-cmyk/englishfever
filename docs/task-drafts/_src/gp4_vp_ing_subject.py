@@ -103,5 +103,5 @@ tx(T, L, 4, "Make a yes/no question: Living in a big city is expensive.",
    "Is living in a big city expensive? | Is living expensive in a big city?",
    *quest("Is living in a big city expensive?", "*Is* goes before the whole activity: *living in a big city*.",
           "*Is* stāv pirms teikuma priekšmeta: *living in a big city*."))
-tx(T, L, 4, "Make a yes/no question: Using this app saves you time.", "Does using this app save you time?",
+tx(T, L, 4, "Make a yes/no question: Using this app saves you time.", "Does using this app save you time? | Does using this app save time?",   # r9
    *quest("Does using this app save you time?", *DOES))

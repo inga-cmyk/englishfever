@@ -31,7 +31,7 @@ mc(T, L, 2, "Which sentence is correct?", "Has your office got a kitchen?",
 mc(T, L, 2, "Which sentence is correct?", "She doesn't have a laptop at home.",
    ["She doesn't has a laptop at home.", "She doesn't have got a laptop at home.", "She don't have a laptop at home."], *DO)
 # d. short answer
-mc(T, L, 2, "Choose the correct short answer: 'Have you got a bike?'", "Yes, I have.", ["Yes, I have got.", "Yes, I do.", "Yes, I've."], *SHORT)
+mc(T, L, 2, "Choose the correct short answer: 'Have you got a bike?'", "Yes, I have.", ["Yes, I have got.", "Yes, I am.", "Yes, I've."], *SHORT)   # blind check r9: "Yes, I do." is heard too
 # e. negative with have got
 mc(T, L, 2, "Choose the correct option: We ___ any milk.", "haven't got", ["don't have got", "hasn't got", "not have got"], *NEG)
 # f. NOT correct: three different correct uses
@@ -46,8 +46,8 @@ mc(T, L, 2, "Choose the correct option: What kind of car ___ got?", "has she", [
 od(T, L, 3, "Put the words in order to make a question.", "have you got a minute", *Q)
 od(T, L, 3, "Put the words in order.", "my brother hasn't got a driving licence", *NEG)
 od(T, L, 3, "Put the words in order to make a question.", "does your flat have a balcony", *DO, also=["your flat does have a balcony"])   # the instruction becomes "Put the words in order." (plain()); the stressed statement is correct English
-od(T, L, 3, "Put the words in order.", "we don't have time for lunch today", *NEG, also=["today we don't have time for lunch"])
-od(T, L, 3, "Put the words in order.", "my gym has got a new sauna", *HG)
+od(T, L, 3, "Put the words in order.", "we don't have time for lunch today", *NEG, also=["today we don't have time for lunch", "we don't have time today for lunch"])   # r9
+od(T, L, 3, "Put the words in order.", "my gym has got a new sauna", *HG, also=["my new gym has got a sauna"])   # r9
 
 # ── word bank (4): the wrong chips build the typical mistakes of this point ──
 gp(T, L, 3, "Does this bus ___ wifi?", "have", *DO, bank=["have", "has", "have got"])
@@ -57,12 +57,12 @@ gp(T, L, 3, "___ the room ___ a fridge?", "Has / got", *Q, bank=["Has", "got", "
 
 # ── matching (1): a learning task (the subject AND the first word of the question decide) ──
 mt(T, L, 2, "Match each question with its short answer.",
-   [("Have you got a pen?", "Yes, I have."), ("Do you have a ticket?", "No, I don't."),
+   [("Have you got a pen?", "Yes, I have."), ("Do they have a garden?", "No, they don't."),   # r9: one pronoun per pair
     ("Has Mark got a job?", "No, he hasn't."), ("Does Anna have a sister?", "Yes, she does.")], *SHORT)
 
 # ── typed gap (5) ──
 gp(T, L, 3, "My sister ___ three cats. (have got)", "has got | 's got", *HG)
-gp(T, L, 3, "We ___ a car, so we cycle to work. (not / have got)", "haven't got | have not got", *NEG)
+gp(T, L, 3, "We ___ a car, so we cycle to work. (not / have got)", "haven't got | have not got | don't have | do not have", *NEG)   # r9
 gp(T, L, 3, "'Has the new library got a café?' 'Yes, it ___.'", "has", *SHORT)
 gp(T, L, 3, "___ you ___ an umbrella? (have got)", "Have / got", *Q)
 gp(T, L, 3, "My grandparents ___ a computer. (not / have)", "don't have | haven't got | haven't | have no", *NEG)
@@ -73,4 +73,4 @@ tx(T, L, 4, "Make it negative: My laptop has got a camera.",
 tx(T, L, 4, "Make a yes/no question: Tom has got a motorbike.",
    "Has Tom got a motorbike? | Does Tom have a motorbike? | Has Tom a motorbike?", *Q)
 tx(T, L, 4, "Make a question with *How many*: She has got two children.",
-   "How many children has she got? | How many children does she have? | How many children has she?", *Q)
+   "How many children has she got? | How many children does she have? | How many children has she? | How many kids has she got? | How many kids does she have?", *Q)

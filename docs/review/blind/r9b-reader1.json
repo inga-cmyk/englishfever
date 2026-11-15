@@ -1,0 +1,37 @@
+[
+{
+"id": "r9b-001",
+"answer": "Yes, I have.",
+"other_correct": "",
+"wrong_options_that_fit": "'Yes, I have got.' is heard in informal speech (a short answer normally drops 'got'), so it is a borderline distractor, not clearly wrong.",
+"instruction_problem": "Uses the term 'short answer' without explanation; may be unfamiliar to some A2 learners.",
+"level_problem": "",
+"sense_problem": "'Yes, I've.' and 'Yes, I am.' are believable mistakes; fine."
+},
+{
+"id": "r9b-002",
+"answer": [
+[
+"Have you got a pen?",
+"Yes, I have."
+],
+[
+"Do they have a garden?",
+"No, they don't."
+],
+[
+"Has Mark got a job?",
+"No, he hasn't."
+],
+[
+"Does Anna have a sister?",
+"Yes, she does."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

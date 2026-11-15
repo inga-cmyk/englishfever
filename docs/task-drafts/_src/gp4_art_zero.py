@@ -66,7 +66,7 @@ mt(T, L, 2, "Match each beginning with its ending.", [("My cousin lives in", "Ro
 
 # ── typed gap (5): the learner writes the noun from the brackets; the right form is the plural with no article ──
 gp(T, L, 3, "My daughter is afraid of ___, even small ones. (spider)", "spiders", *PL)
-gp(T, L, 3, "In big cities, ___ are often faster than cars. (bike)", "bikes", *PL)
+gp(T, L, 3, "In big cities, ___ are often faster than cars. (bike)", "bikes | bicycles", *PL)
 gp(T, L, 3, "___ are cheaper than laptops. (tablet)", "tablets", *PL)
 gp(T, L, 3, "___ are my favourite flowers. (rose)", "roses", *PL)
 gp(T, L, 3, "My son collects ___. He has hundreds. (stamp)", "stamps",

@@ -1,0 +1,95 @@
+{
+ "r9b-001": {
+  "hash": "0a3c114f07d58fa6",
+  "gate_key": "aux_verbs | A2.1 | mcq | Choose the correct short answer: 'Have you got a bike?' | Yes, I have.",
+  "src": "zz-blind-gap-points-a2-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Yes, I have.",
+   "wrong": [
+    "Yes, I have got.",
+    "Yes, I am.",
+    "Yes, I've."
+   ]
+  },
+  "item": {
+   "id": "c-3020",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct short answer: 'Have you got a bike?'",
+   "why": "A short answer to *Have you got …?* repeats *have / has* without *got*: *Yes, I have. No, she hasn't.* To *Do you have …?*: *Yes, I do.*",
+   "why_lv": "Īsajā atbildē uz *Have you got* …? atkārto *have / has* bez *got*: *Yes, I have.* (nevis *Yes, I have got*.) Uz *Do you have* …?: *Yes, I do.*",
+   "correct": "Yes, I have.",
+   "wrong": [
+    "Yes, I have got.",
+    "Yes, I am.",
+    "Yes, I've."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:5"
+  }
+ },
+ "r9b-002": {
+  "hash": "722703e07588a6da",
+  "gate_key": "aux_verbs | A2.1 | match | Match each question with its short answer. | Have you got a pen? = Yes, I have. ; Do they have a garden? = No, they don't. ; Has Mark got a job? = No, he hasn't. ; Does Anna have a sister? = Yes, she does.",
+  "src": "zz-blind-gap-points-a2-1.csv:18",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Have you got a pen?",
+     "Yes, I have."
+    ],
+    [
+     "Do they have a garden?",
+     "No, they don't."
+    ],
+    [
+     "Has Mark got a job?",
+     "No, he hasn't."
+    ],
+    [
+     "Does Anna have a sister?",
+     "Yes, she does."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3033",
+   "skill": "aux_verbs",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each question with its short answer.",
+   "why": "A short answer to *Have you got …?* repeats *have / has* without *got*: *Yes, I have. No, she hasn't.* To *Do you have …?*: *Yes, I do.*",
+   "why_lv": "Īsajā atbildē uz *Have you got* …? atkārto *have / has* bez *got*: *Yes, I have.* (nevis *Yes, I have got*.) Uz *Do you have* …?: *Yes, I do.*",
+   "pairs": [
+    [
+     "Have you got a pen?",
+     "Yes, I have."
+    ],
+    [
+     "Do they have a garden?",
+     "No, they don't."
+    ],
+    [
+     "Has Mark got a job?",
+     "No, he hasn't."
+    ],
+    [
+     "Does Anna have a sister?",
+     "Yes, she does."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-a2-1.csv:18"
+  }
+ }
+}

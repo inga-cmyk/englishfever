@@ -59,7 +59,7 @@ tx(T, L, 4, "Say it another way with *for*: Let's go swimming after work.",
 tx(T, L, 4, "Say it another way with *shopping*: Let's go to the shops this afternoon.",
    "Let's go shopping this afternoon. | This afternoon, let's go shopping. | Shall we go shopping this afternoon? | Let's do some shopping this afternoon. | Let's do the shopping this afternoon. | Shall we do some shopping this afternoon? | Let's go and do some shopping this afternoon.", *SHOP)
 tx(T, L, 4, "Say it another way with *for*: I took a short walk after lunch.",
-   "I went for a short walk after lunch. | After lunch, I went for a short walk. | I went out for a short walk after lunch. | After lunch, I went out for a short walk.", *FOR)
+   "I went for a short walk after lunch. | After lunch, I went for a short walk. | I went out for a short walk after lunch. | After lunch, I went out for a short walk. | I went for a walk after lunch. | After lunch, I went for a walk.", *FOR)
 
 # word order (5)
 od(T, L, 3, "Put the words in order.", "we go cycling every saturday", *ING, also=["every saturday we go cycling"])

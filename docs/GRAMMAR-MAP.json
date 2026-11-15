@@ -357,11 +357,13 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.1"
+   ]
   },
   {
    "id": "imperative",
@@ -781,11 +783,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.2"
+   ]
   },
   {
    "id": "pastc_form",
@@ -1683,11 +1687,13 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.1"
+   ]
   },
   {
    "id": "going_to",
@@ -2235,11 +2241,13 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.2"
+   ]
   },
   {
    "id": "must_have_to",
@@ -5120,11 +5128,13 @@
    ],
    "card": "no",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.2"
+   ]
   },
   {
    "id": "vp_go_ing",
@@ -5144,11 +5154,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.2"
+   ]
   },
   {
    "id": "vp_adj_to",
@@ -9054,11 +9066,13 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "A2.1"
+   ]
   },
   {
    "id": "one_ones",

@@ -145,3 +145,9 @@ BY['should_have']['topics'] = ['more_modals']
 N('should_have', 'In the app only inside the passive (should have been closed)', ' Decided by the teacher, 15 November: tasks in More modals at B1.2.')
 N('pc_always', '', ' Decided by the teacher, 15 November: Present continuous gets B1.2 for these tasks.')
 N('each_every', '', ' Decided by the teacher, 15 November: Subject and verb gets B1.2 for these tasks.')
+# Teacher, 15 November (batch 5, A2): the points are practised at their map level; the topics get that level (prepared tasks only).
+N('vp_like_ing', 'The app starts the topic at A2.2', ' Decided by the teacher, 15 November: Verb patterns gets A2.1 for these tasks.')
+N('adj_basic', '', ' Decided by the teacher, 15 November: Adjective order gets A2.1 for these tasks.')
+N('a_few', '', ' Decided by the teacher, 15 November: Quantity gets A2.1 for these tasks.')
+N('count_unc', 'The app starts the topic at A2.2', ' Decided by the teacher, 15 November: Quantity gets A2.1 for these tasks.')
+N('purpose_to', 'The app has it at B1.1 and above', ' Decided by the teacher, 15 November: Clauses gets A2.2 for these tasks.')

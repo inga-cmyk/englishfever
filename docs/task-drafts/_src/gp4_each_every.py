@@ -59,10 +59,10 @@ gp(T, L, 3, "Write *all* or *whole*: The ___ team stayed late on Friday to finis
 
 # ── whole sentence (3) ──
 tx(T, L, 4, "Say it another way with *whole*: I spent all day at the airport because my flight was cancelled.",
-   "I spent the whole day at the airport because my flight was cancelled. | Because my flight was cancelled, I spent the whole day at the airport.",
+   "I spent the whole day at the airport because my flight was cancelled. | Because my flight was cancelled, I spent the whole day at the airport. | My flight was cancelled, so I spent the whole day at the airport.",
    *WHOLE)
 tx(T, L, 4, "Say it another way with *every*: All the lessons at our language school last ninety minutes.",
-   "Every lesson at our language school lasts ninety minutes. | Every lesson at our language school lasts 90 minutes. | "
+   "Every lesson at our language school lasts ninety minutes. | Every lesson at our language school lasts 90 minutes. | Every lesson at our language school lasts for ninety minutes. | "
    "Every single lesson at our language school lasts ninety minutes. | Every single lesson at our language school lasts 90 minutes. | "
    "Every one of the lessons at our language school lasts ninety minutes. | Every one of the lessons at our language school lasts 90 minutes. | "
    "Every one of the lessons at our language school last ninety minutes. | Every one of the lessons at our language school last 90 minutes.",
@@ -77,10 +77,10 @@ tx(T, L, 4, "Make a yes/no question: Every member of the team has access to the 
 od(T, L, 3, "Put the words in order.", "each of my sisters lives in a different country so we talk online",
    "*each of my sisters* + singular verb: *lives*.", "*each of my sisters* + darbības vārds vienskaitlī: *lives*.")
 od(T, L, 3, "Put the words in order to make a question.", "does every guest need a ticket for tomorrow's boat trip",
-   "*every guest* is singular: *Does every guest need …?*", "*every guest* ir vienskaitlī: *Does every guest need …?*")
-od(T, L, 3, "Put the words in order.", "we were stuck in traffic all day and missed the start of the wedding", *ALL_DAY)
+   "*every guest* is singular: *Does every guest need …?*", "*every guest* ir vienskaitlī: *Does every guest need …?*", also=["does every guest need a boat ticket for tomorrow's trip"])
+od(T, L, 3, "Put the words in order.", "we were stuck in traffic all day and missed the start of the wedding", *ALL_DAY, also=["all day we were stuck in traffic and missed the start of the wedding"])
 od(T, L, 3, "Put the words in order.", "i missed the match because i spent the whole evening answering emails", *WHOLE,
-   also=["because i spent the whole evening answering emails i missed the match"])
+   also=["because i spent the whole evening answering emails i missed the match", "i missed the whole match because i spent the evening answering emails", "because i spent the evening answering emails i missed the whole match"])
 od(T, L, 3, "Put the words in order.", "i've read every single review but i can't decide which phone to buy", *ALMOST,
    also=["i can't decide which phone to buy but i've read every single review"])
 

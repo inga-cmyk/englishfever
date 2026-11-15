@@ -63,10 +63,9 @@ od(T, L, 3, "Put the words in order.", "i shouldn't have bought these shoes with
 od(T, L, 3, "Put the words in order.", "she could have got the job but she didn't apply in time", *CO)
 od(T, L, 3, "Put the words in order.", "you could have asked me for help instead of doing it alone", *COREP,
    also=["instead of doing it alone you could have asked me for help"])
-od(T, L, 3, "Put the words in order to make a question.", "what should i have said when my boss asked about the delay",
+od(T, L, 3, "Put the words in order to make a question.", "what should i have said to my boss",   # blind check r11: the old cards let the people swap and were too long
    "Question: question word + *should* + subject + *have* + 3rd form: *What should I have said?*",
-   "Jautājums: jautājamais vārds + *should* + teik. priekšmets + *have* + 3. forma: *What should I have said?*",
-   also=["when my boss asked about the delay what should i have said"])
+   "Jautājums: jautājamais vārds + *should* + teik. priekšmets + *have* + 3. forma: *What should I have said?*",)
 
 # ── word bank (4): the wrong chips are the typical mistakes of this point ──
 gp(T, L, 3, "You shouldn't ___ ___ the oven on when you went out this morning.", "have / left", *SHNEG,
@@ -108,7 +107,7 @@ tx(T, L, 4, "Make it negative: I should have told Anna what you said about her n
    "I shouldn't've told Anna what you said about her new boyfriend.", *SHNEG)
 tx(T, L, 4, "Start with *You shouldn't*: It was wrong of you to lend him your car for the whole weekend.",
    "You shouldn't have lent him your car for the whole weekend. | You shouldn't have lent your car to him for the whole weekend. | "
-   "You shouldn't have lent him your car. | You shouldn't have lent your car to him.",
+   "You shouldn't have lent him your car. | You shouldn't have lent your car to him. | You shouldn't have loaned him your car for the whole weekend.",
    "It was wrong, and you did it: *You shouldn't have lent …* (*have* + 3rd form *lent*, not *lend* or *lended*).",
    "Tas bija nepareizi, un tu to izdarīji: *You shouldn't have lent …* (*have* + 3. forma *lent*, nevis *lend* vai *lended*).")
 tx(T, L, 4, "Make a yes/no question: I should have told the manager about the mistake in the invoice.",

@@ -31,6 +31,14 @@ for n, r in enumerate(lib.rows):
             if a.lower().startswith(("would always", "'d always")) or " would always " in a or "'d always " in a:
                 lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + a + " :: *would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises. :: *would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
 
+# pc_always: the simple form is accepted too in the complaint tasks (blind check r11); it gets its own note
+SIMPLE_NOTE = " :: The simple form is correct too: it says that it happens often. *always* + *-ing* (*is always leaving*, *was always humming*) adds that it annoys you. :: Arī vienkāršā forma ir pareiza: tā saka, ka tas notiek bieži. *always* + *-ing* (*is always leaving*, *was always humming*) piebilst, ka tas tevi kaitina."
+for n, r in enumerate(lib.rows):
+    if r[0].startswith("Present continuous") and r[2] in ("gap", "text") and r[3].startswith("Complain with"):
+        for a in [x.strip() for x in r[4].split(" | ")]:
+            if not __import__("re").search(r"\b(is|are|was|were|'s|'re|would|'d)\b.*\w+ing\b|\bwould\b|'d always", a) and "ing " not in a + " ":
+                lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + a + SIMPLE_NOTE
+
 if __name__ == "__main__":
     import sys
     lib.save(sys.argv[1] if len(sys.argv) > 1 else "pending/" + NAME)

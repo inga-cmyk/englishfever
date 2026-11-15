@@ -1,0 +1,64 @@
+[
+ {
+  "id": "r11b-001",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "We need a new printer: ours ___ always ___ in the middle of big jobs.",
+  "word_cards": [
+   "is",
+   "jams",
+   "jamming",
+   "was"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r11b-002",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "My old car ___ constantly ___ down, so in the end I sold it.",
+  "word_cards": [
+   "is",
+   "breaks",
+   "was",
+   "breaking"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r11b-003",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "neighbour",
+   "loud",
+   "always",
+   "late",
+   "at",
+   "night",
+   "music",
+   "my",
+   "playing",
+   "is"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r11b-004",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "to",
+   "have",
+   "should",
+   "i",
+   "what",
+   "said",
+   "my",
+   "boss"
+  ],
+  "note": "the learner puts all the cards in order"
+ }
+]

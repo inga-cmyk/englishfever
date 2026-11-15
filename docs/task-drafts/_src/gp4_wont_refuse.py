@@ -61,7 +61,7 @@ gp(T, L, 3, "My son won't ___ his homework, however often I ask him. (do)", "do"
 
 # ---------- whole sentence (3) ----------
 tx(T, L, 4, "Say it another way with *won't*: My computer refuses to open this file.",
-   "My computer won't open this file. | My computer won't open the file.",
+   "My computer won't open this file. | My computer won't open the file. | This file won't open on my computer.",
    "*refuses to open* = *won't open*: *won't* + base verb, no *to*.",
    "*refuses to open* = *won't open*: *won't* + pamatforma, nevis *won't to open*.")
 tx(T, L, 4, "Say it another way with *wouldn't*: My neighbour refused to move his car last night.",

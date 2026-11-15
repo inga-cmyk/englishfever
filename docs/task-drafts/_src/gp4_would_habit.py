@@ -85,7 +85,7 @@ gp(T, L, 3, "Last month I ___ to Tallinn for a job interview, and I got the job!
 
 # whole sentence (3)
 tx(T, L, 4, "Say it another way with *would*: When I was young, my father used to cook pancakes every Saturday.",
-   "When I was young, my father would cook pancakes every Saturday. | My father would cook pancakes every Saturday when I was young.", *ACT)
+   "When I was young, my father would cook pancakes every Saturday. | My father would cook pancakes every Saturday when I was young. | Every Saturday my father would cook pancakes when I was young.", *ACT)
 tx(T, L, 4, "Correct the mistake: When I was a child, I would have a little garden of my own.",
    "When I was a child, I used to have a little garden of my own. | When I was a child, I had a little garden of my own. | I used to have a little garden of my own when I was a child. | I had a little garden of my own when I was a child.", *STATE)
 tx(T, L, 4, "Correct the mistake: Last weekend we would go hiking in the mountains.",

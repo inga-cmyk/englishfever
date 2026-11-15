@@ -50,12 +50,12 @@ learning_task()
 
 # type a word (5)
 gp(T, L, 3, "Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up.",
-   "are always leaving | 're always leaving", *FORM)
-gp(T, L, 3, "Complain with *always*: When we shared an office, Mark ___ (hum) along to his music.", "was always humming | would always hum | 'd always hum", *PAST)   # would + always is a correct annoyed past habit too: accepted
-gp(T, L, 3, "Complete with one word in each gap: We need a new printer: ours ___ always ___ in the middle of big jobs. (jam)", "is / jamming", *POS)
-gp(T, L, 3, "Complete with one word in each gap: My old car ___ constantly ___ down, so in the end I sold it. (break)", "was / breaking",
+   "are always leaving | 're always leaving | always leave", *FORM)   # blind check r11: the simple form is correct too (answer note)
+gp(T, L, 3, "Complain with *always*: When we shared an office, Mark ___ (hum) along to his music.", "was always humming | would always hum | 'd always hum | always hummed | always used to hum", *PAST)   # would + always is a correct annoyed past habit too: accepted
+gp(T, L, 3, "We need a new printer: ours ___ always ___ in the middle of big jobs.", "is / jamming", *POS, bank=["is", "jamming", "was", "jams"])   # blind check r11: typed, it also took has jammed / will jam   # r11: the other correct pairs are accepted
+gp(T, L, 3, "My old car ___ constantly ___ down, so in the end I sold it.", "was / breaking",
    "*so in the end I sold it* is the past, so *was* + *constantly* + verb-ing: *was constantly breaking down*.",
-   "*so in the end I sold it* ir pagātne, tāpēc *was* + *constantly* + darbības vārds ar *-ing*: *was constantly breaking down*.")
+   "*so in the end I sold it* ir pagātne, tāpēc *was* + *constantly* + darbības vārds ar *-ing*: *was constantly breaking down*.", bank=["was", "breaking", "is", "breaks"])   # blind check r11: typed, it also took would break / had broken
 # both forms are correct here: the simple form is neutral, the continuous adds the complaint
 gp(T, L, 3, "Use the words in brackets: My brother ___ (always / forget) my birthday, but every year he calls the next day.",
    "always forgets | is always forgetting | 's always forgetting",
@@ -64,17 +64,17 @@ gp(T, L, 3, "Use the words in brackets: My brother ___ (always / forget) my birt
 
 # whole sentence (3)
 tx(T, L, 4, "Complain with *constantly*: My boss calls me during my lunch break.",
-   "My boss is constantly calling me during my lunch break. | My boss's constantly calling me during my lunch break.", *CONST)
+   "My boss is constantly calling me during my lunch break. | My boss's constantly calling me during my lunch break. | My boss constantly calls me during my lunch break. | My boss is constantly phoning me during my lunch break. | My boss is constantly calling me in my lunch break.", *CONST)
 tx(T, L, 4, "Complain with *always*: When we were students, my flatmate borrowed my notes.",
-   "When we were students, my flatmate was always borrowing my notes. | My flatmate was always borrowing my notes when we were students. | When we were students, my flatmate would always borrow my notes. | My flatmate would always borrow my notes when we were students. | When we were students, my flatmate'd always borrow my notes.", *PAST)
+   "When we were students, my flatmate was always borrowing my notes. | My flatmate was always borrowing my notes when we were students. | When we were students, my flatmate would always borrow my notes. | My flatmate would always borrow my notes when we were students. | When we were students, my flatmate'd always borrow my notes. | When we were students, my flatmate always borrowed my notes. | My flatmate always borrowed my notes when we were students.", *PAST)
 tx(T, L, 4, "Make a question with *Why*: You're always interrupting me in meetings.",
-   "Why are you always interrupting me in meetings? | Why do you always interrupt me in meetings? | Why are you always interrupting me? | Why do you always interrupt me?",
+   "Why are you always interrupting me in meetings? | Why are you always interrupting me during meetings? | Why do you always interrupt me in meetings? | Why are you always interrupting me? | Why do you always interrupt me?",
    "*Why are you always interrupting me?*: *are* goes before *you*, *always* stays before the verb-ing. *Why do you always interrupt me?* is correct too.",
    "*Why are you always interrupting me?*: *are* liek pirms *you*, *always* paliek pirms darbības vārda ar *-ing*. Arī *Why do you always interrupt me?* ir pareizi.")
 
 # word order (5): subjects with a contraction, so the cards do not also make a yes/no question
 od(T, L, 3, "Put the words in order.", "my sister's always borrowing my clothes without asking", *POS)
-od(T, L, 3, "Put the words in order.", "it's always raining when i want to go cycling", *POS, also=["when i want to go cycling it's always raining"])
+od(T, L, 3, "Put the words in order.", "my neighbour is always playing loud music late at night", *POS, also=["late at night my neighbour is always playing loud music"])   # r11: the old cards also made "i always want to go cycling when it's raining"
 od(T, L, 3, "Put the words in order to make a question.", "why are you always checking your phone at dinner",
    "A question: *Why* + *are* + *you* + *always* + verb-ing.", "Jautājums: *Why* + *are* + *you* + *always* + darbības vārds ar *-ing*.")
 od(T, L, 3, "Put the words in order.", "he's forever telling us how busy he is", *CONST)

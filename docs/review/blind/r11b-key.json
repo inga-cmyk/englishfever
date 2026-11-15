@@ -1,0 +1,157 @@
+{
+ "r11b-001": {
+  "hash": "2fe32dddf91844b4",
+  "gate_key": "present_continuous | B1.2 | gap | We need a new printer: ours ___ always ___ in the middle of big jobs. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "jamming"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3302",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We need a new printer: ours ___ always ___ in the middle of big jobs.",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "jamming"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is",
+    "jamming",
+    "was",
+    "jams"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:11"
+  }
+ },
+ "r11b-002": {
+  "hash": "d91e8204d90317cb",
+  "gate_key": "present_continuous | B1.2 | gap | My old car ___ constantly ___ down, so in the end I sold it. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "breaking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3303",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My old car ___ constantly ___ down, so in the end I sold it.",
+   "why": "*so in the end I sold it* is the past, so *was* + *constantly* + verb-ing: *was constantly breaking down*.",
+   "why_lv": "*so in the end I sold it* ir pagātne, tāpēc *was + constantly* + darbības vārds ar *-ing*: *was constantly breaking down*.",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "breaking"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "breaking",
+    "is",
+    "breaks"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:12"
+  }
+ },
+ "r11b-003": {
+  "hash": "e1ce19ad5a701e85",
+  "gate_key": "present_continuous | B1.2 | order | Put the words in order. | my neighbour is always playing loud music late at night",
+  "src": "zz-blind-gap-points-b12-1.csv:18",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my neighbour is always playing loud music late at night",
+   "also": [
+    "late at night my neighbour is always playing loud music",
+    "at night my neighbour is always playing loud music late"
+   ]
+  },
+  "item": {
+   "id": "c-3309",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "sentence": "my neighbour is always playing loud music late at night",
+   "answers": [
+    [
+     "my neighbour is always playing loud music late at night",
+     "late at night my neighbour is always playing loud music",
+     "at night my neighbour is always playing loud music late"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:18"
+  }
+ },
+ "r11b-004": {
+  "hash": "a816654f075342ac",
+  "gate_key": "more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said to my boss",
+  "src": "zz-blind-gap-points-b12-1.csv:63",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "what should i have said to my boss",
+   "also": []
+  },
+  "item": {
+   "id": "c-3354",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question: question word + *should* + subject + *have* + 3rd form: *What should I have said?*",
+   "why_lv": "Jautājums: jautājamais vārds + *should* + teik. priekšmets + *have* + 3. forma: *What should I have said?*",
+   "sentence": "what should i have said to my boss",
+   "answers": [
+    [
+     "what should i have said to my boss"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:63"
+  }
+ }
+}

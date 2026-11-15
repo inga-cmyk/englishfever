@@ -51,7 +51,7 @@ tx(T, L, 4, "Say it another way with *what*: The thing I enjoy most about my job
    "What I enjoy most about my job is meeting new people. | Meeting new people is what I enjoy most about my job.", *WHAT_S)
 tx(T, L, 4, "Correct the mistake: Everything what she told me about the course was useful.",
    "Everything that she told me about the course was useful. | Everything she told me about the course was useful. | "
-   "Everything which she told me about the course was useful. | What she told me about the course was useful.", *EVERY)
+   "Everything which she told me about the course was useful. | What she told me about the course was useful. | All that she told me about the course was useful.", *EVERY)
 tx(T, L, 4, "Correct the mistake: I didn't understand that the mechanic said about my car.",
    "I didn't understand what the mechanic said about my car. | I didn't understand everything that the mechanic said about my car. | "
    "I didn't understand everything the mechanic said about my car. | I didn't understand all that the mechanic said about my car. | "

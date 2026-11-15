@@ -15,13 +15,13 @@ VERB = ("*jeans, trousers, glasses, scissors* are always plural (they have two p
 mc(T, L, 2, "Which sentence has a mistake?", "My glasses is in the car.",
    ["These kitchen scissors are very sharp.", "My feet hurt after the long walk.", "People in this town are very friendly."],
    "*glasses* (for your eyes) is always plural: *My glasses are in the car.* *scissors* too: *are*. *feet* and *people* are plural: *hurt*, *are*.",
-   "*glasses* (brilles) vienmēr ir daudzskaitlī: *My glasses are in the car.* Arī *scissors*: *are*. *feet* un *people* ir daudzskaitlī: *hurt*, *are*.")
+   "*glasses* vienmēr ir daudzskaitlī: *My glasses are in the car.* Arī *scissors*: *are*. *feet* un *people* ir daudzskaitlī: *hurt*, *are*.")
 
 # 2 word bank (check), work: to count a two-part noun, a pair of + the plural noun. a scissors / a scissor / a pair of scissor
 # are the learner mistakes; no chip pair other than a pair of + scissors gives a correct phrase.
 gp(T, L, 3, "Can I borrow ___ ___ for a minute?", "a pair of / scissors",
    "*scissors* is always plural: no *a scissors*, no *a scissor*. To say one, use *a pair of scissors*.",
-   "*scissors* vienmēr ir daudzskaitlī: nav *a scissors*, nav *a scissor*. Lai teiktu vienas, lieto *a pair of scissors*. "
+   "*scissors* vienmēr ir daudzskaitlī: nav *a scissors*, nav *a scissor*. Par vienām šķērēm saka *a pair of scissors*. "
    "Tulkojot burtiski, *vienas šķēres* dod *a scissors*.",
    bank=["a pair of", "a", "scissors", "scissor"])
 

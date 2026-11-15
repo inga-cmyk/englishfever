@@ -52,12 +52,12 @@ gp(T, L, 3, "Write *won't* or *wouldn't*: Can you help me with this suitcase? Th
 gp(T, L, 3, "Write *won't* or *wouldn't*: The cash machine ___ give me any money yesterday, so I borrowed some from Ana.", "wouldn't",
    "*yesterday* is past, so *wouldn't*: *The cash machine wouldn't give me any money.*",
    "*yesterday* ir pagātne, tāpēc *wouldn't*: *The cash machine wouldn't give me any money.*")
-gp(T, L, 3, "My sister was upset and wouldn't ___ to anyone at the party. (talk)", "talk",
-   "After *wouldn't* comes the base verb, also in a story about the past: *wouldn't talk*, not *wouldn't talked*.",
-   "Aiz *wouldn't* lieto pamatformu, arī stāstot par pagātni: *wouldn't talk*, nevis *wouldn't talked*.")
-gp(T, L, 3, "My son won't ___ his room, however often I ask him. (tidy)", "tidy",
-   "After *won't* the verb has no *-s*, also after *he*: *He won't tidy his room.*",
-   "Aiz *won't* darbības vārdam nav -s, arī aiz *he*: *He won't tidy his room.*")
+gp(T, L, 3, "My sister was upset and wouldn't ___ to anyone at the party. (speak)", "speak",
+   "After *wouldn't* comes the base verb, also in a story about the past: *wouldn't speak*, not *wouldn't spoke*.",
+   "Aiz *wouldn't* lieto pamatformu, arī stāstot par pagātni: *wouldn't speak*, nevis *wouldn't spoke*.")
+gp(T, L, 3, "My son won't ___ his homework, however often I ask him. (do)", "do",
+   "After *won't* the verb has no *-s*, also after *he*: *He won't do his homework.*",
+   "Aiz *won't* darbības vārdam nav -s, arī aiz *he*: *He won't do his homework.*")
 
 # ---------- whole sentence (3) ----------
 tx(T, L, 4, "Say it another way with *won't*: My computer refuses to open this file.",

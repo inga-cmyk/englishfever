@@ -190,6 +190,9 @@ final class Content
             $p['levels'] = array_keys($pts[$p['id']] ?? []); sort($p['levels']); $p['n'] = array_sum($pts[$p['id']] ?? []);
             return $p;
         }, $m['new_points'] ?? []), fn($p) => $p['n'] > 0 && (time() - strtotime($p['since'])) < $p['days'] * 86400));
+        // only the newest batch: points added later replace the earlier ones in the New group (teacher, 15 November)
+        $latest = $m['new_points'] ? max(array_column($m['new_points'], 'since')) : null;
+        $m['new_points'] = array_values(array_filter($m['new_points'], fn($p) => $p['since'] === $latest));
         return $m;
     }
 

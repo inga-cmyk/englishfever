@@ -3,12 +3,19 @@ their own tiles under "New" (practice picker and Rule cards), each with a short 
 that point only. They replace the topics that were "New" until now. A point stays new for NEW_DAYS days from its date.
 The cards use the v2 layout of cards2.py (table, mistakes, uses, watch; [[ ]] marks the form)."""
 
-NEW_DAYS = 45
+NEW_DAYS = 21   # teacher, 15 November: 21 days, or until newer points are added (the newest date wins: Content::liveMeta)
 F_EN, F_LV = ["Form", "Example"], ["Forma", "Piemērs"]
 
 
 def card(en_rows, lv_rows, mistakes_en, mistakes_lv, use_en, use_lv, watch_en, watch_lv):
-    ch = lambda rows, col: {"cols": [col], "rows": [[a, "|| " + b] for a, b in rows], "stack": "rows"}   # rendered like the choice tables (cellRich)
+    import re
+    def head(a, b):   # the row heading is the form itself, as on the topic cards (teacher, 15 November): the marked words of the example
+        forms = []
+        for f in re.findall(r"\[\[(.+?)\]\]", b):
+            f = f.strip("'")
+            if f.lower() not in [x.lower() for x in forms]: forms.append(f)
+        return " / ".join(forms[:3]) or a
+    ch = lambda rows, col: {"cols": [col], "rows": [[r[2] if len(r) > 2 else head(r[0], r[1]), r[0] + " || " + r[1]] for r in rows], "stack": "rows"}   # rendered like the choice tables (cellRich)
     return {"en": {"choice": ch(en_rows, F_EN[1]), "mistakes": mistakes_en, "uses": use_en, "watch": watch_en},
             "lv": {"choice": ch(lv_rows, F_LV[1]), "mistakes": mistakes_lv, "uses": use_lv, "watch": watch_lv}}
 
@@ -171,3 +178,31 @@ POINTS = [
         ["*The car doesn't start* is correct too: it only says what happens."],
         ["*The car doesn't start* arī ir pareizi: tas tikai saka, kas notiek."])),
 ]
+
+
+# The row headings: the form in focus, as on the topic cards (teacher, 15 November). Same for EN and LV.
+HEADS = {
+    "have_got": ["have got / has got", "haven't got / don't have", "Have you got …? / Do you have …?"],
+    "shall": ["Shall I …?", "Shall we …?", "What / Where shall we …?"],
+    "art_zero": ["— cats, — tea", "— Riga, — Latvia", "— golf, — maths"],
+    "no_longer": ["no longer", "not … any more", "not … any longer"],
+    "requests": ["Can / Could / Would you …?", "Can / Could / May I …?"],
+    "vp_ing_subject": ["Swimming is …", "Learning a language takes …"],
+    "vp_go_ing": ["go + -ing", "go for a …", "go to / go on", "go home"],
+    "if_when": ["If …", "When …"],
+    "vp_both": ["like + -ing / like + to", "love, hate, prefer, start, begin, continue", "would like + to"],
+    "no_none": ["no + noun", "not any + noun", "none / none of"],
+    "must_vs_have_to": ["must / have to", "had to", "will have to / might have to", "Do I have to …?"],
+    "pc_always": ["is always + -ing", "was always + -ing", "constantly / forever + -ing"],
+    "would_habit": ["would + verb", "used to + state"],
+    "should_have": ["should have + 3rd form", "shouldn't have + 3rd form", "could have + 3rd form"],
+    "each_every": ["each / every + singular", "each of the …", "all day / every day"],
+    "rel_what": ["what …", "noun / everything + that"],
+    "wont_refuse": ["won't + verb", "wouldn't + verb"],
+}
+for _pid, _l, _s, _d, _c in POINTS:
+    for _lang in ("en", "lv"):
+        for _row, _h in zip(_c[_lang]["choice"]["rows"], HEADS[_pid]):
+            if _lang == "lv":
+                for _a, _b in (("3rd form", "3. forma"), ("singular", "vienskaitlis"), ("noun", "lietvārds"), ("state", "stāvoklis"), ("verb", "darbības vārds")): _h = _h.replace(_a, _b)
+            _row[0] = _h

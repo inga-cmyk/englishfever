@@ -16,7 +16,7 @@ Db::q("UPDATE custom_items SET status = 'approved'");
 Content::reset();
 
 $pts = Content::liveMeta()['new_points'] ?? [];
-$new = (time() - strtotime('2026-11-15')) < 45 * 86400;
+$new = (time() - strtotime('2026-11-15')) < 21 * 86400;
 check(!$new || count($pts) === 17, 'the 17 new points are sent while they are new (' . count($pts) . ')');
 foreach ($pts as $p) {
     check(!empty($p['rule']['v2']['choice']) && !empty($p['rule_lv']['v2']['choice']) && !empty($p['rule']['v2']['mistakes']), "a card in EN and LV: {$p['id']}");

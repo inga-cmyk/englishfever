@@ -1,0 +1,1212 @@
+[
+{
+"id": "r10-001",
+"answer": "When I arrive",
+"other_correct": "",
+"wrong_options_that_fit": "If I arrive (grammatical, but odd because the train certainly arrives at six)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-002",
+"answer": "if I get it",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-003",
+"answer": "The film ends at nine, so I'll call you when it finishes.",
+"other_correct": "",
+"wrong_options_that_fit": "'if it finishes' is grammatical but odd: the film certainly finishes",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-004",
+"answer": "If he comes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-005",
+"answer": "I'll text you when I will land in Riga.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-006",
+"answer": "When we're",
+"other_correct": "",
+"wrong_options_that_fit": "If we're (grammatical, but odd because the wedding is certain)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-007",
+"answer": "If I get",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-008",
+"answer": [
+"when"
+],
+"other_correct": [
+[
+"if"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' is grammatical but less natural (lunch is planned); a learner may type it",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-009",
+"answer": [
+"finishes"
+],
+"other_correct": [
+[
+"has finished"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-010",
+"answer": [
+"if"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-011",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"has started"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-012",
+"answer": [
+"when"
+],
+"other_correct": [
+[
+"if"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' is grammatical but less natural (the museum certainly opens)",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-013",
+"answer": "When my contract ends in June, I'll take a long holiday.",
+"other_correct": [
+"When my contract ends in June, I will take a long holiday.",
+"I'll take a long holiday when my contract ends in June.",
+"I will take a long holiday when my contract ends in June.",
+"When my contract ends, I'll take a long holiday.",
+"I'll take a long holiday when my contract ends.",
+"When my contract has ended, I'll take a long holiday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-014",
+"answer": "If the hotel is full, we'll stay with friends.",
+"other_correct": [
+"If the hotel is full, we will stay with friends.",
+"We'll stay with friends if the hotel is full.",
+"We will stay with friends if the hotel is full.",
+"If the hotel's full, we'll stay with friends."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-015",
+"answer": "When I finish this email, I'll call you back.",
+"other_correct": [
+"When I finish this email, I will call you back.",
+"I'll call you back when I finish this email.",
+"I will call you back when I finish this email.",
+"When I've finished this email, I'll call you back.",
+"When I have finished this email, I'll call you back.",
+"I'll call you back when I've finished this email.",
+"I'll call you back when I have finished this email."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-016",
+"answer": "what will you do when you finish your degree",
+"other_correct": [
+"when you finish your degree, what will you do"
+],
+"wrong_options_that_fit": "Second order also correct: 'When you finish your degree, what will you do?'",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-017",
+"answer": "will you text me when your plane lands in rome",
+"other_correct": [
+"when your plane lands in rome, will you text me"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-018",
+"answer": "if the meeting finishes early, i'll go to the gym",
+"other_correct": [
+"i'll go to the gym if the meeting finishes early"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-019",
+"answer": "i'll send you the photos of the flat when i get home",
+"other_correct": [
+"when i get home, i'll send you the photos of the flat"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-020",
+"answer": "my parents will move to the coast when they retire",
+"other_correct": [
+"when they retire, my parents will move to the coast",
+"when my parents retire, they will move to the coast",
+"they will move to the coast when my parents retire"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-021",
+"answer": [
+"When",
+"arrives"
+],
+"other_correct": [
+[
+"If",
+"arrives"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'If' is grammatical but less natural (arrival on Friday is certain)",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-022",
+"answer": [
+"If",
+"finish"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-023",
+"answer": [
+"When we're"
+],
+"other_correct": [
+[
+"If we're"
+]
+],
+"wrong_options_that_fit": "'If we're' is grammatical but odd (the move is certain)",
+"instruction_problem": "Task is one gap; 'If we're' is odd rather than wrong",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-024",
+"answer": [
+"If",
+"get"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-025",
+"answer": [
+[
+"My flight lands at six.",
+"When it does, I'll text you."
+],
+[
+"My flight might be late.",
+"If it is, I'll take a taxi."
+],
+[
+"I'm not sure the hotel has parking.",
+"If it doesn't, we'll park at the station."
+],
+[
+"Our room will be ready at two.",
+"When it is, we'll take our bags up."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-026",
+"answer": "to work",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-027",
+"answer": "dancing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-028",
+"answer": "I'd like going to the concert with you on Saturday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-029",
+"answer": "to come",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-030",
+"answer": "She started learn Spanish when she moved to Valencia.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-031",
+"answer": "My husband hates driving at night, so I usually drive us home.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-032",
+"answer": "We like eat out on Friday evenings after a long week.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-033",
+"answer": [
+"to laugh"
+],
+"other_correct": [
+[
+"laughing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-034",
+"answer": [
+"trying"
+],
+"other_correct": [
+[
+"to try"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-035",
+"answer": [
+"going"
+],
+"other_correct": [
+[
+"to go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-036",
+"answer": [
+"working"
+],
+"other_correct": [
+[
+"to work"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-037",
+"answer": [
+"talking"
+],
+"other_correct": [
+[
+"to talk"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-038",
+"answer": "We started to look for a new flat as soon as I got the job.",
+"other_correct": [
+"As soon as I got the job, we started to look for a new flat."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-039",
+"answer": "I love spending time with my cousins because they always make me laugh.",
+"other_correct": [
+"I love to spend time with my cousins because they always make me laugh."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-040",
+"answer": "Would you like to come with us to the team lunch on Friday?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-041",
+"answer": "last year she began to write a blog about her travels",
+"other_correct": [
+"she began to write a blog about her travels last year"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-042",
+"answer": "would you like to have a coffee before the meeting",
+"other_correct": [
+"before the meeting, would you like to have a coffee"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-043",
+"answer": "my father started using a smartphone when he turned seventy",
+"other_correct": [
+"when my father turned seventy, he started using a smartphone",
+"when he turned seventy, my father started using a smartphone"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-044",
+"answer": "she continued working at the hospital after her first child was born",
+"other_correct": [
+"after her first child was born, she continued working at the hospital"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-045",
+"answer": "do you prefer to cook at home or go to restaurants",
+"other_correct": [
+"do you prefer to go to restaurants or cook at home"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-046",
+"answer": [
+"making"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-047",
+"answer": [
+"to book"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-048",
+"answer": [
+"walking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-049",
+"answer": [
+"to rise"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-050",
+"answer": [
+[
+"We left the beach early because it started",
+"raining just after lunch."
+],
+[
+"The baby on the plane woke up and began",
+"to cry loudly."
+],
+[
+"My grandmother is 85, but she still loves",
+"working in her garden every day."
+],
+[
+"When you're back, I'd love",
+"to see the photos from your trip."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-051",
+"answer": "no",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-052",
+"answer": "none",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-053",
+"answer": "There aren't any shops in our village, so we drive to town.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-054",
+"answer": "None of my friends could come to my party, so I cancelled it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-055",
+"answer": "I don't have nothing to wear to my cousin's wedding.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-056",
+"answer": "None",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-057",
+"answer": "none of",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-058",
+"answer": [
+"no"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-059",
+"answer": [
+"any"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-060",
+"answer": [
+"none"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-061",
+"answer": [
+"None"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-062",
+"answer": [
+"weren't"
+],
+"other_correct": [
+[
+"were not"
+],
+[
+"aren't"
+],
+[
+"wasn't"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say the sentence is negative; 'aren't' (present) is also possible, 'were not' is two words, 'wasn't' is non-standard with plural 'flights'",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-063",
+"answer": "There are no vegetarian dishes on the menu.",
+"other_correct": [
+"There's no vegetarian dish on the menu.",
+"The menu has no vegetarian dishes.",
+"No vegetarian dishes are on the menu."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-064",
+"answer": "I haven't got any plans for the weekend.",
+"other_correct": [
+"I don't have any plans for the weekend.",
+"I have not got any plans for the weekend.",
+"I do not have any plans for the weekend.",
+"I haven't any plans for the weekend."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-065",
+"answer": "We didn't get any answer from the bank, so I called them again.",
+"other_correct": [
+"We didn't get an answer from the bank, so I called them again.",
+"We got no answer from the bank, so I called them again.",
+"We did not get any answer from the bank, so I called them again."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-066",
+"answer": "i didn't have any time to revise for the test",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-067",
+"answer": "none of my colleagues knew that the meeting was cancelled",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-068",
+"answer": "why are there no taxis at the station",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-069",
+"answer": "no cars are allowed in the old town at weekends",
+"other_correct": [
+"at weekends, no cars are allowed in the old town"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-070",
+"answer": "we had no idea that they were getting married",
+"other_correct": [
+"they had no idea that we were getting married"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-071",
+"answer": [
+"are",
+"no"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-072",
+"answer": [
+"None",
+"of"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-073",
+"answer": [
+"no"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-074",
+"answer": [
+"any"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-075",
+"answer": [
+[
+"The hotel was full, so there were no",
+"rooms for us."
+],
+[
+"I sent my CV to four companies, but none of",
+"them replied."
+],
+[
+"I can't pay for the taxi. I don't have any",
+"cash on me."
+],
+[
+"I wanted more coffee, but there was",
+"none left in the pot."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-076",
+"answer": "had to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-077",
+"answer": "might have to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-078",
+"answer": "Does your brother have to work late when the restaurant is busy?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-079",
+"answer": "Do I have to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-080",
+"answer": "doesn't have to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-081",
+"answer": "mustn't",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-082",
+"answer": "From May, drivers will must pay to enter the city centre.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-083",
+"answer": "I must drink less coffee in the evenings.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-084",
+"answer": "do we have to print our boarding passes before we get to the airport",
+"other_correct": [
+"before we get to the airport, do we have to print our boarding passes",
+"do we have to get to the airport before we print our boarding passes (all cards, correct grammar but illogical)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "14 cards: long for B1.1 order task",
+"sense_problem": ""
+},
+{
+"id": "r10-085",
+"answer": "does the new manager have to speak english or is latvian enough",
+"other_correct": [
+"is latvian enough or does the new manager have to speak english",
+"does the new manager have to speak latvian or is english enough",
+"is english enough or does the new manager have to speak latvian"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "12 cards, two-clause question; at the upper edge for B1.1",
+"sense_problem": ""
+},
+{
+"id": "r10-086",
+"answer": "i had to cancel my dentist appointment because i was stuck at work",
+"other_correct": [
+"because i was stuck at work, i had to cancel my dentist appointment"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-087",
+"answer": "i'll have to renew my passport before we fly to canada",
+"other_correct": [
+"before we fly to canada, i'll have to renew my passport"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-088",
+"answer": "if sales keep growing, we're going to have to hire more staff",
+"other_correct": [
+"we're going to have to hire more staff if sales keep growing"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'going to have to' with 12 cards is heavy for B1.1",
+"sense_problem": ""
+},
+{
+"id": "r10-089",
+"answer": [
+"had to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'have to' is possible in present-tense narration but clashes with 'had already left'; 'must' less likely",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-090",
+"answer": [
+"will",
+"have to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-091",
+"answer": [
+"Does",
+"have to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-092",
+"answer": [
+"don't have to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-093",
+"answer": [
+[
+"I must book the tickets.",
+"I feel it's necessary."
+],
+[
+"I had to book the tickets.",
+"It was necessary in the past."
+],
+[
+"I don't have to book the tickets.",
+"It isn't necessary."
+],
+[
+"Do I have to book the tickets?",
+"I'm asking if it's necessary."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-094",
+"answer": [
+"had to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-095",
+"answer": [
+"didn't have to"
+],
+"other_correct": [
+[
+"did not have to"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-096",
+"answer": [
+"has to"
+],
+"other_correct": [
+[
+"must"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'must' also gives a correct sentence but ignores the hint (have to)",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-097",
+"answer": [
+"Did",
+"have to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-098",
+"answer": [
+"doesn't have to"
+],
+"other_correct": [
+[
+"does not have to"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-099",
+"answer": "Last month, I had to work every Saturday to cover for a sick colleague.",
+"other_correct": [
+"Last month I had to work every Saturday to cover for a sick colleague."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-100",
+"answer": "Does Anna have to take the medicine twice a day while she is ill?",
+"other_correct": [
+"Does Anna have to take the medicine twice a day while she's ill?",
+"Has Anna got to take the medicine twice a day while she is ill?",
+"Has Anna got to take the medicine twice a day while she's ill?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10-101",
+"answer": "We might have to sleep at the airport if the strike continues.",
+"other_correct": [
+"If the strike continues, we might have to sleep at the airport.",
+"We may have to sleep at the airport if the strike continues."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

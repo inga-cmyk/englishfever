@@ -1,0 +1,1236 @@
+[
+ {
+  "id": "r10-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My train gets in at six. ___, I'll call you from the station.",
+  "options": [
+   "If I arrive",
+   "When I will arrive",
+   "If I will arrive",
+   "When I arrive"
+  ]
+ },
+ {
+  "id": "r10-002",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I may not get the job, but ___, I'll move to Oslo.",
+  "options": [
+   "when I'll get it",
+   "if I get it",
+   "if I'll get it",
+   "when I get it"
+  ]
+ },
+ {
+  "id": "r10-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "The film ends at nine, so I'll call you when it finishes.",
+   "The film ends at nine, so I'll call you if it finishes.",
+   "The film ends at nine, so I'll call you when it will finish.",
+   "The film ends at nine, so I'll call you if it will finish."
+  ]
+ },
+ {
+  "id": "r10-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My brother might visit us next month. ___, we'll take him to the new museum.",
+  "options": [
+   "When he comes",
+   "If he comes",
+   "When he will come",
+   "If he will come"
+  ]
+ },
+ {
+  "id": "r10-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If you need help with the move, just call me.",
+   "If the weather is nice tomorrow, we'll go for a walk.",
+   "I'll text you when I will land in Riga.",
+   "When I'm in London next week, I'll visit the new gallery."
+  ]
+ },
+ {
+  "id": "r10-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We're getting married in June. ___ married, we'll look for a bigger flat.",
+  "options": [
+   "When we'll be",
+   "When we're",
+   "If we'll be",
+   "If we're"
+  ]
+ },
+ {
+  "id": "r10-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ my visa in time, I'll fly to Toronto in May. It's not certain yet.",
+  "options": [
+   "When I'll get",
+   "If I get",
+   "When I get",
+   "If I'll get"
+  ]
+ },
+ {
+  "id": "r10-008",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *if* or *when*: I'm having lunch with Tom today. ___ I see him, I'll give him your book.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-009",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "When the update ___, the app will restart by itself. (finish)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-010",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *if* or *when*: The bank might be closed on Saturday. ___ it is, I'll go on Monday.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-011",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My course starts on Monday. When it ___, I'll have less free time. (start)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-012",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *if* or *when*: The museum opens at ten. ___ it opens, we'll buy tickets for the tower.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-013",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Join with *if* or *when*: My contract ends in June. Then I'll take a long holiday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-014",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Join with *if* or *when*: Perhaps the hotel is full. In that case, we'll stay with friends.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-015",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Join with *when*: I'll finish this email. Then I'll call you back.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-016",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "you",
+   "will",
+   "what",
+   "do",
+   "finish",
+   "you",
+   "when",
+   "degree",
+   "your"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-017",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "lands",
+   "your",
+   "rome",
+   "when",
+   "in",
+   "plane",
+   "will",
+   "me",
+   "you",
+   "text"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-018",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "gym",
+   "finishes",
+   "early",
+   "meeting",
+   "i'll",
+   "go",
+   "the",
+   "to",
+   "if"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-019",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "get",
+   "you",
+   "the",
+   "when",
+   "send",
+   "i",
+   "of",
+   "photos",
+   "flat",
+   "i'll",
+   "home"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-020",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "to",
+   "retire",
+   "will",
+   "when",
+   "they",
+   "coast",
+   "the",
+   "parents",
+   "move",
+   "my"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My new laptop arrives on Friday. ___ it ___, I'll set it up for you.",
+  "word_cards": [
+   "When",
+   "will arrive",
+   "If",
+   "arrives"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-022",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I might not finish the report today. ___ I ___ it, I'll send it to you tonight.",
+  "word_cards": [
+   "will finish",
+   "finish",
+   "When",
+   "If"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-023",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "We're moving to Riga in March. ___ there, we'll see each other more often.",
+  "word_cards": [
+   "When we'll be",
+   "When we're",
+   "If we're"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-024",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I might get tickets for the concert. ___ I ___ them, I'll take you with me.",
+  "word_cards": [
+   "get",
+   "If",
+   "will get",
+   "When"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-025",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with the one that follows it.",
+  "left": [
+   "My flight lands at six.",
+   "My flight might be late.",
+   "I'm not sure the hotel has parking.",
+   "Our room will be ready at two."
+  ],
+  "right": [
+   "When it is, we'll take our bags up.",
+   "If it doesn't, we'll park at the station.",
+   "When it does, I'll text you.",
+   "If it is, I'll take a taxi."
+  ]
+ },
+ {
+  "id": "r10-026",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My laptop is eight years old, but it continues ___ without any problems.",
+  "options": [
+   "to working",
+   "work",
+   "to work"
+  ]
+ },
+ {
+  "id": "r10-027",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: When the band came on stage, the whole crowd started ___.",
+  "options": [
+   "dancing",
+   "to dancing",
+   "danced",
+   "dance"
+  ]
+ },
+ {
+  "id": "r10-028",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He continued to work part-time after he retired.",
+   "My sister hates to fly, so she always takes the train.",
+   "We started building our new website in January.",
+   "I'd like going to the concert with you on Saturday."
+  ]
+ },
+ {
+  "id": "r10-029",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We'd love ___ to your party, but we're away that weekend.",
+  "options": [
+   "to coming",
+   "come",
+   "coming",
+   "to come"
+  ]
+ },
+ {
+  "id": "r10-030",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Would you prefer to sit by the window?",
+   "I love cooking for my friends at the weekend.",
+   "They began to argue as soon as the meeting started.",
+   "She started learn Spanish when she moved to Valencia."
+  ]
+ },
+ {
+  "id": "r10-031",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "My husband hates driving at night, so I usually drive us home.",
+   "My husband hates to driving at night, so I usually drive us home.",
+   "My husband hates drive at night, so I usually drive us home."
+  ]
+ },
+ {
+  "id": "r10-032",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Would you like to join our book club this autumn?",
+   "We like eat out on Friday evenings after a long week.",
+   "Our team began to use the new software last month.",
+   "She prefers to cycle to work when the weather is nice."
+  ]
+ },
+ {
+  "id": "r10-033",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The audience began ___ before the actor finished his joke. (laugh)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-034",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My partner loves ___ new recipes, so we often have friends over at the weekend. (try)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-035",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Do you prefer ___ on holiday alone or with friends? (go)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-036",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Many people continued ___ from home after the offices reopened. (work)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-037",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I hate ___ on the phone, so I usually send a text message instead. (talk)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-038",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *to*: We started looking for a new flat as soon as I got the job.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-039",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I love spend time with my cousins because they always make me laugh.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-040",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Would you like coming with us to the team lunch on Friday?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-041",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "her",
+   "year",
+   "she",
+   "to",
+   "write",
+   "last",
+   "travels",
+   "about",
+   "blog",
+   "began",
+   "a"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-042",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "before",
+   "coffee",
+   "would",
+   "a",
+   "have",
+   "meeting",
+   "like",
+   "you",
+   "the",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-043",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "when",
+   "a",
+   "my",
+   "father",
+   "turned",
+   "seventy",
+   "smartphone",
+   "using",
+   "he",
+   "started"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-044",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "first",
+   "she",
+   "after",
+   "child",
+   "continued",
+   "hospital",
+   "working",
+   "was",
+   "the",
+   "born",
+   "at",
+   "her"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-045",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "to",
+   "home",
+   "go",
+   "to",
+   "cook",
+   "do",
+   "restaurants",
+   "at",
+   "prefer",
+   "or",
+   "you"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-046",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "During the long winter my brother started ___ his own furniture, and now he sells it online.",
+  "word_cards": [
+   "to making",
+   "make",
+   "making"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-047",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I'd like ___ a table for four at eight o'clock, please.",
+  "word_cards": [
+   "booking",
+   "to book",
+   "book"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-048",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My parents love ___ in the mountains, so they go there every summer.",
+  "word_cards": [
+   "walking",
+   "to walking",
+   "walk"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-049",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "House prices will probably continue ___ next year, so this is a good time to buy.",
+  "word_cards": [
+   "to rise",
+   "to rising",
+   "rise"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-050",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each beginning with its ending.",
+  "left": [
+   "We left the beach early because it started",
+   "The baby on the plane woke up and began",
+   "My grandmother is 85, but she still loves",
+   "When you're back, I'd love"
+  ],
+  "right": [
+   "working in her garden every day.",
+   "to see the photos from your trip.",
+   "to cry loudly.",
+   "raining just after lunch."
+  ]
+ },
+ {
+  "id": "r10-051",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The hotel was nice, but there was ___ hot water in our room.",
+  "options": [
+   "no",
+   "none of",
+   "any",
+   "none"
+  ]
+ },
+ {
+  "id": "r10-052",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I needed paper for the printer, but there was ___ left.",
+  "options": [
+   "none",
+   "none of",
+   "any",
+   "no"
+  ]
+ },
+ {
+  "id": "r10-053",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "There aren't no shops in our village, so we drive to town.",
+   "There are none shops in our village, so we drive to town.",
+   "There aren't any shops in our village, so we drive to town.",
+   "There are any shops in our village, so we drive to town."
+  ]
+ },
+ {
+  "id": "r10-054",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "No of my friends could come to my party, so I cancelled it.",
+   "None of my friends could come to my party, so I cancelled it.",
+   "None my friends could come to my party, so I cancelled it.",
+   "None of my friends couldn't come to my party, so I cancelled it."
+  ]
+ },
+ {
+  "id": "r10-055",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I don't have nothing to wear to my cousin's wedding.",
+   "There's no time to cook tonight, so let's order a pizza.",
+   "I haven't got any cash, so can I pay by card?",
+   "None of the shops opened before ten on Sunday."
+  ]
+ },
+ {
+  "id": "r10-056",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: 'How many tickets are left for tonight's concert?' '___. They're all sold out.'",
+  "options": [
+   "None",
+   "No one",
+   "Any",
+   "No"
+  ]
+ },
+ {
+  "id": "r10-057",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We asked five language schools about evening courses, but ___ them had a free place.",
+  "options": [
+   "none",
+   "any of",
+   "none of",
+   "no"
+  ]
+ },
+ {
+  "id": "r10-058",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *no* or *any*: My new phone has ___ headphone jack, so I use wireless earbuds.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-059",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *no* or *any*: Our teacher didn't give us ___ homework over the holidays.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-060",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *no* or *none*: I wanted to buy fresh bread after work, but there was ___ left.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-061",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *no* or *none*: ___ of the photos I took at the concert came out well. It was too dark.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-062",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: There ___ any direct flights, so we had to change planes in Frankfurt.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-063",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *no*: There aren't any vegetarian dishes on the menu.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-064",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *any*: I've got no plans for the weekend.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-065",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: We didn't get no answer from the bank, so I called them again.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-066",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "to",
+   "have",
+   "for",
+   "time",
+   "test",
+   "revise",
+   "any",
+   "didn't",
+   "the",
+   "i"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-067",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "my",
+   "that",
+   "was",
+   "meeting",
+   "colleagues",
+   "knew",
+   "cancelled",
+   "the",
+   "none",
+   "of"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-068",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "no",
+   "are",
+   "at",
+   "the",
+   "why",
+   "taxis",
+   "station",
+   "there"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-069",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "weekends",
+   "cars",
+   "at",
+   "old",
+   "town",
+   "allowed",
+   "in",
+   "the",
+   "no",
+   "are"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-070",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "were",
+   "married",
+   "idea",
+   "that",
+   "had",
+   "no",
+   "getting",
+   "we",
+   "they"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-071",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Sorry, there ___ ___ seats left on the morning train.",
+  "word_cards": [
+   "none",
+   "no",
+   "are",
+   "aren't"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-072",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "___ ___ the students passed the first test, so the teacher explained it again.",
+  "word_cards": [
+   "No",
+   "Any",
+   "of",
+   "None"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-073",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Our phones had ___ signal in the mountains, so we used a paper map.",
+  "word_cards": [
+   "no",
+   "none",
+   "any"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-074",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "We haven't got ___ coffee left, so I'll buy some on the way home.",
+  "word_cards": [
+   "any",
+   "no",
+   "none"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-075",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each beginning with its ending.",
+  "left": [
+   "The hotel was full, so there were no",
+   "I sent my CV to four companies, but none of",
+   "I can't pay for the taxi. I don't have any",
+   "I wanted more coffee, but there was"
+  ],
+  "right": [
+   "rooms for us.",
+   "them replied.",
+   "none left in the pot.",
+   "cash on me."
+  ]
+ },
+ {
+  "id": "r10-076",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My knee hurt so much last winter that I ___ stop running for two months.",
+  "options": [
+   "musted",
+   "must",
+   "have to",
+   "had to"
+  ]
+ },
+ {
+  "id": "r10-077",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The hotel is almost full, so we ___ find somewhere else to stay tonight.",
+  "options": [
+   "might have to",
+   "might must",
+   "might to",
+   "must have to"
+  ]
+ },
+ {
+  "id": "r10-078",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "Do your brother have to work late when the restaurant is busy?",
+   "Has your brother to work late when the restaurant is busy?",
+   "Does your brother have to work late when the restaurant is busy?",
+   "Does your brother has to work late when the restaurant is busy?"
+  ]
+ },
+ {
+  "id": "r10-079",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ show my student card every time I use the library?",
+  "options": [
+   "Do I must",
+   "Do I have to",
+   "Have I to",
+   "Must I to"
+  ]
+ },
+ {
+  "id": "r10-080",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My manager ___ come to the office on Fridays, so she usually works from home.",
+  "options": [
+   "don't have to",
+   "doesn't have to",
+   "hasn't to",
+   "doesn't must"
+  ]
+ },
+ {
+  "id": "r10-081",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: These tablets can make you sleepy, so you ___ drive after taking them.",
+  "options": [
+   "don't must",
+   "mustn't to",
+   "don't have to",
+   "mustn't"
+  ]
+ },
+ {
+  "id": "r10-082",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "From May, drivers will must pay to enter the city centre.",
+   "Do you have to pay for parking at your new office?",
+   "You might have to show your ID when you buy the tickets.",
+   "We had to wait an hour for a doctor at the clinic yesterday."
+  ]
+ },
+ {
+  "id": "r10-083",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is the speaker's own idea, not a rule?",
+  "options": [
+   "Students have to hand in the essay by Friday.",
+   "I must drink less coffee in the evenings.",
+   "Staff have to wear a badge in the building.",
+   "Passengers have to show their tickets on the train."
+  ]
+ },
+ {
+  "id": "r10-084",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "do",
+   "we",
+   "boarding",
+   "to",
+   "passes",
+   "have",
+   "airport",
+   "before",
+   "our",
+   "get",
+   "to",
+   "we",
+   "print",
+   "the"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-085",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "latvian",
+   "the",
+   "speak",
+   "new",
+   "english",
+   "to",
+   "manager",
+   "is",
+   "enough",
+   "does",
+   "or",
+   "have"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-086",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "work",
+   "cancel",
+   "i",
+   "i",
+   "was",
+   "because",
+   "stuck",
+   "my",
+   "appointment",
+   "dentist",
+   "at",
+   "to",
+   "had"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-087",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "we",
+   "have",
+   "passport",
+   "to",
+   "canada",
+   "to",
+   "i'll",
+   "my",
+   "renew",
+   "fly",
+   "before"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-088",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "hire",
+   "staff",
+   "to",
+   "keep",
+   "to",
+   "we're",
+   "if",
+   "more",
+   "going",
+   "have",
+   "sales",
+   "growing"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10-089",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "We ___ find a hotel near the station because the last train had already left.",
+  "word_cards": [
+   "have to",
+   "must",
+   "had to"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-090",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "If nobody can fix the printer today, we ___ ___ buy a new one.",
+  "word_cards": [
+   "will",
+   "must",
+   "have to"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-091",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "___ she ___ take the whole exam again if she fails one part?",
+  "word_cards": [
+   "must",
+   "Does",
+   "have to",
+   "Has"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-092",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The gym membership includes all the classes, so you ___ pay extra for yoga.",
+  "word_cards": [
+   "don't must",
+   "don't have to",
+   "mustn't"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r10-093",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "I must book the tickets.",
+   "I had to book the tickets.",
+   "I don't have to book the tickets.",
+   "Do I have to book the tickets?"
+  ],
+  "right": [
+   "It was necessary in the past.",
+   "I'm asking if it's necessary.",
+   "It isn't necessary.",
+   "I feel it's necessary."
+  ]
+ },
+ {
+  "id": "r10-094",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I couldn't park near the office, so I ___ leave the car three streets away. (have to)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-095",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "We ___ queue for long at the concert because we had bought our tickets online. (have to / not)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-096",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My sister works as a pilot, so she ___ have a medical check every year. (have to)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-097",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "___ you ___ show your passport when you crossed the border last weekend? (have to)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-098",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My flatmate ___ get up early on Mondays because her first class starts at eleven. (have to / not)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r10-099",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Last month*: I have to work every Saturday to cover for a sick colleague.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-100",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make a yes/no question: Anna has to take the medicine twice a day while she is ill.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r10-101",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *might*: Perhaps we will have to sleep at the airport if the strike continues.",
+  "note": "the learner types a whole sentence"
+ }
+]

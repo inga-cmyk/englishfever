@@ -21,7 +21,7 @@ for p in POINTS:
 _AUXQ = re.compile(r"^(is|are|am|was|were|do|does|did|can|could|will|would|shall|should|may|might|must|have|has|had|what|where|when|why|who|whom|how|which|whose)\b")
 for r in lib.rows:
     if r[2] == "order" and r[3].strip() == "Put the words in order to make a question." and r[5].startswith("also accepted: "):
-        keep = [a for a in r[5][len("also accepted: "):].split(" | ") if _AUXQ.match(a)]
+        keep = [a for a in r[5][len("also accepted: "):].split(" | ") if _AUXQ.match(a) and not (re.search(r"\b(i|you|we|they|he|she|it) (will|would|can|could|should|must|shall|is|are|am|was|were|have|has)\b", a) and not re.search(r"\b(will|would|can|could|should|must|shall|is|are|am|was|were|have|has|do|does|did) (i|you|we|they|he|she|it)\b", a))]
         r[5] = ("also accepted: " + " | ".join(keep)) if keep else ""
 
 if __name__ == "__main__":

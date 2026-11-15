@@ -1,0 +1,1639 @@
+[
+{
+"id": "r13-001",
+"answer": "getting up",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-002",
+"answer": [
+"watching"
+],
+"other_correct": [
+[
+"to watch"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-003",
+"answer": "do you want to come with us",
+"other_correct": [
+[
+"do you want us to come with you"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards allow a second question with a different meaning (us to come with you).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-004",
+"answer": [
+"to open"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-005",
+"answer": [
+"to",
+"get"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-006",
+"answer": "Ben likes play tennis on Sundays.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-007",
+"answer": [
+"playing"
+],
+"other_correct": [
+[
+"to play"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-008",
+"answer": "Maria wants to take a taxi to the airport.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-009",
+"answer": "I love cooking.",
+"other_correct": [
+"I love to cook."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open: subject not given (I / my brother...), so many sentences are right.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-010",
+"answer": "countries",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-011",
+"answer": "days",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-012",
+"answer": "We bought two watches and three bags.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-013",
+"answer": "Our town has two new librarys.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-014",
+"answer": [
+"boxes"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-015",
+"answer": [
+"parties"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-016",
+"answer": [
+"keys"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-017",
+"answer": [
+"classes"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-018",
+"answer": "Two buses are late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Starting word nearly gives the plural.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-019",
+"answer": "are very expensive",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-020",
+"answer": "she has a very good job",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-021",
+"answer": [
+"big bags"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "One gap needs two words; say so.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-022",
+"answer": [
+"big",
+"trees"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-023",
+"answer": "We rented a car small for the week.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-024",
+"answer": [
+"are very comfortable"
+],
+"other_correct": [
+[
+"were very comfortable"
+],
+[
+"are really comfortable"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not given: 'were' also correct; one gap needs three words.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-025",
+"answer": "my grandmother is very active for her age",
+"other_correct": [
+"for her age my grandmother is very active"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'very active for her age' is a B1 idiom.",
+"sense_problem": ""
+},
+{
+"id": "r13-026",
+"answer": [
+"are",
+"clean"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-027",
+"answer": "Our neighbours are very nice.",
+"other_correct": [
+"Our neighbours are nice.",
+"Our neighbours are really nice."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-028",
+"answer": "do",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option '—' cannot fit; not a believable mistake."
+},
+{
+"id": "r13-029",
+"answer": "Look! Our bus comes round the corner.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-030",
+"answer": "she usually swims but today she is running",
+"other_correct": [
+"today she is running but she usually swims",
+"she is running today but she usually swims",
+"she usually swims but she is running today"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint of word order or meaning; several equally good sentences.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-031",
+"answer": [
+"am having"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-032",
+"answer": [
+"is washing",
+"does"
+],
+"other_correct": [
+[
+"'s washing",
+"does"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-033",
+"answer": "Right now my sister is reading the news on her phone.",
+"other_correct": [
+"Right now, my sister is reading the news on her phone.",
+"Right now my sister's reading the news on her phone."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-034",
+"answer": "The concert tickets was expensive.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-035",
+"answer": [
+"Were"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-036",
+"answer": [
+"weren't"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-037",
+"answer": "where were you at lunchtime",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-038",
+"answer": "why was your phone off",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-039",
+"answer": "Was the exam difficult?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-040",
+"answer": "I put a few salt in the soup.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-041",
+"answer": [
+"a few"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-042",
+"answer": [
+"a few"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-043",
+"answer": [
+"a little"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-044",
+"answer": "I speak a little Spanish.",
+"other_correct": [
+"I only speak a little Spanish.",
+"I speak a little bit of Spanish."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-045",
+"answer": "There are a few cafés near my office.",
+"other_correct": [
+"A few cafés are near my office."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-046",
+"answer": "I ordered a pizza. A pizza was cold.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-047",
+"answer": [
+"a",
+"The"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-048",
+"answer": [
+"a",
+"The"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-049",
+"answer": [
+"a",
+"The"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-050",
+"answer": "I bought a new laptop. The laptop is very fast.",
+"other_correct": [
+"I bought a new laptop. It is very fast.",
+"I bought a new laptop. It's very fast."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-051",
+"answer": "I started a new job on last Monday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-052",
+"answer": "—",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'—' as an option is unnatural for a learner; 'on this weekend' is heard in American English only."
+},
+{
+"id": "r13-053",
+"answer": [
+"—"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "A dash card for 'nothing' may confuse."
+},
+{
+"id": "r13-054",
+"answer": [
+"—"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "A dash card for 'nothing' may confuse."
+},
+{
+"id": "r13-055",
+"answer": "We arrived in Rome yesterday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-056",
+"answer": [
+"an",
+"some"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-057",
+"answer": "I don't have some free time this week.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-058",
+"answer": "has gone",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-059",
+"answer": "been",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-060",
+"answer": "My parents have gone to Italy twice.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-061",
+"answer": [
+"been"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-062",
+"answer": [
+"gone"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-063",
+"answer": [
+"has",
+"gone"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-064",
+"answer": [
+"been"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-065",
+"answer": [
+"gone"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-066",
+"answer": [
+"have",
+"been"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-067",
+"answer": "Rita has gone to Tokyo.",
+"other_correct": [
+"Rita has gone to Tokyo and is still there."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'use go' plus 'Rita has' gives the answer away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-068",
+"answer": "some good news",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-069",
+"answer": [
+"some",
+"information"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-070",
+"answer": "My boss gave me a useful advice.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-071",
+"answer": "can i give you a piece of advice",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-072",
+"answer": [
+"luggage",
+"is"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-073",
+"answer": "some furniture",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-074",
+"answer": [
+"was"
+],
+"other_correct": [
+[
+"is"
+],
+[
+"has been"
+],
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not given: present and past both fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-075",
+"answer": "how many pieces of luggage do you have",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-076",
+"answer": "The furniture in this café is new.",
+"other_correct": [
+"This café has new furniture.",
+"This café's furniture is new."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-077",
+"answer": "at",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-078",
+"answer": "get to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-079",
+"answer": "We arrived to Oslo late on Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-080",
+"answer": "past",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-081",
+"answer": "let's walk along the beach after lunch",
+"other_correct": [
+"after lunch let's walk along the beach"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-082",
+"answer": [
+"across"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-083",
+"answer": [
+"through"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-084",
+"answer": [
+"out",
+"of"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-085",
+"answer": "What time did you get home last night?",
+"other_correct": [
+"What time did you arrive home last night?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-086",
+"answer": "very much",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-087",
+"answer": "We very enjoyed the concert.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-088",
+"answer": "i like my new flat very much",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-089",
+"answer": [
+"too"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-090",
+"answer": [
+"much"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-091",
+"answer": "we had a very nice holiday",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-092",
+"answer": [
+"really"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-093",
+"answer": "We really liked the new restaurant.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-094",
+"answer": "more slowly",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-095",
+"answer": "Tom drives more fast than his father.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-096",
+"answer": "my sister speaks english more fluently than me",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-097",
+"answer": [
+"better"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-098",
+"answer": [
+"more carefully"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-099",
+"answer": [
+"earlier"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-100",
+"answer": [
+"the furthest"
+],
+"other_correct": [
+[
+"the farthest"
+],
+[
+"furthest"
+],
+[
+"farthest"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-101",
+"answer": "My brother cooks better than me.",
+"other_correct": [
+"My brother cooks better than I do.",
+"My brother cooks better than I.",
+"My brother is a better cook than me."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-102",
+"answer": "couldn't",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-103",
+"answer": "When I was ten, I can speak French.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-104",
+"answer": "we couldn't see the stage from our seats",
+"other_correct": [
+"from our seats we couldn't see the stage"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-105",
+"answer": "i could run much faster when i was younger",
+"other_correct": [
+"when i was younger i could run much faster"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-106",
+"answer": [
+"Could",
+"drive"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-107",
+"answer": [
+"could",
+"play"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-108",
+"answer": "Could Tom speak German when he lived in Berlin?",
+"other_correct": [
+"Was Tom able to speak German when he lived in Berlin?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-109",
+"answer": "Everybody",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-110",
+"answer": "I heard anybody in the garden last night.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-111",
+"answer": [
+"somewhere"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-112",
+"answer": [
+"nothing"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-113",
+"answer": [
+"Nobody"
+],
+"other_correct": [
+[
+"No one"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-114",
+"answer": [
+"everywhere"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-115",
+"answer": "I didn't buy anything for Anna.",
+"other_correct": [
+"I bought nothing for Anna."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-116",
+"answer": "cycling",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'to cycle' is awkward after 'swimming and', not correct."
+},
+{
+"id": "r13-117",
+"answer": "I usually have breakfast and reading the news.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-118",
+"answer": [
+"go"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-119",
+"answer": [
+"worked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-120",
+"answer": [
+"helping"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-121",
+"answer": [
+"travelling"
+],
+"other_correct": [
+[
+"traveling"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-122",
+"answer": "She closed her laptop and went home.",
+"other_correct": [
+"She closes her laptop and goes home."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Correction could be past or present; tense not fixed.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-123",
+"answer": "by",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-124",
+"answer": "My daughter goes to school by foot.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-125",
+"answer": [
+"in"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-126",
+"answer": [
+"on"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'in' is possible for some speakers (in the tram) but 'on' is standard.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-127",
+"answer": [
+"on"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-128",
+"answer": [
+"in"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-129",
+"answer": "I go to work by car.",
+"other_correct": [
+"I go to work in my car."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-130",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-131",
+"answer": "I'm learning English for get a better job.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-132",
+"answer": "he uses his phone to pay for everything",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-133",
+"answer": [
+"to",
+"stay"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-134",
+"answer": [
+"to book"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-135",
+"answer": "I went to the post office to send a parcel.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-136",
+"answer": "Our kitchen chairs were made from my uncle.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Passive is B1 rather than A2.2.",
+"sense_problem": ""
+},
+{
+"id": "r13-137",
+"answer": [
+"by"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Passive is B1 rather than A2.2.",
+"sense_problem": ""
+},
+{
+"id": "r13-138",
+"answer": [
+"by"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Passive is B1 rather than A2.2.",
+"sense_problem": ""
+},
+{
+"id": "r13-139",
+"answer": [
+"are cleaned",
+"by"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Two gaps but three words needed (are cleaned by); 'are'+'cleaned' leaves 'by' missing. Split of gaps unclear.",
+"level_problem": "Passive is B1 rather than A2.2.",
+"sense_problem": ""
+},
+{
+"id": "r13-140",
+"answer": "This bridge was designed by a Latvian engineer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Passive is B1 rather than A2.2.",
+"sense_problem": ""
+},
+{
+"id": "r13-141",
+"answer": "My glasses is in the car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-142",
+"answer": [
+"a pair of",
+"scissors"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-143",
+"answer": [
+"are"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-144",
+"answer": "These trousers are too expensive.",
+"other_correct": [
+"These trousers are too expensive for me."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Shirt becomes trousers: not a real rewrite, meaning changes.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-145",
+"answer": [
+"After"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-146",
+"answer": [
+"before"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-147",
+"answer": "Before go to work, I walk the dog.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-148",
+"answer": [
+"will write"
+],
+"other_correct": [
+[
+"'ll write"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-149",
+"answer": [
+"am going to buy"
+],
+"other_correct": [
+[
+"'m going to buy"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'will buy' is wrong here (plan); 'I'm buying' also right but excluded.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-150",
+"answer": [
+"the"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-151",
+"answer": "Maria is the best driver in our family.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r13-152",
+"answer": "We discussed the new timetable at the meeting.",
+"other_correct": [
+"We discussed the new timetable in the meeting."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'discuss' is slightly above A2.",
+"sense_problem": ""
+}
+]

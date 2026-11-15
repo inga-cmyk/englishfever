@@ -33,7 +33,7 @@ CARDS = {
                      {"t": "Timetables", "s": ["at 7.15", "on Friday"], "ex": ["The train [[leaves]] at 7.15.", "The film [[starts]] at eight."]}],
             "watch": ["Spelling with *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
                       "State verbs (*[[know]], [[like]], [[want]], [[need]], [[believe]]*) stay simple: *I [[know]] the answer.*",
-                      "*Who* or *What* as the subject, no *do*: *Who [[lives]] here? What [[makes]] you think so?*"],
+                      "*Who* or *What* as the subject, no *do*: *Who [[lives]] here? What [[makes]] you think so?*", "A habit: present simple; happening now: present continuous: *I usually [[finish]] at five. Look! I'm [[finishing]] now.*"],
         },
         "lv": {
             "table": {"cols": LV_COLS, "rows": PS_TABLE["rows"], "short": "Īsās atbildes: *Yes, I [[do]]. / No, she [[doesn't]].*"},
@@ -46,7 +46,7 @@ CARDS = {
                      {"t": "Saraksti", "s": ["at 7.15", "on Friday"], "ex": ["The train [[leaves]] at 7.15.", "The film [[starts]] at eight."]}],
             "watch": ["Rakstība ar *he / she / it*: *He [[watches]] TV. She [[goes]] home. He [[studies]] law. She [[plays]] tennis. He [[has]] a car.*",
                       "Stāvokļa darbības vārdi (*[[know]], [[like]], [[want]], [[need]], [[believe]]*) paliek Present Simple: *I [[know]] the answer.*",
-                      "Ja *Who* vai *What* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here? What [[makes]] you think so?*"],
+                      "Ja *Who* vai *What* ir teikuma priekšmets, *do* nevajag: *Who [[lives]] here? What [[makes]] you think so?*", "Ieradums: Present Simple; notiek tagad: Present Continuous: *I usually [[finish]] at five. Look! I'm [[finishing]] now.*"],
         },
     },
     "present_perfect": {
@@ -111,7 +111,7 @@ CARDS = {
                       "*at the weekend* (British), *on the weekend* (American): *What are you doing [[at]] the weekend?*",
                       "*at home* (where you live), *in the house* (inside the building): *She's [[at]] home. The cat is [[in]] the house.*",
                       "*in* a car or taxi, but *on* public transport: *I came [[in]] a taxi. I read [[on]] the train.*",
-                      "*arrive in* a city or country, *arrive at* a place: *We arrived [[at]] the station.*"],
+                      "*arrive in* a city or country, *arrive at* a place: *We arrived [[at]] the station.*", "*by* + transport with no *a / the / my*: *[[by]] car, [[by]] bus*, but *[[in]] my car, [[on]] the bus*. Walking: *[[on]] foot*, not *by foot*.", "Movement: *to, into, out of, across, through, along, past*: *We walked [[along]] the river. Go [[past]] the bank.* *get to* a place, but *go [[home]], get [[home]]* (no *to*)."],
         },
         "lv": {
             "choice": {"cols": ["at", "on", "in"],
@@ -132,7 +132,7 @@ CARDS = {
                       "*at the weekend* (britu), *on the weekend* (amerikāņu): *What are you doing [[at]] the weekend?*",
                       "*at home* (kur dzīvo), *in the house* (ēkas iekšā): *She's [[at]] home. The cat is [[in]] the house.*",
                       "*in* auto vai taksī, bet *on* sabiedriskajā transportā: *I came [[in]] a taxi. I read [[on]] the train.* Latviski \"vilcienā\", tāpēc gribas *in*.",
-                      "*arrive in* pilsētā vai valstī, *arrive at* vietā: *We arrived [[at]] the station.*"],
+                      "*arrive in* pilsētā vai valstī, *arrive at* vietā: *We arrived [[at]] the station.*", "*by* + transportlīdzeklis bez *a / the / my*: *[[by]] car, [[by]] bus*, bet *[[in]] my car, [[on]] the bus*. Kājām: *[[on]] foot*, nevis *by foot*.", "Kustība: *to, into, out of, across* (pāri), *through* (cauri), *along* (gar), *past* (garām): *We walked [[along]] the river. Go [[past]] the bank.* *get to* + vieta, bet *go [[home]], get [[home]]* (bez *to*)."],
         },
     },
     "agreement": {
@@ -193,7 +193,7 @@ CARDS = {
                      {"t": "Always plural: things with two parts", "s": ["jeans", "trousers", "glasses", "scissors"],
                       "ex": ["My jeans [[are]] new.", "Where [[are]] my glasses?"]}],
             "watch": ["Vowel + *-y* just adds *-s*: *We stayed three [[days]]. Two [[boys]] came.*",
-                      "*information, furniture, news* have no plural: *We need new [[furniture]]. The news [[is]] good.*"],
+                      "*information, furniture, news* have no plural: *We need new [[furniture]]. The news [[is]] good.*", "*jeans, trousers, glasses, scissors* are plural: *My jeans [[are]] new.* To count them: *[[a pair of]] jeans, two pairs of scissors* (not *a jeans*)."],
         },
         "lv": {
             "table": {"plain": True, "cols": ["viens", "vairāki"],
@@ -212,7 +212,7 @@ CARDS = {
                      {"t": "Vienmēr daudzskaitlī: lietas no divām daļām", "s": ["jeans", "trousers", "glasses", "scissors"],
                       "ex": ["My jeans [[are]] new.", "Where [[are]] my glasses?"]}],
             "watch": ["Patskanis + *-y*: tikai *-s*: *We stayed three [[days]]. Two [[boys]] came.*",
-                      "*information, furniture, news* nav daudzskaitļa: *We need new [[furniture]]. The news [[is]] good.* Latviski \"mēbeles, ziņas\" ir daudzskaitlī."],
+                      "*information, furniture, news* nav daudzskaitļa: *We need new [[furniture]]. The news [[is]] good.* Latviski \"mēbeles, ziņas\" ir daudzskaitlī.", "*jeans, trousers, glasses, scissors* ir daudzskaitlī: *My jeans [[are]] new.* Lai saskaitītu: *[[a pair of]] jeans, two pairs of scissors* (nevis *a jeans*)."],
         },
     },
     "articles": {
@@ -226,7 +226,7 @@ CARDS = {
             "uses": [{"t": "First time *a*, second time *the*", "ex": ["I saw [[a]] dog. [[The]] dog was huge."]},
                      {"t": "*the* with superlatives", "s": ["the best", "the biggest", "the most expensive"],
                       "ex": ["It's [[the]] best café in town."]}],
-            "watch": ["*What [[a]] lovely day!*"],
+            "watch": ["*What [[a]] lovely day!*", "*the* with superlatives, *same* and *first*: *[[the]] best film, [[the]] same table, [[the]] first time*."],
         },
         "lv": {
             "choice": {"cols": ["a / an", "the"],
@@ -238,7 +238,7 @@ CARDS = {
             "uses": [{"t": "Pirmo reizi *a*, otro reizi *the*", "ex": ["I saw [[a]] dog. [[The]] dog was huge."]},
                      {"t": "*the* ar \"vis-\" (superlatīvu)", "s": ["the best", "the biggest", "the most expensive"],
                       "ex": ["It's [[the]] best café in town."]}],
-            "watch": ["*What [[a]] lovely day!*"],
+            "watch": ["*What [[a]] lovely day!*", "*the* ar vispārāko pakāpi, *same* un *first*: *[[the]] best film, [[the]] same table, [[the]] first time*."],
         },
     },
     "articles_b1": {
@@ -286,7 +286,7 @@ CARDS = {
             "watch": ["Uncountable + singular verb: *The money [[is]] on the table. Your hair [[looks]] nice.*",
                       "*any* = it doesn't matter which: *Take [[any]] seat.*",
                       "Only one negative: *There isn't [[any]] milk* or *There's [[no]] milk*, not *There isn't no milk*.",
-                      "*much* in positive sentences sounds formal: *We have [[a lot of]] time.*"],
+                      "*much* in positive sentences sounds formal: *We have [[a lot of]] time.*", "*a / an* + one thing we can count: *[[an]] egg, [[a]] chair*. Not with uncountable nouns: *[[some]] bread*, not *a bread*.", "*advice, information, furniture, news, luggage*: no plural, no *a / an*, singular verb: *some advice, [[a piece of]] advice. The news [[is]] good.*"],
         },
         "lv": {
             "choice": {"cols": ["daudzskaitlis (books)", "nesaskaitāms (milk)"],
@@ -306,7 +306,7 @@ CARDS = {
             "watch": ["Nesaskaitāms + vienskaitlis: *The money [[is]] on the table. Your hair [[looks]] nice.* Latviski \"mati\" ir daudzskaitlī, angliski *hair* ir nesaskaitāms.",
                       "*any* = vienalga kurš: *Take [[any]] seat.*",
                       "Tikai viens noliegums: *There isn't [[any]] milk* vai *There's [[no]] milk*, nevis *There isn't no milk*. Latviski saka \"nav nekāda piena\", tāpēc gribas divus noliegumus.",
-                      "*much* apstiprinājumā izklausās oficiāli: *We have [[a lot of]] time.*"],
+                      "*much* apstiprinājumā izklausās oficiāli: *We have [[a lot of]] time.*", "*a / an* + viena lieta, ko var saskaitīt: *[[an]] egg, [[a]] chair*. Ar nesaskaitāmiem lietvārdiem nelieto: *[[some]] bread*, nevis *a bread*.", "*advice, information, furniture, news, luggage*: nav daudzskaitļa, nelieto *a / an*, darbības vārds vienskaitlī: *some advice, [[a piece of]] advice. The news [[is]] good.* Latviski \"padomi, mēbeles, ziņas\" ir daudzskaitlī."],
         },
     },
     "verb_patterns": {

@@ -109,7 +109,7 @@ CARDS = {
             "watch": ["*than me* in everyday English: *She's taller [[than me]].*",
                       "*the* + comparative, *the* + comparative: *[[The sooner]], [[the better]].*",
                       "*fun* → *more fun*; *clever, quiet* take *-er* or *more*: *It was [[more fun]] than I thought.*",
-                      "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*"],
+                      "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*", "Adverbs: *-ly* words take *more / the most*: *[[more slowly]], [[the most carefully]]*; *fast, hard, early* take *-er*: *[[faster]]*; *well → [[better]]*, *badly → [[worse]]*."],
         },
         "lv": {
             "choice": {"cols": ["pārākā pakāpe", "vispārākā pakāpe"],
@@ -132,7 +132,7 @@ CARDS = {
             "watch": ["*than me* sarunvalodā: *She's taller [[than me]].*",
                       "*the* + pārākā pakāpe, *the* + pārākā pakāpe: *[[The sooner]], [[the better]].* (Jo ātrāk, jo labāk.)",
                       "*fun* → *more fun*; *clever, quiet* var ar *-er* vai *more*: *It was [[more fun]] than I thought.*",
-                      "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*"],
+                      "*the same as, different from*: *Your bag is [[the same as]] mine. My plan is [[different from]] yours.*", "Apstākļa vārdi: ar *-ly* lieto *more / the most*: *[[more slowly]], [[the most carefully]]*; *fast, hard, early* ar *-er*: *[[faster]]*; *well → [[better]]*, *badly → [[worse]]*."],
         },
     },
     "modal_verbs": {

@@ -56,7 +56,7 @@ try {
         case 'meta':
             $m = Content::liveMeta();
             $lc = Content::levelCounts();
-            out(['levels' => $m['levels'], 'full_levels' => Content::FULL_LEVELS, 'level_counts' => $lc['all'], 'skill_counts' => $lc['by_skill'], 'areas' => $m['areas'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN, 'placement_sizes' => Engine::PLACEMENT_SIZES]);
+            out(['levels' => $m['levels'], 'full_levels' => Content::FULL_LEVELS, 'level_counts' => $lc['all'], 'skill_counts' => $lc['by_skill'], 'areas' => $m['areas'], 'skills' => $m['skills'], 'bloom' => $m['bloom'], 'placement_length' => Engine::PLACEMENT_LEN, 'placement_sizes' => Engine::PLACEMENT_SIZES, 'new_points' => $m['new_points'] ?? []]);
 
         case 'me':
             $u = Auth::user();

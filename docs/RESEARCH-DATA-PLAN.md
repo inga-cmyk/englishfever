@@ -63,6 +63,7 @@ so results before and after it are not mixed.
 - **Hypotheses written down before looking**: 2-3 main questions, the rest is exploration.
 
 ## Changes
+- From the zip after 15 Nov 2026 (date of upload): 150 new prepared B1.2 tasks (`gap-points-b12-1.csv`); Present continuous and Subject and verb get the level B1.2. A session started from a new point's card has `source = new_point` and serves only that point (plus, after two wrong answers, one task of a point it stands on, as in C2); its answers count like any practice.
 - From the zip after 15 Nov 2026 (date of upload): 101 new prepared B1.1 tasks for four grammar points that had none (`gap-points-b11-1.csv`; 2 of them learning tasks). Learned counts in First conditional, Verb patterns, Quantity and Modal verbs at B1.1 then include these points.
 - From the zip after 14 Nov 2026 (date of upload): 175 new prepared tasks for seven A2 grammar points that had none (`gap-points-a2-1.csv`); the topic Articles gets the level A2.1 (25 tasks, so the A2.1 path step *A / an, the, plurals* has Articles tasks from that date). Evidence for these topics at A2.1 / A2.2 then includes the new points; earlier Learned counts in these topics were reached without them.
 - From the zip after 14 Nov 2026 (date of upload): 29 reported / indirect question tasks where only one verb was put in (the word order given) are learning tasks (task_role learn, no longer evidence); 48 new tasks test the word order. Learned counts for Reported questions and Indirect questions before and after this date are not comparable.

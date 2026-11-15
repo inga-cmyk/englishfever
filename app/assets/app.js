@@ -1400,7 +1400,7 @@
       if (!good && !res.skipped && ses.mode !== 'placement' && (state.wrongRun || 0) >= 3) {   // three mistakes in a row: point to the rule card (teacher, 3 November)
         fb.appendChild(h('p', { class: 'stuck' }, lv ? 'Grūti? Pirms nākamā atver ' : 'Stuck? Open ', h('b', { class: 'stuck-q' }, '?'), lv ? ' uzdevuma augšā.' : ' at the top of the next task.'));
       }
-      if (res.fixed) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));
+      if (res.fixed && ses.comeback) fb.appendChild(h('p', { class: 'fixed-line' }, icon('check'), h('b', null, lv ? 'Agrāka kļūda šajā tēmā izskatās izlabota.' : 'An earlier mistake on this topic looks fixed.')));   // only in Second Chance, where fixing is the point (teacher, 15 November)
       if (good && (it.kind === 'text' || it.kind === 'gap')) fb.appendChild(h('p', { class: 'submitted-answer' }, h('b', null, lv ? 'Tava atbilde: ' : 'Your answer: '), Array.isArray(ans) ? ans.join(' / ') : String(ans || '')));
       var cmp = (!good && !res.skipped && (it.kind === 'text' || it.kind === 'order') && typeof res.show === 'string')
         ? wordDiff(it.kind === 'order' ? (ans || []).join(' ') : String(ans || ''), res.show) : null;   // your sentence and the right one, the different words marked (teacher, 27 October)
@@ -1837,7 +1837,7 @@
     // real progress only: topics where this session went clearly better than the learner's recent history
     var better = (s.by_skill || []).filter(function (k) { var now = pct(k.correct, k.n); return k.prev_accuracy !== null && k.prev_accuracy !== undefined && k.n >= 3 && now >= k.prev_accuracy + 10; });
     var wins = [];
-    if (fixed && !s.comeback) wins.push(h('li', null, icon('check'), (fixed === 1 ? '1 earlier mistake on these topics looks fixed.' : fixed + ' earlier mistakes on these topics look fixed.')));
+    // no 'earlier mistake looks fixed' line in the summary (teacher, 15 November)
     better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% → ' + pct(k.correct, k.n) + '%')); });
     if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), 'Fixed so far: ' + s.fixed_total));
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },

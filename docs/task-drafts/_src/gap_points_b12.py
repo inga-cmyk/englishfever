@@ -24,6 +24,13 @@ for r in lib.rows:
         keep = [a for a in r[5][len("also accepted: "):].split(" | ") if (_AUXQ.match(a) or re.search(r"\b(will|would|can|could|should|must|shall|is|are|am|was|were|have|has|do|does|did) (i|you|we|they|he|she|it|the|my|your|our|his|her|their)\b", a)) and not (re.search(r"\b(i|you|we|they|he|she|it) (will|would|can|could|should|must|shall|is|are|am|was|were|have|has)\b", a) and not re.search(r"\b(will|would|can|could|should|must|shall|is|are|am|was|were|have|has|do|does|did) (i|you|we|they|he|she|it)\b", a))]
         r[5] = ("also accepted: " + " | ".join(keep)) if keep else ""
 
+# pc_always: the past habit with *would always* is accepted too; it gets its own note (not the *was always* explanation)
+for n, r in enumerate(lib.rows):
+    if r[0].startswith("Present continuous") and r[2] in ("gap", "text"):
+        for a in [x.strip() for x in r[4].replace(" / ", " | ").split(" | ")]:
+            if a.lower().startswith(("would always", "'d always")) or " would always " in a or "'d always " in a:
+                lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + a + " :: *would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises. :: *would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
+
 if __name__ == "__main__":
     import sys
     lib.save(sys.argv[1] if len(sys.argv) > 1 else "pending/" + NAME)

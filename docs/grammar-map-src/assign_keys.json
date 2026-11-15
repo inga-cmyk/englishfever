@@ -15562,5 +15562,605 @@
 "modal_verbs | B1.1 | order | Put the words in order to make a question. | does the new manager have to speak latvian": [
 "must_vs_have_to",
 "read"
+],
+"present_continuous | B1.2 | mcq | Choose the correct option: My flatmate ___ my phone charger without asking, and it drives me mad. | is always borrowing": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | mcq | Which sentence is correct? | My neighbours are always parking in front of our garage, so I can't get out.": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | mcq | Choose the correct option: When we worked together, Lisa ___ about the air conditioning. | was always complaining": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | mcq | Which sentence is NOT correct? | My dad is always lose his glasses somewhere in the house.": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | mcq | Choose the correct option: My teenage sons ___ always leaving wet towels on the bathroom floor, and I'm tired of it. | are": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | mcq | Choose the correct option: My manager is constantly ___ us emails late at night, even at weekends. | sending": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | mcq | Which sentence is a complaint? | My partner is always leaving the lights on.": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | Complain with *always*: When we shared an office, Mark ___ (hum) along to his music. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | Complete with one word in each gap: We need a new printer: ours ___ always ___ in the middle of big jobs. (jam) | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | Complete with one word in each gap: My old car ___ constantly ___ down, so in the end I sold it. (break) | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | Use the words in brackets: My brother ___ (always / forget) my birthday, but every year he calls the next day. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | text | Complain with *constantly*: My boss calls me during my lunch break. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | text | Complain with *always*: When we were students, my flatmate borrowed my notes. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | text | Make a question with *Why*: You're always interrupting me in meetings. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | order | Put the words in order. | my sister's always borrowing my clothes without asking": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | order | Put the words in order. | it's always raining when i want to go cycling": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | order | Put the words in order to make a question. | why are you always checking your phone at dinner": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | order | Put the words in order. | he's forever telling us how busy he is": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | order | Put the words in order. | you're always making plans for the weekend without telling me": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | My colleague ___ ___ ___ my yoghurt from the office fridge, and it drives me mad. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | When I was a student, my landlord ___ always ___ round without calling first. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | My parents ___ always ___ me when I'm going to find a better job. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | My phone ___ constantly ___ me to update my apps, and I keep ignoring it. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | match | Match each beginning with its ending. | My flatmate is always leaving = the front door unlocked. ; Our manager is constantly changing = the meeting times. ; My cousin is forever borrowing = my phone charger. ; The neighbours' dogs are always barking = at the postman.": [
+"pc_always",
+"read"
+],
+"used_to | B1.2 | mcq | Choose the correct option: When I lived in Spain, I ___ a little scooter that I rode everywhere. | used to have": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | mcq | Choose the correct option: When we were students, we ___ in a tiny flat near the station. | used to live": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | mcq | Which sentence is NOT correct? | We would know all our neighbours when we lived in the village.": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | mcq | Which sentence is correct? | When my children were small, I would sing to them every night.": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | mcq | Choose the correct option: As a teenager, I ___ spicy food, but now I cook curry every week. | didn't use to like": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | mcq | Choose the correct option: Last summer we ___ to Greece for two weeks and loved every minute. | went": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | mcq | Choose the correct option: My grandparents ___ a farm, and every summer we would help them with the harvest. | used to own": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | order | Put the words in order. | when we lived by the sea we would swim before breakfast": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | order | Put the words in order. | my uncle used to be a fisherman and he would get up at four": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | order | Put the words in order. | my grandmother would sing old songs while she cooked dinner": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | order | Put the words in order. | on long car journeys my brother and i would play word games": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | order | Put the words in order. | we used to have a garden where we would grow our own vegetables": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | Before I moved here, I ___ a cat that always slept on my laptop. | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | Every August my grandmother ___ jam from the berries we picked in the forest. | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | Before they retired, my parents ___ in a flat in the city centre. | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | In my first job, my boss ___ ___ us coffee every Monday morning. | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | match | Match each beginning with its ending. | When I was a student, I used to = have very long hair. ; When it snowed, my dad would = take us sledging in the park. ; Before the bridge was built, people would = cross the river by ferry. ; My parents didn't use to = like my friends, but now they do.": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | When I was a student, I ___ a really old car that broke down every week. (have) | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | When I worked at the market, I ___ every customer by name. (know) | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | Use *would*: Every Sunday my grandfather ___ us fishing on the lake. (take) | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | When we were kids, my sister and I ___ for hours about whose turn it was to wash up. (argue) | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | gap | Last month I ___ to Tallinn for a job interview, and I got the job! (go) | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | text | Say it another way with *would*: When I was young, my father used to cook pancakes every Saturday. | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | text | Correct the mistake: When I was a child, I would have a little garden of my own. | ": [
+"would_habit",
+"read"
+],
+"used_to | B1.2 | text | Correct the mistake: Last weekend we would go hiking in the mountains. | ": [
+"would_habit",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: We ___ a taxi to the airport, because the bus was so slow that we missed our flight. | should have taken": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: You ___ at the waiter, because it wasn't his fault that the kitchen was slow. | shouldn't have shouted": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: She ___ a great doctor, but she decided to study music instead. | could have been": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: Why didn't you tell me about the delay? You ___ me before I left home. | should have told": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | mcq | Choose the correct option: Sorry, I should ___ called you last night, but my phone battery was dead. | have": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | mcq | Which sentence is correct? | You should have checked the figures before you sent the report.": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | mcq | Which sentence is NOT correct? | You should of booked the tickets much earlier.": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | order | Put the words in order. | you should have told me that the train was cancelled": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | order | Put the words in order. | i shouldn't have bought these shoes without trying them on": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | order | Put the words in order. | she could have got the job but she didn't apply in time": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | order | Put the words in order. | you could have asked me for help instead of doing it alone": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said when my boss asked about the delay": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | You shouldn't ___ ___ the oven on when you went out this morning. | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | We could ___ ___ the earlier ferry, but we decided to stay another night. | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | Sorry, I should ___ you that the office was closed on Monday. | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | I ___ ___ studied for the exam, but I spent the whole weekend watching TV series. | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | match | Match each situation with the comment. | You didn't wear a coat, and now you've got a cold. = You should have worn one. ; You laughed at his new haircut, and he was upset. = You shouldn't have laughed. ; We missed the last bus and walked home in the rain. = We could have taken a taxi. ; You knew about the problem but said nothing. = You should have told someone.": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | You ___ me about the party. I would have loved to come! (should / tell) | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | I ___ so much at the wedding. I felt terrible the next morning. (should / not / drink) | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | We ___ the final, but we missed two penalties in the last ten minutes. (could / win) | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | We ___ the whole day at the beach yesterday, but we stayed in the hotel because of the clouds. (could / spend) | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | gap | You ___ me back last night. Your phone was with you all evening! (could / call) | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | text | Make it negative: I should have told Anna what you said about her new boyfriend. | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | text | Start with *You shouldn't*: It was wrong of you to lend him your car for the whole weekend. | ": [
+"should_have",
+"read"
+],
+"more_modals | B1.2 | text | Make a yes/no question: I should have told the manager about the mistake in the invoice. | ": [
+"should_have",
+"read"
+],
+"agreement | B1.2 | mcq | Choose the correct option: ___ in our new hotel has a balcony, so guests can have breakfast outside. | Every room": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | mcq | Choose the correct option: At the end of the course, each ___ a certificate, even if they missed a class. | student gets": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | mcq | Choose the correct option: I've known Marta ___ because our mothers were best friends. | my whole life": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | mcq | Choose the correct option: I was so tired after the night flight that I stayed in bed ___ on Sunday. | all day": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | mcq | Which sentence is correct? | Each of the flats in our building has its own parking space.": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | mcq | Which sentence is NOT correct? | Every player in our club get a free shirt in spring.": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | mcq | Choose the correct option: She was carrying a heavy bag in ___ hand, so she couldn't open the door. | each": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Write *each* or *every*: We tried three new apps for learning Spanish, and ___ of them was useful. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Write *all* or *every*: The museum is open ___ day except Monday, from ten until six. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Every laptop in our office ___ the same password, which is not very safe. (have) | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Each of the ___ on our walking tour got a free map of the old town. (visitor) | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Write *all* or *whole*: The ___ team stayed late on Friday to finish the project on time. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | text | Say it another way with *whole*: I spent all day at the airport because my flight was cancelled. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | text | Say it another way with *every*: All the lessons at our language school last ninety minutes. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | text | Make a yes/no question: Every member of the team has access to the shared folder. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | order | Put the words in order. | each of my sisters lives in a different country so we talk online": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | order | Put the words in order to make a question. | does every guest need a ticket for tomorrow's boat trip": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | order | Put the words in order. | we were stuck in traffic all day and missed the start of the wedding": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | order | Put the words in order. | i missed the match because i spent the whole evening answering emails": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | order | Put the words in order. | i've read every single review but i can't decide which phone to buy": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Each of my ___ ___ a different hobby, so family weekends are never boring. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | I've had a headache ___ ___ morning, so I'm going home early. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | My grandmother phones me ___ ___, usually just after her lunch, to ask about the kids. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | gap | Almost ___ colleague in my team works from home on Fridays, so the office is very quiet. | ": [
+"each_every",
+"read"
+],
+"agreement | B1.2 | match | Match each beginning with its ending. | We invited forty people, and each of = them brought a small gift. ; It was a long night, but every = guest stayed until the end. ; The food was great, and all the = guests asked for the recipes. ; When the band started, the whole = room got up to dance.": [
+"each_every",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Choose the correct option: Sorry, I didn't hear ___ you said about the meeting time. | what": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Choose the correct option: The jacket ___ I ordered online last week doesn't fit me. | which": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Which sentence is correct? | Everything that he told us about the hotel was true.": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Which sentence is correct? | What I really need right now is a long holiday.": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | The film what we watched last night was far too long.": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | All what I want for my birthday is a quiet dinner.": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Choose the correct option: That's exactly ___ I was trying to explain to my boss. | what": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | Write *what* or *that*: The pizza ___ we ordered last night was cold when it arrived. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | Write *what* or *that*: I can't remember ___ the teacher said about the exam. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | Write *what* or *that*: Is there anything ___ I can do to help you with the move? | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | Write *what* or *that*: ___ worries me most about the trip is the cost of the flights. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | Write *what* or *that*: The app ___ my sister recommended really helps me sleep better. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | text | Say it another way with *what*: The thing I enjoy most about my job is meeting new people. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | text | Correct the mistake: Everything what she told me about the course was useful. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | text | Correct the mistake: I didn't understand that the mechanic said about my car. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | order | Put the words in order. | what she said at the wedding surprised everyone": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | order | Put the words in order. | i didn't understand what the doctor told me about the test": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | order | Put the words in order. | all i want after work is a hot shower": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | order | Put the words in order. | i'm sorry about everything that happened last night": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | order | Put the words in order to make a question. | did you find what you were looking for": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | ___ really annoyed me was the noise from the street. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | I'll send you everything ___ you need for the conference. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | The best thing about the trip was the people ___ we met on the way. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | gap | Excuse me, this isn't ___ I ordered. | ": [
+"rel_what",
+"read"
+],
+"relative_clauses | B1.2 | match | Match each beginning with its ending. | Thank you so much for everything = you did for my family. ; The waiter didn't understand = what I wanted to order. ; The laptop that I bought last month = stopped working after a week. ; What I like most about my job = is the people I work with.": [
+"rel_what",
+"read"
+],
+"future | B1.2 | mcq | Choose the correct option: I've charged it all night, but my phone still ___. | won't switch on": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | mcq | Choose the correct option: Yesterday I was late for work because my bike lock ___. | wouldn't open": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | mcq | Choose the correct option: I've told Max it's dangerous, but he ___ to me. | won't listen": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | mcq | Which sentence is correct? | The key card wouldn't open my hotel room last night.": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | mcq | Which sentence is NOT correct? | My sister won't to lend me her car.": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | mcq | Which sentence is NOT correct? | My landlord wouldn't fixed the heating.": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | mcq | Choose the correct option: Why ___ inside? It's freezing out there. | won't the dog come": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | Write *won't* or *wouldn't*: I tried to send you the photos last night, but the wifi ___ work. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | Write *won't* or *wouldn't*: Can you help me with this suitcase? The zip ___ close. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | Write *won't* or *wouldn't*: The cash machine ___ give me any money yesterday, so I borrowed some from Ana. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | My sister was upset and wouldn't ___ to anyone at the party. (speak) | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | My son won't ___ his homework, however often I ask him. (do) | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | text | Say it another way with *won't*: My computer refuses to open this file. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | text | Say it another way with *wouldn't*: My neighbour refused to move his car last night. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | text | Make a question with *Why*: The baby won't eat her soup. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | order | Put the words in order. | my dad won't wear his glasses even when he's driving": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | order | Put the words in order. | my car wouldn't start this morning so i worked from home": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | order | Put the words in order to make a question. | why won't you tell me what happened at work": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | order | Put the words in order. | my friend wouldn't let me pay for dinner last night": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | order | Put the words in order. | i've tried two keys but this door still won't open": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | Yesterday the hotel lift ___ ___, so we took the stairs. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | My grandmother is very independent and ___ ___ anyone help her. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | Why ___ ___ ___ me? I've called her five times today. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | gap | Yesterday the shop assistant ___ ___ me a refund, so I complained. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | match | Match each beginning with its ending. | My laptop won't = switch on. ; Why won't = the tap stop dripping? ; Last night the baby wouldn't = stop crying. ; I asked twice, but she = wouldn't tell me.": [
+"wont_refuse",
+"read"
 ]
 }

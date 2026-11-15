@@ -15,8 +15,10 @@ LV_BY_FILE["pairs-1.csv"] = set("vienreiz Vienreiz jaunu laikam noticis noteikti
 LV_BY_FILE["gap-points-a2-1.csv"] = set("""tulkojot burtiski Tulkojot artikula artikulu valstu nosaukumiem nosaukumi noteikta noteikts noteiktiem visi veidiem
 Sporta sporta instrumentiem Hobijs hobijs citam tikai pareizi ideju lieta atsakot aizdodat veidi skolas mācības mācībām matemātika vēsture""".split())   # batch 4, A2 part (14 November)
 LV_BY_FILE["gap-points-b11-1.csv"] = set("""Vilciena esi noteikti beigsies gribas Pusdienas Tomu satiksi notikumam Tulkojot tulkojot burtiski vietas piena noliegumi tikai Tikai vilkt attiecas abas pareizas mums neliek nevar likt nesaka tabletes rada britu Britu izsaka noteikumu vilciens nebija izpaliek""".split())   # batch 4, B1.1 part (15 November)
+LV_BY_FILE["gap-points-b12-1.csv"] = set("""Taksometrs Tev Tu Tulkojot bijis burtiski darboties daudzas esmu faktus formai galotnes gribas gribu izsaka kaitina katrs kliedzi kliegt lietu likt min neaizveras negrib neko nepareizi nepateici nesaka nevar notikumam otrdien pabeigtam pareizi pareizs pateici pirmdien pirmdienu reizes te teikt tikai tu tulkojot vakaram veids viss visu""".split())   # batch 4, B1.2 part (15 November)
 LV_BY_FILE["learn-drag-4.csv"] = set("visa apgalvojuma".split()) | LV_BY_FILE["twins-3.csv"]
 HEAD = ["topic", "level", "type", "task", "correct answer", "wrong options / checks", "explanation shown to learner", "explanation in Latvian", "thinking level", "replaces", "error types", "practice only", "also topics", "answer notes"]
+NOTES = {}   # row index -> answer notes "answer :: EN :: LV || ..." written by a generator
 ERRS = {}   # row index -> error types (docs/ERROR-TYPES.md), written in the last column; never shown to learners
 # matching tasks that were corrected: the old pairs, so importing the corrected file retires the old (ambiguous) version
 import json as _json
@@ -229,6 +231,7 @@ def save(name):
             out = r[:3] + [plain(r[3], r[2])] + r[4:6] + [en_fix(r[6]), lv_for_file(r[7], name)] + r[8:9] + [r[9] if len(r) > 9 else (REPL.get(r[4], '') if r[2] == 'match' else ''), ERRS.get(i, ''), "yes" if (practice_only(r) or i in PRACTICE_IDX) else "", ALSO.get(i, ""), ""]
             t, c, wr, rep, notes = term_free.fix(out[3], out[2], out[4], out[5])   # no grammar terms in the task (teacher, 6 November)
             out[3], out[4], out[5], out[13] = t, c, wr, notes
+            if i in NOTES: out[13] = (out[13] + " || " if out[13] else "") + NOTES[i]   # an answer note written by the generator (batch 4)
             if rep: out[9] = rep
             from screenshot_fixes import apply as screenshot_fix
             from learner_fixes import apply as learner_fix

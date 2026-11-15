@@ -1,0 +1,5560 @@
+{
+ "r11-001": {
+  "hash": "e448fde63e405445",
+  "gate_key": "present_continuous | B1.2 | mcq | Choose the correct option: My flatmate ___ my phone charger without asking, and it drives me mad. | is always borrowing",
+  "src": "zz-blind-gap-points-b12-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "is always borrowing",
+   "wrong": [
+    "always is borrowing",
+    "is always borrow",
+    "always borrowing"
+   ]
+  },
+  "item": {
+   "id": "c-3293",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My flatmate ___ my phone charger without asking, and it drives me mad.",
+   "why": "*is* + *always* + verb-ing: *is always borrowing*. *always* goes after *is*, and the verb needs *-ing*.",
+   "why_lv": "*is + always* + darbības vārds ar *-ing*: *is always borrowing*. *always* liek aiz *is*, un darbības vārdam vajag *-ing*.",
+   "correct": "is always borrowing",
+   "wrong": [
+    "always is borrowing",
+    "is always borrow",
+    "always borrowing"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:2"
+  }
+ },
+ "r11-002": {
+  "hash": "2ffc856a7384b353",
+  "gate_key": "present_continuous | B1.2 | mcq | Which sentence is correct? | My neighbours are always parking in front of our garage, so I can't get out.",
+  "src": "zz-blind-gap-points-b12-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My neighbours are always parking in front of our garage, so I can't get out.",
+   "wrong": [
+    "My neighbours always are parking in front of our garage, so I can't get out.",
+    "My neighbours are always park in front of our garage, so I can't get out.",
+    "My neighbours are parking always in front of our garage, so I can't get out."
+   ]
+  },
+  "item": {
+   "id": "c-3294",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "correct": "My neighbours are always parking in front of our garage, so I can't get out.",
+   "wrong": [
+    "My neighbours always are parking in front of our garage, so I can't get out.",
+    "My neighbours are always park in front of our garage, so I can't get out.",
+    "My neighbours are parking always in front of our garage, so I can't get out."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:3"
+  }
+ },
+ "r11-003": {
+  "hash": "fa3f7d5652faa14f",
+  "gate_key": "present_continuous | B1.2 | mcq | Choose the correct option: When we worked together, Lisa ___ about the air conditioning. | was always complaining",
+  "src": "zz-blind-gap-points-b12-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "was always complaining",
+   "wrong": [
+    "always was complaining",
+    "was always complain",
+    "is always complaining"
+   ]
+  },
+  "item": {
+   "id": "c-3295",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: When we worked together, Lisa ___ about the air conditioning.",
+   "why": "*When we worked together* is the past, so *was* + *always* + verb-ing: *Lisa was always complaining.*",
+   "why_lv": "*When we worked together* ir pagātne, tāpēc *was + always* + darbības vārds ar *-ing*: *Lisa was always complaining.*",
+   "correct": "was always complaining",
+   "wrong": [
+    "always was complaining",
+    "was always complain",
+    "is always complaining"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:4"
+  }
+ },
+ "r11-004": {
+  "hash": "4b29708f25956f8f",
+  "gate_key": "present_continuous | B1.2 | mcq | Which sentence is NOT correct? | My dad is always lose his glasses somewhere in the house.",
+  "src": "zz-blind-gap-points-b12-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My dad is always lose his glasses somewhere in the house.",
+   "wrong": [
+    "She's always checking her phone when we're having dinner.",
+    "They were always arguing about money when they were married.",
+    "My brother always forgets my birthday, but he calls the next day."
+   ]
+  },
+  "item": {
+   "id": "c-3296",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *is always* the verb needs *-ing*: *My dad is always losing his glasses.* *My brother always forgets* is correct too: it is neutral, without the complaint.",
+   "why_lv": "Aiz *is always* darbības vārdam vajag *-ing*: *My dad is always losing his glasses.* Arī *My brother always forgets* ir pareizi: tas ir neitrāli, bez īgnuma.",
+   "correct": "My dad is always lose his glasses somewhere in the house.",
+   "wrong": [
+    "She's always checking her phone when we're having dinner.",
+    "They were always arguing about money when they were married.",
+    "My brother always forgets my birthday, but he calls the next day."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:5"
+  }
+ },
+ "r11-005": {
+  "hash": "d58c4f9fc2294588",
+  "gate_key": "present_continuous | B1.2 | mcq | Choose the correct option: My teenage sons ___ always leaving wet towels on the bathroom floor, and I'm tired of it. | are",
+  "src": "zz-blind-gap-points-b12-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "are",
+   "wrong": [
+    "do",
+    "have",
+    "is"
+   ]
+  },
+  "item": {
+   "id": "c-3297",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My teenage sons ___ always leaving wet towels on the bathroom floor, and I'm tired of it.",
+   "why": "*sons* = *they*, so *are*: *are always leaving*. The continuous needs *be*, not *do* or *have*.",
+   "why_lv": "*sons = they*, tāpēc *are*: *are always leaving*. Continuous formai vajag *be*, nevis *do* vai *have*.",
+   "correct": "are",
+   "wrong": [
+    "do",
+    "have",
+    "is"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:6"
+  }
+ },
+ "r11-006": {
+  "hash": "d55a536441b57335",
+  "gate_key": "present_continuous | B1.2 | mcq | Choose the correct option: My manager is constantly ___ us emails late at night, even at weekends. | sending",
+  "src": "zz-blind-gap-points-b12-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "sending",
+   "wrong": [
+    "send",
+    "sends",
+    "sent"
+   ]
+  },
+  "item": {
+   "id": "c-3298",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My manager is constantly ___ us emails late at night, even at weekends.",
+   "why": "*constantly* and *forever* work like *always*: *is constantly* / *is forever* + verb-ing.",
+   "why_lv": "*constantly* un *forever* lieto tāpat kā *always*: *is constantly / is forever* + darbības vārds ar *-ing*.",
+   "correct": "sending",
+   "wrong": [
+    "send",
+    "sends",
+    "sent"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:7"
+  }
+ },
+ "r11-007": {
+  "hash": "e4593efa85151ceb",
+  "gate_key": "present_continuous | B1.2 | mcq | Which sentence is a complaint? | My partner is always leaving the lights on.",
+  "src": "zz-blind-gap-points-b12-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My partner is always leaving the lights on.",
+   "wrong": [
+    "My partner is leaving the office now.",
+    "My partner leaves for work at seven.",
+    "My partner is going to leave early tomorrow."
+   ]
+  },
+  "item": {
+   "id": "c-3299",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is a complaint?",
+   "why": "*is always* + verb-ing says that something happens too often and annoys the speaker. The other sentences only give facts or plans.",
+   "why_lv": "*is always* + darbības vārds ar *-ing* saka, ka kaut kas notiek pārāk bieži un runātāju kaitina. Pārējie teikumi tikai min faktus vai plānus.",
+   "correct": "My partner is always leaving the lights on.",
+   "wrong": [
+    "My partner is leaving the office now.",
+    "My partner leaves for work at seven.",
+    "My partner is going to leave early tomorrow."
+   ],
+   "wrong_why": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:8"
+  }
+ },
+ "r11-008": {
+  "hash": "23ce5af6094b168d",
+  "gate_key": "present_continuous | B1.2 | gap | Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are always leaving",
+     "'re always leaving"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3300",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up.",
+   "why": "A complaint about a habit: *am / is / are* + *always* + verb-ing: *He's always losing his keys!*",
+   "why_lv": "Īgnums par ieradumu: *am / is / are + always* + darbības vārds ar *-ing*: *He's always losing his keys!*",
+   "answers": [
+    [
+     "are always leaving",
+     "'re always leaving"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:9"
+  }
+ },
+ "r11-009": {
+  "hash": "c6d691d797f88cf8",
+  "gate_key": "present_continuous | B1.2 | gap | Complain with *always*: When we shared an office, Mark ___ (hum) along to his music. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was always humming",
+     "would always hum",
+     "'d always hum"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3301",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complain with *always*: When we shared an office, Mark ___ (hum) along to his music.",
+   "why": "About the past: *was / were* + *always* + verb-ing: *She was always complaining.*",
+   "why_lv": "Par pagātni: *was / were + always* + darbības vārds ar *-ing*: *She was always complaining.*",
+   "answer_notes": [
+    [
+     "would always hum",
+     "*would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises.",
+     "*would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
+    ],
+    [
+     "'d always hum",
+     "*would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises.",
+     "*would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
+    ]
+   ],
+   "answers": [
+    [
+     "was always humming",
+     "would always hum",
+     "'d always hum"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:10"
+  }
+ },
+ "r11-010": {
+  "hash": "6b6725650aa88625",
+  "gate_key": "present_continuous | B1.2 | gap | Complete with one word in each gap: We need a new printer: ours ___ always ___ in the middle of big jobs. (jam) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "jamming"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3302",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word in each gap: We need a new printer: ours ___ always ___ in the middle of big jobs. (jam)",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "jamming"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:11"
+  }
+ },
+ "r11-011": {
+  "hash": "7ad6bca0b18f89e7",
+  "gate_key": "present_continuous | B1.2 | gap | Complete with one word in each gap: My old car ___ constantly ___ down, so in the end I sold it. (break) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "breaking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3303",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word in each gap: My old car ___ constantly ___ down, so in the end I sold it. (break)",
+   "why": "*so in the end I sold it* is the past, so *was* + *constantly* + verb-ing: *was constantly breaking down*.",
+   "why_lv": "*so in the end I sold it* ir pagātne, tāpēc *was + constantly* + darbības vārds ar *-ing*: *was constantly breaking down*.",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "breaking"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:12"
+  }
+ },
+ "r11-012": {
+  "hash": "9ac91155f6a5b3d1",
+  "gate_key": "present_continuous | B1.2 | gap | Use the words in brackets: My brother ___ (always / forget) my birthday, but every year he calls the next day. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "always forgets",
+     "is always forgetting",
+     "'s always forgetting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3304",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Use the words in brackets: My brother ___ (always / forget) my birthday, but every year he calls the next day.",
+   "why": "*always forgets* (neutral) or *is always forgetting* (a complaint): both are correct. *always* goes before *forgets*, or after *is*.",
+   "why_lv": "*always forgets* (neitrāli) vai *is always forgetting* (īgnums): abi ir pareizi. *always* liek pirms *forgets* vai aiz *is*.",
+   "answers": [
+    [
+     "always forgets",
+     "is always forgetting",
+     "'s always forgetting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:13"
+  }
+ },
+ "r11-013": {
+  "hash": "f24200d70bbc36a0",
+  "gate_key": "present_continuous | B1.2 | text | Complain with *constantly*: My boss calls me during my lunch break. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:14",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My boss is constantly calling me during my lunch break.",
+     "My boss's constantly calling me during my lunch break."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3305",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Complain with *constantly*: My boss calls me during my lunch break.",
+   "why": "*constantly* and *forever* work like *always*: *is constantly* / *is forever* + verb-ing.",
+   "why_lv": "*constantly* un *forever* lieto tāpat kā *always*: *is constantly / is forever* + darbības vārds ar *-ing*.",
+   "answers": [
+    [
+     "My boss is constantly calling me during my lunch break.",
+     "My boss's constantly calling me during my lunch break."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:14"
+  }
+ },
+ "r11-014": {
+  "hash": "5b31cb3fb34c88b2",
+  "gate_key": "present_continuous | B1.2 | text | Complain with *always*: When we were students, my flatmate borrowed my notes. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:15",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "When we were students, my flatmate was always borrowing my notes.",
+     "My flatmate was always borrowing my notes when we were students.",
+     "When we were students, my flatmate would always borrow my notes.",
+     "My flatmate would always borrow my notes when we were students.",
+     "When we were students, my flatmate'd always borrow my notes.",
+     "my flatmate was always borrowing my notes when we were students.",
+     "my flatmate would always borrow my notes when we were students.",
+     "my flatmate'd always borrow my notes when we were students."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3306",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Complain with *always*: When we were students, my flatmate borrowed my notes.",
+   "why": "About the past: *was / were* + *always* + verb-ing: *She was always complaining.*",
+   "why_lv": "Par pagātni: *was / were + always* + darbības vārds ar *-ing*: *She was always complaining.*",
+   "answer_notes": [
+    [
+     "When we were students, my flatmate would always borrow my notes.",
+     "*would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises.",
+     "*would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
+    ],
+    [
+     "My flatmate would always borrow my notes when we were students.",
+     "*would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises.",
+     "*would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
+    ],
+    [
+     "When we were students, my flatmate'd always borrow my notes.",
+     "*would always* + verb is also correct for a past habit; *was always* + *-ing* is the complaining way this topic practises.",
+     "*would always* + darbības vārds arī ir pareizi pagātnes ieradumam; *was always* + *-ing* ir īgnuma forma, ko praktizē šī tēma."
+    ]
+   ],
+   "answers": [
+    [
+     "When we were students, my flatmate was always borrowing my notes.",
+     "My flatmate was always borrowing my notes when we were students.",
+     "When we were students, my flatmate would always borrow my notes.",
+     "My flatmate would always borrow my notes when we were students.",
+     "When we were students, my flatmate'd always borrow my notes.",
+     "my flatmate was always borrowing my notes when we were students.",
+     "my flatmate would always borrow my notes when we were students.",
+     "my flatmate'd always borrow my notes when we were students."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:15"
+  }
+ },
+ "r11-015": {
+  "hash": "53e93093fd60b970",
+  "gate_key": "present_continuous | B1.2 | text | Make a question with *Why*: You're always interrupting me in meetings. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:16",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Why are you always interrupting me in meetings?",
+     "Why do you always interrupt me in meetings?",
+     "Why are you always interrupting me?",
+     "Why do you always interrupt me?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3307",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with *Why*: You're always interrupting me in meetings.",
+   "why": "*Why are you always interrupting me?*: *are* goes before *you*, *always* stays before the verb-ing. *Why do you always interrupt me?* is correct too.",
+   "why_lv": "*Why are you always interrupting me*?: *are* liek pirms *you, always* paliek pirms darbības vārda ar *-ing*. Arī *Why do you always interrupt me?* ir pareizi.",
+   "answers": [
+    [
+     "Why are you always interrupting me in meetings?",
+     "Why do you always interrupt me in meetings?",
+     "Why are you always interrupting me?",
+     "Why do you always interrupt me?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:16"
+  }
+ },
+ "r11-016": {
+  "hash": "9ddc86c230ccfeef",
+  "gate_key": "present_continuous | B1.2 | order | Put the words in order. | my sister's always borrowing my clothes without asking",
+  "src": "zz-blind-gap-points-b12-1.csv:17",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my sister's always borrowing my clothes without asking",
+   "also": []
+  },
+  "item": {
+   "id": "c-3308",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "sentence": "my sister's always borrowing my clothes without asking",
+   "answers": [
+    [
+     "my sister's always borrowing my clothes without asking"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:17"
+  }
+ },
+ "r11-017": {
+  "hash": "3e159201b1218e47",
+  "gate_key": "present_continuous | B1.2 | order | Put the words in order. | it's always raining when i want to go cycling",
+  "src": "zz-blind-gap-points-b12-1.csv:18",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "it's always raining when i want to go cycling",
+   "also": [
+    "when i want to go cycling it's always raining"
+   ]
+  },
+  "item": {
+   "id": "c-3309",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "sentence": "it's always raining when i want to go cycling",
+   "answers": [
+    [
+     "it's always raining when i want to go cycling",
+     "when i want to go cycling it's always raining"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:18"
+  }
+ },
+ "r11-018": {
+  "hash": "b6d929d8d18e8e6c",
+  "gate_key": "present_continuous | B1.2 | order | Put the words in order to make a question. | why are you always checking your phone at dinner",
+  "src": "zz-blind-gap-points-b12-1.csv:19",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "why are you always checking your phone at dinner",
+   "also": []
+  },
+  "item": {
+   "id": "c-3310",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "A question: *Why* + *are* + *you* + *always* + verb-ing.",
+   "why_lv": "Jautājums: *Why + are + you + always* + darbības vārds ar *-ing*.",
+   "sentence": "why are you always checking your phone at dinner",
+   "answers": [
+    [
+     "why are you always checking your phone at dinner"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:19"
+  }
+ },
+ "r11-019": {
+  "hash": "ee5216045459a2be",
+  "gate_key": "present_continuous | B1.2 | order | Put the words in order. | he's forever telling us how busy he is",
+  "src": "zz-blind-gap-points-b12-1.csv:20",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "he's forever telling us how busy he is",
+   "also": []
+  },
+  "item": {
+   "id": "c-3311",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*constantly* and *forever* work like *always*: *is constantly* / *is forever* + verb-ing.",
+   "why_lv": "*constantly* un *forever* lieto tāpat kā *always*: *is constantly / is forever* + darbības vārds ar *-ing*.",
+   "sentence": "he's forever telling us how busy he is",
+   "answers": [
+    [
+     "he's forever telling us how busy he is"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:20"
+  }
+ },
+ "r11-020": {
+  "hash": "ed958fb8901a43b3",
+  "gate_key": "present_continuous | B1.2 | order | Put the words in order. | you're always making plans for the weekend without telling me",
+  "src": "zz-blind-gap-points-b12-1.csv:21",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "you're always making plans for the weekend without telling me",
+   "also": []
+  },
+  "item": {
+   "id": "c-3312",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "sentence": "you're always making plans for the weekend without telling me",
+   "answers": [
+    [
+     "you're always making plans for the weekend without telling me"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:21"
+  }
+ },
+ "r11-021": {
+  "hash": "2cdc4b94709d621d",
+  "gate_key": "present_continuous | B1.2 | gap | My colleague ___ ___ ___ my yoghurt from the office fridge, and it drives me mad. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:22",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "always"
+    ],
+    [
+     "taking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3313",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My colleague ___ ___ ___ my yoghurt from the office fridge, and it drives me mad.",
+   "why": "*always* goes between *am / is / are* and the verb-ing: *They're always arguing*, not *always are arguing*.",
+   "why_lv": "*always* liek starp *am / is / are* un darbības vārdu ar *-ing*: *They're always arguing*, nevis *always are arguing*.",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "always"
+    ],
+    [
+     "taking"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is",
+    "always",
+    "taking",
+    "takes",
+    "does"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:22"
+  }
+ },
+ "r11-022": {
+  "hash": "09d176f328624619",
+  "gate_key": "present_continuous | B1.2 | gap | When I was a student, my landlord ___ always ___ round without calling first. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:23",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "dropping"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3314",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I was a student, my landlord ___ always ___ round without calling first.",
+   "why": "About the past: *was / were* + *always* + verb-ing: *She was always complaining.*",
+   "why_lv": "Par pagātni: *was / were + always* + darbības vārds ar *-ing*: *She was always complaining.*",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "dropping"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "dropping",
+    "is",
+    "drop"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:23"
+  }
+ },
+ "r11-023": {
+  "hash": "9cd9b2e9ab8f439e",
+  "gate_key": "present_continuous | B1.2 | gap | My parents ___ always ___ me when I'm going to find a better job. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:24",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are"
+    ],
+    [
+     "asking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3315",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My parents ___ always ___ me when I'm going to find a better job.",
+   "why": "A complaint about a habit: *am / is / are* + *always* + verb-ing: *He's always losing his keys!*",
+   "why_lv": "Īgnums par ieradumu: *am / is / are + always* + darbības vārds ar *-ing*: *He's always losing his keys!*",
+   "answers": [
+    [
+     "are"
+    ],
+    [
+     "asking"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "are",
+    "asking",
+    "have",
+    "ask"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:24"
+  }
+ },
+ "r11-024": {
+  "hash": "c7a1cbc95abff507",
+  "gate_key": "present_continuous | B1.2 | gap | My phone ___ constantly ___ me to update my apps, and I keep ignoring it. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:25",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "reminding"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3316",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My phone ___ constantly ___ me to update my apps, and I keep ignoring it.",
+   "why": "*constantly* and *forever* work like *always*: *is constantly* / *is forever* + verb-ing.",
+   "why_lv": "*constantly* un *forever* lieto tāpat kā *always*: *is constantly / is forever* + darbības vārds ar *-ing*.",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "reminding"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is",
+    "reminding",
+    "reminds",
+    "has"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:25"
+  }
+ },
+ "r11-025": {
+  "hash": "2aa5394777662c86",
+  "gate_key": "present_continuous | B1.2 | match | Match each beginning with its ending. | My flatmate is always leaving = the front door unlocked. ; Our manager is constantly changing = the meeting times. ; My cousin is forever borrowing = my phone charger. ; The neighbours' dogs are always barking = at the postman.",
+  "src": "zz-blind-gap-points-b12-1.csv:26",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "My flatmate is always leaving",
+     "the front door unlocked."
+    ],
+    [
+     "Our manager is constantly changing",
+     "the meeting times."
+    ],
+    [
+     "My cousin is forever borrowing",
+     "my phone charger."
+    ],
+    [
+     "The neighbours' dogs are always barking",
+     "at the postman."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3317",
+   "skill": "present_continuous",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*always / constantly / forever* + verb-ing complains about something that happens too often.",
+   "why_lv": "*always / constantly / forever* + darbības vārds ar *-ing* izsaka īgnumu par to, kas notiek pārāk bieži.",
+   "pairs": [
+    [
+     "My flatmate is always leaving",
+     "the front door unlocked."
+    ],
+    [
+     "Our manager is constantly changing",
+     "the meeting times."
+    ],
+    [
+     "My cousin is forever borrowing",
+     "my phone charger."
+    ],
+    [
+     "The neighbours' dogs are always barking",
+     "at the postman."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:26"
+  }
+ },
+ "r11-026": {
+  "hash": "d15e0afe5a668f06",
+  "gate_key": "used_to | B1.2 | mcq | Choose the correct option: When I lived in Spain, I ___ a little scooter that I rode everywhere. | used to have",
+  "src": "zz-blind-gap-points-b12-1.csv:27",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "used to have",
+   "wrong": [
+    "would have",
+    "was having",
+    "use to have"
+   ]
+  },
+  "item": {
+   "id": "c-3318",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: When I lived in Spain, I ___ a little scooter that I rode everywhere.",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "correct": "used to have",
+   "wrong": [
+    "would have",
+    "was having",
+    "use to have"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:27"
+  }
+ },
+ "r11-027": {
+  "hash": "b1d7b25e62c12758",
+  "gate_key": "used_to | B1.2 | mcq | Choose the correct option: When we were students, we ___ in a tiny flat near the station. | used to live",
+  "src": "zz-blind-gap-points-b12-1.csv:28",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "used to live",
+   "wrong": [
+    "would live",
+    "use to live",
+    "were used to live"
+   ]
+  },
+  "item": {
+   "id": "c-3319",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: When we were students, we ___ in a tiny flat near the station.",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "correct": "used to live",
+   "wrong": [
+    "would live",
+    "use to live",
+    "were used to live"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:28"
+  }
+ },
+ "r11-028": {
+  "hash": "2af42a5719a754a3",
+  "gate_key": "used_to | B1.2 | mcq | Which sentence is NOT correct? | We would know all our neighbours when we lived in the village.",
+  "src": "zz-blind-gap-points-b12-1.csv:29",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "We would know all our neighbours when we lived in the village.",
+   "wrong": [
+    "Every Sunday my grandmother would bake bread for the whole family.",
+    "My uncle used to own a small hotel by the sea.",
+    "In my first job, I took the train to work every day."
+   ]
+  },
+  "item": {
+   "id": "c-3320",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "correct": "We would know all our neighbours when we lived in the village.",
+   "wrong": [
+    "Every Sunday my grandmother would bake bread for the whole family.",
+    "My uncle used to own a small hotel by the sea.",
+    "In my first job, I took the train to work every day."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:29"
+  }
+ },
+ "r11-029": {
+  "hash": "b8ed2eb0a6f35071",
+  "gate_key": "used_to | B1.2 | mcq | Which sentence is correct? | When my children were small, I would sing to them every night.",
+  "src": "zz-blind-gap-points-b12-1.csv:30",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "When my children were small, I would sing to them every night.",
+   "wrong": [
+    "When my children were small, I would sang to them every night.",
+    "When my children were small, I would to sing to them every night.",
+    "When my children were small, I was used to sing to them every night."
+   ]
+  },
+  "item": {
+   "id": "c-3321",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "After *would* comes the base verb, with no *to* and no ending: *I would sing*, not *would sang* or *would to sing*.",
+   "why_lv": "Aiz *would* liek pamatformu bez galotnes: *I would sing*, nevis *would sang* vai *would to sing*.",
+   "correct": "When my children were small, I would sing to them every night.",
+   "wrong": [
+    "When my children were small, I would sang to them every night.",
+    "When my children were small, I would to sing to them every night.",
+    "When my children were small, I was used to sing to them every night."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:30"
+  }
+ },
+ "r11-030": {
+  "hash": "3785d26ec5b4739b",
+  "gate_key": "used_to | B1.2 | mcq | Choose the correct option: As a teenager, I ___ spicy food, but now I cook curry every week. | didn't use to like",
+  "src": "zz-blind-gap-points-b12-1.csv:31",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "didn't use to like",
+   "wrong": [
+    "wouldn't like",
+    "didn't used to like",
+    "wasn't used to like"
+   ]
+  },
+  "item": {
+   "id": "c-3322",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: As a teenager, I ___ spicy food, but now I cook curry every week.",
+   "why": "*like* is a state, so *would* is not possible: *I didn't use to like spicy food* (or *I didn't like it*). After *didn't*: *use to*, not *used to*.",
+   "why_lv": "*like* ir stāvokļa darbības vārds, tāpēc *would* nevar lietot: *I didn't use to like spicy food* (vai *I didn't like it*). Aiz *didn't* raksta *use to*, nevis *used to*.",
+   "correct": "didn't use to like",
+   "wrong": [
+    "wouldn't like",
+    "didn't used to like",
+    "wasn't used to like"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:31"
+  }
+ },
+ "r11-031": {
+  "hash": "95d0c0d3b6c45332",
+  "gate_key": "used_to | B1.2 | mcq | Choose the correct option: Last summer we ___ to Greece for two weeks and loved every minute. | went",
+  "src": "zz-blind-gap-points-b12-1.csv:32",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "went",
+   "wrong": [
+    "would go",
+    "used to go",
+    "have gone"
+   ]
+  },
+  "item": {
+   "id": "c-3323",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Last summer we ___ to Greece for two weeks and loved every minute.",
+   "why": "One finished event at a given time (*last summer*) takes the Past Simple. *would* and *used to* are for things that happened many times.",
+   "why_lv": "Vienam pabeigtam notikumam noteiktā laikā (*last summer*) lieto Past Simple. *would* un *used to* lieto tam, kas notika daudzas reizes.",
+   "correct": "went",
+   "wrong": [
+    "would go",
+    "used to go",
+    "have gone"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:32"
+  }
+ },
+ "r11-032": {
+  "hash": "1fde444bad01ae1b",
+  "gate_key": "used_to | B1.2 | mcq | Choose the correct option: My grandparents ___ a farm, and every summer we would help them with the harvest. | used to own",
+  "src": "zz-blind-gap-points-b12-1.csv:33",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "used to own",
+   "wrong": [
+    "would own",
+    "were owning",
+    "use to own"
+   ]
+  },
+  "item": {
+   "id": "c-3324",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: My grandparents ___ a farm, and every summer we would help them with the harvest.",
+   "why": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *We used to have a garden where we would grow vegetables.*",
+   "why_lv": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *We used to have a garden where we would grow vegetables.*",
+   "correct": "used to own",
+   "wrong": [
+    "would own",
+    "were owning",
+    "use to own"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:33"
+  }
+ },
+ "r11-033": {
+  "hash": "571b40b156b3cfe9",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | when we lived by the sea we would swim before breakfast",
+  "src": "zz-blind-gap-points-b12-1.csv:34",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "when we lived by the sea we would swim before breakfast",
+   "also": [
+    "we would swim before breakfast when we lived by the sea"
+   ]
+  },
+  "item": {
+   "id": "c-3325",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *would* + base verb + the rest: *we would swim*. The *when* part can go first or last.",
+   "why_lv": "Teikuma priekšmets + *would* + pamatforma + pārējais: *we would swim*. *when* daļu var likt sākumā vai beigās.",
+   "sentence": "when we lived by the sea we would swim before breakfast",
+   "answers": [
+    [
+     "when we lived by the sea we would swim before breakfast",
+     "we would swim before breakfast when we lived by the sea"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:34"
+  }
+ },
+ "r11-034": {
+  "hash": "1a7280f321597790",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | my uncle used to be a fisherman and he would get up at four",
+  "src": "zz-blind-gap-points-b12-1.csv:35",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my uncle used to be a fisherman and he would get up at four",
+   "also": []
+  },
+  "item": {
+   "id": "c-3326",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *We used to have a garden where we would grow vegetables.*",
+   "why_lv": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *We used to have a garden where we would grow vegetables.*",
+   "sentence": "my uncle used to be a fisherman and he would get up at four",
+   "answers": [
+    [
+     "my uncle used to be a fisherman and he would get up at four"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:35"
+  }
+ },
+ "r11-035": {
+  "hash": "b540be65f17ea9bb",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | my grandmother would sing old songs while she cooked dinner",
+  "src": "zz-blind-gap-points-b12-1.csv:36",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my grandmother would sing old songs while she cooked dinner",
+   "also": [
+    "while she cooked dinner my grandmother would sing old songs",
+    "while my grandmother cooked dinner she would sing old songs"
+   ]
+  },
+  "item": {
+   "id": "c-3327",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *would* + base verb + the rest: *my grandmother would sing*. The *while* part can go first or last.",
+   "why_lv": "Teikuma priekšmets + *would* + pamatforma + pārējais: *my grandmother would sing*. *while* daļu var likt sākumā vai beigās.",
+   "sentence": "my grandmother would sing old songs while she cooked dinner",
+   "answers": [
+    [
+     "my grandmother would sing old songs while she cooked dinner",
+     "while she cooked dinner my grandmother would sing old songs",
+     "while my grandmother cooked dinner she would sing old songs"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:36"
+  }
+ },
+ "r11-036": {
+  "hash": "a82c9aca5a59636f",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | on long car journeys my brother and i would play word games",
+  "src": "zz-blind-gap-points-b12-1.csv:37",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "on long car journeys my brother and i would play word games",
+   "also": [
+    "my brother and i would play word games on long car journeys"
+   ]
+  },
+  "item": {
+   "id": "c-3328",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *would* + base verb + the rest: *my brother and I would play*. The *on long car journeys* part can go first or last.",
+   "why_lv": "Teikuma priekšmets + *would* + pamatforma + pārējais: *my brother and I would play*. *on long car journeys* daļu var likt sākumā vai beigās.",
+   "sentence": "on long car journeys my brother and i would play word games",
+   "answers": [
+    [
+     "on long car journeys my brother and i would play word games",
+     "my brother and i would play word games on long car journeys"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:37"
+  }
+ },
+ "r11-037": {
+  "hash": "26c97c2e7d6f512a",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | we used to have a garden where we would grow our own vegetables",
+  "src": "zz-blind-gap-points-b12-1.csv:38",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we used to have a garden where we would grow our own vegetables",
+   "also": []
+  },
+  "item": {
+   "id": "c-3329",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *We used to have a garden where we would grow vegetables.*",
+   "why_lv": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *We used to have a garden where we would grow vegetables.*",
+   "sentence": "we used to have a garden where we would grow our own vegetables",
+   "answers": [
+    [
+     "we used to have a garden where we would grow our own vegetables"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:38"
+  }
+ },
+ "r11-038": {
+  "hash": "38367e80a8084e81",
+  "gate_key": "used_to | B1.2 | gap | Before I moved here, I ___ a cat that always slept on my laptop. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:39",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "used to have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3330",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Before I moved here, I ___ a cat that always slept on my laptop.",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "answers": [
+    [
+     "used to have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "used to have",
+    "would have",
+    "was having"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:39"
+  }
+ },
+ "r11-039": {
+  "hash": "73830d4f68c035e8",
+  "gate_key": "used_to | B1.2 | gap | Every August my grandmother ___ jam from the berries we picked in the forest. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:40",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would make"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3331",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Every August my grandmother ___ jam from the berries we picked in the forest.",
+   "why": "After *would* comes the base verb, with no *to* and no ending: *I would sing*, not *would sang* or *would to sing*.",
+   "why_lv": "Aiz *would* liek pamatformu bez galotnes: *I would sing*, nevis *would sang* vai *would to sing*.",
+   "answers": [
+    [
+     "would make"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "would make",
+    "would made",
+    "would to make"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:40"
+  }
+ },
+ "r11-040": {
+  "hash": "3493dead1b9e8f93",
+  "gate_key": "used_to | B1.2 | gap | Before they retired, my parents ___ in a flat in the city centre. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:41",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "used to live"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3332",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Before they retired, my parents ___ in a flat in the city centre.",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "answers": [
+    [
+     "used to live"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "used to live",
+    "would live",
+    "use to live"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:41"
+  }
+ },
+ "r11-041": {
+  "hash": "48b2476a11f0b7bf",
+  "gate_key": "used_to | B1.2 | gap | In my first job, my boss ___ ___ us coffee every Monday morning. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:42",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would"
+    ],
+    [
+     "bring"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3333",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "In my first job, my boss ___ ___ us coffee every Monday morning.",
+   "why": "After *would* comes the base verb, with no *to* and no ending: *I would sing*, not *would sang* or *would to sing*.",
+   "why_lv": "Aiz *would* liek pamatformu bez galotnes: *I would sing*, nevis *would sang* vai *would to sing*.",
+   "answers": [
+    [
+     "would"
+    ],
+    [
+     "bring"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "would",
+    "bring",
+    "brought",
+    "to"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:42"
+  }
+ },
+ "r11-042": {
+  "hash": "7854710561bb437f",
+  "gate_key": "used_to | B1.2 | match | Match each beginning with its ending. | When I was a student, I used to = have very long hair. ; When it snowed, my dad would = take us sledging in the park. ; Before the bridge was built, people would = cross the river by ferry. ; My parents didn't use to = like my friends, but now they do.",
+  "src": "zz-blind-gap-points-b12-1.csv:43",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "When I was a student, I used to",
+     "have very long hair."
+    ],
+    [
+     "When it snowed, my dad would",
+     "take us sledging in the park."
+    ],
+    [
+     "Before the bridge was built, people would",
+     "cross the river by ferry."
+    ],
+    [
+     "My parents didn't use to",
+     "like my friends, but now they do."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3334",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *We used to have a garden where we would grow vegetables.*",
+   "why_lv": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *We used to have a garden where we would grow vegetables.*",
+   "pairs": [
+    [
+     "When I was a student, I used to",
+     "have very long hair."
+    ],
+    [
+     "When it snowed, my dad would",
+     "take us sledging in the park."
+    ],
+    [
+     "Before the bridge was built, people would",
+     "cross the river by ferry."
+    ],
+    [
+     "My parents didn't use to",
+     "like my friends, but now they do."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:43"
+  }
+ },
+ "r11-043": {
+  "hash": "dd8ea74cbd881abf",
+  "gate_key": "used_to | B1.2 | gap | When I was a student, I ___ a really old car that broke down every week. (have) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:44",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "used to have",
+     "had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3335",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I was a student, I ___ a really old car that broke down every week. (have)",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "answers": [
+    [
+     "used to have",
+     "had"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:44"
+  }
+ },
+ "r11-044": {
+  "hash": "a3a23b95d6d67e22",
+  "gate_key": "used_to | B1.2 | gap | When I worked at the market, I ___ every customer by name. (know) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:45",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "used to know",
+     "knew"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3336",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I worked at the market, I ___ every customer by name. (know)",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "answers": [
+    [
+     "used to know",
+     "knew"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:45"
+  }
+ },
+ "r11-045": {
+  "hash": "885e949d606ea04c",
+  "gate_key": "used_to | B1.2 | gap | Use *would*: Every Sunday my grandfather ___ us fishing on the lake. (take) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:46",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would take",
+     "'d take"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3337",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Use *would*: Every Sunday my grandfather ___ us fishing on the lake. (take)",
+   "why": "After *would* comes the base verb, with no *to* and no ending: *I would sing*, not *would sang* or *would to sing*.",
+   "why_lv": "Aiz *would* liek pamatformu bez galotnes: *I would sing*, nevis *would sang* vai *would to sing*.",
+   "answers": [
+    [
+     "would take",
+     "'d take"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:46"
+  }
+ },
+ "r11-046": {
+  "hash": "4f0157d138450d47",
+  "gate_key": "used_to | B1.2 | gap | When we were kids, my sister and I ___ for hours about whose turn it was to wash up. (argue) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:47",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would argue",
+     "'d argue",
+     "used to argue",
+     "argued"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3338",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When we were kids, my sister and I ___ for hours about whose turn it was to wash up. (argue)",
+   "why": "*would* + base verb: an action that happened again and again in the past. *used to* and the Past Simple are also correct here.",
+   "why_lv": "*would* + pamatforma: darbība, kas pagātnē atkārtojās. Šeit der arī *used to* un Past Simple.",
+   "answers": [
+    [
+     "would argue",
+     "'d argue",
+     "used to argue",
+     "argued"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:47"
+  }
+ },
+ "r11-047": {
+  "hash": "c07d9cf096c8db7f",
+  "gate_key": "used_to | B1.2 | gap | Last month I ___ to Tallinn for a job interview, and I got the job! (go) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:48",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "went"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3339",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Last month I ___ to Tallinn for a job interview, and I got the job! (go)",
+   "why": "One finished event at a given time (*last month*) takes the Past Simple. *would* and *used to* are for things that happened many times.",
+   "why_lv": "Vienam pabeigtam notikumam noteiktā laikā (*last month*) lieto Past Simple. *would* un *used to* lieto tam, kas notika daudzas reizes.",
+   "answers": [
+    [
+     "went"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:48"
+  }
+ },
+ "r11-048": {
+  "hash": "24a4649e5e122284",
+  "gate_key": "used_to | B1.2 | text | Say it another way with *would*: When I was young, my father used to cook pancakes every Saturday. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:49",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "When I was young, my father would cook pancakes every Saturday.",
+     "My father would cook pancakes every Saturday when I was young.",
+     "my father would cook pancakes every Saturday when I was young."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3340",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *would*: When I was young, my father used to cook pancakes every Saturday.",
+   "why": "*would* + base verb: an action that happened again and again in the past. *used to* and the Past Simple are also correct here.",
+   "why_lv": "*would* + pamatforma: darbība, kas pagātnē atkārtojās. Šeit der arī *used to* un Past Simple.",
+   "answers": [
+    [
+     "When I was young, my father would cook pancakes every Saturday.",
+     "My father would cook pancakes every Saturday when I was young.",
+     "my father would cook pancakes every Saturday when I was young."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:49"
+  }
+ },
+ "r11-049": {
+  "hash": "a21c5b72d5492678",
+  "gate_key": "used_to | B1.2 | text | Correct the mistake: When I was a child, I would have a little garden of my own. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:50",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "When I was a child, I used to have a little garden of my own.",
+     "When I was a child, I had a little garden of my own.",
+     "I used to have a little garden of my own when I was a child.",
+     "I had a little garden of my own when I was a child."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3341",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: When I was a child, I would have a little garden of my own.",
+   "why": "*have, live, know, like, own* are states, not actions: use *used to* (or the Past Simple), not *would*: *I used to have a dog.*",
+   "why_lv": "*have, live, know, like, own* ir stāvokļa darbības vārdi: lieto *used to* (vai Past Simple), nevis *would*: *I used to have a dog.*",
+   "answers": [
+    [
+     "When I was a child, I used to have a little garden of my own.",
+     "When I was a child, I had a little garden of my own.",
+     "I used to have a little garden of my own when I was a child.",
+     "I had a little garden of my own when I was a child."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:50"
+  }
+ },
+ "r11-050": {
+  "hash": "49989b04749aac05",
+  "gate_key": "used_to | B1.2 | text | Correct the mistake: Last weekend we would go hiking in the mountains. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:51",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Last weekend we went hiking in the mountains.",
+     "We went hiking in the mountains last weekend."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3342",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Last weekend we would go hiking in the mountains.",
+   "why": "One finished event at a given time (*last weekend*) takes the Past Simple. *would* and *used to* are for things that happened many times.",
+   "why_lv": "Vienam pabeigtam notikumam noteiktā laikā (*last weekend*) lieto Past Simple. *would* un *used to* lieto tam, kas notika daudzas reizes.",
+   "answers": [
+    [
+     "Last weekend we went hiking in the mountains.",
+     "We went hiking in the mountains last weekend."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:51"
+  }
+ },
+ "r11-051": {
+  "hash": "a5ed3c5d0306a4ba",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: We ___ a taxi to the airport, because the bus was so slow that we missed our flight. | should have taken",
+  "src": "zz-blind-gap-points-b12-1.csv:52",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "should have taken",
+   "wrong": [
+    "should took",
+    "should have took",
+    "should had taken"
+   ]
+  },
+  "item": {
+   "id": "c-3343",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We ___ a taxi to the airport, because the bus was so slow that we missed our flight.",
+   "why": "*should have* + 3rd form: *taken*, not the past *took*. The taxi was the right choice, but we did not take it.",
+   "why_lv": "*should have* + 3. forma: *taken*, nevis pagātnes forma *took*. *Taksometrs* būtu bijis pareizā izvēle, bet mēs to neņēmām.",
+   "correct": "should have taken",
+   "wrong": [
+    "should took",
+    "should have took",
+    "should had taken"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:52"
+  }
+ },
+ "r11-052": {
+  "hash": "f63842a804e34bf9",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: You ___ at the waiter, because it wasn't his fault that the kitchen was slow. | shouldn't have shouted",
+  "src": "zz-blind-gap-points-b12-1.csv:53",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "shouldn't have shouted",
+   "wrong": [
+    "shouldn't shouted",
+    "shouldn't have shout",
+    "didn't should have shouted"
+   ]
+  },
+  "item": {
+   "id": "c-3344",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: You ___ at the waiter, because it wasn't his fault that the kitchen was slow.",
+   "why": "*shouldn't have* + 3rd form: you shouted, and that was wrong. The negative is *shouldn't have*, never *didn't should*.",
+   "why_lv": "*shouldn't have* + 3. forma: tu kliedzi, un tas bija nepareizi. Noliegums ir *shouldn't have*, nekad *didn't should*.",
+   "correct": "shouldn't have shouted",
+   "wrong": [
+    "shouldn't shouted",
+    "shouldn't have shout",
+    "didn't should have shouted"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:53"
+  }
+ },
+ "r11-053": {
+  "hash": "b4993d5de0198515",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: She ___ a great doctor, but she decided to study music instead. | could have been",
+  "src": "zz-blind-gap-points-b12-1.csv:54",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "could have been",
+   "wrong": [
+    "could been",
+    "could have be",
+    "could had been"
+   ]
+  },
+  "item": {
+   "id": "c-3345",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She ___ a great doctor, but she decided to study music instead.",
+   "why": "*could have* + 3rd form = it was possible, but it did not happen: *We could have won.*",
+   "why_lv": "*could have* + 3. forma = tas bija iespējams, bet nenotika: *We could have won.* (Mēs varējām uzvarēt.) Tulkojot burtiski, varējām uzvarēt šķiet *could win*, bet par iespēju, kas nenotika, angliski saka *could have won*.",
+   "correct": "could have been",
+   "wrong": [
+    "could been",
+    "could have be",
+    "could had been"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:54"
+  }
+ },
+ "r11-054": {
+  "hash": "09ed92318cd2aff9",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Why didn't you tell me about the delay? You ___ me before I left home. | should have told",
+  "src": "zz-blind-gap-points-b12-1.csv:55",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "should have told",
+   "wrong": [
+    "must have told",
+    "should have tell",
+    "should had told"
+   ]
+  },
+  "item": {
+   "id": "c-3346",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Why didn't you tell me about the delay? You ___ me before I left home.",
+   "why": "You did not tell me, and that was wrong: *should have told*. *must have told* would mean 'I am sure you told me', and the first sentence says you did not.",
+   "why_lv": "Tu man nepateici, un tas bija nepareizi: *should have told*. *must have told* nozīmētu 'esmu pārliecināts, ka tu pateici', bet pirmais teikums saka, ka nepateici.",
+   "correct": "should have told",
+   "wrong": [
+    "must have told",
+    "should have tell",
+    "should had told"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:55"
+  }
+ },
+ "r11-055": {
+  "hash": "cdfa2fce2f9927f8",
+  "gate_key": "more_modals | B1.2 | mcq | Choose the correct option: Sorry, I should ___ called you last night, but my phone battery was dead. | have",
+  "src": "zz-blind-gap-points-b12-1.csv:56",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "have",
+   "wrong": [
+    "of",
+    "had"
+   ]
+  },
+  "item": {
+   "id": "c-3347",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Sorry, I should ___ called you last night, but my phone battery was dead.",
+   "why": "*should have* + 3rd form. In speech *should've* sounds like *should of*, but we always write *have*. *should had* is not English.",
+   "why_lv": "*should have* + 3. forma. Runā *should've* izklausās pēc *should of*, bet raksta vienmēr *have*. *should had* angliski nesaka.",
+   "correct": "have",
+   "wrong": [
+    "of",
+    "had"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:56"
+  }
+ },
+ "r11-056": {
+  "hash": "f18b3374a75d7c46",
+  "gate_key": "more_modals | B1.2 | mcq | Which sentence is correct? | You should have checked the figures before you sent the report.",
+  "src": "zz-blind-gap-points-b12-1.csv:57",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "You should have checked the figures before you sent the report.",
+   "wrong": [
+    "You should checked the figures before you sent the report.",
+    "You should have check the figures before you sent the report.",
+    "You should had checked the figures before you sent the report."
+   ]
+  },
+  "item": {
+   "id": "c-3348",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "After *should* comes *have* + 3rd form: *should have checked*, not *should checked*, *should have check* or *should had checked*.",
+   "why_lv": "Aiz *should* nāk *have* + 3. forma: *should have checked*, nevis *should checked, should have check* vai *should had checked*.",
+   "correct": "You should have checked the figures before you sent the report.",
+   "wrong": [
+    "You should checked the figures before you sent the report.",
+    "You should have check the figures before you sent the report.",
+    "You should had checked the figures before you sent the report."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:57"
+  }
+ },
+ "r11-057": {
+  "hash": "5dadc4875596bd5e",
+  "gate_key": "more_modals | B1.2 | mcq | Which sentence is NOT correct? | You should of booked the tickets much earlier.",
+  "src": "zz-blind-gap-points-b12-1.csv:58",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "You should of booked the tickets much earlier.",
+   "wrong": [
+    "I shouldn't have eaten so much last night.",
+    "We could have driven, but we took the train.",
+    "You should have seen the view from the top."
+   ]
+  },
+  "item": {
+   "id": "c-3349",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*should of* is a spelling mistake: in speech *should've* sounds like *should of*, but we write *should have booked*.",
+   "why_lv": "*should of* ir pareizrakstības kļūda: runā *should've* izklausās pēc *should of*, bet raksta *should have booked*.",
+   "correct": "You should of booked the tickets much earlier.",
+   "wrong": [
+    "I shouldn't have eaten so much last night.",
+    "We could have driven, but we took the train.",
+    "You should have seen the view from the top."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:58"
+  }
+ },
+ "r11-058": {
+  "hash": "39c04cc2332b9155",
+  "gate_key": "more_modals | B1.2 | order | Put the words in order. | you should have told me that the train was cancelled",
+  "src": "zz-blind-gap-points-b12-1.csv:59",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "you should have told me that the train was cancelled",
+   "also": []
+  },
+  "item": {
+   "id": "c-3350",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*should have* + 3rd form = it was the right thing to do, but it did not happen: *You should have told me.*",
+   "why_lv": "*should have* + 3. forma = tā būtu bijis pareizi, bet tas netika izdarīts: *You should have told me.* (*Tev* vajadzēja man pateikt.)",
+   "sentence": "you should have told me that the train was cancelled",
+   "answers": [
+    [
+     "you should have told me that the train was cancelled"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:59"
+  }
+ },
+ "r11-059": {
+  "hash": "23a126c0b834a554",
+  "gate_key": "more_modals | B1.2 | order | Put the words in order. | i shouldn't have bought these shoes without trying them on",
+  "src": "zz-blind-gap-points-b12-1.csv:60",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i shouldn't have bought these shoes without trying them on",
+   "also": []
+  },
+  "item": {
+   "id": "c-3351",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*shouldn't have* + 3rd form = it happened, but it was wrong: *You shouldn't have shouted.*",
+   "why_lv": "*shouldn't have* + 3. forma = tas notika, bet tas bija nepareizi: *You shouldn't have shouted.* (*Tev* nevajadzēja kliegt.)",
+   "sentence": "i shouldn't have bought these shoes without trying them on",
+   "answers": [
+    [
+     "i shouldn't have bought these shoes without trying them on"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:60"
+  }
+ },
+ "r11-060": {
+  "hash": "79fc0dc1a474f7a4",
+  "gate_key": "more_modals | B1.2 | order | Put the words in order. | she could have got the job but she didn't apply in time",
+  "src": "zz-blind-gap-points-b12-1.csv:61",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "she could have got the job but she didn't apply in time",
+   "also": []
+  },
+  "item": {
+   "id": "c-3352",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*could have* + 3rd form = it was possible, but it did not happen: *We could have won.*",
+   "why_lv": "*could have* + 3. forma = tas bija iespējams, bet nenotika: *We could have won.* (Mēs varējām uzvarēt.) Tulkojot burtiski, varējām uzvarēt šķiet *could win*, bet par iespēju, kas nenotika, angliski saka *could have won*.",
+   "sentence": "she could have got the job but she didn't apply in time",
+   "answers": [
+    [
+     "she could have got the job but she didn't apply in time"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:61"
+  }
+ },
+ "r11-061": {
+  "hash": "05e5f04e479e83d2",
+  "gate_key": "more_modals | B1.2 | order | Put the words in order. | you could have asked me for help instead of doing it alone",
+  "src": "zz-blind-gap-points-b12-1.csv:62",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "you could have asked me for help instead of doing it alone",
+   "also": [
+    "instead of doing it alone you could have asked me for help"
+   ]
+  },
+  "item": {
+   "id": "c-3353",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*could have* + 3rd form can also criticise: it was possible, and the person did not do it: *You could have called me.*",
+   "why_lv": "*could have* + 3. forma var arī pārmest: tas bija iespējams, bet cilvēks to neizdarīja: *You could have called me.* (Tu varēji man piezvanīt.)",
+   "sentence": "you could have asked me for help instead of doing it alone",
+   "answers": [
+    [
+     "you could have asked me for help instead of doing it alone",
+     "instead of doing it alone you could have asked me for help"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:62"
+  }
+ },
+ "r11-062": {
+  "hash": "d2ccb8a28d01ee4a",
+  "gate_key": "more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said when my boss asked about the delay",
+  "src": "zz-blind-gap-points-b12-1.csv:63",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "what should i have said when my boss asked about the delay",
+   "also": [
+    "when my boss asked about the delay what should i have said"
+   ]
+  },
+  "item": {
+   "id": "c-3354",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Question: question word + *should* + subject + *have* + 3rd form: *What should I have said?*",
+   "why_lv": "Jautājums: jautājamais vārds + *should* + teik. priekšmets + *have* + 3. forma: *What should I have said?*",
+   "sentence": "what should i have said when my boss asked about the delay",
+   "answers": [
+    [
+     "what should i have said when my boss asked about the delay",
+     "when my boss asked about the delay what should i have said"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:63"
+  }
+ },
+ "r11-063": {
+  "hash": "d05f8f89acc70a86",
+  "gate_key": "more_modals | B1.2 | gap | You shouldn't ___ ___ the oven on when you went out this morning. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:64",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "left"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3355",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "You shouldn't ___ ___ the oven on when you went out this morning.",
+   "why": "*shouldn't have* + 3rd form = it happened, but it was wrong: *You shouldn't have shouted.*",
+   "why_lv": "*shouldn't have* + 3. forma = tas notika, bet tas bija nepareizi: *You shouldn't have shouted.* (*Tev* nevajadzēja kliegt.)",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "left"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "left",
+    "had",
+    "leave"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:64"
+  }
+ },
+ "r11-064": {
+  "hash": "d23bc0a58bcaf9bd",
+  "gate_key": "more_modals | B1.2 | gap | We could ___ ___ the earlier ferry, but we decided to stay another night. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:65",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "taken"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3356",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We could ___ ___ the earlier ferry, but we decided to stay another night.",
+   "why": "*could have* + 3rd form = it was possible, but it did not happen: *We could have won.*",
+   "why_lv": "*could have* + 3. forma = tas bija iespējams, bet nenotika: *We could have won.* (Mēs varējām uzvarēt.) Tulkojot burtiski, varējām uzvarēt šķiet *could win*, bet par iespēju, kas nenotika, angliski saka *could have won*.",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "taken"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "taken",
+    "took",
+    "had"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:65"
+  }
+ },
+ "r11-065": {
+  "hash": "1763cdeb55ce45e4",
+  "gate_key": "more_modals | B1.2 | gap | Sorry, I should ___ you that the office was closed on Monday. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:66",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have told"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3357",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Sorry, I should ___ you that the office was closed on Monday.",
+   "why": "After *should / could* comes *have* + 3rd form: *should have told*, not *should told*, *should have tell* or *should had told*.",
+   "why_lv": "Aiz *should / could* nāk *have* + 3. forma: *should have told*, nevis *should told, should have tell* vai *should had told*. Tulkojot burtiski, vajadzēja pateikt šķiet *should told*, bet angliski pagātni rāda *have* + 3. forma.",
+   "answers": [
+    [
+     "have told"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have told",
+    "told",
+    "had told"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:66"
+  }
+ },
+ "r11-066": {
+  "hash": "fdc7ca38d1da0a0c",
+  "gate_key": "more_modals | B1.2 | gap | I ___ ___ studied for the exam, but I spent the whole weekend watching TV series. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:67",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should"
+    ],
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3358",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ ___ studied for the exam, but I spent the whole weekend watching TV series.",
+   "why": "I did not study, and that was a mistake: *should have studied*. *must have studied* would be a guess that I studied; *should had* is not English.",
+   "why_lv": "Es nemācījos, un tā bija kļūda: *should have studied*. *must have studied* būtu minējums, ka es mācījos; *should had* angliski nesaka.",
+   "answers": [
+    [
+     "should"
+    ],
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "should",
+    "have",
+    "must",
+    "had"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:67"
+  }
+ },
+ "r11-067": {
+  "hash": "8f6a2fbafe0ac4df",
+  "gate_key": "more_modals | B1.2 | match | Match each situation with the comment. | You didn't wear a coat, and now you've got a cold. = You should have worn one. ; You laughed at his new haircut, and he was upset. = You shouldn't have laughed. ; We missed the last bus and walked home in the rain. = We could have taken a taxi. ; You knew about the problem but said nothing. = You should have told someone.",
+  "src": "zz-blind-gap-points-b12-1.csv:68",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "You didn't wear a coat, and now you've got a cold.",
+     "You should have worn one."
+    ],
+    [
+     "You laughed at his new haircut, and he was upset.",
+     "You shouldn't have laughed."
+    ],
+    [
+     "We missed the last bus and walked home in the rain.",
+     "We could have taken a taxi."
+    ],
+    [
+     "You knew about the problem but said nothing.",
+     "You should have told someone."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3359",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each situation with the comment.",
+   "why": "*should have* + 3rd form = it did not happen, and that was a mistake. *shouldn't have* = it happened, and that was a mistake. *could have* = it was possible, but it did not happen.",
+   "why_lv": "*should have* + 3. forma = tas nenotika, un tā bija kļūda. *shouldn't have* = tas notika, un tā bija kļūda. *could have* = tas bija iespējams, bet nenotika.",
+   "pairs": [
+    [
+     "You didn't wear a coat, and now you've got a cold.",
+     "You should have worn one."
+    ],
+    [
+     "You laughed at his new haircut, and he was upset.",
+     "You shouldn't have laughed."
+    ],
+    [
+     "We missed the last bus and walked home in the rain.",
+     "We could have taken a taxi."
+    ],
+    [
+     "You knew about the problem but said nothing.",
+     "You should have told someone."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:68"
+  }
+ },
+ "r11-068": {
+  "hash": "e775952af36425e1",
+  "gate_key": "more_modals | B1.2 | gap | You ___ me about the party. I would have loved to come! (should / tell) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:69",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should have told",
+     "should've told",
+     "ought to have told"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3360",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "You ___ me about the party. I would have loved to come! (should / tell)",
+   "why": "*should have* + 3rd form = it was the right thing to do, but it did not happen: *You should have told me.*",
+   "why_lv": "*should have* + 3. forma = tā būtu bijis pareizi, bet tas netika izdarīts: *You should have told me.* (*Tev* vajadzēja man pateikt.)",
+   "answers": [
+    [
+     "should have told",
+     "should've told",
+     "ought to have told"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:69"
+  }
+ },
+ "r11-069": {
+  "hash": "1496b3a159fd6663",
+  "gate_key": "more_modals | B1.2 | gap | I ___ so much at the wedding. I felt terrible the next morning. (should / not / drink) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:70",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "shouldn't have drunk",
+     "should not have drunk",
+     "oughtn't to have drunk",
+     "ought not to have drunk"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3361",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ so much at the wedding. I felt terrible the next morning. (should / not / drink)",
+   "why": "*shouldn't have* + 3rd form = it happened, but it was wrong: *You shouldn't have shouted.*",
+   "why_lv": "*shouldn't have* + 3. forma = tas notika, bet tas bija nepareizi: *You shouldn't have shouted.* (*Tev* nevajadzēja kliegt.)",
+   "answers": [
+    [
+     "shouldn't have drunk",
+     "should not have drunk",
+     "oughtn't to have drunk",
+     "ought not to have drunk"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:70"
+  }
+ },
+ "r11-070": {
+  "hash": "d434b59e878a6687",
+  "gate_key": "more_modals | B1.2 | gap | We ___ the final, but we missed two penalties in the last ten minutes. (could / win) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:71",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "could have won",
+     "could've won"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3362",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We ___ the final, but we missed two penalties in the last ten minutes. (could / win)",
+   "why": "*could have* + 3rd form = it was possible, but it did not happen: *We could have won.*",
+   "why_lv": "*could have* + 3. forma = tas bija iespējams, bet nenotika: *We could have won.* (Mēs varējām uzvarēt.) Tulkojot burtiski, varējām uzvarēt šķiet *could win*, bet par iespēju, kas nenotika, angliski saka *could have won*.",
+   "answers": [
+    [
+     "could have won",
+     "could've won"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:71"
+  }
+ },
+ "r11-071": {
+  "hash": "27db09bf3b496312",
+  "gate_key": "more_modals | B1.2 | gap | We ___ the whole day at the beach yesterday, but we stayed in the hotel because of the clouds. (could / spend) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:72",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "could have spent",
+     "could've spent"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3363",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We ___ the whole day at the beach yesterday, but we stayed in the hotel because of the clouds. (could / spend)",
+   "why": "*could have* + 3rd form = it was possible, but it did not happen: *We could have won.*",
+   "why_lv": "*could have* + 3. forma = tas bija iespējams, bet nenotika: *We could have won.* (Mēs varējām uzvarēt.) Tulkojot burtiski, varējām uzvarēt šķiet *could win*, bet par iespēju, kas nenotika, angliski saka *could have won*.",
+   "answers": [
+    [
+     "could have spent",
+     "could've spent"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:72"
+  }
+ },
+ "r11-072": {
+  "hash": "9341533d630b85c5",
+  "gate_key": "more_modals | B1.2 | gap | You ___ me back last night. Your phone was with you all evening! (could / call) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:73",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "could have called",
+     "could've called"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3364",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "You ___ me back last night. Your phone was with you all evening! (could / call)",
+   "why": "*could have* + 3rd form can also criticise: it was possible, and the person did not do it: *You could have called me.*",
+   "why_lv": "*could have* + 3. forma var arī pārmest: tas bija iespējams, bet cilvēks to neizdarīja: *You could have called me.* (Tu varēji man piezvanīt.)",
+   "answers": [
+    [
+     "could have called",
+     "could've called"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:73"
+  }
+ },
+ "r11-073": {
+  "hash": "767d798ff021c9fc",
+  "gate_key": "more_modals | B1.2 | text | Make it negative: I should have told Anna what you said about her new boyfriend. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:74",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I shouldn't have told Anna what you said about her new boyfriend.",
+     "I should not have told Anna what you said about her new boyfriend.",
+     "I oughtn't to have told Anna what you said about her new boyfriend.",
+     "I ought not to have told Anna what you said about her new boyfriend.",
+     "I shouldn't've told Anna what you said about her new boyfriend."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3365",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: I should have told Anna what you said about her new boyfriend.",
+   "why": "*shouldn't have* + 3rd form = it happened, but it was wrong: *You shouldn't have shouted.*",
+   "why_lv": "*shouldn't have* + 3. forma = tas notika, bet tas bija nepareizi: *You shouldn't have shouted.* (*Tev* nevajadzēja kliegt.)",
+   "answers": [
+    [
+     "I shouldn't have told Anna what you said about her new boyfriend.",
+     "I should not have told Anna what you said about her new boyfriend.",
+     "I oughtn't to have told Anna what you said about her new boyfriend.",
+     "I ought not to have told Anna what you said about her new boyfriend.",
+     "I shouldn't've told Anna what you said about her new boyfriend."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:74"
+  }
+ },
+ "r11-074": {
+  "hash": "cf33fbf833ed7324",
+  "gate_key": "more_modals | B1.2 | text | Start with *You shouldn't*: It was wrong of you to lend him your car for the whole weekend. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:75",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "You shouldn't have lent him your car for the whole weekend.",
+     "You shouldn't have lent your car to him for the whole weekend.",
+     "You shouldn't have lent him your car.",
+     "You shouldn't have lent your car to him."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3366",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *You shouldn't*: It was wrong of you to lend him your car for the whole weekend.",
+   "why": "It was wrong, and you did it: *You shouldn't have lent …* (*have* + 3rd form *lent*, not *lend* or *lended*).",
+   "why_lv": "Tas bija nepareizi, un tu to izdarīji: *You shouldn't have lent* … (*have* + 3. forma *lent*, nevis *lend* vai *lended*).",
+   "answers": [
+    [
+     "You shouldn't have lent him your car for the whole weekend.",
+     "You shouldn't have lent your car to him for the whole weekend.",
+     "You shouldn't have lent him your car.",
+     "You shouldn't have lent your car to him."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:75"
+  }
+ },
+ "r11-075": {
+  "hash": "eeb2489f546c1351",
+  "gate_key": "more_modals | B1.2 | text | Make a yes/no question: I should have told the manager about the mistake in the invoice. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:76",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Should I have told the manager about the mistake in the invoice?",
+     "Ought I to have told the manager about the mistake in the invoice?",
+     "Should I have told the manager about the mistake?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3367",
+   "skill": "more_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a yes/no question: I should have told the manager about the mistake in the invoice.",
+   "why": "Question: *Should* + subject + *have* + 3rd form: *Should I have told the manager …?*",
+   "why_lv": "Jautājums: *Should* + teik. priekšmets + *have* + 3. forma: *Should I have told the manager* …?",
+   "answers": [
+    [
+     "Should I have told the manager about the mistake in the invoice?",
+     "Ought I to have told the manager about the mistake in the invoice?",
+     "Should I have told the manager about the mistake?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:76"
+  }
+ },
+ "r11-076": {
+  "hash": "cdb8c4a76c90ffa5",
+  "gate_key": "agreement | B1.2 | mcq | Choose the correct option: ___ in our new hotel has a balcony, so guests can have breakfast outside. | Every room",
+  "src": "zz-blind-gap-points-b12-1.csv:77",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Every room",
+   "wrong": [
+    "Every rooms",
+    "All room",
+    "Each of room"
+   ]
+  },
+  "item": {
+   "id": "c-3368",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ in our new hotel has a balcony, so guests can have breakfast outside.",
+   "why": "*every* and *each* + singular noun + singular verb: *Every room has…*, *Each student gets…*.",
+   "why_lv": "Aiz *every* un *each* ir lietvārds vienskaitlī un darbības vārds vienskaitlī: *Every room has*…, *Each student gets*….",
+   "correct": "Every room",
+   "wrong": [
+    "Every rooms",
+    "All room",
+    "Each of room"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:77"
+  }
+ },
+ "r11-077": {
+  "hash": "7a94d1c6ed29d0a8",
+  "gate_key": "agreement | B1.2 | mcq | Choose the correct option: At the end of the course, each ___ a certificate, even if they missed a class. | student gets",
+  "src": "zz-blind-gap-points-b12-1.csv:78",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "student gets",
+   "wrong": [
+    "students get",
+    "student get",
+    "students gets"
+   ]
+  },
+  "item": {
+   "id": "c-3369",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: At the end of the course, each ___ a certificate, even if they missed a class.",
+   "why": "*every* and *each* + singular noun + singular verb: *Every room has…*, *Each student gets…*.",
+   "why_lv": "Aiz *every* un *each* ir lietvārds vienskaitlī un darbības vārds vienskaitlī: *Every room has*…, *Each student gets*….",
+   "correct": "student gets",
+   "wrong": [
+    "students get",
+    "student get",
+    "students gets"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:78"
+  }
+ },
+ "r11-078": {
+  "hash": "05e9c11c85d7ec1b",
+  "gate_key": "agreement | B1.2 | mcq | Choose the correct option: I've known Marta ___ because our mothers were best friends. | my whole life",
+  "src": "zz-blind-gap-points-b12-1.csv:79",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "my whole life",
+   "wrong": [
+    "my all life",
+    "whole my life",
+    "the whole my life"
+   ]
+  },
+  "item": {
+   "id": "c-3370",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I've known Marta ___ because our mothers were best friends.",
+   "why": "*whole* comes after *the / my*: *the whole day*, *my whole life* (= *all day*, *all my life*). Not *my all life*, not *whole the day*.",
+   "why_lv": "*whole* liek aiz *the / my*: *the whole day, my whole life* (= *all day, all my life*). Nevis *my all life* un nevis *whole the day*.",
+   "correct": "my whole life",
+   "wrong": [
+    "my all life",
+    "whole my life",
+    "the whole my life"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:79"
+  }
+ },
+ "r11-079": {
+  "hash": "bbb4e9be2922a552",
+  "gate_key": "agreement | B1.2 | mcq | Choose the correct option: I was so tired after the night flight that I stayed in bed ___ on Sunday. | all day",
+  "src": "zz-blind-gap-points-b12-1.csv:80",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "all day",
+   "wrong": [
+    "every day",
+    "all the days",
+    "whole day"
+   ]
+  },
+  "item": {
+   "id": "c-3371",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I was so tired after the night flight that I stayed in bed ___ on Sunday.",
+   "why": "*all day* = the whole day, from morning to evening (no *the*: not *all the day*); *every day* = on each day: Monday, Tuesday…",
+   "why_lv": "*all day* = visu dienu, no rīta līdz vakaram (bez *the*); *every day* = katru dienu: pirmdien, otrdien…",
+   "correct": "all day",
+   "wrong": [
+    "every day",
+    "all the days",
+    "whole day"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:80"
+  }
+ },
+ "r11-080": {
+  "hash": "af3dd263e1854daa",
+  "gate_key": "agreement | B1.2 | mcq | Which sentence is correct? | Each of the flats in our building has its own parking space.",
+  "src": "zz-blind-gap-points-b12-1.csv:81",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Each of the flats in our building has its own parking space.",
+   "wrong": [
+    "Each of flats in our building has its own parking space.",
+    "Every of the flats in our building has its own parking space.",
+    "Each the flats in our building has its own parking space."
+   ]
+  },
+  "item": {
+   "id": "c-3372",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*each of* + *the / my / them* + plural noun: *each of the flats*, *each of my brothers*. *every* cannot go before *of*: say *every one of them*.",
+   "why_lv": "Tulkojot burtiski katrs no…, gribas teikt *every of*. Angliski saka *each of + the / my / them* + daudzskaitlis (*each of the flats*) vai *every one of them*.",
+   "correct": "Each of the flats in our building has its own parking space.",
+   "wrong": [
+    "Each of flats in our building has its own parking space.",
+    "Every of the flats in our building has its own parking space.",
+    "Each the flats in our building has its own parking space."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:81"
+  }
+ },
+ "r11-081": {
+  "hash": "dcf7490e99388fb2",
+  "gate_key": "agreement | B1.2 | mcq | Which sentence is NOT correct? | Every player in our club get a free shirt in spring.",
+  "src": "zz-blind-gap-points-b12-1.csv:82",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Every player in our club get a free shirt in spring.",
+   "wrong": [
+    "The whole village came to watch the concert in the park.",
+    "It snowed all day, so most of the trains were late.",
+    "Almost every shop in the centre closes at six."
+   ]
+  },
+  "item": {
+   "id": "c-3373",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*every* + singular noun + singular verb: *Every player gets*, not *get*. The other three are correct: *the whole village*, *all day*, *almost every shop … closes*.",
+   "why_lv": "Aiz *every* darbības vārds ir vienskaitlī: *Every player gets*, nevis *get*. Pārējie trīs ir pareizi: *the whole village, all day, almost every shop* … *closes*.",
+   "correct": "Every player in our club get a free shirt in spring.",
+   "wrong": [
+    "The whole village came to watch the concert in the park.",
+    "It snowed all day, so most of the trains were late.",
+    "Almost every shop in the centre closes at six."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:82"
+  }
+ },
+ "r11-082": {
+  "hash": "82fc2dd056b504ec",
+  "gate_key": "agreement | B1.2 | mcq | Choose the correct option: She was carrying a heavy bag in ___ hand, so she couldn't open the door. | each",
+  "src": "zz-blind-gap-points-b12-1.csv:83",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "each",
+   "wrong": [
+    "every",
+    "all",
+    "both"
+   ]
+  },
+  "item": {
+   "id": "c-3374",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She was carrying a heavy bag in ___ hand, so she couldn't open the door.",
+   "why": "For two things use *each*, not *every*: *in each hand*, *on each side*. *both* needs a plural noun: *in both hands*.",
+   "why_lv": "Divām lietām lieto *each*, nevis *every*: *in each hand, on each side*. Aiz *both* ir daudzskaitlis: *in both hands*.",
+   "correct": "each",
+   "wrong": [
+    "every",
+    "all",
+    "both"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:83"
+  }
+ },
+ "r11-083": {
+  "hash": "6770aed30d13cff6",
+  "gate_key": "agreement | B1.2 | gap | Write *each* or *every*: We tried three new apps for learning Spanish, and ___ of them was useful. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:84",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "each"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3375",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *each* or *every*: We tried three new apps for learning Spanish, and ___ of them was useful.",
+   "why": "*every* cannot go before *of*: *each of them* (or *every one of them*).",
+   "why_lv": "Tulkojot burtiski katrs no tiem, gribas teikt *every of them*. Pirms *of* lieto *each*: *each of them* (vai *every one of them*).",
+   "answers": [
+    [
+     "each"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:84"
+  }
+ },
+ "r11-084": {
+  "hash": "c74615178bdf3ab2",
+  "gate_key": "agreement | B1.2 | gap | Write *all* or *every*: The museum is open ___ day except Monday, from ten until six. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:85",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "every"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3376",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *all* or *every*: The museum is open ___ day except Monday, from ten until six.",
+   "why": "*every day* = on each day (here all days but Monday). *all day* = one whole day, from morning to evening.",
+   "why_lv": "*every day* = katru dienu (te visas dienas, izņemot pirmdienu). *all day* = visu vienu dienu, no rīta līdz vakaram.",
+   "answers": [
+    [
+     "every"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:85"
+  }
+ },
+ "r11-085": {
+  "hash": "47982d390c350cd6",
+  "gate_key": "agreement | B1.2 | gap | Every laptop in our office ___ the same password, which is not very safe. (have) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:86",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has",
+     "has got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3377",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Every laptop in our office ___ the same password, which is not very safe. (have)",
+   "why": "*every* and *each* + singular noun + singular verb: *Every room has…*, *Each student gets…*.",
+   "why_lv": "Aiz *every* un *each* ir lietvārds vienskaitlī un darbības vārds vienskaitlī: *Every room has*…, *Each student gets*….",
+   "answers": [
+    [
+     "has",
+     "has got"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:86"
+  }
+ },
+ "r11-086": {
+  "hash": "71d8ad9e92cf3d24",
+  "gate_key": "agreement | B1.2 | gap | Each of the ___ on our walking tour got a free map of the old town. (visitor) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:87",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "visitors"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3378",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Each of the ___ on our walking tour got a free map of the old town. (visitor)",
+   "why": "*each of the* + plural noun: *each of the visitors*. Without *of*: *each visitor*.",
+   "why_lv": "Aiz *each of the* ir daudzskaitlis: *each of the visitors*. Bez *of*: *each visitor*.",
+   "answers": [
+    [
+     "visitors"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:87"
+  }
+ },
+ "r11-087": {
+  "hash": "e9e1765bc808a30b",
+  "gate_key": "agreement | B1.2 | gap | Write *all* or *whole*: The ___ team stayed late on Friday to finish the project on time. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:88",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whole"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3379",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *all* or *whole*: The ___ team stayed late on Friday to finish the project on time.",
+   "why": "After *the* use *whole*: *the whole team*. *all* comes before *the*: *all the team*.",
+   "why_lv": "Aiz *the* lieto *whole*: *the whole team*. *all* liek pirms *the*: *all the team*.",
+   "answers": [
+    [
+     "whole"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:88"
+  }
+ },
+ "r11-088": {
+  "hash": "b3990ff843221be0",
+  "gate_key": "agreement | B1.2 | text | Say it another way with *whole*: I spent all day at the airport because my flight was cancelled. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:89",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I spent the whole day at the airport because my flight was cancelled.",
+     "Because my flight was cancelled, I spent the whole day at the airport."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3380",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *whole*: I spent all day at the airport because my flight was cancelled.",
+   "why": "*whole* comes after *the / my*: *the whole day*, *my whole life* (= *all day*, *all my life*). Not *my all life*, not *whole the day*.",
+   "why_lv": "*whole* liek aiz *the / my*: *the whole day, my whole life* (= *all day, all my life*). Nevis *my all life* un nevis *whole the day*.",
+   "answers": [
+    [
+     "I spent the whole day at the airport because my flight was cancelled.",
+     "Because my flight was cancelled, I spent the whole day at the airport."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:89"
+  }
+ },
+ "r11-089": {
+  "hash": "8004ab47eb9f0020",
+  "gate_key": "agreement | B1.2 | text | Say it another way with *every*: All the lessons at our language school last ninety minutes. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:90",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Every lesson at our language school lasts ninety minutes.",
+     "Every lesson at our language school lasts 90 minutes.",
+     "Every single lesson at our language school lasts ninety minutes.",
+     "Every single lesson at our language school lasts 90 minutes.",
+     "Every one of the lessons at our language school lasts ninety minutes.",
+     "Every one of the lessons at our language school lasts 90 minutes.",
+     "Every one of the lessons at our language school last ninety minutes.",
+     "Every one of the lessons at our language school last 90 minutes."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3381",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *every*: All the lessons at our language school last ninety minutes.",
+   "why": "*all the* + plural noun + plural verb (*All the lessons last*); *every* + singular noun + singular verb (*Every lesson lasts*).",
+   "why_lv": "Aiz *all the* ir daudzskaitlis (*All the lessons last*); aiz *every* ir vienskaitlis un darbības vārds ar *-s* (*Every lesson lasts*).",
+   "answers": [
+    [
+     "Every lesson at our language school lasts ninety minutes.",
+     "Every lesson at our language school lasts 90 minutes.",
+     "Every single lesson at our language school lasts ninety minutes.",
+     "Every single lesson at our language school lasts 90 minutes.",
+     "Every one of the lessons at our language school lasts ninety minutes.",
+     "Every one of the lessons at our language school lasts 90 minutes.",
+     "Every one of the lessons at our language school last ninety minutes.",
+     "Every one of the lessons at our language school last 90 minutes."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:90"
+  }
+ },
+ "r11-090": {
+  "hash": "ad3e0d8162bba5d8",
+  "gate_key": "agreement | B1.2 | text | Make a yes/no question: Every member of the team has access to the shared folder. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:91",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Does every member of the team have access to the shared folder?",
+     "Has every member of the team got access to the shared folder?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3382",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a yes/no question: Every member of the team has access to the shared folder.",
+   "why": "*every member* is singular, so the question uses *does*: *Does every member … have …?* After *does* the verb is *have*, not *has*.",
+   "why_lv": "*every member* ir vienskaitlī, tāpēc jautājumā lieto *does*: *Does every member* … *have* …? Aiz *does* ir *have*, nevis *has*.",
+   "answers": [
+    [
+     "Does every member of the team have access to the shared folder?",
+     "Has every member of the team got access to the shared folder?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:91"
+  }
+ },
+ "r11-091": {
+  "hash": "9b2412047ab74cb7",
+  "gate_key": "agreement | B1.2 | order | Put the words in order. | each of my sisters lives in a different country so we talk online",
+  "src": "zz-blind-gap-points-b12-1.csv:92",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "each of my sisters lives in a different country so we talk online",
+   "also": []
+  },
+  "item": {
+   "id": "c-3383",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*each of my sisters* + singular verb: *lives*.",
+   "why_lv": "*each of my sisters* + darbības vārds vienskaitlī: *lives*.",
+   "sentence": "each of my sisters lives in a different country so we talk online",
+   "answers": [
+    [
+     "each of my sisters lives in a different country so we talk online"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:92"
+  }
+ },
+ "r11-092": {
+  "hash": "43264c98c44138a8",
+  "gate_key": "agreement | B1.2 | order | Put the words in order to make a question. | does every guest need a ticket for tomorrow's boat trip",
+  "src": "zz-blind-gap-points-b12-1.csv:93",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "does every guest need a ticket for tomorrow's boat trip",
+   "also": []
+  },
+  "item": {
+   "id": "c-3384",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "*every guest* is singular: *Does every guest need …?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "*every guest* ir vienskaitlī: *Does every guest need* …? Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "does every guest need a ticket for tomorrow's boat trip",
+   "answers": [
+    [
+     "does every guest need a ticket for tomorrow's boat trip"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:93"
+  }
+ },
+ "r11-093": {
+  "hash": "25cd5ff3d489ddf1",
+  "gate_key": "agreement | B1.2 | order | Put the words in order. | we were stuck in traffic all day and missed the start of the wedding",
+  "src": "zz-blind-gap-points-b12-1.csv:94",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we were stuck in traffic all day and missed the start of the wedding",
+   "also": []
+  },
+  "item": {
+   "id": "c-3385",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*all day* = the whole day, from morning to evening (no *the*: not *all the day*); *every day* = on each day: Monday, Tuesday…",
+   "why_lv": "*all day* = visu dienu, no rīta līdz vakaram (bez *the*); *every day* = katru dienu: pirmdien, otrdien…",
+   "sentence": "we were stuck in traffic all day and missed the start of the wedding",
+   "answers": [
+    [
+     "we were stuck in traffic all day and missed the start of the wedding"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:94"
+  }
+ },
+ "r11-094": {
+  "hash": "2e1e9cb2abb98e11",
+  "gate_key": "agreement | B1.2 | order | Put the words in order. | i missed the match because i spent the whole evening answering emails",
+  "src": "zz-blind-gap-points-b12-1.csv:95",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i missed the match because i spent the whole evening answering emails",
+   "also": [
+    "because i spent the whole evening answering emails i missed the match"
+   ]
+  },
+  "item": {
+   "id": "c-3386",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*whole* comes after *the / my*: *the whole day*, *my whole life* (= *all day*, *all my life*). Not *my all life*, not *whole the day*.",
+   "why_lv": "*whole* liek aiz *the / my*: *the whole day, my whole life* (= *all day, all my life*). Nevis *my all life* un nevis *whole the day*.",
+   "sentence": "i missed the match because i spent the whole evening answering emails",
+   "answers": [
+    [
+     "i missed the match because i spent the whole evening answering emails",
+     "because i spent the whole evening answering emails i missed the match"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:95"
+  }
+ },
+ "r11-095": {
+  "hash": "4493b48d3108ee99",
+  "gate_key": "agreement | B1.2 | order | Put the words in order. | i've read every single review but i can't decide which phone to buy",
+  "src": "zz-blind-gap-points-b12-1.csv:96",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i've read every single review but i can't decide which phone to buy",
+   "also": [
+    "i can't decide which phone to buy but i've read every single review"
+   ]
+  },
+  "item": {
+   "id": "c-3387",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "We say *almost every* and *every single*, not *almost each*: *almost every colleague*.",
+   "why_lv": "Saka *almost every* un *every single*, nevis *almost each*: *almost every colleague*.",
+   "sentence": "i've read every single review but i can't decide which phone to buy",
+   "answers": [
+    [
+     "i've read every single review but i can't decide which phone to buy",
+     "i can't decide which phone to buy but i've read every single review"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:96"
+  }
+ },
+ "r11-096": {
+  "hash": "5f89b760b4e53a86",
+  "gate_key": "agreement | B1.2 | gap | Each of my ___ ___ a different hobby, so family weekends are never boring. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:97",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "brothers"
+    ],
+    [
+     "has"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3388",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Each of my ___ ___ a different hobby, so family weekends are never boring.",
+   "why": "*each of my* + plural noun + singular verb: *each of my brothers has*. Not *each of my brother*.",
+   "why_lv": "Aiz *each of my* ir daudzskaitlis, darbības vārds vienskaitlī: *each of my brothers has*. Nevis *each of my brother*.",
+   "answers": [
+    [
+     "brothers"
+    ],
+    [
+     "has"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "brothers",
+    "has",
+    "brother"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:97"
+  }
+ },
+ "r11-097": {
+  "hash": "acebb6b104709604",
+  "gate_key": "agreement | B1.2 | gap | I've had a headache ___ ___ morning, so I'm going home early. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:98",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "the"
+    ],
+    [
+     "whole"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3389",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I've had a headache ___ ___ morning, so I'm going home early.",
+   "why": "*whole* comes after *the / my*: *the whole day*, *my whole life* (= *all day*, *all my life*). Not *my all life*, not *whole the day*.",
+   "why_lv": "*whole* liek aiz *the / my*: *the whole day, my whole life* (= *all day, all my life*). Nevis *my all life* un nevis *whole the day*.",
+   "answers": [
+    [
+     "the"
+    ],
+    [
+     "whole"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "the",
+    "whole",
+    "every"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:98"
+  }
+ },
+ "r11-098": {
+  "hash": "d09b14751c5f5463",
+  "gate_key": "agreement | B1.2 | gap | My grandmother phones me ___ ___, usually just after her lunch, to ask about the kids. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:99",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "every"
+    ],
+    [
+     "day"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3390",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My grandmother phones me ___ ___, usually just after her lunch, to ask about the kids.",
+   "why": "*every day* = on each day (a habit); *all day* = from morning to evening. *whole* needs *the*: *the whole day*.",
+   "why_lv": "*every day* = katru dienu (ieradums); *all day* = no rīta līdz vakaram. Aiz *whole* vajag *the*: *the whole day*.",
+   "answers": [
+    [
+     "every"
+    ],
+    [
+     "day"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "every",
+    "day",
+    "all",
+    "whole"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:99"
+  }
+ },
+ "r11-099": {
+  "hash": "a5b5741928c76a5a",
+  "gate_key": "agreement | B1.2 | gap | Almost ___ colleague in my team works from home on Fridays, so the office is very quiet. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:100",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "every"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3391",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Almost ___ colleague in my team works from home on Fridays, so the office is very quiet.",
+   "why": "We say *almost every* and *every single*, not *almost each*: *almost every colleague*.",
+   "why_lv": "Saka *almost every* un *every single*, nevis *almost each*: *almost every colleague*.",
+   "answers": [
+    [
+     "every"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "every",
+    "each",
+    "all"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:100"
+  }
+ },
+ "r11-100": {
+  "hash": "de539b2296b14155",
+  "gate_key": "agreement | B1.2 | match | Match each beginning with its ending. | We invited forty people, and each of = them brought a small gift. ; It was a long night, but every = guest stayed until the end. ; The food was great, and all the = guests asked for the recipes. ; When the band started, the whole = room got up to dance.",
+  "src": "zz-blind-gap-points-b12-1.csv:101",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "We invited forty people, and each of",
+     "them brought a small gift."
+    ],
+    [
+     "It was a long night, but every",
+     "guest stayed until the end."
+    ],
+    [
+     "The food was great, and all the",
+     "guests asked for the recipes."
+    ],
+    [
+     "When the band started, the whole",
+     "room got up to dance."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3392",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*each of them*; *every* + singular noun and verb (*every guest stayed*); *all the* + plural noun (*all the guests*); *the whole room*.",
+   "why_lv": "*each of them*; aiz *every* vienskaitlis (*every guest stayed*); aiz *all the* daudzskaitlis (*all the guests*); *the whole room*.",
+   "pairs": [
+    [
+     "We invited forty people, and each of",
+     "them brought a small gift."
+    ],
+    [
+     "It was a long night, but every",
+     "guest stayed until the end."
+    ],
+    [
+     "The food was great, and all the",
+     "guests asked for the recipes."
+    ],
+    [
+     "When the band started, the whole",
+     "room got up to dance."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:101"
+  }
+ },
+ "r11-101": {
+  "hash": "01777365d303ad7e",
+  "gate_key": "relative_clauses | B1.2 | mcq | Choose the correct option: Sorry, I didn't hear ___ you said about the meeting time. | what",
+  "src": "zz-blind-gap-points-b12-1.csv:102",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "what",
+   "wrong": [
+    "that",
+    "—"
+   ]
+  },
+  "item": {
+   "id": "c-3393",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Sorry, I didn't hear ___ you said about the meeting time.",
+   "why": "*what* = the thing(s) that, with no noun before it: *I didn't hear what he said.* *that* and *which* cannot mean *the thing that*.",
+   "why_lv": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't hear what he said.* *that* un *which* šeit nevar aizstāt *what*.",
+   "correct": "what",
+   "wrong": [
+    "that",
+    "—"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:102"
+  }
+ },
+ "r11-102": {
+  "hash": "5e2449211f9d9d86",
+  "gate_key": "relative_clauses | B1.2 | mcq | Choose the correct option: The jacket ___ I ordered online last week doesn't fit me. | which",
+  "src": "zz-blind-gap-points-b12-1.csv:103",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "which",
+   "wrong": [
+    "what",
+    "who",
+    "where"
+   ]
+  },
+  "item": {
+   "id": "c-3394",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The jacket ___ I ordered online last week doesn't fit me.",
+   "why": "After a noun use *that* or *which* (or nothing when it is the object), not *what*: *the jacket (that) I ordered*.",
+   "why_lv": "Aiz lietvārda lieto *that* vai *which* (vai neko, ja tas ir papildinātājs), nevis *what*: *the jacket* (*that*) *I ordered.*",
+   "correct": "which",
+   "wrong": [
+    "what",
+    "who",
+    "where"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:103"
+  }
+ },
+ "r11-103": {
+  "hash": "37725dc8d5cc8591",
+  "gate_key": "relative_clauses | B1.2 | mcq | Which sentence is correct? | Everything that he told us about the hotel was true.",
+  "src": "zz-blind-gap-points-b12-1.csv:104",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Everything that he told us about the hotel was true.",
+   "wrong": [
+    "Everything what he told us about the hotel was true.",
+    "All what he told us about the hotel was true."
+   ]
+  },
+  "item": {
+   "id": "c-3395",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) he said was true.*",
+   "why_lv": "Tulkojot burtiski „viss, ko viņš teica”, sanāk *everything what he said*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *he said was true*.",
+   "correct": "Everything that he told us about the hotel was true.",
+   "wrong": [
+    "Everything what he told us about the hotel was true.",
+    "All what he told us about the hotel was true."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:104"
+  }
+ },
+ "r11-104": {
+  "hash": "748db4cde16921b3",
+  "gate_key": "relative_clauses | B1.2 | mcq | Which sentence is correct? | What I really need right now is a long holiday.",
+  "src": "zz-blind-gap-points-b12-1.csv:105",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "What I really need right now is a long holiday.",
+   "wrong": [
+    "That I really need right now is a long holiday.",
+    "Which I really need right now is a long holiday.",
+    "The thing what I really need right now is a long holiday."
+   ]
+  },
+  "item": {
+   "id": "c-3396",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "A *what*-clause can be the subject: *What I need is a holiday.* (= The thing that I need is a holiday.)",
+   "why_lv": "Teikums var sākties ar *what*: *What I need is a holiday.* (= Tas, kas man vajadzīgs, ir atvaļinājums.)",
+   "correct": "What I really need right now is a long holiday.",
+   "wrong": [
+    "That I really need right now is a long holiday.",
+    "Which I really need right now is a long holiday.",
+    "The thing what I really need right now is a long holiday."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:105"
+  }
+ },
+ "r11-105": {
+  "hash": "aff2d95fe89cf237",
+  "gate_key": "relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | The film what we watched last night was far too long.",
+  "src": "zz-blind-gap-points-b12-1.csv:106",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "The film what we watched last night was far too long.",
+   "wrong": [
+    "I couldn't believe what I saw at the airport.",
+    "Everything she cooked for the party was delicious.",
+    "Tell me what you think of my new haircut."
+   ]
+  },
+  "item": {
+   "id": "c-3397",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After a noun use *that* or *which* (or nothing), not *what*: *The film (that) we watched last night was far too long.*",
+   "why_lv": "Aiz lietvārda lieto *that* vai *which* (vai neko), nevis *what*: *The film* (*that*) *we watched last night was far too long*.",
+   "correct": "The film what we watched last night was far too long.",
+   "wrong": [
+    "I couldn't believe what I saw at the airport.",
+    "Everything she cooked for the party was delicious.",
+    "Tell me what you think of my new haircut."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:106"
+  }
+ },
+ "r11-106": {
+  "hash": "13f8d659b2aab351",
+  "gate_key": "relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | All what I want for my birthday is a quiet dinner.",
+  "src": "zz-blind-gap-points-b12-1.csv:107",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "All what I want for my birthday is a quiet dinner.",
+   "wrong": [
+    "The shoes that I use for running are very light.",
+    "What surprised me most was the price of coffee.",
+    "I'll tell you everything I know about the job."
+   ]
+  },
+  "item": {
+   "id": "c-3398",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *all* use *that* or nothing, not *what*: *All (that) I want for my birthday is a quiet dinner.*",
+   "why_lv": "Tulkojot burtiski „viss, ko es gribu”, sanāk *all what I want*. Angliski aiz *all* lieto *that* vai neko: *All* (*that*) *I want for my birthday is a quiet dinner.*",
+   "correct": "All what I want for my birthday is a quiet dinner.",
+   "wrong": [
+    "The shoes that I use for running are very light.",
+    "What surprised me most was the price of coffee.",
+    "I'll tell you everything I know about the job."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:107"
+  }
+ },
+ "r11-107": {
+  "hash": "a6339cf8584aa850",
+  "gate_key": "relative_clauses | B1.2 | mcq | Choose the correct option: That's exactly ___ I was trying to explain to my boss. | what",
+  "src": "zz-blind-gap-points-b12-1.csv:108",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "what",
+   "wrong": [
+    "that",
+    "which",
+    "—"
+   ]
+  },
+  "item": {
+   "id": "c-3399",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: That's exactly ___ I was trying to explain to my boss.",
+   "why": "*what* = the thing(s) that, with no noun before it: *I didn't hear what he said.* *that* and *which* cannot mean *the thing that*.",
+   "why_lv": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't hear what he said.* *that* un *which* šeit nevar aizstāt *what*.",
+   "correct": "what",
+   "wrong": [
+    "that",
+    "which",
+    "—"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:108"
+  }
+ },
+ "r11-108": {
+  "hash": "ab0da30b22195e3e",
+  "gate_key": "relative_clauses | B1.2 | gap | Write *what* or *that*: The pizza ___ we ordered last night was cold when it arrived. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:109",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3400",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *what* or *that*: The pizza ___ we ordered last night was cold when it arrived.",
+   "why": "After a noun use *that* or *which* (or nothing when it is the object), not *what*: *the jacket (that) I ordered*.",
+   "why_lv": "Aiz lietvārda lieto *that* vai *which* (vai neko, ja tas ir papildinātājs), nevis *what*: *the jacket* (*that*) *I ordered.*",
+   "answers": [
+    [
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:109"
+  }
+ },
+ "r11-109": {
+  "hash": "63336177ddc75656",
+  "gate_key": "relative_clauses | B1.2 | gap | Write *what* or *that*: I can't remember ___ the teacher said about the exam. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:110",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "what"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3401",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *what* or *that*: I can't remember ___ the teacher said about the exam.",
+   "why": "*what* = the thing(s) that, with no noun before it: *I didn't hear what he said.* *that* and *which* cannot mean *the thing that*.",
+   "why_lv": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't hear what he said.* *that* un *which* šeit nevar aizstāt *what*.",
+   "answers": [
+    [
+     "what"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:110"
+  }
+ },
+ "r11-110": {
+  "hash": "d8808a1e96df7d6c",
+  "gate_key": "relative_clauses | B1.2 | gap | Write *what* or *that*: Is there anything ___ I can do to help you with the move? | ",
+  "src": "zz-blind-gap-points-b12-1.csv:111",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3402",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *what* or *that*: Is there anything ___ I can do to help you with the move?",
+   "why": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) he said was true.*",
+   "why_lv": "Tulkojot burtiski „viss, ko viņš teica”, sanāk *everything what he said*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *he said was true*.",
+   "answers": [
+    [
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:111"
+  }
+ },
+ "r11-111": {
+  "hash": "82876345d747e7e6",
+  "gate_key": "relative_clauses | B1.2 | gap | Write *what* or *that*: ___ worries me most about the trip is the cost of the flights. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:112",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "What",
+     "what"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3403",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *what* or *that*: ___ worries me most about the trip is the cost of the flights.",
+   "why": "A *what*-clause can be the subject: *What I need is a holiday.* (= The thing that I need is a holiday.)",
+   "why_lv": "Teikums var sākties ar *what*: *What I need is a holiday.* (= Tas, kas man vajadzīgs, ir atvaļinājums.)",
+   "answers": [
+    [
+     "What",
+     "what"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:112"
+  }
+ },
+ "r11-112": {
+  "hash": "4dbe85c9f1555f1d",
+  "gate_key": "relative_clauses | B1.2 | gap | Write *what* or *that*: The app ___ my sister recommended really helps me sleep better. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:113",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3404",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *what* or *that*: The app ___ my sister recommended really helps me sleep better.",
+   "why": "After a noun use *that* or *which* (or nothing when it is the object), not *what*: *the jacket (that) I ordered*.",
+   "why_lv": "Aiz lietvārda lieto *that* vai *which* (vai neko, ja tas ir papildinātājs), nevis *what*: *the jacket* (*that*) *I ordered.*",
+   "answers": [
+    [
+     "that"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:113"
+  }
+ },
+ "r11-113": {
+  "hash": "0f487987af3894b8",
+  "gate_key": "relative_clauses | B1.2 | text | Say it another way with *what*: The thing I enjoy most about my job is meeting new people. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:114",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What I enjoy most about my job is meeting new people.",
+     "Meeting new people is what I enjoy most about my job."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3405",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *what*: The thing I enjoy most about my job is meeting new people.",
+   "why": "A *what*-clause can be the subject: *What I need is a holiday.* (= The thing that I need is a holiday.)",
+   "why_lv": "Teikums var sākties ar *what*: *What I need is a holiday.* (= Tas, kas man vajadzīgs, ir atvaļinājums.)",
+   "answers": [
+    [
+     "What I enjoy most about my job is meeting new people.",
+     "Meeting new people is what I enjoy most about my job."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:114"
+  }
+ },
+ "r11-114": {
+  "hash": "307c648d0728210d",
+  "gate_key": "relative_clauses | B1.2 | text | Correct the mistake: Everything what she told me about the course was useful. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:115",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Everything that she told me about the course was useful.",
+     "Everything she told me about the course was useful.",
+     "Everything which she told me about the course was useful.",
+     "What she told me about the course was useful."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3406",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Everything what she told me about the course was useful.",
+   "why": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) he said was true.*",
+   "why_lv": "Tulkojot burtiski „viss, ko viņš teica”, sanāk *everything what he said*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *he said was true*.",
+   "answers": [
+    [
+     "Everything that she told me about the course was useful.",
+     "Everything she told me about the course was useful.",
+     "Everything which she told me about the course was useful.",
+     "What she told me about the course was useful."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:115"
+  }
+ },
+ "r11-115": {
+  "hash": "20ff1cb1932a9021",
+  "gate_key": "relative_clauses | B1.2 | text | Correct the mistake: I didn't understand that the mechanic said about my car. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:116",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I didn't understand what the mechanic said about my car.",
+     "I didn't understand everything that the mechanic said about my car.",
+     "I didn't understand everything the mechanic said about my car.",
+     "I didn't understand all that the mechanic said about my car.",
+     "I didn't understand all the mechanic said about my car."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3407",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I didn't understand that the mechanic said about my car.",
+   "why": "*that* cannot mean *the thing that*: *I didn't understand what the mechanic said*. *said* needs an object, and *what* is it.",
+   "why_lv": "*that* šeit nevar aizstāt *what*: *I didn't understand what the mechanic said.* Aiz *said* vajag papildinātāju, un tas ir *what*.",
+   "answers": [
+    [
+     "I didn't understand what the mechanic said about my car.",
+     "I didn't understand everything that the mechanic said about my car.",
+     "I didn't understand everything the mechanic said about my car.",
+     "I didn't understand all that the mechanic said about my car.",
+     "I didn't understand all the mechanic said about my car."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:116"
+  }
+ },
+ "r11-116": {
+  "hash": "d36825b565e947d0",
+  "gate_key": "relative_clauses | B1.2 | order | Put the words in order. | what she said at the wedding surprised everyone",
+  "src": "zz-blind-gap-points-b12-1.csv:117",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "what she said at the wedding surprised everyone",
+   "also": [
+    "what she said surprised everyone at the wedding",
+    "at the wedding what she said surprised everyone"
+   ]
+  },
+  "item": {
+   "id": "c-3408",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A *what*-clause can be the subject: *What I need is a holiday.* (= The thing that I need is a holiday.)",
+   "why_lv": "Teikums var sākties ar *what*: *What I need is a holiday.* (= Tas, kas man vajadzīgs, ir atvaļinājums.)",
+   "sentence": "what she said at the wedding surprised everyone",
+   "answers": [
+    [
+     "what she said at the wedding surprised everyone",
+     "what she said surprised everyone at the wedding",
+     "at the wedding what she said surprised everyone"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:117"
+  }
+ },
+ "r11-117": {
+  "hash": "fae67ceccb64334f",
+  "gate_key": "relative_clauses | B1.2 | order | Put the words in order. | i didn't understand what the doctor told me about the test",
+  "src": "zz-blind-gap-points-b12-1.csv:118",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i didn't understand what the doctor told me about the test",
+   "also": []
+  },
+  "item": {
+   "id": "c-3409",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*what* = the thing(s) that, with no noun before it: *I didn't hear what he said.* *that* and *which* cannot mean *the thing that*.",
+   "why_lv": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't hear what he said.* *that* un *which* šeit nevar aizstāt *what*.",
+   "sentence": "i didn't understand what the doctor told me about the test",
+   "answers": [
+    [
+     "i didn't understand what the doctor told me about the test"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:118"
+  }
+ },
+ "r11-118": {
+  "hash": "5767af44c0ccac28",
+  "gate_key": "relative_clauses | B1.2 | order | Put the words in order. | all i want after work is a hot shower",
+  "src": "zz-blind-gap-points-b12-1.csv:119",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "all i want after work is a hot shower",
+   "also": [
+    "after work all i want is a hot shower",
+    "all i want is a hot shower after work"
+   ]
+  },
+  "item": {
+   "id": "c-3410",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) he said was true.*",
+   "why_lv": "Tulkojot burtiski „viss, ko viņš teica”, sanāk *everything what he said*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *he said was true*.",
+   "sentence": "all i want after work is a hot shower",
+   "answers": [
+    [
+     "all i want after work is a hot shower",
+     "after work all i want is a hot shower",
+     "all i want is a hot shower after work"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:119"
+  }
+ },
+ "r11-119": {
+  "hash": "b87443892a4f42d9",
+  "gate_key": "relative_clauses | B1.2 | order | Put the words in order. | i'm sorry about everything that happened last night",
+  "src": "zz-blind-gap-points-b12-1.csv:120",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i'm sorry about everything that happened last night",
+   "also": []
+  },
+  "item": {
+   "id": "c-3411",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) he said was true.*",
+   "why_lv": "Tulkojot burtiski „viss, ko viņš teica”, sanāk *everything what he said*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *he said was true*.",
+   "sentence": "i'm sorry about everything that happened last night",
+   "answers": [
+    [
+     "i'm sorry about everything that happened last night"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:120"
+  }
+ },
+ "r11-120": {
+  "hash": "42dd52a6f86735d5",
+  "gate_key": "relative_clauses | B1.2 | order | Put the words in order to make a question. | did you find what you were looking for",
+  "src": "zz-blind-gap-points-b12-1.csv:121",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "did you find what you were looking for",
+   "also": []
+  },
+  "item": {
+   "id": "c-3412",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "*what* = the thing(s) that, with no noun before it: *I didn't hear what he said.* *that* and *which* cannot mean *the thing that*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't hear what he said.* *that* un *which* šeit nevar aizstāt *what*. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "did you find what you were looking for",
+   "answers": [
+    [
+     "did you find what you were looking for"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:121"
+  }
+ },
+ "r11-121": {
+  "hash": "7e3882dc47ea2cf7",
+  "gate_key": "relative_clauses | B1.2 | gap | ___ really annoyed me was the noise from the street. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:122",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "What"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3413",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ really annoyed me was the noise from the street.",
+   "why": "A *what*-clause can be the subject: *What I need is a holiday.* (= The thing that I need is a holiday.)",
+   "why_lv": "Teikums var sākties ar *what*: *What I need is a holiday.* (= Tas, kas man vajadzīgs, ir atvaļinājums.)",
+   "answers": [
+    [
+     "What"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "What",
+    "That",
+    "Which"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:122"
+  }
+ },
+ "r11-122": {
+  "hash": "3c6cace2134cc921",
+  "gate_key": "relative_clauses | B1.2 | gap | I'll send you everything ___ you need for the conference. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:123",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3414",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'll send you everything ___ you need for the conference.",
+   "why": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) he said was true.*",
+   "why_lv": "Tulkojot burtiski „viss, ko viņš teica”, sanāk *everything what he said*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *he said was true*.",
+   "answers": [
+    [
+     "that"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "that",
+    "what"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:123"
+  }
+ },
+ "r11-123": {
+  "hash": "2f05405c5bc52e10",
+  "gate_key": "relative_clauses | B1.2 | gap | The best thing about the trip was the people ___ we met on the way. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:124",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3415",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The best thing about the trip was the people ___ we met on the way.",
+   "why": "After a noun use *that* or *which* (or nothing when it is the object), not *what*: *the jacket (that) I ordered*.",
+   "why_lv": "Aiz lietvārda lieto *that* vai *which* (vai neko, ja tas ir papildinātājs), nevis *what*: *the jacket* (*that*) *I ordered.*",
+   "answers": [
+    [
+     "that"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "that",
+    "what",
+    "which"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:124"
+  }
+ },
+ "r11-124": {
+  "hash": "14f6379711748de9",
+  "gate_key": "relative_clauses | B1.2 | gap | Excuse me, this isn't ___ I ordered. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:125",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "what"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3416",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Excuse me, this isn't ___ I ordered.",
+   "why": "*what* = the thing(s) that, with no noun before it: *I didn't hear what he said.* *that* and *which* cannot mean *the thing that*.",
+   "why_lv": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't hear what he said.* *that* un *which* šeit nevar aizstāt *what*.",
+   "answers": [
+    [
+     "what"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "what",
+    "that",
+    "which"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:125"
+  }
+ },
+ "r11-125": {
+  "hash": "10d84b880b27c90a",
+  "gate_key": "relative_clauses | B1.2 | match | Match each beginning with its ending. | Thank you so much for everything = you did for my family. ; The waiter didn't understand = what I wanted to order. ; The laptop that I bought last month = stopped working after a week. ; What I like most about my job = is the people I work with.",
+  "src": "zz-blind-gap-points-b12-1.csv:126",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Thank you so much for everything",
+     "you did for my family."
+    ],
+    [
+     "The waiter didn't understand",
+     "what I wanted to order."
+    ],
+    [
+     "The laptop that I bought last month",
+     "stopped working after a week."
+    ],
+    [
+     "What I like most about my job",
+     "is the people I work with."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3417",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*what* without a noun before it (*didn't understand what I wanted*, *What I like most … is*); after *everything* or a noun, *that* or nothing (*everything you did*, *the laptop that I bought*).",
+   "why_lv": "*what* bez lietvārda pirms tā (*didn't understand what I wanted, What I like most* … *is*); aiz *everything* vai lietvārda *that* vai nekas (*everything you did, the laptop that I bought*).",
+   "pairs": [
+    [
+     "Thank you so much for everything",
+     "you did for my family."
+    ],
+    [
+     "The waiter didn't understand",
+     "what I wanted to order."
+    ],
+    [
+     "The laptop that I bought last month",
+     "stopped working after a week."
+    ],
+    [
+     "What I like most about my job",
+     "is the people I work with."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:126"
+  }
+ },
+ "r11-126": {
+  "hash": "777fcf49c714133a",
+  "gate_key": "future | B1.2 | mcq | Choose the correct option: I've charged it all night, but my phone still ___. | won't switch on",
+  "src": "zz-blind-gap-points-b12-1.csv:127",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "won't switch on",
+   "wrong": [
+    "won't to switch on",
+    "won't switching on",
+    "willn't switch on"
+   ]
+  },
+  "item": {
+   "id": "c-3418",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I've charged it all night, but my phone still ___.",
+   "why": "*won't* + base verb = it refuses to work: *My phone won't switch on.* No *to*, no *-ing*; the short form of *will not* is *won't*.",
+   "why_lv": "Tulkojot burtiski negrib ieslēgties, sanāk *doesn't want to switch on*. Par lietu, kas atsakās darboties, angliski saka *won't* + pamatforma: *My phone won't switch on.* Nevis *won't to switch on* vai *won't switching on*.",
+   "correct": "won't switch on",
+   "wrong": [
+    "won't to switch on",
+    "won't switching on",
+    "willn't switch on"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:127"
+  }
+ },
+ "r11-127": {
+  "hash": "66e8c239d2260144",
+  "gate_key": "future | B1.2 | mcq | Choose the correct option: Yesterday I was late for work because my bike lock ___. | wouldn't open",
+  "src": "zz-blind-gap-points-b12-1.csv:128",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "wouldn't open",
+   "wrong": [
+    "wouldn't opened",
+    "wouldn't to open",
+    "won't open"
+   ]
+  },
+  "item": {
+   "id": "c-3419",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Yesterday I was late for work because my bike lock ___.",
+   "why": "A refusal in the past: *wouldn't* + base verb (*The lock wouldn't open.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+   "why_lv": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*The lock wouldn't open*.). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*.",
+   "correct": "wouldn't open",
+   "wrong": [
+    "wouldn't opened",
+    "wouldn't to open",
+    "won't open"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:128"
+  }
+ },
+ "r11-128": {
+  "hash": "6d0d4b36b2e5776e",
+  "gate_key": "future | B1.2 | mcq | Choose the correct option: I've told Max it's dangerous, but he ___ to me. | won't listen",
+  "src": "zz-blind-gap-points-b12-1.csv:129",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "won't listen",
+   "wrong": [
+    "won't listens",
+    "won't to listen",
+    "willn't listen"
+   ]
+  },
+  "item": {
+   "id": "c-3420",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I've told Max it's dangerous, but he ___ to me.",
+   "why": "*won't* is the same for every person, and the verb after it has no *-s*: *He won't listen.*",
+   "why_lv": "*won't* visām personām ir vienāds, un darbības vārdam aiz tā nav *-s*: *He won't listen.*",
+   "correct": "won't listen",
+   "wrong": [
+    "won't listens",
+    "won't to listen",
+    "willn't listen"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:129"
+  }
+ },
+ "r11-129": {
+  "hash": "84a1916652d24dee",
+  "gate_key": "future | B1.2 | mcq | Which sentence is correct? | The key card wouldn't open my hotel room last night.",
+  "src": "zz-blind-gap-points-b12-1.csv:130",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "The key card wouldn't open my hotel room last night.",
+   "wrong": [
+    "The key card wouldn't opened my hotel room last night.",
+    "The key card won't open my hotel room last night.",
+    "The key card wouldn't to open my hotel room last night."
+   ]
+  },
+  "item": {
+   "id": "c-3421",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "A refusal in the past: *wouldn't* + base verb (*The lock wouldn't open.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+   "why_lv": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*The lock wouldn't open*.). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*.",
+   "correct": "The key card wouldn't open my hotel room last night.",
+   "wrong": [
+    "The key card wouldn't opened my hotel room last night.",
+    "The key card won't open my hotel room last night.",
+    "The key card wouldn't to open my hotel room last night."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:130"
+  }
+ },
+ "r11-130": {
+  "hash": "5e255a27ad4a7d5e",
+  "gate_key": "future | B1.2 | mcq | Which sentence is NOT correct? | My sister won't to lend me her car.",
+  "src": "zz-blind-gap-points-b12-1.csv:131",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My sister won't to lend me her car.",
+   "wrong": [
+    "This window won't close properly.",
+    "The engine didn't start at first.",
+    "The taxi driver wouldn't take my card."
+   ]
+  },
+  "item": {
+   "id": "c-3422",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *won't* comes the base verb, without *to*: *My sister won't lend me her car.* The others are correct; *didn't start* is a correct way to tell what happened, too.",
+   "why_lv": "Aiz *won't* lieto pamatformu: *My sister won't lend me her car*, nevis *won't to lend*. Pārējie teikumi ir pareizi; arī *didn't start* ir pareizs veids, kā pastāstīt, kas notika.",
+   "correct": "My sister won't to lend me her car.",
+   "wrong": [
+    "This window won't close properly.",
+    "The engine didn't start at first.",
+    "The taxi driver wouldn't take my card."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:131"
+  }
+ },
+ "r11-131": {
+  "hash": "95baffe09241e78c",
+  "gate_key": "future | B1.2 | mcq | Which sentence is NOT correct? | My landlord wouldn't fixed the heating.",
+  "src": "zz-blind-gap-points-b12-1.csv:132",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My landlord wouldn't fixed the heating.",
+   "wrong": [
+    "The printer won't print in colour.",
+    "Our cat won't eat dry food.",
+    "He wouldn't tell me his name."
+   ]
+  },
+  "item": {
+   "id": "c-3423",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *wouldn't* comes the base verb, not the past: *My landlord wouldn't fix the heating.* The others are correct.",
+   "why_lv": "Aiz *wouldn't* lieto pamatformu, nevis pagātnes formu: *My landlord wouldn't fix the heating.* Pārējie teikumi ir pareizi.",
+   "correct": "My landlord wouldn't fixed the heating.",
+   "wrong": [
+    "The printer won't print in colour.",
+    "Our cat won't eat dry food.",
+    "He wouldn't tell me his name."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:132"
+  }
+ },
+ "r11-132": {
+  "hash": "1c40a58ab2977aa5",
+  "gate_key": "future | B1.2 | mcq | Choose the correct option: Why ___ inside? It's freezing out there. | won't the dog come",
+  "src": "zz-blind-gap-points-b12-1.csv:133",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "won't the dog come",
+   "wrong": [
+    "the dog won't come",
+    "won't the dog to come",
+    "won't the dog comes"
+   ]
+  },
+  "item": {
+   "id": "c-3424",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Why ___ inside? It's freezing out there.",
+   "why": "In a question, *won't* goes before the subject and the verb stays in the base form: *Why won't the dog come inside?*",
+   "why_lv": "Jautājumā *won't* liek pirms teikuma priekšmeta, un darbības vārds paliek pamatformā: *Why won't the dog come inside?*",
+   "correct": "won't the dog come",
+   "wrong": [
+    "the dog won't come",
+    "won't the dog to come",
+    "won't the dog comes"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:133"
+  }
+ },
+ "r11-133": {
+  "hash": "bd23a904d0facc5b",
+  "gate_key": "future | B1.2 | gap | Write *won't* or *wouldn't*: I tried to send you the photos last night, but the wifi ___ work. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:134",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wouldn't"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3425",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *won't* or *wouldn't*: I tried to send you the photos last night, but the wifi ___ work.",
+   "why": "*last night* is past, so the refusal is *wouldn't*: *the wifi wouldn't work.*",
+   "why_lv": "*last night* ir pagātne, tāpēc atteikšanās ir *wouldn't*: *the wifi wouldn't work*.",
+   "answers": [
+    [
+     "wouldn't"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:134"
+  }
+ },
+ "r11-134": {
+  "hash": "900bbdffcd6ae02a",
+  "gate_key": "future | B1.2 | gap | Write *won't* or *wouldn't*: Can you help me with this suitcase? The zip ___ close. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:135",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "won't"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3426",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *won't* or *wouldn't*: Can you help me with this suitcase? The zip ___ close.",
+   "why": "The problem is now (*Can you help me?*), so *won't*: *The zip won't close.* = it refuses to close.",
+   "why_lv": "Problēma ir tagad (*Can you help me*?), tāpēc *won't*: *The zip won't close.* = rāvējslēdzējs nekādi neaizveras.",
+   "answers": [
+    [
+     "won't"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:135"
+  }
+ },
+ "r11-135": {
+  "hash": "0add25d482676afd",
+  "gate_key": "future | B1.2 | gap | Write *won't* or *wouldn't*: The cash machine ___ give me any money yesterday, so I borrowed some from Ana. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:136",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wouldn't"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3427",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *won't* or *wouldn't*: The cash machine ___ give me any money yesterday, so I borrowed some from Ana.",
+   "why": "*yesterday* is past, so *wouldn't*: *The cash machine wouldn't give me any money.*",
+   "why_lv": "*yesterday* ir pagātne, tāpēc *wouldn't*: *The cash machine wouldn't give me any money.*",
+   "answers": [
+    [
+     "wouldn't"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:136"
+  }
+ },
+ "r11-136": {
+  "hash": "ae829309080e0ece",
+  "gate_key": "future | B1.2 | gap | My sister was upset and wouldn't ___ to anyone at the party. (speak) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:137",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "speak"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3428",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My sister was upset and wouldn't ___ to anyone at the party. (speak)",
+   "why": "After *wouldn't* comes the base verb, also in a story about the past: *wouldn't speak*, not *wouldn't spoke*.",
+   "why_lv": "Aiz *wouldn't* lieto pamatformu, arī stāstot par pagātni: *wouldn't speak*, nevis *wouldn't spoke*.",
+   "answers": [
+    [
+     "speak"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:137"
+  }
+ },
+ "r11-137": {
+  "hash": "a03e994e7565fafa",
+  "gate_key": "future | B1.2 | gap | My son won't ___ his homework, however often I ask him. (do) | ",
+  "src": "zz-blind-gap-points-b12-1.csv:138",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "do"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3429",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My son won't ___ his homework, however often I ask him. (do)",
+   "why": "After *won't* the verb has no *-s*, also after *he*: *He won't do his homework.*",
+   "why_lv": "Aiz *won't* darbības vārdam nav *-s*, arī aiz *he*: *He won't do his homework.*",
+   "answers": [
+    [
+     "do"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:138"
+  }
+ },
+ "r11-138": {
+  "hash": "4e468bac9097c50e",
+  "gate_key": "future | B1.2 | text | Say it another way with *won't*: My computer refuses to open this file. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:139",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My computer won't open this file.",
+     "My computer won't open the file."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3430",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *won't*: My computer refuses to open this file.",
+   "why": "*refuses to open* = *won't open*: *won't* + base verb, no *to*.",
+   "why_lv": "*refuses to open = won't open*: *won't* + pamatforma, nevis *won't to open*.",
+   "answers": [
+    [
+     "My computer won't open this file.",
+     "My computer won't open the file."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:139"
+  }
+ },
+ "r11-139": {
+  "hash": "d1f3f51286495db4",
+  "gate_key": "future | B1.2 | text | Say it another way with *wouldn't*: My neighbour refused to move his car last night. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:140",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My neighbour wouldn't move his car last night.",
+     "My neighbor wouldn't move his car last night.",
+     "Last night my neighbour wouldn't move his car.",
+     "Last night my neighbor wouldn't move his car."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3431",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it another way with *wouldn't*: My neighbour refused to move his car last night.",
+   "why": "*refused to move* = *wouldn't move*: a refusal in the past is *wouldn't* + base verb.",
+   "why_lv": "*refused to move = wouldn't move*: atteikšanās pagātnē ir *wouldn't* + pamatforma.",
+   "answers": [
+    [
+     "My neighbour wouldn't move his car last night.",
+     "My neighbor wouldn't move his car last night.",
+     "Last night my neighbour wouldn't move his car.",
+     "Last night my neighbor wouldn't move his car."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:140"
+  }
+ },
+ "r11-140": {
+  "hash": "05221c702a8d40b0",
+  "gate_key": "future | B1.2 | text | Make a question with *Why*: The baby won't eat her soup. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:141",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Why won't the baby eat her soup?",
+     "Why will the baby not eat her soup?",
+     "Why won't she eat her soup?",
+     "Why won't the baby eat?",
+     "Why won't she eat?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3432",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with *Why*: The baby won't eat her soup.",
+   "why": "In a question, *won't* goes before the subject: *Why won't she answer?* (not *Why she won't answer?*).",
+   "why_lv": "Jautājumā *won't* liek pirms teikuma priekšmeta: *Why won't she answer?* (nevis *Why she won't answer*?).",
+   "answers": [
+    [
+     "Why won't the baby eat her soup?",
+     "Why will the baby not eat her soup?",
+     "Why won't she eat her soup?",
+     "Why won't the baby eat?",
+     "Why won't she eat?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:141"
+  }
+ },
+ "r11-141": {
+  "hash": "1313d83a2a182356",
+  "gate_key": "future | B1.2 | order | Put the words in order. | my dad won't wear his glasses even when he's driving",
+  "src": "zz-blind-gap-points-b12-1.csv:142",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my dad won't wear his glasses even when he's driving",
+   "also": [
+    "even when he's driving my dad won't wear his glasses",
+    "my dad won't even wear his glasses when he's driving"
+   ]
+  },
+  "item": {
+   "id": "c-3433",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*won't* is the same for every person, and the verb after it has no *-s*: *He won't listen.*",
+   "why_lv": "*won't* visām personām ir vienāds, un darbības vārdam aiz tā nav *-s*: *He won't listen.*",
+   "sentence": "my dad won't wear his glasses even when he's driving",
+   "answers": [
+    [
+     "my dad won't wear his glasses even when he's driving",
+     "even when he's driving my dad won't wear his glasses",
+     "my dad won't even wear his glasses when he's driving"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:142"
+  }
+ },
+ "r11-142": {
+  "hash": "920751f5750dbba8",
+  "gate_key": "future | B1.2 | order | Put the words in order. | my car wouldn't start this morning so i worked from home",
+  "src": "zz-blind-gap-points-b12-1.csv:143",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my car wouldn't start this morning so i worked from home",
+   "also": [
+    "this morning my car wouldn't start so i worked from home",
+    "my car wouldn't start so i worked from home this morning"
+   ]
+  },
+  "item": {
+   "id": "c-3434",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A refusal in the past: *wouldn't* + base verb (*The lock wouldn't open.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+   "why_lv": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*The lock wouldn't open*.). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*.",
+   "sentence": "my car wouldn't start this morning so i worked from home",
+   "answers": [
+    [
+     "my car wouldn't start this morning so i worked from home",
+     "this morning my car wouldn't start so i worked from home",
+     "my car wouldn't start so i worked from home this morning"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:143"
+  }
+ },
+ "r11-143": {
+  "hash": "308e6f950505aba2",
+  "gate_key": "future | B1.2 | order | Put the words in order to make a question. | why won't you tell me what happened at work",
+  "src": "zz-blind-gap-points-b12-1.csv:144",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "why won't you tell me what happened at work",
+   "also": []
+  },
+  "item": {
+   "id": "c-3435",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "In a question, *won't* goes before the subject: *Why won't she answer?* (not *Why she won't answer?*).",
+   "why_lv": "Jautājumā *won't* liek pirms teikuma priekšmeta: *Why won't she answer?* (nevis *Why she won't answer*?).",
+   "sentence": "why won't you tell me what happened at work",
+   "answers": [
+    [
+     "why won't you tell me what happened at work"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:144"
+  }
+ },
+ "r11-144": {
+  "hash": "8223d37938ff8eef",
+  "gate_key": "future | B1.2 | order | Put the words in order. | my friend wouldn't let me pay for dinner last night",
+  "src": "zz-blind-gap-points-b12-1.csv:145",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my friend wouldn't let me pay for dinner last night",
+   "also": [
+    "last night my friend wouldn't let me pay for dinner"
+   ]
+  },
+  "item": {
+   "id": "c-3436",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A refusal in the past: *wouldn't* + base verb (*The lock wouldn't open.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+   "why_lv": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*The lock wouldn't open*.). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*.",
+   "sentence": "my friend wouldn't let me pay for dinner last night",
+   "answers": [
+    [
+     "my friend wouldn't let me pay for dinner last night",
+     "last night my friend wouldn't let me pay for dinner"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:145"
+  }
+ },
+ "r11-145": {
+  "hash": "2551c278326a8e91",
+  "gate_key": "future | B1.2 | order | Put the words in order. | i've tried two keys but this door still won't open",
+  "src": "zz-blind-gap-points-b12-1.csv:146",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "i've tried two keys but this door still won't open",
+   "also": []
+  },
+  "item": {
+   "id": "c-3437",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*won't* + base verb, no *to* and no *-ing*: *It won't switch on.* = it refuses to work.",
+   "why_lv": "*won't* + pamatforma: *It won't switch on.* = tas atsakās darboties. Nevis *won't to switch on* vai *won't switching on*.",
+   "sentence": "i've tried two keys but this door still won't open",
+   "answers": [
+    [
+     "i've tried two keys but this door still won't open"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:146"
+  }
+ },
+ "r11-146": {
+  "hash": "ee2d29bb872c274f",
+  "gate_key": "future | B1.2 | gap | Yesterday the hotel lift ___ ___, so we took the stairs. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:147",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wouldn't"
+    ],
+    [
+     "move"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3438",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Yesterday the hotel lift ___ ___, so we took the stairs.",
+   "why": "A refusal in the past: *wouldn't* + base verb (*The lock wouldn't open.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+   "why_lv": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*The lock wouldn't open*.). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*.",
+   "answers": [
+    [
+     "wouldn't"
+    ],
+    [
+     "move"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "wouldn't",
+    "won't",
+    "move",
+    "moved"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:147"
+  }
+ },
+ "r11-147": {
+  "hash": "b8c0340e9a87c7b8",
+  "gate_key": "future | B1.2 | gap | My grandmother is very independent and ___ ___ anyone help her. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:148",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "won't"
+    ],
+    [
+     "let"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3439",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My grandmother is very independent and ___ ___ anyone help her.",
+   "why": "*won't* is the same for every person, and the verb after it has no *-s*: *He won't listen.*",
+   "why_lv": "*won't* visām personām ir vienāds, un darbības vārdam aiz tā nav *-s*: *He won't listen.*",
+   "answers": [
+    [
+     "won't"
+    ],
+    [
+     "let"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "won't",
+    "let",
+    "lets",
+    "letting"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:148"
+  }
+ },
+ "r11-148": {
+  "hash": "004d3ed766750b07",
+  "gate_key": "future | B1.2 | gap | Why ___ ___ ___ me? I've called her five times today. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:149",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "won't"
+    ],
+    [
+     "she"
+    ],
+    [
+     "answer"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3440",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Why ___ ___ ___ me? I've called her five times today.",
+   "why": "In a question, *won't* goes before the subject: *Why won't she answer?* (not *Why she won't answer?*).",
+   "why_lv": "Jautājumā *won't* liek pirms teikuma priekšmeta: *Why won't she answer?* (nevis *Why she won't answer*?).",
+   "answers": [
+    [
+     "won't"
+    ],
+    [
+     "she"
+    ],
+    [
+     "answer"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "won't",
+    "she",
+    "answer",
+    "answers"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:149"
+  }
+ },
+ "r11-149": {
+  "hash": "ba5b5b72c6f8bad4",
+  "gate_key": "future | B1.2 | gap | Yesterday the shop assistant ___ ___ me a refund, so I complained. | ",
+  "src": "zz-blind-gap-points-b12-1.csv:150",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wouldn't"
+    ],
+    [
+     "give"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3441",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Yesterday the shop assistant ___ ___ me a refund, so I complained.",
+   "why": "A refusal in the past: *wouldn't* + base verb (*The lock wouldn't open.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+   "why_lv": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*The lock wouldn't open*.). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*.",
+   "answers": [
+    [
+     "wouldn't"
+    ],
+    [
+     "give"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "wouldn't",
+    "won't",
+    "give",
+    "gave"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:150"
+  }
+ },
+ "r11-150": {
+  "hash": "7d00269c564db4e3",
+  "gate_key": "future | B1.2 | match | Match each beginning with its ending. | My laptop won't = switch on. ; Why won't = the tap stop dripping? ; Last night the baby wouldn't = stop crying. ; I asked twice, but she = wouldn't tell me.",
+  "src": "zz-blind-gap-points-b12-1.csv:151",
+  "point": null,
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "My laptop won't",
+     "switch on."
+    ],
+    [
+     "Why won't",
+     "the tap stop dripping?"
+    ],
+    [
+     "Last night the baby wouldn't",
+     "stop crying."
+    ],
+    [
+     "I asked twice, but she",
+     "wouldn't tell me."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3442",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "*won't / wouldn't* + base verb (*won't switch on*, *wouldn't stop*); in a question *won't* comes before the subject (*Why won't the tap stop dripping?*); after a subject we need *won't* or *wouldn't* before the verb (*she wouldn't tell me*).",
+   "why_lv": "*won't / wouldn't* + pamatforma (*won't switch on, wouldn't stop*); jautājumā *won't* liek pirms teikuma priekšmeta (*Why won't the tap stop dripping*?); aiz teikuma priekšmeta pirms darbības vārda vajag *won't* vai *wouldn't* (*she wouldn't tell me*).",
+   "pairs": [
+    [
+     "My laptop won't",
+     "switch on."
+    ],
+    [
+     "Why won't",
+     "the tap stop dripping?"
+    ],
+    [
+     "Last night the baby wouldn't",
+     "stop crying."
+    ],
+    [
+     "I asked twice, but she",
+     "wouldn't tell me."
+    ]
+   ],
+   "role": "learn",
+   "point": null,
+   "src": "zz-blind-gap-points-b12-1.csv:151"
+  }
+ }
+}

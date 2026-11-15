@@ -404,6 +404,11 @@
 "round": "r9",
 "task": "r9-010"
 },
+"20135fe885f45936": {
+"gate_key": "cond_first | B1.1 | gap | My course begins on Monday. When it ___, I'll have less free time. (start) | ",
+"round": "r12",
+"task": "answers added"
+},
 "20772b1da0d54f9e": {
 "gate_key": "future | A2.1 | mcq | Which sentence is correct? | Shall I help you with your suitcase?",
 "round": "r9",
@@ -874,6 +879,11 @@
 "round": "r10",
 "task": "r10-019"
 },
+"40c25c38b1598a54": {
+"gate_key": "agreement | B1.2 | mcq | Choose the correct option: ___ at the conference gets a name badge and a free lunch. | Every guest",
+"round": "r12",
+"task": "r12-004"
+},
 "411615ee8a40533e": {
 "gate_key": "ind_polite | B1.2 | order | 'Is there a café near the station?'\nPut the words in order to make a question. | do you know if there is a café near the station",
 "round": "r4",
@@ -1163,6 +1173,11 @@
 "gate_key": "verb_patterns | A2.2 | match | Match each beginning with its ending. | Brushing your teeth twice a day = keeps them healthy. ; Wearing a helmet on a bike = protects your head. ; Speaking English well = helps you find a good job. ; Booking a hotel early = makes it cheaper.",
 "round": "r9",
 "task": "r9-142"
+},
+"58b2368c9fc376c0": {
+"gate_key": "modal_verbs | B1.1 | text | Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague. | ",
+"round": "r12",
+"task": "answers added"
 },
 "5983f638aaccbb50": {
 "gate_key": "rep_questions | B1.2 | order | Put the words in order. | he asked why the shop was closed",
@@ -3098,6 +3113,11 @@
 "gate_key": "rep_questions | B2.1 | order | Put the words in order. | she asked how long the shop had been open",
 "round": "r5",
 "task": "r5-006"
+},
+"f0385cd849a0498e": {
+"gate_key": "future | A2.1 | text | Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*: | ",
+"round": "r12",
+"task": "answers added"
 },
 "f0c43562b4e4fc56": {
 "gate_key": "verb_patterns | A2.2 | text | Say it another way with *for*: Let's go swimming after work. | ",

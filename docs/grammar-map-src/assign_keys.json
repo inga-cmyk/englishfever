@@ -16162,5 +16162,21 @@
 "more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said to my boss": [
 "should_have",
 "read"
+],
+"future | A2.1 | text | Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*: | ": [
+"shall",
+"read"
+],
+"cond_first | B1.1 | gap | My course begins on Monday. When it ___, I'll have less free time. (start) | ": [
+"if_when",
+"read"
+],
+"modal_verbs | B1.1 | text | Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague. | ": [
+"must_vs_have_to",
+"read"
+],
+"agreement | B1.2 | mcq | Choose the correct option: ___ at the conference gets a name badge and a free lunch. | Every guest": [
+"each_every",
+"read"
 ]
 }

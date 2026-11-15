@@ -695,7 +695,7 @@ shall,A2.1,future,A2.1,check,gap,read,,gap-points-a2-1.csv:42,future | A2.1 | ga
 shall,A2.1,future,A2.1,learn,match,read,,gap-points-a2-1.csv:43,"future | A2.1 | match | Match each question with its answer. | Shall I open the window? = Yes, please. It's hot in here. ; Where shall we meet? = Outside the cinema. ; What shall we have for dinner? = Fish and rice. ; When shall I call you? = After six. I'm at work till then."
 shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:44,future | A2.1 | gap | It's raining. Shall we ___ a taxi? (take) | 
 shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:45,future | A2.1 | gap | Your phone is dead. Shall I ___ you mine? (lend) | 
-shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:46,future | A2.1 | gap | Write the missing word: ___ shall I put your coat? On the chair? | 
+shall,A2.1,future,A2.1,use,text,read,,gap-points-a2-1.csv:46,future | A2.1 | text | Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*: | 
 shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:47,future | A2.1 | gap | I'm going to the shop. Shall I ___ you anything? (get) | 
 shall,A2.1,future,A2.1,use,gap,read,,gap-points-a2-1.csv:48,future | A2.1 | gap | We're free tonight. What shall we ___? (do) | 
 shall,A2.1,future,A2.1,use,text,read,,gap-points-a2-1.csv:49,future | A2.1 | text | Say it another way with *Shall I*: Do you want me to book a table? | 
@@ -2335,7 +2335,7 @@ if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:8,"cond_first 
 if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:9,"cond_first | B1.1 | gap | Write *if* or *when*: I'm having lunch with Tom today. ___ I see him, I'll give him your book. | "
 if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:10,"cond_first | B1.1 | gap | When the update ___, the app will restart by itself. (finish) | "
 if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:11,"cond_first | B1.1 | gap | Write *if* or *when*: The bank might be closed on Saturday. ___ it is, I'll go on Monday. | "
-if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:12,"cond_first | B1.1 | gap | My course starts on Monday. When it ___, I'll have less free time. (start) | "
+if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:12,"cond_first | B1.1 | gap | My course begins on Monday. When it ___, I'll have less free time. (start) | "
 if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:13,"cond_first | B1.1 | gap | Write *if* or *when*: The museum opens at ten. ___ it opens, we'll buy tickets for the tower. | "
 if_when,B1.1,cond_first,B1.1,use,text,read,,gap-points-b11-1.csv:14,cond_first | B1.1 | text | Join with *if* or *when*: My contract ends in June. Then I'll take a long holiday. | 
 if_when,B1.1,cond_first,B1.1,use,text,read,,gap-points-b11-1.csv:15,"cond_first | B1.1 | text | Join with *if* or *when*: Perhaps the hotel is full. In that case, we'll stay with friends. | "
@@ -2376,7 +2376,7 @@ must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:96,moda
 must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:97,"modal_verbs | B1.1 | gap | My sister works as a pilot, so she ___ have a medical check every year. (have to) | "
 must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:98,modal_verbs | B1.1 | gap | ___ you ___ show your passport when you crossed the border last weekend? (have to) | 
 must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:99,modal_verbs | B1.1 | gap | My flatmate ___ get up early on Mondays because her first class starts at eleven. (have to / not) | 
-must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:100,modal_verbs | B1.1 | text | Start with *Last month*: I have to work every Saturday to cover for a sick colleague. | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:100,modal_verbs | B1.1 | text | Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague. | 
 must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:101,modal_verbs | B1.1 | text | Make a yes/no question: Anna has to take the medicine twice a day while she is ill. | 
 must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:102,modal_verbs | B1.1 | text | Say it another way with *might*: Perhaps we will have to sleep at the airport if the strike continues. | 
 no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:52,"quantity | B1.1 | mcq | Choose the correct option: The hotel was nice, but there was ___ hot water in our room. | no"
@@ -3056,7 +3056,7 @@ deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:4,more_modals | B1.2
 deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:5,more_modals | B1.2 | mcq | Choose the correct option: Everyone outside is wearing a coat and a hat. It ___ be very cold today. | must
 deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:6,more_modals | B1.2 | mcq | Choose the correct option: This ___ be the right address. There's no number 52 on this street. | can't
 deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:7,more_modals | B1.2 | mcq | Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home. | can't
-each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:77,"agreement | B1.2 | mcq | Choose the correct option: ___ in our new hotel has a balcony, so guests can have breakfast outside. | Every room"
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:77,agreement | B1.2 | mcq | Choose the correct option: ___ at the conference gets a name badge and a free lunch. | Every guest
 each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:78,"agreement | B1.2 | mcq | Choose the correct option: At the end of the course, each ___ a certificate, even if they missed a class. | student gets"
 each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:79,agreement | B1.2 | mcq | Choose the correct option: I've known Marta ___ because our mothers were best friends. | my whole life
 each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:80,agreement | B1.2 | mcq | Choose the correct option: I was so tired after the night flight that I stayed in bed ___ on Sunday. | all day

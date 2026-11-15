@@ -66,7 +66,7 @@ gp(T, L, 3, "When the update ___, the app will restart by itself. (finish)", "fi
 gp(T, L, 3, "Write *if* or *when*: The bank might be closed on Saturday. ___ it is, I'll go on Monday.", "If",
    "*might be closed*: it is not sure, so *if*.",
    "*might be closed*: tas nav droši, tāpēc *if*.")
-gp(T, L, 3, "My course begins on Monday. When it ___, I'll have less free time. (start)", "starts | has started | 's started",
+gp(T, L, 3, "My course begins on Monday. When it ___, I'll have less free time. (start)", "starts | has started | 's started | begins | has begun",
    "After *when*, the present simple for the future: *When it starts*, not *When it will start*.",
    "Aiz *when* nākotnei lieto Present Simple: *When it starts*, nevis *When it will start*.")
 replaces("My course starts on Monday. When it ___, I'll have less free time. (start)")   # tester, 15 November: the answer was in the first sentence

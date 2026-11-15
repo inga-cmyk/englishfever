@@ -387,11 +387,18 @@ final class Content
     }
 
     /** What the browser may see: no answers. */
+    /** The instruction as the learner sees it: "Which sentence has a mistake?" for "…NOT correct?" (teacher, 15 November, after a
+     *  tester's report). Display only: the stored task, its id and its research data stay the same. */
+    public static function shownQ(string $q): string
+    {
+        return preg_replace('/^Which sentence is NOT correct\?/', 'Which sentence has a mistake?', $q);
+    }
+
     public static function publicItem(array $it, ?int $seed = null): array
     {
         $skill = self::skill($it['skill']);
         $out = [
-            'id' => $it['id'], 'kind' => $it['kind'], 'q' => $it['q'], 'bloom' => $it['bloom'],
+            'id' => $it['id'], 'kind' => $it['kind'], 'q' => self::shownQ($it['q']), 'bloom' => $it['bloom'],
             'level' => $it['level'], 'skill' => $it['skill'], 'skill_label' => $skill['label'] ?? $it['skill'],
             'area' => $skill['area'] ?? 'active', 'point' => self::point($it),   // the "?" opens a new point's own card (tester, 15 November)
         ];

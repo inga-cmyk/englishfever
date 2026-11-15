@@ -93,7 +93,7 @@ gp(T, L, 3, "It's raining. Shall we ___ a taxi? (take)", "take",
 gp(T, L, 3, "Your phone is dead. Shall I ___ you mine? (lend)", "lend",
    *base("Shall I lend you mine?", "Shall I to lend"))
 tx(T, L, 4, "Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*:",
-   "Shall I take your coat? | Shall I take your coat for you? | Shall I hang up your coat? | Shall I hang your coat up? | Shall I take it? | Shall I take that for you? | Shall I take your coat, please?",
+   "Shall I take your coat? | Shall I take your coat for you? | Shall I hang up your coat? | Shall I hang your coat up? | Shall I take it? | Shall I take that for you? | Shall I take your coat, please? | Shall I take it for you? | Shall I take your heavy coat? | Shall I take the coat? | Shall I put your coat away? | Shall I take your coat from you? | Shall I take that coat for you?",
    "An offer: *Shall I* + base verb: *Shall I take your coat?*", "Piedāvājums: *Shall I* + pamatforma: *Shall I take your coat?*")
 replaces("Write the missing word: ___ shall I put your coat? On the chair?")   # tester, 15 November: the old gap tested *where*, not the offer
 gp(T, L, 3, "I'm going to the shop. Shall I ___ you anything? (get)", "get",

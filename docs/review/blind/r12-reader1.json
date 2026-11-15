@@ -1,0 +1,69 @@
+[
+{
+"id": "r12-001",
+"answer": "Shall I take your coat?",
+"other_correct": [
+"Shall I take your coat for you?",
+"Shall I take your coat, please?",
+"Shall I take that for you?",
+"Shall I take it for you?",
+"Shall I take it?",
+"Shall I take your heavy coat?",
+"Shall I take the coat?",
+"Shall I hang up your coat?",
+"Shall I hang your coat up?",
+"Shall I put your coat away?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open task: many correct endings, the checker must accept all. 'it' is unclear (which noun?) but fine. 'heavy' is not needed.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r12-002",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"begins"
+],
+[
+"has started"
+],
+[
+"has begun"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The cue (start) gives the verb but not the form; fine. 'has started' is possible English but odd after 'begins on Monday' (less natural). 'begins' also fits though the cue says start.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r12-003",
+"answer": "Last month I had to work every Saturday to cover for a sick colleague.",
+"other_correct": [
+"Last month, I had to work every Saturday to cover for a sick colleague.",
+"Last month I had to work every Saturday to cover for a colleague who was sick.",
+"Last month I had to work every Saturday to cover for an ill colleague.",
+"Last month I had to work every Saturday to cover for a colleague who was ill.",
+"Last month I worked every Saturday to cover for a sick colleague.",
+"Last month I had to work every Saturday to cover a sick colleague.",
+"Last month I had to work every Saturday to cover for a sick colleague."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which tense change is needed, but 'last month' makes it clear; 'Rewrite the sentence about last month' is slightly redundant. 'Last month I worked every Saturday' loses 'have to' (meaning changes a little) but is correct English.",
+"level_problem": "",
+"sense_problem": "'sick colleague' is fine in American English; British usually 'ill' (both accepted)."
+},
+{
+"id": "r12-004",
+"answer": "Every guest",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Quite easy for B1.2 (singular after every); more A2/B1.1.",
+"sense_problem": ""
+}
+]

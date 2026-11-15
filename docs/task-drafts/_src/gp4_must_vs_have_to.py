@@ -110,7 +110,7 @@ gp(T, L, 3, "My flatmate ___ get up early on Mondays because her first class sta
 
 # ── whole sentence (3) ──
 tx(T, L, 4, "Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague.",
-   "Last month I had to work every Saturday to cover for a sick colleague.",
+   "Last month I had to work every Saturday to cover for a sick colleague. | Last month I had to work every Saturday to cover for a colleague who was sick. | Last month I had to work every Saturday to cover for a colleague who was ill. | Last month I had to work every Saturday to cover for an ill colleague. | Last month I had to work every Saturday to cover a sick colleague.",
    "*Last month* is the past: *I had to work*. *must* has no past form for obligation.",
    "*Last month* ir pagātne: *I had to work*. Pienākumam *must* pagātnes formas nav.")
 replaces("Start with *Last month*: I have to work every Saturday to cover for a sick colleague.")   # tester, 15 November: say what to do

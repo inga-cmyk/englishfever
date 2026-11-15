@@ -1,0 +1,69 @@
+[
+{
+"id": "r12-001",
+"answer": "Shall I take your coat?",
+"other_correct": [
+"Shall I take your coat for you?",
+"Shall I take that for you?",
+"Shall I take it for you?",
+"Shall I take your coat from you?",
+"Shall I hang up your coat?",
+"Shall I take your jacket?",
+"Shall I take that coat for you?",
+"Shall I put your coat away?",
+"Shall I hang your coat up?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Heavy' is not needed; 'Offer to take it' is clear but open: many offers are possible (take, hang up), so the model answer is not unique. 'it' in the instruction gives 'take' away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r12-002",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"begins"
+],
+[
+"has started"
+],
+[
+"has begun"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The hint '(start)' gives the base form but the learner must change it (starts); 'begins' also fits if the hint is ignored. The grammar point (present after 'when' for future) is not named, which is good. 'it' and 'My course' are clear.",
+"level_problem": "",
+"sense_problem": "'begins ... When it starts' repeats the idea, fine and natural."
+},
+{
+"id": "r12-003",
+"answer": "Last month I had to work every Saturday to cover for a sick colleague.",
+"other_correct": [
+"Last month, I had to work every Saturday to cover for a sick colleague.",
+"Last month I had to work every Saturday to cover for a colleague who was sick.",
+"Last month I had to work every Saturday to cover for a colleague who was ill.",
+"Last month I had to work every Saturday to cover for an ill colleague.",
+"Last month I had to work every Saturday to cover a sick colleague.",
+"Last month I had to work every Saturday to cover for a colleague who was off sick.",
+"Last month I had to work all Saturdays to cover for a sick colleague.",
+"Last month I had to work every Saturday in order to cover for a sick colleague."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Rewrite' does not say to change the tense; learner may only copy with 'Last month' and keep 'have to' (wrong). Needs to be clear that the verb must change (e.g. 'Say it about the past'). Also 'Last month I worked every Saturday ...' is a plausible rewrite that loses 'had to' - ambiguous whether 'had to' is required.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r12-004",
+"answer": "Every guest",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Distractors are believable. 'Each of guest' is a bit random (missing 'the'); fine otherwise. 'Each guest' / 'Every guest' both would work, but only Every is offered."
+}
+]

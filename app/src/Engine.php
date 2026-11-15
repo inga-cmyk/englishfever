@@ -956,7 +956,7 @@ final class Engine
                     $given = json_decode((string) $w['answer'], true);
                     $given = is_array($given) ? implode($wit['kind'] === 'order' ? ' ' : ' / ', array_map('strval', $given)) : (string) ($given ?? $w['answer']);
                     $g = Grader::grade($wit, json_decode((string) $w['answer'], true) ?? $w['answer']);
-                    $out['first_mistake'] = ['q' => $wit['q'], 'given' => $given, 'show' => $g['show'], 'why' => $wit['why'] ?? '', 'why_lv' => $wit['why_lv'] ?? null];
+                    $out['first_mistake'] = ['q' => Content::shownQ($wit['q']), 'given' => $given, 'show' => $g['show'], 'why' => $wit['why'] ?? '', 'why_lv' => $wit['why_lv'] ?? null];
                 }
             }
             // what the learner already knows (teacher, 12 November, S3 A): topics with every answer right, highest level first

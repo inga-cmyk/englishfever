@@ -275,7 +275,8 @@ return json_decode(<<<'EF_JSON_END'
    "levels": [
     "A2.1",
     "A2.2",
-    "B1.1"
+    "B1.1",
+    "B1.2"
    ],
    "rule": {
     "form": [
@@ -8260,7 +8261,8 @@ return json_decode(<<<'EF_JSON_END'
    "area": "active",
    "levels": [
     "A2.1",
-    "A2.2"
+    "A2.2",
+    "B1.2"
    ],
    "rule": {
     "form": [

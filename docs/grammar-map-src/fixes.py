@@ -139,3 +139,9 @@ N('would_rather', '', D + 'B1.2, as in the list; B1.2 tasks are to be written.')
 N('c_inv', 'See the questions for Inga', D + 'B2.2 is recognising the form and making it when the start is given; choosing and transforming is C1 (x_inv_cond).')
 N('cleft', 'See the questions for Inga', D + 'B2.2 is recognising the form and making it when the start is given; choosing and transforming is C1 (x_cleft_adv).')
 N('neg_inversion', '', D + 'B2.2 is recognising the form and making it when the start is given; the full set and transformations are C1 (x_inv_neg, x_inv_main).')
+# Teacher, 15 November (batch 4, B1.2): should have / could have done is practised in More modals (not a passive); pc_always and
+# each_every get B1.2 tasks in their own topics, which get the level B1.2 (prepared tasks only).
+BY['should_have']['topics'] = ['more_modals']
+N('should_have', 'In the app only inside the passive (should have been closed)', ' Decided by the teacher, 15 November: tasks in More modals at B1.2.')
+N('pc_always', '', ' Decided by the teacher, 15 November: Present continuous gets B1.2 for these tasks.')
+N('each_every', '', ' Decided by the teacher, 15 November: Subject and verb gets B1.2 for these tasks.')

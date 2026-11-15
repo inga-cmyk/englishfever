@@ -13,7 +13,7 @@ AREAS = [
 SKILLS = [
     # id, label, area, levels
     ("present_simple", "Present simple", "active", ["A2.1", "A2.2", "B1.1"]),
-    ("present_continuous", "Present continuous", "active", ["A2.1", "A2.2", "B1.1"]),
+    ("present_continuous", "Present continuous", "active", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # B1.2: always + continuous, prepared tasks only (teacher, 15 November)
     ("past_simple", "Past simple", "active", ["A2.1", "A2.2", "B1.1"]),
     ("past_continuous", "Past continuous", "active", ["A2.2", "B1.1", "B1.2"]),
     ("present_perfect", "Present perfect", "active", ["A2.2", "B1.1", "B1.2"]),

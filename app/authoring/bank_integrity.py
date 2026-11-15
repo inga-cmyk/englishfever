@@ -63,7 +63,7 @@ def validate(items, skills, levels):
         if skill not in used:
             continue   # a topic whose tasks the teacher adds on the Tasks page
         for level in allowed:
-            if (skill, level) in {('cond_advanced', 'B1.2'), ('unreal_time', 'B1.2'), ('articles', 'A2.1')}: continue   # prepared tasks only (build.py PREPARED_ONLY)
+            if (skill, level) in {('cond_advanced', 'B1.2'), ('unreal_time', 'B1.2'), ('articles', 'A2.1'), ('present_continuous', 'B1.2'), ('agreement', 'B1.2')}: continue   # prepared tasks only (build.py PREPARED_ONLY)
             if coverage.get((skill, level)) != set(range(1, 7)):
                 errors.append(f'{skill} {level}: incomplete thinking-level coverage')
     if errors:

@@ -119,7 +119,7 @@ CARDS = {
                       "ex": ["If you [[help]] me, I'[[ll buy]] you lunch.", "If you [[touch]] that, you'[[ll burn]] yourself."]},
                      {"t": "*unless* = *if … not*", "ex": ["[[Unless]] you hurry, you'll miss the bus.", "[[If]] you [[don't]] hurry, you'll miss the bus."]}],
             "watch": ["*if* = maybe it happens; *when* = it will happen: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
-                      "No *will* after *as soon as, before, until* either: *I'll call you as soon as I [[get]] home.*"],
+                      "No *will* after *when, as soon as, before, until* either: *I'll call you when I [[get]] home.*"],
         },
         "lv": {
             "choice": {"cols": ["if daļa", "rezultāts"],
@@ -135,7 +135,7 @@ CARDS = {
                       "ex": ["If you [[help]] me, I'[[ll buy]] you lunch.", "If you [[touch]] that, you'[[ll burn]] yourself."]},
                      {"t": "*unless* = *if … not*", "ex": ["[[Unless]] you hurry, you'll miss the bus.", "[[If]] you [[don't]] hurry, you'll miss the bus."]}],
             "watch": ["*if* = varbūt notiks; *when* = noteikti notiks: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
-                      "Arī aiz *as soon as, before, until* nav *will*: *I'll call you as soon as I [[get]] home.*"],
+                      "Arī aiz *when, as soon as, before, until* nav *will*: *I'll call you when I [[get]] home.*"],
         },
     },
     "used_to": {

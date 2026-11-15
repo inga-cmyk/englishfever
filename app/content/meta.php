@@ -2715,7 +2715,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*You must wear a seat belt, but you don't have to wear a hat.*",
     "watch": [
      "*Must I…?* sounds formal; *Do I have to…?* is more common: *[[Do]] I [[have to]] sign here?*",
-     "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+     "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.* After *might* or *going to*, too: *We [[might have to]] wait.* (never *will must*)",
      "*may* asks for permission only with *I / we*: *[[May]] I sit here?* (not *May you help me?*)"
     ],
     "v2": {
@@ -2739,7 +2739,7 @@ return json_decode(<<<'EF_JSON_END'
         "not allowed || *You [[mustn't]] park here.* ;; not necessary || *You [[don't have to]] pay.*"
        ]
       ],
-      "note": "*can / should / must* + base verb, no *-s*: *She [[can]] swim.* *have to* changes: *She [[has to]] go. [[Do]] you [[have to]] go?*"
+      "note": "*can / should / must* + base verb, no *-s*: *She [[can]] swim.* *have to* changes: *She [[has to]] go. [[Do]] you [[have to]] go?* In British English *must* often shows the speaker's own feeling (*I [[must]] call my mum more often*), *have to* a rule (*I [[have to]] wear a badge at work*); very often both are possible."
      },
      "mistakes": [
       [
@@ -2771,7 +2771,8 @@ return json_decode(<<<'EF_JSON_END'
        "t": "In the past: *could* and *had to*",
        "ex": [
         "I [[could]] swim when I was five.",
-        "We [[had to]] wait an hour."
+        "We [[had to]] wait an hour.",
+        "I [[didn't have to]] pay. [[Did]] you [[have to]] wait?"
        ]
       },
       {
@@ -2789,7 +2790,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*Must I…?* sounds formal; *Do I have to…?* is more common: *[[Do]] I [[have to]] sign here?*",
-      "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+      "In the future: *will have to*, or *must* for something you tell someone to do: *We'll [[have to]] leave early. You [[must]] call me tomorrow.* After *might* or *going to*, too: *We [[might have to]] wait.* (never *will must*)",
       "*may* asks for permission only with *I / we*: *[[May]] I sit here?* (not *May you help me?*)"
      ]
     }
@@ -2811,7 +2812,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*rule, law, allowed, necessary, advice, ability* (*noteikums, likums*, atļauts, nepieciešams, padoms, spēja)",
     "watch": [
      "*Must I…?* izklausās oficiāli; biežāk saka *Do I have to…?*: *[[Do]] I [[have to]] sign here?*",
-     "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+     "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.* Arī aiz *might* vai *going to*: *We [[might have to]] wait.* (nekad *will must*)",
      "Ar *may* atļauju lūdz tikai *I / we*: *[[May]] I sit here?* (nevis *May you help me?*)"
     ],
     "v2": {
@@ -2835,7 +2836,7 @@ return json_decode(<<<'EF_JSON_END'
         "nedrīkst || *You [[mustn't]] park here.* ;; nav vajadzīgs || *You [[don't have to]] pay.*"
        ]
       ],
-      "note": "*can / should / must* + pamatforma, bez *-s*: *She [[can]] swim.* *have to* mainās: *She [[has to]] go. [[Do]] you [[have to]] go?*"
+      "note": "*can / should / must* + pamatforma, bez *-s*: *She [[can]] swim.* *have to* mainās: *She [[has to]] go. [[Do]] you [[have to]] go?* Britu angļu valodā *must* bieži izsaka paša runātāja sajūtu (*I [[must]] call my mum more often*), *have to* noteikumu (*I [[have to]] wear a badge at work*); ļoti bieži der abi."
      },
      "mistakes": [
       [
@@ -2867,7 +2868,8 @@ return json_decode(<<<'EF_JSON_END'
        "t": "Pagātnē: *could* un *had to*",
        "ex": [
         "I [[could]] swim when I was five.",
-        "We [[had to]] wait an hour."
+        "We [[had to]] wait an hour.",
+        "I [[didn't have to]] pay. [[Did]] you [[have to]] wait?"
        ]
       },
       {
@@ -2885,7 +2887,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*Must I…?* izklausās oficiāli; biežāk saka *Do I have to…?*: *[[Do]] I [[have to]] sign here?*",
-      "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.*",
+      "Nākotnē: *will have to*, vai *must*, kad kādam saka, kas jādara: *We'll [[have to]] leave early. You [[must]] call me tomorrow.* Arī aiz *might* vai *going to*: *We [[might have to]] wait.* (nekad *will must*)",
       "Ar *may* atļauju lūdz tikai *I / we*: *[[May]] I sit here?* (nevis *May you help me?*)"
      ]
     }
@@ -3331,7 +3333,7 @@ return json_decode(<<<'EF_JSON_END'
     "example": "*If you send the email now, she will reply before lunch.*",
     "watch": [
      "*if* = maybe it happens; *when* = it will happen: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
-     "No *will* after *as soon as, before, until* either: *I'll call you as soon as I [[get]] home.*"
+     "No *will* after *when, as soon as, before, until* either: *I'll call you when I [[get]] home.*"
     ],
     "v2": {
      "choice": {
@@ -3396,7 +3398,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*if* = maybe it happens; *when* = it will happen: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
-      "No *will* after *as soon as, before, until* either: *I'll call you as soon as I [[get]] home.*"
+      "No *will* after *when, as soon as, before, until* either: *I'll call you when I [[get]] home.*"
      ]
     }
    },
@@ -3415,7 +3417,7 @@ return json_decode(<<<'EF_JSON_END'
     "signals": "*if, unless, as soon as, when, in case*",
     "watch": [
      "*if* = varbūt notiks; *when* = noteikti notiks: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
-     "Arī aiz *as soon as, before, until* nav *will*: *I'll call you as soon as I [[get]] home.*"
+     "Arī aiz *when, as soon as, before, until* nav *will*: *I'll call you when I [[get]] home.*"
     ],
     "v2": {
      "choice": {
@@ -3481,7 +3483,7 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "watch": [
       "*if* = varbūt notiks; *when* = noteikti notiks: *[[If]] I see her, I'll tell her. [[When]] I see her, I'll tell her.*",
-      "Arī aiz *as soon as, before, until* nav *will*: *I'll call you as soon as I [[get]] home.*"
+      "Arī aiz *when, as soon as, before, until* nav *will*: *I'll call you when I [[get]] home.*"
      ]
     }
    }
@@ -5348,7 +5350,7 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Uncountable + singular verb: *The money [[is]] on the table. Your hair [[looks]] nice.*",
      "*[[any]]* = it doesn't matter which: *Take [[any]] seat.*",
-     "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
+     "Only one negative: *There isn't [[any]] milk* or *There's [[no]] milk*, not *There isn't no milk*.",
      "*[[much]]* in positive sentences sounds formal: *We have [[a lot of]] time.*"
     ],
     "v2": {
@@ -5417,12 +5419,25 @@ return json_decode(<<<'EF_JSON_END'
         "We have [[enough]] chairs. The room is big [[enough]].",
         "There are [[too many]] cars in the city."
        ]
+      },
+      {
+       "t": "*no*, *none*, *not any*",
+       "s": [
+        "no",
+        "none",
+        "none of"
+       ],
+       "ex": [
+        "There's [[no]] milk. = There isn't [[any]] milk.",
+        "How many came? [[None]].",
+        "[[None of]] my friends came."
+       ]
       }
      ],
      "watch": [
       "Uncountable + singular verb: *The money [[is]] on the table. Your hair [[looks]] nice.*",
       "*[[any]]* = it doesn't matter which: *Take [[any]] seat.*",
-      "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
+      "Only one negative: *There isn't [[any]] milk* or *There's [[no]] milk*, not *There isn't no milk*.",
       "*[[much]]* in positive sentences sounds formal: *We have [[a lot of]] time.*"
      ]
     }
@@ -5444,7 +5459,7 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Nesaskaitāms + vienskaitlis: *The money [[is]] on the table. Your hair [[looks]] nice.* Latviski \"mati\" ir daudzskaitlī, angliski *hair* ir nesaskaitāms.",
      "*[[any]]* = vienalga kurš: *Take [[any]] seat.*",
-     "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
+     "Tikai viens noliegums: *There isn't [[any]] milk* vai *There's [[no]] milk*, nevis *There isn't no milk*. Latviski saka \"nav nekāda piena\", tāpēc gribas divus noliegumus.",
      "*[[much]]* apstiprinājumā izklausās oficiāli: *We have [[a lot of]] time.*"
     ],
     "v2": {
@@ -5514,12 +5529,25 @@ return json_decode(<<<'EF_JSON_END'
         "We have [[enough]] chairs. The room is big [[enough]].",
         "There are [[too many]] cars in the city."
        ]
+      },
+      {
+       "t": "*no*, *none*, *not any*",
+       "s": [
+        "no",
+        "none",
+        "none of"
+       ],
+       "ex": [
+        "There's [[no]] milk. = There isn't [[any]] milk.",
+        "How many came? [[None]].",
+        "[[None of]] my friends came."
+       ]
       }
      ],
      "watch": [
       "Nesaskaitāms + vienskaitlis: *The money [[is]] on the table. Your hair [[looks]] nice.* Latviski \"mati\" ir daudzskaitlī, angliski *hair* ir nesaskaitāms.",
       "*[[any]]* = vienalga kurš: *Take [[any]] seat.*",
-      "*[[no]]* = *not [[any]]*: *There's [[no]] milk.* = *There isn't [[any]] milk.*",
+      "Tikai viens noliegums: *There isn't [[any]] milk* vai *There's [[no]] milk*, nevis *There isn't no milk*. Latviski saka \"nav nekāda piena\", tāpēc gribas divus noliegumus.",
       "*[[much]]* apstiprinājumā izklausās oficiāli: *We have [[a lot of]] time.*"
      ]
     }
@@ -6262,7 +6290,7 @@ return json_decode(<<<'EF_JSON_END'
         "Verbs",
         "*enjoy, finish, mind, avoid, suggest, keep, practise* || *I enjoy [[reading]].*",
         "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse* || *He decided [[to stay]].*",
-        "*like, love, hate, start, begin* (almost the same meaning) || *I like [[swimming]].* ;; || *I like [[to swim]].*"
+        "*like, love, hate, prefer, start, begin, continue* (almost the same meaning; but *would like* + *to* only: *I'd like [[to go]]*) || *I like [[swimming]].* ;; || *I like [[to swim]].*"
        ]
       ],
       "note": "After a preposition: always *-ing*: *good at [[cooking]], before [[leaving]], thank you for [[helping]]*."
@@ -6350,7 +6378,7 @@ return json_decode(<<<'EF_JSON_END'
         "Darbības vārdi",
         "*enjoy, finish, mind, avoid, suggest, keep, practise* || *I enjoy [[reading]].*",
         "*want, need, decide, hope, plan, learn, agree, promise, manage, refuse* || *He decided [[to stay]].*",
-        "*like, love, hate, start, begin* (gandrīz tā pati nozīme) || *I like [[swimming]].* ;; || *I like [[to swim]].*"
+        "*like, love, hate, prefer, start, begin, continue* (gandrīz tā pati nozīme; bet *would like* + tikai *to*: *I'd like [[to go]]*) || *I like [[swimming]].* ;; || *I like [[to swim]].*"
        ]
       ],
       "note": "Aiz prievārda vienmēr *-ing*: *good at [[cooking]], before [[leaving]], thank you for [[helping]]*."

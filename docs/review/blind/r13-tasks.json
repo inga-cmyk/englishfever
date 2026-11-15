@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "r13-001",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My brother hates ___ early.",
+  "options": [
+   "get up",
+   "gets up",
+   "to getting up",
+   "getting up"
+  ]
+ },
+ {
+  "id": "r13-002",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "My dad loves ___ old films. (watch)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-003",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "come",
+   "us",
+   "want",
+   "to",
+   "do",
+   "with",
+   "you"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-004",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "I want ___ my own café one day. (open)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-005",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "My parents want ___ ___ a dog.",
+  "word_cards": [
+   "get",
+   "to",
+   "gets",
+   "getting"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-006",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Do you like working from home?",
+   "I want to visit Prague in May.",
+   "Ben likes play tennis on Sundays.",
+   "We love walking in the forest."
+  ]
+ },
+ {
+  "id": "r13-007",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Does your partner like ___ computer games? (play)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-008",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Maria wants take a taxi to the airport.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-009",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *love*: Cooking is my favourite hobby.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-010",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We visited three ___ on our trip.",
+  "options": [
+   "countryes",
+   "countries",
+   "country",
+   "countrys"
+  ]
+ },
+ {
+  "id": "r13-011",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I work late two ___ a week.",
+  "options": [
+   "day",
+   "days",
+   "daies",
+   "dayes"
+  ]
+ },
+ {
+  "id": "r13-012",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "We bought two watches and three bags.",
+   "We bought two watches and three bages.",
+   "We bought two watchs and three bags.",
+   "We bought two watch and three bags."
+  ]
+ },
+ {
+  "id": "r13-013",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I always wash the dishes by hand.",
+   "We stayed in Rome for five days.",
+   "Our town has two new librarys.",
+   "Tom has two brothers and a sister."
+  ]
+ },
+ {
+  "id": "r13-014",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "We need two big ___ for the books.",
+  "word_cards": [
+   "boxs",
+   "box",
+   "boxes"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-015",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "There are lots of ___ in December.",
+  "word_cards": [
+   "partys",
+   "party",
+   "parties"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-016",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "I've got three ___ for the office. (key)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-017",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "I have two English ___ a week. (class)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-018",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Two*: The bus is late.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-019",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The shops here ___.",
+  "options": [
+   "very expensive",
+   "are very expensives",
+   "very expensives",
+   "are very expensive"
+  ]
+ },
+ {
+  "id": "r13-020",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "very",
+   "has",
+   "a",
+   "job",
+   "she",
+   "good"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-021",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Use the words in brackets: I need two ___ for the trip. (bag / big)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-022",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "We have two ___ ___ in our garden.",
+  "word_cards": [
+   "big",
+   "bigs",
+   "trees",
+   "tree"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-023",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The lesson was short and useful.",
+   "We rented a car small for the week.",
+   "Her flat has big windows.",
+   "I need two new batteries for my camera."
+  ]
+ },
+ {
+  "id": "r13-024",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Use the words in brackets: My new headphones ___. (comfortable / very / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-025",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "age",
+   "her",
+   "active",
+   "grandmother",
+   "for",
+   "is",
+   "very",
+   "my"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-026",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "The rooms in this hotel ___ very ___.",
+  "word_cards": [
+   "have",
+   "cleans",
+   "are",
+   "clean"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-027",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Our*: We have very nice neighbours.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-028",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: What time ___ you usually finish work?",
+  "options": [
+   "are",
+   "do",
+   "—"
+  ]
+ },
+ {
+  "id": "r13-029",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We usually have dinner at seven.",
+   "My brother is sleeping at the moment.",
+   "Look! Our bus comes round the corner.",
+   "Does your shop open on Sundays?"
+  ]
+ },
+ {
+  "id": "r13-030",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "she",
+   "is",
+   "usually",
+   "she",
+   "running",
+   "but",
+   "swims",
+   "today"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-031",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Can I call you back? I ___ dinner.",
+  "word_cards": [
+   "had",
+   "am having",
+   "have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-032",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Look! Dad ___ the dishes. He never ___ that! (wash / do)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-033",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence about this moment. Start with *Right now*: My sister reads the news on her phone.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-034",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My keys weren't in my bag.",
+   "The concert tickets was expensive.",
+   "We were in Riga last weekend.",
+   "Were you at the gym on Monday?"
+  ]
+ },
+ {
+  "id": "r13-035",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "___ your parents at the wedding?",
+  "word_cards": [
+   "Was",
+   "Did",
+   "Were"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-036",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "The shops ___ busy yesterday.",
+  "word_cards": [
+   "wasn't",
+   "weren't",
+   "didn't"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-037",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "were",
+   "lunchtime",
+   "at",
+   "you",
+   "where"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-038",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "was",
+   "why",
+   "phone",
+   "your",
+   "off"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-039",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Make a yes/no question: The exam was difficult.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-040",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "There are a few museums in our town.",
+   "I speak a little German.",
+   "I put a few salt in the soup.",
+   "How much water do you drink every day?"
+  ]
+ },
+ {
+  "id": "r13-041",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Can you wait ___ minutes, please?",
+  "word_cards": [
+   "a few",
+   "a little",
+   "much"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-042",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *a few* or *a little*: I go to the gym ___ times a week.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-043",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *a few* or *a little*: Can I have ___ milk in my tea?",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-044",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *a few* or *a little*: I speak some Spanish, but not much.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-045",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *a few* or *a little*: There are three or four cafés near my office.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-046",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The sun is very strong today.",
+   "My aunt is an engineer in Riga.",
+   "I never drink coffee after six.",
+   "I ordered a pizza. A pizza was cold."
+  ]
+ },
+ {
+  "id": "r13-047",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "There was ___ wallet on my seat on the bus. ___ wallet was empty.",
+  "word_cards": [
+   "a",
+   "A",
+   "The",
+   "the"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-048",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *a*, *an* or *the*: My sister has ___ new job. ___ job is in Riga.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-049",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *a*, *an* or *the*: We rented ___ car in Spain. ___ car was very small.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-050",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I bought a new laptop. A laptop is very fast.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-051",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My birthday is on 3 June.",
+   "The shop opens at nine.",
+   "I started a new job on last Monday.",
+   "We often go skiing in February."
+  ]
+ },
+ {
+  "id": "r13-052",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Are you free ___ this weekend?",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "—"
+  ]
+ },
+ {
+  "id": "r13-053",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "I check my email ___ every morning.",
+  "word_cards": [
+   "—",
+   "in"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-054",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "The new gym opens ___ tomorrow.",
+  "word_cards": [
+   "on",
+   "—",
+   "in"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-055",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: We arrived in Rome on yesterday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-056",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *a*, *an* or *some*: I need ___ umbrella and ___ money.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-057",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Are there any shops near your hotel?",
+   "I don't have some free time this week.",
+   "I'd like a sandwich and some water.",
+   "Our office has some new computers."
+  ]
+ },
+ {
+  "id": "r13-058",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The office is empty. Everyone ___ home.",
+  "options": [
+   "has been",
+   "has went",
+   "has gone"
+  ]
+ },
+ {
+  "id": "r13-059",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I've ___ to the gym. I feel great now.",
+  "options": [
+   "gone",
+   "been",
+   "went"
+  ]
+ },
+ {
+  "id": "r13-060",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My parents have gone to Italy twice.",
+   "I haven't seen my cousin this year.",
+   "Have you ever been to a jazz concert?",
+   "Ivo has gone home. He felt ill."
+  ]
+ },
+ {
+  "id": "r13-061",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Write *been* or *gone*: We have ___ to the cinema twice this month.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-062",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Write *been* or *gone*: Dan's ___ to a football match. He'll be back at ten.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-063",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Where's Oskars? He ___ ___ to the airport to meet his parents.",
+  "word_cards": [
+   "went",
+   "been",
+   "has",
+   "gone"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-064",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Your car looks so clean! Have you ___ to the car wash?",
+  "word_cards": [
+   "went",
+   "been",
+   "gone"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-065",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "I can't call Lena now. She's ___ to bed.",
+  "word_cards": [
+   "gone",
+   "been",
+   "went"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-066",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Our friends are back from their holiday. They ___ ___ to Greece.",
+  "word_cards": [
+   "been",
+   "have",
+   "gone",
+   "went"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-067",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-068",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I have ___ for you!",
+  "options": [
+   "a good new",
+   "a good news",
+   "some good news"
+  ]
+ },
+ {
+  "id": "r13-069",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "I found ___ useful ___ on this website.",
+  "word_cards": [
+   "information",
+   "a",
+   "some",
+   "informations"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-070",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Can I ask you for some information?",
+   "Our new furniture is very comfortable.",
+   "My boss gave me a useful advice.",
+   "We haven't got much luggage."
+  ]
+ },
+ {
+  "id": "r13-071",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "advice",
+   "piece",
+   "a",
+   "can",
+   "i",
+   "you",
+   "of",
+   "give"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-072",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "My ___ ___ still at the airport.",
+  "word_cards": [
+   "luggages",
+   "are",
+   "luggage",
+   "is"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-073",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We need ___ for our new office.",
+  "options": [
+   "some furniture",
+   "a furniture",
+   "furnitures",
+   "some furnitures"
+  ]
+ },
+ {
+  "id": "r13-074",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Thank you! Your advice about the exam ___ really helpful. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-075",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "of",
+   "luggage",
+   "many",
+   "have",
+   "pieces",
+   "you",
+   "do",
+   "how"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-076",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *furniture*: The chairs and tables in this café are new.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-077",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We arrived ___ the hotel after midnight.",
+  "options": [
+   "at",
+   "—",
+   "to"
+  ]
+ },
+ {
+  "id": "r13-078",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: What time did you ___ the office today?",
+  "options": [
+   "arrive",
+   "arrive to",
+   "get",
+   "get to"
+  ]
+ },
+ {
+  "id": "r13-079",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We arrived to Oslo late on Friday.",
+   "I walk past your house every day.",
+   "The road goes through the forest.",
+   "She ran into the kitchen."
+  ]
+ },
+ {
+  "id": "r13-080",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Walk ___ the bank and turn left.",
+  "options": [
+   "passed",
+   "past",
+   "pass"
+  ]
+ },
+ {
+  "id": "r13-081",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "walk",
+   "the",
+   "beach",
+   "let's",
+   "lunch",
+   "along",
+   "after"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-082",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "We swam ___ the river to the other side.",
+  "word_cards": [
+   "along",
+   "across",
+   "through"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-083",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "The cat came in ___ the open window.",
+  "word_cards": [
+   "through",
+   "along",
+   "across"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-084",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: At airport security, take your laptop ___ ___ your bag.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-085",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: What time did you get to home last night?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-086",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We enjoyed the cooking class ___.",
+  "options": [
+   "very much",
+   "much very",
+   "much",
+   "very"
+  ]
+ },
+ {
+  "id": "r13-087",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My boss speaks really fast.",
+   "This soup is too salty.",
+   "We very enjoyed the concert.",
+   "The hotel was quite small."
+  ]
+ },
+ {
+  "id": "r13-088",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "new",
+   "my",
+   "like",
+   "very",
+   "flat",
+   "i",
+   "much"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-089",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "This suitcase is ___ heavy for me.",
+  "word_cards": [
+   "too much",
+   "very much",
+   "too"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-090",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: My grandmother loves her garden very ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-091",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "holiday",
+   "had",
+   "nice",
+   "we",
+   "very",
+   "a"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-092",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "I ___ like this podcast.",
+  "word_cards": [
+   "much",
+   "very",
+   "really"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-093",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *really*: We liked the new restaurant very much.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-094",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Please drive ___. The road is icy.",
+  "options": [
+   "more slowlier",
+   "the most slowly",
+   "more slowly",
+   "slowlier"
+  ]
+ },
+ {
+  "id": "r13-095",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My new phone charges much faster.",
+   "Tom drives more fast than his father.",
+   "Who sings the best in your family?",
+   "We arrived later than the others."
+  ]
+ },
+ {
+  "id": "r13-096",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "english",
+   "more",
+   "me",
+   "than",
+   "sister",
+   "speaks",
+   "my",
+   "fluently"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-097",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "She plays the guitar ___ than her brother.",
+  "word_cards": [
+   "better",
+   "more well",
+   "best"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-098",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Marta has never had an accident. She drives ___ than her brother. (careful)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-099",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Today I started work ___ than usual. (early)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-100",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Of all my colleagues, Anna lives ___ from the office. (far)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-101",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *My brother*: I cook worse than my brother.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-102",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: It was very hot, so I ___ sleep last night.",
+  "options": [
+   "didn't could",
+   "couldn't",
+   "can't",
+   "couldn't to"
+  ]
+ },
+ {
+  "id": "r13-103",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Could you cook when you were a student?",
+   "When I was ten, I can speak French.",
+   "We couldn't find a taxi at the airport.",
+   "My first phone could only make calls."
+  ]
+ },
+ {
+  "id": "r13-104",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "seats",
+   "our",
+   "the",
+   "stage",
+   "couldn't",
+   "from",
+   "see",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-105",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "i",
+   "i",
+   "much",
+   "was",
+   "run",
+   "younger",
+   "when",
+   "could",
+   "faster"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-106",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ your parents ___ a car when they were young?",
+  "word_cards": [
+   "Could",
+   "drove",
+   "drive",
+   "Can"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-107",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "As a teenager, Ben ___ ___ any song on the guitar.",
+  "word_cards": [
+   "could",
+   "play",
+   "played",
+   "can"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-108",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Make a yes/no question: Tom could speak German when he lived in Berlin.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-109",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The party was great. ___ had a good time.",
+  "options": [
+   "Nobody",
+   "Anybody",
+   "Everybody"
+  ]
+ },
+ {
+  "id": "r13-110",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I heard anybody in the garden last night.",
+   "Did anyone call me this morning?",
+   "Everybody in my office drives to work.",
+   "Nobody in my family can cook."
+  ]
+ },
+ {
+  "id": "r13-111",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "My glasses are ___ in this room. Can you help me look?",
+  "word_cards": [
+   "anywhere",
+   "somewhere",
+   "something"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-112",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "There's ___ in my wallet. It's empty.",
+  "word_cards": [
+   "anything",
+   "something",
+   "nothing"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-113",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with a word like *someone, anything, nowhere*: ___ works here on Sundays. The office is closed.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-114",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with a word like *someone, anything, nowhere*: There are trees ___: in the streets, in the parks, by the river.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-115",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: I bought something for Anna.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-116",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My sister loves swimming and ___.",
+  "options": [
+   "to cycle",
+   "cycling",
+   "cycle"
+  ]
+ },
+ {
+  "id": "r13-117",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'm tired today because I slept badly.",
+   "I usually have breakfast and reading the news.",
+   "It was raining, so we took a taxi home.",
+   "Is the meeting today or tomorrow morning?"
+  ]
+ },
+ {
+  "id": "r13-118",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Would you like to stay in tonight or ___ out?",
+  "word_cards": [
+   "went",
+   "going",
+   "go"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-119",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "On Saturday we visited my parents and ___ in their garden.",
+  "word_cards": [
+   "working",
+   "work",
+   "worked"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-120",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Thanks for coming and ___ me with the move. (help)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-121",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "The best parts of my job are meeting people and ___. (travel)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-122",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: She closed her laptop and go home.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-123",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Is it cheaper to travel to Tallinn ___ bus?",
+  "options": [
+   "by",
+   "in",
+   "with",
+   "on"
+  ]
+ },
+ {
+  "id": "r13-124",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My daughter goes to school by foot.",
+   "I fell asleep on the plane.",
+   "He picked me up in his car.",
+   "We travelled around Italy by train."
+  ]
+ },
+ {
+  "id": "r13-125",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Today I'm going to work ___ Tom's car.",
+  "word_cards": [
+   "in",
+   "by",
+   "with",
+   "on"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-126",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "I met an old friend ___ the tram yesterday.",
+  "word_cards": [
+   "on",
+   "at",
+   "in"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-127",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Write the missing word: Let's go to the museum ___ foot.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-128",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Write the missing word: We went to the airport ___ a taxi.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-129",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I go to work by my car.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-130",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He went to the doctor ___ a check-up.",
+  "options": [
+   "for",
+   "to",
+   "on"
+  ]
+ },
+ {
+  "id": "r13-131",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She called me to say thank you.",
+   "I'm learning English for get a better job.",
+   "They are staying with us for the weekend.",
+   "We went to the beach for a swim."
+  ]
+ },
+ {
+  "id": "r13-132",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "for",
+   "uses",
+   "pay",
+   "his",
+   "everything",
+   "phone",
+   "he",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r13-133",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "She goes to the gym ___ ___ fit.",
+  "word_cards": [
+   "stay",
+   "for",
+   "staying",
+   "to"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-134",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Why did you call the hotel? I called ___ a room. (book)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-135",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Join with *to*: I went to the post office. I sent a parcel there.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-136",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Our kitchen chairs were made from my uncle.",
+   "The museum is visited by thousands of tourists.",
+   "Breakfast is served from seven to ten.",
+   "My grandmother was born in a small town."
+  ]
+ },
+ {
+  "id": "r13-137",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: Our hotel is owned ___ a Swedish company.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-138",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "In our village, the bread is baked ___ a local family.",
+  "word_cards": [
+   "of",
+   "by",
+   "from"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-139",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "The windows of our office ___ ___ a small company every month. (clean)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-140",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *This bridge*: A Latvian engineer designed this bridge.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-141",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My feet hurt after the long walk.",
+   "My glasses is in the car.",
+   "People in this town are very friendly.",
+   "These kitchen scissors are very sharp."
+  ]
+ },
+ {
+  "id": "r13-142",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Can I borrow ___ ___ for a minute?",
+  "word_cards": [
+   "scissor",
+   "a",
+   "a pair of",
+   "scissors"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-143",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "My jeans ___ too big for me now. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-144",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *These trousers*: This shirt is too expensive.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-145",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ we had dinner, we went for a walk by the sea.",
+  "word_cards": [
+   "Then",
+   "After",
+   "After that"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-146",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "We always buy popcorn ___ the film.",
+  "word_cards": [
+   "before",
+   "while",
+   "when"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r13-147",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We had lunch. After that, we visited the old town.",
+   "Before go to work, I walk the dog.",
+   "Someone called me while I was at the gym.",
+   "When I got home, I made some soup."
+  ]
+ },
+ {
+  "id": "r13-148",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *will* or *going to*: 'Did you reply to Mark's email?' 'Oh no, I forgot! I ___ to him now.' (write)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-149",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-150",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *a*, *an* or *the*: We always sit at ___ same table in this café.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r13-151",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Maria is best driver in our family.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r13-152",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Say it another way with *discuss*: We talked about the new timetable at the meeting.",
+  "note": "the learner types a whole sentence"
+ }
+]

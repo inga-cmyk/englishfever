@@ -16,4 +16,4 @@ gp(T, L, 3, "Complete with *will* or *going to*: 'Did you reply to Mark's email?
 gp(T, L, 3, "Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy)",
    "'m going to buy | am going to buy",
    "The decision was made before (that is why the speaker is saving), so *going to*: *I'm going to buy a flat next year.* *will* is for a decision made at the moment of speaking.",
-   "Lēmums pieņemts jau iepriekš (tāpēc runātājs jau krāj), tāpēc *going to*: *I'm going to buy a flat next year.* *will* lieto lēmumam, ko pieņem runāšanas brīdī.")
+   "Lēmums pieņemts jau iepriekš (tāpēc runātājs krāj), tāpēc *going to*: *I'm going to buy a flat next year.* *will* lieto lēmumam, ko pieņem runāšanas brīdī.")

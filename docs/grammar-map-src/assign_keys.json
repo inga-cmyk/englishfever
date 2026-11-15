@@ -16178,5 +16178,613 @@
 "agreement | B1.2 | mcq | Choose the correct option: ___ at the conference gets a name badge and a free lunch. | Every guest": [
 "each_every",
 "read"
+],
+"verb_patterns | A2.1 | mcq | Choose the correct option: My brother hates ___ early. | getting up": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | gap | My dad loves ___ old films. (watch) | ": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | order | Put the words in order to make a question. | do you want to come with us": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | gap | I want ___ my own café one day. (open) | ": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | gap | My parents want ___ ___ a dog. | ": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | mcq | Which sentence has a mistake? | Ben likes play tennis on Sundays.": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | gap | Does your partner like ___ computer games? (play) | ": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | text | Correct the mistake: Maria wants take a taxi to the airport. | ": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | text | Say it another way with *love*: Cooking is my favourite hobby. | ": [
+"vp_like_ing",
+"read"
+],
+"irregular_plurals | A2.1 | mcq | Choose the correct option: We visited three ___ on our trip. | countries": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | mcq | Choose the correct option: I work late two ___ a week. | days": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | mcq | Which sentence is correct? | We bought two watches and three bags.": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | mcq | Which sentence has a mistake? | Our town has two new librarys.": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | gap | We need two big ___ for the books. | ": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | gap | There are lots of ___ in December. | ": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | gap | I've got three ___ for the office. (key) | ": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | gap | I have two English ___ a week. (class) | ": [
+"plural_reg",
+"read"
+],
+"irregular_plurals | A2.1 | text | Start with *Two*: The bus is late. | ": [
+"plural_reg",
+"read"
+],
+"adj_order | A2.1 | mcq | Choose the correct option: The shops here ___. | are very expensive": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | order | Put the words in order. | she has a very good job": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | gap | Use the words in brackets: I need two ___ for the trip. (bag / big) | ": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | gap | We have two ___ ___ in our garden. | ": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | mcq | Which sentence has a mistake? | We rented a car small for the week.": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | gap | Use the words in brackets: My new headphones ___. (comfortable / very / be) | ": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | order | Put the words in order. | my grandmother is very active for her age": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | gap | The rooms in this hotel ___ very ___. | ": [
+"adj_basic",
+"read"
+],
+"adj_order | A2.1 | text | Start with *Our*: We have very nice neighbours. | ": [
+"adj_basic",
+"read"
+],
+"present_simple | A2.1 | mcq | Choose the correct option: What time ___ you usually finish work? | do": [
+"ps_pc",
+"read"
+],
+"present_continuous | A2.1 | mcq | Which sentence has a mistake? | Look! Our bus comes round the corner.": [
+"ps_pc",
+"read"
+],
+"present_continuous | A2.1 | order | Put the words in order. | she usually swims but today she is running": [
+"ps_pc",
+"read"
+],
+"present_continuous | A2.1 | gap | Can I call you back? I ___ dinner. | ": [
+"ps_pc",
+"read"
+],
+"present_continuous | A2.1 | gap | Look! Dad ___ the dishes. He never ___ that! (wash / do) | ": [
+"ps_pc",
+"read"
+],
+"present_continuous | A2.1 | text | Rewrite the sentence about this moment. Start with *Right now*: My sister reads the news on her phone. | ": [
+"ps_pc",
+"read"
+],
+"past_simple | A2.1 | mcq | Which sentence has a mistake? | The concert tickets was expensive.": [
+"was_were",
+"read"
+],
+"past_simple | A2.1 | gap | ___ your parents at the wedding? | ": [
+"was_were",
+"read"
+],
+"past_simple | A2.1 | gap | The shops ___ busy yesterday. | ": [
+"was_were",
+"read"
+],
+"past_simple | A2.1 | order | Put the words in order. | where were you at lunchtime": [
+"was_were",
+"read"
+],
+"past_simple | A2.1 | order | Put the words in order. | why was your phone off": [
+"was_were",
+"read"
+],
+"past_simple | A2.1 | text | Make a yes/no question: The exam was difficult. | ": [
+"was_were",
+"read"
+],
+"quantity | A2.1 | mcq | Which sentence has a mistake? | I put a few salt in the soup.": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | gap | Can you wait ___ minutes, please? | ": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | gap | Write *a few* or *a little*: I go to the gym ___ times a week. | ": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | gap | Write *a few* or *a little*: Can I have ___ milk in my tea? | ": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | text | Say it another way with *a few* or *a little*: I speak some Spanish, but not much. | ": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | text | Say it another way with *a few* or *a little*: There are three or four cafés near my office. | ": [
+"a_few",
+"read"
+],
+"articles | A2.1 | mcq | Which sentence has a mistake? | I ordered a pizza. A pizza was cold.": [
+"a_the",
+"read"
+],
+"articles | A2.1 | gap | There was ___ wallet on my seat on the bus. ___ wallet was empty. | ": [
+"a_the",
+"read"
+],
+"articles | A2.1 | gap | Complete with *a*, *an* or *the*: My sister has ___ new job. ___ job is in Riga. | ": [
+"a_the",
+"read"
+],
+"articles | A2.1 | gap | Complete with *a*, *an* or *the*: We rented ___ car in Spain. ___ car was very small. | ": [
+"a_the",
+"read"
+],
+"articles | A2.1 | text | Correct the mistake: I bought a new laptop. A laptop is very fast. | ": [
+"a_the",
+"read"
+],
+"prep_time_place | A2.1 | mcq | Which sentence has a mistake? | I started a new job on last Monday.": [
+"prep_none",
+"read"
+],
+"prep_time_place | A2.1 | mcq | Choose the correct option: Are you free ___ this weekend? | —": [
+"prep_none",
+"read"
+],
+"prep_time_place | A2.1 | gap | I check my email ___ every morning. | ": [
+"prep_none",
+"read"
+],
+"prep_time_place | A2.1 | gap | The new gym opens ___ tomorrow. | ": [
+"prep_none",
+"read"
+],
+"prep_time_place | A2.1 | text | Correct the mistake: We arrived in Rome on yesterday. | ": [
+"prep_none",
+"read"
+],
+"quantity | A2.1 | gap | Write *a*, *an* or *some*: I need ___ umbrella and ___ money. | ": [
+"count_unc",
+"read"
+],
+"quantity | A2.1 | mcq | Which sentence has a mistake? | I don't have some free time this week.": [
+"count_unc",
+"read"
+],
+"present_perfect | A2.2 | mcq | Choose the correct option: The office is empty. Everyone ___ home. | has gone": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | mcq | Choose the correct option: I've ___ to the gym. I feel great now. | been": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | mcq | Which sentence has a mistake? | My parents have gone to Italy twice.": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | gap | Write *been* or *gone*: We have ___ to the cinema twice this month. | ": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | gap | Write *been* or *gone*: Dan's ___ to a football match. He'll be back at ten. | ": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | gap | Where's Oskars? He ___ ___ to the airport to meet his parents. | ": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | gap | Your car looks so clean! Have you ___ to the car wash? | ": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | gap | I can't call Lena now. She's ___ to bed. | ": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | gap | Our friends are back from their holiday. They ___ ___ to Greece. | ": [
+"pp_been_gone",
+"read"
+],
+"present_perfect | A2.2 | text | Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there. | ": [
+"pp_been_gone",
+"read"
+],
+"quantity | A2.2 | mcq | Choose the correct option: I have ___ for you! | some good news": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | gap | I found ___ useful ___ on this website. | ": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | mcq | Which sentence has a mistake? | My boss gave me a useful advice.": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | order | Put the words in order to make a question. | can i give you a piece of advice": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | gap | My ___ ___ still at the airport. | ": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | mcq | Choose the correct option: We need ___ for our new office. | some furniture": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | gap | Thank you! Your advice about the exam ___ really helpful. (be) | ": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | order | Put the words in order to make a question. | how many pieces of luggage do you have": [
+"unc_nouns",
+"read"
+],
+"quantity | A2.2 | text | Rewrite with *furniture*: The chairs and tables in this café are new. | ": [
+"unc_nouns",
+"read"
+],
+"prep_time_place | A2.2 | mcq | Choose the correct option: We arrived ___ the hotel after midnight. | at": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | mcq | Choose the correct option: What time did you ___ the office today? | get to": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | mcq | Which sentence has a mistake? | We arrived to Oslo late on Friday.": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | mcq | Choose the correct option: Walk ___ the bank and turn left. | past": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | order | Put the words in order. | let's walk along the beach after lunch": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | gap | We swam ___ the river to the other side. | ": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | gap | The cat came in ___ the open window. | ": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | gap | Write one word in each gap: At airport security, take your laptop ___ ___ your bag. | ": [
+"prep_move",
+"read"
+],
+"prep_time_place | A2.2 | text | Correct the mistake: What time did you get to home last night? | ": [
+"prep_move",
+"read"
+],
+"adverbs | A2.2 | mcq | Choose the correct option: We enjoyed the cooking class ___. | very much": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | mcq | Which sentence has a mistake? | We very enjoyed the concert.": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | order | Put the words in order. | i like my new flat very much": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | gap | This suitcase is ___ heavy for me. | ": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | gap | Complete with one word: My grandmother loves her garden very ___. | ": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | order | Put the words in order. | we had a very nice holiday": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | gap | I ___ like this podcast. | ": [
+"adv_degree",
+"read"
+],
+"adverbs | A2.2 | text | Say it another way with *really*: We liked the new restaurant very much. | ": [
+"adv_degree",
+"read"
+],
+"comparison | A2.2 | mcq | Choose the correct option: Please drive ___. The road is icy. | more slowly": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | mcq | Which sentence has a mistake? | Tom drives more fast than his father.": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | order | Put the words in order. | my sister speaks english more fluently than me": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | gap | She plays the guitar ___ than her brother. | ": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | gap | Marta has never had an accident. She drives ___ than her brother. (careful) | ": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | gap | Today I started work ___ than usual. (early) | ": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | gap | Of all my colleagues, Anna lives ___ from the office. (far) | ": [
+"cmp_adv",
+"read"
+],
+"comparison | A2.2 | text | Start with *My brother*: I cook worse than my brother. | ": [
+"cmp_adv",
+"read"
+],
+"modal_verbs | A2.2 | mcq | Choose the correct option: It was very hot, so I ___ sleep last night. | couldn't": [
+"could_past",
+"read"
+],
+"modal_verbs | A2.2 | mcq | Which sentence has a mistake? | When I was ten, I can speak French.": [
+"could_past",
+"read"
+],
+"modal_verbs | A2.2 | order | Put the words in order. | we couldn't see the stage from our seats": [
+"could_past",
+"read"
+],
+"modal_verbs | A2.2 | order | Put the words in order. | when i was younger i could run much faster": [
+"could_past",
+"read"
+],
+"modal_verbs | A2.2 | gap | ___ your parents ___ a car when they were young? | ": [
+"could_past",
+"read"
+],
+"modal_verbs | A2.2 | gap | As a teenager, Ben ___ ___ any song on the guitar. | ": [
+"could_past",
+"read"
+],
+"modal_verbs | A2.2 | text | Make a yes/no question: Tom could speak German when he lived in Berlin. | ": [
+"could_past",
+"read"
+],
+"indefinite_pronouns | A2.2 | mcq | Choose the correct option: The party was great. ___ had a good time. | Everybody": [
+"indef_form",
+"read"
+],
+"indefinite_pronouns | A2.2 | mcq | Which sentence has a mistake? | I heard anybody in the garden last night.": [
+"indef_form",
+"read"
+],
+"indefinite_pronouns | A2.2 | gap | My glasses are ___ in this room. Can you help me look? | ": [
+"indef_form",
+"read"
+],
+"indefinite_pronouns | A2.2 | gap | There's ___ in my wallet. It's empty. | ": [
+"indef_form",
+"read"
+],
+"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: ___ works here on Sundays. The office is closed. | ": [
+"indef_form",
+"read"
+],
+"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: There are trees ___: in the streets, in the parks, by the river. | ": [
+"indef_form",
+"read"
+],
+"indefinite_pronouns | A2.2 | text | Make it negative: I bought something for Anna. | ": [
+"indef_form",
+"read"
+],
+"conj_basic | A2.2 | mcq | Choose the correct option: My sister loves swimming and ___. | cycling": [
+"conj_parallel",
+"read"
+],
+"conj_basic | A2.2 | mcq | Which sentence has a mistake? | I usually have breakfast and reading the news.": [
+"conj_parallel",
+"read"
+],
+"conj_basic | A2.2 | gap | Would you like to stay in tonight or ___ out? | ": [
+"conj_parallel",
+"read"
+],
+"conj_basic | A2.2 | gap | On Saturday we visited my parents and ___ in their garden. | ": [
+"conj_parallel",
+"read"
+],
+"conj_basic | A2.2 | gap | Thanks for coming and ___ me with the move. (help) | ": [
+"conj_parallel",
+"read"
+],
+"conj_basic | A2.2 | gap | The best parts of my job are meeting people and ___. (travel) | ": [
+"conj_parallel",
+"read"
+],
+"conj_basic | A2.2 | text | Correct the mistake: She closed her laptop and go home. | ": [
+"conj_parallel",
+"read"
+],
+"prep_time_place | A2.2 | mcq | Choose the correct option: Is it cheaper to travel to Tallinn ___ bus? | by": [
+"prep_transport",
+"read"
+],
+"prep_time_place | A2.2 | mcq | Which sentence has a mistake? | My daughter goes to school by foot.": [
+"prep_transport",
+"read"
+],
+"prep_time_place | A2.2 | gap | Today I'm going to work ___ Tom's car. | ": [
+"prep_transport",
+"read"
+],
+"prep_time_place | A2.2 | gap | I met an old friend ___ the tram yesterday. | ": [
+"prep_transport",
+"read"
+],
+"prep_time_place | A2.2 | gap | Write the missing word: Let's go to the museum ___ foot. | ": [
+"prep_transport",
+"read"
+],
+"prep_time_place | A2.2 | gap | Write the missing word: We went to the airport ___ a taxi. | ": [
+"prep_transport",
+"read"
+],
+"prep_time_place | A2.2 | text | Correct the mistake: I go to work by my car. | ": [
+"prep_transport",
+"read"
+],
+"conj_clauses | A2.2 | mcq | Choose the correct option: He went to the doctor ___ a check-up. | for": [
+"purpose_to",
+"read"
+],
+"conj_clauses | A2.2 | mcq | Which sentence has a mistake? | I'm learning English for get a better job.": [
+"purpose_to",
+"read"
+],
+"conj_clauses | A2.2 | order | Put the words in order. | he uses his phone to pay for everything": [
+"purpose_to",
+"read"
+],
+"conj_clauses | A2.2 | gap | She goes to the gym ___ ___ fit. | ": [
+"purpose_to",
+"read"
+],
+"conj_clauses | A2.2 | gap | Why did you call the hotel? I called ___ a room. (book) | ": [
+"purpose_to",
+"read"
+],
+"conj_clauses | A2.2 | text | Join with *to*: I went to the post office. I sent a parcel there. | ": [
+"purpose_to",
+"read"
+],
+"past_simple_passive | A2.2 | mcq | Which sentence has a mistake? | Our kitchen chairs were made from my uncle.": [
+"pas_by",
+"read"
+],
+"present_simple_passive | A2.2 | gap | Complete with one word: Our hotel is owned ___ a Swedish company. | ": [
+"pas_by",
+"read"
+],
+"present_simple_passive | A2.2 | gap | In our village, the bread is baked ___ a local family. | ": [
+"pas_by",
+"read"
+],
+"present_simple_passive | A2.2 | gap | The windows of our office ___ ___ a small company every month. (clean) | ": [
+"pas_by",
+"read"
+],
+"past_simple_passive | A2.2 | text | Start with *This bridge*: A Latvian engineer designed this bridge. | ": [
+"pas_by",
+"read"
+],
+"irregular_plurals | A2.2 | mcq | Which sentence has a mistake? | My glasses is in the car.": [
+"plural_only",
+"read"
+],
+"irregular_plurals | A2.2 | gap | Can I borrow ___ ___ for a minute? | ": [
+"plural_only",
+"read"
+],
+"irregular_plurals | A2.2 | gap | My jeans ___ too big for me now. (be) | ": [
+"plural_only",
+"read"
+],
+"irregular_plurals | A2.2 | text | Start with *These trousers*: This shirt is too expensive. | ": [
+"plural_only",
+"read"
+],
+"conj_linkers | A2.2 | gap | ___ we had dinner, we went for a walk by the sea. | ": [
+"link_time",
+"read"
+],
+"conj_linkers | A2.2 | gap | We always buy popcorn ___ the film. | ": [
+"link_time",
+"read"
+],
+"conj_linkers | A2.2 | mcq | Which sentence has a mistake? | Before go to work, I walk the dog.": [
+"link_time",
+"read"
+],
+"future | A2.2 | gap | Complete with *will* or *going to*: 'Did you reply to Mark's email?' 'Oh no, I forgot! I ___ to him now.' (write) | ": [
+"will_going",
+"read"
+],
+"future | A2.2 | gap | Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy) | ": [
+"will_going",
+"read"
+],
+"articles | A2.2 | gap | Complete with *a*, *an* or *the*: We always sit at ___ same table in this café. | ": [
+"the_unique",
+"read"
+],
+"articles | A2.2 | text | Correct the mistake: Maria is best driver in our family. | ": [
+"the_unique",
+"read"
+],
+"dep_prepositions | A2.2 | text | Say it another way with *discuss*: We talked about the new timetable at the meeting. | ": [
+"dep_none",
+"read"
 ]
 }

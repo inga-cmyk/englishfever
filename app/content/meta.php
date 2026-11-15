@@ -11295,15 +11295,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "have got / has got",
-        "have || *I [[have got]] a car. She'[[s got]] two sisters.*"
+        "you own it || *I [[have got]] a car. She'[[s got]] two sisters.*"
        ],
        [
         "haven't got / don't have",
-        "negative || *I [[haven't got]] a car. = I [[don't have]] a car.*"
+        "you don't own it || *I [[haven't got]] a car. = I [[don't have]] a car.*"
        ],
        [
         "Have you got …? / Do you have …?",
-        "question || *[[Have]] you [[got]] a pen? = [[Do]] you [[have]] a pen?*"
+        "asking if someone has it || *[[Have]] you [[got]] a pen? = [[Do]] you [[have]] a pen?*"
        ]
       ],
       "stack": "rows"
@@ -11314,8 +11314,8 @@ return json_decode(<<<'EF_JSON_END'
        "[[Have]] you [[got]] a pen?"
       ],
       [
-       "She [[have]] got a dog.",
-       "She [[has]] got a dog."
+       "I'm [[having]] a new car.",
+       "I'[[ve got]] a new car."
       ],
       [
        "Have you got a bike? Yes, I [[have got]].",
@@ -11332,11 +11332,11 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "For owning, no *-ing*: *She [[has got]] blue eyes.* (not *is having*)"
+      "*have got* is common in British and spoken English; *have* is everywhere, also in writing."
      ]
     },
     "watch": [
-     "For owning, no *-ing*: *She [[has got]] blue eyes.* (not *is having*)"
+     "*have got* is common in British and spoken English; *have* is everywhere, also in writing."
     ]
    },
    "rule_lv": {
@@ -11348,15 +11348,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "have got / has got",
-        "ir || *I [[have got]] a car. She'[[s got]] two sisters.*"
+        "tev pieder || *I [[have got]] a car. She'[[s got]] two sisters.*"
        ],
        [
         "haven't got / don't have",
-        "noliegums || *I [[haven't got]] a car. = I [[don't have]] a car.*"
+        "tev nav || *I [[haven't got]] a car. = I [[don't have]] a car.*"
        ],
        [
         "Have you got …? / Do you have …?",
-        "jautājums || *[[Have]] you [[got]] a pen? = [[Do]] you [[have]] a pen?*"
+        "jautā, vai otram ir || *[[Have]] you [[got]] a pen? = [[Do]] you [[have]] a pen?*"
        ]
       ],
       "stack": "rows"
@@ -11367,8 +11367,9 @@ return json_decode(<<<'EF_JSON_END'
        "[[Have]] you [[got]] a pen?"
       ],
       [
-       "She [[have]] got a dog.",
-       "She [[has]] got a dog."
+       "I'm [[having]] a new car.",
+       "I'[[ve got]] a new car.",
+       "Piederībai nelieto *-ing*; *I'm having* = es ēdu vai man notiek (*I'm having lunch*)."
       ],
       [
        "Have you got a bike? Yes, I [[have got]].",
@@ -11385,11 +11386,11 @@ return json_decode(<<<'EF_JSON_END'
       }
      ],
      "watch": [
-      "Piederībai nelieto *-ing*: *She [[has got]] blue eyes.* (nevis *is having*)"
+      "*have got* bieži lieto britu angļu valodā un runā; *have* der visur, arī rakstos."
      ]
     },
     "watch": [
-     "Piederībai nelieto *-ing*: *She [[has got]] blue eyes.* (nevis *is having*)"
+     "*have got* bieži lieto britu angļu valodā un runā; *have* der visur, arī rakstos."
     ]
    }
   },
@@ -11417,7 +11418,7 @@ return json_decode(<<<'EF_JSON_END'
        ],
        [
         "What / Where shall we …?",
-        "a question word || *What [[shall]] we do tonight?*"
+        "asking what to do together || *What [[shall]] we do tonight?*"
        ]
       ],
       "stack": "rows"
@@ -11470,7 +11471,7 @@ return json_decode(<<<'EF_JSON_END'
        ],
        [
         "What / Where shall we …?",
-        "jautājamais vārds || *What [[shall]] we do tonight?*"
+        "jautā, ko darīt kopā || *What [[shall]] we do tonight?*"
        ]
       ],
       "stack": "rows"
@@ -11637,15 +11638,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "no longer",
-        "no longer || *I [[no longer]] smoke. She's [[no longer]] my boss.*"
+        "it has ended || *I [[no longer]] smoke. She's [[no longer]] my boss.*"
        ],
        [
         "not … any more",
-        "not … any more || *I don't smoke [[any more]].*"
+        "the same, in everyday speech || *I don't smoke [[any more]].*"
        ],
        [
         "not … any longer",
-        "not … any longer || *I don't smoke [[any longer]].*"
+        "the same, a little more formal || *I don't smoke [[any longer]].*"
        ]
       ],
       "stack": "rows"
@@ -11686,15 +11687,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "no longer",
-        "no longer || *I [[no longer]] smoke. She's [[no longer]] my boss.*"
+        "vairs nav tā, kā bija || *I [[no longer]] smoke. She's [[no longer]] my boss.*"
        ],
        [
         "not … any more",
-        "not … any more || *I don't smoke [[any more]].*"
+        "tas pats, ikdienas runā || *I don't smoke [[any more]].*"
        ],
        [
         "not … any longer",
-        "not … any longer || *I don't smoke [[any longer]].*"
+        "tas pats, mazliet oficiālāk || *I don't smoke [[any longer]].*"
        ]
       ],
       "stack": "rows"
@@ -11851,11 +11852,11 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Swimming is …",
-        "-ing + verb || *[[Swimming]] is good for you.*"
+        "talking about an activity || *[[Swimming]] is good for you.*"
        ],
        [
         "Learning a language takes …",
-        "-ing + more words || *[[Learning]] a language takes time.*"
+        "saying what an activity is like || *[[Learning]] a language takes time.*"
        ]
       ],
       "stack": "rows"
@@ -11900,11 +11901,11 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "Swimming is …",
-        "-ing + darbības vārds || *[[Swimming]] is good for you.*"
+        "runā par nodarbi || *[[Swimming]] is good for you.*"
        ],
        [
         "Learning a language takes …",
-        "-ing + vēl vārdi || *[[Learning]] a language takes time.*"
+        "saka, kāda ir nodarbe || *[[Learning]] a language takes time.*"
        ]
       ],
       "stack": "rows"
@@ -11958,19 +11959,19 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "go + -ing",
-        "go + -ing || *go [[shopping]], go [[swimming]], go [[skiing]]*"
+        "a free-time activity || *Let's go [[shopping]]. We go [[skiing]] in winter.*"
        ],
        [
         "go for a …",
-        "go for a … || *go [[for]] a walk, a run, a coffee*"
+        "a short activity || *Let's go [[for]] a walk / a coffee.*"
        ],
        [
         "go to / go on",
-        "go to / on || *go [[to]] the gym, go [[to]] work, go [[on]] holiday*"
+        "a place, a trip || *I go [[to]] the gym. We're going [[on]] holiday.*"
        ],
        [
         "go home",
-        "go home || *go [[home]]* (no *to*)"
+        "back where you live || *I'm going [[home]].* (no *to*)"
        ]
       ],
       "stack": "rows"
@@ -12015,19 +12016,19 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "go + -ing",
-        "go + -ing || *go [[shopping]], go [[swimming]], go [[skiing]]*"
+        "brīvā laika nodarbe || *Let's go [[shopping]]. We go [[skiing]] in winter.*"
        ],
        [
         "go for a …",
-        "go for a … || *go [[for]] a walk, a run, a coffee*"
+        "īsa nodarbe || *Let's go [[for]] a walk / a coffee.*"
        ],
        [
         "go to / go on",
-        "go to / on || *go [[to]] the gym, go [[to]] work, go [[on]] holiday*"
+        "vieta, ceļojums || *I go [[to]] the gym. We're going [[on]] holiday.*"
        ],
        [
         "go home",
-        "go home || *go [[home]]* (bez *to*)"
+        "uz mājām || *I'm going [[home]].* (bez *to*)"
        ]
       ],
       "stack": "rows"
@@ -12180,15 +12181,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "like + -ing / like + to",
-        "both are right || *I like [[swimming]]. = I like [[to swim]].*"
+        "what you like || *I like [[swimming]]. = I like [[to swim]].*"
        ],
        [
         "love, hate, prefer, start, begin, continue",
-        "the same verbs || *love, hate, prefer, start, begin, continue*"
+        "how something begins or goes on || *It started [[raining]]. = It started [[to rain]].*"
        ],
        [
         "would like + to",
-        "would like || *I'd like [[to go]].* (only *to*)"
+        "what you want now || *I'd like [[to go]].* (only *to*)"
        ]
       ],
       "stack": "rows"
@@ -12233,15 +12234,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "like + -ing / like + to",
-        "der abi || *I like [[swimming]]. = I like [[to swim]].*"
+        "kas tev patīk || *I like [[swimming]]. = I like [[to swim]].*"
        ],
        [
         "love, hate, prefer, start, begin, continue",
-        "tie paši darbības vārdi || *love, hate, prefer, start, begin, continue*"
+        "kā kaut kas sākas vai turpinās || *It started [[raining]]. = It started [[to rain]].*"
        ],
        [
         "would like + to",
-        "would like || *I'd like [[to go]].* (tikai *to*)"
+        "ko gribi tagad || *I'd like [[to go]].* (tikai *to*)"
        ]
       ],
       "stack": "rows"
@@ -12295,15 +12296,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "no + noun",
-        "no + noun || *There's [[no]] milk.*"
+        "there is nothing of it || *There's [[no]] milk.*"
        ],
        [
         "not any + noun",
-        "not any + noun || *There isn't [[any]] milk.*"
+        "the same with a negative verb || *There isn't [[any]] milk.*"
        ],
        [
         "none / none of",
-        "none (alone, of) || *How many came? [[None]]. [[None of]] my friends came.*"
+        "a short answer: zero || *How many came? [[None]]. [[None of]] my friends came.*"
        ]
       ],
       "stack": "rows"
@@ -12348,15 +12349,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "no + lietvārds",
-        "no + lietvārds || *There's [[no]] milk.*"
+        "nekā nav || *There's [[no]] milk.*"
        ],
        [
         "not any + lietvārds",
-        "not any + lietvārds || *There isn't [[any]] milk.*"
+        "tas pats ar noliegtu darbības vārdu || *There isn't [[any]] milk.*"
        ],
        [
         "none / none of",
-        "none (viens, of) || *How many came? [[None]]. [[None of]] my friends came.*"
+        "īsa atbilde: neviens || *How many came? [[None]]. [[None of]] my friends came.*"
        ]
       ],
       "stack": "rows"
@@ -12410,19 +12411,19 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "must / have to",
-        "now || *I [[must]] / [[have to]] go.* (both are possible)"
+        "it is necessary now || *I [[must]] / [[have to]] go.* (both are possible)"
        ],
        [
         "had to",
-        "past || *I [[had to]] go.*"
+        "it was necessary || *I [[had to]] go.*"
        ],
        [
         "will have to / might have to",
-        "future || *I'll [[have to]] go. We [[might have to]] wait.*"
+        "it will or may be necessary || *I'll [[have to]] go. We [[might have to]] wait.*"
        ],
        [
         "Do I have to …?",
-        "question || *[[Do]] I [[have to]] sign here?*"
+        "asking if it is necessary || *[[Do]] I [[have to]] sign here?*"
        ]
       ],
       "stack": "rows"
@@ -12467,19 +12468,19 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "must / have to",
-        "tagad || *I [[must]] / [[have to]] go.* (der abi)"
+        "vajag tagad || *I [[must]] / [[have to]] go.* (der abi)"
        ],
        [
         "had to",
-        "pagātne || *I [[had to]] go.*"
+        "vajadzēja || *I [[had to]] go.*"
        ],
        [
         "will have to / might have to",
-        "nākotne || *I'll [[have to]] go. We [[might have to]] wait.*"
+        "vajadzēs vai varbūt vajadzēs || *I'll [[have to]] go. We [[might have to]] wait.*"
        ],
        [
         "Do I have to …?",
-        "jautājums || *[[Do]] I [[have to]] sign here?*"
+        "jautā, vai vajag || *[[Do]] I [[have to]] sign here?*"
        ]
       ],
       "stack": "rows"
@@ -12764,15 +12765,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "should have + 3rd form",
-        "should have + 3rd form || *You [[should have told]] me.* (you didn't, and it was wrong)"
+        "criticism: the right thing was not done || *You [[should have told]] me.*"
        ],
        [
         "shouldn't have + 3rd form",
-        "shouldn't have + 3rd form || *You [[shouldn't have shouted]].* (you did, and it was wrong)"
+        "regret: a wrong thing was done || *I [[shouldn't have eaten]] so much.*"
        ],
        [
         "could have + 3rd form",
-        "could have + 3rd form || *We [[could have won]].* (it was possible, but it didn't happen)"
+        "a missed chance || *We [[could have won]].*"
        ]
       ],
       "stack": "rows"
@@ -12787,8 +12788,8 @@ return json_decode(<<<'EF_JSON_END'
        "You should have [[told]] me."
       ],
       [
-       "You should [[of]] told me.",
-       "You should [[have]] told me."
+       "You [[must have told]] me! (criticism)",
+       "You [[should have told]] me!"
       ]
      ],
      "uses": [
@@ -12816,15 +12817,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "should have + 3. forma",
-        "should have + 3. forma || *You [[should have told]] me.* (tu to neizdarīji, un tas bija nepareizi)"
+        "pārmetums: pareizo neizdarīja || *You [[should have told]] me.*"
        ],
        [
         "shouldn't have + 3. forma",
-        "shouldn't have + 3. forma || *You [[shouldn't have shouted]].* (tu to izdarīji, un tas bija nepareizi)"
+        "nožēla: izdarīja nepareizo || *I [[shouldn't have eaten]] so much.*"
        ],
        [
         "could have + 3. forma",
-        "could have + 3. forma || *We [[could have won]].* (tas bija iespējams, bet nenotika)"
+        "palaista garām iespēja || *We [[could have won]].*"
        ]
       ],
       "stack": "rows"
@@ -12840,8 +12841,9 @@ return json_decode(<<<'EF_JSON_END'
        "You should have [[told]] me."
       ],
       [
-       "You should [[of]] told me.",
-       "You should [[have]] told me."
+       "You [[must have told]] me! (pārmetums)",
+       "You [[should have told]] me!",
+       "*must have* ir secinājums (droši vien pateici), nevis pārmetums."
       ]
      ],
      "uses": [
@@ -12877,23 +12879,23 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "each / every + singular",
-        "each / every + one || *Every room [[has]] a balcony. Each student [[gets]] a book.*"
+        "all of them, one by one || *Every room [[has]] a balcony. Each student [[gets]] a book.*"
        ],
        [
         "each of the …",
-        "each of + the / my || *Each of the flats [[has]] a garden.* (not *every of*)"
+        "each one of a known group || *Each of the flats [[has]] a garden.* (not *every of*)"
        ],
        [
         "all day / every day",
-        "all day / every day || *all day* = the whole day; *every day* = each day"
+        "how long or how often || *I worked [[all day]]. I work [[every day]].*"
        ]
       ],
       "stack": "rows"
      },
      "mistakes": [
       [
-       "Every [[students have]] a locker.",
-       "Every [[student has]] a locker."
+       "I go to the gym [[all day]]. (= on each day)",
+       "I go to the gym [[every day]]."
       ],
       [
        "[[Every of]] them came.",
@@ -12930,15 +12932,15 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "each / every + vienskaitlis",
-        "each / every + viens || *Every room [[has]] a balcony. Each student [[gets]] a book.*"
+        "visi, katrs atsevišķi || *Every room [[has]] a balcony. Each student [[gets]] a book.*"
        ],
        [
         "each of the …",
-        "each of + the / my || *Each of the flats [[has]] a garden.* (nevis *every of*)"
+        "katrs no zināmas grupas || *Each of the flats [[has]] a garden.* (nevis *every of*)"
        ],
        [
         "all day / every day",
-        "all day / every day || *all day* = visu dienu; *every day* = katru dienu"
+        "cik ilgi vai cik bieži || *I worked [[all day]].* (visu dienu) *I work [[every day]].* (katru dienu)"
        ]
       ],
       "stack": "rows"
@@ -12992,11 +12994,11 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "what …",
-        "what (no noun before it) || *I didn't hear [[what]] he said. [[What]] I need is a holiday.*"
+        "the thing(s) that || *I didn't hear [[what]] he said. [[What]] I need is a holiday.*"
        ],
        [
         "noun / everything + that",
-        "noun / everything + that || *Everything [[that]] he said was true. The book [[that]] I bought …*"
+        "after a noun or everything || *Everything [[that]] he said was true. The book [[that]] I bought …*"
        ]
       ],
       "stack": "rows"
@@ -13041,11 +13043,11 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "what …",
-        "what (pirms tā nav lietvārda) || *I didn't hear [[what]] he said. [[What]] I need is a holiday.*"
+        "tas, ko / tas, kas || *I didn't hear [[what]] he said. [[What]] I need is a holiday.*"
        ],
        [
         "lietvārds / everything + that",
-        "lietvārds / everything + that || *Everything [[that]] he said was true. The book [[that]] I bought …*"
+        "aiz lietvārda vai everything || *Everything [[that]] he said was true. The book [[that]] I bought …*"
        ]
       ],
       "stack": "rows"
@@ -13100,11 +13102,11 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "won't + verb",
-        "now || *My laptop [[won't]] switch on. He [[won't]] listen.*"
+        "it refuses now || *My laptop [[won't]] switch on. He [[won't]] listen.*"
        ],
        [
         "wouldn't + verb",
-        "past || *The car [[wouldn't]] start this morning.*"
+        "it refused then || *The car [[wouldn't]] start this morning.*"
        ]
       ],
       "stack": "rows"
@@ -13149,11 +13151,11 @@ return json_decode(<<<'EF_JSON_END'
       "rows": [
        [
         "won't + darbības vārds",
-        "tagad || *My laptop [[won't]] switch on. He [[won't]] listen.*"
+        "atsakās tagad || *My laptop [[won't]] switch on. He [[won't]] listen.*"
        ],
        [
         "wouldn't + darbības vārds",
-        "pagātne || *The car [[wouldn't]] start this morning.*"
+        "atteicās toreiz || *The car [[wouldn't]] start this morning.*"
        ]
       ],
       "stack": "rows"

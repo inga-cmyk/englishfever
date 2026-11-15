@@ -1,4 +1,5 @@
-"""Batch 5, point prep_move (A2.2): 9 tasks to reach 10 counted tasks. Murphy unit 126 (to, into, out of, across, through, along, past; arrive in / at; get to, go home: unit 126 and the arrive / get section of unit 126)."""
+"""Batch 5, point prep_move (A2.2): 9 tasks to reach 10 counted tasks. Murphy unit 126 (go to, arrive in / at, get to, go home, into / out of),
+the unit given for this point in docs/GRAMMAR-MAP.md; across, through, along, past as in Murphy's Essential Grammar in Use (prepositions of movement)."""
 from lib import gp, od, mc, tx
 T = "Prepositions of time and place (in, on, at)"
 L = "A2.2"

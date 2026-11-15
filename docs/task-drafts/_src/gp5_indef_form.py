@@ -27,7 +27,7 @@ gp(T, L, 3, "There's ___ in my wallet. It's empty.", "nothing",
 # typed gap (2): lib adds "Complete with a word like *someone, anything, nowhere*:" (the answers are not among those three words)
 gp(T, L, 3, "___ works here on Sundays. The office is closed.", "Nobody | No one",
    "*Nobody / No one* already makes the sentence negative, so the verb stays positive: *Nobody works here on Sundays.*",
-   "*Nobody* (arī *No one*) jau ir noliegums, tāpēc darbības vārds paliek apgalvojumā: *Nobody works here on Sundays.*")
+   "*Nobody* jau ir noliegums, tāpēc darbības vārds paliek apgalvojumā: *Nobody works here on Sundays.*")
 gp(T, L, 3, "There are trees ___: in the streets, in the parks, by the river.", "everywhere",
    "*every-* = all: *everywhere* = in all places. The list after the colon shows that the trees are in all the places.",
    "*every-* = visi: *everywhere* = visur, visās vietās. Uzskaitījums aiz kola rāda, ka koki ir visās vietās.")

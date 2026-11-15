@@ -28,4 +28,4 @@ tx(T, L, 4, "Say it another way with *a few* or *a little*: I speak some Spanish
    "I speak a few words of Spanish. | I know a few words of Spanish. | I can speak a few words of Spanish. | "
    "I speak a little bit of Spanish. | I can speak a little bit of Spanish. | I only speak a little Spanish. | I can only speak a little Spanish.", *BOTH)
 tx(T, L, 4, "Say it another way with *a few* or *a little*: There are three or four cafés near my office.",
-   "There are a few cafés near my office. | Near my office there are a few cafés. | There are a few cafes near my office. | Near my office there are a few cafes.", *BOTH)
+   "There are a few cafés near my office. | Near my office there are a few cafés. | There are a few cafes near my office. | Near my office there are a few cafes. | A few cafés are near my office. | A few cafes are near my office.", *BOTH)

@@ -25,7 +25,7 @@ gp(T, L, 3, "There's ___ in my wallet. It's empty.", "nothing",
    bank=["nothing", "anything", "something"])
 
 # typed gap (2): lib adds "Complete with a word like *someone, anything, nowhere*:" (the answers are not among those three words)
-gp(T, L, 3, "___ works here on Sundays. The office is closed.", "Nobody | No one",
+gp(T, L, 3, "___ works here on Sundays. The office is closed.", "Nobody | No one | No-one",
    "*Nobody / No one* already makes the sentence negative, so the verb stays positive: *Nobody works here on Sundays.*",
    "*Nobody* jau ir noliegums, tāpēc darbības vārds paliek apgalvojumā: *Nobody works here on Sundays.*")
 gp(T, L, 3, "There are trees ___: in the streets, in the parks, by the river.", "everywhere",

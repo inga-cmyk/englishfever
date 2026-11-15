@@ -47,7 +47,7 @@ mc(T, L, 2, "Choose the correct option: We need ___ for our new office.", "some 
 
 # 7 typed gap (use), learning: a singular verb after advice. Thank you! rules out would be (a polite request);
 # was, has been and will be are correct English with it and are accepted: the task is about singular / plural, not the time
-gp(T, L, 3, "Thank you! Your advice about the exam ___ really helpful. (be)", "is | was | has been | will be", *ADV)
+gp(T, L, 3, "Thank you! Your advice about the exam ___ really helpful. (be)", "is | was | has been | will be | 's", *ADV)
 
 # 8 word order (check), travel: How many + pieces of luggage (not How much luggages, not How many luggage)
 od(T, L, 3, "Put the words in order to make a question.", "how many pieces of luggage do you have", *PIECE)

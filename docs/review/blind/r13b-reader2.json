@@ -1,0 +1,26 @@
+[
+{
+"id": "r13b-001",
+"answer": [
+"cleaned",
+"by"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say to use the passive, but the base verb (clean) plus 'by' structure makes it fairly clear; the gap before 'a small company' makes 'by' almost given away. Minor.",
+"level_problem": "Present passive with agent is more B1 than A2.2.",
+"sense_problem": ""
+},
+{
+"id": "r13b-002",
+"answer": "Your trousers look great with that jacket.",
+"other_correct": [
+"Your trousers look great with that jacket",
+"Your pair of trousers looks great with that jacket."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

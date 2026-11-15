@@ -28,7 +28,8 @@ gp(T, L, 3, "Can I borrow ___ ___ for a minute?", "a pair of / scissors",
 # 3 typed gap (use), lifestyle / health: now fixes the time, so only are fits (were is ruled out by now)
 gp(T, L, 3, "My jeans ___ too big for me now. (be)", "are", *VERB)
 
-# 4 whole sentence (use), shopping: the learner must change is to are after trousers; nothing else changes
-tx(T, L, 4, "Start with *These trousers*: This shirt is too expensive.", "These trousers are too expensive.",
-   "*trousers* is always plural, so *These trousers are …*, not *is*.",
-   "*trousers* vienmēr ir daudzskaitlī, tāpēc *These trousers are …*, nevis *is*.")
+# 4 whole sentence (use), clothes: the verb after trousers has no -s (blind check r13: the old "Start with These trousers:
+# This shirt is too expensive." only swapped the noun, so it was not a rewrite)
+tx(T, L, 4, "Correct the mistake: Your trousers looks great with that jacket.", "Your trousers look great with that jacket.",
+   "*trousers* is always plural, so the verb has no *-s*: *Your trousers look great*, not *looks*.",
+   "*trousers* vienmēr ir daudzskaitlī, tāpēc darbības vārds ir bez *-s*: *Your trousers look great*, nevis *looks*.")

@@ -21,7 +21,8 @@ od(T, L, 3, "Put the words in order.", "she usually swims but today she is runni
    "*usually* + present simple (*she usually swims*), *today* + present continuous (*today she is running*).",
    "*usually* + Present Simple (*she usually swims*), *today* + Present Continuous (*today she is running*).",
    also=["usually she swims but today she is running", "she usually swims but she is running today",
-         "today she is running but she usually swims", "she is running today but she usually swims"])
+         "today she is running but she usually swims", "she is running today but she usually swims",
+         "today she is running but usually she swims"])   # r13: a reader's order, correct English
 # word bank (1)
 gp(T, L, 3, "Can I call you back? I ___ dinner.", "am having",
    "The person is eating dinner at this moment, so *I am having dinner*. *I have dinner* is a habit (*I have dinner at seven*).",

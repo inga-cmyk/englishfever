@@ -1,0 +1,26 @@
+[
+{
+"id": "r13b-001",
+"answer": [
+"cleaned",
+"by"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Nothing tells the learner it is a passive (good, no term used), but the two gaps plus 'are' make 'cleaned by' the only sense. Minor: 'by' could be seen as given away only by the agent phrase, acceptable.",
+"level_problem": "Present passive with an agent is a bit high for A2.2 but the sentence is short and vocabulary is everyday.",
+"sense_problem": "Natural. 'are being cleaned by' would be 3 words and does not fit the two gaps."
+},
+{
+"id": "r13b-002",
+"answer": "Your trousers look great with that jacket.",
+"other_correct": [
+"Your pair of trousers looks great with that jacket.",
+"Your trousers look great with that jacket!"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Correct the mistake' does not say to write the whole corrected sentence; make that explicit. Does not say where the mistake is (fine).",
+"level_problem": "",
+"sense_problem": "Natural; trousers is plural-only. Alternative fix 'pair of trousers looks' is correct but a learner might also change 'Your' to 'Those' (not needed)."
+}
+]

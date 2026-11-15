@@ -8,6 +8,6 @@ L = "A2.2"
 
 # whole sentence (1)
 tx(T, L, 4, "Say it another way with *discuss*: We talked about the new timetable at the meeting.",
-   "We discussed the new timetable at the meeting. | We discussed the new timetable in the meeting.",
+   "We discussed the new timetable at the meeting. | We discussed the new timetable in the meeting. | At the meeting we discussed the new timetable. | At the meeting, we discussed the new timetable.",
    "*talk about* has a preposition, but *discuss* takes its object directly: *We discussed the new timetable*, not *discussed about*.",
    "*talk about* ir ar prievārdu, bet aiz *discuss* papildinātājs seko uzreiz: *We discussed the new timetable*, nevis *discussed about*.")

@@ -20,10 +20,11 @@ gp(T, L, 3, "In our village, the bread is baked ___ a local family.", "by",
    "Who bakes it? A local family, so *by a local family*. *from* is for what it is made of: *baked from rye flour*.",
    "Darītājs ir vietējā ģimene, tāpēc *by a local family*. *from* lieto materiālam: *baked from rye flour*.",
    bank=["by", "from", "of"])
-# every month = present; are (plural windows) + 3rd form, then by + the doer
-gp(T, L, 3, "The windows of our office ___ ___ a small company every month. (clean)", "are cleaned | get cleaned / by",
-   "*every month* = Present Simple; *the windows* = plural, so *are cleaned*. The doer comes after *by*: *by a small company*.",
-   "*every month* = Present Simple; *the windows* ir daudzskaitlis, tāpēc *are cleaned*. Darītājs nāk aiz *by*: *by a small company*.")
+# after are: the 3rd form, then by + the doer (blind check r13: the old "___ ___ ... (clean)" could be split are / cleaned by,
+# and every month left were cleaned open; are is now given, one word in each gap)
+gp(T, L, 3, "Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean)", "cleaned / by",
+   "After *are* the 3rd form: *are cleaned*. The doer comes after *by*: *by a small company*.",
+   "Aiz *are* vajag 3. formu: *are cleaned*. Darītājs nāk aiz *by*: *by a small company*.")
 # the doer is new information, so it stays, after by
 tx(T2, L, 4, "Start with *This bridge*: A Latvian engineer designed this bridge.",
    "This bridge was designed by a Latvian engineer.",

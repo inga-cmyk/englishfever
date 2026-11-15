@@ -1,6 +1,7 @@
 """Batch 5, point prep_move (A2.2): 9 tasks to reach 10 counted tasks. Murphy unit 126 (go to, arrive in / at, get to, go home, into / out of),
 the unit given for this point in docs/GRAMMAR-MAP.md; across, through, along, past as in Murphy's Essential Grammar in Use (prepositions of movement)."""
 from lib import gp, od, mc, tx
+import lib
 T = "Prepositions of time and place (in, on, at)"
 L = "A2.2"
 
@@ -39,4 +40,9 @@ gp(T, L, 3, "The cat came in ___ the open window.", "through", *THROUGH, bank=["
 # ── typed gap (1) ──
 gp(T, L, 3, "Write one word in each gap: At airport security, take your laptop ___ ___ your bag.", "out / of", *OUT_OF)
 # ── whole sentence (1) ──
-tx(T, L, 4, "Correct the mistake: What time did you get to home last night?", "What time did you get home last night?", *HOME)
+tx(T, L, 4, "Correct the mistake: What time did you get to home last night?",
+   "What time did you get home last night? | What time did you arrive home last night? | What time did you get to your home last night?", *HOME)
+# blind check r13: both readers found these correct; arrive home has no to either, so the explanation fits it; get to your home needs its own note
+lib.NOTES[len(lib.rows) - 1] = ("What time did you get to your home last night? :: Correct: with *your* before it, *home* is an ordinary noun and takes *get to*. "
+    "But we usually say *get home*, with no *to* and no *your*. :: Pareizi: ar *your* priekšā *home* ir parasts lietvārds, un tad lieto *get to*. "
+    "Tomēr parasti saka *get home*, bez *to* un bez *your*.")

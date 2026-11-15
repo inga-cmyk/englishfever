@@ -26,7 +26,7 @@ mc(T, L, 2, "Which sentence has a mistake?", "We rented a car small for the week
    "The adjective goes before the noun: *a small car*. After *be* it can stand alone (*The lesson was short*), and it has no *-s* (*new batteries*).",
    "Īpašības vārds stāv pirms lietvārda: *a small car*. Aiz *be* tas var stāvēt viens (*The lesson was short*), un tam nav *-s* (*new batteries*).")
 # 6. typed gap: be + adjective, no -s
-gp(T, L, 3, "Use the words in brackets: My new headphones ___. (comfortable / very / be)", "are very comfortable", *BE)
+gp(T, L, 3, "Use the words in brackets: My new headphones ___. (comfortable / very / be)", "are very comfortable | were very comfortable", *BE)   # r13: no time word, the past is correct too
 # 7. word order: be + adjective
 od(T, L, 3, "Put the words in order.", "my grandmother is very active for her age",
    "After *be* the adjective comes alone, without a noun: *My grandmother is very active.*",
@@ -35,6 +35,6 @@ od(T, L, 3, "Put the words in order.", "my grandmother is very active for her ag
 # 8. word bank: be + adjective, no -s
 gp(T, L, 3, "The rooms in this hotel ___ very ___.", "are / clean", *BE, bank=["are", "clean", "cleans", "have"])
 # 9. whole sentence: from before the noun to after be
-tx(T, L, 4, "Start with *Our*: We have very nice neighbours.", "Our neighbours are very nice. | Our neighbours are nice.",
+tx(T, L, 4, "Start with *Our*: We have very nice neighbours.", "Our neighbours are very nice. | Our neighbours are nice. | Our neighbours are really nice.",
    "The adjective moves after *be* and stays without *-s*: *Our neighbours are very nice.* (not *very nices*).",
    "Īpašības vārds pāriet aiz *be* un paliek bez *-s*: *Our neighbours are very nice.* (nevis *very nices*).")

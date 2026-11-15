@@ -1,0 +1,74 @@
+{
+ "r13b-001": {
+  "hash": "49a313fa7d0d2b59",
+  "gate_key": "present_simple_passive | A2.2 | gap | Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean) | ",
+  "src": "zz-blind-gap-fill-a2-1.csv:140",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "cleaned"
+    ],
+    [
+     "by"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3581",
+   "skill": "present_simple_passive",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean)",
+   "why": "After *are* the 3rd form: *are cleaned*. The doer comes after *by*: *by a small company*.",
+   "why_lv": "Aiz *are* vajag 3. formu: *are cleaned*. Darītājs nāk aiz *by*: *by a small company*.",
+   "answers": [
+    [
+     "cleaned"
+    ],
+    [
+     "by"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-fill-a2-1.csv:140"
+  }
+ },
+ "r13b-002": {
+  "hash": "c6e46d289995d084",
+  "gate_key": "irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | ",
+  "src": "zz-blind-gap-fill-a2-1.csv:145",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Your trousers look great with that jacket."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3586",
+   "skill": "irregular_plurals",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Your trousers looks great with that jacket.",
+   "why": "*trousers* is always plural, so the verb has no *-s*: *Your trousers look great*, not *looks*.",
+   "why_lv": "*trousers* vienmēr ir daudzskaitlī, tāpēc darbības vārds ir bez *-s*: *Your trousers look great*, nevis *looks*.",
+   "answers": [
+    [
+     "Your trousers look great with that jacket."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-gap-fill-a2-1.csv:145"
+  }
+ }
+}

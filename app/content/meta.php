@@ -11285,6 +11285,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "aux_verbs",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "I **haven't got** time. I**'ve got** a cat.",
    "rule": {
     "v2": {
      "choice": {
@@ -11398,6 +11399,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "future",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**Shall** we order pizza again?",
    "rule": {
     "v2": {
      "choice": {
@@ -11511,6 +11513,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "articles",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**Cats** ignore people. **Dogs** love them.",
    "rule": {
     "v2": {
      "choice": {
@@ -11624,6 +11627,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "used_to",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "I **no longer** check my email at night.",
    "rule": {
     "v2": {
      "choice": {
@@ -11730,6 +11734,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "modal_verbs",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**Could you** hold my coffee for a second?",
    "rule": {
     "v2": {
      "choice": {
@@ -11836,6 +11841,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "verb_patterns",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**Running** is easy. **Starting** is hard.",
    "rule": {
     "v2": {
      "choice": {
@@ -11942,6 +11948,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "verb_patterns",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "Let's **go for** a walk. Or **go shopping**.",
    "rule": {
     "v2": {
      "choice": {
@@ -12064,6 +12071,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "cond_first",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**When** I get paid, I'll buy it. **If** I get paid…",
    "rule": {
     "v2": {
      "choice": {
@@ -12162,6 +12170,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "verb_patterns",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "I love **cooking**. I love **to eat** even more.",
    "rule": {
     "v2": {
      "choice": {
@@ -12276,6 +12285,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "quantity",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**None of** my plants survived. **No** surprise.",
    "rule": {
     "v2": {
      "choice": {
@@ -12390,6 +12400,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "modal_verbs",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "I **had to** work late. Again.",
    "rule": {
     "v2": {
      "choice": {
@@ -12511,6 +12522,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "present_continuous",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "You**'re always losing** your keys!",
    "rule": {
     "v2": {
      "choice": {
@@ -12616,6 +12628,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "used_to",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "Grandma **would bake** every Sunday.",
    "rule": {
     "v2": {
      "choice": {
@@ -12719,6 +12732,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "more_modals",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "I **should have saved** the file.",
    "rule": {
     "v2": {
      "choice": {
@@ -12831,6 +12845,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "agreement",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**Every** meeting **has** a meeting about it.",
    "rule": {
     "v2": {
      "choice": {
@@ -12945,6 +12960,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "relative_clauses",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "**What** I need is a holiday.",
    "rule": {
     "v2": {
      "choice": {
@@ -13052,6 +13068,7 @@ return json_decode(<<<'EF_JSON_END'
    "skill": "future",
    "since": "2026-11-15",
    "days": 21,
+   "poster": "My laptop **won't** switch on. Today of all days.",
    "rule": {
     "v2": {
      "choice": {

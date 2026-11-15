@@ -206,3 +206,24 @@ for _pid, _l, _s, _d, _c in POINTS:
             if _lang == "lv":
                 for _a, _b in (("3rd form", "3. forma"), ("singular", "vienskaitlis"), ("noun", "lietvārds"), ("state", "stāvoklis"), ("verb", "darbības vārds")): _h = _h.replace(_a, _b)
             _row[0] = _h
+
+# The tile picture: one everyday sentence with the form in gold (**…**), like the topic tiles (teacher, 15 November)
+POSTER = {
+    "have_got": "I **haven't got** time. I**'ve got** a cat.",
+    "shall": "**Shall** we order pizza again?",
+    "art_zero": "**Cats** ignore people. **Dogs** love them.",
+    "no_longer": "I **no longer** check my email at night.",
+    "requests": "**Could you** hold my coffee for a second?",
+    "vp_ing_subject": "**Running** is easy. **Starting** is hard.",
+    "vp_go_ing": "Let's **go for** a walk. Or **go shopping**.",
+    "if_when": "**When** I get paid, I'll buy it. **If** I get paid…",
+    "vp_both": "I love **cooking**. I love **to eat** even more.",
+    "no_none": "**None of** my plants survived. **No** surprise.",
+    "must_vs_have_to": "I **had to** work late. Again.",
+    "pc_always": "You**'re always losing** your keys!",
+    "would_habit": "Grandma **would bake** every Sunday.",
+    "should_have": "I **should have saved** the file.",
+    "each_every": "**Every** meeting **has** a meeting about it.",
+    "rel_what": "**What** I need is a holiday.",
+    "wont_refuse": "My laptop **won't** switch on. Today of all days.",
+}

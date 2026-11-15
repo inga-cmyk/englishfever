@@ -269,7 +269,7 @@ meta["new_points"] = []
 for pid, label, skill, since, cardx in new_points.POINTS:
     assert skill in _skill_ids, pid
     en, lvc = cards2.marked(skill, cardx["en"]), cards2.marked(skill, cardx["lv"])
-    meta["new_points"].append({"id": pid, "label": label, "skill": skill, "since": since, "days": new_points.NEW_DAYS,
+    meta["new_points"].append({"id": pid, "label": label, "skill": skill, "since": since, "days": new_points.NEW_DAYS, "poster": new_points.POSTER[pid],
                                "rule": {"v2": en, "watch": en["watch"]}, "rule_lv": {"v2": lvc, "watch": lvc["watch"]}})
 with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8") as f:
     json.dump(meta, f, ensure_ascii=False, indent=1)

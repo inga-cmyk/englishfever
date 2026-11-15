@@ -2048,8 +2048,8 @@
   function pointTile(p, i) {
     var a = lv(p.levels[0]), b = lv(p.levels[p.levels.length - 1]);
     return h('span', { class: 'ttile' },
-      h('span', { class: 'ttile-art pat' + (i % 8) }, h('span', { class: 'ttile-lv' }, a === b ? a : a + '–' + b), h('span', { class: 'ttile-line' }, p.label)),
-      h('span', { class: 'ttile-nm' }, h('span', { class: 'pill new-pill' }, 'New'), ' ', p.label));
+      h('span', { class: 'ttile-art pat' + (i % 8) }, h('span', { class: 'ttile-lv' }, a === b ? a : a + '–' + b), h('span', { class: 'ttile-line' }, posterText(p.poster || p.label))),
+      h('span', { class: 'ttile-nm' }, p.label));   // the New group says it is new (as for the topic tiles)
   }
   /** A new point's own card, with a button that practises only that point (source new_point). */
   function pointModal(p) {

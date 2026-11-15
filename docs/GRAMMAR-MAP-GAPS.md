@@ -126,26 +126,15 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 | id | Punkts | Karte | Uzdevumi lietotnē | Tēma | Uzd. |
 |---|---|---|---|---|---|
-| `adj_basic` | Adjectives: before the noun, after be, no plural | A2.1 | B1.1 | adj_order | 1 |
 | `iq_to` | Question word + to: I don't know what to do | B1.2 | B2.2 | ind_advanced | 11 |
 | `would_like` | Would like: I'd like …, Would you like …? | A2.1 | A2.2 | new | 1 |
 | `there_is` | There is / are, there was / were | A2.1 | A2.2 | new | 4 |
-| `was_were` | Was / were | A2.1 | A2.2 | past_simple | 4 |
 | `will_form` | Will / won't + verb: predictions and what I think will happen | A2.1 | A2.2–B1.2 | future | 10 |
-| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | A2.2 | verb_patterns | 1 |
-| `plural_reg` | Regular plurals: -s, -es, -ies | A2.1 | A2.2 | irregular_plurals | 1 |
-| `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | A2.2–B1.1 | quantity | 8 |
 | `much_many` | Much, many, a lot of; How much? How many? | A2.1 | A2.2–B1.1 | quantity | 14 |
-| `a_few` | A few, a little | A2.1 | A2.2–B1.1 | quantity | 4 |
 | `a_an` | A / an with a singular noun; jobs | A2.1 | A2.2–B1.2 | articles | 22 |
-| `a_the` | A or the: first mention, then known | A2.1 | A2.2–B1.2 | articles | 7 |
 | `adj_adv` | Adjective or adverb: quick / quickly, good / well | A2.1 | A2.2–B1.2 | adverbs | 17 |
 | `adv_freq` | Always, usually, often, sometimes, never: where they go | A2.1 | A2.2–B1.2 | adverbs | 11 |
-| `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.1 | A2.2 | prep_time_place | 5 |
-| `could_past` | Could / couldn't: ability in the past | A2.2 | B1.1–B1.2 | modal_verbs, more_modals | 3 |
 | `rep_say_tell` | Say or tell | A2.2 | B1.1–B2.1 | rep_statements | 12 |
-| `cmp_adv` | Comparing adverbs: more slowly, faster, better, the most carefully | A2.2 | B1.1 | comparison | 2 |
-| `purpose_to` | Purpose: to + verb, for + noun | A2.2 | B1.1 | conj_clauses | 4 |
 | `be_used_to` | Be used to and get used to + noun / -ing | B1.1 | B1.2 | used_to | 10 |
 | `fut_mix` | Future forms: choosing among will, going to, present continuous, present simple | B1.1 | B1.2 | future | 1 |
 | `c1_modal` | First conditional with may, might, can, should or an order in the result | B1.1 | B1.2 | cond_first | 1 |
@@ -194,9 +183,9 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 ## 3. Punkti ar mazāk nekā 10 pārbaudes un lietošanas uzdevumiem
 
-**Precīzi, pa tēmas un līmeņa pāriem:** no 144 pāriem mazāk par 10 uzdevumiem, kas skaitās (*check* + *use*), ir Mixed conditionals B2.1 (9).
+**Precīzi, pa tēmas un līmeņa pāriem:** no 148 pāriem mazāk par 10 uzdevumiem, kas skaitās (*check* + *use*), ir Adjective order (a small old car) A2.1 (9), Mixed conditionals B2.1 (9), Contrast, purpose and reason (although, despite, so that) A2.2 (6), Quantity: some, any, much, many, enough A2.1 (8), Verb patterns: -ing or to A2.1 (9).
 
-**Pa punktiem:** no 222 punktiem ar tēmu lietotnē 96 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 0 punktiem nav neviena. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
+**Pa punktiem:** no 222 punktiem ar tēmu lietotnē 71 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 0 punktiem nav neviena. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
 
 ### 3.1. Punkti ar tēmu lietotnē, kuriem nav neviena uzdevuma
 
@@ -207,31 +196,6 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 | id | Punkts | Karte | check | use | learn | Tēma |
 |---|---|---|---|---|---|---|
-| `vp_like_ing` | Like, love, hate + -ing; want + to | A2.1 | 1 | 0 | 0 | verb_patterns |
-| `plural_reg` | Regular plurals: -s, -es, -ies | A2.1 | 0 | 1 | 0 | irregular_plurals |
-| `adj_basic` | Adjectives: before the noun, after be, no plural | A2.1 | 1 | 0 | 0 | adj_order |
-| `ps_pc` | Present simple or continuous: habit or now | A2.1 | 3 | 1 | 5 | present_simple, present_continuous |
-| `was_were` | Was / were | A2.1 | 2 | 2 | 0 | past_simple |
-| `a_few` | A few, a little | A2.1 | 4 | 0 | 0 | quantity |
-| `a_the` | A or the: first mention, then known | A2.1 | 5 | 0 | 2 | articles |
-| `prep_none` | No preposition: next Monday, last year, tomorrow, every day | A2.1 | 3 | 2 | 0 | prep_time_place |
-| `count_unc` | Countable and uncountable: a / an, some, any | A2.1 | 5 | 3 | 0 | quantity |
-| `pp_been_gone` | Been or gone | A2.2 | 0 | 0 | 1 | present_perfect |
-| `unc_nouns` | Uncountable in English: advice, information, furniture, news, luggage | A2.2 | 0 | 1 | 0 | quantity, irregular_plurals, agreement |
-| `prep_move` | Movement: to, into, out of, across, through, along, past; arrive in / at | A2.2 | 0 | 1 | 0 | prep_time_place, dep_prepositions |
-| `adv_degree` | Very, really, quite, too + adjective; I like it very much | A2.2 | 1 | 1 | 0 | adverbs |
-| `cmp_adv` | Comparing adverbs: more slowly, faster, better, the most carefully | A2.2 | 2 | 0 | 0 | comparison |
-| `could_past` | Could / couldn't: ability in the past | A2.2 | 0 | 3 | 0 | modal_verbs, more_modals |
-| `indef_form` | Someone, anything, nobody, everywhere | A2.2 | 2 | 1 | 2 | indefinite_pronouns |
-| `conj_parallel` | The same kind of words on both sides: cooking and reading | A2.2 | 2 | 1 | 0 | conj_basic |
-| `prep_transport` | By car, on the bus, in a taxi, on foot | A2.2 | 2 | 1 | 0 | prep_time_place |
-| `purpose_to` | Purpose: to + verb, for + noun | A2.2 | 3 | 1 | 0 | conj_clauses |
-| `pas_by` | The doer with by, only when it matters | A2.2 | 5 | 0 | 6 | present_simple_passive, past_simple_passive |
-| `plural_only` | Always plural: jeans, glasses, scissors; the police are | A2.2 | 4 | 2 | 0 | irregular_plurals, agreement |
-| `link_time` | Time connectors: then, after that, before, after, while, when | A2.2 | 3 | 4 | 1 | conj_linkers |
-| `will_going` | Will or going to | A2.2 | 6 | 2 | 7 | future |
-| `the_unique` | The: the sun, the same, the best, the first; play the piano | A2.2 | 7 | 1 | 0 | articles, articles_b1 |
-| `dep_none` | Verbs with no preposition: call me, discuss it, answer the question, join the team | A2.2 | 6 | 3 | 0 | dep_prepositions |
 | `used_to_ps` | Used to or past simple; usually for the present | B1.1 | 0 | 0 | 1 | used_to |
 | `fut_mix` | Future forms: choosing among will, going to, present continuous, present simple | B1.1 | 0 | 0 | 1 | future |
 | `c1_modal` | First conditional with may, might, can, should or an order in the result | B1.1 | 0 | 0 | 1 | cond_first |
@@ -312,12 +276,12 @@ Kartē ir 416 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīm�
 
 Tādu ir 188: 74 līmeņos A2 līdz B2 un 114, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `be_pres` ↔ `ps_negq` · `poss_adj` ↔ `poss_s` · `be_pres` ↔ `q_yesno` · `be_pres` ↔ `ps_form` · `vp_like_ing` ↔ `would_like` · `there_is` ↔ `there_it` · `be_pres` ↔ `have_got` · `obj_pron` ↔ `poss_adj`
-- **A2.2:** `most_of` ↔ `sup` · `vp_like_ing` ↔ `what_like` · `poss_adj` ↔ `poss_pron` · `requests` ↔ `would_like`
-- **B1.1:** `obj_pron` ↔ `reflexive` · `during_while` ↔ `for_since_from` · `too_to` ↔ `vp_adj_to` · `so_neither` ↔ `tag_basic` · `for_since_from` ↔ `pp_for_since`
-- **B1.2:** `would_like` ↔ `would_rather` · `q_negative` ↔ `tag_basic` · `both_and` ↔ `so_neither` · `adv_extreme` ↔ `quite_rather` · `no_longer` ↔ `still_yet` · `adv_position` ↔ `word_order` · `its_time` ↔ `ought_to` · `ought_to` ↔ `should` · `all_both` ↔ `both_and` · `all_both` ↔ `each_every` · `quite_rather` ↔ `so_such_basic` · `adv_degree` ↔ `quite_rather` · `link_adj` ↔ `senses_like` · `so_that` ↔ `too_to` · `all_both` ↔ `no_none` · `pp_just` ↔ `still_yet` · `fut_cont` ↔ `will_form`
-- **B2.1:** `vp_obj_ing` ↔ `vp_obj_to` · `vp_make_let` ↔ `vp_see_do` · `compound_nouns` ↔ `poss_s` · `deduction` ↔ `deduction_past` · `compound_adj_num` ↔ `poss_time` · `vp_meaning` ↔ `vp_need_help` · `caus_get` ↔ `get_b2` · `reciprocal` ↔ `reflexive` · `get_b2` ↔ `vp_make_let` · `likely_bound` ↔ `should_expect` · `deduction` ↔ `likely_bound` · `pas_inf_ing` ↔ `vp_ing` · `like_as` ↔ `senses_like` · `its_time` ↔ `its_time_past` · `dep_verb` ↔ `noun_prep` · `have_aux` ↔ `have_got` · `deduction_past` ↔ `should_have` · `fut_cont` ↔ `fut_perf` · `cmp_modify` ↔ `cmp_modify_b2` · `part_reduced` ↔ `rel_subj` · `must_have_to` ↔ `supposed_to` · `pas_report` ↔ `rep_backshift` · `cmp_as` ↔ `like_as` · `pas_two_obj` ↔ `two_obj` · `deduction` ↔ `should_expect` · `pas_inf_ing` ↔ `vp_to` · `pas_other` ↔ `pas_perf` · `there_it` ↔ `there_it_prep` · `eding` ↔ `part_reduced` · `pas_cont` ↔ `pas_other` · `deduction` ↔ `modals_cont`
-- **B2.2:** `aux_uses` ↔ `ellipsis` · `pas_inf_ing` ↔ `vp_complex` · `ellipsis` ↔ `one_ones` · `distancing` ↔ `pas_report` · `cleft` ↔ `rel_what` · `fut_perf` ↔ `fut_perf_cont` · `part_adv` ↔ `part_reduced` · `c_inv` ↔ `neg_inversion` · `ellipsis` ↔ `vp_reduced`
+- **A2.1:** `vp_like_ing` ↔ `would_like` · `poss_adj` ↔ `poss_s` · `there_is` ↔ `there_it` · `be_pres` ↔ `have_got` · `be_pres` ↔ `ps_form` · `be_pres` ↔ `ps_negq` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `q_yesno`
+- **A2.2:** `most_of` ↔ `sup` · `requests` ↔ `would_like` · `poss_adj` ↔ `poss_pron` · `vp_like_ing` ↔ `what_like`
+- **B1.1:** `for_since_from` ↔ `pp_for_since` · `so_neither` ↔ `tag_basic` · `obj_pron` ↔ `reflexive` · `during_while` ↔ `for_since_from` · `too_to` ↔ `vp_adj_to`
+- **B1.2:** `quite_rather` ↔ `so_such_basic` · `its_time` ↔ `ought_to` · `link_adj` ↔ `senses_like` · `ought_to` ↔ `should` · `adv_extreme` ↔ `quite_rather` · `all_both` ↔ `both_and` · `adv_position` ↔ `word_order` · `all_both` ↔ `each_every` · `pp_just` ↔ `still_yet` · `so_that` ↔ `too_to` · `all_both` ↔ `no_none` · `q_negative` ↔ `tag_basic` · `adv_degree` ↔ `quite_rather` · `fut_cont` ↔ `will_form` · `no_longer` ↔ `still_yet` · `both_and` ↔ `so_neither` · `would_like` ↔ `would_rather`
+- **B2.1:** `pas_inf_ing` ↔ `vp_to` · `compound_adj_num` ↔ `poss_time` · `pas_cont` ↔ `pas_other` · `get_b2` ↔ `vp_make_let` · `deduction` ↔ `modals_cont` · `caus_get` ↔ `get_b2` · `reciprocal` ↔ `reflexive` · `must_have_to` ↔ `supposed_to` · `its_time` ↔ `its_time_past` · `there_it` ↔ `there_it_prep` · `deduction_past` ↔ `should_have` · `pas_other` ↔ `pas_perf` · `dep_verb` ↔ `noun_prep` · `deduction` ↔ `likely_bound` · `vp_obj_ing` ↔ `vp_obj_to` · `pas_report` ↔ `rep_backshift` · `cmp_modify` ↔ `cmp_modify_b2` · `compound_nouns` ↔ `poss_s` · `vp_meaning` ↔ `vp_need_help` · `deduction` ↔ `should_expect` · `part_reduced` ↔ `rel_subj` · `eding` ↔ `part_reduced` · `like_as` ↔ `senses_like` · `fut_cont` ↔ `fut_perf` · `likely_bound` ↔ `should_expect` · `pas_two_obj` ↔ `two_obj` · `vp_make_let` ↔ `vp_see_do` · `cmp_as` ↔ `like_as` · `pas_inf_ing` ↔ `vp_ing` · `have_aux` ↔ `have_got` · `deduction` ↔ `deduction_past`
+- **B2.2:** `fut_perf` ↔ `fut_perf_cont` · `pas_inf_ing` ↔ `vp_complex` · `ellipsis` ↔ `vp_reduced` · `ellipsis` ↔ `one_ones` · `part_adv` ↔ `part_reduced` · `aux_uses` ↔ `ellipsis` · `c_inv` ↔ `neg_inversion` · `cleft` ↔ `rel_what` · `distancing` ↔ `pas_report`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
@@ -325,7 +289,7 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 
 | Formu pāris | Tēmas, kurās skaitīts | Izvēles uzdevumi | Vērtējums |
 |---|---|---|---|
-| present simple / present continuous | present_simple, present_continuous | 36 | ir |
+| present simple / present continuous | present_simple, present_continuous | 37 | ir |
 | present perfect / past simple | present_perfect, cmp_pp_ps, past_simple | 26 | ir |
 | past continuous / past simple | past_continuous, cmp_ps_pc, narrative | 22 | ir |
 | past perfect / past simple | past_perfect, narrative | 8 | ir |
@@ -344,9 +308,9 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 | reported question / direct question order | rep_questions, ind_polite | 13 | ir |
 | so / such | so_such | 10 | ir |
 | much / many | quantity | 7 | ir |
-| few / little | quantity | 4 | maz (zem 5) |
-| some / any | quantity, indefinite_pronouns | 4 | maz (zem 5) |
-| a, an / the | articles, articles_b1 | 14 | ir |
+| few / little | quantity | 5 | ir |
+| some / any | quantity, indefinite_pronouns | 5 | ir |
+| a, an / the | articles, articles_b1 | 15 | ir |
 | the / no article | articles, articles_b1 | 16 | ir |
 | -ed / -ing adjectives | adj_ed_ing | 10 | ir |
 | during / while | time_clauses | 5 | ir |
@@ -356,10 +320,10 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 | who / which | relative_clauses | 11 | ir |
 | that / who, which (after a comma) | relative_clauses | 9 | ir |
 | passive / active | present_simple_passive, past_simple_passive | 33 | ir |
-| to + verb / -ing | verb_patterns | 35 | ir |
-| comparative / superlative | comparison | 11 | ir |
+| to + verb / -ing | verb_patterns | 36 | ir |
+| comparative / superlative | comparison | 13 | ir |
 | as / than | comparison | 7 | ir |
-| adverb / adjective | adverbs | 13 | ir |
+| adverb / adjective | adverbs | 14 | ir |
 | tag with be / tag with do | question_tags | 5 | ir |
 | subject / object question | subject_object_q | 6 | ir |
 | wish + past / wish + had done | cond_advanced | 5 | ir |

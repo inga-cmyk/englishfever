@@ -196,8 +196,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 3,
-    "use": 1,
+    "check": 7,
+    "use": 3,
     "learn": 5
    },
    "task_levels": [
@@ -524,11 +524,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 2,
-    "use": 2,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "A2.2"
    ]
   },
@@ -1074,8 +1075,8 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
+    "check": 7,
+    "use": 3,
     "learn": 1
    },
    "task_levels": [
@@ -1795,7 +1796,7 @@
    "card": "yes",
    "tasks": {
     "check": 6,
-    "use": 2,
+    "use": 4,
     "learn": 7
    },
    "task_levels": [
@@ -2212,11 +2213,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 3,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
+    "A2.2",
     "B1.1",
     "B1.2"
    ]
@@ -2878,8 +2880,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 5,
-    "use": 0,
+    "check": 7,
+    "use": 3,
     "learn": 6
    },
    "task_levels": [
@@ -5022,17 +5024,18 @@
     "vp_go_ing"
    ],
    "typical_errors": "PATTERN: *I like cook; I want go; I want going*",
-   "sources": "Murphy 53, 58 · TE A1: Verb + to + infinitive, verb + -ing · EGP: A1 verb + to-infinitive; like + to-infinitive or -ing; A2 enjoy + -ing · The app starts the topic at A2.2",
+   "sources": "Murphy 53, 58 · TE A1: Verb + to + infinitive, verb + -ing · EGP: A1 verb + to-infinitive; like + to-infinitive or -ing; A2 enjoy + -ing · Decided by the teacher, 15 November: Verb patterns gets A2.1 for these tasks.",
    "topics": [
     "verb_patterns"
    ],
    "card": "yes",
    "tasks": {
-    "check": 1,
-    "use": 0,
+    "check": 5,
+    "use": 5,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "A2.2"
    ]
   },
@@ -5756,11 +5759,12 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 1,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "A2.2"
    ]
   },
@@ -5820,8 +5824,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 4,
-    "use": 2,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
@@ -5921,17 +5925,18 @@
     "so_such_basic"
    ],
    "typical_errors": "*a water; an advice; I have any friends; There aren't some eggs; a money*",
-   "sources": "Murphy 69, 71, 85 · TE A1: A, some, any: countable and uncountable · EGP: A2 uncountable nouns; some and any · The app starts the topic at A2.2",
+   "sources": "Murphy 69, 71, 85 · TE A1: A, some, any: countable and uncountable · EGP: A2 uncountable nouns; some and any · Decided by the teacher, 15 November: Quantity gets A2.1 for these tasks.",
    "topics": [
     "quantity"
    ],
    "card": "yes",
    "tasks": {
-    "check": 5,
-    "use": 3,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "A2.2",
     "B1.1"
    ]
@@ -6017,17 +6022,18 @@
     "few_little"
    ],
    "typical_errors": "*a few money; a little friends; few of time*",
-   "sources": "Murphy 87 · TE A1: Much, many, a lot of, a little, a few · EGP: A2 quantity with plural / uncountable nouns",
+   "sources": "Murphy 87 · TE A1: Much, many, a lot of, a little, a few · EGP: A2 quantity with plural / uncountable nouns · Decided by the teacher, 15 November: Quantity gets A2.1 for these tasks.",
    "topics": [
     "quantity"
    ],
    "card": "yes",
    "tasks": {
-    "check": 4,
-    "use": 0,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "A2.2",
     "B1.1"
    ]
@@ -6288,8 +6294,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 2,
-    "use": 1,
+    "check": 6,
+    "use": 4,
     "learn": 2
    },
    "task_levels": [
@@ -6448,11 +6454,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 5,
-    "use": 0,
+    "check": 7,
+    "use": 3,
     "learn": 2
    },
    "task_levels": [
+    "A2.1",
     "A2.2",
     "B1.1",
     "B1.2"
@@ -6485,7 +6492,7 @@
    "card": "yes",
    "tasks": {
     "check": 7,
-    "use": 1,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
@@ -6824,8 +6831,8 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 1,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
@@ -6901,17 +6908,18 @@
     "so_such_basic"
    ],
    "typical_errors": "*a house big; two smalls boxes; the news interesting; She is a girl tall*",
-   "sources": "Murphy 99 · TE A1: Adjectives · EGP: A1 attributive, predicative with be · On the adj_order card as one form line",
+   "sources": "Murphy 99 · TE A1: Adjectives · EGP: A1 attributive, predicative with be · On the adj_order card as one form line Decided by the teacher, 15 November: Adjective order gets A2.1 for these tasks.",
    "topics": [
     "adj_order"
    ],
    "card": "partly",
    "tasks": {
-    "check": 1,
-    "use": 0,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "B1.1"
    ]
   },
@@ -7036,8 +7044,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 1,
-    "use": 1,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
@@ -7431,11 +7439,12 @@
    ],
    "card": "no",
    "tasks": {
-    "check": 2,
-    "use": 0,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
+    "A2.2",
     "B1.1"
    ]
   },
@@ -7766,8 +7775,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 2,
-    "use": 1,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
@@ -7827,7 +7836,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 3,
+    "check": 6,
     "use": 4,
     "learn": 1
    },
@@ -7852,17 +7861,18 @@
     "purpose_so_that"
    ],
    "typical_errors": "*I went to the bank for get some money; for to get; for getting money* (purpose of an action)",
-   "sources": "Murphy 64 · TE A2: Purpose with to and for · EGP: A2 subordinated clauses: purpose · The app has it at B1.1 and above",
+   "sources": "Murphy 64 · TE A2: Purpose with to and for · EGP: A2 subordinated clauses: purpose · Decided by the teacher, 15 November: Clauses gets A2.2 for these tasks.",
    "topics": [
     "conj_clauses"
    ],
    "card": "yes",
    "tasks": {
-    "check": 3,
-    "use": 1,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
+    "A2.2",
     "B1.1"
    ]
   },
@@ -8646,11 +8656,12 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 3,
-    "use": 2,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
+    "A2.1",
     "A2.2"
    ]
   },
@@ -8728,8 +8739,8 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 1,
+    "check": 7,
+    "use": 3,
     "learn": 0
    },
    "task_levels": [
@@ -8754,8 +8765,8 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 2,
-    "use": 1,
+    "check": 6,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [
@@ -8817,7 +8828,7 @@
    "card": "yes",
    "tasks": {
     "check": 6,
-    "use": 3,
+    "use": 4,
     "learn": 0
    },
    "task_levels": [

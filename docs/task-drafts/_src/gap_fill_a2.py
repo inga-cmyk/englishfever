@@ -32,6 +32,11 @@ for r in lib.rows:
         keep = [a for a in r[5][len("also accepted: "):].split(" | ") if _AUXQ.match(a)]
         r[5] = ("also accepted: " + " | ".join(keep)) if keep else ""
 
+# plural_only (blind check r13b): *Your pair of trousers looks…* is correct too; it gets its own note (the explanation says *not looks*)
+for n, r in enumerate(lib.rows):
+    if r[2] == "text" and r[3].startswith("Correct the mistake: Your trousers looks great"):
+        lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + "Your pair of trousers looks great with that jacket. :: Correct too: here the subject is *pair* (one pair), so the verb has *-s*. With *trousers* alone: *Your trousers look great*. :: Arī pareizi: te teikuma priekšmets ir *pair* (viens pāris), tāpēc darbības vārdam ir *-s*. Tikai ar *trousers*: *Your trousers look great*."
+
 if __name__ == "__main__":
     import sys
-    lib.save(sys.argv[1] if len(sys.argv) > 1 else "pending/" + NAME)
+    lib.save(sys.argv[1] if len(sys.argv) > 1 else NAME)   # blind-checked (r13, r13b)

@@ -50,3 +50,5 @@
 **(4) Nothing needed the teacher.**
 
 Checks after the changes: `check_draft.php` 152 accepted, 0 refused (232 typed variants, 0 refused). `option_audit.py` gives 1 flag, the known odd-theme flag on the count_unc mistake task. The draft rules and Latvian tests on the file found 0 problems.
+
+**r13b (2 tasks, both readers):** *cleaned / by*: no other answer; the level note (passive with *by* at A2.2) is kept: the map and the teacher's decision put it at A2.2. *Your trousers look great…*: *Your pair of trousers looks great with that jacket.* is correct English and is accepted (only an answer added).

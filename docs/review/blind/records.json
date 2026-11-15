@@ -399,6 +399,11 @@
 "round": "r9",
 "task": "r9-126"
 },
+"1834f156da276037": {
+"gate_key": "indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: ___ works here on Sundays. The office is closed. | ",
+"round": "r13",
+"task": "answers added"
+},
 "18960a873f35083d": {
 "gate_key": "conj_clauses | A2.2 | mcq | Choose the correct option: He went to the doctor ___ a check-up. | for",
 "round": "r13",
@@ -1259,6 +1264,11 @@
 "round": "r11",
 "task": "r11-050"
 },
+"49a313fa7d0d2b59": {
+"gate_key": "present_simple_passive | A2.2 | gap | Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean) | ",
+"round": "r13b",
+"task": "r13b-001"
+},
 "49c7daf1e6fe25c1": {
 "gate_key": "conj_clauses | A2.2 | gap | She goes to the gym ___ ___ fit. | ",
 "round": "r13",
@@ -1569,6 +1579,11 @@
 "round": "r11",
 "task": "r11-109"
 },
+"637f8bb2ca44ec4e": {
+"gate_key": "dep_prepositions | A2.2 | text | Say it another way with *discuss*: We talked about the new timetable at the meeting. | ",
+"round": "r13",
+"task": "answers added"
+},
 "63c7eea32b50c591": {
 "gate_key": "conj_linkers | A2.2 | gap | We always buy popcorn ___ the film. | ",
 "round": "r13",
@@ -1603,6 +1618,11 @@
 "gate_key": "relative_clauses | A2.2 | mcq | Which sentence is correct? | The man who fixed my car was very kind.",
 "round": "r1",
 "task": "r1-018"
+},
+"65ccd7de606a4881": {
+"gate_key": "present_continuous | A2.1 | order | Put the words in order. | she usually swims but today she is running",
+"round": "r13",
+"task": "answers added"
 },
 "666fd422e5248497": {
 "gate_key": "used_to | A2.2 | gap | Complete with one word: They're ___ longer married. | ",
@@ -1658,6 +1678,16 @@
 "gate_key": "modal_verbs | B1.1 | mcq | Choose the correct option: My manager ___ come to the office on Fridays, so she usually works from home. | doesn't have to",
 "round": "r10",
 "task": "r10-080"
+},
+"6879a6d852500faa": {
+"gate_key": "adj_order | A2.1 | gap | Use the words in brackets: My new headphones ___. (comfortable / very / be) | ",
+"round": "r13",
+"task": "answers added"
+},
+"6886a2e9efed3d3f": {
+"gate_key": "quantity | A2.1 | text | Say it another way with *a few* or *a little*: There are three or four cafés near my office. | ",
+"round": "r13",
+"task": "answers added"
 },
 "6956773386c48819": {
 "gate_key": "articles | A2.1 | gap | I think ___ dogs are better pets than cats. | ",
@@ -2854,6 +2884,16 @@
 "round": "r4",
 "task": "r4-041"
 },
+"b35865f7a13448cb": {
+"gate_key": "quantity | A2.2 | gap | Thank you! Your advice about the exam ___ really helpful. (be) | ",
+"round": "r13",
+"task": "answers added"
+},
+"b36a37ca99085aac": {
+"gate_key": "prep_time_place | A2.2 | text | Correct the mistake: What time did you get to home last night? | ",
+"round": "r13",
+"task": "answers added"
+},
 "b437e0e156734420": {
 "gate_key": "cond_advanced | B1.2 | mcq | Which sentence is NOT correct? | I wish I can speak Japanese.",
 "round": "r8",
@@ -3119,6 +3159,11 @@
 "round": "r8",
 "task": "r8-007"
 },
+"c0e9bfc2d91ea4cc": {
+"gate_key": "irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | ",
+"round": "r13",
+"task": "answers added"
+},
 "c1155b966654fd25": {
 "gate_key": "present_continuous | B1.2 | text | Make a question with *Why*: You're always interrupting me in meetings. | ",
 "round": "r11",
@@ -3193,6 +3238,11 @@
 "gate_key": "quantity | B1.1 | order | Put the words in order. | we had no idea that they were getting married",
 "round": "r10",
 "task": "answers added"
+},
+"c6e46d289995d084": {
+"gate_key": "irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | ",
+"round": "r13b",
+"task": "r13b-002"
 },
 "c74615178bdf3ab2": {
 "gate_key": "agreement | B1.2 | gap | Write *all* or *every*: The museum is open ___ day except Monday, from ten until six. | ",
@@ -3313,6 +3363,11 @@
 "gate_key": "more_modals | B1.2 | gap | You shouldn't ___ ___ the oven on when you went out this morning. | ",
 "round": "r11",
 "task": "r11-063"
+},
+"d095e4d39cd19ae5": {
+"gate_key": "adj_order | A2.1 | text | Start with *Our*: We have very nice neighbours. | ",
+"round": "r13",
+"task": "answers added"
 },
 "d09b14751c5f5463": {
 "gate_key": "agreement | B1.2 | gap | My grandmother phones me ___ ___, usually just after her lunch, to ask about the kids. | ",

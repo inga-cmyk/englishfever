@@ -16731,10 +16731,6 @@
 "pas_by",
 "read"
 ],
-"present_simple_passive | A2.2 | gap | The windows of our office ___ ___ a small company every month. (clean) | ": [
-"pas_by",
-"read"
-],
 "past_simple_passive | A2.2 | text | Start with *This bridge*: A Latvian engineer designed this bridge. | ": [
 "pas_by",
 "read"
@@ -16748,10 +16744,6 @@
 "read"
 ],
 "irregular_plurals | A2.2 | gap | My jeans ___ too big for me now. (be) | ": [
-"plural_only",
-"read"
-],
-"irregular_plurals | A2.2 | text | Start with *These trousers*: This shirt is too expensive. | ": [
 "plural_only",
 "read"
 ],
@@ -16785,6 +16777,14 @@
 ],
 "dep_prepositions | A2.2 | text | Say it another way with *discuss*: We talked about the new timetable at the meeting. | ": [
 "dep_none",
+"read"
+],
+"present_simple_passive | A2.2 | gap | Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean) | ": [
+"pas_by",
+"read"
+],
+"irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | ": [
+"plural_only",
 "read"
 ]
 }

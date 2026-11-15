@@ -30,6 +30,6 @@ gp(T, L, 3, "My jeans ___ too big for me now. (be)", "are", *VERB)
 
 # 4 whole sentence (use), clothes: the verb after trousers has no -s (blind check r13: the old "Start with These trousers:
 # This shirt is too expensive." only swapped the noun, so it was not a rewrite)
-tx(T, L, 4, "Correct the mistake: Your trousers looks great with that jacket.", "Your trousers look great with that jacket.",
+tx(T, L, 4, "Correct the mistake: Your trousers looks great with that jacket.", "Your trousers look great with that jacket. | Your pair of trousers looks great with that jacket.",
    "*trousers* is always plural, so the verb has no *-s*: *Your trousers look great*, not *looks*.",
    "*trousers* vienmēr ir daudzskaitlī, tāpēc darbības vārds ir bez *-s*: *Your trousers look great*, nevis *looks*.")

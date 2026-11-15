@@ -5,7 +5,7 @@ are also correct offers and Let's … / Why don't we …? correct suggestions: t
 here has shall itself as the answer (the gaps are the verb after shall or the question word, so every answer is fixed).
 The word orders are all question-word questions: plain() turns 'to make a question' into 'Put the words in order.', and the
 cards of a yes/no question (shall i carry your bag) would also make a correct statement (I shall carry your bag)."""
-from lib import gp, od, mc, tx, mt, learning_task
+from lib import gp, od, mc, tx, mt, learning_task, replaces
 T = "Future: will, going to, present continuous"
 L = "A2.1"
 
@@ -92,8 +92,10 @@ gp(T, L, 3, "It's raining. Shall we ___ a taxi? (take)", "take",
    *base("Shall we take a taxi?", "Shall we to take"))
 gp(T, L, 3, "Your phone is dead. Shall I ___ you mine? (lend)", "lend",
    *base("Shall I lend you mine?", "Shall I to lend"))
-gp(T, L, 3, "Write the missing word: ___ shall I put your coat? On the chair?", "Where",
-   *wh("Where shall I put your coat?", "Where I shall put…?"))
+tx(T, L, 4, "Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*:",
+   "Shall I take your coat? | Shall I take your coat for you? | Shall I hang up your coat? | Shall I hang your coat up? | Shall I take it? | Shall I take that for you? | Shall I take your coat, please?",
+   "An offer: *Shall I* + base verb: *Shall I take your coat?*", "Piedāvājums: *Shall I* + pamatforma: *Shall I take your coat?*")
+replaces("Write the missing word: ___ shall I put your coat? On the chair?")   # tester, 15 November: the old gap tested *where*, not the offer
 gp(T, L, 3, "I'm going to the shop. Shall I ___ you anything? (get)", "get",
    *base("Shall I get you anything?", "Shall I to get"))
 gp(T, L, 3, "We're free tonight. What shall we ___? (do)", "do",

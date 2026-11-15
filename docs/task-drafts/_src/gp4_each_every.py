@@ -5,7 +5,7 @@ option); every cannot stand alone or before of (each of them, every one of them,
 (each hand, Murphy 91); almost every / every single, not almost each (Murphy 91); all day (= the whole day) vs every day
 (= on each day), and all day, not all the day (Murphy 90); the whole + noun, my whole life (= all my life), not my all life,
 not whole the day (Murphy 90). No task makes the learner choose between each and every where both fit."""
-from lib import gp, od, mc, tx, mt, learning_task
+from lib import gp, od, mc, tx, mt, learning_task, replaces
 T = "Subject and verb (my friend lives, my friends live)"
 L = "B1.2"
 
@@ -23,8 +23,9 @@ ALMOST = ("We say *almost every* and *every single*, not *almost each*: *almost 
           "Saka *almost every* un *every single*, nevis *almost each*: *almost every colleague*.")
 
 # ── choose (7) ──
-mc(T, L, 2, "Choose the correct option: ___ in our new hotel has a balcony, so guests can have breakfast outside.", "Every room",
-   ["Every rooms", "All room", "Each of room"], *EV)
+mc(T, L, 2, "Choose the correct option: ___ at the conference gets a name badge and a free lunch.", "Every guest",
+   ["Every guests", "All guest", "Each of guest"], *EV)
+replaces("Every room")   # tester, 15 November: it repeated the card's example
 mc(T, L, 2, "Choose the correct option: At the end of the course, each ___ a certificate, even if they missed a class.", "student gets",
    ["students get", "student get", "students gets"], *EV)
 mc(T, L, 2, "Choose the correct option: I've known Marta ___ because our mothers were best friends.", "my whole life",

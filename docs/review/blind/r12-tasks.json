@@ -1,0 +1,35 @@
+[
+ {
+  "id": "r12-001",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*:",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r12-002",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My course begins on Monday. When it ___, I'll have less free time. (start)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r12-003",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r12-004",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ at the conference gets a name badge and a free lunch.",
+  "options": [
+   "Every guest",
+   "Each of guest",
+   "All guest",
+   "Every guests"
+  ]
+ }
+]

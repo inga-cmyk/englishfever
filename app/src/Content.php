@@ -393,7 +393,7 @@ final class Content
         $out = [
             'id' => $it['id'], 'kind' => $it['kind'], 'q' => $it['q'], 'bloom' => $it['bloom'],
             'level' => $it['level'], 'skill' => $it['skill'], 'skill_label' => $skill['label'] ?? $it['skill'],
-            'area' => $skill['area'] ?? 'active',
+            'area' => $skill['area'] ?? 'active', 'point' => self::point($it),   // the "?" opens a new point's own card (tester, 15 November)
         ];
         $seed = ($seed ?? random_int(1, 1 << 30)) ^ crc32($it['id']);
         if ($it['kind'] === 'mcq') {

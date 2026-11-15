@@ -4,7 +4,7 @@ Every choice between if and when has one short sentence that makes the event sur
 not sure (might, may, perhaps, not sure): without it both are correct English, so the situation is the task.
 No 'when' for something that happens every time (zero conditional): every event here is one future event.
 The word orders give only one of if / when, so they practise the form (no will after if / when) and the clause order."""
-from lib import gp, od, mc, tx, mt, learning_task
+from lib import gp, od, mc, tx, mt, learning_task, replaces
 T = "First conditional (if + present, will)"
 L = "B1.1"
 
@@ -66,9 +66,10 @@ gp(T, L, 3, "When the update ___, the app will restart by itself. (finish)", "fi
 gp(T, L, 3, "Write *if* or *when*: The bank might be closed on Saturday. ___ it is, I'll go on Monday.", "If",
    "*might be closed*: it is not sure, so *if*.",
    "*might be closed*: tas nav droši, tāpēc *if*.")
-gp(T, L, 3, "My course starts on Monday. When it ___, I'll have less free time. (start)", "starts | has started | 's started",
+gp(T, L, 3, "My course begins on Monday. When it ___, I'll have less free time. (start)", "starts | has started | 's started",
    "After *when*, the present simple for the future: *When it starts*, not *When it will start*.",
    "Aiz *when* nākotnei lieto Present Simple: *When it starts*, nevis *When it will start*.")
+replaces("My course starts on Monday. When it ___, I'll have less free time. (start)")   # tester, 15 November: the answer was in the first sentence
 gp(T, L, 3, "Write *if* or *when*: The museum opens at ten. ___ it opens, we'll buy tickets for the tower.", "When",
    "The opening time is fixed, so it is sure: *when*.",
    "Atvēršanas laiks ir zināms, tātad tas ir droši: *when*.")

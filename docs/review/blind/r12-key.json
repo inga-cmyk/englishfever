@@ -1,0 +1,152 @@
+{
+ "r12-001": {
+  "hash": "287b45fb56fa4d97",
+  "gate_key": "future | A2.1 | text | Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*: | ",
+  "src": "gap-points-a2-1.csv:46",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Shall I take your coat?",
+     "Shall I take your coat for you?",
+     "Shall I hang up your coat?",
+     "Shall I hang your coat up?",
+     "Shall I take it?",
+     "Shall I take that for you?",
+     "Shall I take your coat, please?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2432",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Your guest has just come in with a heavy coat. Offer to take it. Start with *Shall I*:",
+   "why": "An offer: *Shall I* + base verb: *Shall I take your coat?*",
+   "why_lv": "Piedāvājums: *Shall I* + pamatforma: *Shall I take your coat?*",
+   "answers": [
+    [
+     "Shall I take your coat?",
+     "Shall I take your coat for you?",
+     "Shall I hang up your coat?",
+     "Shall I hang your coat up?",
+     "Shall I take it?",
+     "Shall I take that for you?",
+     "Shall I take your coat, please?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "gap-points-a2-1.csv:46"
+  }
+ },
+ "r12-002": {
+  "hash": "1fa0819758e0684b",
+  "gate_key": "cond_first | B1.1 | gap | My course begins on Monday. When it ___, I'll have less free time. (start) | ",
+  "src": "gap-points-b11-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "starts",
+     "has started",
+     "'s started"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2573",
+   "skill": "cond_first",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My course begins on Monday. When it ___, I'll have less free time. (start)",
+   "why": "After *when*, the present simple for the future: *When it starts*, not *When it will start*.",
+   "why_lv": "Aiz *when* nākotnei lieto Present Simple: *When it starts*, nevis *When it will start.*",
+   "answers": [
+    [
+     "starts",
+     "has started",
+     "'s started"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "gap-points-b11-1.csv:12"
+  }
+ },
+ "r12-003": {
+  "hash": "9494f8cd980d0e95",
+  "gate_key": "modal_verbs | B1.1 | text | Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague. | ",
+  "src": "gap-points-b11-1.csv:100",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Last month I had to work every Saturday to cover for a sick colleague."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2661",
+   "skill": "modal_verbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague.",
+   "why": "*Last month* is the past: *I had to work*. *must* has no past form for obligation.",
+   "why_lv": "*Last month* ir pagātne: *I had to work.* Pienākumam *must* pagātnes formas nav.",
+   "answers": [
+    [
+     "Last month I had to work every Saturday to cover for a sick colleague."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "gap-points-b11-1.csv:100"
+  }
+ },
+ "r12-004": {
+  "hash": "40c25c38b1598a54",
+  "gate_key": "agreement | B1.2 | mcq | Choose the correct option: ___ at the conference gets a name badge and a free lunch. | Every guest",
+  "src": "gap-points-b12-1.csv:77",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Every guest",
+   "wrong": [
+    "Every guests",
+    "All guest",
+    "Each of guest"
+   ]
+  },
+  "item": {
+   "id": "c-2739",
+   "skill": "agreement",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ at the conference gets a name badge and a free lunch.",
+   "why": "*every* and *each* + singular noun + singular verb: *Every room has…*, *Each student gets…*.",
+   "why_lv": "Aiz *every* un *each* ir lietvārds vienskaitlī un darbības vārds vienskaitlī: *Every room has*…, *Each student gets*….",
+   "correct": "Every guest",
+   "wrong": [
+    "Every guests",
+    "All guest",
+    "Each of guest"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "gap-points-b12-1.csv:77"
+  }
+ }
+}

@@ -7,7 +7,7 @@ and mustn't (not allowed) against don't have to (not necessary) where the situat
 must and have to are never wrong options against each other in present-time obligation; in typed tasks both are accepted where
 both are correct English. The meaning tendency (my view / a rule) appears only in two learning tasks: the meaning question
 (learning_task()) and the matching task (learning automatically). Must I …? is correct (formal; on the card) and never a wrong option."""
-from lib import gp, od, mc, tx, mt, learning_task
+from lib import gp, od, mc, tx, mt, learning_task, replaces
 T = "Modal verbs"
 L = "B1.1"
 
@@ -109,10 +109,11 @@ gp(T, L, 3, "My flatmate ___ get up early on Mondays because her first class sta
    "*doesn't have to* = nav vajadzības: viņas nodarbība sākas vēlu. Ar *she* lieto *doesn't*.")
 
 # ── whole sentence (3) ──
-tx(T, L, 4, "Start with *Last month*: I have to work every Saturday to cover for a sick colleague.",
+tx(T, L, 4, "Rewrite the sentence about last month. Start with *Last month*: I have to work every Saturday to cover for a sick colleague.",
    "Last month I had to work every Saturday to cover for a sick colleague.",
    "*Last month* is the past: *I had to work*. *must* has no past form for obligation.",
    "*Last month* ir pagātne: *I had to work*. Pienākumam *must* pagātnes formas nav.")
+replaces("Start with *Last month*: I have to work every Saturday to cover for a sick colleague.")   # tester, 15 November: say what to do
 tx(T, L, 4, "Make a yes/no question: Anna has to take the medicine twice a day while she is ill.",
    "Does Anna have to take the medicine twice a day while she is ill? | Must Anna take the medicine twice a day while she is ill? | "
    "Has Anna got to take the medicine twice a day while she is ill? | Does Anna have to take the medicine twice a day? | While she is ill, does Anna have to take the medicine twice a day?",

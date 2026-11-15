@@ -1582,7 +1582,7 @@
       h('div', { class: 'card task' },
         h('h1', { class: 'sr' }, 'Question ' + (at + 1)),
         h('div', { class: 'meta' }, metaTags, taskIdEl, ses.mode === 'placement' ? reportBtn : null,
-          ses.mode === 'placement' ? null : h('button', { type: 'button', class: 'task-rule', 'aria-label': 'Rule card', title: 'Rule card', onclick: function () { cardOpened = true; rulesModal(it.skill, true); } }, '?')),   // the rule card during a task (teacher, 2 November); noted with the answer for the research   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
+          ses.mode === 'placement' ? null : h('button', { type: 'button', class: 'task-rule', 'aria-label': 'Rule card', title: 'Rule card', onclick: function () { cardOpened = true; var np = (state.meta.new_points || []).find(function (p) { return p.id === it.point; }); if (np) pointModal(np, true); else rulesModal(it.skill, true); } }, '?')),   // the rule card during a task (teacher, 2 November); noted with the answer for the research   // elsewhere 👍 / 👎 under the feedback (teacher, 30 October)
         qEl, area, h('div', { class: 'actbar' }, ses.mode === 'placement' || rev ? h('span') : skipBtn, submit), feedback)));   // Skip under the left thumb, Check under the right (teacher, 5 November)
     if (rev) {   // an answered task: put the answer back, lock it and show the feedback again
       var a = rev.ans;
@@ -2052,14 +2052,14 @@
       h('span', { class: 'ttile-nm' }, p.label));   // the New group says it is new (as for the topic tiles)
   }
   /** A new point's own card, with a button that practises only that point (source new_point). */
-  function pointModal(p) {
-    track('rule_card', 'point-' + p.id);
-    var go = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow')), errBox = h('div');
+  function pointModal(p, inTask) {
+    track('rule_card', (inTask ? 'task-point-' : 'point-') + p.id);
+    var go = inTask ? h('span') : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow')), errBox = h('div');
     var m = UI.modal(h('div', null, h('h2', null, h('span', { class: 'pill new-pill' }, 'New'), ' ', p.label), ruleCard(p, state.user.lang === 'lv'), errBox,
-      h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, 'Close'))));
+      h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');
     m.el.querySelector('#c').onclick = m.close;
-    go.onclick = function () {
+    if (!inTask) go.onclick = function () {
       go.disabled = true;
       api('session/start', { mode: 'practice', point: p.id, skills: [p.skill], levels: p.levels, length: 10, source: 'new_point' }).then(function (r) {
         m.close(); state.sess = newSess(r.session, r.item); location.hash = '#/session';

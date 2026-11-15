@@ -49,7 +49,7 @@ def the_key(i):
     k = {"kind": i["kind"]}
     if i["kind"] == "mcq": k["correct"] = i["correct"]; k["wrong"] = i["wrong"]
     elif i["kind"] in ("gap", "text"): k["accepted"] = i["answers"]
-    elif i["kind"] == "order": k["sentence"] = i["sentence"]; k["also"] = i.get("also", [])
+    elif i["kind"] == "order": k["sentence"] = i["sentence"]; k["also"] = i.get("also") or [a for a in (i.get("answers") or [[]])[0] if a != i["sentence"]]   # the importer keeps the other orders in answers
     elif i["kind"] == "match": k["pairs"] = i["pairs"]
     elif i["kind"] == "write": k["model"] = i.get("model"); k["must"] = [m[1] for m in i.get("must", [])]
     return k
@@ -134,7 +134,8 @@ def compare(name):
             oc = x.get("other_correct")
             for a in [x.get("answer")] + (oc if isinstance(oc, list) else ([oc] if oc else [])):
                 if a not in (None, "", "none") and k["item"]["kind"] in ("gap", "text", "order"): todo.append((tid, a))
-    res = grade_all([(keyd[t]["item"], a) for t, a in todo])
+    card = lambda t, a: re.sub(r"\s*,\s*", " ", a) if keyd[t]["item"]["kind"] == "order" and isinstance(a, str) else a   # word cards carry no commas
+    res = grade_all([(keyd[t]["item"], card(t, a)) for t, a in todo])
     graded = {(t, json.dumps(a, ensure_ascii=False)): ok for (t, a), ok in zip(todo, res)}
 
     def ok_of(k, a):

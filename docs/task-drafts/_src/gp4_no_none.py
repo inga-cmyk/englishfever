@@ -56,7 +56,7 @@ gp(T, L, 3, "Complete with one word: There ___ any direct flights, so we had to 
 
 # whole sentence (3)
 tx(T, L, 4, "Say it another way with *no*: There aren't any vegetarian dishes on the menu.",
-   "There are no vegetarian dishes on the menu. | On the menu there are no vegetarian dishes.", *NO_N)
+   "There are no vegetarian dishes on the menu. | On the menu there are no vegetarian dishes. | The menu has no vegetarian dishes.", *NO_N)
 tx(T, L, 4, "Say it another way with *any*: I've got no plans for the weekend.",
    "I haven't got any plans for the weekend. | I don't have any plans for the weekend. | I've not got any plans for the weekend. | I haven't any plans for the weekend.", *ANY)
 tx(T, L, 4, "Correct the mistake: We didn't get no answer from the bank, so I called them again.",
@@ -71,8 +71,8 @@ od(T, L, 3, "Put the words in order to make a question.", "why are there no taxi
 od(T, L, 3, "Put the words in order.", "no cars are allowed in the old town at weekends",
    "*no* + noun can start a sentence, and the verb stays positive: *No cars are allowed.*",
    "Teikums var sākties ar *No cars*, un darbības vārds nav noliegumā: *No cars are allowed.*",
-   also=["at weekends no cars are allowed in the old town", "in the old town no cars are allowed at weekends"])
-od(T, L, 3, "Put the words in order.", "we had no idea that they were getting married", *NO_N)
+   also=["at weekends no cars are allowed in the old town", "in the old town no cars are allowed at weekends", "no cars are allowed at weekends in the old town"])
+od(T, L, 3, "Put the words in order.", "we had no idea that they were getting married", *NO_N, also=["they had no idea that we were getting married"])
 
 # word bank (4): the wrong chips make the mistakes of this point (double negative, none + noun, No of, any in a positive sentence)
 gp(T, L, 3, "Sorry, there ___ ___ seats left on the morning train.", "are / no", *ONE_NEG, bank=["are", "no", "aren't", "none"])

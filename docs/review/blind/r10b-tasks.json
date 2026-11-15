@@ -1,0 +1,36 @@
+[
+ {
+  "id": "r10b-001",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "passes",
+   "our",
+   "to",
+   "boarding",
+   "do",
+   "we",
+   "have",
+   "print"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r10b-002",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "to",
+   "the",
+   "latvian",
+   "new",
+   "speak",
+   "have",
+   "does",
+   "manager"
+  ],
+  "note": "the learner puts all the cards in order"
+ }
+]

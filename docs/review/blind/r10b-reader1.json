@@ -1,0 +1,20 @@
+[
+{
+"id": "r10b-001",
+"answer": "do we have to print our boarding passes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Order-only task with 8 cards is fine, but have to is a bit light for B1.1 (it is common at A2/B1.1 border); acceptable.",
+"sense_problem": ""
+},
+{
+"id": "r10b-002",
+"answer": "does the new manager have to speak latvian",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Card 'latvian' is lower case; the correct sentence needs a capital L, so check the checker is case-insensitive and that learners are not confused."
+}
+]

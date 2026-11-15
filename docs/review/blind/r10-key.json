@@ -610,7 +610,9 @@
   "key": {
    "kind": "order",
    "sentence": "what will you do when you finish your degree",
-   "also": []
+   "also": [
+    "when you finish your degree what will you do"
+   ]
   },
   "item": {
    "id": "c-3207",
@@ -641,7 +643,9 @@
   "key": {
    "kind": "order",
    "sentence": "will you text me when your plane lands in rome",
-   "also": []
+   "also": [
+    "when your plane lands in rome will you text me"
+   ]
   },
   "item": {
    "id": "c-3208",
@@ -672,7 +676,9 @@
   "key": {
    "kind": "order",
    "sentence": "if the meeting finishes early i'll go to the gym",
-   "also": []
+   "also": [
+    "i'll go to the gym if the meeting finishes early"
+   ]
   },
   "item": {
    "id": "c-3209",
@@ -703,7 +709,9 @@
   "key": {
    "kind": "order",
    "sentence": "i'll send you the photos of the flat when i get home",
-   "also": []
+   "also": [
+    "when i get home i'll send you the photos of the flat"
+   ]
   },
   "item": {
    "id": "c-3210",
@@ -734,7 +742,10 @@
   "key": {
    "kind": "order",
    "sentence": "my parents will move to the coast when they retire",
-   "also": []
+   "also": [
+    "when they retire my parents will move to the coast",
+    "when my parents retire they will move to the coast"
+   ]
   },
   "item": {
    "id": "c-3211",
@@ -1522,7 +1533,9 @@
   "key": {
    "kind": "order",
    "sentence": "she began to write a blog about her travels last year",
-   "also": []
+   "also": [
+    "last year she began to write a blog about her travels"
+   ]
   },
   "item": {
    "id": "c-3232",
@@ -1583,7 +1596,10 @@
   "key": {
    "kind": "order",
    "sentence": "my father started using a smartphone when he turned seventy",
-   "also": []
+   "also": [
+    "when he turned seventy my father started using a smartphone",
+    "when my father turned seventy he started using a smartphone"
+   ]
   },
   "item": {
    "id": "c-3234",
@@ -1615,7 +1631,9 @@
   "key": {
    "kind": "order",
    "sentence": "she continued working at the hospital after her first child was born",
-   "also": []
+   "also": [
+    "after her first child was born she continued working at the hospital"
+   ]
   },
   "item": {
    "id": "c-3235",
@@ -1646,7 +1664,9 @@
   "key": {
    "kind": "order",
    "sentence": "do you prefer to cook at home or go to restaurants",
-   "also": []
+   "also": [
+    "do you prefer to go to restaurants or cook at home"
+   ]
   },
   "item": {
    "id": "c-3236",
@@ -2502,7 +2522,10 @@
   "key": {
    "kind": "order",
    "sentence": "no cars are allowed in the old town at weekends",
-   "also": []
+   "also": [
+    "at weekends no cars are allowed in the old town",
+    "in the old town no cars are allowed at weekends"
+   ]
   },
   "item": {
    "id": "c-3260",
@@ -3099,7 +3122,9 @@
   "key": {
    "kind": "order",
    "sentence": "does the new manager have to speak latvian or is english enough",
-   "also": []
+   "also": [
+    "does the new manager have to speak english or is latvian enough"
+   ]
   },
   "item": {
    "id": "c-3276",
@@ -3130,7 +3155,9 @@
   "key": {
    "kind": "order",
    "sentence": "i had to cancel my dentist appointment because i was stuck at work",
-   "also": []
+   "also": [
+    "because i was stuck at work i had to cancel my dentist appointment"
+   ]
   },
   "item": {
    "id": "c-3277",
@@ -3161,7 +3188,9 @@
   "key": {
    "kind": "order",
    "sentence": "i'll have to renew my passport before we fly to canada",
-   "also": []
+   "also": [
+    "before we fly to canada i'll have to renew my passport"
+   ]
   },
   "item": {
    "id": "c-3278",
@@ -3192,7 +3221,9 @@
   "key": {
    "kind": "order",
    "sentence": "we're going to have to hire more staff if sales keep growing",
-   "also": []
+   "also": [
+    "if sales keep growing we're going to have to hire more staff"
+   ]
   },
   "item": {
    "id": "c-3279",

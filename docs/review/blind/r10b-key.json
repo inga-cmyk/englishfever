@@ -1,0 +1,62 @@
+{
+ "r10b-001": {
+  "hash": "3c717cce2b77c239",
+  "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | do we have to print our boarding passes",
+  "src": "zz-blind-gap-points-b11-1.csv:85",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "do we have to print our boarding passes",
+   "also": []
+  },
+  "item": {
+   "id": "c-3275",
+   "skill": "modal_verbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Questions with *have to* use *do / does*: *Do I have to …? Does she have to …?* Not *Do I must*, *Have I to* or *Has she to*.",
+   "why_lv": "Jautājumos ar *have to* lieto *do / does*: *Do I have to* …? *Does she have to* …? Nevis *Do I must, Have I to* vai *Has she to.*",
+   "sentence": "do we have to print our boarding passes",
+   "answers": [
+    [
+     "do we have to print our boarding passes"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b11-1.csv:85"
+  }
+ },
+ "r10b-002": {
+  "hash": "0758e9fec4f417f9",
+  "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | does the new manager have to speak latvian",
+  "src": "zz-blind-gap-points-b11-1.csv:86",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "does the new manager have to speak latvian",
+   "also": []
+  },
+  "item": {
+   "id": "c-3276",
+   "skill": "modal_verbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "Questions with *have to* use *do / does*: *Do I have to …? Does she have to …?* Not *Do I must*, *Have I to* or *Has she to*.",
+   "why_lv": "Jautājumos ar *have to* lieto *do / does*: *Do I have to* …? *Does she have to* …? Nevis *Do I must, Have I to* vai *Has she to.*",
+   "sentence": "does the new manager have to speak latvian",
+   "answers": [
+    [
+     "does the new manager have to speak latvian"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-gap-points-b11-1.csv:86"
+  }
+ }
+}

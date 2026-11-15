@@ -15491,14 +15491,6 @@
 "must_vs_have_to",
 "read"
 ],
-"modal_verbs | B1.1 | order | Put the words in order to make a question. | do we have to print our boarding passes before we get to the airport": [
-"must_vs_have_to",
-"read"
-],
-"modal_verbs | B1.1 | order | Put the words in order to make a question. | does the new manager have to speak latvian or is english enough": [
-"must_vs_have_to",
-"read"
-],
 "modal_verbs | B1.1 | order | Put the words in order. | i had to cancel my dentist appointment because i was stuck at work": [
 "must_vs_have_to",
 "read"
@@ -15560,6 +15552,14 @@
 "read"
 ],
 "modal_verbs | B1.1 | text | Say it another way with *might*: Perhaps we will have to sleep at the airport if the strike continues. | ": [
+"must_vs_have_to",
+"read"
+],
+"modal_verbs | B1.1 | order | Put the words in order to make a question. | do we have to print our boarding passes": [
+"must_vs_have_to",
+"read"
+],
+"modal_verbs | B1.1 | order | Put the words in order to make a question. | does the new manager have to speak latvian": [
 "must_vs_have_to",
 "read"
 ]

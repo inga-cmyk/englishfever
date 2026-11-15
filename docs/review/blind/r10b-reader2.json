@@ -1,0 +1,22 @@
+[
+{
+"id": "r10b-001",
+"answer": "do we have to print our boarding passes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r10b-002",
+"answer": "does the new manager have to speak latvian",
+"other_correct": [
+"does the new latvian manager have to speak"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Second order (Latvian manager, verb 'speak' without object) is grammatical but incomplete in meaning/less natural; consider changing a card (e.g. 'Latvian' as adjective is ambiguous). Card 'latvian' is lower case, so the capital clue is lost."
+}
+]

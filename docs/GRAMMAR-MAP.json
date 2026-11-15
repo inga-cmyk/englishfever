@@ -3407,11 +3407,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.1"
+   ]
   },
   {
    "id": "c1_unless",
@@ -5319,11 +5321,13 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.1"
+   ]
   },
   {
    "id": "vp_meaning",
@@ -6135,11 +6139,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.1"
+   ]
   },
   {
    "id": "most_of",
@@ -9144,11 +9150,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 2
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.1"
+   ]
   },
   {
    "id": "wont_refuse",

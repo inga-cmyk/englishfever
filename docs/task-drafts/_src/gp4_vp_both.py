@@ -73,7 +73,7 @@ gp(T, L, 3, "I hate ___ on the phone, so I usually send a text message instead. 
 
 # ---------- whole sentence (3) ----------
 tx(T, L, 4, "Say it another way with *to*: We started looking for a new flat as soon as I got the job.",
-   "We started to look for a new flat as soon as I got the job. | As soon as I got the job, we started to look for a new flat.",
+   "We started to look for a new flat as soon as I got the job. | As soon as I got the job, we started to look for a new flat. | We began to look for a new flat as soon as I got the job. | As soon as I got the job, we began to look for a new flat.",
    *both("start", "started looking", "started to look"))
 tx(T, L, 4, "Correct the mistake: I love spend time with my cousins because they always make me laugh.",
    "I love spending time with my cousins because they always make me laugh. | I love to spend time with my cousins because they always make me laugh.",
@@ -85,7 +85,7 @@ tx(T, L, 4, "Correct the mistake: Would you like coming with us to the team lunc
 
 # ---------- word order (5) ----------
 od(T, L, 3, "Put the words in order.", "she began to write a blog about her travels last year",
-   *both("begin", "began to write", "began writing"), also=["last year she began to write a blog about her travels"])
+   *both("begin", "began to write", "began writing"), also=["last year she began to write a blog about her travels", "she began to write a blog last year about her travels"])
 od(T, L, 3, "Put the words in order to make a question.", "would you like to have a coffee before the meeting",
    *would("Would you like to have a coffee?", "Would you like having"), also=["before the meeting would you like to have a coffee"])
 od(T, L, 3, "Put the words in order.", "my father started using a smartphone when he turned seventy",

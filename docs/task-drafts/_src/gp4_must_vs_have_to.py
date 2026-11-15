@@ -68,10 +68,8 @@ mc(T, L, 2, "Which sentence is the speaker's own idea, not a rule?", "I must dri
 learning_task()
 
 # ── word order (5) ──
-od(T, L, 3, "Put the words in order to make a question.", "do we have to print our boarding passes before we get to the airport", *Q,
-   also=["before we get to the airport do we have to print our boarding passes"])
-od(T, L, 3, "Put the words in order to make a question.", "does the new manager have to speak latvian or is english enough", *Q,
-   also=["does the new manager have to speak english or is latvian enough"])
+od(T, L, 3, "Put the words in order to make a question.", "do we have to print our boarding passes", *Q)   # blind check r10: 14 cards was too long for B1.1
+od(T, L, 3, "Put the words in order to make a question.", "does the new manager have to speak latvian", *Q)   # blind check r10: the two-clause question was too heavy for B1.1
 od(T, L, 3, "Put the words in order.", "i had to cancel my dentist appointment because i was stuck at work",
    "For the past use *had to*: *I had to cancel …*. *must* has no past form for obligation.",
    "Pagātnē lieto *had to*: *I had to cancel …*. Pienākumam *must* pagātnes formas nav.",
@@ -103,7 +101,7 @@ gp(T, L, 3, "I couldn't park near the office, so I ___ leave the car three stree
 gp(T, L, 3, "We ___ queue for long at the concert because we had bought our tickets online. (have to / not)",
    "didn't have to | did not have to", *PASTNEG)
 gp(T, L, 3, "My sister works as a pilot, so she ___ have a medical check every year. (have to)",
-   "has to | must | has got to | 's got to", *HAS)
+   "has to | must | has got to | 's got to | needs to", *HAS)
 gp(T, L, 3, "___ you ___ show your passport when you crossed the border last weekend? (have to)", "Did / have to", *PASTQ)
 gp(T, L, 3, "My flatmate ___ get up early on Mondays because her first class starts at eleven. (have to / not)",
    "doesn't have to | does not have to | hasn't got to | has not got to",
@@ -117,7 +115,7 @@ tx(T, L, 4, "Start with *Last month*: I have to work every Saturday to cover for
    "*Last month* ir pagātne: *I had to work*. Pienākumam *must* pagātnes formas nav.")
 tx(T, L, 4, "Make a yes/no question: Anna has to take the medicine twice a day while she is ill.",
    "Does Anna have to take the medicine twice a day while she is ill? | Must Anna take the medicine twice a day while she is ill? | "
-   "Has Anna got to take the medicine twice a day while she is ill? | Does Anna have to take the medicine twice a day?",
+   "Has Anna got to take the medicine twice a day while she is ill? | Does Anna have to take the medicine twice a day? | While she is ill, does Anna have to take the medicine twice a day?",
    "Question: *Does* + subject + *have to*: *Does Anna have to take …?* (*Must Anna take …?* is correct too, but formal.) Not *Has Anna to* or *Does Anna has to*.",
    "Jautājums: *Does* + teik. priekšmets + *have to*: *Does Anna have to take …?* (Der arī *Must Anna take …?*, bet tas ir oficiālāk.) Nevis *Has Anna to* vai *Does Anna has to*.")
 tx(T, L, 4, "Say it another way with *might*: Perhaps we will have to sleep at the airport if the strike continues.",

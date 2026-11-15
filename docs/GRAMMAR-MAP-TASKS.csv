@@ -2325,9 +2325,85 @@ had_to,B1.1,modal_verbs,B1.1,check,mcq,read,,more-1.csv:140,modal_verbs | B1.1 |
 had_to,B1.1,modal_verbs,B1.1,check,mcq,read,,twins-1.csv:2,modal_verbs | B1.1 | mcq | Choose the correct option: We ___ wait two hours at the airport last night. | had to
 had_to,B1.1,modal_verbs,B1.1,check,mcq,read,,twins-1.csv:3,modal_verbs | B1.1 | mcq | Choose the correct option: I ___ finish the report before the meeting yesterday. | had to
 had_to,B1.1,modal_verbs,B1.1,check,mcq,read,,twins-1.csv:4,modal_verbs | B1.1 | mcq | Choose the correct option: She ___ call the bank tomorrow morning. | will have to
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:2,"cond_first | B1.1 | mcq | Choose the correct option: My train gets in at six. ___, I'll call you from the station. | When I arrive"
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:3,"cond_first | B1.1 | mcq | Choose the correct option: I may not get the job, but ___, I'll move to Oslo. | if I get it"
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:4,"cond_first | B1.1 | mcq | Which sentence is correct? | The film ends at nine, so I'll call you when it finishes."
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:5,"cond_first | B1.1 | mcq | Choose the correct option: My brother might visit us next month. ___, we'll take him to the new museum. | If he comes"
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:6,cond_first | B1.1 | mcq | Which sentence is NOT correct? | I'll text you when I will land in Riga.
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:7,"cond_first | B1.1 | mcq | Choose the correct option: We're getting married in June. ___ married, we'll look for a bigger flat. | When we're"
+if_when,B1.1,cond_first,B1.1,check,mcq,read,,gap-points-b11-1.csv:8,"cond_first | B1.1 | mcq | Choose the correct option: ___ my visa in time, I'll fly to Toronto in May. It's not certain yet. | If I get"
+if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:9,"cond_first | B1.1 | gap | Write *if* or *when*: I'm having lunch with Tom today. ___ I see him, I'll give him your book. | "
+if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:10,"cond_first | B1.1 | gap | When the update ___, the app will restart by itself. (finish) | "
+if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:11,"cond_first | B1.1 | gap | Write *if* or *when*: The bank might be closed on Saturday. ___ it is, I'll go on Monday. | "
+if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:12,"cond_first | B1.1 | gap | My course starts on Monday. When it ___, I'll have less free time. (start) | "
+if_when,B1.1,cond_first,B1.1,use,gap,read,,gap-points-b11-1.csv:13,"cond_first | B1.1 | gap | Write *if* or *when*: The museum opens at ten. ___ it opens, we'll buy tickets for the tower. | "
+if_when,B1.1,cond_first,B1.1,use,text,read,,gap-points-b11-1.csv:14,cond_first | B1.1 | text | Join with *if* or *when*: My contract ends in June. Then I'll take a long holiday. | 
+if_when,B1.1,cond_first,B1.1,use,text,read,,gap-points-b11-1.csv:15,"cond_first | B1.1 | text | Join with *if* or *when*: Perhaps the hotel is full. In that case, we'll stay with friends. | "
+if_when,B1.1,cond_first,B1.1,use,text,read,,gap-points-b11-1.csv:16,cond_first | B1.1 | text | Join with *when*: I'll finish this email. Then I'll call you back. | 
+if_when,B1.1,cond_first,B1.1,check,order,read,,gap-points-b11-1.csv:17,cond_first | B1.1 | order | Put the words in order to make a question. | what will you do when you finish your degree
+if_when,B1.1,cond_first,B1.1,check,order,read,,gap-points-b11-1.csv:18,cond_first | B1.1 | order | Put the words in order to make a question. | will you text me when your plane lands in rome
+if_when,B1.1,cond_first,B1.1,check,order,read,,gap-points-b11-1.csv:19,cond_first | B1.1 | order | Put the words in order. | if the meeting finishes early i'll go to the gym
+if_when,B1.1,cond_first,B1.1,check,order,read,,gap-points-b11-1.csv:20,cond_first | B1.1 | order | Put the words in order. | i'll send you the photos of the flat when i get home
+if_when,B1.1,cond_first,B1.1,check,order,read,,gap-points-b11-1.csv:21,cond_first | B1.1 | order | Put the words in order. | my parents will move to the coast when they retire
+if_when,B1.1,cond_first,B1.1,check,gap,read,,gap-points-b11-1.csv:22,"cond_first | B1.1 | gap | My new laptop arrives on Friday. ___ it ___, I'll set it up for you. | "
+if_when,B1.1,cond_first,B1.1,check,gap,read,,gap-points-b11-1.csv:23,"cond_first | B1.1 | gap | I might not finish the report today. ___ I ___ it, I'll send it to you tonight. | "
+if_when,B1.1,cond_first,B1.1,check,gap,read,,gap-points-b11-1.csv:24,"cond_first | B1.1 | gap | We're moving to Riga in March. ___ there, we'll see each other more often. | "
+if_when,B1.1,cond_first,B1.1,check,gap,read,,gap-points-b11-1.csv:25,"cond_first | B1.1 | gap | I might get tickets for the concert. ___ I ___ them, I'll take you with me. | "
+if_when,B1.1,cond_first,B1.1,learn,match,read,,gap-points-b11-1.csv:26,"cond_first | B1.1 | match | Match each sentence with the one that follows it. | My flight lands at six. = When it does, I'll text you. ; My flight might be late. = If it is, I'll take a taxi. ; I'm not sure the hotel has parking. = If it doesn't, we'll park at the station. ; Our room will be ready at two. = When it is, we'll take our bags up."
 indef_adj,B1.1,indefinite_pronouns,A2.2,check,order,read,,b1-new-5.csv:132,indefinite_pronouns | A2.2 | order | Put the words in order. | is there anything to eat
 link_adj,B1.1,adverbs,A2.2,check,mcq,read,,b1-new-5.csv:70,adverbs | A2.2 | mcq | Choose the correct option: She looks ___ today. | happy
 link_adj,B1.1,adverbs,A2.2,check,mcq,read,,more-1.csv:103,adverbs | A2.2 | mcq | Choose the correct option: You look ___ today. | tired
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:77,modal_verbs | B1.1 | mcq | Choose the correct option: My knee hurt so much last winter that I ___ stop running for two months. | had to
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:78,"modal_verbs | B1.1 | mcq | Choose the correct option: The hotel is almost full, so we ___ find somewhere else to stay tonight. | might have to"
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:79,modal_verbs | B1.1 | mcq | Which sentence is correct? | Does your brother have to work late when the restaurant is busy?
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:80,modal_verbs | B1.1 | mcq | Choose the correct option: ___ show my student card every time I use the library? | Do I have to
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:81,"modal_verbs | B1.1 | mcq | Choose the correct option: My manager ___ come to the office on Fridays, so she usually works from home. | doesn't have to"
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:82,"modal_verbs | B1.1 | mcq | Choose the correct option: These tablets can make you sleepy, so you ___ drive after taking them. | mustn't"
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,mcq,read,,gap-points-b11-1.csv:83,"modal_verbs | B1.1 | mcq | Which sentence is NOT correct? | From May, drivers will must pay to enter the city centre."
+must_vs_have_to,B1.1,modal_verbs,B1.1,learn,mcq,read,,gap-points-b11-1.csv:84,"modal_verbs | B1.1 | mcq | Which sentence is the speaker's own idea, not a rule? | I must drink less coffee in the evenings."
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,order,read,,gap-points-b11-1.csv:85,modal_verbs | B1.1 | order | Put the words in order to make a question. | do we have to print our boarding passes
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,order,read,,gap-points-b11-1.csv:86,modal_verbs | B1.1 | order | Put the words in order to make a question. | does the new manager have to speak latvian
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,order,read,,gap-points-b11-1.csv:87,modal_verbs | B1.1 | order | Put the words in order. | i had to cancel my dentist appointment because i was stuck at work
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,order,read,,gap-points-b11-1.csv:88,modal_verbs | B1.1 | order | Put the words in order. | i'll have to renew my passport before we fly to canada
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,order,read,,gap-points-b11-1.csv:89,modal_verbs | B1.1 | order | Put the words in order. | we're going to have to hire more staff if sales keep growing
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,gap,read,,gap-points-b11-1.csv:90,modal_verbs | B1.1 | gap | We ___ find a hotel near the station because the last train had already left. | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,gap,read,,gap-points-b11-1.csv:91,"modal_verbs | B1.1 | gap | If nobody can fix the printer today, we ___ ___ buy a new one. | "
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,gap,read,,gap-points-b11-1.csv:92,modal_verbs | B1.1 | gap | ___ she ___ take the whole exam again if she fails one part? | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,check,gap,read,,gap-points-b11-1.csv:93,"modal_verbs | B1.1 | gap | The gym membership includes all the classes, so you ___ pay extra for yoga. | "
+must_vs_have_to,B1.1,modal_verbs,B1.1,learn,match,read,,gap-points-b11-1.csv:94,modal_verbs | B1.1 | match | Match each sentence with its meaning. | I must book the tickets. = I feel it's necessary. ; I had to book the tickets. = It was necessary in the past. ; I don't have to book the tickets. = It isn't necessary. ; Do I have to book the tickets? = I'm asking if it's necessary.
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:95,"modal_verbs | B1.1 | gap | I couldn't park near the office, so I ___ leave the car three streets away. (have to) | "
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:96,modal_verbs | B1.1 | gap | We ___ queue for long at the concert because we had bought our tickets online. (have to / not) | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:97,"modal_verbs | B1.1 | gap | My sister works as a pilot, so she ___ have a medical check every year. (have to) | "
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:98,modal_verbs | B1.1 | gap | ___ you ___ show your passport when you crossed the border last weekend? (have to) | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,gap,read,,gap-points-b11-1.csv:99,modal_verbs | B1.1 | gap | My flatmate ___ get up early on Mondays because her first class starts at eleven. (have to / not) | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:100,modal_verbs | B1.1 | text | Start with *Last month*: I have to work every Saturday to cover for a sick colleague. | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:101,modal_verbs | B1.1 | text | Make a yes/no question: Anna has to take the medicine twice a day while she is ill. | 
+must_vs_have_to,B1.1,modal_verbs,B1.1,use,text,read,,gap-points-b11-1.csv:102,modal_verbs | B1.1 | text | Say it another way with *might*: Perhaps we will have to sleep at the airport if the strike continues. | 
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:52,"quantity | B1.1 | mcq | Choose the correct option: The hotel was nice, but there was ___ hot water in our room. | no"
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:53,"quantity | B1.1 | mcq | Choose the correct option: I needed paper for the printer, but there was ___ left. | none"
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:54,"quantity | B1.1 | mcq | Which sentence is correct? | There aren't any shops in our village, so we drive to town."
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:55,"quantity | B1.1 | mcq | Which sentence is correct? | None of my friends could come to my party, so I cancelled it."
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:56,quantity | B1.1 | mcq | Which sentence is NOT correct? | I don't have nothing to wear to my cousin's wedding.
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:57,quantity | B1.1 | mcq | Choose the correct option: 'How many tickets are left for tonight's concert?' '___. They're all sold out.' | None
+no_none,B1.1,quantity,B1.1,check,mcq,read,,gap-points-b11-1.csv:58,"quantity | B1.1 | mcq | Choose the correct option: We asked five language schools about evening courses, but ___ them had a free place. | none of"
+no_none,B1.1,quantity,B1.1,use,gap,read,,gap-points-b11-1.csv:59,"quantity | B1.1 | gap | Write *no* or *any*: My new phone has ___ headphone jack, so I use wireless earbuds. | "
+no_none,B1.1,quantity,B1.1,use,gap,read,,gap-points-b11-1.csv:60,quantity | B1.1 | gap | Write *no* or *any*: Our teacher didn't give us ___ homework over the holidays. | 
+no_none,B1.1,quantity,B1.1,use,gap,read,,gap-points-b11-1.csv:61,"quantity | B1.1 | gap | Write *no* or *none*: I wanted to buy fresh bread after work, but there was ___ left. | "
+no_none,B1.1,quantity,B1.1,use,gap,read,,gap-points-b11-1.csv:62,quantity | B1.1 | gap | Write *no* or *none*: ___ of the photos I took at the concert came out well. It was too dark. | 
+no_none,B1.1,quantity,B1.1,use,gap,read,,gap-points-b11-1.csv:63,"quantity | B1.1 | gap | Complete with one word: There ___ any direct flights, so we had to change planes in Frankfurt. | "
+no_none,B1.1,quantity,B1.1,use,text,read,,gap-points-b11-1.csv:64,quantity | B1.1 | text | Say it another way with *no*: There aren't any vegetarian dishes on the menu. | 
+no_none,B1.1,quantity,B1.1,use,text,read,,gap-points-b11-1.csv:65,quantity | B1.1 | text | Say it another way with *any*: I've got no plans for the weekend. | 
+no_none,B1.1,quantity,B1.1,use,text,read,,gap-points-b11-1.csv:66,"quantity | B1.1 | text | Correct the mistake: We didn't get no answer from the bank, so I called them again. | "
+no_none,B1.1,quantity,B1.1,check,order,read,,gap-points-b11-1.csv:67,quantity | B1.1 | order | Put the words in order. | i didn't have any time to revise for the test
+no_none,B1.1,quantity,B1.1,check,order,read,,gap-points-b11-1.csv:68,quantity | B1.1 | order | Put the words in order. | none of my colleagues knew that the meeting was cancelled
+no_none,B1.1,quantity,B1.1,check,order,read,,gap-points-b11-1.csv:69,quantity | B1.1 | order | Put the words in order to make a question. | why are there no taxis at the station
+no_none,B1.1,quantity,B1.1,check,order,read,,gap-points-b11-1.csv:70,quantity | B1.1 | order | Put the words in order. | no cars are allowed in the old town at weekends
+no_none,B1.1,quantity,B1.1,check,order,read,,gap-points-b11-1.csv:71,quantity | B1.1 | order | Put the words in order. | we had no idea that they were getting married
+no_none,B1.1,quantity,B1.1,check,gap,read,,gap-points-b11-1.csv:72,"quantity | B1.1 | gap | Sorry, there ___ ___ seats left on the morning train. | "
+no_none,B1.1,quantity,B1.1,check,gap,read,,gap-points-b11-1.csv:73,"quantity | B1.1 | gap | ___ ___ the students passed the first test, so the teacher explained it again. | "
+no_none,B1.1,quantity,B1.1,check,gap,read,,gap-points-b11-1.csv:74,"quantity | B1.1 | gap | Our phones had ___ signal in the mountains, so we used a paper map. | "
+no_none,B1.1,quantity,B1.1,check,gap,read,,gap-points-b11-1.csv:75,"quantity | B1.1 | gap | We haven't got ___ coffee left, so I'll buy some on the way home. | "
+no_none,B1.1,quantity,B1.1,learn,match,read,,gap-points-b11-1.csv:76,"quantity | B1.1 | match | Match each beginning with its ending. | The hotel was full, so there were no = rooms for us. ; I sent my CV to four companies, but none of = them replied. ; I can't pay for the taxi. I don't have any = cash on me. ; I wanted more coffee, but there was = none left in the pot."
 pas_act,B1.1,present_simple_passive,A2.2,learn,mcq,read,psp-A22-2a-r2,built-in,"present_simple_passive | A2.2 | mcq | Which sentence says that people grow rice in Asia, without saying who? | Rice is grown in Asia."
 pas_act,B1.1,past_simple_passive,A2.2,learn,mcq,read,pasp-A22-2a-r3,built-in,"past_simple_passive | A2.2 | mcq | Which sentence says that someone broke the window, without saying who? | The window was broken yesterday."
 pas_act,B1.1,past_simple_passive,A2.2,check,mcq,read,pasp-A22-5a-r2,built-in,past_simple_passive | A2.2 | mcq | Which sentence is correct? | My bike was stolen.
@@ -2737,6 +2813,31 @@ two_obj_explain,B1.1,two_objects,B1.1,check,mcq,read,,b1-new-4.csv:161,two_objec
 two_obj_explain,B1.1,two_objects,B1.1,use,text,read,,b1-new-4.csv:170,two_objects | B1.1 | text | Correct the mistake: She explained me the rules. | 
 two_obj_pron,B1.1,two_objects,B1.1,check,order,read,,b1-new-4.csv:140,two_objects | B1.1 | order | Put the words in order. | i will send it to you tomorrow
 used_to_ps,B1.1,used_to,A2.2,learn,mcq,read,,b1-new-1.csv:24,used_to | A2.2 | mcq | Which sentence is about a past habit? | We used to play cards on Sundays.
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:27,"verb_patterns | B1.1 | mcq | Choose the correct option: My laptop is eight years old, but it continues ___ without any problems. | to work"
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:28,"verb_patterns | B1.1 | mcq | Choose the correct option: When the band came on stage, the whole crowd started ___. | dancing"
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:29,verb_patterns | B1.1 | mcq | Which sentence is NOT correct? | I'd like going to the concert with you on Saturday.
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:30,"verb_patterns | B1.1 | mcq | Choose the correct option: We'd love ___ to your party, but we're away that weekend. | to come"
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:31,verb_patterns | B1.1 | mcq | Which sentence is NOT correct? | She started learn Spanish when she moved to Valencia.
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:32,"verb_patterns | B1.1 | mcq | Which sentence is correct? | My husband hates driving at night, so I usually drive us home."
+vp_both,B1.1,verb_patterns,B1.1,check,mcq,read,,gap-points-b11-1.csv:33,verb_patterns | B1.1 | mcq | Which sentence is NOT correct? | We like eat out on Friday evenings after a long week.
+vp_both,B1.1,verb_patterns,B1.1,use,gap,read,,gap-points-b11-1.csv:34,verb_patterns | B1.1 | gap | The audience began ___ before the actor finished his joke. (laugh) | 
+vp_both,B1.1,verb_patterns,B1.1,use,gap,read,,gap-points-b11-1.csv:35,"verb_patterns | B1.1 | gap | My partner loves ___ new recipes, so we often have friends over at the weekend. (try) | "
+vp_both,B1.1,verb_patterns,B1.1,use,gap,read,,gap-points-b11-1.csv:36,verb_patterns | B1.1 | gap | Do you prefer ___ on holiday alone or with friends? (go) | 
+vp_both,B1.1,verb_patterns,B1.1,use,gap,read,,gap-points-b11-1.csv:37,verb_patterns | B1.1 | gap | Many people continued ___ from home after the offices reopened. (work) | 
+vp_both,B1.1,verb_patterns,B1.1,use,gap,read,,gap-points-b11-1.csv:38,"verb_patterns | B1.1 | gap | I hate ___ on the phone, so I usually send a text message instead. (talk) | "
+vp_both,B1.1,verb_patterns,B1.1,use,text,read,,gap-points-b11-1.csv:39,verb_patterns | B1.1 | text | Say it another way with *to*: We started looking for a new flat as soon as I got the job. | 
+vp_both,B1.1,verb_patterns,B1.1,use,text,read,,gap-points-b11-1.csv:40,verb_patterns | B1.1 | text | Correct the mistake: I love spend time with my cousins because they always make me laugh. | 
+vp_both,B1.1,verb_patterns,B1.1,use,text,read,,gap-points-b11-1.csv:41,verb_patterns | B1.1 | text | Correct the mistake: Would you like coming with us to the team lunch on Friday? | 
+vp_both,B1.1,verb_patterns,B1.1,check,order,read,,gap-points-b11-1.csv:42,verb_patterns | B1.1 | order | Put the words in order. | she began to write a blog about her travels last year
+vp_both,B1.1,verb_patterns,B1.1,check,order,read,,gap-points-b11-1.csv:43,verb_patterns | B1.1 | order | Put the words in order to make a question. | would you like to have a coffee before the meeting
+vp_both,B1.1,verb_patterns,B1.1,check,order,read,,gap-points-b11-1.csv:44,verb_patterns | B1.1 | order | Put the words in order. | my father started using a smartphone when he turned seventy
+vp_both,B1.1,verb_patterns,B1.1,check,order,read,,gap-points-b11-1.csv:45,verb_patterns | B1.1 | order | Put the words in order. | she continued working at the hospital after her first child was born
+vp_both,B1.1,verb_patterns,B1.1,check,order,read,,gap-points-b11-1.csv:46,verb_patterns | B1.1 | order | Put the words in order to make a question. | do you prefer to cook at home or go to restaurants
+vp_both,B1.1,verb_patterns,B1.1,check,gap,read,,gap-points-b11-1.csv:47,"verb_patterns | B1.1 | gap | During the long winter my brother started ___ his own furniture, and now he sells it online. | "
+vp_both,B1.1,verb_patterns,B1.1,check,gap,read,,gap-points-b11-1.csv:48,"verb_patterns | B1.1 | gap | I'd like ___ a table for four at eight o'clock, please. | "
+vp_both,B1.1,verb_patterns,B1.1,check,gap,read,,gap-points-b11-1.csv:49,"verb_patterns | B1.1 | gap | My parents love ___ in the mountains, so they go there every summer. | "
+vp_both,B1.1,verb_patterns,B1.1,check,gap,read,,gap-points-b11-1.csv:50,"verb_patterns | B1.1 | gap | House prices will probably continue ___ next year, so this is a good time to buy. | "
+vp_both,B1.1,verb_patterns,B1.1,learn,match,read,,gap-points-b11-1.csv:51,"verb_patterns | B1.1 | match | Match each beginning with its ending. | We left the beach early because it started = raining just after lunch. ; The baby on the plane woke up and began = to cry loudly. ; My grandmother is 85, but she still loves = working in her garden every day. ; When you're back, I'd love = to see the photos from your trip."
 vp_obj_to,B1.1,verb_patterns,B1.1,use,text,read,,more-1.csv:121,verb_patterns | B1.1 | text | Correct the mistake: I want that you come with me. | 
 vp_prep_ing,B1.1,verb_patterns,B1.1,check,order,read,,b1-new-3.csv:106,verb_patterns | B1.1 | order | Put the words in order. | after finishing work she went straight to the gym
 vp_prep_ing,B1.1,verb_patterns,B1.1,check,gap,read,,b1-new-3.csv:115,"verb_patterns | B1.1 | gap | Before ___ the house, check the windows. | "

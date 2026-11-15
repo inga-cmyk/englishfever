@@ -56,7 +56,8 @@ for f in files:
     imp = teacher.api("teacher/items-import", {"csv": csvtext, "confirm": True})
     total += imp["ok"]
 drafts = [x["id"] for x in teacher.api("teacher/items")["items"]["draft"]]
-teacher.api("teacher/items-status", {"ids": drafts, "status": "approved"})
+for k in range(0, len(drafts), 3000):   # the route takes at most 3000 ids per call (api.php)
+    teacher.api("teacher/items-status", {"ids": drafts[k:k + 3000], "status": "approved"})
 check("all drafts approved for grading (%d)" % total, len(drafts) == total, (len(drafts), total))
 r = subprocess.run(["php", os.path.join(APP, "tests", "grade_custom.php")], capture_output=True, text=True)
 check("every listed answer is graded as expected", r.returncode == 0, r.stdout[-900:])

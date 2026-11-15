@@ -6,12 +6,12 @@ AREAS_NEW = [("nouns", "Nouns and articles"), ("clauses", "Joining ideas"), ("qu
 SKILLS_NEW = [
     ("used_to", "Used to and be used to", "active", ["A2.2", "B1.1", "B1.2"]),
     ("articles", "Articles: a, an, the", "nouns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: no article (art_zero), prepared tasks only (teacher, 14 November)
-    ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.2", "B1.1"]),
+    ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.1", "A2.2", "B1.1"]),   # A2.1: a few / a little, countable and uncountable, prepared tasks only (teacher, 15 November, batch 5)
     ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["A2.2", "B1.1", "B1.2"]),
     ("time_clauses", "Time clauses (when, as soon as, until)", "clauses", ["A2.2", "B1.1", "B1.2"]),
     ("question_tags", "Question tags (isn't it? don't you?)", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("subject_object_q", "Subject and object questions", "questions", ["A2.2", "B1.1", "B1.2"]),
-    ("verb_patterns", "Verb patterns: -ing or to", "patterns", ["A2.2", "B1.1", "B1.2"]),
+    ("verb_patterns", "Verb patterns: -ing or to", "patterns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: like + -ing, want + to, prepared tasks only (teacher, 15 November, batch 5)
 ]
 
 ABBR_NEW = {"used_to": "ut", "articles": "art", "quantity": "qty", "relative_clauses": "rel", "time_clauses": "tcl", "question_tags": "qtg", "subject_object_q": "soq", "verb_patterns": "vpt"}
@@ -206,7 +206,7 @@ SKILLS_NEW.extend([
     ("causative", "Causative: have something done", "patterns", ["B1.1", "B1.2"]),
     ("two_objects", "Verbs with two objects (give me, tell her)", "patterns", ["A2.2", "B1.1"]),
     ("adj_ed_ing", "-ed or -ing adjectives (bored, boring)", "adjectives", ["A2.2", "B1.1"]),
-    ("adj_order", "Adjective order (a small old car)", "adjectives", ["B1.1", "B1.2"]),
+    ("adj_order", "Adjective order (a small old car)", "adjectives", ["A2.1", "B1.1", "B1.2"]),   # A2.1: adjective before the noun, after be, no plural, prepared tasks only (teacher, 15 November, batch 5)
     ("adverbs", "Adverbs: manner, frequency, degree", "adjectives", ["A2.2", "B1.1", "B1.2"]),
     ("so_such", "So and such", "adjectives", ["B1.1", "B1.2"]),
     ("indefinite_pronouns", "Someone, anything, nobody", "nouns", ["A2.2", "B1.1"]),
@@ -581,7 +581,7 @@ LV_CARDS.update({
 SKILLS_NEW.extend([
     ("conj_basic", "And, but, or, so, because", "clauses", ["A2.1", "A2.2"]),
     ("conj_linkers", "However, although, because of, then", "clauses", ["A2.2", "B1.1"]),
-    ("conj_clauses", "Contrast, purpose and reason (although, despite, so that)", "clauses", ["B1.1", "B1.2", "B2.1"]),
+    ("conj_clauses", "Contrast, purpose and reason (although, despite, so that)", "clauses", ["A2.2", "B1.1", "B1.2", "B2.1"]),   # A2.2: purpose with to and for, prepared tasks only (teacher, 15 November, batch 5)
 ])
 ABBR_NEW.update({"conj_basic": "cj1", "conj_linkers": "cj2", "conj_clauses": "cj3"})
 CARDS.update({

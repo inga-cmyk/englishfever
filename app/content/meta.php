@@ -5330,6 +5330,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Quantity: some, any, much, many, enough",
    "area": "nouns",
    "levels": [
+    "A2.1",
     "A2.2",
     "B1.1"
    ],
@@ -6270,6 +6271,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Verb patterns: -ing or to",
    "area": "patterns",
    "levels": [
+    "A2.1",
     "A2.2",
     "B1.1",
     "B1.2"
@@ -7354,6 +7356,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Adjective order (a small old car)",
    "area": "adjectives",
    "levels": [
+    "A2.1",
     "B1.1",
     "B1.2"
    ],
@@ -10361,6 +10364,7 @@ return json_decode(<<<'EF_JSON_END'
    "label": "Contrast, purpose and reason (although, despite, so that)",
    "area": "clauses",
    "levels": [
+    "A2.2",
     "B1.1",
     "B1.2",
     "B2.1"

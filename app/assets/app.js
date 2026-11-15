@@ -628,7 +628,9 @@
     return box;
   }
   /** Topics added lately (teacher, 3 November): a "New" group on the Topics page and a small label on their tiles for 45 days. */
-  var NEW_TOPICS = { conj_basic: '2026-11-02', conj_linkers: '2026-11-02', conj_clauses: '2026-11-02', conj_b2: '2026-11-02', unreal_time: '2026-11-04' };
+  // 15 November (teacher, option A): the New group shows the new grammar points (state.meta.new_points, each with its own card and
+  // practice of that point only) instead of these topics; the server sends a point only while it is new and has tasks
+  var NEW_TOPICS = {};
   function isNewTopic(id) { var d = NEW_TOPICS[id]; return !!d && (Date.now() - Date.parse(d)) < 45 * 86400000; }
 
   /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
@@ -1172,6 +1174,17 @@
       det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
       return det;
     }
+    function newPointsGroup() {   // the New group: one tile per new grammar point; a tile opens its card, whose button starts that point
+      var pts = state.meta.new_points || [];
+      if (!pts.length) return null;
+      var det = h('details', { class: 'picker-group', open: ('_new' in openMap) ? openMap._new : true },
+        h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(pts.length))),
+        h('div', { class: 'tilegrid' }, pts.map(function (p, i) {
+          return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, i));
+        })));
+      det.addEventListener('toggle', function () { openMap._new = det.open; });
+      return det;
+    }
     var timer = null;
     function redrawLater() { clearTimeout(timer); timer = setTimeout(redraw, 0); }
     function redraw() {
@@ -1187,7 +1200,7 @@
       }));
       holder.replaceChildren(
         h('div', { class: 'picker-group' }, levelRow),
-        h('div', { class: 'picker-group' }, h('div', null, [group({ id: '_new', label: 'New' })].concat(state.meta.areas.map(group)))),
+        h('div', { class: 'picker-group' }, h('div', null, [newPointsGroup()].concat(state.meta.areas.map(group)))),
         h('div', { class: 'picker-group' }, h('h3', null, 'Questions'),
           h('div', { class: 'seg', role: 'radiogroup', 'aria-label': 'Number of questions' }, [10, 15, 20].map(function (n) {
             return h('label', null, h('input', { type: 'radio', name: 'len', value: String(n), checked: n === length, onchange: function () { length = n; } }), h('span', null, String(n)));
@@ -2031,6 +2044,28 @@
       h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),   // no "New" label on the tile: the New group says it (teacher, 3 November)
       tileProgress(s));
   }
+  /** A new grammar point's tile (the New group): its level, its name and a "New" label. */
+  function pointTile(p, i) {
+    var a = lv(p.levels[0]), b = lv(p.levels[p.levels.length - 1]);
+    return h('span', { class: 'ttile' },
+      h('span', { class: 'ttile-art pat' + (i % 8) }, h('span', { class: 'ttile-lv' }, a === b ? a : a + '–' + b), h('span', { class: 'ttile-line' }, p.label)),
+      h('span', { class: 'ttile-nm' }, h('span', { class: 'pill new-pill' }, 'New'), ' ', p.label));
+  }
+  /** A new point's own card, with a button that practises only that point (source new_point). */
+  function pointModal(p) {
+    track('rule_card', 'point-' + p.id);
+    var go = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow')), errBox = h('div');
+    var m = UI.modal(h('div', null, h('h2', null, h('span', { class: 'pill new-pill' }, 'New'), ' ', p.label), ruleCard(p, state.user.lang === 'lv'), errBox,
+      h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, 'Close'))));
+    m.el.classList.add('modal-wide');
+    m.el.querySelector('#c').onclick = m.close;
+    go.onclick = function () {
+      go.disabled = true;
+      api('session/start', { mode: 'practice', point: p.id, skills: [p.skill], levels: p.levels, length: 10, source: 'new_point' }).then(function (r) {
+        m.close(); state.sess = newSess(r.session, r.item); location.hash = '#/session';
+      }).catch(function (e) { go.disabled = false; errBox.replaceChildren(h('div', { class: 'err', role: 'alert' }, e.message)); });
+    };
+  }
   /** The thin green line under a topic tile: progress in the topic; nothing for a topic not practised yet (teacher, 3 November). */
   function tileProgress(s) {
     var row = state.dash && state.dash.skills.find(function (k) { return k.id === s.id; });
@@ -2047,7 +2082,11 @@
       } });
     }
     var toggle = h('span', { class: 'langswitch' }, flagBtn('lv'), flagBtn('en'));
+    var pts = state.meta.new_points || [];
     show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards')), toggle),
+      pts.length ? h('div', { class: 'area-block' }, h('h2', null, 'New'), h('div', { class: 'tilegrid' }, pts.map(function (p, i) {   // the new grammar points first (teacher, 15 November)
+        return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, i));
+      }))) : null,
       state.meta.areas.map(function (a, i) {   // tiles by area; a tile opens its rule card
         var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
         if (!list.length) return null;

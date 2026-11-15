@@ -11277,7 +11277,1882 @@ return json_decode(<<<'EF_JSON_END'
   "irregular_plurals": [
    "IRR-PLURAL"
   ]
- }
+ },
+ "new_points": [
+  {
+   "id": "have_got",
+   "label": "Have got and have",
+   "skill": "aux_verbs",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "have",
+        "|| *I [[have got]] a car. She'[[s got]] two sisters.*"
+       ],
+       [
+        "negative",
+        "|| *I [[haven't got]] a car. = I [[don't have]] a car.*"
+       ],
+       [
+        "question",
+        "|| *[[Have]] you [[got]] a pen? = [[Do]] you [[have]] a pen?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[Do]] you have [[got]] a pen?",
+       "[[Have]] you [[got]] a pen?"
+      ],
+      [
+       "She [[have]] got a dog.",
+       "She [[has]] got a dog."
+      ],
+      [
+       "Have you got a bike? Yes, I [[have got]].",
+       "Have you got a bike? Yes, I [[have]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Short answers",
+       "ex": [
+        "Have you got a car? Yes, I [[have]]. / No, I [[haven't]].",
+        "Do you have a car? Yes, I [[do]]. / No, I [[don't]]."
+       ]
+      }
+     ],
+     "watch": [
+      "For owning, no *-ing*: *She [[has got]] blue eyes.* (not *is having*)"
+     ]
+    },
+    "watch": [
+     "For owning, no *-ing*: *She [[has got]] blue eyes.* (not *is having*)"
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "ir",
+        "|| *I [[have got]] a car. She'[[s got]] two sisters.*"
+       ],
+       [
+        "noliegums",
+        "|| *I [[haven't got]] a car. = I [[don't have]] a car.*"
+       ],
+       [
+        "jautājums",
+        "|| *[[Have]] you [[got]] a pen? = [[Do]] you [[have]] a pen?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[Do]] you have [[got]] a pen?",
+       "[[Have]] you [[got]] a pen?"
+      ],
+      [
+       "She [[have]] got a dog.",
+       "She [[has]] got a dog."
+      ],
+      [
+       "Have you got a bike? Yes, I [[have got]].",
+       "Have you got a bike? Yes, I [[have]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Īsās atbildes",
+       "ex": [
+        "Have you got a car? Yes, I [[have]]. / No, I [[haven't]].",
+        "Do you have a car? Yes, I [[do]]. / No, I [[don't]]."
+       ]
+      }
+     ],
+     "watch": [
+      "Piederībai nelieto *-ing*: *She [[has got]] blue eyes.* (nevis *is having*)"
+     ]
+    },
+    "watch": [
+     "Piederībai nelieto *-ing*: *She [[has got]] blue eyes.* (nevis *is having*)"
+    ]
+   }
+  },
+  {
+   "id": "shall",
+   "label": "Shall I …? Shall we …?",
+   "skill": "future",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "an offer",
+        "|| *[[Shall]] I open the window?*"
+       ],
+       [
+        "a suggestion",
+        "|| *[[Shall]] we go for a coffee?*"
+       ],
+       [
+        "a question word",
+        "|| *What [[shall]] we do tonight?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[Will]] I carry your bag? (an offer)",
+       "[[Shall]] I carry your bag?"
+      ],
+      [
+       "Shall we [[to go]]?",
+       "Shall we [[go]]?"
+      ],
+      [
+       "What [[we shall]] do?",
+       "What [[shall we]] do?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Answers",
+       "ex": [
+        "Shall I help you? Yes, please. / No, thanks, I'm fine.",
+        "Shall we eat out? Good idea!"
+       ]
+      }
+     ],
+     "watch": [
+      "*shall* only with *I* and *we*, and the base verb after it."
+     ]
+    },
+    "watch": [
+     "*shall* only with *I* and *we*, and the base verb after it."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "piedāvājums",
+        "|| *[[Shall]] I open the window?*"
+       ],
+       [
+        "ierosinājums",
+        "|| *[[Shall]] we go for a coffee?*"
+       ],
+       [
+        "jautājamais vārds",
+        "|| *What [[shall]] we do tonight?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[Will]] I carry your bag? (piedāvājot)",
+       "[[Shall]] I carry your bag?"
+      ],
+      [
+       "Shall we [[to go]]?",
+       "Shall we [[go]]?"
+      ],
+      [
+       "What [[we shall]] do?",
+       "What [[shall we]] do?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Atbildes",
+       "ex": [
+        "Shall I help you? Yes, please. / No, thanks, I'm fine.",
+        "Shall we eat out? Good idea!"
+       ]
+      }
+     ],
+     "watch": [
+      "*shall* tikai ar *I* un *we*, un aiz tā pamatforma."
+     ]
+    },
+    "watch": [
+     "*shall* tikai ar *I* un *we*, un aiz tā pamatforma."
+    ]
+   }
+  },
+  {
+   "id": "art_zero",
+   "label": "No article: I like cats. He lives in Riga.",
+   "skill": "articles",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "things in general",
+        "|| *I like [[cats]]. She drinks [[tea]].*"
+       ],
+       [
+        "names",
+        "|| *He lives in [[Riga]]. [[Anna]] is from [[Latvia]].*"
+       ],
+       [
+        "sports, subjects",
+        "|| *We play [[golf]]. She teaches [[maths]].*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I like [[the]] cats. (all cats)",
+       "I like [[cats]]."
+      ],
+      [
+       "He lives in [[the]] Riga.",
+       "He lives in [[Riga]]."
+      ],
+      [
+       "She drinks [[the]] tea every morning.",
+       "She drinks [[tea]] every morning."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*the* = these ones, the ones we know",
+       "ex": [
+        "[[Cats]] are clever. (all cats)",
+        "[[The]] cats next door are noisy. (these cats)"
+       ]
+      }
+     ],
+     "watch": [
+      "Most countries have no article; *[[the]] UK, [[the]] USA* have one."
+     ]
+    },
+    "watch": [
+     "Most countries have no article; *[[the]] UK, [[the]] USA* have one."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "vispārīgi",
+        "|| *I like [[cats]]. She drinks [[tea]].*"
+       ],
+       [
+        "īpašvārdi",
+        "|| *He lives in [[Riga]]. [[Anna]] is from [[Latvia]].*"
+       ],
+       [
+        "sports, mācības",
+        "|| *We play [[golf]]. She teaches [[maths]].*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I like [[the]] cats. (visi kaķi)",
+       "I like [[cats]]."
+      ],
+      [
+       "He lives in [[the]] Riga.",
+       "He lives in [[Riga]]."
+      ],
+      [
+       "She drinks [[the]] tea every morning.",
+       "She drinks [[tea]] every morning."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*the* = tieši šie, zināmie",
+       "ex": [
+        "[[Cats]] are clever. (visi kaķi)",
+        "[[The]] cats next door are noisy. (tieši šie kaķi)"
+       ]
+      }
+     ],
+     "watch": [
+      "Vairumam valstu artikula nav; *[[the]] UK, [[the]] USA* ir izņēmumi."
+     ]
+    },
+    "watch": [
+     "Vairumam valstu artikula nav; *[[the]] UK, [[the]] USA* ir izņēmumi."
+    ]
+   }
+  },
+  {
+   "id": "no_longer",
+   "label": "No longer, any more, any longer",
+   "skill": "used_to",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "no longer",
+        "|| *I [[no longer]] smoke. She's [[no longer]] my boss.*"
+       ],
+       [
+        "not … any more",
+        "|| *I don't smoke [[any more]].*"
+       ],
+       [
+        "not … any longer",
+        "|| *I don't smoke [[any longer]].*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I don't smoke [[no more]].",
+       "I don't smoke [[any more]]."
+      ],
+      [
+       "I [[no longer don't]] work there.",
+       "I [[no longer]] work there."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Where it goes",
+       "ex": [
+        "*no longer*: before the verb, after *be*: He [[no longer]] lives here. He's [[no longer]] here.",
+        "*any more / any longer*: at the end: He doesn't live here [[any more]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*anymore* (one word) is common too, especially in American English."
+     ]
+    },
+    "watch": [
+     "*anymore* (one word) is common too, especially in American English."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "no longer",
+        "|| *I [[no longer]] smoke. She's [[no longer]] my boss.*"
+       ],
+       [
+        "not … any more",
+        "|| *I don't smoke [[any more]].*"
+       ],
+       [
+        "not … any longer",
+        "|| *I don't smoke [[any longer]].*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I don't smoke [[no more]].",
+       "I don't smoke [[any more]].",
+       "Tulkojot burtiski \"vairs nesmēķēju\", gribas divus noliegumus."
+      ],
+      [
+       "I [[no longer don't]] work there.",
+       "I [[no longer]] work there."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Kur to liek",
+       "ex": [
+        "*no longer*: pirms darbības vārda, aiz *be*: He [[no longer]] lives here. He's [[no longer]] here.",
+        "*any more / any longer*: beigās: He doesn't live here [[any more]]."
+       ]
+      }
+     ],
+     "watch": [
+      "Bieži raksta arī *anymore* (vienā vārdā), īpaši amerikāņu angļu valodā."
+     ]
+    },
+    "watch": [
+     "Bieži raksta arī *anymore* (vienā vārdā), īpaši amerikāņu angļu valodā."
+    ]
+   }
+  },
+  {
+   "id": "requests",
+   "label": "Could you …? Can I …? May I …?",
+   "skill": "modal_verbs",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "you do it",
+        "|| *[[Can]] / [[Could]] / [[Would]] you help me?*"
+       ],
+       [
+        "I do it",
+        "|| *[[Can]] / [[Could]] / [[May]] I sit here?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "Could you [[to help]] me?",
+       "Could you [[help]] me?"
+      ],
+      [
+       "[[May you]] help me?",
+       "[[Could you]] help me?"
+      ],
+      [
+       "Can you [[borrow]] me your pen?",
+       "Can you [[lend]] me your pen?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Answers",
+       "ex": [
+        "Could you help me? [[Sure.]] / [[Of course.]]",
+        "Can I sit here? Yes, [[go ahead]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*Could* and *May* sound more polite than *Can*."
+     ]
+    },
+    "watch": [
+     "*Could* and *May* sound more polite than *Can*."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "to dara otrs",
+        "|| *[[Can]] / [[Could]] / [[Would]] you help me?*"
+       ],
+       [
+        "to daru es",
+        "|| *[[Can]] / [[Could]] / [[May]] I sit here?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "Could you [[to help]] me?",
+       "Could you [[help]] me?"
+      ],
+      [
+       "[[May you]] help me?",
+       "[[Could you]] help me?"
+      ],
+      [
+       "Can you [[borrow]] me your pen?",
+       "Can you [[lend]] me your pen?",
+       "Latviski \"aizņemties\" un \"aizdot\" ir divi vārdi, angliski arī: *borrow* (paņemt), *lend* (iedot)."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Atbildes",
+       "ex": [
+        "Could you help me? [[Sure.]] / [[Of course.]]",
+        "Can I sit here? Yes, [[go ahead]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*Could* un *May* izklausās pieklājīgāk nekā *Can*."
+     ]
+    },
+    "watch": [
+     "*Could* un *May* izklausās pieklājīgāk nekā *Can*."
+    ]
+   }
+  },
+  {
+   "id": "vp_ing_subject",
+   "label": "-ing at the start: Swimming is good for you",
+   "skill": "verb_patterns",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "-ing + verb",
+        "|| *[[Swimming]] is good for you.*"
+       ],
+       [
+        "-ing + more words",
+        "|| *[[Learning]] a language takes time.*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[Swim]] is good for you.",
+       "[[Swimming]] is good for you."
+      ],
+      [
+       "[[Learn]] a language takes time.",
+       "[[Learning]] a language takes time."
+      ],
+      [
+       "Watching old films [[are]] fun.",
+       "Watching old films [[is]] fun."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "One activity: *is*",
+       "ex": [
+        "Cooking for friends [[relaxes]] me.",
+        "[[Smoking]] is not allowed here."
+       ]
+      }
+     ],
+     "watch": [
+      "*[[To learn]] a language takes time* is correct too, but formal; *It takes time [[to learn]] a language* is also common."
+     ]
+    },
+    "watch": [
+     "*[[To learn]] a language takes time* is correct too, but formal; *It takes time [[to learn]] a language* is also common."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "-ing + darbības vārds",
+        "|| *[[Swimming]] is good for you.*"
+       ],
+       [
+        "-ing + vēl vārdi",
+        "|| *[[Learning]] a language takes time.*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[Swim]] is good for you.",
+       "[[Swimming]] is good for you.",
+       "Latviski \"peldēt ir veselīgi\": nenoteiksme, tāpēc gribas *Swim*."
+      ],
+      [
+       "[[Learn]] a language takes time.",
+       "[[Learning]] a language takes time."
+      ],
+      [
+       "Watching old films [[are]] fun.",
+       "Watching old films [[is]] fun."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Viena darbība: *is*",
+       "ex": [
+        "Cooking for friends [[relaxes]] me.",
+        "[[Smoking]] is not allowed here."
+       ]
+      }
+     ],
+     "watch": [
+      "*[[To learn]] a language takes time* arī ir pareizi, bet oficiālāk; bieži saka arī *It takes time [[to learn]] a language*."
+     ]
+    },
+    "watch": [
+     "*[[To learn]] a language takes time* arī ir pareizi, bet oficiālāk; bieži saka arī *It takes time [[to learn]] a language*."
+    ]
+   }
+  },
+  {
+   "id": "vp_go_ing",
+   "label": "Go swimming, go for a walk, go to the gym",
+   "skill": "verb_patterns",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "go + -ing",
+        "|| *go [[shopping]], go [[swimming]], go [[skiing]]*"
+       ],
+       [
+        "go for a …",
+        "|| *go [[for]] a walk, a run, a coffee*"
+       ],
+       [
+        "go to / on",
+        "|| *go [[to]] the gym, go [[to]] work, go [[on]] holiday*"
+       ],
+       [
+        "go home",
+        "|| *go [[home]]* (no *to*)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "Let's go [[to shopping]].",
+       "Let's go [[shopping]]."
+      ],
+      [
+       "I'm going [[to home]].",
+       "I'm going [[home]]."
+      ],
+      [
+       "We went [[for swimming]].",
+       "We went [[swimming]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Often both are possible",
+       "ex": [
+        "go [[swimming]] = go [[for]] a swim",
+        "go [[running]] = go [[for]] a run"
+       ]
+      }
+     ],
+     "watch": [
+      "*[[go]] on* + *-ing* means *continue*: *Go on [[reading]].*"
+     ]
+    },
+    "watch": [
+     "*[[go]] on* + *-ing* means *continue*: *Go on [[reading]].*"
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "go + -ing",
+        "|| *go [[shopping]], go [[swimming]], go [[skiing]]*"
+       ],
+       [
+        "go for a …",
+        "|| *go [[for]] a walk, a run, a coffee*"
+       ],
+       [
+        "go to / on",
+        "|| *go [[to]] the gym, go [[to]] work, go [[on]] holiday*"
+       ],
+       [
+        "go home",
+        "|| *go [[home]]* (bez *to*)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "Let's go [[to shopping]].",
+       "Let's go [[shopping]]."
+      ],
+      [
+       "I'm going [[to home]].",
+       "I'm going [[home]].",
+       "Latviski \"iet uz mājām\", tāpēc gribas *to*."
+      ],
+      [
+       "We went [[for swimming]].",
+       "We went [[swimming]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Bieži der abi",
+       "ex": [
+        "go [[swimming]] = go [[for]] a swim",
+        "go [[running]] = go [[for]] a run"
+       ]
+      }
+     ],
+     "watch": [
+      "*[[go]] on* + *-ing* nozīmē *turpināt*: *Go on [[reading]].*"
+     ]
+    },
+    "watch": [
+     "*[[go]] on* + *-ing* nozīmē *turpināt*: *Go on [[reading]].*"
+    ]
+   }
+  },
+  {
+   "id": "if_when",
+   "label": "If or when",
+   "skill": "cond_first",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "if = maybe",
+        "|| *[[If]] I see her, I'll tell her.* (I'm not sure I'll see her.)"
+       ],
+       [
+        "when = sure",
+        "|| *[[When]] I see her, I'll tell her.* (I'll see her.)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[When]] it rains tomorrow, we'll stay in. (not sure)",
+       "[[If]] it rains tomorrow, we'll stay in."
+      ],
+      [
+       "When I [[will arrive]], I'll call you.",
+       "When I [[arrive]], I'll call you."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The first sentence decides",
+       "ex": [
+        "My train gets in at six. [[When]] I arrive, I'll call you.",
+        "My brother might visit. [[If]] he comes, we'll go out."
+       ]
+      }
+     ],
+     "watch": [
+      "After *if* and *when*: present simple, not *will*."
+     ]
+    },
+    "watch": [
+     "After *if* and *when*: present simple, not *will*."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "if = varbūt",
+        "|| *[[If]] I see her, I'll tell her.* (Nezinu, vai satikšu.)"
+       ],
+       [
+        "when = noteikti",
+        "|| *[[When]] I see her, I'll tell her.* (Noteikti satikšu.)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "[[When]] it rains tomorrow, we'll stay in. (nav droši)",
+       "[[If]] it rains tomorrow, we'll stay in.",
+       "Latviski abos gadījumos var teikt \"kad\", tāpēc angliski jāizšķir: droši vai nē."
+      ],
+      [
+       "When I [[will arrive]], I'll call you.",
+       "When I [[arrive]], I'll call you."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Izšķir pirmais teikums",
+       "ex": [
+        "My train gets in at six. [[When]] I arrive, I'll call you.",
+        "My brother might visit. [[If]] he comes, we'll go out."
+       ]
+      }
+     ],
+     "watch": [
+      "Aiz *if* un *when*: Present Simple, nevis *will*."
+     ]
+    },
+    "watch": [
+     "Aiz *if* un *when*: Present Simple, nevis *will*."
+    ]
+   }
+  },
+  {
+   "id": "vp_both",
+   "label": "Like, start, continue + -ing or to",
+   "skill": "verb_patterns",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "both are right",
+        "|| *I like [[swimming]]. = I like [[to swim]].*"
+       ],
+       [
+        "the same verbs",
+        "|| *love, hate, prefer, start, begin, continue*"
+       ],
+       [
+        "would like",
+        "|| *I'd like [[to go]].* (only *to*)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I like [[work]] with him.",
+       "I like [[working]] with him."
+      ],
+      [
+       "I'd like [[going]] home.",
+       "I'd like [[to go]] home."
+      ],
+      [
+       "She started [[learn]] Spanish.",
+       "She started [[learning]] Spanish."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Both right",
+       "ex": [
+        "It started [[raining]]. = It started [[to rain]].",
+        "We continued [[working]]. = We continued [[to work]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*stop, remember, forget, try* change their meaning with *-ing* or *to*."
+     ]
+    },
+    "watch": [
+     "*stop, remember, forget, try* change their meaning with *-ing* or *to*."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "der abi",
+        "|| *I like [[swimming]]. = I like [[to swim]].*"
+       ],
+       [
+        "tie paši darbības vārdi",
+        "|| *love, hate, prefer, start, begin, continue*"
+       ],
+       [
+        "would like",
+        "|| *I'd like [[to go]].* (tikai *to*)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I like [[work]] with him.",
+       "I like [[working]] with him."
+      ],
+      [
+       "I'd like [[going]] home.",
+       "I'd like [[to go]] home."
+      ],
+      [
+       "She started [[learn]] Spanish.",
+       "She started [[learning]] Spanish.",
+       "Tulkojot burtiski \"sāka mācīties\", gribas pamatformu bez *to* vai *-ing*."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Der abi",
+       "ex": [
+        "It started [[raining]]. = It started [[to rain]].",
+        "We continued [[working]]. = We continued [[to work]]."
+       ]
+      }
+     ],
+     "watch": [
+      "*stop, remember, forget, try* ar *-ing* vai *to* maina nozīmi."
+     ]
+    },
+    "watch": [
+     "*stop, remember, forget, try* ar *-ing* vai *to* maina nozīmi."
+    ]
+   }
+  },
+  {
+   "id": "no_none",
+   "label": "No, none, not any",
+   "skill": "quantity",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "no + noun",
+        "|| *There's [[no]] milk.*"
+       ],
+       [
+        "not any + noun",
+        "|| *There isn't [[any]] milk.*"
+       ],
+       [
+        "none (alone, of)",
+        "|| *How many came? [[None]]. [[None of]] my friends came.*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "There isn't [[no]] milk.",
+       "There isn't [[any]] milk."
+      ],
+      [
+       "[[None]] people came.",
+       "[[No]] people came."
+      ],
+      [
+       "[[No of]] them came.",
+       "[[None of]] them came."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Only one negative",
+       "ex": [
+        "I have [[nothing]] to wear. = I don't have [[anything]] to wear.",
+        "✗ I don't have [[nothing]] to wear."
+       ]
+      }
+     ],
+     "watch": [
+      "*None of* + plural can take a singular or a plural verb: *None of them [[has]] / [[have]] a car.*"
+     ]
+    },
+    "watch": [
+     "*None of* + plural can take a singular or a plural verb: *None of them [[has]] / [[have]] a car.*"
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "no + lietvārds",
+        "|| *There's [[no]] milk.*"
+       ],
+       [
+        "not any + lietvārds",
+        "|| *There isn't [[any]] milk.*"
+       ],
+       [
+        "none (viens, of)",
+        "|| *How many came? [[None]]. [[None of]] my friends came.*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "There isn't [[no]] milk.",
+       "There isn't [[any]] milk.",
+       "Latviski \"nav nekāda piena\": divi noliegumi, angliski tikai viens."
+      ],
+      [
+       "[[None]] people came.",
+       "[[No]] people came."
+      ],
+      [
+       "[[No of]] them came.",
+       "[[None of]] them came."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Tikai viens noliegums",
+       "ex": [
+        "I have [[nothing]] to wear. = I don't have [[anything]] to wear.",
+        "✗ I don't have [[nothing]] to wear."
+       ]
+      }
+     ],
+     "watch": [
+      "Aiz *none of* + daudzskaitlis der gan vienskaitlis, gan daudzskaitlis: *None of them [[has]] / [[have]] a car.*"
+     ]
+    },
+    "watch": [
+     "Aiz *none of* + daudzskaitlis der gan vienskaitlis, gan daudzskaitlis: *None of them [[has]] / [[have]] a car.*"
+    ]
+   }
+  },
+  {
+   "id": "must_vs_have_to",
+   "label": "Must or have to",
+   "skill": "modal_verbs",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "now",
+        "|| *I [[must]] / [[have to]] go.* (both are possible)"
+       ],
+       [
+        "past",
+        "|| *I [[had to]] go.*"
+       ],
+       [
+        "future",
+        "|| *I'll [[have to]] go. We [[might have to]] wait.*"
+       ],
+       [
+        "question",
+        "|| *[[Do]] I [[have to]] sign here?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I [[must]] work late yesterday.",
+       "I [[had to]] work late yesterday."
+      ],
+      [
+       "We [[will must]] leave early.",
+       "We [[will have to]] leave early."
+      ],
+      [
+       "She [[hasn't to]] work today.",
+       "She [[doesn't have to]] work today."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*mustn't* and *don't have to* are different",
+       "ex": [
+        "You [[mustn't]] park here. (not allowed)",
+        "You [[don't have to]] pay. (not necessary)"
+       ]
+      }
+     ],
+     "watch": [
+      "In British English *must* often shows the speaker's own feeling, *have to* a rule; very often both are possible."
+     ]
+    },
+    "watch": [
+     "In British English *must* often shows the speaker's own feeling, *have to* a rule; very often both are possible."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "tagad",
+        "|| *I [[must]] / [[have to]] go.* (der abi)"
+       ],
+       [
+        "pagātne",
+        "|| *I [[had to]] go.*"
+       ],
+       [
+        "nākotne",
+        "|| *I'll [[have to]] go. We [[might have to]] wait.*"
+       ],
+       [
+        "jautājums",
+        "|| *[[Do]] I [[have to]] sign here?*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I [[must]] work late yesterday.",
+       "I [[had to]] work late yesterday."
+      ],
+      [
+       "We [[will must]] leave early.",
+       "We [[will have to]] leave early."
+      ],
+      [
+       "She [[hasn't to]] work today.",
+       "She [[doesn't have to]] work today."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*mustn't* un *don't have to* nozīmē dažādas lietas",
+       "ex": [
+        "You [[mustn't]] park here. (nedrīkst)",
+        "You [[don't have to]] pay. (nav vajadzīgs)"
+       ]
+      }
+     ],
+     "watch": [
+      "Britu angļu valodā *must* bieži izsaka paša runātāja sajūtu, *have to* noteikumu; ļoti bieži der abi."
+     ]
+    },
+    "watch": [
+     "Britu angļu valodā *must* bieži izsaka paša runātāja sajūtu, *have to* noteikumu; ļoti bieži der abi."
+    ]
+   }
+  },
+  {
+   "id": "pc_always",
+   "label": "He's always losing his keys!",
+   "skill": "present_continuous",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "now",
+        "|| *He'[[s always losing]] his keys!*"
+       ],
+       [
+        "past",
+        "|| *She [[was always complaining]].*"
+       ],
+       [
+        "also",
+        "|| *constantly, forever*: *They're [[constantly arguing]].*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "He [[always is]] losing his keys.",
+       "He [[is always]] losing his keys."
+      ],
+      [
+       "She's always [[lose]] her keys.",
+       "She's always [[losing]] her keys."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "It happens too often, and it annoys me",
+       "ex": [
+        "My flatmate [[is always borrowing]] my charger. (and it drives me mad)",
+        "My flatmate [[always borrows]] my charger. (correct too, but neutral)"
+       ]
+      }
+     ],
+     "watch": [
+      "*always* goes between *is / was* and the verb-*ing*."
+     ]
+    },
+    "watch": [
+     "*always* goes between *is / was* and the verb-*ing*."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "tagad",
+        "|| *He'[[s always losing]] his keys!*"
+       ],
+       [
+        "pagātne",
+        "|| *She [[was always complaining]].*"
+       ],
+       [
+        "arī",
+        "|| *constantly, forever*: *They're [[constantly arguing]].*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "He [[always is]] losing his keys.",
+       "He [[is always]] losing his keys."
+      ],
+      [
+       "She's always [[lose]] her keys.",
+       "She's always [[losing]] her keys."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Tas notiek pārāk bieži, un tas mani kaitina",
+       "ex": [
+        "My flatmate [[is always borrowing]] my charger. (un tas mani kaitina)",
+        "My flatmate [[always borrows]] my charger. (arī pareizi, bet neitrāli)"
+       ]
+      }
+     ],
+     "watch": [
+      "*always* liek starp *is / was* un darbības vārdu ar *-ing*."
+     ]
+    },
+    "watch": [
+     "*always* liek starp *is / was* un darbības vārdu ar *-ing*."
+    ]
+   }
+  },
+  {
+   "id": "would_habit",
+   "label": "Would for past habits",
+   "skill": "used_to",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "a repeated action",
+        "|| *Every summer we [[would go]] to the lake.*"
+       ],
+       [
+        "a state",
+        "|| *I [[used to have]] a dog.* (not *would have*)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I [[would have]] a dog when I was a child.",
+       "I [[used to have]] a dog when I was a child."
+      ],
+      [
+       "We [[would lived]] in Riga.",
+       "We [[used to live]] in Riga."
+      ],
+      [
+       "Last summer we [[would go]] to Rome. (once)",
+       "Last summer we [[went]] to Rome."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "For actions, all three are right",
+       "ex": [
+        "We [[would play]] outside. = We [[used to play]] outside. = We [[played]] outside every day."
+       ]
+      }
+     ],
+     "watch": [
+      "Not with *have, be, live, know, like* (states): use *used to* or the past simple."
+     ]
+    },
+    "watch": [
+     "Not with *have, be, live, know, like* (states): use *used to* or the past simple."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "atkārtota darbība",
+        "|| *Every summer we [[would go]] to the lake.*"
+       ],
+       [
+        "stāvoklis",
+        "|| *I [[used to have]] a dog.* (nevis *would have*)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "I [[would have]] a dog when I was a child.",
+       "I [[used to have]] a dog when I was a child."
+      ],
+      [
+       "We [[would lived]] in Riga.",
+       "We [[used to live]] in Riga."
+      ],
+      [
+       "Last summer we [[would go]] to Rome. (vienreiz)",
+       "Last summer we [[went]] to Rome."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Darbībām der visi trīs",
+       "ex": [
+        "We [[would play]] outside. = We [[used to play]] outside. = We [[played]] outside every day."
+       ]
+      }
+     ],
+     "watch": [
+      "Nelieto ar *have, be, live, know, like* (stāvokļi): lieto *used to* vai Past Simple."
+     ]
+    },
+    "watch": [
+     "Nelieto ar *have, be, live, know, like* (stāvokļi): lieto *used to* vai Past Simple."
+    ]
+   }
+  },
+  {
+   "id": "should_have",
+   "label": "Should have, could have done",
+   "skill": "more_modals",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "should have + 3rd form",
+        "|| *You [[should have told]] me.* (you didn't, and it was wrong)"
+       ],
+       [
+        "shouldn't have + 3rd form",
+        "|| *You [[shouldn't have shouted]].* (you did, and it was wrong)"
+       ],
+       [
+        "could have + 3rd form",
+        "|| *We [[could have won]].* (it was possible, but it didn't happen)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "You [[should told]] me.",
+       "You [[should have told]] me."
+      ],
+      [
+       "You should have [[tell]] me.",
+       "You should have [[told]] me."
+      ],
+      [
+       "You should [[of]] told me.",
+       "You should [[have]] told me."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "*could have* can criticise too",
+       "ex": [
+        "You [[could have called]] me! (Why didn't you?)"
+       ]
+      }
+     ],
+     "watch": [
+      "We say *should've*, but we write *should have*."
+     ]
+    },
+    "watch": [
+     "We say *should've*, but we write *should have*."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "should have + 3. forma",
+        "|| *You [[should have told]] me.* (tu to neizdarīji, un tas bija nepareizi)"
+       ],
+       [
+        "shouldn't have + 3. forma",
+        "|| *You [[shouldn't have shouted]].* (tu to izdarīji, un tas bija nepareizi)"
+       ],
+       [
+        "could have + 3. forma",
+        "|| *We [[could have won]].* (tas bija iespējams, bet nenotika)"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "You [[should told]] me.",
+       "You [[should have told]] me.",
+       "Tulkojot burtiski \"vajadzēja pateikt\", gribas *should told*; pagātni rāda *have* + 3. forma."
+      ],
+      [
+       "You should have [[tell]] me.",
+       "You should have [[told]] me."
+      ],
+      [
+       "You should [[of]] told me.",
+       "You should [[have]] told me."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Ar *could have* arī var pārmest",
+       "ex": [
+        "You [[could have called]] me! (Kāpēc nepiezvanīji?)"
+       ]
+      }
+     ],
+     "watch": [
+      "Runā saka *should've*, bet raksta *should have*."
+     ]
+    },
+    "watch": [
+     "Runā saka *should've*, bet raksta *should have*."
+    ]
+   }
+  },
+  {
+   "id": "each_every",
+   "label": "Each, every, all, whole",
+   "skill": "agreement",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "each / every + one",
+        "|| *Every room [[has]] a balcony. Each student [[gets]] a book.*"
+       ],
+       [
+        "each of + the / my",
+        "|| *Each of the flats [[has]] a garden.* (not *every of*)"
+       ],
+       [
+        "all day / every day",
+        "|| *all day* = the whole day; *every day* = each day"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "Every [[students have]] a locker.",
+       "Every [[student has]] a locker."
+      ],
+      [
+       "[[Every of]] them came.",
+       "[[Each of]] them came."
+      ],
+      [
+       "my [[all]] life",
+       "my [[whole]] life"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Two things: *each*",
+       "ex": [
+        "She had a bag in [[each]] hand.",
+        "[[Almost every]] colleague works from home. (not *almost each*)"
+       ]
+      }
+     ],
+     "watch": [
+      "*the whole day = all day = all (of) the day*; *the whole book = all (of) the book*."
+     ]
+    },
+    "watch": [
+     "*the whole day = all day = all (of) the day*; *the whole book = all (of) the book*."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "each / every + viens",
+        "|| *Every room [[has]] a balcony. Each student [[gets]] a book.*"
+       ],
+       [
+        "each of + the / my",
+        "|| *Each of the flats [[has]] a garden.* (nevis *every of*)"
+       ],
+       [
+        "all day / every day",
+        "|| *all day* = visu dienu; *every day* = katru dienu"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "Every [[students have]] a locker.",
+       "Every [[student has]] a locker."
+      ],
+      [
+       "[[Every of]] them came.",
+       "[[Each of]] them came.",
+       "Tulkojot burtiski \"katrs no viņiem\", gribas *every of*."
+      ],
+      [
+       "my [[all]] life",
+       "my [[whole]] life"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Divas lietas: *each*",
+       "ex": [
+        "She had a bag in [[each]] hand.",
+        "[[Almost every]] colleague works from home. (nevis *almost each*)"
+       ]
+      }
+     ],
+     "watch": [
+      "*the whole day = all day = all (of) the day*; *the whole book = all (of) the book*."
+     ]
+    },
+    "watch": [
+     "*the whole day = all day = all (of) the day*; *the whole book = all (of) the book*."
+    ]
+   }
+  },
+  {
+   "id": "rel_what",
+   "label": "What = the thing that",
+   "skill": "relative_clauses",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "what (no noun before it)",
+        "|| *I didn't hear [[what]] he said. [[What]] I need is a holiday.*"
+       ],
+       [
+        "noun / everything + that",
+        "|| *Everything [[that]] he said was true. The book [[that]] I bought …*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "The book [[what]] I bought is great.",
+       "The book [[that]] I bought is great."
+      ],
+      [
+       "Everything [[what]] he said was true.",
+       "Everything [[that]] he said was true."
+      ],
+      [
+       "I didn't hear [[that]] he said.",
+       "I didn't hear [[what]] he said."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "After a noun, *that* can be left out",
+       "ex": [
+        "Everything ([[that]]) he said was true.",
+        "The book ([[that]]) I bought is great."
+       ]
+      }
+     ],
+     "watch": [
+      "*That's [[what]] I mean.* (not *That's that I mean*)"
+     ]
+    },
+    "watch": [
+     "*That's [[what]] I mean.* (not *That's that I mean*)"
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "what (pirms tā nav lietvārda)",
+        "|| *I didn't hear [[what]] he said. [[What]] I need is a holiday.*"
+       ],
+       [
+        "lietvārds / everything + that",
+        "|| *Everything [[that]] he said was true. The book [[that]] I bought …*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "The book [[what]] I bought is great.",
+       "The book [[that]] I bought is great.",
+       "Latviski \"grāmata, ko es nopirku\": \"ko\", tulkojot burtiski, kļūst par *what*."
+      ],
+      [
+       "Everything [[what]] he said was true.",
+       "Everything [[that]] he said was true.",
+       "Tulkojot burtiski \"viss, ko viņš teica\", gribas *what*."
+      ],
+      [
+       "I didn't hear [[that]] he said.",
+       "I didn't hear [[what]] he said."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Aiz lietvārda *that* var izlaist",
+       "ex": [
+        "Everything ([[that]]) he said was true.",
+        "The book ([[that]]) I bought is great."
+       ]
+      }
+     ],
+     "watch": [
+      "*That's [[what]] I mean.* (nevis *That's that I mean*)"
+     ]
+    },
+    "watch": [
+     "*That's [[what]] I mean.* (nevis *That's that I mean*)"
+    ]
+   }
+  },
+  {
+   "id": "wont_refuse",
+   "label": "Won't: the door won't open",
+   "skill": "future",
+   "since": "2026-11-15",
+   "days": 45,
+   "rule": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Example"
+      ],
+      "rows": [
+       [
+        "now",
+        "|| *My laptop [[won't]] switch on. He [[won't]] listen.*"
+       ],
+       [
+        "past",
+        "|| *The car [[wouldn't]] start this morning.*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "The door [[won't to]] open.",
+       "The door [[won't]] open."
+      ],
+      [
+       "My laptop [[doesn't want to]] switch on.",
+       "My laptop [[won't]] switch on."
+      ],
+      [
+       "Yesterday the car [[won't]] start.",
+       "Yesterday the car [[wouldn't]] start."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "A person or a thing refuses",
+       "ex": [
+        "The baby [[won't]] eat her soup.",
+        "My friend [[wouldn't]] let me pay."
+       ]
+      }
+     ],
+     "watch": [
+      "*The car doesn't start* is correct too: it only says what happens."
+     ]
+    },
+    "watch": [
+     "*The car doesn't start* is correct too: it only says what happens."
+    ]
+   },
+   "rule_lv": {
+    "v2": {
+     "choice": {
+      "cols": [
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "tagad",
+        "|| *My laptop [[won't]] switch on. He [[won't]] listen.*"
+       ],
+       [
+        "pagātne",
+        "|| *The car [[wouldn't]] start this morning.*"
+       ]
+      ],
+      "stack": "rows"
+     },
+     "mistakes": [
+      [
+       "The door [[won't to]] open.",
+       "The door [[won't]] open."
+      ],
+      [
+       "My laptop [[doesn't want to]] switch on.",
+       "My laptop [[won't]] switch on.",
+       "Tulkojot burtiski \"negrib ieslēgties\", gribas *doesn't want to*."
+      ],
+      [
+       "Yesterday the car [[won't]] start.",
+       "Yesterday the car [[wouldn't]] start."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Cilvēks vai lieta atsakās",
+       "ex": [
+        "The baby [[won't]] eat her soup.",
+        "My friend [[wouldn't]] let me pay."
+       ]
+      }
+     ],
+     "watch": [
+      "*The car doesn't start* arī ir pareizi: tas tikai saka, kas notiek."
+     ]
+    },
+    "watch": [
+     "*The car doesn't start* arī ir pareizi: tas tikai saka, kas notiek."
+    ]
+   }
+  }
+ ]
 }
 EF_JSON_END
 , true);

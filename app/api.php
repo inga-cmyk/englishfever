@@ -141,7 +141,7 @@ try {
             if (!empty($in['recommended']) && in_array($in['source'] ?? '', ['path', 'path_check'], true) && ($rv = Path::reviewPlan((int) $u['id']))) {
                 $in = ['mode' => 'practice', 'skills' => $rv['topics'], 'levels' => $rv['levels'], 'length' => 10, 'source' => 'path_review'];
             }
-            out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10), isset($in['levels']) ? (array) $in['levels'] : null, isset($in['source']) ? (string) $in['source'] : null));
+            out(Engine::start((int) $u['id'], (string) ($in['mode'] ?? 'practice'), (array) ($in['skills'] ?? []), $in['level'] ?? null, (int) ($in['length'] ?? 10), isset($in['levels']) ? (array) $in['levels'] : null, isset($in['source']) ? (string) $in['source'] : null, isset($in['point']) ? (string) $in['point'] : null));
 
         case 'event':   // what the learner opens and presses (Usage page): a fixed list of names, no text
             $u = Auth::require();

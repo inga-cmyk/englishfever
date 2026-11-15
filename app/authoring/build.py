@@ -263,6 +263,14 @@ meta = {
     "errors": {c: {"name": v[0], "group": v[1]} for c, v in error_types.ERRORS.items()},
     "skill_err": error_types.SKILL_ERR,
 }
+import new_points   # the New group: grammar points with their first tasks, each with a short card of its own (teacher, 15 November)
+_skill_ids = {s[0] for s in SKILLS}
+meta["new_points"] = []
+for pid, label, skill, since, cardx in new_points.POINTS:
+    assert skill in _skill_ids, pid
+    en, lvc = cards2.marked(skill, cardx["en"]), cards2.marked(skill, cardx["lv"])
+    meta["new_points"].append({"id": pid, "label": label, "skill": skill, "since": since, "days": new_points.NEW_DAYS,
+                               "rule": {"v2": en, "watch": en["watch"]}, "rule_lv": {"v2": lvc, "watch": lvc["watch"]}})
 with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8") as f:
     json.dump(meta, f, ensure_ascii=False, indent=1)
 

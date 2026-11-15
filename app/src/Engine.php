@@ -37,10 +37,15 @@ final class Engine
 
     // ───────── sessions ─────────
 
-    public static function start(int $uid, string $mode, array $skills, ?string $level, int $len, ?array $fullLevels = null, ?string $source = null): array
+    public static function start(int $uid, string $mode, array $skills, ?string $level, int $len, ?array $fullLevels = null, ?string $source = null, ?string $point = null): array
     {
         $meta = Content::liveMeta();
         $all = array_column($meta['skills'], 'id');
+        if ($point !== null && $mode === 'practice') {   // a new grammar point on its own (the New group, teacher 15 November): its topic, its levels, only its tasks
+            $np = array_values(array_filter($meta['new_points'] ?? [], fn($p) => $p['id'] === $point))[0] ?? null;
+            if (!$np) throw new ApiError('This topic is not available.', 404);
+            $skills = [$np['skill']]; $fullLevels = $np['levels']; $source = 'new_point';
+        } else $point = null;
         $smart = false;
         $comeback = false;
         if ($mode === 'comeback') {
@@ -107,6 +112,7 @@ final class Engine
         if ($smart) $state['smart'] = true;
         if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['review'] = array_fill_keys($review, true); }
         if (!empty($allowed)) $state['levels'] = $allowed;
+        if ($point !== null) $state['point'] = $point;
         // 60 / 25 / 15 (teacher, 2 November): a path step and Surprise me mix the step, review and a step up; a chosen topic stays as chosen
         if ($mode === 'practice' && $smart && isset($mixLevels)) {   // a path step is only its own topic now (teacher, 6 November); Surprise me keeps the mix
             $mainLevels = $mixLevels ?? ($allowed ?? [$level]);
@@ -503,6 +509,7 @@ final class Engine
             // open writing (the least support) only after a right typed answer on that topic in this session (teacher's scaffolding rule)
             if (!$placement && $it['kind'] === 'write' && empty($rightHere[$it['skill']])) continue;
             if (!empty($st['levels']) && !in_array($it['level'], $st['levels'], true)) continue;   // the levels the learner chose
+            if (!empty($st['point']) && Content::point($it) !== $st['point']) continue;   // a new point practised on its own
             $bySkill[$it['skill']][] = $it;
         }
         if (!$placement) {

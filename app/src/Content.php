@@ -183,6 +183,13 @@ final class Content
         $m['skills'] = array_values(array_filter($m['skills'], fn($s) => isset($have[$s['id']])));
         $areas = array_flip(array_column($m['skills'], 'area'));
         $m['areas'] = array_values(array_filter($m['areas'], fn($a) => isset($areas[$a['id']])));
+        // the New group (teacher, 15 November): a new grammar point is shown while it is new and has tasks
+        $pts = [];
+        foreach (self::items() as $it) { $p = self::point($it); if ($p !== null) $pts[$p][$it['level']] = ($pts[$p][$it['level']] ?? 0) + 1; }
+        $m['new_points'] = array_values(array_filter(array_map(function ($p) use ($pts) {
+            $p['levels'] = array_keys($pts[$p['id']] ?? []); sort($p['levels']); $p['n'] = array_sum($pts[$p['id']] ?? []);
+            return $p;
+        }, $m['new_points'] ?? []), fn($p) => $p['n'] > 0 && (time() - strtotime($p['since'])) < $p['days'] * 86400));
         return $m;
     }
 

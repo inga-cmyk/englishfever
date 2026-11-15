@@ -1020,3 +1020,4 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .knowlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .knowlist li { display: flex; align-items: center; gap: 4px; color: var(--text); }
 .knowlist li svg { color: var(--good, #2bb673); width: 18px; height: 18px; }
+.new-pill { background: var(--good-bg, #e3f4ec); color: var(--good, #1f6f4a); padding: 1px 8px; font-size: .72rem; }

@@ -1,0 +1,56 @@
+[
+{
+"id": "r11b-001",
+"answer": [
+"is",
+"jamming"
+],
+"other_correct": [
+[
+"was",
+"jamming"
+]
+],
+"wrong_options_that_fit": "'was' fits as a second answer (was always jamming), less natural after 'We need a new printer' (present problem).",
+"instruction_problem": "No instruction at all: only a sentence with gaps; learner is not told to choose cards or what to complete. Also 'always + continuous' complaint is only signalled by 'always'; fine.",
+"level_problem": "",
+"sense_problem": "'was ... jamming' being possible makes the item ambiguous; 'ours' present need strongly favours 'is'."
+},
+{
+"id": "r11b-002",
+"answer": [
+"was",
+"breaking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction at all: only a sentence with gaps; learner is not told to choose cards or what to complete. 'so in the end I sold it' is what forces past; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r11b-003",
+"answer": "my neighbour is always playing loud music late at night",
+"other_correct": [
+[
+"late at night my neighbour is always playing loud music"
+],
+[
+"is my neighbour always playing loud music late at night"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say statement or question: the 'is my neighbour always playing ...?' question also uses all cards. Cards are all lower case with no capital or full stop/question mark to show which. Say 'make a sentence'.",
+"level_problem": "",
+"sense_problem": "Fine, natural. Starting with 'late at night' also natural (less usual)."
+},
+{
+"id": "r11b-004",
+"answer": "what should i have said to my boss",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'to make a question' is clear; 'should have' structure is not named. Fine.",
+"level_problem": "",
+"sense_problem": "Natural. 'i' lower case card is fine."
+}
+]

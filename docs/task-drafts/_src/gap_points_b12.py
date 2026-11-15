@@ -39,6 +39,11 @@ for n, r in enumerate(lib.rows):
             if not __import__("re").search(r"\b(is|are|was|were|'s|'re|would|'d)\b.*\w+ing\b|\bwould\b|'d always", a) and "ing " not in a + " ":
                 lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + a + SIMPLE_NOTE
 
+# alt_orders splits "late at night" (r11b): that order is not English
+for r in lib.rows:
+    if r[2] == "order" and r[5].startswith("also accepted: "):
+        r[5] = "also accepted: " + " | ".join(a for a in r[5][len("also accepted: "):].split(" | ") if not a.startswith("at night ") or "late at night" in a)
+
 if __name__ == "__main__":
     import sys
     lib.save(sys.argv[1] if len(sys.argv) > 1 else "pending/" + NAME)

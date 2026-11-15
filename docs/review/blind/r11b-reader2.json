@@ -1,0 +1,55 @@
+[
+{
+"id": "r11b-001",
+"answer": [
+"is",
+"jamming"
+],
+"other_correct": [
+[
+"was",
+"jamming"
+]
+],
+"wrong_options_that_fit": "was (with jamming): 'ours was always jamming' is correct English, though less logical beside 'ours' still being the printer in use and 'We need'; arguably acceptable if the printer is already replaced/described as past.",
+"instruction_problem": "No instruction line: the learner is not told what to do beyond the dragging note (minor). 'always' + continuous is the target and is not named, fine.",
+"level_problem": "",
+"sense_problem": "Distractor 'jams' cannot fit any gap pair (is/was + jams is ungrammatical) so it is a weak distractor; 'was' only fits marginally."
+},
+{
+"id": "r11b-002",
+"answer": [
+"was",
+"breaking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line (minor). 'so in the end I sold it' makes past obvious, so only 'was' is possible; fine.",
+"level_problem": "",
+"sense_problem": "Distractors 'is'/'breaks' are believable; 'breaks' pairs with no auxiliary so is a weak distractor."
+},
+{
+"id": "r11b-003",
+"answer": "my neighbour is always playing loud music late at night",
+"other_correct": [
+"is my neighbour always playing loud music late at night",
+"late at night my neighbour is always playing loud music",
+"at night my neighbour is always playing loud music late",
+"my neighbour is playing loud music always late at night (less natural)",
+"my neighbour is always playing music loud late at night (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Put the words in order.' does not say statement or question, so the question 'Is my neighbour always playing ...' is also valid; no capital letters or full stop to guide. Specify 'to make a sentence'.",
+"level_problem": "",
+"sense_problem": "Fine; a natural complaint."
+},
+{
+"id": "r11b-004",
+"answer": "what should i have said to my boss",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'to make a question' gives away the word order start (what should...); mild. Otherwise clear.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -322,17 +322,19 @@
     "x_pastc_always"
    ],
    "typical_errors": "*He always loses his keys!* is correct but neutral; the continuous adds the annoyance",
-   "sources": "Murphy 3 · TE B1: Present simple or present continuous (from memory); returns in C1: Advanced present simple and continuous · EGP: A2 present continuous with adverbs of indefinite frequency (form only)",
+   "sources": "Murphy 3 · TE B1: Present simple or present continuous (from memory); returns in C1: Advanced present simple and continuous · EGP: A2 present continuous with adverbs of indefinite frequency (form only) · Decided by the teacher, 15 November: Present continuous gets B1.2 for these tasks.",
    "topics": [
     "present_continuous"
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 17,
+    "use": 6,
+    "learn": 2
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.2"
+   ]
   },
   {
    "id": "have_got",
@@ -757,11 +759,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.2"
+   ]
   },
   {
    "id": "no_longer",
@@ -2670,17 +2674,19 @@
     "x_may_well"
    ],
    "typical_errors": "*You should told me; You should have tell me; You should had told me; You must have told me* as criticism",
-   "sources": "Murphy 27, 33 · TE no line of its own (B1+: Past modals of deduction; B2: Modals, from memory) · EGP: B1 should: past affirmative, past negative, regret; B2 could: regret · In the app only inside the passive (should have been closed)",
+   "sources": "Murphy 27, 33 · TE no line of its own (B1+: Past modals of deduction; B2: Modals, from memory) · EGP: B1 should: past affirmative, past negative, regret; B2 could: regret · Decided by the teacher, 15 November: tasks in More modals at B1.2.",
    "topics": [
-    "passive_modals"
+    "more_modals"
    ],
    "card": "no",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.2"
+   ]
   },
   {
    "id": "deduction_past",
@@ -6221,17 +6227,19 @@
     "x_agr_quant"
    ],
    "typical_errors": "AGREE / NP-ORDER: *Every students have; all the day; my all section; each of student*",
-   "sources": "Murphy 90, 91 · TE B1+: All, most, both, either, neither, any, no, none (from memory) · EGP: B2 each as pronoun · On the agreement card (every + singular verb), A2 in the app",
+   "sources": "Murphy 90, 91 · TE B1+: All, most, both, either, neither, any, no, none (from memory) · EGP: B2 each as pronoun · On the agreement card (every + singular verb), A2 in the app Decided by the teacher, 15 November: Subject and verb gets B1.2 for these tasks.",
    "topics": [
     "agreement"
    ],
    "card": "yes",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.2"
+   ]
   },
   {
    "id": "another_other",
@@ -8397,11 +8405,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.2"
+   ]
   },
   {
    "id": "rel_nondef",
@@ -9180,11 +9190,13 @@
    ],
    "card": "partly",
    "tasks": {
-    "check": 0,
-    "use": 0,
-    "learn": 0
+    "check": 16,
+    "use": 8,
+    "learn": 1
    },
-   "task_levels": []
+   "task_levels": [
+    "B1.2"
+   ]
   },
   {
    "id": "should_expect",

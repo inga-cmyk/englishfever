@@ -3056,6 +3056,31 @@ deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:4,more_modals | B1.2
 deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:5,more_modals | B1.2 | mcq | Choose the correct option: Everyone outside is wearing a coat and a hat. It ___ be very cold today. | must
 deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:6,more_modals | B1.2 | mcq | Choose the correct option: This ___ be the right address. There's no number 52 on this street. | can't
 deduction,B1.2,more_modals,B1.2,check,mcq,read,,pairs-1.csv:7,more_modals | B1.2 | mcq | Choose the correct option: Mark works at two jobs and has three small children. He ___ be bored at home. | can't
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:77,"agreement | B1.2 | mcq | Choose the correct option: ___ in our new hotel has a balcony, so guests can have breakfast outside. | Every room"
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:78,"agreement | B1.2 | mcq | Choose the correct option: At the end of the course, each ___ a certificate, even if they missed a class. | student gets"
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:79,agreement | B1.2 | mcq | Choose the correct option: I've known Marta ___ because our mothers were best friends. | my whole life
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:80,agreement | B1.2 | mcq | Choose the correct option: I was so tired after the night flight that I stayed in bed ___ on Sunday. | all day
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:81,agreement | B1.2 | mcq | Which sentence is correct? | Each of the flats in our building has its own parking space.
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:82,agreement | B1.2 | mcq | Which sentence is NOT correct? | Every player in our club get a free shirt in spring.
+each_every,B1.2,agreement,B1.2,check,mcq,read,,gap-points-b12-1.csv:83,"agreement | B1.2 | mcq | Choose the correct option: She was carrying a heavy bag in ___ hand, so she couldn't open the door. | each"
+each_every,B1.2,agreement,B1.2,use,gap,read,,gap-points-b12-1.csv:84,"agreement | B1.2 | gap | Write *each* or *every*: We tried three new apps for learning Spanish, and ___ of them was useful. | "
+each_every,B1.2,agreement,B1.2,use,gap,read,,gap-points-b12-1.csv:85,"agreement | B1.2 | gap | Write *all* or *every*: The museum is open ___ day except Monday, from ten until six. | "
+each_every,B1.2,agreement,B1.2,use,gap,read,,gap-points-b12-1.csv:86,"agreement | B1.2 | gap | Every laptop in our office ___ the same password, which is not very safe. (have) | "
+each_every,B1.2,agreement,B1.2,use,gap,read,,gap-points-b12-1.csv:87,agreement | B1.2 | gap | Each of the ___ on our walking tour got a free map of the old town. (visitor) | 
+each_every,B1.2,agreement,B1.2,use,gap,read,,gap-points-b12-1.csv:88,agreement | B1.2 | gap | Write *all* or *whole*: The ___ team stayed late on Friday to finish the project on time. | 
+each_every,B1.2,agreement,B1.2,use,text,read,,gap-points-b12-1.csv:89,agreement | B1.2 | text | Say it another way with *whole*: I spent all day at the airport because my flight was cancelled. | 
+each_every,B1.2,agreement,B1.2,use,text,read,,gap-points-b12-1.csv:90,agreement | B1.2 | text | Say it another way with *every*: All the lessons at our language school last ninety minutes. | 
+each_every,B1.2,agreement,B1.2,use,text,read,,gap-points-b12-1.csv:91,agreement | B1.2 | text | Make a yes/no question: Every member of the team has access to the shared folder. | 
+each_every,B1.2,agreement,B1.2,check,order,read,,gap-points-b12-1.csv:92,agreement | B1.2 | order | Put the words in order. | each of my sisters lives in a different country so we talk online
+each_every,B1.2,agreement,B1.2,check,order,read,,gap-points-b12-1.csv:93,agreement | B1.2 | order | Put the words in order to make a question. | does every guest need a ticket for tomorrow's boat trip
+each_every,B1.2,agreement,B1.2,check,order,read,,gap-points-b12-1.csv:94,agreement | B1.2 | order | Put the words in order. | we were stuck in traffic all day and missed the start of the wedding
+each_every,B1.2,agreement,B1.2,check,order,read,,gap-points-b12-1.csv:95,agreement | B1.2 | order | Put the words in order. | i missed the match because i spent the whole evening answering emails
+each_every,B1.2,agreement,B1.2,check,order,read,,gap-points-b12-1.csv:96,agreement | B1.2 | order | Put the words in order. | i've read every single review but i can't decide which phone to buy
+each_every,B1.2,agreement,B1.2,check,gap,read,,gap-points-b12-1.csv:97,"agreement | B1.2 | gap | Each of my ___ ___ a different hobby, so family weekends are never boring. | "
+each_every,B1.2,agreement,B1.2,check,gap,read,,gap-points-b12-1.csv:98,"agreement | B1.2 | gap | I've had a headache ___ ___ morning, so I'm going home early. | "
+each_every,B1.2,agreement,B1.2,check,gap,read,,gap-points-b12-1.csv:99,"agreement | B1.2 | gap | My grandmother phones me ___ ___, usually just after her lunch, to ask about the kids. | "
+each_every,B1.2,agreement,B1.2,check,gap,read,,gap-points-b12-1.csv:100,"agreement | B1.2 | gap | Almost ___ colleague in my team works from home on Fridays, so the office is very quiet. | "
+each_every,B1.2,agreement,B1.2,learn,match,read,,gap-points-b12-1.csv:101,"agreement | B1.2 | match | Match each beginning with its ending. | We invited forty people, and each of = them brought a small gift. ; It was a long night, but every = guest stayed until the end. ; The food was great, and all the = guests asked for the recipes. ; When the band started, the whole = room got up to dance."
 iq_to,B1.2,rep_questions,B2.2,check,mcq,read,rq-B22-1a-r3,built-in,rep_questions | B2.2 | mcq | Tom's question to you: 'What should I do?' Which sentence reports it? | He asked me what to do.
 iq_to,B1.2,ind_advanced,B2.2,check,mcq,read,ia-B22-1a,built-in,ind_advanced | B2.2 | mcq | Which is correct? 'I don't know ___.' | what to do
 iq_to,B1.2,ind_advanced,B2.2,learn,mcq,read,ia-B22-2a,built-in,ind_advanced | B2.2 | mcq | 'I have no idea how to start.' What does 'how to start' mean? | how I should start
@@ -3260,6 +3285,31 @@ pastp_by,B1.2,narrative,B1.2,check,order,read,,compare-past-1.csv:45,narrative |
 pastp_by,B1.2,narrative,B1.2,use,gap,read,,twins-2.csv:4,narrative | B1.2 | gap | Tom didn't want a coffee. He ___ one. (just / drink) | 
 pastp_by,B1.2,narrative,B1.2,use,gap,read,,twins-2.csv:5,narrative | B1.2 | gap | Write one word in each gap: I missed the first minute of the lesson. It ___ just ___ when I joined. (start) | 
 pastp_order,B1.2,narrative,B1.1,use,gap,read,,compare-past-1.csv:41,"narrative | B1.1 | gap | A: Was Tom there when you arrived? B: Yes, but he ___ soon afterwards. (leave) | "
+pc_always,B1.2,present_continuous,B1.2,check,mcq,read,,gap-points-b12-1.csv:2,"present_continuous | B1.2 | mcq | Choose the correct option: My flatmate ___ my phone charger without asking, and it drives me mad. | is always borrowing"
+pc_always,B1.2,present_continuous,B1.2,check,mcq,read,,gap-points-b12-1.csv:3,"present_continuous | B1.2 | mcq | Which sentence is correct? | My neighbours are always parking in front of our garage, so I can't get out."
+pc_always,B1.2,present_continuous,B1.2,check,mcq,read,,gap-points-b12-1.csv:4,"present_continuous | B1.2 | mcq | Choose the correct option: When we worked together, Lisa ___ about the air conditioning. | was always complaining"
+pc_always,B1.2,present_continuous,B1.2,check,mcq,read,,gap-points-b12-1.csv:5,present_continuous | B1.2 | mcq | Which sentence is NOT correct? | My dad is always lose his glasses somewhere in the house.
+pc_always,B1.2,present_continuous,B1.2,check,mcq,read,,gap-points-b12-1.csv:6,"present_continuous | B1.2 | mcq | Choose the correct option: My teenage sons ___ always leaving wet towels on the bathroom floor, and I'm tired of it. | are"
+pc_always,B1.2,present_continuous,B1.2,check,mcq,read,,gap-points-b12-1.csv:7,"present_continuous | B1.2 | mcq | Choose the correct option: My manager is constantly ___ us emails late at night, even at weekends. | sending"
+pc_always,B1.2,present_continuous,B1.2,learn,mcq,read,,gap-points-b12-1.csv:8,present_continuous | B1.2 | mcq | Which sentence is a complaint? | My partner is always leaving the lights on.
+pc_always,B1.2,present_continuous,B1.2,use,gap,read,,gap-points-b12-1.csv:9,present_continuous | B1.2 | gap | Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up. | 
+pc_always,B1.2,present_continuous,B1.2,use,gap,read,,gap-points-b12-1.csv:10,"present_continuous | B1.2 | gap | Complain with *always*: When we shared an office, Mark ___ (hum) along to his music. | "
+pc_always,B1.2,present_continuous,B1.2,check,gap,read,,gap-points-b12-1.csv:11,present_continuous | B1.2 | gap | We need a new printer: ours ___ always ___ in the middle of big jobs. | 
+pc_always,B1.2,present_continuous,B1.2,check,gap,read,,gap-points-b12-1.csv:12,"present_continuous | B1.2 | gap | My old car ___ constantly ___ down, so in the end I sold it. | "
+pc_always,B1.2,present_continuous,B1.2,use,gap,read,,gap-points-b12-1.csv:13,"present_continuous | B1.2 | gap | Use the words in brackets: My brother ___ (always / forget) my birthday, but every year he calls the next day. | "
+pc_always,B1.2,present_continuous,B1.2,use,text,read,,gap-points-b12-1.csv:14,present_continuous | B1.2 | text | Complain with *constantly*: My boss calls me during my lunch break. | 
+pc_always,B1.2,present_continuous,B1.2,use,text,read,,gap-points-b12-1.csv:15,"present_continuous | B1.2 | text | Complain with *always*: When we were students, my flatmate borrowed my notes. | "
+pc_always,B1.2,present_continuous,B1.2,use,text,read,,gap-points-b12-1.csv:16,present_continuous | B1.2 | text | Make a question with *Why*: You're always interrupting me in meetings. | 
+pc_always,B1.2,present_continuous,B1.2,check,order,read,,gap-points-b12-1.csv:17,present_continuous | B1.2 | order | Put the words in order. | my sister's always borrowing my clothes without asking
+pc_always,B1.2,present_continuous,B1.2,check,order,read,,gap-points-b12-1.csv:18,present_continuous | B1.2 | order | Put the words in order. | my neighbour is always playing loud music late at night
+pc_always,B1.2,present_continuous,B1.2,check,order,read,,gap-points-b12-1.csv:19,present_continuous | B1.2 | order | Put the words in order to make a question. | why are you always checking your phone at dinner
+pc_always,B1.2,present_continuous,B1.2,check,order,read,,gap-points-b12-1.csv:20,present_continuous | B1.2 | order | Put the words in order. | he's forever telling us how busy he is
+pc_always,B1.2,present_continuous,B1.2,check,order,read,,gap-points-b12-1.csv:21,present_continuous | B1.2 | order | Put the words in order. | you're always making plans for the weekend without telling me
+pc_always,B1.2,present_continuous,B1.2,check,gap,read,,gap-points-b12-1.csv:22,"present_continuous | B1.2 | gap | My colleague ___ ___ ___ my yoghurt from the office fridge, and it drives me mad. | "
+pc_always,B1.2,present_continuous,B1.2,check,gap,read,,gap-points-b12-1.csv:23,"present_continuous | B1.2 | gap | When I was a student, my landlord ___ always ___ round without calling first. | "
+pc_always,B1.2,present_continuous,B1.2,check,gap,read,,gap-points-b12-1.csv:24,present_continuous | B1.2 | gap | My parents ___ always ___ me when I'm going to find a better job. | 
+pc_always,B1.2,present_continuous,B1.2,check,gap,read,,gap-points-b12-1.csv:25,"present_continuous | B1.2 | gap | My phone ___ constantly ___ me to update my apps, and I keep ignoring it. | "
+pc_always,B1.2,present_continuous,B1.2,learn,match,read,,gap-points-b12-1.csv:26,present_continuous | B1.2 | match | Match each beginning with its ending. | My flatmate is always leaving = the front door unlocked. ; Our manager is constantly changing = the meeting times. ; My cousin is forever borrowing = my phone charger. ; The neighbours' dogs are always barking = at the postman.
 pp_first_time,B1.2,present_perfect,A2.2,check,mcq,read,,a2-relabelled-1.csv:8,present_perfect | A2.2 | mcq | It's the first time I ___ this dish. | have tried
 pp_first_time,B1.2,present_perfect,B1.2,check,mcq,read,pp-B12-1a,built-in,present_perfect | B1.2 | mcq | It's the first time I ___ this dish. | have tried
 pp_first_time,B1.2,present_perfect,B1.2,check,order,read,,b1-tenses-2.csv:8,present_perfect | B1.2 | order | Put the words in order. | it's the first time that i have tried sushi
@@ -3286,6 +3336,31 @@ rel_nondef,B1.2,relative_clauses,B1.2,check,mcq,read,,b1-new-2.csv:26,"relative_
 rel_nondef,B1.2,relative_clauses,B1.2,check,mcq,read,,b1-new-2.csv:28,"relative_clauses | B1.2 | mcq | Which sentence is punctuated correctly? | Tom, who is my neighbour, plays the drums."
 rel_nondef,B1.2,relative_clauses,B1.2,use,text,read,,b1-new-2.csv:36,relative_clauses | B1.2 | text | Join the two sentences: My uncle lives in Spain. He is a chef. | 
 rel_nondef,B1.2,relative_clauses,B1.2,learn,match,read,,b1-new-2.csv:39,"relative_clauses | B1.2 | match | Match each sentence with its meaning. | The woman who called is my boss. = The clause identifies which woman we mean. ; Riga, which is Latvia's capital, is on the Daugava. = The clause adds information about a named city. ; I met a driver whose car was stolen. = The clause tells us that the car belonged to the driver. ; She passed her test, which surprised everyone. = Her passing the test surprised everyone."
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:102,"relative_clauses | B1.2 | mcq | Choose the correct option: Sorry, I didn't hear ___ you said about the meeting time. | what"
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:103,relative_clauses | B1.2 | mcq | Choose the correct option: The jacket ___ I ordered online last week doesn't fit me. | which
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:104,relative_clauses | B1.2 | mcq | Which sentence is correct? | Everything that he told us about the hotel was true.
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:105,relative_clauses | B1.2 | mcq | Which sentence is correct? | What I really need right now is a long holiday.
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:106,relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | The film what we watched last night was far too long.
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:107,relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | All what I want for my birthday is a quiet dinner.
+rel_what,B1.2,relative_clauses,B1.2,check,mcq,read,,gap-points-b12-1.csv:108,relative_clauses | B1.2 | mcq | Choose the correct option: That's exactly ___ I was trying to explain to my boss. | what
+rel_what,B1.2,relative_clauses,B1.2,use,gap,read,,gap-points-b12-1.csv:109,relative_clauses | B1.2 | gap | Write *what* or *that*: The pizza ___ we ordered last night was cold when it arrived. | 
+rel_what,B1.2,relative_clauses,B1.2,use,gap,read,,gap-points-b12-1.csv:110,relative_clauses | B1.2 | gap | Write *what* or *that*: I can't remember ___ the teacher said about the exam. | 
+rel_what,B1.2,relative_clauses,B1.2,use,gap,read,,gap-points-b12-1.csv:111,relative_clauses | B1.2 | gap | Write *what* or *that*: Is there anything ___ I can do to help you with the move? | 
+rel_what,B1.2,relative_clauses,B1.2,use,gap,read,,gap-points-b12-1.csv:112,relative_clauses | B1.2 | gap | Write *what* or *that*: ___ worries me most about the trip is the cost of the flights. | 
+rel_what,B1.2,relative_clauses,B1.2,use,gap,read,,gap-points-b12-1.csv:113,relative_clauses | B1.2 | gap | Write *what* or *that*: The app ___ my sister recommended really helps me sleep better. | 
+rel_what,B1.2,relative_clauses,B1.2,use,text,read,,gap-points-b12-1.csv:114,relative_clauses | B1.2 | text | Say it another way with *what*: The thing I enjoy most about my job is meeting new people. | 
+rel_what,B1.2,relative_clauses,B1.2,use,text,read,,gap-points-b12-1.csv:115,relative_clauses | B1.2 | text | Correct the mistake: Everything what she told me about the course was useful. | 
+rel_what,B1.2,relative_clauses,B1.2,use,text,read,,gap-points-b12-1.csv:116,relative_clauses | B1.2 | text | Correct the mistake: I didn't understand that the mechanic said about my car. | 
+rel_what,B1.2,relative_clauses,B1.2,check,order,read,,gap-points-b12-1.csv:117,relative_clauses | B1.2 | order | Put the words in order. | what she said at the wedding surprised everyone
+rel_what,B1.2,relative_clauses,B1.2,check,order,read,,gap-points-b12-1.csv:118,relative_clauses | B1.2 | order | Put the words in order. | i didn't understand what the doctor told me about the test
+rel_what,B1.2,relative_clauses,B1.2,check,order,read,,gap-points-b12-1.csv:119,relative_clauses | B1.2 | order | Put the words in order. | all i want after work is a hot shower
+rel_what,B1.2,relative_clauses,B1.2,check,order,read,,gap-points-b12-1.csv:120,relative_clauses | B1.2 | order | Put the words in order. | i'm sorry about everything that happened last night
+rel_what,B1.2,relative_clauses,B1.2,check,order,read,,gap-points-b12-1.csv:121,relative_clauses | B1.2 | order | Put the words in order to make a question. | did you find what you were looking for
+rel_what,B1.2,relative_clauses,B1.2,check,gap,read,,gap-points-b12-1.csv:122,relative_clauses | B1.2 | gap | ___ really annoyed me was the noise from the street. | 
+rel_what,B1.2,relative_clauses,B1.2,check,gap,read,,gap-points-b12-1.csv:123,relative_clauses | B1.2 | gap | I'll send you everything ___ you need for the conference. | 
+rel_what,B1.2,relative_clauses,B1.2,check,gap,read,,gap-points-b12-1.csv:124,relative_clauses | B1.2 | gap | The best thing about the trip was the people ___ we met on the way. | 
+rel_what,B1.2,relative_clauses,B1.2,check,gap,read,,gap-points-b12-1.csv:125,"relative_clauses | B1.2 | gap | Excuse me, this isn't ___ I ordered. | "
+rel_what,B1.2,relative_clauses,B1.2,learn,match,read,,gap-points-b12-1.csv:126,relative_clauses | B1.2 | match | Match each beginning with its ending. | Thank you so much for everything = you did for my family. ; The waiter didn't understand = what I wanted to order. ; The laptop that I bought last month = stopped working after a week. ; What I like most about my job = is the people I work with.
 rep_backshift2,B1.2,rep_statements,B1.1,check,order,read,,b1-cond-rep-1.csv:151,rep_statements | B1.1 | order | Put the words in order. | they said they had already eaten
 rep_backshift2,B1.2,rep_statements,B1.1,check,order,read,,b1-cond-rep-1.csv:152,rep_statements | B1.1 | order | Put the words in order. | my boss said that the meeting had been cancelled
 rep_backshift2,B1.2,rep_statements,B1.1,check,gap,read,,b1-cond-rep-1.csv:160,rep_statements | B1.1 | gap | 'I've finished.' She said she ___ finished. | 
@@ -3426,6 +3501,31 @@ rep_q_yn,B1.2,rep_questions,B2.2,learn,gap,read,,learn-drag-3.csv:17,rep_questio
 rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:16,rep_questions | B2.2 | mcq | Which sentence is NOT correct? | He asked whether or not was I coming.
 rep_q_yn,B1.2,rep_questions,B2.2,check,mcq,read,,twins-3.csv:17,rep_questions | B2.2 | mcq | Which sentence is correct? | Mr Ozols asked whether the invoices had been sent.
 rep_stay,B1.2,rep_statements,B2.1,learn,mcq,read,rs-B21-2a-r5,built-in,rep_statements | B2.1 | mcq | The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'? | Because it is still true.
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:52,"more_modals | B1.2 | mcq | Choose the correct option: We ___ a taxi to the airport, because the bus was so slow that we missed our flight. | should have taken"
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:53,"more_modals | B1.2 | mcq | Choose the correct option: You ___ at the waiter, because it wasn't his fault that the kitchen was slow. | shouldn't have shouted"
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:54,"more_modals | B1.2 | mcq | Choose the correct option: She ___ a great doctor, but she decided to study music instead. | could have been"
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:55,more_modals | B1.2 | mcq | Choose the correct option: Why didn't you tell me about the delay? You ___ me before I left home. | should have told
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:56,"more_modals | B1.2 | mcq | Choose the correct option: Sorry, I should ___ called you last night, but my phone battery was dead. | have"
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:57,more_modals | B1.2 | mcq | Which sentence is correct? | You should have checked the figures before you sent the report.
+should_have,B1.2,more_modals,B1.2,check,mcq,read,,gap-points-b12-1.csv:58,more_modals | B1.2 | mcq | Which sentence is NOT correct? | You should of booked the tickets much earlier.
+should_have,B1.2,more_modals,B1.2,check,order,read,,gap-points-b12-1.csv:59,more_modals | B1.2 | order | Put the words in order. | you should have told me that the train was cancelled
+should_have,B1.2,more_modals,B1.2,check,order,read,,gap-points-b12-1.csv:60,more_modals | B1.2 | order | Put the words in order. | i shouldn't have bought these shoes without trying them on
+should_have,B1.2,more_modals,B1.2,check,order,read,,gap-points-b12-1.csv:61,more_modals | B1.2 | order | Put the words in order. | she could have got the job but she didn't apply in time
+should_have,B1.2,more_modals,B1.2,check,order,read,,gap-points-b12-1.csv:62,more_modals | B1.2 | order | Put the words in order. | you could have asked me for help instead of doing it alone
+should_have,B1.2,more_modals,B1.2,check,order,read,,gap-points-b12-1.csv:63,more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said to my boss
+should_have,B1.2,more_modals,B1.2,check,gap,read,,gap-points-b12-1.csv:64,more_modals | B1.2 | gap | You shouldn't ___ ___ the oven on when you went out this morning. | 
+should_have,B1.2,more_modals,B1.2,check,gap,read,,gap-points-b12-1.csv:65,"more_modals | B1.2 | gap | We could ___ ___ the earlier ferry, but we decided to stay another night. | "
+should_have,B1.2,more_modals,B1.2,check,gap,read,,gap-points-b12-1.csv:66,"more_modals | B1.2 | gap | Sorry, I should ___ you that the office was closed on Monday. | "
+should_have,B1.2,more_modals,B1.2,check,gap,read,,gap-points-b12-1.csv:67,"more_modals | B1.2 | gap | I ___ ___ studied for the exam, but I spent the whole weekend watching TV series. | "
+should_have,B1.2,more_modals,B1.2,learn,match,read,,gap-points-b12-1.csv:68,"more_modals | B1.2 | match | Match each situation with the comment. | You didn't wear a coat, and now you've got a cold. = You should have worn one. ; You laughed at his new haircut, and he was upset. = You shouldn't have laughed. ; We missed the last bus and walked home in the rain. = We could have taken a taxi. ; You knew about the problem but said nothing. = You should have told someone."
+should_have,B1.2,more_modals,B1.2,use,gap,read,,gap-points-b12-1.csv:69,more_modals | B1.2 | gap | You ___ me about the party. I would have loved to come! (should / tell) | 
+should_have,B1.2,more_modals,B1.2,use,gap,read,,gap-points-b12-1.csv:70,more_modals | B1.2 | gap | I ___ so much at the wedding. I felt terrible the next morning. (should / not / drink) | 
+should_have,B1.2,more_modals,B1.2,use,gap,read,,gap-points-b12-1.csv:71,"more_modals | B1.2 | gap | We ___ the final, but we missed two penalties in the last ten minutes. (could / win) | "
+should_have,B1.2,more_modals,B1.2,use,gap,read,,gap-points-b12-1.csv:72,"more_modals | B1.2 | gap | We ___ the whole day at the beach yesterday, but we stayed in the hotel because of the clouds. (could / spend) | "
+should_have,B1.2,more_modals,B1.2,use,gap,read,,gap-points-b12-1.csv:73,more_modals | B1.2 | gap | You ___ me back last night. Your phone was with you all evening! (could / call) | 
+should_have,B1.2,more_modals,B1.2,use,text,read,,gap-points-b12-1.csv:74,more_modals | B1.2 | text | Make it negative: I should have told Anna what you said about her new boyfriend. | 
+should_have,B1.2,more_modals,B1.2,use,text,read,,gap-points-b12-1.csv:75,more_modals | B1.2 | text | Start with *You shouldn't*: It was wrong of you to lend him your car for the whole weekend. | 
+should_have,B1.2,more_modals,B1.2,use,text,read,,gap-points-b12-1.csv:76,more_modals | B1.2 | text | Make a yes/no question: I should have told the manager about the mistake in the invoice. | 
 so_that,B1.2,so_such,B1.1,check,order,read,,b1-new-5.csv:93,so_such | B1.1 | order | Put the words in order. | he was so late that we left
 so_that,B1.2,so_such,B1.1,check,gap,read,,b1-new-5.csv:102,so_such | B1.1 | gap | She was ___ tired that she fell asleep at once. | 
 so_that,B1.2,so_such,B1.1,use,gap,read,,b1-new-5.csv:106,so_such | B1.1 | gap | Complete with *so* or *such*: I was ___ hungry that I ate everything. | 
@@ -3521,6 +3621,56 @@ wish_pres,B1.2,cond_advanced,B1.2,check,gap,read,,wish-rather-1.csv:25,cond_adva
 wish_pres,B1.2,cond_advanced,B1.2,learn,match,read,,wish-rather-1.csv:26,cond_advanced | B1.2 | match | Match each fact with the wish. | I don't have a car. = I wish I had one. ; I can't sing. = I wish I could sing. ; My room is small. = I wish it were bigger. ; I don't know her name. = I wish I knew her name.
 wish_pres,B1.2,cond_advanced,B2.2,learn,mcq,read,ca-C12-1a-r2,built-in,cond_advanced | B2.2 | mcq | Which sentence expresses regret about the present? | I wish I lived closer to the sea.
 wish_pres,B1.2,cond_advanced,B2.2,use,gap,read,,typical-b2c1-1.csv:27,cond_advanced | B2.2 | gap | I wish I ___ more time to travel this year. (have) | 
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:127,"future | B1.2 | mcq | Choose the correct option: I've charged it all night, but my phone still ___. | won't switch on"
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:128,future | B1.2 | mcq | Choose the correct option: Yesterday I was late for work because my bike lock ___. | wouldn't open
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:129,"future | B1.2 | mcq | Choose the correct option: I've told Max it's dangerous, but he ___ to me. | won't listen"
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:130,future | B1.2 | mcq | Which sentence is correct? | The key card wouldn't open my hotel room last night.
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:131,future | B1.2 | mcq | Which sentence is NOT correct? | My sister won't to lend me her car.
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:132,future | B1.2 | mcq | Which sentence is NOT correct? | My landlord wouldn't fixed the heating.
+wont_refuse,B1.2,future,B1.2,check,mcq,read,,gap-points-b12-1.csv:133,future | B1.2 | mcq | Choose the correct option: Why ___ inside? It's freezing out there. | won't the dog come
+wont_refuse,B1.2,future,B1.2,use,gap,read,,gap-points-b12-1.csv:134,"future | B1.2 | gap | Write *won't* or *wouldn't*: I tried to send you the photos last night, but the wifi ___ work. | "
+wont_refuse,B1.2,future,B1.2,use,gap,read,,gap-points-b12-1.csv:135,future | B1.2 | gap | Write *won't* or *wouldn't*: Can you help me with this suitcase? The zip ___ close. | 
+wont_refuse,B1.2,future,B1.2,use,gap,read,,gap-points-b12-1.csv:136,"future | B1.2 | gap | Write *won't* or *wouldn't*: The cash machine ___ give me any money yesterday, so I borrowed some from Ana. | "
+wont_refuse,B1.2,future,B1.2,use,gap,read,,gap-points-b12-1.csv:137,future | B1.2 | gap | My sister was upset and wouldn't ___ to anyone at the party. (speak) | 
+wont_refuse,B1.2,future,B1.2,use,gap,read,,gap-points-b12-1.csv:138,"future | B1.2 | gap | My son won't ___ his homework, however often I ask him. (do) | "
+wont_refuse,B1.2,future,B1.2,use,text,read,,gap-points-b12-1.csv:139,future | B1.2 | text | Say it another way with *won't*: My computer refuses to open this file. | 
+wont_refuse,B1.2,future,B1.2,use,text,read,,gap-points-b12-1.csv:140,future | B1.2 | text | Say it another way with *wouldn't*: My neighbour refused to move his car last night. | 
+wont_refuse,B1.2,future,B1.2,use,text,read,,gap-points-b12-1.csv:141,future | B1.2 | text | Make a question with *Why*: The baby won't eat her soup. | 
+wont_refuse,B1.2,future,B1.2,check,order,read,,gap-points-b12-1.csv:142,future | B1.2 | order | Put the words in order. | my dad won't wear his glasses even when he's driving
+wont_refuse,B1.2,future,B1.2,check,order,read,,gap-points-b12-1.csv:143,future | B1.2 | order | Put the words in order. | my car wouldn't start this morning so i worked from home
+wont_refuse,B1.2,future,B1.2,check,order,read,,gap-points-b12-1.csv:144,future | B1.2 | order | Put the words in order to make a question. | why won't you tell me what happened at work
+wont_refuse,B1.2,future,B1.2,check,order,read,,gap-points-b12-1.csv:145,future | B1.2 | order | Put the words in order. | my friend wouldn't let me pay for dinner last night
+wont_refuse,B1.2,future,B1.2,check,order,read,,gap-points-b12-1.csv:146,future | B1.2 | order | Put the words in order. | i've tried two keys but this door still won't open
+wont_refuse,B1.2,future,B1.2,check,gap,read,,gap-points-b12-1.csv:147,"future | B1.2 | gap | Yesterday the hotel lift ___ ___, so we took the stairs. | "
+wont_refuse,B1.2,future,B1.2,check,gap,read,,gap-points-b12-1.csv:148,future | B1.2 | gap | My grandmother is very independent and ___ ___ anyone help her. | 
+wont_refuse,B1.2,future,B1.2,check,gap,read,,gap-points-b12-1.csv:149,future | B1.2 | gap | Why ___ ___ ___ me? I've called her five times today. | 
+wont_refuse,B1.2,future,B1.2,check,gap,read,,gap-points-b12-1.csv:150,"future | B1.2 | gap | Yesterday the shop assistant ___ ___ me a refund, so I complained. | "
+wont_refuse,B1.2,future,B1.2,learn,match,read,,gap-points-b12-1.csv:151,"future | B1.2 | match | Match each beginning with its ending. | My laptop won't = switch on. ; Why won't = the tap stop dripping? ; Last night the baby wouldn't = stop crying. ; I asked twice, but she = wouldn't tell me."
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:27,"used_to | B1.2 | mcq | Choose the correct option: When I lived in Spain, I ___ a little scooter that I rode everywhere. | used to have"
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:28,"used_to | B1.2 | mcq | Choose the correct option: When we were students, we ___ in a tiny flat near the station. | used to live"
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:29,used_to | B1.2 | mcq | Which sentence is NOT correct? | We would know all our neighbours when we lived in the village.
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:30,"used_to | B1.2 | mcq | Which sentence is correct? | When my children were small, I would sing to them every night."
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:31,"used_to | B1.2 | mcq | Choose the correct option: As a teenager, I ___ spicy food, but now I cook curry every week. | didn't use to like"
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:32,used_to | B1.2 | mcq | Choose the correct option: Last summer we ___ to Greece for two weeks and loved every minute. | went
+would_habit,B1.2,used_to,B1.2,check,mcq,read,,gap-points-b12-1.csv:33,"used_to | B1.2 | mcq | Choose the correct option: My grandparents ___ a farm, and every summer we would help them with the harvest. | used to own"
+would_habit,B1.2,used_to,B1.2,check,order,read,,gap-points-b12-1.csv:34,used_to | B1.2 | order | Put the words in order. | when we lived by the sea we would swim before breakfast
+would_habit,B1.2,used_to,B1.2,check,order,read,,gap-points-b12-1.csv:35,used_to | B1.2 | order | Put the words in order. | my uncle used to be a fisherman and he would get up at four
+would_habit,B1.2,used_to,B1.2,check,order,read,,gap-points-b12-1.csv:36,used_to | B1.2 | order | Put the words in order. | my grandmother would sing old songs while she cooked dinner
+would_habit,B1.2,used_to,B1.2,check,order,read,,gap-points-b12-1.csv:37,used_to | B1.2 | order | Put the words in order. | on long car journeys my brother and i would play word games
+would_habit,B1.2,used_to,B1.2,check,order,read,,gap-points-b12-1.csv:38,used_to | B1.2 | order | Put the words in order. | we used to have a garden where we would grow our own vegetables
+would_habit,B1.2,used_to,B1.2,check,gap,read,,gap-points-b12-1.csv:39,"used_to | B1.2 | gap | Before I moved here, I ___ a cat that always slept on my laptop. | "
+would_habit,B1.2,used_to,B1.2,check,gap,read,,gap-points-b12-1.csv:40,used_to | B1.2 | gap | Every August my grandmother ___ jam from the berries we picked in the forest. | 
+would_habit,B1.2,used_to,B1.2,check,gap,read,,gap-points-b12-1.csv:41,"used_to | B1.2 | gap | Before they retired, my parents ___ in a flat in the city centre. | "
+would_habit,B1.2,used_to,B1.2,check,gap,read,,gap-points-b12-1.csv:42,"used_to | B1.2 | gap | In my first job, my boss ___ ___ us coffee every Monday morning. | "
+would_habit,B1.2,used_to,B1.2,learn,match,read,,gap-points-b12-1.csv:43,"used_to | B1.2 | match | Match each beginning with its ending. | When I was a student, I used to = have very long hair. ; When it snowed, my dad would = take us sledging in the park. ; Before the bridge was built, people would = cross the river by ferry. ; My parents didn't use to = like my friends, but now they do."
+would_habit,B1.2,used_to,B1.2,use,gap,read,,gap-points-b12-1.csv:44,"used_to | B1.2 | gap | When I was a student, I ___ a really old car that broke down every week. (have) | "
+would_habit,B1.2,used_to,B1.2,use,gap,read,,gap-points-b12-1.csv:45,"used_to | B1.2 | gap | When I worked at the market, I ___ every customer by name. (know) | "
+would_habit,B1.2,used_to,B1.2,use,gap,read,,gap-points-b12-1.csv:46,used_to | B1.2 | gap | Use *would*: Every Sunday my grandfather ___ us fishing on the lake. (take) | 
+would_habit,B1.2,used_to,B1.2,use,gap,read,,gap-points-b12-1.csv:47,"used_to | B1.2 | gap | When we were kids, my sister and I ___ for hours about whose turn it was to wash up. (argue) | "
+would_habit,B1.2,used_to,B1.2,use,gap,read,,gap-points-b12-1.csv:48,"used_to | B1.2 | gap | Last month I ___ to Tallinn for a job interview, and I got the job! (go) | "
+would_habit,B1.2,used_to,B1.2,use,text,read,,gap-points-b12-1.csv:49,"used_to | B1.2 | text | Say it another way with *would*: When I was young, my father used to cook pancakes every Saturday. | "
+would_habit,B1.2,used_to,B1.2,use,text,read,,gap-points-b12-1.csv:50,"used_to | B1.2 | text | Correct the mistake: When I was a child, I would have a little garden of my own. | "
+would_habit,B1.2,used_to,B1.2,use,text,read,,gap-points-b12-1.csv:51,used_to | B1.2 | text | Correct the mistake: Last weekend we would go hiking in the mountains. | 
 would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:27,unreal_time | B1.2 | mcq | Choose the correct option: It's raining. I'd rather ___ a taxi. | take
 would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:28,unreal_time | B1.2 | mcq | Which sentence is correct? | I'd rather not go out tonight.
 would_rather,B1.2,unreal_time,B1.2,check,mcq,read,,wish-rather-1.csv:29,unreal_time | B1.2 | mcq | Choose the correct option: I'd rather walk ___ take the bus. | than

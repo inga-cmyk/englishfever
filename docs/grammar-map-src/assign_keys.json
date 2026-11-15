@@ -15599,14 +15599,6 @@
 "pc_always",
 "read"
 ],
-"present_continuous | B1.2 | gap | Complete with one word in each gap: We need a new printer: ours ___ always ___ in the middle of big jobs. (jam) | ": [
-"pc_always",
-"read"
-],
-"present_continuous | B1.2 | gap | Complete with one word in each gap: My old car ___ constantly ___ down, so in the end I sold it. (break) | ": [
-"pc_always",
-"read"
-],
 "present_continuous | B1.2 | gap | Use the words in brackets: My brother ___ (always / forget) my birthday, but every year he calls the next day. | ": [
 "pc_always",
 "read"
@@ -15624,10 +15616,6 @@
 "read"
 ],
 "present_continuous | B1.2 | order | Put the words in order. | my sister's always borrowing my clothes without asking": [
-"pc_always",
-"read"
-],
-"present_continuous | B1.2 | order | Put the words in order. | it's always raining when i want to go cycling": [
 "pc_always",
 "read"
 ],
@@ -15804,10 +15792,6 @@
 "read"
 ],
 "more_modals | B1.2 | order | Put the words in order. | you could have asked me for help instead of doing it alone": [
-"should_have",
-"read"
-],
-"more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said when my boss asked about the delay": [
 "should_have",
 "read"
 ],
@@ -16161,6 +16145,22 @@
 ],
 "future | B1.2 | match | Match each beginning with its ending. | My laptop won't = switch on. ; Why won't = the tap stop dripping? ; Last night the baby wouldn't = stop crying. ; I asked twice, but she = wouldn't tell me.": [
 "wont_refuse",
+"read"
+],
+"present_continuous | B1.2 | gap | We need a new printer: ours ___ always ___ in the middle of big jobs. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | gap | My old car ___ constantly ___ down, so in the end I sold it. | ": [
+"pc_always",
+"read"
+],
+"present_continuous | B1.2 | order | Put the words in order. | my neighbour is always playing loud music late at night": [
+"pc_always",
+"read"
+],
+"more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said to my boss": [
+"should_have",
 "read"
 ]
 }

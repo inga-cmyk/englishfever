@@ -74,7 +74,7 @@ tx(T, L, 4, "Make a question with *Why*: You're always interrupting me in meetin
 
 # word order (5): subjects with a contraction, so the cards do not also make a yes/no question
 od(T, L, 3, "Put the words in order.", "my sister's always borrowing my clothes without asking", *POS)
-od(T, L, 3, "Put the words in order.", "my neighbour is always playing loud music late at night", *POS, also=["late at night my neighbour is always playing loud music"])   # r11: the old cards also made "i always want to go cycling when it's raining"
+od(T, L, 3, "Put the words in order.", "my neighbour is always playing loud music late at night", *POS, also=["late at night my neighbour is always playing loud music", "is my neighbour always playing loud music late at night"])   # r11: the old cards also made "i always want to go cycling when it's raining"
 od(T, L, 3, "Put the words in order to make a question.", "why are you always checking your phone at dinner",
    "A question: *Why* + *are* + *you* + *always* + verb-ing.", "Jautājums: *Why* + *are* + *you* + *always* + darbības vārds ar *-ing*.")
 od(T, L, 3, "Put the words in order.", "he's forever telling us how busy he is", *CONST)

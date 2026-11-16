@@ -36,3 +36,4 @@ no logical sequence, no future steps, many language errors.
 - Report draft with charts: https://claude.ai/artifact/9qPkXsFAVHFAFNExUurqXF (system, task pipeline diagram, engagement and learning data).
 - Project plan: her .docx, rewritten 16 November (engagement focus, first results, phases); not committed.
 - Data definitions and changes: `docs/RESEARCH-DATA-PLAN.md`.
+- Literature with checked references (habits, motivation, feedback, language apps, tutoring systems): `docs/THESIS-LITERATURE.md`.

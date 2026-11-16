@@ -1030,3 +1030,5 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
   .modal { border: 2px solid var(--muted); box-shadow: 0 6px 28px rgba(0,0,0,.35); }
   details.rule[open] > :not(summary) { border: 1.5px solid var(--muted); border-radius: 14px; padding: 12px; }
 }
+
+.pbody .step-left { display:block; margin-top:4px; color: var(--text); font-weight: 600; }

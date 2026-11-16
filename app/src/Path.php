@@ -202,7 +202,14 @@ final class Path
         $progress = $learned ? 1.0 : min($bank >= self::LEARN_N ? 0.95 : 0.9, ($distinct / self::LEARN_N) * ($acc >= 0.8 || !$last ? 1 : $acc / 0.8));
         $allRow = Db::one("SELECT COUNT(1) AS n, SUM(correct) AS c, MAX(created_at) AS last FROM attempts WHERE user_id = ? AND skill = ?$lv", $p);
         $fresh = $allRow && (int) $allRow['last'] > time() - self::FRESH_DAYS * 86400;
-        return ['n' => (int) ($allRow['n'] ?? 0), 'pct' => (int) ($allRow['n'] ?? 0) ? (int) round(100 * (int) $allRow['c'] / (int) $allRow['n']) : null,
+        // what is still missing for Learned, said to the learner as "3 more to go" (teacher, 16 November): different right tasks first,
+        // then accuracy, then an answer the learner writes, then a second day
+        $left = $bank >= self::LEARN_N ? max(0, self::LEARN_N - $distinct) : 0;
+        $need = null;
+        if (!$learned && $bank >= self::LEARN_N) {
+            $need = $left > 0 ? 'tasks' : ($acc < 0.8 ? 'accuracy' : ((!isset($cats['recognise']) || !(isset($cats['use']) || isset($cats['write'])) || !$typed) ? 'typed' : (count($days) < 2 ? 'day' : null)));
+        }
+        return ['left' => $left, 'need' => $need, 'n' => (int) ($allRow['n'] ?? 0), 'pct' => (int) ($allRow['n'] ?? 0) ? (int) round(100 * (int) $allRow['c'] / (int) $allRow['n']) : null,
                 'evidence' => $n, 'distinct' => $distinct, 'acc' => round($acc, 2), 'bank' => $bank,
                 'learned' => $learned, 'mastered' => $mastered, 'confirmed' => $confirmed, 'failed_check' => $failedCheck, 'progress' => round($progress, 2),
                 'done' => $learned && $fresh, 'stale' => $learned && !$fresh];
@@ -303,10 +310,11 @@ final class Path
             $bandIdx = array_search(substr($band, 0, 2), self::LEVELS, true);
             $below = $placedIdx > $bandIdx;
             $all = ['learned' => true, 'mastered' => true, 'known' => true, 'likely' => true, 'stale' => false, 'failed' => false];
-            $n = 0; $prog = 0.0; $pctSum = 0; $pctN = 0;
+            $n = 0; $prog = 0.0; $pctSum = 0; $pctN = 0; $left = 0; $need = null;
             foreach ($topics as $t) {
                 $k = $t . '|' . implode(',', $levels);
                 $mm = $m[$k] ??= self::mastery($uid, $t, $levels);
+                $left += $mm['left']; $need = $need ?? $mm['need'];
                 $n += $mm['n']; $prog += $mm['progress']; if ($mm['pct'] !== null) { $pctSum += $mm['pct']; $pctN++; }
                 // probably known: below the level found, right in the level test (and not missed there), or strong at a higher level
                 $likely = !isset($plWrong[$t]) && ($below || ($placedIdx >= $bandIdx && isset($plRight[$t])) || $strongAbove($t, $levels));
@@ -327,6 +335,7 @@ final class Path
                 : ($all['likely'] ? 'likely' : ($n ? 'work' : 'new')))));
             $done = in_array($status, ['mastered', 'learned', 'known'], true);
             $steps[] = ['id' => $id, 'label' => $label, 'level' => $band, 'levels' => $levels, 'topics' => $topics, 'fallback' => $fallback, 'needs' => null, 'best_after' => [],
+                        'left' => ($done || $status !== 'work') ? 0 : $left, 'need' => ($done || $status !== 'work') ? null : ($left > 0 ? 'tasks' : $need),
                         'done' => $done, 'answers' => $n, 'pct' => $pctN ? (int) round($pctSum / $pctN) : null, 'progress' => $done ? 1.0 : $progress,
                         'stale' => $status === 'refresh', 'status' => $status, 'weak' => $status === 'strengthen',
                         'below' => $status === 'likely', 'band_idx' => $bandIdx,

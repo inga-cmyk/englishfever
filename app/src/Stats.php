@@ -193,6 +193,7 @@ final class Stats
             'cats' => Content::catCounts(Db::all('SELECT item_id, correct FROM attempts WHERE user_id = ? ORDER BY id DESC LIMIT 2000', [$uid])),   // three kinds of task for the learner
             'placement' => $placement,
             'level_now' => self::levelNow($uid, $placement),
+            'placement_status' => Engine::placementStatus($uid),   // an old test and when the test may be taken again (teacher, 16 November)
             'visit' => self::visit($uid, $week),
             'pulse' => self::pulse(),
             'comeback' => (function () use ($uid) { $m = Mistakes::scan($uid); return ['open' => count($m['open']), 'fixed' => $m['fixed'], 'review' => min(2, count(Mistakes::reviewDue($uid, $m)))]; })(),

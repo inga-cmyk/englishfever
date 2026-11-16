@@ -241,15 +241,33 @@ final class Path
         return ['topics' => array_values(array_unique($topics)), 'levels' => array_values(array_unique($levels)), 'steps' => $steps];
     }
 
+    /** Practice answers needed before they replace the level of an old level test (teacher, 16 November, option B). */
+    public const PRACTICE_OVER_OLD_TEST = 60;
+
+    /** Answers outside the level test that count as evidence (check / use tasks). */
+    public static function practiceEvidence(int $uid): int
+    {
+        $n = 0;
+        foreach (Db::all("SELECT a.item_id FROM attempts a LEFT JOIN psessions p ON p.id = a.psession_id WHERE a.user_id = ? AND COALESCE(p.mode, '') <> 'placement'", [$uid]) as $r)
+            if (Content::role(Content::item((string) $r['item_id'])) !== 'learn') $n++;
+        return $n;
+    }
+
     public static function forUser(int $uid): array
     {
         $byHalf = Content::levelCounts()['by_half'];
-        $placed = null; $plRight = []; $plWrong = [];
+        $placed = null; $plRight = []; $plWrong = []; $byPractice = false;
         $pr = Db::one("SELECT id, state FROM psessions WHERE user_id = ? AND mode = 'placement' AND ended_at IS NOT NULL ORDER BY id DESC LIMIT 1", [$uid]);
         if ($pr) {
             $st = json_decode((string) $pr['state'], true);
             if (!empty($st['report']['overall_level'])) $placed = substr($st['report']['overall_level'], 0, 2);
             foreach (Db::all('SELECT skill, correct FROM attempts WHERE psession_id = ?', [(int) $pr['id']]) as $a) { if ((int) $a['correct']) $plRight[$a['skill']] = true; else $plWrong[$a['skill']] = true; }
+            // a level test of an older version overestimated the level (teacher, 16 November): with enough practice answers the
+            // path starts from the level the practice shows, and the old test's answers no longer mark topics as known
+            if ($placed !== null && (int) ($st['plv'] ?? 1) < Engine::PLACEMENT_V && self::practiceEvidence($uid) >= self::PRACTICE_OVER_OLD_TEST) {
+                $now = Stats::levelNow($uid, null);
+                if ($now && $now['from'] === 'answers') { $placed = substr($now['level'], 0, 2); $plRight = []; $plWrong = []; $byPractice = true; }
+            }
         }
         $self = false;
         if ($placed === null) {   // no level test yet: start from the level the learner gave (teacher, 6 November)
@@ -322,7 +340,7 @@ final class Path
         if ($current === null) foreach ($steps as $x) if (!$x['done']) { $current = $x['id']; break; }
         foreach ($steps as &$x) unset($x['band_idx']);
         unset($x);
-        return ['placed' => $placed, 'placed_by' => $placed === null ? null : ($self ? 'self' : 'test'), 'current' => $current, 'steps' => $steps,
+        return ['placed' => $placed, 'placed_by' => $placed === null ? null : ($self ? 'self' : ($byPractice ? 'practice' : 'test')), 'current' => $current, 'steps' => $steps,
                 'done' => count(array_filter($steps, fn($s) => $s['done'])), 'total' => count($steps)];
     }
 

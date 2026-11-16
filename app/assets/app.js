@@ -570,6 +570,12 @@
         });
         main = [h('h2', null, 'Ready to practise?'), h('p', { class: 'muted' }, 'Your next step, with a little review.'), mainBtn];
       }
+      // an old level test (an earlier version, often too high): invite the learner to take it again (teacher, 16 November)
+      var pst = d.placement_status;
+      if (pst && pst.has && pst.old && !resume && started) nodes.push(h('div', { class: 'card pad-s row between', style: 'margin-bottom:16px' },
+        h('div', null, h('b', { style: 'color:var(--text)' }, 'Check your level again'),
+          h('div', { class: 'small muted' }, 'The level test is more accurate now. About 10 minutes, new questions.')),
+        h('a', { class: 'btn small', href: '#/placement', onclick: function () { track('retake', 'home'); } }, 'Take the test')));
       // the other ways in: small buttons with icons, not underlined text (teacher, 27 October)
       var links = h('div', { class: 'tiles' },
         h('a', { class: 'tile', href: '#/practice' }, h('span', { class: 'tile-ic' }, icon('target')), 'Topics'),
@@ -1138,7 +1144,7 @@
     var FULL = state.meta.full_levels, COUNT = state.meta.level_counts, SKC = state.meta.skill_counts || {};
     var LEVEL_NAMES = { A1: 'Elementary', A2: 'Pre-intermediate', B1: 'Intermediate', B2: 'Upper-intermediate', C1: 'Advanced', C2: 'Proficient' };
     function full(l) { return String(l || '').slice(0, 2); }
-    var guess = full((d && d.placement && d.placement.report) ? d.placement.report.overall_level : (learnerLevel(d) || 'A2.1'));
+    var guess = full(learnerLevel(d) || 'A2.1');   // My level (from the answers; the level test only as the start), so an old test that was too high does not decide (16 November)
     var levels = {}; levels[(pre && pre.level) ? full(pre.level) : (COUNT[guess] ? guess : 'A2')] = true;
     var selected = {};
     (pre ? pre.skills : []).forEach(function (s) { selected[s] = true; });
@@ -1968,9 +1974,23 @@
       nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' }, h('h2', null, s.n > s.correct ? 'Keep building on your result' : 'All answers correct!'), h('p', { class: 'muted' }, s.n > s.correct ? (fresh ? 'Some answers were missed. Practice will help check which topics need another look.' : 'This is your saved test result. Open Second Chance on Home to see what needs checking now.') : 'Nothing was missed.'), parkedNote,
         h('a', { class: 'btn', href: '#/practice' }, 'Practise')));
     }
+    if (!fresh) { var rt = retakeCard(); if (rt) nodes.push(rt); }
     nodes.push(h('div', { class: 'card summary-cheer' }, funLine(s.accuracy >= 80, false, 'same')));
     nodes.push(h('div', { class: 'row', style: 'margin-top:16px' }, homeLink()));
     return nodes;
+  }
+
+  /** Taking the level test again (teacher, 16 November): an old test (an earlier version, often too high) can be retaken at once,
+   *  a new one after two weeks; each time with tasks the learner has not met. */
+  function retakeCard() {
+    var ps = state.dash && state.dash.placement_status;
+    if (!ps || !ps.has) return null;
+    var when = ps.retake_at ? new Date(ps.retake_at * 1000).toLocaleDateString(undefined, { day: 'numeric', month: 'long' }) : '';
+    return h('div', { class: 'card', style: 'margin-bottom:16px' }, h('div', { class: 'row between' },
+      h('div', null, h('h2', { style: 'margin:0 0 4px' }, 'Take the level test again'),
+        h('div', { class: 'small muted' }, ps.old ? 'This result comes from an earlier version of the test, which often gave a level that was too high.'
+          : (ps.can_retake ? 'New questions each time.' : 'You can take it again on ' + when + '. New questions each time.'))),
+      ps.can_retake ? h('a', { class: 'btn', href: '#/placement', onclick: function () { track('retake', ps.old ? 'old' : 'due'); } }, 'Start the test') : null));
   }
 
   /** After the level test the first training is about a topic missed in the test (teacher, 12 November, S4 A): the explanation, then new sentences. */

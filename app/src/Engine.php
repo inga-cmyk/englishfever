@@ -9,6 +9,10 @@ final class Engine
     /** The levels of the app, lowest first (tests). */
     public static function levels(): array { return self::LEVELS; }
     public const PLACEMENT_SIZES = [12, 24, 40];
+    /** Level tests made by this version of the test carry state plv = 2; older ones overestimated the level (teacher, 16 November). */
+    public const PLACEMENT_V = 2;
+    /** A learner may take the level test again after this many days; an old test (no plv) can be retaken at once. */
+    public const RETAKE_DAYS = 14;
     /** Share of each question type in a practice session, per 10: 3 choose, 4 drag (order, word bank, matching), 2 type a word or words, 1 type the whole sentence. Open writing is rare on purpose. */
     /** Topics with the mistakes Latvian adults make most (he work, no article, I have seen yesterday, What you want?, in Monday, listen music, will after when, if I would, must to ...). */
     public const TYPICAL = ['present_simple' => 1, 'agreement' => 1, 'articles' => 1, 'articles_b1' => 1, 'present_perfect' => 1, 'past_simple' => 1, 'prep_time_place' => 1,
@@ -72,6 +76,9 @@ final class Engine
             $level = Content::item($queue[0])['level'];
             $len = count($queue);
         } elseif ($mode === 'placement') {
+            $ps = self::placementStatus($uid);
+            if (!$ps['can_retake'] && Db::val('SELECT role FROM users WHERE id = ?', [$uid]) !== 'teacher')
+                throw new ApiError('You can take the level test again on ' . date('j M', (int) $ps['retake_at']) . '.', 409);
             $skills = $all;
             $level = 'A2.2';
             $len = in_array($len, self::PLACEMENT_SIZES, true) ? $len : self::PLACEMENT_LEN;
@@ -122,6 +129,7 @@ final class Engine
 
         $state = ['current' => null, 'seed' => random_int(1, 1 << 30), 'served' => [], 'theta' => [], 'g' => 2.0, 'last' => []];
         if ($smart) $state['smart'] = true;
+        if ($mode === 'placement') $state['plv'] = self::PLACEMENT_V;   // this version of the level test (teacher, 16 November)
         if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['own'] = $own; $state['review'] = array_fill_keys($review, true); }
         if (!empty($allowed)) $state['levels'] = $allowed;
         if ($point !== null) $state['point'] = $point;
@@ -536,6 +544,13 @@ final class Engine
             if (!empty($st['point']) && Content::point($it) !== $st['point']) continue;   // a new point practised on its own
             $bySkill[$it['skill']][] = $it;
         }
+        // a level test taken again asks tasks the learner has not met before, so every test is different (teacher, 16 November);
+        // a topic whose tasks have all been met drops out of the test while unmet ones are left
+        if ($placement && $bySkill) {
+            $seen = array_fill_keys(array_column(Db::all('SELECT DISTINCT item_id FROM attempts WHERE user_id = ?', [$ses['user_id']]), 'item_id'), true);
+            $unseen = array_filter(array_map(fn($list) => array_values(array_filter($list, fn($it) => !isset($seen[$it['id']]))), $bySkill));
+            if ($unseen) $bySkill = $unseen;
+        }
         if (!$placement) {
             foreach ($bySkill as $s => $list) {
                 // "Surprise me" centres each topic on the learner's own level in that topic
@@ -877,6 +892,25 @@ final class Engine
     }
 
     /** Ability that best explains the answers (logistic model, weak prior), by Newton steps. @param array $pts list of [difficulty, 1|0] */
+    /**
+     * The learner's last finished level test (teacher, 16 November): whether it was made by an older version of the test (those
+     * overestimated the level), and whether the test may be taken again now (no test, an old one, or RETAKE_DAYS since the last).
+     * @return array{has: bool, old: bool, at: ?int, can_retake: bool, retake_at: ?int}
+     */
+    public static function placementStatus(int $uid): array
+    {
+        $pr = null; $st = [];
+        foreach (Db::all("SELECT state, ended_at FROM psessions WHERE user_id = ? AND mode = 'placement' AND ended_at IS NOT NULL ORDER BY id DESC", [$uid]) as $r) {
+            $s = json_decode((string) $r['state'], true) ?: [];
+            if (!empty($s['report'])) { $pr = $r; $st = $s; break; }   // a test left after a few questions does not count
+        }
+        if (!$pr) return ['has' => false, 'old' => false, 'at' => null, 'can_retake' => true, 'retake_at' => null];
+        $old = (int) ($st['plv'] ?? 1) < self::PLACEMENT_V;
+        $at = (int) $pr['ended_at'];
+        $next = $at + self::RETAKE_DAYS * 86400;
+        return ['has' => true, 'old' => $old, 'at' => $at, 'can_retake' => $old || time() >= $next, 'retake_at' => $old ? null : $next];
+    }
+
     public static function fitAbility(array $pts): float
     {
         $th = 3.0;

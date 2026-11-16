@@ -213,11 +213,15 @@ final class Research
             $att = Db::one('SELECT COUNT(1) AS n, COALESCE(SUM(correct), 0) AS c FROM attempts WHERE user_id = ? AND created_at >= ?', [$id, (int) $u['research_at']]);
             $ses = Db::one("SELECT COUNT(1) AS n, COALESCE(SUM(CASE WHEN mode = 'smart' THEN 1 ELSE 0 END), 0) AS smart FROM psessions WHERE user_id = ? AND n > 0 AND started_at >= ?", [$id, (int) $u['research_at']]);
             $pl = Db::one("SELECT state, ended_at FROM psessions WHERE user_id = ? AND mode = 'placement' AND ended_at IS NOT NULL AND ended_at >= ? ORDER BY id DESC LIMIT 1", [$id, (int) $u['research_at']]);
-            $plLevel = '';
+            $plLevel = ''; $plNew = '';
             if ($pl) {
                 $st = json_decode((string) $pl['state'], true);
                 $plLevel = $st['report']['overall_level'] ?? '';
+                $plNew = $plLevel === '' ? '' : ((int) ($st['plv'] ?? 1) >= Engine::PLACEMENT_V ? 1 : 0);
             }
+            $plTests = 0;   // finished level tests with a result (a learner may take it again from 16 November)
+            foreach (Db::all("SELECT state FROM psessions WHERE user_id = ? AND mode = 'placement' AND ended_at IS NOT NULL AND ended_at >= ?", [$id, (int) $u['research_at']]) as $r)
+                if (!empty(json_decode((string) $r['state'], true)['report'])) $plTests++;
             $row = [
                 self::pid($id), self::weekOf((int) $u['created_at']), self::weekOf((int) $u['research_at']),
                 ($u['lang'] ?? '') === 'lv' ? 1 : 0, !empty($u['avatar']) ? 1 : 0, (int) $u['show_on_board'] === 1 ? 1 : 0,
@@ -230,7 +234,7 @@ final class Research
                 count($days), $ans, $secs, $xp, $att['n'] ? round(100 * $att['c'] / $att['n'], 1) : '',
                 (int) $ses['n'], (int) $ses['smart'], $plLevel,
                 $idx ? $idx[0] : '', $idx ? end($idx) : '', $best, count($weeks),
-                isset($days[1]) ? 1 : 0, isset($days[7]) ? 1 : 0, isset($days[30]) ? 1 : 0
+                isset($days[1]) ? 1 : 0, isset($days[7]) ? 1 : 0, isset($days[30]) ? 1 : 0, $plTests, $plNew
             );
             $rows[] = $row;
         }
@@ -238,7 +242,7 @@ final class Research
             ['pid', 'join_week', 'consent_week', 'explanations_lv', 'avatar_chosen', 'board_opt_in', 'self_level', 'practice_level'],
             array_map(fn($f) => 'cond_' . $f, $factors),
             ['observed_days', 'active_days', 'answers', 'seconds', 'xp', 'correct_pct', 'sessions', 'sessions_smart', 'placement_level',
-                'first_active_day', 'last_active_day', 'longest_streak', 'weeks_active', 'active_day1', 'active_day7', 'active_day30']
+                'first_active_day', 'last_active_day', 'longest_streak', 'weeks_active', 'active_day1', 'active_day7', 'active_day30', 'placement_tests', 'placement_new_version']
         ), $rows);
     }
 
@@ -346,6 +350,9 @@ practice_level        The level from the learner's last 60 answers that count as
 self_level            The level the learner said they have on the first visit: A2, B1, B2, C1 or unknown (empty = not asked; asked from 6 November 2026).
                       Compare it with placement_level to see who over- or underestimates themselves.
 placement_level       Overall level from the latest placement test (any time since registration).
+placement_tests       Number of finished level tests (a learner can take it again from the zip after 16 November 2026).
+placement_new_version 1 = the latest level test was made by the version of 16 November 2026 or later; 0 = an older version, which
+                      often gave a level that was too high (not a measure of ability). Empty = no test.
 first_active_day, last_active_day   study_day of first and last day with an answer.
 longest_streak        Longest run of consecutive active days.
 weeks_active          Number of 7-day blocks since registration (days 0-6, 7-13, ...) with at least one active day.

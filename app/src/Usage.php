@@ -28,6 +28,7 @@ final class Usage
         'welcome' => 'Saw a welcome-back message (which situation and text)',
         'welcome_ok' => 'Closed the welcome-back message with its button',
         'first_step' => 'Started the first training from the level test result (the topic missed)',
+        'retake' => 'Opened the level test again (home: the invitation for an old test; old / due: from My level)',
     ];
     private const DAY_CAP = 2000;   // per learner per day: a page that loops cannot fill the table
 

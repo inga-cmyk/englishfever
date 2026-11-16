@@ -122,10 +122,10 @@ foreach (array_slice(array_values(array_filter(Content::items(), fn($i) => $i['k
 }
 check($tried > 20 && $higher / $tried <= 0.1, "the similar task after a mistake is rarely at a higher level: $higher of $tried");
 
-// 6. practice only: never in the placement test
+// 6. practice only: never in the placement test (a teacher account: teachers may take the test again at once, 16 November)
 $po = array_column(array_filter(Content::items(), fn($i) => !empty($i['practice_only'])), 'id');
 check(count($po) >= 2, 'some built-in tasks are practice only: ' . implode(', ', $po));
-$uid4 = (int) Db::insert('users', ['provider' => 'guest', 'nickname' => 'Placement PO', 'nickname_key' => 'placement-po', 'created_at' => time()]);
+$uid4 = (int) Db::insert('users', ['provider' => 'guest', 'nickname' => 'Placement PO', 'nickname_key' => 'placement-po', 'role' => 'teacher', 'created_at' => time()]);
 $hit = 0;
 for ($round = 0; $round < 15; $round++) {
     $r = Engine::start($uid4, 'placement', [], null, 24);

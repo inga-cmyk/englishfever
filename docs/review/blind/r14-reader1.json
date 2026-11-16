@@ -1,0 +1,87 @@
+[
+{
+"id": "r14-001",
+"answer": "my son doesn't want to learn to drive",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r14-002",
+"answer": "to find",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r14-003",
+"answer": [
+"sending"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r14-004",
+"answer": "a little",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r14-005",
+"answer": "There's a little snow on the roads today.",
+"other_correct": [
+[
+"There is a little snow on the roads today."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Change one word' plus the visible 'a few' gives away the type of fix (few -> little); acceptable but mild.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r14-006",
+"answer": [
+"a",
+"any"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r14-007",
+"answer": "Are there any yoga classes on Sunday?",
+"other_correct": [
+[
+"Are there some yoga classes on Sunday?"
+],
+[
+"Are there yoga classes on Sunday?"
+],
+[
+"Are there any yoga classes on Sundays?"
+],
+[
+"Are there some yoga classes on Sundays?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint whether to keep 'some' or change to 'any'; 'Are there some...' is also correct (less natural); 'yes/no question' is a grammar term some A2 learners may not know.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

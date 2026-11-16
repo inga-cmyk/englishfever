@@ -1,0 +1,13 @@
+[
+{
+"id": "r15c-001",
+"answer": "I never drink coffee in the evening because it keeps me awake.",
+"other_correct": [
+"I drink coffee in the evening because it never keeps me awake."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Ambiguous: 'never' also fits in the because-clause (it never keeps me awake), which is logical and different in meaning; the instruction does not say which meaning is wanted. Also the because-clause is not needed to place 'never' in the main clause; the sentence invites the second reading. Never do I drink... (inversion) needs added 'do', so not possible.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

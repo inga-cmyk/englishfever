@@ -78,7 +78,7 @@ adv_freq,A2.1,adverbs,A2.2,check,mcq,read,,more-1.csv:102,adverbs | A2.2 | mcq |
 adv_freq,A2.1,adverbs,A2.2,check,order,read,,more-1.csv:110,adverbs | A2.2 | order | Put the words in order. | we usually have breakfast at seven
 adv_freq,A2.1,adverbs,B1.1,check,order,read,,b1-new-5.csv:47,adverbs | B1.1 | order | Put the words in order. | we rarely eat out on weekdays
 adv_freq,A2.1,adverbs,B1.1,check,gap,read,,b1-new-5.csv:57,adverbs | B1.1 | gap | He ___ goes to the gym. Maybe once a year. | 
-adv_freq,A2.1,adverbs,B1.1,use,text,read,,b1-new-5.csv:65,adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening because it keeps me awake. | 
+adv_freq,A2.1,adverbs,B1.1,use,text,read,,b1-new-5.csv:65,adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening. | 
 adv_freq,A2.1,adverbs,B1.1,check,mcq,read,,b1-new-5.csv:75,adverbs | B1.1 | mcq | Which sentence is correct? | She never drinks coffee.
 adv_freq,A2.1,adverbs,B1.1,learn,match,read,,b1-new-5.csv:89,adverbs | B1.1 | match | Match each word with its meaning. | always = every time ; never = not at any time ; often = many times ; rarely = only a few times
 adv_freq,A2.1,adverbs,B1.2,use,text,read,,b1-new-5.csv:86,adverbs | B1.2 | text | Rewrite with always: She is late again and again. | 

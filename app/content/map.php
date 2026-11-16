@@ -4398,7 +4398,7 @@ return json_decode(<<<'EF_JSON_END'
 "adverbs | order | Put the words in order. | we usually have breakfast at seven": "adv_freq",
 "adverbs | order | Put the words in order. | we rarely eat out on weekdays": "adv_freq",
 "adverbs | gap | He ___ goes to the gym. Maybe once a year. | ": "adv_freq",
-"adverbs | text | Put *never* in the right place: I drink coffee in the evening because it keeps me awake. | ": "adv_freq",
+"adverbs | text | Put *never* in the right place: I drink coffee in the evening. | ": "adv_freq",
 "adverbs | mcq | Which sentence is correct? | She never drinks coffee.": "adv_freq",
 "adverbs | match | Match each word with its meaning. | always = every time ; never = not at any time ; often = many times ; rarely = only a few times": "adv_freq",
 "adverbs | text | Rewrite with always: She is late again and again. | ": "adv_freq",

@@ -437,29 +437,6 @@
   }
 
   /** After a step from My learning path: "Continue with" the next step that is not mastered yet. */
-  /** What is still missing in a step that is in progress, in the learner's words (teacher, 16 November): "3 more to go". */
-  function stepNote(st) {
-    if (!st || st.status !== 'work' || !st.need) return '';
-    if (st.need === 'tasks') return st.left === 1 ? 'Only 1 more to go!' : (st.left <= 3 ? 'Only ' + st.left + ' more to go!' : st.left + ' more to go');
-    if (st.need === 'accuracy') return 'Almost there: get the next few right';
-    if (st.need === 'typed') return 'Almost there: one answer you write yourself';
-    if (st.need === 'day') return 'Almost there: come back another day to confirm';
-    return '';
-  }
-  /** After a training on a path step: how far the step is now (teacher, 16 November). */
-  function stepProgressCard(stepId) {
-    var card = h('div', { class: 'card stepprog', style: 'margin-bottom:16px' });
-    api('path').then(function (p) {
-      var st = p.steps.find(function (x) { return x.id === stepId; });
-      if (!st) { card.remove(); return; }
-      var note = st.done ? 'Step complete ✓' : stepNote(st);
-      if (!note) { card.remove(); return; }
-      card.append(h('div', { class: 'label' }, 'My learning path'), h('b', { style: 'color:var(--text)' }, st.label),
-        h('div', { class: 'meter green', style: 'margin:8px 0 6px' }, h('i', { style: 'width:' + Math.round(100 * Math.max(0.04, st.progress)) + '%' })),
-        h('div', { class: 'small', style: 'color:var(--text)' }, note));
-    }).catch(function () { card.remove(); });
-    return card;
-  }
   function pathNextCard(doneId) {
     var card = h('div', { class: 'card pathnext', style: 'margin-bottom:16px' });
     api('path').then(function (p) {
@@ -493,8 +470,7 @@
           h('span', { class: 'ptext' }, rec ? h('span', { class: 'prec' }, '★ Recommended') : null, h('b', null, st.label),
             h('small', null, lv(st.level) + ' · ' + ((st.check && st.status === 'new') ? 'Quick check' : (STATE[st.status] || ''))),
             st.status === 'strengthen' ? h('small', { class: 'path-reason' }, 'Recent answers suggest revisiting this topic. Your overall level has not changed.') : null,
-            st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null,
-            stepNote(st) ? h('small', { class: 'step-left' }, stepNote(st)) : null),
+            st.progress > 0 ? h('span', { class: 'mini green' }, h('i', { style: 'width:' + Math.round(Math.max(0.04, st.progress) * 100) + '%' })) : null),
           rec ? h('span', { class: 'prec-go', 'aria-hidden': 'true' }, icon('arrow')) : null));   // no separate Go button: the step itself is the button, like Practise now on Home (teacher, 6 November)
       return el;
     }
@@ -512,8 +488,14 @@
       var ci = steps.findIndex(function (s) { return s.id === path.current; });
       var show = all ? steps.map(function (s, i) { return [s, i]; })
         : steps.map(function (s, i) { return [s, i]; }).filter(function (p) { return ci < 0 ? p[1] >= steps.length - 3 : (p[1] >= ci && p[1] <= ci + 3); });   // the recommended step is always the first one shown (teacher, 6 November)
+      // the whole level at a glance (teacher, 16 November): "A2: 6 of 14 steps done" with a line; the level of the recommended step
+      var cur = ci >= 0 ? steps[ci] : steps[steps.length - 1], L = lv(cur.level);
+      var mine = steps.filter(function (x) { return lv(x.level) === L; }), nDone = mine.filter(function (x) { return x.done; }).length;
+      var over = h('div', { class: 'pover' }, h('div', { class: 'pover-t' }, h('b', null, L), ': ' + nDone + ' of ' + mine.length + ' steps done'),
+        h('div', { class: 'meter green', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(mine.length), 'aria-valuenow': String(nDone) }, h('i', { style: 'width:' + Math.round(100 * nDone / Math.max(1, mine.length)) + '%' })));
       card.replaceChildren(
         h('div', { class: 'row between' }, h('h2', { style: 'margin:0' }, 'My learning path'), path.placed ? null : h('span', { class: 'small muted' }, 'based on your practice')),
+        over,
         h('div', { class: 'ppath' }, show.map(function (p) { return node(p[0]); })),
         h('button', { type: 'button', class: 'btn ghost small', style: 'margin-top:6px', onclick: function () { all = !all; draw(); } }, all ? 'Show less' : 'All steps'));
     }
@@ -1889,7 +1871,6 @@
         h('div', null, h('div', { class: 'big' }, s.accuracy + '%'), h('div', { class: 'muted small' }, 'accuracy')))));
     var ps = s.pathStep;
     if (!ps) try { var q = JSON.parse(localStorage.getItem('ef_pathstep') || 'null'); if (q && q.sid == s.session_id) ps = q.step; } catch (e) {}
-    if (ps && !s.comeback) nodes.push(stepProgressCard(ps));   // how far this step is now: "3 more to go" (teacher, 16 November)
     if (!s.comeback) nodes.push(nextActions(s, ps));   // one clear choice (teacher, 3 November): try again / try harder / next topic
     nodes.push(h('div', { class: 'card summary-cheer' }, funLine(s.accuracy >= 80, false, 'same')));
     nodes.push(reminderCard());

@@ -3799,6 +3799,11 @@
 "round": "r13",
 "task": "r13-102"
 },
+"e758e036e8550046": {
+"gate_key": "cond_first | A2.2 | gap | Hurry up! If you miss the bus, you ___ ___ late. | ",
+"round": "r16c",
+"task": "r16c-001"
+},
 "e75b4941c6b25713": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: The flat is quite small. ___, it is very close to the centre. | However",
 "round": "r1",

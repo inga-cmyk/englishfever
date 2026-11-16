@@ -1176,19 +1176,15 @@
     }
     function newPointsGroup() {   // the New group: one tile per new grammar point; a tile opens its card, whose button starts that point
       var all = state.meta.new_points || [];
-      if (!all.length) return null;
-      // the points of the chosen levels; the others behind "Other levels" (tester's report, 16 November: B1 points showed with A2
-      // chosen; teacher, 4 November: new things at other levels stay reachable)
+      // only the points of the chosen level (A2 / B1 / B2; a point's levels are A2.1, A2.2 …), closed until opened (teacher, 16 November)
       var ch = chosenLevels();
-      var here = all.filter(function (p) { return (p.levels || []).some(function (l) { return ch.indexOf(l) >= 0; }); });
-      var other = all.filter(function (p) { return here.indexOf(p) < 0; });
-      function tiles(list) { return h('div', { class: 'tilegrid' }, list.map(function (p) {
-        return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, all.indexOf(p)));
-      })); }
-      var det = h('details', { class: 'picker-group', open: ('_new' in openMap) ? openMap._new : true },
+      var here = all.filter(function (p) { return (p.levels || []).some(function (l) { return ch.indexOf(full(l)) >= 0; }); });
+      if (!here.length) return null;
+      var det = h('details', { class: 'picker-group', open: ('_new' in openMap) ? openMap._new : false },
         h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(here.length))),
-        here.length ? tiles(here) : h('p', { class: 'small muted' }, 'No new points at the chosen level.'),
-        other.length ? h('details', { class: 'new-other' }, h('summary', { class: 'small' }, 'Other levels (' + other.length + ')'), tiles(other)) : null);
+        h('div', { class: 'tilegrid' }, here.map(function (p) {
+          return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, all.indexOf(p)));
+        })));
       det.addEventListener('toggle', function () { openMap._new = det.open; });
       return det;
     }

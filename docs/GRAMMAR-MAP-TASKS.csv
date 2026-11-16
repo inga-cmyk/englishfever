@@ -21,21 +21,23 @@ a_an,A2.1,articles,B1.2,check,mcq,read,,b1-new-1.csv:71,articles | B1.2 | mcq | 
 a_an,A2.1,articles,B1.2,check,mcq,read,,b1-new-1.csv:72,articles | B1.2 | mcq | Which sentence is correct? | She spent half an hour waiting for the bus.
 a_an,A2.1,articles,B1.2,check,order,read,,twins-2.csv:34,articles | B1.2 | order | Put the words in order. | she spent half an hour choosing a jacket
 a_an,A2.1,articles,B1.2,check,order,read,,twins-2.csv:35,articles | B1.2 | order | Put the words in order. | what a useful skill to have at work
-a_few,A2.1,quantity,A2.1,check,mcq,read,,gap-fill-a2-1.csv:41,quantity | A2.1 | mcq | Which sentence has a mistake? | I put a few salt in the soup.
-a_few,A2.1,quantity,A2.1,check,gap,read,,gap-fill-a2-1.csv:42,"quantity | A2.1 | gap | Can you wait ___ minutes, please? | "
-a_few,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:43,quantity | A2.1 | gap | Write *a few* or *a little*: I go to the gym ___ times a week. | 
-a_few,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:44,quantity | A2.1 | gap | Write *a few* or *a little*: Can I have ___ milk in my tea? | 
-a_few,A2.1,quantity,A2.1,use,text,read,,gap-fill-a2-1.csv:45,"quantity | A2.1 | text | Say it another way with *a few* or *a little*: I speak some Spanish, but not much. | "
-a_few,A2.1,quantity,A2.1,use,text,read,,gap-fill-a2-1.csv:46,quantity | A2.1 | text | Say it another way with *a few* or *a little*: There are three or four cafés near my office. | 
+a_few,A2.1,quantity,A2.1,check,mcq,read,,gap-fill-a2-1.csv:44,quantity | A2.1 | mcq | Which sentence has a mistake? | I put a few salt in the soup.
+a_few,A2.1,quantity,A2.1,check,gap,read,,gap-fill-a2-1.csv:45,"quantity | A2.1 | gap | Can you wait ___ minutes, please? | "
+a_few,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:46,quantity | A2.1 | gap | Write *a few* or *a little*: I go to the gym ___ times a week. | 
+a_few,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:47,quantity | A2.1 | gap | Write *a few* or *a little*: Can I have ___ milk in my tea? | 
+a_few,A2.1,quantity,A2.1,use,text,read,,gap-fill-a2-1.csv:48,"quantity | A2.1 | text | Say it another way with *a few* or *a little*: I speak some Spanish, but not much. | "
+a_few,A2.1,quantity,A2.1,use,text,read,,gap-fill-a2-1.csv:49,quantity | A2.1 | text | Say it another way with *a few* or *a little*: There are three or four cafés near my office. | 
+a_few,A2.1,quantity,A2.1,check,mcq,read,,gap-fill-a2-1.csv:50,quantity | A2.1 | mcq | Choose the correct option: I need ___ help with my laptop. | a little
+a_few,A2.1,quantity,A2.1,use,text,read,,gap-fill-a2-1.csv:51,quantity | A2.1 | text | Correct the mistake. Change one word: There's a few snow on the roads today. | 
 a_few,A2.1,quantity,A2.2,check,order,read,,b1-new-1.csv:81,quantity | A2.2 | order | Put the words in order. | we need a few more chairs
 a_few,A2.1,quantity,A2.2,check,mcq,read,,more-1.csv:28,"quantity | A2.2 | mcq | Choose the correct option: We've got ___ time, so let's have a coffee. | a little"
 a_few,A2.1,quantity,A2.2,check,mcq,read,,more-1.csv:29,quantity | A2.2 | mcq | Choose the correct option: I have ___ good friends at work. | a few
 a_few,A2.1,quantity,B1.1,check,order,read,,b1-new-1.csv:84,quantity | B1.1 | order | Put the words in order. | she has only a few friends in this city
-a_the,A2.1,articles,A2.1,check,mcq,read,,gap-fill-a2-1.csv:47,articles | A2.1 | mcq | Which sentence has a mistake? | I ordered a pizza. A pizza was cold.
-a_the,A2.1,articles,A2.1,check,gap,read,,gap-fill-a2-1.csv:48,articles | A2.1 | gap | There was ___ wallet on my seat on the bus. ___ wallet was empty. | 
-a_the,A2.1,articles,A2.1,use,gap,read,,gap-fill-a2-1.csv:49,"articles | A2.1 | gap | Complete with *a*, *an* or *the*: My sister has ___ new job. ___ job is in Riga. | "
-a_the,A2.1,articles,A2.1,use,gap,read,,gap-fill-a2-1.csv:50,"articles | A2.1 | gap | Complete with *a*, *an* or *the*: We rented ___ car in Spain. ___ car was very small. | "
-a_the,A2.1,articles,A2.1,use,text,read,,gap-fill-a2-1.csv:51,articles | A2.1 | text | Correct the mistake: I bought a new laptop. A laptop is very fast. | 
+a_the,A2.1,articles,A2.1,check,mcq,read,,gap-fill-a2-1.csv:52,articles | A2.1 | mcq | Which sentence has a mistake? | I ordered a pizza. A pizza was cold.
+a_the,A2.1,articles,A2.1,check,gap,read,,gap-fill-a2-1.csv:53,articles | A2.1 | gap | There was ___ wallet on my seat on the bus. ___ wallet was empty. | 
+a_the,A2.1,articles,A2.1,use,gap,read,,gap-fill-a2-1.csv:54,"articles | A2.1 | gap | Complete with *a*, *an* or *the*: My sister has ___ new job. ___ job is in Riga. | "
+a_the,A2.1,articles,A2.1,use,gap,read,,gap-fill-a2-1.csv:55,"articles | A2.1 | gap | Complete with *a*, *an* or *the*: We rented ___ car in Spain. ___ car was very small. | "
+a_the,A2.1,articles,A2.1,use,text,read,,gap-fill-a2-1.csv:56,articles | A2.1 | text | Correct the mistake: I bought a new laptop. A laptop is very fast. | 
 a_the,A2.1,articles,A2.2,check,order,read,,b1-new-1.csv:42,articles | A2.2 | order | Put the words in order. | i have a cat and a dog
 a_the,A2.1,articles,A2.2,check,mcq,read,,more-1.csv:40,articles | A2.2 | mcq | Choose the correct option: I saw a cat in the garden. ___ cat was black. | The
 a_the,A2.1,articles,B1.1,check,order,read,,b1-new-1.csv:43,articles | B1.1 | order | Put the words in order. | i saw a man and the man waved to me
@@ -60,15 +62,15 @@ adj_adv,A2.1,adverbs,A2.2,check,mcq,read,,more-1.csv:101,adverbs | A2.2 | mcq | 
 adj_adv,A2.1,adverbs,A2.2,use,gap,read,,more-1.csv:105,adverbs | A2.2 | gap | Please speak ___. The baby is sleeping. (quiet) | 
 adj_adv,A2.1,adverbs,A2.2,use,text,read,,more-1.csv:108,adverbs | A2.2 | text | Correct the mistake: She sings very good. | 
 adj_adv,A2.1,adverbs,B1.2,check,mcq,read,,b1-new-5.csv:79,adverbs | B1.2 | mcq | Which sentence is NOT correct? | He speaks Spanish fluent.
-adj_basic,A2.1,adj_order,A2.1,check,mcq,read,,gap-fill-a2-1.csv:20,adj_order | A2.1 | mcq | Choose the correct option: The shops here ___. | are very expensive
-adj_basic,A2.1,adj_order,A2.1,check,order,read,,gap-fill-a2-1.csv:21,adj_order | A2.1 | order | Put the words in order. | she has a very good job
-adj_basic,A2.1,adj_order,A2.1,use,gap,read,,gap-fill-a2-1.csv:22,adj_order | A2.1 | gap | Use the words in brackets: I need two ___ for the trip. (bag / big) | 
-adj_basic,A2.1,adj_order,A2.1,check,gap,read,,gap-fill-a2-1.csv:23,adj_order | A2.1 | gap | We have two ___ ___ in our garden. | 
-adj_basic,A2.1,adj_order,A2.1,check,mcq,read,,gap-fill-a2-1.csv:24,adj_order | A2.1 | mcq | Which sentence has a mistake? | We rented a car small for the week.
-adj_basic,A2.1,adj_order,A2.1,use,gap,read,,gap-fill-a2-1.csv:25,adj_order | A2.1 | gap | Use the words in brackets: My new headphones ___. (comfortable / very / be) | 
-adj_basic,A2.1,adj_order,A2.1,check,order,read,,gap-fill-a2-1.csv:26,adj_order | A2.1 | order | Put the words in order. | my grandmother is very active for her age
-adj_basic,A2.1,adj_order,A2.1,check,gap,read,,gap-fill-a2-1.csv:27,adj_order | A2.1 | gap | The rooms in this hotel ___ very ___. | 
-adj_basic,A2.1,adj_order,A2.1,use,text,read,,gap-fill-a2-1.csv:28,adj_order | A2.1 | text | Start with *Our*: We have very nice neighbours. | 
+adj_basic,A2.1,adj_order,A2.1,check,mcq,read,,gap-fill-a2-1.csv:23,adj_order | A2.1 | mcq | Choose the correct option: The shops here ___. | are very expensive
+adj_basic,A2.1,adj_order,A2.1,check,order,read,,gap-fill-a2-1.csv:24,adj_order | A2.1 | order | Put the words in order. | she has a very good job
+adj_basic,A2.1,adj_order,A2.1,use,gap,read,,gap-fill-a2-1.csv:25,adj_order | A2.1 | gap | Use the words in brackets: I need two ___ for the trip. (bag / big) | 
+adj_basic,A2.1,adj_order,A2.1,check,gap,read,,gap-fill-a2-1.csv:26,adj_order | A2.1 | gap | We have two ___ ___ in our garden. | 
+adj_basic,A2.1,adj_order,A2.1,check,mcq,read,,gap-fill-a2-1.csv:27,adj_order | A2.1 | mcq | Which sentence has a mistake? | We rented a car small for the week.
+adj_basic,A2.1,adj_order,A2.1,use,gap,read,,gap-fill-a2-1.csv:28,adj_order | A2.1 | gap | Use the words in brackets: My new headphones ___. (comfortable / very / be) | 
+adj_basic,A2.1,adj_order,A2.1,check,order,read,,gap-fill-a2-1.csv:29,adj_order | A2.1 | order | Put the words in order. | my grandmother is very active for her age
+adj_basic,A2.1,adj_order,A2.1,check,gap,read,,gap-fill-a2-1.csv:30,adj_order | A2.1 | gap | The rooms in this hotel ___ very ___. | 
+adj_basic,A2.1,adj_order,A2.1,use,text,read,,gap-fill-a2-1.csv:31,adj_order | A2.1 | text | Start with *Our*: We have very nice neighbours. | 
 adj_basic,A2.1,adj_order,B1.1,check,mcq,read,,b1-new-5.csv:29,adj_order | B1.1 | mcq | Which sentence is correct? | She has two small boxes.
 adv_freq,A2.1,adverbs,A2.2,check,order,read,,b1-new-5.csv:44,adverbs | A2.2 | order | Put the words in order. | he always arrives late
 adv_freq,A2.1,adverbs,A2.2,check,mcq,read,,b1-new-5.csv:69,adverbs | A2.2 | mcq | Which sentence is NOT correct? | He late always arrives.
@@ -202,8 +204,10 @@ conj_so_bec,A2.1,conj_basic,A2.2,check,mcq,read,,conjunctions-1.csv:10,"conj_bas
 conj_so_bec,A2.1,conj_basic,A2.2,use,text,read,,conjunctions-1.csv:21,conj_basic | A2.2 | text | Join with *because*: We stayed at home. It was raining. | 
 conj_so_bec,A2.1,conj_basic,A2.2,use,text,read,,conjunctions-1.csv:22,conj_basic | A2.2 | text | Join with *so*: The shop was closed. I went home. | 
 conj_so_bec,A2.1,past_simple,B1.1,use,text,read,,b1-upgrades-1.csv:12,past_simple | B1.1 | text | Join the sentences with because: I stayed at home. I felt ill. | 
-count_unc,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:57,"quantity | A2.1 | gap | Write *a*, *an* or *some*: I need ___ umbrella and ___ money. | "
-count_unc,A2.1,quantity,A2.1,check,mcq,read,,gap-fill-a2-1.csv:58,quantity | A2.1 | mcq | Which sentence has a mistake? | I don't have some free time this week.
+count_unc,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:62,"quantity | A2.1 | gap | Write *a*, *an* or *some*: I need ___ umbrella and ___ money. | "
+count_unc,A2.1,quantity,A2.1,check,mcq,read,,gap-fill-a2-1.csv:63,quantity | A2.1 | mcq | Which sentence has a mistake? | I don't have some free time this week.
+count_unc,A2.1,quantity,A2.1,use,gap,read,,gap-fill-a2-1.csv:64,"quantity | A2.1 | gap | Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread. | "
+count_unc,A2.1,quantity,A2.1,use,text,read,,gap-fill-a2-1.csv:65,quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | 
 count_unc,A2.1,articles,A2.2,check,mcq,read,,b1-new-1.csv:62,"articles | A2.2 | mcq | Choose the correct option: I'd like ___ water, please. | some"
 count_unc,A2.1,quantity,A2.2,check,gap,read,,b1-new-1.csv:86,quantity | A2.2 | gap | Is there ___ bread left? | 
 count_unc,A2.1,quantity,A2.2,check,gap,read,,b1-new-1.csv:87,quantity | A2.2 | gap | I need ___ eggs for the cake. | 
@@ -398,21 +402,21 @@ plural_irr,A2.1,irregular_plurals,A2.2,check,mcq,read,,more-1.csv:56,irregular_p
 plural_irr,A2.1,irregular_plurals,A2.2,use,gap,read,,more-1.csv:59,irregular_plurals | A2.2 | gap | There are lots of ___ in the old house. (mouse) | 
 plural_irr,A2.1,irregular_plurals,A2.2,use,gap,read,,more-1.csv:60,irregular_plurals | A2.2 | gap | The farmer has fifty ___. (sheep) | 
 plural_irr,A2.1,irregular_plurals,A2.2,use,text,read,,more-1.csv:62,irregular_plurals | A2.2 | text | Correct the mistake: The childrens are playing outside. | 
-plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:11,irregular_plurals | A2.1 | mcq | Choose the correct option: We visited three ___ on our trip. | countries
-plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:12,irregular_plurals | A2.1 | mcq | Choose the correct option: I work late two ___ a week. | days
-plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:13,irregular_plurals | A2.1 | mcq | Which sentence is correct? | We bought two watches and three bags.
-plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:14,irregular_plurals | A2.1 | mcq | Which sentence has a mistake? | Our town has two new librarys.
-plural_reg,A2.1,irregular_plurals,A2.1,check,gap,read,,gap-fill-a2-1.csv:15,irregular_plurals | A2.1 | gap | We need two big ___ for the books. | 
-plural_reg,A2.1,irregular_plurals,A2.1,check,gap,read,,gap-fill-a2-1.csv:16,irregular_plurals | A2.1 | gap | There are lots of ___ in December. | 
-plural_reg,A2.1,irregular_plurals,A2.1,use,gap,read,,gap-fill-a2-1.csv:17,irregular_plurals | A2.1 | gap | I've got three ___ for the office. (key) | 
-plural_reg,A2.1,irregular_plurals,A2.1,use,gap,read,,gap-fill-a2-1.csv:18,irregular_plurals | A2.1 | gap | I have two English ___ a week. (class) | 
-plural_reg,A2.1,irregular_plurals,A2.1,use,text,read,,gap-fill-a2-1.csv:19,irregular_plurals | A2.1 | text | Start with *Two*: The bus is late. | 
+plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:14,irregular_plurals | A2.1 | mcq | Choose the correct option: We visited three ___ on our trip. | countries
+plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:15,irregular_plurals | A2.1 | mcq | Choose the correct option: I work late two ___ a week. | days
+plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:16,irregular_plurals | A2.1 | mcq | Which sentence is correct? | We bought two watches and three bags.
+plural_reg,A2.1,irregular_plurals,A2.1,check,mcq,read,,gap-fill-a2-1.csv:17,irregular_plurals | A2.1 | mcq | Which sentence has a mistake? | Our town has two new librarys.
+plural_reg,A2.1,irregular_plurals,A2.1,check,gap,read,,gap-fill-a2-1.csv:18,irregular_plurals | A2.1 | gap | We need two big ___ for the books. | 
+plural_reg,A2.1,irregular_plurals,A2.1,check,gap,read,,gap-fill-a2-1.csv:19,irregular_plurals | A2.1 | gap | There are lots of ___ in December. | 
+plural_reg,A2.1,irregular_plurals,A2.1,use,gap,read,,gap-fill-a2-1.csv:20,irregular_plurals | A2.1 | gap | I've got three ___ for the office. (key) | 
+plural_reg,A2.1,irregular_plurals,A2.1,use,gap,read,,gap-fill-a2-1.csv:21,irregular_plurals | A2.1 | gap | I have two English ___ a week. (class) | 
+plural_reg,A2.1,irregular_plurals,A2.1,use,text,read,,gap-fill-a2-1.csv:22,irregular_plurals | A2.1 | text | Start with *Two*: The bus is late. | 
 plural_reg,A2.1,irregular_plurals,A2.2,use,gap,read,,more-1.csv:61,irregular_plurals | A2.2 | gap | Riga and Tallinn are beautiful ___. (city) | 
-prep_none,A2.1,prep_time_place,A2.1,check,mcq,read,,gap-fill-a2-1.csv:52,prep_time_place | A2.1 | mcq | Which sentence has a mistake? | I started a new job on last Monday.
-prep_none,A2.1,prep_time_place,A2.1,check,mcq,read,,gap-fill-a2-1.csv:53,prep_time_place | A2.1 | mcq | Choose the correct option: Are you free ___ this weekend? | —
-prep_none,A2.1,prep_time_place,A2.1,check,gap,read,,gap-fill-a2-1.csv:54,prep_time_place | A2.1 | gap | I check my email ___ every morning. | 
-prep_none,A2.1,prep_time_place,A2.1,check,gap,read,,gap-fill-a2-1.csv:55,prep_time_place | A2.1 | gap | The new gym opens ___ tomorrow. | 
-prep_none,A2.1,prep_time_place,A2.1,use,text,read,,gap-fill-a2-1.csv:56,prep_time_place | A2.1 | text | Correct the mistake: We arrived in Rome on yesterday. | 
+prep_none,A2.1,prep_time_place,A2.1,check,mcq,read,,gap-fill-a2-1.csv:57,prep_time_place | A2.1 | mcq | Which sentence has a mistake? | I started a new job on last Monday.
+prep_none,A2.1,prep_time_place,A2.1,check,mcq,read,,gap-fill-a2-1.csv:58,prep_time_place | A2.1 | mcq | Choose the correct option: Are you free ___ this weekend? | —
+prep_none,A2.1,prep_time_place,A2.1,check,gap,read,,gap-fill-a2-1.csv:59,prep_time_place | A2.1 | gap | I check my email ___ every morning. | 
+prep_none,A2.1,prep_time_place,A2.1,check,gap,read,,gap-fill-a2-1.csv:60,prep_time_place | A2.1 | gap | The new gym opens ___ tomorrow. | 
+prep_none,A2.1,prep_time_place,A2.1,use,text,read,,gap-fill-a2-1.csv:61,prep_time_place | A2.1 | text | Correct the mistake: We arrived in Rome on yesterday. | 
 prep_none,A2.1,prep_time_place,A2.2,check,mcq,read,,a2-prepositions-1.csv:9,prep_time_place | A2.2 | mcq | Choose the correct option: I'll call you ___ tomorrow. | —
 prep_none,A2.1,prep_time_place,A2.2,check,mcq,read,,a2-prepositions-1.csv:10,prep_time_place | A2.2 | mcq | Choose the correct option: We met ___ last Friday. | —
 prep_none,A2.1,prep_time_place,A2.2,use,text,read,,a2-prepositions-1.csv:32,prep_time_place | A2.2 | text | Correct the mistake: See you on next Monday! | 
@@ -571,12 +575,12 @@ ps_pc,A2.1,present_continuous,A2.1,learn,mcq,read,pc-A21-2a-r2,built-in,present_
 ps_pc,A2.1,present_simple,A2.1,learn,match,read,var-ps-a21-match-01,built-in,present_simple | A2.1 | match | Match each sentence to its meaning. | I walk to work every day. = A regular habit. ; I am walking to work now. = An action in progress now. ; I walked to work yesterday. = A finished action yesterday.
 ps_pc,A2.1,present_continuous,A2.1,learn,mcq,read,,contrast-1.csv:7,"present_continuous | A2.1 | mcq | Which sentence is about now, not a habit? | She's working from home today."
 ps_pc,A2.1,present_continuous,A2.1,learn,mcq,read,,contrast-1.csv:8,present_continuous | A2.1 | mcq | Which sentence is about a habit? | I take the bus to work.
-ps_pc,A2.1,present_simple,A2.1,check,mcq,read,,gap-fill-a2-1.csv:29,present_simple | A2.1 | mcq | Choose the correct option: What time ___ you usually finish work? | do
-ps_pc,A2.1,present_continuous,A2.1,check,mcq,read,,gap-fill-a2-1.csv:30,present_continuous | A2.1 | mcq | Which sentence has a mistake? | Look! Our bus comes round the corner.
-ps_pc,A2.1,present_continuous,A2.1,check,order,read,,gap-fill-a2-1.csv:31,present_continuous | A2.1 | order | Put the words in order. | she usually swims but today she is running
-ps_pc,A2.1,present_continuous,A2.1,check,gap,read,,gap-fill-a2-1.csv:32,present_continuous | A2.1 | gap | Can I call you back? I ___ dinner. | 
-ps_pc,A2.1,present_continuous,A2.1,use,gap,read,,gap-fill-a2-1.csv:33,present_continuous | A2.1 | gap | Look! Dad ___ the dishes. He never ___ that! (wash / do) | 
-ps_pc,A2.1,present_continuous,A2.1,use,text,read,,gap-fill-a2-1.csv:34,present_continuous | A2.1 | text | Rewrite the sentence about this moment. Start with *Right now*: My sister reads the news on her phone. | 
+ps_pc,A2.1,present_simple,A2.1,check,mcq,read,,gap-fill-a2-1.csv:32,present_simple | A2.1 | mcq | Choose the correct option: What time ___ you usually finish work? | do
+ps_pc,A2.1,present_continuous,A2.1,check,mcq,read,,gap-fill-a2-1.csv:33,present_continuous | A2.1 | mcq | Which sentence has a mistake? | Look! Our bus comes round the corner.
+ps_pc,A2.1,present_continuous,A2.1,check,order,read,,gap-fill-a2-1.csv:34,present_continuous | A2.1 | order | Put the words in order. | she usually swims but today she is running
+ps_pc,A2.1,present_continuous,A2.1,check,gap,read,,gap-fill-a2-1.csv:35,present_continuous | A2.1 | gap | Can I call you back? I ___ dinner. | 
+ps_pc,A2.1,present_continuous,A2.1,use,gap,read,,gap-fill-a2-1.csv:36,present_continuous | A2.1 | gap | Look! Dad ___ the dishes. He never ___ that! (wash / do) | 
+ps_pc,A2.1,present_continuous,A2.1,use,text,read,,gap-fill-a2-1.csv:37,present_continuous | A2.1 | text | Rewrite the sentence about this moment. Start with *Right now*: My sister reads the news on her phone. | 
 ps_pc,A2.1,present_continuous,A2.2,check,gap,read,,contrast-1.csv:9,"present_continuous | A2.2 | gap | Tom usually ___ to work, but today he ___ the bus. | "
 ps_pc,A2.1,present_simple,B1.1,check,mcq,read,,b1-tenses-1.csv:38,"present_simple | B1.1 | mcq | Choose the correct option: Mina ___ at the bank, but today she is working from home. | usually works"
 ps_pc,A2.1,present_continuous,B1.1,check,mcq,read,,b1-tenses-1.csv:78,"present_continuous | B1.1 | mcq | Choose the correct option: I usually walk to work, but this week I ___ the bus because of the snow. | am taking"
@@ -769,13 +773,16 @@ vp_like_ing,A2.1,verb_patterns,A2.1,check,mcq,read,,gap-fill-a2-1.csv:7,verb_pat
 vp_like_ing,A2.1,verb_patterns,A2.1,use,gap,read,,gap-fill-a2-1.csv:8,verb_patterns | A2.1 | gap | Does your partner like ___ computer games? (play) | 
 vp_like_ing,A2.1,verb_patterns,A2.1,use,text,read,,gap-fill-a2-1.csv:9,verb_patterns | A2.1 | text | Correct the mistake: Maria wants take a taxi to the airport. | 
 vp_like_ing,A2.1,verb_patterns,A2.1,use,text,read,,gap-fill-a2-1.csv:10,verb_patterns | A2.1 | text | Say it another way with *love*: Cooking is my favourite hobby. | 
+vp_like_ing,A2.1,verb_patterns,A2.1,check,order,read,,gap-fill-a2-1.csv:11,verb_patterns | A2.1 | order | Put the words in order. | my son doesn't want to learn to drive
+vp_like_ing,A2.1,verb_patterns,A2.1,check,mcq,read,,gap-fill-a2-1.csv:12,verb_patterns | A2.1 | mcq | Choose the correct option: Tom wants ___ a bigger flat. | to find
+vp_like_ing,A2.1,verb_patterns,A2.1,check,gap,read,,gap-fill-a2-1.csv:13,verb_patterns | A2.1 | gap | My grandma loves ___ photos to the family. | 
 vp_like_ing,A2.1,verb_patterns,A2.2,check,gap,read,,b1-new-3.csv:112,verb_patterns | A2.2 | gap | She likes ___ in the garden. | 
-was_were,A2.1,past_simple,A2.1,check,mcq,read,,gap-fill-a2-1.csv:35,past_simple | A2.1 | mcq | Which sentence has a mistake? | The concert tickets was expensive.
-was_were,A2.1,past_simple,A2.1,check,gap,read,,gap-fill-a2-1.csv:36,past_simple | A2.1 | gap | ___ your parents at the wedding? | 
-was_were,A2.1,past_simple,A2.1,check,gap,read,,gap-fill-a2-1.csv:37,past_simple | A2.1 | gap | The shops ___ busy yesterday. | 
-was_were,A2.1,past_simple,A2.1,check,order,read,,gap-fill-a2-1.csv:38,past_simple | A2.1 | order | Put the words in order. | where were you at lunchtime
-was_were,A2.1,past_simple,A2.1,check,order,read,,gap-fill-a2-1.csv:39,past_simple | A2.1 | order | Put the words in order. | why was your phone off
-was_were,A2.1,past_simple,A2.1,use,text,read,,gap-fill-a2-1.csv:40,past_simple | A2.1 | text | Make a yes/no question: The exam was difficult. | 
+was_were,A2.1,past_simple,A2.1,check,mcq,read,,gap-fill-a2-1.csv:38,past_simple | A2.1 | mcq | Which sentence has a mistake? | The concert tickets was expensive.
+was_were,A2.1,past_simple,A2.1,check,gap,read,,gap-fill-a2-1.csv:39,past_simple | A2.1 | gap | ___ your parents at the wedding? | 
+was_were,A2.1,past_simple,A2.1,check,gap,read,,gap-fill-a2-1.csv:40,past_simple | A2.1 | gap | The shops ___ busy yesterday. | 
+was_were,A2.1,past_simple,A2.1,check,order,read,,gap-fill-a2-1.csv:41,past_simple | A2.1 | order | Put the words in order. | where were you at lunchtime
+was_were,A2.1,past_simple,A2.1,check,order,read,,gap-fill-a2-1.csv:42,past_simple | A2.1 | order | Put the words in order. | why was your phone off
+was_were,A2.1,past_simple,A2.1,use,text,read,,gap-fill-a2-1.csv:43,past_simple | A2.1 | text | Make a yes/no question: The exam was difficult. | 
 was_were,A2.1,past_simple,A2.2,use,gap,read,pa-A22-3a,built-in,past_simple | A2.2 | gap | We ___ late because the bus ___ slow. (be) | 
 was_were,A2.1,past_simple,A2.2,check,mcq,read,,a2-extras-1.csv:48,past_simple | A2.2 | mcq | Choose the correct option: We ___ very tired after the long walk. | were
 was_were,A2.1,past_simple,A2.2,use,gap,read,,a2-extras-1.csv:49,"past_simple | A2.2 | gap | It ___ cold yesterday, so we ___ inside. (be / stay) | "
@@ -791,14 +798,14 @@ will_form,A2.1,future,B1.1,use,text,read,,b1-tenses-2.csv:125,future | B1.1 | te
 will_form,A2.1,future,B1.1,check,mcq,read,,b1-tenses-2.csv:132,future | B1.1 | mcq | Which sentence is NOT correct? | I will to meet you at the gate.
 will_form,A2.1,future,B1.2,use,gap,read,,b1-tenses-2.csv:118,future | B1.2 | gap | The final is tomorrow. I don't think the team ___ the match. (win) | 
 would_like,A2.1,verb_patterns,A2.2,check,gap,read,,b1-new-3.csv:111,verb_patterns | A2.2 | gap | I'd like ___ a coffee. | 
-adv_degree,A2.2,adverbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:87,adverbs | A2.2 | mcq | Choose the correct option: We enjoyed the cooking class ___. | very much
-adv_degree,A2.2,adverbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:88,adverbs | A2.2 | mcq | Which sentence has a mistake? | We very enjoyed the concert.
-adv_degree,A2.2,adverbs,A2.2,check,order,read,,gap-fill-a2-1.csv:89,adverbs | A2.2 | order | Put the words in order. | i like my new flat very much
-adv_degree,A2.2,adverbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:90,adverbs | A2.2 | gap | This suitcase is ___ heavy for me. | 
-adv_degree,A2.2,adverbs,A2.2,use,gap,read,,gap-fill-a2-1.csv:91,adverbs | A2.2 | gap | Complete with one word: My grandmother loves her garden very ___. | 
-adv_degree,A2.2,adverbs,A2.2,check,order,read,,gap-fill-a2-1.csv:92,adverbs | A2.2 | order | Put the words in order. | we had a very nice holiday
-adv_degree,A2.2,adverbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:93,adverbs | A2.2 | gap | I ___ like this podcast. | 
-adv_degree,A2.2,adverbs,A2.2,use,text,read,,gap-fill-a2-1.csv:94,adverbs | A2.2 | text | Say it another way with *really*: We liked the new restaurant very much. | 
+adv_degree,A2.2,adverbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:94,adverbs | A2.2 | mcq | Choose the correct option: We enjoyed the cooking class ___. | very much
+adv_degree,A2.2,adverbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:95,adverbs | A2.2 | mcq | Which sentence has a mistake? | We very enjoyed the concert.
+adv_degree,A2.2,adverbs,A2.2,check,order,read,,gap-fill-a2-1.csv:96,adverbs | A2.2 | order | Put the words in order. | i like my new flat very much
+adv_degree,A2.2,adverbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:97,adverbs | A2.2 | gap | This suitcase is ___ heavy for me. | 
+adv_degree,A2.2,adverbs,A2.2,use,gap,read,,gap-fill-a2-1.csv:98,adverbs | A2.2 | gap | Complete with one word: My grandmother loves her garden very ___. | 
+adv_degree,A2.2,adverbs,A2.2,check,order,read,,gap-fill-a2-1.csv:99,adverbs | A2.2 | order | Put the words in order. | we had a very nice holiday
+adv_degree,A2.2,adverbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:100,adverbs | A2.2 | gap | I ___ like this podcast. | 
+adv_degree,A2.2,adverbs,A2.2,use,text,read,,gap-fill-a2-1.csv:101,adverbs | A2.2 | text | Say it another way with *really*: We liked the new restaurant very much. | 
 adv_degree,A2.2,adverbs,A2.2,use,text,read,,more-1.csv:109,adverbs | A2.2 | text | Correct the mistake: I very like this song. | 
 adv_degree,A2.2,adverbs,B1.2,check,gap,read,,b1-new-5.csv:60,adverbs | B1.2 | gap | The test was ___ easy. | 
 aux_mix,A2.2,aux_verbs,A2.2,check,mcq,read,,aux-verbs-1.csv:7,aux_verbs | A2.2 | mcq | Choose the correct option: ___ you ever been to London? | Have
@@ -998,14 +1005,14 @@ c1,A2.2,cond_first,B1.2,use,gap,read,,b1-cond-rep-1.csv:63,"cond_first | B1.2 | 
 c1,A2.2,cond_first,B1.2,use,text,read,,b1-cond-rep-1.csv:66,cond_first | B1.2 | text | Make a question with What: you / do / if it rains | 
 c1,A2.2,cond_first,B1.2,check,mcq,read,,b1-cond-rep-1.csv:73,cond_first | B1.2 | mcq | Choose the correct option: What ___ if you lose your job? | will you do
 c1,A2.2,future,B1.2,check,order,read,,b1-tenses-2.csv:112,future | B1.2 | order | Put the words in order. | we won't be able to come if it snows heavily
-cmp_adv,A2.2,comparison,A2.2,check,mcq,read,,gap-fill-a2-1.csv:95,comparison | A2.2 | mcq | Choose the correct option: Please drive ___. The road is icy. | more slowly
-cmp_adv,A2.2,comparison,A2.2,check,mcq,read,,gap-fill-a2-1.csv:96,comparison | A2.2 | mcq | Which sentence has a mistake? | Tom drives more fast than his father.
-cmp_adv,A2.2,comparison,A2.2,check,order,read,,gap-fill-a2-1.csv:97,comparison | A2.2 | order | Put the words in order. | my sister speaks english more fluently than me
-cmp_adv,A2.2,comparison,A2.2,check,gap,read,,gap-fill-a2-1.csv:98,comparison | A2.2 | gap | She plays the guitar ___ than her brother. | 
-cmp_adv,A2.2,comparison,A2.2,use,gap,read,,gap-fill-a2-1.csv:99,comparison | A2.2 | gap | Marta has never had an accident. She drives ___ than her brother. (careful) | 
-cmp_adv,A2.2,comparison,A2.2,use,gap,read,,gap-fill-a2-1.csv:100,comparison | A2.2 | gap | Today I started work ___ than usual. (early) | 
-cmp_adv,A2.2,comparison,A2.2,use,gap,read,,gap-fill-a2-1.csv:101,"comparison | A2.2 | gap | Of all my colleagues, Anna lives ___ from the office. (far) | "
-cmp_adv,A2.2,comparison,A2.2,use,text,read,,gap-fill-a2-1.csv:102,comparison | A2.2 | text | Start with *My brother*: I cook worse than my brother. | 
+cmp_adv,A2.2,comparison,A2.2,check,mcq,read,,gap-fill-a2-1.csv:102,comparison | A2.2 | mcq | Choose the correct option: Please drive ___. The road is icy. | more slowly
+cmp_adv,A2.2,comparison,A2.2,check,mcq,read,,gap-fill-a2-1.csv:103,comparison | A2.2 | mcq | Which sentence has a mistake? | Tom drives more fast than his father.
+cmp_adv,A2.2,comparison,A2.2,check,order,read,,gap-fill-a2-1.csv:104,comparison | A2.2 | order | Put the words in order. | my sister speaks english more fluently than me
+cmp_adv,A2.2,comparison,A2.2,check,gap,read,,gap-fill-a2-1.csv:105,comparison | A2.2 | gap | She plays the guitar ___ than her brother. | 
+cmp_adv,A2.2,comparison,A2.2,use,gap,read,,gap-fill-a2-1.csv:106,comparison | A2.2 | gap | Marta has never had an accident. She drives ___ than her brother. (careful) | 
+cmp_adv,A2.2,comparison,A2.2,use,gap,read,,gap-fill-a2-1.csv:107,comparison | A2.2 | gap | Today I started work ___ than usual. (early) | 
+cmp_adv,A2.2,comparison,A2.2,use,gap,read,,gap-fill-a2-1.csv:108,"comparison | A2.2 | gap | Of all my colleagues, Anna lives ___ from the office. (far) | "
+cmp_adv,A2.2,comparison,A2.2,use,text,read,,gap-fill-a2-1.csv:109,comparison | A2.2 | text | Start with *My brother*: I cook worse than my brother. | 
 cmp_adv,A2.2,comparison,B1.1,check,mcq,read,,comparison-1.csv:30,"comparison | B1.1 | mcq | Choose the correct option: She works ___ than her colleagues, so she often finishes late. | harder"
 cmp_adv,A2.2,comparison,B1.1,check,mcq,read,,comparison-1.csv:31,"comparison | B1.1 | mcq | Choose the correct option: Of all the students, Maria speaks English ___ . | the most fluently"
 cmp_as,A2.2,comparison,A2.2,check,mcq,read,,comparison-1.csv:17,comparison | A2.2 | mcq | Choose the correct form: My phone is ___ yours: they both cost 300 euros. | as expensive as
@@ -1024,20 +1031,20 @@ cmp_as,A2.2,comparison,B1.2,check,order,read,,twins-2.csv:51,comparison | B1.2 |
 conj_parallel,A2.2,conj_basic,A2.2,check,mcq,read,,conjunctions-1.csv:11,conj_basic | A2.2 | mcq | Which sentence is NOT correct? | I like dancing and sing.
 conj_parallel,A2.2,conj_basic,A2.2,use,text,read,,conjunctions-1.csv:23,conj_basic | A2.2 | text | Correct the mistake: I like reading and to swim. | 
 conj_parallel,A2.2,conj_basic,A2.2,check,order,read,,conjunctions-1.csv:26,conj_basic | A2.2 | order | Put the words in order. | she got up and left the room
-conj_parallel,A2.2,conj_basic,A2.2,check,mcq,read,,gap-fill-a2-1.csv:117,conj_basic | A2.2 | mcq | Choose the correct option: My sister loves swimming and ___. | cycling
-conj_parallel,A2.2,conj_basic,A2.2,check,mcq,read,,gap-fill-a2-1.csv:118,conj_basic | A2.2 | mcq | Which sentence has a mistake? | I usually have breakfast and reading the news.
-conj_parallel,A2.2,conj_basic,A2.2,check,gap,read,,gap-fill-a2-1.csv:119,conj_basic | A2.2 | gap | Would you like to stay in tonight or ___ out? | 
-conj_parallel,A2.2,conj_basic,A2.2,check,gap,read,,gap-fill-a2-1.csv:120,conj_basic | A2.2 | gap | On Saturday we visited my parents and ___ in their garden. | 
-conj_parallel,A2.2,conj_basic,A2.2,use,gap,read,,gap-fill-a2-1.csv:121,conj_basic | A2.2 | gap | Thanks for coming and ___ me with the move. (help) | 
-conj_parallel,A2.2,conj_basic,A2.2,use,gap,read,,gap-fill-a2-1.csv:122,conj_basic | A2.2 | gap | The best parts of my job are meeting people and ___. (travel) | 
-conj_parallel,A2.2,conj_basic,A2.2,use,text,read,,gap-fill-a2-1.csv:123,conj_basic | A2.2 | text | Correct the mistake: She closed her laptop and go home. | 
-could_past,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:103,"modal_verbs | A2.2 | mcq | Choose the correct option: It was very hot, so I ___ sleep last night. | couldn't"
-could_past,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:104,"modal_verbs | A2.2 | mcq | Which sentence has a mistake? | When I was ten, I can speak French."
-could_past,A2.2,modal_verbs,A2.2,check,order,read,,gap-fill-a2-1.csv:105,modal_verbs | A2.2 | order | Put the words in order. | we couldn't see the stage from our seats
-could_past,A2.2,modal_verbs,A2.2,check,order,read,,gap-fill-a2-1.csv:106,modal_verbs | A2.2 | order | Put the words in order. | when i was younger i could run much faster
-could_past,A2.2,modal_verbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:107,modal_verbs | A2.2 | gap | ___ your parents ___ a car when they were young? | 
-could_past,A2.2,modal_verbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:108,"modal_verbs | A2.2 | gap | As a teenager, Ben ___ ___ any song on the guitar. | "
-could_past,A2.2,modal_verbs,A2.2,use,text,read,,gap-fill-a2-1.csv:109,modal_verbs | A2.2 | text | Make a yes/no question: Tom could speak German when he lived in Berlin. | 
+conj_parallel,A2.2,conj_basic,A2.2,check,mcq,read,,gap-fill-a2-1.csv:124,conj_basic | A2.2 | mcq | Choose the correct option: My sister loves swimming and ___. | cycling
+conj_parallel,A2.2,conj_basic,A2.2,check,mcq,read,,gap-fill-a2-1.csv:125,conj_basic | A2.2 | mcq | Which sentence has a mistake? | I usually have breakfast and reading the news.
+conj_parallel,A2.2,conj_basic,A2.2,check,gap,read,,gap-fill-a2-1.csv:126,conj_basic | A2.2 | gap | Would you like to stay in tonight or ___ out? | 
+conj_parallel,A2.2,conj_basic,A2.2,check,gap,read,,gap-fill-a2-1.csv:127,conj_basic | A2.2 | gap | On Saturday we visited my parents and ___ in their garden. | 
+conj_parallel,A2.2,conj_basic,A2.2,use,gap,read,,gap-fill-a2-1.csv:128,conj_basic | A2.2 | gap | Thanks for coming and ___ me with the move. (help) | 
+conj_parallel,A2.2,conj_basic,A2.2,use,gap,read,,gap-fill-a2-1.csv:129,conj_basic | A2.2 | gap | The best parts of my job are meeting people and ___. (travel) | 
+conj_parallel,A2.2,conj_basic,A2.2,use,text,read,,gap-fill-a2-1.csv:130,conj_basic | A2.2 | text | Correct the mistake: She closed her laptop and go home. | 
+could_past,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:110,"modal_verbs | A2.2 | mcq | Choose the correct option: It was very hot, so I ___ sleep last night. | couldn't"
+could_past,A2.2,modal_verbs,A2.2,check,mcq,read,,gap-fill-a2-1.csv:111,"modal_verbs | A2.2 | mcq | Which sentence has a mistake? | When I was ten, I can speak French."
+could_past,A2.2,modal_verbs,A2.2,check,order,read,,gap-fill-a2-1.csv:112,modal_verbs | A2.2 | order | Put the words in order. | we couldn't see the stage from our seats
+could_past,A2.2,modal_verbs,A2.2,check,order,read,,gap-fill-a2-1.csv:113,modal_verbs | A2.2 | order | Put the words in order. | when i was younger i could run much faster
+could_past,A2.2,modal_verbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:114,modal_verbs | A2.2 | gap | ___ your parents ___ a car when they were young? | 
+could_past,A2.2,modal_verbs,A2.2,check,gap,read,,gap-fill-a2-1.csv:115,"modal_verbs | A2.2 | gap | As a teenager, Ben ___ ___ any song on the guitar. | "
+could_past,A2.2,modal_verbs,A2.2,use,text,read,,gap-fill-a2-1.csv:116,modal_verbs | A2.2 | text | Make a yes/no question: Tom could speak German when he lived in Berlin. | 
 could_past,A2.2,modal_verbs,B1.1,use,gap,read,,twins-1.csv:7,"modal_verbs | B1.1 | gap | I'm sorry, I ___ come to your party last Saturday. I was ill. (can) | "
 could_past,A2.2,modal_verbs,B1.1,use,gap,read,,twins-1.csv:8,"modal_verbs | B1.1 | gap | When I was ten, I ___ swim really well. (can) | "
 could_past,A2.2,more_modals,B1.2,use,gap,read,,b1-new-4.csv:23,"more_modals | B1.2 | gap | Write the missing word or words: I broke my leg, so I ___ play football last year. | "
@@ -1049,7 +1056,7 @@ dep_none,A2.2,dep_prepositions,A2.2,check,mcq,read,,a2-mistakes-1.csv:8,dep_prep
 dep_none,A2.2,dep_prepositions,A2.2,check,mcq,read,,a2-mistakes-1.csv:9,dep_prepositions | A2.2 | mcq | Which sentence is NOT correct? | She joined to the team last year.
 dep_none,A2.2,dep_prepositions,A2.2,use,text,read,,a2-mistakes-1.csv:26,dep_prepositions | A2.2 | text | Correct the mistake: She joined to our team in May. | 
 dep_none,A2.2,dep_prepositions,A2.2,use,text,read,,a2-mistakes-1.csv:27,dep_prepositions | A2.2 | text | Correct the mistake: Please call to me tomorrow. | 
-dep_none,A2.2,dep_prepositions,A2.2,use,text,read,,gap-fill-a2-1.csv:153,dep_prepositions | A2.2 | text | Say it another way with *discuss*: We talked about the new timetable at the meeting. | 
+dep_none,A2.2,dep_prepositions,A2.2,use,text,read,,gap-fill-a2-1.csv:160,dep_prepositions | A2.2 | text | Say it another way with *discuss*: We talked about the new timetable at the meeting. | 
 dep_none,A2.2,dep_prepositions,A2.2,check,mcq,read,,more-1.csv:18,dep_prepositions | A2.2 | mcq | Choose the correct option: We discussed ___ the plan for an hour. | —
 fut_arr,A2.2,present_continuous,A2.2,learn,mcq,read,pc-A22-2a-r2,built-in,present_continuous | A2.2 | mcq | Which sentence is about a plan for the future? | I'm meeting Anna tomorrow at five.
 fut_arr,A2.2,present_continuous,A2.2,use,gap,read,pc-A22-3a-r3,built-in,present_continuous | A2.2 | gap | Ask about someone's plans: What ___ this weekend? (you / do) | 
@@ -1126,13 +1133,13 @@ indef_form,A2.2,indefinite_pronouns,A2.2,check,order,read,,b1-new-5.csv:135,inde
 indef_form,A2.2,indefinite_pronouns,A2.2,use,gap,read,,b1-new-5.csv:151,"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: I'm sure I've seen her ___. Maybe at a party. | "
 indef_form,A2.2,indefinite_pronouns,A2.2,check,mcq,read,,b1-new-5.csv:159,indefinite_pronouns | A2.2 | mcq | Choose the correct option: ___ called you. He didn't leave his name. | Someone
 indef_form,A2.2,indefinite_pronouns,A2.2,learn,match,read,,b1-new-5.csv:172,"indefinite_pronouns | A2.2 | match | Match each word with its meaning. | someone = a person, not known ; anywhere = in any place ; nothing = not one thing ; everybody = all the people"
-indef_form,A2.2,indefinite_pronouns,A2.2,check,mcq,read,,gap-fill-a2-1.csv:110,indefinite_pronouns | A2.2 | mcq | Choose the correct option: The party was great. ___ had a good time. | Everybody
-indef_form,A2.2,indefinite_pronouns,A2.2,check,mcq,read,,gap-fill-a2-1.csv:111,indefinite_pronouns | A2.2 | mcq | Which sentence has a mistake? | I heard anybody in the garden last night.
-indef_form,A2.2,indefinite_pronouns,A2.2,check,gap,read,,gap-fill-a2-1.csv:112,indefinite_pronouns | A2.2 | gap | My glasses are ___ in this room. Can you help me look? | 
-indef_form,A2.2,indefinite_pronouns,A2.2,check,gap,read,,gap-fill-a2-1.csv:113,indefinite_pronouns | A2.2 | gap | There's ___ in my wallet. It's empty. | 
-indef_form,A2.2,indefinite_pronouns,A2.2,use,gap,read,,gap-fill-a2-1.csv:114,"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: ___ works here on Sundays. The office is closed. | "
-indef_form,A2.2,indefinite_pronouns,A2.2,use,gap,read,,gap-fill-a2-1.csv:115,"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: There are trees ___: in the streets, in the parks, by the river. | "
-indef_form,A2.2,indefinite_pronouns,A2.2,use,text,read,,gap-fill-a2-1.csv:116,indefinite_pronouns | A2.2 | text | Make it negative: I bought something for Anna. | 
+indef_form,A2.2,indefinite_pronouns,A2.2,check,mcq,read,,gap-fill-a2-1.csv:117,indefinite_pronouns | A2.2 | mcq | Choose the correct option: The party was great. ___ had a good time. | Everybody
+indef_form,A2.2,indefinite_pronouns,A2.2,check,mcq,read,,gap-fill-a2-1.csv:118,indefinite_pronouns | A2.2 | mcq | Which sentence has a mistake? | I heard anybody in the garden last night.
+indef_form,A2.2,indefinite_pronouns,A2.2,check,gap,read,,gap-fill-a2-1.csv:119,indefinite_pronouns | A2.2 | gap | My glasses are ___ in this room. Can you help me look? | 
+indef_form,A2.2,indefinite_pronouns,A2.2,check,gap,read,,gap-fill-a2-1.csv:120,indefinite_pronouns | A2.2 | gap | There's ___ in my wallet. It's empty. | 
+indef_form,A2.2,indefinite_pronouns,A2.2,use,gap,read,,gap-fill-a2-1.csv:121,"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: ___ works here on Sundays. The office is closed. | "
+indef_form,A2.2,indefinite_pronouns,A2.2,use,gap,read,,gap-fill-a2-1.csv:122,"indefinite_pronouns | A2.2 | gap | Complete with a word like *someone, anything, nowhere*: There are trees ___: in the streets, in the parks, by the river. | "
+indef_form,A2.2,indefinite_pronouns,A2.2,use,text,read,,gap-fill-a2-1.csv:123,indefinite_pronouns | A2.2 | text | Make it negative: I bought something for Anna. | 
 indef_form,A2.2,indefinite_pronouns,B1.1,learn,match,read,,b1-new-5.csv:173,indefinite_pronouns | B1.1 | match | Match each question with its answer. | Who called you? = Nobody. ; What did you eat? = Nothing. ; Where did you go? = Nowhere.
 indef_neg,A2.2,indefinite_pronouns,A2.2,check,order,read,,b1-new-5.csv:133,indefinite_pronouns | A2.2 | order | Put the words in order. | i didn't see anyone there
 indef_neg,A2.2,indefinite_pronouns,A2.2,check,gap,read,,b1-new-5.csv:140,indefinite_pronouns | A2.2 | gap | I didn't see ___ in the park. | 
@@ -1191,9 +1198,9 @@ link_time,A2.2,conj_linkers,A2.2,check,mcq,read,,conjunctions-1.csv:33,"conj_lin
 link_time,A2.2,conj_linkers,A2.2,check,mcq,read,,conjunctions-1.csv:34,conj_linkers | A2.2 | mcq | Choose the correct option: I listen to podcasts ___ I'm cooking. | while
 link_time,A2.2,conj_linkers,A2.2,use,gap,read,,conjunctions-1.csv:44,conj_linkers | A2.2 | gap | Complete with one word: My phone rang ___ I was driving. | 
 link_time,A2.2,conj_linkers,A2.2,use,gap,read,,conjunctions-1.csv:46,conj_linkers | A2.2 | gap | Complete with one word: First we checked in. ___ we went to the beach. | 
-link_time,A2.2,conj_linkers,A2.2,check,gap,read,,gap-fill-a2-1.csv:146,"conj_linkers | A2.2 | gap | ___ we had dinner, we went for a walk by the sea. | "
-link_time,A2.2,conj_linkers,A2.2,check,gap,read,,gap-fill-a2-1.csv:147,conj_linkers | A2.2 | gap | We always buy popcorn ___ the film. | 
-link_time,A2.2,conj_linkers,A2.2,check,mcq,read,,gap-fill-a2-1.csv:148,"conj_linkers | A2.2 | mcq | Which sentence has a mistake? | Before go to work, I walk the dog."
+link_time,A2.2,conj_linkers,A2.2,check,gap,read,,gap-fill-a2-1.csv:153,"conj_linkers | A2.2 | gap | ___ we had dinner, we went for a walk by the sea. | "
+link_time,A2.2,conj_linkers,A2.2,check,gap,read,,gap-fill-a2-1.csv:154,conj_linkers | A2.2 | gap | We always buy popcorn ___ the film. | 
+link_time,A2.2,conj_linkers,A2.2,check,mcq,read,,gap-fill-a2-1.csv:155,"conj_linkers | A2.2 | mcq | Which sentence has a mistake? | Before go to work, I walk the dog."
 link_time,A2.2,conj_linkers,B1.1,use,text,read,,conjunctions-1.csv:52,"conj_linkers | B1.1 | text | Correct the mistake: I had dinner. After, I watched a film. | "
 link_time,A2.2,conj_linkers,B1.1,check,order,read,,conjunctions-1.csv:55,conj_linkers | B1.1 | order | Put the words in order. | she reads the news while she has breakfast
 link_time,A2.2,conj_linkers,B1.1,learn,gap,read,,learn-drag-3.csv:30,"conj_linkers | B1.1 | gap | I finished work. ___, I went to the gym. | "
@@ -1298,11 +1305,11 @@ pas_by,A2.2,present_simple_passive,A2.2,learn,match,read,,a2-big-1.csv:152,prese
 pas_by,A2.2,past_simple_passive,A2.2,check,order,read,,a2-big-1.csv:161,past_simple_passive | A2.2 | order | Put the words in order. | these pictures were painted by children
 pas_by,A2.2,past_simple_passive,A2.2,learn,match,read,,a2-big-1.csv:183,past_simple_passive | A2.2 | match | Match each famous thing with who made it. | Hamlet = was written by Shakespeare. ; The Mona Lisa = was painted by Leonardo. ; The telephone = was invented by Bell. ; Harry Potter = was written by Rowling.
 pas_by,A2.2,past_simple_passive,A2.2,learn,match,read,,a2-big-1.csv:184,past_simple_passive | A2.2 | match | Match each beginning with its ending. | The song = was sung by a choir. ; The cake = was baked by my mother. ; The film = was directed by a famous director. ; The thief = was caught by the police.
-pas_by,A2.2,past_simple_passive,A2.2,check,mcq,read,,gap-fill-a2-1.csv:137,past_simple_passive | A2.2 | mcq | Which sentence has a mistake? | Our kitchen chairs were made from my uncle.
-pas_by,A2.2,present_simple_passive,A2.2,use,gap,read,,gap-fill-a2-1.csv:138,present_simple_passive | A2.2 | gap | Complete with one word: Our hotel is owned ___ a Swedish company. | 
-pas_by,A2.2,present_simple_passive,A2.2,check,gap,read,,gap-fill-a2-1.csv:139,"present_simple_passive | A2.2 | gap | In our village, the bread is baked ___ a local family. | "
-pas_by,A2.2,present_simple_passive,A2.2,use,gap,read,,gap-fill-a2-1.csv:140,present_simple_passive | A2.2 | gap | Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean) | 
-pas_by,A2.2,past_simple_passive,A2.2,use,text,read,,gap-fill-a2-1.csv:141,past_simple_passive | A2.2 | text | Start with *This bridge*: A Latvian engineer designed this bridge. | 
+pas_by,A2.2,past_simple_passive,A2.2,check,mcq,read,,gap-fill-a2-1.csv:144,past_simple_passive | A2.2 | mcq | Which sentence has a mistake? | Our kitchen chairs were made from my uncle.
+pas_by,A2.2,present_simple_passive,A2.2,use,gap,read,,gap-fill-a2-1.csv:145,present_simple_passive | A2.2 | gap | Complete with one word: Our hotel is owned ___ a Swedish company. | 
+pas_by,A2.2,present_simple_passive,A2.2,check,gap,read,,gap-fill-a2-1.csv:146,"present_simple_passive | A2.2 | gap | In our village, the bread is baked ___ a local family. | "
+pas_by,A2.2,present_simple_passive,A2.2,use,gap,read,,gap-fill-a2-1.csv:147,present_simple_passive | A2.2 | gap | Write one word in each gap: The windows of our office are ___ ___ a small company every month. (clean) | 
+pas_by,A2.2,past_simple_passive,A2.2,use,text,read,,gap-fill-a2-1.csv:148,past_simple_passive | A2.2 | text | Start with *This bridge*: A Latvian engineer designed this bridge. | 
 pas_by,A2.2,present_simple_passive,B1.1,learn,mcq,read,psp-B11-2a-r2,built-in,"present_simple_passive | B1.1 | mcq | In 'The report is checked by the manager', what is the focus? | The report and what happens to it."
 pas_by,A2.2,past_simple_passive,B1.1,learn,mcq,read,pasp-B11-2a-r2,built-in,past_simple_passive | B1.1 | mcq | Which sentence tells us who did the action? | The song was written by Adele.
 pas_by,A2.2,present_simple_passive,B1.1,check,order,read,,b1-passives-1.csv:2,present_simple_passive | B1.1 | order | Put the words in order. | every phone is checked by two people before it is sold
@@ -1605,22 +1612,22 @@ plural_only,A2.2,irregular_plurals,A2.2,check,mcq,read,,a2-mistakes-1.csv:68,irr
 plural_only,A2.2,irregular_plurals,A2.2,check,gap,read,,a2-mistakes-1.csv:77,irregular_plurals | A2.2 | gap | The police ___ asking questions. | 
 plural_only,A2.2,irregular_plurals,A2.2,use,gap,read,,a2-mistakes-1.csv:83,irregular_plurals | A2.2 | gap | Look! The police ___ here. (be) | 
 plural_only,A2.2,irregular_plurals,A2.2,use,text,read,,a2-mistakes-1.csv:89,irregular_plurals | A2.2 | text | Correct the mistake: The police is outside. | 
-plural_only,A2.2,irregular_plurals,A2.2,check,mcq,read,,gap-fill-a2-1.csv:142,irregular_plurals | A2.2 | mcq | Which sentence has a mistake? | My glasses is in the car.
-plural_only,A2.2,irregular_plurals,A2.2,check,gap,read,,gap-fill-a2-1.csv:143,irregular_plurals | A2.2 | gap | Can I borrow ___ ___ for a minute? | 
-plural_only,A2.2,irregular_plurals,A2.2,use,gap,read,,gap-fill-a2-1.csv:144,irregular_plurals | A2.2 | gap | My jeans ___ too big for me now. (be) | 
-plural_only,A2.2,irregular_plurals,A2.2,use,text,read,,gap-fill-a2-1.csv:145,irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | 
+plural_only,A2.2,irregular_plurals,A2.2,check,mcq,read,,gap-fill-a2-1.csv:149,irregular_plurals | A2.2 | mcq | Which sentence has a mistake? | My glasses is in the car.
+plural_only,A2.2,irregular_plurals,A2.2,check,gap,read,,gap-fill-a2-1.csv:150,irregular_plurals | A2.2 | gap | Can I borrow ___ ___ for a minute? | 
+plural_only,A2.2,irregular_plurals,A2.2,use,gap,read,,gap-fill-a2-1.csv:151,irregular_plurals | A2.2 | gap | My jeans ___ too big for me now. (be) | 
+plural_only,A2.2,irregular_plurals,A2.2,use,text,read,,gap-fill-a2-1.csv:152,irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | 
 plural_only,A2.2,irregular_plurals,A2.2,check,order,read,,more-1.csv:63,irregular_plurals | A2.2 | order | Put the words in order. | the police are looking for him
 pp_been_gone,A2.2,present_perfect,A2.2,learn,mcq,read,,a2-extras-1.csv:71,present_perfect | A2.2 | mcq | Choose the correct meaning: 'Mum has gone to the shop.' | She is at the shop now.
-pp_been_gone,A2.2,present_perfect,A2.2,check,mcq,read,,gap-fill-a2-1.csv:59,present_perfect | A2.2 | mcq | Choose the correct option: The office is empty. Everyone ___ home. | has gone
-pp_been_gone,A2.2,present_perfect,A2.2,check,mcq,read,,gap-fill-a2-1.csv:60,present_perfect | A2.2 | mcq | Choose the correct option: I've ___ to the gym. I feel great now. | been
-pp_been_gone,A2.2,present_perfect,A2.2,check,mcq,read,,gap-fill-a2-1.csv:61,present_perfect | A2.2 | mcq | Which sentence has a mistake? | My parents have gone to Italy twice.
-pp_been_gone,A2.2,present_perfect,A2.2,use,gap,read,,gap-fill-a2-1.csv:62,present_perfect | A2.2 | gap | Write *been* or *gone*: We have ___ to the cinema twice this month. | 
-pp_been_gone,A2.2,present_perfect,A2.2,use,gap,read,,gap-fill-a2-1.csv:63,present_perfect | A2.2 | gap | Write *been* or *gone*: Dan's ___ to a football match. He'll be back at ten. | 
-pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:64,present_perfect | A2.2 | gap | Where's Oskars? He ___ ___ to the airport to meet his parents. | 
-pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:65,present_perfect | A2.2 | gap | Your car looks so clean! Have you ___ to the car wash? | 
-pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:66,present_perfect | A2.2 | gap | I can't call Lena now. She's ___ to bed. | 
-pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:67,present_perfect | A2.2 | gap | Our friends are back from their holiday. They ___ ___ to Greece. | 
-pp_been_gone,A2.2,present_perfect,A2.2,use,text,read,,gap-fill-a2-1.csv:68,"present_perfect | A2.2 | text | Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there. | "
+pp_been_gone,A2.2,present_perfect,A2.2,check,mcq,read,,gap-fill-a2-1.csv:66,present_perfect | A2.2 | mcq | Choose the correct option: The office is empty. Everyone ___ home. | has gone
+pp_been_gone,A2.2,present_perfect,A2.2,check,mcq,read,,gap-fill-a2-1.csv:67,present_perfect | A2.2 | mcq | Choose the correct option: I've ___ to the gym. I feel great now. | been
+pp_been_gone,A2.2,present_perfect,A2.2,check,mcq,read,,gap-fill-a2-1.csv:68,present_perfect | A2.2 | mcq | Which sentence has a mistake? | My parents have gone to Italy twice.
+pp_been_gone,A2.2,present_perfect,A2.2,use,gap,read,,gap-fill-a2-1.csv:69,present_perfect | A2.2 | gap | Write *been* or *gone*: We have ___ to the cinema twice this month. | 
+pp_been_gone,A2.2,present_perfect,A2.2,use,gap,read,,gap-fill-a2-1.csv:70,present_perfect | A2.2 | gap | Write *been* or *gone*: Dan's ___ to a football match. He'll be back at ten. | 
+pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:71,present_perfect | A2.2 | gap | Where's Oskars? He ___ ___ to the airport to meet his parents. | 
+pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:72,present_perfect | A2.2 | gap | Your car looks so clean! Have you ___ to the car wash? | 
+pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:73,present_perfect | A2.2 | gap | I can't call Lena now. She's ___ to bed. | 
+pp_been_gone,A2.2,present_perfect,A2.2,check,gap,read,,gap-fill-a2-1.csv:74,present_perfect | A2.2 | gap | Our friends are back from their holiday. They ___ ___ to Greece. | 
+pp_been_gone,A2.2,present_perfect,A2.2,use,text,read,,gap-fill-a2-1.csv:75,"present_perfect | A2.2 | text | Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there. | "
 pp_exp,A2.2,present_perfect,A2.2,learn,mcq,read,pp-A22-2a,built-in,present_perfect | A2.2 | mcq | Which sentence is about life experience (no exact time)? | I've been to Spain.
 pp_exp,A2.2,present_perfect,A2.2,use,write,read,pp-A22-6a-r2,built-in,present_perfect | A2.2 | write | What have you never done but would like to do? Write one sentence. | 
 pp_exp,A2.2,present_perfect,A2.2,check,order,read,var-pp-a22-order-01,built-in,present_perfect | A2.2 | order | Ask about life experience. Start with Have you ever. | have you ever visited this museum
@@ -1738,32 +1745,32 @@ pp_ps,A2.2,present_perfect,B1.2,check,mcq,read,pp-B12-5a-r2,built-in,present_per
 pp_ps,A2.2,present_perfect,B1.2,use,write,read,pp-B12-6a-r2,built-in,"present_perfect | B1.2 | write | Write two sentences: say that you have been to a place (no time), then say when you went there. | "
 pp_ps,A2.2,present_perfect,B1.2,check,mcq,read,,b1-tenses-2.csv:32,present_perfect | B1.2 | mcq | Which sentence is NOT correct? | I have visited that museum last weekend.
 pp_ps,A2.2,present_perfect,B1.2,check,mcq,read,,b1-upgrades-1.csv:21,present_perfect | B1.2 | mcq | Which sentence is NOT correct? | I have finished school in 2019.
-prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:78,prep_time_place | A2.2 | mcq | Choose the correct option: We arrived ___ the hotel after midnight. | at
-prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:79,prep_time_place | A2.2 | mcq | Choose the correct option: What time did you ___ the office today? | get to
-prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:80,prep_time_place | A2.2 | mcq | Which sentence has a mistake? | We arrived to Oslo late on Friday.
-prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:81,prep_time_place | A2.2 | mcq | Choose the correct option: Walk ___ the bank and turn left. | past
-prep_move,A2.2,prep_time_place,A2.2,check,order,read,,gap-fill-a2-1.csv:82,prep_time_place | A2.2 | order | Put the words in order. | let's walk along the beach after lunch
-prep_move,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:83,prep_time_place | A2.2 | gap | We swam ___ the river to the other side. | 
-prep_move,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:84,prep_time_place | A2.2 | gap | The cat came in ___ the open window. | 
-prep_move,A2.2,prep_time_place,A2.2,use,gap,read,,gap-fill-a2-1.csv:85,"prep_time_place | A2.2 | gap | Write one word in each gap: At airport security, take your laptop ___ ___ your bag. | "
-prep_move,A2.2,prep_time_place,A2.2,use,text,read,,gap-fill-a2-1.csv:86,prep_time_place | A2.2 | text | Correct the mistake: What time did you get to home last night? | 
+prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:85,prep_time_place | A2.2 | mcq | Choose the correct option: We arrived ___ the hotel after midnight. | at
+prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:86,prep_time_place | A2.2 | mcq | Choose the correct option: What time did you ___ the office today? | get to
+prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:87,prep_time_place | A2.2 | mcq | Which sentence has a mistake? | We arrived to Oslo late on Friday.
+prep_move,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:88,prep_time_place | A2.2 | mcq | Choose the correct option: Walk ___ the bank and turn left. | past
+prep_move,A2.2,prep_time_place,A2.2,check,order,read,,gap-fill-a2-1.csv:89,prep_time_place | A2.2 | order | Put the words in order. | let's walk along the beach after lunch
+prep_move,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:90,prep_time_place | A2.2 | gap | We swam ___ the river to the other side. | 
+prep_move,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:91,prep_time_place | A2.2 | gap | The cat came in ___ the open window. | 
+prep_move,A2.2,prep_time_place,A2.2,use,gap,read,,gap-fill-a2-1.csv:92,"prep_time_place | A2.2 | gap | Write one word in each gap: At airport security, take your laptop ___ ___ your bag. | "
+prep_move,A2.2,prep_time_place,A2.2,use,text,read,,gap-fill-a2-1.csv:93,prep_time_place | A2.2 | text | Correct the mistake: What time did you get to home last night? | 
 prep_move,A2.2,prep_time_place,A2.2,use,gap,read,,more-1.csv:73,"prep_time_place | A2.2 | gap | Write in, on or at: We arrived ___ Riga late at night. | "
 prep_transport,A2.2,prep_time_place,A2.2,check,mcq,read,,a2-prepositions-1.csv:35,prep_time_place | A2.2 | mcq | Choose the correct option: I always read a book ___ the bus. | on
 prep_transport,A2.2,prep_time_place,A2.2,check,gap,read,,a2-prepositions-1.csv:36,"prep_time_place | A2.2 | gap | I was ___ the bus when you called, and now I'm ___ a taxi. | "
 prep_transport,A2.2,prep_time_place,A2.2,use,text,read,,a2-prepositions-1.csv:37,prep_time_place | A2.2 | text | Correct the mistake: I saw her in the train. | 
-prep_transport,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:124,prep_time_place | A2.2 | mcq | Choose the correct option: Is it cheaper to travel to Tallinn ___ bus? | by
-prep_transport,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:125,prep_time_place | A2.2 | mcq | Which sentence has a mistake? | My daughter goes to school by foot.
-prep_transport,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:126,prep_time_place | A2.2 | gap | Today I'm going to work ___ Tom's car. | 
-prep_transport,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:127,prep_time_place | A2.2 | gap | I met an old friend ___ the tram yesterday. | 
-prep_transport,A2.2,prep_time_place,A2.2,use,gap,read,,gap-fill-a2-1.csv:128,prep_time_place | A2.2 | gap | Write the missing word: Let's go to the museum ___ foot. | 
-prep_transport,A2.2,prep_time_place,A2.2,use,gap,read,,gap-fill-a2-1.csv:129,prep_time_place | A2.2 | gap | Write the missing word: We went to the airport ___ a taxi. | 
-prep_transport,A2.2,prep_time_place,A2.2,use,text,read,,gap-fill-a2-1.csv:130,prep_time_place | A2.2 | text | Correct the mistake: I go to work by my car. | 
-purpose_to,A2.2,conj_clauses,A2.2,check,mcq,read,,gap-fill-a2-1.csv:131,conj_clauses | A2.2 | mcq | Choose the correct option: He went to the doctor ___ a check-up. | for
-purpose_to,A2.2,conj_clauses,A2.2,check,mcq,read,,gap-fill-a2-1.csv:132,conj_clauses | A2.2 | mcq | Which sentence has a mistake? | I'm learning English for get a better job.
-purpose_to,A2.2,conj_clauses,A2.2,check,order,read,,gap-fill-a2-1.csv:133,conj_clauses | A2.2 | order | Put the words in order. | he uses his phone to pay for everything
-purpose_to,A2.2,conj_clauses,A2.2,check,gap,read,,gap-fill-a2-1.csv:134,conj_clauses | A2.2 | gap | She goes to the gym ___ ___ fit. | 
-purpose_to,A2.2,conj_clauses,A2.2,use,gap,read,,gap-fill-a2-1.csv:135,conj_clauses | A2.2 | gap | Why did you call the hotel? I called ___ a room. (book) | 
-purpose_to,A2.2,conj_clauses,A2.2,use,text,read,,gap-fill-a2-1.csv:136,conj_clauses | A2.2 | text | Join with *to*: I went to the post office. I sent a parcel there. | 
+prep_transport,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:131,prep_time_place | A2.2 | mcq | Choose the correct option: Is it cheaper to travel to Tallinn ___ bus? | by
+prep_transport,A2.2,prep_time_place,A2.2,check,mcq,read,,gap-fill-a2-1.csv:132,prep_time_place | A2.2 | mcq | Which sentence has a mistake? | My daughter goes to school by foot.
+prep_transport,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:133,prep_time_place | A2.2 | gap | Today I'm going to work ___ Tom's car. | 
+prep_transport,A2.2,prep_time_place,A2.2,check,gap,read,,gap-fill-a2-1.csv:134,prep_time_place | A2.2 | gap | I met an old friend ___ the tram yesterday. | 
+prep_transport,A2.2,prep_time_place,A2.2,use,gap,read,,gap-fill-a2-1.csv:135,prep_time_place | A2.2 | gap | Write the missing word: Let's go to the museum ___ foot. | 
+prep_transport,A2.2,prep_time_place,A2.2,use,gap,read,,gap-fill-a2-1.csv:136,prep_time_place | A2.2 | gap | Write the missing word: We went to the airport ___ a taxi. | 
+prep_transport,A2.2,prep_time_place,A2.2,use,text,read,,gap-fill-a2-1.csv:137,prep_time_place | A2.2 | text | Correct the mistake: I go to work by my car. | 
+purpose_to,A2.2,conj_clauses,A2.2,check,mcq,read,,gap-fill-a2-1.csv:138,conj_clauses | A2.2 | mcq | Choose the correct option: He went to the doctor ___ a check-up. | for
+purpose_to,A2.2,conj_clauses,A2.2,check,mcq,read,,gap-fill-a2-1.csv:139,conj_clauses | A2.2 | mcq | Which sentence has a mistake? | I'm learning English for get a better job.
+purpose_to,A2.2,conj_clauses,A2.2,check,order,read,,gap-fill-a2-1.csv:140,conj_clauses | A2.2 | order | Put the words in order. | he uses his phone to pay for everything
+purpose_to,A2.2,conj_clauses,A2.2,check,gap,read,,gap-fill-a2-1.csv:141,conj_clauses | A2.2 | gap | She goes to the gym ___ ___ fit. | 
+purpose_to,A2.2,conj_clauses,A2.2,use,gap,read,,gap-fill-a2-1.csv:142,conj_clauses | A2.2 | gap | Why did you call the hotel? I called ___ a room. (book) | 
+purpose_to,A2.2,conj_clauses,A2.2,use,text,read,,gap-fill-a2-1.csv:143,conj_clauses | A2.2 | text | Join with *to*: I went to the post office. I sent a parcel there. | 
 purpose_to,A2.2,conj_clauses,B1.1,check,mcq,read,,conjunctions-1.csv:59,conj_clauses | B1.1 | mcq | Choose the correct option: I went to the shop ___ some milk. | to buy
 purpose_to,A2.2,conj_clauses,B1.1,check,mcq,read,,conjunctions-1.csv:61,conj_clauses | B1.1 | mcq | Choose the correct option: She went to the pool ___ a swim. | for
 purpose_to,A2.2,conj_clauses,B1.1,check,mcq,read,,conjunctions-1.csv:62,conj_clauses | B1.1 | mcq | Choose the correct option: We bought the tickets online ___ save money. | to
@@ -1918,8 +1925,8 @@ stative,A2.2,cmp_ps_pc,B1.1,check,mcq,read,,compare-past-1.csv:6,cmp_ps_pc | B1.
 stative,A2.2,cmp_ps_pc,B1.1,use,gap,read,,compare-past-1.csv:12,"cmp_ps_pc | B1.1 | gap | I ___ the party, but Chris ___ to go home. (enjoy / want) | "
 stative,A2.2,cmp_ps_pc,B1.1,check,mcq,read,,twins-2.csv:20,"cmp_ps_pc | B1.1 | mcq | Choose the correct option: We ___ the answer in yesterday's lesson, so we raised our hands. | knew"
 the_unique,A2.2,articles,A2.2,check,order,read,,b1-new-1.csv:41,articles | A2.2 | order | Put the words in order. | the sun is hot in july
-the_unique,A2.2,articles,A2.2,use,gap,read,,gap-fill-a2-1.csv:151,"articles | A2.2 | gap | Complete with *a*, *an* or *the*: We always sit at ___ same table in this café. | "
-the_unique,A2.2,articles,A2.2,use,text,read,,gap-fill-a2-1.csv:152,articles | A2.2 | text | Correct the mistake: Maria is best driver in our family. | 
+the_unique,A2.2,articles,A2.2,use,gap,read,,gap-fill-a2-1.csv:158,"articles | A2.2 | gap | Complete with *a*, *an* or *the*: We always sit at ___ same table in this café. | "
+the_unique,A2.2,articles,A2.2,use,text,read,,gap-fill-a2-1.csv:159,articles | A2.2 | text | Correct the mistake: Maria is best driver in our family. | 
 the_unique,A2.2,articles,B1.1,check,order,read,,b1-new-1.csv:44,articles | B1.1 | order | Put the words in order. | the moon goes around the earth
 the_unique,A2.2,articles,B1.1,check,order,read,,b1-new-1.csv:45,articles | B1.1 | order | Put the words in order. | she is the best singer in our school
 the_unique,A2.2,articles_b1,B1.1,check,gap,read,,b1-new-1.csv:50,articles_b1 | B1.1 | gap | She plays ___ violin in an orchestra. | 
@@ -1978,15 +1985,15 @@ two_obj,A2.2,two_objects,B1.1,check,mcq,read,,b1-new-4.csv:163,two_objects | B1.
 two_obj,A2.2,two_objects,B1.1,use,text,read,,b1-new-4.csv:168,two_objects | B1.1 | text | Rewrite with to: He sent his boss an email. | 
 two_obj,A2.2,two_objects,B1.1,use,text,read,,b1-new-4.csv:169,two_objects | B1.1 | text | Correct the mistake: He sent an email his boss. | 
 two_obj,A2.2,two_objects,B1.1,learn,match,read,,b1-new-4.csv:172,two_objects | B1.1 | match | Match each sentence with the same meaning. | She gave me a book. = She gave a book to me. ; He bought her a coat. = He bought a coat for her. ; I told him a joke. = I told a joke to him. ; We sent them a card. = We sent a card to them.
-unc_nouns,A2.2,quantity,A2.2,check,mcq,read,,gap-fill-a2-1.csv:69,quantity | A2.2 | mcq | Choose the correct option: I have ___ for you! | some good news
-unc_nouns,A2.2,quantity,A2.2,check,gap,read,,gap-fill-a2-1.csv:70,quantity | A2.2 | gap | I found ___ useful ___ on this website. | 
-unc_nouns,A2.2,quantity,A2.2,check,mcq,read,,gap-fill-a2-1.csv:71,quantity | A2.2 | mcq | Which sentence has a mistake? | My boss gave me a useful advice.
-unc_nouns,A2.2,quantity,A2.2,check,order,read,,gap-fill-a2-1.csv:72,quantity | A2.2 | order | Put the words in order to make a question. | can i give you a piece of advice
-unc_nouns,A2.2,quantity,A2.2,check,gap,read,,gap-fill-a2-1.csv:73,quantity | A2.2 | gap | My ___ ___ still at the airport. | 
-unc_nouns,A2.2,quantity,A2.2,check,mcq,read,,gap-fill-a2-1.csv:74,quantity | A2.2 | mcq | Choose the correct option: We need ___ for our new office. | some furniture
-unc_nouns,A2.2,quantity,A2.2,use,gap,read,,gap-fill-a2-1.csv:75,quantity | A2.2 | gap | Thank you! Your advice about the exam ___ really helpful. (be) | 
-unc_nouns,A2.2,quantity,A2.2,check,order,read,,gap-fill-a2-1.csv:76,quantity | A2.2 | order | Put the words in order to make a question. | how many pieces of luggage do you have
-unc_nouns,A2.2,quantity,A2.2,use,text,read,,gap-fill-a2-1.csv:77,quantity | A2.2 | text | Rewrite with *furniture*: The chairs and tables in this café are new. | 
+unc_nouns,A2.2,quantity,A2.2,check,mcq,read,,gap-fill-a2-1.csv:76,quantity | A2.2 | mcq | Choose the correct option: I have ___ for you! | some good news
+unc_nouns,A2.2,quantity,A2.2,check,gap,read,,gap-fill-a2-1.csv:77,quantity | A2.2 | gap | I found ___ useful ___ on this website. | 
+unc_nouns,A2.2,quantity,A2.2,check,mcq,read,,gap-fill-a2-1.csv:78,quantity | A2.2 | mcq | Which sentence has a mistake? | My boss gave me a useful advice.
+unc_nouns,A2.2,quantity,A2.2,check,order,read,,gap-fill-a2-1.csv:79,quantity | A2.2 | order | Put the words in order to make a question. | can i give you a piece of advice
+unc_nouns,A2.2,quantity,A2.2,check,gap,read,,gap-fill-a2-1.csv:80,quantity | A2.2 | gap | My ___ ___ still at the airport. | 
+unc_nouns,A2.2,quantity,A2.2,check,mcq,read,,gap-fill-a2-1.csv:81,quantity | A2.2 | mcq | Choose the correct option: We need ___ for our new office. | some furniture
+unc_nouns,A2.2,quantity,A2.2,use,gap,read,,gap-fill-a2-1.csv:82,quantity | A2.2 | gap | Thank you! Your advice about the exam ___ really helpful. (be) | 
+unc_nouns,A2.2,quantity,A2.2,check,order,read,,gap-fill-a2-1.csv:83,quantity | A2.2 | order | Put the words in order to make a question. | how many pieces of luggage do you have
+unc_nouns,A2.2,quantity,A2.2,use,text,read,,gap-fill-a2-1.csv:84,quantity | A2.2 | text | Rewrite with *furniture*: The chairs and tables in this café are new. | 
 unc_nouns,A2.2,agreement,A2.2,use,gap,read,,more-1.csv:10,agreement | A2.2 | gap | Listen! The news ___ good. (be) | 
 used_to,A2.2,used_to,A2.2,use,gap,read,,a2-relabelled-1.csv:5,used_to | A2.2 | gap | Did you ___ to live in a flat? (use) | 
 used_to,A2.2,used_to,A2.2,check,order,read,,b1-new-1.csv:2,used_to | A2.2 | order | Put the words in order. | we used to live in a small flat
@@ -2144,8 +2151,8 @@ will_going,A2.2,future,A2.2,check,gap,read,,a2-big-1.csv:116,future | A2.2 | gap
 will_going,A2.2,future,A2.2,learn,mcq,read,,a2-big-1.csv:123,future | A2.2 | mcq | A man carries a very full cup. Which sentence is a prediction? | He's going to spill it.
 will_going,A2.2,future,A2.2,check,mcq,read,,a2-extras-1.csv:81,future | A2.2 | mcq | Choose the correct option: Look at that man! He ___ fall off the ladder. | is going to
 will_going,A2.2,future,A2.2,learn,match,read,,a2-extras-1.csv:86,future | A2.2 | match | Match each situation with the best sentence. | You see black clouds. = It's going to rain. ; The phone is ringing. = I'll answer it. ; You have bought two tickets. = We're flying to Rome. ; You are not sure. = I think it will be fine.
-will_going,A2.2,future,A2.2,use,gap,read,,gap-fill-a2-1.csv:149,"future | A2.2 | gap | Complete with *will* or *going to*: 'Did you reply to Mark's email?' 'Oh no, I forgot! I ___ to him now.' (write) | "
-will_going,A2.2,future,A2.2,use,gap,read,,gap-fill-a2-1.csv:150,future | A2.2 | gap | Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy) | 
+will_going,A2.2,future,A2.2,use,gap,read,,gap-fill-a2-1.csv:156,"future | A2.2 | gap | Complete with *will* or *going to*: 'Did you reply to Mark's email?' 'Oh no, I forgot! I ___ to him now.' (write) | "
+will_going,A2.2,future,A2.2,use,gap,read,,gap-fill-a2-1.csv:157,future | A2.2 | gap | Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy) | 
 will_going,A2.2,future,B1.1,learn,match,read,var-fu-b11-match-01,built-in,future | B1.1 | match | Match each situation with the response that best fits its purpose. | You decide now to help a colleague with a heavy bag. = I'll carry that for you. ; You describe a confirmed appointment for tomorrow. = I'm seeing the dentist at ten. ; You predict rain because you can see dark clouds. = It's going to rain.
 will_going,A2.2,future,B1.1,check,order,read,,b1-tenses-2.csv:109,future | B1.1 | order | Put the words in order. | i think it's going to rain later
 will_going,A2.2,future,B1.1,check,gap,read,,b1-tenses-2.csv:116,future | B1.1 | gap | The sky is very dark. Look! It ___ rain very soon. | 

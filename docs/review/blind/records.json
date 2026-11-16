@@ -44,6 +44,11 @@
 "round": "r11",
 "task": "answers added"
 },
+"02370e667660b33f": {
+"gate_key": "verb_patterns | A2.1 | mcq | Choose the correct option: Tom wants ___ a bigger flat. | to find",
+"round": "r14",
+"task": "r14-002"
+},
 "024fa0cd945aaea9": {
 "gate_key": "present_continuous | A2.1 | text | Rewrite the sentence about this moment. Start with *Right now*: My sister reads the news on her phone. | ",
 "round": "r13",
@@ -1034,6 +1039,11 @@
 "round": "r10b",
 "task": "r10b-001"
 },
+"3d319144a4e3c0e8": {
+"gate_key": "quantity | A2.1 | mcq | Choose the correct option: I need ___ help with my laptop. | a little",
+"round": "r14",
+"task": "r14-004"
+},
 "3d74218c6752cbc9": {
 "gate_key": "articles | A2.1 | match | Match each beginning with its ending. | My cousin lives in = Rome. ; Every morning I drink = orange juice. ; My daughter is afraid of = snakes. ; At weekends we play = volleyball.",
 "round": "r9",
@@ -1959,6 +1969,11 @@
 "round": "r4",
 "task": "r4-010"
 },
+"79e61cd5c58390b4": {
+"gate_key": "quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | ",
+"round": "r14",
+"task": "r14-007"
+},
 "79fc0dc1a474f7a4": {
 "gate_key": "more_modals | B1.2 | order | Put the words in order. | she could have got the job but she didn't apply in time",
 "round": "r11",
@@ -2153,6 +2168,11 @@
 "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: Booking flights early ___ money. | saves",
 "round": "r9",
 "task": "r9-129"
+},
+"8918bdd5949d6359": {
+"gate_key": "quantity | A2.1 | text | Correct the mistake. Change one word: There's a few snow on the roads today. | ",
+"round": "r14",
+"task": "r14-005"
 },
 "893682ff22ba21f5": {
 "gate_key": "verb_patterns | A2.2 | mcq | Choose the correct option: ___ long hours makes me tired. | Working",
@@ -3209,6 +3229,11 @@
 "round": "r10",
 "task": "r10-047"
 },
+"c4071d423e826ac2": {
+"gate_key": "quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | ",
+"round": "r14",
+"task": "answers added"
+},
 "c45147c3c3f04553": {
 "gate_key": "modal_verbs | B1.1 | gap | ___ she ___ take the whole exam again if she fails one part? | ",
 "round": "r10",
@@ -3293,6 +3318,11 @@
 "gate_key": "verb_patterns | B1.1 | text | Correct the mistake: I love spend time with my cousins because they always make me laugh. | ",
 "round": "r10",
 "task": "r10-039"
+},
+"cb7cca02650c5baf": {
+"gate_key": "verb_patterns | A2.1 | gap | My grandma loves ___ photos to the family. | ",
+"round": "r14",
+"task": "r14-003"
 },
 "cc6f4d8e8b15405a": {
 "gate_key": "more_modals | A2.2 | mcq | Choose the correct option: He ___ to the party tonight. | might not come",
@@ -3909,6 +3939,11 @@
 "round": "r12",
 "task": "answers added"
 },
+"f0af0ee575fc0b22": {
+"gate_key": "verb_patterns | A2.1 | order | Put the words in order. | my son doesn't want to learn to drive",
+"round": "r14",
+"task": "r14-001"
+},
 "f0c43562b4e4fc56": {
 "gate_key": "verb_patterns | A2.2 | text | Say it another way with *for*: Let's go swimming after work. | ",
 "round": "r9",
@@ -3928,6 +3963,11 @@
 "gate_key": "aux_verbs | A2.1 | gap | ___ you ___ an umbrella? (have got) | ",
 "round": "r9",
 "task": "r9-021"
+},
+"f1b8ce044fe60d60": {
+"gate_key": "quantity | A2.1 | gap | Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread. | ",
+"round": "r14",
+"task": "r14-006"
 },
 "f22c8db935b72c47": {
 "gate_key": "agreement | B1.2 | order | Put the words in order to make a question. | does every guest need a ticket for tomorrow's boat trip",

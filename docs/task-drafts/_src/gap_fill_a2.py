@@ -37,6 +37,11 @@ for n, r in enumerate(lib.rows):
     if r[2] == "text" and r[3].startswith("Correct the mistake: Your trousers looks great"):
         lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + "Your pair of trousers looks great with that jacket. :: Correct too: here the subject is *pair* (one pair), so the verb has *-s*. With *trousers* alone: *Your trousers look great*. :: Arī pareizi: te teikuma priekšmets ir *pair* (viens pāris), tāpēc darbības vārdam ir *-s*. Tikai ar *trousers*: *Your trousers look great*."
 
+# count_unc (blind check r14): *Are there some yoga classes…?* is correct too when you expect *yes*; it gets its own note
+for n, r in enumerate(lib.rows):
+    if r[2] == "text" and r[3].startswith("Make a yes/no question: There are some yoga classes"):
+        lib.NOTES[n] = (lib.NOTES[n] + " || " if n in lib.NOTES else "") + "Are there some yoga classes on Sunday? :: Correct too when you expect the answer *yes*. A plain question, when you don't know, usually has *any*: *Are there any yoga classes on Sunday?* :: Arī pareizi, ja gaidi atbildi *yes*. Parastā jautājumā, kad nezini, parasti lieto *any*: *Are there any yoga classes on Sunday?*"
+
 if __name__ == "__main__":
     import sys
     lib.save(sys.argv[1] if len(sys.argv) > 1 else NAME)   # blind-checked (r13, r13b)

@@ -5030,7 +5030,7 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 5,
+    "check": 8,
     "use": 5,
     "learn": 0
    },
@@ -5932,7 +5932,7 @@
    "card": "yes",
    "tasks": {
     "check": 6,
-    "use": 4,
+    "use": 6,
     "learn": 0
    },
    "task_levels": [
@@ -6028,8 +6028,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 6,
-    "use": 4,
+    "check": 7,
+    "use": 5,
     "learn": 0
    },
    "task_levels": [

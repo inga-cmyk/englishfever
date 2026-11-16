@@ -24,6 +24,6 @@ gp(T, L, 3, "Write *a*, *some* or *any*: There's ___ toaster, but there isn't __
    "*toaster* is one thing we can count: *a toaster*. *bread* is uncountable, and in a negative sentence we use *any*: *there isn't any bread*, never *a bread*.",
    "*toaster* ir skaitāms lietvārds: *a toaster*. *bread* ir neskaitāms lietvārds, un noliegumā lieto *any*: *there isn't any bread*, nekad *a bread*.")
 # whole sentence (use): some in the statement becomes any in a plain question for information (Murphy 85).
-tx(T, L, 4, "Make a yes/no question: There are some yoga classes on Sunday.", "Are there any yoga classes on Sunday?",
+tx(T, L, 4, "Make a yes/no question: There are some yoga classes on Sunday.", "Are there any yoga classes on Sunday? | Are there any yoga classes on Sundays? | Are there yoga classes on Sunday? | Are there yoga classes on Sundays? | Are there some yoga classes on Sunday? | Are there some yoga classes on Sundays?",   # blind check r14: the other correct questions accepted, *some* with its own note (gap_fill_a2.py)
    "In a question we usually use *any*, not *some*: *Are there any yoga classes on Sunday?* *some* is for positive sentences.",
    "Jautājumā parasti lieto *any*, nevis *some*: *Are there any yoga classes on Sunday?* *some* lieto apgalvojumā.")

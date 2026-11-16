@@ -183,7 +183,7 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 
 ## 3. Punkti ar mazāk nekā 10 pārbaudes un lietošanas uzdevumiem
 
-**Precīzi, pa tēmas un līmeņa pāriem:** no 148 pāriem mazāk par 10 uzdevumiem, kas skaitās (*check* + *use*), ir Adjective order (a small old car) A2.1 (9), Mixed conditionals B2.1 (9), Contrast, purpose and reason (although, despite, so that) A2.2 (6), Quantity: some, any, much, many, enough A2.1 (8), Verb patterns: -ing or to A2.1 (9).
+**Precīzi, pa tēmas un līmeņa pāriem:** no 148 pāriem mazāk par 10 uzdevumiem, kas skaitās (*check* + *use*), ir Adjective order (a small old car) A2.1 (9), Mixed conditionals B2.1 (9), Contrast, purpose and reason (although, despite, so that) A2.2 (6).
 
 **Pa punktiem:** no 222 punktiem ar tēmu lietotnē 71 punktiem ir 1 līdz 9 uzdevumi, kas skaitās, un 0 punktiem nav neviena. Tas nenozīmē, ka tēmā uzdevumu trūkst: tēmas uzdevumi ir sakrājušies pie viena vai diviem punktiem, un pārējie punkti (parasti tie, kas uz kartītes ir tikai *Watch out* rindā) paliek gandrīz bez prakses.
 
@@ -276,12 +276,12 @@ Kartē ir 416 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīm�
 
 Tādu ir 188: 74 līmeņos A2 līdz B2 un 114, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `vp_like_ing` ↔ `would_like` · `poss_adj` ↔ `poss_s` · `there_is` ↔ `there_it` · `be_pres` ↔ `have_got` · `be_pres` ↔ `ps_form` · `be_pres` ↔ `ps_negq` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `q_yesno`
-- **A2.2:** `most_of` ↔ `sup` · `requests` ↔ `would_like` · `poss_adj` ↔ `poss_pron` · `vp_like_ing` ↔ `what_like`
-- **B1.1:** `for_since_from` ↔ `pp_for_since` · `so_neither` ↔ `tag_basic` · `obj_pron` ↔ `reflexive` · `during_while` ↔ `for_since_from` · `too_to` ↔ `vp_adj_to`
-- **B1.2:** `quite_rather` ↔ `so_such_basic` · `its_time` ↔ `ought_to` · `link_adj` ↔ `senses_like` · `ought_to` ↔ `should` · `adv_extreme` ↔ `quite_rather` · `all_both` ↔ `both_and` · `adv_position` ↔ `word_order` · `all_both` ↔ `each_every` · `pp_just` ↔ `still_yet` · `so_that` ↔ `too_to` · `all_both` ↔ `no_none` · `q_negative` ↔ `tag_basic` · `adv_degree` ↔ `quite_rather` · `fut_cont` ↔ `will_form` · `no_longer` ↔ `still_yet` · `both_and` ↔ `so_neither` · `would_like` ↔ `would_rather`
-- **B2.1:** `pas_inf_ing` ↔ `vp_to` · `compound_adj_num` ↔ `poss_time` · `pas_cont` ↔ `pas_other` · `get_b2` ↔ `vp_make_let` · `deduction` ↔ `modals_cont` · `caus_get` ↔ `get_b2` · `reciprocal` ↔ `reflexive` · `must_have_to` ↔ `supposed_to` · `its_time` ↔ `its_time_past` · `there_it` ↔ `there_it_prep` · `deduction_past` ↔ `should_have` · `pas_other` ↔ `pas_perf` · `dep_verb` ↔ `noun_prep` · `deduction` ↔ `likely_bound` · `vp_obj_ing` ↔ `vp_obj_to` · `pas_report` ↔ `rep_backshift` · `cmp_modify` ↔ `cmp_modify_b2` · `compound_nouns` ↔ `poss_s` · `vp_meaning` ↔ `vp_need_help` · `deduction` ↔ `should_expect` · `part_reduced` ↔ `rel_subj` · `eding` ↔ `part_reduced` · `like_as` ↔ `senses_like` · `fut_cont` ↔ `fut_perf` · `likely_bound` ↔ `should_expect` · `pas_two_obj` ↔ `two_obj` · `vp_make_let` ↔ `vp_see_do` · `cmp_as` ↔ `like_as` · `pas_inf_ing` ↔ `vp_ing` · `have_aux` ↔ `have_got` · `deduction` ↔ `deduction_past`
-- **B2.2:** `fut_perf` ↔ `fut_perf_cont` · `pas_inf_ing` ↔ `vp_complex` · `ellipsis` ↔ `vp_reduced` · `ellipsis` ↔ `one_ones` · `part_adv` ↔ `part_reduced` · `aux_uses` ↔ `ellipsis` · `c_inv` ↔ `neg_inversion` · `cleft` ↔ `rel_what` · `distancing` ↔ `pas_report`
+- **A2.1:** `be_pres` ↔ `ps_form` · `vp_like_ing` ↔ `would_like` · `there_is` ↔ `there_it` · `be_pres` ↔ `have_got` · `be_pres` ↔ `q_yesno` · `be_pres` ↔ `ps_negq` · `poss_adj` ↔ `poss_s` · `obj_pron` ↔ `poss_adj`
+- **A2.2:** `requests` ↔ `would_like` · `vp_like_ing` ↔ `what_like` · `poss_adj` ↔ `poss_pron` · `most_of` ↔ `sup`
+- **B1.1:** `obj_pron` ↔ `reflexive` · `too_to` ↔ `vp_adj_to` · `so_neither` ↔ `tag_basic` · `during_while` ↔ `for_since_from` · `for_since_from` ↔ `pp_for_since`
+- **B1.2:** `would_like` ↔ `would_rather` · `all_both` ↔ `both_and` · `adv_degree` ↔ `quite_rather` · `ought_to` ↔ `should` · `fut_cont` ↔ `will_form` · `all_both` ↔ `no_none` · `all_both` ↔ `each_every` · `link_adj` ↔ `senses_like` · `q_negative` ↔ `tag_basic` · `no_longer` ↔ `still_yet` · `pp_just` ↔ `still_yet` · `so_that` ↔ `too_to` · `adv_position` ↔ `word_order` · `quite_rather` ↔ `so_such_basic` · `its_time` ↔ `ought_to` · `adv_extreme` ↔ `quite_rather` · `both_and` ↔ `so_neither`
+- **B2.1:** `pas_inf_ing` ↔ `vp_to` · `its_time` ↔ `its_time_past` · `pas_other` ↔ `pas_perf` · `part_reduced` ↔ `rel_subj` · `get_b2` ↔ `vp_make_let` · `must_have_to` ↔ `supposed_to` · `compound_adj_num` ↔ `poss_time` · `like_as` ↔ `senses_like` · `vp_obj_ing` ↔ `vp_obj_to` · `vp_make_let` ↔ `vp_see_do` · `there_it` ↔ `there_it_prep` · `deduction` ↔ `deduction_past` · `deduction` ↔ `modals_cont` · `pas_cont` ↔ `pas_other` · `compound_nouns` ↔ `poss_s` · `reciprocal` ↔ `reflexive` · `pas_inf_ing` ↔ `vp_ing` · `deduction_past` ↔ `should_have` · `deduction` ↔ `should_expect` · `dep_verb` ↔ `noun_prep` · `fut_cont` ↔ `fut_perf` · `cmp_modify` ↔ `cmp_modify_b2` · `eding` ↔ `part_reduced` · `deduction` ↔ `likely_bound` · `caus_get` ↔ `get_b2` · `likely_bound` ↔ `should_expect` · `pas_two_obj` ↔ `two_obj` · `pas_report` ↔ `rep_backshift` · `vp_meaning` ↔ `vp_need_help` · `cmp_as` ↔ `like_as` · `have_aux` ↔ `have_got`
+- **B2.2:** `c_inv` ↔ `neg_inversion` · `distancing` ↔ `pas_report` · `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `ellipsis` ↔ `vp_reduced` · `ellipsis` ↔ `one_ones` · `fut_perf` ↔ `fut_perf_cont` · `pas_inf_ing` ↔ `vp_complex` · `part_adv` ↔ `part_reduced`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
@@ -308,7 +308,7 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 | reported question / direct question order | rep_questions, ind_polite | 13 | ir |
 | so / such | so_such | 10 | ir |
 | much / many | quantity | 7 | ir |
-| few / little | quantity | 5 | ir |
+| few / little | quantity | 6 | ir |
 | some / any | quantity, indefinite_pronouns | 5 | ir |
 | a, an / the | articles, articles_b1 | 15 | ir |
 | the / no article | articles, articles_b1 | 16 | ir |
@@ -320,7 +320,7 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 | who / which | relative_clauses | 11 | ir |
 | that / who, which (after a comma) | relative_clauses | 9 | ir |
 | passive / active | present_simple_passive, past_simple_passive | 33 | ir |
-| to + verb / -ing | verb_patterns | 36 | ir |
+| to + verb / -ing | verb_patterns | 37 | ir |
 | comparative / superlative | comparison | 13 | ir |
 | as / than | comparison | 7 | ir |
 | adverb / adjective | adverbs | 14 | ir |

@@ -4,6 +4,8 @@ What the app records for the study, what each field means, and what has to be le
 Written 1 November 2026. Every change to a definition or to how tasks are chosen gets a dated line in *Changes* below,
 so results before and after it are not mixed.
 
+> **ENGAGEMENT DATA FROM DAY ONE (teacher, 16 November 2026).** The study is about engagement; learning results matter in relation to engagement. Engagement data (registration, active days, sessions, answers, returns, features used) count from the first day the app was open (21 October 2026). The note of 12 November below still applies to measures of learning: levels, *Learned* and task roles changed until mid-November, so learning measures are compared only within periods (see *Changes*). Level test results before 16 November 2026 are known to overestimate the level (an A2 learner could be placed at B2): do not use them as a measure of ability.
+>
 > **TESTING DATA (teacher, 12 November 2026).** Everything recorded before the date and version the teacher will name is testing of the app and does not go into the analysis. Until then the levels, the definition of *Learned* and the task roles are being set; the changes below are listed for the record. The real data collection starts on: **(date and version to be named by the teacher)**.
 
 ## Where the data come from

@@ -29,3 +29,15 @@ tx(T, L, 4, "Say it another way with *a few* or *a little*: I speak some Spanish
    "I speak a little bit of Spanish. | I can speak a little bit of Spanish. | I only speak a little Spanish. | I can only speak a little Spanish.", *BOTH)
 tx(T, L, 4, "Say it another way with *a few* or *a little*: There are three or four cafés near my office.",
    "There are a few cafés near my office. | Near my office there are a few cafés. | There are a few cafes near my office. | Near my office there are a few cafes. | A few cafés are near my office. | A few cafes are near my office.", *BOTH)
+
+# Top-up, 16 November (2 more counted tasks; the topic needs 12 at A2.1)
+# choice (check): the point had no gap choice at A2.1. help is uncountable (Murphy 87: a little + uncountable);
+# a little of is the Latvian genitive transfer (palīdzības), a few the point's typical error.
+mc(T, L, 2, "Choose the correct option: I need ___ help with my laptop.", "a little", ["a few", "a little of"],
+   "*help* is uncountable, so *a little help*. *a few* goes with plural nouns: *a few days*. No *of* here: not *a little of help*.",
+   "*help* ir neskaitāms lietvārds, tāpēc *a little help*. *a few* lieto ar daudzskaitļa lietvārdiem: *a few days*. Šeit nelieto *of*: nevis *a little of help*.")
+# whole sentence (use): Change one word, because snow -> cars etc. is not a correction; few -> little is the only one-word fix.
+tx(T, L, 4, "Correct the mistake. Change one word: There's a few snow on the roads today.",
+   "There's a little snow on the roads today. | There is a little snow on the roads today.",
+   "*snow* is uncountable, so *a little snow*, not *a few snow*. *a few* goes with plural nouns: *a few cars*.",
+   "*snow* ir neskaitāms lietvārds, tāpēc *a little snow*, nevis *a few snow*. *a few* lieto ar daudzskaitļa lietvārdiem: *a few cars*.")

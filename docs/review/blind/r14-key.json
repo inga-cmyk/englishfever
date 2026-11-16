@@ -1,0 +1,249 @@
+{
+ "r14-001": {
+  "hash": "f0af0ee575fc0b22",
+  "gate_key": "verb_patterns | A2.1 | order | Put the words in order. | my son doesn't want to learn to drive",
+  "src": "gap-fill-a2-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my son doesn't want to learn to drive",
+   "also": []
+  },
+  "item": {
+   "id": "c-2397",
+   "skill": "verb_patterns",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*want* + *to* + base verb, and *learn* + *to* + base verb: *My son doesn't want to learn to drive.* Not *want learn* or *want learning*.",
+   "why_lv": "*want + to* + pamatforma, un arī *learn + to* + pamatforma: *My son doesn't want to learn to drive.* Nevis *want learn* vai *want learning*.",
+   "sentence": "my son doesn't want to learn to drive",
+   "answers": [
+    [
+     "my son doesn't want to learn to drive"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:11"
+  }
+ },
+ "r14-002": {
+  "hash": "02370e667660b33f",
+  "gate_key": "verb_patterns | A2.1 | mcq | Choose the correct option: Tom wants ___ a bigger flat. | to find",
+  "src": "gap-fill-a2-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "to find",
+   "wrong": [
+    "find",
+    "finding",
+    "to finding"
+   ]
+  },
+  "item": {
+   "id": "c-2398",
+   "skill": "verb_patterns",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Tom wants ___ a bigger flat.",
+   "why": "*want* + *to* + base verb: *Tom wants to find a bigger flat.* Not *wants find*, *wants finding* or *wants to finding*.",
+   "why_lv": "*want + to* + pamatforma: *Tom wants to find a bigger flat.* Nevis *wants find, wants finding* vai *wants to finding*.",
+   "correct": "to find",
+   "wrong": [
+    "find",
+    "finding",
+    "to finding"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:12"
+  }
+ },
+ "r14-003": {
+  "hash": "cb7cca02650c5baf",
+  "gate_key": "verb_patterns | A2.1 | gap | My grandma loves ___ photos to the family. | ",
+  "src": "gap-fill-a2-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "sending"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2399",
+   "skill": "verb_patterns",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My grandma loves ___ photos to the family.",
+   "why": "*love* + *-ing* (or *to* + verb): *My grandma loves sending photos.* Not the base verb or the *-s* form: not *loves send*, not *loves sends*.",
+   "why_lv": "*love* + darbības vārds ar *-ing* (vai to + pamatforma): *My grandma loves sending photos.* Nevis *loves send* vai *loves sends*.",
+   "answers": [
+    [
+     "sending"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "sending",
+    "send",
+    "sends"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:13"
+  }
+ },
+ "r14-004": {
+  "hash": "3d319144a4e3c0e8",
+  "gate_key": "quantity | A2.1 | mcq | Choose the correct option: I need ___ help with my laptop. | a little",
+  "src": "gap-fill-a2-1.csv:50",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "a little",
+   "wrong": [
+    "a few",
+    "a little of"
+   ]
+  },
+  "item": {
+   "id": "c-2436",
+   "skill": "quantity",
+   "level": "A2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I need ___ help with my laptop.",
+   "why": "*help* is uncountable, so *a little help*. *a few* goes with plural nouns: *a few days*. No *of* here: not *a little of help*.",
+   "why_lv": "*help* ir neskaitāms lietvārds, tāpēc *a little help*. *a few* lieto ar daudzskaitļa lietvārdiem: *a few days*. Šeit nelieto *of*: nevis *a little of help*.",
+   "correct": "a little",
+   "wrong": [
+    "a few",
+    "a little of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:50"
+  }
+ },
+ "r14-005": {
+  "hash": "8918bdd5949d6359",
+  "gate_key": "quantity | A2.1 | text | Correct the mistake. Change one word: There's a few snow on the roads today. | ",
+  "src": "gap-fill-a2-1.csv:51",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "There's a little snow on the roads today.",
+     "There is a little snow on the roads today.",
+     "Today There's a little snow on the roads.",
+     "Today there is a little snow on the roads."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2437",
+   "skill": "quantity",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Change one word: There's a few snow on the roads today.",
+   "why": "*snow* is uncountable, so *a little snow*, not *a few snow*. *a few* goes with plural nouns: *a few cars*.",
+   "why_lv": "*snow* ir neskaitāms lietvārds, tāpēc *a little snow*, nevis *a few snow*. *a few* lieto ar daudzskaitļa lietvārdiem: *a few cars*.",
+   "answers": [
+    [
+     "There's a little snow on the roads today.",
+     "There is a little snow on the roads today.",
+     "Today There's a little snow on the roads.",
+     "Today there is a little snow on the roads."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:51"
+  }
+ },
+ "r14-006": {
+  "hash": "f1b8ce044fe60d60",
+  "gate_key": "quantity | A2.1 | gap | Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread. | ",
+  "src": "gap-fill-a2-1.csv:64",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "a"
+    ],
+    [
+     "any"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2450",
+   "skill": "quantity",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread.",
+   "why": "*toaster* is one thing we can count: *a toaster*. *bread* is uncountable, and in a negative sentence we use *any*: *there isn't any bread*, never *a bread*.",
+   "why_lv": "*toaster* ir skaitāms lietvārds: *a toaster*. *bread* ir neskaitāms lietvārds, un noliegumā lieto *any*: *there isn't any bread*, nekad *a bread*.",
+   "answers": [
+    [
+     "a"
+    ],
+    [
+     "any"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:64"
+  }
+ },
+ "r14-007": {
+  "hash": "79e61cd5c58390b4",
+  "gate_key": "quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | ",
+  "src": "gap-fill-a2-1.csv:65",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Are there any yoga classes on Sunday?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2451",
+   "skill": "quantity",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a yes/no question: There are some yoga classes on Sunday.",
+   "why": "In a question we usually use *any*, not *some*: *Are there any yoga classes on Sunday?* *some* is for positive sentences.",
+   "why_lv": "Jautājumā parasti lieto *any*, nevis *some*: *Are there any yoga classes on Sunday?* *some* lieto apgalvojumā.",
+   "answers": [
+    [
+     "Are there any yoga classes on Sunday?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "gap-fill-a2-1.csv:65"
+  }
+ }
+}

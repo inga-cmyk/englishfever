@@ -16,3 +16,14 @@ mc(T, L, 2, "Which sentence has a mistake?", "I don't have some free time this w
    ["I'd like a sandwich and some water.", "Are there any shops near your hotel?", "Our office has some new computers."],
    "In a negative sentence we use *any*, not *some*: *I don't have any free time this week.* *some* is for positive sentences, *any* for negatives and questions.",
    "Noliegumā lieto *any*, nevis *some*: *I don't have any free time this week.* *some* lieto apgalvojumā, *any* noliegumā un jautājumā.")
+
+# Top-up, 16 November (2 more counted tasks; the topic needs 12 at A2.1)
+# typed gap (use): a + one countable thing (toaster), any + uncountable in a negative (bread; a bread is the map's error).
+# The instruction names the three words, so no / much do not arise; some fits neither gap.
+gp(T, L, 3, "Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread.", "a / any",
+   "*toaster* is one thing we can count: *a toaster*. *bread* is uncountable, and in a negative sentence we use *any*: *there isn't any bread*, never *a bread*.",
+   "*toaster* ir skaitāms lietvārds: *a toaster*. *bread* ir neskaitāms lietvārds, un noliegumā lieto *any*: *there isn't any bread*, nekad *a bread*.")
+# whole sentence (use): some in the statement becomes any in a plain question for information (Murphy 85).
+tx(T, L, 4, "Make a yes/no question: There are some yoga classes on Sunday.", "Are there any yoga classes on Sunday?",
+   "In a question we usually use *any*, not *some*: *Are there any yoga classes on Sunday?* *some* is for positive sentences.",
+   "Jautājumā parasti lieto *any*, nevis *some*: *Are there any yoga classes on Sunday?* *some* lieto apgalvojumā.")

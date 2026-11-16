@@ -16786,5 +16786,33 @@
 "irregular_plurals | A2.2 | text | Correct the mistake: Your trousers looks great with that jacket. | ": [
 "plural_only",
 "read"
+],
+"verb_patterns | A2.1 | order | Put the words in order. | my son doesn't want to learn to drive": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | mcq | Choose the correct option: Tom wants ___ a bigger flat. | to find": [
+"vp_like_ing",
+"read"
+],
+"verb_patterns | A2.1 | gap | My grandma loves ___ photos to the family. | ": [
+"vp_like_ing",
+"read"
+],
+"quantity | A2.1 | mcq | Choose the correct option: I need ___ help with my laptop. | a little": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | text | Correct the mistake. Change one word: There's a few snow on the roads today. | ": [
+"a_few",
+"read"
+],
+"quantity | A2.1 | gap | Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread. | ": [
+"count_unc",
+"read"
+],
+"quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | ": [
+"count_unc",
+"read"
 ]
 }

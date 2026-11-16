@@ -1,0 +1,75 @@
+[
+ {
+  "id": "r14-001",
+  "level": "A2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "want",
+   "to",
+   "doesn't",
+   "learn",
+   "my",
+   "drive",
+   "to",
+   "son"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r14-002",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Tom wants ___ a bigger flat.",
+  "options": [
+   "to find",
+   "find",
+   "finding",
+   "to finding"
+  ]
+ },
+ {
+  "id": "r14-003",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "My grandma loves ___ photos to the family.",
+  "word_cards": [
+   "sending",
+   "send",
+   "sends"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r14-004",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I need ___ help with my laptop.",
+  "options": [
+   "a few",
+   "a little",
+   "a little of"
+  ]
+ },
+ {
+  "id": "r14-005",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Change one word: There's a few snow on the roads today.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r14-006",
+  "level": "A2.1",
+  "kind": "gap",
+  "instruction_and_task": "Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r14-007",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Make a yes/no question: There are some yoga classes on Sunday.",
+  "note": "the learner types a whole sentence"
+ }
+]

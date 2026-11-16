@@ -25,3 +25,11 @@ None: every form is on the quantity card.
 ## Doubts
 - The typed gaps name the two words (*Write *a few* or *a little*:*), as the `no_none` batch did with *no* / *any*: otherwise the gap is open. This makes 3 and 4 a typed choice between two; the whole sentences (5, 6) are the stronger use tasks.
 - Latvian explanations do not gloss the meaning (*nedaudz*, *mazliet*): the italics helper marks those ASCII Latvian words as English, so the Latvian text says only which nouns each word goes with.
+
+## Top-up, 16 November
+The teacher decided that Quantity A2.1 needs at least 12 counted tasks, so 2 more tasks were appended here (and 2 in `gp5_count_unc.py`); the six above are unchanged. Murphy unit 87.
+- **Kinds:** the point has fewest word orders and whole sentences (2 each). One whole sentence; instead of a word order a gap choice, because the cards of a word order show the noun, so ordering them does not test *a few* against *a little* (brief 5, point 3), and the point had no gap choice at A2.1.
+7. *Choose the correct option: I need ___ help with my laptop.* [a little / a few / a little of] → *a little*. The learner must know that *help* is uncountable. *a few help* is the typical error of the point; *a little of help* is the Latvian genitive transfer (*palīdzības*) and competes with the right answer for a learner who knows *a little*. *some* is not offered, so the gap is closed. Technology.
+8. *Correct the mistake. Change one word: There's a few snow on the roads today.* → *There's a little snow on the roads today.* (also *There is*). *Change one word* is needed: without it *some snow*, *a lot of snow* would also be corrections. With it *few* → *little* is the only fix (*There are a few snow*, *a few snows* are not English). Travel / weather.
+- **Checks:** one `lib.save` of both modules (12 rows): `check_draft.php` 12 accepted, 0 refused; `option_audit.py` only the known odd-theme flag of count_unc task 2. Latvian lint: nothing for these rows; no Latvian word in italics. Sentences grepped in `items.json`, the draft CSVs and `_src`: no duplicates.
+- **Doubt:** the auto-generated variant *Today There's a little snow on the roads.* has a capital *T* after *Today* (from `lib`, not from the key); harmless if the grader ignores case.

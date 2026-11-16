@@ -24,3 +24,11 @@ Task 1 uses *a / an* against *some*, which the Quantity card does not have (it s
 ## Doubts
 - *some* in questions is correct when we expect *yes* (Murphy 85), so I put *any* only in a question that is a plain request for information (*Are there any shops near your hotel?*) and used it as a correct sentence, never as the mistake.
 - The topic has no A2.1 level in the app before 15 November; these sentences are 6-8 words, one clause, present simple only.
+
+## Top-up, 16 November
+The teacher decided that Quantity A2.1 needs at least 12 counted tasks, so 2 more tasks were appended (and 2 in `gp5_a_few.py`); the two above are unchanged. Murphy 69, 85.
+- **Kinds:** the point has no word order (not used: a single-word choice, brief 5, point 3), then 3 gaps and 3 whole sentences, so one of each, both *use*.
+3. Typed gap *Write *a*, *some* or *any*: There's ___ toaster, but there isn't ___ bread.* → *a / any*. The learner must know that *toaster* is one countable thing (*a*), that *bread* is uncountable (never *a bread*, the map's typical error) and that a negative takes *any* (*isn't some bread* is the other typical error). *some* fits neither gap. The three words are named, so *no* / *much* do not arise. Home / holiday flat.
+4. Whole sentence *Make a yes/no question: There are some yoga classes on Sunday.* → *Are there any yoga classes on Sunday?* The learner changes *some* to *any* in a plain question for information. Hobbies. No offer or request (that is `some_offers`).
+- **Checks:** as in the `a_few` notes (one save of both modules, 12 accepted, 0 refused; one known flag). Latvian: no word marked as English.
+- **Doubt:** *Are there some yoga classes on Sunday?* is accepted by Murphy 85 only when the speaker expects *yes*; here nothing suggests that, so only *any* is keyed. A reader may still list it.

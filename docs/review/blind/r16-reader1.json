@@ -1,0 +1,75 @@
+[
+{
+"id": "r16-001",
+"answer": [
+"miss",
+"will be"
+],
+"other_correct": [
+[
+"miss",
+"'ll be"
+],
+[
+"miss",
+"may be"
+],
+[
+"miss",
+"might be"
+],
+[
+"miss",
+"could be"
+],
+[
+"miss",
+"are"
+],
+[
+"missed",
+"would be"
+],
+[
+"missed",
+"'d be"
+],
+[
+"missed",
+"might be"
+],
+[
+"missed",
+"could be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction at all, only a bare sentence with (miss / be). It does not say which tense or which verb goes in which gap, so first conditional (miss / will be), zero conditional (miss / are) and second conditional (missed / would be) all fit; 'may/might be' also fit. Contracted 'll is also possible. Needs a clear task line and a hint that this is a real/likely situation.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r16-002",
+"answer": [
+"will",
+"you",
+"do"
+],
+"other_correct": [
+[
+"do",
+"you",
+"do"
+],
+[
+"would",
+"you",
+"do"
+]
+],
+"wrong_options_that_fit": "do (as first gap: 'What do you do if you miss...' is correct, general habit); 'would' (would you do: common in speech, but mixed with 'miss' it is less standard, strictly it needs 'missed')",
+"instruction_problem": "No instruction line: the learner is not told to build a question from the cards. 5 cards for 3 gaps with several workable combinations (will you do / do you do / would you do) because the context 'tonight' does not rule out the general-habit or the 'would' reading. Also the gap order of 'you' is not forced.",
+"level_problem": "",
+"sense_problem": "Distractor 'did' is a believable mistake only as 'did you do' (wrong with 'miss' and 'tonight'); fine. 'do you do' is a correct but odd-sounding question next to 'tonight'."
+}
+]

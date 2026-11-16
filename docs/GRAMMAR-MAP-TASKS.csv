@@ -926,7 +926,7 @@ c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-4a,built-in,"cond_first | A2.2 | m
 c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-5a-r3,built-in,"cond_first | A2.2 | mcq | Which sentence is correct? | If I have time, I'll call you."
 c1,A2.2,cond_first,A2.2,use,write,read,cf-A22-6a-r2,built-in,cond_first | A2.2 | write | Promise a colleague something with *if*. | 
 c1,A2.2,cond_first,A2.2,check,order,rule,cf-A22-3b,built-in,cond_first | A2.2 | order | Put the words in order. | if you ask nicely I will help you
-c1,A2.2,cond_first,A2.2,use,gap,read,cf-A22-3c-r2,built-in,"cond_first | A2.2 | gap | If you ___ the bus, you ___ late. (miss / be) | "
+c1,A2.2,cond_first,A2.2,use,gap,read,cf-A22-3c-r2,built-in,"cond_first | A2.2 | gap | Hurry up! If you ___ the bus, you ___ late. (miss / be) | "
 c1,A2.2,cond_first,A2.2,check,order,rule,var-cf-a22-order-01-r2,built-in,cond_first | A2.2 | order | Put the words in order. Start with *If*. | if it rains we will stay indoors
 c1,A2.2,cond_first,A2.2,check,gap,read,var-cf-a22-bank-01-r3,built-in,"cond_first | A2.2 | gap | Complete: If she ___ early, we ___ the bus. | "
 c1,A2.2,cond_first,A2.2,check,order,rule,,a2-big-1.csv:230,cond_first | A2.2 | order | Put the words in order. | if it snows we will build a snowman

@@ -1,0 +1,50 @@
+[
+{
+"id": "r16-001",
+"answer": [
+"miss",
+"will be"
+],
+"other_correct": [
+[
+"miss",
+"'ll be"
+],
+[
+"miss",
+"are going to be"
+],
+[
+"missed",
+"would be"
+],
+[
+"missed",
+"'d be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line, only the sentence; the verbs in brackets give no tense, so first conditional (miss / will be) and second conditional (missed / would be) both fit; also unclear that the second gap needs two words (will be).",
+"level_problem": "Second conditional is above A2.2, but first conditional is fine.",
+"sense_problem": ""
+},
+{
+"id": "r16-002",
+"answer": [
+"will",
+"you",
+"do"
+],
+"other_correct": [
+[
+"would",
+"you",
+"do"
+]
+],
+"wrong_options_that_fit": "would (What would you do if you miss ... is heard informally but is a mixed conditional, not standard; treat as wrong)",
+"instruction_problem": "No instruction: it does not say to fill the gaps with the cards to make a question. 'did' is a clear wrong option only because of 'miss'.",
+"level_problem": "",
+"sense_problem": "Distractors would/did are believable. 'do' appears once, so 'What do you do' is impossible with the cards."
+}
+]

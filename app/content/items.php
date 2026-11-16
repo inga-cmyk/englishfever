@@ -4758,50 +4758,24 @@ return json_decode(<<<'EF_JSON_END'
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "Hurry up! If you ___ the bus, you ___ late. (miss / be)",
+"q": "Hurry up! If you miss the bus, you ___ ___ late.",
 "answers": [
 [
-"miss"
+"will"
 ],
 [
-"will be",
-"'ll be",
-"are going to be",
-"'re going to be",
-"might be",
-"may be",
-"could be"
+"be"
 ]
 ],
-"why": "First conditional: *if* + present simple (*miss*), *will* + base verb (*will be*).",
+"why": "First conditional: *if* + present simple (*miss*), *will* + base verb (*will be*). *would be* goes with *if you missed*.",
 "hints": [],
-"why_lv": "First conditional: *if* + Present Simple (*miss*), *will* + pamatforma (*will be*).",
-"answer_notes": [
-[
-"miss / are going to be",
-"Correct too: *be going to* also talks about the future here. The usual form after *if* + present is *will*: *you will be late*.",
-"Arī pareizi: arī *be going to* te runā par nākotni. Parastā forma pēc *if* + Present Simple ir *will*: *you will be late*."
-],
-[
-"miss / 're going to be",
-"Correct too: *be going to* also talks about the future here. The usual form after *if* + present is *will*: *you will be late*.",
-"Arī pareizi: arī *be going to* te runā par nākotni. Parastā forma pēc *if* + Present Simple ir *will*: *you will be late*."
-],
-[
-"miss / might be",
-"Correct too: *might / may / could* says it is possible, not sure. *will be* says it is sure.",
-"Arī pareizi: *might / may / could* saka, ka tas ir iespējams, nevis drošs. *will be* saka, ka tas ir droši."
-],
-[
-"miss / may be",
-"Correct too: *might / may / could* says it is possible, not sure. *will be* says it is sure.",
-"Arī pareizi: *might / may / could* saka, ka tas ir iespējams, nevis drošs. *will be* saka, ka tas ir droši."
-],
-[
-"miss / could be",
-"Correct too: *might / may / could* says it is possible, not sure. *will be* says it is sure.",
-"Arī pareizi: *might / may / could* saka, ka tas ir iespējams, nevis drošs. *will be* saka, ka tas ir droši."
-]
+"why_lv": "First conditional: *if* + Present Simple (*miss*), *will* + pamatforma (*will be*). *would be* iet kopā ar *if you missed*.",
+"bank": [
+"will",
+"be",
+"would",
+"are",
+"being"
 ]
 },
 {

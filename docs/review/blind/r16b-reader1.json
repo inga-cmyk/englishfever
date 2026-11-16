@@ -1,0 +1,51 @@
+[
+{
+"id": "r16b-001",
+"answer": [
+"miss",
+"will be"
+],
+"other_correct": [
+[
+"miss",
+"'ll be"
+],
+[
+"miss",
+"are going to be"
+],
+[
+"miss",
+"'re going to be"
+],
+[
+"miss",
+"may be"
+],
+[
+"miss",
+"might be"
+],
+[
+"miss",
+"could be"
+],
+[
+"miss",
+"will be"
+],
+[
+"missed",
+"would be"
+],
+[
+"missed",
+"'d be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which tense or whether the situation is real, so the second conditional (missed / would be) and modals (might/may/could be) are also correct English; 'Hurry up!' makes first conditional most natural but does not exclude them. The key should accept contractions ('ll be) and 'are going to be'.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

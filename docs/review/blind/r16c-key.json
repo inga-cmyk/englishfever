@@ -1,0 +1,53 @@
+{
+ "r16c-001": {
+  "hash": "e758e036e8550046",
+  "gate_key": "cond_first | A2.2 | gap | Hurry up! If you miss the bus, you ___ ___ late. | ",
+  "src": "built-in",
+  "point": "c1",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "will"
+    ],
+    [
+     "be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "cf-A22-3c-r2",
+   "skill": "cond_first",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Hurry up! If you miss the bus, you ___ ___ late.",
+   "answers": [
+    [
+     "will"
+    ],
+    [
+     "be"
+    ]
+   ],
+   "why": "First conditional: *if* + present simple (*miss*), *will* + base verb (*will be*). *would be* goes with *if you missed*.",
+   "hints": [],
+   "why_lv": "First conditional: *if* + Present Simple (*miss*), *will* + pamatforma (*will be*). *would be* iet kopā ar *if you missed*.",
+   "bank": [
+    "will",
+    "be",
+    "would",
+    "are",
+    "being"
+   ],
+   "d": 2.4,
+   "scaffold": 0,
+   "err": [
+    "TIME-CLAUSE"
+   ],
+   "role": "check",
+   "point": "c1",
+   "src": "built-in"
+  }
+ }
+}

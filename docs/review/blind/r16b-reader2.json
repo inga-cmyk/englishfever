@@ -1,0 +1,51 @@
+[
+{
+"id": "r16b-001",
+"answer": [
+"miss",
+"will be"
+],
+"other_correct": [
+[
+"miss",
+"'ll be"
+],
+[
+"miss",
+"are going to be"
+],
+[
+"miss",
+"'re going to be"
+],
+[
+"miss",
+"are"
+],
+[
+"miss",
+"may be"
+],
+[
+"miss",
+"might be"
+],
+[
+"miss",
+"'ll be"
+],
+[
+"missed",
+"would be"
+],
+[
+"missed",
+"'d be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb pairs only, so the learner must decide the form; fine. But the second gap needs two words (will be) while the first needs one, and nothing tells the learner that; typed 'll be vs will be and are going to be all work, so the key must accept them. Present 'are' (zero conditional) is correct but less natural after 'Hurry up!'; second-conditional 'missed / would be' is correct English but does not fit the urgent real situation.",
+"level_problem": "First conditional with will is borderline for A2.2 (usually B1 start); sentence length and words are fine.",
+"sense_problem": ""
+}
+]

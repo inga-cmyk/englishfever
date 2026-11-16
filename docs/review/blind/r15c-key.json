@@ -1,0 +1,37 @@
+{
+ "r15c-001": {
+  "hash": "e8f7f723976eb969",
+  "gate_key": "adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening because it keeps me awake. | ",
+  "src": "b1-new-5.csv:65",
+  "point": "adv_freq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I never drink coffee in the evening because it keeps me awake.",
+     "Because it keeps me awake, I never drink coffee in the evening."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1532",
+   "skill": "adverbs",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Put *never* in the right place: I drink coffee in the evening because it keeps me awake.",
+   "why": "*never* (and other words for how often) goes before the main verb: *I never drink coffee in the evening.*",
+   "why_lv": "*never* (un *citi* biežuma vārdi) stāv pirms darbības vārda: *I never drink coffee in the evening.*",
+   "answers": [
+    [
+     "I never drink coffee in the evening because it keeps me awake.",
+     "Because it keeps me awake, I never drink coffee in the evening."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "adv_freq",
+   "src": "b1-new-5.csv:65"
+  }
+ }
+}

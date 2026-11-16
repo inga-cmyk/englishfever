@@ -1,0 +1,41 @@
+[
+{
+"id": "r15b-001",
+"answer": [
+"never"
+],
+"other_correct": [
+[
+"rarely"
+],
+[
+"seldom"
+],
+[
+"hardly ever"
+],
+[
+"almost never"
+],
+[
+"don't"
+],
+[
+"do not"
+],
+[
+"don't usually"
+],
+[
+"don't often"
+],
+[
+"never ever"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The gap allows several answers (never, rarely, seldom, hardly ever, and the negative don't/can't), so the key must accept all; the prompt \"How often?\" does not say whether one word or more is wanted. \"don't\"/\"can't\" do not answer \"How often?\" but are correct English.",
+"level_problem": "Frequency adverbs are A2 content; light for B1.1 (only the because-clause logic makes it B1).",
+"sense_problem": "Only negative-frequency answers fit the because-clause; usually/always/often are wrong, which is believable. Sentence is natural."
+}
+]

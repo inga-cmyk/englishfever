@@ -21,7 +21,6 @@ PREFIX = [   # old start of the task -> new start ("" = no instruction: the sent
 WHOLE = {   # exact old task text -> new text (and, where the answer changes, new correct / wrong)
     "Change to the passive: Someone stole my wallet.": {"task": "Start with *My wallet*: Someone stole my wallet."},
     "Mozart ___ more than 600 pieces of music. (write)": {"task": "Mozart, who died in 1791, ___ more than 600 pieces of music. (write)"},
-    "Complete with an adverb: I ___ drink coffee in the evening because it keeps me awake.": {"task": "Write one word that fits: I ___ drink coffee in the evening because it keeps me awake."},
     "Complete with an adverb: This coffee is ___ hot to drink. I can't drink it.": {"task": "Complete: This coffee is ___ hot to drink. I can't drink it."},
     "Match each verb with its 3. form.": {"task": "Match each word with the form that fits 'I have ___ it.'"},
     "Match each verb with its past form.": {"task": "Match each word with the form that fits 'Yesterday I ___.'"},

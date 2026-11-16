@@ -39,7 +39,6 @@ GAP = {
     "I was ___ at the price. It was much higher than I thought.": "surprised",
     "Would you like ___ to eat? There's some pizza.": "something",
     "He is learning quickly. He ___ speaks Spanish now.": "already",
-    "I ___ drink coffee in the evening because it keeps me awake.": "never | rarely | hardly ever | seldom | don't | do not | can't | cannot | shouldn't | should not",
     "It's very cloudy. It ___ rain later.": "might | may | could | will | 'll | is going to",
     "Next year she ___ speak English fluently.": "will be able to | might be able to | may be able to | should be able to",
     "I'm going to have my eyes ___.": "tested | checked | examined | done | looked at",

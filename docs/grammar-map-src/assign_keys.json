@@ -7847,10 +7847,6 @@
 "adv_irreg",
 "read"
 ],
-"adverbs | B1.1 | gap | Write one word that fits: I ___ drink coffee in the evening because it keeps me awake. | ": [
-"adv_freq",
-"read"
-],
 "adverbs | B1.2 | gap | Complete: This coffee is ___ hot to drink. I can't drink it. | ": [
 "too_to",
 "read"
@@ -16813,6 +16809,10 @@
 ],
 "cond_first | A2.2 | mcq | Choose the correct option: What ___ you do if the shop is closed tomorrow? | will": [
 "c1",
+"read"
+],
+"adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening because it keeps me awake. | ": [
+"adv_freq",
 "read"
 ]
 }

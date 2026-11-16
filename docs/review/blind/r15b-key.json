@@ -1,0 +1,43 @@
+{
+ "r15b-001": {
+  "hash": "4fbb7676e96a7173",
+  "gate_key": "adverbs | B1.1 | gap | How often? Complete: I ___ drink coffee in the evening because it keeps me awake. | ",
+  "src": "b1-new-5.csv:65",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "never",
+     "rarely",
+     "hardly ever",
+     "seldom",
+     "almost never"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1532",
+   "skill": "adverbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How often? Complete: I ___ drink coffee in the evening because it keeps me awake.",
+   "why": "A word for how often (*never, rarely*) goes before the main verb: *I never drink coffee in the evening.*",
+   "why_lv": "Biežuma vārds (*never, rarely*) stāv pirms darbības vārda: *I never drink coffee in the evening.*",
+   "answers": [
+    [
+     "never",
+     "rarely",
+     "hardly ever",
+     "seldom",
+     "almost never"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "b1-new-5.csv:65"
+  }
+ }
+}

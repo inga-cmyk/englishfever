@@ -1,0 +1,59 @@
+[
+{
+"id": "r15b-001",
+"answer": [
+"never"
+],
+"other_correct": [
+[
+"rarely"
+],
+[
+"seldom"
+],
+[
+"hardly ever"
+],
+[
+"almost never"
+],
+[
+"don't"
+],
+[
+"do not"
+],
+[
+"don't usually"
+],
+[
+"don't often"
+],
+[
+"don't always"
+],
+[
+"often"
+],
+[
+"sometimes"
+],
+[
+"usually"
+],
+[
+"always"
+],
+[
+"occasionally"
+],
+[
+"frequently"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Ambiguous: 'because it keeps me awake' fits both a negative reason (I never drink it) and a positive one (I often/always drink it to stay awake, e.g. when studying). Nothing in the task says which meaning is wanted, so positive adverbs (often, usually, sometimes, always) are also correct. 'How often?' only names the category (frequency adverb) and gives no direction; it also does not say one word or more, and 'don't' (I don't drink) is a valid non-adverb answer. Needs a clue such as a negative context (e.g. 'I can't sleep after it') or a given meaning.",
+"level_problem": "",
+"sense_problem": "Sentence itself is natural, but the logic does not select a single answer (see instruction)."
+}
+]

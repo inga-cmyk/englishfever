@@ -223,8 +223,8 @@ Izglītojamais, kurš pēc kartes ir gatavs šim punktam, saņemtu grūtākus te
 | `two_obj_explain` | Explain, describe, suggest, say: the thing first, then to + person | B1.1 | 5 | 2 | 0 | two_objects |
 | `art_places` | School or the school: places used for their purpose; meals; by bus | B1.1 | 6 | 1 | 1 | articles_b1 |
 | `be_used_to` | Be used to and get used to + noun / -ing | B1.1 | 6 | 2 | 2 | used_to |
+| `fut_timetable` | Present simple for timetables and programmes | B1.1 | 5 | 3 | 2 | present_simple, future |
 | `ppc_result` | Present perfect continuous: a recent activity you can see | B1.1 | 6 | 3 | 1 | present_perfect_continuous |
-| `fut_timetable` | Present simple for timetables and programmes | B1.1 | 5 | 4 | 2 | present_simple, future |
 | `c1_c2` | First or second conditional: real or imagined? | B1.2 | 0 | 0 | 1 | cond_second, cond_first |
 | `rep_stay` | When the tense can stay: still true, says, has said | B1.2 | 0 | 0 | 1 | rep_statements |
 | `pastp_order` | Past perfect or past simple: is the order already clear? | B1.2 | 0 | 1 | 0 | past_perfect, narrative |
@@ -276,12 +276,12 @@ Kartē ir 416 kontrasta pāri (A2.1 līdz C1.2). Izvēles uzdevums šeit nozīm�
 
 Tādu ir 188: 74 līmeņos A2 līdz B2 un 114, kuros ir C1 punkts. A2 līdz B2 pāri:
 
-- **A2.1:** `be_pres` ↔ `ps_form` · `vp_like_ing` ↔ `would_like` · `there_is` ↔ `there_it` · `be_pres` ↔ `have_got` · `be_pres` ↔ `q_yesno` · `be_pres` ↔ `ps_negq` · `poss_adj` ↔ `poss_s` · `obj_pron` ↔ `poss_adj`
-- **A2.2:** `requests` ↔ `would_like` · `vp_like_ing` ↔ `what_like` · `poss_adj` ↔ `poss_pron` · `most_of` ↔ `sup`
-- **B1.1:** `obj_pron` ↔ `reflexive` · `too_to` ↔ `vp_adj_to` · `so_neither` ↔ `tag_basic` · `during_while` ↔ `for_since_from` · `for_since_from` ↔ `pp_for_since`
-- **B1.2:** `would_like` ↔ `would_rather` · `all_both` ↔ `both_and` · `adv_degree` ↔ `quite_rather` · `ought_to` ↔ `should` · `fut_cont` ↔ `will_form` · `all_both` ↔ `no_none` · `all_both` ↔ `each_every` · `link_adj` ↔ `senses_like` · `q_negative` ↔ `tag_basic` · `no_longer` ↔ `still_yet` · `pp_just` ↔ `still_yet` · `so_that` ↔ `too_to` · `adv_position` ↔ `word_order` · `quite_rather` ↔ `so_such_basic` · `its_time` ↔ `ought_to` · `adv_extreme` ↔ `quite_rather` · `both_and` ↔ `so_neither`
-- **B2.1:** `pas_inf_ing` ↔ `vp_to` · `its_time` ↔ `its_time_past` · `pas_other` ↔ `pas_perf` · `part_reduced` ↔ `rel_subj` · `get_b2` ↔ `vp_make_let` · `must_have_to` ↔ `supposed_to` · `compound_adj_num` ↔ `poss_time` · `like_as` ↔ `senses_like` · `vp_obj_ing` ↔ `vp_obj_to` · `vp_make_let` ↔ `vp_see_do` · `there_it` ↔ `there_it_prep` · `deduction` ↔ `deduction_past` · `deduction` ↔ `modals_cont` · `pas_cont` ↔ `pas_other` · `compound_nouns` ↔ `poss_s` · `reciprocal` ↔ `reflexive` · `pas_inf_ing` ↔ `vp_ing` · `deduction_past` ↔ `should_have` · `deduction` ↔ `should_expect` · `dep_verb` ↔ `noun_prep` · `fut_cont` ↔ `fut_perf` · `cmp_modify` ↔ `cmp_modify_b2` · `eding` ↔ `part_reduced` · `deduction` ↔ `likely_bound` · `caus_get` ↔ `get_b2` · `likely_bound` ↔ `should_expect` · `pas_two_obj` ↔ `two_obj` · `pas_report` ↔ `rep_backshift` · `vp_meaning` ↔ `vp_need_help` · `cmp_as` ↔ `like_as` · `have_aux` ↔ `have_got`
-- **B2.2:** `c_inv` ↔ `neg_inversion` · `distancing` ↔ `pas_report` · `cleft` ↔ `rel_what` · `aux_uses` ↔ `ellipsis` · `ellipsis` ↔ `vp_reduced` · `ellipsis` ↔ `one_ones` · `fut_perf` ↔ `fut_perf_cont` · `pas_inf_ing` ↔ `vp_complex` · `part_adv` ↔ `part_reduced`
+- **A2.1:** `vp_like_ing` ↔ `would_like` · `poss_adj` ↔ `poss_s` · `there_is` ↔ `there_it` · `be_pres` ↔ `ps_form` · `obj_pron` ↔ `poss_adj` · `be_pres` ↔ `ps_negq` · `be_pres` ↔ `have_got` · `be_pres` ↔ `q_yesno`
+- **A2.2:** `requests` ↔ `would_like` · `vp_like_ing` ↔ `what_like` · `most_of` ↔ `sup` · `poss_adj` ↔ `poss_pron`
+- **B1.1:** `for_since_from` ↔ `pp_for_since` · `during_while` ↔ `for_since_from` · `obj_pron` ↔ `reflexive` · `so_neither` ↔ `tag_basic` · `too_to` ↔ `vp_adj_to`
+- **B1.2:** `pp_just` ↔ `still_yet` · `adv_position` ↔ `word_order` · `ought_to` ↔ `should` · `fut_cont` ↔ `will_form` · `adv_extreme` ↔ `quite_rather` · `adv_degree` ↔ `quite_rather` · `all_both` ↔ `each_every` · `q_negative` ↔ `tag_basic` · `would_like` ↔ `would_rather` · `link_adj` ↔ `senses_like` · `both_and` ↔ `so_neither` · `its_time` ↔ `ought_to` · `all_both` ↔ `both_and` · `so_that` ↔ `too_to` · `quite_rather` ↔ `so_such_basic` · `all_both` ↔ `no_none` · `no_longer` ↔ `still_yet`
+- **B2.1:** `pas_two_obj` ↔ `two_obj` · `compound_adj_num` ↔ `poss_time` · `caus_get` ↔ `get_b2` · `pas_inf_ing` ↔ `vp_ing` · `part_reduced` ↔ `rel_subj` · `pas_cont` ↔ `pas_other` · `deduction_past` ↔ `should_have` · `cmp_modify` ↔ `cmp_modify_b2` · `pas_other` ↔ `pas_perf` · `vp_make_let` ↔ `vp_see_do` · `get_b2` ↔ `vp_make_let` · `must_have_to` ↔ `supposed_to` · `deduction` ↔ `likely_bound` · `cmp_as` ↔ `like_as` · `likely_bound` ↔ `should_expect` · `deduction` ↔ `deduction_past` · `deduction` ↔ `modals_cont` · `have_aux` ↔ `have_got` · `pas_inf_ing` ↔ `vp_to` · `reciprocal` ↔ `reflexive` · `its_time` ↔ `its_time_past` · `pas_report` ↔ `rep_backshift` · `vp_meaning` ↔ `vp_need_help` · `eding` ↔ `part_reduced` · `dep_verb` ↔ `noun_prep` · `there_it` ↔ `there_it_prep` · `like_as` ↔ `senses_like` · `deduction` ↔ `should_expect` · `fut_cont` ↔ `fut_perf` · `vp_obj_ing` ↔ `vp_obj_to` · `compound_nouns` ↔ `poss_s`
+- **B2.2:** `pas_inf_ing` ↔ `vp_complex` · `aux_uses` ↔ `ellipsis` · `ellipsis` ↔ `vp_reduced` · `cleft` ↔ `rel_what` · `fut_perf` ↔ `fut_perf_cont` · `ellipsis` ↔ `one_ones` · `distancing` ↔ `pas_report` · `c_inv` ↔ `neg_inversion` · `part_adv` ↔ `part_reduced`
 
 ### 4.2. Galvenie formu pāri: cik izvēles uzdevumu ir tagad
 
@@ -300,9 +300,9 @@ Saskaitīti izvēles uzdevumi (*mcq*) nosauktajās tēmās, kuros pareizā atbil
 | mustn't / don't have to | modal_verbs | 5 | ir |
 | could / was able to, managed to | more_modals, modal_verbs | 8 | ir |
 | must be / can't be, might be | more_modals | 0 | nav |
-| first / second conditional (will / would) | cond_first, cond_second | 15 | ir |
+| first / second conditional (will / would) | cond_first, cond_second | 16 | ir |
 | second / third conditional (would / would have) | cond_second, cond_third, cond_mixed | 25 | ir |
-| zero / first conditional (present / will) | cond_zero, cond_first | 38 | ir |
+| zero / first conditional (present / will) | cond_zero, cond_first | 39 | ir |
 | used to / be used to, get used to | used_to | 9 | ir |
 | said / told | rep_statements | 8 | ir |
 | reported question / direct question order | rep_questions, ind_polite | 13 | ir |

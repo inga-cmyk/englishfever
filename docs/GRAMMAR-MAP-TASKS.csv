@@ -78,7 +78,7 @@ adv_freq,A2.1,adverbs,A2.2,check,mcq,read,,more-1.csv:102,adverbs | A2.2 | mcq |
 adv_freq,A2.1,adverbs,A2.2,check,order,read,,more-1.csv:110,adverbs | A2.2 | order | Put the words in order. | we usually have breakfast at seven
 adv_freq,A2.1,adverbs,B1.1,check,order,read,,b1-new-5.csv:47,adverbs | B1.1 | order | Put the words in order. | we rarely eat out on weekdays
 adv_freq,A2.1,adverbs,B1.1,check,gap,read,,b1-new-5.csv:57,adverbs | B1.1 | gap | He ___ goes to the gym. Maybe once a year. | 
-adv_freq,A2.1,adverbs,B1.1,use,gap,read,,b1-new-5.csv:65,adverbs | B1.1 | gap | Write one word that fits: I ___ drink coffee in the evening because it keeps me awake. | 
+adv_freq,A2.1,adverbs,B1.1,use,text,read,,b1-new-5.csv:65,adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening because it keeps me awake. | 
 adv_freq,A2.1,adverbs,B1.1,check,mcq,read,,b1-new-5.csv:75,adverbs | B1.1 | mcq | Which sentence is correct? | She never drinks coffee.
 adv_freq,A2.1,adverbs,B1.1,learn,match,read,,b1-new-5.csv:89,adverbs | B1.1 | match | Match each word with its meaning. | always = every time ; never = not at any time ; often = many times ; rarely = only a few times
 adv_freq,A2.1,adverbs,B1.2,use,text,read,,b1-new-5.csv:86,adverbs | B1.2 | text | Rewrite with always: She is late again and again. | 
@@ -946,7 +946,7 @@ c1,A2.2,cond_first,A2.2,use,gap,read,,a2-big-1.csv:243,cond_first | A2.2 | gap |
 c1,A2.2,cond_first,A2.2,use,gap,read,,a2-big-1.csv:244,"cond_first | A2.2 | gap | If you ___ hard, you will succeed. (work) | "
 c1,A2.2,cond_first,A2.2,use,gap,read,,a2-big-1.csv:245,cond_first | A2.2 | gap | They ___ angry if we forget their birthday. (be) | 
 c1,A2.2,cond_first,A2.2,use,gap,read,,a2-big-1.csv:246,"cond_first | A2.2 | gap | If he ___ his phone, he will call us. (find) | "
-c1,A2.2,cond_first,A2.2,use,gap,read,,a2-big-1.csv:247,cond_first | A2.2 | gap | What ___ you do if you lose your keys? (will) | 
+c1,A2.2,cond_first,A2.2,check,mcq,read,,a2-big-1.csv:247,cond_first | A2.2 | mcq | Choose the correct option: What ___ you do if the shop is closed tomorrow? | will
 c1,A2.2,cond_first,A2.2,use,text,read,,a2-big-1.csv:248,cond_first | A2.2 | text | Join with if: You help me. I will help you. | 
 c1,A2.2,cond_first,A2.2,use,text,read,,a2-big-1.csv:249,cond_first | A2.2 | text | Join with if: You are late. We will start without you. | 
 c1,A2.2,cond_first,A2.2,use,text,read,,a2-big-1.csv:250,"cond_first | A2.2 | text | Make only the result negative. Keep 'If she comes': If she comes, I will stay. | "
@@ -2464,7 +2464,6 @@ fut_timetable,B1.1,present_simple,B1.1,use,gap,read,ps-B11-3a-r3,built-in,presen
 fut_timetable,B1.1,present_simple,B1.1,use,write,read,ps-B11-6a-r3,built-in,"present_simple | B1.1 | write | Write two sentences about a timetable: a train, a class, a shop or a film. | "
 fut_timetable,B1.1,present_simple,B1.1,check,order,read,,b1-tenses-1.csv:4,present_simple | B1.1 | order | Put the words in order. | our train leaves at half past seven so we must hurry
 fut_timetable,B1.1,present_simple,B1.1,check,gap,read,,b1-tenses-1.csv:13,"present_simple | B1.1 | gap | The lesson ___ at 9.30, so we ___ to be there early. | "
-fut_timetable,B1.1,present_simple,B1.1,use,gap,read,,b1-tenses-1.csv:22,"present_simple | B1.1 | gap | The film ___ at eight, so we ___ leave before seven. (start / have to) | "
 fut_timetable,B1.1,present_simple,B1.1,learn,mcq,read,,b1-tenses-1.csv:35,present_simple | B1.1 | mcq | Which sentence gives the time in the concert programme? | The concert starts at eight.
 fut_timetable,B1.1,future,B1.1,check,order,read,,b1-tenses-2.csv:107,future | B1.1 | order | Put the words in order. | the train leaves at seven so we should go now
 fut_timetable,B1.1,future,B1.1,use,gap,read,,b1-tenses-2.csv:122,"future | B1.1 | gap | The film ___ at eight, so let's meet at seven. (start) | "

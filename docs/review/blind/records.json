@@ -974,6 +974,11 @@
 "round": "r8",
 "task": "r8-044"
 },
+"382713c9931006c9": {
+"gate_key": "cond_first | A2.2 | mcq | Choose the correct option: What ___ you do if the shop is closed tomorrow? | will",
+"round": "r15",
+"task": "r15-001"
+},
 "38367e80a8084e81": {
 "gate_key": "used_to | B1.2 | gap | Before I moved here, I ___ a cat that always slept on my laptop. | ",
 "round": "r11",

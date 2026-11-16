@@ -5210,7 +5210,7 @@ return json_decode(<<<'EF_JSON_END'
 "cond_first | gap | We ___ the match if the rain ___ . | ": "c1",
 "cond_first | gap | If it ___ tomorrow, we ___ the picnic. | ": "c1",
 "cond_first | gap | If I ___ the report today, I ___ you tonight. (finish / call) | ": "c1",
-"cond_first | gap | What ___ you do if you ___ the bus? (will / miss) | ": "c1",
+"cond_first | gap | What ___ ___ ___ if you miss the last bus tonight? | ": "c1",
 "cond_first | text | Say the same with *if*: Leave now or you'll miss the train. | ": "c1",
 "cond_first | match | Match each beginning with its ending. | If the bus is late, = we'll take a taxi. ; If you feel ill, = I'll call the doctor. ; If she calls, = I'll give her the message. ; If we win, = we'll celebrate.": "c1",
 "cond_first | match | Match each situation with the best sentence. | You offer help. = If you want, I'll carry that. ; You warn someone. = If you touch it, you'll get hurt. ; You promise. = If you tell me, I won't tell anyone. ; You give advice. = If you rest, you'll feel better.": "c1",

@@ -359,6 +359,11 @@
 "round": "r13",
 "task": "r13-115"
 },
+"15473dde171bd31c": {
+"gate_key": "adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening. | ",
+"round": "r15d",
+"task": "r15d-001"
+},
 "15a9bcb16e823148": {
 "gate_key": "modal_verbs | B1.1 | mcq | Which sentence is NOT correct? | From May, drivers will must pay to enter the city centre.",
 "round": "r10",
@@ -1163,6 +1168,11 @@
 "gate_key": "future | A2.1 | gap | Write the missing word: ___ shall I put your coat? On the chair? | ",
 "round": "r9",
 "task": "r9-045"
+},
+"43c3ea32fe2c93d2": {
+"gate_key": "future | B1.1 | gap | The film ___ at eight, so let's meet at seven. (start) | ",
+"round": "r15",
+"task": "answers added"
 },
 "4400bccc89390775": {
 "gate_key": "articles_b1 | B1.2 | text | Rewrite with *the elderly*: Old people need more care. | ",

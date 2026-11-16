@@ -2937,6 +2937,25 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
+"id": "cf-A22-3c",
+"skill": "cond_first",
+"level": "A2.2",
+"bloom": 3,
+"kind": "gap",
+"q": "If you ___ the bus, you ___ be late. (miss / will)",
+"answers": [
+[
+"miss"
+],
+[
+"will"
+]
+],
+"why": "First conditional: *if* + present simple, *will* + base verb.",
+"hints": [],
+"why_lv": "First conditional: *if* + Present Simple, *will* + pamatforma."
+},
+{
 "id": "cf-B11-1a",
 "skill": "cond_first",
 "level": "B1.1",

@@ -1,0 +1,100 @@
+{
+ "r16-001": {
+  "hash": "cf4b0daf37250350",
+  "gate_key": "cond_first | A2.2 | gap | If you ___ the bus, you ___ late. (miss / be) | ",
+  "src": "built-in",
+  "point": "c1",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "miss"
+    ],
+    [
+     "will be",
+     "'ll be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "cf-A22-3c-r2",
+   "skill": "cond_first",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If you ___ the bus, you ___ late. (miss / be)",
+   "answers": [
+    [
+     "miss"
+    ],
+    [
+     "will be",
+     "'ll be"
+    ]
+   ],
+   "why": "First conditional: *if* + present simple (*miss*), *will* + base verb (*will be*).",
+   "hints": [],
+   "why_lv": "First conditional: *if* + Present Simple (*miss*), *will* + pamatforma (*will be*).",
+   "d": 2.4,
+   "scaffold": 1,
+   "err": [
+    "TIME-CLAUSE"
+   ],
+   "role": "use",
+   "point": "c1",
+   "src": "built-in"
+  }
+ },
+ "r16-002": {
+  "hash": "d81773e27cca4802",
+  "gate_key": "cond_first | B1.1 | gap | What ___ ___ ___ if you miss the last bus tonight? | ",
+  "src": "b1-cond-rep-1.csv:61",
+  "point": "c1",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "will"
+    ],
+    [
+     "you"
+    ],
+    [
+     "do"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0725",
+   "skill": "cond_first",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "What ___ ___ ___ if you miss the last bus tonight?",
+   "why": "A question about a possible future: *What will you do…?* (*will* before *you*); the *if*-part keeps the present: *if you miss*.",
+   "why_lv": "Jautājums par iespējamu nākotni: *What will you do*…? (*will* pirms *you*); *if* daļā paliek Present Simple: *if you miss*.",
+   "answers": [
+    [
+     "will"
+    ],
+    [
+     "you"
+    ],
+    [
+     "do"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "will",
+    "you",
+    "do",
+    "would",
+    "did"
+   ],
+   "role": "check",
+   "point": "c1",
+   "src": "b1-cond-rep-1.csv:61"
+  }
+ }
+}

@@ -4750,23 +4750,24 @@
 "why_lv": "First conditional: *if* + Present Simple, *will* + pamatforma. *If* daļa var būt gan pirmā, gan otrā."
 },
 {
-"id": "cf-A22-3c",
+"id": "cf-A22-3c-r2",
 "skill": "cond_first",
 "level": "A2.2",
 "bloom": 3,
 "kind": "gap",
-"q": "If you ___ the bus, you ___ be late. (miss / will)",
+"q": "If you ___ the bus, you ___ late. (miss / be)",
 "answers": [
 [
 "miss"
 ],
 [
-"will"
+"will be",
+"'ll be"
 ]
 ],
-"why": "First conditional: *if* + present simple, *will* + base verb.",
+"why": "First conditional: *if* + present simple (*miss*), *will* + base verb (*will be*).",
 "hints": [],
-"why_lv": "First conditional: *if* + Present Simple, *will* + pamatforma."
+"why_lv": "First conditional: *if* + Present Simple (*miss*), *will* + pamatforma (*will be*)."
 },
 {
 "id": "cf-B11-1a-r2",

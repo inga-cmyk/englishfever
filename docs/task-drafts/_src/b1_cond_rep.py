@@ -56,7 +56,7 @@ P.bank("B1.2","If you ___ her, she ___ you.",["help","will thank"],["helping","t
 P.bank("B1.2","They ___ late unless they ___ a taxi.",["will be","take"],["being","taking"])
 P.bank("B1.2","If he ___ the keys, we ___ in.",["finds","will get"],["finding","getting"])
 P.gap("B1.1","If I ___ the report today, I ___ you tonight. (finish / call)","finish / will call | 'll call")
-P.gap("B1.1","What ___ you do if you ___ the bus? (will / miss)","will / miss")
+P.bank("B1.1","What ___ ___ ___ if you miss the last bus tonight?",["will","you","do"],["would","did"],("A question about a possible future: *What will you do…?* (*will* before *you*); the *if*-part keeps the present: *if you miss*.","Jautājums par iespējamu nākotni: *What will you do…?* (*will* pirms *you*); *if* daļā paliek Present Simple: *if you miss*.")); replaces("What ___ you do if you ___ the bus? (will / miss)")   # teacher, 16 November (tester's report): (will) in the brackets gave the answer; the learner puts will, you, do in order
 P.gap("B1.2","Unless it ___ , we'll go for a walk. (rain)","rains")
 P.gap("B1.2","If they ___ the offer, they ___ rich. (accept / become)","accept / will become | 'll become")
 P.text("B1.1","Join with if: You leave now. You will catch the train.",["If you leave now, you will catch the train.","You will catch the train if you leave now."])

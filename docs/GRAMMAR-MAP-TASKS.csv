@@ -926,7 +926,7 @@ c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-4a,built-in,"cond_first | A2.2 | m
 c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-5a-r3,built-in,"cond_first | A2.2 | mcq | Which sentence is correct? | If I have time, I'll call you."
 c1,A2.2,cond_first,A2.2,use,write,read,cf-A22-6a-r2,built-in,cond_first | A2.2 | write | Promise a colleague something with *if*. | 
 c1,A2.2,cond_first,A2.2,check,order,rule,cf-A22-3b,built-in,cond_first | A2.2 | order | Put the words in order. | if you ask nicely I will help you
-c1,A2.2,cond_first,A2.2,use,gap,read,cf-A22-3c,built-in,"cond_first | A2.2 | gap | If you ___ the bus, you ___ be late. (miss / will) | "
+c1,A2.2,cond_first,A2.2,use,gap,read,cf-A22-3c-r2,built-in,"cond_first | A2.2 | gap | If you ___ the bus, you ___ late. (miss / be) | "
 c1,A2.2,cond_first,A2.2,check,order,rule,var-cf-a22-order-01-r2,built-in,cond_first | A2.2 | order | Put the words in order. Start with *If*. | if it rains we will stay indoors
 c1,A2.2,cond_first,A2.2,check,gap,read,var-cf-a22-bank-01-r3,built-in,"cond_first | A2.2 | gap | Complete: If she ___ early, we ___ the bus. | "
 c1,A2.2,cond_first,A2.2,check,order,rule,,a2-big-1.csv:230,cond_first | A2.2 | order | Put the words in order. | if it snows we will build a snowman
@@ -986,7 +986,7 @@ c1,A2.2,cond_first,B1.1,check,gap,read,,b1-cond-rep-1.csv:52,"cond_first | B1.1 
 c1,A2.2,cond_first,B1.1,check,gap,read,,b1-cond-rep-1.csv:53,cond_first | B1.1 | gap | We ___ the match if the rain ___ . | 
 c1,A2.2,cond_first,B1.1,check,gap,read,,b1-cond-rep-1.csv:55,"cond_first | B1.1 | gap | If it ___ tomorrow, we ___ the picnic. | "
 c1,A2.2,cond_first,B1.1,use,gap,read,,b1-cond-rep-1.csv:60,"cond_first | B1.1 | gap | If I ___ the report today, I ___ you tonight. (finish / call) | "
-c1,A2.2,cond_first,B1.1,use,gap,read,,b1-cond-rep-1.csv:61,cond_first | B1.1 | gap | What ___ you do if you ___ the bus? (will / miss) | 
+c1,A2.2,cond_first,B1.1,check,gap,read,,b1-cond-rep-1.csv:61,cond_first | B1.1 | gap | What ___ ___ ___ if you miss the last bus tonight? | 
 c1,A2.2,cond_first,B1.1,use,text,read,,b1-cond-rep-1.csv:64,cond_first | B1.1 | text | Say the same with *if*: Leave now or you'll miss the train. | 
 c1,A2.2,cond_first,B1.1,learn,match,read,,b1-cond-rep-1.csv:68,"cond_first | B1.1 | match | Match each beginning with its ending. | If the bus is late, = we'll take a taxi. ; If you feel ill, = I'll call the doctor. ; If she calls, = I'll give her the message. ; If we win, = we'll celebrate."
 c1,A2.2,cond_first,B1.1,learn,match,read,,b1-cond-rep-1.csv:69,"cond_first | B1.1 | match | Match each situation with the best sentence. | You offer help. = If you want, I'll carry that. ; You warn someone. = If you touch it, you'll get hurt. ; You promise. = If you tell me, I won't tell anyone. ; You give advice. = If you rest, you'll feel better."

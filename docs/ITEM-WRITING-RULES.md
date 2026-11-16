@@ -150,3 +150,8 @@
 - A rewrite says what to do: *Rewrite the sentence about last month. Start with *Last month*:*.
 - A task does not repeat the rule card's example (*Every room has a balcony*).
 - In a task of a new point the *?* opens that point's own card.
+
+## A word in brackets that is already the answer (teacher, 16 November, after a tester's report)
+- A word in brackets is a word the learner must put into the right form. If that form happens to be the word itself (*If you ___ water (heat)* → *heat*; *Shall we ___ a taxi? (take)* → *take*), the task stays: the learner still has to choose the form.
+- A word that never changes (*will, can, must, shall*…) is never given in brackets: it is the answer. Give the verb instead (*If you ___ the bus, you ___ late. (miss / be)* → *will be*), or make it a word bank in which the missing words go in order (*What ___ ___ ___ if you miss the last bus tonight?* → *will · you · do*, with *would, did* as wrong cards).
+- Choice cues in brackets (*(a / an)*, *(a few / a little)*) are a different thing and may stay.

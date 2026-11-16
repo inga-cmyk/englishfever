@@ -1011,10 +1011,6 @@
 "c1",
 "rule"
 ],
-"cond_first | A2.2 | gap | If you ___ the bus, you ___ be late. (miss / will) | ": [
-"c1",
-"read"
-],
 "cond_first | B1.1 | mcq | Starting now is necessary to finish on time. Complete: We will not finish on time ___ we start now. | unless": [
 "c1_unless",
 "read"
@@ -4616,10 +4612,6 @@
 "read"
 ],
 "cond_first | B1.1 | gap | If I ___ the report today, I ___ you tonight. (finish / call) | ": [
-"c1",
-"read"
-],
-"cond_first | B1.1 | gap | What ___ you do if you ___ the bus? (will / miss) | ": [
 "c1",
 "read"
 ],
@@ -16813,6 +16805,14 @@
 ],
 "adverbs | B1.1 | text | Put *never* in the right place: I drink coffee in the evening. | ": [
 "adv_freq",
+"read"
+],
+"cond_first | B1.1 | gap | What ___ ___ ___ if you miss the last bus tonight? | ": [
+"c1",
+"read"
+],
+"cond_first | A2.2 | gap | If you ___ the bus, you ___ late. (miss / be) | ": [
+"c1",
 "read"
 ]
 }

@@ -1,0 +1,23 @@
+[
+ {
+  "id": "r16-001",
+  "level": "A2.2",
+  "kind": "gap",
+  "instruction_and_task": "If you ___ the bus, you ___ late. (miss / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r16-002",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "What ___ ___ ___ if you miss the last bus tonight?",
+  "word_cards": [
+   "would",
+   "did",
+   "do",
+   "you",
+   "will"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

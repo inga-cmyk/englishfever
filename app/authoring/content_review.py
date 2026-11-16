@@ -598,6 +598,10 @@ def revise(original):
         answers=[['After I had finished work, I went home.', 'I went home after I had finished work.', 'After I finished work, I went home.']],
         answer_notes=[['After I finished work, I went home.', 'Correct too: *after* already shows the order; *had finished* makes it even clearer.', 'Arī pareizi: *after* jau parāda secību; *had finished* to pasaka vēl skaidrāk.']])
     report_fix('rv-B22-3a', q="Report it with *deny*. Max said: 'I didn't take your phone.'")
+    # teacher, 16 November (tester's report): (will) in the brackets gave the answer; the learner now writes will + be
+    report_fix('cf-A22-3c', q='If you ___ the bus, you ___ late. (miss / be)', answers=[['miss'], ['will be', "'ll be"]],
+        why='First conditional: *if* + present simple (*miss*), *will* + base verb (*will be*).',
+        why_lv='First conditional: *if* + Present Simple (*miss*), *will* + pamatforma (*will be*).')
     report_fix('rv-C12-3a', q="Say what my sister did, in one sentence. My sister said to me: 'You really should see a doctor about that cough.'")
     report_fix('ip-B11-6a', q='Ask a colleague politely where the meeting room is. Start with *Could you tell me* or *Do you know*.')
     report_fix('ip-B12-6a', q='Ask a stranger politely if the café takes cards. Start with *Do you know* or *Could you tell me*.')

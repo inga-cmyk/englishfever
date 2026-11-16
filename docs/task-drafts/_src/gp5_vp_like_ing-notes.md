@@ -33,3 +33,16 @@ Two explanations have the *Tulkojot burtiski…* note (tasks 6 and 8). Latvian u
 - Task 1, wrong option *to getting up*: it is a real learner mix, but less common than the other two. *got up* would be a form nobody writes after *hates*, so I did not use it.
 - The order task (3) shows only *Put the words in order.* after `plain()`, although I wrote *… to make a question*. The answer is a question with *do* and has no statement reading, so this is harmless.
 - Task 9: other paraphrases with *love* are possible (*I love my hobby: cooking.*). I accepted the natural ones with -ing and *to*. A reader may find another one.
+
+## Top-up, 16 November (3 tasks, tasks 10-12)
+The teacher decided that Verb patterns A2.1 needs at least 12 counted tasks. Three tasks are added at the end; the first nine are unchanged.
+- **Kinds.** Before: 2 choice, 1 word order, 1 word bank at A2.1 (plus the A2.2 one), 3 typed gaps, 2 whole sentences. The fewest were word order, choice and word bank, so one of each (all *check*). The point ends at 7 check and 5 use at A2.1.
+- **Settings:** learning (driving lessons), home (a flat), technology / family (photos). The last of the first nine was hobbies.
+
+10. Order *my son doesn't want to learn to drive*. There are two *to* cards, and each must go straight before its own base verb (*want to learn*, *learn to drive*; Murphy 54, both verbs are on the card's *+ to* list). No other order is English, and there is no statement / question issue.
+11. *Choose the correct option: Tom wants ___ a bigger flat.* → *to find*. *find* is the Latvian transfer (*grib atrast*), *finding* is the *like* pattern carried over to *want* (the card's mistake *I want going*), *to finding* mixes the two. Only one option is correct English anywhere, so no situation.
+12. Word bank *My grandma loves ___ photos to the family.* (sending · send · sends) → *sending*. *send* is the map's typical error (*I like cook*); *sends* is the believable *-s* carried over from *loves*. *to send* is also correct (Murphy 58) but cannot be built from one chip, so no correct answer is refused.
+
+Checks: `check_draft.php` 12 accepted, 0 refused (17 typed variants); `option_audit.py` 0 flags. The Latvian explanations of the new tasks need no new `LV_BY_FILE` words (the marker leaves *to* in *(vai to + pamatforma)* plain, as in tasks 1-9).
+
+Doubts: task 10 also tests *learn* + *to*, which is on the card but not in the point's name; it is the same pattern as *want* + *to*. Task 12: a reader may note that *to send* is not in the bank; that is not a refused answer.

@@ -28,3 +28,18 @@ gp(T, L, 3, "Does your partner like ___ computer games? (play)", "playing | to p
 tx(T, L, 4, "Correct the mistake: Maria wants take a taxi to the airport.", "Maria wants to take a taxi to the airport.", *WANT_LV)
 tx(T, L, 4, "Say it another way with *love*: Cooking is my favourite hobby.",
    "I love cooking. | I love to cook. | I really love cooking. | I really love to cook. | I love cooking very much.", *LIKE)
+
+# Top-up, 16 November (3 tasks: the topic level needs 12 counted tasks). Kinds the point had fewest of: order, choice, word bank.
+# word order (2nd): two cards *to*, each must go before its own base verb (want to learn, learn to drive). Murphy 54.
+od(T, L, 3, "Put the words in order.", "my son doesn't want to learn to drive",
+   "*want* + *to* + base verb, and *learn* + *to* + base verb: *My son doesn't want to learn to drive.* Not *want learn* or *want learning*.",
+   "*want* + *to* + pamatforma, un arī *learn* + *to* + pamatforma: *My son doesn't want to learn to drive.* Nevis *want learn* vai *want learning*.")
+# choice (3rd): want + to; the wrong options are the base verb, -ing (the like pattern) and the mix. Murphy 54.
+mc(T, L, 2, "Choose the correct option: Tom wants ___ a bigger flat.", "to find", ["find", "finding", "to finding"],
+   "*want* + *to* + base verb: *Tom wants to find a bigger flat.* Not *wants find*, *wants finding* or *wants to finding*.",
+   "*want* + *to* + pamatforma: *Tom wants to find a bigger flat.* Nevis *wants find*, *wants finding* vai *wants to finding*.")
+# word bank (2nd at A2.1): one gap after loves; the wrong chips are real forms of the same verb. Murphy 58.
+gp(T, L, 3, "My grandma loves ___ photos to the family.", "sending",
+   "*love* + *-ing* (or *to* + verb): *My grandma loves sending photos.* Not the base verb or the *-s* form: not *loves send*, not *loves sends*.",
+   "*love* + darbības vārds ar *-ing* (vai *to* + pamatforma): *My grandma loves sending photos.* Nevis *loves send* vai *loves sends*.",
+   bank=["sending", "send", "sends"])

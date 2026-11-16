@@ -37,3 +37,20 @@ no logical sequence, no future steps, many language errors.
 - Project plan: her .docx, rewritten 16 November (engagement focus, first results, phases); not committed.
 - Data definitions and changes: `docs/RESEARCH-DATA-PLAN.md`.
 - Literature with checked references (habits, motivation, feedback, language apps, tutoring systems): `docs/THESIS-LITERATURE.md`.
+
+## Learner model check (16 November 2026, first look, 27 learners, 6561 predictions)
+
+Script: `tools/research/learner_model_check.py ANSWERS.csv` (the research export; the data are never committed). For every check / use
+answer the app's own model (*My level*: ability from the last 60 evidence answers, difficulty = level base + 0.2 per thinking level,
+slope 1.7) predicted right / wrong from the learner's earlier answers only.
+
+- Ranking is weak for every model: AUC 0.62 for the app's model, 0.61 for the learner's running average, 0.61 for level + task kind
+  without the learner, 0.65 for running average + level + task kind (left-one-learner-out). The app's model is not better than the
+  running average (difference -0.02 to +0.05, bootstrap by learner).
+- The app's predictions are far too extreme (calibration slope 0.23): predicted 29 % -> observed 63 %; predicted 96 % -> observed 83 %.
+  The data give a slope of about 0.33 per half-level, not 1.7.
+- Within learners, A2.2 is harder than A2.1 and B1.1 harder than A2.2, but B1.2, B2.1 and B2.2 are about as hard as B1.1 (few answers
+  above B1.2: to confirm). A typed answer (role *use*) is about as much harder as one half-level; the model hardly counts it.
+- Item difficulty cannot be calibrated yet: 2578 items met for the first time, median 2 answers per item, 36 items with 10 or more.
+  Options for later: anchor tasks served to everyone (changes what is served: a dated research line), or many more learners.
+- Not changed in the app. Changing the slope or adding the task kind to the difficulty changes *My level*: the teacher decides.

@@ -55,7 +55,6 @@ GAP = {
     "'Can you help me?' She asked if I ___ help her.": "could | would",
     "There is ___ much sugar in this coffee. I can't drink it.": "too | so | far too | way too",
     "The hotel ___ we stayed was close to the beach.": "where | in which | at which",
-    "I ___ drink coffee in the evening because it keeps me awake.": "never | rarely | hardly ever | seldom",
     "This coffee is ___ hot to drink.": "too | much too | far too | way too",
     "The window ___ . Can you call someone? (break)": "has been broken | is broken",
     "The film ___ at eight, so we ___ leave before seven. (start / have to)": "starts / have to | will have to | 'll have to",

@@ -106,10 +106,11 @@ check("ordinary practice reports no fixed mistakes while all are wrong", done["s
 done, got = run(c, [], "A2.1", 6, correct, mode="comeback")
 n_attempts += len(got)
 ids = [g[0] for g in got]
-check("Comeback is one task per mistake (up to ten)", len(got) == expected, len(got))
+k5 = min(expected, 5)
+check("Second Chance: up to five mistakes, each first in its own sentence, then (where the point has one) a similar task (teacher, 16 November)", k5 <= len(got) <= 2 * k5, (len(got), expected))
 check("every task in Comeback is a different task", len(set(ids)) == len(ids))
 fixed = sum(1 for g in got if g[1].get("fixed"))
-check("fixed flags and summary agree, with no more than one fix per task", 0 <= fixed <= expected and done["summary"]["fixed"] == fixed and done["summary"]["comeback"] is True, done["summary"])
+check("fixed flags and summary agree, with no more than one fix per mistake", 0 <= fixed <= k5 and done["summary"]["fixed"] == fixed and done["summary"]["comeback"] is True, done["summary"])
 check("unfixed same-day retries stay open, fixed total is kept", {k: dash(c)[k] for k in ("open", "fixed")} == {"open": expected - fixed, "fixed": fixed}, dash(c))
 remaining = expected - fixed
 check("Comeback availability matches remaining evidence mistakes", c.api("session/start", {"mode": "comeback"})["_status"] == (200 if remaining else 404))

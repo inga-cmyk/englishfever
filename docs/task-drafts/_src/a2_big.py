@@ -294,7 +294,7 @@ P.gap("A2.2","I ___ you a message if I get there first. (send)","will send | 'll
 P.gap("A2.2","If you ___ hard, you will succeed. (work)","work")
 P.gap("A2.2","They ___ angry if we forget their birthday. (be)","will be | 'll be")
 P.gap("A2.2","If he ___ his phone, he will call us. (find)","finds")
-P.gap("A2.2","What ___ you do if you lose your keys? (will)","will")
+P.mcq("A2.2","Choose the correct option: What ___ you do if the shop is closed tomorrow?","will",["would","did","are"]); replaces("What ___ you do if you lose your keys? (will)")   # tester's report, 16 November: the bracket gave the answer away
 P.text("A2.2","Join with if: You help me. I will help you.",["If you help me, I will help you.","I will help you if you help me."])
 P.text("A2.2","Join with if: You are late. We will start without you.",["If you are late, we will start without you.","We will start without you if you are late."])
 P.text("A2.2","Make it negative: If she comes, I will stay.",["If she doesn't come, I won't stay.","If she does not come, I will not stay."],b=4)

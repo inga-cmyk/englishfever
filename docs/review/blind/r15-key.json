@@ -1,0 +1,137 @@
+{
+ "r15-001": {
+  "hash": "382713c9931006c9",
+  "gate_key": "cond_first | A2.2 | mcq | Choose the correct option: What ___ you do if the shop is closed tomorrow? | will",
+  "src": "a2-big-1.csv:247",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "will",
+   "wrong": [
+    "would",
+    "did",
+    "are"
+   ]
+  },
+  "item": {
+   "id": "c-0246",
+   "skill": "cond_first",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: What ___ you do if the shop is closed tomorrow?",
+   "why": "Possible future: *if* + Present Simple, *will* + base verb.",
+   "why_lv": "Iespējama nākotne: *if* + Present Simple, *will* + pamatforma.",
+   "correct": "will",
+   "wrong": [
+    "would",
+    "did",
+    "are"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "a2-big-1.csv:247"
+  }
+ },
+ "r15-002": {
+  "hash": "5c6d5f0366612782",
+  "gate_key": "adverbs | B1.1 | gap | Write one word that fits: I ___ drink coffee in the evening because it keeps me awake. | ",
+  "src": "b1-new-5.csv:65",
+  "point": "adv_freq",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "never",
+     "rarely",
+     "hardly ever",
+     "seldom",
+     "don't",
+     "do not",
+     "can't",
+     "cannot",
+     "shouldn't",
+     "should not"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1532",
+   "skill": "adverbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write one word that fits: I ___ drink coffee in the evening because it keeps me awake.",
+   "why": "A word for how often (*never, rarely*) goes before the main verb: *I never drink coffee in the evening.* *I don't drink* is correct too.",
+   "why_lv": "Biežuma vārds (*never, rarely*) stāv pirms darbības vārda: *I never drink coffee in the evening.* Arī *I don't drink* ir *pareizi*.",
+   "answers": [
+    [
+     "never",
+     "rarely",
+     "hardly ever",
+     "seldom",
+     "don't",
+     "do not",
+     "can't",
+     "cannot",
+     "shouldn't",
+     "should not"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "adv_freq",
+   "src": "b1-new-5.csv:65"
+  }
+ },
+ "r15-003": {
+  "hash": "0048d2a512c8d99c",
+  "gate_key": "future | B1.1 | gap | The film ___ at eight, so let's meet at seven. (start) | ",
+  "src": "b1-tenses-2.csv:122",
+  "point": "fut_timetable",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "starts",
+     "will start",
+     "is starting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2078",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The film ___ at eight, so let's meet at seven. (start)",
+   "why": "A timetable: Present Simple: *starts*.",
+   "why_lv": "*Saraksts*: Present Simple: *starts*.",
+   "answer_notes": [
+    [
+     "will start",
+     "A timetable or programme usually takes the present simple (*starts*). *will start* and *is starting* are correct too: they just do not sound like a fixed time in a programme.",
+     "Saraksts vai programma parasti ir Present Simple (*starts*). Arī *will start* un *is starting* ir pareizi, tikai neizklausās pēc noteikta laika programmā."
+    ],
+    [
+     "is starting",
+     "A timetable or programme usually takes the present simple (*starts*). *will start* and *is starting* are correct too: they just do not sound like a fixed time in a programme.",
+     "Saraksts vai programma parasti ir Present Simple (*starts*). Arī *will start* un *is starting* ir pareizi, tikai neizklausās pēc noteikta laika programmā."
+    ]
+   ],
+   "answers": [
+    [
+     "starts",
+     "will start",
+     "is starting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "fut_timetable",
+   "src": "b1-tenses-2.csv:122"
+  }
+ }
+}

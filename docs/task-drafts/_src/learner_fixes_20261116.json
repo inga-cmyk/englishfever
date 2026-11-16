@@ -1,0 +1,30 @@
+{
+ "b1-tenses-2.csv": [
+  {
+   "id": "tester-film-1",
+   "match": [
+    "gap",
+    "The film ___ at eight, so let's meet at seven. (start)",
+    "starts"
+   ],
+   "set": {
+    "4": "starts | will start | is starting",
+    "13": "will start :: A timetable or programme usually takes the present simple (*starts*). *will start* and *is starting* are correct too: they just do not sound like a fixed time in a programme. :: Saraksts vai programma parasti ir Present Simple (*starts*). Arī *will start* un *is starting* ir pareizi, tikai neizklausās pēc noteikta laika programmā. || is starting :: A timetable or programme usually takes the present simple (*starts*). *will start* and *is starting* are correct too: they just do not sound like a fixed time in a programme. :: Saraksts vai programma parasti ir Present Simple (*starts*). Arī *will start* un *is starting* ir pareizi, tikai neizklausās pēc noteikta laika programmā."
+   }
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "id": "tester-film-2",
+   "match": [
+    "gap",
+    "The film ___ at eight, so we ___ leave before seven. (start / have to)",
+    "starts / have to | will have to | 'll have to"
+   ],
+   "set": {
+    "4": "starts | will start | is starting / have to | will have to | 'll have to",
+    "13": "will start :: A timetable or programme usually takes the present simple (*starts*). *will start* and *is starting* are correct too: they just do not sound like a fixed time in a programme. :: Saraksts vai programma parasti ir Present Simple (*starts*). Arī *will start* un *is starting* ir pareizi, tikai neizklausās pēc noteikta laika programmā. || is starting :: A timetable or programme usually takes the present simple (*starts*). *will start* and *is starting* are correct too: they just do not sound like a fixed time in a programme. :: Saraksts vai programma parasti ir Present Simple (*starts*). Arī *will start* un *is starting* ir pareizi, tikai neizklausās pēc noteikta laika programmā."
+   }
+  }
+ ]
+}

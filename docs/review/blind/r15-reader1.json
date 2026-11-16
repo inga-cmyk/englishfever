@@ -1,0 +1,80 @@
+[
+{
+"id": "r15-001",
+"answer": "will",
+"other_correct": "",
+"wrong_options_that_fit": "would (marginal: 'What would you do if the shop is closed tomorrow?' is heard informally, but mixes tenses; standard is will)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'would' is a believable distractor but arguably also acceptable, so the item is not clean."
+},
+{
+"id": "r15-002",
+"answer": [
+"never"
+],
+"other_correct": [
+[
+"don't"
+],
+[
+"do not"
+],
+[
+"rarely"
+],
+[
+"seldom"
+],
+[
+"can't"
+],
+[
+"cannot"
+],
+[
+"shouldn't"
+],
+[
+"mustn't"
+],
+[
+"won't"
+],
+[
+"wouldn't"
+],
+[
+"try not to"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open gap with no hint: many words fit (never, rarely, seldom, don't, can't, shouldn't, won't). 'because it keeps me awake' allows negative or reason-based modals. Needs a hint (e.g. frequency word) or restriction; 'one word' also excludes 'hardly ever' / 'do not' inconsistently.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r15-003",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"is starting"
+],
+[
+"will start"
+],
+[
+"is going to start"
+],
+[
+"starts"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction (what to do with the word in brackets, which form). Present simple, present continuous, will and going to all fit; only timetable meaning favours 'starts', and nothing in the task says that. Name the tense or change the context.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

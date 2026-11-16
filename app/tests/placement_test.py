@@ -52,7 +52,9 @@ seen, s = play(c, 24, second)
 check("2 of 3 right goes up to B1", [FULL(i) for i in seen[:3]] == ["A2"] * 3 and FULL(seen[3]) == "B1", [FULL(i) for i in seen[:5]])
 check("1 of 3 right stays at B1 for another block", [FULL(i) for i in seen[3:9]] == ["B1"] * 6, [FULL(i) for i in seen[3:9]])
 missed = {i["skill"] for i in seen[5:6] + seen[3:4] if True}
-check("the second block re-checks a topic missed in the first", len({i["skill"] for i in seen[3:6]} & {i["skill"] for i in seen[6:9]}) >= 1, [i["skill"] for i in seen[3:9]])
+FAM = lambda sk: "questions_inside" if sk in ("rep_questions", "ind_polite", "ind_advanced") else sk
+first20 = [FAM(i["skill"]) for i in seen[:16]]   # the test bank here has built-in tasks only (about 16 topics near A2-B1); on the server prepared tasks add more
+check("every question of the test is about another topic (teacher, 16 November)", len(set(first20)) == len(first20), [(n, t) for n, t in enumerate(first20) if first20.count(t) > 1])
 
 # the learner's own level (teacher, 6 November): the test starts there and goes down when it is too hard
 c = login(7150, "Dace Says B2"); c.api("account/profile", {"self_level": "B2"})

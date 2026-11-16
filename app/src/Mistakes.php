@@ -1,7 +1,7 @@
 <?php
 // "Comeback": a learner's open mistakes, worked out from their own answers (no extra table, so past results are never touched).
 //
-// A mistake is a task answered wrongly. It is fixed when the learner later answers a similar task (same topic, level within
+// A mistake is a task answered wrongly. It is fixed when the learner later answers a similar task (same grammar point since 16 November, same topic, level within
 // one step, thinking level within one step, same construction for used to) correctly: a different sentence. The same task right again counts only on a later
 // day (the same day it is memory, not yet the rule). A task answered wrongly again after it was fixed becomes a mistake again.
 // Placement mistakes above the level the test found are PARKED: they are not offered for Second Chance until the learner
@@ -121,10 +121,21 @@ final class Mistakes
 
     private static function similar(array $m, array $r): bool
     {
-        return self::sameConstruction(Content::item($m['item_id']), Content::item($r['item_id']))
+        $a = Content::item($m['item_id']); $b = Content::item($r['item_id']);
+        return self::sameConstruction($a, $b)
+            && self::samePoint($a, $b)
             && $m['skill'] === $r['skill']
             && abs(self::levelIdx($m['level']) - self::levelIdx($r['level'])) <= 1
             && abs((int) $m['bloom'] - (int) $r['bloom']) <= 1;
+    }
+
+    /** A mistake is fixed only by a task of the same grammar point (teacher, 16 November, after a tester's report: a mistake with
+     *  'good at' was fixed by 'answer my question'). Tasks without a point on the map keep the old rule (same topic). */
+    public static function samePoint(?array $a, ?array $b): bool
+    {
+        if (!$a || !$b) return false;
+        $pa = Content::point($a); $pb = Content::point($b);
+        return $pa === null || $pb === null || $pa === $pb;
     }
 
     /** Unknown or mixed constructions cannot stand in for one specific rule. */
@@ -199,6 +210,13 @@ final class Mistakes
             if ($same) return $same;
         }
         return self::twinPick($uid, $m, $mistakeId, $exclude, $angle, $levels, $code, $maxScaffold, $minScaffold, null);
+    }
+
+    /** Second Chance (teacher, 16 November): the most similar task of the same grammar point (same kind of task first), or null. */
+    public static function twinOfPoint(int $uid, string $mistakeId, array $exclude, string $point): ?array
+    {
+        $m = Content::item($mistakeId);
+        return $m ? self::twinPick($uid, $m, $mistakeId, $exclude, false, null, null, null, null, $point) : null;
     }
 
     /** The task of the same kind of mistake with the lowest cost; $only = a grammar point the task must have. */

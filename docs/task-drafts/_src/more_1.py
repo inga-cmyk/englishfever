@@ -36,7 +36,7 @@ D_NONE = ex("*call, discuss, enter* take no preposition: *Call me later.*", "Lat
 D_TO = ex("*belong to, listen to, married to*: *This bag belongs to my sister.*", "*belong to, listen to, married to*: *This bag belongs to my sister.*")
 D_OF = ex("*afraid of*: *Are you afraid of spiders?*", "Latviski \"baidīties no\", tāpēc gribas *from*, bet angliski *afraid of*: *Are you afraid of spiders?*")
 D_ON = ex("*depend on*: *It depends on the weather.*", "Latviski \"atkarīgs no\", tāpēc gribas *from*, bet angliski *depend on*: *It depends on the weather.*")
-D_IN = ex("*interested in*: *I'm interested in history.*", "Latviski \"interesēties par\", bet angliski *interested in*: *I'm interested in history.*")
+D_IN = ex("*interested* is always followed by *in* (not *about* or *on*): *I'm interested in history.* Learn the pair: *interested in*.", "Latviski saka \"interesēties par\", tāpēc gribas *about*, bet aiz *interested* vienmēr ir *in*: *I'm interested in history.* Iegaumē pāri: *interested in*.")   # tester's report, 16 November
 T = Topic("Prepositions after words (listen to, good at)", mcq_b=2, text_b=3, mcq=D_GEN, bank=D_GEN, gap=D_GEN, text=D_GEN, order=D_GEN, match=D_GEN)
 T.mcq("A2.1", "Choose the correct option: I'm waiting ___ my friend.", "for", ["to", "on"], D_FOR, b=1)
 T.mcq("A2.1", "Choose the correct option: She's very good ___ maths.", "at", ["in", "on"], D_AT, b=1)

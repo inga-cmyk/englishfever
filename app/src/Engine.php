@@ -50,10 +50,22 @@ final class Engine
         $comeback = false;
         if ($mode === 'comeback') {
             // "Comeback": the learner's open mistakes, each met again as a similar task
-            $queue = Mistakes::queue($uid, 10);
+            $queue = Mistakes::queue($uid, 5);
             $review = array_slice(Mistakes::reviewDue($uid), 0, 2);   // 1-2 mistakes fixed a few days ago, checked again in a new sentence
             if (!$queue && !$review) throw new ApiError('No mistakes are waiting right now. Nice work!', 404);
-            $queue = array_merge(array_slice($queue, 0, 10 - count($review)), $review);
+            // each open mistake twice (teacher, 16 November): first the same sentence the learner got wrong, then the most similar
+            // task of the same grammar point; a review comes once, in a new sentence
+            $own = [];
+            $q2 = [];
+            $openIds = array_fill_keys($queue, true);
+            foreach ($queue as $mid) {
+                $mt = Content::item($mid); $pt = $mt ? Content::point($mt) : null;
+                $hasTwin = $pt === null || Mistakes::twinOfPoint($uid, $mid, $openIds, $pt) !== null;
+                if (count($q2) + ($hasTwin ? 2 : 1) > 10 - count($review)) break;
+                $own[count($q2)] = true; $q2[] = $mid;
+                if ($hasTwin) $q2[] = $mid;   // no other task of the point: the sentence alone
+            }
+            $queue = array_merge($q2, $review);
             $comeback = true;
             $mode = 'practice';
             $skills = array_values(array_unique(array_map(fn($id) => Content::item($id)['skill'], $queue)));
@@ -110,7 +122,7 @@ final class Engine
 
         $state = ['current' => null, 'seed' => random_int(1, 1 << 30), 'served' => [], 'theta' => [], 'g' => 2.0, 'last' => []];
         if ($smart) $state['smart'] = true;
-        if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['review'] = array_fill_keys($review, true); }
+        if ($comeback) { $state['comeback'] = true; $state['queue'] = $queue; $state['own'] = $own; $state['review'] = array_fill_keys($review, true); }
         if (!empty($allowed)) $state['levels'] = $allowed;
         if ($point !== null) $state['point'] = $point;
         // 60 / 25 / 15 (teacher, 2 November): a path step and Surprise me mix the step, review and a step up; a chosen topic stays as chosen
@@ -254,7 +266,10 @@ final class Engine
             $fixedNow = $after['fixed'] > $before['fixed'];
             $lockedNow = $after['locked'] > $before['locked'];   // a mistake the learner has now got right again, on another day: kept quiet, only the sound tells
         }
-        if ($fixedNow) $st['fixed'] = ($st['fixed'] ?? 0) + 1;
+        if ($fixedNow) {
+            $st['fixed'] = ($st['fixed'] ?? 0) + 1;
+            foreach (array_diff_key($after['solid'], $before['solid']) as $fid => $_) $st['fixed_ids'][] = (string) $fid;   // which ones, for the summary
+        }
         if ($lockedNow) $st['locked'] = ($st['locked'] ?? 0) + 1;
         $gapNow = self::probeAnswered($st, $itemId, $ok, $ses);
         if (!empty($st['comeback'])) $gapNow = self::comebackGap($st, $ses, $itemId, $ok) || $gapNow;
@@ -442,6 +457,9 @@ final class Engine
         return $out;
     }
 
+    /** Topics that test the same thing in the level test (word order of a question inside a sentence): one question for all. */
+    private const PL_FAMILY = ['rep_questions', 'ind_polite', 'ind_advanced'];
+
     private static function pickNext(array &$ses): ?array
     {
         $st = $ses['state'];
@@ -458,11 +476,17 @@ final class Engine
             $mid = $st['queue'][$count] ?? null;
             if ($mid === null) return null;
             if (!empty($st['queue_extra'][$mid])) return Content::item($mid);   // a task added after a gap: already a similar task
+            if (!empty($st['own'][$count])) return Content::item($mid);   // the sentence the learner got wrong, first (teacher, 16 November)
             // never another open mistake as the "similar task": it would fix itself and leave the one it stood for
             $scan = Mistakes::scan((int) $ses['user_id']);
             $open = array_fill_keys(array_keys($scan['open']), true);
             if (!empty($st['review'][$mid])) $open += $scan['solid'][$mid]['items'] ?? [];
-            return Mistakes::twin((int) $ses['user_id'], $mid, $served + $open) ?? Content::item($mid);
+            $mt = Content::item($mid);
+            $pt = $mt ? Content::point($mt) : null;
+            // the most similar task of the same grammar point; no task of another point stands in for it (teacher, 16 November)
+            $t = $pt !== null ? Mistakes::twinOfPoint((int) $ses['user_id'], $mid, $served + $open, $pt) : Mistakes::twin((int) $ses['user_id'], $mid, $served + $open);
+            if ($t) return $t;
+            return $mt;
         }
         // slip or gap: a task like the one just missed comes back soon, in a different sentence (and from other angles when it is missed again)
         if (!$placement && !empty($st['probes'])) {
@@ -540,6 +564,7 @@ final class Engine
         // placement: first a staircase of 3-question blocks, one full level at a time; when it has found the ceiling, questions near the ability fitted so far
         $pl = $placement ? ($st['pl'] ?? null) : null;
         $stairs = $pl && empty($pl['done']);
+        $wider = [];
         $theta = 3.0;
         if ($placement && $st['last']) $theta = self::fitAbility(array_map(fn($h) => [$h['d'], $h['correct']], $st['last']));
         elseif ($placement) $theta = $st['g'];
@@ -557,9 +582,24 @@ final class Engine
             foreach ($bySkill as $s => $list) { $t = array_values(array_filter($list, fn($it) => self::typedForm($it))); if ($t) $bySkill[$s] = $t; }
         } elseif ($placement) {
             // leave out topics whose easiest task is far too hard for the ability found (unless that would leave nothing)
+            $wider = array_filter($bySkill, fn($list) => min(array_column($list, 'd')) <= $theta + 2.0);   // one half-level more, for a topic not used yet (teacher, 16 November)
             $near = array_filter($bySkill, fn($list) => min(array_column($list, 'd')) <= $theta + 1.0);
             if ($near) $bySkill = $near;
             foreach ($bySkill as $s => $list) { $t = array_values(array_filter($list, fn($it) => self::typedForm($it))); if ($t) $bySkill[$s] = $t; }
+        }
+
+        // placement (teacher, 16 November): every question is about another topic, so an explanation shown after one answer does not
+        // give the next answer away; the reported / indirect question topics count as one. Only when every topic is used does one come back.
+        if ($placement) {
+            $fam = fn($sk) => in_array($sk, self::PL_FAMILY, true) ? 'questions_inside' : $sk;
+            $usedFam = [];
+            foreach ($st['last'] as $h) $usedFam[$fam($h['skill'])] = true;
+            $fresh = array_filter($bySkill, fn($list, $sk) => !isset($usedFam[$fam($sk)]), ARRAY_FILTER_USE_BOTH);
+            if (!$fresh && !empty($wider)) {   // every near topic used: an unused one half a level higher, its easiest typed tasks
+                $fresh = array_filter($wider, fn($list, $sk) => !isset($usedFam[$fam($sk)]), ARRAY_FILTER_USE_BOTH);
+                foreach ($fresh as $sk => $list) { $t = array_values(array_filter($list, fn($it) => self::typedForm($it))); if ($t) $fresh[$sk] = $t; }
+            }
+            if ($fresh) $bySkill = $fresh;
         }
 
         // choose the skill: least used so far; in placement, skills just answered wrongly are re-checked first
@@ -896,6 +936,10 @@ final class Engine
             $out['open_after'] = count($m['open']);
             $out['review_due'] = count(Mistakes::reviewDue((int) $ses['user_id'], $m));
             $out['fixed_total'] = $m['fixed'];
+            $out['fixed_list'] = array_values(array_filter(array_map(function ($id) {   // the sentences fixed in this session (teacher, 16 November)
+                $it = Content::item($id); if (!$it) return null;
+                return ['skill' => Content::skill($it['skill'])['label'] ?? $it['skill'], 'text' => Content::shownQ((string) $it['q'])];
+            }, array_unique($ses['state']['fixed_ids'] ?? []))));
             $out['bonus'] = ($ses['ended_at'] !== null && !isset($ses['state']['bonus_from'])) ? count(self::bonusPlan((int) $ses['user_id'], $ses)) : 0;   // only what can really be served
             $out['locked'] = (int) ($ses['state']['locked'] ?? 0);   // fixed earlier and still right a few days later
             $out['bonus_done'] = isset($ses['state']['bonus_from']);

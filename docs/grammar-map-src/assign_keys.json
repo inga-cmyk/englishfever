@@ -2907,10 +2907,6 @@
 "c1",
 "read"
 ],
-"cond_first | A2.2 | gap | What ___ you do if you lose your keys? (will) | ": [
-"c1",
-"read"
-],
 "cond_first | A2.2 | text | Join with if: You help me. I will help you. | ": [
 "c1",
 "read"
@@ -16813,6 +16809,10 @@
 ],
 "quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | ": [
 "count_unc",
+"read"
+],
+"cond_first | A2.2 | mcq | Choose the correct option: What ___ you do if the shop is closed tomorrow? | will": [
+"c1",
 "read"
 ]
 }

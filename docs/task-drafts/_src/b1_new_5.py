@@ -69,7 +69,7 @@ P.gap("A2.2", "He is a fast driver. He drives ___.", "fast")
 P.gap("A2.2", "She is a good singer. She sings ___.", "well")
 P.gap("A2.2", "He is a careful driver. He drives ___.", "carefully")
 P.gap("B1.1", "She is a hard worker. She works ___.", "hard")
-P.gap("B1.1", "I ___ drink coffee in the evening because it keeps me awake.", "never | rarely | hardly ever")
+P.gap("B1.1", "I ___ drink coffee in the evening because it keeps me awake.", "never | rarely | hardly ever", ("A word for how often (*never, rarely*) goes before the main verb: *I never drink coffee in the evening.* *I don't drink* is correct too.", "Biežuma vārds (*never, rarely*) stāv pirms darbības vārda: *I never drink coffee in the evening.* Arī *I don't drink* ir pareizi."))   # tester's report, 16 November: the line about this task, not every adverb rule
 P.gap("B1.2", "This coffee is ___ hot to drink.", "too")
 P.gap("B1.2", "He is learning quickly. He ___ speaks Spanish now.", "almost | nearly | already")
 P.mcq("A2.2", S() + "which sentence is correct?", "She speaks English well.", ["She speaks English good.", "She speaks well English.", "She well speaks English."])

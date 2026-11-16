@@ -1021,3 +1021,12 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .knowlist li { display: flex; align-items: center; gap: 4px; color: var(--text); }
 .knowlist li svg { color: var(--good, #2bb673); width: 18px; height: 18px; }
 .new-pill { background: var(--good-bg, #e3f4ec); color: var(--good, #1f6f4a); padding: 1px 8px; font-size: .72rem; }
+
+/* rule cards (teacher, 16 November): the language flags in the top right corner; on a phone the card has a clear edge */
+.card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.card-head h2 { margin-top: 0; }
+.card-flags { flex: none; margin-top: 4px; }
+@media (max-width: 640px) {
+  .modal { border: 2px solid var(--muted); box-shadow: 0 6px 28px rgba(0,0,0,.35); }
+  details.rule[open] > :not(summary) { border: 1.5px solid var(--muted); border-radius: 14px; padding: 12px; }
+}

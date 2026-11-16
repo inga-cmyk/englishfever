@@ -200,6 +200,13 @@ final class Grader
                 }
                 $msgs = [];
                 $msgsLv = [];
+                // a common mistake the form check alone misses (tester's report, 16 November: *I have never saw* got a green tick):
+                // have / has + a past simple form where the 3rd form is different
+                if (preg_match('/\b(have|has|haven\'t|hasn\'t|\'ve|\'s)\s+(?:(?:never|ever|just|already|not|always|recently|finally)\s+)?(' . implode('|', array_keys(self::PAST_NOT_PP)) . ')\b/iu', $text, $pm)) {
+                    $pp = self::PAST_NOT_PP[strtolower($pm[2])];
+                    $msgs[] = "After *have / has* use the 3rd form: *$pp*, not *{$pm[2]}*.";
+                    $msgsLv[] = "Aiz *have / has* lieto 3. formu: *$pp*, nevis *{$pm[2]}*.";
+                }
                 foreach ($item['must'] as $m) {
                     if (@preg_match(self::rx($m[0]), $text) !== 1) {
                         $msgs[] = $m[1];
@@ -245,6 +252,13 @@ final class Grader
         }
         return null;
     }
+
+    /** Past simple forms whose 3rd form is different (have + these is a mistake): past => 3rd form. */
+    private const PAST_NOT_PP = ['saw' => 'seen', 'went' => 'gone', 'did' => 'done', 'ate' => 'eaten', 'wrote' => 'written', 'took' => 'taken',
+        'gave' => 'given', 'spoke' => 'spoken', 'drove' => 'driven', 'rode' => 'ridden', 'broke' => 'broken', 'chose' => 'chosen', 'forgot' => 'forgotten',
+        'knew' => 'known', 'grew' => 'grown', 'flew' => 'flown', 'drew' => 'drawn', 'threw' => 'thrown', 'began' => 'begun', 'drank' => 'drunk',
+        'swam' => 'swum', 'sang' => 'sung', 'rang' => 'rung', 'ran' => 'run', 'came' => 'come', 'became' => 'become', 'fell' => 'fallen',
+        'woke' => 'woken', 'wore' => 'worn', 'stole' => 'stolen', 'hid' => 'hidden', 'shook' => 'shaken', 'was' => 'been', 'were' => 'been'];
 
     /** Words that are always written with a capital letter. A word-order task is stored lower case, so they are put back when it is shown. */
     private const PROPER = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'mondays', 'tuesdays', 'wednesdays', 'thursdays', 'fridays', 'saturdays', 'sundays',

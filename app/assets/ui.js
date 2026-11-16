@@ -355,7 +355,8 @@
     back.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
     document.body.appendChild(back);
     var f = box.querySelector('input,button,textarea');
-    if (f) f.focus();
+    if (f) f.focus({ preventScroll: true });
+    box.scrollTop = 0;   // a long card opens at its top, not where the first button is (teacher, 16 November)
     return { close: close, el: box };
   }
 

@@ -1175,13 +1175,20 @@
       return det;
     }
     function newPointsGroup() {   // the New group: one tile per new grammar point; a tile opens its card, whose button starts that point
-      var pts = state.meta.new_points || [];
-      if (!pts.length) return null;
+      var all = state.meta.new_points || [];
+      if (!all.length) return null;
+      // the points of the chosen levels; the others behind "Other levels" (tester's report, 16 November: B1 points showed with A2
+      // chosen; teacher, 4 November: new things at other levels stay reachable)
+      var ch = chosenLevels();
+      var here = all.filter(function (p) { return (p.levels || []).some(function (l) { return ch.indexOf(l) >= 0; }); });
+      var other = all.filter(function (p) { return here.indexOf(p) < 0; });
+      function tiles(list) { return h('div', { class: 'tilegrid' }, list.map(function (p) {
+        return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, all.indexOf(p)));
+      })); }
       var det = h('details', { class: 'picker-group', open: ('_new' in openMap) ? openMap._new : true },
-        h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(pts.length))),
-        h('div', { class: 'tilegrid' }, pts.map(function (p, i) {
-          return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, i));
-        })));
+        h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(here.length))),
+        here.length ? tiles(here) : h('p', { class: 'small muted' }, 'No new points at the chosen level.'),
+        other.length ? h('details', { class: 'new-other' }, h('summary', { class: 'small' }, 'Other levels (' + other.length + ')'), tiles(other)) : null);
       det.addEventListener('toggle', function () { openMap._new = det.open; });
       return det;
     }
@@ -1297,7 +1304,7 @@
         if (promptSplit) { // instruction line, then the sentence (with its gaps) in italics
           var smp = h('em', { class: 'q-sample' }); while (qEl.firstChild) smp.appendChild(qEl.firstChild);
           qEl.appendChild(h('span', { class: 'q-instr' }, UI.rich(UI.markForms(promptSplit[1])), ':')); qEl.appendChild(h('br')); qEl.appendChild(smp);
-        } area.appendChild(h('p', { class: 'small muted dnd-hint', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.')); }
+        } area.appendChild(h('p', { class: 'small muted dnd-hint', style: 'margin:0 0 10px' }, 'Tap or drag the words into the gaps.', (it.bank || []).some(function (w) { return String(w).trim() === '—'; }) ? ' The card — means no word.' : '')); }   // the dash card explained (teacher, 16 November, tester's report)
       area.appendChild(board.el);
       requestAnimationFrame(function () { if (board.el.offsetHeight) board.el.style.minHeight = board.el.offsetHeight + 'px'; });   // the board keeps its first height, so the Check button does not move while cards are placed
       answerGetter = board.answer; canSubmit = board.complete;
@@ -1840,10 +1847,13 @@
     // no 'earlier mistake looks fixed' line in the summary (teacher, 15 November)
     better.forEach(function (k) { wins.push(h('li', null, icon('up'), k.label + ': ' + k.prev_accuracy + '% → ' + pct(k.correct, k.n) + '%')); });
     if (s.fixed_total && s.fixed_total > fixed) wins.push(h('li', null, icon('flame'), 'Fixed so far: ' + s.fixed_total));
+    var fixedList = (s.fixed_list || []).length ? h('details', { class: 'fixed-list' }, h('summary', null, 'Fixed today: ' + s.fixed_list.length),   // which mistakes (teacher, 16 November)
+      h('ul', { class: 'clean' }, s.fixed_list.map(function (f) { return h('li', null, h('span', { class: 'small muted' }, f.skill + ': '), UI.rich(f.text)); }))) : null;
     nodes.push(h('div', { class: 'card', style: 'margin-bottom:16px' },
       h('div', { class: 'label' }, s.comeback ? 'Second Chance' : 'Practice finished'), h('h1', null, headline),
       h('p', { class: 'quip' }, quip(s.accuracy)),
       wins.length ? h('ul', { class: 'clean wins' }, wins) : null,
+      fixedList,
       (s.comeback || fixed) ? h('p', { class: 'today' }, h('b', null, 'Today: '), plural(fixed, 'mistake', 'mistakes') + ' fixed', s.locked ? ', ' + s.locked + ' checked again' : '', s.next_topic ? [' · ', h('b', null, 'Next time: '), s.next_topic] : (s.open_after ? ' · more mistakes are waiting' : s.review_due ? ' · another earlier mistake is ready to check again' : ' · no open mistakes right now')) : null,
       s.bonus ? bonusCard(s) : null,
       (s.open_after && !s.bonus) ? h('p', { class: 'row', style: 'gap:12px' }, h('span', { class: 'small muted' }, 'Still to fix: ' + s.open_after), comebackButton('btn small fn-chance', 'Second Chance')) : null,
@@ -2052,10 +2062,21 @@
       h('span', { class: 'ttile-nm' }, p.label));   // the New group says it is new (as for the topic tiles)
   }
   /** A new point's own card, with a button that practises only that point (source new_point). */
+  /** The language flags in the top right corner of a rule card (teacher, 16 November): a flag shows the card in that language. */
+  function cardFlags(reopen) {
+    var lv = state.user.lang === 'lv';
+    function flag(code) {
+      var on = (code === 'lv') === lv;
+      return h('button', { type: 'button', class: 'langbtn ' + code + (on ? ' on' : ''), 'aria-pressed': on ? 'true' : 'false', 'aria-label': code === 'lv' ? 'Latviski' : 'English', title: code === 'lv' ? 'Latviski' : 'English', onclick: function () {
+        if (on) return; state.user.lang = code; track('lang', code); api('account/profile', { lang: code }).catch(function () {}); reopen();
+      } });
+    }
+    return h('span', { class: 'langswitch card-flags' }, flag('lv'), flag('en'));
+  }
   function pointModal(p, inTask) {
     track('rule_card', (inTask ? 'task-point-' : 'point-') + p.id);
     var go = inTask ? h('span') : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow')), errBox = h('div');
-    var m = UI.modal(h('div', null, h('h2', null, h('span', { class: 'pill new-pill' }, 'New'), ' ', p.label), ruleCard(p, state.user.lang === 'lv'), errBox,
+    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, h('span', { class: 'pill new-pill' }, 'New'), ' ', p.label), cardFlags(function () { m.close(); pointModal(p, inTask); })), ruleCard(p, state.user.lang === 'lv'), errBox,
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');
     m.el.querySelector('#c').onclick = m.close;
@@ -2099,7 +2120,7 @@
     var s = skillById(id);
     track('rule_card', inTask ? 'task-' + id : id);
     var go = inTask ? null : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October); not from inside a task
-    var m = UI.modal(h('div', null, h('h2', null, s.label), ruleCard(s, state.user.lang === 'lv'),
+    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask); })), ruleCard(s, state.user.lang === 'lv'),
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;

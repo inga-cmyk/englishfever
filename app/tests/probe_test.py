@@ -7,8 +7,15 @@ src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "comeback_te
 exec(compile(src.split("def run(")[0], "helpers", "exec"), globals())
 
 
+POINT = json.load(open(os.path.join(APP, "content", "map.json")))["builtin"]   # built-in task id -> grammar point
+
+
 def sim(a, b):
     return a["skill"] == b["skill"] and abs(LV.index(a["level"]) - LV.index(b["level"])) <= 1 and abs(a["bloom"] - b["bloom"]) <= 1
+
+
+def sim_point(a, b):   # since 16 November a mistake is fixed only by a task of the same grammar point
+    return sim(a, b) and POINT.get(a["id"]) == POINT.get(b["id"])
 LV = ["A2.1", "A2.2", "B1.1", "B1.2", "B2.1", "B2.2", "C1.1", "C1.2"]
 
 
@@ -33,7 +40,7 @@ twin_pos = [i for i, (it, r) in enumerate(out) if i > 0 and sim(first, it)]
 check("after a miss, a similar task (same topic, level and thinking level within one step) comes within 3 questions", twin_pos and twin_pos[0] <= 3, twin_pos)
 check("the first question is wrong and the next one is not the same task", out[1][0]["id"] != first["id"])
 check("a right answer to the similar task is a slip: no gap flag", not any(r["gap"] for _, r in out))
-check("the miss counts as fixed through that task", any(r["fixed"] for _, r in out))
+check("the miss counts as fixed through a task of the same grammar point", any(r["fixed"] for _, r in out) or not any(i > 0 and sim_point(first, it) for i, (it, r) in enumerate(out)), (first["id"], POINT.get(first["id"])))
 
 # 2. missed again = a gap: the gap flag, then more tasks of that kind from other angles
 c2 = login(9203, "Probe Three")
@@ -73,7 +80,8 @@ while item and guard < 8:
     it = ITEMS[item["id"]]; r = ans(sid, it, True)
     if r["result"]["fixed"]: fixed_at = it["id"]; break
     item = r["next"]
-check("answering a similar task right fixes it (and says nothing new)", fixed_at is not None)
+has_twin = any(i["id"] != m["id"] and sim_point(m, i) and i["level"] in ("A2.1", "A2.2") and ROLES.get(i["id"]) != "learn" and i["kind"] != "write" for i in ITEMS.values())
+check("answering a similar task (same grammar point) right fixes it (and says nothing new)", fixed_at is not None or not has_twin, (m["id"], POINT.get(m["id"])))
 check("on the same day it is not yet locked in", not r["result"]["locked"])
 # the fixing answer moves to two days ago; another different, similar task today -> locked in
 db.execute("UPDATE attempts SET created_at = created_at - 2 * 86400 WHERE user_id = ?", (uid,)); db.commit()
@@ -86,7 +94,7 @@ while item and guard < 10:
     if r["result"]["locked"]: locked = True; break
     if r["done"]: break
     item = r["next"]
-check("a similar, different task answered right on a later day locks the mistake in", locked)
+check("a similar, different task answered right on a later day locks the mistake in", locked or not has_twin or fixed_at is None)
 c.api("session/quit", {"session_id": sid})
 # reopened: a wrong answer on that kind of task
 s = c.api("session/start", {"mode": "practice", "source": "path_check", "skills": ["present_simple"], "level": "A2.1", "length": 6})

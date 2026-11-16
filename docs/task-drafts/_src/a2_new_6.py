@@ -21,7 +21,7 @@ WAIT = ("*wait for*: *I'm waiting for the bus.*", "Latviski *gaidu autobusu* (be
 LISTEN = ("*listen to*: *Listen to me.*", "Latviski *klausos mūziku* (bez prievārda), angliski *listen to*: *Listen to me.*")
 LOOK = ("*look at*: *Look at this photo.*", "*look at* = skatīties uz kaut ko: *Look at this photo.*")
 AFRAID = ("*afraid of*: *afraid of spiders*.", "Latviski *baidās no*, angliski *afraid of* (nevis *from*): *afraid of spiders*.")
-INTEREST = ("*interested in*: *interested in football*.", "Latviski *interesējas par*, angliski *interested in*: *interested in football*.")
+INTEREST = ("*interested* is always followed by *in* (not *about* or *on*): *I'm interested in football.* Learn the pair: *interested in*.", "Latviski saka \"interesējas par\", tāpēc gribas *about*, bet aiz *interested* vienmēr ir *in*: *I'm interested in football.* Iegaumē pāri: *interested in*.")   # tester's report, 16 November: say the pattern, not only the answer
 DEPEND = ("*depend on*, not *from*: *It depends on the weather.*", "Latviski *atkarīgs no*, angliski *depend on*: *It depends on the weather.*")
 GOOD = ("*good at* + a subject or an activity: *good at maths*.", "*good at maths* = viņai padodas matemātika.")
 BELONG = ("*belong to*: *This bag belongs to me.*", "Latviski *pieder man*, angliski *belongs to me*.")

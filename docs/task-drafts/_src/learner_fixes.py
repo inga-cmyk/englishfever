@@ -3,6 +3,8 @@ import json
 from pathlib import Path
 
 FIXES = json.loads(Path(__file__).with_name('learner_fixes_20261108.json').read_text())
+for _name, _list in json.loads(Path(__file__).with_name('learner_fixes_20261116.json').read_text()).items():   # tester's report, 16 November
+    FIXES.setdefault(_name, []).extend(_list)
 
 
 def apply(name, row):

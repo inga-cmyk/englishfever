@@ -147,10 +147,16 @@ $at5 = function (string $item, bool $ok, int $t) use ($uid5) {
     Db::insert('attempts', ['user_id' => $uid5, 'psession_id' => 0, 'item_id' => $item, 'skill' => $i['skill'], 'level' => $i['level'], 'bloom' => $i['bloom'],
         'correct' => $ok ? 1 : 0, 'answer' => '', 'time_ms' => 1000, 'xp' => 0, 'created_at' => $t]);
 };
-$at5('ps-A21-1a', false, time() - 5 * 86400);
-$tw = Mistakes::twin($uid5, 'ps-A21-1a', []);
+// since 16 November a mistake is fixed only by a task of the same grammar point: take a mistake whose point has another task
+$m5 = null; $tw = null;
+foreach (Content::items() as $c) {
+    if ($c['skill'] !== 'present_simple' || Content::role($c) === 'learn' || $c['kind'] === 'write' || Content::point($c) === null) continue;
+    $t = Mistakes::twinOfPoint($uid5, $c['id'], [], Content::point($c));
+    if ($t) { $m5 = $c['id']; $tw = $t; break; }
+}
+$at5($m5, false, time() - 5 * 86400);
 $at5($tw['id'], true, time() - 5 * 86400 + 60);   // fixed by a different sentence five days ago
-check(Mistakes::reviewDue($uid5) === ['ps-A21-1a'], 'a mistake fixed five days ago is due for a check');
+check(Mistakes::reviewDue($uid5) === [$m5], 'a mistake fixed five days ago is due for a check');
 $r = Engine::start($uid5, 'comeback', [], null, 0);
 check($r['session']['comeback'] && $r['session']['length'] === 1, 'Second Chance starts with only the check (no open mistakes)');
 $it5 = Content::item($r['item']['id']);

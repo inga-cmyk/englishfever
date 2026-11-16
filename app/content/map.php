@@ -6543,6 +6543,7 @@ return json_decode(<<<'EF_JSON_END'
 "future | match | Match each question with its answer: plans. | What are you doing tonight? = I'm seeing a film. ; Will you be late? = I might be. ; Are you going to apply? = Yes, I've decided. ; When does it start? = At half past six.": "fut_mix",
 "present_simple | order | Put the words in order. | our train leaves at half past seven so we must hurry": "fut_timetable",
 "present_simple | gap | The lesson ___ at 9.30, so we ___ to be there early. | ": "fut_timetable",
+"present_simple | gap | The film ___ at eight, so we ___ leave before seven. (start / have to) | ": "fut_timetable",
 "present_simple | mcq | Which sentence gives the time in the concert programme? | The concert starts at eight.": "fut_timetable",
 "future | order | Put the words in order. | the train leaves at seven so we should go now": "fut_timetable",
 "future | gap | The film ___ at eight, so let's meet at seven. (start) | ": "fut_timetable",

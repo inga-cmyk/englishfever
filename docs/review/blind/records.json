@@ -774,6 +774,11 @@
 "round": "r1",
 "task": "r1-052"
 },
+"2da4a2dd7536f4b3": {
+"gate_key": "present_simple | B1.1 | gap | The film ___ at eight, so we ___ leave before seven. (start / have to) | ",
+"round": "r15",
+"task": "answers added"
+},
 "2db65dba8e5810db": {
 "gate_key": "irregular_plurals | A2.1 | gap | I have two English ___ a week. (class) | ",
 "round": "r13",

@@ -52,12 +52,11 @@ the tasks. Before the test is given, the teacher can **regenerate the whole test
 - **Replacing a single question: the teacher picks from a list** (tasks of the same topic and level that are check / use tasks; show
   the kind and the full text so she can judge).
 
-## Still open: ask the teacher
+## Decided by the teacher (17 November, fourth round): nothing is open now
 
-1. Can one learner be in **several WordPress courses** at once (then a learner belongs to several groups)?
-2. What happens to a saved test when one of its tasks is **paused (reported) or corrected** later: keep the old version for that test
-   (recommended, results stay comparable) or swap in the corrected one?
-3. Whether a **late** attempt counts the same as one in time for the pass mark (recommended: yes, only the mark *late* is added).
+- **One learner can be in several WordPress courses** at once, so a learner can belong to several groups.
+- When a task of a saved test is **paused (reported) or corrected later, the test keeps the old version**, so results stay comparable.
+- A **late attempt counts the same** as one in time for the pass mark; only the mark *late* is added.
 
 ## What is already there to build on
 

@@ -57,6 +57,8 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. Where the work stands, and what is open
 
+**Teacher's test generator (17 November):** the teacher will build it in a separate session; her decisions and the open points are in `docs/TEACHER-TESTS-SPEC.md`. Nothing is built yet.
+
 **Thesis (16 November, evening):** read `docs/THESIS-ASSESSMENT.md` (the rubric her report and presentation are graded by, her decisions: engagement focus, knowledge test later, the app continues after hand-in as an adaptive system without generative AI at run time). Zip 2026-11-17 07:09 adds the level test retake (options A and B) and the level line on My learning path on top of the 06:38 zip; not yet uploaded. Browser test `comeback_ui` fails already before that change (summary.fixed is null after the Second Chance change): to fix.
 
 **START HERE (16 November).** Zip **2026-11-16 06:38** is packaged and waits for Inga's upload (*Prepared questions → Add all → Approve all*). In it since the 15:11 zip:

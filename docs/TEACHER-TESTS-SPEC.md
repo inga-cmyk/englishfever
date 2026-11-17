@@ -30,7 +30,20 @@ the tasks. Before the test is given, the teacher can **regenerate the whole test
 - The teacher can let the **same test be taken again**; the order of the questions changes again.
 - The teacher sees the results; every test and every attempt is kept.
 
+## Decided by the teacher (17 November, second round)
+
+- **Test answers count** for *My level* and for *Learned* (a dated research line is needed).
+- **Notices only inside the app.** E-mail is the teacher's own matter on the WordPress side; the app sends none.
+- **Groups:** the teacher must be able to choose learners by group, and the groups are the ones of the **WordPress course** the
+  learners are in. The app does not know courses today: the sign-in from englishfever.com would have to pass the learner's course(s)
+  (plugin `app/wp-plugin/ef-practice-sso/`; agents change the plugin code in the repository only, the teacher installs it; never touch
+  WordPress itself). Ask her which plugin holds the courses (Tutor LMS) and whether one learner can be in several courses.
+- **Attempts:** the teacher sets how many attempts a test allows (for example 2). **The last attempt counts.** The reason: a learner
+  whose test broke off for a technical or private reason can take it again. Every attempt is kept and shown to the teacher.
+
 ## Open: ask the teacher (one question each, with a recommendation)
+
+Points 1, 2, 6 and 7 below are answered above; the rest are still open.
 
 1. **Notices:** inside the app only (a card on Home, a badge in the teacher view), or also by e-mail? The app sends no e-mail today
    (learners sign in through englishfever.com); e-mail would need the WordPress side, which agents never touch. Recommended: in the app.

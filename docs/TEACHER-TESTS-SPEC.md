@@ -35,7 +35,9 @@ the tasks. Before the test is given, the teacher can **regenerate the whole test
 - **Test answers count** for *My level* and for *Learned* (a dated research line is needed).
 - **Notices only inside the app.** E-mail is the teacher's own matter on the WordPress side; the app sends none.
 - **Groups:** the teacher must be able to choose learners by group, and the groups are the ones of the **WordPress course** the
-  learners are in. The app does not know courses today: the sign-in from englishfever.com would have to pass the learner's course(s)
+  learners are in. Half of this exists: the app already asks the website which students are enrolled in the Tutor LMS courses a teacher
+  wrote or teaches (`Wp::roster`, plugin route `/wp-json/ef-practice/v1/roster`, used for *My students*), but it gets one flat list of
+  WordPress user IDs, not the course of each. The route would have to return the students per course, with the course title
   (plugin `app/wp-plugin/ef-practice-sso/`; agents change the plugin code in the repository only, the teacher installs it; never touch
   WordPress itself). Ask her which plugin holds the courses (Tutor LMS) and whether one learner can be in several courses.
 - **Attempts:** the teacher sets how many attempts a test allows (for example 2). **The last attempt counts.** The reason: a learner

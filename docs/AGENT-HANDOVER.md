@@ -57,6 +57,20 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 
 ## 4. Where the work stands, and what is open
 
+**START HERE (17 November).** Two kinds of work continue: the app, and the theory and writing of the teacher's master's thesis.
+
+*App.* Zip **2026-11-17 07:09** is the newest (level test retake A and B, the level line *A2: 6 of 12 steps done* on My learning path, everything since the 06:38 zip). The teacher says she uploaded it; *Add all* found nothing new, which is expected (no prepared CSV changed since 06:38). Open, in her order:
+1. **Teacher's test generator:** every decision is in `docs/TEACHER-TESTS-SPEC.md`; nothing built. Needs the WordPress plugin to return students per Tutor LMS course (`Wp::roster`, plugin route `roster`).
+2. **Leaderboard** (approved in principle, not built): a card *your week vs last week*, a tab *Near me* (2-3 learners above and below), later a group goal per course. Ask her which tab opens first; a dated research line if it is introduced as an experiment.
+3. **Engagement mechanisms** (from the literature): first task right after registration, practice tied to a time or the lesson, invitation on Mondays, no guilt after a gap. Propose variants first.
+4. Batch 5 **B1** and **B2** (see the 16 November note below), at most 2-3 grammar points at a time.
+5. Browser test `comeback_ui` fails since the Second Chance change of 16 November (summary.fixed is null): fix.
+6. Learner model: My level predicts too extremely (slope 1.7 vs about 0.33 in the data; a typed answer about half a level harder). She chose to wait for more data before changing it (`docs/THESIS-ASSESSMENT.md`, `tools/research/learner_model_check.py`).
+7. Grammar map: 9 prepositions points are not linked to the main network (2 small groups + `do_make`, `prep_phrases`); offer to link them.
+
+*Thesis.* Read `docs/THESIS-ASSESSMENT.md` (rubric, her decisions: engagement focus, knowledge test later, the app goes on after hand-in as an adaptive system without generative AI at run time) and `docs/THESIS-LITERATURE.md` (sources checked in Crossref; books marked not checked). Her supervisor is a pedagogy expert: write for her plainly, keep the technical part precise. Her own project plan is a .docx she keeps (never committed); always ask for her current file before editing it. The report with charts: https://claude.ai/artifact/9qPkXsFAVHFAFNExUurqXF. The evaluation instrument for classmates: https://claude.ai/artifact/AHQu5oSU64pR1G2vAhU5TK. Never cite a source for a claim you have not checked; say when a summary is from general knowledge.
+
+
 **Teacher's test generator (17 November):** the teacher will build it in a separate session; her decisions and the open points are in `docs/TEACHER-TESTS-SPEC.md`. Nothing is built yet.
 
 **Thesis (16 November, evening):** read `docs/THESIS-ASSESSMENT.md` (the rubric her report and presentation are graded by, her decisions: engagement focus, knowledge test later, the app continues after hand-in as an adaptive system without generative AI at run time). Zip 2026-11-17 07:09 adds the level test retake (options A and B) and the level line on My learning path on top of the 06:38 zip; not yet uploaded. Browser test `comeback_ui` fails already before that change (summary.fixed is null after the Second Chance change): to fix.

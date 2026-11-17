@@ -43,22 +43,21 @@ the tasks. Before the test is given, the teacher can **regenerate the whole test
 - **Attempts:** the teacher sets how many attempts a test allows (for example 2). **The last attempt counts.** The reason: a learner
   whose test broke off for a technical or private reason can take it again. Every attempt is kept and shown to the teacher.
 
-## Open: ask the teacher (one question each, with a recommendation)
+## Decided by the teacher (17 November, third round)
 
-Points 1, 2, 6 and 7 below are answered above; the rest are still open.
+- **One timer for the whole test**, not a time per question.
+- The learner sees their **mistakes with the explanations at once after their own test** (not only after the deadline).
+- The **pass mark is shown before the test** starts.
+- **After the deadline the test can still be taken**, and the attempt is marked **late** (shown to the teacher).
+- **Replacing a single question: the teacher picks from a list** (tasks of the same topic and level that are check / use tasks; show
+  the kind and the full text so she can judge).
 
-1. **Notices:** inside the app only (a card on Home, a badge in the teacher view), or also by e-mail? The app sends no e-mail today
-   (learners sign in through englishfever.com); e-mail would need the WordPress side, which agents never touch. Recommended: in the app.
-2. **Does a test answer count** for *My level* and for *Learned*? Recommended: yes (no help, timed: the cleanest evidence), with a dated
-   research line.
-3. **One timer for the whole test** (recommended) or a time per question?
-4. **What the learner sees at the end:** score and pass / fail, then their mistakes with the explanations. At once, or only after the
-   deadline (so answers cannot be passed on)? She said "after the whole test"; confirm that this means at once for that learner.
-5. **Is the pass mark shown** to the learner before the test?
-6. **Who can be chosen:** single learners from the list, or also saved groups? There are no groups in the app today.
-7. **A retake:** does the teacher open it per learner or for everyone; which attempt counts (best, last, all shown)?
-8. **After the deadline:** closed, or still possible and marked late?
-9. **Replacing a question:** the app proposes another task of the same topic, level and kind, or the teacher picks from a list?
+## Still open: ask the teacher
+
+1. Can one learner be in **several WordPress courses** at once (then a learner belongs to several groups)?
+2. What happens to a saved test when one of its tasks is **paused (reported) or corrected** later: keep the old version for that test
+   (recommended, results stay comparable) or swap in the corrected one?
+3. Whether a **late** attempt counts the same as one in time for the pass mark (recommended: yes, only the mark *late* is added).
 
 ## What is already there to build on
 

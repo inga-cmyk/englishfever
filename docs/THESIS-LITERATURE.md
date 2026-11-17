@@ -121,5 +121,21 @@ quoting a number from it.
 | Rasch, G. (1960). *Probabilistic models for some intelligence and attainment tests.* Danish Institute for Educational Research. | Rasch model | Not checked (book) |
 | Vygotsky, L. S. (1978). *Mind in society: The development of higher psychological processes.* Harvard University Press. | Zone of proximal development | Not checked (book) |
 
+## 11. Effort, the right level of difficulty and the satisfaction of having done something hard (added 17 November 2026)
+
+| Source | Use in the thesis | Status |
+|---|---|---|
+| Inzlicht, M., Shenhav, A., & Olivola, C. Y. (2018). The effort paradox: Effort is both costly and valued. *Trends in Cognitive Sciences, 22*(4), 337–349. https://doi.org/10.1016/j.tics.2018.01.007 | People avoid effort, yet value more what cost them effort; effort itself can become rewarding | Checked |
+| Norton, M. I., Mochon, D., & Ariely, D. (2012). The IKEA effect: When labor leads to love. *Journal of Consumer Psychology, 22*(3), 453–460. https://doi.org/10.1016/j.jcps.2011.08.002 | We value what we built ourselves, but only when the task was completed successfully | Checked |
+| Eisenberger, R. (1992). Learned industriousness. *Psychological Review, 99*(2), 248–267. https://doi.org/10.1037/0033-295X.99.2.248 | Effort that is rewarded becomes rewarding in itself | Checked |
+| Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. *Psychological Review, 84*(2), 191–215. https://doi.org/10.1037/0033-295X.84.2.191 | Mastery experiences (succeeding at something hard) are the strongest source of the belief "I can do this" | Checked |
+| White, R. W. (1959). Motivation reconsidered: The concept of competence. *Psychological Review, 66*(5), 297–333. https://doi.org/10.1037/h0040934 | The classic account of the satisfaction of dealing effectively with a challenge | Checked |
+| Atkinson, J. W. (1957). Motivational determinants of risk-taking behavior. *Psychological Review, 64*(6, Pt. 1), 359–372. https://doi.org/10.1037/h0043445 | Motivation is highest at intermediate difficulty (about an even chance of success) for people who seek success | Checked |
+| Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. *American Psychologist, 57*(9), 705–717. https://doi.org/10.1037/0003-066X.57.9.705 | Specific, difficult but attainable goals lead to more effort and more satisfaction than easy or vague ones | Checked |
+| Wilson, R. C., Shenhav, A., Straccia, M., & Cohen, J. D. (2019). The Eighty Five Percent Rule for optimal learning. *Nature Communications, 10*, Article 4646. https://doi.org/10.1038/s41467-019-12552-4 | For a class of learning models, learning is fastest at about 85 % correct (derived for machine learning and simple perceptual tasks: an analogy for grammar practice, not direct evidence) | Checked |
+
+See also in the sections above: Csikszentmihalyi (1990) and Egbert (2003) on flow (challenge matched to skill), Bjork (1994) on desirable
+difficulties, Vygotsky (1978) on the zone of proximal development, Ryan & Deci (2000) on the need for competence.
+
 Already in the project plan and checked earlier in its reference list: Hamilton et al. (2016), Mishra & Koehler (2006), Selinker (1972),
 Wood, Bruner & Ross (1976).

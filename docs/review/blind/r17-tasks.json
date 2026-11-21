@@ -1,0 +1,652 @@
+[
+ {
+  "id": "r17-001",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Why do we say 'Tickets are sold here'?",
+  "options": [
+   "Someone is selling tickets right now.",
+   "We want to say who sells the tickets.",
+   "The sentence is about the past.",
+   "The action matters, not who sells them."
+  ]
+ },
+ {
+  "id": "r17-002",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "If I had a car, I would drive to work.",
+   "If I had had a car, I would have driven to work.",
+   "If I borrow my dad's car, I get to work in ten minutes.",
+   "If the trains are on strike tomorrow, I'll borrow my dad's car."
+  ],
+  "right": [
+   "It is possible in the future.",
+   "I have no car.",
+   "This is what usually happens.",
+   "I had no car then."
+  ]
+ },
+ {
+  "id": "r17-003",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "'You must finish by Friday.' → My boss told me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-004",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She suggested me to book the tickets early.",
+   "He recommended trying the fish soup.",
+   "My doctor advised me to rest for a week.",
+   "They suggested that we meet at the station."
+  ]
+ },
+ {
+  "id": "r17-005",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each question with its polite form.",
+  "left": [
+   "Where does Anna work?",
+   "Where did Anna work?",
+   "Where is Anna working?",
+   "Where will Anna work?"
+  ],
+  "right": [
+   "Do you know where Anna worked?",
+   "Do you know where Anna works?",
+   "Do you know where Anna will work?",
+   "Do you know where Anna is working?"
+  ]
+ },
+ {
+  "id": "r17-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I wonder how much it costs.",
+   "Can you tell me if this seat is free?",
+   "Do you know what time does the film start?",
+   "Could you tell me where she lives?"
+  ]
+ },
+ {
+  "id": "r17-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Do you know how long ___ to get to the airport by taxi?",
+  "options": [
+   "it take",
+   "it takes",
+   "takes it",
+   "does it take"
+  ]
+ },
+ {
+  "id": "r17-008",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "You have just joined a gym and want to swim, but you can't find the swimming pool. Ask the person at the desk politely. Start with *Could you tell me* or *Do you know*.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r17-009",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Could you tell me where ___ ?",
+  "options": [
+   "you have bought that jacket",
+   "you bought that jacket",
+   "did you buy that jacket",
+   "did you bought that jacket"
+  ]
+ },
+ {
+  "id": "r17-010",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I wonder what does she want.",
+   "Do you know who she is?",
+   "I wonder why she left the party so early.",
+   "Could you tell me if he's here?"
+  ]
+ },
+ {
+  "id": "r17-011",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "Last week you emailed your landlord about the broken heater in your flat, but he hasn't answered. Write him one polite question. Start with *Could you tell me* or *I'd like to know*.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r17-012",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r17-013",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "How the funds were spent it remains to be investigated.",
+   "How were the funds spent remains to be investigated.",
+   "How the funds were spent remains to be investigated.",
+   "How the funds were spent remain to be investigated."
+  ]
+ },
+ {
+  "id": "r17-014",
+  "level": "A2.2",
+  "kind": "match",
+  "instruction_and_task": "Match each question with its answer.",
+  "left": [
+   "Was the bridge built in 1890?",
+   "Were the photos taken in Rome?",
+   "Was your sister born in Riga?",
+   "Were you invited to the wedding?"
+  ],
+  "right": [
+   "Yes, I was.",
+   "No, she wasn't.",
+   "Yes, it was.",
+   "No, they weren't."
+  ]
+ },
+ {
+  "id": "r17-015",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Do you know which platform the train leaves from?",
+   "I wonder how long this report will take.",
+   "Do you know if the gym is open on Sundays?",
+   "Can you tell me where can I leave my bike?"
+  ]
+ },
+ {
+  "id": "r17-016",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'm not sure how much we paid for the hotel.",
+   "Could you tell me why did the bank block my card?",
+   "I wonder who will win the match tonight.",
+   "Do you know whether the museum has reopened?"
+  ]
+ },
+ {
+  "id": "r17-017",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She doesn't need to work this Friday.",
+   "We needn't book a table on a Monday.",
+   "You don't need to bring any food.",
+   "You needn't to come early."
+  ]
+ },
+ {
+  "id": "r17-018",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "you",
+   "could",
+   "salt",
+   "the",
+   "pass",
+   "me",
+   "please"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-019",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "lunch",
+   "me",
+   "usually",
+   "drink",
+   "it",
+   "don't",
+   "keeps",
+   "after",
+   "coffee",
+   "because",
+   "i",
+   "awake"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-020",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "day",
+   "newspaper",
+   "news",
+   "never",
+   "but",
+   "the",
+   "a",
+   "they",
+   "parents",
+   "read",
+   "watch",
+   "every",
+   "my"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-021",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We're going to rent a car in Lisbon.",
+   "I think the flight will be late.",
+   "I'm meeting my sister at the airport tomorrow.",
+   "Don't worry, I call you as soon as I land."
+  ]
+ },
+ {
+  "id": "r17-022",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "By the time he retired, he ___ the same car for thirty years. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-023",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: When she sold the café, she had been owning it since 2010.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-024",
+  "level": "A2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "than",
+   "one",
+   "that",
+   "cheaper",
+   "jacket",
+   "this",
+   "is"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-025",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *less*. Start with *That flat*: This flat is more expensive than that flat.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-026",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: It was a difficult task, and ___ they finished it on time.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-027",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I charged it all night, but my phone still ___.",
+  "options": [
+   "won't to switch on",
+   "willn't switch on",
+   "won't switching on",
+   "won't switch on"
+  ]
+ },
+ {
+  "id": "r17-028",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Could you tell me what this word ___ ?",
+  "options": [
+   "does it mean",
+   "it means",
+   "mean",
+   "means"
+  ]
+ },
+ {
+  "id": "r17-029",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Do you know where ___ ___ buy a phone charger near here?",
+  "word_cards": [
+   "I",
+   "can",
+   "do"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r17-030",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Use the words in brackets: Can you tell me how often ___ on Sundays? (the night bus / run)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-031",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I can't hear the guide. Do you know what ___ ___ talking about?",
+  "word_cards": [
+   "is",
+   "she",
+   "does"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r17-032",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "You need to print a document at work, but you can't find the printer. Ask a colleague. Start with *Do you know where*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-033",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Hi Eva, could you tell me how much does the course cost? I'd like to sign up.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-034",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "my",
+   "wonder",
+   "slow",
+   "is",
+   "laptop",
+   "why",
+   "i",
+   "so"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-035",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "how",
+   "me",
+   "you",
+   "can",
+   "works",
+   "tell",
+   "coffee",
+   "the",
+   "machine"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-036",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I'd like to know ___ any free tables for tonight.",
+  "options": [
+   "if there are",
+   "are there",
+   "there are",
+   "if are there"
+  ]
+ },
+ {
+  "id": "r17-037",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "You are visiting a new city and want to see the old town, but you don't know the way. Ask someone in the street. Start with *Could you tell me how*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-038",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Use the words in brackets. Add any missing word: I'd like to know ___ a balcony. We'd love a view of the sea. (our room / have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-039",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Can you tell me ___ ___ ___ English? I need help with the menu.",
+  "word_cards": [
+   "speaks",
+   "if",
+   "speak",
+   "does",
+   "the waiter"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r17-040",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Use the words in brackets: Do you know where ___ the car last night? It isn't in the garage. (Tom / park)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-041",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wonder ___ ___ ___ my email. She hasn't answered yet.",
+  "word_cards": [
+   "get",
+   "did",
+   "got",
+   "Maria",
+   "if"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r17-042",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Could you check ___ the parcel yet?",
+  "options": [
+   "if they have sent",
+   "did they send",
+   "have they sent",
+   "if have they sent"
+  ]
+ },
+ {
+  "id": "r17-043",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "know",
+   "like",
+   "you",
+   "cook",
+   "like",
+   "learned",
+   "where",
+   "to",
+   "that",
+   "i'd",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-044",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Your colleague has a great new laptop bag, and you would like one like it. Ask her about the shop. Start with *Could you tell me where*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-045",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Do you know how long ___ ___ ___ in this company? She knows everyone.",
+  "word_cards": [
+   "does",
+   "work",
+   "has",
+   "worked",
+   "Anna"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r17-046",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Dear Mr Kalns, could you tell me when did you send the invoice? We still haven't received it.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-047",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "the",
+   "do",
+   "why",
+   "you",
+   "know",
+   "meeting",
+   "was",
+   "cancelled"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r17-048",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Use the words in brackets. Add any missing word: Can you remember ___ the back door before we left? (you / lock)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r17-049",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Do you know where ___ yesterday? He didn't come to work.",
+  "options": [
+   "was Mark",
+   "Mark was",
+   "Mark is",
+   "Mark has been"
+  ]
+ },
+ {
+  "id": "r17-050",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "You left your umbrella in the meeting room this morning, and now it isn't there. Ask the receptionist. Start with *Do you know if*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-051",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email.",
+  "word_cards": [
+   "have",
+   "book",
+   "did",
+   "we",
+   "booked",
+   "if"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r17-052",
+  "level": "A2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We ___ to Spain last summer.",
+  "options": [
+   "were go",
+   "goed",
+   "gone",
+   "went"
+  ]
+ },
+ {
+  "id": "r17-053",
+  "level": "A2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She ___ her keys two days ago.",
+  "options": [
+   "was lost",
+   "losed",
+   "lost",
+   "has lost"
+  ]
+ },
+ {
+  "id": "r17-054",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Ask politely, starting with *Do you know*: When does the shop close?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r17-055",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If he had taken the job, he would be living in Berlin now.",
+   "If I had joined the course, I would know more Spanish now.",
+   "If she had kept the receipt, she could return the coat now.",
+   "If we would have caught the flight, we would be in Rome now."
+  ]
+ },
+ {
+  "id": "r17-056",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it.",
+  "note": "the learner types a whole sentence"
+ }
+]

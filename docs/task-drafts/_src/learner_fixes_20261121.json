@@ -1,0 +1,66 @@
+{
+ "conjunctions-1.csv": [
+  {
+   "id": "restored-conjunctions-1-102",
+   "match": [
+    "gap",
+    "Complete with one word: It was a difficult task, and ___ they finished it on time.",
+    "yet | still"
+   ],
+   "set": {
+    "4": "yet | still | nevertheless | nonetheless",
+    "13": "nevertheless :: Correct too: *nevertheless* (= but in spite of this) is more formal; *and yet* is the usual pair. :: Arī pareizi: *nevertheless* (= tomēr, neskatoties uz to) ir formālāks; parasti saka *and yet*. || nonetheless :: Correct too: *nonetheless* (= but in spite of this) is more formal; *and yet* is the usual pair. :: Arī pareizi: *nonetheless* (= tomēr, neskatoties uz to) ir formālāks; parasti saka *and yet*."
+   }
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "id": "restored-b1-new-4-138",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "could you pass me the salt please"
+   ],
+   "set": {
+    "5": "also accepted: could you please pass me the salt | please could you pass me the salt | you could pass me the salt please"
+   }
+  }
+ ],
+ "comparison-1.csv": [
+  {
+   "id": "restored-comparison-1-25",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "this jacket is cheaper than that one"
+   ],
+   "set": {
+    "5": "also accepted: that jacket is cheaper than this one"
+   }
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "id": "restored-b1-tenses-1-5",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i don't usually drink coffee after lunch because it keeps me awake"
+   ],
+   "set": {
+    "5": "also accepted: because it keeps me awake i don't usually drink coffee after lunch | i usually don't drink coffee after lunch because it keeps me awake | because it keeps me awake i usually don't drink coffee after lunch | usually i don't drink coffee after lunch because it keeps me awake"
+   }
+  },
+  {
+   "id": "restored-b1-tenses-1-7",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my parents never watch the news but they read a newspaper every day"
+   ],
+   "set": {
+    "5": "also accepted: my parents read a newspaper every day but they never watch the news | every day my parents read a newspaper but they never watch the news | my parents never watch the news but every day they read a newspaper"
+   }
+  }
+ ]
+}

@@ -107,11 +107,17 @@ T.gap("B2.2", "I hope the bus comes soon. I ___ for twenty minutes. (wait)", "ha
 replaces(I_B2 + "I hope the bus comes soon. I ___ for twenty minutes. (wait)")
 T.gap("B2.2", "It ___ when we went out. The sun was shining. (not / rain)", "wasn't raining | was not raining | hadn't been raining | had not been raining", P_PC)
 replaces(I_B2 + "It ___ when we went out. The sun was shining. (not / rain)")
-T.gap("B2.2", "We ___ each other for years before we got married. (know)", "had known", P_STATE)
-replaces(I_B2 + "We ___ each other for years before we got married. (know)")
+# tester's report, 21 November (c-2206): the point card shows *We'd known each other for years*, so no task uses know each other
+T.gap("B2.2", "By the time he retired, he ___ the same car for thirty years. (have)", "had had | 'd had",
+      ex("*have* (= own) is not continuous: *he had had the same car for thirty years*, not *had been having*. *By the time* needs the earlier past.",
+         "*have* (= piederēt) nelieto Continuous formā: *he had had the same car for thirty years*, nevis *had been having*. Ar *by the time* vajag agrāku pagātni."))
+replaces("We ___ each other for years before we got married. (know)")
 T.gap("B2.1", "She ___ in Madrid very long, but she knew the city well. (not / live)", "hadn't been living | had not been living | hadn't lived | had not lived", P_ACT)
 replaces(I_B2 + "She ___ in Madrid very long, but she knew the city well. (not / live)")
-T.text("B2.2", "Correct the mistake: We had been knowing each other since school.", "We had known each other since school.", P_STATE)
+T.text("B2.2", "Correct the mistake: When she sold the café, she had been owning it since 2010.", "When she sold the café, she had owned it since 2010. | When she sold the café, she'd owned it since 2010.",
+       ex("*own* is not continuous: *she had owned it since 2010*, not *had been owning*.",
+          "*own* nelieto Continuous formā: *she had owned it since 2010*, nevis *had been owning*."))
+replaces("Correct the mistake: We had been knowing each other since school.")
 T.order("B2.1", "we had been driving for hours when the car broke down", also=["when the car broke down we had been driving for hours"], why=P_ACT)
 T.order("B2.2", "she had been working there for ten years when she left", also=["when she left she had been working there for ten years"], why=P_ACT)
 

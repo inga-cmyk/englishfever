@@ -412,5 +412,127 @@
  {
   "what": "An advice task without a problem to advise on (report of 14 November, c-0707)",
   "reader": "'Give advice with If I were you: Tell your boss.' read as an order with no problem to advise on (a learner advised 'increase my salary'); 'Give advice with If I were you and buy a new laptop' then gave the whole answer away. An advice task gives the problem in one sentence and lets the learner write the form: Your friend's laptop is old and very slow. If I ___ you, I ___ a new one. (be / buy). Avoid your / my after If I were you and advice about talking to someone (teacher, 14 November)."
+ },
+ {
+  "what": "ia-C12-5a: a wrong option that scrambles the article instead of showing a mistake of the point (tester's report, 21 November)",
+  "reader": "'How funds were the spent remains to be investigated' tests nothing about question clauses. Every wrong option is a believable mistake of the point: question word order (How were the funds spent remains…), an extra it, a plural verb after the clause (…remain to be investigated)."
+ },
+ {
+  "what": "ia-C11-6a: a writing check whose feedback did not name the learner's real mistake (tester's report, 21 November)",
+  "reader": "'the questions is how to have balance' got only 'Start with The question is + a question word'. Write each must so that one message names one mistake (questions is → question is; how can we → how we can), and test the checks with the learners' own sentences."
+ },
+ {
+  "what": "psp-A22-5a: a wrong option nobody would choose in a meaning question (tester's report, 21 November)",
+  "reader": "'Why do we say Tickets are sold here?' had 'The tickets are very old and cheap.' A wrong option in a meaning question is a believable misunderstanding of the form (sold read as the past; are sold read as someone is selling now)."
+ },
+ {
+  "what": "Which sentence has a mistake? with a mistake nobody makes, and three copies of it as the right sentences (tester's report, 21 November: rv-C12-4a, c-2089, c-3426, c-1693)",
+  "reader": "He recommended to reading…, I will to meet you…, we would are in Rome…, You needn't to come early next to You needn't come early: the copies give the pair away and the mistake is too obvious. Use a mistake learners make (She suggested me to book…, I call you as soon as I land, If we would have caught the flight…) and three correct sentences about three other things. Not recommend + me + to: that pattern is accepted in British English."
+ },
+ {
+  "what": "cs-B12-2a: a matching task with one pair from another context (tester's report, 21 November)",
+  "reader": "Three car sentences and 'If you heat ice, it melts. = This is always true.' The odd one is matched by its topic, not its form. Keep one context in all four pairs and make every label fit only one sentence (I have no car / I had no car then / This is what usually happens / It is possible in the future)."
+ },
+ {
+  "what": "c-0182: a matching task that needs general knowledge and has two swappable pairs (tester's report, 21 November)",
+  "reader": "'Match each famous thing with who made it' (Hamlet / Harry Potter = was written by…): the learner needs literature, not grammar, and the two was written by endings swap. Only the grammar may decide: a short answer with its own pronoun for each question (Were the photos taken in Rome? = No, they weren't.)."
+ },
+ {
+  "what": "Word orders whose second correct order was refused (tester's report and learners' data, 21 November: c-1824, c-1822, c-1393, c-2233)",
+  "reader": "my parents read a newspaper every day but they never watch the news (clauses swapped with the subject first); I usually don't drink coffee… (usually before don't is correct); could you please pass me the salt; that jacket is cheaper than this one (this / that swapped). Try every clause order, every adverb position, please in each place and every swap of this / that, the / a and the people; also remove generated orders that are not English (please you could pass me the salt)."
+ },
+ {
+  "what": "c-2206: a task whose answer is the example on its point card (tester's report, 21 November)",
+  "reader": "Correct the mistake: We had been knowing each other since school, while the card's mistake line and watch line show We'd known each other for years. Three tasks of the point used know each other. Compare every task of a point with its card (examples, mistakes, watch lines) and use another sentence."
+ },
+ {
+  "what": "c-3182, c-3185: a choice with only two wrong options where the common learner mistake was missing (teacher, 21 November)",
+  "reader": "We ___ to Spain last summer (goed / gone) and She ___ her keys two days ago (losed / has lost): add the mistake Latvian learners make, be + base or be + past form (were go, was lost), and check that it is wrong in the sentence."
+ },
+ {
+  "what": "c-2948: a present perfect for an action that is finished (teacher, 21 November)",
+  "reader": "I've charged it all night, but my phone still won't switch on: the charging is over, so I charged it all night. Read the tense of every sentence that frames the tested form, not only the gap."
+ },
+ {
+  "what": "c-2361: a correct word refused in a one-word gap (tester's report, 21 November)",
+  "reader": "It was a difficult task, and ___ they finished it on time accepted yet | still and refused nevertheless. For every one-word gap list every word that is correct there (nevertheless, nonetheless), with a note when one is more formal."
+ },
+ {
+  "what": "rs-B21-3a: a report with told me to refused (learners' data, 21 November)",
+  "reader": "'You must finish by Friday.' → My boss told me ___. accepted only that-clauses; to finish by Friday is the usual report of an order. In report gaps after told me, try both told me to + verb and told me (that) + clause."
+ },
+ {
+  "what": "c-2243: a rewrite whose instruction let learners reverse the meaning (learners' data, 21 November)",
+  "reader": "Rewrite with less ... than: This flat is more expensive than that flat. Six learners wrote This flat is less expensive than that flat. Give the start that keeps the meaning (Start with That flat), never the answer."
+ },
+ {
+  "what": "Indirect questions: the direct question is quoted and the frame is given, so only two words change places (teacher, 21 November: 'too easy')",
+  "reader": "'Where is the toilet?' Could you tell me where ___ ___? (the toilet / is). The learner copies the words and swaps two. Give a situation or a frame whose gap holds the subject AND the verb (Do you know where ___ the car last night? (Tom / park) → Tom parked), a sentence to correct, or a need to ask about (gp6_iq_b1.py). Tasks of this kind stay only as practice."
+ },
+ {
+  "what": "A writing task whose instruction already says the indirect question (teacher's tester, 21 November: ip-B11-6a, ip-B12-6a)",
+  "reader": "'Ask a colleague politely where the meeting room is. Start with Could you tell me.' The instruction gives 'where the meeting room is' in statement order: the learner only adds the start. Give the situation (you have just joined a gym and can't find the pool) and let the learner build the question."
+ },
+ {
+  "what": "Which sentence has a mistake? with the correct twin of the wrong sentence among the options (tester, 21 November: ip-B12-4a, ip-B11-4a, c-0914)",
+  "reader": "I wonder what does she want. / I wonder what she wants. / … The pair gives the answer away. The three correct sentences are about three different things, with other frames and tenses (Do you know whether the museum has reopened? / I wonder who will win the match tonight. / I'm not sure how much we paid for the hotel.)."
+ },
+ {
+  "what": "A politeness choice whose wrong options are rude sentences (tester, 21 November: ip-B11-5a 'the wrong sentences are not good samples')",
+  "reader": "'Choose the most polite option' with 'You, where is the nearest post office?' and 'Tell me where …, please.' is solved without the grammar. The wrong options must be the real mistakes of the point (does it take / it take / takes it)."
+ },
+ {
+  "what": "A typed polite question that accepts only one wording (tester, 21 November: c-3413 'Do you know when the shop closes?' refused 'what time the shop closes')",
+  "reader": "When the learner builds the question, every question word that asks the same thing is correct (when / what time; Do you happen to know …). List them; for an open need (Ask about the shop), list every core answer or use a write task with checks."
+ },
+ {
+  "what": "Indirect-question choices whose wrong options miss the real mistake (21 November: c-0912, c-0894, c-0898, as ip-B12-1a on 27 October)",
+  "reader": "Could you tell me ___ the library is open? if / that / what / did. Nobody writes 'that' or 'what' here; the real mistake is leaving out if (Could you tell me is the library open?). Give the real mistakes as options: if there are / are there / if are there / there are."
+ },
+ {
+  "what": "The instruction already holds the answer in indirect order (tester, 21 November: ip-B11-6a-r3 'the instruction gives the form away')",
+  "gate": "copy",
+  "task": {
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "kind": "write",
+   "q": "Ask a colleague politely where the meeting room is. Start with *Could you tell me* or *Do you know*.",
+   "model": "Could you tell me where the meeting room is?",
+   "src": "example"
+  }
+ },
+ {
+  "what": "A mistake nobody makes in 'Which sentence has a mistake?' (tester, 21 November: c-1020 'I will to meet you at the gate')",
+  "gate": "mistake",
+  "task": {
+   "skill": "future",
+   "level": "B1.1",
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "I will to meet you at the gate.",
+   "wrong": [
+    "I'll meet you at the gate.",
+    "I'm meeting my sister tonight.",
+    "We're going to rent a car."
+   ],
+   "src": "example"
+  }
+ },
+ {
+  "what": "The right sentence that is a near-copy of the wrong one gives the pair away (tester, 21 November: ip-B12-4a)",
+  "gate": "mistake",
+  "task": {
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "I wonder what does she want.",
+   "wrong": [
+    "I wonder what she wants.",
+    "Do you know who she is?",
+    "Could you tell me if he's here?"
+   ],
+   "src": "example"
+  }
  }
 ]

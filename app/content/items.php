@@ -3055,7 +3055,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Ciešamajai kārtai vajag 3. formu: *Coffee is grown in Brazil.*"
 },
 {
-"id": "psp-A22-5a-r2",
+"id": "psp-A22-5a-r3",
 "skill": "present_simple_passive",
 "level": "A2.2",
 "bloom": 5,
@@ -3063,7 +3063,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Why do we say 'Tickets are sold here'?",
 "correct": "The action matters, not who sells them.",
 "wrong": [
-"The tickets are very old and cheap.",
+"Someone is selling tickets right now.",
 "We want to say who sells the tickets.",
 "The sentence is about the past."
 ],
@@ -5270,7 +5270,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Second conditional jautājums: *What would you do if you* + Past Simple?"
 },
 {
-"id": "cs-B12-2a",
+"id": "cs-B12-2a-r2",
 "skill": "cond_second",
 "level": "B1.2",
 "bloom": 2,
@@ -5279,23 +5279,23 @@ return json_decode(<<<'EF_JSON_END'
 "pairs": [
 [
 "If I had a car, I would drive to work.",
-"I don't have a car."
-],
-[
-"If I have a car next year, I will drive to work.",
-"Maybe I'll buy one."
+"I have no car."
 ],
 [
 "If I had had a car, I would have driven to work.",
-"I didn't have a car then."
+"I had no car then."
 ],
 [
-"If you heat ice, it melts.",
-"This is always true."
+"If I borrow my dad's car, I get to work in ten minutes.",
+"This is what usually happens."
+],
+[
+"If the trains are on strike tomorrow, I'll borrow my dad's car.",
+"It is possible in the future."
 ]
 ],
-"why": "Zero: always true. First: real future. Second: unreal now. Third: unreal past.",
-"why_lv": "Zero: vienmēr patiess. First: reāla nākotne. Second: nereāls tagad. Third: nereāls pagātnē."
+"why": "Every time: *if* + present, present. Possible future: *if* + present, *will*. Unreal now: *if* + past, *would*. Unreal past: *if* + *had* + 3rd form, *would have* + 3rd form.",
+"why_lv": "Katru reizi: *if* + tagadne, tagadne. Iespējama nākotne: *if* + tagadne, *will*. Nereāls tagad: *if* + pagātne, *would*. Nereāls pagātnē: *if* + *had* + 3. forma, *would have* + 3. forma."
 },
 {
 "id": "cs-B12-3a-r3",
@@ -6741,7 +6741,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rs-B21-3a-r3",
+"id": "rs-B21-3a-r4",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 3,
@@ -6754,7 +6754,8 @@ return json_decode(<<<'EF_JSON_END'
 "I must finish by Friday",
 "that I must finish by Friday",
 "I would have to finish by Friday",
-"that I would have to finish by Friday"
+"that I would have to finish by Friday",
+"to finish by Friday"
 ]
 ],
 "why": "*must* can become *had to.* It can also stay *must* when the duty is still there.",
@@ -6764,6 +6765,11 @@ return json_decode(<<<'EF_JSON_END'
 "I would have to finish by Friday",
 "Correct too: *would have to* looks at the obligation from that moment in the past.",
 "Arī pareizi: *would have to* skatās uz pienākumu no šī brīža pagātnē."
+],
+[
+"to finish by Friday",
+"Correct too: *told me to* + verb reports an order. With *that* the verb steps back: *told me that I had to finish*.",
+"Arī pareizi: *told me to* + darbības vārds atstāsta rīkojumu. Ar *that* darbības vārds pāriet pagātnē: *told me that I had to finish*."
 ]
 ]
 },
@@ -7649,20 +7655,21 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*advise* + persona + *to* + pamatforma: *Sarah advised him to see a doctor.*"
 },
 {
-"id": "rv-C12-4a-r3",
+"id": "rv-C12-4a-r4",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence has a mistake?",
-"correct": "He recommended to reading the report carefully.",
+"correct": "She suggested me to book the tickets early.",
 "wrong": [
-"He recommended reading the report carefully.",
-"He recommended that I read the report carefully.",
-"He advised me to read the report carefully."
+"He recommended trying the fish soup.",
+"My doctor advised me to rest for a week.",
+"They suggested that we meet at the station."
 ],
-"why": "Use *recommended reading* or *recommended that I read*. *Recommended to reading* is not a grammatical verb pattern.",
-"wrong_why": {}
+"why": "*suggest* is not followed by a person + *to*: *She suggested (that) I book the tickets early* or *She suggested booking the tickets early*. *advise* can take a person + *to*: *advised me to rest*.",
+"wrong_why": {},
+"why_lv": "Aiz *suggest* nelieto personu + *to*: *She suggested (that) I book the tickets early* vai *She suggested booking the tickets early*. Aiz *advise* var būt persona + *to*: *advised me to rest*."
 },
 {
 "id": "rv-C12-5a-r4",
@@ -7715,32 +7722,32 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *Could you tell me* lieto teikuma vārdu secību: *where the station is*."
 },
 {
-"id": "ip-B11-2a",
+"id": "ip-B11-2a-r2",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 2,
 "kind": "match",
-"q": "Match each direct question with its polite, indirect form.",
+"q": "Match each question with its polite form.",
 "pairs": [
 [
-"Where is the toilet?",
-"Do you know where the toilet is?"
+"Where does Anna work?",
+"Do you know where Anna works?"
 ],
 [
-"What time does the bank open?",
-"Could you tell me what time the bank opens?"
+"Where did Anna work?",
+"Do you know where Anna worked?"
 ],
 [
-"How much is this?",
-"Can you tell me how much this is?"
+"Where is Anna working?",
+"Do you know where Anna is working?"
 ],
 [
-"Is the shop open?",
-"I wonder if the shop is open."
+"Where will Anna work?",
+"Do you know where Anna will work?"
 ]
 ],
-"why": "An indirect question starts with a polite phrase, then uses statement word order (no *do / does*).",
-"why_lv": "Netiešais jautājums sākas ar pieklājīgu frāzi, tad seko teikuma vārdu secība (bez *do / does*)."
+"why": "The question word stays; *do / does / did* go, and the verb itself shows the time: *does … work* → *works*, *did … work* → *worked*.",
+"why_lv": "Jautājamais vārds paliek; *do / does / did* pazūd, un laiku rāda pats darbības vārds: *does … work* → *works*, *did … work* → *worked*."
 },
 {
 "id": "ip-B11-3a",
@@ -7766,7 +7773,7 @@ return json_decode(<<<'EF_JSON_END'
 "practice_only": true
 },
 {
-"id": "ip-B11-4a",
+"id": "ip-B11-4a-r2",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 4,
@@ -7774,7 +7781,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "Do you know what time does the film start?",
 "wrong": [
-"Do you know what time the film starts?",
+"Can you tell me if this seat is free?",
 "Could you tell me where she lives?",
 "I wonder how much it costs."
 ],
@@ -7783,43 +7790,48 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Netiešajā jautājumā pēc jautājamā vārda nav *does*: *what time the film starts*."
 },
 {
-"id": "ip-B11-5a-r2",
+"id": "ip-B11-5a-r3",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 5,
 "kind": "mcq",
-"q": "You ask a stranger for the post office. Choose the most polite option.",
-"correct": "Could you tell me where the post office is?",
+"q": "Choose the correct option: Do you know how long ___ to get to the airport by taxi?",
+"correct": "it takes",
 "wrong": [
-"Excuse me, where is the post office, then?",
-"Tell me where the post office is, please.",
-"You, where is the nearest post office?"
+"does it take",
+"it take",
+"takes it"
 ],
-"why": "A polite phrase + an indirect question sounds softer and more polite.",
+"why": "No *does* in an indirect question, so the verb itself takes *-s*: *how long it takes*.",
 "wrong_why": {},
-"why_lv": "Pieklājīga frāze + netiešais jautājums skan maigāk un pieklājīgāk.",
+"why_lv": "Netiešajā jautājumā nav *does*, tāpēc *-s* ir pašam darbības vārdam: *how long it takes*.",
 "wrong_why_lv": {}
 },
 {
-"id": "ip-B11-6a-r3",
+"id": "ip-B11-6a-r4",
 "skill": "ind_polite",
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "Ask a colleague politely where the meeting room is. Start with *Could you tell me* or *Do you know*.",
+"q": "You have just joined a gym and want to swim, but you can't find the swimming pool. Ask the person at the desk politely. Start with *Could you tell me* or *Do you know*.",
 "must": [
 [
-"\\b(tell me|know|wondering)\\s+where\\b",
-"A polite start: *Could you tell me where …?* / *Do you know where …?*",
-"Pieklājīgs sākums: *Could you tell me where …?* / *Do you know where …?*"
+"\\b(could|can|would) you (please )?tell me\\b|\\bdo you (happen to )?know\\b",
+"A polite start: *Could you tell me …?* / *Do you know …?*",
+"Pieklājīgs sākums: *Could you tell me …?* / *Do you know …?*"
 ],
 [
-"^(?!.*\\bwhere\\s+is\\b)",
-"After *where*: the subject first, then the verb: *where the meeting room is*.",
-"Pēc *where*: vispirms teik. priekšmets, tad darbības vārds: *where the meeting room is*."
+"\\b(tell me|know)\\s+(where|how|which|what|if|whether)\\b",
+"Then a question word: *… where the pool is*.",
+"Tad jautājamais vārds: *… where the pool is*."
+],
+[
+"^(?!.*\\b(where|how|which \\w+|what \\w+)\\s+(is|are|does|do|can|could|should|will)\\s+(the|it|i|we|they|you|this|that|my)\\b)",
+"After *where* the subject comes first: *where the pool is*, *where I can swim*, not *where is the pool*.",
+"Pēc *where* vispirms ir teikuma priekšmets: *where the pool is*, *where I can swim*, nevis *where is the pool*."
 ]
 ],
-"model": "Could you tell me where the meeting room is?",
+"model": "Could you tell me where the swimming pool is?",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
@@ -7838,7 +7850,8 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why": "Polite phrase + question word + subject + verb.",
-"why_lv": "Pieklājīga frāze + jautājamais vārds + teik. priekšmets + darbības vārds."
+"why_lv": "Pieklājīga frāze + jautājamais vārds + teik. priekšmets + darbības vārds.",
+"practice_only": true
 },
 {
 "id": "ip-B11-3c",
@@ -7875,21 +7888,21 @@ return json_decode(<<<'EF_JSON_END'
 "practice_only": true
 },
 {
-"id": "ip-B12-2a-r3",
+"id": "ip-B12-2a-r4",
 "skill": "ind_polite",
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Could you tell me ___?",
-"correct": "where the station is",
+"q": "Choose the correct option: Could you tell me where ___ ?",
+"correct": "you bought that jacket",
 "wrong": [
-"where is the station",
-"where does the station be",
-"where the station it is"
+"did you buy that jacket",
+"did you bought that jacket",
+"you have bought that jacket"
 ],
-"why": "After *Could you tell me*, use *where the station is*. Do not turn the second part into a separate question.",
+"why": "*Where did you buy that jacket?* becomes *where you bought that jacket*: no *did*, and the verb itself is in the past.",
 "wrong_why": {},
-"why_lv": "Pēc *Could you tell me* lieto *where the station is*. Otrajā daļā neveido atsevišķu jautājumu.",
+"why_lv": "*Where did you buy that jacket?* kļūst par *where you bought that jacket*: bez *did*, un pagātnē ir pats darbības vārds.",
 "wrong_why_lv": {}
 },
 {
@@ -7934,10 +7947,11 @@ return json_decode(<<<'EF_JSON_END'
 "Palīgteikumā nav *does*: ... *what time the museum closes*."
 ]
 ],
-"why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*."
+"why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*.",
+"practice_only": true
 },
 {
-"id": "ip-B12-4a",
+"id": "ip-B12-4a-r2",
 "skill": "ind_polite",
 "level": "B1.2",
 "bloom": 4,
@@ -7945,7 +7959,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "I wonder what does she want.",
 "wrong": [
-"I wonder what she wants.",
+"I wonder why she left the party so early.",
 "Do you know who she is?",
 "Could you tell me if he's here?"
 ],
@@ -7971,30 +7985,30 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*Could you let me know + whether / if* + teik. priekšmets + darbības vārds."
 },
 {
-"id": "ip-B12-6a-r3",
+"id": "ip-B12-6a-r4",
 "skill": "ind_polite",
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "Ask a stranger politely if the café takes cards. Start with *Do you know* or *Could you tell me*.",
+"q": "Last week you emailed your landlord about the broken heater in your flat, but he hasn't answered. Write him one polite question. Start with *Could you tell me* or *I'd like to know*.",
 "must": [
 [
-"\\b(if|whether)\\b",
-"A yes/no question inside a polite one: *… if the café takes cards*.",
-"Jā/nē jautājums pieklājīgā jautājumā: *… if the café takes cards*."
+"\\b(could|can|would) you (please )?(tell me|let me know)\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bdo you (happen to )?know\\b|\\bi (was )?wonder(ing)?\\b",
+"A polite start: *Could you tell me …?* / *I'd like to know …*",
+"Pieklājīgs sākums: *Could you tell me …?* / *I'd like to know …*"
 ],
 [
-"\\b(takes|accepts|take|accept)\\b",
-"Say what you want to know: *takes cards*.",
-"Pasaki, ko gribi zināt: *takes cards*."
+"\\b(tell me|let me know|know|wonder|wondering)\\s+(if|whether|when|what|why|how|who)\\b",
+"Then *if* or a question word: *… if you got my email*, *… when someone can repair the heater*.",
+"Tad *if* vai jautājamais vārds: *… if you got my email*, *… when someone can repair the heater*."
 ],
 [
-"^(?!.*\\bdoes\\b)",
-"No *does* inside an indirect question: *if the café takes cards*.",
-"Netiešā jautājumā bez *does*: *if the café takes cards*."
+"^(?!.*\\b(if|whether|when|why|how(?:\\s+(?:long|soon|much))?|what(?:\\s+time)?)\\s+(did|does|do|has|have|is|are|was|were|will|can|could)\\s+(you|he|she|it|they|the|my|someone|somebody|anyone|anybody|we|i)\\b)",
+"After *if* or the question word the subject comes first, with no *did*: *if you got my email*, *when the heater will be repaired*.",
+"Pēc *if* vai jautājamā vārda vispirms ir teikuma priekšmets, bez *did*: *if you got my email*, *when the heater will be repaired*."
 ]
 ],
-"model": "Do you know if the café takes cards?",
+"model": "Could you tell me if you got my email about the heater?",
 "why": "Compare your sentence with the model answer.",
 "why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
@@ -8320,7 +8334,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C11-6a-r3",
+"id": "ia-C11-6a-r4",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 6,
@@ -8328,8 +8342,24 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
 "must": [
 [
-"^\\s*the question is (whether|how|why|what|who|where|when)\\b",
-"Start with *The question is* + a question word."
+"^(?!\\s*the\\s+questions\\s+is\\b)",
+"*Questions is* does not agree: one question, so *The question is*.",
+"*Questions is* nesaskan: viens jautājums, tāpēc *The question is*."
+],
+[
+"^\\s*the questions?\\s+is\\b",
+"Start with *The question is*.",
+"Sāc ar *The question is*."
+],
+[
+"^\\s*the questions?\\s+(is|are)\\s+(whether|how|why|what|who|where|when|which)\\b",
+"After *The question is* put *whether*, *how*, *why* or another question word.",
+"Aiz *The question is* liec *whether*, *how*, *why* vai citu jautājuma vārdu."
+],
+[
+"^(?!\\s*the questions?\\s+(?:is|are)\\s+(?:whether|how|why|where|when)\\s+(?:do|does|did|can|could|should|will|would|is|are|was|were|have|has|must|shall)\\s+(?:i|you|we|they|he|she|it|the|our|my|your|their|his|her|this|that|these|those|people)\\b)",
+"After *how*, *why* or *whether* use statement word order: *how we can…*, not *how can we…*.",
+"Aiz *how*, *why* vai *whether* lieto stāstījuma vārdu secību: *how we can…*, nevis *how can we…*."
 ]
 ],
 "model": "The question is whether we can afford the delay.",
@@ -8401,7 +8431,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "ia-C12-5a-r3",
+"id": "ia-C12-5a-r4",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 5,
@@ -8411,9 +8441,9 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "How were the funds spent remains to be investigated.",
 "How the funds were spent it remains to be investigated.",
-"How funds were the spent remains to be investigated."
+"How the funds were spent remain to be investigated."
 ],
-"why": "An embedded question used as the subject keeps statement word order.",
+"why": "A question clause used as the subject keeps statement word order (*how the funds were spent*), needs no extra *it*, and counts as one thing, so the verb is singular: *remains*.",
 "wrong_why": {}
 },
 {
@@ -8818,7 +8848,8 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "display_answer": "Could you tell me where the bank is?",
-"why_lv": "Netiešā jautājuma daļā teikuma priekšmets ir pirms darbības vārda: *where the bank is*."
+"why_lv": "Netiešā jautājuma daļā teikuma priekšmets ir pirms darbības vārda: *where the bank is*.",
+"practice_only": true
 },
 {
 "id": "var-ia-c11-order-01-r3",

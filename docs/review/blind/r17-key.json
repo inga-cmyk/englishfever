@@ -1,0 +1,2776 @@
+{
+ "r17-001": {
+  "hash": "264f902246f878f4",
+  "gate_key": "present_simple_passive | A2.2 | mcq | Why do we say 'Tickets are sold here'? | The action matters, not who sells them.",
+  "src": "built-in",
+  "point": "pas_pres",
+  "key": {
+   "kind": "mcq",
+   "correct": "The action matters, not who sells them.",
+   "wrong": [
+    "Someone is selling tickets right now.",
+    "We want to say who sells the tickets.",
+    "The sentence is about the past."
+   ]
+  },
+  "item": {
+   "id": "psp-A22-5a-r3",
+   "skill": "present_simple_passive",
+   "level": "A2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Why do we say 'Tickets are sold here'?",
+   "correct": "The action matters, not who sells them.",
+   "wrong": [
+    "Someone is selling tickets right now.",
+    "We want to say who sells the tickets.",
+    "The sentence is about the past."
+   ],
+   "why": "We use the passive when the action or the object is more important than the person who does it.",
+   "wrong_why": [],
+   "why_lv": "Ciešamo kārtu lieto, kad svarīgāka ir darbība vai objekts, nevis darītājs.",
+   "wrong_why_lv": [],
+   "d": 2.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "pas_pres",
+   "src": "built-in"
+  }
+ },
+ "r17-002": {
+  "hash": "f8e10a2b12e0e02e",
+  "gate_key": "cond_second | B1.2 | match | Match each sentence with its meaning. | If I had a car, I would drive to work. = I have no car. ; If I had had a car, I would have driven to work. = I had no car then. ; If I borrow my dad's car, I get to work in ten minutes. = This is what usually happens. ; If the trains are on strike tomorrow, I'll borrow my dad's car. = It is possible in the future.",
+  "src": "built-in",
+  "point": "c2",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "If I had a car, I would drive to work.",
+     "I have no car."
+    ],
+    [
+     "If I had had a car, I would have driven to work.",
+     "I had no car then."
+    ],
+    [
+     "If I borrow my dad's car, I get to work in ten minutes.",
+     "This is what usually happens."
+    ],
+    [
+     "If the trains are on strike tomorrow, I'll borrow my dad's car.",
+     "It is possible in the future."
+    ]
+   ]
+  },
+  "item": {
+   "id": "cs-B12-2a-r2",
+   "skill": "cond_second",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "pairs": [
+    [
+     "If I had a car, I would drive to work.",
+     "I have no car."
+    ],
+    [
+     "If I had had a car, I would have driven to work.",
+     "I had no car then."
+    ],
+    [
+     "If I borrow my dad's car, I get to work in ten minutes.",
+     "This is what usually happens."
+    ],
+    [
+     "If the trains are on strike tomorrow, I'll borrow my dad's car.",
+     "It is possible in the future."
+    ]
+   ],
+   "why": "Every time: *if* + present, present. Possible future: *if* + present, *will*. Unreal now: *if* + past, *would*. Unreal past: *if* + *had* + 3rd form, *would have* + 3rd form.",
+   "why_lv": "Katru reizi: *if* + tagadne, tagadne. Iespējama nākotne: *if* + tagadne, *will*. Nereāls tagad: *if* + pagātne, *would*. Nereāls pagātnē: *if* + *had* + 3. forma, *would have* + 3. forma.",
+   "d": 4.2,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c2",
+   "src": "built-in"
+  }
+ },
+ "r17-003": {
+  "hash": "d6e5da95eb856d4e",
+  "gate_key": "rep_statements | B2.1 | gap | 'You must finish by Friday.' → My boss told me ___. | ",
+  "src": "built-in",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "I had to finish by Friday",
+     "that I had to finish by Friday",
+     "I must finish by Friday",
+     "that I must finish by Friday",
+     "I would have to finish by Friday",
+     "that I would have to finish by Friday",
+     "to finish by Friday"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rs-B21-3a-r4",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'You must finish by Friday.' → My boss told me ___.",
+   "answers": [
+    [
+     "I had to finish by Friday",
+     "that I had to finish by Friday",
+     "I must finish by Friday",
+     "that I must finish by Friday",
+     "I would have to finish by Friday",
+     "that I would have to finish by Friday",
+     "to finish by Friday"
+    ]
+   ],
+   "why": "*must* can become *had to.* It can also stay *must* when the duty is still there.",
+   "hints": [],
+   "answer_notes": [
+    [
+     "I would have to finish by Friday",
+     "Correct too: *would have to* looks at the obligation from that moment in the past.",
+     "Arī pareizi: *would have to* skatās uz pienākumu no šī brīža pagātnē."
+    ],
+    [
+     "to finish by Friday",
+     "Correct too: *told me to* + verb reports an order. With *that* the verb steps back: *told me that I had to finish*.",
+     "Arī pareizi: *told me to* + darbības vārds atstāsta rīkojumu. Ar *that* darbības vārds pāriet pagātnē: *told me that I had to finish*."
+    ]
+   ],
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "use",
+   "point": "rep_backshift",
+   "src": "built-in"
+  }
+ },
+ "r17-004": {
+  "hash": "afa535aade76ce56",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence has a mistake? | She suggested me to book the tickets early.",
+  "src": "built-in",
+  "point": "rv_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "She suggested me to book the tickets early.",
+   "wrong": [
+    "He recommended trying the fish soup.",
+    "My doctor advised me to rest for a week.",
+    "They suggested that we meet at the station."
+   ]
+  },
+  "item": {
+   "id": "rv-C12-4a-r4",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "correct": "She suggested me to book the tickets early.",
+   "wrong": [
+    "He recommended trying the fish soup.",
+    "My doctor advised me to rest for a week.",
+    "They suggested that we meet at the station."
+   ],
+   "why": "*suggest* is not followed by a person + *to*: *She suggested (that) I book the tickets early* or *She suggested booking the tickets early*. *advise* can take a person + *to*: *advised me to rest*.",
+   "wrong_why": [],
+   "why_lv": "Aiz *suggest* nelieto personu + *to*: *She suggested (that) I book the tickets early* vai *She suggested booking the tickets early*. Aiz *advise* var būt persona + *to*: *advised me to rest*.",
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_ing",
+   "src": "built-in"
+  }
+ },
+ "r17-005": {
+  "hash": "9457c8a1e752246b",
+  "gate_key": "ind_polite | B1.1 | match | Match each question with its polite form. | Where does Anna work? = Do you know where Anna works? ; Where did Anna work? = Do you know where Anna worked? ; Where is Anna working? = Do you know where Anna is working? ; Where will Anna work? = Do you know where Anna will work?",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Where does Anna work?",
+     "Do you know where Anna works?"
+    ],
+    [
+     "Where did Anna work?",
+     "Do you know where Anna worked?"
+    ],
+    [
+     "Where is Anna working?",
+     "Do you know where Anna is working?"
+    ],
+    [
+     "Where will Anna work?",
+     "Do you know where Anna will work?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ip-B11-2a-r2",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each question with its polite form.",
+   "pairs": [
+    [
+     "Where does Anna work?",
+     "Do you know where Anna works?"
+    ],
+    [
+     "Where did Anna work?",
+     "Do you know where Anna worked?"
+    ],
+    [
+     "Where is Anna working?",
+     "Do you know where Anna is working?"
+    ],
+    [
+     "Where will Anna work?",
+     "Do you know where Anna will work?"
+    ]
+   ],
+   "why": "The question word stays; *do / does / did* go, and the verb itself shows the time: *does … work* → *works*, *did … work* → *worked*.",
+   "why_lv": "Jautājamais vārds paliek; *do / does / did* pazūd, un laiku rāda pats darbības vārds: *does … work* → *works*, *did … work* → *worked*.",
+   "d": 3.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "learn",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17-006": {
+  "hash": "7962b85811a6f364",
+  "gate_key": "ind_polite | B1.1 | mcq | Which sentence is NOT correct? | Do you know what time does the film start?",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "Do you know what time does the film start?",
+   "wrong": [
+    "Can you tell me if this seat is free?",
+    "Could you tell me where she lives?",
+    "I wonder how much it costs."
+   ]
+  },
+  "item": {
+   "id": "ip-B11-4a-r2",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "Do you know what time does the film start?",
+   "wrong": [
+    "Can you tell me if this seat is free?",
+    "Could you tell me where she lives?",
+    "I wonder how much it costs."
+   ],
+   "why": "No *does* after the question word in an indirect question: *what time the film starts.*",
+   "wrong_why": [],
+   "why_lv": "Netiešajā jautājumā pēc jautājamā vārda nav *does*: *what time the film starts*.",
+   "d": 3.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17-007": {
+  "hash": "3d667f7abf054c17",
+  "gate_key": "ind_polite | B1.1 | mcq | Choose the correct option: Do you know how long ___ to get to the airport by taxi? | it takes",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "it takes",
+   "wrong": [
+    "does it take",
+    "it take",
+    "takes it"
+   ]
+  },
+  "item": {
+   "id": "ip-B11-5a-r3",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Choose the correct option: Do you know how long ___ to get to the airport by taxi?",
+   "correct": "it takes",
+   "wrong": [
+    "does it take",
+    "it take",
+    "takes it"
+   ],
+   "why": "No *does* in an indirect question, so the verb itself takes *-s*: *how long it takes*.",
+   "wrong_why": [],
+   "why_lv": "Netiešajā jautājumā nav *does*, tāpēc *-s* ir pašam darbības vārdam: *how long it takes*.",
+   "wrong_why_lv": [],
+   "d": 3.8,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17-008": {
+  "hash": "5c8595f7fd90d8b1",
+  "gate_key": "ind_polite | B1.1 | write | You have just joined a gym and want to swim, but you can't find the swimming pool. Ask the person at the desk politely. Start with *Could you tell me* or *Do you know*. | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "write",
+   "model": "Could you tell me where the swimming pool is?",
+   "must": [
+    "A polite start: *Could you tell me …?* / *Do you know …?*",
+    "Then a question word: *… where the pool is*.",
+    "After *where* the subject comes first: *where the pool is*, *where I can swim*, not *where is the pool*."
+   ]
+  },
+  "item": {
+   "id": "ip-B11-6a-r4",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "You have just joined a gym and want to swim, but you can't find the swimming pool. Ask the person at the desk politely. Start with *Could you tell me* or *Do you know*.",
+   "must": [
+    [
+     "\\b(could|can|would) you (please )?tell me\\b|\\bdo you (happen to )?know\\b",
+     "A polite start: *Could you tell me …?* / *Do you know …?*",
+     "Pieklājīgs sākums: *Could you tell me …?* / *Do you know …?*"
+    ],
+    [
+     "\\b(tell me|know)\\s+(where|how|which|what|if|whether)\\b",
+     "Then a question word: *… where the pool is*.",
+     "Tad jautājamais vārds: *… where the pool is*."
+    ],
+    [
+     "^(?!.*\\b(where|how|which \\w+|what \\w+)\\s+(is|are|does|do|can|could|should|will)\\s+(the|it|i|we|they|you|this|that|my)\\b)",
+     "After *where* the subject comes first: *where the pool is*, *where I can swim*, not *where is the pool*.",
+     "Pēc *where* vispirms ir teikuma priekšmets: *where the pool is*, *where I can swim*, nevis *where is the pool*."
+    ]
+   ],
+   "model": "Could you tell me where the swimming pool is?",
+   "why": "Compare your sentence with the model answer.",
+   "why_lv": "Salīdzini savu teikumu ar piemēra atbildi.",
+   "d": 4,
+   "scaffold": 3,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17-009": {
+  "hash": "3d8383e21e24bc26",
+  "gate_key": "ind_polite | B1.2 | mcq | Choose the correct option: Could you tell me where ___ ? | you bought that jacket",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "you bought that jacket",
+   "wrong": [
+    "did you buy that jacket",
+    "did you bought that jacket",
+    "you have bought that jacket"
+   ]
+  },
+  "item": {
+   "id": "ip-B12-2a-r4",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Could you tell me where ___ ?",
+   "correct": "you bought that jacket",
+   "wrong": [
+    "did you buy that jacket",
+    "did you bought that jacket",
+    "you have bought that jacket"
+   ],
+   "why": "*Where did you buy that jacket?* becomes *where you bought that jacket*: no *did*, and the verb itself is in the past.",
+   "wrong_why": [],
+   "why_lv": "*Where did you buy that jacket?* kļūst par *where you bought that jacket*: bez *did*, un pagātnē ir pats darbības vārds.",
+   "wrong_why_lv": [],
+   "d": 4.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17-010": {
+  "hash": "8eec48dfb81be419",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence is NOT correct? | I wonder what does she want.",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I wonder what does she want.",
+   "wrong": [
+    "I wonder why she left the party so early.",
+    "Do you know who she is?",
+    "Could you tell me if he's here?"
+   ]
+  },
+  "item": {
+   "id": "ip-B12-4a-r2",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "I wonder what does she want.",
+   "wrong": [
+    "I wonder why she left the party so early.",
+    "Do you know who she is?",
+    "Could you tell me if he's here?"
+   ],
+   "why": "After *I wonder* we use statement word order: *what she wants.*",
+   "wrong_why": [],
+   "why_lv": "Pēc *I wonder* lieto teikuma vārdu secību: *what she wants*.",
+   "d": 4.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17-011": {
+  "hash": "e61477629ce8642a",
+  "gate_key": "ind_polite | B1.2 | write | Last week you emailed your landlord about the broken heater in your flat, but he hasn't answered. Write him one polite question. Start with *Could you tell me* or *I'd like to know*. | ",
+  "src": "built-in",
+  "point": "iq_yn",
+  "key": {
+   "kind": "write",
+   "model": "Could you tell me if you got my email about the heater?",
+   "must": [
+    "A polite start: *Could you tell me …?* / *I'd like to know …*",
+    "Then *if* or a question word: *… if you got my email*, *… when someone can repair the heater*.",
+    "After *if* or the question word the subject comes first, with no *did*: *if you got my email*, *when the heater will be repaired*."
+   ]
+  },
+  "item": {
+   "id": "ip-B12-6a-r4",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Last week you emailed your landlord about the broken heater in your flat, but he hasn't answered. Write him one polite question. Start with *Could you tell me* or *I'd like to know*.",
+   "must": [
+    [
+     "\\b(could|can|would) you (please )?(tell me|let me know)\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bdo you (happen to )?know\\b|\\bi (was )?wonder(ing)?\\b",
+     "A polite start: *Could you tell me …?* / *I'd like to know …*",
+     "Pieklājīgs sākums: *Could you tell me …?* / *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|know|wonder|wondering)\\s+(if|whether|when|what|why|how|who)\\b",
+     "Then *if* or a question word: *… if you got my email*, *… when someone can repair the heater*.",
+     "Tad *if* vai jautājamais vārds: *… if you got my email*, *… when someone can repair the heater*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|why|how(?:\\s+(?:long|soon|much))?|what(?:\\s+time)?)\\s+(did|does|do|has|have|is|are|was|were|will|can|could)\\s+(you|he|she|it|they|the|my|someone|somebody|anyone|anybody|we|i)\\b)",
+     "After *if* or the question word the subject comes first, with no *did*: *if you got my email*, *when the heater will be repaired*.",
+     "Pēc *if* vai jautājamā vārda vispirms ir teikuma priekšmets, bez *did*: *if you got my email*, *when the heater will be repaired*."
+    ]
+   ],
+   "model": "Could you tell me if you got my email about the heater?",
+   "why": "Compare your sentence with the model answer.",
+   "why_lv": "Salīdzini savu teikumu ar piemēra atbildi.",
+   "d": 5,
+   "scaffold": 3,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_yn",
+   "src": "built-in"
+  }
+ },
+ "r17-012": {
+  "hash": "7eef73880be3448f",
+  "gate_key": "ind_advanced | B2.2 | write | Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*. | ",
+  "src": "built-in",
+  "point": "iq_whether",
+  "key": {
+   "kind": "write",
+   "model": "The question is whether we can afford the delay.",
+   "must": [
+    "*Questions is* does not agree: one question, so *The question is*.",
+    "Start with *The question is*.",
+    "After *The question is* put *whether*, *how*, *why* or another question word.",
+    "After *how*, *why* or *whether* use statement word order: *how we can…*, not *how can we…*."
+   ]
+  },
+  "item": {
+   "id": "ia-C11-6a-r4",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
+   "must": [
+    [
+     "^(?!\\s*the\\s+questions\\s+is\\b)",
+     "*Questions is* does not agree: one question, so *The question is*.",
+     "*Questions is* nesaskan: viens jautājums, tāpēc *The question is*."
+    ],
+    [
+     "^\\s*the questions?\\s+is\\b",
+     "Start with *The question is*.",
+     "Sāc ar *The question is*."
+    ],
+    [
+     "^\\s*the questions?\\s+(is|are)\\s+(whether|how|why|what|who|where|when|which)\\b",
+     "After *The question is* put *whether*, *how*, *why* or another question word.",
+     "Aiz *The question is* liec *whether*, *how*, *why* vai citu jautājuma vārdu."
+    ],
+    [
+     "^(?!\\s*the questions?\\s+(?:is|are)\\s+(?:whether|how|why|where|when)\\s+(?:do|does|did|can|could|should|will|would|is|are|was|were|have|has|must|shall)\\s+(?:i|you|we|they|he|she|it|the|our|my|your|their|his|her|this|that|these|those|people)\\b)",
+     "After *how*, *why* or *whether* use statement word order: *how we can…*, not *how can we…*.",
+     "Aiz *how*, *why* vai *whether* lieto stāstījuma vārdu secību: *how we can…*, nevis *how can we…*."
+    ]
+   ],
+   "model": "The question is whether we can afford the delay.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "iq_whether",
+   "src": "built-in"
+  }
+ },
+ "r17-013": {
+  "hash": "c42ef1697b585251",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is correct? | How the funds were spent remains to be investigated.",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "mcq",
+   "correct": "How the funds were spent remains to be investigated.",
+   "wrong": [
+    "How were the funds spent remains to be investigated.",
+    "How the funds were spent it remains to be investigated.",
+    "How the funds were spent remain to be investigated."
+   ]
+  },
+  "item": {
+   "id": "ia-C12-5a-r4",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "How the funds were spent remains to be investigated.",
+   "wrong": [
+    "How were the funds spent remains to be investigated.",
+    "How the funds were spent it remains to be investigated.",
+    "How the funds were spent remain to be investigated."
+   ],
+   "why": "A question clause used as the subject keeps statement word order (*how the funds were spent*), needs no extra *it*, and counts as one thing, so the verb is singular: *remains*.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r17-014": {
+  "hash": "8e9708c70cf6dc70",
+  "gate_key": "past_simple_passive | A2.2 | match | Match each question with its answer. | Was the bridge built in 1890? = Yes, it was. ; Were the photos taken in Rome? = No, they weren't. ; Was your sister born in Riga? = No, she wasn't. ; Were you invited to the wedding? = Yes, I was.",
+  "src": "a2-big-1.csv:183",
+  "point": "pas_past",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Was the bridge built in 1890?",
+     "Yes, it was."
+    ],
+    [
+     "Were the photos taken in Rome?",
+     "No, they weren't."
+    ],
+    [
+     "Was your sister born in Riga?",
+     "No, she wasn't."
+    ],
+    [
+     "Were you invited to the wedding?",
+     "Yes, I was."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0182",
+   "skill": "past_simple_passive",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each question with its answer.",
+   "why": "A short answer repeats *was* / *were* with the pronoun of the subject: *the bridge → it*, *the photos → they*, *your sister → she*, *you → I*.",
+   "why_lv": "Īsajā atbildē atkārto *was / were* ar teikuma priekšmeta vietniekvārdu: *the bridge → it, the photos → they, your sister → she, you → I*.",
+   "pairs": [
+    [
+     "Was the bridge built in 1890?",
+     "Yes, it was."
+    ],
+    [
+     "Were the photos taken in Rome?",
+     "No, they weren't."
+    ],
+    [
+     "Was your sister born in Riga?",
+     "No, she wasn't."
+    ],
+    [
+     "Were you invited to the wedding?",
+     "Yes, I was."
+    ]
+   ],
+   "role": "learn",
+   "point": "pas_past",
+   "src": "a2-big-1.csv:183"
+  }
+ },
+ "r17-015": {
+  "hash": "420e483ad5caf49b",
+  "gate_key": "ind_polite | B1.1 | mcq | Which sentence has a mistake? | Can you tell me where can I leave my bike?",
+  "src": "b1-cond-rep-1.csv:249",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "Can you tell me where can I leave my bike?",
+   "wrong": [
+    "Do you know which platform the train leaves from?",
+    "I wonder how long this report will take.",
+    "Do you know if the gym is open on Sundays?"
+   ]
+  },
+  "item": {
+   "id": "c-0913",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After *where* the order is like a statement: *where I can leave my bike*, not *where can I*.",
+   "why_lv": "Pēc *where* vārdu secība ir kā apgalvojumā: *where I can leave my bike*, nevis *where can I*.",
+   "correct": "Can you tell me where can I leave my bike?",
+   "wrong": [
+    "Do you know which platform the train leaves from?",
+    "I wonder how long this report will take.",
+    "Do you know if the gym is open on Sundays?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "b1-cond-rep-1.csv:249"
+  }
+ },
+ "r17-016": {
+  "hash": "4fc05f5a5fdd1513",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence has a mistake? | Could you tell me why did the bank block my card?",
+  "src": "b1-cond-rep-1.csv:250",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "Could you tell me why did the bank block my card?",
+   "wrong": [
+    "Do you know whether the museum has reopened?",
+    "I wonder who will win the match tonight.",
+    "I'm not sure how much we paid for the hotel."
+   ]
+  },
+  "item": {
+   "id": "c-0914",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "No *did* in an indirect question; the verb itself is in the past: *why the bank blocked my card*.",
+   "why_lv": "Netiešajā jautājumā nav *did*; pagātnē ir darbības vārds: *why the bank blocked my card*.",
+   "correct": "Could you tell me why did the bank block my card?",
+   "wrong": [
+    "Do you know whether the museum has reopened?",
+    "I wonder who will win the match tonight.",
+    "I'm not sure how much we paid for the hotel."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "b1-cond-rep-1.csv:250"
+  }
+ },
+ "r17-017": {
+  "hash": "555639a71526f15c",
+  "gate_key": "more_modals | B1.1 | mcq | Which sentence is NOT correct? | You needn't to come early.",
+  "src": "b1-new-4.csv:28",
+  "point": "neednt",
+  "key": {
+   "kind": "mcq",
+   "correct": "You needn't to come early.",
+   "wrong": [
+    "We needn't book a table on a Monday.",
+    "You don't need to bring any food.",
+    "She doesn't need to work this Friday."
+   ]
+  },
+  "item": {
+   "id": "c-1282",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*needn't* + base verb (no *to*) = not necessary.",
+   "why_lv": "*needn't* + pamatforma (bez to) = nav vajadzīgs.",
+   "correct": "You needn't to come early.",
+   "wrong": [
+    "We needn't book a table on a Monday.",
+    "You don't need to bring any food.",
+    "She doesn't need to work this Friday."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "neednt",
+   "src": "b1-new-4.csv:28"
+  }
+ },
+ "r17-018": {
+  "hash": "5143dedb31256418",
+  "gate_key": "two_objects | B1.1 | order | Put the words in order. | could you pass me the salt please",
+  "src": "b1-new-4.csv:139",
+  "point": "two_obj",
+  "key": {
+   "kind": "order",
+   "sentence": "could you pass me the salt please",
+   "also": [
+    "could you please pass me the salt",
+    "please could you pass me the salt",
+    "you could pass me the salt please"
+   ]
+  },
+  "item": {
+   "id": "c-1393",
+   "skill": "two_objects",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*give me a book* = *give a book to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "*give me a book = give a book to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: *vispirms lieta*, tad to. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "could you pass me the salt please",
+   "answers": [
+    [
+     "could you pass me the salt please",
+     "could you please pass me the salt",
+     "please could you pass me the salt",
+     "you could pass me the salt please"
+    ]
+   ],
+   "role": "check",
+   "point": "two_obj",
+   "src": "b1-new-4.csv:139"
+  }
+ },
+ "r17-019": {
+  "hash": "f36ec61dffb3f8a0",
+  "gate_key": "present_simple | B1.1 | order | Put the words in order. | i don't usually drink coffee after lunch because it keeps me awake",
+  "src": "b1-tenses-1.csv:6",
+  "point": "ps_negq",
+  "key": {
+   "kind": "order",
+   "sentence": "i don't usually drink coffee after lunch because it keeps me awake",
+   "also": [
+    "because it keeps me awake i don't usually drink coffee after lunch",
+    "i usually don't drink coffee after lunch because it keeps me awake",
+    "because it keeps me awake i usually don't drink coffee after lunch",
+    "usually i don't drink coffee after lunch because it keeps me awake"
+   ]
+  },
+  "item": {
+   "id": "c-1822",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + verb (with *-s* after *he / she / it*) + the rest; questions and negatives use *do / does*.",
+   "why_lv": "Teikuma priekšmets + darbības vārds (ar *-s* aiz *he / she / it*) + pārējais; jautājumos un noliegumos lieto *do / does*.",
+   "sentence": "i don't usually drink coffee after lunch because it keeps me awake",
+   "answers": [
+    [
+     "i don't usually drink coffee after lunch because it keeps me awake",
+     "because it keeps me awake i don't usually drink coffee after lunch",
+     "i usually don't drink coffee after lunch because it keeps me awake",
+     "because it keeps me awake i usually don't drink coffee after lunch",
+     "usually i don't drink coffee after lunch because it keeps me awake"
+    ]
+   ],
+   "role": "check",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:6"
+  }
+ },
+ "r17-020": {
+  "hash": "6324f24c8f7858e7",
+  "gate_key": "present_simple | B1.1 | order | Put the words in order. | my parents never watch the news but they read a newspaper every day",
+  "src": "b1-tenses-1.csv:8",
+  "point": "ps_form",
+  "key": {
+   "kind": "order",
+   "sentence": "my parents never watch the news but they read a newspaper every day",
+   "also": [
+    "my parents read a newspaper every day but they never watch the news",
+    "every day my parents read a newspaper but they never watch the news",
+    "my parents never watch the news but every day they read a newspaper"
+   ]
+  },
+  "item": {
+   "id": "c-1824",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + verb (with *-s* after *he / she / it*) + the rest; questions and negatives use *do / does*.",
+   "why_lv": "Teikuma priekšmets + darbības vārds (ar *-s* aiz *he / she / it*) + pārējais; jautājumos un noliegumos lieto *do / does*.",
+   "sentence": "my parents never watch the news but they read a newspaper every day",
+   "answers": [
+    [
+     "my parents never watch the news but they read a newspaper every day",
+     "my parents read a newspaper every day but they never watch the news",
+     "every day my parents read a newspaper but they never watch the news",
+     "my parents never watch the news but every day they read a newspaper"
+    ]
+   ],
+   "role": "check",
+   "point": "ps_form",
+   "src": "b1-tenses-1.csv:8"
+  }
+ },
+ "r17-021": {
+  "hash": "f9a8f11c20aee1f5",
+  "gate_key": "future | B1.1 | mcq | Which sentence has a mistake? | Don't worry, I call you as soon as I land.",
+  "src": "b1-tenses-2.csv:132",
+  "point": "will_now",
+  "key": {
+   "kind": "mcq",
+   "correct": "Don't worry, I call you as soon as I land.",
+   "wrong": [
+    "I'm meeting my sister at the airport tomorrow.",
+    "I think the flight will be late.",
+    "We're going to rent a car in Lisbon."
+   ]
+  },
+  "item": {
+   "id": "c-2089",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "A promise or a decision made now takes *will*: *I'll call you as soon as I land.* After *as soon as* the present stays: *as soon as I land*.",
+   "why_lv": "Solījumam vai tagad pieņemtam lēmumam angliski vajag *will*: *I'll call you as soon as I land*, nevis *I call you.* Aiz *as soon as* paliek tagadne: *as soon as I land*.",
+   "correct": "Don't worry, I call you as soon as I land.",
+   "wrong": [
+    "I'm meeting my sister at the airport tomorrow.",
+    "I think the flight will be late.",
+    "We're going to rent a car in Lisbon."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "will_now",
+   "src": "b1-tenses-2.csv:132"
+  }
+ },
+ "r17-022": {
+  "hash": "6c3ee0eb04c93506",
+  "gate_key": "narrative_b2 | B2.2 | gap | By the time he retired, he ___ the same car for thirty years. (have) | ",
+  "src": "compare-past-1.csv:57",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had had",
+     "'d had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2204",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "By the time he retired, he ___ the same car for thirty years. (have)",
+   "why": "*have* (= own) is not continuous: *he had had the same car for thirty years*, not *had been having*. *By the time* needs the earlier past.",
+   "why_lv": "*have* (= piederēt) nelieto Continuous formā: *he had had the same car for thirty years*, nevis *had been having*. Ar *by the time* vajag agrāku pagātni.",
+   "answers": [
+    [
+     "had had",
+     "'d had"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:57"
+  }
+ },
+ "r17-023": {
+  "hash": "cfb01a0a75feab62",
+  "gate_key": "narrative_b2 | B2.2 | text | Correct the mistake: When she sold the café, she had been owning it since 2010. | ",
+  "src": "compare-past-1.csv:59",
+  "point": "pastpc",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "When she sold the café, she had owned it since 2010.",
+     "When she sold the café, she'd owned it since 2010.",
+     "she had owned it since 2010 when she sold the café.",
+     "she'd owned it since 2010 when she sold the café."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2206",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: When she sold the café, she had been owning it since 2010.",
+   "why": "*own* is not continuous: *she had owned it since 2010*, not *had been owning*.",
+   "why_lv": "*own* nelieto Continuous formā: *she had owned it since 2010*, nevis *had been owning*.",
+   "answers": [
+    [
+     "When she sold the café, she had owned it since 2010.",
+     "When she sold the café, she'd owned it since 2010.",
+     "she had owned it since 2010 when she sold the café.",
+     "she'd owned it since 2010 when she sold the café."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:59"
+  }
+ },
+ "r17-024": {
+  "hash": "53c1ee8b9a599397",
+  "gate_key": "comparison | A2.2 | order | Put the words in order. | this jacket is cheaper than that one",
+  "src": "comparison-1.csv:26",
+  "point": "cmp_er",
+  "key": {
+   "kind": "order",
+   "sentence": "this jacket is cheaper than that one",
+   "also": [
+    "that jacket is cheaper than this one"
+   ]
+  },
+  "item": {
+   "id": "c-2233",
+   "skill": "comparison",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *is* + comparative + *than* + *that one*.",
+   "why_lv": "teik. priekšmets + *is* + pārākā pakāpe + *than + that one*.",
+   "sentence": "this jacket is cheaper than that one",
+   "answers": [
+    [
+     "this jacket is cheaper than that one",
+     "that jacket is cheaper than this one"
+    ]
+   ],
+   "role": "check",
+   "point": "cmp_er",
+   "src": "comparison-1.csv:26"
+  }
+ },
+ "r17-025": {
+  "hash": "0bccd13dacfc12ba",
+  "gate_key": "comparison | B1.1 | text | Rewrite with *less*. Start with *That flat*: This flat is more expensive than that flat. | ",
+  "src": "comparison-1.csv:36",
+  "point": "cmp_less",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "That flat is less expensive than this flat.",
+     "That flat is less expensive than this one.",
+     "That flat's less expensive than this flat.",
+     "That flat's less expensive than this one.",
+     "That flat is less expensive than this flat is.",
+     "That flat is less expensive than this one is."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2243",
+   "skill": "comparison",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *less*. Start with *That flat*: This flat is more expensive than that flat.",
+   "why": "Turn it round with *less ... than*: *That flat is less expensive than this flat.*",
+   "why_lv": "Apgriez ar *less* ... *than*: *That flat is less expensive than this flat.*",
+   "answers": [
+    [
+     "That flat is less expensive than this flat.",
+     "That flat is less expensive than this one.",
+     "That flat's less expensive than this flat.",
+     "That flat's less expensive than this one.",
+     "That flat is less expensive than this flat is.",
+     "That flat is less expensive than this one is."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "cmp_less",
+   "src": "comparison-1.csv:36"
+  }
+ },
+ "r17-026": {
+  "hash": "c426c2ffb92a1add",
+  "gate_key": "conj_b2 | B2.2 | gap | Complete with one word: It was a difficult task, and ___ they finished it on time. | ",
+  "src": "conjunctions-1.csv:103",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "yet",
+     "still",
+     "nevertheless",
+     "nonetheless"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2361",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: It was a difficult task, and ___ they finished it on time.",
+   "why": "*yet* = but; after a comma or *and*.",
+   "why_lv": "*yet* = bet; pēc *komata* vai *and*.",
+   "answer_notes": [
+    [
+     "nevertheless",
+     "Correct too: *nevertheless* (= but in spite of this) is more formal; *and yet* is the usual pair.",
+     "Arī pareizi: *nevertheless* (= tomēr, neskatoties uz to) ir formālāks; parasti saka *and yet*."
+    ],
+    [
+     "nonetheless",
+     "Correct too: *nonetheless* (= but in spite of this) is more formal; *and yet* is the usual pair.",
+     "Arī pareizi: *nonetheless* (= tomēr, neskatoties uz to) ir formālāks; parasti saka *and yet*."
+    ]
+   ],
+   "answers": [
+    [
+     "yet",
+     "still",
+     "nevertheless",
+     "nonetheless"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:103"
+  }
+ },
+ "r17-027": {
+  "hash": "d8f31bc1dee2f152",
+  "gate_key": "future | B1.2 | mcq | Choose the correct option: I charged it all night, but my phone still ___. | won't switch on",
+  "src": "gap-points-b12-1.csv:127",
+  "point": "wont_refuse",
+  "key": {
+   "kind": "mcq",
+   "correct": "won't switch on",
+   "wrong": [
+    "won't to switch on",
+    "won't switching on",
+    "willn't switch on"
+   ]
+  },
+  "item": {
+   "id": "c-2948",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I charged it all night, but my phone still ___.",
+   "why": "*won't* + base verb = it refuses to work: *My phone won't switch on.* No *to*, no *-ing*; the short form of *will not* is *won't*.",
+   "why_lv": "Tulkojot burtiski negrib ieslēgties, sanāk *doesn't want to switch on*. Par lietu, kas atsakās darboties, angliski saka *won't* + pamatforma: *My phone won't switch on.* Nevis *won't to switch on* vai *won't switching on*.",
+   "correct": "won't switch on",
+   "wrong": [
+    "won't to switch on",
+    "won't switching on",
+    "willn't switch on"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "wont_refuse",
+   "src": "gap-points-b12-1.csv:127"
+  }
+ },
+ "r17-028": {
+  "hash": "85ebda898170c443",
+  "gate_key": "ind_polite | B1.1 | mcq | Choose the correct option: Could you tell me what this word ___ ? | means",
+  "src": "iq-b1-6.csv:2",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "means",
+   "wrong": [
+    "mean",
+    "does it mean",
+    "it means"
+   ]
+  },
+  "item": {
+   "id": "c-2973",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Could you tell me what this word ___ ?",
+   "why": "There is no *does* in an indirect question, so the verb itself takes *-s*: *what this word means*.",
+   "why_lv": "Netiešajā jautājumā nav *does*, tāpēc *-s* ir pašam darbības vārdam: *what this word means*.",
+   "correct": "means",
+   "wrong": [
+    "mean",
+    "does it mean",
+    "it means"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:2"
+  }
+ },
+ "r17-029": {
+  "hash": "c96187ef35b27c86",
+  "gate_key": "ind_polite | B1.1 | gap | Do you know where ___ ___ buy a phone charger near here? | ",
+  "src": "iq-b1-6.csv:3",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "I"
+    ],
+    [
+     "can"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2974",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Do you know where ___ ___ buy a phone charger near here?",
+   "why": "After *where* the order is like a statement: *I can buy*, not *can I buy*.",
+   "why_lv": "Pēc *where* vārdu secība ir kā apgalvojumā: *I can buy*, nevis *can I buy*.",
+   "answers": [
+    [
+     "I"
+    ],
+    [
+     "can"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "I",
+    "can",
+    "do"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:3"
+  }
+ },
+ "r17-030": {
+  "hash": "7a51a85b7d6c3d92",
+  "gate_key": "ind_polite | B1.1 | gap | Use the words in brackets: Can you tell me how often ___ on Sundays? (the night bus / run) | ",
+  "src": "iq-b1-6.csv:4",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "the night bus runs",
+     "the night bus is running"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2975",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Use the words in brackets: Can you tell me how often ___ on Sundays? (the night bus / run)",
+   "why": "*How often does the night bus run?* becomes *how often the night bus runs*: no *does*, and the verb takes *-s*.",
+   "why_lv": "*How often does the night bus run?* kļūst par *how often the night bus runs*: bez *does*, un darbības vārdam ir *-s*.",
+   "answers": [
+    [
+     "the night bus runs",
+     "the night bus is running"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:4"
+  }
+ },
+ "r17-031": {
+  "hash": "14f112719b988a09",
+  "gate_key": "ind_polite | B1.1 | gap | I can't hear the guide. Do you know what ___ ___ talking about? | ",
+  "src": "iq-b1-6.csv:5",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "she"
+    ],
+    [
+     "is"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2976",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I can't hear the guide. Do you know what ___ ___ talking about?",
+   "why": "In an indirect question the subject comes before *is*: *what she is talking about*, not *what is she*.",
+   "why_lv": "Netiešajā jautājumā teikuma priekšmets ir pirms *is*: *what she is talking about*, nevis *what is she*.",
+   "answers": [
+    [
+     "she"
+    ],
+    [
+     "is"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "she",
+    "is",
+    "does"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:5"
+  }
+ },
+ "r17-032": {
+  "hash": "ba2a38111dc2def8",
+  "gate_key": "ind_polite | B1.1 | text | You need to print a document at work, but you can't find the printer. Ask a colleague. Start with *Do you know where*. | ",
+  "src": "iq-b1-6.csv:6",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Do you know where the printer is?",
+     "Do you know where the printer is, please?",
+     "Excuse me, do you know where the printer is?",
+     "Excuse me, do you know where the printer is, please?",
+     "Do you know where the printers are?",
+     "Do you know where the printers are, please?",
+     "Excuse me, do you know where the printers are?",
+     "Excuse me, do you know where the printers are, please?",
+     "Do you know where the nearest printer is?",
+     "Do you know where the nearest printer is, please?",
+     "Excuse me, do you know where the nearest printer is?",
+     "Excuse me, do you know where the nearest printer is, please?",
+     "Do you know where I can find the printer?",
+     "Do you know where I can find the printer, please?",
+     "Excuse me, do you know where I can find the printer?",
+     "Excuse me, do you know where I can find the printer, please?",
+     "Do you know where I can find a printer?",
+     "Do you know where I can find a printer, please?",
+     "Excuse me, do you know where I can find a printer?",
+     "Excuse me, do you know where I can find a printer, please?",
+     "Do you know where I can print?",
+     "Do you know where I can print, please?",
+     "Excuse me, do you know where I can print?",
+     "Excuse me, do you know where I can print, please?",
+     "Do you know where I can print something?",
+     "Do you know where I can print something, please?",
+     "Excuse me, do you know where I can print something?",
+     "Excuse me, do you know where I can print something, please?",
+     "Do you know where I can print a document?",
+     "Do you know where I can print a document, please?",
+     "Excuse me, do you know where I can print a document?",
+     "Excuse me, do you know where I can print a document, please?",
+     "Do you know where I can print my document?",
+     "Do you know where I can print my document, please?",
+     "Excuse me, do you know where I can print my document?",
+     "Excuse me, do you know where I can print my document, please?",
+     "Do you know where I can print this document?",
+     "Do you know where I can print this document, please?",
+     "Excuse me, do you know where I can print this document?",
+     "Excuse me, do you know where I can print this document, please?",
+     "Do you know where there is a printer?",
+     "Do you know where there is a printer, please?",
+     "Excuse me, do you know where there is a printer?",
+     "Excuse me, do you know where there is a printer, please?",
+     "Do you know where the printer is located?",
+     "Do you know where the printer is located, please?",
+     "Excuse me, do you know where the printer is located?",
+     "Excuse me, do you know where the printer is located, please?",
+     "Do you know where I can find one?",
+     "Do you know where I can find one, please?",
+     "Excuse me, do you know where I can find one?",
+     "Excuse me, do you know where I can find one, please?",
+     "Do you know where the printer room is?",
+     "Do you know where the printer room is, please?",
+     "Excuse me, do you know where the printer room is?",
+     "Excuse me, do you know where the printer room is, please?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2977",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "You need to print a document at work, but you can't find the printer. Ask a colleague. Start with *Do you know where*.",
+   "why": "After *Do you know where* the order is like a statement: *where the printer is*, *where I can print*, not *where is the printer*.",
+   "why_lv": "Pēc *Do you know where* vārdu secība ir kā apgalvojumā: *where the printer is, where I can print*, nevis *where is the printer*.",
+   "answers": [
+    [
+     "Do you know where the printer is?",
+     "Do you know where the printer is, please?",
+     "Excuse me, do you know where the printer is?",
+     "Excuse me, do you know where the printer is, please?",
+     "Do you know where the printers are?",
+     "Do you know where the printers are, please?",
+     "Excuse me, do you know where the printers are?",
+     "Excuse me, do you know where the printers are, please?",
+     "Do you know where the nearest printer is?",
+     "Do you know where the nearest printer is, please?",
+     "Excuse me, do you know where the nearest printer is?",
+     "Excuse me, do you know where the nearest printer is, please?",
+     "Do you know where I can find the printer?",
+     "Do you know where I can find the printer, please?",
+     "Excuse me, do you know where I can find the printer?",
+     "Excuse me, do you know where I can find the printer, please?",
+     "Do you know where I can find a printer?",
+     "Do you know where I can find a printer, please?",
+     "Excuse me, do you know where I can find a printer?",
+     "Excuse me, do you know where I can find a printer, please?",
+     "Do you know where I can print?",
+     "Do you know where I can print, please?",
+     "Excuse me, do you know where I can print?",
+     "Excuse me, do you know where I can print, please?",
+     "Do you know where I can print something?",
+     "Do you know where I can print something, please?",
+     "Excuse me, do you know where I can print something?",
+     "Excuse me, do you know where I can print something, please?",
+     "Do you know where I can print a document?",
+     "Do you know where I can print a document, please?",
+     "Excuse me, do you know where I can print a document?",
+     "Excuse me, do you know where I can print a document, please?",
+     "Do you know where I can print my document?",
+     "Do you know where I can print my document, please?",
+     "Excuse me, do you know where I can print my document?",
+     "Excuse me, do you know where I can print my document, please?",
+     "Do you know where I can print this document?",
+     "Do you know where I can print this document, please?",
+     "Excuse me, do you know where I can print this document?",
+     "Excuse me, do you know where I can print this document, please?",
+     "Do you know where there is a printer?",
+     "Do you know where there is a printer, please?",
+     "Excuse me, do you know where there is a printer?",
+     "Excuse me, do you know where there is a printer, please?",
+     "Do you know where the printer is located?",
+     "Do you know where the printer is located, please?",
+     "Excuse me, do you know where the printer is located?",
+     "Excuse me, do you know where the printer is located, please?",
+     "Do you know where I can find one?",
+     "Do you know where I can find one, please?",
+     "Excuse me, do you know where I can find one?",
+     "Excuse me, do you know where I can find one, please?",
+     "Do you know where the printer room is?",
+     "Do you know where the printer room is, please?",
+     "Excuse me, do you know where the printer room is?",
+     "Excuse me, do you know where the printer room is, please?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:6"
+  }
+ },
+ "r17-033": {
+  "hash": "2ff13c24a798e48a",
+  "gate_key": "ind_polite | B1.1 | text | Correct the mistake: Hi Eva, could you tell me how much does the course cost? I'd like to sign up. | ",
+  "src": "iq-b1-6.csv:7",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Hi Eva, could you tell me how much the course costs? I'd like to sign up."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2978",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Hi Eva, could you tell me how much does the course cost? I'd like to sign up.",
+   "why": "No *does* after *how much* in an indirect question, and the verb takes *-s*: *how much the course costs*.",
+   "why_lv": "Netiešajā jautājumā pēc *how much* nav *does*, un darbības vārdam ir *-s*: *how much the course costs*.",
+   "answers": [
+    [
+     "Hi Eva, could you tell me how much the course costs? I'd like to sign up."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:7"
+  }
+ },
+ "r17-034": {
+  "hash": "9e82c32acc0497ee",
+  "gate_key": "ind_polite | B1.1 | order | Put the words in order. | i wonder why my laptop is so slow",
+  "src": "iq-b1-6.csv:8",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "i wonder why my laptop is so slow",
+   "also": []
+  },
+  "item": {
+   "id": "c-2979",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "After *I wonder why* the order is like a statement: *why my laptop is so slow*. It is not a question, so it ends with a full stop.",
+   "why_lv": "Pēc *I wonder why* vārdu secība ir kā apgalvojumā: *why my laptop is so slow*. Tas nav jautājums, tāpēc beigās ir punkts.",
+   "sentence": "i wonder why my laptop is so slow",
+   "answers": [
+    [
+     "i wonder why my laptop is so slow"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:8"
+  }
+ },
+ "r17-035": {
+  "hash": "0b9670bcae35ec73",
+  "gate_key": "ind_polite | B1.1 | order | Put the words in order to make a question. | can you tell me how the coffee machine works",
+  "src": "iq-b1-6.csv:9",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "can you tell me how the coffee machine works",
+   "also": []
+  },
+  "item": {
+   "id": "c-2980",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "*How does the coffee machine work?* inside *Can you tell me*: no *does*, and *works* with *-s*.",
+   "why_lv": "*How does the coffee machine work?* pēc *Can you tell me*: bez *does*, un *works* ar *-s*.",
+   "sentence": "can you tell me how the coffee machine works",
+   "answers": [
+    [
+     "can you tell me how the coffee machine works"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:9"
+  }
+ },
+ "r17-036": {
+  "hash": "875bc56bfd81e23d",
+  "gate_key": "ind_polite | B1.1 | mcq | Choose the correct option: I'd like to know ___ any free tables for tonight. | if there are",
+  "src": "iq-b1-6.csv:10",
+  "point": "iq_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "if there are",
+   "wrong": [
+    "are there",
+    "if are there",
+    "there are"
+   ]
+  },
+  "item": {
+   "id": "c-2981",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I'd like to know ___ any free tables for tonight.",
+   "why": "A yes/no question inside another sentence needs *if* and the order of a statement: *if there are*.",
+   "why_lv": "Jautājumam ar atbildi jā / nē cita teikuma iekšā vajag *if* un vārdu secību kā apgalvojumā: *if there are*.",
+   "correct": "if there are",
+   "wrong": [
+    "are there",
+    "if are there",
+    "there are"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:10"
+  }
+ },
+ "r17-037": {
+  "hash": "0802c37b6cdc9772",
+  "gate_key": "ind_polite | B1.1 | text | You are visiting a new city and want to see the old town, but you don't know the way. Ask someone in the street. Start with *Could you tell me how*. | ",
+  "src": "iq-b1-6.csv:11",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you tell me how I can get to the old town?",
+     "Could you tell me how I can get to the old town, please?",
+     "Excuse me, could you tell me how I can get to the old town?",
+     "Excuse me, could you tell me how I can get to the old town, please?",
+     "Could you tell me how I get to the old town?",
+     "Could you tell me how I get to the old town, please?",
+     "Excuse me, could you tell me how I get to the old town?",
+     "Excuse me, could you tell me how I get to the old town, please?",
+     "Could you tell me how we can get to the old town?",
+     "Could you tell me how we can get to the old town, please?",
+     "Excuse me, could you tell me how we can get to the old town?",
+     "Excuse me, could you tell me how we can get to the old town, please?",
+     "Could you tell me how we get to the old town?",
+     "Could you tell me how we get to the old town, please?",
+     "Excuse me, could you tell me how we get to the old town?",
+     "Excuse me, could you tell me how we get to the old town, please?",
+     "Could you tell me how I can find the old town?",
+     "Could you tell me how I can find the old town, please?",
+     "Excuse me, could you tell me how I can find the old town?",
+     "Excuse me, could you tell me how I can find the old town, please?",
+     "Could you tell me how I can walk to the old town?",
+     "Could you tell me how I can walk to the old town, please?",
+     "Excuse me, could you tell me how I can walk to the old town?",
+     "Excuse me, could you tell me how I can walk to the old town, please?",
+     "Could you tell me how to get to the old town?",
+     "Could you tell me how to get to the old town, please?",
+     "Excuse me, could you tell me how to get to the old town?",
+     "Excuse me, could you tell me how to get to the old town, please?",
+     "Could you tell me how far the old town is?",
+     "Could you tell me how far the old town is, please?",
+     "Excuse me, could you tell me how far the old town is?",
+     "Excuse me, could you tell me how far the old town is, please?",
+     "Could you tell me how far it is to the old town?",
+     "Could you tell me how far it is to the old town, please?",
+     "Excuse me, could you tell me how far it is to the old town?",
+     "Excuse me, could you tell me how far it is to the old town, please?",
+     "Could you tell me how long it takes to get to the old town?",
+     "Could you tell me how long it takes to get to the old town, please?",
+     "Excuse me, could you tell me how long it takes to get to the old town?",
+     "Excuse me, could you tell me how long it takes to get to the old town, please?",
+     "Could you tell me how long it takes to walk to the old town?",
+     "Could you tell me how long it takes to walk to the old town, please?",
+     "Excuse me, could you tell me how long it takes to walk to the old town?",
+     "Excuse me, could you tell me how long it takes to walk to the old town, please?",
+     "Could you tell me how I can get to the old town from here?",
+     "Could you tell me how I can get to the old town from here, please?",
+     "Excuse me, could you tell me how I can get to the old town from here?",
+     "Excuse me, could you tell me how I can get to the old town from here, please?",
+     "Could you tell me how I get to the old town from here?",
+     "Could you tell me how I get to the old town from here, please?",
+     "Excuse me, could you tell me how I get to the old town from here?",
+     "Excuse me, could you tell me how I get to the old town from here, please?",
+     "Could you tell me how to get to the old town from here?",
+     "Could you tell me how to get to the old town from here, please?",
+     "Excuse me, could you tell me how to get to the old town from here?",
+     "Excuse me, could you tell me how to get to the old town from here, please?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2982",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "You are visiting a new city and want to see the old town, but you don't know the way. Ask someone in the street. Start with *Could you tell me how*.",
+   "why": "After *how* the order is like a statement: *how I can get to the old town*, *how far the old town is*. *How to get to the old town* is correct too.",
+   "why_lv": "Pēc *how* vārdu secība ir kā apgalvojumā: *how I can get to the old town, how far the old town is*. Arī *how to get to the old town* ir pareizā atbilde.",
+   "answers": [
+    [
+     "Could you tell me how I can get to the old town?",
+     "Could you tell me how I can get to the old town, please?",
+     "Excuse me, could you tell me how I can get to the old town?",
+     "Excuse me, could you tell me how I can get to the old town, please?",
+     "Could you tell me how I get to the old town?",
+     "Could you tell me how I get to the old town, please?",
+     "Excuse me, could you tell me how I get to the old town?",
+     "Excuse me, could you tell me how I get to the old town, please?",
+     "Could you tell me how we can get to the old town?",
+     "Could you tell me how we can get to the old town, please?",
+     "Excuse me, could you tell me how we can get to the old town?",
+     "Excuse me, could you tell me how we can get to the old town, please?",
+     "Could you tell me how we get to the old town?",
+     "Could you tell me how we get to the old town, please?",
+     "Excuse me, could you tell me how we get to the old town?",
+     "Excuse me, could you tell me how we get to the old town, please?",
+     "Could you tell me how I can find the old town?",
+     "Could you tell me how I can find the old town, please?",
+     "Excuse me, could you tell me how I can find the old town?",
+     "Excuse me, could you tell me how I can find the old town, please?",
+     "Could you tell me how I can walk to the old town?",
+     "Could you tell me how I can walk to the old town, please?",
+     "Excuse me, could you tell me how I can walk to the old town?",
+     "Excuse me, could you tell me how I can walk to the old town, please?",
+     "Could you tell me how to get to the old town?",
+     "Could you tell me how to get to the old town, please?",
+     "Excuse me, could you tell me how to get to the old town?",
+     "Excuse me, could you tell me how to get to the old town, please?",
+     "Could you tell me how far the old town is?",
+     "Could you tell me how far the old town is, please?",
+     "Excuse me, could you tell me how far the old town is?",
+     "Excuse me, could you tell me how far the old town is, please?",
+     "Could you tell me how far it is to the old town?",
+     "Could you tell me how far it is to the old town, please?",
+     "Excuse me, could you tell me how far it is to the old town?",
+     "Excuse me, could you tell me how far it is to the old town, please?",
+     "Could you tell me how long it takes to get to the old town?",
+     "Could you tell me how long it takes to get to the old town, please?",
+     "Excuse me, could you tell me how long it takes to get to the old town?",
+     "Excuse me, could you tell me how long it takes to get to the old town, please?",
+     "Could you tell me how long it takes to walk to the old town?",
+     "Could you tell me how long it takes to walk to the old town, please?",
+     "Excuse me, could you tell me how long it takes to walk to the old town?",
+     "Excuse me, could you tell me how long it takes to walk to the old town, please?",
+     "Could you tell me how I can get to the old town from here?",
+     "Could you tell me how I can get to the old town from here, please?",
+     "Excuse me, could you tell me how I can get to the old town from here?",
+     "Excuse me, could you tell me how I can get to the old town from here, please?",
+     "Could you tell me how I get to the old town from here?",
+     "Could you tell me how I get to the old town from here, please?",
+     "Excuse me, could you tell me how I get to the old town from here?",
+     "Excuse me, could you tell me how I get to the old town from here, please?",
+     "Could you tell me how to get to the old town from here?",
+     "Could you tell me how to get to the old town from here, please?",
+     "Excuse me, could you tell me how to get to the old town from here?",
+     "Excuse me, could you tell me how to get to the old town from here, please?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:11"
+  }
+ },
+ "r17-038": {
+  "hash": "a67ff2724da72dd9",
+  "gate_key": "ind_polite | B1.1 | gap | Use the words in brackets. Add any missing word: I'd like to know ___ a balcony. We'd love a view of the sea. (our room / have) | ",
+  "src": "iq-b1-6.csv:12",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if our room has",
+     "whether our room has",
+     "if our room has got",
+     "whether our room has got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2983",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Use the words in brackets. Add any missing word: I'd like to know ___ a balcony. We'd love a view of the sea. (our room / have)",
+   "why": "A yes/no question inside another sentence: *if* (or *whether*) + subject + verb: *if our room has a balcony*.",
+   "why_lv": "Jautājums ar atbildi jā / nē cita teikuma iekšā: *if* (vai *whether*) + teikuma priekšmets + darbības vārds: *if our room has a balcony*.",
+   "answers": [
+    [
+     "if our room has",
+     "whether our room has",
+     "if our room has got",
+     "whether our room has got"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:12"
+  }
+ },
+ "r17-039": {
+  "hash": "e02eaed14c82719b",
+  "gate_key": "ind_polite | B1.1 | gap | Can you tell me ___ ___ ___ English? I need help with the menu. | ",
+  "src": "iq-b1-6.csv:13",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if"
+    ],
+    [
+     "the waiter"
+    ],
+    [
+     "speaks"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2984",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Can you tell me ___ ___ ___ English? I need help with the menu.",
+   "why": "*Does the waiter speak English?* becomes *if the waiter speaks English*: *if*, no *does*, and *speaks* with *-s*.",
+   "why_lv": "*Does the waiter speak English?* kļūst par *if the waiter speaks English*: *if*, bez *does*, un *speaks* ar *-s*.",
+   "answers": [
+    [
+     "if"
+    ],
+    [
+     "the waiter"
+    ],
+    [
+     "speaks"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "if",
+    "the waiter",
+    "speaks",
+    "does",
+    "speak"
+   ],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:13"
+  }
+ },
+ "r17-040": {
+  "hash": "101cfe9dac0f552d",
+  "gate_key": "ind_polite | B1.2 | gap | Use the words in brackets: Do you know where ___ the car last night? It isn't in the garage. (Tom / park) | ",
+  "src": "iq-b1-6.csv:14",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Tom parked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2985",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Use the words in brackets: Do you know where ___ the car last night? It isn't in the garage. (Tom / park)",
+   "why": "*Where did Tom park?* becomes *where Tom parked*: *did* goes, and the verb itself shows the past.",
+   "why_lv": "*Where did Tom park?* kļūst par *where Tom parked*: *did* pazūd, un pagātni rāda darbības vārds.",
+   "answers": [
+    [
+     "Tom parked"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:14"
+  }
+ },
+ "r17-041": {
+  "hash": "dc335bb9ed2800a4",
+  "gate_key": "ind_polite | B1.2 | gap | I wonder ___ ___ ___ my email. She hasn't answered yet. | ",
+  "src": "iq-b1-6.csv:15",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if"
+    ],
+    [
+     "Maria"
+    ],
+    [
+     "got"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2986",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wonder ___ ___ ___ my email. She hasn't answered yet.",
+   "why": "*Did Maria get my email?* becomes *if Maria got my email*: *if*, no *did*, and the verb in the past.",
+   "why_lv": "*Did Maria get my email?* kļūst par *if Maria got my email*: *if*, bez *did*, un darbības vārds pagātnē.",
+   "answers": [
+    [
+     "if"
+    ],
+    [
+     "Maria"
+    ],
+    [
+     "got"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "if",
+    "Maria",
+    "got",
+    "get",
+    "did"
+   ],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:15"
+  }
+ },
+ "r17-042": {
+  "hash": "98048eba85fa7138",
+  "gate_key": "ind_polite | B1.2 | mcq | Choose the correct option: Could you check ___ the parcel yet? | if they have sent",
+  "src": "iq-b1-6.csv:16",
+  "point": "iq_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "if they have sent",
+   "wrong": [
+    "have they sent",
+    "if have they sent",
+    "did they send"
+   ]
+  },
+  "item": {
+   "id": "c-2987",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Could you check ___ the parcel yet?",
+   "why": "A yes/no question inside *Could you check*: *if* + subject + verb: *if they have sent*.",
+   "why_lv": "Jautājums ar atbildi jā / nē pēc *Could you check*: *if* + teikuma priekšmets + darbības vārds: *if they have sent*.",
+   "correct": "if they have sent",
+   "wrong": [
+    "have they sent",
+    "if have they sent",
+    "did they send"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:16"
+  }
+ },
+ "r17-043": {
+  "hash": "72f789fde7201895",
+  "gate_key": "ind_polite | B1.2 | order | Put the words in order. | i'd like to know where you learned to cook like that",
+  "src": "iq-b1-6.csv:17",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "i'd like to know where you learned to cook like that",
+   "also": []
+  },
+  "item": {
+   "id": "c-2988",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "After *I'd like to know where* the order is like a statement and there is no *did*: *where you learned*.",
+   "why_lv": "Pēc *I'd like to know where* vārdu secība ir kā apgalvojumā, un *did* nav: *where you learned*.",
+   "sentence": "i'd like to know where you learned to cook like that",
+   "answers": [
+    [
+     "i'd like to know where you learned to cook like that"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:17"
+  }
+ },
+ "r17-044": {
+  "hash": "953e24b6807736e6",
+  "gate_key": "ind_polite | B1.2 | text | Your colleague has a great new laptop bag, and you would like one like it. Ask her about the shop. Start with *Could you tell me where*. | ",
+  "src": "iq-b1-6.csv:18",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Could you tell me where you bought it?",
+     "Could you tell me where you bought it, please?",
+     "Could you tell me where you bought it from?",
+     "Could you tell me where you bought it from, please?",
+     "Could you tell me where you bought that bag?",
+     "Could you tell me where you bought that bag, please?",
+     "Could you tell me where you bought that bag from?",
+     "Could you tell me where you bought that bag from, please?",
+     "Could you tell me where you bought your bag?",
+     "Could you tell me where you bought your bag, please?",
+     "Could you tell me where you bought your bag from?",
+     "Could you tell me where you bought your bag from, please?",
+     "Could you tell me where you bought your new bag?",
+     "Could you tell me where you bought your new bag, please?",
+     "Could you tell me where you bought your laptop bag?",
+     "Could you tell me where you bought your laptop bag, please?",
+     "Could you tell me where you bought that laptop bag?",
+     "Could you tell me where you bought that laptop bag, please?",
+     "Could you tell me where you got it?",
+     "Could you tell me where you got it, please?",
+     "Could you tell me where you got it from?",
+     "Could you tell me where you got it from, please?",
+     "Could you tell me where you got that bag?",
+     "Could you tell me where you got that bag, please?",
+     "Could you tell me where you got that bag from?",
+     "Could you tell me where you got that bag from, please?",
+     "Could you tell me where you got your bag?",
+     "Could you tell me where you got your bag, please?",
+     "Could you tell me where you got your bag from?",
+     "Could you tell me where you got your bag from, please?",
+     "Could you tell me where you got your new bag?",
+     "Could you tell me where you got your new bag, please?",
+     "Could you tell me where you got your laptop bag?",
+     "Could you tell me where you got your laptop bag, please?",
+     "Could you tell me where you got that laptop bag?",
+     "Could you tell me where you got that laptop bag, please?",
+     "Could you tell me where I can buy one?",
+     "Could you tell me where I can buy one, please?",
+     "Could you tell me where I can get one?",
+     "Could you tell me where I can get one, please?",
+     "Could you tell me where I could buy one?",
+     "Could you tell me where I could buy one, please?",
+     "Could you tell me where I could get one?",
+     "Could you tell me where I could get one, please?",
+     "Could you tell me where I can buy one like it?",
+     "Could you tell me where I can buy one like it, please?",
+     "Could you tell me where I can get one like it?",
+     "Could you tell me where I can get one like it, please?",
+     "Could you tell me where I can buy the same bag?",
+     "Could you tell me where I can buy the same bag, please?",
+     "Could you tell me where I can get the same bag?",
+     "Could you tell me where I can get the same bag, please?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2989",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Your colleague has a great new laptop bag, and you would like one like it. Ask her about the shop. Start with *Could you tell me where*.",
+   "why": "*Where did you buy it?* becomes *where you bought it*: no *did*, and the verb in the past. *Where I can buy one* is correct too.",
+   "why_lv": "*Where did you buy it?* kļūst par *where you bought it*: bez *did*, un darbības vārds pagātnē. Arī *where I can buy one* ir pareizā atbilde.",
+   "answers": [
+    [
+     "Could you tell me where you bought it?",
+     "Could you tell me where you bought it, please?",
+     "Could you tell me where you bought it from?",
+     "Could you tell me where you bought it from, please?",
+     "Could you tell me where you bought that bag?",
+     "Could you tell me where you bought that bag, please?",
+     "Could you tell me where you bought that bag from?",
+     "Could you tell me where you bought that bag from, please?",
+     "Could you tell me where you bought your bag?",
+     "Could you tell me where you bought your bag, please?",
+     "Could you tell me where you bought your bag from?",
+     "Could you tell me where you bought your bag from, please?",
+     "Could you tell me where you bought your new bag?",
+     "Could you tell me where you bought your new bag, please?",
+     "Could you tell me where you bought your laptop bag?",
+     "Could you tell me where you bought your laptop bag, please?",
+     "Could you tell me where you bought that laptop bag?",
+     "Could you tell me where you bought that laptop bag, please?",
+     "Could you tell me where you got it?",
+     "Could you tell me where you got it, please?",
+     "Could you tell me where you got it from?",
+     "Could you tell me where you got it from, please?",
+     "Could you tell me where you got that bag?",
+     "Could you tell me where you got that bag, please?",
+     "Could you tell me where you got that bag from?",
+     "Could you tell me where you got that bag from, please?",
+     "Could you tell me where you got your bag?",
+     "Could you tell me where you got your bag, please?",
+     "Could you tell me where you got your bag from?",
+     "Could you tell me where you got your bag from, please?",
+     "Could you tell me where you got your new bag?",
+     "Could you tell me where you got your new bag, please?",
+     "Could you tell me where you got your laptop bag?",
+     "Could you tell me where you got your laptop bag, please?",
+     "Could you tell me where you got that laptop bag?",
+     "Could you tell me where you got that laptop bag, please?",
+     "Could you tell me where I can buy one?",
+     "Could you tell me where I can buy one, please?",
+     "Could you tell me where I can get one?",
+     "Could you tell me where I can get one, please?",
+     "Could you tell me where I could buy one?",
+     "Could you tell me where I could buy one, please?",
+     "Could you tell me where I could get one?",
+     "Could you tell me where I could get one, please?",
+     "Could you tell me where I can buy one like it?",
+     "Could you tell me where I can buy one like it, please?",
+     "Could you tell me where I can get one like it?",
+     "Could you tell me where I can get one like it, please?",
+     "Could you tell me where I can buy the same bag?",
+     "Could you tell me where I can buy the same bag, please?",
+     "Could you tell me where I can get the same bag?",
+     "Could you tell me where I can get the same bag, please?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:18"
+  }
+ },
+ "r17-045": {
+  "hash": "deab1a869db0b51e",
+  "gate_key": "ind_polite | B1.2 | gap | Do you know how long ___ ___ ___ in this company? She knows everyone. | ",
+  "src": "iq-b1-6.csv:19",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Anna"
+    ],
+    [
+     "has"
+    ],
+    [
+     "worked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2990",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Do you know how long ___ ___ ___ in this company? She knows everyone.",
+   "why": "After *how long* the order is like a statement: *Anna has worked*, not *has Anna worked* or *does Anna work*.",
+   "why_lv": "Pēc *how long* vārdu secība ir kā apgalvojumā: *Anna has worked*, nevis *has Anna worked* vai *does Anna work*.",
+   "answers": [
+    [
+     "Anna"
+    ],
+    [
+     "has"
+    ],
+    [
+     "worked"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Anna",
+    "has",
+    "worked",
+    "does",
+    "work"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:19"
+  }
+ },
+ "r17-046": {
+  "hash": "65d7c0cbbbbfa897",
+  "gate_key": "ind_polite | B1.2 | text | Correct the mistake: Dear Mr Kalns, could you tell me when did you send the invoice? We still haven't received it. | ",
+  "src": "iq-b1-6.csv:20",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Dear Mr Kalns, could you tell me when you sent the invoice? We still haven't received it."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2991",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Dear Mr Kalns, could you tell me when did you send the invoice? We still haven't received it.",
+   "why": "No *did* in an indirect question; the verb itself is in the past: *when you sent the invoice*.",
+   "why_lv": "Netiešajā jautājumā nav *did*; pagātnē ir darbības vārds: *when you sent the invoice*.",
+   "answers": [
+    [
+     "Dear Mr Kalns, could you tell me when you sent the invoice? We still haven't received it."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:20"
+  }
+ },
+ "r17-047": {
+  "hash": "0d546a122980a27a",
+  "gate_key": "ind_polite | B1.2 | order | Put the words in order to make a question. | do you know why the meeting was cancelled",
+  "src": "iq-b1-6.csv:21",
+  "point": "iq_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "do you know why the meeting was cancelled",
+   "also": []
+  },
+  "item": {
+   "id": "c-2992",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "*Why was the meeting cancelled?* inside *Do you know*: the subject comes before *was*: *why the meeting was cancelled*.",
+   "why_lv": "*Why was the meeting cancelled?* pēc *Do you know*: teikuma priekšmets ir pirms *was*: *why the meeting was cancelled*.",
+   "sentence": "do you know why the meeting was cancelled",
+   "answers": [
+    [
+     "do you know why the meeting was cancelled"
+    ]
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:21"
+  }
+ },
+ "r17-048": {
+  "hash": "62615ec9833e0d63",
+  "gate_key": "ind_polite | B1.2 | gap | Use the words in brackets. Add any missing word: Can you remember ___ the back door before we left? (you / lock) | ",
+  "src": "iq-b1-6.csv:22",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if you locked",
+     "whether you locked",
+     "if you had locked",
+     "whether you had locked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2993",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Use the words in brackets. Add any missing word: Can you remember ___ the back door before we left? (you / lock)",
+   "why": "*Did you lock the back door?* becomes *if you locked the back door*: *if*, no *did*, and the verb in the past.",
+   "why_lv": "*Did you lock the back door?* kļūst par *if you locked the back door*: *if*, bez *did*, un darbības vārds pagātnē.",
+   "answers": [
+    [
+     "if you locked",
+     "whether you locked",
+     "if you had locked",
+     "whether you had locked"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:22"
+  }
+ },
+ "r17-049": {
+  "hash": "80674ee3244e5688",
+  "gate_key": "ind_polite | B1.2 | mcq | Choose the correct option: Do you know where ___ yesterday? He didn't come to work. | Mark was",
+  "src": "iq-b1-6.csv:23",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "Mark was",
+   "wrong": [
+    "was Mark",
+    "Mark is",
+    "Mark has been"
+   ]
+  },
+  "item": {
+   "id": "c-2994",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Do you know where ___ yesterday? He didn't come to work.",
+   "why": "*Where was Mark yesterday?* becomes *where Mark was yesterday*: the subject first, and the past stays because of *yesterday*.",
+   "why_lv": "*Where was Mark yesterday?* kļūst par *where Mark was yesterday*: sākumā teikuma priekšmets, un pagātne paliek *yesterday* dēļ.",
+   "correct": "Mark was",
+   "wrong": [
+    "was Mark",
+    "Mark is",
+    "Mark has been"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:23"
+  }
+ },
+ "r17-050": {
+  "hash": "d93176cb144797d6",
+  "gate_key": "ind_polite | B1.2 | text | You left your umbrella in the meeting room this morning, and now it isn't there. Ask the receptionist. Start with *Do you know if*. | ",
+  "src": "iq-b1-6.csv:24",
+  "point": "iq_yn",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Do you know if anyone has found it?",
+     "Do you know if anyone has found an umbrella?",
+     "Do you know if anyone has found my umbrella?",
+     "Do you know if anyone found it?",
+     "Do you know if anyone found an umbrella?",
+     "Do you know if anyone found my umbrella?",
+     "Do you know if someone has found it?",
+     "Do you know if someone has found an umbrella?",
+     "Do you know if someone has found my umbrella?",
+     "Do you know if someone found it?",
+     "Do you know if someone found an umbrella?",
+     "Do you know if someone found my umbrella?",
+     "Do you know if somebody has found it?",
+     "Do you know if somebody has found an umbrella?",
+     "Do you know if somebody has found my umbrella?",
+     "Do you know if somebody found it?",
+     "Do you know if somebody found an umbrella?",
+     "Do you know if somebody found my umbrella?",
+     "Do you know if anybody has found it?",
+     "Do you know if anybody has found an umbrella?",
+     "Do you know if anybody has found my umbrella?",
+     "Do you know if anybody found it?",
+     "Do you know if anybody found an umbrella?",
+     "Do you know if anybody found my umbrella?",
+     "Do you know if anyone has seen it?",
+     "Do you know if anyone has seen my umbrella?",
+     "Do you know if anyone saw it?",
+     "Do you know if anyone saw my umbrella?",
+     "Do you know if anyone has taken it?",
+     "Do you know if anyone has taken my umbrella?",
+     "Do you know if anyone took it?",
+     "Do you know if anyone took my umbrella?",
+     "Do you know if someone has seen it?",
+     "Do you know if someone has seen my umbrella?",
+     "Do you know if someone saw it?",
+     "Do you know if someone saw my umbrella?",
+     "Do you know if someone has taken it?",
+     "Do you know if someone has taken my umbrella?",
+     "Do you know if someone took it?",
+     "Do you know if someone took my umbrella?",
+     "Do you know if somebody has seen it?",
+     "Do you know if somebody has seen my umbrella?",
+     "Do you know if somebody saw it?",
+     "Do you know if somebody saw my umbrella?",
+     "Do you know if somebody has taken it?",
+     "Do you know if somebody has taken my umbrella?",
+     "Do you know if somebody took it?",
+     "Do you know if somebody took my umbrella?",
+     "Do you know if anybody has seen it?",
+     "Do you know if anybody has seen my umbrella?",
+     "Do you know if anybody saw it?",
+     "Do you know if anybody saw my umbrella?",
+     "Do you know if anybody has taken it?",
+     "Do you know if anybody has taken my umbrella?",
+     "Do you know if anybody took it?",
+     "Do you know if anybody took my umbrella?",
+     "Do you know if anyone has handed it in?",
+     "Do you know if anyone handed it in?",
+     "Do you know if anyone has handed in an umbrella?",
+     "Do you know if anyone handed in an umbrella?",
+     "Do you know if anyone has handed in my umbrella?",
+     "Do you know if anyone handed in my umbrella?",
+     "Do you know if someone has handed it in?",
+     "Do you know if someone handed it in?",
+     "Do you know if someone has handed in an umbrella?",
+     "Do you know if someone handed in an umbrella?",
+     "Do you know if someone has handed in my umbrella?",
+     "Do you know if someone handed in my umbrella?",
+     "Do you know if somebody has handed it in?",
+     "Do you know if somebody handed it in?",
+     "Do you know if somebody has handed in an umbrella?",
+     "Do you know if somebody handed in an umbrella?",
+     "Do you know if somebody has handed in my umbrella?",
+     "Do you know if somebody handed in my umbrella?",
+     "Do you know if anybody has handed it in?",
+     "Do you know if anybody handed it in?",
+     "Do you know if anybody has handed in an umbrella?",
+     "Do you know if anybody handed in an umbrella?",
+     "Do you know if anybody has handed in my umbrella?",
+     "Do you know if anybody handed in my umbrella?",
+     "Do you know if it has been found?",
+     "Do you know if it was found?",
+     "Do you know if it has been handed in?",
+     "Do you know if it was handed in?",
+     "Do you know if my umbrella has been found?",
+     "Do you know if my umbrella was found?",
+     "Do you know if my umbrella has been handed in?",
+     "Do you know if my umbrella was handed in?",
+     "Do you know if an umbrella has been found?",
+     "Do you know if an umbrella was found?",
+     "Do you know if an umbrella has been handed in?",
+     "Do you know if an umbrella was handed in?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2995",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "You left your umbrella in the meeting room this morning, and now it isn't there. Ask the receptionist. Start with *Do you know if*.",
+   "why": "*Has anyone found it?* / *Did anyone find it?* become *if anyone has found it* / *if anyone found it*: *if* + subject + verb, no *did*.",
+   "why_lv": "*Has anyone found it?* / *Did anyone find it?* kļūst par *if anyone has found it / if anyone found it*: *if* + teikuma priekšmets + darbības vārds, bez *did*.",
+   "answers": [
+    [
+     "Do you know if anyone has found it?",
+     "Do you know if anyone has found an umbrella?",
+     "Do you know if anyone has found my umbrella?",
+     "Do you know if anyone found it?",
+     "Do you know if anyone found an umbrella?",
+     "Do you know if anyone found my umbrella?",
+     "Do you know if someone has found it?",
+     "Do you know if someone has found an umbrella?",
+     "Do you know if someone has found my umbrella?",
+     "Do you know if someone found it?",
+     "Do you know if someone found an umbrella?",
+     "Do you know if someone found my umbrella?",
+     "Do you know if somebody has found it?",
+     "Do you know if somebody has found an umbrella?",
+     "Do you know if somebody has found my umbrella?",
+     "Do you know if somebody found it?",
+     "Do you know if somebody found an umbrella?",
+     "Do you know if somebody found my umbrella?",
+     "Do you know if anybody has found it?",
+     "Do you know if anybody has found an umbrella?",
+     "Do you know if anybody has found my umbrella?",
+     "Do you know if anybody found it?",
+     "Do you know if anybody found an umbrella?",
+     "Do you know if anybody found my umbrella?",
+     "Do you know if anyone has seen it?",
+     "Do you know if anyone has seen my umbrella?",
+     "Do you know if anyone saw it?",
+     "Do you know if anyone saw my umbrella?",
+     "Do you know if anyone has taken it?",
+     "Do you know if anyone has taken my umbrella?",
+     "Do you know if anyone took it?",
+     "Do you know if anyone took my umbrella?",
+     "Do you know if someone has seen it?",
+     "Do you know if someone has seen my umbrella?",
+     "Do you know if someone saw it?",
+     "Do you know if someone saw my umbrella?",
+     "Do you know if someone has taken it?",
+     "Do you know if someone has taken my umbrella?",
+     "Do you know if someone took it?",
+     "Do you know if someone took my umbrella?",
+     "Do you know if somebody has seen it?",
+     "Do you know if somebody has seen my umbrella?",
+     "Do you know if somebody saw it?",
+     "Do you know if somebody saw my umbrella?",
+     "Do you know if somebody has taken it?",
+     "Do you know if somebody has taken my umbrella?",
+     "Do you know if somebody took it?",
+     "Do you know if somebody took my umbrella?",
+     "Do you know if anybody has seen it?",
+     "Do you know if anybody has seen my umbrella?",
+     "Do you know if anybody saw it?",
+     "Do you know if anybody saw my umbrella?",
+     "Do you know if anybody has taken it?",
+     "Do you know if anybody has taken my umbrella?",
+     "Do you know if anybody took it?",
+     "Do you know if anybody took my umbrella?",
+     "Do you know if anyone has handed it in?",
+     "Do you know if anyone handed it in?",
+     "Do you know if anyone has handed in an umbrella?",
+     "Do you know if anyone handed in an umbrella?",
+     "Do you know if anyone has handed in my umbrella?",
+     "Do you know if anyone handed in my umbrella?",
+     "Do you know if someone has handed it in?",
+     "Do you know if someone handed it in?",
+     "Do you know if someone has handed in an umbrella?",
+     "Do you know if someone handed in an umbrella?",
+     "Do you know if someone has handed in my umbrella?",
+     "Do you know if someone handed in my umbrella?",
+     "Do you know if somebody has handed it in?",
+     "Do you know if somebody handed it in?",
+     "Do you know if somebody has handed in an umbrella?",
+     "Do you know if somebody handed in an umbrella?",
+     "Do you know if somebody has handed in my umbrella?",
+     "Do you know if somebody handed in my umbrella?",
+     "Do you know if anybody has handed it in?",
+     "Do you know if anybody handed it in?",
+     "Do you know if anybody has handed in an umbrella?",
+     "Do you know if anybody handed in an umbrella?",
+     "Do you know if anybody has handed in my umbrella?",
+     "Do you know if anybody handed in my umbrella?",
+     "Do you know if it has been found?",
+     "Do you know if it was found?",
+     "Do you know if it has been handed in?",
+     "Do you know if it was handed in?",
+     "Do you know if my umbrella has been found?",
+     "Do you know if my umbrella was found?",
+     "Do you know if my umbrella has been handed in?",
+     "Do you know if my umbrella was handed in?",
+     "Do you know if an umbrella has been found?",
+     "Do you know if an umbrella was found?",
+     "Do you know if an umbrella has been handed in?",
+     "Do you know if an umbrella was handed in?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:24"
+  }
+ },
+ "r17-051": {
+  "hash": "f8114c111966f35f",
+  "gate_key": "ind_polite | B1.2 | gap | I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email. | ",
+  "src": "iq-b1-6.csv:25",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if"
+    ],
+    [
+     "we"
+    ],
+    [
+     "have"
+    ],
+    [
+     "booked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2996",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email.",
+   "why": "A yes/no question after *I'm not sure*: *if* + subject + verb: *if we have booked*, not *if have we booked*.",
+   "why_lv": "Jautājums ar atbildi jā / nē pēc *I'm not sure*: *if* + teikuma priekšmets + darbības vārds: *if we have booked*, nevis *if have we booked*.",
+   "answers": [
+    [
+     "if"
+    ],
+    [
+     "we"
+    ],
+    [
+     "have"
+    ],
+    [
+     "booked"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "if",
+    "we",
+    "have",
+    "booked",
+    "did",
+    "book"
+   ],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:25"
+  }
+ },
+ "r17-052": {
+  "hash": "389ee3e26e70eeef",
+  "gate_key": "past_simple | A2.1 | mcq | Choose the correct option: We ___ to Spain last summer. | went",
+  "src": "more-1.csv:77",
+  "point": "pst_irr",
+  "key": {
+   "kind": "mcq",
+   "correct": "went",
+   "wrong": [
+    "goed",
+    "gone",
+    "were go"
+   ]
+  },
+  "item": {
+   "id": "c-3206",
+   "skill": "past_simple",
+   "level": "A2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct option: We ___ to Spain last summer.",
+   "why": "Irregular verbs have their own past form: *go → went, buy → bought, have → had.*",
+   "why_lv": "Nekārtnajiem darbības vārdiem ir *sava* pagātnes forma: *go → went, buy → bought, have → had*.",
+   "correct": "went",
+   "wrong": [
+    "goed",
+    "gone",
+    "were go"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pst_irr",
+   "src": "more-1.csv:77"
+  }
+ },
+ "r17-053": {
+  "hash": "3bf6f2fbefe4cea4",
+  "gate_key": "past_simple | A2.2 | mcq | Choose the correct option: She ___ her keys two days ago. | lost",
+  "src": "more-1.csv:80",
+  "point": "pst_irr",
+  "key": {
+   "kind": "mcq",
+   "correct": "lost",
+   "wrong": [
+    "losed",
+    "has lost",
+    "was lost"
+   ]
+  },
+  "item": {
+   "id": "c-3209",
+   "skill": "past_simple",
+   "level": "A2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She ___ her keys two days ago.",
+   "why": "A finished time (*ago, yesterday, last…*) needs the past simple: *She lost her keys two days ago.*",
+   "why_lv": "*Pabeigtam laikam* (*ago, yesterday, last*…) vajag Past Simple: *She lost her keys two days ago.*",
+   "correct": "lost",
+   "wrong": [
+    "losed",
+    "has lost",
+    "was lost"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pst_irr",
+   "src": "more-1.csv:80"
+  }
+ },
+ "r17-054": {
+  "hash": "dc3f67e8eb70ef3d",
+  "gate_key": "ind_polite | B2.1 | text | Ask politely, starting with *Do you know*: When does the shop close? | ",
+  "src": "twins-1.csv:72",
+  "point": "iq_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Do you know when the shop closes?",
+     "Do you know when the shop closes today?",
+     "Do you know what time the shop closes?",
+     "Do you know what time the shop closes today?",
+     "Do you happen to know when the shop closes?",
+     "Do you happen to know when the shop closes today?",
+     "Do you happen to know what time the shop closes?",
+     "Do you happen to know what time the shop closes today?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3437",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Ask politely, starting with *Do you know*: When does the shop close?",
+   "why": "After *Could you tell me / Do you know* the word order is like a statement: subject + verb.",
+   "why_lv": "Aiz *Could you tell me / Do you know* vārdu secība ir kā apgalvojumā: teikuma priekšmets + darbības vārds.",
+   "answers": [
+    [
+     "Do you know when the shop closes?",
+     "Do you know when the shop closes today?",
+     "Do you know what time the shop closes?",
+     "Do you know what time the shop closes today?",
+     "Do you happen to know when the shop closes?",
+     "Do you happen to know when the shop closes today?",
+     "Do you happen to know what time the shop closes?",
+     "Do you happen to know what time the shop closes today?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "twins-1.csv:72"
+  }
+ },
+ "r17-055": {
+  "hash": "99e648a57f21d11b",
+  "gate_key": "cond_mixed | B2.1 | mcq | Which sentence is NOT correct? | If we would have caught the flight, we would be in Rome now.",
+  "src": "twins-2.csv:9",
+  "point": "c_mixed",
+  "key": {
+   "kind": "mcq",
+   "correct": "If we would have caught the flight, we would be in Rome now.",
+   "wrong": [
+    "If she had kept the receipt, she could return the coat now.",
+    "If I had joined the course, I would know more Spanish now.",
+    "If he had taken the job, he would be living in Berlin now."
+   ]
+  },
+  "item": {
+   "id": "c-3450",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "No *would* in the *if*-part: *If we had caught the flight, we would be in Rome now*.",
+   "why_lv": "Tulkojot burtiski ja mēs būtu paspējuši, sanāk *if we would have caught*. Angliski *if* daļā nav *would*: *If we had caught the flight, we would be in Rome now.*",
+   "correct": "If we would have caught the flight, we would be in Rome now.",
+   "wrong": [
+    "If she had kept the receipt, she could return the coat now.",
+    "If I had joined the course, I would know more Spanish now.",
+    "If he had taken the job, he would be living in Berlin now."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "c_mixed",
+   "src": "twins-2.csv:9"
+  }
+ },
+ "r17-056": {
+  "hash": "e594f35167fd3c37",
+  "gate_key": "narrative_b2 | B2.2 | text | Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it. | ",
+  "src": "twins-2.csv:49",
+  "point": "pastpc",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The house had belonged to my grandparents for decades before we bought it.",
+     "Before we bought it, the house had belonged to my grandparents for decades.",
+     "the house had belonged to my grandparents for decades before we bought it."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3490",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it.",
+   "why": "*Belong* describes a state, so use *had belonged*, not *had been belonging*.",
+   "why_lv": "*Belong* izsaka stāvokli, tāpēc lieto *had belonged*, nevis *had been belonging*.",
+   "answers": [
+    [
+     "The house had belonged to my grandparents for decades before we bought it.",
+     "Before we bought it, the house had belonged to my grandparents for decades.",
+     "the house had belonged to my grandparents for decades before we bought it."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "twins-2.csv:49"
+  }
+ }
+}

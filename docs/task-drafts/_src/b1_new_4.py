@@ -33,7 +33,7 @@ P.gap("B1.2", "I ___ to call her all week. Her phone is off.", "haven't been abl
 P.gap("B1.2", "Next year she ___ speak English fluently.", "will be able to")
 P.mcq("B1.1", "Choose the correct option: Next week I ___ help you.", "will be able to", ["will can", "will able to", "will be able"])
 P.mcq("B1.1", S() + "which sentence is correct?", "I haven't been able to sleep.", ["I haven't could sleep.", "I haven't can sleep.", "I haven't able to sleep."])
-P.mcq("B1.1", S() + "which sentence is NOT correct?", "You needn't to come early.", ["You needn't come early.", "You don't need to come early.", "You needn't have come so early."], b=4)
+P.mcq("B1.1", S() + "which sentence is NOT correct?", "You needn't to come early.", ["We needn't book a table on a Monday.", "You don't need to bring any food.", "She doesn't need to work this Friday."], b=4)   # learners' data, 21 November: three different correct sentences, not copies
 P.mcq("B1.1", "Choose the correct option: Passengers ___ to use phones during take-off.", "aren't allowed", ["aren't allow", "don't allowed", "isn't allowed"])
 P.mcq("B1.1", S() + "which sentence is correct?", "He may not know about the meeting.", ["He may not to know about the meeting.", "He mays not know about the meeting.", "He not may know about the meeting."])
 P.mcq("B1.1", S() + "which sentence is NOT correct?", "She might to be late.", ["She might be late.", "She may be late.", "She could be late."], b=4)

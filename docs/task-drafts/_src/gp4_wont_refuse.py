@@ -4,7 +4,7 @@ and unit 36 (wouldn't = refused: he wouldn't speak to me).
 doesn't start / isn't starting / can't open / didn't start are correct English too (a fact, not a refusal): they are never
 a wrong option. The wrong options are form mistakes (won't to, won't -ing, willn't, wouldn't + past) or won't with a fixed
 past time (yesterday, last night). won't for the future (It won't rain) is not used: every sentence is a refusal."""
-from lib import gp, od, mc, tx, mt, learning_task
+from lib import gp, od, mc, tx, mt, learning_task, replaces
 T = "Future: will, going to, present continuous"
 L = "B1.2"
 
@@ -18,10 +18,11 @@ QUEST = ("In a question, *won't* goes before the subject: *Why won't she answer?
          "Jautājumā *won't* liek pirms teikuma priekšmeta: *Why won't she answer?* (nevis *Why she won't answer?*).")
 
 # ---------- choice (7) ----------
-mc(T, L, 2, "Choose the correct option: I've charged it all night, but my phone still ___.", "won't switch on",
+mc(T, L, 2, "Choose the correct option: I charged it all night, but my phone still ___.", "won't switch on",
    ["won't to switch on", "won't switching on", "willn't switch on"],
    "*won't* + base verb = it refuses to work: *My phone won't switch on.* No *to*, no *-ing*; the short form of *will not* is *won't*.",
    "Tulkojot burtiski *negrib ieslēgties*, sanāk *doesn't want to switch on*. Par lietu, kas atsakās darboties, angliski saka *won't* + pamatforma: *My phone won't switch on.* Nevis *won't to switch on* vai *won't switching on*.")
+replaces("won't switch on")   # teacher, 21 November: a finished action is past simple (c-2948)
 mc(T, L, 2, "Choose the correct option: Yesterday I was late for work because my bike lock ___.", "wouldn't open",
    ["wouldn't opened", "wouldn't to open", "won't open"], *PAST)
 mc(T, L, 2, "Choose the correct option: I've told Max it's dangerous, but he ___ to me.", "won't listen",

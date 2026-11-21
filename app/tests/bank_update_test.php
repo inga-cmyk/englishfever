@@ -44,7 +44,7 @@ foreach ($retired as $old) {
     }
 }
 check(count($active) === 482, 'Unexpected active question count');   // -1: var-pp-b11-match-01 retired (12 November)
-check(count($retired) === 457, 'Unexpected correction count');   // +1: (will) in the brackets, tester's report (16 November); +1: report tasks give the start (14 November); +3: blind check round 1 (6 new versions, 3 of them reuse recorded intermediate versions); +6: rebuilds of 14 November; +23: part A of 14 November (situation removed before a choice); +4: part B (refused correct answers); +2: reports of 13 November; +38: the draft of 11-12 November; +42: C1 tasks became B2.2 (12 November)
+check(count($retired) === 466, 'Unexpected correction count');   // +7: indirect questions B1 (21 November); +2: tester's report of 21 November (cs-B12-2a, psp-A22-5a; the other four revise versions not yet in the ledger); +1: (will) in the brackets, tester's report (16 November); +1: report tasks give the start (14 November); +3: blind check round 1 (6 new versions, 3 of them reuse recorded intermediate versions); +6: rebuilds of 14 November; +23: part A of 14 November (situation removed before a choice); +4: part B (refused correct answers); +2: reports of 13 November; +38: the draft of 11-12 November; +42: C1 tasks became B2.2 (12 November)
 check(Content::item('unknown-id') === null, 'Unknown ID should return null');
 
 $grade = fn(string $id, $answer) => Grader::grade(Content::item($id), $answer);

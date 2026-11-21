@@ -3261,6 +3261,34 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Second conditional: *if + were* / Past Simple, *would* + pamatforma."
 },
 {
+"id": "cs-B12-2a",
+"skill": "cond_second",
+"level": "B1.2",
+"bloom": 2,
+"kind": "match",
+"q": "Match each sentence with its meaning.",
+"pairs": [
+[
+"If I had a car, I would drive to work.",
+"I don't have a car."
+],
+[
+"If I have a car next year, I will drive to work.",
+"Maybe I'll buy one."
+],
+[
+"If I had had a car, I would have driven to work.",
+"I didn't have a car then."
+],
+[
+"If you heat ice, it melts.",
+"This is always true."
+]
+],
+"why": "Zero: always true. First: real future. Second: unreal now. Third: unreal past.",
+"why_lv": "Zero: vienmēr patiess. First: reāla nākotne. Second: nereāls tagad. Third: nereāls pagātnē."
+},
+{
 "id": "cs-B12-3a",
 "skill": "cond_second",
 "level": "B1.2",
@@ -4977,6 +5005,51 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
+"id": "ip-B11-2a",
+"skill": "ind_polite",
+"level": "B1.1",
+"bloom": 2,
+"kind": "match",
+"q": "Match each direct question with its polite, indirect form.",
+"pairs": [
+[
+"Where is the toilet?",
+"Do you know where the toilet is?"
+],
+[
+"What time does the bank open?",
+"Could you tell me what time the bank opens?"
+],
+[
+"How much is this?",
+"Can you tell me how much this is?"
+],
+[
+"Is the shop open?",
+"I wonder if the shop is open."
+]
+],
+"why": "An indirect question starts with a polite phrase, then uses statement word order (no *do / does*).",
+"why_lv": "Netiešais jautājums sākas ar pieklājīgu frāzi, tad seko teikuma vārdu secība (bez *do / does*)."
+},
+{
+"id": "ip-B11-4a",
+"skill": "ind_polite",
+"level": "B1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "Do you know what time does the film start?",
+"wrong": [
+"Do you know what time the film starts?",
+"Could you tell me where she lives?",
+"I wonder how much it costs."
+],
+"why": "No *does* after the question word in an indirect question: *what time the film starts.*",
+"wrong_why": {},
+"why_lv": "Netiešajā jautājumā pēc jautājamā vārda nav *does*: *what time the film starts*."
+},
+{
 "id": "ip-B11-5a",
 "skill": "ind_polite",
 "level": "B1.1",
@@ -5074,6 +5147,23 @@ return json_decode(<<<'EF_JSON_END'
 ]
 ],
 "why_lv": "Pieklājīga frāze + *what time* + teik. priekšmets + darbības vārds. Bez *does*."
+},
+{
+"id": "ip-B12-4a",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "I wonder what does she want.",
+"wrong": [
+"I wonder what she wants.",
+"Do you know who she is?",
+"Could you tell me if he's here?"
+],
+"why": "After *I wonder* we use statement word order: *what she wants.*",
+"wrong_why": {},
+"why_lv": "Pēc *I wonder* lieto teikuma vārdu secību: *what she wants*."
 },
 {
 "id": "ip-B12-5a",
@@ -7654,6 +7744,24 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Vienošanās ar laiku bieži izsaka ar Present Continuous."
 },
 {
+"id": "psp-A22-5a-r2",
+"skill": "present_simple_passive",
+"level": "A2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "Why do we say 'Tickets are sold here'?",
+"correct": "The action matters, not who sells them.",
+"wrong": [
+"The tickets are very old and cheap.",
+"We want to say who sells the tickets.",
+"The sentence is about the past."
+],
+"why": "We use the passive when the action or the object is more important than the person who does it.",
+"wrong_why": {},
+"why_lv": "Ciešamo kārtu lieto, kad svarīgāka ir darbība vai objekts, nevis darītājs.",
+"wrong_why_lv": {}
+},
+{
 "id": "psp-B11-5a-r3",
 "skill": "present_simple_passive",
 "level": "B1.1",
@@ -8341,6 +8449,93 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "model": "Mia thanked the team for everything they had done.",
 "why": "Compare your sentence with the model answer."
+},
+{
+"id": "ip-B11-5a-r2",
+"skill": "ind_polite",
+"level": "B1.1",
+"bloom": 5,
+"kind": "mcq",
+"q": "You ask a stranger for the post office. Choose the most polite option.",
+"correct": "Could you tell me where the post office is?",
+"wrong": [
+"Excuse me, where is the post office, then?",
+"Tell me where the post office is, please.",
+"You, where is the nearest post office?"
+],
+"why": "A polite phrase + an indirect question sounds softer and more polite.",
+"wrong_why": {},
+"why_lv": "Pieklājīga frāze + netiešais jautājums skan maigāk un pieklājīgāk.",
+"wrong_why_lv": {}
+},
+{
+"id": "ip-B11-6a-r3",
+"skill": "ind_polite",
+"level": "B1.1",
+"bloom": 6,
+"kind": "write",
+"q": "Ask a colleague politely where the meeting room is. Start with *Could you tell me* or *Do you know*.",
+"must": [
+[
+"\\b(tell me|know|wondering)\\s+where\\b",
+"A polite start: *Could you tell me where …?* / *Do you know where …?*",
+"Pieklājīgs sākums: *Could you tell me where …?* / *Do you know where …?*"
+],
+[
+"^(?!.*\\bwhere\\s+is\\b)",
+"After *where*: the subject first, then the verb: *where the meeting room is*.",
+"Pēc *where*: vispirms teik. priekšmets, tad darbības vārds: *where the meeting room is*."
+]
+],
+"model": "Could you tell me where the meeting room is?",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
+},
+{
+"id": "ip-B12-2a-r3",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "Could you tell me ___?",
+"correct": "where the station is",
+"wrong": [
+"where is the station",
+"where does the station be",
+"where the station it is"
+],
+"why": "After *Could you tell me*, use *where the station is*. Do not turn the second part into a separate question.",
+"wrong_why": {},
+"why_lv": "Pēc *Could you tell me* lieto *where the station is*. Otrajā daļā neveido atsevišķu jautājumu.",
+"wrong_why_lv": {}
+},
+{
+"id": "ip-B12-6a-r3",
+"skill": "ind_polite",
+"level": "B1.2",
+"bloom": 6,
+"kind": "write",
+"q": "Ask a stranger politely if the café takes cards. Start with *Do you know* or *Could you tell me*.",
+"must": [
+[
+"\\b(if|whether)\\b",
+"A yes/no question inside a polite one: *… if the café takes cards*.",
+"Jā/nē jautājums pieklājīgā jautājumā: *… if the café takes cards*."
+],
+[
+"\\b(takes|accepts|take|accept)\\b",
+"Say what you want to know: *takes cards*.",
+"Pasaki, ko gribi zināt: *takes cards*."
+],
+[
+"^(?!.*\\bdoes\\b)",
+"No *does* inside an indirect question: *if the café takes cards*.",
+"Netiešā jautājumā bez *does*: *if the café takes cards*."
+]
+],
+"model": "Do you know if the café takes cards?",
+"why": "Compare your sentence with the model answer.",
+"why_lv": "Salīdzini savu teikumu ar piemēra atbildi."
 },
 {
 "id": "ip-B21-3a-r3",

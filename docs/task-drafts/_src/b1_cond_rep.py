@@ -221,27 +221,37 @@ P = mk("Indirect questions (Could you tell me where...)",
     ("Make it polite: *Could you tell me / Do you know* + normal word order.","Pieklājīgi: *Could you tell me / Do you know* + parastā vārdu secība."),
     ("Indirect questions use normal word order: the verb follows the subject.","Netiešajos jautājumos ir parastā vārdu secība: darbības vārds ir aiz teik. priekšmeta."))
 for i,s in enumerate(["could you tell me where the nearest bank is","do you know what time the shop opens","i'd like to know how much this costs","can you tell me if this bus goes to the airport","i wonder whether she has already left","could you tell me how i can get to the station","do you know why the train is late","i don't know who he is"]): P.order(lv(i,8),s)
-P.bank("B1.1","Could you tell me where ___ ?","the toilets are",["are the toilets","do the toilets be"])
+# 21 November (teacher: indirect questions at B1 too easy; gp6_iq_b1-notes.md): the same frame as other word orders, or five
+# words with one swap; practice only. The orders with I'd like to know, if, whether and how I can stay checks.
+for _n, _r in enumerate(rows):
+    if _r[0].startswith("Indirect questions") and _r[2] == "order" and _r[4] in ("could you tell me where the nearest bank is", "do you know what time the shop opens",
+                                                                               "do you know why the train is late", "i don't know who he is"):
+        PRACTICE_IDX.add(_n)
+P.bank("B1.1","Could you tell me where ___ ?","the toilets are",["are the toilets","do the toilets be"]); learning_task()   # 21 November: practice only (gp6_iq_b1-notes.md): the same choice as ip-B11-1a
 P.bank("B1.1","Do you know what time the film ___ ?","starts",["does start","start does"])
-P.bank("B1.1","Can you tell me ___ this bus stops at the museum?","if",["that","what"])
+P.bank("B1.1","Can you tell me ___ this bus stops at the museum?","if",["that","what"]); learning_task()   # 21 November: practice only (gp6_iq_b1-notes.md): the wrong words miss the real mistake (is the bus …), as ip-B12-1a
 P.bank("B1.1","I'd like to know how much ___ .","it costs",["does it cost","costs it"])
-P.bank("B1.2","Do you know ___ she lives?","where",["that","did"])
+P.bank("B1.2","Do you know ___ she lives?","where",["that","did"]); learning_task()   # 21 November: practice only (gp6_iq_b1-notes.md): a choice of question word, not of word order
 P.bank("B1.2","Could you tell me why the shop ___ closed?","is",["does","be"])
-P.bank("B1.2","I wonder ___ he will come.","whether",["that","what"])
+P.bank("B1.2","I wonder ___ he will come.","whether",["that","what"]); learning_task()   # 21 November: practice only (gp6_iq_b1-notes.md): the wrong words miss the real mistake (will he come)
 P.gap("B1.1","Could you tell me how much this ___ ? (cost)","costs")
 P.gap("B1.1","Do you know where the manager ___ ? (be)","is")
 P.gap("B1.2","I don't know what time the bus ___ . (leave)","leaves")
 P.gap("B1.2","Can you tell me if there ___ a pharmacy near here? (be)","is")
 P.text("B1.1","Rewrite as a polite indirect question: What time does the bank open?",["Could you tell me what time the bank opens?","Can you tell me what time the bank opens?","Do you know what time the bank opens?"]); replaces("Make it polite: What time does the bank open?")   # the instruction names the skill (teacher, 28 October)
-P.text("B1.1","Rewrite as a polite indirect question: Where can I buy tickets?",["Could you tell me where I can buy tickets?","Can you tell me where I can buy tickets?","Do you know where I can buy tickets?"]); replaces("Make it polite: Where can I buy tickets?")   # the instruction names the skill (teacher, 28 October)
+P.text("B1.1","Rewrite as a polite indirect question: Where can I buy tickets?",["Could you tell me where I can buy tickets?","Can you tell me where I can buy tickets?","Do you know where I can buy tickets?"]); replaces("Make it polite: Where can I buy tickets?"); learning_task()   # the instruction names the skill (teacher, 28 October)
 P.text("B1.2","Rewrite as a polite indirect question: Is there a bank near here?",["Could you tell me if there is a bank near here?","Could you tell me whether there is a bank near here?","Do you know if there is a bank near here?","Can you tell me if there is a bank near here?"]); replaces("Make it polite: Is there a bank near here?")   # the instruction names the skill (teacher, 28 October)
-P.text("B1.2","Rewrite as a polite indirect question: How much is this jacket?",["Could you tell me how much this jacket is?","Do you know how much this jacket is?","Can you tell me how much this jacket is?"]); replaces("Make it polite: How much is this jacket?")   # the instruction names the skill (teacher, 28 October)
-P.text("B1.2","Rewrite as a polite indirect question: Why is the train late?",["Could you tell me why the train is late?","Do you know why the train is late?","Can you tell me why the train is late?"]); replaces("Make it polite: Why is the train late?")   # the instruction names the skill (teacher, 28 October)
+P.text("B1.2","Rewrite as a polite indirect question: How much is this jacket?",["Could you tell me how much this jacket is?","Do you know how much this jacket is?","Can you tell me how much this jacket is?"]); replaces("Make it polite: How much is this jacket?"); learning_task()   # the instruction names the skill (teacher, 28 October)
+P.text("B1.2","Rewrite as a polite indirect question: Why is the train late?",["Could you tell me why the train is late?","Do you know why the train is late?","Can you tell me why the train is late?"]); replaces("Make it polite: Why is the train late?"); learning_task()   # the instruction names the skill (teacher, 28 October)
 P.match("B1.1","Match each direct question with its polite form.",[("Where is the station?","Could you tell me where the station is?"),("What time does it close?","Do you know what time it closes?"),("Is the bus late?","Can you tell me if the bus is late?"),("How much is the ticket?","I'd like to know how much the ticket is.")])
 P.match("B1.1","Match each beginning with its ending: polite.",[("Could you tell me where","the nearest bank is?"),("Do you know what time","the film starts?"),("I wonder if","she has called."),("Can you tell me how much","this ticket costs?")])
 P.match("B1.2","Match each question with its polite form.",[("Who is she?","Do you know who she is?"),("Why is he late?","Can you tell me why he is late?"),("When does it start?","Could you tell me when it starts?"),("Where do they live?","Do you know where they live?")])
 P.mcq("B1.1","Choose the correct option: Do you know what time ___ ?","the shop closes",["does the shop close","the shop does close","closes the shop"])
-P.mcq("B1.1","Choose the correct option: Could you tell me ___ the library is open on Sundays?","if",["that","what","did"])
-P.mcq("B1.1","At the station: which sentence is NOT correct?","Could you tell me where is the platform?",["Could you tell me where the platform is?","Do you know where the platform is?","Where is the platform?"],"In an indirect question the verb follows the subject: *where the platform is*.",b=4)
-P.mcq("B1.2","At the hotel: which sentence is NOT correct?","Do you know what time does breakfast start?",["Do you know what time breakfast starts?","Could you tell me what time breakfast starts?","What time does breakfast start?"],"No *does* in an indirect question: *what time breakfast starts*.",b=4)
+P.mcq("B1.1","Choose the correct option: Could you tell me ___ the library is open on Sundays?","if",["that","what","did"]); learning_task()   # 21 November: practice only (gp6_iq_b1-notes.md): the wrong options miss the real mistake (is the library open)
+P.mcq("B1.1","Which sentence has a mistake?","Can you tell me where can I leave my bike?",["Do you know which platform the train leaves from?","I wonder how long this report will take.","Do you know if the gym is open on Sundays?"],
+      why=("After *where* the order is like a statement: *where I can leave my bike*, not *where can I*.","Pēc *where* vārdu secība ir kā apgalvojumā: *where I can leave my bike*, nevis *where can I*."),b=4)
+replaces("Could you tell me where is the platform?")   # 21 November: the other three were the same station sentence; four different frames and topics now (gp6_iq_b1-notes.md)
+mc(P.t,"B1.2",4,"Which sentence has a mistake?","Could you tell me why did the bank block my card?",["Do you know whether the museum has reopened?","I wonder who will win the match tonight.","I'm not sure how much we paid for the hotel."],
+   "No *did* in an indirect question; the verb itself is in the past: *why the bank blocked my card*.","Netiešajā jautājumā nav *did*; pagātnē ir darbības vārds: *why the bank blocked my card*.")   # mc(): P.mcq allows one task per instruction
+replaces("Do you know what time does breakfast start?")   # 21 November: the correct twin of the wrong sentence was an option; four different frames, tenses and topics now
 save("b1-cond-rep-1.csv")

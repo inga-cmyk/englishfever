@@ -16814,5 +16814,141 @@
 "cond_first | A2.2 | gap | Hurry up! If you miss the bus, you ___ ___ late. | ": [
 "c1",
 "read"
+],
+"ind_polite | B1.1 | mcq | Choose the correct option: Could you tell me what this word ___ ? | means": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | gap | Do you know where ___ ___ buy a phone charger near here? | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | gap | Use the words in brackets: Can you tell me how often ___ on Sundays? (the night bus / run) | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | gap | I can't hear the guide. Do you know what ___ ___ talking about? | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | text | You need to print a document at work, but you can't find the printer. Ask a colleague. Start with *Do you know where*. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | text | Correct the mistake: Hi Eva, could you tell me how much does the course cost? I'd like to sign up. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | order | Put the words in order. | i wonder why my laptop is so slow": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | order | Put the words in order to make a question. | can you tell me how the coffee machine works": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | mcq | Choose the correct option: I'd like to know ___ any free tables for tonight. | if there are": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.1 | text | You are visiting a new city and want to see the old town, but you don't know the way. Ask someone in the street. Start with *Could you tell me how*. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | gap | Use the words in brackets. Add any missing word: I'd like to know ___ a balcony. We'd love a view of the sea. (our room / have) | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.1 | gap | Can you tell me ___ ___ ___ English? I need help with the menu. | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | gap | Use the words in brackets: Do you know where ___ the car last night? It isn't in the garage. (Tom / park) | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | gap | I wonder ___ ___ ___ my email. She hasn't answered yet. | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | mcq | Choose the correct option: Could you check ___ the parcel yet? | if they have sent": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | order | Put the words in order. | i'd like to know where you learned to cook like that": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | text | Your colleague has a great new laptop bag, and you would like one like it. Ask her about the shop. Start with *Could you tell me where*. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | gap | Do you know how long ___ ___ ___ in this company? She knows everyone. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | text | Correct the mistake: Dear Mr Kalns, could you tell me when did you send the invoice? We still haven't received it. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | order | Put the words in order to make a question. | do you know why the meeting was cancelled": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | gap | Use the words in brackets. Add any missing word: Can you remember ___ the back door before we left? (you / lock) | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | mcq | Choose the correct option: Do you know where ___ yesterday? He didn't come to work. | Mark was": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | text | You left your umbrella in the meeting room this morning, and now it isn't there. Ask the receptionist. Start with *Do you know if*. | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.2 | gap | I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email. | ": [
+"iq_yn",
+"read"
+],
+"past_simple_passive | A2.2 | match | Match each question with its answer. | Was the bridge built in 1890? = Yes, it was. ; Were the photos taken in Rome? = No, they weren't. ; Was your sister born in Riga? = No, she wasn't. ; Were you invited to the wedding? = Yes, I was.": [
+"pas_past",
+"read"
+],
+"ind_polite | B1.1 | mcq | Which sentence has a mistake? | Can you tell me where can I leave my bike?": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | mcq | Which sentence has a mistake? | Could you tell me why did the bank block my card?": [
+"iq_wh",
+"read"
+],
+"future | B1.1 | mcq | Which sentence has a mistake? | Don't worry, I call you as soon as I land.": [
+"will_now",
+"read"
+],
+"narrative_b2 | B2.2 | gap | By the time he retired, he ___ the same car for thirty years. (have) |": [
+"pastpc_vs",
+"read"
+],
+"narrative_b2 | B2.2 | text | Correct the mistake: When she sold the café, she had been owning it since 2010. |": [
+"pastpc_vs",
+"read"
+],
+"comparison | B1.1 | text | Rewrite with *less*. Start with *That flat*: This flat is more expensive than that flat. |": [
+"cmp_less",
+"read"
+],
+"future | B1.2 | mcq | Choose the correct option: I charged it all night, but my phone still ___. | won't switch on": [
+"wont_refuse",
+"read"
+],
+"cond_mixed | B2.1 | mcq | Which sentence is NOT correct? | If we would have caught the flight, we would be in Rome now.": [
+"c_mixed",
+"read"
+],
+"narrative_b2 | B2.2 | text | Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it. |": [
+"pastpc_vs",
+"read"
 ]
 }

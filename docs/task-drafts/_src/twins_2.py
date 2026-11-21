@@ -11,7 +11,7 @@ import csv
 import json
 import re
 
-from lib import Topic, rows, save, LV_BY_FILE, italics
+from lib import Topic, rows, save, LV_BY_FILE, italics, replaces
 
 ROOT = Path(__file__).resolve().parents[3]
 DRAFTS = ROOT / "docs/task-drafts"
@@ -124,13 +124,15 @@ twin(M_MCQ, "mcq", "Choose the correct option: I didn't charge my phone last nig
          "If I had charge my phone, it would be working now.",
          "If I had charged my phone, it would working now.",
          "If I had charged my phone, it would be work now."], why=MIXED)
+# tester's report, 21 November (c-3426): *would are* was too obvious; *would* in the if-part is the common mistake of these sentences
 twin(M_BAD, "mcq", "Which sentence is NOT correct?",
-     "If we had caught the flight, we would are in Rome now.", [
+     "If we would have caught the flight, we would be in Rome now.", [
          "If she had kept the receipt, she could return the coat now.",
          "If I had joined the course, I would know more Spanish now.",
          "If he had taken the job, he would be living in Berlin now."],
-     why=("After *would* use *be*, not *are*: *we would be in Rome now*.",
-          "Pēc *would* lieto *be*, nevis *are*: *we would be in Rome now*."))
+     why=("No *would* in the *if*-part: *If we had caught the flight, we would be in Rome now*.",
+          "Tulkojot burtiski *ja mēs būtu paspējuši*, sanāk *if we would have caught*. Angliski *if* daļā nav *would*: *If we had caught the flight, we would be in Rome now*."))
+replaces("If we had caught the flight, we would are in Rome now.")
 twin(M_GAP, "gap", "Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know)",
      "had / taken / would | could | might / know", why=(
          "*Had taken* changes the past. *Would know* gives a present result; *could/might* express possibility.",
@@ -356,15 +358,13 @@ order(NB2_ORDER, "she had been learning french for years when she moved", [
     "when she had been learning french for years she moved",
     "for years she had been learning french when she moved",
     "when she moved for years she had been learning french"], PAST_DURATION)
-twin(NB2_TEXT, "text", "Correct the sentence. Keep *had*: We had been knowing each other for years before we married.", [
-    "We had known each other for years before we married.",
-    "We'd known each other for years before we married.",
-    "Before we married, we had known each other for years.",
-    "Before we married, we'd known each other for years.",
-    "For years before we married, we had known each other.",
-    "For years before we married, we'd known each other."],
-    why=("*Know* describes a state, so use *had known*, not *had been knowing*.",
-         "*Know* izsaka stāvokli, tāpēc lieto *had known*, nevis *had been knowing*."))
+# tester's report, 21 November: the point card shows *We'd known each other for years*, so this task uses another state verb
+twin(NB2_TEXT, "text", "Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it.", [
+    "The house had belonged to my grandparents for decades before we bought it.",
+    "Before we bought it, the house had belonged to my grandparents for decades."],
+    why=("*Belong* describes a state, so use *had belonged*, not *had been belonging*.",
+         "*Belong* izsaka stāvokli, tāpēc lieto *had belonged*, nevis *had been belonging*."))
+replaces("Correct the sentence. Keep *had*: We had been knowing each other for years before we married.")
 
 # The final one-task gaps: narrative B1.1 and comparison B1.2.
 N1_ORDER = original("compare-past-1.csv", "it was raining when we left the house")

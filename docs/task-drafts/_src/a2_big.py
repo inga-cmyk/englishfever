@@ -225,7 +225,10 @@ P.mcq("A2.2","Choose the correct form: These shoes ___ in a small factory.","wer
 P.mcq("A2.2","Read about the news: which sentence is passive?","The shop was robbed last night.",["Someone robbed the shop last night.","The robbers took the money.","We went to the shop last night."],b=2)
 P.mcq("A2.2","On the news: which sentence is NOT correct?","The bridge was destroy in the storm.",["The bridge was destroyed in the storm.","Two roads were closed.","The town was flooded."],"After *was* we need the 3. form: *destroyed*.",b=4)
 P.mcq("A2.2","Choose the correct question: Where ___ this photo ___ ?","was / taken",["did / taken","is / take","were / took"],b=3)
-P.match("A2.2","Match each famous thing with who made it.",[("Hamlet","was written by Shakespeare."),("The Mona Lisa","was painted by Leonardo."),("The telephone","was invented by Bell."),("Harry Potter","was written by Rowling.")],("Past passive: *was* + 3. form + *by* + the maker.","Ciešamā kārta pagātnē: *was* + 3. forma + *by* + autors."),b=2)
+# tester's report, 21 November (c-0182): "Match each famous thing with who made it" needed knowledge of literature, and the two
+# *was written by* pairs could be swapped. Now the grammar decides: *was* / *were* and the subject give the pronoun of the short answer.
+P.match("A2.2","Match each question with its answer.",[("Was the bridge built in 1890?","Yes, it was."),("Were the photos taken in Rome?","No, they weren't."),("Was your sister born in Riga?","No, she wasn't."),("Were you invited to the wedding?","Yes, I was.")],("A short answer repeats *was* / *were* with the pronoun of the subject: *the bridge → it*, *the photos → they*, *your sister → she*, *you → I*.","Īsajā atbildē atkārto *was* / *were* ar teikuma priekšmeta vietniekvārdu: *the bridge → it*, *the photos → they*, *your sister → she*, *you → I*."),b=2)
+replaces("Hamlet = was written by Shakespeare. ; The Mona Lisa = was painted by Leonardo. ; The telephone = was invented by Bell. ; Harry Potter = was written by Rowling.")
 P.match("A2.2","Match each beginning with its ending.",[("The window","was broken by a ball."),("The cake","was baked by my mother."),("The film","was directed by a famous director."),("The bike","was stolen by a thief.")],b=2)
 P.order("A2.2","the doors were locked at nine")
 P.order("A2.2","this house was built in 1920")

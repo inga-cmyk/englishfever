@@ -795,6 +795,88 @@ def revise(original):
     report_fix('rv-C12-3a', q="Peter: 'I don't feel very well.'\nSarah: 'You should see a doctor.'\nFinish the sentence: Sarah advised …", answers=[['Sarah advised him to go and see a doctor.', 'him to go and see a doctor.', 'Sarah advised him to go to a doctor.', 'him to go to a doctor.', 'Sarah advised him to go to the doctor.', 'him to go to the doctor.', 'Sarah advised Peter to go and see a doctor.', 'Peter to go and see a doctor.', 'Sarah advised Peter to go to a doctor.', 'Peter to go to a doctor.', 'Sarah advised Peter to go to the doctor.', 'Peter to go to the doctor.', 'Sarah advised that Peter should see a doctor.', 'that Peter should see a doctor.', 'Sarah advised that Peter see a doctor.', 'that Peter see a doctor.', 'Sarah advised him to see a doctor.', 'him to see a doctor.', 'Sarah advised Peter to see a doctor.', 'Peter to see a doctor.', 'Sarah advised him that he should see a doctor.', 'him that he should see a doctor.', 'Sarah advised Peter that he should see a doctor.', 'Peter that he should see a doctor.', 'Sarah advised him he should see a doctor.', 'him he should see a doctor.', 'Sarah advised Peter he should see a doctor.', 'Peter he should see a doctor.', 'Sarah advised that he should see a doctor.', 'that he should see a doctor.', 'Sarah advised that he see a doctor.', 'that he see a doctor.', 'Sarah advised seeing a doctor.', 'seeing a doctor.']], answer_notes=[['Sarah advised that Peter should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['that Peter should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised that Peter see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['that Peter see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised him that he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['him that he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised Peter that he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Peter that he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised him he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['him he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised Peter he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Peter he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised that he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['that he should see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised that he see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['that he see a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['Sarah advised seeing a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.'], ['seeing a doctor.', 'Correct too; the most common pattern is *advise* + person + *to*: *advised him to see*.', 'Arī pareizi; visbiežāk saka *advise* + persona + *to*: *advised him to see*.']],
         why='*advise* + person + *to* + base verb: *Sarah advised him to see a doctor.*', why_lv='*advise* + persona + *to* + pamatforma: *Sarah advised him to see a doctor.*')
     report_fix('rv-B22-3a', q="Anna: 'Did you take my phone?'\nMax: 'No, I didn't take your phone.'\nFinish the sentence: Max denied …", answers=[['Max denied it.', 'it.', 'Max denied taking her phone.', 'taking her phone.', 'Max denied having taken her phone.', 'having taken her phone.', 'Max denied that he had taken her phone.', 'that he had taken her phone.', 'Max denied that he took her phone.', 'that he took her phone.', 'Max denied he had taken her phone.', 'he had taken her phone.', 'Max denied he took her phone.', 'he took her phone.', "Max denied taking Anna's phone.", "taking Anna's phone.", "Max denied having taken Anna's phone.", "having taken Anna's phone.", "Max denied that he had taken Anna's phone.", "that he had taken Anna's phone.", "Max denied that he took Anna's phone.", "that he took Anna's phone.", "Max denied he had taken Anna's phone.", "he had taken Anna's phone.", "Max denied he took Anna's phone.", "he took Anna's phone.", 'Max denied taking it.', 'taking it.', 'Max denied having taken it.', 'having taken it.', 'Max denied that he had taken it.', 'that he had taken it.', 'Max denied that he took it.', 'that he took it.', 'Max denied he had taken it.', 'he had taken it.', 'Max denied he took it.', 'he took it.', 'Max denied taking the phone.', 'taking the phone.', 'Max denied having taken the phone.', 'having taken the phone.', 'Max denied that he had taken the phone.', 'that he had taken the phone.', 'Max denied that he took the phone.', 'that he took the phone.', 'Max denied he had taken the phone.', 'he had taken the phone.', 'Max denied he took the phone.', 'he took the phone.']], answer_notes=[['Max denied it.', 'Correct. You can also say what he denied: *Max denied taking her phone.*', 'Pareizi. Var pateikt arī, ko viņš noliedza: *Max denied taking her phone.*'], ['it.', 'Correct. You can also say what he denied: *Max denied taking her phone.*', 'Pareizi. Var pateikt arī, ko viņš noliedza: *Max denied taking her phone.*']])
+    # Tester's report of 21 November (docs/review/fixes-2026-11-21-notes.md): believable wrong options, one context, feedback that names the mistake
+    report_fix('ia-C12-5a', wrong=['How were the funds spent remains to be investigated.',
+                                   'How the funds were spent it remains to be investigated.',
+                                   'How the funds were spent remain to be investigated.'],
+        why='A question clause used as the subject keeps statement word order (*how the funds were spent*), needs no extra *it*, and counts as one thing, so the verb is singular: *remains*.')
+    report_fix('ia-C11-6a', must=[
+        [r"^(?!\s*the\s+questions\s+is\b)", "*Questions is* does not agree: one question, so *The question is*.", "*Questions is* nesaskan: viens jautājums, tāpēc *The question is*."],
+        [r"^\s*the questions?\s+is\b", "Start with *The question is*.", "Sāc ar *The question is*."],   # *questions is* gets only the agreement message above
+        [r"^\s*the questions?\s+(is|are)\s+(whether|how|why|what|who|where|when|which)\b", "After *The question is* put *whether*, *how*, *why* or another question word.", "Aiz *The question is* liec *whether*, *how*, *why* vai citu jautājuma vārdu."],
+        [r"^(?!\s*the questions?\s+(?:is|are)\s+(?:whether|how|why|where|when)\s+(?:do|does|did|can|could|should|will|would|is|are|was|were|have|has|must|shall)\s+(?:i|you|we|they|he|she|it|the|our|my|your|their|his|her|this|that|these|those|people)\b)",
+         "After *how*, *why* or *whether* use statement word order: *how we can…*, not *how can we…*.", "Aiz *how*, *why* vai *whether* lieto stāstījuma vārdu secību: *how we can…*, nevis *how can we…*."]])
+    report_fix('psp-A22-5a', wrong=['Someone is selling tickets right now.', 'We want to say who sells the tickets.', 'The sentence is about the past.'])
+    report_fix('rv-C12-4a', correct='She suggested me to book the tickets early.',
+        wrong=['He recommended trying the fish soup.', 'My doctor advised me to rest for a week.', 'They suggested that we meet at the station.'],
+        why='*suggest* is not followed by a person + *to*: *She suggested (that) I book the tickets early* or *She suggested booking the tickets early*. *advise* can take a person + *to*: *advised me to rest*.',
+        why_lv='Aiz *suggest* nelieto personu + *to*: *She suggested (that) I book the tickets early* vai *She suggested booking the tickets early*. Aiz *advise* var būt persona + *to*: *advised me to rest*.')
+    report_fix('cs-B12-2a', pairs=[["If I had a car, I would drive to work.", "I have no car."],
+                                   ["If I had had a car, I would have driven to work.", "I had no car then."],
+                                   ["If I borrow my dad's car, I get to work in ten minutes.", "This is what usually happens."],
+                                   ["If the trains are on strike tomorrow, I'll borrow my dad's car.", "It is possible in the future."]],
+        why='Every time: *if* + present, present. Possible future: *if* + present, *will*. Unreal now: *if* + past, *would*. Unreal past: *if* + *had* + 3rd form, *would have* + 3rd form.',
+        why_lv='Katru reizi: *if* + tagadne, tagadne. Iespējama nākotne: *if* + tagadne, *will*. Nereāls tagad: *if* + pagātne, *would*. Nereāls pagātnē: *if* + *had* + 3. forma, *would have* + 3. forma.')
+    report_fix('rs-B21-3a', answers=[opt_that('I had to finish by Friday', 'I must finish by Friday', 'I would have to finish by Friday') + ['to finish by Friday']],
+        answer_notes=[['I would have to finish by Friday', 'Correct too: *would have to* looks at the obligation from that moment in the past.',
+                       'Arī pareizi: *would have to* skatās uz pienākumu no šī brīža pagātnē.'],
+                      ['to finish by Friday', 'Correct too: *told me to* + verb reports an order. With *that* the verb steps back: *told me that I had to finish*.',
+                       'Arī pareizi: *told me to* + darbības vārds atstāsta rīkojumu. Ar *that* darbības vārds pāriet pagātnē: *told me that I had to finish*.']])
+    # indirect questions B1 (teacher, 21 November: too easy, the answer given away; gp6_iq_b1-notes.md)
+    # ip-B11-2a (tester: "so easy for B1"): matched by the topic word (toilet = toilet). Now one person, four times: only the form decides.
+    report_fix('ip-B11-2a',
+        q='Match each question with its polite form.',
+        pairs=[["Where does Anna work?", "Do you know where Anna works?"],
+               ["Where did Anna work?", "Do you know where Anna worked?"],
+               ["Where is Anna working?", "Do you know where Anna is working?"],
+               ["Where will Anna work?", "Do you know where Anna will work?"]],
+        why='The question word stays; *do / does / did* go, and the verb itself shows the time: *does … work* → *works*, *did … work* → *worked*.',
+        why_lv='Jautājamais vārds paliek; *do / does / did* pazūd, un laiku rāda pats darbības vārds: *does … work* → *works*, *did … work* → *worked*.')
+    # ip-B11-4a: the correct twin of the wrong sentence was an option (Do you know what time the film starts?): three different correct sentences
+    report_fix('ip-B11-4a',
+        wrong=["Can you tell me if this seat is free?", "Could you tell me where she lives?", "I wonder how much it costs."])
+    # ip-B11-5a (tester: "the wrong sentences are not good samples"): a politeness choice solved without the grammar. Now the form decides.
+    report_fix('ip-B11-5a',
+        q='Choose the correct option: Do you know how long ___ to get to the airport by taxi?',
+        correct='it takes', wrong=['does it take', 'it take', 'takes it'], wrong_why={}, wrong_why_lv={},
+        why='No *does* in an indirect question, so the verb itself takes *-s*: *how long it takes*.',
+        why_lv='Netiešajā jautājumā nav *does*, tāpēc *-s* ir pašam darbības vārdam: *how long it takes*.')
+    # ip-B11-6a (tester: "the instruction gives the form away": "Ask … where the meeting room is"): a situation, no question words given
+    report_fix('ip-B11-6a',
+        q="You have just joined a gym and want to swim, but you can't find the swimming pool. Ask the person at the desk politely. Start with *Could you tell me* or *Do you know*.",
+        must=[[r"\b(could|can|would) you (please )?tell me\b|\bdo you (happen to )?know\b",
+               "A polite start: *Could you tell me …?* / *Do you know …?*",
+               "Pieklājīgs sākums: *Could you tell me …?* / *Do you know …?*"],
+              [r"\b(tell me|know)\s+(where|how|which|what|if|whether)\b",
+               "Then a question word: *… where the pool is*.",
+               "Tad jautājamais vārds: *… where the pool is*."],
+              [r"^(?!.*\b(where|how|which \w+|what \w+)\s+(is|are|does|do|can|could|should|will)\s+(the|it|i|we|they|you|this|that|my)\b)",
+               "After *where* the subject comes first: *where the pool is*, *where I can swim*, not *where is the pool*.",
+               "Pēc *where* vispirms ir teikuma priekšmets: *where the pool is*, *where I can swim*, nevis *where is the pool*."]],
+        model='Could you tell me where the swimming pool is?')
+    # ip-B12-2a: the B1.1 choice again (where the station is) at B1.2. Now the past: did goes, the verb shows the past (Murphy 13: Where did you buy it?)
+    report_fix('ip-B12-2a',
+        q='Choose the correct option: Could you tell me where ___ ?',
+        correct='you bought that jacket', wrong=['did you buy that jacket', 'did you bought that jacket', 'you have bought that jacket'],
+        wrong_why={}, wrong_why_lv={},
+        why='*Where did you buy that jacket?* becomes *where you bought that jacket*: no *did*, and the verb itself is in the past.',
+        why_lv='*Where did you buy that jacket?* kļūst par *where you bought that jacket*: bez *did*, un pagātnē ir pats darbības vārds.')
+    # ip-B12-4a (tester: "each sentence should be different not to give away the pair"): the correct twin (I wonder what she wants) is gone
+    report_fix('ip-B12-4a',
+        wrong=["I wonder why she left the party so early.", "Do you know who she is?", "Could you tell me if he's here?"])
+    # ip-B12-6a (tester: "the instruction gives the form away": "Ask … if the café takes cards"): a situation; yes/no or wh, past or future
+    report_fix('ip-B12-6a',
+        q="Last week you emailed your landlord about the broken heater in your flat, but he hasn't answered. Write him one polite question. Start with *Could you tell me* or *I'd like to know*.",
+        must=[[r"\b(could|can|would) you (please )?(tell me|let me know)\b|\bi[\'’]?d like to know\b|\bi would like to know\b|\bdo you (happen to )?know\b|\bi (was )?wonder(ing)?\b",
+               "A polite start: *Could you tell me …?* / *I'd like to know …*",
+               "Pieklājīgs sākums: *Could you tell me …?* / *I'd like to know …*"],
+              [r"\b(tell me|let me know|know|wonder|wondering)\s+(if|whether|when|what|why|how|who)\b",
+               "Then *if* or a question word: *… if you got my email*, *… when someone can repair the heater*.",
+               "Tad *if* vai jautājamais vārds: *… if you got my email*, *… when someone can repair the heater*."],
+              [r"^(?!.*\b(if|whether|when|why|how(?:\s+(?:long|soon|much))?|what(?:\s+time)?)\s+(did|does|do|has|have|is|are|was|were|will|can|could)\s+(you|he|she|it|they|the|my|someone|somebody|anyone|anybody|we|i)\b)",
+               "After *if* or the question word the subject comes first, with no *did*: *if you got my email*, *when the heater will be repaired*.",
+               "Pēc *if* vai jautājamā vārda vispirms ir teikuma priekšmets, bez *did*: *if you got my email*, *when the heater will be repaired*."]],
+        model='Could you tell me if you got my email about the heater?')
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

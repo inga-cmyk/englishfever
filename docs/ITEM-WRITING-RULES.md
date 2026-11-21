@@ -155,3 +155,12 @@
 - A word in brackets is a word the learner must put into the right form. If that form happens to be the word itself (*If you ___ water (heat)* → *heat*; *Shall we ___ a taxi? (take)* → *take*), the task stays: the learner still has to choose the form.
 - A word that never changes (*will, can, must, shall*…) is never given in brackets: it is the answer. Make it a word bank (*Hurry up! If you miss the bus, you ___ ___ late.* → *will · be*; typed with *(miss / be)* the readers also took *missed / would be*, and each gap is checked alone) in which the missing words go in order (*What ___ ___ ___ if you miss the last bus tonight?* → *will · you · do*, with *would, did* as wrong cards).
 - Choice cues in brackets (*(a / an)*, *(a few / a little)*) are a different thing and may stay.
+
+## The tester's report of 21 November: too easy, given away, mistakes nobody makes
+- **The instruction never holds the answer.** A situation or a direct question, never the content already in the target order (*Ask … where the meeting room is* gave *where the meeting room is* away). Gate `copy` (a typed answer that can be copied from the instruction; *Start with / Say it another way / Rewrite / Correct* are exempt, there the start or the change is the task).
+- **Which sentence has a mistake?** The mistake is one learners at that level really make (*She suggested me to book*, *If we would have caught the flight*), never a form nobody writes (*will to meet*, *would are*, *recommended to reading*); the three right sentences are about three different things, and none is a near-copy of the wrong one. Gate `mistake` (the old tasks are its baseline: to be fixed in rounds).
+- **Wrong options are believable misunderstandings**, also in meaning questions (*Someone is selling tickets right now*, not *The tickets are very old*). A distractor that tests another point (an article scramble in a word-order task) is not one.
+- **Matching never needs world knowledge** (who wrote *Hamlet*); the form decides.
+- **A help card example is never a task's answer.** Before a task goes in, compare its answers with the card of its point.
+- **Indirect questions B1 (teacher, 21 November):** the learner must change something (drop *do / does / did*, put the past on the verb, add *if*), not swap two given words; situations instead of quoted questions in writing tasks; varied frames and adult settings.
+- **Blind readers also ask:** *Would a learner at this level really make this mistake?* and *Is any part of the answer already in the instruction?*

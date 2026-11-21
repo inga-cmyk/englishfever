@@ -1,0 +1,15 @@
+{
+ "twins-1.csv": [
+  {
+   "id": "tester-shop-close-21nov",
+   "match": [
+    "text",
+    "Ask politely, starting with *Do you know*: When does the shop close?",
+    "Do you know when the shop closes?"
+   ],
+   "set": {
+    "4": "Do you know when the shop closes? | Do you know when the shop closes today? | Do you know what time the shop closes? | Do you know what time the shop closes today? | Do you happen to know when the shop closes? | Do you happen to know when the shop closes today? | Do you happen to know what time the shop closes? | Do you happen to know what time the shop closes today?"
+   }
+  }
+ ]
+}

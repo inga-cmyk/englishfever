@@ -141,8 +141,46 @@ def g_blind(i):   # 14 November (docs/BLIND-CHECK.md): two readers solved the ta
     return [] if h in BLIND or h in BLIND_DEBT else ["no blind check: python3 tools/blind_check.py (docs/BLIND-CHECK.md)"]
 
 
+def _words(s):
+    return re.sub(r"[^a-z0-9' ]", " ", str(s).lower().replace("\u2019", "'")).split()
+
+
+def g_copy(i):      # 21 November (tester: "the instruction gives the form away"): a typed sentence that is already in the instruction
+    if i["kind"] not in ("text", "write"): return []
+    if re.match(r"(Start with|Say it another way|Rewrite|Correct)", i["q"]): return []   # there the start or the change is the task
+    cands = []
+    for a in (i.get("answers") or [])[:1]: cands += a[:1] if isinstance(a, list) else [a]
+    if i.get("model"): cands.append(i["model"])
+    q = " ".join(_words(re.sub(r"\*[^*]+\*", " ", i["q"])))   # the words given in italics are the start, not the answer
+    starts = [_words(s) for s in re.findall(r"\*([^*]+)\*", i["q"])]
+    for c in cands:
+        w = _words(c)
+        for s in starts:
+            if s and w[:len(s)] == s: w = w[len(s):]; break
+        if len(w) >= 3 and " " + " ".join(w) + " " in " " + q + " ":
+            return ["the answer can be copied from the instruction: " + " ".join(w)]
+    return []
+
+
+MISTAKE_Q = r"NOT correct|has a mistake"
+OBVIOUS = (r"\b(will|would|can|could|should|must|might|may|shall) to \w+|\b(will|would|can|could|should|must|might|may) (are|is|am|was|were)\b|"
+           r"\b(recommended|suggested|enjoyed?|finished|avoided?|decided|wanted|promised|hoped) to \w+ing\b")
+
+
+def g_mistake(i):   # 15 and 21 November: in "Which sentence has a mistake?" no near-copy of the wrong sentence among the right ones, and no mistake nobody makes
+    if i["kind"] != "mcq" or not re.search(MISTAKE_Q, i["q"]): return []
+    out = []; c = _words(i.get("correct", ""))
+    for o in i.get("wrong", []):
+        w = _words(o)
+        if abs(len(w) - len(c)) <= 2 and len(set(w) ^ set(c)) <= 3:
+            out.append("a right sentence is a near-copy of the wrong one (gives the pair away): " + o); break
+    m = re.search(OBVIOUS, i.get("correct", ""), re.I)
+    if m: out.append("the mistake is one learners do not make (too obvious): " + m.group(0))
+    return out
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind, "copy": g_copy, "mistake": g_mistake}
 
 
 def key(i):

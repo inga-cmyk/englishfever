@@ -3,7 +3,7 @@ Every scene gives four tasks with slightly different sentences: typed (the start
 a word bank with the subject and a helping verb (I · lived · did · live), a choice of word orders (I lived / did I live …) and the
 whole sentence in order. The old tasks where only one verb is put in are learning tasks now (rq_learning in _src/draft_fixes).
 Reported questions follow the taught rule: one step back in time (teacher, 11 November). Indirect questions keep the tense."""
-from lib import rows, save, gp, od, mc, tx
+from lib import rows, save, gp, od, mc, tx, learning_task
 
 RQ = "Reported questions and requests"
 IQ = "Indirect questions (Could you tell me where...)"
@@ -70,31 +70,33 @@ mc(RQ, L, 2, "'Why are you tired?'\nChoose the correct option: He asked me why _
 order(RQ, L, "Why is the shop closed?", "he asked why the shop was closed", R_EN)
 
 # ---- indirect questions (B1.1, B1.2): the tense stays ----
+# 21 November (teacher: too easy, the answer is given away; gp6_iq_b1-notes.md): the direct question is quoted and the frame is given,
+# so only two words change places. Practice only now; the word order about 'Is there a café' stays a check. New checks: gp6_iq_b1.py.
 L = "B1.1"
-typed(IQ, L, "Where does Anna live?", "Do you know where", ["Anna lives"], I_EN)
-gp(IQ, L, 3, "'Where does Tom work?'\nDo you know where ___ ___ ?", "Tom / works", *I_EN, bank=["Tom", "works", "does", "work"])
-mc(IQ, L, 2, "'Where does your teacher live?'\nChoose the correct option: Do you know where ___?", "your teacher lives", ["does your teacher live", "your teacher does live", "lives your teacher"], *I_EN)
-order(IQ, L, "Where does Mark work?", "do you know where mark works", I_EN, question=True)
+typed(IQ, L, "Where does Anna live?", "Do you know where", ["Anna lives"], I_EN); learning_task()
+gp(IQ, L, 3, "'Where does Tom work?'\nDo you know where ___ ___ ?", "Tom / works", *I_EN, bank=["Tom", "works", "does", "work"]); learning_task()
+mc(IQ, L, 2, "'Where does your teacher live?'\nChoose the correct option: Do you know where ___?", "your teacher lives", ["does your teacher live", "your teacher does live", "lives your teacher"], *I_EN); learning_task()
+order(IQ, L, "Where does Mark work?", "do you know where mark works", I_EN, question=True); learning_task()
 
-typed(IQ, L, "What time does the bus leave?", "Could you tell me what time", ["the bus leaves"], I_EN)
-gp(IQ, L, 3, "'What time does the museum open?'\nCould you tell me what time ___ ___ ?", "the museum / opens", *I_EN, bank=["the museum", "opens", "does", "open"])
-mc(IQ, L, 2, "'What time does the concert start?'\nChoose the correct option: Do you know what time ___?", "the concert starts", ["does the concert start", "the concert does start", "starts the concert"], *I_EN)
-order(IQ, L, "What time does the bank close?", "could you tell me what time the bank closes", I_EN, question=True)
+typed(IQ, L, "What time does the bus leave?", "Could you tell me what time", ["the bus leaves"], I_EN); learning_task()
+gp(IQ, L, 3, "'What time does the museum open?'\nCould you tell me what time ___ ___ ?", "the museum / opens", *I_EN, bank=["the museum", "opens", "does", "open"]); learning_task()
+mc(IQ, L, 2, "'What time does the concert start?'\nChoose the correct option: Do you know what time ___?", "the concert starts", ["does the concert start", "the concert does start", "starts the concert"], *I_EN); learning_task()
+order(IQ, L, "What time does the bank close?", "could you tell me what time the bank closes", I_EN, question=True); learning_task()
 
 L = "B1.2"
-typed(IQ, L, "How much is this jacket?", "Could you tell me how much", ["this jacket is", "this jacket costs", "it is", "it costs"], I_EN)
-gp(IQ, L, 3, "'How much does this lamp cost?'\nI'd like to know how much ___ ___ .", "this lamp / costs", *I_EN, bank=["this lamp", "costs", "does", "cost"])
-mc(IQ, L, 2, "'How much is the ticket?'\nChoose the correct option: Can you tell me how much ___?", "the ticket is", ["is the ticket", "does the ticket cost"], *I_EN)
-order(IQ, L, "How much are the tickets?", "do you know how much the tickets are", I_EN, question=True)
+typed(IQ, L, "How much is this jacket?", "Could you tell me how much", ["this jacket is", "this jacket costs", "it is", "it costs"], I_EN); learning_task()
+gp(IQ, L, 3, "'How much does this lamp cost?'\nI'd like to know how much ___ ___ .", "this lamp / costs", *I_EN, bank=["this lamp", "costs", "does", "cost"]); learning_task()
+mc(IQ, L, 2, "'How much is the ticket?'\nChoose the correct option: Can you tell me how much ___?", "the ticket is", ["is the ticket", "does the ticket cost"], *I_EN); learning_task()
+order(IQ, L, "How much are the tickets?", "do you know how much the tickets are", I_EN, question=True); learning_task()
 
-typed(IQ, L, "Is there a pharmacy near here?", "Can you tell me if", ["there is a pharmacy near here", "there's a pharmacy near here"], I_YN)
-gp(IQ, L, 3, "'Is there a bank near here?'\nDo you know if ___ ___ a bank near here?", "there / is", *I_YN, bank=["there", "is", "are"])
-mc(IQ, L, 2, "'Is there a lift in this building?'\nChoose the correct option: Do you know if ___ a lift in this building?", "there is", ["is there", "there are"], *I_YN)
+typed(IQ, L, "Is there a pharmacy near here?", "Can you tell me if", ["there is a pharmacy near here", "there's a pharmacy near here"], I_YN); learning_task()
+gp(IQ, L, 3, "'Is there a bank near here?'\nDo you know if ___ ___ a bank near here?", "there / is", *I_YN, bank=["there", "is", "are"]); learning_task()
+mc(IQ, L, 2, "'Is there a lift in this building?'\nChoose the correct option: Do you know if ___ a lift in this building?", "there is", ["is there", "there are"], *I_YN); learning_task()
 order(IQ, L, "Is there a café near the station?", "do you know if there is a café near the station", I_YN, question=True)
 
-typed(IQ, L, "Where is the post office?", "Do you know where", ["the post office is"], I_EN)
-gp(IQ, L, 3, "'Where is the toilet?'\nCould you tell me where ___ ___ ?", "the toilet / is", *I_EN, bank=["the toilet", "is", "does"])
-mc(IQ, L, 2, "'Where is the library?'\nChoose the correct option: Can you tell me where ___?", "the library is", ["is the library", "is there the library"], *I_EN)
-order(IQ, L, "Where is the car park?", "do you know where the car park is", I_EN, question=True)
+typed(IQ, L, "Where is the post office?", "Do you know where", ["the post office is"], I_EN); learning_task()
+gp(IQ, L, 3, "'Where is the toilet?'\nCould you tell me where ___ ___ ?", "the toilet / is", *I_EN, bank=["the toilet", "is", "does"]); learning_task()
+mc(IQ, L, 2, "'Where is the library?'\nChoose the correct option: Can you tell me where ___?", "the library is", ["is the library", "is there the library"], *I_EN); learning_task()
+order(IQ, L, "Where is the car park?", "do you know where the car park is", I_EN, question=True); learning_task()
 
 save("rq-order-1.csv")

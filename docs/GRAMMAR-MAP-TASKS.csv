@@ -3350,11 +3350,11 @@ iq_wh,B1.2,ind_polite,B2.1,learn,order,rule,,learn-drag-4.csv:33,ind_polite | B2
 iq_wh,B1.2,ind_polite,B2.1,learn,gap,read,,learn-drag-4.csv:34,ind_polite | B2.1 | gap | I'd like to know where you ___ last night. | 
 iq_wh,B1.2,ind_polite,B2.1,learn,order,rule,,learn-drag-4.csv:35,ind_polite | B2.1 | order | Put the words in order. | do you know when the shop closes
 iq_wh,B1.2,ind_polite,B2.1,learn,order,rule,,learn-drag-4.csv:36,ind_polite | B2.1 | order | Put the words in order. | do you know what time it opens
-iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:68,ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me where the nearest pharmacy is?
-iq_wh,B1.2,ind_polite,B2.1,use,text,read,,twins-1.csv:69,"ind_polite | B2.1 | text | Ask politely, starting with *Could you tell me*: Why is the flight delayed? | "
-iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:70,ind_polite | B2.1 | mcq | Which sentence is NOT correct? | Do you know what time does it open?
-iq_wh,B1.2,ind_polite,B2.1,check,mcq,read,,twins-1.csv:71,ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me where the meeting room is.
-iq_wh,B1.2,ind_polite,B2.1,use,text,read,,twins-1.csv:72,"ind_polite | B2.1 | text | Ask politely, starting with *Do you know*: When does the shop close? | "
+iq_wh,B1.2,ind_polite,B2.1,learn,mcq,read,,twins-1.csv:68,ind_polite | B2.1 | mcq | Which sentence is correct and polite? | Would you mind telling me where the nearest pharmacy is?
+iq_wh,B1.2,ind_polite,B2.1,learn,text,read,,twins-1.csv:69,"ind_polite | B2.1 | text | Ask politely, starting with *Could you tell me*: Why is the flight delayed? | "
+iq_wh,B1.2,ind_polite,B2.1,learn,mcq,read,,twins-1.csv:70,ind_polite | B2.1 | mcq | Which sentence is NOT correct? | Do you know what time does it open?
+iq_wh,B1.2,ind_polite,B2.1,learn,mcq,read,,twins-1.csv:71,ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me where the meeting room is.
+iq_wh,B1.2,ind_polite,B2.1,learn,text,read,,twins-1.csv:72,"ind_polite | B2.1 | text | Ask politely, starting with *Do you know*: When does the shop close? | "
 iq_wh,B1.2,ind_polite,B2.1,learn,gap,read,,typical-b2c1-1.csv:11,ind_polite | B2.1 | gap | Could you tell me what time the museum ___? (open) | 
 iq_wh,B1.2,ind_advanced,B2.2,use,write,read,ia-B22-6a,built-in,"ind_advanced | B2.2 | write | Write a sentence with 'I have no idea' and a question word (how, what, where, when, who or why). | "
 iq_wh,B1.2,ind_advanced,B2.2,check,mcq,read,ia-C11-4a-r2,built-in,ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We talked about how could we improve the results.
@@ -3922,7 +3922,7 @@ caus_get,B2.1,causative,B1.2,use,text,read,,b1-new-4.csv:126,causative | B1.2 | 
 caus_get,B2.1,causative,B1.2,use,text,read,,b1-new-4.csv:127,causative | B1.2 | text | Correct the mistake: He had his wallet steal on the train. | 
 contrast_b2,B2.1,conj_b2,B2.1,check,mcq,read,,conjunctions-1.csv:87,"conj_b2 | B2.1 | mcq | Choose the correct option: ___ my brother loves football, I can't stand it. | Whereas"
 contrast_b2,B2.1,conj_b2,B2.1,check,mcq,read,,conjunctions-1.csv:92,"conj_b2 | B2.1 | mcq | Choose the correct option: She was exhausted, ___ she kept working. | yet"
-contrast_b2,B2.1,conj_b2,B2.1,use,text,read,,conjunctions-1.csv:109,"conj_b2 | B2.1 | text | Start with *Whereas*: My partner likes late nights, but I like early mornings. | "
+contrast_b2,B2.1,conj_b2,B2.1,check,mcq,read,,conjunctions-1.csv:109,"conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas"
 contrast_b2,B2.1,conj_b2,B2.1,learn,match,read,,conjunctions-1.csv:113,"conj_b2 | B2.1 | match | Match each beginning with its ending. | Pack a raincoat = in case it rains. ; The roads were icy. = As a result, there were many accidents. ; Owing to the strike, = there were no trains. ; This brush is = for cleaning bottles."
 contrast_b2,B2.1,conj_b2,B2.2,check,mcq,read,,conjunctions-1.csv:96,"conj_b2 | B2.2 | mcq | Which sentence is correct? | He studied hard; nevertheless, he failed the test."
 contrast_b2,B2.1,conj_b2,B2.2,check,mcq,read,,conjunctions-1.csv:103,"conj_b2 | B2.2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet"

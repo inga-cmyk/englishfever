@@ -1,0 +1,37 @@
+{
+ "r19-001": {
+  "hash": "8cb7b3359394e136",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas",
+  "src": "conjunctions-1.csv:109",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "whereas",
+   "wrong": [
+    "despite",
+    "due to",
+    "instead of"
+   ]
+  },
+  "item": {
+   "id": "c-2367",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning.",
+   "why": "*whereas* + subject + verb puts two different facts side by side; it usually stands in the middle. *despite*, *due to* and *instead of* need a noun or *-ing*, not a whole clause.",
+   "why_lv": "*whereas* + teikuma priekšmets + darbības vārds nostāda blakus divus atšķirīgus faktus; parasti tas ir teikuma vidū. Aiz *despite*, *due to* un *instead of* vajag lietvārdu vai *-ing*, nevis veselu teikumu.",
+   "correct": "whereas",
+   "wrong": [
+    "despite",
+    "due to",
+    "instead of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:109"
+  }
+ }
+}

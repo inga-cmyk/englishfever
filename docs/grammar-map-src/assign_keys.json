@@ -17006,5 +17006,9 @@
 "ind_advanced | B2.2 | mcq | Which sentence has a mistake? | We still haven't decided if to rent a car in Crete.": [
 "iq_whether",
 "read"
+],
+"conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas": [
+"contrast_b2",
+"read"
 ]
 }

@@ -1289,12 +1289,15 @@
    ],
    "line": 109,
    "set": {
-    "3": "Start with *Whereas*: My partner likes late nights, but I like early mornings.",
-    "4": "Whereas my partner likes late nights, I like early mornings.",
-    "6": "*whereas* already joins the two parts, so *but* is not needed.",
-    "7": "*whereas* jau savieno abas daļas, tāpēc *but* nav vajadzīgs.",
-    "9": "Join with *whereas*: I like early mornings. My partner likes late nights."
-   }
+    "2": "mcq",
+    "3": "Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning.",
+    "4": "whereas",
+    "5": "despite | due to | instead of",
+    "6": "*whereas* + subject + verb puts two different facts side by side; it usually stands in the middle. *despite*, *due to* and *instead of* need a noun or *-ing*, not a whole clause.",
+    "7": "*whereas* + teikuma priekšmets + darbības vārds nostāda blakus divus atšķirīgus faktus; parasti tas ir teikuma vidū. Aiz *despite*, *due to* un *instead of* vajag lietvārdu vai *-ing*, nevis veselu teikumu.",
+    "9": "Start with *Whereas*: My partner likes late nights, but I like early mornings."
+   },
+   "note": "teacher, 21 November: whereas belongs in the middle; the Start with Whereas task is replaced"
   }
  ],
  "b1-new-5.csv": [

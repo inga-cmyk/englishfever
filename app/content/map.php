@@ -7781,7 +7781,7 @@ return json_decode(<<<'EF_JSON_END'
 "causative | text | Correct the mistake: He had his wallet steal on the train. | ": "caus_get",
 "conj_b2 | mcq | Choose the correct option: ___ my brother loves football, I can't stand it. | Whereas": "contrast_b2",
 "conj_b2 | mcq | Choose the correct option: She was exhausted, ___ she kept working. | yet": "contrast_b2",
-"conj_b2 | text | Start with *Whereas*: My partner likes late nights, but I like early mornings. | ": "contrast_b2",
+"conj_b2 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas": "contrast_b2",
 "conj_b2 | match | Match each beginning with its ending. | Pack a raincoat = in case it rains. ; The roads were icy. = As a result, there were many accidents. ; Owing to the strike, = there were no trains. ; This brush is = for cleaning bottles.": "contrast_b2",
 "conj_b2 | mcq | Which sentence is correct? | He studied hard; nevertheless, he failed the test.": "contrast_b2",
 "conj_b2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet": "contrast_b2",

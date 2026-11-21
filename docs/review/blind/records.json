@@ -1354,6 +1354,11 @@
 "round": "r13",
 "task": "r13-120"
 },
+"484e595ac5ac4281": {
+"gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas",
+"round": "r19c",
+"task": "r19c-001"
+},
 "488e0a470d8c3184": {
 "gate_key": "verb_patterns | A2.2 | text | Start with *I've decided*: I will go home early. | ",
 "round": "r1c",

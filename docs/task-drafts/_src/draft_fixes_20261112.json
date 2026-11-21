@@ -1292,12 +1292,12 @@
     "2": "mcq",
     "3": "Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning.",
     "4": "whereas",
-    "5": "despite | due to | instead of",
-    "6": "*whereas* + subject + verb puts two different facts side by side; it usually stands in the middle. *despite*, *due to* and *instead of* need a noun or *-ing*, not a whole clause.",
-    "7": "*whereas* + teikuma priekšmets + darbības vārds nostāda blakus divus atšķirīgus faktus; parasti tas ir teikuma vidū. Aiz *despite*, *due to* un *instead of* vajag lietvārdu vai *-ing*, nevis veselu teikumu.",
+    "5": "despite | in spite of | however",
+    "6": "All four words show a contrast, but only *whereas* joins two whole sentences with a comma: *…, whereas I'm at my best early.* *despite* and *in spite of* need a noun or *-ing* (*despite loving late nights*); *however* starts a new sentence or comes after a semicolon (*…late nights; however, I'm…*).",
+    "7": "Visi četri vārdi izsaka pretstatu, bet tikai *whereas* ar komatu savieno divus pilnus teikumus: *…, whereas I'm at my best early.* Aiz *despite* un *in spite of* vajag lietvārdu vai *-ing* (*despite loving late nights*); *however* sāk jaunu teikumu vai stāv aiz semikola (*…late nights; however, I'm…*).",
     "9": "Start with *Whereas*: My partner likes late nights, but I like early mornings."
    },
-   "note": "teacher, 21 November: whereas belongs in the middle; the Start with Whereas task is replaced"
+   "note": "teacher, 21 November: whereas belongs in the middle; the Start with Whereas task is replaced; wrong options that also show a contrast (teacher, 21 November: despite / due to / instead of did not express the same idea)"
   }
  ],
  "b1-new-5.csv": [

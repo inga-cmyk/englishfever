@@ -164,3 +164,4 @@
 - **A help card example is never a task's answer.** Before a task goes in, compare its answers with the card of its point.
 - **Indirect questions B1 (teacher, 21 November):** the learner must change something (drop *do / does / did*, put the past on the verb, add *if*), not swap two given words; situations instead of quoted questions in writing tasks; varied frames and adult settings.
 - **Blind readers also ask:** *Would a learner at this level really make this mistake?* and *Is any part of the answer already in the instruction?*
+- **Wrong options express the same idea (teacher, 21 November):** in a choice about a linking word, the wrong options mean the same kind of thing (contrast: *despite, in spite of, however* next to *whereas*), so only the form decides; options that mean something else (*due to, instead of*) can be rejected without knowing the form. And *whereas* stands in the middle of the sentence: no task forces it to the front.

@@ -2534,6 +2534,11 @@
 "round": "r11",
 "task": "r11-142"
 },
+"921ca4d8865a62bd": {
+"gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas",
+"round": "r19b",
+"task": "r19b-001"
+},
 "92af857b070d0379": {
 "gate_key": "irregular_plurals | A2.1 | mcq | Choose the correct option: We visited three ___ on our trip. | countries",
 "round": "r13",

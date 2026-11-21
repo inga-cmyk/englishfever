@@ -114,6 +114,10 @@ IP.mcq("B2.1", "Which sentence is NOT correct?", "Do you know what time does it 
 IP.mcq("B2.1", "Which is the polite way to ask this: 'Where is the meeting room?'", "I was wondering if you could tell me where the meeting room is.", ["I was wondering if you could tell me where is the meeting room.", "I was wondering if could you tell me where the meeting room is.", "I was wondering you could tell me where the meeting room is."], why=ORD)
 IP.text("B2.1", "Ask politely, starting with *Do you know*: When does the shop close?", "Do you know when the shop closes?", why=ORD)
 
+# The five B2.1 indirect-question twins are B1.1 in difficulty (blind check r17, both readers): practice only (teacher, 21 November)
+for _n, _r in enumerate(rows):
+    if _r[0] == "Indirect questions (Could you tell me where...)" and _r[1] == "B2.1": PRACTICE_IDX.add(_n)
+
 QY = Topic("Quantity")
 QY.mcq("B1.1", "Choose the correct option: I can't concentrate. There are ___ people here.", "too many", ["too much", "enough of"], why=("*too many* + plural nouns; *too much* + uncountable nouns.", "*too many* + daudzskaitlis; *too much* + neskaitāmi lietvārdi."))
 QY.mcq("B1.1", "Choose the correct option: We can't make a cake. There isn't ___ flour.", "enough", ["too many", "enough of"], why=("*enough* + noun, without *of*.", "*enough* + lietvārds, bez *of*."))

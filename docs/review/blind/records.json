@@ -2309,6 +2309,11 @@
 "round": "r9",
 "task": "r9-038"
 },
+"83c33ed66365a270": {
+"gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas",
+"round": "r19d",
+"task": "r19d-001"
+},
 "83d4c9c40d45e284": {
 "gate_key": "ind_polite | B1.2 | gap | 'Is there a bank near here?'\nDo you know if ___ ___ a bank near here? | ",
 "round": "r4",

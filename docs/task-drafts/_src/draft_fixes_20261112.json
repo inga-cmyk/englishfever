@@ -1292,12 +1292,12 @@
     "2": "mcq",
     "3": "Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning.",
     "4": "whereas",
-    "5": "however | nevertheless | despite",
-    "6": "All four words show a contrast, but only *whereas* (or *while*) joins two facts with a comma in the middle: *…, whereas I'm at my best early.* *however* and *nevertheless* start a new sentence or come after a semicolon (*…late nights; however, I'm…*); *despite* needs a noun or *-ing* (*despite loving late nights*).",
-    "7": "Visi četri vārdi izsaka pretstatu, bet tikai *whereas* (vai *while*) ar komatu teikuma vidū savieno divus faktus: *…, whereas I'm at my best early.* *however* un *nevertheless* sāk jaunu teikumu vai stāv aiz semikola (*…late nights; however, I'm…*); aiz *despite* vajag lietvārdu vai *-ing* (*despite loving late nights*).",
+    "5": "however | nevertheless",
+    "6": "All three words show a contrast, but only *whereas* (or *while*) joins two facts with a comma in the middle: *…, whereas I'm at my best early.* *however* and *nevertheless* start a new sentence or come after a semicolon: *…late nights; however, I'm…*",
+    "7": "Visi trīs vārdi izsaka pretstatu, bet tikai *whereas* (vai *while*) ar komatu teikuma vidū savieno divus faktus: *…, whereas I'm at my best early.* *however* un *nevertheless* sāk jaunu teikumu vai stāv aiz semikola: *…late nights; however, I'm…*",
     "9": "Start with *Whereas*: My partner likes late nights, but I like early mornings."
    },
-   "note": "teacher, 21 November: whereas belongs in the middle; the Start with Whereas task is replaced; wrong options that also show a contrast (teacher, 21 November: despite / due to / instead of did not express the same idea); options as taught with whereas on the B2 card: however / nevertheless (teacher, 21 November)"
+   "note": "teacher, 21 November: whereas belongs in the middle; the Start with Whereas task is replaced; wrong options that also show a contrast (teacher, 21 November: despite / due to / instead of did not express the same idea); options as taught with whereas on the B2 card: however / nevertheless (teacher, 21 November); only words of the card (teacher, 21 November): despite removed"
   }
  ],
  "b1-new-5.csv": [

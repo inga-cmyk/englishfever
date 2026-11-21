@@ -361,10 +361,17 @@ order(NB2_ORDER, "she had been learning french for years when she moved", [
 # tester's report, 21 November: the point card shows *We'd known each other for years*, so this task uses another state verb
 twin(NB2_TEXT, "text", "Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it.", [
     "The house had belonged to my grandparents for decades before we bought it.",
-    "Before we bought it, the house had belonged to my grandparents for decades."],
+    "Before we bought it, the house had belonged to my grandparents for decades.",
+    "The house had been owned by my grandparents for decades before we bought it.",
+    "Before we bought it, the house had been owned by my grandparents for decades."],
     why=("*Belong* describes a state, so use *had belonged*, not *had been belonging*.",
          "*Belong* izsaka stāvokli, tāpēc lieto *had belonged*, nevis *had been belonging*."))
 replaces("Correct the sentence. Keep *had*: We had been knowing each other for years before we married.")
+# blind round r17 (judge): the passive of *own* keeps *had* and is correct; its own note
+import lib as _lib
+_lib.NOTES[len(rows) - 1] = " || ".join(a + " :: Correct too: the passive of *own* also keeps *had*. The mistake was *had been belonging*: *belong* is a state verb, so *had belonged*. :: Arī pareizi: arī *own* ciešamajā kārtā saglabā *had*. Kļūda bija *had been belonging*: *belong* izsaka stāvokli, tāpēc *had belonged*." for a in (
+    "The house had been owned by my grandparents for decades before we bought it.",
+    "Before we bought it, the house had been owned by my grandparents for decades."))
 
 # The final one-task gaps: narrative B1.1 and comparison B1.2.
 N1_ORDER = original("compare-past-1.csv", "it was raining when we left the house")

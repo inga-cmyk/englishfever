@@ -59,9 +59,12 @@ gp(T, L, 3, "Do you know where ___ ___ buy a phone charger near here?", "I / can
    bank=["I", "can", "do"])
 
 gp(T, L, 3, "Use the words in brackets: Can you tell me how often ___ on Sundays? (the night bus / run)",
-   "the night bus runs | the night bus is running",
+   "the night bus runs | the night bus is running | the night bus will run",
    "*How often does the night bus run?* becomes *how often the night bus runs*: no *does*, and the verb takes *-s*.",
    "*How often does the night bus run?* kļūst par *how often the night bus runs*: bez *does*, un darbības vārdam ir *-s*.")
+# blind round r17 (judge): *will run* is correct too (a timetable that starts later); its own note
+lib.NOTES[len(rows) - 1] = ("the night bus will run :: Correct too: *will run* asks about the future, for example a new timetable. For a timetable that runs now, use *runs*. "
+                            ":: Arī pareizi: *will run* jautā par nākotni, piemēram, par jaunu sarakstu. Par sarakstu, kas darbojas tagad, saka *runs*.")
 
 gp(T, L, 3, "I can't hear the guide. Do you know what ___ ___ talking about?", "she / is",
    "In an indirect question the subject comes before *is*: *what she is talking about*, not *what is she*.",
@@ -71,7 +74,7 @@ gp(T, L, 3, "I can't hear the guide. Do you know what ___ ___ talking about?", "
 tx(T, L, 4, "You need to print a document at work, but you can't find the printer. Ask a colleague. Start with *Do you know where*.",
    wrap("Do you know where", ["the printer is", "the printers are", "the nearest printer is", "I can find the printer", "I can find a printer",
                               "I can print", "I can print something", "I can print a document", "I can print my document",
-                              "I can print this document", "there is a printer", "the printer is located", "I can find one", "the printer room is"]),
+                              "I can print this document", "I can print this", "there is a printer", "the printer is located", "I can find one", "the printer room is"]),
    "After *Do you know where* the order is like a statement: *where the printer is*, *where I can print*, not *where is the printer*.",
    "Pēc *Do you know where* vārdu secība ir kā apgalvojumā: *where the printer is*, *where I can print*, nevis *where is the printer*.")
 
@@ -102,9 +105,13 @@ tx(T, L, 4, "You are visiting a new city and want to see the old town, but you d
    "Pēc *how* vārdu secība ir kā apgalvojumā: *how I can get to the old town*, *how far the old town is*. Arī *how to get to the old town* ir pareizā atbilde.")
 
 gp(T, L, 3, "Use the words in brackets. Add any missing word: I'd like to know ___ a balcony. We'd love a view of the sea. (our room / have)",
-   "if our room has | whether our room has | if our room has got | whether our room has got",
+   "if our room has | whether our room has | if our room has got | whether our room has got | if our room will have | whether our room will have",
    "A yes/no question inside another sentence: *if* (or *whether*) + subject + verb: *if our room has a balcony*.",
    "Jautājums ar atbildi jā / nē cita teikuma iekšā: *if* (vai *whether*) + teikuma priekšmets + darbības vārds: *if our room has a balcony*.")
+# blind round r17 (judge): *will have* is correct too (the room is not given yet); its own note
+lib.NOTES[len(rows) - 1] = " || ".join(a + " :: Correct too: *will have* asks about the room you will get. About the room as it is, use *has*: *if our room has a balcony*. "
+                                       ":: Arī pareizi: *will have* jautā par istabu, ko jūs saņemsiet. Par istabu, kāda tā ir, saka *has*: *if our room has a balcony*."
+                                       for a in ("if our room will have", "whether our room will have"))
 
 gp(T, L, 3, "Can you tell me ___ ___ ___ English? I need help with the menu.", "if / the waiter / speaks",
    "*Does the waiter speak English?* becomes *if the waiter speaks English*: *if*, no *does*, and *speaks* with *-s*.",
@@ -135,7 +142,7 @@ od(T, L, 3, "Put the words in order.", "i'd like to know where you learned to co
 
 tx(T, L, 4, "Your colleague has a great new laptop bag, and you would like one like it. Ask her about the shop. Start with *Could you tell me where*.",
    wrap("Could you tell me where", [f"you {v} {o}" for v in ("bought", "got") for o in ("it", "it from", "that bag", "that bag from", "your bag", "your bag from", "your new bag", "your laptop bag", "that laptop bag")]
-        + [f"I {m} {v} one" for m in ("can", "could") for v in ("buy", "get")] + ["I can buy one like it", "I can get one like it", "I can buy the same bag", "I can get the same bag"],
+        + [f"I {m} {v} one" for m in ("can", "could") for v in ("buy", "get")] + ["I can buy one like it", "I can get one like it", "I can buy the same bag", "I can get the same bag", "the shop is", "that shop is"],
         excuse=False),
    "*Where did you buy it?* becomes *where you bought it*: no *did*, and the verb in the past. *Where I can buy one* is correct too.",
    "*Where did you buy it?* kļūst par *where you bought it*: bez *did*, un darbības vārds pagātnē. Arī *where I can buy one* ir pareizā atbilde.")
@@ -168,7 +175,8 @@ tx(T, L, 4, "You left your umbrella in the meeting room this morning, and now it
    wrap("Do you know if", [f"{p} {v} {o}" for p in ("anyone", "someone", "somebody", "anybody") for v in ("has found", "found") for o in ("it", "an umbrella", "my umbrella")]
         + [f"{p} {v} {o}" for p in ("anyone", "someone", "somebody", "anybody") for v in ("has seen", "saw", "has taken", "took") for o in ("it", "my umbrella")]
         + [f"{p} {v}" for p in ("anyone", "someone", "somebody", "anybody") for v in ("has handed it in", "handed it in", "has handed in an umbrella", "handed in an umbrella", "has handed in my umbrella", "handed in my umbrella")]
-        + [f"{s} {v}" for s in ("it", "my umbrella", "an umbrella") for v in ("has been found", "was found", "has been handed in", "was handed in")],
+        + [f"{s} {v}" for s in ("it", "my umbrella", "an umbrella") for v in ("has been found", "was found", "has been handed in", "was handed in")]
+        + [f"the {p} {v} {o}" for p, h in (("cleaner", "has"), ("cleaners", "have")) for v in (h + " found", "found", h + " taken", "took") for o in ("it", "my umbrella")],   # blind round r17
         excuse=False, please=False),
    "*Has anyone found it?* / *Did anyone find it?* become *if anyone has found it* / *if anyone found it*: *if* + subject + verb, no *did*.",
    "*Has anyone found it?* / *Did anyone find it?* kļūst par *if anyone has found it* / *if anyone found it*: *if* + teikuma priekšmets + darbības vārds, bez *did*.")
@@ -176,4 +184,4 @@ tx(T, L, 4, "You left your umbrella in the meeting room this morning, and now it
 gp(T, L, 3, "I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email.", "if / we / have / booked",
    "A yes/no question after *I'm not sure*: *if* + subject + verb: *if we have booked*, not *if have we booked*.",
    "Jautājums ar atbildi jā / nē pēc *I'm not sure*: *if* + teikuma priekšmets + darbības vārds: *if we have booked*, nevis *if have we booked*.",
-   bank=["if", "we", "have", "booked", "did", "book"])
+   bank=["if", "we", "have", "booked", "do", "book"])   # blind round r17: *did* also built *if we did book … yet* (emphatic, American); *do* keeps the question mistake (*if do we book*)

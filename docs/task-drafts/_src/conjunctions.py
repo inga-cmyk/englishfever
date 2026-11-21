@@ -168,7 +168,11 @@ T.gap("B2.1", I_1 + "The museum was closed. For this ___, we went to the park.",
 T.gap("B2.1", I_1 + "The meeting was cancelled due ___ the strike.", "to", D_OW)
 T.gap("B2.2", I_1 + "The concert was cancelled on account ___ low ticket sales.", "of", D_OW)
 T.gap("B2.1", I_1 + "She spoke quietly so as ___ to wake the baby.", "not", C_NOT)
-T.gap("B2.2", I_1 + "It was a difficult task, and ___ they finished it on time.", "yet | still", D_YET)
+# blind round r17 (judge): the open gap also took somehow, luckily, finally, eventually...: a choice in which only *yet* fits
+T.mcq("B2.2", "Choose the correct option: It was a difficult task, and ___ they finished it on time.", "yet", ["although", "despite", "in spite of"],
+      ex("*and yet* = but, in spite of this: *and yet they finished it on time*. *although* starts a part that needs another main clause; *despite* and *in spite of* go before a noun or an *-ing* form, not before *they finished*.",
+         "*and yet* = bet tomēr: *and yet they finished it on time*. Teikums ar *although* nav pabeigts bez vēl vienas daļas; *despite* un *in spite of* lieto pirms lietvārda vai *-ing* formas, nevis pirms *they finished*."))
+replaces(I_1 + "It was a difficult task, and ___ they finished it on time.")
 T.gap("B2.1", I_1 + "I'll take some cash in ___ the card machine isn't working.", "case", D_CASE)
 T.text("B2.1", "Correct the mistake: Take an umbrella in case it will rain.", "Take an umbrella in case it rains.", D_CASE)
 T.text("B2.1", "Correct the mistake: This tool is for cut metal.", ["This tool is for cutting metal.", "This tool is used for cutting metal."], D_FOR)

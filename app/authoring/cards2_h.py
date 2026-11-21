@@ -176,8 +176,12 @@ CARDS = {
         [{"t": "Kad nezinām vai neesam pārliecināti", "s": ["no idea", "not sure", "it depends on", "the question is"],
           "ex": ["I have [[no idea how long]] the meeting [[will take]]."]},
          {"t": "Formāls teksts", "ex": ["[[How the funds were spent]] remains to be investigated."]}],
-        ["After a preposition use *whether*, not *if*: *It depends on [[whether]] the budget is approved.*"],
-        ["Aiz prievārda lieto *whether*, nevis *if*: *It depends on [[whether]] the budget is approved.*"]),
+        ["After a preposition use *whether*, not *if*: *It depends on [[whether]] the budget is approved.*",
+         "*if* can be a condition (only in that case); *whether* means yes or no, in either case: *Call me [[if]] you need a lift.* = only if you need one; *Tell me [[whether]] you need a lift.* = tell me either way.",
+         "A question mark only when the whole sentence asks: *I have no idea whether it's open[[.]]* but *Do you know whether it's open[[?]]*"],
+        ["Aiz prievārda lieto *whether*, nevis *if*: *It depends on [[whether]] the budget is approved.*",
+         "*if* var būt nosacījums (\"ja\", tikai tad); *whether* nozīmē \"vai\", atbildi gaida jebkurā gadījumā: *Call me [[if]] you need a lift.* = zvani tikai tad, ja vajag; *Tell me [[whether]] you need a lift.* = pasaki jebkurā gadījumā.",
+         "Jautājuma zīme ir tikai tad, ja viss teikums jautā: *I have no idea whether it's open[[.]]*, bet *Do you know whether it's open[[?]]*"]),
 
     "passive_modals": card(
         {"stack": "rows", "cols": FE, "rows": [

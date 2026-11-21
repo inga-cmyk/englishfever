@@ -7890,16 +7890,16 @@
 "level": "B1.2",
 "bloom": 2,
 "kind": "mcq",
-"q": "Choose the correct option: Could you tell me where ___ ?",
-"correct": "you bought that jacket",
+"q": "Choose the correct option: Could you tell me when ___ ?",
+"correct": "you bought this laptop",
 "wrong": [
-"did you buy that jacket",
-"did you bought that jacket",
-"you have bought that jacket"
+"did you buy this laptop",
+"did you bought this laptop",
+"you have bought this laptop"
 ],
-"why": "*Where did you buy that jacket?* becomes *where you bought that jacket*: no *did*, and the verb itself is in the past.",
+"why": "*When did you buy this laptop?* becomes *when you bought this laptop*: no *did*, and the verb itself is in the past. With *when* (a finished time) we do not use the present perfect.",
 "wrong_why": {},
-"why_lv": "*Where did you buy that jacket?* kļūst par *where you bought that jacket*: bez *did*, un pagātnē ir pats darbības vārds.",
+"why_lv": "*When did you buy this laptop?* kļūst par *when you bought this laptop*: bez *did*, un pagātnē ir pats darbības vārds. Ar *when* (pabeigts laiks) Present Perfect nelieto.",
 "wrong_why_lv": {}
 },
 {
@@ -8336,7 +8336,7 @@
 "level": "B2.2",
 "bloom": 6,
 "kind": "write",
-"q": "Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
+"q": "Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
 "must": [
 [
 "^(?!\\s*the\\s+questions\\s+is\\b)",

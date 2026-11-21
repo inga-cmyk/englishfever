@@ -1,0 +1,37 @@
+{
+ "r18b-001": {
+  "hash": "0ec2f34ef7661054",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence has a mistake? | We still haven't decided if to rent a car in Crete.",
+  "src": "iq-b1-6.csv:32",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "We still haven't decided if to rent a car in Crete.",
+   "wrong": [
+    "Everything now depends on whether the bank approves our loan.",
+    "If the train is delayed, I'll take a taxi.",
+    "Could you check whether the hotel has a lift?"
+   ]
+  },
+  "item": {
+   "id": "c-3003",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "Before *to* + verb only *whether* is possible: *We still haven't decided whether to rent a car*. *If* needs a subject and a verb: *if we should rent a car*.",
+   "why_lv": "Pirms to + darbības vārds var būt *tikai whether*: *We still haven't decided whether to rent a car.* Aiz *if* vajag teikuma priekšmetu un darbības vārdu: *if we should rent a car*.",
+   "correct": "We still haven't decided if to rent a car in Crete.",
+   "wrong": [
+    "Everything now depends on whether the bank approves our loan.",
+    "If the train is delayed, I'll take a taxi.",
+    "Could you check whether the hotel has a lift?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:32"
+  }
+ }
+}

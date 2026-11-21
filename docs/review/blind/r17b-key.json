@@ -1,0 +1,192 @@
+{
+ "r17b-001": {
+  "hash": "9e088d6652b117e0",
+  "gate_key": "ind_polite | B1.2 | mcq | Choose the correct option: Could you tell me when ___ ? The guarantee may still be valid. | you bought this laptop",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "you bought this laptop",
+   "wrong": [
+    "did you buy this laptop",
+    "did you bought this laptop",
+    "you have bought this laptop"
+   ]
+  },
+  "item": {
+   "id": "ip-B12-2a-r4",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Could you tell me when ___ ? The guarantee may still be valid.",
+   "correct": "you bought this laptop",
+   "wrong": [
+    "did you buy this laptop",
+    "did you bought this laptop",
+    "you have bought this laptop"
+   ],
+   "why": "*When did you buy this laptop?* becomes *when you bought this laptop*: no *did*, and the verb itself is in the past. With *when* (a finished time) we do not use the present perfect.",
+   "wrong_why": [],
+   "why_lv": "*When did you buy this laptop?* kļūst par *when you bought this laptop*: bez *did*, un pagātnē ir pats darbības vārds. Ar *when* (pabeigts laiks) Present Perfect nelieto.",
+   "wrong_why_lv": [],
+   "d": 4.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r17b-002": {
+  "hash": "761c032a541ee1a2",
+  "gate_key": "ind_advanced | B2.2 | write | Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*. | ",
+  "src": "built-in",
+  "point": "iq_whether",
+  "key": {
+   "kind": "write",
+   "model": "The question is whether we can afford the delay.",
+   "must": [
+    "*Questions is* does not agree: one question, so *The question is*.",
+    "Start with *The question is*.",
+    "After *The question is* put *whether*, *how*, *why* or another question word.",
+    "After *how*, *why* or *whether* use statement word order: *how we can…*, not *how can we…*."
+   ]
+  },
+  "item": {
+   "id": "ia-C11-6a-r4",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
+   "must": [
+    [
+     "^(?!\\s*the\\s+questions\\s+is\\b)",
+     "*Questions is* does not agree: one question, so *The question is*.",
+     "*Questions is* nesaskan: viens jautājums, tāpēc *The question is*."
+    ],
+    [
+     "^\\s*the questions?\\s+is\\b",
+     "Start with *The question is*.",
+     "Sāc ar *The question is*."
+    ],
+    [
+     "^\\s*the questions?\\s+(is|are)\\s+(whether|how|why|what|who|where|when|which)\\b",
+     "After *The question is* put *whether*, *how*, *why* or another question word.",
+     "Aiz *The question is* liec *whether*, *how*, *why* vai citu jautājuma vārdu."
+    ],
+    [
+     "^(?!\\s*the questions?\\s+(?:is|are)\\s+(?:whether|how|why|where|when)\\s+(?:do|does|did|can|could|should|will|would|is|are|was|were|have|has|must|shall)\\s+(?:i|you|we|they|he|she|it|the|our|my|your|their|his|her|this|that|these|those|people)\\b)",
+     "After *how*, *why* or *whether* use statement word order: *how we can…*, not *how can we…*.",
+     "Aiz *how*, *why* vai *whether* lieto stāstījuma vārdu secību: *how we can…*, nevis *how can we…*."
+    ]
+   ],
+   "model": "The question is whether we can afford the delay.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "iq_whether",
+   "src": "built-in"
+  }
+ },
+ "r17b-003": {
+  "hash": "03ef9ab5df0d1711",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet",
+  "src": "conjunctions-1.csv:103",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "yet",
+   "wrong": [
+    "although",
+    "despite",
+    "in spite of"
+   ]
+  },
+  "item": {
+   "id": "c-2361",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: It was a difficult task, and ___ they finished it on time.",
+   "why": "*and yet* = but, in spite of this: *and yet they finished it on time*. *although* starts a part that needs another main clause; *despite* and *in spite of* go before a noun or an *-ing* form, not before *they finished*.",
+   "why_lv": "*and yet* = bet tomēr: *and yet they finished it on time*. Teikums ar *although* nav pabeigts bez vēl vienas daļas; *despite* un *in spite of* lieto pirms lietvārda vai *-ing* formas, nevis pirms *they finished*.",
+   "correct": "yet",
+   "wrong": [
+    "although",
+    "despite",
+    "in spite of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:103"
+  }
+ },
+ "r17b-004": {
+  "hash": "4b1a555ead1df4d7",
+  "gate_key": "ind_polite | B1.2 | gap | I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email. | ",
+  "src": "iq-b1-6.csv:25",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if"
+    ],
+    [
+     "we"
+    ],
+    [
+     "have"
+    ],
+    [
+     "booked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2996",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email.",
+   "why": "A yes/no question after *I'm not sure*: *if* + subject + verb: *if we have booked*, not *if have we booked*.",
+   "why_lv": "Jautājums ar atbildi jā / nē pēc *I'm not sure*: *if* + teikuma priekšmets + darbības vārds: *if we have booked*, nevis *if have we booked*.",
+   "answers": [
+    [
+     "if"
+    ],
+    [
+     "we"
+    ],
+    [
+     "have"
+    ],
+    [
+     "booked"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "if",
+    "we",
+    "have",
+    "booked",
+    "do",
+    "book"
+   ],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "iq-b1-6.csv:25"
+  }
+ }
+}

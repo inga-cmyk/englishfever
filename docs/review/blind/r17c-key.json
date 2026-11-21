@@ -1,0 +1,44 @@
+{
+ "r17c-001": {
+  "hash": "c372defa333aa314",
+  "gate_key": "ind_polite | B1.2 | mcq | Choose the correct option: Could you tell me when ___ ? | you bought this laptop",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "you bought this laptop",
+   "wrong": [
+    "did you buy this laptop",
+    "did you bought this laptop",
+    "you have bought this laptop"
+   ]
+  },
+  "item": {
+   "id": "ip-B12-2a-r4",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Could you tell me when ___ ?",
+   "correct": "you bought this laptop",
+   "wrong": [
+    "did you buy this laptop",
+    "did you bought this laptop",
+    "you have bought this laptop"
+   ],
+   "why": "*When did you buy this laptop?* becomes *when you bought this laptop*: no *did*, and the verb itself is in the past. With *when* (a finished time) we do not use the present perfect.",
+   "wrong_why": [],
+   "why_lv": "*When did you buy this laptop?* kļūst par *when you bought this laptop*: bez *did*, un pagātnē ir pats darbības vārds. Ar *when* (pabeigts laiks) Present Perfect nelieto.",
+   "wrong_why_lv": [],
+   "d": 4.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ }
+}

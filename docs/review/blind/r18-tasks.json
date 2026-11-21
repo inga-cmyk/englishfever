@@ -1,0 +1,116 @@
+[
+ {
+  "id": "r18-001",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Could you tell me when the last bus leaves?",
+   "I wonder what she bought for her brother.",
+   "Do you know if Tom has finished the report?",
+   "I'd like to know why the meeting was moved?"
+  ]
+ },
+ {
+  "id": "r18-002",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Do you know if the hotel serves breakfast?",
+   "I'm not sure which gate our flight leaves from?",
+   "I have no idea who sent me these flowers.",
+   "Can you remember where we parked the car?"
+  ]
+ },
+ {
+  "id": "r18-003",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I have no idea why my phone keeps switching off?",
+   "Could you tell me how long the course lasts?",
+   "I'm not sure whether I locked the front door.",
+   "Do you know who won the match last night?"
+  ]
+ },
+ {
+  "id": "r18-004",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Could you tell me which room the exam is in?",
+   "I wonder how Anna's job interview went?",
+   "Can you tell me how you made this soup?",
+   "I'm not sure how many people are coming."
+  ]
+ },
+ {
+  "id": "r18-005",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means you give your manager an answer in either case?",
+  "options": [
+   "Tell your manager that you can work on Saturday.",
+   "If you can work on Saturday, tell your manager.",
+   "Tell your manager whether you can work on Saturday.",
+   "If you can't work on Saturday, tell your manager."
+  ]
+ },
+ {
+  "id": "r18-006",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means you call the airline only when there is a problem?",
+  "options": [
+   "Whether or not your bag arrives, call the airline.",
+   "If your bag doesn't arrive, call the airline.",
+   "Call the airline and ask if your bag has arrived.",
+   "Call the airline to ask whether your bag has arrived."
+  ]
+ },
+ {
+  "id": "r18-007",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ the delivery driver rings while I'm in the shower, could you open the door?",
+  "options": [
+   "If",
+   "Whether",
+   "Whether or not"
+  ]
+ },
+ {
+  "id": "r18-008",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Could you check whether the hotel has a lift?",
+   "We haven't decided whether to rent a car in Crete.",
+   "Everything now depends on if the bank approves our loan.",
+   "If the train is delayed, I'll take a taxi."
+  ]
+ },
+ {
+  "id": "r18-009",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight.",
+  "word_cards": [
+   "whether",
+   "unless",
+   "if"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r18-010",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: The caterer needs to know ___ or not you're coming to the wedding.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

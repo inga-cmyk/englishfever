@@ -1,0 +1,1 @@
+# Blind check r18b: 1 task (r18-008 rewritten: *if to* before *to* + verb), two readers. Reader 2: "slightly easy for B2.2". Kept: the level is the one of the point on the grammar map (iq_whether, B2.2; teacher's principle *levels as on the map*). Recorded.

@@ -3300,7 +3300,7 @@ Could you tell me what time ___ ___ ? | "
 iq_wh,B1.2,ind_polite,B1.1,learn,mcq,read,,rq-order-1.csv:36,"ind_polite | B1.1 | mcq | 'What time does the concert start?'
 Choose the correct option: Do you know what time ___? | the concert starts"
 iq_wh,B1.2,ind_polite,B1.1,learn,order,read,,rq-order-1.csv:37,ind_polite | B1.1 | order | Put the words in order to make a question. | could you tell me what time the bank closes
-iq_wh,B1.2,ind_polite,B1.2,check,mcq,rule (new or changed task),ip-B12-2a-r4,built-in,ind_polite | B1.2 | mcq | Choose the correct option: Could you tell me where ___ ? | you bought that jacket
+iq_wh,B1.2,ind_polite,B1.2,check,mcq,rule (new or changed task),ip-B12-2a-r4,built-in,ind_polite | B1.2 | mcq | Choose the correct option: Could you tell me when ___ ? | you bought this laptop
 iq_wh,B1.2,ind_polite,B1.2,learn,text,read,ip-B12-3a-r2,built-in,ind_polite | B1.2 | text | Make it polite: What time does the museum close? | 
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,ip-B12-4a-r2,built-in,ind_polite | B1.2 | mcq | Which sentence is NOT correct? | I wonder what does she want.
 iq_wh,B1.2,ind_polite,B1.2,check,order,rule,ip-B12-3b,built-in,ind_polite | B1.2 | order | Put the words in order. | I wonder what time the meeting starts
@@ -3321,6 +3321,10 @@ iq_wh,B1.2,ind_polite,B1.2,check,gap,read,,iq-b1-6.csv:19,ind_polite | B1.2 | ga
 iq_wh,B1.2,ind_polite,B1.2,use,text,read,,iq-b1-6.csv:20,"ind_polite | B1.2 | text | Correct the mistake: Dear Mr Kalns, could you tell me when did you send the invoice? We still haven't received it. | "
 iq_wh,B1.2,ind_polite,B1.2,check,order,read,,iq-b1-6.csv:21,ind_polite | B1.2 | order | Put the words in order to make a question. | do you know why the meeting was cancelled
 iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,iq-b1-6.csv:23,ind_polite | B1.2 | mcq | Choose the correct option: Do you know where ___ yesterday? He didn't come to work. | Mark was
+iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,iq-b1-6.csv:26,ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'd like to know why the meeting was moved?
+iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,iq-b1-6.csv:27,ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'm not sure which gate our flight leaves from?
+iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,iq-b1-6.csv:28,ind_polite | B1.2 | mcq | Which sentence has a mistake? | I have no idea why my phone keeps switching off?
+iq_wh,B1.2,ind_polite,B1.2,check,mcq,read,,iq-b1-6.csv:29,ind_polite | B1.2 | mcq | Which sentence has a mistake? | I wonder how Anna's job interview went?
 iq_wh,B1.2,ind_polite,B1.2,learn,text,read,,rq-order-1.csv:38,"ind_polite | B1.2 | text | 'How much is this jacket?'
 Finish the sentence: Could you tell me how much … | "
 iq_wh,B1.2,ind_polite,B1.2,learn,gap,read,,rq-order-1.csv:39,"ind_polite | B1.2 | gap | 'How much does this lamp cost?'
@@ -3921,7 +3925,7 @@ contrast_b2,B2.1,conj_b2,B2.1,check,mcq,read,,conjunctions-1.csv:92,"conj_b2 | B
 contrast_b2,B2.1,conj_b2,B2.1,use,text,read,,conjunctions-1.csv:109,"conj_b2 | B2.1 | text | Start with *Whereas*: My partner likes late nights, but I like early mornings. | "
 contrast_b2,B2.1,conj_b2,B2.1,learn,match,read,,conjunctions-1.csv:113,"conj_b2 | B2.1 | match | Match each beginning with its ending. | Pack a raincoat = in case it rains. ; The roads were icy. = As a result, there were many accidents. ; Owing to the strike, = there were no trains. ; This brush is = for cleaning bottles."
 contrast_b2,B2.1,conj_b2,B2.2,check,mcq,read,,conjunctions-1.csv:96,"conj_b2 | B2.2 | mcq | Which sentence is correct? | He studied hard; nevertheless, he failed the test."
-contrast_b2,B2.1,conj_b2,B2.2,use,gap,read,,conjunctions-1.csv:103,"conj_b2 | B2.2 | gap | Complete with one word: It was a difficult task, and ___ they finished it on time. | "
+contrast_b2,B2.1,conj_b2,B2.2,check,mcq,read,,conjunctions-1.csv:103,"conj_b2 | B2.2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet"
 fut_past,B2.1,past_continuous,B1.2,check,mcq,read,pac-B12-1a,built-in,"past_continuous | B1.2 | mcq | Choose the correct form: I ___ to call you, but my phone died. | was going"
 fut_past,B2.1,past_continuous,B1.2,learn,mcq,read,pac-B12-2a-r3,built-in,past_continuous | B1.2 | mcq | What does 'I was going to call you' mean? | I planned to call you.
 fut_past,B2.1,past_continuous,B1.2,use,gap,read,pac-B12-3a,built-in,"past_continuous | B1.2 | gap | Sorry, I ___ to answer your email, but I was very busy. (go) | "
@@ -3944,7 +3948,12 @@ in_case,B2.1,conj_b2,B2.1,use,gap,read,,typical-b2c1-1.csv:15,conj_b2 | B2.1 | g
 iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,ia-B22-4a,built-in,ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | I can't decide whether accepting the offer.
 iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,ia-C11-2a-r5,built-in,ind_advanced | B2.2 | mcq | The decision depends on ___ the budget is approved. | whether
 iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,ia-C11-5a-r2,built-in,ind_advanced | B2.2 | mcq | You write a report: 'The question is ___.' Choose the correct option. | whether the project is worth the cost
-iq_whether,B2.1,ind_advanced,B2.2,use,write,read,ia-C11-6a-r4,built-in,"ind_advanced | B2.2 | write | Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*. | "
+iq_whether,B2.1,ind_advanced,B2.2,use,write,read,ia-C11-6a-r4,built-in,"ind_advanced | B2.2 | write | Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*. | "
+iq_whether,B2.1,ind_advanced,B2.2,learn,mcq,read,,iq-b1-6.csv:30,ind_advanced | B2.2 | mcq | Which sentence means you give your manager an answer in either case? | Tell your manager whether you can work on Saturday.
+iq_whether,B2.1,ind_advanced,B2.2,learn,mcq,read,,iq-b1-6.csv:31,"ind_advanced | B2.2 | mcq | Which sentence means you call the airline only when there is a problem? | If your bag doesn't arrive, call the airline."
+iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,,iq-b1-6.csv:32,ind_advanced | B2.2 | mcq | Which sentence has a mistake? | We still haven't decided if to rent a car in Crete.
+iq_whether,B2.1,ind_advanced,B2.2,check,gap,read,,iq-b1-6.csv:33,"ind_advanced | B2.2 | gap | The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight. | "
+iq_whether,B2.1,ind_advanced,B2.2,use,gap,read,,iq-b1-6.csv:34,ind_advanced | B2.2 | gap | Complete with one word: The caterer needs to know ___ or not you're coming to the wedding. | 
 iq_whether,B2.1,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:24,ind_advanced | B2.2 | order | Put the words in order. | we can't decide whether to book the hotel
 iq_whether,B2.1,ind_advanced,B2.2,learn,order,rule,,learn-drag-3.csv:29,ind_advanced | B2.2 | order | Put the words in order. | why the system failed remains to be explained
 iq_whether,B2.1,ind_advanced,B2.2,check,mcq,read,,twins-2.csv:17,ind_advanced | B2.2 | mcq | Choose the correct option: The question is ___. | whether the supplier can meet the deadline

@@ -6,9 +6,11 @@ import lib
 
 NAME = "iq-b1-6.csv"
 import gp6_iq_b1  # noqa: F401  (adds its rows to lib.rows)
+import gp6_iq_extra  # noqa: E402  question mark after a non-question (B1.2), if vs whether (B2.2): teacher, 21 November
 
 
 def point_of(n):
+    if n in gp6_iq_extra.POINT_OF: return gp6_iq_extra.POINT_OF[n]
     r = lib.rows[n]
     text = " ".join(str(x) for x in r[3:6]).lower()
     return "iq_yn" if re.search(r"\b(if|whether)\b", text) else "iq_wh"

@@ -1,0 +1,56 @@
+[
+{
+"id": "r17b-001",
+"answer": "you bought this laptop",
+"other_correct": "",
+"wrong_options_that_fit": "you have bought this laptop is marginal: 'when' with present perfect is normally avoided, so not correct",
+"instruction_problem": "The sentence 'The guarantee may still be valid.' is superfluous: without it only 'you bought this laptop' is still possible English (embedded question, no inversion). Also no 'Choose the correct option' problem otherwise.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17b-002",
+"answer": "The question is whether we can afford to delay the launch.",
+"other_correct": [
+[
+"The question is how we can finish the tests in time."
+],
+[
+"The question is why the tests are not finished yet."
+],
+[
+"The question is whether the delay will cost more than a poor launch."
+],
+[
+"The question is how much a delay will cost."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open task, so many answers fit; 'the app checks that some forms are used' is vague for the learner. Scenario is needed, OK.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17b-003",
+"answer": "yet",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'and although' is odd and 'and yet' is the only fit; fine. Slight: 'and' makes 'although' look wrong for the wrong reason (clause + 'and although' is possible in other contexts)."
+},
+{
+"id": "r17b-004",
+"answer": [
+"if",
+"we",
+"have",
+"booked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No verb of instruction (e.g. 'Complete the sentence'); the cards are not mentioned in the text. Minor.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

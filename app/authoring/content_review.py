@@ -800,7 +800,8 @@ def revise(original):
                                    'How the funds were spent it remains to be investigated.',
                                    'How the funds were spent remain to be investigated.'],
         why='A question clause used as the subject keeps statement word order (*how the funds were spent*), needs no extra *it*, and counts as one thing, so the verb is singular: *remains*.')
-    report_fix('ia-C11-6a', must=[
+    # blind round r17 (judge): both readers: no situation, any sentence fits; now a situation (the model answers it)
+    report_fix('ia-C11-6a', q='Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.', must=[
         [r"^(?!\s*the\s+questions\s+is\b)", "*Questions is* does not agree: one question, so *The question is*.", "*Questions is* nesaskan: viens jautājums, tāpēc *The question is*."],
         [r"^\s*the questions?\s+is\b", "Start with *The question is*.", "Sāc ar *The question is*."],   # *questions is* gets only the agreement message above
         [r"^\s*the questions?\s+(is|are)\s+(whether|how|why|what|who|where|when|which)\b", "After *The question is* put *whether*, *how*, *why* or another question word.", "Aiz *The question is* liec *whether*, *how*, *why* vai citu jautājuma vārdu."],
@@ -855,12 +856,13 @@ def revise(original):
                "Pēc *where* vispirms ir teikuma priekšmets: *where the pool is*, *where I can swim*, nevis *where is the pool*."]],
         model='Could you tell me where the swimming pool is?')
     # ip-B12-2a: the B1.1 choice again (where the station is) at B1.2. Now the past: did goes, the verb shows the past (Murphy 13: Where did you buy it?)
+    # blind round r17 (judge): *where you have bought that jacket* read as only less natural; with *when* the present perfect is wrong (Murphy 13)
     report_fix('ip-B12-2a',
-        q='Choose the correct option: Could you tell me where ___ ?',
-        correct='you bought that jacket', wrong=['did you buy that jacket', 'did you bought that jacket', 'you have bought that jacket'],
+        q='Choose the correct option: Could you tell me when ___ ?',
+        correct='you bought this laptop', wrong=['did you buy this laptop', 'did you bought this laptop', 'you have bought this laptop'],
         wrong_why={}, wrong_why_lv={},
-        why='*Where did you buy that jacket?* becomes *where you bought that jacket*: no *did*, and the verb itself is in the past.',
-        why_lv='*Where did you buy that jacket?* kļūst par *where you bought that jacket*: bez *did*, un pagātnē ir pats darbības vārds.')
+        why='*When did you buy this laptop?* becomes *when you bought this laptop*: no *did*, and the verb itself is in the past. With *when* (a finished time) we do not use the present perfect.',
+        why_lv='*When did you buy this laptop?* kļūst par *when you bought this laptop*: bez *did*, un pagātnē ir pats darbības vārds. Ar *when* (pabeigts laiks) Present Perfect nelieto.')
     # ip-B12-4a (tester: "each sentence should be different not to give away the pair"): the correct twin (I wonder what she wants) is gone
     report_fix('ip-B12-4a',
         wrong=["I wonder why she left the party so early.", "Do you know who she is?", "Could you tell me if he's here?"])

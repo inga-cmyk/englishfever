@@ -114,9 +114,13 @@ T.gap("B2.2", "By the time he retired, he ___ the same car for thirty years. (ha
 replaces("We ___ each other for years before we got married. (know)")
 T.gap("B2.1", "She ___ in Madrid very long, but she knew the city well. (not / live)", "hadn't been living | had not been living | hadn't lived | had not lived", P_ACT)
 replaces(I_B2 + "She ___ in Madrid very long, but she knew the city well. (not / live)")
-T.text("B2.2", "Correct the mistake: When she sold the café, she had been owning it since 2010.", "When she sold the café, she had owned it since 2010. | When she sold the café, she'd owned it since 2010.",
+T.text("B2.2", "Correct the mistake: When she sold the café, she had been owning it since 2010.", "When she sold the café, she had owned it since 2010. | When she sold the café, she'd owned it since 2010. | When she sold the café, she had had it since 2010. | When she sold the café, she'd had it since 2010. | She had had it since 2010 when she sold the café. | She'd had it since 2010 when she sold the café.",
        ex("*own* is not continuous: *she had owned it since 2010*, not *had been owning*.",
           "*own* nelieto Continuous formā: *she had owned it since 2010*, nevis *had been owning*."))
+# blind round r17 (judge): *had had* (have = own) is a correct correction too; its own note
+import lib as _lib
+_lib.NOTES[len(_lib.rows) - 1] = " || ".join(a + " :: Correct too: *have* (= own) is a state verb as well, so *had had*, not *had been having*. The sentence used *own*: *she had owned it*. :: Arī pareizi: arī *have* (= piederēt) izsaka stāvokli, tāpēc *had had*, nevis *had been having*. Teikumā bija *own*: *she had owned it*."
+                                             for a in [x.strip() for x in _lib.rows[-1][4].split("|") if " had had " in x or "'d had " in x])
 replaces("Correct the mistake: We had been knowing each other since school.")
 T.order("B2.1", "we had been driving for hours when the car broke down", also=["when the car broke down we had been driving for hours"], why=P_ACT)
 T.order("B2.2", "she had been working there for ten years when she left", also=["when she left she had been working there for ten years"], why=P_ACT)

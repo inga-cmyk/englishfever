@@ -1,0 +1,48 @@
+[
+ {
+  "id": "r17b-001",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Could you tell me when ___ ? The guarantee may still be valid.",
+  "options": [
+   "did you buy this laptop",
+   "did you bought this laptop",
+   "you have bought this laptop",
+   "you bought this laptop"
+  ]
+ },
+ {
+  "id": "r17b-002",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r17b-003",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: It was a difficult task, and ___ they finished it on time.",
+  "options": [
+   "in spite of",
+   "yet",
+   "despite",
+   "although"
+  ]
+ },
+ {
+  "id": "r17b-004",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'm not sure ___ ___ ___ ___ the tickets yet. Let me check my email.",
+  "word_cards": [
+   "if",
+   "we",
+   "have",
+   "book",
+   "do",
+   "booked"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

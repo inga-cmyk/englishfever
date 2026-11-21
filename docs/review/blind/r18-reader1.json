@@ -1,0 +1,97 @@
+[
+{
+"id": "r18-001",
+"answer": "I'd like to know why the meeting was moved?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-002",
+"answer": "I'm not sure which gate our flight leaves from?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-003",
+"answer": "I have no idea why my phone keeps switching off?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-004",
+"answer": "I wonder how Anna's job interview went?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-005",
+"answer": "Tell your manager whether you can work on Saturday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-006",
+"answer": "If your bag doesn't arrive, call the airline.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-007",
+"answer": "If",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-008",
+"answer": "Everything now depends on if the bank approves our loan.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Arguable: 'depends on if' is common in informal British and American English; strict usage prefers 'whether'. A learner or native may see no mistake."
+},
+{
+"id": "r18-009",
+"answer": [
+"whether",
+"if"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r18-010",
+"answer": [
+"whether"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

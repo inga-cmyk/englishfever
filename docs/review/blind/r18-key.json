@@ -1,0 +1,357 @@
+{
+ "r18-001": {
+  "hash": "08d8fc984b260571",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'd like to know why the meeting was moved?",
+  "src": "iq-b1-6.csv:26",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'd like to know why the meeting was moved?",
+   "wrong": [
+    "Could you tell me when the last bus leaves?",
+    "I wonder what she bought for her brother.",
+    "Do you know if Tom has finished the report?"
+   ]
+  },
+  "item": {
+   "id": "c-2997",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I'd like to know…* is not a question, so it ends with a full stop: *I'd like to know why the meeting was moved.* *Could you tell me…?* and *Do you know…?* are questions, so they keep the question mark.",
+   "why_lv": "*I'd like to know*… nav jautājums, tāpēc beigās ir punkts: *I'd like to know why the meeting was moved.* *Could you tell me*…? un *Do you know*…? ir jautājumi, tāpēc tiem ir jautājuma zīme.",
+   "correct": "I'd like to know why the meeting was moved?",
+   "wrong": [
+    "Could you tell me when the last bus leaves?",
+    "I wonder what she bought for her brother.",
+    "Do you know if Tom has finished the report?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:26"
+  }
+ },
+ "r18-002": {
+  "hash": "04514b8e11c0642a",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'm not sure which gate our flight leaves from?",
+  "src": "iq-b1-6.csv:27",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm not sure which gate our flight leaves from?",
+   "wrong": [
+    "Can you remember where we parked the car?",
+    "I have no idea who sent me these flowers.",
+    "Do you know if the hotel serves breakfast?"
+   ]
+  },
+  "item": {
+   "id": "c-2998",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I'm not sure…* is not a question, so it ends with a full stop: *I'm not sure which gate our flight leaves from.* *Can you remember…?* and *Do you know…?* are questions: question mark.",
+   "why_lv": "*I'm not sure*… nav jautājums, tāpēc beigās ir punkts: *I'm not sure which gate our flight leaves from.* *Can you remember*…? un *Do you know*…? ir jautājumi: jautājuma zīme.",
+   "correct": "I'm not sure which gate our flight leaves from?",
+   "wrong": [
+    "Can you remember where we parked the car?",
+    "I have no idea who sent me these flowers.",
+    "Do you know if the hotel serves breakfast?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:27"
+  }
+ },
+ "r18-003": {
+  "hash": "05dd40003e4025aa",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence has a mistake? | I have no idea why my phone keeps switching off?",
+  "src": "iq-b1-6.csv:28",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I have no idea why my phone keeps switching off?",
+   "wrong": [
+    "Could you tell me how long the course lasts?",
+    "I'm not sure whether I locked the front door.",
+    "Do you know who won the match last night?"
+   ]
+  },
+  "item": {
+   "id": "c-2999",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I have no idea…* is a statement, not a question, so it ends with a full stop: *I have no idea why my phone keeps switching off.* Only a sentence that asks (*Could you tell me…?*, *Do you know…?*) has a question mark.",
+   "why_lv": "Teikums par *phone* nav jautājums, tāpēc beigās ir punkts: … *why my phone keeps switching off*. Jautājuma zīme ir vajadzīga, kad teikums jautā: *Could you tell me*…?, *Do you know*…?",
+   "correct": "I have no idea why my phone keeps switching off?",
+   "wrong": [
+    "Could you tell me how long the course lasts?",
+    "I'm not sure whether I locked the front door.",
+    "Do you know who won the match last night?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:28"
+  }
+ },
+ "r18-004": {
+  "hash": "0fcf4697dac69180",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence has a mistake? | I wonder how Anna's job interview went?",
+  "src": "iq-b1-6.csv:29",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I wonder how Anna's job interview went?",
+   "wrong": [
+    "Could you tell me which room the exam is in?",
+    "I'm not sure how many people are coming.",
+    "Can you tell me how you made this soup?"
+   ]
+  },
+  "item": {
+   "id": "c-3000",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I wonder…* is not a question, so it ends with a full stop: *I wonder how Anna's job interview went.* *Could you tell me…?* and *Can you tell me…?* are questions, so they keep the question mark.",
+   "why_lv": "*I wonder*… nav jautājums, tāpēc beigās ir punkts: *I wonder how Anna's job interview went.* *Could you tell me*…? un *Can you tell me*…? ir jautājumi, tāpēc tiem ir jautājuma zīme.",
+   "correct": "I wonder how Anna's job interview went?",
+   "wrong": [
+    "Could you tell me which room the exam is in?",
+    "I'm not sure how many people are coming.",
+    "Can you tell me how you made this soup?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "iq-b1-6.csv:29"
+  }
+ },
+ "r18-005": {
+  "hash": "6ad1355469da5695",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence means you give your manager an answer in either case? | Tell your manager whether you can work on Saturday.",
+  "src": "iq-b1-6.csv:30",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "Tell your manager whether you can work on Saturday.",
+   "wrong": [
+    "If you can work on Saturday, tell your manager.",
+    "If you can't work on Saturday, tell your manager.",
+    "Tell your manager that you can work on Saturday."
+   ]
+  },
+  "item": {
+   "id": "c-3001",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence means you give your manager an answer in either case?",
+   "why": "*whether* = yes or no: you give your manager the answer in either case. *If* at the start is a condition: you tell your manager only in that one case. *that you can work* gives only one answer.",
+   "why_lv": "*whether* nozīmē vai: vadītājam atbildi saki jebkurā gadījumā. *If* teikuma sākumā ir nosacījums (ja): saki to vienīgi tajā vienā gadījumā. *that you can work* dod vienu atbildi.",
+   "correct": "Tell your manager whether you can work on Saturday.",
+   "wrong": [
+    "If you can work on Saturday, tell your manager.",
+    "If you can't work on Saturday, tell your manager.",
+    "Tell your manager that you can work on Saturday."
+   ],
+   "wrong_why": [],
+   "role": "learn",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:30"
+  }
+ },
+ "r18-006": {
+  "hash": "1d5fc03b0119b564",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence means you call the airline only when there is a problem? | If your bag doesn't arrive, call the airline.",
+  "src": "iq-b1-6.csv:31",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "If your bag doesn't arrive, call the airline.",
+   "wrong": [
+    "Call the airline to ask whether your bag has arrived.",
+    "Whether or not your bag arrives, call the airline.",
+    "Call the airline and ask if your bag has arrived."
+   ]
+  },
+  "item": {
+   "id": "c-3002",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence means you call the airline only when there is a problem?",
+   "why": "*If* + a condition at the start: you call only in that case. *ask whether* and *ask if* report a question, so you call anyway to get the answer; *whether or not* = in both cases.",
+   "why_lv": "*If* teikuma sākumā ir nosacījums (ja): zvanīt vajag vienīgi tad. *ask whether* un *ask if* nozīmē pajautāt, vai, tāpēc zvanīt vajag jebkurā gadījumā; *whether or not* nozīmē jebkurā gadījumā.",
+   "correct": "If your bag doesn't arrive, call the airline.",
+   "wrong": [
+    "Call the airline to ask whether your bag has arrived.",
+    "Whether or not your bag arrives, call the airline.",
+    "Call the airline and ask if your bag has arrived."
+   ],
+   "wrong_why": [],
+   "role": "learn",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:31"
+  }
+ },
+ "r18-007": {
+  "hash": "3ea236ee93cb2ce3",
+  "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct option: ___ the delivery driver rings while I'm in the shower, could you open the door? | If",
+  "src": "iq-b1-6.csv:32",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "If",
+   "wrong": [
+    "Whether",
+    "Whether or not"
+   ]
+  },
+  "item": {
+   "id": "c-3003",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ the delivery driver rings while I'm in the shower, could you open the door?",
+   "why": "You open the door only if the driver rings: a condition, so *if*. *Whether* alone cannot start a condition, and *whether or not* would mean you open the door even when nobody rings.",
+   "why_lv": "Atvērt vajag vienīgi tad, ja kāds zvanīs pie durvīm: tas ir nosacījums, tāpēc *if* (ja). Ar *whether* vienu pašu nosacījumu nesāk, un *whether or not* nozīmētu, ka jāatver arī tad, ja pie durvīm nezvanīs.",
+   "correct": "If",
+   "wrong": [
+    "Whether",
+    "Whether or not"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:32"
+  }
+ },
+ "r18-008": {
+  "hash": "8ccb48a2d0615ca4",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence has a mistake? | Everything now depends on if the bank approves our loan.",
+  "src": "iq-b1-6.csv:33",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "Everything now depends on if the bank approves our loan.",
+   "wrong": [
+    "We haven't decided whether to rent a car in Crete.",
+    "If the train is delayed, I'll take a taxi.",
+    "Could you check whether the hotel has a lift?"
+   ]
+  },
+  "item": {
+   "id": "c-3004",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After a preposition (*depends on*, *about*) use *whether*, not *if*: *depends on whether the bank approves our loan*.",
+   "why_lv": "Aiz prievārda (*depends on, about*) lieto *whether*, nevis *if*: *depends on whether the bank approves our loan*.",
+   "correct": "Everything now depends on if the bank approves our loan.",
+   "wrong": [
+    "We haven't decided whether to rent a car in Crete.",
+    "If the train is delayed, I'll take a taxi.",
+    "Could you check whether the hotel has a lift?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:33"
+  }
+ },
+ "r18-009": {
+  "hash": "b17e448e814e66a4",
+  "gate_key": "ind_advanced | B2.2 | gap | The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight. | ",
+  "src": "iq-b1-6.csv:34",
+  "point": "iq_whether",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ],
+    [
+     "if"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3005",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight.",
+   "why": "Before *to* + verb only *whether* is possible: *whether to expect us*. *if we're late* is a condition: they keep the room for us only in that case.",
+   "why_lv": "Saka *whether to expect us*, nevis *if to expect us*. *if we're late* ir nosacījums (ja): viesnīca gaidīs vienīgi tad.",
+   "answers": [
+    [
+     "whether"
+    ],
+    [
+     "if"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "whether",
+    "if",
+    "unless"
+   ],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:34"
+  }
+ },
+ "r18-010": {
+  "hash": "c3534aa4fc5de319",
+  "gate_key": "ind_advanced | B2.2 | gap | Complete with one word: The caterer needs to know ___ or not you're coming to the wedding. | ",
+  "src": "iq-b1-6.csv:35",
+  "point": "iq_whether",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3006",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: The caterer needs to know ___ or not you're coming to the wedding.",
+   "why": "Directly before *or not* only *whether* is possible: *whether or not you're coming*. *if or not* is a mistake.",
+   "why_lv": "Tieši pirms *or not* var būt vienīgi *whether*: *whether or not you're coming*. *if or not* ir kļūda.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:35"
+  }
+ }
+}

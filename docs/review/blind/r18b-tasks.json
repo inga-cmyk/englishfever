@@ -1,0 +1,14 @@
+[
+ {
+  "id": "r18b-001",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Everything now depends on whether the bank approves our loan.",
+   "If the train is delayed, I'll take a taxi.",
+   "Could you check whether the hotel has a lift?",
+   "We still haven't decided if to rent a car in Crete."
+  ]
+ }
+]

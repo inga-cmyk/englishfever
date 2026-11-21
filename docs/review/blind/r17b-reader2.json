@@ -1,0 +1,47 @@
+[
+{
+"id": "r17b-001",
+"answer": "you bought this laptop",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "The sentence 'The guarantee may still be valid' is a harmless but unneeded extra; the answer is still the only possible one without it. Option 'you have bought' is a believable but wrong distractor (when + present perfect)."
+},
+{
+"id": "r17b-002",
+"answer": "The question is whether we can afford to delay the launch.",
+"other_correct": [
+"The question is how we can finish the tests without delaying the launch.",
+"The question is why the tests are not finished yet.",
+"The question is whether we should launch the app before the tests are finished."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Uses *...* markdown asterisks around the starters; the three starters are given, so only copying the form is needed. Open task: any sensible clause fits, so the check must be tolerant.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17b-003",
+"answer": "yet",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'although' after 'and' is not natural (and although they ... would be illogical here), so it is a fair distractor. 'in spite of' and 'despite' fail because a clause follows."
+},
+{
+"id": "r17b-004",
+"answer": [
+"if",
+"we",
+"have",
+"booked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Distractors 'do', 'book' are believable. Check that 'whether' is not expected; 'if we have booked' is the only grammatical combination."
+}
+]

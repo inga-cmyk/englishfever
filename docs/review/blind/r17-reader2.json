@@ -1,0 +1,864 @@
+[
+{
+"id": "r17-001",
+"answer": "The action matters, not who sells them.",
+"other_correct": "",
+"wrong_options_that_fit": "'Someone is selling tickets right now.' is also true: the sentence is present simple passive, and someone does sell them here.",
+"instruction_problem": "'Why do we say' is vague; option 1 is not clearly wrong.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-002",
+"answer": [
+[
+"If I had a car, I would drive to work.",
+"I have no car."
+],
+[
+"If I had had a car, I would have driven to work.",
+"I had no car then."
+],
+[
+"If I borrow my dad's car, I get to work in ten minutes.",
+"This is what usually happens."
+],
+[
+"If the trains are on strike tomorrow, I'll borrow my dad's car.",
+"It is possible in the future."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-003",
+"answer": [
+"I had to finish by Friday"
+],
+"other_correct": [
+[
+"to finish by Friday"
+],
+[
+"that I had to finish by Friday"
+],
+[
+"I must finish by Friday"
+],
+[
+"that I must finish by Friday"
+],
+[
+"I should finish by Friday"
+],
+[
+"that I should finish by Friday"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open gap: reported 'told me to finish' and 'told me (that) I had to / must finish' are all correct; nothing says which form is wanted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-004",
+"answer": "She suggested me to book the tickets early.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-005",
+"answer": [
+[
+"Where does Anna work?",
+"Do you know where Anna works?"
+],
+[
+"Where did Anna work?",
+"Do you know where Anna worked?"
+],
+[
+"Where is Anna working?",
+"Do you know where Anna is working?"
+],
+[
+"Where will Anna work?",
+"Do you know where Anna will work?"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-006",
+"answer": "Do you know what time does the film start?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-007",
+"answer": "it takes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-008",
+"answer": [
+"Could you tell me where the swimming pool is?"
+],
+"other_correct": [
+[
+"Do you know where the swimming pool is?"
+],
+[
+"Could you tell me where the pool is?"
+],
+[
+"Could you tell me where I can find the swimming pool?"
+],
+[
+"Do you know where I can find the swimming pool?"
+],
+[
+"Could you tell me how to get to the swimming pool?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-009",
+"answer": "you bought that jacket",
+"other_correct": "",
+"wrong_options_that_fit": "'you have bought that jacket' is grammatical (present perfect), only less natural with 'where'.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 is arguably correct English."
+},
+{
+"id": "r17-010",
+"answer": "I wonder what does she want.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-011",
+"answer": [
+"Could you tell me when you are going to reply to my email?"
+],
+"other_correct": [
+[
+"Could you tell me when you will fix the heater?"
+],
+[
+"I'd like to know when you will fix the heater."
+],
+[
+"I'd like to know if you have received my email."
+],
+[
+"Could you tell me if you received my email?"
+],
+[
+"I'd like to know when someone can repair the heater."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-012",
+"answer": [
+"The question is whether we can afford it."
+],
+"other_correct": [
+[
+"The question is how we can afford it."
+],
+[
+"The question is why she left."
+],
+[
+"The question is whether he will come."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open task with no topic; fine but any sentence with the starter works.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-013",
+"answer": "How the funds were spent remains to be investigated.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-014",
+"answer": [
+[
+"Was the bridge built in 1890?",
+"Yes, it was."
+],
+[
+"Were the photos taken in Rome?",
+"No, they weren't."
+],
+[
+"Was your sister born in Riga?",
+"No, she wasn't."
+],
+[
+"Were you invited to the wedding?",
+"Yes, I was."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-015",
+"answer": "Can you tell me where can I leave my bike?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-016",
+"answer": "Could you tell me why did the bank block my card?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-017",
+"answer": "You needn't to come early.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-018",
+"answer": "could you pass me the salt please",
+"other_correct": [
+[
+"please could you pass me the salt"
+],
+[
+"could you please pass me the salt"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-019",
+"answer": "i don't usually drink coffee after lunch because it keeps me awake",
+"other_correct": [
+[
+"usually i don't drink coffee after lunch because it keeps me awake"
+],
+[
+"i usually don't drink coffee after lunch because it keeps me awake"
+],
+[
+"after lunch i don't usually drink coffee because it keeps me awake"
+],
+[
+"after lunch i usually don't drink coffee because it keeps me awake"
+],
+[
+"because it keeps me awake i don't usually drink coffee after lunch"
+],
+[
+"because it keeps me awake i usually don't drink coffee after lunch"
+],
+[
+"i don't usually drink coffee because it keeps me awake after lunch (odd meaning)"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "12 cards is too long for B1.1 (about 5-9 words); many valid orders.",
+"sense_problem": ""
+},
+{
+"id": "r17-020",
+"answer": "my parents read a newspaper every day but they never watch the news",
+"other_correct": [
+[
+"every day my parents read a newspaper but they never watch the news"
+],
+[
+"my parents never read a newspaper but they watch the news every day"
+],
+[
+"my parents never read a newspaper but every day they watch the news"
+],
+[
+"every day my parents watch the news but they never read a newspaper"
+],
+[
+"my parents watch the news every day but they never read a newspaper"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "13 cards is far too long for B1.1; several orders with different but correct meaning.",
+"sense_problem": ""
+},
+{
+"id": "r17-021",
+"answer": "Don't worry, I call you as soon as I land.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-022",
+"answer": [
+"had had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine for B2.2 but 'had had' is hard to type; no problem otherwise.",
+"sense_problem": ""
+},
+{
+"id": "r17-023",
+"answer": "When she sold the café, she had owned it since 2010.",
+"other_correct": [
+[
+"When she sold the café, she had had it since 2010."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which part is wrong; 'since 2010' with past perfect is fine, learner may also change 'since' to a 'for' phrase, but no number given.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-024",
+"answer": "this jacket is cheaper than that one",
+"other_correct": [
+[
+"that jacket is cheaper than this one"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both 'this...than that' and 'that...than this' fit the cards; nothing fixes which jacket is cheaper.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-025",
+"answer": [
+"That flat is less expensive than this flat."
+],
+"other_correct": [
+[
+"That flat is less expensive than this one."
+],
+[
+"That flat is less expensive than this."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-026",
+"answer": [
+"yet"
+],
+"other_correct": [
+[
+"still"
+],
+[
+"nevertheless"
+],
+[
+"nonetheless"
+],
+[
+"somehow"
+],
+[
+"finally"
+],
+[
+"eventually"
+],
+[
+"luckily"
+],
+[
+"fortunately"
+],
+[
+"surprisingly"
+],
+[
+"miraculously"
+],
+[
+"then"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No contrast cue: many one-word adverbs fit ('and yet', 'still', 'somehow', 'finally', 'luckily'...). The intended word is not determined.",
+"level_problem": "",
+"sense_problem": "Open gap with many correct answers."
+},
+{
+"id": "r17-027",
+"answer": "won't switch on",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-028",
+"answer": "means",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-029",
+"answer": [
+"I",
+"can"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-030",
+"answer": [
+"the night bus runs"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-031",
+"answer": [
+"she",
+"is"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-032",
+"answer": "Do you know where the printer is?",
+"other_correct": [
+[
+"Do you know where I can find the printer?"
+],
+[
+"Do you know where the printer is, please?"
+],
+[
+"Do you know where I can print this?"
+],
+[
+"Do you know where the printers are?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-033",
+"answer": "Hi Eva, could you tell me how much the course costs? I'd like to sign up.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-034",
+"answer": "i wonder why my laptop is so slow",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-035",
+"answer": "can you tell me how the coffee machine works",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-036",
+"answer": "if there are",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-037",
+"answer": [
+"Could you tell me how I can get to the old town?"
+],
+"other_correct": [
+[
+"Could you tell me how to get to the old town?"
+],
+[
+"Could you tell me how I get to the old town?"
+],
+[
+"Could you tell me how far the old town is?"
+],
+[
+"Could you tell me how we can get to the old town?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-038",
+"answer": [
+"if our room has"
+],
+"other_correct": [
+[
+"whether our room has"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-039",
+"answer": [
+"if",
+"the waiter",
+"speaks"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-040",
+"answer": [
+"Tom parked"
+],
+"other_correct": [
+[
+"Tom had parked"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-041",
+"answer": [
+"if",
+"Maria",
+"got"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-042",
+"answer": "if they have sent",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-043",
+"answer": "i'd like to know where you learned to cook like that",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-044",
+"answer": [
+"Could you tell me where you bought it?"
+],
+"other_correct": [
+[
+"Could you tell me where you got it?"
+],
+[
+"Could you tell me where you bought your bag?"
+],
+[
+"Could you tell me where you got that bag?"
+],
+[
+"Could you tell me where the shop is?"
+],
+[
+"Could you tell me where you bought that bag?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-045",
+"answer": [
+"Anna",
+"has",
+"worked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-046",
+"answer": "Dear Mr Kalns, could you tell me when you sent the invoice? We still haven't received it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-047",
+"answer": "do you know why the meeting was cancelled",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-048",
+"answer": [
+"if you locked"
+],
+"other_correct": [
+[
+"whether you locked"
+],
+[
+"if you had locked"
+],
+[
+"whether you had locked"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-049",
+"answer": "Mark was",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-050",
+"answer": [
+"Do you know if someone has found my umbrella?"
+],
+"other_correct": [
+[
+"Do you know if anyone has handed in my umbrella?"
+],
+[
+"Do you know if someone found my umbrella?"
+],
+[
+"Do you know if anybody has seen my umbrella?"
+],
+[
+"Do you know if the cleaner took my umbrella?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-051",
+"answer": [
+"if",
+"we",
+"have",
+"booked"
+],
+"other_correct": [
+[
+"if",
+"we",
+"did",
+"book"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Second answer ('if we did book ... yet') is awkward with 'yet' and emphatic; weak but not strictly wrong in US usage."
+},
+{
+"id": "r17-052",
+"answer": "went",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-053",
+"answer": "lost",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-054",
+"answer": [
+"Do you know when the shop closes?"
+],
+"other_correct": [
+[
+"Do you know when the shop is closing?"
+],
+[
+"Do you know when the shop will close?"
+],
+[
+"Do you know what time the shop closes?"
+],
+[
+"Do you know when the shop closes today?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.1: same pattern as B1.1 tasks.",
+"sense_problem": ""
+},
+{
+"id": "r17-055",
+"answer": "If we would have caught the flight, we would be in Rome now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r17-056",
+"answer": [
+"The house had belonged to my grandparents for decades before we bought it."
+],
+"other_correct": [
+[
+"The house had been owned by my grandparents for decades before we bought it."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

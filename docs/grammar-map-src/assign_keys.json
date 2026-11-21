@@ -16950,5 +16950,61 @@
 "narrative_b2 | B2.2 | text | Correct the sentence. Keep *had*: The house had been belonging to my grandparents for decades before we bought it. |": [
 "pastpc_vs",
 "read"
+],
+"ind_polite | B1.2 | mcq | Choose the correct option: Could you tell me when ___ ? The guarantee may still be valid. | you bought this laptop": [
+"iq_wh",
+"read"
+],
+"ind_advanced | B2.2 | write | Your team wants to launch the new app next month, but the tests are not finished, and a delay will cost money. Write a sentence that starts with *The question is whether*, *The question is how* or *The question is why*. | ": [
+"iq_whether",
+"read"
+],
+"conj_b2 | B2.2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet": [
+"contrast_b2",
+"read"
+],
+"ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'd like to know why the meeting was moved?": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'm not sure which gate our flight leaves from?": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | mcq | Which sentence has a mistake? | I have no idea why my phone keeps switching off?": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | mcq | Which sentence has a mistake? | I wonder how Anna's job interview went?": [
+"iq_wh",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence means you give your manager an answer in either case? | Tell your manager whether you can work on Saturday.": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence means you call the airline only when there is a problem? | If your bag doesn't arrive, call the airline.": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Choose the correct option: ___ the delivery driver rings while I'm in the shower, could you open the door? | If": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence has a mistake? | Everything now depends on if the bank approves our loan.": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | gap | The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight. | ": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | gap | Complete with one word: The caterer needs to know ___ or not you're coming to the wedding. | ": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence has a mistake? | We still haven't decided if to rent a car in Crete.": [
+"iq_whether",
+"read"
 ]
 }

@@ -2419,6 +2419,11 @@
 "round": "r13",
 "task": "r13-003"
 },
+"8cb7b3359394e136": {
+"gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas",
+"round": "r19",
+"task": "r19-001"
+},
 "8cf5b41c0718429a": {
 "gate_key": "conj_linkers | A2.2 | gap | ___ we had dinner, we went for a walk by the sea. | ",
 "round": "r13",

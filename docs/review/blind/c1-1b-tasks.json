@@ -1,0 +1,105 @@
+[
+ {
+  "id": "c1-1b-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-002",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Our kitchen is tiny: it ___ only three metres by four. (measure)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "We're eating out all week because they ___ a new kitchen in our flat. (fit)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's nearly ten o'clock. I ___ the pharmacy is still open, but we can try. (doubt)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "OK, I ___ you now. I'm sorry I didn't take your story seriously. (believe)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-008",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'm finding the new routine quite tiring.",
+   "I suggest you book a table in advance.",
+   "This dress doesn't fit me any more.",
+   "He considers taking early retirement next year."
+  ]
+ },
+ {
+  "id": "c1-1b-009",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Answer with *constantly* and *change your mind*: \"Actually, I'll have the fish, not the pasta.\"",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-1b-010",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Don't phone me at half past eight: I ___ usually ___ to work then. (drive)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1b-011",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She constantly checks her phone in meetings.",
+   "My neighbour forever is borrowing my tools.",
+   "At eight I'm usually driving to work.",
+   "He's always offering to help with the shopping."
+  ]
+ },
+ {
+  "id": "c1-1b-012",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "constantly",
+   "you're",
+   "I'm",
+   "interrupting",
+   "speaking",
+   "when",
+   "me"
+  ],
+  "note": "the learner puts all the cards in order"
+ }
+]

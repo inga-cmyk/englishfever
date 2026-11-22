@@ -1,0 +1,428 @@
+{
+ "c1-1b-001": {
+  "hash": "65d36a9c762b9d46",
+  "gate_key": "narrative_b2 | B2.2 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am measuring",
+     "'m measuring"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3634",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)",
+   "why": "*measure* here is an action happening now (using a tape measure): present continuous, *I'm measuring*.",
+   "why_lv": "*measure te* ir darbība, kas notiek tagad (mēra ar mērlenti): Present Continuous, *I'm measuring.*",
+   "answers": [
+    [
+     "am measuring",
+     "'m measuring"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:2"
+  }
+ },
+ "c1-1b-002": {
+  "hash": "f11a9c2d232f7bfd",
+  "gate_key": "narrative_b2 | B2.2 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "measures"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3635",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our kitchen is tiny: it ___ only three metres by four. (measure)",
+   "why": "*measure* here gives the size, a state: present simple, *it measures*. The continuous is used only for the action of measuring.",
+   "why_lv": "*measure te* norāda izmēru, tas ir stāvoklis: Present Simple, *it measures*. Ilgstošo formu lieto *tikai* darbībai (kāds mēra).",
+   "answers": [
+    [
+     "measures"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:3"
+  }
+ },
+ "c1-1b-003": {
+  "hash": "34c07d869f9953fe",
+  "gate_key": "narrative_b2 | B2.2 | gap | We're eating out all week because they ___ a new kitchen in our flat. (fit) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are fitting",
+     "'re fitting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3636",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We're eating out all week because they ___ a new kitchen in our flat. (fit)",
+   "why": "*fit* here means install, an action that is going on this week: present continuous, *they're fitting*. In the state meaning (*The jacket fits you*) it is simple.",
+   "why_lv": "*fit te* nozīmē uzstādīt, darbība, kas notiek šonedēļ: Present Continuous, *they're fitting*. Stāvokļa nozīmē (*The jacket fits you*) lieto vienkāršo formu.",
+   "answers": [
+    [
+     "are fitting",
+     "'re fitting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:4"
+  }
+ },
+ "c1-1b-004": {
+  "hash": "66aadce1d0c50cb0",
+  "gate_key": "narrative_b2 | B2.2 | gap | Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change. | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are",
+     "were"
+    ],
+    [
+     "being",
+     "getting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3637",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change.",
+   "why": "*be* in the continuous (*are being*) describes how someone is behaving now, not what they are like: *Why are you being so difficult?* = why are you acting like this?",
+   "why_lv": "*be* ilgstošajā formā (*are being*) apraksta, kā kāds *uzvedas* tagad, nevis kāds viņš ir: *Why are you being so difficult?* = kāpēc *tu* tagad tā *uzvedies*?",
+   "answers": [
+    [
+     "are",
+     "were"
+    ],
+    [
+     "being",
+     "getting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:5"
+  }
+ },
+ "c1-1b-005": {
+  "hash": "82911ffba72b55c0",
+  "gate_key": "narrative_b2 | B2.2 | gap | It's nearly ten o'clock. I ___ the pharmacy is still open, but we can try. (doubt) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "doubt"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3638",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's nearly ten o'clock. I ___ the pharmacy is still open, but we can try. (doubt)",
+   "why": "*doubt* is a state of mind and is rarely continuous: *I doubt the pharmacy is still open*.",
+   "why_lv": "*doubt* ir domāšanas stāvoklis, un ilgstošo formu gandrīz nelieto: *I doubt the pharmacy is still open.*",
+   "answers": [
+    [
+     "doubt"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:6"
+  }
+ },
+ "c1-1b-006": {
+  "hash": "3590636bfbbdfe74",
+  "gate_key": "narrative_b2 | B2.2 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is considering",
+     "'s considering"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3639",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)",
+   "why": "*consider* in the meaning *think carefully about* is only used in the continuous: *she's considering taking early retirement*.",
+   "why_lv": "*consider* nozīmē rūpīgi apsvērt lieto *tikai* ilgstošajā formā: *she's considering taking early retirement*.",
+   "answers": [
+    [
+     "is considering",
+     "'s considering"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:7"
+  }
+ },
+ "c1-1b-007": {
+  "hash": "bc931cb6934221a7",
+  "gate_key": "narrative_b2 | B2.2 | gap | OK, I ___ you now. I'm sorry I didn't take your story seriously. (believe) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "believe"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3640",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "OK, I ___ you now. I'm sorry I didn't take your story seriously. (believe)",
+   "why": "*believe* stays in the present simple, also with *now*: *I believe you now*, not *I'm believing you now*.",
+   "why_lv": "*believe* paliek Present Simple arī ar *now*: *I believe you now*, nevis *I'm believing you now.*",
+   "answers": [
+    [
+     "believe"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:8"
+  }
+ },
+ "c1-1b-008": {
+  "hash": "ca248ea1a424552c",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | He considers taking early retirement next year.",
+  "src": "zz-blind-zz-c1-pres-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "He considers taking early retirement next year.",
+   "wrong": [
+    "I'm finding the new routine quite tiring.",
+    "I suggest you book a table in advance.",
+    "This dress doesn't fit me any more."
+   ]
+  },
+  "item": {
+   "id": "c-3641",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*consider* meaning *think about doing* is continuous: *He's considering taking early retirement*. *I'm finding* (a new impression), *I suggest* (the act of suggesting) and *doesn't fit* (a state) are correct.",
+   "why_lv": "*consider* nozīmē apsvērt lieto ilgstošajā formā: *He's considering taking early retirement.* *I'm finding* (jauns *iespaids*), *I suggest* (*ieteikums* ar pašiem vārdiem) un *doesn't fit* (stāvoklis) ir *pareizi*.",
+   "correct": "He considers taking early retirement next year.",
+   "wrong": [
+    "I'm finding the new routine quite tiring.",
+    "I suggest you book a table in advance.",
+    "This dress doesn't fit me any more."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:9"
+  }
+ },
+ "c1-1b-009": {
+  "hash": "d96240f695027c46",
+  "gate_key": "narrative_b2 | B2.2 | text | Answer with *constantly* and *change your mind*: \"Actually, I'll have the fish, not the pasta.\" | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "You're constantly changing your mind.",
+     "You are constantly changing your mind."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3642",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Answer with *constantly* and *change your mind*: \"Actually, I'll have the fish, not the pasta.\"",
+   "why": "*be constantly* + *-ing* shows that something happens so often that it is typical of the person, often with irritation: *You're constantly changing your mind.*",
+   "why_lv": "*be constantly + -ing* rāda, ka kaut kas notiek tik bieži, ka tas ir raksturīgi cilvēkam, bieži ar *nepatiku*: *You're constantly changing your mind.*",
+   "answers": [
+    [
+     "You're constantly changing your mind.",
+     "You are constantly changing your mind."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:10"
+  }
+ },
+ "c1-1b-010": {
+  "hash": "018bae3dd8e8b968",
+  "gate_key": "narrative_b2 | B2.2 | gap | Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "driving"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3643",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Don't phone me at half past eight: I ___ usually ___ to work then. (drive)",
+   "why": "*usually* + present continuous: something we regularly do that is in progress at that time (*I'm usually driving to work then*).",
+   "why_lv": "*usually* + Present Continuous: *ierasta* darbība, kas tajā laikā jau notiek (*I'm usually driving to work then*).",
+   "answers": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "driving"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:11"
+  }
+ },
+ "c1-1b-011": {
+  "hash": "bfb9fbfd16cdc1aa",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.",
+  "src": "zz-blind-zz-c1-pres-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My neighbour forever is borrowing my tools.",
+   "wrong": [
+    "He's always offering to help with the shopping.",
+    "At eight I'm usually driving to work.",
+    "She constantly checks her phone in meetings."
+   ]
+  },
+  "item": {
+   "id": "c-3644",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*forever*, *always*, *constantly* go after *is*: *My neighbour is forever borrowing my tools.*",
+   "why_lv": "*forever, always, constantly* stāv aiz *is*: *My neighbour is forever borrowing my tools.*",
+   "correct": "My neighbour forever is borrowing my tools.",
+   "wrong": [
+    "He's always offering to help with the shopping.",
+    "At eight I'm usually driving to work.",
+    "She constantly checks her phone in meetings."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:12"
+  }
+ },
+ "c1-1b-012": {
+  "hash": "8115e948363c2eaa",
+  "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | you're constantly interrupting me when I'm speaking",
+  "src": "zz-blind-zz-c1-pres-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "you're constantly interrupting me when I'm speaking",
+   "also": [
+    "when I'm speaking you're constantly interrupting me"
+   ]
+  },
+  "item": {
+   "id": "c-3645",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*constantly* goes between *you're* and the *-ing* form; the *when*-part can come first or second.",
+   "why_lv": "*constantly* stāv starp *you're* un *-ing* formu; daļa ar *when* var būt pirmā vai otrā.",
+   "sentence": "you're constantly interrupting me when I'm speaking",
+   "answers": [
+    [
+     "you're constantly interrupting me when I'm speaking",
+     "when I'm speaking you're constantly interrupting me"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:13"
+  }
+ }
+}

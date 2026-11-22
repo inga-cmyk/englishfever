@@ -1,87 +1,80 @@
-"""C1 direction 1 (Advanced present simple and continuous), round 1: points x_state_cont, x_mental_cont, x_always_cont,
-4 tasks each. Murphy, English Grammar in Use, units 3-4 (always + continuous; state verbs; I'm being / I am); Hewings,
-Advanced Grammar in Use, units 1-2. Draft (22 November 2026): no C1 topic in the app yet, so these rows are not packaged.
+"""C1 direction 1 (Advanced present simple and continuous), round 1, second version (22 November 2026): points x_state_cont,
+x_mental_cont, x_always_cont. Hewings, Advanced Grammar in Use (3rd ed.), units 1-2; Murphy, English Grammar in Use, units 3-4.
+Draft: no C1 topic in the app yet, so these rows are not packaged.
 
-The continuous of a state verb (we're loving it, I'm finding) is a choice of the speaker, so a choice between it and the simple
-form would have two correct answers. The tasks therefore test (a) the verbs that stay simple (consist of, belong, own, agree,
-understand, prefer), (b) where the continuous is the only form (two gaps: are ... being; is always + -ing), (c) the form
-(is always losing, not is always lose)."""
+The first version tested form mistakes (I am agree, is belonging) and the blind readers found them B1 (round c1-1). Teacher,
+22 November: the context must be concrete but common; follow the Advanced Grammar in Use exercises. So, as in its exercises 1.1,
+1.2 and 2.3: the same verb in a state meaning and an action meaning (measure, fit), verbs that stay simple even in a C1 context
+(doubt, believe) or are only continuous in one meaning (consider = think about), complaints with constantly / forever, and a
+routine in progress at a time. In every task the context leaves one form only. No Latvian surnames (teacher, 22 November)."""
 from lib import gp, od, mc, tx
 T = "Advanced present simple and continuous"
 L = "C1"
 
-# ── x_state_cont: state verbs in the continuous ──
-# s1 work: a mistake with consist of
-mc(T, L, 3, "Which sentence has a mistake?", "The new committee is consisting of five senior managers.",
-   ["We're really loving the new office, especially the view.", "You're being very quiet today. Is anything wrong?",
-    "This old farmhouse belongs to my grandmother."],
-   "*consist of* describes what something is made of, a permanent state: it is not used in the continuous (*consists of*). "
-   "*We're loving* (a feeling about something new) and *You're being quiet* (behaviour today) are correct.",
-   "*consist of* apraksta, no kā kaut kas sastāv: tas ir pastāvīgs stāvoklis, tāpēc ilgstošo formu nelieto (*consists of*). "
-   "*We're loving* (sajūta par kaut ko jaunu) un *You're being quiet* (uzvedība šodien) ir pareizi.")
-# s2 relationships: behaviour now, only the continuous fits two gaps
-gp(T, L, 4, "Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change.", "are | were / being",
+# ── x_state_cont: one verb, a state or an action ──
+# s1 home: measure = an action in progress
+gp(T, L, 3, "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)", "am measuring | 'm measuring",
+   "*measure* here is an action happening now (using a tape measure): present continuous, *I'm measuring*.",
+   "*measure* te ir darbība, kas notiek tagad (mēra ar mērlenti): Present Continuous, *I'm measuring*.")
+# s2 home: measure = a state (the size)
+gp(T, L, 3, "Our kitchen is tiny: it ___ only three metres by four. (measure)", "measures",
+   "*measure* here gives the size, a state: present simple, *it measures*. The continuous is used only for the action of measuring.",
+   "*measure* te norāda izmēru, tas ir stāvoklis: Present Simple, *it measures*. Ilgstošo formu lieto tikai darbībai (kāds mēra).")
+# s3 home: fit = an action (install)
+gp(T, L, 3, "We're eating out all week because they ___ a new kitchen in our flat. (fit)", "are fitting | 're fitting",
+   "*fit* here means install, an action that is going on this week: present continuous, *they're fitting*. "
+   "In the state meaning (*The jacket fits you*) it is simple.",
+   "*fit* te nozīmē uzstādīt, darbība, kas notiek šonedēļ: Present Continuous, *they're fitting*. "
+   "Stāvokļa nozīmē (*The jacket fits you*) lieto vienkāršo formu.")
+# s4 relationships: be + being = behaviour now (both gaps leave only the continuous; get also works)
+gp(T, L, 4, "Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change.", "are | were / being | getting",
    "*be* in the continuous (*are being*) describes how someone is behaving now, not what they are like: "
    "*Why are you being so difficult?* = why are you acting like this?",
    "*be* ilgstošajā formā (*are being*) apraksta, kā kāds uzvedas tagad, nevis kāds viņš ir: "
    "*Why are you being so difficult?* = kāpēc tu tagad tā uzvedies?")
-# s3 lifestyle: belong stays simple
-mc(T, L, 3, "Choose the correct option: This flat ___ to my aunt, so we only pay a small rent.", "belongs",
-   ["is belonging", "is belonged", "belong"],
-   "*belong to* is a permanent state (who it is owned by): present simple, *belongs*. It is not used in the continuous or the passive.",
-   "*belong to* ir pastāvīgs stāvoklis (kam tas pieder): Present Simple, *belongs*. Ilgstošo formu un ciešamo kārtu nelieto.")
-# s4 travel: a mistake with own
-mc(T, L, 3, "Which sentence has a mistake?", "My parents are owning two flats in the centre of Riga.",
-   ["She's being very generous with her time this week.", "I believe the conference starts at ten.",
-    "We're really enjoying the course so far."],
-   "*own* is a state verb (possession): *My parents own two flats*. *She's being generous* is correct: behaviour this week.",
-   "*own* ir stāvokļa darbības vārds (piederība): *My parents own two flats*. Tulkojot burtiski *mani vecāki pašlaik pieder*, "
-   "gribas lietot ilgstošo formu, bet angliski saka *own*. *She's being generous* ir pareizi: uzvedība šonedēļ.")
 
-# ── x_mental_cont: thinking and feeling verbs ──
-# m1 work: agree stays simple (a common mistake: I am agree)
-mc(T, L, 2, "Choose the correct option: I ___ with almost everything you said in your email.", "agree",
-   ["am agree", "am agreeing", "agreeing"],
-   "*agree* is a state of mind: present simple, *I agree*. *I am agree* mixes *be* with the verb; *I'm agreeing* is not used.",
-   "*agree* ir domāšanas stāvoklis: Present Simple, *I agree*. Tulkojot burtiski *es esmu vienisprātis*, iznāk *I am agree*, "
-   "bet angliski *agree* ir darbības vārds: *I agree*.")
-# m2 hobbies: prefer stays simple
-mc(T, L, 3, "Which sentence has a mistake?", "I'm preferring tea to coffee these days.",
-   ["I'm finding the new software surprisingly easy to use.", "We're beginning to regret buying such a big car.",
-    "She's realising how much work the move involves."],
-   "*prefer* stays in the present simple, even with *these days*: *I prefer tea to coffee these days*. "
-   "*find*, *regret* and *realise* can be continuous for a feeling or thought that is new or growing.",
-   "*prefer* paliek Present Simple arī ar *these days*: *I prefer tea to coffee these days*. "
-   "*find*, *regret* un *realise* var būt ilgstošajā formā, ja doma vai sajūta ir jauna vai pieaug.")
-# m3 learning: understand stays simple; the cards could give "am understanding", which the apology rules out
-gp(T, L, 3, "Sorry, I ___ ___ what you mean. Could you explain it again?", "don't / understand",
-   "*understand* is a state of mind: *I don't understand*. Not *I'm not understanding* or *I am understanding*.",
-   "*understand* ir domāšanas stāvoklis: *I don't understand*. Ne *I'm not understanding*, ne *I am understanding*.",
-   bank=["don't", "understand", "am", "understanding"])
-# m4 relationships: understand in a typed gap
-gp(T, L, 3, "My grandmother ___ every word you say, but she can't answer in English. (understand)", "understands",
-   "*understand* is a state: present simple, *understands*, not *is understanding*.",
-   "*understand* ir stāvoklis: Present Simple, *understands*, nevis *is understanding*.")
+# ── x_mental_cont: thinking verbs ──
+# m1 work: doubt stays simple
+gp(T, L, 3, "It's nearly ten o'clock. I ___ the pharmacy is still open, but we can try. (doubt)", "doubt",
+   "*doubt* is a state of mind and is rarely continuous: *I doubt the pharmacy is still open*.",
+   "*doubt* ir domāšanas stāvoklis, un ilgstošo formu gandrīz nelieto: *I doubt the pharmacy is still open*.")
+# m2 work: consider = think about, only continuous
+gp(T, L, 3, "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)", "is considering | 's considering",
+   "*consider* in the meaning *think carefully about* is only used in the continuous: *she's considering taking early retirement*.",
+   "*consider* nozīmē *rūpīgi apsvērt* lieto tikai ilgstošajā formā: *she's considering taking early retirement*.")
+# m3 relationships: believe stays simple, even "now"
+gp(T, L, 3, "OK, I ___ you now. I'm sorry I didn't take your story seriously. (believe)", "believe",
+   "*believe* stays in the present simple, also with *now*: *I believe you now*, not *I'm believing you now*.",
+   "*believe* paliek Present Simple arī ar *now*: *I believe you now*, nevis *I'm believing you now*.")
+# m4 the meanings together
+mc(T, L, 4, "Which sentence has a mistake?", "He considers taking early retirement next year.",
+   ["I'm finding the new routine quite tiring.", "I suggest you book a table in advance.",
+    "This dress doesn't fit me any more."],
+   "*consider* meaning *think about doing* is continuous: *He's considering taking early retirement*. "
+   "*I'm finding* (a new impression), *I suggest* (the act of suggesting) and *doesn't fit* (a state) are correct.",
+   "*consider* nozīmē *apsvērt* lieto ilgstošajā formā: *He's considering taking early retirement*. "
+   "*I'm finding* (jauns iespaids), *I suggest* (ieteikums ar pašiem vārdiem) un *doesn't fit* (stāvoklis) ir pareizi.")
 
-# ── x_always_cont: always / forever + continuous ──
-# a1 lifestyle: where always goes
-od(T, L, 3, "Put the words in order.", "my flatmate is always losing his keys",
-   "*always* goes between *is* and the *-ing* form: *is always losing*. With the continuous it shows that something happens "
-   "again and again, often with irritation.",
-   "*always* stāv starp *is* un *-ing* formu: *is always losing*. Ar ilgstošo formu tas rāda, ka kaut kas notiek atkal un atkal, "
-   "bieži ar nepatiku.")
-# a2 relationships: a routine in progress at a time
-gp(T, L, 4, "Don't call us at seven: we ___ usually ___ the children to bed then. (put)", "are | 're / putting",
-   "*usually* + present continuous: a routine that is in progress at that time (*we are usually putting them to bed then*).",
-   "*usually* + Present Continuous: ierasta darbība, kas tajā laikā jau notiek (*we are usually putting them to bed then*).")
-# a3 learning: a mistake in the form
-mc(T, L, 3, "Which sentence has a mistake?", "She is always forget her password at work.",
-   ["He's constantly interrupting me in meetings.", "We usually have dinner at about seven.",
-    "My boss is forever changing the deadlines."],
-   "After *is always*, the *-ing* form: *She is always forgetting her password* (or *She always forgets*).",
-   "Aiz *is always* lieto *-ing* formu: *She is always forgetting her password* (vai *She always forgets*).")
-# a4 lifestyle: a complaint with forever
-tx(T, L, 4, "Say it as a complaint with *forever*: My brother leaves his shoes in the hall.",
-   "My brother is forever leaving his shoes in the hall. | My brother's forever leaving his shoes in the hall.",
-   "*is forever* + *-ing* shows annoyance at something that happens again and again: *He is forever leaving his shoes in the hall.*",
-   "*is forever* + *-ing* izsaka nepatiku par to, kas notiek atkal un atkal: *He is forever leaving his shoes in the hall.*")
+# ── x_always_cont: characteristic behaviour, a routine in progress ──
+# a1 relationships: a complaint (as Advanced Grammar in Use 2.3)
+tx(T, L, 4, "Answer with *constantly* and *change your mind*: \"Actually, I'll have the fish, not the pasta.\"",
+   "You're constantly changing your mind. | You are constantly changing your mind.",
+   "*be constantly* + *-ing* shows that something happens so often that it is typical of the person, often with irritation: "
+   "*You're constantly changing your mind.*",
+   "*be constantly* + *-ing* rāda, ka kaut kas notiek tik bieži, ka tas ir raksturīgi cilvēkam, bieži ar nepatiku: "
+   "*You're constantly changing your mind.*")
+# a2 work: a routine in progress at a time
+gp(T, L, 4, "Don't phone me at half past eight: I ___ usually ___ to work then. (drive)", "am | 'm / driving",
+   "*usually* + present continuous: something we regularly do that is in progress at that time (*I'm usually driving to work then*).",
+   "*usually* + Present Continuous: ierasta darbība, kas tajā laikā jau notiek (*I'm usually driving to work then*).")
+# a3 the form: where forever goes
+mc(T, L, 3, "Which sentence has a mistake?", "My neighbour forever is borrowing my tools.",
+   ["He's always offering to help with the shopping.", "At eight I'm usually driving to work.",
+    "She constantly checks her phone in meetings."],
+   "*forever*, *always*, *constantly* go after *is*: *My neighbour is forever borrowing my tools.*",
+   "*forever*, *always*, *constantly* stāv aiz *is*: *My neighbour is forever borrowing my tools.*")
+# a4 relationships: the word order of a complaint
+od(T, L, 3, "Put the words in order.", "you're constantly interrupting me when I'm speaking",
+   "*constantly* goes between *you're* and the *-ing* form; the *when*-part can come first or second.",
+   "*constantly* stāv starp *you're* un *-ing* formu; daļa ar *when* var būt pirmā vai otrā.",
+   also=["when I'm speaking you're constantly interrupting me"])

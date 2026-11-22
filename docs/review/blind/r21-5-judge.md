@@ -1,0 +1,51 @@
+# r21-5 judge
+
+47 decisions: keep 24, fix 8, practice_only 6, accept 8, remove 1
+
+- r21-5-001: **keep**. Real B1 mistake (*is wanting*; the card's watch line: state verbs stay simple); the three right sentences are about three different things; the explanation uses this task's own sentence.
+- r21-5-003: **fix**. The instruction named the meaning and so gave the answer away, and without it *walked* is correct English. Dropped the instruction and replaced *walked* with *was walk*, a mistake the past_continuous card lists (*I [[was work]] when he called*).
+- r21-5-004: **fix**. Already a learning task, but *I will start waiting in an hour from now* is not a believable misunderstanding. Replaced it with a habit reading, which a learner could really pick.
+- r21-5-005: **keep**. *How long have they waited?* changes the given verb form; the task asks for a question about *They have been waiting*, so only that form is the answer.
+- r21-5-007: **fix**. *The project has finished.* is correct English (finish without an object) and close in meaning, so it cannot be a wrong option. Replaced it with *has being finished*, the card's watch line (*been*, not *being*).
+- r21-5-008: **fix**. Gate long_frame and reader: the frame was needed only because *Someone checks the files on Monday* is correct English. Removed the frame and that option; the wrong options are now the card's mistakes (*will announced*, *will be tell*) plus a dropped passive.
+- r21-5-009: **practice_only**. Correct, but far too easy for B1.2: only *Will* goes with *be explained*, and *Do / Are / Have* are rejected at once.
+- r21-5-013: **fix**. Learning task; *We booked early* and *We booked it early* were near-copies. Replaced the second with a believable misreading of the result clause (*We got a cheaper flight*).
+- r21-5-014: **keep**. Both natural orders are already accepted. Reader 2's orders (*the alarm goes off if everyone leaves the building*) turn cause and result around and make no sense here; reader 2's other answers were the key itself (list format).
+- r21-5-015: **accept**. The fronted *because* clause is natural and means the same (both clause orders around *because* are accepted). Rejected: *he said he was ill because he couldn't come* and *he couldn't come because he said he was ill* (other meaning), and reader 1's order with *he said* at the end (needs a comma, unnatural).
+- r21-5-016: **fix**. The sentence stays: *next week → the next week* after a past reporting verb is correct reported speech (card: *tomorrow → the next day*), and placing *the* is the point. The explanation did not talk about this sentence at all; new explanation with its own sentence.
+- r21-5-017: **keep**. Only *if I was* fits; the card teaches *asked* + *if / whether* + statement order. The wrong options are the card's mistakes (question order, *that*).
+- r21-5-018: **accept**. Both readers' fronted *every sunday* orders are natural English and mean the same; the two clause orders are already accepted.
+- r21-5-019: **keep**. *Did ... used to* is the card's listed mistake (*I didn't [[used to]] like fish*), so *used* is a valid wrong card; *Do ... use* is wrong for a past habit.
+- r21-5-022: **keep**. *didn't used to* is the card's listed mistake (*I didn't [[used to]] like fish*); the teacher allows it as a wrong option (11 November).
+- r21-5-023: **keep**. Both clause orders are already accepted; reader 2's flag came from its list format.
+- r21-5-024: **practice_only**. Too easy for B1.1: *Who did* / *What did* before *phoned* are rejected at once. The explanation also used another sentence (*Who called?*); new explanation with this task's sentence.
+- r21-5-025: **keep**. It tests the card's own point ("*can* has no future or perfect form: use *be able to*") and its listed mistake *will can*; fine for B1.1.
+- r21-5-026: **fix**. *by someone* is redundant but correct and must be accepted (as in the umbrella task); *could've* added. *prevented* changes the verb and is rejected. The explanation used other sentences; new one with this sentence.
+- r21-5-028: **fix**. *amaze / amazes* are verbs and can be rejected without knowing the point (*an* also helps). Rewritten so only *-ing / -ed* decides, both forms in one sentence, from the card's rule (*-ing* causes the feeling, *-ed* has it).
+- r21-5-029: **keep**. *in a beautiful old stone cottage they live* is not a natural order (fronted phrase, 4 November rule). Adjective order is on the B1.2 card.
+- r21-5-030: **keep**. Learning task; only one pairing works (*so many* + countable *people*, *so much* + *noise*, *such a* + noun phrase).
+- r21-5-031: **accept**. *would you like to drink something* is correct English with the same cards and meaning.
+- r21-5-033: **keep**. *How often do the machines check?* has no object and makes no sense; only *are checked* fits.
+- r21-5-034: **remove**. Matching by world knowledge (what glass or paper is made from); the form is the same in all four (*is made*), so the form never decides (rule of 21 November). Needs a new task.
+- r21-5-035: **keep**. Both orders are already accepted; reader 2's flag came from its list format.
+- r21-5-038: **accept**. The contraction *My umbrella's been taken.* is correct and the checker does not work out *'s*. *stolen* changes the verb: rejected.
+- r21-5-039: **keep**. Learning task; each passive matches only its own active sentence.
+- r21-5-040: **accept**. *In your language, what does this word mean?* is correct and natural. Rejected: *what does this word in your language mean* (unnatural) and *what does your word mean in this language* (other meaning).
+- r21-5-041: **keep**. Only *employs* and *has* fit; *is having* is a real B1 mistake with a state verb.
+- r21-5-042: **practice_only**. Correct, but a basic fact in the present simple is an A2 point; too easy for B1.1.
+- r21-5-043: **keep**. *before he has made* does not fit a habit with *usually*; only *checks / makes*.
+- r21-5-044: **practice_only**. Correct, but a *How often* question in the present simple is an A2 point; too easy for B1.1.
+- r21-5-045: **keep**. Learning task (already practice); one pairing only, the verb decides the ending.
+- r21-5-046: **keep**. Learning task (already practice); each answer fits only one question.
+- r21-5-047: **accept**. Gate order: the statement is not possible here, but the readers' three other orders are natural and mean the same.
+- r21-5-048: **keep**. *opens* (timetable) does not fit *so everything is chaotic this week*; *was opening* clashes with *is*. Only *is opening*.
+- r21-5-049: **keep**. *didn't finish yet* is American informal; with *yet* the task is about the present perfect, so only *hasn't finished*.
+- r21-5-050: **keep**. Swapping endings breaks the verb (*I have never tried so tired*), so only one pairing; learning task.
+- r21-5-052: **keep**. Learning task; *we had dinner* means dinner started after she arrived, so only *were having* matches 'already started'.
+- r21-5-053: **keep**. *So I stopped* is what makes the walk an action in progress; without it *walked* would fit. It is needed, and only *was walking* is accepted.
+- r21-5-055: **keep**. *The house was dirty* sets a past moment: *haven't cleaned* is wrong, and *didn't clean it for weeks* does not show the time before then. Only the past perfect.
+- r21-5-056: **keep**. All four orders are already accepted.
+- r21-5-057: **accept**. *when it was raining we left the house* is the other clause order of an accepted answer (*we left the house when it was raining*).
+- r21-5-058: **practice_only**. Correct, but *yesterday* with three options makes *had to* obvious; too easy for B1.1.
+- r21-5-059: **accept**. *wasn't able to* is correct and means the same here.
+- r21-5-060: **practice_only**. Correct, but *was* for *be* at that moment is trivial for B1.2.

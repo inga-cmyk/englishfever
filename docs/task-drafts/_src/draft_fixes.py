@@ -16,11 +16,15 @@ _P5 = Path(__file__).with_name('draft_fixes_20261122d.json')   # and its last lo
 FIXES5 = json.loads(_P5.read_text()) if _P5.exists() else {}
 _P6 = Path(__file__).with_name('draft_fixes_20261122e.json')   # explanations use the task's own sentence (tester, 22 November)
 FIXES6 = json.loads(_P6.read_text()) if _P6.exists() else {}
+_P7 = Path(__file__).with_name('draft_fixes_20261122f.json')   # the B1 recheck (blind round r21, judge notes docs/review/blind/r21-*-judge.md)
+FIXES7 = json.loads(_P7.read_text()) if _P7.exists() else {}
+_P8 = Path(__file__).with_name('draft_fixes_20261122g.json')   # easy B1 indirect questions practice only (tester, 22 November)
+FIXES8 = json.loads(_P8.read_text()) if _P8.exists() else {}
 
 
 def apply(name, row):
     row = _apply(FIXES, name, row)
-    for fixes in (FIXES2, FIXES3, FIXES4, FIXES5, FIXES6):
+    for fixes in (FIXES2, FIXES3, FIXES4, FIXES5, FIXES6, FIXES7, FIXES8):
         if row is not None: row = _apply(fixes, name, row)
     return row
 

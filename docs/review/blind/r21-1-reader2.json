@@ -1,0 +1,553 @@
+[
+{
+"id": "r21-1-001",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "When I arrived, she already has left."
+},
+{
+"id": "r21-1-002",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "whenever"
+},
+{
+"id": "r21-1-003",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option A is arguably acceptable as a mixed/habitual-result sentence; borderline, may not be 'wrong' for some learners.",
+"answer": "If people don't sleep enough, they would be grumpy."
+},
+{
+"id": "r21-1-004",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "If I will win the lottery, I would buy an island."
+},
+{
+"id": "r21-1-005",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Meta-grammar question (report a yes/no question); tests terminology, not use.",
+"sense_problem": "",
+"answer": "if or whether"
+},
+{
+"id": "r21-1-006",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of task 012.",
+"answer": "He asked me where did I live."
+},
+{
+"id": "r21-1-007",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Options A and C are near-copies (cold/shrinks vs hot/expands).",
+"answer": "If metal will get hot, it expands."
+},
+{
+"id": "r21-1-008",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "If I will see her, I will tell her."
+},
+{
+"id": "r21-1-009",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "If I would know, I would tell you."
+},
+{
+"id": "r21-1-010",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She told that she was tired."
+},
+{
+"id": "r21-1-011",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option D can be correct if the event is still in the future; strict backshift rule only. Also C 'tomorrow' is acceptable if said the same day.",
+"answer": "They said they will come the next day."
+},
+{
+"id": "r21-1-012",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She asked me where did I live."
+},
+{
+"id": "r21-1-013",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Did you used to' is widely written/accepted informally; borderline.",
+"answer": "Did you used to play chess?"
+},
+{
+"id": "r21-1-014",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": [
+"enough"
+]
+},
+{
+"id": "r21-1-015",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The book which I bought it was boring."
+},
+{
+"id": "r21-1-016",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "I'll text you when I will arrive."
+},
+{
+"id": "r21-1-017",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy; A2-level error.",
+"sense_problem": "",
+"answer": "Who did called you last night?"
+},
+{
+"id": "r21-1-018",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B1.2 (did + past form error, A2 level).",
+"sense_problem": "",
+"answer": "What did happened at the meeting?"
+},
+{
+"id": "r21-1-019",
+"other_correct": [
+[
+"What made the noise?"
+],
+[
+"What was it that made that noise?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Markdown asterisks around Something/What; answer is near-copy of the given sentence (replace Something with What).",
+"level_problem": "",
+"sense_problem": "",
+"answer": "What made that noise?"
+},
+{
+"id": "r21-1-020",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She promised helping me with the move."
+},
+{
+"id": "r21-1-021",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She enjoys to cook for her friends."
+},
+{
+"id": "r21-1-022",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She might to be late."
+},
+{
+"id": "r21-1-023",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "We had the house paint last week."
+},
+{
+"id": "r21-1-024",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "I haven't had my eyes test yet."
+},
+{
+"id": "r21-1-025",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "He explained me the problem."
+},
+{
+"id": "r21-1-026",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "He described me the house."
+},
+{
+"id": "r21-1-027",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "I am really tiring after work."
+},
+{
+"id": "r21-1-028",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She has a wooden round table."
+},
+{
+"id": "r21-1-029",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "We ate in an Italian small restaurant."
+},
+{
+"id": "r21-1-030",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of task 014.",
+"answer": "enough"
+},
+{
+"id": "r21-1-031",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "He speaks Spanish fluent."
+},
+{
+"id": "r21-1-032",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She is such tired."
+},
+{
+"id": "r21-1-033",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The machines is checked every day."
+},
+{
+"id": "r21-1-034",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The museum is visit by many tourists."
+},
+{
+"id": "r21-1-035",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The bank was robbing last night."
+},
+{
+"id": "r21-1-036",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The report is being write now."
+},
+{
+"id": "r21-1-037",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The rooms is being cleaned."
+},
+{
+"id": "r21-1-038",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'has been sign' is more a typo than a believable learner error.",
+"answer": "The contract has been sign."
+},
+{
+"id": "r21-1-039",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "Our manager don't like long meetings."
+},
+{
+"id": "r21-1-040",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "He doesn't goes to the gym on Sundays."
+},
+{
+"id": "r21-1-041",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "We're knowing the answer, but we can't say it."
+},
+{
+"id": "r21-1-042",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'is have' is an unlikely learner error.",
+"answer": "The manager is have a meeting with a client."
+},
+{
+"id": "r21-1-043",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'didn't used to' is common in informal British English and listed in some dictionaries; contested as wrong.",
+"answer": "I didn't used to like olives."
+},
+{
+"id": "r21-1-044",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "since"
+},
+{
+"id": "r21-1-045",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "I have visited that museum last weekend."
+},
+{
+"id": "r21-1-046",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She has lived in Paris since five years."
+},
+{
+"id": "r21-1-047",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "I hadn't never seen it before."
+},
+{
+"id": "r21-1-048",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 016 and 053.",
+"answer": "When I will arrive, I'll text you."
+},
+{
+"id": "r21-1-049",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "She is always check her messages before she gets out of bed."
+},
+{
+"id": "r21-1-050",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 041.",
+"answer": "I am knowing the answer, but I don't want to say it yet."
+},
+{
+"id": "r21-1-051",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'didn't used to' is common informal usage; contested as wrong. Near-duplicate of 043.",
+"answer": "We didn't used to have a car when I was young."
+},
+{
+"id": "r21-1-052",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "I have finished school in 2019."
+},
+{
+"id": "r21-1-053",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "When I will see him, I'll tell him about the problem."
+},
+{
+"id": "r21-1-054",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "as soon as"
+},
+{
+"id": "r21-1-055",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "The weather today is much more warmer than yesterday."
+},
+{
+"id": "r21-1-056",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "He is by far the more experienced player in the team."
+},
+{
+"id": "r21-1-057",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "Despite it was late, they kept working."
+},
+{
+"id": "r21-1-058",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": [
+"Although"
+]
+},
+{
+"id": "r21-1-059",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "too much"
+},
+{
+"id": "r21-1-060",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "",
+"answer": "enough"
+}
+]

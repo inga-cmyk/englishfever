@@ -1,0 +1,694 @@
+[
+{
+"id": "r21-3-001",
+"answer": [
+"leaves"
+],
+"other_correct": [
+[
+"is leaving"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not signalled: 'is leaving' (arrangement) is also correct for a ticket/timetable context.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-002",
+"answer": "She doesn't have any money.",
+"other_correct": [
+"She hasn't got any money.",
+"She hasn't any money.",
+"She does not have any money.",
+"She has not got any money."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-003",
+"answer": "The weather is getting colder.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-004",
+"answer": "finished",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Simple past with 'last March' is A2, too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-005",
+"answer": "I woke up late. Then I missed the bus.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Open writing; unclear which 'forms' are checked (only Then/After that?).",
+"level_problem": "Two simple past sentences: A2 task.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-006",
+"answer": "I have known Tom for ten years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'I know Tom ten years' is an unlikely, random wrong option."
+},
+{
+"id": "r21-3-007",
+"answer": "I have seen him yesterday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-008",
+"answer": "have lost",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-009",
+"answer": "saw",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Plain past simple with 'last night' is A2, too easy for B1.2.",
+"sense_problem": "''ve seen' and 'have seen' are the same answer twice; 'was see' is not a believable learner error."
+},
+{
+"id": "r21-3-010",
+"answer": "have been working",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line (e.g. 'Choose the correct option').",
+"level_problem": "",
+"sense_problem": "'am been working' and 'have be working' are random strings, not believable mistakes; 'has been working' is the only real distractor."
+},
+{
+"id": "r21-3-011",
+"answer": "had ... started",
+"other_correct": "",
+"wrong_options_that_fit": "'was ... starting' is grammatical English ('the film was already starting') though it clashes with 'began at 7.00'.",
+"instruction_problem": "Two gaps in one option with '...' is a little confusing.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-012",
+"answer": "The train left.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Question quotes 'I got to the station' but option says 'I got there'; 'We can't know' is odd (no 'we' in sentence).",
+"level_problem": "",
+"sense_problem": "'Both together' and 'We can't know' are weak distractors."
+},
+{
+"id": "r21-3-013",
+"answer": "is about",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line; 'be about to' structure is fully visible only via 'to start'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-014",
+"answer": "The report and what happens to it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'focus' is abstract for B1.1; options are vague and long, passive meaning rather than form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-015",
+"answer": "Are the tickets checking at the door?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-016",
+"answer": "is being built",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-017",
+"answer": "The guard told me to wait there.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Options 2-4 are believable but 'told me that I wait here' is a strange error."
+},
+{
+"id": "r21-3-018",
+"answer": "Could you tell me where the station is?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for B1.1 (obvious word order, one option has no verb).",
+"sense_problem": "'where's the station is' is an impossible string."
+},
+{
+"id": "r21-3-019",
+"answer": [
+"if"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'whether' would be correct but is not a card; 'that' vs 'if' is answerable from 'had seen the film' only by meaning.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-020",
+"answer": [
+"didn't have"
+],
+"other_correct": [
+[
+"did not have"
+],
+[
+"hadn't"
+],
+[
+"had not"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'hadn't any money' is correct but old-fashioned; gap needs both forms accepted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-021",
+"answer": "am used to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Meaning is clear.",
+"level_problem": "",
+"sense_problem": "'am use to' and 'use to' are typo-type mistakes; fine."
+},
+{
+"id": "r21-3-022",
+"answer": "I used to have a bike when I was ten.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'I used have' and 'I am used to have' are plausible errors; ok."
+},
+{
+"id": "r21-3-023",
+"answer": "whose",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-024",
+"answer": "The man whose dog can open doors lives next door.",
+"other_correct": [
+"The man, whose dog can open doors, lives next door."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No clue which man is the subject; also 'The man who lives next door has a dog that...' avoids 'whose' (instruction forces whose, fine).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-025",
+"answer": "My uncle, who is a chef, lives in Spain.",
+"other_correct": [
+"My uncle, who lives in Spain, is a chef.",
+"My uncle lives in Spain and he is a chef.",
+"My uncle lives in Spain and is a chef.",
+"My uncle lives in Spain, where he is a chef.",
+"My uncle is a chef and he lives in Spain.",
+"My uncle, a chef, lives in Spain."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No connector or structure given, so many correct answers; unclear which is wanted (relative clause?).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-026",
+"answer": [
+"be"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-027",
+"answer": "this software is used by millions of people",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B1.1: passive is visible from cards, little challenge.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-028",
+"answer": "This factory was built by the company in 1990.",
+"other_correct": [
+"This factory was built in 1990 by the company."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-029",
+"answer": [
+"feel",
+"don't get"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy (A2 present simple agreement).",
+"sense_problem": "'doesn't get/feels' are wrong by agreement only; weak distractors."
+},
+{
+"id": "r21-3-030",
+"answer": "I never eat fast food.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-031",
+"answer": "What time does the bank open?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level (present simple question).",
+"sense_problem": ""
+},
+{
+"id": "r21-3-032",
+"answer": "We aren't staying at a hotel.",
+"other_correct": [
+"We're not staying at a hotel.",
+"We are not staying at a hotel."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-033",
+"answer": "I have learned English since 2019.",
+"other_correct": [
+"I have learnt English since 2019.",
+"I've learned English since 2019.",
+"I have been learning English since 2019.",
+"I've been learning English since 2019.",
+"Since 2019 I have been learning English."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Rewrite with since' but the learner must also change tense; fine but several tenses accepted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-034",
+"answer": "We haven't visited that museum.",
+"other_correct": [
+"We have not visited that museum.",
+"We've not visited that museum.",
+"We have never visited that museum."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'never' version is arguably also negative.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-035",
+"answer": "Have your parents ever travelled abroad?",
+"other_correct": [
+"Have your parents ever traveled abroad? (US spelling)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-036",
+"answer": "leaves",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No signal that timetable present is wanted; fine.",
+"level_problem": "Present for timetable is A2/B1 low; ok.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-037",
+"answer": [
+"have",
+"been drinking"
+],
+"other_correct": [
+[
+"are",
+"drinking"
+],
+[
+"have",
+"drunk"
+],
+[
+"did",
+"drink"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not signalled; 'Why are you drinking' (temporary habit) fits 'this week' and 'You usually only drink tea' equally well; 'have you drunk' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-038",
+"answer": "I stayed at home because I felt ill.",
+"other_correct": [
+"Because I felt ill, I stayed at home.",
+"I stayed at home because I was ill."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-039",
+"answer": "were having",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-040",
+"answer": "have lived",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-041",
+"answer": [
+"come"
+],
+"other_correct": [
+[
+"have come"
+],
+[
+"get"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'have come' (until you've come back) is also correct; 'get' is not the given verb.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-042",
+"answer": "might",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Only 'might' fits; fine."
+},
+{
+"id": "r21-3-043",
+"answer": "is checked",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'was check' is an impossible string."
+},
+{
+"id": "r21-3-044",
+"answer": "The winner will be announced on Friday.",
+"other_correct": [
+"The winner is going to be announced on Friday.",
+"The winner will be announced by them on Friday.",
+"The winner is to be announced on Friday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-045",
+"answer": "falls",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Zero conditional is A2/B1 low; fine.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-046",
+"answer": [
+"enjoyed",
+"wanted"
+],
+"other_correct": [
+[
+"am enjoying",
+"wants"
+],
+[
+"'m enjoying",
+"wants"
+],
+[
+"didn't enjoy",
+"wanted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not signalled: present 'I'm enjoying the party, but Chris wants to go home' is also natural; 'didn't enjoy ... but Chris wanted' is less logical but grammatical.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-047",
+"answer": [
+"Did",
+"see"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Simple past question is A2, too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-048",
+"answer": [
+"has already seen"
+],
+"other_correct": [
+[
+"'s already seen"
+],
+[
+"had already seen"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not signalled: 'had already seen' is also correct (past narrative); American 'already saw' also possible. Gap holds three words with two bracket words, order must be inferred.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-049",
+"answer": "This bag is slightly bigger than that one.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy; 'slightly' is a clue word only.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-050",
+"answer": "this job is much more stressful than my last one",
+"other_correct": [
+"my last job is much more stressful than this one",
+"this one is much more stressful than my last job",
+"my last one is much more stressful than this job"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards allow more than one correct order (which job is compared).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-051",
+"answer": [
+[
+"The new phone is much faster.",
+"a big difference"
+],
+[
+"The new phone is a bit faster.",
+"a small difference"
+],
+[
+"The new phone is not as fast.",
+"the old one is faster"
+],
+[
+"The new phone is the fastest.",
+"no other phone is faster"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'not as fast' could also be read as 'a (big/small) difference'; weak."
+},
+{
+"id": "r21-3-052",
+"answer": "the flat we saw yesterday is not as bright as this one",
+"other_correct": [
+"this flat is not as bright as the one we saw yesterday",
+"this one is not as bright as the flat we saw yesterday",
+"the one we saw yesterday is not as bright as this flat"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "More than one correct order.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-053",
+"answer": [
+"have been",
+"went"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'have been' vs 'have gone' is classic B1; fine.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-054",
+"answer": [
+"After that"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level; very easy.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-055",
+"answer": "I had to get up early.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-056",
+"answer": "You shouldn't stay up late.",
+"other_correct": [
+"You should not stay up late."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "The original 'You should stay up late' is odd advice (adult, illogical without context)."
+},
+{
+"id": "r21-3-057",
+"answer": "I will have to pay.",
+"other_correct": [
+"I'll have to pay."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-058",
+"answer": "didn't have to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Meaning: 'couldn't study' is also logical-ish but wrong for cancellation; ok.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-3-059",
+"answer": "seeing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2/B1 border; only three options, easy.",
+"sense_problem": ""
+},
+{
+"id": "r21-3-060",
+"answer": [
+"said"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Grammar terms none; markup asterisks around said/told visible to learner.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

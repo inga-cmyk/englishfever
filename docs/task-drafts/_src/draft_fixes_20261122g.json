@@ -1,0 +1,68 @@
+{
+ "b1-cond-rep-1.csv": [
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i'd like to know how much this costs"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "can you tell me if this bus goes to the airport"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  }
+ ],
+ "iq-b1-6.csv": [
+  {
+   "match": [
+    "mcq",
+    "Choose the correct option: Could you tell me what this word ___ ?",
+    "means"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i wonder why my laptop is so slow"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "can you tell me how the coffee machine works"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  }
+ ],
+ "rq-order-1.csv": [
+  {
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "do you know if there is a café near the station"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  }
+ ]
+}

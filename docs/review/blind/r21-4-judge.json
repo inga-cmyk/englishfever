@@ -1,0 +1,428 @@
+[
+ {
+  "id": "r21-4-001",
+  "decision": "fix",
+  "why": "Reader right: three options start with No and one with Yes, so the odd one out gives the key away. Now the learner picks the sentence itself; the wrong options are believable misreadings. Already practice only (role learn).",
+  "fix": {
+   "q": "Which sentence sounds more temporary?",
+   "correct": "I'm living with my parents.",
+   "wrong": [
+    "I live with my parents.",
+    "Both sound the same.",
+    "Both sound permanent."
+   ],
+   "why": "*I'm living with my parents* sounds temporary (for now, not for ever). *I live with my parents* sounds permanent.",
+   "why_lv": "*I'm living with my parents* izklausās pēc pagaidu situācijas (pagaidām, ne uz visiem laikiem). *I live with my parents* izklausās pastāvīgi."
+  }
+ },
+ {
+  "id": "r21-4-003",
+  "decision": "fix",
+  "why": "'I was sending the email yesterday' is correct English (both readers), and 'yesterday needs the past simple' alone is an A2.2 point. New B1.2 frame with two clauses; both wrong options are the card's own mistake (card: \"I [[have seen]] him yesterday\" → \"I [[saw]] him yesterday\"; signals *just, yet*).",
+  "fix": {
+   "q": "Choose the correct option: I ___ the email yesterday, but the client hasn't answered yet.",
+   "correct": "sent",
+   "wrong": [
+    "have sent",
+    "have just sent"
+   ],
+   "why": "*Yesterday* is a finished time, so it needs the past simple: *I sent the email yesterday*. *Hasn't answered yet* is the present perfect: the situation now.",
+   "why_lv": "*Yesterday* ir pabeigts laiks, tāpēc vajag Past Simple: *I sent the email yesterday*. *Hasn't answered yet* ir Present Perfect: situācija tagad."
+  }
+ },
+ {
+  "id": "r21-4-004",
+  "decision": "keep",
+  "why": "The meaning in brackets is needed (learners do not know 'arrangement'), and two wrong options also have an exact time (I saw … at 3 pm, every year in May), so it does not give the key away. Already practice only."
+ },
+ {
+  "id": "r21-4-006",
+  "decision": "keep",
+  "why": "Gate long_frame: covered, the situation is needed: without it 'I'm carrying one of those for you' and 'I carried one of those for you' are possible English. With it only the offer with will fits (card: \"*will*: quick decisions, offers, promises\")."
+ },
+ {
+  "id": "r21-4-007",
+  "decision": "fix",
+  "why": "Both readers: 'You send the invoices on Fridays' and 'I think you send…' are correct English; only a style judgement ruled them out, and the long situation (gate long_frame) carried the answer. New gap choice where only the form decides; both wrong options are card mistakes (\"English [[is speak]] here\", \"These phones [[make]] in China\").",
+  "fix": {
+   "q": "Choose the correct option: The invoices ___ every Friday, so please send me yours by Thursday.",
+   "correct": "are sent",
+   "wrong": [
+    "are send",
+    "send"
+   ],
+   "why": "The invoices do not send themselves: someone sends them. So we use *are* + 3rd form: *The invoices are sent every Friday*.",
+   "why_lv": "Rēķini paši sevi nesūta: tos kāds nosūta. Tāpēc lieto *are* + 3. forma: *The invoices are sent every Friday*."
+  }
+ },
+ {
+  "id": "r21-4-008",
+  "decision": "keep",
+  "why": "The reader confirms the key; only the in-progress option fits 'now'. Already practice only."
+ },
+ {
+  "id": "r21-4-011",
+  "decision": "fix",
+  "why": "Gate long_frame and reader 2: the situation is not needed. 'If you forgot it again, you'll be locked out' can be correct English (a real past condition), and 'you locked out' is a slip nobody makes. New task with the two card mistakes (\"If it [[will rain]]\", \"If she [[call]]\").",
+  "fix": {
+   "q": "Choose the correct option: If Tom ___ his password again, he'll be locked out of his account.",
+   "correct": "forgets",
+   "wrong": [
+    "will forget",
+    "forget"
+   ],
+   "why": "After *if* we use the present simple, also for the future, with *-s* after *he*: *If Tom forgets his password again, he'll be locked out*.",
+   "why_lv": "Pēc *if* lieto Present Simple arī nākotnei, ar *-s* aiz *he*: *If Tom forgets his password again, he'll be locked out*."
+  }
+ },
+ {
+  "id": "r21-4-012",
+  "decision": "fix",
+  "why": "Reader: 'relationship' is vague; the rules ask the matching instruction to name what is matched. Pairs stay (one sensible pairing).",
+  "fix": {
+   "q": "Match each sentence with its meaning."
+  }
+ },
+ {
+  "id": "r21-4-013",
+  "decision": "accept",
+  "why": "Both readers' answer is the key (the 'not accepted' line is only letter case). 'they said they had eaten already' is correct, natural English.",
+  "accept": [
+   [
+    "they said they had eaten already"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-014",
+  "decision": "keep",
+  "why": "The readers' answer is the key (letter case only); no other order."
+ },
+ {
+  "id": "r21-4-015",
+  "decision": "fix",
+  "why": "Key right; 'to be' after asked + person is the card line \"Requests and orders: *told / asked* + person + (*not*) *to* + base verb\", fine at B1.2. The explanation was about reported questions; new explanation with this task's own sentence.",
+  "fix": {
+   "why": "A request is reported with *asked* + person + *to* + verb: *I asked her to be quiet.*",
+   "why_lv": "Lūgumu atstāsta ar *asked* + cilvēks + *to* + darbības vārds: *I asked her to be quiet.*"
+  }
+ },
+ {
+  "id": "r21-4-016",
+  "decision": "keep",
+  "why": "Easy for a strong B1 learner (tester, 21 November), but it is already practice only (role learn); 'did we' is the card's own mistake (\"He asked where [[did I live]]\")."
+ },
+ {
+  "id": "r21-4-017",
+  "decision": "fix",
+  "why": "*warned, advised, offered* are not on the B1.2 rep_questions card (it teaches only \"*told / asked* + person + (*not*) *to* + base verb\" and *asked* + *if* / question word); they belong to the B2.2 reporting-verbs card. Also 'request' did not fit advice and an offer. New pairs only from this card, four different topics, one sensible pairing; the help card examples (where I lived, if I liked coffee) are not used.",
+  "fix": {
+   "q": "Match each sentence with its report.",
+   "pairs": [
+    [
+     "'Please sit down.'",
+     "She asked me to sit down."
+    ],
+    [
+     "'Don't touch the screen.'",
+     "She told me not to touch the screen."
+    ],
+    [
+     "'Are you free on Friday?'",
+     "She asked me if I was free on Friday."
+    ],
+    [
+     "'What time does the train leave?'",
+     "She asked me what time the train left."
+    ]
+   ],
+   "why": "Requests and orders: *asked / told* + person + (*not*) *to*: *She told me not to touch the screen.* Questions: *asked* + *if* or a question word + statement order, tense one step back: *She asked me what time the train left.*",
+   "why_lv": "Lūgumi un rīkojumi: *asked / told* + cilvēks + (*not*) *to*: *She told me not to touch the screen.* Jautājumi: *asked* + *if* vai jautājamais vārds + stāstījuma vārdu secība, laiks vienu soli atpakaļ: *She asked me what time the train left.*"
+  }
+ },
+ {
+  "id": "r21-4-018",
+  "decision": "keep",
+  "why": "Reader 2's order (to get used to the cold weather took me a long time) is not natural English; the key is the only natural order."
+ },
+ {
+  "id": "r21-4-019",
+  "decision": "accept",
+  "why": "'i am not so used to getting up early' is correct, natural English with the same cards. 'i am so not used to …' is slang, not accepted.",
+  "accept": [
+   [
+    "i am not so used to getting up early"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-020",
+  "decision": "fix",
+  "why": "Reader's 'wait until the doctor calls your name here' puts 'here' with 'calls' and is not natural: rejected; both natural orders are accepted. But the explanation spoke of will / going to, which this sentence does not have: new explanation with its own sentence.",
+  "fix": {
+   "why": "*Until* = up to that moment. After *until* we use the present simple for the future: *Wait here until the doctor calls your name.*",
+   "why_lv": "*Until* nozīmē „līdz tam brīdim”. Pēc *until* nākotnes nozīmē lieto Present Simple: *Wait here until the doctor calls your name.*"
+  }
+ },
+ {
+  "id": "r21-4-022",
+  "decision": "keep",
+  "why": "Reader only notes it is easy; refuse + to is on the card (\"verb + *to* + base verb: … *promise, manage, refuse*\") and fits B1.1."
+ },
+ {
+  "id": "r21-4-023",
+  "decision": "keep",
+  "why": "Easy (both readers), but it is already practice only (role learn); one sensible pairing."
+ },
+ {
+  "id": "r21-4-024",
+  "decision": "keep",
+  "why": "The reader agrees that 'hasn't' is wrong (double negative); the key is right (card: \"*no-* already makes the sentence negative: no double negative\")."
+ },
+ {
+  "id": "r21-4-025",
+  "decision": "keep",
+  "why": "Positive comment only."
+ },
+ {
+  "id": "r21-4-028",
+  "decision": "accept",
+  "why": "Correct alternatives: 'today' before its clause, the fronted time phrase, and the two and-clauses swapped. 'it was built in 1932 and the bridge is still used today' (pronoun before its noun) is not natural: rejected.",
+  "accept": [
+   [
+    "the bridge was built in 1932 and today it is still used",
+    "in 1932 the bridge was built and it is still used today",
+    "the bridge is still used today and it was built in 1932"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-029",
+  "decision": "fix",
+  "why": "'My laptop got stolen yesterday' is correct English (both readers) and is added. Both readers found 'Start with' alone unclear; the rules ask a rewrite to say what to do (*Rewrite the sentence. Start with …*).",
+  "fix": {
+   "q": "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+   "answers": [
+    [
+     "My laptop was stolen yesterday.",
+     "My laptop was stolen by someone yesterday.",
+     "Yesterday my laptop was stolen.",
+     "Yesterday my laptop was stolen by someone.",
+     "My laptop got stolen yesterday.",
+     "Yesterday my laptop got stolen."
+    ]
+   ],
+   "why": "*My laptop* did not do the stealing, so we use *was* + 3rd form: *My laptop was stolen yesterday.* *Got stolen* is also correct, more informal.",
+   "why_lv": "Klēpjdators pats neko nezaga, tāpēc lieto *was* + 3. forma: *My laptop was stolen yesterday.* Arī *got stolen* ir pareizi, tikai sarunvalodā."
+  }
+ },
+ {
+  "id": "r21-4-030",
+  "decision": "accept",
+  "why": "'she eats out rarely because …' is correct English (end position of rarely) and is added with its fronted version. 'she prefers to cook at home because she rarely eats out' turns the cause round and does not make sense: rejected.",
+  "accept": [
+   [
+    "she eats out rarely because she prefers to cook at home",
+    "because she prefers to cook at home she eats out rarely"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-031",
+  "decision": "keep",
+  "why": "The readers' answer is the key; 'so we must hurry our train leaves…' is not a sentence."
+ },
+ {
+  "id": "r21-4-032",
+  "decision": "accept",
+  "why": "'does your brother work for the same company still' is less natural but correct (British end position of still).",
+  "accept": [
+   [
+    "does your brother work for the same company still"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-033",
+  "decision": "keep",
+  "why": "'at a school near the station he teaches maths' fronts a place phrase, which the rules do not accept (fronted phrases are not natural orders); 'the school near a station' is odd."
+ },
+ {
+  "id": "r21-4-034",
+  "decision": "keep",
+  "why": "Reader 1 finds it easy, but the second gap tests a state verb (wants, not is wanting), a B1.1 point of the card; the sentence has two clauses."
+ },
+ {
+  "id": "r21-4-035",
+  "decision": "keep",
+  "why": "'The lesson started at 9.30, so we need to be there early' does not make sense (being there early for a lesson that has already started); the timetable use (card: \"Timetables (*the train leaves at 7.45*)\") decides."
+ },
+ {
+  "id": "r21-4-036",
+  "decision": "practice_only",
+  "why": "Correct, but don't + be in a short sentence is an A2 point (rules: negatives are A2); too easy for B1.1."
+ },
+ {
+  "id": "r21-4-037",
+  "decision": "practice_only",
+  "why": "Both readers: a basic present simple negative with the verb given is A2. 'isn't eating' does not fit a permanent fact (she is a vegetarian): rejected."
+ },
+ {
+  "id": "r21-4-038",
+  "decision": "practice_only",
+  "why": "With no time word 'did … cost', 'will … cost' and 'would … cost' are also correct (both readers) and are added; a basic does-question is A2, so the task stays for practice only.",
+  "accept": [
+   [
+    "did",
+    "will",
+    "would"
+   ],
+   []
+  ]
+ },
+ {
+  "id": "r21-4-039",
+  "decision": "practice_only",
+  "why": "Both readers: making a present simple sentence negative is A2 (rules: negatives and questions are A2)."
+ },
+ {
+  "id": "r21-4-040",
+  "decision": "keep",
+  "why": "The reader confirms the key; 'did … spoke' is a real learner mistake and 'speak' is not in the bank."
+ },
+ {
+  "id": "r21-4-041",
+  "decision": "fix",
+  "why": "Reader 1: with no time word 'was looking' can be read as possible English. A time word makes the present clear (rules: an unambiguous time word, not an explanation).",
+  "fix": {
+   "q": "Anna ___ for a new flat at the moment because her rent is too high.",
+   "why": "*At the moment*, a temporary situation: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+   "why_lv": "*At the moment*, pagaidu situācija: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*"
+  }
+ },
+ {
+  "id": "r21-4-042",
+  "decision": "accept",
+  "why": "''s painting' (and ''s been painting') are contractions of the key that the checker cannot work out. 'is going to paint' does not explain the noise now: rejected.",
+  "accept": [
+   [
+    "'s painting",
+    "'s been painting"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-043",
+  "decision": "keep",
+  "why": "Both readers find only the illogical reversed order; the key already has both sensible orders (home with the train or with the taxi), so the note 'more than one answer' is true."
+ },
+ {
+  "id": "r21-4-044",
+  "decision": "accept",
+  "why": "'she opened and read the letter twice before she answered it' uses every card and is correct, natural English; added with its fronted version. 'she opened it and read the letter…' (pronoun before its noun) and 'answered twice' are rejected.",
+  "accept": [
+   [
+    "she opened and read the letter twice before she answered it",
+    "before she answered it she opened and read the letter twice"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-046",
+  "decision": "keep",
+  "why": "Positive comment only."
+ },
+ {
+  "id": "r21-4-047",
+  "decision": "keep",
+  "why": "Reader agrees both wrong cards are wrong here ('are waiting' with for an hour, 'wasn't coming' with have waited … still); 'have been waiting' is not a card, so the key is the only fit."
+ },
+ {
+  "id": "r21-4-048",
+  "decision": "keep",
+  "why": "Reader only notes the distractors are easy; 'are' is the card's own mistake (\"How long [[are you learning]] English?\")."
+ },
+ {
+  "id": "r21-4-050",
+  "decision": "practice_only",
+  "why": "No time context: 'is working' (a temporary job), 'is helping' (this weekend) and the past are also correct (both readers) and are added; regular jobs and habits in the present simple are A2, so practice only.",
+  "accept": [
+   [
+    "is working",
+    "worked"
+   ],
+   [
+    "is helping",
+    "helped"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-051",
+  "decision": "fix",
+  "why": "'The road's being repaired' (a contraction the checker cannot work out) and 'The road is being repaired by them' (less natural but correct) are added; both readers found 'Start with' alone unclear, so the rewrite says what to do.",
+  "fix": {
+   "q": "Rewrite the sentence. Start with *The road*: They are repairing the road.",
+   "answers": [
+    [
+     "The road is being repaired.",
+     "The road's being repaired.",
+     "The road is being repaired by them."
+    ]
+   ],
+   "why": "The work is going on now, and who does it is not important: *is being* + 3rd form: *The road is being repaired.*",
+   "why_lv": "Darbs notiek tagad, un nav svarīgi, kas to dara: *is being* + 3. forma: *The road is being repaired.*"
+  }
+ },
+ {
+  "id": "r21-4-052",
+  "decision": "accept",
+  "why": "'would watch' (a repeated past action) is correct English here.",
+  "accept": [
+   [
+    "would watch"
+   ]
+  ]
+ },
+ {
+  "id": "r21-4-053",
+  "decision": "practice_only",
+  "why": "'Since 2010' already forces the present perfect, and 'I still work here' says it again, so the second sentence gives the tense away (reader 1); too easy as evidence for B1.1."
+ },
+ {
+  "id": "r21-4-055",
+  "decision": "fix",
+  "why": "Reader 2: after 'I didn't recognise her.' a separate 'She has changed a lot' is possible spoken English (the change is still true). One past sentence with because makes the past perfect necessary; the card's own mistake is a present perfect in a past story (\"When I arrived, the film [[has]] already started\").",
+  "fix": {
+   "q": "Choose the correct option: When we met at the station, I didn't recognise Lucy because she ___ so much.",
+   "why": "The story is in the past (*met, didn't recognise*); the change happened before that: *had* + 3rd form: *she had changed so much*.",
+   "why_lv": "Stāsts ir pagātnē (*met, didn't recognise*); pārmaiņas notika pirms tam: *had* + 3. forma: *she had changed so much*."
+  }
+ },
+ {
+  "id": "r21-4-056",
+  "decision": "keep",
+  "why": "Both opposite orders are already accepted in the key; nothing else."
+ },
+ {
+  "id": "r21-4-057",
+  "decision": "practice_only",
+  "why": "Both readers: much + a basic comparative with the adjective given is an A2 point; too easy for B1.1."
+ },
+ {
+  "id": "r21-4-058",
+  "decision": "keep",
+  "why": "The near paraphrase is the point of a meaning match; the four meanings cannot be swapped. Already practice only."
+ },
+ {
+  "id": "r21-4-060",
+  "decision": "fix",
+  "why": "'Have you to speak English at work?' is rare old British but correct English (reader 2): removed. Two card-based mistakes stay (card: \"*have to* is a normal verb … questions with *do / does*: *Do you have to go?*\").",
+  "fix": {
+   "wrong": [
+    "Must you to",
+    "Are you have to"
+   ]
+  }
+ }
+]

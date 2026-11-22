@@ -209,5 +209,12 @@
   "two_objects | A2.2 | gap | She showed her photos ___ me. | ",
   "two_objects | B1.1 | gap | She explained the problem ___ me. | ",
   "two_objects | B1.1 | mcq | Choose the correct option: He lent his car ___ his neighbour. | to"
+ ],
+ "example": [
+  "adj_order | B1.2 | match | Match each word with its kind. | round = shape ; Spanish = origin ; silk = material ; huge = size",
+  "articles | A2.1 | mcq | Choose the correct option: My sister teaches ___ maths in Riga. | —",
+  "rep_questions | B1.2 | mcq | Which word(s) do we use to report a yes/no question? | if or whether",
+  "verb_patterns | B1.2 | mcq | Choose the correct option: I'll never forget ___ the Eiffel Tower for the first time. | seeing",
+  "verb_patterns | B1.2 | text | Rewrite with forgot: I didn't lock the door because I forgot. | "
  ]
 }

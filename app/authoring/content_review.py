@@ -884,6 +884,9 @@ def revise(original):
     for _base, _ch in _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'r20_fixes.json'), encoding='utf-8'))['fix'].items():
         if _base in by_id: report_fix(_base, **{k: v for k, v in _ch.items() if not k.startswith('_')})
         else: raise KeyError('r20_fixes.json: no built-in task ' + _base)
+    # explanations use the task's own sentence, not another task's (tester, 22 November)
+    for _base, _ch in _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'explain_fixes_20261122.json'), encoding='utf-8')).items():
+        report_fix(_base, **_ch)
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

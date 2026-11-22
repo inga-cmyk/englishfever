@@ -1,0 +1,713 @@
+[
+ {
+  "id": "r21-2-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Sorry, I ___ the answer.",
+  "options": [
+   "am not knowing",
+   "not know",
+   "doesn't know",
+   "don't know"
+  ]
+ },
+ {
+  "id": "r21-2-002",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Water ___ at 100 degrees Celsius.",
+  "options": [
+   "is boil",
+   "boils",
+   "boiling",
+   "boil"
+  ]
+ },
+ {
+  "id": "r21-2-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My uncle is owning a shop.",
+   "The museum opens at nine.",
+   "How much does it cost now?",
+   "He doesn't speak French."
+  ]
+ },
+ {
+  "id": "r21-2-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option.",
+  "options": [
+   "'I'm wanting a coffee.'",
+   "'I want a coffee.'",
+   "'I am want a coffee.'",
+   "'I wanted a coffee now.'"
+  ]
+ },
+ {
+  "id": "r21-2-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence says that she first opened the door and then walked in?",
+  "options": [
+   "She has opened the door and has walked in.",
+   "She was opening the door and walking in.",
+   "She opened the door and walked in.",
+   "She opens the door and walks in."
+  ]
+ },
+ {
+  "id": "r21-2-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When did they arrive?",
+   "Why did you went home early?",
+   "She called me at six.",
+   "I didn't have time yesterday."
+  ]
+ },
+ {
+  "id": "r21-2-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "I've worked here ___ five years.",
+  "options": [
+   "ago",
+   "for",
+   "since",
+   "from"
+  ]
+ },
+ {
+  "id": "r21-2-008",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "'Are you free this evening?' 'Sorry, ___ Anna at 6. We booked a table yesterday.'",
+  "options": [
+   "I'm meeting",
+   "I meet",
+   "I'll meet",
+   "I've met"
+  ]
+ },
+ {
+  "id": "r21-2-009",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Starting now is necessary to finish on time. Complete: We will not finish on time ___ we start now.",
+  "options": [
+   "when",
+   "if",
+   "unless",
+   "although"
+  ]
+ },
+ {
+  "id": "r21-2-010",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I had more free time, I might join a choir.",
+   "I would join a choir if I had more free time.",
+   "If I would have more free time, I would join a choir.",
+   "If I had more free time, I would join a choir."
+  ]
+ },
+ {
+  "id": "r21-2-011",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I had known, I would have called you.",
+   "I would have called you if I had known.",
+   "If I hadn't known, I wouldn't have called you.",
+   "If I would have known, I would have called you."
+  ]
+ },
+ {
+  "id": "r21-2-012",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He said to me that he was tired.",
+   "He said me he was tired.",
+   "He said he was tired.",
+   "He told me he was tired."
+  ]
+ },
+ {
+  "id": "r21-2-013",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We visited the Old Town last summer.",
+   "My aunt has lived in Riga for years.",
+   "We visited the Riga last summer."
+  ]
+ },
+ {
+  "id": "r21-2-014",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ you mix red and green paint, you get brown.",
+  "options": [
+   "If",
+   "Unless",
+   "Because",
+   "Until"
+  ]
+ },
+ {
+  "id": "r21-2-015",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I get a headache ___ I drink too much coffee.",
+  "options": [
+   "unless",
+   "if",
+   "although",
+   "so"
+  ]
+ },
+ {
+  "id": "r21-2-016",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The page opens if you click here.",
+   "When you click here, the page opens.",
+   "If you click here, the page opens.",
+   "If you will click here, the page opens."
+  ]
+ },
+ {
+  "id": "r21-2-017",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: You will miss the bus ___ you hurry.",
+  "options": [
+   "until",
+   "unless",
+   "than",
+   "so"
+  ]
+ },
+ {
+  "id": "r21-2-018",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If she had more money, she would buy it.",
+   "If she had more money, she will buy it.",
+   "She would buy it if she had more money.",
+   "If she had more money, she'd buy it."
+  ]
+ },
+ {
+  "id": "r21-2-019",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I had studied, I would have passed.",
+   "If I'd studied, I'd have passed.",
+   "I would have passed if I had studied.",
+   "If I would have studied, I would have passed."
+  ]
+ },
+ {
+  "id": "r21-2-020",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If we hadn't left late, we'd have caught it.",
+   "If we had left earlier, we wouldn't have missed the train.",
+   "We wouldn't have missed the train if we had left earlier.",
+   "If we had left earlier, we wouldn't have miss the train."
+  ]
+ },
+ {
+  "id": "r21-2-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She plays ___ violin in an orchestra.",
+  "word_cards": [
+   "an",
+   "many",
+   "the"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-2-022",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He lives in the Latvia.",
+   "They live in the UK.",
+   "She works in Riga.",
+   "He lives in the Netherlands."
+  ]
+ },
+ {
+  "id": "r21-2-023",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I have a little time for hobbies.",
+   "I don't have much time for hobbies.",
+   "I have a lot of time for hobbies.",
+   "I have many time for hobbies."
+  ]
+ },
+ {
+  "id": "r21-2-024",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My sister, who lives in Paris, is a teacher.",
+   "The sister that lives in Paris is a teacher.",
+   "My sister, that lives in Paris, is a teacher.",
+   "My sister who lives in Paris is a teacher."
+  ]
+ },
+ {
+  "id": "r21-2-025",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'll call you after I have spoken to her.",
+   "I'll call you after I speak to her.",
+   "I'll call you after I will have spoken to her.",
+   "After I speak to her, I'll call you."
+  ]
+ },
+ {
+  "id": "r21-2-026",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He ought to apologise, shouldn't he?",
+   "She used to live here, didn't she?",
+   "You'd better hurry, hadn't you?",
+   "He ought to apologise, doesn't he?"
+  ]
+ },
+ {
+  "id": "r21-2-027",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I'll never forget ___ the Eiffel Tower for the first time.",
+  "options": [
+   "see",
+   "saw",
+   "to see",
+   "seeing"
+  ]
+ },
+ {
+  "id": "r21-2-028",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with forgot: I didn't lock the door because I forgot.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-2-029",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Tickets can be bought online.",
+   "Tickets can bought online.",
+   "Tickets should be bought early.",
+   "Tickets can't be bought at the door."
+  ]
+ },
+ {
+  "id": "r21-2-030",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The shoes must be taken off.",
+   "The shoes ought to be taken off.",
+   "The shoes ought to taken off.",
+   "The shoes should be taken off."
+  ]
+ },
+ {
+  "id": "r21-2-031",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She explained the problem ___ me.",
+  "word_cards": [
+   "to",
+   "at",
+   "in"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-2-032",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He lent his car ___ his neighbour.",
+  "options": [
+   "in",
+   "at",
+   "of",
+   "to"
+  ]
+ },
+ {
+  "id": "r21-2-033",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He bought a leather black bag.",
+   "He bought a small black bag.",
+   "He bought a black leather bag.",
+   "He bought a lovely black bag."
+  ]
+ },
+ {
+  "id": "r21-2-034",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each word with its kind.",
+  "left": [
+   "round",
+   "Spanish",
+   "silk",
+   "huge"
+  ],
+  "right": [
+   "size",
+   "origin",
+   "shape",
+   "material"
+  ]
+ },
+ {
+  "id": "r21-2-035",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "It was ___ a long film.",
+  "word_cards": [
+   "so",
+   "such",
+   "very"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-2-036",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She was ___ tired that she fell asleep at once.",
+  "word_cards": [
+   "so",
+   "such",
+   "too"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-2-037",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "There was ___ much noise that I couldn't sleep.",
+  "word_cards": [
+   "so",
+   "such",
+   "very"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-2-038",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "He is ___ a good teacher.",
+  "word_cards": [
+   "so",
+   "such",
+   "very"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-2-039",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I was ___ tired that I fell asleep.",
+  "options": [
+   "such a",
+   "so",
+   "such",
+   "too"
+  ]
+ },
+ {
+  "id": "r21-2-040",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: It was ___ a surprise.",
+  "options": [
+   "so",
+   "very",
+   "so a",
+   "such"
+  ]
+ },
+ {
+  "id": "r21-2-041",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He drove ___ fast that we were afraid.",
+  "options": [
+   "so",
+   "very",
+   "such",
+   "such a"
+  ]
+ },
+ {
+  "id": "r21-2-042",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Has anyone been arrested?",
+   "One person has been arrested.",
+   "Three people has been arrested.",
+   "Three people have been arrested."
+  ]
+ },
+ {
+  "id": "r21-2-043",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The new rules will be introduced next month.",
+   "The new rules will be introduce next month.",
+   "The new rule will be introduced next month.",
+   "Will the rules be introduced next month?"
+  ]
+ },
+ {
+  "id": "r21-2-044",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Will the winner be announced on Friday?",
+   "The winner will announced on Friday.",
+   "The winner will be announced on Friday.",
+   "The winners will be announced on Friday."
+  ]
+ },
+ {
+  "id": "r21-2-045",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I came in, we were watching TV.",
+   "When I came in, my son was watching TV.",
+   "When I came in, the children were watching TV.",
+   "When I came in, the children was watching TV."
+  ]
+ },
+ {
+  "id": "r21-2-046",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make a question with How long: She has lived in Spain.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-2-047",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She has worked here ___ five years.",
+  "options": [
+   "for",
+   "ago",
+   "from",
+   "since"
+  ]
+ },
+ {
+  "id": "r21-2-048",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I've been waiting for him for years.",
+   "I've been knowing him for years.",
+   "I've been seeing him a lot lately.",
+   "I've known him for years."
+  ]
+ },
+ {
+  "id": "r21-2-049",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She has been working here since June.",
+   "She has been work here since June.",
+   "She has worked here since June.",
+   "She has been working here for months."
+  ]
+ },
+ {
+  "id": "r21-2-050",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is a prediction based on what you can see?",
+  "options": [
+   "That tree fell in the storm.",
+   "Someday that tree will fall.",
+   "I think that tree will fall.",
+   "Look! That tree is going to fall!"
+  ]
+ },
+ {
+  "id": "r21-2-051",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We arrived at the station at ten past nine, but the train ___ at nine, so we had to wait for the next one.",
+  "options": [
+   "leaving",
+   "was leaving",
+   "left",
+   "has left"
+  ]
+ },
+ {
+  "id": "r21-2-052",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ a horse. Never in my life.",
+  "options": [
+   "have never ridden",
+   "have never rode",
+   "has never ridden"
+  ]
+ },
+ {
+  "id": "r21-2-053",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The new hotel is ___ more comfortable than the old one, so we will stay there again.",
+  "options": [
+   "more",
+   "very",
+   "much",
+   "too"
+  ]
+ },
+ {
+  "id": "r21-2-054",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means it is not necessary?",
+  "options": [
+   "You should wear a tie.",
+   "You can't wear a tie.",
+   "You mustn't wear a tie.",
+   "You don't have to wear a tie."
+  ]
+ },
+ {
+  "id": "r21-2-055",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means it is not allowed?",
+  "options": [
+   "You should smoke here.",
+   "You mustn't smoke here.",
+   "You don't have to smoke here.",
+   "You can smoke here."
+  ]
+ },
+ {
+  "id": "r21-2-056",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is advice, not a rule?",
+  "options": [
+   "You must wear a uniform here.",
+   "You should wear a coat today.",
+   "You mustn't wear shoes inside.",
+   "You have to wear a helmet on this bike."
+  ]
+ },
+ {
+  "id": "r21-2-057",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Tomorrow I will must work late.",
+   "Today I have to work late.",
+   "Yesterday I had to work late.",
+   "Tomorrow I will have to work late."
+  ]
+ },
+ {
+  "id": "r21-2-058",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I can't concentrate. There are ___ people here.",
+  "options": [
+   "too much",
+   "too many",
+   "enough of"
+  ]
+ },
+ {
+  "id": "r21-2-059",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We can't make a cake. There isn't ___ flour.",
+  "options": [
+   "enough",
+   "too many",
+   "enough of"
+  ]
+ },
+ {
+  "id": "r21-2-060",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I've got ___ money, so I can't come to the cinema.",
+  "options": [
+   "a few",
+   "very little",
+   "very few"
+  ]
+ }
+]

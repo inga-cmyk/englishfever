@@ -1,0 +1,2309 @@
+{
+ "r21-6-001": {
+  "hash": "e26dce0f39f18539",
+  "gate_key": "present_continuous | B1.1 | write | What is changing in your life or your city these days? Write one sentence. | ",
+  "src": "built-in",
+  "point": "pc_temp",
+  "key": {
+   "kind": "write",
+   "model": "More people are working from home these days.",
+   "must": [
+    "Use *am/is/are* + verb-ing."
+   ]
+  },
+  "item": {
+   "id": "pc-B11-6a-r2",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "What is changing in your life or your city these days? Write one sentence.",
+   "must": [
+    [
+     "\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b",
+     "Use *am/is/are* + verb-ing.",
+     "Lieto *am/is/are* + darbības vārds ar *-ing*."
+    ]
+   ],
+   "model": "More people are working from home these days.",
+   "why": "Compare your sentence with the model answer.",
+   "why_lv": "Salīdzini savu teikumu ar piemēra atbildi.",
+   "d": 4,
+   "scaffold": 3,
+   "err": [
+    "BE",
+    "NOW-HABIT",
+    "STATE-ING"
+   ],
+   "role": "use",
+   "point": "pc_temp",
+   "src": "built-in"
+  }
+ },
+ "r21-6-002": {
+  "hash": "466834afa3516643",
+  "gate_key": "past_simple | B1.1 | gap | I ___ Tom at the party, so I called him later. (not / see) | ",
+  "src": "built-in",
+  "point": "pst_negq",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "didn't see",
+     "did not see"
+    ]
+   ]
+  },
+  "item": {
+   "id": "pa-B11-3a",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ Tom at the party, so I called him later. (not / see)",
+   "answers": [
+    [
+     "didn't see",
+     "did not see"
+    ]
+   ],
+   "why": "Negative: *didn't* + base verb.",
+   "hints": [],
+   "why_lv": "Noliegums: *didn't* + pamatforma.",
+   "d": 3.4,
+   "scaffold": 1,
+   "err": [
+    "PAST-FORM",
+    "DO",
+    "BASE"
+   ],
+   "role": "use",
+   "point": "pst_negq",
+   "src": "built-in"
+  }
+ },
+ "r21-6-003": {
+  "hash": "fc54e441336eb9cb",
+  "gate_key": "past_continuous | B1.1 | mcq | In 'When Mia called, I was cooking', which action started first? | The cooking.",
+  "src": "built-in",
+  "point": "pastc_when",
+  "key": {
+   "kind": "mcq",
+   "correct": "The cooking.",
+   "wrong": [
+    "The calling.",
+    "Both together.",
+    "We can't know."
+   ]
+  },
+  "item": {
+   "id": "pac-B11-2a-r3",
+   "skill": "past_continuous",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "In 'When Mia called, I was cooking', which action started first?",
+   "correct": "The cooking.",
+   "wrong": [
+    "The calling.",
+    "Both together.",
+    "We can't know."
+   ],
+   "why": "The past continuous action was already happening when the short action (*called*) happened.",
+   "wrong_why": [],
+   "why_lv": "Past Continuous darbība jau notika, kad notika īsā darbība (*called*).",
+   "wrong_why_lv": [],
+   "d": 3.2,
+   "scaffold": 0,
+   "err": [
+    "BACKGROUND",
+    "BE"
+   ],
+   "role": "learn",
+   "point": "pastc_when",
+   "src": "built-in"
+  }
+ },
+ "r21-6-004": {
+  "hash": "e5be5eb774f4072e",
+  "gate_key": "past_continuous | B1.2 | mcq | Which sentence is NOT correct? | They was going to meet us, but they were late.",
+  "src": "built-in",
+  "point": "fut_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "They was going to meet us, but they were late.",
+   "wrong": [
+    "I was going to call you, but I lost your number.",
+    "She was going to leave when he arrived.",
+    "We were going to stay longer."
+   ]
+  },
+  "item": {
+   "id": "pac-B12-4a",
+   "skill": "past_continuous",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "They was going to meet us, but they were late.",
+   "wrong": [
+    "I was going to call you, but I lost your number.",
+    "She was going to leave when he arrived.",
+    "We were going to stay longer."
+   ],
+   "why": "*They* needs *were*: *They were going to meet us.*",
+   "wrong_why": [],
+   "why_lv": "*They* vajag *were*: *They were going to meet us.*",
+   "d": 4.6,
+   "scaffold": 0,
+   "err": [
+    "BACKGROUND",
+    "BE"
+   ],
+   "role": "check",
+   "point": "fut_past",
+   "src": "built-in"
+  }
+ },
+ "r21-6-005": {
+  "hash": "daa2346d76bb282b",
+  "gate_key": "present_perfect | B1.1 | write | Write two sentences about how long you have lived in your city or worked in your job. Use for in one and since in the other. | ",
+  "src": "built-in",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "write",
+   "model": "I have lived in Riga for ten years. I have worked here since 2020.",
+   "must": [
+    "Use *have/has* + past participle.",
+    "Use *for* + a period of time.",
+    "Use *since* + a start time."
+   ]
+  },
+  "item": {
+   "id": "pp-B11-6a",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write two sentences about how long you have lived in your city or worked in your job. Use for in one and since in the other.",
+   "must": [
+    [
+     "\\b(have|has|'ve)\\s+\\w+",
+     "Use *have/has* + past participle.",
+     "Lieto *have/has* + 3. forma."
+    ],
+    [
+     "\\bfor\\s+\\w+",
+     "Use *for* + a period of time.",
+     "Lieto *for* + laika posmu."
+    ],
+    [
+     "\\bsince\\s+\\w+",
+     "Use *since* + a start time.",
+     "Lieto *since* + sākuma laiku."
+    ]
+   ],
+   "model": "I have lived in Riga for ten years. I have worked here since 2020.",
+   "why": "Compare your sentence with the model answer.",
+   "why_lv": "Salīdzini savu teikumu ar piemēra atbildi.",
+   "d": 4,
+   "scaffold": 3,
+   "err": [
+    "DURATION",
+    "FINISHED-TIME",
+    "PAST-FORM"
+   ],
+   "role": "use",
+   "point": "pp_for_since",
+   "src": "built-in"
+  }
+ },
+ "r21-6-006": {
+  "hash": "e4e001631c3e1881",
+  "gate_key": "present_perfect_continuous | B1.1 | mcq | Which sentence is NOT correct? | I have been knowing him for years.",
+  "src": "built-in",
+  "point": "pp_ppc",
+  "key": {
+   "kind": "mcq",
+   "correct": "I have been knowing him for years.",
+   "wrong": [
+    "She has been working here since March.",
+    "It has been raining all day.",
+    "How long have you been learning English?"
+   ]
+  },
+  "item": {
+   "id": "ppc-B11-4a",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "I have been knowing him for years.",
+   "wrong": [
+    "She has been working here since March.",
+    "It has been raining all day.",
+    "How long have you been learning English?"
+   ],
+   "why": "*Know* is a state verb. We say: *I have known him for years.*",
+   "wrong_why": [],
+   "why_lv": "*Know* ir stāvokļa darbības vārds. Saka: *I have known him for years.*",
+   "d": 3.6,
+   "scaffold": 0,
+   "err": [
+    "DURATION"
+   ],
+   "role": "check",
+   "point": "pp_ppc",
+   "src": "built-in"
+  }
+ },
+ "r21-6-007": {
+  "hash": "184bef8bc81cacb0",
+  "gate_key": "present_perfect_continuous | B1.1 | mcq | Your friend is out of breath, but she isn't running now. Why is she out of breath? | She has been running.",
+  "src": "built-in",
+  "point": "ppc_result",
+  "key": {
+   "kind": "mcq",
+   "correct": "She has been running.",
+   "wrong": [
+    "She is running.",
+    "She runs.",
+    "She has run."
+   ]
+  },
+  "item": {
+   "id": "ppc-B11-5a-r3",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Your friend is out of breath, but she isn't running now. Why is she out of breath?",
+   "correct": "She has been running.",
+   "wrong": [
+    "She is running.",
+    "She runs.",
+    "She has run."
+   ],
+   "why": "*Has been running*: an activity that has just stopped and explains how she is now. *Has run* is for a finished result (*She has run 10 km*).",
+   "wrong_why": [],
+   "why_lv": "*Has been running*: darbība, kas nupat beigusies un izskaidro, kāda viņa ir tagad. *Has run* lieto pabeigtam rezultātam (*She has run 10 km*).",
+   "wrong_why_lv": [],
+   "d": 3.8,
+   "scaffold": 0,
+   "err": [
+    "DURATION"
+   ],
+   "role": "check",
+   "point": "ppc_result",
+   "src": "built-in"
+  }
+ },
+ "r21-6-008": {
+  "hash": "149f0ab11adf089e",
+  "gate_key": "present_perfect_continuous | B1.2 | mcq | I ___ this book for two weeks, and I'm still reading it. | have been reading",
+  "src": "built-in",
+  "point": "ppc_form",
+  "key": {
+   "kind": "mcq",
+   "correct": "have been reading",
+   "wrong": [
+    "has been reading",
+    "am been reading",
+    "have been read"
+   ]
+  },
+  "item": {
+   "id": "ppc-B12-1a-r2",
+   "skill": "present_perfect_continuous",
+   "level": "B1.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "I ___ this book for two weeks, and I'm still reading it.",
+   "correct": "have been reading",
+   "wrong": [
+    "has been reading",
+    "am been reading",
+    "have been read"
+   ],
+   "why": "An activity that started in the past and is still in progress: *have been* + verb-ing.",
+   "wrong_why": [],
+   "why_lv": "Darbība, kas sākās pagātnē un joprojām norit: *have been* + darbības vārds ar *-ing*.",
+   "wrong_why_lv": [],
+   "d": 4,
+   "scaffold": 0,
+   "err": [
+    "DURATION"
+   ],
+   "role": "check",
+   "point": "ppc_form",
+   "src": "built-in"
+  }
+ },
+ "r21-6-009": {
+  "hash": "3d68c867cd2d3a28",
+  "gate_key": "present_perfect_continuous | B1.2 | gap | Look at the floor! The children ___ with paint. (play) | ",
+  "src": "built-in",
+  "point": "ppc_result",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have been playing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ppc-B12-3a",
+   "skill": "present_perfect_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Look at the floor! The children ___ with paint. (play)",
+   "answers": [
+    [
+     "have been playing"
+    ]
+   ],
+   "why": "A recent activity with a visible result: *have been playing.*",
+   "hints": [],
+   "why_lv": "Nesena darbība ar redzamu rezultātu: *have been playing*.",
+   "d": 4.4,
+   "scaffold": 1,
+   "err": [
+    "DURATION"
+   ],
+   "role": "use",
+   "point": "ppc_result",
+   "src": "built-in"
+  }
+ },
+ "r21-6-010": {
+  "hash": "d5173a5bea8a2676",
+  "gate_key": "future | B1.2 | mcq | Which sentence means something will happen very soon? | The plane is about to take off.",
+  "src": "built-in",
+  "point": "about_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "The plane is about to take off.",
+   "wrong": [
+    "The plane takes off every day.",
+    "The plane took off.",
+    "The plane has been taking off."
+   ]
+  },
+  "item": {
+   "id": "fu-B12-2a",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence means something will happen very soon?",
+   "correct": "The plane is about to take off.",
+   "wrong": [
+    "The plane takes off every day.",
+    "The plane took off.",
+    "The plane has been taking off."
+   ],
+   "why": "*Be about to* is used for the very near future.",
+   "wrong_why": [],
+   "why_lv": "*Be about to* lieto pavisam tuvai nākotnei.",
+   "d": 4.2,
+   "scaffold": 0,
+   "err": [
+    "FUTURE",
+    "TIME-CLAUSE"
+   ],
+   "role": "learn",
+   "point": "about_to",
+   "src": "built-in"
+  }
+ },
+ "r21-6-011": {
+  "hash": "e3a90e022ab37878",
+  "gate_key": "future | B1.2 | mcq | Which sentence is NOT correct? | He is going to be arrive soon.",
+  "src": "built-in",
+  "point": "going_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "He is going to be arrive soon.",
+   "wrong": [
+    "She is about to leave the office.",
+    "Will you help me with this box?",
+    "It's going to rain, look at the sky."
+   ]
+  },
+  "item": {
+   "id": "fu-B12-4a-r2",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "He is going to be arrive soon.",
+   "wrong": [
+    "She is about to leave the office.",
+    "Will you help me with this box?",
+    "It's going to rain, look at the sky."
+   ],
+   "why": "After *going to* we use the base verb: *He is going to arrive soon.*",
+   "wrong_why": [],
+   "why_lv": "Pēc *going to* lieto pamatformu: *He is going to arrive soon.*",
+   "wrong_why_lv": [],
+   "d": 4.6,
+   "scaffold": 0,
+   "err": [
+    "FUTURE",
+    "TIME-CLAUSE"
+   ],
+   "role": "check",
+   "point": "going_to",
+   "src": "built-in"
+  }
+ },
+ "r21-6-012": {
+  "hash": "d2622df4996740c5",
+  "gate_key": "future | B1.2 | write | Look at those dark clouds. Your friend has no umbrella. Write two sentences: say what is about to happen, then offer to lend your umbrella. | ",
+  "src": "built-in",
+  "point": "will_going",
+  "key": {
+   "kind": "write",
+   "model": "It is going to rain. I'll lend you my umbrella.",
+   "must": [
+    "Use *going to* + base verb in the prediction.",
+    "Use *I'll* or *I will* for the offer."
+   ]
+  },
+  "item": {
+   "id": "fu-B12-6a-r2",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Look at those dark clouds. Your friend has no umbrella. Write two sentences: say what is about to happen, then offer to lend your umbrella.",
+   "must": [
+    [
+     "\\bgoing\\s+to\\s+\\w+",
+     "Use *going to* + base verb in the prediction.",
+     "Prognozē lieto *going to* + pamatforma."
+    ],
+    [
+     "\\b(i'll|i will|shall i)\\b",
+     "Use *I'll* or *I will* for the offer.",
+     "Piedāvājumam lieto *I'll* vai *I will.*"
+    ]
+   ],
+   "model": "It is going to rain. I'll lend you my umbrella.",
+   "why": "The clouds support a prediction: *It is going to rain*. *I will lend you my umbrella* offers help now.",
+   "why_lv": "Mākoņi pamato prognozi: *It is going to rain*. *I will lend you my umbrella* ir palīdzības piedāvājums tagad.",
+   "d": 5,
+   "scaffold": 3,
+   "err": [
+    "FUTURE",
+    "TIME-CLAUSE"
+   ],
+   "role": "use",
+   "point": "will_going",
+   "src": "built-in"
+  }
+ },
+ "r21-6-013": {
+  "hash": "6064510b7b395f27",
+  "gate_key": "present_simple_passive | B1.2 | mcq | Which sentence says the same as 'People often call him Mo'? | He is often called Mo.",
+  "src": "built-in",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "He is often called Mo.",
+   "wrong": [
+    "He often calls Mo.",
+    "He is often calling Mo.",
+    "Mo is often called him."
+   ]
+  },
+  "item": {
+   "id": "psp-B12-2a-r2",
+   "skill": "present_simple_passive",
+   "level": "B1.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence says the same as 'People often call him Mo'?",
+   "correct": "He is often called Mo.",
+   "wrong": [
+    "He often calls Mo.",
+    "He is often calling Mo.",
+    "Mo is often called him."
+   ],
+   "why": "The object (*him*) becomes the subject (*He*): *He is often called Mo.*",
+   "wrong_why": [],
+   "why_lv": "Papildinātājs (*him*) kļūst par teikuma priekšmetu (*He*): *He is often called Mo.*",
+   "d": 4.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "built-in"
+  }
+ },
+ "r21-6-014": {
+  "hash": "0b21dc513ede06fc",
+  "gate_key": "past_simple_passive | B1.1 | mcq | Which sentence is NOT correct? | She was gave a prize at school.",
+  "src": "built-in",
+  "point": "v3",
+  "key": {
+   "kind": "mcq",
+   "correct": "She was gave a prize at school.",
+   "wrong": [
+    "The thieves were arrested.",
+    "The bridge was built in 1998.",
+    "I was told the news by Tom."
+   ]
+  },
+  "item": {
+   "id": "pasp-B11-4a-r2",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She was gave a prize at school.",
+   "wrong": [
+    "The thieves were arrested.",
+    "The bridge was built in 1998.",
+    "I was told the news by Tom."
+   ],
+   "why": "The past participle of *give* is *given*: *She was given a prize.*",
+   "wrong_why": [],
+   "why_lv": "*Give* 3. forma ir *given*: *She was given a prize.*",
+   "wrong_why_lv": [],
+   "d": 3.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "v3",
+   "src": "built-in"
+  }
+ },
+ "r21-6-015": {
+  "hash": "b2ec07265e56e594",
+  "gate_key": "present_continuous_passive | B1.2 | gap | The rooms ___ right now. (clean) | ",
+  "src": "built-in",
+  "point": "pas_cont",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are being cleaned"
+    ]
+   ]
+  },
+  "item": {
+   "id": "pcp-B12-3b",
+   "skill": "present_continuous_passive",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The rooms ___ right now. (clean)",
+   "answers": [
+    [
+     "are being cleaned"
+    ]
+   ],
+   "why": "*Rooms* = plural: *are being cleaned.*",
+   "hints": [],
+   "why_lv": "*Rooms* = daudzskaitlis: *are being cleaned*.",
+   "d": 4.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "use",
+   "point": "pas_cont",
+   "src": "built-in"
+  }
+ },
+ "r21-6-016": {
+  "hash": "02c36aa6b56a18ab",
+  "gate_key": "future_passive | B1.1 | mcq | Your parcel ___ tomorrow. | will be delivered",
+  "src": "built-in",
+  "point": "pas_will",
+  "key": {
+   "kind": "mcq",
+   "correct": "will be delivered",
+   "wrong": [
+    "will deliver",
+    "is deliver",
+    "will be deliver"
+   ]
+  },
+  "item": {
+   "id": "fup-B11-1a",
+   "skill": "future_passive",
+   "level": "B1.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Your parcel ___ tomorrow.",
+   "correct": "will be delivered",
+   "wrong": [
+    "will deliver",
+    "is deliver",
+    "will be deliver"
+   ],
+   "why": "Future passive: *will be* + past participle.",
+   "wrong_why": [],
+   "why_lv": "Ciešamā kārta nākotnē: *will be* + 3. forma.",
+   "d": 3,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "pas_will",
+   "src": "built-in"
+  }
+ },
+ "r21-6-017": {
+  "hash": "69fd2e4c817833d8",
+  "gate_key": "rep_questions | B1.2 | mcq | Which sentence is correct? | The guest asked whether breakfast was included.",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "The guest asked whether breakfast was included.",
+   "wrong": [
+    "The guest asked was breakfast included.",
+    "The guest asked that breakfast was included.",
+    "The guest asked is breakfast included."
+   ]
+  },
+  "item": {
+   "id": "rq-B12-5a-r2",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "The guest asked whether breakfast was included.",
+   "wrong": [
+    "The guest asked was breakfast included.",
+    "The guest asked that breakfast was included.",
+    "The guest asked is breakfast included."
+   ],
+   "why": "Yes/no question: *asked* + *if / whether* + subject + verb.",
+   "wrong_why": [],
+   "why_lv": "Jā/nē jautājums: *asked + if / whether* + teik. priekšmets + darbības vārds.",
+   "d": 4.8,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r21-6-018": {
+  "hash": "3b45087779225ad1",
+  "gate_key": "ind_polite | B1.2 | mcq | Which sentence is correct? | Could you let me know whether the contract has been signed?",
+  "src": "built-in",
+  "point": "iq_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "Could you let me know whether the contract has been signed?",
+   "wrong": [
+    "Could you let me know has the contract been signed?",
+    "Could you let me know if has the contract been signed?",
+    "Could you let me know whether has been the contract signed?"
+   ]
+  },
+  "item": {
+   "id": "ip-B12-5a-r2",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "Could you let me know whether the contract has been signed?",
+   "wrong": [
+    "Could you let me know has the contract been signed?",
+    "Could you let me know if has the contract been signed?",
+    "Could you let me know whether has been the contract signed?"
+   ],
+   "why": "*Could you let me know* + *whether / if* + subject + verb.",
+   "wrong_why": [],
+   "why_lv": "*Could you let me know + whether / if* + teik. priekšmets + darbības vārds.",
+   "d": 4.8,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_yn",
+   "src": "built-in"
+  }
+ },
+ "r21-6-019": {
+  "hash": "31a0dbe1a4a65a70",
+  "gate_key": "future | B1.1 | match | Match each situation with the response that best fits its purpose. | You decide now to help a colleague with a heavy bag. = I'll carry that for you. ; You describe a confirmed appointment for tomorrow. = I'm seeing the dentist at ten. ; You predict rain because you can see dark clouds. = It's going to rain.",
+  "src": "built-in",
+  "point": "will_going",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "You decide now to help a colleague with a heavy bag.",
+     "I'll carry that for you."
+    ],
+    [
+     "You describe a confirmed appointment for tomorrow.",
+     "I'm seeing the dentist at ten."
+    ],
+    [
+     "You predict rain because you can see dark clouds.",
+     "It's going to rain."
+    ]
+   ]
+  },
+  "item": {
+   "id": "var-fu-b11-match-01",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 5,
+   "kind": "match",
+   "q": "Match each situation with the response that best fits its purpose.",
+   "why": "Choose the form for the purpose: *will* for this immediate offer, present continuous for the arrangement, and *going to* to highlight visible evidence.",
+   "pairs": [
+    [
+     "You decide now to help a colleague with a heavy bag.",
+     "I'll carry that for you."
+    ],
+    [
+     "You describe a confirmed appointment for tomorrow.",
+     "I'm seeing the dentist at ten."
+    ],
+    [
+     "You predict rain because you can see dark clouds.",
+     "It's going to rain."
+    ]
+   ],
+   "why_lv": "Izvēlies formu atbilstoši nolūkam: *will* šim tūlītējam piedāvājumam, Present Continuous norunai un *going to*, lai uzsvērtu redzamās pazīmes.",
+   "d": 3.8,
+   "scaffold": 0,
+   "err": [
+    "FUTURE",
+    "TIME-CLAUSE"
+   ],
+   "role": "learn",
+   "point": "will_going",
+   "src": "built-in"
+  }
+ },
+ "r21-6-020": {
+  "hash": "a4668922aaac554b",
+  "gate_key": "cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I go, I will meet her. = I may go. ; If I went, I would meet her. = I'm imagining it now. ; If I go, I meet her. = this always happens",
+  "src": "b1-cond-rep-1.csv:140",
+  "point": "c3",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "If I had gone, I would have met her.",
+     "I didn't go."
+    ],
+    [
+     "If I go, I will meet her.",
+     "I may go."
+    ],
+    [
+     "If I went, I would meet her.",
+     "I'm imagining it now."
+    ],
+    [
+     "If I go, I meet her.",
+     "this always happens"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0804",
+   "skill": "cond_third",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "why": "Third: imagined past. Second: imagined now. First: possible future. Zero: always true.",
+   "why_lv": "Third: iedomāta pagātne. Second: iedomāta tagadne. First: iespējama nākotne. Zero: vienmēr patiess.",
+   "pairs": [
+    [
+     "If I had gone, I would have met her.",
+     "I didn't go."
+    ],
+    [
+     "If I go, I will meet her.",
+     "I may go."
+    ],
+    [
+     "If I went, I would meet her.",
+     "I'm imagining it now."
+    ],
+    [
+     "If I go, I meet her.",
+     "this always happens"
+    ]
+   ],
+   "role": "learn",
+   "point": "c3",
+   "src": "b1-cond-rep-1.csv:140"
+  }
+ },
+ "r21-6-021": {
+  "hash": "01df8078e904067b",
+  "gate_key": "rep_statements | B1.1 | gap | 'We will help you.' They said they ___ help me. | ",
+  "src": "b1-cond-rep-1.csv:159",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0823",
+   "skill": "rep_statements",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'We will help you.' They said they ___ help me.",
+   "why": "Reported speech: the tense goes back and time words change (*tomorrow → the next day*).",
+   "why_lv": "Netiešā runa: laiks iet atpakaļ un laika vārdi mainās (*tomorrow → the next day*).",
+   "answers": [
+    [
+     "would"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "would",
+    "did",
+    "had"
+   ],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "b1-cond-rep-1.csv:159"
+  }
+ },
+ "r21-6-022": {
+  "hash": "f7ea57b43b270f5b",
+  "gate_key": "rep_questions | B1.2 | gap | 'Have you finished?' He asked if I ___ . (finish) | ",
+  "src": "b1-cond-rep-1.csv:202",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had finished"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0866",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Have you finished?' He asked if I ___ . (finish)",
+   "why": "Reported question: *asked + question word / if + subject + verb*. Requests: *asked / told me to ...*",
+   "why_lv": "Netiešais jautājums: *asked* + jautājamais vārds / *if* + teik. priekšmets + darbības vārds. Lūgumi: *asked / told me to* ...",
+   "answers": [
+    [
+     "had finished"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_q_yn",
+   "src": "b1-cond-rep-1.csv:202"
+  }
+ },
+ "r21-6-023": {
+  "hash": "1c223d4c84f6141e",
+  "gate_key": "rep_questions | B1.2 | gap | At school, years ago: 'Do you like jazz?' → He asked me ___. | ",
+  "src": "b1-cond-rep-1.csv:207",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if I liked jazz",
+     "whether I liked jazz"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0871",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "At school, years ago: 'Do you like jazz?' → He asked me ___.",
+   "why": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+   "why_lv": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+   "answers": [
+    [
+     "if I liked jazz",
+     "whether I liked jazz"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_yn",
+   "src": "b1-cond-rep-1.csv:207"
+  }
+ },
+ "r21-6-024": {
+  "hash": "ca66e9fa9581677e",
+  "gate_key": "rep_questions | B1.2 | gap | A week ago: 'What did you do last night?' → She asked me ___. | ",
+  "src": "b1-cond-rep-1.csv:210",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "what I had done the night before",
+     "what I had done the previous night",
+     "what I 'd done the night before",
+     "what I 'd done the previous night"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0874",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "A week ago: 'What did you do last night?' → She asked me ___.",
+   "why": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+   "why_lv": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+   "answers": [
+    [
+     "what I had done the night before",
+     "what I had done the previous night",
+     "what I 'd done the night before",
+     "what I 'd done the previous night"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_wh",
+   "src": "b1-cond-rep-1.csv:210"
+  }
+ },
+ "r21-6-025": {
+  "hash": "1e4d2ec345e9f624",
+  "gate_key": "ind_polite | B1.2 | gap | I wonder ___ he will come. | ",
+  "src": "b1-cond-rep-1.csv:234",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0898",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wonder ___ he will come.",
+   "why": "A yes/no question inside a sentence: *whether* or *if*.",
+   "why_lv": "Jautājums ar atbildi jā/nē teikuma iekšpusē: *whether* vai *if*.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "whether",
+    "that",
+    "what"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_yn",
+   "src": "b1-cond-rep-1.csv:234"
+  }
+ },
+ "r21-6-026": {
+  "hash": "5801537822317bde",
+  "gate_key": "used_to | B1.1 | order | Put all the words in order. More than one answer is possible. | she didn't use to enjoy cooking but now she loves it",
+  "src": "b1-new-1.csv:5",
+  "point": "used_to",
+  "key": {
+   "kind": "order",
+   "sentence": "she didn't use to enjoy cooking but now she loves it",
+   "also": [
+    "she didn't use to enjoy cooking but she loves it now"
+   ]
+  },
+  "item": {
+   "id": "c-0918",
+   "skill": "used_to",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "Use *did not use to* for a past habit. *Now* can come before *she loves it* or at the end of that clause.",
+   "why_lv": "Par pagātnes ieradumu lieto *did not use to*. *Now* var būt pirms *she loves it* vai šīs daļas beigās.",
+   "sentence": "she didn't use to enjoy cooking but now she loves it",
+   "answers": [
+    [
+     "she didn't use to enjoy cooking but now she loves it",
+     "she didn't use to enjoy cooking but she loves it now"
+    ]
+   ],
+   "role": "check",
+   "point": "used_to",
+   "src": "b1-new-1.csv:5"
+  }
+ },
+ "r21-6-027": {
+  "hash": "e77a89e361bb9feb",
+  "gate_key": "used_to | B1.2 | gap | I'm not used to ___ so early. (get up) | ",
+  "src": "b1-new-1.csv:21",
+  "point": "be_used_to",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "getting up"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0934",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm not used to ___ so early. (get up)",
+   "why": "*be used to* + *-ing* = something is normal for you: *I'm not used to getting up so early.*",
+   "why_lv": "*be used to + -ing* = kaut kas ir ierasts: *I'm not used to getting up so early.*",
+   "answers": [
+    [
+     "getting up"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "be_used_to",
+   "src": "b1-new-1.csv:21"
+  }
+ },
+ "r21-6-028": {
+  "hash": "1ad14c502c226269",
+  "gate_key": "used_to | B1.2 | mcq | Which sentence means the same as 'It is normal for me to live alone'? | I'm used to living alone.",
+  "src": "b1-new-1.csv:29",
+  "point": "be_used_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm used to living alone.",
+   "wrong": [
+    "I used to live alone.",
+    "I'm used to live alone.",
+    "I get used to live alone."
+   ]
+  },
+  "item": {
+   "id": "c-0942",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence means the same as 'It is normal for me to live alone'?",
+   "why": "*be used to* + *-ing* = something is normal for you: *I'm used to living alone.*",
+   "why_lv": "*be used to + -ing* = kaut kas ir ierasts: *I'm used to living alone.*",
+   "correct": "I'm used to living alone.",
+   "wrong": [
+    "I used to live alone.",
+    "I'm used to live alone.",
+    "I get used to live alone."
+   ],
+   "wrong_why": [],
+   "role": "learn",
+   "point": "be_used_to",
+   "src": "b1-new-1.csv:29"
+  }
+ },
+ "r21-6-029": {
+  "hash": "ff35d74d99a6726e",
+  "gate_key": "present_continuous | B1.1 | mcq | Which sentence is NOT correct? | I'm not understanding the instructions.",
+  "src": "b1-tenses-1.csv:74",
+  "point": "stative",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm not understanding the instructions.",
+   "wrong": [
+    "I don't understand the instructions.",
+    "I'm reading the instructions now.",
+    "Are you following the instructions?"
+   ]
+  },
+  "item": {
+   "id": "c-1890",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Understand* is a state verb: *I don't understand*.",
+   "why_lv": "*Understand* ir stāvokļa darbības vārds: *I don't understand.*",
+   "correct": "I'm not understanding the instructions.",
+   "wrong": [
+    "I don't understand the instructions.",
+    "I'm reading the instructions now.",
+    "Are you following the instructions?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "stative",
+   "src": "b1-tenses-1.csv:74"
+  }
+ },
+ "r21-6-030": {
+  "hash": "94e009808e704dc2",
+  "gate_key": "past_simple | B1.1 | order | Put the words in order. | why didn't you tell me that you had lost your job",
+  "src": "b1-tenses-1.csv:82",
+  "point": "pst_negq",
+  "key": {
+   "kind": "order",
+   "sentence": "why didn't you tell me that you had lost your job",
+   "also": []
+  },
+  "item": {
+   "id": "c-1898",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + past verb + the rest; *did* + base verb in questions and negatives.",
+   "why_lv": "Teikuma priekšmets + pagātnes forma + pārējais; jautājumos un noliegumos *did* + pamatforma.",
+   "sentence": "why didn't you tell me that you had lost your job",
+   "answers": [
+    [
+     "why didn't you tell me that you had lost your job"
+    ]
+   ],
+   "role": "check",
+   "point": "pst_negq",
+   "src": "b1-tenses-1.csv:82"
+  }
+ },
+ "r21-6-031": {
+  "hash": "1538097155f407d2",
+  "gate_key": "past_simple | B1.1 | order | Put the words in order. | the film was so boring that half of the audience left early",
+  "src": "b1-tenses-1.csv:83",
+  "point": "pst_irr",
+  "key": {
+   "kind": "order",
+   "sentence": "the film was so boring that half of the audience left early",
+   "also": []
+  },
+  "item": {
+   "id": "c-1899",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + past verb + the rest; *did* + base verb in questions and negatives.",
+   "why_lv": "Teikuma priekšmets + pagātnes forma + pārējais; jautājumos un noliegumos *did* + pamatforma.",
+   "sentence": "the film was so boring that half of the audience left early",
+   "answers": [
+    [
+     "the film was so boring that half of the audience left early"
+    ]
+   ],
+   "role": "check",
+   "point": "pst_irr",
+   "src": "b1-tenses-1.csv:83"
+  }
+ },
+ "r21-6-032": {
+  "hash": "6620d78a5c078f70",
+  "gate_key": "past_simple | B1.1 | gap | She ___ in London for two years before she ___ to Paris. | ",
+  "src": "b1-tenses-1.csv:91",
+  "point": "pst_reg",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "lived"
+    ],
+    [
+     "moved"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1907",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She ___ in London for two years before she ___ to Paris.",
+   "why": "Finished events: past form (*-ed* or irregular). After *did / didn't* the base form. Past habits: *used to*.",
+   "why_lv": "*Pabeigti* notikumi: pagātnes forma (*-ed* vai neregulāra). Pēc *did / didn't* pamatforma. Pagātnes ieradumi: *used to*.",
+   "answers": [
+    [
+     "lived"
+    ],
+    [
+     "moved"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "lived",
+    "moved",
+    "has lived",
+    "has moved"
+   ],
+   "role": "check",
+   "point": "pst_reg",
+   "src": "b1-tenses-1.csv:91"
+  }
+ },
+ "r21-6-033": {
+  "hash": "979f416c862a9201",
+  "gate_key": "past_simple | B1.1 | gap | How long ___ you ___ for the bus yesterday? (wait) | ",
+  "src": "b1-tenses-1.csv:96",
+  "point": "pst_negq",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "did"
+    ],
+    [
+     "wait"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1912",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How long ___ you ___ for the bus yesterday? (wait)",
+   "why": "Finished events: past form; *did / didn't* + base form.",
+   "why_lv": "*Pabeigti* notikumi: pagātnes forma; *did / didn't* + pamatforma.",
+   "answers": [
+    [
+     "did"
+    ],
+    [
+     "wait"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pst_negq",
+   "src": "b1-tenses-1.csv:96"
+  }
+ },
+ "r21-6-034": {
+  "hash": "a1125d67622e50fd",
+  "gate_key": "present_perfect | B1.1 | order | Put the words in order. | i have lived in this city since i was a child",
+  "src": "b1-tenses-2.csv:2",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "order",
+   "sentence": "i have lived in this city since i was a child",
+   "also": [
+    "since i was a child i have lived in this city"
+   ]
+  },
+  "item": {
+   "id": "c-1959",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *have / has* + 3. form + the rest. *For / since* give the length of time.",
+   "why_lv": "Teikuma priekšmets + *have / has* + 3. forma + pārējais. *For / since* parāda laika *ilgumu*.",
+   "sentence": "i have lived in this city since i was a child",
+   "answers": [
+    [
+     "i have lived in this city since i was a child",
+     "since i was a child i have lived in this city"
+    ]
+   ],
+   "role": "check",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:2"
+  }
+ },
+ "r21-6-035": {
+  "hash": "b7e97d9ada42dba8",
+  "gate_key": "present_perfect | B1.1 | gap | How many countries ___ you ___ ? | ",
+  "src": "b1-tenses-2.csv:14",
+  "point": "pp_exp",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "visited"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1971",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How many countries ___ you ___ ?",
+   "why": "Present Perfect: *have / has* + 3. form. It links the past with now (experience, result, time up to now).",
+   "why_lv": "Present Perfect: *have / has* + 3. forma. Tas savieno pagātni ar tagadni (pieredze, rezultāts, laiks līdz tagadnei).",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "visited"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "visited",
+    "did",
+    "were"
+   ],
+   "role": "check",
+   "point": "pp_exp",
+   "src": "b1-tenses-2.csv:14"
+  }
+ },
+ "r21-6-036": {
+  "hash": "c36535cc088908fe",
+  "gate_key": "present_perfect | B1.1 | gap | He ___ never ___ a horse. | ",
+  "src": "b1-tenses-2.csv:15",
+  "point": "pp_exp",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has"
+    ],
+    [
+     "ridden"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1972",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He ___ never ___ a horse.",
+   "why": "Present Perfect: *have / has* + 3. form. It links the past with now (experience, result, time up to now).",
+   "why_lv": "Present Perfect: *have / has* + 3. forma. Tas savieno pagātni ar tagadni (pieredze, rezultāts, laiks līdz tagadnei).",
+   "answers": [
+    [
+     "has"
+    ],
+    [
+     "ridden"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "has",
+    "ridden",
+    "did",
+    "rode"
+   ],
+   "role": "check",
+   "point": "pp_exp",
+   "src": "b1-tenses-2.csv:15"
+  }
+ },
+ "r21-6-037": {
+  "hash": "1f10252f2ce0fc95",
+  "gate_key": "present_perfect | B1.1 | gap | How long ___ you ___ for this company? (work) | ",
+  "src": "b1-tenses-2.csv:20",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "worked",
+     "been working"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1977",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How long ___ you ___ for this company? (work)",
+   "why": "Present Perfect: *have / has* + 3. form.",
+   "why_lv": "Present Perfect: *have / has* + 3. forma.",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "worked",
+     "been working"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:20"
+  }
+ },
+ "r21-6-038": {
+  "hash": "5fa317778d0084fa",
+  "gate_key": "present_perfect_continuous | B1.1 | gap | He ___ been ___ the guitar since he was ten. | ",
+  "src": "b1-tenses-2.csv:47",
+  "point": "ppc_form",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has"
+    ],
+    [
+     "playing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2004",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He ___ been ___ the guitar since he was ten.",
+   "why": "Present Perfect Continuous: *have / has been* + verb + *-ing*: an activity up to now, and its length or result.",
+   "why_lv": "Present Perfect Continuous: *have / has been* + darbības vārds + *-ing*: darbība līdz tagadnei, tās ilgums vai *sekas*.",
+   "answers": [
+    [
+     "has"
+    ],
+    [
+     "playing"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "has",
+    "playing",
+    "is",
+    "played"
+   ],
+   "role": "check",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:47"
+  }
+ },
+ "r21-6-039": {
+  "hash": "ffde6a1eda0fde6f",
+  "gate_key": "present_perfect_continuous | B1.1 | text | Make a question with How long: She has been learning Chinese. | ",
+  "src": "b1-tenses-2.csv:55",
+  "point": "ppc_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "How long has she been learning Chinese?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2012",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with How long: She has been learning Chinese.",
+   "why": "Question: *Have / Has* + subject + *been* + *-ing*. Negative: *haven't / hasn't been* + *-ing*. *How long* asks about the length.",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *been + -ing*. Noliegums: *haven't / hasn't been + -ing*. *How long* jautā par *ilgumu*.",
+   "answers": [
+    [
+     "How long has she been learning Chinese?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:55"
+  }
+ },
+ "r21-6-040": {
+  "hash": "8796fbdc69a960fe",
+  "gate_key": "present_perfect_continuous | B1.1 | mcq | Which sentence says how long? | I've been learning French for two years.",
+  "src": "b1-tenses-2.csv:62",
+  "point": "ppc_form",
+  "key": {
+   "kind": "mcq",
+   "correct": "I've been learning French for two years.",
+   "wrong": [
+    "I've learned some French at school.",
+    "I learned French at school in Riga.",
+    "I'm learning French with a teacher."
+   ]
+  },
+  "item": {
+   "id": "c-2019",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence says how long?",
+   "why": "Present Perfect Continuous shows the activity and how long. State verbs (*know, like*) do not take it.",
+   "why_lv": "Present Perfect Continuous parāda darbību un cik ilgi. Stāvokļa darbības vārdiem (*know, like*) *to* nelieto.",
+   "correct": "I've been learning French for two years.",
+   "wrong": [
+    "I've learned some French at school.",
+    "I learned French at school in Riga.",
+    "I'm learning French with a teacher."
+   ],
+   "wrong_why": [],
+   "role": "learn",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:62"
+  }
+ },
+ "r21-6-041": {
+  "hash": "060fb332c1ad20b2",
+  "gate_key": "past_perfect | B1.2 | match | Match each sentence with the event that came first. | When I arrived, she had left. = she left first ; When I arrived, she left. = I arrived first ; When I got up, it had stopped raining. = the rain stopped first ; When I got up, it stopped raining. = I got up first",
+  "src": "b1-tenses-2.csv:96",
+  "point": "pastp_form",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "When I arrived, she had left.",
+     "she left first"
+    ],
+    [
+     "When I arrived, she left.",
+     "I arrived first"
+    ],
+    [
+     "When I got up, it had stopped raining.",
+     "the rain stopped first"
+    ],
+    [
+     "When I got up, it stopped raining.",
+     "I got up first"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2053",
+   "skill": "past_perfect",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "match",
+   "q": "Match each sentence with the event that came first.",
+   "why": "Past Perfect = the earlier event; Past Simple = the later one.",
+   "why_lv": "Past Perfect = agrākais notikums; Past Simple = vēlākais.",
+   "pairs": [
+    [
+     "When I arrived, she had left.",
+     "she left first"
+    ],
+    [
+     "When I arrived, she left.",
+     "I arrived first"
+    ],
+    [
+     "When I got up, it had stopped raining.",
+     "the rain stopped first"
+    ],
+    [
+     "When I got up, it stopped raining.",
+     "I got up first"
+    ]
+   ],
+   "role": "learn",
+   "point": "pastp_form",
+   "src": "b1-tenses-2.csv:96"
+  }
+ },
+ "r21-6-042": {
+  "hash": "96494d0d9c7df47e",
+  "gate_key": "future | B1.2 | order | Put the words in order. | we won't be able to come if it snows heavily",
+  "src": "b1-tenses-2.csv:112",
+  "point": "c1",
+  "key": {
+   "kind": "order",
+   "sentence": "we won't be able to come if it snows heavily",
+   "also": [
+    "if it snows heavily we won't be able to come"
+   ]
+  },
+  "item": {
+   "id": "c-2069",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Will* = decision now, promise, opinion; *going to* = plan or what you see; Present Continuous = arrangement; Present Simple = timetable.",
+   "why_lv": "*Will* = lēmums tagad, solījums, viedoklis; *going to* = plāns vai *redzamais*; Present Continuous = norunāts pasākums; Present Simple = *saraksts*.",
+   "sentence": "we won't be able to come if it snows heavily",
+   "answers": [
+    [
+     "we won't be able to come if it snows heavily",
+     "if it snows heavily we won't be able to come"
+    ]
+   ],
+   "role": "check",
+   "point": "c1",
+   "src": "b1-tenses-2.csv:112"
+  }
+ },
+ "r21-6-043": {
+  "hash": "d1a40e0695ac4e2e",
+  "gate_key": "future | B1.2 | gap | As soon as she ___ the news, she will call you. | ",
+  "src": "b1-tenses-2.csv:119",
+  "point": "fut_time_clause",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hears"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2076",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "As soon as she ___ the news, she will call you.",
+   "why": "After *when / as soon as / until / before* we use the Present Simple for the future.",
+   "why_lv": "Pēc *when / as soon as / until / before* nākotnei lieto Present Simple.",
+   "answers": [
+    [
+     "hears"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "hears",
+    "will hear",
+    "hearing"
+   ],
+   "role": "check",
+   "point": "fut_time_clause",
+   "src": "b1-tenses-2.csv:119"
+  }
+ },
+ "r21-6-044": {
+  "hash": "c612192e8efbdb00",
+  "gate_key": "present_simple_passive | B1.1 | gap | The cheese ___ in small villages and then ___ to shops around the country. (make / send) | ",
+  "src": "b1-upgrades-1.csv:34",
+  "point": "pas_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is made"
+    ],
+    [
+     "is sent"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2126",
+   "skill": "present_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+   "why": "Two passive verbs: *is made* and *is sent*.",
+   "why_lv": "Divi ciešamās kārtas darbības vārdi: *is made* un *is sent*.",
+   "answers": [
+    [
+     "is made"
+    ],
+    [
+     "is sent"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_pres",
+   "src": "b1-upgrades-1.csv:34"
+  }
+ },
+ "r21-6-045": {
+  "hash": "14dbf005ab3a9816",
+  "gate_key": "present_perfect_passive | B1.1 | mcq | Choose the correct option: The new library ___ , so you can borrow books from tomorrow. | has been opened",
+  "src": "b1-upgrades-1.csv:39",
+  "point": "pas_perf",
+  "key": {
+   "kind": "mcq",
+   "correct": "has been opened",
+   "wrong": [
+    "has open",
+    "is opened",
+    "have been opened"
+   ]
+  },
+  "item": {
+   "id": "c-2131",
+   "skill": "present_perfect_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The new library ___ , so you can borrow books from tomorrow.",
+   "why": "A recent event with a result now: *has been opened*.",
+   "why_lv": "Nesens notikums ar rezultātu tagad: *has been opened*.",
+   "correct": "has been opened",
+   "wrong": [
+    "has open",
+    "is opened",
+    "have been opened"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_perf",
+   "src": "b1-upgrades-1.csv:39"
+  }
+ },
+ "r21-6-046": {
+  "hash": "7296813f2aa58653",
+  "gate_key": "cond_first | B1.2 | gap | Unless you ___ harder, you won't pass the final exam. (study) | ",
+  "src": "b1-upgrades-1.csv:46",
+  "point": "c1_unless",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "study"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2138",
+   "skill": "cond_first",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Unless you ___ harder, you won't pass the final exam. (study)",
+   "why": "*Unless* = *if not*, and it takes the present simple.",
+   "why_lv": "*Unless = if not*, un tam seko Present Simple.",
+   "answers": [
+    [
+     "study"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c1_unless",
+   "src": "b1-upgrades-1.csv:46"
+  }
+ },
+ "r21-6-047": {
+  "hash": "3c9aa5bf809e0ab5",
+  "gate_key": "cmp_ps_pc | B1.1 | order | Put all the words in order. More than one answer is possible. | the phone rang while i was having a shower",
+  "src": "compare-past-1.csv:16",
+  "point": "pastc_when",
+  "key": {
+   "kind": "order",
+   "sentence": "the phone rang while i was having a shower",
+   "also": [
+    "while i was having a shower the phone rang"
+   ]
+  },
+  "item": {
+   "id": "c-2163",
+   "skill": "cmp_ps_pc",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "The phone rang during the shower. The while-clause can come before or after the main clause.",
+   "why_lv": "Telefons zvanīja dušas laikā. Palīgteikums ar *while* var būt pirms vai pēc virsteikuma.",
+   "sentence": "the phone rang while i was having a shower",
+   "answers": [
+    [
+     "the phone rang while i was having a shower",
+     "while i was having a shower the phone rang"
+    ]
+   ],
+   "role": "check",
+   "point": "pastc_when",
+   "src": "compare-past-1.csv:16"
+  }
+ },
+ "r21-6-048": {
+  "hash": "ef41762372162e06",
+  "gate_key": "cmp_pp_ps | B1.1 | gap | It ___ this week. Everything is very dry. (not / rain) | ",
+  "src": "compare-past-1.csv:30",
+  "point": "pp_ps_now",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hasn't rained",
+     "has not rained"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2177",
+   "skill": "cmp_pp_ps",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It ___ this week. Everything is very dry. (not / rain)",
+   "why": "A time up to now (*today, this week, since…*): present perfect.",
+   "why_lv": "Laiks līdz šim brīdim (*today, this week, since*…): Present Perfect.",
+   "answers": [
+    [
+     "hasn't rained",
+     "has not rained"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pp_ps_now",
+   "src": "compare-past-1.csv:30"
+  }
+ },
+ "r21-6-049": {
+  "hash": "17aef34f10b1e8f7",
+  "gate_key": "narrative | B1.1 | gap | When we got home, we found that somebody ___ into the flat. (break) | ",
+  "src": "compare-past-1.csv:36",
+  "point": "pastp_form",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had broken"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2183",
+   "skill": "narrative",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When we got home, we found that somebody ___ into the flat. (break)",
+   "why": "The story is in the past simple; what happened before that: past perfect.",
+   "why_lv": "Stāsts ir Past Simple; kas notika pirms tam: Past Perfect.",
+   "answers": [
+    [
+     "had broken"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastp_form",
+   "src": "compare-past-1.csv:36"
+  }
+ },
+ "r21-6-050": {
+  "hash": "dee2bb0b5ea38102",
+  "gate_key": "narrative | B1.2 | gap | I got up and ___ out of the window. The sun ___. (look / shine) | ",
+  "src": "compare-past-1.csv:38",
+  "point": "narr_mix",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "looked"
+    ],
+    [
+     "was shining",
+     "shone"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2185",
+   "skill": "narrative",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I got up and ___ out of the window. The sun ___. (look / shine)",
+   "why": "The background, what was going on: past continuous; the events: past simple.",
+   "why_lv": "Fons, kas notika apkārt: Past Continuous; notikumi: Past Simple.",
+   "answer_notes": [
+    [
+     "looked / shone",
+     "Correct too. *The sun shone* just states the fact; *was shining* paints the scene you saw at that moment.",
+     "Arī pareizi. *The sun shone* tikai konstatē faktu; *was shining* uzbur ainu, ko tajā brīdī redzēji."
+    ]
+   ],
+   "answers": [
+    [
+     "looked"
+    ],
+    [
+     "was shining",
+     "shone"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "narr_mix",
+   "src": "compare-past-1.csv:38"
+  }
+ },
+ "r21-6-051": {
+  "hash": "72bfd9bb5b21376c",
+  "gate_key": "narrative | B1.1 | gap | A: Was Tom there when you arrived? B: No, he ___. (already / leave) | ",
+  "src": "compare-past-1.csv:40",
+  "point": "pastp_by",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had already left"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2187",
+   "skill": "narrative",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "A: Was Tom there when you arrived? B: No, he ___. (already / leave)",
+   "why": "The story is in the past simple; what happened before that: past perfect.",
+   "why_lv": "Stāsts ir Past Simple; kas notika pirms tam: Past Perfect.",
+   "answers": [
+    [
+     "had already left"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastp_by",
+   "src": "compare-past-1.csv:40"
+  }
+ },
+ "r21-6-052": {
+  "hash": "52004a91cf884ae2",
+  "gate_key": "comparison | B1.1 | mcq | Choose the correct option: Travelling by train is a bit ___ than driving, but it is more relaxing. | slower",
+  "src": "comparison-1.csv:29",
+  "point": "cmp_er",
+  "key": {
+   "kind": "mcq",
+   "correct": "slower",
+   "wrong": [
+    "more slow",
+    "slowest",
+    "the slower"
+   ]
+  },
+  "item": {
+   "id": "c-2236",
+   "skill": "comparison",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: Travelling by train is a bit ___ than driving, but it is more relaxing.",
+   "why": "*a bit* + comparative shows a small difference: *a bit slower*.",
+   "why_lv": "*a bit* + pārākā pakāpe parāda nelielu atšķirību: *a bit slower*.",
+   "correct": "slower",
+   "wrong": [
+    "more slow",
+    "slowest",
+    "the slower"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "cmp_er",
+   "src": "comparison-1.csv:29"
+  }
+ },
+ "r21-6-053": {
+  "hash": "a82aabbb60b58175",
+  "gate_key": "comparison | B1.1 | gap | Prices in the city centre are far ___ than in the suburbs. (high) | ",
+  "src": "comparison-1.csv:34",
+  "point": "cmp_modify",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "higher"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2241",
+   "skill": "comparison",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Prices in the city centre are far ___ than in the suburbs. (high)",
+   "why": "*far* + comparative: *far higher*.",
+   "why_lv": "*far* + pārākā pakāpe: *far higher*.",
+   "answers": [
+    [
+     "higher"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "cmp_modify",
+   "src": "comparison-1.csv:34"
+  }
+ },
+ "r21-6-054": {
+  "hash": "3c4082346ed33146",
+  "gate_key": "comparison | B1.2 | order | Put the words in order. | the more you practise the better you get",
+  "src": "comparison-1.csv:50",
+  "point": "cmp_double",
+  "key": {
+   "kind": "order",
+   "sentence": "the more you practise the better you get",
+   "also": []
+  },
+  "item": {
+   "id": "c-2257",
+   "skill": "comparison",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*The more ..., the better ...* shows two things that change together.",
+   "why_lv": "*The more ..., the better* ... parāda divas lietas, kas mainās kopā.",
+   "sentence": "the more you practise the better you get",
+   "answers": [
+    [
+     "the more you practise the better you get"
+    ]
+   ],
+   "role": "check",
+   "point": "cmp_double",
+   "src": "comparison-1.csv:50"
+  }
+ },
+ "r21-6-055": {
+  "hash": "cd0343ee02954d22",
+  "gate_key": "present_perfect | B1.1 | match | Match each sentence with its meaning. | I have lived here for ten years. = I still live here. ; I lived here for ten years. = I don't live here now. ; I have never lived in a big city. = Not at any time in my life.",
+  "src": "contrast-1.csv:16",
+  "point": "pp_ps_now",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "I have lived here for ten years.",
+     "I still live here."
+    ],
+    [
+     "I lived here for ten years.",
+     "I don't live here now."
+    ],
+    [
+     "I have never lived in a big city.",
+     "Not at any time in my life."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2386",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "why": "*have lived* = up to now; *lived* = finished; *have never lived* = not at any time in my life.",
+   "why_lv": "*have lived* = līdz šim; *lived* = beidzies; *have never lived* = nekad mūžā.",
+   "pairs": [
+    [
+     "I have lived here for ten years.",
+     "I still live here."
+    ],
+    [
+     "I lived here for ten years.",
+     "I don't live here now."
+    ],
+    [
+     "I have never lived in a big city.",
+     "Not at any time in my life."
+    ]
+   ],
+   "also": [
+    "past_simple"
+   ],
+   "role": "learn",
+   "point": "pp_ps_now",
+   "src": "contrast-1.csv:16"
+  }
+ },
+ "r21-6-056": {
+  "hash": "2ad25e738537535e",
+  "gate_key": "cmp_pp_ps | B1.1 | order | Put all the words in order. More than one answer is possible. | did you see Anna yesterday",
+  "src": "learn-drag-4.csv:11",
+  "point": "pp_ps",
+  "key": {
+   "kind": "order",
+   "sentence": "did you see Anna yesterday",
+   "also": [
+    "did Anna see you yesterday"
+   ]
+  },
+  "item": {
+   "id": "c-3048",
+   "skill": "cmp_pp_ps",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "After *did*, use the base form *see*. Either *you* or *Anna* can be the subject when no situation is specified.",
+   "why_lv": "Pēc *did* lieto pamatformu *see*. Ja situācija nav norādīta, teikuma priekšmets var būt gan *you*, gan *Anna*.",
+   "sentence": "did you see Anna yesterday",
+   "answers": [
+    [
+     "did you see Anna yesterday",
+     "did Anna see you yesterday"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "pp_ps",
+   "src": "learn-drag-4.csv:11"
+  }
+ },
+ "r21-6-057": {
+  "hash": "b9a3139b5e64634c",
+  "gate_key": "modal_verbs | B1.1 | mcq | Which sentence means it was not allowed? | We couldn't use our phones in the exam.",
+  "src": "modal-verbs-1.csv:54",
+  "point": "allowed_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "We couldn't use our phones in the exam.",
+   "wrong": [
+    "We didn't have to use our phones in the exam.",
+    "We had to use our phones in the exam.",
+    "We could use our phones in the exam."
+   ]
+  },
+  "item": {
+   "id": "c-3130",
+   "skill": "modal_verbs",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence means it was not allowed?",
+   "why": "*Couldn't* = not allowed in the past. *Didn't have to* = not necessary.",
+   "why_lv": "*Couldn't = nebija* atļauts pagātnē. *Didn't have to = nebija* nepieciešams.",
+   "correct": "We couldn't use our phones in the exam.",
+   "wrong": [
+    "We didn't have to use our phones in the exam.",
+    "We had to use our phones in the exam.",
+    "We could use our phones in the exam."
+   ],
+   "wrong_why": [],
+   "role": "learn",
+   "point": "allowed_to",
+   "src": "modal-verbs-1.csv:54"
+  }
+ },
+ "r21-6-058": {
+  "hash": "74c3dc0ae74c84ad",
+  "gate_key": "rep_statements | B1.2 | gap | Complete with *said* or *told*: Our manager ___ us the office would close at four. | ",
+  "src": "said-told-1.csv:5",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "told"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3372",
+   "skill": "rep_statements",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with *said* or *told*: Our manager ___ us the office would close at four.",
+   "why": "*tell* needs a person right after it: *told me, told us*. *say* does not: *said (that)…*, or *said to me*.",
+   "why_lv": "Pēc *tell* uzreiz nāk persona: *told me, told us*. Pēc *say* persona nenāk: *said* (*that*)… vai *said to me*. *Tulkojot burtiski* no \"teica man\", *rodas said me*.",
+   "answers": [
+    [
+     "told"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_say_tell",
+   "src": "said-told-1.csv:5"
+  }
+ },
+ "r21-6-059": {
+  "hash": "5e9f4c3bedb58394",
+  "gate_key": "narrative | B1.2 | gap | Write one word in each gap: I missed the first minute of the lesson. It ___ just ___ when I joined. (start) | ",
+  "src": "twins-2.csv:5",
+  "point": "pastp_by",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had"
+    ],
+    [
+     "started"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3454",
+   "skill": "narrative",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write one word in each gap: I missed the first minute of the lesson. It ___ just ___ when I joined. (start)",
+   "why": "*Had just started* places the start before the moment I joined. Each gap takes one word.",
+   "why_lv": "*Had just started*: nodarbība bija sākusies pirms pievienošanās. Katrā tukšumā ieraksti vienu vārdu.",
+   "answers": [
+    [
+     "had"
+    ],
+    [
+     "started"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastp_by",
+   "src": "twins-2.csv:5"
+  }
+ }
+}

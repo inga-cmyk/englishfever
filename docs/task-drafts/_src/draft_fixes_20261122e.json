@@ -1,0 +1,4418 @@
+{
+ "a2-mistakes-1.csv": [
+  {
+   "id": "c-0438",
+   "match": [
+    "mcq",
+    "Choose the correct option: My brother and my sister ___ in Riga.",
+    "live"
+   ],
+   "set": {
+    "6": "*and* makes more than one: *My brother and my sister live* (no *-s*).",
+    "7": "*and* nozīmē vairākus: *My brother and my sister live* (bez *-s*). Latviski forma ir viena: dzīvo."
+   }
+  },
+  {
+   "id": "c-0460",
+   "match": [
+    "gap",
+    "Complete with the correct form of *be* or *do*: My brother and I ___ twins.",
+    "are"
+   ],
+   "set": {
+    "6": "*and* makes more than one: *My brother and I are twins* (not *is*).",
+    "7": "*and* nozīmē vairākus: *My brother and I are twins* (nevis *is*)."
+   }
+  },
+  {
+   "id": "c-0446",
+   "match": [
+    "gap",
+    "Tom and his brother ___ to the same school.",
+    "go"
+   ],
+   "set": {
+    "6": "*and* makes more than one: *Tom and his brother go* (no *-s*).",
+    "7": "*and* nozīmē vairākus: *Tom and his brother go* (bez *-s*). Latviski forma ir viena: iet."
+   }
+  },
+  {
+   "id": "c-0461",
+   "match": [
+    "text",
+    "Correct the mistake: My sister and her friend works in a café.",
+    "My sister and her friend work in a café."
+   ],
+   "set": {
+    "6": "*and* makes more than one: *My sister and her friend work* (no *-s*).",
+    "7": "*and* nozīmē vairākus: *My sister and her friend work* (bez *-s*). Latviski forma ir viena: strādā."
+   }
+  },
+  {
+   "id": "c-0451",
+   "match": [
+    "gap",
+    "My best friend ___ in London now. (live)",
+    "lives"
+   ],
+   "set": {
+    "6": "One person: verb + *-s*: *My best friend lives in London.*",
+    "7": "Viens cilvēks: darbības vārds ar *-s*: *My best friend lives in London.*"
+   }
+  },
+  {
+   "id": "c-0464",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my parents live in a small village"
+   ],
+   "set": {
+    "6": "More than one: no *-s*: *My parents live in a small village.*",
+    "7": "Vairāki: bez *-s*: *My parents live in a small village.* Latviski vecāks dzīvo un vecāki dzīvo ir viena forma."
+   }
+  }
+ ],
+ "a2-rel-might-1.csv": [
+  {
+   "id": "c-0541",
+   "match": [
+    "gap",
+    "I have a friend ___ lives in Canada.",
+    "who"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a friend who lives in Canada*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a friend who lives in Canada*."
+   }
+  },
+  {
+   "id": "c-0544",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "The man who fixed my car was very kind."
+   ],
+   "set": {
+    "6": "*who / which / that* is already the subject: no second *he / she / it* (*the man who fixed my car*, not *the man who he fixed my car*).",
+    "7": "*who / which / that* jau ir teikuma priekšmets: otru *he / she / it* neliek (*the man who fixed my car*, nevis *the man who he fixed my car*)."
+   }
+  },
+  {
+   "id": "c-0547",
+   "match": [
+    "mcq",
+    "Choose the correct option: The bus which ___ to the airport leaves at six.",
+    "goes"
+   ],
+   "set": {
+    "6": "After *who / which / that* the verb agrees with the noun before it: *the bus which goes*.",
+    "7": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the bus which goes*."
+   }
+  },
+  {
+   "id": "c-0550",
+   "match": [
+    "gap",
+    "Write the missing word: I bought a bike ___ has ten gears.",
+    "which | that"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a bike which has ten gears*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a bike which has ten gears*."
+   }
+  },
+  {
+   "id": "c-0553",
+   "match": [
+    "gap",
+    "Write the missing word: On our trip we met a guide ___ spoke perfect English.",
+    "who | that"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a guide who spoke perfect English*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a guide who spoke perfect English*."
+   }
+  },
+  {
+   "id": "c-0559",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she wants a job which pays well"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a job which pays well*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a job which pays well*."
+   }
+  },
+  {
+   "id": "c-0562",
+   "match": [
+    "gap",
+    "I know a man ___ ___ three languages.",
+    "who / speaks"
+   ],
+   "set": {
+    "6": "After *who / which / that* the verb agrees with the noun before it: *a man who speaks*.",
+    "7": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *a man who speaks*."
+   }
+  },
+  {
+   "id": "c-0565",
+   "match": [
+    "match",
+    "Match each beginning with its ending.",
+    "A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns."
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a person who makes bread*, *a machine which keeps food cold*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a person who makes bread*, *a machine which keeps food cold*."
+   }
+  },
+  {
+   "id": "c-0542",
+   "match": [
+    "mcq",
+    "Choose the correct option: We stayed at a hotel ___ has a big pool.",
+    "which"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a hotel which has a big pool*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a hotel which has a big pool*."
+   }
+  },
+  {
+   "id": "c-0548",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I know a woman which speaks five languages."
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a woman who speaks five languages*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a woman who speaks five languages*."
+   }
+  },
+  {
+   "id": "c-0551",
+   "match": [
+    "gap",
+    "Write the missing word: The woman ___ teaches us yoga is from India.",
+    "who | that"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *the woman who teaches us yoga*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *the woman who teaches us yoga*."
+   }
+  },
+  {
+   "id": "c-0557",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i have a neighbour who plays the piano"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a neighbour who plays the piano*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a neighbour who plays the piano*."
+   }
+  },
+  {
+   "id": "c-0560",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my uncle has a shop that sells bikes"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a shop that sells bikes*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a shop that sells bikes*."
+   }
+  },
+  {
+   "id": "c-0563",
+   "match": [
+    "gap",
+    "We bought a car ___ uses very little petrol.",
+    "which"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a car which uses very little petrol*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a car which uses very little petrol*."
+   }
+  },
+  {
+   "id": "c-0545",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "I need a laptop that is light."
+   ],
+   "set": {
+    "6": "*who / which / that* is already the subject: no second *he / she / it* (*a laptop that is light*, not *a laptop that it is light*).",
+    "7": "*who / which / that* jau ir teikuma priekšmets: otru *he / she / it* neliek (*a laptop that is light*, nevis *a laptop that it is light*)."
+   }
+  },
+  {
+   "id": "c-0543",
+   "match": [
+    "mcq",
+    "Choose the correct option: I use an app ___ edits my videos.",
+    "that"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *an app that edits my videos*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *an app that edits my videos*."
+   }
+  },
+  {
+   "id": "c-0546",
+   "match": [
+    "mcq",
+    "Choose the correct option: The people who ___ next door are very friendly.",
+    "live"
+   ],
+   "set": {
+    "6": "After *who / which / that* the verb agrees with the noun before it: *the people who live next door*.",
+    "7": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the people who live next door*."
+   }
+  },
+  {
+   "id": "c-0549",
+   "match": [
+    "gap",
+    "Write the missing word: A pilot is a person ___ flies planes.",
+    "who | that"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a person who flies planes*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a person who flies planes*."
+   }
+  },
+  {
+   "id": "c-0552",
+   "match": [
+    "gap",
+    "Write the missing word: Do you like songs ___ tell a story?",
+    "which | that"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *songs which tell a story*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *songs which tell a story*."
+   }
+  },
+  {
+   "id": "c-0558",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we stayed in a flat that had a garden"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a flat that had a garden*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a flat that had a garden*."
+   }
+  },
+  {
+   "id": "c-0561",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she met a man who makes furniture"
+   ],
+   "set": {
+    "6": "*who* (or *that*) for people, *which* (or *that*) for things, then the verb: *a man who makes furniture*.",
+    "7": "*who* (vai *that*) cilvēkiem, *which* (vai *that*) lietām, tad darbības vārds: *a man who makes furniture*."
+   }
+  },
+  {
+   "id": "c-0564",
+   "match": [
+    "gap",
+    "The women who ___ in the next office are my colleagues.",
+    "work"
+   ],
+   "set": {
+    "6": "After *who / which / that* the verb agrees with the noun before it: *the women who work in the next office*.",
+    "7": "Aiz *who / which / that* darbības vārds saskan ar lietvārdu pirms tā: *the women who work in the next office*."
+   }
+  }
+ ],
+ "aux-verbs-1.csv": [
+  {
+   "id": "c-0640",
+   "match": [
+    "gap",
+    "Write the missing word (am, is, are, do, does, did, have or has): ___ you at work now?",
+    "Are"
+   ],
+   "set": {
+    "6": "*be* (*am / is / are*) with *-ing*, an adjective or a place: *Are you at work now?*",
+    "7": "*be* (*am / is / are*) ar *-ing*, īpašības vārdu vai vietu: *Are you at work now?*"
+   }
+  },
+  {
+   "id": "c-0628",
+   "match": [
+    "mcq",
+    "Choose the correct option: What ___ you doing?",
+    "are"
+   ],
+   "set": {
+    "6": "*be* (*am / is / are*) with *-ing*, an adjective or a place: *What are you doing?*",
+    "7": "*be* (*am / is / are*) ar *-ing*, īpašības vārdu vai vietu: *What are you doing?*"
+   }
+  },
+  {
+   "id": "c-0643",
+   "match": [
+    "gap",
+    "Write the missing word (am, is, are, do, does, did, have or has): Why ___ you laughing?",
+    "are | were"
+   ],
+   "set": {
+    "6": "*be* (*am / is / are*) with *-ing*, an adjective or a place: *Why are you laughing?*",
+    "7": "*be* (*am / is / are*) ar *-ing*, īpašības vārdu vai vietu: *Why are you laughing?*"
+   }
+  },
+  {
+   "id": "c-0632",
+   "match": [
+    "mcq",
+    "Choose the correct option: ___ your parents live near you?",
+    "Do"
+   ],
+   "set": {
+    "6": "*do / does* with other verbs in the present simple: *Do your parents live near you?*",
+    "7": "Latviešu jautājumā palīgdarbības vārda nav (Vai tavi vecāki dzīvo tuvumā?), bet angliski ar parastu darbības vārdu vajag *do / does*: *Do your parents live near you?*"
+   }
+  },
+  {
+   "id": "c-0648",
+   "match": [
+    "text",
+    "Make a question with *What*: They are watching TV.",
+    "What are they watching?"
+   ],
+   "set": {
+    "6": "*be* (*am / is / are*) with *-ing*, an adjective or a place: *What are they watching?*",
+    "7": "*be* (*am / is / are*) ar *-ing*, īpašības vārdu vai vietu: *What are they watching?*"
+   }
+  }
+ ],
+ "b1-new-1.csv": [
+  {
+   "id": "c-0935",
+   "match": [
+    "gap",
+    "It took her a week to get used to ___ from home. (work)",
+    "working"
+   ],
+   "set": {
+    "6": "*get used to* + *-ing* or a noun = it becomes normal for you: *get used to working from home*.",
+    "7": "*get used to + -ing* vai lietvārds = *pierast*: *get used to working from home*."
+   }
+  },
+  {
+   "id": "c-0943",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She is used to get up early."
+   ],
+   "set": {
+    "6": "*be used to* + *-ing* = something is normal for you: *She is used to getting up early.*",
+    "7": "*be used to + -ing* = kaut kas ir ierasts: *She is used to getting up early.*"
+   }
+  },
+  {
+   "id": "c-0922",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "it took me a long time to get used to the cold weather"
+   ],
+   "set": {
+    "6": "*get used to* + *-ing* or a noun = it becomes normal for you: *It took me a long time to get used to the cold weather.*",
+    "7": "*get used to + -ing* vai lietvārds = pierast: *It took me a long time to get used to the cold weather.*"
+   }
+  },
+  {
+   "id": "c-0941",
+   "match": [
+    "mcq",
+    "Choose the correct option: At first I hated the food, but now I ___ it.",
+    "am used to"
+   ],
+   "set": {
+    "6": "*be used to* + *-ing* = something is normal for you: *now I am used to it*.",
+    "7": "*be used to + -ing* = kaut kas ir ierasts: *now I am used to it*."
+   }
+  },
+  {
+   "id": "c-0934",
+   "match": [
+    "gap",
+    "I'm not used to ___ so early. (get up)",
+    "getting up"
+   ],
+   "set": {
+    "6": "*be used to* + *-ing* = something is normal for you: *I'm not used to getting up so early.*",
+    "7": "*be used to + -ing* = kaut kas ir ierasts: *I'm not used to getting up so early.*"
+   }
+  },
+  {
+   "id": "c-0942",
+   "match": [
+    "mcq",
+    "Which sentence means the same as 'It is normal for me to live alone'?",
+    "I'm used to living alone."
+   ],
+   "set": {
+    "6": "*be used to* + *-ing* = something is normal for you: *I'm used to living alone.*",
+    "7": "*be used to + -ing* = kaut kas ir ierasts: *I'm used to living alone.*"
+   }
+  }
+ ],
+ "b1-new-2.csv": [
+  {
+   "id": "c-1029",
+   "match": [
+    "gap",
+    "A dentist is a person ___ looks after your teeth.",
+    "who"
+   ],
+   "set": {
+    "6": "*who* for people: *a person who looks after your teeth*.",
+    "7": "*who* cilvēkiem: *a person who looks after your teeth*."
+   }
+  },
+  {
+   "id": "c-1034",
+   "match": [
+    "gap",
+    "Write the missing word: She is the girl ___ brother plays for the national team.",
+    "whose"
+   ],
+   "set": {
+    "6": "*whose* = belongs to: *the girl whose brother plays for the national team*.",
+    "7": "*whose* = kam pieder: *the girl whose brother plays for the national team*."
+   }
+  },
+  {
+   "id": "c-1038",
+   "match": [
+    "gap",
+    "Write the missing word: Last year we visited Rome, ___ my parents got married.",
+    "where | in which"
+   ],
+   "set": {
+    "6": "*where* for places: *Rome, where my parents got married*.",
+    "7": "*where* vietām: *Rome, where my parents got married*."
+   }
+  },
+  {
+   "id": "c-1058",
+   "match": [
+    "text",
+    "Join the two sentences: This is the town. I was born there.",
+    "This is the town where I was born. | This is the town in which I was born."
+   ],
+   "set": {
+    "6": "*where* for places: *the town where I was born*.",
+    "7": "*where* vietām: *the town where I was born*."
+   }
+  },
+  {
+   "id": "c-1025",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "this is the house where i grew up"
+   ],
+   "set": {
+    "6": "*where* for places: *the house where I grew up*.",
+    "7": "*where* vietām: *the house where I grew up*."
+   }
+  },
+  {
+   "id": "c-1030",
+   "match": [
+    "gap",
+    "A library is a place ___ you can borrow books.",
+    "where"
+   ],
+   "set": {
+    "6": "*where* for places: *a place where you can borrow books*.",
+    "7": "*where* vietām: *a place where you can borrow books*."
+   }
+  },
+  {
+   "id": "c-1035",
+   "match": [
+    "gap",
+    "Write the missing word: The hotel ___ we stayed was close to the beach.",
+    "where | in which | at which"
+   ],
+   "set": {
+    "6": "*where* for places: *the hotel where we stayed*.",
+    "7": "*where* vietām: *the hotel where we stayed*."
+   }
+  },
+  {
+   "id": "c-1044",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "The students who passed the exam were very happy."
+   ],
+   "set": {
+    "6": "*who* for people: *the students who passed the exam*.",
+    "7": "*who* cilvēkiem: *the students who passed the exam*."
+   }
+  },
+  {
+   "id": "c-1061",
+   "match": [
+    "text",
+    "Join the two sentences: I met a man. His dog can open doors.",
+    "I met a man whose dog can open doors."
+   ],
+   "set": {
+    "6": "*whose* = belongs to: *a man whose dog can open doors*.",
+    "7": "*whose* = kam pieder: *a man whose dog can open doors*."
+   }
+  },
+  {
+   "id": "c-1028",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the hotel where we stayed was right next to the beach"
+   ],
+   "set": {
+    "6": "*where* for places: *the hotel where we stayed*.",
+    "7": "*where* vietām: *the hotel where we stayed*."
+   }
+  },
+  {
+   "id": "c-1032",
+   "match": [
+    "gap",
+    "The house ___ roof is red belongs to my aunt.",
+    "whose"
+   ],
+   "set": {
+    "6": "*whose* = belongs to: *the house whose roof is red*.",
+    "7": "*whose* = kam pieder: *the house whose roof is red*."
+   }
+  },
+  {
+   "id": "c-1036",
+   "match": [
+    "gap",
+    "Write the missing word: This is the road along ___ we walked.",
+    "which"
+   ],
+   "set": {
+    "6": "After a preposition use *which*: *the road along which we walked*.",
+    "7": "Pēc prievārda lieto *which*: *the road along which we walked*."
+   }
+  },
+  {
+   "id": "c-1056",
+   "match": [
+    "text",
+    "Join with *whose*: The man lives next door. His dog can open doors.",
+    "The man whose dog can open doors lives next door."
+   ],
+   "set": {
+    "6": "*whose* = belongs to: *the man whose dog can open doors*.",
+    "7": "*whose* = kam pieder: *the man whose dog can open doors*."
+   }
+  },
+  {
+   "id": "c-1068",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she won't sign the contract until she has read every page"
+   ],
+   "set": {
+    "6": "After *when / as soon as / until* we use the Present Simple or the Present Perfect, not *will*. The Present Perfect shows that the first action is finished: *until she has read every page*.",
+    "7": "Pēc *when / as soon as / until* lieto Present Simple vai Present Perfect, nevis *will*. Present Perfect parāda, ka pirmā darbība būs pabeigta: *until she has read every page*."
+   }
+  }
+ ],
+ "b1-new-3.csv": [
+  {
+   "id": "c-1205",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i will never forget meeting her for the first time"
+   ],
+   "set": {
+    "6": "*remember / forget* + *to* = a task. + *-ing* = a memory: *I will never forget meeting her.*",
+    "7": "*remember / forget + to* = uzdevums. + *-ing* = atmiņa: *I will never forget meeting her.*"
+   }
+  },
+  {
+   "id": "c-1234",
+   "match": [
+    "mcq",
+    "Choose the correct option: I forgot ___ the milk, so we have none for breakfast.",
+    "to buy"
+   ],
+   "set": {
+    "6": "*remember / forget* + *to* = a task: *I forgot to buy the milk.* + *-ing* = a memory.",
+    "7": "*remember / forget + to* = uzdevums: *I forgot to buy the milk.* + *-ing* = atmiņa."
+   }
+  },
+  {
+   "id": "c-1238",
+   "match": [
+    "mcq",
+    "Which sentence means he quit smoking?",
+    "He stopped smoking."
+   ],
+   "set": {
+    "6": "*stop* + *-ing* = quit: *He stopped smoking.* *stop* + *to* = stop in order to do something: *He stopped to smoke.*",
+    "7": "*stop + -ing* = pārtraukt: *He stopped smoking.* *stop + to* = apstāties, lai kaut ko izdarītu: *He stopped to smoke.*"
+   }
+  },
+  {
+   "id": "c-1251",
+   "match": [
+    "text",
+    "Correct the mistake: My grandfather stopped to smoke ten years ago.",
+    "My grandfather stopped smoking ten years ago."
+   ],
+   "set": {
+    "6": "*stop* + *-ing* = quit: *My grandfather stopped smoking.* *stop* + *to* = stop in order to do something: *stopped to smoke*.",
+    "7": "*stop + -ing* = pārtraukt: *My grandfather stopped smoking.* *stop + to* = apstāties, lai kaut ko izdarītu: *stopped to smoke*."
+   }
+  },
+  {
+   "id": "c-1206",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "remember to turn off the lights when you leave"
+   ],
+   "set": {
+    "6": "*remember / forget* + *to* = a task: *Remember to turn off the lights.* + *-ing* = a memory.",
+    "7": "*remember / forget + to* = uzdevums: *Remember to turn off the lights.* + *-ing* = atmiņa."
+   }
+  },
+  {
+   "id": "c-1236",
+   "match": [
+    "mcq",
+    "Choose the correct option: Remember ___ your passport when you go to the airport.",
+    "to take"
+   ],
+   "set": {
+    "6": "*remember / forget* + *to* = a task: *Remember to take your passport.* + *-ing* = a memory.",
+    "7": "*remember / forget + to* = uzdevums: *Remember to take your passport.* + *-ing* = atmiņa."
+   }
+  },
+  {
+   "id": "c-1252",
+   "match": [
+    "text",
+    "Correct the mistake: I forgot locking the door, so the flat was open all night.",
+    "I forgot to lock the door, so the flat was open all night."
+   ],
+   "set": {
+    "6": "*remember / forget* + *to* = a task: *I forgot to lock the door.* + *-ing* = a memory.",
+    "7": "*remember / forget + to* = uzdevums: *I forgot to lock the door.* + *-ing* = atmiņa."
+   }
+  },
+  {
+   "id": "c-1245",
+   "match": [
+    "text",
+    "Rewrite with stopped: He used to smoke, but he doesn't now.",
+    "He stopped smoking. | He has stopped smoking."
+   ],
+   "set": {
+    "6": "*stop* + *-ing* = quit: *He stopped smoking.* *stop* + *to* = stop in order to do something.",
+    "7": "*stop + -ing* = pārtraukt: *He stopped smoking.* *stop + to* = apstāties, lai kaut ko izdarītu."
+   }
+  },
+  {
+   "id": "c-1207",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he stopped to talk to a neighbour on the way home"
+   ],
+   "set": {
+    "6": "*stop* + *-ing* = quit: *He stopped smoking.* *stop* + *to* = stop in order to do something: *He stopped to talk to a neighbour.*",
+    "7": "*stop + -ing* = pārtraukt: *He stopped smoking.* *stop + to* = apstāties, lai kaut ko izdarītu: *He stopped to talk to a neighbour.*"
+   }
+  },
+  {
+   "id": "c-1246",
+   "match": [
+    "text",
+    "Rewrite with forgot: I didn't lock the door because I forgot.",
+    "I forgot to lock the door."
+   ],
+   "set": {
+    "6": "*remember / forget* + *to* = a task: *I forgot to lock the door.* + *-ing* = a memory: *I'll never forget seeing it.*",
+    "7": "*remember / forget + to* = uzdevums: *I forgot to lock the door.* + *-ing* = atmiņa: *I'll never forget seeing it.*"
+   }
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "id": "c-1276",
+   "match": [
+    "gap",
+    "The sign says: 'No children without an adult.' Children ___ to enter without an adult.",
+    "aren't allowed"
+   ],
+   "set": {
+    "6": "*be allowed to* = permission: *Children aren't allowed to enter without an adult.*",
+    "7": "*be allowed to* = atļauja: *Children aren't allowed to enter without an adult.*"
+   }
+  },
+  {
+   "id": "c-1346",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she is having her car repaired"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She is having her car repaired.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She is having her car repaired.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1349",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he had his wallet stolen on the train"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *He had his wallet stolen on the train.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *He had his wallet stolen on the train.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1352",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "have you ever had your teeth whitened"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *Have you ever had your teeth whitened?* *get* is more informal. In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *Have you ever had your teeth whitened?* *get* ir sarunvalodā. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-1355",
+   "match": [
+    "gap",
+    "We had the windows ___ last week.",
+    "cleaned"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *We had the windows cleaned.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *We had the windows cleaned.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1358",
+   "match": [
+    "gap",
+    "Did you ___ your eyes tested?",
+    "have"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *Did you have your eyes tested?* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *Did you have your eyes tested?* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1361",
+   "match": [
+    "gap",
+    "Someone else does it for you. Write the missing word or words: She ___ her car repaired at the moment.",
+    "is having | is getting"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She is having her car repaired.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She is having her car repaired.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1364",
+   "match": [
+    "gap",
+    "Write the missing word: I'm going to have my eyes ___.",
+    "tested | checked | examined | done | looked at"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I'm going to have my eyes tested.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I'm going to have my eyes tested.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1367",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "I had my car repaired yesterday."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I had my car repaired yesterday.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I had my car repaired yesterday.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1370",
+   "match": [
+    "mcq",
+    "Choose the correct option: Where did you ___ your photo taken?",
+    "have"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *Where did you have your photo taken?* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *Where did you have your photo taken?* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1373",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I haven't had my eyes test yet."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I haven't had my eyes tested yet.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I haven't had my eyes tested yet.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1376",
+   "match": [
+    "text",
+    "Rewrite with had: A mechanic repaired my car yesterday.",
+    "I had my car repaired yesterday. | I got my car repaired yesterday. | Yesterday I had my car repaired. | Yesterday I got my car repaired."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I had my car repaired yesterday.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I had my car repaired yesterday.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1379",
+   "match": [
+    "text",
+    "Correct the mistake: We are having our kitchen paint.",
+    "We are having our kitchen painted. | We're having our kitchen painted."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *We are having our kitchen painted.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *We are having our kitchen painted.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1383",
+   "match": [
+    "text",
+    "Correct the mistake: When did you had your teeth checked?",
+    "When did you have your teeth checked?"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *When did you have your teeth checked?* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *When did you have your teeth checked?* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1388",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he sent his mother a letter"
+   ],
+   "set": {
+    "6": "*he sent his mother a letter* = *he sent a letter to his mother*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*he sent his mother a letter* = *he sent a letter to his mother*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1392",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he lent his bike to his neighbour"
+   ],
+   "set": {
+    "6": "*he lent his neighbour his bike* = *he lent his bike to his neighbour*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*he lent his neighbour his bike* = *he lent his bike to his neighbour*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1395",
+   "match": [
+    "gap",
+    "She gave ___ a present.",
+    "me"
+   ],
+   "set": {
+    "6": "*She gave me a present* = *She gave a present to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*She gave me a present* = *She gave a present to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1398",
+   "match": [
+    "gap",
+    "He cooked dinner ___ his wife.",
+    "for"
+   ],
+   "set": {
+    "6": "*He cooked his wife dinner* = *He cooked dinner for his wife*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*He cooked his wife dinner* = *He cooked dinner for his wife*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1401",
+   "match": [
+    "gap",
+    "Could you lend ___ some money?",
+    "me"
+   ],
+   "set": {
+    "6": "*lend me some money* = *lend some money to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*lend me some money* = *lend some money to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1405",
+   "match": [
+    "gap",
+    "Complete with *to* or *for*: He made a cake ___ his girlfriend.",
+    "for"
+   ],
+   "set": {
+    "6": "*He made his girlfriend a cake* = *He made a cake for his girlfriend*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*He made his girlfriend a cake* = *He made a cake for his girlfriend*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1408",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "She gave me a present."
+   ],
+   "set": {
+    "6": "*She gave me a present* = *She gave a present to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*She gave me a present* = *She gave a present to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1411",
+   "match": [
+    "mcq",
+    "Choose the correct option: She cooked dinner ___ her family.",
+    "for"
+   ],
+   "set": {
+    "6": "*She cooked her family dinner* = *She cooked dinner for her family*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*She cooked her family dinner* = *She cooked dinner for her family*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1414",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "She suggested a good restaurant to us."
+   ],
+   "set": {
+    "6": "*to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *She suggested a good restaurant to us.*",
+    "7": "*to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *She suggested a good restaurant to us.*"
+   }
+  },
+  {
+   "id": "c-1417",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "Could you pass me the salt?"
+   ],
+   "set": {
+    "6": "*pass me the salt* = *pass the salt to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*pass me the salt* = *pass the salt to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1422",
+   "match": [
+    "text",
+    "Rewrite with to: He sent his boss an email.",
+    "He sent an email to his boss."
+   ],
+   "set": {
+    "6": "*He sent his boss an email* = *He sent an email to his boss*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*He sent his boss an email* = *He sent an email to his boss*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1428",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i am interested in history"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *I am interested in history*.",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *I am interested in history*."
+   }
+  },
+  {
+   "id": "c-1431",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the exam results were surprising"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the exam results were surprising*. *-ed* = how a person feels.",
+    "7": "*-ing* = kas izraisa sajūtu: *the exam results were surprising*. *-ed* = kā cilvēks jūtas."
+   }
+  },
+  {
+   "id": "c-1434",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the long meeting was exhausting"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the long meeting was exhausting*. *-ed* = how a person feels.",
+    "7": "*-ing* = kas izraisa sajūtu: *the long meeting was exhausting*. *-ed* = kā cilvēks jūtas."
+   }
+  },
+  {
+   "id": "c-1440",
+   "match": [
+    "gap",
+    "The instructions were ___, so nobody understood them.",
+    "confusing"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *The instructions were confusing*. *-ed* = how a person feels.",
+    "7": "*-ing* = kas izraisa sajūtu: *The instructions were confusing*. *-ed* = kā cilvēks jūtas."
+   }
+  },
+  {
+   "id": "c-1447",
+   "match": [
+    "gap",
+    "I was ___ at the price. It was much higher than I thought.",
+    "surprised"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *I was surprised*.",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *I was surprised*."
+   }
+  },
+  {
+   "id": "c-1453",
+   "match": [
+    "mcq",
+    "Choose the correct option: She was ___ by the difficult question.",
+    "confused"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *She was confused*.",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *She was confused*."
+   }
+  },
+  {
+   "id": "c-1457",
+   "match": [
+    "mcq",
+    "Choose the correct option: He looks ___. He didn't sleep last night.",
+    "tired"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *He looks tired*.",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *He looks tired*."
+   }
+  },
+  {
+   "id": "c-1463",
+   "match": [
+    "text",
+    "Say it another way and keep the meaning: The news surprised everyone.",
+    "Everyone was surprised by the news. | Everyone was surprised at the news. | The news was surprising."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *The news was surprising*. *-ed* = how a person feels: *Everyone was surprised by the news*.",
+    "7": "*-ing* = kas izraisa sajūtu: *The news was surprising*. *-ed* = kā cilvēks jūtas: *Everyone was surprised by the news*."
+   }
+  },
+  {
+   "id": "c-1283",
+   "match": [
+    "mcq",
+    "Choose the correct option: Passengers ___ to use phones during take-off.",
+    "aren't allowed"
+   ],
+   "set": {
+    "6": "*be allowed to* = permission: *Passengers aren't allowed to use phones.*",
+    "7": "*be allowed to* = atļauja: *Passengers aren't allowed to use phones.*"
+   }
+  },
+  {
+   "id": "c-1347",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we are having the kitchen painted next week"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *We are having the kitchen painted.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *We are having the kitchen painted.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1350",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i didn't have my passport checked"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *I didn't have my passport checked.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *I didn't have my passport checked.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1353",
+   "match": [
+    "gap",
+    "I'm going to ___ my laptop repaired.",
+    "have"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *I'm going to have my laptop repaired.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *I'm going to have my laptop repaired.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1356",
+   "match": [
+    "gap",
+    "They are ___ the house painted.",
+    "having"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *They are having the house painted.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *They are having the house painted.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1359",
+   "match": [
+    "gap",
+    "I need to get my passport ___.",
+    "renewed"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *I need to get my passport renewed.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *I need to get my passport renewed.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1362",
+   "match": [
+    "gap",
+    "Someone else does it for you. Write the missing word or words: We ___ the roof repaired next week.",
+    "are having | are going to have | will have | are getting"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *We are having the roof repaired.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *We are having the roof repaired.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1368",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We had the house paint last week."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *We had the house painted.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *We had the house painted.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1374",
+   "match": [
+    "mcq",
+    "Choose the correct option: Did you have your passport ___ at the border?",
+    "checked"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *Did you have your passport checked?* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *Did you have your passport checked?* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1377",
+   "match": [
+    "text",
+    "Correct the mistake: I had my car repair yesterday.",
+    "I had my car repaired yesterday. | Yesterday I had my car repaired."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *I had my car repaired.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *I had my car repaired.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1386",
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "She painted the room. = She did the work herself. ; She had the room painted. = A painter did the work for her. ; She had her bag stolen. = A thief took her bag."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us: *She had the room painted.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *She had the room painted.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1365",
+   "match": [
+    "gap",
+    "Write the missing word: He had his phone ___ on the bus.",
+    "stolen | taken"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone else does it (here a thief): *He had his phone stolen on the bus.*",
+    "7": "*have* + papildinātājs + 3. forma: to izdara kāds cits (šeit zaglis): *He had his phone stolen on the bus.*"
+   }
+  },
+  {
+   "id": "c-1371",
+   "match": [
+    "mcq",
+    "Choose the correct option: He had his wallet ___ on the train.",
+    "stolen"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone else does it (here a thief): *He had his wallet stolen on the train.*",
+    "7": "*have* + papildinātājs + 3. forma: to izdara kāds cits (šeit zaglis): *He had his wallet stolen on the train.*"
+   }
+  },
+  {
+   "id": "c-1380",
+   "match": [
+    "text",
+    "Rewrite with had: Someone stole his wallet on the train.",
+    "He had his wallet stolen on the train."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone else does it (here a thief): *He had his wallet stolen on the train.*",
+    "7": "*have* + papildinātājs + 3. forma: to izdara kāds cits (šeit zaglis): *He had his wallet stolen on the train.*"
+   }
+  },
+  {
+   "id": "c-1390",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "can you show me the way"
+   ],
+   "set": {
+    "6": "*show me the way* = *show the way to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "*show me the way* = *show the way to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-1393",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "could you pass me the salt please"
+   ],
+   "set": {
+    "6": "*pass me the salt* = *pass the salt to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "*pass me the salt* = *pass the salt to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-1396",
+   "match": [
+    "gap",
+    "He bought a gift ___ his mother.",
+    "for"
+   ],
+   "set": {
+    "6": "*bought his mother a gift* = *bought a gift for his mother*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*bought his mother a gift* = *bought a gift for his mother*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1402",
+   "match": [
+    "gap",
+    "Complete with *to* or *for*: I'll buy a present ___ my brother.",
+    "for"
+   ],
+   "set": {
+    "6": "*buy my brother a present* = *buy a present for my brother*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*buy my brother a present* = *buy a present for my brother*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1409",
+   "match": [
+    "mcq",
+    "Choose the correct option: I bought a gift ___ my mother.",
+    "for"
+   ],
+   "set": {
+    "6": "*bought my mother a gift* = *bought a gift for my mother*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*bought my mother a gift* = *bought a gift for my mother*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1412",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "My dad made me a sandwich."
+   ],
+   "set": {
+    "6": "*made me a sandwich* = *made a sandwich for me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*made me a sandwich* = *made a sandwich for me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1418",
+   "match": [
+    "text",
+    "Rewrite without to: She gave a present to me.",
+    "She gave me a present."
+   ],
+   "set": {
+    "6": "*gave me a present* = *gave a present to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*gave me a present* = *gave a present to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1423",
+   "match": [
+    "text",
+    "Correct the mistake: He sent an email his boss.",
+    "He sent his boss an email. | He sent an email to his boss."
+   ],
+   "set": {
+    "6": "*sent his boss an email* = *sent an email to his boss*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*sent his boss an email* = *sent an email to his boss*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1399",
+   "match": [
+    "gap",
+    "She explained the problem ___ me.",
+    "to"
+   ],
+   "set": {
+    "6": "*to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *She explained the problem to me.*",
+    "7": "*to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *She explained the problem to me.*"
+   }
+  },
+  {
+   "id": "c-1406",
+   "match": [
+    "gap",
+    "Complete with *to* or *for*: She explained the rules ___ us.",
+    "to"
+   ],
+   "set": {
+    "6": "*to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *She explained the rules to us.*",
+    "7": "*to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *She explained the rules to us.*"
+   }
+  },
+  {
+   "id": "c-1415",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He described me the house."
+   ],
+   "set": {
+    "6": "*to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *He described the house to me.*",
+    "7": "*to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *He described the house to me.*"
+   }
+  },
+  {
+   "id": "c-1429",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she felt tired after the long day"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *She felt tired.*",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *She felt tired.*"
+   }
+  },
+  {
+   "id": "c-1432",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he was confused by the instructions"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *He was confused by the instructions.*",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *He was confused by the instructions.*"
+   }
+  },
+  {
+   "id": "c-1438",
+   "match": [
+    "gap",
+    "The news was ___. Nobody expected it.",
+    "surprising"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *The news was surprising.* *-ed* = how a person feels.",
+    "7": "*-ing* = kas izraisa sajūtu: *The news was surprising.* *-ed* = kā cilvēks jūtas."
+   }
+  },
+  {
+   "id": "c-1443",
+   "match": [
+    "gap",
+    "I felt very ___ after the long journey.",
+    "tired"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *I felt very tired.*",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *I felt very tired.*"
+   }
+  },
+  {
+   "id": "c-1449",
+   "match": [
+    "mcq",
+    "Choose the correct option: I'm ___ in modern art.",
+    "interested"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *I'm interested in modern art.*",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *I'm interested in modern art.*"
+   }
+  },
+  {
+   "id": "c-1454",
+   "match": [
+    "mcq",
+    "Choose the correct option: It was an ___ experience.",
+    "amazing"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *an amazing experience*. *-ed* = how a person feels.",
+    "7": "*-ing* = kas izraisa sajūtu: *an amazing experience*. *-ed* = kā cilvēks jūtas."
+   }
+  },
+  {
+   "id": "c-1461",
+   "match": [
+    "text",
+    "Correct the mistake: I am interesting in history.",
+    "I am interested in history."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling. *-ed* = how a person feels: *I am interested in history.*",
+    "7": "*-ing* = kas izraisa sajūtu. *-ed* = kā cilvēks jūtas: *I am interested in history.*"
+   }
+  },
+  {
+   "id": "c-1464",
+   "match": [
+    "text",
+    "Correct the mistake: The meeting was very tired.",
+    "The meeting was very tiring."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *The meeting was very tiring.* *-ed* = how a person feels.",
+    "7": "*-ing* = kas izraisa sajūtu: *The meeting was very tiring.* *-ed* = kā cilvēks jūtas."
+   }
+  },
+  {
+   "id": "c-1260",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "children aren't allowed to enter the building"
+   ],
+   "set": {
+    "6": "*be allowed to* = permission: *Children aren't allowed to enter the building.*",
+    "7": "*be allowed to* = atļauja: *Children aren't allowed to enter the building.*"
+   }
+  },
+  {
+   "id": "c-1345",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i had my hair cut yesterday"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I had my hair cut yesterday.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I had my hair cut yesterday.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1348",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "where do you get your hair cut"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *Where do you get your hair cut?* *get* is more informal. In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *Where do you get your hair cut?* *get* ir sarunvalodā. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-1351",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she had her photo taken by a professional"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She had her photo taken by a professional.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She had her photo taken by a professional.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1354",
+   "match": [
+    "gap",
+    "She ___ her hair cut every month.",
+    "has"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She has her hair cut every month.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She has her hair cut every month.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1357",
+   "match": [
+    "gap",
+    "He had his car ___ yesterday.",
+    "repaired"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *He had his car repaired yesterday.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *He had his car repaired yesterday.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1360",
+   "match": [
+    "gap",
+    "Someone else does it for you. Write the missing word or words: I ___ my hair cut yesterday.",
+    "had | got"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I had my hair cut yesterday.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I had my hair cut yesterday.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1363",
+   "match": [
+    "gap",
+    "Someone else does it for you. Write the missing word or words: Where do you ___ your photos printed?",
+    "have | get"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *Where do you have your photos printed?* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *Where do you have your photos printed?* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1366",
+   "match": [
+    "mcq",
+    "Which sentence means a hairdresser cut her hair?",
+    "She had her hair cut."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She had her hair cut.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She had her hair cut.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1369",
+   "match": [
+    "mcq",
+    "Choose the correct option: She ___ her nails done every Saturday.",
+    "has"
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She has her nails done every Saturday.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She has her nails done every Saturday.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1372",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "She is having her house painted at the moment."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *She is having her house painted at the moment.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *She is having her house painted at the moment.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1375",
+   "match": [
+    "mcq",
+    "Which sentence means the speaker did NOT do it himself?",
+    "I had my bike repaired."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *I had my bike repaired.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I had my bike repaired.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1378",
+   "match": [
+    "text",
+    "Rewrite with having: A decorator is painting our kitchen.",
+    "We are having our kitchen painted. | We're having our kitchen painted."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *We are having our kitchen painted.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *We are having our kitchen painted.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1381",
+   "match": [
+    "text",
+    "Correct the mistake: He had his wallet steal on the train.",
+    "He had his wallet stolen on the train."
+   ],
+   "set": {
+    "6": "*have* + object + 3. form: someone does it for us. *He had his wallet stolen on the train.* *get* is more informal.",
+    "7": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *He had his wallet stolen on the train.* *get* ir sarunvalodā."
+   }
+  },
+  {
+   "id": "c-1387",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she gave me a present"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *she gave me a present*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *she gave me a present*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1391",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she explained the problem to me"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *she explained the problem to me*.",
+    "7": "*give someone something = give something to someone*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *she explained the problem to me*."
+   }
+  },
+  {
+   "id": "c-1394",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i will send it to you tomorrow"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *I will send it to you tomorrow*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *I will send it to you tomorrow*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1397",
+   "match": [
+    "gap",
+    "She showed her photos ___ me.",
+    "to"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *She showed her photos to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *She showed her photos to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1400",
+   "match": [
+    "gap",
+    "Please tell ___ the truth.",
+    "me"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *Please tell me the truth*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *Please tell me the truth*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1404",
+   "match": [
+    "gap",
+    "Complete with *to* or *for*: She teaches English ___ children.",
+    "to"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *She teaches English to children*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *She teaches English to children*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1407",
+   "match": [
+    "gap",
+    "Complete with *to* or *for*: I wrote a long letter ___ my grandmother.",
+    "to"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *I wrote a long letter to my grandmother*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *I wrote a long letter to my grandmother*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1410",
+   "match": [
+    "mcq",
+    "Choose the correct option: She sent ___ a message.",
+    "me"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *She sent me a message*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *She sent me a message*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1413",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He explained me the problem."
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *He explained the problem to me*.",
+    "7": "*give someone something = give something to someone*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *He explained the problem to me*."
+   }
+  },
+  {
+   "id": "c-1416",
+   "match": [
+    "mcq",
+    "Choose the correct option: He lent his car ___ his neighbour.",
+    "to"
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*: *He lent his car to his neighbour*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*give someone something = give something to someone*: *He lent his car to his neighbour*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1419",
+   "match": [
+    "text",
+    "Correct the mistake: She gave to me a present.",
+    "She gave me a present. | She gave a present to me."
+   ],
+   "set": {
+    "6": "*She gave me a present* = *She gave a present to me*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*.",
+    "7": "*She gave me a present = She gave a present to me*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*."
+   }
+  },
+  {
+   "id": "c-1424",
+   "match": [
+    "text",
+    "Correct the mistake: She explained me the rules.",
+    "She explained the rules to me."
+   ],
+   "set": {
+    "6": "*give someone something* = *give something to someone*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *She explained the rules to me*.",
+    "7": "*give someone something = give something to someone*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *She explained the rules to me*."
+   }
+  },
+  {
+   "id": "c-1430",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "this book is very interesting"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *this book is very interesting*. *-ed* = how a person feels: *I am interested*.",
+    "7": "*-ing* = kas izraisa sajūtu: *this book is very interesting*. *-ed* = kā cilvēks jūtas: *I am interested*."
+   }
+  },
+  {
+   "id": "c-1433",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i'm so excited about the trip"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the trip is exciting*. *-ed* = how a person feels: *I'm so excited about the trip*.",
+    "7": "*-ing* = kas izraisa sajūtu: *the trip is exciting*. *-ed* = kā cilvēks jūtas: *I'm so excited about the trip*."
+   }
+  },
+  {
+   "id": "c-1439",
+   "match": [
+    "gap",
+    "She was ___ after running ten kilometres.",
+    "exhausted"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *running ten kilometres is exhausting*. *-ed* = how a person feels: *she was exhausted*.",
+    "7": "*-ing* = kas izraisa sajūtu: *running ten kilometres is exhausting*. *-ed* = kā cilvēks jūtas: *she was exhausted*."
+   }
+  },
+  {
+   "id": "c-1446",
+   "match": [
+    "gap",
+    "The exam was ___ because it was very long.",
+    "tiring"
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the exam was tiring*. *-ed* = how a person feels: *we were tired*.",
+    "7": "*-ing* = kas izraisa sajūtu: *the exam was tiring*. *-ed* = kā cilvēks jūtas: *we were tired*."
+   }
+  },
+  {
+   "id": "c-1450",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "I was surprised by the news."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the news was surprising*. *-ed* = how a person feels: *I was surprised by the news*.",
+    "7": "*-ing* = kas izraisa sajūtu: *the news was surprising*. *-ed* = kā cilvēks jūtas: *I was surprised by the news*."
+   }
+  },
+  {
+   "id": "c-1456",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I am really tiring after work."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *work is really tiring*. *-ed* = how a person feels: *I am really tired after work*.",
+    "7": "*-ing* = kas izraisa sajūtu: *work is really tiring*. *-ed* = kā cilvēks jūtas: *I am really tired after work*."
+   }
+  },
+  {
+   "id": "c-1462",
+   "match": [
+    "text",
+    "Rewrite with surprised: The news surprised everyone.",
+    "Everyone was surprised by the news. | Everyone was surprised at the news."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the news was surprising*. *-ed* = how a person feels: *everyone was surprised by the news*.",
+    "7": "*-ing* = kas izraisa sajūtu: *the news was surprising*. *-ed* = kā cilvēks jūtas: *everyone was surprised by the news*."
+   }
+  },
+  {
+   "id": "c-1465",
+   "match": [
+    "text",
+    "Correct the mistake: I felt very exciting before the trip.",
+    "I felt very excited before the trip."
+   ],
+   "set": {
+    "6": "*-ing* = what causes the feeling: *the trip was exciting*. *-ed* = how a person feels: *I felt very excited before the trip*.",
+    "7": "*-ing* = kas izraisa sajūtu: *the trip was exciting*. *-ed* = kā cilvēks jūtas: *I felt very excited before the trip*."
+   }
+  }
+ ],
+ "b1-new-5.csv": [
+  {
+   "id": "c-1469",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she bought a beautiful small black bag"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful small black bag*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful small black bag*."
+   }
+  },
+  {
+   "id": "c-1472",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i love my new red coat"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *my new red coat*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *my new red coat*."
+   }
+  },
+  {
+   "id": "c-1475",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he drives a big old german car"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big old German car*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big old German car*."
+   }
+  },
+  {
+   "id": "c-1478",
+   "match": [
+    "gap",
+    "She has a ___ small bag.",
+    "beautiful"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful small bag*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful small bag*."
+   }
+  },
+  {
+   "id": "c-1481",
+   "match": [
+    "gap",
+    "He bought a big ___ German car.",
+    "red"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big red German car*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big red German car*."
+   }
+  },
+  {
+   "id": "c-1484",
+   "match": [
+    "gap",
+    "She wore a ___ cotton dress.",
+    "lovely"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely cotton dress*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely cotton dress*."
+   }
+  },
+  {
+   "id": "c-1488",
+   "match": [
+    "gap",
+    "I found a ___ box. (little / wooden / beautiful)",
+    "beautiful little wooden"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful little wooden box*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful little wooden box*."
+   }
+  },
+  {
+   "id": "c-1491",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "She has a beautiful small house."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful small house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful small house*."
+   }
+  },
+  {
+   "id": "c-1494",
+   "match": [
+    "mcq",
+    "Choose the correct option: She wore a ___ dress.",
+    "long red"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a long red dress*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a long red dress*."
+   }
+  },
+  {
+   "id": "c-1497",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She has a wooden round table."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a round wooden table*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a round wooden table*."
+   }
+  },
+  {
+   "id": "c-1500",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We ate in an Italian small restaurant."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a small Italian restaurant*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a small Italian restaurant*."
+   }
+  },
+  {
+   "id": "c-1503",
+   "match": [
+    "text",
+    "Write the phrase with the words in the right order: a, house, lovely, old",
+    "a lovely old house"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely old house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely old house*."
+   }
+  },
+  {
+   "id": "c-1506",
+   "match": [
+    "text",
+    "Write the phrase with the words in the right order: a, box, wooden, small, lovely",
+    "a lovely small wooden box"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely small wooden box*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely small wooden box*."
+   }
+  },
+  {
+   "id": "c-1559",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she is so tired"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so tired*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so tired*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1562",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "it was such a cold day that we stayed in"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a cold day*. *so much / so many* + noun. Result: *such a cold day that we stayed in*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a cold day*. *so much / so many* + lietvārds. Sekas: *such a cold day that we stayed in*."
+   }
+  },
+  {
+   "id": "c-1565",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "it was such terrible weather that the flight was cancelled"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such terrible weather*. *so much / so many* + noun. Result: *such terrible weather that the flight was cancelled*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such terrible weather*. *so much / so many* + lietvārds. Sekas: *such terrible weather that the flight was cancelled*."
+   }
+  },
+  {
+   "id": "c-1570",
+   "match": [
+    "gap",
+    "There was ___ much noise that I couldn't sleep.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun: *so much noise*. Result: *so much noise that I couldn't sleep*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds: *so much noise*. Sekas: *so much noise that I couldn't sleep*."
+   }
+  },
+  {
+   "id": "c-1573",
+   "match": [
+    "gap",
+    "Complete with *so* or *such*: I was ___ hungry that I ate everything.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so hungry*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so hungry that I ate everything*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so hungry*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so hungry that I ate everything*."
+   }
+  },
+  {
+   "id": "c-1576",
+   "match": [
+    "gap",
+    "Complete with *so* or *such*: There were ___ many people that we couldn't get in.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun: *so many people*. Result: *so many people that we couldn't get in*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds: *so many people*. Sekas: *so many people that we couldn't get in*."
+   }
+  },
+  {
+   "id": "c-1580",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She is such tired."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *She is so tired*. *such* + (*a*) + (adjective) + noun: *such a tired child*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *She is so tired*. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a tired child*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1583",
+   "match": [
+    "mcq",
+    "Choose the correct option: It was ___ a surprise.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a surprise*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a surprise*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1587",
+   "match": [
+    "mcq",
+    "Choose the correct option: He drove ___ fast that we were afraid.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so fast*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so fast that we were afraid*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so fast*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so fast that we were afraid*."
+   }
+  },
+  {
+   "id": "c-1590",
+   "match": [
+    "text",
+    "Correct the mistake: It was such cold that we stayed inside.",
+    "It was so cold that we stayed inside. | It was such cold weather that we stayed inside. | It was so cold we stayed inside. | It was such cold weather we stayed inside."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so cold*. *such* + (*a*) + (adjective) + noun: *such cold weather*. *so much / so many* + noun. Result: *so cold that we stayed inside*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so cold*. *such* + (*a*) + (īpašības vārds) + lietvārds: *such cold weather*. *so much / so many* + lietvārds. Sekas: *so cold that we stayed inside*."
+   }
+  },
+  {
+   "id": "c-1593",
+   "match": [
+    "text",
+    "Rewrite with such: It was a very cold day. We stayed in.",
+    "It was such a cold day that we stayed in. | It was such a cold day we stayed in."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a cold day*. *so much / so many* + noun. Result: *such a cold day that we stayed in*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a cold day*. *so much / so many* + lietvārds. Sekas: *such a cold day that we stayed in*."
+   }
+  },
+  {
+   "id": "c-1470",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he lives in a big old house"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big old house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big old house*."
+   }
+  },
+  {
+   "id": "c-1473",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "they have a small white dog"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a small white dog*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a small white dog*."
+   }
+  },
+  {
+   "id": "c-1476",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i found a lovely little wooden box"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely little wooden box*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely little wooden box*."
+   }
+  },
+  {
+   "id": "c-1479",
+   "match": [
+    "gap",
+    "She lives in a ___ old house.",
+    "lovely"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely old house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely old house*."
+   }
+  },
+  {
+   "id": "c-1482",
+   "match": [
+    "gap",
+    "They live in a ___ ___ stone cottage.",
+    "beautiful / old"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful old stone cottage*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful old stone cottage*."
+   }
+  },
+  {
+   "id": "c-1485",
+   "match": [
+    "gap",
+    "We bought a ___ table. (round / wooden / lovely)",
+    "lovely round wooden"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely round wooden table*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely round wooden table*."
+   }
+  },
+  {
+   "id": "c-1489",
+   "match": [
+    "gap",
+    "They live in a ___ house. (stone / old / lovely)",
+    "lovely old stone"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely old stone house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely old stone house*."
+   }
+  },
+  {
+   "id": "c-1492",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He bought a leather black bag."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a black leather bag*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a black leather bag*."
+   }
+  },
+  {
+   "id": "c-1495",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "I live in an old stone house."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *an old stone house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *an old stone house*."
+   }
+  },
+  {
+   "id": "c-1498",
+   "match": [
+    "mcq",
+    "Choose the correct option: They bought a ___ car.",
+    "big old German"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big old German car*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big old German car*."
+   }
+  },
+  {
+   "id": "c-1501",
+   "match": [
+    "text",
+    "Correct the mistake: She bought a black small bag.",
+    "She bought a small black bag."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a small black bag*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a small black bag*."
+   }
+  },
+  {
+   "id": "c-1504",
+   "match": [
+    "text",
+    "Correct the mistake: She wore a silk red long dress.",
+    "She wore a long red silk dress."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a long red silk dress*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a long red silk dress*."
+   }
+  },
+  {
+   "id": "c-1507",
+   "match": [
+    "match",
+    "Match each word with what it tells us.",
+    "beautiful = opinion ; small = size ; old = age ; red = colour"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *beautiful* (opinion), *small* (size), *old* (age), *red* (colour).",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *beautiful* (viedoklis), *small* (izmērs), *old* (vecums), *red* (krāsa)."
+   }
+  },
+  {
+   "id": "c-1560",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he was so late that we left"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so late that we left*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so late that we left*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1563",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "there were so many people that we couldn't move"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun: *so many people that we couldn't move*. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds: *so many people that we couldn't move*. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1568",
+   "match": [
+    "gap",
+    "They are ___ nice people.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such nice people*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such nice people*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1571",
+   "match": [
+    "gap",
+    "It was ___ terrible weather that we stayed in.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such terrible weather*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such terrible weather*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1574",
+   "match": [
+    "gap",
+    "Complete with *so* or *such*: It was ___ an interesting book that I read it twice.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such an interesting book*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such an interesting book*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1577",
+   "match": [
+    "gap",
+    "Complete with *so* or *such*: They were ___ kind people that everyone loved them.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such kind people*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such kind people*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1581",
+   "match": [
+    "mcq",
+    "Choose the correct option: They are ___ nice people.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such nice people*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such nice people*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1584",
+   "match": [
+    "mcq",
+    "Choose the correct option: There were ___ people that we couldn't move.",
+    "so many"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun: *so many people*. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds: *so many people*. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1588",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "The room was so dark that I couldn't see anything."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so dark that I couldn't see anything*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so dark that I couldn't see anything*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1591",
+   "match": [
+    "text",
+    "Rewrite with such: They are very nice people.",
+    "They are such nice people."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such nice people*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such nice people*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1594",
+   "match": [
+    "text",
+    "Correct the mistake: It was so a cold day that we stayed in.",
+    "It was such a cold day that we stayed in. | It was so cold that we stayed in. | It was such a cold day we stayed in. | It was so cold we stayed in."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a cold day that we stayed in*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a cold day that we stayed in*. *so much / so many* + lietvārds. Sekas: *so / such ... that*."
+   }
+  },
+  {
+   "id": "c-1471",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we stayed in a lovely small hotel"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely small hotel*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely small hotel*."
+   }
+  },
+  {
+   "id": "c-1474",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she wore a long red silk dress"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a long red silk dress*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a long red silk dress*."
+   }
+  },
+  {
+   "id": "c-1477",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "they live in a beautiful old stone cottage"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful old stone cottage*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful old stone cottage*."
+   }
+  },
+  {
+   "id": "c-1480",
+   "match": [
+    "gap",
+    "We stayed in a small ___ hotel.",
+    "old"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a small old hotel*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a small old hotel*."
+   }
+  },
+  {
+   "id": "c-1483",
+   "match": [
+    "gap",
+    "He drives a ___ ___ car.",
+    "big / red"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big red car*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big red car*."
+   }
+  },
+  {
+   "id": "c-1486",
+   "match": [
+    "gap",
+    "He has a ___ car. (German / old / big)",
+    "big old German"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big old German car*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big old German car*."
+   }
+  },
+  {
+   "id": "c-1490",
+   "match": [
+    "gap",
+    "He wore a ___ jacket. (leather / brown / old)",
+    "old brown leather"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *an old brown leather jacket*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *an old brown leather jacket*."
+   }
+  },
+  {
+   "id": "c-1493",
+   "match": [
+    "mcq",
+    "Choose the correct option: We stayed in a ___ hotel.",
+    "lovely small"
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a lovely small hotel*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a lovely small hotel*."
+   }
+  },
+  {
+   "id": "c-1496",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "She has two small boxes."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *two small boxes*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *two small boxes*."
+   }
+  },
+  {
+   "id": "c-1499",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "He wore a nice old brown jacket."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a nice old brown jacket*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a nice old brown jacket*."
+   }
+  },
+  {
+   "id": "c-1502",
+   "match": [
+    "text",
+    "Correct the mistake: He lives in an old big house.",
+    "He lives in a big old house."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a big old house*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a big old house*."
+   }
+  },
+  {
+   "id": "c-1505",
+   "match": [
+    "text",
+    "Correct the mistake: They bought a wooden round beautiful table.",
+    "They bought a beautiful round wooden table."
+   ],
+   "set": {
+    "6": "Opinion, size, age, shape, colour, origin, material, then the noun: *a beautiful round wooden table*.",
+    "7": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a beautiful round wooden table*."
+   }
+  },
+  {
+   "id": "c-1561",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "they are such nice people"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such nice people*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such nice people*. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*."
+   }
+  },
+  {
+   "id": "c-1564",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she was so angry that she left the room"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so angry*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*: *she was so angry that she left the room*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so angry*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *she was so angry that she left the room*."
+   }
+  },
+  {
+   "id": "c-1569",
+   "match": [
+    "gap",
+    "She was ___ tired that she fell asleep at once.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so tired*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*: *she was so tired that she fell asleep at once*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so tired*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *she was so tired that she fell asleep at once*."
+   }
+  },
+  {
+   "id": "c-1572",
+   "match": [
+    "gap",
+    "He is ___ a good teacher.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a good teacher*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a good teacher*. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*."
+   }
+  },
+  {
+   "id": "c-1575",
+   "match": [
+    "gap",
+    "Complete with *so* or *such*: I've never seen ___ a big dog.",
+    "such"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a big dog*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a big dog*. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*."
+   }
+  },
+  {
+   "id": "c-1578",
+   "match": [
+    "gap",
+    "Complete with *so* or *such*: I was ___ surprised that I couldn't speak.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so surprised*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*: *I was so surprised that I couldn't speak*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so surprised*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *I was so surprised that I couldn't speak*."
+   }
+  },
+  {
+   "id": "c-1582",
+   "match": [
+    "mcq",
+    "Choose the correct option: I was ___ tired that I fell asleep.",
+    "so"
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so tired*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*: *I was so tired that I fell asleep*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so tired*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *I was so tired that I fell asleep*."
+   }
+  },
+  {
+   "id": "c-1585",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "It was such terrible weather that we stayed in."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such terrible weather*. *so much / so many* + noun. Result: *so / such ... that*: *it was such terrible weather that we stayed in*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such terrible weather*. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *it was such terrible weather that we stayed in*."
+   }
+  },
+  {
+   "id": "c-1589",
+   "match": [
+    "text",
+    "Rewrite with so: It was very cold. We stayed inside.",
+    "It was so cold that we stayed inside. | It was so cold we stayed inside."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so cold*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*: *it was so cold that we stayed inside*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so cold*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *it was so cold that we stayed inside*."
+   }
+  },
+  {
+   "id": "c-1592",
+   "match": [
+    "text",
+    "Correct the mistake: They are so nice people.",
+    "They are such nice people. | They are so nice."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such nice people*. *so much / so many* + noun. Result: *so / such ... that*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such nice people*. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*."
+   }
+  },
+  {
+   "id": "c-1595",
+   "match": [
+    "text",
+    "Correct the mistake: She was such angry that she left.",
+    "She was so angry that she left. | She was so angry she left."
+   ],
+   "set": {
+    "6": "*so* + adjective / adverb: *so angry*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so / such ... that*: *she was so angry that she left*.",
+    "7": "*so* + īpašības vārds / apstākļa vārds: *so angry*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*: *she was so angry that she left*."
+   }
+  }
+ ],
+ "compare-past-1.csv": [
+  {
+   "id": "c-2159",
+   "match": [
+    "gap",
+    "I ___ the party, but Chris ___ to go home. (enjoy / want)",
+    "was enjoying | enjoyed / wanted"
+   ],
+   "set": {
+    "6": "*know, want, like* are not continuous: *Chris wanted to go home.*",
+    "7": "*know, want, like* nelieto Continuous formā: *Chris wanted to go home.*"
+   }
+  }
+ ],
+ "gap-fill-a2-1.csv": [
+  {
+   "id": "c-2389",
+   "match": [
+    "gap",
+    "My dad loves ___ old films. (watch)",
+    "watching | to watch"
+   ],
+   "set": {
+    "6": "*like, love, hate* + *-ing* (or *to* + verb): *My dad loves watching old films.* Not the base verb: not *My dad loves watch old films*.",
+    "7": "*like, love, hate* + darbības vārds ar *-ing* (vai *to* + pamatforma): *My dad loves watching old films.* Nevis pamatforma: nevis *My dad loves watch old films.*"
+   }
+  },
+  {
+   "id": "c-2465",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "can i give you a piece of advice"
+   ],
+   "set": {
+    "6": "To count an uncountable noun, use *a piece of / two pieces of*: *Can I give you a piece of advice?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "Lai saskaitītu neskaitāmu lietvārdu, lieto *a piece of / two pieces of*: *Can I give you a piece of advice?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-2482",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i like my new flat very much"
+   ],
+   "set": {
+    "6": "*very much* goes at the end, after the verb and its object: *I like my new flat very much.* Not *very* or *much* alone, and not *much very*.",
+    "7": "*very much* ir teikuma beigās, aiz darbības vārda un tā papildinātāja: *I like my new flat very much.* Nevis *very, much* vai *much very*."
+   }
+  },
+  {
+   "id": "c-2501",
+   "match": [
+    "gap",
+    "As a teenager, Ben ___ ___ any song on the guitar.",
+    "could / play"
+   ],
+   "set": {
+    "6": "Ability in the past: *could* + base verb (no *to*, no past form): *Ben could play any song.*",
+    "7": "Spēja pagātnē: *could* + darbības vārda pamatforma (bez *to*, bez pagātnes formas): *Ben could play any song.*"
+   }
+  },
+  {
+   "id": "c-2513",
+   "match": [
+    "gap",
+    "On Saturday we visited my parents and ___ in their garden.",
+    "worked"
+   ],
+   "set": {
+    "6": "With *and* we need not say the subject again, but the second verb has the same form as the first: *we visited my parents and worked in their garden*.",
+    "7": "Ar *and* teikuma priekšmetu var neatkārtot, bet otrais darbības vārds ir tādā pašā formā kā pirmais: *we visited my parents and worked in their garden*."
+   }
+  },
+  {
+   "id": "c-2532",
+   "match": [
+    "gap",
+    "In our village, the bread is baked ___ a local family.",
+    "by"
+   ],
+   "set": {
+    "6": "Who bakes it? A local family, so *by a local family*. *from* is for what it is made of.",
+    "7": "Darītājs ir vietējā ģimene, tāpēc *by a local family*. *from* lieto materiālam."
+   }
+  },
+  {
+   "id": "c-2414",
+   "match": [
+    "gap",
+    "Use the words in brackets: My new headphones ___. (comfortable / very / be)",
+    "are very comfortable | were very comfortable"
+   ],
+   "set": {
+    "6": "After a noun the adjective needs *be*: *My new headphones are very comfortable.* The adjective never takes *-s*: not *comfortables*.",
+    "7": "Aiz lietvārda īpašības vārdam vajag *be*: *My new headphones are very comfortable.* Īpašības vārdam nekad nepievieno *-s*: nevis *comfortables*."
+   }
+  },
+  {
+   "id": "c-2469",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "how many pieces of luggage do you have"
+   ],
+   "set": {
+    "6": "To count an uncountable noun, use *a piece of / two pieces of*: *How many pieces of luggage do you have?*",
+    "7": "Lai saskaitītu neskaitāmu lietvārdu, lieto *a piece of / two pieces of*: *How many pieces of luggage do you have?*"
+   }
+  },
+  {
+   "id": "c-2484",
+   "match": [
+    "gap",
+    "Complete with one word: My grandmother loves her garden very ___.",
+    "much"
+   ],
+   "set": {
+    "6": "*very much* goes at the end, after the verb and its object: *My grandmother loves her garden very much.* Not *very* or *much* alone, and not *much very*.",
+    "7": "*very much* ir teikuma beigās, aiz darbības vārda un tā papildinātāja: *My grandmother loves her garden very much.* Nevis *very*, *much* vai *much very*."
+   }
+  },
+  {
+   "id": "c-2499",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "when i was younger i could run much faster"
+   ],
+   "set": {
+    "6": "Ability in the past: *could* + base verb (no *to*, no past form): *I could run much faster.*",
+    "7": "Spēja pagātnē: *could* + darbības vārda pamatforma (bez *to*, bez pagātnes formas): *I could run much faster.*"
+   }
+  },
+  {
+   "id": "c-2502",
+   "match": [
+    "text",
+    "Make a yes/no question: Tom could speak German when he lived in Berlin.",
+    "Could Tom speak German when he lived in Berlin? | When he lived in Berlin, could Tom speak German? | Was Tom able to speak German when he lived in Berlin? | When he lived in Berlin, was Tom able to speak German?"
+   ],
+   "set": {
+    "6": "Question about the past: *Could* + subject + base verb? No *did*: *Could Tom speak German?*",
+    "7": "Jautājums par pagātni: *Could* + teik. priekšmets + pamatforma? Bez *did*: *Could Tom speak German?*"
+   }
+  },
+  {
+   "id": "c-2515",
+   "match": [
+    "gap",
+    "The best parts of my job are meeting people and ___. (travel)",
+    "travelling | traveling"
+   ],
+   "set": {
+    "6": "After *and* / *or* use the same form as before it: *meeting people and travelling*, *-ing and -ing*.",
+    "7": "Aiz *and / or* lieto to pašu formu, kas ir pirms tā, piemēram, *meeting people and travelling*."
+   }
+  },
+  {
+   "id": "c-2388",
+   "match": [
+    "mcq",
+    "Choose the correct option: My brother hates ___ early.",
+    "getting up"
+   ],
+   "set": {
+    "6": "*like, love, hate* + *-ing* (or *to* + verb): *My brother hates getting up early.* Not the base verb: not *hates get up*.",
+    "7": "*like, love, hate* + darbības vārds ar *-ing* (vai *to* + pamatforma): *My brother hates getting up early.* Nevis pamatforma: nevis *hates get up*."
+   }
+  },
+  {
+   "id": "c-2416",
+   "match": [
+    "gap",
+    "The rooms in this hotel ___ very ___.",
+    "are / clean"
+   ],
+   "set": {
+    "6": "After a noun the adjective needs *be*: *The rooms in this hotel are very clean.* The adjective never takes *-s*: not *cleans*.",
+    "7": "Aiz lietvārda īpašības vārdam vajag *be*: *The rooms in this hotel are very clean.* Īpašības vārdam nekad nepievieno *-s*: nevis *cleans*."
+   }
+  },
+  {
+   "id": "c-2481",
+   "match": [
+    "mcq",
+    "Which sentence has a mistake?",
+    "We very enjoyed the concert."
+   ],
+   "set": {
+    "6": "*very* goes before an adjective or an adverb (*very good, very fast*), never before a verb. With a verb: *We really enjoyed the concert* or *We enjoyed the concert very much*.",
+    "7": "Tulkojot burtiski ļoti patika, sanāk *We very enjoyed the concert.* Angliski *very* liek pirms īpašības vārda vai apstākļa vārda (*very good*); ar darbības vārdu saka *We really enjoyed the concert* vai *We enjoyed the concert very much.*"
+   }
+  },
+  {
+   "id": "c-2500",
+   "match": [
+    "gap",
+    "___ your parents ___ a car when they were young?",
+    "Could / drive"
+   ],
+   "set": {
+    "6": "Question about the past: *Could* + subject + base verb? No *did*: *Could your parents drive a car when they were young?*",
+    "7": "Jautājums par pagātni: *Could* + teik. priekšmets + pamatforma? Bez *did*: *Could your parents drive a car when they were young?*"
+   }
+  },
+  {
+   "id": "c-2511",
+   "match": [
+    "mcq",
+    "Which sentence has a mistake?",
+    "I usually have breakfast and reading the news."
+   ],
+   "set": {
+    "6": "With *and* we need not say the subject again, but the second verb has the same form as the first: *I usually have breakfast and read the news*.",
+    "7": "Ar *and* teikuma priekšmetu var neatkārtot, bet otrais darbības vārds ir tādā pašā formā kā pirmais: *I usually have breakfast and read the news.*"
+   }
+  },
+  {
+   "id": "c-2527",
+   "match": [
+    "gap",
+    "She goes to the gym ___ ___ fit.",
+    "to / stay"
+   ],
+   "set": {
+    "6": "To say why somebody does something, use *to* + verb: *She goes to the gym to stay fit.* Not *for stay* and not *for staying*.",
+    "7": "Kāpēc kāds kaut ko dara, norāda ar *to pay, to get, to stay*: *She goes to the gym to stay fit.* Nevis *for stay* un nevis *for staying*."
+   }
+  }
+ ],
+ "gap-points-a2-1.csv": [
+  {
+   "id": "c-2604",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i drink green tea in the morning"
+   ],
+   "set": {
+    "6": "No article with an uncountable noun when we mean it in general: *I drink green tea in the morning.*",
+    "7": "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *I drink green tea in the morning.*"
+   }
+  },
+  {
+   "id": "c-2611",
+   "match": [
+    "gap",
+    "I think ___ dogs are better pets than cats.",
+    "—"
+   ],
+   "set": {
+    "6": "No article with a plural noun when we mean all of them in general: *Dogs are better pets than cats.* With *the* it would mean some particular ones.",
+    "7": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Dogs are better pets than cats.* *the* norādītu uz kādiem noteiktiem."
+   }
+  },
+  {
+   "id": "c-2616",
+   "match": [
+    "gap",
+    "___ are cheaper than laptops. (tablet)",
+    "tablets"
+   ],
+   "set": {
+    "6": "No article with a plural noun when we mean all of them in general: *Tablets are cheaper than laptops.* With *the* it would mean some particular ones.",
+    "7": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Tablets are cheaper than laptops.* *the* norādītu uz kādiem noteiktiem."
+   }
+  },
+  {
+   "id": "c-2639",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my old printer no longer works"
+   ],
+   "set": {
+    "6": "*no longer* goes before the main verb, and the verb stays positive: *My old printer no longer works.*",
+    "7": "*no longer* liek pirms darbības vārda, un darbības vārds nav noliegumā: *My old printer no longer works.*"
+   }
+  },
+  {
+   "id": "c-2560",
+   "match": [
+    "gap",
+    "My parents ___ ___ a big garden.",
+    "have / got"
+   ],
+   "set": {
+    "6": "*have* (own) is a state: no *-ing*. *My parents have got a big garden*, not *My parents are having a big garden*.",
+    "7": "*have* (piederēt) ir stāvoklis: bez *-ing*. *My parents have got a big garden*, nevis *My parents are having a big garden*."
+   }
+  },
+  {
+   "id": "c-2605",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my grandfather doesn't like computers"
+   ],
+   "set": {
+    "6": "No article with a plural noun when we mean all of them in general: *My grandfather doesn't like computers.* With *the* it would mean some particular ones.",
+    "7": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *My grandfather doesn't like computers.* *the* norādītu uz kādiem noteiktiem."
+   }
+  },
+  {
+   "id": "c-2617",
+   "match": [
+    "gap",
+    "___ are my favourite flowers. (rose)",
+    "roses"
+   ],
+   "set": {
+    "6": "No article with a plural noun when we mean all of them in general: *Roses are my favourite flowers.* With *the* it would mean some particular ones.",
+    "7": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Roses are my favourite flowers.* *the* norādītu uz kādiem noteiktiem."
+   }
+  },
+  {
+   "id": "c-2612",
+   "match": [
+    "gap",
+    "My kids spend hours on ___ social media.",
+    "—"
+   ],
+   "set": {
+    "6": "No article with an uncountable noun when we mean it in general: *My kids spend hours on social media.*",
+    "7": "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *My kids spend hours on social media.*"
+   }
+  },
+  {
+   "id": "c-2641",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he's not my neighbour any longer"
+   ],
+   "set": {
+    "6": "*any more* (or *any longer*) goes at the end, after a negative verb: *He's not my neighbour any longer.*",
+    "7": "*any more* (vai *any longer*) liek teikuma beigās, ja darbības vārds ir noliegumā: *He's not my neighbour any longer.*"
+   }
+  },
+  {
+   "id": "c-2607",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "do you like classical music"
+   ],
+   "set": {
+    "6": "No article with an uncountable noun when we mean it in general: *Do you like classical music?* In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "Ar neskaitāmu lietvārdu vispārīgā nozīmē artikulu nelieto: *Do you like classical music?* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-2615",
+   "match": [
+    "gap",
+    "In big cities, ___ are often faster than cars. (bike)",
+    "bikes | bicycles"
+   ],
+   "set": {
+    "6": "No article with a plural noun when we mean all of them in general: *Bikes are often faster than cars.* With *the* it would mean some particular ones.",
+    "7": "Ar daudzskaitļa lietvārdu vispārīgā nozīmē (visi kopumā) artikulu nelieto: *Bikes are often faster than cars.* *the* norādītu uz kādiem noteiktiem."
+   }
+  },
+  {
+   "id": "c-2637",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i no longer drink coffee"
+   ],
+   "set": {
+    "6": "*no longer* goes before the main verb, and the verb stays positive: *I no longer drink coffee.*",
+    "7": "*no longer* liek pirms darbības vārda, un darbības vārds nav noliegumā: *I no longer drink coffee.*"
+   }
+  }
+ ],
+ "gap-points-b11-1.csv": [
+  {
+   "id": "c-2780",
+   "match": [
+    "gap",
+    "Write *no* or *any*: Our teacher didn't give us ___ homework over the holidays.",
+    "any"
+   ],
+   "set": {
+    "6": "After a negative verb (*didn't, haven't, aren't*) use *any*, not *no*: *Our teacher didn't give us any homework.*",
+    "7": "Ja darbības vārds ir noliegumā (*didn't, haven't, aren't*), lieto *any*: *Our teacher didn't give us any homework*, nevis *didn't give us no homework*."
+   }
+  },
+  {
+   "id": "c-2791",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we had no idea that they were getting married"
+   ],
+   "set": {
+    "6": "*no* + noun = *not any* + noun: *We had no idea.* = *We didn't have any idea.* The verb stays positive.",
+    "7": "*no idea = not any idea*: *We had no idea.* = *We didn't have any idea.* Darbības vārds nav noliegumā."
+   }
+  },
+  {
+   "id": "c-2808",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i'll have to renew my passport before we fly to canada"
+   ],
+   "set": {
+    "6": "*must* cannot follow *will*: use *will have to* (*I'll have to renew my passport*).",
+    "7": "Aiz *will* nevar likt *must*: lieto *will have to* (*I'll have to renew my passport*)."
+   }
+  },
+  {
+   "id": "c-2787",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i didn't have any time to revise for the test"
+   ],
+   "set": {
+    "6": "After a negative verb (*didn't, haven't, aren't*) use *any*, not *no*: *I didn't have any time to revise.*",
+    "7": "Ja darbības vārds ir noliegumā (*didn't, haven't, aren't*), lieto *any*: *I didn't have any time to revise*, nevis *didn't have no time*."
+   }
+  },
+  {
+   "id": "c-2793",
+   "match": [
+    "gap",
+    "___ ___ the students passed the first test, so the teacher explained it again.",
+    "None / of"
+   ],
+   "set": {
+    "6": "Before *the / my / them* use *none of*: *None of the students passed.* Not *No of*, not *None the students*.",
+    "7": "Pirms *the / my / them* lieto *none of*: *None of the students passed.* Nevis *No of* un nevis *None the students*."
+   }
+  },
+  {
+   "id": "c-2778",
+   "match": [
+    "mcq",
+    "Choose the correct option: We asked five language schools about evening courses, but ___ them had a free place.",
+    "none of"
+   ],
+   "set": {
+    "6": "Before *the / my / them* use *none of*: *None of them had a free place.* Not *No of*, not *None them*.",
+    "7": "Pirms *the / my / them* lieto *none of*: *None of them had a free place.* Nevis *No of* un nevis *None them*."
+   }
+  },
+  {
+   "id": "c-2788",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "none of my colleagues knew that the meeting was cancelled"
+   ],
+   "set": {
+    "6": "Before *the / my / them* use *none of*: *None of my colleagues knew.* Not *No of*, not *None my colleagues*.",
+    "7": "Pirms *the / my / them* lieto *none of*: *None of my colleagues knew.* Nevis *No of* un nevis *None my colleagues*."
+   }
+  },
+  {
+   "id": "c-2794",
+   "match": [
+    "gap",
+    "Our phones had ___ signal in the mountains, so we used a paper map.",
+    "no"
+   ],
+   "set": {
+    "6": "*no* + noun = *not any* + noun: *Our phones had no signal.* = *Our phones didn't have any signal.* The verb stays positive.",
+    "7": "*no signal = not any signal*: *Our phones had no signal.* = *Our phones didn't have any signal.* Darbības vārds nav noliegumā."
+   }
+  }
+ ],
+ "gap-points-b12-1.csv": [
+  {
+   "id": "c-2854",
+   "match": [
+    "mcq",
+    "Choose the correct option: My grandparents ___ a farm, and every summer we would help them with the harvest.",
+    "used to own"
+   ],
+   "set": {
+    "6": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *My grandparents used to own a farm, and every summer we would help them.*",
+    "7": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *My grandparents used to own a farm, and every summer we would help them.*"
+   }
+  },
+  {
+   "id": "c-2907",
+   "match": [
+    "gap",
+    "Every laptop in our office ___ the same password, which is not very safe. (have)",
+    "has | has got"
+   ],
+   "set": {
+    "6": "*every* and *each* + singular noun + singular verb: *Every laptop has the same password.*",
+    "7": "Aiz *every* un *each* ir lietvārds vienskaitlī un darbības vārds vienskaitlī: *Every laptop has the same password.*"
+   }
+  },
+  {
+   "id": "c-2932",
+   "match": [
+    "gap",
+    "Write *what* or *that*: Is there anything ___ I can do to help you with the move?",
+    "that"
+   ],
+   "set": {
+    "6": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Is there anything (that) I can do?*",
+    "7": "Tulkojot burtiski „vai ir kaut kas, ko es varu darīt”, sanāk *anything what I can do*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Is there anything* (*that*) *I can do?*"
+   }
+  },
+  {
+   "id": "c-2935",
+   "match": [
+    "text",
+    "Say it another way with *what*: The thing I enjoy most about my job is meeting new people.",
+    "What I enjoy most about my job is meeting new people. | Meeting new people is what I enjoy most about my job."
+   ],
+   "set": {
+    "6": "A *what*-clause can be the subject: *What I enjoy most about my job is meeting new people.* (= The thing I enjoy most about my job is meeting new people.)",
+    "7": "Teikums var sākties ar *what*: *What I enjoy most about my job is meeting new people.* (= Tas, kas man darbā patīk visvairāk, ir satikt jaunus cilvēkus.)"
+   }
+  },
+  {
+   "id": "c-2939",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i didn't understand what the doctor told me about the test"
+   ],
+   "set": {
+    "6": "*what* = the thing(s) that, with no noun before it: *I didn't understand what the doctor told me.* *that* and *which* cannot mean *the thing that*.",
+    "7": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *I didn't understand what the doctor told me.* *that* un *which* šeit nevar aizstāt *what*."
+   }
+  },
+  {
+   "id": "c-2942",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "did you find what you were looking for"
+   ],
+   "set": {
+    "6": "*what* = the thing(s) that, with no noun before it: *Did you find what you were looking for?* *that* and *which* cannot mean *the thing that*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *Did you find what you were looking for?* *that* un *which* šeit nevar aizstāt *what*. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-2945",
+   "match": [
+    "gap",
+    "The best thing about the trip was the people ___ we met on the way.",
+    "that"
+   ],
+   "set": {
+    "6": "After a noun use *that* or *which* (or nothing when it is the object), not *what*: *the people (that) we met*.",
+    "7": "Aiz lietvārda lieto *that* vai *which* (vai neko, ja tas ir papildinātājs), nevis *what*: *the people* (*that*) *we met*."
+   }
+  },
+  {
+   "id": "c-2966",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my friend wouldn't let me pay for dinner last night"
+   ],
+   "set": {
+    "6": "A refusal in the past: *wouldn't* + base verb (*My friend wouldn't let me pay.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+    "7": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*My friend wouldn't let me pay.*). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*."
+   }
+  },
+  {
+   "id": "c-2830",
+   "match": [
+    "gap",
+    "Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up.",
+    "are always leaving | 're always leaving | always leave"
+   ],
+   "set": {
+    "6": "A complaint about a habit: *am / is / are* + *always* + verb-ing: *My flatmates are always leaving their muddy shoes in the hall!*",
+    "7": "Īgnums par ieradumu: *am / is / are + always* + darbības vārds ar *-ing*: *My flatmates are always leaving their muddy shoes in the hall!*"
+   }
+  },
+  {
+   "id": "c-2856",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my uncle used to be a fisherman and he would get up at four"
+   ],
+   "set": {
+    "6": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *My uncle used to be a fisherman and he would get up at four.*",
+    "7": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *My uncle used to be a fisherman and he would get up at four.*"
+   }
+  },
+  {
+   "id": "c-2917",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i've read every single review but i can't decide which phone to buy"
+   ],
+   "set": {
+    "6": "We say *almost every* and *every single*, not *almost each*: *every single review*.",
+    "7": "Saka *almost every* un *every single*, nevis *almost each*: *every single review*."
+   }
+  },
+  {
+   "id": "c-2933",
+   "match": [
+    "gap",
+    "Write *what* or *that*: ___ worries me most about the trip is the cost of the flights.",
+    "What | what"
+   ],
+   "set": {
+    "6": "A *what*-clause can be the subject: *What worries me most is the cost of the flights.* (= The thing that worries me most is the cost.)",
+    "7": "Teikums var sākties ar *what*: *What worries me most is the cost of the flights.* (= Tas, kas mani visvairāk uztrauc, ir lidojumu cena.)"
+   }
+  },
+  {
+   "id": "c-2943",
+   "match": [
+    "gap",
+    "___ really annoyed me was the noise from the street.",
+    "What"
+   ],
+   "set": {
+    "6": "A *what*-clause can be the subject: *What really annoyed me was the noise from the street.* (= The thing that really annoyed me was the noise.)",
+    "7": "Teikums var sākties ar *what*: *What really annoyed me was the noise from the street.* (= Tas, kas mani patiešām kaitināja, bija ielas troksnis.)"
+   }
+  },
+  {
+   "id": "c-2936",
+   "match": [
+    "text",
+    "Correct the mistake: Everything what she told me about the course was useful.",
+    "Everything that she told me about the course was useful. | Everything she told me about the course was useful. | Everything which she told me about the course was useful. | What she told me about the course was useful. | All that she told me about the course was useful."
+   ],
+   "set": {
+    "6": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *Everything (that) she told me about the course was useful.*",
+    "7": "Tulkojot burtiski „viss, ko viņa man stāstīja”, sanāk *everything what she told me*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *Everything* (*that*) *she told me about the course was useful*."
+   }
+  },
+  {
+   "id": "c-2940",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "all i want after work is a hot shower"
+   ],
+   "set": {
+    "6": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *All (that) I want after work is a hot shower.*",
+    "7": "Tulkojot burtiski „viss, ko es gribu”, sanāk *all what I want*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *All* (*that*) *I want after work is a hot shower*."
+   }
+  },
+  {
+   "id": "c-2946",
+   "match": [
+    "gap",
+    "Excuse me, this isn't ___ I ordered.",
+    "what"
+   ],
+   "set": {
+    "6": "*what* = the thing(s) that, with no noun before it: *this isn't what I ordered*. *that* and *which* cannot mean *the thing that*.",
+    "7": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *this isn't what I ordered*. *that* un *which* šeit nevar aizstāt *what*."
+   }
+  },
+  {
+   "id": "c-2968",
+   "match": [
+    "gap",
+    "Yesterday the hotel lift ___ ___, so we took the stairs.",
+    "wouldn't / move"
+   ],
+   "set": {
+    "6": "A refusal in the past: *wouldn't* + base verb (*Yesterday the hotel lift wouldn't move.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+    "7": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*Yesterday the hotel lift wouldn't move.*). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*."
+   }
+  },
+  {
+   "id": "c-2845",
+   "match": [
+    "gap",
+    "My parents ___ always ___ me when I'm going to find a better job.",
+    "are / asking"
+   ],
+   "set": {
+    "6": "A complaint about a habit: *am / is / are* + *always* + verb-ing: *My parents are always asking me when I'm going to find a better job!*",
+    "7": "Īgnums par ieradumu: *am / is / are + always* + darbības vārds ar *-ing*: *My parents are always asking me when I'm going to find a better job!*"
+   }
+  },
+  {
+   "id": "c-2864",
+   "match": [
+    "match",
+    "Match each beginning with its ending.",
+    "When I was a student, I used to = have very long hair. ; When it snowed, my dad would = take us sledging in the park. ; Before the bridge was built, people would = cross the river by ferry. ; My parents didn't use to = like my friends, but now they do."
+   ],
+   "set": {
+    "6": "A state (*have, live, know, like, own*) takes *used to*; a repeated action can take *would*: *I used to have very long hair*; *my dad would take us sledging in the park*.",
+    "7": "Stāvoklim (*have, live, know, like, own*) lieto *used to*; atkārtotai darbībai var lietot *would*: *I used to have very long hair*; *my dad would take us sledging in the park*."
+   }
+  },
+  {
+   "id": "c-2929",
+   "match": [
+    "mcq",
+    "Choose the correct option: That's exactly ___ I was trying to explain to my boss.",
+    "what"
+   ],
+   "set": {
+    "6": "*what* = the thing(s) that, with no noun before it: *That's exactly what I was trying to explain.* *that* and *which* cannot mean *the thing that*.",
+    "7": "*what* = tas, ko / tas, kas; pirms tā nav lietvārda: *That's exactly what I was trying to explain.* *that* un *which* šeit nevar aizstāt *what*."
+   }
+  },
+  {
+   "id": "c-2934",
+   "match": [
+    "gap",
+    "Write *what* or *that*: The app ___ my sister recommended really helps me sleep better.",
+    "that"
+   ],
+   "set": {
+    "6": "After a noun use *that* or *which* (or nothing when it is the object), not *what*: *the app (that) my sister recommended*.",
+    "7": "Aiz lietvārda lieto *that* vai *which* (vai neko, ja tas ir papildinātājs), nevis *what*: *the app* (*that*) *my sister recommended*."
+   }
+  },
+  {
+   "id": "c-2938",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "what she said at the wedding surprised everyone"
+   ],
+   "set": {
+    "6": "A *what*-clause can be the subject: *What she said at the wedding surprised everyone.* (= The thing that she said surprised everyone.)",
+    "7": "Teikums var sākties ar *what*: *What she said at the wedding surprised everyone.* (= Tas, ko viņa teica kāzās, pārsteidza visus.)"
+   }
+  },
+  {
+   "id": "c-2941",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i'm sorry about everything that happened last night"
+   ],
+   "set": {
+    "6": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *everything that happened last night*.",
+    "7": "Tulkojot burtiski „viss, kas notika”, sanāk *everything what happened*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *everything that happened last night*."
+   }
+  },
+  {
+   "id": "c-2944",
+   "match": [
+    "gap",
+    "I'll send you everything ___ you need for the conference.",
+    "that"
+   ],
+   "set": {
+    "6": "After *everything, something, anything, all* use *that* (or nothing), not *what*: *everything (that) you need for the conference*.",
+    "7": "Tulkojot burtiski „viss, kas tev vajadzīgs”, sanāk *everything what you need*. Angliski aiz *everything, something, anything, all* lieto *that* (vai neko): *everything* (*that*) *you need for the conference*."
+   }
+  },
+  {
+   "id": "c-2964",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "my car wouldn't start this morning so i worked from home"
+   ],
+   "set": {
+    "6": "A refusal in the past: *wouldn't* + base verb (*My car wouldn't start this morning.*). With a past time such as *yesterday* or *last night*, not *won't*.",
+    "7": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*My car wouldn't start this morning.*). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*."
+   }
+  },
+  {
+   "id": "c-2971",
+   "match": [
+    "gap",
+    "Yesterday the shop assistant ___ ___ me a refund, so I complained.",
+    "wouldn't / give"
+   ],
+   "set": {
+    "6": "A refusal in the past: *wouldn't* + base verb (*the shop assistant wouldn't give me a refund*). With a past time such as *yesterday* or *last night*, not *won't*.",
+    "7": "Atteikšanās pagātnē: *wouldn't* + pamatforma (*the shop assistant wouldn't give me a refund*). Ar pagātnes laiku (*yesterday, last night*) nelieto *won't*."
+   }
+  }
+ ],
+ "more-1.csv": [
+  {
+   "id": "c-3144",
+   "match": [
+    "mcq",
+    "Choose the correct option: Nobody ___ the answer.",
+    "knows"
+   ],
+   "set": {
+    "6": "*everybody, nobody, every* + verb-*s*: *Nobody knows the answer.*",
+    "7": "*everybody, nobody, every* + darbības vārds ar *-s*: *Nobody knows the answer.*"
+   }
+  },
+  {
+   "id": "c-3148",
+   "match": [
+    "text",
+    "Correct the mistake: My sister work in a bank.",
+    "My sister works in a bank."
+   ],
+   "set": {
+    "6": "One person or thing (*he / she / it*) + verb-*s*: *My sister works in a bank.*",
+    "7": "Viens (*he / she / it*) + darbības vārds ar *-s*: *My sister works in a bank.*"
+   }
+  },
+  {
+   "id": "c-3157",
+   "match": [
+    "gap",
+    "Write the missing word: I often listen ___ music in the car.",
+    "to"
+   ],
+   "set": {
+    "6": "*belong to, listen to, married to*: *I often listen to music.*",
+    "7": "*belong to, listen to, married to*: *I often listen to music.*"
+   }
+  },
+  {
+   "id": "c-3221",
+   "match": [
+    "gap",
+    "Where ___ you ___ your holiday last year? (spend)",
+    "did / spend"
+   ],
+   "set": {
+    "6": "*did* + base verb: *Where did you spend your holiday?*",
+    "7": "*did* + pamatforma: *Where did you spend your holiday?*"
+   }
+  },
+  {
+   "id": "c-3230",
+   "match": [
+    "gap",
+    "We ___ meat. We're vegetarians. (not / eat)",
+    "don't eat | do not eat"
+   ],
+   "set": {
+    "6": "*I / you / we / they*: *do / don't*: *We don't eat meat.*",
+    "7": "*I / you / we / they*: *do / don't*: *We don't eat meat.*"
+   }
+  },
+  {
+   "id": "c-3233",
+   "match": [
+    "text",
+    "Make it negative: She likes cats.",
+    "She doesn't like cats. | She does not like cats."
+   ],
+   "set": {
+    "6": "*he / she / it*: *doesn't* + base verb: *She doesn't like cats.*",
+    "7": "*he / she / it*: *doesn't* + pamatforma: *She doesn't like cats.*"
+   }
+  },
+  {
+   "id": "c-3245",
+   "match": [
+    "text",
+    "Correct the mistake: She sings very good.",
+    "She sings very well."
+   ],
+   "set": {
+    "6": "*good → well*: *She sings very well.*",
+    "7": "*good → well*: *She sings very well.*"
+   }
+  },
+  {
+   "id": "c-3255",
+   "match": [
+    "gap",
+    "I hope ___ you again soon. (see)",
+    "to see"
+   ],
+   "set": {
+    "6": "*want, decide, hope* + *to*: *I hope to see you again soon.*",
+    "7": "*want, decide, hope + to*: *I hope to see you again soon.*"
+   }
+  },
+  {
+   "id": "c-3145",
+   "match": [
+    "gap",
+    "My grandmother ___ TV every evening. (watch)",
+    "watches"
+   ],
+   "set": {
+    "6": "One person or thing (*he / she / it*) + verb-*s*: *My grandmother watches TV every evening.*",
+    "7": "Viens (*he / she / it*) + darbības vārds ar *-s*: *My grandmother watches TV every evening.*"
+   }
+  },
+  {
+   "id": "c-3149",
+   "match": [
+    "text",
+    "Correct the mistake: The children is in the garden.",
+    "The children are in the garden."
+   ],
+   "set": {
+    "6": "*people, children, police* are plural: *The children are in the garden.*",
+    "7": "*people, children, police* ir daudzskaitlī: *The children are in the garden.*"
+   }
+  },
+  {
+   "id": "c-3170",
+   "match": [
+    "gap",
+    "Write much or many: How ___ brothers have you got?",
+    "many"
+   ],
+   "set": {
+    "6": "*many* + plural, *much* + uncountable: *How many brothers have you got?*",
+    "7": "*many* + daudzskaitlis, *much* + nesaskaitāms: *How many brothers have you got?*"
+   }
+  },
+  {
+   "id": "c-3224",
+   "match": [
+    "text",
+    "Make it negative: He came to the party.",
+    "He didn't come to the party. | He did not come to the party."
+   ],
+   "set": {
+    "6": "*did* + base verb: *He didn't come to the party.*",
+    "7": "*did* + pamatforma: *He didn't come to the party.*"
+   }
+  },
+  {
+   "id": "c-3231",
+   "match": [
+    "gap",
+    "How often ___ you ___ your grandparents? (visit)",
+    "do / visit"
+   ],
+   "set": {
+    "6": "*I / you / we / they*: *do / don't*: *How often do you visit your grandparents?*",
+    "7": "*I / you / we / they*: *do / don't*: *How often do you visit your grandparents?*"
+   }
+  },
+  {
+   "id": "c-3234",
+   "match": [
+    "text",
+    "Make a yes/no question: He works at the weekend.",
+    "Does he work at the weekend?"
+   ],
+   "set": {
+    "6": "A question with *does* for *he / she / it*: *Does he work at the weekend?*",
+    "7": "Jautājums ar *does* (*he / she / it*): *Does he work at the weekend?*"
+   }
+  },
+  {
+   "id": "c-3251",
+   "match": [
+    "mcq",
+    "Choose the correct option: Do you want ___ with us?",
+    "to come"
+   ],
+   "set": {
+    "6": "*want, decide, hope* + *to*: *Do you want to come with us?*",
+    "7": "*want, decide, hope + to*: *Do you want to come with us?*"
+   }
+  },
+  {
+   "id": "c-3257",
+   "match": [
+    "gap",
+    "Would you mind ___ the window? (open)",
+    "opening"
+   ],
+   "set": {
+    "6": "*enjoy, finish, mind* + *-ing*: *Would you mind opening the window?*",
+    "7": "*enjoy, finish, mind + -ing*: *Would you mind opening the window?*"
+   }
+  },
+  {
+   "id": "c-3146",
+   "match": [
+    "gap",
+    "Anna and her sister ___ to the gym every Friday. (go)",
+    "go"
+   ],
+   "set": {
+    "6": "More than one + verb without *-s*: *Anna and her sister go to the gym.*",
+    "7": "Vairāki + darbības vārds bez *-s*: *Anna and her sister go to the gym.*"
+   }
+  },
+  {
+   "id": "c-3155",
+   "match": [
+    "mcq",
+    "Choose the correct option: We discussed ___ the plan for an hour.",
+    "—"
+   ],
+   "set": {
+    "6": "*call, discuss, enter* take no preposition: *We discussed the plan.*",
+    "7": "Latviski \"zvanīt kādam, apspriest par\", bet angliski *call, discuss* bez prievārda: *We discussed the plan.*"
+   }
+  },
+  {
+   "id": "c-3220",
+   "match": [
+    "gap",
+    "She ___ the bus yesterday morning. (not / catch)",
+    "didn't catch | did not catch"
+   ],
+   "set": {
+    "6": "*did* + base verb: *She didn't catch the bus yesterday morning.*",
+    "7": "*did* + pamatforma: *She didn't catch the bus yesterday morning.*"
+   }
+  },
+  {
+   "id": "c-3229",
+   "match": [
+    "gap",
+    "She ___ English and German, so she can help you. (speak)",
+    "speaks"
+   ],
+   "set": {
+    "6": "*he / she / it* + verb-*s*: *She speaks English and German.*",
+    "7": "*he / she / it* + darbības vārds ar *-s*: *She speaks English and German.*"
+   }
+  },
+  {
+   "id": "c-3232",
+   "match": [
+    "gap",
+    "My brother always ___ his homework after dinner. He's doing it now. (do)",
+    "does"
+   ],
+   "set": {
+    "6": "*he / she / it* + verb-*s*: *My brother always does his homework after dinner.*",
+    "7": "*he / she / it* + darbības vārds ar *-s*: *My brother always does his homework after dinner.*"
+   }
+  },
+  {
+   "id": "c-3236",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "where does your sister work"
+   ],
+   "set": {
+    "6": "A question with *does* for *he / she / it*: *Where does your sister work?*",
+    "7": "Jautājums ar *does* (*he / she / it*): *Where does your sister work?*"
+   }
+  },
+  {
+   "id": "c-3254",
+   "match": [
+    "gap",
+    "He finished ___ the report at six. (write)",
+    "writing"
+   ],
+   "set": {
+    "6": "*enjoy, finish, mind* + *-ing*: *He finished writing the report.*",
+    "7": "*enjoy, finish, mind + -ing*: *He finished writing the report.*"
+   }
+  },
+  {
+   "id": "c-3260",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "they decided to stay at home"
+   ],
+   "set": {
+    "6": "*want, decide, hope* + *to*: *They decided to stay at home.*",
+    "7": "*want, decide, hope + to*: *They decided to stay at home.*"
+   }
+  }
+ ],
+ "pairs-1.csv": [
+  {
+   "id": "c-3303",
+   "match": [
+    "mcq",
+    "Choose the correct option: The fire was big, but everyone ___ get out of the building.",
+    "was able to"
+   ],
+   "set": {
+    "6": "One success in the past: *was / were able to* or *managed to*, not *could*: *everyone was able to get out*. *could* is for a general ability.",
+    "7": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*: *everyone was able to get out*. *could* ir vispārīga spēja."
+   }
+  },
+  {
+   "id": "c-3306",
+   "match": [
+    "mcq",
+    "Choose the correct option: Our flight was cancelled, but luckily we ___ get seats on the next one.",
+    "were able to"
+   ],
+   "set": {
+    "6": "One success in the past: *was / were able to* or *managed to*, not *could*: *we were able to get seats on the next one*. *could* is for a general ability.",
+    "7": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*: *we were able to get seats on the next one*. *could* ir vispārīga spēja."
+   }
+  },
+  {
+   "id": "c-3304",
+   "match": [
+    "mcq",
+    "Choose the correct option: The main road was closed, but we ___ find another way home.",
+    "were able to"
+   ],
+   "set": {
+    "6": "One success in the past: *was / were able to* or *managed to*, not *could*: *we were able to find another way home*. *could* is for a general ability.",
+    "7": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*: *we were able to find another way home*. *could* ir vispārīga spēja."
+   }
+  },
+  {
+   "id": "c-3307",
+   "match": [
+    "mcq",
+    "Choose the correct option: The sofa was very heavy, but the two of us ___ carry it upstairs.",
+    "managed to"
+   ],
+   "set": {
+    "6": "One success in the past: *was / were able to* or *managed to*, not *could*: *the two of us managed to carry it upstairs*. *could* is for a general ability.",
+    "7": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*: *the two of us managed to carry it upstairs*. *could* ir vispārīga spēja."
+   }
+  },
+  {
+   "id": "c-3305",
+   "match": [
+    "mcq",
+    "Choose the correct option: In the end she ___ pass the exam, although it was very hard.",
+    "managed to"
+   ],
+   "set": {
+    "6": "One success in the past: *was / were able to* or *managed to*, not *could*: *In the end she managed to pass the exam.* *could* is for a general ability.",
+    "7": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*: *In the end she managed to pass the exam.* *could* ir vispārīga spēja."
+   }
+  },
+  {
+   "id": "c-3308",
+   "match": [
+    "mcq",
+    "Choose the correct option: My grandfather ___ speak four languages when he was young.",
+    "could"
+   ],
+   "set": {
+    "6": "One success in the past: *was / were able to* or *managed to*, not *could*. *could* is for a general ability: *My grandfather could speak four languages when he was young.*",
+    "7": "Vienreiz izdevās konkrētā situācijā pagātnē: *was / were able to* vai *managed to*, nevis *could*. *could* ir vispārīga spēja: *My grandfather could speak four languages when he was young.*"
+   }
+  }
+ ],
+ "rq-order-1.csv": [
+  {
+   "id": "c-3350",
+   "match": [
+    "gap",
+    "'Where does Tom work?'\nDo you know where ___ ___ ?",
+    "Tom / works"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Tom works*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *where Tom works*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3354",
+   "match": [
+    "gap",
+    "'What time does the museum open?'\nCould you tell me what time ___ ___ ?",
+    "the museum / opens"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *what time the museum opens*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *what time the museum opens*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3357",
+   "match": [
+    "text",
+    "'How much is this jacket?'\nFinish the sentence: Could you tell me how much …",
+    "Could you tell me how much this jacket is. | this jacket is. | Could you tell me how much this jacket costs. | this jacket costs. | Could you tell me how much it is. | it is. | Could you tell me how much it costs. | it costs."
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *how much this jacket is*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *how much this jacket is*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3360",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "do you know how much the tickets are"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *how much the tickets are*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *how much the tickets are*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3367",
+   "match": [
+    "mcq",
+    "'Where is the library?'\nChoose the correct option: Can you tell me where ___?",
+    "the library is"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where the library is*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *where the library is*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3352",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "do you know where mark works"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where Mark works*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *where Mark works*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3355",
+   "match": [
+    "mcq",
+    "'What time does the concert start?'\nChoose the correct option: Do you know what time ___?",
+    "the concert starts"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *what time the concert starts*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *what time the concert starts*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3358",
+   "match": [
+    "gap",
+    "'How much does this lamp cost?'\nI'd like to know how much ___ ___ .",
+    "this lamp / costs"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *how much this lamp costs*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *how much this lamp costs*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3365",
+   "match": [
+    "text",
+    "'Where is the post office?'\nFinish the sentence: Do you know where …",
+    "Do you know where the post office is. | the post office is."
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where the post office is*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *where the post office is*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3368",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "do you know where the car park is"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where the car park is*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *where the car park is*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3353",
+   "match": [
+    "text",
+    "'What time does the bus leave?'\nFinish the sentence: Could you tell me what time …",
+    "Could you tell me what time the bus leaves. | the bus leaves."
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *what time the bus leaves*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *what time the bus leaves*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3356",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "could you tell me what time the bank closes"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *what time the bank closes*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *what time the bank closes*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3359",
+   "match": [
+    "mcq",
+    "'How much is the ticket?'\nChoose the correct option: Can you tell me how much ___?",
+    "the ticket is"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *how much the ticket is*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *how much the ticket is*, bez *does*; laiks nemainās."
+   }
+  },
+  {
+   "id": "c-3366",
+   "match": [
+    "gap",
+    "'Where is the toilet?'\nCould you tell me where ___ ___ ?",
+    "the toilet / is"
+   ],
+   "set": {
+    "6": "Inside *Do you know…? / Could you tell me…?* the word order is like a statement: *where the toilet is*, with no *does*; the tense stays.",
+    "7": "Pēc *Do you know…? / Could you tell me…?* vārdu secība ir kā apgalvojumā: *where the toilet is*, bez *does*; laiks nemainās."
+   }
+  }
+ ],
+ "wish-rather-1.csv": [
+  {
+   "id": "c-3606",
+   "match": [
+    "gap",
+    "If only it ___ sunny today!",
+    "were"
+   ],
+   "set": {
+    "6": "After *I wish / If only* use *were* (or *was* in everyday English): *If only it were sunny today!*",
+    "7": "Pēc *I wish / If only* lieto *were* (ikdienā arī *was*): *If only it were sunny today!*"
+   }
+  },
+  {
+   "id": "c-3612",
+   "match": [
+    "mcq",
+    "Choose the correct option: Would you rather ___ tea or coffee?",
+    "have"
+   ],
+   "set": {
+    "6": "*'d rather* + base verb (no *to*): *Would you rather have tea or coffee?* Negative: *'d rather not* + base verb. Two things: *'d rather ... than ...*.",
+    "7": "*'d rather* + pamatforma (bez *to*): *Would you rather have tea or coffee?* Noliegums: *'d rather not* + pamatforma. Divas lietas: *'d rather ... than ...*."
+   }
+  },
+  {
+   "id": "c-3616",
+   "match": [
+    "mcq",
+    "Choose the correct option: He'd rather ___ alone than with a big group.",
+    "travel"
+   ],
+   "set": {
+    "6": "*'d rather* + base verb (no *to*): *He'd rather travel alone.* Negative: *'d rather not* + base verb. Two things: *He'd rather travel alone than with a big group.*",
+    "7": "*'d rather* + pamatforma (bez *to*): *He'd rather travel alone.* Noliegums: *'d rather not* + pamatforma. Divas lietas: *He'd rather travel alone than with a big group.*"
+   }
+  },
+  {
+   "id": "c-3619",
+   "match": [
+    "gap",
+    "Would you rather ___ in the city or in the country? (live)",
+    "live"
+   ],
+   "set": {
+    "6": "*'d rather* + base verb (no *to*): *Would you rather live in the city or in the country?* Negative: *'d rather not* + base verb. Two things: *'d rather ... than ...*.",
+    "7": "*'d rather* + pamatforma (bez *to*): *Would you rather live in the city or in the country?* Noliegums: *'d rather not* + pamatforma. Divas lietas: *'d rather ... than ...*."
+   }
+  },
+  {
+   "id": "c-3622",
+   "match": [
+    "text",
+    "Start with *I'd rather*: I prefer to cook at home.",
+    "I'd rather cook at home. | I would rather cook at home."
+   ],
+   "set": {
+    "6": "*'d rather* + base verb (no *to*): *I'd rather cook at home.* Negative: *'d rather not* + base verb. Two things: *'d rather ... than ...*.",
+    "7": "*'d rather* + pamatforma (bez *to*): *I'd rather cook at home.* Noliegums: *'d rather not* + pamatforma. Divas lietas: *'d rather ... than ...*."
+   }
+  },
+  {
+   "id": "c-3626",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "would you rather have tea or coffee"
+   ],
+   "set": {
+    "6": "*'d rather* + base verb (no *to*): *Would you rather have tea or coffee?* Negative: *'d rather not* + base verb. Two things: *'d rather ... than ...*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+    "7": "*'d rather* + pamatforma (bez *to*): *Would you rather have tea or coffee?* Noliegums: *'d rather not* + pamatforma. Divas lietas: *'d rather ... than ...*. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta."
+   }
+  },
+  {
+   "id": "c-3629",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i'd prefer to eat early"
+   ],
+   "set": {
+    "6": "*I'd prefer* + *to* + verb: *I'd prefer to eat early.* *I'd rather* has no *to*: *I'd rather eat early.*",
+    "7": "*I'd prefer + to* + darbības vārds: *I'd prefer to eat early.* Pēc *I'd rather* nav *to*: *I'd rather eat early.*"
+   }
+  },
+  {
+   "id": "c-3609",
+   "match": [
+    "mcq",
+    "Choose the correct option: It's raining. I'd rather ___ a taxi.",
+    "take"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*): *I'd rather take a taxi.* Negative: *I'd rather not* + base verb. Two things: *I'd rather ... than ...*",
+    "7": "*I'd rather* + pamatforma (bez *to*): *I'd rather take a taxi.* Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather ... than ...*"
+   }
+  },
+  {
+   "id": "c-3630",
+   "match": [
+    "gap",
+    "I'd rather ___ a book.",
+    "read"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*): *I'd rather read a book.* Negative: *I'd rather not* + base verb. Two things: *I'd rather ... than ...*",
+    "7": "*I'd rather* + pamatforma (bez *to*): *I'd rather read a book.* Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather ... than ...*"
+   }
+  },
+  {
+   "id": "c-3617",
+   "match": [
+    "gap",
+    "I'd rather ___ at home than go out. (eat)",
+    "eat"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *I'd rather not* + base verb. Two things: *I'd rather eat at home than go out.*",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather eat at home than go out.*"
+   }
+  },
+  {
+   "id": "c-3624",
+   "match": [
+    "text",
+    "Start with *I'd rather*: I don't want to go to the beach. I want to go to the mountains.",
+    "I'd rather go to the mountains than to the beach. | I'd rather go to the mountains than the beach. | I would rather go to the mountains than the beach. | I'd rather go to the mountains, not to the beach. | I'd rather not go to the beach. I'd rather go to the mountains. | I'd rather go to the mountains than go to the beach. | I would rather go to the mountains than to the beach. | I would rather go to the mountains than go to the beach. | I'd rather go to the mountains. | I would rather go to the mountains. | I'd rather not go to the beach. | I would rather not go to the beach."
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *I'd rather not go to the beach.* Two things: *I'd rather go to the mountains than to the beach.*",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *I'd rather not go to the beach.* Divas lietas: *I'd rather go to the mountains than to the beach.*"
+   }
+  },
+  {
+   "id": "c-3627",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we'd rather not go by car"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *We'd rather not go by car.* Two things: *I'd rather ... than ...*",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *We'd rather not go by car.* Divas lietas: *I'd rather ... than ...*"
+   }
+  },
+  {
+   "id": "c-3614",
+   "match": [
+    "mcq",
+    "Choose the correct option: I'd prefer ___ by train.",
+    "to travel"
+   ],
+   "set": {
+    "6": "*I'd prefer* + *to* + verb: *I'd prefer to travel by train.* *I'd rather* has no *to*.",
+    "7": "*I'd prefer + to* + darbības vārds: *I'd prefer to travel by train.* Pēc *I'd rather* nav *to*."
+   }
+  },
+  {
+   "id": "c-3620",
+   "match": [
+    "gap",
+    "I'd prefer ___ by the window. (sit)",
+    "to sit"
+   ],
+   "set": {
+    "6": "*I'd prefer* + *to* + verb: *I'd prefer to sit by the window.* *I'd rather* has no *to*.",
+    "7": "*I'd prefer + to* + darbības vārds: *I'd prefer to sit by the window.* Pēc *I'd rather* nav *to*."
+   }
+  },
+  {
+   "id": "c-3610",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "I'd rather not go out tonight."
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *I'd rather not* + verb: *I'd rather not go out tonight*. Two things: *I'd rather* ... *than* ...",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *I'd rather not* + pamatforma: *I'd rather not go out tonight*. Divas lietas: *I'd rather* ... *than* ..."
+   }
+  },
+  {
+   "id": "c-3615",
+   "match": [
+    "mcq",
+    "Choose the correct option: We'd rather ___ a small wedding.",
+    "have"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*): *We'd rather have a small wedding*. Negative: *I'd rather not* + verb. Two things: *I'd rather* ... *than* ...",
+    "7": "*I'd rather* + pamatforma (bez *to*): *We'd rather have a small wedding*. Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather* ... *than* ..."
+   }
+  },
+  {
+   "id": "c-3618",
+   "match": [
+    "gap",
+    "I'd rather not ___ about it. (talk)",
+    "talk"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *I'd rather not* + verb: *I'd rather not talk about it*. Two things: *I'd rather* ... *than* ...",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *I'd rather not* + pamatforma: *I'd rather not talk about it*. Divas lietas: *I'd rather* ... *than* ..."
+   }
+  },
+  {
+   "id": "c-3621",
+   "match": [
+    "gap",
+    "She'd rather ___ a film than read a book. (watch)",
+    "watch"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *I'd rather not* + verb. Two things: *I'd rather* ... *than* ...: *She'd rather watch a film than read a book*.",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather* ... *than* ...: *She'd rather watch a film than read a book*."
+   }
+  },
+  {
+   "id": "c-3625",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "i'd rather stay in tonight"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*): *I'd rather stay in tonight*. Negative: *I'd rather not* + verb. Two things: *I'd rather* ... *than* ...",
+    "7": "*I'd rather* + pamatforma (bez *to*): *I'd rather stay in tonight*. Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather* ... *than* ..."
+   }
+  },
+  {
+   "id": "c-3628",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she would rather work from home"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*): *She would rather work from home*. Negative: *I'd rather not* + verb. Two things: *I'd rather* ... *than* ...",
+    "7": "*I'd rather* + pamatforma (bez *to*): *She would rather work from home*. Noliegums: *I'd rather not* + pamatforma. Divas lietas: *I'd rather* ... *than* ..."
+   }
+  },
+  {
+   "id": "c-3631",
+   "match": [
+    "gap",
+    "I'd rather ___ ___ out tonight.",
+    "not / go"
+   ],
+   "set": {
+    "6": "*I'd rather* + base verb (no *to*). Negative: *I'd rather not* + verb: *I'd rather not go out tonight*. Two things: *I'd rather* ... *than* ...",
+    "7": "*I'd rather* + pamatforma (bez *to*). Noliegums: *I'd rather not* + pamatforma: *I'd rather not go out tonight*. Divas lietas: *I'd rather* ... *than* ..."
+   }
+  }
+ ],
+ "conjunctions-1.csv": [
+  {
+   "id": "c-2265",
+   "match": [
+    "mcq",
+    "Choose the correct option: I don't drink coffee ___ tea.",
+    "or"
+   ],
+   "set": {
+    "6": "In a negative sentence we join with *or*, not *and*: *I don't drink coffee or tea.*",
+    "7": "Noliegumā savieno ar *or*, nevis *and*: *I don't drink coffee or tea.* Tulkojot burtiski \"un\", iznāk *and*."
+   }
+  }
+ ]
+}

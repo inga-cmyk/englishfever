@@ -14,11 +14,13 @@ _P4 = Path(__file__).with_name('draft_fixes_20261122c.json')   # and its third (
 FIXES4 = json.loads(_P4.read_text()) if _P4.exists() else {}
 _P5 = Path(__file__).with_name('draft_fixes_20261122d.json')   # and its last look (r20d: answers only)
 FIXES5 = json.loads(_P5.read_text()) if _P5.exists() else {}
+_P6 = Path(__file__).with_name('draft_fixes_20261122e.json')   # explanations use the task's own sentence (tester, 22 November)
+FIXES6 = json.loads(_P6.read_text()) if _P6.exists() else {}
 
 
 def apply(name, row):
     row = _apply(FIXES, name, row)
-    for fixes in (FIXES2, FIXES3, FIXES4, FIXES5):
+    for fixes in (FIXES2, FIXES3, FIXES4, FIXES5, FIXES6):
         if row is not None: row = _apply(fixes, name, row)
     return row
 

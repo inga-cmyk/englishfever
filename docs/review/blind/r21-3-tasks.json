@@ -1,0 +1,630 @@
+[
+ {
+  "id": "r21-3-001",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Look at the ticket: our flight ___ at 6.40 tomorrow morning. (leave)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-002",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative and use 'any': She has money.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence describes a change that is happening now?",
+  "options": [
+   "The weather is cold in winter.",
+   "It was cold yesterday.",
+   "It gets cold in winter every year.",
+   "The weather is getting colder."
+  ]
+ },
+ {
+  "id": "r21-3-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ my report last March.",
+  "options": [
+   "am finishing",
+   "finished",
+   "finish",
+   "have finished"
+  ]
+ },
+ {
+  "id": "r21-3-005",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "Write two sentences that start a story. Say what happened first and what happened next (use Then or After that).",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21-3-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means: it started in the past and is still true now?",
+  "options": [
+   "I have known Tom for ten years.",
+   "I knew Tom ten years ago.",
+   "I know Tom ten years.",
+   "I did know Tom for ten years."
+  ]
+ },
+ {
+  "id": "r21-3-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She has lived here since 2015.",
+   "I have seen him yesterday.",
+   "Have you finished yet?",
+   "We have known each other for years."
+  ]
+ },
+ {
+  "id": "r21-3-008",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I can't open the door. I ___ my keys.",
+  "options": [
+   "had lost",
+   "lose",
+   "have lost",
+   "am losing"
+  ]
+ },
+ {
+  "id": "r21-3-009",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ the film last night.",
+  "options": [
+   "'ve seen",
+   "saw",
+   "was see",
+   "have seen"
+  ]
+ },
+ {
+  "id": "r21-3-010",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "I'm tired and I'm still at my desk. I ___ all day.",
+  "options": [
+   "am been working",
+   "have been working",
+   "has been working",
+   "have be working"
+  ]
+ },
+ {
+  "id": "r21-3-011",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "The film began at 7.00. We arrived at 7.15. When we arrived, the film ___ already ___.",
+  "options": [
+   "had ... started",
+   "was ... starting",
+   "has ... started",
+   "did ... start"
+  ]
+ },
+ {
+  "id": "r21-3-012",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "In 'When I got to the station, the train had left', which happened first?",
+  "options": [
+   "Both together.",
+   "I got there.",
+   "The train left.",
+   "We can't know."
+  ]
+ },
+ {
+  "id": "r21-3-013",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Hurry up! The film ___ to start.",
+  "options": [
+   "will",
+   "goes",
+   "is about",
+   "is for"
+  ]
+ },
+ {
+  "id": "r21-3-014",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "In 'The report is checked by the manager', what is the focus?",
+  "options": [
+   "The manager and what he does.",
+   "A plan for the report next week.",
+   "Something the manager did once.",
+   "The report and what happens to it."
+  ]
+ },
+ {
+  "id": "r21-3-015",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The rooms are cleaned every day.",
+   "Are the tickets checking at the door?",
+   "Cars are washed here on Saturdays.",
+   "Is English taught in your school?"
+  ]
+ },
+ {
+  "id": "r21-3-016",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "The new bridge ___ at the moment.",
+  "options": [
+   "was being built",
+   "is building",
+   "is built",
+   "is being built"
+  ]
+ },
+ {
+  "id": "r21-3-017",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports the guard's request: 'Please wait here.'",
+  "options": [
+   "The guard told me to wait there.",
+   "The guard told me wait there.",
+   "The guard told me that I wait here.",
+   "The guard said me to wait there."
+  ]
+ },
+ {
+  "id": "r21-3-018",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct sentence.",
+  "options": [
+   "Could you tell me where is the station?",
+   "Could you tell me where the station is?",
+   "Could you tell me where the station?",
+   "Could you tell me where's the station is?"
+  ]
+ },
+ {
+  "id": "r21-3-019",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "She asked him ___ he had seen the film.",
+  "word_cards": [
+   "that",
+   "if",
+   "what"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-3-020",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "When I was a teenager, I ___ any money, so I walked everywhere. (not / have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-021",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: At first I hated the food, but now I ___ it.",
+  "options": [
+   "am used to",
+   "am use to",
+   "used to",
+   "use to"
+  ]
+ },
+ {
+  "id": "r21-3-022",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "I used to have a bike when I was ten.",
+   "I use to have a bike when I was ten.",
+   "I am used to have a bike when I was ten.",
+   "I used have a bike when I was ten."
+  ]
+ },
+ {
+  "id": "r21-3-023",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He is the man ___ car was stolen.",
+  "options": [
+   "where",
+   "which",
+   "whose",
+   "who"
+  ]
+ },
+ {
+  "id": "r21-3-024",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Join with *whose*: The man lives next door. His dog can open doors.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-025",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Join the two sentences: My uncle lives in Spain. He is a chef.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-026",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The letters ought to ___ sent today.",
+  "word_cards": [
+   "been",
+   "be",
+   "being"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-3-027",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "this",
+   "used",
+   "millions",
+   "is",
+   "of",
+   "by",
+   "software",
+   "people"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-3-028",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *This factory*: The company built this factory in 1990.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-029",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Most people ___ tired when they ___ enough sleep.",
+  "word_cards": [
+   "doesn't get",
+   "feels",
+   "don't get",
+   "feel"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-3-030",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with never: I don't eat fast food.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-031",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make a question with What time: The bank opens at nine.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-032",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: We are staying at a hotel.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-033",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with since: I started learning English in 2019 and I still learn it.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-034",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: We have visited that museum.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-035",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Make a question with ever: Your parents have travelled abroad.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-036",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the best option: The timetable says our train ___ at 7.10, so we need to leave home by 6.30.",
+  "options": [
+   "leaving",
+   "has left",
+   "leaves",
+   "left"
+  ]
+ },
+ {
+  "id": "r21-3-037",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Why ___ you ___ so much coffee this week? You usually only drink tea. (drink)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-038",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Join the sentences with because: I stayed at home. I felt ill.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-039",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The phone rang while we ___ dinner, so I let it ring.",
+  "options": [
+   "having",
+   "have",
+   "were having",
+   "was having"
+  ]
+ },
+ {
+  "id": "r21-3-040",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ in this flat for six years, and I still love the view from the balcony.",
+  "options": [
+   "living",
+   "am living",
+   "live",
+   "have lived"
+  ]
+ },
+ {
+  "id": "r21-3-041",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I'll wait here until you ___ back. (come)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-042",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I don't know yet, but I ___ come to the party if I finish work early.",
+  "options": [
+   "would",
+   "have to",
+   "must",
+   "might"
+  ]
+ },
+ {
+  "id": "r21-3-043",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: In our factory, every phone ___ by two different people before it leaves the building.",
+  "options": [
+   "checks",
+   "is checked",
+   "was check",
+   "is checking"
+  ]
+ },
+ {
+  "id": "r21-3-044",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *The winner*: They will announce the winner on Friday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-045",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: If the temperature ___ below zero, water turns into ice.",
+  "options": [
+   "fell",
+   "will fall",
+   "falls",
+   "would fall"
+  ]
+ },
+ {
+  "id": "r21-3-046",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ the party, but Chris ___ to go home. (enjoy / want)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-047",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "___ you ___ Anna yesterday? (see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-048",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Karen didn't come to the cinema with us. She ___ the film. (already / see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-3-049",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence says the difference is small?",
+  "options": [
+   "This bag is the biggest in the shop.",
+   "This bag is much bigger than that one.",
+   "This bag is slightly bigger than that one.",
+   "This bag is far bigger than that one."
+  ]
+ },
+ {
+  "id": "r21-3-050",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "much",
+   "job",
+   "one",
+   "last",
+   "than",
+   "this",
+   "is",
+   "more",
+   "stressful",
+   "my"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-3-051",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "The new phone is much faster.",
+   "The new phone is a bit faster.",
+   "The new phone is not as fast.",
+   "The new phone is the fastest."
+  ],
+  "right": [
+   "a small difference",
+   "a big difference",
+   "the old one is faster",
+   "no other phone is faster"
+  ]
+ },
+ {
+  "id": "r21-3-052",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "bright",
+   "one",
+   "yesterday",
+   "the",
+   "is",
+   "we",
+   "saw",
+   "not",
+   "flat",
+   "this",
+   "as",
+   "as"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-3-053",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ to Paris twice. The last time I ___ there was in May.",
+  "word_cards": [
+   "go",
+   "have gone",
+   "have been",
+   "went"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-3-054",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I finished work. ___, I went to the gym.",
+  "word_cards": [
+   "Since then",
+   "After that",
+   "After"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-3-055",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite in the past: I have to get up early.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-056",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: You should stay up late.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-057",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite in the future with will have to: I have to pay.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-3-058",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct form: The test was cancelled, so we ___ study last night.",
+  "options": [
+   "hadn't to",
+   "didn't have to",
+   "couldn't",
+   "mustn't"
+  ]
+ },
+ {
+  "id": "r21-3-059",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I'm looking forward to ___ you.",
+  "options": [
+   "to see",
+   "see",
+   "seeing"
+  ]
+ },
+ {
+  "id": "r21-3-060",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *said* or *told*: The doctor ___ that I needed more sleep.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

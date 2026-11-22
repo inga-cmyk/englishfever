@@ -7851,6 +7851,24 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
+"id": "ps-B11-4a-r3",
+"skill": "present_simple",
+"level": "B1.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "My uncle is owning a shop.",
+"wrong": [
+"The museum opens at nine.",
+"How much does it cost now?",
+"He doesn't speak French."
+],
+"why": "*Own* is a state verb, so we use the present simple: *My brother owns a small shop.*",
+"wrong_why": {},
+"why_lv": "*Own* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *My brother owns a small shop.*",
+"wrong_why_lv": {}
+},
+{
 "id": "pac-B11-5a-r3",
 "skill": "past_continuous",
 "level": "B1.1",
@@ -8856,6 +8874,23 @@ return json_decode(<<<'EF_JSON_END'
 "In the indirect part use statement order: *... why the order didn't arrive.*"
 ]
 ]
+},
+{
+"id": "ip-B21-4a-r2",
+"skill": "ind_polite",
+"level": "B2.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "I'd like to know where did you go.",
+"wrong": [
+"Do you remember where you parked?",
+"I wonder where I left my phone.",
+"I'd like to know what time it is."
+],
+"why": "Statement word order after *I'd like to know*: *where you put the keys.*",
+"wrong_why": {},
+"wrong_why_lv": {}
 },
 {
 "id": "ip-B21-5a-r2",

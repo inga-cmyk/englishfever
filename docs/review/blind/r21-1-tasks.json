@@ -1,0 +1,715 @@
+[
+ {
+  "id": "r21-1-001",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I arrived, she had already left.",
+   "I had never seen snow before that day.",
+   "He told me that he had lost his keys.",
+   "When I arrived, she already has left."
+  ]
+ },
+ {
+  "id": "r21-1-002",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which word can replace 'if' here? 'If it rains, the street floods.'",
+  "options": [
+   "because",
+   "whenever",
+   "although",
+   "unless"
+  ]
+ },
+ {
+  "id": "r21-1-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If people don't sleep enough, they would be grumpy.",
+   "If people don't sleep enough, they get grumpy.",
+   "Whenever I forget my umbrella, it rains.",
+   "If the printer jams, everybody panics."
+  ]
+ },
+ {
+  "id": "r21-1-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I won the lottery, I would buy an island.",
+   "If I will win the lottery, I would buy an island.",
+   "What would you do if you saw a ghost?",
+   "If I were you, I wouldn't do that."
+  ]
+ },
+ {
+  "id": "r21-1-005",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which word(s) do we use to report a yes/no question?",
+  "options": [
+   "what or which",
+   "that or what",
+   "if or whether",
+   "do or does"
+  ]
+ },
+ {
+  "id": "r21-1-006",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He asked if I wanted a coffee.",
+   "He asked me where did I live.",
+   "She asked whether it was true.",
+   "He asked me where I lived."
+  ]
+ },
+ {
+  "id": "r21-1-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If metal gets cold, it shrinks.",
+   "If metal will get hot, it expands.",
+   "If metal gets hot, it expands.",
+   "Metal expands when it gets hot."
+  ]
+ },
+ {
+  "id": "r21-1-008",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I will see her, I will tell her.",
+   "I will tell her if I see her.",
+   "If I see her, I will tell her.",
+   "If I see her, I'll tell her."
+  ]
+ },
+ {
+  "id": "r21-1-009",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I would tell you if I knew.",
+   "If I knew, I would tell you.",
+   "If I would know, I would tell you.",
+   "If I knew, I'd tell you."
+  ]
+ },
+ {
+  "id": "r21-1-010",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She told us she was tired.",
+   "She said that she was tired.",
+   "She told that she was tired.",
+   "She told me that she was tired."
+  ]
+ },
+ {
+  "id": "r21-1-011",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They said they would come the next day.",
+   "They said that they would come the next day.",
+   "They said they would come tomorrow.",
+   "They said they will come the next day."
+  ]
+ },
+ {
+  "id": "r21-1-012",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She asked me where I had lived.",
+   "She asked me where did I live.",
+   "She asked where I lived.",
+   "She asked me where I lived."
+  ]
+ },
+ {
+  "id": "r21-1-013",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She didn't use to play chess.",
+   "Did you use to play chess?",
+   "I used to play chess.",
+   "Did you used to play chess?"
+  ]
+ },
+ {
+  "id": "r21-1-014",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The room isn't big ___ for twenty people.",
+  "word_cards": [
+   "enough",
+   "very",
+   "too"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-1-015",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The book which I bought was boring.",
+   "The book which I bought it was boring.",
+   "The book that I bought was boring.",
+   "The book I bought was boring."
+  ]
+ },
+ {
+  "id": "r21-1-016",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'll text you as soon as I arrive.",
+   "When I arrive, I'll text you.",
+   "I'll text you when I arrive.",
+   "I'll text you when I will arrive."
+  ]
+ },
+ {
+  "id": "r21-1-017",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Who called you last night?",
+   "Who did called you last night?",
+   "What happened last night?",
+   "Who did you call last night?"
+  ]
+ },
+ {
+  "id": "r21-1-018",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "What happened at the meeting?",
+   "What did happened at the meeting?",
+   "What did you decide at the meeting?",
+   "Who spoke at the meeting?"
+  ]
+ },
+ {
+  "id": "r21-1-019",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Ask about *Something* with *What*: Something made that noise.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-1-020",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She promised to help me with the move.",
+   "She offered to help me with the move.",
+   "She suggested helping me with the move.",
+   "She promised helping me with the move."
+  ]
+ },
+ {
+  "id": "r21-1-021",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She likes cooking for her friends.",
+   "She enjoys cooking for her friends.",
+   "She loves to cook for her friends.",
+   "She enjoys to cook for her friends."
+  ]
+ },
+ {
+  "id": "r21-1-022",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She could be late.",
+   "She might to be late.",
+   "She may be late.",
+   "She might be late."
+  ]
+ },
+ {
+  "id": "r21-1-023",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We had the house paint last week.",
+   "We had our house painted last week.",
+   "We had the house painted last week.",
+   "We got the house painted last week."
+  ]
+ },
+ {
+  "id": "r21-1-024",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I haven't had my hair cut yet.",
+   "I haven't had my eyes checked yet.",
+   "I haven't had my eyes tested yet.",
+   "I haven't had my eyes test yet."
+  ]
+ },
+ {
+  "id": "r21-1-025",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He explained the problem to me.",
+   "He told me about the problem.",
+   "He explained me the problem.",
+   "He showed me the problem."
+  ]
+ },
+ {
+  "id": "r21-1-026",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He described the house to me.",
+   "He told me about the house.",
+   "He described me the house.",
+   "He showed me the house."
+  ]
+ },
+ {
+  "id": "r21-1-027",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I am really tired after work.",
+   "I feel tired after work.",
+   "Work is really tiring.",
+   "I am really tiring after work."
+  ]
+ },
+ {
+  "id": "r21-1-028",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She has a lovely round table.",
+   "She has a lovely wooden table.",
+   "She has a round wooden table.",
+   "She has a wooden round table."
+  ]
+ },
+ {
+  "id": "r21-1-029",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We ate in a small Italian restaurant.",
+   "We ate in an Italian small restaurant.",
+   "We ate in a lovely small restaurant.",
+   "We ate in a lovely Italian restaurant."
+  ]
+ },
+ {
+  "id": "r21-1-030",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The soup wasn't hot ___ to eat.",
+  "options": [
+   "very",
+   "too",
+   "enough",
+   "so"
+  ]
+ },
+ {
+  "id": "r21-1-031",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He speaks Spanish very fluently.",
+   "He speaks Spanish fluently.",
+   "He speaks Spanish fluent.",
+   "He speaks fluent Spanish."
+  ]
+ },
+ {
+  "id": "r21-1-032",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She is such tired.",
+   "She is such a tired child.",
+   "She is so tired.",
+   "She is very tired."
+  ]
+ },
+ {
+  "id": "r21-1-033",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Is every machine checked?",
+   "The machines are checked every day.",
+   "The machines is checked every day.",
+   "Each machine is checked every day."
+  ]
+ },
+ {
+  "id": "r21-1-034",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Is the museum visited by many tourists?",
+   "The museum is visited by many tourists.",
+   "Many tourists visit the museum.",
+   "The museum is visit by many tourists."
+  ]
+ },
+ {
+  "id": "r21-1-035",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The bank was robbed last night.",
+   "The bank was robbing last night.",
+   "Two men were arrested.",
+   "The money was found."
+  ]
+ },
+ {
+  "id": "r21-1-036",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The reports are being written now.",
+   "The report is being write now.",
+   "The report is being written now.",
+   "Is the report being written now?"
+  ]
+ },
+ {
+  "id": "r21-1-037",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The rooms are being cleaned.",
+   "The room is being cleaned.",
+   "Are the rooms being cleaned?",
+   "The rooms is being cleaned."
+  ]
+ },
+ {
+  "id": "r21-1-038",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The contract has been sign.",
+   "Has the contract been signed?",
+   "The contract has been signed.",
+   "The contracts have been signed."
+  ]
+ },
+ {
+  "id": "r21-1-039",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Does your manager like long meetings?",
+   "Our colleagues don't like long meetings.",
+   "Our manager don't like long meetings.",
+   "Our manager doesn't like long meetings."
+  ]
+ },
+ {
+  "id": "r21-1-040",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He doesn't go to the gym on Sundays.",
+   "He doesn't goes to the gym on Sundays.",
+   "He goes to the gym on Saturdays.",
+   "Does he go to the gym every day?"
+  ]
+ },
+ {
+  "id": "r21-1-041",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They are thinking about the answer.",
+   "We're knowing the answer, but we can't say it.",
+   "We know the answer, but we can't say it.",
+   "We're working on the answer."
+  ]
+ },
+ {
+  "id": "r21-1-042",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Is the manager having a meeting?",
+   "The managers are having a meeting.",
+   "The manager is having a meeting with a client.",
+   "The manager is have a meeting with a client."
+  ]
+ },
+ {
+  "id": "r21-1-043",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I didn't used to like olives.",
+   "I used to hate olives.",
+   "Did you use to like olives?",
+   "I didn't use to like olives."
+  ]
+ },
+ {
+  "id": "r21-1-044",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I've worked here ___ 2015.",
+  "options": [
+   "ago",
+   "since",
+   "during",
+   "for"
+  ]
+ },
+ {
+  "id": "r21-1-045",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I visited that museum last weekend.",
+   "I have visited that museum last weekend.",
+   "I have visited that museum twice.",
+   "Have you visited that museum?"
+  ]
+ },
+ {
+  "id": "r21-1-046",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She has lived in Paris since 2019.",
+   "She lived in Paris for five years.",
+   "She has lived in Paris for five years.",
+   "She has lived in Paris since five years."
+  ]
+ },
+ {
+  "id": "r21-1-047",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I hadn't seen it before.",
+   "I had seen it once before.",
+   "I hadn't never seen it before.",
+   "I had never seen it before."
+  ]
+ },
+ {
+  "id": "r21-1-048",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I will arrive, I'll text you.",
+   "When I arrive, I'll text you.",
+   "I'll text you as soon as I arrive.",
+   "I'll text you when I arrive."
+  ]
+ },
+ {
+  "id": "r21-1-049",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Does she check her messages every hour?",
+   "She always checks her messages before she gets out of bed.",
+   "She doesn't usually check her messages at work.",
+   "She is always check her messages before she gets out of bed."
+  ]
+ },
+ {
+  "id": "r21-1-050",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She is waiting for the right moment to speak.",
+   "I'm thinking about the answer at the moment.",
+   "I know the answer, but I don't want to say it yet.",
+   "I am knowing the answer, but I don't want to say it yet."
+  ]
+ },
+ {
+  "id": "r21-1-051",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Did you use to live near the sea?",
+   "We didn't used to have a car when I was young.",
+   "We didn't use to have a car when I was young.",
+   "We used to walk to school every day."
+  ]
+ },
+ {
+  "id": "r21-1-052",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I finished school in 2015.",
+   "I have finished school in 2019.",
+   "She has just started a new job.",
+   "We have lived here since 2019."
+  ]
+ },
+ {
+  "id": "r21-1-053",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I will see him, I'll tell him about the problem.",
+   "If I see him, I'll tell him about the problem.",
+   "I'll tell him about the problem as soon as I see him.",
+   "When I see him, I'll tell him about the problem."
+  ]
+ },
+ {
+  "id": "r21-1-054",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We'll go for a walk ___ it stops raining.",
+  "options": [
+   "as soon as",
+   "while",
+   "in case",
+   "because"
+  ]
+ },
+ {
+  "id": "r21-1-055",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The weather today is much warmer than yesterday.",
+   "It is not as cold as it was last week.",
+   "The weather today is much more warmer than yesterday.",
+   "It was the coldest day of the whole winter."
+  ]
+ },
+ {
+  "id": "r21-1-056",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He is by far the most experienced player in the team.",
+   "He is by far the more experienced player in the team.",
+   "She is twice as old as her cousin.",
+   "Their house is not as big as ours."
+  ]
+ },
+ {
+  "id": "r21-1-057",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Despite it was late, they kept working.",
+   "Even though it was late, they kept working.",
+   "She saved money so that she could travel.",
+   "In spite of the noise, I slept well."
+  ]
+ },
+ {
+  "id": "r21-1-058",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "___ it rained all day, we enjoyed our trip.",
+  "word_cards": [
+   "Despite",
+   "Because of",
+   "Although"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-1-059",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I can't sleep. There's ___ noise outside.",
+  "options": [
+   "too many",
+   "enough of",
+   "too much"
+  ]
+ },
+ {
+  "id": "r21-1-060",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We need two more chairs. There aren't ___.",
+  "options": [
+   "enough",
+   "too much",
+   "enough of"
+  ]
+ }
+]

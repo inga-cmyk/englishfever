@@ -375,7 +375,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Runājot par to, kas kādam ir, pareizi noliegumi ir gan *does not have any money*, gan *has not got any money*."
 },
 {
-"id": "ps-B11-4a-r3",
+"id": "ps-B11-4a-r4",
 "skill": "present_simple",
 "level": "B1.1",
 "bloom": 4,
@@ -387,9 +387,9 @@ return json_decode(<<<'EF_JSON_END'
 "How much does it cost now?",
 "He doesn't speak French."
 ],
-"why": "*Own* is a state verb, so we use the present simple: *My brother owns a small shop.*",
+"why": "*Own* is a state verb, so we use the present simple: *My uncle owns a shop.*",
 "wrong_why": {},
-"why_lv": "*Own* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *My brother owns a small shop.*",
+"why_lv": "*Own* ir stāvokļa darbības vārds, tāpēc lieto Present Simple: *My uncle owns a shop.*",
 "wrong_why_lv": {}
 },
 {
@@ -8127,7 +8127,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pieklājīga frāze + *why* + teikuma priekšmets + darbības vārds apgalvojuma secībā: *why the order hasn't arrived*, nevis *why hasn't the order arrived*."
 },
 {
-"id": "ip-B21-4a-r2",
+"id": "ip-B21-4a-r3",
 "skill": "ind_polite",
 "level": "B2.1",
 "bloom": 4,
@@ -8139,7 +8139,7 @@ return json_decode(<<<'EF_JSON_END'
 "I wonder where I left my phone.",
 "I'd like to know what time it is."
 ],
-"why": "Statement word order after *I'd like to know*: *where you put the keys.*",
+"why": "Statement word order after *I'd like to know*: *I'd like to know where you went.*",
 "wrong_why": {},
 "wrong_why_lv": {}
 },

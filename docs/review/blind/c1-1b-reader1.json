@@ -1,0 +1,197 @@
+[
+{
+"id": "c1-1b-001",
+"answer": [
+"am measuring"
+],
+"other_correct": [
+[
+"am going to measure"
+],
+[
+"will measure"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present continuous for an action in progress is A2/B1; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-002",
+"answer": [
+"measures"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "State-verb contrast (measure = be in size) is a good C1 point, fine.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-003",
+"answer": [
+"are fitting"
+],
+"other_correct": [
+[
+"are going to fit"
+],
+[
+"will fit"
+],
+[
+"are having"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint (fit) gives the verb; 'are having ... fitted' is not one gap but 'are going to fit' is possible, so the continuous-for-arrangement point is not forced.",
+"level_problem": "Grammar point is B1; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-004",
+"answer": [
+"are",
+"being"
+],
+"other_correct": [
+[
+"were",
+"being"
+],
+[
+"have",
+"been"
+],
+[
+"do",
+"be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Write one word in each gap' with no hint is clear, but the two gaps are the whole point (are being), very standard B1/B2 form.",
+"level_problem": "'Why are you being difficult' is B1/B2, too easy for C1.",
+"sense_problem": "['have','been'] works but changes the sense (a habit); ['do','be'] is wrong."
+},
+{
+"id": "c1-1b-005",
+"answer": [
+"doubt"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "The verb is given in brackets and no form change is needed: only copying, gives the answer away.",
+"level_problem": "Too easy for C1: A2/B1 stative verb, no change of form.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-006",
+"answer": [
+"is considering"
+],
+"other_correct": [
+[
+"has been considering"
+],
+[
+"was considering"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'is considering' vs 'considers' is a fair B2 point; borderline C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-007",
+"answer": [
+"believe"
+],
+"other_correct": [
+[
+"do believe"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The verb is given and no change is needed: only copying; 'now' does not force simple present over 'am believing' for a learner who has just studied the continuous.",
+"level_problem": "Too easy for C1 (A2/B1 stative verb).",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-008",
+"answer": "He considers taking early retirement next year.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence is clearly wrong: the question assumes a mistake exists.",
+"level_problem": "",
+"sense_problem": "Option 4 is correct English (consider + -ing is fine; 'considers' for a plan is acceptable, only 'is considering' is more usual). Options 1-3 are also correct. A learner cannot tell which is meant; this is a form nobody would call a mistake."
+},
+{
+"id": "c1-1b-009",
+"answer": [
+"You're constantly changing your mind."
+],
+"other_correct": [
+[
+"You are constantly changing your mind."
+],
+[
+"You constantly change your mind."
+],
+[
+"You're changing your mind constantly."
+],
+[
+"I'm constantly changing my mind."
+],
+[
+"I am constantly changing my mind."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Unclear who is speaking and what the answer should do ('Answer' to a statement is odd): reply to the speaker or about oneself? Neither tense is forced either; the annoyance meaning is not stated.",
+"level_problem": "",
+"sense_problem": "The reply is natural only as a complaint; without saying so, the simple present is also correct."
+},
+{
+"id": "c1-1b-010",
+"answer": [
+"am",
+"driving"
+],
+"other_correct": [
+[
+"do",
+"drive"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'I'm usually driving' (continuous with usually, for a regular activity at a given time) is a good C1 point.",
+"sense_problem": "['do','drive'] is grammatical but emphatic and odd here; less natural."
+},
+{
+"id": "c1-1b-011",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "The wrong order (forever is borrowing) is a believable learner slip, but options 1, 3 and 4 are all correct, which is fine."
+},
+{
+"id": "c1-1b-012",
+"answer": "you're constantly interrupting me when I'm speaking",
+"other_correct": [
+"when I'm speaking you're constantly interrupting me",
+"you're interrupting me constantly when I'm speaking",
+"when I'm speaking you're interrupting me constantly",
+"I'm speaking when you're constantly interrupting me"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several orders are correct (adverb after you're or after me, when-clause first or last).",
+"level_problem": "Fine for C1 content, but the task is only word order, with cards giving contractions: fairly easy for C1.",
+"sense_problem": ""
+}
+]

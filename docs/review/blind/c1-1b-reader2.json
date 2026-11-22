@@ -1,0 +1,187 @@
+[
+{
+"id": "c1-1b-001",
+"answer": [
+"am measuring"
+],
+"other_correct": [
+[
+"'m measuring"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-002",
+"answer": [
+"measures"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-003",
+"answer": [
+"are fitting"
+],
+"other_correct": [
+[
+"'re fitting"
+],
+[
+"have fitted"
+],
+[
+"are putting in"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'have fitted' also fits (less natural with 'all week'); 'are going to fit' is not one word-gap but also possible"
+},
+{
+"id": "c1-1b-004",
+"answer": [
+"are",
+"being"
+],
+"other_correct": [
+[
+"must",
+"be"
+],
+[
+"can",
+"be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Write one word in each gap' does not say which verb; 'must be' / 'can be' (less natural) also work, so more than one answer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-005",
+"answer": [
+"doubt"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-006",
+"answer": [
+"is considering"
+],
+"other_correct": [
+[
+"has been considering"
+],
+[
+"'s considering"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-007",
+"answer": [
+"believe"
+],
+"other_correct": [
+[
+"do believe"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Stative vs progressive contrast is well below C1 (B1/B2 point); a B1 learner solves it by instinct.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-008",
+"answer": "He considers taking early retirement next year.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 4 is not clearly wrong: 'considers' in simple present is possible in some contexts (habitual/general), so the 'mistake' depends on reading it as a plan; ambiguous."
+},
+{
+"id": "c1-1b-009",
+"answer": [
+"You're constantly changing your mind."
+],
+"other_correct": [
+[
+"You are constantly changing your mind."
+],
+[
+"You constantly change your mind."
+],
+[
+"You've constantly changed your mind."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Unclear who speaks and what to say: 'Answer with' does not say the answer is a comment/complaint about the speaker; tense not specified so simple present is also correct. Learner cannot know a progressive is wanted.",
+"level_problem": "Fine for C1 only if the annoyed-habit nuance is clear; as worded it is guesswork.",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-010",
+"answer": [
+"am",
+"driving"
+],
+"other_correct": [
+[
+"'m",
+"driving"
+],
+[
+"will",
+"be driving"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'will usually be driving' is also correct (two words in the second gap).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1b-011",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Word-order error 'forever is borrowing' is a form few learners would write at C1; the wrong sentence is easy to spot."
+},
+{
+"id": "c1-1b-012",
+"answer": "you're constantly interrupting me when I'm speaking",
+"other_correct": [
+"when I'm speaking you're constantly interrupting me",
+"you're interrupting me constantly when I'm speaking",
+"constantly you're interrupting me when I'm speaking"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Task is just ordering seven given words; the meaning is already in the cards and the 'when' clause order is open, so several orders are correct. No hint which clause starts.",
+"level_problem": "Too easy for C1: only word order, no choice of form.",
+"sense_problem": ""
+}
+]

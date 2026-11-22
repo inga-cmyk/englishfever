@@ -40,6 +40,7 @@ Everything for the grammar practice app is in this repository; nothing lives onl
 - In Latvian texts say *izglītojamie*, never *skolēni*. Inga's account *Fox* is a teacher account (teachers do not see the welcome popup).
 - The fun / feedback lines under an answer are English only.
 - **Write "(teacher, date)" only for what Inga actually said or approved.** Your own reading of her words, or a choice you made while doing what she asked, is marked "(agent proposal, date)" until she confirms it. An earlier session put the time clauses in the conditionals area and wrote "teacher, 22 November"; she had not asked for that (corrected 22 November). Before you build on a "teacher" label that changes what learners see, check that it matches her words in the conversation or ask her.
+- **One thing at a time (teacher, 22 November):** split the work into small parts so that she never has several different decisions open at once. Ask one question, wait for the answer, then the next.
 - **How topics are grouped is a teaching decision, not a technical one.** The areas on the Practice page are hers: *Linking ideas* holds the many forms that join ideas (relative clauses, time words and clauses, contrast and reason, and the B2 linkers), so a topic is not moved to another area because two topics share a path step. Moving a topic to another area, renaming an area or a topic, or changing which card level it shows: propose it first.
 
 ## 3. How tasks are written (summary; the full list is `docs/ITEM-WRITING-RULES.md`)

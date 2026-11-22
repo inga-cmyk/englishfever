@@ -54,6 +54,6 @@ check("nothing learnt before the current step: the step again, not a review", s[
 # My level comes from the answers (teacher, 6 November), not from one level test
 dash = c.api("dashboard")
 check("My level: worked out from the answers once there are 15 practice answers", dash["level_now"] and dash["level_now"]["from"] == "answers" and dash["level_now"]["level"][:2] in ("A2", "B1", "B2", "C1"), dash.get("level_now"))
-check("the welcome-back data is there", set(dash["visit"]) == {"gap", "yesterday", "week_days", "week_seconds"}, dash.get("visit"))
+check("the welcome-back data is there", set(dash["visit"]) == {"gap", "yesterday", "week_days", "week_seconds", "rhythm"}, dash.get("visit"))
 print("\nALL PASS" if ok else "\nSOME FAILED")
 raise SystemExit(0 if ok else 1)

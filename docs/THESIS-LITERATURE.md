@@ -139,3 +139,23 @@ difficulties, Vygotsky (1978) on the zone of proximal development, Ryan & Deci (
 
 Already in the project plan and checked earlier in its reference list: Hamilton et al. (2016), Mishra & Koehler (2006), Selinker (1972),
 Wood, Bruner & Ross (1976).
+
+## 12. Behaviour change frameworks and breaks without guilt (added 22 November 2026, with `docs/THESIS-UX-THEORY.md`)
+
+Checked against Crossref on 22 November 2026, like the sections above. What the app does with each source: `docs/FEATURE-THEORY-MAP.md`
+and `docs/PRACTICE-RHYTHM-COACH.md`.
+
+| Source | Use in the thesis | Status |
+|---|---|---|
+| Michie, S., van Stralen, M. M., & West, R. (2011). The behaviour change wheel: A new method for characterising and designing behaviour change interventions. *Implementation Science, 6*, Article 42. https://doi.org/10.1186/1748-5908-6-42 | COM-B: capability, opportunity and motivation; the framework for analysing what stops practice | Checked |
+| Prochaska, J. O., & Velicer, W. F. (1997). The transtheoretical model of health behavior change. *American Journal of Health Promotion, 12*(1), 38–48. https://doi.org/10.4278/0890-1171-12.1.38 | Stages of change, used only as a perspective for planning support | Checked |
+| West, R. (2005). Time for a change: Putting the Transtheoretical (Stages of Change) Model to rest. *Addiction, 100*(8), 1036–1039. https://doi.org/10.1111/j.1360-0443.2005.01139.x | Criticism of the stage boundaries: why the app does not diagnose a stage | Checked |
+| Perski, O., Stevens, C., West, R., & Shahab, L. (2021). Pilot randomised controlled trial of the Risk Acceptance Ladder (RAL) as a tool for targeting health communications. *PLOS ONE, 16*(11), Article e0259949. https://doi.org/10.1371/journal.pone.0259949 | A message matched to the person's obstacle was opened more often (pilot, health communication) | Checked |
+| Dirksen, J. (2023). *Talk to the elephant: Design learning for behavior change.* New Riders. | Where a person can get stuck on the way to a new behaviour (the ten points in the framework) | Not checked (book: confirm the edition and the page) |
+| Ryan, R. M., & Deci, E. L. (2020). Intrinsic and extrinsic motivation from a self-determination theory perspective: Definitions, theory, practices, and future directions. *Contemporary Educational Psychology, 61*, Article 101860. https://doi.org/10.1016/j.cedpsych.2020.101860 | SDT in education: autonomy, competence, relatedness (newer than Ryan & Deci, 2000) | Checked |
+| Kim, S. K., & Webb, S. (2022). The effects of spaced practice on second language learning: A meta-analysis. *Language Learning, 72*(1), 269–319. https://doi.org/10.1111/lang.12479 | Spaced practice in L2 learning; no single best interval, no need for daily visits | Checked |
+| Hwang, H.-B., Coss, M. D., Loewen, S., & Tagarelli, K. M. (2024). Acceptance and engagement patterns of mobile-assisted language learning among non-conventional adult L2 learners: A survival analysis. *Studies in Second Language Acquisition, 46*(4), 969–995. https://doi.org/10.1017/S0272263124000354 | Adults' engagement with a language app: breaks and returns can go with longer engagement (observational) | Checked |
+| Sharif, M. A., & Shu, S. B. (2017). The benefits of emergency reserves: Greater preference and persistence for goals that have slack with a cost. *Journal of Marketing Research, 54*(3), 495–509. https://doi.org/10.1509/jmr.15.0231 | A goal with a few allowed skips is kept longer: supports "rest days are part of the plan" | Checked |
+| Wohl, M. J. A., Pychyl, T. A., & Bennett, S. H. (2010). I forgive myself, now I can study: How self-forgiveness for procrastinating can reduce future procrastination. *Personality and Individual Differences, 48*(7), 803–808. https://doi.org/10.1016/j.paid.2010.01.029 | Students who forgave themselves for putting off study put it off less next time: supports coming back without guilt | Checked |
+
+The framework also uses Gollwitzer & Sheeran (2006), Lally et al. (2010) and Shute (2008): already in sections 1 and 5.

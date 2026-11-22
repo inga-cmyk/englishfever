@@ -64,6 +64,15 @@ so results before and after it are not mixed.
 - **Model**: a mixed-effects logistic model (learner and task as random effects) instead of plain percentages.
 - **Hypotheses written down before looking**: 2-3 main questions, the rest is exploration.
 
+## Definitions still to fix (22 November 2026, from docs/THESIS-UX-THEORY.md section 10)
+Not changed yet; listed so that they are decided before the analysis. Comparison with the export: `docs/FEATURE-THEORY-MAP.md`.
+- **Practice day**: a day with at least one answer (already `active_days`).
+- **Completed session**: to define (all tasks of the session answered); now only sessions with at least one answer are counted.
+- **Return**: a new practice day after a break of at least 7 days (and, separately, 14 days); count learners, not clicks.
+- **Plan realisation**: practice days in a week against the learner's plan valid in that week; only for learners with a plan (needs the plan, proposed).
+- **Delayed performance**: the first answer to a new task of the same grammar point after a set interval (as *Locked in* and *mastered*).
+- **Support shown**: the welcome greetings and reminder clicks are tracked in the app but are not in the research `events.csv` yet.
+
 ## Changes
 - From the zip after 22 Nov 2026 (date of upload), topic layout (teacher, 22 November): the 18 prepared tasks on time words (*then, after that, before / after* + *-ing*, *while*, *when / as soon as* + present; points `link_time`, `fut_time_clause`, `vp_prep_ing`) are served and recorded in the topic `time_clauses` instead of `conj_linkers` (same task ids; rule in `app/authoring/topic_layout.py`, applied by `Content::moved`). Answers given before the upload keep `skill = conj_linkers`, so for these 18 item ids the `skill` column changes at the upload date: group by item or point, not by topic, when comparing across that date. `conj_linkers` keeps 27 tasks (contrast and reason), `time_clauses` gets the level A2.2 (10 counted tasks), so the A2.2 path step *First conditional and time clauses* now serves A2.2 time-clause tasks. The area of `time_clauses` is *Conditionals* from then on (the `area` column of the export is taken from the current topic list, so it changes for older rows too). Display only: one card level per topic (A2 / B1 / B2) on the tiles, and the indirect and reported question topics are shown under *Question forms* as well.
 - From the zip after 21 Nov 2026 (date of upload): tester's report of 21 November. More answers accepted in 8 tasks (grading: some answers marked wrong before are now right); 33 new prepared indirect-question tasks (`iq-b1-6.csv`: 28 at B1, 5 at B2.2); 41 prepared and 3 built-in indirect-question tasks become practice only (5 of them B2.1) (same ids; no longer evidence, so *Learned* for Indirect questions B1 counts other tasks); new versions of about 15 tasks (new ids, the old ones retired). Comparisons of indirect-question accuracy before and after this date compare different task sets.

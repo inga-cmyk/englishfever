@@ -160,7 +160,36 @@ final class Stats
         $y = Db::one('SELECT seconds, answers FROM activity WHERE user_id = ? AND day = ?', [$uid, self::dayOffset(-1)]) ?: ['seconds' => 0, 'answers' => 0];
         $days = 0; $secs = 0;
         foreach ($week as $w) { if ($w['answers'] > 0) $days++; $secs += $w['seconds']; }
-        return ['gap' => $gap, 'yesterday' => ['seconds' => (int) $y['seconds'], 'answers' => (int) $y['answers']], 'week_days' => $days, 'week_seconds' => $secs];
+        return ['gap' => $gap, 'yesterday' => ['seconds' => (int) $y['seconds'], 'answers' => (int) $y['answers']], 'week_days' => $days, 'week_seconds' => $secs,
+            'rhythm' => self::rhythm($uid)];
+    }
+
+    /**
+     * The learner's practice rhythm before today, for the second line of the welcome-back greeting (teacher, 22 November: the line is
+     * about coming back, habit and regularity only). From the practice days of the last 28 days (four 7-day blocks):
+     *   new       fewer than 4 practice days ever: too early to speak of a rhythm
+     *   daily     16+ practice days (about 4 or more a week)
+     *   few       8-15 practice days, in at least 3 of the 4 blocks (about 2-3 a week)
+     *   weekly    fewer than 8, but in at least 3 of the 4 blocks (about once a week, regularly)
+     *   irregular everything else (bursts and long breaks)
+     * Simple, explainable rules; the limits are a first guess, to be checked against the data.
+     */
+    public static function rhythm(int $uid): string
+    {
+        $today = self::today();
+        $ever = (int) Db::val('SELECT COUNT(1) FROM activity WHERE user_id = ? AND day < ? AND answers > 0', [$uid, $today]);
+        if ($ever < 4) return 'new';
+        $days = array_column(Db::all('SELECT day FROM activity WHERE user_id = ? AND day < ? AND day >= ? AND answers > 0', [$uid, $today, self::dayOffset(-28)]), 'day');
+        $blocks = [];
+        foreach ($days as $d) {
+            $ago = (int) round((strtotime($today . ' 12:00:00 UTC') - strtotime($d . ' 12:00:00 UTC')) / 86400);   // 1 ... 28
+            $blocks[intdiv($ago - 1, 7)] = true;
+        }
+        $n = count($days); $b = count($blocks);
+        if ($n >= 16) return 'daily';
+        if ($n >= 8 && $b >= 3) return 'few';
+        if ($b >= 3) return 'weekly';
+        return 'irregular';
     }
 
     public static function dashboard(int $uid): array

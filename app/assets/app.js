@@ -734,6 +734,40 @@
       month: ["Welcome back! It's been a month. We are happy to see you."],
     },
   };
+  // The second line of the greeting: about coming back, habit and regularity only, never about tasks, topics or app features, no day
+  // counts (teacher, 22 November). By the learner's rhythm (Stats::rhythm) and how soon they came back: next = the next day,
+  // short = 2-4 days, long = 5 days or more. Nothing on a second visit the same day.
+  var RHYTHM_LINE = {
+    b: {
+      daily: { next: ["Day after day. That's a habit now.", 'You keep showing up. That is what makes it work.', 'Another day, another little step. Steady wins.'],
+        short: ['A few days off is fine. Your habit is still here.', 'Rest days are part of it. Good to have you back.'],
+        long: ['You built a strong habit before. It comes back quickly.', 'Welcome back to your rhythm. It was only waiting.'] },
+      few: { next: ['Two days in a row. Your rhythm is getting stronger.'],
+        short: ["A few times a week, week after week. That's a rhythm that lasts.", 'Right on rhythm. Days off are part of the plan.', 'Regular beats often. You are doing it right.'],
+        long: ['Life gets busy. Your rhythm is easy to pick up again.', 'A longer break this time. Your rhythm will be back in no time.'] },
+      weekly: { next: ['Back the next day? A bonus visit.'],
+        short: ['Back on your rhythm. Regular beats often.'],
+        long: ['Right on time. Your rhythm works.', "You come back again and again. That's what counts."] },
+      irregular: { next: ['Back again! A regular moment in your day makes it even easier.'],
+        short: ['Good to see you again. Practice is easiest when it has its own moment in your day.', 'You came back. A favourite time of day can make it a habit.'],
+        long: ['Welcome back. Everything you learned is still here.', 'Starting again is easy. Everything is still here.'] },
+      'new': { next: ['You came back, and that is the hardest part.', 'Coming back is how a habit starts.'],
+        short: ['You came back, and that is the hardest part.', 'Coming back is how a habit starts.'],
+        long: ['Welcome back. Starting again is easy. Everything is still here.'] },
+    },
+    a: {
+      daily: { next: ['Every day! This is a habit now.'], short: ['Some days off are OK. Your habit is still here.'], long: ['Your good habit comes back fast.'] },
+      few: { next: ['Two days in a row. Good rhythm!'], short: ['Some days a week, every week. Very good.'], long: ['Life is busy. It is easy to start again.'] },
+      weekly: { next: ['Back the next day? Great.'], short: ['Back again. Good rhythm.'], long: ['You come back every week. Very good.'] },
+      irregular: { next: ['Back again! Try the same time every day.'], short: ['Nice to see you. Try one time of day for English.'], long: ['Welcome back. You still know everything you learned.'] },
+      'new': { next: ['You came back. That is the most important step.'], short: ['You came back. That is the most important step.'], long: ['Welcome back. It is easy to start again.'] },
+    },
+  };
+  function rhythmLine(set, rhythm, gap) {
+    var r = RHYTHM_LINE[set][rhythm]; if (!r || !gap) return null;
+    var list = r[gap === 1 ? 'next' : (gap <= 4 ? 'short' : 'long')]; if (!list || !list.length) return null;
+    var i = Math.floor(Math.random() * list.length); return { text: list[i], key: rhythm + ':' + (gap === 1 ? 'next' : (gap <= 4 ? 'short' : 'long')) + i };
+  }
   var WELCOME_ICON = { second: '👋', third: '🔥', nextday: '🌱', long: '☕', short: '🙂', gap2: '🪑', gap3: '🧭', week: '🔦', weeks: '🥲', month: '🪟' };
   var WELCOME_BTN = { b: ['Happy to be back', "I'm ready", 'Challenge me', "Let's go", 'Continue'], a: ["I'm ready", "Let's go", 'Continue'] };
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } return null; }
@@ -775,10 +809,11 @@
     var text = list[i].replace('{min}', String(Math.round(v.yesterday.seconds / 60))).replace('{days}', String(v.gap));
     var btns = WELCOME_BTN[set], label = btns[Math.floor(Math.random() * btns.length)];
     store('ef_welcome_at', String(Date.now()));
-    track('welcome', kase + ':' + set + i);
+    var line = (kase === 'second' || kase === 'third') ? null : rhythmLine(set, v.rhythm, v.gap);
+    track('welcome', kase + ':' + set + i + (line ? ' ' + line.key : ''));
     var ok = h('button', { class: 'btn block', type: 'button' }, label);
     var m = UI.modal(h('div', { class: 'welcome-back' }, h('div', { class: 'wb-icon', 'aria-hidden': 'true' }, WELCOME_ICON[kase]), h('p', { class: 'wb-text' }, UI.rich(text)),
-      ok));   // no day count in the greeting (teacher, 22 November: 'This week' counted the last 7 days, which made no sense on a Monday)
+      line ? h('p', { class: 'wb-rhythm' }, line.text) : null, ok));   // no day count in the greeting (teacher, 22 November: 'This week' counted the last 7 days, which made no sense on a Monday)
     ok.onclick = function () { track('welcome_ok', kase); m.close(); };
   }
 

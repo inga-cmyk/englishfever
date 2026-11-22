@@ -1000,6 +1000,7 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 /* welcome back (teacher, 6 November) */
 .welcome-back { text-align: center; }
 .welcome-back .wb-icon { font-size: 2.6rem; line-height: 1; margin: 4px 0 10px; }
+.welcome-back .wb-rhythm { margin: 0 0 16px; color: var(--text-soft); }
 .welcome-back .wb-text { font-size: 1.15rem; font-weight: 650; color: var(--text); margin: 0 0 8px; }
 
 /* Phone feedback must fit including padding, safe areas and long XP headings. */

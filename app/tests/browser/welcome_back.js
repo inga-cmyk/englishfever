@@ -28,6 +28,10 @@ const BASE = 'http://127.0.0.1:8099', OUT = __dirname + '/shots/';
   check('a long session yesterday: the minutes', r.txt && /25 minutes/.test(r.txt), r.txt);
   r = await open({ gap: 14, yesterday: { seconds: 0, answers: 0 }, week_days: 0, week_seconds: 0 }, 0, 'B1.2');
   check('two weeks away: no week line when there was nothing this week', r.txt && !/This week/.test(r.txt), r.txt);
+  r = await open({ gap: 3, yesterday: { seconds: 0, answers: 0 }, ...week, rhythm: 'few' }, 0, 'B1.1', 'wb-rhythm-few.png');
+  check('a learner with a few days a week, back after 3 days: a rhythm line', r.txt && /rhythm|Regular beats/.test(r.txt) && !/\d+ days? a week/.test(r.txt), r.txt);
+  r = await open({ gap: 9, yesterday: { seconds: 0, answers: 0 }, ...week, rhythm: 'irregular' }, 0, 'A2.2', 'wb-rhythm-irr-a2.png');
+  check('A2, irregular, back after 9 days: the plain line', r.txt && /You still know everything you learned/.test(r.txt), r.txt);
   r = await open({ gap: null, yesterday: { seconds: 0, answers: 0 }, ...week }, 5, 'B1.1');
   check('first visit of the day after practising today already: no message', r.txt === null, r.txt);
   // the app left open: back after a break of 30 minutes or more (teacher, 6 November); not again within 3 hours

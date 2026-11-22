@@ -51,7 +51,7 @@ od(T, L, 3, "Put the words in order.", "you're constantly interrupting me when I
 
 # ── added after round c1-1b (the judge dropped the copying tasks) ──
 # s5 one verb, a state or an action: weigh, feel, fit
-mc(T, L, 4, "Which sentence has a mistake?", "This suitcase is weighing 23 kilos, so it's just under the limit.",
+mc(T, L, 4, "Which sentence has a mistake?", "This old suitcase is weighing nearly five kilos.",
    ["The vet is weighing the dog right now.", "This scarf feels lovely and soft.",
     "They're fitting a new kitchen in our flat this week."],
    "*weigh* for the weight of something is a state: *This suitcase weighs 23 kilos*. *The vet is weighing the dog* is the action, "

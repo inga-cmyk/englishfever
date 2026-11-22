@@ -261,13 +261,13 @@
   }
  },
  "c1-1c-008": {
-  "hash": "52d236da8442d319",
-  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | This suitcase is weighing 23 kilos, so it's just under the limit.",
+  "hash": "ac0280c41eefd86d",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.",
   "src": "zz-blind-zz-c1-pres-1.csv:9",
   "point": null,
   "key": {
    "kind": "mcq",
-   "correct": "This suitcase is weighing 23 kilos, so it's just under the limit.",
+   "correct": "This old suitcase is weighing nearly five kilos.",
    "wrong": [
     "The vet is weighing the dog right now.",
     "This scarf feels lovely and soft.",
@@ -283,7 +283,7 @@
    "q": "Which sentence has a mistake?",
    "why": "*weigh* for the weight of something is a state: *This suitcase weighs 23 kilos*. *The vet is weighing the dog* is the action, so the continuous is right there.",
    "why_lv": "*weigh svara* nozīmē ir stāvoklis: *This suitcase weighs 23 kilos.* *The vet is weighing the dog* ir darbība, tāpēc tur Continuous forma ir *pareiza*.",
-   "correct": "This suitcase is weighing 23 kilos, so it's just under the limit.",
+   "correct": "This old suitcase is weighing nearly five kilos.",
    "wrong": [
     "The vet is weighing the dog right now.",
     "This scarf feels lovely and soft.",

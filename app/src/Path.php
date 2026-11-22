@@ -49,7 +49,7 @@ final class Path
         ['a2_rel', 'Defining relative clauses', 'A2.2', ['relative_clauses']],
         ['a2_aux', 'Auxiliary verbs do, be, have', 'A2.2', ['aux_verbs']],
         ['a2_cmp', 'Comparatives and superlatives', 'A2.2', ['comparison']],
-        ['a2_conj', 'However, although, because, so, time connectors', 'A2.2', ['conj_linkers']],
+        ['a2_conj', 'However, although, because of', 'A2.2', ['conj_linkers']],
         ['a2_q', 'Questions and subject questions', 'A2.2', ['subject_object_q']],
         // B1: the B1 list
         ['b1_pspc', 'Present simple or continuous', 'B1', ['present_simple', 'present_continuous']],

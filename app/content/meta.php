@@ -29,7 +29,7 @@ return json_decode(<<<'EF_JSON_END'
   },
   {
    "id": "conditionals",
-   "label": "Conditionals"
+   "label": "Conditionals and time clauses"
   },
   {
    "id": "reported",
@@ -45,7 +45,7 @@ return json_decode(<<<'EF_JSON_END'
   },
   {
    "id": "clauses",
-   "label": "Joining ideas"
+   "label": "Linking ideas"
   },
   {
    "id": "questions",
@@ -270,7 +270,8 @@ return json_decode(<<<'EF_JSON_END'
       "Ieradums: Present Simple; notiek tagad: Present Continuous: *I usually [[finish]] at five. Look! I'm [[finishing]] now.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "present_continuous",
@@ -533,7 +534,8 @@ return json_decode(<<<'EF_JSON_END'
       "Pastāvīga situācija: Present Simple, pagaidu: Continuous: *I [[live]] in Riga. I'm [[living]] with my parents this year.* Latviski abos gadījumos \"dzīvoju\"."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "past_simple",
@@ -726,7 +728,8 @@ return json_decode(<<<'EF_JSON_END'
       "Līdz šim brīdim ar *[[since]] / [[for]]*: Present Perfect: *I've [[lived]] here [[since]] 2019.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "past_continuous",
@@ -933,7 +936,8 @@ return json_decode(<<<'EF_JSON_END'
       "*was / were going to* = plāns pagātnē: *I [[was going to]] call you, but I forgot.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "present_perfect",
@@ -1191,7 +1195,8 @@ return json_decode(<<<'EF_JSON_END'
       "Darbībai, kas joprojām notiek, parasti lieto Present Perfect Continuous: *I've [[been waiting]] for an hour.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "present_perfect_continuous",
@@ -1395,7 +1400,8 @@ return json_decode(<<<'EF_JSON_END'
      "Stāvokļa darbības vārdi paliek Simple (*know, like, believe, have* = piederēt): *I'[[ve had]] this car for ten years.*",
      "*for* + laika posms, *since* + sākuma brīdis: *[[for]] two hours, [[since]] nine o'clock*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "past_perfect",
@@ -1562,7 +1568,8 @@ return json_decode(<<<'EF_JSON_END'
      "*'d* var būt *had* vai *would*: *She'[[d]] left.* (had) *She'[[d]] like a coffee.* (would)",
      "*By the time* + Past Simple, otrā daļā Past Perfect: *By the time we [[arrived]], the shop [[had closed]].*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "future",
@@ -1783,7 +1790,8 @@ return json_decode(<<<'EF_JSON_END'
       "*I don't think I'll…* ir dabiskāk nekā *I think I won't…*: *I [[don't think]] I'll come.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "present_simple_passive",
@@ -1985,7 +1993,8 @@ return json_decode(<<<'EF_JSON_END'
       "*be* saskan ar teikuma priekšmetu, 3. forma nemainās: *The window [[is]] cleaned. The windows [[are]] cleaned.*"
      ]
     }
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "past_simple_passive",
@@ -2177,7 +2186,8 @@ return json_decode(<<<'EF_JSON_END'
      "Darāmā vai ciešamā kārta? Pajautā, kurš darbību dara: *Somebody stole my bike.* = *My bike [[was stolen]].*",
      "*be born* vienmēr ir ciešamajā kārtā, arī jautājumā: *Where [[were]] you [[born]]?*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "present_continuous_passive",
@@ -2353,7 +2363,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Jau pabeigts: *has been* + 3. forma: *The road [[has been repaired]].*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "present_perfect_passive",
@@ -2521,7 +2532,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*been*, nevis *being*: *The car [[has been]] fixed.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "future_passive",
@@ -2691,7 +2703,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Aiz *will* forma *be* nemainās: *They [[will be]] invited.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "modal_verbs",
@@ -2896,7 +2909,8 @@ return json_decode(<<<'EF_JSON_END'
       "Ar *may* atļauju lūdz tikai *I / we*: *[[May]] I sit here?* (nevis *May you help me?*)"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "comparison",
@@ -3142,7 +3156,8 @@ return json_decode(<<<'EF_JSON_END'
       "Apstākļa vārdi: ar *-ly* lieto *more / the most*: *[[more slowly]], [[the most carefully]]*; *fast, hard, early* ar *-er*: *[[faster]]*; *well → [[better]]*, *badly → [[worse]]*."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "cond_zero",
@@ -3315,7 +3330,8 @@ return json_decode(<<<'EF_JSON_END'
       "Zero conditional = vienmēr patiess; first conditional = viena situācija nākotnē: *If it rains tomorrow, we'[[ll stay]] at home.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "cond_first",
@@ -3495,7 +3511,8 @@ return json_decode(<<<'EF_JSON_END'
       "Arī aiz *when, as soon as, before, until* nav *will*: *I'll call you when I [[get]] home.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "cond_second",
@@ -3667,7 +3684,8 @@ return json_decode(<<<'EF_JSON_END'
      "Reāls un iespējams: first conditional; nereāls vai maz ticams: second: *If it [[rains]], I'll stay at home. If I [[had]] wings, I'd fly.*",
      "Jautājums: *What [[would]] you [[do]] if you lost your phone?*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "cond_third",
@@ -3819,7 +3837,8 @@ return json_decode(<<<'EF_JSON_END'
      "*'d* = *had* *if* daļā, *would* rezultātā: *If I'[[d]] known, I'[[d]] have come.*",
      "Tagad: second conditional; pagātnē: third: *If I [[had]] time, I'd help. If I'[[d had]] time, I'd have helped.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "cond_mixed",
@@ -3980,7 +3999,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Skaties laika vārdus: *now, today* iet kopā ar *would* + pamatformu; *yesterday, last year* ar *had* + 3. formu: *If I [[had saved]] last year, I [[would have]] a car now.*"
     ]
-   }
+   },
+   "card": "B2"
   },
   {
    "id": "cond_advanced",
@@ -4168,7 +4188,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Noliegumā *not* ir aiz teikuma priekšmeta: *[[Had she not]] missed the train, she would be here.*"
     ]
-   }
+   },
+   "card": "B2"
   },
   {
    "id": "rep_statements",
@@ -4317,7 +4338,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*that* var izlaist: *She said ([[that]]) she was tired.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "rep_questions",
@@ -4480,7 +4502,11 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*ask* + cilvēks, bez *to*: *She asked [[me]] where I lived.* Latviski \"jautāja man\", tāpēc gribas *asked to me*."
     ]
-   }
+   },
+   "card": "B1",
+   "also_areas": [
+    "questions"
+   ]
   },
   {
    "id": "rep_verbs",
@@ -4658,7 +4684,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Dažiem darbības vārdiem ir divas uzbūves ar vienu nozīmi: *He admitted [[taking]] the money.* = *He admitted [[that he had taken]] the money.*"
     ]
-   }
+   },
+   "card": "B2"
   },
   {
    "id": "ind_polite",
@@ -4820,7 +4847,11 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*I wonder* + apgalvojuma secība un punkts: *I wonder where [[she lives]].*"
     ]
-   }
+   },
+   "card": "B1",
+   "also_areas": [
+    "questions"
+   ]
   },
   {
    "id": "ind_advanced",
@@ -4997,7 +5028,11 @@ return json_decode(<<<'EF_JSON_END'
      "*if* var būt nosacījums (\"ja\", tikai tad); *whether* nozīmē \"vai\", atbildi gaida jebkurā gadījumā: *Call me [[if]] you need a lift.* = zvani tikai tad, ja vajag; *Tell me [[whether]] you need a lift.* = pasaki jebkurā gadījumā.",
      "Jautājuma zīme ir tikai tad, ja viss teikums jautā: *I have no idea whether it's open[[.]]*, bet *Do you know whether it's open[[?]]*"
     ]
-   }
+   },
+   "card": "B2",
+   "also_areas": [
+    "questions"
+   ]
   },
   {
    "id": "used_to",
@@ -5189,7 +5224,8 @@ return json_decode(<<<'EF_JSON_END'
      "*would* + darbības vārds arī stāsta par ieradumiem pagātnē, bet ne par stāvokļiem: *We [[would]] play outside every day. I [[used to]] have a dog.*",
      "Situācija ir beigusies: *I [[no longer]] smoke.* (pirms darbības vārda; aiz *be*: *She is [[no longer]] my boss.*) = *I don't smoke [[any more]] / [[any longer]].* (beigās, aiz nolieguma). Nevis *no more*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "articles",
@@ -5343,7 +5379,8 @@ return json_decode(<<<'EF_JSON_END'
       "*[[the]]* ar vispārāko pakāpi, *same* un *first*: *[[the]] best film, [[the]] same table, [[the]] first time*."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "quantity",
@@ -5581,7 +5618,8 @@ return json_decode(<<<'EF_JSON_END'
       "*advice, information, furniture, news, luggage*: nav daudzskaitļa, nelieto *a / an*, darbības vārds vienskaitlī: *some advice, [[a piece of]] advice. The news [[is]] good.* Latviski \"padomi, mēbeles, ziņas\" ir daudzskaitlī."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "relative_clauses",
@@ -5761,12 +5799,13 @@ return json_decode(<<<'EF_JSON_END'
      "Prievārds var būt beigās: *That's the house [[I live in]].*",
      "*which* var attiekties uz visu teikumu: *He didn't call, [[which]] was strange.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "time_clauses",
-   "label": "Time clauses (when, as soon as, until)",
-   "area": "clauses",
+   "label": "Time words and clauses (then, while, when, until)",
+   "area": "conditionals",
    "levels": [
     "A2.2",
     "B1.1",
@@ -5782,28 +5821,42 @@ return json_decode(<<<'EF_JSON_END'
      "The main clause has *will / going to* or an order; the time clause has the present.",
      "*when* = at that time. *as soon as* = immediately. *until* = up to that moment (*Wait here until I come back*). *before / after* = which happens first. *while* = at the same time."
     ],
-    "signals": "*when, as soon as, until, before, after, while, by the time*",
+    "signals": "*then, after that, when, as soon as, until, before, after, while, during, by the time*",
     "example": "*I'll tell you the news as soon as I get home.*",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
-       "when",
-       "as soon as",
-       "until",
-       "before / after",
-       "while"
+       "Form",
+       "Example"
       ],
       "rows": [
        [
-        "Meaning",
-        "at that time || *I'll call you [[when]] I arrive.*",
-        "immediately || *I'll call you [[as soon as]] I arrive.*",
-        "up to that moment || *Wait here [[until]] I come back.*",
-        "which happens first || *Finish this [[before]] you go.*",
-        "at the same time || *I'll read [[while]] I wait.*"
+        "One after another",
+        "**then / after that**: the next action, at the start of a sentence",
+        "*I had a shower. [[Then]] I made breakfast.*"
+       ],
+       [
+        "",
+        "**before / after** + noun, **-ing**, or subject + verb",
+        "*[[before]] work* ;; *[[before]] going* ;; *[[before]] I go*"
+       ],
+       [
+        "At the same time",
+        "**while** + subject + verb; **during** + noun",
+        "*I read the news [[while]] I was waiting.* ;; *I fell asleep [[during]] the film.*"
+       ],
+       [
+        "Future",
+        "**when / as soon as / before / after** + **present simple**",
+        "*I'll call you [[when]] I [[arrive]].* ;; *I'll call you [[as soon as]] I [[arrive]].*"
+       ],
+       [
+        "",
+        "**until** = up to that moment; **by** = not later than",
+        "*Wait here [[until]] I come back.* ;; *Finish it [[by]] five.*"
        ]
-      ],
-      "note": "Future meaning, but present simple after these words: *I'll call you when I [[arrive]].*"
+      ]
      },
      "mistakes": [
       [
@@ -5811,8 +5864,8 @@ return json_decode(<<<'EF_JSON_END'
        "I'll call you when I [[arrive]]."
       ],
       [
-       "Wait here [[since]] I come back.",
-       "Wait here [[until]] I come back."
+       "I had a shower. [[After]], I made breakfast.",
+       "I had a shower. [[Then]] I made breakfast."
       ],
       [
        "[[During]] I was cooking, the phone rang.",
@@ -5827,26 +5880,19 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "*until* = up to a moment; *by* = not later than",
+       "t": "A comma when the sentence starts with the time word",
        "ex": [
-        "Stay here [[until]] five.",
-        "Finish it [[by]] five."
-       ]
-      },
-      {
-       "t": "*during* + a noun, *while* + a sentence",
-       "ex": [
-        "[[During]] the film, I fell asleep.",
-        "[[While]] we were watching the film, I fell asleep."
+        "[[When]] I get home[[,]] I'll call you.",
+        "I'll call you [[when]] I get home."
        ]
       }
      ],
      "watch": [
-      "A comma when the time clause comes first: *When I get home[[,]] I'll call you.*"
+      "*As soon as* = immediately when: *I'll text you [[as soon as]] I land.* *Until* is not *since*: *Wait here [[until]] I come back.*"
      ]
     },
     "watch": [
-     "A comma when the time clause comes first: *When I get home[[,]] I'll call you.*"
+     "*As soon as* = immediately when: *I'll text you [[as soon as]] I land.* *Until* is not *since*: *Wait here [[until]] I come back.*"
     ]
    },
    "rule_lv": {
@@ -5859,27 +5905,41 @@ return json_decode(<<<'EF_JSON_END'
      "Virsteikumā ir *will / going to* vai pavēle; laika palīgteikumā ir tagadne.",
      "*when* = tajā laikā. *as soon as* = uzreiz. *until* = līdz tam brīdim (*Wait here until I come back*). *before / after* = kas notiek pirmais. *while* = vienlaikus."
     ],
-    "signals": "*when, as soon as, until, before, after, while, by the time* (kad, līdzko, līdz, pirms, pēc, kamēr)",
+    "signals": "*then, after that, when, as soon as, until, before, after, while, during, by the time* (tad, pēc tam, kad, līdzko, līdz, pirms, pēc, kamēr)",
     "v2": {
      "choice": {
+      "stack": "rows",
       "cols": [
-       "when",
-       "as soon as",
-       "until",
-       "before / after",
-       "while"
+       "Forma",
+       "Piemērs"
       ],
       "rows": [
        [
-        "Nozīme",
-        "tajā laikā || *I'll call you [[when]] I arrive.*",
-        "tūlīt || *I'll call you [[as soon as]] I arrive.*",
-        "līdz tam brīdim || *Wait here [[until]] I come back.*",
-        "kas notiek pirmais || *Finish this [[before]] you go.*",
-        "vienlaikus || *I'll read [[while]] I wait.*"
+        "Viena pēc otras",
+        "**then / after that**: nākamā darbība, teikuma sākumā",
+        "*I had a shower. [[Then]] I made breakfast.*"
+       ],
+       [
+        "",
+        "**before / after** + lietvārds, **-ing** vai teik. priekšmets + darbības vārds",
+        "*[[before]] work* ;; *[[before]] going* ;; *[[before]] I go*"
+       ],
+       [
+        "Vienlaikus",
+        "**while** + teik. priekšmets + darbības vārds; **during** + lietvārds",
+        "*I read the news [[while]] I was waiting.* ;; *I fell asleep [[during]] the film.*"
+       ],
+       [
+        "Nākotne",
+        "**when / as soon as / before / after** + **Present Simple**",
+        "*I'll call you [[when]] I [[arrive]].* ;; *I'll call you [[as soon as]] I [[arrive]].*"
+       ],
+       [
+        "",
+        "**until** = līdz tam brīdim; **by** = ne vēlāk kā",
+        "*Wait here [[until]] I come back.* ;; *Finish it [[by]] five.*"
        ]
-      ],
-      "note": "Nozīme ir nākotne, bet aiz šiem vārdiem Present Simple: *I'll call you when I [[arrive]].*"
+      ]
      },
      "mistakes": [
       [
@@ -5888,8 +5948,9 @@ return json_decode(<<<'EF_JSON_END'
        "Latviski \"kad atbraukšu\" ir nākotnē, tāpēc, tulkojot burtiski, gribas *will*."
       ],
       [
-       "Wait here [[since]] I come back.",
-       "Wait here [[until]] I come back."
+       "I had a shower. [[After]], I made breakfast.",
+       "I had a shower. [[Then]] I made breakfast.",
+       "Tulkojot burtiski \"pēc tam\", iznāk *after*. Secīgām darbībām saka *then* vai *after that*."
       ],
       [
        "[[During]] I was cooking, the phone rang.",
@@ -5905,28 +5966,25 @@ return json_decode(<<<'EF_JSON_END'
        ]
       },
       {
-       "t": "*until* = līdz (visu laiku); *by* = ne vēlāk kā",
+       "t": "Komats, ja teikums sākas ar laika vārdu",
        "ex": [
-        "Stay here [[until]] five.",
-        "Finish it [[by]] five."
-       ]
-      },
-      {
-       "t": "*during* + lietvārds, *while* + teikums",
-       "ex": [
-        "[[During]] the film, I fell asleep.",
-        "[[While]] we were watching the film, I fell asleep."
+        "[[When]] I get home[[,]] I'll call you.",
+        "I'll call you [[when]] I get home."
        ]
       }
      ],
      "watch": [
-      "Komats, ja laika palīgteikums ir pirmais: *When I get home[[,]] I'll call you.*"
+      "*As soon as* = tūlīt, kad: *I'll text you [[as soon as]] I land.* *Until* nav *since*: *Wait here [[until]] I come back.*"
      ]
     },
     "watch": [
-     "Komats, ja laika palīgteikums ir pirmais: *When I get home[[,]] I'll call you.*"
+     "*As soon as* = tūlīt, kad: *I'll text you [[as soon as]] I land.* *Until* nav *since*: *Wait here [[until]] I come back.*"
     ]
-   }
+   },
+   "card": "B1",
+   "aka": [
+    "Time clauses (when, as soon as, until)"
+   ]
   },
   {
    "id": "question_tags",
@@ -6116,7 +6174,8 @@ return json_decode(<<<'EF_JSON_END'
      "*nothing* → *it*; *nobody, everybody* → *they*: *Nothing happened, [[did it]]? Everybody was there, [[weren't they]]?*",
      "Atbild par faktu: *A: You [[don't]] smoke, [[do]] you? B: [[No]], I [[don't]].* (= Nesmēķēju.) Latviski var teikt \"jā, nesmēķēju\", bet angliski *No, I don't*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "subject_object_q",
@@ -6292,7 +6351,8 @@ return json_decode(<<<'EF_JSON_END'
       "*Who* lieto ar vienskaitli, arī ja atbilde ir divi cilvēki: *A: Who [[lives]] here? B: Tom and Anna.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "verb_patterns",
@@ -6481,7 +6541,8 @@ return json_decode(<<<'EF_JSON_END'
       "*look forward to* + *-ing*: *I look forward to [[seeing]] you.*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "more_modals",
@@ -6675,7 +6736,8 @@ return json_decode(<<<'EF_JSON_END'
      "*needn't have* + 3. forma: izdarīji, bet nebija vajadzīgs: *We [[needn't have]] hurried. The train was late.*",
      "Runā saka *should've*, bet raksta *should [[have]]*, nekad *should of*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "passive_modals",
@@ -6862,7 +6924,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Modālais darbības vārds nemainās, un aiz tā nav *to*: *It [[must be]] done today.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "causative",
@@ -7043,7 +7106,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Papildinātājs ir pirms 3. formas: *I had [[my car]] [[washed]]*, nevis *I had washed my car* (tas nozīmē, ka mazgāju pats)."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "two_objects",
@@ -7206,7 +7270,8 @@ return json_decode(<<<'EF_JSON_END'
       "*lend* = aizdot, *borrow* = aizņemties: *Can you [[lend]] me a pen? Can I [[borrow]] your pen?*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "adj_ed_ing",
@@ -7377,7 +7442,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*annoyed with* (cilvēks), *annoyed about* (lieta): *I'm [[annoyed with]] him. I'm [[annoyed about]] the delay.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "adj_order",
@@ -7555,7 +7621,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Parasti ne vairāk kā trīs īpašības vārdi pirms lietvārda: *a [[nice]] [[new]] [[wooden]] table*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "adverbs",
@@ -7772,7 +7839,8 @@ return json_decode(<<<'EF_JSON_END'
       "*[[hardly]]* = gandrīz nemaz, *[[lately]]* = pēdējā laikā: *I can [[hardly]] hear you. I haven't seen him [[lately]].*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "so_such",
@@ -7949,7 +8017,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*such* + daudzskaitlis vai neskaitāms lietvārds ir bez *a / an*: *[[such]] bad weather*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "indefinite_pronouns",
@@ -8161,7 +8230,8 @@ return json_decode(<<<'EF_JSON_END'
      "*they / their* ar *somebody, everybody*: *Everybody did [[their]] best.*",
      "*every one* (divi vārdi) = katrs no grupas: *[[Every one]] of the tests was hard.*"
     ]
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "dep_prepositions",
@@ -8320,7 +8390,8 @@ return json_decode(<<<'EF_JSON_END'
       "*think about* = domāt par, *think of* = izdomāt: *I'm [[thinking about]] you. Can you [[think of]] a name?*"
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "agreement",
@@ -8534,7 +8605,8 @@ return json_decode(<<<'EF_JSON_END'
       "*each / every* + vienskaitlis: *Every room [[has]] a balcony.* *each of* the rooms (nevis *every of*). *all day* = visu dienu; *every day* = katru dienu; *my whole life* (nevis *my all life*)."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "irregular_plurals",
@@ -8759,7 +8831,8 @@ return json_decode(<<<'EF_JSON_END'
       "*jeans, trousers, glasses, scissors* ir daudzskaitlī: *My jeans [[are]] new.* Lai saskaitītu: *[[a pair of]] jeans, two pairs of scissors* (nevis *a jeans*)."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "prep_time_place",
@@ -8928,7 +9001,8 @@ return json_decode(<<<'EF_JSON_END'
       "Kustība: *to, into, out of, across* (pāri), *through* (cauri), *along* (gar), *past* (garām): *We walked [[along]] the river. Go [[past]] the bank.* *get to* + vieta, bet *go [[home]], get [[home]]* (bez *to*)."
      ]
     }
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "aux_verbs",
@@ -9161,7 +9235,8 @@ return json_decode(<<<'EF_JSON_END'
      "Palīgdarbības vārdam ir *-s* vai pagātne, pamatdarbības vārds paliek pamatformā: *[[Does]] she work? [[Did]] you go?*",
      "Aiz *do / does* nav *got*, un piederībai nelieto *-ing*: *[[Do]] you [[have]] a pen?* (nevis *Do you have got*). *She [[has got]] blue eyes.* (nevis *is having*)"
     ]
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "cmp_ps_pc",
@@ -9335,7 +9410,8 @@ return json_decode(<<<'EF_JSON_END'
      "Pabeigta vai atkārtota darbība pagātnē: Past Simple: *We [[walked]] home after the party. Kate [[watched]] TV a lot when she [[was]] ill.* Latviski abos gadījumos \"gājām, skatījās\", tāpēc ir grūti izvēlēties.",
      "*know, want, like* nelieto Continuous formā: *We [[knew]] each other well.*"
     ]
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "cmp_pp_ps",
@@ -9516,7 +9592,8 @@ return json_decode(<<<'EF_JSON_END'
      "Nav jaunums un nav nesen: Past Simple: *Mozart [[wrote]] more than 600 pieces of music.*",
      "Dzīve līdz šim: Present Perfect; pabeigta dzīves daļa: Past Simple: *I'[[ve never ridden]] a horse. I [[never rode]] a bike when I was a child.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "narrative",
@@ -9692,7 +9769,8 @@ return json_decode(<<<'EF_JSON_END'
      "Darbībām, kas stāstītas tādā secībā, kā notika, pietiek ar Past Simple: *She [[opened]] the door and [[went]] in.*",
      "*have seen* (pirms tagad) un *had seen* (pirms tā brīža pagātnē): *I'[[ve seen]] her before. I'[[d seen]] her before, but I [[couldn't remember]] where.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "narrative_b2",
@@ -9862,7 +9940,8 @@ return json_decode(<<<'EF_JSON_END'
      "*know, have* (= piederēt), *like* nelieto Continuous formā: *We'[[d known]] each other for years.*",
      "*for* saka, cik ilgi tas ilga: *We'[[d been playing]] tennis [[for]] half an hour when it [[started]] to rain.*"
     ]
-   }
+   },
+   "card": "B2"
   },
   {
    "id": "articles_b1",
@@ -10002,7 +10081,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*She plays [[the]] piano. We went to [[the]] cinema.*"
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "conj_basic",
@@ -10187,11 +10267,12 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*Because* teikuma sākumā: aiz šīs daļas liek komatu: *[[Because]] it was late, we left.* Tulkojot burtiski \"jo\", komatu liek arī pirms *because*, bet angliski tur komata nav."
     ]
-   }
+   },
+   "card": "A2"
   },
   {
    "id": "conj_linkers",
-   "label": "However, although, because of, then",
+   "label": "However, although, because of",
    "area": "clauses",
    "levels": [
     "A2.2",
@@ -10199,12 +10280,12 @@ return json_decode(<<<'EF_JSON_END'
    ],
    "rule": {
     "form": [
-     "*However,* starts a new sentence; *although* + subject + verb; *because of* + noun; *then* for the next action."
+     "Contrast: *However,* starts a new sentence; *although* + subject + verb. Reason: *because* + subject + verb; *because of* + noun."
     ],
     "use": [
      "*Although it was raining, we went out.*"
     ],
-    "signals": "*however, although, because of, then, while, as soon as*",
+    "signals": "*however, although, because, because of*",
     "example": "*The flight was late because of the snow.*",
     "v2": {
      "choice": {
@@ -10215,44 +10296,24 @@ return json_decode(<<<'EF_JSON_END'
       ],
       "rows": [
        [
-        "however",
-        "**contrast**: (.) **However,** + a new sentence",
+        "Contrast",
+        "**However,** + a new sentence, after a full stop",
         "*The hotel was old. [[However]], the staff were lovely.*"
        ],
        [
-        "although",
-        "**contrast**: although + subject + verb, **no comma after it**",
+        "",
+        "**although** + subject + verb, **no comma after it**",
         "*[[Although]] it was raining, we went out.*"
        ],
        [
-        "because",
-        "**reason**: because + subject + verb",
+        "Reason",
+        "**because** + subject + verb",
         "*The flight was late [[because]] it was snowing.*"
        ],
        [
-        "because of",
-        "**reason**: because of + **noun**",
+        "",
+        "**because of** + **noun**",
         "*The flight was late [[because of]] the snow.*"
-       ],
-       [
-        "before / after",
-        "+ noun / -ing / subject + verb",
-        "*[[before]] work* ;; *[[before]] going* ;; *[[before]] I go*"
-       ],
-       [
-        "then / after that",
-        "one action **after another**",
-        "*I had a shower. [[Then]] I made breakfast.*"
-       ],
-       [
-        "while",
-        "two actions **at the same time**",
-        "*I read the news [[while]] I was waiting.*"
-       ],
-       [
-        "when / as soon as",
-        "+ **present simple** for the future",
-        "*[[As soon as]] I get home, I'll call you.*"
        ]
       ]
      },
@@ -10262,12 +10323,8 @@ return json_decode(<<<'EF_JSON_END'
        "The flight was late [[because of]] the snow."
       ],
       [
-       "I had a shower. [[After]], I made breakfast.",
-       "I had a shower. [[Then]] I made breakfast."
-      ],
-      [
-       "When I [[will get]] home, I'll call you.",
-       "When I [[get]] home, I'll call you."
+       "[[However]] it was raining, we went out.",
+       "[[Although]] it was raining, we went out."
       ],
       [
        "[[Although,]] it was late, we stayed.",
@@ -10276,35 +10333,37 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "uses": [
       {
-       "t": "However starts a new sentence",
+       "t": "However starts a new sentence; although and but join two parts",
        "ex": [
-        "I'd love a dog. [[However]], my flat is too small."
+        "I'd love a dog. [[However]], my flat is too small.",
+        "[[Although]] I'd love a dog, my flat is too small.",
+        "I'd love a dog, [[but]] my flat is too small."
        ]
       },
       {
-       "t": "A comma when the sentence starts with before, after, while, when, although",
+       "t": "A comma when the sentence starts with although, because or because of",
        "ex": [
-        "[[Before]] I go to bed, I read.",
-        "I read [[before]] I go to bed."
+        "[[Because of]] the snow, the flight was late.",
+        "The flight was late [[because of]] the snow."
        ]
       }
      ],
      "watch": [
-      "*As soon as* = immediately when: *I'll text you [[as soon as]] I land.*"
+      "*However* has a comma after it; *although* does not: *[[However,]] the staff were lovely. [[Although]] it was old, …*"
      ]
     },
     "watch": [
-     "*As soon as* = immediately when: *I'll text you [[as soon as]] I land.*"
+     "*However* has a comma after it; *although* does not: *[[However,]] the staff were lovely. [[Although]] it was old, …*"
     ]
    },
    "rule_lv": {
     "form": [
-     "*However*, sāk *jaunu* teikumu; *although* + teikums; *because of* + lietvārds; *then* nākamajai darbībai."
+     "*Pretstats*: *However*, sāk *jaunu* teikumu; *although* + teikums. Iemesls: *because* + teikums; *because of* + lietvārds."
     ],
     "use": [
      "*Although it was raining, we went out.*"
     ],
-    "signals": "*however, although, because of, then, while*",
+    "signals": "*however, although, because, because of*",
     "v2": {
      "choice": {
       "stack": "rows",
@@ -10314,61 +10373,37 @@ return json_decode(<<<'EF_JSON_END'
       ],
       "rows": [
        [
-        "however",
-        "**pretstats**: (.) **However,** + jauns teikums",
+        "Pretstats",
+        "**However,** + jauns teikums, pēc punkta",
         "*The hotel was old. [[However]], the staff were lovely.*"
        ],
        [
-        "although",
-        "**pretstats**: although + teik. priekšmets + darbības vārds, **bez komata aiz tā**",
+        "",
+        "**although** + teik. priekšmets + darbības vārds, **bez komata aiz tā**",
         "*[[Although]] it was raining, we went out.*"
        ],
        [
-        "because",
-        "**iemesls**: because + teik. priekšmets + darbības vārds",
+        "Iemesls",
+        "**because** + teik. priekšmets + darbības vārds",
         "*The flight was late [[because]] it was snowing.*"
        ],
        [
-        "because of",
-        "**iemesls**: because of + **lietvārds**",
+        "",
+        "**because of** + **lietvārds**",
         "*The flight was late [[because of]] the snow.*"
-       ],
-       [
-        "before / after",
-        "+ lietvārds / -ing / teik. priekšmets + darbības vārds",
-        "*[[before]] work* ;; *[[before]] going* ;; *[[before]] I go*"
-       ],
-       [
-        "then / after that",
-        "viena darbība **pēc otras**",
-        "*I had a shower. [[Then]] I made breakfast.*"
-       ],
-       [
-        "while",
-        "divas darbības **vienlaikus**",
-        "*I read the news [[while]] I was waiting.*"
-       ],
-       [
-        "when / as soon as",
-        "+ **Present Simple** par nākotni",
-        "*[[As soon as]] I get home, I'll call you.*"
        ]
       ]
      },
      "mistakes": [
       [
        "The flight was late [[because]] the snow.",
-       "The flight was late [[because of]] the snow."
+       "The flight was late [[because of]] the snow.",
+       "Tulkojot burtiski \"sniega dēļ\" vai \"jo sniegs\", iznāk *because* + lietvārds. Pirms lietvārda angliski saka *because of*."
       ],
       [
-       "I had a shower. [[After]], I made breakfast.",
-       "I had a shower. [[Then]] I made breakfast.",
-       "Tulkojot burtiski \"pēc tam\", iznāk *after*. Secīgām darbībām saka *then* vai *after that*."
-      ],
-      [
-       "When I [[will get]] home, I'll call you.",
-       "When I [[get]] home, I'll call you.",
-       "Tulkojot burtiski \"kad atnākšu\", iznāk *will*. Pēc *when* angliski lieto tagadni."
+       "[[However]] it was raining, we went out.",
+       "[[Although]] it was raining, we went out.",
+       "Tulkojot burtiski \"tomēr\" un \"lai gan\", abus jauc. *However* sāk jaunu teikumu, *although* savieno divas daļas."
       ],
       [
        "[[Although,]] it was late, we stayed.",
@@ -10377,27 +10412,33 @@ return json_decode(<<<'EF_JSON_END'
      ],
      "uses": [
       {
-       "t": "However sāk jaunu teikumu",
+       "t": "However sāk jaunu teikumu; although un but savieno divas daļas",
        "ex": [
-        "I'd love a dog. [[However]], my flat is too small."
+        "I'd love a dog. [[However]], my flat is too small.",
+        "[[Although]] I'd love a dog, my flat is too small.",
+        "I'd love a dog, [[but]] my flat is too small."
        ]
       },
       {
-       "t": "Komats, ja teikums sākas ar before, after, while, when, although",
+       "t": "Komats, ja teikums sākas ar although, because vai because of",
        "ex": [
-        "[[Before]] I go to bed, I read.",
-        "I read [[before]] I go to bed."
+        "[[Because of]] the snow, the flight was late.",
+        "The flight was late [[because of]] the snow."
        ]
       }
      ],
      "watch": [
-      "*As soon as* = tūlīt, kad: *I'll text you [[as soon as]] I land.*"
+      "Aiz *However* liek komatu, aiz *although* ne: *[[However,]] the staff were lovely. [[Although]] it was old, …*"
      ]
     },
     "watch": [
-     "*As soon as* = tūlīt, kad: *I'll text you [[as soon as]] I land.*"
+     "Aiz *However* liek komatu, aiz *although* ne: *[[However,]] the staff were lovely. [[Although]] it was old, …*"
     ]
-   }
+   },
+   "card": "A2",
+   "aka": [
+    "However, although, because of, then"
+   ]
   },
   {
    "id": "conj_clauses",
@@ -10619,7 +10660,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*despite* bez *of*, *in spite of* ar *of*: *[[despite]] the rain = [[in spite of]] the rain*."
     ]
-   }
+   },
+   "card": "B1"
   },
   {
    "id": "conj_b2",
@@ -10839,7 +10881,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "*whereas* salīdzina divus faktus, tas nenozīmē *although*: *[[Although]] it was late, we stayed.*"
     ]
-   }
+   },
+   "card": "B2"
   },
   {
    "id": "unreal_time",
@@ -11008,7 +11051,8 @@ return json_decode(<<<'EF_JSON_END'
     "watch": [
      "Pagātnes forma šeit runā par tagadni: *It's time we [[went]]* = mums tagad jāiet."
     ]
-   }
+   },
+   "card": "B2"
   }
  ],
  "bloom": {
@@ -11322,6 +11366,17 @@ return json_decode(<<<'EF_JSON_END'
    "IRR-PLURAL"
   ]
  },
+ "moves": [
+  {
+   "from": "conj_linkers",
+   "to": "time_clauses",
+   "points": [
+    "link_time",
+    "fut_time_clause",
+    "vp_prep_ing"
+   ]
+  }
+ ],
  "new_points": [
   {
    "id": "have_got",

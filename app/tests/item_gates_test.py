@@ -126,6 +126,7 @@ def task_hash(i):
     level = "B2.2" if str(i.get("level", "")).startswith("C1") else i.get("level")
     body = {k: i.get(k) for k in BLIND_FIELDS if i.get(k) is not None}
     body["level"] = level
+    if i.get("moved_from"): body["skill"] = i["moved_from"]   # a point moved to another topic (22 November) is the same task: no new check
     return hashlib.sha1(json.dumps(body, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
 
 
@@ -209,7 +210,7 @@ GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_w
 
 def key(i):
     body = i.get("correct") or i.get("sentence") or (" ; ".join(a + " = " + b for a, b in i["pairs"]) if i.get("pairs") else "") or ""
-    return " | ".join([i["skill"], i["level"], i["kind"], i["q"], body])
+    return " | ".join([i.get("moved_from") or i["skill"], i["level"], i["kind"], i["q"], body])   # the topic the prepared file names
 
 
 def main():

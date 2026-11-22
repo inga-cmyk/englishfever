@@ -7,6 +7,7 @@ import csv, glob, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 meta = json.load(open(os.path.join(ROOT, "app", "content", "meta.json")))
 lab = {s["label"]: s["id"] for s in meta["skills"]}
+lab.update({a: s["id"] for s in meta["skills"] for a in s.get("aka", [])})   # earlier names still used in the prepared files (22 November)
 LEARN = re.compile(r"^(Which sentence (means|is about|tells|is a |describes|shows|imagines|expresses|uses|does NOT express|has a finished|is passive)|What is the difference|What usually happens|Which (words|word) usually|Which verb is normally)", re.I)
 def role(kind, q, po, bank):
     if po or kind == "match": return "learn"

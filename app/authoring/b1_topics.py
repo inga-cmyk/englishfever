@@ -1,14 +1,14 @@
 """Eight topics that the B1 reference teaches and the bank did not have: rule cards (English marked with * for italics, Latvian plain) and their place in the topic list.
 Their tasks are added by the teacher on the Tasks page (CSV drafts in docs/task-drafts), so the topics stay hidden until they have approved tasks."""
 
-AREAS_NEW = [("nouns", "Nouns and articles"), ("clauses", "Joining ideas"), ("questions", "Question forms"), ("patterns", "Verb patterns")]
+AREAS_NEW = [("nouns", "Nouns and articles"), ("clauses", "Linking ideas"), ("questions", "Question forms"), ("patterns", "Verb patterns")]
 
 SKILLS_NEW = [
     ("used_to", "Used to and be used to", "active", ["A2.2", "B1.1", "B1.2"]),
     ("articles", "Articles: a, an, the", "nouns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: no article (art_zero), prepared tasks only (teacher, 14 November)
     ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.1", "A2.2", "B1.1"]),   # A2.1: a few / a little, countable and uncountable, prepared tasks only (teacher, 15 November, batch 5)
     ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["A2.2", "B1.1", "B1.2"]),
-    ("time_clauses", "Time clauses (when, as soon as, until)", "clauses", ["A2.2", "B1.1", "B1.2"]),
+    ("time_clauses", "Time words and clauses (then, while, when, until)", "conditionals", ["A2.2", "B1.1", "B1.2"]),   # with the conditionals, and the time words of conj_linkers moved here (teacher, 22 November; topic_layout.py)
     ("question_tags", "Question tags (isn't it? don't you?)", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("subject_object_q", "Subject and object questions", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("verb_patterns", "Verb patterns: -ing or to", "patterns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: like + -ing, want + to, prepared tasks only (teacher, 15 November, batch 5)
@@ -69,7 +69,7 @@ CARDS = {
                  "With *after* and *before* the Present Perfect is also possible: *I'll call you after I've finished.*"],
         "use": ["The main clause has *will / going to* or an order; the time clause has the present.",
                 "*when* = at that time. *as soon as* = immediately. *until* = up to that moment (*Wait here until I come back*). *before / after* = which happens first. *while* = at the same time."],
-        "signals": "*when, as soon as, until, before, after, while, by the time*",
+        "signals": "*then, after that, when, as soon as, until, before, after, while, during, by the time*",
         "example": "*I'll tell you the news as soon as I get home.*",
     },
     "question_tags": {
@@ -156,7 +156,7 @@ LV_CARDS = {
                  "Ar after un before iespējams arī Present Perfect: I'll call you after I've finished."],
         "use": ["Virsteikumā ir will / going to vai pavēle; laika palīgteikumā ir tagadne.",
                 "when = tajā laikā. as soon as = uzreiz. until = līdz tam brīdim (Wait here until I come back). before / after = kas notiek pirmais. while = vienlaikus."],
-        "signals": "when, as soon as, until, before, after, while, by the time (kad, līdzko, līdz, pirms, pēc, kamēr)",
+        "signals": "then, after that, when, as soon as, until, before, after, while, during, by the time (tad, pēc tam, kad, līdzko, līdz, pirms, pēc, kamēr)",
     },
     "question_tags": {
         "form": ["Apgalvojošs teikums, nolieguma tag: You like tea, don't you?",
@@ -580,7 +580,7 @@ LV_CARDS.update({
 # ───────── joining ideas (teacher, 2 November; scope from test-english.com A1, A2, B1, B1+; Murphy Units 64, 113) ─────────
 SKILLS_NEW.extend([
     ("conj_basic", "And, but, or, so, because", "clauses", ["A2.1", "A2.2"]),
-    ("conj_linkers", "However, although, because of, then", "clauses", ["A2.2", "B1.1"]),
+    ("conj_linkers", "However, although, because of", "clauses", ["A2.2", "B1.1"]),   # then / while / before: now in time_clauses (teacher, 22 November)
     ("conj_clauses", "Contrast, purpose and reason (although, despite, so that)", "clauses", ["A2.2", "B1.1", "B1.2", "B2.1"]),   # A2.2: purpose with to and for, prepared tasks only (teacher, 15 November, batch 5)
 ])
 ABBR_NEW.update({"conj_basic": "cj1", "conj_linkers": "cj2", "conj_clauses": "cj3"})
@@ -588,8 +588,8 @@ CARDS.update({
     "conj_basic": {"form": ["*and* = similar information, *but* = contrast, *or* = choice, *so* = result, *because* = reason."],
                    "use": ["*The shop was closed, so I went home. I went home because the shop was closed.*"], "signals": "*and, but, or, so, because*",
                    "example": "*It was late, so we left.*"},
-    "conj_linkers": {"form": ["*However,* starts a new sentence; *although* + subject + verb; *because of* + noun; *then* for the next action."],
-                     "use": ["*Although it was raining, we went out.*"], "signals": "*however, although, because of, then, while, as soon as*",
+    "conj_linkers": {"form": ["Contrast: *However,* starts a new sentence; *although* + subject + verb. Reason: *because* + subject + verb; *because of* + noun."],
+                     "use": ["*Although it was raining, we went out.*"], "signals": "*however, although, because, because of*",
                      "example": "*The flight was late because of the snow.*"},
     "conj_clauses": {"form": ["Contrast: *although* + clause, *despite* + noun or -ing. Purpose: *to*, *so that* + could / would, *for* + noun. Reason: *as, since*, *due to* + noun."],
                      "use": ["*We went out despite the rain.*"], "signals": "*although, even though, despite, in spite of, so that, in order to, due to*",
@@ -597,7 +597,7 @@ CARDS.update({
 })
 LV_CARDS.update({
     "conj_basic": {"form": ["and = līdzīga informācija, but = pretstats, or = izvēle, so = rezultāts, because = iemesls."], "use": ["It was late, so we left."], "signals": "and, but, or, so, because"},
-    "conj_linkers": {"form": ["However, sāk jaunu teikumu; although + teikums; because of + lietvārds; then nākamajai darbībai."], "use": ["Although it was raining, we went out."], "signals": "however, although, because of, then, while"},
+    "conj_linkers": {"form": ["Pretstats: However, sāk jaunu teikumu; although + teikums. Iemesls: because + teikums; because of + lietvārds."], "use": ["Although it was raining, we went out."], "signals": "however, although, because, because of"},
     "conj_clauses": {"form": ["Pretstats: although + teikums, despite + lietvārds vai -ing. Nolūks: to, so that + could / would, for + lietvārds. Iemesls: as, since, due to + lietvārds."], "use": ["We went out despite the rain."], "signals": "although, despite, so that, in order to, due to"},
 })
 SKILLS_NEW.append(("conj_b2", "Contrast, purpose, reason and result (whereas, in case, therefore)", "clauses", ["B2.1", "B2.2"]))

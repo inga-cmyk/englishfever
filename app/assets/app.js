@@ -21,6 +21,11 @@
   /** The level scale, the test ladder, the test result and the level picker: the app's top level is called Top, not C1. */
   function lvTop(l) { var r = String(l === null || l === undefined ? '' : l), x = r.replace(/\.\d$/, ''); return (x === 'C1' || r === 'B2.2') ? 'Top' : x; }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
+  /** One level per topic card, A2, B1 or B2 (teacher, 22 November; authoring/topic_layout.py). The tasks keep their own levels. */
+  function cardLevel(s) { var m = (state.meta && skillById(s.id)) || s; return m.card || levelRange(m); }
+  function byCard(a, b) { return cardLevel(a) < cardLevel(b) ? -1 : cardLevel(a) > cardLevel(b) ? 1 : 0; }
+  /** A topic in a group: its own group, or a second one where learners look for it (indirect questions under Question forms). */
+  function inArea(s, aid) { var m = skillById(s.id) || s; return m.area === aid || (m.also_areas || []).indexOf(aid) >= 0; }
   /** The englishfever.com student dashboard (config dashboard_url), or the website home page. */
   var PROMPT_SPLIT = /^((?:Choose|Make|Use|Rewrite|Complete|Start|Imagine|Add|Ask|Give|Put|Change|Write|Turn|Report|Say|Correct|Fill|Match|Join|Finish|Answer|Decide|Find|Rephrase|Transform|Reorder|Order)[^:\n]{0,120}?):\s+([\s\S]*\p{L}[\s\S]*)$/u;
   // the main site: the configured address, else the root of the dashboard / registration address
@@ -844,7 +849,7 @@
     function draw() {
       var high = showHigh(), hidden = 0, saved = openAreas();   // hidden = topics too advanced for this learner, whether shown or not
       var areas = state.meta.areas.map(function (a) {
-        var all = d.skills.filter(function (s) { return s.area === a.id; });
+        var all = d.skills.filter(function (s) { return s.area === a.id; }).sort(byCard);
         var list = all.filter(function (s) { return high || inReach(s, d); });
         hidden += all.filter(function (s) { return !inReach(s, d); }).length;
         if (!list.length) return null;
@@ -871,7 +876,7 @@
   function skillCard(s, d) {
     var go = h('button', { class: 'btn ghost small', type: 'button', onclick: function () { startTopic(go, s, d); } }, 'Practise');
     return h('div', { class: 'skill' },
-      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, levelRange(s))),
+      h('div', { class: 'top' }, h('div', null, h('div', { class: 'name' }, s.label), h('div', { class: 'small muted' }, cardLevel(s))),
         s.level_est ? h('span', { class: 'pill dark', title: 'Your estimated level in this topic' }, '≈ ' + lv(s.level_est)) : h('span', { class: 'pill' }, s.n ? 'Started' : 'New')),
       s.n ? h('div', { class: 'meter green', 'aria-label': 'Progress', title: 'Progress in this topic' }, h('i', { style: 'width:' + Math.round(100 * (s.progress || 0)) + '%' })) : null,   // a green progress line, none before the first answer (teacher, 3 November)
       h('div', { class: 'row between' }, h('span', { class: 'small muted' }, s.n ? s.n + ' done · ' + s.accuracy + '% correct' : 'Not started'),
@@ -1167,7 +1172,7 @@
     var openMap = {};   // areas start closed, except the ones with chosen topics
     function group(area) {
       // the New group shows new topics at every level (a C1 topic was hidden at the learner's B2; teacher, 4 November)
-      var list = state.meta.skills.filter(function (s) { return area.id === '_new' ? (isNewTopic(s.id) && countAll(s) > 0) : (s.area === area.id && countAt(s) > 0); });
+      var list = state.meta.skills.filter(function (s) { return area.id === '_new' ? (isNewTopic(s.id) && countAll(s) > 0) : (inArea(s, area.id) && countAt(s) > 0); }).sort(byCard);
       if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : (n > 0 || area.id === '_new') },
@@ -2072,7 +2077,7 @@
   function topicTile(s, extra) {
     var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
     return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
-      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, levelRange(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
+      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, cardLevel(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
       h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),   // no "New" label on the tile: the New group says it (teacher, 3 November)
       tileProgress(s));
   }
@@ -2131,7 +2136,7 @@
         return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, i));
       }))) : null,
       state.meta.areas.map(function (a, i) {   // tiles by area; a tile opens its rule card
-        var list = state.meta.skills.filter(function (s) { return s.area === a.id; });
+        var list = state.meta.skills.filter(function (s) { return inArea(s, a.id); }).sort(byCard);
         if (!list.length) return null;
         return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'tilegrid' }, list.map(function (s) {
           return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { rulesModal(s.id); } }, topicTile(s));

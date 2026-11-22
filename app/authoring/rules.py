@@ -5,7 +5,7 @@ AREAS = [
     ("passive", "Passive tenses"),
     ("modals", "Modal verbs"),
     ("comparing", "Comparing things"),
-    ("conditionals", "Conditionals"),
+    ("conditionals", "Conditionals and time clauses"),
     ("reported", "Reported speech"),
     ("indirect", "Questions inside sentences"),
 ]

@@ -1,0 +1,138 @@
+[
+{
+"id": "c1-1d-001",
+"answer": [
+"am measuring"
+],
+"other_correct": [
+[
+"'m measuring"
+],
+[
+"am measuring up"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present continuous for an action in progress is B1; not C1 in point or vocabulary.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-002",
+"answer": [
+"measures"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Stative use of 'measure' is B2 at most; sentence is simple for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-003",
+"answer": [
+"is considering"
+],
+"other_correct": [
+[
+"has been considering"
+],
+[
+"may be considering"
+],
+[
+"might be considering"
+],
+[
+"'s considering"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No cue that rules out has been/may be considering; 'hasn't made up her mind yet' allows them.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-004",
+"answer": "You're constantly changing your mind!",
+"other_correct": [
+"You are constantly changing your mind.",
+"You constantly change your mind.",
+"You're constantly changing your mind about what you want.",
+"You're constantly changing your mind, aren't you?",
+"You've constantly changed your mind."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which tense/structure is wanted, so simple present 'You constantly change your mind' is also correct; 'constantly' + 'change your mind' nearly gives the answer away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-005",
+"answer": [
+"am",
+"driving"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for C1 (B1 point).",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-006",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Word-order slip is easy; B1/B2 level for C1.",
+"sense_problem": "'forever is borrowing' is a form few learners would write; also 'forever' (always) is dated/odd. The mistake is obvious."
+},
+{
+"id": "c1-1d-007",
+"answer": "you're constantly interrupting me when I'm speaking",
+"other_correct": [
+"when I'm speaking you're constantly interrupting me",
+"you're interrupting me constantly when I'm speaking",
+"when I'm speaking you're interrupting me constantly",
+"constantly you're interrupting me when I'm speaking"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No context or complaint given, so many orders are possible; no capital/comma cues. Easy for C1.",
+"level_problem": "Word ordering of a simple sentence is B1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-008",
+"answer": "This old suitcase is weighing nearly five kilos.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Stative vs dynamic verbs is B1/B2; not C1.",
+"sense_problem": "Sentence 4 ('feels lovely') is correct and a safe distractor but all three correct sentences are mild; fine."
+},
+{
+"id": "c1-1d-009",
+"answer": [
+"apologise"
+],
+"other_correct": [
+[
+"apologize"
+],
+[
+"are apologising"
+],
+[
+"do apologise"
+],
+[
+"would like to apologise"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No cue for formal register or simple vs continuous: 'are apologising' is also correct (less usual).",
+"level_problem": "Performative present is a real C1 nuance, but the single-word gap does not test it clearly.",
+"sense_problem": ""
+}
+]

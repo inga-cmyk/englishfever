@@ -2092,7 +2092,7 @@
     ind_polite: 'Could you tell me where the cake **is**?', ind_advanced: "I don't know **what to say**.",
     used_to: 'I **used to** read books. Now I read comments.', articles: '**An** elephant walked into **a** café.',
     quantity: "There's **not enough** coffee in this world.", relative_clauses: 'I have a friend **who** talks to plants.',
-    time_clauses: "I'll call you **when** I **wake up**.", question_tags: "You love grammar, **don't you**?",
+    time_clauses: "I'll call you **when** I **wake up**.", adv_present: "I**'m measuring** the kitchen. It **measures** three by four.", question_tags: "You love grammar, **don't you**?",
     subject_object_q: '**Who** ate my sandwich?', verb_patterns: 'I enjoy **doing** nothing.',
     more_modals: 'I **might** go to the gym tomorrow.', passive_modals: 'Some meetings **should be replaced** by emails.',
     causative: 'I **had** my CV **written** by AI. Oops.', two_objects: 'Give **me** the chocolate.',

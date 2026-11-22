@@ -2004,6 +2004,11 @@
 "round": "r20-2",
 "task": "r20-2-045"
 },
+"4683d087c16f1f64": {
+"gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.",
+"round": "c1-1d",
+"task": "c1-1d-008"
+},
 "46ebd51633b61002": {
 "gate_key": "unreal_time | B1.2 | text | Start with *I'd rather*: I prefer to cook at home. | ",
 "round": "r8",
@@ -2519,6 +2524,11 @@
 "round": "r13",
 "task": "r13-111"
 },
+"5c3aa641628f1fe0": {
+"gate_key": "adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ",
+"round": "c1-1d",
+"task": "c1-1d-002"
+},
 "5c6b41818569dc76": {
 "gate_key": "quantity | A2.1 | gap | Write *a few* or *a little*: Can I have ___ milk in my tea? | ",
 "round": "r13",
@@ -2683,6 +2693,11 @@
 "gate_key": "adverbs | A2.2 | order | Put the words in order. | we had a very nice holiday",
 "round": "r13",
 "task": "r13-091"
+},
+"621ecf2c33e66e9e": {
+"gate_key": "adv_present | C1 | text | Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*. | ",
+"round": "c1-1d",
+"task": "c1-1d-004"
 },
 "62502ecfa23b1978": {
 "gate_key": "conj_b2 | B2.1 | text | Correct the mistake: Save a copy on a USB stick in case your laptop will crash. | ",
@@ -3984,6 +3999,11 @@
 "round": "r19b",
 "task": "r19b-001"
 },
+"92ac241d26051bba": {
+"gate_key": "adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | ",
+"round": "c1-1d",
+"task": "c1-1d-009"
+},
 "92af857b070d0379": {
 "gate_key": "irregular_plurals | A2.1 | mcq | Choose the correct option: We visited three ___ on our trip. | countries",
 "round": "r13",
@@ -4279,6 +4299,11 @@
 "round": "r20b-2",
 "task": "r20b-2-032"
 },
+"9c24c5efd386ea3f": {
+"gate_key": "adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ",
+"round": "c1-1d",
+"task": "c1-1d-001"
+},
 "9c53e937b02e27d9": {
 "gate_key": "cond_mixed | B2.2 | mcq | 'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace? | If I were",
 "round": "r20-1",
@@ -4288,6 +4313,11 @@
 "gate_key": "cond_advanced | B2.2 | mcq | Which sentence has a mistake? | If only I would have saved more money.",
 "round": "r20-2",
 "task": "r20-2-004"
+},
+"9cd533bce5769dba": {
+"gate_key": "adv_present | C1 | order | Put the words in order. | you're constantly interrupting me when I'm speaking",
+"round": "c1-1d",
+"task": "c1-1d-007"
 },
 "9cd9b2e9ab8f439e": {
 "gate_key": "present_continuous | B1.2 | gap | My parents ___ always ___ me when I'm going to find a better job. | ",
@@ -4449,10 +4479,20 @@
 "round": "r11",
 "task": "r11-049"
 },
+"a272688d616fdb4f": {
+"gate_key": "adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ",
+"round": "c1-1d",
+"task": "answers added"
+},
 "a29110451afcf5ed": {
 "gate_key": "cond_third | B2.1 | gap | She would have passed the exam if she ___ ___ harder. | ",
 "round": "r20-4",
 "task": "r20-4-003"
+},
+"a29bcd25512da8b6": {
+"gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.",
+"round": "c1-1d",
+"task": "c1-1d-006"
 },
 "a2b83023596e0b3b": {
 "gate_key": "ind_polite | B2.1 | gap | Could you tell me what time the museum ___? (open) | ",
@@ -4813,6 +4853,11 @@
 "gate_key": "unreal_time | B2.2 | mcq | Which sentence has a mistake? | I'd rather to cook at home than eat out.",
 "round": "r20b-1",
 "task": "r20b-1-053"
+},
+"ae2f23db526be53c": {
+"gate_key": "adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ",
+"round": "c1-1d",
+"task": "c1-1d-003"
 },
 "ae405572411c2558": {
 "gate_key": "rep_verbs | B2.2 | gap | They accused the company ___ the data of its users. (sell) | ",
@@ -5523,6 +5568,11 @@
 "gate_key": "verb_patterns | B1.1 | gap | I'd like ___ a table for four at eight o'clock, please. | ",
 "round": "r10",
 "task": "r10-047"
+},
+"c3fe50c476178663": {
+"gate_key": "adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ",
+"round": "c1-1d",
+"task": "answers added"
 },
 "c4071d423e826ac2": {
 "gate_key": "quantity | A2.1 | text | Make a yes/no question: There are some yoga classes on Sunday. | ",
@@ -6809,6 +6859,11 @@
 "round": "r20-6",
 "task": "r20-6-035"
 },
+"ef4b9b7532e03444": {
+"gate_key": "adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | ",
+"round": "c1-1d",
+"task": "answers added"
+},
 "ef7f442adb10a3db": {
 "gate_key": "quantity | B1.1 | gap | We haven't got ___ coffee left, so I'll buy some on the way home. | ",
 "round": "r10",
@@ -6913,6 +6968,11 @@
 "gate_key": "cond_first | B1.1 | gap | Write *if* or *when*: The bank might be closed on Saturday. ___ it is, I'll go on Monday. | ",
 "round": "r10",
 "task": "r10-010"
+},
+"f43f82eb8b2d82e5": {
+"gate_key": "adv_present | C1 | gap | Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | ",
+"round": "c1-1d",
+"task": "c1-1d-005"
 },
 "f44b14cdb3d28f8f": {
 "gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: Would you rather ___ tea or coffee? | have",

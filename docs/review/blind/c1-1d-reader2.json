@@ -1,0 +1,152 @@
+[
+{
+"id": "c1-1d-001",
+"answer": [
+"am measuring"
+],
+"other_correct": [
+[
+"'m measuring"
+],
+[
+"have been measuring"
+],
+[
+"'ve been measuring"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present continuous for a current action is B1; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-002",
+"answer": [
+"measures"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Stative vs dynamic 'measure' is a fine point, but a B1/B2 task rather than C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-003",
+"answer": [
+"is considering"
+],
+"other_correct": [
+[
+"'s considering"
+],
+[
+"has been considering"
+],
+[
+"'s been considering"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 at most.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-004",
+"answer": [
+"You're constantly changing your mind."
+],
+"other_correct": [
+"You are constantly changing your mind.",
+"You constantly change your mind.",
+"You've constantly changed your mind."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Learner has to know the intended form is the continuous; 'constantly change your mind' (simple) is also correct English, so the task does not force the complaint form. The quoted line does not need 'for the third time' to be solvable.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-005",
+"answer": [
+"don't",
+"drive"
+],
+"other_correct": [
+[
+"am",
+"driving"
+],
+[
+"'m",
+"driving"
+],
+[
+"do not",
+"drive"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two correct answers: 'don't ... drive' and 'am ... driving' (compare task 006, where 'I'm usually driving' is accepted as correct). The cue '(drive)' does not decide. Nothing in the sentence says habit or temporary.",
+"level_problem": "B1/B2 content.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-006",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'forever is borrowing' is an unusual word-order slip; a learner would more likely write 'forever borrowing' misplacement elsewhere. Fairly believable but rare."
+},
+{
+"id": "c1-1d-007",
+"answer": "you're constantly interrupting me when I'm speaking",
+"other_correct": [
+"when I'm speaking you're constantly interrupting me",
+"I'm speaking when you're constantly interrupting me"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital letters or punctuation on cards, so two natural orders (main clause first or 'when' clause first) are both correct; the third listed is grammatical but changes the meaning.",
+"level_problem": "B1 sentence length and structure; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-008",
+"answer": "This old suitcase is weighing nearly five kilos.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2-level point; not clearly C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1d-009",
+"answer": [
+"apologise"
+],
+"other_correct": [
+[
+"apologize"
+],
+[
+"are apologising"
+],
+[
+"are apologizing"
+],
+[
+"do apologise"
+],
+[
+"do apologize"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both simple ('We apologise', formal and normal) and continuous ('We are apologising') are correct; the task does not decide. American spelling 'apologize' also correct.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

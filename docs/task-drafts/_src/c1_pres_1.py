@@ -14,7 +14,7 @@ L = "C1"
 
 # ── x_state_cont: one verb, a state or an action ──
 # s1 home: measure = an action in progress
-gp(T, L, 3, "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)", "am measuring | 'm measuring | am going to measure | 'm going to measure",
+gp(T, L, 3, "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)", "am measuring | 'm measuring | am going to measure | 'm going to measure | am measuring up | 'm measuring up",
    "*measure* here is an action happening now (using a tape measure): present continuous, *I'm measuring*.",
    "*measure* te ir darbība, kas notiek tagad (mēra ar mērlenti): Present Continuous, *I'm measuring*.")
 # s2 home: measure = a state (the size)
@@ -23,7 +23,7 @@ gp(T, L, 3, "Our kitchen is tiny: it ___ only three metres by four. (measure)", 
    "*measure* te norāda izmēru, tas ir stāvoklis: Present Simple, *it measures*. Ilgstošo formu lieto tikai darbībai (kāds mēra).")
 # ── x_mental_cont: thinking verbs ──
 # m2 work: consider = think about, only continuous
-gp(T, L, 3, "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)", "is considering | 's considering | has been considering | 's been considering",
+gp(T, L, 3, "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)", "is considering | 's considering | has been considering | 's been considering | may be considering | might be considering",
    "*consider* in the meaning *think carefully about* is only used in the continuous: *she's considering taking early retirement*.",
    "*consider* nozīmē *rūpīgi apsvērt* lieto tikai ilgstošajā formā: *she's considering taking early retirement*.")
 # ── x_always_cont: characteristic behaviour, a routine in progress ──
@@ -60,7 +60,7 @@ mc(T, L, 4, "Which sentence has a mistake?", "This old suitcase is weighing near
    "*weigh* svara nozīmē ir stāvoklis: *This suitcase weighs 23 kilos*. *The vet is weighing the dog* ir darbība, "
    "tāpēc tur ilgstošā forma ir pareiza.")
 # p1 work: saying it is doing it (performative)
-gp(T, L, 3, "We ___ for the delay in replying to your email. (apologise)", "apologise | do apologise | apologize | do apologize",
+gp(T, L, 3, "We ___ for the delay in replying to your email. (apologise)", "apologise | do apologise | apologize | do apologize | would like to apologise | would like to apologize",
    "When the words themselves are the act (apologising by saying it), use the present simple: *We apologise for the delay*, "
    "not *We're apologising*.",
    "Ja paši vārdi ir darbība (atvainojamies, to sakot), lieto Present Simple: *We apologise for the delay*, nevis *We're apologising*.")

@@ -141,7 +141,7 @@ final class Engine
         }
         if ($mode === 'placement') {
             // placement: climb level by level (A2, B1, B2 ...) in blocks of 3 questions, then fine-tune around the ability found
-            $ladder = array_values(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])));
+            $ladder = array_values(array_filter(array_unique(array_map(fn($l) => substr($l, 0, 2), $meta['levels'])), fn($l) => $l !== 'C1'));   // no C1 in the level test (teacher, 22 November: one C1 topic, practice only)
             // start at the level the learner gave (teacher, 6 November: tasks far too easy or too hard lower engagement); "I don't know": the first level
             $sl = (string) Db::val('SELECT self_level FROM users WHERE id = ?', [$uid]);
             if ($sl === 'C1') $sl = end($ladder);   // the app has no C1 any more: the top level (teacher, 12 November, U3 A)

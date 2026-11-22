@@ -17,9 +17,10 @@
   function feat(name) { return !(state.user && state.user.cond && state.user.cond[name] === 'off'); }
   /** Learners see A2, B1, B2, C1; the half-levels (A2.1, A2.2 ...) only steer the difficulty inside the app. */
   // the app's C1 topics are B2 grammar (teacher, 12 November, U3 A): topics and tasks show B2.2, the top level is called Top; data keep C1.1 / C1.2
-  function lv(l) { var x = String(l === null || l === undefined ? '' : l).replace(/\.\d$/, ''); return x === 'C1' ? 'B2.2' : x; }
+  // 22 November (teacher): C1 is a real level again, written "C1" (no halves); old data C1.1 / C1.2 is still B2.2
+  function lv(l) { var r = String(l === null || l === undefined ? '' : l); if (/^C1\.\d$/.test(r)) return 'B2.2'; return r.replace(/\.\d$/, ''); }
   /** The level scale, the test ladder, the test result and the level picker: the app's top level is called Top, not C1. */
-  function lvTop(l) { var r = String(l === null || l === undefined ? '' : l), x = r.replace(/\.\d$/, ''); return (x === 'C1' || r === 'B2.2') ? 'Top' : x; }
+  function lvTop(l) { var r = String(l === null || l === undefined ? '' : l), x = r.replace(/\.\d$/, ''); return r === 'C1' ? 'C1' : ((x === 'C1' || r === 'B2.2') ? 'Top' : x); }
   function levelRange(s) { var a = lv(s.levels[0]), b = lv(s.levels[s.levels.length - 1]); return a === b ? a : a + '–' + b; }
   /** One level per topic card, A2, B1 or B2 (teacher, 22 November; authoring/topic_layout.py). The tasks keep their own levels. */
   function cardLevel(s) { var m = (state.meta && skillById(s.id)) || s; return m.card || levelRange(m); }
@@ -647,7 +648,7 @@
   /** Topics added lately (teacher, 3 November): a "New" group on the Topics page and a small label on their tiles for 45 days. */
   // 15 November (teacher, option A): the New group shows the new grammar points (state.meta.new_points, each with its own card and
   // practice of that point only) instead of these topics; the server sends a point only while it is new and has tasks
-  var NEW_TOPICS = {};
+  var NEW_TOPICS = { adv_present: '2026-11-22' };   // the first C1 topic is also under New (teacher, 22 November)
   function isNewTopic(id) { var d = NEW_TOPICS[id]; return !!d && (Date.now() - Date.parse(d)) < 45 * 86400000; }
 
   /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
@@ -1212,7 +1213,11 @@
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : (n > 0 || area.id === '_new') },
         h('summary', null, h('span', { class: 'h3' }, area.label), h('span', { class: 'pill', style: 'margin-left:8px;' + (n ? '' : 'display:none') }, n + ' chosen')),
-        h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': area.label }, list.map(function (s) {
+        h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': area.label }, list.map(topicChoice)));
+      det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
+      return det;
+    }
+    function topicChoice(s) {   // a topic tile that is ticked to practise it
           var inp = h('input', { type: 'checkbox', value: s.id, checked: !!selected[s.id], onchange: function () {
             selected[s.id] = inp.checked;
             if (inp.checked && countAt(s) === 0) {   // a new topic outside the chosen levels: choose its levels too
@@ -1222,21 +1227,20 @@
           } });
           var rule = h('button', { type: 'button', class: 'ttile-rule', 'aria-label': 'Rule: ' + s.label, title: 'Rule', onclick: function (e) { e.preventDefault(); e.stopPropagation(); rulesModal(s.id); } }, '?');   // a quick look at the rule before practising
           return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
-        })));
-      det.addEventListener('toggle', function () { openMap[area.id] = det.open; });
-      return det;
     }
     function newPointsGroup() {   // the New group: one tile per new grammar point; a tile opens its card, whose button starts that point
       var all = state.meta.new_points || [];
       // only the points of the chosen level (A2 / B1 / B2; a point's levels are A2.1, A2.2 …), closed until opened (teacher, 16 November)
       var ch = chosenLevels();
       var here = all.filter(function (p) { return (p.levels || []).some(function (l) { return ch.indexOf(full(l)) >= 0; }); });
-      if (!here.length) return null;
+      var topics = state.meta.skills.filter(function (s) { return isNewTopic(s.id) && countAll(s) > 0; });   // new topics, at every level (22 November)
+      if (!here.length && !topics.length) return null;
       var det = h('details', { class: 'picker-group', open: ('_new' in openMap) ? openMap._new : false },
-        h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(here.length))),
-        h('div', { class: 'tilegrid' }, here.map(function (p) {
+        h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(here.length + topics.length))),
+        topics.length ? h('div', { class: 'chipsel tilesel tilegrid', role: 'group', 'aria-label': 'New topics' }, topics.map(topicChoice)) : null,
+        here.length ? h('div', { class: 'tilegrid' }, here.map(function (p) {
           return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, all.indexOf(p)));
-        })));
+        })) : null);
       det.addEventListener('toggle', function () { openMap._new = det.open; });
       return det;
     }

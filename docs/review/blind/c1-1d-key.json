@@ -1,0 +1,337 @@
+{
+ "c1-1d-001": {
+  "hash": "9c24c5efd386ea3f",
+  "gate_key": "adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ",
+  "src": "c1-pres-1.csv:2",
+  "point": "x_state_cont",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am measuring",
+     "'m measuring",
+     "am going to measure",
+     "'m going to measure"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2149",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)",
+   "why": "*measure* here is an action happening now (using a tape measure): present continuous, *I'm measuring*.",
+   "why_lv": "*measure te* ir darbība, kas notiek tagad (mēra ar mērlenti): Present Continuous, *I'm measuring.*",
+   "answers": [
+    [
+     "am measuring",
+     "'m measuring",
+     "am going to measure",
+     "'m going to measure"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_state_cont",
+   "src": "c1-pres-1.csv:2"
+  }
+ },
+ "c1-1d-002": {
+  "hash": "5c3aa641628f1fe0",
+  "gate_key": "adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ",
+  "src": "c1-pres-1.csv:3",
+  "point": "x_state_cont",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "measures"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2150",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our kitchen is tiny: it ___ only three metres by four. (measure)",
+   "why": "*measure* here gives the size, a state: present simple, *it measures*. The continuous is used only for the action of measuring.",
+   "why_lv": "*measure te* norāda izmēru, tas ir stāvoklis: Present Simple, *it measures*. Ilgstošo formu lieto *tikai* darbībai (kāds mēra).",
+   "answers": [
+    [
+     "measures"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_state_cont",
+   "src": "c1-pres-1.csv:3"
+  }
+ },
+ "c1-1d-003": {
+  "hash": "ae2f23db526be53c",
+  "gate_key": "adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ",
+  "src": "c1-pres-1.csv:4",
+  "point": "x_mental_cont",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is considering",
+     "'s considering",
+     "has been considering",
+     "'s been considering"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2151",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)",
+   "why": "*consider* in the meaning *think carefully about* is only used in the continuous: *she's considering taking early retirement*.",
+   "why_lv": "*consider* nozīmē rūpīgi apsvērt lieto *tikai* ilgstošajā formā: *she's considering taking early retirement*.",
+   "answers": [
+    [
+     "is considering",
+     "'s considering",
+     "has been considering",
+     "'s been considering"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_mental_cont",
+   "src": "c1-pres-1.csv:4"
+  }
+ },
+ "c1-1d-004": {
+  "hash": "621ecf2c33e66e9e",
+  "gate_key": "adv_present | C1 | text | Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*. | ",
+  "src": "c1-pres-1.csv:5",
+  "point": "x_always_cont",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "You're constantly changing your mind.",
+     "You are constantly changing your mind.",
+     "You constantly change your mind."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2152",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*.",
+   "why": "*be constantly* + *-ing* shows that something happens so often that it is typical of the person, often with irritation: *You're constantly changing your mind.*",
+   "why_lv": "*be constantly + -ing* rāda, ka kaut kas notiek tik bieži, ka tas ir raksturīgi cilvēkam, bieži ar *nepatiku*: *You're constantly changing your mind.*",
+   "answers": [
+    [
+     "You're constantly changing your mind.",
+     "You are constantly changing your mind.",
+     "You constantly change your mind."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_always_cont",
+   "src": "c1-pres-1.csv:5"
+  }
+ },
+ "c1-1d-005": {
+  "hash": "f43f82eb8b2d82e5",
+  "gate_key": "adv_present | C1 | gap | Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | ",
+  "src": "c1-pres-1.csv:6",
+  "point": "x_always_cont",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "driving"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2153",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive)",
+   "why": "*usually* + present continuous: something we regularly do that is in progress at that time (*I'm usually driving to work then*).",
+   "why_lv": "*usually* + Present Continuous: *ierasta* darbība, kas tajā laikā jau notiek (*I'm usually driving to work then*).",
+   "answers": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "driving"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_always_cont",
+   "src": "c1-pres-1.csv:6"
+  }
+ },
+ "c1-1d-006": {
+  "hash": "a29bcd25512da8b6",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.",
+  "src": "c1-pres-1.csv:7",
+  "point": "x_always_cont",
+  "key": {
+   "kind": "mcq",
+   "correct": "My neighbour forever is borrowing my tools.",
+   "wrong": [
+    "He's always offering to help with the shopping.",
+    "At eight I'm usually driving to work.",
+    "She constantly checks her phone in meetings."
+   ]
+  },
+  "item": {
+   "id": "c-2154",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*forever*, *always*, *constantly* go after *is*: *My neighbour is forever borrowing my tools.*",
+   "why_lv": "*forever, always, constantly* stāv aiz *is*: *My neighbour is forever borrowing my tools.*",
+   "correct": "My neighbour forever is borrowing my tools.",
+   "wrong": [
+    "He's always offering to help with the shopping.",
+    "At eight I'm usually driving to work.",
+    "She constantly checks her phone in meetings."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_always_cont",
+   "src": "c1-pres-1.csv:7"
+  }
+ },
+ "c1-1d-007": {
+  "hash": "9cd533bce5769dba",
+  "gate_key": "adv_present | C1 | order | Put the words in order. | you're constantly interrupting me when I'm speaking",
+  "src": "c1-pres-1.csv:8",
+  "point": "x_always_cont",
+  "key": {
+   "kind": "order",
+   "sentence": "you're constantly interrupting me when I'm speaking",
+   "also": [
+    "when I'm speaking you're constantly interrupting me",
+    "you're interrupting me constantly when I'm speaking",
+    "when I'm speaking you're interrupting me constantly"
+   ]
+  },
+  "item": {
+   "id": "c-2155",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*constantly* goes between *you're* and the *-ing* form; the *when*-part can come first or second.",
+   "why_lv": "*constantly* stāv starp *you're* un *-ing* formu; daļa ar *when* var būt pirmā vai otrā.",
+   "sentence": "you're constantly interrupting me when I'm speaking",
+   "answers": [
+    [
+     "you're constantly interrupting me when I'm speaking",
+     "when I'm speaking you're constantly interrupting me",
+     "you're interrupting me constantly when I'm speaking",
+     "when I'm speaking you're interrupting me constantly"
+    ]
+   ],
+   "role": "check",
+   "point": "x_always_cont",
+   "src": "c1-pres-1.csv:8"
+  }
+ },
+ "c1-1d-008": {
+  "hash": "4683d087c16f1f64",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.",
+  "src": "c1-pres-1.csv:9",
+  "point": "x_state_cont",
+  "key": {
+   "kind": "mcq",
+   "correct": "This old suitcase is weighing nearly five kilos.",
+   "wrong": [
+    "The vet is weighing the dog right now.",
+    "This scarf feels lovely and soft.",
+    "They're fitting a new kitchen in our flat this week."
+   ]
+  },
+  "item": {
+   "id": "c-2156",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*weigh* for the weight of something is a state: *This suitcase weighs 23 kilos*. *The vet is weighing the dog* is the action, so the continuous is right there.",
+   "why_lv": "*weigh svara* nozīmē ir stāvoklis: *This suitcase weighs 23 kilos.* *The vet is weighing the dog* ir darbība, tāpēc tur Continuous forma ir *pareiza*.",
+   "correct": "This old suitcase is weighing nearly five kilos.",
+   "wrong": [
+    "The vet is weighing the dog right now.",
+    "This scarf feels lovely and soft.",
+    "They're fitting a new kitchen in our flat this week."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_state_cont",
+   "src": "c1-pres-1.csv:9"
+  }
+ },
+ "c1-1d-009": {
+  "hash": "92ac241d26051bba",
+  "gate_key": "adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | ",
+  "src": "c1-pres-1.csv:10",
+  "point": "x_performative",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "apologise",
+     "do apologise",
+     "apologize",
+     "do apologize"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2157",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We ___ for the delay in replying to your email. (apologise)",
+   "why": "When the words themselves are the act (apologising by saying it), use the present simple: *We apologise for the delay*, not *We're apologising*.",
+   "why_lv": "Ja paši vārdi ir darbība (*atvainojamies, to sakot*), lieto Present Simple: *We apologise for the delay*, nevis *We're apologising.*",
+   "answers": [
+    [
+     "apologise",
+     "do apologise",
+     "apologize",
+     "do apologize"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_performative",
+   "src": "c1-pres-1.csv:10"
+  }
+ }
+}

@@ -1,0 +1,84 @@
+[
+ {
+  "id": "c1-1d-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1d-002",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Our kitchen is tiny: it ___ only three metres by four. (measure)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1d-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1d-004",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-1d-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1d-006",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "He's always offering to help with the shopping.",
+   "At eight I'm usually driving to work.",
+   "She constantly checks her phone in meetings.",
+   "My neighbour forever is borrowing my tools."
+  ]
+ },
+ {
+  "id": "c1-1d-007",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "when",
+   "speaking",
+   "interrupting",
+   "me",
+   "you're",
+   "I'm",
+   "constantly"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-1d-008",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The vet is weighing the dog right now.",
+   "This old suitcase is weighing nearly five kilos.",
+   "They're fitting a new kitchen in our flat this week.",
+   "This scarf feels lovely and soft."
+  ]
+ },
+ {
+  "id": "c1-1d-009",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "We ___ for the delay in replying to your email. (apologise)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

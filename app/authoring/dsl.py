@@ -22,7 +22,7 @@ apostrophes, contractions such as n't / 're / 'll / 've / 'm expanded, no final 
 ITEMS = []
 _counter = {}
 
-LEVELS = ["A2.1", "A2.2", "B1.1", "B1.2", "B2.1", "B2.2", "C1.1", "C1.2"]
+LEVELS = ["A2.1", "A2.2", "B1.1", "B1.2", "B2.1", "B2.2", "C1.1", "C1.2", "C1"]   # "C1": the real C1 level (22 November); C1.1 / C1.2: old labels, read as B2.2
 
 ABBR = {
     "present_simple": "ps", "present_continuous": "pc", "past_simple": "pa",

@@ -17302,5 +17302,41 @@
 "narrative_b2 | B2.2 | gap | I hope the meeting ends soon. We ___ for three hours. (talk) | ": [
 "ppc_form",
 "read"
+],
+"adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ": [
+"x_mental_cont",
+"read"
+],
+"adv_present | C1 | text | Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*. | ": [
+"x_always_cont",
+"read"
+],
+"adv_present | C1 | gap | Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | ": [
+"x_always_cont",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.": [
+"x_always_cont",
+"read"
+],
+"adv_present | C1 | order | Put the words in order. | you're constantly interrupting me when I'm speaking": [
+"x_always_cont",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | ": [
+"x_performative",
+"read"
 ]
 }

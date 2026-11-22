@@ -9,7 +9,7 @@ final class Content
     private static ?array $retired = null;
     private static array $hidden = [];
 
-    public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0, 'C1.1' => 7.0, 'C1.2' => 8.0];
+    public const BASE = ['A2.1' => 1.0, 'A2.2' => 2.0, 'B1.1' => 3.0, 'B1.2' => 4.0, 'B2.1' => 5.0, 'B2.2' => 6.0, 'C1.1' => 7.0, 'C1.2' => 8.0, 'C1' => 7.0];   // C1: the real C1 level (teacher, 22 November)
 
     /** content/<name>.php (production, never downloadable) or content/<name>.json (development). */
     private static function load(string $name): array
@@ -24,7 +24,7 @@ final class Content
         if (self::$items === null) {
             self::$items = array_map([self::class, 'moved'], self::load('items'));
             if (class_exists('CustomItems', false)) self::$items = array_merge(self::$items, CustomItems::approved()); // tasks the teacher added and approved
-            foreach (self::$items as $i => $it) if (strncmp((string) $it['level'], 'C1', 2) === 0) self::$items[$i]['level'] = 'B2.2';   // no C1 level in the app (teacher, 12 November, U3 A): prepared C1 tasks are B2.2
+            foreach (self::$items as $i => $it) if (strncmp((string) $it['level'], 'C1.', 3) === 0) self::$items[$i]['level'] = 'B2.2';   // old C1.1 / C1.2 tasks are B2 grammar (teacher, 12 November, U3 A); "C1" is the real C1 level again (22 November): prepared C1 tasks are B2.2
             self::hideRelabelled();
             self::hideDuplicates();
             self::$byId = [];

@@ -228,12 +228,13 @@ dsl.ITEMS.extend(VARIETY)
 # My learning path say what the learner sees. The app has no C1 level any more; "Top" is the top of B2.2.
 import re as _re
 for it in dsl.ITEMS:
-    if it["level"].startswith("C1"):   # a new revision: published content is never rewritten
+    if it["level"].startswith("C1."):   # a new revision: published content is never rewritten (the real C1 level, 22 November, is "C1")
         it["level"] = "B2.2"
         m = _re.match(r"^(.*)-r(\d+)$", it["id"])
         it["id"] = f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else it["id"] + "-r2"
-SKILLS[:] = [tuple([s[0], s[1], s[2], list(dict.fromkeys("B2.2" if l.startswith("C1") else l for l in s[3]))] + list(s[4:])) for s in SKILLS]
-dsl.LEVELS[:] = [l for l in dsl.LEVELS if not l.startswith("C1")]
+SKILLS[:] = [tuple([s[0], s[1], s[2], list(dict.fromkeys("B2.2" if l.startswith("C1.") else l for l in s[3]))] + list(s[4:])) for s in SKILLS]
+# C1 is a real level again (teacher, 22 November): one level "C1", no halves; the old C1.1 / C1.2 tasks stay B2.2 (they are B2 grammar)
+dsl.LEVELS[:] = [l for l in dsl.LEVELS if not l.startswith("C1")] + ["C1"]
 validate(dsl.ITEMS, SKILLS, dsl.LEVELS)
 retired = history(dsl.ITEMS, os.path.join(HERE, 'history', 'published_items.json'),
                   record='--record-release' in sys.argv)
@@ -268,7 +269,7 @@ meta = {
 import topic_layout   # one card level per topic, topics in a second group, points moved to another topic (teacher, 22 November)
 _ids = {s[0] for s in SKILLS}
 assert set(topic_layout.CARD_LEVEL) == _ids, ("CARD_LEVEL must name every topic once", _ids ^ set(topic_layout.CARD_LEVEL))
-assert all(v in ("A2", "B1", "B2") for v in topic_layout.CARD_LEVEL.values())
+assert all(v in ("A2", "B1", "B2", "C1") for v in topic_layout.CARD_LEVEL.values())
 _area_ids = {a[0] for a in AREAS}
 for _s in meta["skills"]:
     _s["card"] = topic_layout.CARD_LEVEL[_s["id"]]

@@ -9358,7 +9358,9 @@
    "leads_to": [],
    "typical_errors": "Mixes the two systems in one sentence (*So I stood in the queue and this woman hands me her dog*); uses the story present in a formal report",
    "sources": "AGU 2 · TE C1: Advanced present simple and present continuous (page seen) · EGP: B2 present simple: stories and commentaries",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9382,7 +9384,9 @@
    "leads_to": [],
    "typical_errors": "*Ozols is winning the ball and is shooting* for quick completed actions in a commentary",
    "sources": "AGU 2 · TE C1: Advanced present simple and present continuous (page seen) · EGP: B2 present simple: stories and commentaries",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9408,7 +9412,9 @@
    "leads_to": [],
    "typical_errors": "*I'm admitting I was wrong; I'm thanking you for your help* said as the act itself",
    "sources": "AGU 1 · TE C1: Advanced present simple and present continuous (page seen) · EGP: B1-B2 present simple: speech act verbs",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9432,7 +9438,9 @@
    "leads_to": [],
    "typical_errors": "*Minister has quit / is quitting over tax claims* as a headline; *In the film a retired pilot was returning to his village*",
    "sources": "AGU 2 · TE C1: Advanced present simple and present continuous (page seen) · EGP: C1 present simple: reporting verbs",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9457,7 +9465,9 @@
    "leads_to": [],
    "typical_errors": "*I am hearing you've moved; I gather that you were looking for a flat* for a present situation",
    "sources": "AGU 2 · TE C1: Advanced present simple and present continuous (page seen) · EGP: C1 present simple: reporting verbs (wide range)",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9483,7 +9493,9 @@
    "leads_to": [],
    "typical_errors": "*The team is consisting of six people; I'm doubting it; This flat is belonging to my aunt*; *You are very quiet today* where the passing behaviour is the point",
    "sources": "AGU 1 · TE C1: Advanced present simple and present continuous (page seen) · EGP: B1 present continuous: temporary situations (the state-verb use is not a separate EGP entry) · Gold C1 reference, unit 1, Stative and dynamic verbs",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9508,7 +9520,9 @@
    "leads_to": [],
    "typical_errors": "*I'm knowing; I'm preferring tea these days; I'm agreeing with you*; *I realise* where the new, growing awareness is meant",
    "sources": "AGU 1 · TE C1: Advanced present simple and present continuous (page seen) · EGP: B1 mental process verbs with the present simple",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9536,7 +9550,9 @@
    ],
    "typical_errors": "*I'm wondering can you look at my draft; I wonder that you could*; a bare *I hope you can look at it soon* to a senior person where the softer form is expected",
    "sources": "AGU 1 (modals with performatives) · TE C1: Advanced present simple and present continuous (page seen) · EGP: C2 present continuous: politeness",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9560,7 +9576,9 @@
    "leads_to": [],
    "typical_errors": "*She constantly changes the plan!* is correct but loses the complaint; *We usually put the children to bed at seven* where 'in the middle of it' is meant",
    "sources": "AGU 2 · TE C1: Advanced present simple and present continuous (page seen) · EGP: B2, C2 present continuous with adverbs of indefinite frequency",
-   "topics": [],
+   "topics": [
+    "adv_present"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,

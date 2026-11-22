@@ -38,7 +38,8 @@ def dump(extra=()):
 def as_learner(i, rnd):
     """The task as the learner sees it: no key, no explanation; options and cards shuffled."""
     keep_c1 = str(i.get("src", "")).split(":")[0] in C1_DRAFTS   # a new C1 draft is read as C1; older tasks marked C1 are served as B2.2
-    t = {"id": None, "level": "C1" if keep_c1 else ("B2.2" if str(i["level"]).startswith("C1") else i["level"]), "kind": i["kind"], "instruction_and_task": i["q"]}
+    t = {"id": None, "level": "C1" if keep_c1 else ("B2.2" if str(i["level"]).startswith("C1.") else i["level"]),   # "C1" is the real C1 level (22 November)
+         "kind": i["kind"], "instruction_and_task": i["q"]}
     if i["kind"] == "mcq":
         opts = [i["correct"]] + list(i["wrong"]); rnd.shuffle(opts); t["options"] = opts
     elif i["kind"] == "gap" and i.get("bank"):

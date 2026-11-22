@@ -3043,7 +3043,9 @@ return json_decode(<<<'EF_JSON_END'
 "ps_pc"
 ],
 "name": "The narrative present in stories, jokes and anecdotes",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_pres_comment": {
 "level": "C1",
@@ -3051,7 +3053,9 @@ return json_decode(<<<'EF_JSON_END'
 "ps_pc"
 ],
 "name": "Live commentary, demonstrations and instructions",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_performative": {
 "level": "C1",
@@ -3061,7 +3065,9 @@ return json_decode(<<<'EF_JSON_END'
 "rv_prep_ing"
 ],
 "name": "Performative verbs: I admit, I apologise, I promise, I suggest",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_headline": {
 "level": "C1",
@@ -3069,7 +3075,9 @@ return json_decode(<<<'EF_JSON_END'
 "pp_ps_now"
 ],
 "name": "Headlines, summaries and the contents of books and films",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_i_hear": {
 "level": "C1",
@@ -3077,7 +3085,9 @@ return json_decode(<<<'EF_JSON_END'
 "rep_stay"
 ],
 "name": "I hear, I gather, they say, Ilze tells me: news we have received",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_state_cont": {
 "level": "C1",
@@ -3086,7 +3096,9 @@ return json_decode(<<<'EF_JSON_END'
 "pc_temp"
 ],
 "name": "State verbs in the continuous: we're loving it, you're being very quiet",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_mental_cont": {
 "level": "C1",
@@ -3094,7 +3106,9 @@ return json_decode(<<<'EF_JSON_END'
 "stative2"
 ],
 "name": "Mental-state verbs in the continuous: I'm finding, I'm realising, she's regretting",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_polite_cont": {
 "level": "C1",
@@ -3103,7 +3117,9 @@ return json_decode(<<<'EF_JSON_END'
 "iq_yn"
 ],
 "name": "The present continuous for politeness: I'm wondering whether …, We're hoping to …",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_always_cont": {
 "level": "C1",
@@ -3111,7 +3127,9 @@ return json_decode(<<<'EF_JSON_END'
 "pc_always"
 ],
 "name": "Always, constantly, forever + continuous: characteristic behaviour; usually + continuous at a time",
-"topics": []
+"topics": [
+"adv_present"
+]
 },
 "x_past_both": {
 "level": "C1",
@@ -7951,7 +7969,16 @@ return json_decode(<<<'EF_JSON_END'
 "conj_b2 | gap | Sales fell sharply; ___ , the company cut its prices. | ": "reason_result_b2",
 "cond_advanced | mcq | Choose the correct option: ___ for your help, we would never have finished on time. | But": "x_inv_cond",
 "cond_advanced | gap | ___ it not been for the rain, the match would have finished on time. | ": "x_inv_cond",
-"cond_advanced | gap | If it ___ for your advice, I would never have applied. (not / be) | ": "x_inv_cond"
+"cond_advanced | gap | If it ___ for your advice, I would never have applied. (not / be) | ": "x_inv_cond",
+"adv_present | text | Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*. | ": "x_always_cont",
+"adv_present | gap | Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | ": "x_always_cont",
+"adv_present | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.": "x_always_cont",
+"adv_present | order | Put the words in order. | you're constantly interrupting me when I'm speaking": "x_always_cont",
+"adv_present | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ": "x_mental_cont",
+"adv_present | gap | We ___ for the delay in replying to your email. (apologise) | ": "x_performative",
+"adv_present | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ": "x_state_cont",
+"adv_present | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ": "x_state_cont",
+"adv_present | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.": "x_state_cont"
 }
 }
 EF_JSON_END

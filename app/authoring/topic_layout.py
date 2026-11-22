@@ -32,6 +32,8 @@ CARD_LEVEL = {
     # B2
     "narrative_b2": "B2", "cond_mixed": "B2", "cond_advanced": "B2", "unreal_time": "B2", "rep_verbs": "B2", "ind_advanced": "B2",
     "conj_b2": "B2",
+    # C1 (teacher, 22 November)
+    "adv_present": "C1",
 }
 
 ALSO_AREAS = {"ind_polite": ["questions"], "rep_questions": ["questions"], "ind_advanced": ["questions"]}

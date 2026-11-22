@@ -286,3 +286,8 @@ STRANDS = {
  'C1 · 10 Advanced word order': ('test-english page seen (explanation and chart in full; no exercises seen); AGU units 99-100 read (unit 98 by title); Gold C1 Emphasis with inversion and Conditionals: formal style read',
    "rewrite a neutral sentence with the fronted or inverted start given (*Not until …*, *Had …*, *What …*, *Cold though …*); key-word transformation; put the words in order with one natural order; choose the sentence that emphasises the part in brackets; find the mistake in formal sentences"),
 }
+
+# The first C1 topic in the app (teacher, 22 November): direction 1 is served as "Advanced present simple and continuous"
+from lib import POINTS as _ALL
+for _p in _ALL:
+    if _p["area"].startswith("C1 · 1 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_present"]

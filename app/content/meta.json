@@ -5,7 +5,8 @@
   "B1.1",
   "B1.2",
   "B2.1",
-  "B2.2"
+  "B2.2",
+  "C1"
  ],
  "areas": [
   {
@@ -11050,6 +11051,44 @@
     ]
    },
    "card": "B2"
+  },
+  {
+   "id": "adv_present",
+   "label": "Advanced present simple and continuous",
+   "area": "active",
+   "levels": [
+    "C1"
+   ],
+   "rule": {
+    "form": [
+     "Some verbs have a state meaning (simple) and an action meaning (simple or continuous): *The kitchen measures 3 by 4 metres* / *I'm measuring the kitchen.* Also *weigh, fit, feel, have, appear, think*.",
+     "Verbs that stay simple even for a short time: *believe, consist of, doubt, own, belong, know, prefer, agree*. *consider* (= think about doing) is continuous: *She's considering early retirement.*",
+     "*always, constantly, forever* + continuous: *He's forever borrowing my tools.* *usually* + continuous for something in progress at a time: *At eight I'm usually driving to work.*",
+     "Saying it is doing it: present simple: *We apologise for the delay. I suggest you book early.*"
+    ],
+    "use": [
+     "The continuous of a state verb shows that a feeling or a situation is new, temporary or changing: *We're loving the new office. I'm finding the course quite hard.*",
+     "*always / forever* + continuous: typical behaviour, often with irritation.",
+     "Stories and jokes, live commentary, headlines and the contents of books and films use the present: *Minister resigns. In the film, a pilot returns to his village.*"
+    ],
+    "signals": "*measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest*",
+    "example": "*I'm measuring the kitchen: it measures only 3 by 4 metres, and you're constantly telling me it's big enough!*"
+   },
+   "rule_lv": {
+    "form": [
+     "Dažiem darbības vārdiem ir stāvokļa nozīme (vienkāršā forma) un darbības nozīme (vienkāršā vai ilgstošā forma): **The kitchen measures 3 by 4 metres** / **I'm measuring the kitchen*.* Arī **weigh, fit, feel, have, appear, think**.",
+     "Darbības vārdi, kas paliek vienkāršajā formā arī īsu laiku: **believe, consist of, doubt, own, belong, know, prefer, agree**. **consider** (= apsvērt) ir ilgstošajā formā: **She's considering early retirement*.*",
+     "**always, constantly, forever** + ilgstošā forma: **He's forever borrowing my tools*.* **usually** + ilgstošā forma, ja darbība tajā laikā jau notiek: **At eight I'm usually driving to work*.*",
+     "Ja paši vārdi ir darbība, lieto Present Simple: **We apologise for the delay.* *I suggest you book early*.*"
+    ],
+    "use": [
+     "Stāvokļa darbības vārda ilgstošā forma rāda, ka sajūta vai situācija ir *jauna*, īslaicīga vai mainās: **We're loving the new office.* *I'm finding the course quite hard*.*",
+     "**always / forever** + ilgstošā forma: raksturīga uzvedība, bieži ar *nepatiku*.",
+     "Stāstos un *jokos*, tiešraides komentāros, *virsrakstos* un grāmatu un *filmu satura* stāstījumā lieto tagadni: **Minister resigns.* *In the film, a pilot returns to his village*.*"
+    ],
+    "signals": "*measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest*"
+   },
+   "card": "C1"
   }
  ],
  "bloom": {

@@ -49,7 +49,7 @@ Uzvedības veidu nosaka no pēdējām 2–4 nedēļām. Tas ir izskaidrojams not
 
 | # | Ko redzam | Ko sakām | Uz ko balstās |
 |---|---|---|---|
-| A | Regulāri: plāns izpildīts 2 nedēļas pēc kārtas vai 4+ dienas nedēļā | uzslava par konsekvenci + mini padoms, kā padarīt praksi vēl noderīgāku | ieradums stabilā kontekstā (Lally et al., 2010); izkliedēta un jaukta prakse (Kim & Webb, 2022; Nakata & Suzuki, 2019); grūtība, kas atbilst prasmei (Wilson et al., 2019) |
+| A | Regulāri: plāns izpildīts 2 nedēļas pēc kārtas vai 4+ dienas nedēļā | uzslava par konsekvenci un ieradumu | ieradums stabilā kontekstā (Lally et al., 2010); izkliedēta prakse (Kim & Webb, 2022) |
 | B | Dažas reizes nedēļā: 2–3 dienas, vai 1–2, ja tāds ir plāns | uzslava, ka ritms turas + padoms piesaistīt praksi esošai rutīnai | īstenošanas nodomi (Gollwitzer & Sheeran, 2006); ritms, ko izvēlas pats (Ryan & Deci, 2020) |
 | C | Jauns un neregulārs: 2–3 apmeklējumi ar atstarpēm, plāna nav | silts paldies + ieteikums izvēlēties labāko dienas brīdi, īsa sesija | situācijas signāls (Wood & Rünger, 2016; Fogg, 2009); mazs solis (COM-B iespējas, Michie et al., 2011) |
 | D | Atgriezies pēc 7+ dienām | prieks par atgriešanos + īss, viegls sākums, nekādu atskatu uz pauzi | sev piedošana samazina nākamo atlikšanu (Wohl et al., 2010); jauna sākuma efekts (Dai et al., 2014) |
@@ -65,16 +65,16 @@ Uzvedības veidu nosaka no pēdējām 2–4 nedēļām. Tas ir izskaidrojams not
 Pa 3–4 variantiem katram gadījumam, lai tie neatkārtojas. Katrs teksts ir 1–2 teikumi: vispirms uzslava, pēc tam viena ideja. Iekavās ir doma latviski.
 
 **A Regulāri**
-- *Four days this week. That's a real habit now. Tip: today, try a question where you type the answer. Writing makes it stick.* (ieradums jau ir; rakstīšana palīdz atcerēties)
-- *You keep showing up, and it shows. Tip: mix it up with Surprise me. Switching topics feels harder, but you remember more.* (jaukta prakse)
-- *Steady as a clock. If it starts to feel easy, take the next step up. A little challenge is where you grow.* (piemērota grūtība)
-- *Great rhythm. Your old mistakes are waiting in Second Chance. Fixing them now makes them yours for good.* (atkārtojums)
+- *Four days this week. That's a real habit now.*
+- *You keep coming back, and it shows. Steady practice is what makes it stick.*
+- *Steady as a clock. Your English is getting a little practice every few days, and that's exactly how it grows.*
+- *Coming back again and again is the hard part, and you're doing it.*
 
 **B Dažas reizes nedēļā**
 - *Three days this week. That's a rhythm that lasts. Tip: tie it to something you already do, like your morning coffee.* (piesaiste rutīnai)
 - *Nice and steady. Days off are part of the plan. What matters is that you come back.* (brīvas dienas ir ok)
 - *Twice this week, just like you planned. Short and regular beats long and rare.* (īsi un regulāri)
-- *You found your pace. Want a reminder on your practice days? Pick a time and we'll add it to your calendar.* (F09)
+- *You found your pace. Keep it just like this.*
 
 **C Jauns un neregulārs**
 - *Good to see you again! Which time of day works best for you? Practice is easiest when it has its own moment.* (labākais brīdis)
@@ -109,6 +109,8 @@ Pa 3–4 variantiem katram gadījumam, lai tie neatkārtojas. Katrs teksts ir 1�
 - *Want to pick up where you stopped? Or just 5 quick questions?*
 
 ## 5 Noteikumi ziņām
+
+- **Tikai par atgriešanos, ieradumu un regularitāti (Inga, 22. novembris).** Nekādu padomu par uzdevumu veidiem, tēmām, līmeni vai lietotnes funkcijām (*try one you write yourself*, *Surprise me*, *Second Chance*): izglītojamie pilda to, ko sistēma iedod.
 
 - Ne vairāk kā viena trenera ziņa vienā apmeklējumā un ne biežāk kā reizi dienā. Nekad prakses vidū.
 - Vienmēr var aizvērt. Iestatījumos ir *Show tips: on / off*.

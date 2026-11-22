@@ -179,8 +179,32 @@ def g_mistake(i):   # 15 and 21 November: in "Which sentence has a mistake?" no 
     return out
 
 
+# 21-22 November (teacher): the wrong options are words the card of the task's topic teaches. Checked for linking words, prepositions
+# and quantity words only (verb forms are judged by the readers: the card names the forms, not every verb).
+CLOSED = set("""although though whereas while however nevertheless nonetheless yet despite because since so therefore consequently unless
+whether until before after during without towards than once provided providing owing due instead in on at for to from with by about of into
+much many few little lot some any no none every each all both either neither enough too very quite rather""".split())
+_META = os.path.join(ROOT, "app", "content", "meta.json")
+CARD = {s["id"]: re.sub(r"[\[\]*]", "", json.dumps(s.get("rule", {}), ensure_ascii=False).lower())
+        for s in (json.load(open(_META, encoding="utf-8"))["skills"] if os.path.isfile(_META) else [])}
+
+
+def g_card_words(i):
+    opts = []
+    if i["kind"] == "mcq" and len(str(i.get("correct", "")).split()) <= 3: opts = i.get("wrong", [])
+    if i["kind"] == "gap" and i.get("bank"):
+        acc = {a.lower() for g in i.get("answers", []) for a in g}; opts = [c for c in i["bank"] if c.lower() not in acc]
+    out = []
+    for o in opts:
+        w = o.lower().strip().rstrip(".,").split()
+        if not w or not all(x in CLOSED for x in w): continue
+        if i.get("skill") in CARD and not re.search(r"(?<![a-z])" + re.escape(" ".join(w)) + r"(?![a-z])", CARD[i["skill"]]):
+            out.append("wrong option not taught on the card of this topic: " + o)
+    return out
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind, "copy": g_copy, "mistake": g_mistake}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind, "copy": g_copy, "mistake": g_mistake, "card_words": g_card_words}
 
 
 def key(i):

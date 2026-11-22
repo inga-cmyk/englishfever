@@ -9,7 +9,7 @@ also under Question forms, where learners look for them.
 
 MOVES: the tasks of a grammar point that belong to another topic. The time words (then, after that, before / after + -ing,
 while, when / as soon as + present) were in "However, although, because of, then", which mixed contrast, reason and time; they
-are now in "Time words and clauses", next to the conditionals. Same task ids; the prepared files still name the old topic (the
+are now in "Time words and clauses", in the same area, Linking ideas (teacher, 22 November: not with the conditionals). Same task ids; the prepared files still name the old topic (the
 import knows the task by it); the app serves and records the task in the new topic (Content::moved). Answers given before the
 move stay in the old topic.
 

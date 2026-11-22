@@ -8,7 +8,7 @@ SKILLS_NEW = [
     ("articles", "Articles: a, an, the", "nouns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: no article (art_zero), prepared tasks only (teacher, 14 November)
     ("quantity", "Quantity: some, any, much, many, enough", "nouns", ["A2.1", "A2.2", "B1.1"]),   # A2.1: a few / a little, countable and uncountable, prepared tasks only (teacher, 15 November, batch 5)
     ("relative_clauses", "Relative clauses (who, which, that, where)", "clauses", ["A2.2", "B1.1", "B1.2"]),
-    ("time_clauses", "Time words and clauses (then, while, when, until)", "conditionals", ["A2.2", "B1.1", "B1.2"]),   # with the conditionals, and the time words of conj_linkers moved here (teacher, 22 November; topic_layout.py)
+    ("time_clauses", "Time words and clauses (then, while, when, until)", "clauses", ["A2.2", "B1.1", "B1.2"]),   # in Linking ideas (teacher, 22 November: that area mixes many forms; not with the conditionals); the time words of conj_linkers moved here (topic_layout.py)
     ("question_tags", "Question tags (isn't it? don't you?)", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("subject_object_q", "Subject and object questions", "questions", ["A2.2", "B1.1", "B1.2"]),
     ("verb_patterns", "Verb patterns: -ing or to", "patterns", ["A2.1", "A2.2", "B1.1", "B1.2"]),   # A2.1: like + -ing, want + to, prepared tasks only (teacher, 15 November, batch 5)

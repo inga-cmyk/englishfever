@@ -29,7 +29,7 @@ return json_decode(<<<'EF_JSON_END'
   },
   {
    "id": "conditionals",
-   "label": "Conditionals and time clauses"
+   "label": "Conditionals"
   },
   {
    "id": "reported",
@@ -5805,7 +5805,7 @@ return json_decode(<<<'EF_JSON_END'
   {
    "id": "time_clauses",
    "label": "Time words and clauses (then, while, when, until)",
-   "area": "conditionals",
+   "area": "clauses",
    "levels": [
     "A2.2",
     "B1.1",

@@ -125,6 +125,17 @@ final class Content
         return $ids;
     }
 
+    /** A relabelled task, also after a later correction (-rN) of it (B1 recheck, 22 November). */
+    public static function isRelabelled(string $id): bool
+    {
+        static $bases = null;
+        if ($bases === null) {
+            $bases = [];
+            foreach (array_keys(self::relabelled()) as $rid) $bases[preg_replace('/-r\d+$/', '', $rid)] = true;
+        }
+        return isset($bases[preg_replace('/-r\d+$/', '', $id)]);
+    }
+
     /**
      * A task that was relabelled (for example B1 to A2) leaves the active pool as soon as its approved copy exists at the lower level.
      * The original stays readable, so every old answer and unfinished session keeps working.
@@ -149,7 +160,7 @@ final class Content
         if (!$copies) return;
         $keep = [];
         foreach (self::$items as $it) {
-            if (isset($rel[$it['id']]) && isset($copies[$it['skill'] . '|' . self::copyStem($it['q'])])) {
+            if (self::isRelabelled($it['id']) && isset($copies[$it['skill'] . '|' . self::copyStem($it['q'])])) {
                 $it['d'] = self::difficulty($it['level'], $it['bloom']);
                 self::$hidden[$it['id']] = $it;
                 continue;

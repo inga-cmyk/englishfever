@@ -1,0 +1,348 @@
+[
+{
+"id": "r21c-001",
+"answer": "know",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-002",
+"answer": "have been playing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-003",
+"answer": "I think it's going to rain. Would you like to borrow my umbrella?",
+"other_correct": [
+"It will rain soon. Take my umbrella.",
+"It's probably going to rain. You can use my umbrella.",
+"I think it will rain. I can lend you my umbrella.",
+"It might rain soon. Shall I lend you my umbrella?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Forms not named, so any future form (will, going to, might, may) is correct; fine for open writing but the app check may reject valid answers like 'might' or 'is about to'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-004",
+"answer": "plays",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-005",
+"answer": "unless",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-006",
+"answer": "Could you tell me when the course starts?",
+"other_correct": [
+"Can you tell me when the course starts?",
+"Could you tell me the start date of the course?",
+"When does the Italian evening course start?",
+"Do you know when the course starts?",
+"Would you mind telling me when the course starts?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Direct question 'When does the course start?' is also correct; 'polite' is the only push to an indirect question. Which forms the app checks is not clear to the learner.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-007",
+"answer": "Could you tell me when my printer will arrive?",
+"other_correct": [
+"Can you tell me when my printer will arrive?",
+"Could you tell me where my order is?",
+"Has my printer been sent yet?",
+"Would you mind checking the status of my order?",
+"When will my printer arrive?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open: several tenses/structures fit (present perfect, passive, indirect question); the learner cannot know which forms are checked.",
+"level_problem": "Fine for B1.2 but nothing in the task needs B1.2 over B1.1 (same as r21c-006).",
+"sense_problem": ""
+},
+{
+"id": "r21c-008",
+"answer": "If metal gets hot, it expand.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Missing -s on 'expand' is a believable mistake. Fine."
+},
+{
+"id": "r21c-009",
+"answer": [
+[
+"If I had gone, I would have met her.",
+"I didn't go."
+],
+[
+"If I hadn't gone, I wouldn't have met her.",
+"I went."
+],
+[
+"If I went, I would meet her.",
+"I probably won't go."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-010",
+"answer": "he said he couldn't come because he was ill",
+"other_correct": [
+"he couldn't come because he said he was ill",
+"he said he was ill because he couldn't come",
+"because he said he was ill he couldn't come",
+"because he was ill he said he couldn't come"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No context, so meaning is open: several orders are correct English with different meanings (only the first is the natural one). Three identical 'he' cards and no capital/comma cue.",
+"level_problem": "",
+"sense_problem": "Alternatives are correct but change meaning; the task does not say which meaning is wanted."
+},
+{
+"id": "r21c-011",
+"answer": "My boss told that the meeting was cancelled.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-012",
+"answer": "when i was a child we used to visit my grandparents every sunday",
+"other_correct": [
+"we used to visit my grandparents every sunday when i was a child",
+"every sunday we used to visit my grandparents when i was a child",
+"when i was a child every sunday we used to visit my grandparents",
+"every sunday when i was a child we used to visit my grandparents"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many valid orders (time clauses and 'every Sunday' move freely); no comma/capital cue. 'sunday' is given lower case.",
+"level_problem": "13 cards, long for a card task, though within B1.2.",
+"sense_problem": ""
+},
+{
+"id": "r21c-013",
+"answer": "What made that loud bang?",
+"other_correct": [
+"What made that noise?",
+"What made the bang?",
+"What made that loud noise in the kitchen?",
+"What made the loud bang in the kitchen?",
+"What's making that noise?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Use What and make' nearly gives the structure away but is needed; fine. 'What was that?' does not use make.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-014",
+"answer": "The accident could have been avoided.",
+"other_correct": [
+"The accident could have been avoided by someone.",
+"The accident might have been avoided.",
+"The accident could have been prevented."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'might/should have been avoided' change the meaning slightly; 'could' is expected but the instruction does not say to keep it.",
+"level_problem": "Passive with a perfect modal is B2 rather than B1.2.",
+"sense_problem": ""
+},
+{
+"id": "r21c-015",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-016",
+"answer": "would you like to eat something before we leave",
+"other_correct": [
+"would you like something to eat before we leave",
+"before we leave would you like to eat something",
+"before we leave would you like something to eat"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both 'eat something' and 'something to eat' use all the cards; also starting with 'Before we leave'. Task is not a single-answer order.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-017",
+"answer": "the bridge was built in 1932 and it is still used today",
+"other_correct": [
+"the bridge was built in 1932 and today it is still used",
+"in 1932 the bridge was built and it is still used today",
+"in 1932 the bridge was built and today it is still used",
+"today the bridge is still used and it was built in 1932",
+"the bridge is still used today and it was built in 1932"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No context, so several orders are correct; the last two are less natural (chronology reversed).",
+"level_problem": "",
+"sense_problem": "'it' after 'and' is natural but the bridge/it repetition is slightly clumsy."
+},
+{
+"id": "r21c-018",
+"answer": "My laptop was stolen yesterday.",
+"other_correct": [
+"My laptop was stolen yesterday by someone.",
+"My laptop got stolen yesterday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Passive is not named, but 'Start with My laptop' makes it obvious.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-019",
+"answer": "This factory was built by the company in 1990.",
+"other_correct": [
+"This factory was built in 1990 by the company."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-020",
+"answer": "does your brother still work for the same company",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Cards contain 'does': the question form is given away; easy for B1.1."
+},
+{
+"id": "r21c-021",
+"answer": [
+"is looking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-022",
+"answer": "I have been learning English since 2019.",
+"other_correct": [
+"I've been learning English since 2019.",
+"I have learned English since 2019.",
+"I've learned English since 2019.",
+"I have learnt English since 2019.",
+"Since 2019 I have been learning English.",
+"Since 2019 I've been learning English."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Rewrite with since' does not say how to change the verb; the present perfect (simple or continuous) is expected but not stated. Answer may be marked wrong if only continuous is accepted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-023",
+"answer": "We haven't visited that museum.",
+"other_correct": [
+"We have not visited that museum.",
+"We've not visited that museum.",
+"We haven't been to that museum."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for B1.1: add 'not' to an A2 form.",
+"sense_problem": ""
+},
+{
+"id": "r21c-024",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-025",
+"answer": [
+"is made",
+"is sent"
+],
+"other_correct": [
+[
+"is made",
+"sent"
+],
+[
+"gets made",
+"gets sent"
+],
+[
+"is made",
+"gets sent"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Passive is not hinted by '(make / send)'; the learner must find it from context (acceptable at B1.1 but the active 'makes/sends' is wrong, 'cheese' as subject saves it). Gap 2 'sent' alone is correct after 'and then'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-026",
+"answer": "The winner will be announced on Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-027",
+"answer": [
+"had already finished"
+],
+"other_correct": [
+[
+"had finished already"
+],
+[
+"'d already finished"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two verb hints in one gap; the learner must type the whole 'had already finished'. Past perfect with 'when' is not signalled.",
+"level_problem": "Past perfect is B1.2/B2 at the very least; B1.1 is too low.",
+"sense_problem": "'No, ...' answer is a little odd as a reply to 'Did you have lunch with your colleagues'; Tom may have had lunch elsewhere."
+}
+]

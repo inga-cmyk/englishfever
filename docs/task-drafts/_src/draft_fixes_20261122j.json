@@ -1,0 +1,15 @@
+{
+ "b1-new-3.csv": [
+  {
+   "id": "r21d-004",
+   "match": [
+    "text",
+    "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+    "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it? | What made that loud bang? | What made the loud bang? | What made that loud noise? | What made the loud noise? | What made that noise in the kitchen? | What made the noise in the kitchen? | What made that bang in the kitchen? | What made the bang in the kitchen? | What made that loud noise in the kitchen? | What made the loud bang in the kitchen?"
+   ],
+   "set": {
+    "4": "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it? | What made that loud bang? | What made the loud bang? | What made that loud noise? | What made the loud noise? | What made that noise in the kitchen? | What made the noise in the kitchen? | What made that bang in the kitchen? | What made the bang in the kitchen? | What made that loud noise in the kitchen? | What made the loud bang in the kitchen? | What was it that made that bang?"
+   }
+  }
+ ]
+}

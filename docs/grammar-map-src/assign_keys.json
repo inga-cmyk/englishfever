@@ -17734,5 +17734,13 @@
 "cond_zero | B1.1 | mcq | Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl. | plays": [
 "c0",
 "read"
+],
+"passive_modals | B1.2 | text | Start with *The problem*: Someone could have solved the problem much earlier. | ": [
+"pas_modal_past",
+"read"
+],
+"cmp_ps_pc | B1.1 | gap | My brother ___ a lot of books when he was off work with a broken leg last winter. (read) | ": [
+"past_seq",
+"read"
 ]
 }

@@ -1,0 +1,153 @@
+[
+{
+"id": "r21d-001",
+"answer": "Could you tell me when the evening Italian course starts?",
+"other_correct": [
+"Do you know when the evening Italian course starts?",
+"Could you tell me when the course starts?",
+"When does the evening Italian course start?",
+"Can you tell me when the next Italian course begins?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open task: 'some forms are used' is unclear to me; an ordinary direct question (When does the course start?) is also polite and correct, so the intended form (indirect question?) is not forced by the instruction.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-002",
+"answer": "Could you tell me when my printer will arrive?",
+"other_correct": [
+"Can you tell me when my printer will be delivered?",
+"Could you tell me when I will receive my printer?",
+"Do you know when my printer will arrive?",
+"When will my printer arrive?",
+"Could you tell me why my printer hasn't arrived yet?",
+"Has my order been sent yet?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction does not force any one form: direct questions, present perfect questions (Has it been sent yet?) are all correct. Unclear what the app checks.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-003",
+"answer": "If metal gets hot, it expand.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'it expand' (missing -s) is a believable learner error."
+},
+{
+"id": "r21d-004",
+"answer": "What made that loud bang?",
+"other_correct": [
+"What made that noise in the kitchen?",
+"What made the loud bang in the kitchen?",
+"What made that bang in the kitchen?",
+"What has made that loud bang?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Situation says 'Ask your flatmate' but the sentence is open: 'What was that?' is excluded only by the word hint. Fine. 'Use What and make' partly gives away the form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-005",
+"answer": "The problem could have been solved much earlier.",
+"other_correct": [
+"The problem could have been solved much earlier by someone."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say 'use the passive' (good), but 'Start with The problem' strongly forces it; acceptable.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-006",
+"answer": "would you like to eat something before we leave",
+"other_correct": [
+"would you like something to eat before we leave",
+"before we leave, would you like to eat something",
+"before we leave, would you like something to eat"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards are all lower case with no capital or punctuation hint; several natural orders exist (something to eat / to eat something; before-clause first).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-007",
+"answer": "the bridge was built in 1932 and it is still used today",
+"other_correct": [
+"it was built in 1932 and the bridge is still used today",
+"the bridge is still used today and it was built in 1932",
+"in 1932 the bridge was built and it is still used today",
+"the bridge was built in 1932 and is still used today (without it: not possible, card 'it' must be used)",
+"the bridge is still used today and was built in 1932 (no)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction is bare; no clue whether to start with 'The bridge' or 'It'; several orders are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-008",
+"answer": "The winner will be announced on Friday.",
+"other_correct": [
+"The winner will be announced on Friday by them."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; passive forced by 'Start with The winner'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-009",
+"answer": [
+"read"
+],
+"other_correct": [
+[
+"used to read"
+],
+[
+"would read"
+],
+[
+"was reading"
+],
+[
+"had read"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was reading' and 'used to read' also fit; 'had read' unlikely. Spelling 'read' is identical to present, so a learner can't be sure of the tense target; only the verb (read) is given.",
+"level_problem": "",
+"sense_problem": "Past simple intended probably; 'a lot of books ... when he was off work' also supports habitual past (used to / would read)."
+},
+{
+"id": "r21d-010",
+"answer": [
+"had already finished"
+],
+"other_correct": [
+[
+"'d already finished"
+],
+[
+"had finished already"
+],
+[
+"already finished"
+],
+[
+"had already finished"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap 'they ___ eating' with 'already / finish' needs 'finished eating' - fine; American 'already finished' is also correct.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

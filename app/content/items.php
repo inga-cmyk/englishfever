@@ -9528,12 +9528,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "A polite start, then *when* and the order of a statement, with no *does*: *Could you tell me when the next Italian course starts?*",
 "must": [
 [
-"\\b(could|can|would) you (please )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bi (was )?wonder(ing)?\\b",
+"\\b(could|can|would) you (please |possibly |kindly |just )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you be able to (tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\b(do you have|have you got|have you) any idea\\b|\\b(can|could|may) i ask\\b|\\bi[\\'’]?d like to (know|ask)\\b|\\bi would like to (know|ask)\\b|\\bi (was )?wonder(ing)?\\b",
 "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
 "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
 ],
 [
-"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering|ask|idea),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
 "Then a question word or *if*: *… when the next course starts*.",
 "Tad jautājamais vārds vai *if*: *… when the next course starts*."
 ],
@@ -9561,12 +9561,12 @@ return json_decode(<<<'EF_JSON_END'
 "why": "A polite start, then *if* and the order of a statement: *Could you tell me if you have sent my order yet?* With *did* in the direct question, the verb itself is in the past: *if you sent my order*.",
 "must": [
 [
-"\\b(could|can|would) you (please )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bi (was )?wonder(ing)?\\b",
+"\\b(could|can|would) you (please |possibly |kindly |just )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you be able to (tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\b(do you have|have you got|have you) any idea\\b|\\b(can|could|may) i ask\\b|\\bi[\\'’]?d like to (know|ask)\\b|\\bi would like to (know|ask)\\b|\\bi (was )?wonder(ing)?\\b",
 "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
 "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
 ],
 [
-"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering|ask|idea),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
 "Then *if* (or *whether*) or a question word: *… if you have sent my order*, *… when my printer will arrive*.",
 "Tad *if* (vai *whether*) vai jautājamais vārds: *… if you have sent my order*, *… when my printer will arrive*."
 ],

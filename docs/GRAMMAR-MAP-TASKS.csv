@@ -1652,6 +1652,7 @@ pp_exp,A2.2,present_perfect,B1.2,learn,match,read,,b1-tenses-2.csv:27,present_pe
 pp_exp,A2.2,present_perfect,B1.2,check,mcq,read,,b1-tenses-2.csv:34,"present_perfect | B1.2 | mcq | Choose the correct option: He ___ in a few different jobs, so he has a lot of experience. | has worked"
 pp_exp,A2.2,present_perfect,B1.2,check,mcq,read,,b1-upgrades-1.csv:22,present_perfect | B1.2 | mcq | Choose the correct option: ___ you ever ___ a presentation in English? | Have / given
 pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-big-1.csv:93,present_perfect | A2.2 | gap | We ___ here since Monday. (not / be) | 
+pp_for_since,A2.2,present_perfect,A2.2,check,mcq,read,,a2-relabelled-1.csv:6,present_perfect | A2.2 | mcq | I've worked here ___ five years. | for
 pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-relabelled-1.csv:7,"present_perfect | A2.2 | gap | They ___ married for 20 years, and they are still happy together. (be) | "
 pp_for_since,A2.2,present_perfect,A2.2,use,gap,read,,a2-relabelled-1.csv:9,present_perfect | A2.2 | gap | How long ___ you ___ English? (study) | 
 pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,pp-B11-1a-r2,built-in,present_perfect | B1.1 | mcq | I've worked here ___ five years. | for
@@ -2723,6 +2724,7 @@ past_seq,B1.1,past_continuous,A2.2,learn,mcq,read,,contrast-1.csv:2,past_continu
 past_seq,B1.1,past_continuous,A2.2,learn,mcq,read,,contrast-1.csv:3,"past_continuous | A2.2 | mcq | Which sentence means she started cooking after you arrived? | When I arrived, she cooked dinner."
 past_seq,B1.1,cmp_ps_pc,B1.1,learn,mcq,read,,compare-past-1.csv:4,"cmp_ps_pc | B1.1 | mcq | Which sentence means 'we had already started dinner'? | When Karen arrived, we were having dinner."
 past_seq,B1.1,cmp_ps_pc,B1.1,learn,mcq,read,,compare-past-1.csv:5,"cmp_ps_pc | B1.1 | mcq | Which sentence means 'first she arrived, then we had dinner'? | When Karen arrived, we had dinner."
+past_seq,B1.1,cmp_ps_pc,B1.1,use,gap,read,,compare-past-1.csv:13,cmp_ps_pc | B1.1 | gap | My brother ___ a lot of books when he was off work with a broken leg last winter. (read) | 
 past_seq,B1.1,cmp_ps_pc,B1.1,use,gap,read,,compare-past-1.csv:14,cmp_ps_pc | B1.1 | gap | We ___ all the way home after the party last night. (walk) | 
 past_seq,B1.1,past_continuous,B1.1,learn,match,read,,contrast-1.csv:4,"past_continuous | B1.1 | match | Match each sentence with its meaning. | I was making tea when Tom came. = Already in progress ; When Tom came, I made tea. = Started after his arrival ; I had made tea before Tom came. = Ready before he arrived"
 past_seq,B1.1,cmp_ps_pc,B1.1,use,gap,read,,twins-2.csv:22,cmp_ps_pc | B1.1 | gap | Last Saturday we ___ ten kilometres along the coast. (walk) | 
@@ -3987,7 +3989,7 @@ pas_modal_past,B2.1,passive_modals,B1.2,use,gap,read,,b1-new-4.csv:67,"passive_m
 pas_modal_past,B2.1,passive_modals,B1.2,use,gap,read,,b1-new-4.csv:68,passive_modals | B1.2 | gap | Write the missing word or words: This email ought to ___ sent yesterday. | 
 pas_modal_past,B2.1,passive_modals,B1.2,check,mcq,read,,b1-new-4.csv:75,"passive_modals | B1.2 | mcq | Choose the correct option: The window ___ closed last night, but nobody did it. | should have been"
 pas_modal_past,B2.1,passive_modals,B1.2,check,mcq,read,,b1-new-4.csv:76,passive_modals | B1.2 | mcq | Which sentence is correct? | The accident could have been avoided.
-pas_modal_past,B2.1,passive_modals,B1.2,use,text,read,,b1-new-4.csv:84,passive_modals | B1.2 | text | Start with *The accident*: Someone could have avoided the accident. | 
+pas_modal_past,B2.1,passive_modals,B1.2,use,text,read,,b1-new-4.csv:84,passive_modals | B1.2 | text | Start with *The problem*: Someone could have solved the problem much earlier. | 
 pas_modal_past,B2.1,passive_modals,B1.2,use,text,read,,b1-new-4.csv:85,passive_modals | B1.2 | text | Correct the mistake: The accident could have avoided. | 
 pas_modal_past,B2.1,passive_modals,B1.2,use,text,read,,b1-new-4.csv:86,passive_modals | B1.2 | text | Start with *The windows*: Somebody should have cleaned the windows. | 
 pas_modal_past,B2.1,passive_modals,B1.2,use,text,read,,b1-new-4.csv:87,passive_modals | B1.2 | text | Correct the mistake: The windows should been cleaned last week. | 

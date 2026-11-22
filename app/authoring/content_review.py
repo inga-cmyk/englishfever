@@ -879,6 +879,11 @@ def revise(original):
                "After *if* or the question word the subject comes first, with no *did*: *if you got my email*, *when the heater will be repaired*.",
                "Pēc *if* vai jautājamā vārda vispirms ir teikuma priekšmets, bez *did*: *if you got my email*, *when the heater will be repaired*."]],
         model='Could you tell me if you got my email about the heater?')
+    # the B2 recheck of 22 November (blind round r20; judge notes docs/review/blind/r20-*-judge.md)
+    import json as _json
+    for _base, _ch in _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'r20_fixes.json'), encoding='utf-8'))['fix'].items():
+        if _base in by_id: report_fix(_base, **{k: v for k, v in _ch.items() if not k.startswith('_')})
+        else: raise KeyError('r20_fixes.json: no built-in task ' + _base)
     # A rebuild must not allocate new IDs to unchanged published corrections.
     # Some earlier passes choose an unused revision before the final wording is
     # known; reuse the recorded final version when its content is identical.

@@ -1,0 +1,710 @@
+[
+{
+"id": "r20-4-001",
+"answer": [
+"could"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Cards 'can to' and 'would to' are impossible strings, not believable mistakes; bare 'would' (correct: 'if you would send') is not offered, so the set is odd."
+},
+{
+"id": "r20-4-002",
+"answer": "i would grow vegetables if i had a garden",
+"other_correct": [
+[
+"if i had a garden i would grow vegetables"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-003",
+"answer": [
+"had",
+"studied"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Distractors 'has'/'was' are believable but 'was studied' is random."
+},
+{
+"id": "r20-4-004",
+"answer": "i wouldn't have parked there if i had seen the sign",
+"other_correct": [
+"if i had seen the sign i wouldn't have parked there"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-005",
+"answer": "we would have won if the team had been better prepared",
+"other_correct": [
+"if the team had been better prepared we would have won",
+"the team would have won if we had been better prepared",
+"if we had been better prepared the team would have won"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible. Also the subject can be 'the team' or 'we'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-006",
+"answer": [
+"could",
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'would' is the obvious answer and is not offered; ok but 'could' adjusted is a slightly odd meaning."
+},
+{
+"id": "r20-4-007",
+"answer": "i would have called her if i had remembered her birthday",
+"other_correct": [
+"if i had remembered her birthday i would have called her"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-008",
+"answer": [
+"had",
+"heard"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Only two real choices; easy for B2.2 (same pattern as 3 and 9)."
+},
+{
+"id": "r20-4-009",
+"answer": [
+"wouldn't",
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards 'hadn't' and 'won't' cannot fit; trivial for B2.2.",
+"level_problem": "B2.2 too easy: basic third conditional.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-010",
+"answer": "i would've known about the traffic if i'd left earlier",
+"other_correct": [
+"if i'd left earlier i would've known about the traffic",
+"i would've left earlier if i'd known about the traffic",
+"if i'd known about the traffic i would've left earlier"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible. Both meanings work (known/left swap).",
+"level_problem": "",
+"sense_problem": "Contracted cards only fit one pattern; fine."
+},
+{
+"id": "r20-4-011",
+"answer": [
+"realised",
+"acted"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.2 too easy: past participle choice only.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-012",
+"answer": "if you had called we would have known about the problem",
+"other_correct": [
+"we would have known about the problem if you had called",
+"if we had known about the problem we would have called you",
+"we would have called you if we had known about the problem"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible. Two meanings are possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-013",
+"answer": "despite the delay we arrived on time",
+"other_correct": [
+"we arrived on time despite the delay"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible.",
+"level_problem": "Too easy/short for B2.1 (7 words, B1).",
+"sense_problem": ""
+},
+{
+"id": "r20-4-014",
+"answer": [
+"spite",
+"of"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Copying a fixed phrase; 'despite' distractor easily excluded; near-duplicate of 31.",
+"level_problem": "Fixed phrase, low level for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-015",
+"answer": "despite the rain the match went ahead",
+"other_correct": [
+"the match went ahead despite the rain"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible.",
+"level_problem": "Short and easy for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-016",
+"answer": "despite the fact that it was raining we went out",
+"other_correct": [
+"we went out despite the fact that it was raining"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No sentence start or comma is given, so both clause orders are possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-017",
+"answer": "would you mind telling me how long the repair will take",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-018",
+"answer": "could you tell me why the order didn't arrive",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-019",
+"answer": [
+"went"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 indirect question; low for B2.1.",
+"sense_problem": "Distractors are believable."
+},
+{
+"id": "r20-4-020",
+"answer": "do you know when the shop closes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Content already in a near-normal order; easy.",
+"level_problem": "B1, too low for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-021",
+"answer": "do you know what time it opens",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Too easy (7 words).",
+"level_problem": "B1, too low for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-022",
+"answer": "i asked her if she could help",
+"other_correct": [
+[
+"she asked if i could help her"
+],
+[
+"i asked if she could help her"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'More than one answer' is stated; fine.",
+"level_problem": "",
+"sense_problem": "'asked her' vs 'she asked' both use all cards."
+},
+{
+"id": "r20-4-023",
+"answer": [
+"not",
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2/B1 level, too low for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-024",
+"answer": "lena asked me to send her the invoice",
+"other_correct": [
+[
+"lena asked her to send me the invoice"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Second answer is ambiguous but grammatical."
+},
+{
+"id": "r20-4-025",
+"answer": [
+"it",
+"was"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 reported question, low for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-026",
+"answer": "the customer asked how long the repair would take",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-027",
+"answer": "She took the job despite the fact that the pay was low.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-028",
+"answer": "not to be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-029",
+"answer": [
+"as"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Complete with one word' fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-030",
+"answer": [
+"Despite the delay, we arrived on time."
+],
+"other_correct": [
+"In spite of the delay, we arrived on time.",
+"We arrived on time despite the delay.",
+"We arrived on time in spite of the delay."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Correct the mistake' allows the in spite of fix too.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-031",
+"answer": [
+"spite"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Near-duplicate of 14.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-032",
+"answer": "Despite",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-033",
+"answer": "were",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 (second conditional with were); low for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-034",
+"answer": [
+"built",
+"would travel"
+],
+"other_correct": [
+[
+"built",
+"could travel"
+],
+[
+"built",
+"might travel"
+],
+[
+"were to build",
+"would travel"
+],
+[
+"built",
+"would be travelling"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The first sentence is only context; ok.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-035",
+"answer": "If I would have a car, I would drive to work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1.",
+"sense_problem": "Believable learner mistake; fine."
+},
+{
+"id": "r20-4-036",
+"answer": "If I had a car, I wouldn't take the bus.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1.",
+"sense_problem": "Option 3 repeats the mistake of 35."
+},
+{
+"id": "r20-4-037",
+"answer": [
+"If I had a garden, I would grow vegetables."
+],
+"other_correct": [
+"If I had a garden, I'd grow vegetables.",
+"I would grow vegetables if I had a garden.",
+"I'd grow vegetables if I had a garden.",
+"If I had a garden, I could grow vegetables.",
+"If I were to have a garden, I would grow vegetables."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-038",
+"answer": "had checked / wouldn't have got",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Distractor 4 'wouldn't get' is wrong but close; American 'gotten' not offered."
+},
+{
+"id": "r20-4-039",
+"answer": [
+"hadn't stayed",
+"wouldn't have missed"
+],
+"other_correct": [
+[
+"had not stayed",
+"would not have missed"
+],
+[
+"hadn't stayed",
+"would not have missed"
+],
+[
+"had not stayed",
+"wouldn't have missed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No form is hinted; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-040",
+"answer": "If they'd have asked me, I would've helped.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'If they'd have asked' is common in informal speech, so some learners may call it acceptable."
+},
+{
+"id": "r20-4-041",
+"answer": "If we had known about the problem, we would have called you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-042",
+"answer": [
+"If I had known about the sale, I would have bought the coat."
+],
+"other_correct": [
+"If I'd known about the sale, I'd have bought the coat.",
+"I would have bought the coat if I had known about the sale.",
+"I'd have bought the coat if I'd known about the sale.",
+"Had I known about the sale, I would have bought the coat.",
+"If I had known about the sale, I would have bought the coat."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-043",
+"answer": "But",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Without for' is impossible; 'but for' is a formal phrase B2.2 may not know.",
+"level_problem": "",
+"sense_problem": "Options 'Without' and 'Unless' + 'for' are not believable errors."
+},
+{
+"id": "r20-4-044",
+"answer": [
+"Were the price lower, more people would buy it."
+],
+"other_correct": [
+"Were the price to be lower, more people would buy it.",
+"Were the price lower, more people would buy it."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gives away the form; mostly copying.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-045",
+"answer": "Should you have questions, let us know.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-046",
+"answer": [
+"Had",
+"studied"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.2 slightly easy; 'Did' and 'study' not believable.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-047",
+"answer": [
+"Had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction has one gap; the note says 'each gap'.",
+"level_problem": "B2.2 fixed phrase; fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-4-048",
+"answer": "made",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-049",
+"answer": [
+"didn't tell"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'don't tell' (informal, some speakers; usually judged less correct)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-050",
+"answer": "I wish I could have come to your wedding.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-051",
+"answer": "If only we had tested the app, we would not have these problems.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-052",
+"answer": [
+"I'd rather you didn't call me after ten."
+],
+"other_correct": [
+"I would rather you didn't call me after ten.",
+"I'd rather you not call me after ten.",
+"I'd rather you didn't phone me after ten.",
+"I'd rather not be called after ten.",
+"I'd rather you wouldn't call me after ten."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Write one sentence' open; many answers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-053",
+"answer": "He accused me of losing his keys.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'as an accusation' hints the verb accuse.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-054",
+"answer": [
+"not to sign anything until she had read it"
+],
+"other_correct": [
+[
+"not to sign anything until she'd read it"
+],
+[
+"not to sign anything until she read it"
+],
+[
+"not to sign anything before she had read it"
+],
+[
+"against signing anything until she had read it"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No word count given; many wordings.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-055",
+"answer": "She insisted to pay for dinner.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-056",
+"answer": "The company apologised for the delay and promised a refund.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-057",
+"answer": "Would you mind telling me where the nearest pharmacy is?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-058",
+"answer": [
+"Could you tell me why the flight is delayed?"
+],
+"other_correct": [
+"Could you tell me why the flight has been delayed?",
+"Could you tell me why the flight's delayed?",
+"Could you tell me why the flight was delayed?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-059",
+"answer": "Do you know what time does it open?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-4-060",
+"answer": "I was wondering if you could tell me where the meeting room is.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

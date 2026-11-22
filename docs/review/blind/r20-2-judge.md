@@ -1,0 +1,64 @@
+# Blind check r20-2: judge's decisions
+
+60 tasks. accept 3, fix 22, keep 28, practice_only 7
+
+- r20-2-001 **keep**: wish + past for now is on the B2.2 card; the task is already a learning task (role learn), so easy is fine. *I wish I would live* is the card's own listed mistake (*I wish I would have more time*), so it is believable.
+- r20-2-002 **keep**: *wish* + *would* (annoyance) is a B2.2 point on the card and in the grammar map; every wrong option is wrong here.
+- r20-2-003 **keep**: Only *hadn't sent* fits *yesterday* + *Now everyone knows*; wish + past perfect is on the B2.2 card. The 'each gap' remark is about the app's display, not the task.
+- r20-2-004 **fix**: *If only I would have saved* is a real B2 mistake, but the right sentence *I wish I had saved more when I was young* is a near-copy of it (saved more), and *earned a bit more money* repeats *money*. Two right sentences replaced so the three are about different things.
+- r20-2-005 **fix**: Gate long_frame: the speech frame is a setting in front of the instruction, but it is what rules out *If only we listened* (a present-habit reading). The frame goes and *last year ... now* in the sentence does its job; *had listen* (a form nobody chooses) is dropped.
+- r20-2-006 **fix**: The check demands *had*, so a correct past regret with *could have* (*I wish I could have gone*) fails. Widen the second check; naming *I wish / If only* is fine, the point is the form after it.
+- r20-2-007 **practice_only**: *might* staying the same is a B1 reporting point (rep_backshift, B1.1 in the map) in a B2.1 frame, and *might been* is a form nobody writes; correct, but far too easy for a check at B2.1.
+- r20-2-008 **keep**: Already a learning task; only *Because it is still true* answers the question (rep_stay, B2.1). *Because said is in the past* is true as a fact but explains the opposite, a believable misunderstanding.
+- r20-2-009 **keep**: *Yesterday he signed it* is the changed situation the 11 November rule asks for to justify the step back, so it is not superfluous. *told he* is a mistake the card lists (*She told that*).
+- r20-2-010 **keep**: The check accepts *had to / must / should*, which covers the readers' answers; *warning* is ordinary English for a doctor's *must*.
+- r20-2-011 **practice_only**: Basic *can → could* + *if* is rep_q_yn, a B1.2 point in the grammar map, in a B2.1 check; correct but far too easy for the level.
+- r20-2-012 **practice_only**: *told me not to* is rep_orders, B1.2 in the map, at its simplest; correct but too easy for a B2.1 check.
+- r20-2-013 **keep**: *him* is wrong: Lena asks for herself (a woman's name), so *her* is the only pronoun; the accepted list already has *to send her*, *if / whether I could send her*. Gap count is display, not the task.
+- r20-2-014 **keep**: *will → would* and statement order in a wh-report; one correct option, every wrong option is a real mistake; fits B2.1.
+- r20-2-015 **keep**: Open writing task; the check accepts both *to call* and *if / whether I could call*, as the readers ask.
+- r20-2-016 **fix**: Question word + *to* is B2.2 in the map (iq_to), so the level stands; *what to doing* is not a mistake learners make and goes (two believable wrong options remain).
+- r20-2-017 **practice_only**: *where she should park* is rep_q_wh (B1.2 in the map) at its simplest, too easy for a B2.2 check. Also drop *where does she should park*, a form nobody writes.
+- r20-2-018 **practice_only**: Same B1.2 point (rep_q_wh) at its simplest in a B2.2 frame. Add the correct *were to* reports; *where we/they would meet* changes *should* into a prediction and *where I should meet* has the wrong person, so they stay rejected.
+- r20-2-019 **keep**: *whether* + present perfect passive → past perfect passive is a fair B2.2 report; *asked that* is a listed learner mistake (IND-YESNO).
+- r20-2-020 **practice_only**: A basic yes/no report (rep_q_yn, B1.2) in a B2.2 frame. Add *whether or not*; *is accurate* stays rejected under the taught rule of 11 November (step back after *asked*), and *had been accurate* changes the meaning.
+- r20-2-021 **fix**: The correct option is the rule card's own example (*He apologised for being late*), which a task may not repeat (21 November), and *for be late* is a form nobody writes. New sentence, same point.
+- r20-2-022 **keep**: A learning task; the four verbs are on the card and each fits only one sentence.
+- r20-2-023 **keep**: *refuse to* is on the B2.2 card; *refused me to* matches the listed mistake type (*promised me to come*); one correct option.
+- r20-2-024 **accept**: Add the perfect *-ing* with *about* (correct, same meaning). *for missing the meeting* changes what she did (forgot ≠ missed); *that she had forgotten* is outside the pattern the task and card teach (Murphy 62: *apologise for*) and stays out.
+- r20-2-025 **fix**: *as an accusation* names the verb that every option already has and adds nothing; covered, the task still has one answer, so it goes.
+- r20-2-026 **keep**: A learning task about meaning; the reversed meaning (A offer, B demand) is a believable confusion; one correct option.
+- r20-2-027 **fix**: *promised to that* and *promised it not happening* are strings nobody writes. Kept the real mistake (*apologised the delay*) and one believable pattern mistake.
+- r20-2-028 **keep**: *Say what Leo did* is the 14 November exception (an open task where the learner chooses the reporting verb); the check accepts *denied, insisted, claimed, protested*.
+- r20-2-029 **fix**: *advised to me take* is not a mistake learners make; replace it with the map's listed mistake *advised to* without a person.
+- r20-2-030 **keep**: A learning task; *refused* is on the B2.2 card and the only verb that fits.
+- r20-2-031 **fix**: Both readers: *in formal English* is superfluous (covered, one option still fits); *complained to be terrible the service* is a random string. Both go.
+- r20-2-032 **keep**: The 14 November exception for an open task that asks for the reporting verb; the check accepts *thanked* or *expressed*.
+- r20-2-033 **keep**: A learning task; *indirect* is ordinary English in an option, not needed to solve it; one correct answer.
+- r20-2-034 **keep**: Not a mistake task, so options that differ only in word order are the point; one correct option, fits B2.1.
+- r20-2-035 **keep**: Open writing task; the checks accept every polite start and only check the word order after *when*.
+- r20-2-036 **fix**: The correct option makes the card's own example (*I don't know what to do*), and *what to doing / what to I do* are strings nobody writes. New frame with the map's listed mistakes (*how should we*, *how* + base form).
+- r20-2-037 **keep**: A learning task of a B2.2 point (iq_to); one meaning fits.
+- r20-2-038 **keep**: The task is to shorten the given sentence; *Could you* changes another word and *the way to* drops the *to* + verb the rewrite asks for, so neither is added. Naming *to* is allowed in a rewrite.
+- r20-2-039 **fix**: *who does responsible* is a form nobody writes; two believable wrong options remain.
+- r20-2-040 **fix**: The model answer is the rule card's own example (*I have no idea how long the meeting will take*); a new model, the check stays.
+- r20-2-041 **keep**: Only *Whether he will attend* works as a subject; question order with *whether* is the card's listed mistake; fits B2.2.
+- r20-2-042 **accept**: *It remains unclear who made the decision* is correct and keeps the meaning (like the accepted *It's unclear*).
+- r20-2-043 **fix**: *You write a report:* is a setting in front of the instruction; covered, one option still fits.
+- r20-2-044 **keep**: A learning task; one meaning fits, the others are believable misreadings of *whatever*.
+- r20-2-045 **fix**: Both readers: unclear what to write, and *Whoever it is, don't answer* and *Who calls doesn't matter, so don't answer* (the question as the subject, on the card) are correct one-sentence answers that were rejected. Clearer instruction, all of them accepted.
+- r20-2-046 **keep**: Open writing task; the check accepts every -ever word; *flexible rule* is clear enough with the model.
+- r20-2-047 **fix**: The instruction is unnatural and gives the start and the end away (rule: a word order says only *Put the words in order.*). Without it the other natural orders (*if*-part second, *now* before *a doctor*) must be accepted.
+- r20-2-048 **keep**: *Had I called you about the delay, I would have known* is illogical (both readers say so), so the only sensible order is the key's.
+- r20-2-049 **practice_only**: Six cards with the start given leave nothing to decide at B2.2 (*the missing meeting* is nonsense); keep it for practice and give it the plain instruction.
+- r20-2-050 **keep**: One natural order; the subject clause in statement order is the B2.2 point.
+- r20-2-051 **keep**: Only *Had ... left* gives the inverted past condition; *Did / leave* are believable wrong cards; fits B2.2.
+- r20-2-052 **fix**: The sentence is the rule card's own example (*The ground was wet. It had been raining*), which a task may not repeat. New scene, same point and options.
+- r20-2-053 **keep**: *came* rules out *have been standing*; *had been stand* is the card's listed mistake type (*had been work*); past perfect continuous is B2.1-B2.2 in the map. (r20-2-059, the same scene, gets a new one.)
+- r20-2-054 **fix**: Nearly the card's own example (*She was tired because she'd been working hard*), and the same scene as r20-2-056. New scene; *had been train* follows the card's listed mistake.
+- r20-2-055 **fix**: The sentence is the card's own example and listed mistake (*We'd been playing tennis for half an hour when it started to rain*). New scene with the same kind of cards.
+- r20-2-056 **fix**: Nearly the card's example (tired ... working hard all day) and readers miss the *'d* forms. New scene, *'d* forms listed, *had worked* still accepted with its note; past simple *worked* stays out (the point is going back from a past moment).
+- r20-2-057 **fix**: The answer is the card's own example (*By lunchtime she'd written ten emails*). New sentence; *'d* listed; *had been serving forty customers* is wrong with a number, as the card teaches.
+- r20-2-058 **accept**: *He had run* is correct English for the cause of being out of breath (as *had worked* is accepted in the twin task); add it and the *'d* forms both readers listed.
+- r20-2-059 **fix**: The sentence is the card's own example (*At last the bus came. I'd been waiting for 20 minutes*), the same scene as r20-2-053, and both readers could read *have been waiting* as speech. New past frame where only *had been waiting* fits.
+- r20-2-060 **fix**: The sentence is the card's own example (*I hope the bus comes soon. I've been waiting for 20 minutes*). New scene for the same contrast, *'ve* forms listed, the simple form accepted with its note.

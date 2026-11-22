@@ -1,0 +1,279 @@
+[
+ {
+  "id": "r20b-3-002",
+  "decision": "keep",
+  "why": "A revision task already marked learn (practice only); the past vs now/future contrast is on the B2.2 card. The level flag changes nothing."
+ },
+ {
+  "id": "r20b-3-003",
+  "decision": "fix",
+  "why": "'would acted' is a form nobody writes (like 'is get'), not a believable mistake. It is dropped; the two remaining wrong options are real learner mistakes.",
+  "fix": {
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I would have acted differently."
+   ]
+  }
+ },
+ {
+  "id": "r20b-3-004",
+  "decision": "accept",
+  "why": "'might be living' gives a possible present result of the changed past and is correct (an earlier judge also asked for might/could in this pattern).",
+  "accept": [
+   [
+    "If he had taken the job, he might be living in Paris now.",
+    "If he'd taken the job, he might be living in Paris now."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-006",
+  "decision": "keep",
+  "why": "The two wrong options are different real mistakes (would have after if only; past simple for a past regret). Fine."
+ },
+ {
+  "id": "r20b-3-007",
+  "decision": "keep",
+  "why": "The wrong options are believable mistakes; the level flag is a revision point already decided."
+ },
+ {
+  "id": "r20b-3-009",
+  "decision": "keep",
+  "why": "'suggested to go' is the card's typical mistake; the three right sentences use three different verbs. Level flag not a reason to change."
+ },
+ {
+  "id": "r20b-3-010",
+  "decision": "fix",
+  "why": "'congratulate someone for' is attested (especially US), so 'for' may be correct English here. It is removed from the bank; 'of' and 'to' are card words that are clearly wrong.",
+  "fix": {
+   "bank": [
+    "on",
+    "of",
+    "to"
+   ]
+  }
+ },
+ {
+  "id": "r20b-3-013",
+  "decision": "accept",
+  "why": "'Who made the decision is unclear' is correct and keeps the meaning (like the accepted 'Who made the decision is not clear').",
+  "accept": [
+   [
+    "Who made the decision is unclear."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-014",
+  "decision": "keep",
+  "why": "Different sentence from 040; 'Whomever' is the card's own mistake. Only one option fits."
+ },
+ {
+  "id": "r20b-3-015",
+  "decision": "accept",
+  "why": "Fronted 'now' ('now I would be a doctor if...', 'if I had studied medicine, now I would be a doctor') is less natural but correct, so it is accepted.",
+  "accept": [
+   [
+    "now I would be a doctor if I had studied medicine",
+    "if I had studied medicine now I would be a doctor"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-016",
+  "decision": "keep",
+  "why": "'had been train' is the card's listed mistake (had been work); 'has been training' is wrong after 'was covered ... when I saw him'."
+ },
+ {
+  "id": "r20b-3-017",
+  "decision": "keep",
+  "why": "'served' is not natural with 'By eleven o'clock' and the 4 November rule accepts only the past perfect; 'had been serving' with a number is wrong, as the card teaches."
+ },
+ {
+  "id": "r20b-3-018",
+  "decision": "keep",
+  "why": "The gap tests was doing vs had been doing at a past moment, a point of the narrative_b2 card; the level flag is a revision decision."
+ },
+ {
+  "id": "r20b-3-019",
+  "decision": "accept",
+  "why": "Putting the despite phrase at the end is correct and keeps the meaning (030 already accepts it).",
+  "accept": [
+   [
+    "The project was finished on time despite the delays.",
+    "The project was finished on time in spite of the delays."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-022",
+  "decision": "keep",
+  "why": "'for storage of' / 'for the storing of' change the structure (noun instead of -ing); the task is about for + -ing."
+ },
+ {
+  "id": "r20b-3-023",
+  "decision": "keep",
+  "why": "Both clause orders are already accepted."
+ },
+ {
+  "id": "r20b-3-025",
+  "decision": "keep",
+  "why": "The fronted order is already accepted; 'told us before every match to warm up' is not a natural order (as the r20 judge decided)."
+ },
+ {
+  "id": "r20b-3-027",
+  "decision": "accept",
+  "why": "'prepared better' is less natural than 'better prepared' but correct; accepted in both clause orders and with the people swapped. 'if we had won the team would have been better prepared' is illogical.",
+  "accept": [
+   [
+    "if the team had been prepared better we would have won",
+    "we would have won if the team had been prepared better",
+    "if we had been prepared better the team would have won",
+    "the team would have won if we had been prepared better"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-028",
+  "decision": "keep",
+  "why": "Practice-only task; both natural orders accepted. 'the strike went ahead despite the conference' does not make sense."
+ },
+ {
+  "id": "r20b-3-029",
+  "decision": "keep",
+  "why": "All four orders the readers list are already accepted."
+ },
+ {
+  "id": "r20b-3-030",
+  "decision": "fix",
+  "why": "A near-copy of 019 in the same topic and level (Despite of the delay(s) ... on time): a cloned frame (rule of 4 November). New sentence with despite + -ing, same point.",
+  "fix": {
+   "q": "Correct the mistake: She got the job despite of having no experience.",
+   "answers": [
+    [
+     "She got the job despite having no experience.",
+     "She got the job in spite of having no experience.",
+     "Despite having no experience, she got the job.",
+     "In spite of having no experience, she got the job."
+    ]
+   ],
+   "why": "*despite / in spite of* + noun or *-ing* (*despite having*); never *despite of*.",
+   "why_lv": "*despite / in spite of* + lietvārds vai *-ing* forma (*despite having*); nekad *despite of*."
+  }
+ },
+ {
+  "id": "r20b-3-031",
+  "decision": "accept",
+  "why": "'she'd not have missed' (= would not have) is a correct British contraction.",
+  "accept": [
+   [],
+   [
+    "'d not have missed"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-033",
+  "decision": "keep",
+  "why": "'wouldn't park' and 'don't park' are not standard after I'd rather you (the card lists 'don't' as the mistake); the start is given, so 'Please, ...' does not follow it."
+ },
+ {
+  "id": "r20b-3-034",
+  "decision": "keep",
+  "why": "would/could/might and 'd are already accepted; the verb form is the task."
+ },
+ {
+  "id": "r20b-3-036",
+  "decision": "keep",
+  "why": "The 4 November rule: accept only the past perfect here ('so she left early' needs it)."
+ },
+ {
+  "id": "r20b-3-038",
+  "decision": "accept",
+  "why": "'we were to arrive' is correct and matches the accepted 'they were to arrive' and 'we should arrive'. 'we would arrive' changes the meaning (no longer what they should do).",
+  "accept": [
+   [
+    "They asked what time we were to arrive."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-039",
+  "decision": "keep",
+  "why": "Question word + to is on the B2.2 ind_advanced card; level flag not a reason."
+ },
+ {
+  "id": "r20b-3-040",
+  "decision": "keep",
+  "why": "Different sentence from 014, one fitting option; the twin is allowed (one twin per source)."
+ },
+ {
+  "id": "r20b-3-041",
+  "decision": "keep",
+  "why": "Already a learn (practice only) task; level flag not a reason."
+ },
+ {
+  "id": "r20b-3-042",
+  "decision": "keep",
+  "why": "The taught rule (11 November): after a past reporting verb only the backshifted form is accepted; 'has lived' stays rejected."
+ },
+ {
+  "id": "r20b-3-043",
+  "decision": "keep",
+  "why": "Only 'Despite' fits before a noun; the level flag is a revision decision."
+ },
+ {
+  "id": "r20b-3-045",
+  "decision": "fix",
+  "why": "With no time word, 'started' (and 'is to start') are also correct. The 21 October rule: a context that leaves the tense open gets a time word. 'tomorrow' added; 'is to start' accepted.",
+  "fix": {
+   "q": "I'm not sure what time the meeting ___ tomorrow. (start)",
+   "answers": [
+    [
+     "starts",
+     "will start",
+     "is going to start",
+     "is starting",
+     "is to start"
+    ]
+   ],
+   "why": "Inside a sentence the question has statement order, without *does*: *what time the meeting starts / will start tomorrow*.",
+   "why_lv": "Teikuma iekšienē jautājumam ir *apgalvojuma* secība, bez *does*: *what time the meeting starts / will start tomorrow*."
+  }
+ },
+ {
+  "id": "r20b-3-046",
+  "decision": "keep",
+  "why": "Both answers the reader names are already accepted."
+ },
+ {
+  "id": "r20b-3-047",
+  "decision": "keep",
+  "why": "unless is on the B2.2 cond_advanced card and the card lists 'unless ... doesn't' as the mistake; the level flag is a revision decision."
+ },
+ {
+  "id": "r20b-3-048",
+  "decision": "accept",
+  "why": "'not use' (I'd rather you not use) is correct (mainly US) and is accepted in the twin 033. 'wouldn't use' and 'don't use' are not standard after I'd rather you (the card lists 'don't').",
+  "accept": [
+   [
+    "not use"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-3-049",
+  "decision": "keep",
+  "why": "'weren't / wasn't' are already accepted."
+ },
+ {
+  "id": "r20b-3-050",
+  "decision": "keep",
+  "why": "'Those who wins' is wrong (Those who win); the bracket word is the word to put into the right form, as the rules allow; 'Anyone who' etc. are already accepted."
+ },
+ {
+  "id": "r20b-3-051",
+  "decision": "keep",
+  "why": "'had booked' is not used after It's high time for something that should happen now (Murphy: past simple)."
+ }
+]

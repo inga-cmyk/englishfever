@@ -1,0 +1,554 @@
+[
+ {
+  "id": "r20b-3-001",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?",
+  "options": [
+   "The deal would certainly have been signed.",
+   "The deal was impossible from the start.",
+   "The deal was signed in the end.",
+   "The deal was possible, not certain."
+  ]
+ },
+ {
+  "id": "r20b-3-002",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+  "options": [
+   "There is no difference in meaning.",
+   "A is about the past, B about now or the future.",
+   "A is about the future, B the past.",
+   "A is about now, B about the past."
+  ]
+ },
+ {
+  "id": "r20b-3-003",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If I had realised the impact of my decision, I would have acted differently.",
+   "If I realised the impact of my decision, I would have acted differently.",
+   "If I would have realised the impact of my decision, I would have acted differently.",
+   "If I had realised the impact of my decision, I would acted differently."
+  ]
+ },
+ {
+  "id": "r20b-3-004",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-005",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-006",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If only we had listened to the warning signs last year, we would not be in this position now.",
+   "If only we would have listened to the warning signs last year, we would not be in this position now.",
+   "If only we listened to the warning signs last year, we would not be in this position now."
+  ]
+ },
+ {
+  "id": "r20b-3-007",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Tom's question to you: 'What should I do?' Which sentence reports it?",
+  "options": [
+   "He asked me what should he do.",
+   "He asked me what to do.",
+   "He asked me what he does."
+  ]
+ },
+ {
+  "id": "r20b-3-008",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He wanted to know whether the hotel had a pool.",
+   "He asked me if I was ready.",
+   "She asked me whether or not did I agree.",
+   "They asked whether we had eaten."
+  ]
+ },
+ {
+  "id": "r20b-3-009",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My doctor advised me to rest.",
+   "She suggested to go by train.",
+   "They promised that they would call back.",
+   "He denied taking the money."
+  ]
+ },
+ {
+  "id": "r20b-3-010",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+  "word_cards": [
+   "to",
+   "on",
+   "for",
+   "of"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20b-3-011",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
+  "options": [
+   "She advised me to take the earlier train.",
+   "She insisted me to take the earlier train.",
+   "She suggested me to take the earlier train.",
+   "She advised to take the earlier train."
+  ]
+ },
+ {
+  "id": "r20b-3-012",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Why the meeting was cancelled is still a mystery.",
+   "I don't know what to say to him.",
+   "We still can't decide whether moving to a bigger flat.",
+   "Do you know whether the museum is open on Mondays?"
+  ]
+ },
+ {
+  "id": "r20b-3-013",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-014",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct word: ___ booked the meeting room should cancel it if plans change.",
+  "options": [
+   "Wherever",
+   "Whatever",
+   "Whoever",
+   "Whomever"
+  ]
+ },
+ {
+  "id": "r20b-3-015",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "would",
+   "a",
+   "doctor",
+   "be",
+   "I",
+   "if",
+   "medicine",
+   "studied",
+   "had",
+   "now",
+   "I"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20b-3-016",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Mark was covered in sweat when I saw him. He ___ at the gym.",
+  "options": [
+   "had been train",
+   "had been training",
+   "has been training"
+  ]
+ },
+ {
+  "id": "r20b-3-017",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "The shop was busy yesterday. By eleven o'clock Mark ___ forty customers. (serve)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-018",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "When I looked outside, it ___ any more, but the roads were still wet. (not / snow)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-019",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Despite of the delays, the project was finished on time.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-020",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: This app is used ___ your spending.",
+  "options": [
+   "for track",
+   "for tracking",
+   "for to track"
+  ]
+ },
+ {
+  "id": "r20b-3-021",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "He studied hard; nevertheless, he failed the test.",
+   "He studied hard, nevertheless, he failed the test.",
+   "He studied hard nevertheless, he failed the test."
+  ]
+ },
+ {
+  "id": "r20b-3-022",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *for*: These boxes are for store old documents.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-023",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "loan",
+   "needs",
+   "the",
+   "bank",
+   "for",
+   "go",
+   "signature",
+   "order",
+   "the",
+   "your",
+   "to",
+   "in",
+   "through"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20b-3-024",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If she ___ so stubborn, she ___ accepted their apology last week.",
+  "word_cards": [
+   "will have",
+   "would have",
+   "would be",
+   "weren't"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20b-3-025",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "warm",
+   "up",
+   "coach",
+   "the",
+   "before",
+   "us",
+   "every",
+   "to",
+   "match",
+   "told"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20b-3-026",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "The client complained ___ the delivery ___ been three days late.",
+  "word_cards": [
+   "had",
+   "have",
+   "that",
+   "to"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20b-3-027",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "would",
+   "had",
+   "the",
+   "been",
+   "won",
+   "prepared",
+   "better",
+   "if",
+   "have",
+   "team",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20b-3-028",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "the",
+   "went",
+   "despite",
+   "ahead",
+   "strike",
+   "conference"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20b-3-029",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "I",
+   "asked",
+   "her",
+   "help",
+   "could",
+   "if",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20b-3-030",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Despite of the delay, we arrived on time.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-031",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-032",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ he ___ harder, he would have passed the exam.",
+  "word_cards": [
+   "Had",
+   "Should",
+   "studied",
+   "study"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20b-3-033",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *I'd rather you*: Please don't park in front of my garage.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-034",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-035",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Combine the sentences. Start with *It is unclear*: Which route should we take? It is unclear.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-036",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-037",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "My sister told she would call me as soon as she landed.",
+   "My sister said she would call me as soon as she would land.",
+   "My sister said she would call me as soon as she landed.",
+   "My sister said she would call me as soon as she will land."
+  ]
+ },
+ {
+  "id": "r20b-3-038",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Report this. Start with *They asked*: 'What time should we arrive?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20b-3-039",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which is correct? 'We weren't sure ___.'",
+  "options": [
+   "where go",
+   "where should we go",
+   "where do we go",
+   "where to go"
+  ]
+ },
+ {
+  "id": "r20b-3-040",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct word: ___ called the help desk this morning didn't leave a name.",
+  "options": [
+   "Whomever",
+   "Whoever",
+   "Whatever",
+   "Wherever"
+  ]
+ },
+ {
+  "id": "r20b-3-041",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ more if the gym were closer to my office. (exercise)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-042",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "'I've lived here for two years.' She told me she ___ there for two years. (live)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-043",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "___ her knee injury, she finished the marathon.",
+  "word_cards": [
+   "Even though",
+   "Despite",
+   "Although",
+   "Despite of"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20b-3-044",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If she hadn't checked the code, the app ___ . (crash)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-045",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "I'm not sure what time the meeting ___ . (start)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-046",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If I ___ allergic to cats, I would have stayed at Anna's place last weekend. (not / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-047",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "We'll start at nine unless the speaker ___ late. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-048",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "In future, I'd rather you ___ my phone without asking. (not / use)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-049",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If it ___ for your advice, I would never have applied. (not / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-050",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ wins the competition will get a trip to Lisbon. (who)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20b-3-051",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "It's high time we ___ the tickets. The concert is next week.",
+  "word_cards": [
+   "have booked",
+   "will book",
+   "had booked",
+   "booked"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20b-3-052",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "I'd sooner ___ a sandwich at my desk than go to that noisy canteen.",
+  "word_cards": [
+   "have",
+   "having",
+   "had",
+   "to have"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

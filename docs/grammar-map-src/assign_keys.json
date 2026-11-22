@@ -17010,5 +17010,297 @@
 "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas": [
 "contrast_b2",
 "read"
+],
+"cond_third | B2.2 | mcq | What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.' | A is about the past, B about now or the future.": [
+"c2_c3",
+"read"
+],
+"cond_mixed | B2.2 | mcq | A colleague says: 'If I had a better memory, I would have remembered your birthday.' What does the sentence say? | A quality now caused a result in the past.": [
+"c_mixed2",
+"read"
+],
+"cond_mixed | B2.2 | text | Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now. | ": [
+"c_inv",
+"read"
+],
+"cond_advanced | B2.2 | mcq | Which sentence is correct? | If only we had listened to the warning signs last year, we would not be in this position now.": [
+"wish_past",
+"read"
+],
+"rep_verbs | B2.2 | mcq | Which sentence is correct? | The driver apologised for blocking the exit.": [
+"rv_prep_ing",
+"read"
+],
+"rep_verbs | B2.2 | mcq | Which sentence reports this: 'You broke the printer!' | She accused me of breaking the printer.": [
+"rv_prep_ing",
+"read"
+],
+"rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | My manager accused me for losing the file.": [
+"rv_prep_ing",
+"read"
+],
+"rep_verbs | B2.2 | mcq | Which sentence reports the customer's words: 'The service was terrible.' | The customer complained that the service had been terrible.": [
+"rv_that",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which is correct? 'The instructions don't explain ___ the new printer.' | how to set up": [
+"iq_to",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We still can't decide whether moving to a bigger flat.": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We talked about how could we cut costs.": [
+"iq_wh",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Choose the correct option: The question is ___. | whether the project is worth the cost": [
+"iq_whether",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Choose the correct word: ___ booked the meeting room should cancel it if plans change. | Whoever": [
+"whoever",
+"read"
+],
+"ind_advanced | B2.2 | text | Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer. | ": [
+"whoever",
+"read"
+],
+"cond_mixed | B2.1 | order | Put the words in order. | if I had studied medicine I would be a doctor now": [
+"c_mixed",
+"read"
+],
+"rep_verbs | B2.2 | order | Put the words in order. | she apologised for missing the meeting": [
+"rv_prep_ing",
+"read"
+],
+"narrative_b2 | B2.1 | mcq | Choose the correct option: Her feet were sore. She ___ around the city all day. | had been walking": [
+"pastpc",
+"read"
+],
+"narrative_b2 | B2.2 | mcq | Choose the correct option: Mark was covered in sweat when I saw him. He ___ at the gym. | had been training": [
+"pastpc",
+"read"
+],
+"narrative_b2 | B2.1 | gap | I ___ the report for three hours when my laptop crashed. | ": [
+"pastpc",
+"read"
+],
+"narrative_b2 | B2.1 | gap | Anna's hands were dirty when she came in. She ___ in the garden all afternoon. (work) | ": [
+"pastpc",
+"read"
+],
+"narrative_b2 | B2.1 | gap | The shop was busy yesterday. By eleven o'clock Mark ___ forty customers. (serve) | ": [
+"pastpc_vs",
+"read"
+],
+"narrative_b2 | B2.2 | gap | When the doctor finally called my name, I ___ for over an hour. | ": [
+"pastpc",
+"read"
+],
+"narrative_b2 | B2.2 | gap | When I looked outside, it ___ any more, but the roads were still wet. (not / snow) | ": [
+"pastpc_vs",
+"read"
+],
+"narrative_b2 | B2.2 | gap | By the time he retired, he ___ the same car for thirty years. (have) | ": [
+"pastpc",
+"read"
+],
+"conj_clauses | B2.1 | text | Correct the mistake: Despite of the delays, the project was finished on time. | ": [
+"contrast_b1",
+"read"
+],
+"conj_b2 | B2.1 | mcq | Choose the correct option: The concert was cancelled ___ the singer's illness. | owing to": [
+"reason_result_b2",
+"read"
+],
+"conj_b2 | B2.1 | mcq | Choose the correct option: This app is used ___ your spending. | for tracking": [
+"purpose_b2",
+"read"
+],
+"conj_b2 | B2.1 | text | Correct the mistake: Save a copy on a USB stick in case your laptop will crash. | ": [
+"in_case",
+"read"
+],
+"conj_b2 | B2.1 | text | Correct the mistake. Keep *for*: These boxes are for store old documents. | ": [
+"purpose_b2",
+"read"
+],
+"conj_b2 | B2.2 | gap | The company lost its biggest client. ___, it had to cut twenty jobs. | ": [
+"reason_result_b2",
+"read"
+],
+"conj_b2 | B2.2 | order | Put the words in order. | the bank needs your signature in order for the loan to go through": [
+"purpose_b2",
+"read"
+],
+"conj_b2 | B2.1 | order | Put the words in order. | the train was cancelled and as a result we missed the concert": [
+"reason_result_b2",
+"read"
+],
+"cond_mixed | B2.2 | gap | If she ___ so stubborn, she ___ accepted their apology last week. | ": [
+"c_mixed2",
+"read"
+],
+"cond_mixed | B2.2 | order | Put the words in order. | had she not missed the train she would be here already": [
+"c_inv",
+"read"
+],
+"ind_advanced | B2.2 | order | Put the words in order. | whoever wins the quiz gets a free dinner": [
+"whoever",
+"rule"
+],
+"conj_clauses | B2.1 | order | Put the words in order. | despite the strike the conference went ahead": [
+"contrast_b1",
+"read"
+],
+"ind_polite | B2.1 | order | Put the words in order to make a question. | would you mind telling me how long the repair will take": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B2.1 | gap | Complete with one word: She spoke slowly in ___ to be understood. | ": [
+"purpose_b2",
+"read"
+],
+"cond_advanced | B2.2 | mcq | We didn't back up the files last week. Choose the correct sentence. | If only we had backed up the files, we wouldn't be in this mess now.": [
+"wish_past",
+"read"
+],
+"unreal_time | B2.2 | text | Start with *I'd rather you*: Please don't park in front of my garage. | ": [
+"rather_you",
+"read"
+],
+"rep_verbs | B2.2 | mcq | Which sentence reports this: 'You lost my keys!' | He accused me of losing his keys.": [
+"rv_prep_ing",
+"read"
+],
+"cond_mixed | B2.1 | mcq | Choose the correct option: I didn't charge my phone last night, so it's dead now. | If I had charged my phone, it would be working now.": [
+"c_mixed",
+"read"
+],
+"cond_third | B2.1 | mcq | Which sentence has a mistake? | If I would have saved a copy, I wouldn't have lost my work.": [
+"c3",
+"read"
+],
+"ind_advanced | B2.2 | text | Join the sentences: She didn't know. Who should she ask? | ": [
+"iq_to",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Choose the correct word: ___ called the help desk this morning didn't leave a name. | Whoever": [
+"whoever",
+"read"
+],
+"ind_advanced | B2.2 | text | Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you. | ": [
+"whoever",
+"read"
+],
+"ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | Whomever gets home first should start dinner.": [
+"whoever",
+"read"
+],
+"rep_statements | B2.1 | gap | 'I'll send the report tomorrow.' Tom said he ___ the report the next day. (send) | ": [
+"rep_backshift",
+"read"
+],
+"rep_statements | B2.1 | gap | 'I've lived here for two years.' She told me she ___ there for two years. (live) | ": [
+"rep_backshift2",
+"read"
+],
+"ind_polite | B2.1 | gap | Could you tell me what time the museum ___ on Sundays? (open) | ": [
+"iq_wh",
+"read"
+],
+"conj_clauses | B2.1 | gap | ___ her knee injury, she finished the marathon. | ": [
+"contrast_b1",
+"read"
+],
+"conj_clauses | B2.1 | gap | I set two alarms in order ___ my early flight. (not / miss) | ": [
+"purpose_b2",
+"read"
+],
+"conj_b2 | B2.1 | gap | I'll leave you my number in case you ___ any problems with the flat. (have) | ": [
+"in_case",
+"read"
+],
+"rep_verbs | B2.2 | gap | She apologised ___ the meeting without a word. (leave) | ": [
+"rv_prep_ing",
+"read"
+],
+"rep_verbs | B2.2 | gap | Our guide suggested ___ the museum early to avoid the queues. (visit) | ": [
+"rv_ing",
+"read"
+],
+"narrative_b2 | B2.2 | gap | She was smiling when I saw her, but her eyes were red because she ___ . (cry) | ": [
+"pastpc",
+"read"
+],
+"cond_mixed | B2.2 | gap | If I had learned to drive at eighteen, I ___ so much on taxis now. (not / spend) | ": [
+"c_mixed",
+"read"
+],
+"cond_mixed | B2.2 | gap | If I ___ allergic to cats, I would have stayed at Anna's place last weekend. (not / be) | ": [
+"c_mixed2",
+"read"
+],
+"cond_advanced | B2.2 | gap | I wish I ___ closer to my office; the commute takes hours. (live) | ": [
+"wish_pres",
+"read"
+],
+"cond_advanced | B2.2 | gap | ___ we left ten minutes earlier, we would have caught the ferry. (have) | ": [
+"c_inv",
+"read"
+],
+"unreal_time | B2.2 | gap | In future, I'd rather you ___ my phone without asking. (not / use) | ": [
+"rather_you",
+"read"
+],
+"rep_verbs | B2.2 | gap | My father insisted ___ us to the airport. (drive) | ": [
+"rv_prep_ing",
+"read"
+],
+"ind_advanced | B2.2 | gap | Our holiday plans depend on ___ my boss gives me the week off. | ": [
+"iq_whether",
+"read"
+],
+"unreal_time | B2.2 | mcq | Choose the correct option: It's about time the landlord ___ the heating. | repaired": [
+"its_time_past",
+"read"
+],
+"unreal_time | B2.2 | gap | It's high time we ___ the tickets. The concert is next week. | ": [
+"its_time_past",
+"read"
+],
+"unreal_time | B2.2 | mcq | Choose the correct option: It's high time the city ___ more cycle lanes. | built": [
+"its_time_past",
+"read"
+],
+"unreal_time | B2.2 | gap | I'd sooner ___ a sandwich at my desk than go to that noisy canteen. | ": [
+"would_rather",
+"read"
+],
+"unreal_time | B2.2 | mcq | Which sentence has a mistake? | I'd rather to cook at home than eat out.": [
+"would_rather",
+"read"
+],
+"cond_mixed | B2.2 | mcq | A colleague says: 'If I had a better memory, I would have remembered your birthday.' What does the sentence say? | The colleague's memory is poor, and that is why they forgot your birthday.": [
+"c_mixed2",
+"read"
+],
+"conj_clauses | B2.1 | text | Correct the mistake: She got the job despite of having no experience. | ": [
+"contrast_b1",
+"read"
+],
+"ind_advanced | B2.2 | gap | I'm not sure what time the meeting ___ tomorrow. (start) | ": [
+"iq_wh",
+"read"
+],
+"ind_advanced | B2.2 | gap | Our holiday plans depend on ___ my boss gives me the week off or not. | ": [
+"iq_whether",
+"read"
+],
+"narrative_b2 | B2.2 | gap | I hope the meeting ends soon. We ___ for three hours. (talk) | ": [
+"ppc_form",
+"read"
 ]
 }

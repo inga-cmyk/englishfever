@@ -1,0 +1,253 @@
+[
+ {
+  "id": "r20b-2-002",
+  "decision": "keep",
+  "why": "'could have adjust' (have + base verb) was put in on purpose in round r20 as a real learner mistake; the key is right."
+ },
+ {
+  "id": "r20b-2-003",
+  "decision": "keep",
+  "why": "'If I'd have known' is the standard B2 mistake listed for this point; the explanation already says it occurs informally but is not the standard form. Both readers chose the key."
+ },
+ {
+  "id": "r20b-2-004",
+  "decision": "keep",
+  "why": "Option A mixes a second-conditional if-part with 'would have been ... now', a believable confusion of the two patterns; it is clearly wrong and the key is right."
+ },
+ {
+  "id": "r20b-2-005",
+  "decision": "fix",
+  "why": "Both readers found the options abstract ('A quality now caused a result in the past') and one read 'Both parts are about the past' as fitting. The options are now plain paraphrases; the wrong ones are believable misreadings (both past, would have = did, future).",
+  "fix": {
+   "correct": "The colleague's memory is poor, and that is why they forgot your birthday.",
+   "wrong": [
+    "The colleague's memory was poor in the past, but it is fine now.",
+    "The colleague remembered your birthday.",
+    "The colleague will remember your birthday next year."
+   ],
+   "why": "The if-part is past simple: a quality now (the colleague's memory is poor). The result is *would have* + past participle: the past (the birthday was forgotten). The poor memory is the reason.",
+   "why_lv": "*If* daļā ir Past Simple: īpašība tagad (kolēģim ir slikta atmiņa). Otrajā daļā ir *would have* + 3. forma: pagātne (dzimšanas diena tika aizmirsta). Slikta atmiņa ir iemesls."
+  }
+ },
+ {
+  "id": "r20b-2-006",
+  "decision": "keep",
+  "why": "Reader only confirms the mistake (would have after if only) is believable."
+ },
+ {
+  "id": "r20b-2-008",
+  "decision": "accept",
+  "why": "'ought to' means the same as 'should' here and is correct with both pronouns. 'where we would meet' is rejected: would asks about a plan or prediction, not what is best, so it changes the question. The task is already practice only.",
+  "accept": [
+   [
+    "where we ought to meet",
+    "where they ought to meet"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-011",
+  "decision": "keep",
+  "why": "Reader marks it fine."
+ },
+ {
+  "id": "r20b-2-012",
+  "decision": "keep",
+  "why": "Reader confirms no wrong option fits ('how should we set up' keeps question order)."
+ },
+ {
+  "id": "r20b-2-013",
+  "decision": "keep",
+  "why": "As decided in round r20: the card teaches 'after a preposition use whether, not if'; informal 'depends on if' is not the taught standard form, like backshift (11 November)."
+ },
+ {
+  "id": "r20b-2-015",
+  "decision": "keep",
+  "why": "Not a duplicate: 041 is its single twin with a different sentence and different right sentences (one twin per source is allowed, 4 November). 'Whomever' as a subject is a real B2.2 mistake."
+ },
+ {
+  "id": "r20b-2-016",
+  "decision": "keep",
+  "why": "'had been walk' (missing -ing) is a learner mistake the rules allow as a wrong option (rule 4); 'has been walking' does not fit the past."
+ },
+ {
+  "id": "r20b-2-017",
+  "decision": "keep",
+  "why": "'was working' is rejected as in round r20 (task about 'forty minutes'): an activity lasting up to a past moment needs the past perfect (Murphy 15-16); 'had worked' is already accepted."
+ },
+ {
+  "id": "r20b-2-019",
+  "decision": "accept",
+  "why": "'when she left there she had been working for ten years' (and its other clause order) uses all cards and is correct, natural English. 'working for ten years there' stays rejected as an unnatural order.",
+  "accept": [
+   [
+    "when she left there she had been working for ten years",
+    "she had been working for ten years when she left there"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-020",
+  "decision": "keep",
+  "why": "'owing' without 'to' is the card's own mistake (*cancelled owing the fog*), and 'on account' without 'of' is the same mistake; they test the point (the full phrase + noun)."
+ },
+ {
+  "id": "r20b-2-022",
+  "decision": "accept",
+  "why": "Emphatic 'does crash' is correct English and fixes the mistake. 'were to crash' is rejected: not standard after 'in case', which takes the present or should.",
+  "accept": [
+   [
+    "Save a copy on a USB stick in case your laptop does crash."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-023",
+  "decision": "keep",
+  "why": "All bank words are on the conj_b2 card; reason words vs a result word is the point. One reader's 'easy' note is not a defect, and the level was decided earlier."
+ },
+ {
+  "id": "r20b-2-024",
+  "decision": "keep",
+  "why": "Gap 1 takes only 'whether' (whether to); in gap 2 'whether we're late' without 'or not' is not correct as a condition, so only 'if'. Readers agree with the key."
+ },
+ {
+  "id": "r20b-2-025",
+  "decision": "keep",
+  "why": "As decided in round r20: with 'already' only 'had she not missed' is natural (the negative would need 'yet'). Already practice only; inversion without if is the point of the card."
+ },
+ {
+  "id": "r20b-2-026",
+  "decision": "keep",
+  "why": "'I might need a visa, the agent said' reads as a direct quote without quotation marks (the speaker would be the agent), not the reported order the task practises; the people swap is already accepted. Level: already practice only."
+ },
+ {
+  "id": "r20b-2-027",
+  "decision": "keep",
+  "why": "Already practice only, and all four natural orders are accepted; the level flag was decided earlier."
+ },
+ {
+  "id": "r20b-2-028",
+  "decision": "keep",
+  "why": "The readers' 'we would have known ... if you had called' leaves one 'we' card unused, as decided in round r20; the sensible orders using all cards are accepted."
+ },
+ {
+  "id": "r20b-2-029",
+  "decision": "keep",
+  "why": "Readers confirm the instruction is fine; 'will you mind ... would take' is wrong."
+ },
+ {
+  "id": "r20b-2-032",
+  "decision": "keep",
+  "why": "'More people would buy it were the price lower' does not start with Were, as decided in round r20."
+ },
+ {
+  "id": "r20b-2-035",
+  "decision": "keep",
+  "why": "A twin of 014 with a different sentence; one twin per source is allowed (4 November). The wrong options are the card's question-order mistakes."
+ },
+ {
+  "id": "r20b-2-036",
+  "decision": "keep",
+  "why": "The natural clause orders are already accepted."
+ },
+ {
+  "id": "r20b-2-037",
+  "decision": "keep",
+  "why": "'Hadn't she missed' is the classic mistake with negative inversion (Murphy: 'Had I not known', not 'Hadn't I known'); it is what the card teaches. Option C is a correct mixed conditional, which is the task's design."
+ },
+ {
+  "id": "r20b-2-038",
+  "decision": "keep",
+  "why": "'asked to me' is the card's mistake (ask takes the person without to), chosen in round r20."
+ },
+ {
+  "id": "r20b-2-039",
+  "decision": "keep",
+  "why": "'had be' (had + base verb) is a tense mistake in the that-clause chosen in round r20, like 'could have adjust'; the key is right."
+ },
+ {
+  "id": "r20b-2-040",
+  "decision": "keep",
+  "why": "Reader confirms the wrong options are believable."
+ },
+ {
+  "id": "r20b-2-041",
+  "decision": "keep",
+  "why": "'Invite whoever you like' is correct everyday English, so it is rightly a right sentence; 015 is its one allowed twin with a different sentence."
+ },
+ {
+  "id": "r20b-2-042",
+  "decision": "keep",
+  "why": "As decided in round r20: the quote gives 'will', and the taught rule (11 November) accepts only the step back 'would send'; 'was going to send' reports 'I'm going to'. Already practice only."
+ },
+ {
+  "id": "r20b-2-043",
+  "decision": "keep",
+  "why": "'had waited' is already accepted."
+ },
+ {
+  "id": "r20b-2-044",
+  "decision": "accept",
+  "why": "'happen to have' and emphatic 'do have' keep the present after in case and are correct. Rejected: 'had' (past after a future main clause is wrong here) and 'are having' (it makes the problems happen now, while leaving a number is for later).",
+  "accept": [
+   [
+    "happen to have",
+    "do have"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-045",
+  "decision": "accept",
+  "why": "'our visiting' (formal) and 'going to visit' keep suggest + -ing and are correct English.",
+  "accept": [
+   [
+    "our visiting",
+    "going to visit"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-047",
+  "decision": "keep",
+  "why": "'could live' and 'were living' are already accepted."
+ },
+ {
+  "id": "r20b-2-048",
+  "decision": "keep",
+  "why": "As decided in round r20: 'should do' and 'were to do' are not standard after 'It's high time', which takes the past."
+ },
+ {
+  "id": "r20b-2-049",
+  "decision": "accept",
+  "why": "'we ought to go' (= should) and 'we were going' (a plan in the past) are correct English after 'decide where'.",
+  "accept": [
+   [
+    "we ought to go",
+    "we were going"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-050",
+  "decision": "keep",
+  "why": "The preposition is the point (card mistake 'accused him for'), as decided in round r20."
+ },
+ {
+  "id": "r20b-2-052",
+  "decision": "accept",
+  "why": "'started looking for a job' keeps the form and the meaning. Rejected: 'you start' (present is not standard after it's high time) and 'to start' without 'you' (drops the person, as decided in round r20).",
+  "accept": [
+   [
+    "It's high time you started looking for a job.",
+    "It is high time you started looking for a job."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-2-053",
+  "decision": "keep",
+  "why": "'wouldn't bring' is not standard after 'I'd rather you', as decided in round r20."
+ }
+]

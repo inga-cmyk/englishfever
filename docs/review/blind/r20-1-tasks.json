@@ -1,0 +1,665 @@
+[
+ {
+  "id": "r20-1-001",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which is correct? 'If I ___ you, I'd think twice about that offer.'",
+  "options": [
+   "am",
+   "would be",
+   "had been",
+   "were"
+  ]
+ },
+ {
+  "id": "r20-1-002",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "What is the difference? A: 'If I had time, I would help.' B: 'If I had time, I might help.'",
+  "options": [
+   "They mean the same.",
+   "B is less certain than A.",
+   "A is past, B is future.",
+   "A is less certain than B."
+  ]
+ },
+ {
+  "id": "r20-1-003",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-1-004",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "If I would know the answer, I would tell you.",
+   "If I knew the answer, I would tell you.",
+   "If I knew the answer, I'd tell you.",
+   "I would tell you if I knew the answer."
+  ]
+ },
+ {
+  "id": "r20-1-005",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "I would be grateful if you will send me the report by Friday.",
+   "I would be grateful if you could send me the report by Friday.",
+   "I would be grateful if you could to send me the report by Friday.",
+   "I would grateful if you could send me the report by Friday."
+  ]
+ },
+ {
+  "id": "r20-1-006",
+  "level": "B2.1",
+  "kind": "write",
+  "instruction_and_task": "A colleague works 12 hours a day. Give them advice in one sentence, from your own point of view.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-007",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct form: She would have passed the exam if she ___ harder.",
+  "options": [
+   "has studied",
+   "studied",
+   "had studied",
+   "would study"
+  ]
+ },
+ {
+  "id": "r20-1-008",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?",
+  "options": [
+   "The deal was impossible from the start.",
+   "The deal was possible, not certain.",
+   "The deal was signed in the end.",
+   "The deal was certain, not possible."
+  ]
+ },
+ {
+  "id": "r20-1-009",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "If the team hadn't been so tired, we might have won.",
+   "If the team has been better prepared, we would have won.",
+   "If the team had been better prepared, we would have won.",
+   "We would have won if the team had been better prepared."
+  ]
+ },
+ {
+  "id": "r20-1-010",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If you had told us earlier, we could have adjusted the schedule.",
+   "If you had told us earlier, we could adjust have the schedule.",
+   "If you told us earlier, we could have adjusted the schedule.",
+   "If you would tell us earlier, we could have adjusted the schedule."
+  ]
+ },
+ {
+  "id": "r20-1-011",
+  "level": "B2.1",
+  "kind": "write",
+  "instruction_and_task": "Write one sentence about a decision that changed your life: imagine you had not made it.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-012",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Imagine the past was different: 'If she ___ the warning, she ___ the accident.'",
+  "options": [
+   "had heard / would avoid",
+   "heard / would avoid",
+   "had heard / would have avoided",
+   "would have heard / had avoided"
+  ]
+ },
+ {
+  "id": "r20-1-013",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+  "options": [
+   "There is no difference in meaning.",
+   "A is about the future, B the past.",
+   "A is about the past, B about now.",
+   "A is about now, B about the past."
+  ]
+ },
+ {
+  "id": "r20-1-014",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-1-015",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I'd known about the traffic, I would've left earlier.",
+   "If I had known about the traffic, I would have left earlier.",
+   "Had I known about the traffic, I would have left earlier.",
+   "If I'd have known about the traffic, I would've left earlier."
+  ]
+ },
+ {
+  "id": "r20-1-016",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If I had realise the impact of my decision, I would have acted differently.",
+   "If I had realised the impact of my decision, I would have acted differently.",
+   "If I would have realised the impact of my decision, I acted differently.",
+   "If I realised the impact of my decision, I would have acted differently."
+  ]
+ },
+ {
+  "id": "r20-1-017",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write one sentence about what would have happened in history if one thing had been different.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-018",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence imagines a different past with a result now?",
+  "options": [
+   "If I take that job, I will be rich.",
+   "If I took that job, I would be rich.",
+   "If I had taken that job, I would have been rich.",
+   "If I had taken that job, I would be rich now."
+  ]
+ },
+ {
+  "id": "r20-1-019",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "'If I hadn't moved to Riga, I wouldn't have this job now.' What does it mean?",
+  "options": [
+   "I moved to Riga, so I have this job today.",
+   "I didn't move to Riga, so I have no job.",
+   "I will move to Riga and find this job.",
+   "I have this job, but I never lived in Riga."
+  ]
+ },
+ {
+  "id": "r20-1-020",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I had studied medicine, I would be a doctor now.",
+   "If I would have studied medicine, I would be a doctor now.",
+   "I would be a doctor now if I had studied medicine.",
+   "If I'd studied medicine, I'd be a doctor now."
+  ]
+ },
+ {
+  "id": "r20-1-021",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If I wouldn't have stayed up so late, I wasn't so tired now.",
+   "If I hadn't stayed up so late, I wouldn't have been so tired now.",
+   "If I didn't stay up so late, I wouldn't have been so tired now.",
+   "If I hadn't stayed up so late, I wouldn't be so tired now."
+  ]
+ },
+ {
+  "id": "r20-1-022",
+  "level": "B2.1",
+  "kind": "write",
+  "instruction_and_task": "How does a past decision still affect you today? Imagine you had decided differently. Write one sentence.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-023",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Complete: 'If I weren't so shy, I ___ asked her out last year.'",
+  "options": [
+   "would",
+   "would have",
+   "had",
+   "will have"
+  ]
+ },
+ {
+  "id": "r20-1-024",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "'If she were more organised, she wouldn't have missed the deadline.' What does it say?",
+  "options": [
+   "She is organised, but she missed it.",
+   "She isn't organised, so she missed it.",
+   "She will be organised next week.",
+   "She isn't organised, but she met it."
+  ]
+ },
+ {
+  "id": "r20-1-025",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-1-026",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I were more careful, I wouldn't have lost my keys.",
+   "If I hadn't been so careless, I wouldn't be searching now.",
+   "If I had been more careful, I wouldn't have lost my keys.",
+   "If I am more careful, I wouldn't have lost my keys."
+  ]
+ },
+ {
+  "id": "r20-1-027",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar.",
+  "options": [
+   "Third: both parts are in the past.",
+   "First conditional: about the future.",
+   "Zero conditional: a general fact.",
+   "Mixed: a present quality, a past result."
+  ]
+ },
+ {
+  "id": "r20-1-028",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write one sentence about how a quality of yours (patient, brave, organised …) would have changed something in the past.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-029",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now.",
+  "options": [
+   "Were I rich now, I would have taken that job.",
+   "Had I taken that job, I would be rich now.",
+   "Had I not taken that job, I would be rich now.",
+   "Had I taken that job, I would have been rich then."
+  ]
+ },
+ {
+  "id": "r20-1-030",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace?",
+  "options": [
+   "If I were",
+   "Unless I was",
+   "If I had been",
+   "If I will be"
+  ]
+ },
+ {
+  "id": "r20-1-031",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-1-032",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Were I braver, I would have said no.",
+   "Had I taken that job, I would be rich now.",
+   "Had she known, she would have stayed.",
+   "Hadn't I moved here, I'd be in Riga now."
+  ]
+ },
+ {
+  "id": "r20-1-033",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If the contract had checked properly, we would not be facing these penalties now.",
+   "Had checked the contract properly, we would not be facing these penalties now.",
+   "Had the contract been checked properly, we would not be facing these penalties now.",
+   "Had the contract been checked properly, we wouldn't facing these penalties now."
+  ]
+ },
+ {
+  "id": "r20-1-034",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-035",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means the same as 'If you should need any help, call me'?",
+  "options": [
+   "Did you need any help, call me.",
+   "Would you need any help, call me.",
+   "Should you need any help, call me.",
+   "Need you any help, call me."
+  ]
+ },
+ {
+  "id": "r20-1-036",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "What does 'unless' mean in 'We'll start unless it rains'?",
+  "options": [
+   "if it rains",
+   "although it rains",
+   "because it rains",
+   "if it does not rain"
+  ]
+ },
+ {
+  "id": "r20-1-037",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with unless: You will not get a refund if you don't have a receipt.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-1-038",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
+  "options": [
+   "Unless you hurry, we will catch the flight.",
+   "We will catch the flight unless you hurry.",
+   "If you hurry, we will miss the flight.",
+   "Unless you hurry, we will miss the flight."
+  ]
+ },
+ {
+  "id": "r20-1-039",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the most formal option.",
+  "options": [
+   "If you want more info, just give us a ring.",
+   "Should you need more details, contact us.",
+   "Call us if you need more info about it.",
+   "If you need any more information, call us."
+  ]
+ },
+ {
+  "id": "r20-1-040",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write a sentence with 'provided that' or 'as long as' to give a condition for a favour.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-1-041",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She told me that she would be late.",
+   "She said that she would be late.",
+   "She told that she would be late.",
+   "She told us she would be late."
+  ]
+ },
+ {
+  "id": "r20-1-042",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He asked me if I knew the way.",
+   "He asked me what time it was.",
+   "He asked me what time was it.",
+   "He asked me when the train left."
+  ]
+ },
+ {
+  "id": "r20-1-043",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She asked me whether or not did I agree.",
+   "They asked whether we had eaten.",
+   "He asked me if I was ready.",
+   "She asked me whether I agreed or not."
+  ]
+ },
+ {
+  "id": "r20-1-044",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She suggested we should go by train.",
+   "She suggested going by train.",
+   "She suggested to go by train.",
+   "She suggested that we go by train."
+  ]
+ },
+ {
+  "id": "r20-1-045",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+  "word_cards": [
+   "with",
+   "about",
+   "at",
+   "on"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-1-046",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He blamed me for losing the file.",
+   "He blamed me for to lose the file.",
+   "He accused me of losing the file.",
+   "He admitted losing the file."
+  ]
+ },
+ {
+  "id": "r20-1-047",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I can't decide whether or not to accept the offer.",
+   "I can't decide whether accepting the offer.",
+   "I can't decide whether to accept the offer.",
+   "I can't decide whether to accept the offer or not."
+  ]
+ },
+ {
+  "id": "r20-1-048",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "The decision depends on ___ the budget is approved.",
+  "options": [
+   "if",
+   "that",
+   "unless",
+   "whether"
+  ]
+ },
+ {
+  "id": "r20-1-049",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We talked about how could we improve the results.",
+   "We talked about whether to improve the results.",
+   "We talked about how to improve the results.",
+   "We talked about how we could improve the results."
+  ]
+ },
+ {
+  "id": "r20-1-050",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct word: ___ finishes first wins a prize.",
+  "options": [
+   "However",
+   "Whatever",
+   "Whoever",
+   "Whomever"
+  ]
+ },
+ {
+  "id": "r20-1-051",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Whoever wins the contract will celebrate.",
+   "Whomever wins the contract will celebrate.",
+   "Give it to whomever you trust.",
+   "Give it to whoever wants it."
+  ]
+ },
+ {
+  "id": "r20-1-052",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The roads were flooded. ___, many schools closed.",
+  "options": [
+   "As a result",
+   "Despite",
+   "Whereas"
+  ]
+ },
+ {
+  "id": "r20-1-053",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The match was postponed ___ the heavy rain.",
+  "options": [
+   "since",
+   "owing to",
+   "owing"
+  ]
+ },
+ {
+  "id": "r20-1-054",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: It was a difficult task, and ___ they finished it on time.",
+  "options": [
+   "in spite of",
+   "despite",
+   "although",
+   "yet"
+  ]
+ },
+ {
+  "id": "r20-1-055",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Sales fell. ___, we have decided to close the shop.",
+  "word_cards": [
+   "Therefore",
+   "Despite",
+   "In case",
+   "Whereas"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-1-056",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight.",
+  "word_cards": [
+   "unless",
+   "if",
+   "whether"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-1-057",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "He ___ ___ that the shop was closed.",
+  "word_cards": [
+   "said",
+   "told",
+   "to",
+   "me"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-1-058",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "The client complained ___ the delivery ___ been three days late.",
+  "word_cards": [
+   "about",
+   "have",
+   "had",
+   "that"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-1-059",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "They walked quietly so as ___ ___ wake the baby.",
+  "word_cards": [
+   "to",
+   "don't",
+   "not",
+   "no"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-1-060",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct word: ___ arrives last has to wash the dishes.",
+  "options": [
+   "Whoever",
+   "Whomever",
+   "Whatever",
+   "However"
+  ]
+ }
+]

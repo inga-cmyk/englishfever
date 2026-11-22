@@ -1,0 +1,1399 @@
+{
+ "r20-6-001": {
+  "hash": "b62e0b124b3c8822",
+  "gate_key": "narrative_b2 | B2.1 | gap | When I finally got through, I ___ on hold for forty minutes. (wait) | ",
+  "src": "typical-b2c1-1.csv:12",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been waiting",
+     "'d been waiting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3545",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I finally got through, I ___ on hold for forty minutes. (wait)",
+   "why": "How long something went on before a moment in the past: *had been* + *-ing*.",
+   "why_lv": "Cik ilgi kaut kas notika līdz kādam brīdim pagātnē: *had been + -ing*.",
+   "answers": [
+    [
+     "had been waiting",
+     "'d been waiting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "typical-b2c1-1.csv:12"
+  }
+ },
+ "r20-6-002": {
+  "hash": "052dbeb2bca90115",
+  "gate_key": "conj_clauses | B2.1 | gap | ___ the rain, we finished the hike. | ",
+  "src": "typical-b2c1-1.csv:13",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Despite",
+     "In spite of"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3546",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ the rain, we finished the hike.",
+   "why": "*Despite / In spite of* + noun (*the rain*); *although* needs subject + verb.",
+   "why_lv": "*Despite / In spite of* + lietvārds (*the rain*); aiz *although* vajag teikuma priekšmetu un darbības vārdu.",
+   "answers": [
+    [
+     "Despite",
+     "In spite of"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "contrast_b1",
+   "src": "typical-b2c1-1.csv:13"
+  }
+ },
+ "r20-6-003": {
+  "hash": "474dfcd500a8409f",
+  "gate_key": "conj_clauses | B2.1 | gap | She wrote everything down so as ___ anything. (not / forget) | ",
+  "src": "typical-b2c1-1.csv:14",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not to forget"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3547",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She wrote everything down so as ___ anything. (not / forget)",
+   "why": "Purpose, negative: *so as not to* + base form.",
+   "why_lv": "Nolūks noliegumā: *so as not to* + pamatforma.",
+   "answers": [
+    [
+     "not to forget"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "purpose_b2",
+   "src": "typical-b2c1-1.csv:14"
+  }
+ },
+ "r20-6-004": {
+  "hash": "602da4f248c87daf",
+  "gate_key": "conj_b2 | B2.1 | gap | Take an umbrella in case it ___ later. (rain) | ",
+  "src": "typical-b2c1-1.csv:15",
+  "point": "in_case",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "rains"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3548",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Take an umbrella in case it ___ later. (rain)",
+   "why": "After *in case* the present, not *will*.",
+   "why_lv": "Aiz *in case* tagadne, nevis *will*. *Tulkojot burtiski* \"ja *nu* līs\", *gribas will*.",
+   "answers": [
+    [
+     "rains"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "in_case",
+   "src": "typical-b2c1-1.csv:15"
+  }
+ },
+ "r20-6-005": {
+  "hash": "7ef824e056ecf77d",
+  "gate_key": "cond_third | B2.2 | gap | I would have gone to the concert if I ___ about it. (know) | ",
+  "src": "typical-b2c1-1.csv:16",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had known",
+     "'d known"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3549",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I would have gone to the concert if I ___ about it. (know)",
+   "why": "An imagined past: *if* + *had* + 3rd form, not *would have*.",
+   "why_lv": "Iedomāta pagātne: *if + had* + 3. forma, nevis *would have*.",
+   "answers": [
+    [
+     "had known",
+     "'d known"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c3",
+   "src": "typical-b2c1-1.csv:16"
+  }
+ },
+ "r20-6-006": {
+  "hash": "61c8ff6dfb01966f",
+  "gate_key": "cond_third | B2.2 | gap | If she hadn't checked the code, the app ___ . (crash) | ",
+  "src": "typical-b2c1-1.csv:17",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would have crashed",
+     "'d have crashed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3550",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If she hadn't checked the code, the app ___ . (crash)",
+   "why": "The result in an imagined past: *would have* + 3rd form.",
+   "why_lv": "*Sekas* iedomātā pagātnē: *would have* + 3. forma.",
+   "answers": [
+    [
+     "would have crashed",
+     "'d have crashed"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c3",
+   "src": "typical-b2c1-1.csv:17"
+  }
+ },
+ "r20-6-007": {
+  "hash": "de516bf2412e2e1f",
+  "gate_key": "rep_questions | B2.2 | gap | The doctor told me ___ anything heavy for a week. (not / lift) | ",
+  "src": "typical-b2c1-1.csv:18",
+  "point": "rep_orders",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not to lift"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3551",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The doctor told me ___ anything heavy for a week. (not / lift)",
+   "why": "A reported instruction: *told me not to* + base form.",
+   "why_lv": "Atstāstīts norādījums: *told me not to* + pamatforma.",
+   "answers": [
+    [
+     "not to lift"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_orders",
+   "src": "typical-b2c1-1.csv:18"
+  }
+ },
+ "r20-6-008": {
+  "hash": "ecc88ab91aa7becf",
+  "gate_key": "rep_verbs | B2.2 | gap | He apologised ___ late for the meeting. (be) | ",
+  "src": "typical-b2c1-1.csv:19",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for being"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3552",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He apologised ___ late for the meeting. (be)",
+   "why": "*apologise for* + *-ing*.",
+   "why_lv": "*apologise for + -ing*.",
+   "answers": [
+    [
+     "for being"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "typical-b2c1-1.csv:19"
+  }
+ },
+ "r20-6-009": {
+  "hash": "d03c7b8cf6c85041",
+  "gate_key": "rep_verbs | B2.2 | gap | My colleague suggested ___ a taxi to the airport. (take) | ",
+  "src": "typical-b2c1-1.csv:20",
+  "point": "rv_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "taking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3553",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My colleague suggested ___ a taxi to the airport. (take)",
+   "why": "*suggest* + *-ing* (or *suggest that we take*), never *suggest to*.",
+   "why_lv": "*suggest + -ing* (vai *suggest that we take*), nekad *suggest to*. *Tulkojot burtiski \"ieteica* paņemt\", *gribas to take*.",
+   "answers": [
+    [
+     "taking"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "typical-b2c1-1.csv:20"
+  }
+ },
+ "r20-6-010": {
+  "hash": "7879057524efd81e",
+  "gate_key": "ind_advanced | B2.2 | gap | I'm not sure what time the meeting ___ . (start) | ",
+  "src": "typical-b2c1-1.csv:21",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "starts",
+     "will start"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3554",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm not sure what time the meeting ___ . (start)",
+   "why": "Inside a sentence the question has statement order, without *does*.",
+   "why_lv": "Teikuma iekšienē jautājumam ir *apgalvojuma* secība, bez *does*.",
+   "answers": [
+    [
+     "starts",
+     "will start"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_wh",
+   "src": "typical-b2c1-1.csv:21"
+  }
+ },
+ "r20-6-011": {
+  "hash": "605e9d5bff0bc437",
+  "gate_key": "narrative_b2 | B2.2 | gap | Her eyes were red because she ___ . (cry) | ",
+  "src": "typical-b2c1-1.csv:22",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been crying",
+     "'d been crying"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3555",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Her eyes were red because she ___ . (cry)",
+   "why": "The result we see, from an activity before: *had been* + *-ing*.",
+   "why_lv": "*Redzams* rezultāts no agrākas darbības: *had been + -ing*.",
+   "answers": [
+    [
+     "had been crying",
+     "'d been crying"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "typical-b2c1-1.csv:22"
+  }
+ },
+ "r20-6-012": {
+  "hash": "f73d36f71f31c108",
+  "gate_key": "cond_mixed | B2.2 | gap | If I had studied medicine, I ___ a doctor now. (be) | ",
+  "src": "typical-b2c1-1.csv:23",
+  "point": "c_mixed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would be",
+     "'d be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3556",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If I had studied medicine, I ___ a doctor now. (be)",
+   "why": "A past choice with a result now: *would* + base form, because of *now*.",
+   "why_lv": "Pagātnes izvēle ar sekām tagad: *would* + pamatforma, jo ir *now*.",
+   "answers": [
+    [
+     "would be",
+     "'d be"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "typical-b2c1-1.csv:23"
+  }
+ },
+ "r20-6-013": {
+  "hash": "bf5743412bd83bff",
+  "gate_key": "cond_mixed | B2.2 | gap | If I ___ so shy, I would have spoken to her at the party. (not / be) | ",
+  "src": "typical-b2c1-1.csv:24",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "weren't",
+     "wasn't",
+     "were not",
+     "was not"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3557",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If I ___ so shy, I would have spoken to her at the party. (not / be)",
+   "why": "A quality now (*so shy*) with a result in the past: *if* + past.",
+   "why_lv": "Īpašība tagad (*so shy*) ar sekām pagātnē: *if* + pagātne.",
+   "answers": [
+    [
+     "weren't",
+     "wasn't",
+     "were not",
+     "was not"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_mixed2",
+   "src": "typical-b2c1-1.csv:24"
+  }
+ },
+ "r20-6-014": {
+  "hash": "1444069ef6a3ed00",
+  "gate_key": "conj_b2 | B2.2 | gap | Sales fell sharply; ___ , the company cut its prices. | ",
+  "src": "typical-b2c1-1.csv:25",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "therefore",
+     "as a result",
+     "consequently",
+     "thus"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3558",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Sales fell sharply; ___ , the company cut its prices.",
+   "why": "A result as a new step after a semicolon: *therefore*, *as a result*.",
+   "why_lv": "Rezultāts kā jauns *solis* aiz *semikola*: *therefore, as a result*.",
+   "answers": [
+    [
+     "therefore",
+     "as a result",
+     "consequently",
+     "thus"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "typical-b2c1-1.csv:25"
+  }
+ },
+ "r20-6-015": {
+  "hash": "d674b4a879e3d625",
+  "gate_key": "cond_mixed | B2.2 | gap | If she ___ the job in London, she would be living there now. (accept) | ",
+  "src": "typical-b2c1-1.csv:26",
+  "point": "c_mixed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had accepted",
+     "'d accepted"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3559",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If she ___ the job in London, she would be living there now. (accept)",
+   "why": "A past event with a result now: *if* + *had* + 3rd form.",
+   "why_lv": "Pagātnes notikums ar sekām tagad: *if + had* + 3. forma.",
+   "answers": [
+    [
+     "had accepted",
+     "'d accepted"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "typical-b2c1-1.csv:26"
+  }
+ },
+ "r20-6-016": {
+  "hash": "0a937dc410ac6495",
+  "gate_key": "cond_advanced | B2.2 | gap | I wish I ___ more time to travel this year. (have) | ",
+  "src": "typical-b2c1-1.csv:27",
+  "point": "wish_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3560",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wish I ___ more time to travel this year. (have)",
+   "why": "A wish about now: *wish* + past.",
+   "why_lv": "Vēlēšanās par tagadni: *wish* + pagātne. *Tulkojot burtiski* \"es gribētu, lai man būtu\", *gribas would have*.",
+   "answers": [
+    [
+     "had"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_pres",
+   "src": "typical-b2c1-1.csv:27"
+  }
+ },
+ "r20-6-017": {
+  "hash": "bf8b41206d992983",
+  "gate_key": "cond_advanced | B2.2 | gap | I wish I ___ that comment in the meeting yesterday. (not / make) | ",
+  "src": "typical-b2c1-1.csv:28",
+  "point": "wish_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't made",
+     "had not made"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3561",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wish I ___ that comment in the meeting yesterday. (not / make)",
+   "why": "Regret about the past: *wish* + *had* + 3rd form.",
+   "why_lv": "Nožēla par pagātni: *wish + had* + 3. forma.",
+   "answers": [
+    [
+     "hadn't made",
+     "had not made"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_past",
+   "src": "typical-b2c1-1.csv:28"
+  }
+ },
+ "r20-6-018": {
+  "hash": "e2d41696210da92f",
+  "gate_key": "cond_advanced | B2.2 | gap | We'll start at nine unless the speaker ___ late. (be) | ",
+  "src": "typical-b2c1-1.csv:29",
+  "point": "c1_unless",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3562",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We'll start at nine unless the speaker ___ late. (be)",
+   "why": "*unless* already means *if … not*: no second *not*.",
+   "why_lv": "*unless* jau nozīmē *if* … *not*: otru noliegumu *neliek*. *Tulkojot burtiski* \"ja *vien* nekavēsies\", iznāk divi *noliegumi*.",
+   "answers": [
+    [
+     "is"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c1_unless",
+   "src": "typical-b2c1-1.csv:29"
+  }
+ },
+ "r20-6-019": {
+  "hash": "df88c54e066b52ed",
+  "gate_key": "cond_advanced | B2.2 | gap | ___ I known about the strike, I would have booked another flight. (have) | ",
+  "src": "typical-b2c1-1.csv:30",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3563",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ I known about the strike, I would have booked another flight. (have)",
+   "why": "Formal, without *if*: *Had I known*.",
+   "why_lv": "Formāli, bez *if*: *Had I known.*",
+   "answers": [
+    [
+     "Had"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_inv",
+   "src": "typical-b2c1-1.csv:30"
+  }
+ },
+ "r20-6-020": {
+  "hash": "7e5eaefe6b5ccf6f",
+  "gate_key": "unreal_time | B2.2 | gap | It's high time the government ___ something about housing. (do) | ",
+  "src": "typical-b2c1-1.csv:31",
+  "point": "its_time_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "did"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3564",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's high time the government ___ something about housing. (do)",
+   "why": "*It's (high) time* + subject + past: it should already happen.",
+   "why_lv": "*It's* (*high*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*.",
+   "answers": [
+    [
+     "did"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "its_time_past",
+   "src": "typical-b2c1-1.csv:31"
+  }
+ },
+ "r20-6-021": {
+  "hash": "b430e6e5547f0c28",
+  "gate_key": "unreal_time | B2.2 | gap | I'd rather you ___ my phone without asking. (not / use) | ",
+  "src": "typical-b2c1-1.csv:32",
+  "point": "rather_you",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "didn't use",
+     "did not use"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3565",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'd rather you ___ my phone without asking. (not / use)",
+   "why": "*I'd rather* + another person + past.",
+   "why_lv": "*I'd rather* + cits cilvēks + pagātne.",
+   "answers": [
+    [
+     "didn't use",
+     "did not use"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rather_you",
+   "src": "typical-b2c1-1.csv:32"
+  }
+ },
+ "r20-6-022": {
+  "hash": "aa6cf6ec9429fb1d",
+  "gate_key": "rep_verbs | B2.2 | gap | She insisted ___ for the whole dinner. (pay) | ",
+  "src": "typical-b2c1-1.csv:33",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on paying"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3566",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She insisted ___ for the whole dinner. (pay)",
+   "why": "*insist on* + *-ing*.",
+   "why_lv": "*insist on + -ing*.",
+   "answers": [
+    [
+     "on paying"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "typical-b2c1-1.csv:33"
+  }
+ },
+ "r20-6-023": {
+  "hash": "cc67760f31c4339f",
+  "gate_key": "ind_advanced | B2.2 | gap | We couldn't decide where ___ on holiday. (go) | ",
+  "src": "typical-b2c1-1.csv:34",
+  "point": "iq_to",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to go"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3567",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We couldn't decide where ___ on holiday. (go)",
+   "why": "Not knowing what to do: question word + *to* + base form.",
+   "why_lv": "*Nezinot*, ko darīt: jautājamais vārds + to + pamatforma. *Tulkojot burtiski* \"kur *mums braukt*\", iznāk jautājuma secība.",
+   "answers": [
+    [
+     "to go"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_to",
+   "src": "typical-b2c1-1.csv:34"
+  }
+ },
+ "r20-6-024": {
+  "hash": "f279f8ebe09ac82b",
+  "gate_key": "cond_advanced | B2.2 | gap | ___ I in your position, I would ask for a pay rise. (be) | ",
+  "src": "typical-b2c1-1.csv:35",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Were"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3568",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ I in your position, I would ask for a pay rise. (be)",
+   "why": "Formal, without *if*: *Were I* (not *Was I*).",
+   "why_lv": "Formāli, bez *if*: *Were I* (nevis *Was I*).",
+   "answers": [
+    [
+     "Were"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_inv",
+   "src": "typical-b2c1-1.csv:35"
+  }
+ },
+ "r20-6-025": {
+  "hash": "1542c0877926e5cf",
+  "gate_key": "cond_advanced | B2.2 | gap | If it ___ for your advice, I would never have applied. (not / be) | ",
+  "src": "typical-b2c1-1.csv:36",
+  "point": "x_inv_cond",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't been",
+     "had not been"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3569",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If it ___ for your advice, I would never have applied. (not / be)",
+   "why": "*If it hadn't been for* + noun = without it, in the past.",
+   "why_lv": "*If it hadn't been for* + lietvārds = bez tā, pagātnē.",
+   "answers": [
+    [
+     "hadn't been",
+     "had not been"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_inv_cond",
+   "src": "typical-b2c1-1.csv:36"
+  }
+ },
+ "r20-6-026": {
+  "hash": "cd832c0efd0ab861",
+  "gate_key": "rep_verbs | B2.2 | gap | The minister denied ___ the report before it was published. (see) | ",
+  "src": "typical-b2c1-1.csv:37",
+  "point": "rv_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "having seen",
+     "seeing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3570",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The minister denied ___ the report before it was published. (see)",
+   "why": "*deny* + *-ing* (or *having* + 3rd form).",
+   "why_lv": "*deny + -ing* (vai *having* + 3. forma).",
+   "answers": [
+    [
+     "having seen",
+     "seeing"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "typical-b2c1-1.csv:37"
+  }
+ },
+ "r20-6-027": {
+  "hash": "ae405572411c2558",
+  "gate_key": "rep_verbs | B2.2 | gap | They accused the company ___ the data of its users. (sell) | ",
+  "src": "typical-b2c1-1.csv:38",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "of selling"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3571",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "They accused the company ___ the data of its users. (sell)",
+   "why": "*accuse someone of* + *-ing*.",
+   "why_lv": "*accuse someone of + -ing*. *Tulkojot burtiski* \"apsūdzēja par\", *gribas for*.",
+   "answers": [
+    [
+     "of selling"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "typical-b2c1-1.csv:38"
+  }
+ },
+ "r20-6-028": {
+  "hash": "e4d1d8daaf17e5d1",
+  "gate_key": "ind_advanced | B2.2 | gap | ___ wins the competition will get a trip to Lisbon. (who) | ",
+  "src": "typical-b2c1-1.csv:39",
+  "point": "whoever",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Whoever"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3572",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ wins the competition will get a trip to Lisbon. (who)",
+   "why": "*Whoever* = it does not matter who: the person who.",
+   "why_lv": "*Whoever* = nav svarīgi, kurš: tas, kurš.",
+   "answers": [
+    [
+     "Whoever"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "typical-b2c1-1.csv:39"
+  }
+ },
+ "r20-6-029": {
+  "hash": "859c95b46c66c959",
+  "gate_key": "ind_advanced | B2.2 | gap | It depends on ___ the budget is approved or not. | ",
+  "src": "typical-b2c1-1.csv:40",
+  "point": "iq_whether",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3573",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It depends on ___ the budget is approved or not.",
+   "why": "After a preposition use *whether*, not *if*.",
+   "why_lv": "Aiz prievārda lieto *whether*, nevis *if*.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_whether",
+   "src": "typical-b2c1-1.csv:40"
+  }
+ },
+ "r20-6-030": {
+  "hash": "2e1944de559892f6",
+  "gate_key": "unreal_time | B2.2 | gap | It's about time you ___ to the dentist. (go) | ",
+  "src": "typical-b2c1-1.csv:41",
+  "point": "its_time_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "went"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3574",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's about time you ___ to the dentist. (go)",
+   "why": "*It's about time* + subject + past.",
+   "why_lv": "*It's about time* + teikuma priekšmets + pagātne.",
+   "answers": [
+    [
+     "went"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "its_time_past",
+   "src": "typical-b2c1-1.csv:41"
+  }
+ },
+ "r20-6-031": {
+  "hash": "91bb3e91095788ab",
+  "gate_key": "cond_advanced | B2.2 | gap | If only I ___ my passport at home! (not / leave) | ",
+  "src": "typical-b2c1-1.csv:42",
+  "point": "wish_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't left",
+     "had not left"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3575",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If only I ___ my passport at home! (not / leave)",
+   "why": "Regret about the past: *If only* + *had* + 3rd form.",
+   "why_lv": "Nožēla par pagātni: *If only + had* + 3. forma.",
+   "answers": [
+    [
+     "hadn't left",
+     "had not left"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wish_past",
+   "src": "typical-b2c1-1.csv:42"
+  }
+ },
+ "r20-6-032": {
+  "hash": "7abcb20652c38b3d",
+  "gate_key": "unreal_time | B2.2 | mcq | Choose the correct option: It's about time you ___ your mother. | called",
+  "src": "unreal-time-1.csv:2",
+  "point": "its_time_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "called",
+   "wrong": [
+    "will call",
+    "calling",
+    "to call"
+   ]
+  },
+  "item": {
+   "id": "c-3576",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: It's about time you ___ your mother.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*, un ir jau vēlu.",
+   "correct": "called",
+   "wrong": [
+    "will call",
+    "calling",
+    "to call"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:2"
+  }
+ },
+ "r20-6-033": {
+  "hash": "9dcbfc9024e4ef19",
+  "gate_key": "unreal_time | B2.2 | gap | It's high time we ___ home. The last bus leaves in ten minutes. | ",
+  "src": "unreal-time-1.csv:3",
+  "point": "its_time_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "went"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3577",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's high time we ___ home. The last bus leaves in ten minutes.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*, un ir jau vēlu.",
+   "answers": [
+    [
+     "went"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "went",
+    "have gone",
+    "will go",
+    "had gone"
+   ],
+   "role": "check",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:3"
+  }
+ },
+ "r20-6-034": {
+  "hash": "c4eb89ddf8c48825",
+  "gate_key": "unreal_time | B2.2 | mcq | Choose the correct option: It's high time the city ___ something about the traffic. | did",
+  "src": "unreal-time-1.csv:4",
+  "point": "its_time_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "did",
+   "wrong": [
+    "will do",
+    "doing",
+    "to do"
+   ]
+  },
+  "item": {
+   "id": "c-3578",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: It's high time the city ___ something about the traffic.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*, un ir jau vēlu.",
+   "correct": "did",
+   "wrong": [
+    "will do",
+    "doing",
+    "to do"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:4"
+  }
+ },
+ "r20-6-035": {
+  "hash": "ef194ea2548f5cea",
+  "gate_key": "unreal_time | B2.2 | text | Write one sentence that starts with *It's high time*: You should really start looking for a new job. | ",
+  "src": "unreal-time-1.csv:5",
+  "point": "its_time_past",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It's high time you started looking for a new job.",
+     "It's high time you started to look for a new job.",
+     "It's high time you looked for a new job.",
+     "It is high time you started looking for a new job.",
+     "It is high time you started to look for a new job.",
+     "It is high time you looked for a new job."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3579",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*, un ir jau vēlu.",
+   "answers": [
+    [
+     "It's high time you started looking for a new job.",
+     "It's high time you started to look for a new job.",
+     "It's high time you looked for a new job.",
+     "It is high time you started looking for a new job.",
+     "It is high time you started to look for a new job.",
+     "It is high time you looked for a new job."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:5"
+  }
+ },
+ "r20-6-036": {
+  "hash": "ceb59767f829f1a8",
+  "gate_key": "unreal_time | B2.2 | mcq | Choose the correct option: I'd rather ___ at home tonight. I'm exhausted. | stay",
+  "src": "unreal-time-1.csv:6",
+  "point": "would_rather",
+  "key": {
+   "kind": "mcq",
+   "correct": "stay",
+   "wrong": [
+    "stayed",
+    "to stay",
+    "staying"
+   ]
+  },
+  "item": {
+   "id": "c-3580",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I'd rather ___ at home tonight. I'm exhausted.",
+   "why": "*I'd rather / I'd sooner* + base form: what I prefer to do myself.",
+   "why_lv": "*I'd rather / I'd sooner* + pamatforma: ko es *pats* labāk darītu.",
+   "correct": "stay",
+   "wrong": [
+    "stayed",
+    "to stay",
+    "staying"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "would_rather",
+   "src": "unreal-time-1.csv:6"
+  }
+ },
+ "r20-6-037": {
+  "hash": "f9e5bd279ba389cc",
+  "gate_key": "unreal_time | B2.2 | gap | I'd sooner ___ the train than drive in this snow. | ",
+  "src": "unreal-time-1.csv:7",
+  "point": "would_rather",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "take"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3581",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'd sooner ___ the train than drive in this snow.",
+   "why": "*I'd rather / I'd sooner* + base form: what I prefer to do myself.",
+   "why_lv": "*I'd rather / I'd sooner* + pamatforma: ko es *pats* labāk darītu.",
+   "answers": [
+    [
+     "take"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "take",
+    "took",
+    "to take",
+    "taking"
+   ],
+   "role": "check",
+   "point": "would_rather",
+   "src": "unreal-time-1.csv:7"
+  }
+ },
+ "r20-6-038": {
+  "hash": "7efe38f9dc5aa7a8",
+  "gate_key": "unreal_time | B2.2 | mcq | Choose the correct option: I'd rather you ___ me the truth now than later. | told",
+  "src": "unreal-time-1.csv:8",
+  "point": "rather_you",
+  "key": {
+   "kind": "mcq",
+   "correct": "told",
+   "wrong": [
+    "will tell",
+    "telling",
+    "to tell"
+   ]
+  },
+  "item": {
+   "id": "c-3582",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I'd rather you ___ me the truth now than later.",
+   "why": "*I'd rather* + another person + past: what I want someone else to do (or not to do).",
+   "why_lv": "*I'd rather* + cits cilvēks + pagātne: ko *gribu*, lai dara (vai *nedara*) kāds cits.",
+   "correct": "told",
+   "wrong": [
+    "will tell",
+    "telling",
+    "to tell"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rather_you",
+   "src": "unreal-time-1.csv:8"
+  }
+ },
+ "r20-6-039": {
+  "hash": "88e8b91c4c75fe2e",
+  "gate_key": "unreal_time | B2.2 | mcq | Which sentence has a mistake? | I'd rather to walk than take the bus.",
+  "src": "unreal-time-1.csv:9",
+  "point": "would_rather",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'd rather to walk than take the bus.",
+   "wrong": [
+    "I'd rather you came a bit earlier.",
+    "It's high time they fixed the road.",
+    "I'd sooner stay here than go out."
+   ]
+  },
+  "item": {
+   "id": "c-3583",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I'd rather* + base form, without *to*: *I'd rather walk*.",
+   "why_lv": "*I'd rather* + pamatforma bez *to*: *I'd rather walk.*",
+   "correct": "I'd rather to walk than take the bus.",
+   "wrong": [
+    "I'd rather you came a bit earlier.",
+    "It's high time they fixed the road.",
+    "I'd sooner stay here than go out."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "would_rather",
+   "src": "unreal-time-1.csv:9"
+  }
+ },
+ "r20-6-040": {
+  "hash": "9b0ddedf41d75ce5",
+  "gate_key": "unreal_time | B2.2 | text | Write one sentence that starts with *I'd rather you*: Please don't bring your dog to the office. | ",
+  "src": "unreal-time-1.csv:10",
+  "point": "rather_you",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'd rather you didn't bring your dog to the office.",
+     "I would rather you didn't bring your dog to the office.",
+     "I'd rather you not bring your dog to the office.",
+     "I would rather you not bring your dog to the office."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3584",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Write one sentence that starts with *I'd rather you*: Please don't bring your dog to the office.",
+   "why": "*I'd rather* + another person + past: what I want someone else to do (or not to do).",
+   "why_lv": "*I'd rather* + cits cilvēks + pagātne: ko *gribu*, lai dara (vai *nedara*) kāds cits.",
+   "answers": [
+    [
+     "I'd rather you didn't bring your dog to the office.",
+     "I would rather you didn't bring your dog to the office.",
+     "I'd rather you not bring your dog to the office.",
+     "I would rather you not bring your dog to the office."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rather_you",
+   "src": "unreal-time-1.csv:10"
+  }
+ }
+}

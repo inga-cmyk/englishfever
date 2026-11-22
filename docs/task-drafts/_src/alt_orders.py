@@ -130,7 +130,7 @@ EXTRA = {
     "he asked if i could help him with the bags": ["i asked if he could help him with the bags"],
     "i love the film that we saw yesterday": ["we love the film that i saw yesterday"],
     "by the time you arrive we will have finished dinner": ["by the time we arrive you will have finished dinner", "you will have finished dinner by the time we arrive"],
-    "we need more staff in order for the shop to open on sundays": ["in order for the shop to open on sundays we need more staff"],
+    "the bank needs your signature in order for the loan to go through": ["in order for the loan to go through the bank needs your signature"],   # r20-3-029 (22 November): new sentence
 }
 
 _ALT = {}; GROUPS = []

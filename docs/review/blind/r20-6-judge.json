@@ -1,0 +1,516 @@
+[
+ {
+  "id": "r20-6-001",
+  "decision": "accept",
+  "why": "With *for forty minutes* before a past moment, *had waited* is also correct English (Murphy 15-16). *was waiting* is rejected: a completed duration up to a past moment needs the past perfect.",
+  "accept": [
+   [
+    "had waited",
+    "'d waited"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-002",
+  "decision": "fix",
+  "why": "*Despite the rain, ...* nearly copies the card's examples, and the open gap also takes *Before / After the rain* and *Notwithstanding*. A new sentence with a bank of card words (and the card's mistake *Despite of*) leaves one answer; the point (despite + noun) is on the B2.1 card.",
+  "fix": {
+   "q": "___ her knee injury, she finished the marathon.",
+   "answers": [
+    [
+     "Despite"
+    ]
+   ],
+   "bank": [
+    "Despite",
+    "Although",
+    "Even though",
+    "Despite of"
+   ],
+   "why": "*Despite* + noun (*her knee injury*); *although* and *even though* need subject + verb, and *despite* has no *of*.",
+   "why_lv": "*Despite* + lietvārds (*her knee injury*); aiz *although* un *even though* vajag teikuma priekšmetu un darbības vārdu, un *despite* lieto bez *of*."
+  }
+ },
+ {
+  "id": "r20-6-003",
+  "decision": "fix",
+  "why": "The bracket hint is fine (word order and *to* are the point), but *so as not to* is not on the conj_clauses card and the sentence nearly copies the card example (*I wrote it down so that I wouldn't forget it*). New sentence with the card's *in order to*; the split *to not miss* is correct modern English, so it is accepted.",
+  "fix": {
+   "q": "I set two alarms in order ___ my early flight. (not / miss)",
+   "answers": [
+    [
+     "not to miss",
+     "to not miss"
+    ]
+   ],
+   "why": "Purpose, negative: *in order not to* + base form.",
+   "why_lv": "Nolūks noliegumā: *in order not to* + pamatforma."
+  }
+ },
+ {
+  "id": "r20-6-004",
+  "decision": "fix",
+  "why": "The task is the card's own example and mistake (*Take an umbrella in case it rains / will rain*), so the answer is on the help card. New sentence; *should* after *in case* is correct (readers' *should rain*), so it is accepted; *might / could* after *in case* are not standard and *will* is the card's mistake.",
+  "fix": {
+   "q": "I'll leave you my number in case you ___ any problems with the flat. (have)",
+   "answers": [
+    [
+     "have",
+     "should have"
+    ]
+   ],
+   "why": "After *in case* the present (or *should*), not *will*.",
+   "why_lv": "Aiz *in case* tagadne (vai *should*), nevis *will*."
+  }
+ },
+ {
+  "id": "r20-6-005",
+  "decision": "keep",
+  "why": "The cond_third card is taught up to B2.2, and the *if*-part second makes it more than a copy of the basic pattern; a B2.2 revision of a card point is allowed."
+ },
+ {
+  "id": "r20-6-006",
+  "decision": "accept",
+  "why": "The card teaches *could have / might have* when the result is less sure, so both are correct here.",
+  "accept": [
+   [
+    "might have crashed",
+    "could have crashed"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-007",
+  "decision": "keep",
+  "why": "The bracket words must be put in order with *to*, which is the point (card mistake *She asked me don't call*); reported orders are on the rep_questions card up to B2.2."
+ },
+ {
+  "id": "r20-6-008",
+  "decision": "fix",
+  "why": "*He apologised for being late* is the rep_verbs card's own example, so the answer is on the help card. New sentence; *for having* + 3rd form is correct and accepted; *about* is rejected (not the standard pattern, and the card teaches *apologise for*).",
+  "fix": {
+   "q": "She apologised ___ the meeting without a word. (leave)",
+   "answers": [
+    [
+     "for leaving",
+     "for having left"
+    ]
+   ],
+   "why": "*apologise for* + *-ing* (or *having* + 3rd form).",
+   "why_lv": "*apologise for* + darbības vārds ar *-ing* (vai *having* + 3. forma)."
+  }
+ },
+ {
+  "id": "r20-6-009",
+  "decision": "fix",
+  "why": "*suggested taking a taxi* is the card's mistake example corrected (*He suggested me to take a taxi*), and the gap also takes *that we (should) take*. New sentence, with the clause answers the readers found accepted (Murphy 34 allows present, *should* and past after *suggest*).",
+  "fix": {
+   "q": "Our guide suggested ___ the museum early to avoid the queues. (visit)",
+   "answers": [
+    [
+     "visiting",
+     "that we visit",
+     "we visit",
+     "that we should visit",
+     "we should visit",
+     "that we visited",
+     "we visited"
+    ]
+   ],
+   "why": "*suggest* + *-ing* (or *suggest that we visit / should visit*), never *suggest to*.",
+   "why_lv": "*suggest* + darbības vārds ar *-ing* (vai *suggest that we visit / should visit*), nekad *suggest to*."
+  }
+ },
+ {
+  "id": "r20-6-010",
+  "decision": "accept",
+  "why": "With no time signal, *is going to start* and *is starting* are as correct as *starts / will start*. The level flag is moot: the task is already practice only (role learn).",
+  "accept": [
+   [
+    "is going to start",
+    "is starting"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-011",
+  "decision": "fix",
+  "why": "Without context *was crying* (still crying) is correct too, so the task did not decide the form. A situation that shows the crying is over rules it out; *had cried* is also correct and accepted. *cried* stays wrong (the state follows an earlier action).",
+  "fix": {
+   "q": "She was smiling when I saw her, but her eyes were red because she ___ . (cry)",
+   "answers": [
+    [
+     "had been crying",
+     "'d been crying",
+     "had cried",
+     "'d cried"
+    ]
+   ],
+   "why": "The crying was over before that moment and we see its result: *had been* + *-ing* (*had cried* is also possible).",
+   "why_lv": "Raudāšana bija beigusies pirms tā brīža, un mēs redzam tās rezultātu: *had been* + *-ing* (iespējams arī *had cried*)."
+  }
+ },
+ {
+  "id": "r20-6-012",
+  "decision": "fix",
+  "why": "The sentence is the cond_mixed card's mistake example (*If he had studied medicine, he would be a doctor now*), and *might / could be* were not accepted. New sentence; *might not* and the continuous are accepted.",
+  "fix": {
+   "q": "If I had learned to drive at eighteen, I ___ so much on taxis now. (not / spend)",
+   "answers": [
+    [
+     "wouldn't spend",
+     "would not spend",
+     "wouldn't be spending",
+     "would not be spending",
+     "might not spend"
+    ]
+   ],
+   "why": "A past event with a result now: *would* + base form, because of *now*.",
+   "why_lv": "Pagātnes notikums ar sekām tagad: *would* + pamatforma, jo ir *now*."
+  }
+ },
+ {
+  "id": "r20-6-013",
+  "decision": "fix",
+  "why": "Nearly a copy of the card example *If I weren't so shy, I would have asked her*, and *hadn't been* (shy at the party) is also correct, as both readers wrote. New sentence with a lasting fact; both answers are accepted, and the explanation says why.",
+  "fix": {
+   "q": "If I ___ allergic to cats, I would have stayed at Anna's place last weekend. (not / be)",
+   "answers": [
+    [
+     "weren't",
+     "wasn't",
+     "were not",
+     "was not",
+     "hadn't been",
+     "had not been"
+    ]
+   ],
+   "why": "A lasting fact now (*allergic*) with a result in the past: *if* + past (*weren't*). *hadn't been* is also correct if you think only of last weekend.",
+   "why_lv": "Pastāvīgs fakts tagad (*allergic*) ar sekām pagātnē: *if* + pagātne (*weren't*). Pareizi arī *hadn't been*, ja domā tikai par pagājušo nedēļas nogali."
+  }
+ },
+ {
+  "id": "r20-6-014",
+  "decision": "accept",
+  "why": "Any result linker is correct after the semicolon; the readers' formal ones are added. *so ,* is rejected (*so* after a semicolon takes no comma and is not a formal linker).",
+  "accept": [
+   [
+    "as a consequence",
+    "accordingly",
+    "hence",
+    "for this reason",
+    "in response"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-015",
+  "decision": "keep",
+  "why": "*accepted* would give *If she accepted the job, she would be living there now*, which makes no sense (accepting now cannot mean living there now); only the past perfect fits. The mixed conditional is on the B2.2 card."
+ },
+ {
+  "id": "r20-6-016",
+  "decision": "fix",
+  "why": "*I wish I had more time* is the cond_advanced card's mistake example corrected, so the answer is on the help card; *could have* was also correct. New sentence; *could live* and the continuous are accepted. *wish* + past is on the B2.2 card, so the level stays.",
+  "fix": {
+   "q": "I wish I ___ closer to my office; the commute takes hours. (live)",
+   "answers": [
+    [
+     "lived",
+     "could live",
+     "was living",
+     "were living"
+    ]
+   ],
+   "why": "A wish about now: *wish* + past (*could live* is also correct).",
+   "why_lv": "Vēlēšanās par tagadni: *wish* + pagātne (pareizi arī *could live*)."
+  }
+ },
+ {
+  "id": "r20-6-018",
+  "decision": "accept",
+  "why": "The contraction *'s* (*the speaker's late*) must be listed. Level: *unless* is on the B2.2 cond_advanced card (with its mistake *unless it doesn't*), so it stays.",
+  "accept": [
+   [
+    "'s"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-019",
+  "decision": "fix",
+  "why": "The readers' point (easy) is not a fault, but the sentence repeats the card example's frame (*Had I known about the delay, I would have taken a taxi*). New sentence with another verb, same point.",
+  "fix": {
+   "q": "___ we left ten minutes earlier, we would have caught the ferry. (have)",
+   "answers": [
+    [
+     "Had"
+    ]
+   ],
+   "why": "Formal, without *if*: *Had we left* = *If we had left*.",
+   "why_lv": "Formāli, bez *if*: *Had we left* = *If we had left*."
+  }
+ },
+ {
+  "id": "r20-6-020",
+  "decision": "accept",
+  "why": "*It's high time the government was doing something* is correct (past continuous after *it's time*). *should do* and *does* are rejected: not standard after *it's high time*.",
+  "accept": [
+   [
+    "was doing"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-021",
+  "decision": "fix",
+  "why": "*hadn't used* (a complaint about something already done) is also correct, but past perfect after *would rather* is not on the card. *In future* makes the wish about from now on, so only *didn't use* fits; *wouldn't use* is not standard.",
+  "fix": {
+   "q": "In future, I'd rather you ___ my phone without asking. (not / use)",
+   "why": "*I'd rather* + another person + past: what I want someone else not to do. *In future* shows it is about from now on.",
+   "why_lv": "*I'd rather* + cita persona + pagātne: ko es gribu, lai cits nedara. *In future* rāda, ka runa ir par turpmāko laiku."
+  }
+ },
+ {
+  "id": "r20-6-022",
+  "decision": "fix",
+  "why": "*She insisted on paying* is the card's own mistake example corrected, and the gap also takes *that she (should) pay*. New sentence with the clause answers accepted (the card teaches *insist* + *that* too).",
+  "fix": {
+   "q": "My father insisted ___ us to the airport. (drive)",
+   "answers": [
+    [
+     "on driving",
+     "that he drive",
+     "that he should drive",
+     "he should drive",
+     "that he would drive",
+     "he would drive",
+     "that he'd drive",
+     "he'd drive"
+    ]
+   ],
+   "why": "*insist on* + *-ing* (or *insist that he drive / should drive*).",
+   "why_lv": "*insist on* + darbības vārds ar *-ing* (vai *insist that he drive / should drive*)."
+  }
+ },
+ {
+  "id": "r20-6-023",
+  "decision": "accept",
+  "why": "Clause answers (*where we should / could go*) are correct English after *decide where*. Level: question word + *to* is on the B2.2 ind_advanced card, so it stays.",
+  "accept": [
+   [
+    "we should go",
+    "we could go",
+    "we would go",
+    "we'd go",
+    "we were going to go"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-025",
+  "decision": "accept",
+  "why": "*If it weren't / wasn't for your advice, I would never have applied* is correct and common (present support, past result, as in the mixed conditional). Reader 1's point (fixed phrase) is not a fault: the card teaches it.",
+  "accept": [
+   [
+    "weren't",
+    "were not",
+    "wasn't",
+    "was not"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-026",
+  "decision": "accept",
+  "why": "*deny* also takes a *that*-clause, as the card's *watch* says for *admit*; the readers' clause answers are correct.",
+  "accept": [
+   [
+    "that he had seen",
+    "he had seen",
+    "that he'd seen",
+    "he'd seen",
+    "that he saw",
+    "he saw"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-027",
+  "decision": "accept",
+  "why": "*of having sold* is correct (the earlier action stressed). The preposition is the point of the task (card mistake *accused him for*).",
+  "accept": [
+   [
+    "of having sold"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-028",
+  "decision": "accept",
+  "why": "*Anyone who / Anybody who / The person who / Everyone who* contain the bracket word and are correct English. The hint *(who)* stays: the learner forms *Whoever* from it.",
+  "accept": [
+   [
+    "Anyone who",
+    "Anybody who",
+    "The person who",
+    "Everyone who"
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-029",
+  "decision": "fix",
+  "why": "*if* after a preposition is rejected (nonstandard; the card says *whether*). But the sentence is the card's own example (*It depends on whether the budget is approved*), so it is replaced.",
+  "fix": {
+   "q": "Our holiday plans depend on ___ my boss gives me the week off.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "why": "After a preposition use *whether*, not *if*.",
+   "why_lv": "Aiz prievārda lieto *whether*, nevis *if*."
+  }
+ },
+ {
+  "id": "r20-6-030",
+  "decision": "keep",
+  "why": "*should go* after *It's about time* is not standard English; only the past is correct. After 032 and 034 are changed, the frames no longer repeat."
+ },
+ {
+  "id": "r20-6-031",
+  "decision": "keep",
+  "why": "No problem found; reader 2 marked it fine."
+ },
+ {
+  "id": "r20-6-032",
+  "decision": "fix",
+  "why": "*It's about time you called your mother* is the card's example sentence, so the answer is on the help card, and it repeats 030's *about time you*. New sentence, same options pattern.",
+  "fix": {
+   "q": "Choose the correct option: It's about time the landlord ___ the heating.",
+   "correct": "repaired",
+   "wrong": [
+    "will repair",
+    "repairing",
+    "to repair"
+   ],
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu."
+  }
+ },
+ {
+  "id": "r20-6-033",
+  "decision": "fix",
+  "why": "*It's high time we went* is the card's mistake example corrected (and its *It's high time we left*). New sentence; the bank still has real forms that do not fit (*have booked, will book, had booked*).",
+  "fix": {
+   "q": "It's high time we ___ the tickets. The concert is next week.",
+   "answers": [
+    [
+     "booked"
+    ]
+   ],
+   "bank": [
+    "booked",
+    "have booked",
+    "will book",
+    "had booked"
+   ],
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu."
+  }
+ },
+ {
+  "id": "r20-6-034",
+  "decision": "fix",
+  "why": "A clone of 020's frame (*It's high time the government / the city ___ something about ...* → *did*). New sentence with another verb.",
+  "fix": {
+   "q": "Choose the correct option: It's high time the city ___ more cycle lanes.",
+   "correct": "built",
+   "wrong": [
+    "will build",
+    "building",
+    "to build"
+   ],
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu."
+  }
+ },
+ {
+  "id": "r20-6-035",
+  "decision": "accept",
+  "why": "*began*, *that you started*, *were looking*, *started job-hunting* and *for you to start* are correct and keep the meaning. Rejected: *should start* (not standard after *it's high time*), *found a new job* (changes the meaning), *to start* without *you* and *I started* (drop or change the person). The start is the task, so the prompt stays.",
+  "accept": [
+   [
+    "It's high time you began looking for a new job.",
+    "It is high time you began looking for a new job.",
+    "It's high time that you started looking for a new job.",
+    "It is high time that you started looking for a new job.",
+    "It's high time you were looking for a new job.",
+    "It is high time you were looking for a new job.",
+    "It's high time you started job-hunting.",
+    "It is high time you started job-hunting.",
+    "It's high time for you to start looking for a new job.",
+    "It is high time for you to start looking for a new job."
+   ]
+  ]
+ },
+ {
+  "id": "r20-6-037",
+  "decision": "fix",
+  "why": "Level stays (*would sooner* is on the B2.2 card), but the sentence is the card's example (*I'd sooner take the train than drive*). New sentence with the same kind of bank.",
+  "fix": {
+   "q": "I'd sooner ___ a sandwich at my desk than go to that noisy canteen.",
+   "answers": [
+    [
+     "have"
+    ]
+   ],
+   "bank": [
+    "have",
+    "had",
+    "to have",
+    "having"
+   ],
+   "why": "*I'd rather / I'd sooner* + base form: what I prefer to do myself.",
+   "why_lv": "*I'd rather / I'd sooner* + pamatforma: ko es pats labāk darītu."
+  }
+ },
+ {
+  "id": "r20-6-038",
+  "decision": "keep",
+  "why": "Reader 2 marked it fine; no problem found."
+ },
+ {
+  "id": "r20-6-039",
+  "decision": "fix",
+  "why": "The mistake is a real one, but it is the card's own mistake example (*I'd rather to walk*), *I'd rather you came a bit earlier* is a card example too, and *I'd sooner stay here than go out* copies the wrong sentence's pattern. New wrong sentence and right sentences about three different things.",
+  "fix": {
+   "correct": "I'd rather to cook at home than eat out.",
+   "wrong": [
+    "I'd rather you didn't tell Mark yet.",
+    "It's high time they fixed the road.",
+    "We'd sooner leave early on Friday."
+   ],
+   "why": "*I'd rather* + base form, without *to*: *I'd rather cook*.",
+   "why_lv": "*I'd rather* + pamatforma bez *to*: *I'd rather cook.*"
+  }
+ },
+ {
+  "id": "r20-6-040",
+  "decision": "accept",
+  "why": "The start is the task (rewrite), so the near-copy is intended. The readers' paraphrases are correct and keep the meaning; *wouldn't bring* is rejected (not standard after *I'd rather you*).",
+  "accept": [
+   [
+    "I'd rather you didn't bring your dog into the office.",
+    "I would rather you didn't bring your dog into the office.",
+    "I'd rather you didn't bring your dog to work.",
+    "I would rather you didn't bring your dog to work.",
+    "I'd rather you left your dog at home.",
+    "I would rather you left your dog at home.",
+    "I'd rather you kept your dog at home.",
+    "I would rather you kept your dog at home."
+   ]
+  ]
+ }
+]

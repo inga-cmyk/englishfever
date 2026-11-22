@@ -1,0 +1,2371 @@
+{
+ "r20-1-001": {
+  "hash": "40cceda4810c996d",
+  "gate_key": "cond_second | B2.1 | mcq | Which is correct? 'If I ___ you, I'd think twice about that offer.' | were",
+  "src": "built-in",
+  "point": "c2_were",
+  "key": {
+   "kind": "mcq",
+   "correct": "were",
+   "wrong": [
+    "am",
+    "would be",
+    "had been"
+   ]
+  },
+  "item": {
+   "id": "cs-B21-1a",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which is correct? 'If I ___ you, I'd think twice about that offer.'",
+   "correct": "were",
+   "wrong": [
+    "am",
+    "would be",
+    "had been"
+   ],
+   "why": "In careful English we use *were* for all persons after *if* in the second conditional.",
+   "wrong_why": [],
+   "d": 5,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c2_were",
+   "src": "built-in"
+  }
+ },
+ "r20-1-002": {
+  "hash": "62eb3d0ecf482e5b",
+  "gate_key": "cond_second | B2.1 | mcq | What is the difference? A: 'If I had time, I would help.' B: 'If I had time, I might help.' | B is less certain than A.",
+  "src": "built-in",
+  "point": "c2",
+  "key": {
+   "kind": "mcq",
+   "correct": "B is less certain than A.",
+   "wrong": [
+    "A is less certain than B.",
+    "A is past, B is future.",
+    "They mean the same."
+   ]
+  },
+  "item": {
+   "id": "cs-B21-2a-r2",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "What is the difference? A: 'If I had time, I would help.' B: 'If I had time, I might help.'",
+   "correct": "B is less certain than A.",
+   "wrong": [
+    "A is less certain than B.",
+    "A is past, B is future.",
+    "They mean the same."
+   ],
+   "why": "*Would* shows the result is certain in that imaginary situation. *Might* shows it is only possible.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-003": {
+  "hash": "15f71328678646e8",
+  "gate_key": "cond_second | B2.1 | gap | Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be) | ",
+  "src": "built-in",
+  "point": "c2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "offered",
+     "were to offer"
+    ],
+    [
+     "would be",
+     "'d be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "cs-B21-3a-r2",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be)",
+   "answers": [
+    [
+     "offered",
+     "were to offer"
+    ],
+    [
+     "would be",
+     "'d be"
+    ]
+   ],
+   "why": "Second conditional: *if* + past simple (or *were to* + base verb), *would* + base verb.",
+   "hints": [],
+   "d": 5.4,
+   "scaffold": 1,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-004": {
+  "hash": "5c8a062d89ca26b4",
+  "gate_key": "cond_second | B2.1 | mcq | Which sentence has a mistake? | If I would know the answer, I would tell you.",
+  "src": "built-in",
+  "point": "c2",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I would know the answer, I would tell you.",
+   "wrong": [
+    "If I knew the answer, I would tell you.",
+    "If I knew the answer, I'd tell you.",
+    "I would tell you if I knew the answer."
+   ]
+  },
+  "item": {
+   "id": "cs-B21-4a",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "correct": "If I would know the answer, I would tell you.",
+   "wrong": [
+    "If I knew the answer, I would tell you.",
+    "If I knew the answer, I'd tell you.",
+    "I would tell you if I knew the answer."
+   ],
+   "why": "*Would* does not go in the if-part. Say: *If I knew the answer, I would tell you.*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-005": {
+  "hash": "e508df5cec2f6d03",
+  "gate_key": "cond_second | B2.1 | mcq | Which sentence is correct? | I would be grateful if you could send me the report by Friday.",
+  "src": "built-in",
+  "point": "c2",
+  "key": {
+   "kind": "mcq",
+   "correct": "I would be grateful if you could send me the report by Friday.",
+   "wrong": [
+    "I would be grateful if you will send me the report by Friday.",
+    "I would grateful if you could send me the report by Friday.",
+    "I would be grateful if you could to send me the report by Friday."
+   ]
+  },
+  "item": {
+   "id": "cs-B21-5a-r2",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "I would be grateful if you could send me the report by Friday.",
+   "wrong": [
+    "I would be grateful if you will send me the report by Friday.",
+    "I would grateful if you could send me the report by Friday.",
+    "I would be grateful if you could to send me the report by Friday."
+   ],
+   "why": "A polite request: *I would be grateful if you could* + base verb.",
+   "wrong_why": [],
+   "d": 5.8,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-006": {
+  "hash": "4ea276c58ece6a81",
+  "gate_key": "cond_second | B2.1 | write | A colleague works 12 hours a day. Give them advice in one sentence, from your own point of view. | ",
+  "src": "built-in",
+  "point": "c2_were",
+  "key": {
+   "kind": "write",
+   "model": "If I were you, I would switch off my phone after seven.",
+   "must": [
+    "Advice from your point of view: *If I were you, …*",
+    "Then: *I would …*"
+   ]
+  },
+  "item": {
+   "id": "cs-B21-6a-r2",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "A colleague works 12 hours a day. Give them advice in one sentence, from your own point of view.",
+   "must": [
+    [
+     "\\bif i (were|was) you\\b",
+     "Advice from your point of view: *If I were you, …*",
+     "Padoms no tava skatpunkta: *If I were you, …*"
+    ],
+    [
+     "\\b(would|'d)\\b",
+     "Then: *I would …*",
+     "Tad: *I would …*"
+    ]
+   ],
+   "model": "If I were you, I would switch off my phone after seven.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 6,
+   "scaffold": 3,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c2_were",
+   "src": "built-in"
+  }
+ },
+ "r20-1-007": {
+  "hash": "4fd9d1b0e3ea7d36",
+  "gate_key": "cond_third | B2.1 | mcq | Choose the correct form: She would have passed the exam if she ___ harder. | had studied",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "had studied",
+   "wrong": [
+    "studied",
+    "would study",
+    "has studied"
+   ]
+  },
+  "item": {
+   "id": "ct-B21-1a",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct form: She would have passed the exam if she ___ harder.",
+   "correct": "had studied",
+   "wrong": [
+    "studied",
+    "would study",
+    "has studied"
+   ],
+   "why": "Third conditional: *would have* + past participle, *if* + past perfect.",
+   "wrong_why": [],
+   "d": 5,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-008": {
+  "hash": "88fda47b20b6d733",
+  "gate_key": "cond_third | B2.1 | mcq | 'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show? | The deal was possible, not certain.",
+  "src": "built-in",
+  "point": "c3_modal",
+  "key": {
+   "kind": "mcq",
+   "correct": "The deal was possible, not certain.",
+   "wrong": [
+    "The deal was certain, not possible.",
+    "The deal was impossible from the start.",
+    "The deal was signed in the end."
+   ]
+  },
+  "item": {
+   "id": "ct-B21-2a-r2",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?",
+   "correct": "The deal was possible, not certain.",
+   "wrong": [
+    "The deal was certain, not possible.",
+    "The deal was impossible from the start.",
+    "The deal was signed in the end."
+   ],
+   "why": "*Might have* and *could have* show a possible result of the imagined past. *Would have* shows a certain one.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c3_modal",
+   "src": "built-in"
+  }
+ },
+ "r20-1-009": {
+  "hash": "7139dc9b9aba34cd",
+  "gate_key": "cond_third | B2.1 | mcq | Which sentence has a mistake? | If the team has been better prepared, we would have won.",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If the team has been better prepared, we would have won.",
+   "wrong": [
+    "If the team had been better prepared, we would have won.",
+    "We would have won if the team had been better prepared.",
+    "If the team hadn't been so tired, we might have won."
+   ]
+  },
+  "item": {
+   "id": "ct-B21-4a",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "correct": "If the team has been better prepared, we would have won.",
+   "wrong": [
+    "If the team had been better prepared, we would have won.",
+    "We would have won if the team had been better prepared.",
+    "If the team hadn't been so tired, we might have won."
+   ],
+   "why": "The if-part needs the past perfect: *had been*, not *has been.*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-010": {
+  "hash": "59e25446ed12ddab",
+  "gate_key": "cond_third | B2.1 | mcq | Which sentence is correct? | If you had told us earlier, we could have adjusted the schedule.",
+  "src": "built-in",
+  "point": "c3_modal",
+  "key": {
+   "kind": "mcq",
+   "correct": "If you had told us earlier, we could have adjusted the schedule.",
+   "wrong": [
+    "If you told us earlier, we could have adjusted the schedule.",
+    "If you had told us earlier, we could adjust have the schedule.",
+    "If you would tell us earlier, we could have adjusted the schedule."
+   ]
+  },
+  "item": {
+   "id": "ct-B21-5a-r2",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "If you had told us earlier, we could have adjusted the schedule.",
+   "wrong": [
+    "If you told us earlier, we could have adjusted the schedule.",
+    "If you had told us earlier, we could adjust have the schedule.",
+    "If you would tell us earlier, we could have adjusted the schedule."
+   ],
+   "why": "Third conditional with *could have*: *if* + past perfect, *could have* + past participle.",
+   "wrong_why": [],
+   "d": 5.8,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3_modal",
+   "src": "built-in"
+  }
+ },
+ "r20-1-011": {
+  "hash": "ba4f3fca6622eebc",
+  "gate_key": "cond_third | B2.1 | write | Write one sentence about a decision that changed your life: imagine you had not made it. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "write",
+   "model": "If I hadn't joined that course, I wouldn't have met my best friend.",
+   "must": [
+    "The decision you did not make: *If I hadn't …*",
+    "The result: *would have* + 3rd form."
+   ]
+  },
+  "item": {
+   "id": "ct-B21-6a-r3",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write one sentence about a decision that changed your life: imagine you had not made it.",
+   "must": [
+    [
+     "\\bif\\b[^.]*\\b(hadn't|had not)\\b",
+     "The decision you did not make: *If I hadn't …*",
+     "Lēmums, ko nepieņēmi: *If I hadn't …*"
+    ],
+    [
+     "\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+     "The result: *would have* + 3rd form.",
+     "Rezultāts: *would have* + 3. forma."
+    ]
+   ],
+   "model": "If I hadn't joined that course, I wouldn't have met my best friend.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 6,
+   "scaffold": 3,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-012": {
+  "hash": "8a53e2e866ffaee8",
+  "gate_key": "cond_third | B2.2 | mcq | Imagine the past was different: 'If she ___ the warning, she ___ the accident.' | had heard / would have avoided",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "had heard / would have avoided",
+   "wrong": [
+    "heard / would avoid",
+    "had heard / would avoid",
+    "would have heard / had avoided"
+   ]
+  },
+  "item": {
+   "id": "ct-B22-1a-r3",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Imagine the past was different: 'If she ___ the warning, she ___ the accident.'",
+   "correct": "had heard / would have avoided",
+   "wrong": [
+    "heard / would avoid",
+    "had heard / would avoid",
+    "would have heard / had avoided"
+   ],
+   "why": "Third conditional: *if* + past perfect, *would have* + past participle.",
+   "wrong_why": {
+    "heard / would avoid": "This is a second-conditional pattern. The task asks for an unreal past condition and past result.",
+    "had heard / would avoid": "This combines a past condition with a non-past result. The task asks for both parts to refer to the past.",
+    "would have heard / had avoided": "For the standard third conditional, put the past perfect in the if-clause and *would have + past participle* in the result."
+   },
+   "d": 6,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-013": {
+  "hash": "c95a1dff97104f27",
+  "gate_key": "cond_third | B2.2 | mcq | What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.' | A is about the past, B about now.",
+  "src": "built-in",
+  "point": "c2_c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "A is about the past, B about now.",
+   "wrong": [
+    "A is about now, B about the past.",
+    "A is about the future, B the past.",
+    "There is no difference in meaning."
+   ]
+  },
+  "item": {
+   "id": "ct-B22-2a-r3",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+   "correct": "A is about the past, B about now.",
+   "wrong": [
+    "A is about now, B about the past.",
+    "A is about the future, B the past.",
+    "There is no difference in meaning."
+   ],
+   "why": "Third conditional = past, unreal. Second conditional = present or future, unreal.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c2_c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-014": {
+  "hash": "5b0f44191430a378",
+  "gate_key": "cond_third | B2.2 | gap | He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't been driving",
+     "had not been driving",
+     "hadn't driven",
+     "had not driven"
+    ],
+    [
+     "wouldn't have lost",
+     "would not have lost",
+     "'d not have lost"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ct-B22-3a-r3",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it.",
+   "answers": [
+    [
+     "hadn't been driving",
+     "had not been driving",
+     "hadn't driven",
+     "had not driven"
+    ],
+    [
+     "wouldn't have lost",
+     "would not have lost",
+     "'d not have lost"
+    ]
+   ],
+   "why": "Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-015": {
+  "hash": "38430a41d99b424e",
+  "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I'd have known about the traffic, I would've left earlier.",
+   "wrong": [
+    "If I'd known about the traffic, I would've left earlier.",
+    "If I had known about the traffic, I would have left earlier.",
+    "Had I known about the traffic, I would have left earlier."
+   ]
+  },
+  "item": {
+   "id": "ct-B22-4a-r5",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "If I'd have known about the traffic, I would've left earlier.",
+   "wrong": [
+    "If I'd known about the traffic, I would've left earlier.",
+    "If I had known about the traffic, I would have left earlier.",
+    "Had I known about the traffic, I would have left earlier."
+   ],
+   "why": "In standard written English use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs informally but is not the standard form.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-016": {
+  "hash": "1dc07f5c03a405fd",
+  "gate_key": "cond_third | B2.2 | mcq | Which sentence is correct? | If I had realised the impact of my decision, I would have acted differently.",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I had realised the impact of my decision, I would have acted differently.",
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I acted differently.",
+    "If I had realise the impact of my decision, I would have acted differently."
+   ]
+  },
+  "item": {
+   "id": "ct-B22-5a-r2",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "If I had realised the impact of my decision, I would have acted differently.",
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I acted differently.",
+    "If I had realise the impact of my decision, I would have acted differently."
+   ],
+   "why": "Formal regret about the past: *if* + past perfect, *would have* + past participle.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "check",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-017": {
+  "hash": "04164247ff218bd0",
+  "gate_key": "cond_third | B2.2 | write | Write one sentence about what would have happened in history if one thing had been different. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "write",
+   "model": "If Alexander Fleming hadn't left his dish uncovered, penicillin might not have been discovered.",
+   "must": [
+    "Use *if.*",
+    "Use the past perfect (*had / hadn't*) in the if-part.",
+    "Use *would / might / could have* + past participle in the result."
+   ]
+  },
+  "item": {
+   "id": "ct-B22-6a-r2",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write one sentence about what would have happened in history if one thing had been different.",
+   "must": [
+    [
+     "\\bif\\b",
+     "Use *if.*"
+    ],
+    [
+     "\\bhad(n't| not)?\\b",
+     "Use the past perfect (*had / hadn't*) in the if-part."
+    ],
+    [
+     "\\b(would|might|could)\\s+(not\\s+)?have\\b",
+     "Use *would / might / could have* + past participle in the result."
+    ]
+   ],
+   "model": "If Alexander Fleming hadn't left his dish uncovered, penicillin might not have been discovered.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20-1-018": {
+  "hash": "078697d37b693621",
+  "gate_key": "cond_mixed | B2.1 | mcq | Which sentence imagines a different past with a result now? | If I had taken that job, I would be rich now.",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I had taken that job, I would be rich now.",
+   "wrong": [
+    "If I took that job, I would be rich.",
+    "If I had taken that job, I would have been rich.",
+    "If I take that job, I will be rich."
+   ]
+  },
+  "item": {
+   "id": "cm-B21-1a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence imagines a different past with a result now?",
+   "correct": "If I had taken that job, I would be rich now.",
+   "wrong": [
+    "If I took that job, I would be rich.",
+    "If I had taken that job, I would have been rich.",
+    "If I take that job, I will be rich."
+   ],
+   "why": "Mixed conditional: *if* + past perfect (past), *would* + base verb (now).",
+   "wrong_why": [],
+   "d": 5,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-1-019": {
+  "hash": "5e14537c7e3a8421",
+  "gate_key": "cond_mixed | B2.1 | mcq | 'If I hadn't moved to Riga, I wouldn't have this job now.' What does it mean? | I moved to Riga, so I have this job today.",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "mcq",
+   "correct": "I moved to Riga, so I have this job today.",
+   "wrong": [
+    "I didn't move to Riga, so I have no job.",
+    "I will move to Riga and find this job.",
+    "I have this job, but I never lived in Riga."
+   ]
+  },
+  "item": {
+   "id": "cm-B21-2a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'If I hadn't moved to Riga, I wouldn't have this job now.' What does it mean?",
+   "correct": "I moved to Riga, so I have this job today.",
+   "wrong": [
+    "I didn't move to Riga, so I have no job.",
+    "I will move to Riga and find this job.",
+    "I have this job, but I never lived in Riga."
+   ],
+   "why": "A past action (*moved*) has a result in the present (*have this job*).",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-1-020": {
+  "hash": "b4695f72cc8dbfa5",
+  "gate_key": "cond_mixed | B2.1 | mcq | Which sentence is NOT correct? | If I would have studied medicine, I would be a doctor now.",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I would have studied medicine, I would be a doctor now.",
+   "wrong": [
+    "If I had studied medicine, I would be a doctor now.",
+    "If I'd studied medicine, I'd be a doctor now.",
+    "I would be a doctor now if I had studied medicine."
+   ]
+  },
+  "item": {
+   "id": "cm-B21-4a",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "If I would have studied medicine, I would be a doctor now.",
+   "wrong": [
+    "If I had studied medicine, I would be a doctor now.",
+    "If I'd studied medicine, I'd be a doctor now.",
+    "I would be a doctor now if I had studied medicine."
+   ],
+   "why": "Do not use *would* in the if-part: *If I had studied medicine, ...*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-1-021": {
+  "hash": "c8ced9ce41c9ee70",
+  "gate_key": "cond_mixed | B2.1 | mcq | Which sentence is correct? | If I hadn't stayed up so late, I wouldn't be so tired now.",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I hadn't stayed up so late, I wouldn't be so tired now.",
+   "wrong": [
+    "If I didn't stay up so late, I wouldn't have been so tired now.",
+    "If I hadn't stayed up so late, I wouldn't have been so tired now.",
+    "If I wouldn't have stayed up so late, I wasn't so tired now."
+   ]
+  },
+  "item": {
+   "id": "cm-B21-5a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "If I hadn't stayed up so late, I wouldn't be so tired now.",
+   "wrong": [
+    "If I didn't stay up so late, I wouldn't have been so tired now.",
+    "If I hadn't stayed up so late, I wouldn't have been so tired now.",
+    "If I wouldn't have stayed up so late, I wasn't so tired now."
+   ],
+   "why": "Past cause, present result: *if* + past perfect, *would* + base verb.",
+   "wrong_why": [],
+   "d": 5.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-1-022": {
+  "hash": "b8b8ba09de26db23",
+  "gate_key": "cond_mixed | B2.1 | write | How does a past decision still affect you today? Imagine you had decided differently. Write one sentence. | ",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "write",
+   "model": "If I had gone to bed earlier, I would feel better now.",
+   "must": [
+    "The past that was different: *If I had …*",
+    "The result now: *would* + verb (not *would have*)."
+   ]
+  },
+  "item": {
+   "id": "cm-B21-6a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "How does a past decision still affect you today? Imagine you had decided differently. Write one sentence.",
+   "must": [
+    [
+     "\\bif\\b[^.]*\\bhad\\b",
+     "The past that was different: *If I had …*",
+     "Citāda pagātne: *If I had …*"
+    ],
+    [
+     "\\b(would|'d)\\s+(?!have\\b)\\w+",
+     "The result now: *would* + verb (not *would have*).",
+     "Rezultāts tagad: *would* + darbības vārds (nevis *would have*)."
+    ]
+   ],
+   "model": "If I had gone to bed earlier, I would feel better now.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 6,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-1-023": {
+  "hash": "1b06108f3cbff71e",
+  "gate_key": "cond_mixed | B2.2 | mcq | Complete: 'If I weren't so shy, I ___ asked her out last year.' | would have",
+  "src": "built-in",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "mcq",
+   "correct": "would have",
+   "wrong": [
+    "would",
+    "will have",
+    "had"
+   ]
+  },
+  "item": {
+   "id": "cm-B22-1a",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Complete: 'If I weren't so shy, I ___ asked her out last year.'",
+   "correct": "would have",
+   "wrong": [
+    "would",
+    "will have",
+    "had"
+   ],
+   "why": "Present quality (*weren't*), past result (*would have asked*): *if* + past simple, *would have* + past participle.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-024": {
+  "hash": "75eff1cd03bcb2ac",
+  "gate_key": "cond_mixed | B2.2 | mcq | 'If she were more organised, she wouldn't have missed the deadline.' What does it say? | She isn't organised, so she missed it.",
+  "src": "built-in",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "mcq",
+   "correct": "She isn't organised, so she missed it.",
+   "wrong": [
+    "She is organised, but she missed it.",
+    "She will be organised next week.",
+    "She isn't organised, but she met it."
+   ]
+  },
+  "item": {
+   "id": "cm-B22-2a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'If she were more organised, she wouldn't have missed the deadline.' What does it say?",
+   "correct": "She isn't organised, so she missed it.",
+   "wrong": [
+    "She is organised, but she missed it.",
+    "She will be organised next week.",
+    "She isn't organised, but she met it."
+   ],
+   "why": "A present, permanent quality caused a past result.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_mixed2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-025": {
+  "hash": "38f18d5794e5c637",
+  "gate_key": "cond_mixed | B2.2 | text | Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now. | ",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "If he had taken the job, he would be living in Paris now.",
+     "If he'd taken the job, he'd be living in Paris now.",
+     "He would be living in Paris now if he had taken the job.",
+     "He'd be living in Paris now if he'd taken the job."
+    ]
+   ]
+  },
+  "item": {
+   "id": "cm-B22-3a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
+   "answers": [
+    [
+     "If he had taken the job, he would be living in Paris now.",
+     "If he'd taken the job, he'd be living in Paris now.",
+     "He would be living in Paris now if he had taken the job.",
+     "He'd be living in Paris now if he'd taken the job."
+    ]
+   ],
+   "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-1-026": {
+  "hash": "e9f4d3bb9aa8c6df",
+  "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | If I am more careful, I wouldn't have lost my keys.",
+  "src": "built-in",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I am more careful, I wouldn't have lost my keys.",
+   "wrong": [
+    "If I were more careful, I wouldn't have lost my keys.",
+    "If I had been more careful, I wouldn't have lost my keys.",
+    "If I hadn't been so careless, I wouldn't be searching now."
+   ]
+  },
+  "item": {
+   "id": "cm-B22-4a",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "If I am more careful, I wouldn't have lost my keys.",
+   "wrong": [
+    "If I were more careful, I wouldn't have lost my keys.",
+    "If I had been more careful, I wouldn't have lost my keys.",
+    "If I hadn't been so careless, I wouldn't be searching now."
+   ],
+   "why": "Do not use *am* in an unreal condition. Say: *If I were more careful, ...*",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-027": {
+  "hash": "10b973ac8a9d3ef7",
+  "gate_key": "cond_mixed | B2.2 | mcq | A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar. | Mixed: a present quality, a past result.",
+  "src": "built-in",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "mcq",
+   "correct": "Mixed: a present quality, a past result.",
+   "wrong": [
+    "First conditional: about the future.",
+    "Zero conditional: a general fact.",
+    "Third: both parts are in the past."
+   ]
+  },
+  "item": {
+   "id": "cm-B22-5a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar.",
+   "correct": "Mixed: a present quality, a past result.",
+   "wrong": [
+    "First conditional: about the future.",
+    "Zero conditional: a general fact.",
+    "Third: both parts are in the past."
+   ],
+   "why": "The if-part is past simple (present quality). The result is *would have* + past participle (past).",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_mixed2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-028": {
+  "hash": "4d9d3287cbbf8e8a",
+  "gate_key": "cond_mixed | B2.2 | write | Write one sentence about how a quality of yours (patient, brave, organised …) would have changed something in the past. | ",
+  "src": "built-in",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "write",
+   "model": "If I were more patient, I wouldn't have shouted at the printer yesterday.",
+   "must": [
+    "Use *if.*",
+    "Use *would have* + past participle for the past result."
+   ]
+  },
+  "item": {
+   "id": "cm-B22-6a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write one sentence about how a quality of yours (patient, brave, organised …) would have changed something in the past.",
+   "must": [
+    [
+     "\\bif\\b",
+     "Use *if.*"
+    ],
+    [
+     "\\b(would|wouldn't|could|might)\\s+(not\\s+)?have\\b|'d\\s+(not\\s+)?have\\b",
+     "Use *would have* + past participle for the past result."
+    ]
+   ],
+   "model": "If I were more patient, I wouldn't have shouted at the printer yesterday.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "c_mixed2",
+   "src": "built-in"
+  }
+ },
+ "r20-1-029": {
+  "hash": "f812e4376c719191",
+  "gate_key": "cond_mixed | B2.2 | mcq | Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now. | Had I taken that job, I would be rich now.",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "Had I taken that job, I would be rich now.",
+   "wrong": [
+    "Had I taken that job, I would have been rich then.",
+    "Had I not taken that job, I would be rich now.",
+    "Were I rich now, I would have taken that job."
+   ]
+  },
+  "item": {
+   "id": "cm-C11-1a-r6",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the sentence that keeps the meaning: I did not take that job, so I am not rich now.",
+   "correct": "Had I taken that job, I would be rich now.",
+   "wrong": [
+    "Had I taken that job, I would have been rich then.",
+    "Had I not taken that job, I would be rich now.",
+    "Were I rich now, I would have taken that job."
+   ],
+   "why": "The past decision has a result now: *Had I taken* + *I would be rich now*. The other options change the time or reverse the situation.",
+   "wrong_why": [],
+   "why_lv": "Pagātnes lēmumam ir sekas tagad: *Had I taken* + *I would be rich now*. Pārējie varianti maina laiku vai apgriež situāciju.",
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-030": {
+  "hash": "9c53e937b02e27d9",
+  "gate_key": "cond_mixed | B2.2 | mcq | 'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace? | If I were",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I were",
+   "wrong": [
+    "If I had been",
+    "If I will be",
+    "Unless I was"
+   ]
+  },
+  "item": {
+   "id": "cm-C11-2a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'Were I more experienced, I would have applied for the director role last year.' What does 'Were I' replace?",
+   "correct": "If I were",
+   "wrong": [
+    "If I had been",
+    "If I will be",
+    "Unless I was"
+   ],
+   "why": "*Were I* = *If I were.* It is formal.",
+   "wrong_why": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-031": {
+  "hash": "e1a8a6359824a50e",
+  "gate_key": "cond_mixed | B2.2 | text | Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now. | ",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Had I listened to my accountant, I wouldn't be in this mess now.",
+     "Had I listened to my accountant, I'd not be in this mess now.",
+     "I wouldn't be in this mess now had I listened to my accountant.",
+     "I'd not be in this mess now had I listened to my accountant."
+    ]
+   ]
+  },
+  "item": {
+   "id": "cm-C11-3a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now.",
+   "answers": [
+    [
+     "Had I listened to my accountant, I wouldn't be in this mess now.",
+     "Had I listened to my accountant, I'd not be in this mess now.",
+     "I wouldn't be in this mess now had I listened to my accountant.",
+     "I'd not be in this mess now had I listened to my accountant."
+    ]
+   ],
+   "why": "Inversion: *Had* + subject + past participle replaces *if I had* + past participle.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-032": {
+  "hash": "1bf86fb4a12fccb3",
+  "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | Hadn't I moved here, I'd be in Riga now.",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "Hadn't I moved here, I'd be in Riga now.",
+   "wrong": [
+    "Had she known, she would have stayed.",
+    "Had I taken that job, I would be rich now.",
+    "Were I braver, I would have said no."
+   ]
+  },
+  "item": {
+   "id": "cm-C11-4a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "Hadn't I moved here, I'd be in Riga now.",
+   "wrong": [
+    "Had she known, she would have stayed.",
+    "Had I taken that job, I would be rich now.",
+    "Were I braver, I would have said no."
+   ],
+   "why": "Negative inversion is *Had I not ...*, not *Hadn't I ...*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-033": {
+  "hash": "2a28a1d55803bcd7",
+  "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is correct? | Had the contract been checked properly, we would not be facing these penalties now.",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "Had the contract been checked properly, we would not be facing these penalties now.",
+   "wrong": [
+    "If the contract had checked properly, we would not be facing these penalties now.",
+    "Had the contract been checked properly, we wouldn't facing these penalties now.",
+    "Had checked the contract properly, we would not be facing these penalties now."
+   ]
+  },
+  "item": {
+   "id": "cm-C11-5a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "Had the contract been checked properly, we would not be facing these penalties now.",
+   "wrong": [
+    "If the contract had checked properly, we would not be facing these penalties now.",
+    "Had the contract been checked properly, we wouldn't facing these penalties now.",
+    "Had checked the contract properly, we would not be facing these penalties now."
+   ],
+   "why": "Passive inversion: *Had* + object + *been* + past participle.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-034": {
+  "hash": "4ea251171dbfa131",
+  "gate_key": "cond_mixed | B2.2 | write | Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*. | ",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "write",
+   "model": "Had I saved more when I was young, I would be more relaxed about money today.",
+   "must": [
+    "Start with *Had I.*",
+    "Use *would* in the second part."
+   ]
+  },
+  "item": {
+   "id": "cm-C11-6a-r3",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write one sentence about a decision in your past and how your life would be different today. Start with *Had I*.",
+   "must": [
+    [
+     "^\\s*had i\\b",
+     "Start with *Had I.*"
+    ],
+    [
+     "\\b(would|wouldn't|'d)\\b",
+     "Use *would* in the second part."
+    ]
+   ],
+   "model": "Had I saved more when I was young, I would be more relaxed about money today.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-035": {
+  "hash": "7c545f776cee51b5",
+  "gate_key": "cond_advanced | B2.2 | mcq | Which sentence means the same as 'If you should need any help, call me'? | Should you need any help, call me.",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "Should you need any help, call me.",
+   "wrong": [
+    "Did you need any help, call me.",
+    "Would you need any help, call me.",
+    "Need you any help, call me."
+   ]
+  },
+  "item": {
+   "id": "ca-C11-1a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence means the same as 'If you should need any help, call me'?",
+   "correct": "Should you need any help, call me.",
+   "wrong": [
+    "Did you need any help, call me.",
+    "Would you need any help, call me.",
+    "Need you any help, call me."
+   ],
+   "why": "*Should* + subject + base verb is a formal way to say *if you should ...*",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-036": {
+  "hash": "19832fda25a06293",
+  "gate_key": "cond_advanced | B2.2 | mcq | What does 'unless' mean in 'We'll start unless it rains'? | if it does not rain",
+  "src": "built-in",
+  "point": "c1_unless",
+  "key": {
+   "kind": "mcq",
+   "correct": "if it does not rain",
+   "wrong": [
+    "if it rains",
+    "because it rains",
+    "although it rains"
+   ]
+  },
+  "item": {
+   "id": "ca-C11-2a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "What does 'unless' mean in 'We'll start unless it rains'?",
+   "correct": "if it does not rain",
+   "wrong": [
+    "if it rains",
+    "because it rains",
+    "although it rains"
+   ],
+   "why": "*Unless* = *if ... not.*",
+   "wrong_why": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c1_unless",
+   "src": "built-in"
+  }
+ },
+ "r20-1-037": {
+  "hash": "3baac1bbfb8ec18e",
+  "gate_key": "cond_advanced | B2.2 | text | Rewrite with unless: You will not get a refund if you don't have a receipt. | ",
+  "src": "built-in",
+  "point": "c1_unless",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "You will not get a refund unless you have a receipt.",
+     "Unless you have a receipt, you will not get a refund."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ca-C11-3a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with unless: You will not get a refund if you don't have a receipt.",
+   "answers": [
+    [
+     "You will not get a refund unless you have a receipt.",
+     "Unless you have a receipt, you will not get a refund."
+    ]
+   ],
+   "why": "*Unless* replaces *if ... not*, so the verb after *unless* is positive.",
+   "hints": [
+    [
+     "unless you don't",
+     "After *unless* we do not use a negative: *... unless you have a receipt.*"
+    ]
+   ],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "c1_unless",
+   "src": "built-in"
+  }
+ },
+ "r20-1-038": {
+  "hash": "75eb4a12adffae02",
+  "gate_key": "cond_advanced | B2.2 | mcq | Which sentence means the same as: 'If you don't hurry, we will miss the flight.'? | Unless you hurry, we will miss the flight.",
+  "src": "built-in",
+  "point": "c1_unless",
+  "key": {
+   "kind": "mcq",
+   "correct": "Unless you hurry, we will miss the flight.",
+   "wrong": [
+    "If you hurry, we will miss the flight.",
+    "Unless you hurry, we will catch the flight.",
+    "We will catch the flight unless you hurry."
+   ]
+  },
+  "item": {
+   "id": "ca-C11-4a-r5",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence means the same as: 'If you don't hurry, we will miss the flight.'?",
+   "correct": "Unless you hurry, we will miss the flight.",
+   "wrong": [
+    "If you hurry, we will miss the flight.",
+    "Unless you hurry, we will catch the flight.",
+    "We will catch the flight unless you hurry."
+   ],
+   "why": "*Unless you hurry* means *if you do not hurry*, so the warning stays the same: we will miss the flight. The other sentences change who must hurry or what happens.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "c1_unless",
+   "src": "built-in"
+  }
+ },
+ "r20-1-039": {
+  "hash": "a77547b132193feb",
+  "gate_key": "cond_advanced | B2.2 | mcq | Choose the most formal option. | Should you need more details, contact us.",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "Should you need more details, contact us.",
+   "wrong": [
+    "If you want more info, just give us a ring.",
+    "If you need any more information, call us.",
+    "Call us if you need more info about it."
+   ]
+  },
+  "item": {
+   "id": "ca-C11-5a-r3",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Choose the most formal option.",
+   "correct": "Should you need more details, contact us.",
+   "wrong": [
+    "If you want more info, just give us a ring.",
+    "If you need any more information, call us.",
+    "Call us if you need more info about it."
+   ],
+   "why": "*Should* + subject + verb is formal and common in business letters.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-1-040": {
+  "hash": "cb5931397b81a190",
+  "gate_key": "cond_advanced | B2.2 | write | Write a sentence with 'provided that' or 'as long as' to give a condition for a favour. | ",
+  "src": "built-in",
+  "point": "c_alt",
+  "key": {
+   "kind": "write",
+   "model": "You can borrow my laptop as long as you bring it back by Friday.",
+   "must": [
+    "Use *provided that* or *as long as.*"
+   ]
+  },
+  "item": {
+   "id": "ca-C11-6a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write a sentence with 'provided that' or 'as long as' to give a condition for a favour.",
+   "must": [
+    [
+     "\\b(provided that|providing that|as long as|so long as)\\b",
+     "Use *provided that* or *as long as.*"
+    ]
+   ],
+   "model": "You can borrow my laptop as long as you bring it back by Friday.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "c_alt",
+   "src": "built-in"
+  }
+ },
+ "r20-1-041": {
+  "hash": "34671e6cf5dcb457",
+  "gate_key": "rep_statements | B2.1 | mcq | Which sentence is NOT correct? | She told that she would be late.",
+  "src": "built-in",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "mcq",
+   "correct": "She told that she would be late.",
+   "wrong": [
+    "She said that she would be late.",
+    "She told me that she would be late.",
+    "She told us she would be late."
+   ]
+  },
+  "item": {
+   "id": "rs-B21-4a",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She told that she would be late.",
+   "wrong": [
+    "She said that she would be late.",
+    "She told me that she would be late.",
+    "She told us she would be late."
+   ],
+   "why": "*tell* is always followed by a person: *She told me / us ...*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "check",
+   "point": "rep_say_tell",
+   "src": "built-in"
+  }
+ },
+ "r20-1-042": {
+  "hash": "8f9749a7effe3e47",
+  "gate_key": "rep_questions | B2.1 | mcq | Which sentence is NOT correct? | He asked me what time was it.",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "He asked me what time was it.",
+   "wrong": [
+    "He asked me what time it was.",
+    "He asked me when the train left.",
+    "He asked me if I knew the way."
+   ]
+  },
+  "item": {
+   "id": "rq-B21-4a",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "He asked me what time was it.",
+   "wrong": [
+    "He asked me what time it was.",
+    "He asked me when the train left.",
+    "He asked me if I knew the way."
+   ],
+   "why": "In a reported question the subject comes before the verb: *what time it was.*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-1-043": {
+  "hash": "ce0492c22a38b50f",
+  "gate_key": "rep_questions | B2.2 | mcq | Which sentence is NOT correct? | She asked me whether or not did I agree.",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "She asked me whether or not did I agree.",
+   "wrong": [
+    "He asked me if I was ready.",
+    "They asked whether we had eaten.",
+    "She asked me whether I agreed or not."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-4a-r2",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She asked me whether or not did I agree.",
+   "wrong": [
+    "He asked me if I was ready.",
+    "They asked whether we had eaten.",
+    "She asked me whether I agreed or not."
+   ],
+   "why": "After *whether* we use statement word order: *whether or not I agreed.*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r20-1-044": {
+  "hash": "c43408917816eb10",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | She suggested to go by train.",
+  "src": "built-in",
+  "point": "rv_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "She suggested to go by train.",
+   "wrong": [
+    "She suggested going by train.",
+    "She suggested that we go by train.",
+    "She suggested we should go by train."
+   ]
+  },
+  "item": {
+   "id": "rv-B22-4a",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She suggested to go by train.",
+   "wrong": [
+    "She suggested going by train.",
+    "She suggested that we go by train.",
+    "She suggested we should go by train."
+   ],
+   "why": "*suggest* is not followed by *to* + base verb. Use -ing or *that* + clause.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-1-045": {
+  "hash": "9a4322ab37477a3e",
+  "gate_key": "rep_verbs | B2.2 | gap | 'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam. | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C11-3a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "why": "*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*",
+   "hints": [],
+   "bank": [
+    "on",
+    "about",
+    "at",
+    "with"
+   ],
+   "d": 6.4,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-1-046": {
+  "hash": "34ec5c2104a98569",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | He blamed me for to lose the file.",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "He blamed me for to lose the file.",
+   "wrong": [
+    "He blamed me for losing the file.",
+    "He accused me of losing the file.",
+    "He admitted losing the file."
+   ]
+  },
+  "item": {
+   "id": "rv-C11-4a-r2",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "He blamed me for to lose the file.",
+   "wrong": [
+    "He blamed me for losing the file.",
+    "He accused me of losing the file.",
+    "He admitted losing the file."
+   ],
+   "why": "*blame* + person + *for* + -ing.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-1-047": {
+  "hash": "d87559447efd6299",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | I can't decide whether accepting the offer.",
+  "src": "built-in",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "I can't decide whether accepting the offer.",
+   "wrong": [
+    "I can't decide whether to accept the offer.",
+    "I can't decide whether or not to accept the offer.",
+    "I can't decide whether to accept the offer or not."
+   ]
+  },
+  "item": {
+   "id": "ia-B22-4a",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "I can't decide whether accepting the offer.",
+   "wrong": [
+    "I can't decide whether to accept the offer.",
+    "I can't decide whether or not to accept the offer.",
+    "I can't decide whether to accept the offer or not."
+   ],
+   "why": "After *whether* we use *to* + base verb, or a full clause.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "built-in"
+  }
+ },
+ "r20-1-048": {
+  "hash": "3255606e391082b5",
+  "gate_key": "ind_advanced | B2.2 | mcq | The decision depends on ___ the budget is approved. | whether",
+  "src": "built-in",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "whether",
+   "wrong": [
+    "if",
+    "that",
+    "unless"
+   ]
+  },
+  "item": {
+   "id": "ia-C11-2a-r5",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "The decision depends on ___ the budget is approved.",
+   "correct": "whether",
+   "wrong": [
+    "if",
+    "that",
+    "unless"
+   ],
+   "why": "After *on*, use *whether*: *depends on whether the budget is approved*.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "why_lv": "Pēc *on* lieto *whether*: *depends on whether the budget is approved*.",
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "built-in"
+  }
+ },
+ "r20-1-049": {
+  "hash": "6e465f20ebc57062",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We talked about how could we improve the results.",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "We talked about how could we improve the results.",
+   "wrong": [
+    "We talked about how to improve the results.",
+    "We talked about how we could improve the results.",
+    "We talked about whether to improve the results."
+   ]
+  },
+  "item": {
+   "id": "ia-C11-4a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "We talked about how could we improve the results.",
+   "wrong": [
+    "We talked about how to improve the results.",
+    "We talked about how we could improve the results.",
+    "We talked about whether to improve the results."
+   ],
+   "why": "No question order after *about*: *how we could improve the results.*",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-1-050": {
+  "hash": "94befa9e01a06f82",
+  "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct word: ___ finishes first wins a prize. | Whoever",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "However"
+   ]
+  },
+  "item": {
+   "id": "ia-C12-1a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct word: ___ finishes first wins a prize.",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "However"
+   ],
+   "why": "*Whoever* is the subject of *finishes.* It means *any person who.*",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20-1-051": {
+  "hash": "41da9e2c9fe0d7fd",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | Whomever wins the contract will celebrate.",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whomever wins the contract will celebrate.",
+   "wrong": [
+    "Whoever wins the contract will celebrate.",
+    "Give it to whomever you trust.",
+    "Give it to whoever wants it."
+   ]
+  },
+  "item": {
+   "id": "ia-C12-4a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "Whomever wins the contract will celebrate.",
+   "wrong": [
+    "Whoever wins the contract will celebrate.",
+    "Give it to whomever you trust.",
+    "Give it to whoever wants it."
+   ],
+   "why": "*Whoever wins*: *whoever* is the subject. In *whomever you trust*, *whomever* is the object.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20-1-052": {
+  "hash": "606d8f9e07784d98",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: The roads were flooded. ___, many schools closed. | As a result",
+  "src": "conjunctions-1.csv:86",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "As a result",
+   "wrong": [
+    "Despite",
+    "Whereas"
+   ]
+  },
+  "item": {
+   "id": "c-2344",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The roads were flooded. ___, many schools closed.",
+   "why": "Result at the start of a sentence: *As a result, / For this reason, / Therefore,* + comma.",
+   "why_lv": "Rezultāts teikuma sākumā: *As a result, / For this reason, / Therefore, + komats.*",
+   "correct": "As a result",
+   "wrong": [
+    "Despite",
+    "Whereas"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:86"
+  }
+ },
+ "r20-1-053": {
+  "hash": "34d7eb9a2971ea41",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: The match was postponed ___ the heavy rain. | owing to",
+  "src": "conjunctions-1.csv:89",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "owing to",
+   "wrong": [
+    "owing",
+    "since"
+   ]
+  },
+  "item": {
+   "id": "c-2347",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The match was postponed ___ the heavy rain.",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "correct": "owing to",
+   "wrong": [
+    "owing",
+    "since"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:89"
+  }
+ },
+ "r20-1-054": {
+  "hash": "03ef9ab5df0d1711",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet",
+  "src": "conjunctions-1.csv:103",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "yet",
+   "wrong": [
+    "although",
+    "despite",
+    "in spite of"
+   ]
+  },
+  "item": {
+   "id": "c-2361",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: It was a difficult task, and ___ they finished it on time.",
+   "why": "*and yet* = but, in spite of this: *and yet they finished it on time*. *although* starts a part that needs another main clause; *despite* and *in spite of* go before a noun or an *-ing* form, not before *they finished*.",
+   "why_lv": "*and yet* = bet tomēr: *and yet they finished it on time*. Teikums ar *although* nav pabeigts bez vēl vienas daļas; *despite* un *in spite of* lieto pirms lietvārda vai *-ing* formas, nevis pirms *they finished*.",
+   "correct": "yet",
+   "wrong": [
+    "although",
+    "despite",
+    "in spite of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:103"
+  }
+ },
+ "r20-1-055": {
+  "hash": "b73ce756957f66e9",
+  "gate_key": "conj_b2 | B2.2 | gap | Sales fell. ___, we have decided to close the shop. | ",
+  "src": "conjunctions-1.csv:108",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Therefore"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2366",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Sales fell. ___, we have decided to close the shop.",
+   "why": "*Therefore* introduces a result. *Whereas* contrasts two facts, *despite* needs a noun, *in case* is about something that may happen.",
+   "why_lv": "*Therefore ievada sekas.* *Whereas pretstata* divus *faktus*, aiz *despite* jābūt lietvārdam, *in case* ir par to, kas var *notikt*.",
+   "answers": [
+    [
+     "Therefore"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Therefore",
+    "Whereas",
+    "Despite",
+    "In case"
+   ],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:108"
+  }
+ },
+ "r20-1-056": {
+  "hash": "b17e448e814e66a4",
+  "gate_key": "ind_advanced | B2.2 | gap | The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight. | ",
+  "src": "iq-b1-6.csv:33",
+  "point": "iq_whether",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ],
+    [
+     "if"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3004",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight.",
+   "why": "Before *to* + verb only *whether* is possible: *whether to expect us*. *if we're late* is a condition: they keep the room for us only in that case.",
+   "why_lv": "Saka *whether to expect us*, nevis *if to expect us*. *if we're late* ir nosacījums (ja): viesnīca gaidīs vienīgi tad.",
+   "answers": [
+    [
+     "whether"
+    ],
+    [
+     "if"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "whether",
+    "if",
+    "unless"
+   ],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "iq-b1-6.csv:33"
+  }
+ },
+ "r20-1-057": {
+  "hash": "6a240449fbe817ba",
+  "gate_key": "rep_statements | B2.1 | gap | He ___ ___ that the shop was closed. | ",
+  "src": "learn-drag-3.csv:11",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "told"
+    ],
+    [
+     "me"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3015",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He ___ ___ that the shop was closed.",
+   "why": "*tell* needs a person: *He told me / us that…*; or use *said*.",
+   "why_lv": "Aiz *tell* norāda adresātu: *He told me / us that*…. Bez adresāta lieto *said*.",
+   "answers": [
+    [
+     "told"
+    ],
+    [
+     "me"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "told",
+    "me",
+    "said",
+    "to"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_say_tell",
+   "src": "learn-drag-3.csv:11"
+  }
+ },
+ "r20-1-058": {
+  "hash": "5acf9ce7f62963c7",
+  "gate_key": "rep_verbs | B2.2 | gap | The client complained ___ the delivery ___ been three days late. | ",
+  "src": "learn-drag-3.csv:21",
+  "point": "rv_that",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ],
+    [
+     "had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3025",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The client complained ___ the delivery ___ been three days late.",
+   "why": "*complain that* + clause, here *had been*; a listener takes *to*: *complained to me*.",
+   "why_lv": "*complain that* + palīgteikums, šeit *had been*; adresātu pievieno ar *to*: *complained to me*.",
+   "answers": [
+    [
+     "that"
+    ],
+    [
+     "had"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "that",
+    "had",
+    "about",
+    "have"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rv_that",
+   "src": "learn-drag-3.csv:21"
+  }
+ },
+ "r20-1-059": {
+  "hash": "249e9565d7471bcf",
+  "gate_key": "conj_clauses | B2.1 | gap | They walked quietly so as ___ ___ wake the baby. | ",
+  "src": "learn-drag-4.csv:30",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not"
+    ],
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3067",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "They walked quietly so as ___ ___ wake the baby.",
+   "why": "Purpose, negative: *so as not to* + base form.",
+   "why_lv": "Nolūks noliegumā: *so as not to* + pamatforma.",
+   "answers": [
+    [
+     "not"
+    ],
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "not",
+    "to",
+    "no",
+    "don't"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "purpose_b2",
+   "src": "learn-drag-4.csv:30"
+  }
+ },
+ "r20-1-060": {
+  "hash": "70e5dc0897d0a1ea",
+  "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct word: ___ arrives last has to wash the dishes. | Whoever",
+  "src": "twins-3.csv:26",
+  "point": "whoever",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "However"
+   ]
+  },
+  "item": {
+   "id": "c-3526",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct word: ___ arrives last has to wash the dishes.",
+   "why": "*Whoever arrives last* = the person who arrives last; *whoever* is the subject of *arrives*.",
+   "why_lv": "*Whoever arrives last* nozīmē “tas, kurš ierodas pēdējais”; *whoever* ir palīgteikuma teikuma priekšmets, tāpēc neder *whomever*.",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "However"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "whoever",
+   "src": "twins-3.csv:26"
+  }
+ }
+}

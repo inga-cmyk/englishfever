@@ -1,0 +1,400 @@
+[
+ {
+  "id": "r20-4-001",
+  "decision": "remove",
+  "why": "Cards 'can to' / 'would to' are forms nobody writes, and every real one-word alternative (would, can, will) is used in real polite requests, so no clean bank exists; the cond_second point is covered by other tasks."
+ },
+ {
+  "id": "r20-4-002",
+  "decision": "keep",
+  "why": "Both clause orders are already accepted; the readers' answer is the key sentence."
+ },
+ {
+  "id": "r20-4-003",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); 'has' and 'was' make real forms (has studied, was studied) that do not fit."
+ },
+ {
+  "id": "r20-4-004",
+  "decision": "keep",
+  "why": "Both clause orders are already accepted."
+ },
+ {
+  "id": "r20-4-005",
+  "decision": "accept",
+  "why": "Swapping the people ('we' / 'the team') gives a correct, sensible sentence, so by the swap rule both clause orders of it are accepted.",
+  "accept": [
+   [
+    "if we had been better prepared the team would have won",
+    "the team would have won if we had been better prepared"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-006",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); 'could have adjusted' is the one bank answer ('would' is not offered); level flag does not apply to a practice-only task."
+ },
+ {
+  "id": "r20-4-007",
+  "decision": "keep",
+  "why": "Both clause orders are already accepted."
+ },
+ {
+  "id": "r20-4-008",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); level flag does not apply."
+ },
+ {
+  "id": "r20-4-009",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); 'won't' and 'hadn't' are real forms that do not fit."
+ },
+ {
+  "id": "r20-4-010",
+  "decision": "accept",
+  "why": "'earlier' can also go with 'known' (I would've left if I'd known about the traffic earlier), which is natural and sensible; the known/left swap (known about the traffic if I'd left earlier) is illogical and rejected.",
+  "accept": [
+   [
+    "if I'd known about the traffic earlier I would've left",
+    "I would've left if I'd known about the traffic earlier",
+    "if I'd known earlier about the traffic I would've left",
+    "I would've left if I'd known earlier about the traffic"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-011",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); level flag does not apply."
+ },
+ {
+  "id": "r20-4-012",
+  "decision": "accept",
+  "why": "'If we had called you, we would have known about the problem' uses all cards and makes sense, so it is accepted in both orders; reader 2's 'if you had called we would...' leaves a card unused and is rejected.",
+  "accept": [
+   [
+    "if we had called you we would have known about the problem",
+    "we would have known about the problem if we had called you"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-013",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); both orders accepted; despite + noun is on the B2.1 conj_clauses card."
+ },
+ {
+  "id": "r20-4-014",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); 'in despite of' is not accepted (correct: it is not standard); the same sentence as 031 is the intended learning twin."
+ },
+ {
+  "id": "r20-4-015",
+  "decision": "fix",
+  "why": "The answer is the rule card's own corrected example ('Despite the rain, the match went ahead'), which the rules forbid; both orders were already accepted. New sentence, same point.",
+  "fix": {
+   "sentence": "despite the strike the conference went ahead",
+   "answers": [
+    [
+     "despite the strike the conference went ahead",
+     "the conference went ahead despite the strike"
+    ]
+   ],
+   "why": "*despite* + noun, without *of*: *despite the strike*.",
+   "why_lv": "*despite* + lietvārds, bez *of*: *despite the strike*."
+  }
+ },
+ {
+  "id": "r20-4-016",
+  "decision": "keep",
+  "why": "Both clause orders are already accepted; the readers' answer is the key sentence."
+ },
+ {
+  "id": "r20-4-017",
+  "decision": "fix",
+  "why": "The instruction is fine, but the key also accepts 'you would mind telling me how long the repair will take', which is not sensible English; ask for a question and accept only the question.",
+  "fix": {
+   "q": "Put the words in order to make a question.",
+   "answers": [
+    [
+     "would you mind telling me how long the repair will take"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "r20-4-019",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); 'did you go' and 'did go' are mistakes learners make with indirect questions."
+ },
+ {
+  "id": "r20-4-020",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); level flag does not apply."
+ },
+ {
+  "id": "r20-4-021",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); level flag does not apply."
+ },
+ {
+  "id": "r20-4-022",
+  "decision": "accept",
+  "why": "The instruction allows several answers and the people can be swapped: 'she asked her if I could help' and 'I asked if she could help her' (her = another person) are correct and use all cards.",
+  "accept": [
+   [
+    "she asked her if I could help",
+    "I asked if she could help her"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-023",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); level flag does not apply."
+ },
+ {
+  "id": "r20-4-024",
+  "decision": "accept",
+  "why": "Swap rule: 'Lena asked her to send me the invoice' is correct and uses all cards.",
+  "accept": [
+   [
+    "Lena asked her to send me the invoice"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-025",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); level flag does not apply."
+ },
+ {
+  "id": "r20-4-029",
+  "decision": "fix",
+  "why": "The readers found no problem, but 'so as to' is not taught on the conj_clauses card (it teaches to, in order to, so that); the card's 'in order to' keeps the purpose point.",
+  "fix": {
+   "q": "Complete with one word: She spoke slowly in ___ to be understood.",
+   "answers": [
+    [
+     "order"
+    ]
+   ],
+   "why": "*in order to* + base form: purpose.",
+   "why_lv": "*in order to* + pamatforma: nolūks."
+  }
+ },
+ {
+  "id": "r20-4-030",
+  "decision": "accept",
+  "why": "The clause-order variants are correct corrections; 'Despite being delayed' changes the structure and is rejected.",
+  "accept": [
+   [
+    "We arrived on time despite the delay.",
+    "We arrived on time in spite of the delay."
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-031",
+  "decision": "keep",
+  "why": "'In despite of' is not standard English, so 'despite' is rightly rejected; 014 is its intended practice-only twin."
+ },
+ {
+  "id": "r20-4-033",
+  "decision": "keep",
+  "why": "Second conditional with 'were' is on the B2.1 cond_second card; the wrong options are all wrong here."
+ },
+ {
+  "id": "r20-4-034",
+  "decision": "accept",
+  "why": "The card says could / might can replace would; 'were to build' and 'would be travelling' are also correct (gaps are checked one by one).",
+  "accept": [
+   [
+    "were to build"
+   ],
+   [
+    "might travel",
+    "could travel",
+    "would be travelling"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-035",
+  "decision": "keep",
+  "why": "A mistake learners really make (card), three right sentences about different things; a similar wrong option in another task is no defect."
+ },
+ {
+  "id": "r20-4-036",
+  "decision": "keep",
+  "why": "One correct option; sharing a typical mistake with 035 is no defect; level is the B2.1 card."
+ },
+ {
+  "id": "r20-4-037",
+  "decision": "accept",
+  "why": "Might (on the card), 'my own vegetables' and the awkward but grammatical 'were to have' are correct.",
+  "accept": [
+   [
+    "If I had a garden, I might grow vegetables.",
+    "I might grow vegetables if I had a garden.",
+    "If I had a garden, I'd grow my own vegetables.",
+    "If I had a garden, I would grow my own vegetables.",
+    "If I were to have a garden, I would grow vegetables."
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-038",
+  "decision": "keep",
+  "why": "The situation rules out the mixed conditional distractor, which makes it a B2.2 check, not a bare B1 form; 'gotten' is not needed."
+ },
+ {
+  "id": "r20-4-039",
+  "decision": "accept",
+  "why": "'might not have missed' is on the cond_third card and fits.",
+  "accept": [
+   [],
+   [
+    "might not have missed"
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-040",
+  "decision": "keep",
+  "why": "'If they'd have asked' is a mistake learners and even natives really make; that is the point."
+ },
+ {
+  "id": "r20-4-041",
+  "decision": "keep",
+  "why": "Only one correct option; reader 1 had no objection."
+ },
+ {
+  "id": "r20-4-042",
+  "decision": "keep",
+  "why": "'Had I known...' is correct English but the instruction asks for a sentence with 'if', so it is rightly not accepted."
+ },
+ {
+  "id": "r20-4-043",
+  "decision": "fix",
+  "why": "'Without' is not on the cond_advanced card (criterion 7); reader 1's 'Without' gives 'Without for', wrong. Replace with card words that are wrong before 'for'.",
+  "fix": {
+   "wrong": [
+    "Unless",
+    "Otherwise",
+    "Provided"
+   ]
+  }
+ },
+ {
+  "id": "r20-4-044",
+  "decision": "accept",
+  "why": "'Were the price to be lower' is correct; 'More people would buy it were...' does not start with Were and 'to fall' changes the meaning, so both are rejected. The asterisks are the app's italics.",
+  "accept": [
+   [
+    "Were the price to be lower, more people would buy it."
+   ]
+  ]
+ },
+ {
+  "id": "r20-4-046",
+  "decision": "fix",
+  "why": "Level is right (inversion is a B2.2 point), but 'Did' is not on the cond_advanced card; 'Should' is a card form and a believable confusion that does not fit 'would have passed'.",
+  "fix": {
+   "bank": [
+    "Had",
+    "studied",
+    "Should",
+    "study"
+   ]
+  }
+ },
+ {
+  "id": "r20-4-047",
+  "decision": "fix",
+  "why": "'each gap' is the app's general word-bank line, not the task; but 'Did' and 'Has' are not on the cond_advanced card, so the bank keeps only card inversion words.",
+  "fix": {
+   "bank": [
+    "Had",
+    "Were",
+    "Should"
+   ]
+  }
+ },
+ {
+  "id": "r20-4-048",
+  "decision": "keep",
+  "why": "'It's high time we make' is listed as a mistake on the unreal_time card (Murphy: past form)."
+ },
+ {
+  "id": "r20-4-049",
+  "decision": "keep",
+  "why": "'I'd rather you don't...' is listed as a mistake on the unreal_time card; the past is the taught form."
+ },
+ {
+  "id": "r20-4-050",
+  "decision": "keep",
+  "why": "Gate long_frame: without the situation, 'I wish I could come to your wedding' would be correct, so the situation is needed."
+ },
+ {
+  "id": "r20-4-051",
+  "decision": "fix",
+  "why": "Gate long_frame: the situation is needed ('If only we tested the app' fits a present habit), but the correct option contains the card's example 'If only we had tested the app'. New sentence with a clear past time word.",
+  "fix": {
+   "q": "We didn't back up the files last week. Choose the correct sentence.",
+   "correct": "If only we had backed up the files, we wouldn't be in this mess now.",
+   "wrong": [
+    "If only we would have backed up the files, we wouldn't be in this mess now.",
+    "If only we backed up the files, we wouldn't be in this mess now.",
+    "If only we had backed up the files, we won't be in this mess now."
+   ],
+   "why": "*If only* + past perfect for the past (last week); *would* for the result now.",
+   "why_lv": "*If only* + Past Perfect par pagātni (last week); *would* par sekām tagad."
+  }
+ },
+ {
+  "id": "r20-4-052",
+  "decision": "fix",
+  "why": "The key answer is the card's own example ('I'd rather you didn't call me after ten'), and 'starts with I'd rather' lets the learner avoid the point ('I'd rather not be called'). New request, start with 'I'd rather you'; 'wouldn't call' is not standard and stays rejected.",
+  "fix": {
+   "q": "Start with *I'd rather you*: Please don't park in front of my garage.",
+   "answers": [
+    [
+     "I'd rather you didn't park in front of my garage.",
+     "I would rather you didn't park in front of my garage.",
+     "I'd rather you not park in front of my garage.",
+     "I would rather you not park in front of my garage.",
+     "I'd rather you parked somewhere else, not in front of my garage."
+    ]
+   ],
+   "why": "*I'd rather* + another person + past: *I'd rather you didn't park*.",
+   "why_lv": "*I'd rather* + cits cilvēks + pagātne: *I'd rather you didn't park*."
+  }
+ },
+ {
+  "id": "r20-4-053",
+  "decision": "fix",
+  "why": "'as an accusation' is superfluous (only one option is correct without it) and hints the verb; use the plain reporting instruction.",
+  "fix": {
+   "q": "Which sentence reports this: 'You lost my keys!'",
+   "why": "*accuse* someone *of* + -ing.",
+   "why_lv": "*accuse* kādu *of + -ing*."
+  }
+ },
+ {
+  "id": "r20-4-054",
+  "decision": "keep",
+  "why": "After past 'advised' only the step-back form is taught (11 November), so 'has read' is rejected; 'carefully' adds content. The listed answers cover the open gap."
+ },
+ {
+  "id": "r20-4-058",
+  "decision": "keep",
+  "why": "practice only already (learning drag task); no tense change in polite questions (card), so 'has been delayed' / 'was delayed' are rejected; 'is late' changes the words."
+ },
+ {
+  "id": "r20-4-059",
+  "decision": "keep",
+  "why": "'who called me' is a subject question and correct; one mistake, from the card."
+ }
+]

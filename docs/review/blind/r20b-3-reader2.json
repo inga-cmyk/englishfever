@@ -1,0 +1,798 @@
+[
+{
+"id": "r20b-3-001",
+"answer": "The deal was possible, not certain.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-002",
+"answer": "A is about the past, B about now or the future.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2 (B1 conditional contrast).",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-003",
+"answer": "If I had realised the impact of my decision, I would have acted differently.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-004",
+"answer": "If he had taken the job, he would be living in Paris now.",
+"other_correct": [
+[
+"If he'd taken the job, he'd be living in Paris now."
+],
+[
+"If he had taken the job, he would live in Paris now."
+],
+[
+"If he had taken the job, he might be living in Paris now."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-005",
+"answer": "Had I listened to my accountant, I wouldn't be in this mess now.",
+"other_correct": [
+[
+"Had I listened to my accountant, I would not be in this mess now."
+],
+[
+"Had I listened to my accountant, I'd not be in this mess now."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-006",
+"answer": "If only we had listened to the warning signs last year, we would not be in this position now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 3 (past simple) and option 2 ('would have') are very similar types of error; fine but two of three wrong options are the same family."
+},
+{
+"id": "r20b-3-007",
+"answer": "He asked me what to do.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level, easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-008",
+"answer": "She asked me whether or not did I agree.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-009",
+"answer": "She suggested to go by train.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level, easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-010",
+"answer": [
+"on"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'for' is used by some speakers (congratulate someone for) and is arguably correct; standard is 'on'.",
+"instruction_problem": "",
+"level_problem": "B1 level, easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-011",
+"answer": "She advised me to take the earlier train.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-012",
+"answer": "We still can't decide whether moving to a bigger flat.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-013",
+"answer": "It's not clear who made the decision.",
+"other_correct": [
+[
+"It is not clear who made the decision."
+],
+[
+"It isn't clear who made the decision."
+],
+[
+"Who made the decision is not clear."
+],
+[
+"Who made the decision isn't clear."
+],
+[
+"Who made the decision is unclear."
+],
+[
+"It is unclear who made the decision."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-014",
+"answer": "Whoever",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Whomever booked' is wrong as it is the subject; fine."
+},
+{
+"id": "r20b-3-015",
+"answer": "if i had studied medicine i would be a doctor now",
+"other_correct": [
+[
+"i would be a doctor now if i had studied medicine"
+],
+[
+"if i had studied medicine, i would now be a doctor"
+],
+[
+"i would now be a doctor if i had studied medicine"
+],
+[
+"now i would be a doctor if i had studied medicine"
+],
+[
+"if i had studied medicine, now i would be a doctor"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital or comma cue and no hint that several orders are possible; at least two clause orders work.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-016",
+"answer": "had been training",
+"other_correct": "",
+"wrong_options_that_fit": "'has been training' is wrong in past context (marginal).",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-017",
+"answer": [
+"had served"
+],
+"other_correct": [
+[
+"served"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'served' (past simple with 'by') is possible, less natural.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-018",
+"answer": [
+"wasn't snowing"
+],
+"other_correct": [
+[
+"was not snowing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Past continuous is A2-B1; too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-019",
+"answer": "Despite the delays, the project was finished on time.",
+"other_correct": [
+[
+"In spite of the delays, the project was finished on time."
+],
+[
+"The project was finished on time despite the delays."
+],
+[
+"The project was finished on time in spite of the delays."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of task 30 (Despite of the delay)."
+},
+{
+"id": "r20b-3-020",
+"answer": "for tracking",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-021",
+"answer": "He studied hard; nevertheless, he failed the test.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-022",
+"answer": "These boxes are for storing old documents.",
+"other_correct": [
+[
+"These boxes are for the storing of old documents."
+],
+[
+"These boxes are for storage of old documents."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate pattern of task 20."
+},
+{
+"id": "r20b-3-023",
+"answer": "in order for the loan to go through the bank needs your signature",
+"other_correct": [
+[
+"the bank needs your signature in order for the loan to go through"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint about capital/comma or that two orders work.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-024",
+"answer": [
+"weren't",
+"would have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-025",
+"answer": "the coach told us to warm up before every match",
+"other_correct": [
+[
+"before every match the coach told us to warm up"
+],
+[
+"the coach told us before every match to warm up"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Before every match' can start the sentence; meaning shifts slightly.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-026",
+"answer": [
+"that",
+"had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-027",
+"answer": "the team would have won if we had been better prepared",
+"other_correct": [
+[
+"if we had been better prepared the team would have won"
+],
+[
+"if the team had been better prepared we would have won"
+],
+[
+"we would have won if the team had been better prepared"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both 'we' and 'the team' can be subject of either clause, so four orders work; no hint given.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-028",
+"answer": "the conference went ahead despite the strike",
+"other_correct": [
+[
+"despite the strike the conference went ahead"
+],
+[
+"the strike went ahead despite the conference"
+],
+[
+"despite the conference the strike went ahead"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Only 7 simple words, too easy for B2.1.",
+"sense_problem": "Other pairing 'strike went ahead despite the conference' is grammatical but odd."
+},
+{
+"id": "r20b-3-029",
+"answer": "i asked her if she could help",
+"other_correct": [
+[
+"she asked her if i could help"
+],
+[
+"i asked if she could help her"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'More than one answer is possible' tells the learner to look for alternatives; the other orders are odd (different people).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-030",
+"answer": "Despite the delay, we arrived on time.",
+"other_correct": [
+[
+"In spite of the delay, we arrived on time."
+],
+[
+"We arrived on time despite the delay."
+],
+[
+"We arrived on time in spite of the delay."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of task 19."
+},
+{
+"id": "r20b-3-031",
+"answer": [
+"hadn't stayed",
+"wouldn't have missed"
+],
+"other_correct": [
+[
+"had not stayed",
+"would not have missed"
+],
+[
+"hadn't stayed",
+"would not have missed"
+],
+[
+"had not stayed",
+"wouldn't have missed"
+],
+[
+"hadn't stayed",
+"'d not have missed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-032",
+"answer": [
+"Had",
+"studied"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-033",
+"answer": "I'd rather you didn't park in front of my garage.",
+"other_correct": [
+[
+"I'd rather you did not park in front of my garage."
+],
+[
+"I'd rather you wouldn't park in front of my garage."
+],
+[
+"I'd rather you don't park in front of my garage."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'wouldn't' and 'don't' are less standard (informal/US) but heard."
+},
+{
+"id": "r20b-3-034",
+"answer": [
+"had",
+"taken",
+"would",
+"know"
+],
+"other_correct": [
+[
+"had",
+"taken",
+"could",
+"know"
+],
+[
+"had",
+"taken",
+"might",
+"know"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'one word in each gap' with contraction 'd not clear; 'take' form (taken) not given.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-035",
+"answer": "It is unclear which route we should take.",
+"other_correct": [
+[
+"It's unclear which route we should take."
+],
+[
+"It is unclear which route to take."
+],
+[
+"It's unclear which route to take."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-036",
+"answer": [
+"had answered"
+],
+"other_correct": [
+[
+"answered"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'answered' (past simple with 'by the time') is possible, less natural.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-037",
+"answer": "My sister said she would call me as soon as she landed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-038",
+"answer": "They asked what time we should arrive.",
+"other_correct": [
+[
+"They asked what time they should arrive."
+],
+[
+"They asked what time to arrive."
+],
+[
+"They asked what time we were to arrive."
+],
+[
+"They asked what time they were to arrive."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say who 'we' is, so 'we' and 'they' are both right.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-039",
+"answer": "where to go",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level, easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-040",
+"answer": "Whoever",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-041",
+"answer": [
+"would exercise"
+],
+"other_correct": [
+[
+"'d exercise"
+],
+[
+"could exercise"
+],
+[
+"might exercise"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Second conditional is B1; easy for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-042",
+"answer": [
+"had lived"
+],
+"other_correct": [
+[
+"had been living"
+],
+[
+"'d lived"
+],
+[
+"has lived"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'has lived' (no backshift, still true) is possible but marginal.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-043",
+"answer": "Despite",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-044",
+"answer": [
+"would have crashed"
+],
+"other_correct": [
+[
+"'d have crashed"
+],
+[
+"would've crashed"
+],
+[
+"might have crashed"
+],
+[
+"could have crashed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-045",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"will start"
+],
+[
+"is going to start"
+],
+[
+"is starting"
+],
+[
+"started"
+],
+[
+"is to start"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No context (schedule or past), so several tenses fit; 'started' changes meaning.",
+"level_problem": "Indirect question is B1; easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-046",
+"answer": [
+"weren't"
+],
+"other_correct": [
+[
+"were not"
+],
+[
+"wasn't"
+],
+[
+"was not"
+],
+[
+"hadn't been"
+],
+[
+"had not been"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-047",
+"answer": [
+"is"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "First conditional/unless is B1; easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-048",
+"answer": [
+"didn't use"
+],
+"other_correct": [
+[
+"did not use"
+],
+[
+"wouldn't use"
+],
+[
+"would not use"
+],
+[
+"don't use"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'wouldn't' and 'don't' are less standard."
+},
+{
+"id": "r20b-3-049",
+"answer": [
+"hadn't been"
+],
+"other_correct": [
+[
+"had not been"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-050",
+"answer": [
+"Whoever"
+],
+"other_correct": [
+[
+"Anyone who"
+],
+[
+"The person who"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(who)' gives away the word; other answers 'Anyone who' fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-051",
+"answer": [
+"booked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'had booked' is marginal, rare after 'high time'.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-3-052",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

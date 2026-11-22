@@ -3394,6 +3394,22 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "cs-B21-4a",
+"skill": "cond_second",
+"level": "B2.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence has a mistake?",
+"correct": "If I would know the answer, I would tell you.",
+"wrong": [
+"If I knew the answer, I would tell you.",
+"If I knew the answer, I'd tell you.",
+"I would tell you if I knew the answer."
+],
+"why": "*Would* does not go in the if-part. Say: *If I knew the answer, I would tell you.*",
+"wrong_why": {}
+},
+{
 "id": "cs-B21-5a",
 "skill": "cond_second",
 "level": "B2.1",
@@ -3564,6 +3580,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
 "hints": []
+},
+{
+"id": "ct-B21-4a",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence has a mistake?",
+"correct": "If the team has been better prepared, we would have won.",
+"wrong": [
+"If the team had been better prepared, we would have won.",
+"We would have won if the team had been better prepared.",
+"If the team hadn't been so tired, we might have won."
+],
+"why": "The if-part needs the past perfect: *had been*, not *has been.*",
+"wrong_why": {}
 },
 {
 "id": "ct-B21-5a",
@@ -3763,6 +3795,22 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "cm-B21-4a",
+"skill": "cond_mixed",
+"level": "B2.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "If I would have studied medicine, I would be a doctor now.",
+"wrong": [
+"If I had studied medicine, I would be a doctor now.",
+"If I'd studied medicine, I'd be a doctor now.",
+"I would be a doctor now if I had studied medicine."
+],
+"why": "Do not use *would* in the if-part: *If I had studied medicine, ...*",
+"wrong_why": {}
+},
+{
 "id": "cm-B21-5a",
 "skill": "cond_mixed",
 "level": "B2.1",
@@ -3829,6 +3877,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
 "hints": []
+},
+{
+"id": "cm-B22-4a",
+"skill": "cond_mixed",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "If I am more careful, I wouldn't have lost my keys.",
+"wrong": [
+"If I were more careful, I wouldn't have lost my keys.",
+"If I had been more careful, I wouldn't have lost my keys.",
+"If I hadn't been so careless, I wouldn't be searching now."
+],
+"why": "Do not use *am* in an unreal condition. Say: *If I were more careful, ...*",
+"wrong_why": {}
 },
 {
 "id": "cm-B22-5a",
@@ -4434,6 +4498,22 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
+"id": "rs-B21-4a",
+"skill": "rep_statements",
+"level": "B2.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "She told that she would be late.",
+"wrong": [
+"She said that she would be late.",
+"She told me that she would be late.",
+"She told us she would be late."
+],
+"why": "*tell* is always followed by a person: *She told me / us ...*",
+"wrong_why": {}
+},
+{
 "id": "rs-B21-5a",
 "skill": "rep_statements",
 "level": "B2.1",
@@ -4589,6 +4669,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "A request can be reported with *asked* + person + *to* + base verb, or with *if / whether* + *could.*",
 "hints": []
+},
+{
+"id": "rq-B21-4a",
+"skill": "rep_questions",
+"level": "B2.1",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "He asked me what time was it.",
+"wrong": [
+"He asked me what time it was.",
+"He asked me when the train left.",
+"He asked me if I knew the way."
+],
+"why": "In a reported question the subject comes before the verb: *what time it was.*",
+"wrong_why": {}
 },
 {
 "id": "rq-B21-5a",
@@ -4769,6 +4865,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*deny* + -ing, or *deny* + *that* + clause.",
 "hints": []
+},
+{
+"id": "rv-B22-4a",
+"skill": "rep_verbs",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "She suggested to go by train.",
+"wrong": [
+"She suggested going by train.",
+"She suggested that we go by train.",
+"She suggested we should go by train."
+],
+"why": "*suggest* is not followed by *to* + base verb. Use -ing or *that* + clause.",
+"wrong_why": {}
 },
 {
 "id": "rv-B22-5a",
@@ -5291,6 +5403,22 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
+"id": "ia-B22-1a",
+"skill": "ind_advanced",
+"level": "B2.2",
+"bloom": 1,
+"kind": "mcq",
+"q": "Which is correct? 'I don't know ___.'",
+"correct": "what to do",
+"wrong": [
+"what to doing",
+"what do I",
+"what to I do"
+],
+"why": "Question word + *to* + base verb: *what to do.*",
+"wrong_why": {}
+},
+{
 "id": "ia-B22-3a",
 "skill": "ind_advanced",
 "level": "B2.2",
@@ -5305,6 +5433,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*I don't know* + *what* + *to* + base verb.",
 "hints": []
+},
+{
+"id": "ia-B22-4a",
+"skill": "ind_advanced",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "I can't decide whether accepting the offer.",
+"wrong": [
+"I can't decide whether to accept the offer.",
+"I can't decide whether or not to accept the offer.",
+"I can't decide whether to accept the offer or not."
+],
+"why": "After *whether* we use *to* + base verb, or a full clause.",
+"wrong_why": {}
 },
 {
 "id": "ia-B22-5a",
@@ -6675,6 +6819,22 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Iespējamu nākotnes situāciju izsaka ar *if +* Present Simple un *will* ar pamatformu: *If it rains, we will stay indoors.*"
 },
 {
+"id": "var-cm-b21-order-01",
+"skill": "cond_mixed",
+"level": "B2.1",
+"bloom": 3,
+"kind": "order",
+"q": "Link a different past decision to a present result. Start with If I had and put now at the end.",
+"why": "*Had studied* imagines a different past decision. *Would be ... now* describes the present consequence.",
+"sentence": "if I had studied medicine I would be a doctor now",
+"answers": [
+[
+"if I had studied medicine I would be a doctor now"
+]
+],
+"display_answer": "If I had studied medicine, I would be a doctor now."
+},
+{
 "id": "var-ca-c11-order-01",
 "skill": "cond_advanced",
 "level": "C1.1",
@@ -6706,6 +6866,22 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "display_answer": "She said that she was tired.",
 "why_lv": "Ja jāveic laiku saskaņošana, *I am tired* kļūst par *she was tired*. *That* ievada atstāstīto izteikumu."
+},
+{
+"id": "var-rv-b22-order-01",
+"skill": "rep_verbs",
+"level": "B2.2",
+"bloom": 3,
+"kind": "order",
+"q": "Report an apology. Start with She.",
+"why": "The pattern is *apologise for + noun or -ing form*: *apologised for missing the meeting*.",
+"sentence": "she apologised for missing the meeting",
+"answers": [
+[
+"she apologised for missing the meeting"
+]
+],
+"display_answer": "She apologised for missing the meeting."
 },
 {
 "id": "var-ip-b11-order-01",
@@ -7897,6 +8073,23 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Third conditional: *if* + Past Perfect, *would have* + 3. forma."
 },
 {
+"id": "ct-B21-2a-r2",
+"skill": "cond_third",
+"level": "B2.1",
+"bloom": 2,
+"kind": "mcq",
+"q": "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?",
+"correct": "The deal was possible, not certain.",
+"wrong": [
+"The deal was certain, not possible.",
+"The deal was impossible from the start.",
+"The deal was signed in the end."
+],
+"why": "*Might have* and *could have* show a possible result of the imagined past. *Would have* shows a certain one.",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
 "id": "ct-B21-3a-r3",
 "skill": "cond_third",
 "level": "B2.1",
@@ -7921,6 +8114,74 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Third conditional: *if* + *had seen*, *would not have* + past participle.",
 "hints": []
+},
+{
+"id": "ct-B22-2a-r3",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 2,
+"kind": "mcq",
+"q": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+"correct": "A is about the past, B about now.",
+"wrong": [
+"A is about now, B about the past.",
+"A is about the future, B the past.",
+"There is no difference in meaning."
+],
+"why": "Third conditional = past, unreal. Second conditional = present or future, unreal.",
+"wrong_why": {},
+"wrong_why_lv": {}
+},
+{
+"id": "ct-B22-4a-r5",
+"skill": "cond_third",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "If I'd have known about the traffic, I would've left earlier.",
+"wrong": [
+"If I'd known about the traffic, I would've left earlier.",
+"If I had known about the traffic, I would have left earlier.",
+"Had I known about the traffic, I would have left earlier."
+],
+"why": "In standard written English use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs informally but is not the standard form.",
+"wrong_why": {}
+},
+{
+"id": "cm-B22-3a-r3",
+"skill": "cond_mixed",
+"level": "B2.2",
+"bloom": 3,
+"kind": "text",
+"q": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
+"answers": [
+[
+"If he had taken the job, he would be living in Paris now.",
+"If he'd taken the job, he'd be living in Paris now.",
+"He would be living in Paris now if he had taken the job.",
+"He'd be living in Paris now if he'd taken the job."
+]
+],
+"why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
+"hints": []
+},
+{
+"id": "cm-B22-5a-r2",
+"skill": "cond_mixed",
+"level": "B2.2",
+"bloom": 5,
+"kind": "mcq",
+"q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar.",
+"correct": "Mixed: a present quality, a past result.",
+"wrong": [
+"First conditional: about the future.",
+"Zero conditional: a general fact.",
+"Third: both parts are in the past."
+],
+"why": "The if-part is past simple (present quality). The result is *would have* + past participle (past).",
+"wrong_why": {},
+"wrong_why_lv": {}
 },
 {
 "id": "cm-C11-1a-r5",
@@ -8212,6 +8473,23 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.",
 "hints": []
+},
+{
+"id": "rq-B22-4a-r2",
+"skill": "rep_questions",
+"level": "B2.2",
+"bloom": 4,
+"kind": "mcq",
+"q": "Which sentence is NOT correct?",
+"correct": "She asked me whether or not did I agree.",
+"wrong": [
+"He asked me if I was ready.",
+"They asked whether we had eaten.",
+"She asked me whether I agreed or not."
+],
+"why": "After *whether* we use statement word order: *whether or not I agreed.*",
+"wrong_why": {},
+"wrong_why_lv": {}
 },
 {
 "id": "rv-B22-1a-r2",

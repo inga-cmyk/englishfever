@@ -1,0 +1,2337 @@
+{
+ "r20-2-001": {
+  "hash": "4379167c0c6c0ab5",
+  "gate_key": "cond_advanced | B2.2 | mcq | Which sentence expresses regret about the present? | I wish I lived closer to the sea.",
+  "src": "built-in",
+  "point": "wish_pres",
+  "key": {
+   "kind": "mcq",
+   "correct": "I wish I lived closer to the sea.",
+   "wrong": [
+    "I wish I had lived closer to the sea.",
+    "I wish I will live closer to the sea.",
+    "I wish I would live closer to the sea."
+   ]
+  },
+  "item": {
+   "id": "ca-C12-1a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence expresses regret about the present?",
+   "correct": "I wish I lived closer to the sea.",
+   "wrong": [
+    "I wish I had lived closer to the sea.",
+    "I wish I will live closer to the sea.",
+    "I wish I would live closer to the sea."
+   ],
+   "why": "*wish* + past simple = regret about a present situation.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "wish_pres",
+   "src": "built-in"
+  }
+ },
+ "r20-2-002": {
+  "hash": "3d1f069fb6eb72d6",
+  "gate_key": "cond_advanced | B2.2 | mcq | I wish you ___ clicking your pen. It's driving me mad. | would stop",
+  "src": "built-in",
+  "point": "wish_would",
+  "key": {
+   "kind": "mcq",
+   "correct": "would stop",
+   "wrong": [
+    "will stop",
+    "would stopping",
+    "to stop"
+   ]
+  },
+  "item": {
+   "id": "ca-C12-2a-r3",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "I wish you ___ clicking your pen. It's driving me mad.",
+   "correct": "would stop",
+   "wrong": [
+    "will stop",
+    "would stopping",
+    "to stop"
+   ],
+   "why": "*wish* + *would* + base form: something someone keeps doing that annoys us.",
+   "wrong_why": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "wish_would",
+   "src": "built-in"
+  }
+ },
+ "r20-2-003": {
+  "hash": "d198c57846f965a6",
+  "gate_key": "cond_advanced | B2.2 | gap | I wish I ___ that email yesterday. Now everyone knows. | ",
+  "src": "built-in",
+  "point": "wish_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't sent"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ca-C12-3a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wish I ___ that email yesterday. Now everyone knows.",
+   "answers": [
+    [
+     "hadn't sent"
+    ]
+   ],
+   "why": "*wish* + past perfect = regret about the past.",
+   "hints": [],
+   "bank": [
+    "hadn't sent",
+    "didn't send",
+    "wouldn't send",
+    "haven't sent"
+   ],
+   "d": 6.4,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "wish_past",
+   "src": "built-in"
+  }
+ },
+ "r20-2-004": {
+  "hash": "9c65308ac25b4e77",
+  "gate_key": "cond_advanced | B2.2 | mcq | Which sentence has a mistake? | If only I would have saved more money.",
+  "src": "built-in",
+  "point": "wish_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "If only I would have saved more money.",
+   "wrong": [
+    "I wish I had saved more when I was young.",
+    "If only I earned a bit more money now.",
+    "If only you had told me about it earlier."
+   ]
+  },
+  "item": {
+   "id": "ca-C12-4a-r3",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "correct": "If only I would have saved more money.",
+   "wrong": [
+    "I wish I had saved more when I was young.",
+    "If only I earned a bit more money now.",
+    "If only you had told me about it earlier."
+   ],
+   "why": "*If only* + past perfect is used for regret about the past. Not *would have.*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "wish_past",
+   "src": "built-in"
+  }
+ },
+ "r20-2-005": {
+  "hash": "2e07583b9577056e",
+  "gate_key": "cond_advanced | B2.2 | mcq | You give a speech about a past failure. Choose the correct option. | If only we had listened to the warning signs, we would not be in this position.",
+  "src": "built-in",
+  "point": "wish_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "If only we had listened to the warning signs, we would not be in this position.",
+   "wrong": [
+    "If only we would have listened to the warning signs, we would not be in this position.",
+    "If only we listened to the warning signs, we would not be in this position.",
+    "If only we had listen to the warning signs, we would not be in this position."
+   ]
+  },
+  "item": {
+   "id": "ca-C12-5a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "You give a speech about a past failure. Choose the correct option.",
+   "correct": "If only we had listened to the warning signs, we would not be in this position.",
+   "wrong": [
+    "If only we would have listened to the warning signs, we would not be in this position.",
+    "If only we listened to the warning signs, we would not be in this position.",
+    "If only we had listen to the warning signs, we would not be in this position."
+   ],
+   "why": "*If only* + *had* + past participle, then *would* + base verb for the present result.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "wish_past",
+   "src": "built-in"
+  }
+ },
+ "r20-2-006": {
+  "hash": "8c381d300dad2a01",
+  "gate_key": "cond_advanced | B2.2 | write | Write a sentence with 'I wish' or 'If only' about something you regret from last year. | ",
+  "src": "built-in",
+  "point": "wish_past",
+  "key": {
+   "kind": "write",
+   "model": "I wish I had started learning Spanish last year.",
+   "must": [
+    "Use *I wish* or *If only.*",
+    "For a regret about the past use the past perfect (*had / hadn't*)."
+   ]
+  },
+  "item": {
+   "id": "ca-C12-6a-r2",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write a sentence with 'I wish' or 'If only' about something you regret from last year.",
+   "must": [
+    [
+     "\\b(i wish|if only)\\b",
+     "Use *I wish* or *If only.*"
+    ],
+    [
+     "\\bhad(n't| not)?\\b",
+     "For a regret about the past use the past perfect (*had / hadn't*)."
+    ]
+   ],
+   "model": "I wish I had started learning Spanish last year.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "wish_past",
+   "src": "built-in"
+  }
+ },
+ "r20-2-007": {
+  "hash": "3b6941b63a4eb294",
+  "gate_key": "rep_statements | B2.1 | mcq | Which sentence reports this: 'I might be late.' | She said she might be late.",
+  "src": "built-in",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "mcq",
+   "correct": "She said she might be late.",
+   "wrong": [
+    "She said she might was late.",
+    "She said she might to be late.",
+    "She said she might been late."
+   ]
+  },
+  "item": {
+   "id": "rs-B21-1a-r3",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence reports this: 'I might be late.'",
+   "correct": "She said she might be late.",
+   "wrong": [
+    "She said she might was late.",
+    "She said she might to be late.",
+    "She said she might been late."
+   ],
+   "why": "*might* stays the same in the report and is followed by *be*: *She said she might be late.*",
+   "wrong_why": [],
+   "why_lv": "Atstāstījumā *might* nemainās; pēc tā lieto *be*: *She said she might be late.*",
+   "d": 5,
+   "scaffold": 0,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "built-in"
+  }
+ },
+ "r20-2-008": {
+  "hash": "aaf8012292c62e06",
+  "gate_key": "rep_statements | B2.1 | mcq | The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'? | Because it is still true.",
+  "src": "built-in",
+  "point": "rep_stay",
+  "key": {
+   "kind": "mcq",
+   "correct": "Because it is still true.",
+   "wrong": [
+    "Because said is in the past.",
+    "Because the tense never changes.",
+    "Because goes is an irregular verb."
+   ]
+  },
+  "item": {
+   "id": "rs-B21-2a-r5",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'?",
+   "correct": "Because it is still true.",
+   "wrong": [
+    "Because said is in the past.",
+    "Because the tense never changes.",
+    "Because goes is an irregular verb."
+   ],
+   "why": "When a fact is still true, the tense does not have to go back: *The teacher said the Earth goes round the Sun.*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "learn",
+   "point": "rep_stay",
+   "src": "built-in"
+  }
+ },
+ "r20-2-009": {
+  "hash": "4517d0116bf0bb67",
+  "gate_key": "rep_statements | B2.1 | mcq | Last week the client said: 'I won't sign it until the lawyer reads it.' Yesterday he signed it. Which sentence reports the client's words? | The client said he wouldn't sign it until the lawyer had read it.",
+  "src": "built-in",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "mcq",
+   "correct": "The client said he wouldn't sign it until the lawyer had read it.",
+   "wrong": [
+    "The client said he won't sign it until the lawyer will read it.",
+    "The client said I wouldn't sign it until the lawyer reads it.",
+    "The client told he wouldn't sign it until the lawyer read it."
+   ]
+  },
+  "item": {
+   "id": "rs-B21-5a-r2",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Last week the client said: 'I won't sign it until the lawyer reads it.' Yesterday he signed it. Which sentence reports the client's words?",
+   "correct": "The client said he wouldn't sign it until the lawyer had read it.",
+   "wrong": [
+    "The client said he won't sign it until the lawyer will read it.",
+    "The client said I wouldn't sign it until the lawyer reads it.",
+    "The client told he wouldn't sign it until the lawyer read it."
+   ],
+   "why": "*won't → wouldn't, I → he*, and the earlier action goes back to the past perfect.",
+   "wrong_why": [],
+   "d": 5.8,
+   "scaffold": 0,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "built-in"
+  }
+ },
+ "r20-2-010": {
+  "hash": "e7a394be8883a8aa",
+  "gate_key": "rep_statements | B2.1 | write | Report a warning from your doctor: 'You must drink more water.' Start with My doctor said. | ",
+  "src": "built-in",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "write",
+   "model": "My doctor said I had to drink more water.",
+   "must": [
+    "Start with *My doctor said.*",
+    "*must* becomes *had to* (or stays *must*).",
+    "Change *you* to *I.*"
+   ]
+  },
+  "item": {
+   "id": "rs-B21-6a",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Report a warning from your doctor: 'You must drink more water.' Start with My doctor said.",
+   "must": [
+    [
+     "^\\s*my doctor (said|told me)\\b",
+     "Start with *My doctor said.*"
+    ],
+    [
+     "\\b(had to|must|should)\\b",
+     "*must* becomes *had to* (or stays *must*)."
+    ],
+    [
+     "\\b(i|me)\\b",
+     "Change *you* to *I.*"
+    ]
+   ],
+   "model": "My doctor said I had to drink more water.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 6,
+   "scaffold": 3,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "use",
+   "point": "rep_backshift",
+   "src": "built-in"
+  }
+ },
+ "r20-2-011": {
+  "hash": "149e6d12c1c3695f",
+  "gate_key": "rep_questions | B2.1 | mcq | Anna's question to you: 'Can you help me?' Which sentence reports it? | She asked if I could help her.",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "She asked if I could help her.",
+   "wrong": [
+    "She asked if could I help her.",
+    "She asked can I help her.",
+    "She asked that I could help her."
+   ]
+  },
+  "item": {
+   "id": "rq-B21-1a-r2",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Anna's question to you: 'Can you help me?' Which sentence reports it?",
+   "correct": "She asked if I could help her.",
+   "wrong": [
+    "She asked if could I help her.",
+    "She asked can I help her.",
+    "She asked that I could help her."
+   ],
+   "why": "*can → could, you → I, me → her*, and statement word order after *if.*",
+   "wrong_why": [],
+   "d": 5,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r20-2-012": {
+  "hash": "1efa064471516140",
+  "gate_key": "rep_questions | B2.1 | mcq | Which sentence reports this instruction: 'Don't touch that!' | The nurse told me not to touch it.",
+  "src": "built-in",
+  "point": "rep_orders",
+  "key": {
+   "kind": "mcq",
+   "correct": "The nurse told me not to touch it.",
+   "wrong": [
+    "The nurse told me not touch it.",
+    "The nurse told me not touching it.",
+    "The nurse said me not to touch it."
+   ]
+  },
+  "item": {
+   "id": "rq-B21-2a-r2",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence reports this instruction: 'Don't touch that!'",
+   "correct": "The nurse told me not to touch it.",
+   "wrong": [
+    "The nurse told me not touch it.",
+    "The nurse told me not touching it.",
+    "The nurse said me not to touch it."
+   ],
+   "why": "*told me not to touch*: after *told*, name the person, then use *not to* + base form.",
+   "wrong_why": [],
+   "why_lv": "*told me not to touch*: pēc *told* nosauc cilvēku un lieto *not to* ar pamatformu.",
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_orders",
+   "src": "built-in"
+  }
+ },
+ "r20-2-013": {
+  "hash": "e29b400fc72b8146",
+  "gate_key": "rep_questions | B2.1 | gap | 'Could you send me the invoice?' → Lena asked me ___. | ",
+  "src": "built-in",
+  "point": "rep_orders",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to send her the invoice",
+     "if I could send her the invoice",
+     "whether I could send her the invoice"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rq-B21-3a-r3",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Could you send me the invoice?' → Lena asked me ___.",
+   "answers": [
+    [
+     "to send her the invoice",
+     "if I could send her the invoice",
+     "whether I could send her the invoice"
+    ]
+   ],
+   "why": "A request can be reported with *asked* + person + *to* + base verb, or with *if / whether* + *could.*",
+   "hints": [],
+   "d": 5.4,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "rep_orders",
+   "src": "built-in"
+  }
+ },
+ "r20-2-014": {
+  "hash": "e0258db35b5fb05b",
+  "gate_key": "rep_questions | B2.1 | mcq | Which sentence reports the customer's question: 'How long will the repair take?' | The customer asked how long the repair would take.",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "The customer asked how long the repair would take.",
+   "wrong": [
+    "The customer asked how long would the repair take.",
+    "The customer asked how long will the repair take.",
+    "The customer asked how long did the repair take."
+   ]
+  },
+  "item": {
+   "id": "rq-B21-5a-r2",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence reports the customer's question: 'How long will the repair take?'",
+   "correct": "The customer asked how long the repair would take.",
+   "wrong": [
+    "The customer asked how long would the repair take.",
+    "The customer asked how long will the repair take.",
+    "The customer asked how long did the repair take."
+   ],
+   "why": "Normal word order, and *will* goes back to *would.*",
+   "wrong_why": [],
+   "d": 5.8,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-015": {
+  "hash": "5e8d11086cb002fe",
+  "gate_key": "rep_questions | B2.1 | write | Report a request you received at work: 'Could you call the supplier?' Start with My manager asked me. | ",
+  "src": "built-in",
+  "point": "rep_orders",
+  "key": {
+   "kind": "write",
+   "model": "My manager asked me to call the supplier.",
+   "must": [
+    "Start with *My manager asked me.*",
+    "Use *to call*, or *if / whether I could call.*"
+   ]
+  },
+  "item": {
+   "id": "rq-B21-6a",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Report a request you received at work: 'Could you call the supplier?' Start with My manager asked me.",
+   "must": [
+    [
+     "^\\s*my manager asked me\\b",
+     "Start with *My manager asked me.*"
+    ],
+    [
+     "\\bto call\\b|\\bif i could call\\b|\\bwhether i could call\\b",
+     "Use *to call*, or *if / whether I could call.*"
+    ]
+   ],
+   "model": "My manager asked me to call the supplier.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 6,
+   "scaffold": 3,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "rep_orders",
+   "src": "built-in"
+  }
+ },
+ "r20-2-016": {
+  "hash": "2517f34a76089608",
+  "gate_key": "rep_questions | B2.2 | mcq | Tom's question to you: 'What should I do?' Which sentence reports it? | He asked me what to do.",
+  "src": "built-in",
+  "point": "iq_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "He asked me what to do.",
+   "wrong": [
+    "He asked me what should he do.",
+    "He asked me what he does.",
+    "He asked me what to doing."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-1a-r3",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Tom's question to you: 'What should I do?' Which sentence reports it?",
+   "correct": "He asked me what to do.",
+   "wrong": [
+    "He asked me what should he do.",
+    "He asked me what he does.",
+    "He asked me what to doing."
+   ],
+   "why": "A reported question has statement word order, so *what should he do* is wrong. The report *what to do* is correct here; *what he should do* is also possible.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-017": {
+  "hash": "c4a49eaf9828abb9",
+  "gate_key": "rep_questions | B2.2 | mcq | Eva's question to you: 'Where should I park?' Which sentence reports it? | She asked me where she should park.",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "She asked me where she should park.",
+   "wrong": [
+    "She asked me where should she park.",
+    "She asked me where she should to park.",
+    "She asked me where does she should park."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-2a-r3",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Eva's question to you: 'Where should I park?' Which sentence reports it?",
+   "correct": "She asked me where she should park.",
+   "wrong": [
+    "She asked me where should she park.",
+    "She asked me where she should to park.",
+    "She asked me where does she should park."
+   ],
+   "why": "Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.",
+   "wrong_why": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-018": {
+  "hash": "9b42472fcd511abe",
+  "gate_key": "rep_questions | B2.2 | gap | 'Where should we meet?' → They asked me ___. | ",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "where they should meet",
+     "where we should meet",
+     "where to meet"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rq-B22-3a-r3",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Where should we meet?' → They asked me ___.",
+   "answers": [
+    [
+     "where they should meet",
+     "where we should meet",
+     "where to meet"
+    ]
+   ],
+   "why": "Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "rep_q_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-019": {
+  "hash": "8d3542c4a58de51c",
+  "gate_key": "rep_questions | B2.2 | mcq | Which sentence is correct? | Ms Novak asked whether the budget had been approved.",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "Ms Novak asked whether the budget had been approved.",
+   "wrong": [
+    "Ms Novak asked has the budget been approved.",
+    "Ms Novak asked whether had the budget been approved.",
+    "Ms Novak asked that the budget had been approved."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-5a-r2",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "Ms Novak asked whether the budget had been approved.",
+   "wrong": [
+    "Ms Novak asked has the budget been approved.",
+    "Ms Novak asked whether had the budget been approved.",
+    "Ms Novak asked that the budget had been approved."
+   ],
+   "why": "Yes/no question: *asked* + *whether* + subject + verb. The present perfect goes back to the past perfect.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r20-2-020": {
+  "hash": "4522a28ce96e393f",
+  "gate_key": "rep_questions | B2.2 | gap | 'Is the data accurate?' → The editor asked me ___. | ",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether the data was accurate",
+     "whether the data were accurate",
+     "if the data was accurate",
+     "if the data were accurate"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rq-B22-6a-r2",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "gap",
+   "q": "'Is the data accurate?' → The editor asked me ___.",
+   "must": [],
+   "model": null,
+   "why": "A yes/no question is reported with *whether* or *if* and statement word order: *whether the data was accurate*.",
+   "answers": [
+    [
+     "whether the data was accurate",
+     "whether the data were accurate",
+     "if the data was accurate",
+     "if the data were accurate"
+    ]
+   ],
+   "hints": [],
+   "why_lv": "Jā/nē jautājumu atstāsta ar *whether* vai *if* un apgalvojuma vārdu secību: *whether the data was accurate*.",
+   "d": 7,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r20-2-021": {
+  "hash": "9334d8c7f6ab9e1b",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence is correct? | He apologised for being late.",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "He apologised for being late.",
+   "wrong": [
+    "He apologised for be late.",
+    "He apologised to be late.",
+    "He apologised of being late."
+   ]
+  },
+  "item": {
+   "id": "rv-B22-1a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "He apologised for being late.",
+   "wrong": [
+    "He apologised for be late.",
+    "He apologised to be late.",
+    "He apologised of being late."
+   ],
+   "why": "*apologise for* + -ing.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-2-022": {
+  "hash": "b9cf2e2cbdcb4b0c",
+  "gate_key": "rep_verbs | B2.2 | match | Match each sentence with the word that says what the speaker did. | 'I'll definitely be there on time.' = promised ; 'Don't touch the red button!' = warned ; 'Why don't we try the new café?' = suggested ; 'Yes, I broke the vase.' = admitted",
+  "src": "built-in",
+  "point": "rv_to",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "'I'll definitely be there on time.'",
+     "promised"
+    ],
+    [
+     "'Don't touch the red button!'",
+     "warned"
+    ],
+    [
+     "'Why don't we try the new café?'",
+     "suggested"
+    ],
+    [
+     "'Yes, I broke the vase.'",
+     "admitted"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-B22-2a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each sentence with the word that says what the speaker did.",
+   "pairs": [
+    [
+     "'I'll definitely be there on time.'",
+     "promised"
+    ],
+    [
+     "'Don't touch the red button!'",
+     "warned"
+    ],
+    [
+     "'Why don't we try the new café?'",
+     "suggested"
+    ],
+    [
+     "'Yes, I broke the vase.'",
+     "admitted"
+    ]
+   ],
+   "why": "A reporting verb shows what the speaker did: *promise, warn, suggest, admit.*",
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "rv_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-023": {
+  "hash": "e168a4896197203b",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports Sam's answer: 'No, I won't work this weekend.' | Sam refused to work that weekend.",
+  "src": "built-in",
+  "point": "rv_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "Sam refused to work that weekend.",
+   "wrong": [
+    "Sam refused working that weekend.",
+    "Sam refused that he works this weekend.",
+    "Sam refused me to work that weekend."
+   ]
+  },
+  "item": {
+   "id": "rv-B22-5a-r2",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence reports Sam's answer: 'No, I won't work this weekend.'",
+   "correct": "Sam refused to work that weekend.",
+   "wrong": [
+    "Sam refused working that weekend.",
+    "Sam refused that he works this weekend.",
+    "Sam refused me to work that weekend."
+   ],
+   "why": "*refuse* + *to* + base verb.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-024": {
+  "hash": "6bc6ef26b935d222",
+  "gate_key": "rep_verbs | B2.2 | gap | 'Sorry I forgot the meeting.' → Dana apologised ___. | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for forgetting the meeting",
+     "for having forgotten the meeting",
+     "for forgetting about the meeting",
+     "to me for forgetting the meeting",
+     "to me for forgetting about the meeting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-B22-6a-r2",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "gap",
+   "q": "'Sorry I forgot the meeting.' → Dana apologised ___.",
+   "must": [],
+   "model": null,
+   "why": "*apologise for* + *-ing*: *apologised for forgetting the meeting*.",
+   "answers": [
+    [
+     "for forgetting the meeting",
+     "for having forgotten the meeting",
+     "for forgetting about the meeting",
+     "to me for forgetting the meeting",
+     "to me for forgetting about the meeting"
+    ]
+   ],
+   "hints": [],
+   "why_lv": "*apologise for* + *-ing*: *apologised for forgetting the meeting*.",
+   "d": 7,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-2-025": {
+  "hash": "8f7c35fcde9de9c9",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports 'You broke the printer!' as an accusation? | She accused me of breaking the printer.",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "She accused me of breaking the printer.",
+   "wrong": [
+    "She accused me to break the printer.",
+    "She accused me that I broke the printer.",
+    "She accused me for breaking the printer."
+   ]
+  },
+  "item": {
+   "id": "rv-C11-1a-r2",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence reports 'You broke the printer!' as an accusation?",
+   "correct": "She accused me of breaking the printer.",
+   "wrong": [
+    "She accused me to break the printer.",
+    "She accused me that I broke the printer.",
+    "She accused me for breaking the printer."
+   ],
+   "why": "*accuse* + person + *of* + -ing.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-2-026": {
+  "hash": "a03fe72a0cdee3be",
+  "gate_key": "rep_verbs | B2.2 | mcq | What is the difference? A: 'He insisted on paying.' B: 'He offered to pay.' | A: he wouldn't let others pay. B: an offer.",
+  "src": "built-in",
+  "point": "rv_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "A: he wouldn't let others pay. B: an offer.",
+   "wrong": [
+    "A: a polite offer. B: a strong demand.",
+    "A and B mean exactly the same thing.",
+    "A is about the past, B the future."
+   ]
+  },
+  "item": {
+   "id": "rv-C11-2a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "What is the difference? A: 'He insisted on paying.' B: 'He offered to pay.'",
+   "correct": "A: he wouldn't let others pay. B: an offer.",
+   "wrong": [
+    "A: a polite offer. B: a strong demand.",
+    "A and B mean exactly the same thing.",
+    "A is about the past, B the future."
+   ],
+   "why": "*insist on* = refuse to accept a different decision. *offer* = suggest you will do something.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "rv_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-027": {
+  "hash": "271620988ec7751e",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.' | The manager apologised for the delay and promised that it would not happen again.",
+  "src": "built-in",
+  "point": "rv_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "The manager apologised for the delay and promised that it would not happen again.",
+   "wrong": [
+    "The manager apologised the delay and promised that it would not happen again.",
+    "The manager apologised for the delay and promised to that it would not happen again.",
+    "The manager apologised for the delay and promised it not happening again."
+   ]
+  },
+  "item": {
+   "id": "rv-C11-5a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.'",
+   "correct": "The manager apologised for the delay and promised that it would not happen again.",
+   "wrong": [
+    "The manager apologised the delay and promised that it would not happen again.",
+    "The manager apologised for the delay and promised to that it would not happen again.",
+    "The manager apologised for the delay and promised it not happening again."
+   ],
+   "why": "A reporting verb says what the speaker did. *apologise for* + noun, *promise* + *that* + clause.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-028": {
+  "hash": "22a617c1039cd7a4",
+  "gate_key": "rep_verbs | B2.2 | write | Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!' | ",
+  "src": "built-in",
+  "point": "rv_ing",
+  "key": {
+   "kind": "write",
+   "model": "Leo denied breaking it.",
+   "must": [
+    "Use a reporting verb such as *denied* or *insisted.*"
+   ]
+  },
+  "item": {
+   "id": "rv-C11-6a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!'",
+   "must": [
+    [
+     "\\b(denied|insisted|claimed|protested)\\b",
+     "Use a reporting verb such as *denied* or *insisted.*"
+    ]
+   ],
+   "model": "Leo denied breaking it.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-2-029": {
+  "hash": "9aed3c19ace78d37",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports this: 'If I were you, I'd take the earlier train.' | She advised me to take the earlier train.",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "She advised me to take the earlier train.",
+   "wrong": [
+    "She suggested me to take the earlier train.",
+    "She insisted me to take the earlier train.",
+    "She advised to me take the earlier train."
+   ]
+  },
+  "item": {
+   "id": "rv-C12-1a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
+   "correct": "She advised me to take the earlier train.",
+   "wrong": [
+    "She suggested me to take the earlier train.",
+    "She insisted me to take the earlier train.",
+    "She advised to me take the earlier train."
+   ],
+   "why": "*advise* + person + *to* + base verb.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_obj_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-030": {
+  "hash": "8bd4af226feff94c",
+  "gate_key": "rep_verbs | B2.2 | mcq | The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did? | refused",
+  "src": "built-in",
+  "point": "rv_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "refused",
+   "wrong": [
+    "promised",
+    "admitted",
+    "suggested"
+   ]
+  },
+  "item": {
+   "id": "rv-C12-2a-r4",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did?",
+   "correct": "refused",
+   "wrong": [
+    "promised",
+    "admitted",
+    "suggested"
+   ],
+   "why": "*refuse (to* + base verb*)* means to say no.",
+   "wrong_why": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "rv_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-031": {
+  "hash": "a769c95c0aa5a863",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports the customer's words in formal English: 'The service was terrible.' | The customer complained that the service had been terrible.",
+  "src": "built-in",
+  "point": "rv_that",
+  "key": {
+   "kind": "mcq",
+   "correct": "The customer complained that the service had been terrible.",
+   "wrong": [
+    "The customer complained about the service had been terrible.",
+    "The customer complained to be terrible the service.",
+    "The customer complained me that the service was terrible."
+   ]
+  },
+  "item": {
+   "id": "rv-C12-5a-r4",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence reports the customer's words in formal English: 'The service was terrible.'",
+   "correct": "The customer complained that the service had been terrible.",
+   "wrong": [
+    "The customer complained about the service had been terrible.",
+    "The customer complained to be terrible the service.",
+    "The customer complained me that the service was terrible."
+   ],
+   "why": "*complain* + *that* + clause. The past goes back to the past perfect.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_that",
+   "src": "built-in"
+  }
+ },
+ "r20-2-032": {
+  "hash": "903898a50e1b7e4f",
+  "gate_key": "rep_verbs | B2.2 | write | Say what Mia did, in one sentence, without her words in quotes. Mia said to the team: 'Thank you for everything you've done.' | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "write",
+   "model": "Mia thanked the team for everything they had done.",
+   "must": [
+    "Use *thanked* (or *expressed thanks*)."
+   ]
+  },
+  "item": {
+   "id": "rv-C12-6a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Say what Mia did, in one sentence, without her words in quotes. Mia said to the team: 'Thank you for everything you've done.'",
+   "must": [
+    [
+     "\\b(thanked|expressed)\\b",
+     "Use *thanked* (or *expressed thanks*)."
+    ]
+   ],
+   "model": "Mia thanked the team for everything they had done.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-2-033": {
+  "hash": "a153f0f35038c889",
+  "gate_key": "ind_polite | B2.1 | mcq | What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?' | B is more polite and indirect.",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "B is more polite and indirect.",
+   "wrong": [
+    "A is more polite than B.",
+    "B asks about the past.",
+    "They are the same."
+   ]
+  },
+  "item": {
+   "id": "ip-B21-2a",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?'",
+   "correct": "B is more polite and indirect.",
+   "wrong": [
+    "A is more polite than B.",
+    "B asks about the past.",
+    "They are the same."
+   ],
+   "why": "Indirect questions with phrases like *Do you happen to know* sound softer.",
+   "wrong_why": [],
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "learn",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-034": {
+  "hash": "f5726534104cd475",
+  "gate_key": "ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me when my order will be delivered.",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "I was wondering if you could tell me when my order will be delivered.",
+   "wrong": [
+    "I was wondering when will my order be delivered?",
+    "I was wondering if you could tell me when will my order be delivered?",
+    "I was wondering that you could tell me when my order will be delivered."
+   ]
+  },
+  "item": {
+   "id": "ip-B21-5a-r3",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "I was wondering if you could tell me when my order will be delivered.",
+   "wrong": [
+    "I was wondering when will my order be delivered?",
+    "I was wondering if you could tell me when will my order be delivered?",
+    "I was wondering that you could tell me when my order will be delivered."
+   ],
+   "why": "*I was wondering if you could tell me* + *when* + subject + verb.",
+   "wrong_why": [],
+   "d": 5.8,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-035": {
+  "hash": "cd12fe719761de1b",
+  "gate_key": "ind_polite | B2.1 | write | Ask very politely, in one sentence, when the report will be ready. | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "write",
+   "model": "I was wondering if you could tell me when the report will be ready.",
+   "must": [
+    "A polite start: *I was wondering …* / *Could you tell me …*",
+    "Ask about the time: *when the report will be ready*.",
+    "After *when*: the subject first: *when the report will be ready*."
+   ]
+  },
+  "item": {
+   "id": "ip-B21-6a-r3",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Ask very politely, in one sentence, when the report will be ready.",
+   "must": [
+    [
+     "\\b(wondering|tell me|know)\\b",
+     "A polite start: *I was wondering …* / *Could you tell me …*",
+     "Pieklājīgs sākums: *I was wondering …* / *Could you tell me …*"
+    ],
+    [
+     "\\b(when|if|whether)\\b",
+     "Ask about the time: *when the report will be ready*.",
+     "Jautā par laiku: *when the report will be ready*."
+    ],
+    [
+     "^(?!.*\\b(when|where|what|why|how)\\s+(will|would|is|are|was|were|does|do|did)\\b)",
+     "After *when*: the subject first: *when the report will be ready*.",
+     "Pēc *when*: vispirms teik. priekšmets: *when the report will be ready*."
+    ]
+   ],
+   "model": "I was wondering if you could tell me when the report will be ready.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 6,
+   "scaffold": 3,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-036": {
+  "hash": "3577287c9900d95a",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which is correct? 'I don't know ___.' | what to do",
+  "src": "built-in",
+  "point": "iq_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "what to do",
+   "wrong": [
+    "what to doing",
+    "what do I",
+    "what to I do"
+   ]
+  },
+  "item": {
+   "id": "ia-B22-1a",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which is correct? 'I don't know ___.'",
+   "correct": "what to do",
+   "wrong": [
+    "what to doing",
+    "what do I",
+    "what to I do"
+   ],
+   "why": "Question word + *to* + base verb: *what to do.*",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-037": {
+  "hash": "e66f1ffbb8adf062",
+  "gate_key": "ind_advanced | B2.2 | mcq | 'I have no idea how to start.' What does 'how to start' mean? | how I should start",
+  "src": "built-in",
+  "point": "iq_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "how I should start",
+   "wrong": [
+    "when I started",
+    "why I started",
+    "that I will start"
+   ]
+  },
+  "item": {
+   "id": "ia-B22-2a",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'I have no idea how to start.' What does 'how to start' mean?",
+   "correct": "how I should start",
+   "wrong": [
+    "when I started",
+    "why I started",
+    "that I will start"
+   ],
+   "why": "A question word + to-infinitive shows what you do not know how or what to do.",
+   "wrong_why": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "iq_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-038": {
+  "hash": "d2bbb46cb3ce523b",
+  "gate_key": "ind_advanced | B2.2 | text | Say it shorter with *to*: Can you tell me how I can get to the museum? | ",
+  "src": "built-in",
+  "point": "iq_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Can you tell me how to get to the museum?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ia-B22-3a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it shorter with *to*: Can you tell me how I can get to the museum?",
+   "answers": [
+    [
+     "Can you tell me how to get to the museum?"
+    ]
+   ],
+   "why": "*how* + *to* + base form: *how to get*.",
+   "hints": [],
+   "why_lv": "*how* + *to* + pamatforma: *how to get*.",
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "iq_to",
+   "src": "built-in"
+  }
+ },
+ "r20-2-039": {
+  "hash": "2abd1343516f3c84",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is correct? | It remains unclear who is responsible for the delay.",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "mcq",
+   "correct": "It remains unclear who is responsible for the delay.",
+   "wrong": [
+    "It remains unclear who is the responsible for the delay.",
+    "It remains unclear who responsible is for the delay.",
+    "It remains unclear who does responsible for the delay."
+   ]
+  },
+  "item": {
+   "id": "ia-B22-5a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "It remains unclear who is responsible for the delay.",
+   "wrong": [
+    "It remains unclear who is the responsible for the delay.",
+    "It remains unclear who responsible is for the delay.",
+    "It remains unclear who does responsible for the delay."
+   ],
+   "why": "Embedded question: *who + is + responsible* (statement order).",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r20-2-040": {
+  "hash": "a4e46b8e961b56f2",
+  "gate_key": "ind_advanced | B2.2 | write | Write a sentence with 'I have no idea' and a question word (how, what, where, when, who or why). | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "write",
+   "model": "I have no idea how long the meeting will take.",
+   "must": [
+    "Use *I have no idea* + a question word."
+   ]
+  },
+  "item": {
+   "id": "ia-B22-6a",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write a sentence with 'I have no idea' and a question word (how, what, where, when, who or why).",
+   "must": [
+    [
+     "\\bi have no idea (how|what|where|when|who|why|which)\\b",
+     "Use *I have no idea* + a question word."
+    ]
+   ],
+   "model": "I have no idea how long the meeting will take.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r20-2-041": {
+  "hash": "d434698500629424",
+  "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct option: ___ remains unclear. | Whether he will attend",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whether he will attend",
+   "wrong": [
+    "Will he attend",
+    "Whether will he attend",
+    "That will he attend"
+   ]
+  },
+  "item": {
+   "id": "ia-C11-1a-r4",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ remains unclear.",
+   "correct": "Whether he will attend",
+   "wrong": [
+    "Will he attend",
+    "Whether will he attend",
+    "That will he attend"
+   ],
+   "why": "A question inside a sentence has the order of a statement: *Whether he will attend* remains unclear.",
+   "wrong_why": [],
+   "why_lv": "Jautājumam teikuma iekšienē ir apgalvojuma vārdu secība: *Whether he will attend* remains unclear.",
+   "wrong_why_lv": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r20-2-042": {
+  "hash": "86966178bc33d8a3",
+  "gate_key": "ind_advanced | B2.2 | text | Combine the two sentences without changing their meaning: Who made the decision? It's not clear. | ",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It's not clear who made the decision.",
+     "It is not clear who made the decision.",
+     "Who made the decision is not clear.",
+     "It's unclear who made the decision.",
+     "It is unclear who made the decision."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ia-C11-3a-r7",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+   "answers": [
+    [
+     "It's not clear who made the decision.",
+     "It is not clear who made the decision.",
+     "Who made the decision is not clear.",
+     "It's unclear who made the decision.",
+     "It is unclear who made the decision."
+    ]
+   ],
+   "why": "Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r20-2-043": {
+  "hash": "1130e686246fa73e",
+  "gate_key": "ind_advanced | B2.2 | mcq | You write a report: 'The question is ___.' Choose the correct option. | whether the project is worth the cost",
+  "src": "built-in",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "whether the project is worth the cost",
+   "wrong": [
+    "is the project worth the cost",
+    "if is the project worth the cost",
+    "whether is the project worth the cost"
+   ]
+  },
+  "item": {
+   "id": "ia-C11-5a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "You write a report: 'The question is ___.' Choose the correct option.",
+   "correct": "whether the project is worth the cost",
+   "wrong": [
+    "is the project worth the cost",
+    "if is the project worth the cost",
+    "whether is the project worth the cost"
+   ],
+   "why": "The question is + *whether* + subject + verb.",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "built-in"
+  }
+ },
+ "r20-2-044": {
+  "hash": "e5e4420520f603d2",
+  "gate_key": "ind_advanced | B2.2 | mcq | 'Whatever he says, don't sign it.' What does 'whatever' mean here? | it does not matter what he says",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "mcq",
+   "correct": "it does not matter what he says",
+   "wrong": [
+    "he says everything he thinks",
+    "it matters a lot what he says",
+    "he never says what he means"
+   ]
+  },
+  "item": {
+   "id": "ia-C12-2a-r3",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'Whatever he says, don't sign it.' What does 'whatever' mean here?",
+   "correct": "it does not matter what he says",
+   "wrong": [
+    "he says everything he thinks",
+    "it matters a lot what he says",
+    "he never says what he means"
+   ],
+   "why": "*whatever / whoever / wherever* + clause: it does not matter what / who / where.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [],
+   "role": "learn",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20-2-045": {
+  "hash": "462c743b6c1f778b",
+  "gate_key": "ind_advanced | B2.2 | text | Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer. | ",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Whoever calls, don't answer.",
+     "Whoever calls, do not answer."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ia-C12-3a-r4",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+   "answers": [
+    [
+     "Whoever calls, don't answer.",
+     "Whoever calls, do not answer."
+    ]
+   ],
+   "why": "*Whoever* + verb = it does not matter who.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20-2-046": {
+  "hash": "9d896c3557e1b0ca",
+  "gate_key": "ind_advanced | B2.2 | write | Write a sentence with 'whoever', 'whatever' or 'wherever' to describe a flexible rule at your workplace. | ",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "write",
+   "model": "You can sit wherever you like.",
+   "must": [
+    "Use *whoever, whatever, wherever* or similar."
+   ]
+  },
+  "item": {
+   "id": "ia-C12-6a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "Write a sentence with 'whoever', 'whatever' or 'wherever' to describe a flexible rule at your workplace.",
+   "must": [
+    [
+     "\\b(whoever|whatever|wherever|whenever|whichever|however)\\b",
+     "Use *whoever, whatever, wherever* or similar."
+    ]
+   ],
+   "model": "You can sit wherever you like.",
+   "why": "Compare your sentence with the model answer.",
+   "d": 7,
+   "scaffold": 3,
+   "err": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20-2-047": {
+  "hash": "f2316b40ee3099ec",
+  "gate_key": "cond_mixed | B2.1 | order | Link a different past decision to a present result. Start with If I had and put now at the end. | if I had studied medicine I would be a doctor now",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "order",
+   "sentence": "if I had studied medicine I would be a doctor now",
+   "also": []
+  },
+  "item": {
+   "id": "var-cm-b21-order-01",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Link a different past decision to a present result. Start with If I had and put now at the end.",
+   "why": "*Had studied* imagines a different past decision. *Would be ... now* describes the present consequence.",
+   "sentence": "if I had studied medicine I would be a doctor now",
+   "answers": [
+    [
+     "if I had studied medicine I would be a doctor now"
+    ]
+   ],
+   "display_answer": "If I had studied medicine, I would be a doctor now.",
+   "d": 5.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20-2-048": {
+  "hash": "8d8ffccdfc3c2854",
+  "gate_key": "cond_advanced | B2.2 | order | Put the words in order. Start with *Had I*. | had I known about the delay I would have called you",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "order",
+   "sentence": "had I known about the delay I would have called you",
+   "also": []
+  },
+  "item": {
+   "id": "var-ca-c11-order-01-r4",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order. Start with *Had I*.",
+   "why": "*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.",
+   "sentence": "had I known about the delay I would have called you",
+   "answers": [
+    [
+     "had I known about the delay I would have called you"
+    ]
+   ],
+   "display_answer": "Had I known about the delay, I would have called you.",
+   "d": 6.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "check",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20-2-049": {
+  "hash": "560eebed243c970f",
+  "gate_key": "rep_verbs | B2.2 | order | Report an apology. Start with She. | she apologised for missing the meeting",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "order",
+   "sentence": "she apologised for missing the meeting",
+   "also": []
+  },
+  "item": {
+   "id": "var-rv-b22-order-01",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Report an apology. Start with She.",
+   "why": "The pattern is *apologise for + noun or -ing form*: *apologised for missing the meeting*.",
+   "sentence": "she apologised for missing the meeting",
+   "answers": [
+    [
+     "she apologised for missing the meeting"
+    ]
+   ],
+   "display_answer": "She apologised for missing the meeting.",
+   "d": 6.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20-2-050": {
+  "hash": "19820bbd31a0a294",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. Start with *Whether*. | whether the plan will work remains uncertain",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "order",
+   "sentence": "whether the plan will work remains uncertain",
+   "also": []
+  },
+  "item": {
+   "id": "var-ia-c11-order-01-r3",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order. Start with *Whether*.",
+   "why": "*Whether the plan will work* is the subject of *remains uncertain*. The embedded question uses statement word order.",
+   "sentence": "whether the plan will work remains uncertain",
+   "answers": [
+    [
+     "whether the plan will work remains uncertain"
+    ]
+   ],
+   "display_answer": "Whether the plan will work remains uncertain.",
+   "d": 6.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "check",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r20-2-051": {
+  "hash": "8e77477bbd944788",
+  "gate_key": "cond_advanced | B2.2 | gap | ___ she ___ earlier, she would have caught the train. | ",
+  "src": "a2-forms-1.csv:28",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Had"
+    ],
+    [
+     "left"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0407",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ she ___ earlier, she would have caught the train.",
+   "why": "*Had she left* means *If she had left*. Inversion removes *if* and puts *had* before the subject; then the 3rd form.",
+   "why_lv": "*Had she left* nozīmē *If she had left.* *Inversija* izlaiž *if* un liek *had* pirms teikuma priekšmeta; tad 3. forma.",
+   "answers": [
+    [
+     "Had"
+    ],
+    [
+     "left"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Had",
+    "left",
+    "Did",
+    "leave"
+   ],
+   "role": "check",
+   "point": "c_inv",
+   "src": "a2-forms-1.csv:28"
+  }
+ },
+ "r20-2-052": {
+  "hash": "56ca123b3a282638",
+  "gate_key": "narrative_b2 | B2.1 | mcq | Choose the correct option: The ground was wet. It ___ in the night. | had been raining",
+  "src": "compare-past-1.csv:47",
+  "point": "pastpc",
+  "key": {
+   "kind": "mcq",
+   "correct": "had been raining",
+   "wrong": [
+    "has been raining",
+    "had been rain"
+   ]
+  },
+  "item": {
+   "id": "c-2194",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The ground was wet. It ___ in the night.",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "correct": "had been raining",
+   "wrong": [
+    "has been raining",
+    "had been rain"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:47"
+  }
+ },
+ "r20-2-053": {
+  "hash": "40abde46ea301d87",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Choose the correct option: When the bus finally came, we ___ in the rain for half an hour. | had been standing",
+  "src": "compare-past-1.csv:48",
+  "point": "pastpc",
+  "key": {
+   "kind": "mcq",
+   "correct": "had been standing",
+   "wrong": [
+    "have been standing",
+    "had been stand"
+   ]
+  },
+  "item": {
+   "id": "c-2195",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: When the bus finally came, we ___ in the rain for half an hour.",
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+   "correct": "had been standing",
+   "wrong": [
+    "have been standing",
+    "had been stand"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:48"
+  }
+ },
+ "r20-2-054": {
+  "hash": "3878284323f4b4e2",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Choose the correct option: She was lying on the sofa. She was tired because she ___ hard. | had been working",
+  "src": "compare-past-1.csv:49",
+  "point": "pastpc",
+  "key": {
+   "kind": "mcq",
+   "correct": "had been working",
+   "wrong": [
+    "has been working",
+    "had working"
+   ]
+  },
+  "item": {
+   "id": "c-2196",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She was lying on the sofa. She was tired because she ___ hard.",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "correct": "had been working",
+   "wrong": [
+    "has been working",
+    "had working"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:49"
+  }
+ },
+ "r20-2-055": {
+  "hash": "b24c558f8c9b886e",
+  "gate_key": "narrative_b2 | B2.1 | gap | We ___ tennis for half an hour when it started to rain. | ",
+  "src": "compare-past-1.csv:50",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been playing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2197",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We ___ tennis for half an hour when it started to rain.",
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+   "answers": [
+    [
+     "had been playing"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had been playing",
+    "have been playing",
+    "had been played",
+    "are playing"
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:50"
+  }
+ },
+ "r20-2-056": {
+  "hash": "231a6b61fe28ddd8",
+  "gate_key": "narrative_b2 | B2.1 | gap | Tom was tired when he got home. He ___ hard all day. (work) | ",
+  "src": "compare-past-1.csv:51",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been working",
+     "had worked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2198",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Tom was tired when he got home. He ___ hard all day. (work)",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "answer_notes": [
+    [
+     "had worked",
+     "Correct too: *had worked* focuses on the work completed before he got home. *Had been working* emphasises its duration and explains his tiredness.",
+     "Arī pareizi: *had worked* uzsver pirms pārnākšanas paveikto. *Had been working* uzsver ilgumu un izskaidro nogurumu."
+    ]
+   ],
+   "answers": [
+    [
+     "had been working",
+     "had worked"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:51"
+  }
+ },
+ "r20-2-057": {
+  "hash": "05df755de8848532",
+  "gate_key": "narrative_b2 | B2.1 | gap | Yesterday was busy. By lunchtime she ___ ten emails. (write) | ",
+  "src": "compare-past-1.csv:52",
+  "point": "pastpc_vs",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had written"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Yesterday was busy. By lunchtime she ___ ten emails. (write)",
+   "why": "How much or how many: *had done*. How long: *had been doing*.",
+   "why_lv": "Cik *daudz*: *had done*. Cik ilgi: *had been doing*.",
+   "answers": [
+    [
+     "had written"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc_vs",
+   "src": "compare-past-1.csv:52"
+  }
+ },
+ "r20-2-058": {
+  "hash": "b2d4e1801fb2dcfc",
+  "gate_key": "narrative_b2 | B2.1 | gap | James was out of breath when he came in. He ___. (run) | ",
+  "src": "compare-past-1.csv:53",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been running"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2200",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "James was out of breath when he came in. He ___. (run)",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "answers": [
+    [
+     "had been running"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:53"
+  }
+ },
+ "r20-2-059": {
+  "hash": "7cd23e5654791f00",
+  "gate_key": "narrative_b2 | B2.2 | gap | At last the bus came. I ___ for twenty minutes. | ",
+  "src": "compare-past-1.csv:54",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been waiting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2201",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "At last the bus came. I ___ for twenty minutes.",
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+   "answers": [
+    [
+     "had been waiting"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had been waiting",
+    "have been waiting",
+    "had been waited",
+    "am waiting"
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:54"
+  }
+ },
+ "r20-2-060": {
+  "hash": "a57284012837c14c",
+  "gate_key": "narrative_b2 | B2.2 | gap | I hope the bus comes soon. I ___ for twenty minutes. (wait) | ",
+  "src": "compare-past-1.csv:55",
+  "point": "ppc_form",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have been waiting",
+     "have waited"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2202",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I hope the bus comes soon. I ___ for twenty minutes. (wait)",
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+   "answer_notes": [
+    [
+     "have waited",
+     "Correct too. *have been waiting* stresses that the waiting is still going on.",
+     "Arī pareizi. *have been waiting* uzsver, ka gaidīšana vēl turpinās."
+    ]
+   ],
+   "answers": [
+    [
+     "have been waiting",
+     "have waited"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "ppc_form",
+   "src": "compare-past-1.csv:55"
+  }
+ }
+}

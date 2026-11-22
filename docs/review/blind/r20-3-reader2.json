@@ -1,0 +1,697 @@
+[
+{
+"id": "r20-3-001",
+"answer": [
+"wasn't raining"
+],
+"other_correct": [
+[
+"was not raining"
+],
+[
+"hadn't been raining"
+],
+[
+"didn't rain"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense is not signalled: 'hadn't been raining' and 'didn't rain' also work (less natural with the sun shining). Learner cannot tell which contrast is wanted.",
+"level_problem": "Simple past continuous is far too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-002",
+"answer": [
+"hadn't been living"
+],
+"other_correct": [
+[
+"had not been living"
+],
+[
+"hadn't lived"
+],
+[
+"had not lived"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'hadn't lived' is equally correct; task cannot distinguish them.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-003",
+"answer": "we had been driving for hours when the car broke down",
+"other_correct": [
+"when the car broke down we had been driving for hours",
+"the car broke down when we had been driving for hours",
+"when we had been driving for hours the car broke down"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'when' card shows clause order is free; several orders accepted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-004",
+"answer": "she had been working there for ten years when she left",
+"other_correct": [
+"when she left she had been working there for ten years",
+"she left when she had been working there for ten years",
+"when she had been working there for ten years she left",
+"she had been working for ten years there when she left (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-005",
+"answer": "We went out despite the fact that it was raining.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-006",
+"answer": "not to wake",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-007",
+"answer": [
+"as"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-008",
+"answer": "Despite the rain, the match went ahead.",
+"other_correct": [
+"In spite of the rain, the match went ahead."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction does not say whether to keep 'despite' or may change to 'in spite of'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-009",
+"answer": "Whereas",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-010",
+"answer": "in case",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-011",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "'to': 'used to tracking' is grammatical (be used to + -ing) though odd in meaning.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'to' fits formally as 'be used to tracking', a real trap but the sentence then means something silly."
+},
+{
+"id": "r20-3-012",
+"answer": "therefore",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-013",
+"answer": "yet",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-014",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-015",
+"answer": "on",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-016",
+"answer": "The shop closed early owing the strike.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Fine; 'owing the' is a believable slip."
+},
+{
+"id": "r20-3-017",
+"answer": "He studied hard; nevertheless, he failed the test.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 (comma after 'he') is a form nobody writes; option 2 is a believable comma splice mistake."
+},
+{
+"id": "r20-3-018",
+"answer": "in case",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-019",
+"answer": "consequently",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-020",
+"answer": [
+"reason"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-021",
+"answer": [
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-022",
+"answer": [
+"of"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-023",
+"answer": [
+"not"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-024",
+"answer": [
+"case"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-025",
+"answer": "Take an umbrella in case it rains.",
+"other_correct": [
+[
+"Take an umbrella in case it should rain."
+],
+[
+"Take an umbrella in case it rained."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say what is wrong; 'in case it should rain' is also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-026",
+"answer": "This tool is for cutting metal.",
+"other_correct": [
+"This tool is used for cutting metal."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Rewrite also possible as 'This tool is for cutting metals' / added 'used'; fine but open.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-027",
+"answer": "The flight was late owing to the bad weather.",
+"other_correct": [
+"Owing to the bad weather, the flight was late.",
+"The flight was late owing to bad weather.",
+"Owing to the weather being bad, the flight was late.",
+"The flight was late owing to the fact that the weather was bad."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Very open: many valid rewrites; 'owing to the fact that' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-028",
+"answer": "even though her legs hurt she kept running",
+"other_correct": [
+"she kept running even though her legs hurt"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.1 (B1 structure).",
+"sense_problem": ""
+},
+{
+"id": "r20-3-029",
+"answer": "we need more staff in order for the shop to open on sundays",
+"other_correct": [
+"in order for the shop to open on sundays we need more staff",
+"we need more staff on sundays in order for the shop to open",
+"in order for the shop to open we need more staff on sundays"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'in order for ... to' is hard to see from the cards; many orders possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-030",
+"answer": "the train was cancelled and as a result we missed the meeting",
+"other_correct": [
+"the meeting was cancelled and as a result we missed the train",
+"we missed the train and as a result the meeting was cancelled",
+"we missed the meeting and as a result the train was cancelled",
+"the train was cancelled and we missed the meeting as a result",
+"the meeting was cancelled and we missed the train as a result"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards are symmetric (train/meeting): two sensible sentences, both logical.",
+"level_problem": "",
+"sense_problem": "Both main sentences are logical."
+},
+{
+"id": "r20-3-031",
+"answer": [
+[
+"Pack a raincoat",
+"in case it rains."
+],
+[
+"The roads were icy.",
+"As a result, there were many accidents."
+],
+[
+"Owing to the strike,",
+"there were no trains."
+],
+[
+"This brush is",
+"for cleaning bottles."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-032",
+"answer": [
+"wouldn't",
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Mixed conditional is fine for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-033",
+"answer": [
+"had",
+"learned"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-034",
+"answer": "if she were more patient she wouldn't have shouted at him",
+"other_correct": [
+"she wouldn't have shouted at him if she were more patient"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-035",
+"answer": [
+"were",
+"would have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-036",
+"answer": "had we booked earlier we would be on the beach now",
+"other_correct": [
+"we would be on the beach now had we booked earlier",
+"had we booked earlier now we would be on the beach",
+"now we would be on the beach had we booked earlier"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-037",
+"answer": [
+"Had",
+"read"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-038",
+"answer": "had she not missed the train she would be here now",
+"other_correct": [
+"she would be here now had she not missed the train",
+"now she would be here had she not missed the train",
+"had she not missed the train now she would be here"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-039",
+"answer": [
+"been",
+"tested"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-040",
+"answer": "the coach told us to warm up before every match",
+"other_correct": [
+"before every match the coach told us to warm up",
+"the coach told us before every match to warm up (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-041",
+"answer": [
+"would",
+"landed"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-042",
+"answer": "the agent said I might need a visa",
+"other_correct": [
+"I said the agent might need a visa"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Second reading is odd but correct."
+},
+{
+"id": "r20-3-043",
+"answer": "she asked me how to start",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2 (six cards, one obvious order).",
+"sense_problem": ""
+},
+{
+"id": "r20-3-044",
+"answer": "they asked what time they should arrive",
+"other_correct": [
+"what time should they arrive they asked (direct speech)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-045",
+"answer": [
+"I",
+"was"
+],
+"other_correct": [
+[
+"I",
+"am"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Backshift is optional: 'whether or not I am coming' is also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-046",
+"answer": [
+"had",
+"been"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-047",
+"answer": [
+"to",
+"get"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-048",
+"answer": [
+"to",
+"checked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-049",
+"answer": "she threatened to call the police",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-050",
+"answer": "we weren't sure where to go",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-051",
+"answer": "she didn't know who to ask",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-052",
+"answer": "we can't decide whether to book the hotel",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-053",
+"answer": "it remains unclear how we will pay for the repairs",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-054",
+"answer": [
+"Whoever"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-055",
+"answer": "i'll support you whatever you decide",
+"other_correct": [
+"whatever you decide i'll support you"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-056",
+"answer": "whoever finishes first can go home",
+"other_correct": [
+"whoever finishes can go home first (different meaning)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-057",
+"answer": "why the system failed remains to be explained",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-3-058",
+"answer": "if I were you I'd think twice about that offer",
+"other_correct": [
+"I'd think twice about that offer if I were you"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fixed expression, easy for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-059",
+"answer": [
+"offered",
+"would be"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Second conditional, B1 level.",
+"sense_problem": ""
+},
+{
+"id": "r20-3-060",
+"answer": "I would tell you the answer if I knew",
+"other_correct": [
+"if I knew the answer I would tell you"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.1.",
+"sense_problem": ""
+}
+]

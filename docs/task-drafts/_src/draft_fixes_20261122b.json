@@ -1,0 +1,268 @@
+{
+ "compare-past-1.csv": [
+  {
+   "id": "r20b-1-018",
+   "match": [
+    "gap",
+    "James was out of breath when he came in. He ___. (run)",
+    "had been running | had run | 'd run | 'd been running"
+   ],
+   "set": {
+    "4": "had been running | had run | 'd run | 'd been running | must have been running | must have run"
+   }
+  },
+  {
+   "id": "r20b-2-019",
+   "match": [
+    "order",
+    "Put all the words in order. More than one answer is possible.",
+    "she had been working there for ten years when she left"
+   ],
+   "set": {
+    "4": "she had been working there for ten years when she left",
+    "5": "also accepted: when she left she had been working there for ten years | she left when she had been working there for ten years | when she had been working there for ten years she left | when she left there she had been working for ten years | she had been working for ten years when she left there"
+   }
+  }
+ ],
+ "conjunctions-1.csv": [
+  {
+   "id": "r20b-1-023",
+   "match": [
+    "text",
+    "Rewrite with *owing to*: The flight was late because the weather was bad.",
+    "The flight was late owing to the bad weather. | The flight was late owing to bad weather. | Owing to the bad weather, the flight was late. | Owing to bad weather, the flight was late. | Owing to the weather being bad, the flight was late. | The flight was late owing to the weather being bad. | The flight was late owing to the fact that the weather was bad. | Owing to the fact that the weather was bad, the flight was late."
+   ],
+   "set": {
+    "4": "The flight was late owing to the bad weather. | The flight was late owing to bad weather. | Owing to the bad weather, the flight was late. | Owing to bad weather, the flight was late. | Owing to the weather being bad, the flight was late. | The flight was late owing to the weather being bad. | The flight was late owing to the fact that the weather was bad. | Owing to the fact that the weather was bad, the flight was late. | Owing to the weather's being bad, the flight was late. | The flight was late owing to the weather's being bad."
+   }
+  },
+  {
+   "id": "r20b-2-022",
+   "match": [
+    "text",
+    "Correct the mistake: Save a copy on a USB stick in case your laptop will crash.",
+    "Save a copy on a USB stick in case your laptop crashes. | Save a copy on a USB stick in case your laptop should crash."
+   ],
+   "set": {
+    "4": "Save a copy on a USB stick in case your laptop crashes. | Save a copy on a USB stick in case your laptop should crash. | Save a copy on a USB stick in case your laptop does crash."
+   }
+  },
+  {
+   "id": "r20b-3-019",
+   "match": [
+    "text",
+    "Correct the mistake: Despite of the delays, the project was finished on time.",
+    "Despite the delays, the project was finished on time. | In spite of the delays, the project was finished on time."
+   ],
+   "set": {
+    "4": "Despite the delays, the project was finished on time. | In spite of the delays, the project was finished on time. | The project was finished on time despite the delays. | The project was finished on time in spite of the delays."
+   }
+  }
+ ],
+ "twins-1.csv": [
+  {
+   "id": "r20b-1-031",
+   "match": [
+    "gap",
+    "The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel)",
+    "built | were to build / would travel | might travel | could travel | would be travelling"
+   ],
+   "set": {
+    "4": "built | were to build / would travel | might travel | could travel | would be travelling | 'd travel"
+   }
+  },
+  {
+   "id": "r20b-3-030",
+   "match": [
+    "text",
+    "Correct the mistake: Despite of the delay, we arrived on time.",
+    "Despite the delay, we arrived on time. | In spite of the delay, we arrived on time. | We arrived on time despite the delay. | We arrived on time in spite of the delay."
+   ],
+   "set": {
+    "3": "Correct the mistake: She got the job despite of having no experience.",
+    "4": "She got the job despite having no experience. | She got the job in spite of having no experience. | Despite having no experience, she got the job. | In spite of having no experience, she got the job.",
+    "6": "*despite / in spite of* + noun or *-ing* (*despite having*); never *despite of*.",
+    "7": "*despite / in spite of* + lietvārds vai *-ing* forma (*despite having*); nekad *despite of*.",
+    "9": "Correct the mistake: Despite of the delay, we arrived on time."
+   }
+  },
+  {
+   "id": "r20b-3-031",
+   "match": [
+    "gap",
+    "She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus.",
+    "hadn't stayed / wouldn't have missed | might not have missed"
+   ],
+   "set": {
+    "4": "hadn't stayed / wouldn't have missed | might not have missed | 'd not have missed"
+   }
+  }
+ ],
+ "twins-3.csv": [
+  {
+   "id": "r20b-1-038",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "The agent said I might need a visa."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20b-1-040",
+   "match": [
+    "text",
+    "Join the sentences: She didn't know. Who should she ask?",
+    "She didn't know who to ask. | She didn't know whom to ask. | She didn't know who she should ask. | She didn't know whom she should ask."
+   ],
+   "set": {
+    "4": "She didn't know who to ask. | She didn't know whom to ask. | She didn't know who she should ask. | She didn't know whom she should ask. | She didn't know who she ought to ask. | She didn't know whom she ought to ask."
+   }
+  },
+  {
+   "id": "r20b-1-041",
+   "match": [
+    "text",
+    "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+    "I'll support you whatever you decide. | I will support you whatever you decide. | I'll support you no matter what you decide. | I will support you no matter what you decide. | I'll support you whichever way you decide. | I'll support you however you decide. | I'll support you regardless of what you decide."
+   ],
+   "set": {
+    "4": "I'll support you whatever you decide. | I will support you whatever you decide. | I'll support you no matter what you decide. | I will support you no matter what you decide. | I'll support you whichever way you decide. | I'll support you however you decide. | I'll support you regardless of what you decide. | I'll support you whatever decision you make. | I will support you whatever decision you make."
+   }
+  },
+  {
+   "id": "r20b-3-038",
+   "match": [
+    "text",
+    "Report this. Start with *They asked*: 'What time should we arrive?'",
+    "They asked what time they should arrive. | They asked what time to arrive. | They asked what time we should arrive. | They asked me what time they should arrive. | They asked us what time we should arrive. | They asked me what time to arrive. | They asked us what time to arrive. | They asked what time they ought to arrive. | They asked what time they were to arrive."
+   ],
+   "set": {
+    "4": "They asked what time they should arrive. | They asked what time to arrive. | They asked what time we should arrive. | They asked me what time they should arrive. | They asked us what time we should arrive. | They asked me what time to arrive. | They asked us what time to arrive. | They asked what time they ought to arrive. | They asked what time they were to arrive. | They asked what time we were to arrive."
+   }
+  }
+ ],
+ "typical-b2c1-1.csv": [
+  {
+   "id": "r20b-1-044",
+   "match": [
+    "gap",
+    "I set two alarms in order ___ my early flight. (not / miss)",
+    "not to miss | to not miss"
+   ],
+   "set": {
+    "4": "not to miss | to not miss | that I don't miss | that I do not miss | that I won't miss | that I will not miss | that I wouldn't miss | that I would not miss"
+   }
+  },
+  {
+   "id": "r20b-1-047",
+   "match": [
+    "gap",
+    "Sales fell sharply; ___ , the company cut its prices.",
+    "therefore | as a result | consequently | thus | as a consequence | accordingly | hence | for this reason | in response"
+   ],
+   "set": {
+    "4": "therefore | as a result | consequently | thus | as a consequence | accordingly | hence | for this reason | in response | because of this"
+   }
+  },
+  {
+   "id": "r20b-1-051",
+   "match": [
+    "gap",
+    "Our holiday plans depend on ___ my boss gives me the week off.",
+    "whether"
+   ],
+   "set": {
+    "4": "whether | whether or not"
+   }
+  },
+  {
+   "id": "r20b-2-044",
+   "match": [
+    "gap",
+    "I'll leave you my number in case you ___ any problems with the flat. (have)",
+    "have | should have"
+   ],
+   "set": {
+    "4": "have | should have | happen to have | do have"
+   }
+  },
+  {
+   "id": "r20b-2-045",
+   "match": [
+    "gap",
+    "Our guide suggested ___ the museum early to avoid the queues. (visit)",
+    "visiting | that we visit | we visit | that we should visit | we should visit | that we visited | we visited"
+   ],
+   "set": {
+    "4": "visiting | that we visit | we visit | that we should visit | we should visit | that we visited | we visited | our visiting | going to visit"
+   }
+  },
+  {
+   "id": "r20b-2-049",
+   "match": [
+    "gap",
+    "We couldn't decide where ___ on holiday. (go)",
+    "to go | we should go | we could go | we would go | we'd go | we were going to go"
+   ],
+   "set": {
+    "4": "to go | we should go | we could go | we would go | we'd go | we were going to go | we ought to go | we were going"
+   }
+  },
+  {
+   "id": "r20b-3-045",
+   "match": [
+    "gap",
+    "I'm not sure what time the meeting ___ . (start)",
+    "starts | will start | is going to start | is starting"
+   ],
+   "set": {
+    "3": "I'm not sure what time the meeting ___ tomorrow. (start)",
+    "4": "starts | will start | is going to start | is starting | is to start",
+    "6": "Inside a sentence the question has statement order, without *does*: *what time the meeting starts / will start tomorrow*.",
+    "7": "Teikuma iekšienē jautājumam ir *apgalvojuma* secība, bez *does*: *what time the meeting starts / will start tomorrow*.",
+    "9": "I'm not sure what time the meeting ___ . (start)"
+   }
+  },
+  {
+   "id": "r20b-3-048",
+   "match": [
+    "gap",
+    "In future, I'd rather you ___ my phone without asking. (not / use)",
+    "didn't use | did not use"
+   ],
+   "set": {
+    "4": "didn't use | did not use | not use"
+   }
+  }
+ ],
+ "unreal-time-1.csv": [
+  {
+   "id": "r20b-2-052",
+   "match": [
+    "text",
+    "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+    "It's high time you started looking for a new job. | It's high time you started to look for a new job. | It's high time you looked for a new job. | It is high time you started looking for a new job. | It is high time you started to look for a new job. | It is high time you looked for a new job. | It's high time you began looking for a new job. | It is high time you began looking for a new job. | It's high time that you started looking for a new job. | It is high time that you started looking for a new job. | It's high time you were looking for a new job. | It is high time you were looking for a new job. | It's high time you started job-hunting. | It is high time you started job-hunting. | It's high time for you to start looking for a new job. | It is high time for you to start looking for a new job."
+   ],
+   "set": {
+    "4": "It's high time you started looking for a new job. | It's high time you started to look for a new job. | It's high time you looked for a new job. | It is high time you started looking for a new job. | It is high time you started to look for a new job. | It is high time you looked for a new job. | It's high time you began looking for a new job. | It is high time you began looking for a new job. | It's high time that you started looking for a new job. | It is high time that you started looking for a new job. | It's high time you were looking for a new job. | It is high time you were looking for a new job. | It's high time you started job-hunting. | It is high time you started job-hunting. | It's high time for you to start looking for a new job. | It is high time for you to start looking for a new job. | It's high time you started looking for a job. | It is high time you started looking for a job."
+   }
+  }
+ ],
+ "learn-drag-4.csv": [
+  {
+   "id": "r20b-3-027",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "if the team had been better prepared we would have won"
+   ],
+   "set": {
+    "4": "if the team had been better prepared we would have won",
+    "5": "also accepted: we would have won if the team had been better prepared | if we had been better prepared the team would have won | the team would have won if we had been better prepared | if the team had been prepared better we would have won | we would have won if the team had been prepared better | if we had been prepared better the team would have won | the team would have won if we had been prepared better"
+   }
+  }
+ ]
+}

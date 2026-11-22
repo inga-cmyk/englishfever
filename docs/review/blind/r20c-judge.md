@@ -1,0 +1,32 @@
+# Judge r20c
+
+- r20c-001 **keep**: Reader 2 only says the context makes the tense easy; 'never change' is the situation the rules ask for. No problem.
+- r20c-002 **keep**: Reader 2 confirms both wrong options are believable mistakes (after the r20b fix). No problem.
+- r20c-003 **keep**: 'accepted the job' changes the given verb (take); as decided before, answers keep the given words. The start is the task's frame, not the answer: the learner must build had taken + would be.
+- r20c-004 **keep**: 'If I had a better memory, I would have remembered' is the standard mixed conditional (present state, past result), not unnatural. Option 1 is wrong: 'had' here is about now, and 'fine now' contradicts it.
+- r20c-005 **keep**: Already practice only; 'where to meet' and they / we are already accepted. Level and gap length were decided in earlier rounds.
+- r20c-006 **keep**: Fixed in r20b ('for' removed); the bank on / to / of has one answer. The quote shows what is reported; level was decided earlier.
+- r20c-007 **keep**: 'has been terrible' does not report 'was terrible' (the tense moves forward, not one step back); under the taught rule (11 November) only 'had been' is right. Both readers say so; level decided earlier.
+- r20c-008 **keep**: Level flag already decided in r20b: an embedded question as subject or after 'It's not clear' is on the B2.2 ind_advanced card.
+- r20c-009 **keep**: 'Don't answer, whoever calls' does not start with Who as the instruction asks; 'Whoever it is that calls, don't answer' is an awkward cleft, not a natural answer. Instruction decided in r20b.
+- r20c-010 **keep**: 'had run' and 'must have run / been running' are already accepted.
+- r20c-011 **keep**: 'working for ten years there' is an unnatural order, rejected in r20b; the natural orders are accepted.
+- r20c-012 **keep**: Both corrections (Despite / In spite of, both orders) are accepted. 016 has a different sentence after the r20b fix (despite + -ing), so no clone.
+- r20c-013 **keep**: 'in case your laptop crashed' is wrong: the main clause is an imperative about the future, so in case takes the present (or should).
+- r20c-014 **keep**: Reader 2 only notes a possible learner mistake; not an instruction fault.
+- r20c-015 **keep**: 'We would have been better prepared if the team had won' is illogical (rejected in r20b); all sensible orders are accepted, and an order task needs no note that several orders exist.
+- r20c-016 **keep**: 'in spite of' and both clause orders are already accepted; the sentence differs from 012 after the r20b fix.
+- r20c-017 **keep**: Reader 2 says the task is fine.
+- r20c-018 **keep**: The brackets give the verbs; building hadn't stayed + wouldn't have missed is the point of the task. No problem.
+- r20c-019 **accept**: 'we ought to arrive' matches the accepted 'they ought to arrive' and 'we should arrive'. 'we would arrive' stays rejected (r20b: it changes the question).
+- r20c-020 **accept**: 'who she was to ask' (be to = what she should do) is correct, formal English, like 'were to' accepted in the twin tasks.
+- r20c-021 **accept**: 'whatever it is you decide' is correct, everyday English with the same meaning (both readers).
+- r20c-022 **keep**: The bracket words must still be put into the right order and form (not to miss); 'to not miss' is already accepted.
+- r20c-023 **keep**: 'might have' and 'had' are not standard after in case with a future main clause (in case takes the present or should); 'had' was rejected in r20b; 'should have' is already accepted.
+- r20c-024 **keep**: All the clause answers the readers name (we visit, we should visit) are already accepted; level decided earlier.
+- r20c-025 **accept**: 'is due to start' is correct for a scheduled meeting and keeps the bracket verb. 'begins' changes the given verb and stays out. Already practice only.
+- r20c-026 **keep**: 'so' with the comma the gap is followed by ('; so, the company') is not standard punctuation; all result linkers that fit are accepted, so the open gap has every answer listed.
+- r20c-027 **keep**: 'wouldn't use' is not standard after I'd rather you, as decided in r20 and r20b.
+- r20c-028 **accept**: 'we wanted to go' and 'we were to go' are correct after 'decide where' and keep the verb go, like the accepted 'we were going to go' and 'we ought to go'.
+- r20c-029 **fix**: New finding: 'when' (and 'how soon') gives correct, sensible English ('depend on when my boss gives me the week off'), so the gap had a second answer. Adding 'or not' at the end leaves only whether; 'if' after the preposition stays rejected (card).
+- r20c-030 **accept**: 'started your search for a new job' keeps the form (high time + you + past) and the meaning, like the accepted 'started job-hunting'.

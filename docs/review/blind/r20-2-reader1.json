@@ -1,0 +1,808 @@
+[
+{
+"id": "r20-2-001",
+"answer": "I wish I lived closer to the sea.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2 (basic wish + past simple).",
+"sense_problem": ""
+},
+{
+"id": "r20-2-002",
+"answer": "would stop",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too basic for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-003",
+"answer": [
+"hadn't sent"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too basic for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-004",
+"answer": "If only I would have saved more money.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-005",
+"answer": "If only we had listened to the warning signs, we would not be in this position.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'You give a speech about a past failure' is superfluous: options alone decide it. Option 1 (had listen) is a typo-type error.",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": "Option 1 is a form nobody really chooses (missing -ed)."
+},
+{
+"id": "r20-2-006",
+"answer": "I wish I had saved more money last year.",
+"other_correct": [
+"If only I had taken that course last year.",
+"I wish I hadn't quit my job last year.",
+"If only I hadn't wasted so much time last year."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'the app checks that some forms are used' is not clear to learner; 'I wish ... would' would also be accepted by the instruction but is wrong for past regret.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-007",
+"answer": "She said she might be late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction fine.",
+"level_problem": "Too easy for B2.1 (A2/B1 level).",
+"sense_problem": "Wrong options (might to be / might been / might was) are not mistakes real B2 learners make."
+},
+{
+"id": "r20-2-008",
+"answer": "Because it is still true.",
+"other_correct": "",
+"wrong_options_that_fit": "'Because the tense never changes' is false; none other fits. Note: 'The Earth went round the Sun' would also be correct.",
+"instruction_problem": "Asks about a rule; 'Why can we' fine. Option 3 'said is in the past' is true yet is the reason you would normally backshift.",
+"level_problem": "",
+"sense_problem": "Option 4 is odd, 'never' obviously false."
+},
+{
+"id": "r20-2-009",
+"answer": "The client said he wouldn't sign it until the lawyer had read it.",
+"other_correct": [
+"The client said he wouldn't sign it until the lawyer read it."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Yesterday he signed it' is superfluous. Option 4 also contains 'told he' (wrong) but is not near-copy.",
+"level_problem": "",
+"sense_problem": "The 'lawyer read it' version is acceptable but not offered as option. Option 4 'told he' is not a believable B2 error."
+},
+{
+"id": "r20-2-010",
+"answer": "My doctor said I must drink more water.",
+"other_correct": [
+"My doctor said I had to drink more water.",
+"My doctor said that I must drink more water.",
+"My doctor said I should drink more water.",
+"My doctor said that I had to drink more water."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'warning' is slightly odd for advice to drink water. Hint 'forms are used' unclear. Must/had to/should all correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-011",
+"answer": "She asked if I could help her.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Anna's question to you' and 'Which sentence reports it' fine.",
+"level_problem": "Easy for B2.1.",
+"sense_problem": "Option 1 and 2 are believable; option 4 'asked that' unlikely."
+},
+{
+"id": "r20-2-012",
+"answer": "The nurse told me not to touch it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.1.",
+"sense_problem": "Options 1,2,4 are believable."
+},
+{
+"id": "r20-2-013",
+"answer": [
+"if I could send her the invoice"
+],
+"other_correct": [
+[
+"whether I could send her the invoice"
+],
+[
+"if I would send her the invoice"
+],
+[
+"whether I would send her the invoice"
+],
+[
+"to send her the invoice"
+],
+[
+"to send him the invoice"
+],
+[
+"if I could send him the invoice"
+],
+[
+"if I could send her the invoice"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'several gaps' but only one ___ shown: unclear whether to type whole phrase or one word. 'to send her the invoice' (request report) is also correct; 'her/him' not given.",
+"level_problem": "",
+"sense_problem": "'Lena' gender not given by wording: her/him unclear (Lena is female name, but 'him' unnatural)."
+},
+{
+"id": "r20-2-014",
+"answer": "The customer asked how long the repair would take.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-015",
+"answer": "My manager asked me if I could call the supplier.",
+"other_correct": [
+"My manager asked me to call the supplier.",
+"My manager asked me whether I could call the supplier.",
+"My manager asked me if I would call the supplier.",
+"My manager asked me whether I would call the supplier.",
+"My manager asked me whether I could call the supplier."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint about forms is unclear; both 'to call' and 'if I could' are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-016",
+"answer": "He asked me what to do.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Too easy for B2.2.",
+"level_problem": "Too easy for B2.2 (B1 level).",
+"sense_problem": "Options 1,3,4 believable. Also 'what I should do' correct but not offered."
+},
+{
+"id": "r20-2-017",
+"answer": "She asked me where she should park.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": "Option 1 (where does she should park) is a form nobody writes."
+},
+{
+"id": "r20-2-018",
+"answer": [
+"where we should meet"
+],
+"other_correct": [
+[
+"where to meet"
+],
+[
+"where they should meet"
+],
+[
+"where we would meet"
+],
+[
+"where we were to meet"
+],
+[
+"where I should meet"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'several gaps' but only one ___; unclear what counts as one gap (one word? phrase?). 'where to meet' also correct.",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-019",
+"answer": "Ms Novak asked whether the budget had been approved.",
+"other_correct": [
+"Ms Novak asked if the budget had been approved. (not offered)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "",
+"sense_problem": "Option 4 'asked that' unlikely."
+},
+{
+"id": "r20-2-020",
+"answer": [
+"whether the data was accurate"
+],
+"other_correct": [
+[
+"if the data was accurate"
+],
+[
+"whether the data were accurate"
+],
+[
+"if the data were accurate"
+],
+[
+"if the data is accurate"
+],
+[
+"whether the data is accurate"
+],
+[
+"whether or not the data was accurate"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'several gaps' but only one ___. Tense (was/is) both correct; 'whether the data was accurate' vs 'if'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-021",
+"answer": "He apologised for being late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Too easy for B2.2.",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": "Option 1 'for be late' nobody writes? weak."
+},
+{
+"id": "r20-2-022",
+"answer": [
+[
+"'I'll definitely be there on time.'",
+"promised"
+],
+[
+"'Don't touch the red button!'",
+"warned"
+],
+[
+"'Why don't we try the new café?'",
+"suggested"
+],
+[
+"'Yes, I broke the vase.'",
+"admitted"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; 'the word that says what the speaker did' fine.",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-023",
+"answer": "Sam refused to work that weekend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": "Option 3 'refused me to work' not believable."
+},
+{
+"id": "r20-2-024",
+"answer": [
+"for forgetting the meeting"
+],
+"other_correct": [
+[
+"for having forgotten the meeting"
+],
+[
+"for forgetting about the meeting"
+],
+[
+"for having forgotten about the meeting"
+],
+[
+"for missing the meeting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'several gaps' but only one ___. Several correct answers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-025",
+"answer": "She accused me of breaking the printer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'as an accusation' gives the verb away (accused).",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-026",
+"answer": "A: he wouldn't let others pay. B: an offer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option 1 is the reverse of the truth; options differently formatted. Option 4 is correct but partly given in the second half 'an offer'.",
+"level_problem": "",
+"sense_problem": "Option 2 (past/future) is implausible."
+},
+{
+"id": "r20-2-027",
+"answer": "The manager apologised for the delay and promised that it would not happen again.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Sentence long; fine.",
+"level_problem": "",
+"sense_problem": "Option 3 and 4 are near copies (to that / that)."
+},
+{
+"id": "r20-2-028",
+"answer": "Leo denied breaking it.",
+"other_correct": [
+"Leo denied that he had broken it.",
+"Leo denied having broken it.",
+"Leo denied that he broke it.",
+"Leo denied that it was him who broke it.",
+"Leo denied that it had been him who broke it.",
+"Leo said that it hadn't been him who had broken it.",
+"Leo said it wasn't him who had broken it.",
+"Leo denied it."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'what Leo did' hides the reporting verb; 'it' undefined so 'breaking it' works; many answers. 'Denied' is the target but 'said' is also what Leo did.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-029",
+"answer": "She advised me to take the earlier train.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Easy for B2.2.",
+"sense_problem": "Option 1 'advised to me take' not believable."
+},
+{
+"id": "r20-2-030",
+"answer": "refused",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-031",
+"answer": "The customer complained that the service had been terrible.",
+"other_correct": [
+"The customer complained to me that the service had been terrible. (not offered)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'in formal English' is superfluous: report structure alone decides; 'formal' is confusing.",
+"level_problem": "",
+"sense_problem": "Option 2 is a random impossible string."
+},
+{
+"id": "r20-2-032",
+"answer": "Mia thanked the team for everything they had done.",
+"other_correct": [
+"Mia thanked the team for everything they'd done.",
+"Mia thanked the team for all they had done.",
+"Mia thanked the team for all their work.",
+"Mia thanked the team for everything they have done.",
+"Mia thanked the team for everything.",
+"Mia said thank you to the team for everything they had done."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Say what Mia did' does not push to 'thanked'; many answers could be right.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-033",
+"answer": "B is more polite and indirect.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'indirect' is a grammar term; option 3 gives the explanation in its wording.",
+"level_problem": "Too easy for B2.1; learner can see 'happen to know' is softer.",
+"sense_problem": "Options 1,2,4 are implausible."
+},
+{
+"id": "r20-2-034",
+"answer": "I was wondering if you could tell me when my order will be delivered.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "",
+"sense_problem": "Option 2 and 3 are near copies (differ only in word order)."
+},
+{
+"id": "r20-2-035",
+"answer": "Could you tell me when the report will be ready?",
+"other_correct": [
+"Would you mind telling me when the report will be ready?",
+"I was wondering if you could tell me when the report will be ready.",
+"Do you happen to know when the report will be ready?",
+"Could you possibly tell me when the report will be ready?",
+"Would you be so kind as to tell me when the report will be ready?",
+"I wonder if you could tell me when the report will be ready.",
+"Would you mind telling me when the report will be ready?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'the app checks that some forms are used' unclear. Many correct answers; the instruction does not say which structure is checked.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-036",
+"answer": "what to do",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": "Wrong options are random strings (what to doing, what to I do)."
+},
+{
+"id": "r20-2-037",
+"answer": "how I should start",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Easy for B2.2.",
+"sense_problem": "Distractors (why I started, when I started) are not believable."
+},
+{
+"id": "r20-2-038",
+"answer": [
+"Can you tell me how to get to the museum?"
+],
+"other_correct": [
+[
+"Could you tell me how to get to the museum?"
+],
+[
+"Can you tell me how to get to the museum?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; 'shorter' ok. Can/Could swap would be accepted? (Modal could change meaning slightly.)",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-039",
+"answer": "It remains unclear who is responsible for the delay.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": "Option 3 (who does responsible) is a form nobody writes."
+},
+{
+"id": "r20-2-040",
+"answer": "I have no idea how to fix this.",
+"other_correct": [
+"I have no idea what he wants.",
+"I have no idea where she lives.",
+"I have no idea who did it.",
+"I have no idea why they left.",
+"I have no idea when the shop opens."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'the app checks that some forms are used' unclear; any question word with clause counts.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-041",
+"answer": "Whether he will attend",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "",
+"sense_problem": "Option 4 and 1 plausible errors."
+},
+{
+"id": "r20-2-042",
+"answer": [
+"It's not clear who made the decision."
+],
+"other_correct": [
+[
+"It isn't clear who made the decision."
+],
+[
+"It is not clear who made the decision."
+],
+[
+"It's unclear who made the decision."
+],
+[
+"It is unclear who made the decision."
+],
+[
+"Who made the decision is not clear."
+],
+[
+"It remains unclear who made the decision."
+],
+[
+"It's not clear who made the decision."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Combine' is natural. Many correct sentences; 'without changing meaning' ok.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-043",
+"answer": "whether the project is worth the cost",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'You write a report' superfluous.",
+"level_problem": "",
+"sense_problem": "Option 4 plausible but wrong."
+},
+{
+"id": "r20-2-044",
+"answer": "it does not matter what he says",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine.",
+"sense_problem": "Options 3 and 4 are not believable."
+},
+{
+"id": "r20-2-045",
+"answer": [
+"Whoever calls, don't answer."
+],
+"other_correct": [
+[
+"Whoever calls, do not answer."
+],
+[
+"Whoever it is, don't answer."
+],
+[
+"Whoever it is, do not answer."
+],
+[
+"Whoever calls, don't answer."
+],
+[
+"Who calls doesn't matter."
+],
+[
+"Who calls doesn't matter; don't answer."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction confusing: 'starts with Who…' hides that whoever is wanted ('Who calls doesn't matter' also fits); 'one sentence' unclear with 'Don't answer'. 'Whoever' not named.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-046",
+"answer": "You can work from whichever place you like. (use whenever) -> Whoever finishes early can go home.",
+"other_correct": [
+"Wherever you work, you must be reachable by phone.",
+"Whatever time you start, you must finish by six.",
+"You can sit wherever you like.",
+"You can choose whatever tasks you prefer.",
+"Whoever finishes first can leave early."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'flexible rule' is vague; 'the app checks that some forms are used' unclear.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-047",
+"answer": "If I had studied medicine, I would be a doctor now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Link a different past decision to a present result' is unnatural English. 'Start with If I had' and 'now at the end' give most of it away; only 'studied medicine, I would be a doctor' to order.",
+"level_problem": "Fine for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-048",
+"answer": "Had I known about the delay, I would have called you.",
+"other_correct": [
+"Had I called you about the delay, I would have known."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Fine.",
+"sense_problem": "The alternative sentence is grammatical but illogical."
+},
+{
+"id": "r20-2-049",
+"answer": "She apologised for missing the meeting.",
+"other_correct": [
+"She apologised for the missing meeting."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Report an apology' with 6 cards, start given: only copying.",
+"level_problem": "Too easy for B2.2 (A2/B1).",
+"sense_problem": "'the missing meeting' is grammatical but nonsense."
+},
+{
+"id": "r20-2-050",
+"answer": "Whether the plan will work remains uncertain.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Start 'Whether' given.",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-051",
+"answer": [
+"Had",
+"left"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only the verb forms differ; 'Did' gives a clear wrong option but 'Had' is obvious from 'would have caught'.",
+"level_problem": "Fine for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-052",
+"answer": "had been raining",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-053",
+"answer": "had been standing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Fine.",
+"sense_problem": "Option 1 'had been stand' is a form nobody writes."
+},
+{
+"id": "r20-2-054",
+"answer": "had been working",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Fine.",
+"sense_problem": "Option 3 'had working' is not believable."
+},
+{
+"id": "r20-2-055",
+"answer": "had been playing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-2-056",
+"answer": [
+"had been working"
+],
+"other_correct": [
+[
+"had worked"
+],
+[
+"'d been working"
+],
+[
+"'d worked"
+],
+[
+"worked"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several tenses correct: 'had worked' fits as well.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-057",
+"answer": [
+"had written"
+],
+"other_correct": [
+[
+"'d written"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-058",
+"answer": [
+"had been running"
+],
+"other_correct": [
+[
+"had run"
+],
+[
+"'d been running"
+],
+[
+"'d run"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both 'had been running' and 'had run' are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-059",
+"answer": [
+"had been waiting"
+],
+"other_correct": [
+[
+"have been waiting"
+]
+],
+"wrong_options_that_fit": "have been waiting (fits in speech: 'I've been waiting for twenty minutes' said to someone after the bus came)",
+"instruction_problem": "The context 'At last the bus came' allows both 'had been' and 'have been'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-2-060",
+"answer": [
+"have been waiting"
+],
+"other_correct": [
+[
+"'ve been waiting"
+],
+[
+"have waited"
+],
+[
+"'ve waited"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; 'have waited' less natural.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

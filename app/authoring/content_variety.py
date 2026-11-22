@@ -19,7 +19,7 @@ def order(id, skill, level, q, sentence, why, lv=None, alternatives=()):
         'var-cf-a22-order-01-r2': 'If it rains, we will stay indoors.',
         'var-cs-b11-order-01': 'If I had a car, I would drive.',
         'var-ct-b12-order-01': 'If I had left earlier, I would have caught the bus.',
-        'var-cm-b21-order-01': 'If I had studied medicine, I would be a doctor now.',
+        'var-cm-b21-order-01-r2': 'If I had studied medicine, I would be a doctor now.',
         'var-ca-c11-order-01-r3': 'Had I known about the delay, I would have called you.',
     }
     question = sentence.split()[0] in {'did', 'have', 'has', 'how', 'could'}
@@ -107,10 +107,12 @@ order('var-ct-b12-order-01', 'cond_third', 'B1.2',
       'Imagine a different past. Start with If I had.', 'if I had left earlier I would have caught the bus',
       'Use *had left* for the unreal past condition and *would have caught* for its imagined past result.',
       'Nereālu pagātnes nosacījumu izsaka *had left*, bet tā iedomāto pagātnes rezultātu — *would have caught*.')
-order('var-cm-b21-order-01', 'cond_mixed', 'B2.1',
-      'Link a different past decision to a present result. Start with If I had and put now at the end.',
+order('var-cm-b21-order-01-r2', 'cond_mixed', 'B2.1',   # the instruction gave the order away (blind round r20, 22 November)
+      'Put the words in order.',
       'if I had studied medicine I would be a doctor now',
-      '*Had studied* imagines a different past decision. *Would be ... now* describes the present consequence.')
+      "*If I had studied* imagines a different past decision; *I would be a doctor now* is the result now. *now* can also stand before *a doctor*, and the *if*-part can come second.",
+      "*If I had studied* iztēlojas citādu lēmumu pagātnē; *I would be a doctor now* ir rezultāts tagad. *now* var stāvēt arī pirms *a doctor*, un *if* daļa var būt otrā.",
+      alternatives=('if I had studied medicine I would now be a doctor', 'I would be a doctor now if I had studied medicine', 'I would now be a doctor if I had studied medicine'))
 order('var-ca-c11-order-01-r3', 'cond_advanced', 'C1.1',
       'Put the words in order. Start with *Had I*.', 'had I known about the delay I would have called you',
       '*Had I known* means *If I had known*. Inversion removes *if* and puts *had* before the subject.')
@@ -122,8 +124,8 @@ order('var-rq-b12-order-01', 'rep_questions', 'B1.2',
       'Make a reported yes/no question. Start with He asked me.', 'he asked me whether I needed help',
       'After *whether*, use statement word order: *I needed help*, not *did I need help*.',
       'Pēc *whether* lieto apgalvojuma vārdu secību: *I needed help*, nevis *did I need help*.')
-order('var-rv-b22-order-01', 'rep_verbs', 'B2.2',
-      'Report an apology. Start with She.', 'she apologised for missing the meeting',
+order('var-rv-b22-order-01-r2', 'rep_verbs', 'B2.2',   # the start was given away; practice only (blind round r20, 22 November)
+      'Put the words in order.', 'she apologised for missing the meeting',
       'The pattern is *apologise for + noun or -ing form*: *apologised for missing the meeting*.')
 order('var-ip-b11-order-01-r2', 'ind_polite', 'B1.1',
       'Put the words in order to ask politely. Start with *Could you tell me*.', 'could you tell me where the bank is',

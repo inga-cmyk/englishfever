@@ -1,0 +1,1648 @@
+{
+ "conjunctions-1.csv": [
+  {
+   "id": "r20-1-052",
+   "match": [
+    "mcq",
+    "Choose the correct option: The roads were flooded. ___, many schools closed.",
+    "As a result"
+   ],
+   "set": {
+    "5": "Owing to | Due to | On account of"
+   }
+  },
+  {
+   "id": "r20-1-053",
+   "match": [
+    "mcq",
+    "Choose the correct option: The match was postponed ___ the heavy rain.",
+    "owing to"
+   ],
+   "set": {
+    "3": "Choose the correct option: The concert was cancelled ___ the singer's illness.",
+    "5": "owing | on account | as a result",
+    "6": "*owing to / due to / on account of* + noun: *cancelled owing to the singer's illness*. *Owing* and *on account* need *to* / *of*; *as a result* starts a new sentence.",
+    "7": "*owing to / due to / on account of* + lietvārds: *cancelled owing to the singer's illness*. Aiz *owing* vajag *to*, aiz *on account* vajag *of*; *as a result* sāk jaunu teikumu."
+   }
+  },
+  {
+   "id": "r20-1-054",
+   "match": [
+    "mcq",
+    "Choose the correct option: It was a difficult task, and ___ they finished it on time.",
+    "yet"
+   ],
+   "set": {
+    "5": "although | however | whereas",
+    "6": "*and yet* = but, in spite of this: *and yet they finished it on time*. *Although* and *whereas* start a part that needs another main clause; *however* goes after a full stop or a semicolon, with a comma.",
+    "7": "*and yet* = bet, tomēr: *and yet they finished it on time*. *Although* un *whereas* sāk palīgteikumu, kam vajag vēl vienu virsteikumu; *however* lieto pēc punkta vai semikola, ar komatu."
+   }
+  },
+  {
+   "id": "r20-1-055",
+   "match": [
+    "gap",
+    "Sales fell. ___, we have decided to close the shop.",
+    "Therefore"
+   ],
+   "set": {
+    "3": "The company lost its biggest client. ___, it had to cut twenty jobs.",
+    "5": "bank: Therefore | Owing to | On account of | Whereas",
+    "6": "*Therefore* + comma at the start introduces a result. *Owing to* and *on account of* need a noun; *whereas* compares two facts in one sentence.",
+    "7": "*Therefore* ar komatu teikuma sākumā ievada sekas. Aiz *owing to* un *on account of* vajag lietvārdu; *whereas* salīdzina divus faktus vienā teikumā.",
+    "9": "Sales fell. ___, we have decided to close the shop."
+   }
+  },
+  {
+   "id": "r20-3-008",
+   "match": [
+    "text",
+    "Correct the mistake: Despite of the rain, the match went ahead.",
+    "Despite the rain, the match went ahead. | In spite of the rain, the match went ahead."
+   ],
+   "set": {
+    "3": "Correct the mistake: Despite of the delays, the project was finished on time.",
+    "4": "Despite the delays, the project was finished on time. | In spite of the delays, the project was finished on time.",
+    "6": "*despite* without *of*; *in spite of* with *of*.",
+    "7": "*despite* bez *of*; *in spite of* ar *of*.",
+    "9": "Correct the mistake: Despite of the rain, the match went ahead."
+   }
+  },
+  {
+   "id": "r20-3-011",
+   "match": [
+    "mcq",
+    "Choose the correct option: This app is used ___ tracking your spending.",
+    "for"
+   ],
+   "set": {
+    "3": "Choose the correct option: This app is used ___ your spending.",
+    "4": "for tracking",
+    "5": "for track | for to track",
+    "6": "*for* + -ing says what a thing is used for: *used for tracking*.",
+    "7": "*for* + *-ing* pasaka, kam lieto kādu lietu: *used for tracking*.",
+    "9": "for"
+   }
+  },
+  {
+   "id": "r20-3-012",
+   "match": [
+    "mcq",
+    "Choose the correct option: The project was over budget. The board has ___ decided to cancel it.",
+    "therefore"
+   ],
+   "set": {
+    "5": "owing to | on account of"
+   }
+  },
+  {
+   "id": "r20-3-016",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The shop closed early owing the strike."
+   ],
+   "set": {
+    "5": "She was exhausted, yet she finished the report. | Our rent went up again. For this reason, we moved. | Take a map in case your phone dies."
+   }
+  },
+  {
+   "id": "r20-3-017",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "He studied hard; nevertheless, he failed the test."
+   ],
+   "set": {
+    "5": "He studied hard nevertheless, he failed the test. | He studied hard, nevertheless, he failed the test."
+   }
+  },
+  {
+   "id": "r20-3-025",
+   "match": [
+    "text",
+    "Correct the mistake: Take an umbrella in case it will rain.",
+    "Take an umbrella in case it rains."
+   ],
+   "set": {
+    "3": "Correct the mistake: Save a copy on a USB stick in case your laptop will crash.",
+    "4": "Save a copy on a USB stick in case your laptop crashes. | Save a copy on a USB stick in case your laptop should crash.",
+    "6": "*in case* + present: we do it before, just to be safe: *in case your laptop crashes*.",
+    "7": "*in case* + tagadne: to dara iepriekš, drošības pēc: *in case your laptop crashes*.",
+    "9": "Correct the mistake: Take an umbrella in case it will rain."
+   }
+  },
+  {
+   "id": "r20-3-026",
+   "match": [
+    "text",
+    "Correct the mistake: This tool is for cut metal.",
+    "This tool is for cutting metal. | This tool is used for cutting metal."
+   ],
+   "set": {
+    "3": "Correct the mistake. Keep *for*: These boxes are for store old documents.",
+    "4": "These boxes are for storing old documents. | These boxes are used for storing old documents.",
+    "6": "*for* + -ing says what a thing is used for: *for storing*.",
+    "7": "*for* + *-ing* pasaka, kam lieto kādu lietu: *for storing*.",
+    "9": "Correct the mistake: This tool is for cut metal."
+   }
+  },
+  {
+   "id": "r20-3-027",
+   "match": [
+    "text",
+    "Rewrite with *owing to*: The flight was late because the weather was bad.",
+    "The flight was late owing to the bad weather. | The flight was late owing to bad weather. | Owing to the bad weather, the flight was late. | Owing to bad weather, the flight was late."
+   ],
+   "set": {
+    "4": "The flight was late owing to the bad weather. | The flight was late owing to bad weather. | Owing to the bad weather, the flight was late. | Owing to bad weather, the flight was late. | Owing to the weather being bad, the flight was late. | The flight was late owing to the weather being bad. | The flight was late owing to the fact that the weather was bad. | Owing to the fact that the weather was bad, the flight was late."
+   }
+  },
+  {
+   "id": "r20-3-028",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she kept running even though her legs hurt"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-3-029",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we need more staff in order for the shop to open on sundays"
+   ],
+   "set": {
+    "4": "the bank needs your signature in order for the loan to go through",
+    "5": "also accepted: in order for the loan to go through the bank needs your signature",
+    "6": "*in order for* + person or thing + *to* + verb: *in order for the loan to go through*.",
+    "7": "*in order for* + persona vai lieta + *to* + darbības vārds: *in order for the loan to go through*.",
+    "9": "we need more staff in order for the shop to open on sundays"
+   }
+  },
+  {
+   "id": "r20-3-030",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the train was cancelled and as a result we missed the meeting"
+   ],
+   "set": {
+    "4": "the train was cancelled and as a result we missed the concert",
+    "5": "also accepted: the train was cancelled and we missed the concert as a result",
+    "6": "*as a result* shows the result: *The train was cancelled and, as a result, we missed the concert.*",
+    "7": "*as a result* rāda rezultātu: *The train was cancelled and, as a result, we missed the concert.*",
+    "9": "the train was cancelled and as a result we missed the meeting"
+   }
+  }
+ ],
+ "iq-b1-6.csv": [
+  {
+   "id": "r20-1-056",
+   "match": [
+    "gap",
+    "The hotel wants to know ___ to expect us before ten, and ___ we're late, they'll keep the room for us until midnight.",
+    "whether / if"
+   ],
+   "set": {
+    "5": "bank: whether | if | what"
+   }
+  }
+ ],
+ "learn-drag-3.csv": [
+  {
+   "id": "r20-1-057",
+   "match": [
+    "gap",
+    "He ___ ___ that the shop was closed.",
+    "told / me"
+   ],
+   "set": {
+    "5": "bank: told | me | said | that"
+   }
+  },
+  {
+   "id": "r20-1-058",
+   "match": [
+    "gap",
+    "The client complained ___ the delivery ___ been three days late.",
+    "that / had"
+   ],
+   "set": {
+    "5": "bank: that | had | to | have"
+   }
+  },
+  {
+   "id": "r20-3-035",
+   "match": [
+    "gap",
+    "If he ___ more confident, he ___ asked for a pay rise.",
+    "were / would have"
+   ],
+   "set": {
+    "3": "If she ___ so stubborn, she ___ accepted their apology last week.",
+    "4": "weren't / would have",
+    "5": "bank: weren't | would have | would be | will have",
+    "6": "A quality now (*weren't so stubborn*), a result in the past (*would have accepted*).",
+    "7": "Rakstura īpašība tagad (*weren't so stubborn*), sekas pagātnē (*would have accepted*).",
+    "9": "If he ___ more confident, he ___ asked for a pay rise."
+   }
+  },
+  {
+   "id": "r20-3-036",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "had we booked earlier we would be on the beach now"
+   ],
+   "set": {
+    "4": "had we booked earlier we would be on the beach now",
+    "5": "also accepted: we would be on the beach now had we booked earlier | had we booked earlier we would now be on the beach | we would now be on the beach had we booked earlier | now we would be on the beach had we booked earlier | had we booked earlier now we would be on the beach",
+    "6": "*Had* + subject + 3rd form = *If* + subject + *had* + 3rd form; the result is about now: *we would be on the beach now*.",
+    "7": "*Had* + teikuma priekšmets + 3. forma = *If* + teikuma priekšmets + *had* + 3. forma; sekas ir par tagadni: *we would be on the beach now*."
+   }
+  },
+  {
+   "id": "r20-3-038",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "had she not missed the train she would be here now"
+   ],
+   "set": {
+    "4": "had she not missed the train she would be here already",
+    "5": "also accepted: she would be here already had she not missed the train | had she not missed the train she would already be here | she would already be here had she not missed the train",
+    "6": "In the negative, *not* comes after the subject: *Had she not missed the train* = *If she hadn't missed the train*.",
+    "7": "Noliegumā *not* liek aiz teikuma priekšmeta: *Had she not missed the train* = *If she hadn't missed the train*.",
+    "9": "had she not missed the train she would be here now"
+   }
+  },
+  {
+   "id": "r20-3-040",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the coach told us to warm up before every match"
+   ],
+   "set": {
+    "4": "the coach told us to warm up before every match",
+    "5": "also accepted: before every match the coach told us to warm up"
+   }
+  },
+  {
+   "id": "r20-3-042",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the agent said I might need a visa"
+   ],
+   "set": {
+    "4": "the agent said I might need a visa",
+    "5": "also accepted: I said the agent might need a visa"
+   }
+  },
+  {
+   "id": "r20-3-056",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "whoever finishes first can go home"
+   ],
+   "set": {
+    "4": "whoever wins the quiz gets a free dinner",
+    "5": "",
+    "6": "*whoever* = it does not matter who: *Whoever wins the quiz* is the subject of *gets*.",
+    "7": "*whoever* nozīmē 'jebkurš, kas': *Whoever wins the quiz* ir darbības vārda *gets* teikuma priekšmets.",
+    "9": "whoever finishes first can go home"
+   }
+  }
+ ],
+ "learn-drag-4.csv": [
+  {
+   "id": "r20-1-059",
+   "match": [
+    "gap",
+    "They walked quietly so as ___ ___ wake the baby.",
+    "not / to"
+   ],
+   "set": {
+    "5": "bank: not | to | that | don't"
+   }
+  },
+  {
+   "id": "r20-3-060",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "if I knew the answer I would tell you"
+   ],
+   "set": {
+    "4": "if I knew the answer I would tell you",
+    "5": "also accepted: I would tell you if I knew the answer | I would tell you the answer if I knew | if I knew I would tell you the answer"
+   }
+  },
+  {
+   "id": "r20-4-001",
+   "match": [
+    "gap",
+    "I would be grateful if you ___ send me the report by Friday.",
+    "could"
+   ],
+   "drop": true,
+   "set": {}
+  },
+  {
+   "id": "r20-4-005",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "if the team had been better prepared we would have won"
+   ],
+   "set": {
+    "4": "if the team had been better prepared we would have won",
+    "5": "also accepted: we would have won if the team had been better prepared | if we had been better prepared the team would have won | the team would have won if we had been better prepared"
+   }
+  },
+  {
+   "id": "r20-4-010",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "if I'd known about the traffic I would've left earlier"
+   ],
+   "set": {
+    "4": "if I'd known about the traffic I would've left earlier",
+    "5": "also accepted: I would've left earlier if I'd known about the traffic | if I'd known about the traffic earlier I would've left | I would've left if I'd known about the traffic earlier | if I'd known earlier about the traffic I would've left | I would've left if I'd known earlier about the traffic"
+   }
+  },
+  {
+   "id": "r20-4-012",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "if we had known about the problem we would have called you"
+   ],
+   "set": {
+    "4": "if we had known about the problem we would have called you",
+    "5": "also accepted: we would have called you if we had known about the problem | if we had called you we would have known about the problem | we would have known about the problem if we had called you"
+   }
+  },
+  {
+   "id": "r20-4-015",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "despite the rain the match went ahead"
+   ],
+   "set": {
+    "4": "despite the strike the conference went ahead",
+    "5": "also accepted: the conference went ahead despite the strike",
+    "6": "*despite* + noun, without *of*: *despite the strike*.",
+    "7": "*despite* + lietvārds, bez *of*: *despite the strike*.",
+    "9": "despite the rain the match went ahead"
+   }
+  },
+  {
+   "id": "r20-4-017",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "would you mind telling me how long the repair will take"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "4": "would you mind telling me how long the repair will take",
+    "5": ""
+   }
+  },
+  {
+   "id": "r20-4-022",
+   "match": [
+    "order",
+    "Put all the words in order. More than one answer is possible.",
+    "she asked if I could help her"
+   ],
+   "set": {
+    "4": "she asked if I could help her",
+    "5": "also accepted: I asked her if she could help | she asked her if I could help | I asked if she could help her"
+   }
+  },
+  {
+   "id": "r20-4-024",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "Lena asked me to send her the invoice"
+   ],
+   "set": {
+    "4": "Lena asked me to send her the invoice",
+    "5": "also accepted: Lena asked her to send me the invoice"
+   }
+  }
+ ],
+ "twins-3.csv": [
+  {
+   "id": "r20-1-060",
+   "match": [
+    "mcq",
+    "Choose the correct word: ___ arrives last has to wash the dishes.",
+    "Whoever"
+   ],
+   "set": {
+    "3": "Choose the correct word: ___ called the help desk this morning didn't leave a name.",
+    "5": "Whomever | Whatever | Wherever",
+    "6": "*Whoever called* = the person who called; *whoever* is the subject of *called*.",
+    "7": "*Whoever called* = tas, kurš zvanīja; *whoever* ir teikuma priekšmets darbības vārdam *called*."
+   }
+  },
+  {
+   "id": "r20-5-030",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Hadn't she missed the train, she'd be here now."
+   ],
+   "set": {
+    "5": "Had he trained harder, he would be in the team now. | If she weren't so shy, she would have spoken up at the meeting. | Had they not moved, they would live next door now."
+   }
+  },
+  {
+   "id": "r20-5-033",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He told that the shop was closed."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-034",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "My sister said she would call me as soon as she landed."
+   ],
+   "set": {
+    "5": "My sister said she would call me as soon as she would land. | My sister said she would call me as soon as she will land. | My sister told she would call me as soon as she landed.",
+    "6": "*will* becomes *would*; after *as soon as* no *would* or *will*: *as soon as she landed*. *tell* needs a person: *told me*.",
+    "7": "*will* kļūst par *would*; aiz *as soon as* nelieto *would* vai *will*: *as soon as she landed*. Aiz *tell* vajag personu: *told me*."
+   }
+  },
+  {
+   "id": "r20-5-035",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "The agent said I might need a visa."
+   ],
+   "set": {
+    "5": "The agent told I might need a visa. | The agent said I might to need a visa. | The agent said me I might need a visa.",
+    "6": "*might* does not change, and the base form follows it. *tell* needs a person (*told me*); *say* takes none, or *to* (*said to me*).",
+    "7": "*might* nemainās, aiz tā lieto pamatformu. Aiz *tell* vajag personu (*told me*); aiz *say* personu nelieto vai pievieno ar *to* (*said to me*)."
+   }
+  },
+  {
+   "id": "r20-5-036",
+   "match": [
+    "mcq",
+    "Which sentence is correct?",
+    "She asked me how to start."
+   ],
+   "set": {
+    "5": "She asked me how should she start. | She asked me how do I start. | She asked to me how to start.",
+    "6": "In a reported question the word order is like a statement, with no *do*: *how to start* or *how she should start*. *ask* takes the person without *to*.",
+    "7": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā, bez *do*: *how to start* vai *how she should start*. Aiz *ask* personu liek bez *to*."
+   }
+  },
+  {
+   "id": "r20-5-037",
+   "match": [
+    "text",
+    "Report this. Start with *They asked*: 'What time should we arrive?'",
+    "They asked what time they should arrive. | They asked what time to arrive. | They asked what time we should arrive. | They asked me what time they should arrive. | They asked us what time we should arrive. | They asked me what time to arrive. | They asked us what time to arrive."
+   ],
+   "set": {
+    "4": "They asked what time they should arrive. | They asked what time to arrive. | They asked what time we should arrive. | They asked me what time they should arrive. | They asked us what time we should arrive. | They asked me what time to arrive. | They asked us what time to arrive. | They asked what time they ought to arrive. | They asked what time they were to arrive."
+   }
+  },
+  {
+   "id": "r20-5-040",
+   "match": [
+    "mcq",
+    "Which sentence reports this advice: 'If I were you, I'd get a second opinion before the operation.'",
+    "She advised me to get a second opinion before the operation."
+   ],
+   "set": {
+    "5": "She advised me getting a second opinion before the operation. | She suggested me to get a second opinion before the operation. | She advised to get a second opinion before the operation."
+   }
+  },
+  {
+   "id": "r20-5-043",
+   "match": [
+    "mcq",
+    "Which sentence reports the client's complaint: 'The delivery was three days late.'",
+    "The client complained that the delivery had been three days late."
+   ],
+   "set": {
+    "5": "The client complained that the delivery has been three days late. | The client complained that the delivery had be three days late. | The client complained me that the delivery had been three days late."
+   }
+  },
+  {
+   "id": "r20-5-044",
+   "match": [
+    "mcq",
+    "Which is correct? 'We weren't sure ___.'",
+    "where to go"
+   ],
+   "set": {
+    "5": "where should we go | where do we go | where go"
+   }
+  },
+  {
+   "id": "r20-5-045",
+   "match": [
+    "text",
+    "Join the sentences, using *to*: She didn't know. Who should she ask?",
+    "She didn't know who to ask. | She didn't know whom to ask."
+   ],
+   "set": {
+    "3": "Join the sentences: She didn't know. Who should she ask?",
+    "4": "She didn't know who to ask. | She didn't know whom to ask. | She didn't know who she should ask. | She didn't know whom she should ask.",
+    "6": "A question inside a sentence: *who to ask* (question word + *to* + base form) or *who she should ask* (statement order).",
+    "7": "Jautājums teikuma iekšā: *who to ask* (jautājamais vārds + *to* + pamatforma) vai *who she should ask* (apgalvojuma vārdu secība).",
+    "9": "Join the sentences, using *to*: She didn't know. Who should she ask?"
+   }
+  },
+  {
+   "id": "r20-5-047",
+   "match": [
+    "mcq",
+    "Choose the correct option.",
+    "It remains unclear how we will pay for the repairs."
+   ],
+   "set": {
+    "5": "It remains unclear how will we pay for the repairs. | It remains unclear how are we going to pay for the repairs. | It remains unclear how do we pay for the repairs."
+   }
+  },
+  {
+   "id": "r20-5-048",
+   "match": [
+    "text",
+    "Write one sentence that starts with *Wh…*: It doesn't matter what you decide. I'll support you.",
+    "Whatever you decide, I'll support you. | Whatever you decide, I will support you. | Whatever you decide, you'll have my support. | Whatever you decide, you will have my support."
+   ],
+   "set": {
+    "3": "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+    "4": "I'll support you whatever you decide. | I will support you whatever you decide. | I'll support you no matter what you decide. | I will support you no matter what you decide. | I'll support you whichever way you decide. | I'll support you however you decide. | I'll support you regardless of what you decide.",
+    "6": "*whatever you decide* = it does not matter what you decide (*no matter what* means the same); no *will* after it.",
+    "7": "*whatever you decide* nozīmē “lai ko tu izlemtu” (*no matter what* nozīmē to pašu); aiz tā nelieto *will*.",
+    "9": "Write one sentence that starts with *Wh…*: It doesn't matter what you decide. I'll support you."
+   }
+  },
+  {
+   "id": "r20-5-049",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Whomever finishes first can go home."
+   ],
+   "set": {
+    "4": "Whomever gets home first should start dinner.",
+    "5": "Invite whoever you like to the party. | Whatever happens, stay calm. | Wherever you go, call me first.",
+    "6": "The subject of *gets* is *whoever*, not *whomever*.",
+    "7": "Darbības vārda *gets* teikuma priekšmets ir *whoever*, nevis *whomever*.",
+    "9": "Whomever finishes first can go home."
+   }
+  }
+ ],
+ "compare-past-1.csv": [
+  {
+   "id": "r20-2-052",
+   "match": [
+    "mcq",
+    "Choose the correct option: The ground was wet. It ___ in the night.",
+    "had been raining"
+   ],
+   "set": {
+    "3": "Choose the correct option: Her feet were sore. She ___ around the city all day.",
+    "4": "had been walking",
+    "5": "has been walking | had been walk",
+    "6": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+    "7": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+    "9": "had been raining"
+   }
+  },
+  {
+   "id": "r20-2-054",
+   "match": [
+    "mcq",
+    "Choose the correct option: She was lying on the sofa. She was tired because she ___ hard.",
+    "had been working"
+   ],
+   "set": {
+    "3": "Choose the correct option: Mark was covered in sweat when I saw him. He ___ at the gym.",
+    "4": "had been training",
+    "5": "has been training | had been train",
+    "6": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+    "7": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+    "9": "had been working"
+   }
+  },
+  {
+   "id": "r20-2-055",
+   "match": [
+    "gap",
+    "We ___ tennis for half an hour when it started to rain.",
+    "had been playing"
+   ],
+   "set": {
+    "3": "I ___ the report for three hours when my laptop crashed.",
+    "4": "had been writing",
+    "5": "bank: had been writing | have been writing | had been written | am writing",
+    "6": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+    "7": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+    "9": "We ___ tennis for half an hour when it started to rain."
+   }
+  },
+  {
+   "id": "r20-2-056",
+   "match": [
+    "gap",
+    "Tom was tired when he got home. He ___ hard all day. (work)",
+    "had been working | had worked"
+   ],
+   "set": {
+    "3": "Anna's hands were dirty when she came in. She ___ in the garden all afternoon. (work)",
+    "4": "had been working | 'd been working | had worked | 'd worked",
+    "6": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+    "7": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+    "9": "Tom was tired when he got home. He ___ hard all day. (work)"
+   }
+  },
+  {
+   "id": "r20-2-057",
+   "match": [
+    "gap",
+    "Yesterday was busy. By lunchtime she ___ ten emails. (write)",
+    "had written"
+   ],
+   "set": {
+    "3": "The shop was busy yesterday. By eleven o'clock Mark ___ forty customers. (serve)",
+    "4": "had served | 'd served",
+    "6": "How much or how many: *had done*. How long: *had been doing*. *Forty customers* is a number, so *had served*.",
+    "7": "Cik daudz: *had done*. Cik ilgi: *had been doing*. *Forty customers* ir skaits, tāpēc *had served*.",
+    "9": "Yesterday was busy. By lunchtime she ___ ten emails. (write)"
+   }
+  },
+  {
+   "id": "r20-2-058",
+   "match": [
+    "gap",
+    "James was out of breath when he came in. He ___. (run)",
+    "had been running"
+   ],
+   "set": {
+    "4": "had been running | had run | 'd run | 'd been running"
+   }
+  },
+  {
+   "id": "r20-2-059",
+   "match": [
+    "gap",
+    "At last the bus came. I ___ for twenty minutes.",
+    "had been waiting"
+   ],
+   "set": {
+    "3": "When the doctor finally called my name, I ___ for over an hour.",
+    "5": "bank: had been waiting | have been waiting | had been waited | am waiting",
+    "6": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+    "7": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+    "9": "At last the bus came. I ___ for twenty minutes."
+   }
+  },
+  {
+   "id": "r20-2-060",
+   "match": [
+    "gap",
+    "I hope the bus comes soon. I ___ for twenty minutes. (wait)",
+    "have been waiting | have waited"
+   ],
+   "set": {
+    "3": "I hope the meeting ends soon. We ___ for three hours. (talk)",
+    "4": "have been talking | 've been talking | have talked | 've talked",
+    "6": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+    "7": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+    "9": "I hope the bus comes soon. I ___ for twenty minutes. (wait)",
+    "13": "have talked :: Correct too. *have been talking* stresses that the talking is still going on. :: Arī pareizi. *have been talking* uzsver, ka runāšana vēl turpinās."
+   }
+  },
+  {
+   "id": "r20-3-001",
+   "match": [
+    "gap",
+    "It ___ when we went out. The sun was shining. (not / rain)",
+    "wasn't raining | was not raining | hadn't been raining | had not been raining"
+   ],
+   "set": {
+    "3": "When I looked outside, it ___ any more, but the roads were still wet. (not / snow)",
+    "4": "wasn't snowing | was not snowing",
+    "6": "At the moment I looked outside: *wasn't snowing*. The wet roads come from the snow before, but the gap is about that moment.",
+    "7": "Brīdī, kad paskatījos ārā: *wasn't snowing*. Slapjie ceļi ir no iepriekšējā sniega, bet tukšā vieta ir par šo brīdi.",
+    "9": "It ___ when we went out. The sun was shining. (not / rain)"
+   }
+  },
+  {
+   "id": "r20-3-003",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we had been driving for hours when the car broke down"
+   ],
+   "set": {
+    "4": "we had been driving for hours when the car broke down",
+    "5": "also accepted: when the car broke down we had been driving for hours | the car broke down when we had been driving for hours | when we had been driving for hours the car broke down"
+   }
+  },
+  {
+   "id": "r20-3-004",
+   "match": [
+    "order",
+    "Put all the words in order. More than one answer is possible.",
+    "she had been working there for ten years when she left"
+   ],
+   "set": {
+    "4": "she had been working there for ten years when she left",
+    "5": "also accepted: when she left she had been working there for ten years | she left when she had been working there for ten years | when she had been working there for ten years she left"
+   }
+  }
+ ],
+ "twins-1.csv": [
+  {
+   "id": "r20-4-029",
+   "match": [
+    "gap",
+    "Complete with one word: She spoke slowly so ___ to be understood.",
+    "as"
+   ],
+   "set": {
+    "3": "Complete with one word: She spoke slowly in ___ to be understood.",
+    "4": "order",
+    "6": "*in order to* + base form: purpose.",
+    "7": "*in order to* + pamatforma: nolūks.",
+    "9": "Complete with one word: She spoke slowly so ___ to be understood."
+   }
+  },
+  {
+   "id": "r20-4-030",
+   "match": [
+    "text",
+    "Correct the mistake: Despite of the delay, we arrived on time.",
+    "Despite the delay, we arrived on time. | In spite of the delay, we arrived on time."
+   ],
+   "set": {
+    "4": "Despite the delay, we arrived on time. | In spite of the delay, we arrived on time. | We arrived on time despite the delay. | We arrived on time in spite of the delay."
+   }
+  },
+  {
+   "id": "r20-4-034",
+   "match": [
+    "gap",
+    "The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel)",
+    "built / would travel"
+   ],
+   "set": {
+    "4": "built | were to build / would travel | might travel | could travel | would be travelling"
+   }
+  },
+  {
+   "id": "r20-4-037",
+   "match": [
+    "text",
+    "Write the sentence with if: I don't have a garden, so I don't grow vegetables.",
+    "If I had a garden, I would grow vegetables. | If I had a garden, I'd grow vegetables. | I would grow vegetables if I had a garden. | I'd grow vegetables if I had a garden."
+   ],
+   "set": {
+    "4": "If I had a garden, I would grow vegetables. | If I had a garden, I'd grow vegetables. | I would grow vegetables if I had a garden. | I'd grow vegetables if I had a garden. | If I had a garden, I might grow vegetables. | I might grow vegetables if I had a garden. | If I had a garden, I'd grow my own vegetables. | If I had a garden, I would grow my own vegetables. | If I were to have a garden, I would grow vegetables."
+   }
+  },
+  {
+   "id": "r20-4-039",
+   "match": [
+    "gap",
+    "She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus.",
+    "hadn't stayed / wouldn't have missed"
+   ],
+   "set": {
+    "4": "hadn't stayed / wouldn't have missed | might not have missed"
+   }
+  },
+  {
+   "id": "r20-4-043",
+   "match": [
+    "mcq",
+    "Choose the correct option: ___ for your help, we would never have finished on time.",
+    "But"
+   ],
+   "set": {
+    "5": "Unless | Otherwise | Provided"
+   }
+  },
+  {
+   "id": "r20-4-044",
+   "match": [
+    "text",
+    "Rewrite starting with *Were*: If the price were lower, more people would buy it.",
+    "Were the price lower, more people would buy it. | Were the price lower, more people would buy the product."
+   ],
+   "set": {
+    "4": "Were the price lower, more people would buy it. | Were the price lower, more people would buy the product. | Were the price to be lower, more people would buy it."
+   }
+  },
+  {
+   "id": "r20-4-046",
+   "match": [
+    "gap",
+    "___ he ___ harder, he would have passed the exam.",
+    "Had / studied"
+   ],
+   "set": {
+    "5": "bank: Had | studied | Should | study"
+   }
+  },
+  {
+   "id": "r20-4-047",
+   "match": [
+    "gap",
+    "___ it not been for the rain, the match would have finished on time.",
+    "Had"
+   ],
+   "set": {
+    "5": "bank: Had | Were | Should"
+   }
+  },
+  {
+   "id": "r20-4-051",
+   "match": [
+    "mcq",
+    "You talk about a past mistake in a meeting. Choose the correct option.",
+    "If only we had tested the app, we would not have these problems."
+   ],
+   "set": {
+    "3": "We didn't back up the files last week. Choose the correct sentence.",
+    "4": "If only we had backed up the files, we wouldn't be in this mess now.",
+    "5": "If only we would have backed up the files, we wouldn't be in this mess now. | If only we backed up the files, we wouldn't be in this mess now. | If only we had backed up the files, we won't be in this mess now.",
+    "6": "*If only* + past perfect for the past (last week); *would* for the result now.",
+    "7": "*If only* + Past Perfect par pagātni (last week); *would* par sekām tagad.",
+    "9": "If only we had tested the app, we would not have these problems."
+   }
+  },
+  {
+   "id": "r20-4-052",
+   "match": [
+    "text",
+    "Write one sentence that starts with *I'd rather*: Please don't call me after ten.",
+    "I'd rather you didn't call me after ten. | I would rather you didn't call me after ten. | I'd rather you didn't call me after ten o'clock. | I would rather you didn't call me after ten o'clock. | I'd rather you not call me after ten. | I would rather you not call me after ten."
+   ],
+   "set": {
+    "3": "Start with *I'd rather you*: Please don't park in front of my garage.",
+    "4": "I'd rather you didn't park in front of my garage. | I would rather you didn't park in front of my garage. | I'd rather you not park in front of my garage. | I would rather you not park in front of my garage. | I'd rather you parked somewhere else, not in front of my garage.",
+    "6": "*I'd rather* + another person + past: *I'd rather you didn't park*.",
+    "7": "*I'd rather* + cits cilvēks + pagātne: *I'd rather you didn't park*.",
+    "9": "Write one sentence that starts with *I'd rather*: Please don't call me after ten."
+   }
+  },
+  {
+   "id": "r20-4-053",
+   "match": [
+    "mcq",
+    "Which sentence reports 'You lost my keys!' as an accusation?",
+    "He accused me of losing his keys."
+   ],
+   "set": {
+    "3": "Which sentence reports this: 'You lost my keys!'",
+    "6": "*accuse* someone *of* + -ing.",
+    "7": "*accuse* kādu *of + -ing*."
+   }
+  }
+ ],
+ "twins-2.csv": [
+  {
+   "id": "r20-5-002",
+   "match": [
+    "mcq",
+    "Choose the correct option: I didn't charge my phone last night. Imagine a different past and its result now.",
+    "If I had charged my phone, it would be working now."
+   ],
+   "set": {
+    "3": "Choose the correct option: I didn't charge my phone last night, so it's dead now.",
+    "6": "The condition changes a past event; *would* + base form gives its result now.",
+    "7": "Nosacījums maina pagātnes notikumu; *would* + pamatforma izsaka tā sekas tagad."
+   }
+  },
+  {
+   "id": "r20-5-003",
+   "match": [
+    "gap",
+    "Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know)",
+    "had / taken / would | could | might / know"
+   ],
+   "set": {
+    "4": "had | 'd / taken / would | could | might / know"
+   }
+  },
+  {
+   "id": "r20-5-004",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she apologised for losing my luggage"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-006",
+   "match": [
+    "mcq",
+    "Which sentence reports this: 'No, I won't take another exam.'",
+    "He refused to take another exam."
+   ],
+   "set": {
+    "5": "He refused taking another exam. | He refused that he would take another exam. | He refused to taking another exam."
+   }
+  },
+  {
+   "id": "r20-5-010",
+   "match": [
+    "mcq",
+    "Choose the correct option: The question is ___.",
+    "whether the supplier can meet the deadline"
+   ],
+   "set": {
+    "5": "whether can the supplier meet the deadline | if can the supplier meet the deadline | whether is the supplier able to meet the deadline"
+   }
+  },
+  {
+   "id": "r20-5-011",
+   "match": [
+    "text",
+    "Combine the sentences. Start with *It is unclear*: Which route should we take? It is unclear.",
+    "It is unclear which route we should take. | It's unclear which route we should take. | It is unclear which route to take. | It's unclear which route to take."
+   ],
+   "set": {
+    "4": "It is unclear which route we should take. | It's unclear which route we should take. | It is unclear which route to take. | It's unclear which route to take. | It is unclear which route we ought to take. | It's unclear which route we ought to take. | It is unclear which route we are to take. | It's unclear which route we are to take."
+   }
+  },
+  {
+   "id": "r20-5-012",
+   "match": [
+    "mcq",
+    "Choose the correct option: She would have understood the lesson if she ___ the notes.",
+    "had read"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-013",
+   "match": [
+    "mcq",
+    "Which sentence has a mistake?",
+    "If I had save a copy, I wouldn't have lost my work."
+   ],
+   "set": {
+    "4": "If I would have saved a copy, I wouldn't have lost my work.",
+    "6": "No *would* in the *if*-part: *If I had saved a copy*.",
+    "7": "*If* daļā nelieto *would*: *If I had saved a copy*.",
+    "9": "If I had save a copy, I wouldn't have lost my work."
+   }
+  },
+  {
+   "id": "r20-5-014",
+   "match": [
+    "mcq",
+    "Choose the correct option: We missed the bus yesterday. If we had left earlier, we ___.",
+    "could have caught it"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-015",
+   "match": [
+    "text",
+    "Rewrite with *if* and *would*: I didn't remember her birthday, so I didn't call her.",
+    "If I had remembered her birthday, I would have called her. | If I'd remembered her birthday, I would have called her. | If I had remembered her birthday, I'd have called her. | If I'd remembered her birthday, I'd have called her. | I would have called her if I had remembered her birthday. | I would have called her if I'd remembered her birthday. | I'd have called her if I had remembered her birthday. | I'd have called her if I'd remembered her birthday."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-016",
+   "match": [
+    "mcq",
+    "Which sentence reports this: 'Can you fix my laptop?'",
+    "She asked if I could fix her laptop."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-017",
+   "match": [
+    "mcq",
+    "Which sentence reports this: 'Don't leave your bag here!'",
+    "He told me not to leave my bag there."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-019",
+   "match": [
+    "text",
+    "Report this request. Start with *Omar asked me*: 'Could you check the figures?'",
+    "Omar asked me to check the figures. | Omar asked me if I could check the figures. | Omar asked me whether I could check the figures. | Omar asked if I could check the figures. | Omar asked whether I could check the figures."
+   ],
+   "set": {
+    "6": "A request can be reported as *asked me to check* or *asked me if/whether I could check*.",
+    "7": "Lūgumu var atstāstīt ar *asked me to check* vai *asked me if/whether I could check*."
+   }
+  },
+  {
+   "id": "r20-5-020",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "we had been hiking for hours when the storm began"
+   ],
+   "set": {
+    "4": "we had been hiking for hours when the storm began",
+    "5": "also accepted: when the storm began we had been hiking for hours | the storm began when we had been hiking for hours | when we had been hiking for hours the storm began | for hours we had been hiking when the storm began",
+    "6": "*Had been* + *-ing* describes an activity continuing up to a past event.",
+    "7": "*Had been + -ing* izsaka darbību, kas turpinājās līdz pagātnes notikumam."
+   }
+  },
+  {
+   "id": "r20-5-022",
+   "match": [
+    "gap",
+    "By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)",
+    "had answered"
+   ],
+   "set": {
+    "4": "had answered | 'd answered"
+   }
+  },
+  {
+   "id": "r20-5-023",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she had been learning French for years when she moved"
+   ],
+   "set": {
+    "4": "she had been learning French for years when she moved",
+    "5": "also accepted: when she moved she had been learning French for years | she moved when she had been learning French for years | when she had been learning French for years she moved | for years she had been learning French when she moved",
+    "6": "*Had been* + *-ing* describes an activity continuing up to a past event.",
+    "7": "*Had been + -ing* izsaka darbību, kas turpinājās līdz pagātnes notikumam."
+   }
+  }
+ ],
+ "typical-b2c1-1.csv": [
+  {
+   "id": "r20-5-051",
+   "match": [
+    "gap",
+    "If I ___ her number, I would call her right now. (know)",
+    "knew"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-052",
+   "match": [
+    "gap",
+    "If the train ___ faster, more people would use it for work. (be)",
+    "was | were"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-053",
+   "match": [
+    "gap",
+    "I ___ more if the gym were closer to my office. (exercise)",
+    "would exercise | 'd exercise"
+   ],
+   "set": {
+    "4": "would exercise | 'd exercise | might exercise | could exercise",
+    "6": "The result of an imagined present: *would* (or *could, might*) + base form.",
+    "7": "Iedomātas tagadnes sekas: *would* (vai *could, might*) + pamatforma.",
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-054",
+   "match": [
+    "gap",
+    "If we ___ earlier, we wouldn't have missed the flight. (leave)",
+    "had left | 'd left"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-055",
+   "match": [
+    "gap",
+    "If you had asked me, I ___ you with the move. (help)",
+    "would have helped | 'd have helped"
+   ],
+   "set": {
+    "4": "would have helped | 'd have helped | might have helped | could have helped",
+    "6": "The result in an imagined past: *would have* (or *could have, might have*) + 3rd form.",
+    "7": "Sekas iedomātā pagātnē: *would have* (vai *could have, might have*) + 3. forma.",
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r20-5-056",
+   "match": [
+    "gap",
+    "Tom said he ___ the report the next day. (send)",
+    "would send | 'd send"
+   ],
+   "set": {
+    "3": "'I'll send the report tomorrow.' Tom said he ___ the report the next day. (send)",
+    "6": "Reported later: *will* becomes *would*.",
+    "7": "Atstāstot vēlāk, *will* kļūst par *would*.",
+    "11": "yes",
+    "9": "Tom said he ___ the report the next day. (send)"
+   }
+  },
+  {
+   "id": "r20-5-057",
+   "match": [
+    "gap",
+    "She told me she ___ in Riga for two years. (live)",
+    "had lived | had been living | 'd lived | 'd been living"
+   ],
+   "set": {
+    "3": "'I've lived here for two years.' She told me she ___ there for two years. (live)",
+    "6": "Reported later: *have lived* becomes *had lived* (or *had been living*).",
+    "7": "Atstāstot vēlāk, *have lived* kļūst par *had lived* (vai *had been living*).",
+    "9": "She told me she ___ in Riga for two years. (live)"
+   }
+  },
+  {
+   "id": "r20-5-060",
+   "match": [
+    "gap",
+    "Could you tell me what time the museum ___? (open)",
+    "opens | will be open | will open | is opening | is going to open"
+   ],
+   "set": {
+    "3": "Could you tell me what time the museum ___ on Sundays? (open)",
+    "4": "opens",
+    "6": "The embedded question has subject before verb and no *does*: *what time the museum opens*.",
+    "7": "Netiešajā jautājumā teikuma priekšmets ir pirms darbības vārda, un nav *does*: *what time the museum opens*.",
+    "9": "Could you tell me what time the museum ___? (open)"
+   }
+  },
+  {
+   "id": "r20-6-001",
+   "match": [
+    "gap",
+    "When I finally got through, I ___ on hold for forty minutes. (wait)",
+    "had been waiting | 'd been waiting"
+   ],
+   "set": {
+    "4": "had been waiting | 'd been waiting | had waited | 'd waited"
+   }
+  },
+  {
+   "id": "r20-6-002",
+   "match": [
+    "gap",
+    "___ the rain, we finished the hike.",
+    "Despite | In spite of"
+   ],
+   "set": {
+    "3": "___ her knee injury, she finished the marathon.",
+    "4": "Despite",
+    "5": "bank: Despite | Although | Even though | Despite of",
+    "6": "*Despite* + noun (*her knee injury*); *although* and *even though* need subject + verb, and *despite* has no *of*.",
+    "7": "*Despite* + lietvārds (*her knee injury*); aiz *although* un *even though* vajag teikuma priekšmetu un darbības vārdu, un *despite* lieto bez *of*.",
+    "9": "___ the rain, we finished the hike."
+   }
+  },
+  {
+   "id": "r20-6-003",
+   "match": [
+    "gap",
+    "She wrote everything down so as ___ anything. (not / forget)",
+    "not to forget"
+   ],
+   "set": {
+    "3": "I set two alarms in order ___ my early flight. (not / miss)",
+    "4": "not to miss | to not miss",
+    "6": "Purpose, negative: *in order not to* + base form.",
+    "7": "Nolūks noliegumā: *in order not to* + pamatforma.",
+    "9": "She wrote everything down so as ___ anything. (not / forget)"
+   }
+  },
+  {
+   "id": "r20-6-004",
+   "match": [
+    "gap",
+    "Take an umbrella in case it ___ later. (rain)",
+    "rains"
+   ],
+   "set": {
+    "3": "I'll leave you my number in case you ___ any problems with the flat. (have)",
+    "4": "have | should have",
+    "6": "After *in case* the present (or *should*), not *will*.",
+    "7": "Aiz *in case* tagadne (vai *should*), nevis *will*.",
+    "9": "Take an umbrella in case it ___ later. (rain)"
+   }
+  },
+  {
+   "id": "r20-6-006",
+   "match": [
+    "gap",
+    "If she hadn't checked the code, the app ___ . (crash)",
+    "would have crashed | 'd have crashed"
+   ],
+   "set": {
+    "4": "would have crashed | 'd have crashed | might have crashed | could have crashed"
+   }
+  },
+  {
+   "id": "r20-6-008",
+   "match": [
+    "gap",
+    "He apologised ___ late for the meeting. (be)",
+    "for being"
+   ],
+   "set": {
+    "3": "She apologised ___ the meeting without a word. (leave)",
+    "4": "for leaving | for having left",
+    "6": "*apologise for* + *-ing* (or *having* + 3rd form).",
+    "7": "*apologise for* + darbības vārds ar *-ing* (vai *having* + 3. forma).",
+    "9": "He apologised ___ late for the meeting. (be)"
+   }
+  },
+  {
+   "id": "r20-6-009",
+   "match": [
+    "gap",
+    "My colleague suggested ___ a taxi to the airport. (take)",
+    "taking"
+   ],
+   "set": {
+    "3": "Our guide suggested ___ the museum early to avoid the queues. (visit)",
+    "4": "visiting | that we visit | we visit | that we should visit | we should visit | that we visited | we visited",
+    "6": "*suggest* + *-ing* (or *suggest that we visit / should visit*), never *suggest to*.",
+    "7": "*suggest* + darbības vārds ar *-ing* (vai *suggest that we visit / should visit*), nekad *suggest to*.",
+    "9": "My colleague suggested ___ a taxi to the airport. (take)"
+   }
+  },
+  {
+   "id": "r20-6-010",
+   "match": [
+    "gap",
+    "I'm not sure what time the meeting ___ . (start)",
+    "starts | will start"
+   ],
+   "set": {
+    "4": "starts | will start | is going to start | is starting"
+   }
+  },
+  {
+   "id": "r20-6-011",
+   "match": [
+    "gap",
+    "Her eyes were red because she ___ . (cry)",
+    "had been crying | 'd been crying"
+   ],
+   "set": {
+    "3": "She was smiling when I saw her, but her eyes were red because she ___ . (cry)",
+    "4": "had been crying | 'd been crying | had cried | 'd cried",
+    "6": "The crying was over before that moment and we see its result: *had been* + *-ing* (*had cried* is also possible).",
+    "7": "Raudāšana bija beigusies pirms tā brīža, un mēs redzam tās rezultātu: *had been* + *-ing* (iespējams arī *had cried*).",
+    "9": "Her eyes were red because she ___ . (cry)"
+   }
+  },
+  {
+   "id": "r20-6-012",
+   "match": [
+    "gap",
+    "If I had studied medicine, I ___ a doctor now. (be)",
+    "would be | 'd be"
+   ],
+   "set": {
+    "3": "If I had learned to drive at eighteen, I ___ so much on taxis now. (not / spend)",
+    "4": "wouldn't spend | would not spend | wouldn't be spending | would not be spending | might not spend",
+    "6": "A past event with a result now: *would* + base form, because of *now*.",
+    "7": "Pagātnes notikums ar sekām tagad: *would* + pamatforma, jo ir *now*.",
+    "9": "If I had studied medicine, I ___ a doctor now. (be)"
+   }
+  },
+  {
+   "id": "r20-6-013",
+   "match": [
+    "gap",
+    "If I ___ so shy, I would have spoken to her at the party. (not / be)",
+    "weren't | wasn't | were not | was not"
+   ],
+   "set": {
+    "3": "If I ___ allergic to cats, I would have stayed at Anna's place last weekend. (not / be)",
+    "4": "weren't | wasn't | were not | was not | hadn't been | had not been",
+    "6": "A lasting fact now (*allergic*) with a result in the past: *if* + past (*weren't*). *hadn't been* is also correct if you think only of last weekend.",
+    "7": "Pastāvīgs fakts tagad (*allergic*) ar sekām pagātnē: *if* + pagātne (*weren't*). Pareizi arī *hadn't been*, ja domā tikai par pagājušo nedēļas nogali.",
+    "9": "If I ___ so shy, I would have spoken to her at the party. (not / be)"
+   }
+  },
+  {
+   "id": "r20-6-014",
+   "match": [
+    "gap",
+    "Sales fell sharply; ___ , the company cut its prices.",
+    "therefore | as a result | consequently | thus"
+   ],
+   "set": {
+    "4": "therefore | as a result | consequently | thus | as a consequence | accordingly | hence | for this reason | in response"
+   }
+  },
+  {
+   "id": "r20-6-016",
+   "match": [
+    "gap",
+    "I wish I ___ more time to travel this year. (have)",
+    "had"
+   ],
+   "set": {
+    "3": "I wish I ___ closer to my office; the commute takes hours. (live)",
+    "4": "lived | could live | was living | were living",
+    "6": "A wish about now: *wish* + past (*could live* is also correct).",
+    "7": "Vēlēšanās par tagadni: *wish* + pagātne (pareizi arī *could live*).",
+    "9": "I wish I ___ more time to travel this year. (have)"
+   }
+  },
+  {
+   "id": "r20-6-018",
+   "match": [
+    "gap",
+    "We'll start at nine unless the speaker ___ late. (be)",
+    "is"
+   ],
+   "set": {
+    "4": "is | 's"
+   }
+  },
+  {
+   "id": "r20-6-019",
+   "match": [
+    "gap",
+    "___ I known about the strike, I would have booked another flight. (have)",
+    "Had"
+   ],
+   "set": {
+    "3": "___ we left ten minutes earlier, we would have caught the ferry. (have)",
+    "6": "Formal, without *if*: *Had we left* = *If we had left*.",
+    "7": "Formāli, bez *if*: *Had we left* = *If we had left*.",
+    "9": "___ I known about the strike, I would have booked another flight. (have)"
+   }
+  },
+  {
+   "id": "r20-6-020",
+   "match": [
+    "gap",
+    "It's high time the government ___ something about housing. (do)",
+    "did"
+   ],
+   "set": {
+    "4": "did | was doing"
+   }
+  },
+  {
+   "id": "r20-6-021",
+   "match": [
+    "gap",
+    "I'd rather you ___ my phone without asking. (not / use)",
+    "didn't use | did not use"
+   ],
+   "set": {
+    "3": "In future, I'd rather you ___ my phone without asking. (not / use)",
+    "6": "*I'd rather* + another person + past: what I want someone else not to do. *In future* shows it is about from now on.",
+    "7": "*I'd rather* + cita persona + pagātne: ko es gribu, lai cits nedara. *In future* rāda, ka runa ir par turpmāko laiku.",
+    "9": "I'd rather you ___ my phone without asking. (not / use)"
+   }
+  },
+  {
+   "id": "r20-6-022",
+   "match": [
+    "gap",
+    "She insisted ___ for the whole dinner. (pay)",
+    "on paying"
+   ],
+   "set": {
+    "3": "My father insisted ___ us to the airport. (drive)",
+    "4": "on driving | that he drive | that he should drive | he should drive | that he would drive | he would drive | that he'd drive | he'd drive",
+    "6": "*insist on* + *-ing* (or *insist that he drive / should drive*).",
+    "7": "*insist on* + darbības vārds ar *-ing* (vai *insist that he drive / should drive*).",
+    "9": "She insisted ___ for the whole dinner. (pay)"
+   }
+  },
+  {
+   "id": "r20-6-023",
+   "match": [
+    "gap",
+    "We couldn't decide where ___ on holiday. (go)",
+    "to go"
+   ],
+   "set": {
+    "4": "to go | we should go | we could go | we would go | we'd go | we were going to go"
+   }
+  },
+  {
+   "id": "r20-6-025",
+   "match": [
+    "gap",
+    "If it ___ for your advice, I would never have applied. (not / be)",
+    "hadn't been | had not been"
+   ],
+   "set": {
+    "4": "hadn't been | had not been | weren't | were not | wasn't | was not"
+   }
+  },
+  {
+   "id": "r20-6-026",
+   "match": [
+    "gap",
+    "The minister denied ___ the report before it was published. (see)",
+    "having seen | seeing"
+   ],
+   "set": {
+    "4": "having seen | seeing | that he had seen | he had seen | that he'd seen | he'd seen | that he saw | he saw"
+   }
+  },
+  {
+   "id": "r20-6-027",
+   "match": [
+    "gap",
+    "They accused the company ___ the data of its users. (sell)",
+    "of selling"
+   ],
+   "set": {
+    "4": "of selling | of having sold"
+   }
+  },
+  {
+   "id": "r20-6-028",
+   "match": [
+    "gap",
+    "___ wins the competition will get a trip to Lisbon. (who)",
+    "Whoever"
+   ],
+   "set": {
+    "4": "Whoever | Anyone who | Anybody who | The person who | Everyone who"
+   }
+  },
+  {
+   "id": "r20-6-029",
+   "match": [
+    "gap",
+    "It depends on ___ the budget is approved or not.",
+    "whether"
+   ],
+   "set": {
+    "3": "Our holiday plans depend on ___ my boss gives me the week off.",
+    "6": "After a preposition use *whether*, not *if*.",
+    "7": "Aiz prievārda lieto *whether*, nevis *if*.",
+    "9": "It depends on ___ the budget is approved or not."
+   }
+  }
+ ],
+ "unreal-time-1.csv": [
+  {
+   "id": "r20-6-032",
+   "match": [
+    "mcq",
+    "Choose the correct option: It's about time you ___ your mother.",
+    "called"
+   ],
+   "set": {
+    "3": "Choose the correct option: It's about time the landlord ___ the heating.",
+    "4": "repaired",
+    "5": "will repair | repairing | to repair",
+    "6": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+    "7": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu.",
+    "9": "called"
+   }
+  },
+  {
+   "id": "r20-6-033",
+   "match": [
+    "gap",
+    "It's high time we ___ home. The last bus leaves in ten minutes.",
+    "went"
+   ],
+   "set": {
+    "3": "It's high time we ___ the tickets. The concert is next week.",
+    "4": "booked",
+    "5": "bank: booked | have booked | will book | had booked",
+    "6": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+    "7": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu.",
+    "9": "It's high time we ___ home. The last bus leaves in ten minutes."
+   }
+  },
+  {
+   "id": "r20-6-034",
+   "match": [
+    "mcq",
+    "Choose the correct option: It's high time the city ___ something about the traffic.",
+    "did"
+   ],
+   "set": {
+    "3": "Choose the correct option: It's high time the city ___ more cycle lanes.",
+    "4": "built",
+    "5": "will build | building | to build",
+    "6": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+    "7": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu.",
+    "9": "did"
+   }
+  },
+  {
+   "id": "r20-6-035",
+   "match": [
+    "text",
+    "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+    "It's high time you started looking for a new job. | It's high time you started to look for a new job. | It's high time you looked for a new job. | It is high time you started looking for a new job. | It is high time you started to look for a new job. | It is high time you looked for a new job."
+   ],
+   "set": {
+    "4": "It's high time you started looking for a new job. | It's high time you started to look for a new job. | It's high time you looked for a new job. | It is high time you started looking for a new job. | It is high time you started to look for a new job. | It is high time you looked for a new job. | It's high time you began looking for a new job. | It is high time you began looking for a new job. | It's high time that you started looking for a new job. | It is high time that you started looking for a new job. | It's high time you were looking for a new job. | It is high time you were looking for a new job. | It's high time you started job-hunting. | It is high time you started job-hunting. | It's high time for you to start looking for a new job. | It is high time for you to start looking for a new job."
+   }
+  },
+  {
+   "id": "r20-6-037",
+   "match": [
+    "gap",
+    "I'd sooner ___ the train than drive in this snow.",
+    "take"
+   ],
+   "set": {
+    "3": "I'd sooner ___ a sandwich at my desk than go to that noisy canteen.",
+    "4": "have",
+    "5": "bank: have | had | to have | having",
+    "6": "*I'd rather / I'd sooner* + base form: what I prefer to do myself.",
+    "7": "*I'd rather / I'd sooner* + pamatforma: ko es pats labāk darītu.",
+    "9": "I'd sooner ___ the train than drive in this snow."
+   }
+  },
+  {
+   "id": "r20-6-039",
+   "match": [
+    "mcq",
+    "Which sentence has a mistake?",
+    "I'd rather to walk than take the bus."
+   ],
+   "set": {
+    "4": "I'd rather to cook at home than eat out.",
+    "5": "I'd rather you didn't tell Mark yet. | It's high time they fixed the road. | We'd sooner leave early on Friday.",
+    "6": "*I'd rather* + base form, without *to*: *I'd rather cook*.",
+    "7": "*I'd rather* + pamatforma bez *to*: *I'd rather cook.*",
+    "9": "I'd rather to walk than take the bus."
+   }
+  },
+  {
+   "id": "r20-6-040",
+   "match": [
+    "text",
+    "Write one sentence that starts with *I'd rather you*: Please don't bring your dog to the office.",
+    "I'd rather you didn't bring your dog to the office. | I would rather you didn't bring your dog to the office. | I'd rather you not bring your dog to the office. | I would rather you not bring your dog to the office."
+   ],
+   "set": {
+    "4": "I'd rather you didn't bring your dog to the office. | I would rather you didn't bring your dog to the office. | I'd rather you not bring your dog to the office. | I would rather you not bring your dog to the office. | I'd rather you didn't bring your dog into the office. | I would rather you didn't bring your dog into the office. | I'd rather you didn't bring your dog to work. | I would rather you didn't bring your dog to work. | I'd rather you left your dog at home. | I would rather you left your dog at home. | I'd rather you kept your dog at home. | I would rather you kept your dog at home."
+   }
+  }
+ ]
+}

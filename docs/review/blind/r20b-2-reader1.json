@@ -1,0 +1,698 @@
+[
+{
+"id": "r20b-2-001",
+"answer": "If I would know the answer, I would tell you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-002",
+"answer": "If you had told us earlier, we could have adjusted the schedule.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-003",
+"answer": "If I'd have known about the traffic, I would've left earlier.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option A ('If I'd have known') is a common native-speaker form, so some learners may hear it as fine; defensible as a B2.2 mistake but the task should say it is about standard written English."
+},
+{
+"id": "r20b-2-004",
+"answer": "If I hadn't stayed up so late, I wouldn't be so tired now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-005",
+"answer": "A quality now caused a result in the past.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Options are abstract and wordy ('A quality now caused a result in the past'); a learner may not parse them. 'a better memory' is a general trait, not clearly 'now'.",
+"level_problem": "",
+"sense_problem": "The model sentence is odd: 'If I had a better memory, I would have remembered' is a weak mixed conditional; adult-natural but borderline."
+},
+{
+"id": "r20b-2-006",
+"answer": "If only I would have saved more money.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Mistake is believable (would have after if only)."
+},
+{
+"id": "r20b-2-007",
+"answer": "He asked me what time was it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-008",
+"answer": [
+"where we should meet"
+],
+"other_correct": [
+[
+"where they should meet"
+],
+[
+"where we ought to meet"
+],
+[
+"where we were to meet"
+],
+[
+"where we would meet"
+],
+[
+"where to meet"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Unclear how many words to type and whether to start with 'where' (already printed in the quote only). Many correct answers: should/ought to/were to/would, 'they' vs 'we' (pronoun ambiguity), and 'where to meet'. A typed key will miss some.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-009",
+"answer": "The driver apologised for blocking the exit.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-010",
+"answer": "She accused me of breaking the printer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-011",
+"answer": "The manager apologised for the delay and promised that it would not happen again.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only three options, others obviously fail; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-012",
+"answer": "how to set up",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-013",
+"answer": "whether",
+"other_correct": "",
+"wrong_options_that_fit": "'if' is accepted by many speakers after 'depends on' in informal English ('depends on if'), though 'whether' is the standard form.",
+"instruction_problem": "The learner may argue 'if' is also correct; consider adding 'or not' or a different frame.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-014",
+"answer": "whether the project is worth the cost",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-015",
+"answer": "Whomever wins the contract will celebrate.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Overlaps with 041 (same whoever/whomever idea); 'whomever' is a trap many learners (and natives) overuse, acceptable but rule is formal."
+},
+{
+"id": "r20b-2-016",
+"answer": "had been walking",
+"other_correct": "",
+"wrong_options_that_fit": "'has been walking' does not fit the past 'were sore' (not a good fit); none.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-017",
+"answer": [
+"had been working"
+],
+"other_correct": [
+[
+"'d been working"
+],
+[
+"was working"
+],
+[
+"had worked"
+],
+[
+"'d worked"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was working' and 'had worked' are also correct English here; only 'had been working' is clearly best (less natural variants).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-018",
+"answer": [
+"had been waiting"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-019",
+"answer": "she had been working there for ten years when she left",
+"other_correct": [
+"when she left, she had been working there for ten years",
+"when she left she had been working there for ten years",
+"she had been working for ten years there when she left (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-020",
+"answer": "owing to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Distractors 'owing' and 'on account' are fragments of the same phrase, not real alternatives; easy for B2.1.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-021",
+"answer": "The shop closed early owing the strike.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-022",
+"answer": "Save a copy on a USB stick in case your laptop crashes.",
+"other_correct": [
+"Save a copy on a USB stick in case your laptop should crash.",
+"Save a copy on a USB stick in case your laptop were to crash.",
+"Save a copy on a USB stick in case your laptop does crash."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several corrections possible (crashes, should crash, were to crash); a typed key must accept them.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-023",
+"answer": [
+"Therefore"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Easy for B2.2: the two preposition cards need a noun and 'Whereas' is not causal, so only 'Therefore' fits at a glance.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-024",
+"answer": [
+"whether",
+"if"
+],
+"other_correct": [
+[
+"whether",
+"whether"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Second gap: 'whether we're late' without 'or not' is marginal; 'if' is the natural choice. First gap: 'if to expect' is wrong. Third card 'what' is a trivial distractor.",
+"level_problem": "",
+"sense_problem": "'know whether to expect us before ten' is slightly awkward."
+},
+{
+"id": "r20b-2-025",
+"answer": "had she not missed the train, she would be here already",
+"other_correct": [
+"had she not missed the train, she would already be here",
+"she would not be here already had she missed the train",
+"had she missed the train, she would not be here already"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No 'More than one answer is possible' note although several correct orders exist; inversion without 'if' also hard to infer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-026",
+"answer": "the agent said I might need a visa",
+"other_correct": [
+"I said the agent might need a visa"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two correct sentences (agent/I swap); too easy for B2.1 (8 cards).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-027",
+"answer": "I would tell you the answer if I knew",
+"other_correct": [
+"if I knew the answer I would tell you",
+"if I knew I would tell you the answer",
+"I would tell you if I knew the answer"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many correct orders but no note saying more than one answer is possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-028",
+"answer": "we would have known about the problem if you had called",
+"other_correct": [
+"if you had called we would have known about the problem",
+"if you had called about the problem we would have known",
+"we would have known if you had called about the problem",
+"if we had known about the problem we would have called you",
+"we would have called you if we had known about the problem"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many correct orders (including a different sentence with 'we had known ... we would have called you'); no note about multiple answers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-029",
+"answer": "would you mind telling me how long the repair will take",
+"other_correct": [
+"will you mind telling me how long the repair would take (wrong/unnatural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Grammar fine; 'Put in order to make a question' fits.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-030",
+"answer": [
+"order"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-031",
+"answer": "If I had a garden, I would grow vegetables.",
+"other_correct": [
+"If I had a garden, I'd grow vegetables.",
+"I would grow vegetables if I had a garden.",
+"I'd grow vegetables if I had a garden.",
+"If I had a garden, I could grow vegetables.",
+"If I had a garden, I might grow vegetables."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-032",
+"answer": "Were the price lower, more people would buy it.",
+"other_correct": [
+"Were the price to be lower, more people would buy it.",
+"More people would buy it were the price lower."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Starting word is given and the rest is mostly copying.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-033",
+"answer": "If only we had backed up the files, we wouldn't be in this mess now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-034",
+"answer": "If I had charged my phone, it would be working now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-035",
+"answer": "whether the supplier can meet the deadline",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Near duplicate of 014 (same frame 'The question is ___').",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-036",
+"answer": "we had been hiking for hours when the storm began",
+"other_correct": [
+"when the storm began we had been hiking for hours",
+"the storm began when we had been hiking for hours"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several orders correct; no note about it.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-037",
+"answer": "Hadn't she missed the train, she'd be here now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option B is a form hardly any learner writes ('Hadn't she'); the mistake is somewhat exotic. Option C is a correct mixed conditional that some may wrongly mark."
+},
+{
+"id": "r20b-2-038",
+"answer": "She asked me how to start.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 'asked to me' is a random preposition error, not a very believable one."
+},
+{
+"id": "r20b-2-039",
+"answer": "The client complained that the delivery had been three days late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-040",
+"answer": "It remains unclear how we will pay for the repairs.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Wrong options are believable."
+},
+{
+"id": "r20b-2-041",
+"answer": "Whomever gets home first should start dinner.",
+"other_correct": "",
+"wrong_options_that_fit": "Option B 'Invite whoever you like' is accepted in everyday English (formal 'whomever'); a pedantic learner may mark it wrong.",
+"instruction_problem": "Overlaps with 015.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-042",
+"answer": [
+"would send"
+],
+"other_correct": [
+[
+"'d send"
+],
+[
+"was going to send"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-043",
+"answer": [
+"had been waiting"
+],
+"other_correct": [
+[
+"'d been waiting"
+],
+[
+"had waited"
+],
+[
+"'d waited"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had waited' is also correct; only 'had been waiting' stresses duration.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-044",
+"answer": [
+"have"
+],
+"other_correct": [
+[
+"had"
+],
+[
+"should have"
+],
+[
+"happen to have"
+],
+[
+"do have"
+],
+[
+"are having"
+],
+[
+"'re having"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several forms fit ('in case you had' is less natural in this context); typed key must accept variants.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-045",
+"answer": [
+"visiting"
+],
+"other_correct": [
+[
+"we visit"
+],
+[
+"that we visit"
+],
+[
+"we should visit"
+],
+[
+"that we should visit"
+],
+[
+"our visiting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The gap can hold a whole clause as well as -ing; the verb hint '(visit)' does not say which.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-046",
+"answer": [
+"wouldn't be spending"
+],
+"other_correct": [
+[
+"wouldn't spend"
+],
+[
+"would not spend"
+],
+[
+"would not be spending"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-047",
+"answer": [
+"lived"
+],
+"other_correct": [
+[
+"could live"
+],
+[
+"were living"
+],
+[
+"was living"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'could live' and 'were living' are also correct with '(live)'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-048",
+"answer": [
+"did"
+],
+"other_correct": [
+[
+"should do"
+],
+[
+"were to do"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should do' is also correct (less common).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-049",
+"answer": [
+"to go"
+],
+"other_correct": [
+[
+"we should go"
+],
+[
+"we could go"
+],
+[
+"we would go"
+],
+[
+"we were going to go"
+],
+[
+"we ought to go"
+],
+[
+"we were going"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open gap: many clauses fit; should say 'one word' or give a frame.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-050",
+"answer": [
+"of selling"
+],
+"other_correct": [
+[
+"of having sold"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap includes the preposition 'of', which the learner must supply; instruction doesn't say so.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-051",
+"answer": "repaired",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-052",
+"answer": "It's high time you started looking for a new job.",
+"other_correct": [
+"It's high time you started to look for a new job.",
+"It's high time you looked for a new job.",
+"It is high time you started looking for a new job.",
+"It's high time you began looking for a new job.",
+"It's high time you started looking for a job.",
+"It's high time that you started looking for a new job.",
+"It's high time to start looking for a new job."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many answers; a typed key must be tolerant.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-2-053",
+"answer": "I'd rather you didn't bring your dog to the office.",
+"other_correct": [
+"I would rather you didn't bring your dog to the office.",
+"I'd rather you did not bring your dog to the office.",
+"I would rather you did not bring your dog to the office.",
+"I'd rather you not bring your dog to the office.",
+"I'd rather you wouldn't bring your dog to the office."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many variants including American subjunctive; 'Please' dropped.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

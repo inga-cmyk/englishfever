@@ -11,29 +11,29 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
    - same sentence as batch 3, no. 2: Imagine it was different. Rewrite as one sentence with *if*: She didn't learn German at school, so she can't understand her new colleagues now. → If she'd learned German at school, she'd be able to understand her new colleagues now.
 3. *order* · Put the words in order. → **if she were more patient she wouldn't have shouted at him** · also accepted: she wouldn't have shouted at him if she were more patient · practice only
    - same sentence as batch 3, no. 3: Which sentence is NOT correct? → If she would be more patient, she wouldn't have shouted at him.
-4. *gap* · If he ___ more confident, he ___ asked for a pay rise. → **were / would have** · words: were / would have / would be / will have · practice only
+4. *gap* · If she ___ so stubborn, she ___ accepted their apology last week. → **weren't / would have** · words: weren't / would have / would be / will have · practice only
    - same sentence as batch 3, no. 4: Which sentence is correct? → If he were more confident, he would have asked for a pay rise.
 
 ## Mixed conditionals · C1.1
 
-5. *order* · Put the words in order. → **had we booked earlier we would be on the beach now** · also accepted: we would be on the beach now had we booked earlier · practice only
+5. *order* · Put the words in order. → **had we booked earlier we would be on the beach now** · also accepted: we would be on the beach now had we booked earlier / had we booked earlier we would now be on the beach / we would now be on the beach had we booked earlier / now we would be on the beach had we booked earlier / had we booked earlier now we would be on the beach · practice only
    - same sentence as batch 3, no. 5: Which sentence without *if* is correct? → Had we booked earlier, we would be on the beach now.
 6. *gap* · ___ I ___ the contract more carefully, I wouldn't be paying these fees now. → **Had / read** · words: Had / read / Did / have · practice only
    - same sentence as batch 3, no. 6: Rewrite starting with *Had*: If I had read the contract more carefully, I wouldn't be paying these fees now. → Had I read the contract more carefully, I wouldn't be paying these fees now.
-7. *order* · Put the words in order. → **had she not missed the train she would be here now** · also accepted: she would be here now had she not missed the train · practice only
+7. *order* · Put the words in order. → **had she not missed the train she would be here already** · also accepted: she would be here already had she not missed the train / had she not missed the train she would already be here / she would already be here had she not missed the train · practice only
    - same sentence as batch 3, no. 7: Which sentence is NOT correct? → Hadn't she missed the train, she'd be here now.
 8. *gap* · Had the software ___ ___ earlier, we would not be fixing these errors now. → **been / tested** · words: been / tested / be / testing · practice only
    - same sentence as batch 3, no. 8: Choose the correct option. → Had the software been tested earlier, we would not be fixing these errors now.
 
 ## Reported statements (tense changes) · B2.1
 
-9. *order* · Put the words in order. → **the coach told us to warm up before every match** · practice only
+9. *order* · Put the words in order. → **the coach told us to warm up before every match** · also accepted: before every match the coach told us to warm up · practice only
    - same sentence as batch 3, no. 9: Report this. Start with *The coach told us*: 'You must warm up before every match.' → The coach told us we had to warm up before every match.
-10. *gap* · He ___ ___ that the shop was closed. → **told / me** · words: told / me / said / to · practice only
+10. *gap* · He ___ ___ that the shop was closed. → **told / me** · words: told / me / said / that · practice only
    - same sentence as batch 3, no. 10: Which sentence is NOT correct? → He told that the shop was closed.
 11. *gap* · My sister said she ___ call me as soon as she ___. → **would / landed** · words: would / landed / will / would land · practice only
    - same sentence as batch 3, no. 11: Which sentence is correct? → My sister said she would call me as soon as she landed.
-12. *order* · Put the words in order. → **the agent said I might need a visa** · practice only
+12. *order* · Put the words in order. → **the agent said I might need a visa** · also accepted: I said the agent might need a visa · practice only
    - same sentence as batch 3, no. 12: Which sentence is correct? → The agent said I might need a visa.
 
 ## Reported questions and requests · B2.2
@@ -55,7 +55,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
    - same sentence as batch 3, no. 18: My colleague told me: 'You really should have the figures checked before you submit the report.' Report it, starting with *My colleague urged me*. → My colleague urged me to have the figures checked before submitting the report.
 19. *order* · Put the words in order. → **she threatened to call the police** · practice only
    - same sentence as batch 3, no. 19: Which sentence has a mistake? → She threatened calling the police.
-20. *gap* · The client complained ___ the delivery ___ been three days late. → **that / had** · words: that / had / about / have · practice only
+20. *gap* · The client complained ___ the delivery ___ been three days late. → **that / had** · words: that / had / to / have · practice only
    - same sentence as batch 3, no. 20: Which sentence reports the client's complaint: 'The delivery was three days late.' → The client complained that the delivery had been three days late.
 
 ## Indirect questions, more uses (I don't know what to do) · B2.2
@@ -63,7 +63,7 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 21. *order* · Put the words in order. → **we weren't sure where to go** · practice only
    - same sentence as batch 3, no. 21: Which is correct? 'We weren't sure ___.' → where to go
 22. *order* · Put the words in order. → **she didn't know who to ask** · practice only
-   - same sentence as batch 3, no. 22: Join the sentences, using *to*: She didn't know. Who should she ask? → She didn't know who to ask.
+   - same sentence as batch 3, no. 22: Join the sentences: She didn't know. Who should she ask? → She didn't know who to ask.
 23. *order* · Put the words in order. → **we can't decide whether to book the hotel** · practice only
    - same sentence as batch 3, no. 23: Which sentence is NOT correct? → We can't decide whether booking the hotel.
 24. *order* · Put the words in order. → **it remains unclear how we will pay for the repairs** · practice only
@@ -72,11 +72,11 @@ One new drag task for every sentence of batch 3: the same sentence as a word ord
 ## Indirect questions, more uses (I don't know what to do) · C1.2
 
 25. *gap* · ___ arrives last has to wash the dishes. → **Whoever** · words: Whoever / Whomever / Whatever · practice only
-   - same sentence as batch 3, no. 25: Choose the correct word: ___ arrives last has to wash the dishes. → Whoever
+   - same sentence as batch 3, no. 25: Choose the correct word: ___ called the help desk this morning didn't leave a name. → Whoever
 26. *order* · Put the words in order. → **whatever you decide I'll support you** · also accepted: I'll support you whatever you decide · practice only
-   - same sentence as batch 3, no. 26: Write one sentence that starts with *Wh…*: It doesn't matter what you decide. I'll support you. → Whatever you decide, I'll support you.
-27. *order* · Put the words in order. → **whoever finishes first can go home** · practice only
-   - same sentence as batch 3, no. 27: Which sentence is NOT correct? → Whomever finishes first can go home.
+   - same sentence as batch 3, no. 26: Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you. → I'll support you whatever you decide.
+27. *order* · Put the words in order. → **whoever wins the quiz gets a free dinner** · practice only
+   - same sentence as batch 3, no. 27: Which sentence is NOT correct? → Whomever gets home first should start dinner.
 28. *order* · Put the words in order. → **why the system failed remains to be explained** · practice only
    - same sentence as batch 3, no. 28: Choose the correct option. → Why the system failed remains to be explained.
 

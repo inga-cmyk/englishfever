@@ -1,0 +1,143 @@
+[
+{
+"id": "r20d-001",
+"answer": "They asked what time we should arrive.",
+"other_correct": [
+"They asked what time we were supposed to arrive.",
+"They asked what time we had to arrive.",
+"They asked what time we were to arrive.",
+"They asked what time they should arrive.",
+"They asked what time I should arrive.",
+"They asked what time you should arrive.",
+"They asked me what time we should arrive.",
+"They asked us what time we should arrive.",
+"They asked what time we would have to arrive."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Speaker/hearer of the quoted question is not given, so the pronoun (we/they/I/you) is open: many valid answers; the checker must accept them or the task must say who 'we' is. Back-shifting of 'should' is not needed, which a learner may not know.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20d-002",
+"answer": "She didn't know who she should ask.",
+"other_correct": [
+"She didn't know who to ask.",
+"She didn't know who she ought to ask.",
+"She didn't know who she had to ask.",
+"She didn't know whom to ask.",
+"She didn't know whom she should ask.",
+"She did not know who she should ask.",
+"She didn't know who she was supposed to ask."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint to use a question word clause; fine, but 'who to ask' is an equally good answer and may not be what the task targets.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20d-003",
+"answer": "I'll support you whatever you decide.",
+"other_correct": [
+"I'll support you no matter what you decide.",
+"I'll support you regardless of what you decide.",
+"I will support you whatever you decide.",
+"I will support you no matter what you decide.",
+"I'll support you whatever you decide to do.",
+"I'll support you regardless of what you decide to do."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Rewrite as one sentence' is fine; the target (whatever / no matter what) is not hinted, so several valid structures; 'regardless of' is a different structure and may be rejected.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20d-004",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"will start"
+],
+[
+"is starting"
+],
+[
+"is going to start"
+],
+[
+"is to start"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Future tense not constrained: 'starts' (timetable) is best, but will start / is starting / is going to start are all correct.",
+"level_problem": "Too easy for B2.2 (simple present for a timetable is A2/B1).",
+"sense_problem": ""
+},
+{
+"id": "r20d-005",
+"answer": [
+"to go"
+],
+"other_correct": [
+[
+"we should go"
+],
+[
+"we could go"
+],
+[
+"we would go"
+],
+[
+"we'd go"
+],
+[
+"we were to go"
+],
+[
+"we ought to go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Only one gap with (go): 'to go' and 'we should go' both fit; the task does not say which structure is wanted.",
+"level_problem": "Wh- word + infinitive is B1; low for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20d-006",
+"answer": [
+"whether"
+],
+"other_correct": [
+[
+"if"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' is common (informal, some call it non-standard after a preposition) and may be marked wrong. No hint on the word type.",
+"level_problem": "whether/if is B1; low for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20d-007",
+"answer": "It's high time you started looking for a new job.",
+"other_correct": [
+"It's high time you looked for a new job.",
+"It's high time you start looking for a new job.",
+"It's high time you were looking for a new job.",
+"It's high time you got started looking for a new job.",
+"It's high time for you to start looking for a new job.",
+"It's high time you began looking for a new job.",
+"It is high time you started looking for a new job.",
+"It is high time you looked for a new job.",
+"It's high time you started to look for a new job.",
+"It's high time you began to look for a new job."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The starter does not signal the past-tense form, which is the point, but present 'start' is also used (less formal) and 'for you to start' is correct; many answers to accept.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -1,0 +1,726 @@
+[
+{
+"id": "r20-6-001",
+"answer": [
+"had been waiting"
+],
+"other_correct": [
+[
+"had waited"
+],
+[
+"'d been waiting"
+],
+[
+"'d waited"
+],
+[
+"was waiting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several correct tenses (had been waiting / had waited); 'was waiting' is less natural but possible. Task does not force one.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-002",
+"answer": [
+"Despite"
+],
+"other_correct": [
+[
+"In spite of"
+],
+[
+"Notwithstanding"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two-word answer 'In spite of' also fits a single gap; learner cannot know how many words are wanted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-003",
+"answer": [
+"not to forget"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(not / forget)' nearly gives the answer; only 'to' is added.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-004",
+"answer": [
+"rains"
+],
+"other_correct": [
+[
+"should rain"
+],
+[
+"might rain"
+],
+[
+"could rain"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Other modal answers are correct after 'in case'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-005",
+"answer": [
+"had known"
+],
+"other_correct": [
+[
+"'d known"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic third conditional: B1/B2.1, low for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-006",
+"answer": [
+"would have crashed"
+],
+"other_correct": [
+[
+"would've crashed"
+],
+[
+"might have crashed"
+],
+[
+"could have crashed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Modal not fixed: might/could have also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-007",
+"answer": [
+"not to lift"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(not / lift)' gives the form; only 'to' to add.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-008",
+"answer": [
+"for being"
+],
+"other_correct": [
+[
+"for having been"
+],
+[
+"about being"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Preposition not hinted (for/about both possible; 'for' is standard).",
+"level_problem": "Easy for B2.2 (B1 verb+preposition+-ing).",
+"sense_problem": ""
+},
+{
+"id": "r20-6-009",
+"answer": [
+"taking"
+],
+"other_correct": [
+[
+"that we take"
+],
+[
+"that we should take"
+],
+[
+"we take"
+],
+[
+"that we took"
+],
+[
+"we should take"
+],
+[
+"we took"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap allows clause answers (suggested we take / that we take); not only -ing.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-010",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"will start"
+],
+[
+"is going to start"
+],
+[
+"is starting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several tenses fit.",
+"level_problem": "Indirect question is B1, low for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-011",
+"answer": [
+"had been crying"
+],
+"other_correct": [
+[
+"had cried"
+],
+[
+"'d been crying"
+],
+[
+"was crying"
+],
+[
+"cried"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was crying' and 'had cried' also fit; 'had been crying' is the best.",
+"level_problem": "B1/B2.1 form.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-012",
+"answer": [
+"would be"
+],
+"other_correct": [
+[
+"'d be"
+],
+[
+"might be"
+],
+[
+"could be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Other modals fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-013",
+"answer": [
+"hadn't been"
+],
+"other_correct": [
+[
+"had not been"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-014",
+"answer": [
+"As a result"
+],
+"other_correct": [
+[
+"Consequently"
+],
+[
+"Therefore"
+],
+[
+"Thus"
+],
+[
+"Hence"
+],
+[
+"Accordingly"
+],
+[
+"So"
+],
+[
+"In response"
+],
+[
+"For this reason"
+],
+[
+"As a consequence"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint at all: many linkers are correct. Task is open; learner cannot know which one is wanted (and number of words).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-015",
+"answer": [
+"had accepted"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say she did not accept; 'accepted' (past simple) is grammatical but wrong in meaning only if that is clear.",
+"level_problem": "Mixed conditional, fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-016",
+"answer": [
+"had"
+],
+"other_correct": [
+[
+"could have"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'could have' also correct.",
+"level_problem": "Basic wish + past simple: B1/B2.1, low for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-017",
+"answer": [
+"hadn't made"
+],
+"other_correct": [
+[
+"had not made"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-018",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "unless + present: B1.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-019",
+"answer": [
+"Had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Inversion is signalled by the capital letter and missing 'if'; fairly easy.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-020",
+"answer": [
+"did"
+],
+"other_correct": [
+[
+"should do"
+],
+[
+"was doing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should do' is correct (less common); 'did' is the target.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-021",
+"answer": [
+"didn't use"
+],
+"other_correct": [
+[
+"did not use"
+],
+[
+"hadn't used"
+],
+[
+"wouldn't use"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense ambiguous: 'without asking' fits past (hadn't used), present/future (didn't use) and 'wouldn't use'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-022",
+"answer": [
+"on paying"
+],
+"other_correct": [
+[
+"that she pay"
+],
+[
+"that she should pay"
+],
+[
+"that she paid"
+],
+[
+"she paid"
+],
+[
+"she pay"
+],
+[
+"on her paying"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap allows clause answers; preposition 'on' not given.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-023",
+"answer": [
+"to go"
+],
+"other_correct": [
+[
+"we should go"
+],
+[
+"we could go"
+],
+[
+"we were going to go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Clause answers also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-024",
+"answer": [
+"Were"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-025",
+"answer": [
+"hadn't been"
+],
+"other_correct": [
+[
+"had not been"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fixed phrase 'if it hadn't been for'; cannot be solved by grammar logic alone.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-026",
+"answer": [
+"having seen"
+],
+"other_correct": [
+[
+"seeing"
+],
+[
+"that he had seen"
+],
+[
+"that he saw"
+],
+[
+"he had seen"
+],
+[
+"he'd seen"
+],
+[
+"he saw"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Clause answers also correct after 'denied'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-027",
+"answer": [
+"of selling"
+],
+"other_correct": [
+[
+"of having sold"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Preposition 'of' not given.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-028",
+"answer": [
+"Whoever"
+],
+"other_correct": [
+[
+"Anyone who"
+],
+[
+"Anybody who"
+],
+[
+"The person who"
+],
+[
+"Everyone who"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(who)' is confusing: it suggests 'Who' (a question) and Anyone/The person who also fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-029",
+"answer": [
+"whether"
+],
+"other_correct": [
+[
+"if"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' after a preposition is informal/nonstandard but common.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-030",
+"answer": [
+"went"
+],
+"other_correct": [
+[
+"should go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should go' also correct (rarer).",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 032 and 035 theme (time-you-went)."
+},
+{
+"id": "r20-6-031",
+"answer": [
+"hadn't left"
+],
+"other_correct": [
+[
+"had not left"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-032",
+"answer": "called",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near copy of 030/033/034 pattern (about/high time + past simple); many items repeat one point."
+},
+{
+"id": "r20-6-033",
+"answer": [
+"went"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Easy: only one card is past simple."
+},
+{
+"id": "r20-6-034",
+"answer": "did",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-035",
+"answer": "It's high time you started looking for a new job.",
+"other_correct": [
+[
+"It's high time you looked for a new job."
+],
+[
+"It's high time you started to look for a new job."
+],
+[
+"It's high time you began looking for a new job."
+],
+[
+"It is high time you started looking for a new job."
+],
+[
+"It's high time that you started looking for a new job."
+],
+[
+"It's high time you were looking for a new job."
+],
+[
+"It's high time you should start looking for a new job."
+],
+[
+"It's high time for you to start looking for a new job."
+],
+[
+"It's high time to start looking for a new job."
+],
+[
+"It's high time I started looking..."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open: also 'for you to / to + infinitive' pattern is correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-036",
+"answer": "stay",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-037",
+"answer": [
+"take"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-038",
+"answer": "told",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-039",
+"answer": "I'd rather to walk than take the bus.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Believable learner mistake ('rather to'). Fine."
+},
+{
+"id": "r20-6-040",
+"answer": "I'd rather you didn't bring your dog to the office.",
+"other_correct": [
+[
+"I'd rather you did not bring your dog to the office."
+],
+[
+"I would rather you didn't bring your dog to the office."
+],
+[
+"I'd rather you didn't bring your dog into the office."
+],
+[
+"I'd rather you didn't bring your dog to work."
+],
+[
+"I'd rather you wouldn't bring your dog to the office."
+],
+[
+"I'd rather you left your dog at home."
+],
+[
+"I'd rather you kept your dog at home."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Content already given: only 'don't' to 'didn't' change; near copy.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

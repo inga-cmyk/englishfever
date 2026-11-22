@@ -1,0 +1,517 @@
+[
+{
+"id": "r20c-001",
+"answer": [
+"offered",
+"would be"
+],
+"other_correct": [
+[
+"offered",
+"'d be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-002",
+"answer": "If I had realised the impact of my decision, I would have acted differently.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-003",
+"answer": "If he had taken the job, he would be living in Paris now.",
+"other_correct": [
+"If he had taken the job, he'd be living in Paris now.",
+"If he had taken the job, he would live in Paris now.",
+"If he had taken the job, he'd live in Paris now.",
+"If he had accepted the job, he would be living in Paris now."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-004",
+"answer": "The colleague's memory is poor, and that is why they forgot your birthday.",
+"other_correct": "",
+"wrong_options_that_fit": "The first option is partly defensible (memory poor then) but 'fine now' is not stated, so wrong.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Mixed conditional with a general trait ('better memory') is odd; 'If I had a better memory' is a permanent trait, so the sentence sounds unnatural; most speakers would say 'If I had remembered...' or 'I wish I had a better memory'."
+},
+{
+"id": "r20c-005",
+"answer": [
+"where we should meet"
+],
+"other_correct": [
+[
+"where to meet"
+],
+[
+"where we were to meet"
+],
+[
+"where we ought to meet"
+],
+[
+"where they should meet"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap has several words but 'several gaps' note suggests one word each; unclear how many words go in the gap.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-006",
+"answer": [
+"on"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "The direct speech is not needed: 'I congratulated Jo ___ passing' already allows only 'on'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-007",
+"answer": "The customer complained that the service had been terrible.",
+"other_correct": "",
+"wrong_options_that_fit": "'has been' (option 2) is possible only if the service is still terrible; from 'was terrible' it is a wrong backshift, so not correct.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-008",
+"answer": "It's not clear who made the decision.",
+"other_correct": [
+"It is not clear who made the decision.",
+"It isn't clear who made the decision.",
+"It's unclear who made the decision.",
+"It is unclear who made the decision.",
+"Who made the decision is not clear.",
+"Who made the decision isn't clear."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2: just a swap of two parts, only 'who' word order.",
+"sense_problem": ""
+},
+{
+"id": "r20c-009",
+"answer": "Whoever calls, don't answer.",
+"other_correct": [
+"Don't answer, whoever calls.",
+"Don't answer whoever calls.",
+"Whoever calls, do not answer.",
+"Who(ever) it is that calls, don't answer."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Starts with Who...' is ambiguous (Who? Whoever?) and gives a hint; a learner may write 'Who calls doesn't matter' or 'Who calls, don't answer'. 'No matter who calls' does not start with Who.",
+"level_problem": "'whoever' structure is a stretch but OK for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20c-010",
+"answer": [
+"had been running"
+],
+"other_correct": [
+[
+"had run"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had run' is also correct (less natural: stresses the completed run, not the continuing effect); the task allows both.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-011",
+"answer": "she had been working there for ten years when she left",
+"other_correct": [
+"when she left, she had been working there for ten years",
+"she had been working for ten years there when she left (less natural)",
+"she had been working for ten years when she left there",
+"when she left there, she had been working for ten years"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine, but cards give no capital letter or punctuation, so the clause order is ambiguous (this is flagged by 'more than one answer').",
+"sense_problem": ""
+},
+{
+"id": "r20c-012",
+"answer": "Despite the delays, the project was finished on time.",
+"other_correct": [
+"In spite of the delays, the project was finished on time."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say how to fix; both 'Despite' without 'of' and 'In spite of' are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-013",
+"answer": "Save a copy on a USB stick in case your laptop crashes.",
+"other_correct": [
+"Save a copy on a USB stick in case your laptop should crash.",
+"Save a copy on a USB stick in case your laptop does crash."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-014",
+"answer": "The flight was late owing to the bad weather.",
+"other_correct": [
+"Owing to the bad weather, the flight was late.",
+"The flight was late owing to bad weather.",
+"Owing to bad weather, the flight was late.",
+"The flight was late owing to the weather being bad.",
+"The flight was late owing to the fact that the weather was bad."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-015",
+"answer": "If we had been better prepared, the team would have won.",
+"other_correct": [
+"The team would have won if we had been better prepared.",
+"If the team had been better prepared, we would have won.",
+"We would have won if the team had been better prepared.",
+"We would have been better prepared if the team had won (illogical but grammatical)."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say more than one order is possible, and nothing says who was unprepared; at least four sensible answers exist.",
+"level_problem": "",
+"sense_problem": "'we' and 'the team' make two logical versions; ambiguous."
+},
+{
+"id": "r20c-016",
+"answer": "She got the job despite having no experience.",
+"other_correct": [
+"She got the job in spite of having no experience."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say how to fix; 'in spite of' is also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-017",
+"answer": [
+"built",
+"would travel"
+],
+"other_correct": [
+[
+"built",
+"'d travel"
+],
+[
+"built",
+"could travel"
+],
+[
+"built",
+"might travel"
+],
+[
+"built",
+"would be travelling"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-018",
+"answer": [
+"hadn't stayed",
+"wouldn't have missed"
+],
+"other_correct": [
+[
+"had not stayed",
+"would not have missed"
+],
+[
+"hadn't stayed",
+"might not have missed"
+],
+[
+"hadn't stayed",
+"couldn't have missed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-019",
+"answer": "They asked what time we should arrive.",
+"other_correct": [
+"They asked what time they should arrive.",
+"They asked what time we were to arrive.",
+"They asked what time to arrive.",
+"They asked what time we would arrive.",
+"They asked what time we ought to arrive."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-020",
+"answer": "She didn't know who she should ask.",
+"other_correct": [
+"She didn't know who to ask.",
+"She didn't know who she was to ask.",
+"She did not know who she should ask.",
+"She didn't know who she ought to ask."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-021",
+"answer": "I'll support you whatever you decide.",
+"other_correct": [
+"I'll support you no matter what you decide.",
+"I will support you whatever you decide.",
+"I'll support you whatever it is you decide."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-022",
+"answer": [
+"not to miss"
+],
+"other_correct": [
+[
+"to not miss"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(not / miss)' in brackets half-gives the answer; split infinitive 'to not miss' is accepted by many speakers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-023",
+"answer": [
+"have"
+],
+"other_correct": [
+[
+"should have"
+],
+[
+"might have"
+],
+[
+"happen to have"
+],
+[
+"had"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had' (in case you had any problems) is also possible but less common.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-024",
+"answer": [
+"visiting"
+],
+"other_correct": [
+[
+"we visit"
+],
+[
+"that we visit"
+],
+[
+"we should visit"
+],
+[
+"we visited"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb given as (visit) hides that 'we visit/should visit' also fits before 'the museum'; the gap invites one word but several correct answers exist.",
+"level_problem": "OK for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20c-025",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"will start"
+],
+[
+"is going to start"
+],
+[
+"is starting"
+],
+[
+"begins"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint that a timetable present is wanted; 'will start', 'is going to start', 'is starting' are all correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-026",
+"answer": [
+"as a result"
+],
+"other_correct": [
+[
+"consequently"
+],
+[
+"therefore"
+],
+[
+"as a consequence"
+],
+[
+"accordingly"
+],
+[
+"hence"
+],
+[
+"thus"
+],
+[
+"in response"
+],
+[
+"so"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction: open gap with many correct linkers; space before comma suggests a one- or two-word linker but 'so' (no comma) is also possible.",
+"level_problem": "",
+"sense_problem": "Too many fits; the item tests nothing specific."
+},
+{
+"id": "r20c-027",
+"answer": [
+"didn't use"
+],
+"other_correct": [
+[
+"did not use"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-028",
+"answer": [
+"to go"
+],
+"other_correct": [
+[
+"we should go"
+],
+[
+"we could go"
+],
+[
+"we would go"
+],
+[
+"we were going to go"
+],
+[
+"we wanted to go"
+],
+[
+"we'd go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap of one or several words: 'to go' and a full clause with 'we' both fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-029",
+"answer": [
+"whether"
+],
+"other_correct": [
+[
+"if"
+],
+[
+"whether or not"
+],
+[
+"when"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' after a preposition is informal; some accept it. 'when' also gives correct English with a different meaning (no meaning cue given).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20c-030",
+"answer": "It's high time you started looking for a new job.",
+"other_correct": [
+"It is high time you started looking for a new job.",
+"It's high time you looked for a new job.",
+"It's high time you started to look for a new job.",
+"It's high time you began looking for a new job.",
+"It's high time you started your search for a new job."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'You should really start' with 'really' is a near copy; fine."
+}
+]

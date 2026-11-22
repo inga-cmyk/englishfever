@@ -1,0 +1,653 @@
+[
+{
+"id": "r20-1-001",
+"answer": "were",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Second conditional with 'If I were you' is A2/B1, too easy for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-002",
+"answer": "B is less certain than A.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy/basic for B2.1 (would vs might).",
+"sense_problem": ""
+},
+{
+"id": "r20-1-003",
+"answer": [
+"offered",
+"would be"
+],
+"other_correct": [
+[
+"offered",
+"'d be"
+],
+[
+"offered",
+"might be"
+],
+[
+"offered",
+"could be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Given verbs (offer / be) plus the 'will never change' context make the second conditional obvious; ok, but 'might/could be' also fit, so key must accept them.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-004",
+"answer": "If I would know the answer, I would tell you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 grammar at B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-005",
+"answer": "I would be grateful if you could send me the report by Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.1.",
+"sense_problem": "'if you will send' is wrong here but 'if you will' (polite, 'if you will be so kind') exists; fine."
+},
+{
+"id": "r20-1-006",
+"answer": "If I were you, I would work fewer hours.",
+"other_correct": [
+"You should work fewer hours, if you ask me.",
+"If I were in your position, I'd talk to my boss.",
+"I'd go home earlier if I were you."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which form to use; a learner may write 'You should/must...' (correct advice) and fail the form check. 'from your own point of view' is unclear.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-007",
+"answer": "had studied",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic third conditional, B1 not B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-008",
+"answer": "The deal was possible, not certain.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-009",
+"answer": "If the team has been better prepared, we would have won.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'has been' for 'had been' is a believable slip."
+},
+{
+"id": "r20-1-010",
+"answer": "If you had told us earlier, we could have adjusted the schedule.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-011",
+"answer": "If I hadn't taken that job, I would never have met my wife.",
+"other_correct": [
+"If I had not accepted that offer, my life would be very different now.",
+"If I hadn't moved abroad, I wouldn't have learned English."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Unclear which structure is wanted (past/mixed); fine as open task.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-012",
+"answer": "had heard / would have avoided",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Imagine the past was different' gives the third conditional away.",
+"level_problem": "Basic third conditional for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-013",
+"answer": "A is about the past, B about now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2 (B1 contrast).",
+"sense_problem": "Option 'A is about the future, B the past' is not a believable wrong option, it is just reversed."
+},
+{
+"id": "r20-1-014",
+"answer": [
+"hadn't driven",
+"wouldn't have lost"
+],
+"other_correct": [
+[
+"had not driven",
+"would not have lost"
+],
+[
+"hadn't driven",
+"would not have lost"
+],
+[
+"had not driven",
+"wouldn't have lost"
+],
+[
+"hadn't driven",
+"might not have lost"
+],
+[
+"hadn't driven",
+"couldn't have lost"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'just once' and 'that day' give the third conditional away; (not / drive) is given so only a plain third conditional is needed: easy for B2.2.",
+"level_problem": "Too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-015",
+"answer": "If I'd have known about the traffic, I would've left earlier.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'If I'd have known' is very common in speech; labelling it NOT correct is fine for exam English but note it is widely used informally."
+},
+{
+"id": "r20-1-016",
+"answer": "If I had realised the impact of my decision, I would have acted differently.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": "Option 1 (had realise) is a typo-level error; option 3 and 4 fine."
+},
+{
+"id": "r20-1-017",
+"answer": "If the Roman Empire hadn't split, it might have survived much longer.",
+"other_correct": [
+"Had Germany won the war, Europe would look very different today.",
+"If Columbus hadn't sailed west, someone else would have found America."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not require a particular form; a learner could write a non-conditional sentence ('Rome might have...').",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-018",
+"answer": "If I had taken that job, I would be rich now.",
+"other_correct": "",
+"wrong_options_that_fit": "If I had taken that job, I would have been rich.",
+"instruction_problem": "'a result now' is the key; option 3 also imagines a different past and a result that could continue to now, so it partly fits.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-019",
+"answer": "I moved to Riga, so I have this job today.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-020",
+"answer": "If I would have studied medicine, I would be a doctor now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-021",
+"answer": "If I hadn't stayed up so late, I wouldn't be so tired now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-022",
+"answer": "If I had chosen another university, I wouldn't be working here now.",
+"other_correct": [
+"If I hadn't taken that course, I wouldn't have this job now.",
+"If I'd decided to stay, I'd still be living in Spain."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Question and imperative mix; 'affect you today' plus 'imagine you had decided differently' gives the mixed form away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-023",
+"answer": "would have",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Mixed conditional is fine for B2.2.",
+"sense_problem": "Slightly odd: 'weren't so shy' (present) with a single past event is plausible. OK."
+},
+{
+"id": "r20-1-024",
+"answer": "She isn't organised, so she missed it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-025",
+"answer": "If he had taken the job, he would be living in Paris now.",
+"other_correct": [
+[
+"If he'd taken the job, he'd be living in Paris now."
+],
+[
+"If he had taken the job, he would live in Paris now."
+],
+[
+"If he had taken the job, he'd live in Paris now."
+],
+[
+"If he had taken the job, he would be in Paris now."
+],
+[
+"If he'd taken the job, he'd be in Paris now."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The prompt contains the facts and 'now', so it is a mechanical transformation; the *asterisks* show raw markdown. Learner must add 'had taken'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-026",
+"answer": "If I am more careful, I wouldn't have lost my keys.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 is mixed and correct but arguably odd (lost keys needs present trait): fine."
+},
+{
+"id": "r20-1-027",
+"answer": "Mixed: a present quality, a past result.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Terms 'Third', 'Zero', 'Mixed conditional' may be unknown; grammar terms in options.",
+"sense_problem": "'If I had a better memory' then 'remembered your birthday': natural."
+},
+{
+"id": "r20-1-028",
+"answer": "If I had been more patient, I wouldn't have lost that customer.",
+"other_correct": [
+"Had I been braver, I would have asked for a raise.",
+"If I were more organised, I wouldn't have missed the deadline."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not specify the form; learner may write unchecked structures.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-029",
+"answer": "Had I taken that job, I would be rich now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Inversion + meaning transformation is fine for B2.2.",
+"sense_problem": "Option 4 'would have been rich then' is also a correct conditional but does not keep the 'now' meaning; fine. Sentence is near-duplicate of 018 and 032."
+},
+{
+"id": "r20-1-030",
+"answer": "If I were",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "The model sentence is a mixed conditional that is odd to analyse; 'Were I' replacing 'If I were' is clear."
+},
+{
+"id": "r20-1-031",
+"answer": "Had I listened to my accountant, I wouldn't be in this mess now.",
+"other_correct": [
+[
+"Had I listened to my accountant, I would not be in this mess now."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Everything is given; 'inversion' is a grammar term some learners may not know.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-032",
+"answer": "Hadn't I moved here, I'd be in Riga now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option D is a form nobody writes except as a deliberate trap; correct is 'Had I not moved'. Option 2 duplicates tasks 018/029."
+},
+{
+"id": "r20-1-033",
+"answer": "Had the contract been checked properly, we would not be facing these penalties now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-034",
+"answer": "Had I accepted the job in Madrid, I would be living there now.",
+"other_correct": [
+"Had I not left school at 16, I would be a doctor today.",
+"Had I studied law, I wouldn't be teaching now."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine, but learner may write third conditional in main clause; unclear whether mixed is needed ('today' hints).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-035",
+"answer": "Should you need any help, call me.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-036",
+"answer": "if it does not rain",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level for 'unless'; easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-037",
+"answer": "You will not get a refund unless you have a receipt.",
+"other_correct": [
+[
+"You won't get a refund unless you have a receipt."
+],
+[
+"Unless you have a receipt, you will not get a refund."
+],
+[
+"Unless you have a receipt, you won't get a refund."
+],
+[
+"You'll not get a refund unless you have a receipt."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-038",
+"answer": "Unless you hurry, we will miss the flight.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-039",
+"answer": "Should you need more details, contact us.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-040",
+"answer": "You can borrow my car provided that you bring it back by six.",
+"other_correct": [
+"You can borrow my car as long as you fill it up.",
+"As long as you return it tomorrow, I'll lend you my laptop."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; 'a favour' ok.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-041",
+"answer": "She told that she would be late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic say/tell; B1 not B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-042",
+"answer": "He asked me what time was it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic reported questions; A2/B1 not B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-043",
+"answer": "She asked me whether or not did I agree.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-044",
+"answer": "She suggested to go by train.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-045",
+"answer": [
+"on"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Quote in front is superfluous: 'I congratulated Jo ___ passing the exam' is enough; also the four cards are all prepositions (a collocation test only).",
+"level_problem": "Easy for B2.2 (congratulate on).",
+"sense_problem": ""
+},
+{
+"id": "r20-1-046",
+"answer": "He blamed me for to lose the file.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-047",
+"answer": "I can't decide whether accepting the offer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-048",
+"answer": "whether",
+"other_correct": "",
+"wrong_options_that_fit": "if (informal: 'depends on if' is widely used, esp. US/spoken; prescriptively wrong after a preposition)",
+"instruction_problem": "Key hinges on a prescriptive rule; 'if' fits informally.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-049",
+"answer": "We talked about how could we improve the results.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-1-050",
+"answer": "Whoever",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near duplicate of task 060."
+},
+{
+"id": "r20-1-051",
+"answer": "Whomever wins the contract will celebrate.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Give it to whomever you trust' is correct formal English, 'whoever you trust' also used: fine. Rule is prescriptive; many natives accept 'whoever' everywhere."
+},
+{
+"id": "r20-1-052",
+"answer": "As a result",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.1 (A2/B1 connectors); only 3 options.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-053",
+"answer": "owing to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-054",
+"answer": "yet",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'and yet' is correct but a rarer pattern; distractors all fail because of 'and'. Fine."
+},
+{
+"id": "r20-1-055",
+"answer": [
+"Therefore"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-056",
+"answer": [
+"whether",
+"if"
+],
+"other_correct": "",
+"wrong_options_that_fit": "unless (does not fit logically: 'unless we're late they'll keep the room' makes no sense)",
+"instruction_problem": "Sentence is awkward ('know whether to expect us'); 'if to expect' is wrong so only one order works. Cards number three for two gaps.",
+"level_problem": "",
+"sense_problem": "Slightly unnatural: a hotel wanting to know whether to expect guests."
+},
+{
+"id": "r20-1-057",
+"answer": [
+"told",
+"me"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only 'told me' works with these cards; 'said' and 'to' are distractors that cannot combine ('said to me' needs three words).",
+"level_problem": "Say/tell is A2/B1, too easy for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-058",
+"answer": [
+"that",
+"had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'about' leaves the sentence incorrect; the gap structure is clear.",
+"level_problem": "Easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-059",
+"answer": [
+"not",
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-1-060",
+"answer": "Whoever",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near duplicate of task 050."
+}
+]

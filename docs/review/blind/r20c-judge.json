@@ -1,0 +1,196 @@
+[
+ {
+  "id": "r20c-001",
+  "decision": "keep",
+  "why": "Reader 2 only says the context makes the tense easy; 'never change' is the situation the rules ask for. No problem."
+ },
+ {
+  "id": "r20c-002",
+  "decision": "keep",
+  "why": "Reader 2 confirms both wrong options are believable mistakes (after the r20b fix). No problem."
+ },
+ {
+  "id": "r20c-003",
+  "decision": "keep",
+  "why": "'accepted the job' changes the given verb (take); as decided before, answers keep the given words. The start is the task's frame, not the answer: the learner must build had taken + would be."
+ },
+ {
+  "id": "r20c-004",
+  "decision": "keep",
+  "why": "'If I had a better memory, I would have remembered' is the standard mixed conditional (present state, past result), not unnatural. Option 1 is wrong: 'had' here is about now, and 'fine now' contradicts it."
+ },
+ {
+  "id": "r20c-005",
+  "decision": "keep",
+  "why": "Already practice only; 'where to meet' and they / we are already accepted. Level and gap length were decided in earlier rounds."
+ },
+ {
+  "id": "r20c-006",
+  "decision": "keep",
+  "why": "Fixed in r20b ('for' removed); the bank on / to / of has one answer. The quote shows what is reported; level was decided earlier."
+ },
+ {
+  "id": "r20c-007",
+  "decision": "keep",
+  "why": "'has been terrible' does not report 'was terrible' (the tense moves forward, not one step back); under the taught rule (11 November) only 'had been' is right. Both readers say so; level decided earlier."
+ },
+ {
+  "id": "r20c-008",
+  "decision": "keep",
+  "why": "Level flag already decided in r20b: an embedded question as subject or after 'It's not clear' is on the B2.2 ind_advanced card."
+ },
+ {
+  "id": "r20c-009",
+  "decision": "keep",
+  "why": "'Don't answer, whoever calls' does not start with Who as the instruction asks; 'Whoever it is that calls, don't answer' is an awkward cleft, not a natural answer. Instruction decided in r20b."
+ },
+ {
+  "id": "r20c-010",
+  "decision": "keep",
+  "why": "'had run' and 'must have run / been running' are already accepted."
+ },
+ {
+  "id": "r20c-011",
+  "decision": "keep",
+  "why": "'working for ten years there' is an unnatural order, rejected in r20b; the natural orders are accepted."
+ },
+ {
+  "id": "r20c-012",
+  "decision": "keep",
+  "why": "Both corrections (Despite / In spite of, both orders) are accepted. 016 has a different sentence after the r20b fix (despite + -ing), so no clone."
+ },
+ {
+  "id": "r20c-013",
+  "decision": "keep",
+  "why": "'in case your laptop crashed' is wrong: the main clause is an imperative about the future, so in case takes the present (or should)."
+ },
+ {
+  "id": "r20c-014",
+  "decision": "keep",
+  "why": "Reader 2 only notes a possible learner mistake; not an instruction fault."
+ },
+ {
+  "id": "r20c-015",
+  "decision": "keep",
+  "why": "'We would have been better prepared if the team had won' is illogical (rejected in r20b); all sensible orders are accepted, and an order task needs no note that several orders exist."
+ },
+ {
+  "id": "r20c-016",
+  "decision": "keep",
+  "why": "'in spite of' and both clause orders are already accepted; the sentence differs from 012 after the r20b fix."
+ },
+ {
+  "id": "r20c-017",
+  "decision": "keep",
+  "why": "Reader 2 says the task is fine."
+ },
+ {
+  "id": "r20c-018",
+  "decision": "keep",
+  "why": "The brackets give the verbs; building hadn't stayed + wouldn't have missed is the point of the task. No problem."
+ },
+ {
+  "id": "r20c-019",
+  "decision": "accept",
+  "why": "'we ought to arrive' matches the accepted 'they ought to arrive' and 'we should arrive'. 'we would arrive' stays rejected (r20b: it changes the question).",
+  "accept": [
+   [
+    "They asked what time we ought to arrive."
+   ]
+  ]
+ },
+ {
+  "id": "r20c-020",
+  "decision": "accept",
+  "why": "'who she was to ask' (be to = what she should do) is correct, formal English, like 'were to' accepted in the twin tasks.",
+  "accept": [
+   [
+    "She didn't know who she was to ask.",
+    "She didn't know whom she was to ask."
+   ]
+  ]
+ },
+ {
+  "id": "r20c-021",
+  "decision": "accept",
+  "why": "'whatever it is you decide' is correct, everyday English with the same meaning (both readers).",
+  "accept": [
+   [
+    "I'll support you whatever it is you decide.",
+    "I will support you whatever it is you decide."
+   ]
+  ]
+ },
+ {
+  "id": "r20c-022",
+  "decision": "keep",
+  "why": "The bracket words must still be put into the right order and form (not to miss); 'to not miss' is already accepted."
+ },
+ {
+  "id": "r20c-023",
+  "decision": "keep",
+  "why": "'might have' and 'had' are not standard after in case with a future main clause (in case takes the present or should); 'had' was rejected in r20b; 'should have' is already accepted."
+ },
+ {
+  "id": "r20c-024",
+  "decision": "keep",
+  "why": "All the clause answers the readers name (we visit, we should visit) are already accepted; level decided earlier."
+ },
+ {
+  "id": "r20c-025",
+  "decision": "accept",
+  "why": "'is due to start' is correct for a scheduled meeting and keeps the bracket verb. 'begins' changes the given verb and stays out. Already practice only.",
+  "accept": [
+   [
+    "is due to start"
+   ]
+  ]
+ },
+ {
+  "id": "r20c-026",
+  "decision": "keep",
+  "why": "'so' with the comma the gap is followed by ('; so, the company') is not standard punctuation; all result linkers that fit are accepted, so the open gap has every answer listed."
+ },
+ {
+  "id": "r20c-027",
+  "decision": "keep",
+  "why": "'wouldn't use' is not standard after I'd rather you, as decided in r20 and r20b."
+ },
+ {
+  "id": "r20c-028",
+  "decision": "accept",
+  "why": "'we wanted to go' and 'we were to go' are correct after 'decide where' and keep the verb go, like the accepted 'we were going to go' and 'we ought to go'.",
+  "accept": [
+   [
+    "we wanted to go",
+    "we were to go"
+   ]
+  ]
+ },
+ {
+  "id": "r20c-029",
+  "decision": "fix",
+  "why": "New finding: 'when' (and 'how soon') gives correct, sensible English ('depend on when my boss gives me the week off'), so the gap had a second answer. Adding 'or not' at the end leaves only whether; 'if' after the preposition stays rejected (card).",
+  "fix": {
+   "q": "Our holiday plans depend on ___ my boss gives me the week off or not.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "why": "After a preposition use *whether*, not *if*: *depend on whether ... or not*.",
+   "why_lv": "Aiz prievārda lieto *whether*, nevis *if*: *depend on whether ... or not* (vai ... vai ne)."
+  }
+ },
+ {
+  "id": "r20c-030",
+  "decision": "accept",
+  "why": "'started your search for a new job' keeps the form (high time + you + past) and the meaning, like the accepted 'started job-hunting'.",
+  "accept": [
+   [
+    "It's high time you started your search for a new job.",
+    "It is high time you started your search for a new job."
+   ]
+  ]
+ }
+]

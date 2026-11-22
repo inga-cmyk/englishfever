@@ -1,0 +1,458 @@
+{
+ "fix": {
+  "cs-B21-3a": {
+   "answers": [
+    [
+     "offered",
+     "were to offer",
+     "were offering"
+    ],
+    [
+     "would be",
+     "'d be",
+     "might be",
+     "could be"
+    ]
+   ],
+   "_r20": "r20b-1-001"
+  },
+  "cs-B21-4a": {
+   "wrong": [
+    "If I lived closer to work, I'd cycle every day.",
+    "What would you do if you lost your job?",
+    "If she were here, she would know what to do."
+   ],
+   "_r20": "r20-1-004"
+  },
+  "ct-B21-2a": {
+   "wrong": [
+    "The deal would certainly have been signed.",
+    "The deal was impossible from the start.",
+    "The deal was signed in the end."
+   ],
+   "_r20": "r20-1-008"
+  },
+  "ct-B21-4a": {
+   "wrong": [
+    "If you had called me, I would have picked you up.",
+    "We could have saved money if we had booked earlier.",
+    "If it hadn't rained, the concert wouldn't have been cancelled."
+   ],
+   "_r20": "r20-1-009"
+  },
+  "ct-B21-5a": {
+   "wrong": [
+    "If you told us earlier, we could have adjusted the schedule.",
+    "If you had told us earlier, we could have adjust the schedule.",
+    "If you would tell us earlier, we could have adjusted the schedule."
+   ],
+   "_r20": "r20-1-010"
+  },
+  "ct-B22-2a": {
+   "correct": "A is about the past, B about now or the future.",
+   "wrong": [
+    "A is about now, B about the past.",
+    "A is about the future, B the past.",
+    "There is no difference in meaning."
+   ],
+   "why": "Third conditional (A) = an unreal past. Second conditional (B) = an unreal present or future.",
+   "why_lv": "Third conditional (A) izsaka nereālu pagātni. Second conditional (B) izsaka nereālu tagadni vai nākotni.",
+   "_r20": "r20-1-013"
+  },
+  "ct-B22-3a": {
+   "answers": [
+    [
+     "hadn't been driving",
+     "had not been driving",
+     "hadn't driven",
+     "had not driven"
+    ],
+    [
+     "wouldn't have lost",
+     "would not have lost",
+     "'d not have lost",
+     "might not have lost",
+     "mightn't have lost"
+    ]
+   ],
+   "_r20": "r20-1-014"
+  },
+  "ct-B22-4a": {
+   "wrong": [
+    "Had we checked the forecast, we wouldn't have gone sailing.",
+    "If she'd asked me, I'd have helped her.",
+    "They wouldn't have got lost if they had taken a map."
+   ],
+   "_r20": "r20-1-015"
+  },
+  "ct-B22-5a": {
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I would have acted differently."
+   ],
+   "_r20": "r20b-3-003"
+  },
+  "cm-B21-4a": {
+   "wrong": [
+    "If I hadn't missed the train, I'd be at home by now.",
+    "If she had saved more, she wouldn't be worried about money now.",
+    "We'd know the results now if they had sent the email."
+   ],
+   "_r20": "r20-1-020"
+  },
+  "cm-B21-5a": {
+   "wrong": [
+    "If I didn't stay up so late, I wouldn't have been so tired now.",
+    "If I hadn't stayed up so late, I wouldn't have been so tired now.",
+    "If I wouldn't have stayed up so late, I wouldn't be so tired now."
+   ],
+   "_r20": "r20-1-021"
+  },
+  "cm-B22-3a": {
+   "answers": [
+    [
+     "If he had taken the job, he would be living in Paris now.",
+     "If he'd taken the job, he'd be living in Paris now.",
+     "He would be living in Paris now if he had taken the job.",
+     "He'd be living in Paris now if he'd taken the job.",
+     "If he had taken the job, he would live in Paris now.",
+     "If he'd taken the job, he'd live in Paris now.",
+     "He would live in Paris now if he had taken the job.",
+     "If he had taken the job, he would be in Paris now.",
+     "If he'd taken the job, he'd be in Paris now.",
+     "He would be in Paris now if he had taken the job.",
+     "If he had taken the job, he might be living in Paris now.",
+     "If he'd taken the job, he might be living in Paris now."
+    ]
+   ],
+   "_r20": "r20b-3-004"
+  },
+  "cm-B22-4a": {
+   "wrong": [
+    "If she spoke French, she would have got the job in Paris.",
+    "If I hadn't eaten so much, I wouldn't feel sick now.",
+    "If he weren't so shy, he would have asked her to dance."
+   ],
+   "_r20": "r20-1-026"
+  },
+  "cm-B22-5a": {
+   "q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' What does the sentence say?",
+   "correct": "The colleague's memory is poor, and that is why they forgot your birthday.",
+   "wrong": [
+    "The colleague's memory was poor in the past, but it is fine now.",
+    "The colleague remembered your birthday.",
+    "The colleague will remember your birthday next year."
+   ],
+   "why": "The if-part is past simple: a quality now (the colleague's memory is poor). The result is *would have* + past participle: the past (the birthday was forgotten). The poor memory is the reason.",
+   "why_lv": "*If* daļā ir Past Simple: īpašība tagad (kolēģim ir slikta atmiņa). Otrajā daļā ir *would have* + 3. forma: pagātne (dzimšanas diena tika aizmirsta). Slikta atmiņa ir iemesls.",
+   "_r20": "r20b-2-005"
+  },
+  "cm-C11-3a": {
+   "q": "Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now.",
+   "_r20": "r20-1-031"
+  },
+  "cm-C11-4a": {
+   "wrong": [
+    "Had she known, she would have stayed.",
+    "Had the train been on time, we would be home by now.",
+    "Were I braver, I would have said no."
+   ],
+   "_r20": "r20-1-032"
+  },
+  "rs-B21-4a": {
+   "wrong": [
+    "He said he was working from home.",
+    "They told us the shop was closed.",
+    "She told me she had lost her keys."
+   ],
+   "_r20": "r20-1-041"
+  },
+  "rq-B21-4a": {
+   "wrong": [
+    "She asked if I wanted a coffee.",
+    "They asked where we had parked the car.",
+    "He wanted to know how long the trip would take."
+   ],
+   "_r20": "r20-1-042"
+  },
+  "rq-B22-4a": {
+   "wrong": [
+    "He asked me if I was ready.",
+    "They asked whether we had eaten.",
+    "He wanted to know whether the hotel had a pool."
+   ],
+   "_r20": "r20-1-043"
+  },
+  "rv-B22-4a": {
+   "wrong": [
+    "He denied taking the money.",
+    "My doctor advised me to rest.",
+    "They promised that they would call back."
+   ],
+   "_r20": "r20-1-044"
+  },
+  "rv-C11-3a": {
+   "bank": [
+    "on",
+    "of",
+    "to"
+   ],
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "_r20": "r20b-3-010"
+  },
+  "rv-C11-4a": {
+   "correct": "My manager accused me for losing the file.",
+   "wrong": [
+    "She apologised for being late.",
+    "He insisted on paying for dinner.",
+    "They congratulated us on our new home."
+   ],
+   "why": "*accuse* + person + *of* + -ing: *My manager accused me of losing the file.*",
+   "why_lv": "*accuse* + persona + *of* + darbības vārds ar -ing: *My manager accused me of losing the file.*",
+   "_r20": "r20-1-046"
+  },
+  "ia-B22-4a": {
+   "correct": "We still can't decide whether moving to a bigger flat.",
+   "wrong": [
+    "I don't know what to say to him.",
+    "Why the meeting was cancelled is still a mystery.",
+    "Do you know whether the museum is open on Mondays?"
+   ],
+   "why": "After *whether* use *to* + base verb or a full clause: *whether to move* or *whether we should move* to a bigger flat.",
+   "why_lv": "Aiz *whether* lieto *to* + pamatforma vai pilnu palīgteikumu: *whether to move* vai *whether we should move* to a bigger flat.",
+   "_r20": "r20-1-047"
+  },
+  "ia-C11-2a": {
+   "wrong": [
+    "if",
+    "that",
+    "what"
+   ],
+   "_r20": "r20-1-048"
+  },
+  "ia-C11-4a": {
+   "correct": "We talked about how could we cut costs.",
+   "wrong": [
+    "I'm not sure where to park.",
+    "Whether the shop is open on Sunday is still unclear.",
+    "It depends on whether the flight is on time."
+   ],
+   "why": "No question order after *about*: *how we could cut costs* (or *how to cut costs*).",
+   "why_lv": "Aiz *about* nav jautājuma vārdu secības: *how we could cut costs* (vai *how to cut costs*).",
+   "_r20": "r20-1-049"
+  },
+  "ia-C12-1a": {
+   "q": "Choose the correct word: ___ booked the meeting room should cancel it if plans change.",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ],
+   "why": "*Whoever* is the subject of *booked*. It means *the person who*.",
+   "why_lv": "*Whoever* ir teikuma priekšmets darbības vārdam *booked*. Tas nozīmē *tas, kurš*.",
+   "_r20": "r20-1-050"
+  },
+  "ia-C12-4a": {
+   "wrong": [
+    "Whatever you decide, I'll support you.",
+    "You can sit wherever you like.",
+    "I'll talk to whoever is at the front desk."
+   ],
+   "why": "*Whoever wins*: *whoever* is the subject of *wins*, so *whomever* is wrong here.",
+   "why_lv": "*Whoever wins*: *whoever* ir teikuma priekšmets darbības vārdam *wins*, tāpēc *whomever* šeit nav pareizi.",
+   "_r20": "r20-1-051"
+  },
+  "ca-C12-4a": {
+   "wrong": [
+    "I wish I had chosen a different course at university.",
+    "If only I had a bit more free time now.",
+    "If only you had told me about it earlier."
+   ],
+   "_r20": "r20-2-004"
+  },
+  "ca-C12-5a": {
+   "q": "Which sentence is correct?",
+   "correct": "If only we had listened to the warning signs last year, we would not be in this position now.",
+   "wrong": [
+    "If only we would have listened to the warning signs last year, we would not be in this position now.",
+    "If only we listened to the warning signs last year, we would not be in this position now."
+   ],
+   "why": "*If only* + *had* + 3rd form for a regret about the past (*last year*), then *would* + base form for the result now. Not *would have listened*, and not *listened*, which is about now.",
+   "why_lv": "*If only* + *had* + 3. forma izsaka nožēlu par pagātni (*last year*), tad *would* + pamatforma rezultātam tagad. Nav pareizi *would have listened*, un arī *listened*, kas attiecas uz tagadni.",
+   "_r20": "r20-2-005"
+  },
+  "rq-B22-1a": {
+   "wrong": [
+    "He asked me what should he do.",
+    "He asked me what he does."
+   ],
+   "_r20": "r20-2-016"
+  },
+  "rq-B22-2a": {
+   "wrong": [
+    "She asked me where should she park.",
+    "She asked me where she should to park."
+   ],
+   "_r20": "r20-2-017"
+  },
+  "rq-B22-3a": {
+   "answers": [
+    [
+     "where they should meet",
+     "where we should meet",
+     "where to meet",
+     "where we were to meet",
+     "where they were to meet",
+     "where we ought to meet",
+     "where they ought to meet"
+    ]
+   ],
+   "_r20": "r20b-2-008"
+  },
+  "rq-B22-6a": {
+   "answers": [
+    [
+     "whether the data was accurate",
+     "whether the data were accurate",
+     "if the data was accurate",
+     "if the data were accurate",
+     "whether or not the data was accurate",
+     "whether or not the data were accurate"
+    ]
+   ],
+   "_r20": "r20-2-020"
+  },
+  "rv-B22-1a": {
+   "correct": "The driver apologised for blocking the exit.",
+   "wrong": [
+    "The driver apologised to block the exit.",
+    "The driver apologised of blocking the exit.",
+    "The driver apologised blocking the exit."
+   ],
+   "why": "*apologise for* + -ing: *apologised for blocking*.",
+   "why_lv": "*apologise for* + *-ing* forma: *apologised for blocking*.",
+   "_r20": "r20-2-021"
+  },
+  "rv-B22-6a": {
+   "answers": [
+    [
+     "for forgetting the meeting",
+     "for having forgotten the meeting",
+     "for forgetting about the meeting",
+     "to me for forgetting the meeting",
+     "to me for forgetting about the meeting",
+     "for having forgotten about the meeting",
+     "to me for having forgotten the meeting",
+     "to me for having forgotten about the meeting"
+    ]
+   ],
+   "_r20": "r20-2-024"
+  },
+  "rv-C11-1a": {
+   "q": "Which sentence reports this: 'You broke the printer!'",
+   "_r20": "r20-2-025"
+  },
+  "rv-C11-5a": {
+   "wrong": [
+    "The manager apologised the delay and promised that it would not happen again.",
+    "The manager apologised for the delay and promised it not to happen again."
+   ],
+   "_r20": "r20-2-027"
+  },
+  "rv-C12-1a": {
+   "wrong": [
+    "She suggested me to take the earlier train.",
+    "She insisted me to take the earlier train.",
+    "She advised to take the earlier train."
+   ],
+   "_r20": "r20-2-029"
+  },
+  "rv-C12-5a": {
+   "q": "Which sentence reports the customer's words: 'The service was terrible.'",
+   "wrong": [
+    "The customer complained that the service has been terrible.",
+    "The customer complained me that the service was terrible."
+   ],
+   "_r20": "r20b-1-012"
+  },
+  "ia-B22-1a": {
+   "q": "Which is correct? 'The instructions don't explain ___ the new printer.'",
+   "correct": "how to set up",
+   "wrong": [
+    "how should we set up",
+    "how set up"
+   ],
+   "why": "Question word + *to* + base verb: *how to set up*.",
+   "why_lv": "Jautājuma vārds + *to* + pamatforma: *how to set up*.",
+   "_r20": "r20-2-036"
+  },
+  "ia-B22-5a": {
+   "wrong": [
+    "It remains unclear who is the responsible for the delay.",
+    "It remains unclear who responsible is for the delay."
+   ],
+   "_r20": "r20-2-039"
+  },
+  "ia-C11-3a": {
+   "answers": [
+    [
+     "It's not clear who made the decision.",
+     "It is not clear who made the decision.",
+     "Who made the decision is not clear.",
+     "It's unclear who made the decision.",
+     "It is unclear who made the decision.",
+     "It remains unclear who made the decision.",
+     "Who made the decision is unclear."
+    ]
+   ],
+   "_r20": "r20b-3-013"
+  },
+  "ia-C11-5a": {
+   "q": "Choose the correct option: The question is ___.",
+   "_r20": "r20-2-043"
+  },
+  "ia-C12-3a": {
+   "q": "Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+   "why": "*Whoever* + verb = it does not matter who: *Whoever calls, don't answer.* *Who calls doesn't matter, so don't answer* (the question as the subject) is correct too.",
+   "why_lv": "*Whoever* + darbības vārds = nav svarīgi, kas: *Whoever calls, don't answer.* Arī *Who calls doesn't matter, so don't answer* ir pareizi (jautājums kā teikuma priekšmets).",
+   "answers": [
+    [
+     "Whoever calls, don't answer.",
+     "Whoever calls, do not answer.",
+     "Whoever it is, don't answer.",
+     "Whoever it is, do not answer.",
+     "Who calls doesn't matter, so don't answer.",
+     "Who calls does not matter, so do not answer.",
+     "Whoever may call, don't answer.",
+     "Whoever may call, do not answer.",
+     "Who calls doesn't matter; don't answer.",
+     "Who calls does not matter; do not answer."
+    ]
+   ],
+   "_r20": "r20b-1-015"
+  }
+ },
+ "practice": [
+  "ca-C11-3a",
+  "cs-B21-1a",
+  "cs-B21-4a",
+  "ct-B21-1a",
+  "ct-B21-4a",
+  "ct-B22-1a",
+  "ct-B22-3a",
+  "ct-B22-5a",
+  "rq-B21-1a",
+  "rq-B21-2a",
+  "rq-B21-4a",
+  "rq-B22-2a",
+  "rq-B22-3a",
+  "rq-B22-6a",
+  "rs-B21-1a",
+  "rs-B21-4a",
+  "var-rv-b22-order-01"
+ ]
+}

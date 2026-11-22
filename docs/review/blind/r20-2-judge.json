@@ -1,0 +1,563 @@
+[
+ {
+  "id": "r20-2-001",
+  "decision": "keep",
+  "why": "wish + past for now is on the B2.2 card; the task is already a learning task (role learn), so easy is fine. *I wish I would live* is the card's own listed mistake (*I wish I would have more time*), so it is believable."
+ },
+ {
+  "id": "r20-2-002",
+  "decision": "keep",
+  "why": "*wish* + *would* (annoyance) is a B2.2 point on the card and in the grammar map; every wrong option is wrong here."
+ },
+ {
+  "id": "r20-2-003",
+  "decision": "keep",
+  "why": "Only *hadn't sent* fits *yesterday* + *Now everyone knows*; wish + past perfect is on the B2.2 card. The 'each gap' remark is about the app's display, not the task."
+ },
+ {
+  "id": "r20-2-004",
+  "decision": "fix",
+  "why": "*If only I would have saved* is a real B2 mistake, but the right sentence *I wish I had saved more when I was young* is a near-copy of it (saved more), and *earned a bit more money* repeats *money*. Two right sentences replaced so the three are about different things.",
+  "fix": {
+   "wrong": [
+    "I wish I had chosen a different course at university.",
+    "If only I had a bit more free time now.",
+    "If only you had told me about it earlier."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-005",
+  "decision": "fix",
+  "why": "Gate long_frame: the speech frame is a setting in front of the instruction, but it is what rules out *If only we listened* (a present-habit reading). The frame goes and *last year ... now* in the sentence does its job; *had listen* (a form nobody chooses) is dropped.",
+  "fix": {
+   "q": "Which sentence is correct?",
+   "correct": "If only we had listened to the warning signs last year, we would not be in this position now.",
+   "wrong": [
+    "If only we would have listened to the warning signs last year, we would not be in this position now.",
+    "If only we listened to the warning signs last year, we would not be in this position now."
+   ],
+   "why": "*If only* + *had* + 3rd form for a regret about the past (*last year*), then *would* + base form for the result now. Not *would have listened*, and not *listened*, which is about now.",
+   "why_lv": "*If only* + *had* + 3. forma izsaka nožēlu par pagātni (*last year*), tad *would* + pamatforma rezultātam tagad. Nav pareizi *would have listened*, un arī *listened*, kas attiecas uz tagadni."
+  }
+ },
+ {
+  "id": "r20-2-006",
+  "decision": "fix",
+  "why": "The check demands *had*, so a correct past regret with *could have* (*I wish I could have gone*) fails. Widen the second check; naming *I wish / If only* is fine, the point is the form after it.",
+  "fix": {
+   "must": [
+    [
+     "\\b(i wish|if only)\\b",
+     "Use *I wish* or *If only.*"
+    ],
+    [
+     "\\b(had(n't| not)?|could have|couldn't have|could've)\\b",
+     "For a regret about the past use the past perfect (*had / hadn't*) or *could have*."
+    ]
+   ]
+  }
+ },
+ {
+  "id": "r20-2-007",
+  "decision": "practice_only",
+  "why": "*might* staying the same is a B1 reporting point (rep_backshift, B1.1 in the map) in a B2.1 frame, and *might been* is a form nobody writes; correct, but far too easy for a check at B2.1."
+ },
+ {
+  "id": "r20-2-008",
+  "decision": "keep",
+  "why": "Already a learning task; only *Because it is still true* answers the question (rep_stay, B2.1). *Because said is in the past* is true as a fact but explains the opposite, a believable misunderstanding."
+ },
+ {
+  "id": "r20-2-009",
+  "decision": "keep",
+  "why": "*Yesterday he signed it* is the changed situation the 11 November rule asks for to justify the step back, so it is not superfluous. *told he* is a mistake the card lists (*She told that*)."
+ },
+ {
+  "id": "r20-2-010",
+  "decision": "keep",
+  "why": "The check accepts *had to / must / should*, which covers the readers' answers; *warning* is ordinary English for a doctor's *must*."
+ },
+ {
+  "id": "r20-2-011",
+  "decision": "practice_only",
+  "why": "Basic *can → could* + *if* is rep_q_yn, a B1.2 point in the grammar map, in a B2.1 check; correct but far too easy for the level."
+ },
+ {
+  "id": "r20-2-012",
+  "decision": "practice_only",
+  "why": "*told me not to* is rep_orders, B1.2 in the map, at its simplest; correct but too easy for a B2.1 check."
+ },
+ {
+  "id": "r20-2-013",
+  "decision": "keep",
+  "why": "*him* is wrong: Lena asks for herself (a woman's name), so *her* is the only pronoun; the accepted list already has *to send her*, *if / whether I could send her*. Gap count is display, not the task."
+ },
+ {
+  "id": "r20-2-014",
+  "decision": "keep",
+  "why": "*will → would* and statement order in a wh-report; one correct option, every wrong option is a real mistake; fits B2.1."
+ },
+ {
+  "id": "r20-2-015",
+  "decision": "keep",
+  "why": "Open writing task; the check accepts both *to call* and *if / whether I could call*, as the readers ask."
+ },
+ {
+  "id": "r20-2-016",
+  "decision": "fix",
+  "why": "Question word + *to* is B2.2 in the map (iq_to), so the level stands; *what to doing* is not a mistake learners make and goes (two believable wrong options remain).",
+  "fix": {
+   "wrong": [
+    "He asked me what should he do.",
+    "He asked me what he does."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-017",
+  "decision": "practice_only",
+  "why": "*where she should park* is rep_q_wh (B1.2 in the map) at its simplest, too easy for a B2.2 check. Also drop *where does she should park*, a form nobody writes.",
+  "fix": {
+   "wrong": [
+    "She asked me where should she park.",
+    "She asked me where she should to park."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-018",
+  "decision": "practice_only",
+  "why": "Same B1.2 point (rep_q_wh) at its simplest in a B2.2 frame. Add the correct *were to* reports; *where we/they would meet* changes *should* into a prediction and *where I should meet* has the wrong person, so they stay rejected.",
+  "accept": [
+   [
+    "where we were to meet",
+    "where they were to meet"
+   ]
+  ]
+ },
+ {
+  "id": "r20-2-019",
+  "decision": "keep",
+  "why": "*whether* + present perfect passive → past perfect passive is a fair B2.2 report; *asked that* is a listed learner mistake (IND-YESNO)."
+ },
+ {
+  "id": "r20-2-020",
+  "decision": "practice_only",
+  "why": "A basic yes/no report (rep_q_yn, B1.2) in a B2.2 frame. Add *whether or not*; *is accurate* stays rejected under the taught rule of 11 November (step back after *asked*), and *had been accurate* changes the meaning.",
+  "accept": [
+   [
+    "whether or not the data was accurate",
+    "whether or not the data were accurate"
+   ]
+  ]
+ },
+ {
+  "id": "r20-2-021",
+  "decision": "fix",
+  "why": "The correct option is the rule card's own example (*He apologised for being late*), which a task may not repeat (21 November), and *for be late* is a form nobody writes. New sentence, same point.",
+  "fix": {
+   "correct": "The driver apologised for blocking the exit.",
+   "wrong": [
+    "The driver apologised to block the exit.",
+    "The driver apologised of blocking the exit.",
+    "The driver apologised blocking the exit."
+   ],
+   "why": "*apologise for* + -ing: *apologised for blocking*.",
+   "why_lv": "*apologise for* + *-ing* forma: *apologised for blocking*."
+  }
+ },
+ {
+  "id": "r20-2-022",
+  "decision": "keep",
+  "why": "A learning task; the four verbs are on the card and each fits only one sentence."
+ },
+ {
+  "id": "r20-2-023",
+  "decision": "keep",
+  "why": "*refuse to* is on the B2.2 card; *refused me to* matches the listed mistake type (*promised me to come*); one correct option."
+ },
+ {
+  "id": "r20-2-024",
+  "decision": "accept",
+  "why": "Add the perfect *-ing* with *about* (correct, same meaning). *for missing the meeting* changes what she did (forgot ≠ missed); *that she had forgotten* is outside the pattern the task and card teach (Murphy 62: *apologise for*) and stays out.",
+  "accept": [
+   [
+    "for having forgotten about the meeting",
+    "to me for having forgotten the meeting",
+    "to me for having forgotten about the meeting"
+   ]
+  ]
+ },
+ {
+  "id": "r20-2-025",
+  "decision": "fix",
+  "why": "*as an accusation* names the verb that every option already has and adds nothing; covered, the task still has one answer, so it goes.",
+  "fix": {
+   "q": "Which sentence reports this: 'You broke the printer!'"
+  }
+ },
+ {
+  "id": "r20-2-026",
+  "decision": "keep",
+  "why": "A learning task about meaning; the reversed meaning (A offer, B demand) is a believable confusion; one correct option."
+ },
+ {
+  "id": "r20-2-027",
+  "decision": "fix",
+  "why": "*promised to that* and *promised it not happening* are strings nobody writes. Kept the real mistake (*apologised the delay*) and one believable pattern mistake.",
+  "fix": {
+   "wrong": [
+    "The manager apologised the delay and promised that it would not happen again.",
+    "The manager apologised for the delay and promised it not to happen again."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-028",
+  "decision": "keep",
+  "why": "*Say what Leo did* is the 14 November exception (an open task where the learner chooses the reporting verb); the check accepts *denied, insisted, claimed, protested*."
+ },
+ {
+  "id": "r20-2-029",
+  "decision": "fix",
+  "why": "*advised to me take* is not a mistake learners make; replace it with the map's listed mistake *advised to* without a person.",
+  "fix": {
+   "wrong": [
+    "She suggested me to take the earlier train.",
+    "She insisted me to take the earlier train.",
+    "She advised to take the earlier train."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-030",
+  "decision": "keep",
+  "why": "A learning task; *refused* is on the B2.2 card and the only verb that fits."
+ },
+ {
+  "id": "r20-2-031",
+  "decision": "fix",
+  "why": "Both readers: *in formal English* is superfluous (covered, one option still fits); *complained to be terrible the service* is a random string. Both go.",
+  "fix": {
+   "q": "Which sentence reports the customer's words: 'The service was terrible.'",
+   "wrong": [
+    "The customer complained about the service had been terrible.",
+    "The customer complained me that the service was terrible."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-032",
+  "decision": "keep",
+  "why": "The 14 November exception for an open task that asks for the reporting verb; the check accepts *thanked* or *expressed*."
+ },
+ {
+  "id": "r20-2-033",
+  "decision": "keep",
+  "why": "A learning task; *indirect* is ordinary English in an option, not needed to solve it; one correct answer."
+ },
+ {
+  "id": "r20-2-034",
+  "decision": "keep",
+  "why": "Not a mistake task, so options that differ only in word order are the point; one correct option, fits B2.1."
+ },
+ {
+  "id": "r20-2-035",
+  "decision": "keep",
+  "why": "Open writing task; the checks accept every polite start and only check the word order after *when*."
+ },
+ {
+  "id": "r20-2-036",
+  "decision": "fix",
+  "why": "The correct option makes the card's own example (*I don't know what to do*), and *what to doing / what to I do* are strings nobody writes. New frame with the map's listed mistakes (*how should we*, *how* + base form).",
+  "fix": {
+   "q": "Which is correct? 'The instructions don't explain ___ the new printer.'",
+   "correct": "how to set up",
+   "wrong": [
+    "how should we set up",
+    "how set up"
+   ],
+   "why": "Question word + *to* + base verb: *how to set up*.",
+   "why_lv": "Jautājuma vārds + *to* + pamatforma: *how to set up*."
+  }
+ },
+ {
+  "id": "r20-2-037",
+  "decision": "keep",
+  "why": "A learning task of a B2.2 point (iq_to); one meaning fits."
+ },
+ {
+  "id": "r20-2-038",
+  "decision": "keep",
+  "why": "The task is to shorten the given sentence; *Could you* changes another word and *the way to* drops the *to* + verb the rewrite asks for, so neither is added. Naming *to* is allowed in a rewrite."
+ },
+ {
+  "id": "r20-2-039",
+  "decision": "fix",
+  "why": "*who does responsible* is a form nobody writes; two believable wrong options remain.",
+  "fix": {
+   "wrong": [
+    "It remains unclear who is the responsible for the delay.",
+    "It remains unclear who responsible is for the delay."
+   ]
+  }
+ },
+ {
+  "id": "r20-2-040",
+  "decision": "fix",
+  "why": "The model answer is the rule card's own example (*I have no idea how long the meeting will take*); a new model, the check stays.",
+  "fix": {
+   "model": "I have no idea where I left my keys."
+  }
+ },
+ {
+  "id": "r20-2-041",
+  "decision": "keep",
+  "why": "Only *Whether he will attend* works as a subject; question order with *whether* is the card's listed mistake; fits B2.2."
+ },
+ {
+  "id": "r20-2-042",
+  "decision": "accept",
+  "why": "*It remains unclear who made the decision* is correct and keeps the meaning (like the accepted *It's unclear*).",
+  "accept": [
+   [
+    "It remains unclear who made the decision."
+   ]
+  ]
+ },
+ {
+  "id": "r20-2-043",
+  "decision": "fix",
+  "why": "*You write a report:* is a setting in front of the instruction; covered, one option still fits.",
+  "fix": {
+   "q": "Choose the correct option: The question is ___."
+  }
+ },
+ {
+  "id": "r20-2-044",
+  "decision": "keep",
+  "why": "A learning task; one meaning fits, the others are believable misreadings of *whatever*."
+ },
+ {
+  "id": "r20-2-045",
+  "decision": "fix",
+  "why": "Both readers: unclear what to write, and *Whoever it is, don't answer* and *Who calls doesn't matter, so don't answer* (the question as the subject, on the card) are correct one-sentence answers that were rejected. Clearer instruction, all of them accepted.",
+  "fix": {
+   "q": "Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+   "answers": [
+    [
+     "Whoever calls, don't answer.",
+     "Whoever calls, do not answer.",
+     "Whoever it is, don't answer.",
+     "Whoever it is, do not answer.",
+     "Who calls doesn't matter, so don't answer.",
+     "Who calls does not matter, so do not answer."
+    ]
+   ],
+   "why": "*Whoever* + verb = it does not matter who: *Whoever calls, don't answer.* *Who calls doesn't matter, so don't answer* (the question as the subject) is correct too.",
+   "why_lv": "*Whoever* + darbības vārds = nav svarīgi, kas: *Whoever calls, don't answer.* Arī *Who calls doesn't matter, so don't answer* ir pareizi (jautājums kā teikuma priekšmets)."
+  }
+ },
+ {
+  "id": "r20-2-046",
+  "decision": "keep",
+  "why": "Open writing task; the check accepts every -ever word; *flexible rule* is clear enough with the model."
+ },
+ {
+  "id": "r20-2-047",
+  "decision": "fix",
+  "why": "The instruction is unnatural and gives the start and the end away (rule: a word order says only *Put the words in order.*). Without it the other natural orders (*if*-part second, *now* before *a doctor*) must be accepted.",
+  "fix": {
+   "q": "Put the words in order.",
+   "answers": [
+    [
+     "if I had studied medicine I would be a doctor now",
+     "if I had studied medicine I would now be a doctor",
+     "I would be a doctor now if I had studied medicine",
+     "I would now be a doctor if I had studied medicine"
+    ]
+   ],
+   "why": "*If I had studied* imagines a different past decision; *I would be a doctor now* is the result now. *now* can also stand before *a doctor*, and the *if*-part can come second.",
+   "why_lv": "*If I had studied* iztēlojas citādu lēmumu pagātnē; *I would be a doctor now* ir rezultāts tagad. *now* var stāvēt arī pirms *a doctor*, un *if* daļa var būt otrā."
+  }
+ },
+ {
+  "id": "r20-2-048",
+  "decision": "keep",
+  "why": "*Had I called you about the delay, I would have known* is illogical (both readers say so), so the only sensible order is the key's."
+ },
+ {
+  "id": "r20-2-049",
+  "decision": "practice_only",
+  "why": "Six cards with the start given leave nothing to decide at B2.2 (*the missing meeting* is nonsense); keep it for practice and give it the plain instruction.",
+  "fix": {
+   "q": "Put the words in order."
+  }
+ },
+ {
+  "id": "r20-2-050",
+  "decision": "keep",
+  "why": "One natural order; the subject clause in statement order is the B2.2 point."
+ },
+ {
+  "id": "r20-2-051",
+  "decision": "keep",
+  "why": "Only *Had ... left* gives the inverted past condition; *Did / leave* are believable wrong cards; fits B2.2."
+ },
+ {
+  "id": "r20-2-052",
+  "decision": "fix",
+  "why": "The sentence is the rule card's own example (*The ground was wet. It had been raining*), which a task may not repeat. New scene, same point and options.",
+  "fix": {
+   "q": "Choose the correct option: Her feet were sore. She ___ around the city all day.",
+   "correct": "had been walking",
+   "wrong": [
+    "has been walking",
+    "had been walk"
+   ],
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu."
+  }
+ },
+ {
+  "id": "r20-2-053",
+  "decision": "keep",
+  "why": "*came* rules out *have been standing*; *had been stand* is the card's listed mistake type (*had been work*); past perfect continuous is B2.1-B2.2 in the map. (r20-2-059, the same scene, gets a new one.)"
+ },
+ {
+  "id": "r20-2-054",
+  "decision": "fix",
+  "why": "Nearly the card's own example (*She was tired because she'd been working hard*), and the same scene as r20-2-056. New scene; *had been train* follows the card's listed mistake.",
+  "fix": {
+   "q": "Choose the correct option: Mark was covered in sweat when I saw him. He ___ at the gym.",
+   "correct": "had been training",
+   "wrong": [
+    "has been training",
+    "had been train"
+   ],
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu."
+  }
+ },
+ {
+  "id": "r20-2-055",
+  "decision": "fix",
+  "why": "The sentence is the card's own example and listed mistake (*We'd been playing tennis for half an hour when it started to rain*). New scene with the same kind of cards.",
+  "fix": {
+   "q": "I ___ the report for three hours when my laptop crashed.",
+   "bank": [
+    "had been writing",
+    "have been writing",
+    "had been written",
+    "am writing"
+   ],
+   "answers": [
+    [
+     "had been writing"
+    ]
+   ],
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*."
+  }
+ },
+ {
+  "id": "r20-2-056",
+  "decision": "fix",
+  "why": "Nearly the card's example (tired ... working hard all day) and readers miss the *'d* forms. New scene, *'d* forms listed, *had worked* still accepted with its note; past simple *worked* stays out (the point is going back from a past moment).",
+  "fix": {
+   "q": "Anna's hands were dirty when she came in. She ___ in the garden all afternoon. (work)",
+   "answers": [
+    [
+     "had been working",
+     "'d been working",
+     "had worked",
+     "'d worked"
+    ]
+   ],
+   "answer_notes": [
+    [
+     "had worked",
+     "Correct too: *had worked* looks at the work as finished before she came in. *Had been working* stresses how long it went on and explains her dirty hands.",
+     "Arī pareizi: *had worked* uzsver, ka darbs bija paveikts pirms viņa ienāca. *Had been working* uzsver, cik ilgi tas turpinājās, un izskaidro netīrās rokas."
+    ]
+   ],
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu."
+  }
+ },
+ {
+  "id": "r20-2-057",
+  "decision": "fix",
+  "why": "The answer is the card's own example (*By lunchtime she'd written ten emails*). New sentence; *'d* listed; *had been serving forty customers* is wrong with a number, as the card teaches.",
+  "fix": {
+   "q": "The shop was busy yesterday. By eleven o'clock Mark ___ forty customers. (serve)",
+   "answers": [
+    [
+     "had served",
+     "'d served"
+    ]
+   ],
+   "why": "How much or how many: *had done*. How long: *had been doing*. *Forty customers* is a number, so *had served*.",
+   "why_lv": "Cik daudz: *had done*. Cik ilgi: *had been doing*. *Forty customers* ir skaits, tāpēc *had served*."
+  }
+ },
+ {
+  "id": "r20-2-058",
+  "decision": "accept",
+  "why": "*He had run* is correct English for the cause of being out of breath (as *had worked* is accepted in the twin task); add it and the *'d* forms both readers listed.",
+  "accept": [
+   [
+    "had run",
+    "'d run",
+    "'d been running"
+   ]
+  ]
+ },
+ {
+  "id": "r20-2-059",
+  "decision": "fix",
+  "why": "The sentence is the card's own example (*At last the bus came. I'd been waiting for 20 minutes*), the same scene as r20-2-053, and both readers could read *have been waiting* as speech. New past frame where only *had been waiting* fits.",
+  "fix": {
+   "q": "When the doctor finally called my name, I ___ for over an hour.",
+   "bank": [
+    "had been waiting",
+    "have been waiting",
+    "had been waited",
+    "am waiting"
+   ],
+   "answers": [
+    [
+     "had been waiting"
+    ]
+   ],
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*."
+  }
+ },
+ {
+  "id": "r20-2-060",
+  "decision": "fix",
+  "why": "The sentence is the card's own example (*I hope the bus comes soon. I've been waiting for 20 minutes*). New scene for the same contrast, *'ve* forms listed, the simple form accepted with its note.",
+  "fix": {
+   "q": "I hope the meeting ends soon. We ___ for three hours. (talk)",
+   "answers": [
+    [
+     "have been talking",
+     "'ve been talking",
+     "have talked",
+     "'ve talked"
+    ]
+   ],
+   "answer_notes": [
+    [
+     "have talked",
+     "Correct too. *have been talking* stresses that the talking is still going on.",
+     "Arī pareizi. *have been talking* uzsver, ka saruna vēl turpinās."
+    ]
+   ],
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*."
+  }
+ }
+]

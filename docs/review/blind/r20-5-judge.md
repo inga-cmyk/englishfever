@@ -1,0 +1,56 @@
+# Blind check r20-5: judge's decisions
+
+52 flagged tasks (no gate findings for this chunk). accept 4, fix 23, keep 15, practice_only 10.
+
+- r20-5-001: **keep**. Reader only remarks that the order task is fine; all natural orders are accepted.
+- r20-5-002: **fix**. 'Imagine a different past and its result now' describes the structure; a plain situation with 'now' rules out the other options by itself.
+- r20-5-003: **accept**. Reader 1 only typed two words per gap; the content is the key's. 'd for had in gap 1 is correct and the checker does not add 'd.
+- r20-5-004: **practice_only**. Six cards, one possible order, apologise for + -ing: far too easy for B2.2 as evidence.
+- r20-5-005: **keep**. suggested to meet is the card's typical mistake and the three right sentences use different verbs; reporting-verb patterns are the B2.2 point of this card (EGP B2).
+- r20-5-006: **fix**. 'refused take' is a form nobody writes; replaced by the map's real mistake 'refused that he would'. The task reports meaning (No, I won't = refuse), a B2 reporting-verb point.
+- r20-5-007: **keep**. Every correct form (-ing, having + 3rd form, that-clause with and without that) is already accepted.
+- r20-5-008: **keep**. Readers find the only order and call it fine.
+- r20-5-010: **fix**. 'can to meet' and 'can meets' test the modal, not the point (statement order after whether); the wrong options are now all question-order mistakes from the card.
+- r20-5-011: **accept**. 'ought to take' and the formal 'are to take' are correct English in statement order.
+- r20-5-012: **practice_only**. Basic third-conditional form with three options and obvious wrong forms: a B1 point (map c3: B1), far too easy for B2.1 evidence.
+- r20-5-013: **fix**. 'had save' reads as a typo; the mistake B2 learners really make is would in the if-part (card mistake, rules 21 Nov example).
+- r20-5-014: **practice_only**. Basic third-conditional form, three options with obvious wrong forms: B1 point, far too easy for B2.1.
+- r20-5-015: **practice_only**. Third conditional rewrite with if and would named: a B1 point. phoned/rung are not added: a rewrite keeps the sentence's own verb.
+- r20-5-016: **practice_only**. Basic reported yes/no question with weak wrong forms (could fixed, could to fix): B1 point, far too easy for B2.1.
+- r20-5-017: **practice_only**. told me not to + base form is a B1 point (map rep_orders B1); far too easy for B2.1 evidence.
+- r20-5-018: **keep**. where did I buy is the card's main mistake, still made at B2; the three right sentences are about different things (whether + past perfect, if + could, how long + would).
+- r20-5-019: **fix**. Both reports are already accepted, but the key also accepts two unnatural fronted orders with a lower-case name ('If I could check the figures, omar asked me.'); they are removed.
+- r20-5-020: **fix**. Readers find the order fine, but the key accepts 'when the storm began for hours we had been hiking', which is not a natural order (rule 4 Nov); removed.
+- r20-5-021: **keep**. had been + -ing with a visible result (wet floor, all night) is the B2 point of this card; 'had been leak' is the card's own mistake. Reader 2 finds the level fine.
+- r20-5-022: **accept**. 'd answered is correct and the checker does not add 'd. 'answered' is rejected: the task was rewritten (4 Nov) so that by the time ... so she left early needs had + 3rd form.
+- r20-5-023: **fix**. Reader 1 is right that 'when she moved for years she had been learning French' is odd; it is not a natural order and is removed from the key.
+- r20-5-025: **keep**. Reader only calls the instruction fine; would/could/would be able to are all accepted.
+- r20-5-026: **keep**. Both readers pick the key (would after if). Option A is a correct mixed conditional (card: present quality, past result), so it is rightly one of the correct sentences.
+- r20-5-027: **keep**. Reader only remarks on meaning; it is the card's present-quality, past-result pattern.
+- r20-5-030: **fix**. The key is right, but the correct sentence 'Were she less shy...' uses inversion with Were, which the cond_mixed card does not teach (only Had); replaced by a card form.
+- r20-5-031: **keep**. Reader only notes the bare instruction; one option is correct.
+- r20-5-032: **keep**. must may stay or become had to, and to warm up is accepted; 'have to' is rejected by the taught rule (one step back after a past reporting verb, 11 Nov). Reader 2's answer is the key's answer with optional that.
+- r20-5-033: **practice_only**. told that without a person is the say/tell point (map: A2, app from B1.1); a B1 point in a B2.1 frame.
+- r20-5-034: **fix**. no would after as soon as is a good B2.1 point, but 'did landed' and 'would calling' are forms nobody writes; replaced by 'will land' and the card's told-without-a-person mistake.
+- r20-5-035: **fix**. 'mighted' is a form nobody writes; replaced by the card's mistake 'told' without a person.
+- r20-5-036: **fix**. 'how to starting' and 'how she should starts' are random forms; replaced by card mistakes (do-question order, asked to me). how to in a reported question stays a B2.2 point.
+- r20-5-037: **accept**. 'ought to' (= should) and the formal 'were to' are correct reports in statement order. 'had to / would have to' are not added: they turn advice into an obligation (do not accept forms that change the meaning).
+- r20-5-039: **keep**. 'asked have the invoices been sent' is the card's mistake type (She asked do I like coffee): learners drop if/whether and keep question order.
+- r20-5-040: **fix**. 'advised to me get' is an unlikely error; replaced by the map's real mistake 'advised to get' (no person).
+- r20-5-041: **keep**. Reader only notes that urge is stronger than should; the start is given and all forms are accepted.
+- r20-5-043: **fix**. The key is right, but 'complained about' is not on the rep_verbs card (rule 22 Nov); replaced by a tense mistake in the that-clause. 'complained me that' is on the grammar map's mistake list.
+- r20-5-044: **fix**. 'where to going', 'where go we', 'where to we go' are unlikely; replaced by the card's question-order mistake and the map's 'where go'.
+- r20-5-045: **fix**. 'using to' names the answer; without it, 'who she should ask' is also correct, so it is accepted and the task checks statement order or question word + to.
+- r20-5-047: **fix**. 'how we do will pay' is a string nobody writes and 'will to pay' tests another point; all wrong options are now question-order mistakes.
+- r20-5-048: **fix**. 'Wh…' is an unclear cue and lets through 'What you decide doesn't matter; ...'. A start that does not contain the answer (I'll support you) makes the -ever clause necessary; every correct ending is accepted.
+- r20-5-049: **fix**. Key is right, but 'whichever' is not on the ind_advanced card (whoever, whatever, wherever) and the mistake sentence copies the card example (Whoever finishes first can go home).
+- r20-5-051: **practice_only**. Basic second conditional (if + knew): far too easy for B2.1. 'were to know' and 'had known' are rejected: with a state verb and 'right now' they are not natural English.
+- r20-5-052: **practice_only**. Basic second conditional, was/were both accepted: far too easy for B2.1.
+- r20-5-053: **fix**. 'might exercise' is correct (card: could or might can replace would) and must be accepted; 'would work out' ignores the verb in brackets. Basic second conditional: practice only at B2.1.
+- r20-5-054: **practice_only**. Basic third conditional if-part: B1 point, far too easy for B2.1.
+- r20-5-055: **fix**. 'might have helped' is correct (card: could have / might have) and must be accepted. Basic third conditional: practice only at B2.1.
+- r20-5-056: **fix**. Without the words said, 'was going to send', 'was sending', 'would be sending' are also correct; the quote (allowed pattern, 14 Nov) makes would send the one answer. will to would is a B1 point: practice only.
+- r20-5-057: **fix**. Without the words said, 'lived' is a correct report of 'I lived in Riga for two years'. The quote makes had lived / had been living the answer (past perfect in reports: EGP B2); present perfect stays rejected by the taught rule (11 Nov).
+- r20-5-058: **keep**. Already practice only. 'am' is rejected by the taught rule (one step back after asked, 11 Nov); 'came' ignores the verb in brackets.
+- r20-5-059: **keep**. Already practice only. 'have studied / have been studying' are rejected by the taught rule (11 Nov); 'was studying' does not report 'How long have you been studying?'.
+- r20-5-060: **fix**. 'opened' is correct English for a past opening time, but a learner writing it is usually making the backshift the card warns against; a time word (rule 29 Oct) leaves only the habitual present.

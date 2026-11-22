@@ -1,0 +1,354 @@
+{
+ "r20d-001": {
+  "hash": "dd914408daaf24b0",
+  "gate_key": "rep_questions | B2.2 | text | Report this. Start with *They asked*: 'What time should we arrive?' | ",
+  "src": "twins-3.csv:15",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "They asked what time they should arrive.",
+     "They asked what time to arrive.",
+     "They asked what time we should arrive.",
+     "They asked me what time they should arrive.",
+     "They asked us what time we should arrive.",
+     "They asked me what time to arrive.",
+     "They asked us what time to arrive.",
+     "They asked what time they ought to arrive.",
+     "They asked what time they were to arrive.",
+     "They asked what time we were to arrive.",
+     "They asked what time we ought to arrive."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3513",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report this. Start with *They asked*: 'What time should we arrive?'",
+   "why": "Statement order: *what time they should arrive*, or the short *what time to arrive*.",
+   "why_lv": "Apgalvojuma secība: *what time they should arrive* vai īsāk *what time to arrive*.",
+   "answers": [
+    [
+     "They asked what time they should arrive.",
+     "They asked what time to arrive.",
+     "They asked what time we should arrive.",
+     "They asked me what time they should arrive.",
+     "They asked us what time we should arrive.",
+     "They asked me what time to arrive.",
+     "They asked us what time to arrive.",
+     "They asked what time they ought to arrive.",
+     "They asked what time they were to arrive.",
+     "They asked what time we were to arrive.",
+     "They asked what time we ought to arrive."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_wh",
+   "src": "twins-3.csv:15"
+  }
+ },
+ "r20d-002": {
+  "hash": "2a9a4fda0244813b",
+  "gate_key": "ind_advanced | B2.2 | text | Join the sentences: She didn't know. Who should she ask? | ",
+  "src": "twins-3.csv:23",
+  "point": "iq_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She didn't know who to ask.",
+     "She didn't know whom to ask.",
+     "She didn't know who she should ask.",
+     "She didn't know whom she should ask.",
+     "She didn't know who she ought to ask.",
+     "She didn't know whom she ought to ask.",
+     "She didn't know who she was to ask.",
+     "She didn't know whom she was to ask."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3521",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join the sentences: She didn't know. Who should she ask?",
+   "why": "A question inside a sentence: *who to ask* (question word + *to* + base form) or *who she should ask* (statement order).",
+   "why_lv": "Jautājums teikuma iekšā: *who to ask* (jautājamais vārds + *to* + pamatforma) vai *who she should ask* (apgalvojuma vārdu secība).",
+   "answers": [
+    [
+     "She didn't know who to ask.",
+     "She didn't know whom to ask.",
+     "She didn't know who she should ask.",
+     "She didn't know whom she should ask.",
+     "She didn't know who she ought to ask.",
+     "She didn't know whom she ought to ask.",
+     "She didn't know who she was to ask.",
+     "She didn't know whom she was to ask."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_to",
+   "src": "twins-3.csv:23"
+  }
+ },
+ "r20d-003": {
+  "hash": "525f71dd89dba4d9",
+  "gate_key": "ind_advanced | B2.2 | text | Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you. | ",
+  "src": "twins-3.csv:27",
+  "point": "whoever",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'll support you whatever you decide.",
+     "I will support you whatever you decide.",
+     "I'll support you no matter what you decide.",
+     "I will support you no matter what you decide.",
+     "I'll support you whichever way you decide.",
+     "I'll support you however you decide.",
+     "I'll support you regardless of what you decide.",
+     "I'll support you whatever decision you make.",
+     "I will support you whatever decision you make.",
+     "I'll support you whatever it is you decide.",
+     "I will support you whatever it is you decide."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3525",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+   "why": "*whatever you decide* = it does not matter what you decide (*no matter what* means the same); no *will* after it.",
+   "why_lv": "*whatever you decide* nozīmē “lai ko tu izlemtu” (*no matter what* nozīmē to pašu); aiz tā nelieto *will*.",
+   "answers": [
+    [
+     "I'll support you whatever you decide.",
+     "I will support you whatever you decide.",
+     "I'll support you no matter what you decide.",
+     "I will support you no matter what you decide.",
+     "I'll support you whichever way you decide.",
+     "I'll support you however you decide.",
+     "I'll support you regardless of what you decide.",
+     "I'll support you whatever decision you make.",
+     "I will support you whatever decision you make.",
+     "I'll support you whatever it is you decide.",
+     "I will support you whatever it is you decide."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "twins-3.csv:27"
+  }
+ },
+ "r20d-004": {
+  "hash": "73f01e5a73901a3d",
+  "gate_key": "ind_advanced | B2.2 | gap | I'm not sure what time the meeting ___ tomorrow. (start) | ",
+  "src": "typical-b2c1-1.csv:21",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "starts",
+     "will start",
+     "is going to start",
+     "is starting",
+     "is to start",
+     "is due to start"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3552",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm not sure what time the meeting ___ tomorrow. (start)",
+   "why": "Inside a sentence the question has statement order, without *does*: *what time the meeting starts / will start tomorrow*.",
+   "why_lv": "Teikuma iekšienē jautājumam ir *apgalvojuma* secība, bez *does*: *what time the meeting starts / will start tomorrow*.",
+   "answers": [
+    [
+     "starts",
+     "will start",
+     "is going to start",
+     "is starting",
+     "is to start",
+     "is due to start"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_wh",
+   "src": "typical-b2c1-1.csv:21"
+  }
+ },
+ "r20d-005": {
+  "hash": "8e2df8e7cd161aae",
+  "gate_key": "ind_advanced | B2.2 | gap | We couldn't decide where ___ on holiday. (go) | ",
+  "src": "typical-b2c1-1.csv:34",
+  "point": "iq_to",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to go",
+     "we should go",
+     "we could go",
+     "we would go",
+     "we'd go",
+     "we were going to go",
+     "we ought to go",
+     "we were going",
+     "we wanted to go",
+     "we were to go"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3565",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We couldn't decide where ___ on holiday. (go)",
+   "why": "Not knowing what to do: question word + *to* + base form.",
+   "why_lv": "*Nezinot*, ko darīt: jautājamais vārds + to + pamatforma. *Tulkojot burtiski* \"kur *mums braukt*\", iznāk jautājuma secība.",
+   "answers": [
+    [
+     "to go",
+     "we should go",
+     "we could go",
+     "we would go",
+     "we'd go",
+     "we were going to go",
+     "we ought to go",
+     "we were going",
+     "we wanted to go",
+     "we were to go"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_to",
+   "src": "typical-b2c1-1.csv:34"
+  }
+ },
+ "r20d-006": {
+  "hash": "1ee97b5b20e45799",
+  "gate_key": "ind_advanced | B2.2 | gap | Our holiday plans depend on ___ my boss gives me the week off or not. | ",
+  "src": "typical-b2c1-1.csv:40",
+  "point": "iq_whether",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3571",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our holiday plans depend on ___ my boss gives me the week off or not.",
+   "why": "After a preposition use *whether*, not *if*: *depend on whether ... or not*.",
+   "why_lv": "Aiz prievārda lieto *whether*, nevis *if*: *depend on whether ... or not* (vai ... vai ne).",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_whether",
+   "src": "typical-b2c1-1.csv:40"
+  }
+ },
+ "r20d-007": {
+  "hash": "f847ef9e33a2e3fa",
+  "gate_key": "unreal_time | B2.2 | text | Write one sentence that starts with *It's high time*: You should really start looking for a new job. | ",
+  "src": "unreal-time-1.csv:5",
+  "point": "its_time_past",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It's high time you started looking for a new job.",
+     "It's high time you started to look for a new job.",
+     "It's high time you looked for a new job.",
+     "It is high time you started looking for a new job.",
+     "It is high time you started to look for a new job.",
+     "It is high time you looked for a new job.",
+     "It's high time you began looking for a new job.",
+     "It is high time you began looking for a new job.",
+     "It's high time that you started looking for a new job.",
+     "It is high time that you started looking for a new job.",
+     "It's high time you were looking for a new job.",
+     "It is high time you were looking for a new job.",
+     "It's high time you started job-hunting.",
+     "It is high time you started job-hunting.",
+     "It's high time for you to start looking for a new job.",
+     "It is high time for you to start looking for a new job.",
+     "It's high time you started looking for a job.",
+     "It is high time you started looking for a job.",
+     "It's high time you started your search for a new job.",
+     "It is high time you started your search for a new job."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3577",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu *notikt*, un ir jau vēlu.",
+   "answers": [
+    [
+     "It's high time you started looking for a new job.",
+     "It's high time you started to look for a new job.",
+     "It's high time you looked for a new job.",
+     "It is high time you started looking for a new job.",
+     "It is high time you started to look for a new job.",
+     "It is high time you looked for a new job.",
+     "It's high time you began looking for a new job.",
+     "It is high time you began looking for a new job.",
+     "It's high time that you started looking for a new job.",
+     "It is high time that you started looking for a new job.",
+     "It's high time you were looking for a new job.",
+     "It is high time you were looking for a new job.",
+     "It's high time you started job-hunting.",
+     "It is high time you started job-hunting.",
+     "It's high time for you to start looking for a new job.",
+     "It is high time for you to start looking for a new job.",
+     "It's high time you started looking for a job.",
+     "It is high time you started looking for a job.",
+     "It's high time you started your search for a new job.",
+     "It is high time you started your search for a new job."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:5"
+  }
+ }
+}

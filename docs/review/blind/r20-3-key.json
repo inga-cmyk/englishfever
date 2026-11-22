@@ -1,0 +1,2166 @@
+{
+ "r20-3-001": {
+  "hash": "1598218351088e1d",
+  "gate_key": "narrative_b2 | B2.2 | gap | It ___ when we went out. The sun was shining. (not / rain) | ",
+  "src": "compare-past-1.csv:56",
+  "point": "pastpc_vs",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wasn't raining",
+     "was not raining",
+     "hadn't been raining",
+     "had not been raining"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2203",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It ___ when we went out. The sun was shining. (not / rain)",
+   "why": "At that moment: *was -ing*. Before that moment: *had been -ing*.",
+   "why_lv": "Tajā brīdī: *was -ing*. Pirms tā brīža: *had been -ing*.",
+   "answers": [
+    [
+     "wasn't raining",
+     "was not raining",
+     "hadn't been raining",
+     "had not been raining"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc_vs",
+   "src": "compare-past-1.csv:56"
+  }
+ },
+ "r20-3-002": {
+  "hash": "e90eb8b014d4d161",
+  "gate_key": "narrative_b2 | B2.1 | gap | When I first met her, she ___ in Madrid very long, but she already knew the city well. (not / live) | ",
+  "src": "compare-past-1.csv:58",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't been living",
+     "had not been living",
+     "hadn't lived",
+     "had not lived"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2205",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I first met her, she ___ in Madrid very long, but she already knew the city well. (not / live)",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "answers": [
+    [
+     "hadn't been living",
+     "had not been living",
+     "hadn't lived",
+     "had not lived"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:58"
+  }
+ },
+ "r20-3-003": {
+  "hash": "35e0ec16a215e75c",
+  "gate_key": "narrative_b2 | B2.1 | order | Put the words in order. | we had been driving for hours when the car broke down",
+  "src": "compare-past-1.csv:60",
+  "point": "pastpc",
+  "key": {
+   "kind": "order",
+   "sentence": "we had been driving for hours when the car broke down",
+   "also": [
+    "when the car broke down we had been driving for hours"
+   ]
+  },
+  "item": {
+   "id": "c-2207",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "sentence": "we had been driving for hours when the car broke down",
+   "answers": [
+    [
+     "we had been driving for hours when the car broke down",
+     "when the car broke down we had been driving for hours"
+    ]
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:60"
+  }
+ },
+ "r20-3-004": {
+  "hash": "25457747f00c29d1",
+  "gate_key": "narrative_b2 | B2.2 | order | Put all the words in order. More than one answer is possible. | she had been working there for ten years when she left",
+  "src": "compare-past-1.csv:61",
+  "point": "pastpc",
+  "key": {
+   "kind": "order",
+   "sentence": "she had been working there for ten years when she left",
+   "also": [
+    "when she left she had been working there for ten years"
+   ]
+  },
+  "item": {
+   "id": "c-2208",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "The work continued for ten years before she left: *had been working*. The when-clause can come first or last.",
+   "why_lv": "Darbs turpinājās desmit gadus, pirms viņa aizgāja: *had been working*. Palīgteikums ar *when* var būt sākumā vai beigās.",
+   "sentence": "she had been working there for ten years when she left",
+   "answers": [
+    [
+     "she had been working there for ten years when she left",
+     "when she left she had been working there for ten years"
+    ]
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:61"
+  }
+ },
+ "r20-3-005": {
+  "hash": "ccedd681e37ebbb1",
+  "gate_key": "conj_clauses | B2.1 | mcq | Which sentence is correct? | We went out despite the fact that it was raining.",
+  "src": "conjunctions-1.csv:69",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "mcq",
+   "correct": "We went out despite the fact that it was raining.",
+   "wrong": [
+    "We went out despite of the fact that it was raining.",
+    "We went out in spite the fact that it was raining."
+   ]
+  },
+  "item": {
+   "id": "c-2327",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*despite* without *of*; *in spite of* with *of*.",
+   "why_lv": "*despite* bez *of; in spite of* ar *of*.",
+   "correct": "We went out despite the fact that it was raining.",
+   "wrong": [
+    "We went out despite of the fact that it was raining.",
+    "We went out in spite the fact that it was raining."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b1",
+   "src": "conjunctions-1.csv:69"
+  }
+ },
+ "r20-3-006": {
+  "hash": "0428b8ab4695e850",
+  "gate_key": "conj_clauses | B2.1 | mcq | Choose the correct option: They walked quietly so as ___ the baby. | not to wake",
+  "src": "conjunctions-1.csv:70",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "not to wake",
+   "wrong": [
+    "to not waking",
+    "not waking"
+   ]
+  },
+  "item": {
+   "id": "c-2328",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: They walked quietly so as ___ the baby.",
+   "why": "The negative: *in order not to*, *so as not to* + verb.",
+   "why_lv": "Noliegums: *in order not to, so as not to* + darbības vārds.",
+   "correct": "not to wake",
+   "wrong": [
+    "to not waking",
+    "not waking"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:70"
+  }
+ },
+ "r20-3-007": {
+  "hash": "4cb6dd3109a2af6e",
+  "gate_key": "conj_clauses | B2.1 | gap | Complete with one word: He wore a hat so ___ not to get sunburnt. | ",
+  "src": "conjunctions-1.csv:76",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "as"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2334",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: He wore a hat so ___ not to get sunburnt.",
+   "why": "The negative: *in order not to*, *so as not to* + verb.",
+   "why_lv": "Noliegums: *in order not to, so as not to* + darbības vārds.",
+   "answers": [
+    [
+     "as"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:76"
+  }
+ },
+ "r20-3-008": {
+  "hash": "9d5d8dfbd47eac2f",
+  "gate_key": "conj_clauses | B2.1 | text | Correct the mistake: Despite of the rain, the match went ahead. | ",
+  "src": "conjunctions-1.csv:81",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Despite the rain, the match went ahead.",
+     "In spite of the rain, the match went ahead."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2339",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Despite of the rain, the match went ahead.",
+   "why": "*despite* without *of*; *in spite of* with *of*.",
+   "why_lv": "*despite* bez *of; in spite of* ar *of*.",
+   "answers": [
+    [
+     "Despite the rain, the match went ahead.",
+     "In spite of the rain, the match went ahead."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "contrast_b1",
+   "src": "conjunctions-1.csv:81"
+  }
+ },
+ "r20-3-009": {
+  "hash": "5384b84a5ffb4ffd",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: ___ my brother loves football, I can't stand it. | Whereas",
+  "src": "conjunctions-1.csv:87",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whereas",
+   "wrong": [
+    "Therefore",
+    "Owing to"
+   ]
+  },
+  "item": {
+   "id": "c-2345",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ my brother loves football, I can't stand it.",
+   "why": "*while / whereas* put two different facts side by side.",
+   "why_lv": "*while / whereas* nostāda *blakus* divus atšķirīgus *faktus*.",
+   "correct": "Whereas",
+   "wrong": [
+    "Therefore",
+    "Owing to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:87"
+  }
+ },
+ "r20-3-010": {
+  "hash": "b36523f0e230da30",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: Take a jumper ___ it gets cold later. | in case",
+  "src": "conjunctions-1.csv:88",
+  "point": "in_case",
+  "key": {
+   "kind": "mcq",
+   "correct": "in case",
+   "wrong": [
+    "in order to",
+    "so as to"
+   ]
+  },
+  "item": {
+   "id": "c-2346",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Take a jumper ___ it gets cold later.",
+   "why": "*in case* + present: we do it before, just to be safe.",
+   "why_lv": "*in case* + tagadne: to dara iepriekš, drošības pēc. *Tulkojot burtiski* \"gadījumam, ja līs\", iznāk *will*.",
+   "correct": "in case",
+   "wrong": [
+    "in order to",
+    "so as to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "in_case",
+   "src": "conjunctions-1.csv:88"
+  }
+ },
+ "r20-3-011": {
+  "hash": "131d057f1f6ef1dc",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: This app is used ___ tracking your spending. | for",
+  "src": "conjunctions-1.csv:90",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "for",
+   "wrong": [
+    "to",
+    "so that"
+   ]
+  },
+  "item": {
+   "id": "c-2348",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: This app is used ___ tracking your spending.",
+   "why": "*for* + -ing says what a thing is used for.",
+   "why_lv": "*for + -ing pasaka, kam* lieto *lietu*. *Tulkojot burtiski* \"griešanai\", iznāk *for cut*.",
+   "correct": "for",
+   "wrong": [
+    "to",
+    "so that"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:90"
+  }
+ },
+ "r20-3-012": {
+  "hash": "32af67d5f8a781bb",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: The project was over budget. The board has ___ decided to cancel it. | therefore",
+  "src": "conjunctions-1.csv:91",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "therefore",
+   "wrong": [
+    "as a result of",
+    "in case"
+   ]
+  },
+  "item": {
+   "id": "c-2349",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The project was over budget. The board has ___ decided to cancel it.",
+   "why": "*therefore / consequently* can go before the main verb: *We have therefore decided…*",
+   "why_lv": "*therefore / consequently* var stāvēt pirms galvenā darbības vārda: *We have therefore decided*…",
+   "correct": "therefore",
+   "wrong": [
+    "as a result of",
+    "in case"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:91"
+  }
+ },
+ "r20-3-013": {
+  "hash": "86b5a46c1bae23e7",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: She was exhausted, ___ she kept working. | yet",
+  "src": "conjunctions-1.csv:92",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "yet",
+   "wrong": [
+    "therefore",
+    "due to"
+   ]
+  },
+  "item": {
+   "id": "c-2350",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: She was exhausted, ___ she kept working.",
+   "why": "*yet* = but; after a comma or *and*.",
+   "why_lv": "*yet* = bet; pēc *komata* vai *and*.",
+   "correct": "yet",
+   "wrong": [
+    "therefore",
+    "due to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:92"
+  }
+ },
+ "r20-3-014": {
+  "hash": "ff5f488f1e5dbaed",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: We need a bigger budget in order ___ the team to finish on time. | for",
+  "src": "conjunctions-1.csv:93",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "for",
+   "wrong": [
+    "that",
+    "of"
+   ]
+  },
+  "item": {
+   "id": "c-2351",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: We need a bigger budget in order ___ the team to finish on time.",
+   "why": "*in order for* + person or thing + *to* + verb.",
+   "why_lv": "*in order for* + persona vai *lieta + to* + darbības vārds.",
+   "correct": "for",
+   "wrong": [
+    "that",
+    "of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:93"
+  }
+ },
+ "r20-3-015": {
+  "hash": "15ca9af55c540983",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: The plane was delayed ___ account of a technical problem. | on",
+  "src": "conjunctions-1.csv:94",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "on",
+   "wrong": [
+    "in",
+    "by"
+   ]
+  },
+  "item": {
+   "id": "c-2352",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The plane was delayed ___ account of a technical problem.",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "correct": "on",
+   "wrong": [
+    "in",
+    "by"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:94"
+  }
+ },
+ "r20-3-016": {
+  "hash": "9acc12c8df4877ef",
+  "gate_key": "conj_b2 | B2.1 | mcq | Which sentence is NOT correct? | The shop closed early owing the strike.",
+  "src": "conjunctions-1.csv:95",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "The shop closed early owing the strike.",
+   "wrong": [
+    "She stayed at home because she felt ill.",
+    "Rent is high here. For this reason, we moved.",
+    "Take a map in case your phone dies."
+   ]
+  },
+  "item": {
+   "id": "c-2353",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "correct": "The shop closed early owing the strike.",
+   "wrong": [
+    "She stayed at home because she felt ill.",
+    "Rent is high here. For this reason, we moved.",
+    "Take a map in case your phone dies."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:95"
+  }
+ },
+ "r20-3-017": {
+  "hash": "6326adca66171f43",
+  "gate_key": "conj_b2 | B2.2 | mcq | Which sentence is correct? | He studied hard; nevertheless, he failed the test.",
+  "src": "conjunctions-1.csv:96",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "He studied hard; nevertheless, he failed the test.",
+   "wrong": [
+    "He studied hard nevertheless, he failed the test.",
+    "He studied hard; nevertheless he, failed the test."
+   ]
+  },
+  "item": {
+   "id": "c-2354",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*however / nevertheless* after (.) or (;), with a comma after them.",
+   "why_lv": "*however / nevertheless* pēc (.) vai (;), aiz tiem *komats*.",
+   "correct": "He studied hard; nevertheless, he failed the test.",
+   "wrong": [
+    "He studied hard nevertheless, he failed the test.",
+    "He studied hard; nevertheless he, failed the test."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:96"
+  }
+ },
+ "r20-3-018": {
+  "hash": "f514af0a9662897c",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: Write the code down ___ you forget it. | in case",
+  "src": "conjunctions-1.csv:97",
+  "point": "in_case",
+  "key": {
+   "kind": "mcq",
+   "correct": "in case",
+   "wrong": [
+    "so as to",
+    "owing to"
+   ]
+  },
+  "item": {
+   "id": "c-2355",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Write the code down ___ you forget it.",
+   "why": "*in case* + present: we do it before, just to be safe.",
+   "why_lv": "*in case* + tagadne: to dara iepriekš, drošības pēc. *Tulkojot burtiski* \"gadījumam, ja līs\", iznāk *will*.",
+   "correct": "in case",
+   "wrong": [
+    "so as to",
+    "owing to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "in_case",
+   "src": "conjunctions-1.csv:97"
+  }
+ },
+ "r20-3-019": {
+  "hash": "7334ce5672785040",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: The company failed the safety check and, ___, the factory was closed. | consequently",
+  "src": "conjunctions-1.csv:98",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "consequently",
+   "wrong": [
+    "in case",
+    "whereas"
+   ]
+  },
+  "item": {
+   "id": "c-2356",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The company failed the safety check and, ___, the factory was closed.",
+   "why": "Result at the start of a sentence: *As a result, / For this reason, / Therefore,* + comma.",
+   "why_lv": "Rezultāts teikuma sākumā: *As a result, / For this reason, / Therefore, + komats.*",
+   "correct": "consequently",
+   "wrong": [
+    "in case",
+    "whereas"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:98"
+  }
+ },
+ "r20-3-020": {
+  "hash": "24f60103d34ce3b8",
+  "gate_key": "conj_b2 | B2.1 | gap | Complete with one word: The museum was closed. For this ___, we went to the park. | ",
+  "src": "conjunctions-1.csv:99",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "reason"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2357",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: The museum was closed. For this ___, we went to the park.",
+   "why": "Result at the start of a sentence: *As a result, / For this reason, / Therefore,* + comma.",
+   "why_lv": "Rezultāts teikuma sākumā: *As a result, / For this reason, / Therefore, + komats.*",
+   "answers": [
+    [
+     "reason"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:99"
+  }
+ },
+ "r20-3-021": {
+  "hash": "d5b51d137236cf44",
+  "gate_key": "conj_b2 | B2.1 | gap | Complete with one word: The meeting was cancelled due ___ the strike. | ",
+  "src": "conjunctions-1.csv:100",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2358",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: The meeting was cancelled due ___ the strike.",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "answers": [
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:100"
+  }
+ },
+ "r20-3-022": {
+  "hash": "a3ed185af2c6faad",
+  "gate_key": "conj_b2 | B2.2 | gap | Complete with one word: The concert was cancelled on account ___ low ticket sales. | ",
+  "src": "conjunctions-1.csv:101",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "of"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2359",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: The concert was cancelled on account ___ low ticket sales.",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "answers": [
+    [
+     "of"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:101"
+  }
+ },
+ "r20-3-023": {
+  "hash": "bffad2a71605a22c",
+  "gate_key": "conj_b2 | B2.1 | gap | Complete with one word: She spoke quietly so as ___ to wake the baby. | ",
+  "src": "conjunctions-1.csv:102",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2360",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: She spoke quietly so as ___ to wake the baby.",
+   "why": "The negative: *in order not to*, *so as not to* + verb.",
+   "why_lv": "Noliegums: *in order not to, so as not to* + darbības vārds.",
+   "answers": [
+    [
+     "not"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:102"
+  }
+ },
+ "r20-3-024": {
+  "hash": "ce2ee4b8d9d30275",
+  "gate_key": "conj_b2 | B2.1 | gap | Complete with one word: I'll take some cash in ___ the card machine isn't working. | ",
+  "src": "conjunctions-1.csv:104",
+  "point": "in_case",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "case"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2362",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Complete with one word: I'll take some cash in ___ the card machine isn't working.",
+   "why": "*in case* + present: we do it before, just to be safe.",
+   "why_lv": "*in case* + tagadne: to dara iepriekš, drošības pēc. *Tulkojot burtiski* \"gadījumam, ja līs\", iznāk *will*.",
+   "answers": [
+    [
+     "case"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "in_case",
+   "src": "conjunctions-1.csv:104"
+  }
+ },
+ "r20-3-025": {
+  "hash": "f89a38603ab6d276",
+  "gate_key": "conj_b2 | B2.1 | text | Correct the mistake: Take an umbrella in case it will rain. | ",
+  "src": "conjunctions-1.csv:105",
+  "point": "in_case",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Take an umbrella in case it rains."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2363",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Take an umbrella in case it will rain.",
+   "why": "*in case* + present: we do it before, just to be safe.",
+   "why_lv": "*in case* + tagadne: to dara iepriekš, drošības pēc. *Tulkojot burtiski* \"gadījumam, ja līs\", iznāk *will*.",
+   "answers": [
+    [
+     "Take an umbrella in case it rains."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "in_case",
+   "src": "conjunctions-1.csv:105"
+  }
+ },
+ "r20-3-026": {
+  "hash": "40890ca6d39f534a",
+  "gate_key": "conj_b2 | B2.1 | text | Correct the mistake: This tool is for cut metal. | ",
+  "src": "conjunctions-1.csv:106",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "This tool is for cutting metal.",
+     "This tool is used for cutting metal."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2364",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: This tool is for cut metal.",
+   "why": "*for* + -ing says what a thing is used for.",
+   "why_lv": "*for + -ing pasaka, kam* lieto *lietu*. *Tulkojot burtiski* \"griešanai\", iznāk *for cut*.",
+   "answers": [
+    [
+     "This tool is for cutting metal.",
+     "This tool is used for cutting metal."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:106"
+  }
+ },
+ "r20-3-027": {
+  "hash": "bcaee295354fd509",
+  "gate_key": "conj_b2 | B2.2 | text | Rewrite with *owing to*: The flight was late because the weather was bad. | ",
+  "src": "conjunctions-1.csv:107",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The flight was late owing to the bad weather.",
+     "The flight was late owing to bad weather.",
+     "Owing to the bad weather, the flight was late.",
+     "Owing to bad weather, the flight was late."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2365",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *owing to*: The flight was late because the weather was bad.",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "answers": [
+    [
+     "The flight was late owing to the bad weather.",
+     "The flight was late owing to bad weather.",
+     "Owing to the bad weather, the flight was late.",
+     "Owing to bad weather, the flight was late."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:107"
+  }
+ },
+ "r20-3-028": {
+  "hash": "3a628d253702f38b",
+  "gate_key": "conj_b2 | B2.1 | order | Put the words in order. | she kept running even though her legs hurt",
+  "src": "conjunctions-1.csv:110",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "order",
+   "sentence": "she kept running even though her legs hurt",
+   "also": [
+    "even though her legs hurt she kept running"
+   ]
+  },
+  "item": {
+   "id": "c-2368",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*despite / in spite of* + noun or -ing; *although / even though* + subject + verb.",
+   "why_lv": "*despite / in spite of* + lietvārds vai *-ing; although / even though* + teik. priekšmets + darbības vārds. *Tulkojot burtiski \"neskatoties* uz to, ka\", iznāk *despite* + teikums.",
+   "sentence": "she kept running even though her legs hurt",
+   "answers": [
+    [
+     "she kept running even though her legs hurt",
+     "even though her legs hurt she kept running"
+    ]
+   ],
+   "role": "check",
+   "point": "contrast_b1",
+   "src": "conjunctions-1.csv:110"
+  }
+ },
+ "r20-3-029": {
+  "hash": "9e530050f5ac7df9",
+  "gate_key": "conj_b2 | B2.2 | order | Put the words in order. | we need more staff in order for the shop to open on sundays",
+  "src": "conjunctions-1.csv:111",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "order",
+   "sentence": "we need more staff in order for the shop to open on sundays",
+   "also": [
+    "in order for the shop to open on sundays we need more staff",
+    "on sundays we need more staff in order for the shop to open"
+   ]
+  },
+  "item": {
+   "id": "c-2369",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*in order for* + person or thing + *to* + verb.",
+   "why_lv": "*in order for* + persona vai *lieta + to* + darbības vārds.",
+   "sentence": "we need more staff in order for the shop to open on sundays",
+   "answers": [
+    [
+     "we need more staff in order for the shop to open on sundays",
+     "in order for the shop to open on sundays we need more staff",
+     "on sundays we need more staff in order for the shop to open"
+    ]
+   ],
+   "role": "check",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:111"
+  }
+ },
+ "r20-3-030": {
+  "hash": "8b29b4486687fb24",
+  "gate_key": "conj_b2 | B2.1 | order | Put the words in order. | the train was cancelled and as a result we missed the meeting",
+  "src": "conjunctions-1.csv:112",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "order",
+   "sentence": "the train was cancelled and as a result we missed the meeting",
+   "also": [
+    "the train was cancelled and we missed the meeting as a result"
+   ]
+  },
+  "item": {
+   "id": "c-2370",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Result at the start of a sentence: *As a result, / For this reason, / Therefore,* + comma.",
+   "why_lv": "Rezultāts teikuma sākumā: *As a result, / For this reason, / Therefore, + komats.*",
+   "sentence": "the train was cancelled and as a result we missed the meeting",
+   "answers": [
+    [
+     "the train was cancelled and as a result we missed the meeting",
+     "the train was cancelled and we missed the meeting as a result"
+    ]
+   ],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:112"
+  }
+ },
+ "r20-3-031": {
+  "hash": "07c643609007542b",
+  "gate_key": "conj_b2 | B2.1 | match | Match each beginning with its ending. | Pack a raincoat = in case it rains. ; The roads were icy. = As a result, there were many accidents. ; Owing to the strike, = there were no trains. ; This brush is = for cleaning bottles.",
+  "src": "conjunctions-1.csv:113",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "Pack a raincoat",
+     "in case it rains."
+    ],
+    [
+     "The roads were icy.",
+     "As a result, there were many accidents."
+    ],
+    [
+     "Owing to the strike,",
+     "there were no trains."
+    ],
+    [
+     "This brush is",
+     "for cleaning bottles."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2371",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "match",
+   "q": "Match each beginning with its ending.",
+   "why": "Contrast: *nevertheless, yet, whereas*. Purpose: *in order for, for + -ing, in case*. Reason: *owing to, on account of*. Result: *as a result, therefore*.",
+   "why_lv": "*Pretstats*: *nevertheless, yet, whereas*. Nolūks: *in order for, for + -ing, in case*. Iemesls: *owing to, on account of*. Rezultāts: *as a result, therefore*.",
+   "pairs": [
+    [
+     "Pack a raincoat",
+     "in case it rains."
+    ],
+    [
+     "The roads were icy.",
+     "As a result, there were many accidents."
+    ],
+    [
+     "Owing to the strike,",
+     "there were no trains."
+    ],
+    [
+     "This brush is",
+     "for cleaning bottles."
+    ]
+   ],
+   "role": "learn",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:113"
+  }
+ },
+ "r20-3-032": {
+  "hash": "998d2ff4059de81f",
+  "gate_key": "cond_mixed | B2.2 | gap | If I weren't so impatient, I ___ ___ sold my flat so cheaply last spring. | ",
+  "src": "learn-drag-3.csv:2",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wouldn't"
+    ],
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3006",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If I weren't so impatient, I ___ ___ sold my flat so cheaply last spring.",
+   "why": "A quality now, a result in the past: *if* + past (*weren't*), *would have* + 3rd form.",
+   "why_lv": "Rakstura īpašība tagad un sekas pagātnē: *if* + Past Simple (*weren't*), *would have* + 3. forma.",
+   "answers": [
+    [
+     "wouldn't"
+    ],
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "wouldn't",
+    "have",
+    "won't",
+    "had"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_mixed2",
+   "src": "learn-drag-3.csv:2"
+  }
+ },
+ "r20-3-033": {
+  "hash": "d88a2fae7d66a143",
+  "gate_key": "cond_mixed | B2.2 | gap | If she ___ ___ German at school, she would be able to understand her new colleagues now. | ",
+  "src": "learn-drag-3.csv:3",
+  "point": "c_mixed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had"
+    ],
+    [
+     "learned"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3007",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If she ___ ___ German at school, she would be able to understand her new colleagues now.",
+   "why": "Imagine a different past (*had learned*) with a result now (*would understand / could understand / would be able to understand*).",
+   "why_lv": "Iztēlojamies citādu pagātni (*had learned*) un tās sekas tagad (*would understand / could understand / would be able to understand*).",
+   "answers": [
+    [
+     "had"
+    ],
+    [
+     "learned"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had",
+    "learned",
+    "has",
+    "would"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_mixed",
+   "src": "learn-drag-3.csv:3"
+  }
+ },
+ "r20-3-034": {
+  "hash": "d942edf4e4354327",
+  "gate_key": "cond_mixed | B2.2 | order | Put the words in order. | if she were more patient she wouldn't have shouted at him",
+  "src": "learn-drag-3.csv:4",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "order",
+   "sentence": "if she were more patient she wouldn't have shouted at him",
+   "also": [
+    "she wouldn't have shouted at him if she were more patient"
+   ]
+  },
+  "item": {
+   "id": "c-3008",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "No *would* after *if*: *If she were more patient*. A quality now, a result in the past.",
+   "why_lv": "Aiz *if* nelieto *would*: *If she were more patient.* Rakstura īpašība tagad, sekas pagātnē.",
+   "sentence": "if she were more patient she wouldn't have shouted at him",
+   "answers": [
+    [
+     "if she were more patient she wouldn't have shouted at him",
+     "she wouldn't have shouted at him if she were more patient"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_mixed2",
+   "src": "learn-drag-3.csv:4"
+  }
+ },
+ "r20-3-035": {
+  "hash": "33dfbcd8ec220d35",
+  "gate_key": "cond_mixed | B2.2 | gap | If he ___ more confident, he ___ asked for a pay rise. | ",
+  "src": "learn-drag-3.csv:5",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "were"
+    ],
+    [
+     "would have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3009",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If he ___ more confident, he ___ asked for a pay rise.",
+   "why": "A quality now (*were more confident*), a result in the past (*would have asked*).",
+   "why_lv": "Rakstura īpašība tagad (*were more confident*), sekas pagātnē (*would have asked*).",
+   "answers": [
+    [
+     "were"
+    ],
+    [
+     "would have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "were",
+    "would have",
+    "would be",
+    "will have"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_mixed2",
+   "src": "learn-drag-3.csv:5"
+  }
+ },
+ "r20-3-036": {
+  "hash": "b5b24d22ab4ceaff",
+  "gate_key": "cond_mixed | B2.2 | order | Put the words in order. | had we booked earlier we would be on the beach now",
+  "src": "learn-drag-3.csv:6",
+  "point": "c_inv",
+  "key": {
+   "kind": "order",
+   "sentence": "had we booked earlier we would be on the beach now",
+   "also": [
+    "we would be on the beach now had we booked earlier"
+   ]
+  },
+  "item": {
+   "id": "c-3010",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Had* + subject + 3rd form = *If* + subject + *had* + 3rd form; the result is about now. In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "*Had* + teikuma priekšmets + 3. forma = *If* + teikuma priekšmets + *had* + 3. forma; sekas ir par tagadni. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "had we booked earlier we would be on the beach now",
+   "answers": [
+    [
+     "had we booked earlier we would be on the beach now",
+     "we would be on the beach now had we booked earlier"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_inv",
+   "src": "learn-drag-3.csv:6"
+  }
+ },
+ "r20-3-037": {
+  "hash": "7f746c17ff4ba094",
+  "gate_key": "cond_mixed | B2.2 | gap | ___ I ___ the contract more carefully, I wouldn't be paying these fees now. | ",
+  "src": "learn-drag-3.csv:7",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Had"
+    ],
+    [
+     "read"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3011",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ I ___ the contract more carefully, I wouldn't be paying these fees now.",
+   "why": "*Had* + subject + 3rd form = *If* + subject + *had* + 3rd form; the result is about now.",
+   "why_lv": "*Had* + teikuma priekšmets + 3. forma = *If* + teikuma priekšmets + *had* + 3. forma; sekas ir par tagadni.",
+   "answers": [
+    [
+     "Had"
+    ],
+    [
+     "read"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Had",
+    "read",
+    "Did",
+    "have"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_inv",
+   "src": "learn-drag-3.csv:7"
+  }
+ },
+ "r20-3-038": {
+  "hash": "47cfe254a90d5853",
+  "gate_key": "cond_mixed | B2.2 | order | Put the words in order. | had she not missed the train she would be here now",
+  "src": "learn-drag-3.csv:8",
+  "point": "c_inv",
+  "key": {
+   "kind": "order",
+   "sentence": "had she not missed the train she would be here now",
+   "also": [
+    "she would be here now had she not missed the train"
+   ]
+  },
+  "item": {
+   "id": "c-3012",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In the negative, *not* comes after the subject: *Had she not missed the train*. In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Noliegumā *not* liek aiz teikuma priekšmeta: *Had she not missed the train.* Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "had she not missed the train she would be here now",
+   "answers": [
+    [
+     "had she not missed the train she would be here now",
+     "she would be here now had she not missed the train"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_inv",
+   "src": "learn-drag-3.csv:8"
+  }
+ },
+ "r20-3-039": {
+  "hash": "2fa2572d9ac144dd",
+  "gate_key": "cond_mixed | B2.2 | gap | Had the software ___ ___ earlier, we would not be fixing these errors now. | ",
+  "src": "learn-drag-3.csv:9",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "been"
+    ],
+    [
+     "tested"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3013",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Had the software ___ ___ earlier, we would not be fixing these errors now.",
+   "why": "Imagine earlier testing: *had been tested* (passive). The result now: *would not be fixing*.",
+   "why_lv": "Iztēlojamies agrāku programmas pārbaudi: *had been tested* (ciešamā kārta). Sekas tagad: *would not be fixing*.",
+   "answers": [
+    [
+     "been"
+    ],
+    [
+     "tested"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "been",
+    "tested",
+    "be",
+    "testing"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_inv",
+   "src": "learn-drag-3.csv:9"
+  }
+ },
+ "r20-3-040": {
+  "hash": "ae853f4183f77fae",
+  "gate_key": "rep_statements | B2.1 | order | Put the words in order. | the coach told us to warm up before every match",
+  "src": "learn-drag-3.csv:10",
+  "point": "rep_orders",
+  "key": {
+   "kind": "order",
+   "sentence": "the coach told us to warm up before every match",
+   "also": []
+  },
+  "item": {
+   "id": "c-3014",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Report the obligation with *had to* or *must*, or the instruction with *told us to warm up*.",
+   "why_lv": "Pienākumu atstāsta ar *had to* vai *must*, norādījumu arī ar *told us to warm up*.",
+   "sentence": "the coach told us to warm up before every match",
+   "answers": [
+    [
+     "the coach told us to warm up before every match"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_orders",
+   "src": "learn-drag-3.csv:10"
+  }
+ },
+ "r20-3-041": {
+  "hash": "63c83525014a87cc",
+  "gate_key": "rep_statements | B2.1 | gap | My sister said she ___ call me as soon as she ___. | ",
+  "src": "learn-drag-3.csv:12",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would"
+    ],
+    [
+     "landed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3016",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My sister said she ___ call me as soon as she ___.",
+   "why": "*will* becomes *would*; after *as soon as* no *would*: *as soon as she landed*.",
+   "why_lv": "*will* kļūst par *would*; aiz *as soon as* nelieto *would*: *as soon as she landed*.",
+   "answers": [
+    [
+     "would"
+    ],
+    [
+     "landed"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "would",
+    "landed",
+    "will",
+    "would land"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_backshift",
+   "src": "learn-drag-3.csv:12"
+  }
+ },
+ "r20-3-042": {
+  "hash": "1c48ce3a17c3b87c",
+  "gate_key": "rep_statements | B2.1 | order | Put the words in order. | the agent said I might need a visa",
+  "src": "learn-drag-3.csv:13",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "order",
+   "sentence": "the agent said I might need a visa",
+   "also": []
+  },
+  "item": {
+   "id": "c-3017",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*might* does not change, and the base form follows it. A listener after *say* takes *to*: *said to me*, not *said me*.",
+   "why_lv": "*might* nemainās, aiz tā lieto pamatformu. Adresātu aiz *say* pievieno ar *to*: *said to me*, nevis *said me*.",
+   "sentence": "the agent said I might need a visa",
+   "answers": [
+    [
+     "the agent said I might need a visa"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_backshift",
+   "src": "learn-drag-3.csv:13"
+  }
+ },
+ "r20-3-043": {
+  "hash": "0ab72a37c4b1b40a",
+  "gate_key": "rep_questions | B2.2 | order | Put the words in order. | she asked me how to start",
+  "src": "learn-drag-3.csv:14",
+  "point": "iq_to",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked me how to start",
+   "also": []
+  },
+  "item": {
+   "id": "c-3018",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a reported question the word order is like a statement: *how she should start* or *how to start*.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā: *how she should start* vai *how to start*.",
+   "sentence": "she asked me how to start",
+   "answers": [
+    [
+     "she asked me how to start"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_to",
+   "src": "learn-drag-3.csv:14"
+  }
+ },
+ "r20-3-044": {
+  "hash": "4e1a17c0dae3e0de",
+  "gate_key": "rep_questions | B2.2 | order | Put the words in order. | they asked what time they should arrive",
+  "src": "learn-drag-3.csv:15",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "order",
+   "sentence": "they asked what time they should arrive",
+   "also": []
+  },
+  "item": {
+   "id": "c-3019",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Statement order: *what time they should arrive*, or the short *what time to arrive*.",
+   "why_lv": "Apgalvojuma secība: *what time they should arrive* vai īsāk *what time to arrive*.",
+   "sentence": "they asked what time they should arrive",
+   "answers": [
+    [
+     "they asked what time they should arrive"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_q_wh",
+   "src": "learn-drag-3.csv:15"
+  }
+ },
+ "r20-3-045": {
+  "hash": "0223216736b19277",
+  "gate_key": "rep_questions | B2.2 | gap | He asked whether or not ___ ___ coming. | ",
+  "src": "learn-drag-3.csv:16",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "I"
+    ],
+    [
+     "was"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3020",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He asked whether or not ___ ___ coming.",
+   "why": "After *whether (or not)*: subject + verb: *whether or not I was coming*.",
+   "why_lv": "Aiz *whether* (*or not*): teikuma priekšmets + darbības vārds: *whether or not I was coming*.",
+   "answers": [
+    [
+     "I"
+    ],
+    [
+     "was"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "I",
+    "was",
+    "did",
+    "am"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_q_yn",
+   "src": "learn-drag-3.csv:16"
+  }
+ },
+ "r20-3-046": {
+  "hash": "b044f1730c0a86e2",
+  "gate_key": "rep_questions | B2.2 | gap | Mr Ozols asked whether the invoices ___ ___ sent. | ",
+  "src": "learn-drag-3.csv:17",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had"
+    ],
+    [
+     "been"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3021",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Mr Ozols asked whether the invoices ___ ___ sent.",
+   "why": "A yes/no question: *whether* (or *if*) + statement order; here *had been sent*.",
+   "why_lv": "Jā / nē jautājumu ievada ar *whether* (vai *if*) un apgalvojuma vārdu secību; šeit *had been sent*.",
+   "answers": [
+    [
+     "had"
+    ],
+    [
+     "been"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had",
+    "been",
+    "did",
+    "is"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_q_yn",
+   "src": "learn-drag-3.csv:17"
+  }
+ },
+ "r20-3-047": {
+  "hash": "e927b9f532d12954",
+  "gate_key": "rep_verbs | B2.2 | gap | She advised me ___ ___ a second opinion before the operation. | ",
+  "src": "learn-drag-3.csv:18",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ],
+    [
+     "get"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3022",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She advised me ___ ___ a second opinion before the operation.",
+   "why": "*advise* + person + *to* + verb; *suggest* never takes a person + *to*.",
+   "why_lv": "*advise* + persona + to + darbības vārds; aiz *suggest* nekad nav persona + to.",
+   "answers": [
+    [
+     "to"
+    ],
+    [
+     "get"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "to",
+    "get",
+    "getting",
+    "for"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rv_obj_to",
+   "src": "learn-drag-3.csv:18"
+  }
+ },
+ "r20-3-048": {
+  "hash": "57f831e9d2b16f5b",
+  "gate_key": "rep_verbs | B2.2 | gap | My colleague urged me ___ have the figures ___ before submitting the report. | ",
+  "src": "learn-drag-3.csv:19",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ],
+    [
+     "checked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3023",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My colleague urged me ___ have the figures ___ before submitting the report.",
+   "why": "*urge* + person + *to* + verb: *urged me to have the figures checked* (= arrange for someone to check them).",
+   "why_lv": "*urge* + persona + to + darbības vārds: *urged me to have the figures checked* (= panākt, lai skaitļus pārbauda).",
+   "answers": [
+    [
+     "to"
+    ],
+    [
+     "checked"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "to",
+    "checked",
+    "for",
+    "checking"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rv_obj_to",
+   "src": "learn-drag-3.csv:19"
+  }
+ },
+ "r20-3-049": {
+  "hash": "2de75a9d289cb016",
+  "gate_key": "rep_verbs | B2.2 | order | Put the words in order. | she threatened to call the police",
+  "src": "learn-drag-3.csv:20",
+  "point": "rv_to",
+  "key": {
+   "kind": "order",
+   "sentence": "she threatened to call the police",
+   "also": []
+  },
+  "item": {
+   "id": "c-3024",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*threaten* + *to* + verb: *She threatened to call the police*.",
+   "why_lv": "*threaten + to* + darbības vārds: *She threatened to call the police.*",
+   "sentence": "she threatened to call the police",
+   "answers": [
+    [
+     "she threatened to call the police"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rv_to",
+   "src": "learn-drag-3.csv:20"
+  }
+ },
+ "r20-3-050": {
+  "hash": "7160d7c34b12023e",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | we weren't sure where to go",
+  "src": "learn-drag-3.csv:22",
+  "point": "iq_to",
+  "key": {
+   "kind": "order",
+   "sentence": "we weren't sure where to go",
+   "also": []
+  },
+  "item": {
+   "id": "c-3026",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Question word + *to* + base form: *where to go* = where we should go.",
+   "why_lv": "Jautājamais vārds + to + pamatforma: *where to go* nozīmē, kur mums vajadzētu doties.",
+   "sentence": "we weren't sure where to go",
+   "answers": [
+    [
+     "we weren't sure where to go"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_to",
+   "src": "learn-drag-3.csv:22"
+  }
+ },
+ "r20-3-051": {
+  "hash": "88da2dd5e5094aa3",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | she didn't know who to ask",
+  "src": "learn-drag-3.csv:23",
+  "point": "iq_to",
+  "key": {
+   "kind": "order",
+   "sentence": "she didn't know who to ask",
+   "also": []
+  },
+  "item": {
+   "id": "c-3027",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Question word + *to* + base form: *who to ask* = who she should ask; formal *whom to ask*.",
+   "why_lv": "Jautājamais vārds + to + pamatforma: *who to ask* nozīmē, kam viņai vajadzētu jautāt; formāli arī *whom to ask*.",
+   "sentence": "she didn't know who to ask",
+   "answers": [
+    [
+     "she didn't know who to ask"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_to",
+   "src": "learn-drag-3.csv:23"
+  }
+ },
+ "r20-3-052": {
+  "hash": "62c812801030d56e",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | we can't decide whether to book the hotel",
+  "src": "learn-drag-3.csv:24",
+  "point": "iq_whether",
+  "key": {
+   "kind": "order",
+   "sentence": "we can't decide whether to book the hotel",
+   "also": []
+  },
+  "item": {
+   "id": "c-3028",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*whether* + *to* + base form: *whether to book the hotel*.",
+   "why_lv": "*whether + to* + pamatforma: *whether to book the hotel*.",
+   "sentence": "we can't decide whether to book the hotel",
+   "answers": [
+    [
+     "we can't decide whether to book the hotel"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_whether",
+   "src": "learn-drag-3.csv:24"
+  }
+ },
+ "r20-3-053": {
+  "hash": "ae5e2903b9e69526",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | it remains unclear how we will pay for the repairs",
+  "src": "learn-drag-3.csv:25",
+  "point": "iq_subject",
+  "key": {
+   "kind": "order",
+   "sentence": "it remains unclear how we will pay for the repairs",
+   "also": []
+  },
+  "item": {
+   "id": "c-3029",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Statement order in the clause: *how we will pay*, not *how will we pay*.",
+   "why_lv": "Palīgteikumā apgalvojuma secība: *how we will pay*, nevis *how will we pay*.",
+   "sentence": "it remains unclear how we will pay for the repairs",
+   "answers": [
+    [
+     "it remains unclear how we will pay for the repairs"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_subject",
+   "src": "learn-drag-3.csv:25"
+  }
+ },
+ "r20-3-054": {
+  "hash": "dcbf56c748dbcdd1",
+  "gate_key": "ind_advanced | B2.2 | gap | ___ arrives last has to wash the dishes. | ",
+  "src": "learn-drag-3.csv:26",
+  "point": "whoever",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Whoever"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3030",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ arrives last has to wash the dishes.",
+   "why": "*Whoever arrives last* = the person who arrives last; *whoever* is the subject of *arrives*.",
+   "why_lv": "*Whoever arrives last* nozīmē “tas, kurš ierodas pēdējais”; *whoever* ir palīgteikuma teikuma priekšmets, tāpēc neder *whomever*.",
+   "answers": [
+    [
+     "Whoever"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Whoever",
+    "Whomever",
+    "Whatever"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "whoever",
+   "src": "learn-drag-3.csv:26"
+  }
+ },
+ "r20-3-055": {
+  "hash": "e978ad71143a721e",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | whatever you decide I'll support you",
+  "src": "learn-drag-3.csv:27",
+  "point": "whoever",
+  "key": {
+   "kind": "order",
+   "sentence": "whatever you decide I'll support you",
+   "also": [
+    "I'll support you whatever you decide"
+   ]
+  },
+  "item": {
+   "id": "c-3031",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Whatever you decide* = it does not matter what you decide; a comma after it.",
+   "why_lv": "*Whatever you decide* nozīmē “lai ko tu izlemtu”; aiz tā raksta komatu.",
+   "sentence": "whatever you decide I'll support you",
+   "answers": [
+    [
+     "whatever you decide I'll support you",
+     "I'll support you whatever you decide"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "whoever",
+   "src": "learn-drag-3.csv:27"
+  }
+ },
+ "r20-3-056": {
+  "hash": "b446322f84e1ad43",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | whoever finishes first can go home",
+  "src": "learn-drag-3.csv:28",
+  "point": "whoever",
+  "key": {
+   "kind": "order",
+   "sentence": "whoever finishes first can go home",
+   "also": []
+  },
+  "item": {
+   "id": "c-3032",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "The subject of *finishes* is *whoever*, not *whomever*.",
+   "why_lv": "Darbības vārda *finishes* teikuma priekšmets ir *whoever*, nevis *whomever*.",
+   "sentence": "whoever finishes first can go home",
+   "answers": [
+    [
+     "whoever finishes first can go home"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "whoever",
+   "src": "learn-drag-3.csv:28"
+  }
+ },
+ "r20-3-057": {
+  "hash": "f1406b210deba2df",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | why the system failed remains to be explained",
+  "src": "learn-drag-3.csv:29",
+  "point": "iq_whether",
+  "key": {
+   "kind": "order",
+   "sentence": "why the system failed remains to be explained",
+   "also": []
+  },
+  "item": {
+   "id": "c-3033",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A question clause as the subject: statement order, no extra *it*.",
+   "why_lv": "Viss palīgteikums *Why the system failed* ir teikuma priekšmets: apgalvojuma vārdu secība, papildu *it* nav vajadzīgs.",
+   "sentence": "why the system failed remains to be explained",
+   "answers": [
+    [
+     "why the system failed remains to be explained"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_whether",
+   "src": "learn-drag-3.csv:29"
+  }
+ },
+ "r20-3-058": {
+  "hash": "d7224a4b0213a6ec",
+  "gate_key": "cond_second | B2.1 | order | Put the words in order. | if I were you I'd think twice about that offer",
+  "src": "learn-drag-4.csv:12",
+  "point": "c2_were",
+  "key": {
+   "kind": "order",
+   "sentence": "if I were you I'd think twice about that offer",
+   "also": [
+    "I'd think twice about that offer if I were you"
+   ]
+  },
+  "item": {
+   "id": "c-3049",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Advice: *If I were you, I'd…*",
+   "why_lv": "Padoms: *If I were you, I'd*…",
+   "sentence": "if I were you I'd think twice about that offer",
+   "answers": [
+    [
+     "if I were you I'd think twice about that offer",
+     "I'd think twice about that offer if I were you"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c2_were",
+   "src": "learn-drag-4.csv:12"
+  }
+ },
+ "r20-3-059": {
+  "hash": "5e9ece4a3bb4bb2a",
+  "gate_key": "cond_second | B2.1 | gap | If the company ___ more flexible hours, people ___ happier. | ",
+  "src": "learn-drag-4.csv:13",
+  "point": "c2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "offered"
+    ],
+    [
+     "would be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3050",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If the company ___ more flexible hours, people ___ happier.",
+   "why": "An imagined present: *if* + past, *would* + base form.",
+   "why_lv": "Iedomāta tagadne: *if* + pagātne, *would* + pamatforma.",
+   "answers": [
+    [
+     "offered"
+    ],
+    [
+     "would be"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "offered",
+    "would be",
+    "would offer",
+    "will be"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c2",
+   "src": "learn-drag-4.csv:13"
+  }
+ },
+ "r20-3-060": {
+  "hash": "be51a14ba88d5f6d",
+  "gate_key": "cond_second | B2.1 | order | Put the words in order. | if I knew the answer I would tell you",
+  "src": "learn-drag-4.csv:14",
+  "point": "c2",
+  "key": {
+   "kind": "order",
+   "sentence": "if I knew the answer I would tell you",
+   "also": [
+    "I would tell you if I knew the answer"
+   ]
+  },
+  "item": {
+   "id": "c-3051",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An imagined present: *if* + past, *would* + base form.",
+   "why_lv": "Iedomāta tagadne: *if* + pagātne, *would* + pamatforma.",
+   "sentence": "if I knew the answer I would tell you",
+   "answers": [
+    [
+     "if I knew the answer I would tell you",
+     "I would tell you if I knew the answer"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c2",
+   "src": "learn-drag-4.csv:14"
+  }
+ }
+}

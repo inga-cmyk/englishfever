@@ -1,0 +1,42 @@
+# r20b-2 judge summary
+
+- r20b-2-002: **keep**. 'could have adjust' (have + base verb) was put in on purpose in round r20 as a real learner mistake; the key is right.
+- r20b-2-003: **keep**. 'If I'd have known' is the standard B2 mistake listed for this point; the explanation already says it occurs informally but is not the standard form. Both readers chose the key.
+- r20b-2-004: **keep**. Option A mixes a second-conditional if-part with 'would have been ... now', a believable confusion of the two patterns; it is clearly wrong and the key is right.
+- r20b-2-005: **fix**. Both readers found the options abstract ('A quality now caused a result in the past') and one read 'Both parts are about the past' as fitting. The options are now plain paraphrases; the wrong ones are believable misreadings (both past, would have = did, future).
+- r20b-2-006: **keep**. Reader only confirms the mistake (would have after if only) is believable.
+- r20b-2-008: **accept**. 'ought to' means the same as 'should' here and is correct with both pronouns. 'where we would meet' is rejected: would asks about a plan or prediction, not what is best, so it changes the question. The task is already practice only.
+- r20b-2-011: **keep**. Reader marks it fine.
+- r20b-2-012: **keep**. Reader confirms no wrong option fits ('how should we set up' keeps question order).
+- r20b-2-013: **keep**. As decided in round r20: the card teaches 'after a preposition use whether, not if'; informal 'depends on if' is not the taught standard form, like backshift (11 November).
+- r20b-2-015: **keep**. Not a duplicate: 041 is its single twin with a different sentence and different right sentences (one twin per source is allowed, 4 November). 'Whomever' as a subject is a real B2.2 mistake.
+- r20b-2-016: **keep**. 'had been walk' (missing -ing) is a learner mistake the rules allow as a wrong option (rule 4); 'has been walking' does not fit the past.
+- r20b-2-017: **keep**. 'was working' is rejected as in round r20 (task about 'forty minutes'): an activity lasting up to a past moment needs the past perfect (Murphy 15-16); 'had worked' is already accepted.
+- r20b-2-019: **accept**. 'when she left there she had been working for ten years' (and its other clause order) uses all cards and is correct, natural English. 'working for ten years there' stays rejected as an unnatural order.
+- r20b-2-020: **keep**. 'owing' without 'to' is the card's own mistake (*cancelled owing the fog*), and 'on account' without 'of' is the same mistake; they test the point (the full phrase + noun).
+- r20b-2-022: **accept**. Emphatic 'does crash' is correct English and fixes the mistake. 'were to crash' is rejected: not standard after 'in case', which takes the present or should.
+- r20b-2-023: **keep**. All bank words are on the conj_b2 card; reason words vs a result word is the point. One reader's 'easy' note is not a defect, and the level was decided earlier.
+- r20b-2-024: **keep**. Gap 1 takes only 'whether' (whether to); in gap 2 'whether we're late' without 'or not' is not correct as a condition, so only 'if'. Readers agree with the key.
+- r20b-2-025: **keep**. As decided in round r20: with 'already' only 'had she not missed' is natural (the negative would need 'yet'). Already practice only; inversion without if is the point of the card.
+- r20b-2-026: **keep**. 'I might need a visa, the agent said' reads as a direct quote without quotation marks (the speaker would be the agent), not the reported order the task practises; the people swap is already accepted. Level: already practice only.
+- r20b-2-027: **keep**. Already practice only, and all four natural orders are accepted; the level flag was decided earlier.
+- r20b-2-028: **keep**. The readers' 'we would have known ... if you had called' leaves one 'we' card unused, as decided in round r20; the sensible orders using all cards are accepted.
+- r20b-2-029: **keep**. Readers confirm the instruction is fine; 'will you mind ... would take' is wrong.
+- r20b-2-032: **keep**. 'More people would buy it were the price lower' does not start with Were, as decided in round r20.
+- r20b-2-035: **keep**. A twin of 014 with a different sentence; one twin per source is allowed (4 November). The wrong options are the card's question-order mistakes.
+- r20b-2-036: **keep**. The natural clause orders are already accepted.
+- r20b-2-037: **keep**. 'Hadn't she missed' is the classic mistake with negative inversion (Murphy: 'Had I not known', not 'Hadn't I known'); it is what the card teaches. Option C is a correct mixed conditional, which is the task's design.
+- r20b-2-038: **keep**. 'asked to me' is the card's mistake (ask takes the person without to), chosen in round r20.
+- r20b-2-039: **keep**. 'had be' (had + base verb) is a tense mistake in the that-clause chosen in round r20, like 'could have adjust'; the key is right.
+- r20b-2-040: **keep**. Reader confirms the wrong options are believable.
+- r20b-2-041: **keep**. 'Invite whoever you like' is correct everyday English, so it is rightly a right sentence; 015 is its one allowed twin with a different sentence.
+- r20b-2-042: **keep**. As decided in round r20: the quote gives 'will', and the taught rule (11 November) accepts only the step back 'would send'; 'was going to send' reports 'I'm going to'. Already practice only.
+- r20b-2-043: **keep**. 'had waited' is already accepted.
+- r20b-2-044: **accept**. 'happen to have' and emphatic 'do have' keep the present after in case and are correct. Rejected: 'had' (past after a future main clause is wrong here) and 'are having' (it makes the problems happen now, while leaving a number is for later).
+- r20b-2-045: **accept**. 'our visiting' (formal) and 'going to visit' keep suggest + -ing and are correct English.
+- r20b-2-047: **keep**. 'could live' and 'were living' are already accepted.
+- r20b-2-048: **keep**. As decided in round r20: 'should do' and 'were to do' are not standard after 'It's high time', which takes the past.
+- r20b-2-049: **accept**. 'we ought to go' (= should) and 'we were going' (a plan in the past) are correct English after 'decide where'.
+- r20b-2-050: **keep**. The preposition is the point (card mistake 'accused him for'), as decided in round r20.
+- r20b-2-052: **accept**. 'started looking for a job' keeps the form and the meaning. Rejected: 'you start' (present is not standard after it's high time) and 'to start' without 'you' (drops the person, as decided in round r20).
+- r20b-2-053: **keep**. 'wouldn't bring' is not standard after 'I'd rather you', as decided in round r20.

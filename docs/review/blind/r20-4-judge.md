@@ -1,0 +1,54 @@
+# r20-4 judge
+
+- r20-4-001: **remove**: Cards 'can to' / 'would to' are forms nobody writes, and every real one-word alternative (would, can, will) is used in real polite requests, so no clean bank exists; the cond_second point is covered by other tasks.
+- r20-4-002: **keep**: Both clause orders are already accepted; the readers' answer is the key sentence.
+- r20-4-003: **keep**: practice only already (learning drag task); 'has' and 'was' make real forms (has studied, was studied) that do not fit.
+- r20-4-004: **keep**: Both clause orders are already accepted.
+- r20-4-005: **accept**: Swapping the people ('we' / 'the team') gives a correct, sensible sentence, so by the swap rule both clause orders of it are accepted.
+- r20-4-006: **keep**: practice only already (learning drag task); 'could have adjusted' is the one bank answer ('would' is not offered); level flag does not apply to a practice-only task.
+- r20-4-007: **keep**: Both clause orders are already accepted.
+- r20-4-008: **keep**: practice only already (learning drag task); level flag does not apply.
+- r20-4-009: **keep**: practice only already (learning drag task); 'won't' and 'hadn't' are real forms that do not fit.
+- r20-4-010: **accept**: 'earlier' can also go with 'known' (I would've left if I'd known about the traffic earlier), which is natural and sensible; the known/left swap (known about the traffic if I'd left earlier) is illogical and rejected.
+- r20-4-011: **keep**: practice only already (learning drag task); level flag does not apply.
+- r20-4-012: **accept**: 'If we had called you, we would have known about the problem' uses all cards and makes sense, so it is accepted in both orders; reader 2's 'if you had called we would...' leaves a card unused and is rejected.
+- r20-4-013: **keep**: practice only already (learning drag task); both orders accepted; despite + noun is on the B2.1 conj_clauses card.
+- r20-4-014: **keep**: practice only already (learning drag task); 'in despite of' is not accepted (correct: it is not standard); the same sentence as 031 is the intended learning twin.
+- r20-4-015: **fix**: The answer is the rule card's own corrected example ('Despite the rain, the match went ahead'), which the rules forbid; both orders were already accepted. New sentence, same point.
+- r20-4-016: **keep**: Both clause orders are already accepted; the readers' answer is the key sentence.
+- r20-4-017: **fix**: The instruction is fine, but the key also accepts 'you would mind telling me how long the repair will take', which is not sensible English; ask for a question and accept only the question.
+- r20-4-019: **keep**: practice only already (learning drag task); 'did you go' and 'did go' are mistakes learners make with indirect questions.
+- r20-4-020: **keep**: practice only already (learning drag task); level flag does not apply.
+- r20-4-021: **keep**: practice only already (learning drag task); level flag does not apply.
+- r20-4-022: **accept**: The instruction allows several answers and the people can be swapped: 'she asked her if I could help' and 'I asked if she could help her' (her = another person) are correct and use all cards.
+- r20-4-023: **keep**: practice only already (learning drag task); level flag does not apply.
+- r20-4-024: **accept**: Swap rule: 'Lena asked her to send me the invoice' is correct and uses all cards.
+- r20-4-025: **keep**: practice only already (learning drag task); level flag does not apply.
+- r20-4-029: **fix**: The readers found no problem, but 'so as to' is not taught on the conj_clauses card (it teaches to, in order to, so that); the card's 'in order to' keeps the purpose point.
+- r20-4-030: **accept**: The clause-order variants are correct corrections; 'Despite being delayed' changes the structure and is rejected.
+- r20-4-031: **keep**: 'In despite of' is not standard English, so 'despite' is rightly rejected; 014 is its intended practice-only twin.
+- r20-4-033: **keep**: Second conditional with 'were' is on the B2.1 cond_second card; the wrong options are all wrong here.
+- r20-4-034: **accept**: The card says could / might can replace would; 'were to build' and 'would be travelling' are also correct (gaps are checked one by one).
+- r20-4-035: **keep**: A mistake learners really make (card), three right sentences about different things; a similar wrong option in another task is no defect.
+- r20-4-036: **keep**: One correct option; sharing a typical mistake with 035 is no defect; level is the B2.1 card.
+- r20-4-037: **accept**: Might (on the card), 'my own vegetables' and the awkward but grammatical 'were to have' are correct.
+- r20-4-038: **keep**: The situation rules out the mixed conditional distractor, which makes it a B2.2 check, not a bare B1 form; 'gotten' is not needed.
+- r20-4-039: **accept**: 'might not have missed' is on the cond_third card and fits.
+- r20-4-040: **keep**: 'If they'd have asked' is a mistake learners and even natives really make; that is the point.
+- r20-4-041: **keep**: Only one correct option; reader 1 had no objection.
+- r20-4-042: **keep**: 'Had I known...' is correct English but the instruction asks for a sentence with 'if', so it is rightly not accepted.
+- r20-4-043: **fix**: 'Without' is not on the cond_advanced card (criterion 7); reader 1's 'Without' gives 'Without for', wrong. Replace with card words that are wrong before 'for'.
+- r20-4-044: **accept**: 'Were the price to be lower' is correct; 'More people would buy it were...' does not start with Were and 'to fall' changes the meaning, so both are rejected. The asterisks are the app's italics.
+- r20-4-046: **fix**: Level is right (inversion is a B2.2 point), but 'Did' is not on the cond_advanced card; 'Should' is a card form and a believable confusion that does not fit 'would have passed'.
+- r20-4-047: **fix**: 'each gap' is the app's general word-bank line, not the task; but 'Did' and 'Has' are not on the cond_advanced card, so the bank keeps only card inversion words.
+- r20-4-048: **keep**: 'It's high time we make' is listed as a mistake on the unreal_time card (Murphy: past form).
+- r20-4-049: **keep**: 'I'd rather you don't...' is listed as a mistake on the unreal_time card; the past is the taught form.
+- r20-4-050: **keep**: Gate long_frame: without the situation, 'I wish I could come to your wedding' would be correct, so the situation is needed.
+- r20-4-051: **fix**: Gate long_frame: the situation is needed ('If only we tested the app' fits a present habit), but the correct option contains the card's example 'If only we had tested the app'. New sentence with a clear past time word.
+- r20-4-052: **fix**: The key answer is the card's own example ('I'd rather you didn't call me after ten'), and 'starts with I'd rather' lets the learner avoid the point ('I'd rather not be called'). New request, start with 'I'd rather you'; 'wouldn't call' is not standard and stays rejected.
+- r20-4-053: **fix**: 'as an accusation' is superfluous (only one option is correct without it) and hints the verb; use the plain reporting instruction.
+- r20-4-054: **keep**: After past 'advised' only the step-back form is taught (11 November), so 'has read' is rejected; 'carefully' adds content. The listed answers cover the open gap.
+- r20-4-058: **keep**: practice only already (learning drag task); no tense change in polite questions (card), so 'has been delayed' / 'was delayed' are rejected; 'is late' changes the words.
+- r20-4-059: **keep**: 'who called me' is a subject question and correct; one mistake, from the card.
+
+Note (not flagged): r20-4-018 accepts 'you could tell me why the order didn't arrive' as a statement, like 017 before the fix; worth the same fix in a later round.

@@ -1,0 +1,612 @@
+[
+ {
+  "id": "r20-1-001",
+  "decision": "practice_only",
+  "why": "If I were you is a B1 point (level map c2_were); the key is right and the task is too easy for B2.1, so it stays for practice only."
+ },
+ {
+  "id": "r20-1-002",
+  "decision": "keep",
+  "why": "Already a learning task (role learn), so it is not used as evidence; would vs might is on the cond_second card."
+ },
+ {
+  "id": "r20-1-003",
+  "decision": "accept",
+  "why": "Might be / could be are correct second-conditional results here (the card: could or might instead of would) and must be accepted.",
+  "accept": [
+   [],
+   [
+    "might be",
+    "could be"
+   ]
+  ]
+ },
+ {
+  "id": "r20-1-004",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences were near-copies of the wrong one. New right sentences about three different things; the IF-WOULD mistake stays. Basic second conditional is a B1 point (level map c2), so the task becomes practice only.",
+  "fix": {
+   "wrong": [
+    "If I lived closer to work, I'd cycle every day.",
+    "What would you do if you lost your job?",
+    "If she were here, she would know what to do."
+   ],
+   "role": "learn"
+  }
+ },
+ {
+  "id": "r20-1-005",
+  "decision": "keep",
+  "why": "'I would be grateful if you will send' mixes would and will and is not standard in a polite request; the key stands, and the formal request frame suits B2.1."
+ },
+ {
+  "id": "r20-1-006",
+  "decision": "keep",
+  "why": "A writing task gives the situation, not the form (rule of 3 November); 'from your own point of view' leads to If I were you without naming it."
+ },
+ {
+  "id": "r20-1-007",
+  "decision": "practice_only",
+  "why": "Basic third conditional is a B1 point (level map c3); correct, but too easy for B2.1."
+ },
+ {
+  "id": "r20-1-008",
+  "decision": "fix",
+  "why": "The wrong option 'certain, not possible' contradicts itself and is not a believable misunderstanding; replaced by the would-have reading.",
+  "fix": {
+   "wrong": [
+    "The deal would certainly have been signed.",
+    "The deal was impossible from the start.",
+    "The deal was signed in the end."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-009",
+  "decision": "fix",
+  "why": "Gate mistake: two right sentences were near-copies of the wrong one. New right sentences about different things; the has/had mistake stays. Basic third conditional is a B1 point, so practice only.",
+  "fix": {
+   "wrong": [
+    "If you had called me, I would have picked you up.",
+    "We could have saved money if we had booked earlier.",
+    "If it hadn't rained, the concert wouldn't have been cancelled."
+   ],
+   "role": "learn"
+  }
+ },
+ {
+  "id": "r20-1-010",
+  "decision": "fix",
+  "why": "'could adjust have' is a word-order slip nobody makes; replaced by a real learner mistake (could have + base verb).",
+  "fix": {
+   "wrong": [
+    "If you told us earlier, we could have adjusted the schedule.",
+    "If you had told us earlier, we could have adjust the schedule.",
+    "If you would tell us earlier, we could have adjusted the schedule."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-011",
+  "decision": "keep",
+  "why": "Open writing task: the situation (imagine you had not made it) asks for the form without naming it, as the rules require."
+ },
+ {
+  "id": "r20-1-012",
+  "decision": "practice_only",
+  "why": "'Imagine the past was different' is a situation, not the form name, and is needed (without it heard / would avoid is also correct). But a basic third conditional is a B1 point, too easy for B2.2."
+ },
+ {
+  "id": "r20-1-013",
+  "decision": "fix",
+  "why": "B ('If you asked, I would help') can be about now or the future, so 'about now' was imprecise.",
+  "fix": {
+   "correct": "A is about the past, B about now or the future.",
+   "wrong": [
+    "A is about now, B about the past.",
+    "A is about the future, B the past.",
+    "There is no difference in meaning."
+   ],
+   "why": "Third conditional (A) = an unreal past. Second conditional (B) = an unreal present or future.",
+   "why_lv": "Third conditional (A) izsaka nereālu pagātni. Second conditional (B) izsaka nereālu tagadni vai nākotni."
+  }
+ },
+ {
+  "id": "r20-1-014",
+  "decision": "practice_only",
+  "why": "Might not have lost is a correct result (less certain) and is added. The verbs are given and the point is a basic third conditional (B1 in the level map), so the task is too easy for B2.2.",
+  "accept": [
+   [],
+   [
+    "might not have lost",
+    "mightn't have lost"
+   ]
+  ]
+ },
+ {
+  "id": "r20-1-015",
+  "decision": "fix",
+  "why": "Gate mistake: two right sentences were near-copies of the wrong one. New right sentences about different things; 'If I'd have known' stays as the mistake (it is the standard B2 error in the level map, c2_c3).",
+  "fix": {
+   "wrong": [
+    "Had we checked the forecast, we wouldn't have gone sailing.",
+    "If she'd asked me, I'd have helped her.",
+    "They wouldn't have got lost if they had taken a map."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-016",
+  "decision": "fix",
+  "why": "'had realise' is a typo-level slip. Replaced by real learner mistakes (would in the if-part, would have + past form). Basic third conditional is a B1 point, so practice only.",
+  "fix": {
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I would have acted differently.",
+    "If I had realised the impact of my decision, I would acted differently."
+   ],
+   "role": "learn"
+  }
+ },
+ {
+  "id": "r20-1-017",
+  "decision": "keep",
+  "why": "Open writing task: the situation (what would have happened if one thing had been different) is enough; naming the form would give it away."
+ },
+ {
+  "id": "r20-1-018",
+  "decision": "keep",
+  "why": "Only option 4 has a result now; option 3 imagines a past result. The near pair is the point of this learning task (role learn)."
+ },
+ {
+  "id": "r20-1-020",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences were near-copies of the wrong one. New right mixed conditionals about three different things; the would-in-the-if-part mistake stays.",
+  "fix": {
+   "wrong": [
+    "If I hadn't missed the train, I'd be at home by now.",
+    "If she had saved more, she wouldn't be worried about money now.",
+    "We'd know the results now if they had sent the email."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-021",
+  "decision": "fix",
+  "why": "Option 1 had two errors and a past tense nobody writes ('I wasn't so tired now'). Replaced by the single real mistake (would in the if-part); option 2 (would have been + now) stays as the mixed/third contrast.",
+  "fix": {
+   "wrong": [
+    "If I didn't stay up so late, I wouldn't have been so tired now.",
+    "If I hadn't stayed up so late, I wouldn't have been so tired now.",
+    "If I wouldn't have stayed up so late, I wouldn't be so tired now."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-022",
+  "decision": "keep",
+  "why": "Open writing task: the situation (past decision, effect today) asks for a mixed conditional without naming it."
+ },
+ {
+  "id": "r20-1-023",
+  "decision": "keep",
+  "why": "Readers found no problem: one answer, a B2.2 mixed conditional."
+ },
+ {
+  "id": "r20-1-025",
+  "decision": "accept",
+  "why": "'would live in Paris now' and 'would be in Paris now' keep the meaning and are correct mixed conditionals.",
+  "accept": [
+   [
+    "If he had taken the job, he would live in Paris now.",
+    "If he'd taken the job, he'd live in Paris now.",
+    "He would live in Paris now if he had taken the job.",
+    "If he had taken the job, he would be in Paris now.",
+    "If he'd taken the job, he'd be in Paris now.",
+    "He would be in Paris now if he had taken the job."
+   ]
+  ]
+ },
+ {
+  "id": "r20-1-026",
+  "decision": "fix",
+  "why": "Gate mistake: two right sentences were near-copies of the wrong one. New right mixed conditionals about different things; the 'If I am' mistake stays.",
+  "fix": {
+   "wrong": [
+    "If she spoke French, she would have got the job in Paris.",
+    "If I hadn't eaten so much, I wouldn't feel sick now.",
+    "If he weren't so shy, he would have asked her to dance."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-027",
+  "decision": "fix",
+  "why": "The options needed grammar terms (Zero, First, Third, Mixed conditional); a task must be solvable without them. Options now describe the time.",
+  "fix": {
+   "q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' What does the sentence say?",
+   "correct": "A quality now caused a result in the past.",
+   "wrong": [
+    "Both parts are about the past.",
+    "Both parts are about the future.",
+    "It is a general fact that is always true."
+   ],
+   "why": "The if-part is past simple (a present quality: my memory is bad). The result is *would have* + past participle (past: I forgot your birthday).",
+   "why_lv": "*If* daļā ir Past Simple (tagadnes īpašība: man ir slikta atmiņa). Otrajā daļā ir *would have* + 3. forma (pagātne: es aizmirsu tavu dzimšanas dienu)."
+  }
+ },
+ {
+  "id": "r20-1-028",
+  "decision": "keep",
+  "why": "Open writing task: the situation (a quality of yours, a past result) asks for the form without naming it."
+ },
+ {
+  "id": "r20-1-029",
+  "decision": "keep",
+  "why": "Readers solved it with the key; option 4 (rich then) is a fair distractor."
+ },
+ {
+  "id": "r20-1-030",
+  "decision": "keep",
+  "why": "Readers solved it with the key; no problem found."
+ },
+ {
+  "id": "r20-1-031",
+  "decision": "fix",
+  "why": "'inversion' is a grammar term in the instruction. The new instruction asks for a more formal sentence without if; the answers stay.",
+  "fix": {
+   "q": "Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now."
+  }
+ },
+ {
+  "id": "r20-1-032",
+  "decision": "fix",
+  "why": "'Had I taken that job, I would be rich now' repeats the correct answer of r20-1-029; replaced by another correct inverted sentence. 'Hadn't I' stays: learners do write it.",
+  "fix": {
+   "wrong": [
+    "Had she known, she would have stayed.",
+    "Had the train been on time, we would be home by now.",
+    "Were I braver, I would have said no."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-034",
+  "decision": "keep",
+  "why": "'Start with Had I' is the frame, not the answer; 'today' asks for would + base verb, which the check looks for."
+ },
+ {
+  "id": "r20-1-036",
+  "decision": "keep",
+  "why": "Already a learning task (role learn): basic unless is B1 and it stays only for practice."
+ },
+ {
+  "id": "r20-1-037",
+  "decision": "practice_only",
+  "why": "Basic unless = if not is a B1 point (level map c1_unless); correct, but too easy for B2.2."
+ },
+ {
+  "id": "r20-1-038",
+  "decision": "keep",
+  "why": "Already a learning task (role learn), not used as evidence."
+ },
+ {
+  "id": "r20-1-040",
+  "decision": "keep",
+  "why": "Provided that / as long as is the B2.2 point (c_alt); naming the word is fine because using it, not choosing it, is the task."
+ },
+ {
+  "id": "r20-1-041",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences were near-copies of the wrong one. New right sentences about different things. Say / tell is A2 in the level map, so practice only.",
+  "fix": {
+   "wrong": [
+    "He said he was working from home.",
+    "They told us the shop was closed.",
+    "She told me she had lost her keys."
+   ],
+   "role": "learn"
+  }
+ },
+ {
+  "id": "r20-1-042",
+  "decision": "fix",
+  "why": "Gate mistake: one right sentence was a near-copy of the wrong one. New right sentences about different things. Reported wh-questions are B1 (level map rep_q_wh), so practice only.",
+  "fix": {
+   "wrong": [
+    "She asked if I wanted a coffee.",
+    "They asked where we had parked the car.",
+    "He wanted to know how long the trip would take."
+   ],
+   "role": "learn"
+  }
+ },
+ {
+  "id": "r20-1-043",
+  "decision": "fix",
+  "why": "Gate mistake: 'She asked me whether I agreed or not' was a near-copy of the wrong sentence; replaced by a reported question about something else.",
+  "fix": {
+   "wrong": [
+    "He asked me if I was ready.",
+    "They asked whether we had eaten.",
+    "He wanted to know whether the hotel had a pool."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-044",
+  "decision": "fix",
+  "why": "Gate mistake: all three right sentences repeated 'suggested … by train'. New right sentences use three other patterns from the card.",
+  "fix": {
+   "wrong": [
+    "He denied taking the money.",
+    "My doctor advised me to rest.",
+    "They promised that they would call back."
+   ]
+  }
+ },
+ {
+  "id": "r20-1-045",
+  "decision": "fix",
+  "why": "Gate card_words: 'about' and 'at' are not on the rep_verbs card. The bank now holds only prepositions the card teaches (for, of, on, to). The quote stays: it is what is reported.",
+  "fix": {
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "bank": [
+    "on",
+    "for",
+    "of",
+    "to"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-046",
+  "decision": "fix",
+  "why": "Gate mistake: 'He blamed me for losing the file' was a near-copy, 'for to lose' is a form nobody writes, and blame is not on the card. New task: the card's accuse of mistake, with three different card verbs as right sentences.",
+  "fix": {
+   "correct": "My manager accused me for losing the file.",
+   "wrong": [
+    "She apologised for being late.",
+    "He insisted on paying for dinner.",
+    "They congratulated us on our new home."
+   ],
+   "why": "*accuse* + person + *of* + -ing: *My manager accused me of losing the file.*",
+   "why_lv": "*accuse* + persona + *of* + darbības vārds ar -ing: *My manager accused me of losing the file.*"
+  }
+ },
+ {
+  "id": "r20-1-047",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences were near-copies of the wrong one and of the card example. New right sentences about different things; the whether + -ing mistake stays.",
+  "fix": {
+   "correct": "We still can't decide whether moving to a bigger flat.",
+   "wrong": [
+    "I don't know what to say to him.",
+    "Why the meeting was cancelled is still a mystery.",
+    "Do you know whether the museum is open on Mondays?"
+   ],
+   "why": "After *whether* use *to* + base verb or a full clause: *whether to move* or *whether we should move* to a bigger flat.",
+   "why_lv": "Aiz *whether* lieto *to* + pamatforma vai pilnu palīgteikumu: *whether to move* vai *whether we should move* to a bigger flat."
+  }
+ },
+ {
+  "id": "r20-1-048",
+  "decision": "fix",
+  "why": "Gate card_words: 'unless' is not on the ind_advanced card; replaced by 'what'. 'if' stays wrong: the card teaches 'after a preposition use whether, not if' (informal 'depends on if' exists, but this is the taught rule, as for backshift on 11 November).",
+  "fix": {
+   "wrong": [
+    "if",
+    "that",
+    "what"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-049",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentence 'We talked about how to improve the results' was a near-copy and the card's own example. New right sentences about different things; the question-order mistake stays.",
+  "fix": {
+   "correct": "We talked about how could we cut costs.",
+   "wrong": [
+    "I'm not sure where to park.",
+    "Whether the shop is open on Sunday is still unclear.",
+    "It depends on whether the flight is on time."
+   ],
+   "why": "No question order after *about*: *how we could cut costs* (or *how to cut costs*).",
+   "why_lv": "Aiz *about* nav jautājuma vārdu secības: *how we could cut costs* (vai *how to cut costs*)."
+  }
+ },
+ {
+  "id": "r20-1-050",
+  "decision": "fix",
+  "why": "Gate card_words: 'However' is not on the card (replaced by Wherever). The sentence also near-copied the card example (Whoever finishes first can go home) and r20-1-060; new sentence.",
+  "fix": {
+   "q": "Choose the correct word: ___ booked the meeting room should cancel it if plans change.",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ],
+   "why": "*Whoever* is the subject of *booked*. It means *the person who*.",
+   "why_lv": "*Whoever* ir teikuma priekšmets darbības vārdam *booked*. Tas nozīmē *tas, kurš*."
+  }
+ },
+ {
+  "id": "r20-1-051",
+  "decision": "fix",
+  "why": "Gate mistake: 'Whoever wins the contract' was a near-copy of the wrong sentence, and 'whomever you trust' teaches a form the card lists only as a mistake. New right sentences with the card's -ever words.",
+  "fix": {
+   "wrong": [
+    "Whatever you decide, I'll support you.",
+    "You can sit wherever you like.",
+    "I'll talk to whoever is at the front desk."
+   ],
+   "why": "*Whoever wins*: *whoever* is the subject of *wins*, so *whomever* is wrong here.",
+   "why_lv": "*Whoever wins*: *whoever* ir teikuma priekšmets darbības vārdam *wins*, tāpēc *whomever* šeit nav pareizi."
+  }
+ },
+ {
+  "id": "r20-1-052",
+  "decision": "fix",
+  "why": "Gate card_words: 'Despite' is not on the conj_b2 card, and 'Whereas' could be rejected by meaning. The wrong options are now reason words from the card that need a noun, so only the form decides.",
+  "fix": {
+   "wrong": [
+    "Owing to",
+    "Due to",
+    "On account of"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-053",
+  "decision": "fix",
+  "why": "Gate card_words: 'since' is not on the card. The sentence also copied the card example (The match was postponed owing to the rain); new sentence, wrong options built from card words.",
+  "fix": {
+   "q": "Choose the correct option: The concert was cancelled ___ the singer's illness.",
+   "wrong": [
+    "owing",
+    "on account",
+    "as a result"
+   ],
+   "why": "*owing to / due to / on account of* + noun: *cancelled owing to the singer's illness*. *Owing* and *on account* need *to* / *of*; *as a result* starts a new sentence.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds: *cancelled owing to the singer's illness*. Aiz *owing* vajag *to*, aiz *on account* vajag *of*; *as a result* sāk jaunu teikumu."
+  }
+ },
+ {
+  "id": "r20-1-054",
+  "decision": "fix",
+  "why": "Gate card_words: 'despite' and 'in spite of' are not on the conj_b2 card. Wrong options now from the card (although, however, whereas), all of which fail after 'and' + clause.",
+  "fix": {
+   "wrong": [
+    "although",
+    "however",
+    "whereas"
+   ],
+   "why": "*and yet* = but, in spite of this: *and yet they finished it on time*. *Although* and *whereas* start a part that needs another main clause; *however* goes after a full stop or a semicolon, with a comma.",
+   "why_lv": "*and yet* = bet, tomēr: *and yet they finished it on time*. *Although* un *whereas* sāk palīgteikumu, kam vajag vēl vienu virsteikumu; *however* lieto pēc punkta vai semikola, ar komatu."
+  }
+ },
+ {
+  "id": "r20-1-055",
+  "decision": "fix",
+  "why": "Gate card_words: 'Despite' is not on the card; the sentence also copied the card example (Sales fell … therefore … close the shop). New sentence, bank from the card.",
+  "fix": {
+   "q": "The company lost its biggest client. ___, it had to cut twenty jobs.",
+   "answers": [
+    [
+     "Therefore"
+    ]
+   ],
+   "bank": [
+    "Therefore",
+    "Owing to",
+    "On account of",
+    "Whereas"
+   ],
+   "why": "*Therefore* + comma at the start introduces a result. *Owing to* and *on account of* need a noun; *whereas* compares two facts in one sentence.",
+   "why_lv": "*Therefore* ar komatu teikuma sākumā ievada sekas. Aiz *owing to* un *on account of* vajag lietvārdu; *whereas* salīdzina divus faktus vienā teikumā."
+  }
+ },
+ {
+  "id": "r20-1-056",
+  "decision": "fix",
+  "why": "Gate card_words: 'unless' is not on the ind_advanced card; replaced by 'what', which fits neither gap.",
+  "fix": {
+   "answers": [
+    [
+     "whether"
+    ],
+    [
+     "if"
+    ]
+   ],
+   "bank": [
+    "whether",
+    "if",
+    "what"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-057",
+  "decision": "fix",
+  "why": "Gate card_words: 'to' is not on the rep_statements card; replaced by 'that' (said / told + that is on the card). Already a learning task, so the easy level does not matter.",
+  "fix": {
+   "answers": [
+    [
+     "told"
+    ],
+    [
+     "me"
+    ]
+   ],
+   "bank": [
+    "told",
+    "me",
+    "said",
+    "that"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-058",
+  "decision": "fix",
+  "why": "Gate card_words: 'about' is not on the rep_verbs card; replaced by 'to', which the explanation already mentions (complained to me).",
+  "fix": {
+   "answers": [
+    [
+     "that"
+    ],
+    [
+     "had"
+    ]
+   ],
+   "bank": [
+    "that",
+    "had",
+    "to",
+    "have"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-059",
+  "decision": "fix",
+  "why": "Gate card_words: 'no' is not on the conj_clauses card; replaced by 'that' (so that, from the card). 'don't' stays as the usual learner mistake.",
+  "fix": {
+   "answers": [
+    [
+     "not"
+    ],
+    [
+     "to"
+    ]
+   ],
+   "bank": [
+    "not",
+    "to",
+    "that",
+    "don't"
+   ]
+  }
+ },
+ {
+  "id": "r20-1-060",
+  "decision": "fix",
+  "why": "Gate card_words: 'However' is not on the card (replaced by Wherever). The sentence near-copied the card's mistake example (Whomever arrives last washes up) and r20-1-050; new sentence.",
+  "fix": {
+   "q": "Choose the correct word: ___ called the help desk this morning didn't leave a name.",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ],
+   "why": "*Whoever called* = the person who called; *whoever* is the subject of *called*.",
+   "why_lv": "*Whoever called* = tas, kurš zvanīja; *whoever* ir teikuma priekšmets darbības vārdam *called*."
+  }
+ }
+]

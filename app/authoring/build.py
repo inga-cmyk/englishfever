@@ -243,8 +243,9 @@ retired = history(dsl.ITEMS, os.path.join(HERE, 'history', 'published_items.json
 PRACTICE_ONLY = {"ip-B11-3b-r3", "var-ip-b11-order-01-r2", "ip-B12-3a-r2",   # indirect questions B1: the frame again (teacher, 21 November)
                  "var-pa-a22-match-01-r2", "var-ca-c11-order-01-r3", "ip-B12-1a",
                  "rq-B12-3a-r3", "ip-B11-3a"}   # 14 November: only one verb to put in, the word order is given (teacher): learning tasks next to rq-order-1.csv   # ip-B12-1a: the wrong options miss the typical mistake (is the shop open); an easy practice task (teacher, 27 October)
+PRACTICE_BASE = set(json.load(open(os.path.join(HERE, "r20_fixes.json"), encoding="utf-8"))["practice"])   # B2 recheck, 22 November: B1 points or far too easy at B2 (judge, r20)
 for it in dsl.ITEMS:
-    if it["id"] in PRACTICE_ONLY:
+    if it["id"] in PRACTICE_ONLY or re.sub(r"-r\d+$", "", it["id"]) in PRACTICE_BASE:
         it["practice_only"] = True
 
 os.makedirs(OUT, exist_ok=True)

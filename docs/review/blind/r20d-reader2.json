@@ -1,0 +1,139 @@
+[
+{
+"id": "r20d-001",
+"answer": "They asked what time we should arrive.",
+"other_correct": [
+"They asked what time they should arrive.",
+"They asked me what time we should arrive.",
+"They asked what time we were to arrive.",
+"They asked what time we had to arrive.",
+"They asked what time we ought to arrive."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Pronoun shift (we/they) is not specified: both 'we should' and 'they should' fit; key must accept both. 'Start with They asked' leaves 'me' optional.",
+"level_problem": "",
+"sense_problem": "The pronoun is ambiguous: the speaker of the quote may be the same group as 'they'."
+},
+{
+"id": "r20d-002",
+"answer": "She didn't know who she should ask.",
+"other_correct": [
+"She didn't know who to ask.",
+"She didn't know who she ought to ask.",
+"She didn't know who she had to ask.",
+"She didn't know who she could ask."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine, but 'Join' does not say how (who ... / who to); two natural answers.",
+"level_problem": "Too easy for B2.2: basic embedded question (B1).",
+"sense_problem": ""
+},
+{
+"id": "r20d-003",
+"answer": "I'll support you whatever you decide.",
+"other_correct": [
+"I'll support you no matter what you decide.",
+"I'll support you regardless of what you decide.",
+"I will support you whatever you decide.",
+"I'll support you whatever it is you decide."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many valid wordings; the target form (whatever / no matter what / regardless of what) is not fixed.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20d-004",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"is starting"
+],
+[
+"will start"
+],
+[
+"is going to start"
+],
+[
+"is due to start"
+],
+[
+"is to start"
+],
+[
+"begins"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb form is not constrained: present simple, present continuous, will all fit; only a timetable-type 'starts' is the likely target.",
+"level_problem": "Too easy for B2.2 (embedded question word order, B1).",
+"sense_problem": ""
+},
+{
+"id": "r20d-005",
+"answer": [
+"to go"
+],
+"other_correct": [
+[
+"we should go"
+],
+[
+"we could go"
+],
+[
+"we were going to go"
+],
+[
+"we'd go"
+],
+[
+"we would go"
+],
+[
+"we ought to go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several gap words may be needed: gap is one slot but 'we should go' is also correct; instruction does not say to use only one word.",
+"level_problem": "Too easy for B2.2 (where + to-infinitive, B1).",
+"sense_problem": "Ambiguous: 'to go' vs 'we should go'."
+},
+{
+"id": "r20d-006",
+"answer": [
+"whether"
+],
+"other_correct": [
+[
+"if"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' is common after depend on in informal English (prescriptively less correct); no hint for the learner.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20d-007",
+"answer": "It's high time you started looking for a new job.",
+"other_correct": [
+"It's high time you started to look for a new job.",
+"It's high time you started looking for a new job.",
+"It's high time you began looking for a new job.",
+"It's high time you start looking for a new job.",
+"It's high time you looked for a new job.",
+"It's high time you found a new job.",
+"It's high time for you to start looking for a new job.",
+"It's high time you really started looking for a new job.",
+"It's about high time you started looking for a new job."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Too open: past subjunctive (you started) vs 'you start' (accepted by some) vs 'for you to start'; the target structure is not clear.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

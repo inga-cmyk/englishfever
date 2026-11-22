@@ -1,0 +1,2093 @@
+{
+ "r20b-1-001": {
+  "hash": "da93a2d55229cd41",
+  "gate_key": "cond_second | B2.1 | gap | Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be) | ",
+  "src": "built-in",
+  "point": "c2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "offered",
+     "were to offer"
+    ],
+    [
+     "would be",
+     "'d be",
+     "might be",
+     "could be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "cs-B21-3a-r3",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be)",
+   "answers": [
+    [
+     "offered",
+     "were to offer"
+    ],
+    [
+     "would be",
+     "'d be",
+     "might be",
+     "could be"
+    ]
+   ],
+   "why": "Second conditional: *if* + past simple (or *were to* + base verb), *would* + base verb.",
+   "hints": [],
+   "d": 5.4,
+   "scaffold": 1,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "use",
+   "point": "c2",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-002": {
+  "hash": "f36b497ce7335721",
+  "gate_key": "cond_third | B2.1 | mcq | Which sentence has a mistake? | If the team has been better prepared, we would have won.",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If the team has been better prepared, we would have won.",
+   "wrong": [
+    "If you had called me, I would have picked you up.",
+    "We could have saved money if we had booked earlier.",
+    "If it hadn't rained, the concert wouldn't have been cancelled."
+   ]
+  },
+  "item": {
+   "id": "ct-B21-4a-r2",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "correct": "If the team has been better prepared, we would have won.",
+   "wrong": [
+    "If you had called me, I would have picked you up.",
+    "We could have saved money if we had booked earlier.",
+    "If it hadn't rained, the concert wouldn't have been cancelled."
+   ],
+   "why": "The if-part needs the past perfect: *had been*, not *has been.*",
+   "wrong_why": [],
+   "practice_only": true,
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-003": {
+  "hash": "dfdd60e345ee12a2",
+  "gate_key": "cond_third | B2.2 | gap | He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it. | ",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't been driving",
+     "had not been driving",
+     "hadn't driven",
+     "had not driven"
+    ],
+    [
+     "wouldn't have lost",
+     "would not have lost",
+     "'d not have lost",
+     "might not have lost",
+     "mightn't have lost"
+    ]
+   ]
+  },
+  "item": {
+   "id": "ct-B22-3a-r4",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it.",
+   "answers": [
+    [
+     "hadn't been driving",
+     "had not been driving",
+     "hadn't driven",
+     "had not driven"
+    ],
+    [
+     "wouldn't have lost",
+     "would not have lost",
+     "'d not have lost",
+     "might not have lost",
+     "mightn't have lost"
+    ]
+   ],
+   "why": "Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.",
+   "hints": [],
+   "practice_only": true,
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-004": {
+  "hash": "99f638cf0d9f5d12",
+  "gate_key": "cond_mixed | B2.1 | mcq | Which sentence is NOT correct? | If I would have studied medicine, I would be a doctor now.",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I would have studied medicine, I would be a doctor now.",
+   "wrong": [
+    "If I hadn't missed the train, I'd be at home by now.",
+    "If she had saved more, she wouldn't be worried about money now.",
+    "We'd know the results now if they had sent the email."
+   ]
+  },
+  "item": {
+   "id": "cm-B21-4a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "If I would have studied medicine, I would be a doctor now.",
+   "wrong": [
+    "If I hadn't missed the train, I'd be at home by now.",
+    "If she had saved more, she wouldn't be worried about money now.",
+    "We'd know the results now if they had sent the email."
+   ],
+   "why": "Do not use *would* in the if-part: *If I had studied medicine, ...*",
+   "wrong_why": [],
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-005": {
+  "hash": "ae7174f45d39d108",
+  "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | If I am more careful, I wouldn't have lost my keys.",
+  "src": "built-in",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I am more careful, I wouldn't have lost my keys.",
+   "wrong": [
+    "If she spoke French, she would have got the job in Paris.",
+    "If I hadn't eaten so much, I wouldn't feel sick now.",
+    "If he weren't so shy, he would have asked her to dance."
+   ]
+  },
+  "item": {
+   "id": "cm-B22-4a-r2",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "If I am more careful, I wouldn't have lost my keys.",
+   "wrong": [
+    "If she spoke French, she would have got the job in Paris.",
+    "If I hadn't eaten so much, I wouldn't feel sick now.",
+    "If he weren't so shy, he would have asked her to dance."
+   ],
+   "why": "Do not use *am* in an unreal condition. Say: *If I were more careful, ...*",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed2",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-006": {
+  "hash": "3ec1181220aacc9b",
+  "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | Hadn't I moved here, I'd be in Riga now.",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "mcq",
+   "correct": "Hadn't I moved here, I'd be in Riga now.",
+   "wrong": [
+    "Had she known, she would have stayed.",
+    "Had the train been on time, we would be home by now.",
+    "Were I braver, I would have said no."
+   ]
+  },
+  "item": {
+   "id": "cm-C11-4a-r4",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "Hadn't I moved here, I'd be in Riga now.",
+   "wrong": [
+    "Had she known, she would have stayed.",
+    "Had the train been on time, we would be home by now.",
+    "Were I braver, I would have said no."
+   ],
+   "why": "Negative inversion is *Had I not ...*, not *Hadn't I ...*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-007": {
+  "hash": "909380d332cd94f0",
+  "gate_key": "rep_statements | B2.1 | mcq | Which sentence is NOT correct? | She told that she would be late.",
+  "src": "built-in",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "mcq",
+   "correct": "She told that she would be late.",
+   "wrong": [
+    "He said he was working from home.",
+    "They told us the shop was closed.",
+    "She told me she had lost her keys."
+   ]
+  },
+  "item": {
+   "id": "rs-B21-4a-r2",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She told that she would be late.",
+   "wrong": [
+    "He said he was working from home.",
+    "They told us the shop was closed.",
+    "She told me she had lost her keys."
+   ],
+   "why": "*tell* is always followed by a person: *She told me / us ...*",
+   "wrong_why": [],
+   "practice_only": true,
+   "d": 5.6,
+   "scaffold": 0,
+   "err": [
+    "BACKSHIFT",
+    "SAY-TELL"
+   ],
+   "role": "learn",
+   "point": "rep_say_tell",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-008": {
+  "hash": "bd62c20ea5e90d14",
+  "gate_key": "rep_questions | B2.2 | mcq | Eva's question to you: 'Where should I park?' Which sentence reports it? | She asked me where she should park.",
+  "src": "built-in",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "She asked me where she should park.",
+   "wrong": [
+    "She asked me where should she park.",
+    "She asked me where she should to park."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-2a-r4",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Eva's question to you: 'Where should I park?' Which sentence reports it?",
+   "correct": "She asked me where she should park.",
+   "wrong": [
+    "She asked me where should she park.",
+    "She asked me where she should to park."
+   ],
+   "why": "Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.",
+   "wrong_why": [],
+   "practice_only": true,
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "learn",
+   "point": "rep_q_wh",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-009": {
+  "hash": "8a0e444f3ed72823",
+  "gate_key": "rep_questions | B2.2 | gap | 'Is the data accurate?' → The editor asked me ___. | ",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether the data was accurate",
+     "whether the data were accurate",
+     "if the data was accurate",
+     "if the data were accurate",
+     "whether or not the data was accurate",
+     "whether or not the data were accurate"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rq-B22-6a-r3",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "gap",
+   "q": "'Is the data accurate?' → The editor asked me ___.",
+   "must": [],
+   "model": null,
+   "why": "A yes/no question is reported with *whether* or *if* and statement word order: *whether the data was accurate*.",
+   "answers": [
+    [
+     "whether the data was accurate",
+     "whether the data were accurate",
+     "if the data was accurate",
+     "if the data were accurate",
+     "whether or not the data was accurate",
+     "whether or not the data were accurate"
+    ]
+   ],
+   "hints": [],
+   "why_lv": "Jā/nē jautājumu atstāsta ar *whether* vai *if* un apgalvojuma vārdu secību: *whether the data was accurate*.",
+   "practice_only": true,
+   "d": 7,
+   "scaffold": 2,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "learn",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-010": {
+  "hash": "74c0466a86c467b7",
+  "gate_key": "rep_verbs | B2.2 | gap | 'Sorry I forgot the meeting.' → Dana apologised ___. | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for forgetting the meeting",
+     "for having forgotten the meeting",
+     "for forgetting about the meeting",
+     "to me for forgetting the meeting",
+     "to me for forgetting about the meeting",
+     "for having forgotten about the meeting",
+     "to me for having forgotten the meeting",
+     "to me for having forgotten about the meeting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-B22-6a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 6,
+   "kind": "gap",
+   "q": "'Sorry I forgot the meeting.' → Dana apologised ___.",
+   "must": [],
+   "model": null,
+   "why": "*apologise for* + *-ing*: *apologised for forgetting the meeting*.",
+   "answers": [
+    [
+     "for forgetting the meeting",
+     "for having forgotten the meeting",
+     "for forgetting about the meeting",
+     "to me for forgetting the meeting",
+     "to me for forgetting about the meeting",
+     "for having forgotten about the meeting",
+     "to me for having forgotten the meeting",
+     "to me for having forgotten about the meeting"
+    ]
+   ],
+   "hints": [],
+   "why_lv": "*apologise for* + *-ing*: *apologised for forgetting the meeting*.",
+   "d": 7,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-011": {
+  "hash": "c3602694084ce915",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | My manager accused me for losing the file.",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "My manager accused me for losing the file.",
+   "wrong": [
+    "She apologised for being late.",
+    "He insisted on paying for dinner.",
+    "They congratulated us on our new home."
+   ]
+  },
+  "item": {
+   "id": "rv-C11-4a-r3",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "My manager accused me for losing the file.",
+   "wrong": [
+    "She apologised for being late.",
+    "He insisted on paying for dinner.",
+    "They congratulated us on our new home."
+   ],
+   "why": "*accuse* + person + *of* + -ing: *My manager accused me of losing the file.*",
+   "wrong_why": [],
+   "why_lv": "*accuse* + persona + *of* + darbības vārds ar -ing: *My manager accused me of losing the file.*",
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-012": {
+  "hash": "0df15ebad5cdcf22",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports the customer's words: 'The service was terrible.' | The customer complained that the service had been terrible.",
+  "src": "built-in",
+  "point": "rv_that",
+  "key": {
+   "kind": "mcq",
+   "correct": "The customer complained that the service had been terrible.",
+   "wrong": [
+    "The customer complained about the service had been terrible.",
+    "The customer complained me that the service was terrible."
+   ]
+  },
+  "item": {
+   "id": "rv-C12-5a-r5",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence reports the customer's words: 'The service was terrible.'",
+   "correct": "The customer complained that the service had been terrible.",
+   "wrong": [
+    "The customer complained about the service had been terrible.",
+    "The customer complained me that the service was terrible."
+   ],
+   "why": "*complain* + *that* + clause. The past goes back to the past perfect.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_that",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-013": {
+  "hash": "42a78513b6b5d880",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is correct? | It remains unclear who is responsible for the delay.",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "mcq",
+   "correct": "It remains unclear who is responsible for the delay.",
+   "wrong": [
+    "It remains unclear who is the responsible for the delay.",
+    "It remains unclear who responsible is for the delay."
+   ]
+  },
+  "item": {
+   "id": "ia-B22-5a-r3",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "It remains unclear who is responsible for the delay.",
+   "wrong": [
+    "It remains unclear who is the responsible for the delay.",
+    "It remains unclear who responsible is for the delay."
+   ],
+   "why": "Embedded question: *who + is + responsible* (statement order).",
+   "wrong_why": [],
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-014": {
+  "hash": "d15898500d0ad7a4",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We talked about how could we cut costs.",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "We talked about how could we cut costs.",
+   "wrong": [
+    "I'm not sure where to park.",
+    "Whether the shop is open on Sunday is still unclear.",
+    "It depends on whether the flight is on time."
+   ]
+  },
+  "item": {
+   "id": "ia-C11-4a-r3",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "We talked about how could we cut costs.",
+   "wrong": [
+    "I'm not sure where to park.",
+    "Whether the shop is open on Sunday is still unclear.",
+    "It depends on whether the flight is on time."
+   ],
+   "why": "No question order after *about*: *how we could cut costs* (or *how to cut costs*).",
+   "wrong_why": [],
+   "why_lv": "Aiz *about* nav jautājuma vārdu secības: *how we could cut costs* (vai *how to cut costs*).",
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-015": {
+  "hash": "aaa004568cfacfb9",
+  "gate_key": "ind_advanced | B2.2 | text | Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer. | ",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Whoever calls, don't answer.",
+     "Whoever calls, do not answer.",
+     "Whoever it is, don't answer.",
+     "Whoever it is, do not answer.",
+     "Who calls doesn't matter, so don't answer.",
+     "Who calls does not matter, so do not answer."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ia-C12-3a-r5",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+   "answers": [
+    [
+     "Whoever calls, don't answer.",
+     "Whoever calls, do not answer.",
+     "Whoever it is, don't answer.",
+     "Whoever it is, do not answer.",
+     "Who calls doesn't matter, so don't answer.",
+     "Who calls does not matter, so do not answer."
+    ]
+   ],
+   "why": "*Whoever* + verb = it does not matter who: *Whoever calls, don't answer.* *Who calls doesn't matter, so don't answer* (the question as the subject) is correct too.",
+   "hints": [],
+   "why_lv": "*Whoever* + darbības vārds = nav svarīgi, kas: *Whoever calls, don't answer.* Arī *Who calls doesn't matter, so don't answer* ir pareizi (jautājums kā teikuma priekšmets).",
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-016": {
+  "hash": "6f2885b2ce20b478",
+  "gate_key": "rep_verbs | B2.2 | order | Put the words in order. | she apologised for missing the meeting",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "order",
+   "sentence": "she apologised for missing the meeting",
+   "also": []
+  },
+  "item": {
+   "id": "var-rv-b22-order-01-r2",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "The pattern is *apologise for + noun or -ing form*: *apologised for missing the meeting*.",
+   "sentence": "she apologised for missing the meeting",
+   "answers": [
+    [
+     "she apologised for missing the meeting"
+    ]
+   ],
+   "display_answer": "She apologised for missing the meeting.",
+   "practice_only": true,
+   "d": 6.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "learn",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20b-1-017": {
+  "hash": "e31b2c76377d84af",
+  "gate_key": "narrative_b2 | B2.1 | gap | I ___ the report for three hours when my laptop crashed. | ",
+  "src": "compare-past-1.csv:50",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been writing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2197",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ the report for three hours when my laptop crashed.",
+   "why": "Before now: *have been -ing*. Before a moment in the past: *had been -ing*.",
+   "why_lv": "Pirms tagad: *have been -ing*. Pirms kāda brīža pagātnē: *had been -ing*.",
+   "answers": [
+    [
+     "had been writing"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had been writing",
+    "have been writing",
+    "had been written",
+    "am writing"
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:50"
+  }
+ },
+ "r20b-1-018": {
+  "hash": "5afdb6f0e1920fb2",
+  "gate_key": "narrative_b2 | B2.1 | gap | James was out of breath when he came in. He ___. (run) | ",
+  "src": "compare-past-1.csv:53",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been running",
+     "had run",
+     "'d run",
+     "'d been running"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2200",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "James was out of breath when he came in. He ___. (run)",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "answers": [
+    [
+     "had been running",
+     "had run",
+     "'d run",
+     "'d been running"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:53"
+  }
+ },
+ "r20b-1-019": {
+  "hash": "b45be6cd7314fcd0",
+  "gate_key": "narrative_b2 | B2.1 | order | Put the words in order. | we had been driving for hours when the car broke down",
+  "src": "compare-past-1.csv:60",
+  "point": "pastpc",
+  "key": {
+   "kind": "order",
+   "sentence": "we had been driving for hours when the car broke down",
+   "also": [
+    "when the car broke down we had been driving for hours",
+    "the car broke down when we had been driving for hours",
+    "when we had been driving for hours the car broke down"
+   ]
+  },
+  "item": {
+   "id": "c-2206",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "sentence": "we had been driving for hours when the car broke down",
+   "answers": [
+    [
+     "we had been driving for hours when the car broke down",
+     "when the car broke down we had been driving for hours",
+     "the car broke down when we had been driving for hours",
+     "when we had been driving for hours the car broke down"
+    ]
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:60"
+  }
+ },
+ "r20b-1-020": {
+  "hash": "f7a5a87176170094",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: The roads were flooded. ___, many schools closed. | As a result",
+  "src": "conjunctions-1.csv:86",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "As a result",
+   "wrong": [
+    "Owing to",
+    "Due to",
+    "On account of"
+   ]
+  },
+  "item": {
+   "id": "c-2343",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The roads were flooded. ___, many schools closed.",
+   "why": "Result at the start of a sentence: *As a result, / For this reason, / Therefore,* + comma.",
+   "why_lv": "Rezultāts teikuma sākumā: *As a result, / For this reason, / Therefore, + komats.*",
+   "correct": "As a result",
+   "wrong": [
+    "Owing to",
+    "Due to",
+    "On account of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:86"
+  }
+ },
+ "r20b-1-021": {
+  "hash": "dad05a7612fe321f",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: The project was over budget. The board has ___ decided to cancel it. | therefore",
+  "src": "conjunctions-1.csv:91",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "therefore",
+   "wrong": [
+    "owing to",
+    "on account of"
+   ]
+  },
+  "item": {
+   "id": "c-2348",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: The project was over budget. The board has ___ decided to cancel it.",
+   "why": "*therefore / consequently* can go before the main verb: *We have therefore decided…*",
+   "why_lv": "*therefore / consequently* var stāvēt pirms galvenā darbības vārda: *We have therefore decided*…",
+   "correct": "therefore",
+   "wrong": [
+    "owing to",
+    "on account of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:91"
+  }
+ },
+ "r20b-1-022": {
+  "hash": "d61b0428c60d9222",
+  "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: It was a difficult task, and ___ they finished it on time. | yet",
+  "src": "conjunctions-1.csv:103",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "yet",
+   "wrong": [
+    "although",
+    "however",
+    "whereas"
+   ]
+  },
+  "item": {
+   "id": "c-2360",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: It was a difficult task, and ___ they finished it on time.",
+   "why": "*and yet* = but, in spite of this: *and yet they finished it on time*. *Although* and *whereas* start a part that needs another main clause; *however* goes after a full stop or a semicolon, with a comma.",
+   "why_lv": "*and yet* = bet, tomēr: *and yet they finished it on time*. *Although* un *whereas* sāk palīgteikumu, kam vajag vēl vienu virsteikumu; *however* lieto pēc punkta vai semikola, ar komatu.",
+   "correct": "yet",
+   "wrong": [
+    "although",
+    "however",
+    "whereas"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:103"
+  }
+ },
+ "r20b-1-023": {
+  "hash": "fab339e1c89c3e80",
+  "gate_key": "conj_b2 | B2.2 | text | Rewrite with *owing to*: The flight was late because the weather was bad. | ",
+  "src": "conjunctions-1.csv:107",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The flight was late owing to the bad weather.",
+     "The flight was late owing to bad weather.",
+     "Owing to the bad weather, the flight was late.",
+     "Owing to bad weather, the flight was late.",
+     "Owing to the weather being bad, the flight was late.",
+     "The flight was late owing to the weather being bad.",
+     "The flight was late owing to the fact that the weather was bad.",
+     "Owing to the fact that the weather was bad, the flight was late."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2364",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *owing to*: The flight was late because the weather was bad.",
+   "why": "*owing to / due to / on account of* + noun.",
+   "why_lv": "*owing to / due to / on account of* + lietvārds.",
+   "answers": [
+    [
+     "The flight was late owing to the bad weather.",
+     "The flight was late owing to bad weather.",
+     "Owing to the bad weather, the flight was late.",
+     "Owing to bad weather, the flight was late.",
+     "Owing to the weather being bad, the flight was late.",
+     "The flight was late owing to the weather being bad.",
+     "The flight was late owing to the fact that the weather was bad.",
+     "Owing to the fact that the weather was bad, the flight was late."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:107"
+  }
+ },
+ "r20b-1-024": {
+  "hash": "4b38a35b8f83f5ad",
+  "gate_key": "conj_b2 | B2.1 | order | Put the words in order. | the train was cancelled and as a result we missed the concert",
+  "src": "conjunctions-1.csv:112",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "order",
+   "sentence": "the train was cancelled and as a result we missed the concert",
+   "also": [
+    "the train was cancelled and we missed the concert as a result"
+   ]
+  },
+  "item": {
+   "id": "c-2369",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*as a result* shows the result: *The train was cancelled and, as a result, we missed the concert.*",
+   "why_lv": "*as a result* rāda rezultātu: *The train was cancelled and, as a result, we missed the concert.*",
+   "sentence": "the train was cancelled and as a result we missed the concert",
+   "answers": [
+    [
+     "the train was cancelled and as a result we missed the concert",
+     "the train was cancelled and we missed the concert as a result"
+    ]
+   ],
+   "role": "check",
+   "point": "reason_result_b2",
+   "src": "conjunctions-1.csv:112"
+  }
+ },
+ "r20b-1-025": {
+  "hash": "30bea85116353d87",
+  "gate_key": "cond_mixed | B2.2 | order | Put the words in order. | had we booked earlier we would be on the beach now",
+  "src": "learn-drag-3.csv:6",
+  "point": "c_inv",
+  "key": {
+   "kind": "order",
+   "sentence": "had we booked earlier we would be on the beach now",
+   "also": [
+    "we would be on the beach now had we booked earlier",
+    "had we booked earlier we would now be on the beach",
+    "we would now be on the beach had we booked earlier",
+    "now we would be on the beach had we booked earlier",
+    "had we booked earlier now we would be on the beach"
+   ]
+  },
+  "item": {
+   "id": "c-3009",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Had* + subject + 3rd form = *If* + subject + *had* + 3rd form; the result is about now: *we would be on the beach now*.",
+   "why_lv": "*Had* + teikuma priekšmets + 3. forma = *If* + teikuma priekšmets + *had* + 3. forma; sekas ir par tagadni: *we would be on the beach now*.",
+   "sentence": "had we booked earlier we would be on the beach now",
+   "answers": [
+    [
+     "had we booked earlier we would be on the beach now",
+     "we would be on the beach now had we booked earlier",
+     "had we booked earlier we would now be on the beach",
+     "we would now be on the beach had we booked earlier",
+     "now we would be on the beach had we booked earlier",
+     "had we booked earlier now we would be on the beach"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_inv",
+   "src": "learn-drag-3.csv:6"
+  }
+ },
+ "r20b-1-026": {
+  "hash": "b63e3e7804984f0d",
+  "gate_key": "rep_statements | B2.1 | gap | He ___ ___ that the shop was closed. | ",
+  "src": "learn-drag-3.csv:11",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "told"
+    ],
+    [
+     "me"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3014",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He ___ ___ that the shop was closed.",
+   "why": "*tell* needs a person: *He told me / us that…*; or use *said*.",
+   "why_lv": "Aiz *tell* norāda adresātu: *He told me / us that*…. Bez adresāta lieto *said*.",
+   "answers": [
+    [
+     "told"
+    ],
+    [
+     "me"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "told",
+    "me",
+    "said",
+    "that"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_say_tell",
+   "src": "learn-drag-3.csv:11"
+  }
+ },
+ "r20b-1-027": {
+  "hash": "6ce7956c35bb9eec",
+  "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | whoever wins the quiz gets a free dinner",
+  "src": "learn-drag-3.csv:28",
+  "point": "whoever",
+  "key": {
+   "kind": "order",
+   "sentence": "whoever wins the quiz gets a free dinner",
+   "also": []
+  },
+  "item": {
+   "id": "c-3031",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*whoever* = it does not matter who: *Whoever wins the quiz* is the subject of *gets*.",
+   "why_lv": "*whoever* nozīmē 'jebkurš, kas': *Whoever wins the quiz* ir darbības vārda *gets* teikuma priekšmets.",
+   "sentence": "whoever wins the quiz gets a free dinner",
+   "answers": [
+    [
+     "whoever wins the quiz gets a free dinner"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "whoever",
+   "src": "learn-drag-3.csv:28"
+  }
+ },
+ "r20b-1-028": {
+  "hash": "05f2e24ec7a0c9f9",
+  "gate_key": "cond_third | B2.2 | order | Put the words in order. | if I'd known about the traffic I would've left earlier",
+  "src": "learn-drag-4.csv:23",
+  "point": "c3",
+  "key": {
+   "kind": "order",
+   "sentence": "if I'd known about the traffic I would've left earlier",
+   "also": [
+    "I would've left earlier if I'd known about the traffic",
+    "if I'd known about the traffic earlier I would've left",
+    "I would've left if I'd known about the traffic earlier",
+    "if I'd known earlier about the traffic I would've left",
+    "I would've left if I'd known earlier about the traffic"
+   ]
+  },
+  "item": {
+   "id": "c-3059",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*If I'd known* = *If I had known*; no *would have* after *if*.",
+   "why_lv": "*If I'd known = If I had known*; aiz *if* nelieto *would have*.",
+   "sentence": "if I'd known about the traffic I would've left earlier",
+   "answers": [
+    [
+     "if I'd known about the traffic I would've left earlier",
+     "I would've left earlier if I'd known about the traffic",
+     "if I'd known about the traffic earlier I would've left",
+     "I would've left if I'd known about the traffic earlier",
+     "if I'd known earlier about the traffic I would've left",
+     "I would've left if I'd known earlier about the traffic"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c3",
+   "src": "learn-drag-4.csv:23"
+  }
+ },
+ "r20b-1-029": {
+  "hash": "a0672c944fe12d6c",
+  "gate_key": "conj_clauses | B2.1 | gap | They walked quietly so as ___ ___ wake the baby. | ",
+  "src": "learn-drag-4.csv:29",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not"
+    ],
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3065",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "They walked quietly so as ___ ___ wake the baby.",
+   "why": "Purpose, negative: *so as not to* + base form.",
+   "why_lv": "Nolūks noliegumā: *so as not to* + pamatforma.",
+   "answers": [
+    [
+     "not"
+    ],
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "not",
+    "to",
+    "that",
+    "don't"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "purpose_b2",
+   "src": "learn-drag-4.csv:29"
+  }
+ },
+ "r20b-1-030": {
+  "hash": "734b62c4474fc96c",
+  "gate_key": "rep_questions | B2.1 | order | Put the words in order. | Lena asked me to send her the invoice",
+  "src": "learn-drag-4.csv:38",
+  "point": "rep_orders",
+  "key": {
+   "kind": "order",
+   "sentence": "Lena asked me to send her the invoice",
+   "also": [
+    "Lena asked her to send me the invoice"
+   ]
+  },
+  "item": {
+   "id": "c-3074",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.",
+   "why_lv": "Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.",
+   "sentence": "Lena asked me to send her the invoice",
+   "answers": [
+    [
+     "Lena asked me to send her the invoice",
+     "Lena asked her to send me the invoice"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_orders",
+   "src": "learn-drag-4.csv:38"
+  }
+ },
+ "r20b-1-031": {
+  "hash": "1aa390ea7c3ad79b",
+  "gate_key": "cond_second | B2.1 | gap | The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel) | ",
+  "src": "twins-1.csv:44",
+  "point": "c2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "built",
+     "were to build"
+    ],
+    [
+     "would travel",
+     "might travel",
+     "could travel",
+     "would be travelling"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3416",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel)",
+   "why": "*if* + past, *would* + base form.",
+   "why_lv": "*if* + pagātne, *would* + pamatforma.",
+   "answers": [
+    [
+     "built",
+     "were to build"
+    ],
+    [
+     "would travel",
+     "might travel",
+     "could travel",
+     "would be travelling"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c2",
+   "src": "twins-1.csv:44"
+  }
+ },
+ "r20b-1-032": {
+  "hash": "39066c5cf4e093c3",
+  "gate_key": "cond_advanced | B2.2 | mcq | Choose the correct option: ___ for your help, we would never have finished on time. | But",
+  "src": "twins-1.csv:53",
+  "point": "x_inv_cond",
+  "key": {
+   "kind": "mcq",
+   "correct": "But",
+   "wrong": [
+    "Unless",
+    "Otherwise",
+    "Provided"
+   ]
+  },
+  "item": {
+   "id": "c-3425",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ for your help, we would never have finished on time.",
+   "why": "*But for* + noun = *If it hadn't been for*.",
+   "why_lv": "*But for* + lietvārds = *If it hadn't been for.*",
+   "correct": "But",
+   "wrong": [
+    "Unless",
+    "Otherwise",
+    "Provided"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_inv_cond",
+   "src": "twins-1.csv:53"
+  }
+ },
+ "r20b-1-033": {
+  "hash": "e0a70fdd796a0d26",
+  "gate_key": "cond_advanced | B2.2 | gap | ___ it not been for the rain, the match would have finished on time. | ",
+  "src": "twins-1.csv:57",
+  "point": "x_inv_cond",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3429",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ it not been for the rain, the match would have finished on time.",
+   "why": "*Had it not been for* = *If it hadn't been for*.",
+   "why_lv": "*Had it not been for = If it hadn't been for.*",
+   "answers": [
+    [
+     "Had"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Had",
+    "Were",
+    "Should"
+   ],
+   "role": "check",
+   "point": "x_inv_cond",
+   "src": "twins-1.csv:57"
+  }
+ },
+ "r20b-1-034": {
+  "hash": "bcec749f127f9922",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports this: 'You lost my keys!' | He accused me of losing his keys.",
+  "src": "twins-1.csv:63",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "He accused me of losing his keys.",
+   "wrong": [
+    "He accused me to lose his keys.",
+    "He accused me that I lost his keys.",
+    "He accused me for losing his keys."
+   ]
+  },
+  "item": {
+   "id": "c-3435",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence reports this: 'You lost my keys!'",
+   "why": "*accuse* someone *of* + -ing.",
+   "why_lv": "*accuse* kādu *of + -ing*.",
+   "correct": "He accused me of losing his keys.",
+   "wrong": [
+    "He accused me to lose his keys.",
+    "He accused me that I lost his keys.",
+    "He accused me for losing his keys."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "twins-1.csv:63"
+  }
+ },
+ "r20b-1-035": {
+  "hash": "cee628cfd3a9fd3a",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports this: 'No, I won't take another exam.' | He refused to take another exam.",
+  "src": "twins-2.csv:13",
+  "point": "rv_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "He refused to take another exam.",
+   "wrong": [
+    "He refused taking another exam.",
+    "He refused that he would take another exam.",
+    "He refused to taking another exam."
+   ]
+  },
+  "item": {
+   "id": "c-3461",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence reports this: 'No, I won't take another exam.'",
+   "why": "*Refuse* + *to* + base form: *refused to take*.",
+   "why_lv": "*Refuse + to* + pamatforma: *refused to take*.",
+   "correct": "He refused to take another exam.",
+   "wrong": [
+    "He refused taking another exam.",
+    "He refused that he would take another exam.",
+    "He refused to taking another exam."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rv_to",
+   "src": "twins-2.csv:13"
+  }
+ },
+ "r20b-1-036": {
+  "hash": "0d88e9509f6e840e",
+  "gate_key": "cond_third | B2.1 | mcq | Which sentence has a mistake? | If I would have saved a copy, I wouldn't have lost my work.",
+  "src": "twins-2.csv:24",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I would have saved a copy, I wouldn't have lost my work.",
+   "wrong": [
+    "If she had booked earlier, she would have paid less for the flight.",
+    "If we had trained harder, we could have finished the race together.",
+    "If he had checked the date, he would have attended the right meeting."
+   ]
+  },
+  "item": {
+   "id": "c-3472",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "No *would* in the *if*-part: *If I had saved a copy*.",
+   "why_lv": "*If* daļā nelieto *would*: *If I had saved a copy*.",
+   "correct": "If I would have saved a copy, I wouldn't have lost my work.",
+   "wrong": [
+    "If she had booked earlier, she would have paid less for the flight.",
+    "If we had trained harder, we could have finished the race together.",
+    "If he had checked the date, he would have attended the right meeting."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "c3",
+   "src": "twins-2.csv:24"
+  }
+ },
+ "r20b-1-037": {
+  "hash": "9e261080e80afef5",
+  "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | she had been learning French for years when she moved",
+  "src": "twins-2.csv:48",
+  "point": "pastpc",
+  "key": {
+   "kind": "order",
+   "sentence": "she had been learning French for years when she moved",
+   "also": [
+    "when she moved she had been learning French for years",
+    "she moved when she had been learning French for years",
+    "when she had been learning French for years she moved",
+    "for years she had been learning French when she moved"
+   ]
+  },
+  "item": {
+   "id": "c-3496",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Had been* + *-ing* describes an activity continuing up to a past event.",
+   "why_lv": "*Had been + -ing* izsaka darbību, kas turpinājās līdz pagātnes notikumam.",
+   "sentence": "she had been learning French for years when she moved",
+   "answers": [
+    [
+     "she had been learning French for years when she moved",
+     "when she moved she had been learning French for years",
+     "she moved when she had been learning French for years",
+     "when she had been learning French for years she moved",
+     "for years she had been learning French when she moved"
+    ]
+   ],
+   "role": "check",
+   "point": "pastpc",
+   "src": "twins-2.csv:48"
+  }
+ },
+ "r20b-1-038": {
+  "hash": "ab48ef8a8f2090e7",
+  "gate_key": "rep_statements | B2.1 | mcq | Which sentence is correct? | The agent said I might need a visa.",
+  "src": "twins-3.csv:13",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "mcq",
+   "correct": "The agent said I might need a visa.",
+   "wrong": [
+    "The agent told I might need a visa.",
+    "The agent said I might to need a visa.",
+    "The agent said me I might need a visa."
+   ]
+  },
+  "item": {
+   "id": "c-3511",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*might* does not change, and the base form follows it. *tell* needs a person (*told me*); *say* takes none, or *to* (*said to me*).",
+   "why_lv": "*might* nemainās, aiz tā lieto pamatformu. Aiz *tell* vajag personu (*told me*); aiz *say* personu nelieto vai pievieno ar *to* (*said to me*).",
+   "correct": "The agent said I might need a visa.",
+   "wrong": [
+    "The agent told I might need a visa.",
+    "The agent said I might to need a visa.",
+    "The agent said me I might need a visa."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "twins-3.csv:13"
+  }
+ },
+ "r20b-1-039": {
+  "hash": "da069b2342684862",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports this advice: 'If I were you, I'd get a second opinion before the operation.' | She advised me to get a second opinion before the operation.",
+  "src": "twins-3.csv:18",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "She advised me to get a second opinion before the operation.",
+   "wrong": [
+    "She advised me getting a second opinion before the operation.",
+    "She suggested me to get a second opinion before the operation.",
+    "She advised to get a second opinion before the operation."
+   ]
+  },
+  "item": {
+   "id": "c-3516",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence reports this advice: 'If I were you, I'd get a second opinion before the operation.'",
+   "why": "*advise* + person + *to* + verb; *suggest* never takes a person + *to*.",
+   "why_lv": "*advise* + persona + to + darbības vārds; aiz *suggest* nekad nav persona + to.",
+   "correct": "She advised me to get a second opinion before the operation.",
+   "wrong": [
+    "She advised me getting a second opinion before the operation.",
+    "She suggested me to get a second opinion before the operation.",
+    "She advised to get a second opinion before the operation."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rv_obj_to",
+   "src": "twins-3.csv:18"
+  }
+ },
+ "r20b-1-040": {
+  "hash": "c7cd50d769c9a2ae",
+  "gate_key": "ind_advanced | B2.2 | text | Join the sentences: She didn't know. Who should she ask? | ",
+  "src": "twins-3.csv:23",
+  "point": "iq_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She didn't know who to ask.",
+     "She didn't know whom to ask.",
+     "She didn't know who she should ask.",
+     "She didn't know whom she should ask."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3521",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join the sentences: She didn't know. Who should she ask?",
+   "why": "A question inside a sentence: *who to ask* (question word + *to* + base form) or *who she should ask* (statement order).",
+   "why_lv": "Jautājums teikuma iekšā: *who to ask* (jautājamais vārds + *to* + pamatforma) vai *who she should ask* (apgalvojuma vārdu secība).",
+   "answers": [
+    [
+     "She didn't know who to ask.",
+     "She didn't know whom to ask.",
+     "She didn't know who she should ask.",
+     "She didn't know whom she should ask."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_to",
+   "src": "twins-3.csv:23"
+  }
+ },
+ "r20b-1-041": {
+  "hash": "c17675c4ff7bdc5c",
+  "gate_key": "ind_advanced | B2.2 | text | Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you. | ",
+  "src": "twins-3.csv:27",
+  "point": "whoever",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'll support you whatever you decide.",
+     "I will support you whatever you decide.",
+     "I'll support you no matter what you decide.",
+     "I will support you no matter what you decide.",
+     "I'll support you whichever way you decide.",
+     "I'll support you however you decide.",
+     "I'll support you regardless of what you decide."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3525",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+   "why": "*whatever you decide* = it does not matter what you decide (*no matter what* means the same); no *will* after it.",
+   "why_lv": "*whatever you decide* nozīmē “lai ko tu izlemtu” (*no matter what* nozīmē to pašu); aiz tā nelieto *will*.",
+   "answers": [
+    [
+     "I'll support you whatever you decide.",
+     "I will support you whatever you decide.",
+     "I'll support you no matter what you decide.",
+     "I will support you no matter what you decide.",
+     "I'll support you whichever way you decide.",
+     "I'll support you however you decide.",
+     "I'll support you regardless of what you decide."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "twins-3.csv:27"
+  }
+ },
+ "r20b-1-042": {
+  "hash": "1738883542683fa4",
+  "gate_key": "cond_third | B2.1 | gap | If you had asked me, I ___ you with the move. (help) | ",
+  "src": "typical-b2c1-1.csv:6",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would have helped",
+     "'d have helped",
+     "might have helped",
+     "could have helped"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3537",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If you had asked me, I ___ you with the move. (help)",
+   "why": "The result in an imagined past: *would have* (or *could have, might have*) + 3rd form.",
+   "why_lv": "Sekas iedomātā pagātnē: *would have* (vai *could have, might have*) + 3. forma.",
+   "answers": [
+    [
+     "would have helped",
+     "'d have helped",
+     "might have helped",
+     "could have helped"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c3",
+   "src": "typical-b2c1-1.csv:6"
+  }
+ },
+ "r20b-1-043": {
+  "hash": "082f156f29317135",
+  "gate_key": "ind_polite | B2.1 | gap | Could you tell me what time the museum ___ on Sundays? (open) | ",
+  "src": "typical-b2c1-1.csv:11",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "opens"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3542",
+   "skill": "ind_polite",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Could you tell me what time the museum ___ on Sundays? (open)",
+   "why": "The embedded question has subject before verb and no *does*: *what time the museum opens*.",
+   "why_lv": "Netiešajā jautājumā teikuma priekšmets ir pirms darbības vārda, un nav *does*: *what time the museum opens*.",
+   "answers": [
+    [
+     "opens"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_wh",
+   "src": "typical-b2c1-1.csv:11"
+  }
+ },
+ "r20b-1-044": {
+  "hash": "7f9a2ce37b008ed8",
+  "gate_key": "conj_clauses | B2.1 | gap | I set two alarms in order ___ my early flight. (not / miss) | ",
+  "src": "typical-b2c1-1.csv:14",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not to miss",
+     "to not miss"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3545",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I set two alarms in order ___ my early flight. (not / miss)",
+   "why": "Purpose, negative: *in order not to* + base form.",
+   "why_lv": "Nolūks noliegumā: *in order not to* + pamatforma.",
+   "answers": [
+    [
+     "not to miss",
+     "to not miss"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "purpose_b2",
+   "src": "typical-b2c1-1.csv:14"
+  }
+ },
+ "r20b-1-045": {
+  "hash": "8fa9a373c61503e0",
+  "gate_key": "rep_verbs | B2.2 | gap | She apologised ___ the meeting without a word. (leave) | ",
+  "src": "typical-b2c1-1.csv:19",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for leaving",
+     "for having left"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3550",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She apologised ___ the meeting without a word. (leave)",
+   "why": "*apologise for* + *-ing* (or *having* + 3rd form).",
+   "why_lv": "*apologise for* + darbības vārds ar *-ing* (vai *having* + 3. forma).",
+   "answers": [
+    [
+     "for leaving",
+     "for having left"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "typical-b2c1-1.csv:19"
+  }
+ },
+ "r20b-1-046": {
+  "hash": "eb1273adbccf194a",
+  "gate_key": "narrative_b2 | B2.2 | gap | She was smiling when I saw her, but her eyes were red because she ___ . (cry) | ",
+  "src": "typical-b2c1-1.csv:22",
+  "point": "pastpc",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been crying",
+     "'d been crying",
+     "had cried",
+     "'d cried"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3553",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She was smiling when I saw her, but her eyes were red because she ___ . (cry)",
+   "why": "The crying was over before that moment and we see its result: *had been* + *-ing* (*had cried* is also possible).",
+   "why_lv": "Raudāšana bija beigusies pirms tā brīža, un mēs redzam tās rezultātu: *had been* + *-ing* (iespējams arī *had cried*).",
+   "answers": [
+    [
+     "had been crying",
+     "'d been crying",
+     "had cried",
+     "'d cried"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc",
+   "src": "typical-b2c1-1.csv:22"
+  }
+ },
+ "r20b-1-047": {
+  "hash": "bf5785733610819b",
+  "gate_key": "conj_b2 | B2.2 | gap | Sales fell sharply; ___ , the company cut its prices. | ",
+  "src": "typical-b2c1-1.csv:25",
+  "point": "reason_result_b2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "therefore",
+     "as a result",
+     "consequently",
+     "thus",
+     "as a consequence",
+     "accordingly",
+     "hence",
+     "for this reason",
+     "in response"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3556",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Sales fell sharply; ___ , the company cut its prices.",
+   "why": "A result as a new step after a semicolon: *therefore*, *as a result*.",
+   "why_lv": "Rezultāts kā jauns *solis* aiz *semikola*: *therefore, as a result*.",
+   "answers": [
+    [
+     "therefore",
+     "as a result",
+     "consequently",
+     "thus",
+     "as a consequence",
+     "accordingly",
+     "hence",
+     "for this reason",
+     "in response"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "reason_result_b2",
+   "src": "typical-b2c1-1.csv:25"
+  }
+ },
+ "r20b-1-048": {
+  "hash": "ed843f0d0da40051",
+  "gate_key": "cond_advanced | B2.2 | gap | ___ we left ten minutes earlier, we would have caught the ferry. (have) | ",
+  "src": "typical-b2c1-1.csv:30",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3561",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ we left ten minutes earlier, we would have caught the ferry. (have)",
+   "why": "Formal, without *if*: *Had we left* = *If we had left*.",
+   "why_lv": "Formāli, bez *if*: *Had we left* = *If we had left*.",
+   "answers": [
+    [
+     "Had"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_inv",
+   "src": "typical-b2c1-1.csv:30"
+  }
+ },
+ "r20b-1-049": {
+  "hash": "99b8c33dea0e53b2",
+  "gate_key": "rep_verbs | B2.2 | gap | My father insisted ___ us to the airport. (drive) | ",
+  "src": "typical-b2c1-1.csv:33",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on driving",
+     "that he drive",
+     "that he should drive",
+     "he should drive",
+     "that he would drive",
+     "he would drive",
+     "that he'd drive",
+     "he'd drive"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3564",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My father insisted ___ us to the airport. (drive)",
+   "why": "*insist on* + *-ing* (or *insist that he drive / should drive*).",
+   "why_lv": "*insist on* + darbības vārds ar *-ing* (vai *insist that he drive / should drive*).",
+   "answers": [
+    [
+     "on driving",
+     "that he drive",
+     "that he should drive",
+     "he should drive",
+     "that he would drive",
+     "he would drive",
+     "that he'd drive",
+     "he'd drive"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_prep_ing",
+   "src": "typical-b2c1-1.csv:33"
+  }
+ },
+ "r20b-1-050": {
+  "hash": "9673127e6c7d69ba",
+  "gate_key": "rep_verbs | B2.2 | gap | The minister denied ___ the report before it was published. (see) | ",
+  "src": "typical-b2c1-1.csv:37",
+  "point": "rv_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "having seen",
+     "seeing",
+     "that he had seen",
+     "he had seen",
+     "that he'd seen",
+     "he'd seen",
+     "that he saw",
+     "he saw"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3568",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The minister denied ___ the report before it was published. (see)",
+   "why": "*deny* + *-ing* (or *having* + 3rd form).",
+   "why_lv": "*deny + -ing* (vai *having* + 3. forma).",
+   "answers": [
+    [
+     "having seen",
+     "seeing",
+     "that he had seen",
+     "he had seen",
+     "that he'd seen",
+     "he'd seen",
+     "that he saw",
+     "he saw"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rv_ing",
+   "src": "typical-b2c1-1.csv:37"
+  }
+ },
+ "r20b-1-051": {
+  "hash": "6d07aa701d0d386b",
+  "gate_key": "ind_advanced | B2.2 | gap | Our holiday plans depend on ___ my boss gives me the week off. | ",
+  "src": "typical-b2c1-1.csv:40",
+  "point": "iq_whether",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3571",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our holiday plans depend on ___ my boss gives me the week off.",
+   "why": "After a preposition use *whether*, not *if*.",
+   "why_lv": "Aiz prievārda lieto *whether*, nevis *if*.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_whether",
+   "src": "typical-b2c1-1.csv:40"
+  }
+ },
+ "r20b-1-052": {
+  "hash": "ca28662616d341f4",
+  "gate_key": "unreal_time | B2.2 | mcq | Choose the correct option: It's high time the city ___ more cycle lanes. | built",
+  "src": "unreal-time-1.csv:4",
+  "point": "its_time_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "built",
+   "wrong": [
+    "will build",
+    "building",
+    "to build"
+   ]
+  },
+  "item": {
+   "id": "c-3576",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: It's high time the city ___ more cycle lanes.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu.",
+   "correct": "built",
+   "wrong": [
+    "will build",
+    "building",
+    "to build"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:4"
+  }
+ },
+ "r20b-1-053": {
+  "hash": "adfdf192c6b4e9e7",
+  "gate_key": "unreal_time | B2.2 | mcq | Which sentence has a mistake? | I'd rather to cook at home than eat out.",
+  "src": "unreal-time-1.csv:9",
+  "point": "would_rather",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'd rather to cook at home than eat out.",
+   "wrong": [
+    "I'd rather you didn't tell Mark yet.",
+    "It's high time they fixed the road.",
+    "We'd sooner leave early on Friday."
+   ]
+  },
+  "item": {
+   "id": "c-3581",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I'd rather* + base form, without *to*: *I'd rather cook*.",
+   "why_lv": "*I'd rather* + pamatforma bez *to*: *I'd rather cook.*",
+   "correct": "I'd rather to cook at home than eat out.",
+   "wrong": [
+    "I'd rather you didn't tell Mark yet.",
+    "It's high time they fixed the road.",
+    "We'd sooner leave early on Friday."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "would_rather",
+   "src": "unreal-time-1.csv:9"
+  }
+ }
+}

@@ -1,0 +1,500 @@
+[
+ {
+  "id": "r20-5-001",
+  "decision": "keep",
+  "why": "Reader only remarks that the order task is fine; all natural orders are accepted."
+ },
+ {
+  "id": "r20-5-002",
+  "decision": "fix",
+  "why": "'Imagine a different past and its result now' describes the structure; a plain situation with 'now' rules out the other options by itself.",
+  "fix": {
+   "q": "Choose the correct option: I didn't charge my phone last night, so it's dead now.",
+   "why": "The condition changes a past event; *would* + base form gives its result now.",
+   "why_lv": "Nosacījums maina pagātnes notikumu; *would* + pamatforma izsaka tā sekas tagad."
+  }
+ },
+ {
+  "id": "r20-5-003",
+  "decision": "accept",
+  "why": "Reader 1 only typed two words per gap; the content is the key's. 'd for had in gap 1 is correct and the checker does not add 'd.",
+  "accept": [
+   [
+    "'d"
+   ],
+   [],
+   [],
+   []
+  ]
+ },
+ {
+  "id": "r20-5-004",
+  "decision": "practice_only",
+  "why": "Six cards, one possible order, apologise for + -ing: far too easy for B2.2 as evidence."
+ },
+ {
+  "id": "r20-5-005",
+  "decision": "keep",
+  "why": "suggested to meet is the card's typical mistake and the three right sentences use different verbs; reporting-verb patterns are the B2.2 point of this card (EGP B2)."
+ },
+ {
+  "id": "r20-5-006",
+  "decision": "fix",
+  "why": "'refused take' is a form nobody writes; replaced by the map's real mistake 'refused that he would'. The task reports meaning (No, I won't = refuse), a B2 reporting-verb point.",
+  "fix": {
+   "wrong": [
+    "He refused taking another exam.",
+    "He refused that he would take another exam.",
+    "He refused to taking another exam."
+   ]
+  }
+ },
+ {
+  "id": "r20-5-007",
+  "decision": "keep",
+  "why": "Every correct form (-ing, having + 3rd form, that-clause with and without that) is already accepted."
+ },
+ {
+  "id": "r20-5-008",
+  "decision": "keep",
+  "why": "Readers find the only order and call it fine."
+ },
+ {
+  "id": "r20-5-010",
+  "decision": "fix",
+  "why": "'can to meet' and 'can meets' test the modal, not the point (statement order after whether); the wrong options are now all question-order mistakes from the card.",
+  "fix": {
+   "wrong": [
+    "whether can the supplier meet the deadline",
+    "if can the supplier meet the deadline",
+    "whether is the supplier able to meet the deadline"
+   ]
+  }
+ },
+ {
+  "id": "r20-5-011",
+  "decision": "accept",
+  "why": "'ought to take' and the formal 'are to take' are correct English in statement order.",
+  "accept": [
+   [
+    "It is unclear which route we ought to take.",
+    "It's unclear which route we ought to take.",
+    "It is unclear which route we are to take.",
+    "It's unclear which route we are to take."
+   ]
+  ]
+ },
+ {
+  "id": "r20-5-012",
+  "decision": "practice_only",
+  "why": "Basic third-conditional form with three options and obvious wrong forms: a B1 point (map c3: B1), far too easy for B2.1 evidence."
+ },
+ {
+  "id": "r20-5-013",
+  "decision": "fix",
+  "why": "'had save' reads as a typo; the mistake B2 learners really make is would in the if-part (card mistake, rules 21 Nov example).",
+  "fix": {
+   "correct": "If I would have saved a copy, I wouldn't have lost my work.",
+   "why": "No *would* in the *if*-part: *If I had saved a copy*.",
+   "why_lv": "*If* daļā nelieto *would*: *If I had saved a copy*."
+  }
+ },
+ {
+  "id": "r20-5-014",
+  "decision": "practice_only",
+  "why": "Basic third-conditional form, three options with obvious wrong forms: B1 point, far too easy for B2.1."
+ },
+ {
+  "id": "r20-5-015",
+  "decision": "practice_only",
+  "why": "Third conditional rewrite with if and would named: a B1 point. phoned/rung are not added: a rewrite keeps the sentence's own verb."
+ },
+ {
+  "id": "r20-5-016",
+  "decision": "practice_only",
+  "why": "Basic reported yes/no question with weak wrong forms (could fixed, could to fix): B1 point, far too easy for B2.1."
+ },
+ {
+  "id": "r20-5-017",
+  "decision": "practice_only",
+  "why": "told me not to + base form is a B1 point (map rep_orders B1); far too easy for B2.1 evidence."
+ },
+ {
+  "id": "r20-5-018",
+  "decision": "keep",
+  "why": "where did I buy is the card's main mistake, still made at B2; the three right sentences are about different things (whether + past perfect, if + could, how long + would)."
+ },
+ {
+  "id": "r20-5-019",
+  "decision": "fix",
+  "why": "Both reports are already accepted, but the key also accepts two unnatural fronted orders with a lower-case name ('If I could check the figures, omar asked me.'); they are removed.",
+  "fix": {
+   "answers": [
+    [
+     "Omar asked me to check the figures.",
+     "Omar asked me if I could check the figures.",
+     "Omar asked me whether I could check the figures.",
+     "Omar asked if I could check the figures.",
+     "Omar asked whether I could check the figures."
+    ]
+   ],
+   "why": "A request can be reported as *asked me to check* or *asked me if/whether I could check*.",
+   "why_lv": "Lūgumu var atstāstīt ar *asked me to check* vai *asked me if/whether I could check*."
+  }
+ },
+ {
+  "id": "r20-5-020",
+  "decision": "fix",
+  "why": "Readers find the order fine, but the key accepts 'when the storm began for hours we had been hiking', which is not a natural order (rule 4 Nov); removed.",
+  "fix": {
+   "answers": [
+    [
+     "we had been hiking for hours when the storm began",
+     "when the storm began we had been hiking for hours",
+     "the storm began when we had been hiking for hours",
+     "when we had been hiking for hours the storm began",
+     "for hours we had been hiking when the storm began"
+    ]
+   ],
+   "why": "*Had been* + *-ing* describes an activity continuing up to a past event.",
+   "why_lv": "*Had been + -ing* izsaka darbību, kas turpinājās līdz pagātnes notikumam."
+  }
+ },
+ {
+  "id": "r20-5-021",
+  "decision": "keep",
+  "why": "had been + -ing with a visible result (wet floor, all night) is the B2 point of this card; 'had been leak' is the card's own mistake. Reader 2 finds the level fine."
+ },
+ {
+  "id": "r20-5-022",
+  "decision": "accept",
+  "why": "'d answered is correct and the checker does not add 'd. 'answered' is rejected: the task was rewritten (4 Nov) so that by the time ... so she left early needs had + 3rd form.",
+  "accept": [
+   [
+    "'d answered"
+   ]
+  ]
+ },
+ {
+  "id": "r20-5-023",
+  "decision": "fix",
+  "why": "Reader 1 is right that 'when she moved for years she had been learning French' is odd; it is not a natural order and is removed from the key.",
+  "fix": {
+   "answers": [
+    [
+     "she had been learning French for years when she moved",
+     "when she moved she had been learning French for years",
+     "she moved when she had been learning French for years",
+     "when she had been learning French for years she moved",
+     "for years she had been learning French when she moved"
+    ]
+   ],
+   "why": "*Had been* + *-ing* describes an activity continuing up to a past event.",
+   "why_lv": "*Had been + -ing* izsaka darbību, kas turpinājās līdz pagātnes notikumam."
+  }
+ },
+ {
+  "id": "r20-5-025",
+  "decision": "keep",
+  "why": "Reader only calls the instruction fine; would/could/would be able to are all accepted."
+ },
+ {
+  "id": "r20-5-026",
+  "decision": "keep",
+  "why": "Both readers pick the key (would after if). Option A is a correct mixed conditional (card: present quality, past result), so it is rightly one of the correct sentences."
+ },
+ {
+  "id": "r20-5-027",
+  "decision": "keep",
+  "why": "Reader only remarks on meaning; it is the card's present-quality, past-result pattern."
+ },
+ {
+  "id": "r20-5-030",
+  "decision": "fix",
+  "why": "The key is right, but the correct sentence 'Were she less shy...' uses inversion with Were, which the cond_mixed card does not teach (only Had); replaced by a card form.",
+  "fix": {
+   "wrong": [
+    "Had he trained harder, he would be in the team now.",
+    "If she weren't so shy, she would have spoken up at the meeting.",
+    "Had they not moved, they would live next door now."
+   ]
+  }
+ },
+ {
+  "id": "r20-5-031",
+  "decision": "keep",
+  "why": "Reader only notes the bare instruction; one option is correct."
+ },
+ {
+  "id": "r20-5-032",
+  "decision": "keep",
+  "why": "must may stay or become had to, and to warm up is accepted; 'have to' is rejected by the taught rule (one step back after a past reporting verb, 11 Nov). Reader 2's answer is the key's answer with optional that."
+ },
+ {
+  "id": "r20-5-033",
+  "decision": "practice_only",
+  "why": "told that without a person is the say/tell point (map: A2, app from B1.1); a B1 point in a B2.1 frame."
+ },
+ {
+  "id": "r20-5-034",
+  "decision": "fix",
+  "why": "no would after as soon as is a good B2.1 point, but 'did landed' and 'would calling' are forms nobody writes; replaced by 'will land' and the card's told-without-a-person mistake.",
+  "fix": {
+   "wrong": [
+    "My sister said she would call me as soon as she would land.",
+    "My sister said she would call me as soon as she will land.",
+    "My sister told she would call me as soon as she landed."
+   ],
+   "why": "*will* becomes *would*; after *as soon as* no *would* or *will*: *as soon as she landed*. *tell* needs a person: *told me*.",
+   "why_lv": "*will* kļūst par *would*; aiz *as soon as* nelieto *would* vai *will*: *as soon as she landed*. Aiz *tell* vajag personu: *told me*."
+  }
+ },
+ {
+  "id": "r20-5-035",
+  "decision": "fix",
+  "why": "'mighted' is a form nobody writes; replaced by the card's mistake 'told' without a person.",
+  "fix": {
+   "wrong": [
+    "The agent told I might need a visa.",
+    "The agent said I might to need a visa.",
+    "The agent said me I might need a visa."
+   ],
+   "why": "*might* does not change, and the base form follows it. *tell* needs a person (*told me*); *say* takes none, or *to* (*said to me*).",
+   "why_lv": "*might* nemainās, aiz tā lieto pamatformu. Aiz *tell* vajag personu (*told me*); aiz *say* personu nelieto vai pievieno ar *to* (*said to me*)."
+  }
+ },
+ {
+  "id": "r20-5-036",
+  "decision": "fix",
+  "why": "'how to starting' and 'how she should starts' are random forms; replaced by card mistakes (do-question order, asked to me). how to in a reported question stays a B2.2 point.",
+  "fix": {
+   "wrong": [
+    "She asked me how should she start.",
+    "She asked me how do I start.",
+    "She asked to me how to start."
+   ],
+   "why": "In a reported question the word order is like a statement, with no *do*: *how to start* or *how she should start*. *ask* takes the person without *to*.",
+   "why_lv": "Atstāstītā jautājumā vārdu secība ir kā apgalvojumā, bez *do*: *how to start* vai *how she should start*. Aiz *ask* personu liek bez *to*."
+  }
+ },
+ {
+  "id": "r20-5-037",
+  "decision": "accept",
+  "why": "'ought to' (= should) and the formal 'were to' are correct reports in statement order. 'had to / would have to' are not added: they turn advice into an obligation (do not accept forms that change the meaning).",
+  "accept": [
+   [
+    "They asked what time they ought to arrive.",
+    "They asked what time they were to arrive."
+   ]
+  ]
+ },
+ {
+  "id": "r20-5-039",
+  "decision": "keep",
+  "why": "'asked have the invoices been sent' is the card's mistake type (She asked do I like coffee): learners drop if/whether and keep question order."
+ },
+ {
+  "id": "r20-5-040",
+  "decision": "fix",
+  "why": "'advised to me get' is an unlikely error; replaced by the map's real mistake 'advised to get' (no person).",
+  "fix": {
+   "wrong": [
+    "She advised me getting a second opinion before the operation.",
+    "She suggested me to get a second opinion before the operation.",
+    "She advised to get a second opinion before the operation."
+   ]
+  }
+ },
+ {
+  "id": "r20-5-041",
+  "decision": "keep",
+  "why": "Reader only notes that urge is stronger than should; the start is given and all forms are accepted."
+ },
+ {
+  "id": "r20-5-043",
+  "decision": "fix",
+  "why": "The key is right, but 'complained about' is not on the rep_verbs card (rule 22 Nov); replaced by a tense mistake in the that-clause. 'complained me that' is on the grammar map's mistake list.",
+  "fix": {
+   "wrong": [
+    "The client complained that the delivery has been three days late.",
+    "The client complained that the delivery had be three days late.",
+    "The client complained me that the delivery had been three days late."
+   ]
+  }
+ },
+ {
+  "id": "r20-5-044",
+  "decision": "fix",
+  "why": "'where to going', 'where go we', 'where to we go' are unlikely; replaced by the card's question-order mistake and the map's 'where go'.",
+  "fix": {
+   "wrong": [
+    "where should we go",
+    "where do we go",
+    "where go"
+   ]
+  }
+ },
+ {
+  "id": "r20-5-045",
+  "decision": "fix",
+  "why": "'using to' names the answer; without it, 'who she should ask' is also correct, so it is accepted and the task checks statement order or question word + to.",
+  "fix": {
+   "q": "Join the sentences: She didn't know. Who should she ask?",
+   "answers": [
+    [
+     "She didn't know who to ask.",
+     "She didn't know whom to ask.",
+     "She didn't know who she should ask.",
+     "She didn't know whom she should ask."
+    ]
+   ],
+   "why": "A question inside a sentence: *who to ask* (question word + *to* + base form) or *who she should ask* (statement order).",
+   "why_lv": "Jautājums teikuma iekšā: *who to ask* (jautājamais vārds + *to* + pamatforma) vai *who she should ask* (apgalvojuma vārdu secība)."
+  }
+ },
+ {
+  "id": "r20-5-047",
+  "decision": "fix",
+  "why": "'how we do will pay' is a string nobody writes and 'will to pay' tests another point; all wrong options are now question-order mistakes.",
+  "fix": {
+   "wrong": [
+    "It remains unclear how will we pay for the repairs.",
+    "It remains unclear how are we going to pay for the repairs.",
+    "It remains unclear how do we pay for the repairs."
+   ]
+  }
+ },
+ {
+  "id": "r20-5-048",
+  "decision": "fix",
+  "why": "'Wh…' is an unclear cue and lets through 'What you decide doesn't matter; ...'. A start that does not contain the answer (I'll support you) makes the -ever clause necessary; every correct ending is accepted.",
+  "fix": {
+   "q": "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+   "answers": [
+    [
+     "I'll support you whatever you decide.",
+     "I will support you whatever you decide.",
+     "I'll support you no matter what you decide.",
+     "I will support you no matter what you decide.",
+     "I'll support you whichever way you decide.",
+     "I'll support you however you decide.",
+     "I'll support you regardless of what you decide."
+    ]
+   ],
+   "why": "*whatever you decide* = it does not matter what you decide (*no matter what* means the same); no *will* after it.",
+   "why_lv": "*whatever you decide* nozīmē “lai ko tu izlemtu” (*no matter what* nozīmē to pašu); aiz tā nelieto *will*."
+  }
+ },
+ {
+  "id": "r20-5-049",
+  "decision": "fix",
+  "why": "Key is right, but 'whichever' is not on the ind_advanced card (whoever, whatever, wherever) and the mistake sentence copies the card example (Whoever finishes first can go home).",
+  "fix": {
+   "correct": "Whomever gets home first should start dinner.",
+   "wrong": [
+    "Invite whoever you like to the party.",
+    "Whatever happens, stay calm.",
+    "Wherever you go, call me first."
+   ],
+   "why": "The subject of *gets* is *whoever*, not *whomever*.",
+   "why_lv": "Darbības vārda *gets* teikuma priekšmets ir *whoever*, nevis *whomever*."
+  }
+ },
+ {
+  "id": "r20-5-051",
+  "decision": "practice_only",
+  "why": "Basic second conditional (if + knew): far too easy for B2.1. 'were to know' and 'had known' are rejected: with a state verb and 'right now' they are not natural English."
+ },
+ {
+  "id": "r20-5-052",
+  "decision": "practice_only",
+  "why": "Basic second conditional, was/were both accepted: far too easy for B2.1."
+ },
+ {
+  "id": "r20-5-053",
+  "decision": "fix",
+  "why": "'might exercise' is correct (card: could or might can replace would) and must be accepted; 'would work out' ignores the verb in brackets. Basic second conditional: practice only at B2.1.",
+  "fix": {
+   "answers": [
+    [
+     "would exercise",
+     "'d exercise",
+     "might exercise",
+     "could exercise"
+    ]
+   ],
+   "practice_only": true,
+   "why": "The result of an imagined present: *would* (or *could, might*) + base form.",
+   "why_lv": "Iedomātas tagadnes sekas: *would* (vai *could, might*) + pamatforma."
+  }
+ },
+ {
+  "id": "r20-5-054",
+  "decision": "practice_only",
+  "why": "Basic third conditional if-part: B1 point, far too easy for B2.1."
+ },
+ {
+  "id": "r20-5-055",
+  "decision": "fix",
+  "why": "'might have helped' is correct (card: could have / might have) and must be accepted. Basic third conditional: practice only at B2.1.",
+  "fix": {
+   "answers": [
+    [
+     "would have helped",
+     "'d have helped",
+     "might have helped",
+     "could have helped"
+    ]
+   ],
+   "practice_only": true,
+   "why": "The result in an imagined past: *would have* (or *could have, might have*) + 3rd form.",
+   "why_lv": "Sekas iedomātā pagātnē: *would have* (vai *could have, might have*) + 3. forma."
+  }
+ },
+ {
+  "id": "r20-5-056",
+  "decision": "fix",
+  "why": "Without the words said, 'was going to send', 'was sending', 'would be sending' are also correct; the quote (allowed pattern, 14 Nov) makes would send the one answer. will to would is a B1 point: practice only.",
+  "fix": {
+   "q": "'I'll send the report tomorrow.' Tom said he ___ the report the next day. (send)",
+   "practice_only": true,
+   "why": "Reported later: *will* becomes *would*.",
+   "why_lv": "Atstāstot vēlāk, *will* kļūst par *would*."
+  }
+ },
+ {
+  "id": "r20-5-057",
+  "decision": "fix",
+  "why": "Without the words said, 'lived' is a correct report of 'I lived in Riga for two years'. The quote makes had lived / had been living the answer (past perfect in reports: EGP B2); present perfect stays rejected by the taught rule (11 Nov).",
+  "fix": {
+   "q": "'I've lived here for two years.' She told me she ___ there for two years. (live)",
+   "why": "Reported later: *have lived* becomes *had lived* (or *had been living*).",
+   "why_lv": "Atstāstot vēlāk, *have lived* kļūst par *had lived* (vai *had been living*)."
+  }
+ },
+ {
+  "id": "r20-5-058",
+  "decision": "keep",
+  "why": "Already practice only. 'am' is rejected by the taught rule (one step back after asked, 11 Nov); 'came' ignores the verb in brackets."
+ },
+ {
+  "id": "r20-5-059",
+  "decision": "keep",
+  "why": "Already practice only. 'have studied / have been studying' are rejected by the taught rule (11 Nov); 'was studying' does not report 'How long have you been studying?'."
+ },
+ {
+  "id": "r20-5-060",
+  "decision": "fix",
+  "why": "'opened' is correct English for a past opening time, but a learner writing it is usually making the backshift the card warns against; a time word (rule 29 Oct) leaves only the habitual present.",
+  "fix": {
+   "q": "Could you tell me what time the museum ___ on Sundays? (open)",
+   "answers": [
+    [
+     "opens"
+    ]
+   ],
+   "why": "The embedded question has subject before verb and no *does*: *what time the museum opens*.",
+   "why_lv": "Netiešajā jautājumā teikuma priekšmets ir pirms darbības vārda, un nav *does*: *what time the museum opens*."
+  }
+ }
+]

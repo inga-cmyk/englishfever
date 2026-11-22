@@ -1,0 +1,40 @@
+# Judge r20b-3
+
+- r20b-3-002 **keep**: A revision task already marked learn (practice only); the past vs now/future contrast is on the B2.2 card. The level flag changes nothing.
+- r20b-3-003 **fix**: 'would acted' is a form nobody writes (like 'is get'), not a believable mistake. It is dropped; the two remaining wrong options are real learner mistakes.
+- r20b-3-004 **accept**: 'might be living' gives a possible present result of the changed past and is correct (an earlier judge also asked for might/could in this pattern).
+- r20b-3-006 **keep**: The two wrong options are different real mistakes (would have after if only; past simple for a past regret). Fine.
+- r20b-3-007 **keep**: The wrong options are believable mistakes; the level flag is a revision point already decided.
+- r20b-3-009 **keep**: 'suggested to go' is the card's typical mistake; the three right sentences use three different verbs. Level flag not a reason to change.
+- r20b-3-010 **fix**: 'congratulate someone for' is attested (especially US), so 'for' may be correct English here. It is removed from the bank; 'of' and 'to' are card words that are clearly wrong.
+- r20b-3-013 **accept**: 'Who made the decision is unclear' is correct and keeps the meaning (like the accepted 'Who made the decision is not clear').
+- r20b-3-014 **keep**: Different sentence from 040; 'Whomever' is the card's own mistake. Only one option fits.
+- r20b-3-015 **accept**: Fronted 'now' ('now I would be a doctor if...', 'if I had studied medicine, now I would be a doctor') is less natural but correct, so it is accepted.
+- r20b-3-016 **keep**: 'had been train' is the card's listed mistake (had been work); 'has been training' is wrong after 'was covered ... when I saw him'.
+- r20b-3-017 **keep**: 'served' is not natural with 'By eleven o'clock' and the 4 November rule accepts only the past perfect; 'had been serving' with a number is wrong, as the card teaches.
+- r20b-3-018 **keep**: The gap tests was doing vs had been doing at a past moment, a point of the narrative_b2 card; the level flag is a revision decision.
+- r20b-3-019 **accept**: Putting the despite phrase at the end is correct and keeps the meaning (030 already accepts it).
+- r20b-3-022 **keep**: 'for storage of' / 'for the storing of' change the structure (noun instead of -ing); the task is about for + -ing.
+- r20b-3-023 **keep**: Both clause orders are already accepted.
+- r20b-3-025 **keep**: The fronted order is already accepted; 'told us before every match to warm up' is not a natural order (as the r20 judge decided).
+- r20b-3-027 **accept**: 'prepared better' is less natural than 'better prepared' but correct; accepted in both clause orders and with the people swapped. 'if we had won the team would have been better prepared' is illogical.
+- r20b-3-028 **keep**: Practice-only task; both natural orders accepted. 'the strike went ahead despite the conference' does not make sense.
+- r20b-3-029 **keep**: All four orders the readers list are already accepted.
+- r20b-3-030 **fix**: A near-copy of 019 in the same topic and level (Despite of the delay(s) ... on time): a cloned frame (rule of 4 November). New sentence with despite + -ing, same point.
+- r20b-3-031 **accept**: 'she'd not have missed' (= would not have) is a correct British contraction.
+- r20b-3-033 **keep**: 'wouldn't park' and 'don't park' are not standard after I'd rather you (the card lists 'don't' as the mistake); the start is given, so 'Please, ...' does not follow it.
+- r20b-3-034 **keep**: would/could/might and 'd are already accepted; the verb form is the task.
+- r20b-3-036 **keep**: The 4 November rule: accept only the past perfect here ('so she left early' needs it).
+- r20b-3-038 **accept**: 'we were to arrive' is correct and matches the accepted 'they were to arrive' and 'we should arrive'. 'we would arrive' changes the meaning (no longer what they should do).
+- r20b-3-039 **keep**: Question word + to is on the B2.2 ind_advanced card; level flag not a reason.
+- r20b-3-040 **keep**: Different sentence from 014, one fitting option; the twin is allowed (one twin per source).
+- r20b-3-041 **keep**: Already a learn (practice only) task; level flag not a reason.
+- r20b-3-042 **keep**: The taught rule (11 November): after a past reporting verb only the backshifted form is accepted; 'has lived' stays rejected.
+- r20b-3-043 **keep**: Only 'Despite' fits before a noun; the level flag is a revision decision.
+- r20b-3-045 **fix**: With no time word, 'started' (and 'is to start') are also correct. The 21 October rule: a context that leaves the tense open gets a time word. 'tomorrow' added; 'is to start' accepted.
+- r20b-3-046 **keep**: Both answers the reader names are already accepted.
+- r20b-3-047 **keep**: unless is on the B2.2 cond_advanced card and the card lists 'unless ... doesn't' as the mistake; the level flag is a revision decision.
+- r20b-3-048 **accept**: 'not use' (I'd rather you not use) is correct (mainly US) and is accepted in the twin 033. 'wouldn't use' and 'don't use' are not standard after I'd rather you (the card lists 'don't').
+- r20b-3-049 **keep**: 'weren't / wasn't' are already accepted.
+- r20b-3-050 **keep**: 'Those who wins' is wrong (Those who win); the bracket word is the word to put into the right form, as the rules allow; 'Anyone who' etc. are already accepted.
+- r20b-3-051 **keep**: 'had booked' is not used after It's high time for something that should happen now (Murphy: past simple).

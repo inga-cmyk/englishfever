@@ -1,0 +1,88 @@
+{
+ "twins-3.csv": [
+  {
+   "id": "r20c-019",
+   "match": [
+    "text",
+    "Report this. Start with *They asked*: 'What time should we arrive?'",
+    "They asked what time they should arrive. | They asked what time to arrive. | They asked what time we should arrive. | They asked me what time they should arrive. | They asked us what time we should arrive. | They asked me what time to arrive. | They asked us what time to arrive. | They asked what time they ought to arrive. | They asked what time they were to arrive. | They asked what time we were to arrive."
+   ],
+   "set": {
+    "4": "They asked what time they should arrive. | They asked what time to arrive. | They asked what time we should arrive. | They asked me what time they should arrive. | They asked us what time we should arrive. | They asked me what time to arrive. | They asked us what time to arrive. | They asked what time they ought to arrive. | They asked what time they were to arrive. | They asked what time we were to arrive. | They asked what time we ought to arrive."
+   }
+  },
+  {
+   "id": "r20c-020",
+   "match": [
+    "text",
+    "Join the sentences: She didn't know. Who should she ask?",
+    "She didn't know who to ask. | She didn't know whom to ask. | She didn't know who she should ask. | She didn't know whom she should ask. | She didn't know who she ought to ask. | She didn't know whom she ought to ask."
+   ],
+   "set": {
+    "4": "She didn't know who to ask. | She didn't know whom to ask. | She didn't know who she should ask. | She didn't know whom she should ask. | She didn't know who she ought to ask. | She didn't know whom she ought to ask. | She didn't know who she was to ask. | She didn't know whom she was to ask."
+   }
+  },
+  {
+   "id": "r20c-021",
+   "match": [
+    "text",
+    "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+    "I'll support you whatever you decide. | I will support you whatever you decide. | I'll support you no matter what you decide. | I will support you no matter what you decide. | I'll support you whichever way you decide. | I'll support you however you decide. | I'll support you regardless of what you decide. | I'll support you whatever decision you make. | I will support you whatever decision you make."
+   ],
+   "set": {
+    "4": "I'll support you whatever you decide. | I will support you whatever you decide. | I'll support you no matter what you decide. | I will support you no matter what you decide. | I'll support you whichever way you decide. | I'll support you however you decide. | I'll support you regardless of what you decide. | I'll support you whatever decision you make. | I will support you whatever decision you make. | I'll support you whatever it is you decide. | I will support you whatever it is you decide."
+   }
+  }
+ ],
+ "typical-b2c1-1.csv": [
+  {
+   "id": "r20c-025",
+   "match": [
+    "gap",
+    "I'm not sure what time the meeting ___ tomorrow. (start)",
+    "starts | will start | is going to start | is starting | is to start"
+   ],
+   "set": {
+    "4": "starts | will start | is going to start | is starting | is to start | is due to start"
+   }
+  },
+  {
+   "id": "r20c-028",
+   "match": [
+    "gap",
+    "We couldn't decide where ___ on holiday. (go)",
+    "to go | we should go | we could go | we would go | we'd go | we were going to go | we ought to go | we were going"
+   ],
+   "set": {
+    "4": "to go | we should go | we could go | we would go | we'd go | we were going to go | we ought to go | we were going | we wanted to go | we were to go"
+   }
+  },
+  {
+   "id": "r20c-029",
+   "match": [
+    "gap",
+    "Our holiday plans depend on ___ my boss gives me the week off.",
+    "whether | whether or not"
+   ],
+   "set": {
+    "3": "Our holiday plans depend on ___ my boss gives me the week off or not.",
+    "4": "whether",
+    "6": "After a preposition use *whether*, not *if*: *depend on whether ... or not*.",
+    "7": "Aiz prievārda lieto *whether*, nevis *if*: *depend on whether ... or not* (vai ... vai ne)."
+   }
+  }
+ ],
+ "unreal-time-1.csv": [
+  {
+   "id": "r20c-030",
+   "match": [
+    "text",
+    "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+    "It's high time you started looking for a new job. | It's high time you started to look for a new job. | It's high time you looked for a new job. | It is high time you started looking for a new job. | It is high time you started to look for a new job. | It is high time you looked for a new job. | It's high time you began looking for a new job. | It is high time you began looking for a new job. | It's high time that you started looking for a new job. | It is high time that you started looking for a new job. | It's high time you were looking for a new job. | It is high time you were looking for a new job. | It's high time you started job-hunting. | It is high time you started job-hunting. | It's high time for you to start looking for a new job. | It is high time for you to start looking for a new job. | It's high time you started looking for a job. | It is high time you started looking for a job."
+   ],
+   "set": {
+    "4": "It's high time you started looking for a new job. | It's high time you started to look for a new job. | It's high time you looked for a new job. | It is high time you started looking for a new job. | It is high time you started to look for a new job. | It is high time you looked for a new job. | It's high time you began looking for a new job. | It is high time you began looking for a new job. | It's high time that you started looking for a new job. | It is high time that you started looking for a new job. | It's high time you were looking for a new job. | It is high time you were looking for a new job. | It's high time you started job-hunting. | It is high time you started job-hunting. | It's high time for you to start looking for a new job. | It is high time for you to start looking for a new job. | It's high time you started looking for a job. | It is high time you started looking for a job. | It's high time you started your search for a new job. | It is high time you started your search for a new job."
+   }
+  }
+ ]
+}

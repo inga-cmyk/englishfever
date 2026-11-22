@@ -1,0 +1,772 @@
+[
+{
+"id": "r20b-1-001",
+"answer": [
+"offered",
+"would be"
+],
+"other_correct": [
+[
+"offered",
+"'d be"
+],
+[
+"were to offer",
+"would be"
+],
+[
+"were offering",
+"would be"
+],
+[
+"offered",
+"would feel"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Only the verb-form hint; 'were to offer' / 'were offering' also fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-002",
+"answer": "If the team has been better prepared, we would have won.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-003",
+"answer": [
+"hadn't driven",
+"wouldn't have lost"
+],
+"other_correct": [
+[
+"had not driven",
+"would not have lost"
+],
+[
+"hadn't driven",
+"would not have lost"
+],
+[
+"had not driven",
+"wouldn't have lost"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "(not / drive) shows negative + base verb, but tense still has to be found: fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-004",
+"answer": "If I would have studied medicine, I would be a doctor now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-005",
+"answer": "If I am more careful, I wouldn't have lost my keys.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Options 2 and 4 are mixed conditionals (present condition, past result): correct, but many learners will think they are wrong; they are not clearly marked as a trap. Option 1 is an unlikely mistake? (plausible though)."
+},
+{
+"id": "r20b-1-006",
+"answer": "Hadn't I moved here, I'd be in Riga now.",
+"other_correct": "",
+"wrong_options_that_fit": "Were I braver, I would have said no: mixed type, acceptable (Were I braver = if I were braver, past result); borderline, some teachers would call it wrong.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Hadn't I moved' is a form nobody writes; the standard negative inversion is 'Had I not moved'. A learner could pick option 3 instead because the mix of Were + would have looks odd."
+},
+{
+"id": "r20b-1-007",
+"answer": "She told that she would be late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.1 (told + object, A2/B1 point).",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-008",
+"answer": "She asked me where she should park.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Reported question word order is B1; too easy for B2.2.",
+"sense_problem": "Option 1 and 2 are near-copies; option 3 'should to park' is a form few learners write."
+},
+{
+"id": "r20b-1-009",
+"answer": [
+"if the data was accurate"
+],
+"other_correct": [
+[
+"whether the data was accurate"
+],
+[
+"if the data were accurate"
+],
+[
+"whether the data were accurate"
+],
+[
+"whether the data is accurate"
+],
+[
+"if the data is accurate"
+],
+[
+"whether or not the data was accurate"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open multi-word gap with no hint: many correct variants (if/whether, was/were/is).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-010",
+"answer": [
+"for forgetting the meeting"
+],
+"other_correct": [
+[
+"for having forgotten the meeting"
+],
+[
+"for forgetting about the meeting"
+],
+[
+"that she had forgotten the meeting"
+],
+[
+"for having forgotten about the meeting"
+],
+[
+"for missing the meeting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No structure is asked for, so several reporting patterns are correct (for + -ing, that-clause).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-011",
+"answer": "My manager accused me for losing the file.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-012",
+"answer": "The customer complained that the service had been terrible.",
+"other_correct": "",
+"wrong_options_that_fit": "'The customer complained that the service was terrible' is not offered; option 2 fits (and would also be fine with 'was').",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 'complained me' and option 3 are not believable-learner-level mistakes equally; fine."
+},
+{
+"id": "r20b-1-013",
+"answer": "It remains unclear who is responsible for the delay.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Indirect-question word order is B1; too easy for B2.2.",
+"sense_problem": "Options 2 and 3 are believable but option 2 rarely written at this level."
+},
+{
+"id": "r20b-1-014",
+"answer": "We talked about how could we cut costs.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-015",
+"answer": [
+"Whoever calls, don't answer."
+],
+"other_correct": [
+[
+"Whoever calls, do not answer."
+],
+[
+"Whoever calls, don't pick up."
+],
+[
+"Whoever it is, don't answer."
+],
+[
+"Whoever calls, don't answer it."
+],
+[
+"Whoever may call, don't answer."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Starts with Who...' gives away Whoever.",
+"level_problem": "",
+"sense_problem": "Instruction text 'It doesn't matter who calls. Don't answer.' is fine."
+},
+{
+"id": "r20b-1-016",
+"answer": "she apologised for missing the meeting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Too easy: only one natural order, almost copying; no real choice.",
+"level_problem": "B1 sentence at B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-017",
+"answer": [
+"had been writing"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-018",
+"answer": [
+"had been running"
+],
+"other_correct": [
+[
+"had run"
+],
+[
+"must have been running"
+],
+[
+"must have run"
+],
+[
+"'d been running"
+],
+[
+"'d run"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No tense is requested; 'He ran / was running / had run' all depend on context, so several answers are correct. Tense should be named or the context built (before he came in).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-019",
+"answer": "we had been driving for hours when the car broke down",
+"other_correct": [
+[
+"when we had been driving for hours the car broke down"
+],
+[
+"the car broke down when we had been driving for hours"
+],
+[
+"when the car broke down we had been driving for hours"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'hours' without number is slightly odd but fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-020",
+"answer": "As a result",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-021",
+"answer": "therefore",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-022",
+"answer": "yet",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-023",
+"answer": "Owing to the bad weather, the flight was late.",
+"other_correct": [
+"The flight was late owing to the bad weather.",
+"Owing to the weather being bad, the flight was late.",
+"The flight was late owing to the weather being bad.",
+"Owing to the fact that the weather was bad, the flight was late.",
+"The flight was late owing to the fact that the weather was bad."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-024",
+"answer": "we missed the train and as a result the concert was cancelled",
+"other_correct": [
+"we missed the train and, as a result, the concert was cancelled",
+"the concert was cancelled and we missed the train as a result",
+"we missed the train and the concert was cancelled as a result",
+"the concert was cancelled as a result and we missed the train"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Illogical: missing the train does not cause the concert to be cancelled (unless they are the band). Two events with no cause link; weak model sentence."
+},
+{
+"id": "r20b-1-025",
+"answer": "had we booked earlier we would be on the beach now",
+"other_correct": [
+"had we booked earlier we would now be on the beach",
+"we would be on the beach now had we booked earlier",
+"we would now be on the beach had we booked earlier"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No 'if' card, so the learner must find the inversion without being told; fine for B2.2, but a learner expecting 'if' will be stuck. Duplicate card 'we' is clear.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-026",
+"answer": [
+"told",
+"me"
+],
+"other_correct": [
+[
+"said",
+"that"
+]
+],
+"wrong_options_that_fit": "said / that fit as a second answer ('He said that the shop was closed').",
+"instruction_problem": "Ambiguous: two valid fillings; the cards allow both told+me and said+that.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-027",
+"answer": "whoever wins the quiz gets a free dinner",
+"other_correct": [
+"whoever gets a free dinner wins the quiz",
+"whoever gets the quiz wins a free dinner"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Alternatives are grammatical but silly; only the first is logical."
+},
+{
+"id": "r20b-1-028",
+"answer": "I would've left earlier if I'd known about the traffic",
+"other_correct": [
+"if I'd known about the traffic, I would've left earlier"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Contracted cards (I'd, would've) fine.",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-029",
+"answer": [
+"not",
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-030",
+"answer": "Lena asked me to send her the invoice",
+"other_correct": [
+"Lena asked her to send me the invoice"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Another person could be asked: 'Lena asked her to send me the invoice' is also correct.",
+"level_problem": "Too easy for B2.1 (ask + object + to-infinitive, A2/B1).",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-031",
+"answer": [
+"built",
+"would travel"
+],
+"other_correct": [
+[
+"built",
+"'d travel"
+],
+[
+"were to build",
+"would travel"
+],
+[
+"were building",
+"would travel"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; 'were to build' also fits.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-032",
+"answer": "But",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-033",
+"answer": [
+"Had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-034",
+"answer": "He accused me of losing his keys.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-035",
+"answer": "He refused to take another exam.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-036",
+"answer": "If I would have saved a copy, I wouldn't have lost my work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-037",
+"answer": "she had been learning French for years when she moved",
+"other_correct": [
+"when she moved she had been learning French for years"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "The last alternative is grammatical but changes the meaning; the first is the sensible model."
+},
+{
+"id": "r20b-1-038",
+"answer": "The agent said I might need a visa.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.1 (said/told patterns, A2/B1).",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-039",
+"answer": "She advised me to get a second opinion before the operation.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-040",
+"answer": "She didn't know who she should ask.",
+"other_correct": [
+"She didn't know who to ask.",
+"She didn't know whom to ask.",
+"She didn't know whom she should ask.",
+"She didn't know who she could ask.",
+"She did not know who she should ask.",
+"She didn't know who she ought to ask."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-041",
+"answer": "I'll support you whatever you decide.",
+"other_correct": [
+"I will support you whatever you decide.",
+"I'll support you no matter what you decide.",
+"I will support you no matter what you decide.",
+"I'll support you whatever decision you make.",
+"I'll support you whichever way you decide."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Start with I'll support you' gives the start; the target is whatever/no matter what, not named, so several answers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-042",
+"answer": [
+"would have helped"
+],
+"other_correct": [
+[
+"'d have helped"
+],
+[
+"would've helped"
+],
+[
+"could have helped"
+],
+[
+"might have helped"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open to could/might have helped (modal not fixed).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-043",
+"answer": [
+"opens"
+],
+"other_correct": [
+[
+"will open"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-044",
+"answer": [
+"not to miss"
+],
+"other_correct": [
+[
+"to not miss"
+],
+[
+"that I don't miss"
+],
+[
+"that I won't miss"
+],
+[
+"that I wouldn't miss"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "(not / miss) reveals negative; 'that I won't miss' is also correct (less common).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-045",
+"answer": [
+"for leaving"
+],
+"other_correct": [
+[
+"for having left"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-046",
+"answer": [
+"had been crying"
+],
+"other_correct": [
+[
+"had cried"
+],
+[
+"'d been crying"
+],
+[
+"'d cried"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No tense named; 'had cried' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-047",
+"answer": [
+"as a result"
+],
+"other_correct": [
+[
+"therefore"
+],
+[
+"consequently"
+],
+[
+"as a consequence"
+],
+[
+"accordingly"
+],
+[
+"thus"
+],
+[
+"hence"
+],
+[
+"in response"
+],
+[
+"for this reason"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open gap with no hint: many linkers are correct; the target is not determined.",
+"level_problem": "",
+"sense_problem": "Cutting prices is a response, so 'in response' is also logical."
+},
+{
+"id": "r20b-1-048",
+"answer": [
+"Had"
+],
+"other_correct": [
+[
+"If"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(have)' gives it away; 'If' is marginal (If we left... would have caught: non-standard, not full alternative).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-049",
+"answer": [
+"on driving"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'on taking' ignores (drive) hint, so fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-050",
+"answer": [
+"seeing"
+],
+"other_correct": [
+[
+"having seen"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-051",
+"answer": [
+"whether"
+],
+"other_correct": [
+[
+"if"
+],
+[
+"whether or not"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'if' is possible after depend on in informal English.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-052",
+"answer": "built",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20b-1-053",
+"answer": "I'd rather to cook at home than eat out.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

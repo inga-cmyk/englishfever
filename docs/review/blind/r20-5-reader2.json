@@ -1,0 +1,736 @@
+[
+{
+"id": "r20-5-001",
+"answer": "if i had saved more money i would own a flat now",
+"other_correct": [
+"i would own a flat now if i had saved more money",
+"if i had saved more money i would now own a flat",
+"i would now own a flat if i had saved more money"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital letter or comma cue, fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-002",
+"answer": "If I had charged my phone, it would be working now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-003",
+"answer": [
+"had",
+"taken",
+"would",
+"know"
+],
+"other_correct": [
+[
+"had",
+"taken",
+"could",
+"know"
+],
+[
+"had",
+"taken",
+"might",
+"know"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hints (take / know) are bare infinitives for four gaps; learner must guess would/could/might. Tense cues given by 'now'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-004",
+"answer": "she apologised for losing my luggage",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Far too easy for B2.2: 6 cards, B1 structure, one possible order.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-005",
+"answer": "He suggested to meet on Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2 (basic verb patterns, B1).",
+"sense_problem": ""
+},
+{
+"id": "r20-5-006",
+"answer": "He refused to take another exam.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2 (A2/B1 pattern).",
+"sense_problem": ""
+},
+{
+"id": "r20-5-007",
+"answer": "Nora denied sharing the secret.",
+"other_correct": [
+"Nora denied having shared the secret.",
+"Nora denied that she had shared the secret.",
+"Nora denied that she shared the secret.",
+"Nora denied she had shared the secret.",
+"Nora denied she shared the secret."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several correct forms; key must accept all.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-008",
+"answer": "whether the payment has arrived remains unclear",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Starts with a word that needs a capital letter only in the answer; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-009",
+"answer": "We discussed where should we hold the party.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-010",
+"answer": "whether the supplier can meet the deadline",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2 (modal + bare infinitive).",
+"sense_problem": ""
+},
+{
+"id": "r20-5-011",
+"answer": "It is unclear which route we should take.",
+"other_correct": [
+"It is unclear which route to take.",
+"It is unclear which route we ought to take."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction does not say whether 'to take' is allowed; both fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-012",
+"answer": "had read",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 content for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-013",
+"answer": "If I had save a copy, I wouldn't have lost my work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Mistake is a bare 'save' for 'saved': more a typo than a real learner error."
+},
+{
+"id": "r20-5-014",
+"answer": "could have caught it",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 content for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-015",
+"answer": "If I had remembered her birthday, I would have called her.",
+"other_correct": [
+"If I'd remembered her birthday, I'd have called her.",
+"I would have called her if I had remembered her birthday.",
+"If I had remembered her birthday, I would have phoned her.",
+"I'd have called her if I'd remembered her birthday.",
+"If I had remembered her birthday, I would have rung her."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Names 'if' and 'would' (partly gives form).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-016",
+"answer": "She asked if I could fix her laptop.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2/B1 reported question for B2.1; too easy.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-017",
+"answer": "He told me not to leave my bag there.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 pattern for B2.1; too easy.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-018",
+"answer": "She asked me where did I buy the flowers.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-019",
+"answer": "Omar asked me if I could check the figures.",
+"other_correct": [
+"Omar asked me whether I could check the figures.",
+"Omar asked me to check the figures."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Report this request' with 'asked me' allows both a reported question and 'to check'; both correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-020",
+"answer": "we had been hiking for hours when the storm began",
+"other_correct": [
+"when the storm began we had been hiking for hours",
+"the storm began when we had been hiking for hours",
+"when the storm began, we had been hiking for hours"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital or comma cue; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-021",
+"answer": "had been leaking",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2.1 border, fine.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-022",
+"answer": [
+"had answered"
+],
+"other_correct": [
+[
+"'d answered"
+],
+[
+"answered"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(answer)' is an odd label: unclear whether to type the base verb or the full verb phrase; two words in one gap. Simple past 'answered' is also possible after 'by the time' (less precise).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-023",
+"answer": "she had been learning french for years when she moved",
+"other_correct": [
+"when she moved she had been learning french for years",
+"she moved when she had been learning french for years",
+"when she moved, she had been learning French for years"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two 'she' cards, fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-024",
+"answer": "wouldn't have",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-025",
+"answer": "If she had learned German at school, she would understand her new colleagues now.",
+"other_correct": [
+"If she had learnt German at school, she would understand her new colleagues now.",
+"If she had learned German at school, she could understand her new colleagues now.",
+"If she'd learned German at school, she'd understand her new colleagues now.",
+"If she had learned German at school, she would be able to understand her new colleagues now.",
+"She would understand her new colleagues now if she had learned German at school."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction 'Imagine it was different' fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-026",
+"answer": "If she would be more patient, she wouldn't have shouted at him.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option A (If he spoke Italian, he would have enjoyed the tour more) is grammatical as a mixed conditional (he does not speak Italian in general); if the key is A, C is also wrong."
+},
+{
+"id": "r20-5-027",
+"answer": "If he were more confident, he would have asked for a pay rise.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-028",
+"answer": "Had we booked earlier, we would be on the beach now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-029",
+"answer": "Had I read the contract more carefully, I wouldn't be paying these fees now.",
+"other_correct": [
+"Had I read the contract more carefully, I would not be paying these fees now.",
+"Had I read the contract more carefully, I'd not be paying these fees now."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-030",
+"answer": "Hadn't she missed the train, she'd be here now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option D (Were she less shy, she would have spoken up) is a grammatical mixed conditional, but borderline; B is clearly wrong."
+},
+{
+"id": "r20-5-031",
+"answer": "Had the software been tested earlier, we would not be fixing these errors now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-032",
+"answer": "The coach told us (that) we had to warm up before every match.",
+"other_correct": [
+"The coach told us we must warm up before every match.",
+"The coach told us that we must warm up before every match.",
+"The coach told us to warm up before every match.",
+"The coach told us that we had to warm up before every match."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Direct speech 'must' allows 'must' or 'had to' and 'to warm up'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-033",
+"answer": "He told that the shop was closed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-034",
+"answer": "My sister said she would call me as soon as she landed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-035",
+"answer": "The agent said I might need a visa.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-036",
+"answer": "She asked me how to start.",
+"other_correct": [
+"(not offered) She asked me how she should start."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Too easy for B2.2.",
+"level_problem": "Wrong options 'how to starting' and 'how she should starts' are random-looking; 'how should she start' is the believable error.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-037",
+"answer": "They asked what time they should arrive.",
+"other_correct": [
+"They asked what time they were to arrive.",
+"They asked what time to arrive.",
+"They asked what time they ought to arrive."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-038",
+"answer": "He asked whether or not was I coming.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-039",
+"answer": "Mr Ozols asked whether the invoices had been sent.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-040",
+"answer": "She advised me to get a second opinion before the operation.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-041",
+"answer": "My colleague urged me to have the figures checked before I submitted the report.",
+"other_correct": [
+"My colleague urged me to have the figures checked before submitting the report.",
+"My colleague urged me to get the figures checked before I submitted the report.",
+"My colleague urged me to have the figures checked before I submit the report.",
+"My colleague urged me to get the figures checked before submitting the report."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-042",
+"answer": "She threatened calling the police.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-043",
+"answer": "The client complained that the delivery had been three days late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Also 'complained that the delivery was three days late' would be fine but not offered.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-044",
+"answer": "where to go",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Wrong options 'where to going' and 'where to we go' are unlikely errors; 'where we go' would be the believable one."
+},
+{
+"id": "r20-5-045",
+"answer": "She didn't know who to ask.",
+"other_correct": [
+"She didn't know whom to ask."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'using to' tells the form; acceptable but partly gives answer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-046",
+"answer": "We can't decide whether booking the hotel.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-047",
+"answer": "It remains unclear how we will pay for the repairs.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B2.2; 'how we do will pay' is an impossible string.",
+"sense_problem": ""
+},
+{
+"id": "r20-5-048",
+"answer": "Whatever you decide, I'll support you.",
+"other_correct": [
+"Whatever you decide, I will support you.",
+"Whatever you decide doesn't matter; I'll support you.",
+"What you decide doesn't matter; I'll support you.",
+"What you decide doesn't matter to me: I'll support you."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Wh…' is an unclear cue and not a normal way to give a hint; 'Wh' also allows What/Whatever/Whichever.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-049",
+"answer": "Whomever finishes first can go home.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Learners rarely write 'whomever' there; D 'whoever you like' is correct (whomever also formal-correct), fine but pair of who/whom is a formal-register trap."
+},
+{
+"id": "r20-5-050",
+"answer": "Why the system failed remains to be explained.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-051",
+"answer": [
+"knew"
+],
+"other_correct": [
+[
+"had known"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-052",
+"answer": [
+"were"
+],
+"other_correct": [
+[
+"was"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was' is acceptable informally, 'were' formal.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-053",
+"answer": [
+"would exercise"
+],
+"other_correct": [
+[
+"'d exercise"
+],
+[
+"could exercise"
+],
+[
+"might exercise"
+],
+[
+"would work out"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-054",
+"answer": [
+"had left"
+],
+"other_correct": [
+[
+"'d left"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-055",
+"answer": [
+"would have helped"
+],
+"other_correct": [
+[
+"'d have helped"
+],
+[
+"could have helped"
+],
+[
+"might have helped"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-056",
+"answer": [
+"would send"
+],
+"other_correct": [
+[
+"'d send"
+],
+[
+"was going to send"
+],
+[
+"was sending"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-057",
+"answer": [
+"had lived"
+],
+"other_correct": [
+[
+"had been living"
+],
+[
+"'d lived"
+],
+[
+"lived"
+],
+[
+"has lived"
+],
+[
+"has been living"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'lived' and present perfect (if she still lives there) are acceptable.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-058",
+"answer": [
+"was"
+],
+"other_correct": [
+[
+"am"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'am' is acceptable if the situation is still true.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-059",
+"answer": [
+"had studied"
+],
+"other_correct": [
+[
+"had been studying"
+],
+[
+"'d studied"
+],
+[
+"have studied"
+],
+[
+"have been studying"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Present perfect is acceptable without backshift.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-5-060",
+"answer": [
+"opens"
+],
+"other_correct": [
+[
+"will open"
+],
+[
+"'ll open"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'will open' is also correct (e.g. opening time tomorrow).",
+"level_problem": "",
+"sense_problem": ""
+}
+]

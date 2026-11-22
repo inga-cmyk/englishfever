@@ -1,0 +1,795 @@
+[
+ {
+  "id": "r20-3-001",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "It ___ when we went out. The sun was shining. (not / rain)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-002",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "When I first met her, she ___ in Madrid very long, but she already knew the city well. (not / live)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-003",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "when",
+   "down",
+   "broke",
+   "for",
+   "the",
+   "car",
+   "hours",
+   "driving",
+   "we",
+   "been",
+   "had"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-004",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "been",
+   "years",
+   "ten",
+   "had",
+   "when",
+   "there",
+   "working",
+   "left",
+   "for",
+   "she",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-005",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "We went out despite the fact that it was raining.",
+   "We went out despite of the fact that it was raining.",
+   "We went out in spite the fact that it was raining."
+  ]
+ },
+ {
+  "id": "r20-3-006",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: They walked quietly so as ___ the baby.",
+  "options": [
+   "not waking",
+   "not to wake",
+   "to not waking"
+  ]
+ },
+ {
+  "id": "r20-3-007",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: He wore a hat so ___ not to get sunburnt.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-008",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Despite of the rain, the match went ahead.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-3-009",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ my brother loves football, I can't stand it.",
+  "options": [
+   "Whereas",
+   "Owing to",
+   "Therefore"
+  ]
+ },
+ {
+  "id": "r20-3-010",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Take a jumper ___ it gets cold later.",
+  "options": [
+   "in case",
+   "in order to",
+   "so as to"
+  ]
+ },
+ {
+  "id": "r20-3-011",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: This app is used ___ tracking your spending.",
+  "options": [
+   "for",
+   "to",
+   "so that"
+  ]
+ },
+ {
+  "id": "r20-3-012",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The project was over budget. The board has ___ decided to cancel it.",
+  "options": [
+   "in case",
+   "as a result of",
+   "therefore"
+  ]
+ },
+ {
+  "id": "r20-3-013",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She was exhausted, ___ she kept working.",
+  "options": [
+   "therefore",
+   "due to",
+   "yet"
+  ]
+ },
+ {
+  "id": "r20-3-014",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We need a bigger budget in order ___ the team to finish on time.",
+  "options": [
+   "that",
+   "of",
+   "for"
+  ]
+ },
+ {
+  "id": "r20-3-015",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The plane was delayed ___ account of a technical problem.",
+  "options": [
+   "in",
+   "by",
+   "on"
+  ]
+ },
+ {
+  "id": "r20-3-016",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Take a map in case your phone dies.",
+   "The shop closed early owing the strike.",
+   "Rent is high here. For this reason, we moved.",
+   "She stayed at home because she felt ill."
+  ]
+ },
+ {
+  "id": "r20-3-017",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "He studied hard; nevertheless he, failed the test.",
+   "He studied hard nevertheless, he failed the test.",
+   "He studied hard; nevertheless, he failed the test."
+  ]
+ },
+ {
+  "id": "r20-3-018",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Write the code down ___ you forget it.",
+  "options": [
+   "in case",
+   "owing to",
+   "so as to"
+  ]
+ },
+ {
+  "id": "r20-3-019",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The company failed the safety check and, ___, the factory was closed.",
+  "options": [
+   "whereas",
+   "consequently",
+   "in case"
+  ]
+ },
+ {
+  "id": "r20-3-020",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: The museum was closed. For this ___, we went to the park.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-021",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: The meeting was cancelled due ___ the strike.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-022",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: The concert was cancelled on account ___ low ticket sales.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-023",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: She spoke quietly so as ___ to wake the baby.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-024",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Complete with one word: I'll take some cash in ___ the card machine isn't working.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-3-025",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Take an umbrella in case it will rain.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-3-026",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: This tool is for cut metal.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-3-027",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *owing to*: The flight was late because the weather was bad.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-3-028",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "hurt",
+   "legs",
+   "though",
+   "kept",
+   "her",
+   "running",
+   "even",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-029",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "for",
+   "order",
+   "more",
+   "need",
+   "the",
+   "on",
+   "in",
+   "sundays",
+   "we",
+   "staff",
+   "shop",
+   "open",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-030",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "was",
+   "the",
+   "train",
+   "a",
+   "cancelled",
+   "the",
+   "missed",
+   "result",
+   "as",
+   "and",
+   "meeting",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-031",
+  "level": "B2.1",
+  "kind": "match",
+  "instruction_and_task": "Match each beginning with its ending.",
+  "left": [
+   "Pack a raincoat",
+   "The roads were icy.",
+   "Owing to the strike,",
+   "This brush is"
+  ],
+  "right": [
+   "there were no trains.",
+   "in case it rains.",
+   "for cleaning bottles.",
+   "As a result, there were many accidents."
+  ]
+ },
+ {
+  "id": "r20-3-032",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If I weren't so impatient, I ___ ___ sold my flat so cheaply last spring.",
+  "word_cards": [
+   "had",
+   "won't",
+   "wouldn't",
+   "have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-033",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If she ___ ___ German at school, she would be able to understand her new colleagues now.",
+  "word_cards": [
+   "has",
+   "would",
+   "learned",
+   "had"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-034",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "more",
+   "him",
+   "have",
+   "she",
+   "at",
+   "were",
+   "if",
+   "wouldn't",
+   "she",
+   "patient",
+   "shouted"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-035",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "If he ___ more confident, he ___ asked for a pay rise.",
+  "word_cards": [
+   "were",
+   "would be",
+   "would have",
+   "will have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-036",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "on",
+   "beach",
+   "the",
+   "earlier",
+   "booked",
+   "be",
+   "now",
+   "we",
+   "we",
+   "had",
+   "would"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-037",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ I ___ the contract more carefully, I wouldn't be paying these fees now.",
+  "word_cards": [
+   "Did",
+   "Had",
+   "read",
+   "have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-038",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "would",
+   "she",
+   "had",
+   "train",
+   "the",
+   "here",
+   "not",
+   "now",
+   "be",
+   "missed",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-039",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Had the software ___ ___ earlier, we would not be fixing these errors now.",
+  "word_cards": [
+   "be",
+   "been",
+   "testing",
+   "tested"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-040",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "match",
+   "coach",
+   "warm",
+   "before",
+   "told",
+   "the",
+   "every",
+   "us",
+   "up",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-041",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "My sister said she ___ call me as soon as she ___.",
+  "word_cards": [
+   "would land",
+   "landed",
+   "would",
+   "will"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-042",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "visa",
+   "need",
+   "might",
+   "the",
+   "agent",
+   "I",
+   "a",
+   "said"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-043",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "how",
+   "to",
+   "start",
+   "she",
+   "asked",
+   "me"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-044",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "asked",
+   "arrive",
+   "time",
+   "should",
+   "they",
+   "what",
+   "they"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-045",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "He asked whether or not ___ ___ coming.",
+  "word_cards": [
+   "I",
+   "did",
+   "was",
+   "am"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-046",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Mr Ozols asked whether the invoices ___ ___ sent.",
+  "word_cards": [
+   "is",
+   "been",
+   "had",
+   "did"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-047",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "She advised me ___ ___ a second opinion before the operation.",
+  "word_cards": [
+   "getting",
+   "for",
+   "to",
+   "get"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-048",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "My colleague urged me ___ have the figures ___ before submitting the report.",
+  "word_cards": [
+   "to",
+   "checking",
+   "for",
+   "checked"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-049",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "police",
+   "the",
+   "call",
+   "threatened",
+   "she",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-050",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "we",
+   "to",
+   "go",
+   "weren't",
+   "where",
+   "sure"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-051",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "ask",
+   "know",
+   "to",
+   "who",
+   "she",
+   "didn't"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-052",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "to",
+   "can't",
+   "the",
+   "decide",
+   "book",
+   "we",
+   "whether",
+   "hotel"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-053",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "unclear",
+   "will",
+   "the",
+   "for",
+   "how",
+   "we",
+   "repairs",
+   "pay",
+   "it",
+   "remains"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-054",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ arrives last has to wash the dishes.",
+  "word_cards": [
+   "Whatever",
+   "Whomever",
+   "Whoever"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-055",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "I'll",
+   "you",
+   "you",
+   "decide",
+   "whatever",
+   "support"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-056",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "go",
+   "home",
+   "can",
+   "first",
+   "whoever",
+   "finishes"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-057",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "explained",
+   "to",
+   "the",
+   "system",
+   "remains",
+   "why",
+   "failed",
+   "be"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-058",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "I'd",
+   "twice",
+   "offer",
+   "were",
+   "that",
+   "about",
+   "I",
+   "you",
+   "think",
+   "if"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-3-059",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "If the company ___ more flexible hours, people ___ happier.",
+  "word_cards": [
+   "would offer",
+   "will be",
+   "would be",
+   "offered"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-3-060",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "I",
+   "if",
+   "tell",
+   "would",
+   "knew",
+   "I",
+   "you",
+   "answer"
+  ],
+  "note": "the learner puts all the cards in order"
+ }
+]

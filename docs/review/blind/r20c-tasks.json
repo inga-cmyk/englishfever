@@ -1,0 +1,256 @@
+[
+ {
+  "id": "r20c-001",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Our company will never change its fixed hours. If it ___ more flexible hours, people ___ happier. (offer / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-002",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "If I realised the impact of my decision, I would have acted differently.",
+   "If I would have realised the impact of my decision, I would have acted differently.",
+   "If I had realised the impact of my decision, I would have acted differently."
+  ]
+ },
+ {
+  "id": "r20c-003",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-004",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' What does the sentence say?",
+  "options": [
+   "The colleague's memory was poor in the past, but it is fine now.",
+   "The colleague remembered your birthday.",
+   "The colleague will remember your birthday next year.",
+   "The colleague's memory is poor, and that is why they forgot your birthday."
+  ]
+ },
+ {
+  "id": "r20c-005",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Where should we meet?' → They asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-006",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+  "word_cards": [
+   "on",
+   "to",
+   "of"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20c-007",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports the customer's words: 'The service was terrible.'",
+  "options": [
+   "The customer complained that the service had been terrible.",
+   "The customer complained that the service has been terrible.",
+   "The customer complained me that the service was terrible."
+  ]
+ },
+ {
+  "id": "r20c-008",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-009",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-010",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "James was out of breath when he came in. He ___. (run)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-011",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "been",
+   "years",
+   "ten",
+   "had",
+   "when",
+   "there",
+   "working",
+   "left",
+   "for",
+   "she",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20c-012",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Despite of the delays, the project was finished on time.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-013",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Save a copy on a USB stick in case your laptop will crash.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-014",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *owing to*: The flight was late because the weather was bad.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-015",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "would",
+   "the",
+   "have",
+   "team",
+   "won",
+   "had",
+   "prepared",
+   "we",
+   "if",
+   "better",
+   "been"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20c-016",
+  "level": "B2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: She got the job despite of having no experience.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-017",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "The city has no money for cycle lanes, so it won't build any. If it ___ more cycle lanes, more people ___ by bike. (build / travel)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-018",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-019",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Report this. Start with *They asked*: 'What time should we arrive?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-020",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Join the sentences: She didn't know. Who should she ask?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-021",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20c-022",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "I set two alarms in order ___ my early flight. (not / miss)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-023",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "I'll leave you my number in case you ___ any problems with the flat. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-024",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Our guide suggested ___ the museum early to avoid the queues. (visit)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-025",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "I'm not sure what time the meeting ___ tomorrow. (start)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-026",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Sales fell sharply; ___ , the company cut its prices.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-027",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "In future, I'd rather you ___ my phone without asking. (not / use)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-028",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "We couldn't decide where ___ on holiday. (go)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-029",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Our holiday plans depend on ___ my boss gives me the week off.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20c-030",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+  "note": "the learner types a whole sentence"
+ }
+]

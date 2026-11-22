@@ -1,0 +1,657 @@
+[
+ {
+  "id": "r20-2-001",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence expresses regret about the present?",
+  "options": [
+   "I wish I had lived closer to the sea.",
+   "I wish I will live closer to the sea.",
+   "I wish I would live closer to the sea.",
+   "I wish I lived closer to the sea."
+  ]
+ },
+ {
+  "id": "r20-2-002",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "I wish you ___ clicking your pen. It's driving me mad.",
+  "options": [
+   "to stop",
+   "would stop",
+   "would stopping",
+   "will stop"
+  ]
+ },
+ {
+  "id": "r20-2-003",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "I wish I ___ that email yesterday. Now everyone knows.",
+  "word_cards": [
+   "hadn't sent",
+   "didn't send",
+   "wouldn't send",
+   "haven't sent"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-2-004",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I wish I had saved more when I was young.",
+   "If only I would have saved more money.",
+   "If only you had told me about it earlier.",
+   "If only I earned a bit more money now."
+  ]
+ },
+ {
+  "id": "r20-2-005",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "You give a speech about a past failure. Choose the correct option.",
+  "options": [
+   "If only we had listen to the warning signs, we would not be in this position.",
+   "If only we would have listened to the warning signs, we would not be in this position.",
+   "If only we had listened to the warning signs, we would not be in this position.",
+   "If only we listened to the warning signs, we would not be in this position."
+  ]
+ },
+ {
+  "id": "r20-2-006",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write a sentence with 'I wish' or 'If only' about something you regret from last year.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-007",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports this: 'I might be late.'",
+  "options": [
+   "She said she might to be late.",
+   "She said she might be late.",
+   "She said she might been late.",
+   "She said she might was late."
+  ]
+ },
+ {
+  "id": "r20-2-008",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "The teacher's words: 'The Earth goes round the Sun.' Why can we report them as 'The teacher said the Earth goes round the Sun'?",
+  "options": [
+   "Because goes is an irregular verb.",
+   "Because it is still true.",
+   "Because said is in the past.",
+   "Because the tense never changes."
+  ]
+ },
+ {
+  "id": "r20-2-009",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Last week the client said: 'I won't sign it until the lawyer reads it.' Yesterday he signed it. Which sentence reports the client's words?",
+  "options": [
+   "The client said he wouldn't sign it until the lawyer had read it.",
+   "The client said I wouldn't sign it until the lawyer reads it.",
+   "The client said he won't sign it until the lawyer will read it.",
+   "The client told he wouldn't sign it until the lawyer read it."
+  ]
+ },
+ {
+  "id": "r20-2-010",
+  "level": "B2.1",
+  "kind": "write",
+  "instruction_and_task": "Report a warning from your doctor: 'You must drink more water.' Start with My doctor said.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-011",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Anna's question to you: 'Can you help me?' Which sentence reports it?",
+  "options": [
+   "She asked can I help her.",
+   "She asked if could I help her.",
+   "She asked if I could help her.",
+   "She asked that I could help her."
+  ]
+ },
+ {
+  "id": "r20-2-012",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports this instruction: 'Don't touch that!'",
+  "options": [
+   "The nurse said me not to touch it.",
+   "The nurse told me not touching it.",
+   "The nurse told me not to touch it.",
+   "The nurse told me not touch it."
+  ]
+ },
+ {
+  "id": "r20-2-013",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "'Could you send me the invoice?' → Lena asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-014",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports the customer's question: 'How long will the repair take?'",
+  "options": [
+   "The customer asked how long would the repair take.",
+   "The customer asked how long will the repair take.",
+   "The customer asked how long did the repair take.",
+   "The customer asked how long the repair would take."
+  ]
+ },
+ {
+  "id": "r20-2-015",
+  "level": "B2.1",
+  "kind": "write",
+  "instruction_and_task": "Report a request you received at work: 'Could you call the supplier?' Start with My manager asked me.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-016",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Tom's question to you: 'What should I do?' Which sentence reports it?",
+  "options": [
+   "He asked me what to doing.",
+   "He asked me what to do.",
+   "He asked me what he does.",
+   "He asked me what should he do."
+  ]
+ },
+ {
+  "id": "r20-2-017",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Eva's question to you: 'Where should I park?' Which sentence reports it?",
+  "options": [
+   "She asked me where does she should park.",
+   "She asked me where should she park.",
+   "She asked me where she should to park.",
+   "She asked me where she should park."
+  ]
+ },
+ {
+  "id": "r20-2-018",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Where should we meet?' → They asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-019",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "Ms Novak asked whether the budget had been approved.",
+   "Ms Novak asked has the budget been approved.",
+   "Ms Novak asked whether had the budget been approved.",
+   "Ms Novak asked that the budget had been approved."
+  ]
+ },
+ {
+  "id": "r20-2-020",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Is the data accurate?' → The editor asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-021",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "He apologised for be late.",
+   "He apologised for being late.",
+   "He apologised of being late.",
+   "He apologised to be late."
+  ]
+ },
+ {
+  "id": "r20-2-022",
+  "level": "B2.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with the word that says what the speaker did.",
+  "left": [
+   "'I'll definitely be there on time.'",
+   "'Don't touch the red button!'",
+   "'Why don't we try the new café?'",
+   "'Yes, I broke the vase.'"
+  ],
+  "right": [
+   "admitted",
+   "suggested",
+   "warned",
+   "promised"
+  ]
+ },
+ {
+  "id": "r20-2-023",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports Sam's answer: 'No, I won't work this weekend.'",
+  "options": [
+   "Sam refused working that weekend.",
+   "Sam refused to work that weekend.",
+   "Sam refused me to work that weekend.",
+   "Sam refused that he works this weekend."
+  ]
+ },
+ {
+  "id": "r20-2-024",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "'Sorry I forgot the meeting.' → Dana apologised ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-025",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports 'You broke the printer!' as an accusation?",
+  "options": [
+   "She accused me to break the printer.",
+   "She accused me of breaking the printer.",
+   "She accused me that I broke the printer.",
+   "She accused me for breaking the printer."
+  ]
+ },
+ {
+  "id": "r20-2-026",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "What is the difference? A: 'He insisted on paying.' B: 'He offered to pay.'",
+  "options": [
+   "A: a polite offer. B: a strong demand.",
+   "A is about the past, B the future.",
+   "A and B mean exactly the same thing.",
+   "A: he wouldn't let others pay. B: an offer."
+  ]
+ },
+ {
+  "id": "r20-2-027",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports this: 'I'm very sorry for the delay, and I will make sure it never happens again.'",
+  "options": [
+   "The manager apologised for the delay and promised it not happening again.",
+   "The manager apologised the delay and promised that it would not happen again.",
+   "The manager apologised for the delay and promised to that it would not happen again.",
+   "The manager apologised for the delay and promised that it would not happen again."
+  ]
+ },
+ {
+  "id": "r20-2-028",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Say what Leo did, in one sentence, without his words in quotes. Leo said: 'It wasn't me who broke it!'",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-029",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
+  "options": [
+   "She advised to me take the earlier train.",
+   "She advised me to take the earlier train.",
+   "She insisted me to take the earlier train.",
+   "She suggested me to take the earlier train."
+  ]
+ },
+ {
+  "id": "r20-2-030",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "The officer's words: 'I'm not going to tell you who did it.' Which word says what the officer did?",
+  "options": [
+   "refused",
+   "suggested",
+   "promised",
+   "admitted"
+  ]
+ },
+ {
+  "id": "r20-2-031",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports the customer's words in formal English: 'The service was terrible.'",
+  "options": [
+   "The customer complained me that the service was terrible.",
+   "The customer complained to be terrible the service.",
+   "The customer complained about the service had been terrible.",
+   "The customer complained that the service had been terrible."
+  ]
+ },
+ {
+  "id": "r20-2-032",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Say what Mia did, in one sentence, without her words in quotes. Mia said to the team: 'Thank you for everything you've done.'",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-033",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?'",
+  "options": [
+   "A is more polite than B.",
+   "They are the same.",
+   "B is more polite and indirect.",
+   "B asks about the past."
+  ]
+ },
+ {
+  "id": "r20-2-034",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "I was wondering when will my order be delivered?",
+   "I was wondering if you could tell me when will my order be delivered?",
+   "I was wondering if you could tell me when my order will be delivered.",
+   "I was wondering that you could tell me when my order will be delivered."
+  ]
+ },
+ {
+  "id": "r20-2-035",
+  "level": "B2.1",
+  "kind": "write",
+  "instruction_and_task": "Ask very politely, in one sentence, when the report will be ready.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-036",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which is correct? 'I don't know ___.'",
+  "options": [
+   "what to doing",
+   "what to I do",
+   "what do I",
+   "what to do"
+  ]
+ },
+ {
+  "id": "r20-2-037",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "'I have no idea how to start.' What does 'how to start' mean?",
+  "options": [
+   "why I started",
+   "that I will start",
+   "when I started",
+   "how I should start"
+  ]
+ },
+ {
+  "id": "r20-2-038",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Say it shorter with *to*: Can you tell me how I can get to the museum?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-2-039",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "It remains unclear who is the responsible for the delay.",
+   "It remains unclear who is responsible for the delay.",
+   "It remains unclear who does responsible for the delay.",
+   "It remains unclear who responsible is for the delay."
+  ]
+ },
+ {
+  "id": "r20-2-040",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write a sentence with 'I have no idea' and a question word (how, what, where, when, who or why).",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-041",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ remains unclear.",
+  "options": [
+   "Whether will he attend",
+   "Will he attend",
+   "Whether he will attend",
+   "That will he attend"
+  ]
+ },
+ {
+  "id": "r20-2-042",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-2-043",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "You write a report: 'The question is ___.' Choose the correct option.",
+  "options": [
+   "whether is the project worth the cost",
+   "is the project worth the cost",
+   "whether the project is worth the cost",
+   "if is the project worth the cost"
+  ]
+ },
+ {
+  "id": "r20-2-044",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "'Whatever he says, don't sign it.' What does 'whatever' mean here?",
+  "options": [
+   "it does not matter what he says",
+   "it matters a lot what he says",
+   "he says everything he thinks",
+   "he never says what he means"
+  ]
+ },
+ {
+  "id": "r20-2-045",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20-2-046",
+  "level": "B2.2",
+  "kind": "write",
+  "instruction_and_task": "Write a sentence with 'whoever', 'whatever' or 'wherever' to describe a flexible rule at your workplace.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r20-2-047",
+  "level": "B2.1",
+  "kind": "order",
+  "instruction_and_task": "Link a different past decision to a present result. Start with If I had and put now at the end.",
+  "word_cards": [
+   "be",
+   "doctor",
+   "a",
+   "studied",
+   "had",
+   "would",
+   "now",
+   "I",
+   "medicine",
+   "if",
+   "I"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-2-048",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order. Start with *Had I*.",
+  "word_cards": [
+   "delay",
+   "about",
+   "you",
+   "known",
+   "have",
+   "called",
+   "would",
+   "I",
+   "had",
+   "the",
+   "I"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-2-049",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Report an apology. Start with She.",
+  "word_cards": [
+   "for",
+   "the",
+   "missing",
+   "meeting",
+   "she",
+   "apologised"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-2-050",
+  "level": "B2.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order. Start with *Whether*.",
+  "word_cards": [
+   "uncertain",
+   "work",
+   "whether",
+   "the",
+   "will",
+   "plan",
+   "remains"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r20-2-051",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "___ she ___ earlier, she would have caught the train.",
+  "word_cards": [
+   "Did",
+   "left",
+   "Had",
+   "leave"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-2-052",
+  "level": "B2.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The ground was wet. It ___ in the night.",
+  "options": [
+   "had been raining",
+   "has been raining",
+   "had been rain"
+  ]
+ },
+ {
+  "id": "r20-2-053",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: When the bus finally came, we ___ in the rain for half an hour.",
+  "options": [
+   "had been stand",
+   "have been standing",
+   "had been standing"
+  ]
+ },
+ {
+  "id": "r20-2-054",
+  "level": "B2.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She was lying on the sofa. She was tired because she ___ hard.",
+  "options": [
+   "has been working",
+   "had been working",
+   "had working"
+  ]
+ },
+ {
+  "id": "r20-2-055",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "We ___ tennis for half an hour when it started to rain.",
+  "word_cards": [
+   "have been playing",
+   "had been playing",
+   "had been played",
+   "are playing"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-2-056",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Tom was tired when he got home. He ___ hard all day. (work)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-057",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "Yesterday was busy. By lunchtime she ___ ten emails. (write)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-058",
+  "level": "B2.1",
+  "kind": "gap",
+  "instruction_and_task": "James was out of breath when he came in. He ___. (run)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20-2-059",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "At last the bus came. I ___ for twenty minutes.",
+  "word_cards": [
+   "had been waited",
+   "am waiting",
+   "have been waiting",
+   "had been waiting"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r20-2-060",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "I hope the bus comes soon. I ___ for twenty minutes. (wait)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

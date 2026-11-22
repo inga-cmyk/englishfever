@@ -1,0 +1,51 @@
+[
+ {
+  "id": "r20d-001",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Report this. Start with *They asked*: 'What time should we arrive?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20d-002",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Join the sentences: She didn't know. Who should she ask?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20d-003",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite as one sentence. Start with *I'll support you*: It doesn't matter what you decide. I'll support you.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r20d-004",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "I'm not sure what time the meeting ___ tomorrow. (start)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20d-005",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "We couldn't decide where ___ on holiday. (go)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20d-006",
+  "level": "B2.2",
+  "kind": "gap",
+  "instruction_and_task": "Our holiday plans depend on ___ my boss gives me the week off or not.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r20d-007",
+  "level": "B2.2",
+  "kind": "text",
+  "instruction_and_task": "Write one sentence that starts with *It's high time*: You should really start looking for a new job.",
+  "note": "the learner types a whole sentence"
+ }
+]

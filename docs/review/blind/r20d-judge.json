@@ -1,0 +1,9 @@
+[
+{"id": "r20d-001", "decision": "accept", "why": "Obligation paraphrases keep the meaning; 'me' with 'we' is the same as the accepted 'us'. 'I' and 'you' have no basis in the quote.", "accept": [["They asked me what time we should arrive.", "They asked what time we had to arrive.", "They asked what time they had to arrive.", "They asked what time we were supposed to arrive.", "They asked what time they were supposed to arrive."]]},
+{"id": "r20d-002", "decision": "accept", "why": "had to / was supposed to / could keep the meaning of 'should' closely enough; level was decided in r20 (B2.2 more uses).", "accept": [["She didn't know who she had to ask.", "She didn't know whom she had to ask.", "She didn't know who she was supposed to ask.", "She didn't know who she could ask."]]},
+{"id": "r20d-003", "decision": "accept", "why": "'decide to do' is the same sentence with an extra infinitive.", "accept": [["I'll support you whatever you decide to do.", "I will support you whatever you decide to do.", "I'll support you no matter what you decide to do.", "I will support you no matter what you decide to do."]]},
+{"id": "r20d-004", "decision": "keep", "why": "Already practice only with every future form accepted; 'begins' changes the given verb."},
+{"id": "r20d-005", "decision": "keep", "why": "Every structure the readers name is accepted; level decided in r20."},
+{"id": "r20d-006", "decision": "keep", "why": "The card teaches 'after a preposition use whether, not if' (same decision as r20-1-048)."},
+{"id": "r20d-007", "decision": "accept", "why": "'began to look' and 'really started' keep the form; 'you start' misses the point of the task and 'found' changes the meaning.", "accept": [["It's high time you began to look for a new job.", "It is high time you began to look for a new job.", "It's high time you really started looking for a new job.", "It is high time you really started looking for a new job."]]}
+]

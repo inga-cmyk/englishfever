@@ -1,0 +1,37 @@
+# r20b-1 judge summary
+
+- r20b-1-001: **accept**. 'were offering' is a correct second-conditional form for a company policy (an ongoing arrangement) and is added. 'would feel' ignores the verb in brackets and stays out.
+- r20b-1-003: **keep**. Reader 1 only says the instruction is fine; the task is already practice only.
+- r20b-1-005: **keep**. Options 2 and 4 are correct mixed conditionals on purpose (they are the three right sentences); only 'If I am more careful, I wouldn't have lost' is wrong, so there is one answer.
+- r20b-1-006: **keep**. 'Were I braver, I would have said no' is a correct mixed inversion and is meant as a right sentence. 'Hadn't I moved' is the mistake the cond_advanced card warns about (not comes after the subject); learners do write it.
+- r20b-1-007: **keep**. Level flag: the task is already practice only (say / tell decided in round r20).
+- r20b-1-008: **keep**. Already practice only; in a 'which sentence reports it' task the options must be close, and modal + to is a real learner mistake.
+- r20b-1-009: **keep**. 'is accurate' stays rejected under the taught rule of 11 November (one step back after asked); already practice only.
+- r20b-1-010: **keep**. 'that she had forgotten' is outside the pattern the card and task teach (apologise for + -ing) and 'for missing' changes what she did; same decision as round r20.
+- r20b-1-012: **fix**. 'complained about the service had been terrible' uses 'complain about', which the rep_verbs card does not teach (rule 22 Nov); replaced by a tense mistake in the that-clause, as in the twin task fixed in r20. The readers' note that 'was' would also be fine does not matter: no such option is offered.
+- r20b-1-013: **keep**. Level flag rejected: an embedded question after 'It remains unclear' is on the B2.2 ind_advanced card; the wrong options are believable mistakes.
+- r20b-1-015: **accept**. 'Whoever may call, don't answer' (formal but correct) and the semicolon version of the accepted 'Who calls doesn't matter' answer are correct one-sentence answers. 'don't pick up' and 'answer it' change the given words; 'Who calls doesn't matter, don't answer' is a comma splice and 'Who calls, don't answer' is not English.
+- r20b-1-016: **keep**. Already practice only; 'the missing meeting' makes no sense here.
+- r20b-1-018: **accept**. 'He must have been running / must have run' is correct and natural for a conclusion from what we see, and it keeps the verb in brackets; added, as the earlier judge preferred accepting over rewriting.
+- r20b-1-019: **keep**. All orders reader 1 lists are already in the key.
+- r20b-1-023: **accept**. The possessive -ing ('the weather's being bad') is correct, formal English after owing to; added in both clause orders.
+- r20b-1-024: **keep**. Only 'the train was cancelled ... we missed the concert' is logical; the readers' other orders are illogical (we cannot cancel a concert by missing a train), as round r20 intended.
+- r20b-1-025: **keep**. There is no 'if' card, so reader 2's 'if' answers cannot be built from the cards.
+- r20b-1-026: **keep**. 'said that' would give 'He said that that the shop was closed', which is not English; only 'told me' fits. Level: already practice only.
+- r20b-1-027: **keep**. The other orders are grammatical but make no sense (both readers say so).
+- r20b-1-028: **keep**. Reader 1 only comments; no problem.
+- r20b-1-030: **keep**. Reader 1's other order is already accepted; level: already practice only.
+- r20b-1-031: **accept**. The contraction 'd travel is the contraction of an accepted answer. 'were building' is rejected: more people would cycle when the lanes exist, not while they are being built.
+- r20b-1-033: **keep**. Reader 2 confirms Were and Should do not fit; no problem.
+- r20b-1-037: **keep**. The other orders are grammatical and already accepted; nothing to change.
+- r20b-1-038: **practice_only**. All three wrong options test say / tell or modal + to (A2 to B1 points), and round r20 made this task practice only; too easy as B2.1 evidence.
+- r20b-1-040: **accept**. 'who she ought to ask' means the same as 'who she should ask' and is added. 'could ask' changes the meaning (possibility, not advice) and stays out.
+- r20b-1-041: **accept**. 'whatever decision you make' is a correct -ever ending with the same meaning.
+- r20b-1-042: **keep**. could / might have helped are already accepted.
+- r20b-1-043: **keep**. 'on Sundays' is a regular timetable, so the present 'opens' is the answer; 'will open' is not the natural form for a timetable here.
+- r20b-1-044: **accept**. 'in order that' + clause is correct formal English and keeps (not / miss): don't / won't fit if the flight is still ahead, wouldn't fits the past view.
+- r20b-1-046: **keep**. 'had cried' is already accepted.
+- r20b-1-047: **accept**. 'because of this' is a correct result link after the semicolon.
+- r20b-1-048: **keep**. 'If we left ... would have caught' is wrong (needs had left). The bracket word must still change form (have to Had), which the rule of 16 November allows.
+- r20b-1-049: **keep**. Reader 1 only comments; the answers are complete.
+- r20b-1-051: **accept**. 'whether or not' is correct after depend on and is added. 'if' after a preposition stays rejected (the card: whether, not if), as decided in round r20.

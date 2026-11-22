@@ -1,0 +1,247 @@
+[
+ {
+  "id": "r20b-1-001",
+  "decision": "accept",
+  "why": "'were offering' is a correct second-conditional form for a company policy (an ongoing arrangement) and is added. 'would feel' ignores the verb in brackets and stays out.",
+  "accept": [
+   [
+    "were offering"
+   ],
+   []
+  ]
+ },
+ {
+  "id": "r20b-1-003",
+  "decision": "keep",
+  "why": "Reader 1 only says the instruction is fine; the task is already practice only."
+ },
+ {
+  "id": "r20b-1-005",
+  "decision": "keep",
+  "why": "Options 2 and 4 are correct mixed conditionals on purpose (they are the three right sentences); only 'If I am more careful, I wouldn't have lost' is wrong, so there is one answer."
+ },
+ {
+  "id": "r20b-1-006",
+  "decision": "keep",
+  "why": "'Were I braver, I would have said no' is a correct mixed inversion and is meant as a right sentence. 'Hadn't I moved' is the mistake the cond_advanced card warns about (not comes after the subject); learners do write it."
+ },
+ {
+  "id": "r20b-1-007",
+  "decision": "keep",
+  "why": "Level flag: the task is already practice only (say / tell decided in round r20)."
+ },
+ {
+  "id": "r20b-1-008",
+  "decision": "keep",
+  "why": "Already practice only; in a 'which sentence reports it' task the options must be close, and modal + to is a real learner mistake."
+ },
+ {
+  "id": "r20b-1-009",
+  "decision": "keep",
+  "why": "'is accurate' stays rejected under the taught rule of 11 November (one step back after asked); already practice only."
+ },
+ {
+  "id": "r20b-1-010",
+  "decision": "keep",
+  "why": "'that she had forgotten' is outside the pattern the card and task teach (apologise for + -ing) and 'for missing' changes what she did; same decision as round r20."
+ },
+ {
+  "id": "r20b-1-012",
+  "decision": "fix",
+  "why": "'complained about the service had been terrible' uses 'complain about', which the rep_verbs card does not teach (rule 22 Nov); replaced by a tense mistake in the that-clause, as in the twin task fixed in r20. The readers' note that 'was' would also be fine does not matter: no such option is offered.",
+  "fix": {
+   "wrong": [
+    "The customer complained that the service has been terrible.",
+    "The customer complained me that the service was terrible."
+   ]
+  }
+ },
+ {
+  "id": "r20b-1-013",
+  "decision": "keep",
+  "why": "Level flag rejected: an embedded question after 'It remains unclear' is on the B2.2 ind_advanced card; the wrong options are believable mistakes."
+ },
+ {
+  "id": "r20b-1-015",
+  "decision": "accept",
+  "why": "'Whoever may call, don't answer' (formal but correct) and the semicolon version of the accepted 'Who calls doesn't matter' answer are correct one-sentence answers. 'don't pick up' and 'answer it' change the given words; 'Who calls doesn't matter, don't answer' is a comma splice and 'Who calls, don't answer' is not English.",
+  "accept": [
+   [
+    "Whoever may call, don't answer.",
+    "Whoever may call, do not answer.",
+    "Who calls doesn't matter; don't answer.",
+    "Who calls does not matter; do not answer."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-016",
+  "decision": "keep",
+  "why": "Already practice only; 'the missing meeting' makes no sense here."
+ },
+ {
+  "id": "r20b-1-018",
+  "decision": "accept",
+  "why": "'He must have been running / must have run' is correct and natural for a conclusion from what we see, and it keeps the verb in brackets; added, as the earlier judge preferred accepting over rewriting.",
+  "accept": [
+   [
+    "must have been running",
+    "must have run"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-019",
+  "decision": "keep",
+  "why": "All orders reader 1 lists are already in the key."
+ },
+ {
+  "id": "r20b-1-023",
+  "decision": "accept",
+  "why": "The possessive -ing ('the weather's being bad') is correct, formal English after owing to; added in both clause orders.",
+  "accept": [
+   [
+    "Owing to the weather's being bad, the flight was late.",
+    "The flight was late owing to the weather's being bad."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-024",
+  "decision": "keep",
+  "why": "Only 'the train was cancelled ... we missed the concert' is logical; the readers' other orders are illogical (we cannot cancel a concert by missing a train), as round r20 intended."
+ },
+ {
+  "id": "r20b-1-025",
+  "decision": "keep",
+  "why": "There is no 'if' card, so reader 2's 'if' answers cannot be built from the cards."
+ },
+ {
+  "id": "r20b-1-026",
+  "decision": "keep",
+  "why": "'said that' would give 'He said that that the shop was closed', which is not English; only 'told me' fits. Level: already practice only."
+ },
+ {
+  "id": "r20b-1-027",
+  "decision": "keep",
+  "why": "The other orders are grammatical but make no sense (both readers say so)."
+ },
+ {
+  "id": "r20b-1-028",
+  "decision": "keep",
+  "why": "Reader 1 only comments; no problem."
+ },
+ {
+  "id": "r20b-1-030",
+  "decision": "keep",
+  "why": "Reader 1's other order is already accepted; level: already practice only."
+ },
+ {
+  "id": "r20b-1-031",
+  "decision": "accept",
+  "why": "The contraction 'd travel is the contraction of an accepted answer. 'were building' is rejected: more people would cycle when the lanes exist, not while they are being built.",
+  "accept": [
+   [],
+   [
+    "'d travel"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-033",
+  "decision": "keep",
+  "why": "Reader 2 confirms Were and Should do not fit; no problem."
+ },
+ {
+  "id": "r20b-1-037",
+  "decision": "keep",
+  "why": "The other orders are grammatical and already accepted; nothing to change."
+ },
+ {
+  "id": "r20b-1-038",
+  "decision": "practice_only",
+  "why": "All three wrong options test say / tell or modal + to (A2 to B1 points), and round r20 made this task practice only; too easy as B2.1 evidence."
+ },
+ {
+  "id": "r20b-1-040",
+  "decision": "accept",
+  "why": "'who she ought to ask' means the same as 'who she should ask' and is added. 'could ask' changes the meaning (possibility, not advice) and stays out.",
+  "accept": [
+   [
+    "She didn't know who she ought to ask.",
+    "She didn't know whom she ought to ask."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-041",
+  "decision": "accept",
+  "why": "'whatever decision you make' is a correct -ever ending with the same meaning.",
+  "accept": [
+   [
+    "I'll support you whatever decision you make.",
+    "I will support you whatever decision you make."
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-042",
+  "decision": "keep",
+  "why": "could / might have helped are already accepted."
+ },
+ {
+  "id": "r20b-1-043",
+  "decision": "keep",
+  "why": "'on Sundays' is a regular timetable, so the present 'opens' is the answer; 'will open' is not the natural form for a timetable here."
+ },
+ {
+  "id": "r20b-1-044",
+  "decision": "accept",
+  "why": "'in order that' + clause is correct formal English and keeps (not / miss): don't / won't fit if the flight is still ahead, wouldn't fits the past view.",
+  "accept": [
+   [
+    "that I don't miss",
+    "that I do not miss",
+    "that I won't miss",
+    "that I will not miss",
+    "that I wouldn't miss",
+    "that I would not miss"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-046",
+  "decision": "keep",
+  "why": "'had cried' is already accepted."
+ },
+ {
+  "id": "r20b-1-047",
+  "decision": "accept",
+  "why": "'because of this' is a correct result link after the semicolon.",
+  "accept": [
+   [
+    "because of this"
+   ]
+  ]
+ },
+ {
+  "id": "r20b-1-048",
+  "decision": "keep",
+  "why": "'If we left ... would have caught' is wrong (needs had left). The bracket word must still change form (have to Had), which the rule of 16 November allows."
+ },
+ {
+  "id": "r20b-1-049",
+  "decision": "keep",
+  "why": "Reader 1 only comments; the answers are complete."
+ },
+ {
+  "id": "r20b-1-051",
+  "decision": "accept",
+  "why": "'whether or not' is correct after depend on and is added. 'if' after a preposition stays rejected (the card: whether, not if), as decided in round r20.",
+  "accept": [
+   [
+    "whether or not"
+   ]
+  ]
+ }
+]

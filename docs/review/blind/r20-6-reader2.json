@@ -1,0 +1,709 @@
+[
+{
+"id": "r20-6-001",
+"answer": [
+"had been waiting"
+],
+"other_correct": [
+[
+"had waited"
+],
+[
+"'d been waiting"
+],
+[
+"'d waited"
+],
+[
+"was waiting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not forced: 'had waited' and (less well) 'was waiting' also fit; learner cannot know which is wanted. 'was waiting' is weak (it suggests the moment of the call).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-002",
+"answer": [
+"Despite"
+],
+"other_correct": [
+[
+"In spite of"
+],
+[
+"Notwithstanding"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No cue word; 'In spite of' (two words) is equally right. Nothing in the task forces a contrast meaning (it is guessable, but 'Because of the rain' is not impossible sense-wise).",
+"level_problem": "Despite/in spite of is B1, low for B2.1.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-003",
+"answer": [
+"not to forget"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-004",
+"answer": [
+"rains"
+],
+"other_correct": [
+[
+"should rain"
+],
+[
+"might rain"
+],
+[
+"will rain"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'might rain' and 'should rain' are also correct after 'in case'; 'will rain' is not standard in BrE (American/informal).",
+"level_problem": "'in case' + present is B1.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-005",
+"answer": [
+"had known"
+],
+"other_correct": [
+[
+"'d known"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-006",
+"answer": [
+"would have crashed"
+],
+"other_correct": [
+[
+"might have crashed"
+],
+[
+"could have crashed"
+],
+[
+"would've crashed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Modal not fixed: would/might/could have crashed all correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-007",
+"answer": [
+"not to lift"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Reported instruction with 'not to + verb' is B1 level.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-008",
+"answer": [
+"for being"
+],
+"other_correct": [
+[
+"for having been"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'for having been' is also correct (more formal); 'for' + -ing is not signposted but gap is clear.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-009",
+"answer": [
+"taking"
+],
+"other_correct": [
+[
+"that we take"
+],
+[
+"we take"
+],
+[
+"we should take"
+],
+[
+"that we should take"
+],
+[
+"we took"
+],
+[
+"that we took"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap before 'a taxi' accepts a clause: 'suggested we take/should take a taxi' is fully correct. Task does not force -ing.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-010",
+"answer": [
+"starts"
+],
+"other_correct": [
+[
+"will start"
+],
+[
+"is going to start"
+],
+[
+"is starting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Future reference with no signal: 'starts' (timetable), 'will start', 'is going to start', 'is starting' all correct.",
+"level_problem": "Indirect question with 'start' is A2/B1, too easy for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-011",
+"answer": [
+"had been crying"
+],
+"other_correct": [
+[
+"was crying"
+],
+[
+"had cried"
+],
+[
+"'d been crying"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was crying' also fits; 'had cried' fits less well (result vs duration). Tense not forced.",
+"level_problem": "B1 content for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-012",
+"answer": [
+"would be"
+],
+"other_correct": [
+[
+"'d be"
+],
+[
+"might be"
+],
+[
+"could be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "would/might/could all correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-013",
+"answer": [
+"hadn't been"
+],
+"other_correct": [
+[
+"had not been"
+],
+[
+"weren't"
+],
+[
+"were not"
+],
+[
+"wasn't"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'weren't/wasn't' (past state, mixed conditional) is also correct: 'If I weren't so shy, I would have spoken'. Learner cannot know that only 'hadn't been' is wanted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-014",
+"answer": [
+"as a result"
+],
+"other_correct": [
+[
+"consequently"
+],
+[
+"therefore"
+],
+[
+"as a consequence"
+],
+[
+"accordingly"
+],
+[
+"hence"
+],
+[
+"thus"
+],
+[
+"so"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No cue and many linkers fit (as a result, consequently, therefore, as a consequence, hence, thus, accordingly). Only contrast linkers are wrong. 'so' after a semicolon is nonstandard but seen. Needs a first letter or fewer possible answers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-015",
+"answer": [
+"had accepted"
+],
+"other_correct": [
+[
+"'d accepted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-016",
+"answer": [
+"had"
+],
+"other_correct": [
+[
+"could have"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'could have' (I wish I could have more time) is also correct.",
+"level_problem": "'I wish I had' is B1, low for B2.2.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-017",
+"answer": [
+"hadn't made"
+],
+"other_correct": [
+[
+"had not made"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-018",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'is running late' or 'is' + 'late': 'is' only fits the gap; fine. Other: 'is going to be' is wrong. No real second answer beyond contraction.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-019",
+"answer": [
+"Had"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "The cue '(have)' plus the start 'I known' nearly gives away the inversion; only the capital 'Had' needed.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-020",
+"answer": [
+"did"
+],
+"other_correct": [
+[
+"should do"
+],
+[
+"does"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should do' is also correct (it's high time he should...); 'does' is accepted by some speakers but is less standard.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-021",
+"answer": [
+"didn't use"
+],
+"other_correct": [
+[
+"did not use"
+],
+[
+"hadn't used"
+],
+[
+"had not used"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'hadn't used' fits if the phone was already used (past regret); present/future 'didn't use' is the likelier intent. Tense not forced.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-022",
+"answer": [
+"on paying"
+],
+"other_correct": [
+[
+"that she pay"
+],
+[
+"that she should pay"
+],
+[
+"that she paid"
+],
+[
+"on her paying"
+],
+[
+"that she'd pay"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'insisted that she pay/should pay' is fully correct; the gap does not force 'on paying'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-023",
+"answer": [
+"to go"
+],
+"other_correct": [
+[
+"we should go"
+],
+[
+"we could go"
+],
+[
+"we would go"
+],
+[
+"we'd go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Clause answers 'we should/could go' are also correct. The cue '(go)' does not force 'to go'.",
+"level_problem": "'where to go' is B1.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-024",
+"answer": [
+"Were"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-025",
+"answer": [
+"hadn't been"
+],
+"other_correct": [
+[
+"had not been"
+],
+[
+"weren't"
+],
+[
+"were not"
+],
+[
+"wasn't"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'If it weren't for your advice, I would never have applied' is correct and very common; 'hadn't been' is not the only answer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-026",
+"answer": [
+"seeing"
+],
+"other_correct": [
+[
+"having seen"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'having seen' is also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-027",
+"answer": [
+"of selling"
+],
+"other_correct": [
+[
+"of having sold"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'of having sold' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-028",
+"answer": [
+"Whoever"
+],
+"other_correct": [
+[
+"Anyone who"
+],
+[
+"Anybody who"
+],
+[
+"The person who"
+],
+[
+"Everyone who"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue '(who)' is odd and misleading: 'Who wins' is wrong, 'Whoever' needs no cue; multi-word 'Anyone who' also fits the gap. A learner may type 'Who'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-029",
+"answer": [
+"whether"
+],
+"other_correct": [
+[
+"if"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'on if' is considered informal/nonstandard after a preposition; 'whether' intended. No cue.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-030",
+"answer": [
+"went"
+],
+"other_correct": [
+[
+"should go"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should go' is rare but correct after 'It's about time'.",
+"level_problem": "Same pattern as 20, 32-34 (heavy repetition).",
+"sense_problem": ""
+},
+{
+"id": "r20-6-031",
+"answer": [
+"hadn't left"
+],
+"other_correct": [
+[
+"had not left"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Fine."
+},
+{
+"id": "r20-6-032",
+"answer": "called",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for B2.2 once pattern 'it's about time' is known; repeats task 30 and 33-34.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-033",
+"answer": [
+"went"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards: only 'went' is correct; 'had gone' and 'have gone' are wrong here. Nothing else fits.",
+"level_problem": "Easy for B2.2; 'last bus leaves' context also gives the answer away only mildly.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-034",
+"answer": "did",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B2.2; repetitive with 20, 30, 32, 33.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-035",
+"answer": "It's high time you started looking for a new job.",
+"other_correct": [
+[
+"It's high time you looked for a new job."
+],
+[
+"It's high time you started to look for a new job."
+],
+[
+"It's high time you found a new job."
+],
+[
+"It's high time you were looking for a new job."
+],
+[
+"It is high time you started looking for a new job."
+],
+[
+"It's high time you should start looking for a new job."
+],
+[
+"It's high time you started job-hunting."
+],
+[
+"It's high time for you to start looking for a new job."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction is fine but the tense is not signposted; the 'you should' in the prompt nearly hands over the 'you ...' subject (a near-copy exercise).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-036",
+"answer": "stay",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r20-6-037",
+"answer": [
+"take"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level; 'would sooner' is the only B2 element.",
+"sense_problem": ""
+},
+{
+"id": "r20-6-038",
+"answer": "told",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'than later' fine."
+},
+{
+"id": "r20-6-039",
+"answer": "I'd rather to walk than take the bus.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Believable L1-transfer error; fine, but the three right sentences are short and clearly different, so the error is easy to spot."
+},
+{
+"id": "r20-6-040",
+"answer": "I'd rather you didn't bring your dog to the office.",
+"other_correct": [
+[
+"I'd rather you did not bring your dog to the office."
+],
+[
+"I'd rather you didn't bring your dog to work."
+],
+[
+"I'd rather you left your dog at home."
+],
+[
+"I'd rather you didn't bring your dog into the office."
+],
+[
+"I would rather you didn't bring your dog to the office."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Please don't bring...' invites near-copying: only 'don't' to 'didn't' changes.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

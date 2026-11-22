@@ -5395,7 +5395,8 @@ return json_decode(<<<'EF_JSON_END'
 "had been"
 ],
 "why": "In careful English we use *were* for all persons after *if* in the second conditional.",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
 "id": "cs-B21-2a-r2",
@@ -5415,7 +5416,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cs-B21-3a-r2",
+"id": "cs-B21-3a-r3",
 "skill": "cond_second",
 "level": "B2.1",
 "bloom": 3,
@@ -5424,18 +5425,21 @@ return json_decode(<<<'EF_JSON_END'
 "answers": [
 [
 "offered",
-"were to offer"
+"were to offer",
+"were offering"
 ],
 [
 "would be",
-"'d be"
+"'d be",
+"might be",
+"could be"
 ]
 ],
 "why": "Second conditional: *if* + past simple (or *were to* + base verb), *would* + base verb.",
 "hints": []
 },
 {
-"id": "cs-B21-4a",
+"id": "cs-B21-4a-r2",
 "skill": "cond_second",
 "level": "B2.1",
 "bloom": 4,
@@ -5443,12 +5447,13 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence has a mistake?",
 "correct": "If I would know the answer, I would tell you.",
 "wrong": [
-"If I knew the answer, I would tell you.",
-"If I knew the answer, I'd tell you.",
-"I would tell you if I knew the answer."
+"If I lived closer to work, I'd cycle every day.",
+"What would you do if you lost your job?",
+"If she were here, she would know what to do."
 ],
 "why": "*Would* does not go in the if-part. Say: *If I knew the answer, I would tell you.*",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
 "id": "cs-B21-5a-r2",
@@ -5639,10 +5644,11 @@ return json_decode(<<<'EF_JSON_END'
 "has studied"
 ],
 "why": "Third conditional: *would have* + past participle, *if* + past perfect.",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
-"id": "ct-B21-2a-r2",
+"id": "ct-B21-2a-r3",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 2,
@@ -5650,7 +5656,7 @@ return json_decode(<<<'EF_JSON_END'
 "q": "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?",
 "correct": "The deal was possible, not certain.",
 "wrong": [
-"The deal was certain, not possible.",
+"The deal would certainly have been signed.",
 "The deal was impossible from the start.",
 "The deal was signed in the end."
 ],
@@ -5694,7 +5700,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "ct-B21-4a",
+"id": "ct-B21-4a-r2",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 4,
@@ -5702,15 +5708,16 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence has a mistake?",
 "correct": "If the team has been better prepared, we would have won.",
 "wrong": [
-"If the team had been better prepared, we would have won.",
-"We would have won if the team had been better prepared.",
-"If the team hadn't been so tired, we might have won."
+"If you had called me, I would have picked you up.",
+"We could have saved money if we had booked earlier.",
+"If it hadn't rained, the concert wouldn't have been cancelled."
 ],
 "why": "The if-part needs the past perfect: *had been*, not *has been.*",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
-"id": "ct-B21-5a-r2",
+"id": "ct-B21-5a-r3",
 "skill": "cond_third",
 "level": "B2.1",
 "bloom": 5,
@@ -5719,7 +5726,7 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "If you had told us earlier, we could have adjusted the schedule.",
 "wrong": [
 "If you told us earlier, we could have adjusted the schedule.",
-"If you had told us earlier, we could adjust have the schedule.",
+"If you had told us earlier, we could have adjust the schedule.",
 "If you would tell us earlier, we could have adjusted the schedule."
 ],
 "why": "Third conditional with *could have*: *if* + past perfect, *could have* + past participle.",
@@ -5765,27 +5772,29 @@ return json_decode(<<<'EF_JSON_END'
 "heard / would avoid": "This is a second-conditional pattern. The task asks for an unreal past condition and past result.",
 "had heard / would avoid": "This combines a past condition with a non-past result. The task asks for both parts to refer to the past.",
 "would have heard / had avoided": "For the standard third conditional, put the past perfect in the if-clause and *would have + past participle* in the result."
-}
+},
+"practice_only": true
 },
 {
-"id": "ct-B22-2a-r3",
+"id": "ct-B22-2a-r4",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 2,
 "kind": "mcq",
 "q": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
-"correct": "A is about the past, B about now.",
+"correct": "A is about the past, B about now or the future.",
 "wrong": [
 "A is about now, B about the past.",
 "A is about the future, B the past.",
 "There is no difference in meaning."
 ],
-"why": "Third conditional = past, unreal. Second conditional = present or future, unreal.",
+"why": "Third conditional (A) = an unreal past. Second conditional (B) = an unreal present or future.",
 "wrong_why": {},
-"wrong_why_lv": {}
+"wrong_why_lv": {},
+"why_lv": "Third conditional (A) izsaka nereālu pagātni. Second conditional (B) izsaka nereālu tagadni vai nākotni."
 },
 {
-"id": "ct-B22-3a-r3",
+"id": "ct-B22-3a-r4",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 3,
@@ -5801,14 +5810,17 @@ return json_decode(<<<'EF_JSON_END'
 [
 "wouldn't have lost",
 "would not have lost",
-"'d not have lost"
+"'d not have lost",
+"might not have lost",
+"mightn't have lost"
 ]
 ],
 "why": "Negative third conditional: *hadn't been driving* (or *hadn't driven*), then *wouldn't have lost*.",
-"hints": []
+"hints": [],
+"practice_only": true
 },
 {
-"id": "ct-B22-4a-r5",
+"id": "ct-B22-4a-r7",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 4,
@@ -5816,15 +5828,15 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "If I'd have known about the traffic, I would've left earlier.",
 "wrong": [
-"If I'd known about the traffic, I would've left earlier.",
-"If I had known about the traffic, I would have left earlier.",
-"Had I known about the traffic, I would have left earlier."
+"Had we checked the forecast, we wouldn't have gone sailing.",
+"If she'd asked me, I'd have helped her.",
+"They wouldn't have got lost if they had taken a map."
 ],
 "why": "In standard written English use *had + past participle* in this if-clause: *If I had known*. *Had I known* is a correct inverted alternative. *If I'd have known* occurs informally but is not the standard form.",
 "wrong_why": {}
 },
 {
-"id": "ct-B22-5a-r2",
+"id": "ct-B22-5a-r3",
 "skill": "cond_third",
 "level": "B2.2",
 "bloom": 5,
@@ -5833,11 +5845,11 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "If I had realised the impact of my decision, I would have acted differently.",
 "wrong": [
 "If I realised the impact of my decision, I would have acted differently.",
-"If I would have realised the impact of my decision, I acted differently.",
-"If I had realise the impact of my decision, I would have acted differently."
+"If I would have realised the impact of my decision, I would have acted differently."
 ],
 "why": "Formal regret about the past: *if* + past perfect, *would have* + past participle.",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
 "id": "ct-B22-6a-r2",
@@ -5963,7 +5975,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "cm-B21-4a",
+"id": "cm-B21-4a-r2",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 4,
@@ -5971,15 +5983,15 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "If I would have studied medicine, I would be a doctor now.",
 "wrong": [
-"If I had studied medicine, I would be a doctor now.",
-"If I'd studied medicine, I'd be a doctor now.",
-"I would be a doctor now if I had studied medicine."
+"If I hadn't missed the train, I'd be at home by now.",
+"If she had saved more, she wouldn't be worried about money now.",
+"We'd know the results now if they had sent the email."
 ],
 "why": "Do not use *would* in the if-part: *If I had studied medicine, ...*",
 "wrong_why": {}
 },
 {
-"id": "cm-B21-5a-r2",
+"id": "cm-B21-5a-r3",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 5,
@@ -5989,7 +6001,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "If I didn't stay up so late, I wouldn't have been so tired now.",
 "If I hadn't stayed up so late, I wouldn't have been so tired now.",
-"If I wouldn't have stayed up so late, I wasn't so tired now."
+"If I wouldn't have stayed up so late, I wouldn't be so tired now."
 ],
 "why": "Past cause, present result: *if* + past perfect, *would* + base verb.",
 "wrong_why": {}
@@ -6050,7 +6062,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "cm-B22-3a-r3",
+"id": "cm-B22-3a-r4",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 3,
@@ -6061,14 +6073,22 @@ return json_decode(<<<'EF_JSON_END'
 "If he had taken the job, he would be living in Paris now.",
 "If he'd taken the job, he'd be living in Paris now.",
 "He would be living in Paris now if he had taken the job.",
-"He'd be living in Paris now if he'd taken the job."
+"He'd be living in Paris now if he'd taken the job.",
+"If he had taken the job, he would live in Paris now.",
+"If he'd taken the job, he'd live in Paris now.",
+"He would live in Paris now if he had taken the job.",
+"If he had taken the job, he would be in Paris now.",
+"If he'd taken the job, he'd be in Paris now.",
+"He would be in Paris now if he had taken the job.",
+"If he had taken the job, he might be living in Paris now.",
+"If he'd taken the job, he might be living in Paris now."
 ]
 ],
 "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
 "hints": []
 },
 {
-"id": "cm-B22-4a",
+"id": "cm-B22-4a-r2",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 4,
@@ -6076,29 +6096,30 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "If I am more careful, I wouldn't have lost my keys.",
 "wrong": [
-"If I were more careful, I wouldn't have lost my keys.",
-"If I had been more careful, I wouldn't have lost my keys.",
-"If I hadn't been so careless, I wouldn't be searching now."
+"If she spoke French, she would have got the job in Paris.",
+"If I hadn't eaten so much, I wouldn't feel sick now.",
+"If he weren't so shy, he would have asked her to dance."
 ],
 "why": "Do not use *am* in an unreal condition. Say: *If I were more careful, ...*",
 "wrong_why": {}
 },
 {
-"id": "cm-B22-5a-r2",
+"id": "cm-B22-5a-r3",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' Choose the correct comment about the grammar.",
-"correct": "Mixed: a present quality, a past result.",
+"q": "A colleague says: 'If I had a better memory, I would have remembered your birthday.' What does the sentence say?",
+"correct": "The colleague's memory is poor, and that is why they forgot your birthday.",
 "wrong": [
-"First conditional: about the future.",
-"Zero conditional: a general fact.",
-"Third: both parts are in the past."
+"The colleague's memory was poor in the past, but it is fine now.",
+"The colleague remembered your birthday.",
+"The colleague will remember your birthday next year."
 ],
-"why": "The if-part is past simple (present quality). The result is *would have* + past participle (past).",
+"why": "The if-part is past simple: a quality now (the colleague's memory is poor). The result is *would have* + past participle: the past (the birthday was forgotten). The poor memory is the reason.",
 "wrong_why": {},
-"wrong_why_lv": {}
+"wrong_why_lv": {},
+"why_lv": "*If* daļā ir Past Simple: īpašība tagad (kolēģim ir slikta atmiņa). Otrajā daļā ir *would have* + 3. forma: pagātne (dzimšanas diena tika aizmirsta). Slikta atmiņa ir iemesls."
 },
 {
 "id": "cm-B22-6a-r2",
@@ -6154,12 +6175,12 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "cm-C11-3a-r3",
+"id": "cm-C11-3a-r4",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Rewrite with inversion: If I had listened to my accountant, I wouldn't be in this mess now.",
+"q": "Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now.",
 "answers": [
 [
 "Had I listened to my accountant, I wouldn't be in this mess now.",
@@ -6172,7 +6193,7 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "cm-C11-4a-r3",
+"id": "cm-C11-4a-r4",
 "skill": "cond_mixed",
 "level": "B2.2",
 "bloom": 4,
@@ -6181,7 +6202,7 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "Hadn't I moved here, I'd be in Riga now.",
 "wrong": [
 "Had she known, she would have stayed.",
-"Had I taken that job, I would be rich now.",
+"Had the train been on time, we would be home by now.",
 "Were I braver, I would have said no."
 ],
 "why": "Negative inversion is *Had I not ...*, not *Hadn't I ...*",
@@ -6275,7 +6296,8 @@ return json_decode(<<<'EF_JSON_END'
 "unless you don't",
 "After *unless* we do not use a negative: *... unless you have a receipt.*"
 ]
-]
+],
+"practice_only": true
 },
 {
 "id": "ca-C11-4a-r5",
@@ -6380,7 +6402,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "ca-C12-4a-r3",
+"id": "ca-C12-4a-r4",
 "skill": "cond_advanced",
 "level": "B2.2",
 "bloom": 4,
@@ -6388,8 +6410,8 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence has a mistake?",
 "correct": "If only I would have saved more money.",
 "wrong": [
-"I wish I had saved more when I was young.",
-"If only I earned a bit more money now.",
+"I wish I had chosen a different course at university.",
+"If only I had a bit more free time now.",
 "If only you had told me about it earlier."
 ],
 "why": "*If only* + past perfect is used for regret about the past. Not *would have.*",
@@ -6397,20 +6419,20 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ca-C12-5a-r2",
+"id": "ca-C12-5a-r3",
 "skill": "cond_advanced",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You give a speech about a past failure. Choose the correct option.",
-"correct": "If only we had listened to the warning signs, we would not be in this position.",
+"q": "Which sentence is correct?",
+"correct": "If only we had listened to the warning signs last year, we would not be in this position now.",
 "wrong": [
-"If only we would have listened to the warning signs, we would not be in this position.",
-"If only we listened to the warning signs, we would not be in this position.",
-"If only we had listen to the warning signs, we would not be in this position."
+"If only we would have listened to the warning signs last year, we would not be in this position now.",
+"If only we listened to the warning signs last year, we would not be in this position now."
 ],
-"why": "*If only* + *had* + past participle, then *would* + base verb for the present result.",
-"wrong_why": {}
+"why": "*If only* + *had* + 3rd form for a regret about the past (*last year*), then *would* + base form for the result now. Not *would have listened*, and not *listened*, which is about now.",
+"wrong_why": {},
+"why_lv": "*If only* + *had* + 3. forma izsaka nožēlu par pagātni (*last year*), tad *would* + pamatforma rezultātam tagad. Nav pareizi *would have listened*, un arī *listened*, kas attiecas uz tagadni."
 },
 {
 "id": "ca-C12-6a-r2",
@@ -6721,7 +6743,8 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*might* stays the same in the report and is followed by *be*: *She said she might be late.*",
 "wrong_why": {},
-"why_lv": "Atstāstījumā *might* nemainās; pēc tā lieto *be*: *She said she might be late.*"
+"why_lv": "Atstāstījumā *might* nemainās; pēc tā lieto *be*: *She said she might be late.*",
+"practice_only": true
 },
 {
 "id": "rs-B21-2a-r5",
@@ -6774,7 +6797,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "rs-B21-4a",
+"id": "rs-B21-4a-r2",
 "skill": "rep_statements",
 "level": "B2.1",
 "bloom": 4,
@@ -6782,12 +6805,13 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "She told that she would be late.",
 "wrong": [
-"She said that she would be late.",
-"She told me that she would be late.",
-"She told us she would be late."
+"He said he was working from home.",
+"They told us the shop was closed.",
+"She told me she had lost her keys."
 ],
 "why": "*tell* is always followed by a person: *She told me / us ...*",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
 "id": "rs-B21-5a-r2",
@@ -7015,7 +7039,8 @@ return json_decode(<<<'EF_JSON_END'
 "She asked that I could help her."
 ],
 "why": "*can → could, you → I, me → her*, and statement word order after *if.*",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
 "id": "rq-B21-2a-r2",
@@ -7032,7 +7057,8 @@ return json_decode(<<<'EF_JSON_END'
 ],
 "why": "*told me not to touch*: after *told*, name the person, then use *not to* + base form.",
 "wrong_why": {},
-"why_lv": "*told me not to touch*: pēc *told* nosauc cilvēku un lieto *not to* ar pamatformu."
+"why_lv": "*told me not to touch*: pēc *told* nosauc cilvēku un lieto *not to* ar pamatformu.",
+"practice_only": true
 },
 {
 "id": "rq-B21-3a-r3",
@@ -7052,7 +7078,7 @@ return json_decode(<<<'EF_JSON_END'
 "hints": []
 },
 {
-"id": "rq-B21-4a",
+"id": "rq-B21-4a-r2",
 "skill": "rep_questions",
 "level": "B2.1",
 "bloom": 4,
@@ -7060,12 +7086,13 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "He asked me what time was it.",
 "wrong": [
-"He asked me what time it was.",
-"He asked me when the train left.",
-"He asked me if I knew the way."
+"She asked if I wanted a coffee.",
+"They asked where we had parked the car.",
+"He wanted to know how long the trip would take."
 ],
 "why": "In a reported question the subject comes before the verb: *what time it was.*",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
 "id": "rq-B21-5a-r2",
@@ -7104,7 +7131,7 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rq-B22-1a-r3",
+"id": "rq-B22-1a-r4",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 1,
@@ -7113,14 +7140,13 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "He asked me what to do.",
 "wrong": [
 "He asked me what should he do.",
-"He asked me what he does.",
-"He asked me what to doing."
+"He asked me what he does."
 ],
 "why": "A reported question has statement word order, so *what should he do* is wrong. The report *what to do* is correct here; *what he should do* is also possible.",
 "wrong_why": {}
 },
 {
-"id": "rq-B22-2a-r3",
+"id": "rq-B22-2a-r4",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 2,
@@ -7129,14 +7155,14 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "She asked me where she should park.",
 "wrong": [
 "She asked me where should she park.",
-"She asked me where she should to park.",
-"She asked me where does she should park."
+"She asked me where she should to park."
 ],
 "why": "Statement word order after the question word: *where she should park*. *I* becomes *she*, because she asks about herself.",
-"wrong_why": {}
+"wrong_why": {},
+"practice_only": true
 },
 {
-"id": "rq-B22-3a-r3",
+"id": "rq-B22-3a-r4",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 3,
@@ -7146,14 +7172,19 @@ return json_decode(<<<'EF_JSON_END'
 [
 "where they should meet",
 "where we should meet",
-"where to meet"
+"where to meet",
+"where we were to meet",
+"where they were to meet",
+"where we ought to meet",
+"where they ought to meet"
 ]
 ],
 "why": "Statement word order: *where they should meet*. They ask about themselves, so *we* becomes *they*.",
-"hints": []
+"hints": [],
+"practice_only": true
 },
 {
-"id": "rq-B22-4a-r2",
+"id": "rq-B22-4a-r3",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 4,
@@ -7163,7 +7194,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "He asked me if I was ready.",
 "They asked whether we had eaten.",
-"She asked me whether I agreed or not."
+"He wanted to know whether the hotel had a pool."
 ],
 "why": "After *whether* we use statement word order: *whether or not I agreed.*",
 "wrong_why": {},
@@ -7186,7 +7217,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rq-B22-6a-r2",
+"id": "rq-B22-6a-r3",
 "skill": "rep_questions",
 "level": "B2.2",
 "bloom": 6,
@@ -7200,27 +7231,31 @@ return json_decode(<<<'EF_JSON_END'
 "whether the data was accurate",
 "whether the data were accurate",
 "if the data was accurate",
-"if the data were accurate"
+"if the data were accurate",
+"whether or not the data was accurate",
+"whether or not the data were accurate"
 ]
 ],
 "hints": [],
-"why_lv": "Jā/nē jautājumu atstāsta ar *whether* vai *if* un apgalvojuma vārdu secību: *whether the data was accurate*."
+"why_lv": "Jā/nē jautājumu atstāsta ar *whether* vai *if* un apgalvojuma vārdu secību: *whether the data was accurate*.",
+"practice_only": true
 },
 {
-"id": "rv-B22-1a-r3",
+"id": "rv-B22-1a-r4",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
 "q": "Which sentence is correct?",
-"correct": "He apologised for being late.",
+"correct": "The driver apologised for blocking the exit.",
 "wrong": [
-"He apologised for be late.",
-"He apologised to be late.",
-"He apologised of being late."
+"The driver apologised to block the exit.",
+"The driver apologised of blocking the exit.",
+"The driver apologised blocking the exit."
 ],
-"why": "*apologise for* + -ing.",
-"wrong_why": {}
+"why": "*apologise for* + -ing: *apologised for blocking*.",
+"wrong_why": {},
+"why_lv": "*apologise for* + *-ing* forma: *apologised for blocking*."
 },
 {
 "id": "rv-B22-2a-r3",
@@ -7326,7 +7361,7 @@ return json_decode(<<<'EF_JSON_END'
 ]
 },
 {
-"id": "rv-B22-4a",
+"id": "rv-B22-4a-r2",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 4,
@@ -7334,9 +7369,9 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "She suggested to go by train.",
 "wrong": [
-"She suggested going by train.",
-"She suggested that we go by train.",
-"She suggested we should go by train."
+"He denied taking the money.",
+"My doctor advised me to rest.",
+"They promised that they would call back."
 ],
 "why": "*suggest* is not followed by *to* + base verb. Use -ing or *that* + clause.",
 "wrong_why": {}
@@ -7358,7 +7393,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why": {}
 },
 {
-"id": "rv-B22-6a-r2",
+"id": "rv-B22-6a-r3",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 6,
@@ -7373,19 +7408,22 @@ return json_decode(<<<'EF_JSON_END'
 "for having forgotten the meeting",
 "for forgetting about the meeting",
 "to me for forgetting the meeting",
-"to me for forgetting about the meeting"
+"to me for forgetting about the meeting",
+"for having forgotten about the meeting",
+"to me for having forgotten the meeting",
+"to me for having forgotten about the meeting"
 ]
 ],
 "hints": [],
 "why_lv": "*apologise for* + *-ing*: *apologised for forgetting the meeting*."
 },
 {
-"id": "rv-C11-1a-r2",
+"id": "rv-C11-1a-r3",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which sentence reports 'You broke the printer!' as an accusation?",
+"q": "Which sentence reports this: 'You broke the printer!'",
 "correct": "She accused me of breaking the printer.",
 "wrong": [
 "She accused me to break the printer.",
@@ -7413,7 +7451,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "rv-C11-3a-r5",
+"id": "rv-C11-3a-r6",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
@@ -7428,29 +7466,29 @@ return json_decode(<<<'EF_JSON_END'
 "hints": [],
 "bank": [
 "on",
-"about",
-"at",
-"with"
+"of",
+"to"
 ]
 },
 {
-"id": "rv-C11-4a-r2",
+"id": "rv-C11-4a-r3",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
-"correct": "He blamed me for to lose the file.",
+"correct": "My manager accused me for losing the file.",
 "wrong": [
-"He blamed me for losing the file.",
-"He accused me of losing the file.",
-"He admitted losing the file."
+"She apologised for being late.",
+"He insisted on paying for dinner.",
+"They congratulated us on our new home."
 ],
-"why": "*blame* + person + *for* + -ing.",
-"wrong_why": {}
+"why": "*accuse* + person + *of* + -ing: *My manager accused me of losing the file.*",
+"wrong_why": {},
+"why_lv": "*accuse* + persona + *of* + darbības vārds ar -ing: *My manager accused me of losing the file.*"
 },
 {
-"id": "rv-C11-5a-r3",
+"id": "rv-C11-5a-r4",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 5,
@@ -7459,8 +7497,7 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "The manager apologised for the delay and promised that it would not happen again.",
 "wrong": [
 "The manager apologised the delay and promised that it would not happen again.",
-"The manager apologised for the delay and promised to that it would not happen again.",
-"The manager apologised for the delay and promised it not happening again."
+"The manager apologised for the delay and promised it not to happen again."
 ],
 "why": "A reporting verb says what the speaker did. *apologise for* + noun, *promise* + *that* + clause.",
 "wrong_why": {}
@@ -7482,7 +7519,7 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "rv-C12-1a-r3",
+"id": "rv-C12-1a-r4",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 1,
@@ -7492,7 +7529,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "She suggested me to take the earlier train.",
 "She insisted me to take the earlier train.",
-"She advised to me take the earlier train."
+"She advised to take the earlier train."
 ],
 "why": "*advise* + person + *to* + base verb.",
 "wrong_why": {}
@@ -7672,16 +7709,15 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Aiz *suggest* nelieto personu + *to*: *She suggested (that) I book the tickets early* vai *She suggested booking the tickets early*. Aiz *advise* var būt persona + *to*: *advised me to rest*."
 },
 {
-"id": "rv-C12-5a-r4",
+"id": "rv-C12-5a-r5",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "Which sentence reports the customer's words in formal English: 'The service was terrible.'",
+"q": "Which sentence reports the customer's words: 'The service was terrible.'",
 "correct": "The customer complained that the service had been terrible.",
 "wrong": [
-"The customer complained about the service had been terrible.",
-"The customer complained to be terrible the service.",
+"The customer complained that the service has been terrible.",
 "The customer complained me that the service was terrible."
 ],
 "why": "*complain* + *that* + clause. The past goes back to the past perfect.",
@@ -8151,20 +8187,20 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ia-B22-1a",
+"id": "ia-B22-1a-r2",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which is correct? 'I don't know ___.'",
-"correct": "what to do",
+"q": "Which is correct? 'The instructions don't explain ___ the new printer.'",
+"correct": "how to set up",
 "wrong": [
-"what to doing",
-"what do I",
-"what to I do"
+"how should we set up",
+"how set up"
 ],
-"why": "Question word + *to* + base verb: *what to do.*",
-"wrong_why": {}
+"why": "Question word + *to* + base verb: *how to set up*.",
+"wrong_why": {},
+"why_lv": "Jautājuma vārds + *to* + pamatforma: *how to set up*."
 },
 {
 "id": "ia-B22-2a",
@@ -8199,23 +8235,24 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "*how* + *to* + pamatforma: *how to get*."
 },
 {
-"id": "ia-B22-4a",
+"id": "ia-B22-4a-r2",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
-"correct": "I can't decide whether accepting the offer.",
+"correct": "We still can't decide whether moving to a bigger flat.",
 "wrong": [
-"I can't decide whether to accept the offer.",
-"I can't decide whether or not to accept the offer.",
-"I can't decide whether to accept the offer or not."
+"I don't know what to say to him.",
+"Why the meeting was cancelled is still a mystery.",
+"Do you know whether the museum is open on Mondays?"
 ],
-"why": "After *whether* we use *to* + base verb, or a full clause.",
-"wrong_why": {}
+"why": "After *whether* use *to* + base verb or a full clause: *whether to move* or *whether we should move* to a bigger flat.",
+"wrong_why": {},
+"why_lv": "Aiz *whether* lieto *to* + pamatforma vai pilnu palīgteikumu: *whether to move* vai *whether we should move* to a bigger flat."
 },
 {
-"id": "ia-B22-5a-r2",
+"id": "ia-B22-5a-r3",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 5,
@@ -8224,8 +8261,7 @@ return json_decode(<<<'EF_JSON_END'
 "correct": "It remains unclear who is responsible for the delay.",
 "wrong": [
 "It remains unclear who is the responsible for the delay.",
-"It remains unclear who responsible is for the delay.",
-"It remains unclear who does responsible for the delay."
+"It remains unclear who responsible is for the delay."
 ],
 "why": "Embedded question: *who + is + responsible* (statement order).",
 "wrong_why": {}
@@ -8265,7 +8301,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ia-C11-2a-r5",
+"id": "ia-C11-2a-r6",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 2,
@@ -8275,7 +8311,7 @@ return json_decode(<<<'EF_JSON_END'
 "wrong": [
 "if",
 "that",
-"unless"
+"what"
 ],
 "why": "After *on*, use *whether*: *depends on whether the budget is approved*.",
 "wrong_why": {},
@@ -8283,7 +8319,7 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *on* lieto *whether*: *depends on whether the budget is approved*."
 },
 {
-"id": "ia-C11-3a-r7",
+"id": "ia-C11-3a-r8",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 3,
@@ -8295,35 +8331,38 @@ return json_decode(<<<'EF_JSON_END'
 "It is not clear who made the decision.",
 "Who made the decision is not clear.",
 "It's unclear who made the decision.",
-"It is unclear who made the decision."
+"It is unclear who made the decision.",
+"It remains unclear who made the decision.",
+"Who made the decision is unclear."
 ]
 ],
 "why": "Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.",
 "hints": []
 },
 {
-"id": "ia-C11-4a-r2",
+"id": "ia-C11-4a-r3",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 4,
 "kind": "mcq",
 "q": "Which sentence is NOT correct?",
-"correct": "We talked about how could we improve the results.",
+"correct": "We talked about how could we cut costs.",
 "wrong": [
-"We talked about how to improve the results.",
-"We talked about how we could improve the results.",
-"We talked about whether to improve the results."
+"I'm not sure where to park.",
+"Whether the shop is open on Sunday is still unclear.",
+"It depends on whether the flight is on time."
 ],
-"why": "No question order after *about*: *how we could improve the results.*",
-"wrong_why": {}
+"why": "No question order after *about*: *how we could cut costs* (or *how to cut costs*).",
+"wrong_why": {},
+"why_lv": "Aiz *about* nav jautājuma vārdu secības: *how we could cut costs* (vai *how to cut costs*)."
 },
 {
-"id": "ia-C11-5a-r2",
+"id": "ia-C11-5a-r3",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 5,
 "kind": "mcq",
-"q": "You write a report: 'The question is ___.' Choose the correct option.",
+"q": "Choose the correct option: The question is ___.",
 "correct": "whether the project is worth the cost",
 "wrong": [
 "is the project worth the cost",
@@ -8366,20 +8405,21 @@ return json_decode(<<<'EF_JSON_END'
 "why": "Compare your sentence with the model answer."
 },
 {
-"id": "ia-C12-1a-r2",
+"id": "ia-C12-1a-r3",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 1,
 "kind": "mcq",
-"q": "Choose the correct word: ___ finishes first wins a prize.",
+"q": "Choose the correct word: ___ booked the meeting room should cancel it if plans change.",
 "correct": "Whoever",
 "wrong": [
 "Whomever",
 "Whatever",
-"However"
+"Wherever"
 ],
-"why": "*Whoever* is the subject of *finishes.* It means *any person who.*",
-"wrong_why": {}
+"why": "*Whoever* is the subject of *booked*. It means *the person who*.",
+"wrong_why": {},
+"why_lv": "*Whoever* ir teikuma priekšmets darbības vārdam *booked*. Tas nozīmē *tas, kurš*."
 },
 {
 "id": "ia-C12-2a-r3",
@@ -8399,23 +8439,32 @@ return json_decode(<<<'EF_JSON_END'
 "wrong_why_lv": {}
 },
 {
-"id": "ia-C12-3a-r4",
+"id": "ia-C12-3a-r5",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 3,
 "kind": "text",
-"q": "Write one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
+"q": "Make it one sentence that starts with *Who…*: It doesn't matter who calls. Don't answer.",
 "answers": [
 [
 "Whoever calls, don't answer.",
-"Whoever calls, do not answer."
+"Whoever calls, do not answer.",
+"Whoever it is, don't answer.",
+"Whoever it is, do not answer.",
+"Who calls doesn't matter, so don't answer.",
+"Who calls does not matter, so do not answer.",
+"Whoever may call, don't answer.",
+"Whoever may call, do not answer.",
+"Who calls doesn't matter; don't answer.",
+"Who calls does not matter; do not answer."
 ]
 ],
-"why": "*Whoever* + verb = it does not matter who.",
-"hints": []
+"why": "*Whoever* + verb = it does not matter who: *Whoever calls, don't answer.* *Who calls doesn't matter, so don't answer* (the question as the subject) is correct too.",
+"hints": [],
+"why_lv": "*Whoever* + darbības vārds = nav svarīgi, kas: *Whoever calls, don't answer.* Arī *Who calls doesn't matter, so don't answer* ir pareizi (jautājums kā teikuma priekšmets)."
 },
 {
-"id": "ia-C12-4a-r2",
+"id": "ia-C12-4a-r3",
 "skill": "ind_advanced",
 "level": "B2.2",
 "bloom": 4,
@@ -8423,12 +8472,13 @@ return json_decode(<<<'EF_JSON_END'
 "q": "Which sentence is NOT correct?",
 "correct": "Whomever wins the contract will celebrate.",
 "wrong": [
-"Whoever wins the contract will celebrate.",
-"Give it to whomever you trust.",
-"Give it to whoever wants it."
+"Whatever you decide, I'll support you.",
+"You can sit wherever you like.",
+"I'll talk to whoever is at the front desk."
 ],
-"why": "*Whoever wins*: *whoever* is the subject. In *whomever you trust*, *whomever* is the object.",
-"wrong_why": {}
+"why": "*Whoever wins*: *whoever* is the subject of *wins*, so *whomever* is wrong here.",
+"wrong_why": {},
+"why_lv": "*Whoever wins*: *whoever* ir teikuma priekšmets darbības vārdam *wins*, tāpēc *whomever* šeit nav pareizi."
 },
 {
 "id": "ia-C12-5a-r4",
@@ -8752,20 +8802,24 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Nereālu pagātnes nosacījumu izsaka *had left*, bet tā iedomāto pagātnes rezultātu — *would have caught*."
 },
 {
-"id": "var-cm-b21-order-01",
+"id": "var-cm-b21-order-01-r2",
 "skill": "cond_mixed",
 "level": "B2.1",
 "bloom": 3,
 "kind": "order",
-"q": "Link a different past decision to a present result. Start with If I had and put now at the end.",
-"why": "*Had studied* imagines a different past decision. *Would be ... now* describes the present consequence.",
+"q": "Put the words in order.",
+"why": "*If I had studied* imagines a different past decision; *I would be a doctor now* is the result now. *now* can also stand before *a doctor*, and the *if*-part can come second.",
 "sentence": "if I had studied medicine I would be a doctor now",
 "answers": [
 [
-"if I had studied medicine I would be a doctor now"
+"if I had studied medicine I would be a doctor now",
+"if I had studied medicine I would now be a doctor",
+"I would be a doctor now if I had studied medicine",
+"I would now be a doctor if I had studied medicine"
 ]
 ],
-"display_answer": "If I had studied medicine, I would be a doctor now."
+"display_answer": "If I had studied medicine, I would be a doctor now.",
+"why_lv": "*If I had studied* iztēlojas citādu lēmumu pagātnē; *I would be a doctor now* ir rezultāts tagad. *now* var stāvēt arī pirms *a doctor*, un *if* daļa var būt otrā."
 },
 {
 "id": "var-ca-c11-order-01-r4",
@@ -8818,12 +8872,12 @@ return json_decode(<<<'EF_JSON_END'
 "why_lv": "Pēc *whether* lieto apgalvojuma vārdu secību: *I needed help*, nevis *did I need help*."
 },
 {
-"id": "var-rv-b22-order-01",
+"id": "var-rv-b22-order-01-r2",
 "skill": "rep_verbs",
 "level": "B2.2",
 "bloom": 3,
 "kind": "order",
-"q": "Report an apology. Start with She.",
+"q": "Put the words in order.",
 "why": "The pattern is *apologise for + noun or -ing form*: *apologised for missing the meeting*.",
 "sentence": "she apologised for missing the meeting",
 "answers": [
@@ -8831,7 +8885,8 @@ return json_decode(<<<'EF_JSON_END'
 "she apologised for missing the meeting"
 ]
 ],
-"display_answer": "She apologised for missing the meeting."
+"display_answer": "She apologised for missing the meeting.",
+"practice_only": true
 },
 {
 "id": "var-ip-b11-order-01-r2",

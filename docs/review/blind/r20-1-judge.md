@@ -1,0 +1,59 @@
+# r20-1 judge summary
+
+- r20-1-001: **practice_only**. If I were you is a B1 point (level map c2_were); the key is right and the task is too easy for B2.1, so it stays for practice only.
+- r20-1-002: **keep**. Already a learning task (role learn), so it is not used as evidence; would vs might is on the cond_second card.
+- r20-1-003: **accept**. Might be / could be are correct second-conditional results here (the card: could or might instead of would) and must be accepted.
+- r20-1-004: **fix**. Gate mistake: the right sentences were near-copies of the wrong one. New right sentences about three different things; the IF-WOULD mistake stays. Basic second conditional is a B1 point (level map c2), so the task becomes practice only.
+- r20-1-005: **keep**. 'I would be grateful if you will send' mixes would and will and is not standard in a polite request; the key stands, and the formal request frame suits B2.1.
+- r20-1-006: **keep**. A writing task gives the situation, not the form (rule of 3 November); 'from your own point of view' leads to If I were you without naming it.
+- r20-1-007: **practice_only**. Basic third conditional is a B1 point (level map c3); correct, but too easy for B2.1.
+- r20-1-008: **fix**. The wrong option 'certain, not possible' contradicts itself and is not a believable misunderstanding; replaced by the would-have reading.
+- r20-1-009: **fix**. Gate mistake: two right sentences were near-copies of the wrong one. New right sentences about different things; the has/had mistake stays. Basic third conditional is a B1 point, so practice only.
+- r20-1-010: **fix**. 'could adjust have' is a word-order slip nobody makes; replaced by a real learner mistake (could have + base verb).
+- r20-1-011: **keep**. Open writing task: the situation (imagine you had not made it) asks for the form without naming it, as the rules require.
+- r20-1-012: **practice_only**. 'Imagine the past was different' is a situation, not the form name, and is needed (without it heard / would avoid is also correct). But a basic third conditional is a B1 point, too easy for B2.2.
+- r20-1-013: **fix**. B ('If you asked, I would help') can be about now or the future, so 'about now' was imprecise.
+- r20-1-014: **practice_only**. Might not have lost is a correct result (less certain) and is added. The verbs are given and the point is a basic third conditional (B1 in the level map), so the task is too easy for B2.2.
+- r20-1-015: **fix**. Gate mistake: two right sentences were near-copies of the wrong one. New right sentences about different things; 'If I'd have known' stays as the mistake (it is the standard B2 error in the level map, c2_c3).
+- r20-1-016: **fix**. 'had realise' is a typo-level slip. Replaced by real learner mistakes (would in the if-part, would have + past form). Basic third conditional is a B1 point, so practice only.
+- r20-1-017: **keep**. Open writing task: the situation (what would have happened if one thing had been different) is enough; naming the form would give it away.
+- r20-1-018: **keep**. Only option 4 has a result now; option 3 imagines a past result. The near pair is the point of this learning task (role learn).
+- r20-1-020: **fix**. Gate mistake: the right sentences were near-copies of the wrong one. New right mixed conditionals about three different things; the would-in-the-if-part mistake stays.
+- r20-1-021: **fix**. Option 1 had two errors and a past tense nobody writes ('I wasn't so tired now'). Replaced by the single real mistake (would in the if-part); option 2 (would have been + now) stays as the mixed/third contrast.
+- r20-1-022: **keep**. Open writing task: the situation (past decision, effect today) asks for a mixed conditional without naming it.
+- r20-1-023: **keep**. Readers found no problem: one answer, a B2.2 mixed conditional.
+- r20-1-025: **accept**. 'would live in Paris now' and 'would be in Paris now' keep the meaning and are correct mixed conditionals.
+- r20-1-026: **fix**. Gate mistake: two right sentences were near-copies of the wrong one. New right mixed conditionals about different things; the 'If I am' mistake stays.
+- r20-1-027: **fix**. The options needed grammar terms (Zero, First, Third, Mixed conditional); a task must be solvable without them. Options now describe the time.
+- r20-1-028: **keep**. Open writing task: the situation (a quality of yours, a past result) asks for the form without naming it.
+- r20-1-029: **keep**. Readers solved it with the key; option 4 (rich then) is a fair distractor.
+- r20-1-030: **keep**. Readers solved it with the key; no problem found.
+- r20-1-031: **fix**. 'inversion' is a grammar term in the instruction. The new instruction asks for a more formal sentence without if; the answers stay.
+- r20-1-032: **fix**. 'Had I taken that job, I would be rich now' repeats the correct answer of r20-1-029; replaced by another correct inverted sentence. 'Hadn't I' stays: learners do write it.
+- r20-1-034: **keep**. 'Start with Had I' is the frame, not the answer; 'today' asks for would + base verb, which the check looks for.
+- r20-1-036: **keep**. Already a learning task (role learn): basic unless is B1 and it stays only for practice.
+- r20-1-037: **practice_only**. Basic unless = if not is a B1 point (level map c1_unless); correct, but too easy for B2.2.
+- r20-1-038: **keep**. Already a learning task (role learn), not used as evidence.
+- r20-1-040: **keep**. Provided that / as long as is the B2.2 point (c_alt); naming the word is fine because using it, not choosing it, is the task.
+- r20-1-041: **fix**. Gate mistake: the right sentences were near-copies of the wrong one. New right sentences about different things. Say / tell is A2 in the level map, so practice only.
+- r20-1-042: **fix**. Gate mistake: one right sentence was a near-copy of the wrong one. New right sentences about different things. Reported wh-questions are B1 (level map rep_q_wh), so practice only.
+- r20-1-043: **fix**. Gate mistake: 'She asked me whether I agreed or not' was a near-copy of the wrong sentence; replaced by a reported question about something else.
+- r20-1-044: **fix**. Gate mistake: all three right sentences repeated 'suggested … by train'. New right sentences use three other patterns from the card.
+- r20-1-045: **fix**. Gate card_words: 'about' and 'at' are not on the rep_verbs card. The bank now holds only prepositions the card teaches (for, of, on, to). The quote stays: it is what is reported.
+- r20-1-046: **fix**. Gate mistake: 'He blamed me for losing the file' was a near-copy, 'for to lose' is a form nobody writes, and blame is not on the card. New task: the card's accuse of mistake, with three different card verbs as right sentences.
+- r20-1-047: **fix**. Gate mistake: the right sentences were near-copies of the wrong one and of the card example. New right sentences about different things; the whether + -ing mistake stays.
+- r20-1-048: **fix**. Gate card_words: 'unless' is not on the ind_advanced card; replaced by 'what'. 'if' stays wrong: the card teaches 'after a preposition use whether, not if' (informal 'depends on if' exists, but this is the taught rule, as for backshift on 11 November).
+- r20-1-049: **fix**. Gate mistake: the right sentence 'We talked about how to improve the results' was a near-copy and the card's own example. New right sentences about different things; the question-order mistake stays.
+- r20-1-050: **fix**. Gate card_words: 'However' is not on the card (replaced by Wherever). The sentence also near-copied the card example (Whoever finishes first can go home) and r20-1-060; new sentence.
+- r20-1-051: **fix**. Gate mistake: 'Whoever wins the contract' was a near-copy of the wrong sentence, and 'whomever you trust' teaches a form the card lists only as a mistake. New right sentences with the card's -ever words.
+- r20-1-052: **fix**. Gate card_words: 'Despite' is not on the conj_b2 card, and 'Whereas' could be rejected by meaning. The wrong options are now reason words from the card that need a noun, so only the form decides.
+- r20-1-053: **fix**. Gate card_words: 'since' is not on the card. The sentence also copied the card example (The match was postponed owing to the rain); new sentence, wrong options built from card words.
+- r20-1-054: **fix**. Gate card_words: 'despite' and 'in spite of' are not on the conj_b2 card. Wrong options now from the card (although, however, whereas), all of which fail after 'and' + clause.
+- r20-1-055: **fix**. Gate card_words: 'Despite' is not on the card; the sentence also copied the card example (Sales fell … therefore … close the shop). New sentence, bank from the card.
+- r20-1-056: **fix**. Gate card_words: 'unless' is not on the ind_advanced card; replaced by 'what', which fits neither gap.
+- r20-1-057: **fix**. Gate card_words: 'to' is not on the rep_statements card; replaced by 'that' (said / told + that is on the card). Already a learning task, so the easy level does not matter.
+- r20-1-058: **fix**. Gate card_words: 'about' is not on the rep_verbs card; replaced by 'to', which the explanation already mentions (complained to me).
+- r20-1-059: **fix**. Gate card_words: 'no' is not on the conj_clauses card; replaced by 'that' (so that, from the card). 'don't' stays as the usual learner mistake.
+- r20-1-060: **fix**. Gate card_words: 'However' is not on the card (replaced by Wherever). The sentence near-copied the card's mistake example (Whomever arrives last washes up) and r20-1-050; new sentence.
+
+Counts: accept 2, fix 33, keep 15, practice_only 5

@@ -1,0 +1,2048 @@
+{
+ "r20b-3-001": {
+  "hash": "1c75121e1f37ef36",
+  "gate_key": "cond_third | B2.1 | mcq | 'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show? | The deal was possible, not certain.",
+  "src": "built-in",
+  "point": "c3_modal",
+  "key": {
+   "kind": "mcq",
+   "correct": "The deal was possible, not certain.",
+   "wrong": [
+    "The deal would certainly have been signed.",
+    "The deal was impossible from the start.",
+    "The deal was signed in the end."
+   ]
+  },
+  "item": {
+   "id": "ct-B21-2a-r3",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "'If he hadn't been so rude, we might have signed the deal.' What does 'might have' show?",
+   "correct": "The deal was possible, not certain.",
+   "wrong": [
+    "The deal would certainly have been signed.",
+    "The deal was impossible from the start.",
+    "The deal was signed in the end."
+   ],
+   "why": "*Might have* and *could have* show a possible result of the imagined past. *Would have* shows a certain one.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 5.2,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c3_modal",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-002": {
+  "hash": "8cb669e0a3203c45",
+  "gate_key": "cond_third | B2.2 | mcq | What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.' | A is about the past, B about now or the future.",
+  "src": "built-in",
+  "point": "c2_c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "A is about the past, B about now or the future.",
+   "wrong": [
+    "A is about now, B about the past.",
+    "A is about the future, B the past.",
+    "There is no difference in meaning."
+   ]
+  },
+  "item": {
+   "id": "ct-B22-2a-r4",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.'",
+   "correct": "A is about the past, B about now or the future.",
+   "wrong": [
+    "A is about now, B about the past.",
+    "A is about the future, B the past.",
+    "There is no difference in meaning."
+   ],
+   "why": "Third conditional (A) = an unreal past. Second conditional (B) = an unreal present or future.",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "why_lv": "Third conditional (A) izsaka nereālu pagātni. Second conditional (B) izsaka nereālu tagadni vai nākotni.",
+   "d": 6.2,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c2_c3",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-003": {
+  "hash": "04ed06abfa297404",
+  "gate_key": "cond_third | B2.2 | mcq | Which sentence is correct? | If I had realised the impact of my decision, I would have acted differently.",
+  "src": "built-in",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If I had realised the impact of my decision, I would have acted differently.",
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I would have acted differently.",
+    "If I had realised the impact of my decision, I would acted differently."
+   ]
+  },
+  "item": {
+   "id": "ct-B22-5a-r3",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "If I had realised the impact of my decision, I would have acted differently.",
+   "wrong": [
+    "If I realised the impact of my decision, I would have acted differently.",
+    "If I would have realised the impact of my decision, I would have acted differently.",
+    "If I had realised the impact of my decision, I would acted differently."
+   ],
+   "why": "Formal regret about the past: *if* + past perfect, *would have* + past participle.",
+   "wrong_why": [],
+   "practice_only": true,
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [
+    "IF-WOULD"
+   ],
+   "role": "learn",
+   "point": "c3",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-004": {
+  "hash": "e6c4dc0357a8c1b6",
+  "gate_key": "cond_mixed | B2.2 | text | Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now. | ",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "If he had taken the job, he would be living in Paris now.",
+     "If he'd taken the job, he'd be living in Paris now.",
+     "He would be living in Paris now if he had taken the job.",
+     "He'd be living in Paris now if he'd taken the job.",
+     "If he had taken the job, he would live in Paris now.",
+     "If he'd taken the job, he'd live in Paris now.",
+     "He would live in Paris now if he had taken the job.",
+     "If he had taken the job, he would be in Paris now.",
+     "If he'd taken the job, he'd be in Paris now.",
+     "He would be in Paris now if he had taken the job."
+    ]
+   ]
+  },
+  "item": {
+   "id": "cm-B22-3a-r4",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Imagine the past was different, and say how things would be now. Start with *If he*: He didn't take the job, so he isn't living in Paris now.",
+   "answers": [
+    [
+     "If he had taken the job, he would be living in Paris now.",
+     "If he'd taken the job, he'd be living in Paris now.",
+     "He would be living in Paris now if he had taken the job.",
+     "He'd be living in Paris now if he'd taken the job.",
+     "If he had taken the job, he would live in Paris now.",
+     "If he'd taken the job, he'd live in Paris now.",
+     "He would live in Paris now if he had taken the job.",
+     "If he had taken the job, he would be in Paris now.",
+     "If he'd taken the job, he'd be in Paris now.",
+     "He would be in Paris now if he had taken the job."
+    ]
+   ],
+   "why": "Mixed conditional: *if* + *had* + past participle, *would* + base verb.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-005": {
+  "hash": "5f73c2a1298096c3",
+  "gate_key": "cond_mixed | B2.2 | text | Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now. | ",
+  "src": "built-in",
+  "point": "c_inv",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Had I listened to my accountant, I wouldn't be in this mess now.",
+     "Had I listened to my accountant, I'd not be in this mess now.",
+     "I wouldn't be in this mess now had I listened to my accountant.",
+     "I'd not be in this mess now had I listened to my accountant."
+    ]
+   ]
+  },
+  "item": {
+   "id": "cm-C11-3a-r4",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it in a more formal way, without *if*: If I had listened to my accountant, I wouldn't be in this mess now.",
+   "answers": [
+    [
+     "Had I listened to my accountant, I wouldn't be in this mess now.",
+     "Had I listened to my accountant, I'd not be in this mess now.",
+     "I wouldn't be in this mess now had I listened to my accountant.",
+     "I'd not be in this mess now had I listened to my accountant."
+    ]
+   ],
+   "why": "Inversion: *Had* + subject + past participle replaces *if I had* + past participle.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "c_inv",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-006": {
+  "hash": "8e9831eb2a0049e4",
+  "gate_key": "cond_advanced | B2.2 | mcq | Which sentence is correct? | If only we had listened to the warning signs last year, we would not be in this position now.",
+  "src": "built-in",
+  "point": "wish_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "If only we had listened to the warning signs last year, we would not be in this position now.",
+   "wrong": [
+    "If only we would have listened to the warning signs last year, we would not be in this position now.",
+    "If only we listened to the warning signs last year, we would not be in this position now."
+   ]
+  },
+  "item": {
+   "id": "ca-C12-5a-r3",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 5,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "correct": "If only we had listened to the warning signs last year, we would not be in this position now.",
+   "wrong": [
+    "If only we would have listened to the warning signs last year, we would not be in this position now.",
+    "If only we listened to the warning signs last year, we would not be in this position now."
+   ],
+   "why": "*If only* + *had* + 3rd form for a regret about the past (*last year*), then *would* + base form for the result now. Not *would have listened*, and not *listened*, which is about now.",
+   "wrong_why": [],
+   "why_lv": "*If only* + *had* + 3. forma izsaka nožēlu par pagātni (*last year*), tad *would* + pamatforma rezultātam tagad. Nav pareizi *would have listened*, un arī *listened*, kas attiecas uz tagadni.",
+   "d": 6.8,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "wish_past",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-007": {
+  "hash": "e67a14f2ab488fe7",
+  "gate_key": "rep_questions | B2.2 | mcq | Tom's question to you: 'What should I do?' Which sentence reports it? | He asked me what to do.",
+  "src": "built-in",
+  "point": "iq_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "He asked me what to do.",
+   "wrong": [
+    "He asked me what should he do.",
+    "He asked me what he does."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-1a-r4",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Tom's question to you: 'What should I do?' Which sentence reports it?",
+   "correct": "He asked me what to do.",
+   "wrong": [
+    "He asked me what should he do.",
+    "He asked me what he does."
+   ],
+   "why": "A reported question has statement word order, so *what should he do* is wrong. The report *what to do* is correct here; *what he should do* is also possible.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "iq_to",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-008": {
+  "hash": "8e41ebb2f296bc31",
+  "gate_key": "rep_questions | B2.2 | mcq | Which sentence is NOT correct? | She asked me whether or not did I agree.",
+  "src": "built-in",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "mcq",
+   "correct": "She asked me whether or not did I agree.",
+   "wrong": [
+    "He asked me if I was ready.",
+    "They asked whether we had eaten.",
+    "He wanted to know whether the hotel had a pool."
+   ]
+  },
+  "item": {
+   "id": "rq-B22-4a-r3",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She asked me whether or not did I agree.",
+   "wrong": [
+    "He asked me if I was ready.",
+    "They asked whether we had eaten.",
+    "He wanted to know whether the hotel had a pool."
+   ],
+   "why": "After *whether* we use statement word order: *whether or not I agreed.*",
+   "wrong_why": [],
+   "wrong_why_lv": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "check",
+   "point": "rep_q_yn",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-009": {
+  "hash": "af3f1b0f0a0c1c2c",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | She suggested to go by train.",
+  "src": "built-in",
+  "point": "rv_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "She suggested to go by train.",
+   "wrong": [
+    "He denied taking the money.",
+    "My doctor advised me to rest.",
+    "They promised that they would call back."
+   ]
+  },
+  "item": {
+   "id": "rv-B22-4a-r2",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "She suggested to go by train.",
+   "wrong": [
+    "He denied taking the money.",
+    "My doctor advised me to rest.",
+    "They promised that they would call back."
+   ],
+   "why": "*suggest* is not followed by *to* + base verb. Use -ing or *that* + clause.",
+   "wrong_why": [],
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_ing",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-010": {
+  "hash": "6f9297241070f050",
+  "gate_key": "rep_verbs | B2.2 | gap | 'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam. | ",
+  "src": "built-in",
+  "point": "rv_prep_ing",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "rv-C11-3a-r6",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'Congratulations, Jo! You've finally passed the exam!' I congratulated Jo ___ passing the exam.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "why": "*congratulate* + person + *on* + -ing: *I congratulated Jo on passing the exam.*",
+   "hints": [],
+   "bank": [
+    "on",
+    "for",
+    "of",
+    "to"
+   ],
+   "d": 6.4,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_prep_ing",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-011": {
+  "hash": "9d8576741e8a6d34",
+  "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports this: 'If I were you, I'd take the earlier train.' | She advised me to take the earlier train.",
+  "src": "built-in",
+  "point": "rv_obj_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "She advised me to take the earlier train.",
+   "wrong": [
+    "She suggested me to take the earlier train.",
+    "She insisted me to take the earlier train.",
+    "She advised to take the earlier train."
+   ]
+  },
+  "item": {
+   "id": "rv-C12-1a-r4",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Which sentence reports this: 'If I were you, I'd take the earlier train.'",
+   "correct": "She advised me to take the earlier train.",
+   "wrong": [
+    "She suggested me to take the earlier train.",
+    "She insisted me to take the earlier train.",
+    "She advised to take the earlier train."
+   ],
+   "why": "*advise* + person + *to* + base verb.",
+   "wrong_why": [],
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "rv_obj_to",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-012": {
+  "hash": "7474e691a96e8e45",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We still can't decide whether moving to a bigger flat.",
+  "src": "built-in",
+  "point": "iq_whether",
+  "key": {
+   "kind": "mcq",
+   "correct": "We still can't decide whether moving to a bigger flat.",
+   "wrong": [
+    "I don't know what to say to him.",
+    "Why the meeting was cancelled is still a mystery.",
+    "Do you know whether the museum is open on Mondays?"
+   ]
+  },
+  "item": {
+   "id": "ia-B22-4a-r2",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "correct": "We still can't decide whether moving to a bigger flat.",
+   "wrong": [
+    "I don't know what to say to him.",
+    "Why the meeting was cancelled is still a mystery.",
+    "Do you know whether the museum is open on Mondays?"
+   ],
+   "why": "After *whether* use *to* + base verb or a full clause: *whether to move* or *whether we should move* to a bigger flat.",
+   "wrong_why": [],
+   "why_lv": "Aiz *whether* lieto *to* + pamatforma vai pilnu palīgteikumu: *whether to move* vai *whether we should move* to a bigger flat.",
+   "d": 6.6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "iq_whether",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-013": {
+  "hash": "f287b934dfe44fe4",
+  "gate_key": "ind_advanced | B2.2 | text | Combine the two sentences without changing their meaning: Who made the decision? It's not clear. | ",
+  "src": "built-in",
+  "point": "iq_subject",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It's not clear who made the decision.",
+     "It is not clear who made the decision.",
+     "Who made the decision is not clear.",
+     "It's unclear who made the decision.",
+     "It is unclear who made the decision.",
+     "It remains unclear who made the decision."
+    ]
+   ]
+  },
+  "item": {
+   "id": "ia-C11-3a-r8",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Combine the two sentences without changing their meaning: Who made the decision? It's not clear.",
+   "answers": [
+    [
+     "It's not clear who made the decision.",
+     "It is not clear who made the decision.",
+     "Who made the decision is not clear.",
+     "It's unclear who made the decision.",
+     "It is unclear who made the decision.",
+     "It remains unclear who made the decision."
+    ]
+   ],
+   "why": "Keep the meaning of *It's not clear*. *Who* is the subject of *made*, so use *who made the decision*. *I wonder who made the decision* is grammatical but changes the main idea.",
+   "hints": [],
+   "d": 6.4,
+   "scaffold": 2,
+   "err": [],
+   "role": "use",
+   "point": "iq_subject",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-014": {
+  "hash": "1051f6687682b52c",
+  "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct word: ___ booked the meeting room should cancel it if plans change. | Whoever",
+  "src": "built-in",
+  "point": "whoever",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ]
+  },
+  "item": {
+   "id": "ia-C12-1a-r3",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct word: ___ booked the meeting room should cancel it if plans change.",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ],
+   "why": "*Whoever* is the subject of *booked*. It means *the person who*.",
+   "wrong_why": [],
+   "why_lv": "*Whoever* ir teikuma priekšmets darbības vārdam *booked*. Tas nozīmē *tas, kurš*.",
+   "d": 6,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "whoever",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-015": {
+  "hash": "e985b7588071f8f4",
+  "gate_key": "cond_mixed | B2.1 | order | Put the words in order. | if I had studied medicine I would be a doctor now",
+  "src": "built-in",
+  "point": "c_mixed",
+  "key": {
+   "kind": "order",
+   "sentence": "if I had studied medicine I would be a doctor now",
+   "also": [
+    "if I had studied medicine I would now be a doctor",
+    "I would be a doctor now if I had studied medicine",
+    "I would now be a doctor if I had studied medicine"
+   ]
+  },
+  "item": {
+   "id": "var-cm-b21-order-01-r2",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*If I had studied* imagines a different past decision; *I would be a doctor now* is the result now. *now* can also stand before *a doctor*, and the *if*-part can come second.",
+   "sentence": "if I had studied medicine I would be a doctor now",
+   "answers": [
+    [
+     "if I had studied medicine I would be a doctor now",
+     "if I had studied medicine I would now be a doctor",
+     "I would be a doctor now if I had studied medicine",
+     "I would now be a doctor if I had studied medicine"
+    ]
+   ],
+   "display_answer": "If I had studied medicine, I would be a doctor now.",
+   "why_lv": "*If I had studied* iztēlojas citādu lēmumu pagātnē; *I would be a doctor now* ir rezultāts tagad. *now* var stāvēt arī pirms *a doctor*, un *if* daļa var būt otrā.",
+   "d": 5.4,
+   "scaffold": 1,
+   "err": [],
+   "role": "check",
+   "point": "c_mixed",
+   "src": "built-in"
+  }
+ },
+ "r20b-3-016": {
+  "hash": "b657c3135e006abc",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Choose the correct option: Mark was covered in sweat when I saw him. He ___ at the gym. | had been training",
+  "src": "compare-past-1.csv:49",
+  "point": "pastpc",
+  "key": {
+   "kind": "mcq",
+   "correct": "had been training",
+   "wrong": [
+    "has been training",
+    "had been train"
+   ]
+  },
+  "item": {
+   "id": "c-2196",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: Mark was covered in sweat when I saw him. He ___ at the gym.",
+   "why": "*had been* + *-ing*: an activity that went on before a moment in the past, often with a result you can see.",
+   "why_lv": "*had been + -ing*: darbība, kas *ilga* pirms kāda brīža pagātnē, bieži ar redzamu rezultātu.",
+   "correct": "had been training",
+   "wrong": [
+    "has been training",
+    "had been train"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pastpc",
+   "src": "compare-past-1.csv:49"
+  }
+ },
+ "r20b-3-017": {
+  "hash": "64282a27d294369b",
+  "gate_key": "narrative_b2 | B2.1 | gap | The shop was busy yesterday. By eleven o'clock Mark ___ forty customers. (serve) | ",
+  "src": "compare-past-1.csv:52",
+  "point": "pastpc_vs",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had served",
+     "'d served"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The shop was busy yesterday. By eleven o'clock Mark ___ forty customers. (serve)",
+   "why": "How much or how many: *had done*. How long: *had been doing*. *Forty customers* is a number, so *had served*.",
+   "why_lv": "Cik daudz: *had done*. Cik ilgi: *had been doing*. *Forty customers* ir skaits, tāpēc *had served*.",
+   "answers": [
+    [
+     "had served",
+     "'d served"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc_vs",
+   "src": "compare-past-1.csv:52"
+  }
+ },
+ "r20b-3-018": {
+  "hash": "6a1844956d4236c4",
+  "gate_key": "narrative_b2 | B2.2 | gap | When I looked outside, it ___ any more, but the roads were still wet. (not / snow) | ",
+  "src": "compare-past-1.csv:56",
+  "point": "pastpc_vs",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "wasn't snowing",
+     "was not snowing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2202",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I looked outside, it ___ any more, but the roads were still wet. (not / snow)",
+   "why": "At the moment I looked outside: *wasn't snowing*. The wet roads come from the snow before, but the gap is about that moment.",
+   "why_lv": "Brīdī, kad paskatījos ārā: *wasn't snowing*. Slapjie ceļi ir no iepriekšējā sniega, bet tukšā vieta ir par šo brīdi.",
+   "answers": [
+    [
+     "wasn't snowing",
+     "was not snowing"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc_vs",
+   "src": "compare-past-1.csv:56"
+  }
+ },
+ "r20b-3-019": {
+  "hash": "aeb6672b2893aeea",
+  "gate_key": "conj_clauses | B2.1 | text | Correct the mistake: Despite of the delays, the project was finished on time. | ",
+  "src": "conjunctions-1.csv:81",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Despite the delays, the project was finished on time.",
+     "In spite of the delays, the project was finished on time."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2338",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Despite of the delays, the project was finished on time.",
+   "why": "*despite* without *of*; *in spite of* with *of*.",
+   "why_lv": "*despite* bez *of*; *in spite of* ar *of*.",
+   "answers": [
+    [
+     "Despite the delays, the project was finished on time.",
+     "In spite of the delays, the project was finished on time."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "contrast_b1",
+   "src": "conjunctions-1.csv:81"
+  }
+ },
+ "r20b-3-020": {
+  "hash": "3d1b9dc5c78d5944",
+  "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: This app is used ___ your spending. | for tracking",
+  "src": "conjunctions-1.csv:90",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "for tracking",
+   "wrong": [
+    "for track",
+    "for to track"
+   ]
+  },
+  "item": {
+   "id": "c-2347",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: This app is used ___ your spending.",
+   "why": "*for* + -ing says what a thing is used for: *used for tracking*.",
+   "why_lv": "*for* + *-ing* pasaka, kam lieto kādu lietu: *used for tracking*.",
+   "correct": "for tracking",
+   "wrong": [
+    "for track",
+    "for to track"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:90"
+  }
+ },
+ "r20b-3-021": {
+  "hash": "6bcf43a8fd0caf16",
+  "gate_key": "conj_b2 | B2.2 | mcq | Which sentence is correct? | He studied hard; nevertheless, he failed the test.",
+  "src": "conjunctions-1.csv:96",
+  "point": "contrast_b2",
+  "key": {
+   "kind": "mcq",
+   "correct": "He studied hard; nevertheless, he failed the test.",
+   "wrong": [
+    "He studied hard nevertheless, he failed the test.",
+    "He studied hard, nevertheless, he failed the test."
+   ]
+  },
+  "item": {
+   "id": "c-2353",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*however / nevertheless* after (.) or (;), with a comma after them.",
+   "why_lv": "*however / nevertheless* pēc (.) vai (;), aiz tiem *komats*.",
+   "correct": "He studied hard; nevertheless, he failed the test.",
+   "wrong": [
+    "He studied hard nevertheless, he failed the test.",
+    "He studied hard, nevertheless, he failed the test."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "contrast_b2",
+   "src": "conjunctions-1.csv:96"
+  }
+ },
+ "r20b-3-022": {
+  "hash": "fc84ac049c503835",
+  "gate_key": "conj_b2 | B2.1 | text | Correct the mistake. Keep *for*: These boxes are for store old documents. | ",
+  "src": "conjunctions-1.csv:106",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "These boxes are for storing old documents.",
+     "These boxes are used for storing old documents."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2363",
+   "skill": "conj_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *for*: These boxes are for store old documents.",
+   "why": "*for* + -ing says what a thing is used for: *for storing*.",
+   "why_lv": "*for* + *-ing* pasaka, kam lieto kādu lietu: *for storing*.",
+   "answers": [
+    [
+     "These boxes are for storing old documents.",
+     "These boxes are used for storing old documents."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:106"
+  }
+ },
+ "r20b-3-023": {
+  "hash": "75686b4e563d35a1",
+  "gate_key": "conj_b2 | B2.2 | order | Put the words in order. | the bank needs your signature in order for the loan to go through",
+  "src": "conjunctions-1.csv:111",
+  "point": "purpose_b2",
+  "key": {
+   "kind": "order",
+   "sentence": "the bank needs your signature in order for the loan to go through",
+   "also": [
+    "in order for the loan to go through the bank needs your signature"
+   ]
+  },
+  "item": {
+   "id": "c-2368",
+   "skill": "conj_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*in order for* + person or thing + *to* + verb: *in order for the loan to go through*.",
+   "why_lv": "*in order for* + persona vai lieta + *to* + darbības vārds: *in order for the loan to go through*.",
+   "sentence": "the bank needs your signature in order for the loan to go through",
+   "answers": [
+    [
+     "the bank needs your signature in order for the loan to go through",
+     "in order for the loan to go through the bank needs your signature"
+    ]
+   ],
+   "role": "check",
+   "point": "purpose_b2",
+   "src": "conjunctions-1.csv:111"
+  }
+ },
+ "r20b-3-024": {
+  "hash": "8016d3e704b511dc",
+  "gate_key": "cond_mixed | B2.2 | gap | If she ___ so stubborn, she ___ accepted their apology last week. | ",
+  "src": "learn-drag-3.csv:5",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "weren't"
+    ],
+    [
+     "would have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3008",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If she ___ so stubborn, she ___ accepted their apology last week.",
+   "why": "A quality now (*weren't so stubborn*), a result in the past (*would have accepted*).",
+   "why_lv": "Rakstura īpašība tagad (*weren't so stubborn*), sekas pagātnē (*would have accepted*).",
+   "answers": [
+    [
+     "weren't"
+    ],
+    [
+     "would have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "weren't",
+    "would have",
+    "would be",
+    "will have"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c_mixed2",
+   "src": "learn-drag-3.csv:5"
+  }
+ },
+ "r20b-3-025": {
+  "hash": "2c65c8a03eb705e6",
+  "gate_key": "rep_statements | B2.1 | order | Put the words in order. | the coach told us to warm up before every match",
+  "src": "learn-drag-3.csv:10",
+  "point": "rep_orders",
+  "key": {
+   "kind": "order",
+   "sentence": "the coach told us to warm up before every match",
+   "also": [
+    "before every match the coach told us to warm up"
+   ]
+  },
+  "item": {
+   "id": "c-3013",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Report the obligation with *had to* or *must*, or the instruction with *told us to warm up*.",
+   "why_lv": "Pienākumu atstāsta ar *had to* vai *must*, norādījumu arī ar *told us to warm up*.",
+   "sentence": "the coach told us to warm up before every match",
+   "answers": [
+    [
+     "the coach told us to warm up before every match",
+     "before every match the coach told us to warm up"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_orders",
+   "src": "learn-drag-3.csv:10"
+  }
+ },
+ "r20b-3-026": {
+  "hash": "458ac88781e89995",
+  "gate_key": "rep_verbs | B2.2 | gap | The client complained ___ the delivery ___ been three days late. | ",
+  "src": "learn-drag-3.csv:21",
+  "point": "rv_that",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "that"
+    ],
+    [
+     "had"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3024",
+   "skill": "rep_verbs",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The client complained ___ the delivery ___ been three days late.",
+   "why": "*complain that* + clause, here *had been*; a listener takes *to*: *complained to me*.",
+   "why_lv": "*complain that* + palīgteikums, šeit *had been*; adresātu pievieno ar *to*: *complained to me*.",
+   "answers": [
+    [
+     "that"
+    ],
+    [
+     "had"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "that",
+    "had",
+    "to",
+    "have"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rv_that",
+   "src": "learn-drag-3.csv:21"
+  }
+ },
+ "r20b-3-027": {
+  "hash": "cb62ebe7b0a1dc51",
+  "gate_key": "cond_third | B2.1 | order | Put the words in order. | if the team had been better prepared we would have won",
+  "src": "learn-drag-4.csv:18",
+  "point": "c3",
+  "key": {
+   "kind": "order",
+   "sentence": "if the team had been better prepared we would have won",
+   "also": [
+    "we would have won if the team had been better prepared",
+    "if we had been better prepared the team would have won",
+    "the team would have won if we had been better prepared"
+   ]
+  },
+  "item": {
+   "id": "c-3054",
+   "skill": "cond_third",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.",
+   "why_lv": "Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.",
+   "sentence": "if the team had been better prepared we would have won",
+   "answers": [
+    [
+     "if the team had been better prepared we would have won",
+     "we would have won if the team had been better prepared",
+     "if we had been better prepared the team would have won",
+     "the team would have won if we had been better prepared"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c3",
+   "src": "learn-drag-4.csv:18"
+  }
+ },
+ "r20b-3-028": {
+  "hash": "51597f80cc2c375b",
+  "gate_key": "conj_clauses | B2.1 | order | Put the words in order. | despite the strike the conference went ahead",
+  "src": "learn-drag-4.csv:28",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "order",
+   "sentence": "despite the strike the conference went ahead",
+   "also": [
+    "the conference went ahead despite the strike"
+   ]
+  },
+  "item": {
+   "id": "c-3064",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*despite* + noun, without *of*: *despite the strike*.",
+   "why_lv": "*despite* + lietvārds, bez *of*: *despite the strike*.",
+   "sentence": "despite the strike the conference went ahead",
+   "answers": [
+    [
+     "despite the strike the conference went ahead",
+     "the conference went ahead despite the strike"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "contrast_b1",
+   "src": "learn-drag-4.csv:28"
+  }
+ },
+ "r20b-3-029": {
+  "hash": "94fb20290e3bb03c",
+  "gate_key": "rep_questions | B2.1 | order | Put all the words in order. More than one answer is possible. | she asked if I could help her",
+  "src": "learn-drag-4.csv:36",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "order",
+   "sentence": "she asked if I could help her",
+   "also": [
+    "I asked her if she could help",
+    "she asked her if I could help",
+    "I asked if she could help her"
+   ]
+  },
+  "item": {
+   "id": "c-3072",
+   "skill": "rep_questions",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.",
+   "why_lv": "Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.",
+   "sentence": "she asked if I could help her",
+   "answers": [
+    [
+     "she asked if I could help her",
+     "I asked her if she could help",
+     "she asked her if I could help",
+     "I asked if she could help her"
+    ]
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "rep_q_yn",
+   "src": "learn-drag-4.csv:36"
+  }
+ },
+ "r20b-3-030": {
+  "hash": "a5c21fd9c0e9f968",
+  "gate_key": "conj_clauses | B2.1 | text | Correct the mistake: Despite of the delay, we arrived on time. | ",
+  "src": "twins-1.csv:34",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Despite the delay, we arrived on time.",
+     "In spite of the delay, we arrived on time.",
+     "We arrived on time despite the delay.",
+     "We arrived on time in spite of the delay."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3406",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Despite of the delay, we arrived on time.",
+   "why": "*despite / in spite of* + noun or *-ing*; never *despite of*.",
+   "why_lv": "*despite / in spite of* + lietvārds vai *-ing*; nekad *despite of*.",
+   "answers": [
+    [
+     "Despite the delay, we arrived on time.",
+     "In spite of the delay, we arrived on time.",
+     "We arrived on time despite the delay.",
+     "We arrived on time in spite of the delay."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "contrast_b1",
+   "src": "twins-1.csv:34"
+  }
+ },
+ "r20b-3-031": {
+  "hash": "cf84cc1e6a1fe4ae",
+  "gate_key": "cond_third | B2.2 | gap | She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus. | ",
+  "src": "twins-1.csv:49",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't stayed"
+    ],
+    [
+     "wouldn't have missed",
+     "might not have missed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3421",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus.",
+   "why": "*if* + *had* + 3rd form, *would have* + 3rd form.",
+   "why_lv": "*if + had* + 3. forma, *would have* + 3. forma.",
+   "answers": [
+    [
+     "hadn't stayed"
+    ],
+    [
+     "wouldn't have missed",
+     "might not have missed"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c3",
+   "src": "twins-1.csv:49"
+  }
+ },
+ "r20b-3-032": {
+  "hash": "13d1934011899461",
+  "gate_key": "cond_advanced | B2.2 | gap | ___ he ___ harder, he would have passed the exam. | ",
+  "src": "twins-1.csv:56",
+  "point": "c_inv",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Had"
+    ],
+    [
+     "studied"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3428",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ he ___ harder, he would have passed the exam.",
+   "why": "*Had he studied* = *If he had studied*: *had* before the subject, then the 3rd form.",
+   "why_lv": "*Had he studied = If he had studied*: *had* pirms teikuma priekšmeta, tad 3. forma.",
+   "answers": [
+    [
+     "Had"
+    ],
+    [
+     "studied"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Had",
+    "studied",
+    "Should",
+    "study"
+   ],
+   "role": "check",
+   "point": "c_inv",
+   "src": "twins-1.csv:56"
+  }
+ },
+ "r20b-3-033": {
+  "hash": "7ce5845b20b6b3d2",
+  "gate_key": "unreal_time | B2.2 | text | Start with *I'd rather you*: Please don't park in front of my garage. | ",
+  "src": "twins-1.csv:62",
+  "point": "rather_you",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'd rather you didn't park in front of my garage.",
+     "I would rather you didn't park in front of my garage.",
+     "I'd rather you not park in front of my garage.",
+     "I would rather you not park in front of my garage.",
+     "I'd rather you parked somewhere else, not in front of my garage."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3434",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *I'd rather you*: Please don't park in front of my garage.",
+   "why": "*I'd rather* + another person + past: *I'd rather you didn't park*.",
+   "why_lv": "*I'd rather* + cits cilvēks + pagātne: *I'd rather you didn't park*.",
+   "answers": [
+    [
+     "I'd rather you didn't park in front of my garage.",
+     "I would rather you didn't park in front of my garage.",
+     "I'd rather you not park in front of my garage.",
+     "I would rather you not park in front of my garage.",
+     "I'd rather you parked somewhere else, not in front of my garage."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rather_you",
+   "src": "twins-1.csv:62"
+  }
+ },
+ "r20b-3-034": {
+  "hash": "80ef4e878770e8e0",
+  "gate_key": "cond_mixed | B2.1 | gap | Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know) | ",
+  "src": "twins-2.csv:10",
+  "point": "c_mixed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had",
+     "'d"
+    ],
+    [
+     "taken"
+    ],
+    [
+     "would",
+     "could",
+     "might"
+    ],
+    [
+     "know"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3458",
+   "skill": "cond_mixed",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know)",
+   "why": "*Had taken* changes the past. *Would know* gives a present result; *could/might* express possibility.",
+   "why_lv": "*Had taken* maina pagātni. *Would know* izsaka sekas tagad; *could/might* izsaka iespējamību.",
+   "answers": [
+    [
+     "had",
+     "'d"
+    ],
+    [
+     "taken"
+    ],
+    [
+     "would",
+     "could",
+     "might"
+    ],
+    [
+     "know"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_mixed",
+   "src": "twins-2.csv:10"
+  }
+ },
+ "r20b-3-035": {
+  "hash": "5ec16846544b6c51",
+  "gate_key": "ind_advanced | B2.2 | text | Combine the sentences. Start with *It is unclear*: Which route should we take? It is unclear. | ",
+  "src": "twins-2.csv:18",
+  "point": "iq_subject",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It is unclear which route we should take.",
+     "It's unclear which route we should take.",
+     "It is unclear which route to take.",
+     "It's unclear which route to take.",
+     "It is unclear which route we ought to take.",
+     "It's unclear which route we ought to take.",
+     "It is unclear which route we are to take.",
+     "It's unclear which route we are to take."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3466",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Combine the sentences. Start with *It is unclear*: Which route should we take? It is unclear.",
+   "why": "Use *which route we should take* or the shorter *which route to take*, without question word order.",
+   "why_lv": "Lieto *which route we should take* vai īsāk *which route to take*. Palīgteikumā teikuma priekšmets ir pirms darbības vārda.",
+   "answers": [
+    [
+     "It is unclear which route we should take.",
+     "It's unclear which route we should take.",
+     "It is unclear which route to take.",
+     "It's unclear which route to take.",
+     "It is unclear which route we ought to take.",
+     "It's unclear which route we ought to take.",
+     "It is unclear which route we are to take.",
+     "It's unclear which route we are to take."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "iq_subject",
+   "src": "twins-2.csv:18"
+  }
+ },
+ "r20b-3-036": {
+  "hash": "6c937bd5acfa0e12",
+  "gate_key": "narrative_b2 | B2.1 | gap | By the time the bell rang, Eva ___ all ten questions, so she left early. (answer) | ",
+  "src": "twins-2.csv:42",
+  "point": "pastpc_vs",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had answered",
+     "'d answered"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3490",
+   "skill": "narrative_b2",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "By the time the bell rang, Eva ___ all ten questions, so she left early. (answer)",
+   "why": "*By the time* + past event: what was finished before it takes *had* + 3rd form.",
+   "why_lv": "*By the time* + pagātnes notikums: tam, kas jau bija pabeigts, lieto *had* + 3. formu.",
+   "answers": [
+    [
+     "had answered",
+     "'d answered"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastpc_vs",
+   "src": "twins-2.csv:42"
+  }
+ },
+ "r20b-3-037": {
+  "hash": "a6254da66c062dd3",
+  "gate_key": "rep_statements | B2.1 | mcq | Which sentence is correct? | My sister said she would call me as soon as she landed.",
+  "src": "twins-3.csv:12",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "mcq",
+   "correct": "My sister said she would call me as soon as she landed.",
+   "wrong": [
+    "My sister said she would call me as soon as she would land.",
+    "My sister said she would call me as soon as she will land.",
+    "My sister told she would call me as soon as she landed."
+   ]
+  },
+  "item": {
+   "id": "c-3510",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*will* becomes *would*; after *as soon as* no *would* or *will*: *as soon as she landed*. *tell* needs a person: *told me*.",
+   "why_lv": "*will* kļūst par *would*; aiz *as soon as* nelieto *would* vai *will*: *as soon as she landed*. Aiz *tell* vajag personu: *told me*.",
+   "correct": "My sister said she would call me as soon as she landed.",
+   "wrong": [
+    "My sister said she would call me as soon as she would land.",
+    "My sister said she would call me as soon as she will land.",
+    "My sister told she would call me as soon as she landed."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "twins-3.csv:12"
+  }
+ },
+ "r20b-3-038": {
+  "hash": "bfe85bb22ca74924",
+  "gate_key": "rep_questions | B2.2 | text | Report this. Start with *They asked*: 'What time should we arrive?' | ",
+  "src": "twins-3.csv:15",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "They asked what time they should arrive.",
+     "They asked what time to arrive.",
+     "They asked what time we should arrive.",
+     "They asked me what time they should arrive.",
+     "They asked us what time we should arrive.",
+     "They asked me what time to arrive.",
+     "They asked us what time to arrive.",
+     "They asked what time they ought to arrive.",
+     "They asked what time they were to arrive."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3513",
+   "skill": "rep_questions",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report this. Start with *They asked*: 'What time should we arrive?'",
+   "why": "Statement order: *what time they should arrive*, or the short *what time to arrive*.",
+   "why_lv": "Apgalvojuma secība: *what time they should arrive* vai īsāk *what time to arrive*.",
+   "answers": [
+    [
+     "They asked what time they should arrive.",
+     "They asked what time to arrive.",
+     "They asked what time we should arrive.",
+     "They asked me what time they should arrive.",
+     "They asked us what time we should arrive.",
+     "They asked me what time to arrive.",
+     "They asked us what time to arrive.",
+     "They asked what time they ought to arrive.",
+     "They asked what time they were to arrive."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_wh",
+   "src": "twins-3.csv:15"
+  }
+ },
+ "r20b-3-039": {
+  "hash": "82e9f39665f845f3",
+  "gate_key": "ind_advanced | B2.2 | mcq | Which is correct? 'We weren't sure ___.' | where to go",
+  "src": "twins-3.csv:22",
+  "point": "iq_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "where to go",
+   "wrong": [
+    "where should we go",
+    "where do we go",
+    "where go"
+   ]
+  },
+  "item": {
+   "id": "c-3520",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Which is correct? 'We weren't sure ___.'",
+   "why": "Question word + *to* + base form: *where to go* = where we should go.",
+   "why_lv": "Jautājamais vārds + to + pamatforma: *where to go* nozīmē, kur mums vajadzētu doties.",
+   "correct": "where to go",
+   "wrong": [
+    "where should we go",
+    "where do we go",
+    "where go"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "iq_to",
+   "src": "twins-3.csv:22"
+  }
+ },
+ "r20b-3-040": {
+  "hash": "620512021f916aff",
+  "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct word: ___ called the help desk this morning didn't leave a name. | Whoever",
+  "src": "twins-3.csv:26",
+  "point": "whoever",
+  "key": {
+   "kind": "mcq",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ]
+  },
+  "item": {
+   "id": "c-3524",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct word: ___ called the help desk this morning didn't leave a name.",
+   "why": "*Whoever called* = the person who called; *whoever* is the subject of *called*.",
+   "why_lv": "*Whoever called* = tas, kurš zvanīja; *whoever* ir teikuma priekšmets darbības vārdam *called*.",
+   "correct": "Whoever",
+   "wrong": [
+    "Whomever",
+    "Whatever",
+    "Wherever"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "whoever",
+   "src": "twins-3.csv:26"
+  }
+ },
+ "r20b-3-041": {
+  "hash": "498555dd7c0a7778",
+  "gate_key": "cond_second | B2.1 | gap | I ___ more if the gym were closer to my office. (exercise) | ",
+  "src": "typical-b2c1-1.csv:4",
+  "point": "c2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would exercise",
+     "'d exercise",
+     "might exercise",
+     "could exercise"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3535",
+   "skill": "cond_second",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ more if the gym were closer to my office. (exercise)",
+   "why": "The result of an imagined present: *would* (or *could, might*) + base form.",
+   "why_lv": "Iedomātas tagadnes sekas: *would* (vai *could, might*) + pamatforma.",
+   "answers": [
+    [
+     "would exercise",
+     "'d exercise",
+     "might exercise",
+     "could exercise"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "c2",
+   "src": "typical-b2c1-1.csv:4"
+  }
+ },
+ "r20b-3-042": {
+  "hash": "200c7d6887aa97a1",
+  "gate_key": "rep_statements | B2.1 | gap | 'I've lived here for two years.' She told me she ___ there for two years. (live) | ",
+  "src": "typical-b2c1-1.csv:8",
+  "point": "rep_backshift2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had lived",
+     "had been living",
+     "'d lived",
+     "'d been living"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3539",
+   "skill": "rep_statements",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "'I've lived here for two years.' She told me she ___ there for two years. (live)",
+   "why": "Reported later: *have lived* becomes *had lived* (or *had been living*).",
+   "why_lv": "Atstāstot vēlāk, *have lived* kļūst par *had lived* (vai *had been living*).",
+   "answers": [
+    [
+     "had lived",
+     "had been living",
+     "'d lived",
+     "'d been living"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_backshift2",
+   "src": "typical-b2c1-1.csv:8"
+  }
+ },
+ "r20b-3-043": {
+  "hash": "8e2885b97510088f",
+  "gate_key": "conj_clauses | B2.1 | gap | ___ her knee injury, she finished the marathon. | ",
+  "src": "typical-b2c1-1.csv:13",
+  "point": "contrast_b1",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Despite"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3544",
+   "skill": "conj_clauses",
+   "level": "B2.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ her knee injury, she finished the marathon.",
+   "why": "*Despite* + noun (*her knee injury*); *although* and *even though* need subject + verb, and *despite* has no *of*.",
+   "why_lv": "*Despite* + lietvārds (*her knee injury*); aiz *although* un *even though* vajag teikuma priekšmetu un darbības vārdu, un *despite* lieto bez *of*.",
+   "answers": [
+    [
+     "Despite"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Despite",
+    "Although",
+    "Even though",
+    "Despite of"
+   ],
+   "role": "check",
+   "point": "contrast_b1",
+   "src": "typical-b2c1-1.csv:13"
+  }
+ },
+ "r20b-3-044": {
+  "hash": "da7e1a8382ca669c",
+  "gate_key": "cond_third | B2.2 | gap | If she hadn't checked the code, the app ___ . (crash) | ",
+  "src": "typical-b2c1-1.csv:17",
+  "point": "c3",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would have crashed",
+     "'d have crashed",
+     "might have crashed",
+     "could have crashed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3548",
+   "skill": "cond_third",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If she hadn't checked the code, the app ___ . (crash)",
+   "why": "The result in an imagined past: *would have* + 3rd form.",
+   "why_lv": "*Sekas* iedomātā pagātnē: *would have* + 3. forma.",
+   "answers": [
+    [
+     "would have crashed",
+     "'d have crashed",
+     "might have crashed",
+     "could have crashed"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c3",
+   "src": "typical-b2c1-1.csv:17"
+  }
+ },
+ "r20b-3-045": {
+  "hash": "08bd6b76cd64d626",
+  "gate_key": "ind_advanced | B2.2 | gap | I'm not sure what time the meeting ___ . (start) | ",
+  "src": "typical-b2c1-1.csv:21",
+  "point": "iq_wh",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "starts",
+     "will start",
+     "is going to start",
+     "is starting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3552",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'm not sure what time the meeting ___ . (start)",
+   "why": "Inside a sentence the question has statement order, without *does*.",
+   "why_lv": "Teikuma iekšienē jautājumam ir *apgalvojuma* secība, bez *does*.",
+   "answers": [
+    [
+     "starts",
+     "will start",
+     "is going to start",
+     "is starting"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_wh",
+   "src": "typical-b2c1-1.csv:21"
+  }
+ },
+ "r20b-3-046": {
+  "hash": "55bcb2cc292ac57c",
+  "gate_key": "cond_mixed | B2.2 | gap | If I ___ allergic to cats, I would have stayed at Anna's place last weekend. (not / be) | ",
+  "src": "typical-b2c1-1.csv:24",
+  "point": "c_mixed2",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "weren't",
+     "wasn't",
+     "were not",
+     "was not",
+     "hadn't been",
+     "had not been"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3555",
+   "skill": "cond_mixed",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If I ___ allergic to cats, I would have stayed at Anna's place last weekend. (not / be)",
+   "why": "A lasting fact now (*allergic*) with a result in the past: *if* + past (*weren't*). *hadn't been* is also correct if you think only of last weekend.",
+   "why_lv": "Pastāvīgs fakts tagad (*allergic*) ar sekām pagātnē: *if* + pagātne (*weren't*). Pareizi arī *hadn't been*, ja domā tikai par pagājušo nedēļas nogali.",
+   "answers": [
+    [
+     "weren't",
+     "wasn't",
+     "were not",
+     "was not",
+     "hadn't been",
+     "had not been"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c_mixed2",
+   "src": "typical-b2c1-1.csv:24"
+  }
+ },
+ "r20b-3-047": {
+  "hash": "c9459ba93fd6c5e3",
+  "gate_key": "cond_advanced | B2.2 | gap | We'll start at nine unless the speaker ___ late. (be) | ",
+  "src": "typical-b2c1-1.csv:29",
+  "point": "c1_unless",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is",
+     "'s"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3560",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We'll start at nine unless the speaker ___ late. (be)",
+   "why": "*unless* already means *if … not*: no second *not*.",
+   "why_lv": "*unless* jau nozīmē *if* … *not*: otru noliegumu *neliek*. *Tulkojot burtiski* \"ja *vien* nekavēsies\", iznāk divi *noliegumi*.",
+   "answers": [
+    [
+     "is",
+     "'s"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "c1_unless",
+   "src": "typical-b2c1-1.csv:29"
+  }
+ },
+ "r20b-3-048": {
+  "hash": "e5aa7f8d1e968411",
+  "gate_key": "unreal_time | B2.2 | gap | In future, I'd rather you ___ my phone without asking. (not / use) | ",
+  "src": "typical-b2c1-1.csv:32",
+  "point": "rather_you",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "didn't use",
+     "did not use"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3563",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "In future, I'd rather you ___ my phone without asking. (not / use)",
+   "why": "*I'd rather* + another person + past: what I want someone else not to do. *In future* shows it is about from now on.",
+   "why_lv": "*I'd rather* + cita persona + pagātne: ko es gribu, lai cits nedara. *In future* rāda, ka runa ir par turpmāko laiku.",
+   "answers": [
+    [
+     "didn't use",
+     "did not use"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rather_you",
+   "src": "typical-b2c1-1.csv:32"
+  }
+ },
+ "r20b-3-049": {
+  "hash": "b6c42e0751477d36",
+  "gate_key": "cond_advanced | B2.2 | gap | If it ___ for your advice, I would never have applied. (not / be) | ",
+  "src": "typical-b2c1-1.csv:36",
+  "point": "x_inv_cond",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't been",
+     "had not been",
+     "weren't",
+     "were not",
+     "wasn't",
+     "was not"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3567",
+   "skill": "cond_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "If it ___ for your advice, I would never have applied. (not / be)",
+   "why": "*If it hadn't been for* + noun = without it, in the past.",
+   "why_lv": "*If it hadn't been for* + lietvārds = bez tā, pagātnē.",
+   "answers": [
+    [
+     "hadn't been",
+     "had not been",
+     "weren't",
+     "were not",
+     "wasn't",
+     "was not"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_inv_cond",
+   "src": "typical-b2c1-1.csv:36"
+  }
+ },
+ "r20b-3-050": {
+  "hash": "2195066a6bca0505",
+  "gate_key": "ind_advanced | B2.2 | gap | ___ wins the competition will get a trip to Lisbon. (who) | ",
+  "src": "typical-b2c1-1.csv:39",
+  "point": "whoever",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Whoever",
+     "Anyone who",
+     "Anybody who",
+     "The person who",
+     "Everyone who"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3570",
+   "skill": "ind_advanced",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ wins the competition will get a trip to Lisbon. (who)",
+   "why": "*Whoever* = it does not matter who: the person who.",
+   "why_lv": "*Whoever* = nav svarīgi, kurš: tas, kurš.",
+   "answers": [
+    [
+     "Whoever",
+     "Anyone who",
+     "Anybody who",
+     "The person who",
+     "Everyone who"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "whoever",
+   "src": "typical-b2c1-1.csv:39"
+  }
+ },
+ "r20b-3-051": {
+  "hash": "deded6dac85f2b49",
+  "gate_key": "unreal_time | B2.2 | gap | It's high time we ___ the tickets. The concert is next week. | ",
+  "src": "unreal-time-1.csv:3",
+  "point": "its_time_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "booked"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3575",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's high time we ___ the tickets. The concert is next week.",
+   "why": "*It's (high / about) time* + subject + past: it should happen now, and it is already late.",
+   "why_lv": "*It's* (*high / about*) *time* + teikuma priekšmets + pagātne: tam jau vajadzētu notikt, un ir jau vēlu.",
+   "answers": [
+    [
+     "booked"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "booked",
+    "have booked",
+    "will book",
+    "had booked"
+   ],
+   "role": "check",
+   "point": "its_time_past",
+   "src": "unreal-time-1.csv:3"
+  }
+ },
+ "r20b-3-052": {
+  "hash": "bfe78e1ac271b66a",
+  "gate_key": "unreal_time | B2.2 | gap | I'd sooner ___ a sandwich at my desk than go to that noisy canteen. | ",
+  "src": "unreal-time-1.csv:7",
+  "point": "would_rather",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3579",
+   "skill": "unreal_time",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'd sooner ___ a sandwich at my desk than go to that noisy canteen.",
+   "why": "*I'd rather / I'd sooner* + base form: what I prefer to do myself.",
+   "why_lv": "*I'd rather / I'd sooner* + pamatforma: ko es pats labāk darītu.",
+   "answers": [
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "had",
+    "to have",
+    "having"
+   ],
+   "role": "check",
+   "point": "would_rather",
+   "src": "unreal-time-1.csv:7"
+  }
+ }
+}

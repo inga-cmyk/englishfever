@@ -59,130 +59,126 @@ Option A: the eight topic-levels that had no drag task get five learning tasks e
    - EN: An imagined present: *if* + past, *would* + base form.
    - LV: Iedomāta tagadne: *if* + pagātne, *would* + pamatforma.
    - sentence from: app/content/items.json · cs-B21-3a
-13. *order* · Put the words in order. → **if I knew the answer I would tell you** · also accepted: I would tell you if I knew the answer
+13. *order* · Put the words in order. → **if I knew the answer I would tell you** · also accepted: I would tell you if I knew the answer / I would tell you the answer if I knew / if I knew I would tell you the answer
    - EN: An imagined present: *if* + past, *would* + base form.
    - LV: Iedomāta tagadne: *if* + pagātne, *would* + pamatforma.
    - sentence from: app/content/items.json · cs-B21-4a
-14. *gap* · I would be grateful if you ___ send me the report by Friday. → **could** · words: could / can to / would to
-   - EN: A polite request: *I would be grateful if you could…*
-   - LV: Pieklājīgs lūgums: *I would be grateful if you could*…
-   - sentence from: app/content/items.json · cs-B21-5a
-15. *order* · Put the words in order. → **if I had a garden I would grow vegetables** · also accepted: I would grow vegetables if I had a garden
+14. *order* · Put the words in order. → **if I had a garden I would grow vegetables** · also accepted: I would grow vegetables if I had a garden
    - EN: An imagined present: *if* + past, *would* + base form.
    - LV: Iedomāta tagadne: *if* + pagātne, *would* + pamatforma.
-   - sentence from: twins-1.csv · line 47
+   - sentence from: app/content/items.json · cs-B21-5a
 
 ## Third conditional (if + had done, would have done) · B2.1
 
-16. *gap* · She would have passed the exam if she ___ ___ harder. → **had / studied** · words: had / studied / has / was
+15. *gap* · She would have passed the exam if she ___ ___ harder. → **had / studied** · words: had / studied / has / was
+   - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
+   - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
+   - sentence from: twins-1.csv · line 47
+16. *order* · Put the words in order. → **if I had seen the sign I wouldn't have parked there** · also accepted: I wouldn't have parked there if I had seen the sign
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B21-1a
-17. *order* · Put the words in order. → **if I had seen the sign I wouldn't have parked there** · also accepted: I wouldn't have parked there if I had seen the sign
+17. *order* · Put the words in order. → **if the team had been better prepared we would have won** · also accepted: we would have won if the team had been better prepared / if we had been better prepared the team would have won / the team would have won if we had been better prepared / if the team had been prepared better we would have won / we would have won if the team had been prepared better / if we had been prepared better the team would have won / the team would have won if we had been prepared better
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B21-3a-r2
-18. *order* · Put the words in order. → **if the team had been better prepared we would have won** · also accepted: we would have won if the team had been better prepared
+18. *gap* · If you had told us earlier, we ___ ___ adjusted the schedule. → **could / have** · words: could / have / can / had
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B21-4a
-19. *gap* · If you had told us earlier, we ___ ___ adjusted the schedule. → **could / have** · words: could / have / can / had
+19. *order* · Put the words in order. → **if I had remembered her birthday I would have called her** · also accepted: I would have called her if I had remembered her birthday
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B21-5a
-20. *order* · Put the words in order. → **if I had remembered her birthday I would have called her** · also accepted: I would have called her if I had remembered her birthday
-   - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
-   - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
-   - sentence from: twins-2.csv · line 26
 
 ## Third conditional (if + had done, would have done) · B2.2
 
-21. *gap* · If she ___ ___ the warning, she would have avoided the accident. → **had / heard** · words: had / heard / has / was
+20. *gap* · If she ___ ___ the warning, she would have avoided the accident. → **had / heard** · words: had / heard / has / was
+   - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
+   - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
+   - sentence from: twins-2.csv · line 26
+21. *gap* · If he hadn't been driving so fast, he ___ ___ lost his licence. → **wouldn't / have** · words: wouldn't / have / won't / hadn't
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B22-1a-r2
-22. *gap* · If he hadn't been driving so fast, he ___ ___ lost his licence. → **wouldn't / have** · words: wouldn't / have / won't / hadn't
-   - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
-   - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
-   - sentence from: app/content/items.json · ct-B22-3a-r2
-23. *order* · Put the words in order. → **if I'd known about the traffic I would've left earlier** · also accepted: I would've left earlier if I'd known about the traffic
+22. *order* · Put the words in order. → **if I'd known about the traffic I would've left earlier** · also accepted: I would've left earlier if I'd known about the traffic / if I'd known about the traffic earlier I would've left / I would've left if I'd known about the traffic earlier / if I'd known earlier about the traffic I would've left / I would've left if I'd known earlier about the traffic
    - EN: *If I'd known* = *If I had known*; no *would have* after *if*.
    - LV: *If I'd known = If I had known*; aiz *if* nelieto *would have*.
+   - sentence from: app/content/items.json · ct-B22-3a-r2
+23. *gap* · If I had ___ the impact of my decision, I would have ___ differently. → **realised / acted** · words: realised / acted / realise / act
+   - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
+   - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B22-4a-r5
-24. *gap* · If I had ___ the impact of my decision, I would have ___ differently. → **realised / acted** · words: realised / acted / realise / act
+24. *order* · Put the words in order. → **if we had known about the problem we would have called you** · also accepted: we would have called you if we had known about the problem / if we had called you we would have known about the problem / we would have known about the problem if we had called you
    - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
    - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
    - sentence from: app/content/items.json · ct-B22-5a
-25. *order* · Put the words in order. → **if we had known about the problem we would have called you** · also accepted: we would have called you if we had known about the problem
-   - EN: An imagined past: *if* + *had* + 3rd form, *would / could have* + 3rd form.
-   - LV: Iedomāta pagātne: *if + had* + 3. forma, *would / could have* + 3. forma.
-   - sentence from: twins-1.csv · line 51
 
 ## Contrast, purpose and reason · B2.1
 
-26. *order* · Put the words in order. → **despite the delay we arrived on time** · also accepted: we arrived on time despite the delay
+25. *order* · Put the words in order. → **despite the delay we arrived on time** · also accepted: we arrived on time despite the delay
+   - EN: *despite / in spite of* + noun or *-ing*; *despite the fact that* + subject + verb.
+   - LV: *despite / in spite of* + lietvārds vai *-ing; despite the fact that* + teikuma priekšmets + darbības vārds.
+   - sentence from: twins-1.csv · line 51
+26. *gap* · In ___ ___ the cold, they went swimming. → **spite / of** · words: spite / of / despite / for
    - EN: *despite / in spite of* + noun or *-ing*; *despite the fact that* + subject + verb.
    - LV: *despite / in spite of* + lietvārds vai *-ing; despite the fact that* + teikuma priekšmets + darbības vārds.
    - sentence from: twins-1.csv · line 34
-27. *gap* · In ___ ___ the cold, they went swimming. → **spite / of** · words: spite / of / despite / for
-   - EN: *despite / in spite of* + noun or *-ing*; *despite the fact that* + subject + verb.
-   - LV: *despite / in spite of* + lietvārds vai *-ing; despite the fact that* + teikuma priekšmets + darbības vārds.
+27. *order* · Put the words in order. → **despite the strike the conference went ahead** · also accepted: the conference went ahead despite the strike
+   - EN: *despite* + noun, without *of*: *despite the strike*.
+   - LV: *despite* + lietvārds, bez *of*: *despite the strike*.
    - sentence from: twins-1.csv · line 35
-28. *order* · Put the words in order. → **despite the rain the match went ahead** · also accepted: the match went ahead despite the rain
-   - EN: *despite / in spite of* + noun or *-ing*; *despite the fact that* + subject + verb.
-   - LV: *despite / in spite of* + lietvārds vai *-ing; despite the fact that* + teikuma priekšmets + darbības vārds.
-   - sentence from: conjunctions-1.csv · line 81
-29. *gap* · They walked quietly so as ___ ___ wake the baby. → **not / to** · words: not / to / no / don't
+28. *gap* · They walked quietly so as ___ ___ wake the baby. → **not / to** · words: not / to / that / don't
    - EN: Purpose, negative: *so as not to* + base form.
    - LV: Nolūks noliegumā: *so as not to* + pamatforma.
-   - sentence from: conjunctions-1.csv · line 70
-30. *order* · Put the words in order. → **we went out despite the fact that it was raining** · also accepted: despite the fact that it was raining we went out
+   - sentence from: conjunctions-1.csv · line 81
+29. *order* · Put the words in order. → **we went out despite the fact that it was raining** · also accepted: despite the fact that it was raining we went out
    - EN: *despite / in spite of* + noun or *-ing*; *despite the fact that* + subject + verb.
    - LV: *despite / in spite of* + lietvārds vai *-ing; despite the fact that* + teikuma priekšmets + darbības vārds.
-   - sentence from: conjunctions-1.csv · line 69
+   - sentence from: conjunctions-1.csv · line 70
 
 ## Indirect questions (Could you tell me where...) · B2.1
 
-31. *order* · Put the words in order. → **would you mind telling me how long the repair will take** · also accepted: you would mind telling me how long the repair will take
+30. *order* · Put the words in order to make a question. → **would you mind telling me how long the repair will take**
+   - EN: After *Could you tell me / Do you know / Would you mind telling me* the word order is like a statement.
+   - LV: Aiz *Could you tell me / Do you know / Would you mind telling me* vārdu secība ir kā apgalvojumā.
+   - sentence from: conjunctions-1.csv · line 69
+31. *order* · Put the words in order. → **could you tell me why the order didn't arrive** · also accepted: you could tell me why the order didn't arrive
    - EN: After *Could you tell me / Do you know / Would you mind telling me* the word order is like a statement.
    - LV: Aiz *Could you tell me / Do you know / Would you mind telling me* vārdu secība ir kā apgalvojumā.
    - sentence from: app/content/items.json · ip-B21-1a
-32. *order* · Put the words in order. → **could you tell me why the order didn't arrive** · also accepted: you could tell me why the order didn't arrive
+32. *gap* · I'd like to know where you ___ last night. → **went** · words: went / did go / did you go
    - EN: After *Could you tell me / Do you know / Would you mind telling me* the word order is like a statement.
    - LV: Aiz *Could you tell me / Do you know / Would you mind telling me* vārdu secība ir kā apgalvojumā.
    - sentence from: app/content/items.json · ip-B21-3a-r3
-33. *gap* · I'd like to know where you ___ last night. → **went** · words: went / did go / did you go
+33. *order* · Put the words in order. → **do you know when the shop closes**
    - EN: After *Could you tell me / Do you know / Would you mind telling me* the word order is like a statement.
    - LV: Aiz *Could you tell me / Do you know / Would you mind telling me* vārdu secība ir kā apgalvojumā.
    - sentence from: app/content/items.json · ip-B21-4a-r2
-34. *order* · Put the words in order. → **do you know when the shop closes**
+34. *order* · Put the words in order. → **do you know what time it opens**
    - EN: After *Could you tell me / Do you know / Would you mind telling me* the word order is like a statement.
    - LV: Aiz *Could you tell me / Do you know / Would you mind telling me* vārdu secība ir kā apgalvojumā.
    - sentence from: twins-1.csv · line 72
-35. *order* · Put the words in order. → **do you know what time it opens**
-   - EN: After *Could you tell me / Do you know / Would you mind telling me* the word order is like a statement.
-   - LV: Aiz *Could you tell me / Do you know / Would you mind telling me* vārdu secība ir kā apgalvojumā.
-   - sentence from: twins-1.csv · line 70
 
 ## Reported questions and requests · B2.1
 
-36. *order* · Put all the words in order. More than one answer is possible. → **she asked if I could help her** · also accepted: I asked her if she could help
+35. *order* · Put all the words in order. More than one answer is possible. → **she asked if I could help her** · also accepted: I asked her if she could help / she asked her if I could help / I asked if she could help her
+   - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
+   - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
+   - sentence from: twins-1.csv · line 70
+36. *gap* · The nurse told me ___ ___ touch it. → **not / to** · words: not / to / don't / no
    - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
    - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
    - sentence from: app/content/items.json · rq-B21-1a
-37. *gap* · The nurse told me ___ ___ touch it. → **not / to** · words: not / to / don't / no
+37. *order* · Put the words in order. → **Lena asked me to send her the invoice** · also accepted: Lena asked her to send me the invoice
    - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
    - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
    - sentence from: app/content/items.json · rq-B21-2a
-38. *order* · Put the words in order. → **Lena asked me to send her the invoice**
+38. *gap* · He asked me what time ___ ___. → **it / was** · words: it / was / did / does
    - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
    - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
    - sentence from: app/content/items.json · rq-B21-3a-r2
-39. *gap* · He asked me what time ___ ___. → **it / was** · words: it / was / did / does
+39. *order* · Put the words in order. → **the customer asked how long the repair would take**
    - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
    - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
    - sentence from: app/content/items.json · rq-B21-4a
-40. *order* · Put the words in order. → **the customer asked how long the repair would take**
-   - EN: A reported question has statement order (*if I could help her*); a request: *ask / tell* + person + (*not*) *to*.
-   - LV: Atstāstītā jautājumā ir apgalvojuma secība (*if I could help her*); lūgumam: *ask / tell* + persona + (*not*) *to*.
-   - sentence from: app/content/items.json · rq-B21-5a

@@ -1,0 +1,2305 @@
+{
+ "b1-cond-rep-1.csv": [
+  {
+   "id": "r21-1-007",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If metal will get hot, it expands."
+   ],
+   "set": {
+    "5": "When I travel by bus, I always feel sick. | If the battery is low, the phone switches off. | Whenever my neighbour plays music, my dog barks.",
+    "6": "In a general truth the *if*-part uses the present simple, not *will*: *If metal gets hot, it expands.*",
+    "7": "Vispārīgā patiesībā *if* daļā lieto Present Simple, nevis *will*: *If metal gets hot, it expands.*"
+   }
+  },
+  {
+   "id": "r21-1-008",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If I will see her, I will tell her."
+   ],
+   "set": {
+    "4": "If the train will be late, I'll take a taxi.",
+    "5": "If it's sunny tomorrow, we'll have lunch outside. | I'll call you if the meeting finishes early. | If you need help, ask Marta.",
+    "6": "After *if* we use the present simple, not *will*: *If the train is late, I'll take a taxi.*",
+    "7": "Pēc *if* lieto Present Simple, nevis *will*: *If the train is late, I'll take a taxi.*",
+    "9": "If I will see her, I will tell her."
+   }
+  },
+  {
+   "id": "r21-1-009",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If I would know, I would tell you."
+   ],
+   "set": {
+    "5": "If I had a car, I'd drive to work. | What would you do if you lost your job? | If she were here, she would know what to do."
+   }
+  },
+  {
+   "id": "r21-1-010",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She told that she was tired."
+   ],
+   "set": {
+    "4": "My boss told that the meeting was cancelled.",
+    "5": "She said that she was tired. | He told me he would call later. | They said they had already eaten.",
+    "6": "*Told* needs a person after it: *My boss told us that the meeting was cancelled*; *said* does not.",
+    "7": "Aiz *told* vajag personu: *My boss told us that the meeting was cancelled*; aiz *said* tā nav.",
+    "9": "She told that she was tired."
+   }
+  },
+  {
+   "id": "r21-1-011",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "They said they will come the next day."
+   ],
+   "set": {
+    "5": "She said she was working from home that day. | He said he couldn't find his keys. | They said they had booked a table.",
+    "6": "After *said*, *will* goes back to *would*: *They said they would come the next day.* *The next day* shows we look back from later, so *will* does not fit.",
+    "7": "Pēc *said* *will* kļūst par *would*: *They said they would come the next day.* *The next day* rāda, ka stāstām vēlāk, tāpēc *will* neder."
+   }
+  },
+  {
+   "id": "r21-1-012",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She asked me where did I live."
+   ],
+   "set": {
+    "5": "He asked if I had a car. | They wanted to know when the train left. | She told me to wait outside."
+   }
+  },
+  {
+   "id": "r21-2-014",
+   "match": [
+    "mcq",
+    "Choose the correct option: ___ you mix red and green paint, you get brown.",
+    "If"
+   ],
+   "set": {
+    "3": "Choose the correct option: If you leave milk out of the fridge all day, it ___ sour.",
+    "4": "goes",
+    "5": "went | would go",
+    "6": "A general truth: present simple in both parts: *If you leave milk out of the fridge all day, it goes sour.*",
+    "7": "Vispārīga patiesība: abās daļās Present Simple: *If you leave milk out of the fridge all day, it goes sour.*",
+    "9": "If"
+   }
+  },
+  {
+   "id": "r21-2-015",
+   "match": [
+    "mcq",
+    "Choose the correct option: I get a headache ___ I drink too much coffee.",
+    "if"
+   ],
+   "set": {
+    "3": "Choose the correct option: I get a headache if I ___ too much coffee.",
+    "4": "drink",
+    "5": "will drink | drank",
+    "6": "A general truth: present simple in both parts, no *will*: *I get a headache if I drink too much coffee.*",
+    "7": "Vispārīga patiesība: abās daļās Present Simple, bez *will*: *I get a headache if I drink too much coffee.*",
+    "9": "if"
+   }
+  },
+  {
+   "id": "r21-2-016",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If you will click here, the page opens."
+   ],
+   "set": {
+    "4": "If the battery will get low, the screen goes dark.",
+    "5": "My cat hides when it hears thunder. | If people don't drink enough water, they get headaches. | We eat outside when the weather is warm.",
+    "6": "In a general truth the *if*-part uses the present simple, not *will*: *If the battery gets low, the screen goes dark.*",
+    "7": "Vispārīgā patiesībā *if* daļā lieto Present Simple, nevis *will*: *If the battery gets low, the screen goes dark.*",
+    "9": "If you will click here, the page opens."
+   }
+  },
+  {
+   "id": "r21-2-017",
+   "match": [
+    "mcq",
+    "Choose the correct option: You will miss the bus ___ you hurry.",
+    "unless"
+   ],
+   "set": {
+    "3": "Choose the correct option: They won't let you in ___ you show your ticket.",
+    "4": "unless",
+    "5": "if | when | as soon as",
+    "6": "*Unless* = *if ... not*: *They won't let you in unless you show your ticket* (= if you don't show it).",
+    "7": "*Unless* = *if ... not*: *They won't let you in unless you show your ticket* (= ja neparādīsi biļeti)."
+   }
+  },
+  {
+   "id": "r21-2-018",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If she had more money, she will buy it."
+   ],
+   "set": {
+    "5": "If I were you, I would take the job. | They would visit us more often if we lived closer. | Would you move abroad if you had the chance?"
+   }
+  },
+  {
+   "id": "r21-2-019",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If I would have studied, I would have passed."
+   ],
+   "set": {
+    "4": "If she had knew about the party, she would have come.",
+    "5": "They would have won if their best player hadn't been injured. | Would you have helped me if I had asked? | If the shop had been open, I would have bought some bread.",
+    "6": "After *had* we need the 3. form: *If she had known about the party, she would have come.*",
+    "7": "Pēc *had* vajag 3. formu: *If she had known about the party, she would have come.*",
+    "9": "If I would have studied, I would have passed."
+   }
+  },
+  {
+   "id": "r21-2-020",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If we had left earlier, we wouldn't have miss the train."
+   ],
+   "set": {
+    "4": "If he had booked earlier, he wouldn't have pay so much.",
+    "5": "If I had seen the sign, I would have stopped. | She would have called you if she had had your number. | If you hadn't reminded me, I would have forgotten her birthday.",
+    "6": "After *wouldn't have* we need the 3. form: *If he had booked earlier, he wouldn't have paid so much.*",
+    "7": "Pēc *wouldn't have* vajag 3. formu: *If he had booked earlier, he wouldn't have paid so much.*",
+    "9": "If we had left earlier, we wouldn't have miss the train."
+   }
+  },
+  {
+   "id": "r21-3-019",
+   "match": [
+    "gap",
+    "She asked him ___ he had seen the film.",
+    "if"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-013",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "they said they had already eaten"
+   ],
+   "set": {
+    "4": "they said they had already eaten",
+    "5": "also accepted: they said they had eaten already"
+   }
+  },
+  {
+   "id": "r21-4-015",
+   "match": [
+    "gap",
+    "I asked her ___ quiet.",
+    "to be"
+   ],
+   "set": {
+    "6": "A request is reported with *asked* + person + *to* + verb: *I asked her to be quiet.*",
+    "7": "Lūgumu atstāsta ar *asked* + cilvēks + *to* + darbības vārds: *I asked her to be quiet.*"
+   }
+  },
+  {
+   "id": "r21-4-017",
+   "match": [
+    "match",
+    "Match each request with its report.",
+    "'Please sit down.' = She asked me to sit down. ; 'Don't touch it!' = She warned me not to touch it. ; 'You should see a doctor.' = She advised me to see a doctor. ; 'I'll help you.' = She offered to help me."
+   ],
+   "set": {
+    "3": "Match each sentence with its report.",
+    "4": "'Please sit down.' = She asked me to sit down. ; 'Don't touch the screen.' = She told me not to touch the screen. ; 'Are you free on Friday?' = She asked me if I was free on Friday. ; 'What time does the train leave?' = She asked me what time the train left.",
+    "6": "Requests and orders: *asked / told* + person + (*not*) *to*: *She told me not to touch the screen.* Questions: *asked* + *if* or a question word + statement order, tense one step back: *She asked me what time the train left.*",
+    "7": "Lūgumi un rīkojumi: *asked / told* + cilvēks + (*not*) *to*: *She told me not to touch the screen.* Jautājumi: *asked* + *if* vai jautājamais vārds + stāstījuma vārdu secība, laiks vienu soli atpakaļ: *She asked me what time the train left.*"
+   }
+  },
+  {
+   "id": "r21-5-015",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he said he couldn't come because he was ill"
+   ],
+   "set": {
+    "4": "he said he couldn't come because he was ill",
+    "5": "also accepted: because he was ill he said he couldn't come"
+   }
+  },
+  {
+   "id": "r21-5-016",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she told us that she was leaving the next week"
+   ],
+   "set": {
+    "6": "After *told* the tense goes one step back and the time word changes: *'I'm leaving next week'* → *She told us that she was leaving the next week.*",
+    "7": "Pēc *told* laiks iet vienu soli atpakaļ un mainās laika vārds: *'I'm leaving next week'* → *She told us that she was leaving the next week.*"
+   }
+  },
+  {
+   "id": "r21-6-020",
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "If I had gone, I would have met her. = I didn't go. ; If I go, I will meet her. = I may go. ; If I went, I would meet her. = I'm imagining it now. ; If I go, I meet her. = this always happens"
+   ],
+   "set": {
+    "4": "If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I'm not going.",
+    "6": "*If I had gone*: I didn't go. *If I hadn't gone*: I went. *If I went, I would meet her*: an imagined now, so I'm not going.",
+    "7": "*If I had gone*: es negāju. *If I hadn't gone*: es gāju. *If I went, I would meet her*: iedomāta tagadne, tātad es neeju.",
+    "9": "If I had gone, I would have met her. = I didn't go. ; If I go, I will meet her. = I may go. ; If I went, I would meet her. = I'm imagining it now. ; If I go, I meet her. = this always happens"
+   }
+  },
+  {
+   "id": "r21-6-023",
+   "match": [
+    "gap",
+    "At school, years ago: 'Do you like jazz?' → He asked me ___.",
+    "if I liked jazz | whether I liked jazz"
+   ],
+   "set": {
+    "4": "if I liked jazz | whether I liked jazz | if I liked jazz or not | whether I liked jazz or not | whether or not I liked jazz"
+   }
+  },
+  {
+   "id": "r21-6-025",
+   "match": [
+    "gap",
+    "I wonder ___ he will come.",
+    "whether"
+   ],
+   "set": {
+    "5": "bank: whether | what"
+   }
+  }
+ ],
+ "b1-new-1.csv": [
+  {
+   "id": "r21-1-013",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Did you used to play chess?"
+   ],
+   "set": {
+    "5": "My dad used to work at night. | We didn't use to have a dishwasher. | Are you used to the new office yet?",
+    "6": "Questions and negatives: *did / didn't* + *use to* (no *-d*): *Did you use to play chess?*",
+    "7": "Jautājumos un noliegumos: *did / didn't* + *use to* (bez *-d*): *Did you use to play chess?*"
+   }
+  },
+  {
+   "id": "r21-1-014",
+   "match": [
+    "gap",
+    "The room isn't big ___ for twenty people.",
+    "enough"
+   ],
+   "set": {
+    "5": "bank: enough | too | much",
+    "6": "*enough* comes after the adjective: *big enough for twenty people*.",
+    "7": "*enough* ir aiz īpašības vārda: *big enough for twenty people*."
+   }
+  },
+  {
+   "id": "r21-2-021",
+   "match": [
+    "gap",
+    "She plays ___ violin in an orchestra.",
+    "the"
+   ],
+   "set": {
+    "5": "bank: the | an | —"
+   }
+  },
+  {
+   "id": "r21-2-022",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He lives in the Latvia."
+   ],
+   "set": {
+    "4": "My parents moved to the Canada last year.",
+    "5": "She works in the Netherlands. | We had breakfast on the balcony. | We took a boat trip on the Danube.",
+    "6": "No article with most countries: *My parents moved to Canada last year.* But: *the Netherlands, the UK*.",
+    "7": "Ar lielāko daļu valstu nosaukumu artikula nav: *My parents moved to Canada last year.* Bet: *the Netherlands, the UK*."
+   }
+  },
+  {
+   "id": "r21-2-023",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I have many time for hobbies."
+   ],
+   "set": {
+    "5": "There aren't many shops in our village. | Would you like some more coffee? | We have a little time before the train leaves."
+   }
+  },
+  {
+   "id": "r21-3-020",
+   "match": [
+    "gap",
+    "When I was a teenager, I ___ any money, so I walked everywhere. (not / have)",
+    "didn't use to have | did not use to have | didn't have | did not have | used not to have"
+   ],
+   "set": {
+    "4": "didn't use to have | did not use to have | didn't have | did not have | used not to have | hadn't | had not",
+    "6": "Negative of *used to*: *didn't use to* + base verb (no *-d*): *I didn't use to have any money.* *I didn't have any money* is correct too.",
+    "7": "*used to* noliegums: *didn't use to* + pamatforma (bez *-d*): *I didn't use to have any money.* Arī *I didn't have any money* ir pareizi."
+   }
+  },
+  {
+   "id": "r21-4-019",
+   "match": [
+    "order",
+    "Put all the words in order. More than one answer is possible.",
+    "i am not used to getting up so early"
+   ],
+   "set": {
+    "4": "i am not used to getting up so early",
+    "5": "also accepted: i am used to not getting up so early | i am not so used to getting up early"
+   }
+  },
+  {
+   "id": "r21-5-018",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "when i was a child we used to visit my grandparents every sunday"
+   ],
+   "set": {
+    "4": "when i was a child we used to visit my grandparents every sunday",
+    "5": "also accepted: we used to visit my grandparents every sunday when i was a child | every sunday we used to visit my grandparents when i was a child | when i was a child every sunday we used to visit my grandparents"
+   }
+  },
+  {
+   "id": "r21-6-026",
+   "match": [
+    "order",
+    "Put all the words in order. More than one answer is possible.",
+    "she didn't use to enjoy cooking but now she loves it"
+   ],
+   "set": {
+    "4": "she didn't use to enjoy cooking but now she loves it",
+    "5": "also accepted: she didn't use to enjoy cooking but she loves it now | she loves cooking now but she didn't use to enjoy it | now she loves cooking but she didn't use to enjoy it"
+   }
+  }
+ ],
+ "b1-new-2.csv": [
+  {
+   "id": "r21-1-015",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The book which I bought it was boring."
+   ],
+   "set": {
+    "4": "The jacket which I ordered online it was too small.",
+    "5": "This is the café where we first met. | The colleague who helped me is on holiday now. | The film we watched last night was too long.",
+    "6": "*Which* already stands for the object of *ordered*. Do not repeat it with *it*: *The jacket which I ordered online was too small.*",
+    "7": "*Which* jau aizstāj darbības vārda *ordered* papildinātāju. To neatkārto ar *it*: *The jacket which I ordered online was too small.*",
+    "9": "The book which I bought it was boring."
+   }
+  },
+  {
+   "id": "r21-1-016",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I'll text you when I will arrive."
+   ],
+   "set": {
+    "4": "We'll start the meeting when everyone will be here.",
+    "5": "I'll wait here until you come back. | Before you leave, please close the windows. | Call me as soon as the doctor arrives.",
+    "6": "After *when* we use the present simple for the future, not *will*: *We'll start the meeting when everyone is here.*",
+    "7": "Pēc *when* nākotnei lieto Present Simple, nevis *will*: *We'll start the meeting when everyone is here.*",
+    "9": "I'll text you when I will arrive."
+   }
+  },
+  {
+   "id": "r21-2-024",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "My sister, that lives in Paris, is a teacher."
+   ],
+   "set": {
+    "4": "Our new manager, that started in May, is from Spain.",
+    "5": "The hotel where we stayed was right next to the beach. | I have a friend whose father is a pilot. | Riga, which is the capital of Latvia, has a beautiful old town.",
+    "6": "Extra information about a person we already know goes between commas, with *who*, never *that*: *Our new manager, who started in May, is from Spain.*",
+    "7": "Papildu informācija par jau zināmu cilvēku ir starp komatiem, ar *who*, nekad ar *that*: *Our new manager, who started in May, is from Spain.*",
+    "9": "My sister, that lives in Paris, is a teacher."
+   }
+  },
+  {
+   "id": "r21-2-025",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I'll call you after I will have spoken to her."
+   ],
+   "set": {
+    "4": "Let's wait here until the rain will stop.",
+    "5": "I'll call you after I've spoken to the manager. | Please lock the door before you leave. | While I'm away, my sister will water the plants.",
+    "6": "After *until* (and *when, as soon as, before, after*) we use the present simple for the future, not *will*: *Let's wait here until the rain stops.*",
+    "7": "Pēc *until* (un *when, as soon as, before, after*) nākotnei lieto Present Simple, nevis *will*: *Let's wait here until the rain stops.*",
+    "9": "I'll call you after I will have spoken to her."
+   }
+  },
+  {
+   "id": "r21-3-025",
+   "match": [
+    "text",
+    "Join the two sentences: My uncle lives in Spain. He is a chef.",
+    "My uncle, who lives in Spain, is a chef. | My uncle, who is a chef, lives in Spain."
+   ],
+   "set": {
+    "3": "Join the two sentences with *who*: My uncle lives in Spain. He is a chef.",
+    "6": "*who* adds extra information about *my uncle*, between commas: *My uncle, who lives in Spain, is a chef.*",
+    "7": "*who* pievieno papildu informāciju par *my uncle*, starp komatiem: *My uncle, who lives in Spain, is a chef.*",
+    "9": "Join the two sentences: My uncle lives in Spain. He is a chef."
+   }
+  },
+  {
+   "id": "r21-4-020",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "wait here until the doctor calls your name"
+   ],
+   "set": {
+    "6": "*Until* = up to that moment. After *until* we use the present simple for the future: *Wait here until the doctor calls your name.*",
+    "7": "*Until* nozīmē „līdz tam brīdim”. Pēc *until* nākotnes nozīmē lieto Present Simple: *Wait here until the doctor calls your name.*"
+   }
+  }
+ ],
+ "b1-new-3.csv": [
+  {
+   "id": "r21-1-017",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Who did called you last night?"
+   ],
+   "set": {
+    "5": "Who left the door open? | What did you buy at the market? | Who wants another coffee?",
+    "6": "When *who* is the subject, there is no *did*: *Who called you last night?*",
+    "7": "Ja *who* ir teikuma priekšmets, *did* nelieto: *Who called you last night?*"
+   }
+  },
+  {
+   "id": "r21-1-018",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "What did happened at the meeting?"
+   ],
+   "set": {
+    "4": "Which colleague did suggested the new plan?",
+    "5": "Which team won the match on Saturday? | What did your manager say about the report? | How many people signed up for the course?",
+    "6": "When the question word is the subject (*Which colleague*), there is no *did*: *Which colleague suggested the new plan?*",
+    "7": "Ja jautājamais vārds ir teikuma priekšmets (*Which colleague*), *did* nelieto: *Which colleague suggested the new plan?*",
+    "9": "What did happened at the meeting?"
+   }
+  },
+  {
+   "id": "r21-1-019",
+   "match": [
+    "text",
+    "Ask about *Something* with *What*: Something made that noise.",
+    "What made that noise?"
+   ],
+   "set": {
+    "3": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+    "4": "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it?",
+    "6": "*What* is the subject here, so there is no *did*: *What made that noise?*",
+    "7": "Šeit *What* ir teikuma priekšmets, tāpēc *did* nelieto: *What made that noise?*"
+   }
+  },
+  {
+   "id": "r21-1-020",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She promised helping me with the move."
+   ],
+   "set": {
+    "5": "We decided to stay at home on Saturday. | Have you finished packing your suitcase? | He's interested in learning Japanese.",
+    "6": "*promise* + *to* + verb: *She promised to help me with the move.*",
+    "7": "*promise* + *to* + darbības vārds: *She promised to help me with the move.*"
+   }
+  },
+  {
+   "id": "r21-1-021",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She enjoys to cook for her friends."
+   ],
+   "set": {
+    "5": "He keeps forgetting his password. | We hope to finish the project by Friday. | I stopped drinking coffee after lunch.",
+    "6": "*enjoy* + *-ing*: *She enjoys cooking for her friends.*",
+    "7": "*enjoy* + *-ing*: *She enjoys cooking for her friends.*"
+   }
+  },
+  {
+   "id": "r21-2-026",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He ought to apologise, doesn't he?"
+   ],
+   "set": {
+    "4": "Your brother lives in Oslo, isn't he?",
+    "5": "You can drive, can't you? | They weren't at the party, were they? | Let's take a break, shall we?",
+    "6": "Present simple: the tag uses *doesn't*: *Your brother lives in Oslo, doesn't he?*",
+    "7": "Present Simple: tag ar *doesn't*: *Your brother lives in Oslo, doesn't he?*",
+    "9": "He ought to apologise, doesn't he?"
+   }
+  },
+  {
+   "id": "r21-2-027",
+   "match": [
+    "mcq",
+    "Choose the correct option: I'll never forget ___ the Eiffel Tower for the first time.",
+    "seeing"
+   ],
+   "set": {
+    "6": "*forget* + *-ing* = a memory of something you did: *I'll never forget seeing the Eiffel Tower for the first time.* *forget* + *to* = something you must do.",
+    "7": "*forget* + *-ing* = atmiņa par to, ko izdarīji: *I'll never forget seeing the Eiffel Tower for the first time.* *forget* + *to* = kaut kas, kas jāizdara."
+   }
+  },
+  {
+   "id": "r21-2-028",
+   "match": [
+    "text",
+    "Rewrite with forgot: I didn't lock the door because I forgot.",
+    "I forgot to lock the door."
+   ],
+   "set": {
+    "6": "*forget* + *to* = something you had to do and did not do: *I forgot to lock the door.* *forget* + *-ing* is a memory of something you did.",
+    "7": "*forget* + *to* = kaut kas, kas bija jāizdara, bet netika izdarīts: *I forgot to lock the door.* *forget* + *-ing* ir atmiņa par to, ko izdarīji."
+   }
+  },
+  {
+   "id": "r21-5-024",
+   "match": [
+    "gap",
+    "___ phoned you this morning?",
+    "Who"
+   ],
+   "set": {
+    "6": "*Who* is the subject here (someone phoned you), so there is no *did*: *Who phoned you this morning?*",
+    "7": "*Who* šeit ir teikuma priekšmets (kāds tev zvanīja), tāpēc *did* nav: *Who phoned you this morning?*",
+    "11": "yes"
+   }
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "id": "r21-1-022",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She might to be late."
+   ],
+   "set": {
+    "4": "Ask Tom. He might knows the answer.",
+    "5": "We may not have time for lunch today. | I was able to fix the printer myself. | You needn't bring anything to the party.",
+    "6": "*might / may* + base verb, no *-s*: *He might know the answer.*",
+    "7": "*might / may* + pamatforma, bez *-s*: *He might know the answer.*",
+    "9": "She might to be late."
+   }
+  },
+  {
+   "id": "r21-1-023",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We had the house paint last week."
+   ],
+   "set": {
+    "5": "Where do you get your bike fixed? | I had my passport photo taken at the post office. | We're getting the windows cleaned tomorrow."
+   }
+  },
+  {
+   "id": "r21-1-024",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I haven't had my eyes test yet."
+   ],
+   "set": {
+    "5": "Did you have the heating checked before winter? | She had her phone screen replaced last week. | We're having a new kitchen fitted next month."
+   }
+  },
+  {
+   "id": "r21-1-025",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He explained me the problem."
+   ],
+   "set": {
+    "5": "She sent her sister a long email. | Could you lend me your charger? | I bought a birthday cake for my colleague."
+   }
+  },
+  {
+   "id": "r21-1-026",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He described me the house."
+   ],
+   "set": {
+    "5": "The agent showed us three flats. | Can you pass me the salt? | My parents gave the car to my brother."
+   }
+  },
+  {
+   "id": "r21-1-027",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I am really tiring after work."
+   ],
+   "set": {
+    "5": "Were you surprised by the news? | This new software is really confusing. | She gets annoyed when people are late.",
+    "6": "*-ed* says how a person feels: *I am really tired after work.* *-ing* is for what causes the feeling (*a tiring job*).",
+    "7": "*-ed* saka, kā cilvēks jūtas: *I am really tired after work.* *-ing* lieto tam, kas sajūtu izraisa (*a tiring job*)."
+   }
+  },
+  {
+   "id": "r21-2-029",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Tickets can bought online."
+   ],
+   "set": {
+    "4": "This medicine should taken after meals.",
+    "5": "The bill can be paid by card. | Your passport must be shown at the gate. | This room can't be used during the exam.",
+    "6": "modal + *be* + 3. form: *This medicine should be taken after meals.*",
+    "7": "modālais darbības vārds + *be* + 3. forma: *This medicine should be taken after meals.*",
+    "9": "Tickets can bought online."
+   }
+  },
+  {
+   "id": "r21-2-030",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The shoes ought to taken off."
+   ],
+   "set": {
+    "5": "The meeting might be moved to Friday. | Can this jacket be washed at home? | The plants have to be watered every day.",
+    "6": "modal + *be* + 3. form, also after *ought to*: *The shoes ought to be taken off.*",
+    "7": "modālais darbības vārds + *be* + 3. forma, arī pēc *ought to*: *The shoes ought to be taken off.*"
+   }
+  },
+  {
+   "id": "r21-2-031",
+   "match": [
+    "gap",
+    "She explained the problem ___ me.",
+    "to"
+   ],
+   "set": {
+    "3": "She introduced her new colleague ___ the whole team.",
+    "5": "bank: to | for | —",
+    "6": "*explain, suggest, describe, introduce*: first the thing or the person you introduce, then *to* + person: *She introduced her new colleague to the whole team.*",
+    "7": "*explain, suggest, describe, introduce*: vispirms lieta vai cilvēks, ko iepazīstina, tad *to* + persona: *She introduced her new colleague to the whole team.*",
+    "9": "She explained the problem ___ me."
+   }
+  },
+  {
+   "id": "r21-2-032",
+   "match": [
+    "mcq",
+    "Choose the correct option: He lent his car ___ his neighbour.",
+    "to"
+   ],
+   "set": {
+    "5": "for | —",
+    "6": "*lend* + thing + *to* + person: *He lent his car to his neighbour* (= *He lent his neighbour his car*). *for* goes with *buy, make, cook*.",
+    "7": "*lend* + lieta + *to* + persona: *He lent his car to his neighbour* (= *He lent his neighbour his car*). *for* lieto ar *buy, make, cook*."
+   }
+  },
+  {
+   "id": "r21-3-026",
+   "match": [
+    "gap",
+    "The letters ought to ___ sent today.",
+    "be"
+   ],
+   "set": {
+    "6": "After *ought to* the passive is *be* + 3rd form: *The letters ought to be sent today.*",
+    "7": "Pēc *ought to* ciešamajā kārtā lieto *be* + 3. formu: *The letters ought to be sent today.*"
+   }
+  },
+  {
+   "id": "r21-5-026",
+   "match": [
+    "text",
+    "Start with *The accident*: Someone could have avoided the accident.",
+    "The accident could have been avoided."
+   ],
+   "set": {
+    "4": "The accident could have been avoided. | The accident could have been avoided by someone. | The accident could've been avoided. | The accident could've been avoided by someone.",
+    "6": "modal + *have been* + 3rd form: *The accident could have been avoided.* *by someone* is not needed.",
+    "7": "Modālais darbības vārds + *have been* + 3. forma: *The accident could have been avoided.* *by someone* nav vajadzīgs."
+   }
+  },
+  {
+   "id": "r21-5-028",
+   "match": [
+    "mcq",
+    "Choose the correct option: It was an ___ experience.",
+    "amazing"
+   ],
+   "set": {
+    "3": "Which sentence is correct?",
+    "4": "It was an amazing experience, and we were all amazed.",
+    "5": "It was an amazed experience, and we were all amazing. | It was an amazing experience, and we were all amazing. | It was an amazed experience, and we were all amazed.",
+    "6": "*-ing* = what causes the feeling: *an amazing experience*. *-ed* = how people feel: *we were all amazed*.",
+    "7": "*-ing* = kas izraisa sajūtu: *an amazing experience*. *-ed* = kā cilvēki jūtas: *we were all amazed*.",
+    "9": "amazing"
+   }
+  }
+ ],
+ "b1-new-5.csv": [
+  {
+   "id": "r21-1-028",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She has a wooden round table."
+   ],
+   "set": {
+    "4": "She bought a leather black jacket.",
+    "5": "They have a big white dog. | I found a beautiful old mirror at the market. | He wore a smart grey coat.",
+    "6": "Colour comes before material: *a black leather jacket*.",
+    "7": "Krāsa ir pirms materiāla: *a black leather jacket*.",
+    "9": "She has a wooden round table."
+   }
+  },
+  {
+   "id": "r21-1-029",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We ate in an Italian small restaurant."
+   ],
+   "set": {
+    "5": "She has long dark hair. | They live in a beautiful old farmhouse. | I'd like a big cup of hot tea."
+   }
+  },
+  {
+   "id": "r21-1-030",
+   "match": [
+    "mcq",
+    "Choose the correct option: The soup wasn't hot ___ to eat.",
+    "enough"
+   ],
+   "set": {
+    "5": "too | very | quite",
+    "6": "*enough* comes after the adjective: *hot enough to eat*. *too, very, quite* go before it.",
+    "7": "*enough* ir aiz īpašības vārda: *hot enough to eat*. *too, very, quite* ir pirms tā."
+   }
+  },
+  {
+   "id": "r21-1-031",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He speaks Spanish fluent."
+   ],
+   "set": {
+    "5": "She drives very carefully at night. | We hardly ever eat out these days. | They usually go running before work.",
+    "6": "*Speak* is an action, so it needs an adverb: *He speaks Spanish fluently.*",
+    "7": "*Speak* ir darbība, tāpēc vajag apstākļa vārdu: *He speaks Spanish fluently.*"
+   }
+  },
+  {
+   "id": "r21-1-032",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She is such tired."
+   ],
+   "set": {
+    "4": "The new flat is such small.",
+    "5": "It was such a long meeting that I missed lunch. | We had so much work last week. | He drives so fast!",
+    "6": "*so* + adjective: *The new flat is so small.* *such* needs a noun: *such a small flat*.",
+    "7": "*so* + īpašības vārds: *The new flat is so small.* *such* lieto ar lietvārdu: *such a small flat*.",
+    "9": "She is such tired."
+   }
+  },
+  {
+   "id": "r21-2-033",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He bought a leather black bag."
+   ],
+   "set": {
+    "4": "She wore a cotton white dress.",
+    "5": "We sat at a big round table. | He drives a small Japanese car. | I found a beautiful wooden box.",
+    "6": "Colour before material: *She wore a white cotton dress.* Order: opinion, size, age, shape, colour, origin, material.",
+    "7": "Krāsa pirms materiāla: *She wore a white cotton dress.* Secība: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls.",
+    "9": "He bought a leather black bag."
+   }
+  },
+  {
+   "id": "r21-2-034",
+   "match": [
+    "match",
+    "Match each word with its kind.",
+    "round = shape ; Spanish = origin ; silk = material ; huge = size"
+   ],
+   "set": {
+    "6": "*huge* = size, *round* = shape, *Spanish* = origin, *silk* = material. Before a noun the order is: opinion, size, age, shape, colour, origin, material.",
+    "7": "*huge* = izmērs, *round* = forma, *Spanish* = izcelsme, *silk* = materiāls. Pirms lietvārda secība ir: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls."
+   }
+  },
+  {
+   "id": "r21-2-035",
+   "match": [
+    "gap",
+    "It was ___ a long film.",
+    "such"
+   ],
+   "set": {
+    "3": "We had ___ a lovely evening at your place yesterday.",
+    "5": "bank: such | so | so much",
+    "6": "*such* + *a* + adjective + noun: *We had such a lovely evening.* *so* goes before an adjective with no noun.",
+    "7": "*such* + *a* + īpašības vārds + lietvārds: *We had such a lovely evening.* *so* lieto pirms īpašības vārda bez lietvārda.",
+    "9": "It was ___ a long film."
+   }
+  },
+  {
+   "id": "r21-2-036",
+   "match": [
+    "gap",
+    "She was ___ tired that she fell asleep at once.",
+    "so"
+   ],
+   "set": {
+    "3": "Thank you for your help. You've been ___ kind.",
+    "5": "bank: so | such | such a",
+    "6": "*so* + adjective with no noun: *You've been so kind.* *such (a)* needs a noun.",
+    "7": "*so* + īpašības vārds bez lietvārda: *You've been so kind.* *such (a)* vajag lietvārdu.",
+    "9": "She was ___ tired that she fell asleep at once."
+   }
+  },
+  {
+   "id": "r21-2-037",
+   "match": [
+    "gap",
+    "There was ___ much noise that I couldn't sleep.",
+    "so"
+   ],
+   "set": {
+    "3": "There was ___ much traffic that we were late for the wedding.",
+    "5": "bank: so | such | such a",
+    "6": "*so much* + uncountable noun: *There was so much traffic that we were late for the wedding.*",
+    "7": "*so much* + neskaitāms lietvārds: *There was so much traffic that we were late for the wedding.*",
+    "9": "There was ___ much noise that I couldn't sleep."
+   }
+  },
+  {
+   "id": "r21-2-038",
+   "match": [
+    "gap",
+    "He is ___ a good teacher.",
+    "such"
+   ],
+   "set": {
+    "5": "bank: such | so | so much"
+   }
+  },
+  {
+   "id": "r21-2-039",
+   "match": [
+    "mcq",
+    "Choose the correct option: I was ___ tired that I fell asleep.",
+    "so"
+   ],
+   "set": {
+    "3": "Choose the correct option: The hotel staff were ___ friendly to us.",
+    "4": "so",
+    "5": "such | such a | so many",
+    "6": "*so* + adjective with no noun: *The hotel staff were so friendly to us.*",
+    "7": "*so* + īpašības vārds bez lietvārda: *The hotel staff were so friendly to us.*"
+   }
+  },
+  {
+   "id": "r21-2-040",
+   "match": [
+    "mcq",
+    "Choose the correct option: It was ___ a surprise.",
+    "such"
+   ],
+   "set": {
+    "3": "Choose the correct option: It was ___ surprise to see him at the party.",
+    "4": "such a",
+    "5": "so | such | so a",
+    "6": "*such a* + singular noun: *It was such a surprise to see him at the party.*",
+    "7": "*such a* + vienskaitļa lietvārds: *It was such a surprise to see him at the party.*",
+    "9": "such"
+   }
+  },
+  {
+   "id": "r21-2-041",
+   "match": [
+    "mcq",
+    "Choose the correct option: He drove ___ fast that we were afraid.",
+    "so"
+   ],
+   "set": {
+    "5": "such | such a | so much"
+   }
+  },
+  {
+   "id": "r21-5-031",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "would you like something to drink"
+   ],
+   "set": {
+    "4": "would you like something to drink",
+    "5": "also accepted: you would like something to drink | would you like to drink something"
+   }
+  }
+ ],
+ "b1-passives-1.csv": [
+  {
+   "id": "r21-1-033",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The machines is checked every day."
+   ],
+   "set": {
+    "5": "Is breakfast included in the price? | Most of our furniture is made in Latvia. | Visitors aren't allowed to take photos inside."
+   }
+  },
+  {
+   "id": "r21-1-034",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The museum is visit by many tourists."
+   ],
+   "set": {
+    "5": "How often are the trains cleaned? | This dish is usually served with rice. | Our office isn't heated at the weekend."
+   }
+  },
+  {
+   "id": "r21-1-035",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The bank was robbing last night."
+   ],
+   "set": {
+    "5": "The shop windows were broken in the storm. | Two men were arrested. | The money was found."
+   }
+  },
+  {
+   "id": "r21-1-036",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The report is being write now."
+   ],
+   "set": {
+    "5": "The lifts are being repaired this week. | Is the meeting room being used at the moment? | Our street is being cleaned right now."
+   }
+  },
+  {
+   "id": "r21-1-037",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The rooms is being cleaned."
+   ],
+   "set": {
+    "4": "The windows in our flat is being replaced this week.",
+    "5": "My laptop is being repaired, so I'm using my phone. | Are the tickets being sold online? | The patient is being examined by a doctor.",
+    "6": "*Windows* is plural: *are being replaced*.",
+    "7": "*Windows* ir daudzskaitlī: *are being replaced*.",
+    "9": "The rooms is being cleaned."
+   }
+  },
+  {
+   "id": "r21-1-038",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The contract has been sign."
+   ],
+   "set": {
+    "4": "The contract has signed.",
+    "5": "All the tickets have already been sold. | Has your bag been found yet? | The meeting has been moved to Friday.",
+    "6": "The contract does not sign itself: *has been* + 3rd form: *The contract has been signed.*",
+    "7": "Līgums pats neparakstās: *has been* + 3. forma: *The contract has been signed.*",
+    "9": "The contract has been sign."
+   }
+  },
+  {
+   "id": "r21-2-042",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Three people has been arrested."
+   ],
+   "set": {
+    "5": "The road has been closed since Monday. | Has your bike been repaired yet? | My wallet has been stolen!"
+   }
+  },
+  {
+   "id": "r21-2-043",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The new rules will be introduce next month."
+   ],
+   "set": {
+    "5": "Your new card will be sent to you by post. | Will the museum be closed on Monday? | The match won't be shown on TV."
+   }
+  },
+  {
+   "id": "r21-2-044",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The winner will announced on Friday."
+   ],
+   "set": {
+    "4": "The new library will opened next spring.",
+    "5": "The road will be repaired in August. | Will lunch be served on the plane? | The old bridge won't be used any more.",
+    "6": "We need *be*: *The new library will be opened next spring.*",
+    "7": "Vajag *be*: *The new library will be opened next spring.*",
+    "9": "The winner will announced on Friday."
+   }
+  },
+  {
+   "id": "r21-3-027",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "this software is used by millions of people"
+   ],
+   "set": {
+    "4": "this software is used by millions of people",
+    "5": "also accepted: this is software used by millions of people"
+   }
+  },
+  {
+   "id": "r21-3-028",
+   "match": [
+    "text",
+    "Start with *This factory*: The company built this factory in 1990.",
+    "This factory was built by the company in 1990. | This factory was built in 1990. | In 1990 this factory was built by the company. | In 1990 this factory was built."
+   ],
+   "set": {
+    "4": "This factory was built by the company in 1990. | This factory was built in 1990. | In 1990 this factory was built by the company. | In 1990 this factory was built. | This factory was built in 1990 by the company."
+   }
+  },
+  {
+   "id": "r21-4-028",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the bridge was built in 1932 and it is still used today"
+   ],
+   "set": {
+    "4": "the bridge was built in 1932 and it is still used today",
+    "5": "also accepted: the bridge was built in 1932 and today it is still used | in 1932 the bridge was built and it is still used today | the bridge is still used today and it was built in 1932"
+   }
+  },
+  {
+   "id": "r21-4-029",
+   "match": [
+    "text",
+    "Start with *My laptop*: Someone stole my laptop yesterday.",
+    "My laptop was stolen yesterday. | My laptop was stolen by someone yesterday. | Yesterday my laptop was stolen. | Yesterday my laptop was stolen by someone."
+   ],
+   "set": {
+    "3": "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+    "4": "My laptop was stolen yesterday. | My laptop was stolen by someone yesterday. | Yesterday my laptop was stolen. | Yesterday my laptop was stolen by someone. | My laptop got stolen yesterday. | Yesterday my laptop got stolen.",
+    "6": "*My laptop* did not do the stealing, so we use *was* + 3rd form: *My laptop was stolen yesterday.* *Got stolen* is also correct, more informal.",
+    "7": "Klēpjdators pats neko nezaga, tāpēc lieto *was* + 3. forma: *My laptop was stolen yesterday.* Arī *got stolen* ir pareizi, tikai sarunvalodā."
+   }
+  },
+  {
+   "id": "r21-5-034",
+   "match": [
+    "match",
+    "Match each product with how it is made.",
+    "Cheese = is made from milk. ; Glass = is made from sand. ; Paper = is made from wood. ; Bread = is baked in an oven."
+   ],
+   "drop": true,
+   "set": {}
+  },
+  {
+   "id": "r21-5-038",
+   "match": [
+    "text",
+    "Start with *My umbrella*: Someone has taken my umbrella.",
+    "My umbrella has been taken. | My umbrella has been taken by someone."
+   ],
+   "set": {
+    "4": "My umbrella has been taken. | My umbrella has been taken by someone. | My umbrella's been taken. | My umbrella's been taken by someone."
+   }
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "id": "r21-1-039",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Our manager don't like long meetings."
+   ],
+   "set": {
+    "5": "My colleagues often work from home on Fridays. | Does your company pay for training? | The office opens at eight."
+   }
+  },
+  {
+   "id": "r21-1-040",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He doesn't goes to the gym on Sundays."
+   ],
+   "set": {
+    "5": "Does your sister still live in Berlin? | I usually cycle to work in summer. | The shop closes at six on Saturdays."
+   }
+  },
+  {
+   "id": "r21-1-041",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We're knowing the answer, but we can't say it."
+   ],
+   "set": {
+    "4": "This umbrella is belonging to my colleague.",
+    "5": "They're thinking about moving to Spain. | We're working from home this week. | She's learning to drive this summer.",
+    "6": "*Belong* is a state verb: *This umbrella belongs to my colleague.*",
+    "7": "*Belong* ir stāvokļa darbības vārds: *This umbrella belongs to my colleague.*",
+    "9": "We're knowing the answer, but we can't say it."
+   }
+  },
+  {
+   "id": "r21-1-042",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The manager is have a meeting with a client."
+   ],
+   "set": {
+    "5": "Are you still looking for a flat? | Our team is growing fast this year. | I'm not using the car today."
+   }
+  },
+  {
+   "id": "r21-1-043",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I didn't used to like olives."
+   ],
+   "set": {
+    "5": "Are you used to driving on the left yet? | He used to work as a taxi driver. | I'm slowly getting used to the early starts."
+   }
+  },
+  {
+   "id": "r21-2-045",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "When I came in, the children was watching TV."
+   ],
+   "set": {
+    "5": "She was driving to work when the accident happened. | What were you doing at eight last night? | It wasn't raining when we left the house."
+   }
+  },
+  {
+   "id": "r21-3-029",
+   "match": [
+    "gap",
+    "Most people ___ tired when they ___ enough sleep.",
+    "feel / don't get"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-3-030",
+   "match": [
+    "text",
+    "Rewrite with never: I don't eat fast food.",
+    "I never eat fast food."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-3-031",
+   "match": [
+    "text",
+    "Make a question with What time: The bank opens at nine.",
+    "What time does the bank open?"
+   ],
+   "set": {
+    "4": "What time does the bank open? | What time does the bank open at? | At what time does the bank open?",
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-3-032",
+   "match": [
+    "text",
+    "Make it negative: We are staying at a hotel.",
+    "We aren't staying at a hotel. | We are not staying at a hotel. | We're not staying at a hotel."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-030",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she rarely eats out because she prefers to cook at home"
+   ],
+   "set": {
+    "4": "she rarely eats out because she prefers to cook at home",
+    "5": "also accepted: because she prefers to cook at home she rarely eats out | she eats out rarely because she prefers to cook at home | because she prefers to cook at home she eats out rarely"
+   }
+  },
+  {
+   "id": "r21-4-032",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "does your brother still work for the same company"
+   ],
+   "set": {
+    "4": "does your brother still work for the same company",
+    "5": "also accepted: does your brother work for the same company still"
+   }
+  },
+  {
+   "id": "r21-4-036",
+   "match": [
+    "gap",
+    "I ___ understand why she ___ always late.",
+    "don't / is"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-037",
+   "match": [
+    "gap",
+    "She ___ meat because she is a vegetarian. (not / eat)",
+    "doesn't eat | does not eat"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-038",
+   "match": [
+    "gap",
+    "How much ___ a ticket to the capital ___ ? (cost)",
+    "does / cost"
+   ],
+   "set": {
+    "4": "does | did | will | would / cost",
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-039",
+   "match": [
+    "text",
+    "Make it negative: My colleagues work from home on Fridays.",
+    "My colleagues don't work from home on Fridays. | My colleagues do not work from home on Fridays. | On fridays my colleagues don't work from home. | On fridays my colleagues do not work from home."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-041",
+   "match": [
+    "gap",
+    "Anna ___ for a new flat because her rent is too high.",
+    "is looking"
+   ],
+   "set": {
+    "3": "Anna ___ for a new flat at the moment because her rent is too high.",
+    "6": "*At the moment*, a temporary situation: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+    "7": "*At the moment*, pagaidu situācija: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+    "9": "Anna ___ for a new flat because her rent is too high."
+   }
+  },
+  {
+   "id": "r21-4-042",
+   "match": [
+    "gap",
+    "My neighbour ___ his house this month, so there is a lot of noise. (paint)",
+    "is painting | has been painting"
+   ],
+   "set": {
+    "4": "is painting | has been painting | 's painting | 's been painting"
+   }
+  },
+  {
+   "id": "r21-4-044",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "she opened the letter and read it twice before she answered"
+   ],
+   "set": {
+    "4": "she opened the letter and read it twice before she answered",
+    "5": "also accepted: before she answered she opened the letter and read it twice | she opened and read the letter twice before she answered it | before she answered it she opened and read the letter twice"
+   }
+  },
+  {
+   "id": "r21-5-040",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "what does this word mean in your language"
+   ],
+   "set": {
+    "4": "what does this word mean in your language",
+    "5": "also accepted: in your language what does this word mean"
+   }
+  },
+  {
+   "id": "r21-5-042",
+   "match": [
+    "gap",
+    "The sun ___ in the east and ___ in the west.",
+    "rises / sets"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-5-044",
+   "match": [
+    "text",
+    "Make a question with How often: He visits his parents.",
+    "How often does he visit his parents?"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-5-047",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "are you using this chair or can i take it"
+   ],
+   "set": {
+    "4": "are you using this chair or can i take it",
+    "5": "also accepted: can i take this chair or are you using it | are you using it or can i take this chair | can i take it or are you using this chair"
+   }
+  },
+  {
+   "id": "r21-6-029",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I'm not understanding the instructions."
+   ],
+   "set": {
+    "5": "I need a new charger for my phone. | I'm reading a great book at the moment. | Is your brother still looking for a job?",
+    "6": "*Understand* is a state verb, so it stays simple: *I don't understand the instructions.*",
+    "7": "*Understand* ir stāvokļa darbības vārds, tāpēc paliek vienkāršajā formā: *I don't understand the instructions.*"
+   }
+  },
+  {
+   "id": "r21-6-030",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "why didn't you tell me that you had lost your job"
+   ],
+   "set": {
+    "4": "why didn't you tell me that you lost your job",
+    "5": "",
+    "6": "Question with *didn't* + base verb: *Why didn't you tell me that you lost your job?*",
+    "7": "Jautājums ar *didn't* + pamatforma: *Why didn't you tell me that you lost your job?*",
+    "9": "why didn't you tell me that you had lost your job"
+   }
+  },
+  {
+   "id": "r21-6-033",
+   "match": [
+    "gap",
+    "How long ___ you ___ for the bus yesterday? (wait)",
+    "did / wait"
+   ],
+   "set": {
+    "3": "How long ___ the drive to the airport ___ yesterday? (take)",
+    "4": "did / take",
+    "6": "A finished event: *did* + base form: *How long did the drive to the airport take yesterday?*",
+    "7": "Pabeigts notikums: *did* + pamatforma: *How long did the drive to the airport take yesterday?*"
+   }
+  }
+ ],
+ "b1-tenses-2.csv": [
+  {
+   "id": "r21-1-044",
+   "match": [
+    "mcq",
+    "Choose the correct option: I've worked here ___ 2015.",
+    "since"
+   ],
+   "set": {
+    "5": "for | already",
+    "6": "*since* + a starting point: *I've worked here since 2015.* *for* needs a length of time, and *2015* is a point in time, so *for 2015* is wrong.",
+    "7": "*since* + sākuma punkts: *I've worked here since 2015.* *for* lieto ar laika ilgumu, bet *2015* ir laika punkts, tāpēc *for 2015* nav pareizi."
+   }
+  },
+  {
+   "id": "r21-1-045",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I have visited that museum last weekend."
+   ],
+   "set": {
+    "5": "Have you ever tried Georgian food? | We've just booked our holiday. | I saw her at the station two days ago."
+   }
+  },
+  {
+   "id": "r21-1-046",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She has lived in Paris since five years."
+   ],
+   "set": {
+    "5": "How long have you worked here? | We haven't seen each other for ages. | He moved to Spain in 2018."
+   }
+  },
+  {
+   "id": "r21-1-047",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I hadn't never seen it before."
+   ],
+   "set": {
+    "5": "We had already eaten when they arrived. | She was hungry because she hadn't eaten all day. | Had you met him before the party?"
+   }
+  },
+  {
+   "id": "r21-1-048",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "When I will arrive, I'll text you."
+   ],
+   "set": {
+    "5": "I'm meeting my sister for lunch tomorrow. | It's cold. I'll close the window. | Shall we order a taxi?",
+    "6": "After *when* we use the present simple for the future: *When I arrive, I'll text you.*",
+    "7": "Pēc *when* nākotnei lieto Present Simple: *When I arrive, I'll text you.*"
+   }
+  },
+  {
+   "id": "r21-2-047",
+   "match": [
+    "mcq",
+    "Choose the correct option: She has worked here ___ five years.",
+    "for"
+   ],
+   "set": {
+    "3": "Choose the correct option: She has worked here ___ 2019.",
+    "4": "since",
+    "5": "for | in",
+    "6": "*since* + a starting point: *She has worked here since 2019.* *for* goes with a period of time. *in 2019* is a finished time and needs the past simple.",
+    "7": "*since* + sākuma brīdis: *She has worked here since 2019.* *for* lieto ar laika posmu. *in 2019* ir pabeigts laiks, tam vajag Past Simple.",
+    "9": "for"
+   }
+  },
+  {
+   "id": "r21-2-048",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I've been knowing him for years."
+   ],
+   "set": {
+    "4": "She's been knowing about the problem for weeks.",
+    "5": "They've been learning Spanish since January. | How long have you been waiting? | We've owned this flat since 2015.",
+    "6": "*Know* is a state verb: *She's known about the problem for weeks.*",
+    "7": "*Know* ir stāvokļa darbības vārds: *She's known about the problem for weeks.*",
+    "9": "I've been knowing him for years."
+   }
+  },
+  {
+   "id": "r21-2-049",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She has been work here since June."
+   ],
+   "set": {
+    "4": "My neighbour has been build a garage all summer.",
+    "5": "It has been snowing for two days. | How long have you been learning to drive? | They've been living in Riga for two years.",
+    "6": "After *been* the verb needs *-ing*: *My neighbour has been building a garage all summer.*",
+    "7": "Pēc *been* darbības vārdam vajag *-ing*: *My neighbour has been building a garage all summer.*",
+    "9": "She has been work here since June."
+   }
+  },
+  {
+   "id": "r21-3-033",
+   "match": [
+    "text",
+    "Rewrite with since: I started learning English in 2019 and I still learn it.",
+    "I have been learning English since 2019. | I have learned English since 2019."
+   ],
+   "set": {
+    "3": "Rewrite with *since*: I started learning English in 2019, and I'm still learning it.",
+    "4": "I have been learning English since 2019. | I have learned English since 2019. | I have learnt English since 2019.",
+    "6": "It started in 2019 and is still going on: *I have been learning English since 2019.*",
+    "7": "Tas sākās 2019. gadā un turpinās joprojām: *I have been learning English since 2019.*",
+    "9": "Rewrite with since: I started learning English in 2019 and I still learn it."
+   }
+  },
+  {
+   "id": "r21-3-034",
+   "match": [
+    "text",
+    "Make it negative: We have visited that museum.",
+    "We haven't visited that museum. | We have not visited that museum."
+   ],
+   "set": {
+    "4": "We haven't visited that museum. | We have not visited that museum. | We have never visited that museum.",
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-6-037",
+   "match": [
+    "gap",
+    "How long ___ you ___ for this company? (work)",
+    "have / worked | been working"
+   ],
+   "set": {
+    "3": "How long ___ you ___ for this company now? (work)",
+    "6": "Up to now: *have* + 3rd form or *have been* + *-ing*: *How long have you worked for this company now?*",
+    "7": "Līdz šim brīdim: *have* + 3. forma vai *have been* + *-ing*: *How long have you worked for this company now?*",
+    "9": "How long ___ you ___ for this company? (work)"
+   }
+  },
+  {
+   "id": "r21-6-039",
+   "match": [
+    "text",
+    "Make a question with How long: She has been learning Chinese.",
+    "How long has she been learning Chinese?"
+   ],
+   "set": {
+    "4": "How long has she been learning Chinese? | How long has she been learning Chinese for?"
+   }
+  },
+  {
+   "id": "r21-6-040",
+   "match": [
+    "mcq",
+    "Which sentence says how long?",
+    "I've been learning French for two years."
+   ],
+   "set": {
+    "5": "I've learned some French at school. | I've been learning French at evening classes. | I'm learning French with a teacher."
+   }
+  }
+ ],
+ "b1-upgrades-1.csv": [
+  {
+   "id": "r21-1-049",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "She is always check her messages before she gets out of bed."
+   ],
+   "set": {
+    "5": "Does she check her messages every hour? | We often eat out on Fridays. | She doesn't usually check her messages at work."
+   }
+  },
+  {
+   "id": "r21-1-050",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I am knowing the answer, but I don't want to say it yet."
+   ],
+   "set": {
+    "5": "She is waiting for the right moment to speak. | He's talking to a customer right now. | Do you know where the nearest pharmacy is?"
+   }
+  },
+  {
+   "id": "r21-1-051",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We didn't used to have a car when I was young."
+   ],
+   "set": {
+    "5": "Did you use to live near the sea? | We used to walk to school every day. | She's used to working long hours."
+   }
+  },
+  {
+   "id": "r21-1-052",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "I have finished school in 2019."
+   ],
+   "set": {
+    "5": "My parents got married in 1990. | We have lived here since 2019. | She has just started a new job."
+   }
+  },
+  {
+   "id": "r21-1-053",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "When I will see him, I'll tell him about the problem."
+   ],
+   "set": {
+    "5": "We're flying to Rome next Friday. | I think the shops will be busy tomorrow. | Are you going to apply for the job?",
+    "6": "After *when* we use the present simple, not *will*: *When I see him, I'll tell him about the problem.*",
+    "7": "Pēc *when* lieto Present Simple, nevis *will*: *When I see him, I'll tell him about the problem.*"
+   }
+  },
+  {
+   "id": "r21-1-054",
+   "match": [
+    "mcq",
+    "Choose the correct option: We'll go for a walk ___ it stops raining.",
+    "as soon as"
+   ],
+   "set": {
+    "5": "in case | unless",
+    "6": "*As soon as* = immediately after something happens: *We'll go for a walk as soon as it stops raining.*",
+    "7": "*As soon as* = uzreiz pēc tam, kad kaut kas notiek: *We'll go for a walk as soon as it stops raining.*"
+   }
+  },
+  {
+   "id": "r21-2-051",
+   "match": [
+    "mcq",
+    "Choose the correct option: We arrived at the station at ten past nine, but the train ___ at nine, so we had to wait for the next one.",
+    "left"
+   ],
+   "set": {
+    "5": "leaving | has left | is leaving"
+   }
+  },
+  {
+   "id": "r21-3-037",
+   "match": [
+    "gap",
+    "Why ___ you ___ so much coffee this week? You usually only drink tea. (drink)",
+    "are / drinking"
+   ],
+   "set": {
+    "3": "Why ___ so much coffee these days? You usually only drink tea. (you / drink)",
+    "4": "are you drinking | have you been drinking",
+    "6": "A temporary change around now: *Why are you drinking so much coffee these days?*",
+    "7": "Pagaidu pārmaiņa tagad: *Why are you drinking so much coffee these days?*",
+    "9": "Why ___ you ___ so much coffee this week? You usually only drink tea. (drink)"
+   }
+  },
+  {
+   "id": "r21-3-038",
+   "match": [
+    "text",
+    "Join the sentences with because: I stayed at home. I felt ill.",
+    "I stayed at home because I felt ill. | Because I felt ill, I stayed at home."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-3-041",
+   "match": [
+    "gap",
+    "I'll wait here until you ___ back. (come)",
+    "come"
+   ],
+   "set": {
+    "4": "come | have come | 've come"
+   }
+  },
+  {
+   "id": "r21-3-043",
+   "match": [
+    "mcq",
+    "Choose the correct option: In our factory, every phone ___ by two different people before it leaves the building.",
+    "is checked"
+   ],
+   "set": {
+    "5": "checks | is checking | is check"
+   }
+  },
+  {
+   "id": "r21-3-044",
+   "match": [
+    "text",
+    "Start with *The winner*: They will announce the winner on Friday.",
+    "The winner will be announced on Friday. | On friday the winner will be announced."
+   ],
+   "set": {
+    "4": "The winner will be announced on Friday. | On friday the winner will be announced. | The winner will be announced by them on Friday."
+   }
+  },
+  {
+   "id": "r21-4-050",
+   "match": [
+    "gap",
+    "My cousin ___ in a bank, but at the weekend he ___ as a volunteer at the zoo. (work / help)",
+    "works / helps"
+   ],
+   "set": {
+    "4": "works | is working | worked / helps | is helping | helped",
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-051",
+   "match": [
+    "text",
+    "Start with *The road*: They are repairing the road.",
+    "The road is being repaired."
+   ],
+   "set": {
+    "3": "Rewrite the sentence. Start with *The road*: They are repairing the road.",
+    "4": "The road is being repaired. | The road's being repaired. | The road is being repaired by them.",
+    "6": "The work is going on now, and who does it is not important: *is being* + 3rd form: *The road is being repaired.*",
+    "7": "Darbs notiek tagad, un nav svarīgi, kas to dara: *is being* + 3. forma: *The road is being repaired.*"
+   }
+  },
+  {
+   "id": "r21-6-044",
+   "match": [
+    "gap",
+    "The cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+    "is made / is sent"
+   ],
+   "set": {
+    "3": "Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+    "4": "is made / is sent | sent",
+    "6": "A regular process; who does it is not important: *is made* and *(is) sent*. After *and then* the second *is* can be left out.",
+    "7": "Regulārs process, kurā darītājs nav svarīgs: *is made* un *(is) sent*. Pēc *and then* otro *is* var izlaist."
+   }
+  },
+  {
+   "id": "r21-6-045",
+   "match": [
+    "mcq",
+    "Choose the correct option: The new library ___ , so you can borrow books from tomorrow.",
+    "has been opened"
+   ],
+   "set": {
+    "3": "Choose the correct option: The new library ___ by the mayor, so you can borrow books there now.",
+    "4": "has been opened",
+    "5": "has opened | have been opened | has being opened",
+    "6": "News with a result now, and the mayor did it: *The new library has been opened by the mayor.* *Been*, not *being*; *has* for one library.",
+    "7": "Jaunums ar rezultātu tagad, un to izdarīja mērs: *The new library has been opened by the mayor.* *Been*, nevis *being*; vienai bibliotēkai *has*."
+   }
+  }
+ ],
+ "comparison-1.csv": [
+  {
+   "id": "r21-1-055",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "The weather today is much more warmer than yesterday."
+   ],
+   "set": {
+    "5": "My new phone is a bit lighter than the old one. | It is not as cold as it was last week. | This is the most expensive hotel in town."
+   }
+  },
+  {
+   "id": "r21-1-056",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "He is by far the more experienced player in the team."
+   ],
+   "set": {
+    "4": "She is the more experienced player in the team.",
+    "5": "This route is a lot quicker than the motorway. | Their house is not as big as ours. | Train tickets are less expensive than plane tickets.",
+    "6": "One person compared with the whole team needs the superlative: *the most experienced player in the team*.",
+    "7": "Vienu cilvēku salīdzinot ar visu komandu, vajag vispārāko pakāpi: *the most experienced player in the team*.",
+    "9": "He is by far the more experienced player in the team."
+   }
+  },
+  {
+   "id": "r21-2-053",
+   "match": [
+    "mcq",
+    "Choose the correct option: The new hotel is ___ more comfortable than the old one, so we will stay there again.",
+    "much"
+   ],
+   "set": {
+    "3": "Choose the correct option: The new hotel is ___ comfortable than the old one, so we will stay there again.",
+    "4": "much more",
+    "5": "much | the most",
+    "6": "*much* + comparative shows a big difference: *much more comfortable than the old one*. *the most* compares one with all the others.",
+    "7": "*much* + pārākā pakāpe parāda lielu atšķirību: *much more comfortable than the old one*. *the most* salīdzina vienu ar visiem pārējiem.",
+    "9": "much"
+   }
+  },
+  {
+   "id": "r21-3-050",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "this job is much more stressful than my last one"
+   ],
+   "set": {
+    "4": "this job is much more stressful than my last one",
+    "5": "also accepted: my last job is much more stressful than this one | this one is much more stressful than my last job"
+   }
+  },
+  {
+   "id": "r21-3-052",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "this flat is not as bright as the one we saw yesterday"
+   ],
+   "set": {
+    "4": "this flat is not as bright as the one we saw yesterday",
+    "5": "also accepted: the flat we saw yesterday is not as bright as this one | this one is not as bright as the flat we saw yesterday"
+   }
+  },
+  {
+   "id": "r21-4-057",
+   "match": [
+    "gap",
+    "The new model is much ___ than the old one. (reliable)",
+    "more reliable"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-6-052",
+   "match": [
+    "mcq",
+    "Choose the correct option: Travelling by train is a bit ___ than driving, but it is more relaxing.",
+    "slower"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-6-053",
+   "match": [
+    "gap",
+    "Prices in the city centre are far ___ than in the suburbs. (high)",
+    "higher"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-6-054",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the more you practise the better you get"
+   ],
+   "set": {
+    "4": "the more you practise the better you get",
+    "5": "also accepted: the better you get the more you practise"
+   }
+  }
+ ],
+ "conjunctions-1.csv": [
+  {
+   "id": "r21-1-057",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Despite it was late, they kept working."
+   ],
+   "set": {
+    "5": "Although the flat is small, it's very comfortable. | In spite of the noise, I slept well. | She saved money so that she could travel."
+   }
+  }
+ ],
+ "learn-drag-3.csv": [
+  {
+   "id": "r21-1-058",
+   "match": [
+    "gap",
+    "___ it rained all day, we enjoyed our trip.",
+    "Although"
+   ],
+   "set": {
+    "5": "bank: Although | However | Because of"
+   }
+  },
+  {
+   "id": "r21-3-054",
+   "match": [
+    "gap",
+    "I finished work. ___, I went to the gym.",
+    "After that"
+   ],
+   "set": {
+    "5": "bank: After that | After | While"
+   }
+  }
+ ],
+ "more-1.csv": [
+  {
+   "id": "r21-1-059",
+   "match": [
+    "mcq",
+    "Choose the correct option: I can't sleep. There's ___ noise outside.",
+    "too much"
+   ],
+   "set": {
+    "5": "too many | a few"
+   }
+  },
+  {
+   "id": "r21-1-060",
+   "match": [
+    "mcq",
+    "Choose the correct option: We need two more chairs. There aren't ___.",
+    "enough"
+   ],
+   "set": {
+    "5": "too much | much"
+   }
+  },
+  {
+   "id": "r21-3-059",
+   "match": [
+    "mcq",
+    "Choose the correct option: I'm looking forward to ___ you.",
+    "seeing"
+   ],
+   "set": {
+    "6": "*to* in *look forward to* is a preposition, so *-ing* follows: *I'm looking forward to seeing you.*",
+    "7": "*to* frāzē *look forward to* ir prievārds, tāpēc seko *-ing*: *I'm looking forward to seeing you.*"
+   }
+  }
+ ],
+ "articles-split-1.csv": [
+  {
+   "id": "r21-2-013",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "We visited the Riga last summer."
+   ],
+   "set": {
+    "5": "My sister is learning Italian. | We had lunch near the river. | They went skiing in the Alps.",
+    "6": "Cities take no article: *We visited Riga last summer.*",
+    "7": "Pilsētām artikulu nelieto: *We visited Riga last summer.*"
+   }
+  }
+ ],
+ "modal-verbs-1.csv": [
+  {
+   "id": "r21-2-057",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "Tomorrow I will must work late."
+   ],
+   "set": {
+    "5": "You mustn't use your phone during the exam. | Did you have to wear a uniform at school? | We don't have to pay for parking on Sundays."
+   }
+  },
+  {
+   "id": "r21-3-055",
+   "match": [
+    "text",
+    "Rewrite in the past: I have to get up early.",
+    "I had to get up early."
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-3-056",
+   "match": [
+    "text",
+    "Make it negative: You should stay up late.",
+    "You shouldn't stay up late. | You should not stay up late."
+   ],
+   "set": {
+    "3": "Make it negative: You should tell Maria about the party.",
+    "4": "You shouldn't tell Maria about the party. | You should not tell Maria about the party.",
+    "6": "Negative: *shouldn't* + base verb: *You shouldn't tell Maria about the party.*",
+    "7": "Noliegums: *shouldn't* + pamatforma: *You shouldn't tell Maria about the party.*",
+    "9": "Make it negative: You should stay up late."
+   }
+  },
+  {
+   "id": "r21-3-057",
+   "match": [
+    "text",
+    "Rewrite in the future with will have to: I have to pay.",
+    "I will have to pay. | I'll have to pay."
+   ],
+   "set": {
+    "3": "Rewrite with *will*: I must pay.",
+    "6": "*must* has no future form, so after *will* use *have to*: *I will have to pay.*",
+    "7": "*must* nav nākotnes formas, tāpēc aiz *will* lieto *have to*: *I will have to pay.*",
+    "9": "Rewrite in the future with will have to: I have to pay."
+   }
+  },
+  {
+   "id": "r21-4-060",
+   "match": [
+    "mcq",
+    "Choose the correct question: ___ speak English at work?",
+    "Do you have to"
+   ],
+   "set": {
+    "5": "Must you to | Are you have to"
+   }
+  }
+ ],
+ "twins-1.csv": [
+  {
+   "id": "r21-2-058",
+   "match": [
+    "mcq",
+    "Choose the correct option: I can't concentrate. There are ___ people here.",
+    "too many"
+   ],
+   "set": {
+    "5": "too much | much"
+   }
+  },
+  {
+   "id": "r21-2-059",
+   "match": [
+    "mcq",
+    "Choose the correct option: We can't make a cake. There isn't ___ flour.",
+    "enough"
+   ],
+   "set": {
+    "5": "too many | many",
+    "6": "*enough* + uncountable noun: *There isn't enough flour.* *many* goes with plurals.",
+    "7": "*enough* + neskaitāms lietvārds: *There isn't enough flour.* *many* lieto ar daudzskaitli."
+   }
+  },
+  {
+   "id": "r21-2-060",
+   "match": [
+    "mcq",
+    "Choose the correct option: I've got ___ money, so I can't come to the cinema.",
+    "very little"
+   ],
+   "set": {
+    "4": "little",
+    "5": "few | a few",
+    "6": "*little* (without *a*) + uncountable noun = almost none: *I've got little money.* *few* goes with plurals.",
+    "7": "*little* (bez *a*) + neskaitāms lietvārds = gandrīz nemaz: *I've got little money.* *few* lieto ar daudzskaitli.",
+    "9": "very little"
+   }
+  },
+  {
+   "id": "r21-5-058",
+   "match": [
+    "mcq",
+    "Choose the correct option: I ___ finish the report before the meeting yesterday.",
+    "had to"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-5-059",
+   "match": [
+    "gap",
+    "I'm sorry, I ___ come to your party last Saturday. I was ill. (can)",
+    "couldn't"
+   ],
+   "set": {
+    "4": "couldn't | wasn't able to | was not able to"
+   }
+  }
+ ],
+ "compare-past-1.csv": [
+  {
+   "id": "r21-3-046",
+   "match": [
+    "gap",
+    "I ___ the party, but Chris ___ to go home. (enjoy / want)",
+    "was enjoying | enjoyed / wanted"
+   ],
+   "set": {
+    "3": "Last Saturday I ___ the party, but Chris ___ to go home early. (enjoy / want)",
+    "6": "*want* is not used in the continuous: *Chris wanted to go home early.* For *enjoy* both *was enjoying* and *enjoyed* are correct.",
+    "7": "*want* nelieto Continuous formā: *Chris wanted to go home early.* Ar *enjoy* pareizi ir gan *was enjoying*, gan *enjoyed*."
+   }
+  },
+  {
+   "id": "r21-3-047",
+   "match": [
+    "gap",
+    "___ you ___ Anna yesterday? (see)",
+    "Did / see"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-3-048",
+   "match": [
+    "gap",
+    "Karen didn't come to the cinema with us. She ___ the film. (already / see)",
+    "had already seen"
+   ],
+   "set": {
+    "3": "By the time we asked Karen to come to the cinema, she ___ the film. (already / see)",
+    "4": "had already seen | 'd already seen",
+    "6": "The seeing was over before we asked: *By the time we asked Karen, she had already seen the film.*",
+    "7": "Filmu viņa bija noskatījusies pirms mūsu jautājuma: *By the time we asked Karen, she had already seen the film.*"
+   }
+  },
+  {
+   "id": "r21-4-052",
+   "match": [
+    "gap",
+    "Kate ___ TV a lot when she was ill last year. (watch)",
+    "watched | was watching"
+   ],
+   "set": {
+    "4": "watched | was watching | would watch"
+   }
+  },
+  {
+   "id": "r21-4-053",
+   "match": [
+    "gap",
+    "I ___ here since 2010. I still work here. (work)",
+    "have worked | have been working"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  },
+  {
+   "id": "r21-4-055",
+   "match": [
+    "mcq",
+    "Choose the correct option: I didn't recognise her. She ___ a lot.",
+    "had changed"
+   ],
+   "set": {
+    "3": "Choose the correct option: When we met at the station, I didn't recognise Lucy because she ___ so much.",
+    "6": "The story is in the past (*met, didn't recognise*); the change happened before that: *had* + 3rd form: *she had changed so much*.",
+    "7": "Stāsts ir pagātnē (*met, didn't recognise*); pārmaiņas notika pirms tam: *had* + 3. forma: *she had changed so much*."
+   }
+  },
+  {
+   "id": "r21-5-057",
+   "match": [
+    "order",
+    "Put all the words in order. More than one answer is possible.",
+    "it was raining when we left the house"
+   ],
+   "set": {
+    "4": "it was raining when we left the house",
+    "5": "also accepted: when we left the house it was raining | we left the house when it was raining | when it was raining we left the house"
+   }
+  },
+  {
+   "id": "r21-6-048",
+   "match": [
+    "gap",
+    "It ___ this week. Everything is very dry. (not / rain)",
+    "hasn't rained | has not rained"
+   ],
+   "set": {
+    "4": "hasn't rained | has not rained | hasn't been raining | has not been raining"
+   }
+  },
+  {
+   "id": "r21-6-051",
+   "match": [
+    "gap",
+    "A: Was Tom there when you arrived? B: No, he ___. (already / leave)",
+    "had already left"
+   ],
+   "set": {
+    "4": "had already left | had left already | 'd already left | 'd left already"
+   }
+  }
+ ],
+ "twins-2.csv": [
+  {
+   "id": "r21-5-060",
+   "match": [
+    "gap",
+    "Leo didn't answer my call. He ___ in a meeting at that moment. (be)",
+    "was"
+   ],
+   "set": {
+    "11": "yes"
+   }
+  }
+ ]
+}

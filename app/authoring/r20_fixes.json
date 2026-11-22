@@ -434,6 +434,362 @@
     ]
    ],
    "_r20": "r20b-1-015"
+  },
+  "ppf-B12-4a": {
+   "wrong": [
+    "By the time the taxi came, we had finished dinner.",
+    "I had never tried sushi before that trip.",
+    "He told me that he had lost his keys."
+   ],
+   "_r20": "r21-1-001"
+  },
+  "cz-B11-1a": {
+   "remove": true,
+   "_r20": "r21-1-002"
+  },
+  "cz-B11-4a": {
+   "wrong": [
+    "Whenever I forget my umbrella, it rains.",
+    "If the printer jams, everybody panics.",
+    "If you press this button, the machine stops."
+   ],
+   "_r20": "r21-1-003"
+  },
+  "cs-B11-4a": {
+   "wrong": [
+    "If she had more time, she would learn Italian.",
+    "What would you do if you saw a ghost?",
+    "If I were you, I wouldn't do that."
+   ],
+   "_r20": "r21-1-004"
+  },
+  "rq-B12-2a": {
+   "q": "Which sentence reports this question: 'Do you like jazz?'",
+   "correct": "He asked me if I liked jazz.",
+   "wrong": [
+    "He asked me do I like jazz.",
+    "He asked me if did I like jazz."
+   ],
+   "why": "A question without a question word is reported with *if* (or *whether*) and statement word order, no *do / did*: *He asked me if I liked jazz.*",
+   "why_lv": "Jautājumu bez jautājamā vārda netiešajā runā ievada ar *if* (vai *whether*), vārdu secība ir kā apgalvojumā, bez *do / did*: *He asked me if I liked jazz.*",
+   "_r20": "r21-1-005"
+  },
+  "rq-B12-4a": {
+   "correct": "The receptionist asked me how long would I stay.",
+   "wrong": [
+    "He asked if I wanted a coffee.",
+    "She asked whether it was true.",
+    "She wanted to know what time the shop closed."
+   ],
+   "why": "A reported question has statement word order: *how long I would stay*, not *how long would I stay*.",
+   "why_lv": "Netiešajam jautājumam ir apgalvojuma vārdu secība: *how long I would stay*, nevis *how long would I stay*.",
+   "_r20": "r21-1-006"
+  },
+  "ps-B11-2a": {
+   "remove": true,
+   "_r20": "r21-2-002"
+  },
+  "ps-B11-5a": {
+   "q": "Which sentence is correct?",
+   "correct": "I want a coffee.",
+   "wrong": [
+    "I'm wanting a coffee.",
+    "I am want a coffee."
+   ],
+   "why": "*want* is a state verb, so it stays simple: *I want a coffee.*",
+   "why_lv": "*want* ir stāvokļa darbības vārds, tāpēc paliek Present Simple: *I want a coffee.*",
+   "_r20": "r21-2-004"
+  },
+  "pa-B11-2a": {
+   "q": "Choose the correct option: Yesterday she ___ the door and walked in.",
+   "correct": "opened",
+   "wrong": [
+    "was opening",
+    "has opened",
+    "opens"
+   ],
+   "why": "A series of finished actions in the past (*yesterday*): past simple: *Yesterday she opened the door and walked in.*",
+   "why_lv": "Pabeigtu darbību virkne pagātnē (*yesterday*): Past Simple: *Yesterday she opened the door and walked in.*",
+   "_r20": "r21-2-005"
+  },
+  "pp-B11-1a": {
+   "wrong": [
+    "since",
+    "already"
+   ],
+   "why": "*for* + a period of time: *I've worked here for five years.* *since* + a starting point (*since 2020*). *already* does not go before a period of time.",
+   "why_lv": "*for* + laika posms: *I've worked here for five years.* *since* + sākuma brīdis (*since 2020*). *already* nelieto pirms laika posma.",
+   "_r20": "r21-2-007"
+  },
+  "cf-B11-1a": {
+   "q": "Choose the correct option: We won't finish on time ___ we start now.",
+   "correct": "unless",
+   "wrong": [
+    "if",
+    "when"
+   ],
+   "why": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= if we don't start now).",
+   "why_lv": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= ja nesāksim tūlīt).",
+   "_r20": "r21-2-009"
+  },
+  "cs-B12-4a": {
+   "wrong": [
+    "She would travel more if she didn't have a dog.",
+    "What would you say if your boss offered you a promotion?",
+    "If we had a garden, we could grow vegetables."
+   ],
+   "_r20": "r21-2-010"
+  },
+  "ct-B12-4a": {
+   "correct": "If I would have seen the message, I would have replied.",
+   "wrong": [
+    "If it hadn't rained, we would have eaten outside.",
+    "She wouldn't have got lost if she had taken a map.",
+    "What would you have done if the bank had said no?"
+   ],
+   "why": "Do not use *would* in the if-part: *If I had seen the message, I would have replied.*",
+   "why_lv": "*If* daļā nelieto *would*: *If I had seen the message, I would have replied.*",
+   "_r20": "r21-2-011"
+  },
+  "rs-B11-4a": {
+   "correct": "She said me that the meeting was cancelled.",
+   "wrong": [
+    "He told us he had found a new job.",
+    "They said they would call back later.",
+    "Anna told me she was moving abroad."
+   ],
+   "why": "After *said* we do not put a person directly: *She told me that the meeting was cancelled* or *She said to me that ...*",
+   "why_lv": "Pēc *said* personu tieši nelieto: *She told me that the meeting was cancelled* vai *She said to me that ...*",
+   "_r20": "r21-2-012"
+  },
+  "pp-B11-4a": {
+   "correct": "We have visited Rome in 2019.",
+   "wrong": [
+    "She has lived here since 2015.",
+    "He has just left the office.",
+    "Have you finished yet?"
+   ],
+   "why": "*In 2019* is a finished time, so use the past simple: *We visited Rome in 2019.*",
+   "why_lv": "*In 2019* ir pabeigts laiks, tāpēc lieto Past Simple: *We visited Rome in 2019.*",
+   "_r20": "r21-3-007"
+  },
+  "pp-B12-2a": {
+   "q": "Choose the correct option: Have you seen the new Italian film? Yes, I ___ it at the cinema last night.",
+   "correct": "saw",
+   "wrong": [
+    "have seen",
+    "have saw",
+    "had seen"
+   ],
+   "why": "The question asks about experience, but the answer gives a finished time (*last night*): *I saw it at the cinema last night.*",
+   "why_lv": "Jautājums ir par pieredzi, bet atbildē ir pabeigts laiks (*last night*): *I saw it at the cinema last night.*",
+   "_r20": "r21-3-009"
+  },
+  "ppc-B11-1a": {
+   "q": "Choose the correct option: I'm tired and I'm still at my desk. I ___ all day.",
+   "correct": "have been working",
+   "wrong": [
+    "have been work",
+    "have working",
+    "had been working"
+   ],
+   "_r20": "r21-3-010"
+  },
+  "ppf-B12-1a": {
+   "q": "Choose the correct option: The bus left at 8.00. We got to the stop at 8.05. When we got there, the bus ___ already ___.",
+   "correct": "had ... left",
+   "wrong": [
+    "has ... left",
+    "was ... leaving",
+    "did ... leave"
+   ],
+   "why": "The bus left before we got there, so the earlier action is past perfect: *the bus had already left.*",
+   "why_lv": "Autobuss aizbrauca pirms mēs atnācām, tāpēc agrākajai darbībai lieto Past Perfect: *the bus had already left.*",
+   "_r20": "r21-3-011"
+  },
+  "fu-B12-1a": {
+   "q": "Choose the correct option: Hurry up! The film ___ start.",
+   "correct": "is about to",
+   "wrong": [
+    "will to",
+    "about to",
+    "is about"
+   ],
+   "why": "*Be about to* + base verb = very soon: *The film is about to start.*",
+   "why_lv": "*Be about to* + pamatforma = pavisam drīz: *The film is about to start.*",
+   "_r20": "r21-3-013"
+  },
+  "pcp-B12-1a": {
+   "q": "Choose the correct option: The new bridge ___ at the moment.",
+   "_r20": "r21-3-016"
+  },
+  "rq-B12-1b": {
+   "wrong": [
+    "The guard told me wait there.",
+    "The guard told me waiting there.",
+    "The guard asked if I wait there."
+   ],
+   "_r20": "r21-3-017"
+  },
+  "ip-B11-1a": {
+   "q": "Choose the correct sentence.",
+   "correct": "Could you tell me when the next train leaves?",
+   "wrong": [
+    "Could you tell me when does the next train leave?",
+    "Could you tell me when leaves the next train?",
+    "Could you tell me when the next train leave?"
+   ],
+   "why": "After *Could you tell me* there is no *does*, and the verb gets its *-s* back: *when the next train leaves.*",
+   "why_lv": "Pēc *Could you tell me* nelieto *does*, un darbības vārds atkal saņem *-s*: *when the next train leaves.*",
+   "_r20": "r21-3-018"
+  },
+  "pc-B11-5a": {
+   "q": "Which sentence sounds more temporary?",
+   "correct": "I'm living with my parents.",
+   "wrong": [
+    "I live with my parents.",
+    "Both sound the same.",
+    "Both sound permanent."
+   ],
+   "why": "*I'm living with my parents* sounds temporary (for now, not for ever). *I live with my parents* sounds permanent.",
+   "why_lv": "*I'm living with my parents* izklausās pēc pagaidu situācijas (pagaidām, ne uz visiem laikiem). *I live with my parents* izklausās pastāvīgi.",
+   "_r20": "r21-4-001"
+  },
+  "pp-B12-5a": {
+   "q": "Choose the correct option: I ___ the email yesterday, but the client hasn't answered yet.",
+   "correct": "sent",
+   "wrong": [
+    "have sent",
+    "have just sent"
+   ],
+   "why": "*Yesterday* is a finished time, so it needs the past simple: *I sent the email yesterday*. *Hasn't answered yet* is the present perfect: the situation now.",
+   "why_lv": "*Yesterday* ir pabeigts laiks, tāpēc vajag Past Simple: *I sent the email yesterday*. *Hasn't answered yet* ir Present Perfect: situācija tagad.",
+   "_r20": "r21-4-003"
+  },
+  "psp-B11-5a": {
+   "q": "Choose the correct option: The invoices ___ every Friday, so please send me yours by Thursday.",
+   "correct": "are sent",
+   "wrong": [
+    "are send",
+    "send"
+   ],
+   "why": "The invoices do not send themselves: someone sends them. So we use *are* + 3rd form: *The invoices are sent every Friday*.",
+   "why_lv": "Rēķini paši sevi nesūta: tos kāds nosūta. Tāpēc lieto *are* + 3. forma: *The invoices are sent every Friday*.",
+   "_r20": "r21-4-007"
+  },
+  "cf-B11-5a": {
+   "q": "Choose the correct option: If Tom ___ his password again, he'll be locked out of his account.",
+   "correct": "forgets",
+   "wrong": [
+    "will forget",
+    "forget"
+   ],
+   "why": "After *if* we use the present simple, also for the future, with *-s* after *he*: *If Tom forgets his password again, he'll be locked out*.",
+   "why_lv": "Pēc *if* lieto Present Simple arī nākotnei, ar *-s* aiz *he*: *If Tom forgets his password again, he'll be locked out*.",
+   "_r20": "r21-4-011"
+  },
+  "pac-B11-1a": {
+   "q": "Choose the correct option: I ___ along the street when I saw an old friend.",
+   "correct": "was walking",
+   "wrong": [
+    "was walk",
+    "am walking",
+    "were walking"
+   ],
+   "why": "The walk was already going on when I saw my friend: *I was walking along the street when I saw an old friend.* The short action (*saw*) interrupts it.",
+   "why_lv": "Pastaiga jau notika, kad ieraudzīju draugu: *I was walking along the street when I saw an old friend.* Īsā darbība (*saw*) to pārtrauc.",
+   "_r20": "r21-5-003"
+  },
+  "ppc-B11-2a": {
+   "wrong": [
+    "I waited for an hour last week, then left.",
+    "I wait for an hour every day.",
+    "I waited an hour, but that was years ago."
+   ],
+   "_r20": "r21-5-004"
+  },
+  "ppp-B11-2a": {
+   "wrong": [
+    "The project have been finished.",
+    "The project has being finished.",
+    "The project is being finished."
+   ],
+   "why": "*has been* + 3rd form: *The project has been finished.* *Project* is singular, so *has*; and *been*, not *being*.",
+   "why_lv": "*has been* + 3. forma: *The project has been finished.* *Project* ir vienskaitlī, tāpēc *has*; un *been*, nevis *being*.",
+   "_r20": "r21-5-007"
+  },
+  "fup-B11-5a": {
+   "q": "Which sentence is correct?",
+   "correct": "The files will be checked on Monday.",
+   "wrong": [
+    "The files will checked on Monday.",
+    "The files will be check on Monday.",
+    "The files check on Monday."
+   ],
+   "why": "*will be* + 3rd form: *The files will be checked on Monday.* We do not say who checks them.",
+   "why_lv": "*will be* + 3. forma: *The files will be checked on Monday.* Mēs nesakām, kas tos pārbaudīs.",
+   "_r20": "r21-5-008"
+  },
+  "ct-B12-2a": {
+   "wrong": [
+    "We booked early.",
+    "We will book early.",
+    "We got a cheaper flight."
+   ],
+   "_r20": "r21-5-013"
+  },
+  "pa-B11-3a": {
+   "answers": [
+    [
+     "didn't see",
+     "did not see",
+     "hadn't seen",
+     "had not seen"
+    ]
+   ],
+   "_r20": "r21-6-002"
+  },
+  "pac-B12-4a": {
+   "correct": "We are going to stay longer last summer, but the hotel was full.",
+   "wrong": [
+    "I was going to call you, but I lost your number.",
+    "She was going to leave when he arrived.",
+    "They were going to meet us, but their train was late."
+   ],
+   "why": "A plan in the past needs *was / were going to*; *are going to* is for plans now: *We were going to stay longer last summer, but the hotel was full.*",
+   "why_lv": "Plānam pagātnē vajag *was / were going to*; *are going to* lieto tagadnes plāniem: *We were going to stay longer last summer, but the hotel was full.*",
+   "_r20": "r21-6-004"
+  },
+  "ppc-B11-5a": {
+   "wrong": [
+    "She is running.",
+    "She runs."
+   ],
+   "why": "She stopped running a moment ago and we can see the result now: *She has been running.* *She is running* would mean she is still running.",
+   "why_lv": "Viņa nupat beidza skriet, un rezultāts ir redzams tagad: *She has been running.* *She is running* nozīmētu, ka viņa joprojām skrien.",
+   "_r20": "r21-6-007"
+  },
+  "ppc-B12-3a": {
+   "q": "The children are washing their hands now. Look at the floor! They ___ with paint. (play)",
+   "why": "They have stopped, but the floor shows what they were doing: *They have been playing with paint.*",
+   "why_lv": "Viņi ir beiguši, bet grīda rāda, ko viņi darīja: *They have been playing with paint.*",
+   "answers": [
+    [
+     "have been playing",
+     "'ve been playing"
+    ]
+   ],
+   "_r20": "r21-6-009"
+  },
+  "fu-B12-4a": {
+   "correct": "My sister going to start a new job next month.",
+   "why": "*Going to* needs *am / is / are* before it: *My sister is going to start a new job next month.*",
+   "why_lv": "Pirms *going to* vajag *am / is / are*: *My sister is going to start a new job next month.*",
+   "_r20": "r21-6-011"
+  },
+  "fu-B12-6a": {
+   "q": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
+   "_r20": "r21-6-012"
   }
  },
  "practice": [
@@ -445,7 +801,12 @@
   "ct-B22-1a",
   "ct-B22-3a",
   "ct-B22-5a",
+  "fup-B12-1a",
   "ip-B11-1a",
+  "pa-B11-5a",
+  "pa-B11-6a",
+  "ps-B11-1a",
+  "ps-B11-3b",
   "rq-B21-1a",
   "rq-B21-2a",
   "rq-B21-4a",

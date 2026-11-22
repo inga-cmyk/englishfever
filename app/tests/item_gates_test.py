@@ -218,7 +218,7 @@ def g_example(i):   # 22 November (tester): the example in an explanation is the
     for f in re.findall(r"\*([^*]+)\*", i.get("why") or ""):
         ws = [w for w in words(f) if w not in _EX_FUNC and len(w) > 2]
         foreign = [w for w in ws if stem(w) not in task]
-        if len(words(f)) >= 3 and len(foreign) >= 2 and len(foreign) * 2 >= len(ws) and not re.search(r"[+/,→]|\bverb\b|participle|-ing", f):
+        if len(words(f)) >= 3 and len(foreign) >= 2 and len(foreign) * 2 >= len(ws) and not re.search(r"[+/,→…]|\.\.\.|\bverb\b|participle|-ing", f):
             out.append("the explanation's example is from another sentence: *" + f + "* (use this task's own answer)")
     return out
 

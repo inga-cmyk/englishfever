@@ -1,0 +1,169 @@
+[
+{
+"id": "c1-1-001",
+"answer": "The new committee is consisting of five senior managers.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option A (We're really loving) is informal but accepted (cf. 'I'm loving it'); some strict teachers would call it a mistake, so it is a risky distractor. Same task type repeated in 004, 006, 011."
+},
+{
+"id": "c1-1-002",
+"answer": [
+"are",
+"being"
+],
+"other_correct": [
+[
+"were",
+"being"
+],
+[
+"are",
+"getting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'so difficult' plus the gap pattern 'you ___ so difficult' makes 'being' almost the only fit; 'were being' (past, if the complaint is about earlier behaviour) and 'are getting' (becoming) are also correct English.",
+"level_problem": "'be + being + adjective' is B2 at most; fine for C1 only if the nuance is the point.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-003",
+"answer": "belongs",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: 'belongs to' is A2/B1 vocabulary and a simple present choice; a B1 learner solves it at once.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-004",
+"answer": "My parents are owning two flats in the centre of Riga.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Fine; 'She's being very generous' is a good C1 distractor."
+},
+{
+"id": "c1-1-005",
+"answer": "agree",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: 'I am agree' is an A2-level error and 'agreeing/am agreeing' are clearly wrong; no nuance tested.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-006",
+"answer": "I'm preferring tea to coffee these days.",
+"other_correct": "",
+"wrong_options_that_fit": "'I'm preferring tea to coffee these days' is arguably acceptable for a temporary change (increasingly used); the key answer is debatable.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'these days' makes the progressive with 'prefer' defensible (a temporary/changing preference); learners could reasonably choose another option as the 'mistake' or reject the task. Options A, B, D are all correct."
+},
+{
+"id": "c1-1-007",
+"answer": [
+"don't",
+"understand"
+],
+"other_correct": [
+[
+"am",
+"understanding"
+]
+],
+"wrong_options_that_fit": "'am' + 'understanding' (I am understanding what you mean) is not standard British English but is used in Indian and some other Englishes; I would not mark it as a correct answer.",
+"instruction_problem": "Cards give the answer away: the learner only has to choose between two pairs, one of which is plainly odd; the 'Could you explain it again?' already settles the sense.",
+"level_problem": "Too easy for C1: classic A2-B1 'stative verb' drill; no nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-008",
+"answer": [
+"understands"
+],
+"other_correct": [
+[
+"can",
+"understand"
+],
+[
+"does",
+"understand"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'can understand' is also correct (and natural here); 'does understand' is emphatic but possible. The (understand) prompt does not exclude them.",
+"level_problem": "Too easy for C1: 3rd-person -s on a simple verb.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-009",
+"answer": "my flatmate is always losing his keys",
+"other_correct": [
+[
+"his flatmate is always losing my keys"
+],
+[
+"is my flatmate always losing his keys"
+],
+[
+"is his flatmate always losing my keys"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital letters or punctuation on the cards, so a question ('Is my flatmate always losing his keys?') is also possible; 'my/his' swap gives two further sentences. Content is already in a near-target order, so it is mostly copying.",
+"level_problem": "Too easy for C1: about B1 length and structure; the 'always + continuous' nuance is not tested by ordering.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-010",
+"answer": [
+"are",
+"putting"
+],
+"other_correct": [
+[
+"do",
+"put"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Without 'then' contrast it is clear; 'we do usually put the children to bed then' is grammatical but illogical as a reason for not being called, so I list it only as a weak alternative.",
+"level_problem": "Borderline: B1/B2 sentence; low for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1-011",
+"answer": "She is always forget her password at work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: obvious ungrammatical form, a B1 learner solves it.",
+"sense_problem": "Nobody at C1 would write 'is always forget'; it is a basic grammar error, not a believable C1 mistake. A learner would spot it immediately."
+},
+{
+"id": "c1-1-012",
+"answer": "My brother is forever leaving his shoes in the hall.",
+"other_correct": [
+[
+"My brother's forever leaving his shoes in the hall."
+],
+[
+"My brother is forever leaving his shoes in the hall!"
+],
+[
+"My brother forever leaves his shoes in the hall."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say what to change (present continuous is not named, good), but 'forever leaves' (simple present) is also possible, though less natural; 'always' is not excluded by the instruction but the task asks for 'forever'.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

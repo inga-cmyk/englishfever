@@ -1,0 +1,131 @@
+[
+ {
+  "id": "c1-1-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We're really loving the new office, especially the view.",
+   "You're being very quiet today. Is anything wrong?",
+   "This old farmhouse belongs to my grandmother.",
+   "The new committee is consisting of five senior managers."
+  ]
+ },
+ {
+  "id": "c1-1-002",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1-003",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: This flat ___ to my aunt, so we only pay a small rent.",
+  "options": [
+   "belong",
+   "belongs",
+   "is belonged",
+   "is belonging"
+  ]
+ },
+ {
+  "id": "c1-1-004",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "My parents are owning two flats in the centre of Riga.",
+   "She's being very generous with her time this week.",
+   "I believe the conference starts at ten.",
+   "We're really enjoying the course so far."
+  ]
+ },
+ {
+  "id": "c1-1-005",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ with almost everything you said in your email.",
+  "options": [
+   "am agree",
+   "agree",
+   "agreeing",
+   "am agreeing"
+  ]
+ },
+ {
+  "id": "c1-1-006",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She's realising how much work the move involves.",
+   "I'm finding the new software surprisingly easy to use.",
+   "I'm preferring tea to coffee these days.",
+   "We're beginning to regret buying such a big car."
+  ]
+ },
+ {
+  "id": "c1-1-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Sorry, I ___ ___ what you mean. Could you explain it again?",
+  "word_cards": [
+   "am",
+   "don't",
+   "understanding",
+   "understand"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-1-008",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My grandmother ___ every word you say, but she can't answer in English. (understand)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1-009",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "always",
+   "flatmate",
+   "my",
+   "losing",
+   "is",
+   "keys",
+   "his"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-1-010",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Don't call us at seven: we ___ usually ___ the children to bed then. (put)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-1-011",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She is always forget her password at work.",
+   "He's constantly interrupting me in meetings.",
+   "We usually have dinner at about seven.",
+   "My boss is forever changing the deadlines."
+  ]
+ },
+ {
+  "id": "c1-1-012",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Say it as a complaint with *forever*: My brother leaves his shoes in the hall.",
+  "note": "the learner types a whole sentence"
+ }
+]

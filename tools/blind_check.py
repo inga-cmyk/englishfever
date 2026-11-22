@@ -13,11 +13,21 @@ REC = os.path.join(OUT, "records.json")
 sys.path.insert(0, os.path.join(ROOT, "app", "tests"))
 from item_gates_test import key, task_hash   # noqa: E402
 
+# Draft topics that the app does not have yet -> a known topic, for the dump only (the readers never see the topic).
+DRAFT_TOPIC = {"Advanced present simple and continuous": "Narrative tenses with past perfect continuous"}   # any topic with B2.2 (C1 is read as B2.2)
+C1_DRAFTS = set()   # copies of draft files whose tasks are C1: the readers see C1
+
+
 def dump(extra=()):
     tmp = tempfile.mkdtemp(); out = os.path.join(tmp, "items.json"); copies = []
     try:
         for f in extra:
             dst = os.path.join(ROOT, "docs", "task-drafts", "zz-blind-" + os.path.basename(f)); shutil.copy(f, dst); copies.append(dst)
+            if DRAFT_TOPIC:   # C1 drafts (22 November): their topic is not in the app yet; the importer needs a known one for the dump only
+                txt = open(dst, encoding="utf-8-sig").read()
+                if ",C1," in txt: C1_DRAFTS.add(os.path.basename(dst))
+                for t in DRAFT_TOPIC: txt = txt.replace('"' + t + '"', '"' + DRAFT_TOPIC[t] + '"').replace("\n" + t + ",", "\n" + DRAFT_TOPIC[t] + ",")
+                open(dst, "w", encoding="utf-8").write(txt)
         r = subprocess.run(["php", os.path.join(ROOT, "tools", "dump_items.php"), out], capture_output=True, text=True, env=dict(os.environ, EF_DEV="1"))
         if r.returncode: sys.exit(r.stdout + r.stderr)
         return json.load(open(out, encoding="utf-8"))
@@ -27,7 +37,8 @@ def dump(extra=()):
 
 def as_learner(i, rnd):
     """The task as the learner sees it: no key, no explanation; options and cards shuffled."""
-    t = {"id": None, "level": "B2.2" if str(i["level"]).startswith("C1") else i["level"], "kind": i["kind"], "instruction_and_task": i["q"]}
+    keep_c1 = str(i.get("src", "")).split(":")[0] in C1_DRAFTS   # a new C1 draft is read as C1; older tasks marked C1 are served as B2.2
+    t = {"id": None, "level": "C1" if keep_c1 else ("B2.2" if str(i["level"]).startswith("C1") else i["level"]), "kind": i["kind"], "instruction_and_task": i["q"]}
     if i["kind"] == "mcq":
         opts = [i["correct"]] + list(i["wrong"]); rnd.shuffle(opts); t["options"] = opts
     elif i["kind"] == "gap" and i.get("bank"):

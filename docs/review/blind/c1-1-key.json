@@ -1,0 +1,437 @@
+{
+ "c1-1-001": {
+  "hash": "e11f6c3dc380dfbd",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | The new committee is consisting of five senior managers.",
+  "src": "zz-blind-zz-c1-pres-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "The new committee is consisting of five senior managers.",
+   "wrong": [
+    "We're really loving the new office, especially the view.",
+    "You're being very quiet today. Is anything wrong?",
+    "This old farmhouse belongs to my grandmother."
+   ]
+  },
+  "item": {
+   "id": "c-3634",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*consist of* describes what something is made of, a permanent state: it is not used in the continuous (*consists of*). *We're loving* (a feeling about something new) and *You're being quiet* (behaviour today) are correct.",
+   "why_lv": "*consist of* apraksta, no kā kaut kas sastāv: tas ir pastāvīgs stāvoklis, tāpēc ilgstošo formu nelieto (*consists of*). *We're loving* (sajūta par kaut ko *jaunu*) un *You're being quiet* (uzvedība šodien) ir *pareizi*.",
+   "correct": "The new committee is consisting of five senior managers.",
+   "wrong": [
+    "We're really loving the new office, especially the view.",
+    "You're being very quiet today. Is anything wrong?",
+    "This old farmhouse belongs to my grandmother."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:2"
+  }
+ },
+ "c1-1-002": {
+  "hash": "5ab976722a7568b7",
+  "gate_key": "narrative_b2 | B2.2 | gap | Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change. | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are",
+     "were"
+    ],
+    [
+     "being"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3635",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Why ___ you ___ so difficult about this? It's only a small change.",
+   "why": "*be* in the continuous (*are being*) describes how someone is behaving now, not what they are like: *Why are you being so difficult?* = why are you acting like this?",
+   "why_lv": "*be* ilgstošajā formā (*are being*) apraksta, kā kāds *uzvedas* tagad, nevis kāds viņš ir: *Why are you being so difficult?* = kāpēc *tu* tagad tā *uzvedies*?",
+   "answers": [
+    [
+     "are",
+     "were"
+    ],
+    [
+     "being"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:3"
+  }
+ },
+ "c1-1-003": {
+  "hash": "1537fa557af39abf",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Choose the correct option: This flat ___ to my aunt, so we only pay a small rent. | belongs",
+  "src": "zz-blind-zz-c1-pres-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "belongs",
+   "wrong": [
+    "is belonging",
+    "is belonged",
+    "belong"
+   ]
+  },
+  "item": {
+   "id": "c-3636",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: This flat ___ to my aunt, so we only pay a small rent.",
+   "why": "*belong to* is a permanent state (who it is owned by): present simple, *belongs*. It is not used in the continuous or the passive.",
+   "why_lv": "*belong to* ir pastāvīgs stāvoklis (*kam* tas pieder): Present Simple, *belongs*. Ilgstošo formu un ciešamo kārtu nelieto.",
+   "correct": "belongs",
+   "wrong": [
+    "is belonging",
+    "is belonged",
+    "belong"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:4"
+  }
+ },
+ "c1-1-004": {
+  "hash": "e257ace41243c029",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | My parents are owning two flats in the centre of Riga.",
+  "src": "zz-blind-zz-c1-pres-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "My parents are owning two flats in the centre of Riga.",
+   "wrong": [
+    "She's being very generous with her time this week.",
+    "I believe the conference starts at ten.",
+    "We're really enjoying the course so far."
+   ]
+  },
+  "item": {
+   "id": "c-3637",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*own* is a state verb (possession): *My parents own two flats*. *She's being generous* is correct: behaviour this week.",
+   "why_lv": "*own* ir stāvokļa darbības vārds (piederība): *My parents own two flats.* *Tulkojot burtiski mani* vecāki pašlaik pieder, *gribas* lietot ilgstošo formu, bet angliski saka *own*. *She's being generous* ir *pareizi*: uzvedība šonedēļ.",
+   "correct": "My parents are owning two flats in the centre of Riga.",
+   "wrong": [
+    "She's being very generous with her time this week.",
+    "I believe the conference starts at ten.",
+    "We're really enjoying the course so far."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:5"
+  }
+ },
+ "c1-1-005": {
+  "hash": "2651bfee0b158c90",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Choose the correct option: I ___ with almost everything you said in your email. | agree",
+  "src": "zz-blind-zz-c1-pres-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "agree",
+   "wrong": [
+    "am agree",
+    "am agreeing",
+    "agreeing"
+   ]
+  },
+  "item": {
+   "id": "c-3638",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I ___ with almost everything you said in your email.",
+   "why": "*agree* is a state of mind: present simple, *I agree*. *I am agree* mixes *be* with the verb; *I'm agreeing* is not used.",
+   "why_lv": "*agree* ir domāšanas stāvoklis: Present Simple, *I agree.* *Tulkojot burtiski* es *esmu* vienisprātis, iznāk *I am agree*, bet angliski *agree* ir darbības vārds: *I agree.*",
+   "correct": "agree",
+   "wrong": [
+    "am agree",
+    "am agreeing",
+    "agreeing"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:6"
+  }
+ },
+ "c1-1-006": {
+  "hash": "8fef7c12c810dccf",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | I'm preferring tea to coffee these days.",
+  "src": "zz-blind-zz-c1-pres-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm preferring tea to coffee these days.",
+   "wrong": [
+    "I'm finding the new software surprisingly easy to use.",
+    "We're beginning to regret buying such a big car.",
+    "She's realising how much work the move involves."
+   ]
+  },
+  "item": {
+   "id": "c-3639",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*prefer* stays in the present simple, even with *these days*: *I prefer tea to coffee these days*. *find*, *regret* and *realise* can be continuous for a feeling or thought that is new or growing.",
+   "why_lv": "*prefer* paliek Present Simple arī ar *these days*: *I prefer tea to coffee these days.* *find, regret* un *realise* var būt ilgstošajā formā, ja *doma* vai sajūta ir *jauna* vai *pieaug*.",
+   "correct": "I'm preferring tea to coffee these days.",
+   "wrong": [
+    "I'm finding the new software surprisingly easy to use.",
+    "We're beginning to regret buying such a big car.",
+    "She's realising how much work the move involves."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:7"
+  }
+ },
+ "c1-1-007": {
+  "hash": "b186b87bb2e4c257",
+  "gate_key": "narrative_b2 | B2.2 | gap | Sorry, I ___ ___ what you mean. Could you explain it again? | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "don't"
+    ],
+    [
+     "understand"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3640",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Sorry, I ___ ___ what you mean. Could you explain it again?",
+   "why": "*understand* is a state of mind: *I don't understand*. Not *I'm not understanding* or *I am understanding*.",
+   "why_lv": "*understand* ir domāšanas stāvoklis: *I don't understand.* Ne *I'm not understanding*, ne *I am understanding.*",
+   "answers": [
+    [
+     "don't"
+    ],
+    [
+     "understand"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "don't",
+    "understand",
+    "am",
+    "understanding"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:8"
+  }
+ },
+ "c1-1-008": {
+  "hash": "5c978206abb77e58",
+  "gate_key": "narrative_b2 | B2.2 | gap | My grandmother ___ every word you say, but she can't answer in English. (understand) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "understands"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3641",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My grandmother ___ every word you say, but she can't answer in English. (understand)",
+   "why": "*understand* is a state: present simple, *understands*, not *is understanding*.",
+   "why_lv": "*understand* ir stāvoklis: Present Simple, *understands*, nevis *is understanding*.",
+   "answers": [
+    [
+     "understands"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:9"
+  }
+ },
+ "c1-1-009": {
+  "hash": "1d53bea20ab0bc87",
+  "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | my flatmate is always losing his keys",
+  "src": "zz-blind-zz-c1-pres-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "my flatmate is always losing his keys",
+   "also": []
+  },
+  "item": {
+   "id": "c-3642",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*always* goes between *is* and the *-ing* form: *is always losing*. With the continuous it shows that something happens again and again, often with irritation.",
+   "why_lv": "*always* stāv starp *is* un *-ing* formu: *is always losing*. Ar ilgstošo formu tas rāda, ka kaut kas notiek *atkal* un *atkal*, bieži ar *nepatiku*.",
+   "sentence": "my flatmate is always losing his keys",
+   "answers": [
+    [
+     "my flatmate is always losing his keys"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:10"
+  }
+ },
+ "c1-1-010": {
+  "hash": "e3f4435d5739dc64",
+  "gate_key": "narrative_b2 | B2.2 | gap | Don't call us at seven: we ___ usually ___ the children to bed then. (put) | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are",
+     "'re"
+    ],
+    [
+     "putting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3643",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Don't call us at seven: we ___ usually ___ the children to bed then. (put)",
+   "why": "*usually* + present continuous: a routine that is in progress at that time (*we are usually putting them to bed then*).",
+   "why_lv": "*usually* + Present Continuous: *ierasta* darbība, kas tajā laikā jau notiek (*we are usually putting them to bed then*).",
+   "answers": [
+    [
+     "are",
+     "'re"
+    ],
+    [
+     "putting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:11"
+  }
+ },
+ "c1-1-011": {
+  "hash": "fa491aec967a9a83",
+  "gate_key": "narrative_b2 | B2.2 | mcq | Which sentence has a mistake? | She is always forget her password at work.",
+  "src": "zz-blind-zz-c1-pres-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "She is always forget her password at work.",
+   "wrong": [
+    "He's constantly interrupting me in meetings.",
+    "We usually have dinner at about seven.",
+    "My boss is forever changing the deadlines."
+   ]
+  },
+  "item": {
+   "id": "c-3644",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After *is always*, the *-ing* form: *She is always forgetting her password* (or *She always forgets*).",
+   "why_lv": "Aiz *is always* lieto *-ing* formu: *She is always forgetting her password* (vai *She always forgets*).",
+   "correct": "She is always forget her password at work.",
+   "wrong": [
+    "He's constantly interrupting me in meetings.",
+    "We usually have dinner at about seven.",
+    "My boss is forever changing the deadlines."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:12"
+  }
+ },
+ "c1-1-012": {
+  "hash": "1fcc87913f481e80",
+  "gate_key": "narrative_b2 | B2.2 | text | Say it as a complaint with *forever*: My brother leaves his shoes in the hall. | ",
+  "src": "zz-blind-zz-c1-pres-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My brother is forever leaving his shoes in the hall.",
+     "My brother's forever leaving his shoes in the hall."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3645",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Say it as a complaint with *forever*: My brother leaves his shoes in the hall.",
+   "why": "*is forever* + *-ing* shows annoyance at something that happens again and again: *He is forever leaving his shoes in the hall.*",
+   "why_lv": "*is forever + -ing izsaka nepatiku* par to, kas notiek *atkal* un *atkal*: *He is forever leaving his shoes in the hall.*",
+   "answers": [
+    [
+     "My brother is forever leaving his shoes in the hall.",
+     "My brother's forever leaving his shoes in the hall."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-zz-c1-pres-1.csv:13"
+  }
+ }
+}

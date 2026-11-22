@@ -1,0 +1,137 @@
+[
+{
+"id": "c1-1-001",
+"answer": "The new committee is consisting of five senior managers.",
+"other_correct": "",
+"wrong_options_that_fit": "We're really loving the new office is acceptable informal English (marketing/spoken use); a strict learner could pick it as the mistake",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 is correct but debatable; the real mistake is clear"
+},
+{
+"id": "c1-1-002",
+"answer": [
+"are",
+"being"
+],
+"other_correct": [
+[
+"were",
+"being"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "were fits less naturally (present 'It's' follows)"
+},
+{
+"id": "c1-1-003",
+"answer": "belongs",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: basic stative verb, no nuance",
+"sense_problem": ""
+},
+{
+"id": "c1-1-004",
+"answer": "My parents are owning two flats in the centre of Riga.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1-005",
+"answer": "agree",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: classic A2/B1 'I am agree' error",
+"sense_problem": ""
+},
+{
+"id": "c1-1-006",
+"answer": "I'm preferring tea to coffee these days.",
+"other_correct": "",
+"wrong_options_that_fit": "I'm preferring tea to coffee these days is acceptable (temporary change, 'these days'); some speakers say it",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'these days' makes the 'mistake' sentence arguably correct, so the item is unfair"
+},
+{
+"id": "c1-1-007",
+"answer": [
+"don't",
+"understand"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: only a choice between 'understand' and 'am understanding'",
+"sense_problem": ""
+},
+{
+"id": "c1-1-008",
+"answer": [
+"understands"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1 (one word, base verb given)",
+"sense_problem": ""
+},
+{
+"id": "c1-1-009",
+"answer": "my flatmate is always losing his keys",
+"other_correct": [
+"his flatmate is always losing my keys"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No context says whose flatmate; two meanings possible",
+"level_problem": "Short and easy for C1",
+"sense_problem": ""
+},
+{
+"id": "c1-1-010",
+"answer": [
+"are",
+"putting"
+],
+"other_correct": [
+[
+"do",
+"put"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'do put' is less natural/emphatic; 'don't ... put' does not fit the sense"
+},
+{
+"id": "c1-1-011",
+"answer": "She is always forget her password at work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'is always forget' is a very basic error, unlikely at C1"
+},
+{
+"id": "c1-1-012",
+"answer": "My brother is forever leaving his shoes in the hall.",
+"other_correct": [
+"My brother's forever leaving his shoes in the hall.",
+"He is forever leaving his shoes in the hall.",
+"He's forever leaving his shoes in the hall."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -35,9 +35,10 @@ foreach ($retired as $old) {
     foreach ($active as $aid => $a) if (preg_match('/^' . preg_quote($stem, '/') . '-r(\d+)$/', $aid, $mm) && (int) $mm[1] > $rev) $replacement = $a;
     if ($replacement === null && $old['skill'] === 'past_simple' && $old['level'] === 'B1.2') continue;   // used to moved to its own topic (27 October): removed, no replacement
     if ($replacement === null && $stem === 'var-pp-b11-match-01') continue;   // retired without a replacement (12 November: too easy)
+    if ($replacement === null && in_array($stem, ['cz-B11-1a', 'ps-B11-2a'], true)) continue;   // removed by the B1 recheck (blind round r21, 22 November): no task could be repaired   // retired without a replacement (12 November: too easy)
     check($replacement !== null, 'Missing corrected replacement');
     foreach (['skill', 'level', 'bloom', 'kind'] as $key) {
-        if ($key === 'kind' && $stem === 'rv-C11-3a') continue;
+        if ($key === 'kind' && in_array($stem, ['rv-C11-3a', 'ppc-B12-3a'], true)) continue;   // ppc-B12-3a: a gap that past forms also fitted became a choice (blind round r21b, 22 November)
         if ($key === 'level' && strncmp((string) $old['level'], 'C1', 2) === 0 && $replacement['level'] === 'B2.2') continue;   // no C1 level any more: C1 tasks became B2.2 (teacher, 12 November, U3 A)
         if ($key === 'kind' && in_array($stem, ['rs-B11-6a', 'rs-B12-3a', 'rs-B21-3a', 'rq-B21-3a', 'rq-B22-3a', 'rq-B22-6a', 'rv-B22-6a'], true)) continue;   // typed reports became "complete from the start" gaps (12 November)   // a typed gap became a word-bank gap: the quote already gave the missing words away (teacher, 3 November)
         check($old[$key] === $replacement[$key], "Correction changed $key");

@@ -444,8 +444,15 @@
    "_r20": "r21-1-001"
   },
   "cz-B11-1a": {
-   "remove": true,
-   "_r20": "r21-1-002"
+   "q": "Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl.",
+   "correct": "plays",
+   "wrong": [
+    "will play",
+    "play"
+   ],
+   "why": "A sentence about what always happens: the *every time* part has the present simple, never *will*: *Every time my neighbour plays the piano, my dog starts to howl.*",
+   "why_lv": "Teikums par to, kas notiek vienmēr: *every time* daļā lieto Present Simple, nekad *will*: *Every time my neighbour plays the piano, my dog starts to howl.*",
+   "_r20": "r21-1-002 (replaced, not removed: a new B1 task)"
   },
   "cz-B11-4a": {
    "wrong": [
@@ -486,8 +493,15 @@
    "_r20": "r21-1-006"
   },
   "ps-B11-2a": {
-   "remove": true,
-   "_r20": "r21-2-002"
+   "q": "Choose the correct option: I ___ what you mean, but I don't agree with you.",
+   "correct": "know",
+   "wrong": [
+    "am knowing",
+    "knows"
+   ],
+   "why": "*Know* is a state verb: it stays simple even about this moment: *I know what you mean.*",
+   "why_lv": "*Know* apzīmē stāvokli, tāpēc paliek vienkāršajā formā arī par šo brīdi: *I know what you mean.*",
+   "_r20": "r21-2-002 (replaced, not removed: a new B1 task)"
   },
   "ps-B11-5a": {
    "q": "Which sentence is correct?",
@@ -522,15 +536,15 @@
    "_r20": "r21-2-007"
   },
   "cf-B11-1a": {
-   "q": "Choose the correct option: We won't finish on time ___ we start now.",
+   "q": "Choose the correct option: We won't finish on time ___ someone helps us.",
    "correct": "unless",
    "wrong": [
     "if",
     "when"
    ],
-   "why": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= if we don't start now).",
-   "why_lv": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= ja nesāksim tūlīt).",
-   "_r20": "r21-2-009"
+   "why": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= if nobody helps us).",
+   "why_lv": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= ja neviens mums nepalīdzēs).",
+   "_r20": "r21b-1-025"
   },
   "cs-B12-4a": {
    "wrong": [
@@ -770,16 +784,17 @@
    "_r20": "r21-6-007"
   },
   "ppc-B12-3a": {
-   "q": "The children are washing their hands now. Look at the floor! They ___ with paint. (play)",
-   "why": "They have stopped, but the floor shows what they were doing: *They have been playing with paint.*",
-   "why_lv": "Viņi ir beiguši, bet grīda rāda, ko viņi darīja: *They have been playing with paint.*",
-   "answers": [
-    [
-     "have been playing",
-     "'ve been playing"
-    ]
+   "q": "Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint.",
+   "why": "They have stopped (they are washing their hands now), but the floor shows what they were doing: *They have been playing with paint.* *Are playing* would mean they are still playing.",
+   "why_lv": "Viņi ir beiguši (tagad viņi mazgā rokas), bet grīda rāda, ko viņi darīja: *They have been playing with paint.* *Are playing* nozīmētu, ka viņi joprojām spēlējas.",
+   "answers": null,
+   "_r20": "r21b-1-014",
+   "correct": "have been playing",
+   "wrong": [
+    "are playing",
+    "have been play"
    ],
-   "_r20": "r21-6-009"
+   "kind": "mcq"
   },
   "fu-B12-4a": {
    "correct": "My sister going to start a new job next month.",
@@ -789,7 +804,19 @@
   },
   "fu-B12-6a": {
    "q": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
-   "_r20": "r21-6-012"
+   "_r20": "r21b-1-019",
+   "must": [
+    [
+     "\\b(?:going\\s+to|about\\s+to)\\s+\\w+",
+     "Say what the clouds show with *going to* (or *about to*) + base verb.",
+     "Ko rāda mākoņi, saki ar *going to* (vai *about to*) + pamatforma."
+    ],
+    [
+     "\\b(i'll|i’ll|i will|shall i)\\b",
+     "Offer your umbrella with *I'll* (or *Shall I …?*).",
+     "Lietussargu piedāvā ar *I'll* (vai *Shall I …?*)."
+    ]
+   ]
   }
  },
  "practice": [

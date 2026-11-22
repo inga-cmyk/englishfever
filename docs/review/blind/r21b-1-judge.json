@@ -1,0 +1,285 @@
+[
+ {
+  "id": "r21b-1-001",
+  "decision": "keep",
+  "why": "Level was decided earlier. 'I am want' (be + base verb) is a real learner mistake, and 'I'm wanting' is the card's state-verb point (present_simple watch: 'State verbs (know, like, want, need, believe) stay simple'); informal 'I'm wanting' is not the taught norm."
+ },
+ {
+  "id": "r21b-1-002",
+  "decision": "keep",
+  "why": "'Both sound the same' and 'Both sound permanent' are believable misunderstandings of the difference the card teaches ('A permanent situation: present simple; a temporary one: continuous: I live in Riga. I'm living with my parents this year.'), not illogical fillers."
+ },
+ {
+  "id": "r21b-1-003",
+  "decision": "keep",
+  "why": "'Yesterday' is the time word the rules ask for (29 October: an unambiguous time word, not an open context); the wrong options are wrong with it. Level was decided earlier."
+ },
+ {
+  "id": "r21b-1-004",
+  "decision": "keep",
+  "why": "Reader 2 only confirms the task: contracted and full forms of both the past simple and the past perfect are already accepted."
+ },
+ {
+  "id": "r21b-1-005",
+  "decision": "keep",
+  "why": "Only level flags; past continuous + when is on the B1.1 card ('A longer action interrupted by a short action'), and 'were walking' with I is the card's mistake type ('They [[was]] waiting')."
+ },
+ {
+  "id": "r21b-1-007",
+  "decision": "keep",
+  "why": "'already five years' is a real mistake of Latvian learners (jau piecus gadus); 'already' is on the present_perfect card ('already before the main verb'). Level was decided earlier."
+ },
+ {
+  "id": "r21b-1-009",
+  "decision": "keep",
+  "why": "The time word deciding the tense is the point (card: 'I [[have seen]] him yesterday' → 'I saw him yesterday'). 'have saw' is the card's mistake type ('She has [[went]] home'), so it stays."
+ },
+ {
+  "id": "r21b-1-010",
+  "decision": "keep",
+  "why": "'yesterday' is the time word that makes the past simple necessary, as the card's mistake 'I have seen him yesterday' shows; this is the point of the task, not a giveaway."
+ },
+ {
+  "id": "r21b-1-011",
+  "decision": "keep",
+  "why": "'have been work' is the card's own mistake ('She has been [[work]] all day'); 'have working' is a believable missing-been form and 'had been working' is wrong with 'I'm still at my desk'."
+ },
+ {
+  "id": "r21b-1-013",
+  "decision": "keep",
+  "why": "Fixed in r21 (dropped 'She has run'). 'She is running' is the believable mistake the explanation answers; ease alone is no reason to change it."
+ },
+ {
+  "id": "r21b-1-014",
+  "decision": "fix",
+  "why": "Both readers: 'were playing', 'played' and 'have played' are also correct English for a just-finished activity, and no gap context can rule out the past. Turned into a choice with card-only wrong options ('I [[am waiting]] for an hour' type: are playing, contradicted by 'washing their hands now'; 'She has been [[work]]' type: have been play), so only the form decides. The item's kind changes from gap to mcq (answers dropped).",
+  "fix": {
+   "kind": "mcq",
+   "q": "Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint.",
+   "correct": "have been playing",
+   "wrong": [
+    "are playing",
+    "have been play"
+   ],
+   "answers": null,
+   "why": "They have stopped (they are washing their hands now), but the floor shows what they were doing: *They have been playing with paint.* *Are playing* would mean they are still playing.",
+   "why_lv": "Viņi ir beiguši (tagad viņi mazgā rokas), bet grīda rāda, ko viņi darīja: *They have been playing with paint.* *Are playing* nozīmētu, ka viņi joprojām spēlējas."
+  }
+ },
+ {
+  "id": "r21b-1-015",
+  "decision": "keep",
+  "why": "Only a level flag; the card's own pattern ('When I got to the station, the train had left') at B1.2 with three wrong forms that are wrong here."
+ },
+ {
+  "id": "r21b-1-017",
+  "decision": "keep",
+  "why": "All three wrong options are the card's mistake types: 'I [[will to]] help you', a missing be ('She [[going to]] call you' → 'about to') and a missing to ('is about'); the card teaches '*be about to* = very soon'."
+ },
+ {
+  "id": "r21b-1-019",
+  "decision": "fix",
+  "why": "Readers: 'It's about to rain' is correct and is a card form ('*be about to*: the very near future'), but the first check wanted only going to; the second check takes 'Shall I' while its message named only I'll / I will. Both checks and messages aligned. 'It might rain' is rejected (not on the future card, and it says a possibility, not what you expect); 'It will rain' is rejected by the card and Murphy: with evidence now, going to ('Look at the clouds! It's going to rain').",
+  "fix": {
+   "must": [
+    [
+     "\\b(?:going\\s+to|about\\s+to)\\s+\\w+",
+     "Say what the clouds show with *going to* (or *about to*) + base verb.",
+     "Ko rāda mākoņi, saki ar *going to* (vai *about to*) + pamatforma."
+    ],
+    [
+     "\\b(i'll|i’ll|i will|shall i)\\b",
+     "Offer your umbrella with *I'll* (or *Shall I …?*).",
+     "Lietussargu piedāvā ar *I'll* (vai *Shall I …?*)."
+    ]
+   ]
+  }
+ },
+ {
+  "id": "r21b-1-020",
+  "decision": "keep",
+  "why": "Both wrong options are the card's mistakes ('English [[is speak]] here', 'These phones [[make]] in China'); the readers find no problem."
+ },
+ {
+  "id": "r21b-1-022",
+  "decision": "keep",
+  "why": "Readers only confirm the options; 'has being' is the card's watch line ('been, not being') and 'have been' the card's agreement mistake ('The problem [[have been]] solved')."
+ },
+ {
+  "id": "r21b-1-023",
+  "decision": "keep",
+  "why": "Reader 1 accepts it; 'The files check on Monday' is the active-for-passive mistake with the same verb, and the other two are the card's mistakes ('will announced', 'will be tell')."
+ },
+ {
+  "id": "r21b-1-024",
+  "decision": "keep",
+  "why": "Habitual would needs a past if-part ('If people didn't sleep, they would be grumpy'); with 'don't' it is the mixed form the card rules out ('If + present simple, present simple'). Already decided in r21."
+ },
+ {
+  "id": "r21b-1-025",
+  "decision": "fix",
+  "why": "Both readers: 'We won't finish on time if we start now' is a possible sentence (starting now is too late), so 'if' fits. New sentence where the condition clearly helps, so 'if' and 'when' give no sense and only 'unless' (card: 'unless = if … not') fits.",
+  "fix": {
+   "q": "Choose the correct option: We won't finish on time ___ someone helps us.",
+   "why": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= if nobody helps us).",
+   "why_lv": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= ja neviens mums nepalīdzēs)."
+  }
+ },
+ {
+  "id": "r21b-1-032",
+  "decision": "keep",
+  "why": "Both readers find the wrong options believable; both are the card's mistakes ('She asked [[do I like]] coffee', 'He asked where [[did I live]]')."
+ },
+ {
+  "id": "r21b-1-034",
+  "decision": "keep",
+  "why": "'told / asked + person + to' is the card's form ('Requests and orders: told / asked + person + (not) to + base verb'), so 'told' is right; 'told me wait' is the card's mistake ('He told me [[wait]]')."
+ },
+ {
+  "id": "r21b-1-035",
+  "decision": "keep",
+  "why": "Already practice only, which answers the ease flag; the wrong options are the card's mistakes."
+ },
+ {
+  "id": "r21b-1-036",
+  "decision": "keep",
+  "why": "Only level flags on the wording; one pairing only, the three card uses ('a decision now', 'an arrangement', 'what we can see now')."
+ },
+ {
+  "id": "r21b-1-037",
+  "decision": "keep",
+  "why": "Wording flags only; each meaning fits one sentence only, and if, unless and in case are all on the card ('signals: if, unless, as soon as, when, in case'). Not rewritten for taste."
+ },
+ {
+  "id": "r21b-1-038",
+  "decision": "keep",
+  "why": "Readers: the form is not named. That is the rule (3 November: 'Give the situation; the check looks for the form'; 21 November: situations instead of quoted questions), and the failed check names the polite start. Tested the checks: natural answers (Could you tell me / Do you know / I'd like to know / Would you mind checking + if / whether + statement order) pass; 'if is my scarf', 'if did you find', 'Do you know is my scarf…' fail."
+ },
+ {
+  "id": "r21b-1-039",
+  "decision": "fix",
+  "why": "The instruction held the answer: 'the website doesn't say when it begins' lets a learner copy 'when it begins' (21 November: the instruction never holds the answer). New situation without it. Checks tested: 'Could you tell me when starts the course?' (a typical wrong order) passed; a new check catches it, and 'on which date…' now passes check 2. Readers' 'form not named' is the rule (see 038).",
+  "fix": {
+   "q": "You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school.",
+   "must": [
+    [
+     "\\b(could|can|would) you (please )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bi (was )?wonder(ing)?\\b",
+     "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+     "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+     "Then a question word or *if*: *… when the next course starts*.",
+     "Tad jautājamais vārds vai *if*: *… when the next course starts*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
+     "After the question word the subject comes first, with no *do / does*: *when the course starts*, not *when does the course start*.",
+     "Pēc jautājamā vārda sākumā ir teikuma priekšmets, bez *do / does*: *when the course starts*, nevis *when does the course start*."
+    ],
+    [
+     "^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+     "Put the subject before the verb: *when the course starts*, not *when starts the course*.",
+     "Teikuma priekšmets ir pirms darbības vārda: *when the course starts*, nevis *when starts the course*."
+    ]
+   ],
+   "why": "A polite start, then *when* and the order of a statement, with no *does*: *Could you tell me when the next Italian course starts?*",
+   "why_lv": "Pieklājīgs sākums, tad *when* un vārdu secība kā apgalvojumā, bez *does*: *Could you tell me when the next Italian course starts?*"
+  }
+ },
+ {
+  "id": "r21b-1-040",
+  "decision": "fix",
+  "why": "'it still hasn't arrived' could be copied as '… why it still hasn't arrived' (21 November: the instruction never holds the answer); new situation without the statement. Checks tested: 'when arrives my printer' passed; a new check catches it. The readers' direct requests (Could you check my order?) are the rule's case (see 038).",
+  "fix": {
+   "q": "You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service.",
+   "must": [
+    [
+     "\\b(could|can|would) you (please )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bi (was )?wonder(ing)?\\b",
+     "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+     "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+     "Then *if* (or *whether*) or a question word: *… if you have sent my order*, *… when my printer will arrive*.",
+     "Tad *if* (vai *whether*) vai jautājamais vārds: *… if you have sent my order*, *… when my printer will arrive*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
+     "After *if* or the question word the subject comes first, with no *did*: *if you sent my order*, *when my printer will arrive*.",
+     "Pēc *if* vai jautājamā vārda sākumā ir teikuma priekšmets, bez *did*: *if you sent my order*, *when my printer will arrive*."
+    ],
+    [
+     "^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+     "Put the subject before the verb: *when my printer arrives*, not *when arrives my printer*.",
+     "Teikuma priekšmets ir pirms darbības vārda: *when my printer arrives*, nevis *when arrives my printer*."
+    ]
+   ],
+   "why": "A polite start, then *if* and the order of a statement: *Could you tell me if you have sent my order yet?* With *did* in the direct question, the verb itself is in the past: *if you sent my order*.",
+   "why_lv": "Pieklājīgs sākums, tad *if* un vārdu secība kā apgalvojumā: *Could you tell me if you have sent my order yet?* Ja tiešajā jautājumā ir *did*, pagātni rāda darbības vārds: *if you sent my order*."
+  }
+ },
+ {
+  "id": "r21b-1-041",
+  "decision": "keep",
+  "why": "Reader 1 confirms 'the Riga' is a believable mistake; card: 'most countries and cities || Latvia, Riga' (no article)."
+ },
+ {
+  "id": "r21b-1-042",
+  "decision": "keep",
+  "why": "'would go' with a real present if-part is the mixed form the card rules out ('If + present simple, present simple'); it is wrong, not only unnatural."
+ },
+ {
+  "id": "r21b-1-043",
+  "decision": "keep",
+  "why": "Only a level flag; 'will drink' after if is the card's mistake ('If you [[will heat]] ice')."
+ },
+ {
+  "id": "r21b-1-044",
+  "decision": "keep",
+  "why": "The wrong sentence is the card's mistake ('If you [[will heat]] ice, it melts') and the three right sentences are about three different things; the near-copy is fixed in 045."
+ },
+ {
+  "id": "r21b-1-045",
+  "decision": "fix",
+  "why": "Reader 1: a near-copy of 044 (same 'If … will get …' frame, and a battery sentence as in 044), against the one-frame rule (4 November). Now the card's other mistake ('If you heat ice, it [[melt]]') and a right sentence of another setting.",
+  "fix": {
+   "correct": "If metal gets hot, it expand.",
+   "wrong": [
+    "When I travel by bus, I always feel sick.",
+    "If you don't save your work, you lose it.",
+    "Whenever my neighbour plays music, my dog barks."
+   ],
+   "why": "In a general truth both parts use the present simple, and after *it* the verb takes *-s*: *If metal gets hot, it expands.*",
+   "why_lv": "Vispārīgā patiesībā abās daļās lieto Present Simple, un pēc *it* darbības vārdam ir galotne *-s*: *If metal gets hot, it expands.*"
+  }
+ },
+ {
+  "id": "r21b-1-046",
+  "decision": "keep",
+  "why": "'They won't let you in if you show your ticket' makes no sense here, so 'if' does not fit; 'unless' is the card's 'if … not'. All options are card words ('if, unless, as soon as, when')."
+ },
+ {
+  "id": "r21b-1-050",
+  "decision": "fix",
+  "why": "Reader 2: 'If I went, I would meet her' does not say 'I'm not going'; it is an unlikely future. The card is changed to what the sentence means, still not swappable with the other two.",
+  "fix": {
+   "pairs": [
+    [
+     "If I had gone, I would have met her.",
+     "I didn't go."
+    ],
+    [
+     "If I hadn't gone, I wouldn't have met her.",
+     "I went."
+    ],
+    [
+     "If I went, I would meet her.",
+     "I probably won't go."
+    ]
+   ],
+   "why": "*If I had gone*: I didn't go. *If I hadn't gone*: I went. *If I went, I would meet her*: an unlikely future, so I probably won't go.",
+   "why_lv": "*If I had gone*: es negāju. *If I hadn't gone*: es gāju. *If I went, I would meet her*: maz ticama nākotne, tātad es visticamāk neiešu."
+  }
+ }
+]

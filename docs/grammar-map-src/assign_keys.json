@@ -17678,5 +17678,61 @@
 "rep_questions | B1.2 | match | Match each sentence with its report. | 'Please sit down.' = She asked me to sit down. ; 'Don't touch the screen.' = She told me not to touch the screen. ; 'Are you free on Friday?' = She asked me if I was free on Friday. ; 'What time does the train leave?' = She asked me what time the train left.": [
 "rep_orders",
 "read"
+],
+"present_perfect_continuous | B1.2 | mcq | Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint. | have been playing": [
+"ppc_result",
+"read"
+],
+"cond_first | B1.1 | mcq | Choose the correct option: We won't finish on time ___ someone helps us. | unless": [
+"c1_unless",
+"read"
+],
+"ind_polite | B1.1 | write | You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school. | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.2 | write | You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service. | ": [
+"iq_yn",
+"read"
+],
+"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If metal gets hot, it expand.": [
+"c0",
+"read"
+],
+"cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I probably won't go.": [
+"c3",
+"read"
+],
+"adverbs | B1.2 | mcq | Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again. | enough": [
+"too_to",
+"read"
+],
+"indefinite_pronouns | B1.1 | order | Put the words in order to make a question. | would you like something to eat before we leave": [
+"some_offers",
+"read"
+],
+"past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *This factory*: The company built this factory in 1990. | ": [
+"pas_act",
+"read"
+],
+"present_perfect | B1.1 | mcq | Choose the correct option: My parents have had the same family doctor ___ twenty years. | for": [
+"pp_for_since",
+"read"
+],
+"future_passive | B1.2 | text | Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday. | ": [
+"pas_will",
+"rule"
+],
+"narrative | B1.1 | gap | Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish) | ": [
+"pastp_by",
+"read"
+],
+"present_simple | B1.1 | mcq | Choose the correct option: I ___ what you mean, but I don't agree with you. | know": [
+"ps_form",
+"read"
+],
+"cond_zero | B1.1 | mcq | Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl. | plays": [
+"c0",
+"read"
 ]
 }

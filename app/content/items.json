@@ -310,17 +310,15 @@
 "level": "B1.1",
 "bloom": 2,
 "kind": "mcq",
-"q": "Water ___ at 100 degrees Celsius.",
-"correct": "boils",
+"q": "Choose the correct option: I ___ what you mean, but I don't agree with you.",
+"correct": "know",
 "wrong": [
-"boil",
-"boiling",
-"is boil"
+"am knowing",
+"knows"
 ],
-"why": "A general fact: present simple, *-s* after *he / she / it*: *Water boils at 100 °C.*",
+"why": "*Know* is a state verb: it stays simple even about this moment: *I know what you mean.*",
 "wrong_why": {},
-"why_lv": "Vispārīgs fakts: Present Simple, aiz *he / she / it* galotne *-s*: *Water boils at 100 °C.*",
-"remove": true
+"why_lv": "*Know* apzīmē stāvokli, tāpēc paliek vienkāršajā formā arī par šo brīdi: *I know what you mean.*"
 },
 {
 "id": "ps-B11-3a-r3",
@@ -2174,17 +2172,17 @@
 "skill": "present_perfect_continuous",
 "level": "B1.2",
 "bloom": 3,
-"kind": "gap",
-"q": "The children are washing their hands now. Look at the floor! They ___ with paint. (play)",
-"answers": [
-[
-"have been playing",
-"'ve been playing"
-]
-],
-"why": "They have stopped, but the floor shows what they were doing: *They have been playing with paint.*",
+"kind": "mcq",
+"q": "Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint.",
+"answers": null,
+"why": "They have stopped (they are washing their hands now), but the floor shows what they were doing: *They have been playing with paint.* *Are playing* would mean they are still playing.",
 "hints": [],
-"why_lv": "Viņi ir beiguši, bet grīda rāda, ko viņi darīja: *They have been playing with paint.*"
+"why_lv": "Viņi ir beiguši (tagad viņi mazgā rokas), bet grīda rāda, ko viņi darīja: *They have been playing with paint.* *Are playing* nozīmētu, ka viņi joprojām spēlējas.",
+"correct": "have been playing",
+"wrong": [
+"are playing",
+"have been play"
+]
 },
 {
 "id": "ppc-B12-3b",
@@ -2952,14 +2950,14 @@
 "q": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
 "must": [
 [
-"\\bgoing\\s+to\\s+\\w+",
-"Use *going to* + base verb in the prediction.",
-"Prognozē lieto *going to* + pamatforma."
+"\\b(?:going\\s+to|about\\s+to)\\s+\\w+",
+"Say what the clouds show with *going to* (or *about to*) + base verb.",
+"Ko rāda mākoņi, saki ar *going to* (vai *about to*) + pamatforma."
 ],
 [
-"\\b(i'll|i will|shall i)\\b",
-"Use *I'll* or *I will* for the offer.",
-"Piedāvājumam lieto *I'll* vai *I will.*"
+"\\b(i'll|i’ll|i will|shall i)\\b",
+"Offer your umbrella with *I'll* (or *Shall I …?*).",
+"Lietussargu piedāvā ar *I'll* (vai *Shall I …?*)."
 ]
 ],
 "model": "It is going to rain. I'll lend you my umbrella.",
@@ -4506,17 +4504,15 @@
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Which word can replace 'if' here? 'If it rains, the street floods.'",
-"correct": "whenever",
+"q": "Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl.",
+"correct": "plays",
 "wrong": [
-"unless",
-"although",
-"because"
+"will play",
+"play"
 ],
-"why": "In a zero conditional, *when* or *whenever* means the same as *if*: it is always true.",
+"why": "A sentence about what always happens: the *every time* part has the present simple, never *will*: *Every time my neighbour plays the piano, my dog starts to howl.*",
 "wrong_why": {},
-"why_lv": "Zero conditional *when* vai *whenever* nozīmē to pašu, ko *if*: tas ir vienmēr patiesi.",
-"remove": true
+"why_lv": "Teikums par to, kas notiek vienmēr: *every time* daļā lieto Present Simple, nekad *will*: *Every time my neighbour plays the piano, my dog starts to howl.*"
 },
 {
 "id": "cz-B11-2a-r3",
@@ -4786,15 +4782,15 @@
 "level": "B1.1",
 "bloom": 1,
 "kind": "mcq",
-"q": "Choose the correct option: We won't finish on time ___ we start now.",
+"q": "Choose the correct option: We won't finish on time ___ someone helps us.",
 "correct": "unless",
 "wrong": [
 "if",
 "when"
 ],
-"why": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= if we don't start now).",
+"why": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= if nobody helps us).",
 "wrong_why": {},
-"why_lv": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= ja nesāksim tūlīt)."
+"why_lv": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= ja neviens mums nepalīdzēs)."
 },
 {
 "id": "cf-B11-2a",
@@ -9525,7 +9521,7 @@
 "level": "B1.1",
 "bloom": 6,
 "kind": "write",
-"q": "You want to join an evening Italian course at a language school, but the website doesn't say when it begins. Write one polite question to the school.",
+"q": "You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school.",
 "why": "A polite start, then *when* and the order of a statement, with no *does*: *Could you tell me when the next Italian course starts?*",
 "must": [
 [
@@ -9534,7 +9530,7 @@
 "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
 ],
 [
-"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?(if|whether|when|what|where|why|how|who|which)\\b",
+"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
 "Then a question word or *if*: *… when the next course starts*.",
 "Tad jautājamais vārds vai *if*: *… when the next course starts*."
 ],
@@ -9542,6 +9538,11 @@
 "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
 "After the question word the subject comes first, with no *do / does*: *when the course starts*, not *when does the course start*.",
 "Pēc jautājamā vārda sākumā ir teikuma priekšmets, bez *do / does*: *when the course starts*, nevis *when does the course start*."
+],
+[
+"^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+"Put the subject before the verb: *when the course starts*, not *when starts the course*.",
+"Teikuma priekšmets ir pirms darbības vārda: *when the course starts*, nevis *when starts the course*."
 ]
 ],
 "model": "Could you tell me when the next Italian course starts?",
@@ -9553,7 +9554,7 @@
 "level": "B1.2",
 "bloom": 6,
 "kind": "write",
-"q": "You ordered a printer online ten days ago, but it still hasn't arrived. Write one polite question to the shop's customer service.",
+"q": "You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service.",
 "why": "A polite start, then *if* and the order of a statement: *Could you tell me if you have sent my order yet?* With *did* in the direct question, the verb itself is in the past: *if you sent my order*.",
 "must": [
 [
@@ -9562,7 +9563,7 @@
 "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
 ],
 [
-"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?(if|whether|when|what|where|why|how|who|which)\\b",
+"\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
 "Then *if* (or *whether*) or a question word: *… if you have sent my order*, *… when my printer will arrive*.",
 "Tad *if* (vai *whether*) vai jautājamais vārds: *… if you have sent my order*, *… when my printer will arrive*."
 ],
@@ -9570,6 +9571,11 @@
 "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
 "After *if* or the question word the subject comes first, with no *did*: *if you sent my order*, *when my printer will arrive*.",
 "Pēc *if* vai jautājamā vārda sākumā ir teikuma priekšmets, bez *did*: *if you sent my order*, *when my printer will arrive*."
+],
+[
+"^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+"Put the subject before the verb: *when my printer arrives*, not *when arrives my printer*.",
+"Teikuma priekšmets ir pirms darbības vārda: *when my printer arrives*, nevis *when arrives my printer*."
 ]
 ],
 "model": "Could you tell me if you have sent my order yet?",

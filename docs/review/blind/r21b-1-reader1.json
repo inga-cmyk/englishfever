@@ -1,0 +1,570 @@
+[
+{
+"id": "r21b-1-001",
+"answer": "I want a coffee.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for B1.1 (stative verb, basic A2 level).",
+"sense_problem": "'I am want a coffee.' is a random string, not a believable learner mistake. Note 'I'm wanting' is used informally but is wrong here."
+},
+{
+"id": "r21b-1-002",
+"answer": "I'm living with my parents.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Both sound the same' and 'Both sound permanent' are filler distractors."
+},
+{
+"id": "r21b-1-003",
+"answer": "opened",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Yesterday' gives the tense away.",
+"level_problem": "A2-level (simple past with 'Yesterday').",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-004",
+"answer": [
+"didn't see"
+],
+"other_correct": [
+[
+"did not see"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-005",
+"answer": "was walking",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B1.1.",
+"sense_problem": "'was walk' is a believable error; fine."
+},
+{
+"id": "r21b-1-006",
+"answer": "We are going to stay longer last summer, but the hotel was full.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-007",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy; 'already' is a filler distractor.",
+"sense_problem": "'already' is a word of another kind, not a believable mistake."
+},
+{
+"id": "r21b-1-008",
+"answer": "We have visited Rome in 2019.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-009",
+"answer": "saw",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'last night' gives the answer away.",
+"level_problem": "'have saw' is not a believable error at B1.2.",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-010",
+"answer": "sent",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'yesterday' gives it away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-011",
+"answer": "have been working",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'have working' and 'have been work' are weak distractors."
+},
+{
+"id": "r21b-1-012",
+"answer": "I started an hour ago and I'm still waiting.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-013",
+"answer": "She has been running.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'isn't running now' plus 'out of breath' is fine, but 'She is running' is excluded by the text; easy.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-014",
+"answer": [
+"have been playing"
+],
+"other_correct": [
+[
+"'ve been playing"
+],
+[
+"have played"
+],
+[
+"were playing"
+],
+[
+"had been playing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open to several tenses; 'have played' and 'were playing' fit the context (less natural). Contraction 've allowed?",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-015",
+"answer": "had ... left",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'already' + the given times make this easy.",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-016",
+"answer": "When I arrived, she already has left.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-017",
+"answer": "is about to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'will to' and 'about to' are not believable mistakes; 'is about' is."
+},
+{
+"id": "r21b-1-018",
+"answer": "My sister going to start a new job next month.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-019",
+"answer": "It's going to rain. Take my umbrella / I'll lend you mine.",
+"other_correct": [
+[
+"It will rain soon. Would you like to borrow my umbrella?"
+],
+[
+"It's going to rain. I'll lend you my umbrella."
+],
+[
+"It is going to rain. Here, take my umbrella."
+],
+[
+"I think it will rain. Do you want my umbrella?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine, but 'expect' could also be answered with 'might' or 'is about to': unclear which forms the app accepts.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-020",
+"answer": "are sent",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'send' is a believable error; 'are send' is fine."
+},
+{
+"id": "r21b-1-021",
+"answer": "is being built",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-022",
+"answer": "The project has been finished.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'has being' and 'have been' are believable."
+},
+{
+"id": "r21b-1-023",
+"answer": "The files will be checked on Monday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'The files check on Monday.' is unnatural as a learner error but acceptable."
+},
+{
+"id": "r21b-1-024",
+"answer": "If people don't sleep enough, they would be grumpy.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-025",
+"answer": "unless",
+"other_correct": "",
+"wrong_options_that_fit": "'if' is grammatical (We won't finish on time if we start now = starting now is too late), so it fits unless context excludes it.",
+"instruction_problem": "Only 'unless' is logical, but 'if' also gives a possible sentence.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-026",
+"answer": "forgets",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-027",
+"answer": "If I will win the lottery, I would buy an island.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-028",
+"answer": "If I would have more free time, I would join a choir.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-029",
+"answer": "We didn't book early.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-030",
+"answer": "If I would have seen the message, I would have replied.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-031",
+"answer": "She said me that the meeting was cancelled.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-032",
+"answer": "He asked me if I liked jazz.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Wrong options are believable."
+},
+{
+"id": "r21b-1-033",
+"answer": "The receptionist asked me how long would I stay.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-034",
+"answer": "The guard told me to wait there.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'asked' would be more accurate for 'please' but 'told' is acceptable.",
+"level_problem": "",
+"sense_problem": "'told me waiting' / 'told me wait' are weak."
+},
+{
+"id": "r21b-1-035",
+"answer": "Could you tell me when the next train leaves?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-036",
+"answer": [
+[
+"You decide now to help a colleague with a heavy bag.",
+"I'll carry that for you."
+],
+[
+"You describe a confirmed appointment for tomorrow.",
+"I'm seeing the dentist at ten."
+],
+[
+"You predict rain because you can see dark clouds.",
+"It's going to rain."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Left sentences are long/abstract for B1.1 ('confirmed appointment').",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-037",
+"answer": [
+[
+"If you help me, I'll buy you lunch.",
+"A promise depending on your help."
+],
+[
+"We won't start unless everyone is here.",
+"Everyone being present is necessary for us to start."
+],
+[
+"I'll take water in case the shop is closed.",
+"A precaution against a possible problem."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Meaning descriptions are abstract and wordy for B1.1 (the learner must parse 'depending', 'precaution').",
+"sense_problem": "The 'promise' meaning could also fit 'in case' loosely, but not really."
+},
+{
+"id": "r21b-1-038",
+"answer": "Could you tell me if you found a scarf?",
+"other_correct": [
+[
+"Did anyone find a scarf last night?"
+],
+[
+"Have you found a scarf?"
+],
+[
+"Do you know if anyone found a scarf?"
+],
+[
+"Can you tell me whether you have found a scarf?"
+],
+[
+"Could you check if there is a scarf, please?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which form is wanted; many questions are polite. Nothing says 'indirect question'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-039",
+"answer": "Could you tell me when the course begins?",
+"other_correct": [
+[
+"Can you tell me when the course starts?"
+],
+[
+"Do you know when the course begins?"
+],
+[
+"Could you tell me when the Italian course starts?"
+],
+[
+"When does the course begin, please?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-040",
+"answer": "Could you tell me when my printer will arrive?",
+"other_correct": [
+[
+"Could you tell me why my printer hasn't arrived yet?"
+],
+[
+"Can you tell me where my printer is?"
+],
+[
+"Could you tell me if the printer has been sent?"
+],
+[
+"Do you know when it will arrive?"
+],
+[
+"Has my printer been sent yet?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-041",
+"answer": "We visited the Riga last summer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'the Riga' is a believable error for article-less L1s."
+},
+{
+"id": "r21b-1-042",
+"answer": "goes",
+"other_correct": "",
+"wrong_options_that_fit": "'would go' is grammatical but unnatural (a general truth, not hypothetical).",
+"instruction_problem": "",
+"level_problem": "Easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-043",
+"answer": "drink",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy.",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-044",
+"answer": "If the battery will get low, the screen goes dark.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 045 and 047 (will after if)."
+},
+{
+"id": "r21b-1-045",
+"answer": "If metal will get hot, it expands.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 044."
+},
+{
+"id": "r21b-1-046",
+"answer": "unless",
+"other_correct": "",
+"wrong_options_that_fit": "'if' is grammatical but illogical here.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-047",
+"answer": "If the train will be late, I'll take a taxi.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-048",
+"answer": "If I would know, I would tell you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-049",
+"answer": "If she had more money, she will buy it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-1-050",
+"answer": [
+[
+"If I had gone, I would have met her.",
+"I didn't go."
+],
+[
+"If I hadn't gone, I wouldn't have met her.",
+"I went."
+],
+[
+"If I went, I would meet her.",
+"I'm not going."
+]
+],
+"other_correct": "'If I went, I would meet her' could also mean a hypothetical future (I might go), so 'I'm not going' is slightly ambiguous.",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

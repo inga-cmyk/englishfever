@@ -1,0 +1,286 @@
+{
+ "b1-cond-rep-1.csv": [
+  {
+   "id": "r21b-1-045",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If metal will get hot, it expands."
+   ],
+   "set": {
+    "4": "If metal gets hot, it expand.",
+    "5": "When I travel by bus, I always feel sick. | If you don't save your work, you lose it. | Whenever my neighbour plays music, my dog barks.",
+    "6": "In a general truth both parts use the present simple, and after *it* the verb takes *-s*: *If metal gets hot, it expands.*",
+    "7": "Vispārīgā patiesībā abās daļās lieto Present Simple, un pēc *it* darbības vārdam ir galotne *-s*: *If metal gets hot, it expands.*",
+    "9": "If metal will get hot, it expands."
+   }
+  },
+  {
+   "id": "r21b-1-050",
+   "match": [
+    "match",
+    "Match each sentence with its meaning.",
+    "If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I'm not going."
+   ],
+   "set": {
+    "4": "If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I probably won't go.",
+    "6": "*If I had gone*: I didn't go. *If I hadn't gone*: I went. *If I went, I would meet her*: an unlikely future, so I probably won't go.",
+    "7": "*If I had gone*: es negāju. *If I hadn't gone*: es gāju. *If I went, I would meet her*: maz ticama nākotne, tātad es visticamāk neiešu."
+   }
+  },
+  {
+   "id": "r21b-2-004",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he said he couldn't come because he was ill"
+   ],
+   "set": {
+    "4": "he said he couldn't come because he was ill",
+    "5": "also accepted: because he was ill he said he couldn't come | he said he was ill because he couldn't come"
+   }
+  },
+  {
+   "id": "r21b-2-005",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "My boss told that the meeting was cancelled."
+   ],
+   "set": {
+    "5": "She said that she was tired. | He told me he would call later. | They said they had missed the last train."
+   }
+  }
+ ],
+ "b1-new-1.csv": [
+  {
+   "id": "r21b-2-012",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "when i was a child we used to visit my grandparents every sunday"
+   ],
+   "set": {
+    "4": "when i was a child we used to visit my grandparents every sunday",
+    "5": "also accepted: we used to visit my grandparents every sunday when i was a child | every sunday we used to visit my grandparents when i was a child | when i was a child every sunday we used to visit my grandparents | every sunday when i was a child we used to visit my grandparents"
+   }
+  }
+ ],
+ "b1-new-3.csv": [
+  {
+   "id": "r21b-2-028",
+   "match": [
+    "text",
+    "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+    "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it?"
+   ],
+   "set": {
+    "4": "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it? | What made that loud bang? | What made the loud bang? | What made that loud noise? | What made the loud noise? | What made that noise in the kitchen? | What made the noise in the kitchen? | What made that bang in the kitchen? | What made the bang in the kitchen?"
+   }
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "id": "r21b-2-034",
+   "match": [
+    "text",
+    "Start with *The accident*: Someone could have avoided the accident.",
+    "The accident could have been avoided. | The accident could have been avoided by someone. | The accident could've been avoided. | The accident could've been avoided by someone."
+   ],
+   "set": {
+    "4": "The accident could have been avoided. | The accident could have been avoided by someone. | The accident could've been avoided. | The accident could've been avoided by someone. | The accident could have been avoided by somebody. | The accident could've been avoided by somebody."
+   }
+  }
+ ],
+ "b1-new-5.csv": [
+  {
+   "id": "r21b-2-046",
+   "match": [
+    "mcq",
+    "Choose the correct option: The soup wasn't hot ___ to eat.",
+    "enough"
+   ],
+   "set": {
+    "3": "Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again.",
+    "6": "*enough* comes after the adjective: *The soup wasn't hot enough to eat, so I heated it up again.* *too, very, quite* go before the adjective, and *wasn't too hot to eat* would mean it was fine to eat, so you would not heat it again.",
+    "7": "*enough* ir aiz īpašības vārda: *The soup wasn't hot enough to eat, so I heated it up again.* *too, very, quite* ir pirms īpašības vārda, un *wasn't too hot to eat* nozīmētu, ka zupu varēja ēst, tāpēc to nesildītu vēlreiz."
+   }
+  },
+  {
+   "id": "r21b-3-006",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "would you like something to drink"
+   ],
+   "set": {
+    "3": "Put the words in order to make a question.",
+    "4": "would you like something to eat before we leave",
+    "5": "also accepted: before we leave would you like something to eat | would you like to eat something before we leave | before we leave would you like to eat something",
+    "6": "In an offer we use *some-*, not *any-*: *Would you like something to eat before we leave?*",
+    "7": "Piedāvājumā lieto *some*-, nevis *any*-: *Would you like something to eat before we leave?*",
+    "9": "would you like something to drink"
+   }
+  }
+ ],
+ "b1-passives-1.csv": [
+  {
+   "id": "r21b-3-010",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the bridge was built in 1932 and it is still used today"
+   ],
+   "set": {
+    "4": "the bridge was built in 1932 and it is still used today",
+    "5": "also accepted: the bridge was built in 1932 and today it is still used | in 1932 the bridge was built and it is still used today | the bridge is still used today and it was built in 1932 | today the bridge is still used and it was built in 1932"
+   }
+  },
+  {
+   "id": "r21b-3-011",
+   "match": [
+    "text",
+    "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+    "My laptop was stolen yesterday. | My laptop was stolen by someone yesterday. | Yesterday my laptop was stolen. | Yesterday my laptop was stolen by someone. | My laptop got stolen yesterday. | Yesterday my laptop got stolen."
+   ],
+   "set": {
+    "4": "My laptop was stolen yesterday. | My laptop was stolen by someone yesterday. | Yesterday my laptop was stolen. | Yesterday my laptop was stolen by someone. | My laptop got stolen yesterday. | Yesterday my laptop got stolen. | My laptop was stolen yesterday by someone."
+   }
+  },
+  {
+   "id": "r21b-3-012",
+   "match": [
+    "text",
+    "Start with *This factory*: The company built this factory in 1990.",
+    "This factory was built by the company in 1990. | This factory was built in 1990. | In 1990 this factory was built by the company. | In 1990 this factory was built. | This factory was built in 1990 by the company."
+   ],
+   "set": {
+    "3": "Rewrite the sentence. Start with *This factory*: The company built this factory in 1990.",
+    "6": "*This factory* did not do the building, so we use *was* + 3rd form: *This factory was built (by the company) in 1990.*",
+    "7": "Rūpnīca pati neko necēla, tāpēc lieto *was* + 3. forma: *This factory was built (by the company) in 1990.*"
+   }
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "id": "r21b-3-022",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "does your brother still work for the same company"
+   ],
+   "set": {
+    "4": "does your brother still work for the same company",
+    "5": "also accepted: does your brother work for the same company still | your brother does still work for the same company"
+   }
+  },
+  {
+   "id": "r21b-3-029",
+   "match": [
+    "gap",
+    "Anna ___ for a new flat at the moment because her rent is too high.",
+    "is looking"
+   ],
+   "set": {
+    "5": "bank: is looking | looks | looking"
+   }
+  }
+ ],
+ "b1-tenses-2.csv": [
+  {
+   "id": "r21b-3-040",
+   "match": [
+    "text",
+    "Rewrite with *since*: I started learning English in 2019, and I'm still learning it.",
+    "I have been learning English since 2019. | I have learned English since 2019. | I have learnt English since 2019."
+   ],
+   "set": {
+    "4": "I have been learning English since 2019. | I have learned English since 2019. | I have learnt English since 2019. | Since 2019 I've been learning English. | Since 2019 I have been learning English. | I've been learning it since 2019."
+   }
+  },
+  {
+   "id": "r21b-3-041",
+   "match": [
+    "text",
+    "Make it negative: We have visited that museum.",
+    "We haven't visited that museum. | We have not visited that museum. | We have never visited that museum."
+   ],
+   "set": {
+    "4": "We haven't visited that museum. | We have not visited that museum. | We have never visited that museum. | We haven't visited that museum yet."
+   }
+  },
+  {
+   "id": "r21b-3-042",
+   "match": [
+    "mcq",
+    "Choose the correct option: She has worked here ___ 2019.",
+    "since"
+   ],
+   "set": {
+    "3": "Choose the correct option: My parents have had the same family doctor ___ twenty years.",
+    "4": "for",
+    "5": "since | already",
+    "6": "*for* + a period of time: *My parents have had the same family doctor for twenty years.* *since* needs a starting point (*since 2005*), and *already* does not go before a period of time.",
+    "7": "*for* + laika posms: *My parents have had the same family doctor for twenty years.* *since* vajag sākuma brīdi (*since 2005*), bet *already* nelieto pirms laika posma."
+   }
+  }
+ ],
+ "b1-upgrades-1.csv": [
+  {
+   "id": "r21b-4-012",
+   "match": [
+    "gap",
+    "Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+    "is made / is sent | sent"
+   ],
+   "set": {
+    "4": "is made | gets made / is sent | sent | gets sent"
+   }
+  },
+  {
+   "id": "r21b-4-015",
+   "match": [
+    "text",
+    "Start with *The winner*: They will announce the winner on Friday.",
+    "The winner will be announced on Friday. | On friday the winner will be announced. | The winner will be announced by them on Friday."
+   ],
+   "set": {
+    "3": "Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday.",
+    "4": "The winner will be announced on Friday. | On Friday the winner will be announced. | The winner will be announced by them on Friday.",
+    "6": "Who announces it is not important, so *will be* + 3rd form: *The winner will be announced on Friday.*",
+    "7": "Nav svarīgi, kas to paziņos, tāpēc *will be* + 3. forma: *The winner will be announced on Friday.*"
+   }
+  }
+ ],
+ "compare-past-1.csv": [
+  {
+   "id": "r21b-4-018",
+   "match": [
+    "gap",
+    "Kate ___ TV a lot when she was ill last year. (watch)",
+    "watched | was watching | would watch"
+   ],
+   "set": {
+    "3": "My brother ___ a lot of books when he was off work with a broken leg last winter. (read)",
+    "4": "read | was reading | would read | used to read",
+    "6": "*Read* (past simple) sums up the whole time off work: *My brother read a lot of books when he was off work with a broken leg last winter.* *Was reading* describes a repeated activity during that time; both fit.",
+    "7": "*Read* (Past Simple) apkopo visu laiku, kad viņš nestrādāja: *My brother read a lot of books when he was off work with a broken leg last winter.* *Was reading* apraksta atkārtotu darbību šajā laikā; der abi varianti.",
+    "13": "w :: a :: s ::   :: r :: e :: a :: d :: i :: n :: g || T :: h :: i :: s ::   :: d :: e :: s :: c :: r :: i :: b :: e :: s ::   :: a ::   :: r :: e :: p :: e :: a :: t :: e :: d ::   :: a :: c :: t :: i :: v :: i :: t :: y ::   :: d :: u :: r :: i :: n :: g ::   :: t :: h :: e ::   :: t :: i :: m :: e ::   :: h :: e ::   :: w :: a :: s ::   :: o :: f :: f ::   :: w :: o :: r :: k :: . || T :: a :: s ::   :: a :: p :: r :: a :: k :: s :: t :: a ::   :: a :: t :: k :: ā :: r :: t :: o :: t :: u ::   :: d :: a :: r :: b :: ī :: b :: u ::   :: l :: a :: i :: k :: ā :: , ::   :: k :: a :: d ::   :: v :: i :: ņ :: š ::   :: n :: e :: s :: t :: r :: ā :: d :: ā :: j :: a :: . || w :: o :: u :: l :: d ::   :: r :: e :: a :: d || T :: h :: i :: s ::   :: s :: a :: y :: s ::   :: i :: t ::   :: w :: a :: s ::   :: h :: i :: s ::   :: h :: a :: b :: i :: t ::   :: d :: u :: r :: i :: n :: g ::   :: t :: h :: a :: t ::   :: t :: i :: m :: e :: . || T :: a :: s ::   :: n :: o :: z :: ī :: m :: ē :: , ::   :: k :: a ::   :: t :: a :: s ::   :: t :: o :: b :: r :: ī :: d ::   :: b :: i :: j :: a ::   :: v :: i :: ņ :: a ::   :: i :: e :: r :: a :: d :: u :: m :: s :: . || u :: s :: e :: d ::   :: t :: o ::   :: r :: e :: a :: d || T :: h :: i :: s ::   :: s :: a :: y :: s ::   :: i :: t ::   :: w :: a :: s ::   :: h :: i :: s ::   :: h :: a :: b :: i :: t ::   :: d :: u :: r :: i :: n :: g ::   :: t :: h :: a :: t ::   :: t :: i :: m :: e :: . || T :: a :: s ::   :: n :: o :: z :: ī :: m :: ē :: , ::   :: k :: a ::   :: t :: a :: s ::   :: t :: o :: b :: r :: ī :: d ::   :: b :: i :: j :: a ::   :: v :: i :: ņ :: a ::   :: i :: e :: r :: a :: d :: u :: m :: s :: ."
+   }
+  },
+  {
+   "id": "r21b-4-022",
+   "match": [
+    "gap",
+    "A: Was Tom there when you arrived? B: No, he ___. (already / leave)",
+    "had already left | had left already | 'd already left | 'd left already"
+   ],
+   "set": {
+    "3": "Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish)",
+    "4": "had already finished | 'd already finished",
+    "6": "Tom got to the café (past simple), and the eating was over before that: *had* + 3rd form: *they had already finished eating*.",
+    "7": "Toms ieradās kafejnīcā (Past Simple), un ēšana bija beigusies pirms tam: *had* + 3. forma: *they had already finished eating*."
+   }
+  }
+ ]
+}

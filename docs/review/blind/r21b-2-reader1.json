@@ -1,0 +1,550 @@
+[
+{
+"id": "r21b-2-001",
+"answer": "If she had knew about the party, she would have come.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-002",
+"answer": "If he had booked earlier, he wouldn't have pay so much.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-003",
+"answer": "they said they had already eaten",
+"other_correct": [
+"they said they had eaten already",
+"they had already eaten they said"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No context; fine, but 'they had already eaten, they said' is a reorder with a comma the cards lack.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-004",
+"answer": "he said he couldn't come because he was ill",
+"other_correct": [
+"he couldn't come because he was ill he said",
+"he said he was ill because he couldn't come",
+"he couldn't come because he said he was ill",
+"because he was ill he said he couldn't come",
+"because he was ill he couldn't come he said"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many valid orders but the instruction does not say more than one answer is possible; the three 'he' cards allow several meanings.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-005",
+"answer": "My boss told that the meeting was cancelled.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option A is the same sentence as task 003 (near-copy across tasks)."
+},
+{
+"id": "r21b-2-006",
+"answer": "They said they will come the next day.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-007",
+"answer": [
+"if I liked jazz"
+],
+"other_correct": [
+[
+"whether I liked jazz"
+],
+[
+"if I had liked jazz"
+],
+[
+"if I like jazz"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap holds a whole clause (several words) though the note says one gap; typed answers will vary (if/whether, 'jazz music'). 'if I like jazz' is not wrong in principle but 'years ago' calls for the past; do not accept it unless intended.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-008",
+"answer": [
+[
+"'Please sit down.'",
+"She asked me to sit down."
+],
+[
+"'Don't touch the screen.'",
+"She told me not to touch the screen."
+],
+[
+"'Are you free on Friday?'",
+"She asked me if I was free on Friday."
+],
+[
+"'What time does the train leave?'",
+"She asked me what time the train left."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-009",
+"answer": "She asked me where did I live.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-010",
+"answer": [
+"whether"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine, but 'if' is the usual word at this level and is not offered; only one card works so the task is easy.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-011",
+"answer": "she didn't use to enjoy cooking but now she loves it",
+"other_correct": [
+"she didn't use to enjoy cooking but she loves it now",
+"she loves cooking now but she didn't use to enjoy it",
+"now she loves cooking but she didn't use to enjoy it",
+"she didn't use to enjoy it but now she loves cooking",
+"she didn't use to enjoy it but she loves cooking now"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'used to' with didn't (use to) and two clauses are fine for B1.1 but the sentence is long (11 cards).",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-012",
+"answer": "when i was a child we used to visit my grandparents every sunday",
+"other_correct": [
+"we used to visit my grandparents every sunday when i was a child",
+"every sunday when i was a child we used to visit my grandparents",
+"when i was a child every sunday we used to visit my grandparents",
+"every sunday we used to visit my grandparents when i was a child"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several correct orders, but the instruction does not say more than one answer is possible. Cards 'i' and 'sunday' are lower case (capitalisation clue lost/confusing). 13 cards is long.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-013",
+"answer": "i am not used to getting up so early",
+"other_correct": [
+"i am not so used to getting up early",
+"i am so not used to getting up early"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction says more than one answer, ok; but 'used to' vs 'be used to' choice is signalled by 'am'. 'I am not used to getting up so early' only differs from the alternative by placing 'so'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-014",
+"answer": [
+"didn't have"
+],
+"other_correct": [
+[
+"did not have"
+],
+[
+"didn't use to have"
+],
+[
+"did not use to have"
+],
+[
+"hadn't"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(not / have)' gives the verb but not the tense; a learner could type ['didn't','have'] as separate gaps? only one gap. Past simple fits 'was a teenager' - fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-015",
+"answer": "Did you used to play chess?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Fine; common learner error."
+},
+{
+"id": "r21b-2-016",
+"answer": [
+"the"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-017",
+"answer": "My parents moved to the Canada last year.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-018",
+"answer": [
+"enough"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-019",
+"answer": "I have many time for hobbies.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-020",
+"answer": "The jacket which I ordered online it was too small.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-021",
+"answer": "Our new manager, that started in May, is from Spain.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-022",
+"answer": "My uncle, who is a chef, lives in Spain.",
+"other_correct": [
+"My uncle, who lives in Spain, is a chef.",
+"My uncle who is a chef lives in Spain.",
+"My uncle who lives in Spain is a chef."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Unclear which sentence to turn into the who-clause: both joinings are correct. Without commas the sentence implies other uncles (less natural). Needs 'use the second sentence as the who-clause' or one fixed answer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-023",
+"answer": "We'll start the meeting when everyone will be here.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-024",
+"answer": "Let's wait here until the rain will stop.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-025",
+"answer": "Your brother lives in Oslo, isn't he?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-026",
+"answer": "Who did called you last night?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-027",
+"answer": "Which colleague did suggested the new plan?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Same error pattern as task 026 (did + past form); repetitive."
+},
+{
+"id": "r21b-2-028",
+"answer": "What made that noise?",
+"other_correct": [
+"What made that bang?",
+"What made that loud bang?",
+"What made that loud noise?",
+"What made the noise?",
+"What made the bang?",
+"What made that noise in the kitchen?",
+"What was making that noise?",
+"What's making that noise?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open: the learner must guess the noun (noise/bang) and the use of 'make' = cause is not obvious; 'What was that noise?' would be the natural question without 'make'.",
+"level_problem": "'make' meaning cause in a question is above B1.1 for many learners.",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-029",
+"answer": "She promised helping me with the move.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-030",
+"answer": "She enjoys to cook for her friends.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-031",
+"answer": "Ask Tom. He might knows the answer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-032",
+"answer": "This medicine should taken after meals.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-033",
+"answer": "The shoes ought to taken off.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'ought to taken' (missing 'be') is a believable slip but rarer; 'should taken' in task 032 is the same error."
+},
+{
+"id": "r21b-2-034",
+"answer": "The accident could have been avoided.",
+"other_correct": [
+"The accident could have been avoided by someone.",
+"The accident could have been avoided by somebody.",
+"The accident could've been avoided."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Passive is not signalled; 'Start with The accident' is the only hint (acceptable), but the learner could write 'The accident could have been avoidable' etc.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-035",
+"answer": "We had the house paint last week.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-036",
+"answer": "I haven't had my eyes test yet.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-037",
+"answer": [
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of task 040 (to-card gap vs to-option)."
+},
+{
+"id": "r21b-2-038",
+"answer": "He explained me the problem.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-039",
+"answer": "He described me the house.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-040",
+"answer": "to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate pattern of task 037."
+},
+{
+"id": "r21b-2-041",
+"answer": "It was an amazing experience, and we were all amazed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Unusual: instruction asks which sentence is CORRECT while nearly all other tasks ask NOT correct (fine, but note the change).",
+"level_problem": "",
+"sense_problem": "Wrong options are believable."
+},
+{
+"id": "r21b-2-042",
+"answer": "I am really tiring after work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-043",
+"answer": "She wore a cotton white dress.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Tasks 043-045 test the same adjective-order rule three times."
+},
+{
+"id": "r21b-2-044",
+"answer": "She bought a leather black jacket.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-045",
+"answer": "We ate in an Italian small restaurant.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-046",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for B1.2 (only 'enough' with 'not ... to' is typical); 'too' fits only if the sentence were positive.",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-047",
+"answer": "He speaks Spanish fluent.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-048",
+"answer": [
+"such"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-2-049",
+"answer": [
+"so"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'such a' could be thought to fit ('such a kind [person]') but the sentence ends in 'kind' so it is wrong; fine."
+},
+{
+"id": "r21b-2-050",
+"answer": [
+"so"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

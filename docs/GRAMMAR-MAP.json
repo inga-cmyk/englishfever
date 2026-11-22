@@ -899,7 +899,7 @@
    "card": "yes",
    "tasks": {
     "check": 0,
-    "use": 3,
+    "use": 2,
     "learn": 6
    },
    "task_levels": [
@@ -1316,8 +1316,8 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 6,
-    "use": 3,
+    "check": 7,
+    "use": 2,
     "learn": 1
    },
    "task_levels": [
@@ -3341,9 +3341,9 @@
    ],
    "card": "yes",
    "tasks": {
-    "check": 64,
+    "check": 65,
     "use": 27,
-    "learn": 8
+    "learn": 7
    },
    "task_levels": [
     "A2.2",

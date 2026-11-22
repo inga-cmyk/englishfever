@@ -1,0 +1,1802 @@
+{
+ "r21b-3-001": {
+  "hash": "3b894ec1c62ececb",
+  "gate_key": "so_such | B1.2 | gap | He is ___ a good teacher. | ",
+  "src": "b1-new-5.csv:105",
+  "point": "so_such_basic",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "such"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1571",
+   "skill": "so_such",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He is ___ a good teacher.",
+   "why": "*so* + adjective / adverb. *such* + (*a*) + (adjective) + noun: *such a good teacher*. *so much / so many* + noun. Result: *so / such ... that*.",
+   "why_lv": "*so* + īpašības vārds / apstākļa vārds. *such* + (*a*) + (īpašības vārds) + lietvārds: *such a good teacher*. *so much / so many* + lietvārds. Sekas: *so / such* ... *that*.",
+   "answers": [
+    [
+     "such"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "such",
+    "so",
+    "so much"
+   ],
+   "role": "check",
+   "point": "so_such_basic",
+   "src": "b1-new-5.csv:105"
+  }
+ },
+ "r21b-3-002": {
+  "hash": "4181ec9bc1e0937f",
+  "gate_key": "so_such | B1.1 | mcq | Which sentence is NOT correct? | The new flat is such small.",
+  "src": "b1-new-5.csv:113",
+  "point": "so_such_basic",
+  "key": {
+   "kind": "mcq",
+   "correct": "The new flat is such small.",
+   "wrong": [
+    "It was such a long meeting that I missed lunch.",
+    "We had so much work last week.",
+    "He drives so fast!"
+   ]
+  },
+  "item": {
+   "id": "c-1579",
+   "skill": "so_such",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*so* + adjective: *The new flat is so small.* *such* needs a noun: *such a small flat*.",
+   "why_lv": "*so* + īpašības vārds: *The new flat is so small.* *such* lieto ar lietvārdu: *such a small flat*.",
+   "correct": "The new flat is such small.",
+   "wrong": [
+    "It was such a long meeting that I missed lunch.",
+    "We had so much work last week.",
+    "He drives so fast!"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "so_such_basic",
+   "src": "b1-new-5.csv:113"
+  }
+ },
+ "r21b-3-003": {
+  "hash": "de8188ad269eb757",
+  "gate_key": "so_such | B1.1 | mcq | Choose the correct option: The hotel staff were ___ friendly to us. | so",
+  "src": "b1-new-5.csv:115",
+  "point": "so_that",
+  "key": {
+   "kind": "mcq",
+   "correct": "so",
+   "wrong": [
+    "such",
+    "such a",
+    "so many"
+   ]
+  },
+  "item": {
+   "id": "c-1581",
+   "skill": "so_such",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The hotel staff were ___ friendly to us.",
+   "why": "*so* + adjective with no noun: *The hotel staff were so friendly to us.*",
+   "why_lv": "*so* + īpašības vārds bez lietvārda: *The hotel staff were so friendly to us.*",
+   "correct": "so",
+   "wrong": [
+    "such",
+    "such a",
+    "so many"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "so_that",
+   "src": "b1-new-5.csv:115"
+  }
+ },
+ "r21b-3-004": {
+  "hash": "b985d5fbcdc52ee3",
+  "gate_key": "so_such | B1.1 | mcq | Choose the correct option: It was ___ surprise to see him at the party. | such a",
+  "src": "b1-new-5.csv:116",
+  "point": "so_such_basic",
+  "key": {
+   "kind": "mcq",
+   "correct": "such a",
+   "wrong": [
+    "so",
+    "such",
+    "so a"
+   ]
+  },
+  "item": {
+   "id": "c-1582",
+   "skill": "so_such",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: It was ___ surprise to see him at the party.",
+   "why": "*such a* + singular noun: *It was such a surprise to see him at the party.*",
+   "why_lv": "*such a* + vienskaitļa lietvārds: *It was such a surprise to see him at the party.*",
+   "correct": "such a",
+   "wrong": [
+    "so",
+    "such",
+    "so a"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "so_such_basic",
+   "src": "b1-new-5.csv:116"
+  }
+ },
+ "r21b-3-005": {
+  "hash": "a7b6c8afb98c5762",
+  "gate_key": "so_such | B1.2 | mcq | Choose the correct option: He drove ___ fast that we were afraid. | so",
+  "src": "b1-new-5.csv:120",
+  "point": "so_that",
+  "key": {
+   "kind": "mcq",
+   "correct": "so",
+   "wrong": [
+    "such",
+    "such a",
+    "so much"
+   ]
+  },
+  "item": {
+   "id": "c-1586",
+   "skill": "so_such",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: He drove ___ fast that we were afraid.",
+   "why": "*so* + adjective / adverb: *so fast*. *such* + (*a*) + (adjective) + noun. *so much / so many* + noun. Result: *so fast that we were afraid*.",
+   "why_lv": "*so* + īpašības vārds / apstākļa vārds: *so fast*. *such* + (*a*) + (īpašības vārds) + lietvārds. *so much / so many* + lietvārds. Sekas: *so fast that we were afraid*.",
+   "correct": "so",
+   "wrong": [
+    "such",
+    "such a",
+    "so much"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "so_that",
+   "src": "b1-new-5.csv:120"
+  }
+ },
+ "r21b-3-006": {
+  "hash": "c65d69eed682d751",
+  "gate_key": "indefinite_pronouns | B1.1 | order | Put the words in order. | would you like something to drink",
+  "src": "b1-new-5.csv:136",
+  "point": "some_offers",
+  "key": {
+   "kind": "order",
+   "sentence": "would you like something to drink",
+   "also": [
+    "you would like something to drink",
+    "would you like to drink something"
+   ]
+  },
+  "item": {
+   "id": "c-1602",
+   "skill": "indefinite_pronouns",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*some-* (positive), *any-* (questions, negatives), *no-* (already negative, no *not*), *every-* (all). They take a singular verb.",
+   "why_lv": "*some*- (apgalvojumā), *any*- (jautājumā, noliegumā), no- (jau ir noliegums, bez *not*), *every*- (*visi*). Tiem seko vienskaitļa darbības vārds.",
+   "sentence": "would you like something to drink",
+   "answers": [
+    [
+     "would you like something to drink",
+     "you would like something to drink",
+     "would you like to drink something"
+    ]
+   ],
+   "role": "check",
+   "point": "some_offers",
+   "src": "b1-new-5.csv:136"
+  }
+ },
+ "r21b-3-007": {
+  "hash": "2cd4daf48df474bd",
+  "gate_key": "present_simple_passive | B1.1 | order | Put the words in order. | this software is used by millions of people",
+  "src": "b1-passives-1.csv:6",
+  "point": "pas_by",
+  "key": {
+   "kind": "order",
+   "sentence": "this software is used by millions of people",
+   "also": [
+    "this is software used by millions of people"
+   ]
+  },
+  "item": {
+   "id": "c-1645",
+   "skill": "present_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Passive: subject + *is / are* + 3. form (+ *by* ...).",
+   "why_lv": "Ciešamā kārta: teikuma priekšmets + *is / are* + 3. forma (+ *by* ...).",
+   "sentence": "this software is used by millions of people",
+   "answers": [
+    [
+     "this software is used by millions of people",
+     "this is software used by millions of people"
+    ]
+   ],
+   "role": "check",
+   "point": "pas_by",
+   "src": "b1-passives-1.csv:6"
+  }
+ },
+ "r21b-3-008": {
+  "hash": "fcdfa4d4b648a93b",
+  "gate_key": "present_simple_passive | B1.2 | mcq | Which sentence is NOT correct? | The machines is checked every day.",
+  "src": "b1-passives-1.csv:37",
+  "point": "pas_pres",
+  "key": {
+   "kind": "mcq",
+   "correct": "The machines is checked every day.",
+   "wrong": [
+    "Is breakfast included in the price?",
+    "Most of our furniture is made in Latvia.",
+    "Visitors aren't allowed to take photos inside."
+   ]
+  },
+  "item": {
+   "id": "c-1676",
+   "skill": "present_simple_passive",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Machines* is plural: *are checked*.",
+   "why_lv": "*Machines* ir daudzskaitlī: *are checked*.",
+   "correct": "The machines is checked every day.",
+   "wrong": [
+    "Is breakfast included in the price?",
+    "Most of our furniture is made in Latvia.",
+    "Visitors aren't allowed to take photos inside."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_pres",
+   "src": "b1-passives-1.csv:37"
+  }
+ },
+ "r21b-3-009": {
+  "hash": "fc68ede6a94c5788",
+  "gate_key": "present_simple_passive | B1.2 | mcq | Which sentence is NOT correct? | The museum is visit by many tourists.",
+  "src": "b1-passives-1.csv:38",
+  "point": "pas_pres",
+  "key": {
+   "kind": "mcq",
+   "correct": "The museum is visit by many tourists.",
+   "wrong": [
+    "How often are the trains cleaned?",
+    "This dish is usually served with rice.",
+    "Our office isn't heated at the weekend."
+   ]
+  },
+  "item": {
+   "id": "c-1677",
+   "skill": "present_simple_passive",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *is* we need the 3. form: *visited*.",
+   "why_lv": "Pēc *is* vajag 3. formu: *visited*.",
+   "correct": "The museum is visit by many tourists.",
+   "wrong": [
+    "How often are the trains cleaned?",
+    "This dish is usually served with rice.",
+    "Our office isn't heated at the weekend."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_pres",
+   "src": "b1-passives-1.csv:38"
+  }
+ },
+ "r21b-3-010": {
+  "hash": "91b8676d883c268c",
+  "gate_key": "past_simple_passive | B1.1 | order | Put the words in order. | the bridge was built in 1932 and it is still used today",
+  "src": "b1-passives-1.csv:39",
+  "point": "pas_past",
+  "key": {
+   "kind": "order",
+   "sentence": "the bridge was built in 1932 and it is still used today",
+   "also": [
+    "the bridge was built in 1932 and today it is still used",
+    "in 1932 the bridge was built and it is still used today",
+    "the bridge is still used today and it was built in 1932"
+   ]
+  },
+  "item": {
+   "id": "c-1678",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Past Simple passive: subject + *was / were* + 3. form (+ *by* ...).",
+   "why_lv": "Ciešamā kārta, Past Simple: teikuma priekšmets + *was / were* + 3. forma (+ *by* ...).",
+   "sentence": "the bridge was built in 1932 and it is still used today",
+   "answers": [
+    [
+     "the bridge was built in 1932 and it is still used today",
+     "the bridge was built in 1932 and today it is still used",
+     "in 1932 the bridge was built and it is still used today",
+     "the bridge is still used today and it was built in 1932"
+    ]
+   ],
+   "role": "check",
+   "point": "pas_past",
+   "src": "b1-passives-1.csv:39"
+  }
+ },
+ "r21b-3-011": {
+  "hash": "1c0247ba1f75adc5",
+  "gate_key": "past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday. | ",
+  "src": "b1-passives-1.csv:62",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My laptop was stolen yesterday.",
+     "My laptop was stolen by someone yesterday.",
+     "Yesterday my laptop was stolen.",
+     "Yesterday my laptop was stolen by someone.",
+     "My laptop got stolen yesterday.",
+     "Yesterday my laptop got stolen."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1701",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+   "why": "*My laptop* did not do the stealing, so we use *was* + 3rd form: *My laptop was stolen yesterday.* *Got stolen* is also correct, more informal.",
+   "why_lv": "Klēpjdators pats neko nezaga, tāpēc lieto *was* + 3. forma: *My laptop was stolen yesterday.* Arī *got stolen* ir pareizi, tikai sarunvalodā.",
+   "answers": [
+    [
+     "My laptop was stolen yesterday.",
+     "My laptop was stolen by someone yesterday.",
+     "Yesterday my laptop was stolen.",
+     "Yesterday my laptop was stolen by someone.",
+     "My laptop got stolen yesterday.",
+     "Yesterday my laptop got stolen."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "b1-passives-1.csv:62"
+  }
+ },
+ "r21b-3-012": {
+  "hash": "4689fd1e363ae75c",
+  "gate_key": "past_simple_passive | B1.1 | text | Start with *This factory*: The company built this factory in 1990. | ",
+  "src": "b1-passives-1.csv:63",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "This factory was built by the company in 1990.",
+     "This factory was built in 1990.",
+     "In 1990 this factory was built by the company.",
+     "In 1990 this factory was built.",
+     "This factory was built in 1990 by the company."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1702",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *This factory*: The company built this factory in 1990.",
+   "why": "Past passive: the object becomes the subject: *was / were* + 3. form.",
+   "why_lv": "Ciešamā kārta pagātnē: papildinātājs kļūst par teikuma priekšmetu: *was / were* + 3. forma.",
+   "answers": [
+    [
+     "This factory was built by the company in 1990.",
+     "This factory was built in 1990.",
+     "In 1990 this factory was built by the company.",
+     "In 1990 this factory was built.",
+     "This factory was built in 1990 by the company."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "b1-passives-1.csv:63"
+  }
+ },
+ "r21b-3-013": {
+  "hash": "41e783498865f7cc",
+  "gate_key": "past_simple_passive | B1.1 | mcq | Which sentence is NOT correct? | The bank was robbing last night.",
+  "src": "b1-passives-1.csv:74",
+  "point": "pas_past",
+  "key": {
+   "kind": "mcq",
+   "correct": "The bank was robbing last night.",
+   "wrong": [
+    "The shop windows were broken in the storm.",
+    "Two men were arrested.",
+    "The money was found."
+   ]
+  },
+  "item": {
+   "id": "c-1713",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *was* we need the 3. form: *robbed*.",
+   "why_lv": "Pēc *was* vajag 3. formu: *robbed*.",
+   "correct": "The bank was robbing last night.",
+   "wrong": [
+    "The shop windows were broken in the storm.",
+    "Two men were arrested.",
+    "The money was found."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_past",
+   "src": "b1-passives-1.csv:74"
+  }
+ },
+ "r21b-3-014": {
+  "hash": "0ab49a74ea2b67bc",
+  "gate_key": "present_continuous_passive | B1.2 | mcq | Which sentence is NOT correct? | The report is being write now.",
+  "src": "b1-passives-1.csv:111",
+  "point": "pas_cont",
+  "key": {
+   "kind": "mcq",
+   "correct": "The report is being write now.",
+   "wrong": [
+    "The lifts are being repaired this week.",
+    "Is the meeting room being used at the moment?",
+    "Our street is being cleaned right now."
+   ]
+  },
+  "item": {
+   "id": "c-1750",
+   "skill": "present_continuous_passive",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *being* we need the 3. form: *written*.",
+   "why_lv": "Pēc *being* vajag 3. formu: *written*.",
+   "correct": "The report is being write now.",
+   "wrong": [
+    "The lifts are being repaired this week.",
+    "Is the meeting room being used at the moment?",
+    "Our street is being cleaned right now."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_cont",
+   "src": "b1-passives-1.csv:111"
+  }
+ },
+ "r21b-3-015": {
+  "hash": "9eea6b4fb80ef449",
+  "gate_key": "present_continuous_passive | B1.2 | mcq | Which sentence is NOT correct? | The windows in our flat is being replaced this week.",
+  "src": "b1-passives-1.csv:112",
+  "point": "pas_cont",
+  "key": {
+   "kind": "mcq",
+   "correct": "The windows in our flat is being replaced this week.",
+   "wrong": [
+    "My laptop is being repaired, so I'm using my phone.",
+    "Are the tickets being sold online?",
+    "The patient is being examined by a doctor."
+   ]
+  },
+  "item": {
+   "id": "c-1751",
+   "skill": "present_continuous_passive",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Windows* is plural: *are being replaced*.",
+   "why_lv": "*Windows* ir daudzskaitlī: *are being replaced*.",
+   "correct": "The windows in our flat is being replaced this week.",
+   "wrong": [
+    "My laptop is being repaired, so I'm using my phone.",
+    "Are the tickets being sold online?",
+    "The patient is being examined by a doctor."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_cont",
+   "src": "b1-passives-1.csv:112"
+  }
+ },
+ "r21b-3-016": {
+  "hash": "71c6ef933224eff3",
+  "gate_key": "present_perfect_passive | B1.1 | text | Start with *My umbrella*: Someone has taken my umbrella. | ",
+  "src": "b1-passives-1.csv:131",
+  "point": "pas_perf",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My umbrella has been taken.",
+     "My umbrella has been taken by someone.",
+     "My umbrella's been taken.",
+     "My umbrella's been taken by someone."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1770",
+   "skill": "present_perfect_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *My umbrella*: Someone has taken my umbrella.",
+   "why": "Present perfect passive: *has / have been* + 3. form.",
+   "why_lv": "Present Perfect ciešamā kārta: *has / have been* + 3. forma.",
+   "answers": [
+    [
+     "My umbrella has been taken.",
+     "My umbrella has been taken by someone.",
+     "My umbrella's been taken.",
+     "My umbrella's been taken by someone."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_perf",
+   "src": "b1-passives-1.csv:131"
+  }
+ },
+ "r21b-3-017": {
+  "hash": "ec8a4e97960f813d",
+  "gate_key": "present_perfect_passive | B1.1 | mcq | Which sentence is NOT correct? | The contract has signed.",
+  "src": "b1-passives-1.csv:143",
+  "point": "pas_perf",
+  "key": {
+   "kind": "mcq",
+   "correct": "The contract has signed.",
+   "wrong": [
+    "All the tickets have already been sold.",
+    "Has your bag been found yet?",
+    "The meeting has been moved to Friday."
+   ]
+  },
+  "item": {
+   "id": "c-1782",
+   "skill": "present_perfect_passive",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "The contract does not sign itself: *has been* + 3rd form: *The contract has been signed.*",
+   "why_lv": "Līgums pats neparakstās: *has been* + 3. forma: *The contract has been signed.*",
+   "correct": "The contract has signed.",
+   "wrong": [
+    "All the tickets have already been sold.",
+    "Has your bag been found yet?",
+    "The meeting has been moved to Friday."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_perf",
+   "src": "b1-passives-1.csv:143"
+  }
+ },
+ "r21b-3-018": {
+  "hash": "338945f5ddc28a2f",
+  "gate_key": "present_perfect_passive | B1.2 | mcq | Which sentence is NOT correct? | Three people has been arrested.",
+  "src": "b1-passives-1.csv:144",
+  "point": "pas_perf",
+  "key": {
+   "kind": "mcq",
+   "correct": "Three people has been arrested.",
+   "wrong": [
+    "The road has been closed since Monday.",
+    "Has your bike been repaired yet?",
+    "My wallet has been stolen!"
+   ]
+  },
+  "item": {
+   "id": "c-1783",
+   "skill": "present_perfect_passive",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*People* is plural: *have been arrested*.",
+   "why_lv": "*People* ir daudzskaitlī: *have been arrested*.",
+   "correct": "Three people has been arrested.",
+   "wrong": [
+    "The road has been closed since Monday.",
+    "Has your bike been repaired yet?",
+    "My wallet has been stolen!"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_perf",
+   "src": "b1-passives-1.csv:144"
+  }
+ },
+ "r21b-3-019": {
+  "hash": "f5d798d266ce6c71",
+  "gate_key": "future_passive | B1.1 | mcq | Which sentence is NOT correct? | The new rules will be introduce next month.",
+  "src": "b1-passives-1.csv:175",
+  "point": "pas_will",
+  "key": {
+   "kind": "mcq",
+   "correct": "The new rules will be introduce next month.",
+   "wrong": [
+    "Your new card will be sent to you by post.",
+    "Will the museum be closed on Monday?",
+    "The match won't be shown on TV."
+   ]
+  },
+  "item": {
+   "id": "c-1814",
+   "skill": "future_passive",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *will be* we need the 3. form: *introduced*.",
+   "why_lv": "Pēc *will be* vajag 3. formu: *introduced*.",
+   "correct": "The new rules will be introduce next month.",
+   "wrong": [
+    "Your new card will be sent to you by post.",
+    "Will the museum be closed on Monday?",
+    "The match won't be shown on TV."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_will",
+   "src": "b1-passives-1.csv:175"
+  }
+ },
+ "r21b-3-020": {
+  "hash": "7a77e896f064af3c",
+  "gate_key": "future_passive | B1.2 | mcq | Which sentence is NOT correct? | The new library will opened next spring.",
+  "src": "b1-passives-1.csv:176",
+  "point": "pas_will",
+  "key": {
+   "kind": "mcq",
+   "correct": "The new library will opened next spring.",
+   "wrong": [
+    "The road will be repaired in August.",
+    "Will lunch be served on the plane?",
+    "The old bridge won't be used any more."
+   ]
+  },
+  "item": {
+   "id": "c-1815",
+   "skill": "future_passive",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "We need *be*: *The new library will be opened next spring.*",
+   "why_lv": "Vajag *be*: *The new library will be opened next spring.*",
+   "correct": "The new library will opened next spring.",
+   "wrong": [
+    "The road will be repaired in August.",
+    "Will lunch be served on the plane?",
+    "The old bridge won't be used any more."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_will",
+   "src": "b1-passives-1.csv:176"
+  }
+ },
+ "r21b-3-021": {
+  "hash": "68fa9f09d809c169",
+  "gate_key": "present_simple | B1.1 | order | Put the words in order. | she rarely eats out because she prefers to cook at home",
+  "src": "b1-tenses-1.csv:3",
+  "point": "ps_form",
+  "key": {
+   "kind": "order",
+   "sentence": "she rarely eats out because she prefers to cook at home",
+   "also": [
+    "because she prefers to cook at home she rarely eats out",
+    "she eats out rarely because she prefers to cook at home",
+    "because she prefers to cook at home she eats out rarely"
+   ]
+  },
+  "item": {
+   "id": "c-1817",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + verb (with *-s* after *he / she / it*) + the rest; questions and negatives use *do / does*.",
+   "why_lv": "Teikuma priekšmets + darbības vārds (ar *-s* aiz *he / she / it*) + pārējais; jautājumos un noliegumos lieto *do / does*.",
+   "sentence": "she rarely eats out because she prefers to cook at home",
+   "answers": [
+    [
+     "she rarely eats out because she prefers to cook at home",
+     "because she prefers to cook at home she rarely eats out",
+     "she eats out rarely because she prefers to cook at home",
+     "because she prefers to cook at home she eats out rarely"
+    ]
+   ],
+   "role": "check",
+   "point": "ps_form",
+   "src": "b1-tenses-1.csv:3"
+  }
+ },
+ "r21b-3-022": {
+  "hash": "e67077345a035002",
+  "gate_key": "present_simple | B1.1 | order | Put the words in order. | does your brother still work for the same company",
+  "src": "b1-tenses-1.csv:5",
+  "point": "ps_negq",
+  "key": {
+   "kind": "order",
+   "sentence": "does your brother still work for the same company",
+   "also": [
+    "does your brother work for the same company still"
+   ]
+  },
+  "item": {
+   "id": "c-1819",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + verb (with *-s* after *he / she / it*) + the rest; questions and negatives use *do / does*.",
+   "why_lv": "Teikuma priekšmets + darbības vārds (ar *-s* aiz *he / she / it*) + pārējais; jautājumos un noliegumos lieto *do / does*.",
+   "sentence": "does your brother still work for the same company",
+   "answers": [
+    [
+     "does your brother still work for the same company",
+     "does your brother work for the same company still"
+    ]
+   ],
+   "role": "check",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:5"
+  }
+ },
+ "r21b-3-023": {
+  "hash": "6354e46457481f8a",
+  "gate_key": "present_simple | B1.1 | order | Put the words in order. | what does this word mean in your language",
+  "src": "b1-tenses-1.csv:9",
+  "point": "ps_negq",
+  "key": {
+   "kind": "order",
+   "sentence": "what does this word mean in your language",
+   "also": [
+    "in your language what does this word mean"
+   ]
+  },
+  "item": {
+   "id": "c-1823",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + verb (with *-s* after *he / she / it*) + the rest; questions and negatives use *do / does*.",
+   "why_lv": "Teikuma priekšmets + darbības vārds (ar *-s* aiz *he / she / it*) + pārējais; jautājumos un noliegumos lieto *do / does*.",
+   "sentence": "what does this word mean in your language",
+   "answers": [
+    [
+     "what does this word mean in your language",
+     "in your language what does this word mean"
+    ]
+   ],
+   "role": "check",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:9"
+  }
+ },
+ "r21b-3-024": {
+  "hash": "400e7f4d77b470f5",
+  "gate_key": "present_simple | B1.1 | gap | How much ___ a ticket to the capital ___ ? (cost) | ",
+  "src": "b1-tenses-1.csv:24",
+  "point": "ps_negq",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "does",
+     "did",
+     "will",
+     "would"
+    ],
+    [
+     "cost"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1838",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How much ___ a ticket to the capital ___ ? (cost)",
+   "why": "Habits, facts and timetables: Present Simple.",
+   "why_lv": "Ieradumi, fakti un saraksti: Present Simple.",
+   "answers": [
+    [
+     "does",
+     "did",
+     "will",
+     "would"
+    ],
+    [
+     "cost"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:24"
+  }
+ },
+ "r21b-3-025": {
+  "hash": "85cdba769400640b",
+  "gate_key": "present_simple | B1.1 | text | Make a question with What time: The bank opens at nine. | ",
+  "src": "b1-tenses-1.csv:28",
+  "point": "ps_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What time does the bank open?",
+     "What time does the bank open at?",
+     "At what time does the bank open?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1842",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with What time: The bank opens at nine.",
+   "why": "Negative: *don't / doesn't* + base verb. Question: *Do / Does* + subject + base verb?",
+   "why_lv": "Noliegums: *don't / doesn't* + pamatforma. Jautājums: *Do / Does* + teikuma priekšmets + pamatforma?",
+   "answers": [
+    [
+     "What time does the bank open?",
+     "What time does the bank open at?",
+     "At what time does the bank open?"
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:28"
+  }
+ },
+ "r21b-3-026": {
+  "hash": "9221b1726d489992",
+  "gate_key": "present_simple | B1.1 | mcq | Which sentence is NOT correct? | Our manager don't like long meetings.",
+  "src": "b1-tenses-1.csv:36",
+  "point": "ps_negq",
+  "key": {
+   "kind": "mcq",
+   "correct": "Our manager don't like long meetings.",
+   "wrong": [
+    "My colleagues often work from home on Fridays.",
+    "Does your company pay for training?",
+    "The office opens at eight."
+   ]
+  },
+  "item": {
+   "id": "c-1850",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Manager* is *he / she*, so *doesn't*.",
+   "why_lv": "*Manager* ir *he / she*, tāpēc *doesn't*.",
+   "correct": "Our manager don't like long meetings.",
+   "wrong": [
+    "My colleagues often work from home on Fridays.",
+    "Does your company pay for training?",
+    "The office opens at eight."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:36"
+  }
+ },
+ "r21b-3-027": {
+  "hash": "d85feaf0a30551b7",
+  "gate_key": "present_simple | B1.1 | mcq | Which sentence is NOT correct? | He doesn't goes to the gym on Sundays.",
+  "src": "b1-tenses-1.csv:40",
+  "point": "ps_negq",
+  "key": {
+   "kind": "mcq",
+   "correct": "He doesn't goes to the gym on Sundays.",
+   "wrong": [
+    "Does your sister still live in Berlin?",
+    "I usually cycle to work in summer.",
+    "The shop closes at six on Saturdays."
+   ]
+  },
+  "item": {
+   "id": "c-1854",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *doesn't* the verb has no *-s*.",
+   "why_lv": "Pēc *doesn't* darbības vārdam nav *-s*.",
+   "correct": "He doesn't goes to the gym on Sundays.",
+   "wrong": [
+    "Does your sister still live in Berlin?",
+    "I usually cycle to work in summer.",
+    "The shop closes at six on Saturdays."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:40"
+  }
+ },
+ "r21b-3-028": {
+  "hash": "4efc2149d4e3d439",
+  "gate_key": "present_continuous | B1.1 | order | Put the words in order. | are you using this chair or can i take it",
+  "src": "b1-tenses-1.csv:47",
+  "point": "pc_form",
+  "key": {
+   "kind": "order",
+   "sentence": "are you using this chair or can i take it",
+   "also": [
+    "can i take this chair or are you using it",
+    "are you using it or can i take this chair",
+    "can i take it or are you using this chair"
+   ]
+  },
+  "item": {
+   "id": "c-1861",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *am / is / are* + verb + *-ing*; for the future, add a time. In a question the helping verb (or *am / is / are*) goes before the subject.",
+   "why_lv": "Teikuma priekšmets + *am / is / are* + darbības vārds + *-ing*; nākotnei pievieno laiku. Jautājumā palīgdarbības vārds (vai *am / is / are*) stāv pirms teikuma priekšmeta.",
+   "sentence": "are you using this chair or can i take it",
+   "answers": [
+    [
+     "are you using this chair or can i take it",
+     "can i take this chair or are you using it",
+     "are you using it or can i take this chair",
+     "can i take it or are you using this chair"
+    ]
+   ],
+   "role": "check",
+   "point": "pc_form",
+   "src": "b1-tenses-1.csv:47"
+  }
+ },
+ "r21b-3-029": {
+  "hash": "cf206273d5662c6d",
+  "gate_key": "present_continuous | B1.1 | gap | Anna ___ for a new flat at the moment because her rent is too high. | ",
+  "src": "b1-tenses-1.csv:58",
+  "point": "pc_temp",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is looking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1872",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Anna ___ for a new flat at the moment because her rent is too high.",
+   "why": "*At the moment*, a temporary situation: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+   "why_lv": "*At the moment*, pagaidu situācija: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+   "answers": [
+    [
+     "is looking"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is looking",
+    "looks",
+    "was looking"
+   ],
+   "role": "check",
+   "point": "pc_temp",
+   "src": "b1-tenses-1.csv:58"
+  }
+ },
+ "r21b-3-030": {
+  "hash": "cd6359d9eec9a498",
+  "gate_key": "present_continuous | B1.1 | gap | My neighbour ___ his house this month, so there is a lot of noise. (paint) | ",
+  "src": "b1-tenses-1.csv:60",
+  "point": "pc_temp",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is painting",
+     "has been painting",
+     "'s painting",
+     "'s been painting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1874",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My neighbour ___ his house this month, so there is a lot of noise. (paint)",
+   "why": "Now, around now and arranged plans: *am / is / are* + verb + *-ing*.",
+   "why_lv": "Tagad, ap šo laiku un norunāti plāni: *am / is / are* + darbības vārds + *-ing*.",
+   "answers": [
+    [
+     "is painting",
+     "has been painting",
+     "'s painting",
+     "'s been painting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pc_temp",
+   "src": "b1-tenses-1.csv:60"
+  }
+ },
+ "r21b-3-031": {
+  "hash": "847475cff0659afd",
+  "gate_key": "present_continuous | B1.1 | mcq | Which sentence is NOT correct? | I'm not understanding the instructions.",
+  "src": "b1-tenses-1.csv:74",
+  "point": "stative",
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm not understanding the instructions.",
+   "wrong": [
+    "I need a new charger for my phone.",
+    "I'm reading a great book at the moment.",
+    "Is your brother still looking for a job?"
+   ]
+  },
+  "item": {
+   "id": "c-1888",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Understand* is a state verb, so it stays simple: *I don't understand the instructions.*",
+   "why_lv": "*Understand* ir stāvokļa darbības vārds, tāpēc paliek vienkāršajā formā: *I don't understand the instructions.*",
+   "correct": "I'm not understanding the instructions.",
+   "wrong": [
+    "I need a new charger for my phone.",
+    "I'm reading a great book at the moment.",
+    "Is your brother still looking for a job?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "stative",
+   "src": "b1-tenses-1.csv:74"
+  }
+ },
+ "r21b-3-032": {
+  "hash": "16a2e3621e025f62",
+  "gate_key": "present_continuous | B1.1 | mcq | Which sentence is NOT correct? | This umbrella is belonging to my colleague.",
+  "src": "b1-tenses-1.csv:75",
+  "point": "stative",
+  "key": {
+   "kind": "mcq",
+   "correct": "This umbrella is belonging to my colleague.",
+   "wrong": [
+    "They're thinking about moving to Spain.",
+    "We're working from home this week.",
+    "She's learning to drive this summer."
+   ]
+  },
+  "item": {
+   "id": "c-1889",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Belong* is a state verb: *This umbrella belongs to my colleague.*",
+   "why_lv": "*Belong* ir stāvokļa darbības vārds: *This umbrella belongs to my colleague.*",
+   "correct": "This umbrella is belonging to my colleague.",
+   "wrong": [
+    "They're thinking about moving to Spain.",
+    "We're working from home this week.",
+    "She's learning to drive this summer."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "stative",
+   "src": "b1-tenses-1.csv:75"
+  }
+ },
+ "r21b-3-033": {
+  "hash": "3c63e24e6fc7b33c",
+  "gate_key": "present_continuous | B1.1 | mcq | Which sentence is NOT correct? | The manager is have a meeting with a client.",
+  "src": "b1-tenses-1.csv:79",
+  "point": "pc_form",
+  "key": {
+   "kind": "mcq",
+   "correct": "The manager is have a meeting with a client.",
+   "wrong": [
+    "Are you still looking for a flat?",
+    "Our team is growing fast this year.",
+    "I'm not using the car today."
+   ]
+  },
+  "item": {
+   "id": "c-1893",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *is* the verb needs *-ing*: *is having*.",
+   "why_lv": "Pēc *is* darbības vārdam vajag *-ing*: *is having*.",
+   "correct": "The manager is have a meeting with a client.",
+   "wrong": [
+    "Are you still looking for a flat?",
+    "Our team is growing fast this year.",
+    "I'm not using the car today."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pc_form",
+   "src": "b1-tenses-1.csv:79"
+  }
+ },
+ "r21b-3-034": {
+  "hash": "5cdca7ee3d2875d8",
+  "gate_key": "past_simple | B1.1 | order | Put the words in order. | she opened the letter and read it twice before she answered",
+  "src": "b1-tenses-1.csv:81",
+  "point": "pst_irr",
+  "key": {
+   "kind": "order",
+   "sentence": "she opened the letter and read it twice before she answered",
+   "also": [
+    "before she answered she opened the letter and read it twice",
+    "she opened and read the letter twice before she answered it",
+    "before she answered it she opened and read the letter twice"
+   ]
+  },
+  "item": {
+   "id": "c-1895",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + past verb + the rest; *did* + base verb in questions and negatives.",
+   "why_lv": "Teikuma priekšmets + pagātnes forma + pārējais; jautājumos un noliegumos *did* + pamatforma.",
+   "sentence": "she opened the letter and read it twice before she answered",
+   "answers": [
+    [
+     "she opened the letter and read it twice before she answered",
+     "before she answered she opened the letter and read it twice",
+     "she opened and read the letter twice before she answered it",
+     "before she answered it she opened and read the letter twice"
+    ]
+   ],
+   "role": "check",
+   "point": "pst_irr",
+   "src": "b1-tenses-1.csv:81"
+  }
+ },
+ "r21b-3-035": {
+  "hash": "2ffc7882b5f5eaae",
+  "gate_key": "past_simple | B1.1 | order | Put the words in order. | why didn't you tell me that you lost your job",
+  "src": "b1-tenses-1.csv:82",
+  "point": "pst_negq",
+  "key": {
+   "kind": "order",
+   "sentence": "why didn't you tell me that you lost your job",
+   "also": []
+  },
+  "item": {
+   "id": "c-1896",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Question with *didn't* + base verb: *Why didn't you tell me that you lost your job?*",
+   "why_lv": "Jautājums ar *didn't* + pamatforma: *Why didn't you tell me that you lost your job?*",
+   "sentence": "why didn't you tell me that you lost your job",
+   "answers": [
+    [
+     "why didn't you tell me that you lost your job"
+    ]
+   ],
+   "role": "check",
+   "point": "pst_negq",
+   "src": "b1-tenses-1.csv:82"
+  }
+ },
+ "r21b-3-036": {
+  "hash": "5322a98f2515aa31",
+  "gate_key": "past_simple | B1.1 | gap | How long ___ the drive to the airport ___ yesterday? (take) | ",
+  "src": "b1-tenses-1.csv:96",
+  "point": "pst_negq",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "did"
+    ],
+    [
+     "take"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1910",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How long ___ the drive to the airport ___ yesterday? (take)",
+   "why": "A finished event: *did* + base form: *How long did the drive to the airport take yesterday?*",
+   "why_lv": "Pabeigts notikums: *did* + pamatforma: *How long did the drive to the airport take yesterday?*",
+   "answers": [
+    [
+     "did"
+    ],
+    [
+     "take"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pst_negq",
+   "src": "b1-tenses-1.csv:96"
+  }
+ },
+ "r21b-3-037": {
+  "hash": "ce3f2781e50fa6a0",
+  "gate_key": "used_to | B1.2 | mcq | Which sentence is NOT correct? | I didn't used to like olives.",
+  "src": "b1-tenses-1.csv:111",
+  "point": "used_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "I didn't used to like olives.",
+   "wrong": [
+    "Are you used to driving on the left yet?",
+    "He used to work as a taxi driver.",
+    "I'm slowly getting used to the early starts."
+   ]
+  },
+  "item": {
+   "id": "c-1925",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *didn't* we use *use to*, not *used to*.",
+   "why_lv": "Pēc *didn't* lieto *use to*, nevis *used to*.",
+   "correct": "I didn't used to like olives.",
+   "wrong": [
+    "Are you used to driving on the left yet?",
+    "He used to work as a taxi driver.",
+    "I'm slowly getting used to the early starts."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "used_to",
+   "src": "b1-tenses-1.csv:111"
+  }
+ },
+ "r21b-3-038": {
+  "hash": "3ee974ff70e5365c",
+  "gate_key": "past_continuous | B1.1 | mcq | Which sentence is NOT correct? | When I came in, the children was watching TV.",
+  "src": "b1-tenses-1.csv:137",
+  "point": "pastc_when",
+  "key": {
+   "kind": "mcq",
+   "correct": "When I came in, the children was watching TV.",
+   "wrong": [
+    "She was driving to work when the accident happened.",
+    "What were you doing at eight last night?",
+    "It wasn't raining when we left the house."
+   ]
+  },
+  "item": {
+   "id": "c-1951",
+   "skill": "past_continuous",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*The children* = *they*, so *were*.",
+   "why_lv": "*The children = they*, tāpēc *were*.",
+   "correct": "When I came in, the children was watching TV.",
+   "wrong": [
+    "She was driving to work when the accident happened.",
+    "What were you doing at eight last night?",
+    "It wasn't raining when we left the house."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pastc_when",
+   "src": "b1-tenses-1.csv:137"
+  }
+ },
+ "r21b-3-039": {
+  "hash": "32fb6cb79ae261c0",
+  "gate_key": "present_perfect | B1.1 | gap | How long ___ you ___ for this company now? (work) | ",
+  "src": "b1-tenses-2.csv:20",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "worked",
+     "been working"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1975",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "How long ___ you ___ for this company now? (work)",
+   "why": "Up to now: *have* + 3rd form or *have been* + *-ing*: *How long have you worked for this company now?*",
+   "why_lv": "Līdz šim brīdim: *have* + 3. forma vai *have been* + *-ing*: *How long have you worked for this company now?*",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "worked",
+     "been working"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:20"
+  }
+ },
+ "r21b-3-040": {
+  "hash": "50f2c43e63773068",
+  "gate_key": "present_perfect | B1.1 | text | Rewrite with *since*: I started learning English in 2019, and I'm still learning it. | ",
+  "src": "b1-tenses-2.csv:22",
+  "point": "ppc_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I have been learning English since 2019.",
+     "I have learned English since 2019.",
+     "I have learnt English since 2019."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1977",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *since*: I started learning English in 2019, and I'm still learning it.",
+   "why": "It started in 2019 and is still going on: *I have been learning English since 2019.*",
+   "why_lv": "Tas sākās 2019. gadā un turpinās joprojām: *I have been learning English since 2019.*",
+   "answers": [
+    [
+     "I have been learning English since 2019.",
+     "I have learned English since 2019.",
+     "I have learnt English since 2019."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:22"
+  }
+ },
+ "r21b-3-041": {
+  "hash": "b6ec3d28cbf10699",
+  "gate_key": "present_perfect | B1.1 | text | Make it negative: We have visited that museum. | ",
+  "src": "b1-tenses-2.csv:24",
+  "point": "pp_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We haven't visited that museum.",
+     "We have not visited that museum.",
+     "We have never visited that museum."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1979",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: We have visited that museum.",
+   "why": "Question: *Have / Has* + subject + 3. form. Negative: *haven't / hasn't* + 3. form. *How long* asks about time up to now.",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + 3. forma. Noliegums: *haven't / hasn't* + 3. forma. *How long* jautā par laiku līdz tagadnei.",
+   "answers": [
+    [
+     "We haven't visited that museum.",
+     "We have not visited that museum.",
+     "We have never visited that museum."
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "pp_form",
+   "src": "b1-tenses-2.csv:24"
+  }
+ },
+ "r21b-3-042": {
+  "hash": "b3b42bd1cacec822",
+  "gate_key": "present_perfect | B1.1 | mcq | Choose the correct option: She has worked here ___ 2019. | since",
+  "src": "b1-tenses-2.csv:29",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "mcq",
+   "correct": "since",
+   "wrong": [
+    "for",
+    "in"
+   ]
+  },
+  "item": {
+   "id": "c-1984",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: She has worked here ___ 2019.",
+   "why": "*since* + a starting point: *She has worked here since 2019.* *for* goes with a period of time. *in 2019* is a finished time and needs the past simple.",
+   "why_lv": "*since* + sākuma brīdis: *She has worked here since 2019.* *for* lieto ar laika posmu. *in 2019* ir pabeigts laiks, tam vajag Past Simple.",
+   "correct": "since",
+   "wrong": [
+    "for",
+    "in"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:29"
+  }
+ },
+ "r21b-3-043": {
+  "hash": "46bb9b7e4ffa81a7",
+  "gate_key": "present_perfect | B1.1 | mcq | Choose the correct option: I've worked here ___ 2015. | since",
+  "src": "b1-tenses-2.csv:30",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "mcq",
+   "correct": "since",
+   "wrong": [
+    "for",
+    "already"
+   ]
+  },
+  "item": {
+   "id": "c-1985",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: I've worked here ___ 2015.",
+   "why": "*since* + a starting point: *I've worked here since 2015.* *for* needs a length of time, and *2015* is a point in time, so *for 2015* is wrong.",
+   "why_lv": "*since* + sākuma punkts: *I've worked here since 2015.* *for* lieto ar laika ilgumu, bet *2015* ir laika punkts, tāpēc *for 2015* nav pareizi.",
+   "correct": "since",
+   "wrong": [
+    "for",
+    "already"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:30"
+  }
+ },
+ "r21b-3-044": {
+  "hash": "27a9e84d5d7c233c",
+  "gate_key": "present_perfect | B1.2 | mcq | Which sentence is NOT correct? | I have visited that museum last weekend.",
+  "src": "b1-tenses-2.csv:32",
+  "point": "pp_ps",
+  "key": {
+   "kind": "mcq",
+   "correct": "I have visited that museum last weekend.",
+   "wrong": [
+    "Have you ever tried Georgian food?",
+    "We've just booked our holiday.",
+    "I saw her at the station two days ago."
+   ]
+  },
+  "item": {
+   "id": "c-1987",
+   "skill": "present_perfect",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "A finished time (*last weekend*) needs the Past Simple.",
+   "why_lv": "Pabeigts laiks (*last weekend*) *prasa* Past Simple.",
+   "correct": "I have visited that museum last weekend.",
+   "wrong": [
+    "Have you ever tried Georgian food?",
+    "We've just booked our holiday.",
+    "I saw her at the station two days ago."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pp_ps",
+   "src": "b1-tenses-2.csv:32"
+  }
+ },
+ "r21b-3-045": {
+  "hash": "ad8baf8712a3250d",
+  "gate_key": "present_perfect | B1.2 | mcq | Which sentence is NOT correct? | She has lived in Paris since five years.",
+  "src": "b1-tenses-2.csv:33",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "mcq",
+   "correct": "She has lived in Paris since five years.",
+   "wrong": [
+    "How long have you worked here?",
+    "We haven't seen each other for ages.",
+    "He moved to Spain in 2018."
+   ]
+  },
+  "item": {
+   "id": "c-1988",
+   "skill": "present_perfect",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Use *for* with a length of time, *since* with a starting point.",
+   "why_lv": "*For* lieto ar laika *ilgumu, since* ar sākuma punktu.",
+   "correct": "She has lived in Paris since five years.",
+   "wrong": [
+    "How long have you worked here?",
+    "We haven't seen each other for ages.",
+    "He moved to Spain in 2018."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:33"
+  }
+ },
+ "r21b-3-046": {
+  "hash": "90b7070f4544d1e4",
+  "gate_key": "present_perfect_continuous | B1.1 | text | Make a question with How long: She has been learning Chinese. | ",
+  "src": "b1-tenses-2.csv:55",
+  "point": "ppc_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "How long has she been learning Chinese?",
+     "How long has she been learning Chinese for?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2010",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make a question with How long: She has been learning Chinese.",
+   "why": "Question: *Have / Has* + subject + *been* + *-ing*. Negative: *haven't / hasn't been* + *-ing*. *How long* asks about the length.",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + *been + -ing*. Noliegums: *haven't / hasn't been + -ing*. *How long* jautā par *ilgumu*.",
+   "answers": [
+    [
+     "How long has she been learning Chinese?",
+     "How long has she been learning Chinese for?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:55"
+  }
+ },
+ "r21b-3-047": {
+  "hash": "3b70362929cdf445",
+  "gate_key": "present_perfect_continuous | B1.1 | mcq | Which sentence says how long? | I've been learning French for two years.",
+  "src": "b1-tenses-2.csv:62",
+  "point": "ppc_form",
+  "key": {
+   "kind": "mcq",
+   "correct": "I've been learning French for two years.",
+   "wrong": [
+    "I've learned some French at school.",
+    "I've been learning French at evening classes.",
+    "I'm learning French with a teacher."
+   ]
+  },
+  "item": {
+   "id": "c-2017",
+   "skill": "present_perfect_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence says how long?",
+   "why": "Present Perfect Continuous shows the activity and how long. State verbs (*know, like*) do not take it.",
+   "why_lv": "Present Perfect Continuous parāda darbību un cik ilgi. Stāvokļa darbības vārdiem (*know, like*) *to* nelieto.",
+   "correct": "I've been learning French for two years.",
+   "wrong": [
+    "I've learned some French at school.",
+    "I've been learning French at evening classes.",
+    "I'm learning French with a teacher."
+   ],
+   "wrong_why": [],
+   "role": "learn",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:62"
+  }
+ },
+ "r21b-3-048": {
+  "hash": "e00e10012f216624",
+  "gate_key": "present_perfect_continuous | B1.2 | mcq | Which sentence is NOT correct? | She's been knowing about the problem for weeks.",
+  "src": "b1-tenses-2.csv:64",
+  "point": "pp_ppc",
+  "key": {
+   "kind": "mcq",
+   "correct": "She's been knowing about the problem for weeks.",
+   "wrong": [
+    "They've been learning Spanish since January.",
+    "How long have you been waiting?",
+    "We've owned this flat since 2015."
+   ]
+  },
+  "item": {
+   "id": "c-2019",
+   "skill": "present_perfect_continuous",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Know* is a state verb: *She's known about the problem for weeks.*",
+   "why_lv": "*Know* ir stāvokļa darbības vārds: *She's known about the problem for weeks.*",
+   "correct": "She's been knowing about the problem for weeks.",
+   "wrong": [
+    "They've been learning Spanish since January.",
+    "How long have you been waiting?",
+    "We've owned this flat since 2015."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pp_ppc",
+   "src": "b1-tenses-2.csv:64"
+  }
+ },
+ "r21b-3-049": {
+  "hash": "d4492f28804065ac",
+  "gate_key": "present_perfect_continuous | B1.2 | mcq | Which sentence is NOT correct? | My neighbour has been build a garage all summer.",
+  "src": "b1-tenses-2.csv:65",
+  "point": "ppc_form",
+  "key": {
+   "kind": "mcq",
+   "correct": "My neighbour has been build a garage all summer.",
+   "wrong": [
+    "It has been snowing for two days.",
+    "How long have you been learning to drive?",
+    "They've been living in Riga for two years."
+   ]
+  },
+  "item": {
+   "id": "c-2020",
+   "skill": "present_perfect_continuous",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *been* the verb needs *-ing*: *My neighbour has been building a garage all summer.*",
+   "why_lv": "Pēc *been* darbības vārdam vajag *-ing*: *My neighbour has been building a garage all summer.*",
+   "correct": "My neighbour has been build a garage all summer.",
+   "wrong": [
+    "It has been snowing for two days.",
+    "How long have you been learning to drive?",
+    "They've been living in Riga for two years."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:65"
+  }
+ },
+ "r21b-3-050": {
+  "hash": "ba2bf7d5cc33c9dd",
+  "gate_key": "past_perfect | B1.2 | mcq | Which sentence is NOT correct? | I hadn't never seen it before.",
+  "src": "b1-tenses-2.csv:101",
+  "point": "pastp_by",
+  "key": {
+   "kind": "mcq",
+   "correct": "I hadn't never seen it before.",
+   "wrong": [
+    "We had already eaten when they arrived.",
+    "She was hungry because she hadn't eaten all day.",
+    "Had you met him before the party?"
+   ]
+  },
+  "item": {
+   "id": "c-2056",
+   "skill": "past_perfect",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Never* already makes it negative: no *n't*.",
+   "why_lv": "*Never* jau ir noliegums: bez *n't*.",
+   "correct": "I hadn't never seen it before.",
+   "wrong": [
+    "We had already eaten when they arrived.",
+    "She was hungry because she hadn't eaten all day.",
+    "Had you met him before the party?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pastp_by",
+   "src": "b1-tenses-2.csv:101"
+  }
+ }
+}

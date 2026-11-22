@@ -489,7 +489,7 @@ ps_form,A2.1,present_simple,A2.2,check,mcq,read,,a2-extras-1.csv:13,present_simp
 ps_form,A2.1,present_simple,A2.2,use,gap,read,,a2-extras-1.csv:15,"present_simple | A2.2 | gap | She ___ her homework on Sunday evening, never on Friday. (do) | "
 ps_form,A2.1,present_simple,A2.2,check,mcq,read,,a2-extras-1.csv:21,"present_simple | A2.2 | mcq | Choose the correct option: In my country, the shops ___ at 9 a.m. on weekdays. | open"
 ps_form,A2.1,present_simple,A2.2,use,gap,read,,more-1.csv:95,present_simple | A2.2 | gap | My brother always ___ his homework after dinner. He's doing it now. (do) | 
-ps_form,A2.1,present_simple,B1.1,check,mcq,read,ps-B11-2a-r5,built-in,present_simple | B1.1 | mcq | Water ___ at 100 degrees Celsius. | boils
+ps_form,A2.1,present_simple,B1.1,check,mcq,read,ps-B11-2a-r5,built-in,"present_simple | B1.1 | mcq | Choose the correct option: I ___ what you mean, but I don't agree with you. | know"
 ps_form,A2.1,present_simple,B1.1,check,order,read,,b1-tenses-1.csv:2,present_simple | B1.1 | order | Put all the words in order. More than one answer is possible. | the shop opens at nine on weekdays but closes early on sundays
 ps_form,A2.1,present_simple,B1.1,check,order,read,,b1-tenses-1.csv:3,present_simple | B1.1 | order | Put the words in order. | she rarely eats out because she prefers to cook at home
 ps_form,A2.1,present_simple,B1.1,check,order,read,,b1-tenses-1.csv:7,present_simple | B1.1 | order | Put the words in order. | he teaches maths at a school near the station
@@ -871,7 +871,7 @@ c0,A2.2,cond_zero,A2.2,use,gap,read,,a2-extras-1.csv:108,"cond_zero | A2.2 | gap
 c0,A2.2,cond_zero,A2.2,use,text,read,,a2-extras-1.csv:109,cond_zero | A2.2 | text | Join with If: You press this button. The door opens. | 
 c0,A2.2,cond_zero,A2.2,check,mcq,read,,a2-extras-1.csv:110,"cond_zero | A2.2 | mcq | Which sentence is NOT correct? | If you mix red and white, you gets pink."
 c0,A2.2,cond_zero,A2.2,check,order,rule,,a2-extras-1.csv:111,cond_zero | A2.2 | order | Put the words in order. | if people don't sleep they feel tired
-c0,A2.2,cond_zero,B1.1,learn,mcq,read,cz-B11-1a-r5,built-in,"cond_zero | B1.1 | mcq | Which word can replace 'if' here? 'If it rains, the street floods.' | whenever"
+c0,A2.2,cond_zero,B1.1,check,mcq,read,cz-B11-1a-r5,built-in,"cond_zero | B1.1 | mcq | Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl. | plays"
 c0,A2.2,cond_zero,B1.1,learn,mcq,read,cz-B11-2a-r3,built-in,"cond_zero | B1.1 | mcq | Which sentence is about something that is always true? | If metal gets hot, it expands."
 c0,A2.2,cond_zero,B1.1,use,text,read,cz-B11-3a-r2,built-in,"cond_zero | B1.1 | text | Rewrite with when: If you press this button, the door opens. | "
 c0,A2.2,cond_zero,B1.1,check,mcq,read,cz-B11-4a-r2,built-in,"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If people don't sleep enough, they would be grumpy."
@@ -915,7 +915,7 @@ c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-cond-rep-1.csv:38,cond_zero | B1.1 | m
 c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-cond-rep-1.csv:39,"cond_zero | B1.1 | mcq | Choose the correct option: If you leave milk out of the fridge all day, it ___ sour. | goes"
 c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-cond-rep-1.csv:40,cond_zero | B1.1 | mcq | Choose the correct option: I get a headache if I ___ too much coffee. | drink
 c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-cond-rep-1.csv:42,"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If the battery will get low, the screen goes dark."
-c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-cond-rep-1.csv:43,"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If metal will get hot, it expands."
+c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-cond-rep-1.csv:43,"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If metal gets hot, it expand."
 c0,A2.2,cond_zero,B1.1,check,mcq,read,,b1-upgrades-1.csv:43,"cond_zero | B1.1 | mcq | Choose the correct option: If the temperature ___ below zero, water turns into ice. | falls"
 c0,A2.2,cond_zero,B1.1,use,text,read,,b1-upgrades-1.csv:44,cond_zero | B1.1 | text | Start with *If customers pay*: The company charges extra for late payment. | 
 c1,A2.2,cond_first,A2.2,check,mcq,read,cf-A22-1a-r2,built-in,"cond_first | A2.2 | mcq | Choose the correct form: If it ___ tomorrow, we will stay at home. | rains"
@@ -1667,7 +1667,7 @@ pp_for_since,A2.2,present_perfect,B1.1,check,gap,read,,b1-tenses-2.csv:13,"prese
 pp_for_since,A2.2,present_perfect,B1.1,use,gap,read,,b1-tenses-2.csv:20,present_perfect | B1.1 | gap | How long ___ you ___ for this company now? (work) | 
 pp_for_since,A2.2,present_perfect,B1.1,use,text,read,,b1-tenses-2.csv:23,present_perfect | B1.1 | text | Make a question with How long: She has lived in Spain. | 
 pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,,b1-tenses-2.csv:28,present_perfect | B1.1 | mcq | Choose the correct option: We ___ each other since we were at school. | have known
-pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,,b1-tenses-2.csv:29,present_perfect | B1.1 | mcq | Choose the correct option: She has worked here ___ 2019. | since
+pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,,b1-tenses-2.csv:29,present_perfect | B1.1 | mcq | Choose the correct option: My parents have had the same family doctor ___ twenty years. | for
 pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,,b1-tenses-2.csv:30,present_perfect | B1.1 | mcq | Choose the correct option: I've worked here ___ 2015. | since
 pp_for_since,A2.2,present_perfect,B1.1,check,mcq,read,,b1-upgrades-1.csv:19,"present_perfect | B1.1 | mcq | Choose the correct option: I ___ in this flat for six years, and I still love the view from the balcony. | have lived"
 pp_for_since,A2.2,cmp_pp_ps,B1.1,learn,gap,read,,compare-past-1.csv:24,cmp_pp_ps | B1.1 | gap | I ___ here since 2010. I still work here. (work) | 
@@ -2265,7 +2265,7 @@ by_until,B1.1,time_clauses,B1.1,check,mcq,read,,pairs-1.csv:18,"time_clauses | B
 by_until,B1.1,time_clauses,B1.1,check,mcq,read,,pairs-1.csv:19,"time_clauses | B1.1 | mcq | Choose the correct option: ___ the time we reached the airport, our plane had already left. | By"
 by_until,B1.1,time_clauses,B1.2,learn,match,read,,b1-new-2.csv:77,time_clauses | B1.2 | match | Match each time phrase with its meaning. | until = continues up to that moment ; by the time = is finished before that moment ; as soon as = immediately after something happens ; whenever = every time something happens
 c1_modal,B1.1,cond_first,B1.2,learn,mcq,read,cf-B12-2a-r2,built-in,"cond_first | B1.2 | mcq | What is the difference? A: 'If you're late, I'll be angry.' B: 'If you're late, I might be angry.' | A is more certain than B."
-c1_unless,B1.1,cond_first,B1.1,check,mcq,read,cf-B11-1a-r3,built-in,cond_first | B1.1 | mcq | Choose the correct option: We won't finish on time ___ we start now. | unless
+c1_unless,B1.1,cond_first,B1.1,check,mcq,read,cf-B11-1a-r3,built-in,cond_first | B1.1 | mcq | Choose the correct option: We won't finish on time ___ someone helps us. | unless
 c1_unless,B1.1,cond_first,B1.1,use,write,read,cf-B11-6a,built-in,cond_first | B1.1 | write | Write a sentence with unless about something you must do to avoid a problem. | 
 c1_unless,B1.1,cond_first,B1.1,check,order,rule,cf-B11-3c,built-in,cond_first | B1.1 | order | Put the words in order. | unless you hurry you will miss the train
 c1_unless,B1.1,cond_zero,B1.1,use,gap,read,,b1-cond-rep-1.csv:27,"cond_zero | B1.1 | gap | Unless you ___ it regularly, the plant ___ . (water / die) | "
@@ -2580,7 +2580,7 @@ pas_act,B1.1,present_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:25,pre
 pas_act,B1.1,present_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:26,present_simple_passive | B1.1 | text | Start with *Tea*: People grow tea in the mountains. | 
 pas_act,B1.1,present_simple_passive,B1.1,learn,match,read,,b1-passives-1.csv:29,"present_simple_passive | B1.1 | match | Match each sentence with the one that means the same, without saying who. | They build houses here. = Houses are built here. ; People speak English here. = English is spoken here. ; Someone cleans the office. = The office is cleaned. ; They sell tickets online. = Tickets are sold online."
 pas_act,B1.1,past_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:62,past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday. | 
-pas_act,B1.1,past_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:63,past_simple_passive | B1.1 | text | Start with *This factory*: The company built this factory in 1990. | 
+pas_act,B1.1,past_simple_passive,B1.1,use,text,read,,b1-passives-1.csv:63,past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *This factory*: The company built this factory in 1990. | 
 pas_act,B1.1,past_simple_passive,B1.1,learn,match,read,,b1-passives-1.csv:67,"past_simple_passive | B1.1 | match | Match each sentence with the one that means the same, without saying who. | They closed the road. = The road was closed. ; Someone broke the window. = The window was broken. ; A thief took my bag. = My bag was taken. ; They cancelled the flight. = The flight was cancelled."
 pas_act,B1.1,present_simple_passive,B1.2,check,mcq,read,psp-B12-2a-r2,built-in,present_simple_passive | B1.2 | mcq | Which sentence says the same as 'People often call him Mo'? | He is often called Mo.
 pas_act,B1.1,present_simple_passive,B1.2,use,text,read,psp-B12-3b-r3,built-in,"present_simple_passive | B1.2 | text | Start with *The rooms*, and do not say who: Someone cleans the rooms daily. | "
@@ -2718,12 +2718,11 @@ pas_will,B1.1,future_passive,B1.2,check,mcq,rule,,b1-passives-1.csv:172,future_p
 pas_will,B1.1,future_passive,B1.2,check,mcq,rule,,b1-passives-1.csv:173,future_passive | B1.2 | mcq | Choose the correct option: Tomorrow the shop ___ by the owner for repairs. | will be closed
 pas_will,B1.1,future_passive,B1.2,check,mcq,rule,,b1-passives-1.csv:174,"future_passive | B1.2 | mcq | Choose the correct option: By the end of the month, all the work ___ . | will be finished"
 pas_will,B1.1,future_passive,B1.2,check,mcq,rule,,b1-passives-1.csv:176,future_passive | B1.2 | mcq | Which sentence is NOT correct? | The new library will opened next spring.
-pas_will,B1.1,future_passive,B1.2,use,text,rule,,b1-upgrades-1.csv:42,future_passive | B1.2 | text | Start with *The winner*: They will announce the winner on Friday. | 
+pas_will,B1.1,future_passive,B1.2,use,text,rule,,b1-upgrades-1.csv:42,future_passive | B1.2 | text | Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday. | 
 past_seq,B1.1,past_continuous,A2.2,learn,mcq,read,,contrast-1.csv:2,past_continuous | A2.2 | mcq | Which sentence means the phone rang in the middle of dinner? | We were having dinner when the phone rang.
 past_seq,B1.1,past_continuous,A2.2,learn,mcq,read,,contrast-1.csv:3,"past_continuous | A2.2 | mcq | Which sentence means she started cooking after you arrived? | When I arrived, she cooked dinner."
 past_seq,B1.1,cmp_ps_pc,B1.1,learn,mcq,read,,compare-past-1.csv:4,"cmp_ps_pc | B1.1 | mcq | Which sentence means 'we had already started dinner'? | When Karen arrived, we were having dinner."
 past_seq,B1.1,cmp_ps_pc,B1.1,learn,mcq,read,,compare-past-1.csv:5,"cmp_ps_pc | B1.1 | mcq | Which sentence means 'first she arrived, then we had dinner'? | When Karen arrived, we had dinner."
-past_seq,B1.1,cmp_ps_pc,B1.1,use,gap,read,,compare-past-1.csv:13,cmp_ps_pc | B1.1 | gap | Kate ___ TV a lot when she was ill last year. (watch) | 
 past_seq,B1.1,cmp_ps_pc,B1.1,use,gap,read,,compare-past-1.csv:14,cmp_ps_pc | B1.1 | gap | We ___ all the way home after the party last night. (walk) | 
 past_seq,B1.1,past_continuous,B1.1,learn,match,read,,contrast-1.csv:4,"past_continuous | B1.1 | match | Match each sentence with its meaning. | I was making tea when Tom came. = Already in progress ; When Tom came, I made tea. = Started after his arrival ; I had made tea before Tom came. = Ready before he arrived"
 past_seq,B1.1,cmp_ps_pc,B1.1,use,gap,read,,twins-2.csv:22,cmp_ps_pc | B1.1 | gap | Last Saturday we ___ ten kilometres along the coast. (walk) | 
@@ -2821,7 +2820,7 @@ ppc_result,B1.1,present_perfect_continuous,B1.1,check,gap,read,,b1-tenses-2.csv:
 ppc_result,B1.1,present_perfect_continuous,B1.1,use,gap,read,,b1-tenses-2.csv:51,"present_perfect_continuous | B1.1 | gap | I ___ all day, so I need a break. (work) | "
 ppc_result,B1.1,present_perfect_continuous,B1.1,check,mcq,read,,b1-tenses-2.csv:61,present_perfect_continuous | B1.1 | mcq | Choose the correct option: Her hands are covered in paint. She ___ the kitchen. | has been painting
 ppc_result,B1.1,present_perfect_continuous,B1.1,check,mcq,read,,b1-upgrades-1.csv:23,present_perfect_continuous | B1.1 | mcq | Choose the correct option: She is exhausted because she ___ all night for tomorrow's exam. | has been studying
-ppc_result,B1.1,present_perfect_continuous,B1.2,use,gap,read,ppc-B12-3a-r2,built-in,present_perfect_continuous | B1.2 | gap | The children are washing their hands now. Look at the floor! They ___ with paint. (play) | 
+ppc_result,B1.1,present_perfect_continuous,B1.2,check,mcq,read,ppc-B12-3a-r2,built-in,present_perfect_continuous | B1.2 | mcq | Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint. | have been playing
 ppc_result,B1.1,present_perfect_continuous,B1.2,check,mcq,read,ppc-B12-5a-r2,built-in,present_perfect_continuous | B1.2 | mcq | Choose the correct option: Sorry I'm late. I ___ in traffic since eight. | have been sitting
 ppc_result,B1.1,present_perfect_continuous,B1.2,check,gap,read,,b1-tenses-2.csv:48,"present_perfect_continuous | B1.2 | gap | I ___ all morning, so I'm tired. | "
 ppc_result,B1.1,present_perfect_continuous,B1.2,use,text,read,,b1-tenses-2.csv:57,present_perfect_continuous | B1.2 | text | It's 11 a.m. Explain with *because*: Kate is very tired. (run / all morning) | 
@@ -2921,7 +2920,7 @@ so_such_basic,B1.1,so_such,B1.2,learn,match,read,,b1-new-5.csv:130,so_such | B1.
 so_such_basic,B1.1,so_such,B1.2,learn,match,read,,b1-new-5.csv:131,so_such | B1.2 | match | Match each wrong sentence with its correct version. | It was so a long day. = It was such a long day. ; She is such tired. = She is so tired. ; They have so nice friends. = They have such nice friends. ; There is such much noise. = There is so much noise.
 so_such_basic,B1.1,articles,B1.2,use,gap,read,,twins-2.csv:36,articles | B1.2 | gap | Complete with one word: It was such ___ long journey that we stopped twice. | 
 some_offers,B1.1,quantity,A2.2,check,gap,read,,b1-new-1.csv:85,quantity | A2.2 | gap | Would you like ___ tea? | 
-some_offers,B1.1,indefinite_pronouns,B1.1,check,order,read,,b1-new-5.csv:136,indefinite_pronouns | B1.1 | order | Put the words in order. | would you like something to drink
+some_offers,B1.1,indefinite_pronouns,B1.1,check,order,read,,b1-new-5.csv:136,indefinite_pronouns | B1.1 | order | Put the words in order to make a question. | would you like something to eat before we leave
 some_offers,B1.1,indefinite_pronouns,B1.1,check,gap,read,,b1-new-5.csv:152,indefinite_pronouns | B1.1 | gap | Would you like ___ to eat? There's some pizza. | 
 some_offers,B1.1,indefinite_pronouns,B1.1,check,mcq,read,,b1-new-5.csv:160,indefinite_pronouns | B1.1 | mcq | Choose the correct option: Would you like ___ to drink? | something
 stative2,B1.1,present_continuous,B1.1,use,gap,read,,b1-tenses-1.csv:62,"present_continuous | B1.1 | gap | They ___ about moving to the coast at the moment, but they haven't decided yet. (think) | "
@@ -2960,7 +2959,7 @@ tag_basic,B1.1,question_tags,B1.2,learn,match,read,,b1-new-3.csv:50,question_tag
 too_to,B1.1,adverbs,B1.1,check,gap,read,,b1-new-5.csv:58,adverbs | B1.1 | gap | The water is warm ___ to swim. | 
 too_to,B1.1,adverbs,B1.2,check,gap,read,,b1-new-5.csv:59,adverbs | B1.2 | gap | She's ___ tired to drive. | 
 too_to,B1.1,adverbs,B1.2,use,gap,read,,b1-new-5.csv:66,adverbs | B1.2 | gap | Complete: This coffee is ___ hot to drink. I can't drink it. | 
-too_to,B1.1,adverbs,B1.2,check,mcq,read,,b1-new-5.csv:76,adverbs | B1.2 | mcq | Choose the correct option: The soup wasn't hot ___ to eat. | enough
+too_to,B1.1,adverbs,B1.2,check,mcq,read,,b1-new-5.csv:76,"adverbs | B1.2 | mcq | Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again. | enough"
 two_obj_explain,B1.1,two_objects,B1.1,check,order,read,,b1-new-4.csv:137,two_objects | B1.1 | order | Put the words in order. | she explained the problem to me
 two_obj_explain,B1.1,two_objects,B1.1,check,gap,read,,b1-new-4.csv:145,two_objects | B1.1 | gap | She introduced her new colleague ___ the whole team. | 
 two_obj_explain,B1.1,two_objects,B1.1,use,gap,read,,b1-new-4.csv:152,two_objects | B1.1 | gap | Complete with *to* or *for*: She explained the rules ___ us. | 
@@ -3115,7 +3114,7 @@ c3,B1.2,cond_third,B1.2,use,text,read,,b1-cond-rep-1.csv:136,"cond_third | B1.2 
 c3,B1.2,cond_third,B1.2,use,text,read,,b1-cond-rep-1.csv:137,"cond_third | B1.2 | text | Imagine it happened differently. Start with *If he*: He didn't practise, so he lost the match. | "
 c3,B1.2,cond_third,B1.2,learn,match,read,,b1-cond-rep-1.csv:138,"cond_third | B1.2 | match | Match each real past with the imagined past. | I didn't study. = If I had studied, I would have passed. ; We missed the train. = If we hadn't missed it, we'd have arrived on time. ; She forgot her umbrella. = If she hadn't forgotten it, she wouldn't have got wet. ; He didn't apologise. = If he had apologised, she would have forgiven him."
 c3,B1.2,cond_third,B1.2,learn,match,read,,b1-cond-rep-1.csv:139,"cond_third | B1.2 | match | Match each beginning with its ending. | If I had saved more, = I would have bought the flat. ; If we had booked early, = we would have got a discount. ; If she had listened, = she would have understood. ; If they had trained, = they would have won."
-c3,B1.2,cond_third,B1.2,learn,match,read,,b1-cond-rep-1.csv:140,"cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I'm not going."
+c3,B1.2,cond_third,B1.2,learn,match,read,,b1-cond-rep-1.csv:140,"cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I probably won't go."
 c3,B1.2,cond_third,B1.2,learn,match,read,,b1-cond-rep-1.csv:141,"cond_third | B1.2 | match | Match each beginning with its ending. | If the alarm hadn't rung, = we would have slept late. ; If I hadn't known the way, = I would have got lost. ; If she hadn't called, = I wouldn't have heard the news. ; If it hadn't been so cold, = we would have stayed longer."
 c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:142,"cond_third | B1.2 | mcq | Choose the correct option: If I ___ the news, I would have told you. | had known"
 c3,B1.2,cond_third,B1.2,check,mcq,read,,b1-cond-rep-1.csv:143,cond_third | B1.2 | mcq | Choose the correct option: She ___ the job if she had spoken better English. | would have got
@@ -3259,7 +3258,7 @@ iq_wh,B1.2,ind_polite,B1.1,learn,order,rule,ip-B11-3b-r3,built-in,ind_polite | B
 iq_wh,B1.2,ind_polite,B1.1,check,order,rule,ip-B11-3c,built-in,ind_polite | B1.1 | order | Put the words in order. | do you know what time the bank opens
 iq_wh,B1.2,ind_polite,B1.1,learn,order,rule,var-ip-b11-order-01-r2,built-in,ind_polite | B1.1 | order | Put the words in order to ask politely. Start with *Could you tell me*. | could you tell me where the bank is
 iq_wh,B1.2,ind_polite,B1.1,learn,match,read,var-ip-b11-match-01-r2,built-in,ind_polite | B1.1 | match | Match each question with the polite question that means the same. | Where is the meeting room? = Could you tell me where the meeting room is? ; What time does the café close? = Do you know what time the café closes? ; Does this bus stop at the station? = Could you tell me if this bus stops at the station?
-iq_wh,B1.2,ind_polite,B1.1,use,write,read,var-ip-b11-write-02,built-in,"ind_polite | B1.1 | write | You want to join an evening Italian course at a language school, but the website doesn't say when it begins. Write one polite question to the school. | "
+iq_wh,B1.2,ind_polite,B1.1,use,write,read,ipw-B11-2,built-in,"ind_polite | B1.1 | write | You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school. | "
 iq_wh,B1.2,ind_polite,B1.1,learn,order,rule,,b1-cond-rep-1.csv:220,ind_polite | B1.1 | order | Put the words in order. | could you tell me where the nearest bank is
 iq_wh,B1.2,ind_polite,B1.1,learn,order,rule,,b1-cond-rep-1.csv:221,ind_polite | B1.1 | order | Put the words in order. | do you know what time the shop opens
 iq_wh,B1.2,ind_polite,B1.1,learn,order,rule,,b1-cond-rep-1.csv:222,ind_polite | B1.1 | order | Put the words in order. | i'd like to know how much this costs
@@ -3362,7 +3361,7 @@ iq_wh,B1.2,ind_advanced,B2.2,use,write,read,ia-B22-6a,built-in,"ind_advanced | B
 iq_wh,B1.2,ind_advanced,B2.2,check,mcq,read,ia-C11-4a-r3,built-in,ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We talked about how could we cut costs.
 iq_wh,B1.2,ind_advanced,B2.2,check,mcq,read,,twins-2.csv:16,ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We discussed where should we hold the party.
 iq_wh,B1.2,ind_advanced,B2.2,learn,gap,read,,typical-b2c1-1.csv:21,ind_advanced | B2.2 | gap | I'm not sure what time the meeting ___ tomorrow. (start) | 
-iq_yn,B1.2,ind_polite,B1.1,use,write,read,var-ip-b11-write-01,built-in,"ind_polite | B1.1 | write | Last night you had dinner at a restaurant, and this morning you can't find your scarf. You phone the restaurant. Write one polite question. | "
+iq_yn,B1.2,ind_polite,B1.1,use,write,read,ipw-B11-1,built-in,"ind_polite | B1.1 | write | Last night you had dinner at a restaurant, and this morning you can't find your scarf. You phone the restaurant. Write one polite question. | "
 iq_yn,B1.2,ind_polite,B1.1,learn,order,rule,,b1-cond-rep-1.csv:223,ind_polite | B1.1 | order | Put the words in order. | can you tell me if this bus goes to the airport
 iq_yn,B1.2,ind_polite,B1.1,learn,gap,read,,b1-cond-rep-1.csv:230,ind_polite | B1.1 | gap | Can you tell me ___ this bus stops at the museum? | 
 iq_yn,B1.2,ind_polite,B1.1,learn,mcq,read,,b1-cond-rep-1.csv:248,ind_polite | B1.1 | mcq | Choose the correct option: Could you tell me ___ the library is open on Sundays? | if
@@ -3374,7 +3373,7 @@ iq_yn,B1.2,ind_polite,B1.1,use,text,read,,iq-b1-6.csv:38,"ind_polite | B1.1 | te
 iq_yn,B1.2,ind_polite,B1.2,learn,mcq,read,ip-B12-1a,built-in,ind_polite | B1.2 | mcq | Choose the correct word: Do you know ___ the shop is open on Sundays? | if
 iq_yn,B1.2,ind_polite,B1.2,check,mcq,read,ip-B12-5a-r2,built-in,ind_polite | B1.2 | mcq | Which sentence is correct? | Could you let me know whether the contract has been signed?
 iq_yn,B1.2,ind_polite,B1.2,use,write,rule (new or changed task),ip-B12-6a-r4,built-in,"ind_polite | B1.2 | write | Last week you emailed your landlord about the broken heater in your flat, but he hasn't answered. Write him one polite question. Start with *Could you tell me* or *I'd like to know*. | "
-iq_yn,B1.2,ind_polite,B1.2,use,write,read,var-ip-b12-write-01,built-in,"ind_polite | B1.2 | write | You ordered a printer online ten days ago, but it still hasn't arrived. Write one polite question to the shop's customer service. | "
+iq_yn,B1.2,ind_polite,B1.2,use,write,read,ipw-B12-1,built-in,"ind_polite | B1.2 | write | You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service. | "
 iq_yn,B1.2,ind_polite,B1.2,check,order,rule,,b1-cond-rep-1.csv:224,ind_polite | B1.2 | order | Put the words in order. | i wonder whether she has already left
 iq_yn,B1.2,ind_polite,B1.2,learn,gap,read,,b1-cond-rep-1.csv:234,ind_polite | B1.2 | gap | I wonder ___ he will come. | 
 iq_yn,B1.2,ind_polite,B1.2,learn,gap,read,,b1-cond-rep-1.csv:238,ind_polite | B1.2 | gap | Can you tell me if there ___ a pharmacy near here? (be) | 
@@ -3453,7 +3452,8 @@ pas_cont,B1.2,present_continuous_passive,B1.2,check,mcq,rule,,b1-upgrades-1.csv:
 pas_cont,B1.2,present_continuous_passive,B1.2,use,text,rule,,b1-upgrades-1.csv:38,present_continuous_passive | B1.2 | text | Rewrite the sentence. Start with *The road*: They are repairing the road. | 
 pastp_by,B1.2,narrative,B1.1,check,mcq,read,,compare-past-1.csv:32,"narrative | B1.1 | mcq | Choose the correct option: When I arrived, the film ___. I missed the beginning. | had already started"
 pastp_by,B1.2,narrative,B1.1,use,gap,read,,compare-past-1.csv:37,"narrative | B1.1 | gap | By the time we asked Karen to come to the cinema, she ___ the film. (already / see) | "
-pastp_by,B1.2,narrative,B1.1,use,gap,read,,compare-past-1.csv:40,"narrative | B1.1 | gap | A: Was Tom there when you arrived? B: No, he ___. (already / leave) | "
+pastp_by,B1.2,narrative,B1.1,use,gap,read,,compare-past-1.csv:40,"narrative | B1.1 | gap | Ana: 'Did you have lunch with your colleagues yesterday?'
+Tom: 'No, when I got to the café, they ___ eating.' (already / finish) | "
 pastp_by,B1.2,past_perfect,B1.2,check,mcq,read,ppf-B12-1a-r3,built-in,"past_perfect | B1.2 | mcq | Choose the correct option: The bus left at 8.00. We got to the stop at 8.05. When we got there, the bus ___ already ___. | had ... left"
 pastp_by,B1.2,past_perfect,B1.2,use,gap,read,ppf-B12-3b,built-in,"past_perfect | B1.2 | gap | By the time I called, he ___ out. (already / go) | "
 pastp_by,B1.2,past_perfect,B1.2,check,mcq,read,ppf-B12-4a-r2,built-in,"past_perfect | B1.2 | mcq | Which sentence is NOT correct? | When I arrived, she already has left."

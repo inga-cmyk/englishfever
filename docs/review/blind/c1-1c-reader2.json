@@ -1,0 +1,137 @@
+[
+{
+"id": "c1-1c-001",
+"answer": [
+"am measuring"
+],
+"other_correct": [
+[
+"'m measuring"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level: present continuous for an activity now; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-002",
+"answer": [
+"measures"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2 stative-use contrast; the pair 001/002 is the real point, but each alone is easy.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-003",
+"answer": [
+"is considering"
+],
+"other_correct": [
+[
+"'s considering"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2 level; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-004",
+"answer": [
+"You're constantly changing your mind!"
+],
+"other_correct": [
+"You are constantly changing your mind.",
+"You're constantly changing your mind again.",
+"You constantly change your mind."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Answer given in the quote's content; 'complain' + two keywords makes it nearly a copy exercise. Simple-present version also correct (less targeted).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-005",
+"answer": [
+"am",
+"driving"
+],
+"other_correct": [
+[
+"'m",
+"driving"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap before 'usually' invites 'do/don't ... drive' confusion; 'I do usually drive' is not sensible here, fine. Cue 'Don't phone me' makes the answer predictable.",
+"level_problem": "B1 level; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-006",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'forever is borrowing' is a form few learners would write; 'forever' placement is the only issue, and it is a word-order slip rather than the tense point. Also 'forever' for annoyance is dated/less usual than 'always/constantly'."
+},
+{
+"id": "c1-1c-007",
+"answer": "you're constantly interrupting me when I'm speaking",
+"other_correct": [
+"when I'm speaking you're constantly interrupting me",
+"you're interrupting me constantly when I'm speaking",
+"when I'm speaking you're interrupting me constantly",
+"I'm speaking when you're constantly interrupting me (odd but grammatical)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capitals or punctuation on cards, so several orders are open; the content is nearly given by the cards.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-008",
+"answer": "This old suitcase is weighing nearly five kilos.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2 stative verbs; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-009",
+"answer": [
+"apologise"
+],
+"other_correct": [
+[
+"apologize"
+],
+[
+"are apologising"
+],
+[
+"do apologise"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Write to a customer' is superfluous. Cue (apologise) with 'for the delay' gives the verb; only the tense/form is tested. 'We are apologising' is less usual but correct; US 'apologize' correct.",
+"level_problem": "Fine for B2 formal register; C1 nuance is thin.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-010",
+"answer": "Health minister resigns over expenses",
+"other_correct": "",
+"wrong_options_that_fit": "Health minister has resigned over expenses (also used in news headlines, especially in British press; past simple too)",
+"instruction_problem": "'Usual way' is vague; 'has resigned' and 'resigned' are also common in headlines.",
+"level_problem": "",
+"sense_problem": "Two options (resigns, has resigned) are real headline forms; 'usual' is arguable."
+}
+]

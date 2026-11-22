@@ -1,0 +1,153 @@
+[
+{
+"id": "c1-1c-001",
+"answer": [
+"am measuring"
+],
+"other_correct": [
+[
+"'m measuring"
+],
+[
+"am going to measure"
+],
+[
+"will measure"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present continuous for action in progress is B1; only the stative/dynamic contrast in 002 is C1-ish.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-002",
+"answer": [
+"measures"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Stative measure is B2/C1 at most; fine.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-003",
+"answer": [
+"is considering"
+],
+"other_correct": [
+[
+"'s considering"
+],
+[
+"has been considering"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'has been considering' also fits."
+},
+{
+"id": "c1-1c-004",
+"answer": [
+"You're constantly changing your mind."
+],
+"other_correct": [
+"You are constantly changing your mind.",
+"You constantly change your mind (less annoyed, simple present, still correct)",
+"You're constantly changing your mind!"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Quoted fish/pasta situation is fine but the continuous form is easy to guess from 'constantly'; the task is open-ended so several sentences are right.",
+"level_problem": "Mostly B2; C1 nuance only via complaint use.",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-005",
+"answer": [
+"am",
+"driving"
+],
+"other_correct": [
+[
+"'m",
+"driving"
+],
+[
+"don't",
+"drive"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Task is ambiguous: 'don't usually drive' is correct grammar but illogical after 'Don't phone me'; 'Write one word' and the gap '(drive)' leave the learner unsure whether the habit or the in-progress reading is wanted.",
+"level_problem": "",
+"sense_problem": "The sense depends on illogical vs logical reading; 'am usually driving' is the intended but the simple present fits the grammar."
+},
+{
+"id": "c1-1c-006",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Learner mistake is plausible (adverb position)."
+},
+{
+"id": "c1-1c-007",
+"answer": "you're constantly interrupting me when I'm speaking",
+"other_correct": [
+"when I'm speaking you're constantly interrupting me",
+"when I'm speaking, you're constantly interrupting me",
+"you're interrupting me constantly when I'm speaking",
+"when I'm speaking you're interrupting me constantly"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Card order gives no capitalisation/comma hints so both clause orders are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-008",
+"answer": "This old suitcase is weighing nearly five kilos.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Plausible learner error."
+},
+{
+"id": "c1-1c-009",
+"answer": [
+"apologise"
+],
+"other_correct": [
+[
+"apologize"
+],
+[
+"do apologise"
+],
+[
+"do apologize"
+],
+[
+"are apologising"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Formal 'are apologising' is less usual but correct; American spelling 'apologize' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-1c-010",
+"answer": "Health minister resigns over expenses",
+"other_correct": "",
+"wrong_options_that_fit": "'Health minister has resigned over expenses' and 'Health minister resigned over expenses' are also used in real headlines (present perfect and past are common).",
+"instruction_problem": "'The usual way' is ambiguous: perfect/past headlines exist; only 'is resigning' is clearly unnatural.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

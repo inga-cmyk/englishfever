@@ -1,4 +1,5 @@
-"""C1 direction 1 (Advanced present simple and continuous), round 1, second version (22 November 2026): points x_state_cont,
+"""C1 direction 1 (judged after rounds c1-1, c1-1b, c1-1c; the headline task was dropped: readers showed that *has resigned* and
+*resigned* are also real headline forms). C1 direction 1 (Advanced present simple and continuous), round 1, second version (22 November 2026): points x_state_cont,
 x_mental_cont, x_always_cont. Hewings, Advanced Grammar in Use (3rd ed.), units 1-2; Murphy, English Grammar in Use, units 3-4.
 Draft: no C1 topic in the app yet, so these rows are not packaged.
 
@@ -59,15 +60,7 @@ mc(T, L, 4, "Which sentence has a mistake?", "This old suitcase is weighing near
    "*weigh* svara nozīmē ir stāvoklis: *This suitcase weighs 23 kilos*. *The vet is weighing the dog* ir darbība, "
    "tāpēc tur ilgstošā forma ir pareiza.")
 # p1 work: saying it is doing it (performative)
-gp(T, L, 3, "Write to a customer: We ___ for the delay in replying to your email. (apologise)", "apologise | do apologise | apologize | do apologize",
+gp(T, L, 3, "We ___ for the delay in replying to your email. (apologise)", "apologise | do apologise | apologize | do apologize",
    "When the words themselves are the act (apologising by saying it), use the present simple: *We apologise for the delay*, "
    "not *We're apologising*.",
    "Ja paši vārdi ir darbība (atvainojamies, to sakot), lieto Present Simple: *We apologise for the delay*, nevis *We're apologising*.")
-# h1 news: a headline
-mc(T, L, 3, "Which is the usual way to write this as a news headline?", "Health minister resigns over expenses",
-   ["Health minister has resigned over expenses", "Health minister is resigning over expenses",
-    "Health minister resigned over expenses"],
-   "Headlines use the present simple for an event that has just happened: *Health minister resigns*. "
-   "In a normal sentence we would say *has resigned*.",
-   "Virsrakstos par tikko notikušu lietu lieto Present Simple: *Health minister resigns*. "
-   "Parastā teikumā teiktu *has resigned*.")

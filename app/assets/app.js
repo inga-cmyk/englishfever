@@ -778,7 +778,7 @@
     track('welcome', kase + ':' + set + i);
     var ok = h('button', { class: 'btn block', type: 'button' }, label);
     var m = UI.modal(h('div', { class: 'welcome-back' }, h('div', { class: 'wb-icon', 'aria-hidden': 'true' }, WELCOME_ICON[kase]), h('p', { class: 'wb-text' }, UI.rich(text)),
-      v.week_days > 0 ? h('p', { class: 'small muted wb-week' }, 'This week: ' + v.week_days + (v.week_days === 1 ? ' day' : ' days') + ' · ' + Math.max(1, Math.round(v.week_seconds / 60)) + ' min') : null, ok));
+      ok));   // no day count in the greeting (teacher, 22 November: 'This week' counted the last 7 days, which made no sense on a Monday)
     ok.onclick = function () { track('welcome_ok', kase); m.close(); };
   }
 

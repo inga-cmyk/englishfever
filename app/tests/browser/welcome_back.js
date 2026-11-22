@@ -20,7 +20,7 @@ const BASE = 'http://127.0.0.1:8099', OUT = __dirname + '/shots/';
   }
   const week = { week_days: 3, week_seconds: 2520 };
   let r = await open({ gap: 3, yesterday: { seconds: 0, answers: 0 }, ...week }, 0, 'B2.1', 'wb-gap3-b2.png');
-  check('3 days away, B2: a message about the days, with this week', r.txt && /3 days|articles/.test(r.txt) && /This week: 3 days · 42 min/.test(r.txt), r.txt);
+  check('3 days away, B2: a message about the days, no day count line', r.txt && /3 days|articles/.test(r.txt) && !/This week/.test(r.txt), r.txt);
   check('the button closes it and Home stays', r.closed);
   r = await open({ gap: 3, yesterday: { seconds: 0, answers: 0 }, ...week }, 0, 'A2.2', 'wb-gap3-a2.png', 'dark');
   check('the same for A2: plain English', r.txt && /Welcome back! 3 days is a long time\. We missed you\./.test(r.txt), r.txt);

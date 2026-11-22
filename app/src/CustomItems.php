@@ -30,7 +30,7 @@ final class CustomItems
     private static function fromRow(array $r): array
     {
         $it = json_decode((string) $r['data'], true) ?: [];
-        return ['id' => $r['item_id'], 'skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'kind' => $r['kind']] + $it;
+        return Content::moved(['id' => $r['item_id'], 'skill' => $r['skill'], 'level' => $r['level'], 'bloom' => (int) $r['bloom'], 'kind' => $r['kind']] + $it);   // a point moved to another topic (22 November): same id
     }
 
     // ───────── the teacher's list ─────────
@@ -178,7 +178,7 @@ final class CustomItems
                 if ($from !== null) {
                     $o = $item; $o['skill'] = null;
                     if (strpos($from, '|') !== false) { [$from, $oq] = array_map('trim', explode('|', $from, 2)); $o['q'] = $oq; }
-                    foreach ($skills as $sk) if (mb_strtolower($sk['label']) === mb_strtolower($from) || $sk['id'] === $from || mb_strtolower(trim(preg_replace('/\s*[(:].*$/u', '', $sk['label']))) === mb_strtolower($from)) $o['skill'] = $sk['id'];
+                    foreach ($skills as $sk) if (in_array(mb_strtolower($from), self::topicNames($sk), true)) $o['skill'] = $sk['id'];
                     if ($o['skill'] === null) throw new ApiError("Unknown topic \"$from\" after from:.", 400);
                     if (isset($mine[self::dupKey($o)])) { $res['replaces'] = $mine[self::dupKey($o)]['id']; $res['warnings'][] = "Moves this question from $from: the copy there is retired."; }
                 }
@@ -247,13 +247,21 @@ final class CustomItems
         return array_values(array_filter(array_map('trim', explode($sep, $s)), fn($x) => $x !== ''));
     }
 
+    /** The names a file may use for a topic: its id, its full name, the name before a bracket or a colon ("Zero conditional"),
+     *  and its earlier names ("aka": a topic renamed on 22 November keeps the name its prepared files use). Lower case. */
+    private static function topicNames(array $s): array
+    {
+        $out = [$s['id']];
+        foreach (array_merge([$s['label']], $s['aka'] ?? []) as $l) { $l = mb_strtolower($l); $out[] = $l; $out[] = trim(preg_replace('/\s*[(:].*$/u', '', $l)); }
+        return $out;
+    }
+
     private static function buildRow(callable $get, array $skills, array &$res): array
     {
         // topic: id, full name, or the name before the bracket ("Zero conditional")
         $t = mb_strtolower($get('topic')); $skill = null;
         foreach ($skills as $s) {
-            $label = mb_strtolower($s['label']); $short = trim(preg_replace('/\s*[(:].*$/u', '', $label)); // the name before a bracket or a colon
-            if ($t !== '' && ($t === $s['id'] || $t === $label || $t === $short)) { $skill = $s; break; }
+            if ($t !== '' && in_array($t, self::topicNames($s), true)) { $skill = $s; break; }
         }
         if (!$skill) throw new ApiError("Unknown topic \"{$get('topic')}\". Use a topic name from the list on this page.", 400);
         $res['skill'] = $skill['label'];
@@ -351,7 +359,7 @@ final class CustomItems
         if ($get('also') !== '') {
             foreach (self::split($get('also'), ';') as $name) {
                 $found = null;
-                foreach ($skills as $sk) if (in_array(mb_strtolower($name), [$sk['id'], mb_strtolower($sk['label']), mb_strtolower(trim(preg_replace('/\s*[(:].*$/u', '', $sk['label'])))], true)) $found = $sk['id'];
+                foreach ($skills as $sk) if (in_array(mb_strtolower($name), self::topicNames($sk), true)) $found = $sk['id'];
                 if ($found === null) throw new ApiError("Unknown topic \"$name\" in the also topics column.", 400);
                 if ($found !== $item['skill']) $item['also'][] = $found;
             }

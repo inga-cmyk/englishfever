@@ -265,6 +265,19 @@ meta = {
     "errors": {c: {"name": v[0], "group": v[1]} for c, v in error_types.ERRORS.items()},
     "skill_err": error_types.SKILL_ERR,
 }
+import topic_layout   # one card level per topic, topics in a second group, points moved to another topic (teacher, 22 November)
+_ids = {s[0] for s in SKILLS}
+assert set(topic_layout.CARD_LEVEL) == _ids, ("CARD_LEVEL must name every topic once", _ids ^ set(topic_layout.CARD_LEVEL))
+assert all(v in ("A2", "B1", "B2") for v in topic_layout.CARD_LEVEL.values())
+_area_ids = {a[0] for a in AREAS}
+for _s in meta["skills"]:
+    _s["card"] = topic_layout.CARD_LEVEL[_s["id"]]
+    if _s["id"] in topic_layout.ALSO_AREAS:
+        assert set(topic_layout.ALSO_AREAS[_s["id"]]) <= _area_ids
+        _s["also_areas"] = topic_layout.ALSO_AREAS[_s["id"]]
+    if _s["id"] in topic_layout.AKA: _s["aka"] = topic_layout.AKA[_s["id"]]
+for _m in topic_layout.MOVES: assert _m["from"] in _ids and _m["to"] in _ids, _m
+meta["moves"] = topic_layout.MOVES
 import new_points   # the New group: grammar points with their first tasks, each with a short card of its own (teacher, 15 November)
 _skill_ids = {s[0] for s in SKILLS}
 meta["new_points"] = []

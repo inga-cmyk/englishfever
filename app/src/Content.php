@@ -22,7 +22,7 @@ final class Content
     public static function items(): array
     {
         if (self::$items === null) {
-            self::$items = self::load('items');
+            self::$items = array_map([self::class, 'moved'], self::load('items'));
             if (class_exists('CustomItems', false)) self::$items = array_merge(self::$items, CustomItems::approved()); // tasks the teacher added and approved
             foreach (self::$items as $i => $it) if (strncmp((string) $it['level'], 'C1', 2) === 0) self::$items[$i]['level'] = 'B2.2';   // no C1 level in the app (teacher, 12 November, U3 A): prepared C1 tasks are B2.2
             self::hideRelabelled();
@@ -53,7 +53,24 @@ final class Content
         if (isset($it['correct']) && is_string($it['correct']) && $it['correct'] !== '') $body = $it['correct'];
         elseif (!empty($it['sentence'])) $body = (string) $it['sentence'];
         elseif (!empty($it['pairs'])) $body = implode(' ; ', array_map(fn($p) => $p[0] . ' = ' . $p[1], $it['pairs']));
-        return implode(' | ', [(string) $it['skill'], (string) $it['kind'], (string) ($it['q'] ?? ''), $body]);
+        return implode(' | ', [(string) ($it['moved_from'] ?? $it['skill']), (string) $it['kind'], (string) ($it['q'] ?? ''), $body]);
+    }
+
+    /**
+     * Topic moves (teacher, 22 November; app/authoring/topic_layout.py, meta "moves"): the tasks of some grammar points belong to
+     * another topic (then, while, before + -ing: from "However, although, because of" to the time clauses). The task keeps its id and
+     * its text, the prepared files still name the old topic (so the import knows the task), and the app serves and records it in the
+     * new topic. "moved_from" keeps the old topic for the map key, the blind-check hash and the gates.
+     */
+    public static function moved(array $it): array
+    {
+        if (isset($it['moved_from'])) return $it;
+        foreach (self::meta()['moves'] ?? [] as $mv) {
+            if (($it['skill'] ?? '') !== $mv['from']) continue;
+            $p = self::point($it);
+            if ($p !== null && in_array($p, $mv['points'], true)) { $it['moved_from'] = $it['skill']; $it['skill'] = $mv['to']; return $it; }
+        }
+        return $it;
     }
 
     /** The grammar point of a task (14 November, C1), or null when the map does not know the task. */

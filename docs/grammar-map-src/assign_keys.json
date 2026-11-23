@@ -17338,5 +17338,37 @@
 "adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | ": [
 "x_performative",
 "read"
+],
+"adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn) | ": [
+"x_pres_story",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.": [
+"x_pres_story",
+"read"
+],
+"adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | ": [
+"x_pres_comment",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.": [
+"x_i_hear",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you look at my CV before Friday.": [
+"x_polite_cont",
+"read"
+],
+"adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | ": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | ": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.": [
+"x_performative",
+"read"
 ]
 }

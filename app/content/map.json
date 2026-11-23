@@ -7975,6 +7975,14 @@
 "adv_present | gap | We ___ for the delay in replying to your email. (apologise) | ": "x_performative",
 "adv_present | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | ": "x_state_cont",
 "adv_present | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ": "x_state_cont",
-"adv_present | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.": "x_state_cont"
+"adv_present | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.": "x_state_cont",
+"adv_present | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn) | ": "x_pres_story",
+"adv_present | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.": "x_pres_story",
+"adv_present | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | ": "x_pres_comment",
+"adv_present | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.": "x_i_hear",
+"adv_present | mcq | Which sentence has a mistake? | I'm wondering could you look at my CV before Friday.": "x_polite_cont",
+"adv_present | gap | The app ___ to work on my phone. Can you check it? (not / appear) | ": "x_state_cont",
+"adv_present | gap | My sister and her husband ___ their first baby next month. (expect) | ": "x_state_cont",
+"adv_present | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.": "x_performative"
 }
 }

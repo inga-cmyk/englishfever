@@ -4166,3 +4166,11 @@ x_performative,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:10,adv_present | C1
 x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:2,adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | 
 x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:3,adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | 
 x_state_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-1.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.
+x_pres_story,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:2,"adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn) | "
+x_pres_story,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:3,adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.
+x_pres_comment,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:4,"adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | "
+x_i_hear,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:5,adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.
+x_polite_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:6,adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you look at my CV before Friday.
+x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:7,adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | 
+x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:8,adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | 
+x_performative,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.

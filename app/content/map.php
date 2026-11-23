@@ -5911,7 +5911,6 @@ return json_decode(<<<'EF_JSON_END'
 "past_continuous | gap | He ___ his bike when he ___ off. (ride / fall) | ": "pastc_when",
 "past_continuous | gap | While she ___ the report, her colleagues ___ the room. (write / leave) | ": "pastc_when",
 "past_continuous | gap | What ___ you ___ when I called you last night? (do) | ": "pastc_when",
-"past_continuous | text | Write it about last night. Start with *Last night I*, and use *when*: I'm cooking dinner. Suddenly the smoke alarm goes off. | ": "pastc_when",
 "past_continuous | text | Write it about yesterday. Start with *Yesterday, while*: We're waiting for the bus. A man asks us for directions. | ": "pastc_when",
 "past_continuous | match | Match each long action with the short event. | I was reading in bed = when I heard a noise. ; We were crossing the road = when we saw a cyclist. ; She was painting the wall = when she fell off the ladder. ; They were driving home = when their car broke down.": "pastc_when",
 "past_continuous | mcq | Choose the correct option: I ___ in the garden when it started to rain. | was working": "pastc_when",
@@ -8173,7 +8172,6 @@ return json_decode(<<<'EF_JSON_END'
 "adv_part | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On": "x_part_prep",
 "adv_part | gap | Keep the jar in the fridge once ___. (open) | ": "x_part_conj",
 "adv_part | gap | ___ by the queue outside, the new café is very popular. (judge) | ": "x_part_comment",
-"adv_past | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light) | ": "x_past_both",
 "adv_past | mcq | Which sentence has a mistake? | We were flying to Oslo four times last year.": "x_pastc_repeat",
 "adv_past | gap | As soon as I saw her at the party, I was sure we ___ before. (meet) | ": "x_pastp_choice",
 "adv_past | gap | By the time Sam and I started working together, we ___ each other for ten years. (know) | ": "x_pastpc_choice",
@@ -8245,7 +8243,8 @@ return json_decode(<<<'EF_JSON_END'
 "adv_will | mcq | Which sentence has a mistake? | If should you change your mind, just call us.": "x_if_will",
 "adv_will | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need": "x_should_purpose",
 "adv_will | mcq | Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad. | would": "x_would_soft",
-"adv_will | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | ": "x_will_assume"
+"adv_will | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | ": "x_will_assume",
+"past_continuous | text | Write it about last night. Start with *Last night I*, and use *when*: I'm cooking dinner. Suddenly the smoke alarm goes off. | ": "pastc_when"
 }
 }
 EF_JSON_END

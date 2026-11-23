@@ -6,3 +6,8 @@
 - 010 dropped: *I had wondered if…* is not clearly a mistake (an earlier thought).
 - 002, 003, 005, 006, 007, 008 kept.
 Only accepted answers were added after the round (001): recorded with record-current.
+
+## Round c1-3b (3 new tasks)
+- 001 kept (*have hoped* about a finished weekend).
+- 002 dropped: *was always borrow* and *always was borrowing* are not believable mistakes, and the believable one (*always borrowed*) is correct.
+- 003: *hasn't changed* added (both readers: the school is still the same now).

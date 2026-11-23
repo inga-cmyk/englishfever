@@ -4181,3 +4181,5 @@ x_pastpc_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:5,adv_past | C1 | gap
 x_pastp_deduce,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:6,adv_past | C1 | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | 
 x_pastp_deduce,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:7,"adv_past | C1 | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved"
 x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:8,adv_past | C1 | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | 
+x_past_intend,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:9,"adv_past | C1 | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend."
+x_pastp_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:10,adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | 

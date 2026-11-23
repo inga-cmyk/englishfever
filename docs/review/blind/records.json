@@ -1699,6 +1699,11 @@
 "round": "r20-3",
 "task": "r20-3-028"
 },
+"3a7d70ff5e2ab283": {
+"gate_key": "adv_past | C1 | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend.",
+"round": "c1-3b",
+"task": "c1-3b-001"
+},
 "3b6941b63a4eb294": {
 "gate_key": "rep_statements | B2.1 | mcq | Which sentence reports this: 'I might be late.' | She said she might be late.",
 "round": "r20-2",
@@ -2583,6 +2588,11 @@
 "gate_key": "quantity | A2.2 | gap | My ___ ___ still at the airport. | ",
 "round": "r13",
 "task": "r13-072"
+},
+"5d6084464d30aec0": {
+"gate_key": "adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ",
+"round": "c1-3b",
+"task": "c1-3b-003"
 },
 "5dadc4875596bd5e": {
 "gate_key": "more_modals | B1.2 | mcq | Which sentence is NOT correct? | You should of booked the tickets much earlier.",
@@ -4523,6 +4533,11 @@
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is NOT correct? | If I'd have known about the traffic, I would've left earlier.",
 "round": "r20b-2",
 "task": "r20b-2-003"
+},
+"a142eff27388811c": {
+"gate_key": "adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ",
+"round": "c1-3b",
+"task": "answers added"
 },
 "a153f0f35038c889": {
 "gate_key": "ind_polite | B2.1 | mcq | What is the difference? A: 'Where is the manager?' B: 'Do you happen to know where the manager is?' | B is more polite and indirect.",

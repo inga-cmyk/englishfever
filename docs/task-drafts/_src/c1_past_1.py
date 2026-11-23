@@ -51,14 +51,7 @@ mc(T, L, 4, "Which sentence has a mistake?", "We have hoped the weather would ho
    "not the present perfect (*have hoped*): the weekend is over.",
    "Cerība vai plāns, kas neīstenojās, par pagātni: Past Perfect, Past Simple vai Past Continuous (*We had hoped / hoped / were hoping*), "
    "nevis Present Perfect (*have hoped*): nedēļas nogale ir beigusies.")
-# x_pastc_always: a past habit as a complaint (the form)
-mc(T, L, 3, "Choose the correct option: When we shared a flat, Tom ___ my phone charger without asking.", "was always borrowing",
-   ["always was borrowing", "was always borrow", "has always borrowed"],
-   "*was always* + *-ing* for an annoying past habit: *Tom was always borrowing my charger.* *always* goes after *was*; "
-   "the present perfect does not fit a finished time (*when we shared a flat*).",
-   "*was always* + *-ing* kaitinošam pagātnes ieradumam: *Tom was always borrowing my charger.* *always* stāv aiz *was*; "
-   "Present Perfect neder pabeigtam laikam (*when we shared a flat*).")
 # x_pastp_choice: what we found had (not) changed
-gp(T, L, 4, "I went back to my old school last summer and found that it ___ much. (not / change)", "hadn't changed | had not changed",
+gp(T, L, 4, "I went back to my old school last summer and found that it ___ much. (not / change)", "hadn't changed | had not changed | hasn't changed | has not changed",
    "What you found at a past moment about the time before it: past perfect, *it hadn't changed much* (not *didn't change*).",
    "Ko konstatēji pagātnes brīdī par laiku pirms tā: Past Perfect, *it hadn't changed much* (nevis *didn't change*).")

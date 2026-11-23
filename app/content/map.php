@@ -8011,7 +8011,9 @@ return json_decode(<<<'EF_JSON_END'
 "adv_past | gap | We ___ each other for years before we started working together. (know) | ": "x_pastpc_choice",
 "adv_past | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | ": "x_pastp_deduce",
 "adv_past | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved": "x_pastp_deduce",
-"adv_past | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | ": "x_unreal_past"
+"adv_past | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | ": "x_unreal_past",
+"adv_past | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend.": "x_past_intend",
+"adv_past | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ": "x_pastp_choice"
 }
 }
 EF_JSON_END

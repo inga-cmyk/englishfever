@@ -1,0 +1,87 @@
+[
+ {
+  "id": "c1-3-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "While my car was being repaired, I was cycling to work.",
+   "When the builders were here, I was making them tea all day.",
+   "She dropped her keys while she was getting out of the taxi.",
+   "We were flying to Oslo four times last year."
+  ]
+ },
+ {
+  "id": "c1-3-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "As soon as I saw her at the party, I was sure we ___ before. (meet)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: I loved it. It was the best film I ___ ever ___. (see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "We ___ each other for years before we started working together. (know)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "His voice was hoarse because he ___ all afternoon at the match. (shout)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-007",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: When I got back to my desk, I could see that someone ___ my files.",
+  "options": [
+   "is moving",
+   "had moved",
+   "had been moved",
+   "has moved"
+  ]
+ },
+ {
+  "id": "c1-3-008",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-009",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: My old flatmate ___ always ___ the lights on. It drove me mad. (leave)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-3-010",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I had wondered if you could help me with this report.",
+   "I was wondering if you might have a minute.",
+   "I wanted to ask you about Friday.",
+   "We were hoping you could join us."
+  ]
+ }
+]

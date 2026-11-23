@@ -3138,7 +3138,9 @@ return json_decode(<<<'EF_JSON_END'
 "past_seq"
 ],
 "name": "Past continuous or past simple for two past activities: in progress or complete",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_pastc_repeat": {
 "level": "C1",
@@ -3146,7 +3148,9 @@ return json_decode(<<<'EF_JSON_END'
 "past_seq"
 ],
 "name": "Past continuous for repeated actions in a limited period",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_pastc_always": {
 "level": "C1",
@@ -3155,7 +3159,9 @@ return json_decode(<<<'EF_JSON_END'
 "pastc_form"
 ],
 "name": "Was always doing: irritation about a past habit",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_past_polite": {
 "level": "C1",
@@ -3164,7 +3170,9 @@ return json_decode(<<<'EF_JSON_END'
 "pastc_form"
 ],
 "name": "Past forms for politeness: I was wondering if …, I wanted to ask …, We were hoping …",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_past_intend": {
 "level": "C1",
@@ -3173,7 +3181,9 @@ return json_decode(<<<'EF_JSON_END'
 "pastp_form"
 ],
 "name": "Hopes and plans that came to nothing: was meaning to, had hoped, had expected",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_pastp_choice": {
 "level": "C1",
@@ -3183,7 +3193,9 @@ return json_decode(<<<'EF_JSON_END'
 "rep_backshift2"
 ],
 "name": "Past perfect or past simple when both are possible",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_pastp_deduce": {
 "level": "C1",
@@ -3192,7 +3204,9 @@ return json_decode(<<<'EF_JSON_END'
 "deduction_past"
 ],
 "name": "Past perfect (continuous) for a conclusion about what had happened; the cause of a past state",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_pastpc_choice": {
 "level": "C1",
@@ -3200,7 +3214,9 @@ return json_decode(<<<'EF_JSON_END'
 "pastpc_vs"
 ],
 "name": "Past perfect continuous, past perfect or past continuous",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_unreal_past": {
 "level": "C1",
@@ -3210,7 +3226,9 @@ return json_decode(<<<'EF_JSON_END'
 "its_time_past"
 ],
 "name": "Past forms that are not about the past: as if you were, I wish I had kept",
-"topics": []
+"topics": [
+"adv_past"
+]
 },
 "x_perf_aspect": {
 "level": "C1",

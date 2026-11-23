@@ -9603,7 +9603,9 @@
    "leads_to": [],
    "typical_errors": "Treats one of the two as wrong; *He was sitting down when the bell rang* for two events that follow each other",
    "sources": "AGU 4 · TE C1: Advanced past simple, past continuous and past perfect (not in the part of the page seen) · EGP: C1 past simple: complex ordering of past events · Gold C1 reference, unit 2, Narrative tenses",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9628,7 +9630,9 @@
    "leads_to": [],
    "typical_errors": "*We were flying to Oslo four times last year* (a plain count needs the past simple)",
    "sources": "AGU 4 · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) · EGP: B1 past continuous: repeated events",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9654,7 +9658,9 @@
    "leads_to": [],
    "typical_errors": "*He always left the lights on* is correct but neutral; *He was always leave; He had always leaving*",
    "sources": "AGU 2 (the present form); the past form is not in the units read · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) · EGP: A2-B1 past continuous with adverbs",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9679,7 +9685,9 @@
    "leads_to": [],
    "typical_errors": "*I had wondered if you might help* as a request now; answers *I wanted to ask …* as if it were about the past",
    "sources": "AGU 4 · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) · EGP: B2 past continuous: politeness; B2 past simple: politeness (I wondered, I wanted); C1 past simple: politeness (I thought)",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9704,7 +9712,9 @@
    "leads_to": [],
    "typical_errors": "*I was meaning write; We have hoped the weather would hold* about last week; *They expected a bigger crowd* where the disappointment is the point",
    "sources": "AGU 4, 5 · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) · EGP: B1-B2 future in the past · Gold C1 reference, Future in the past: advanced features",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9730,7 +9740,9 @@
    "leads_to": [],
    "typical_errors": "Past perfect for every earlier action in a chain (*After I had got up I had made coffee and had left*); takes *After he locked the office* for a mistake",
    "sources": "AGU 5 · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) · EGP: B2 past perfect: change of situation; C1 past simple: complex ordering of past events · Gold C1 reference, unit 2, Narrative tenses",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9755,7 +9767,9 @@
    "leads_to": [],
    "typical_errors": "*He was hoarse because he was shouting all afternoon* (he had stopped); *Someone has obviously moved the files* about a past moment",
    "sources": "AGU 5 (unit 7 is not in the uploaded text) · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) · EGP: B2 past perfect continuous: results; background information",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9779,7 +9793,9 @@
    "leads_to": [],
    "typical_errors": "*We had been knowing each other for years; She had been ringing three times before I answered*",
    "sources": "AGU 7 (title from memory: the unit is not in the uploaded text) · TE C1: Advanced past simple, past continuous and past perfect (not in the part of the page seen) · EGP: B2 past perfect continuous: results, background · Gold C1 reference, unit 2 (the practice contrasts these three forms)",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9806,7 +9822,9 @@
    "leads_to": [],
    "typical_errors": "*You talk as if you own the place* for something clearly untrue; *I wish I have kept the receipt; I wish I knew the answer earlier* about yesterday",
    "sources": "AGU 85 (title seen, text not read) · TE C1: Advanced past simple, past continuous and past perfect (page seen in part) (exercise 1); C1: The subjunctive: present and past (page seen) · EGP: B1 past simple with wish; B2 past perfect after if only and wish · Gold C1 reference, Hypothetical meaning",
-   "topics": [],
+   "topics": [
+    "adv_past"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,

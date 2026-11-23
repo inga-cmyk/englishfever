@@ -647,3 +647,32 @@ LV_CARDS.update({
         "signals": "measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest",
     },
 })
+
+# ───────── C1 direction 2 (23 November): Hewings, Advanced Grammar in Use, units 4-5 ─────────
+SKILLS_NEW.append(("adv_past", "Advanced past simple, past continuous and past perfect", "active", ["C1"]))
+ABBR_NEW.update({"adv_past": "apa"})
+CARDS.update({
+    "adv_past": {
+        "form": ["Events that follow one another: past simple for all of them: *The alarm went off as soon as he lit the candle.*",
+                 "A count of repeated actions: past simple (*We flew to Oslo four times last year*); the continuous only for a temporary period (*While my car was being repaired, I was cycling to work*).",
+                 "Something earlier than a past moment: past perfect: *I was sure we had met before. It was the best film I had ever seen.* What caused a past state: *He was hoarse because he had been shouting all afternoon.*",
+                 "Past forms that are not about the past: *I wish I had kept the receipt* (a regret about the past); *I was wondering if you could help* (a polite request now)."],
+        "use": ["*was always / forever* + *-ing*: a past habit that annoyed someone: *My old flatmate was always leaving the lights on.*",
+                "The past continuous for a situation, the past simple for the event that happened in it: *She dropped her keys while she was getting out of the taxi.*",
+                "State verbs stay simple, also before a past moment: *We had known each other for years*, not *had been knowing*."],
+        "signals": "*as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering*",
+        "example": "*I was quietly eating your biscuits when you walked in.*",
+    },
+})
+LV_CARDS.update({
+    "adv_past": {
+        "form": ["Notikumi, kas seko viens otram: visiem Past Simple: *The alarm went off as soon as he lit the candle.*",
+                 "Atkārtotas darbības ar skaitu: Past Simple (*We flew to Oslo four times last year*); ilgstošā forma tikai īslaicīgam periodam (*While my car was being repaired, I was cycling to work*).",
+                 "Kaut kas notika pirms cita pagātnes brīža: Past Perfect: *I was sure we had met before. It was the best film I had ever seen.* Kas izraisīja stāvokli pagātnē: *He was hoarse because he had been shouting all afternoon.*",
+                 "Pagātnes formas, kas nav par pagātni: *I wish I had kept the receipt* (nožēla par pagātni); *I was wondering if you could help* (pieklājīgs lūgums tagad)."],
+        "use": ["*was always / forever* + *-ing*: pagātnes ieradums, kas kādu kaitināja: *My old flatmate was always leaving the lights on.*",
+                "Past Continuous situācijai, Past Simple notikumam, kas tajā notika: *She dropped her keys while she was getting out of the taxi.*",
+                "Stāvokļa darbības vārdi paliek vienkāršajā formā arī pirms pagātnes brīža: *We had known each other for years*, nevis *had been knowing*."],
+        "signals": "as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering",
+    },
+})

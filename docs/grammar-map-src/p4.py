@@ -291,3 +291,5 @@ STRANDS = {
 from lib import POINTS as _ALL
 for _p in _ALL:
     if _p["area"].startswith("C1 · 1 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_present"]
+for _p in _ALL:
+    if _p["area"].startswith("C1 · 2 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_past"]

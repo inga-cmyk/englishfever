@@ -64,4 +64,4 @@ note('might :: Also possible, but rarer: *come what may* is the usual phrase. ::
 gp(T, L, 4, "It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true.", "should / say",
    "After *It's odd that*, *should* + base form shows surprise about something that keeps happening: *It's odd that she should say that.*",
    "Aiz *It's odd that* *should* + pamatforma izsaka pārsteigumu par to, kas atkārtojas: *It's odd that she should say that.*",
-   bank=["should", "say", "said", "has"])
+   bank=["should", "say", "says", "saying"])

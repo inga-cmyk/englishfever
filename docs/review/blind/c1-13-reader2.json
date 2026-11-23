@@ -1,0 +1,14 @@
+[
+{
+"id": "c1-13-001",
+"answer": [
+"should",
+"say"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line: the learner is only told to drag cards, not what to do. Two gaps but the distractors says/saying cannot fill a pair on their own, so only one combination is possible (mildly easy to solve by elimination). Otherwise clear.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -11943,7 +11943,7 @@ return json_decode(<<<'EF_JSON_END'
         "might as well",
         "may as well"
        ],
-       "t": "The only sensible thing"
+       "t": "A sensible choice when there is nothing better to do"
       },
       {
        "ex": [
@@ -12042,7 +12042,7 @@ return json_decode(<<<'EF_JSON_END'
         "might as well",
         "may as well"
        ],
-       "t": "Vienīgais saprātīgais"
+       "t": "Saprātīga izvēle, ja nav nekā labāka"
       },
       {
        "ex": [

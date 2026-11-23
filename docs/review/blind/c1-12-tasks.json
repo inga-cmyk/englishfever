@@ -1,0 +1,100 @@
+[
+ {
+  "id": "c1-12-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "More than one guest has complained about the noise.",
+   "Neither of the answers is correct.",
+   "One in four adults has never been abroad.",
+   "Each of the rooms have a private bathroom."
+  ]
+ },
+ {
+  "id": "c1-12-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The forecast says snow until April, so this winter ___ unusually long.",
+  "options": [
+   "may being",
+   "may be",
+   "is able to be",
+   "can be"
+  ]
+ },
+ {
+  "id": "c1-12-003",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Put the focus on *the noise*. Start with *What*: The noise really annoys me.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-12-004",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Look, there's our bus! Here ___!",
+  "options": [
+   "it comes",
+   "comes it",
+   "does it come",
+   "it is coming"
+  ]
+ },
+ {
+  "id": "c1-12-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I'll text you the moment I ___ my exam results. (get)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-12-006",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-12-007",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-12-008",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-12-009",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite.",
+  "word_cards": [
+   "has",
+   "say",
+   "have",
+   "should",
+   "said"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-12-010",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true.",
+  "word_cards": [
+   "say",
+   "should",
+   "said",
+   "has"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

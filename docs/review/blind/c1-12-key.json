@@ -1,0 +1,401 @@
+{
+ "c1-12-001": {
+  "hash": "ff68f9a55df38070",
+  "gate_key": "adv_agree | C1 | mcq | Which sentence has a mistake? | Each of the rooms have a private bathroom.",
+  "src": "c1-agree-1.csv:8",
+  "point": "x_agr_quant",
+  "key": {
+   "kind": "mcq",
+   "correct": "Each of the rooms have a private bathroom.",
+   "wrong": [
+    "More than one guest has complained about the noise.",
+    "Neither of the answers is correct.",
+    "One in four adults has never been abroad."
+   ]
+  },
+  "item": {
+   "id": "c-2155",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*each of* + plural noun takes a singular verb: *Each of the rooms has a private bathroom*.",
+   "why_lv": "*each of* + daudzskaitlis prasa darbības vārdu vienskaitlī: *Each of the rooms has a private bathroom.*",
+   "correct": "Each of the rooms have a private bathroom.",
+   "wrong": [
+    "More than one guest has complained about the noise.",
+    "Neither of the answers is correct.",
+    "One in four adults has never been abroad."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_agr_quant",
+   "src": "c1-agree-1.csv:8"
+  }
+ },
+ "c1-12-002": {
+  "hash": "b218195ec2f9209a",
+  "gate_key": "adv_can | C1 | mcq | Choose the correct option: The forecast says snow until April, so this winter ___ unusually long. | may be",
+  "src": "c1-can-1.csv:12",
+  "point": "x_can_typical",
+  "key": {
+   "kind": "mcq",
+   "correct": "may be",
+   "wrong": [
+    "can be",
+    "is able to be",
+    "may being"
+   ]
+  },
+  "item": {
+   "id": "c-2169",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: The forecast says snow until April, so this winter ___ unusually long.",
+   "why": "A prediction about this particular winter: *may be*. *can be* is for what is generally or sometimes true (*Winters here can be very long*).",
+   "why_lv": "*Prognoze* par šo konkrēto *ziemu*: *may be*. *can be* ir par to, kas mēdz būt vispār (*Winters here can be very long*).",
+   "correct": "may be",
+   "wrong": [
+    "can be",
+    "is able to be",
+    "may being"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_can_typical",
+   "src": "c1-can-1.csv:12"
+  }
+ },
+ "c1-12-003": {
+  "hash": "f67ae93c6a74fdca",
+  "gate_key": "adv_order | C1 | text | Put the focus on *the noise*. Start with *What*: The noise really annoys me. | ",
+  "src": "c1-order-1.csv:13",
+  "point": "x_cleft_adv",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What really annoys me is the noise."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2181",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Put the focus on *the noise*. Start with *What*: The noise really annoys me.",
+   "why": "*What* + verb + *is* + the thing in focus at the end: *What really annoys me is the noise.*",
+   "why_lv": "*What* + darbības vārds + *is* + izceltā lieta beigās: *What really annoys me is the noise.*",
+   "answers": [
+    [
+     "What really annoys me is the noise."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_cleft_adv",
+   "src": "c1-order-1.csv:13"
+  }
+ },
+ "c1-12-004": {
+  "hash": "3e766bdd886407e3",
+  "gate_key": "adv_order | C1 | mcq | Choose the correct option: Look, there's our bus! Here ___! | it comes",
+  "src": "c1-order-1.csv:14",
+  "point": "x_inv_place",
+  "key": {
+   "kind": "mcq",
+   "correct": "it comes",
+   "wrong": [
+    "comes it",
+    "does it come",
+    "it is coming"
+   ]
+  },
+  "item": {
+   "id": "c-2182",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: Look, there's our bus! Here ___!",
+   "why": "After *Here*, a noun comes after the verb (*Here comes the bus*), but a pronoun comes before it: *Here it comes!*",
+   "why_lv": "Pēc *Here* lietvārds stāv aiz darbības vārda (*Here comes the bus*), bet vietniekvārds pirms tā: *Here it comes!*",
+   "correct": "it comes",
+   "wrong": [
+    "comes it",
+    "does it come",
+    "it is coming"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_inv_place",
+   "src": "c1-order-1.csv:14"
+  }
+ },
+ "c1-12-005": {
+  "hash": "641fcc2cb7b1e087",
+  "gate_key": "adv_perfect | C1 | gap | I'll text you the moment I ___ my exam results. (get) | ",
+  "src": "c1-perf-1.csv:6",
+  "point": "x_time_perf",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "'ve got",
+     "get",
+     "have got",
+     "'ve gotten",
+     "have gotten",
+     "have received",
+     "'ve received"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2207",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I'll text you the moment I ___ my exam results. (get)",
+   "why": "*the moment* about the future: present perfect (*the moment I've got my results*) or present simple (*the moment I get my results*), both correct; never *will* or the past.",
+   "why_lv": "*the moment* par nākotni: Present Perfect (*the moment I've got my results*) vai Present Simple (*the moment I get my results*), abi pareizi; nevis *will* vai pagātne.",
+   "answer_notes": [
+    [
+     "get",
+     "Also possible: after *the moment* the present simple has the same meaning.",
+     "Arī pareizi: aiz *the moment* Present Simple nozīmē to pašu."
+    ]
+   ],
+   "answers": [
+    [
+     "'ve got",
+     "get",
+     "have got",
+     "'ve gotten",
+     "have gotten",
+     "have received",
+     "'ve received"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_time_perf",
+   "src": "c1-perf-1.csv:6"
+  }
+ },
+ "c1-12-006": {
+  "hash": "bec6c787ef1f57c4",
+  "gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
+  "src": "c1-perf-1.csv:14",
+  "point": "x_perf_aspect",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She denied having read the letter.",
+     "She denied reading the letter."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2215",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+   "why": "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too.)",
+   "why_lv": "*deny + having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (*Dabiski* ir arī *She denied reading the letter*.)",
+   "answer_notes": [
+    [
+     "She denied reading the letter.",
+     "Also correct and natural; the task asks for *having*, which shows that the reading came first.",
+     "Arī pareizi un dabiski; uzdevums prasa *having*, kas parāda, ka lasīšana bija agrāk."
+    ]
+   ],
+   "answers": [
+    [
+     "She denied having read the letter.",
+     "She denied reading the letter."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_perf_aspect",
+   "src": "c1-perf-1.csv:14"
+  }
+ },
+ "c1-12-007": {
+  "hash": "f75dda7870512fb1",
+  "gate_key": "adv_prep | C1 | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | ",
+  "src": "c1-prep-1.csv:12",
+  "point": "x_prep_whom",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The colleague with whom I share an office is on holiday."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2226",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday.",
+   "why": "Formal: the preposition goes before *whom*: *The colleague with whom I share an office is on holiday.*",
+   "why_lv": "Oficiāli: prievārds stāv pirms *whom*: *The colleague with whom I share an office is on holiday.*",
+   "answers": [
+    [
+     "The colleague with whom I share an office is on holiday."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_prep_whom",
+   "src": "c1-prep-1.csv:12"
+  }
+ },
+ "c1-12-008": {
+  "hash": "adb48b7822003c57",
+  "gate_key": "adv_prep | C1 | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | ",
+  "src": "c1-prep-1.csv:13",
+  "point": "x_prep_whom",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The person I spoke to was very helpful.",
+     "The person who I spoke to was very helpful.",
+     "The person that I spoke to was very helpful."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2227",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful.",
+   "why": "Everyday style: the preposition goes to the end, and *whom* becomes *who*, *that* or nothing: *The person I spoke to was very helpful.*",
+   "why_lv": "Ikdienas stilā prievārds pāriet uz beigām, un *whom* kļūst par *who, that* vai *izpaliek*: *The person I spoke to was very helpful.*",
+   "answers": [
+    [
+     "The person I spoke to was very helpful.",
+     "The person who I spoke to was very helpful.",
+     "The person that I spoke to was very helpful."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_prep_whom",
+   "src": "c1-prep-1.csv:13"
+  }
+ },
+ "c1-12-009": {
+  "hash": "a016809a0d6457ef",
+  "gate_key": "adv_subj | C1 | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | ",
+  "src": "c1-subj-1.csv:4",
+  "point": "x_should_react",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should"
+    ],
+    [
+     "have"
+    ],
+    [
+     "said"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2247",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite.",
+   "why": "After *It's odd / surprising that*, *should* + verb shows surprise; about the past, *should have* + 3rd form: *It's odd that she should have said that.*",
+   "why_lv": "Aiz *It's odd / surprising that should* + darbības vārds izsaka pārsteigumu; par pagātni *should have* + 3. forma: *It's odd that she should have said that.*",
+   "answers": [
+    [
+     "should"
+    ],
+    [
+     "have"
+    ],
+    [
+     "said"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "should",
+    "have",
+    "said",
+    "say",
+    "has"
+   ],
+   "role": "check",
+   "point": "x_should_react",
+   "src": "c1-subj-1.csv:4"
+  }
+ },
+ "c1-12-010": {
+  "hash": "1cd2db5a19e0c462",
+  "gate_key": "adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ",
+  "src": "c1-subj-1.csv:13",
+  "point": "x_should_react",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should"
+    ],
+    [
+     "say"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2256",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true.",
+   "why": "After *It's odd that*, *should* + base form shows surprise about something that keeps happening: *It's odd that she should say that.*",
+   "why_lv": "Aiz *It's odd that should* + pamatforma izsaka pārsteigumu par to, kas atkārtojas: *It's odd that she should say that.*",
+   "answers": [
+    [
+     "should"
+    ],
+    [
+     "say"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "should",
+    "say",
+    "said",
+    "has"
+   ],
+   "role": "check",
+   "point": "x_should_react",
+   "src": "c1-subj-1.csv:13"
+  }
+ }
+}

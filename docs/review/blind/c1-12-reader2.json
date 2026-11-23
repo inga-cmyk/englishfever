@@ -1,0 +1,142 @@
+[
+{
+"id": "c1-12-001",
+"answer": "Each of the rooms have a private bathroom.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Spoken English often uses 'have' after 'each of the plural'; some learners/natives would not see it as wrong, but formal rule says 'has'. 'More than one guest has' is a tricky-looking but correct form; fine."
+},
+{
+"id": "c1-12-002",
+"answer": "may be",
+"other_correct": [
+[
+"can be"
+]
+],
+"wrong_options_that_fit": "can be (weakly: 'can' = general possibility, odd for one specific winter; 'is able to be' is not natural)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'may' sits oddly after 'so' with a forecast of snow until April: 'will be/is going to be' would be the logical result; 'may' is weak. 'can be' is arguably wrong only on nuance, so the item depends on a subtle distinction."
+},
+{
+"id": "c1-12-003",
+"answer": "What really annoys me is the noise.",
+"other_correct": [
+[
+"What annoys me really is the noise."
+],
+[
+"What annoys me is the noise."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Put the focus on' is vague jargon; 'Start with What' gives the structure away. The learner must know to add 'is'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-004",
+"answer": "it comes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Here + subject pronoun is a basic B1 pattern; easy for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-005",
+"answer": [
+"get"
+],
+"other_correct": [
+[
+"have got"
+],
+[
+"have gotten"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The verb is given in brackets and no change is needed except 'get'; the trap is not visible.",
+"level_problem": "Time clause with present simple is B1; too easy for C1.",
+"sense_problem": "'the moment I've got' is possible but less natural; US 'have gotten' also works."
+},
+{
+"id": "c1-12-006",
+"answer": "She denied having read the letter.",
+"other_correct": [
+[
+"She denied having read it."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Giving 'deny' and 'having' reveals the whole structure; only copying left.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-007",
+"answer": "The colleague with whom I share an office is on holiday.",
+"other_correct": [
+[
+"The colleague with whom I share my office is on holiday."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Start with The colleague with' gives away 'whom'.",
+"level_problem": "",
+"sense_problem": "'Make it more formal' with a fixed start leaves essentially one answer; fine."
+},
+{
+"id": "c1-12-008",
+"answer": "The person I spoke to was very helpful.",
+"other_correct": [
+[
+"The person who I spoke to was very helpful."
+],
+[
+"The person that I spoke to was very helpful."
+],
+[
+"The person who(m) I spoke to was very helpful."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'End the first part' is unclear: the learner must guess which part is meant.",
+"level_problem": "B1/B2 level point, rather easy for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-009",
+"answer": [
+"should",
+"have",
+"said"
+],
+"other_correct": "",
+"wrong_options_that_fit": "has (not with 3 gaps/'yesterday')",
+"instruction_problem": "The 'yesterday's meeting' cue is needed; fine. Number of gaps (3) gives away a three-word form.",
+"level_problem": "Putative 'should have said' is good B2/C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-010",
+"answer": [
+"should",
+"say"
+],
+"other_correct": [
+[
+"has",
+"said"
+]
+],
+"wrong_options_that_fit": "has / said (as the pair 'has said': 'It's odd that she has said that whenever the topic comes up' is grammatical, though less natural)",
+"instruction_problem": "The two items 009/010 share cards and sentence; learner can solve 010 by elimination from 009. Gap count (2) is a clue.",
+"level_problem": "",
+"sense_problem": "'has said ... whenever' competes with 'should say'; ambiguity risk."
+}
+]

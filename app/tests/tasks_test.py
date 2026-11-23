@@ -134,7 +134,15 @@ check("approve all", teacher.api("teacher/items-status", {"ids": ids, "status": 
 check("approved tasks are served", set(ids) <= served(student), served(student))
 
 # grading each type with the real grader
-def answer_item(c, iid, ans):
+def answer_item(c, iid, ans, tries=12):
+    # the same sentence is served once per session (teacher, 23 November): the draft's gap, choice and typed task share one sentence,
+    # so the wanted task may not come in a given session: try fresh sessions
+    for _ in range(tries):
+        r = _answer_item_once(iid, ans)
+        if r is not None: return r
+    return None
+
+def _answer_item_once(iid, ans):
     c = fresh()
     s = c.api("session/start", {"mode": "practice", "skills": ["past_perfect"], "level": "B1.2", "length": 20}); sid = s["session"]["id"]; item = s["item"]
     for _ in range(20):

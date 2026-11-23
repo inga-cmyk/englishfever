@@ -1,0 +1,14 @@
+[
+{
+"id": "c1-13-001",
+"answer": [
+"should",
+"say"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction, only a sentence with two gaps; learner must guess the point. Two gaps with four cards where only should+say works is easily solved by elimination (only one modal card). Without cards, 'says' alone would also be correct English (It's odd that she says that), so the second gap is what forces 'should'; fine only if each card is used once.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

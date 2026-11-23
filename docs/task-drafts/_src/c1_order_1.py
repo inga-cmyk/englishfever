@@ -49,7 +49,7 @@ gp(T, L, 4, "Write one word in each gap: Only when I got home ___ I ___ that my 
 
 # teacher's tester, 23 November: a cleft sentence with a clear focus, and Here + pronoun
 tx(T, L, 4, "Put the focus on *the noise*. Start with *What*: The noise really annoys me.",
-   "What really annoys me is the noise.",
+   "What really annoys me is the noise. | What annoys me is the noise.",
    "*What* + verb + *is* + the thing in focus at the end: *What really annoys me is the noise.*",
    "*What* + darbības vārds + *is* + izceltā lieta beigās: *What really annoys me is the noise.*")
 mc(T, L, 3, "Choose the correct option: Look, there's our bus! Here ___!", "it comes",

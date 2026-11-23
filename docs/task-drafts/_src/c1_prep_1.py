@@ -53,6 +53,6 @@ tx(T, L, 4, "Make it more formal. Start with *The colleague with*: The colleague
    "Formal: the preposition goes before *whom*: *The colleague with whom I share an office is on holiday.*",
    "Oficiāli: prievārds stāv pirms *whom*: *The colleague with whom I share an office is on holiday.*")
 tx(T, L, 4, "Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful.",
-   "The person I spoke to was very helpful. | The person who I spoke to was very helpful. | The person that I spoke to was very helpful.",
+   "The person I spoke to was very helpful. | The person whom I spoke to was very helpful. | The person who I spoke to was very helpful. | The person that I spoke to was very helpful.",
    "Everyday style: the preposition goes to the end, and *whom* becomes *who*, *that* or nothing: *The person I spoke to was very helpful.*",
    "Ikdienas stilā prievārds pāriet uz beigām, un *whom* kļūst par *who*, *that* vai izpaliek: *The person I spoke to was very helpful.*")

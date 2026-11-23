@@ -1,5 +1,7 @@
 {
- "c1-agree-1.csv": [],
+ "c1-agree-1.csv": [
+  "Each of the rooms have its own bathroom."
+ ],
  "c1-can-1.csv": [
   "Even with my glasses on, I ___ hardly read the sign. (can)",
   "He didn't sound serious about leaving. He ___ . (might / joke)",
@@ -30,7 +32,8 @@
   "was always borrowing"
  ],
  "c1-perf-1.csv": [
-  "It's only eleven, and I ___ the bank four times. Nobody answers. (ring)"
+  "It's only eleven, and I ___ the bank four times. Nobody answers. (ring)",
+  "having read"
  ],
  "c1-prep-1.csv": [
   "Write one word in each gap: We received three offers, none ___ ___ was acceptable."
@@ -50,6 +53,7 @@
   "I'd rather you ___ me before the meeting, not after it. (tell)",
   "I'd rather you wouldn't have sold the car.",
   "If the bank would refuse, we would sell the car.",
+  "It's odd that she ___ ___ ___ that. She's usually so polite.",
   "It's odd that she ___ that. She's usually so polite. (should / say)"
  ],
  "c1-will-1.csv": [

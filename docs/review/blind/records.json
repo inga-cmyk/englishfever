@@ -914,6 +914,11 @@
 "round": "r20b-3",
 "task": "r20b-3-001"
 },
+"1cd2db5a19e0c462": {
+"gate_key": "adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ",
+"round": "c1-12",
+"task": "answers added"
+},
 "1d5fc03b0119b564": {
 "gate_key": "ind_advanced | B2.2 | mcq | Which sentence means you call the airline only when there is a problem? | If your bag doesn't arrive, call the airline.",
 "round": "r18",
@@ -1013,6 +1018,11 @@
 "gate_key": "adv_past | C1 | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | ",
 "round": "c1-3",
 "task": "c1-3-008"
+},
+"206cb9edff461b12": {
+"gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
+"round": "c1-12",
+"task": "answers added"
 },
 "20772b1da0d54f9e": {
 "gate_key": "future | A2.1 | mcq | Which sentence is correct? | Shall I help you with your suitcase?",
@@ -1988,6 +1998,11 @@
 "gate_key": "adv_can | C1 | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to",
 "round": "c1-5",
 "task": "c1-5-002"
+},
+"3e766bdd886407e3": {
+"gate_key": "adv_order | C1 | mcq | Choose the correct option: Look, there's our bus! Here ___! | it comes",
+"round": "c1-12",
+"task": "c1-12-004"
 },
 "3e79cfe0459102e4": {
 "gate_key": "more_modals | A2.2 | order | Put the words in order. | my phone might not work in the mountains",
@@ -3103,6 +3118,11 @@
 "gate_key": "cond_advanced | B1.2 | order | Put the words in order. | i wish i had more free time",
 "round": "r8",
 "task": "r8-016"
+},
+"641fcc2cb7b1e087": {
+"gate_key": "adv_perfect | C1 | gap | I'll text you the moment I ___ my exam results. (get) | ",
+"round": "c1-12",
+"task": "c1-12-005"
 },
 "64280d5f6aa0cae5": {
 "gate_key": "ind_polite | B1.2 | mcq | 'Where is the library?'\nChoose the correct option: Can you tell me where ___? | the library is",
@@ -4974,6 +4994,11 @@
 "round": "r5",
 "task": "r5-004"
 },
+"a016809a0d6457ef": {
+"gate_key": "adv_subj | C1 | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | ",
+"round": "c1-12",
+"task": "c1-12-009"
+},
 "a03e994e7565fafa": {
 "gate_key": "future | B1.2 | gap | My son won't ___ his homework, however often I ask him. (do) | ",
 "round": "r11",
@@ -5449,6 +5474,11 @@
 "round": "r8",
 "task": "r8-034"
 },
+"adb48b7822003c57": {
+"gate_key": "adv_prep | C1 | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | ",
+"round": "c1-12",
+"task": "c1-12-008"
+},
 "adec0a559318fe25": {
 "gate_key": "adv_perfect | C1 | gap | I'll text you the moment I ___ my exam results. (get) | ",
 "round": "c1-4",
@@ -5613,6 +5643,11 @@
 "gate_key": "modal_verbs | A2.2 | gap | Would you ___ me a favour? | ",
 "round": "r9",
 "task": "r9-123"
+},
+"b218195ec2f9209a": {
+"gate_key": "adv_can | C1 | mcq | Choose the correct option: The forecast says snow until April, so this winter ___ unusually long. | may be",
+"round": "c1-12",
+"task": "c1-12-002"
 },
 "b24c558f8c9b886e": {
 "gate_key": "narrative_b2 | B2.1 | gap | We ___ tennis for half an hour when it started to rain. | ",
@@ -6069,6 +6104,11 @@
 "round": "r10",
 "task": "r10-049"
 },
+"bec6c787ef1f57c4": {
+"gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
+"round": "c1-12",
+"task": "c1-12-006"
+},
 "bf2a495199d208fd": {
 "gate_key": "quantity | B1.1 | gap | Write *no* or *any*: My new phone has ___ headphone jack, so I use wireless earbuds. | ",
 "round": "r10",
@@ -6414,6 +6454,11 @@
 "round": "r10",
 "task": "r10-039"
 },
+"caddc739b5b4503b": {
+"gate_key": "adv_order | C1 | text | Put the focus on *the noise*. Start with *What*: The noise really annoys me. | ",
+"round": "c1-12",
+"task": "answers added"
+},
 "cae2f1ec10b9daa0": {
 "gate_key": "cond_third | B2.2 | gap | If she ___ ___ the warning, she would have avoided the accident. | ",
 "round": "r20-4",
@@ -6488,6 +6533,11 @@
 "gate_key": "aux_verbs | A2.1 | mcq | Choose the correct option: ___ your neighbours got a dog? | Have",
 "round": "r9",
 "task": "r9-001"
+},
+"cd6d1a9274d7a019": {
+"gate_key": "adv_prep | C1 | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | ",
+"round": "c1-12",
+"task": "answers added"
 },
 "cd832c0efd0ab861": {
 "gate_key": "rep_verbs | B2.2 | gap | The minister denied ___ the report before it was published. (see) | ",
@@ -7849,6 +7899,11 @@
 "round": "r11",
 "task": "r11-052"
 },
+"f67ae93c6a74fdca": {
+"gate_key": "adv_order | C1 | text | Put the focus on *the noise*. Start with *What*: The noise really annoys me. | ",
+"round": "c1-12",
+"task": "c1-12-003"
+},
 "f6a95aa476000e18": {
 "gate_key": "conj_basic | A2.2 | gap | The best parts of my job are meeting people and ___. (travel) | ",
 "round": "r13",
@@ -7873,6 +7928,11 @@
 "gate_key": "cond_mixed | B2.2 | gap | If I had studied medicine, I ___ a doctor now. (be) | ",
 "round": "r20-6",
 "task": "r20-6-012"
+},
+"f75dda7870512fb1": {
+"gate_key": "adv_prep | C1 | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | ",
+"round": "c1-12",
+"task": "c1-12-007"
 },
 "f777d4d75cf6c83f": {
 "gate_key": "articles | A2.1 | gap | Complete with *a*, *an* or *the*: We rented ___ car in Spain. ___ car was very small. | ",
@@ -8068,6 +8128,11 @@
 "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: We need a bigger budget in order ___ the team to finish on time. | for",
 "round": "r20-3",
 "task": "r20-3-014"
+},
+"ff68f9a55df38070": {
+"gate_key": "adv_agree | C1 | mcq | Which sentence has a mistake? | Each of the rooms have a private bathroom.",
+"round": "c1-12",
+"task": "c1-12-001"
 },
 "ffb09da54dfba264": {
 "gate_key": "rep_questions | B1.2 | text | 'Can you help me?'\nFinish the sentence: She asked me if … | ",

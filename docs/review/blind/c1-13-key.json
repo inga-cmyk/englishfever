@@ -1,0 +1,47 @@
+{
+ "c1-13-001": {
+  "hash": "96ca93b27e1d76f2",
+  "gate_key": "adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ",
+  "src": "c1-subj-1.csv:13",
+  "point": "x_should_react",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should"
+    ],
+    [
+     "say"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2256",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true.",
+   "why": "After *It's odd that*, *should* + base form shows surprise about something that keeps happening: *It's odd that she should say that.*",
+   "why_lv": "Aiz *It's odd that should* + pamatforma izsaka pārsteigumu par to, kas atkārtojas: *It's odd that she should say that.*",
+   "answers": [
+    [
+     "should"
+    ],
+    [
+     "say"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "should",
+    "say",
+    "says",
+    "saying"
+   ],
+   "role": "check",
+   "point": "x_should_react",
+   "src": "c1-subj-1.csv:13"
+  }
+ }
+}

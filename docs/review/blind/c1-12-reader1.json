@@ -1,0 +1,121 @@
+[
+{
+"id": "c1-12-001",
+"answer": "Each of the rooms have a private bathroom.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-002",
+"answer": "may be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "may be for a forecast is B1; the task is not C1 (may vs can) and the clue 'The forecast says' gives it away.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-003",
+"answer": "What really annoys me is the noise.",
+"other_correct": [
+"What annoys me is the noise."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'What annoys me is the noise' (dropping 'really') is also accepted by many learners; the key should say whether 'really' must be kept.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-004",
+"answer": "it comes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fixed phrase 'Here it comes' is A2/B1, not C1; no nuance or use point.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-005",
+"answer": [
+"get"
+],
+"other_correct": [
+[
+"have got"
+],
+[
+"'ve got"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The verb is given in brackets so only the form matters; 'have got' (the moment I've got) is also possible, less natural.",
+"level_problem": "Time clause after 'the moment' with present simple is B1, too easy for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-006",
+"answer": "She denied having read the letter.",
+"other_correct": [
+"She denied having read it."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-007",
+"answer": "The colleague with whom I share an office is on holiday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-008",
+"answer": "The person I spoke to was very helpful.",
+"other_correct": [
+"The person who I spoke to was very helpful.",
+"The person that I spoke to was very helpful.",
+"The person whom I spoke to was very helpful."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Preposition stranding / dropping whom is B1-B2 rather than C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-12-009",
+"answer": [
+"should",
+"have",
+"said"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-12-010",
+"answer": [
+"should",
+"say"
+],
+"other_correct": [
+[
+"has",
+"said"
+]
+],
+"wrong_options_that_fit": "'has said' (present perfect) is possible with 'whenever', but less natural than 'should say'.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'whenever the topic comes up' suggests habit; a learner may reasonably expect 'says', so 'has said' is a believable but weaker alternative."
+}
+]

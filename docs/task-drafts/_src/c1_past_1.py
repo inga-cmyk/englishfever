@@ -3,12 +3,12 @@ Hewings, Advanced Grammar in Use (3rd ed.), units 4-5 (exercises 4.1, 5.2, 5.3);
 Only places where the context leaves one form (the book's own "only one is correct" cases): events that follow one another,
 a count of repeated actions, a state before a past moment, a report of something that had happened, the cause of a past state,
 wish + past perfect, a past habit as a complaint, a polite request. Contexts concrete but common; no Latvian surnames."""
-from lib import gp, mc
+from lib import gp, mc, note
 T = "Advanced past simple, past continuous and past perfect"
 L = "C1"
 
 # x_past_both: events that follow one another are both past simple
-gp(T, L, 4, "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light)", "went / lit | lighted",
+gp(T, L, 4, "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)", "went / lit | lighted",
    "Two completed events that follow one another: past simple for both (*went off as soon as he lit*). "
    "The continuous would mean that one was in progress when the other happened.",
    "Divi pabeigti notikumi, kas seko viens otram: abiem Past Simple (*went off as soon as he lit*). "
@@ -26,13 +26,14 @@ gp(T, L, 3, "As soon as I saw her at the party, I was sure we ___ before. (meet)
    "*I was sure* is in the past, and the meeting was earlier still: past perfect, *we had met before* (not *we met*).",
    "*I was sure* ir pagātnē, un tikšanās bija vēl agrāk: Past Perfect, *we had met before* (nevis *we met*).")
 # x_pastpc_choice: a state verb stays simple
-gp(T, L, 3, "We ___ each other for years before we started working together. (know)", "had known | 'd known",
+gp(T, L, 3, "By the time Sam and I started working together, we ___ each other for ten years. (know)", "had known | 'd known",
    "*know* is a state verb: past perfect simple, *had known*, not *had been knowing*.",
    "*know* ir stāvokļa darbības vārds: Past Perfect Simple, *had known*, nevis *had been knowing*.")
 # x_pastp_deduce: the cause of a past state
 gp(T, L, 4, "His voice was hoarse because he ___ all afternoon at the match. (shout)", "had been shouting | 'd been shouting | had shouted | 'd shouted",
    "The shouting was over and explains how his voice was later: past perfect continuous, *had been shouting* (not *was shouting*).",
    "Kliegšana jau bija beigusies un izskaidro, kāda vēlāk bija viņa balss: Past Perfect Continuous, *had been shouting* (nevis *was shouting*).")
+note('had shouted :: Also possible; the continuous shows better that the shouting went on all afternoon. :: Arī pareizi; Continuous forma labāk parāda, ka kliegšana turpinājās visu pēcpusdienu.')
 mc(T, L, 3, "Choose the correct option: When I got back to my desk, I could see that someone ___ my files.", "had moved",
    ["has moved", "had been moved", "is moving"],
    "A conclusion about something that happened before a past moment (*when I got back*): past perfect, *someone had moved my files*.",
@@ -55,13 +56,15 @@ mc(T, L, 4, "Which sentence has a mistake?", "We have hoped the weather would ho
 gp(T, L, 4, "I went back to my old school last summer and found that it ___ much. (not / change)", "hadn't changed | had not changed | hasn't changed | has not changed",
    "What you found at a past moment about the time before it: past perfect, *it hadn't changed much* (not *didn't change*).",
    "Ko konstatēji pagātnes brīdī par laiku pirms tā: Past Perfect, *it hadn't changed much* (nevis *didn't change*).")
+note("hasn't changed :: Also possible: the school is still the same now, so the present perfect is fine; the past perfect is the form after *found* (a moment in the past). :: Arī pareizi: skola joprojām ir tāda pati, tāpēc der Present Perfect; aiz *found* (pagātnes brīdis) parasti lieto Past Perfect.")
 
 # ── added 23 November to reach 10 counted tasks ──
 # x_pastpc_choice: an activity up to a past moment
 gp(T, L, 4, "By the time the doctor arrived, the patient ___ for over an hour. (wait)", "had been waiting | 'd been waiting | had waited | 'd waited",
    "An activity that went on up to a past moment (*by the time the doctor arrived*): past perfect continuous, *had been waiting*.",
    "Darbība, kas turpinājās līdz pagātnes brīdim (*by the time the doctor arrived*): Past Perfect Continuous, *had been waiting*.")
+note('had waited :: Also possible; the continuous shows better that the waiting went on until the doctor came. :: Arī pareizi; Continuous forma labāk parāda, ka gaidīšana turpinājās līdz ārsta ierašanās brīdim.')
 # x_unreal_past: wish + past perfect
-gp(T, L, 3, "I wish you ___ me about the party. I would have come. (tell)", "had told | 'd told",
+gp(T, L, 3, "We drove all the way there for nothing. I wish you ___ me the restaurant was closed on Mondays. (tell)", "had told | 'd told",
    "A wish about the past: *I wish* + past perfect, *I wish you had told me*.",
    "Vēlēšanās par pagātni: *I wish* + Past Perfect, *I wish you had told me*.")

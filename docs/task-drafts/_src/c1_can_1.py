@@ -1,12 +1,12 @@
 """C1 direction 5 (Advanced modals: can, be able to, may, might), round 1 (23 November 2026). Hewings, Advanced Grammar in Use
 (3rd ed.), units 15, 17; Murphy, English Grammar in Use, units 26-30. Only places where the context leaves one form."""
-from lib import gp, mc
+from lib import gp, mc, note
 T = "Advanced modals: can, be able to, may, might"
 L = "C1"
 
 # x_allowed_once
 mc(T, L, 4, "Which sentence has a mistake?", "Last night the children could stay up until eleven.",
-   ["We could stay up late on Saturdays when we were kids.", "We couldn't go out on school nights.",
+   ["I could hear the neighbours arguing all night.", "We couldn't go out on school nights.",
     "In the end we were allowed to leave early."],
    "Permission on one occasion: *were allowed to*, not *could*: *Last night the children were allowed to stay up until eleven.* "
    "*could* is for permission that was always there, and *couldn't* is fine for both.",
@@ -23,34 +23,38 @@ mc(T, L, 4, "Which sentence has a mistake?", "The forms are able to be filled in
    "Pirms ciešamās kārtas lieto *can*: *The forms can be filled in online*, nevis *are able to be*.")
 # x_may_might
 mc(T, L, 4, "Which sentence has a mistake?", "May the figures in the report be wrong?",
-   ["The results may point to a wider problem.", "Could the figures be wrong?", "Is she likely to accept the offer?"],
+   ["The results may point to a wider problem.", "The trains might be late because of the snow.", "Is she likely to accept the offer?"],
    "We don't ask about possibility with *May…?*: *Could the figures be wrong?* or *Are the figures likely to be wrong?*",
    "Par iespējamību nejautā ar *May…?*: *Could the figures be wrong?* vai *Are the figures likely to be wrong?*")
 # x_may_well
-mc(T, L, 4, "Choose the correct option: The next bus is in an hour, so we ___ walk.", "might as well",
-   ["might as good", "might so well", "might well as"],
-   "*might / may as well* + base verb = it is the only sensible thing to do: *we might as well walk*.",
-   "*might / may as well* + pamatforma = tas ir vienīgais saprātīgais: *we might as well walk*.")
-gp(T, L, 4, "You ___ me you were bringing five friends! I would have made more food. (might / warn)", "might have warned",
-   "*You might have* + past participle: you should have done it (a reproach): *You might have warned me!*",
-   "*You might have* + 3. forma: tev vajadzēja to izdarīt (pārmetums): *You might have warned me!*")
+mc(T, L, 4, "Which sentence has a mistake?", "Nothing's on, so we might as good go to bed.",
+   ["You may well be right about the price.", "You might have told me the café was closed.", "There's no milk, so I'll have my tea black."],
+   "*might / may as well* (not *as good*) = it is the only sensible thing: *we might as well go to bed*.",
+   "*might / may as well* (nevis *as good*) = tas ir vienīgais saprātīgais: *we might as well go to bed*.")
+gp(T, L, 4, "You might ___ ___ me you were bringing five friends! I would have made more food.", "have / warned",
+   "*You might have* + 3rd form: you should have done it (a reproach): *You might have warned me!*",
+   "*You might have* + 3. forma: tev vajadzēja to izdarīt (pārmetums): *You might have warned me!*",
+   bank=["have", "warned", "warn", "had"])
 # x_might_cont
-gp(T, L, 4, "This time next week I ___ on a beach in Crete. (may / lie)", "may be lying | might be lying",
+gp(T, L, 4, "This time next week I ___ ___ ___ on a beach in Crete.", "may / be / lying",
    "A possible activity at a future moment: *may be* + *-ing*, *I may be lying on a beach*.",
-   "Iespējama darbība nākotnes brīdī: *may be* + *-ing*, *I may be lying on a beach*.")
-gp(T, L, 4, "He didn't sound serious about leaving. He ___ . (might / joke)", "might have been joking | might have joked",
+   "Iespējama darbība nākotnes brīdī: *may be* + *-ing*, *I may be lying on a beach*.",
+   bank=["may", "be", "lying", "lie", "have"])
+gp(T, L, 4, "He didn't sound serious about leaving. He ___ ___ ___ ___.", "might / have / been / joking",
    "A possible activity in the past: *might have been* + *-ing*, *he might have been joking*.",
-   "Iespējama darbība pagātnē: *might have been* + *-ing*, *he might have been joking*.")
+   "Iespējama darbība pagātnē: *might have been* + *-ing*, *he might have been joking*.",
+   bank=["might", "have", "been", "joking", "joked", "be"])
 # x_can_typical
-mc(T, L, 3, "Choose the correct option: Winters here ___ very long, so bring warm clothes.", "can be",
-   ["can being", "are able to be", "could have been"],
-   "*can* for what is sometimes or typically true: *Winters here can be very long.*",
-   "*can* tam, kas mēdz būt vai ir raksturīgi: *Winters here can be very long.*")
+mc(T, L, 4, "Which sentence has a mistake?", "Winters here are able to be very long.",
+   ["Travelling with small children can be exhausting.", "She can't have left already: her coat is still here.",
+    "It may snow tonight, so drive carefully."],
+   "*can* for what is sometimes or typically true, not *be able to*: *Winters here can be very long.*",
+   "*can* tam, kas mēdz būt vai ir raksturīgi, nevis *be able to*: *Winters here can be very long.*")
 
 # ── added 23 November to reach 10 counted tasks ──
 # x_may_but
-mc(T, L, 4, "Which sentence has a mistake?", "She may not much experience, but she learns fast.",
+mc(T, L, 4, "Which sentence has a mistake?", "Although she may be young, but she learns fast.",
    ["The flat may be small, but it's bright and quiet.", "He might not be the fastest, but he never gives up.",
     "It may well rain later, so take an umbrella."],
-   "*may not* + base verb: *She may not have much experience, but she learns fast.*",
-   "*may not* + pamatforma: *She may not have much experience, but she learns fast.*")
+   "*may … but* already admits one point and then disagrees, so *although* is not needed: *She may be young, but she learns fast.*",
+   "*may … but* jau atzīst vienu un tad iebilst, tāpēc *although* nav vajadzīgs: *She may be young, but she learns fast.*")

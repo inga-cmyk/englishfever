@@ -1,6 +1,6 @@
 """C1 direction 8 (Prepositions: position and advanced patterns), round 1 (23 November 2026). Hewings, Advanced Grammar in Use
 (3rd ed.), units 55, 91-93; Murphy, English Grammar in Use, units 94, 128-136. Only places where one form is right."""
-from lib import gp, mc
+from lib import gp, mc, note
 T = "Prepositions: position and advanced patterns"
 L = "C1"
 
@@ -17,6 +17,7 @@ gp(T, L, 4, "The report shows the extent ___ which prices have risen.", "to",
 gp(T, L, 4, "Nobody explained the basis ___ which the fee was calculated.", "on | upon",
    "A fixed formal phrase: *the basis on which*.",
    "Nemainīgs oficiāls izteiciens: *the basis on which*.")
+note('upon :: Also correct, but more formal. :: Arī pareizi, bet oficiālāk.')
 mc(T, L, 4, "Which sentence has a mistake?", "Your complaint is being looked by our team.",
    ["He was accused of lying to the police.", "The problem has been dealt with.",
     "The plan was objected to by most residents."],
@@ -25,22 +26,23 @@ mc(T, L, 4, "Which sentence has a mistake?", "Your complaint is being looked by 
 gp(T, L, 3, "I didn't know anyone at the party, so I had nobody to talk ___.", "to | with",
    "The preposition stays at the end of the infinitive: *nobody to talk to*.",
    "Prievārds paliek nenoteiksmes beigās: *nobody to talk to*.")
-mc(T, L, 4, "Choose the correct option: The road was closed ___ repairing the bridge.", "with a view to",
+note('with :: Also correct (*talk with* is common in American English). :: Arī pareizi (*talk with* bieži lieto amerikāņu angļu valodā).')
+mc(T, L, 4, "Choose the correct option: She took a part-time job ___ starting her own business.", "with a view to",
    ["in order to", "so as to", "for the purpose to"],
-   "*with a view to* + *-ing* (*to* here is a preposition): *with a view to repairing the bridge*.",
-   "*with a view to* + *-ing* (*to* te ir prievārds): *with a view to repairing the bridge*.")
+   "*with a view to* + *-ing* (*to* here is a preposition): *with a view to starting her own business*.",
+   "*with a view to* + *-ing* (*to* te ir prievārds): *with a view to starting her own business*.")
 mc(T, L, 4, "Which sentence has a mistake?", "Despite that it rained, the match went ahead.",
    ["Everything depends on whether she signs.", "I'm curious about how the app works.",
     "In spite of the cold, we ate outside."],
    "After a preposition, not a bare *that*-clause: *Despite the fact that it rained…* (or *Although it rained…*).",
-   "Aiz prievārda nelieto tikai *that*-palīgteikumu: *Despite the fact that the tickets were cheap…* (vai *Although the tickets were cheap…*).")
+   "Aiz prievārda nelieto tikai *that*-palīgteikumu: *Despite the fact that it rained…* (vai *Although it rained…*).")
 gp(T, L, 3, "The heavy rain prevented us ___ leaving the house all weekend.", "from",
    "*prevent* + object + *from* + *-ing*: *prevented us from leaving*.",
    "*prevent* + papildinātājs + *from* + *-ing*: *prevented us from leaving*.")
 mc(T, L, 4, "Choose the correct option: Nobody ___ the owner has a key to the safe.", "other than",
-   ["apart", "besides of", "in place of"],
+   ["apart", "besides of", "except of"],
    "*other than* = except: *Nobody other than the owner has a key* (also *except*, *but*, *apart from*).",
    "*other than* = izņemot: *Nobody other than the owner has a key* (arī *except*, *but*, *apart from*).")
-gp(T, L, 3, "She has a real talent ___ explaining difficult ideas simply.", "for | at",
+gp(T, L, 3, "She has a real talent ___ explaining difficult ideas simply.", "for",
    "*a talent for* + *-ing*: *a talent for explaining*.",
    "*a talent for* + *-ing*: *a talent for explaining*.")

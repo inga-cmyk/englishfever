@@ -341,3 +341,18 @@ class Topic:
         self._uniq(q); w = self._sub(self._why("mcq", why), why, q, ok); mc(self.t, lv, b or self.mb, q, ok, wrong, w[0], w[1]); self._tag()
     def match(self, lv, q, pairs, why=None, b=None):
         self._uniq(q); w = self._why("match", why); mt(self.t, lv, b or self.xb, q, pairs, w[0], w[1]); self._tag()
+
+# The C1 files (23 November, full review C1): Latvian words without Latvian letters that the italics marking took for English
+_C1_LV = set("""prasa skaitlis lieta Galvenais izteiciens nemaina uztver vienskaitli saskan izdevies tev inversija lietu auksti troksnis liels
+Divdabja teicienam pats galvenajam teikumam Gaismas iemeslam divdabja iemeslu teiciens pabeigti otram abiem saskaita beigusies balss nogale
+desmit Abas tu te noticis pareizi skaits perfekts nenoteiksmes tikai ierasta nepatiku svara galvenie nodotu apgalvojuma gaida ieteikt objektu
+izsaka ticamai seno notiktu reizi atteikumam lietai esat mieru nelielai padara viedokli otrs papildinātāju forma formas pagātne""".split())
+for _n in ("c1-agree-1.csv", "c1-can-1.csv", "c1-order-1.csv", "c1-part-1.csv", "c1-past-1.csv", "c1-perf-1.csv",
+           "c1-prep-1.csv", "c1-pres-1.csv", "c1-pres-2.csv", "c1-subj-1.csv", "c1-will-1.csv"):
+    LV_BY_FILE[_n] = _C1_LV
+
+
+def note(text):
+    """An answer note for the last row: "answer :: EN :: LV" (several joined with " || ")."""
+    n = len(rows) - 1
+    NOTES[n] = (NOTES[n] + " || " if n in NOTES else "") + text

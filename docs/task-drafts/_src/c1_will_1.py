@@ -1,7 +1,7 @@
 """C1 direction 4 (Advanced modals: will, would, should), round 1 (23 November 2026). Hewings, Advanced Grammar in Use (3rd ed.),
 units 16, 20, 39; Murphy, English Grammar in Use, units 25, 33-34. Only places where the context leaves one form.
 Contexts concrete but common; no Latvian surnames."""
-from lib import gp, mc
+from lib import gp, mc, note
 T = "Advanced modals: will, would, should"
 L = "C1"
 
@@ -16,30 +16,35 @@ mc(T, L, 4, "Which sentence has a mistake?", "The old factory would be next to t
    "For a past state that has changed, use *used to*, not *would*: *The old factory used to be next to the river.*",
    "Pagātnes stāvoklim, kas mainījies, lieto *used to*, nevis *would*: *The old factory used to be next to the river.*")
 # x_wont_refuse
-gp(T, L, 3, "I tried three times, but the printer ___ work this morning. (not / will)", "wouldn't | would not | won't | will not",
+mc(T, L, 3, "Choose the correct option: I tried three times, but the printer ___ work this morning.", "wouldn't",
+   ["wasn't", "hasn't", "isn't"],
    "*wouldn't* for a refusal on one occasion, also by a thing: *the printer wouldn't work*.",
    "*wouldn't* atteikumam vienā reizē, arī lietai: *the printer wouldn't work*.")
 # x_will_assume
-gp(T, L, 4, "Don't ring them now: they ___ lunch. (will / have)", "'ll be having | will be having",
+gp(T, L, 4, "Don't ring them now: they ___ ___ ___ lunch.", "will / be / having",
    "A confident guess about what is happening now: *will be* + *-ing*, *they'll be having lunch*.",
-   "Drošs minējums par to, kas notiek tagad: *will be* + *-ing*, *they'll be having lunch*.")
-gp(T, L, 4, "It's nine o'clock. She ___ the news by now. (will / hear)", "will have heard | 'll have heard",
-   "A confident guess about something before now: *will have* + past participle, *she'll have heard the news by now*.",
-   "Drošs minējums par to, kas jau noticis: *will have* + 3. forma, *she'll have heard the news by now*.")
+   "Drošs minējums par to, kas notiek tagad: *will be* + *-ing*, *they'll be having lunch*.",
+   bank=["will", "be", "having", "have", "been"])
+gp(T, L, 4, "It's nine o'clock. She ___ ___ ___ the news by now.", "will / have / heard",
+   "A confident guess about something before now: *will have* + 3rd form, *she'll have heard the news by now*.",
+   "Drošs minējums par to, kas jau noticis: *will have* + 3. forma, *she'll have heard the news by now*.",
+   bank=["will", "have", "heard", "has", "hear"])
 # x_would_have
-gp(T, L, 3, "I ___ to your party, but nobody told me about it. (come)", "would have come | 'd have come | could have come",
-   "Something that did not happen in the past: *would have* + past participle, *I'd have come*.",
-   "Kaut kas, kas pagātnē nenotika: *would have* + 3. forma, *I'd have come*.")
+gp(T, L, 3, "I ___ ___ ___ to your party, but nobody told me about it.", "would / have / come",
+   "Something that did not happen in the past: *would have* + 3rd form, *I would have come*.",
+   "Kaut kas, kas pagātnē nenotika: *would have* + 3. forma, *I would have come*.",
+   bank=["would", "have", "come", "came", "had"])
 # x_should_expect
-gp(T, L, 4, "I sent it on Monday, so the parcel ___ by now. (should / arrive)", "should have arrived",
-   "*should have* + past participle for what we expect has happened: *the parcel should have arrived by now*.",
-   "*should have* + 3. forma tam, ko sagaidām, ka jau ir noticis: *the parcel should have arrived by now*.")
+gp(T, L, 4, "I sent it on Monday, so the parcel ___ ___ ___ by now.", "should / have / arrived",
+   "*should have* + 3rd form for what we expect has happened: *the parcel should have arrived by now*.",
+   "*should have* + 3. forma tam, ko sagaidām, ka jau ir noticis: *the parcel should have arrived by now*.",
+   bank=["should", "have", "arrived", "has", "arrive"])
 # x_if_will
-mc(T, L, 4, "Which sentence has a mistake?", "Should you will change your mind, just call us.",
+mc(T, L, 4, "Which sentence has a mistake?", "If should you change your mind, just call us.",
    ["If you will follow me, I'll show you to your room.", "If you should need anything, just ask.",
     "If you'd take a seat, the doctor will see you shortly."],
-   "*Should you* + base verb (= if you happen to): *Should you change your mind, just call us.* *If you will / would* = if you are willing.",
-   "*Should you* + pamatforma (= ja gadījumā): *Should you change your mind, just call us.* *If you will / would* = ja esat ar mieru.")
+   "Use *If you should* or *Should you*, not both: *Should you change your mind, just call us.* *If you will / would* = if you are willing.",
+   "Lieto *If you should* vai *Should you*, ne abus kopā: *Should you change your mind, just call us.* *If you will / would* = ja esat ar mieru.")
 # x_should_purpose
 mc(T, L, 4, "Choose the correct option: Keep the receipt in case you ___ to return the shoes.", "should need",
    ["will need", "would need", "had needed"],
@@ -48,11 +53,12 @@ mc(T, L, 4, "Choose the correct option: Keep the receipt in case you ___ to retu
 
 # ── added 23 November to reach 10 counted tasks ──
 # x_would_soft
-mc(T, L, 4, "Choose the correct option: ___ that's about right, but let me check the figures.", "I'd say",
-   ["I would to say", "I'd said", "I'm saying"],
-   "*I'd say* makes an opinion less direct: *I'd say that's about right.*",
-   "*I'd say* padara viedokli mazāk tiešu: *I'd say that's about right.*")
+mc(T, L, 4, "Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad.", "would",
+   ["will", "was", "has"],
+   "*would* for typical, often annoying behaviour in the past: *he would always leave his socks on the sofa*.",
+   "*would* raksturīgai, bieži kaitinošai uzvedībai pagātnē: *he would always leave his socks on the sofa*.")
 # x_will_assume
-gp(T, L, 3, "There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be)", "'ll be | will be",
+gp(T, L, 3, "The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel.", "will / be",
    "*will* for a confident guess about now: *That'll be the courier.*",
-   "*will* drošam minējumam par tagadni: *That'll be the courier.*")
+   "*will* drošam minējumam par tagadni: *That'll be the courier.*",
+   bank=["will", "be", "is", "being"])

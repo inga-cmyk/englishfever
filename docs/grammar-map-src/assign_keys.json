@@ -17762,5 +17762,125 @@
 "adv_will | C1 | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | ": [
 "x_will_assume",
 "read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | Nothing's on, so we might as good go to bed.": [
+"x_may_well",
+"read"
+],
+"adv_can | C1 | gap | You might ___ ___ me you were bringing five friends! I would have made more food. | ": [
+"x_may_well",
+"read"
+],
+"adv_can | C1 | gap | This time next week I ___ ___ ___ on a beach in Crete. | ": [
+"x_might_cont",
+"read"
+],
+"adv_can | C1 | gap | He didn't sound serious about leaving. He ___ ___ ___ ___. | ": [
+"x_might_cont",
+"read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | Winters here are able to be very long.": [
+"x_can_typical",
+"read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | Although she may be young, but she learns fast.": [
+"x_may_but",
+"read"
+],
+"adv_order | C1 | gap | Just as we left the house, down ___ the rain. (come) | ": [
+"x_inv_place",
+"read"
+],
+"adv_order | C1 | text | Start with *What* and end with *a long holiday*: I need a long holiday. | ": [
+"x_cleft_adv",
+"read"
+],
+"adv_part | C1 | gap | Write one word in each gap: ___ ___ anyone in the city, he felt very lonely at first. (not / know) | ": [
+"x_part_having",
+"read"
+],
+"adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light) | ": [
+"x_past_both",
+"read"
+],
+"adv_past | C1 | gap | By the time Sam and I started working together, we ___ each other for ten years. (know) | ": [
+"x_pastpc_choice",
+"read"
+],
+"adv_past | C1 | gap | We drove all the way there for nothing. I wish you ___ me the restaurant was closed on Mondays. (tell) | ": [
+"x_unreal_past",
+"read"
+],
+"adv_perfect | C1 | gap | It's only eleven, and I ___ the bank four times. Nobody's answering. (ring) | ": [
+"x_ppc_adv",
+"read"
+],
+"adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ starting her own business. | with a view to": [
+"x_prep_multi",
+"read"
+],
+"adv_present | C1 | text | Your friend changes the order for the third time: 'Actually, I'll have the fish, not the pasta.' Complain, using *constantly* and *change your mind*. | ": [
+"x_always_cont",
+"read"
+],
+"adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand / turn) | ": [
+"x_pres_story",
+"read"
+],
+"adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot) | ": [
+"x_pres_comment",
+"read"
+],
+"adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you check my CV.": [
+"x_polite_cont",
+"read"
+],
+"adv_subj | C1 | gap | It's odd that she ___ ___ ___ that. She's usually so polite. | ": [
+"x_should_react",
+"read"
+],
+"adv_subj | C1 | mcq | Which sentence has a mistake? | If the landlord would raise the rent, we'd move.": [
+"x_subj_were",
+"read"
+],
+"adv_subj | C1 | mcq | Choose the correct option: The lawyer demanded that her client ___ told the whole truth. | be": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have posted that photo.": [
+"x_rather_perf",
+"read"
+],
+"adv_will | C1 | mcq | Choose the correct option: I tried three times, but the printer ___ work this morning. | wouldn't": [
+"x_wont_refuse",
+"read"
+],
+"adv_will | C1 | gap | Don't ring them now: they ___ ___ ___ lunch. | ": [
+"x_will_assume",
+"read"
+],
+"adv_will | C1 | gap | It's nine o'clock. She ___ ___ ___ the news by now. | ": [
+"x_will_assume",
+"read"
+],
+"adv_will | C1 | gap | I ___ ___ ___ to your party, but nobody told me about it. | ": [
+"x_would_have",
+"read"
+],
+"adv_will | C1 | gap | I sent it on Monday, so the parcel ___ ___ ___ by now. | ": [
+"x_should_expect",
+"read"
+],
+"adv_will | C1 | mcq | Which sentence has a mistake? | If should you change your mind, just call us.": [
+"x_if_will",
+"read"
+],
+"adv_will | C1 | mcq | Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad. | would": [
+"x_would_soft",
+"read"
+],
+"adv_will | C1 | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | ": [
+"x_will_assume",
+"read"
 ]
 }

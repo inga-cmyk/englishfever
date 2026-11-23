@@ -32,7 +32,7 @@ gp(T, L, 4, "Either the manager or her assistants ___ going to call you back. (b
    "Aiz *either … or* darbības vārds saskan ar tuvāko lietvārdu: *her assistants are*.")
 gp(T, L, 4, "Being late for every meeting ___ not going to help your career. (be)", "is | 's | was",
    "An *-ing* clause as the subject is singular, even if it contains a plural noun: *Being late for every meeting is…*",
-   "*-ing* palīgteikums kā teikuma priekšmets ir vienskaitlī, arī ja tajā ir daudzskaitlis: *Being late for every meeting is…*")
+   "Darbības vārds ar *-ing* kā teikuma priekšmets ir vienskaitlī, arī ja tajā ir daudzskaitlis: *Being late for every meeting is…*")
 gp(T, L, 4, "After three days, the jury ___ still arguing among themselves. (be)", "are | were",
    "The jury as separate people (*among themselves*): plural verb, *are arguing*.",
    "Žūrija kā atsevišķi cilvēki (*among themselves*): darbības vārds daudzskaitlī, *are arguing*.")

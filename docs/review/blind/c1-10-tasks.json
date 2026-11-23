@@ -1,0 +1,415 @@
+[
+ {
+  "id": "c1-10-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I could hear the neighbours arguing all night.",
+   "We couldn't go out on school nights.",
+   "In the end we were allowed to leave early.",
+   "Last night the children could stay up until eleven."
+  ]
+ },
+ {
+  "id": "c1-10-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Is she likely to accept the offer?",
+   "May the figures in the report be wrong?",
+   "The trains might be late because of the snow.",
+   "The results may point to a wider problem."
+  ]
+ },
+ {
+  "id": "c1-10-003",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Nothing's on, so we might as good go to bed.",
+   "You may well be right about the price.",
+   "You might have told me the café was closed.",
+   "There's no milk, so I'll have my tea black."
+  ]
+ },
+ {
+  "id": "c1-10-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "You might ___ ___ me you were bringing five friends! I would have made more food.",
+  "word_cards": [
+   "warned",
+   "have",
+   "had",
+   "warn"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "This time next week I ___ ___ ___ on a beach in Crete.",
+  "word_cards": [
+   "have",
+   "lie",
+   "be",
+   "may",
+   "lying"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "He didn't sound serious about leaving. He ___ ___ ___ ___.",
+  "word_cards": [
+   "joking",
+   "joked",
+   "have",
+   "be",
+   "might",
+   "been"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-007",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Winters here are able to be very long.",
+   "She can't have left already: her coat is still here.",
+   "Travelling with small children can be exhausting.",
+   "It may snow tonight, so drive carefully."
+  ]
+ },
+ {
+  "id": "c1-10-008",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "He might not be the fastest, but he never gives up.",
+   "The flat may be small, but it's bright and quiet.",
+   "Although she may be young, but she learns fast.",
+   "It may well rain later, so take an umbrella."
+  ]
+ },
+ {
+  "id": "c1-10-009",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-010",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Had*: If I had known about the traffic, I would have left earlier.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-10-011",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Just as we left the house, down ___ the rain. (come)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-012",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *What* and end with *a long holiday*: I need a long holiday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-10-013",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: ___ ___ anyone in the city, he felt very lonely at first. (not / know)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-014",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-015",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "By the time Sam and I started working together, we ___ each other for ten years. (know)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-016",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "We drove all the way there for nothing. I wish you ___ me the restaurant was closed on Mondays. (tell)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-017",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's only eleven, and I ___ the bank four times. Nobody's answering. (ring)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-018",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We've been waiting for the plumber since nine.",
+   "She's been learning Spanish for two years.",
+   "I've been having this phone since May.",
+   "Rents have gone up by eight per cent this year."
+  ]
+ },
+ {
+  "id": "c1-10-019",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She took a part-time job ___ starting her own business.",
+  "options": [
+   "in order to",
+   "so as to",
+   "for the purpose to",
+   "with a view to"
+  ]
+ },
+ {
+  "id": "c1-10-020",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Nobody ___ the owner has a key to the safe.",
+  "options": [
+   "except of",
+   "other than",
+   "besides of",
+   "apart"
+  ]
+ },
+ {
+  "id": "c1-10-021",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Your friend changes the order for the third time: 'Actually, I'll have the fish, not the pasta.' Complain, using *constantly* and *change your mind*.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-10-022",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She constantly checks her phone in meetings.",
+   "He's always offering to help with the shopping.",
+   "I'm seeing the dentist on Friday.",
+   "My neighbour forever is borrowing my tools."
+  ]
+ },
+ {
+  "id": "c1-10-023",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand / turn)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-024",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-10-025",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'm wondering could you check my CV.",
+   "We're hoping to move in by the end of May.",
+   "I'm thinking of joining a gym.",
+   "She's always asking me for advice."
+  ]
+ },
+ {
+  "id": "c1-10-026",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's odd that she ___ ___ ___ that. She's usually so polite.",
+  "word_cards": [
+   "say",
+   "should",
+   "has",
+   "have",
+   "said"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-027",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "If the landlord would raise the rent, we'd move.",
+   "If I were you, I'd take that job in Oslo.",
+   "I wish the weekend were a little longer.",
+   "She speaks to me as if I were still a child."
+  ]
+ },
+ {
+  "id": "c1-10-028",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The plan has its problems. ___, it's the best one we have.",
+  "options": [
+   "Be that as it may",
+   "As it may be",
+   "Come what may",
+   "Being that as it may"
+  ]
+ },
+ {
+  "id": "c1-10-029",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The lawyer demanded that her client ___ told the whole truth.",
+  "options": [
+   "being",
+   "to be",
+   "be",
+   "is being"
+  ]
+ },
+ {
+  "id": "c1-10-030",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'd sooner she hadn't told everyone at work.",
+   "I'd rather you didn't smoke in the kitchen.",
+   "I wish I had listened to your advice back then.",
+   "I'd rather you wouldn't have posted that photo."
+  ]
+ },
+ {
+  "id": "c1-10-031",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I tried three times, but the printer ___ work this morning.",
+  "options": [
+   "isn't",
+   "wouldn't",
+   "hasn't",
+   "wasn't"
+  ]
+ },
+ {
+  "id": "c1-10-032",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Don't ring them now: they ___ ___ ___ lunch.",
+  "word_cards": [
+   "will",
+   "have",
+   "be",
+   "having",
+   "been"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-033",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's nine o'clock. She ___ ___ ___ the news by now.",
+  "word_cards": [
+   "has",
+   "heard",
+   "have",
+   "will",
+   "hear"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-034",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ ___ ___ to your party, but nobody told me about it.",
+  "word_cards": [
+   "had",
+   "have",
+   "came",
+   "would",
+   "come"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-035",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I sent it on Monday, so the parcel ___ ___ ___ by now.",
+  "word_cards": [
+   "has",
+   "arrived",
+   "should",
+   "arrive",
+   "have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-10-036",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "If you should need anything, just ask.",
+   "If you'd take a seat, the doctor will see you shortly.",
+   "If you will follow me, I'll show you to your room.",
+   "If should you change your mind, just call us."
+  ]
+ },
+ {
+  "id": "c1-10-037",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad.",
+  "options": [
+   "will",
+   "would",
+   "has",
+   "was"
+  ]
+ },
+ {
+  "id": "c1-10-038",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel.",
+  "word_cards": [
+   "is",
+   "be",
+   "will",
+   "being"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

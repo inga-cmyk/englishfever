@@ -397,6 +397,6 @@ CARDS = {
          {'ex': ['[[Tired as I was]], I finished the report.'],
           's': ['adjective + as', 'adjective + though'],
           't': '*although* stiprāk: īpašības vārds + *as / though*'}],
-        ['After *Here / There* + a noun, the verb comes first: *There [[goes]] my weekend!* (but *There it [[goes]]!*)'],
-        ['Pēc *Here / There* ar lietvārdu darbības vārds stāv pirmais: *There [[goes]] my weekend!* (bet *There it [[goes]]!*)']),
+        ['After *Here / There* or a word of place (*down, out, in*) + a noun, the verb comes first: *There [[goes]] my weekend!* · *Down [[came]] the rain.* (but *There it [[goes]]!*)'],
+        ['Pēc *Here / There* vai vietas vārda (*down, out, in*) ar lietvārdu darbības vārds stāv pirmais: *There [[goes]] my weekend!* · *Down [[came]] the rain.* (bet *There it [[goes]]!*)']),
 }

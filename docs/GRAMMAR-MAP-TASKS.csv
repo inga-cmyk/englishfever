@@ -4157,70 +4157,6 @@ reason_result_b2,B2.2,conj_b2,B2.2,use,gap,read,,typical-b2c1-1.csv:25,"conj_b2 
 x_inv_cond,C1,cond_advanced,B2.2,check,mcq,read,,twins-1.csv:53,"cond_advanced | B2.2 | mcq | Choose the correct option: ___ for your help, we would never have finished on time. | But"
 x_inv_cond,C1,cond_advanced,B2.2,check,gap,read,,twins-1.csv:57,"cond_advanced | B2.2 | gap | ___ it not been for the rain, the match would have finished on time. | "
 x_inv_cond,C1,cond_advanced,B2.2,use,gap,read,,typical-b2c1-1.csv:36,"cond_advanced | B2.2 | gap | If it ___ for your advice, I would never have applied. (not / be) | "
-x_always_cont,C1,adv_present,C1,use,text,read,,c1-pres-1.csv:5,"adv_present | C1 | text | Your friend changes the order for the third time: ""Actually, I'll have the fish, not the pasta."" Complain, using *constantly* and *change your mind*. | "
-x_always_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:6,adv_present | C1 | gap | Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | 
-x_always_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-1.csv:7,adv_present | C1 | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.
-x_always_cont,C1,adv_present,C1,check,order,read,,c1-pres-1.csv:8,adv_present | C1 | order | Put the words in order. | you're constantly interrupting me when I'm speaking
-x_mental_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:4,"adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | "
-x_performative,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:10,adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | 
-x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:2,adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | 
-x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:3,adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | 
-x_state_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-1.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.
-x_pres_story,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:2,"adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn) | "
-x_pres_story,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:3,adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.
-x_pres_comment,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:4,"adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | "
-x_i_hear,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:5,adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.
-x_polite_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:6,adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you look at my CV before Friday.
-x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:7,adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | 
-x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:8,adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | 
-x_performative,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.
-x_past_both,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:2,"adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light) | "
-x_pastc_repeat,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:3,adv_past | C1 | mcq | Which sentence has a mistake? | We were flying to Oslo four times last year.
-x_pastp_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:4,"adv_past | C1 | gap | As soon as I saw her at the party, I was sure we ___ before. (meet) | "
-x_pastpc_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:5,adv_past | C1 | gap | We ___ each other for years before we started working together. (know) | 
-x_pastp_deduce,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:6,adv_past | C1 | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | 
-x_pastp_deduce,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:7,"adv_past | C1 | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved"
-x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:8,adv_past | C1 | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | 
-x_past_intend,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:9,"adv_past | C1 | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend."
-x_pastp_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:10,adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | 
-x_pp_period,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:2,"adv_perfect | C1 | gap | It's only ten o'clock, and I ___ three cups of coffee this morning. (drink) | "
-x_pp_period,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:3,adv_perfect | C1 | gap | It's six in the evening now. I ___ much this morning because the internet was down. (not / do) | 
-x_since_clause,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:4,"adv_perfect | C1 | mcq | Choose the correct option: Since she ___ the team, sales have doubled. | joined"
-x_since_clause,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:5,adv_perfect | C1 | gap | Have you made any friends since you ___ in this city? (live) | 
-x_time_perf,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:6,adv_perfect | C1 | gap | I'll text you the moment I ___ my exam results. (get) | 
-x_time_perf,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:7,"adv_perfect | C1 | mcq | Which sentence has a mistake? | Once you paid, the order can't be changed."
-x_first_time,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:8,adv_perfect | C1 | gap | This is the third time she ___ her keys this week! (lose) | 
-x_first_time,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:9,adv_perfect | C1 | mcq | Which sentence has a mistake? | This is the first time I am seeing snow.
-x_ppc_adv,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:10,"adv_perfect | C1 | gap | It's only eleven, and I ___ the bank four times. Nobody answers. (ring) | "
-x_ppc_adv,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:11,adv_perfect | C1 | mcq | Which sentence has a mistake? | I've been having this phone since May.
-x_perf_cont_all,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:12,adv_perfect | C1 | gap | By next May I ___ at this school for ten years. (teach) | 
-x_perf_aspect,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:13,adv_perfect | C1 | gap | The thief is thought ___ the country last week. (leave) | 
-x_perf_aspect,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:14,adv_perfect | C1 | mcq | Choose the correct option: She denied ___ the letter. | having read
-x_will_habit,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:2,adv_will | C1 | mcq | Which sentence has a mistake? | Last night he would cook dinner for all of us.
-x_will_habit,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:3,adv_will | C1 | mcq | Which sentence has a mistake? | The old factory would be next to the river.
-x_wont_refuse,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:4,"adv_will | C1 | gap | I tried three times, but the printer ___ work this morning. (not / will) | "
-x_will_assume,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:5,adv_will | C1 | gap | Don't ring them now: they ___ lunch. (will / have) | 
-x_will_assume,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:6,adv_will | C1 | gap | It's nine o'clock. She ___ the news by now. (will / hear) | 
-x_would_have,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:7,"adv_will | C1 | gap | I ___ to your party, but nobody told me about it. (come) | "
-x_should_expect,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:8,"adv_will | C1 | gap | I sent it on Monday, so the parcel ___ by now. (should / arrive) | "
-x_if_will,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:9,"adv_will | C1 | mcq | Which sentence has a mistake? | Should you will change your mind, just call us."
-x_should_purpose,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:10,adv_will | C1 | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need
-x_allowed_once,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:2,adv_can | C1 | mcq | Which sentence has a mistake? | Last night the children could stay up until eleven.
-x_able_limits,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:3,"adv_can | C1 | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to"
-x_able_limits,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:4,adv_can | C1 | mcq | Which sentence has a mistake? | The forms are able to be filled in online.
-x_may_might,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:5,adv_can | C1 | mcq | Which sentence has a mistake? | May the figures in the report be wrong?
-x_may_well,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:6,"adv_can | C1 | mcq | Choose the correct option: The next bus is in an hour, so we ___ walk. | might as well"
-x_may_well,C1,adv_can,C1,use,gap,read,,c1-can-1.csv:7,adv_can | C1 | gap | You ___ me you were bringing five friends! I would have made more food. (might / warn) | 
-x_might_cont,C1,adv_can,C1,use,gap,read,,c1-can-1.csv:8,adv_can | C1 | gap | This time next week I ___ on a beach in Crete. (may / lie) | 
-x_might_cont,C1,adv_can,C1,use,gap,read,,c1-can-1.csv:9,adv_can | C1 | gap | He didn't sound serious about leaving. He ___ . (might / joke) | 
-x_can_typical,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:10,"adv_can | C1 | mcq | Choose the correct option: Winters here ___ very long, so bring warm clothes. | can be"
-x_subj_present,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:2,adv_subj | C1 | mcq | Which sentence has a mistake? | The board demanded the director to resign.
-x_subj_present,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:3,adv_subj | C1 | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | 
-x_should_react,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:4,adv_subj | C1 | gap | It's odd that she ___ that. She's usually so polite. (should / say) | 
-x_subj_were,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:5,"adv_subj | C1 | gap | If the bank ___ to refuse the loan, we would sell the car. (be) | "
-x_subj_were,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:6,"adv_subj | C1 | mcq | Which sentence has a mistake? | If the bank would refuse, we would sell the car."
-x_rather_perf,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:7,"adv_subj | C1 | gap | I'd rather you ___ me yesterday, before the meeting, not after it. (tell) | "
-x_subj_fixed,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:8,"adv_subj | C1 | mcq | Choose the correct option: The plan has its problems. ___, it's the best one we have. | Be that as it may"
 x_agr_quant,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:2,adv_agree | C1 | gap | The number of applicants ___ fallen sharply this year. (have) | 
 x_agr_quant,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:3,adv_agree | C1 | gap | A number of applicants ___ already withdrawn. (have) | 
 x_agr_complex,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:4,"adv_agree | C1 | gap | The manager, together with two of her assistants, ___ coming to the meeting. (be) | "
@@ -4231,19 +4167,30 @@ x_agr_quant,C1,adv_agree,C1,check,mcq,read,,c1-agree-1.csv:8,adv_agree | C1 | mc
 x_agr_or_nor,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:9,adv_agree | C1 | gap | Either the manager or her assistants ___ going to call you back. (be) | 
 x_agr_clause,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:10,adv_agree | C1 | gap | Being late for every meeting ___ not going to help your career. (be) | 
 x_agr_collective,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:11,"adv_agree | C1 | gap | After three days, the jury ___ still arguing among themselves. (be) | "
-x_prep_whom,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:2,adv_prep | C1 | mcq | Which sentence has a mistake? | The colleague with who I share an office is on holiday.
-x_prep_which_fixed,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:3,adv_prep | C1 | gap | The report shows the extent ___ which prices have risen. | 
-x_prep_which_fixed,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:4,adv_prep | C1 | gap | Nobody explained the basis ___ which the fee was calculated. | 
-x_prep_passive,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:5,adv_prep | C1 | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.
-x_prep_inf,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:6,"adv_prep | C1 | gap | I didn't know anyone at the party, so I had nobody to talk ___. | "
-x_prep_multi,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:7,adv_prep | C1 | mcq | Choose the correct option: The road was closed ___ repairing the bridge. | with a view to
-x_prep_fact,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:8,"adv_prep | C1 | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead."
-x_prep_verb,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:9,adv_prep | C1 | gap | The heavy rain prevented us ___ leaving the house all weekend. | 
-x_prep_except,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:10,adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than
-x_prep_noun,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:11,adv_prep | C1 | gap | She has a real talent ___ explaining difficult ideas simply. | 
+x_allowed_once,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:2,adv_can | C1 | mcq | Which sentence has a mistake? | Last night the children could stay up until eleven.
+x_able_limits,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:3,"adv_can | C1 | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to"
+x_able_limits,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:4,adv_can | C1 | mcq | Which sentence has a mistake? | The forms are able to be filled in online.
+x_may_might,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:5,adv_can | C1 | mcq | Which sentence has a mistake? | May the figures in the report be wrong?
+x_may_well,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:6,"adv_can | C1 | mcq | Which sentence has a mistake? | Nothing's on, so we might as good go to bed."
+x_may_well,C1,adv_can,C1,check,gap,read,,c1-can-1.csv:7,adv_can | C1 | gap | You might ___ ___ me you were bringing five friends! I would have made more food. | 
+x_might_cont,C1,adv_can,C1,check,gap,read,,c1-can-1.csv:8,adv_can | C1 | gap | This time next week I ___ ___ ___ on a beach in Crete. | 
+x_might_cont,C1,adv_can,C1,check,gap,read,,c1-can-1.csv:9,adv_can | C1 | gap | He didn't sound serious about leaving. He ___ ___ ___ ___. | 
+x_can_typical,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:10,adv_can | C1 | mcq | Which sentence has a mistake? | Winters here are able to be very long.
+x_may_but,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:11,"adv_can | C1 | mcq | Which sentence has a mistake? | Although she may be young, but she learns fast."
+x_inv_neg,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:2,adv_order | C1 | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | 
+x_inv_neg,C1,adv_order,C1,check,mcq,read,,c1-order-1.csv:3,adv_order | C1 | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.
+x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:4,adv_order | C1 | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | 
+x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:5,adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | 
+x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:6,"adv_order | C1 | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | "
+x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:7,"adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | "
+x_inv_place,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:8,"adv_order | C1 | gap | Just as we left the house, down ___ the rain. (come) | "
+x_cleft_adv,C1,adv_order,C1,use,text,read,,c1-order-1.csv:9,adv_order | C1 | text | Start with *What* and end with *a long holiday*: I need a long holiday. | 
+x_front_as,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:10,"adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | "
+x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:11,adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | 
+x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:12,adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | 
 x_part_subject,C1,adv_part,C1,check,mcq,read,,c1-part-1.csv:2,"adv_part | C1 | mcq | Which sentence has a mistake? | Walking into the office, the lights were all off."
 x_part_having,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:3,"adv_part | C1 | gap | ___ finished the report, she went home early. (have) | "
-x_part_having,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:4,"adv_part | C1 | gap | Not ___ anyone in the city, he felt very lonely at first. (know) | "
+x_part_having,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:4,"adv_part | C1 | gap | Write one word in each gap: ___ ___ anyone in the city, he felt very lonely at first. (not / know) | "
 x_part_ed,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:5,"adv_part | C1 | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | "
 x_part_with,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:6,"adv_part | C1 | gap | ___ prices going up every month, many families are struggling. | "
 x_part_there,C1,adv_part,C1,check,mcq,read,,c1-part-1.csv:7,"adv_part | C1 | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being"
@@ -4251,23 +4198,76 @@ x_part_result,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:8,"adv_part | C1 | gap 
 x_part_prep,C1,adv_part,C1,check,mcq,read,,c1-part-1.csv:9,"adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On"
 x_part_conj,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:10,adv_part | C1 | gap | Keep the jar in the fridge once ___. (open) | 
 x_part_comment,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:11,"adv_part | C1 | gap | ___ by the queue outside, the new café is very popular. (judge) | "
-x_inv_neg,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:2,adv_order | C1 | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | 
-x_inv_neg,C1,adv_order,C1,check,mcq,read,,c1-order-1.csv:3,adv_order | C1 | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.
-x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:4,adv_order | C1 | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | 
-x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:5,adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | 
-x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:6,"adv_order | C1 | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | "
-x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:7,"adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | "
-x_inv_place,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:8,"adv_order | C1 | gap | Here ___ the bus! Quick, get your bag. (come) | "
-x_cleft_adv,C1,adv_order,C1,use,text,read,,c1-order-1.csv:9,adv_order | C1 | text | Start with *What*: I need a long holiday. | 
-x_front_as,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:10,"adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | "
-x_may_but,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:11,"adv_can | C1 | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast."
-x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:11,adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | 
-x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:12,adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | 
+x_past_both,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:2,adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light) | 
+x_pastc_repeat,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:3,adv_past | C1 | mcq | Which sentence has a mistake? | We were flying to Oslo four times last year.
+x_pastp_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:4,"adv_past | C1 | gap | As soon as I saw her at the party, I was sure we ___ before. (meet) | "
+x_pastpc_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:5,"adv_past | C1 | gap | By the time Sam and I started working together, we ___ each other for ten years. (know) | "
+x_pastp_deduce,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:6,adv_past | C1 | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | 
+x_pastp_deduce,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:7,"adv_past | C1 | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved"
+x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:8,adv_past | C1 | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | 
+x_past_intend,C1,adv_past,C1,check,mcq,read,,c1-past-1.csv:9,"adv_past | C1 | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend."
+x_pastp_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:10,adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | 
 x_pastpc_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:11,"adv_past | C1 | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | "
-x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:12,adv_past | C1 | gap | I wish you ___ me about the party. I would have come. (tell) | 
+x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:12,adv_past | C1 | gap | We drove all the way there for nothing. I wish you ___ me the restaurant was closed on Mondays. (tell) | 
+x_pp_period,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:2,"adv_perfect | C1 | gap | It's only ten o'clock, and I ___ three cups of coffee this morning. (drink) | "
+x_pp_period,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:3,adv_perfect | C1 | gap | It's six in the evening now. I ___ much this morning because the internet was down. (not / do) | 
+x_since_clause,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:4,"adv_perfect | C1 | mcq | Choose the correct option: Since she ___ the team, sales have doubled. | joined"
+x_since_clause,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:5,adv_perfect | C1 | gap | Have you made any friends since you ___ in this city? (live) | 
+x_time_perf,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:6,adv_perfect | C1 | gap | I'll text you the moment I ___ my exam results. (get) | 
+x_time_perf,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:7,"adv_perfect | C1 | mcq | Which sentence has a mistake? | Once you paid, the order can't be changed."
+x_first_time,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:8,adv_perfect | C1 | gap | This is the third time she ___ her keys this week! (lose) | 
+x_first_time,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:9,adv_perfect | C1 | mcq | Which sentence has a mistake? | This is the first time I am seeing snow.
+x_ppc_adv,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:10,"adv_perfect | C1 | gap | It's only eleven, and I ___ the bank four times. Nobody's answering. (ring) | "
+x_ppc_adv,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:11,adv_perfect | C1 | mcq | Which sentence has a mistake? | I've been having this phone since May.
+x_perf_cont_all,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:12,adv_perfect | C1 | gap | By next May I ___ at this school for ten years. (teach) | 
+x_perf_aspect,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:13,adv_perfect | C1 | gap | The thief is thought ___ the country last week. (leave) | 
+x_perf_aspect,C1,adv_perfect,C1,check,mcq,read,,c1-perf-1.csv:14,adv_perfect | C1 | mcq | Choose the correct option: She denied ___ the letter. | having read
+x_prep_whom,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:2,adv_prep | C1 | mcq | Which sentence has a mistake? | The colleague with who I share an office is on holiday.
+x_prep_which_fixed,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:3,adv_prep | C1 | gap | The report shows the extent ___ which prices have risen. | 
+x_prep_which_fixed,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:4,adv_prep | C1 | gap | Nobody explained the basis ___ which the fee was calculated. | 
+x_prep_passive,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:5,adv_prep | C1 | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.
+x_prep_inf,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:6,"adv_prep | C1 | gap | I didn't know anyone at the party, so I had nobody to talk ___. | "
+x_prep_multi,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:7,adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ starting her own business. | with a view to
+x_prep_fact,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:8,"adv_prep | C1 | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead."
+x_prep_verb,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:9,adv_prep | C1 | gap | The heavy rain prevented us ___ leaving the house all weekend. | 
+x_prep_except,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:10,adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than
+x_prep_noun,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:11,adv_prep | C1 | gap | She has a real talent ___ explaining difficult ideas simply. | 
+x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:2,adv_present | C1 | gap | What are you doing with that tape measure? I ___ the kitchen for the new cupboards. (measure) | 
+x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:3,adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | 
+x_mental_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:4,"adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | "
+x_always_cont,C1,adv_present,C1,use,text,read,,c1-pres-1.csv:5,"adv_present | C1 | text | Your friend changes the order for the third time: 'Actually, I'll have the fish, not the pasta.' Complain, using *constantly* and *change your mind*. | "
+x_always_cont,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:6,adv_present | C1 | gap | Write one word in each gap: Don't phone me at half past eight: I ___ usually ___ to work then. (drive) | 
+x_always_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-1.csv:7,adv_present | C1 | mcq | Which sentence has a mistake? | My neighbour forever is borrowing my tools.
+x_always_cont,C1,adv_present,C1,check,order,read,,c1-pres-1.csv:8,adv_present | C1 | order | Put the words in order. | you're constantly interrupting me when I'm speaking
+x_state_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-1.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.
+x_performative,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:10,adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | 
+x_pres_story,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:2,"adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand / turn) | "
+x_pres_story,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:3,adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.
+x_pres_comment,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:4,"adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot) | "
+x_i_hear,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:5,adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.
+x_polite_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:6,adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you check my CV.
+x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:7,adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | 
+x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:8,adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | 
+x_performative,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.
+x_subj_present,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:2,adv_subj | C1 | mcq | Which sentence has a mistake? | The board demanded the director to resign.
+x_subj_present,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:3,adv_subj | C1 | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | 
+x_should_react,C1,adv_subj,C1,check,gap,read,,c1-subj-1.csv:4,adv_subj | C1 | gap | It's odd that she ___ ___ ___ that. She's usually so polite. | 
+x_subj_were,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:5,"adv_subj | C1 | gap | If the bank ___ to refuse the loan, we would sell the car. (be) | "
+x_subj_were,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:6,"adv_subj | C1 | mcq | Which sentence has a mistake? | If the landlord would raise the rent, we'd move."
+x_rather_perf,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:7,"adv_subj | C1 | gap | I'd rather you ___ me yesterday, before the meeting, not after it. (tell) | "
+x_subj_fixed,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:8,"adv_subj | C1 | mcq | Choose the correct option: The plan has its problems. ___, it's the best one we have. | Be that as it may"
 x_subj_adj,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:9,adv_subj | C1 | gap | It is essential that every passenger ___ a valid ticket. (have) | 
-x_subj_present,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:10,adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be
-x_rather_perf,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:11,adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have sold the car.
+x_subj_present,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:10,adv_subj | C1 | mcq | Choose the correct option: The lawyer demanded that her client ___ told the whole truth. | be
+x_rather_perf,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:11,adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have posted that photo.
 x_subj_fixed,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:12,"adv_subj | C1 | gap | We'll finish this project on time, come what ___. | "
-x_would_soft,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:11,"adv_will | C1 | mcq | Choose the correct option: ___ that's about right, but let me check the figures. | I'd say"
-x_will_assume,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:12,adv_will | C1 | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | 
+x_will_habit,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:2,adv_will | C1 | mcq | Which sentence has a mistake? | Last night he would cook dinner for all of us.
+x_will_habit,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:3,adv_will | C1 | mcq | Which sentence has a mistake? | The old factory would be next to the river.
+x_wont_refuse,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:4,"adv_will | C1 | mcq | Choose the correct option: I tried three times, but the printer ___ work this morning. | wouldn't"
+x_will_assume,C1,adv_will,C1,check,gap,read,,c1-will-1.csv:5,adv_will | C1 | gap | Don't ring them now: they ___ ___ ___ lunch. | 
+x_will_assume,C1,adv_will,C1,check,gap,read,,c1-will-1.csv:6,adv_will | C1 | gap | It's nine o'clock. She ___ ___ ___ the news by now. | 
+x_would_have,C1,adv_will,C1,check,gap,read,,c1-will-1.csv:7,"adv_will | C1 | gap | I ___ ___ ___ to your party, but nobody told me about it. | "
+x_should_expect,C1,adv_will,C1,check,gap,read,,c1-will-1.csv:8,"adv_will | C1 | gap | I sent it on Monday, so the parcel ___ ___ ___ by now. | "
+x_if_will,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:9,"adv_will | C1 | mcq | Which sentence has a mistake? | If should you change your mind, just call us."
+x_should_purpose,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:10,adv_will | C1 | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need
+x_would_soft,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:11,adv_will | C1 | mcq | Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad. | would
+x_will_assume,C1,adv_will,C1,check,gap,read,,c1-will-1.csv:12,adv_will | C1 | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | 

@@ -1,0 +1,178 @@
+[
+{
+"id": "c1-9-001",
+"answer": "She may not much experience, but she learns fast.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Mistake (missing 'have') is believable. Fine."
+},
+{
+"id": "c1-9-002",
+"answer": [
+"can"
+],
+"other_correct": [
+[
+"could"
+],
+[
+"can't"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Second answer: 'could' is correct (Even with my glasses on, I could hardly read: past reading of the same situation, no time frame given). 'can't' also works (can't hardly is non-standard; 'can't' alone loses 'hardly' so not valid). Give a past or present cue.",
+"level_problem": "Too easy for C1: 'hardly' with can is B1 level.",
+"sense_problem": ""
+},
+{
+"id": "c1-9-003",
+"answer": [
+"was"
+],
+"other_correct": [
+[
+"is"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'is' is also possible as a literary/present narration, but 'could' makes past; 'was' is the only natural one. Gap gives answer away via 'Such' inversion only mildly.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-004",
+"answer": [
+"did",
+"realise"
+],
+"other_correct": [
+[
+"did",
+"realize"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "American spelling 'realize' is also correct; accept both. 'Only when' at the start gives the inversion away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-005",
+"answer": [
+"had been waiting"
+],
+"other_correct": [
+[
+"had waited"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had waited' is also correct with 'for over an hour'. Task needs one extra cue (e.g. 'still') to force continuous.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-006",
+"answer": [
+"had told"
+],
+"other_correct": [
+[
+"'d told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Possibly B2 rather than C1 (third conditional wish).",
+"sense_problem": ""
+},
+{
+"id": "c1-9-007",
+"answer": [
+"have"
+],
+"other_correct": [
+[
+"should have"
+],
+[
+"has"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'should have' (BrE) is correct; 'has' is also acceptable informally (indicative), less formal-subjunctive. Giving '(have)' hands over the subjunctive form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-008",
+"answer": "be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-009",
+"answer": "I'd rather you wouldn't have sold the car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Believable mistake."
+},
+{
+"id": "c1-9-010",
+"answer": [
+"may"
+],
+"other_correct": [
+[
+"will"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'come what will' is also found (rarer); 'may' is the standard idiom. Idiom with no context to help.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-011",
+"answer": "I'd say",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'I'm saying' is grammatical in some contexts (I'm saying that's about right) so is arguably not wrong; but it does not fit the hedging sense.",
+"level_problem": "Easy for C1 (B1 learner could solve it).",
+"sense_problem": "'I would to say' is a random impossible string, not a believable mistake."
+},
+{
+"id": "c1-9-012",
+"answer": [
+"will be"
+],
+"other_correct": [
+[
+"'ll be"
+],
+[
+"must be"
+],
+[
+"could be"
+],
+[
+"might be"
+],
+[
+"may be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(will / be)' forces answer but other modals (must/could/might) are correct English here; if hint is ignored many fit. Contraction 'll be' after 'That' should be accepted.",
+"level_problem": "B1 level (will for prediction/deduction) not C1.",
+"sense_problem": ""
+}
+]

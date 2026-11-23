@@ -1,0 +1,159 @@
+[
+{
+"id": "c1-9-001",
+"answer": "She may not much experience, but she learns fast.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option D reads like a missing-word typo (may not have much experience), not a mistake a C1 learner really makes; the other three are plain correct, so the task is easy to spot."
+},
+{
+"id": "c1-9-002",
+"answer": [
+"can"
+],
+"other_correct": [
+[
+"could"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The cue (can) gives the answer away; only copying is needed. 'could' is also correct (and 'can' vs 'could' is not distinguished by context).",
+"level_problem": "Too easy for C1: can hardly is not a C1 point.",
+"sense_problem": ""
+},
+{
+"id": "c1-9-003",
+"answer": [
+"was"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-004",
+"answer": [
+"did",
+"realise"
+],
+"other_correct": [
+[
+"did",
+"realize"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue (realise) is the verb; 'Only when' at the start prompts inversion strongly. American spelling 'realize' is also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-005",
+"answer": [
+"had been waiting"
+],
+"other_correct": [
+[
+"had waited"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'had waited' is also correct; the task cannot tell the two apart."
+},
+{
+"id": "c1-9-006",
+"answer": [
+"had told"
+],
+"other_correct": [
+[
+"'d told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-007",
+"answer": [
+"have"
+],
+"other_correct": [
+[
+"should have"
+],
+[
+"has"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue (have) is the answer given away; 'should have' (British) is also correct, and 'has' is common in informal use.",
+"level_problem": "Mandative subjunctive with cue given is easy for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-9-008",
+"answer": "be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-009",
+"answer": "I'd rather you wouldn't have sold the car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-010",
+"answer": [
+"may"
+],
+"other_correct": [
+[
+"might"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'come what might' is also possible, though rarer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-9-011",
+"answer": "I'd say",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'I'd say' as a hedge is B1/B2; too easy for C1.",
+"sense_problem": "'I would to say' is an impossible string, not a believable mistake; 'I'd said' and 'I'm saying' are also weak distractors."
+},
+{
+"id": "c1-9-012",
+"answer": [
+"will be"
+],
+"other_correct": [
+[
+"'ll be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue (will / be) gives the form away; only copying/joining is needed. 'must be' would also fit but is excluded by the cue.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

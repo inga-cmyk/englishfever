@@ -1,0 +1,107 @@
+[
+{
+"id": "c1-14-001",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"will be"
+],
+[
+"were"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time context: 'are coming' (present arrangement), 'will be coming' and 'were coming' (past) all fit. Also needs the verb form only; plural subject agreement is the whole task.",
+"level_problem": "Too easy for C1: subject-verb agreement with 'be' is A2/B1.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-002",
+"answer": "So loud was the music that we couldn't hear each other.",
+"other_correct": [
+"So loud was the music that we could not hear each other.",
+"So loud was the music that we couldn't hear one another.",
+"So loud was the music that we could not hear one another.",
+"So loud did the music play that we couldn't hear each other."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction does not say to invert (So loud was the music...); a learner may write 'So loud, the music was that...' or copy the model. The model sentence nearly gives the answer (just move words and invert).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-14-003",
+"answer": "The river burst its banks, flooding the streets near the station.",
+"other_correct": [
+"Bursting its banks, the river flooded the streets near the station.",
+"The river, bursting its banks, flooded the streets near the station.",
+"The river burst its banks and flooded the streets near the station (not an -ing form)."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say which sentence the -ing goes in, so several answers are valid.",
+"level_problem": "Borderline: -ing participle clause is B2 rather than C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-004",
+"answer": "Having checked the train times, we left for the station.",
+"other_correct": [
+"Having checked the train times we left for the station.",
+"We left for the station, having checked the train times."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Start is given, so the form is named (only combining needed); 'We left ... having checked' ignores 'Start with' but is correct English.",
+"level_problem": "Perfect participle clause is B2; fine for C1 only as easy item.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-005",
+"answer": [
+"kept"
+],
+"other_correct": [
+[
+"had kept"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had kept' also works as regret about the past; 'I'm always losing' favours 'kept' but does not exclude it.",
+"level_problem": "Easy for C1: 'wish + past simple' is B1/B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-006",
+"answer": [
+"have been ringing"
+],
+"other_correct": [
+[
+"'ve been ringing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Contraction accepted? Tell learners whether 'I've' is allowed (the gap sits after 'I').",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-14-007",
+"answer": "with a view to starting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-14-008",
+"answer": "I promise",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "The situation is partly superfluous: only 'I promise' is possible English before 'I'll pay you back' anyway.",
+"level_problem": "Too easy for C1: performative 'I promise' vs continuous is B1; options are not really tempting.",
+"sense_problem": ""
+}
+]

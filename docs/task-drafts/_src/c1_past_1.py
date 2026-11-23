@@ -64,6 +64,6 @@ gp(T, L, 3, "We drove all the way there for nothing. I wish you ___ me the resta
    "Vēlēšanās par pagātni: *I wish* + Past Perfect, *I wish you had told me*.")
 
 # teacher's tester, 23 November: a regret about one moment in the past next to a regret about a habit now
-gp(T, L, 4, "I'm always losing receipts. I wish I ___ them more carefully. (keep)", "kept",
-   "A wish about a present habit: *I wish* + past simple, *I wish I kept them more carefully*. About one moment in the past: *I wish I had kept the receipt*.",
-   "Vēlēšanās par ieradumu tagad: *I wish* + Past Simple, *I wish I kept them more carefully*. Par vienu brīdi pagātnē: *I wish I had kept the receipt*.")
+gp(T, L, 4, "I'm always losing receipts. I wish I ___ them all in one folder, but I never do. (keep)", "kept",
+   "A wish about a present habit: *I wish* + past simple, *I wish I kept them in one folder*. About one moment in the past: *I wish I had kept the receipt*.",
+   "Vēlēšanās par ieradumu tagad: *I wish* + Past Simple, *I wish I kept them in one folder*. Par vienu brīdi pagātnē: *I wish I had kept the receipt*.")

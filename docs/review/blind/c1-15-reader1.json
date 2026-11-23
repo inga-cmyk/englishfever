@@ -1,0 +1,57 @@
+[
+{
+"id": "c1-15-001",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"will be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'We need two more chairs' and 'two of her assistants' make the plural obvious; the single (be) gap with 'coming' is too easy. 'will be' also fits (less natural than 'are' for an arrangement).",
+"level_problem": "Too easy for C1: compound subject + are is A2/B1. No nuance (e.g. notional agreement) tested.",
+"sense_problem": ""
+},
+{
+"id": "c1-15-002",
+"answer": "so loud was the music that we couldn't hear each other",
+"other_correct": [
+"so loud was the music that we could not hear each other"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The task shows the already-correct non-inverted sentence, so the learner only has to move 'was' and 'the music' (copying/reordering); the instruction does not say what to do (invert after the fronted phrase) and it is unclear whether the shown sentence is the model or the base. Starting words give away much of the answer.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-15-003",
+"answer": "The river burst its banks, flooding the streets near the station.",
+"other_correct": [
+"The river burst its banks, thereby flooding the streets near the station.",
+"The river burst its banks, thus flooding the streets near the station.",
+"The river burst its banks and flooded the streets near the station. (not -ing: breaks the instruction)",
+"Bursting its banks, the river flooded the streets near the station. (makes the FIRST an -ing form: breaks the instruction)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Pretty much dictates the structure; mostly copying with a comma. 'make the second one an -ing form' is clear but the answer is nearly given.",
+"level_problem": "Participle clause of result is B2 rather than C1; a B1+ learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-15-004",
+"answer": [
+"kept"
+],
+"other_correct": [
+[
+"would keep"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "wish + past simple is B1/B2; too easy for C1 (single gap, no nuance).",
+"sense_problem": "'I wish I would keep' (about oneself) is accepted by some speakers but less natural than 'kept'; otherwise sentence is natural."
+}
+]

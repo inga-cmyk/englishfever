@@ -1,0 +1,144 @@
+{
+ "c1-15-001": {
+  "hash": "573b07765a232f52",
+  "gate_key": "adv_agree | C1 | gap | We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be) | ",
+  "src": "c1-agree-1.csv:12",
+  "point": "x_agr_complex",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are",
+     "'re",
+     "will be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2159",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be)",
+   "why": "With *and*, the subject is plural: *The manager and two of her assistants are coming.* With *together with*, it stays singular: *The manager, together with two of her assistants, is coming.*",
+   "why_lv": "Ar *and* teikuma priekšmets ir daudzskaitlī: *The manager and two of her assistants are coming.* Ar *together with* tas paliek vienskaitlī: *The manager, together with two of her assistants, is coming.*",
+   "answers": [
+    [
+     "are",
+     "'re",
+     "will be"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_agr_complex",
+   "src": "c1-agree-1.csv:12"
+  }
+ },
+ "c1-15-002": {
+  "hash": "ca46ffaec56cfa01",
+  "gate_key": "adv_order | C1 | text | Start with *So loud*: The music was so loud that we couldn't hear each other. | ",
+  "src": "c1-order-1.csv:5",
+  "point": "x_inv_so",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "So loud was the music that we couldn't hear each other.",
+     "So loud was the music that we could not hear each other.",
+     "So loud was the music that we couldn't hear one another.",
+     "So loud was the music that we could not hear one another."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2174",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *So loud*: The music was so loud that we couldn't hear each other.",
+   "why": "*So* + adjective at the start, then *be* before the subject: *So loud was the music that…*",
+   "why_lv": "*So* + īpašības vārds sākumā, tad *be* pirms teikuma priekšmeta: *So loud was the music that*…",
+   "answers": [
+    [
+     "So loud was the music that we couldn't hear each other.",
+     "So loud was the music that we could not hear each other.",
+     "So loud was the music that we couldn't hear one another.",
+     "So loud was the music that we could not hear one another."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_inv_so",
+   "src": "c1-order-1.csv:5"
+  }
+ },
+ "c1-15-003": {
+  "hash": "ceb545740c5980d2",
+  "gate_key": "adv_part | C1 | text | Join the two sentences: make the second one an *-ing* form. The river burst its banks. It flooded the streets near the station. | ",
+  "src": "c1-part-1.csv:8",
+  "point": "x_part_result",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The river burst its banks, flooding the streets near the station."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2190",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join the two sentences: make the second one an *-ing* form. The river burst its banks. It flooded the streets near the station.",
+   "why": "An *-ing* clause after the main clause for its direct result: *…, flooding the streets near the station.*",
+   "why_lv": "*-ing* daļa aiz galvenā teikuma tiešam rezultātam: …, *flooding the streets near the station*.",
+   "answers": [
+    [
+     "The river burst its banks, flooding the streets near the station."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_part_result",
+   "src": "c1-part-1.csv:8"
+  }
+ },
+ "c1-15-004": {
+  "hash": "3f0c0b90e04d75f3",
+  "gate_key": "adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them all in one folder, but I never do. (keep) | ",
+  "src": "c1-past-1.csv:12",
+  "point": "x_unreal_past",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "kept"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2205",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "I'm always losing receipts. I wish I ___ them all in one folder, but I never do. (keep)",
+   "why": "A wish about a present habit: *I wish* + past simple, *I wish I kept them in one folder*. About one moment in the past: *I wish I had kept the receipt*.",
+   "why_lv": "Vēlēšanās par ieradumu tagad: *I wish* + Past Simple, *I wish I kept them in one folder.* Par vienu brīdi pagātnē: *I wish I had kept the receipt.*",
+   "answers": [
+    [
+     "kept"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_unreal_past",
+   "src": "c1-past-1.csv:12"
+  }
+ }
+}

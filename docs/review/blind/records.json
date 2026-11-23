@@ -1174,6 +1174,11 @@
 "round": "r13",
 "task": "r13-097"
 },
+"260c90b99c0afc82": {
+"gate_key": "adv_present | C1 | mcq | Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday. | I promise",
+"round": "c1-14",
+"task": "c1-14-008"
+},
 "260f8761c9dbd589": {
 "gate_key": "rep_questions | B2.1 | gap | 'How long have you lived here?'\nHe asked me how long ___ ___ ___ there. | ",
 "round": "r4",
@@ -1599,6 +1604,11 @@
 "round": "r20-1",
 "task": "r20-1-048"
 },
+"326b277cab07c67d": {
+"gate_key": "adv_part | C1 | text | Start with *Having* and join the two sentences: We checked the train times. We left for the station. | ",
+"round": "c1-14",
+"task": "c1-14-004"
+},
 "32af67d5f8a781bb": {
 "gate_key": "conj_b2 | B2.2 | mcq | Choose the correct option: The project was over budget. The board has ___ decided to cancel it. | therefore",
 "round": "r20-3",
@@ -1834,6 +1844,11 @@
 "round": "r20b-1",
 "task": "r20b-1-032"
 },
+"3933f950abe0cb6a": {
+"gate_key": "adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ her own business. | with a view to starting",
+"round": "c1-14",
+"task": "c1-14-007"
+},
 "396938053528c084": {
 "gate_key": "cond_zero | B1.1 | order | Put the words in order. | if you mix oil and vinegar they separate",
 "round": "c1-11",
@@ -2018,6 +2033,11 @@
 "gate_key": "cond_advanced | B1.2 | mcq | Which sentence is correct? | I wish I knew the answer.",
 "round": "r8",
 "task": "r8-003"
+},
+"3f0c0b90e04d75f3": {
+"gate_key": "adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them all in one folder, but I never do. (keep) | ",
+"round": "c1-15",
+"task": "c1-15-004"
 },
 "3f1ff6b5b42370b1": {
 "gate_key": "adj_order | A2.1 | gap | We have two ___ ___ in our garden. | ",
@@ -2703,6 +2723,11 @@
 "gate_key": "used_to | B1.2 | order | Put the words in order. | when we lived by the sea we would swim before breakfast",
 "round": "r11",
 "task": "r11-033"
+},
+"573b07765a232f52": {
+"gate_key": "adv_agree | C1 | gap | We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be) | ",
+"round": "c1-15",
+"task": "c1-15-001"
 },
 "5767af44c0ccac28": {
 "gate_key": "relative_clauses | B1.2 | order | Put the words in order. | all i want after work is a hot shower",
@@ -3864,6 +3889,11 @@
 "round": "r20-6",
 "task": "r20-6-032"
 },
+"7b631aae3264e15d": {
+"gate_key": "adv_part | C1 | text | Join the two sentences: make the second one an *-ing* form. The river burst its banks. It flooded the streets near the station. | ",
+"round": "c1-15",
+"task": "answers added"
+},
 "7bf726b774c997a4": {
 "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | Whomever finishes first can go home.",
 "round": "r20-5",
@@ -4078,6 +4108,11 @@
 "gate_key": "ind_polite | B1.2 | gap | 'Is there a bank near here?'\nDo you know if ___ ___ a bank near here? | ",
 "round": "r4",
 "task": "r4-042"
+},
+"83ea01263a92c889": {
+"gate_key": "adv_perfect | C1 | gap | I ___ the bank all morning, but nobody's answering. (ring) | ",
+"round": "c1-14",
+"task": "c1-14-006"
 },
 "840de68f1c12c1ca": {
 "gate_key": "verb_patterns | A2.2 | gap | Last summer we went ___ in the forest. | ",
@@ -6448,6 +6483,11 @@
 "gate_key": "unreal_time | B2.2 | mcq | Choose the correct option: It's high time the city ___ more cycle lanes. | built",
 "round": "r20b-1",
 "task": "r20b-1-052"
+},
+"ca46ffaec56cfa01": {
+"gate_key": "adv_order | C1 | text | Start with *So loud*: The music was so loud that we couldn't hear each other. | ",
+"round": "c1-15",
+"task": "c1-15-002"
 },
 "caa9805f88af740a": {
 "gate_key": "unreal_time | B2.2 | text | Write one sentence that starts with *I'd rather you*: Please don't bring your dog to the office. | ",

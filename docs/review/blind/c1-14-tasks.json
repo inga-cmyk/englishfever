@@ -1,0 +1,68 @@
+[
+ {
+  "id": "c1-14-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The manager and two of her assistants ___ coming to the meeting. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-14-002",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *So loud*: The music was so loud that we couldn't hear each other.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-14-003",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-14-004",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Having* and join the two sentences: We checked the train times. We left for the station.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-14-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I'm always losing receipts. I wish I ___ them more carefully. (keep)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-14-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ the bank all morning, but nobody's answering. (ring)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-14-007",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She took a part-time job ___ her own business.",
+  "options": [
+   "with a view to start",
+   "with a view of starting",
+   "in view to starting",
+   "with a view to starting"
+  ]
+ },
+ {
+  "id": "c1-14-008",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday.",
+  "options": [
+   "I was promising",
+   "I promise",
+   "I'm going to promise",
+   "I'm promising"
+  ]
+ }
+]

@@ -1,0 +1,140 @@
+[
+{
+"id": "c1-14-001",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"were"
+],
+[
+"will be"
+],
+[
+"have been"
+],
+[
+"'re"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time context given, so are/were/will be/have been all fit; the only given word is (be). Also 'The manager ... her assistants' is a plain subject-verb agreement point.",
+"level_problem": "Plain agreement; A2/B1, not C1.",
+"sense_problem": "Only sense problem: no context to fix the tense."
+},
+{
+"id": "c1-14-002",
+"answer": [
+"so loud was the music that we couldn't hear each other"
+],
+"other_correct": [
+[
+"so loud was the music that we could not hear each other"
+],
+[
+"so loud did the music become that we couldn't hear each other"
+],
+[
+"so loudly did the music play that we couldn't hear each other"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The example already gives the full sentence; instruction does not say to invert (so the learner may write 'So loud, the music was...'); the expected inversion is not signalled, and the model sentence given is the answer's content only.",
+"level_problem": "Inversion after So is C1/B2+, fine.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-003",
+"answer": [
+"The river burst its banks, flooding the streets near the station."
+],
+"other_correct": [
+[
+"Bursting its banks, the river flooded the streets near the station."
+],
+[
+"The river burst its banks, flooding the streets near the station"
+],
+[
+"The river, bursting its banks, flooded the streets near the station."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two possible -ing patterns (result vs. simultaneous clause) are both allowed by the instruction; 'Bursting its banks, the river flooded...' is less natural (implies simultaneity) but correct.",
+"level_problem": "Fine for C1 but B2-ish.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-004",
+"answer": [
+"Having checked the train times, we left for the station."
+],
+"other_correct": [
+[
+"Having checked the train times we left for the station."
+],
+[
+"Having checked the train times, we left for the station"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction nearly gives the structure away (Having + past participle of the verb in sentence 1); only the participle needs to be produced.",
+"level_problem": "Perfect participle clause is B2/C1; acceptable.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-005",
+"answer": [
+"kept"
+],
+"other_correct": [
+[
+"had kept"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both fit: 'kept' (present habit) is natural; 'had kept' (regret about the past) is also correct but less natural after 'always losing'.",
+"level_problem": "Wish + past is B1/B2; below C1 in difficulty.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-006",
+"answer": [
+"have been ringing"
+],
+"other_correct": [
+[
+"'ve been ringing"
+],
+[
+"was ringing"
+],
+[
+"had been ringing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Contraction 'I've been ringing' should be accepted. 'was ringing' (past, narrating) is possible but less natural with 'nobody's answering'. American: 'calling' not applicable (word given).",
+"level_problem": "Present perfect continuous is B1/B2; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-14-007",
+"answer": "with a view to starting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'in view to' and 'with a view of' are believable errors. Fine."
+},
+{
+"id": "c1-14-008",
+"answer": "I promise",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "The situation ('Your friend lent you money and is worried') is needed to justify 'most natural', but 'I'm promising' is not natural; answer is a simple performative.",
+"level_problem": "I promise is A2/B1; not a C1 point of use and nuance.",
+"sense_problem": "'I'm promising' is not a believable learner error here? Mild: fine. 'I'm going to promise' is unlikely."
+}
+]

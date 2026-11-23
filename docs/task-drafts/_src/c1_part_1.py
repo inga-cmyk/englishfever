@@ -26,8 +26,8 @@ mc(T, L, 4, "Choose the correct option: ___ no questions, the chair closed the m
    ["Being there", "It being", "There were"],
    "*There being* + noun gives the reason in formal style: *There being no questions, the chair closed the meeting.*",
    "*There being* + lietvārds oficiālā stilā norāda iemeslu: *There being no questions, the chair closed the meeting.*")
-tx(T, L, 4, "Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station.",
-   "The river burst its banks, flooding the streets near the station.",
+tx(T, L, 4, "Join the two sentences: make the second one an *-ing* form. The river burst its banks. It flooded the streets near the station.",
+   "The river burst its banks, flooding the streets near the station. | The river burst its banks, thus flooding the streets near the station. | The river burst its banks, thereby flooding the streets near the station.",
    "An *-ing* clause after the main clause for its direct result: *…, flooding the streets near the station.*",
    "*-ing* daļa aiz galvenā teikuma tiešam rezultātam: *…, flooding the streets near the station.*")
 mc(T, L, 3, "Choose the correct option: ___ hearing the news, she burst into tears.", "On",

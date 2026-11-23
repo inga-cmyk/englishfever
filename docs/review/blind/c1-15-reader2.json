@@ -1,0 +1,57 @@
+[
+{
+"id": "c1-15-001",
+"answer": [
+"are"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'two more chairs' and a plural subject make the form obvious; nothing to decide.",
+"level_problem": "Far too easy for C1: basic present continuous with a plural subject (A2).",
+"sense_problem": ""
+},
+{
+"id": "c1-15-002",
+"answer": "So loud was the music that we couldn't hear each other.",
+"other_correct": [
+"So loud was the music that we could not hear each other."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Original sentence is given in full; only the inversion pattern has to be recalled, but the instruction does not say inversion is wanted (a learner might write 'So loud, the music ...'). Asterisks around So loud look like stray markup.",
+"level_problem": "",
+"sense_problem": "Natural, formal/literary register; fine."
+},
+{
+"id": "c1-15-003",
+"answer": "The river burst its banks, flooding the streets near the station.",
+"other_correct": [
+"The river burst its banks, thus flooding the streets near the station.",
+"The river burst its banks, thereby flooding the streets near the station.",
+"The river burst its banks flooding the streets near the station.",
+"The river burst its banks, so flooding the streets near the station.",
+"Bursting its banks, the river flooded the streets near the station. (does not follow 'second one an -ing form'; first sentence becomes -ing)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'-ing form' is a grammar term; a learner may not know it means a participle clause. Clear enough otherwise.",
+"level_problem": "Closer to B2 than C1; a B1/B2 learner can solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-15-004",
+"answer": [
+"kept"
+],
+"other_correct": [
+[
+"would keep"
+],
+[
+"could keep"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'wish I would keep' (own behaviour) is marginal and 'could keep' is odd with 'never do'; 'kept' is the intended one but the gap allows alternatives. 'had kept' does not fit habit.",
+"level_problem": "wish + past simple is B1/B2, not C1.",
+"sense_problem": ""
+}
+]

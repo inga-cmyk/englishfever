@@ -17663,7 +17663,7 @@
 "x_part_there",
 "read"
 ],
-"adv_part | C1 | text | Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station. | ": [
+"adv_part | C1 | text | Join the two sentences: make the second one an *-ing* form. The river burst its banks. It flooded the streets near the station. | ": [
 "x_part_result",
 "read"
 ],
@@ -17919,7 +17919,7 @@
 "x_should_react",
 "read"
 ],
-"adv_agree | C1 | gap | The manager and two of her assistants ___ coming to the meeting. (be) | ": [
+"adv_agree | C1 | gap | We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be) | ": [
 "x_agr_complex",
 "read"
 ],
@@ -17927,7 +17927,7 @@
 "x_part_having",
 "read"
 ],
-"adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them more carefully. (keep) | ": [
+"adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them all in one folder, but I never do. (keep) | ": [
 "x_unreal_past",
 "read"
 ],

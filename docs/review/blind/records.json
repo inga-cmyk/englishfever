@@ -9,6 +9,11 @@
 "round": "r9",
 "task": "r9-053"
 },
+"008451f593ae5e16": {
+"gate_key": "adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn) | ",
+"round": "c1-2b",
+"task": "c1-2b-001"
+},
 "00990744e06fd63a": {
 "gate_key": "cond_mixed | B2.1 | mcq | Choose the correct option: I didn't charge my phone last night. Imagine a different past and its result now. | If I had charged my phone, it would be working now.",
 "round": "r20-5",
@@ -1768,6 +1773,11 @@
 "gate_key": "modal_verbs | B1.1 | order | Put the words in order. | i had to cancel my dentist appointment because i was stuck at work",
 "round": "r10",
 "task": "r10-086"
+},
+"3dd83f5d4de63528": {
+"gate_key": "adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | ",
+"round": "c1-2b",
+"task": "c1-2b-004"
 },
 "3e106b408d037cb5": {
 "gate_key": "quantity | A2.2 | gap | Thank you! Your advice about the exam ___ really helpful. (be) | ",
@@ -4043,6 +4053,11 @@
 "gate_key": "modal_verbs | B1.1 | match | Match each sentence with its meaning. | I must book the tickets. = I feel it's necessary. ; I had to book the tickets. = It was necessary in the past. ; I don't have to book the tickets. = It isn't necessary. ; Do I have to book the tickets? = I'm asking if it's necessary.",
 "round": "r10",
 "task": "r10-093"
+},
+"9371765160e8d081": {
+"gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.",
+"round": "c1-2b",
+"task": "c1-2b-002"
 },
 "93b7176042a59d10": {
 "gate_key": "rep_verbs | B2.2 | mcq | Which sentence is NOT correct? | He suggested to meet on Friday.",
@@ -6443,6 +6458,11 @@
 "gate_key": "cond_first | B1.1 | match | Match each sentence with the one that follows it. | My flight lands at six. = When it does, I'll text you. ; My flight might be late. = If it is, I'll take a taxi. ; I'm not sure the hotel has parking. = If it doesn't, we'll park at the station. ; Our room will be ready at two. = When it is, we'll take our bags up.",
 "round": "r10",
 "task": "r10-025"
+},
+"e1283aba255ab23c": {
+"gate_key": "adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | ",
+"round": "c1-2b",
+"task": "c1-2b-003"
 },
 "e168a4896197203b": {
 "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports Sam's answer: 'No, I won't work this weekend.' | Sam refused to work that weekend.",

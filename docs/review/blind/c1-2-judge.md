@@ -5,3 +5,9 @@
 - 006 (word order) dropped: too easy, one order.
 - 007: *didn't appear*, *appears not* added; *isn't appearing* not accepted (*appear* = seem is a state).
 - 008: *in June* → *next month* (*were expecting* no longer fits). New round c1-2b.
+
+## Round c1-2b (the 4 changed tasks)
+- 001 kept: the past (*was standing, turned*) clashes with *So I'm at the bakery* and *hands*.
+- 002 kept: both readers chose the intended sentence.
+- 003 kept: *isn't appearing* is unnatural (both readers say so); *appear* = seem is a state.
+- 004 kept: *will be expecting* is not natural here; *be expecting a baby* is the C1 point (a state verb in the continuous with its own meaning).

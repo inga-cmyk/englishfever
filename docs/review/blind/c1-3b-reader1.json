@@ -1,0 +1,41 @@
+[
+{
+"id": "c1-3b-001",
+"answer": "We have hoped the weather would hold, but it rained all weekend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Sentences are short and the point (was meaning to / had hoped / were planning to for unfulfilled plans) is B2 at most; a B1-B2 learner can solve it. Not clearly C1.",
+"sense_problem": "The wrong sentence is believable-ish, but 'have hoped' + 'would hold' is an obvious tense clash, so it is easy to spot."
+},
+{
+"id": "c1-3b-002",
+"answer": "was always borrowing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Past continuous with 'always' for annoying habit is B1-B2; distractors are easy (was always borrow is not a believable mistake). Weak for C1.",
+"sense_problem": "'was always borrow' is a form no learner at this level writes (random string). 'always was borrowing' is an odd word order, not a real error type."
+},
+{
+"id": "c1-3b-003",
+"answer": [
+"had not changed"
+],
+"other_correct": [
+[
+"hadn't changed"
+],
+[
+"hasn't changed"
+],
+[
+"has not changed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(not / change)' names the verb and negative, leaving only the tense to choose; fine, but the contraction/full form ambiguity must be accepted. Typed answer count: 'much' is outside the gap, ok.",
+"level_problem": "Past perfect after 'found that' is B1-B2; not C1 in use or nuance.",
+"sense_problem": "'hasn't changed much' is also acceptable (present-relevant reported state, esp. informal/American), so 'hadn't' is not the only correct answer; 'didn't change much' is wrong here (means something different)."
+}
+]

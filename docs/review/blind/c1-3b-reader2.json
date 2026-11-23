@@ -1,0 +1,41 @@
+[
+{
+"id": "c1-3b-001",
+"answer": "We have hoped the weather would hold, but it rained all weekend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Tense mismatch (have hoped + would) is a B1 error; the good options are B2 at most, so C1 is not really tested (no nuance of use).",
+"sense_problem": "Option 4 is a believable slip but rather easy to spot; option 1 (get away from me) is idiomatic, fine."
+},
+{
+"id": "c1-3b-002",
+"answer": "was always borrowing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine, but the annoyance meaning is only implied; clear enough. \"has always borrowed\" is ruled out only by \"When we shared a flat\" (past, finished).",
+"level_problem": "Past continuous with always for annoying habit is B2 rather than C1; a B2 learner can solve it.",
+"sense_problem": "\"was always borrow\" is a form nobody writes (bare verb after was); \"always was borrowing\" is a weak distractor (word order, not a real learner error)."
+},
+{
+"id": "c1-3b-003",
+"answer": [
+"had not changed"
+],
+"other_correct": [
+[
+"hadn't changed"
+],
+[
+"has not changed"
+],
+[
+"hasn't changed"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "(not / change) names the verb and negative, so only the tense is tested; \"found that\" + past makes past perfect the clear target. Typed answer needs contraction/full form both accepted. Present perfect (hasn't changed) is less natural but possible if the school is still the same now.",
+"level_problem": "Past perfect after found that is B1/B2; not C1 (no nuance).",
+"sense_problem": "\"didn't change much\" is also something learners write; here it is arguably wrong (needs earlier-than-found), fine."
+}
+]

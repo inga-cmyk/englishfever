@@ -1,0 +1,603 @@
+{
+ "c1-5-001": {
+  "hash": "a6384f5f00c46efc",
+  "gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | Last night the children could stay up until eleven.",
+  "src": "c1-can-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Last night the children could stay up until eleven.",
+   "wrong": [
+    "We could stay up late on Saturdays when we were kids.",
+    "We couldn't go out on school nights.",
+    "In the end we were allowed to leave early."
+   ]
+  },
+  "item": {
+   "id": "c-2149",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "Permission on one occasion: *were allowed to*, not *could*: *Last night the children were allowed to stay up until eleven.* *could* is for permission that was always there, and *couldn't* is fine for both.",
+   "why_lv": "Atļauja vienā reizē: *were allowed to*, nevis *could*: *Last night the children were allowed to stay up until eleven.* *could* ir atļaujai, kas bija vienmēr, un *couldn't* der abos gadījumos.",
+   "correct": "Last night the children could stay up until eleven.",
+   "wrong": [
+    "We could stay up late on Saturdays when we were kids.",
+    "We couldn't go out on school nights.",
+    "In the end we were allowed to leave early."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:2"
+  }
+ },
+ "c1-5-002": {
+  "hash": "3e7266331955b912",
+  "gate_key": "adv_can | C1 | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to",
+  "src": "c1-can-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "were able to",
+   "wrong": [
+    "could",
+    "can",
+    "have been able to"
+   ]
+  },
+  "item": {
+   "id": "c-2150",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: After driving round for three hours, we ___ find a parking space.",
+   "why": "One success on one past occasion: *were able to* (or *managed to*), not *could*: *we were able to find a parking space*.",
+   "why_lv": "Viens *izdevies* mēģinājums pagātnē: *were able to* (vai *managed to*), nevis *could*: *we were able to find a parking space*.",
+   "correct": "were able to",
+   "wrong": [
+    "could",
+    "can",
+    "have been able to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:3"
+  }
+ },
+ "c1-5-003": {
+  "hash": "0ed13d24d9feb809",
+  "gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | The forms are able to be filled in online.",
+  "src": "c1-can-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "The forms are able to be filled in online.",
+   "wrong": [
+    "I could hear the sea from my hotel room.",
+    "We were able to finish the job on time.",
+    "She'll be able to drive next year."
+   ]
+  },
+  "item": {
+   "id": "c-2151",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "Before a passive, use *can*: *The forms can be filled in online*, not *are able to be*.",
+   "why_lv": "Pirms ciešamās kārtas lieto *can*: *The forms can be filled in online*, nevis *are able to be*.",
+   "correct": "The forms are able to be filled in online.",
+   "wrong": [
+    "I could hear the sea from my hotel room.",
+    "We were able to finish the job on time.",
+    "She'll be able to drive next year."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:4"
+  }
+ },
+ "c1-5-004": {
+  "hash": "f3e6336a281dc43f",
+  "gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | May the figures in the report be wrong?",
+  "src": "c1-can-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "May the figures in the report be wrong?",
+   "wrong": [
+    "The results may point to a wider problem.",
+    "Could the figures be wrong?",
+    "Is she likely to accept the offer?"
+   ]
+  },
+  "item": {
+   "id": "c-2152",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "We don't ask about possibility with *May…?*: *Could the figures be wrong?* or *Are the figures likely to be wrong?*",
+   "why_lv": "Par iespējamību nejautā ar *May*…?: *Could the figures be wrong?* vai *Are the figures likely to be wrong?*",
+   "correct": "May the figures in the report be wrong?",
+   "wrong": [
+    "The results may point to a wider problem.",
+    "Could the figures be wrong?",
+    "Is she likely to accept the offer?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:5"
+  }
+ },
+ "c1-5-005": {
+  "hash": "1d6b42bf6e70e215",
+  "gate_key": "adv_can | C1 | gap | Write one word in each gap: The next bus is in an hour, so we ___ as ___ walk. | ",
+  "src": "c1-can-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might",
+     "may"
+    ],
+    [
+     "well"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2153",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: The next bus is in an hour, so we ___ as ___ walk.",
+   "why": "*might / may as well* + base verb = it is the only sensible thing to do: *we might as well walk*.",
+   "why_lv": "*might / may as well* + pamatforma = tas ir vienīgais saprātīgais: *we might as well walk*.",
+   "answers": [
+    [
+     "might",
+     "may"
+    ],
+    [
+     "well"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-can-1.csv:6"
+  }
+ },
+ "c1-5-006": {
+  "hash": "ef41b1a1e99d7c2f",
+  "gate_key": "adv_can | C1 | gap | You ___ me you were bringing five friends! I would have made more food. (might / warn) | ",
+  "src": "c1-can-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might have warned"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2154",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "You ___ me you were bringing five friends! I would have made more food. (might / warn)",
+   "why": "*You might have* + past participle: you should have done it (a reproach): *You might have warned me!*",
+   "why_lv": "*You might have* + 3. forma: *tev* vajadzēja to izdarīt (pārmetums): *You might have warned me!*",
+   "answers": [
+    [
+     "might have warned"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-can-1.csv:7"
+  }
+ },
+ "c1-5-007": {
+  "hash": "0b7ae9296e54dc09",
+  "gate_key": "adv_can | C1 | gap | This time next week I ___ on a beach in Crete. (may / lie) | ",
+  "src": "c1-can-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "may be lying"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2155",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "This time next week I ___ on a beach in Crete. (may / lie)",
+   "why": "A possible activity at a future moment: *may be* + *-ing*, *I may be lying on a beach*.",
+   "why_lv": "Iespējama darbība nākotnes brīdī: *may be + -ing, I may be lying on a beach*.",
+   "answers": [
+    [
+     "may be lying"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-can-1.csv:8"
+  }
+ },
+ "c1-5-008": {
+  "hash": "af0d2732213111ba",
+  "gate_key": "adv_can | C1 | gap | He didn't sound serious about leaving. He ___ . (might / joke) | ",
+  "src": "c1-can-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might have been joking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2156",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "He didn't sound serious about leaving. He ___ . (might / joke)",
+   "why": "A possible activity in the past: *might have been* + *-ing*, *he might have been joking*.",
+   "why_lv": "Iespējama darbība pagātnē: *might have been + -ing, he might have been joking*.",
+   "answers": [
+    [
+     "might have been joking"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-can-1.csv:9"
+  }
+ },
+ "c1-5-009": {
+  "hash": "2c8d7530622f4ac3",
+  "gate_key": "adv_can | C1 | mcq | Choose the correct option: Winters here ___ very long, so bring warm clothes. | can be",
+  "src": "c1-can-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "can be",
+   "wrong": [
+    "can being",
+    "are able to be",
+    "could have been"
+   ]
+  },
+  "item": {
+   "id": "c-2157",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: Winters here ___ very long, so bring warm clothes.",
+   "why": "*can* for what is sometimes or typically true: *Winters here can be very long.*",
+   "why_lv": "*can* tam, kas mēdz būt vai ir raksturīgi: *Winters here can be very long.*",
+   "correct": "can be",
+   "wrong": [
+    "can being",
+    "are able to be",
+    "could have been"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:10"
+  }
+ },
+ "c1-5-010": {
+  "hash": "d523196503f24ade",
+  "gate_key": "adv_subj | C1 | mcq | Which sentence has a mistake? | The board demanded the director to resign.",
+  "src": "c1-subj-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "The board demanded the director to resign.",
+   "wrong": [
+    "The doctor recommended that she rest for a week.",
+    "I insist that he be told the truth.",
+    "They suggested that we should leave early."
+   ]
+  },
+  "item": {
+   "id": "c-2197",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*demand* is not followed by an object + *to*: *The board demanded that the director resign* (or *should resign*).",
+   "why_lv": "Aiz *demand* nelieto *objektu + to*: *The board demanded that the director resign* (vai *should resign*).",
+   "correct": "The board demanded the director to resign.",
+   "wrong": [
+    "The doctor recommended that she rest for a week.",
+    "I insist that he be told the truth.",
+    "They suggested that we should leave early."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-subj-1.csv:2"
+  }
+ },
+ "c1-5-011": {
+  "hash": "15752119f38c38df",
+  "gate_key": "adv_subj | C1 | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | ",
+  "src": "c1-subj-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not be",
+     "should not be",
+     "shouldn't be",
+     "is not",
+     "isn't"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2198",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "We recommend that this medicine ___ taken with alcohol. (not / be)",
+   "why": "Formal: *not* + base form: *that this medicine not be taken*; also *should not be*, or *is not* in less formal English.",
+   "why_lv": "Oficiāli: *not* + pamatforma: *that this medicine not be taken*; arī *should not be* vai mazāk oficiāli *is not*.",
+   "answers": [
+    [
+     "not be",
+     "should not be",
+     "shouldn't be",
+     "is not",
+     "isn't"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:3"
+  }
+ },
+ "c1-5-012": {
+  "hash": "15d0650c26260819",
+  "gate_key": "adv_subj | C1 | gap | It's odd that she ___ that. She's usually so polite. (should / say) | ",
+  "src": "c1-subj-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should say",
+     "should have said"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "It's odd that she ___ that. She's usually so polite. (should / say)",
+   "why": "After *It's odd / surprising that*, *should* + verb shows surprise: *It's odd that she should say that.*",
+   "why_lv": "Aiz *It's odd / surprising that should* + darbības vārds *izsaka* pārsteigumu: *It's odd that she should say that.*",
+   "answers": [
+    [
+     "should say",
+     "should have said"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:4"
+  }
+ },
+ "c1-5-013": {
+  "hash": "3805bc80301535af",
+  "gate_key": "adv_subj | C1 | gap | If the bank ___ to refuse the loan, we would sell the car. (be) | ",
+  "src": "c1-subj-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "were",
+     "was"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2200",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "If the bank ___ to refuse the loan, we would sell the car. (be)",
+   "why": "*If* + *were to* for an unlikely future: *If the bank were to refuse…* (*was* is informal). Not *would* after *if*.",
+   "why_lv": "*If + were to* maz *ticamai* nākotnei: *If the bank were to refuse*… (*was* ir sarunvalodā). Aiz *if* nelieto *would*.",
+   "answers": [
+    [
+     "were",
+     "was"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:5"
+  }
+ },
+ "c1-5-014": {
+  "hash": "df3c951326172ae8",
+  "gate_key": "adv_subj | C1 | mcq | Which sentence has a mistake? | If the bank would refuse, we would sell the car.",
+  "src": "c1-subj-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "If the bank would refuse, we would sell the car.",
+   "wrong": [
+    "I wish it were Friday already.",
+    "If I were you, I'd take the job.",
+    "She speaks to me as if I were a child."
+   ]
+  },
+  "item": {
+   "id": "c-2201",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After *if*, not *would* for a condition: *If the bank refused / were to refuse, we would sell the car.*",
+   "why_lv": "Aiz *if* nosacījumam nelieto *would*: *If the bank refused / were to refuse, we would sell the car.*",
+   "correct": "If the bank would refuse, we would sell the car.",
+   "wrong": [
+    "I wish it were Friday already.",
+    "If I were you, I'd take the job.",
+    "She speaks to me as if I were a child."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-subj-1.csv:6"
+  }
+ },
+ "c1-5-015": {
+  "hash": "628be162589e6f7c",
+  "gate_key": "adv_subj | C1 | gap | I'd rather you ___ me before the meeting, not after it. (tell) | ",
+  "src": "c1-subj-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had told",
+     "'d told"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2202",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "I'd rather you ___ me before the meeting, not after it. (tell)",
+   "why": "Something someone did in the past that you wish were different: *I'd rather you had told me.* *I'd rather you told me* is about now or later.",
+   "why_lv": "Kaut kas, ko kāds izdarīja pagātnē un ko gribētos citādi: *I'd rather you had told me.* *I'd rather you told me* ir par tagadni vai nākotni.",
+   "answers": [
+    [
+     "had told",
+     "'d told"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:7"
+  }
+ },
+ "c1-5-016": {
+  "hash": "804bea17685b03d0",
+  "gate_key": "adv_subj | C1 | mcq | Choose the correct option: The plan has its problems. ___, it's the best one we have. | Be that as it may",
+  "src": "c1-subj-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Be that as it may",
+   "wrong": [
+    "Be that as it is",
+    "Being that as it may",
+    "Be it as that may"
+   ]
+  },
+  "item": {
+   "id": "c-2203",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: The plan has its problems. ___, it's the best one we have.",
+   "why": "A fixed phrase with the old subjunctive: *Be that as it may* = even so.",
+   "why_lv": "Nemainīgs *izteiciens* ar *seno* konjunktīvu: *Be that as it may* = tomēr, lai kā arī būtu.",
+   "correct": "Be that as it may",
+   "wrong": [
+    "Be that as it is",
+    "Being that as it may",
+    "Be it as that may"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-subj-1.csv:8"
+  }
+ },
+ "c1-5-017": {
+  "hash": "2a01f8550f2a9bb5",
+  "gate_key": "adv_will | C1 | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need",
+  "src": "c1-will-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "should need",
+   "wrong": [
+    "will need",
+    "would need",
+    "had needed"
+   ]
+  },
+  "item": {
+   "id": "c-2212",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: Keep the receipt in case you ___ to return the shoes.",
+   "why": "*in case* + *should* (or the present simple) for a small chance: *in case you should need to return them*, not *will*.",
+   "why_lv": "*in case + should* (vai Present Simple) *nelielai* iespējai: *in case you should need to return them*, nevis *will*.",
+   "correct": "should need",
+   "wrong": [
+    "will need",
+    "would need",
+    "had needed"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-will-1.csv:10"
+  }
+ }
+}

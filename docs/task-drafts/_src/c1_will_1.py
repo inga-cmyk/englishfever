@@ -16,13 +16,9 @@ mc(T, L, 4, "Which sentence has a mistake?", "The old factory would be next to t
    "For a past state that has changed, use *used to*, not *would*: *The old factory used to be next to the river.*",
    "Pagātnes stāvoklim, kas mainījies, lieto *used to*, nevis *would*: *The old factory used to be next to the river.*")
 # x_wont_refuse
-gp(T, L, 3, "I tried three times, but the printer ___ work this morning. (not / will)", "wouldn't | would not",
+gp(T, L, 3, "I tried three times, but the printer ___ work this morning. (not / will)", "wouldn't | would not | won't | will not",
    "*wouldn't* for a refusal on one occasion, also by a thing: *the printer wouldn't work*.",
    "*wouldn't* atteikumam vienā reizē, arī lietai: *the printer wouldn't work*.")
-# x_will_crit
-gp(T, L, 4, "\"I've got a headache.\" \"Well, if you ___ stare at a screen all day, what do you expect?\"", "will",
-   "*if you will* + verb criticises something the person keeps doing: *if you will stare at a screen all day*.",
-   "*if you will* + darbības vārds kritizē to, ko cilvēks dara atkal un atkal: *if you will stare at a screen all day*.")
 # x_will_assume
 gp(T, L, 4, "Don't ring them now: they ___ lunch. (will / have)", "'ll be having | will be having",
    "A confident guess about what is happening now: *will be* + *-ing*, *they'll be having lunch*.",
@@ -46,6 +42,6 @@ mc(T, L, 4, "Which sentence has a mistake?", "Should you will change your mind, 
    "*Should you* + pamatforma (= ja gadījumā): *Should you change your mind, just call us.* *If you will / would* = ja esat ar mieru.")
 # x_should_purpose
 mc(T, L, 4, "Choose the correct option: Keep the receipt in case you ___ to return the shoes.", "should need",
-   ["will need", "would need", "should to need"],
+   ["will need", "would need", "had needed"],
    "*in case* + *should* (or the present simple) for a small chance: *in case you should need to return them*, not *will*.",
    "*in case* + *should* (vai Present Simple) nelielai iespējai: *in case you should need to return them*, nevis *will*.")

@@ -730,3 +730,50 @@ LV_CARDS.update({
         "signals": "for hours, always, whenever, by now, nobody told me, refused, in case, should you",
     },
 })
+
+# ───────── C1 directions 5 and 6 (23 November): Hewings, Advanced Grammar in Use, units 15, 17, 39, 85 ─────────
+SKILLS_NEW.append(("adv_can", "Advanced modals: can, be able to, may, might", "modals", ["C1"]))
+SKILLS_NEW.append(("adv_subj", "The subjunctive: I insist that he be told, if I were", "conditionals", ["C1"]))   # area: agent proposal (23 November), next to Unreal time
+ABBR_NEW.update({"adv_can": "acn", "adv_subj": "asb"})
+CARDS.update({
+    "adv_can": {
+        "form": ["One past success: *was able to / managed to*, not *could*: *After three hours we were able to find a parking space.* Permission once: *were allowed to*: *Last night the children were allowed to stay up.* (*could* = always: *We could stay up late on Saturdays.*)",
+                 "*can* before a passive: *The forms can be filled in online* (not *are able to be*).",
+                 "Questions about possibility: *Could…? Is… likely to…?*, not *May…?*: *Could the figures be wrong?*",
+                 "*may / might be* + *-ing*, *may / might have been* + *-ing*: *This time next week I may be lying on a beach. He might have been joking.*",
+                 "*might as well* = the only sensible thing: *There's no bus, so we might as well walk.* *You might have warned me!* = you should have."],
+        "use": ["*can* for what is sometimes true: *Winters here can be very long.*"],
+        "signals": "*after three hours, last night, once, this time next week, might as well, might have, could… be*",
+        "example": "*The diet starts on Monday. Today I might as well finish the cake.*",
+    },
+    "adv_subj": {
+        "form": ["After *demand, insist, recommend, suggest, propose, request* + *that*: the base form for every person (formal), or *should* + base form: *The doctor recommended that she rest. I insist that he be told.* Not *demanded him to resign*.",
+                 "Negative: *not* + base form: *We recommend that the medicine not be taken with alcohol.*",
+                 "*It's odd / surprising that* + *should*: *It's odd that she should say that.*",
+                 "*were* for all persons in unreal situations: *If I were you… I wish it were Friday. If the bank were to refuse…* (not *would refuse* after *if*).",
+                 "*I'd rather you had told me* (the past), *I'd rather you told me* (now or later)."],
+        "use": ["Fixed phrases: *be that as it may, so be it, come what may, suffice it to say*."],
+        "signals": "*demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may*",
+        "example": "*If I were a cat, I'd ignore emails too.*",
+    },
+})
+LV_CARDS.update({
+    "adv_can": {
+        "form": ["Viens izdevies mēģinājums pagātnē: *was able to / managed to*, nevis *could*: *After three hours we were able to find a parking space.* Atļauja vienu reizi: *were allowed to*: *Last night the children were allowed to stay up.* (*could* = vienmēr: *We could stay up late on Saturdays.*)",
+                 "*can* pirms ciešamās kārtas: *The forms can be filled in online* (nevis *are able to be*).",
+                 "Jautājumi par iespējamību: *Could…? Is… likely to…?*, nevis *May…?*: *Could the figures be wrong?*",
+                 "*may / might be* + *-ing*, *may / might have been* + *-ing*: *This time next week I may be lying on a beach. He might have been joking.*",
+                 "*might as well* = vienīgais saprātīgais: *There's no bus, so we might as well walk.* *You might have warned me!* = vajadzēja brīdināt."],
+        "use": ["*can* tam, kas mēdz būt: *Winters here can be very long.*"],
+        "signals": "after three hours, last night, once, this time next week, might as well, might have, could… be",
+    },
+    "adv_subj": {
+        "form": ["Aiz *demand, insist, recommend, suggest, propose, request* + *that*: pamatforma visām personām (oficiāli) vai *should* + pamatforma: *The doctor recommended that she rest. I insist that he be told.* Nevis *demanded him to resign*.",
+                 "Noliegums: *not* + pamatforma: *We recommend that the medicine not be taken with alcohol.*",
+                 "*It's odd / surprising that* + *should*: *It's odd that she should say that.*",
+                 "*were* visām personām nereālās situācijās: *If I were you… I wish it were Friday. If the bank were to refuse…* (nevis *would refuse* aiz *if*).",
+                 "*I'd rather you had told me* (pagātne), *I'd rather you told me* (tagad vai vēlāk)."],
+        "use": ["Nemainīgi izteicieni: *be that as it may, so be it, come what may, suffice it to say*."],
+        "signals": "demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may",
+    },
+})

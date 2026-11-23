@@ -3409,7 +3409,9 @@ return json_decode(<<<'EF_JSON_END'
 "could_past"
 ],
 "name": "Can and could for what is sometimes true",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_can_could": {
 "level": "C1",
@@ -3418,7 +3420,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_can_typical"
 ],
 "name": "Can or could: a real or a theoretical possibility; can't for impossible",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_able_limits": {
 "level": "C1",
@@ -3427,7 +3431,9 @@ return json_decode(<<<'EF_JSON_END'
 "be_able"
 ],
 "name": "Can or be able to: where each is preferred; could with see, hear, remember",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_allowed_once": {
 "level": "C1",
@@ -3436,7 +3442,9 @@ return json_decode(<<<'EF_JSON_END'
 "able_once"
 ],
 "name": "Could or was allowed to: permission on one occasion",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_may_might": {
 "level": "C1",
@@ -3445,7 +3453,9 @@ return json_decode(<<<'EF_JSON_END'
 "likely_bound"
 ],
 "name": "May or might: formal or everyday; no may in questions about possibility",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_may_but": {
 "level": "C1",
@@ -3454,7 +3464,9 @@ return json_decode(<<<'EF_JSON_END'
 "contrast_b2"
 ],
 "name": "May / might … but: admitting a point before disagreeing",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_may_well": {
 "level": "C1",
@@ -3463,7 +3475,9 @@ return json_decode(<<<'EF_JSON_END'
 "should_have"
 ],
 "name": "May well, might as well; You might have warned me",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_might_cont": {
 "level": "C1",
@@ -3472,7 +3486,9 @@ return json_decode(<<<'EF_JSON_END'
 "fut_cont"
 ],
 "name": "May / might be doing, may / might have been doing",
-"topics": []
+"topics": [
+"adv_can"
+]
 },
 "x_subj_present": {
 "level": "C1",
@@ -3482,7 +3498,9 @@ return json_decode(<<<'EF_JSON_END'
 "pas_inf_ing"
 ],
 "name": "The present subjunctive: The board demanded that the director resign",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_subj_should": {
 "level": "C1",
@@ -3491,7 +3509,9 @@ return json_decode(<<<'EF_JSON_END'
 "should"
 ],
 "name": "That … should, the subjunctive or an ordinary tense: three levels of formality",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_subj_adj": {
 "level": "C1",
@@ -3500,7 +3520,9 @@ return json_decode(<<<'EF_JSON_END'
 "there_it_prep"
 ],
 "name": "After it is vital / essential / important that …, and after nouns: the request that …",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_should_react": {
 "level": "C1",
@@ -3508,7 +3530,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_subj_should"
 ],
 "name": "Should for a reaction: It's odd that she should say that",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_subj_were": {
 "level": "C1",
@@ -3518,7 +3542,9 @@ return json_decode(<<<'EF_JSON_END'
 "senses_like"
 ],
 "name": "The past subjunctive: if I were, I wish it were, as if I were, if … were to",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_rather_perf": {
 "level": "C1",
@@ -3527,7 +3553,9 @@ return json_decode(<<<'EF_JSON_END'
 "wish_past"
 ],
 "name": "I'd rather you had told me: the unreal past about the past",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_subj_fixed": {
 "level": "C1",
@@ -3535,7 +3563,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_subj_present"
 ],
 "name": "Fixed subjunctive phrases: be that as it may, so be it, come what may, suffice it to say",
-"topics": []
+"topics": [
+"adv_subj"
+]
 },
 "x_agr_complex": {
 "level": "C1",

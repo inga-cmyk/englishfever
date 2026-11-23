@@ -10289,7 +10289,9 @@
    ],
    "typical_errors": "*Winters here may be very long* for a known tendency; *It can be snowing now* for a guess about this moment",
    "sources": "AGU 15 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: B1-B2 can: general truths and tendencies · Gold C1 reference, Modal verbs: Ability",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10315,7 +10317,9 @@
    "leads_to": [],
    "typical_errors": "*Living alone can be lonely, I imagine* said by somebody who has never tried it (could); *That can be true* for a guess (could / may)",
    "sources": "AGU 15 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: B2 can: guesses and predictions; C1 can: past negative, deductions",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10340,7 +10344,9 @@
    "leads_to": [],
    "typical_errors": "*The forms are able to be filled in online; I was able to hear the sea; He could reach the summit at the third attempt* for one achievement",
    "sources": "AGU 15 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: B1 be able to: past",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10365,7 +10371,9 @@
    "leads_to": [],
    "typical_errors": "*Last night the children could stay up till eleven* (= got permission once)",
    "sources": "AGU 15 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: B1 could: permission; be allowed to",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10390,7 +10398,9 @@
    "leads_to": [],
    "typical_errors": "*May the figures be wrong? May she accept the offer?*",
    "sources": "AGU 17 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: B2 may: formal uses; C1 might: questions",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10415,7 +10425,9 @@
    "leads_to": [],
    "typical_errors": "*The flat can be small, but it's bright; She may not much experience; Maybe the flat is small, but* (weaker)",
    "sources": "AGU 17 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: C2 may: concession",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10440,7 +10452,9 @@
    "leads_to": [],
    "typical_errors": "*They may good cancel; We might as well to walk; You might warned me*",
    "sources": "AGU 17 (may / might have; the fixed phrases from memory) · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: C1 may well; C2 may as well, might as well; C1 might: polite criticism; C1 could: criticism",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10465,7 +10479,9 @@
    "leads_to": [],
    "typical_errors": "*I can be sitting on a beach next week* (not can); *He might been joking; He might have be joking*",
    "sources": "AGU 17 · TE C1: Advanced modals: can / be able to, may / might (page seen) · EGP: C1 future continuous: expectations with might or may",
-   "topics": [],
+   "topics": [
+    "adv_can"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10496,7 +10512,9 @@
    ],
    "typical_errors": "PATTERN: *The board demanded the director to resign; demanded that the director resigns* in a formal letter; *that she doesn't be informed*",
    "sources": "AGU 39 · TE C1: The subjunctive: present and past (page seen) · EGP: C1 present simple after speech act verbs expressing suggestions and obligation",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10523,7 +10541,9 @@
    ],
    "typical_errors": "Treats two of the three as mistakes; *recommended that she should to rest; recommended her that she rest*",
    "sources": "AGU 39 · TE C1: The subjunctive: present and past (page seen); C1: Advanced modals: will, would, should (page seen) · EGP: C1 should: after if clauses, inversion (the that-clause use is not a separate EGP entry)",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10548,7 +10568,9 @@
    "leads_to": [],
    "typical_errors": "*It is vital that every guest is signing the register* in a formal text; *It is important for that he comes*",
    "sources": "AGU 39 · TE C1: The subjunctive: present and past (page seen); C1: Advanced modals: will, would, should (page seen) · EGP: B1-B2 it + be + adjective + that clause",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10572,7 +10594,9 @@
    "leads_to": [],
    "typical_errors": "A subjunctive here (*I'm amazed that he forget*): after reactions only should or an ordinary tense is possible",
    "sources": "AGU 39 · TE C1: The subjunctive: present and past (page seen); C1: Advanced modals: will, would, should (page seen) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10601,7 +10625,9 @@
    ],
    "typical_errors": "*If the bank would refuse; as if I am a child* for something untrue; *If I were to knew*",
    "sources": "AGU 85 (title seen, text not read) · TE C1: The subjunctive: present and past (page seen) · EGP: C2 if it were + to-infinitive, formal; C2 inverted were + to-infinitive",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10627,7 +10653,9 @@
    "leads_to": [],
    "typical_errors": "*I'd rather you told me yesterday; I'd rather you wouldn't have sold it*",
    "sources": "AGU: no unit of its own (not checked) · TE C1: The subjunctive: present and past (page seen) (the past perfect for an unreal past; would rather + past perfect is not on the page) · EGP: not found in EGP · Gold C1 reference, Hypothetical meaning (would rather + past simple / + past perfect)",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10649,7 +10677,9 @@
    "leads_to": [],
    "typical_errors": "Changes the phrase to an ordinary tense (*be that as it is; so is it*)",
    "sources": "Murphy not in the AGU units read · TE C1: The subjunctive: present and past (page seen) · EGP: not found in EGP",
-   "topics": [],
+   "topics": [
+    "adv_subj"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,

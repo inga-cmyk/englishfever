@@ -1,0 +1,331 @@
+[
+{
+"id": "c1-4-001",
+"answer": [
+"have drunk"
+],
+"other_correct": [
+[
+"'ve drunk"
+],
+[
+"have been drinking"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several answers fit: 'have been drinking' is correct but less natural with 'three cups'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-002",
+"answer": [
+"didn't do"
+],
+"other_correct": [
+[
+"did not do"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-003",
+"answer": "joined",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Past simple after 'since' is B1; not really C1.",
+"sense_problem": "Distractor 'had joined' is believable; 'joins' too."
+},
+{
+"id": "c1-4-004",
+"answer": [
+"have lived"
+],
+"other_correct": [
+[
+"'ve lived"
+],
+[
+"lived"
+],
+[
+"have been living"
+],
+[
+"'ve been living"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Since you live in this city' is odd: natural verb would be 'moved/arrived'; with (live) the answer is unclear and many forms fit.",
+"level_problem": "",
+"sense_problem": "Awkward sentence: nobody says 'since you lived in this city' for this meaning."
+},
+{
+"id": "c1-4-005",
+"answer": [
+"get"
+],
+"other_correct": [
+[
+"have got"
+],
+[
+"'ve got"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Time clause with present for future is A2/B1; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-006",
+"answer": "Once you paid, the order can't be changed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Tense after 'once/as soon as' is B1; point is not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-007",
+"answer": [
+"has lost"
+],
+"other_correct": [
+[
+"'s lost"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-008",
+"answer": "This is the first time I am seeing snow.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Not really C1 (B1/B2 form point).",
+"sense_problem": ""
+},
+{
+"id": "c1-4-009",
+"answer": [
+"have rung"
+],
+"other_correct": [
+[
+"'ve rung"
+],
+[
+"have been ringing"
+],
+[
+"'ve been ringing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'have been ringing' with a number is correct but less natural. American 'called' not possible with (ring).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-010",
+"answer": "I've been having this phone since May.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Stative verb with continuous is B1/B2; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-011",
+"answer": [
+"will have taught"
+],
+"other_correct": [
+[
+"'ll have taught"
+],
+[
+"will have been teaching"
+],
+[
+"'ll have been teaching"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-012",
+"answer": [
+"to have left"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine for B2/C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-013",
+"answer": "having read",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'deny + -ing' is B2, not clearly C1.",
+"sense_problem": "'have read' and 'to read' are not believable mistakes beyond the pattern; fine."
+},
+{
+"id": "c1-4-014",
+"answer": "Last night he would cook dinner for all of us.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-015",
+"answer": "The old factory would be next to the river.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-016",
+"answer": [
+"wouldn't"
+],
+"other_correct": [
+[
+"would not"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-017",
+"answer": [
+"will"
+],
+"other_correct": [
+[
+"would"
+],
+[
+"do"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint for the missing word; 'would' and emphatic 'do' also give correct English (less natural). 'if you stare' is the plain version but does not fit the gap.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-018",
+"answer": [
+"will be having"
+],
+"other_correct": [
+[
+"'ll be having"
+],
+[
+"will have"
+],
+[
+"'ll have"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'will have' (= they will normally have lunch now) is possible but less natural; also learner may think 'will have had'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-019",
+"answer": [
+"will have heard"
+],
+"other_correct": [
+[
+"'ll have heard"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-020",
+"answer": [
+"would have come"
+],
+"other_correct": [
+[
+"'d have come"
+],
+[
+"would've come"
+],
+[
+"could have come"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'could have come' also fits (less natural).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-021",
+"answer": [
+"should have arrived"
+],
+"other_correct": [
+[
+"should've arrived"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Given 'should', only the perfect form is needed; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-022",
+"answer": "Should you will change your mind, just call us.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-4-023",
+"answer": "should need",
+"other_correct": "",
+"wrong_options_that_fit": "'will need' is heard informally in some usage but is non-standard; none clearly correct.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'should to need' is a random impossible string, not a believable mistake. Plain 'need' is also correct but not offered."
+}
+]

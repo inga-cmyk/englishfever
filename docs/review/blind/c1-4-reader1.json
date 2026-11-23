@@ -1,0 +1,368 @@
+[
+{
+"id": "c1-4-001",
+"answer": [
+"have drunk"
+],
+"other_correct": [
+[
+"'ve drunk"
+],
+[
+"have had"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Grammar point is B1/low B2 present perfect vs past; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-002",
+"answer": [
+"didn't do"
+],
+"other_correct": [
+[
+"did not do"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Grammar point is B1/low B2 present perfect vs past; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-003",
+"answer": "joined",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 level, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-004",
+"answer": [
+"have lived"
+],
+"other_correct": [
+[
+"'ve lived"
+],
+[
+"have been living"
+],
+[
+"'ve been living"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Grammar point is B1/low B2 present perfect vs past; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-005",
+"answer": [
+"get"
+],
+"other_correct": [
+[
+"have got"
+],
+[
+"'ve got"
+],
+[
+"have gotten"
+],
+[
+"have received"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb (get) gives no way to decide between 'get' and perfect 'have got'; both are correct after 'the moment'.",
+"level_problem": "Grammar point is B1/low B2 present perfect vs past; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-006",
+"answer": "Once you paid, the order can't be changed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Sentences are B1; a C1 learner would not make these mistakes except the tense one.",
+"sense_problem": "'Once you paid' is a believable slip, but other three options are plain, easy correct sentences."
+},
+{
+"id": "c1-4-007",
+"answer": [
+"has lost"
+],
+"other_correct": [
+[
+"'s lost"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Grammar point is B1/low B2 present perfect vs past; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-008",
+"answer": "This is the first time I am seeing snow.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1 point (this is the first time + present perfect), not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-009",
+"answer": [
+"have rung"
+],
+"other_correct": [
+[
+"'ve rung"
+],
+[
+"have been ringing"
+],
+[
+"'ve been ringing"
+],
+[
+"have phoned"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Grammar point is B1/low B2 present perfect vs past; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-010",
+"answer": "I've been having this phone since May.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2 stative verb with continuous; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-011",
+"answer": [
+"will have been teaching"
+],
+"other_correct": [
+[
+"will have taught"
+],
+[
+"'ll have taught"
+],
+[
+"'ll have been teaching"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine for B2; C1 only borderline.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-012",
+"answer": [
+"to have left"
+],
+"other_correct": [
+[
+"to have gone from"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 point, ok at C1 low end.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-013",
+"answer": "having read",
+"other_correct": "",
+"wrong_options_that_fit": "'to have read' is rare/old-fashioned after deny; not standard but some speakers accept it.",
+"instruction_problem": "",
+"level_problem": "B1/B2 gerund vs infinitive.",
+"sense_problem": "'have read' and 'to read' are believable errors."
+},
+{
+"id": "c1-4-014",
+"answer": "Last night he would cook dinner for all of us.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-015",
+"answer": "The old factory would be next to the river.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option 1 (four times in the nineties) is fine but not about the target point; checking 'would' with states: ok.",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-016",
+"answer": [
+"wouldn't"
+],
+"other_correct": [
+[
+"would not"
+],
+[
+"won't"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'won't' is also correct if the printer still isn't working (this morning not finished); the context does not exclude it. '(not / will)' with past 'tried' is a hint.",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-017",
+"answer": [
+"will"
+],
+"other_correct": [
+[
+"'ll"
+],
+[
+"just"
+],
+[
+"only"
+],
+[
+"always"
+],
+[
+"constantly"
+],
+[
+"keep"
+],
+[
+"do"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint for the target form; many one-word fillers (just, only, always, constantly, do) are correct English here.",
+"level_problem": "Good C1 nuance (insistent 'will'), but task is open.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-018",
+"answer": [
+"will be having"
+],
+"other_correct": [
+[
+"'ll be having"
+],
+[
+"will have"
+],
+[
+"'ll have"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'will have' alone (they'll have lunch at this time) is acceptable but less natural.",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-019",
+"answer": [
+"will have heard"
+],
+"other_correct": [
+[
+"'ll have heard"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-020",
+"answer": [
+"would have come"
+],
+"other_correct": [
+[
+"'d have come"
+],
+[
+"would've come"
+],
+[
+"could have come"
+],
+[
+"would have liked to come"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not show whether it is would/could; also (come) gives the verb only.",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-021",
+"answer": [
+"should have arrived"
+],
+"other_correct": [
+[
+"should've arrived"
+],
+[
+"will have arrived"
+],
+[
+"must have arrived"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint 'should / arrive' ok.",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-022",
+"answer": "Should you will change your mind, just call us.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "C1 fine.",
+"sense_problem": ""
+},
+{
+"id": "c1-4-023",
+"answer": "should need",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.",
+"sense_problem": "'should to need' is an impossible string, not a believable mistake."
+}
+]

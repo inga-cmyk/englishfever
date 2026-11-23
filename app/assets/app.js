@@ -648,7 +648,7 @@
   /** Topics added lately (teacher, 3 November): a "New" group on the Topics page and a small label on their tiles for 45 days. */
   // 15 November (teacher, option A): the New group shows the new grammar points (state.meta.new_points, each with its own card and
   // practice of that point only) instead of these topics; the server sends a point only while it is new and has tasks
-  var NEW_TOPICS = { adv_present: '2026-11-22', adv_past: '2026-11-23', adv_perfect: '2026-11-23', adv_will: '2026-11-23' };   // the first C1 topic is also under New (teacher, 22 November)
+  var NEW_TOPICS = { adv_present: '2026-11-22', adv_past: '2026-11-23', adv_perfect: '2026-11-23', adv_will: '2026-11-23', adv_can: '2026-11-23', adv_subj: '2026-11-23' };   // the first C1 topic is also under New (teacher, 22 November)
   function isNewTopic(id) { var d = NEW_TOPICS[id]; return !!d && (Date.now() - Date.parse(d)) < 45 * 86400000; }
 
   /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
@@ -2092,7 +2092,7 @@
     ind_polite: 'Could you tell me where the cake **is**?', ind_advanced: "I don't know **what to say**.",
     used_to: 'I **used to** read books. Now I read comments.', articles: '**An** elephant walked into **a** café.',
     quantity: "There's **not enough** coffee in this world.", relative_clauses: 'I have a friend **who** talks to plants.',
-    time_clauses: "I'll call you **when** I **wake up**.", adv_present: "I **love** my job. I**'m** just not **loving** this Monday.", adv_past: "I **was** quietly **eating** your biscuits when you **walked** in.", adv_perfect: "This is the third time I**'ve lost** my glasses today. They're on my head.", adv_will: "My laptop **won't** switch on. It **will** always do this before a deadline.", question_tags: "You love grammar, **don't you**?",
+    time_clauses: "I'll call you **when** I **wake up**.", adv_present: "I **love** my job. I**'m** just not **loving** this Monday.", adv_past: "I **was** quietly **eating** your biscuits when you **walked** in.", adv_perfect: "This is the third time I**'ve lost** my glasses today. They're on my head.", adv_will: "My laptop **won't** switch on. It **will** always do this before a deadline.", adv_can: "The diet starts on Monday. Today I **might as well** finish the cake.", adv_subj: "If I **were** a cat, I'd ignore emails too.", question_tags: "You love grammar, **don't you**?",
     subject_object_q: '**Who** ate my sandwich?', verb_patterns: 'I enjoy **doing** nothing.',
     more_modals: 'I **might** go to the gym tomorrow.', passive_modals: 'Some meetings **should be replaced** by emails.',
     causative: 'I **had** my CV **written** by AI. Oops.', two_objects: 'Give **me** the chocolate.',

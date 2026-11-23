@@ -6,7 +6,7 @@ T = "The perfect tenses: forms and uses"
 L = "C1"
 
 # x_pp_period: the time is still going on, or it is over
-gp(T, L, 3, "It's only ten o'clock, and I ___ three cups of coffee this morning. (drink)", "have drunk | 've drunk",
+gp(T, L, 3, "It's only ten o'clock, and I ___ three cups of coffee this morning. (drink)", "have drunk | 've drunk | have had | 've had",
    "*this morning* is still going on (it's ten o'clock): present perfect, *I've drunk*.",
    "*this morning* vēl turpinās (ir desmit no rīta): Present Perfect, *I've drunk*.")
 gp(T, L, 3, "It's six in the evening now. I ___ much this morning because the internet was down. (not / do)", "didn't do | did not do",
@@ -21,7 +21,7 @@ gp(T, L, 4, "Have you made any friends since you ___ in this city? (live)", "hav
    "Both situations go on until now (you still live here): present perfect also after *since*: *since you've lived here*.",
    "Abas situācijas turpinās līdz šim brīdim (tu joprojām te dzīvo): Present Perfect arī aiz *since*: *since you've lived here*.")
 # x_time_perf
-gp(T, L, 3, "I'll text you the moment I ___ my exam results. (get)", "'ve got | have got | 've gotten | have gotten | get",
+gp(T, L, 3, "I'll text you the moment I ___ my exam results. (get)", "'ve got | have got | 've gotten | have gotten | get | have received | 've received",
    "*the moment* about the future: present perfect (*the moment I've got my results*) or present simple, never *will* or the past.",
    "*the moment* par nākotni: Present Perfect (*the moment I've got my results*) vai Present Simple, nevis *will* vai pagātne.")
 mc(T, L, 4, "Which sentence has a mistake?", "Once you paid, the order can't be changed.",

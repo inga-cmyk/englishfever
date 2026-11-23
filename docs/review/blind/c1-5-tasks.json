@@ -1,0 +1,166 @@
+[
+ {
+  "id": "c1-5-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "We could stay up late on Saturdays when we were kids.",
+   "We couldn't go out on school nights.",
+   "In the end we were allowed to leave early.",
+   "Last night the children could stay up until eleven."
+  ]
+ },
+ {
+  "id": "c1-5-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: After driving round for three hours, we ___ find a parking space.",
+  "options": [
+   "have been able to",
+   "were able to",
+   "can",
+   "could"
+  ]
+ },
+ {
+  "id": "c1-5-003",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The forms are able to be filled in online.",
+   "I could hear the sea from my hotel room.",
+   "We were able to finish the job on time.",
+   "She'll be able to drive next year."
+  ]
+ },
+ {
+  "id": "c1-5-004",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The results may point to a wider problem.",
+   "May the figures in the report be wrong?",
+   "Is she likely to accept the offer?",
+   "Could the figures be wrong?"
+  ]
+ },
+ {
+  "id": "c1-5-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: The next bus is in an hour, so we ___ as ___ walk.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "You ___ me you were bringing five friends! I would have made more food. (might / warn)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "This time next week I ___ on a beach in Crete. (may / lie)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-008",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "He didn't sound serious about leaving. He ___ . (might / joke)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-009",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Winters here ___ very long, so bring warm clothes.",
+  "options": [
+   "could have been",
+   "can being",
+   "can be",
+   "are able to be"
+  ]
+ },
+ {
+  "id": "c1-5-010",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I insist that he be told the truth.",
+   "The board demanded the director to resign.",
+   "They suggested that we should leave early.",
+   "The doctor recommended that she rest for a week."
+  ]
+ },
+ {
+  "id": "c1-5-011",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "We recommend that this medicine ___ taken with alcohol. (not / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-012",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It's odd that she ___ that. She's usually so polite. (should / say)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-013",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "If the bank ___ to refuse the loan, we would sell the car. (be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-014",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "She speaks to me as if I were a child.",
+   "If the bank would refuse, we would sell the car.",
+   "I wish it were Friday already.",
+   "If I were you, I'd take the job."
+  ]
+ },
+ {
+  "id": "c1-5-015",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I'd rather you ___ me before the meeting, not after it. (tell)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-5-016",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The plan has its problems. ___, it's the best one we have.",
+  "options": [
+   "Be that as it may",
+   "Being that as it may",
+   "Be that as it is",
+   "Be it as that may"
+  ]
+ },
+ {
+  "id": "c1-5-017",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Keep the receipt in case you ___ to return the shoes.",
+  "options": [
+   "would need",
+   "will need",
+   "should need",
+   "had needed"
+  ]
+ }
+]

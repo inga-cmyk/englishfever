@@ -293,3 +293,7 @@ for _p in _ALL:
     if _p["area"].startswith("C1 · 1 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_present"]
 for _p in _ALL:
     if _p["area"].startswith("C1 · 2 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_past"]
+for _p in _ALL:
+    if _p["area"].startswith("C1 · 3 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_perfect"]
+for _p in _ALL:
+    if _p["area"].startswith("C1 · 4 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_will"]

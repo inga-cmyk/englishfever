@@ -11127,6 +11127,78 @@
     "signals": "*as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering*"
    },
    "card": "C1"
+  },
+  {
+   "id": "adv_perfect",
+   "label": "The perfect tenses: forms and uses",
+   "area": "active",
+   "levels": [
+    "C1"
+   ],
+   "rule": {
+    "form": [
+     "*this morning, today, this week*: present perfect while the time is still going on (*It's ten and I've drunk three coffees this morning*), past simple when it is over (*I didn't do much this morning*, said at six).",
+     "*since*: past simple for the point in the past, present perfect in the main part: *Since she joined the team, sales have doubled.* Both still going on: *since you've lived here*.",
+     "*the moment, once, as soon as, after* + present perfect (or present simple) for the future, + past simple for the past: *I'll text you the moment I've got the results. The moment we landed, I texted her.*",
+     "*It's the first / second time* + present perfect; *It was the first time* + past perfect: *This is the third time she's lost her keys.*",
+     "The perfect after *to* and prepositions: *He is thought to have left. She denied having read it.* Future: *By May I'll have taught here for ten years.*"
+    ],
+    "use": [
+     "The continuous for an activity up to now, the simple for a number, a result or a state: *I've rung the bank four times. I've been ringing the bank all morning. I've had this phone since May.*"
+    ],
+    "signals": "*this morning, today, since, the moment, once, the first time, the third time, by May, is thought to, denied*",
+    "example": "*This is the third time I've lost my glasses today. They're on my head.*"
+   },
+   "rule_lv": {
+    "form": [
+     "**this morning, today, this week**: Present Perfect, kamēr laiks vēl turpinās (**It's ten and I've drunk three coffees this morning**), Past Simple, kad tas *beidzies* (**I didn't do much this morning**, *sakot* sešos vakarā).",
+     "**since**: Past Simple brīdim pagātnē, Present Perfect galvenajā daļā: **Since she joined the team, sales have doubled*.* Ja *abas* situācijas turpinās: **since you've lived here**.",
+     "**the moment, once, as soon as, after** + Present Perfect (vai Present Simple) nākotnei, + Past Simple pagātnei: **I'll text you the moment I've got the results.* *The moment we landed, I texted her*.*",
+     "**It's the first / second time** + Present Perfect; **It was the first time** + Past Perfect: **This is the third time she's lost her keys*.*",
+     "*Perfekts* aiz *to* un prievārdiem: **He is thought to have left.* *She denied having read it*.* Nākotnē: **By May I'll have taught here for ten years*.*"
+    ],
+    "use": [
+     "Ilgstošā forma darbībai līdz šim brīdim, vienkāršā *skaitam*, rezultātam vai stāvoklim: **I've rung the bank four times.* *I've been ringing the bank all morning.* *I've had this phone since May*.*"
+    ],
+    "signals": "*this morning, today, since, the moment, once, the first time, the third time, by May, is thought to, denied*"
+   },
+   "card": "C1"
+  },
+  {
+   "id": "adv_will",
+   "label": "Advanced modals: will, would, should",
+   "area": "modals",
+   "levels": [
+    "C1"
+   ],
+   "rule": {
+    "form": [
+     "*will* / *would* for typical behaviour, never for one occasion: *Our cat will sit at the window for hours. At school she would sit at the back.* But *Last night he cooked dinner.* For a past state, *used to*: *The factory used to be there.*",
+     "*won't / wouldn't* for refusing, also things and one occasion: *The printer wouldn't work this morning.* Criticism: *If you will stare at a screen all day…*",
+     "*will* for a confident guess about now or the past: *They'll be having lunch now. She'll have heard the news by now.*",
+     "*would have* + past participle for what did not happen: *I would have come, but nobody told me.*",
+     "*should* for what we expect: *The parcel should have arrived by now.* Formal: *If you should need anything… / Should you need anything… / in case you should need it.*"
+    ],
+    "use": [
+     "*If you will / would* = if you are willing (a polite request): *If you'll follow me, I'll show you to your room.*"
+    ],
+    "signals": "*for hours, always, whenever, by now, nobody told me, refused, in case, should you*",
+    "example": "*My laptop won't switch on. It will always do this before a deadline.*"
+   },
+   "rule_lv": {
+    "form": [
+     "**will** / **would** raksturīgai uzvedībai, nekad *vienai reizei*: **Our cat will sit at the window for hours.* *At school she would sit at the back*.* Bet **Last night he cooked dinner*.* Pagātnes stāvoklim **used to**: **The factory used to be there*.*",
+     "**won't / wouldn't** *atteikumam*, arī lietām un *vienai reizei*: **The printer wouldn't work this morning*.* Kritika: **If you will stare at a screen all day*…*",
+     "**will** drošam minējumam par tagadni vai pagātni: **They'll be having lunch now.* *She'll have heard the news by now*.*",
+     "**would have** + 3. forma tam, kas nenotika: **I would have come, but nobody told me*.*",
+     "**should** tam, ko sagaidām: **The parcel should have arrived by now*.* Oficiāli: **If you should need anything*… / *Should you need anything*… / *in case you should need it*.*"
+    ],
+    "use": [
+     "**If you will / would** = ja *esat* ar *mieru* (pieklājīgs lūgums): **If you'll follow me, I'll show you to your room*.*"
+    ],
+    "signals": "*for hours, always, whenever, by now, nobody told me, refused, in case, should you*"
+   },
+   "card": "C1"
   }
  ],
  "bloom": {

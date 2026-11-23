@@ -3238,7 +3238,9 @@ return json_decode(<<<'EF_JSON_END'
 "deduction_past"
 ],
 "name": "The perfect in every time and form: have done, had done, will have done, to have done, having done",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_pp_period": {
 "level": "C1",
@@ -3246,7 +3248,9 @@ return json_decode(<<<'EF_JSON_END'
 "pp_ps_now"
 ],
 "name": "This morning, today, this week: two correct sentences, two moments of speaking",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_since_clause": {
 "level": "C1",
@@ -3254,7 +3258,9 @@ return json_decode(<<<'EF_JSON_END'
 "pp_for_since"
 ],
 "name": "Tenses with since: Since she joined … have doubled; since I've had this job",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_time_perf": {
 "level": "C1",
@@ -3262,7 +3268,9 @@ return json_decode(<<<'EF_JSON_END'
 "when_done"
 ],
 "name": "The moment / once / by the time + present perfect for the future, + past simple for the past",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_first_time": {
 "level": "C1",
@@ -3271,7 +3279,9 @@ return json_decode(<<<'EF_JSON_END'
 "pastp_form"
 ],
 "name": "It's the second time he has …; it was the first time I had …",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_ppc_adv": {
 "level": "C1",
@@ -3279,7 +3289,9 @@ return json_decode(<<<'EF_JSON_END'
 "pp_ppc"
 ],
 "name": "Present perfect continuous or simple: repeated actions, changes, amounts",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_perf_cont_all": {
 "level": "C1",
@@ -3289,7 +3301,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_ppc_adv"
 ],
 "name": "Perfect simple or continuous in the past and the future as well",
-"topics": []
+"topics": [
+"adv_perfect"
+]
 },
 "x_will_habit": {
 "level": "C1",
@@ -3297,7 +3311,9 @@ return json_decode(<<<'EF_JSON_END'
 "would_habit"
 ],
 "name": "Will and would for characteristic behaviour and for what is always true",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_will_crit": {
 "level": "C1",
@@ -3305,7 +3321,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_will_habit"
 ],
 "name": "Will, won't and wouldn't to criticise a habit; if you will …",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_will_assume": {
 "level": "C1",
@@ -3314,7 +3332,9 @@ return json_decode(<<<'EF_JSON_END'
 "fut_perf"
 ],
 "name": "Will for an assumption: That'll be the courier. He'll have heard by now.",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_would_have": {
 "level": "C1",
@@ -3322,7 +3342,9 @@ return json_decode(<<<'EF_JSON_END'
 "c3"
 ],
 "name": "Would have done without if: an imagined past",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_wont_refuse": {
 "level": "C1",
@@ -3331,7 +3353,9 @@ return json_decode(<<<'EF_JSON_END'
 "would_habit"
 ],
 "name": "Wouldn't for refusal on one occasion",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_would_soft": {
 "level": "C1",
@@ -3341,7 +3365,9 @@ return json_decode(<<<'EF_JSON_END'
 "c3"
 ],
 "name": "Would for distance: I'd say, I'd have to disagree, I would have thought",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_should_expect": {
 "level": "C1",
@@ -3350,7 +3376,9 @@ return json_decode(<<<'EF_JSON_END'
 "should_have"
 ],
 "name": "Should for a logical conclusion; should have: expectation or criticism",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_if_will": {
 "level": "C1",
@@ -3359,7 +3387,9 @@ return json_decode(<<<'EF_JSON_END'
 "c_inv"
 ],
 "name": "If you will / would …; if you should …; Should you …",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_should_purpose": {
 "level": "C1",
@@ -3368,7 +3398,9 @@ return json_decode(<<<'EF_JSON_END'
 "in_case"
 ],
 "name": "So that … should, in case … should (formal)",
-"topics": []
+"topics": [
+"adv_will"
+]
 },
 "x_can_typical": {
 "level": "C1",

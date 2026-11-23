@@ -9850,7 +9850,9 @@
    "leads_to": [],
    "typical_errors": "*He is thought to left the country; She denied to have read it; After have eaten*",
    "sources": "AGU 3, 5, 6, 11 · TE C1: The perfect tenses: forms and uses (page seen) · EGP: C2 passives: non-finite perfect clauses and complements · Gold C1 reference, unit 1, Perfect aspect",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9874,7 +9876,9 @@
    "leads_to": [],
    "typical_errors": "Takes one of the two sentences for a mistake; one fixed tense for *today / this week*, whatever the moment of speaking",
    "sources": "AGU 3 · TE C1: The perfect tenses: forms and uses (page seen; this point is not on it) · EGP: B1 present perfect: unfinished",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9898,7 +9902,9 @@
    "leads_to": [],
    "typical_errors": "*Since she has joined the team, sales doubled; Since I have this job I didn't sleep well*",
    "sources": "AGU 3 · TE C1: The perfect tenses: forms and uses (page seen) · EGP: B1 present perfect: duration with since",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9923,7 +9929,9 @@
    "leads_to": [],
    "typical_errors": "*Once you paid, the order can't be changed; I'll text you the moment I landed*",
    "sources": "AGU 3 · TE C1: The perfect tenses: forms and uses (page seen) · EGP: C1 present simple with by the time",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9948,7 +9956,9 @@
    "leads_to": [],
    "typical_errors": "*It was the first time I spoke in public; This is the first time I am seeing snow*",
    "sources": "AGU 3 · TE C1: The perfect tenses: forms and uses (page seen) · EGP: not found in EGP",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -9974,7 +9984,9 @@
    ],
    "typical_errors": "*I've been ringing the bank four times; Rents have been going up by 8 per cent; I've been having this phone since May*",
    "sources": "AGU 6 · TE C1: The perfect tenses: forms and uses (page seen) · EGP: B1 present perfect continuous: repeated continuing events; B2 recent past · Gold C1 reference, unit 1, Present perfect simple and continuous",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10001,7 +10013,9 @@
    "leads_to": [],
    "typical_errors": "*By May I'll have been knowing her for ten years; She had been painting two rooms before lunch; By next week she will work on the project for six months*",
    "sources": "AGU 6, 11 (unit 7 is not in the uploaded text) · TE C1: The perfect tenses: forms and uses (page seen) · EGP: B2 future perfect continuous: looking back from a point in the future; B2 past perfect continuous",
-   "topics": [],
+   "topics": [
+    "adv_perfect"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10028,7 +10042,9 @@
    ],
    "typical_errors": "*Last night he would cook dinner* (one occasion); *The cat will sit there for hours* understood as a prediction; *I would be very shy as a child* (a state needs used to)",
    "sources": "AGU 16 · TE C1: Advanced modals: will, would, should (page seen) · EGP: C1 will: habitual and typical; B2 would: habitual past",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10052,7 +10068,9 @@
    "leads_to": [],
    "typical_errors": "'Corrects' *if you will stare at a screen* to *if you stare* and loses the criticism; reads *She will interrupt* as a prediction",
    "sources": "AGU 16 · TE C1: Advanced modals: will, would, should (page seen) · EGP: C2 will: willfulness or disapproval",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10077,7 +10095,9 @@
    "leads_to": [],
    "typical_errors": "*He will hear the news by now; They will have lunch now* as a guess about this moment; every *will have done* read as future",
    "sources": "AGU 16 · TE C1: Advanced modals: will, would, should (page seen) · EGP: C1 future perfect simple: assumptions; C2 future perfect continuous: assumptions",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10102,7 +10122,9 @@
    "leads_to": [],
    "typical_errors": "*I will have come, but nobody told me; I would come yesterday, but I was busy; I had come, but*",
    "sources": "AGU 16 · TE C1: Advanced modals: will, would, should (page seen) · EGP: B1 would: imagined situations in the past",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10127,7 +10149,9 @@
    "leads_to": [],
    "typical_errors": "*She would sign the form yesterday* meaning she agreed once; *The printer didn't want to work*",
    "sources": "AGU 16 · TE C1: Advanced modals: will, would, should (page seen) · EGP: B1 would: willingness in the past",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10153,7 +10177,9 @@
    "leads_to": [],
    "typical_errors": "*I will say that's about right; I would to say; I would thought*",
    "sources": "AGU 16 (not in the part of the unit read) · TE C1: Advanced modals: will, would, should (page seen) · EGP: B1 would: indirectness; C1-C2 would with adverbs",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10179,7 +10205,9 @@
    "leads_to": [],
    "typical_errors": "Every *should have done* read as criticism; *Forty chairs must be enough* where it is only a calculation",
    "sources": "AGU 20 (title seen, text not read) · TE C1: Advanced modals: will, would, should (page seen) · EGP: B1 should: likelihood; B2 should: expectations · Gold C1 reference, Modal verbs",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10205,7 +10233,9 @@
    "leads_to": [],
    "typical_errors": "Rejects every *will* after *if*; *If you would change your mind, call me; Should you will change your mind*",
    "sources": "AGU 83, 84 · TE C1: Advanced modals: will, would, should (page seen) · EGP: C1 if + should, formal, polite; C1 inverted conditional with should · Gold C1 reference, Conditionals: advanced features",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10230,7 +10260,9 @@
    "leads_to": [],
    "typical_errors": "*so that he shouldn't to wake; in case you will need it; so that he doesn't woke*",
    "sources": "AGU 81 (title seen, text not read) · TE C1: Advanced modals: will, would, should (page seen) · EGP: B1 subordinated clauses: purpose, result",
-   "topics": [],
+   "topics": [
+    "adv_will"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,

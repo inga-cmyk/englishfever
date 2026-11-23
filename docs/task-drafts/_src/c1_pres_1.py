@@ -25,8 +25,8 @@ gp(T, L, 3, "Our kitchen is tiny: it ___ only three metres by four. (measure)", 
 # ── x_mental_cont: thinking verbs ──
 # m2 work: consider = think about, only continuous
 gp(T, L, 3, "My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider)", "is considering | 's considering | has been considering | 's been considering | may be considering | might be considering",
-   "*consider* in the meaning *think carefully about* is only used in the continuous: *she's considering taking early retirement*.",
-   "*consider* nozīmē *rūpīgi apsvērt* lieto tikai ilgstošajā formā: *she's considering taking early retirement*.")
+   "*is considering*: she is thinking about this decision now, and has not decided yet: *she's considering taking early retirement*.",
+   "*is considering*: viņa par šo lēmumu domā tagad un vēl nav izlēmusi: *she's considering taking early retirement*.")
 note('has been considering :: Also possible: she has been thinking about it for some time. :: Arī pareizi: viņa par to domā jau kādu laiku. || may be considering :: Also possible: you are not sure she is thinking about it. :: Arī pareizi: tu neesi drošs, ka viņa par to domā.')
 # ── x_always_cont: characteristic behaviour, a routine in progress ──
 # a1 relationships: a complaint (as Advanced Grammar in Use 2.3)

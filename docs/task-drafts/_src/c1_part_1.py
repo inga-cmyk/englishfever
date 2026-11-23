@@ -7,8 +7,8 @@ L = "C1"
 mc(T, L, 4, "Which sentence has a mistake?", "Walking into the office, the lights were all off.",
    ["Opening the door, she saw the cat on the table.", "Built in the 1930s, the bridge is still in use.",
     "Not knowing what to say, I kept quiet."],
-   "A participle clause has the same subject as the main clause. The lights were not walking: *Walking into the office, I saw that the lights were all off.*",
-   "Daļai ar *-ing* ir tas pats teikuma priekšmets, kas galvenajam teikumam. Gaismas negāja: *Walking into the office, I saw that the lights were all off.*")
+   "A participle clause with no subject of its own has the same subject as the main clause. The lights were not walking: *Walking into the office, I saw that the lights were all off.*",
+   "Daļai ar *-ing*, kurai nav sava teikuma priekšmeta, ir tas pats teikuma priekšmets, kas galvenajam teikumam. Gaismas negāja: *Walking into the office, I saw that the lights were all off.*")
 gp(T, L, 3, "___ finished the report, she went home early. (have)", "Having",
    "*Having* + past participle: the first action was complete before the second: *Having finished the report, she went home.*",
    "*Having* + 3. forma: pirmā darbība bija pabeigta pirms otrās: *Having finished the report, she went home.*")

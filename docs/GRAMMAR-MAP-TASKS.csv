@@ -4270,3 +4270,12 @@ x_should_purpose,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:10,adv_will | C1 |
 x_would_soft,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:11,adv_will | C1 | mcq | Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad. | would
 x_will_assume,C1,adv_will,C1,check,gap,read,,c1-will-1.csv:12,adv_will | C1 | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | 
 pastc_when,A2.2,past_continuous,B1.1,use,text,read,,b1-tenses-1.csv:129,"past_continuous | B1.1 | text | Write it about last night. Start with *Last night I*, and use *when*: I'm cooking dinner. Suddenly the smoke alarm goes off. | "
+x_agr_quant,C1,adv_agree,C1,check,mcq,read,,c1-agree-1.csv:8,adv_agree | C1 | mcq | Which sentence has a mistake? | Each of the rooms have a private bathroom.
+x_can_typical,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:12,"adv_can | C1 | mcq | Choose the correct option: The forecast says snow until April, so this winter ___ unusually long. | may be"
+x_cleft_adv,C1,adv_order,C1,use,text,read,,c1-order-1.csv:13,adv_order | C1 | text | Put the focus on *the noise*. Start with *What*: The noise really annoys me. | 
+x_inv_place,C1,adv_order,C1,check,mcq,read,,c1-order-1.csv:14,"adv_order | C1 | mcq | Choose the correct option: Look, there's our bus! Here ___! | it comes"
+x_perf_aspect,C1,adv_perfect,C1,use,text,read,,c1-perf-1.csv:14,adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | 
+x_prep_whom,C1,adv_prep,C1,use,text,read,,c1-prep-1.csv:12,adv_prep | C1 | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | 
+x_prep_whom,C1,adv_prep,C1,use,text,read,,c1-prep-1.csv:13,adv_prep | C1 | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | 
+x_should_react,C1,adv_subj,C1,check,gap,read,,c1-subj-1.csv:4,adv_subj | C1 | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | 
+x_should_react,C1,adv_subj,C1,check,gap,read,,c1-subj-1.csv:13,adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | 

@@ -1,5 +1,5 @@
 """Helpers that write a task CSV in the format of the Tasks tab (app/src/CustomItems.php)."""
-import csv, os, re, sys
+import csv, json, os, re, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "app", "authoring"))
 import italics
 # Latvian words without Latvian letters that the built-in list does not have yet. Kept here, not in italics.py, so the published explanations are untouched.
@@ -216,8 +216,16 @@ def _art_move(r):
     if r[0].startswith("Articles") and r[1] != "A2.2" and any(k in r[3] or k in r[4] for k in ART_MOVE):
         r = r + [""] * (10 - len(r)); r[0] = ART_NEW; r[9] = "from: Articles"
     return r
+_C1_RETIRED = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "c1_retired_texts.json"), encoding="utf-8")) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "c1_retired_texts.json")) else {}
+
+
 def save(name):
     rows[:] = [_art_move(r) for r in rows]
+    # older versions of the C1 tasks (rewritten or dropped, 22-23 November): the first row names them all, so the import retires them (" || ")
+    gone = _C1_RETIRED.get(os.path.basename(name), [])
+    if gone and rows:
+        r0 = rows[0] + [""] * (10 - len(rows[0])) if len(rows[0]) < 10 else rows[0]
+        rows[0] = r0[:9] + [" || ".join(([r0[9]] if r0[9] else []) + gone)] + r0[10:]
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", name)
     with open(out, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f); w.writerow(HEAD)

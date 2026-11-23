@@ -1,0 +1,66 @@
+{
+ "c1-agree-1.csv": [],
+ "c1-can-1.csv": [
+  "Even with my glasses on, I ___ hardly read the sign. (can)",
+  "He didn't sound serious about leaving. He ___ . (might / joke)",
+  "She may not much experience, but she learns fast.",
+  "This time next week I ___ on a beach in Crete. (may / lie)",
+  "Write one word in each gap: The next bus is in an hour, so we ___ as ___ walk.",
+  "You ___ me you were bringing five friends! I would have made more food. (might / warn)",
+  "can be",
+  "might as well"
+ ],
+ "c1-order-1.csv": [
+  "Here ___ the bus! Quick, get your bag. (come)",
+  "Start with *What*: I need a long holiday."
+ ],
+ "c1-part-1.csv": [
+  "Not ___ anyone in the city, he felt very lonely at first. (know)"
+ ],
+ "c1-past-1.csv": [
+  "I had wondered if you could check my report.",
+  "I had wondered if you could help me with this report.",
+  "I wish you ___ me about the party. I would have come. (tell)",
+  "We ___ each other for years before we started working together. (know)",
+  "Write one word in each gap: I loved it. It was the best film I ___ ever ___. (see)",
+  "Write one word in each gap: Last night the smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)",
+  "Write one word in each gap: My old flatmate ___ always ___ the lights on. It drove me mad. (leave)",
+  "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)",
+  "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light)",
+  "was always borrowing"
+ ],
+ "c1-perf-1.csv": [
+  "It's only eleven, and I ___ the bank four times. Nobody answers. (ring)"
+ ],
+ "c1-prep-1.csv": [
+  "Write one word in each gap: We received three offers, none ___ ___ was acceptable."
+ ],
+ "c1-pres-1.csv": [
+  "Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*."
+ ],
+ "c1-pres-2.csv": [
+  "I'm wondering could you look at my CV before Friday.",
+  "I'm wondering whether you could help me with this",
+  "My sister and her husband ___ their first baby in June. (expect)",
+  "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot)",
+  "Write one word in each gap: So I ___ ___ in the queue at the bakery, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
+  "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn)"
+ ],
+ "c1-subj-1.csv": [
+  "I'd rather you ___ me before the meeting, not after it. (tell)",
+  "I'd rather you wouldn't have sold the car.",
+  "If the bank would refuse, we would sell the car.",
+  "It's odd that she ___ that. She's usually so polite. (should / say)"
+ ],
+ "c1-will-1.csv": [
+  "\"I've got a headache.\" \"Well, if you ___ stare at a screen all day, what do you expect?\"",
+  "Don't ring them now: they ___ lunch. (will / have)",
+  "I ___ to your party, but nobody told me about it. (come)",
+  "I sent it on Monday, so the parcel ___ by now. (should / arrive)",
+  "I tried three times, but the printer ___ work this morning. (not / will)",
+  "I'd say",
+  "It's nine o'clock. She ___ the news by now. (will / hear)",
+  "Should you will change your mind, just call us.",
+  "There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be)"
+ ]
+}

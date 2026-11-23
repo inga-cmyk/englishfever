@@ -1,7 +1,7 @@
 """C1 direction 3 (The perfect tenses: forms and uses), round 1 (23 November 2026). Hewings, Advanced Grammar in Use (3rd ed.),
 units 3 and 6 (exercises 3.1-3.4, 6.1); Murphy, English Grammar in Use, units 7-8, 13-14. Only places where the context leaves
 one form. Contexts concrete but common; no Latvian surnames."""
-from lib import gp, mc, note
+from lib import gp, mc, note, tx
 T = "The perfect tenses: forms and uses"
 L = "C1"
 
@@ -22,9 +22,9 @@ gp(T, L, 4, "Have you made any friends since you ___ in this city? (live)", "hav
    "Abas situācijas turpinās līdz šim brīdim (tu joprojām te dzīvo): Present Perfect arī aiz *since*: *since you've lived here*.")
 note('have been living :: Also possible: the continuous stresses that the living here still goes on. :: Arī pareizi: Continuous forma uzsver, ka tu te joprojām dzīvo.')
 # x_time_perf
-gp(T, L, 3, "I'll text you the moment I ___ my exam results. (get)", "'ve got | have got | 've gotten | have gotten | get | have received | 've received",
-   "*the moment* about the future: present perfect (*the moment I've got my results*) or present simple, never *will* or the past.",
-   "*the moment* par nākotni: Present Perfect (*the moment I've got my results*) vai Present Simple, nevis *will* vai pagātne.")
+gp(T, L, 3, "I'll text you the moment I ___ my exam results. (get)", "'ve got | get | have got | 've gotten | have gotten | have received | 've received",
+   "*the moment* about the future: present perfect (*the moment I've got my results*) or present simple (*the moment I get my results*), both correct; never *will* or the past.",
+   "*the moment* par nākotni: Present Perfect (*the moment I've got my results*) vai Present Simple (*the moment I get my results*), abi pareizi; nevis *will* vai pagātne.")
 note('get :: Also possible: after *the moment* the present simple has the same meaning. :: Arī pareizi: aiz *the moment* Present Simple nozīmē to pašu.')
 mc(T, L, 4, "Which sentence has a mistake?", "Once you paid, the order can't be changed.",
    ["The moment we landed, I texted her.", "After she had left hospital, she went on a long holiday.",
@@ -61,7 +61,8 @@ note('will have been teaching :: Also possible: the continuous stresses the teac
 gp(T, L, 4, "The thief is thought ___ the country last week. (leave)", "to have left",
    "*is thought* is now, the leaving was earlier (*last week*): the perfect after *to*, *to have left*.",
    "*is thought* ir tagad, aizbraukšana bija agrāk (*last week*): perfekts aiz *to*, *to have left*.")
-mc(T, L, 4, "Choose the correct option: She denied ___ the letter.", "having read",
-   ["to have read", "have read", "to read"],
-   "*deny* is followed by an *-ing* form; for something earlier, *having* + past participle: *She denied having read the letter* (*denied reading* is also correct).",
-   "Aiz *deny* lieto *-ing* formu; par kaut ko agrāku *having* + 3. forma: *She denied having read the letter* (pareizi arī *denied reading*).")
+tx(T, L, 4, "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+   "She denied having read the letter. | She denied reading the letter.",
+   "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too.)",
+   "*deny* + *having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (Dabiski ir arī *She denied reading the letter*.)")
+note("She denied reading the letter. :: Also correct and natural; the task asks for *having*, which shows that the reading came first. :: Arī pareizi un dabiski; uzdevums prasa *having*, kas parāda, ka lasīšana bija agrāk.")

@@ -16,7 +16,7 @@ gp(T, L, 4, "We recommend that this medicine ___ taken with alcohol. (not / be)"
    "Oficiāli: *not* + pamatforma: *that this medicine not be taken*; arī *should not be* vai mazāk oficiāli *is not*.")
 note('should not be :: Also correct (British English). :: Arī pareizi (britu angļu valodā). || is not :: Also correct in less formal English. :: Arī pareizi, mazāk oficiāli.')
 # x_should_react
-gp(T, L, 4, "It's odd that she ___ ___ ___ that. She's usually so polite.", "should / have / said",
+gp(T, L, 4, "It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite.", "should / have / said",
    "After *It's odd / surprising that*, *should* + verb shows surprise; about the past, *should have* + 3rd form: *It's odd that she should have said that.*",
    "Aiz *It's odd / surprising that* *should* + darbības vārds izsaka pārsteigumu; par pagātni *should have* + 3. forma: *It's odd that she should have said that.*",
    bank=["should", "have", "said", "say", "has"])
@@ -47,8 +47,8 @@ note('should have :: Also correct (British English). :: Arī pareizi (britu ang�
 # x_subj_present
 mc(T, L, 4, "Choose the correct option: The lawyer demanded that her client ___ told the whole truth.", "be",
    ["is being", "to be", "being"],
-   "After *demand that*, the base form for every person: *The lawyer demanded that her client be told.*",
-   "Aiz *demand that* pamatforma visām personām: *The lawyer demanded that her client be told.*")
+   "After *demand that*, the base form for every person: *The lawyer demanded that her client be told.* (British English also: *should be told*.)",
+   "Aiz *demand that* pamatforma visām personām: *The lawyer demanded that her client be told.* (Britu angļu valodā arī: *should be told*.)")
 # x_rather_perf
 mc(T, L, 4, "Which sentence has a mistake?", "I'd rather you wouldn't have posted that photo.",
    ["I'd rather you didn't smoke in the kitchen.", "I wish I had listened to your advice back then.", "I'd sooner she hadn't told everyone at work."],
@@ -59,3 +59,9 @@ gp(T, L, 4, "We'll finish this project on time, come what ___.", "may | might",
    "A fixed phrase with the old subjunctive: *come what may* = whatever happens.",
    "Nemainīgs izteiciens ar seno *be* formu: *come what may* = lai kas notiktu.")
 note('might :: Also possible, but rarer: *come what may* is the usual phrase. :: Arī pareizi, bet retāk: parastais izteiciens ir *come what may*.')
+
+# teacher's tester, 23 November: the same frame about something that happens again and again
+gp(T, L, 4, "It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true.", "should / say",
+   "After *It's odd that*, *should* + base form shows surprise about something that keeps happening: *It's odd that she should say that.*",
+   "Aiz *It's odd that* *should* + pamatforma izsaka pārsteigumu par to, kas atkārtojas: *It's odd that she should say that.*",
+   bank=["should", "say", "said", "has"])

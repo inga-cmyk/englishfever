@@ -46,3 +46,13 @@ gp(T, L, 4, "Such ___ the noise from the party that nobody in the street could s
 gp(T, L, 4, "Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise)", "did / realise | realize",
    "*Only when* + first clause, then inversion in the second (with *did*): *did I realise*.",
    "*Only when* + pirmā daļa, tad inversija otrajā (ar *did*): *did I realise*.")
+
+# teacher's tester, 23 November: a cleft sentence with a clear focus, and Here + pronoun
+tx(T, L, 4, "Put the focus on *the noise*. Start with *What*: The noise really annoys me.",
+   "What really annoys me is the noise.",
+   "*What* + verb + *is* + the thing in focus at the end: *What really annoys me is the noise.*",
+   "*What* + darbības vārds + *is* + izceltā lieta beigās: *What really annoys me is the noise.*")
+mc(T, L, 3, "Choose the correct option: Look, there's our bus! Here ___!", "it comes",
+   ["comes it", "does it come", "it is coming"],
+   "After *Here*, a noun comes after the verb (*Here comes the bus*), but a pronoun comes before it: *Here it comes!*",
+   "Pēc *Here* lietvārds stāv aiz darbības vārda (*Here comes the bus*), bet vietniekvārds pirms tā: *Here it comes!*")

@@ -1,6 +1,6 @@
 """C1 direction 8 (Prepositions: position and advanced patterns), round 1 (23 November 2026). Hewings, Advanced Grammar in Use
 (3rd ed.), units 55, 91-93; Murphy, English Grammar in Use, units 94, 128-136. Only places where one form is right."""
-from lib import gp, mc, note
+from lib import gp, mc, note, tx
 T = "Prepositions: position and advanced patterns"
 L = "C1"
 
@@ -46,3 +46,13 @@ mc(T, L, 4, "Choose the correct option: Nobody ___ the owner has a key to the sa
 gp(T, L, 3, "She has a real talent ___ explaining difficult ideas simply.", "for",
    "*a talent for* + *-ing*: *a talent for explaining*.",
    "*a talent for* + *-ing*: *a talent for explaining*.")
+
+# teacher's tester, 23 November: the same idea in the formal and the everyday version
+tx(T, L, 4, "Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday.",
+   "The colleague with whom I share an office is on holiday.",
+   "Formal: the preposition goes before *whom*: *The colleague with whom I share an office is on holiday.*",
+   "Oficiāli: prievārds stāv pirms *whom*: *The colleague with whom I share an office is on holiday.*")
+tx(T, L, 4, "Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful.",
+   "The person I spoke to was very helpful. | The person who I spoke to was very helpful. | The person that I spoke to was very helpful.",
+   "Everyday style: the preposition goes to the end, and *whom* becomes *who*, *that* or nothing: *The person I spoke to was very helpful.*",
+   "Ikdienas stilā prievārds pāriet uz beigām, un *whom* kļūst par *who*, *that* vai izpaliek: *The person I spoke to was very helpful.*")

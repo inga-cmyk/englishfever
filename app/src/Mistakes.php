@@ -256,11 +256,22 @@ final class Mistakes
     public static function needsTask(int $uid, string $point, array $exclude, string $maxLevel): ?array
     {
         $p = Content::mapPoint($point);
-        if (!$p || !$p['needs']) return null;
-        $order = array_flip($p['needs']);
+        if (!$p) return null;
         $paused = Reports::pausedIds();
         $seen = [];
         foreach (Db::all('SELECT item_id, COUNT(1) AS c FROM attempts WHERE user_id = ? GROUP BY item_id', [$uid]) as $r) $seen[$r['item_id']] = (int) $r['c'];
+        // a C1 point first gives an easier task of the SAME point (teacher, 23 November: after *criteria*, not an A2 task about luggage)
+        if (strncmp((string) ($p['level'] ?? ''), 'C1', 2) === 0) {
+            $best = null; $bestCost = PHP_FLOAT_MAX;
+            foreach (Content::items() as $it) {
+                if (Content::point($it) !== $point || isset($exclude[$it['id']]) || isset($paused[$it['id']]) || $it['kind'] === 'write') continue;
+                $cost = (int) $it['bloom'] + (isset($seen[$it['id']]) ? 2 * min(3, $seen[$it['id']]) : 0) + random_int(0, 30) / 100;
+                if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
+            }
+            if ($best) return $best;
+        }
+        if (!$p['needs']) return null;
+        $order = array_flip($p['needs']);
         $best = null; $bestCost = PHP_FLOAT_MAX;
         foreach (Content::items() as $it) {
             $pt = Content::point($it);

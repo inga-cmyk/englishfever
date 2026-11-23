@@ -17882,5 +17882,41 @@
 "adv_will | C1 | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | ": [
 "x_will_assume",
 "read"
+],
+"adv_agree | C1 | mcq | Which sentence has a mistake? | Each of the rooms have a private bathroom.": [
+"x_agr_quant",
+"read"
+],
+"adv_can | C1 | mcq | Choose the correct option: The forecast says snow until April, so this winter ___ unusually long. | may be": [
+"x_can_typical",
+"read"
+],
+"adv_order | C1 | text | Put the focus on *the noise*. Start with *What*: The noise really annoys me. | ": [
+"x_cleft_adv",
+"read"
+],
+"adv_order | C1 | mcq | Choose the correct option: Look, there's our bus! Here ___! | it comes": [
+"x_inv_place",
+"read"
+],
+"adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ": [
+"x_perf_aspect",
+"read"
+],
+"adv_prep | C1 | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | ": [
+"x_prep_whom",
+"read"
+],
+"adv_prep | C1 | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | ": [
+"x_prep_whom",
+"read"
+],
+"adv_subj | C1 | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | ": [
+"x_should_react",
+"read"
+],
+"adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ": [
+"x_should_react",
+"read"
 ]
 }

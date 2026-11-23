@@ -8244,7 +8244,16 @@ return json_decode(<<<'EF_JSON_END'
 "adv_will | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need": "x_should_purpose",
 "adv_will | mcq | Choose the correct option: My first flatmate ___ always leave his socks on the sofa. It drove me mad. | would": "x_would_soft",
 "adv_will | gap | The doorbell's ringing. That ___ ___ the courier: I'm expecting a parcel. | ": "x_will_assume",
-"past_continuous | text | Write it about last night. Start with *Last night I*, and use *when*: I'm cooking dinner. Suddenly the smoke alarm goes off. | ": "pastc_when"
+"past_continuous | text | Write it about last night. Start with *Last night I*, and use *when*: I'm cooking dinner. Suddenly the smoke alarm goes off. | ": "pastc_when",
+"adv_agree | mcq | Which sentence has a mistake? | Each of the rooms have a private bathroom.": "x_agr_quant",
+"adv_can | mcq | Choose the correct option: The forecast says snow until April, so this winter ___ unusually long. | may be": "x_can_typical",
+"adv_order | text | Put the focus on *the noise*. Start with *What*: The noise really annoys me. | ": "x_cleft_adv",
+"adv_order | mcq | Choose the correct option: Look, there's our bus! Here ___! | it comes": "x_inv_place",
+"adv_perfect | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ": "x_perf_aspect",
+"adv_prep | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | ": "x_prep_whom",
+"adv_prep | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | ": "x_prep_whom",
+"adv_subj | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | ": "x_should_react",
+"adv_subj | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ": "x_should_react"
 }
 }
 EF_JSON_END

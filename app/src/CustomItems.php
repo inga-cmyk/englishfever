@@ -189,11 +189,16 @@ final class CustomItems
                     if (isset($byContent[$ok2])) { $res['replaces'] = $byContent[$ok2]['id']; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; }
                 }
                 if ($from === null && $item['kind'] !== 'match' && $get('replaces') !== '') {   // another corrected task: the older version (the old correct option, sentence or task text) is retired
-                    // the same kind of task first; then any kind, so a corrected task may change its type (a word order that allowed two answers becomes a gap; teacher, 3 November)
-                    foreach (array_unique(array_merge([$item['kind']], ['mcq', 'gap', 'text', 'order', 'write'])) as $k3) {
-                        $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $k3, 'q' => $get('replaces'), 'correct' => $get('replaces'), 'sentence' => $get('replaces')]);
-                        if (isset($byOld[$ok3])) { $res['replaces'] = $byOld[$ok3]; $res['warnings'][] = 'Replaces an older version of this question, which is retired.'; break; }
+                    // several older versions may be named, separated by " || " (23 November: a C1 task rewritten twice, or tasks dropped from the file)
+                    $res['retire_all'] = [];
+                    foreach (array_filter(array_map('trim', explode(' || ', $get('replaces'))), 'strlen') as $oldText) {
+                        // the same kind of task first; then any kind, so a corrected task may change its type (a word order that allowed two answers becomes a gap; teacher, 3 November)
+                        foreach (array_unique(array_merge([$item['kind']], ['mcq', 'gap', 'text', 'order', 'write'])) as $k3) {
+                            $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $k3, 'q' => $oldText, 'correct' => $oldText, 'sentence' => $oldText]);
+                            if (isset($byOld[$ok3]) && !(isset($mine[$dup]) && $mine[$dup]['id'] === $byOld[$ok3])) { $res['retire_all'][] = $byOld[$ok3]; $res['replaces'] = $res['replaces'] ?? $byOld[$ok3]; break; }
+                        }
                     }
+                    if ($res['retire_all']) $res['warnings'][] = count($res['retire_all']) === 1 ? 'Replaces an older version of this question, which is retired.' : 'Replaces ' . count($res['retire_all']) . ' older versions, which are retired.';
                 }
                 if (isset($seen[$dup])) throw new ApiError('This task is twice in the file.', 400);
                 if (isset($mine[$dup])) {                                   // added from a file before
@@ -219,9 +224,11 @@ final class CustomItems
         fclose($fh);
         if ($save) {
             foreach ($rows as &$row) {
-                if (!$row['ok'] || !empty($row['same'])) continue;
+                if (!$row['ok']) continue;
+                // older versions are retired also when this row itself is already there unchanged (23 November)
+                foreach (($row['retire_all'] ?? (!empty($row['replaces']) ? [$row['replaces']] : [])) as $oldId) Db::update('custom_items', ['status' => 'retired', 'updated_at' => time()], 'item_id = ?', [$oldId]);
+                if (!empty($row['same'])) continue;
                 $it = $row['item'];
-                if (!empty($row['replaces'])) Db::update('custom_items', ['status' => 'retired', 'updated_at' => time()], 'item_id = ?', [$row['replaces']]);
                 if (!empty($row['update'])) {
                     $cur = Db::one('SELECT data FROM custom_items WHERE item_id = ?', [$row['update']]);
                     $d = json_decode((string) ($cur['data'] ?? ''), true);

@@ -29,8 +29,8 @@ mc(T, L, 4, "Which sentence has a mistake?", "May the figures in the report be w
 # x_may_well
 mc(T, L, 4, "Which sentence has a mistake?", "Nothing's on, so we might as good go to bed.",
    ["You may well be right about the price.", "You might have told me the café was closed.", "There's no milk, so I'll have my tea black."],
-   "*might / may as well* (not *as good*) = it is the only sensible thing: *we might as well go to bed*.",
-   "*might / may as well* (nevis *as good*) = tas ir vienīgais saprātīgais: *we might as well go to bed*.")
+   "*might / may as well* (not *as good*) = the sensible choice when there is nothing better to do: *we might as well go to bed*.",
+   "*might / may as well* (nevis *as good*) = saprātīga izvēle, ja nav nekā labāka: *we might as well go to bed*.")
 gp(T, L, 4, "You might ___ ___ me you were bringing five friends! I would have made more food.", "have / warned",
    "*You might have* + 3rd form: you should have done it (a reproach): *You might have warned me!*",
    "*You might have* + 3. forma: tev vajadzēja to izdarīt (pārmetums): *You might have warned me!*",
@@ -58,3 +58,9 @@ mc(T, L, 4, "Which sentence has a mistake?", "Although she may be young, but she
     "It may well rain later, so take an umbrella."],
    "*may … but* already admits one point and then disagrees, so *although* is not needed: *She may be young, but she learns fast.*",
    "*may … but* jau atzīst vienu un tad iebilst, tāpēc *although* nav vajadzīgs: *She may be young, but she learns fast.*")
+
+# teacher's tester, 23 November: *can* for what is generally true, *may* for a prediction about this case
+mc(T, L, 4, "Choose the correct option: The forecast says snow until April, so this winter ___ unusually long.", "may be",
+   ["can be", "is able to be", "may being"],
+   "A prediction about this particular winter: *may be*. *can be* is for what is generally or sometimes true (*Winters here can be very long*).",
+   "Prognoze par šo konkrēto ziemu: *may be*. *can be* ir par to, kas mēdz būt vispār (*Winters here can be very long*).")

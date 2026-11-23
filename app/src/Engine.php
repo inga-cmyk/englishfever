@@ -513,7 +513,7 @@ final class Engine
                     $ses['state']['probes'][$i]['served'] = true;
                     $ses['state']['probes'][$i]['item'] = $t['id'];
                     // why it was served, for the research export: the same grammar point, or a point it stands on
-                    if ($p['stage'] === 3) $ses['state']['why'][$t['id']] = 'needs_point';
+                    if ($p['stage'] === 3) $ses['state']['why'][$t['id']] = ($point !== null && Content::point($t) === $point) ? 'easier_same_point' : 'needs_point';   // C1: an easier task of the same point first (23 November)
                     elseif ($point !== null && Content::point($t) === $point) $ses['state']['why'][$t['id']] = 'same_point';
                     return $t;
                 }
@@ -534,8 +534,12 @@ final class Engine
         foreach ($st['last'] as $h) if ($h['correct'] && ($h['sc'] ?? 0) >= 1) $rightHere[$h['skill']] = true;   // a typed answer, not only a choice
         $bySkill = [];
         $paused = Reports::pausedIds(); // reported tasks wait until the teacher has decided
+        // the same sentence never twice in one session, also in another task (teacher, 23 November: the second time only memory is needed)
+        $usedSentence = [];
+        foreach ($st['served'] as $sid) { $si = Content::item($sid); if ($si) $usedSentence[Content::sentenceKey($si)] = true; }
         foreach (Content::items() as $it) {
             if (!in_array($it['skill'], $skills, true) || isset($served[$it['id']]) || isset($paused[$it['id']])) continue;
+            if (isset($usedSentence[Content::sentenceKey($it)])) continue;
             if ($placement && ($it['kind'] === 'write' || $it['bloom'] > 4 || Content::role($it) === 'learn' || !empty($it['practice_only']))) continue;
             if (($ses['source'] ?? '') === 'path_check' && Content::role($it) === 'learn') continue;   // a quick check asks only tasks that need the form   // the level test asks only tasks that need the form (teacher, 3 November)   // practice only: easy first steps and tasks a hint gives away
             // open writing (the least support) only after a right typed answer on that topic in this session (teacher's scaffolding rule)

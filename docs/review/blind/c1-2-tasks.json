@@ -1,0 +1,96 @@
+[
+ {
+  "id": "c1-2-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: So I ___ ___ in the queue at the bakery, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-2-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I was waiting for the bus when suddenly this car stops right in front of me.",
+   "We're having dinner when all the lights go out.",
+   "In the film, a retired teacher moves to Lisbon and opens a café.",
+   "So this man is walking into a café and he orders a glass of milk."
+  ]
+ },
+ {
+  "id": "c1-2-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-2-004",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "It says here the museum is free on Sundays.",
+   "I'm gathering you're looking for a new flat.",
+   "Anna tells me you've started running.",
+   "I hear the bridge will be closed all summer."
+  ]
+ },
+ {
+  "id": "c1-2-005",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'm wondering could you look at my CV before Friday.",
+   "We're hoping to move in by the end of May.",
+   "I was wondering if you were free on Thursday.",
+   "I wonder whether you'd mind helping me with this."
+  ]
+ },
+ {
+  "id": "c1-2-006",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "me",
+   "help",
+   "this",
+   "wondering",
+   "you",
+   "with",
+   "whether",
+   "I'm",
+   "could"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-2-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The app ___ to work on my phone. Can you check it? (not / appear)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-2-008",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My sister and her husband ___ their first baby in June. (expect)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-2-009",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'm not suggesting you were careless.",
+   "I'm promising I'll pay you back on Friday.",
+   "I suggest we meet at the station.",
+   "We regret that the flight has been cancelled."
+  ]
+ }
+]

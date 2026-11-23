@@ -1,0 +1,328 @@
+{
+ "c1-2-001": {
+  "hash": "8465245493d1461e",
+  "gate_key": "adv_present | C1 | gap | Write one word in each gap: So I ___ ___ in the queue at the bakery, and this woman suddenly ___ round and hands me her dog. (stand, turn) | ",
+  "src": "c1-pres-2.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "standing"
+    ],
+    [
+     "turns"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2158",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: So I ___ ___ in the queue at the bakery, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
+   "why": "In a story told in the present, the background is in the present continuous (*I'm standing in the queue*) and the main events in the present simple (*turns, hands*).",
+   "why_lv": "Stāstā tagadnē fons ir Present Continuous (*I'm standing in the queue*), bet *galvenie* notikumi Present Simple (*turns, hands*).",
+   "answers": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "standing"
+    ],
+    [
+     "turns"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:2"
+  }
+ },
+ "c1-2-002": {
+  "hash": "e96d6d201a9c694a",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.",
+  "src": "c1-pres-2.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "So this man is walking into a café and he orders a glass of milk.",
+   "wrong": [
+    "I was waiting for the bus when suddenly this car stops right in front of me.",
+    "We're having dinner when all the lights go out.",
+    "In the film, a retired teacher moves to Lisbon and opens a café."
+   ]
+  },
+  "item": {
+   "id": "c-2159",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "In a joke or a story told in the present, the main events are in the present simple: *So this man walks into a café and orders…* After a past background, a sudden event can be in the present simple (*I was waiting … when suddenly this car stops*): that is correct.",
+   "why_lv": "Jokā vai stāstā tagadnē *galvenie* notikumi ir Present Simple: *So this* man *walks into a caf*é *and orders*… Pēc pagātnes fona pēkšņs notikums var būt Present Simple (*I was waiting* … *when suddenly this car stops*): tas ir *pareizi*.",
+   "correct": "So this man is walking into a café and he orders a glass of milk.",
+   "wrong": [
+    "I was waiting for the bus when suddenly this car stops right in front of me.",
+    "We're having dinner when all the lights go out.",
+    "In the film, a retired teacher moves to Lisbon and opens a café."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-pres-2.csv:3"
+  }
+ },
+ "c1-2-003": {
+  "hash": "89827f5f9c03ecf3",
+  "gate_key": "adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | ",
+  "src": "c1-pres-2.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "passes"
+    ],
+    [
+     "shoots"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2160",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot)",
+   "why": "In a live commentary, quick actions that are over as you speak are in the present simple: *passes, shoots, scores*. *is passing* would describe a longer action in progress.",
+   "why_lv": "Tiešraides komentārā ātras darbības, kas beidzas runāšanas brīdī, ir Present Simple: *passes, shoots, scores*. *is passing* aprakstītu ilgāku darbību, kas vēl notiek.",
+   "answers": [
+    [
+     "passes"
+    ],
+    [
+     "shoots"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:4"
+  }
+ },
+ "c1-2-004": {
+  "hash": "ceac44e231007651",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.",
+  "src": "c1-pres-2.csv:5",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm gathering you're looking for a new flat.",
+   "wrong": [
+    "I hear the bridge will be closed all summer.",
+    "Anna tells me you've started running.",
+    "It says here the museum is free on Sundays."
+   ]
+  },
+  "item": {
+   "id": "c-2161",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "To pass on news we have heard or read, we use the present simple: *I gather, I hear, Anna tells me, It says here*. Not *I'm gathering*: *I gather you're looking for a new flat.*",
+   "why_lv": "Lai *nodotu* dzirdētu vai izlasītu ziņu, lieto Present Simple: *I gather, I hear, Anna tells me, It says here.* Nevis *I'm gathering*: *I gather you're looking for a new flat.*",
+   "correct": "I'm gathering you're looking for a new flat.",
+   "wrong": [
+    "I hear the bridge will be closed all summer.",
+    "Anna tells me you've started running.",
+    "It says here the museum is free on Sundays."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-pres-2.csv:5"
+  }
+ },
+ "c1-2-005": {
+  "hash": "50d29d21609ddbd6",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you look at my CV before Friday.",
+  "src": "c1-pres-2.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm wondering could you look at my CV before Friday.",
+   "wrong": [
+    "We're hoping to move in by the end of May.",
+    "I was wondering if you were free on Thursday.",
+    "I wonder whether you'd mind helping me with this."
+   ]
+  },
+  "item": {
+   "id": "c-2162",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After *I'm wondering*, the question becomes *if / whether* + statement order: *I'm wondering whether you could look at my CV.*",
+   "why_lv": "Aiz *I'm wondering* jautājums kļūst par *if / whether + apgalvojuma* vārdu secību: *I'm wondering whether you could look at my CV.*",
+   "correct": "I'm wondering could you look at my CV before Friday.",
+   "wrong": [
+    "We're hoping to move in by the end of May.",
+    "I was wondering if you were free on Thursday.",
+    "I wonder whether you'd mind helping me with this."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-pres-2.csv:6"
+  }
+ },
+ "c1-2-006": {
+  "hash": "7e1f997996c23716",
+  "gate_key": "adv_present | C1 | order | Put the words in order. | I'm wondering whether you could help me with this",
+  "src": "c1-pres-2.csv:7",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "I'm wondering whether you could help me with this",
+   "also": []
+  },
+  "item": {
+   "id": "c-2163",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A polite request: *I'm wondering whether* + statement order (*you could*), not question order (*could you*).",
+   "why_lv": "Pieklājīgs lūgums: *I'm wondering whether + apgalvojuma* vārdu secība (*you could*), nevis jautājuma secība (*could you*).",
+   "sentence": "I'm wondering whether you could help me with this",
+   "answers": [
+    [
+     "I'm wondering whether you could help me with this"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "c1-pres-2.csv:7"
+  }
+ },
+ "c1-2-007": {
+  "hash": "0894e0afab454c5f",
+  "gate_key": "adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | ",
+  "src": "c1-pres-2.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "doesn't appear",
+     "does not appear"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2164",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The app ___ to work on my phone. Can you check it? (not / appear)",
+   "why": "*appear* = seem is a state: present simple, *doesn't appear to work*. In the meaning *take part* it can be continuous (*She's appearing in a musical*).",
+   "why_lv": "*appear* = šķist ir stāvoklis: Present Simple, *doesn't appear to work*. Nozīmē piedalīties, uzstāties var būt Continuous forma (*She's appearing in a musical*).",
+   "answers": [
+    [
+     "doesn't appear",
+     "does not appear"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:8"
+  }
+ },
+ "c1-2-008": {
+  "hash": "90ebf676f0ff3959",
+  "gate_key": "adv_present | C1 | gap | My sister and her husband ___ their first baby in June. (expect) | ",
+  "src": "c1-pres-2.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are expecting",
+     "'re expecting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2165",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My sister and her husband ___ their first baby in June. (expect)",
+   "why": "*be expecting a baby* = she is pregnant, always continuous. In the meaning *think something will happen*, *expect* is simple (*I expect it will rain*).",
+   "why_lv": "*be expecting a baby = gaida* bērnu, vienmēr Continuous forma. Nozīmē domāt, ka kaut kas notiks *expect* ir vienkāršajā formā (*I expect it will rain*).",
+   "answers": [
+    [
+     "are expecting",
+     "'re expecting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:9"
+  }
+ },
+ "c1-2-009": {
+  "hash": "b6e4a8008996d578",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.",
+  "src": "c1-pres-2.csv:10",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I'm promising I'll pay you back on Friday.",
+   "wrong": [
+    "I suggest we meet at the station.",
+    "We regret that the flight has been cancelled.",
+    "I'm not suggesting you were careless."
+   ]
+  },
+  "item": {
+   "id": "c-2166",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "When saying the words is the act itself (promising, suggesting, regretting), use the present simple: *I promise I'll pay you back.* In the negative, *I'm not suggesting* is also correct.",
+   "why_lv": "Ja paši vārdi ir darbība (apsolīt, *ieteikt*, izteikt nožēlu), lieto Present Simple: *I promise I'll pay you back.* Noliegumā *pareizi* ir arī *I'm not suggesting.*",
+   "correct": "I'm promising I'll pay you back on Friday.",
+   "wrong": [
+    "I suggest we meet at the station.",
+    "We regret that the flight has been cancelled.",
+    "I'm not suggesting you were careless."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-pres-2.csv:10"
+  }
+ }
+}

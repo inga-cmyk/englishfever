@@ -534,5 +534,17 @@
    ],
    "src": "example"
   }
+ },
+ {
+  "what": "A rule card example that is a task's answer or wrong sentence (full C1 review, 23 November: all ten first C1 cards). Before a card goes in, compare every example with the tasks of its topic (ITEM-WRITING-RULES: a help card example is never a task's answer).",
+  "reader": true
+ },
+ {
+  "what": "Latvian words in an LV explanation marked as English because the file had no LV_BY_FILE entry (full C1 review, 23 November). Add the file's Latvian words to LV_BY_FILE in _src/lib.py and look at the CSV before it goes in.",
+  "reader": true
+ },
+ {
+  "what": "An explanation that quotes another sentence than its task (23 November: *This suitcase weighs 23 kilos* for a task about five kilos; *the tickets were cheap* for a task about rain). Read every explanation against its own task after changing a task.",
+  "reader": true
  }
 ]

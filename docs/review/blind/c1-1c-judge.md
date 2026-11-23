@@ -6,3 +6,5 @@
 - 005 kept: *don't usually drive* contradicts *Don't phone me then*.
 - 009: *Write to a customer:* removed (not needed). *are apologising* not accepted: when saying the words is the act, the present simple (Hewings unit 1 D).
 - 010 dropped: *has resigned* and *resigned* are also real headline forms.
+
+Note (23 November): rounds c1-1 and c1-1b were replaced by this version; their flags led to the rewrite and are answered here.

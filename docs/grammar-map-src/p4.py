@@ -300,3 +300,6 @@ for _p in _ALL:
 for _p in _ALL:
     if _p["area"].startswith("C1 · 5 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_can"]
     if _p["area"].startswith("C1 · 6 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_subj"]
+for _p in _ALL:
+    if _p["area"].startswith("C1 · 7 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_agree"]
+    if _p["area"].startswith("C1 · 8 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_prep"]

@@ -27,17 +27,18 @@ mc(T, L, 4, "Which sentence has a mistake?", "May the figures in the report be w
    "We don't ask about possibility with *May…?*: *Could the figures be wrong?* or *Are the figures likely to be wrong?*",
    "Par iespējamību nejautā ar *May…?*: *Could the figures be wrong?* vai *Are the figures likely to be wrong?*")
 # x_may_well
-gp(T, L, 4, "Write one word in each gap: The next bus is in an hour, so we ___ as ___ walk.", "might | may / well",
+mc(T, L, 4, "Choose the correct option: The next bus is in an hour, so we ___ walk.", "might as well",
+   ["might as good", "might so well", "had as well"],
    "*might / may as well* + base verb = it is the only sensible thing to do: *we might as well walk*.",
    "*might / may as well* + pamatforma = tas ir vienīgais saprātīgais: *we might as well walk*.")
 gp(T, L, 4, "You ___ me you were bringing five friends! I would have made more food. (might / warn)", "might have warned",
    "*You might have* + past participle: you should have done it (a reproach): *You might have warned me!*",
    "*You might have* + 3. forma: tev vajadzēja to izdarīt (pārmetums): *You might have warned me!*")
 # x_might_cont
-gp(T, L, 4, "This time next week I ___ on a beach in Crete. (may / lie)", "may be lying",
+gp(T, L, 4, "This time next week I ___ on a beach in Crete. (may / lie)", "may be lying | might be lying",
    "A possible activity at a future moment: *may be* + *-ing*, *I may be lying on a beach*.",
    "Iespējama darbība nākotnes brīdī: *may be* + *-ing*, *I may be lying on a beach*.")
-gp(T, L, 4, "He didn't sound serious about leaving. He ___ . (might / joke)", "might have been joking",
+gp(T, L, 4, "He didn't sound serious about leaving. He ___ . (might / joke)", "might have been joking | might have joked",
    "A possible activity in the past: *might have been* + *-ing*, *he might have been joking*.",
    "Iespējama darbība pagātnē: *might have been* + *-ing*, *he might have been joking*.")
 # x_can_typical

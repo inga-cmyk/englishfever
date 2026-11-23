@@ -1,0 +1,787 @@
+{
+ "c1-6-001": {
+  "hash": "609c6391f7044c77",
+  "gate_key": "adv_agree | C1 | gap | The number of applicants ___ fallen sharply this year. (have) | ",
+  "src": "c1-agree-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2149",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The number of applicants ___ fallen sharply this year. (have)",
+   "why": "*The number of* + plural noun takes a singular verb: the number is one thing. *The number of applicants has fallen.*",
+   "why_lv": "*The number of* + daudzskaitlis *prasa* darbības vārdu vienskaitlī: *skaitlis* ir viena *lieta*. *The number of applicants has fallen.*",
+   "answers": [
+    [
+     "has"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:2"
+  }
+ },
+ "c1-6-002": {
+  "hash": "dc9d0c95374febc8",
+  "gate_key": "adv_agree | C1 | gap | A number of applicants ___ already withdrawn. (have) | ",
+  "src": "c1-agree-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2150",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "A number of applicants ___ already withdrawn. (have)",
+   "why": "*A number of* = several, so the verb is plural: *A number of applicants have withdrawn.*",
+   "why_lv": "*A number of* = vairāki, tāpēc darbības vārds ir daudzskaitlī: *A number of applicants have withdrawn.*",
+   "answers": [
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:3"
+  }
+ },
+ "c1-6-003": {
+  "hash": "7101223241b8a18a",
+  "gate_key": "adv_agree | C1 | gap | The manager, together with two of her assistants, ___ coming to the meeting. (be) | ",
+  "src": "c1-agree-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2151",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The manager, together with two of her assistants, ___ coming to the meeting. (be)",
+   "why": "The main noun is *the manager*; a phrase with *together with* does not change the verb: *is coming*.",
+   "why_lv": "*Galvenais* lietvārds ir *the manager; izteiciens* ar *together with* darbības vārdu *nemaina*: *is coming*.",
+   "answers": [
+    [
+     "is"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:4"
+  }
+ },
+ "c1-6-004": {
+  "hash": "14bcd720199d4a06",
+  "gate_key": "adv_agree | C1 | gap | Politics ___ never interested me much. (have) | ",
+  "src": "c1-agree-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2152",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Politics ___ never interested me much. (have)",
+   "why": "*politics* ends in *-s* but takes a singular verb: *Politics has never interested me.*",
+   "why_lv": "*politics* beidzas ar *-s*, bet darbības vārds ir vienskaitlī: *Politics has never interested me.*",
+   "answers": [
+    [
+     "has"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:5"
+  }
+ },
+ "c1-6-005": {
+  "hash": "1fa2d779bb61d409",
+  "gate_key": "adv_agree | C1 | gap | The criteria for the award ___ changed this year. (have) | ",
+  "src": "c1-agree-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2153",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The criteria for the award ___ changed this year. (have)",
+   "why": "*criteria* is the plural of *criterion*: *The criteria have changed.*",
+   "why_lv": "*criteria* ir *criterion* daudzskaitlis: *The criteria have changed.*",
+   "answers": [
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:6"
+  }
+ },
+ "c1-6-006": {
+  "hash": "34f3a492aea8a52e",
+  "gate_key": "adv_agree | C1 | gap | Ten kilometres ___ a long way to walk in this heat. (be) | ",
+  "src": "c1-agree-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2154",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Ten kilometres ___ a long way to walk in this heat. (be)",
+   "why": "An amount seen as one distance takes a singular verb: *Ten kilometres is a long way.*",
+   "why_lv": "Daudzums, ko *uztver* kā vienu attālumu, *prasa vienskaitli*: *Ten kilometres is a long way.*",
+   "answers": [
+    [
+     "is"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:7"
+  }
+ },
+ "c1-6-007": {
+  "hash": "a3b37edf0c5419a4",
+  "gate_key": "adv_agree | C1 | mcq | Which sentence has a mistake? | Each of the rooms have its own bathroom.",
+  "src": "c1-agree-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Each of the rooms have its own bathroom.",
+   "wrong": [
+    "More than one guest has complained about the noise.",
+    "Neither of the answers is correct.",
+    "One in four adults has never been abroad."
+   ]
+  },
+  "item": {
+   "id": "c-2155",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*each of* + plural noun takes a singular verb: *Each of the rooms has its own bathroom* (*its* shows it too).",
+   "why_lv": "*each of* + daudzskaitlis *prasa* darbības vārdu vienskaitlī: *Each of the rooms has its own bathroom* (*to* rāda arī *its*).",
+   "correct": "Each of the rooms have its own bathroom.",
+   "wrong": [
+    "More than one guest has complained about the noise.",
+    "Neither of the answers is correct.",
+    "One in four adults has never been abroad."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-agree-1.csv:8"
+  }
+ },
+ "c1-6-008": {
+  "hash": "8a15c292acef9d01",
+  "gate_key": "adv_agree | C1 | gap | Either the manager or her assistants ___ going to call you back. (be) | ",
+  "src": "c1-agree-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2156",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Either the manager or her assistants ___ going to call you back. (be)",
+   "why": "After *either … or*, the verb agrees with the nearer noun: *her assistants are*.",
+   "why_lv": "Aiz *either* … *or* darbības vārds *saskan* ar tuvāko lietvārdu: *her assistants are*.",
+   "answers": [
+    [
+     "are"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:9"
+  }
+ },
+ "c1-6-009": {
+  "hash": "a9fba5834bb87f75",
+  "gate_key": "adv_agree | C1 | gap | Being late for every meeting ___ not going to help your career. (be) | ",
+  "src": "c1-agree-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2157",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Being late for every meeting ___ not going to help your career. (be)",
+   "why": "An *-ing* clause as the subject is singular, even if it contains a plural noun: *Being late for every meeting is…*",
+   "why_lv": "*-ing* palīgteikums kā teikuma priekšmets ir vienskaitlī, arī ja tajā ir daudzskaitlis: *Being late for every meeting is*…",
+   "answers": [
+    [
+     "is"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:10"
+  }
+ },
+ "c1-6-010": {
+  "hash": "5259969891ad821d",
+  "gate_key": "adv_agree | C1 | gap | After three days, the jury ___ still arguing among themselves. (be) | ",
+  "src": "c1-agree-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are",
+     "were"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2158",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "After three days, the jury ___ still arguing among themselves. (be)",
+   "why": "The jury as separate people (*among themselves*): plural verb, *are arguing*.",
+   "why_lv": "Žūrija kā atsevišķi cilvēki (*among themselves*): darbības vārds daudzskaitlī, *are arguing*.",
+   "answers": [
+    [
+     "are",
+     "were"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-agree-1.csv:11"
+  }
+ },
+ "c1-6-011": {
+  "hash": "b118e94d27f3703d",
+  "gate_key": "adv_can | C1 | mcq | Choose the correct option: The next bus is in an hour, so we ___ walk. | might as well",
+  "src": "c1-can-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "might as well",
+   "wrong": [
+    "might as good",
+    "might so well",
+    "had as well"
+   ]
+  },
+  "item": {
+   "id": "c-2163",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: The next bus is in an hour, so we ___ walk.",
+   "why": "*might / may as well* + base verb = it is the only sensible thing to do: *we might as well walk*.",
+   "why_lv": "*might / may as well* + pamatforma = tas ir vienīgais saprātīgais: *we might as well walk*.",
+   "correct": "might as well",
+   "wrong": [
+    "might as good",
+    "might so well",
+    "had as well"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:6"
+  }
+ },
+ "c1-6-012": {
+  "hash": "a9a3dc740772fce5",
+  "gate_key": "adv_prep | C1 | mcq | Which sentence has a mistake? | The colleague with who I share an office is on holiday.",
+  "src": "c1-prep-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "The colleague with who I share an office is on holiday.",
+   "wrong": [
+    "The colleague I share an office with is on holiday.",
+    "The person to whom the letter was addressed has moved.",
+    "That's the flat that we looked at yesterday."
+   ]
+  },
+  "item": {
+   "id": "c-2190",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "A preposition goes before *whom* or *which*, never before *who* or *that*: *the colleague with whom I share an office* (or *the colleague I share an office with*).",
+   "why_lv": "Prievārds stāv pirms *whom* vai *which*, nekad pirms *who* vai *that*: *the colleague with whom I share an office* (vai *the colleague I share an office with*).",
+   "correct": "The colleague with who I share an office is on holiday.",
+   "wrong": [
+    "The colleague I share an office with is on holiday.",
+    "The person to whom the letter was addressed has moved.",
+    "That's the flat that we looked at yesterday."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-prep-1.csv:2"
+  }
+ },
+ "c1-6-013": {
+  "hash": "59f0aea03eeafc01",
+  "gate_key": "adv_prep | C1 | gap | The report shows the extent ___ which prices have risen. | ",
+  "src": "c1-prep-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2191",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The report shows the extent ___ which prices have risen.",
+   "why": "A fixed formal phrase: *the extent to which*.",
+   "why_lv": "Nemainīgs oficiāls *izteiciens*: *the extent to which*.",
+   "answers": [
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-prep-1.csv:3"
+  }
+ },
+ "c1-6-014": {
+  "hash": "fd05d0efa8f929ab",
+  "gate_key": "adv_prep | C1 | gap | Nobody explained the basis ___ which the fee was calculated. | ",
+  "src": "c1-prep-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2192",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Nobody explained the basis ___ which the fee was calculated.",
+   "why": "A fixed formal phrase: *the basis on which*.",
+   "why_lv": "Nemainīgs oficiāls *izteiciens*: *the basis on which*.",
+   "answers": [
+    [
+     "on"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-prep-1.csv:4"
+  }
+ },
+ "c1-6-015": {
+  "hash": "764e79b50303a82d",
+  "gate_key": "adv_prep | C1 | gap | Write one word in each gap: We received three offers, none ___ ___ was acceptable. | ",
+  "src": "c1-prep-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "of"
+    ],
+    [
+     "which"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2193",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: We received three offers, none ___ ___ was acceptable.",
+   "why": "A number or quantity + *of which* for things: *none of which*, *most of which*, *both of which*.",
+   "why_lv": "*Skaits* vai daudzums + *of which* lietām: *none of which, most of which, both of which*.",
+   "answers": [
+    [
+     "of"
+    ],
+    [
+     "which"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-prep-1.csv:5"
+  }
+ },
+ "c1-6-016": {
+  "hash": "e147b2401d085909",
+  "gate_key": "adv_prep | C1 | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.",
+  "src": "c1-prep-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Your complaint is being looked by our team.",
+   "wrong": [
+    "He was accused of lying to the police.",
+    "The problem has been dealt with.",
+    "The plan was objected to by most residents."
+   ]
+  },
+  "item": {
+   "id": "c-2194",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "The preposition of the verb stays in the passive: *Your complaint is being looked into by our team.*",
+   "why_lv": "Darbības vārda prievārds paliek arī ciešamajā kārtā: *Your complaint is being looked into by our team.*",
+   "correct": "Your complaint is being looked by our team.",
+   "wrong": [
+    "He was accused of lying to the police.",
+    "The problem has been dealt with.",
+    "The plan was objected to by most residents."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-prep-1.csv:6"
+  }
+ },
+ "c1-6-017": {
+  "hash": "5237e893bfb79009",
+  "gate_key": "adv_prep | C1 | gap | I didn't know anyone at the party, so I had nobody to talk ___. | ",
+  "src": "c1-prep-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to",
+     "with"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2195",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I didn't know anyone at the party, so I had nobody to talk ___.",
+   "why": "The preposition stays at the end of the infinitive: *nobody to talk to*.",
+   "why_lv": "Prievārds paliek *nenoteiksmes* beigās: *nobody to talk to*.",
+   "answers": [
+    [
+     "to",
+     "with"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-prep-1.csv:7"
+  }
+ },
+ "c1-6-018": {
+  "hash": "c45fcc56b4d64c3c",
+  "gate_key": "adv_prep | C1 | mcq | Choose the correct option: The road was closed ___ repairing the bridge. | with a view to",
+  "src": "c1-prep-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "with a view to",
+   "wrong": [
+    "in order to",
+    "so as to",
+    "for the purpose to"
+   ]
+  },
+  "item": {
+   "id": "c-2196",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: The road was closed ___ repairing the bridge.",
+   "why": "*with a view to* + *-ing* (*to* here is a preposition): *with a view to repairing the bridge*.",
+   "why_lv": "*with a view to + -ing* (*to te* ir prievārds): *with a view to repairing the bridge*.",
+   "correct": "with a view to",
+   "wrong": [
+    "in order to",
+    "so as to",
+    "for the purpose to"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-prep-1.csv:8"
+  }
+ },
+ "c1-6-019": {
+  "hash": "280a978cd53f619d",
+  "gate_key": "adv_prep | C1 | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead.",
+  "src": "c1-prep-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Despite that it rained, the match went ahead.",
+   "wrong": [
+    "Everything depends on whether she signs.",
+    "I'm curious about how the app works.",
+    "In spite of the cold, we ate outside."
+   ]
+  },
+  "item": {
+   "id": "c-2197",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After a preposition, not a bare *that*-clause: *Despite the fact that it rained…* (or *Although it rained…*).",
+   "why_lv": "Aiz prievārda nelieto *tikai that-palīgteikumu*: *Despite the fact that the tickets were cheap*… (vai *Although the tickets were cheap*…).",
+   "correct": "Despite that it rained, the match went ahead.",
+   "wrong": [
+    "Everything depends on whether she signs.",
+    "I'm curious about how the app works.",
+    "In spite of the cold, we ate outside."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-prep-1.csv:9"
+  }
+ },
+ "c1-6-020": {
+  "hash": "d0833c5858cbd98f",
+  "gate_key": "adv_prep | C1 | gap | The heavy rain prevented us ___ leaving the house all weekend. | ",
+  "src": "c1-prep-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "from"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2198",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The heavy rain prevented us ___ leaving the house all weekend.",
+   "why": "*prevent* + object + *from* + *-ing*: *prevented us from leaving*.",
+   "why_lv": "*prevent* + papildinātājs + *from + -ing*: *prevented us from leaving*.",
+   "answers": [
+    [
+     "from"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-prep-1.csv:10"
+  }
+ },
+ "c1-6-021": {
+  "hash": "1514a556aee5ace8",
+  "gate_key": "adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than",
+  "src": "c1-prep-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "other than",
+   "wrong": [
+    "apart",
+    "besides of",
+    "in place of"
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: Nobody ___ the owner has a key to the safe.",
+   "why": "*other than* = except: *Nobody other than the owner has a key* (also *except*, *but*, *apart from*).",
+   "why_lv": "*other than* = izņemot: *Nobody other than the owner has a key* (arī *except, but, apart from*).",
+   "correct": "other than",
+   "wrong": [
+    "apart",
+    "besides of",
+    "in place of"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-prep-1.csv:11"
+  }
+ },
+ "c1-6-022": {
+  "hash": "8512a2f9ca23367a",
+  "gate_key": "adv_prep | C1 | gap | She has a real talent ___ explaining difficult ideas simply. | ",
+  "src": "c1-prep-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "for"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2200",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She has a real talent ___ explaining difficult ideas simply.",
+   "why": "*a talent for* + *-ing*: *a talent for explaining*.",
+   "why_lv": "*a talent for + -ing*: *a talent for explaining*.",
+   "answers": [
+    [
+     "for"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-prep-1.csv:12"
+  }
+ },
+ "c1-6-023": {
+  "hash": "8e04118b1da2a48e",
+  "gate_key": "adv_subj | C1 | gap | I'd rather you ___ me yesterday, before the meeting, not after it. (tell) | ",
+  "src": "c1-subj-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had told",
+     "'d told"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2223",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "I'd rather you ___ me yesterday, before the meeting, not after it. (tell)",
+   "why": "Something someone did in the past that you wish were different: *I'd rather you had told me.* *I'd rather you told me* is about now or later.",
+   "why_lv": "Kaut kas, ko kāds izdarīja pagātnē un ko gribētos citādi: *I'd rather you had told me.* *I'd rather you told me* ir par tagadni vai nākotni.",
+   "answers": [
+    [
+     "had told",
+     "'d told"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:7"
+  }
+ }
+}

@@ -1,0 +1,224 @@
+[
+{
+"id": "c1-5-001",
+"answer": "Last night the children could stay up until eleven.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: could vs was able to is a B1/B2 point, a B1 learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-002",
+"answer": "were able to",
+"other_correct": "",
+"wrong_options_that_fit": "could: only if read as 'we could (= were able to) find'; normally wrong for one successful event, but some would accept it",
+"instruction_problem": "",
+"level_problem": "Too easy for C1: could vs was able to is a B1/B2 point, a B1 learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-003",
+"answer": "The forms are able to be filled in online.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 at most; 'able to be + participle' for things is a B2 point.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-004",
+"answer": "May the figures in the report be wrong?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2, not really C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-005",
+"answer": [
+"may",
+"well"
+],
+"other_correct": [
+[
+"might",
+"well"
+],
+[
+"would",
+"soon"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint of meaning: 'would as soon walk' (= prefer to) is also correct English but a different meaning; the context (no bus) favours may/might as well.",
+"level_problem": "'may/might as well' is B1/B2, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-006",
+"answer": [
+"might have warned"
+],
+"other_correct": [
+[
+"could have warned"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue words (might / warn) give away the form; 'could have warned' would also be correct but cue says might.",
+"level_problem": "Might have + past participle for criticism is fine for B2/C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-007",
+"answer": [
+"may be lying"
+],
+"other_correct": [
+[
+"might be lying"
+],
+[
+"will be lying"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'will be lying' also fits if the cue is ignored; cue limits to may.",
+"level_problem": "B2 (future continuous with may); not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-008",
+"answer": [
+"might have been joking"
+],
+"other_correct": [
+[
+"might have joked"
+],
+[
+"may have been joking"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue allows only might, so may is excluded by instruction.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-009",
+"answer": "can be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2: can for general possibility is too easy for C1; wrong options are weak (can being is not English).",
+"sense_problem": ""
+},
+{
+"id": "c1-5-010",
+"answer": "The board demanded the director to resign.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-011",
+"answer": [
+"not be"
+],
+"other_correct": [
+[
+"should not be"
+],
+[
+"shouldn't be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-012",
+"answer": [
+"should say"
+],
+"other_correct": [
+[
+"said"
+],
+[
+"would say"
+],
+[
+"says"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Cue (should / say) gives the answer; 'said' without should is also correct English.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-013",
+"answer": [
+"were"
+],
+"other_correct": [
+[
+"was"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was to refuse' is also correct in informal English.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-014",
+"answer": "If the bank would refuse, we would sell the car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-015",
+"answer": [
+"told"
+],
+"other_correct": [
+[
+"had told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had told' also fits (past reference, 'before the meeting'); only context decides.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-016",
+"answer": "Be that as it may",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-017",
+"answer": "should need",
+"other_correct": "",
+"wrong_options_that_fit": "would need: marginal/American-like usage after 'in case'; will need is wrong in British English",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

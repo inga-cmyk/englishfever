@@ -11271,6 +11271,78 @@
     "signals": "*demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may*"
    },
    "card": "C1"
+  },
+  {
+   "id": "adv_agree",
+   "label": "Subject and verb: advanced rules",
+   "area": "active",
+   "levels": [
+    "C1"
+   ],
+   "rule": {
+    "form": [
+     "The main noun decides, not the words around it: *The manager, together with two assistants, is coming.* A clause as the subject is singular: *Being late for every meeting is not going to help.*",
+     "*The number of* + plural noun + singular verb; *a number of* + plural verb: *The number of applicants has fallen. A number of applicants have withdrawn.*",
+     "*each of / neither of* + singular verb in writing: *Each of the rooms has its own bathroom.* *either … or*: the nearer noun decides: *Either the manager or her assistants are going to call.*",
+     "Singular: *politics, economics, the news*; an amount as one thing: *Ten kilometres is a long way.* Plural: *criteria, phenomena*.",
+     "A group as its members: plural verb: *The jury are still arguing among themselves.*"
+    ],
+    "use": [
+     "Ask: what is the main noun? Is the group one unit or its members?"
+    ],
+    "signals": "*together with, as well as, the number of, a number of, each of, either … or, politics, criteria, ten kilometres*",
+    "example": "*The number of unread emails has reached 2,000. None of them is urgent.*"
+   },
+   "rule_lv": {
+    "form": [
+     "Izšķir *galvenais* lietvārds, nevis vārdi ap *to*: **The manager, together with two assistants, is coming*.* Palīgteikums kā teikuma priekšmets ir vienskaitlī: **Being late for every meeting is not going to help*.*",
+     "**The number of** + daudzskaitlis + darbības vārds vienskaitlī; **a number of** + daudzskaitlis: **The number of applicants has fallen.* *A number of applicants have withdrawn*.*",
+     "**each of / neither of** + vienskaitlis *rakstos*: **Each of the rooms has its own bathroom*.* **either* … *or**: izšķir tuvākais lietvārds: **Either the manager or her assistants are going to call*.*",
+     "Vienskaitlis: **politics, economics, the news**; daudzums kā viena *lieta*: **Ten kilometres is a long way*.* Daudzskaitlis: **criteria, phenomena**.",
+     "*Grupa* kā tās locekļi: daudzskaitlis: **The jury are still arguing among themselves*.*"
+    ],
+    "use": [
+     "Pajautā: kurš ir *galvenais* lietvārds? Vai *grupa* ir viena vienība vai tās locekļi?"
+    ],
+    "signals": "*together with, as well as, the number of, a number of, each of, either* … *or, politics, criteria, ten kilometres*"
+   },
+   "card": "C1"
+  },
+  {
+   "id": "adv_prep",
+   "label": "Prepositions: position and advanced patterns",
+   "area": "prepositions",
+   "levels": [
+    "C1"
+   ],
+   "rule": {
+    "form": [
+     "Formal: preposition + *whom / which*; everyday: the preposition at the end. Never before *who* or *that*: *the colleague with whom I share an office / the colleague I share an office with*.",
+     "Fixed formal phrases: *the extent to which, the basis on which, the way in which*. Numbers: *three offers, none of which was acceptable*.",
+     "The preposition stays after a passive or an infinitive: *Your complaint is being looked into. I had nobody to talk to.*",
+     "After a preposition: *-ing*, a *wh*-clause or *the fact that*, never a bare *that*-clause: *despite the fact that…, depends on whether…*",
+     "Multi-word prepositions: *with a view to + -ing, in the event of, regardless of, other than*."
+    ],
+    "use": [
+     "Check which preposition the noun or verb takes: *a talent for, prevent someone from*."
+    ],
+    "signals": "*whom, which, to which, on which, none of which, looked into, to talk to, with a view to, other than, despite the fact that*",
+    "example": "*This is the meeting in which nothing was decided.*"
+   },
+   "rule_lv": {
+    "form": [
+     "Oficiāli: prievārds + **whom / which**; ikdienā prievārds beigās. Nekad pirms **who** vai **that**: **the colleague with whom I share an office / the colleague I share an office with**.",
+     "Nemainīgi oficiāli *izteicieni*: **the extent to which, the basis on which, the way in which**. Ar skaitu: **three offers, none of which was acceptable**.",
+     "Prievārds paliek aiz ciešamās kārtas vai *nenoteiksmes*: **Your complaint is being looked into.* *I had nobody to talk to*.*",
+     "Aiz prievārda: **-ing**, **wh***-palīgteikums* vai **the fact that**, nekad tikai **that***-palīgteikums*: **despite the fact that*…, *depends on whether*…*",
+     "Vairākvārdu prievārdi: **with a view to + -ing, in the event of, regardless of, other than**."
+    ],
+    "use": [
+     "Pārbaudi, kādu prievārdu *prasa* lietvārds vai darbības vārds: **a talent for, prevent someone from**."
+    ],
+    "signals": "*whom, which, to which, on which, none of which, looked into, to talk to, with a view to, other than, despite the fact that*"
+   },
+   "card": "C1"
   }
  ],
  "bloom": {

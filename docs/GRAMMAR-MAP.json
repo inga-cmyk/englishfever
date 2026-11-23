@@ -10706,7 +10706,9 @@
    ],
    "typical_errors": "AGREE: *The cost of the repairs were higher; The manager, together with two assistants, are meeting the client; At the end of the corridor is two meeting rooms*",
    "sources": "AGU 40 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10732,7 +10734,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *Working night shifts affect your sleep; How they got in are unclear; The biggest cost are the salaries*",
    "sources": "AGU 40 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10758,7 +10762,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *the only teacher who run a club; one of the teachers who runs the club* in careful writing",
    "sources": "AGU 41 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10782,7 +10788,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *The police has closed the road; The jury has taken their seats* (singular and plural mixed)",
    "sources": "AGU 40, 42 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: B1 collective nouns",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10808,7 +10816,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *The number of applicants have fallen; A number of applicants has withdrawn; Each of the flats have a balcony; More than one flat have been sold; None of the luggage were lost*",
    "sources": "AGU 41 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: C1 either, neither + of + determiner with plural noun",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10833,7 +10843,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *Her patience and her humour makes her a good teacher; Every chair and table were sold; Neither the assistants nor the manager were there* (careful style: was)",
    "sources": "AGU 41 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: B2 neither … nor; C1 either … or",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10858,7 +10870,9 @@
    "leads_to": [],
    "typical_errors": "UNCOUNT: *The news are; Politics are a difficult subject; The Netherlands are a small country; The criteria is strict; This phenomena; This pair of glasses are new*",
    "sources": "AGU 40, 42 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: C1 uncountable nouns",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10882,7 +10896,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *Twenty euros are too much; Six kilometres are a long walk; A third of the flats is empty*",
    "sources": "AGU 42 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10907,7 +10923,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *There is several reasons* in an essay; *There are a lot of noise; There's two messages for you* in a formal email",
    "sources": "AGU 41, 95 · TE C1: Subject-verb agreement: advanced rules (page seen) · EGP: C1 question tags with there + be",
-   "topics": [],
+   "topics": [
+    "adv_agree"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10934,7 +10952,9 @@
    ],
    "typical_errors": "REL-ORDER: *the charity to that he left his money; the colleagues with who; the form in which I filled; the man who about I told you*",
    "sources": "AGU 55 · TE C1: Prepositions: position and advanced patterns (not in the part of the page seen) · EGP: B2 relative clauses: pronoun + preposition; C1 prepositions: formal · Gold C1 reference, Prepositions in relative clauses",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10959,7 +10979,9 @@
    "leads_to": [],
    "typical_errors": "*three offers, none of them was acceptable* (written as one sentence); *both of who; the name of that*",
    "sources": "AGU 55 · TE C1: Prepositions: position and advanced patterns (not in the part of the page seen) · EGP: C1 quantity pronouns with relative pronouns",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -10984,7 +11006,9 @@
    "leads_to": [],
    "typical_errors": "REL-ORDER: *the extent which prices have risen; the extent to that; the basis on what the fee was set; the way how it works*",
    "sources": "AGU 55 (these phrases are not in the unit text read) · TE C1: Prepositions: position and advanced patterns (page seen in part) · EGP: C1 prepositions: formal",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11010,7 +11034,9 @@
    "leads_to": [],
    "typical_errors": "DEP-PREP: *The complaint is being looked; The matter has been dealt; He was accused for lying; The plan was objected by two members*",
    "sources": "Murphy not in the AGU units read · TE C1: Prepositions: position and advanced patterns (page seen in part) · EGP: B2 prepositional verb, stranded preposition",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11036,7 +11062,9 @@
    "leads_to": [],
    "typical_errors": "DEP-PREP: *She has nobody to talk; We need a bigger table to work; This phone is easy to work with it; a room which to work in*",
    "sources": "Murphy not in the AGU units read · TE C1: Prepositions: position and advanced patterns (page seen in part) · EGP: A2-B1 preposition stranding",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11062,7 +11090,9 @@
    "leads_to": [],
    "typical_errors": "*with a view to repair the bridge; in the event of it rains; regardless the cost; in regard of your letter; by the means of*",
    "sources": "AGU 80, 81 (titles seen, text not read) · TE C1: Prepositions: position and advanced patterns (page seen in part) · EGP: B2 complex prepositions; C1 prepositions: formal",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11087,7 +11117,9 @@
    "leads_to": [],
    "typical_errors": "DEP-PREP: *I've never heard about this writer* (= of); *He threw the keys at me* meant kindly; *prevented us to leave; blamed me of the delay*",
    "sources": "AGU 92 (title seen, text not read) · TE C1: Prepositions: position and advanced patterns (not in the part of the page seen) · EGP: B2 verb + adverb + preposition; C2 phrasal-prepositional verbs with two objects",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11112,7 +11144,9 @@
    "leads_to": [],
    "typical_errors": "DEP-PREP: *the advantage to live centrally; an attempt of escaping; her talent in to explain; little hope to win*",
    "sources": "AGU 93 (title seen, text not read) · TE C1: Prepositions: position and advanced patterns (not in the part of the page seen) · EGP: B1 noun + prepositional phrases",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11138,7 +11172,9 @@
    "leads_to": [],
    "typical_errors": "CONTRAST: *despite that tickets were cheap; curious about that it works; depends on if she signs; because of the tickets were cheap*",
    "sources": "AGU 86 (if and whether: title seen); the rest from memory · TE C1: Prepositions: position and advanced patterns (not in the part of the page seen) · EGP: B2 preposition + wh- word",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11164,7 +11200,9 @@
    "leads_to": [],
    "typical_errors": "*Except Latvian, he speaks German* meaning in addition; *apart of; other from the owner; but the delay we would have caught it*",
    "sources": "AGU 91 (title seen, text not read) · TE C1: Prepositions: position and advanced patterns (page seen in part) (besides and but for are not on the page) · EGP: B2 complex prepositions; C1 prepositions: formal",
-   "topics": [],
+   "topics": [
+    "adv_prep"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,

@@ -3573,7 +3573,9 @@ return json_decode(<<<'EF_JSON_END'
 "agr_head"
 ],
 "name": "Long subjects: the main noun, together with …, a subject after the verb",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_clause": {
 "level": "C1",
@@ -3583,7 +3585,9 @@ return json_decode(<<<'EF_JSON_END'
 "cleft"
 ],
 "name": "A clause as the subject; the subject, not the complement, decides",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_rel": {
 "level": "C1",
@@ -3592,7 +3596,9 @@ return json_decode(<<<'EF_JSON_END'
 "agr_head"
 ],
 "name": "One of the teachers who run …; the only teacher who runs …",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_collective": {
 "level": "C1",
@@ -3600,7 +3606,9 @@ return json_decode(<<<'EF_JSON_END'
 "plural_only"
 ],
 "name": "Collective nouns: the jury has its … / have their …",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_quant": {
 "level": "C1",
@@ -3610,7 +3618,9 @@ return json_decode(<<<'EF_JSON_END'
 "no_none"
 ],
 "name": "Each of, none of, neither of; a number of / the number of; more than one; one in four",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_or_nor": {
 "level": "C1",
@@ -3619,7 +3629,9 @@ return json_decode(<<<'EF_JSON_END'
 "agr_basic"
 ],
 "name": "X and Y: two things or one; either … or, neither … nor: the nearest noun",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_s_nouns": {
 "level": "C1",
@@ -3628,7 +3640,9 @@ return json_decode(<<<'EF_JSON_END'
 "plural_only"
 ],
 "name": "Nouns with unexpected forms: politics is, the Netherlands is, this series is, the criteria are, a pair of glasses is",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_measure": {
 "level": "C1",
@@ -3636,7 +3650,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_agr_complex"
 ],
 "name": "Amounts, measurements, percentages and fractions",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_agr_there": {
 "level": "C1",
@@ -3645,7 +3661,9 @@ return json_decode(<<<'EF_JSON_END'
 "there_it_prep"
 ],
 "name": "There is / are with plurals; there's in speech",
-"topics": []
+"topics": [
+"adv_agree"
+]
 },
 "x_prep_whom": {
 "level": "C1",
@@ -3653,7 +3671,9 @@ return json_decode(<<<'EF_JSON_END'
 "rel_prep"
 ],
 "name": "Preposition + whom / which, or the preposition at the end",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_of_which": {
 "level": "C1",
@@ -3662,7 +3682,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_prep_whom"
 ],
 "name": "Of which, of whose, none / most / both of which",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_which_fixed": {
 "level": "C1",
@@ -3670,7 +3692,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_prep_whom"
 ],
 "name": "Formal noun + preposition + which: the extent to which, the basis on which, the way in which",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_passive": {
 "level": "C1",
@@ -3680,7 +3704,9 @@ return json_decode(<<<'EF_JSON_END'
 "rv_prep_ing"
 ],
 "name": "The preposition stays in the passive: looked into, dealt with, accused of, objected to by",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_inf": {
 "level": "C1",
@@ -3690,7 +3716,9 @@ return json_decode(<<<'EF_JSON_END'
 "indef_adj"
 ],
 "name": "A preposition at the end of an infinitive: nobody to talk to, easy to work with",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_multi": {
 "level": "C1",
@@ -3699,7 +3727,9 @@ return json_decode(<<<'EF_JSON_END'
 "because_of"
 ],
 "name": "Multi-word prepositions: with a view to, in the event of, by means of, regardless of, with regard to",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_verb": {
 "level": "C1",
@@ -3708,7 +3738,9 @@ return json_decode(<<<'EF_JSON_END'
 "rv_prep_ing"
 ],
 "name": "One verb, two prepositions, two meanings; verb + object + preposition",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_noun": {
 "level": "C1",
@@ -3717,7 +3749,9 @@ return json_decode(<<<'EF_JSON_END'
 "vp_prep_ing"
 ],
 "name": "Prepositions after nouns; noun + preposition + -ing or noun + to",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_fact": {
 "level": "C1",
@@ -3727,7 +3761,9 @@ return json_decode(<<<'EF_JSON_END'
 "vp_prep_ing"
 ],
 "name": "After a preposition: -ing, a wh-clause or the fact that, never a bare that-clause",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_prep_except": {
 "level": "C1",
@@ -3736,7 +3772,9 @@ return json_decode(<<<'EF_JSON_END'
 "dep_verb"
 ],
 "name": "Exception and alternative: apart from, except for, other than, in place of, besides, but for",
-"topics": []
+"topics": [
+"adv_prep"
+]
 },
 "x_part_subject": {
 "level": "C1",

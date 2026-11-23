@@ -1,0 +1,239 @@
+[
+{
+"id": "c1-5-001",
+"answer": "Last night the children could stay up until eleven.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2-level point (could vs was able to), fine for C1 only as a trap; no nuance of use.",
+"sense_problem": "Option 1 vs 4 differ only by habitual/specific time; some speakers accept 'could' for permission on one night, so D is arguable."
+},
+{
+"id": "c1-5-002",
+"answer": "were able to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B1/B2 point (could vs was able to, specific achievement); not really C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-003",
+"answer": "The forms are able to be filled in online.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 point; not nuance of use.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-004",
+"answer": "May the figures in the report be wrong?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 point.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-005",
+"answer": [
+"might",
+"well"
+],
+"other_correct": [
+[
+"may",
+"well"
+],
+[
+"could",
+"well"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'as ___ walk' strongly signals 'may/might as well'; could as well is less natural but possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-006",
+"answer": [
+"might have warned"
+],
+"other_correct": [
+[
+"could have warned"
+],
+[
+"might have told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(might / warn)' gives the form (might have + past participle) away; 'could have warned' also correct if hint ignored.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-007",
+"answer": [
+"may be lying"
+],
+"other_correct": [
+[
+"might be lying"
+],
+[
+"may well be lying"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint names the modal; 'might be lying' also correct. Hint 'may / lie' gives away the form.",
+"level_problem": "Future continuous + may is B1/B2; too easy for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-008",
+"answer": [
+"might have been joking"
+],
+"other_correct": [
+[
+"may have been joking"
+],
+[
+"might have joked"
+],
+[
+"may have joked"
+],
+[
+"could have been joking"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint gives the modal; 'might have joked' is less natural but correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-009",
+"answer": "can be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy for C1 (can for general possibility, B1); distractors are weak.",
+"sense_problem": "'can being' is an impossible string, not a believable mistake."
+},
+{
+"id": "c1-5-010",
+"answer": "The board demanded the director to resign.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'demand someone to' is a B1/B2 error; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-5-011",
+"answer": [
+"not be"
+],
+"other_correct": [
+[
+"should not be"
+],
+[
+"shouldn't be"
+],
+[
+"isn't"
+],
+[
+"is not"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(not / be)' gives the subjunctive away; 'should not be' is the British alternative; 'is not' is informal/non-standard after recommend.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-012",
+"answer": [
+"should say"
+],
+"other_correct": [
+[
+"should have said"
+],
+[
+"said"
+],
+[
+"would say"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint '(should / say)' gives the form away; 'said' is correct (It's odd that she said that) without the hint; 'should have said' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-013",
+"answer": [
+"were"
+],
+"other_correct": [
+[
+"was"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'If ... was to refuse' is correct but less formal.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-014",
+"answer": "If the bank would refuse, we would sell the car.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 level (would in if-clause).",
+"sense_problem": "Task 13 shares the same sentence; near-duplicate content."
+},
+{
+"id": "c1-5-015",
+"answer": [
+"told"
+],
+"other_correct": [
+[
+"had told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Time reference is ambiguous: 'told' (future/general) and 'had told' (past) both fit; 'before the meeting, not after it' does not decide.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-5-016",
+"answer": "Be that as it may",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Distractors 'Being that as it may', 'Be that as it is', 'Be it as that may' are not forms learners would write; random strings."
+},
+{
+"id": "c1-5-017",
+"answer": "should need",
+"other_correct": "",
+"wrong_options_that_fit": "will need (informal/non-standard 'in case you will need' is rare but some accept); would need is not correct.",
+"instruction_problem": "Natural everyday answer 'need' is not offered; 'in case you need' is the usual form.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

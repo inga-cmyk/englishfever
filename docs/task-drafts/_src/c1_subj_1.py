@@ -27,7 +27,7 @@ mc(T, L, 4, "Which sentence has a mistake?", "If the bank would refuse, we would
    "After *if*, not *would* for a condition: *If the bank refused / were to refuse, we would sell the car.*",
    "Aiz *if* nosacījumam nelieto *would*: *If the bank refused / were to refuse, we would sell the car.*")
 # x_rather_perf
-gp(T, L, 4, "I'd rather you ___ me before the meeting, not after it. (tell)", "had told | 'd told",
+gp(T, L, 4, "I'd rather you ___ me yesterday, before the meeting, not after it. (tell)", "had told | 'd told",
    "Something someone did in the past that you wish were different: *I'd rather you had told me.* *I'd rather you told me* is about now or later.",
    "Kaut kas, ko kāds izdarīja pagātnē un ko gribētos citādi: *I'd rather you had told me.* *I'd rather you told me* ir par tagadni vai nākotni.")
 # x_subj_fixed

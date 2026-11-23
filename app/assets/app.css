@@ -1033,3 +1033,8 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 
 .pover { margin: 10px 0 12px; }
 .pover-t { color: var(--text); margin-bottom: 6px; }
+
+/* the key noun of a sentence on a rule card ({{…}}): bold with a gold underline, apart from the green form (teacher, 23 November) */
+.hl-noun { font-weight: 650; border-bottom: 2px solid var(--gold-deep); padding-bottom: 1px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hl-noun { border-bottom-color: var(--gold); } }
+:root[data-theme="dark"] .hl-noun { border-bottom-color: var(--gold); }

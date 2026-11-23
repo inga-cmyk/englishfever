@@ -1728,7 +1728,17 @@
     String(t || '').split(/\[\[|\]\]/).forEach(function (part, i) {
       if (!part) return;
       if (i % 2) { var b = document.createElement('b'); b.className = 'hl'; b.textContent = part; frag.appendChild(b); }
-      else frag.appendChild(UI.rich(part));
+      else frag.appendChild(nounHl(part, function (x) { return UI.rich(x); }));
+    });
+    return frag;
+  }
+  /** {{word}} = the key noun of a sentence (e.g. the subject that decides the verb), marked apart from the green form (teacher, 23 November). */
+  function nounHl(t, plain) {
+    var frag = document.createDocumentFragment();
+    String(t || '').split(/\{\{|\}\}/).forEach(function (part, i) {
+      if (!part) return;
+      if (i % 2) { var s = document.createElement('span'); s.className = 'hl-noun'; s.textContent = part; frag.appendChild(s); }
+      else frag.appendChild(plain(part));
     });
     return frag;
   }
@@ -1799,7 +1809,7 @@
     var frag = document.createDocumentFragment();
     String(t || '').split(/\[\[|\]\]/).forEach(function (part, i) {
       if (!part) return;
-      if (i % 2) { var b = document.createElement('b'); b.className = 'bad-hl'; b.textContent = part; frag.appendChild(b); } else frag.appendChild(document.createTextNode(part));
+      if (i % 2) { var b = document.createElement('b'); b.className = 'bad-hl'; b.textContent = part; frag.appendChild(b); } else frag.appendChild(nounHl(part, function (x) { return document.createTextNode(x); }));
     });
     return frag;
   }

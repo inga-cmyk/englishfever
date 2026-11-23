@@ -1,0 +1,76 @@
+[
+{
+"id": "c1-2b-001",
+"answer": [
+"am",
+"standing",
+"turns"
+],
+"other_correct": [
+[
+"'m",
+"standing",
+"turns"
+],
+[
+"was",
+"standing",
+"turned"
+],
+[
+"stand",
+"",
+"turns"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Three gaps for two verbs, and the instruction says 'one word' but 'I'm' is one typed token; learner may type \"'m\". Hint (stand, turn) does not say which tense. Past-tense version (was standing / turned) is also correct English but clashes with the present opening 'I'm at the bakery'; list it.",
+"level_problem": "Narrative present is more B2 than C1; no C1 nuance, solvable by a B1/B2 learner.",
+"sense_problem": ""
+},
+{
+"id": "c1-2b-002",
+"answer": "So this man is walking into a café and he orders a glass of milk.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present continuous vs simple in anecdotes is B1/B2 form-focus, not C1 use/nuance.",
+"sense_problem": "Option 4 'is walking into a café and he orders' is believable but the others are all fine; a native might accept 'is walking into' in very casual telling, so the mistake is slightly arguable."
+},
+{
+"id": "c1-2b-003",
+"answer": [
+"doesn't appear"
+],
+"other_correct": [
+[
+"does not appear"
+],
+[
+"appears not"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(not / appear)' gives the negative and verb; only the tense/auxiliary is tested. 'appears not' (one gap, one word) is correct but formal.",
+"level_problem": "'appear to' with a negative is fine for C1 but the form is easy.",
+"sense_problem": ""
+},
+{
+"id": "c1-2b-004",
+"answer": [
+"are expecting"
+],
+"other_correct": [
+[
+"'re expecting"
+],
+[
+"will be expecting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Number of gaps/words not stated (one gap, two words); 'next month' makes present continuous obvious.",
+"level_problem": "Too easy for C1: present continuous for future arrangement is B1; a B1 learner can solve it.",
+"sense_problem": ""
+}
+]

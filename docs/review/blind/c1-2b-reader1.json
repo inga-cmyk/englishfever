@@ -1,0 +1,72 @@
+[
+{
+"id": "c1-2b-001",
+"answer": [
+"am",
+"standing",
+"turns"
+],
+"other_correct": [
+[
+"'m",
+"standing",
+"turns"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say the gaps are in the present (anecdote) tense; the learner must infer from 'So I'm at the bakery'. Gap count is unclear: 'I ___ ___' is two gaps, so 'I'm' (one typed word) vs 'am' needs a ruling. Fairly easy for C1 once the present is seen.",
+"level_problem": "Present-tense storytelling is a nice C1 point, but the sentence is simple vocabulary; a B1 learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-2b-002",
+"answer": "So this man is walking into a café and he orders a glass of milk.",
+"other_correct": "",
+"wrong_options_that_fit": "We're having dinner when all the lights go out. (continuous + 'when' + simple is correct in narration, and is also natural; if the key marks the 'is walking' one only, this one is a risk). The 'walking' sentence is also arguably fine: 'a man is walking into a café' is acceptable as a joke setup.",
+"instruction_problem": "No context says these are anecdote/joke narration, so several options can be defended.",
+"level_problem": "",
+"sense_problem": "The intended mistake (continuous instead of simple for a completed event in a story) is borderline, not a clear error; a learner could not tell which is wrong. 'We're having dinner when...' reads like a mistake to some, so the options are not clearly separable."
+},
+{
+"id": "c1-2b-003",
+"answer": [
+"doesn't appear"
+],
+"other_correct": [
+[
+"does not appear"
+],
+[
+"isn't appearing"
+],
+[
+"hasn't appeared"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Ambiguous: the verb hint '(not / appear)' gives no tense or meaning cue; 'doesn't appear to work' (seems not to) and 'isn't appearing' are both possible, and 'is not appearing to work' sounds odd. One gap but two words typed; say whether contractions are accepted. The sentence does not make clear that the point is state-vs-action use of 'appear'.",
+"level_problem": "'appear to' = 'seem to' is C1-ish, but the task as written could be solved at B1 with the simple present.",
+"sense_problem": "'isn't appearing to work' is a plausible learner error but is unnatural; the context does not force the simple form."
+},
+{
+"id": "c1-2b-004",
+"answer": [
+"are expecting"
+],
+"other_correct": [
+[
+"'re expecting"
+],
+[
+"will be expecting"
+],
+[
+"are going to expect"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Context ('next month') alone does not fix the tense; 'will be expecting' is also correct English (less natural for a future baby; fine for 'will be expecting a baby by then'). Simple 'expect' alone is wrong.",
+"level_problem": "'are expecting a baby' is B1 vocabulary and present continuous for future; too easy for C1.",
+"sense_problem": ""
+}
+]

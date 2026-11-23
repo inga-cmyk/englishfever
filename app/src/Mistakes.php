@@ -2,8 +2,8 @@
 // "Comeback": a learner's open mistakes, worked out from their own answers (no extra table, so past results are never touched).
 //
 // A mistake is a task answered wrongly. It is fixed when the learner later answers a similar task (same grammar point since 16 November, same topic, level within
-// one step, thinking level within one step, same construction for used to) correctly: a different sentence. The same task right again counts only on a later
-// day (the same day it is memory, not yet the rule). A task answered wrongly again after it was fixed becomes a mistake again.
+// one step, thinking level within one step, same construction for used to) correctly: a different sentence. The same task right again never fixes it
+// (teacher, 23 November: that is memory; until then it counted on a later day). A task answered wrongly again after it was fixed becomes a mistake again.
 // Placement mistakes above the level the test found are PARKED: they are not offered for Second Chance until the learner
 // practises that level (they mark the edge of the level, not a gap to fix first).
 // A fixed mistake is LOCKED IN when the learner answers another, different task of the same kind correctly on a later day.
@@ -42,13 +42,8 @@ final class Mistakes
                 }
                 continue;
             }
-            if (isset($open[$id]) && $open[$id]['day'] === $day) {   // the same sentence right again on the same day: memory, not yet fixed
-                $open[$id]['retried'] = true;
-                continue;
-            }
-            if (isset($open[$id])) {
-                $solid[$id] = ['item_id' => $id, 'skill' => $open[$id]['skill'], 'level' => $open[$id]['level'], 'bloom' => $open[$id]['bloom'], 'day' => $day, 'items' => [$id => 1]];
-                unset($open[$id]); $fixed++;
+            if (isset($open[$id])) {   // the same sentence right again, on any day: a repeat that helps to remember, not yet fixed (teacher, 23 November, option A:
+                $open[$id]['retried'] = true;   // a mistake is fixed only by a different task of the same grammar point)
                 continue;
             }
             // Second Chance knows which mistake the task stood for: that one is fixed

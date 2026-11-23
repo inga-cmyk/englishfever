@@ -126,6 +126,8 @@ pr = c.api("session/start", {"mode": "practice", "source": "path_check", "skills
 it = ITEMS[pr["item"]["id"]]
 c.api("session/answer", {"session_id": pr["session"]["id"], "item_id": it["id"], "answer": wrong(it), "time_ms": 1000})   # one mistake
 c.api("session/quit", {"session_id": pr["session"]["id"]})
+# the mistake was made "yesterday": its own sentence comes back in Second Chance only on another day (teacher, 23 November)
+db.execute("UPDATE attempts SET created_at = created_at - 86400 WHERE user_id = ?", (c.api("me")["user"]["id"],)); db.commit()
 cb = c.api("session/start", {"mode": "comeback"})
 check("Second Chance starts", cb["_status"] == 200, cb)
 n0 = cb["session"]["length"]; sid = cb["session"]["id"]; item = cb["item"]; flags = []; ids = []; i = 0

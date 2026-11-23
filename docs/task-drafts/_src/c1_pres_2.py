@@ -60,10 +60,7 @@ gp(T, L, 3, "My sister and her husband ___ their first baby next month. (expect)
    "(*I expect it will rain*).")
 
 # ── x_performative: saying it is doing it ──
-mc(T, L, 4, "Which sentence has a mistake?", "I'm promising I'll pay you back on Friday.",
-   ["I suggest we meet at the station.", "We regret that the flight has been cancelled.",
-    "I'm not suggesting you were careless."],
-   "When saying the words is the act itself (promising, suggesting, regretting), use the present simple: *I promise I'll pay you back.* "
-   "In the negative, *I'm not suggesting* is also correct.",
-   "Ja paši vārdi ir darbība (apsolīt, ieteikt, izteikt nožēlu), lieto Present Simple: *I promise I'll pay you back.* "
-   "Noliegumā pareizi ir arī *I'm not suggesting*.")
+mc(T, L, 4, "Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday.", "I promise",
+   ["I'm promising", "I'm going to promise", "I was promising"],
+   "When saying the words is the act itself, use the present simple: *I promise I'll pay you back.*",
+   "Ja paši vārdi ir darbība, lieto Present Simple: *I promise I'll pay you back.*")

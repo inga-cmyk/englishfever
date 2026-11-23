@@ -17367,7 +17367,7 @@
 "x_state_cont",
 "read"
 ],
-"adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.": [
+"adv_present | C1 | mcq | Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday. | I promise": [
 "x_performative",
 "read"
 ],
@@ -17663,7 +17663,7 @@
 "x_part_there",
 "read"
 ],
-"adv_part | C1 | gap | The river burst its banks, ___ the streets near the station. (flood) | ": [
+"adv_part | C1 | text | Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station. | ": [
 "x_part_result",
 "read"
 ],
@@ -17691,7 +17691,7 @@
 "x_inv_main",
 "read"
 ],
-"adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | ": [
+"adv_order | C1 | text | Start with *So loud*: The music was so loud that we couldn't hear each other. | ": [
 "x_inv_so",
 "read"
 ],
@@ -17815,7 +17815,7 @@
 "x_ppc_adv",
 "read"
 ],
-"adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ starting her own business. | with a view to": [
+"adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ her own business. | with a view to starting": [
 "x_prep_multi",
 "read"
 ],
@@ -17917,6 +17917,22 @@
 ],
 "adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ": [
 "x_should_react",
+"read"
+],
+"adv_agree | C1 | gap | The manager and two of her assistants ___ coming to the meeting. (be) | ": [
+"x_agr_complex",
+"read"
+],
+"adv_part | C1 | text | Start with *Having* and join the two sentences: We checked the train times. We left for the station. | ": [
+"x_part_having",
+"read"
+],
+"adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them more carefully. (keep) | ": [
+"x_unreal_past",
+"read"
+],
+"adv_perfect | C1 | gap | I ___ the bank all morning, but nobody's answering. (ring) | ": [
+"x_ppc_adv",
 "read"
 ]
 }

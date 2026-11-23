@@ -4179,7 +4179,7 @@ x_may_but,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:11,"adv_can | C1 | mcq | Wh
 x_inv_neg,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:2,adv_order | C1 | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | 
 x_inv_neg,C1,adv_order,C1,check,mcq,read,,c1-order-1.csv:3,adv_order | C1 | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.
 x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:4,adv_order | C1 | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | 
-x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:5,adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | 
+x_inv_so,C1,adv_order,C1,use,text,read,,c1-order-1.csv:5,adv_order | C1 | text | Start with *So loud*: The music was so loud that we couldn't hear each other. | 
 x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:6,"adv_order | C1 | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | "
 x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:7,"adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | "
 x_inv_place,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:8,"adv_order | C1 | gap | Just as we left the house, down ___ the rain. (come) | "
@@ -4193,7 +4193,7 @@ x_part_having,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:4,"adv_part | C1 | gap 
 x_part_ed,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:5,"adv_part | C1 | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | "
 x_part_with,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:6,"adv_part | C1 | gap | ___ prices going up every month, many families are struggling. | "
 x_part_there,C1,adv_part,C1,check,mcq,read,,c1-part-1.csv:7,"adv_part | C1 | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being"
-x_part_result,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:8,"adv_part | C1 | gap | The river burst its banks, ___ the streets near the station. (flood) | "
+x_part_result,C1,adv_part,C1,use,text,read,,c1-part-1.csv:8,adv_part | C1 | text | Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station. | 
 x_part_prep,C1,adv_part,C1,check,mcq,read,,c1-part-1.csv:9,"adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On"
 x_part_conj,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:10,adv_part | C1 | gap | Keep the jar in the fridge once ___. (open) | 
 x_part_comment,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:11,"adv_part | C1 | gap | ___ by the queue outside, the new café is very popular. (judge) | "
@@ -4225,7 +4225,7 @@ x_prep_which_fixed,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:3,adv_prep | C1 | 
 x_prep_which_fixed,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:4,adv_prep | C1 | gap | Nobody explained the basis ___ which the fee was calculated. | 
 x_prep_passive,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:5,adv_prep | C1 | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.
 x_prep_inf,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:6,"adv_prep | C1 | gap | I didn't know anyone at the party, so I had nobody to talk ___. | "
-x_prep_multi,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:7,adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ starting her own business. | with a view to
+x_prep_multi,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:7,adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ her own business. | with a view to starting
 x_prep_fact,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:8,"adv_prep | C1 | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead."
 x_prep_verb,C1,adv_prep,C1,use,gap,read,,c1-prep-1.csv:9,adv_prep | C1 | gap | The heavy rain prevented us ___ leaving the house all weekend. | 
 x_prep_except,C1,adv_prep,C1,check,mcq,read,,c1-prep-1.csv:10,adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than
@@ -4246,7 +4246,7 @@ x_i_hear,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:5,adv_present | C1 | mc
 x_polite_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:6,adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you check my CV.
 x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:7,adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | 
 x_state_cont,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:8,adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | 
-x_performative,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.
+x_performative,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:9,adv_present | C1 | mcq | Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday. | I promise
 x_subj_present,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:2,adv_subj | C1 | mcq | Which sentence has a mistake? | The board demanded the director to resign.
 x_subj_present,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:3,adv_subj | C1 | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | 
 x_should_react,C1,adv_subj,C1,check,gap,read,,c1-subj-1.csv:4,adv_subj | C1 | gap | It's odd that she ___ ___ ___ that. She's usually so polite. | 
@@ -4279,3 +4279,7 @@ x_prep_whom,C1,adv_prep,C1,use,text,read,,c1-prep-1.csv:12,adv_prep | C1 | text 
 x_prep_whom,C1,adv_prep,C1,use,text,read,,c1-prep-1.csv:13,adv_prep | C1 | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | 
 x_should_react,C1,adv_subj,C1,check,gap,read,,c1-subj-1.csv:4,adv_subj | C1 | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | 
 x_should_react,C1,adv_subj,C1,check,gap,read,,c1-subj-1.csv:13,adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | 
+x_agr_complex,C1,adv_agree,C1,use,gap,read,,c1-agree-1.csv:12,adv_agree | C1 | gap | The manager and two of her assistants ___ coming to the meeting. (be) | 
+x_part_having,C1,adv_part,C1,use,text,read,,c1-part-1.csv:12,adv_part | C1 | text | Start with *Having* and join the two sentences: We checked the train times. We left for the station. | 
+x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:12,adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them more carefully. (keep) | 
+x_ppc_adv,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:15,"adv_perfect | C1 | gap | I ___ the bank all morning, but nobody's answering. (ring) | "

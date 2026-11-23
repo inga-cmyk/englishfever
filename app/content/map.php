@@ -8154,7 +8154,7 @@ return json_decode(<<<'EF_JSON_END'
 "adv_order | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | ": "x_inv_neg",
 "adv_order | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.": "x_inv_neg",
 "adv_order | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | ": "x_inv_main",
-"adv_order | gap | So loud ___ the music that we couldn't hear each other. | ": "x_inv_so",
+"adv_order | text | Start with *So loud*: The music was so loud that we couldn't hear each other. | ": "x_inv_so",
 "adv_order | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | ": "x_inv_cond",
 "adv_order | text | Start with *Should*: If you need any help, please call reception. | ": "x_inv_cond",
 "adv_order | gap | Just as we left the house, down ___ the rain. (come) | ": "x_inv_place",
@@ -8168,7 +8168,7 @@ return json_decode(<<<'EF_JSON_END'
 "adv_part | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | ": "x_part_ed",
 "adv_part | gap | ___ prices going up every month, many families are struggling. | ": "x_part_with",
 "adv_part | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being": "x_part_there",
-"adv_part | gap | The river burst its banks, ___ the streets near the station. (flood) | ": "x_part_result",
+"adv_part | text | Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station. | ": "x_part_result",
 "adv_part | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On": "x_part_prep",
 "adv_part | gap | Keep the jar in the fridge once ___. (open) | ": "x_part_conj",
 "adv_part | gap | ___ by the queue outside, the new café is very popular. (judge) | ": "x_part_comment",
@@ -8200,7 +8200,7 @@ return json_decode(<<<'EF_JSON_END'
 "adv_prep | gap | Nobody explained the basis ___ which the fee was calculated. | ": "x_prep_which_fixed",
 "adv_prep | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.": "x_prep_passive",
 "adv_prep | gap | I didn't know anyone at the party, so I had nobody to talk ___. | ": "x_prep_inf",
-"adv_prep | mcq | Choose the correct option: She took a part-time job ___ starting her own business. | with a view to": "x_prep_multi",
+"adv_prep | mcq | Choose the correct option: She took a part-time job ___ her own business. | with a view to starting": "x_prep_multi",
 "adv_prep | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead.": "x_prep_fact",
 "adv_prep | gap | The heavy rain prevented us ___ leaving the house all weekend. | ": "x_prep_verb",
 "adv_prep | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than": "x_prep_except",
@@ -8221,7 +8221,7 @@ return json_decode(<<<'EF_JSON_END'
 "adv_present | mcq | Which sentence has a mistake? | I'm wondering could you check my CV.": "x_polite_cont",
 "adv_present | gap | The app ___ to work on my phone. Can you check it? (not / appear) | ": "x_state_cont",
 "adv_present | gap | My sister and her husband ___ their first baby next month. (expect) | ": "x_state_cont",
-"adv_present | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.": "x_performative",
+"adv_present | mcq | Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday. | I promise": "x_performative",
 "adv_subj | mcq | Which sentence has a mistake? | The board demanded the director to resign.": "x_subj_present",
 "adv_subj | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | ": "x_subj_present",
 "adv_subj | gap | It's odd that she ___ ___ ___ that. She's usually so polite. | ": "x_should_react",
@@ -8253,7 +8253,11 @@ return json_decode(<<<'EF_JSON_END'
 "adv_prep | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | ": "x_prep_whom",
 "adv_prep | text | Make it less formal. End the first part with *to*: The person to whom I spoke was very helpful. | ": "x_prep_whom",
 "adv_subj | gap | It's odd that she ___ ___ ___ that at yesterday's meeting. She's usually so polite. | ": "x_should_react",
-"adv_subj | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ": "x_should_react"
+"adv_subj | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ": "x_should_react",
+"adv_agree | gap | The manager and two of her assistants ___ coming to the meeting. (be) | ": "x_agr_complex",
+"adv_part | text | Start with *Having* and join the two sentences: We checked the train times. We left for the station. | ": "x_part_having",
+"adv_past | gap | I'm always losing receipts. I wish I ___ them more carefully. (keep) | ": "x_unreal_past",
+"adv_perfect | gap | I ___ the bank all morning, but nobody's answering. (ring) | ": "x_ppc_adv"
 }
 }
 EF_JSON_END

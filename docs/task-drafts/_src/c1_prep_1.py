@@ -27,10 +27,10 @@ gp(T, L, 3, "I didn't know anyone at the party, so I had nobody to talk ___.", "
    "The preposition stays at the end of the infinitive: *nobody to talk to*.",
    "Prievārds paliek nenoteiksmes beigās: *nobody to talk to*.")
 note('with :: Also correct (*talk with* is common in American English). :: Arī pareizi (*talk with* bieži lieto amerikāņu angļu valodā).')
-mc(T, L, 4, "Choose the correct option: She took a part-time job ___ starting her own business.", "with a view to",
-   ["in order to", "so as to", "for the purpose to"],
-   "*with a view to* + *-ing* (*to* here is a preposition): *with a view to starting her own business*.",
-   "*with a view to* + *-ing* (*to* te ir prievārds): *with a view to starting her own business*.")
+mc(T, L, 4, "Choose the correct option: She took a part-time job ___ her own business.", "with a view to starting",
+   ["with a view to start", "with a view of starting", "in view to starting"],
+   "The fixed phrase is *with a view to* + *-ing* (*to* here is a preposition): *with a view to starting her own business*.",
+   "Nemainīgais izteiciens ir *with a view to* + *-ing* (*to* te ir prievārds): *with a view to starting her own business*.")
 mc(T, L, 4, "Which sentence has a mistake?", "Despite that it rained, the match went ahead.",
    ["Everything depends on whether she signs.", "I'm curious about how the app works.",
     "In spite of the cold, we ate outside."],

@@ -1,6 +1,6 @@
 """C1 direction 9 (Advanced participle clauses), round 1 (23 November 2026). Hewings, Advanced Grammar in Use (3rd ed.),
 units 58-59; Murphy, English Grammar in Use, unit 68. Only places where one form is right."""
-from lib import gp, mc, note
+from lib import gp, mc, note, tx
 T = "Advanced participle clauses"
 L = "C1"
 
@@ -26,9 +26,10 @@ mc(T, L, 4, "Choose the correct option: ___ no questions, the chair closed the m
    ["Being there", "It being", "There were"],
    "*There being* + noun gives the reason in formal style: *There being no questions, the chair closed the meeting.*",
    "*There being* + lietvārds oficiālā stilā norāda iemeslu: *There being no questions, the chair closed the meeting.*")
-gp(T, L, 4, "The river burst its banks, ___ the streets near the station. (flood)", "flooding",
-   "An *-ing* clause after the main clause for its direct result: *…, flooding the streets.*",
-   "*-ing* teiciens aiz galvenā teikuma tiešam rezultātam: *…, flooding the streets.*")
+tx(T, L, 4, "Join the two sentences with an *-ing* form: The river burst its banks. It flooded the streets near the station.",
+   "The river burst its banks, flooding the streets near the station.",
+   "An *-ing* clause after the main clause for its direct result: *…, flooding the streets near the station.*",
+   "*-ing* daļa aiz galvenā teikuma tiešam rezultātam: *…, flooding the streets near the station.*")
 mc(T, L, 3, "Choose the correct option: ___ hearing the news, she burst into tears.", "On",
    ["In", "By", "Without"],
    "*On* + *-ing* = at the moment when: *On hearing the news* = when she heard the news.",
@@ -41,3 +42,9 @@ gp(T, L, 3, "___ by the queue outside, the new café is very popular. (judge)", 
    "A fixed comment phrase: *Judging by…* (it does not need the subject of the main clause).",
    "Nemainīgs komentāra izteiciens: *Judging by…* (tam nav vajadzīgs galvenā teikuma priekšmets).")
 note('Judged :: Also possible, but *Judging by* is the usual fixed phrase. :: Arī pareizi, bet parastais izteiciens ir *Judging by*.')
+
+# teacher's tester, 23 November: build the *having* clause yourself
+tx(T, L, 4, "Start with *Having* and join the two sentences: We checked the train times. We left for the station.",
+   "Having checked the train times, we left for the station.",
+   "*Having* + past participle when the first action was complete before the second: *Having checked the train times, we left…*",
+   "*Having* + 3. forma, ja pirmā darbība bija pabeigta pirms otrās: *Having checked the train times, we left…*")

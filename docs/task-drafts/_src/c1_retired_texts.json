@@ -14,10 +14,12 @@
  ],
  "c1-order-1.csv": [
   "Here ___ the bus! Quick, get your bag. (come)",
-  "Start with *What*: I need a long holiday."
+  "Start with *What*: I need a long holiday.",
+  "So loud ___ the music that we couldn't hear each other."
  ],
  "c1-part-1.csv": [
-  "Not ___ anyone in the city, he felt very lonely at first. (know)"
+  "Not ___ anyone in the city, he felt very lonely at first. (know)",
+  "The river burst its banks, ___ the streets near the station. (flood)"
  ],
  "c1-past-1.csv": [
   "I had wondered if you could check my report.",
@@ -36,7 +38,8 @@
   "having read"
  ],
  "c1-prep-1.csv": [
-  "Write one word in each gap: We received three offers, none ___ ___ was acceptable."
+  "Write one word in each gap: We received three offers, none ___ ___ was acceptable.",
+  "with a view to"
  ],
  "c1-pres-1.csv": [
   "Your friend changes the order for the third time: \"Actually, I'll have the fish, not the pasta.\" Complain, using *constantly* and *change your mind*."
@@ -47,7 +50,8 @@
   "My sister and her husband ___ their first baby in June. (expect)",
   "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot)",
   "Write one word in each gap: So I ___ ___ in the queue at the bakery, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
-  "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn)"
+  "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
+  "I'm promising I'll pay you back on Friday."
  ],
  "c1-subj-1.csv": [
   "I'd rather you ___ me before the meeting, not after it. (tell)",

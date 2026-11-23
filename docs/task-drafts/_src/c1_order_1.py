@@ -16,7 +16,8 @@ mc(T, L, 4, "Which sentence has a mistake?", "Never I have felt so tired in my l
 gp(T, L, 4, "Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice)", "did / notice",
    "*Not until* + first clause, then inversion in the second (with *did* for the past simple): *did we notice*.",
    "*Not until* + pirmā daļa, tad inversija otrajā (Past Simple ar *did*): *did we notice*.")
-gp(T, L, 3, "So loud ___ the music that we couldn't hear each other.", "was",
+tx(T, L, 4, "Start with *So loud*: The music was so loud that we couldn't hear each other.",
+   "So loud was the music that we couldn't hear each other. | So loud was the music that we could not hear each other.",
    "*So* + adjective at the start, then *be* before the subject: *So loud was the music that…*",
    "*So* + īpašības vārds sākumā, tad *be* pirms teikuma priekšmeta: *So loud was the music that…*")
 tx(T, L, 4, "Start with *Had*: If I had known about the traffic, I would have left earlier.",

@@ -36,3 +36,8 @@ gp(T, L, 4, "Being late for every meeting ___ not going to help your career. (be
 gp(T, L, 4, "After three days, the jury ___ still arguing among themselves. (be)", "are | were",
    "The jury as separate people (*among themselves*): plural verb, *are arguing*.",
    "Žūrija kā atsevišķi cilvēki (*among themselves*): darbības vārds daudzskaitlī, *are arguing*.")
+
+# teacher's tester, 23 November: *and* changes the verb, *together with* does not
+gp(T, L, 4, "The manager and two of her assistants ___ coming to the meeting. (be)", "are | were",
+   "With *and*, the subject is plural: *The manager and two of her assistants are coming.* With *together with*, it stays singular: *The manager, together with two of her assistants, is coming.*",
+   "Ar *and* teikuma priekšmets ir daudzskaitlī: *The manager and two of her assistants are coming.* Ar *together with* tas paliek vienskaitlī: *The manager, together with two of her assistants, is coming.*")

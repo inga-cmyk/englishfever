@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **C1 rule cards in the same layout as all other cards (teacher, 23 November):** the ten C1 cards had only the old text layout; now each has the Form · Example table, three typical mistakes, two or three *When we use it* blocks and *Watch out*, in English and Latvian (`app/authoring/cards2_c1.py`). `?v=190` so browsers load the new files.
 - **C1: every topic has 10 or more counted tasks (23 November):** 11 more tasks (blind round c1-9): *Advanced past* 11, *will, would, should* 11, *can, may, might* 10, *The subjunctive* 11, *Advanced word order* 11. Every C1 topic can now be *learned*. After uploading: *Prepared questions → Add all → Approve all*.
 - **Rule cards: a level picker (teacher, 23 November):** A2 · B1 · B2 · C1 at the top of *Rule cards*; the page shows the cards (and the *New* points) of the chosen level, starting at the learner's level, so the C1 cards show only at C1. Event `rules_level`.
 - **C1 topics only at C1 (teacher, 23 November):** on the Practice page the *New* group shows new topics only at the chosen level, so the C1 topics appear only when C1 is ticked (before, they showed at every level).

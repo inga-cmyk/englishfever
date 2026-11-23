@@ -4629,6 +4629,11 @@
 "round": "r20b-2",
 "task": "r20b-2-019"
 },
+"96ca93b27e1d76f2": {
+"gate_key": "adv_subj | C1 | gap | It's odd that she ___ ___ that whenever the topic comes up. She knows it isn't true. | ",
+"round": "c1-13",
+"task": "c1-13-001"
+},
 "971a07b98fba4b9f": {
 "gate_key": "ind_polite | B1.2 | text | Your colleague has a great new laptop bag, and you would like one like it. Ask her about the shop. Start with *Could you tell me where*. | ",
 "round": "r17",

@@ -131,7 +131,11 @@ check("drafts are not served to learners", not (served(student) & set(ids)))
 check("a student cannot approve", student.api("teacher/items-status", {"ids": ids, "status": "approved"})["_status"] == 403)
 check("a wrong status is refused", teacher.api("teacher/items-status", {"ids": ids, "status": "deleted"})["_status"] == 400)
 check("approve all", teacher.api("teacher/items-status", {"ids": ids, "status": "approved"})["changed"] == len(ids))
-check("approved tasks are served", set(ids) <= served(student), served(student))
+_all = set()
+for _ in range(10):   # the draft's tasks share a sentence, and a session serves a sentence once (23 November): look over several sessions
+    _all |= served(student)
+    if set(ids) <= _all: break
+check("approved tasks are served", set(ids) <= _all, _all)
 
 # grading each type with the real grader
 def answer_item(c, iid, ans, tries=12):

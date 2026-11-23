@@ -1,0 +1,236 @@
+[
+{
+"id": "c1-7-001",
+"answer": "might as well",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'might as well' is B1/B2, a bit low for C1",
+"sense_problem": ""
+},
+{
+"id": "c1-7-002",
+"answer": [
+"have",
+"seen"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Verbs given (have / see) reveal the form; 'Rarely' + inversion is the target, ok",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-003",
+"answer": "Never I have felt so tired in my life.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-004",
+"answer": [
+"did",
+"notice"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb given, only the form is tested",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-005",
+"answer": [
+"was"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-006",
+"answer": [
+"Had I known about the traffic, I would have left earlier."
+],
+"other_correct": [
+"Had I known about the traffic, I'd have left earlier."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Start word given, so the structure is named; pure transformation, mechanical",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-007",
+"answer": [
+"Should you need any help, please call reception."
+],
+"other_correct": [
+"Should you require any help, please call reception."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Start word given, so structure is named; 'require' is a changed word, not needed",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-008",
+"answer": [
+"comes"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'Here comes' is A2 vocabulary, a fixed phrase; not C1",
+"sense_problem": "Fixed phrase, not really inversion nuance"
+},
+{
+"id": "c1-7-009",
+"answer": [
+"What I need is a long holiday."
+],
+"other_correct": [
+"What I need is a long holiday!"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Ambiguous: 'What a long holiday I need!' also starts with What; instruction does not say it should keep the meaning or be a cleft sentence",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-010",
+"answer": [
+"as"
+],
+"other_correct": [
+[
+"though"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint that the structure is 'Adjective + as/though + clause'; 'though' is also correct (Cold though it was)",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-011",
+"answer": "Walking into the office, the lights were all off.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-012",
+"answer": [
+"Having"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-013",
+"answer": [
+"knowing"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-014",
+"answer": [
+"Stored"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Form is simple past participle; fairly easy for C1",
+"sense_problem": ""
+},
+{
+"id": "c1-7-015",
+"answer": [
+"With"
+],
+"other_correct": [
+[
+"Given"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No verb given; 'Given' is marginal/odd with a bare plural noun; 'What with' is two words",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-016",
+"answer": "There being",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-017",
+"answer": [
+"flooding"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 rather than C1",
+"sense_problem": ""
+},
+{
+"id": "c1-7-018",
+"answer": "On",
+"other_correct": "",
+"wrong_options_that_fit": "'At' is grammatical but rare/dated ('at hearing'); 'Upon' not offered",
+"instruction_problem": "",
+"level_problem": "Fixed phrase 'on + -ing', B2-ish",
+"sense_problem": ""
+},
+{
+"id": "c1-7-019",
+"answer": [
+"opened"
+],
+"other_correct": [
+[
+"open"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'once open' is also correct (common on labels), although given verb suggests 'opened'",
+"level_problem": "B2 level",
+"sense_problem": ""
+},
+{
+"id": "c1-7-020",
+"answer": [
+"Judging"
+],
+"other_correct": [
+[
+"Judged"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Judged by' is passive, less natural but grammatical"
+}
+]

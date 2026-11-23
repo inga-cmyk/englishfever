@@ -11228,7 +11228,9 @@
    ],
    "typical_errors": "*Opening the envelope, two tickets fell out; Having paid the bill, the waiter brought our coats; Walking home, it started to rain*",
    "sources": "AGU 58 · TE C1: Advanced participle clauses (page seen) · EGP: B2 -ing clause; C1 non-finite clauses · Gold C1 reference, Participle clauses",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11254,7 +11256,9 @@
    "leads_to": [],
    "typical_errors": "*Building in the 1930s, the bridge is still in use; Asking about the delay, the minister gave no answer* (he was asked)",
    "sources": "AGU 58 · TE C1: Advanced participle clauses (page seen) · EGP: C1 non-finite with -ed clauses, focus",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11281,7 +11285,9 @@
    ],
    "typical_errors": "*Having warned about the traffic, they left early* (they were warned); *Knowing not the area; Missing the last bus an hour earlier, we walked home*",
    "sources": "AGU 58 · TE C1: Advanced participle clauses (page seen) · EGP: C1 not + -ing clause; C2 non-finite perfect clauses · Gold C1 reference, Participle clauses",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11310,7 +11316,9 @@
    ],
    "typical_errors": "*Being the weather fine, we ate outside; The weather been fine; The last bus having went*",
    "sources": "AGU 58 · TE C1: Advanced participle clauses (page seen) · EGP: C1 non-finite clauses",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11335,7 +11343,9 @@
    "leads_to": [],
    "typical_errors": "*With prices go up; With going up, people are spending less* (no subject); *With the windows shutting, the room was stuffy* (a state needs shut)",
    "sources": "AGU 59 · TE C1: Advanced participle clauses (page seen) · EGP: C1 non-finite clauses",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11360,7 +11370,9 @@
    "leads_to": [],
    "typical_errors": "*Being there no questions; There having no questions; It being no questions, the chair closed the meeting*",
    "sources": "Murphy not in the AGU units read · TE C1: Advanced participle clauses (page seen) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11384,7 +11396,9 @@
    "leads_to": [],
    "typical_errors": "*Generally spoken; Judged by the queue, the film is popular; Speaking general*; takes *Judging by the queue, the film …* for a participle with the wrong subject",
    "sources": "Murphy not in the AGU units read · TE C1: Advanced participle clauses (page seen) · EGP: B1 discourse markers: adverbs, stance",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11409,7 +11423,9 @@
    "leads_to": [],
    "typical_errors": "*The river burst its banks, flooded the lower streets; …, what flooded the lower streets; …, having flooded the lower streets*",
    "sources": "AGU 58 (the result use is not in the unit text read) · TE C1: Advanced participle clauses (page seen) · EGP: B2 -ing clause",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11434,7 +11450,9 @@
    "leads_to": [],
    "typical_errors": "*On hear the alarm; By to book early; In booking early, we saved forty euros* (the method needs by); *Since changed jobs, I've slept better*",
    "sources": "AGU 59 · TE C1: Advanced participle clauses (page seen) · EGP: B1-B2 non-finite with -ing · Gold C1 reference, Other uses of participles",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11459,7 +11477,9 @@
    "leads_to": [],
    "typical_errors": "*When asking for his name, he said nothing* (he was asked); *If it possible; Though being exhausted they kept walking*",
    "sources": "AGU 59 · TE C1: Advanced participle clauses (page seen) · EGP: C1 non-finite after if; C2 non-finite after although, though",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11483,7 +11503,9 @@
    "leads_to": [],
    "typical_errors": "*The woman ringing this morning left a message; the candidates interviewing today* for those being interviewed",
    "sources": "from memory: the unit is not in the uploaded text · TE C1: Advanced participle clauses (page seen) (this point is not on the page) · EGP: B2 subordinated: non-finite with -ing; C1 passives: non-finite clauses",
-   "topics": [],
+   "topics": [
+    "adv_part"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11510,7 +11532,9 @@
    ],
    "typical_errors": "*Seldom we have had; Not only she won; No sooner we had arrived when; Under no circumstances you should leave the door open; Little they knew*",
    "sources": "AGU 100 · TE C1: Advanced word order (page seen) · EGP: C1 not only … but also with inversion; C2 inversion with hardly … when · Gold C1 reference, Emphasis with inversion (negative adverbs; restrictive words and expressions)",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11535,7 +11559,9 @@
    "leads_to": [],
    "typical_errors": "*Not until had the guests gone we noticed the stain; Only when the rain stops we can start*",
    "sources": "AGU 100 · TE C1: Advanced word order (page seen) · EGP: C2 present simple: inversion with only when",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11561,7 +11587,9 @@
    "leads_to": [],
    "typical_errors": "*So loud the music was that; Such the demand was that; nor she returned my call; neither she did*",
    "sources": "AGU 100 · TE C1: Advanced word order (page seen) · EGP: C2 negative clause + nor, focus",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11587,7 +11615,9 @@
    "leads_to": [],
    "typical_errors": "*Hadn't we left late, we would have caught it; Were the factory close; Had it not been the fog; But for the fog the flight would land on time* (about the past)",
    "sources": "AGU 99, 85 · TE C1: Advanced word order (page seen; this point is not on it) · EGP: C1 inverted conditional with should; C2 inverted past perfect; C2 were it not for; C2 had it not been for · Gold C1 reference, Conditionals: formal style",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 2,
@@ -11614,7 +11644,9 @@
    "leads_to": [],
    "typical_errors": "*Here comes it; Out did go the lights; Here our taxi comes* said as the announcement",
    "sources": "AGU 99 · TE C1: Advanced word order (page seen) · EGP: B1 fronting, adverbs; A2 fronting, prepositional phrases",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11639,7 +11671,9 @@
    "leads_to": [],
    "typical_errors": "*than do they* (no inversion with a pronoun); *as most of the capital did too* in a formal text where the inverted form is expected",
    "sources": "AGU 99 · TE C1: Advanced word order (page seen; this point is not on it) · EGP: not a separate EGP entry",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11664,7 +11698,9 @@
    "leads_to": [],
    "typical_errors": "*What he did was resigned; All what we need is; It was only when I saw the bill when I understood; The reason I called is because of*",
    "sources": "AGU 98 (title seen, text not read) · TE C1: Advanced word order (page seen) · EGP: C1 what cleft clause; C2 wh- cleft with how / why / where; C2 it cleft",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11692,7 +11728,9 @@
    ],
    "typical_errors": "*That offer I turned it down; That offer did I turn down at once* (no inversion here)",
    "sources": "Murphy not in the AGU units read · TE C1: Advanced word order (page seen) · EGP: C1 fronting: fixed expressions; C2 multiple fixed expressions",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11718,7 +11756,9 @@
    "leads_to": [],
    "typical_errors": "CONTRAST: *Cold though was it; Although cold it was; As much I like the idea; Try as she might, but she couldn't open it*",
    "sources": "AGU 82 (the unit is not in the uploaded text) · TE C1: Advanced word order (page seen) · EGP: C2 non-finite after although, though",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11744,7 +11784,9 @@
    "leads_to": [],
    "typical_errors": "AGREE: *Enclosed with this letter is two forms; Waiting at the door a courier was*",
    "sources": "Murphy not in the AGU units read · TE C1: Advanced word order (page seen) · EGP: C1 non-finite with -ed clauses, focus",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,
@@ -11768,7 +11810,9 @@
    "leads_to": [],
    "typical_errors": "*I even didn't know his name; She has only seen him once* written where *only once* is the focus; *Financial, it makes sense*",
    "sources": "AGU 74, 75, 77, 78 (titles seen, text not read) · TE C1: Advanced word order (page seen; this point is not on it) · EGP: C2 adverbs: mid position, distancing",
-   "topics": [],
+   "topics": [
+    "adv_order"
+   ],
    "card": "no",
    "tasks": {
     "check": 0,

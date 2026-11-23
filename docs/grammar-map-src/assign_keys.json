@@ -17406,5 +17406,313 @@
 "adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ": [
 "x_pastp_choice",
 "read"
+],
+"adv_perfect | C1 | gap | It's only ten o'clock, and I ___ three cups of coffee this morning. (drink) | ": [
+"x_pp_period",
+"read"
+],
+"adv_perfect | C1 | gap | It's six in the evening now. I ___ much this morning because the internet was down. (not / do) | ": [
+"x_pp_period",
+"read"
+],
+"adv_perfect | C1 | mcq | Choose the correct option: Since she ___ the team, sales have doubled. | joined": [
+"x_since_clause",
+"read"
+],
+"adv_perfect | C1 | gap | Have you made any friends since you ___ in this city? (live) | ": [
+"x_since_clause",
+"read"
+],
+"adv_perfect | C1 | gap | I'll text you the moment I ___ my exam results. (get) | ": [
+"x_time_perf",
+"read"
+],
+"adv_perfect | C1 | mcq | Which sentence has a mistake? | Once you paid, the order can't be changed.": [
+"x_time_perf",
+"read"
+],
+"adv_perfect | C1 | gap | This is the third time she ___ her keys this week! (lose) | ": [
+"x_first_time",
+"read"
+],
+"adv_perfect | C1 | mcq | Which sentence has a mistake? | This is the first time I am seeing snow.": [
+"x_first_time",
+"read"
+],
+"adv_perfect | C1 | gap | It's only eleven, and I ___ the bank four times. Nobody answers. (ring) | ": [
+"x_ppc_adv",
+"read"
+],
+"adv_perfect | C1 | mcq | Which sentence has a mistake? | I've been having this phone since May.": [
+"x_ppc_adv",
+"read"
+],
+"adv_perfect | C1 | gap | By next May I ___ at this school for ten years. (teach) | ": [
+"x_perf_cont_all",
+"read"
+],
+"adv_perfect | C1 | gap | The thief is thought ___ the country last week. (leave) | ": [
+"x_perf_aspect",
+"read"
+],
+"adv_perfect | C1 | mcq | Choose the correct option: She denied ___ the letter. | having read": [
+"x_perf_aspect",
+"read"
+],
+"adv_will | C1 | mcq | Which sentence has a mistake? | Last night he would cook dinner for all of us.": [
+"x_will_habit",
+"read"
+],
+"adv_will | C1 | mcq | Which sentence has a mistake? | The old factory would be next to the river.": [
+"x_will_habit",
+"read"
+],
+"adv_will | C1 | gap | I tried three times, but the printer ___ work this morning. (not / will) | ": [
+"x_wont_refuse",
+"read"
+],
+"adv_will | C1 | gap | Don't ring them now: they ___ lunch. (will / have) | ": [
+"x_will_assume",
+"read"
+],
+"adv_will | C1 | gap | It's nine o'clock. She ___ the news by now. (will / hear) | ": [
+"x_will_assume",
+"read"
+],
+"adv_will | C1 | gap | I ___ to your party, but nobody told me about it. (come) | ": [
+"x_would_have",
+"read"
+],
+"adv_will | C1 | gap | I sent it on Monday, so the parcel ___ by now. (should / arrive) | ": [
+"x_should_expect",
+"read"
+],
+"adv_will | C1 | mcq | Which sentence has a mistake? | Should you will change your mind, just call us.": [
+"x_if_will",
+"read"
+],
+"adv_will | C1 | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need": [
+"x_should_purpose",
+"read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | Last night the children could stay up until eleven.": [
+"x_allowed_once",
+"read"
+],
+"adv_can | C1 | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to": [
+"x_able_limits",
+"read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | The forms are able to be filled in online.": [
+"x_able_limits",
+"read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | May the figures in the report be wrong?": [
+"x_may_might",
+"read"
+],
+"adv_can | C1 | mcq | Choose the correct option: The next bus is in an hour, so we ___ walk. | might as well": [
+"x_may_well",
+"read"
+],
+"adv_can | C1 | gap | You ___ me you were bringing five friends! I would have made more food. (might / warn) | ": [
+"x_may_well",
+"read"
+],
+"adv_can | C1 | gap | This time next week I ___ on a beach in Crete. (may / lie) | ": [
+"x_might_cont",
+"read"
+],
+"adv_can | C1 | gap | He didn't sound serious about leaving. He ___ . (might / joke) | ": [
+"x_might_cont",
+"read"
+],
+"adv_can | C1 | mcq | Choose the correct option: Winters here ___ very long, so bring warm clothes. | can be": [
+"x_can_typical",
+"read"
+],
+"adv_subj | C1 | mcq | Which sentence has a mistake? | The board demanded the director to resign.": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | ": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | gap | It's odd that she ___ that. She's usually so polite. (should / say) | ": [
+"x_should_react",
+"read"
+],
+"adv_subj | C1 | gap | If the bank ___ to refuse the loan, we would sell the car. (be) | ": [
+"x_subj_were",
+"read"
+],
+"adv_subj | C1 | mcq | Which sentence has a mistake? | If the bank would refuse, we would sell the car.": [
+"x_subj_were",
+"read"
+],
+"adv_subj | C1 | gap | I'd rather you ___ me yesterday, before the meeting, not after it. (tell) | ": [
+"x_rather_perf",
+"read"
+],
+"adv_subj | C1 | mcq | Choose the correct option: The plan has its problems. ___, it's the best one we have. | Be that as it may": [
+"x_subj_fixed",
+"read"
+],
+"adv_agree | C1 | gap | The number of applicants ___ fallen sharply this year. (have) | ": [
+"x_agr_quant",
+"read"
+],
+"adv_agree | C1 | gap | A number of applicants ___ already withdrawn. (have) | ": [
+"x_agr_quant",
+"read"
+],
+"adv_agree | C1 | gap | The manager, together with two of her assistants, ___ coming to the meeting. (be) | ": [
+"x_agr_complex",
+"read"
+],
+"adv_agree | C1 | gap | Politics ___ never interested me much. (have) | ": [
+"x_agr_s_nouns",
+"read"
+],
+"adv_agree | C1 | gap | The criteria for the award ___ changed this year. (have) | ": [
+"x_agr_s_nouns",
+"read"
+],
+"adv_agree | C1 | gap | Ten kilometres ___ a long way to walk in this heat. (be) | ": [
+"x_agr_measure",
+"read"
+],
+"adv_agree | C1 | mcq | Which sentence has a mistake? | Each of the rooms have its own bathroom.": [
+"x_agr_quant",
+"read"
+],
+"adv_agree | C1 | gap | Either the manager or her assistants ___ going to call you back. (be) | ": [
+"x_agr_or_nor",
+"read"
+],
+"adv_agree | C1 | gap | Being late for every meeting ___ not going to help your career. (be) | ": [
+"x_agr_clause",
+"read"
+],
+"adv_agree | C1 | gap | After three days, the jury ___ still arguing among themselves. (be) | ": [
+"x_agr_collective",
+"read"
+],
+"adv_prep | C1 | mcq | Which sentence has a mistake? | The colleague with who I share an office is on holiday.": [
+"x_prep_whom",
+"read"
+],
+"adv_prep | C1 | gap | The report shows the extent ___ which prices have risen. | ": [
+"x_prep_which_fixed",
+"read"
+],
+"adv_prep | C1 | gap | Nobody explained the basis ___ which the fee was calculated. | ": [
+"x_prep_which_fixed",
+"read"
+],
+"adv_prep | C1 | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.": [
+"x_prep_passive",
+"read"
+],
+"adv_prep | C1 | gap | I didn't know anyone at the party, so I had nobody to talk ___. | ": [
+"x_prep_inf",
+"read"
+],
+"adv_prep | C1 | mcq | Choose the correct option: The road was closed ___ repairing the bridge. | with a view to": [
+"x_prep_multi",
+"read"
+],
+"adv_prep | C1 | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead.": [
+"x_prep_fact",
+"read"
+],
+"adv_prep | C1 | gap | The heavy rain prevented us ___ leaving the house all weekend. | ": [
+"x_prep_verb",
+"read"
+],
+"adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than": [
+"x_prep_except",
+"read"
+],
+"adv_prep | C1 | gap | She has a real talent ___ explaining difficult ideas simply. | ": [
+"x_prep_noun",
+"read"
+],
+"adv_part | C1 | mcq | Which sentence has a mistake? | Walking into the office, the lights were all off.": [
+"x_part_subject",
+"read"
+],
+"adv_part | C1 | gap | ___ finished the report, she went home early. (have) | ": [
+"x_part_having",
+"read"
+],
+"adv_part | C1 | gap | Not ___ anyone in the city, he felt very lonely at first. (know) | ": [
+"x_part_having",
+"read"
+],
+"adv_part | C1 | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | ": [
+"x_part_ed",
+"read"
+],
+"adv_part | C1 | gap | ___ prices going up every month, many families are struggling. | ": [
+"x_part_with",
+"read"
+],
+"adv_part | C1 | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being": [
+"x_part_there",
+"read"
+],
+"adv_part | C1 | gap | The river burst its banks, ___ the streets near the station. (flood) | ": [
+"x_part_result",
+"read"
+],
+"adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On": [
+"x_part_prep",
+"read"
+],
+"adv_part | C1 | gap | Keep the jar in the fridge once ___. (open) | ": [
+"x_part_conj",
+"read"
+],
+"adv_part | C1 | gap | ___ by the queue outside, the new café is very popular. (judge) | ": [
+"x_part_comment",
+"read"
+],
+"adv_order | C1 | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | ": [
+"x_inv_neg",
+"read"
+],
+"adv_order | C1 | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.": [
+"x_inv_neg",
+"read"
+],
+"adv_order | C1 | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | ": [
+"x_inv_main",
+"read"
+],
+"adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | ": [
+"x_inv_so",
+"read"
+],
+"adv_order | C1 | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | ": [
+"x_inv_cond",
+"read"
+],
+"adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | ": [
+"x_inv_cond",
+"read"
+],
+"adv_order | C1 | gap | Here ___ the bus! Quick, get your bag. (come) | ": [
+"x_inv_place",
+"read"
+],
+"adv_order | C1 | text | Start with *What*: I need a long holiday. | ": [
+"x_cleft_adv",
+"read"
+],
+"adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | ": [
+"x_front_as",
+"read"
 ]
 }

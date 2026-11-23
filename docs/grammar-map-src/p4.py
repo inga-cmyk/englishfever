@@ -303,3 +303,6 @@ for _p in _ALL:
 for _p in _ALL:
     if _p["area"].startswith("C1 · 7 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_agree"]
     if _p["area"].startswith("C1 · 8 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_prep"]
+for _p in _ALL:
+    if _p["area"].startswith("C1 · 9 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_part"]
+    if _p["area"].startswith("C1 · 10 ") and _p["topics"] == ["new"]: _p["topics"] = ["adv_order"]

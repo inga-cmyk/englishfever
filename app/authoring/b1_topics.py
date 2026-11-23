@@ -824,3 +824,52 @@ LV_CARDS.update({
         "signals": "whom, which, to which, on which, none of which, looked into, to talk to, with a view to, other than, despite the fact that",
     },
 })
+
+# ───────── C1 directions 9 and 10 (23 November): Hewings, Advanced Grammar in Use, units 58-59, 98-100 ─────────
+SKILLS_NEW.append(("adv_part", "Advanced participle clauses", "clauses", ["C1"]))   # area: agent proposal (23 November)
+SKILLS_NEW.append(("adv_order", "Advanced word order: inversion and fronting", "clauses", ["C1"]))   # area: agent proposal (23 November)
+ABBR_NEW.update({"adv_part": "apt", "adv_order": "aor2"})
+CARDS.update({
+    "adv_part": {
+        "form": ["The participle clause has the same subject as the main clause: *Opening the door, she saw the cat.* Not *Walking into the office, the lights were off.*",
+                 "*Having* + past participle for an earlier action or a cause: *Having finished the report, she went home.* *Not* goes first: *Not knowing anyone, he felt lonely.*",
+                 "Past participle for a passive meaning: *Stored in a dry place, the seeds keep for years. Keep refrigerated once opened.*",
+                 "With its own subject: *With prices going up, many families are struggling. There being no questions, the chair closed the meeting.*",
+                 "After the main clause, for the result: *The river burst its banks, flooding the streets.*",
+                 "*on* + *-ing* = when (*On hearing the news…*), *in* + *-ing* = while doing, *by* + *-ing* = the method (*by booking early*), *without* + *-ing* = not doing (*without locking the door*)."],
+        "use": ["Fixed phrases that comment on the whole sentence: *Judging by the queue…, Generally speaking…, Considering the price…*"],
+        "signals": "*having, not knowing, once opened, with, there being, on hearing, judging by*",
+        "example": "*Having eaten the whole pizza, I started my diet.*",
+    },
+    "adv_order": {
+        "form": ["After a negative or limiting word at the start, the helping verb comes before the subject: *Rarely have I seen such a sunset. Never have I felt so tired. No sooner had she arrived than it rained.*",
+                 "*Not until / Only when* + first clause, then inversion in the second: *Not until the guests had gone did we notice the stain.*",
+                 "*So* + adjective + *be* + subject: *So loud was the music that we couldn't talk.*",
+                 "Conditions without *if*: *Had I known…, Should you need anything…, Were the bank to refuse…*",
+                 "*Here comes the bus!*; *What I need is a holiday.*; *Cold though it was, we went for a swim.*"],
+        "use": ["Formal and emphatic style: speeches, reports, stories."],
+        "signals": "*never, rarely, hardly, no sooner, not until, only when, so … that, had, should, what … is, though*",
+        "example": "*Never have I regretted a nap.*",
+    },
+})
+LV_CARDS.update({
+    "adv_part": {
+        "form": ["Divdabja teicienam ir tas pats teikuma priekšmets, kas galvenajam teikumam: *Opening the door, she saw the cat.* Nevis *Walking into the office, the lights were off.*",
+                 "*Having* + 3. forma agrākai darbībai vai cēlonim: *Having finished the report, she went home.* *Not* stāv pirmais: *Not knowing anyone, he felt lonely.*",
+                 "3. forma ciešamās kārtas nozīmei: *Stored in a dry place, the seeds keep for years. Keep refrigerated once opened.*",
+                 "Ar savu teikuma priekšmetu: *With prices going up, many families are struggling. There being no questions, the chair closed the meeting.*",
+                 "Aiz galvenā teikuma, rezultātam: *The river burst its banks, flooding the streets.*",
+                 "*on* + *-ing* = kad (*On hearing the news…*), *in* + *-ing* = darot, *by* + *-ing* = veids (*by booking early*), *without* + *-ing* = nedarot (*without locking the door*)."],
+        "use": ["Nemainīgi izteicieni, kas komentē visu teikumu: *Judging by the queue…, Generally speaking…, Considering the price…*"],
+        "signals": "having, not knowing, once opened, with, there being, on hearing, judging by",
+    },
+    "adv_order": {
+        "form": ["Pēc nolieguma vai ierobežojoša vārda teikuma sākumā palīgdarbības vārds stāv pirms teikuma priekšmeta: *Rarely have I seen such a sunset. Never have I felt so tired. No sooner had she arrived than it rained.*",
+                 "*Not until / Only when* + pirmā daļa, tad inversija otrajā: *Not until the guests had gone did we notice the stain.*",
+                 "*So* + īpašības vārds + *be* + teikuma priekšmets: *So loud was the music that we couldn't talk.*",
+                 "Nosacījumi bez *if*: *Had I known…, Should you need anything…, Were the bank to refuse…*",
+                 "*Here comes the bus!*; *What I need is a holiday.*; *Cold though it was, we went for a swim.*"],
+        "use": ["Oficiāls un uzsvērts stils: runas, ziņojumi, stāsti."],
+        "signals": "never, rarely, hardly, no sooner, not until, only when, so … that, had, should, what … is, though",
+    },
+})

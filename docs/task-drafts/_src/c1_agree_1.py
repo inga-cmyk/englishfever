@@ -4,22 +4,22 @@ from lib import gp, mc
 T = "Subject and verb: advanced rules"
 L = "C1"
 
-gp(T, L, 3, "The number of applicants ___ fallen sharply this year. (have)", "has",
+gp(T, L, 3, "The number of applicants ___ fallen sharply this year. (have)", "has | had",
    "*The number of* + plural noun takes a singular verb: the number is one thing. *The number of applicants has fallen.*",
    "*The number of* + daudzskaitlis prasa darbības vārdu vienskaitlī: skaitlis ir viena lieta. *The number of applicants has fallen.*")
-gp(T, L, 3, "A number of applicants ___ already withdrawn. (have)", "have",
+gp(T, L, 3, "A number of applicants ___ already withdrawn. (have)", "have | had",
    "*A number of* = several, so the verb is plural: *A number of applicants have withdrawn.*",
    "*A number of* = vairāki, tāpēc darbības vārds ir daudzskaitlī: *A number of applicants have withdrawn.*")
-gp(T, L, 4, "The manager, together with two of her assistants, ___ coming to the meeting. (be)", "is",
+gp(T, L, 4, "The manager, together with two of her assistants, ___ coming to the meeting. (be)", "is | 's | was",
    "The main noun is *the manager*; a phrase with *together with* does not change the verb: *is coming*.",
    "Galvenais lietvārds ir *the manager*; izteiciens ar *together with* darbības vārdu nemaina: *is coming*.")
-gp(T, L, 3, "Politics ___ never interested me much. (have)", "has",
+gp(T, L, 3, "Politics ___ never interested me much. (have)", "has | had",
    "*politics* ends in *-s* but takes a singular verb: *Politics has never interested me.*",
    "*politics* beidzas ar *-s*, bet darbības vārds ir vienskaitlī: *Politics has never interested me.*")
-gp(T, L, 3, "The criteria for the award ___ changed this year. (have)", "have",
+gp(T, L, 3, "The criteria for the award ___ changed this year. (have)", "have | had",
    "*criteria* is the plural of *criterion*: *The criteria have changed.*",
    "*criteria* ir *criterion* daudzskaitlis: *The criteria have changed.*")
-gp(T, L, 3, "Ten kilometres ___ a long way to walk in this heat. (be)", "is",
+gp(T, L, 3, "Ten kilometres ___ a long way to walk in this heat. (be)", "is | 's | was",
    "An amount seen as one distance takes a singular verb: *Ten kilometres is a long way.*",
    "Daudzums, ko uztver kā vienu attālumu, prasa vienskaitli: *Ten kilometres is a long way.*")
 mc(T, L, 4, "Which sentence has a mistake?", "Each of the rooms have its own bathroom.",
@@ -27,10 +27,10 @@ mc(T, L, 4, "Which sentence has a mistake?", "Each of the rooms have its own bat
     "One in four adults has never been abroad."],
    "*each of* + plural noun takes a singular verb: *Each of the rooms has its own bathroom* (*its* shows it too).",
    "*each of* + daudzskaitlis prasa darbības vārdu vienskaitlī: *Each of the rooms has its own bathroom* (to rāda arī *its*).")
-gp(T, L, 4, "Either the manager or her assistants ___ going to call you back. (be)", "are",
+gp(T, L, 4, "Either the manager or her assistants ___ going to call you back. (be)", "are | were",
    "After *either … or*, the verb agrees with the nearer noun: *her assistants are*.",
    "Aiz *either … or* darbības vārds saskan ar tuvāko lietvārdu: *her assistants are*.")
-gp(T, L, 4, "Being late for every meeting ___ not going to help your career. (be)", "is",
+gp(T, L, 4, "Being late for every meeting ___ not going to help your career. (be)", "is | 's | was",
    "An *-ing* clause as the subject is singular, even if it contains a plural noun: *Being late for every meeting is…*",
    "*-ing* palīgteikums kā teikuma priekšmets ir vienskaitlī, arī ja tajā ir daudzskaitlis: *Being late for every meeting is…*")
 gp(T, L, 4, "After three days, the jury ___ still arguing among themselves. (be)", "are | were",

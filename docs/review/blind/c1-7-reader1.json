@@ -1,0 +1,238 @@
+[
+{
+"id": "c1-7-001",
+"answer": "might as well",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-002",
+"answer": [
+"have",
+"seen"
+],
+"other_correct": [
+[
+"did",
+"see"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "(have / see) allows 'did I see' too (correct, slightly less common than 'have I seen'); fix by giving the form or context.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-003",
+"answer": "Never I have felt so tired in my life.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-004",
+"answer": [
+"did",
+"notice"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-005",
+"answer": [
+"was"
+],
+"other_correct": [
+[
+"had been"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No verb given: 'had been' also fits (less natural). No 'one word' hint on the instruction line.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-006",
+"answer": "had i known about the traffic, i would have left earlier.",
+"other_correct": [
+"Had I known about the traffic, I'd have left earlier.",
+"Had I known about the traffic, I would've left earlier."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-007",
+"answer": "should you need any help, please call reception.",
+"other_correct": [
+"Should you need any help, call reception."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Learner may drop 'please' or change words; fine. Slightly easy if 'Should' is the only change.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-008",
+"answer": [
+"comes"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Very easy and a fixed A2 pattern; the (come) hint plus 'Here' gives it away.",
+"level_problem": "Too easy for C1 (A2/B1 level).",
+"sense_problem": ""
+},
+{
+"id": "c1-7-009",
+"answer": "What I need is a long holiday.",
+"other_correct": [
+"What I need is a long holiday",
+"What I need is to have a long holiday",
+"What I need's a long holiday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction only says 'Start with What': many acceptable sentences (holiday/break, to have); unclear what is wanted. American 'vacation' also correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-010",
+"answer": [
+"as"
+],
+"other_correct": [
+[
+"though"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Cold though it was' is equally correct (and common); only 'although' is wrong.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-011",
+"answer": "Walking into the office, the lights were all off.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-012",
+"answer": [
+"Having"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "The hint (have) nearly gives the form away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-013",
+"answer": [
+"knowing"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-014",
+"answer": [
+"Stored"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-015",
+"answer": [
+"With"
+],
+"other_correct": [
+[
+"Given"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint word: 'Given prices going up' is marginally possible but less natural; 'With' is the intended one. Open-ended, hard to guess the target.",
+"level_problem": "",
+"sense_problem": "Meaning of 'With + noun + -ing' is hard to infer without a hint."
+},
+{
+"id": "c1-7-016",
+"answer": "There being",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-017",
+"answer": [
+"flooding"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-018",
+"answer": "On",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-019",
+"answer": [
+"opened"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-7-020",
+"answer": [
+"Judging"
+],
+"other_correct": [
+[
+"Judged"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Judged by the queue' is also correct English (less idiomatic than 'Judging by').",
+"level_problem": "",
+"sense_problem": ""
+}
+]

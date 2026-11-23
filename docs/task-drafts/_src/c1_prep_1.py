@@ -5,7 +5,7 @@ T = "Prepositions: position and advanced patterns"
 L = "C1"
 
 mc(T, L, 4, "Which sentence has a mistake?", "The colleague with who I share an office is on holiday.",
-   ["The colleague I share an office with is on holiday.", "The person to whom the letter was addressed has moved.",
+   ["Is this the charger you were looking for?", "The person to whom the letter was addressed has moved.",
     "That's the flat that we looked at yesterday."],
    "A preposition goes before *whom* or *which*, never before *who* or *that*: *the colleague with whom I share an office* "
    "(or *the colleague I share an office with*).",
@@ -14,12 +14,9 @@ mc(T, L, 4, "Which sentence has a mistake?", "The colleague with who I share an 
 gp(T, L, 4, "The report shows the extent ___ which prices have risen.", "to",
    "A fixed formal phrase: *the extent to which*.",
    "Nemainīgs oficiāls izteiciens: *the extent to which*.")
-gp(T, L, 4, "Nobody explained the basis ___ which the fee was calculated.", "on",
+gp(T, L, 4, "Nobody explained the basis ___ which the fee was calculated.", "on | upon",
    "A fixed formal phrase: *the basis on which*.",
    "Nemainīgs oficiāls izteiciens: *the basis on which*.")
-gp(T, L, 4, "Write one word in each gap: We received three offers, none ___ ___ was acceptable.", "of / which",
-   "A number or quantity + *of which* for things: *none of which*, *most of which*, *both of which*.",
-   "Skaits vai daudzums + *of which* lietām: *none of which*, *most of which*, *both of which*.")
 mc(T, L, 4, "Which sentence has a mistake?", "Your complaint is being looked by our team.",
    ["He was accused of lying to the police.", "The problem has been dealt with.",
     "The plan was objected to by most residents."],
@@ -44,6 +41,6 @@ mc(T, L, 4, "Choose the correct option: Nobody ___ the owner has a key to the sa
    ["apart", "besides of", "in place of"],
    "*other than* = except: *Nobody other than the owner has a key* (also *except*, *but*, *apart from*).",
    "*other than* = izņemot: *Nobody other than the owner has a key* (arī *except*, *but*, *apart from*).")
-gp(T, L, 3, "She has a real talent ___ explaining difficult ideas simply.", "for",
+gp(T, L, 3, "She has a real talent ___ explaining difficult ideas simply.", "for | at",
    "*a talent for* + *-ing*: *a talent for explaining*.",
    "*a talent for* + *-ing*: *a talent for explaining*.")

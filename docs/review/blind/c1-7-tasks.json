@@ -1,0 +1,167 @@
+[
+ {
+  "id": "c1-7-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The next bus is in an hour, so we ___ walk.",
+  "options": [
+   "might as good",
+   "might so well",
+   "might well as",
+   "might as well"
+  ]
+ },
+ {
+  "id": "c1-7-002",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-003",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Under no circumstances should you open this door.",
+   "Never I have felt so tired in my life.",
+   "No sooner had she arrived than it started to rain.",
+   "Hardly had we sat down when the phone rang."
+  ]
+ },
+ {
+  "id": "c1-7-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "So loud ___ the music that we couldn't hear each other.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-006",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Had*: If I had known about the traffic, I would have left earlier.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-7-007",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *Should*: If you need any help, please call reception.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-7-008",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Here ___ the bus! Quick, get your bag. (come)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-009",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Start with *What*: I need a long holiday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-7-010",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Cold ___ it was, we went for a swim in the lake.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-011",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Walking into the office, the lights were all off.",
+   "Opening the door, she saw the cat on the table.",
+   "Built in the 1930s, the bridge is still in use.",
+   "Not knowing what to say, I kept quiet."
+  ]
+ },
+ {
+  "id": "c1-7-012",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ finished the report, she went home early. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-013",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Not ___ anyone in the city, he felt very lonely at first. (know)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-014",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ in a cool, dry place, the seeds will keep for years. (store)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-015",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ prices going up every month, many families are struggling.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-016",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ no questions, the chair closed the meeting.",
+  "options": [
+   "Being there",
+   "There being",
+   "There were",
+   "It being"
+  ]
+ },
+ {
+  "id": "c1-7-017",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The river burst its banks, ___ the streets near the station. (flood)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-018",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ hearing the news, she burst into tears.",
+  "options": [
+   "At",
+   "In",
+   "On",
+   "By"
+  ]
+ },
+ {
+  "id": "c1-7-019",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Keep the jar in the fridge once ___. (open)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-7-020",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ by the queue outside, the new café is very popular. (judge)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

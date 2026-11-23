@@ -3782,7 +3782,9 @@ return json_decode(<<<'EF_JSON_END'
 "part_adv"
 ],
 "name": "The subject of a participle clause: the same as in the main clause",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_ed": {
 "level": "C1",
@@ -3792,7 +3794,9 @@ return json_decode(<<<'EF_JSON_END'
 "pas_past"
 ],
 "name": "Past participle clauses for reason and condition: Built in the 1930s, …; Stored in a dry place, …",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_having": {
 "level": "C1",
@@ -3801,7 +3805,9 @@ return json_decode(<<<'EF_JSON_END'
 "vp_complex"
 ],
 "name": "Having done or doing; Having been done; Not knowing",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_own": {
 "level": "C1",
@@ -3810,7 +3816,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_part_having"
 ],
 "name": "Absolute clauses: a participle clause with its own subject",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_with": {
 "level": "C1",
@@ -3818,7 +3826,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_part_own"
 ],
 "name": "With + noun + participle: With prices going up, …; With the windows shut, …",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_there": {
 "level": "C1",
@@ -3827,7 +3837,9 @@ return json_decode(<<<'EF_JSON_END'
 "there_it_prep"
 ],
 "name": "There being …, There having been …",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_comment": {
 "level": "C1",
@@ -3835,7 +3847,9 @@ return json_decode(<<<'EF_JSON_END'
 "part_adv"
 ],
 "name": "Comment phrases: Generally speaking, Judging by …, Considering …, Strictly speaking",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_result": {
 "level": "C1",
@@ -3844,7 +3858,9 @@ return json_decode(<<<'EF_JSON_END'
 "rel_which_all"
 ],
 "name": "An -ing clause after the main clause for its result",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_prep": {
 "level": "C1",
@@ -3853,7 +3869,9 @@ return json_decode(<<<'EF_JSON_END'
 "part_adv"
 ],
 "name": "On hearing, in trying, by booking, since changing, without locking",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_conj": {
 "level": "C1",
@@ -3862,7 +3880,9 @@ return json_decode(<<<'EF_JSON_END'
 "contrast_b1"
 ],
 "name": "Conjunction + participle or adjective: when asked, once opened, if in doubt, though exhausted",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_part_rel": {
 "level": "C1",
@@ -3870,7 +3890,9 @@ return json_decode(<<<'EF_JSON_END'
 "part_reduced"
 ],
 "name": "Participle or relative clause after a noun: where the short form is not possible",
-"topics": []
+"topics": [
+"adv_part"
+]
 },
 "x_inv_neg": {
 "level": "C1",
@@ -3878,7 +3900,9 @@ return json_decode(<<<'EF_JSON_END'
 "neg_inversion"
 ],
 "name": "Inversion after negative and restrictive adverbials: the full set",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_inv_main": {
 "level": "C1",
@@ -3887,7 +3911,9 @@ return json_decode(<<<'EF_JSON_END'
 "fut_time_clause"
 ],
 "name": "Only when … / Not until … : inversion in the main clause",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_inv_so": {
 "level": "C1",
@@ -3897,7 +3923,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_inv_neg"
 ],
 "name": "So … that, Such … that, nor / neither at the start",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_inv_cond": {
 "level": "C1",
@@ -3906,7 +3934,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_subj_were"
 ],
 "name": "Had …, Were … to, Should …; but for, had it not been for",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_inv_place": {
 "level": "C1",
@@ -3915,7 +3945,9 @@ return json_decode(<<<'EF_JSON_END'
 "there_is"
 ],
 "name": "Here comes …, Out went …, At the top of the hill stands …",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_inv_as": {
 "level": "C1",
@@ -3924,7 +3956,9 @@ return json_decode(<<<'EF_JSON_END'
 "so_neither"
 ],
 "name": "As and than + inversion in formal comparison",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_cleft_adv": {
 "level": "C1",
@@ -3932,7 +3966,9 @@ return json_decode(<<<'EF_JSON_END'
 "cleft"
 ],
 "name": "Advanced cleft sentences: What he did was …, All we need is …, It was only when … that",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_fronting": {
 "level": "C1",
@@ -3941,7 +3977,9 @@ return json_decode(<<<'EF_JSON_END'
 "word_order"
 ],
 "name": "Fronting an object or a clause: That offer I turned down at once",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_front_as": {
 "level": "C1",
@@ -3950,7 +3988,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_fronting"
 ],
 "name": "Fronting with as and though: Cold though it was, …; Much as I like …; Try as she might, …",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_front_part": {
 "level": "C1",
@@ -3959,7 +3999,9 @@ return json_decode(<<<'EF_JSON_END'
 "x_agr_complex"
 ],
 "name": "A participle or complement first, then be, then the subject: Waiting at the door was a courier",
-"topics": []
+"topics": [
+"adv_order"
+]
 },
 "x_adv_focus": {
 "level": "C1",
@@ -3967,7 +4009,9 @@ return json_decode(<<<'EF_JSON_END'
 "adv_position"
 ],
 "name": "Adverbs that change the meaning by their place: only, even, also; comment and viewpoint adverbs",
-"topics": []
+"topics": [
+"adv_order"
+]
 }
 },
 "builtin": {
@@ -8113,7 +8157,84 @@ return json_decode(<<<'EF_JSON_END'
 "adv_past | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved": "x_pastp_deduce",
 "adv_past | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | ": "x_unreal_past",
 "adv_past | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend.": "x_past_intend",
-"adv_past | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ": "x_pastp_choice"
+"adv_past | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ": "x_pastp_choice",
+"adv_perfect | gap | It's only ten o'clock, and I ___ three cups of coffee this morning. (drink) | ": "x_pp_period",
+"adv_perfect | gap | It's six in the evening now. I ___ much this morning because the internet was down. (not / do) | ": "x_pp_period",
+"adv_perfect | mcq | Choose the correct option: Since she ___ the team, sales have doubled. | joined": "x_since_clause",
+"adv_perfect | gap | Have you made any friends since you ___ in this city? (live) | ": "x_since_clause",
+"adv_perfect | gap | I'll text you the moment I ___ my exam results. (get) | ": "x_time_perf",
+"adv_perfect | mcq | Which sentence has a mistake? | Once you paid, the order can't be changed.": "x_time_perf",
+"adv_perfect | gap | This is the third time she ___ her keys this week! (lose) | ": "x_first_time",
+"adv_perfect | mcq | Which sentence has a mistake? | This is the first time I am seeing snow.": "x_first_time",
+"adv_perfect | gap | It's only eleven, and I ___ the bank four times. Nobody answers. (ring) | ": "x_ppc_adv",
+"adv_perfect | mcq | Which sentence has a mistake? | I've been having this phone since May.": "x_ppc_adv",
+"adv_perfect | gap | By next May I ___ at this school for ten years. (teach) | ": "x_perf_cont_all",
+"adv_perfect | gap | The thief is thought ___ the country last week. (leave) | ": "x_perf_aspect",
+"adv_perfect | mcq | Choose the correct option: She denied ___ the letter. | having read": "x_perf_aspect",
+"adv_will | mcq | Which sentence has a mistake? | Last night he would cook dinner for all of us.": "x_will_habit",
+"adv_will | mcq | Which sentence has a mistake? | The old factory would be next to the river.": "x_will_habit",
+"adv_will | gap | I tried three times, but the printer ___ work this morning. (not / will) | ": "x_wont_refuse",
+"adv_will | gap | Don't ring them now: they ___ lunch. (will / have) | ": "x_will_assume",
+"adv_will | gap | It's nine o'clock. She ___ the news by now. (will / hear) | ": "x_will_assume",
+"adv_will | gap | I ___ to your party, but nobody told me about it. (come) | ": "x_would_have",
+"adv_will | gap | I sent it on Monday, so the parcel ___ by now. (should / arrive) | ": "x_should_expect",
+"adv_will | mcq | Which sentence has a mistake? | Should you will change your mind, just call us.": "x_if_will",
+"adv_will | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need": "x_should_purpose",
+"adv_can | mcq | Which sentence has a mistake? | Last night the children could stay up until eleven.": "x_allowed_once",
+"adv_can | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to": "x_able_limits",
+"adv_can | mcq | Which sentence has a mistake? | The forms are able to be filled in online.": "x_able_limits",
+"adv_can | mcq | Which sentence has a mistake? | May the figures in the report be wrong?": "x_may_might",
+"adv_can | mcq | Choose the correct option: The next bus is in an hour, so we ___ walk. | might as well": "x_may_well",
+"adv_can | gap | You ___ me you were bringing five friends! I would have made more food. (might / warn) | ": "x_may_well",
+"adv_can | gap | This time next week I ___ on a beach in Crete. (may / lie) | ": "x_might_cont",
+"adv_can | gap | He didn't sound serious about leaving. He ___ . (might / joke) | ": "x_might_cont",
+"adv_can | mcq | Choose the correct option: Winters here ___ very long, so bring warm clothes. | can be": "x_can_typical",
+"adv_subj | mcq | Which sentence has a mistake? | The board demanded the director to resign.": "x_subj_present",
+"adv_subj | gap | We recommend that this medicine ___ taken with alcohol. (not / be) | ": "x_subj_present",
+"adv_subj | gap | It's odd that she ___ that. She's usually so polite. (should / say) | ": "x_should_react",
+"adv_subj | gap | If the bank ___ to refuse the loan, we would sell the car. (be) | ": "x_subj_were",
+"adv_subj | mcq | Which sentence has a mistake? | If the bank would refuse, we would sell the car.": "x_subj_were",
+"adv_subj | gap | I'd rather you ___ me yesterday, before the meeting, not after it. (tell) | ": "x_rather_perf",
+"adv_subj | mcq | Choose the correct option: The plan has its problems. ___, it's the best one we have. | Be that as it may": "x_subj_fixed",
+"adv_agree | gap | The number of applicants ___ fallen sharply this year. (have) | ": "x_agr_quant",
+"adv_agree | gap | A number of applicants ___ already withdrawn. (have) | ": "x_agr_quant",
+"adv_agree | gap | The manager, together with two of her assistants, ___ coming to the meeting. (be) | ": "x_agr_complex",
+"adv_agree | gap | Politics ___ never interested me much. (have) | ": "x_agr_s_nouns",
+"adv_agree | gap | The criteria for the award ___ changed this year. (have) | ": "x_agr_s_nouns",
+"adv_agree | gap | Ten kilometres ___ a long way to walk in this heat. (be) | ": "x_agr_measure",
+"adv_agree | mcq | Which sentence has a mistake? | Each of the rooms have its own bathroom.": "x_agr_quant",
+"adv_agree | gap | Either the manager or her assistants ___ going to call you back. (be) | ": "x_agr_or_nor",
+"adv_agree | gap | Being late for every meeting ___ not going to help your career. (be) | ": "x_agr_clause",
+"adv_agree | gap | After three days, the jury ___ still arguing among themselves. (be) | ": "x_agr_collective",
+"adv_prep | mcq | Which sentence has a mistake? | The colleague with who I share an office is on holiday.": "x_prep_whom",
+"adv_prep | gap | The report shows the extent ___ which prices have risen. | ": "x_prep_which_fixed",
+"adv_prep | gap | Nobody explained the basis ___ which the fee was calculated. | ": "x_prep_which_fixed",
+"adv_prep | mcq | Which sentence has a mistake? | Your complaint is being looked by our team.": "x_prep_passive",
+"adv_prep | gap | I didn't know anyone at the party, so I had nobody to talk ___. | ": "x_prep_inf",
+"adv_prep | mcq | Choose the correct option: The road was closed ___ repairing the bridge. | with a view to": "x_prep_multi",
+"adv_prep | mcq | Which sentence has a mistake? | Despite that it rained, the match went ahead.": "x_prep_fact",
+"adv_prep | gap | The heavy rain prevented us ___ leaving the house all weekend. | ": "x_prep_verb",
+"adv_prep | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than": "x_prep_except",
+"adv_prep | gap | She has a real talent ___ explaining difficult ideas simply. | ": "x_prep_noun",
+"adv_part | mcq | Which sentence has a mistake? | Walking into the office, the lights were all off.": "x_part_subject",
+"adv_part | gap | ___ finished the report, she went home early. (have) | ": "x_part_having",
+"adv_part | gap | Not ___ anyone in the city, he felt very lonely at first. (know) | ": "x_part_having",
+"adv_part | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | ": "x_part_ed",
+"adv_part | gap | ___ prices going up every month, many families are struggling. | ": "x_part_with",
+"adv_part | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being": "x_part_there",
+"adv_part | gap | The river burst its banks, ___ the streets near the station. (flood) | ": "x_part_result",
+"adv_part | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On": "x_part_prep",
+"adv_part | gap | Keep the jar in the fridge once ___. (open) | ": "x_part_conj",
+"adv_part | gap | ___ by the queue outside, the new café is very popular. (judge) | ": "x_part_comment",
+"adv_order | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | ": "x_inv_neg",
+"adv_order | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.": "x_inv_neg",
+"adv_order | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | ": "x_inv_main",
+"adv_order | gap | So loud ___ the music that we couldn't hear each other. | ": "x_inv_so",
+"adv_order | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | ": "x_inv_cond",
+"adv_order | text | Start with *Should*: If you need any help, please call reception. | ": "x_inv_cond",
+"adv_order | gap | Here ___ the bus! Quick, get your bag. (come) | ": "x_inv_place",
+"adv_order | text | Start with *What*: I need a long holiday. | ": "x_cleft_adv",
+"adv_order | gap | Cold ___ it was, we went for a swim in the lake. | ": "x_front_as"
 }
 }
 EF_JSON_END

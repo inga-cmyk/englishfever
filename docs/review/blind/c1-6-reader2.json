@@ -1,0 +1,308 @@
+[
+{
+"id": "c1-6-001",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb given in the brackets and the form is just has/have: easy.",
+"level_problem": "Number of + singular is B2 at most; fine but not really C1 nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-002",
+"answer": [
+"have"
+],
+"other_correct": [
+[
+"had"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'(have)' names the verb; only choice is have/has.",
+"level_problem": "Pair with 001 tests the same contrast, B2 level.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-003",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"was"
+],
+[
+"will be"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time clue, so is/was/will be all fit.",
+"level_problem": "Together with: B2 point.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-004",
+"answer": [
+"has"
+],
+"other_correct": [
+[
+"had"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time clue, had also possible.",
+"level_problem": "B2: well-known -s noun rule; had fits too with no time clue.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-005",
+"answer": [
+"have"
+],
+"other_correct": [
+[
+"had"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'this year' makes had less natural but not wrong in a narrative; 'has' is a common learner/informal error.",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-006",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"was"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "was is possible (less natural with 'in this heat' as present context).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-007",
+"answer": "Each of the rooms have its own bathroom.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2 point (agreement after each of/neither of); 'Neither of the answers are correct' also accepted, so option 2 is arguable.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-008",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"were"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Past 'were going to call you back' also fits.",
+"level_problem": "",
+"sense_problem": "'is' is common informal usage; proximity rule is prescriptive."
+},
+{
+"id": "c1-6-009",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"was"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'was not going to help' fits as a past view; with 'not' typed as 'isn't' not possible in this gap.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-010",
+"answer": [
+"were"
+],
+"other_correct": [
+[
+"was"
+],
+[
+"are"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'themselves' gives the answer away (plural). 'was' is correct in American English/formal, but clashes with 'themselves'. 'are' is possible as a present-tense report.",
+"level_problem": "",
+"sense_problem": "Tense not fixed: 'After three days' with 'still arguing' also allows are/is."
+},
+{
+"id": "c1-6-011",
+"answer": "might as well",
+"other_correct": "",
+"wrong_options_that_fit": "'had as well' is dated/archaic but still found in British English; 'may as well' is not offered.",
+"instruction_problem": "",
+"level_problem": "Idiom is B2/C1: fine.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-012",
+"answer": "The colleague with who I share an office is on holiday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2/C1 ok.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-013",
+"answer": [
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction: it is not stated what to do (write one word).",
+"level_problem": "C1 collocation, ok.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-014",
+"answer": [
+"on"
+],
+"other_correct": [
+[
+"upon"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction: not stated what to do. 'upon' is correct but formal.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-015",
+"answer": [
+"of",
+"which"
+],
+"other_correct": [
+[
+"of",
+"them"
+],
+[
+"of",
+"these"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'of them/these' makes a comma splice (formal style needs 'which') but is acceptable in speech.",
+"level_problem": "C1 ok.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-016",
+"answer": "Your complaint is being looked by our team.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-017",
+"answer": [
+"to"
+],
+"other_correct": [
+[
+"with"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line; 'talk with' is also correct, especially American.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-018",
+"answer": "with a view to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine.",
+"level_problem": "",
+"sense_problem": "'closed with a view to repairing' is a little odd: intention fits a plan, 'for the repair of' / 'in order to repair' is more natural; the distractors with -ing after 'in order to/so as to/for the purpose to' are wrong only by pattern."
+},
+{
+"id": "c1-6-019",
+"answer": "Despite that it rained, the match went ahead.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "B2.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-020",
+"answer": [
+"from"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line; what to type is not stated. 'prevented us leaving' without 'from' is possible but cannot fill the gap.",
+"level_problem": "B2 collocation.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-021",
+"answer": "other than",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'apart' is an incomplete distractor (needs 'from'), obviously wrong; 'besides of' is not English.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-022",
+"answer": [
+"for"
+],
+"other_correct": [
+[
+"at"
+],
+[
+"in"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction line. 'talent at explaining' is correct; 'in' is less usual.",
+"level_problem": "B2 collocation.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-023",
+"answer": [
+"had told"
+],
+"other_correct": [
+[
+"'d told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'yesterday' and the verb in brackets fix the form; learner must know 'had + past participle'. Fine.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

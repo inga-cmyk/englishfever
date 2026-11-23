@@ -1,0 +1,692 @@
+{
+ "c1-7-001": {
+  "hash": "b2eb9a9e0a2656d3",
+  "gate_key": "adv_can | C1 | mcq | Choose the correct option: The next bus is in an hour, so we ___ walk. | might as well",
+  "src": "c1-can-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "might as well",
+   "wrong": [
+    "might as good",
+    "might so well",
+    "might well as"
+   ]
+  },
+  "item": {
+   "id": "c-2163",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: The next bus is in an hour, so we ___ walk.",
+   "why": "*might / may as well* + base verb = it is the only sensible thing to do: *we might as well walk*.",
+   "why_lv": "*might / may as well* + pamatforma = tas ir vienīgais saprātīgais: *we might as well walk*.",
+   "correct": "might as well",
+   "wrong": [
+    "might as good",
+    "might so well",
+    "might well as"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:6"
+  }
+ },
+ "c1-7-002": {
+  "hash": "74779b727d0c1062",
+  "gate_key": "adv_order | C1 | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | ",
+  "src": "c1-order-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "seen"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2168",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see)",
+   "why": "After *Rarely* at the start, the helping verb comes before the subject: *Rarely have I seen…*",
+   "why_lv": "Pēc *Rarely* teikuma sākumā palīgdarbības vārds stāv pirms teikuma priekšmeta: *Rarely have I seen*…",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "seen"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:2"
+  }
+ },
+ "c1-7-003": {
+  "hash": "735631b70333fbc3",
+  "gate_key": "adv_order | C1 | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.",
+  "src": "c1-order-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Never I have felt so tired in my life.",
+   "wrong": [
+    "Hardly had we sat down when the phone rang.",
+    "No sooner had she arrived than it started to rain.",
+    "Under no circumstances should you open this door."
+   ]
+  },
+  "item": {
+   "id": "c-2169",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "After *Never* at the start: helping verb + subject: *Never have I felt so tired.*",
+   "why_lv": "Pēc *Never* teikuma sākumā: palīgdarbības vārds + teikuma priekšmets: *Never have I felt so tired.*",
+   "correct": "Never I have felt so tired in my life.",
+   "wrong": [
+    "Hardly had we sat down when the phone rang.",
+    "No sooner had she arrived than it started to rain.",
+    "Under no circumstances should you open this door."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-order-1.csv:3"
+  }
+ },
+ "c1-7-004": {
+  "hash": "51b507ba2fd35c6f",
+  "gate_key": "adv_order | C1 | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | ",
+  "src": "c1-order-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "did"
+    ],
+    [
+     "notice"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2170",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice)",
+   "why": "*Not until* + first clause, then inversion in the second (with *did* for the past simple): *did we notice*.",
+   "why_lv": "*Not until* + pirmā daļa, tad *inversija* otrajā (Past Simple ar *did*): *did we notice*.",
+   "answers": [
+    [
+     "did"
+    ],
+    [
+     "notice"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:4"
+  }
+ },
+ "c1-7-005": {
+  "hash": "c1ec381649f45010",
+  "gate_key": "adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | ",
+  "src": "c1-order-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2171",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "So loud ___ the music that we couldn't hear each other.",
+   "why": "*So* + adjective at the start, then *be* before the subject: *So loud was the music that…*",
+   "why_lv": "*So* + īpašības vārds sākumā, tad *be* pirms teikuma priekšmeta: *So loud was the music that*…",
+   "answers": [
+    [
+     "was"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:5"
+  }
+ },
+ "c1-7-006": {
+  "hash": "70a29320265bff57",
+  "gate_key": "adv_order | C1 | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | ",
+  "src": "c1-order-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Had I known about the traffic, I would have left earlier.",
+     "Had I known about the traffic, I'd have left earlier."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2172",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *Had*: If I had known about the traffic, I would have left earlier.",
+   "why": "A condition without *if*: *Had* + subject + past participle: *Had I known…*",
+   "why_lv": "Nosacījums bez *if*: *Had* + teikuma priekšmets + 3. forma: *Had I known*…",
+   "answers": [
+    [
+     "Had I known about the traffic, I would have left earlier.",
+     "Had I known about the traffic, I'd have left earlier."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:6"
+  }
+ },
+ "c1-7-007": {
+  "hash": "9eb9b1fce5506d9d",
+  "gate_key": "adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | ",
+  "src": "c1-order-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Should you need any help, please call reception."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2173",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "text",
+   "q": "Start with *Should*: If you need any help, please call reception.",
+   "why": "A formal condition without *if*: *Should* + subject + base verb: *Should you need any help…*",
+   "why_lv": "Oficiāls nosacījums bez *if*: *Should* + teikuma priekšmets + pamatforma: *Should you need any help*…",
+   "answers": [
+    [
+     "Should you need any help, please call reception."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:7"
+  }
+ },
+ "c1-7-008": {
+  "hash": "2a9ea3353172671c",
+  "gate_key": "adv_order | C1 | gap | Here ___ the bus! Quick, get your bag. (come) | ",
+  "src": "c1-order-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "comes"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2174",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Here ___ the bus! Quick, get your bag. (come)",
+   "why": "After *Here* with a noun subject, the verb comes first: *Here comes the bus!* (but *Here it comes!*)",
+   "why_lv": "Pēc *Here*, ja teikuma priekšmets ir lietvārds, darbības vārds stāv pirmais: *Here comes the bus!* (bet *Here it comes*!)",
+   "answers": [
+    [
+     "comes"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:8"
+  }
+ },
+ "c1-7-009": {
+  "hash": "64f2fa42d37d3a8f",
+  "gate_key": "adv_order | C1 | text | Start with *What*: I need a long holiday. | ",
+  "src": "c1-order-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What I need is a long holiday."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2175",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *What*: I need a long holiday.",
+   "why": "*What* + subject + verb + *is* puts the focus on the thing: *What I need is a long holiday.*",
+   "why_lv": "*What* + teikuma priekšmets + darbības vārds + *is* izceļ *lietu*: *What I need is a long holiday.*",
+   "answers": [
+    [
+     "What I need is a long holiday."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:9"
+  }
+ },
+ "c1-7-010": {
+  "hash": "7fdc73f7026b73bd",
+  "gate_key": "adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | ",
+  "src": "c1-order-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "though",
+     "as"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2176",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Cold ___ it was, we went for a swim in the lake.",
+   "why": "Adjective + *though / as* + subject + verb = although it was cold: *Cold though it was, …*",
+   "why_lv": "Īpašības vārds + *though / as* + teikuma priekšmets + darbības vārds = lai gan bija *auksti*: *Cold though it was*, …",
+   "answers": [
+    [
+     "though",
+     "as"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:10"
+  }
+ },
+ "c1-7-011": {
+  "hash": "3b8ef9961fcfd694",
+  "gate_key": "adv_part | C1 | mcq | Which sentence has a mistake? | Walking into the office, the lights were all off.",
+  "src": "c1-part-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "Walking into the office, the lights were all off.",
+   "wrong": [
+    "Opening the door, she saw the cat on the table.",
+    "Built in the 1930s, the bridge is still in use.",
+    "Not knowing what to say, I kept quiet."
+   ]
+  },
+  "item": {
+   "id": "c-2177",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "A participle clause has the same subject as the main clause. The lights were not walking: *Walking into the office, I saw that the lights were all off.*",
+   "why_lv": "*Divdabja teicienam* ir tas *pats* teikuma priekšmets, kas *galvenajam teikumam*. *Gaismas* negāja: *Walking into the office, I saw that the lights were all off.*",
+   "correct": "Walking into the office, the lights were all off.",
+   "wrong": [
+    "Opening the door, she saw the cat on the table.",
+    "Built in the 1930s, the bridge is still in use.",
+    "Not knowing what to say, I kept quiet."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-part-1.csv:2"
+  }
+ },
+ "c1-7-012": {
+  "hash": "a30be3fbc05da24f",
+  "gate_key": "adv_part | C1 | gap | ___ finished the report, she went home early. (have) | ",
+  "src": "c1-part-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Having"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2178",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ finished the report, she went home early. (have)",
+   "why": "*Having* + past participle: the first action was complete before the second: *Having finished the report, she went home.*",
+   "why_lv": "*Having* + 3. forma: pirmā darbība bija pabeigta pirms otrās: *Having finished the report, she went home.*",
+   "answers": [
+    [
+     "Having"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:3"
+  }
+ },
+ "c1-7-013": {
+  "hash": "4b1f63b2cb82bb08",
+  "gate_key": "adv_part | C1 | gap | Not ___ anyone in the city, he felt very lonely at first. (know) | ",
+  "src": "c1-part-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "knowing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2179",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Not ___ anyone in the city, he felt very lonely at first. (know)",
+   "why": "*Not* + *-ing* for a reason: *Not knowing anyone, he felt lonely.* *Not* goes before the participle.",
+   "why_lv": "*Not + -ing iemeslam*: *Not knowing anyone, he felt lonely.* *Not* stāv pirms *divdabja*.",
+   "answers": [
+    [
+     "knowing"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:4"
+  }
+ },
+ "c1-7-014": {
+  "hash": "8a4d5d3562d08248",
+  "gate_key": "adv_part | C1 | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | ",
+  "src": "c1-part-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Stored",
+     "If stored",
+     "When stored"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2180",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "___ in a cool, dry place, the seeds will keep for years. (store)",
+   "why": "A past participle at the start for a passive meaning (= if they are stored): *Stored in a cool, dry place, the seeds will keep.*",
+   "why_lv": "3. forma sākumā ciešamās kārtas nozīmei (= ja tās glabā): *Stored in a cool, dry place, the seeds will keep.*",
+   "answers": [
+    [
+     "Stored",
+     "If stored",
+     "When stored"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:5"
+  }
+ },
+ "c1-7-015": {
+  "hash": "aa44de30ac0652c2",
+  "gate_key": "adv_part | C1 | gap | ___ prices going up every month, many families are struggling. | ",
+  "src": "c1-part-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "With"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2181",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ prices going up every month, many families are struggling.",
+   "why": "*With* + noun + *-ing* describes the situation: *With prices going up every month, …*",
+   "why_lv": "*With* + lietvārds + *-ing* apraksta situāciju: *With prices going up every month*, …",
+   "answers": [
+    [
+     "With"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:6"
+  }
+ },
+ "c1-7-016": {
+  "hash": "117cf0a984a0f64f",
+  "gate_key": "adv_part | C1 | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being",
+  "src": "c1-part-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "There being",
+   "wrong": [
+    "Being there",
+    "It being",
+    "There were"
+   ]
+  },
+  "item": {
+   "id": "c-2182",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ no questions, the chair closed the meeting.",
+   "why": "*There being* + noun gives the reason in formal style: *There being no questions, the chair closed the meeting.*",
+   "why_lv": "*There being* + lietvārds oficiālā stilā norāda *iemeslu*: *There being* no *questions, the chair closed the meeting*.",
+   "correct": "There being",
+   "wrong": [
+    "Being there",
+    "It being",
+    "There were"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-part-1.csv:7"
+  }
+ },
+ "c1-7-017": {
+  "hash": "2ab558209e317433",
+  "gate_key": "adv_part | C1 | gap | The river burst its banks, ___ the streets near the station. (flood) | ",
+  "src": "c1-part-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "flooding"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2183",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The river burst its banks, ___ the streets near the station. (flood)",
+   "why": "An *-ing* clause after the main clause for its direct result: *…, flooding the streets.*",
+   "why_lv": "*-ing teiciens* aiz galvenā teikuma tiešam rezultātam: …, *flooding the streets*.",
+   "answers": [
+    [
+     "flooding"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:8"
+  }
+ },
+ "c1-7-018": {
+  "hash": "dae5330aa8cf067c",
+  "gate_key": "adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On",
+  "src": "c1-part-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "On",
+   "wrong": [
+    "In",
+    "By",
+    "At"
+   ]
+  },
+  "item": {
+   "id": "c-2184",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ hearing the news, she burst into tears.",
+   "why": "*On* + *-ing* = at the moment when: *On hearing the news* = when she heard the news.",
+   "why_lv": "*On + -ing* = tajā brīdī, kad: *On hearing the news* = kad viņa dzirdēja ziņu.",
+   "correct": "On",
+   "wrong": [
+    "In",
+    "By",
+    "At"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-part-1.csv:9"
+  }
+ },
+ "c1-7-019": {
+  "hash": "eb53a4d25533bf75",
+  "gate_key": "adv_part | C1 | gap | Keep the jar in the fridge once ___. (open) | ",
+  "src": "c1-part-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "opened"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2185",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Keep the jar in the fridge once ___. (open)",
+   "why": "*once* + past participle (= once it has been opened): *Keep refrigerated once opened.*",
+   "why_lv": "*once* + 3. forma (= kad tas ir atvērts): *Keep refrigerated once opened.*",
+   "answers": [
+    [
+     "opened"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:10"
+  }
+ },
+ "c1-7-020": {
+  "hash": "a2b92794cdcbdf88",
+  "gate_key": "adv_part | C1 | gap | ___ by the queue outside, the new café is very popular. (judge) | ",
+  "src": "c1-part-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Judging"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2186",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ by the queue outside, the new café is very popular. (judge)",
+   "why": "A fixed comment phrase: *Judging by…* (it does not need the subject of the main clause).",
+   "why_lv": "Nemainīgs komentāra *izteiciens*: *Judging by*… (tam nav vajadzīgs galvenā teikuma priekšmets).",
+   "answers": [
+    [
+     "Judging"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-part-1.csv:11"
+  }
+ }
+}

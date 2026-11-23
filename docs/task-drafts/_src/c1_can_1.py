@@ -28,7 +28,7 @@ mc(T, L, 4, "Which sentence has a mistake?", "May the figures in the report be w
    "Par iespējamību nejautā ar *May…?*: *Could the figures be wrong?* vai *Are the figures likely to be wrong?*")
 # x_may_well
 mc(T, L, 4, "Choose the correct option: The next bus is in an hour, so we ___ walk.", "might as well",
-   ["might as good", "might so well", "had as well"],
+   ["might as good", "might so well", "might well as"],
    "*might / may as well* + base verb = it is the only sensible thing to do: *we might as well walk*.",
    "*might / may as well* + pamatforma = tas ir vienīgais saprātīgais: *we might as well walk*.")
 gp(T, L, 4, "You ___ me you were bringing five friends! I would have made more food. (might / warn)", "might have warned",

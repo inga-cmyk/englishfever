@@ -1,0 +1,298 @@
+[
+{
+"id": "c1-6-001",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Subject-verb agreement of this basic kind is B2 at most; not C1 nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-002",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Subject-verb agreement of this basic kind is B2 at most; not C1 nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-003",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'are' is sometimes heard but not standard here."
+},
+{
+"id": "c1-6-004",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Subject-verb agreement of this basic kind is B2 at most; not C1 nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-005",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Subject-verb agreement of this basic kind is B2 at most; not C1 nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-006",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Subject-verb agreement of this basic kind is B2 at most; not C1 nuance.",
+"sense_problem": "'are' is not standard for a distance."
+},
+{
+"id": "c1-6-007",
+"answer": "Each of the rooms have its own bathroom.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Agreement with 'each of' is B2, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-6-008",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"'re"
+],
+[
+"is"
+],
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'is' (agreeing with 'manager') is common in speech but 'are' follows the nearer noun; two answers are defensible, which is risky for a learner."
+},
+{
+"id": "c1-6-009",
+"answer": [
+"is"
+],
+"other_correct": [
+[
+"'s"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-010",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"'re"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'is' is standard in American English but clashes with 'themselves'; accept 'are' only for BrE."
+},
+{
+"id": "c1-6-011",
+"answer": "might as well",
+"other_correct": "",
+"wrong_options_that_fit": "had as well (dated BrE, rare but not wrong)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-012",
+"answer": "The colleague with who I share an office is on holiday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-013",
+"answer": [
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-014",
+"answer": [
+"on"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-015",
+"answer": [
+"of",
+"which"
+],
+"other_correct": [
+[
+"of",
+"them"
+],
+[
+"of",
+"these"
+],
+[
+"of",
+"those"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Confusing: the gaps are ambiguous ('of which' vs 'of them'); the instruction does not say which.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-016",
+"answer": "Your complaint is being looked by our team.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-017",
+"answer": [
+"to"
+],
+"other_correct": [
+[
+"with"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-018",
+"answer": "with a view to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-019",
+"answer": "Despite that it rained, the match went ahead.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-020",
+"answer": [
+"from"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-021",
+"answer": "other than",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-6-022",
+"answer": [
+"for"
+],
+"other_correct": [
+[
+"in"
+],
+[
+"at"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'in' and 'at' are less natural but possible."
+},
+{
+"id": "c1-6-023",
+"answer": [
+"had",
+"told"
+],
+"other_correct": [
+[
+"'d",
+"told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -1,0 +1,27 @@
+[
+{
+"id": "c1-11-001",
+"answer": [
+"went",
+"lit"
+],
+"other_correct": [
+[
+"went",
+"lighted"
+],
+[
+"went",
+"had lit"
+],
+[
+"went",
+"had lighted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Task is too easy for C1: two common irregular verbs given in brackets, learner only puts them in the past simple. 'Write one word in each gap' is clear. 'as soon as he had lit' (past perfect) and 'lighted' are also correct (less natural), so the key must accept them or the brackets must rule them out.",
+"level_problem": "Not C1: A2/B1 irregular past forms (go-went, light-lit); no use or nuance point, sentence is simple.",
+"sense_problem": "Mildly odd: a candle held underneath a smoke alarm is a contrived situation; 'he' has no context."
+}
+]

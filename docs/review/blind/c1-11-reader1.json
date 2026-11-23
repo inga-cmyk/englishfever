@@ -1,0 +1,27 @@
+[
+{
+"id": "c1-11-001",
+"answer": [
+"went",
+"lit"
+],
+"other_correct": [
+[
+"went",
+"lighted"
+],
+[
+"went",
+"had lit"
+],
+[
+"went",
+"had lighted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Verbs given in brackets, so only the past form is needed; gives the tense away. 'Write one word' is fine.",
+"level_problem": "Far too easy for C1: irregular past simple (went/lit) is A2. No nuance or use point; a B1 learner solves it at once. 'had lit' after 'as soon as' is also possible, so the tense choice is not controlled.",
+"sense_problem": "Mild: a candle setting off a smoke alarm is a little odd but acceptable."
+}
+]

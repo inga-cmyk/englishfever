@@ -1,0 +1,442 @@
+[
+{
+"id": "c1-10-001",
+"answer": "Last night the children could stay up until eleven.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-002",
+"answer": "May the figures in the report be wrong?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-003",
+"answer": "Nothing's on, so we might as good go to bed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-004",
+"answer": [
+"have",
+"warned"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-005",
+"answer": [
+"may",
+"be",
+"lying"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-006",
+"answer": [
+"might",
+"have",
+"been",
+"joking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-007",
+"answer": "Winters here are able to be very long.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-008",
+"answer": "Although she may be young, but she learns fast.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-009",
+"answer": [
+"have",
+"seen"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-010",
+"answer": "Had I known about the traffic, I would have left earlier.",
+"other_correct": [
+"Had I known about the traffic, I'd have left earlier.",
+"Had I known of the traffic, I would have left earlier."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Almost all the words are given in the model; the learner only moves 'If' out and swaps the order: close to copying. Adds nothing beyond form.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-011",
+"answer": [
+"came"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-012",
+"answer": "What I need is a long holiday.",
+"other_correct": [
+"What I really need is a long holiday.",
+"What I need now is a long holiday.",
+"What I need is a long holiday (What I need's a long holiday)."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say the sentence must use only the given words, so 'What I really need is...' also fits; 'cleft sentence' task is only a rearrangement of the model.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-013",
+"answer": [
+"Not",
+"knowing"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-014",
+"answer": [
+"went",
+"lit"
+],
+"other_correct": [
+[
+"went",
+"lighted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Simple past (went/lit) is A2-B1; nothing C1 here except 'as soon as'.",
+"sense_problem": ""
+},
+{
+"id": "c1-10-015",
+"answer": [
+"had",
+"known"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "One gap needs two words ('had known') but nothing says so, while other tasks say 'one word in each gap'; unclear. Contracted 'd known' would also be typed.",
+"level_problem": "Past perfect with 'for ten years' is B1-B2, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-10-016",
+"answer": [
+"had",
+"told"
+],
+"other_correct": [
+[
+"'d",
+"told"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "One gap needs two words; learner not told. Also 'had told' vs contraction.",
+"level_problem": "'wish + past perfect' is B2, below C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-10-017",
+"answer": [
+"have",
+"rung"
+],
+"other_correct": [
+[
+"'ve",
+"rung"
+],
+[
+"have",
+"been ringing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "One gap needs two words. 'I rang the bank four times' (simple past) is also possible but weaker; 'I've called' (American 'called').",
+"level_problem": "Present perfect with a count is B1, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-10-018",
+"answer": "I've been having this phone since May.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-019",
+"answer": "with a view to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-020",
+"answer": "other than",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-021",
+"answer": "You're constantly changing your mind!",
+"other_correct": [
+"You constantly change your mind!",
+"You keep changing your mind constantly.",
+"You always change your mind!",
+"You're always changing your mind, aren't you?",
+"You've changed your mind three times."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not ask for the continuous form, so simple present 'You constantly change your mind' is equally correct; the intended point (annoyance with 'be + -ing') is not signalled.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-022",
+"answer": "My neighbour forever is borrowing my tools.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-023",
+"answer": [
+"am",
+"standing"
+],
+"other_correct": [
+[
+"'m",
+"standing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'turns' is the only answer for gap 3 but 'turned' might be tried; the learner must know it is the narrative present. 'I'm' contraction takes the first gap if learner writes it.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-024",
+"answer": [
+"passes",
+"shoots"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Plain present simple third person; the C1 point is only the commentary register.",
+"sense_problem": ""
+},
+{
+"id": "c1-10-025",
+"answer": "I'm wondering could you check my CV.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-026",
+"answer": [
+"should",
+"have",
+"said"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-027",
+"answer": "If the landlord would raise the rent, we'd move.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-028",
+"answer": "Be that as it may",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-029",
+"answer": "be",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-030",
+"answer": "I'd rather you wouldn't have posted that photo.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-031",
+"answer": "wouldn't",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-032",
+"answer": [
+"will",
+"be",
+"having"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-033",
+"answer": [
+"will",
+"have",
+"heard"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-034",
+"answer": [
+"would",
+"have",
+"come"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'would have come' (third conditional-type) is B1-B2, below C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-10-035",
+"answer": [
+"should",
+"have",
+"arrived"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-036",
+"answer": "If should you change your mind, just call us.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-037",
+"answer": "would",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-10-038",
+"answer": [
+"will",
+"be"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'That will be the courier' (deduction) is B1-B2; a bit low for C1.",
+"sense_problem": ""
+}
+]

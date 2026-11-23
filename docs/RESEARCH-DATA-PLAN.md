@@ -32,7 +32,7 @@ so results before and after it are not mixed.
 
 ## Definitions (as used on the Learning evidence page)
 - **Slip / gap**: a missed task is asked again later in the session; right = slip, wrong again = gap.
-- **Fixed**: after a mistake, the learner answers a *different* task of the same grammar point correctly (from 23 Nov 2026 the same sentence never counts, also not on a later day).
+- **Fixed**: after a mistake, the learner answers a *different* task of the same grammar point correctly, or the same sentence correctly on two different later days (from 23 Nov 2026; before, the same sentence once on a later day was enough).
 - **Locked in**: a fixed mistake answered correctly again on another day with another task of that kind.
 - **Reopened**: a fixed mistake made again.
 
@@ -74,7 +74,7 @@ Not changed yet; listed so that they are decided before the analysis. Comparison
 - **Support shown**: the welcome greetings and reminder clicks are tracked in the app but are not in the research `events.csv` yet.
 
 ## Changes
-- 23 Nov 2026 (evening): definition change. **Fixed** = a right answer to a different task of the same grammar point; the same sentence right again on a later day no longer counts (before: it did). *Fixed* and *Locked in* counts before and after this date are not comparable; recompute old data with the new rule from `answers.csv` if needed (Mistakes::scan reads the answers, so the app's own counts already use the new rule for all past answers).
+- 23 Nov 2026 (evening): definition change. **Fixed** = a right answer to a different task of the same grammar point, or the same sentence right on two different later days (before: once on a later day). *Fixed* and *Locked in* counts before and after this date are not comparable; recompute old data with the new rule from `answers.csv` if needed (Mistakes::scan reads the answers, so the app's own counts already use the new rule for all past answers).
 - 23 Nov 2026 (evening): Second Chance serves the learner's own wrong sentence only on a later day than the mistake; on the same day only a different task of the same point (`served_why = second_chance` for both).
 - 23 Nov 2026 (evening): no sentence twice in a session (any task); after a second mistake in a C1 point an easier task of the same point (`served_why = easier_same_point`); the import retires all older versions of rewritten C1 tasks.
 - 23 Nov 2026: typed sentences with exactly one word left out stay wrong (`correct` = 0) but get a named-word feedback, flagged `near` in the result (as the one-wrong-word case); grading itself is unchanged. Task c-0621 (word order) accepts the swapped *vinegar and oil*: answers given that way before were marked wrong (leave them out or count them as right).

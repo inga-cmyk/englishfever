@@ -110,7 +110,13 @@ $m = Mistakes::scan($uid3);
 check(isset($m['open']['ps-A21-1a']) && $m['fixed'] === 0, 'the same sentence right a minute later: still open');
 $at('ps-A21-1a', true, $d0 + 86400);
 $m = Mistakes::scan($uid3);
-check(isset($m['open']['ps-A21-1a']) && $m['fixed'] === 0, 'the same sentence right on a later day: still open (teacher, 23 November: only a different task of the point fixes it)');
+check(isset($m['open']['ps-A21-1a']) && $m['fixed'] === 0, 'the same sentence right on a later day: still open (teacher, 23 November: once on a later day is not enough)');
+$at('ps-A21-1a', true, $d0 + 86400 + 3600);
+$m = Mistakes::scan($uid3);
+check(isset($m['open']['ps-A21-1a']) && $m['fixed'] === 0, 'right twice on the same later day: still open');
+$at('ps-A21-1a', true, $d0 + 3 * 86400);
+$m = Mistakes::scan($uid3);
+check(!isset($m['open']['ps-A21-1a']) && $m['fixed'] === 1, 'the same sentence right on two different later days: fixed (teacher, 23 November)');
 
 // 5. the check after a mistake is not harder: same level or lower whenever the topic has such a task
 $lv = array_flip(array_keys(Content::BASE)); $higher = 0; $tried = 0;

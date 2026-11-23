@@ -30,7 +30,7 @@ tx(T, L, 4, "Start with *Should*: If you need any help, please call reception.",
 gp(T, L, 4, "Just as we left the house, down ___ the rain. (come)", "came",
    "After an adverb of place at the start (*down, out, in*), the verb can come before a noun subject: *down came the rain*.",
    "Ja teikums sākas ar vietas apstākļa vārdu (*down, out, in*), darbības vārds var stāvēt pirms lietvārda: *down came the rain*.")
-tx(T, L, 3, "Start with *What* and end with *a long holiday*: I need a long holiday.", "What I need is a long holiday. | What I need's a long holiday. | What I need is to have a long holiday.",
+tx(T, L, 3, "Start with *What* and end with *a long holiday*: I need a long holiday.", "What I need is a long holiday. | What I really need is a long holiday. | What I need's a long holiday. | What I need is to have a long holiday.",
    "*What* + subject + verb + *is* puts the focus on the thing: *What I need is a long holiday.*",
    "*What* + teikuma priekšmets + darbības vārds + *is* izceļ lietu: *What I need is a long holiday.*")
 gp(T, L, 4, "Cold ___ it was, we went for a swim in the lake.", "though | as",

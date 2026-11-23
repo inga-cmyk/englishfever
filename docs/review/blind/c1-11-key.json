@@ -1,0 +1,43 @@
+{
+ "c1-11-001": {
+  "hash": "aa88628dbaa3cf0f",
+  "gate_key": "adv_past | C1 | gap | Write one word in each gap: Last night the smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light) | ",
+  "src": "c1-past-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "went"
+    ],
+    [
+     "lit",
+     "lighted"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2190",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Last night the smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)",
+   "why": "Two completed events that follow one another: past simple for both (*went off as soon as he lit*). The continuous would mean that one was in progress when the other happened.",
+   "why_lv": "Divi pabeigti notikumi, kas seko viens otram: abiem Past Simple (*went off as soon as he lit*). Continuous forma nozīmētu, ka viens jau notika, kad notika otrs.",
+   "answers": [
+    [
+     "went"
+    ],
+    [
+     "lit",
+     "lighted"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-past-1.csv:2"
+  }
+ }
+}

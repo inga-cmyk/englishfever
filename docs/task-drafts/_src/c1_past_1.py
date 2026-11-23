@@ -8,7 +8,7 @@ T = "Advanced past simple, past continuous and past perfect"
 L = "C1"
 
 # x_past_both: events that follow one another are both past simple
-gp(T, L, 4, "Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)", "went / lit | lighted",
+gp(T, L, 4, "Write one word in each gap: Last night the smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light)", "went / lit | lighted",
    "Two completed events that follow one another: past simple for both (*went off as soon as he lit*). "
    "The continuous would mean that one was in progress when the other happened.",
    "Divi pabeigti notikumi, kas seko viens otram: abiem Past Simple (*went off as soon as he lit*). "

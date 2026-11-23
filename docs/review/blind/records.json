@@ -2274,6 +2274,11 @@
 "round": "r13",
 "task": "r13-051"
 },
+"50d29d21609ddbd6": {
+"gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you look at my CV before Friday.",
+"round": "c1-2",
+"task": "c1-2-005"
+},
 "50da8ab1b8f811b8": {
 "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | we go cycling every saturday",
 "round": "r9",
@@ -3754,6 +3759,11 @@
 "round": "r1",
 "task": "r1-024"
 },
+"89827f5f9c03ecf3": {
+"gate_key": "adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | ",
+"round": "c1-2",
+"task": "c1-2-003"
+},
 "8986b1446e66df4f": {
 "gate_key": "present_perfect | A2.2 | gap | Your car looks so clean! Have you ___ to the car wash? | ",
 "round": "r13",
@@ -5174,6 +5184,11 @@
 "round": "r11",
 "task": "r11-018"
 },
+"b6e4a8008996d578": {
+"gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.",
+"round": "c1-2",
+"task": "c1-2-009"
+},
 "b73ce756957f66e9": {
 "gate_key": "conj_b2 | B2.2 | gap | Sales fell. ___, we have decided to close the shop. | ",
 "round": "r20-1",
@@ -5868,6 +5883,11 @@
 "gate_key": "ind_advanced | B2.2 | text | Join the sentences: She didn't know. Who should she ask? | ",
 "round": "r20c",
 "task": "r20c-020"
+},
+"ceac44e231007651": {
+"gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.",
+"round": "c1-2",
+"task": "c1-2-004"
 },
 "ceacb76bcbce3280": {
 "gate_key": "rep_questions | B1.2 | mcq | 'Why are you tired?'\nChoose the correct option: He asked me why ___ tired. | I was",

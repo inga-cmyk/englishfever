@@ -1,0 +1,35 @@
+[
+ {
+  "id": "c1-2b-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-2b-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "So I'm sitting on the train, and this man opens a bag of crisps.",
+   "We're having dinner when all the lights go out.",
+   "Then the waiter looks at him and says, \"Are you sure?\"",
+   "So this man is walking into a café and he orders a glass of milk."
+  ]
+ },
+ {
+  "id": "c1-2b-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The app ___ to work on my phone. Can you check it? (not / appear)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-2b-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My sister and her husband ___ their first baby next month. (expect)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

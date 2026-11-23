@@ -1,0 +1,160 @@
+{
+ "c1-2b-001": {
+  "hash": "008451f593ae5e16",
+  "gate_key": "adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn) | ",
+  "src": "c1-pres-2.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "standing"
+    ],
+    [
+     "turns"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2158",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
+   "why": "In a story told in the present, the background is in the present continuous (*I'm standing in the queue*) and the main events in the present simple (*turns, hands*).",
+   "why_lv": "Stāstā tagadnē fons ir Present Continuous (*I'm standing in the queue*), bet *galvenie* notikumi Present Simple (*turns, hands*).",
+   "answers": [
+    [
+     "am",
+     "'m"
+    ],
+    [
+     "standing"
+    ],
+    [
+     "turns"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:2"
+  }
+ },
+ "c1-2b-002": {
+  "hash": "9371765160e8d081",
+  "gate_key": "adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.",
+  "src": "c1-pres-2.csv:3",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "So this man is walking into a café and he orders a glass of milk.",
+   "wrong": [
+    "So I'm sitting on the train, and this man opens a bag of crisps.",
+    "We're having dinner when all the lights go out.",
+    "Then the waiter looks at him and says, \"Are you sure?\""
+   ]
+  },
+  "item": {
+   "id": "c-2159",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "In a joke or a story told in the present, the main events are in the present simple: *So this man walks into a café and orders…* The background can be continuous (*I'm sitting on the train*).",
+   "why_lv": "Jokā vai stāstā tagadnē *galvenie* notikumi ir Present Simple: *So this* man *walks into a caf*é *and orders*… Fons var būt ilgstošajā formā (*I'm sitting on the train*).",
+   "correct": "So this man is walking into a café and he orders a glass of milk.",
+   "wrong": [
+    "So I'm sitting on the train, and this man opens a bag of crisps.",
+    "We're having dinner when all the lights go out.",
+    "Then the waiter looks at him and says, \"Are you sure?\""
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-pres-2.csv:3"
+  }
+ },
+ "c1-2b-003": {
+  "hash": "e1283aba255ab23c",
+  "gate_key": "adv_present | C1 | gap | The app ___ to work on my phone. Can you check it? (not / appear) | ",
+  "src": "c1-pres-2.csv:7",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "doesn't appear",
+     "does not appear",
+     "didn't appear",
+     "did not appear",
+     "appears not"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2163",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The app ___ to work on my phone. Can you check it? (not / appear)",
+   "why": "*appear* = seem is a state: present simple, *doesn't appear to work*. In the meaning *take part* it can be continuous (*She's appearing in a musical*).",
+   "why_lv": "*appear* = šķist ir stāvoklis: Present Simple, *doesn't appear to work*. Nozīmē piedalīties, uzstāties var būt Continuous forma (*She's appearing in a musical*).",
+   "answers": [
+    [
+     "doesn't appear",
+     "does not appear",
+     "didn't appear",
+     "did not appear",
+     "appears not"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:7"
+  }
+ },
+ "c1-2b-004": {
+  "hash": "3dd83f5d4de63528",
+  "gate_key": "adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | ",
+  "src": "c1-pres-2.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are expecting",
+     "'re expecting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2164",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "My sister and her husband ___ their first baby next month. (expect)",
+   "why": "*be expecting a baby* = she is pregnant, always continuous. In the meaning *think something will happen*, *expect* is simple (*I expect it will rain*).",
+   "why_lv": "*be expecting a baby = gaida* bērnu, vienmēr Continuous forma. Nozīmē domāt, ka kaut kas notiks *expect* ir vienkāršajā formā (*I expect it will rain*).",
+   "answers": [
+    [
+     "are expecting",
+     "'re expecting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-pres-2.csv:8"
+  }
+ }
+}

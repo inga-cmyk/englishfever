@@ -113,6 +113,7 @@ we won't be able to come | if it snows heavily
 will you be at home | when the parcel arrives
 should we leave | before it gets dark"""
 EXTRA = {
+    "if you mix oil and vinegar they separate": ["if you mix vinegar and oil they separate", "they separate if you mix vinegar and oil"],   # learner report 23 November (c-0621): the two liquids can swap
     "the man who called you is my boss": ["my boss is the man who called you"],
     "the woman whose car was stolen called the police": ["the police called the woman whose car was stolen"],
     "she didn't use to enjoy cooking but now she loves it": ["she didn't use to enjoy cooking but she loves it now"],

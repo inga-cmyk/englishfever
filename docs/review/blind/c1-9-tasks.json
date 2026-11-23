@@ -1,0 +1,106 @@
+[
+ {
+  "id": "c1-9-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The flat may be small, but it's bright and quiet.",
+   "He might not be the fastest, but he never gives up.",
+   "It may well rain later, so take an umbrella.",
+   "She may not much experience, but she learns fast."
+  ]
+ },
+ {
+  "id": "c1-9-002",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Even with my glasses on, I ___ hardly read the sign. (can)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Such ___ the noise from the party that nobody in the street could sleep.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "By the time the doctor arrived, the patient ___ for over an hour. (wait)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I wish you ___ me about the party. I would have come. (tell)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It is essential that every passenger ___ a valid ticket. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-008",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I insist that he ___ told the whole truth.",
+  "options": [
+   "being",
+   "be",
+   "to be",
+   "is being"
+  ]
+ },
+ {
+  "id": "c1-9-009",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I'd rather you wouldn't have sold the car.",
+   "I'd rather you didn't smoke in here.",
+   "I wish I had kept the receipt.",
+   "I'd sooner she hadn't told everyone."
+  ]
+ },
+ {
+  "id": "c1-9-010",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "We'll finish this project on time, come what ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-9-011",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ that's about right, but let me check the figures.",
+  "options": [
+   "I would to say",
+   "I'd say",
+   "I'm saying",
+   "I'd said"
+  ]
+ },
+ {
+  "id": "c1-9-012",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

@@ -55,3 +55,13 @@ mc(T, L, 4, "Which sentence has a mistake?", "We have hoped the weather would ho
 gp(T, L, 4, "I went back to my old school last summer and found that it ___ much. (not / change)", "hadn't changed | had not changed | hasn't changed | has not changed",
    "What you found at a past moment about the time before it: past perfect, *it hadn't changed much* (not *didn't change*).",
    "Ko konstatēji pagātnes brīdī par laiku pirms tā: Past Perfect, *it hadn't changed much* (nevis *didn't change*).")
+
+# ── added 23 November to reach 10 counted tasks ──
+# x_pastpc_choice: an activity up to a past moment
+gp(T, L, 4, "By the time the doctor arrived, the patient ___ for over an hour. (wait)", "had been waiting | 'd been waiting | had waited | 'd waited",
+   "An activity that went on up to a past moment (*by the time the doctor arrived*): past perfect continuous, *had been waiting*.",
+   "Darbība, kas turpinājās līdz pagātnes brīdim (*by the time the doctor arrived*): Past Perfect Continuous, *had been waiting*.")
+# x_unreal_past: wish + past perfect
+gp(T, L, 3, "I wish you ___ me about the party. I would have come. (tell)", "had told | 'd told",
+   "A wish about the past: *I wish* + past perfect, *I wish you had told me*.",
+   "Vēlēšanās par pagātni: *I wish* + Past Perfect, *I wish you had told me*.")

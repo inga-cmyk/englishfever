@@ -35,3 +35,23 @@ mc(T, L, 4, "Choose the correct option: The plan has its problems. ___, it's the
    ["Be that as it is", "Being that as it may", "Be it as that may"],
    "A fixed phrase with the old subjunctive: *Be that as it may* = even so.",
    "Nemainīgs izteiciens ar seno konjunktīvu: *Be that as it may* = tomēr, lai kā arī būtu.")
+
+# ── added 23 November to reach 10 counted tasks ──
+# x_subj_adj
+gp(T, L, 4, "It is essential that every passenger ___ a valid ticket. (have)", "have | should have | has",
+   "After *It is essential / vital that*, formal English uses the base form (*have*) or *should have*; *has* is less formal.",
+   "Aiz *It is essential / vital that* oficiālā valodā lieto pamatformu (*have*) vai *should have*; *has* ir mazāk oficiāli.")
+# x_subj_present
+mc(T, L, 4, "Choose the correct option: I insist that he ___ told the whole truth.", "be",
+   ["is being", "to be", "being"],
+   "After *insist that*, the base form for every person: *I insist that he be told.*",
+   "Aiz *insist that* pamatforma visām personām: *I insist that he be told.*")
+# x_rather_perf
+mc(T, L, 4, "Which sentence has a mistake?", "I'd rather you wouldn't have sold the car.",
+   ["I'd rather you didn't smoke in here.", "I wish I had kept the receipt.", "I'd sooner she hadn't told everyone."],
+   "*I'd rather* + past perfect for the past: *I'd rather you hadn't sold the car*, not *wouldn't have sold*.",
+   "*I'd rather* + Past Perfect pagātnei: *I'd rather you hadn't sold the car*, nevis *wouldn't have sold*.")
+# x_subj_fixed
+gp(T, L, 4, "We'll finish this project on time, come what ___.", "may",
+   "A fixed phrase with the old subjunctive: *come what may* = whatever happens.",
+   "Nemainīgs izteiciens ar seno konjunktīvu: *come what may* = lai kas notiktu.")

@@ -1,0 +1,428 @@
+{
+ "c1-9-001": {
+  "hash": "5d9648b33dc7faa4",
+  "gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast.",
+  "src": "c1-can-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "She may not much experience, but she learns fast.",
+   "wrong": [
+    "The flat may be small, but it's bright and quiet.",
+    "He might not be the fastest, but he never gives up.",
+    "It may well rain later, so take an umbrella."
+   ]
+  },
+  "item": {
+   "id": "c-2168",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*may not* + base verb: *She may not have much experience, but she learns fast.*",
+   "why_lv": "*may not* + pamatforma: *She may not have much experience, but she learns fast.*",
+   "correct": "She may not much experience, but she learns fast.",
+   "wrong": [
+    "The flat may be small, but it's bright and quiet.",
+    "He might not be the fastest, but he never gives up.",
+    "It may well rain later, so take an umbrella."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-can-1.csv:11"
+  }
+ },
+ "c1-9-002": {
+  "hash": "131f8abde6d68fa8",
+  "gate_key": "adv_can | C1 | gap | Even with my glasses on, I ___ hardly read the sign. (can) | ",
+  "src": "c1-can-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "could"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2169",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Even with my glasses on, I ___ hardly read the sign. (can)",
+   "why": "*could* (not *was able to*) with *hardly* and with *see, read, hear* at one past moment: *I could hardly read the sign.*",
+   "why_lv": "*could* (nevis *was able to*) ar *hardly* un ar *see, read, hear* vienā pagātnes brīdī: *I could hardly read the sign.*",
+   "answers": [
+    [
+     "could"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-can-1.csv:12"
+  }
+ },
+ "c1-9-003": {
+  "hash": "f55c8af25c0f7174",
+  "gate_key": "adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | ",
+  "src": "c1-order-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2179",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Such ___ the noise from the party that nobody in the street could sleep.",
+   "why": "*Such* + *be* + subject at the start: *Such was the noise that…* (= the noise was so great that…).",
+   "why_lv": "*Such + be* + teikuma priekšmets sākumā: *Such was the noise that*… (= *troksnis* bija tik *liels*, ka…).",
+   "answers": [
+    [
+     "was"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:11"
+  }
+ },
+ "c1-9-004": {
+  "hash": "09033321dbe15daf",
+  "gate_key": "adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | ",
+  "src": "c1-order-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "did"
+    ],
+    [
+     "realise",
+     "realize"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2180",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise)",
+   "why": "*Only when* + first clause, then inversion in the second (with *did*): *did I realise*.",
+   "why_lv": "*Only when* + pirmā daļa, tad *inversija* otrajā (ar *did*): *did I realise*.",
+   "answers": [
+    [
+     "did"
+    ],
+    [
+     "realise",
+     "realize"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-order-1.csv:12"
+  }
+ },
+ "c1-9-005": {
+  "hash": "a31724e7f67d9f43",
+  "gate_key": "adv_past | C1 | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | ",
+  "src": "c1-past-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been waiting",
+     "'d been waiting",
+     "had waited",
+     "'d waited"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2200",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "By the time the doctor arrived, the patient ___ for over an hour. (wait)",
+   "why": "An activity that went on up to a past moment (*by the time the doctor arrived*): past perfect continuous, *had been waiting*.",
+   "why_lv": "Darbība, kas turpinājās līdz pagātnes brīdim (*by the time the doctor arrived*): Past Perfect Continuous, *had been waiting*.",
+   "answers": [
+    [
+     "had been waiting",
+     "'d been waiting",
+     "had waited",
+     "'d waited"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-past-1.csv:11"
+  }
+ },
+ "c1-9-006": {
+  "hash": "92a0f1a1b31faf7d",
+  "gate_key": "adv_past | C1 | gap | I wish you ___ me about the party. I would have come. (tell) | ",
+  "src": "c1-past-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had told",
+     "'d told"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2201",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wish you ___ me about the party. I would have come. (tell)",
+   "why": "A wish about the past: *I wish* + past perfect, *I wish you had told me*.",
+   "why_lv": "Vēlēšanās par pagātni: *I wish* + Past Perfect, *I wish you had told me.*",
+   "answers": [
+    [
+     "had told",
+     "'d told"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-past-1.csv:12"
+  }
+ },
+ "c1-9-007": {
+  "hash": "c88ba7e5c55010f5",
+  "gate_key": "adv_subj | C1 | gap | It is essential that every passenger ___ a valid ticket. (have) | ",
+  "src": "c1-subj-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have",
+     "should have",
+     "has"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2249",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "It is essential that every passenger ___ a valid ticket. (have)",
+   "why": "After *It is essential / vital that*, formal English uses the base form (*have*) or *should have*; *has* is less formal.",
+   "why_lv": "Aiz *It is essential / vital that* oficiālā valodā lieto pamatformu (*have*) vai *should have; has* ir mazāk oficiāli.",
+   "answers": [
+    [
+     "have",
+     "should have",
+     "has"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:9"
+  }
+ },
+ "c1-9-008": {
+  "hash": "3f6d81aff3bbae21",
+  "gate_key": "adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be",
+  "src": "c1-subj-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "be",
+   "wrong": [
+    "is being",
+    "to be",
+    "being"
+   ]
+  },
+  "item": {
+   "id": "c-2250",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: I insist that he ___ told the whole truth.",
+   "why": "After *insist that*, the base form for every person: *I insist that he be told.*",
+   "why_lv": "Aiz *insist that* pamatforma visām personām: *I insist that he be told.*",
+   "correct": "be",
+   "wrong": [
+    "is being",
+    "to be",
+    "being"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-subj-1.csv:10"
+  }
+ },
+ "c1-9-009": {
+  "hash": "3a59973f17db7549",
+  "gate_key": "adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have sold the car.",
+  "src": "c1-subj-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I'd rather you wouldn't have sold the car.",
+   "wrong": [
+    "I'd rather you didn't smoke in here.",
+    "I wish I had kept the receipt.",
+    "I'd sooner she hadn't told everyone."
+   ]
+  },
+  "item": {
+   "id": "c-2251",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*I'd rather* + past perfect for the past: *I'd rather you hadn't sold the car*, not *wouldn't have sold*.",
+   "why_lv": "*I'd rather* + Past Perfect pagātnei: *I'd rather you hadn't sold the car*, nevis *wouldn't have sold*.",
+   "correct": "I'd rather you wouldn't have sold the car.",
+   "wrong": [
+    "I'd rather you didn't smoke in here.",
+    "I wish I had kept the receipt.",
+    "I'd sooner she hadn't told everyone."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-subj-1.csv:11"
+  }
+ },
+ "c1-9-010": {
+  "hash": "0dadf47fde9f567e",
+  "gate_key": "adv_subj | C1 | gap | We'll finish this project on time, come what ___. | ",
+  "src": "c1-subj-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "may"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2252",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "We'll finish this project on time, come what ___.",
+   "why": "A fixed phrase with the old subjunctive: *come what may* = whatever happens.",
+   "why_lv": "Nemainīgs *izteiciens* ar *seno* konjunktīvu: *come what may* = lai kas *notiktu*.",
+   "answers": [
+    [
+     "may"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-subj-1.csv:12"
+  }
+ },
+ "c1-9-011": {
+  "hash": "61520811575951ef",
+  "gate_key": "adv_will | C1 | mcq | Choose the correct option: ___ that's about right, but let me check the figures. | I'd say",
+  "src": "c1-will-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "I'd say",
+   "wrong": [
+    "I would to say",
+    "I'd said",
+    "I'm saying"
+   ]
+  },
+  "item": {
+   "id": "c-2262",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: ___ that's about right, but let me check the figures.",
+   "why": "*I'd say* makes an opinion less direct: *I'd say that's about right.*",
+   "why_lv": "*I'd say padara viedokli* mazāk tiešu: *I'd say that's about right.*",
+   "correct": "I'd say",
+   "wrong": [
+    "I would to say",
+    "I'd said",
+    "I'm saying"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-will-1.csv:11"
+  }
+ },
+ "c1-9-012": {
+  "hash": "5d72b170bdad3ae9",
+  "gate_key": "adv_will | C1 | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | ",
+  "src": "c1-will-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "'ll be",
+     "will be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2263",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be)",
+   "why": "*will* for a confident guess about now: *That'll be the courier.*",
+   "why_lv": "*will* drošam minējumam par tagadni: *That'll be the courier.*",
+   "answers": [
+    [
+     "'ll be",
+     "will be"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-will-1.csv:12"
+  }
+ }
+}

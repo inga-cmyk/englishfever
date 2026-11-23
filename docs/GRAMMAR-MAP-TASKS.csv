@@ -4260,3 +4260,15 @@ x_inv_cond,C1,adv_order,C1,use,text,read,,c1-order-1.csv:7,"adv_order | C1 | tex
 x_inv_place,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:8,"adv_order | C1 | gap | Here ___ the bus! Quick, get your bag. (come) | "
 x_cleft_adv,C1,adv_order,C1,use,text,read,,c1-order-1.csv:9,adv_order | C1 | text | Start with *What*: I need a long holiday. | 
 x_front_as,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:10,"adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | "
+x_may_but,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:11,"adv_can | C1 | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast."
+x_able_limits,C1,adv_can,C1,use,gap,read,,c1-can-1.csv:12,"adv_can | C1 | gap | Even with my glasses on, I ___ hardly read the sign. (can) | "
+x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:11,adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | 
+x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:12,adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | 
+x_pastpc_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:11,"adv_past | C1 | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | "
+x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:12,adv_past | C1 | gap | I wish you ___ me about the party. I would have come. (tell) | 
+x_subj_adj,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:9,adv_subj | C1 | gap | It is essential that every passenger ___ a valid ticket. (have) | 
+x_subj_present,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:10,adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be
+x_rather_perf,C1,adv_subj,C1,check,mcq,read,,c1-subj-1.csv:11,adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have sold the car.
+x_subj_fixed,C1,adv_subj,C1,use,gap,read,,c1-subj-1.csv:12,"adv_subj | C1 | gap | We'll finish this project on time, come what ___. | "
+x_would_soft,C1,adv_will,C1,check,mcq,read,,c1-will-1.csv:11,"adv_will | C1 | mcq | Choose the correct option: ___ that's about right, but let me check the figures. | I'd say"
+x_will_assume,C1,adv_will,C1,use,gap,read,,c1-will-1.csv:12,adv_will | C1 | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | 

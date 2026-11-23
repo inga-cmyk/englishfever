@@ -17714,5 +17714,53 @@
 "adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | ": [
 "x_front_as",
 "read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast.": [
+"x_may_but",
+"read"
+],
+"adv_can | C1 | gap | Even with my glasses on, I ___ hardly read the sign. (can) | ": [
+"x_able_limits",
+"read"
+],
+"adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | ": [
+"x_inv_so",
+"read"
+],
+"adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | ": [
+"x_inv_main",
+"read"
+],
+"adv_past | C1 | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | ": [
+"x_pastpc_choice",
+"read"
+],
+"adv_past | C1 | gap | I wish you ___ me about the party. I would have come. (tell) | ": [
+"x_unreal_past",
+"read"
+],
+"adv_subj | C1 | gap | It is essential that every passenger ___ a valid ticket. (have) | ": [
+"x_subj_adj",
+"read"
+],
+"adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have sold the car.": [
+"x_rather_perf",
+"read"
+],
+"adv_subj | C1 | gap | We'll finish this project on time, come what ___. | ": [
+"x_subj_fixed",
+"read"
+],
+"adv_will | C1 | mcq | Choose the correct option: ___ that's about right, but let me check the figures. | I'd say": [
+"x_would_soft",
+"read"
+],
+"adv_will | C1 | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | ": [
+"x_will_assume",
+"read"
 ]
 }

@@ -8234,7 +8234,19 @@ return json_decode(<<<'EF_JSON_END'
 "adv_order | text | Start with *Should*: If you need any help, please call reception. | ": "x_inv_cond",
 "adv_order | gap | Here ___ the bus! Quick, get your bag. (come) | ": "x_inv_place",
 "adv_order | text | Start with *What*: I need a long holiday. | ": "x_cleft_adv",
-"adv_order | gap | Cold ___ it was, we went for a swim in the lake. | ": "x_front_as"
+"adv_order | gap | Cold ___ it was, we went for a swim in the lake. | ": "x_front_as",
+"adv_can | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast.": "x_may_but",
+"adv_can | gap | Even with my glasses on, I ___ hardly read the sign. (can) | ": "x_able_limits",
+"adv_order | gap | Such ___ the noise from the party that nobody in the street could sleep. | ": "x_inv_so",
+"adv_order | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | ": "x_inv_main",
+"adv_past | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | ": "x_pastpc_choice",
+"adv_past | gap | I wish you ___ me about the party. I would have come. (tell) | ": "x_unreal_past",
+"adv_subj | gap | It is essential that every passenger ___ a valid ticket. (have) | ": "x_subj_adj",
+"adv_subj | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be": "x_subj_present",
+"adv_subj | mcq | Which sentence has a mistake? | I'd rather you wouldn't have sold the car.": "x_rather_perf",
+"adv_subj | gap | We'll finish this project on time, come what ___. | ": "x_subj_fixed",
+"adv_will | mcq | Choose the correct option: ___ that's about right, but let me check the figures. | I'd say": "x_would_soft",
+"adv_will | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | ": "x_will_assume"
 }
 }
 EF_JSON_END

@@ -45,3 +45,14 @@ mc(T, L, 4, "Choose the correct option: Keep the receipt in case you ___ to retu
    ["will need", "would need", "had needed"],
    "*in case* + *should* (or the present simple) for a small chance: *in case you should need to return them*, not *will*.",
    "*in case* + *should* (vai Present Simple) nelielai iespējai: *in case you should need to return them*, nevis *will*.")
+
+# ── added 23 November to reach 10 counted tasks ──
+# x_would_soft
+mc(T, L, 4, "Choose the correct option: ___ that's about right, but let me check the figures.", "I'd say",
+   ["I would to say", "I'd said", "I'm saying"],
+   "*I'd say* makes an opinion less direct: *I'd say that's about right.*",
+   "*I'd say* padara viedokli mazāk tiešu: *I'd say that's about right.*")
+# x_will_assume
+gp(T, L, 3, "There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be)", "'ll be | will be",
+   "*will* for a confident guess about now: *That'll be the courier.*",
+   "*will* drošam minējumam par tagadni: *That'll be the courier.*")

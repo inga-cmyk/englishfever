@@ -35,3 +35,13 @@ tx(T, L, 3, "Start with *What*: I need a long holiday.", "What I need is a long 
 gp(T, L, 4, "Cold ___ it was, we went for a swim in the lake.", "though | as",
    "Adjective + *though / as* + subject + verb = although it was cold: *Cold though it was, …*",
    "Īpašības vārds + *though / as* + teikuma priekšmets + darbības vārds = lai gan bija auksti: *Cold though it was, …*")
+
+# ── added 23 November to reach 10 counted tasks ──
+# x_inv_so
+gp(T, L, 4, "Such ___ the noise from the party that nobody in the street could sleep.", "was",
+   "*Such* + *be* + subject at the start: *Such was the noise that…* (= the noise was so great that…).",
+   "*Such* + *be* + teikuma priekšmets sākumā: *Such was the noise that…* (= troksnis bija tik liels, ka…).")
+# x_inv_main
+gp(T, L, 4, "Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise)", "did / realise | realize",
+   "*Only when* + first clause, then inversion in the second (with *did*): *did I realise*.",
+   "*Only when* + pirmā daļa, tad inversija otrajā (ar *did*): *did I realise*.")

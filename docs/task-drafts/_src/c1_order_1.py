@@ -23,13 +23,13 @@ tx(T, L, 4, "Start with *Had*: If I had known about the traffic, I would have le
    "A condition without *if*: *Had* + subject + past participle: *Had I known…*",
    "Nosacījums bez *if*: *Had* + teikuma priekšmets + 3. forma: *Had I known…*")
 tx(T, L, 4, "Start with *Should*: If you need any help, please call reception.",
-   "Should you need any help, please call reception.",
+   "Should you need any help, please call reception. | Should you need any help, call reception.",
    "A formal condition without *if*: *Should* + subject + base verb: *Should you need any help…*",
    "Oficiāls nosacījums bez *if*: *Should* + teikuma priekšmets + pamatforma: *Should you need any help…*")
 gp(T, L, 3, "Here ___ the bus! Quick, get your bag. (come)", "comes",
    "After *Here* with a noun subject, the verb comes first: *Here comes the bus!* (but *Here it comes!*)",
    "Pēc *Here*, ja teikuma priekšmets ir lietvārds, darbības vārds stāv pirmais: *Here comes the bus!* (bet *Here it comes!*)")
-tx(T, L, 3, "Start with *What*: I need a long holiday.", "What I need is a long holiday.",
+tx(T, L, 3, "Start with *What*: I need a long holiday.", "What I need is a long holiday. | What I need's a long holiday. | What I need is to have a long holiday.",
    "*What* + subject + verb + *is* puts the focus on the thing: *What I need is a long holiday.*",
    "*What* + teikuma priekšmets + darbības vārds + *is* izceļ lietu: *What I need is a long holiday.*")
 gp(T, L, 4, "Cold ___ it was, we went for a swim in the lake.", "though | as",

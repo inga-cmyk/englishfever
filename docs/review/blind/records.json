@@ -549,6 +549,11 @@
 "round": "r20b-2",
 "task": "r20b-2-007"
 },
+"117cf0a984a0f64f": {
+"gate_key": "adv_part | C1 | mcq | Choose the correct option: ___ no questions, the chair closed the meeting. | There being",
+"round": "c1-7",
+"task": "c1-7-016"
+},
 "11df11745c6abbb0": {
 "gate_key": "modal_verbs | B1.1 | gap | My flatmate ___ get up early on Mondays because her first class starts at eleven. (have to / not) | ",
 "round": "r10",
@@ -1239,6 +1244,11 @@
 "round": "r10",
 "task": "r10-101"
 },
+"2a9ea3353172671c": {
+"gate_key": "adv_order | C1 | gap | Here ___ the bus! Quick, get your bag. (come) | ",
+"round": "c1-7",
+"task": "c1-7-008"
+},
 "2aa0bbc629f57311": {
 "gate_key": "rep_questions | B1.2 | order | Put the words in order. | she asked where her keys were",
 "round": "r5",
@@ -1248,6 +1258,11 @@
 "gate_key": "present_continuous | B1.2 | match | Match each beginning with its ending. | My flatmate is always leaving = the front door unlocked. ; Our manager is constantly changing = the meeting times. ; My cousin is forever borrowing = my phone charger. ; The neighbours' dogs are always barking = at the postman.",
 "round": "r11",
 "task": "r11-025"
+},
+"2ab558209e317433": {
+"gate_key": "adv_part | C1 | gap | The river burst its banks, ___ the streets near the station. (flood) | ",
+"round": "c1-7",
+"task": "c1-7-017"
 },
 "2abd1343516f3c84": {
 "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is correct? | It remains unclear who is responsible for the delay.",
@@ -1779,6 +1794,11 @@
 "round": "r20-2",
 "task": "r20-2-007"
 },
+"3b8ef9961fcfd694": {
+"gate_key": "adv_part | C1 | mcq | Which sentence has a mistake? | Walking into the office, the lights were all off.",
+"round": "c1-7",
+"task": "c1-7-011"
+},
 "3baac1bbfb8ec18e": {
 "gate_key": "cond_advanced | B2.2 | text | Rewrite with unless: You will not get a refund if you don't have a receipt. | ",
 "round": "r20-1",
@@ -1873,6 +1893,11 @@
 "gate_key": "adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | ",
 "round": "c1-2b",
 "task": "c1-2b-004"
+},
+"3e0b44b048e6316c": {
+"gate_key": "adv_order | C1 | text | Start with *What*: I need a long holiday. | ",
+"round": "c1-7",
+"task": "answers added"
 },
 "3e106b408d037cb5": {
 "gate_key": "quantity | A2.2 | gap | Thank you! Your advice about the exam ___ really helpful. (be) | ",
@@ -2254,6 +2279,11 @@
 "round": "r17b",
 "task": "r17b-004"
 },
+"4b1f63b2cb82bb08": {
+"gate_key": "adv_part | C1 | gap | Not ___ anyone in the city, he felt very lonely at first. (know) | ",
+"round": "c1-7",
+"task": "c1-7-013"
+},
 "4b29708f25956f8f": {
 "gate_key": "present_continuous | B1.2 | mcq | Which sentence is NOT correct? | My dad is always lose his glasses somewhere in the house.",
 "round": "r11",
@@ -2433,6 +2463,11 @@
 "gate_key": "cond_mixed | B2.2 | mcq | Which sentence without *if* is correct? | Had we booked earlier, we would be on the beach now.",
 "round": "r20-5",
 "task": "r20-5-028"
+},
+"51b507ba2fd35c6f": {
+"gate_key": "adv_order | C1 | gap | Write one word in each gap: Not until the guests had gone ___ we ___ the stain on the carpet. (notice) | ",
+"round": "c1-7",
+"task": "c1-7-004"
 },
 "51cce0226b66efce": {
 "gate_key": "narrative_b2 | B2.1 | mcq | Choose the correct option: The floor was wet. Water ___ from a pipe all night. | had been leaking",
@@ -2954,6 +2989,11 @@
 "round": "r1",
 "task": "r1-013"
 },
+"643d12f9c810e85f": {
+"gate_key": "adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | ",
+"round": "c1-7",
+"task": "answers added"
+},
 "647e5c07c5bf5fbf": {
 "gate_key": "relative_clauses | A2.2 | mcq | Which sentence is correct? | I need a laptop that is light.",
 "round": "r1",
@@ -2963,6 +3003,11 @@
 "gate_key": "used_to | A2.2 | gap | Complete with one word: I no ___ use this app. | ",
 "round": "r9",
 "task": "r9-084"
+},
+"64f2fa42d37d3a8f": {
+"gate_key": "adv_order | C1 | text | Start with *What*: I need a long holiday. | ",
+"round": "c1-7",
+"task": "c1-7-009"
 },
 "650d48105d1c4bf3": {
 "gate_key": "narrative_b2 | B2.1 | gap | Anna's hands were dirty when she came in. She ___ in the garden all afternoon. (work) | ",
@@ -3329,6 +3374,11 @@
 "round": "r20c",
 "task": "r20c-005"
 },
+"70a29320265bff57": {
+"gate_key": "adv_order | C1 | text | Start with *Had*: If I had known about the traffic, I would have left earlier. | ",
+"round": "c1-7",
+"task": "c1-7-006"
+},
 "70e5dc0897d0a1ea": {
 "gate_key": "ind_advanced | B2.2 | mcq | Choose the correct word: ___ arrives last has to wash the dishes. | Whoever",
 "round": "r20-1",
@@ -3419,6 +3469,11 @@
 "round": "r20b-1",
 "task": "r20b-1-030"
 },
+"735631b70333fbc3": {
+"gate_key": "adv_order | C1 | mcq | Which sentence has a mistake? | Never I have felt so tired in my life.",
+"round": "c1-7",
+"task": "c1-7-003"
+},
 "73830d4f68c035e8": {
 "gate_key": "used_to | B1.2 | gap | Every August my grandmother ___ jam from the berries we picked in the forest. | ",
 "round": "r11",
@@ -3448,6 +3503,11 @@
 "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | We still can't decide whether moving to a bigger flat.",
 "round": "r20b-3",
 "task": "r20b-3-012"
+},
+"74779b727d0c1062": {
+"gate_key": "adv_order | C1 | gap | Write one word in each gap: Rarely ___ I ___ such a beautiful sunset. (have / see) | ",
+"round": "c1-7",
+"task": "c1-7-002"
 },
 "748b199fe59a2def": {
 "gate_key": "adv_perfect | C1 | gap | By next May I ___ at this school for ten years. (teach) | ",
@@ -3723,6 +3783,11 @@
 "gate_key": "ind_polite | B1.1 | gap | 'Where does Tom work?'\nDo you know where ___ ___ ? | ",
 "round": "r4",
 "task": "r4-030"
+},
+"7fdc73f7026b73bd": {
+"gate_key": "adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | ",
+"round": "c1-7",
+"task": "c1-7-010"
 },
 "7fe2488297706562": {
 "gate_key": "conj_clauses | A2.2 | text | Join with *to*: I went to the post office. I sent a parcel there. | ",
@@ -4018,6 +4083,11 @@
 "gate_key": "adv_agree | C1 | gap | Either the manager or her assistants ___ going to call you back. (be) | ",
 "round": "c1-6",
 "task": "c1-6-008"
+},
+"8a4d5d3562d08248": {
+"gate_key": "adv_part | C1 | gap | ___ in a cool, dry place, the seeds will keep for years. (store) | ",
+"round": "c1-7",
+"task": "c1-7-014"
 },
 "8a53e2e866ffaee8": {
 "gate_key": "cond_third | B2.2 | mcq | Imagine the past was different: 'If she ___ the warning, she ___ the accident.' | had heard / would have avoided",
@@ -4694,6 +4764,11 @@
 "round": "r10",
 "task": "r10-052"
 },
+"9eb9b1fce5506d9d": {
+"gate_key": "adv_order | C1 | text | Start with *Should*: If you need any help, please call reception. | ",
+"round": "c1-7",
+"task": "c1-7-007"
+},
 "9edfc08515840a5f": {
 "gate_key": "cond_second | B2.1 | gap | If I ___ her number, I would call her right now. (know) | ",
 "round": "r20-5",
@@ -4774,6 +4849,11 @@
 "round": "r20-5",
 "task": "r20-5-060"
 },
+"a2b92794cdcbdf88": {
+"gate_key": "adv_part | C1 | gap | ___ by the queue outside, the new café is very popular. (judge) | ",
+"round": "c1-7",
+"task": "c1-7-020"
+},
 "a2c04004fb3bb609": {
 "gate_key": "future | A2.1 | gap | It's raining. Shall we ___ a taxi? (take) | ",
 "round": "r9",
@@ -4783,6 +4863,11 @@
 "gate_key": "verb_patterns | A2.2 | text | Say it another way with *for*: I took a short walk after lunch. | ",
 "round": "r9",
 "task": "answers added"
+},
+"a30be3fbc05da24f": {
+"gate_key": "adv_part | C1 | gap | ___ finished the report, she went home early. (have) | ",
+"round": "c1-7",
+"task": "c1-7-012"
 },
 "a37ca4b43512e837": {
 "gate_key": "verb_patterns | B1.1 | order | Put the words in order. | my father started using a smartphone when he turned seventy",
@@ -5043,6 +5128,11 @@
 "gate_key": "adv_agree | C1 | gap | Being late for every meeting ___ not going to help your career. (be) | ",
 "round": "c1-6",
 "task": "c1-6-009"
+},
+"aa44de30ac0652c2": {
+"gate_key": "adv_part | C1 | gap | ___ prices going up every month, many families are struggling. | ",
+"round": "c1-7",
+"task": "c1-7-015"
 },
 "aa6cf6ec9429fb1d": {
 "gate_key": "rep_verbs | B2.2 | gap | She insisted ___ for the whole dinner. (pay) | ",
@@ -5343,6 +5433,11 @@
 "gate_key": "narrative_b2 | B2.1 | gap | James was out of breath when he came in. He ___. (run) | ",
 "round": "r20-2",
 "task": "r20-2-058"
+},
+"b2eb9a9e0a2656d3": {
+"gate_key": "adv_can | C1 | mcq | Choose the correct option: The next bus is in an hour, so we ___ walk. | might as well",
+"round": "c1-7",
+"task": "c1-7-001"
 },
 "b2f21aa34aa523e4": {
 "gate_key": "ind_polite | B1.2 | text | 'Is there a pharmacy near here?'\nFinish the sentence: Can you tell me if … | ",
@@ -5868,6 +5963,11 @@
 "gate_key": "used_to | A2.2 | text | Say it another way with *no longer*: The museum isn't free any more. | ",
 "round": "r9",
 "task": "r9-089"
+},
+"c1ec381649f45010": {
+"gate_key": "adv_order | C1 | gap | So loud ___ the music that we couldn't hear each other. | ",
+"round": "c1-7",
+"task": "c1-7-005"
 },
 "c1fe1e2a8a59284c": {
 "gate_key": "conj_b2 | B2.2 | gap | The company lost its biggest client. ___, it had to cut twenty jobs. | ",
@@ -6624,6 +6724,11 @@
 "round": "r5",
 "task": "answers added"
 },
+"dae5330aa8cf067c": {
+"gate_key": "adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On",
+"round": "c1-7",
+"task": "c1-7-018"
+},
 "dafb4d93522e2dc2": {
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is correct? | If I had realised the impact of my decision, I would have acted differently.",
 "round": "r20c",
@@ -7174,6 +7279,11 @@
 "round": "r9",
 "task": "r9-112"
 },
+"eb53a4d25533bf75": {
+"gate_key": "adv_part | C1 | gap | Keep the jar in the fridge once ___. (open) | ",
+"round": "c1-7",
+"task": "c1-7-019"
+},
 "eb85d9174a810699": {
 "gate_key": "future | A2.1 | gap | Your phone is dead. Shall I ___ you mine? (lend) | ",
 "round": "r9",
@@ -7389,6 +7499,11 @@
 "round": "r20b-3",
 "task": "r20b-3-013"
 },
+"f2a042bd974629f2": {
+"gate_key": "adv_part | C1 | gap | Keep the jar in the fridge once ___. (open) | ",
+"round": "c1-7",
+"task": "answers added"
+},
 "f2fb132fbe6a83d8": {
 "gate_key": "relative_clauses | A2.2 | match | Match each beginning with its ending. | A baker is a person = who makes bread. ; A fridge is a machine = which keeps food cold. ; A tourist is someone = who travels for fun. ; A map is a drawing = which shows roads and towns.",
 "round": "r1b",
@@ -7458,6 +7573,11 @@
 "gate_key": "ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me when my order will be delivered.",
 "round": "r20-2",
 "task": "r20-2-034"
+},
+"f5a2d29a8a50fcac": {
+"gate_key": "adv_part | C1 | gap | ___ by the queue outside, the new café is very popular. (judge) | ",
+"round": "c1-7",
+"task": "answers added"
 },
 "f608635d61d9e92a": {
 "gate_key": "articles | A2.1 | gap | I usually listen to ___ jazz in the car. | ",

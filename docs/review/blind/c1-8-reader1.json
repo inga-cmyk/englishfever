@@ -1,0 +1,20 @@
+[
+{
+"id": "c1-8-001",
+"answer": "On",
+"other_correct": "",
+"wrong_options_that_fit": "In (weak: 'In hearing the news' is grammatical but means 'while/in the course of hearing', and does not suit the instant reaction; not natural here)",
+"instruction_problem": "Instruction is fine, but it gives no context: the single answer relies on a fixed 'on + -ing' pattern.",
+"level_problem": "Too easy for C1: 'on + -ing' is a B1/B2 point and the sentence is short and simple; a B1 learner could solve it. No nuance of use (e.g. on/upon, formal register) is tested.",
+"sense_problem": ""
+},
+{
+"id": "c1-8-002",
+"answer": "The colleague with who I share an office is on holiday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Borderline for C1: 'preposition + whom' is mostly B2; the task tests form, not use or nuance (formal vs informal register).",
+"sense_problem": "Learners do write 'with who', but many native speakers also say it informally, so the 'mistake' is register-dependent. Option 3 is a very formal 'to whom' next to a casual 'charger you were looking for', fine. Distractors are correct and near-identical in type (preposition placement), which is acceptable."
+}
+]

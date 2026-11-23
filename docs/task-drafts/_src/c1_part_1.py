@@ -32,9 +32,9 @@ mc(T, L, 3, "Choose the correct option: ___ hearing the news, she burst into tea
    ["In", "By", "Without"],
    "*On* + *-ing* = at the moment when: *On hearing the news* = when she heard the news.",
    "*On* + *-ing* = tajā brīdī, kad: *On hearing the news* = kad viņa dzirdēja ziņu.")
-gp(T, L, 3, "Keep the jar in the fridge once ___. (open)", "opened",
+gp(T, L, 3, "Keep the jar in the fridge once ___. (open)", "opened | open",
    "*once* + past participle (= once it has been opened): *Keep refrigerated once opened.*",
    "*once* + 3. forma (= kad tas ir atvērts): *Keep refrigerated once opened.*")
-gp(T, L, 3, "___ by the queue outside, the new café is very popular. (judge)", "Judging",
+gp(T, L, 3, "___ by the queue outside, the new café is very popular. (judge)", "Judging | Judged",
    "A fixed comment phrase: *Judging by…* (it does not need the subject of the main clause).",
    "Nemainīgs komentāra izteiciens: *Judging by…* (tam nav vajadzīgs galvenā teikuma priekšmets).")

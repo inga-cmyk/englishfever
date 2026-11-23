@@ -74,6 +74,7 @@ Not changed yet; listed so that they are decided before the analysis. Comparison
 - **Support shown**: the welcome greetings and reminder clicks are tracked in the app but are not in the research `events.csv` yet.
 
 ## Changes
+- 23 Nov 2026: eight more C1 topics (directions 3-10: `adv_perfect`, `adv_will`, `adv_can`, `adv_subj`, `adv_agree`, `adv_prep`, `adv_part`, `adv_order`), level `C1`, prepared files `docs/task-drafts/c1-*-1.csv`; all under *New*.
 - 23 Nov 2026: second C1 topic *Advanced past simple, past continuous and past perfect* (`adv_past`, level `C1`, `docs/task-drafts/c1-past-1.csv`), in *Active tenses* and under *New*.
 - 22 Nov 2026 (zip of that day, after 11:13): **C1 is a real level** (teacher). New topic *Advanced present simple and continuous* (`adv_present`, level `C1`, 9 prepared tasks in `docs/task-drafts/c1-pres-1.csv`), shown in *Active tenses* and under *New*. The level code is exactly `C1`; tasks with the old labels C1.1 / C1.2 are still B2.2 (they are B2 grammar). The level test never goes to C1 and *My level* still tops at B2.2; C1 is not on *My learning path*. C1 answers appear in answers.csv with level `C1`.
 - 22 Nov 2026: welcome-back greeting: the line *This week: N days · M min* removed; a second line by the learner's rhythm (`Stats::rhythm`); the `welcome` event detail adds the line key (event not in the research export yet).

@@ -1,0 +1,26 @@
+[
+ {
+  "id": "c1-8-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ hearing the news, she burst into tears.",
+  "options": [
+   "In",
+   "By",
+   "Without",
+   "On"
+  ]
+ },
+ {
+  "id": "c1-8-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "That's the flat that we looked at yesterday.",
+   "The colleague with who I share an office is on holiday.",
+   "The person to whom the letter was addressed has moved.",
+   "Is this the charger you were looking for?"
+  ]
+ }
+]

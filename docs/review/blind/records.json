@@ -449,6 +449,11 @@
 "round": "r9",
 "task": "r9-036"
 },
+"0daf3a29b40eea51": {
+"gate_key": "adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On",
+"round": "c1-8",
+"task": "c1-8-001"
+},
 "0dc2dd90fcfcb90f": {
 "gate_key": "cond_advanced | B1.2 | gap | My flat is tiny. I wish it ___ bigger. (be) | ",
 "round": "r8",
@@ -7183,6 +7188,11 @@
 "gate_key": "present_continuous | B1.2 | gap | Complain with *always*: My flatmates ___ (leave) their muddy shoes in the hall and never clean up. | ",
 "round": "r11",
 "task": "answers added"
+},
+"e8886e9b73f0d646": {
+"gate_key": "adv_prep | C1 | mcq | Which sentence has a mistake? | The colleague with who I share an office is on holiday.",
+"round": "c1-8",
+"task": "c1-8-002"
 },
 "e8af631cd54ad771": {
 "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | she had been learning French for years when she moved",

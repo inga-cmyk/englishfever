@@ -11075,7 +11075,7 @@ return json_decode(<<<'EF_JSON_END'
      "Stories and jokes, live commentary, headlines and the contents of books and films use the present: *Minister resigns. In the film, a pilot returns to his village.*"
     ],
     "signals": "*measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest*",
-    "example": "*I'm measuring the kitchen: it measures only 3 by 4 metres, and you're constantly telling me it's big enough!*"
+    "example": "*I love my job. I'm just not loving this Monday.*"
    },
    "rule_lv": {
     "form": [

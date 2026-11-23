@@ -249,6 +249,11 @@
 "round": "r10",
 "task": "r10-033"
 },
+"068cbf03f2a73bd9": {
+"gate_key": "adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light) | ",
+"round": "c1-3",
+"task": "c1-3-001"
+},
 "0751bbed4574f65b": {
 "gate_key": "future | A2.2 | gap | Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy) | ",
 "round": "r13",
@@ -918,6 +923,11 @@
 "gate_key": "cond_first | B1.1 | gap | My course begins on Monday. When it ___, I'll have less free time. (start) | ",
 "round": "r12",
 "task": "answers added"
+},
+"205f08ea5a33b846": {
+"gate_key": "adv_past | C1 | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | ",
+"round": "c1-3",
+"task": "c1-3-008"
 },
 "20772b1da0d54f9e": {
 "gate_key": "future | A2.1 | mcq | Which sentence is correct? | Shall I help you with your suitcase?",
@@ -1599,6 +1609,11 @@
 "round": "r8",
 "task": "r8-044"
 },
+"37cdee47b3e306ae": {
+"gate_key": "adv_past | C1 | gap | As soon as I saw her at the party, I was sure we ___ before. (meet) | ",
+"round": "c1-3",
+"task": "c1-3-003"
+},
 "37fd05d459b88cdc": {
 "gate_key": "cond_third | B2.2 | gap | She stayed late and missed the last bus. If she ___ (not / stay) so late, she ___ (not / miss) the last bus. | ",
 "round": "r20-4",
@@ -1888,6 +1903,11 @@
 "gate_key": "ind_polite | B1.1 | mcq | Which sentence has a mistake? | Can you tell me where can I leave my bike?",
 "round": "r17",
 "task": "r17-015"
+},
+"427f9b77526f05d1": {
+"gate_key": "adv_past | C1 | gap | Write one word in each gap: My old flatmate ___ always ___ the lights on. It drove me mad. (leave) | ",
+"round": "c1-3",
+"task": "c1-3-009"
 },
 "42a5aafec090bc48": {
 "gate_key": "adj_order | A2.1 | order | Put the words in order. | my grandmother is very active for her age",
@@ -3554,6 +3574,11 @@
 "round": "r20b-2",
 "task": "r20b-2-012"
 },
+"80ecc519e0424e4f": {
+"gate_key": "adv_past | C1 | mcq | Which sentence has a mistake? | We were flying to Oslo four times last year.",
+"round": "c1-3",
+"task": "c1-3-002"
+},
 "80ef4e878770e8e0": {
 "gate_key": "cond_mixed | B2.1 | gap | Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know) | ",
 "round": "r20b-3",
@@ -3678,6 +3703,11 @@
 "gate_key": "ind_polite | B2.1 | order | Put the words in order. | do you know what time it opens",
 "round": "r20-4",
 "task": "r20-4-021"
+},
+"86439b5a2fec1563": {
+"gate_key": "adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light) | ",
+"round": "c1-3",
+"task": "answers added"
 },
 "86966178bc33d8a3": {
 "gate_key": "ind_advanced | B2.2 | text | Combine the two sentences without changing their meaning: Who made the decision? It's not clear. | ",
@@ -4913,6 +4943,11 @@
 "gate_key": "rep_statements | B2.1 | order | Put the words in order. | the coach told us to warm up before every match",
 "round": "r20-3",
 "task": "r20-3-040"
+},
+"ae8ef30017d18e8f": {
+"gate_key": "adv_past | C1 | gap | We ___ each other for years before we started working together. (know) | ",
+"round": "c1-3",
+"task": "c1-3-005"
 },
 "aeb6672b2893aeea": {
 "gate_key": "conj_clauses | B2.1 | text | Correct the mistake: Despite of the delays, the project was finished on time. | ",
@@ -6184,6 +6219,11 @@
 "round": "r20-3",
 "task": "r20-3-033"
 },
+"d89f9f763fff6636": {
+"gate_key": "adv_past | C1 | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved",
+"round": "c1-3",
+"task": "c1-3-007"
+},
 "d8b0c1bec954c6c1": {
 "gate_key": "cond_mixed | B2.1 | gap | I didn't learn English at school. If I ___ it then, I ___ fluent now. (learn / be) | ",
 "round": "r1b",
@@ -7238,6 +7278,11 @@
 "gate_key": "used_to | A2.2 | mcq | Which sentence is NOT correct? | I don't live there no more.",
 "round": "r9",
 "task": "r9-080"
+},
+"fe6300548e175d29": {
+"gate_key": "adv_past | C1 | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | ",
+"round": "c1-3",
+"task": "c1-3-006"
 },
 "fe9f314e3298d28c": {
 "gate_key": "ind_polite | B1.1 | text | 'What time does the bus leave?'\nFinish the sentence: Could you tell me what time … | ",

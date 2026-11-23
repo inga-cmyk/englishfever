@@ -1,0 +1,107 @@
+{
+ "c1-3b-001": {
+  "hash": "3a7d70ff5e2ab283",
+  "gate_key": "adv_past | C1 | mcq | Which sentence has a mistake? | We have hoped the weather would hold, but it rained all weekend.",
+  "src": "c1-past-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "We have hoped the weather would hold, but it rained all weekend.",
+   "wrong": [
+    "I was meaning to call you, but the week got away from me.",
+    "I had hoped to finish the report by Friday.",
+    "They were planning to move, but they changed their minds."
+   ]
+  },
+  "item": {
+   "id": "c-2156",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "A hope or a plan that did not happen, about the past: past perfect, past simple or past continuous (*We had hoped / hoped / were hoping*), not the present perfect (*have hoped*): the weekend is over.",
+   "why_lv": "Cerība vai plāns, kas neīstenojās, par pagātni: Past Perfect, Past Simple vai Past Continuous (*We had hoped / hoped / were hoping*), nevis Present Perfect (*have hoped*): nedēļas *nogale* ir *beigusies*.",
+   "correct": "We have hoped the weather would hold, but it rained all weekend.",
+   "wrong": [
+    "I was meaning to call you, but the week got away from me.",
+    "I had hoped to finish the report by Friday.",
+    "They were planning to move, but they changed their minds."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-past-1.csv:9"
+  }
+ },
+ "c1-3b-002": {
+  "hash": "7b8f98077450d6ee",
+  "gate_key": "adv_past | C1 | mcq | Choose the correct option: When we shared a flat, Tom ___ my phone charger without asking. | was always borrowing",
+  "src": "c1-past-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "was always borrowing",
+   "wrong": [
+    "always was borrowing",
+    "was always borrow",
+    "has always borrowed"
+   ]
+  },
+  "item": {
+   "id": "c-2157",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: When we shared a flat, Tom ___ my phone charger without asking.",
+   "why": "*was always* + *-ing* for an annoying past habit: *Tom was always borrowing my charger.* *always* goes after *was*; the present perfect does not fit a finished time (*when we shared a flat*).",
+   "why_lv": "*was always + -ing* kaitinošam pagātnes ieradumam: *Tom was always borrowing my charger.* *always* stāv aiz *was*; Present Perfect *neder pabeigtam laikam* (*when we shared a flat*).",
+   "correct": "was always borrowing",
+   "wrong": [
+    "always was borrowing",
+    "was always borrow",
+    "has always borrowed"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "c1-past-1.csv:10"
+  }
+ },
+ "c1-3b-003": {
+  "hash": "5d6084464d30aec0",
+  "gate_key": "adv_past | C1 | gap | I went back to my old school last summer and found that it ___ much. (not / change) | ",
+  "src": "c1-past-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "hadn't changed",
+     "had not changed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2158",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "I went back to my old school last summer and found that it ___ much. (not / change)",
+   "why": "What you found at a past moment about the time before it: past perfect, *it hadn't changed much* (not *didn't change*).",
+   "why_lv": "Ko konstatēji pagātnes brīdī par laiku pirms tā: Past Perfect, *it hadn't changed much* (nevis *didn't change*).",
+   "answers": [
+    [
+     "hadn't changed",
+     "had not changed"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "c1-past-1.csv:11"
+  }
+ }
+}

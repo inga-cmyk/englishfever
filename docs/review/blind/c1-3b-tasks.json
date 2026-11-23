@@ -1,0 +1,33 @@
+[
+ {
+  "id": "c1-3b-001",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I was meaning to call you, but the week got away from me.",
+   "I had hoped to finish the report by Friday.",
+   "They were planning to move, but they changed their minds.",
+   "We have hoped the weather would hold, but it rained all weekend."
+  ]
+ },
+ {
+  "id": "c1-3b-002",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: When we shared a flat, Tom ___ my phone charger without asking.",
+  "options": [
+   "has always borrowed",
+   "was always borrowing",
+   "was always borrow",
+   "always was borrowing"
+  ]
+ },
+ {
+  "id": "c1-3b-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I went back to my old school last summer and found that it ___ much. (not / change)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

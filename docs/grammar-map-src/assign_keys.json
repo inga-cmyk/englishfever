@@ -17370,5 +17370,33 @@
 "adv_present | C1 | mcq | Which sentence has a mistake? | I'm promising I'll pay you back on Friday.": [
 "x_performative",
 "read"
+],
+"adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light) | ": [
+"x_past_both",
+"read"
+],
+"adv_past | C1 | mcq | Which sentence has a mistake? | We were flying to Oslo four times last year.": [
+"x_pastc_repeat",
+"read"
+],
+"adv_past | C1 | gap | As soon as I saw her at the party, I was sure we ___ before. (meet) | ": [
+"x_pastp_choice",
+"read"
+],
+"adv_past | C1 | gap | We ___ each other for years before we started working together. (know) | ": [
+"x_pastpc_choice",
+"read"
+],
+"adv_past | C1 | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | ": [
+"x_pastp_deduce",
+"read"
+],
+"adv_past | C1 | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved": [
+"x_pastp_deduce",
+"read"
+],
+"adv_past | C1 | gap | These shoes are too small and the shop won't take them back. I wish I ___ the receipt. (keep) | ": [
+"x_unreal_past",
+"read"
 ]
 }

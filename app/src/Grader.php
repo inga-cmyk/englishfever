@@ -160,6 +160,12 @@ final class Grader
                         $specific = "Almost: your sentence is right except for one word. You wrote “{$nm[0]}”, the answer has “{$nm[1]}”.";
                         $specificLv = "Gandrīz: teikums ir pareizs, izņemot vienu vārdu. Tu uzrakstīji “{$nm[0]}”, atbildē ir “{$nm[1]}”.";
                     }
+                    // the right sentence with one content word left out (teacher, 23 November, c-4270 "how to get to the town"): still wrong, but say which word
+                    if ($specific === null && $item['kind'] === 'text' && count($given) === 1 && ($mw = self::missingWord($given[0], $blanks[0])) !== null) {
+                        $near = true;
+                        $specific = "Almost: your sentence is right, but one word is missing: “{$mw}”.";
+                        $specificLv = "Gandrīz: teikums ir pareizs, bet trūkst viena vārda: “{$mw}”.";
+                    }
                 }
                 return ['correct' => $ok, 'show' => $show, 'specific' => $specific, 'specific_lv' => $specificLv, 'err' => $err, 'near' => $near, 'alt' => $alt, 'notes' => array_values(array_unique($notes))];
 
@@ -439,6 +445,22 @@ final class Grader
             $diff = [];
             foreach ($a as $i => $w) if ($g[$i] !== $w) $diff[] = $i;
             if (count($diff) === 1) return [$g[$diff[0]], self::shown($a[$diff[0]], $raw)];
+        }
+        return null;
+    }
+
+    /** The accepted sentence with exactly one word left out (not a word that every accepted version can do without). Returns that word or null. */
+    private static function missingWord(string $given, array $accepted): ?string
+    {
+        $g = self::norm($given);
+        if ($g === '') return null;
+        foreach ($accepted as $raw) {
+            $a = explode(' ', self::norm($raw));
+            if (count($a) < 3) continue;
+            foreach ($a as $i => $w) {
+                $b = $a; unset($b[$i]);
+                if (implode(' ', $b) === $g) return self::shown($w, $raw);
+            }
         }
         return null;
     }

@@ -102,6 +102,10 @@ $check(!$r['correct'] && !empty($r['near']) && strpos((string) $r['specific'], '
 $room = Content::item('psp-B12-3b'); // The rooms are cleaned daily.
 $check(!Grader::grade($room, 'The room are cleaned daily.')['correct'], 'a missing -s on a SUBJECT noun hides a verb-agreement error: not forgiven');
 $check(!Grader::grade($room, 'The rooms are clean daily.')['correct'] && empty(Grader::grade($room, 'Totally different words here now')['near']), 'a different sentence is not a near miss');
+// one word left out (teacher, 23 November, c-4270): still wrong, and the feedback names the missing word
+$town = ['kind' => 'text', 'q' => 'Ask the way. Start with *Could you tell me how*.', 'answers' => [['Could you tell me how to get to the old town?']]];
+$r = Grader::grade($town, 'could you tell me how to get to the town');
+$check(!$r['correct'] && !empty($r['near']) && strpos((string) $r['specific'], '“old”') !== false, 'one missing word: not correct, and the word is named', $r);
 
 // write tasks must only ask for what the instruction asks for
 $w = fn(string $id, string $a) => Grader::grade(Content::item($id), $a);

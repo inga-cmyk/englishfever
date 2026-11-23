@@ -1,0 +1,128 @@
+[
+{
+"id": "c1-3-001",
+"answer": [
+"went",
+"lit"
+],
+"other_correct": [
+[
+"went",
+"lighted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Simple past, A2/B1 level; not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-002",
+"answer": "We were flying to Oslo four times last year.",
+"other_correct": "",
+"wrong_options_that_fit": "Option 1 'was cycling to work' is acceptable (less natural than 'cycled'; habitual over a period).",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 and 2 are near-correct continuous-for-repeated-action; the mistake is clear only in 4. Borderline ambiguity."
+},
+{
+"id": "c1-3-003",
+"answer": [
+"had met"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only one verb given in a very short context; easy.",
+"level_problem": "Basic past perfect; B1/B2, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-004",
+"answer": [
+"have",
+"seen"
+],
+"other_correct": [
+[
+"had",
+"seen"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'I loved it. It was...' past context makes 'had seen' also correct; present perfect 'have seen' also fits (still-true view). Ambiguous.",
+"level_problem": "B1 level (best...ever + perfect).",
+"sense_problem": ""
+},
+{
+"id": "c1-3-005",
+"answer": [
+"had known"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic past perfect, B1/B2.",
+"sense_problem": "'had known' only; 'had been knowing' impossible, fine."
+},
+{
+"id": "c1-3-006",
+"answer": [
+"had been shouting"
+],
+"other_correct": [
+[
+"had shouted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Past perfect continuous, B2 rather than C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-007",
+"answer": "had moved",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic past perfect, B1/B2, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-008",
+"answer": [
+"had kept"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Wish + past perfect, B2; not C1 nuance.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-009",
+"answer": [
+"would",
+"leave"
+],
+"other_correct": [
+[
+"was",
+"leaving"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two possible answers (would leave / was leaving); instruction 'It drove me mad' only partly steers.",
+"level_problem": "B2 level.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-010",
+"answer": "I had wondered if you could check my report.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Mistake' is arguable for option 1; context-free.",
+"level_problem": "",
+"sense_problem": "Option 1 is not really a mistake learners make; it is possible in context (earlier thought) and just odd as a request. Weak distractor design."
+}
+]

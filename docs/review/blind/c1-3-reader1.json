@@ -1,0 +1,159 @@
+[
+{
+"id": "c1-3-001",
+"answer": [
+"went",
+"lit"
+],
+"other_correct": [
+[
+"went",
+"lighted"
+],
+[
+"goes",
+"lit"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Verb forms given in brackets (go, light) are base forms only; fine. 'went off ... lit' vs 'lighted' both correct; 'goes'/'lit' mismatch not needed.",
+"level_problem": "Irregular past forms only; B1, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-002",
+"answer": "We were flying to Oslo four times last year.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Tense contrast (past simple vs continuous) is B1-B2, light for C1.",
+"sense_problem": "Option 1 'was cycling to work' while the car was repaired and option 2 'was making them tea all day' are acceptable but slightly marked; only option 4 is clearly wrong."
+},
+{
+"id": "c1-3-003",
+"answer": [
+"had met"
+],
+"other_correct": [
+[
+"'d met"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap holds two words ('had met') although the brackets give one verb; learner may not know how many words are wanted.",
+"level_problem": "Basic past perfect, B1 not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-004",
+"answer": [
+"have",
+"seen"
+],
+"other_correct": [
+[
+"had",
+"seen"
+],
+[
+"'ve",
+"seen"
+],
+[
+"'d",
+"seen"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had ever seen' is equally correct after past 'was' (narrative/backshift); task allows two answers.",
+"level_problem": "Present perfect superlative, A2-B1, too easy for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-005",
+"answer": [
+"had known"
+],
+"other_correct": [
+[
+"'d known"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic past perfect simple, B1 not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-006",
+"answer": [
+"had been shouting"
+],
+"other_correct": [
+[
+"'d been shouting"
+],
+[
+"had shouted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'had shouted' is less natural with 'all afternoon' but correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-3-007",
+"answer": "had moved",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Past perfect, B1-B2, light for C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-008",
+"answer": [
+"had kept"
+],
+"other_correct": [
+[
+"'d kept"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Wish + past perfect is B2, borderline C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-3-009",
+"answer": [
+"was",
+"leaving"
+],
+"other_correct": [
+[
+"would",
+"leave"
+],
+[
+"had",
+"left"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'would always leave' is also correct (past habit, annoyance); 'It drove me mad' and 'always' point to continuous, giving the answer away. Task does not decide between was leaving and would leave.",
+"level_problem": "Past continuous with always (B2).",
+"sense_problem": ""
+},
+{
+"id": "c1-3-010",
+"answer": "I had wondered if you could check my report.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Polite requests are B1-B2; easy for C1.",
+"sense_problem": "'had wondered' is not a mistake a learner would normally make and is not clearly wrong (hindsight reading possible, e.g. I had wondered ... but then I did it myself); the wrong option is ambiguous."
+}
+]

@@ -74,6 +74,7 @@ Not changed yet; listed so that they are decided before the analysis. Comparison
 - **Support shown**: the welcome greetings and reminder clicks are tracked in the app but are not in the research `events.csv` yet.
 
 ## Changes
+- 23 Nov 2026 (evening): Second Chance serves the learner's own wrong sentence only on a later day than the mistake; on the same day only a different task of the same point (`served_why = second_chance` for both).
 - 23 Nov 2026 (evening): no sentence twice in a session (any task); after a second mistake in a C1 point an easier task of the same point (`served_why = easier_same_point`); the import retires all older versions of rewritten C1 tasks.
 - 23 Nov 2026: typed sentences with exactly one word left out stay wrong (`correct` = 0) but get a named-word feedback, flagged `near` in the result (as the one-wrong-word case); grading itself is unchanged. Task c-0621 (word order) accepts the swapped *vinegar and oil*: answers given that way before were marked wrong (leave them out or count them as right).
 - 23 Nov 2026: eight more C1 topics (directions 3-10: `adv_perfect`, `adv_will`, `adv_can`, `adv_subj`, `adv_agree`, `adv_prep`, `adv_part`, `adv_order`), level `C1`, prepared files `docs/task-drafts/c1-*-1.csv`; all under *New*.

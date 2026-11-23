@@ -3,6 +3,7 @@
 The version in the app footer ("Version 2026-10-21 18:40") is the time the zip was made. Compare it with the entries below to see what is live. Upload when a batch is worth it; nothing here is urgent unless marked.
 
 ## Fixes and polish (not uploaded yet; goes on top of the packages below)
+- **Second Chance: the wrong sentence on another day (teacher, 23 November, a learner's wish):** a mistake made today comes back in Second Chance only as a different task of the same grammar point; the sentence the learner got wrong comes back on another day. A mistake from today with no other task of its point waits for tomorrow (*Your mistakes from today will come back tomorrow in Second Chance.*). Test `comeback_test.py`.
 - **After the teacher's check of the ten C1 topics as a B2 learner (23 November):**
   - *No task twice*: the import now retires every older version of a rewritten or dropped C1 task (column *replaces* may name several, `" || "`; retired also when the row itself is unchanged), so *Here comes the bus* and the old *constantly changing* / *What I need* tasks leave the bank after *Add all*. And a session never serves the same sentence twice, also in another task.
   - *After a second mistake in a C1 point*, the next task is an easier task of the same point (lowest thinking level), not an A2 task of a point it stands on (research: `served_why = easier_same_point`).

@@ -107,22 +107,27 @@ done, got = run(c, [], "A2.1", 6, correct, mode="comeback")
 n_attempts += len(got)
 ids = [g[0] for g in got]
 k5 = min(expected, 5)
-check("Second Chance: up to five mistakes, each first in its own sentence, then (where the point has one) a similar task (teacher, 16 November)", k5 <= len(got) <= 2 * k5, (len(got), expected))
+check("Second Chance: up to five mistakes; a mistake from today comes back only as another task of its point (teacher, 23 November), an older one first in its own sentence", 1 <= len(got) <= 2 * k5, (len(got), expected))
 check("every task in Comeback is a different task", len(set(ids)) == len(ids))
 fixed = sum(1 for g in got if g[1].get("fixed"))
 check("fixed flags and summary agree, with no more than one fix per mistake", 0 <= fixed <= k5 and done["summary"]["fixed"] == fixed and done["summary"]["comeback"] is True, done["summary"])
 check("unfixed same-day retries stay open, fixed total is kept", {k: dash(c)[k] for k in ("open", "fixed")} == {"open": expected - fixed, "fixed": fixed}, dash(c))
 remaining = expected - fixed
-check("Comeback availability matches remaining evidence mistakes", c.api("session/start", {"mode": "comeback"})["_status"] == (200 if remaining else 404))
+_st = c.api("session/start", {"mode": "comeback"})["_status"]
+# a mistake made today comes back today only as a different task of its point (teacher, 23 November); with no such task it waits for another day
+check("Comeback availability matches remaining evidence mistakes", _st in ((200, 404) if remaining else (404,)), _st)
 
 # ---- a wrong answer in Comeback keeps the mistake
 done, got = run(c, ["past_simple"], "A2.1", 5, wrong)
 n_attempts += len(got)
 new_misses = len({item for item, _ in got if ROLES[item] != "learn"})
-check("new evidence misses join the remaining queue", dash(c)["open"] == remaining + new_misses, dash(c))
+check("new evidence misses join the remaining queue", dash(c)["open"] == remaining + new_misses, (dash(c), remaining, new_misses, got))
 done, got = run(c, [], "A2.1", 5, wrong, mode="comeback")
 n_attempts += len(got)
-check("answering wrong in Comeback fixes nothing and keeps the mistakes", done["summary"]["fixed"] == 0 and dash(c)["open"] >= remaining + new_misses, (done["summary"], dash(c)))
+if "summary" in done:
+    check("answering wrong in Comeback fixes nothing and keeps the mistakes", done["summary"]["fixed"] == 0 and dash(c)["open"] >= remaining + new_misses, (done["summary"], dash(c)))
+else:   # today's mistakes with no other task of their point wait for another day (23 November)
+    check("Second Chance with only today's mistakes that have no other task: comes back another day (404)", done.get("_status") == 404, done)
 
 # ---- placement: mistakes above the level found are parked, not offered for Second Chance, until that level is practised
 p2 = login(UID + 1, "Parked Tester")

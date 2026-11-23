@@ -62,13 +62,21 @@ final class Engine
             $own = [];
             $q2 = [];
             $openIds = array_fill_keys($queue, true);
+            // the sentence the learner got wrong comes back on another day, not right after the mistake (teacher, 23 November, a learner's
+            // wish): a mistake made today gets only a different task of its point now; with no such task it waits for another day
+            $openDay = Mistakes::scan($uid)['open'];
+            $today = date('Y-m-d');
             foreach ($queue as $mid) {
                 $mt = Content::item($mid); $pt = $mt ? Content::point($mt) : null;
                 $hasTwin = $pt === null || Mistakes::twinOfPoint($uid, $mid, $openIds, $pt) !== null;
-                if (count($q2) + ($hasTwin ? 2 : 1) > 10 - count($review)) break;
-                $own[count($q2)] = true; $q2[] = $mid;
+                $madeToday = ($openDay[$mid]['day'] ?? '') === $today;
+                if ($madeToday && !$hasTwin) continue;
+                $need = $madeToday ? 1 : ($hasTwin ? 2 : 1);
+                if (count($q2) + $need > 10 - count($review)) break;
+                if (!$madeToday) { $own[count($q2)] = true; $q2[] = $mid; }
                 if ($hasTwin) $q2[] = $mid;   // no other task of the point: the sentence alone
             }
+            if (!$q2 && !$review) throw new ApiError('Your mistakes from today will come back tomorrow in Second Chance. Nice work!', 404);
             $queue = array_merge($q2, $review);
             $comeback = true;
             $mode = 'practice';

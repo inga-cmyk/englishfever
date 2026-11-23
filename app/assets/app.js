@@ -2169,13 +2169,24 @@
       } });
     }
     var toggle = h('span', { class: 'langswitch' }, flagBtn('lv'), flagBtn('en'));
-    var pts = state.meta.new_points || [];
+    // a level picker, as on Practice (teacher, 23 November): the cards of the chosen level only, so C1 cards show only at C1
+    function fullOf(l) { return String(l || '').slice(0, 2); }
+    var LVS = ['A2', 'B1', 'B2', 'C1'].filter(function (l) { return state.meta.skills.some(function (s) { return (s.levels || []).some(function (x) { return fullOf(x) === l; }); }); });
+    if (LVS.indexOf(state.rulesLevel) < 0) { var g = fullOf(learnerLevel(state.dash) || 'A2'); state.rulesLevel = LVS.indexOf(g) >= 0 ? g : LVS[0]; }
+    var at = state.rulesLevel;
+    function hasLevel(levels) { return (levels || []).some(function (x) { return fullOf(x) === at; }); }
+    var levelRow = h('div', { class: 'seg lvseg', role: 'radiogroup', 'aria-label': 'Level', style: 'margin:0 0 16px' }, LVS.map(function (l) {
+      var inp = h('input', { type: 'radio', name: 'rules-level', value: l, checked: l === at, onchange: function () { state.rulesLevel = l; track('rules_level', l); viewRules(); } });
+      return h('label', null, inp, h('span', null, l));
+    }));
+    var pts = (state.meta.new_points || []).filter(function (p) { return hasLevel(p.levels); });
     show(h('div', null, h('div', { class: 'hello' }, h('div', null, h('div', { class: 'label' }, 'Reference'), h('h1', { style: 'margin:0' }, 'Rule cards')), toggle),
+      levelRow,
       pts.length ? h('div', { class: 'area-block' }, h('h2', null, 'New'), h('div', { class: 'tilegrid' }, pts.map(function (p, i) {   // the new grammar points first (teacher, 15 November)
         return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { pointModal(p); } }, pointTile(p, i));
       }))) : null,
       state.meta.areas.map(function (a, i) {   // tiles by area; a tile opens its rule card
-        var list = state.meta.skills.filter(function (s) { return inArea(s, a.id); }).sort(byCard);
+        var list = state.meta.skills.filter(function (s) { return inArea(s, a.id) && hasLevel(s.levels); }).sort(byCard);
         if (!list.length) return null;
         return h('div', { class: 'area-block' }, h('h2', null, a.label), h('div', { class: 'tilegrid' }, list.map(function (s) {
           return h('button', { type: 'button', class: 'ttile-btn', onclick: function () { rulesModal(s.id); } }, topicTile(s));

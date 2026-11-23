@@ -136,7 +136,7 @@ const OUT = __dirname + '/shots/';
     await p.goto(BASE + '/index.html#/rules'); await p.waitForSelector('.ttile-btn');
     const areasN = await p.locator('.area-block h2').count();
     await p.locator('.ttile-btn').first().click(); await p.waitForSelector('.rulecard');   // a tile opens its card
-    check('the rule cards page is grouped by area and a card opens in Latvian', /Kā to veido/.test(await p.locator('.rulecard').first().innerText()) && areasN === 5, areasN);
+    check('the rule cards page is grouped by area, shows one level (a level picker, 23 November) and a card opens in Latvian', /Kā to veido/.test(await p.locator('.rulecard').first().innerText()) && areasN >= 2 && (await p.locator('input[name=rules-level]:checked').count()) === 1, areasN);
     await p.screenshot({ path: OUT + '99c-rules-lv.png', fullPage: true });
     // above B1.2 there is no Latvian: a mixed conditional task
     r = await post(p, 'session/start', { mode: 'practice', skills: ['cond_mixed'], level: 'B2.1', length: 5 });

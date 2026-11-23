@@ -6,3 +6,4 @@
 - 003, 019, 020, 031, 037: the wrong options are the reviewer's replacements (form mistakes a learner makes); kept.
 - 021: an open complaint; the key accepts the continuous and the simple form with *constantly*; other wordings change the task's words.
 - 002, 005, 011, 013, 027, 029: kept (level or style notes; the checker ignores capital letters).
+- Round c1-11: the smoke-alarm task dropped (both readers: irregular past forms are A2, and *had lit* also fits after *as soon as*). *Advanced past* keeps 10 tasks.

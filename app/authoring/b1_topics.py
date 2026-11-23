@@ -661,7 +661,7 @@ CARDS.update({
                 "The past continuous for a situation, the past simple for the event that happened in it: *She dropped her keys while she was getting out of the taxi.*",
                 "State verbs stay simple, also before a past moment: *We had known each other for years*, not *had been knowing*."],
         "signals": "*as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering*",
-        "example": "*I was quietly eating your biscuits when you walked in.*",
+        "example": "*I had planned a healthy dinner. Then I walked past the bakery.*",
     },
 })
 LV_CARDS.update({
@@ -689,7 +689,7 @@ CARDS.update({
                  "The perfect after *to* and prepositions: *He is thought to have left. She denied having read it.* Future: *By May I'll have taught here for ten years.*"],
         "use": ["The continuous for an activity up to now, the simple for a number, a result or a state: *I've rung the bank four times. I've been ringing the bank all morning. I've had this phone since May.*"],
         "signals": "*this morning, today, since, the moment, once, the first time, the third time, by May, is thought to, denied*",
-        "example": "*This is the third time I've lost my glasses today. They're on my head.*",
+        "example": "*It's only Tuesday, and I've already spent my weekly budget.*",
     },
 })
 LV_CARDS.update({
@@ -754,7 +754,7 @@ CARDS.update({
                  "*I'd rather you had told me* (the past), *I'd rather you told me* (now or later)."],
         "use": ["Fixed phrases: *be that as it may, so be it, come what may, suffice it to say*."],
         "signals": "*demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may*",
-        "example": "*If I were a cat, I'd ignore emails too.*",
+        "example": "*My cat insists that breakfast be served at five.*",
     },
 })
 LV_CARDS.update({
@@ -791,7 +791,7 @@ CARDS.update({
                  "A group as its members: plural verb: *The jury are still arguing among themselves.*"],
         "use": ["Ask: what is the main noun? Is the group one unit or its members?"],
         "signals": "*together with, as well as, the number of, a number of, each of, either … or, politics, criteria, ten kilometres*",
-        "example": "*The number of unread emails has reached 2,000. None of them is urgent.*",
+        "example": "*The number of unread emails has reached 2,000. Each of them says 'urgent'.*",
     },
     "adv_prep": {
         "form": ["Formal: preposition + *whom / which*; everyday: the preposition at the end. Never before *who* or *that*: *the colleague with whom I share an office / the colleague I share an office with*.",
@@ -854,7 +854,7 @@ CARDS.update({
 })
 LV_CARDS.update({
     "adv_part": {
-        "form": ["Divdabja teicienam ir tas pats teikuma priekšmets, kas galvenajam teikumam: *Opening the door, she saw the cat.* Nevis *Walking into the office, the lights were off.*",
+        "form": ["Daļai ar *-ing* vai 3. formu ir tas pats teikuma priekšmets, kas galvenajam teikumam: *Opening the door, she saw the cat.* Nevis *Walking into the office, the lights were off.*",
                  "*Having* + 3. forma agrākai darbībai vai cēlonim: *Having finished the report, she went home.* *Not* stāv pirmais: *Not knowing anyone, he felt lonely.*",
                  "3. forma ciešamās kārtas nozīmei: *Stored in a dry place, the seeds keep for years. Keep refrigerated once opened.*",
                  "Ar savu teikuma priekšmetu: *With prices going up, many families are struggling. There being no questions, the chair closed the meeting.*",

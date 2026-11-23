@@ -4261,7 +4261,6 @@ x_inv_place,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:8,"adv_order | C1 | gap
 x_cleft_adv,C1,adv_order,C1,use,text,read,,c1-order-1.csv:9,adv_order | C1 | text | Start with *What*: I need a long holiday. | 
 x_front_as,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:10,"adv_order | C1 | gap | Cold ___ it was, we went for a swim in the lake. | "
 x_may_but,C1,adv_can,C1,check,mcq,read,,c1-can-1.csv:11,"adv_can | C1 | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast."
-x_able_limits,C1,adv_can,C1,use,gap,read,,c1-can-1.csv:12,"adv_can | C1 | gap | Even with my glasses on, I ___ hardly read the sign. (can) | "
 x_inv_so,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:11,adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | 
 x_inv_main,C1,adv_order,C1,use,gap,read,,c1-order-1.csv:12,adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | 
 x_pastpc_choice,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:11,"adv_past | C1 | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | "

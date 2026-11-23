@@ -329,6 +329,11 @@
 "round": "r18",
 "task": "r18-001"
 },
+"09033321dbe15daf": {
+"gate_key": "adv_order | C1 | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | ",
+"round": "c1-9",
+"task": "c1-9-004"
+},
 "0908ae615cb34dca": {
 "gate_key": "past_simple | A2.1 | text | Make a yes/no question: The exam was difficult. | ",
 "round": "r13",
@@ -448,6 +453,11 @@
 "gate_key": "future | A2.1 | order | Put the words in order to make a question. | which bus shall we take",
 "round": "r9",
 "task": "r9-036"
+},
+"0dadf47fde9f567e": {
+"gate_key": "adv_subj | C1 | gap | We'll finish this project on time, come what ___. | ",
+"round": "c1-9",
+"task": "c1-9-010"
 },
 "0daf3a29b40eea51": {
 "gate_key": "adv_part | C1 | mcq | Choose the correct option: ___ hearing the news, she burst into tears. | On",
@@ -1624,6 +1634,11 @@
 "round": "r20-3",
 "task": "r20-3-003"
 },
+"35e4772e09b79978": {
+"gate_key": "adv_subj | C1 | gap | We'll finish this project on time, come what ___. | ",
+"round": "c1-9",
+"task": "answers added"
+},
 "3658871074273880": {
 "gate_key": "present_perfect | A2.2 | text | Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there. | ",
 "round": "r13",
@@ -1784,6 +1799,11 @@
 "round": "r10",
 "task": "r10-046"
 },
+"3a59973f17db7549": {
+"gate_key": "adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have sold the car.",
+"round": "c1-9",
+"task": "c1-9-009"
+},
 "3a628d253702f38b": {
 "gate_key": "conj_b2 | B2.1 | order | Put the words in order. | she kept running even though her legs hurt",
 "round": "r20-3",
@@ -1938,6 +1958,11 @@
 "gate_key": "adj_order | A2.1 | gap | We have two ___ ___ in our garden. | ",
 "round": "r13",
 "task": "r13-022"
+},
+"3f6d81aff3bbae21": {
+"gate_key": "adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be",
+"round": "c1-9",
+"task": "c1-9-008"
 },
 "3fc151f8e3c463d3": {
 "gate_key": "cond_third | B2.1 | order | Put the words in order. | if the team had been better prepared we would have won",
@@ -2754,6 +2779,16 @@
 "round": "c1-3b",
 "task": "c1-3b-003"
 },
+"5d72b170bdad3ae9": {
+"gate_key": "adv_will | C1 | gap | There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be) | ",
+"round": "c1-9",
+"task": "c1-9-012"
+},
+"5d9648b33dc7faa4": {
+"gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast.",
+"round": "c1-9",
+"task": "c1-9-001"
+},
 "5dadc4875596bd5e": {
 "gate_key": "more_modals | B1.2 | mcq | Which sentence is NOT correct? | You should of booked the tickets much earlier.",
 "round": "r11",
@@ -2888,6 +2923,11 @@
 "gate_key": "comparison | A2.2 | gap | Of all my colleagues, Anna lives ___ from the office. (far) | ",
 "round": "r13",
 "task": "r13-100"
+},
+"61520811575951ef": {
+"gate_key": "adv_will | C1 | mcq | Choose the correct option: ___ that's about right, but let me check the figures. | I'd say",
+"round": "c1-9",
+"task": "c1-9-011"
 },
 "617efd301e5eb820": {
 "gate_key": "more_modals | A2.2 | gap | She may ___ ___ the meeting today. | ",
@@ -4329,6 +4369,11 @@
 "round": "r19b",
 "task": "r19b-001"
 },
+"92a0f1a1b31faf7d": {
+"gate_key": "adv_past | C1 | gap | I wish you ___ me about the party. I would have come. (tell) | ",
+"round": "c1-9",
+"task": "c1-9-006"
+},
 "92ac241d26051bba": {
 "gate_key": "adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | ",
 "round": "c1-1d",
@@ -4873,6 +4918,11 @@
 "gate_key": "adv_part | C1 | gap | ___ finished the report, she went home early. (have) | ",
 "round": "c1-7",
 "task": "c1-7-012"
+},
+"a31724e7f67d9f43": {
+"gate_key": "adv_past | C1 | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | ",
+"round": "c1-9",
+"task": "c1-9-005"
 },
 "a37ca4b43512e837": {
 "gate_key": "verb_patterns | B1.1 | order | Put the words in order. | my father started using a smartphone when he turned seventy",
@@ -6133,6 +6183,11 @@
 "gate_key": "conj_clauses | B2.1 | mcq | Choose the correct option: ___ feeling ill, he went to work. | Despite",
 "round": "r20-4",
 "task": "r20-4-032"
+},
+"c88ba7e5c55010f5": {
+"gate_key": "adv_subj | C1 | gap | It is essential that every passenger ___ a valid ticket. (have) | ",
+"round": "c1-9",
+"task": "c1-9-007"
 },
 "c898be990d19eb3c": {
 "gate_key": "conj_clauses | B1.1 | mcq | Choose the correct option: He still goes to work by bike ___ he is seventy. | although",
@@ -7578,6 +7633,11 @@
 "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: Write the code down ___ you forget it. | in case",
 "round": "r20-3",
 "task": "r20-3-018"
+},
+"f55c8af25c0f7174": {
+"gate_key": "adv_order | C1 | gap | Such ___ the noise from the party that nobody in the street could sleep. | ",
+"round": "c1-9",
+"task": "c1-9-003"
 },
 "f5726534104cd475": {
 "gate_key": "ind_polite | B2.1 | mcq | Which sentence is correct? | I was wondering if you could tell me when my order will be delivered.",

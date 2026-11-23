@@ -52,6 +52,6 @@ mc(T, L, 4, "Which sentence has a mistake?", "I'd rather you wouldn't have sold 
    "*I'd rather* + past perfect for the past: *I'd rather you hadn't sold the car*, not *wouldn't have sold*.",
    "*I'd rather* + Past Perfect pagātnei: *I'd rather you hadn't sold the car*, nevis *wouldn't have sold*.")
 # x_subj_fixed
-gp(T, L, 4, "We'll finish this project on time, come what ___.", "may",
+gp(T, L, 4, "We'll finish this project on time, come what ___.", "may | might",
    "A fixed phrase with the old subjunctive: *come what may* = whatever happens.",
    "Nemainīgs izteiciens ar seno konjunktīvu: *come what may* = lai kas notiktu.")

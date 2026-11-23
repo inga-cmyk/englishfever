@@ -8236,7 +8236,6 @@ return json_decode(<<<'EF_JSON_END'
 "adv_order | text | Start with *What*: I need a long holiday. | ": "x_cleft_adv",
 "adv_order | gap | Cold ___ it was, we went for a swim in the lake. | ": "x_front_as",
 "adv_can | mcq | Which sentence has a mistake? | She may not much experience, but she learns fast.": "x_may_but",
-"adv_can | gap | Even with my glasses on, I ___ hardly read the sign. (can) | ": "x_able_limits",
 "adv_order | gap | Such ___ the noise from the party that nobody in the street could sleep. | ": "x_inv_so",
 "adv_order | gap | Write one word in each gap: Only when I got home ___ I ___ that my wallet was missing. (realise) | ": "x_inv_main",
 "adv_past | gap | By the time the doctor arrived, the patient ___ for over an hour. (wait) | ": "x_pastpc_choice",

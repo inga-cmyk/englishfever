@@ -54,7 +54,3 @@ mc(T, L, 4, "Which sentence has a mistake?", "She may not much experience, but s
     "It may well rain later, so take an umbrella."],
    "*may not* + base verb: *She may not have much experience, but she learns fast.*",
    "*may not* + pamatforma: *She may not have much experience, but she learns fast.*")
-# x_able_limits: could with hardly
-gp(T, L, 4, "Even with my glasses on, I ___ hardly read the sign. (can)", "could",
-   "*could* (not *was able to*) with *hardly* and with *see, read, hear* at one past moment: *I could hardly read the sign.*",
-   "*could* (nevis *was able to*) ar *hardly* un ar *see, read, hear* vienā pagātnes brīdī: *I could hardly read the sign.*")

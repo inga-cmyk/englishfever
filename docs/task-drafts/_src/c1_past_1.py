@@ -49,7 +49,7 @@ gp(T, L, 4, "Write one word in each gap: My old flatmate ___ always ___ the ligh
    "*was always* + *-ing*: a past habit that annoyed someone (*was always leaving the lights on*).",
    "*was always* + *-ing*: pagātnes ieradums, kas kādu kaitināja (*was always leaving the lights on*).")
 # x_past_polite: a polite request now
-mc(T, L, 4, "Which sentence has a mistake?", "I had wondered if you could help me with this report.",
+mc(T, L, 4, "Which sentence has a mistake?", "I had wondered if you could check my report.",
    ["I was wondering if you might have a minute.", "I wanted to ask you about Friday.", "We were hoping you could join us."],
    "A polite request about now uses the past simple or continuous (*I was wondering if…, I wanted to ask…*), not the past perfect: "
    "*I had wondered* means that you wondered before some other past moment.",

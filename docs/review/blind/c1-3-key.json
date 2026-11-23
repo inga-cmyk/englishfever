@@ -331,13 +331,13 @@
   }
  },
  "c1-3-010": {
-  "hash": "3a30fd0fc69a1e76",
-  "gate_key": "adv_past | C1 | mcq | Which sentence has a mistake? | I had wondered if you could help me with this report.",
+  "hash": "16e847036320f639",
+  "gate_key": "adv_past | C1 | mcq | Which sentence has a mistake? | I had wondered if you could check my report.",
   "src": "c1-past-1.csv:11",
   "point": null,
   "key": {
    "kind": "mcq",
-   "correct": "I had wondered if you could help me with this report.",
+   "correct": "I had wondered if you could check my report.",
    "wrong": [
     "I was wondering if you might have a minute.",
     "I wanted to ask you about Friday.",
@@ -353,7 +353,7 @@
    "q": "Which sentence has a mistake?",
    "why": "A polite request about now uses the past simple or continuous (*I was wondering if…, I wanted to ask…*), not the past perfect: *I had wondered* means that you wondered before some other past moment.",
    "why_lv": "Pieklājīgs lūgums par tagadni lieto Past Simple vai Continuous (*I was wondering if*…, *I wanted to ask*…), nevis Past Perfect: *I had wondered* nozīmē, ka domāji to pirms kāda cita pagātnes brīža.",
-   "correct": "I had wondered if you could help me with this report.",
+   "correct": "I had wondered if you could check my report.",
    "wrong": [
     "I was wondering if you might have a minute.",
     "I wanted to ask you about Friday.",

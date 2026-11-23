@@ -11075,7 +11075,95 @@ return json_decode(<<<'EF_JSON_END'
      "Stories and jokes, live commentary, headlines and the contents of books and films use the present: *Minister resigns. In the film, a pilot returns to his village.*"
     ],
     "signals": "*measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest*",
-    "example": "*I love my job. I'm just not loving this Monday.*"
+    "example": "*I love my job. I'm just not loving this Monday.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "State or action",
+        "the same verb: a state (simple) or an action (continuous)",
+        "*The kitchen [[measures]] 3 by 4. I'm [[measuring]] it now.*"
+       ],
+       [
+        "Always simple",
+        "*believe, doubt, own, belong, know, prefer, agree*",
+        "*I [[believe]] you now.*"
+       ],
+       [
+        "Typical behaviour",
+        "*always / constantly / forever* + continuous",
+        "*He's [[constantly changing]] his mind.*"
+       ],
+       [
+        "Saying it does it",
+        "*apologise, promise, suggest*: present simple",
+        "*We [[apologise]] for the delay.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "This suitcase [[is weighing]] five kilos.",
+       "This suitcase [[weighs]] five kilos."
+      ],
+      [
+       "He [[considers]] taking early retirement.",
+       "He's [[considering]] taking early retirement."
+      ],
+      [
+       "I [['m promising]] I'll pay you back.",
+       "I [[promise]] I'll pay you back."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "A feeling or situation that is new, temporary or changing",
+       "s": [
+        "these days",
+        "at the moment",
+        "this week"
+       ],
+       "ex": [
+        "We're [[loving]] the new office.",
+        "I'm [[finding]] the course quite hard."
+       ]
+      },
+      {
+       "t": "Stories, jokes and live commentary",
+       "s": [
+        "so",
+        "suddenly",
+        "and then"
+       ],
+       "ex": [
+        "So I'm [[standing]] in the queue and this woman [[turns]] round…",
+        "Jones [[passes]] to Taylor, who [[shoots]] and [[scores]]!"
+       ]
+      },
+      {
+       "t": "News we have heard",
+       "s": [
+        "I hear",
+        "I gather",
+        "she tells me"
+       ],
+       "ex": [
+        "I [[gather]] you're looking for a flat."
+       ]
+      }
+     ],
+     "watch": [
+      "In the negative, *I'm not suggesting* is as correct as *I don't suggest*: *I'm not [[suggesting]] you were careless.*"
+     ]
+    },
+    "watch": [
+     "In the negative, *I'm not suggesting* is as correct as *I don't suggest*: *I'm not [[suggesting]] you were careless.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11089,7 +11177,95 @@ return json_decode(<<<'EF_JSON_END'
      "**always / forever** + ilgstošā forma: raksturīga uzvedība, bieži ar *nepatiku*.",
      "Stāstos un *jokos*, tiešraides komentāros, *virsrakstos* un grāmatu un *filmu satura* stāstījumā lieto tagadni: **Minister resigns.* *In the film, a pilot returns to his village*.*"
     ],
-    "signals": "*measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest*"
+    "signals": "*measure, weigh, fit, consider, believe, doubt, own, always, constantly, forever, usually, apologise, suggest*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Stāvoklis vai darbība",
+        "tas pats darbības vārds: stāvoklis (vienkāršā forma) vai darbība (ilgstošā forma)",
+        "*The kitchen [[measures]] 3 by 4. I'm [[measuring]] it now.*"
+       ],
+       [
+        "Vienmēr vienkāršā forma",
+        "*believe, doubt, own, belong, know, prefer, agree*",
+        "*I [[believe]] you now.*"
+       ],
+       [
+        "Raksturīga uzvedība",
+        "*always / constantly / forever* + ilgstošā forma",
+        "*He's [[constantly changing]] his mind.*"
+       ],
+       [
+        "Vārdi ir darbība",
+        "*apologise, promise, suggest*: Present Simple",
+        "*We [[apologise]] for the delay.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "This suitcase [[is weighing]] five kilos.",
+       "This suitcase [[weighs]] five kilos."
+      ],
+      [
+       "He [[considers]] taking early retirement.",
+       "He's [[considering]] taking early retirement."
+      ],
+      [
+       "I [['m promising]] I'll pay you back.",
+       "I [[promise]] I'll pay you back."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Sajūta vai situācija, kas ir jauna, īslaicīga vai mainās",
+       "s": [
+        "these days",
+        "at the moment",
+        "this week"
+       ],
+       "ex": [
+        "We're [[loving]] the new office.",
+        "I'm [[finding]] the course quite hard."
+       ]
+      },
+      {
+       "t": "Stāsti, joki un tiešraides komentārs",
+       "s": [
+        "so",
+        "suddenly",
+        "and then"
+       ],
+       "ex": [
+        "So I'm [[standing]] in the queue and this woman [[turns]] round…",
+        "Jones [[passes]] to Taylor, who [[shoots]] and [[scores]]!"
+       ]
+      },
+      {
+       "t": "Ziņa, ko esam dzirdējuši",
+       "s": [
+        "I hear",
+        "I gather",
+        "she tells me"
+       ],
+       "ex": [
+        "I [[gather]] you're looking for a flat."
+       ]
+      }
+     ],
+     "watch": [
+      "Noliegumā *I'm not suggesting* ir tikpat pareizi kā *I don't suggest*: *I'm not [[suggesting]] you were careless.*"
+     ]
+    },
+    "watch": [
+     "Noliegumā *I'm not suggesting* ir tikpat pareizi kā *I don't suggest*: *I'm not [[suggesting]] you were careless.*"
+    ]
    },
    "card": "C1"
   },
@@ -11113,7 +11289,83 @@ return json_decode(<<<'EF_JSON_END'
      "State verbs stay simple, also before a past moment: *We had known each other for years*, not *had been knowing*."
     ],
     "signals": "*as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering*",
-    "example": "*I was quietly eating your biscuits when you walked in.*"
+    "example": "*I was quietly eating your biscuits when you walked in.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "One after another",
+        "past simple for every event",
+        "*The alarm [[went off]] as soon as he [[lit]] the candle.*"
+       ],
+       [
+        "A count",
+        "repeated actions with a number: past simple",
+        "*We [[flew]] to Oslo four times last year.*"
+       ],
+       [
+        "Earlier than a past moment",
+        "past perfect",
+        "*I was sure we [[had met]] before.*"
+       ],
+       [
+        "The cause of a past state",
+        "past perfect continuous",
+        "*He was hoarse because he [[had been shouting]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "We [[were flying]] to Oslo four times last year.",
+       "We [[flew]] to Oslo four times last year."
+      ],
+      [
+       "We [[had been knowing]] each other for years.",
+       "We [[had known]] each other for years."
+      ],
+      [
+       "We [[have hoped]] the weather would hold.",
+       "We [[had hoped]] the weather would hold."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "A situation and the event that happened in it",
+       "s": [
+        "while",
+        "when",
+        "as"
+       ],
+       "ex": [
+        "She [[dropped]] her keys while she [[was getting]] out of the taxi."
+       ]
+      },
+      {
+       "t": "Plans and hopes that came to nothing",
+       "s": [
+        "had hoped",
+        "was meaning to",
+        "were planning"
+       ],
+       "ex": [
+        "I [[had hoped]] to finish by Friday.",
+        "I [[was meaning]] to call you."
+       ]
+      }
+     ],
+     "watch": [
+      "*I wish* + past perfect is a regret about the past: *I wish I [[had kept]] the receipt.*"
+     ]
+    },
+    "watch": [
+     "*I wish* + past perfect is a regret about the past: *I wish I [[had kept]] the receipt.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11127,7 +11379,83 @@ return json_decode(<<<'EF_JSON_END'
      "Past Continuous situācijai, Past Simple notikumam, kas tajā notika: **She dropped her keys while she was getting out of the taxi*.*",
      "Stāvokļa darbības vārdi paliek vienkāršajā formā arī pirms pagātnes brīža: **We had known each other for years**, nevis **had been knowing**."
     ],
-    "signals": "*as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering*"
+    "signals": "*as soon as, while, four times, before, ever, by then, because, always, forever, I wish, I was wondering*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Viens pēc otra",
+        "Past Simple katram notikumam",
+        "*The alarm [[went off]] as soon as he [[lit]] the candle.*"
+       ],
+       [
+        "Skaits",
+        "atkārtotas darbības ar skaitli: Past Simple",
+        "*We [[flew]] to Oslo four times last year.*"
+       ],
+       [
+        "Agrāk par pagātnes brīdi",
+        "Past Perfect",
+        "*I was sure we [[had met]] before.*"
+       ],
+       [
+        "Pagātnes stāvokļa cēlonis",
+        "Past Perfect Continuous",
+        "*He was hoarse because he [[had been shouting]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "We [[were flying]] to Oslo four times last year.",
+       "We [[flew]] to Oslo four times last year."
+      ],
+      [
+       "We [[had been knowing]] each other for years.",
+       "We [[had known]] each other for years."
+      ],
+      [
+       "We [[have hoped]] the weather would hold.",
+       "We [[had hoped]] the weather would hold."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Situācija un notikums, kas tajā notika",
+       "s": [
+        "while",
+        "when",
+        "as"
+       ],
+       "ex": [
+        "She [[dropped]] her keys while she [[was getting]] out of the taxi."
+       ]
+      },
+      {
+       "t": "Plāni un cerības, kas neīstenojās",
+       "s": [
+        "had hoped",
+        "was meaning to",
+        "were planning"
+       ],
+       "ex": [
+        "I [[had hoped]] to finish by Friday.",
+        "I [[was meaning]] to call you."
+       ]
+      }
+     ],
+     "watch": [
+      "*I wish* + Past Perfect ir nožēla par pagātni: *I wish I [[had kept]] the receipt.*"
+     ]
+    },
+    "watch": [
+     "*I wish* + Past Perfect ir nožēla par pagātni: *I wish I [[had kept]] the receipt.*"
+    ]
    },
    "card": "C1"
   },
@@ -11150,7 +11478,83 @@ return json_decode(<<<'EF_JSON_END'
      "The continuous for an activity up to now, the simple for a number, a result or a state: *I've rung the bank four times. I've been ringing the bank all morning. I've had this phone since May.*"
     ],
     "signals": "*this morning, today, since, the moment, once, the first time, the third time, by May, is thought to, denied*",
-    "example": "*This is the third time I've lost my glasses today. They're on my head.*"
+    "example": "*This is the third time I've lost my glasses today. They're on my head.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "The time is still going on",
+        "*this morning, today*: present perfect",
+        "*It's ten and I've [[drunk]] three coffees.*"
+       ],
+       [
+        "The time is over",
+        "*this morning* said later: past simple",
+        "*I [[didn't do]] much this morning.*"
+       ],
+       [
+        "since",
+        "past simple for the point, present perfect for the rest",
+        "*Since she [[joined]], sales [[have doubled]].*"
+       ],
+       [
+        "The first time",
+        "*It's the first time* + present perfect",
+        "*It's the third time she's [[lost]] her keys.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "This is the first time I [[am seeing]] snow.",
+       "This is the first time I've [[seen]] snow."
+      ],
+      [
+       "Once you [[paid]], the order can't be changed.",
+       "Once you've [[paid]], the order can't be changed."
+      ],
+      [
+       "I've [[been having]] this phone since May.",
+       "I've [[had]] this phone since May."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "A future moment in a time clause",
+       "s": [
+        "the moment",
+        "once",
+        "as soon as"
+       ],
+       "ex": [
+        "I'll text you the moment I've [[got]] the results."
+       ]
+      },
+      {
+       "t": "The perfect after *to* and *-ing*",
+       "s": [
+        "is thought to",
+        "denied",
+        "having"
+       ],
+       "ex": [
+        "He is thought [[to have left]] the country.",
+        "She denied [[having read]] the letter."
+       ]
+      }
+     ],
+     "watch": [
+      "A number of times: simple (*I've [[rung]] four times*); the activity: continuous (*I've [[been ringing]] all morning*)."
+     ]
+    },
+    "watch": [
+     "A number of times: simple (*I've [[rung]] four times*); the activity: continuous (*I've [[been ringing]] all morning*)."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11163,7 +11567,84 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Ilgstošā forma darbībai līdz šim brīdim, vienkāršā *skaitam*, rezultātam vai stāvoklim: **I've rung the bank four times.* *I've been ringing the bank all morning.* *I've had this phone since May*.*"
     ],
-    "signals": "*this morning, today, since, the moment, once, the first time, the third time, by May, is thought to, denied*"
+    "signals": "*this morning, today, since, the moment, once, the first time, the third time, by May, is thought to, denied*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Laiks vēl turpinās",
+        "*this morning, today*: Present Perfect",
+        "*It's ten and I've [[drunk]] three coffees.*"
+       ],
+       [
+        "Laiks ir beidzies",
+        "*this morning*, sakot vēlāk: Past Simple",
+        "*I [[didn't do]] much this morning.*"
+       ],
+       [
+        "since",
+        "Past Simple brīdim, Present Perfect pārējam",
+        "*Since she [[joined]], sales [[have doubled]].*"
+       ],
+       [
+        "Pirmā reize",
+        "*It's the first time* + Present Perfect",
+        "*It's the third time she's [[lost]] her keys.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "This is the first time I [[am seeing]] snow.",
+       "This is the first time I've [[seen]] snow.",
+       "Tulkojot burtiski \"pirmo reizi redzu\", iznāk tagadne; angliski: *I've seen*."
+      ],
+      [
+       "Once you [[paid]], the order can't be changed.",
+       "Once you've [[paid]], the order can't be changed."
+      ],
+      [
+       "I've [[been having]] this phone since May.",
+       "I've [[had]] this phone since May."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Nākotnes brīdis laika palīgteikumā",
+       "s": [
+        "the moment",
+        "once",
+        "as soon as"
+       ],
+       "ex": [
+        "I'll text you the moment I've [[got]] the results."
+       ]
+      },
+      {
+       "t": "Perfekts aiz *to* un *-ing*",
+       "s": [
+        "is thought to",
+        "denied",
+        "having"
+       ],
+       "ex": [
+        "He is thought [[to have left]] the country.",
+        "She denied [[having read]] the letter."
+       ]
+      }
+     ],
+     "watch": [
+      "Reižu skaits: vienkāršā forma (*I've [[rung]] four times*); darbība: ilgstošā (*I've [[been ringing]] all morning*)."
+     ]
+    },
+    "watch": [
+     "Reižu skaits: vienkāršā forma (*I've [[rung]] four times*); darbība: ilgstošā (*I've [[been ringing]] all morning*)."
+    ]
    },
    "card": "C1"
   },
@@ -11186,7 +11667,84 @@ return json_decode(<<<'EF_JSON_END'
      "*If you will / would* = if you are willing (a polite request): *If you'll follow me, I'll show you to your room.*"
     ],
     "signals": "*for hours, always, whenever, by now, nobody told me, refused, in case, should you*",
-    "example": "*My laptop won't switch on. It will always do this before a deadline.*"
+    "example": "*My laptop won't switch on. It will always do this before a deadline.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Typical behaviour",
+        "*will* (now), *would* (the past), never one occasion",
+        "*Our cat [[will sit]] at the window for hours.*"
+       ],
+       [
+        "Refusing",
+        "*won't / wouldn't*, also things",
+        "*The printer [[wouldn't]] work this morning.*"
+       ],
+       [
+        "A confident guess",
+        "*will be* + *-ing*, *will have* + past participle",
+        "*She'[[ll have heard]] the news by now.*"
+       ],
+       [
+        "What we expect",
+        "*should have* + past participle",
+        "*The parcel [[should have arrived]] by now.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Last night he [[would cook]] dinner for us.",
+       "Last night he [[cooked]] dinner for us."
+      ],
+      [
+       "The old factory [[would be]] next to the river.",
+       "The old factory [[used to be]] next to the river."
+      ],
+      [
+       "Should you [[will change]] your mind, call us.",
+       "Should you [[change]] your mind, call us."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "What did not happen",
+       "s": [
+        "but",
+        "nobody told me"
+       ],
+       "ex": [
+        "I [[would have come]], but nobody told me."
+       ]
+      },
+      {
+       "t": "Formal conditions and a small chance",
+       "s": [
+        "should you",
+        "if you should",
+        "in case"
+       ],
+       "ex": [
+        "[[Should]] you need anything, just ask.",
+        "Keep the receipt in case you [[should need]] it."
+       ]
+      }
+     ],
+     "watch": [
+      "*If you will / would* after *if* is polite (= if you are willing): *If you'[[ll]] follow me, I'll show you to your room.*",
+      "*I'd say* softens an opinion: *I'[[d say]] that's about right.*"
+     ]
+    },
+    "watch": [
+     "*If you will / would* after *if* is polite (= if you are willing): *If you'[[ll]] follow me, I'll show you to your room.*",
+     "*I'd say* softens an opinion: *I'[[d say]] that's about right.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11199,7 +11757,84 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "**If you will / would** = ja *esat* ar *mieru* (pieklājīgs lūgums): **If you'll follow me, I'll show you to your room*.*"
     ],
-    "signals": "*for hours, always, whenever, by now, nobody told me, refused, in case, should you*"
+    "signals": "*for hours, always, whenever, by now, nobody told me, refused, in case, should you*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Raksturīga uzvedība",
+        "*will* (tagad), *would* (pagātnē), nekad vienai reizei",
+        "*Our cat [[will sit]] at the window for hours.*"
+       ],
+       [
+        "Atteikums",
+        "*won't / wouldn't*, arī lietām",
+        "*The printer [[wouldn't]] work this morning.*"
+       ],
+       [
+        "Drošs minējums",
+        "*will be* + *-ing*, *will have* + 3. forma",
+        "*She'[[ll have heard]] the news by now.*"
+       ],
+       [
+        "Ko sagaidām",
+        "*should have* + 3. forma",
+        "*The parcel [[should have arrived]] by now.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Last night he [[would cook]] dinner for us.",
+       "Last night he [[cooked]] dinner for us."
+      ],
+      [
+       "The old factory [[would be]] next to the river.",
+       "The old factory [[used to be]] next to the river."
+      ],
+      [
+       "Should you [[will change]] your mind, call us.",
+       "Should you [[change]] your mind, call us."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Kas nenotika",
+       "s": [
+        "but",
+        "nobody told me"
+       ],
+       "ex": [
+        "I [[would have come]], but nobody told me."
+       ]
+      },
+      {
+       "t": "Oficiāli nosacījumi un neliela iespēja",
+       "s": [
+        "should you",
+        "if you should",
+        "in case"
+       ],
+       "ex": [
+        "[[Should]] you need anything, just ask.",
+        "Keep the receipt in case you [[should need]] it."
+       ]
+      }
+     ],
+     "watch": [
+      "*If you will / would* aiz *if* ir pieklājīgi (= ja esat ar mieru): *If you'[[ll]] follow me, I'll show you to your room.*",
+      "*I'd say* mīkstina viedokli: *I'[[d say]] that's about right.*"
+     ]
+    },
+    "watch": [
+     "*If you will / would* aiz *if* ir pieklājīgi (= ja esat ar mieru): *If you'[[ll]] follow me, I'll show you to your room.*",
+     "*I'd say* mīkstina viedokli: *I'[[d say]] that's about right.*"
+    ]
    },
    "card": "C1"
   },
@@ -11222,7 +11857,83 @@ return json_decode(<<<'EF_JSON_END'
      "*can* for what is sometimes true: *Winters here can be very long.*"
     ],
     "signals": "*after three hours, last night, once, this time next week, might as well, might have, could… be*",
-    "example": "*The diet starts on Monday. Today I might as well finish the cake.*"
+    "example": "*The diet starts on Monday. Today I might as well finish the cake.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "One success",
+        "*was able to / managed to*, not *could*",
+        "*After three hours we [[were able to]] park.*"
+       ],
+       [
+        "Permission once",
+        "*was allowed to*, not *could*",
+        "*Last night the kids [[were allowed to]] stay up.*"
+       ],
+       [
+        "Before a passive",
+        "*can be* + past participle",
+        "*The forms [[can be]] filled in online.*"
+       ],
+       [
+        "A possible activity",
+        "*may / might be* + *-ing*, *might have been* + *-ing*",
+        "*He [[might have been joking]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Last night the children [[could]] stay up late.",
+       "Last night the children [[were allowed to]] stay up late."
+      ],
+      [
+       "The forms [[are able to be]] filled in online.",
+       "The forms [[can be]] filled in online."
+      ],
+      [
+       "[[May]] the figures be wrong?",
+       "[[Could]] the figures be wrong?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The only sensible thing, or a reproach",
+       "s": [
+        "might as well",
+        "might have"
+       ],
+       "ex": [
+        "The bus is in an hour, so we [[might as well]] walk.",
+        "You [[might have warned]] me!"
+       ]
+      },
+      {
+       "t": "Admitting a point before disagreeing",
+       "s": [
+        "may … but",
+        "might … but"
+       ],
+       "ex": [
+        "The flat [[may be]] small, but it's bright."
+       ]
+      }
+     ],
+     "watch": [
+      "*can* for what is sometimes true: *Winters here [[can be]] very long.*",
+      "*could* is fine with *see, hear* and *hardly*: *I [[could]] hardly read the menu.*"
+     ]
+    },
+    "watch": [
+     "*can* for what is sometimes true: *Winters here [[can be]] very long.*",
+     "*could* is fine with *see, hear* and *hardly*: *I [[could]] hardly read the menu.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11235,7 +11946,83 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "**can** tam, kas mēdz būt: **Winters here can be very long*.*"
     ],
-    "signals": "*after three hours, last night, once, this time next week, might as well, might have, could*… *be*"
+    "signals": "*after three hours, last night, once, this time next week, might as well, might have, could*… *be*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Viens izdevies mēģinājums",
+        "*was able to / managed to*, nevis *could*",
+        "*After three hours we [[were able to]] park.*"
+       ],
+       [
+        "Atļauja vienreiz",
+        "*was allowed to*, nevis *could*",
+        "*Last night the kids [[were allowed to]] stay up.*"
+       ],
+       [
+        "Pirms ciešamās kārtas",
+        "*can be* + 3. forma",
+        "*The forms [[can be]] filled in online.*"
+       ],
+       [
+        "Iespējama darbība",
+        "*may / might be* + *-ing*, *might have been* + *-ing*",
+        "*He [[might have been joking]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Last night the children [[could]] stay up late.",
+       "Last night the children [[were allowed to]] stay up late."
+      ],
+      [
+       "The forms [[are able to be]] filled in online.",
+       "The forms [[can be]] filled in online."
+      ],
+      [
+       "[[May]] the figures be wrong?",
+       "[[Could]] the figures be wrong?"
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Vienīgais saprātīgais vai pārmetums",
+       "s": [
+        "might as well",
+        "might have"
+       ],
+       "ex": [
+        "The bus is in an hour, so we [[might as well]] walk.",
+        "You [[might have warned]] me!"
+       ]
+      },
+      {
+       "t": "Atzīst vienu, pirms iebilst",
+       "s": [
+        "may … but",
+        "might … but"
+       ],
+       "ex": [
+        "The flat [[may be]] small, but it's bright."
+       ]
+      }
+     ],
+     "watch": [
+      "*can* tam, kas mēdz būt: *Winters here [[can be]] very long.*",
+      "*could* der ar *see, hear* un *hardly*: *I [[could]] hardly read the menu.*"
+     ]
+    },
+    "watch": [
+     "*can* tam, kas mēdz būt: *Winters here [[can be]] very long.*",
+     "*could* der ar *see, hear* un *hardly*: *I [[could]] hardly read the menu.*"
+    ]
    },
    "card": "C1"
   },
@@ -11258,7 +12045,84 @@ return json_decode(<<<'EF_JSON_END'
      "Fixed phrases: *be that as it may, so be it, come what may, suffice it to say*."
     ],
     "signals": "*demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may*",
-    "example": "*If I were a cat, I'd ignore emails too.*"
+    "example": "*If I were a cat, I'd ignore emails too.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "After demand, insist…",
+        "*that* + the base form for every person",
+        "*I insist that he [[be]] told.*"
+       ],
+       [
+        "The negative",
+        "*not* + base form",
+        "*…that it [[not be]] taken with alcohol.*"
+       ],
+       [
+        "A surprise",
+        "*It's odd that* + *should*",
+        "*It's odd that she [[should say]] that.*"
+       ],
+       [
+        "Unreal",
+        "*were* for every person",
+        "*If I [[were]] you, I'd take it.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "The board demanded [[the director to resign]].",
+       "The board demanded [[that the director resign]]."
+      ],
+      [
+       "If the bank [[would refuse]], we'd sell the car.",
+       "If the bank [[refused]], we'd sell the car."
+      ],
+      [
+       "I'd rather you [[wouldn't have sold]] the car.",
+       "I'd rather you [[hadn't sold]] the car."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Formal demands and advice",
+       "s": [
+        "demand",
+        "recommend",
+        "it is essential that"
+       ],
+       "ex": [
+        "The doctor recommended that she [[rest]].",
+        "It is essential that every guest [[have]] a ticket."
+       ]
+      },
+      {
+       "t": "Unreal now and unreal then",
+       "s": [
+        "I wish",
+        "if … were to",
+        "I'd rather"
+       ],
+       "ex": [
+        "I wish it [[were]] Friday.",
+        "I'd rather you [[had told]] me."
+       ]
+      }
+     ],
+     "watch": [
+      "Fixed phrases keep the old form: *[[be that as it may]], [[come what may]], [[so be it]]*."
+     ]
+    },
+    "watch": [
+     "Fixed phrases keep the old form: *[[be that as it may]], [[come what may]], [[so be it]]*."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11271,7 +12135,85 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Nemainīgi *izteicieni*: **be that as it may, so be it, come what may, suffice it to say**."
     ],
-    "signals": "*demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may*"
+    "signals": "*demand, insist, recommend, suggest, it is vital that, I wish, if I were, as if, I'd rather, be that as it may*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Aiz demand, insist…",
+        "*that* + pamatforma visām personām",
+        "*I insist that he [[be]] told.*"
+       ],
+       [
+        "Noliegums",
+        "*not* + pamatforma",
+        "*…that it [[not be]] taken with alcohol.*"
+       ],
+       [
+        "Pārsteigums",
+        "*It's odd that* + *should*",
+        "*It's odd that she [[should say]] that.*"
+       ],
+       [
+        "Nereāli",
+        "*were* visām personām",
+        "*If I [[were]] you, I'd take it.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "The board demanded [[the director to resign]].",
+       "The board demanded [[that the director resign]]."
+      ],
+      [
+       "If the bank [[would refuse]], we'd sell the car.",
+       "If the bank [[refused]], we'd sell the car.",
+       "Tulkojot burtiski \"ja banka atteiktu\", gribas *would*; aiz *if* to nelieto."
+      ],
+      [
+       "I'd rather you [[wouldn't have sold]] the car.",
+       "I'd rather you [[hadn't sold]] the car."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Oficiālas prasības un ieteikumi",
+       "s": [
+        "demand",
+        "recommend",
+        "it is essential that"
+       ],
+       "ex": [
+        "The doctor recommended that she [[rest]].",
+        "It is essential that every guest [[have]] a ticket."
+       ]
+      },
+      {
+       "t": "Nereāli tagad un nereāli pagātnē",
+       "s": [
+        "I wish",
+        "if … were to",
+        "I'd rather"
+       ],
+       "ex": [
+        "I wish it [[were]] Friday.",
+        "I'd rather you [[had told]] me."
+       ]
+      }
+     ],
+     "watch": [
+      "Nemainīgi izteicieni saglabā seno formu: *[[be that as it may]], [[come what may]], [[so be it]]*."
+     ]
+    },
+    "watch": [
+     "Nemainīgi izteicieni saglabā seno formu: *[[be that as it may]], [[come what may]], [[so be it]]*."
+    ]
    },
    "card": "C1"
   },
@@ -11294,7 +12236,83 @@ return json_decode(<<<'EF_JSON_END'
      "Ask: what is the main noun? Is the group one unit or its members?"
     ],
     "signals": "*together with, as well as, the number of, a number of, each of, either … or, politics, criteria, ten kilometres*",
-    "example": "*The number of unread emails has reached 2,000. None of them is urgent.*"
+    "example": "*The number of unread emails has reached 2,000. None of them is urgent.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "The main noun",
+        "not the words around it",
+        "*The manager, with two assistants, [[is]] coming.*"
+       ],
+       [
+        "the number of / a number of",
+        "singular / plural",
+        "*The number of applicants [[has]] fallen.*"
+       ],
+       [
+        "each of",
+        "singular verb",
+        "*Each of the rooms [[has]] a bathroom.*"
+       ],
+       [
+        "either … or",
+        "the nearer noun decides",
+        "*Either Tom or his parents [[are]] coming.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Each of the rooms [[have]] its own bathroom.",
+       "Each of the rooms [[has]] its own bathroom."
+      ],
+      [
+       "The number of applicants [[have]] fallen.",
+       "The number of applicants [[has]] fallen."
+      ],
+      [
+       "The criteria [[has]] changed.",
+       "The criteria [[have]] changed."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Singular though it looks plural",
+       "s": [
+        "politics",
+        "the news",
+        "ten kilometres"
+       ],
+       "ex": [
+        "Politics [[has]] never interested me.",
+        "Ten kilometres [[is]] a long way."
+       ]
+      },
+      {
+       "t": "A group as one or as people",
+       "s": [
+        "the jury",
+        "the team",
+        "the staff"
+       ],
+       "ex": [
+        "The jury [[are]] still arguing among themselves."
+       ]
+      }
+     ],
+     "watch": [
+      "A clause as the subject is singular: *Being late for every meeting [[is]] not going to help.*"
+     ]
+    },
+    "watch": [
+     "A clause as the subject is singular: *Being late for every meeting [[is]] not going to help.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11307,7 +12325,83 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Pajautā: kurš ir *galvenais* lietvārds? Vai *grupa* ir viena vienība vai tās locekļi?"
     ],
-    "signals": "*together with, as well as, the number of, a number of, each of, either* … *or, politics, criteria, ten kilometres*"
+    "signals": "*together with, as well as, the number of, a number of, each of, either* … *or, politics, criteria, ten kilometres*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Galvenais lietvārds",
+        "nevis vārdi ap to",
+        "*The manager, with two assistants, [[is]] coming.*"
+       ],
+       [
+        "the number of / a number of",
+        "vienskaitlis / daudzskaitlis",
+        "*The number of applicants [[has]] fallen.*"
+       ],
+       [
+        "each of",
+        "darbības vārds vienskaitlī",
+        "*Each of the rooms [[has]] a bathroom.*"
+       ],
+       [
+        "either … or",
+        "izšķir tuvākais lietvārds",
+        "*Either Tom or his parents [[are]] coming.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Each of the rooms [[have]] its own bathroom.",
+       "Each of the rooms [[has]] its own bathroom."
+      ],
+      [
+       "The number of applicants [[have]] fallen.",
+       "The number of applicants [[has]] fallen."
+      ],
+      [
+       "The criteria [[has]] changed.",
+       "The criteria [[have]] changed."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Vienskaitlis, lai gan izskatās pēc daudzskaitļa",
+       "s": [
+        "politics",
+        "the news",
+        "ten kilometres"
+       ],
+       "ex": [
+        "Politics [[has]] never interested me.",
+        "Ten kilometres [[is]] a long way."
+       ]
+      },
+      {
+       "t": "Grupa kā viens vai kā cilvēki",
+       "s": [
+        "the jury",
+        "the team",
+        "the staff"
+       ],
+       "ex": [
+        "The jury [[are]] still arguing among themselves."
+       ]
+      }
+     ],
+     "watch": [
+      "Palīgteikums kā teikuma priekšmets ir vienskaitlī: *Being late for every meeting [[is]] not going to help.*"
+     ]
+    },
+    "watch": [
+     "Palīgteikums kā teikuma priekšmets ir vienskaitlī: *Being late for every meeting [[is]] not going to help.*"
+    ]
    },
    "card": "C1"
   },
@@ -11330,7 +12424,84 @@ return json_decode(<<<'EF_JSON_END'
      "Check which preposition the noun or verb takes: *a talent for, prevent someone from*."
     ],
     "signals": "*whom, which, to which, on which, none of which, looked into, to talk to, with a view to, other than, despite the fact that*",
-    "example": "*This is the meeting in which nothing was decided.*"
+    "example": "*This is the meeting in which nothing was decided.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Formal",
+        "preposition + *whom / which*",
+        "*the person [[to whom]] it was addressed*"
+       ],
+       [
+        "Everyday",
+        "the preposition at the end",
+        "*the colleague I share an office [[with]]*"
+       ],
+       [
+        "Fixed phrases",
+        "*the extent to which, the basis on which*",
+        "*the extent [[to which]] prices rose*"
+       ],
+       [
+        "Stays in place",
+        "after a passive or an infinitive",
+        "*It's being [[looked into]]. Nobody to talk [[to]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "The colleague [[with who]] I share an office.",
+       "The colleague [[with whom]] I share an office."
+      ],
+      [
+       "[[Despite that]] it rained, we went.",
+       "[[Despite the fact that]] it rained, we went."
+      ],
+      [
+       "Your complaint is being [[looked]].",
+       "Your complaint is being [[looked into]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "After a preposition: -ing, a wh-clause or *the fact that*",
+       "s": [
+        "despite",
+        "depends on",
+        "curious about"
+       ],
+       "ex": [
+        "It [[depends on whether]] she signs.",
+        "She has a talent [[for explaining]] things."
+       ]
+      },
+      {
+       "t": "Formal prepositions of several words",
+       "s": [
+        "with a view to",
+        "other than",
+        "in the event of"
+       ],
+       "ex": [
+        "The road was closed [[with a view to]] repairing the bridge.",
+        "Nobody [[other than]] the owner has a key."
+       ]
+      }
+     ],
+     "watch": [
+      "*with a view to* is followed by *-ing* (*to* is a preposition here): *with a view to [[repairing]]*."
+     ]
+    },
+    "watch": [
+     "*with a view to* is followed by *-ing* (*to* is a preposition here): *with a view to [[repairing]]*."
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11343,7 +12514,84 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Pārbaudi, kādu prievārdu *prasa* lietvārds vai darbības vārds: **a talent for, prevent someone from**."
     ],
-    "signals": "*whom, which, to which, on which, none of which, looked into, to talk to, with a view to, other than, despite the fact that*"
+    "signals": "*whom, which, to which, on which, none of which, looked into, to talk to, with a view to, other than, despite the fact that*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Oficiāli",
+        "prievārds + *whom / which*",
+        "*the person [[to whom]] it was addressed*"
+       ],
+       [
+        "Ikdienā",
+        "prievārds beigās",
+        "*the colleague I share an office [[with]]*"
+       ],
+       [
+        "Nemainīgi izteicieni",
+        "*the extent to which, the basis on which*",
+        "*the extent [[to which]] prices rose*"
+       ],
+       [
+        "Paliek savā vietā",
+        "aiz ciešamās kārtas vai nenoteiksmes",
+        "*It's being [[looked into]]. Nobody to talk [[to]].*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "The colleague [[with who]] I share an office.",
+       "The colleague [[with whom]] I share an office."
+      ],
+      [
+       "[[Despite that]] it rained, we went.",
+       "[[Despite the fact that]] it rained, we went."
+      ],
+      [
+       "Your complaint is being [[looked]].",
+       "Your complaint is being [[looked into]]."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Aiz prievārda: -ing, wh-palīgteikums vai *the fact that*",
+       "s": [
+        "despite",
+        "depends on",
+        "curious about"
+       ],
+       "ex": [
+        "It [[depends on whether]] she signs.",
+        "She has a talent [[for explaining]] things."
+       ]
+      },
+      {
+       "t": "Oficiāli vairākvārdu prievārdi",
+       "s": [
+        "with a view to",
+        "other than",
+        "in the event of"
+       ],
+       "ex": [
+        "The road was closed [[with a view to]] repairing the bridge.",
+        "Nobody [[other than]] the owner has a key."
+       ]
+      }
+     ],
+     "watch": [
+      "Aiz *with a view to* lieto *-ing* (*to* te ir prievārds): *with a view to [[repairing]]*."
+     ]
+    },
+    "watch": [
+     "Aiz *with a view to* lieto *-ing* (*to* te ir prievārds): *with a view to [[repairing]]*."
+    ]
    },
    "card": "C1"
   },
@@ -11367,7 +12615,83 @@ return json_decode(<<<'EF_JSON_END'
      "Fixed phrases that comment on the whole sentence: *Judging by the queue…, Generally speaking…, Considering the price…*"
     ],
     "signals": "*having, not knowing, once opened, with, there being, on hearing, judging by*",
-    "example": "*Having eaten the whole pizza, I started my diet.*"
+    "example": "*Having eaten the whole pizza, I started my diet.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Same subject",
+        "the clause and the main clause share the subject",
+        "*[[Opening]] the door, she saw the cat.*"
+       ],
+       [
+        "Earlier or cause",
+        "*having* + past participle; *not* first",
+        "*[[Having finished]], she went home.*"
+       ],
+       [
+        "Passive meaning",
+        "past participle",
+        "*[[Stored]] in a dry place, seeds keep for years.*"
+       ],
+       [
+        "Its own subject",
+        "*with* + noun + *-ing*; *there being*",
+        "*[[With prices going up]], families struggle.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "[[Walking into the office]], the lights were off.",
+       "[[Walking into the office]], I saw the lights were off."
+      ],
+      [
+       "[[Knowing not]] anyone, he felt lonely.",
+       "[[Not knowing]] anyone, he felt lonely."
+      ],
+      [
+       "[[At hearing]] the news, she cried.",
+       "[[On hearing]] the news, she cried."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "The result of the main clause",
+       "s": [
+        "flooding",
+        "forcing",
+        "causing"
+       ],
+       "ex": [
+        "The river burst its banks, [[flooding]] the streets."
+       ]
+      },
+      {
+       "t": "Short forms after a conjunction",
+       "s": [
+        "once opened",
+        "when asked",
+        "if in doubt"
+       ],
+       "ex": [
+        "Keep refrigerated [[once opened]].",
+        "[[When asked]], he said nothing."
+       ]
+      }
+     ],
+     "watch": [
+      "Comment phrases need no shared subject: *[[Judging by]] the queue, the café is popular.*"
+     ]
+    },
+    "watch": [
+     "Comment phrases need no shared subject: *[[Judging by]] the queue, the café is popular.*"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11381,7 +12705,84 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Nemainīgi *izteicieni*, kas komentē *visu* teikumu: **Judging by the queue*…, *Generally speaking*…, *Considering the price*…*"
     ],
-    "signals": "*having, not knowing, once opened, with, there being, on hearing, judging by*"
+    "signals": "*having, not knowing, once opened, with, there being, on hearing, judging by*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Tas pats priekšmets",
+        "teicienam un galvenajam teikumam ir viens priekšmets",
+        "*[[Opening]] the door, she saw the cat.*"
+       ],
+       [
+        "Agrāk vai cēlonis",
+        "*having* + 3. forma; *not* pirmais",
+        "*[[Having finished]], she went home.*"
+       ],
+       [
+        "Ciešamās kārtas nozīme",
+        "3. forma",
+        "*[[Stored]] in a dry place, seeds keep for years.*"
+       ],
+       [
+        "Savs priekšmets",
+        "*with* + lietvārds + *-ing*; *there being*",
+        "*[[With prices going up]], families struggle.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "[[Walking into the office]], the lights were off.",
+       "[[Walking into the office]], I saw the lights were off.",
+       "Latviski \"ienākot birojā, gaismas nedega\" var teikt; angliski gaismas nevar ienākt."
+      ],
+      [
+       "[[Knowing not]] anyone, he felt lonely.",
+       "[[Not knowing]] anyone, he felt lonely."
+      ],
+      [
+       "[[At hearing]] the news, she cried.",
+       "[[On hearing]] the news, she cried."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Galvenā teikuma rezultāts",
+       "s": [
+        "flooding",
+        "forcing",
+        "causing"
+       ],
+       "ex": [
+        "The river burst its banks, [[flooding]] the streets."
+       ]
+      },
+      {
+       "t": "Īsās formas aiz saikļa",
+       "s": [
+        "once opened",
+        "when asked",
+        "if in doubt"
+       ],
+       "ex": [
+        "Keep refrigerated [[once opened]].",
+        "[[When asked]], he said nothing."
+       ]
+      }
+     ],
+     "watch": [
+      "Komentāra izteicieniem kopīgs priekšmets nav vajadzīgs: *[[Judging by]] the queue, the café is popular.*"
+     ]
+    },
+    "watch": [
+     "Komentāra izteicieniem kopīgs priekšmets nav vajadzīgs: *[[Judging by]] the queue, the café is popular.*"
+    ]
    },
    "card": "C1"
   },
@@ -11404,7 +12805,82 @@ return json_decode(<<<'EF_JSON_END'
      "Formal and emphatic style: speeches, reports, stories."
     ],
     "signals": "*never, rarely, hardly, no sooner, not until, only when, so … that, had, should, what … is, though*",
-    "example": "*Never have I regretted a nap.*"
+    "example": "*Never have I regretted a nap.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Negative start",
+        "helping verb + subject",
+        "*[[Rarely have I]] seen such a sunset.*"
+       ],
+       [
+        "Not until / Only when",
+        "inversion in the second part",
+        "*Not until they left [[did we notice]] the stain.*"
+       ],
+       [
+        "So / Such",
+        "*So* + adjective + *be* + subject",
+        "*[[So loud was]] the music that we left.*"
+       ],
+       [
+        "If-less condition",
+        "*Had, Should, Were* first",
+        "*[[Had I known]], I'd have left earlier.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "[[Never I have]] felt so tired.",
+       "[[Never have I]] felt so tired."
+      ],
+      [
+       "Not until they left [[we noticed]] the stain.",
+       "Not until they left [[did we notice]] the stain."
+      ],
+      [
+       "[[Should you will]] need help, call us.",
+       "[[Should you]] need help, call us."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Focus on one part",
+       "s": [
+        "what … is",
+        "all … is",
+        "it was … that"
+       ],
+       "ex": [
+        "[[What I need is]] a long holiday."
+       ]
+      },
+      {
+       "t": "Admitting something formally",
+       "s": [
+        "though",
+        "as",
+        "much as"
+       ],
+       "ex": [
+        "Cold [[though it was]], we went for a swim."
+       ]
+      }
+     ],
+     "watch": [
+      "After *Here / There* with a noun, the verb comes first: *Here [[comes]] the bus!* (but *Here it [[comes]]!*)"
+     ]
+    },
+    "watch": [
+     "After *Here / There* with a noun, the verb comes first: *Here [[comes]] the bus!* (but *Here it [[comes]]!*)"
+    ]
    },
    "rule_lv": {
     "form": [
@@ -11417,7 +12893,83 @@ return json_decode(<<<'EF_JSON_END'
     "use": [
      "Oficiāls un uzsvērts *stils*: *runas*, ziņojumi, stāsti."
     ],
-    "signals": "*never, rarely, hardly*, no *sooner, not until, only when, so* … *that, had, should, what* … *is, though*"
+    "signals": "*never, rarely, hardly*, no *sooner, not until, only when, so* … *that, had, should, what* … *is, though*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Nolieguma sākums",
+        "palīgdarbības vārds + priekšmets",
+        "*[[Rarely have I]] seen such a sunset.*"
+       ],
+       [
+        "Not until / Only when",
+        "inversija otrajā daļā",
+        "*Not until they left [[did we notice]] the stain.*"
+       ],
+       [
+        "So / Such",
+        "*So* + īpašības vārds + *be* + priekšmets",
+        "*[[So loud was]] the music that we left.*"
+       ],
+       [
+        "Nosacījums bez if",
+        "*Had, Should, Were* pirmie",
+        "*[[Had I known]], I'd have left earlier.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "[[Never I have]] felt so tired.",
+       "[[Never have I]] felt so tired.",
+       "Latviski \"nekad es neesmu\" saglabā parasto secību; angliski pēc *Never* palīgdarbības vārds stāv pirms *I*."
+      ],
+      [
+       "Not until they left [[we noticed]] the stain.",
+       "Not until they left [[did we notice]] the stain."
+      ],
+      [
+       "[[Should you will]] need help, call us.",
+       "[[Should you]] need help, call us."
+      ]
+     ],
+     "uses": [
+      {
+       "t": "Izceļ vienu daļu",
+       "s": [
+        "what … is",
+        "all … is",
+        "it was … that"
+       ],
+       "ex": [
+        "[[What I need is]] a long holiday."
+       ]
+      },
+      {
+       "t": "Oficiāli atzīst",
+       "s": [
+        "though",
+        "as",
+        "much as"
+       ],
+       "ex": [
+        "Cold [[though it was]], we went for a swim."
+       ]
+      }
+     ],
+     "watch": [
+      "Pēc *Here / There* ar lietvārdu darbības vārds stāv pirmais: *Here [[comes]] the bus!* (bet *Here it [[comes]]!*)"
+     ]
+    },
+    "watch": [
+     "Pēc *Here / There* ar lietvārdu darbības vārds stāv pirmais: *Here [[comes]] the bus!* (bet *Here it [[comes]]!*)"
+    ]
    },
    "card": "C1"
   }

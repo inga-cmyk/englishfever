@@ -172,3 +172,5 @@ def marked(sid, v):
     return v
 import cards2_h  # noqa: E402   (the last twelve old-layout cards, 4 November)
 CARDS2.update(cards2_h.CARDS)
+import cards2_c1  # noqa: E402   (the ten C1 cards, 23 November)
+CARDS2.update(cards2_c1.CARDS)

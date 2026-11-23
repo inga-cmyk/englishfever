@@ -155,7 +155,7 @@ Still to do, in this order:
 
 **Templates to copy:** `_src/twins_3.py` for check / use tasks, `_src/learn_drag_4.py` for learning tasks (`learning_task()` marks them *practice only*), `_src/bank_fixes.py` for changing published draft rows without touching their generators.
 
-**Rule cards:** every card is in `app/authoring/cards2_*.py` (one style: a form table, exactly three typical mistakes, two or three "When we use it" blocks, one to three "Watch out" points, EN and LV in the same structure). A new topic's card follows `cards2_h.py`. Show EN and LV phone screenshots to Inga before packaging.
+**Rule cards:** every card is in `app/authoring/cards2_*.py` (one style: a form table, exactly three typical mistakes, two or three "When we use it" blocks, one to three "Watch out" points, EN and LV in the same structure). A new topic's card follows `cards2_h.py` (the C1 cards: `cards2_c1.py`; the plain `CARDS` entry in `b1_topics.py` alone is NOT enough: without a `cards2` entry the card shows in the old layout, as happened with the first C1 cards, 22-23 November). Show EN and LV phone screenshots to Inga before packaging. When the front end changes, bump `?v=` in `app/index.html` (forgotten from 22 to 23 November).
 
 **How a batch of tasks is made and approved:**
 1. Write the generator in `docs/task-drafts/_src/`, ending with `save("pending/<name>.csv")` and a review file `pending/<name>-review.md` (task, answer, wrong options or words, EN and LV explanation, the source task).

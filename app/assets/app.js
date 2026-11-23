@@ -1208,7 +1208,7 @@
     var openMap = {};   // areas start closed, except the ones with chosen topics
     function group(area) {
       // the New group shows new topics at every level (a C1 topic was hidden at the learner's B2; teacher, 4 November)
-      var list = state.meta.skills.filter(function (s) { return area.id === '_new' ? (isNewTopic(s.id) && countAll(s) > 0) : (inArea(s, area.id) && countAt(s) > 0); }).sort(byCard);
+      var list = state.meta.skills.filter(function (s) { return area.id === '_new' ? (isNewTopic(s.id) && countAt(s) > 0) : (inArea(s, area.id) && countAt(s) > 0); }).sort(byCard);
       if (!list.length) return null;
       var n = list.filter(function (s) { return selected[s.id]; }).length;
       var det = h('details', { class: 'picker-group', open: (area.id in openMap) ? openMap[area.id] : (n > 0 || area.id === '_new') },
@@ -1233,7 +1233,7 @@
       // only the points of the chosen level (A2 / B1 / B2; a point's levels are A2.1, A2.2 …), closed until opened (teacher, 16 November)
       var ch = chosenLevels();
       var here = all.filter(function (p) { return (p.levels || []).some(function (l) { return ch.indexOf(full(l)) >= 0; }); });
-      var topics = state.meta.skills.filter(function (s) { return isNewTopic(s.id) && countAll(s) > 0; });   // new topics, at every level (22 November)
+      var topics = state.meta.skills.filter(function (s) { return isNewTopic(s.id) && countAt(s) > 0; });   // new topics only at the chosen level: C1 topics only when C1 is chosen (teacher, 23 November)
       if (!here.length && !topics.length) return null;
       var det = h('details', { class: 'picker-group', open: ('_new' in openMap) ? openMap._new : false },
         h('summary', null, h('span', { class: 'h3' }, 'New'), h('span', { class: 'pill', style: 'margin-left:8px' }, String(here.length + topics.length))),

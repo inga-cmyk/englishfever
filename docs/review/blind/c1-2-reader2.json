@@ -1,0 +1,137 @@
+[
+{
+"id": "c1-2-001",
+"answer": [
+"am",
+"standing",
+"turns"
+],
+"other_correct": [
+[
+"was",
+"standing",
+"turned"
+],
+[
+"was",
+"standing",
+"turns"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Present (am standing/turns) and past (was standing/turned) both work; 'hands' is present so past is less consistent but a learner may well write it. Task does not force the anecdote present.",
+"level_problem": "Anecdote present is C1 use, but 'stand' for the first gap pair needs two words; fine.",
+"sense_problem": ""
+},
+{
+"id": "c1-2-002",
+"answer": "I was waiting for the bus when suddenly this car stops right in front of me.",
+"other_correct": "",
+"wrong_options_that_fit": "Option 4 ('this man is walking into a café and he orders') is borderline: joke/anecdote narration is normally 'walks', 'is walking ... and orders' is odd but possible; it could fit as a mistake too.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Option 1 mixes past continuous with present 'stops' - a plausible learner error. Option 4 is also unnatural, so two options are arguably wrong."
+},
+{
+"id": "c1-2-003",
+"answer": [
+"passes",
+"shoots"
+],
+"other_correct": [
+[
+"has passed",
+"shoots"
+],
+[
+"passed",
+"shot"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Past forms are wrong for live commentary only if the learner knows the context; 'passes ... shoots and scores' is the intended one; 'passed ... shot' would not fit 'scores'. Task is fine.",
+"level_problem": "Commentary present is nearer B1/B2 than C1; a B1 learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-2-004",
+"answer": "I'm gathering you're looking for a new flat.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'I gather' as stative is a good C1 point.",
+"sense_problem": ""
+},
+{
+"id": "c1-2-005",
+"answer": "I'm wondering could you look at my CV before Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Missing 'if/whether' is an obvious error; closer to B1/B2 than C1.",
+"sense_problem": "Believable learner mistake."
+},
+{
+"id": "c1-2-006",
+"answer": "I'm wondering whether you could help me with this",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Content is already near the target order (cards in order of sentence parts) and only one order is possible; low challenge for C1.",
+"level_problem": "Too easy for C1; B1 learner can solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-2-007",
+"answer": [
+"doesn't appear"
+],
+"other_correct": [
+[
+"does not appear"
+],
+[
+"isn't appearing"
+],
+[
+"hasn't appeared"
+],
+[
+"didn't appear"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'isn't appearing to work' is less natural but possible; 'hasn't appeared/didn't appear to' also fit 'Can you check it?'. Gap is one word per gap but answer is two words (contraction counts as one?) - unclear.",
+"level_problem": "Simple/continuous with 'appear' is C1 nuance, ok.",
+"sense_problem": ""
+},
+{
+"id": "c1-2-008",
+"answer": [
+"are expecting"
+],
+"other_correct": [
+[
+"expect"
+],
+[
+"are going to have"
+],
+[
+"will be expecting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'expect' (simple) is grammatical but less natural; 'are having' also fits ('are having their first baby in June'), though not the given verb.",
+"level_problem": "Fine for C1 nuance; B2 learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-2-009",
+"answer": "I'm promising I'll pay you back on Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'I'm not suggesting' vs 'I'm promising' is a decent nuance point but mostly B2.",
+"sense_problem": ""
+}
+]

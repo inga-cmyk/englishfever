@@ -199,7 +199,7 @@ final class CustomItems
                             if (isset($byOld[$ok3]) && !(isset($mine[$dup]) && $mine[$dup]['id'] === $byOld[$ok3])) { $res['retire_all'][] = $byOld[$ok3]; $res['replaces'] = $res['replaces'] ?? $byOld[$ok3]; break; }
                         }
                         // an old multiple-choice task named by its question (its correct option is the same as another task's, e.g. "be"; teacher, 24 November)
-                        foreach ((strpos($oldText, '___') !== false ? ($byOldQ[self::qKey(['skill' => $item['skill'], 'level' => $item['level'], 'q' => $oldText])] ?? []) : []) as $oldId) {   // only a question with a gap: never a general one such as "Which sentence has a mistake?"
+                        foreach (((strpos($oldText, '___') !== false || mb_strlen($oldText) > 60) ? ($byOldQ[self::qKey(['skill' => $item['skill'], 'level' => $item['level'], 'q' => $oldText])] ?? []) : []) as $oldId) {   // only a question with a gap: never a general one such as "Which sentence has a mistake?"
                             if (!(isset($mine[$dup]) && $mine[$dup]['id'] === $oldId) && !in_array($oldId, $res['retire_all'], true)) { $res['retire_all'][] = $oldId; $res['replaces'] = $res['replaces'] ?? $oldId; }
                         }
                     }

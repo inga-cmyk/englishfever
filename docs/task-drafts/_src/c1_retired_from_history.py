@@ -20,7 +20,7 @@ def keys(rows):
         kind, q, ok = r.get("type", ""), r.get("task", "").strip(), r.get("correct answer", "").strip()
         if kind == "mcq":
             if ok: out.add(ok.split(" | ")[0].strip())
-            if "___" in q: out.add(q)
+            if "___" in q or len(q) > 60: out.add(q)   # the importer matches such a question too (CustomItems::qKey)
         elif kind == "order":
             if ok: out.add(ok.split(" | ")[0].strip())
         elif q:

@@ -4,19 +4,19 @@ from lib import gp, mc
 T = "Subject and verb: advanced rules"
 L = "C1"
 
-gp(T, L, 3, "The number of applicants ___ fallen sharply this year. (have)", "has | had",
+gp(T, L, 3, "The number of applicants ___ fallen sharply this year. (have)", "has | 's",
    "*The number of* + plural noun takes a singular verb: the number is one thing. *The number of applicants has fallen.*",
    "*The number of* + daudzskaitlis prasa darbības vārdu vienskaitlī: skaitlis ir viena lieta. *The number of applicants has fallen.*")
-gp(T, L, 3, "A number of applicants ___ already withdrawn. (have)", "have | had",
+gp(T, L, 3, "A number of applicants ___ already withdrawn, so there are still places left. (have)", "have | 've",
    "*A number of* = several, so the verb is plural: *A number of applicants have withdrawn.* Compare: *The number of applicants has fallen* (the number is one thing).",
    "*A number of* = vairāki, tāpēc darbības vārds ir daudzskaitlī (salīdzini: *The number of applicants has fallen*, skaitlis ir viena lieta): *A number of applicants have withdrawn.*")
 gp(T, L, 4, "The manager, together with two of her assistants, ___ coming to the meeting. (be)", "is | 's | was",
    "The main noun is *the manager*; a phrase with *together with* does not change the verb: *is coming*.",
    "Galvenais lietvārds ir *the manager*; izteiciens ar *together with* darbības vārdu nemaina: *is coming*.")
-gp(T, L, 3, "Politics ___ never interested me much. (have)", "has | had",
+gp(T, L, 3, "Politics ___ never interested me much, but this election is different. (have)", "has | 's",
    "*politics* ends in *-s* but takes a singular verb: *Politics has never interested me.*",
    "*politics* beidzas ar *-s*, bet darbības vārds ir vienskaitlī: *Politics has never interested me.*")
-gp(T, L, 3, "The criteria for the award ___ changed this year. (have)", "have | had",
+gp(T, L, 3, "The criteria for the award ___ changed this year, so please read them again. (have)", "have | 've",
    "*criteria* is the plural of *criterion*: *The criteria have changed.*",
    "*criteria* ir *criterion* daudzskaitlis: *The criteria have changed.*")
 gp(T, L, 3, "Ten kilometres ___ a long way to walk in this heat. (be)", "is | 's | was",
@@ -38,6 +38,6 @@ gp(T, L, 4, "After three days, the jury ___ still arguing among themselves. (be)
    "Žūrija kā atsevišķi cilvēki (*among themselves*): darbības vārds daudzskaitlī, *are arguing*.")
 
 # teacher's tester, 23 November: *and* changes the verb, *together with* does not
-gp(T, L, 4, "We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be)", "are | 're | will be",
+gp(T, L, 4, "Write one word in the gap: We need two more chairs, because the manager and two of her assistants ___ coming to the meeting tomorrow.", "are",
    "With *and*, the subject is plural: *The manager and two of her assistants are coming.* With *together with*, it stays singular: *The manager, together with two of her assistants, is coming.*",
    "Ar *and* teikuma priekšmets ir daudzskaitlī: *The manager and two of her assistants are coming.* Ar *together with* tas paliek vienskaitlī: *The manager, together with two of her assistants, is coming.*")

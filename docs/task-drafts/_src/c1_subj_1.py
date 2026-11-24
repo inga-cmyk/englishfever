@@ -1,7 +1,7 @@
 """C1 direction 6 (The subjunctive), round 1 (23 November 2026). Hewings, Advanced Grammar in Use (3rd ed.), units 39 and 85;
 Murphy, English Grammar in Use, units 39, 41. Only places where the context leaves one form; where informal English also
 allows an ordinary tense (*demanded that he resigns*, *if I was*), it is accepted."""
-from lib import gp, mc, note
+from lib import gp, mc, note, tx
 T = "The subjunctive: I insist that he be told, if I were"
 L = "C1"
 
@@ -45,10 +45,12 @@ gp(T, L, 4, "It is essential that every passenger ___ a valid ticket. (have)", "
    "Aiz *It is essential / vital that* oficiālā valodā lieto pamatformu (*have*) vai *should have*; *has* ir mazāk oficiāli.")
 note('should have :: Also correct (British English). :: Arī pareizi (britu angļu valodā). || has :: Also correct in less formal English. :: Arī pareizi, mazāk oficiāli.')
 # x_subj_present
-mc(T, L, 4, "Choose the correct option: The lawyer demanded that her client ___ told the whole truth.", "be",
-   ["is being", "to be", "being"],
-   "After *demand that*, the base form for every person: *The lawyer demanded that her client be told.* (British English also: *should be told*.)",
-   "Aiz *demand that* pamatforma visām personām: *The lawyer demanded that her client be told.* (Britu angļu valodā arī: *should be told*.)")
+# teacher's tester, 24 November: one of the two *told the whole truth* choices as a rewrite
+tx(T, L, 4, "Report the lawyer's words with *demanded that*. Her words: 'My client must be told the whole truth.'",
+   "The lawyer demanded that her client be told the whole truth. | The lawyer demanded that her client should be told the whole truth. | She demanded that her client be told the whole truth. | She demanded that her client should be told the whole truth.",
+   "After *demand that*, the base form for every person: *The lawyer demanded that her client be told the whole truth.* (British English also: *should be told*.)",
+   "Aiz *demand that* pamatforma visām personām: *The lawyer demanded that her client be told the whole truth.* (Britu angļu valodā arī: *should be told*.)")
+note("The lawyer demanded that her client should be told the whole truth. :: Also correct (British English). :: Arī pareizi (britu angļu valodā).")
 # x_rather_perf
 mc(T, L, 4, "Which sentence has a mistake?", "I'd rather you wouldn't have posted that photo.",
    ["I'd rather you didn't smoke in the kitchen.", "I wish I had listened to your advice back then.", "I'd sooner she hadn't told everyone at work."],

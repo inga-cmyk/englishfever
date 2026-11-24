@@ -17343,10 +17343,6 @@
 "x_pres_story",
 "read"
 ],
-"adv_present | C1 | mcq | Which sentence has a mistake? | So this man is walking into a café and he orders a glass of milk.": [
-"x_pres_story",
-"read"
-],
 "adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot) | ": [
 "x_pres_comment",
 "read"
@@ -17385,10 +17381,6 @@
 ],
 "adv_past | C1 | gap | We ___ each other for years before we started working together. (know) | ": [
 "x_pastpc_choice",
-"read"
-],
-"adv_past | C1 | gap | His voice was hoarse because he ___ all afternoon at the match. (shout) | ": [
-"x_pastp_deduce",
 "read"
 ],
 "adv_past | C1 | mcq | Choose the correct option: When I got back to my desk, I could see that someone ___ my files. | had moved": [
@@ -17463,10 +17455,6 @@
 "x_will_habit",
 "read"
 ],
-"adv_will | C1 | mcq | Which sentence has a mistake? | The old factory would be next to the river.": [
-"x_will_habit",
-"read"
-],
 "adv_will | C1 | gap | I tried three times, but the printer ___ work this morning. (not / will) | ": [
 "x_wont_refuse",
 "read"
@@ -17493,10 +17481,6 @@
 ],
 "adv_will | C1 | mcq | Choose the correct option: Keep the receipt in case you ___ to return the shoes. | should need": [
 "x_should_purpose",
-"read"
-],
-"adv_can | C1 | mcq | Which sentence has a mistake? | Last night the children could stay up until eleven.": [
-"x_allowed_once",
 "read"
 ],
 "adv_can | C1 | mcq | Choose the correct option: After driving round for three hours, we ___ find a parking space. | were able to": [
@@ -17563,20 +17547,8 @@
 "x_agr_quant",
 "read"
 ],
-"adv_agree | C1 | gap | A number of applicants ___ already withdrawn. (have) | ": [
-"x_agr_quant",
-"read"
-],
 "adv_agree | C1 | gap | The manager, together with two of her assistants, ___ coming to the meeting. (be) | ": [
 "x_agr_complex",
-"read"
-],
-"adv_agree | C1 | gap | Politics ___ never interested me much. (have) | ": [
-"x_agr_s_nouns",
-"read"
-],
-"adv_agree | C1 | gap | The criteria for the award ___ changed this year. (have) | ": [
-"x_agr_s_nouns",
 "read"
 ],
 "adv_agree | C1 | gap | Ten kilometres ___ a long way to walk in this heat. (be) | ": [
@@ -17815,10 +17787,6 @@
 "x_ppc_adv",
 "read"
 ],
-"adv_prep | C1 | mcq | Choose the correct option: She took a part-time job ___ her own business. | with a view to starting": [
-"x_prep_multi",
-"read"
-],
 "adv_present | C1 | text | Your friend changes the order for the third time: 'Actually, I'll have the fish, not the pasta.' Complain, using *constantly* and *change your mind*. | ": [
 "x_always_cont",
 "read"
@@ -17841,10 +17809,6 @@
 ],
 "adv_subj | C1 | mcq | Which sentence has a mistake? | If the landlord would raise the rent, we'd move.": [
 "x_subj_were",
-"read"
-],
-"adv_subj | C1 | mcq | Choose the correct option: The lawyer demanded that her client ___ told the whole truth. | be": [
-"x_subj_present",
 "read"
 ],
 "adv_subj | C1 | mcq | Which sentence has a mistake? | I'd rather you wouldn't have posted that photo.": [
@@ -17919,10 +17883,6 @@
 "x_should_react",
 "read"
 ],
-"adv_agree | C1 | gap | We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be) | ": [
-"x_agr_complex",
-"read"
-],
 "adv_part | C1 | text | Start with *Having* and join the two sentences: We checked the train times. We left for the station. | ": [
 "x_part_having",
 "read"
@@ -17933,6 +17893,50 @@
 ],
 "adv_perfect | C1 | gap | I ___ the bank all morning, but nobody's answering. (ring) | ": [
 "x_ppc_adv",
+"read"
+],
+"adv_agree | C1 | gap | A number of applicants ___ already withdrawn, so there are still places left. (have) | ": [
+"x_agr_quant",
+"read"
+],
+"adv_agree | C1 | gap | Politics ___ never interested me much, but this election is different. (have) | ": [
+"x_agr_s_nouns",
+"read"
+],
+"adv_agree | C1 | gap | The criteria for the award ___ changed this year, so please read them again. (have) | ": [
+"x_agr_s_nouns",
+"read"
+],
+"adv_agree | C1 | gap | Write one word in the gap: We need two more chairs, because the manager and two of her assistants ___ coming to the meeting tomorrow. | ": [
+"x_agr_complex",
+"read"
+],
+"adv_can | C1 | mcq | Which sentence has a mistake? | Despite the traffic, we could catch the last bus.": [
+"x_able_limits",
+"read"
+],
+"adv_past | C1 | gap | Show that the shouting went on for a long time: His voice was hoarse because he ___ all afternoon at the match. (shout) | ": [
+"x_pastp_deduce",
+"read"
+],
+"adv_prep | C1 | mcq | Choose the correct option: She took a bookkeeping course ___ her own business. | with a view to starting": [
+"x_prep_multi",
+"read"
+],
+"adv_present | C1 | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round. | 'm sitting": [
+"x_pres_story",
+"read"
+],
+"adv_subj | C1 | text | Report the lawyer's words with *demanded that*. Her words: 'My client must be told the whole truth.' | ": [
+"x_subj_present",
+"read"
+],
+"adv_will | C1 | mcq | Which sentence has a mistake? | Years ago, the factory would be where the car park is now.": [
+"x_will_habit",
+"read"
+],
+"adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | ": [
+"x_part_ed",
 "read"
 ]
 }

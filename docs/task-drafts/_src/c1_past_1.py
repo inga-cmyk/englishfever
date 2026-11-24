@@ -24,10 +24,9 @@ gp(T, L, 3, "By the time Sam and I started working together, we ___ each other f
    "*know* is a state verb: past perfect simple, *had known*, not *had been knowing*.",
    "*know* ir stāvokļa darbības vārds: Past Perfect Simple, *had known*, nevis *had been knowing*.")
 # x_pastp_deduce: the cause of a past state
-gp(T, L, 4, "His voice was hoarse because he ___ all afternoon at the match. (shout)", "had been shouting | 'd been shouting | had shouted | 'd shouted",
-   "The shouting was over and explains how his voice was later: past perfect continuous, *had been shouting* (not *was shouting*).",
-   "Kliegšana jau bija beigusies un izskaidro, kāda vēlāk bija viņa balss: Past Perfect Continuous, *had been shouting* (nevis *was shouting*).")
-note('had shouted :: Also possible; the continuous shows better that the shouting went on all afternoon. :: Arī pareizi; Continuous forma labāk parāda, ka kliegšana turpinājās visu pēcpusdienu.')
+gp(T, L, 4, "Show that the shouting went on for a long time: His voice was hoarse because he ___ all afternoon at the match. (shout)", "had been shouting | 'd been shouting",
+   "The shouting was over and explains how his voice was later: past perfect continuous, *had been shouting* (*shouted* and *had shouted* are possible too, but they do not show how long it went on).",
+   "Kliegšana jau bija beigusies un izskaidro, kāda vēlāk bija viņa balss: Past Perfect Continuous, *had been shouting* (iespējami arī *shouted* un *had shouted*, bet tie neparāda, cik ilgi tas turpinājās).")
 mc(T, L, 3, "Choose the correct option: When I got back to my desk, I could see that someone ___ my files.", "had moved",
    ["has moved", "had been moved", "is moving"],
    "A conclusion about something that happened before a past moment (*when I got back*): past perfect, *someone had moved my files*.",

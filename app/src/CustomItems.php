@@ -154,7 +154,7 @@ final class CustomItems
         $existing = [];
         $rel = Content::relabelled(); // a task given a lower level as a copy may be imported again at that level
         foreach (Content::items() as $it) if (!isset($rel[$it['id']])) $existing[self::dupKey($it)] = true;
-        $mine = []; $byContent = []; $byOld = [];   // tasks already added from a file: the same task again is left alone; the same content with new wording updates the wording
+        $mine = []; $byContent = []; $byOld = []; $byOldQ = [];   // tasks already added from a file: the same task again is left alone; the same content with new wording updates the wording
         foreach (Db::all("SELECT item_id, skill, level, kind, data FROM custom_items WHERE status <> 'retired'") as $r) {
             $d = json_decode($r['data'], true);
             if (empty($d['q'])) continue;
@@ -162,6 +162,7 @@ final class CustomItems
             $existing[self::dupKey($d)] = true; $mine[self::dupKey($d)] = ['id' => $r['item_id'], 'level' => $r['level'], 'data' => json_encode(array_diff_key($d, ['skill' => 1, 'level' => 1, 'kind' => 1, 'bloom' => 1]), JSON_UNESCAPED_UNICODE)];
             if (self::contentKey($d) !== '') $byContent[self::contentKey($d)] = ['id' => $r['item_id'], 'q' => $d['q']];
             $byOld[self::oldKey($d)] = $r['item_id'];
+            if ($r['kind'] === 'mcq') $byOldQ[self::qKey($d)][] = $r['item_id'];   // 24 November: two versions of an mcq with the same correct option are told apart by the question
         }
         $rows = []; $line = 1; $ok = 0; $bad = 0; $seen = []; $upd = 0; $same = 0;
         while (($r = fgetcsv($fh, 0, $delim, '"', '\\')) !== false) {
@@ -196,6 +197,10 @@ final class CustomItems
                         foreach (array_unique(array_merge([$item['kind']], ['mcq', 'gap', 'text', 'order', 'write'])) as $k3) {
                             $ok3 = self::oldKey(['skill' => $item['skill'], 'level' => $item['level'], 'kind' => $k3, 'q' => $oldText, 'correct' => $oldText, 'sentence' => $oldText]);
                             if (isset($byOld[$ok3]) && !(isset($mine[$dup]) && $mine[$dup]['id'] === $byOld[$ok3])) { $res['retire_all'][] = $byOld[$ok3]; $res['replaces'] = $res['replaces'] ?? $byOld[$ok3]; break; }
+                        }
+                        // an old multiple-choice task named by its question (its correct option is the same as another task's, e.g. "be"; teacher, 24 November)
+                        foreach ((strpos($oldText, '___') !== false ? ($byOldQ[self::qKey(['skill' => $item['skill'], 'level' => $item['level'], 'q' => $oldText])] ?? []) : []) as $oldId) {   // only a question with a gap: never a general one such as "Which sentence has a mistake?"
+                            if (!(isset($mine[$dup]) && $mine[$dup]['id'] === $oldId) && !in_array($oldId, $res['retire_all'], true)) { $res['retire_all'][] = $oldId; $res['replaces'] = $res['replaces'] ?? $oldId; }
                         }
                     }
                     if ($res['retire_all']) $res['warnings'][] = count($res['retire_all']) === 1 ? 'Replaces an older version of this question, which is retired.' : 'Replaces ' . count($res['retire_all']) . ' older versions, which are retired.';
@@ -401,6 +406,12 @@ final class CustomItems
     }
 
     /** How a corrected task names the older version it replaces: the correct option (choose), the sentence (word order) or the task text (the rest). Same topic and level. */
+    private static function qKey(array $it): string
+    {
+        $lv = strncmp((string) $it['level'], 'C1.', 3) === 0 ? 'B2.2' : $it['level'];
+        return $it['skill'] . '|' . $lv . '|' . mb_strtolower(trim(str_replace('*', '', (string) ($it['q'] ?? ''))));
+    }
+
     private static function oldKey(array $it): string
     {
         $k = $it['kind'] === 'mcq' ? ($it['correct'] ?? '') : ($it['kind'] === 'order' ? ($it['sentence'] ?? '') : ($it['q'] ?? ''));

@@ -62,10 +62,9 @@ gp(T, L, 4, "The thief is thought ___ the country last week. (leave)", "to have 
    "*is thought* is now, the leaving was earlier (*last week*): the perfect after *to*, *to have left*.",
    "*is thought* ir tagad, aizbraukšana bija agrāk (*last week*): perfekts aiz *to*, *to have left*.")
 tx(T, L, 4, "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
-   "She denied having read the letter. | She denied having read it. | She denied reading the letter.",
-   "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too.)",
-   "*deny* + *having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (Dabiski ir arī *She denied reading the letter*.)")
-note("She denied reading the letter. :: Also correct and natural; the task asks for *having*, which shows that the reading came first. :: Arī pareizi un dabiski; uzdevums prasa *having*, kas parāda, ka lasīšana bija agrāk.")
+   "She denied having read the letter. | She denied having read it.",
+   "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too, but this task asks for *having*.)",
+   "*deny* + *having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (Dabiski ir arī *She denied reading the letter*, bet šis uzdevums prasa *having*.)")
 
 # teacher's tester, 23 November: the activity next to the count (*I've rung four times*)
 gp(T, L, 4, "I ___ the bank all morning, but nobody's answering. (ring)", "have been ringing | 've been ringing",

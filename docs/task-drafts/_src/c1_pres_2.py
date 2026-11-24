@@ -15,14 +15,13 @@ gp(T, L, 4, "Write one word in each gap: So I'm at the bakery, I ___ ___ in the 
    "(*I'm standing in the queue*) and the main events in the present simple (*turns, hands*).",
    "Stāstā tagadnē fons ir Present Continuous (*I'm standing in the queue*), bet galvenie notikumi Present Simple (*turns, hands*).")
 # st2 the main event is not continuous
-mc(T, L, 4, "Which sentence has a mistake?", "So this man is walking into a café and he orders a glass of milk.",
-   ["So I'm sitting on the train, and this man opens a bag of crisps.",
-    "We're having dinner when all the lights go out.",
-    "Then the waiter looks at him and says, \"Are you sure?\""],
-   "In a joke or a story told in the present, the main events are in the present simple: *So this man walks into a café and orders…* "
-   "The background can be continuous (*I'm sitting on the train*).",
-   "Jokā vai stāstā tagadnē galvenie notikumi ir Present Simple: *So this man walks into a café and orders…* "
-   "Fons var būt ilgstošajā formā (*I'm sitting on the train*).")
+# teacher's tester, 24 November: *is walking* can also open a spoken story, so ask which form gives the background
+mc(T, L, 4, "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round.", "'m sitting",
+   ["opens", "turns round", "all three"],
+   "In a story told in the present, the background is usually in the present continuous (*I'm sitting on the train*) "
+   "and the events that move the story on are in the present simple (*opens, turns round*).",
+   "Stāstā tagadnē fons parasti ir Present Continuous (*I'm sitting on the train*), "
+   "bet notikumi, kas virza stāstu, ir Present Simple (*opens, turns round*).")
 
 # ── x_pres_comment: live commentary ──
 gp(T, L, 4, "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot)", "passes / shoots",

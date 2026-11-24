@@ -5,13 +5,14 @@ T = "Advanced modals: can, be able to, may, might"
 L = "C1"
 
 # x_allowed_once
-mc(T, L, 4, "Which sentence has a mistake?", "Last night the children could stay up until eleven.",
-   ["I could hear the neighbours arguing all night.", "We couldn't go out on school nights.",
-    "In the end we were allowed to leave early."],
-   "Permission on one occasion: *were allowed to*, not *could*: *Last night the children were allowed to stay up until eleven.* "
-   "*could* is for permission that was always there, and *couldn't* is fine for both.",
-   "Atļauja vienā reizē: *were allowed to*, nevis *could*: *Last night the children were allowed to stay up until eleven.* "
-   "*could* ir atļaujai, kas bija vienmēr, un *couldn't* der abos gadījumos.")
+# teacher's tester, 24 November: *could stay up* (permission) is natural, so one achievement instead
+mc(T, L, 4, "Which sentence has a mistake?", "Despite the traffic, we could catch the last bus.",
+   ["I could hear the neighbours arguing all night.", "We couldn't find a parking space anywhere.",
+    "After three tries, she managed to open the jar."],
+   "For one achievement on one occasion, use *were able to* or *managed to*, not *could*: *Despite the traffic, we were able to catch the last bus.* "
+   "*could* is fine for a general ability, with verbs like *hear*, and in the negative (*couldn't find*).",
+   "Vienam paveikumam vienā reizē lieto *were able to* vai *managed to*, nevis *could*: *Despite the traffic, we were able to catch the last bus.* "
+   "*could* der vispārējai spējai, ar tādiem darbības vārdiem kā *hear* un noliegumā (*couldn't find*).")
 # x_able_limits
 mc(T, L, 4, "Choose the correct option: After driving round for three hours, we ___ find a parking space.", "were able to",
    ["could", "can", "have been able to"],

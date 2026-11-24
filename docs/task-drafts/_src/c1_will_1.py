@@ -10,11 +10,11 @@ mc(T, L, 4, "Which sentence has a mistake?", "Last night he would cook dinner fo
    ["Our cat will sit at the window for hours.", "At school she would always sit at the back.", "Wood will float on water."],
    "*will / would* describe typical behaviour, not one occasion: *Last night he cooked dinner for all of us.*",
    "*will / would* apraksta raksturīgu uzvedību, nevis vienu reizi: *Last night he cooked dinner for all of us.*")
-mc(T, L, 4, "Which sentence has a mistake?", "The old factory would be next to the river.",
+mc(T, L, 4, "Which sentence has a mistake?", "Years ago, the factory would be where the car park is now.",
    ["Whenever we visited my uncle, we would play in his garden.", "Didn't you use to have red hair?",
     "We visited Switzerland four times in the nineties."],
-   "For a past state that has changed, use *used to*, not *would*: *The old factory used to be next to the river.*",
-   "Pagātnes stāvoklim, kas mainījies, lieto *used to*, nevis *would*: *The old factory used to be next to the river.*")
+   "For a past state that has changed, use *used to*, not *would*: *Years ago, the factory used to be where the car park is now.*",
+   "Pagātnes stāvoklim, kas mainījies, lieto *used to*, nevis *would*: *Years ago, the factory used to be where the car park is now.*")
 # x_wont_refuse
 mc(T, L, 3, "Choose the correct option: I tried three times, but the printer ___ work this morning.", "wouldn't",
    ["wasn't", "hasn't", "isn't"],

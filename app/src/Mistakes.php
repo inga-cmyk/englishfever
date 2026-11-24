@@ -254,7 +254,7 @@ final class Mistakes
      * that has tasks at the learner's level or below. A task that needs the form (not a learning task), not open writing, not seen
      * in this session; the first prerequisite in the map's order is preferred, then a task the learner has met least. Null if none.
      */
-    public static function needsTask(int $uid, string $point, array $exclude, string $maxLevel): ?array
+    public static function needsTask(int $uid, string $point, array $exclude, string $maxLevel, ?array $wrong = null): ?array
     {
         $p = Content::mapPoint($point);
         if (!$p) return null;
@@ -270,6 +270,17 @@ final class Mistakes
                 if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
             }
             if ($best) return $best;
+            // $wrong (the tasks of this point the learner missed in this session): none of the point's tasks is new any more, so one
+            // already seen in this session, but not a sentence that was answered wrong; no task of a lower point (teacher, 24 November)
+            if ($wrong !== null) {
+                $bad = []; foreach ($wrong as $w) { $wt = Content::item($w); if ($wt) $bad[self::text($wt)] = true; }
+                foreach (Content::items() as $it) {
+                    if (Content::point($it) !== $point || !isset($exclude[$it['id']]) || in_array($it['id'], $wrong, true) || isset($bad[self::text($it)]) || isset($paused[$it['id']]) || $it['kind'] === 'write') continue;
+                    $cost = (int) $it['bloom'] + random_int(0, 30) / 100;
+                    if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
+                }
+                return $best;
+            }
         }
         if (!$p['needs']) return null;
         $order = array_flip($p['needs']);
@@ -282,6 +293,47 @@ final class Mistakes
             if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
         }
         return $best;
+    }
+
+    /** Words that name the form a task is about (since, for, unless, wish ...): a lower task "about the same form" shares one. */
+    private const FORM_WORDS = ['since', 'for', 'while', 'during', 'until', 'unless', 'although', 'though', 'despite', 'whereas', 'ago', 'already', 'yet',
+        'just', 'still', 'ever', 'never', 'by', 'wish', 'rather', 'if', 'having', 'been', 'being', 'would', 'used', 'should', 'might', 'may', 'could',
+        'can', 'must', 'will', 'each', 'every', 'either', 'neither', 'number', 'whom', 'whose', 'which', 'so', 'such', 'only', 'hardly', 'no', 'not', 'what'];
+
+    /**
+     * After a third wrong answer in a C1 point (teacher, 24 November): one task of a point it stands on (its "needs") that is about the
+     * same form, i.e. shares a form word with the task that was missed first (*since* after a mistake in a *since* sentence, not *for*).
+     * Same filters as needsTask. Null if there is none.
+     */
+    public static function sameFormTask(int $uid, string $point, string $forId, array $exclude, string $maxLevel): ?array
+    {
+        $p = Content::mapPoint($point); $for = Content::item($forId);
+        if (!$p || !$p['needs'] || !$for) return null;
+        $words = fn($it) => array_values(array_intersect(self::FORM_WORDS, preg_split('/[^a-z]+/', mb_strtolower(self::text($it) . ' ' . implode(' ', array_map(fn($g) => is_array($g) ? implode(' ', $g) : (string) $g, $it['answers'] ?? [])))) ?: []));
+        $want = $words($for);
+        if (!$want) return null;
+        $paused = Reports::pausedIds();
+        $seen = [];
+        foreach (Db::all('SELECT item_id, COUNT(1) AS c FROM attempts WHERE user_id = ? GROUP BY item_id', [$uid]) as $r) $seen[$r['item_id']] = (int) $r['c'];
+        $order = array_flip($p['needs']);
+        $best = null; $bestCost = PHP_FLOAT_MAX;
+        foreach (Content::items() as $it) {
+            $pt = Content::point($it);
+            if ($pt === null || !isset($order[$pt]) || isset($exclude[$it['id']]) || isset($paused[$it['id']])) continue;
+            if (self::levelIdx($it['level']) > self::levelIdx($maxLevel) || Content::role($it) === 'learn' || $it['kind'] === 'write' || !empty($it['practice_only'])) continue;
+            $shared = count(array_intersect($want, $words($it)));
+            if ($shared === 0) continue;
+            $cost = -$shared + $order[$pt] * 0.5 + (isset($seen[$it['id']]) ? 0.8 * min(3, $seen[$it['id']]) : 0) + random_int(0, 30) / 100;
+            if ($cost < $bestCost) { $bestCost = $cost; $best = $it; }
+        }
+        return $best;
+    }
+
+    /** Is this a C1 point of the grammar map? (After a mistake there, the steps the teacher chose on 24 November.) */
+    public static function isC1Point(?string $point): bool
+    {
+        $p = $point !== null ? Content::mapPoint($point) : null;
+        return $p !== null && strncmp((string) ($p['level'] ?? ''), 'C1', 2) === 0;
     }
 
     /** The words a learner has to read in a task (instruction and sentence), to compare how long two tasks are. */

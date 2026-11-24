@@ -470,6 +470,7 @@ final class Engine
         $out = Content::publicItem($it, $seed);
         $index = array_search($it['id'], $ses['state']['served'], true);
         $out['practice_context'] = ($ses['source'] ?? '') === 'path_review' ? 'review' : ($index === false ? 'main' : ($ses['state']['slot'][$index] ?? 'main'));
+        if ($index !== false && !empty($ses['state']['recap'][$index])) $out['recap'] = $ses['state']['recap'][$index];   // show the rule card of this topic first (C1, 24 November)
         return $out;
     }
 
@@ -509,11 +510,21 @@ final class Engine
             foreach ($st['probes'] as $i => $p) {
                 if (!empty($p['done']) || !empty($p['served']) || $count < $p['due']) continue;
                 $point = $p['point'] ?? null;
-                if ($p['stage'] === 3) {   // a second wrong answer in this point: one task from a point it stands on (14 November, C2)
+                $c1 = Mistakes::isC1Point($point);
+                if ($p['stage'] === 3 || $p['stage'] === 4) {   // a second wrong answer in this point: one task from a point it stands on (14 November, C2)
                     $lv = $ses['level'] ?? null;
                     $miss = Content::item($p['for']);
                     if (!$lv || !in_array($lv, self::LEVELS, true)) $lv = $miss['level'] ?? 'B2.2';
-                    $t = $point !== null ? Mistakes::needsTask((int) $ses['user_id'], $point, $served, $lv) : null;
+                    // C1 (teacher, 24 November): stage 3 = a task of the same point (a new one, else one seen in this session, not a sentence
+                    // answered wrong); stage 4, after another wrong answer = a lower task about the same form (since, not for)
+                    if ($p['stage'] === 4) $t = Mistakes::sameFormTask((int) $ses['user_id'], $point, $p['for'], $served, $lv);
+                    else $t = $point !== null ? Mistakes::needsTask((int) $ses['user_id'], $point, $served, $lv, $c1 ? ($p['wrong'] ?? [$p['for']]) : null) : null;
+                    if (!$t && $c1) {   // no fitting task: a short look at the rule card, then the C1 tasks go on
+                        $ses['state']['probes'][$i]['done'] = true;
+                        $ses['state']['recap'][count($ses['state']['served'])] = $miss['skill'] ?? null;
+                        $ses['state']['recap_log'][] = ['for' => $p['for'], 'stage' => $p['stage']];
+                        continue;
+                    }
                 } else {
                     $t = Mistakes::twin((int) $ses['user_id'], $p['for'], $served, $p['stage'] > 1, $st['levels'] ?? null, $p['code'] ?? null, $p['max_scaffold'] ?? null, $p['min_scaffold'] ?? null, $point);
                 }
@@ -521,7 +532,8 @@ final class Engine
                     $ses['state']['probes'][$i]['served'] = true;
                     $ses['state']['probes'][$i]['item'] = $t['id'];
                     // why it was served, for the research export: the same grammar point, or a point it stands on
-                    if ($p['stage'] === 3) $ses['state']['why'][$t['id']] = ($point !== null && Content::point($t) === $point) ? 'easier_same_point' : 'needs_point';   // C1: an easier task of the same point first (23 November)
+                    if ($p['stage'] === 4) $ses['state']['why'][$t['id']] = 'needs_point_same_form';   // C1, after another wrong answer (24 November)
+                    elseif ($p['stage'] === 3) $ses['state']['why'][$t['id']] = ($point !== null && Content::point($t) === $point) ? (isset($served[$t['id']]) ? 'seen_same_point' : 'easier_same_point') : 'needs_point';   // C1: an easier task of the same point first (23 November); one seen in this session (24 November)
                     elseif ($point !== null && Content::point($t) === $point) $ses['state']['why'][$t['id']] = 'same_point';
                     return $t;
                 }
@@ -853,7 +865,9 @@ final class Engine
             if (!$ok) {
                 if ($code !== null && $p['stage'] !== 3) $st['stuck'][$code] = true;
                 // the second wrong answer in this point: next, one task from a point it stands on (14 November, C2)
-                if ($p['stage'] === 1 && !empty($p['point']) && Content::point(Content::item($itemId)) === $p['point'] && count($st['probes']) < max(2, intdiv((int) $ses['target_len'], 3))) $st['probes'][] = ['for' => $p['for'], 'code' => null, 'stage' => 3, 'due' => count($st['served']), 'point' => $p['point']];
+                if ($p['stage'] === 1 && !empty($p['point']) && Content::point(Content::item($itemId)) === $p['point'] && count($st['probes']) < max(2, intdiv((int) $ses['target_len'], 3))) $st['probes'][] = ['for' => $p['for'], 'code' => null, 'stage' => 3, 'due' => count($st['served']), 'point' => $p['point'], 'wrong' => [$p['for'], $itemId]];
+                // C1: the task of the same point wrong again: a lower task about the same form (teacher, 24 November)
+                if ($p['stage'] === 3 && Mistakes::isC1Point($p['point'] ?? null) && Content::point(Content::item($itemId)) === $p['point']) $st['probes'][] = ['for' => $p['for'], 'code' => null, 'stage' => 4, 'due' => count($st['served']), 'point' => $p['point']];
                 return $p['stage'] === 1;
             }
             if ($p['stage'] === 1) {

@@ -938,7 +938,7 @@
           h('td', { class: 'num' }, String(x.sessions)), h('td', { class: 'num' }, String(x.people)), h('td', { class: 'num' }, String(x.answers || 0)));
       });
       var evRows = u.events.map(function (x) {
-        var det = x.detail ? (x.ev === 'rule_card' || x.ev === 'skip' || x.ev === 'report' || x.ev === 'path_step' ? (x.detail.indexOf('fb-') === 0 ? 'under a task: ' + (skillById(x.detail.slice(3)) || {}).label : x.detail.indexOf('task-') === 0 ? 'during a task (?): ' + (skillById(x.detail.slice(5)) || {}).label : (skillById(x.detail) || {}).label || x.detail) : x.detail) : '';
+        var det = x.detail ? (x.ev === 'rule_card' || x.ev === 'skip' || x.ev === 'report' || x.ev === 'path_step' ? (x.detail.indexOf('fb-') === 0 ? 'under a task: ' + (skillById(x.detail.slice(3)) || {}).label : x.detail.indexOf('task-') === 0 ? 'during a task (?): ' + (skillById(x.detail.slice(5)) || {}).label : x.detail.indexOf('recap-') === 0 ? 'shown after mistakes: ' + (skillById(x.detail.slice(6)) || {}).label : (skillById(x.detail) || {}).label || x.detail) : x.detail) : '';
         return h('tr', null, h('td', null, x.label, det ? h('div', { class: 'small muted' }, det) : null), h('td', { class: 'num' }, String(x.count)), h('td', { class: 'num' }, String(x.people)));
       });
       var cols = Object.keys(SOURCE_NAMES).filter(function (k) { return u.people.some(function (p) { return p.sources[k]; }); });
@@ -1543,6 +1543,8 @@
       if (r.done) { if (r.summary && state.sess) r.summary.pathStep = state.sess.pathStep; state.sess = null; state.lastSummary = r.summary; Sound.play((r.summary && r.summary.fixed) ? 'fixed' : 'done'); go('#/summary'); return; }
       state.sess = newSess(r.session, r.next, S.history);
       viewSession();
+      // after more mistakes in a C1 point and no fitting task: a short look at the rule card, then the tasks go on (teacher, 24 November)
+      if (r.next && r.next.recap && skillById(r.next.recap)) rulesModal(r.next.recap, true, state.user.lang === 'lv' ? 'Īsi atkārtosim likumu, tad turpināsim ar uzdevumiem.' : 'A quick look at the rule, then back to the tasks.');
     }
 
     function olderOf(n) { return H.filter(function (e) { return e.n < n; }).sort(function (a, b) { return b.n - a.n; })[0] || null; }
@@ -2203,11 +2205,11 @@
         })));
       })));
   }
-  function rulesModal(id, inTask) {
+  function rulesModal(id, inTask, note) {
     var s = skillById(id);
-    track('rule_card', inTask ? 'task-' + id : id);
+    track('rule_card', note ? 'recap-' + id : inTask ? 'task-' + id : id);   // recap: shown by the app after mistakes (24 November)
     var go = inTask ? null : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October); not from inside a task
-    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask); })), ruleCard(s, state.user.lang === 'lv'),
+    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask, note); })), note ? h('p', { class: 'recap-note' }, note) : null, ruleCard(s, state.user.lang === 'lv'),
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;

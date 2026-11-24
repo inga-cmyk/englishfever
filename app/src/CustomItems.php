@@ -106,18 +106,25 @@ final class CustomItems
     /** All prepared files at once (teacher's wish, 27 October: no file-by-file import). Same checks as one file; a summary per file. */
     public static function importPrepared(bool $save): array
     {
-        $files = []; $tot = ['ok' => 0, 'updated' => 0, 'same' => 0, 'bad' => 0];
+        $files = []; $tot = ['ok' => 0, 'updated' => 0, 'same' => 0, 'bad' => 0, 'retired' => 0];
         foreach (self::preparedFiles() as $name => $path) {
-            $r = self::import((string) file_get_contents($path), $save);
+            $r = self::import((string) file_get_contents($path), $save, $name);
             $bad = array_values(array_filter($r['rows'], fn($x) => !$x['ok']));
-            $files[] = ['file' => $name, 'ok' => $r['ok'], 'updated' => $r['updated'] ?? 0, 'same' => $r['same'] ?? 0, 'bad' => $r['bad'],
+            $files[] = ['file' => $name, 'ok' => $r['ok'], 'updated' => $r['updated'] ?? 0, 'same' => $r['same'] ?? 0, 'bad' => $r['bad'], 'retired' => $r['retired'] ?? 0,
                 'problems' => array_map(fn($x) => 'Row ' . $x['line'] . ': ' . implode(' ', $x['errors']), array_slice($bad, 0, 5))];
             foreach ($tot as $k => $v) $tot[$k] += end($files)[$k];
         }
-        return ['files' => $files] + $tot;
+        return ['files' => $files, 'saved' => $save] + $tot;
     }
 
-    public static function import(string $csv, bool $save): array
+    /**
+     * $file: the name of a prepared file (importPrepared). Its tasks remember it (custom_items.src_file), and a task of that file that
+     * the file no longer has (rewritten or dropped) is retired on import, so no older version stays (teacher, 24 November). Only when
+     * every row of the file is fine: a refused row may be a task that is still meant to be there. A task the teacher wrote herself, or one
+     * from a file she uploaded, has no file name and is never retired this way. The texts in *replaces* still retire older versions
+     * that were added before the tasks remembered their file.
+     */
+    public static function import(string $csv, bool $save, ?string $file = null): array
     {
         if (strlen($csv) > 600000) throw new ApiError('The file is too big (600 KB at most).', 400);
         if (!mb_check_encoding($csv, 'UTF-8')) $csv = mb_convert_encoding($csv, 'UTF-8', 'Windows-1257'); // Excel in Latvia
@@ -209,7 +216,7 @@ final class CustomItems
                 if (isset($mine[$dup])) {                                   // added from a file before
                     $now = json_encode(array_diff_key($item, ['skill' => 1, 'level' => 1, 'kind' => 1, 'bloom' => 1]), JSON_UNESCAPED_UNICODE);
                     if ($now === $mine[$dup]['data'] && (string) $mine[$dup]['level'] === (string) $item['level']) {   // nothing changed (a new level is a change: 14 November)
-                        $res['ok'] = true; $res['same'] = true; $res['warnings'] = []; $same++;
+                        $res['ok'] = true; $res['same'] = true; $res['id'] = $mine[$dup]['id']; $res['warnings'] = []; $same++;
                     } else {                                                  // corrected answers, options or explanations: updated where it is (status and results stay)
                         $res['ok'] = true; $res['update'] = $mine[$dup]['id']; $res['item'] = $item; $res['warnings'] = ['Already added: the corrected answers, options or explanations are updated.']; $upd++;
                     }
@@ -227,17 +234,26 @@ final class CustomItems
             $rows[] = $res;
         }
         fclose($fh);
+        // what this import retires: the older versions the rows name, and (a prepared file) the file's tasks it no longer has
+        $keep = [];
+        foreach ($rows as $row) if ($row['ok']) foreach (['id', 'update'] as $k) if (!empty($row[$k])) $keep[$row[$k]] = true;
+        $retire = [];
+        foreach ($rows as $row) if ($row['ok']) foreach (($row['retire_all'] ?? (!empty($row['replaces']) ? [$row['replaces']] : [])) as $oldId) if (!isset($keep[$oldId])) $retire[$oldId] = true;
+        if ($file !== null && $bad === 0) {
+            foreach (Db::all("SELECT item_id FROM custom_items WHERE src_file = ? AND status <> 'retired'", [$file]) as $r) if (!isset($keep[$r['item_id']])) $retire[$r['item_id']] = true;
+        }
+        foreach (array_keys($retire) as $oldId) if (Db::val("SELECT status FROM custom_items WHERE item_id = ?", [$oldId]) === 'retired') unset($retire[$oldId]);
         if ($save) {
+            foreach (array_keys($retire) as $oldId) Db::update('custom_items', ['status' => 'retired', 'updated_at' => time()], 'item_id = ?', [$oldId]);
             foreach ($rows as &$row) {
                 if (!$row['ok']) continue;
-                // older versions are retired also when this row itself is already there unchanged (23 November)
-                foreach (($row['retire_all'] ?? (!empty($row['replaces']) ? [$row['replaces']] : [])) as $oldId) Db::update('custom_items', ['status' => 'retired', 'updated_at' => time()], 'item_id = ?', [$oldId]);
-                if (!empty($row['same'])) continue;
+                // older versions are retired above, also when this row itself is already there unchanged (23 November)
+                if (!empty($row['same'])) { if ($file !== null) Db::update('custom_items', ['src_file' => $file], 'item_id = ?', [$row['id']]); continue; }
                 $it = $row['item'];
                 if (!empty($row['update'])) {
                     $cur = Db::one('SELECT data FROM custom_items WHERE item_id = ?', [$row['update']]);
                     $d = json_decode((string) ($cur['data'] ?? ''), true);
-                    if (is_array($d)) { $nd = $it; unset($nd['skill'], $nd['level'], $nd['bloom'], $nd['kind']); Db::update('custom_items', ['data' => json_encode($nd, JSON_UNESCAPED_UNICODE), 'bloom' => $it['bloom'], 'level' => $it['level'], 'updated_at' => time()], 'item_id = ?', [$row['update']]); }
+                    if (is_array($d)) { $nd = $it; unset($nd['skill'], $nd['level'], $nd['bloom'], $nd['kind']); Db::update('custom_items', ['data' => json_encode($nd, JSON_UNESCAPED_UNICODE), 'bloom' => $it['bloom'], 'level' => $it['level'], 'updated_at' => time()] + ($file !== null ? ['src_file' => $file] : []), 'item_id = ?', [$row['update']]); }
                     $row['id'] = $row['update'];
                     continue;
                 }
@@ -245,13 +261,13 @@ final class CustomItems
                 $id = 'c-' . str_pad((string) $next, 4, '0', STR_PAD_LEFT);
                 $data = $it; unset($data['skill'], $data['level'], $data['bloom'], $data['kind']);
                 Db::insert('custom_items', ['item_id' => $id, 'skill' => $it['skill'], 'level' => $it['level'], 'bloom' => $it['bloom'], 'kind' => $it['kind'],
-                    'data' => json_encode($data, JSON_UNESCAPED_UNICODE), 'status' => 'draft', 'created_at' => time(), 'updated_at' => time()]);
+                    'data' => json_encode($data, JSON_UNESCAPED_UNICODE), 'status' => 'draft', 'created_at' => time(), 'updated_at' => time()] + ($file !== null ? ['src_file' => $file] : []));
                 $row['id'] = $id;
             }
             unset($row);
         }
         foreach ($rows as &$row) unset($row['item']);
-        return ['rows' => $rows, 'ok' => $ok, 'bad' => $bad, 'saved' => $save, 'updated' => $upd, 'same' => $same];
+        return ['rows' => $rows, 'ok' => $ok, 'bad' => $bad, 'saved' => $save, 'updated' => $upd, 'same' => $same, 'retired' => count($retire)];
     }
 
     private static function split(string $s, string $sep): array

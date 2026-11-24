@@ -1084,16 +1084,16 @@
   function preparedCard() {
     var out = h('div');
     var check = h('button', { class: 'btn small', type: 'button' }, 'Check prepared questions');
-    function sum(r) { return [r.ok + ' new', r.updated ? r.updated + ' updated' : null, r.same ? r.same + ' already there' : null, r.bad ? r.bad + ' with problems' : null].filter(Boolean).join(' · '); }
+    function sum(r) { return [r.ok + ' new', r.updated ? r.updated + ' updated' : null, r.same ? r.same + ' already there' : null, r.retired ? r.retired + (r.retired === 1 ? ' older version' : ' older versions') + (r.saved ? ' retired' : ' to retire') : null, r.bad ? r.bad + ' with problems' : null].filter(Boolean).join(' · '); }
     check.addEventListener('click', function () {
       check.disabled = true; check.textContent = 'Checking…';
       api('teacher/items-import-prepared', {}).then(function (r) {
         check.disabled = false; check.textContent = 'Check prepared questions';
-        var add = (r.ok || r.updated) ? h('button', { class: 'btn', type: 'button', onclick: function (e) {
+        var add = (r.ok || r.updated || r.retired) ? h('button', { class: 'btn', type: 'button', onclick: function (e) {
           e.target.disabled = true; e.target.textContent = 'Adding…';
           api('teacher/items-import-prepared', { confirm: true }).then(function (x) { UI.toast(sum(x)); state.taskTab = 'draft'; viewTasks(); })
             .catch(function (er) { e.target.disabled = false; UI.toast(er.message); });
-        } }, 'Add all (' + (r.ok + r.updated) + ')') : h('p', { class: 'small muted' }, 'Everything is already added.');
+        } }, (r.ok || r.updated) ? 'Add all (' + (r.ok + r.updated) + ')' : 'Retire older versions (' + r.retired + ')') : h('p', { class: 'small muted' }, 'Everything is already added.');
         out.replaceChildren(h('p', null, h('b', null, sum(r))),
           h('details', null, h('summary', { class: 'small' }, r.files.length + ' files'), h('ul', { class: 'small' }, r.files.map(function (f) {
             return h('li', null, f.file + ': ' + sum(f), f.problems.length ? h('div', { class: 'err small' }, f.problems.join(' ')) : null);

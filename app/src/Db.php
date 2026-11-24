@@ -250,6 +250,7 @@ final class Db
         self::ensureColumn('attempts', 'for_item', "$str NULL");
         self::ensureColumn('attempts', 'err', "$str NULL");   // the error types this answer is evidence for (docs/ERROR-TYPES.md)   // Second Chance: the mistake this task stood for (nothing is changed in earlier rows)
         self::ensureColumn('attempts', 'note', "$txt NULL");
+        self::ensureColumn('custom_items', 'src_file', "$str NULL");   // the prepared file a task came from: importing that file again retires its tasks the file no longer has (teacher, 24 November)
         self::ensureColumn('psessions', 'source', "$str NULL");   // where the learner started it: path, surprise, rule card ... (Usage page; teacher, 28 October)   // accepted with a tip (spelling, apostrophe, capital): the teacher sees it next to the answer (teacher, 28 October)
         self::ensureColumn('users', 'track_time', "$int NOT NULL DEFAULT 1"); // databases created before these columns existed
         self::ensureColumn('users', 'sso_at', "$big NOT NULL DEFAULT 0");

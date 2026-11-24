@@ -879,6 +879,11 @@
 "round": "r4",
 "task": "r4-043"
 },
+"1bddc502aa4eede9": {
+"gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | Despite the traffic, we could catch the last bus.",
+"round": "c1-16",
+"task": "c1-16-006"
+},
 "1bf86fb4a12fccb3": {
 "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | Hadn't I moved here, I'd be in Riga now.",
 "round": "r20-1",
@@ -1389,6 +1394,11 @@
 "round": "r20b-3",
 "task": "r20b-3-025"
 },
+"2c6c68e65c0b32c4": {
+"gate_key": "adv_agree | C1 | gap | The number of applicants ___ fallen sharply this year. (have) | ",
+"round": "c1-16",
+"task": "c1-16-001"
+},
 "2c8d7530622f4ac3": {
 "gate_key": "adv_can | C1 | mcq | Choose the correct option: Winters here ___ very long, so bring warm clothes. | can be",
 "round": "c1-5",
@@ -1628,6 +1638,11 @@
 "gate_key": "adv_present | C1 | text | Your friend changes the order for the third time: 'Actually, I'll have the fish, not the pasta.' Complain, using *constantly* and *change your mind*. | ",
 "round": "c1-10",
 "task": "c1-10-021"
+},
+"33d45133e3aa2312": {
+"gate_key": "adv_agree | C1 | gap | A number of applicants ___ already withdrawn, so there are still places left. (have) | ",
+"round": "c1-16",
+"task": "c1-16-002"
 },
 "33dfbcd8ec220d35": {
 "gate_key": "cond_mixed | B2.2 | gap | If he ___ more confident, he ___ asked for a pay rise. | ",
@@ -1984,6 +1999,11 @@
 "round": "r9",
 "task": "r9-138"
 },
+"3d9e0af40bafe19a": {
+"gate_key": "adv_will | C1 | mcq | Which sentence has a mistake? | Years ago, the factory would be where the car park is now.",
+"round": "c1-16",
+"task": "c1-16-013"
+},
 "3d9f1df50af3269e": {
 "gate_key": "modal_verbs | B1.1 | order | Put the words in order. | i had to cancel my dentist appointment because i was stuck at work",
 "round": "r10",
@@ -2153,6 +2173,11 @@
 "gate_key": "relative_clauses | B1.2 | order | Put the words in order to make a question. | did you find what you were looking for",
 "round": "r11",
 "task": "r11-120"
+},
+"430b3ce74d443f14": {
+"gate_key": "adv_agree | C1 | gap | Politics ___ never interested me much, but this election is different. (have) | ",
+"round": "c1-16",
+"task": "c1-16-003"
 },
 "4323c9e66de42d66": {
 "gate_key": "modal_verbs | B1.1 | order | Put the words in order to make a question. | should we leave before it gets dark",
@@ -3398,6 +3423,11 @@
 "gate_key": "cond_mixed | B2.2 | mcq | Which sentence is NOT correct? | Hadn't she missed the train, she'd be here now.",
 "round": "r20-5",
 "task": "r20-5-030"
+},
+"6c7addd30d582238": {
+"gate_key": "adv_prep | C1 | mcq | Choose the correct option: She took a bookkeeping course ___ her own business. | with a view to starting",
+"round": "c1-16",
+"task": "c1-16-010"
 },
 "6c87e24565d30f8b": {
 "gate_key": "irregular_plurals | A2.1 | mcq | Choose the correct option: I work late two ___ a week. | days",
@@ -4989,6 +5019,11 @@
 "round": "r20b-1",
 "task": "r20b-1-037"
 },
+"9e296ef28a376f8f": {
+"gate_key": "adv_agree | C1 | gap | Write one word in the gap: We need two more chairs, because the manager and two of her assistants ___ coming to the meeting tomorrow. | ",
+"round": "c1-16",
+"task": "c1-16-005"
+},
 "9e4ec652d507d7ac": {
 "gate_key": "verb_patterns | B1.1 | gap | My partner loves ___ new recipes, so we often have friends over at the weekend. (try) | ",
 "round": "r10",
@@ -5509,6 +5544,11 @@
 "round": "r20-4",
 "task": "r20-4-010"
 },
+"ad8e3f2fa83d6b36": {
+"gate_key": "adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | ",
+"round": "c1-17",
+"task": "c1-17-001"
+},
 "ad9319b3c112e976": {
 "gate_key": "unreal_time | B1.2 | gap | I'd rather ___ at home than go out. (eat) | ",
 "round": "r8",
@@ -5688,6 +5728,11 @@
 "gate_key": "adv_can | C1 | mcq | Choose the correct option: The forecast says snow until April, so this winter ___ unusually long. | may be",
 "round": "c1-12",
 "task": "c1-12-002"
+},
+"b24b535fd3e7d3a7": {
+"gate_key": "adv_present | C1 | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles. | 'm sitting",
+"round": "c1-17",
+"task": "c1-17-003"
 },
 "b24c558f8c9b886e": {
 "gate_key": "narrative_b2 | B2.1 | gap | We ___ tennis for half an hour when it started to rain. | ",
@@ -6039,6 +6084,11 @@
 "round": "r13",
 "task": "r13-116"
 },
+"bb94e7d64a37a014": {
+"gate_key": "adv_past | C1 | gap | Show that the shouting went on for a long time: His voice was hoarse because he ___ all afternoon at the match. (shout) | ",
+"round": "c1-16",
+"task": "c1-16-008"
+},
 "bb9f28a7ca67f1aa": {
 "gate_key": "quantity | A2.1 | gap | Write *a*, *an* or *some*: I need ___ umbrella and ___ money. | ",
 "round": "r13",
@@ -6058,6 +6108,11 @@
 "gate_key": "cond_third | B2.1 | order | Put the words in order. | if I had seen the sign I wouldn't have parked there",
 "round": "r20-4",
 "task": "r20-4-004"
+},
+"bc5bd518d417bf72": {
+"gate_key": "adv_agree | C1 | gap | The criteria for the award ___ changed this year, so please read them again. (have) | ",
+"round": "c1-16",
+"task": "c1-16-004"
 },
 "bcaee295354fd509": {
 "gate_key": "conj_b2 | B2.2 | text | Rewrite with *owing to*: The flight was late because the weather was bad. | ",
@@ -6493,6 +6548,11 @@
 "gate_key": "unreal_time | B2.2 | text | Write one sentence that starts with *I'd rather you*: Please don't bring your dog to the office. | ",
 "round": "r20b-2",
 "task": "r20b-2-053"
+},
+"cab08e4d4ceb8176": {
+"gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
+"round": "c1-17",
+"task": "answers added"
 },
 "caca0239876e034f": {
 "gate_key": "verb_patterns | B1.1 | text | Correct the mistake: I love spend time with my cousins because they always make me laugh. | ",
@@ -7673,6 +7733,11 @@
 "gate_key": "past_simple_passive | A2.2 | mcq | Which sentence has a mistake? | Our kitchen chairs were made from my uncle.",
 "round": "r13",
 "task": "r13-136"
+},
+"ed61f080fa89e867": {
+"gate_key": "adv_subj | C1 | text | Report the lawyer's words with *demanded that*. Her words: 'My client must be told the whole truth.' | ",
+"round": "c1-16",
+"task": "c1-16-012"
 },
 "ed843f0d0da40051": {
 "gate_key": "cond_advanced | B2.2 | gap | ___ we left ten minutes earlier, we would have caught the ferry. (have) | ",

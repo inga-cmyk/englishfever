@@ -1,0 +1,173 @@
+[
+{
+"id": "c1-16-001",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-16-002",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-16-003",
+"answer": [
+"has"
+],
+"other_correct": [
+[
+"have"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'Politics have' is rare/non-standard; mostly fine. Ambiguity only if learner treats politics as plural."
+},
+{
+"id": "c1-16-004",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-16-005",
+"answer": [
+"are"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fine; 'will be' would be two words, so excluded by 'one word'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-16-006",
+"answer": "Despite the traffic, we could catch the last bus.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-16-007",
+"answer": [
+"Compared"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Fairly easy for C1 (participle clause is B2); verb is given in base form so only -ed needed.",
+"level_problem": "B2 rather than C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-16-008",
+"answer": [
+"had been shouting"
+],
+"other_correct": [
+[
+"'d been shouting"
+],
+[
+"had shouted"
+],
+[
+"was shouting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gives the answer away: 'went on for a long time' names the continuous form. 'had shouted' is also correct English (less natural/less emphatic); 'was shouting' fits less well.",
+"level_problem": "Past perfect continuous is B2, not C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-16-009",
+"answer": "She denied having read the letter.",
+"other_correct": [
+[
+"She denies having read the letter."
+],
+[
+"She has denied having read the letter."
+],
+[
+"She denied ever having read the letter."
+],
+[
+"She denied not having read the letter."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Report what she said' with the structure named (deny + having) gives the form away; 'having' may be unclear. The speaker is just 'she' with no context for sense. 'denied not having read' is wrong (double negative), listed only as a possible learner answer.",
+"level_problem": "",
+"sense_problem": "'Her words' are 'I didn't read the letter' (simple past) - fine, but 'having read' also covers 'had read'; OK."
+},
+{
+"id": "c1-16-010",
+"answer": "with a view to starting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "c1-16-011",
+"answer": "'m sitting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'verb gives the background' is a bit unclear; 'all three' is a trivially wrong distractor. 'turns round' is not clearly an event vs. reaction.",
+"level_problem": "B2 rather than C1 (present narrative); fairly easy.",
+"sense_problem": "'all three' is not a believable option."
+},
+{
+"id": "c1-16-012",
+"answer": "The lawyer demanded that her client be told the whole truth.",
+"other_correct": [
+[
+"The lawyer demanded that her client should be told the whole truth."
+],
+[
+"The lawyer demanded that her client was told the whole truth."
+],
+[
+"She demanded that her client be told the whole truth."
+],
+[
+"The lawyer demanded that her client is told the whole truth."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'be told' (subjunctive) is American/formal; British 'should be told' also correct; 'was told' informal. Task does not state which is wanted; 'demanded that' given in the instruction gives the structure away.",
+"level_problem": "",
+"sense_problem": "Her words are quoted but the lawyer is 'her' in both instruction and speech: 'my client' -> 'her client' vs 'their/his client' is ambiguous."
+},
+{
+"id": "c1-16-013",
+"answer": "Years ago, the factory would be where the car park is now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

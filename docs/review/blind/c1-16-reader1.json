@@ -1,0 +1,175 @@
+[
+{
+"id": "c1-16-001",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "The number of... + has is B2 at most; fine for C1 only if the point is the contrast with 'A number of' (see 002).",
+"sense_problem": ""
+},
+{
+"id": "c1-16-002",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A number of + plural verb is B2, borderline C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-16-003",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'(have)' tells which verb; fine, but gives away the verb so only has/have is tested.",
+"level_problem": "Politics + singular verb is B1-B2, not really C1.",
+"sense_problem": "Fine."
+},
+{
+"id": "c1-16-004",
+"answer": [
+"have"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Plural 'criteria' is a good C1 point, though a B2 learner could solve it.",
+"sense_problem": ""
+},
+{
+"id": "c1-16-005",
+"answer": [
+"are"
+],
+"other_correct": [
+[
+"'re"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Write one word' is fine. Does not need 'tomorrow' for a tense choice but it is harmless; 'will be' is two words so blocked. 'are' vs 'is' is the only issue.",
+"level_problem": "Subject-verb agreement with 'and' is A2-B1; too easy for C1.",
+"sense_problem": "The two-chairs context is natural."
+},
+{
+"id": "c1-16-006",
+"answer": "Despite the traffic, we could catch the last bus.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Believable mistake (could for one specific past success; should be managed to / were able to). Note 'couldn't find' in option 2 is correct because negatives are allowed."
+},
+{
+"id": "c1-16-007",
+"answer": [
+"Compared"
+],
+"other_correct": [
+[
+"When compared"
+],
+[
+"Once compared"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap before 'with' invites 'Compared'; the verb in brackets is not enough to tell it is a participle clause, but it is not wrong.",
+"level_problem": "Participle clause, fine for B2-C1.",
+"sense_problem": ""
+},
+{
+"id": "c1-16-008",
+"answer": [
+"had been shouting"
+],
+"other_correct": [
+[
+"'d been shouting"
+],
+[
+"had shouted"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The first sentence gives away the form (long duration = continuous). Also the instruction does not say it is the past perfect continuous. 'Show that...' is slightly odd instruction wording.",
+"level_problem": "Past perfect continuous is B2, not C1.",
+"sense_problem": "'had shouted' is possible but less good for duration."
+},
+{
+"id": "c1-16-009",
+"answer": [
+"She denied having read the letter."
+],
+"other_correct": [
+[
+"She denied having read it."
+],
+[
+"She denied ever having read the letter."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gives away the answer: 'deny' and 'having' are named, leaving only copying. 'She' is not defined (the sentence says 'Her words' but no name).",
+"level_problem": "Good C1 structure, but the instruction does the work.",
+"sense_problem": ""
+},
+{
+"id": "c1-16-010",
+"answer": "with a view to starting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fixed phrase, fine for C1.",
+"sense_problem": "Wrong options 'in view to', 'with a view of', 'with a view to start' are believable."
+},
+{
+"id": "c1-16-011",
+"answer": "'m sitting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Question is long and a bit awkward ('gives the background, not an event that moves the story on'); uses undefined grammar idea. 'all three' is an odd option.",
+"level_problem": "Narrative present with background continuous is C1-ish but the task is more about reading than grammar; B1-B2 learners could solve it.",
+"sense_problem": "Model sentence is natural spoken anecdote."
+},
+{
+"id": "c1-16-012",
+"answer": [
+"She demanded that her client be told the whole truth."
+],
+"other_correct": [
+[
+"She demanded that her client should be told the whole truth."
+],
+[
+"The lawyer demanded that her client be told the whole truth."
+],
+[
+"She demanded that her client was told the whole truth."
+],
+[
+"She demanded that her client is told the whole truth."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'demanded that' is given; only the subjunctive form is left to produce, but that is the point. The speaker is 'the lawyer' and 'Her words': 'she' is clear.",
+"level_problem": "Good C1 point.",
+"sense_problem": "'was told' / 'is told' are not formal but acceptable in less formal use; list them."
+},
+{
+"id": "c1-16-013",
+"answer": "Years ago, the factory would be where the car park is now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Believable mistake (would for a state). Option 4 'Didn't you use to' is correct (also 'Didn't you used to' is common but non-standard)."
+}
+]

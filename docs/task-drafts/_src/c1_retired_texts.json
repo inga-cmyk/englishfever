@@ -1,13 +1,18 @@
 {
  "c1-agree-1.csv": [
+  "A number of applicants ___ already withdrawn. (have)",
   "Each of the rooms have its own bathroom.",
-  "The manager and two of her assistants ___ coming to the meeting. (be)"
+  "Politics ___ never interested me much. (have)",
+  "The criteria for the award ___ changed this year. (have)",
+  "The manager and two of her assistants ___ coming to the meeting. (be)",
+  "We need two more chairs: the manager and two of her assistants ___ coming to the meeting tomorrow. (be)"
  ],
  "c1-can-1.csv": [
   "Choose the correct option: The next bus is in an hour, so we ___ walk.",
   "Choose the correct option: Winters here ___ very long, so bring warm clothes.",
   "Even with my glasses on, I ___ hardly read the sign. (can)",
   "He didn't sound serious about leaving. He ___ . (might / joke)",
+  "Last night the children could stay up until eleven.",
   "She may not much experience, but she learns fast.",
   "This time next week I ___ on a beach in Crete. (may / lie)",
   "Write one word in each gap: The next bus is in an hour, so we ___ as ___ walk.",
@@ -27,6 +32,7 @@
  ],
  "c1-past-1.csv": [
   "Choose the correct option: When we shared a flat, Tom ___ my phone charger without asking.",
+  "His voice was hoarse because he ___ all afternoon at the match. (shout)",
   "I had wondered if you could check my report.",
   "I had wondered if you could help me with this report.",
   "I wish you ___ me about the party. I would have come. (tell)",
@@ -45,6 +51,7 @@
   "having read"
  ],
  "c1-prep-1.csv": [
+  "Choose the correct option: She took a part-time job ___ her own business.",
   "Choose the correct option: She took a part-time job ___ starting her own business.",
   "Choose the correct option: The road was closed ___ repairing the bridge.",
   "Write one word in each gap: We received three offers, none ___ ___ was acceptable.",
@@ -58,17 +65,20 @@
   "I'm wondering could you look at my CV before Friday.",
   "I'm wondering whether you could help me with this",
   "My sister and her husband ___ their first baby in June. (expect)",
+  "So this man is walking into a café and he orders a glass of milk.",
   "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass, shoot)",
   "Write one word in each gap: So I ___ ___ in the queue at the bakery, and this woman suddenly ___ round and hands me her dog. (stand, turn)",
   "Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand, turn)"
  ],
  "c1-subj-1.csv": [
   "Choose the correct option: I insist that he ___ told the whole truth.",
+  "Choose the correct option: The lawyer demanded that her client ___ told the whole truth.",
   "I'd rather you ___ me before the meeting, not after it. (tell)",
   "I'd rather you wouldn't have sold the car.",
   "If the bank would refuse, we would sell the car.",
   "It's odd that she ___ ___ ___ that. She's usually so polite.",
-  "It's odd that she ___ that. She's usually so polite. (should / say)"
+  "It's odd that she ___ that. She's usually so polite. (should / say)",
+  "be"
  ],
  "c1-will-1.csv": [
   "\"I've got a headache.\" \"Well, if you ___ stare at a screen all day, what do you expect?\"",
@@ -80,6 +90,7 @@
   "I'd say",
   "It's nine o'clock. She ___ the news by now. (will / hear)",
   "Should you will change your mind, just call us.",
+  "The old factory would be next to the river.",
   "There's the doorbell. That ___ the courier: I'm expecting a parcel. (will / be)"
  ]
 }

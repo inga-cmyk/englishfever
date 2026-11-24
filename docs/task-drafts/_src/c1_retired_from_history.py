@@ -37,9 +37,11 @@ def main():
     files = sorted(f for f in os.listdir(os.path.join(ROOT, "docs", "task-drafts")) if f.startswith("c1-") and f.endswith(".csv"))
     old = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
     res = {}
+    # a text that is a task in any current C1 file is never named (two files may share a topic: c1-pres-1 and c1-pres-2)
+    current = set()
+    for f in files: current |= keys(read(open(os.path.join(ROOT, "docs", "task-drafts", f), encoding="utf-8-sig").read()))
     for f in files:
         path = "docs/task-drafts/" + f
-        current = keys(read(open(os.path.join(ROOT, path), encoding="utf-8-sig").read()))
         seen = set(old.get(f, []))
         for h in git("log", "--format=%h", "--", path).split():
             seen |= keys(read(git("show", f"{h}:{path}")))

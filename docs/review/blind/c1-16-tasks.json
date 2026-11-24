@@ -1,0 +1,113 @@
+[
+ {
+  "id": "c1-16-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The number of applicants ___ fallen sharply this year. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-002",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "A number of applicants ___ already withdrawn, so there are still places left. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Politics ___ never interested me much, but this election is different. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The criteria for the award ___ changed this year, so please read them again. (have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-005",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in the gap: We need two more chairs, because the manager and two of her assistants ___ coming to the meeting tomorrow.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-006",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "I could hear the neighbours arguing all night.",
+   "We couldn't find a parking space anywhere.",
+   "After three tries, she managed to open the jar.",
+   "Despite the traffic, we could catch the last bus."
+  ]
+ },
+ {
+  "id": "c1-16-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ with the other candidates, she was clearly the strongest. (compare)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-008",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Show that the shouting went on for a long time: His voice was hoarse because he ___ all afternoon at the match. (shout)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-16-009",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-16-010",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She took a bookkeeping course ___ her own business.",
+  "options": [
+   "in view to starting",
+   "with a view to starting",
+   "with a view of starting",
+   "with a view to start"
+  ]
+ },
+ {
+  "id": "c1-16-011",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round.",
+  "options": [
+   "'m sitting",
+   "opens",
+   "turns round",
+   "all three"
+  ]
+ },
+ {
+  "id": "c1-16-012",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Report the lawyer's words with *demanded that*. Her words: 'My client must be told the whole truth.'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-16-013",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Whenever we visited my uncle, we would play in his garden.",
+   "Years ago, the factory would be where the car park is now.",
+   "We visited Switzerland four times in the nineties.",
+   "Didn't you use to have red hair?"
+  ]
+ }
+]

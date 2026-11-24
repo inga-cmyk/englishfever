@@ -4240,7 +4240,7 @@ x_always_cont,C1,adv_present,C1,check,order,read,,c1-pres-1.csv:8,adv_present | 
 x_state_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-1.csv:9,adv_present | C1 | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.
 x_performative,C1,adv_present,C1,use,gap,read,,c1-pres-1.csv:10,adv_present | C1 | gap | We ___ for the delay in replying to your email. (apologise) | 
 x_pres_story,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:2,"adv_present | C1 | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand / turn) | "
-x_pres_story,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:3,"adv_present | C1 | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round. | 'm sitting"
+x_pres_story,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:3,"adv_present | C1 | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles. | 'm sitting"
 x_pres_comment,C1,adv_present,C1,use,gap,read,,c1-pres-2.csv:4,"adv_present | C1 | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot) | "
 x_i_hear,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:5,adv_present | C1 | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.
 x_polite_cont,C1,adv_present,C1,check,mcq,read,,c1-pres-2.csv:6,adv_present | C1 | mcq | Which sentence has a mistake? | I'm wondering could you check my CV.

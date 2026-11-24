@@ -42,7 +42,7 @@ gp(T, L, 3, "___ by the queue outside, the new café is very popular. (judge)", 
    "A fixed comment phrase: *Judging by…* (it does not need the subject of the main clause).",
    "Nemainīgs komentāra izteiciens: *Judging by…* (tam nav vajadzīgs galvenā teikuma priekšmets).")
 # teacher's tester, 24 November: the passive participle where someone really is compared
-gp(T, L, 4, "___ with the other candidates, she was clearly the strongest. (compare)", "Compared",
+gp(T, L, 4, "___ with the other candidates, she was clearly the strongest. (compare)", "Compared | When compared",
    "The candidate is the one being compared, so the participle is passive: *Compared with the other candidates, she was…* "
    "Compare *Judging by the queue*: there the speaker judges.",
    "Kandidāte tiek salīdzināta ar citiem, tāpēc divdabis ir ciešamajā kārtā: *Compared with the other candidates, she was…* "

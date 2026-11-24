@@ -1,0 +1,111 @@
+{
+ "c1-17-001": {
+  "hash": "ad8e3f2fa83d6b36",
+  "gate_key": "adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | ",
+  "src": "c1-part-1.csv:12",
+  "point": "x_part_ed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Compared",
+     "When compared"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2194",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "___ with the other candidates, she was clearly the strongest. (compare)",
+   "why": "The candidate is the one being compared, so the participle is passive: *Compared with the other candidates, she was…* Compare *Judging by the queue*: there the speaker judges.",
+   "why_lv": "Kandidāte *tiek* salīdzināta ar *citiem*, tāpēc 3. forma ir ciešamajā kārtā: *Compared with the other candidates, she was*… Salīdzini ar *Judging by the queue*: tur spriež runātājs.",
+   "answers": [
+    [
+     "Compared",
+     "When compared"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_part_ed",
+   "src": "c1-part-1.csv:12"
+  }
+ },
+ "c1-17-002": {
+  "hash": "b5076bbcfc2d5f5d",
+  "gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
+  "src": "c1-perf-1.csv:14",
+  "point": "x_perf_aspect",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She denied having read the letter.",
+     "She denied having read it.",
+     "She denied ever having read the letter.",
+     "She has denied having read the letter."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2219",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+   "why": "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too, but this task asks for *having*.)",
+   "why_lv": "*deny + having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (*Dabiski* ir arī *She denied reading the letter*, bet šis *uzdevums* prasa *having*.)",
+   "answers": [
+    [
+     "She denied having read the letter.",
+     "She denied having read it.",
+     "She denied ever having read the letter.",
+     "She has denied having read the letter."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_perf_aspect",
+   "src": "c1-perf-1.csv:14"
+  }
+ },
+ "c1-17-003": {
+  "hash": "b24b535fd3e7d3a7",
+  "gate_key": "adv_present | C1 | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles. | 'm sitting",
+  "src": "c1-pres-2.csv:3",
+  "point": "x_pres_story",
+  "key": {
+   "kind": "mcq",
+   "correct": "'m sitting",
+   "wrong": [
+    "opens",
+    "turns round",
+    "smiles"
+   ]
+  },
+  "item": {
+   "id": "c-2243",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles.",
+   "why": "In a story told in the present, the background is usually in the present continuous (*I'm sitting on the train*) and the events that move the story on are in the present simple (*opens, turns round, smiles*).",
+   "why_lv": "Stāstā tagadnē fons parasti ir Present Continuous (*I'm sitting on the train*), bet notikumi, kas *virza* stāstu, ir Present Simple (*opens, turns round, smiles*).",
+   "correct": "'m sitting",
+   "wrong": [
+    "opens",
+    "turns round",
+    "smiles"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_pres_story",
+   "src": "c1-pres-2.csv:3"
+  }
+ }
+}

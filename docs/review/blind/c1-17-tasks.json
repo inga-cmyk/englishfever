@@ -1,0 +1,28 @@
+[
+ {
+  "id": "c1-17-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ with the other candidates, she was clearly the strongest. (compare)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "c1-17-002",
+  "level": "C1",
+  "kind": "text",
+  "instruction_and_task": "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "c1-17-003",
+  "level": "C1",
+  "kind": "mcq",
+  "instruction_and_task": "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles.",
+  "options": [
+   "opens",
+   "turns round",
+   "smiles",
+   "'m sitting"
+  ]
+ }
+]

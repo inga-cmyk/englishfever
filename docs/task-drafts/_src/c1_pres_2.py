@@ -16,12 +16,12 @@ gp(T, L, 4, "Write one word in each gap: So I'm at the bakery, I ___ ___ in the 
    "Stāstā tagadnē fons ir Present Continuous (*I'm standing in the queue*), bet galvenie notikumi Present Simple (*turns, hands*).")
 # st2 the main event is not continuous
 # teacher's tester, 24 November: *is walking* can also open a spoken story, so ask which form gives the background
-mc(T, L, 4, "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round.", "'m sitting",
-   ["opens", "turns round", "all three"],
+mc(T, L, 4, "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles.", "'m sitting",
+   ["opens", "turns round", "smiles"],
    "In a story told in the present, the background is usually in the present continuous (*I'm sitting on the train*) "
-   "and the events that move the story on are in the present simple (*opens, turns round*).",
+   "and the events that move the story on are in the present simple (*opens, turns round, smiles*).",
    "Stāstā tagadnē fons parasti ir Present Continuous (*I'm sitting on the train*), "
-   "bet notikumi, kas virza stāstu, ir Present Simple (*opens, turns round*).")
+   "bet notikumi, kas virza stāstu, ir Present Simple (*opens, turns round, smiles*).")
 
 # ── x_pres_comment: live commentary ──
 gp(T, L, 4, "Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot)", "passes / shoots",

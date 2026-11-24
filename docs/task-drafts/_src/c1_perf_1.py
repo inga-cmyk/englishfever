@@ -62,7 +62,7 @@ gp(T, L, 4, "The thief is thought ___ the country last week. (leave)", "to have 
    "*is thought* is now, the leaving was earlier (*last week*): the perfect after *to*, *to have left*.",
    "*is thought* ir tagad, aizbraukšana bija agrāk (*last week*): perfekts aiz *to*, *to have left*.")
 tx(T, L, 4, "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
-   "She denied having read the letter. | She denied having read it.",
+   "She denied having read the letter. | She denied having read it. | She denied ever having read the letter. | She has denied having read the letter. | She denies having read the letter.",
    "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too, but this task asks for *having*.)",
    "*deny* + *having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (Dabiski ir arī *She denied reading the letter*, bet šis uzdevums prasa *having*.)")
 

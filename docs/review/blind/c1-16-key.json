@@ -1,0 +1,464 @@
+{
+ "c1-16-001": {
+  "hash": "2c6c68e65c0b32c4",
+  "gate_key": "adv_agree | C1 | gap | The number of applicants ___ fallen sharply this year. (have) | ",
+  "src": "c1-agree-1.csv:2",
+  "point": "x_agr_quant",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has",
+     "'s"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2149",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The number of applicants ___ fallen sharply this year. (have)",
+   "why": "*The number of* + plural noun takes a singular verb: the number is one thing. *The number of applicants has fallen.*",
+   "why_lv": "*The number of* + daudzskaitlis prasa darbības vārdu vienskaitlī: skaitlis ir viena lieta. *The number of applicants has fallen.*",
+   "answers": [
+    [
+     "has",
+     "'s"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_agr_quant",
+   "src": "c1-agree-1.csv:2"
+  }
+ },
+ "c1-16-002": {
+  "hash": "33d45133e3aa2312",
+  "gate_key": "adv_agree | C1 | gap | A number of applicants ___ already withdrawn, so there are still places left. (have) | ",
+  "src": "c1-agree-1.csv:3",
+  "point": "x_agr_quant",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have",
+     "'ve"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2150",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "A number of applicants ___ already withdrawn, so there are still places left. (have)",
+   "why": "*A number of* = several, so the verb is plural: *A number of applicants have withdrawn.* Compare: *The number of applicants has fallen* (the number is one thing).",
+   "why_lv": "*A number of* = vairāki, tāpēc darbības vārds ir daudzskaitlī (salīdzini: *The number of applicants has fallen*, skaitlis ir viena lieta): *A number of applicants have withdrawn.*",
+   "answers": [
+    [
+     "have",
+     "'ve"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_agr_quant",
+   "src": "c1-agree-1.csv:3"
+  }
+ },
+ "c1-16-003": {
+  "hash": "430b3ce74d443f14",
+  "gate_key": "adv_agree | C1 | gap | Politics ___ never interested me much, but this election is different. (have) | ",
+  "src": "c1-agree-1.csv:5",
+  "point": "x_agr_s_nouns",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "has",
+     "'s"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2152",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Politics ___ never interested me much, but this election is different. (have)",
+   "why": "*politics* ends in *-s* but takes a singular verb: *Politics has never interested me.*",
+   "why_lv": "*politics* beidzas ar *-s*, bet darbības vārds ir vienskaitlī: *Politics has never interested me.*",
+   "answers": [
+    [
+     "has",
+     "'s"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_agr_s_nouns",
+   "src": "c1-agree-1.csv:5"
+  }
+ },
+ "c1-16-004": {
+  "hash": "bc5bd518d417bf72",
+  "gate_key": "adv_agree | C1 | gap | The criteria for the award ___ changed this year, so please read them again. (have) | ",
+  "src": "c1-agree-1.csv:6",
+  "point": "x_agr_s_nouns",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have",
+     "'ve"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2153",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The criteria for the award ___ changed this year, so please read them again. (have)",
+   "why": "*criteria* is the plural of *criterion*: *The criteria have changed.*",
+   "why_lv": "*criteria* ir *criterion* daudzskaitlis: *The criteria have changed.*",
+   "answers": [
+    [
+     "have",
+     "'ve"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_agr_s_nouns",
+   "src": "c1-agree-1.csv:6"
+  }
+ },
+ "c1-16-005": {
+  "hash": "9e296ef28a376f8f",
+  "gate_key": "adv_agree | C1 | gap | Write one word in the gap: We need two more chairs, because the manager and two of her assistants ___ coming to the meeting tomorrow. | ",
+  "src": "c1-agree-1.csv:12",
+  "point": "x_agr_complex",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2159",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Write one word in the gap: We need two more chairs, because the manager and two of her assistants ___ coming to the meeting tomorrow.",
+   "why": "With *and*, the subject is plural: *The manager and two of her assistants are coming.* With *together with*, it stays singular: *The manager, together with two of her assistants, is coming.*",
+   "why_lv": "Ar *and* teikuma priekšmets ir daudzskaitlī: *The manager and two of her assistants are coming.* Ar *together with* tas paliek vienskaitlī: *The manager, together with two of her assistants, is coming.*",
+   "answers": [
+    [
+     "are"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_agr_complex",
+   "src": "c1-agree-1.csv:12"
+  }
+ },
+ "c1-16-006": {
+  "hash": "1bddc502aa4eede9",
+  "gate_key": "adv_can | C1 | mcq | Which sentence has a mistake? | Despite the traffic, we could catch the last bus.",
+  "src": "c1-can-1.csv:2",
+  "point": "x_able_limits",
+  "key": {
+   "kind": "mcq",
+   "correct": "Despite the traffic, we could catch the last bus.",
+   "wrong": [
+    "I could hear the neighbours arguing all night.",
+    "We couldn't find a parking space anywhere.",
+    "After three tries, she managed to open the jar."
+   ]
+  },
+  "item": {
+   "id": "c-2160",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "For one achievement on one occasion, use *were able to* or *managed to*, not *could*: *Despite the traffic, we were able to catch the last bus.* *could* is fine for a general ability, with verbs like *hear*, and in the negative (*couldn't find*).",
+   "why_lv": "Vienam *paveikumam* vienā reizē lieto *were able to* vai *managed to*, nevis *could*: *Despite the traffic, we were able to catch the last bus.* *could* der vispārējai spējai, ar tādiem darbības vārdiem kā *hear* un noliegumā (*couldn't find*).",
+   "correct": "Despite the traffic, we could catch the last bus.",
+   "wrong": [
+    "I could hear the neighbours arguing all night.",
+    "We couldn't find a parking space anywhere.",
+    "After three tries, she managed to open the jar."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_able_limits",
+   "src": "c1-can-1.csv:2"
+  }
+ },
+ "c1-16-007": {
+  "hash": "2e8ba4b25cfa44f1",
+  "gate_key": "adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | ",
+  "src": "c1-part-1.csv:12",
+  "point": "x_part_ed",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Compared"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2194",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "___ with the other candidates, she was clearly the strongest. (compare)",
+   "why": "The candidate is the one being compared, so the participle is passive: *Compared with the other candidates, she was…* Compare *Judging by the queue*: there the speaker judges.",
+   "why_lv": "Kandidāte *tiek* salīdzināta ar *citiem*, tāpēc 3. forma ir ciešamajā kārtā: *Compared with the other candidates, she was*… Salīdzini ar *Judging by the queue*: tur spriež runātājs.",
+   "answers": [
+    [
+     "Compared"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_part_ed",
+   "src": "c1-part-1.csv:12"
+  }
+ },
+ "c1-16-008": {
+  "hash": "bb94e7d64a37a014",
+  "gate_key": "adv_past | C1 | gap | Show that the shouting went on for a long time: His voice was hoarse because he ___ all afternoon at the match. (shout) | ",
+  "src": "c1-past-1.csv:5",
+  "point": "x_pastp_deduce",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had been shouting",
+     "'d been shouting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Show that the shouting went on for a long time: His voice was hoarse because he ___ all afternoon at the match. (shout)",
+   "why": "The shouting was over and explains how his voice was later: past perfect continuous, *had been shouting* (*shouted* and *had shouted* are possible too, but they do not show how long it went on).",
+   "why_lv": "Kliegšana jau bija beigusies un izskaidro, kāda vēlāk bija viņa balss: Past Perfect Continuous, *had been shouting* (iespējami arī *shouted* un *had shouted*, bet *tie* neparāda, cik ilgi tas turpinājās).",
+   "answers": [
+    [
+     "had been shouting",
+     "'d been shouting"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_pastp_deduce",
+   "src": "c1-past-1.csv:5"
+  }
+ },
+ "c1-16-009": {
+  "hash": "bd1827893892a64d",
+  "gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
+  "src": "c1-perf-1.csv:14",
+  "point": "x_perf_aspect",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She denied having read the letter.",
+     "She denied having read it."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2219",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.'",
+   "why": "*deny* + *having* + 3rd form for something earlier than the denying: *She denied having read the letter.* (*She denied reading the letter* is natural too, but this task asks for *having*.)",
+   "why_lv": "*deny + having* + 3. forma tam, kas notika pirms noliegšanas: *She denied having read the letter.* (*Dabiski* ir arī *She denied reading the letter*, bet šis *uzdevums* prasa *having*.)",
+   "answers": [
+    [
+     "She denied having read the letter.",
+     "She denied having read it."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_perf_aspect",
+   "src": "c1-perf-1.csv:14"
+  }
+ },
+ "c1-16-010": {
+  "hash": "6c7addd30d582238",
+  "gate_key": "adv_prep | C1 | mcq | Choose the correct option: She took a bookkeeping course ___ her own business. | with a view to starting",
+  "src": "c1-prep-1.csv:7",
+  "point": "x_prep_multi",
+  "key": {
+   "kind": "mcq",
+   "correct": "with a view to starting",
+   "wrong": [
+    "with a view to start",
+    "with a view of starting",
+    "in view to starting"
+   ]
+  },
+  "item": {
+   "id": "c-2226",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Choose the correct option: She took a bookkeeping course ___ her own business.",
+   "why": "The fixed phrase is *with a view to* + *-ing* (*to* here is a preposition): *with a view to starting her own business*.",
+   "why_lv": "Nemainīgais izteiciens ir *with a view to + -ing* (*to* te ir prievārds): *with a view to starting her own business*.",
+   "correct": "with a view to starting",
+   "wrong": [
+    "with a view to start",
+    "with a view of starting",
+    "in view to starting"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_prep_multi",
+   "src": "c1-prep-1.csv:7"
+  }
+ },
+ "c1-16-011": {
+  "hash": "fd2c862fedada4fa",
+  "gate_key": "adv_present | C1 | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round. | 'm sitting",
+  "src": "c1-pres-2.csv:3",
+  "point": "x_pres_story",
+  "key": {
+   "kind": "mcq",
+   "correct": "'m sitting",
+   "wrong": [
+    "opens",
+    "turns round",
+    "all three"
+   ]
+  },
+  "item": {
+   "id": "c-2243",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round.",
+   "why": "In a story told in the present, the background is usually in the present continuous (*I'm sitting on the train*) and the events that move the story on are in the present simple (*opens, turns round*).",
+   "why_lv": "Stāstā tagadnē fons parasti ir Present Continuous (*I'm sitting on the train*), bet notikumi, kas *virza* stāstu, ir Present Simple (*opens, turns round*).",
+   "correct": "'m sitting",
+   "wrong": [
+    "opens",
+    "turns round",
+    "all three"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_pres_story",
+   "src": "c1-pres-2.csv:3"
+  }
+ },
+ "c1-16-012": {
+  "hash": "ed61f080fa89e867",
+  "gate_key": "adv_subj | C1 | text | Report the lawyer's words with *demanded that*. Her words: 'My client must be told the whole truth.' | ",
+  "src": "c1-subj-1.csv:10",
+  "point": "x_subj_present",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The lawyer demanded that her client be told the whole truth.",
+     "The lawyer demanded that her client should be told the whole truth.",
+     "She demanded that her client be told the whole truth.",
+     "She demanded that her client should be told the whole truth."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2258",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Report the lawyer's words with *demanded that*. Her words: 'My client must be told the whole truth.'",
+   "why": "After *demand that*, the base form for every person: *The lawyer demanded that her client be told the whole truth.* (British English also: *should be told*.)",
+   "why_lv": "Aiz *demand that* pamatforma visām personām: *The lawyer demanded that her client be told the whole truth.* (*Britu* angļu valodā arī: *should be told*.)",
+   "answer_notes": [
+    [
+     "The lawyer demanded that her client should be told the whole truth.",
+     "Also correct (British English).",
+     "Arī pareizi (britu angļu valodā)."
+    ]
+   ],
+   "answers": [
+    [
+     "The lawyer demanded that her client be told the whole truth.",
+     "The lawyer demanded that her client should be told the whole truth.",
+     "She demanded that her client be told the whole truth.",
+     "She demanded that her client should be told the whole truth."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "x_subj_present",
+   "src": "c1-subj-1.csv:10"
+  }
+ },
+ "c1-16-013": {
+  "hash": "3d9e0af40bafe19a",
+  "gate_key": "adv_will | C1 | mcq | Which sentence has a mistake? | Years ago, the factory would be where the car park is now.",
+  "src": "c1-will-1.csv:3",
+  "point": "x_will_habit",
+  "key": {
+   "kind": "mcq",
+   "correct": "Years ago, the factory would be where the car park is now.",
+   "wrong": [
+    "Whenever we visited my uncle, we would play in his garden.",
+    "Didn't you use to have red hair?",
+    "We visited Switzerland four times in the nineties."
+   ]
+  },
+  "item": {
+   "id": "c-2263",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "For a past state that has changed, use *used to*, not *would*: *Years ago, the factory used to be where the car park is now.*",
+   "why_lv": "Pagātnes stāvoklim, kas mainījies, lieto *used to*, nevis *would*: *Years ago, the factory used to be where the car park is now.*",
+   "correct": "Years ago, the factory would be where the car park is now.",
+   "wrong": [
+    "Whenever we visited my uncle, we would play in his garden.",
+    "Didn't you use to have red hair?",
+    "We visited Switzerland four times in the nineties."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "x_will_habit",
+   "src": "c1-will-1.csv:3"
+  }
+ }
+}

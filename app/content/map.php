@@ -8215,7 +8215,7 @@ return json_decode(<<<'EF_JSON_END'
 "adv_present | mcq | Which sentence has a mistake? | This old suitcase is weighing nearly five kilos.": "x_state_cont",
 "adv_present | gap | We ___ for the delay in replying to your email. (apologise) | ": "x_performative",
 "adv_present | gap | Write one word in each gap: So I'm at the bakery, I ___ ___ in the queue, and this woman suddenly ___ round and hands me her dog. (stand / turn) | ": "x_pres_story",
-"adv_present | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, and the whole carriage turns round. | 'm sitting": "x_pres_story",
+"adv_present | mcq | In this story, which verb gives the background, not an event that moves the story on? So I'm sitting on the train, this man opens a bag of crisps, everyone turns round, and he just smiles. | 'm sitting": "x_pres_story",
 "adv_present | gap | Write one word in each gap: And Jones ___ the ball to Taylor, who ___ and scores! (pass / shoot) | ": "x_pres_comment",
 "adv_present | mcq | Which sentence has a mistake? | I'm gathering you're looking for a new flat.": "x_i_hear",
 "adv_present | mcq | Which sentence has a mistake? | I'm wondering could you check my CV.": "x_polite_cont",

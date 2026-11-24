@@ -1,0 +1,47 @@
+[
+{
+"id": "c1-17-001",
+"answer": [
+"Compared"
+],
+"other_correct": [
+[
+"When compared"
+],
+[
+"If compared"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Hint (compare) plus 'with' gives away the form; only one word to supply.",
+"level_problem": "Reduced participle clause is fine for C1 but the task is only form-filling, B2-ish.",
+"sense_problem": ""
+},
+{
+"id": "c1-17-002",
+"answer": [
+"She denied having read the letter."
+],
+"other_correct": [
+"She denied having read it.",
+"She denied ever having read the letter.",
+"She denied having read the letter. (with 'that' clause not allowed by instruction)",
+"She had denied having read the letter.",
+"She denies having read the letter.",
+"She denied having read the letter that day."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Names both deny and having, so the structure is given away; only copying/transforming needed. Does not say whether the reporting verb is past or present (denied/denies both fit).",
+"level_problem": "Reporting with deny + having done is B2; C1 would need a nuance choice.",
+"sense_problem": ""
+},
+{
+"id": "c1-17-003",
+"answer": "'m sitting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Wording 'gives the background, not an event that moves the story on' is clear but long; 'opens' and 'smiles' are all events so fine.",
+"level_problem": "Narrative present with continuous background is fine for C1 but a B1 learner could solve it (the only continuous form).",
+"sense_problem": ""
+}
+]

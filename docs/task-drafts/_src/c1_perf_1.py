@@ -44,8 +44,8 @@ mc(T, L, 4, "Which sentence has a mistake?", "This is the first time I am seeing
    "Aiz *This is the first time* lieto Present Perfect: *This is the first time I've seen snow.* Aiz *It was the first time* lieto Past Perfect.")
 # x_ppc_adv
 gp(T, L, 3, "It's only eleven, and I ___ the bank four times. Nobody's answering. (ring)", "have rung | 've rung",
-   "A number of times (*four times*): present perfect simple, *I've rung*. The continuous is for the activity: *I've been ringing all morning*.",
-   "Reižu skaits (*four times*): Present Perfect Simple, *I've rung*. Ilgstošā forma ir darbībai: *I've been ringing all morning*.")
+   "A number of times (*four times*): present perfect simple, *I've rung the bank four times*. With a number of times we don't use the continuous.",
+   "Reižu skaits (*four times*): Present Perfect Simple, *I've rung the bank four times*. Ar reižu skaitu ilgstošo formu nelieto.")
 mc(T, L, 3, "Which sentence has a mistake?", "I've been having this phone since May.",
    ["Rents have gone up by eight per cent this year.", "She's been learning Spanish for two years.",
     "We've been waiting for the plumber since nine."],
@@ -68,5 +68,5 @@ tx(T, L, 4, "Report what she said with *deny* and *having*. Her words: 'I didn't
 
 # teacher's tester, 23 November: the activity next to the count (*I've rung four times*)
 gp(T, L, 4, "I ___ the bank all morning, but nobody's answering. (ring)", "have been ringing | 've been ringing",
-   "An activity that has gone on up to now (*all morning*): present perfect continuous, *I've been ringing*. A number of times: *I've rung four times*.",
-   "Darbība, kas turpinās līdz šim brīdim (*all morning*): Present Perfect Continuous, *I've been ringing*. Reižu skaits: *I've rung four times*.")
+   "An activity that has gone on up to now (*all morning*): present perfect continuous, *I've been ringing the bank all morning*. The continuous shows that it has gone on for some time.",
+   "Darbība, kas turpinās līdz šim brīdim (*all morning*): Present Perfect Continuous, *I've been ringing the bank all morning*. Ilgstošā forma parāda, ka darbība ilgst jau kādu laiku.")

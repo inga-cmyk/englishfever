@@ -212,10 +212,6 @@
  ],
  "example": [
   "adj_order | B1.2 | match | Match each word with its kind. | round = shape ; Spanish = origin ; silk = material ; huge = size",
-  "adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | ",
-  "adv_perfect | C1 | gap | I ___ the bank all morning, but nobody's answering. (ring) | ",
-  "adv_perfect | C1 | gap | It's only eleven, and I ___ the bank four times. Nobody's answering. (ring) | ",
-  "adv_present | C1 | gap | My sister and her husband ___ their first baby next month. (expect) | ",
   "articles | A2.1 | mcq | Choose the correct option: My sister teaches ___ maths in Riga. | —",
   "rep_questions | B1.2 | mcq | Which word(s) do we use to report a yes/no question? | if or whether",
   "verb_patterns | B1.2 | mcq | Choose the correct option: I'll never forget ___ the Eiffel Tower for the first time. | seeing",

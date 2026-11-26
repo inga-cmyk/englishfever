@@ -53,10 +53,10 @@ gp(T, L, 4, "The app ___ to work on my phone. Can you check it? (not / appear)",
    "(*She's appearing in a musical*).")
 note("didn't appear :: Also possible if you mean when you tried it. :: Arī pareizi, ja runā par to, kad mēģināji. || appears not :: Also correct, but more formal. :: Arī pareizi, bet oficiālāk.")
 gp(T, L, 3, "My sister and her husband ___ their first baby next month. (expect)", "are expecting | 're expecting",
-   "*be expecting a baby* = she is pregnant, always continuous. In the meaning *think something will happen*, *expect* is simple "
-   "(*I expect it will rain*).",
-   "*be expecting a baby* = gaida bērnu, vienmēr ilgstošā forma. Nozīmē *domāt, ka kaut kas notiks* *expect* ir vienkāršajā formā "
-   "(*I expect it will rain*).")
+   "*be expecting a baby* = she is pregnant, always continuous: *My sister and her husband are expecting their first baby.* "
+   "When *expect* means 'think something will happen', it is simple.",
+   "*be expecting a baby* = gaida bērnu, vienmēr ilgstošā forma: *My sister and her husband are expecting their first baby.* "
+   "Ja *expect* nozīmē 'domāt, ka kaut kas notiks', tas ir vienkāršajā formā.")
 
 # ── x_performative: saying it is doing it ──
 mc(T, L, 4, "Your friend lent you money and is worried. Choose the most natural way to make a promise: ___ I'll pay you back on Friday.", "I promise",

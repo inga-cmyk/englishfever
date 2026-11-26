@@ -74,6 +74,7 @@ Not changed yet; listed so that they are decided before the analysis. Comparison
 - **Support shown**: the welcome greetings and reminder clicks are tracked in the app but are not in the research `events.csv` yet.
 
 ## Changes
+- 26-27 Nov 2026: from zip 2026-11-27 00:20, 68 new C1 drag-and-drop tasks (`docs/task-drafts/c1-drag-1.csv`, role *check*), six or seven per C1 topic; the C1 question mix changes from 9% to 41% drag-and-drop.
 - 26 Nov 2026: from zip 2026-11-26 12:25, in the level test a learner with no mistake so far is not given fine-tuning tasks below the top full level passed in the staircase, while an unused topic still has a task at or above it (teacher, option A of `docs/PROPOSAL-placement-fine-tuning-floor.md`). The questions served change for these learners only; the scoring does not.
 - 23 Nov 2026 (evening): definition change. **Fixed** = a right answer to a different task of the same grammar point, or the same sentence right on two different later days (before: once on a later day). *Fixed* and *Locked in* counts before and after this date are not comparable; recompute old data with the new rule from `answers.csv` if needed (Mistakes::scan reads the answers, so the app's own counts already use the new rule for all past answers).
 - 23 Nov 2026 (evening): Second Chance serves the learner's own wrong sentence only on a later day than the mistake; on the same day only a different task of the same point (`served_why = second_chance` for both).

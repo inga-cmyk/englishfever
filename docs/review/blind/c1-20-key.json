@@ -1,0 +1,236 @@
+{
+ "c1-20-001": {
+  "hash": "8c95c8c364d49a22",
+  "gate_key": "adv_present | C1 | order | Put the words in order. | i'm already regretting my decision to move to the countryside",
+  "src": "c1-drag-1.csv:6",
+  "point": "x_mental_cont",
+  "key": {
+   "kind": "order",
+   "sentence": "i'm already regretting my decision to move to the countryside",
+   "also": [
+    "i'm regretting my decision to move to the countryside already",
+    "already i'm regretting my decision to move to the countryside"
+   ]
+  },
+  "item": {
+   "id": "c-2174",
+   "skill": "adv_present",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*regret* about a feeling that is new and growing now can be continuous: *I'm already regretting*.",
+   "why_lv": "*regret* par sajūtu, kas ir *jauna* un tagad *pieaug*, var būt ilgstošajā formā: *I'm already regretting.*",
+   "sentence": "i'm already regretting my decision to move to the countryside",
+   "answers": [
+    [
+     "i'm already regretting my decision to move to the countryside",
+     "i'm regretting my decision to move to the countryside already",
+     "already i'm regretting my decision to move to the countryside"
+    ]
+   ],
+   "role": "check",
+   "point": "x_mental_cont",
+   "src": "c1-drag-1.csv:6"
+  }
+ },
+ "c1-20-002": {
+  "hash": "8c704e9058072ab4",
+  "gate_key": "adv_past | C1 | order | Put the words in order. | i had expected the interview to be much harder than it was",
+  "src": "c1-drag-1.csv:13",
+  "point": "x_past_intend",
+  "key": {
+   "kind": "order",
+   "sentence": "i had expected the interview to be much harder than it was",
+   "also": [
+    "the interview was much harder than i had expected it to be",
+    "it was much harder than i had expected the interview to be",
+    "i had expected it to be much harder than the interview was"
+   ]
+  },
+  "item": {
+   "id": "c-2181",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*had expected*: what I thought before; it turned out differently (*than it was*, *than I had expected it to be*).",
+   "why_lv": "*had expected*: ko domāju iepriekš; iznāca citādi (*than it was, than I had expected it to be*).",
+   "sentence": "i had expected the interview to be much harder than it was",
+   "answers": [
+    [
+     "i had expected the interview to be much harder than it was",
+     "the interview was much harder than i had expected it to be",
+     "it was much harder than i had expected the interview to be",
+     "i had expected it to be much harder than the interview was"
+    ]
+   ],
+   "role": "check",
+   "point": "x_past_intend",
+   "src": "c1-drag-1.csv:13"
+  }
+ },
+ "c1-20-003": {
+  "hash": "5c2f9179c84d44f5",
+  "gate_key": "adv_will | C1 | order | Put the words in order. | i'm afraid i'd have to disagree with you on that",
+  "src": "c1-drag-1.csv:25",
+  "point": "x_would_soft",
+  "key": {
+   "kind": "order",
+   "sentence": "i'm afraid i'd have to disagree with you on that",
+   "also": [
+    "i'd have to disagree with you on that i'm afraid",
+    "i'm afraid i'd have to disagree on that with you",
+    "i'd have to disagree on that with you i'm afraid",
+    "on that i'm afraid i'd have to disagree with you",
+    "on that i'd have to disagree with you i'm afraid",
+    "i'm afraid on that i'd have to disagree with you"
+   ]
+  },
+  "item": {
+   "id": "c-2193",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*I'd have to disagree* is a softer, more polite way to say *I disagree*: *would* adds distance.",
+   "why_lv": "*I'd have to disagree* ir maigāks, pieklājīgāks *veids*, kā pateikt *I disagree*: *would rada distanci*.",
+   "sentence": "i'm afraid i'd have to disagree with you on that",
+   "answers": [
+    [
+     "i'm afraid i'd have to disagree with you on that",
+     "i'd have to disagree with you on that i'm afraid",
+     "i'm afraid i'd have to disagree on that with you",
+     "i'd have to disagree on that with you i'm afraid",
+     "on that i'm afraid i'd have to disagree with you",
+     "on that i'd have to disagree with you i'm afraid",
+     "i'm afraid on that i'd have to disagree with you"
+    ]
+   ],
+   "role": "check",
+   "point": "x_would_soft",
+   "src": "c1-drag-1.csv:25"
+  }
+ },
+ "c1-20-004": {
+  "hash": "0d2cc2ee857a03b3",
+  "gate_key": "adv_can | C1 | gap | My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane. | ",
+  "src": "c1-drag-1.csv:31",
+  "point": "x_allowed_once",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "allowed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane.",
+   "why": "Permission on one particular occasion in the past: *was allowed* (onto the plane). *could* is for general permission or ability, not for one thing that happened on one occasion: not *I could go onto the plane*.",
+   "why_lv": "Atļauja vienā konkrētā reizē pagātnē: *was allowed* (*onto the plane*). *could* lieto vispārējai atļaujai vai spējai, nevis vienam *notikumam* vienā reizē: nevis *I could go onto the plane.*",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "allowed"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "allowed",
+    "could",
+    "go"
+   ],
+   "role": "check",
+   "point": "x_allowed_once",
+   "src": "c1-drag-1.csv:31"
+  }
+ },
+ "c1-20-005": {
+  "hash": "d0bf396296ae23e4",
+  "gate_key": "adv_subj | C1 | order | Put the words in order. | the committee insisted that the decision be announced to all staff",
+  "src": "c1-drag-1.csv:39",
+  "point": "x_subj_present",
+  "key": {
+   "kind": "order",
+   "sentence": "the committee insisted that the decision be announced to all staff",
+   "also": [
+    "all staff insisted that the decision be announced to the committee",
+    "the committee insisted to all staff that the decision be announced",
+    "all staff insisted to the committee that the decision be announced",
+    "the staff insisted that the committee decision be announced to all",
+    "the committee insisted that the staff decision be announced to all"
+   ]
+  },
+  "item": {
+   "id": "c-2207",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*insist that* + subject + base form: *the decision be announced* (for every person, also in the past).",
+   "why_lv": "*insist that* + teikuma priekšmets + pamatforma: *the decision be announced* (visām personām, arī pagātnē).",
+   "sentence": "the committee insisted that the decision be announced to all staff",
+   "answers": [
+    [
+     "the committee insisted that the decision be announced to all staff",
+     "all staff insisted that the decision be announced to the committee",
+     "the committee insisted to all staff that the decision be announced",
+     "all staff insisted to the committee that the decision be announced",
+     "the staff insisted that the committee decision be announced to all",
+     "the committee insisted that the staff decision be announced to all"
+    ]
+   ],
+   "role": "check",
+   "point": "x_subj_present",
+   "src": "c1-drag-1.csv:39"
+  }
+ },
+ "c1-20-006": {
+  "hash": "5e2e2111e932ef52",
+  "gate_key": "adv_prep | C1 | order | Put the words in order. | it's not the kind of job you can walk away from",
+  "src": "c1-drag-1.csv:50",
+  "point": "x_prep_whom",
+  "key": {
+   "kind": "order",
+   "sentence": "it's not the kind of job you can walk away from",
+   "also": [
+    "it's the kind of job you can not walk away from"
+   ]
+  },
+  "item": {
+   "id": "c-2218",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In everyday English the preposition stays at the end, with its verb: *a job you can walk away from*.",
+   "why_lv": "Ikdienas valodā prievārds paliek beigās pie *sava* darbības vārda: *a job you can walk away from*.",
+   "sentence": "it's not the kind of job you can walk away from",
+   "answers": [
+    [
+     "it's not the kind of job you can walk away from",
+     "it's the kind of job you can not walk away from"
+    ]
+   ],
+   "role": "check",
+   "point": "x_prep_whom",
+   "src": "c1-drag-1.csv:50"
+  }
+ }
+}

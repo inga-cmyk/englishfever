@@ -209,6 +209,11 @@
 "round": "r20-1",
 "task": "r20-1-017"
 },
+"041ac60232542622": {
+"gate_key": "adv_order | C1 | gap | Not once ___ ___ thank us for looking after his dog. | ",
+"round": "c1-19",
+"task": "c1-19-046"
+},
 "041b1d561b324297": {
 "gate_key": "modal_verbs | A2.2 | gap | Can I ___ your bike this afternoon? | ",
 "round": "r9",
@@ -218,6 +223,11 @@
 "gate_key": "conj_clauses | B2.1 | mcq | Choose the correct option: They walked quietly so as ___ the baby. | not to wake",
 "round": "r20-3",
 "task": "r20-3-006"
+},
+"0440fab6576879bd": {
+"gate_key": "adv_will | C1 | gap | If you ___ ___ any problems with the app, just email us. | ",
+"round": "c1-18",
+"task": "c1-18-015"
 },
 "04514b8e11c0642a": {
 "gate_key": "ind_polite | B1.2 | mcq | Which sentence has a mistake? | I'm not sure which gate our flight leaves from?",
@@ -283,6 +293,16 @@
 "gate_key": "cond_advanced | B1.2 | mcq | Choose the correct option: I can't swim. I wish I ___ swim. | could",
 "round": "r8",
 "task": "r8-002"
+},
+"056ddcd113202578": {
+"gate_key": "adv_can | C1 | gap | We ___ ___ well take a taxi: the last bus has gone. | ",
+"round": "c1-18",
+"task": "c1-18-022"
+},
+"05709bbf9610f49c": {
+"gate_key": "narrative_b2 | B2.2 | gap | You ___ ___ very difficult today. That's not like you. | ",
+"round": "c1-18",
+"task": "c1-18-064"
 },
 "058e6aa80d834dce": {
 "gate_key": "past_simple | B1.1 | order | Put all the words in order. More than one answer is possible. | we missed the last train so we took a taxi home",
@@ -604,6 +624,11 @@
 "round": "r21b-4",
 "task": "r21b-4-041"
 },
+"0d2cc2ee857a03b3": {
+"gate_key": "adv_can | C1 | gap | My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane. | ",
+"round": "c1-20",
+"task": "answers added"
+},
 "0d3aac0b4f80b52c": {
 "gate_key": "ind_polite | B1.2 | text | 'Where is the post office?'\nFinish the sentence: Do you know where … | ",
 "round": "r4",
@@ -638,6 +663,11 @@
 "gate_key": "cond_advanced | B1.2 | gap | My flat is tiny. I wish it ___ bigger. (be) | ",
 "round": "r8",
 "task": "r8-009"
+},
+"0ddaeeaca270d978": {
+"gate_key": "adv_part | C1 | gap | ___ ___, he refused to go to bed until the match was over. | ",
+"round": "c1-19",
+"task": "c1-19-041"
 },
 "0df15ebad5cdcf22": {
 "gate_key": "rep_verbs | B2.2 | mcq | Which sentence reports the customer's words: 'The service was terrible.' | The customer complained that the service had been terrible.",
@@ -1364,6 +1394,11 @@
 "round": "c1-6",
 "task": "c1-6-005"
 },
+"1fa7a99e882e3d6d": {
+"gate_key": "adv_past | C1 | gap | By the time I found my phone, she ___ ___ ___ me four times. | ",
+"round": "c1-19",
+"task": "c1-19-012"
+},
 "1fbb99675c7661bf": {
 "gate_key": "ind_polite | B1.2 | order | 'How much are the tickets?'\nPut the words in order to make a question. | do you know how much the tickets are",
 "round": "r4",
@@ -1418,6 +1453,11 @@
 "gate_key": "adv_perfect | C1 | text | Report what she said with *deny* and *having*. Her words: 'I didn't read the letter.' | ",
 "round": "c1-12",
 "task": "answers added"
+},
+"2070d0d6a08de0b5": {
+"gate_key": "adv_perfect | C1 | gap | By the end of this month, I ___ ___ ___ this car for exactly ten years. | ",
+"round": "c1-19",
+"task": "c1-19-015"
 },
 "20772b1da0d54f9e": {
 "gate_key": "future | A2.1 | mcq | Which sentence is correct? | Shall I help you with your suitcase?",
@@ -1564,6 +1604,11 @@
 "round": "r9",
 "task": "answers added"
 },
+"242306518176f12d": {
+"gate_key": "adv_part | C1 | gap | The flats ___ ___ near the station will be ready next spring. | ",
+"round": "c1-19",
+"task": "c1-19-042"
+},
 "24344e94572019b4": {
 "gate_key": "cond_mixed | B2.2 | gap | If I had learned to drive at eighteen, I ___ so much on taxis now. (not / spend) | ",
 "round": "r20b-2",
@@ -1589,6 +1634,11 @@
 "round": "r21-5",
 "task": "r21-5-029"
 },
+"24d00e866ef5a38e": {
+"gate_key": "adv_agree | C1 | gap | Two thirds of the money ___ ___ spent on salaries. | ",
+"round": "c1-19",
+"task": "c1-19-034"
+},
 "24d50c6e7d248b86": {
 "gate_key": "quantity | B1.1 | gap | The room isn't big ___ for twenty people. | ",
 "round": "r21b-2",
@@ -1613,6 +1663,11 @@
 "gate_key": "rep_questions | B2.2 | mcq | Tom's question to you: 'What should I do?' Which sentence reports it? | He asked me what to do.",
 "round": "r20-2",
 "task": "r20-2-016"
+},
+"251e401322189f9a": {
+"gate_key": "adv_prep | C1 | order | Put the words in order. | she's not an easy person to work with",
+"round": "c1-18",
+"task": "c1-18-049"
 },
 "2523f33b43f4ce09": {
 "gate_key": "unreal_time | B1.2 | gap | I'd prefer ___ by the window. (sit) | ",
@@ -2094,6 +2149,11 @@
 "round": "r11",
 "task": "r11-143"
 },
+"30a5406193968131": {
+"gate_key": "adv_past | C1 | gap | When we got back from holiday, the heating was on and there were dirty cups in the sink. Someone ___ ___ ___ in the flat. | ",
+"round": "c1-19",
+"task": "c1-19-011"
+},
 "30afba738bc0b82e": {
 "gate_key": "irregular_plurals | A2.2 | gap | My jeans ___ too big for me now. (be) | ",
 "round": "r13",
@@ -2244,6 +2304,11 @@
 "round": "r11",
 "task": "r11-040"
 },
+"34a3f600b7e5ba6a": {
+"gate_key": "adv_part | C1 | gap | Unpacking my suitcase at the hotel, ___ ___ that my passport was missing. | ",
+"round": "c1-19",
+"task": "c1-19-039"
+},
 "34ccb827c6abbba3": {
 "gate_key": "modal_verbs | B1.1 | gap | I'm sorry, I ___ come to your party last Saturday. I was ill. (can) | ",
 "round": "r21b-4",
@@ -2319,6 +2384,11 @@
 "round": "r4b",
 "task": "r4b-002"
 },
+"36964eb36bbf2c0b": {
+"gate_key": "adv_prep | C1 | gap | Two goals down with five minutes left, there's little hope ___ ___ the match now. | ",
+"round": "c1-19",
+"task": "c1-19-038"
+},
 "369f0ab0fc185cdd": {
 "gate_key": "cond_second | B2.1 | mcq | Which is correct? 'If I ___ in your position, I'd ask for a pay rise.' | were",
 "round": "r20-4",
@@ -2333,6 +2403,11 @@
 "gate_key": "two_objects | B1.1 | mcq | Which sentence is NOT correct? | He described me the house.",
 "round": "r21-1",
 "task": "r21-1-026"
+},
+"36f4ec0ff2e22820": {
+"gate_key": "adv_prep | C1 | order | Put the words in order. | the matter is being looked into by the police",
+"round": "c1-19",
+"task": "c1-19-037"
 },
 "3720f543a059f8b7": {
 "gate_key": "articles | A2.1 | text | Correct the mistake: We play the basketball on Fridays. | ",
@@ -2809,6 +2884,16 @@
 "round": "r13",
 "task": "r13-022"
 },
+"3f491bf9b7a0e72d": {
+"gate_key": "adv_order | C1 | gap | Not only ___ ___ late, but he also forgot the tickets. | ",
+"round": "c1-18",
+"task": "c1-18-057"
+},
+"3f4c84bcefd386c8": {
+"gate_key": "adv_can | C1 | gap | I've rung the bell twice and nobody's answering. They ___ ___ out in the garden. | ",
+"round": "c1-19",
+"task": "c1-19-022"
+},
 "3f6d81aff3bbae21": {
 "gate_key": "adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be",
 "round": "c1-9",
@@ -2923,6 +3008,11 @@
 "gate_key": "ind_polite | B1.1 | mcq | Which sentence has a mistake? | Can you tell me where can I leave my bike?",
 "round": "r17",
 "task": "r17-015"
+},
+"421b4cef42533453": {
+"gate_key": "adv_order | C1 | gap | ___ ___ to resign, who would replace her? | ",
+"round": "c1-18",
+"task": "c1-18-059"
 },
 "427f9b77526f05d1": {
 "gate_key": "adv_past | C1 | gap | Write one word in each gap: My old flatmate ___ always ___ the lights on. It drove me mad. (leave) | ",
@@ -3329,6 +3419,11 @@
 "round": "r21-1",
 "task": "r21-1-006"
 },
+"4d2e8f37cd3e20b4": {
+"gate_key": "adv_past | C1 | gap | When we were teenagers, my sister ___ ___ ___ my clothes without asking. | ",
+"round": "c1-19",
+"task": "c1-19-009"
+},
 "4d352aa25dec776b": {
 "gate_key": "two_objects | B1.1 | mcq | Choose the correct option: He lent his car ___ his neighbour. | to",
 "round": "r21b-2",
@@ -3508,6 +3603,11 @@
 "gate_key": "past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *This factory*: The company built this factory in 1990. | ",
 "round": "r21c",
 "task": "r21c-019"
+},
+"517a84a65ead30ca": {
+"gate_key": "adv_will | C1 | gap | If you ___ ___ to bed at two every night, of course you're tired! | ",
+"round": "c1-18",
+"task": "c1-18-017"
 },
 "5183e8efb809195e": {
 "gate_key": "cond_second | B2.1 | mcq | Which sentence has a mistake? | If I would have a car, I would drive to work.",
@@ -3859,6 +3959,11 @@
 "round": "r20b-1",
 "task": "r20b-1-018"
 },
+"5b03e4e55166c728": {
+"gate_key": "adv_agree | C1 | gap | There ___ ___ three cars parked outside your house all morning. | ",
+"round": "c1-18",
+"task": "c1-18-039"
+},
 "5b0f44191430a378": {
 "gate_key": "cond_third | B2.2 | gap | He drove too fast just once and lost his licence. If he ___ (not / drive) so fast that day, he ___ (not / lose) it. | ",
 "round": "r20-1",
@@ -3888,6 +3993,11 @@
 "gate_key": "indefinite_pronouns | A2.2 | gap | My glasses are ___ in this room. Can you help me look? | ",
 "round": "r13",
 "task": "r13-111"
+},
+"5c2f9179c84d44f5": {
+"gate_key": "adv_will | C1 | order | Put the words in order. | i'm afraid i'd have to disagree with you on that",
+"round": "c1-20",
+"task": "answers added"
 },
 "5c3aa641628f1fe0": {
 "gate_key": "adv_present | C1 | gap | Our kitchen is tiny: it ___ only three metres by four. (measure) | ",
@@ -3968,6 +4078,11 @@
 "gate_key": "future | B1.2 | mcq | Which sentence is NOT correct? | My sister won't to lend me her car.",
 "round": "r11",
 "task": "r11-130"
+},
+"5e2e2111e932ef52": {
+"gate_key": "adv_prep | C1 | order | Put the words in order. | it's not the kind of job you can walk away from",
+"round": "c1-20",
+"task": "answers added"
 },
 "5e4c1a532983fc27": {
 "gate_key": "modal_verbs | B1.1 | mcq | Which sentence means it is not allowed? | You mustn't smoke here.",
@@ -4339,6 +4454,11 @@
 "round": "r20c",
 "task": "r20c-007"
 },
+"65a9e14af0cceea6": {
+"gate_key": "adv_subj | C1 | order | Put the words in order. | the committee insisted that the decision be announced to all staff",
+"round": "c1-20",
+"task": "answers added"
+},
 "65b6e61ba028f9bf": {
 "gate_key": "cond_mixed | B2.1 | gap | Write one word in each gap: I did not take that course. If I ___ ___ it, I ___ ___ more about design now. (take / know) | ",
 "round": "r20-5",
@@ -4634,6 +4754,11 @@
 "round": "r20c",
 "task": "r20c-030"
 },
+"6c3ea700a62ff520": {
+"gate_key": "adv_present | C1 | gap | I ___ ___ more and more how much I miss the sea. | ",
+"round": "c1-19",
+"task": "c1-19-003"
+},
 "6c3ee0eb04c93506": {
 "gate_key": "narrative_b2 | B2.2 | gap | By the time he retired, he ___ the same car for thirty years. (have) | ",
 "round": "r17",
@@ -4678,6 +4803,11 @@
 "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | whoever wins the quiz gets a free dinner",
 "round": "r20b-1",
 "task": "r20b-1-027"
+},
+"6d03a72cf04e2b84": {
+"gate_key": "adv_prep | C1 | gap | The course is open to everyone, ___ ___ age. | ",
+"round": "c1-18",
+"task": "c1-18-046"
 },
 "6d07aa701d0d386b": {
 "gate_key": "ind_advanced | B2.2 | gap | Our holiday plans depend on ___ my boss gives me the week off. | ",
@@ -5084,6 +5214,11 @@
 "round": "r11",
 "task": "r11-104"
 },
+"749dbfc149edbe1b": {
+"gate_key": "adv_agree | C1 | gap | This pair of glasses ___ ___ me over two hundred euros. | ",
+"round": "c1-19",
+"task": "c1-19-032"
+},
 "74c0466a86c467b7": {
 "gate_key": "rep_verbs | B2.2 | gap | 'Sorry I forgot the meeting.' → Dana apologised ___. | ",
 "round": "r20b-1",
@@ -5319,6 +5454,16 @@
 "round": "c1-15",
 "task": "answers added"
 },
+"7ba350605197c608": {
+"gate_key": "adv_can | C1 | order | Put the words in order. | she may be clever but she has no common sense",
+"round": "c1-19",
+"task": "c1-19-024"
+},
+"7bb377640be20d61": {
+"gate_key": "adv_present | C1 | gap | You ___ ___ very difficult today. That's not like you. | ",
+"round": "c1-19",
+"task": "c1-19-001"
+},
 "7bf726b774c997a4": {
 "gate_key": "ind_advanced | B2.2 | mcq | Which sentence is NOT correct? | Whomever finishes first can go home.",
 "round": "r20-5",
@@ -5354,6 +5499,11 @@
 "round": "r20-2",
 "task": "r20-2-059"
 },
+"7cdaae34ff028c3f": {
+"gate_key": "adv_present | C1 | gap | Your brother ___ ___ you've decided to sell the flat. Is that right? | ",
+"round": "c1-19",
+"task": "c1-19-004"
+},
 "7ce5845b20b6b3d2": {
 "gate_key": "unreal_time | B2.2 | text | Start with *I'd rather you*: Please don't park in front of my garage. | ",
 "round": "r20b-3",
@@ -5368,6 +5518,11 @@
 "gate_key": "modal_verbs | B1.1 | mcq | Which sentence means it is not necessary? | You don't have to wear a tie.",
 "round": "r21-2",
 "task": "r21-2-054"
+},
+"7d52aba23e341dec": {
+"gate_key": "adv_subj | C1 | gap | My colleagues may think I'm rude for leaving at five, but so ___ ___. | ",
+"round": "c1-19",
+"task": "c1-19-030"
 },
 "7d8121d0a5e0f130": {
 "gate_key": "aux_verbs | A2.1 | order | Put the words in order to make a question. | have you got a minute",
@@ -5408,6 +5563,11 @@
 "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: In the end she ___ pass the exam, although it was very hard. | managed to",
 "round": "r1",
 "task": "r1-090"
+},
+"7e826706db8ccc39": {
+"gate_key": "adv_subj | C1 | gap | If the factory ___ ___ close, two hundred people would lose their jobs. | ",
+"round": "c1-18",
+"task": "c1-18-032"
 },
 "7eb664e61d2265cf": {
 "gate_key": "present_perfect | B1.1 | gap | She ___ here since 2018, but she ___ to move next year. | ",
@@ -5919,6 +6079,11 @@
 "round": "r21c",
 "task": "r21c-016"
 },
+"8b863c913446791d": {
+"gate_key": "adv_prep | C1 | gap | She has two brothers, both ___ ___ live abroad. | ",
+"round": "c1-18",
+"task": "c1-18-045"
+},
 "8bc36b06cd593adb": {
 "gate_key": "quantity | B1.1 | gap | Write *no* or *none*: ___ of the photos I took at the concert came out well. It was too dark. | ",
 "round": "r10",
@@ -5939,10 +6104,20 @@
 "round": "r20-2",
 "task": "r20-2-006"
 },
+"8c468ec12cbf7c54": {
+"gate_key": "adv_order | C1 | gap | ___ ___ I like him, I can't agree with him on this. | ",
+"round": "c1-18",
+"task": "c1-18-060"
+},
 "8c639a03ec7e2eeb": {
 "gate_key": "verb_patterns | A2.1 | order | Put the words in order to make a question. | do you want to come with us",
 "round": "r13",
 "task": "r13-003"
+},
+"8c704e9058072ab4": {
+"gate_key": "adv_past | C1 | order | Put the words in order. | i had expected the interview to be much harder than it was",
+"round": "c1-20",
+"task": "answers added"
 },
 "8c8bd25f0697a2f7": {
 "gate_key": "passive_modals | B1.2 | text | Start with *The problem*: Someone could have solved the problem much earlier. | ",
@@ -5953,6 +6128,11 @@
 "gate_key": "present_continuous | B1.1 | order | Put the words in order. | are you using this chair or can i take it",
 "round": "r21-5",
 "task": "r21-5-047"
+},
+"8c95c8c364d49a22": {
+"gate_key": "adv_present | C1 | order | Put the words in order. | i'm already regretting my decision to move to the countryside",
+"round": "c1-20",
+"task": "answers added"
 },
 "8cb669e0a3203c45": {
 "gate_key": "cond_third | B2.2 | mcq | What is the difference? A: 'If you had asked, I would have helped.' B: 'If you asked, I would help.' | A is about the past, B about now or the future.",
@@ -5993,6 +6173,11 @@
 "gate_key": "cond_advanced | B2.2 | order | Put the words in order. Start with *Had I*. | had I known about the delay I would have called you",
 "round": "r20-2",
 "task": "r20-2-048"
+},
+"8daf3b8063598194": {
+"gate_key": "adv_part | C1 | gap | ___ ___, the job isn't mine until I've signed the contract. | ",
+"round": "c1-19",
+"task": "c1-19-043"
 },
 "8db342fe4ef9c727": {
 "gate_key": "quantity | B1.1 | mcq | Choose the correct option: I can't sleep. There's ___ noise outside. | too much",
@@ -6104,6 +6289,11 @@
 "round": "r20-2",
 "task": "r20-2-032"
 },
+"9072715dac156d85": {
+"gate_key": "adv_agree | C1 | gap | The cost of the repairs ___ ___ higher than we thought. | ",
+"round": "c1-18",
+"task": "c1-18-041"
+},
 "90728cd44dd79149": {
 "gate_key": "quantity | B1.1 | order | Put the words in order to make a question. | why are there no taxis at the station",
 "round": "r10",
@@ -6204,6 +6394,11 @@
 "round": "r21b-3",
 "task": "r21b-3-026"
 },
+"927554168cf774a3": {
+"gate_key": "adv_perfect | C1 | gap | It was the first time she ___ ___ on the left, so she was very nervous. | ",
+"round": "c1-19",
+"task": "c1-19-014"
+},
 "92a0f1a1b31faf7d": {
 "gate_key": "adv_past | C1 | gap | I wish you ___ me about the party. I would have come. (tell) | ",
 "round": "c1-9",
@@ -6274,6 +6469,11 @@
 "round": "r21-4",
 "task": "r21-4-011"
 },
+"944d27033b27ed9c": {
+"gate_key": "adv_subj | C1 | order | Put the words in order. | the captain requested that passengers should remain in their seats",
+"round": "c1-19",
+"task": "c1-19-031"
+},
 "9457c8a1e752246b": {
 "gate_key": "ind_polite | B1.1 | match | Match each question with its polite form. | Where does Anna work? = Do you know where Anna works? ; Where did Anna work? = Do you know where Anna worked? ; Where is Anna working? = Do you know where Anna is working? ; Where will Anna work? = Do you know where Anna will work?",
 "round": "r17",
@@ -6308,6 +6508,11 @@
 "gate_key": "rep_questions | B2.1 | order | Put all the words in order. More than one answer is possible. | she asked if I could help her",
 "round": "r20b-3",
 "task": "r20b-3-029"
+},
+"952b968cb09d87de": {
+"gate_key": "adv_part | C1 | gap | The storm brought down power lines, ___ thousands of homes ___ electricity. | ",
+"round": "c1-18",
+"task": "c1-18-055"
 },
 "952ba4ec1a0bd47b": {
 "gate_key": "cond_second | B1.1 | mcq | Which sentence is NOT correct? | If I will win the lottery, I would buy an island.",
@@ -6453,6 +6658,11 @@
 "gate_key": "adv_will | C1 | mcq | Which sentence has a mistake? | If should you change your mind, just call us.",
 "round": "c1-10",
 "task": "c1-10-036"
+},
+"97d01aa7960e86f5": {
+"gate_key": "adv_order | C1 | order | Put the words in order. | no sooner had the film started than the power went off",
+"round": "c1-19",
+"task": "c1-19-044"
 },
 "97d70d3b17943980": {
 "gate_key": "articles | A2.1 | mcq | Which sentence has a mistake? | I ordered a pizza. A pizza was cold.",
@@ -6663,6 +6873,11 @@
 "gate_key": "articles | A2.1 | mcq | Which sentence is NOT correct? | She studies the history at university.",
 "round": "r9",
 "task": "r9-057"
+},
+"9b8eb85d83a4a59c": {
+"gate_key": "adv_prep | C1 | gap | The manager ___ ___ I worked in my first job taught me everything I know. | ",
+"round": "c1-19",
+"task": "c1-19-035"
 },
 "9bba801405336c62": {
 "gate_key": "cond_advanced | B2.2 | text | Rewrite starting with *Were*: If the price were lower, more people would buy it. | ",
@@ -6899,6 +7114,11 @@
 "round": "r10",
 "task": "r10-023"
 },
+"a0f93691283d5185": {
+"gate_key": "adv_past | C1 | gap | I ___ ___ to retire at sixty, but with prices the way they are, I'll have to keep working. | ",
+"round": "c1-19",
+"task": "c1-19-007"
+},
 "a1125d67622e50fd": {
 "gate_key": "present_perfect | B1.1 | order | Put the words in order. | i have lived in this city since i was a child",
 "round": "r21-6",
@@ -6953,6 +7173,11 @@
 "gate_key": "adv_present | C1 | gap | My manager ___ taking early retirement, but she hasn't made up her mind yet. (consider) | ",
 "round": "c1-1d",
 "task": "answers added"
+},
+"a2852010434e62a4": {
+"gate_key": "adv_perfect | C1 | gap | Once the paint ___ ___, you can put the furniture back. | ",
+"round": "c1-19",
+"task": "c1-19-016"
 },
 "a29110451afcf5ed": {
 "gate_key": "cond_third | B2.1 | gap | She would have passed the exam if she ___ ___ harder. | ",
@@ -7038,6 +7263,11 @@
 "gate_key": "conj_b2 | B2.2 | gap | Complete with one word: The concert was cancelled on account ___ low ticket sales. | ",
 "round": "r20-3",
 "task": "r20-3-022"
+},
+"a40399c8fd3bdafb": {
+"gate_key": "adv_present | C1 | order | Put the words in order. | i'm wondering whether you'd mind swapping seats with me",
+"round": "c1-19",
+"task": "c1-19-002"
 },
 "a40c45653baeaf1f": {
 "gate_key": "adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go / light) | ",
@@ -7273,6 +7503,11 @@
 "gate_key": "adv_will | C1 | gap | I sent it on Monday, so the parcel ___ ___ ___ by now. | ",
 "round": "c1-10",
 "task": "c1-10-035"
+},
+"a841a04c4673a592": {
+"gate_key": "adv_order | C1 | gap | What she did ___ ___ out of the meeting without a word. | ",
+"round": "c1-19",
+"task": "c1-19-047"
 },
 "a8648a268d712e57": {
 "gate_key": "indefinite_pronouns | B1.1 | order | Put the words in order to make a question. | would you like something to eat before we leave",
@@ -7833,6 +8068,11 @@
 "gate_key": "ind_advanced | B2.2 | order | Put the words in order. | whoever finishes first can go home",
 "round": "r20-3",
 "task": "r20-3-056"
+},
+"b4471524dd32135d": {
+"gate_key": "adv_can | C1 | order | Put the words in order. | they might have been delayed by the snow",
+"round": "c1-19",
+"task": "c1-19-026"
 },
 "b45be6cd7314fcd0": {
 "gate_key": "narrative_b2 | B2.1 | order | Put the words in order. | we had been driving for hours when the car broke down",
@@ -8749,6 +8989,11 @@
 "round": "r21-3",
 "task": "r21-3-008"
 },
+"c972e7ecc6ce2f12": {
+"gate_key": "adv_present | C1 | gap | OK, OK, I ___ ___: I forgot to book the restaurant. | ",
+"round": "c1-19",
+"task": "c1-19-006"
+},
 "c999c63c2b65649d": {
 "gate_key": "cond_third | B2.2 | mcq | Which sentence is correct? | If we had known about the problem, we would have called you.",
 "round": "r20-4",
@@ -8884,6 +9129,11 @@
 "round": "r1b",
 "task": "r1b-011"
 },
+"cc8404bef19f66a5": {
+"gate_key": "adv_agree | C1 | gap | She is one of the few doctors who ___ ___ home visits. | ",
+"round": "c1-18",
+"task": "c1-18-038"
+},
 "cca6c9f1e9875616": {
 "gate_key": "cond_first | B1.1 | text | Join with *if* or *when*: Perhaps the hotel is full. In that case, we'll stay with friends. | ",
 "round": "r10",
@@ -9014,6 +9264,11 @@
 "round": "r21b-2",
 "task": "r21b-2-022"
 },
+"ce88bdee4c4c7962": {
+"gate_key": "adv_will | C1 | gap | I ___ ___ ___ the shops would be open on a Sunday. | ",
+"round": "c1-18",
+"task": "c1-18-018"
+},
 "ce97721684e206f1": {
 "gate_key": "ind_advanced | B2.2 | text | Join the sentences: She didn't know. Who should she ask? | ",
 "round": "r20c",
@@ -9124,6 +9379,11 @@
 "round": "r9",
 "task": "r9-035"
 },
+"d0cc550aa8483eee": {
+"gate_key": "adv_subj | C1 | order | Put the words in order. | i'd rather we had booked somewhere with a pool",
+"round": "c1-19",
+"task": "c1-19-028"
+},
 "d0ee75bbf7220091": {
 "gate_key": "verb_patterns | B1.1 | gap | I hate ___ on the phone, so I usually send a text message instead. (talk) | ",
 "round": "r10",
@@ -9163,6 +9423,11 @@
 "gate_key": "unreal_time | B1.2 | mcq | Choose the correct option: He'd rather ___ alone than with a big group. | travel",
 "round": "r8",
 "task": "r8-033"
+},
+"d1dacb584ba476ed": {
+"gate_key": "adv_subj | C1 | gap | The coach advised that the captain ___ ___ to journalists before the final. | ",
+"round": "c1-19",
+"task": "c1-19-027"
 },
 "d1ec5ce765a81899": {
 "gate_key": "verb_patterns | B1.1 | text | Say it another way with *to*: We started looking for a new flat as soon as I got the job. | ",
@@ -9228,6 +9493,11 @@
 "gate_key": "present_simple_passive | B1.2 | mcq | Which sentence is NOT correct? | The machines is checked every day.",
 "round": "r21-1",
 "task": "r21-1-033"
+},
+"d291929f647cfe12": {
+"gate_key": "adv_can | C1 | gap | With this much snow, the match ___ ___ be cancelled, so check the website before you set off. | ",
+"round": "c1-19",
+"task": "c1-19-025"
 },
 "d299b771ac4dd137": {
 "gate_key": "present_perfect | B1.1 | mcq | Which sentence is NOT correct? | We have visited Rome in 2019.",
@@ -9399,6 +9669,11 @@
 "round": "r21-4",
 "task": "r21-4-015"
 },
+"d6b5c804af6fa1bb": {
+"gate_key": "adv_agree | C1 | gap | Our biggest expense ___ ___ ___ the rent and the heating bills. | ",
+"round": "c1-19",
+"task": "c1-19-033"
+},
 "d6e57b66cd690ea8": {
 "gate_key": "comparison | B1.1 | mcq | Which sentence is NOT correct? | The weather today is much more warmer than yesterday.",
 "round": "r21b-4",
@@ -9513,6 +9788,11 @@
 "gate_key": "conj_clauses | B2.1 | order | Put the words in order. | despite the rain the match went ahead",
 "round": "r20-4",
 "task": "r20-4-015"
+},
+"d97815a84b18b62a": {
+"gate_key": "adv_can | C1 | order | Put the words in order. | he can't have been at home last night",
+"round": "c1-18",
+"task": "c1-18-023"
 },
 "d988164c30888be6": {
 "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | playing the guitar helps me relax",
@@ -9634,6 +9914,21 @@
 "round": "r8b",
 "task": "answers added"
 },
+"dba0f7a93297b2c8": {
+"gate_key": "adv_agree | C1 | order | Put the words in order. | neither the teacher nor the students were happy with the results",
+"round": "c1-18",
+"task": "c1-18-042"
+},
+"dba6eefc88302db0": {
+"gate_key": "adv_will | C1 | order | Put the words in order. | you should have told me you were going to be late",
+"round": "c1-18",
+"task": "c1-18-021"
+},
+"dbc7f9e8a213afa3": {
+"gate_key": "adv_perfect | C1 | order | Put the words in order. | the house is thought to have been built in the 1890s",
+"round": "c1-19",
+"task": "c1-19-019"
+},
 "dbe380d14ea94f1e": {
 "gate_key": "cond_advanced | B1.2 | text | Start with *If only*: I don't have enough time. | ",
 "round": "r8",
@@ -9744,6 +10039,11 @@
 "round": "r11",
 "task": "r11-100"
 },
+"de6b8225b11316b5": {
+"gate_key": "adv_perfect | C1 | gap | I don't remember ___ ___ this film before, but I know how it ends. | ",
+"round": "c1-19",
+"task": "c1-19-017"
+},
 "de6e9ee006597c79": {
 "gate_key": "present_perfect_passive | B1.1 | gap | ___ the winner ___ announced yet? | ",
 "round": "r21-5",
@@ -9813,6 +10113,11 @@
 "gate_key": "cond_advanced | B2.2 | gap | ___ I known about the strike, I would have booked another flight. (have) | ",
 "round": "r20-6",
 "task": "r20-6-019"
+},
+"df8d78c1668fba72": {
+"gate_key": "adv_will | C1 | gap | Please allow extra time for your journey in case the roads ___ ___ busy. | ",
+"round": "c1-19",
+"task": "c1-19-021"
 },
 "dfdcde1e916ac7dc": {
 "gate_key": "narrative_b2 | B2.1 | gap | By the time the bell rang, Eva ___ all ten questions, so she left early. (answer) | ",
@@ -10149,6 +10454,11 @@
 "round": "r13",
 "task": "r13-152"
 },
+"e6278a9ca98bf4d7": {
+"gate_key": "adv_will | C1 | order | Put the words in order. | she would spend hours in the garden when she was a child",
+"round": "c1-18",
+"task": "c1-18-016"
+},
 "e62c8e78d3a00e10": {
 "gate_key": "verb_patterns | A2.2 | text | Make a yes/no question: Using this app saves you time. | ",
 "round": "r9",
@@ -10224,6 +10534,11 @@
 "round": "r1",
 "task": "r1-099"
 },
+"e76195a2953a5655": {
+"gate_key": "adv_past | C1 | order | Put the words in order. | we were wondering if you might be able to help us with the move",
+"round": "c1-19",
+"task": "c1-19-008"
+},
 "e775952af36425e1": {
 "gate_key": "more_modals | B1.2 | gap | You ___ me about the party. I would have loved to come! (should / tell) | ",
 "round": "r11",
@@ -10243,6 +10558,11 @@
 "gate_key": "rep_statements | B2.1 | write | Report a warning from your doctor: 'You must drink more water.' Start with My doctor said. | ",
 "round": "r20-2",
 "task": "r20-2-010"
+},
+"e7b7a4d8e95b34b4": {
+"gate_key": "adv_part | C1 | gap | All flights ___ ___ ___, passengers were offered rooms at a nearby hotel. | ",
+"round": "c1-19",
+"task": "c1-19-040"
 },
 "e7ce42bbccc31b08": {
 "gate_key": "present_perfect | B1.1 | mcq | I've worked here ___ five years. | for",
@@ -10574,6 +10894,11 @@
 "round": "r20-6",
 "task": "r20-6-035"
 },
+"ef1ec46f772677e8": {
+"gate_key": "adv_perfect | C1 | gap | She is said ___ ___ ___ a fortune on the house. | ",
+"round": "c1-18",
+"task": "c1-18-008"
+},
 "ef41762372162e06": {
 "gate_key": "cmp_pp_ps | B1.1 | gap | It ___ this week. Everything is very dry. (not / rain) | ",
 "round": "r21-6",
@@ -10834,6 +11159,11 @@
 "round": "r9",
 "task": "r9-064"
 },
+"f62802c337ccff09": {
+"gate_key": "adv_order | C1 | gap | Opposite our office ___ two new cafés, so lunch is never a problem. | ",
+"round": "c1-19",
+"task": "c1-19-045"
+},
 "f635bfe33714faf3": {
 "gate_key": "conj_linkers | B1.1 | mcq | Choose the correct option: The concert was cancelled ___ the singer was ill. | because",
 "round": "r1",
@@ -10894,6 +11224,11 @@
 "round": "r20b-1",
 "task": "r20b-1-020"
 },
+"f7ae9deb1775e9c6": {
+"gate_key": "adv_part | C1 | order | Put the words in order. | not wanting to wake the children we spoke in whispers",
+"round": "c1-18",
+"task": "c1-18-051"
+},
 "f7ea57b43b270f5b": {
 "gate_key": "rep_questions | B1.2 | gap | 'Have you finished?' He asked if I ___ . (finish) | ",
 "round": "r21-6",
@@ -10918,6 +11253,11 @@
 "gate_key": "adv_will | C1 | gap | I ___ ___ ___ to your party, but nobody told me about it. | ",
 "round": "c1-10",
 "task": "c1-10-034"
+},
+"f83cf4425aa68170": {
+"gate_key": "adv_perfect | C1 | gap | She told the boss he was wrong in front of everyone? I'd love ___ ___ ___ his face! | ",
+"round": "c1-19",
+"task": "c1-19-018"
 },
 "f860e9cb9d841b33": {
 "gate_key": "cond_second | B1.2 | mcq | Which sentence is NOT correct? | If she had more money, she will buy it.",
@@ -11078,6 +11418,11 @@
 "gate_key": "relative_clauses | A2.2 | order | Put the words in order. | i have a neighbour who plays the piano",
 "round": "r1",
 "task": "r1-031"
+},
+"fbba8789824c15e3": {
+"gate_key": "adv_subj | C1 | gap | It is vital that the patient ___ ___ left alone tonight. | ",
+"round": "c1-18",
+"task": "c1-18-031"
 },
 "fbd6f7197ba579df": {
 "gate_key": "relative_clauses | B1.2 | text | Join with *whose*: The man lives next door. His dog can open doors. | ",

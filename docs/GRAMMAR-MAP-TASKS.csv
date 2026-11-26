@@ -4295,3 +4295,71 @@ x_part_having,C1,adv_part,C1,use,text,read,,c1-part-1.csv:12,adv_part | C1 | tex
 x_unreal_past,C1,adv_past,C1,use,gap,read,,c1-past-1.csv:12,"adv_past | C1 | gap | I'm always losing receipts. I wish I ___ them all in one folder, but I never do. (keep) | "
 x_ppc_adv,C1,adv_perfect,C1,use,gap,read,,c1-perf-1.csv:15,"adv_perfect | C1 | gap | I ___ the bank all morning, but nobody's answering. (ring) | "
 x_part_ed,C1,adv_part,C1,use,gap,read,,c1-part-1.csv:13,"adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | "
+x_state_cont,C1,adv_present,C1,check,gap,read,,c1-drag-1.csv:2,adv_present | C1 | gap | You ___ ___ very difficult today. That's not like you. | 
+x_polite_cont,C1,adv_present,C1,check,order,read,,c1-drag-1.csv:3,adv_present | C1 | order | Put the words in order. | i'm wondering whether you'd mind swapping seats with me
+x_mental_cont,C1,adv_present,C1,check,gap,read,,c1-drag-1.csv:4,adv_present | C1 | gap | I ___ ___ more and more how much I miss the sea. | 
+x_i_hear,C1,adv_present,C1,check,gap,read,,c1-drag-1.csv:5,adv_present | C1 | gap | Your brother ___ ___ you've decided to sell the flat. Is that right? | 
+x_mental_cont,C1,adv_present,C1,check,order,read,,c1-drag-1.csv:6,adv_present | C1 | order | Put the words in order. | i'm already regretting my decision to move to the countryside
+x_performative,C1,adv_present,C1,check,gap,read,,c1-drag-1.csv:7,"adv_present | C1 | gap | OK, OK, I ___ ___: I forgot to book the restaurant. | "
+x_past_intend,C1,adv_past,C1,check,gap,read,,c1-drag-1.csv:8,"adv_past | C1 | gap | I ___ ___ to retire at sixty, but with prices the way they are, I'll have to keep working. | "
+x_past_polite,C1,adv_past,C1,check,order,read,,c1-drag-1.csv:9,adv_past | C1 | order | Put the words in order. | we were wondering if you might be able to help us with the move
+x_pastc_always,C1,adv_past,C1,check,gap,read,,c1-drag-1.csv:10,"adv_past | C1 | gap | When we were teenagers, my sister ___ ___ ___ my clothes without asking. | "
+x_pastp_deduce,C1,adv_past,C1,check,gap,read,,c1-drag-1.csv:11,"adv_past | C1 | gap | When we got back from holiday, the heating was on and there were dirty cups in the sink. Someone ___ ___ ___ in the flat. | "
+x_pastpc_choice,C1,adv_past,C1,check,gap,read,,c1-drag-1.csv:12,"adv_past | C1 | gap | By the time I found my phone, she ___ ___ ___ me four times. | "
+x_past_intend,C1,adv_past,C1,check,order,read,,c1-drag-1.csv:13,adv_past | C1 | order | Put the words in order. | i had expected the interview to be much harder than it was
+x_perf_aspect,C1,adv_perfect,C1,check,gap,read,,c1-drag-1.csv:14,adv_perfect | C1 | gap | She is said ___ ___ ___ a fortune on the house. | 
+x_first_time,C1,adv_perfect,C1,check,gap,read,,c1-drag-1.csv:15,"adv_perfect | C1 | gap | It was the first time she ___ ___ on the left, so she was very nervous. | "
+x_perf_cont_all,C1,adv_perfect,C1,check,gap,read,,c1-drag-1.csv:16,"adv_perfect | C1 | gap | By the end of this month, I ___ ___ ___ this car for exactly ten years. | "
+x_time_perf,C1,adv_perfect,C1,check,gap,read,,c1-drag-1.csv:17,"adv_perfect | C1 | gap | Once the paint ___ ___, you can put the furniture back. | "
+x_perf_aspect,C1,adv_perfect,C1,check,gap,read,,c1-drag-1.csv:18,"adv_perfect | C1 | gap | I don't remember ___ ___ this film before, but I know how it ends. | "
+x_perf_aspect,C1,adv_perfect,C1,check,gap,read,,c1-drag-1.csv:19,adv_perfect | C1 | gap | She told the boss he was wrong in front of everyone? I'd love ___ ___ ___ his face! | 
+x_perf_aspect,C1,adv_perfect,C1,check,order,read,,c1-drag-1.csv:20,adv_perfect | C1 | order | Put the words in order. | the house is thought to have been built in the 1890s
+x_if_will,C1,adv_will,C1,check,gap,read,,c1-drag-1.csv:21,"adv_will | C1 | gap | If you ___ ___ any problems with the app, just email us. | "
+x_will_habit,C1,adv_will,C1,check,order,read,,c1-drag-1.csv:22,adv_will | C1 | order | Put the words in order. | she would spend hours in the garden when she was a child
+x_will_crit,C1,adv_will,C1,check,gap,read,,c1-drag-1.csv:23,"adv_will | C1 | gap | If you ___ ___ to bed at two every night, of course you're tired! | "
+x_would_soft,C1,adv_will,C1,check,gap,read,,c1-drag-1.csv:24,adv_will | C1 | gap | I ___ ___ ___ the shops would be open on a Sunday. | 
+x_would_soft,C1,adv_will,C1,check,order,read,,c1-drag-1.csv:25,adv_will | C1 | order | Put the words in order. | i'm afraid i'd have to disagree with you on that
+x_should_purpose,C1,adv_will,C1,check,gap,read,,c1-drag-1.csv:26,adv_will | C1 | gap | Please allow extra time for your journey in case the roads ___ ___ busy. | 
+x_should_expect,C1,adv_will,C1,check,order,read,,c1-drag-1.csv:27,adv_will | C1 | order | Put the words in order. | you should have told me you were going to be late
+x_may_well,C1,adv_can,C1,check,gap,read,,c1-drag-1.csv:28,adv_can | C1 | gap | We ___ ___ well take a taxi: the last bus has gone. | 
+x_can_could,C1,adv_can,C1,check,order,read,,c1-drag-1.csv:29,adv_can | C1 | order | Put the words in order. | he can't have been at home last night
+x_can_typical,C1,adv_can,C1,check,gap,read,,c1-drag-1.csv:30,adv_can | C1 | gap | I've rung the bell twice and nobody's answering. They ___ ___ out in the garden. | 
+x_allowed_once,C1,adv_can,C1,check,gap,read,,c1-drag-1.csv:31,"adv_can | C1 | gap | My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane. | "
+x_may_but,C1,adv_can,C1,check,order,read,,c1-drag-1.csv:32,adv_can | C1 | order | Put the words in order. | she may be clever but she has no common sense
+x_may_well,C1,adv_can,C1,check,gap,read,,c1-drag-1.csv:33,"adv_can | C1 | gap | With this much snow, the match ___ ___ be cancelled, so check the website before you set off. | "
+x_may_might,C1,adv_can,C1,check,order,read,,c1-drag-1.csv:34,adv_can | C1 | order | Put the words in order. | they might have been delayed by the snow
+x_subj_present,C1,adv_subj,C1,check,gap,read,,c1-drag-1.csv:35,adv_subj | C1 | gap | The coach advised that the captain ___ ___ to journalists before the final. | 
+x_rather_perf,C1,adv_subj,C1,check,order,read,,c1-drag-1.csv:36,adv_subj | C1 | order | Put the words in order. | i'd rather we had booked somewhere with a pool
+x_subj_adj,C1,adv_subj,C1,check,gap,read,,c1-drag-1.csv:37,adv_subj | C1 | gap | It is vital that the patient ___ ___ left alone tonight. | 
+x_subj_were,C1,adv_subj,C1,check,gap,read,,c1-drag-1.csv:38,"adv_subj | C1 | gap | If the factory ___ ___ close, two hundred people would lose their jobs. | "
+x_subj_present,C1,adv_subj,C1,check,order,read,,c1-drag-1.csv:39,adv_subj | C1 | order | Put the words in order. | the committee insisted that the decision be announced to all staff
+x_subj_fixed,C1,adv_subj,C1,check,gap,read,,c1-drag-1.csv:40,"adv_subj | C1 | gap | My colleagues may think I'm rude for leaving at five, but so ___ ___. | "
+x_subj_should,C1,adv_subj,C1,check,order,read,,c1-drag-1.csv:41,adv_subj | C1 | order | Put the words in order. | the captain requested that passengers should remain in their seats
+x_agr_s_nouns,C1,adv_agree,C1,check,gap,read,,c1-drag-1.csv:42,adv_agree | C1 | gap | This pair of glasses ___ ___ me over two hundred euros. | 
+x_agr_clause,C1,adv_agree,C1,check,gap,read,,c1-drag-1.csv:43,adv_agree | C1 | gap | Our biggest expense ___ ___ ___ the rent and the heating bills. | 
+x_agr_rel,C1,adv_agree,C1,check,gap,read,,c1-drag-1.csv:44,adv_agree | C1 | gap | She is one of the few doctors who ___ ___ home visits. | 
+x_agr_there,C1,adv_agree,C1,check,gap,read,,c1-drag-1.csv:45,adv_agree | C1 | gap | There ___ ___ three cars parked outside your house all morning. | 
+x_agr_measure,C1,adv_agree,C1,check,gap,read,,c1-drag-1.csv:46,adv_agree | C1 | gap | Two thirds of the money ___ ___ spent on salaries. | 
+x_agr_complex,C1,adv_agree,C1,check,gap,read,,c1-drag-1.csv:47,adv_agree | C1 | gap | The cost of the repairs ___ ___ higher than we thought. | 
+x_agr_or_nor,C1,adv_agree,C1,check,order,read,,c1-drag-1.csv:48,adv_agree | C1 | order | Put the words in order. | neither the teacher nor the students were happy with the results
+x_prep_whom,C1,adv_prep,C1,check,gap,read,,c1-drag-1.csv:49,adv_prep | C1 | gap | The manager ___ ___ I worked in my first job taught me everything I know. | 
+x_prep_whom,C1,adv_prep,C1,check,order,read,,c1-drag-1.csv:50,adv_prep | C1 | order | Put the words in order. | it's not the kind of job you can walk away from
+x_of_which,C1,adv_prep,C1,check,gap,read,,c1-drag-1.csv:51,"adv_prep | C1 | gap | She has two brothers, both ___ ___ live abroad. | "
+x_prep_multi,C1,adv_prep,C1,check,gap,read,,c1-drag-1.csv:52,"adv_prep | C1 | gap | The course is open to everyone, ___ ___ age. | "
+x_prep_passive,C1,adv_prep,C1,check,order,read,,c1-drag-1.csv:53,adv_prep | C1 | order | Put the words in order. | the matter is being looked into by the police
+x_prep_noun,C1,adv_prep,C1,check,gap,read,,c1-drag-1.csv:54,"adv_prep | C1 | gap | Two goals down with five minutes left, there's little hope ___ ___ the match now. | "
+x_prep_inf,C1,adv_prep,C1,check,order,read,,c1-drag-1.csv:55,adv_prep | C1 | order | Put the words in order. | she's not an easy person to work with
+x_part_subject,C1,adv_part,C1,check,gap,read,,c1-drag-1.csv:56,"adv_part | C1 | gap | Unpacking my suitcase at the hotel, ___ ___ that my passport was missing. | "
+x_part_having,C1,adv_part,C1,check,order,read,,c1-drag-1.csv:57,adv_part | C1 | order | Put the words in order. | not wanting to wake the children we spoke in whispers
+x_part_own,C1,adv_part,C1,check,gap,read,,c1-drag-1.csv:58,"adv_part | C1 | gap | All flights ___ ___ ___, passengers were offered rooms at a nearby hotel. | "
+x_part_conj,C1,adv_part,C1,check,gap,read,,c1-drag-1.csv:59,"adv_part | C1 | gap | ___ ___, he refused to go to bed until the match was over. | "
+x_part_rel,C1,adv_part,C1,check,gap,read,,c1-drag-1.csv:60,adv_part | C1 | gap | The flats ___ ___ near the station will be ready next spring. | 
+x_part_result,C1,adv_part,C1,check,gap,read,,c1-drag-1.csv:61,"adv_part | C1 | gap | The storm brought down power lines, ___ thousands of homes ___ electricity. | "
+x_part_comment,C1,adv_part,C1,check,gap,read,,c1-drag-1.csv:62,"adv_part | C1 | gap | ___ ___, the job isn't mine until I've signed the contract. | "
+x_inv_neg,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:63,"adv_order | C1 | gap | Not only ___ ___ late, but he also forgot the tickets. | "
+x_inv_neg,C1,adv_order,C1,check,order,read,,c1-drag-1.csv:64,adv_order | C1 | order | Put the words in order. | no sooner had the film started than the power went off
+x_inv_cond,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:65,"adv_order | C1 | gap | ___ ___ to resign, who would replace her? | "
+x_front_as,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:66,"adv_order | C1 | gap | ___ ___ I like him, I can't agree with him on this. | "
+x_inv_place,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:67,"adv_order | C1 | gap | Opposite our office ___ two new cafés, so lunch is never a problem. | "
+x_inv_neg,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:68,adv_order | C1 | gap | Not once ___ ___ thank us for looking after his dog. | 
+x_cleft_adv,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:69,adv_order | C1 | gap | What she did ___ ___ out of the meeting without a word. | 

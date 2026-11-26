@@ -1,0 +1,95 @@
+[
+ {
+  "id": "c1-20-001",
+  "answer": [
+   "i'm already regretting my decision to move to the countryside"
+  ],
+  "other_correct": [
+   "i'm regretting my decision to move to the countryside already"
+  ],
+  "wrong_options_that_fit": [
+   "already i'm regretting my decision to move to the countryside (fronted 'already' is marginal/unnatural)",
+   "i'm regretting already my decision to move to the countryside (adverb between verb and object - wrong)"
+  ],
+  "instruction_problem": "none, but the end-position 'already' variant must be accepted",
+  "level_problem": "yes - present continuous with 'regret' + 'decision to' + 'already' is B1/B2, not C1",
+  "sense_problem": "none"
+ },
+ {
+  "id": "c1-20-002",
+  "answer": [
+   "the interview was much harder than i had expected it to be"
+  ],
+  "other_correct": [
+   "i had expected the interview to be much harder than it was (uses all 12 cards, grammatical, OPPOSITE meaning)",
+   "it was much harder than i had expected the interview to be (grammatical, cataphoric 'it', unnatural but not wrong)"
+  ],
+  "wrong_options_that_fit": [],
+  "instruction_problem": "serious - the card set has two fully grammatical solutions with opposite meanings ('the interview was much harder than I had expected it to be' vs 'I had expected the interview to be much harder than it was'); with no context the learner cannot know which one is meant. Add a context sentence, or change the cards (e.g. remove 'it' / 'was' ambiguity)",
+  "level_problem": "borderline - comparative + past perfect is B1/B2; ellipsis-free 'expected it to be' gives slight B2+ flavour, not clearly C1",
+  "sense_problem": "none in either reading"
+ },
+ {
+  "id": "c1-20-003",
+  "answer": [
+   "i'm afraid i'd have to disagree with you on that"
+  ],
+  "other_correct": [
+   "i'm afraid i'd have to disagree on that with you (less natural but acceptable)",
+   "i'd have to disagree with you on that i'm afraid (valid spoken order, needs an internal comma which the cards cannot show)"
+  ],
+  "wrong_options_that_fit": [
+   "i'm afraid that i'd have to disagree with you (leaves 'on' unused - not a full solution, but learners may try it)"
+  ],
+  "instruction_problem": "minor - tail 'i'm afraid' order should probably be accepted; 'i'd have to' (hypothetical) is slightly odd for a live disagreement where 'I'll have to' / 'I have to' is typical, though 'I'd have to disagree' is an established polite formula",
+  "level_problem": "borderline - polite disagreement formula is B2 functional language; acceptable as C1 softening/hedging",
+  "sense_problem": "none"
+ },
+ {
+  "id": "c1-20-004",
+  "answer": [
+   "was",
+   "allowed"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": [
+   "could go ('I could go onto the plane' is grammatical on its own; it is wrong here only because 'could' is not used for a single specific past achievement/permission after effort - the learner needs that rule to reject it)"
+  ],
+  "instruction_problem": "minor - 'could go' looks plausible; the context (after an hour of calls = one specific occasion) does rule it out, so the task works as a test of could vs was allowed, but an explanation for the 'could go' error should be provided",
+  "level_problem": "yes - 'was allowed' vs 'could' for specific past permission is B1/B2 grammar, not C1",
+  "sense_problem": "none"
+ },
+ {
+  "id": "c1-20-005",
+  "answer": [
+   "the committee insisted that the decision be announced to all staff"
+  ],
+  "other_correct": [
+   "all the committee insisted that the decision be announced to staff (grammatical; 'announced to staff' is normal British usage)",
+   "the staff insisted that the committee decision be announced to all (grammatical, different meaning)",
+   "the committee insisted that the staff decision be announced to all (grammatical, odd meaning)"
+  ],
+  "wrong_options_that_fit": [
+   "the committee insisted that the decision be announced to the staff all (wrong)",
+   "the committee insisted that all the decision be announced to staff (wrong)"
+  ],
+  "instruction_problem": "serious - several role swaps are grammatical: 'the staff insisted that the committee decision be announced to all' and 'all the committee insisted that the decision be announced to staff' use every card. Fix by adding context or by replacing 'all' with a determiner that cannot float (e.g. 'every member of staff' cards) and adding something that blocks 'committee decision'",
+  "level_problem": "none - mandative subjunctive after 'insist' is appropriate for C1",
+  "sense_problem": "none in the intended answer"
+ },
+ {
+  "id": "c1-20-006",
+  "answer": [
+   "it's not the kind of job you can walk away from"
+  ],
+  "other_correct": [
+   "it's the kind of job you can not walk away from ('can not' written as two words is a recognised variant of 'cannot'; grammatical with the same meaning)"
+  ],
+  "wrong_options_that_fit": [
+   "it's kind of not the job you can walk away from (colloquial 'kind of' hedge - unnatural, should be rejected)"
+  ],
+  "instruction_problem": "minor - 'it's the kind of job you can not walk away from' must either be accepted or blocked (e.g. use a 'cannot'/'can't' card instead of 'can' + 'not' only if the intended answer is changed)",
+  "level_problem": "borderline - zero relative + stranded phrasal-verb preposition is B2; acceptable for C1 but easy",
+  "sense_problem": "none"
+ }
+]

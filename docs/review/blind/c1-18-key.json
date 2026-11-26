@@ -1,0 +1,2763 @@
+{
+ "c1-18-001": {
+  "hash": "29286100183f5a61",
+  "gate_key": "adv_past | C1 | gap | I ___ ___ to retire at sixty, but then prices went up. | ",
+  "src": "zz-blind-c1-drag-1.csv:9",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had"
+    ],
+    [
+     "planned"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2177",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ ___ to retire at sixty, but then prices went up.",
+   "why": "A plan that did not happen: *had planned to* (past perfect with *plan, hope, intend*).",
+   "why_lv": "Plāns, kas neīstenojās: *had planned to* (Past Perfect ar *plan, hope, intend*).",
+   "answers": [
+    [
+     "had"
+    ],
+    [
+     "planned"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had",
+    "planned",
+    "have",
+    "was"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:9"
+  }
+ },
+ "c1-18-002": {
+  "hash": "aad37908a8931f20",
+  "gate_key": "adv_past | C1 | order | Put the words in order. | we were hoping you might help us with the move",
+  "src": "zz-blind-c1-drag-1.csv:10",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we were hoping you might help us with the move",
+   "also": []
+  },
+  "item": {
+   "id": "c-2178",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*We were hoping* (past continuous) makes a request softer and more polite.",
+   "why_lv": "*We were hoping* (Past Continuous) padara lūgumu maigāku un pieklājīgāku.",
+   "sentence": "we were hoping you might help us with the move",
+   "answers": [
+    [
+     "we were hoping you might help us with the move"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:10"
+  }
+ },
+ "c1-18-003": {
+  "hash": "279a01acb5d1e152",
+  "gate_key": "adv_past | C1 | gap | When we were teenagers, my sister ___ ___ borrowing my clothes without asking. | ",
+  "src": "zz-blind-c1-drag-1.csv:11",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "always"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2179",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "When we were teenagers, my sister ___ ___ borrowing my clothes without asking.",
+   "why": "*was always* + *-ing*: an annoying habit in the past.",
+   "why_lv": "*was always + -ing*: kaitinošs ieradums pagātnē.",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "always"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "always",
+    "is",
+    "has"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:11"
+  }
+ },
+ "c1-18-004": {
+  "hash": "cb9b20b39075d998",
+  "gate_key": "adv_past | C1 | order | Put the words in order. | during the strike we were walking to work every day",
+  "src": "zz-blind-c1-drag-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "during the strike we were walking to work every day",
+   "also": [
+    "we were walking to work every day during the strike",
+    "every day during the strike we were walking to work"
+   ]
+  },
+  "item": {
+   "id": "c-2180",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "The past continuous for an action repeated in a limited time: *during the strike we were walking*.",
+   "why_lv": "Past Continuous darbībai, kas atkārtojās ierobežotā laikā: *during the strike we were walking*.",
+   "sentence": "during the strike we were walking to work every day",
+   "answers": [
+    [
+     "during the strike we were walking to work every day",
+     "we were walking to work every day during the strike",
+     "every day during the strike we were walking to work"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:12"
+  }
+ },
+ "c1-18-005": {
+  "hash": "85923baea97ac843",
+  "gate_key": "adv_past | C1 | gap | Her eyes were red and her voice was shaky. She ___ ___ ___. | ",
+  "src": "zz-blind-c1-drag-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had"
+    ],
+    [
+     "been"
+    ],
+    [
+     "crying"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2181",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Her eyes were red and her voice was shaky. She ___ ___ ___.",
+   "why": "A conclusion about what had been going on before: *had been crying*.",
+   "why_lv": "Secinājums par to, kas bija noticis pirms tam: *had been crying*.",
+   "answers": [
+    [
+     "had"
+    ],
+    [
+     "been"
+    ],
+    [
+     "crying"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "had",
+    "been",
+    "crying",
+    "was",
+    "cried"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:13"
+  }
+ },
+ "c1-18-006": {
+  "hash": "b7c3e821ae56a0be",
+  "gate_key": "adv_past | C1 | gap | I ___ ___ the report when the power went off, so I lost an hour's work. | ",
+  "src": "zz-blind-c1-drag-1.csv:14",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "writing"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2182",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ ___ the report when the power went off, so I lost an hour's work.",
+   "why": "An activity in progress when something interrupted it: *was writing* (the report was not finished).",
+   "why_lv": "Darbība, kas notika, kad to kaut kas pārtrauca: *was writing* (*atskaite nebija* pabeigta).",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "writing"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "writing",
+    "wrote",
+    "had"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:14"
+  }
+ },
+ "c1-18-007": {
+  "hash": "9b8e249cf5cd9079",
+  "gate_key": "adv_past | C1 | order | Put the words in order. | I was going to call you but I fell asleep",
+  "src": "zz-blind-c1-drag-1.csv:15",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "I was going to call you but I fell asleep",
+   "also": []
+  },
+  "item": {
+   "id": "c-2183",
+   "skill": "adv_past",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*was going to* = a plan in the past that did not happen.",
+   "why_lv": "*was going to* = plāns pagātnē, kas neīstenojās.",
+   "sentence": "I was going to call you but I fell asleep",
+   "answers": [
+    [
+     "I was going to call you but I fell asleep"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:15"
+  }
+ },
+ "c1-18-008": {
+  "hash": "ef1ec46f772677e8",
+  "gate_key": "adv_perfect | C1 | gap | She is said ___ ___ ___ a fortune on the house. | ",
+  "src": "zz-blind-c1-drag-1.csv:16",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ],
+    [
+     "have"
+    ],
+    [
+     "spent"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2184",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "She is said ___ ___ ___ a fortune on the house.",
+   "why": "*is said* + perfect infinitive for an earlier action: *is said to have spent*.",
+   "why_lv": "*is said* + Perfect *nenoteiksme* par agrāku darbību: *is said to have spent*.",
+   "answers": [
+    [
+     "to"
+    ],
+    [
+     "have"
+    ],
+    [
+     "spent"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "to",
+    "have",
+    "spent",
+    "spend",
+    "having"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:16"
+  }
+ },
+ "c1-18-009": {
+  "hash": "417024d52a906b3d",
+  "gate_key": "adv_perfect | C1 | order | Put the words in order. | this is the third time the lift has broken down this month",
+  "src": "zz-blind-c1-drag-1.csv:17",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "this is the third time the lift has broken down this month",
+   "also": []
+  },
+  "item": {
+   "id": "c-2185",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*This is the third time* + present perfect: *has broken down*.",
+   "why_lv": "*This is the third time* + Present Perfect: *has broken down*.",
+   "sentence": "this is the third time the lift has broken down this month",
+   "answers": [
+    [
+     "this is the third time the lift has broken down this month"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:17"
+  }
+ },
+ "c1-18-010": {
+  "hash": "538cc1cc143b21f8",
+  "gate_key": "adv_perfect | C1 | gap | By June, we ___ ___ ___ ___ here for twenty years. | ",
+  "src": "zz-blind-c1-drag-1.csv:18",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "will"
+    ],
+    [
+     "have"
+    ],
+    [
+     "been"
+    ],
+    [
+     "living"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2186",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "By June, we ___ ___ ___ ___ here for twenty years.",
+   "why": "An activity that will have gone on until a future moment: *will have been living*.",
+   "why_lv": "Darbība, kas būs *ilgusi* līdz brīdim nākotnē: *will have been living*.",
+   "answers": [
+    [
+     "will"
+    ],
+    [
+     "have"
+    ],
+    [
+     "been"
+    ],
+    [
+     "living"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "will",
+    "have",
+    "been",
+    "living",
+    "lived",
+    "are"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:18"
+  }
+ },
+ "c1-18-011": {
+  "hash": "47e5b06309e45915",
+  "gate_key": "adv_perfect | C1 | gap | Once you ___ ___ the form, you can't change your answers. | ",
+  "src": "zz-blind-c1-drag-1.csv:19",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "submitted"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2187",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Once you ___ ___ the form, you can't change your answers.",
+   "why": "*Once* about the future: present perfect, *once you have submitted* (not *will*).",
+   "why_lv": "*Once* par nākotni: Present Perfect, *once you have submitted* (nevis *will*).",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "submitted"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "submitted",
+    "had",
+    "will"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:19"
+  }
+ },
+ "c1-18-012": {
+  "hash": "4fab7943d0def42b",
+  "gate_key": "adv_perfect | C1 | order | Put the words in order. | I've been trying to reach you all afternoon",
+  "src": "zz-blind-c1-drag-1.csv:20",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "I've been trying to reach you all afternoon",
+   "also": [
+    "all afternoon I've been trying to reach you"
+   ]
+  },
+  "item": {
+   "id": "c-2188",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "An activity repeated up to now (*all afternoon*): present perfect continuous, *I've been trying*.",
+   "why_lv": "Darbība, kas atkārtojusies līdz šim brīdim (*all afternoon*): Present Perfect Continuous, *I've been trying.*",
+   "sentence": "I've been trying to reach you all afternoon",
+   "answers": [
+    [
+     "I've been trying to reach you all afternoon",
+     "all afternoon I've been trying to reach you"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:20"
+  }
+ },
+ "c1-18-013": {
+  "hash": "776243f4d092ec3b",
+  "gate_key": "adv_perfect | C1 | gap | It's only Tuesday, and I ___ ___ three emails from the landlord this week. | ",
+  "src": "zz-blind-c1-drag-1.csv:21",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "received"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2189",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "It's only Tuesday, and I ___ ___ three emails from the landlord this week.",
+   "why": "*this week* is still going on: present perfect, *I have received*.",
+   "why_lv": "*this week* vēl turpinās: Present Perfect, *I have received.*",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "received"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "received",
+    "was",
+    "receive"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:21"
+  }
+ },
+ "c1-18-014": {
+  "hash": "637e681d85fb39fb",
+  "gate_key": "adv_perfect | C1 | order | Put the words in order. | the house is thought to have been built in the 1890s",
+  "src": "zz-blind-c1-drag-1.csv:22",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the house is thought to have been built in the 1890s",
+   "also": []
+  },
+  "item": {
+   "id": "c-2190",
+   "skill": "adv_perfect",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*is thought* + perfect passive infinitive for an earlier action: *to have been built*.",
+   "why_lv": "*is thought* + Perfect ciešamās kārtas *nenoteiksme* par agrāku darbību: *to have been built*.",
+   "sentence": "the house is thought to have been built in the 1890s",
+   "answers": [
+    [
+     "the house is thought to have been built in the 1890s"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:22"
+  }
+ },
+ "c1-18-015": {
+  "hash": "0440fab6576879bd",
+  "gate_key": "adv_will | C1 | gap | If you ___ ___ any problems with the app, just email us. | ",
+  "src": "zz-blind-c1-drag-1.csv:23",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should"
+    ],
+    [
+     "have"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2191",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "If you ___ ___ any problems with the app, just email us.",
+   "why": "*If you should* + verb: a polite condition that is not very likely.",
+   "why_lv": "*If you should* + darbības vārds: pieklājīgs nosacījums, kas nav īpaši *ticams*.",
+   "answers": [
+    [
+     "should"
+    ],
+    [
+     "have"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "should",
+    "have",
+    "had",
+    "will",
+    "would"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:23"
+  }
+ },
+ "c1-18-016": {
+  "hash": "e6278a9ca98bf4d7",
+  "gate_key": "adv_will | C1 | order | Put the words in order. | she would spend hours in the garden when she was a child",
+  "src": "zz-blind-c1-drag-1.csv:24",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "she would spend hours in the garden when she was a child",
+   "also": [
+    "when she was a child she would spend hours in the garden"
+   ]
+  },
+  "item": {
+   "id": "c-2192",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*would* + verb for a repeated action in the past.",
+   "why_lv": "*would* + darbības vārds atkārtotai darbībai pagātnē.",
+   "sentence": "she would spend hours in the garden when she was a child",
+   "answers": [
+    [
+     "she would spend hours in the garden when she was a child",
+     "when she was a child she would spend hours in the garden"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:24"
+  }
+ },
+ "c1-18-017": {
+  "hash": "517a84a65ead30ca",
+  "gate_key": "adv_will | C1 | gap | If you ___ ___ to bed at two every night, of course you're tired! | ",
+  "src": "zz-blind-c1-drag-1.csv:25",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "will"
+    ],
+    [
+     "go"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2193",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "If you ___ ___ to bed at two every night, of course you're tired!",
+   "why": "*If you will* + verb: criticism of a habit the person keeps.",
+   "why_lv": "*If you will* + darbības vārds: kritika par ieradumu, ko cilvēks nemaina.",
+   "answers": [
+    [
+     "will"
+    ],
+    [
+     "go"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "will",
+    "go",
+    "would",
+    "went"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:25"
+  }
+ },
+ "c1-18-018": {
+  "hash": "ce88bdee4c4c7962",
+  "gate_key": "adv_will | C1 | gap | I ___ ___ ___ the shops would be open on a Sunday. | ",
+  "src": "zz-blind-c1-drag-1.csv:26",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "would"
+    ],
+    [
+     "have"
+    ],
+    [
+     "thought"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2194",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "I ___ ___ ___ the shops would be open on a Sunday.",
+   "why": "*I would have thought* gives an opinion politely, with some distance.",
+   "why_lv": "*I would have thought* izsaka viedokli pieklājīgi, ar *distanci*.",
+   "answers": [
+    [
+     "would"
+    ],
+    [
+     "have"
+    ],
+    [
+     "thought"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "would",
+    "have",
+    "thought",
+    "will",
+    "think"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:26"
+  }
+ },
+ "c1-18-019": {
+  "hash": "2e130aa27bf7d558",
+  "gate_key": "adv_will | C1 | order | Put the words in order. | the car wouldn't start this morning so I took the bus",
+  "src": "zz-blind-c1-drag-1.csv:27",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the car wouldn't start this morning so I took the bus",
+   "also": [
+    "this morning the car wouldn't start so I took the bus"
+   ]
+  },
+  "item": {
+   "id": "c-2195",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*wouldn't* for a refusal on one occasion, also about things: *the car wouldn't start*.",
+   "why_lv": "*wouldn't* atteikumam vienā reizē, arī par lietām: *the car wouldn't start*.",
+   "sentence": "the car wouldn't start this morning so I took the bus",
+   "answers": [
+    [
+     "the car wouldn't start this morning so I took the bus",
+     "this morning the car wouldn't start so I took the bus"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:27"
+  }
+ },
+ "c1-18-020": {
+  "hash": "584baa55c6ff1ecc",
+  "gate_key": "adv_will | C1 | gap | Leave a little earlier in case the roads ___ ___ busy. | ",
+  "src": "zz-blind-c1-drag-1.csv:28",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "should"
+    ],
+    [
+     "be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2196",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Leave a little earlier in case the roads ___ ___ busy.",
+   "why": "*in case* + *should*: a formal way to talk about a possible situation.",
+   "why_lv": "*in case + should*: oficiāls *veids*, kā runāt par iespējamu situāciju.",
+   "answers": [
+    [
+     "should"
+    ],
+    [
+     "be"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "should",
+    "be",
+    "would",
+    "will"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:28"
+  }
+ },
+ "c1-18-021": {
+  "hash": "dba6eefc88302db0",
+  "gate_key": "adv_will | C1 | order | Put the words in order. | you should have told me you were going to be late",
+  "src": "zz-blind-c1-drag-1.csv:29",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "you should have told me you were going to be late",
+   "also": []
+  },
+  "item": {
+   "id": "c-2197",
+   "skill": "adv_will",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*should have* + 3rd form: criticism of something that did not happen.",
+   "why_lv": "*should have* + 3. forma: pārmetums par to, kas netika izdarīts.",
+   "sentence": "you should have told me you were going to be late",
+   "answers": [
+    [
+     "you should have told me you were going to be late"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:29"
+  }
+ },
+ "c1-18-022": {
+  "hash": "056ddcd113202578",
+  "gate_key": "adv_can | C1 | gap | We ___ ___ well take a taxi: the last bus has gone. | ",
+  "src": "zz-blind-c1-drag-1.csv:30",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "might"
+    ],
+    [
+     "as"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2198",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "We ___ ___ well take a taxi: the last bus has gone.",
+   "why": "*might as well* = the sensible thing to do, as there is nothing better.",
+   "why_lv": "*might as well* = saprātīga izvēle, jo nekā labāka nav.",
+   "answers": [
+    [
+     "might"
+    ],
+    [
+     "as"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "might",
+    "as",
+    "good",
+    "so"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:30"
+  }
+ },
+ "c1-18-023": {
+  "hash": "d97815a84b18b62a",
+  "gate_key": "adv_can | C1 | order | Put the words in order. | he can't have been at home last night",
+  "src": "zz-blind-c1-drag-1.csv:31",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "he can't have been at home last night",
+   "also": [
+    "last night he can't have been at home"
+   ]
+  },
+  "item": {
+   "id": "c-2199",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*can't have* + 3rd form: we are sure something did not happen.",
+   "why_lv": "*can't have* + 3. forma: esam pārliecināti, ka tas nenotika.",
+   "sentence": "he can't have been at home last night",
+   "answers": [
+    [
+     "he can't have been at home last night",
+     "last night he can't have been at home"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:31"
+  }
+ },
+ "c1-18-024": {
+  "hash": "a2f02f449d1b09c7",
+  "gate_key": "adv_can | C1 | gap | The roads around here ___ ___ really dangerous in winter. | ",
+  "src": "zz-blind-c1-drag-1.csv:32",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "can"
+    ],
+    [
+     "be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2200",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The roads around here ___ ___ really dangerous in winter.",
+   "why": "*can be* for something that is sometimes true.",
+   "why_lv": "*can be* tam, kas dažreiz ir patiesība.",
+   "answers": [
+    [
+     "can"
+    ],
+    [
+     "be"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "can",
+    "be",
+    "are",
+    "being"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:32"
+  }
+ },
+ "c1-18-025": {
+  "hash": "ad6d3780a64d1748",
+  "gate_key": "adv_can | C1 | gap | The museum was closed, but we ___ ___ to walk round the garden. | ",
+  "src": "zz-blind-c1-drag-1.csv:33",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "were"
+    ],
+    [
+     "allowed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2201",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The museum was closed, but we ___ ___ to walk round the garden.",
+   "why": "Permission on one occasion in the past: *were allowed to* (not *could*).",
+   "why_lv": "Atļauja vienā reizē pagātnē: *were allowed to* (nevis *could*).",
+   "answers": [
+    [
+     "were"
+    ],
+    [
+     "allowed"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "were",
+    "allowed",
+    "could",
+    "are"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:33"
+  }
+ },
+ "c1-18-026": {
+  "hash": "1cc7bd2d790585ae",
+  "gate_key": "adv_can | C1 | order | Put the words in order. | she may be clever but she has no common sense",
+  "src": "zz-blind-c1-drag-1.csv:34",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "she may be clever but she has no common sense",
+   "also": []
+  },
+  "item": {
+   "id": "c-2202",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*may … but*: we admit one point before we say something against it.",
+   "why_lv": "*may* … *but*: atzīstam vienu lietu, pirms sakām kaut ko pretī.",
+   "sentence": "she may be clever but she has no common sense",
+   "answers": [
+    [
+     "she may be clever but she has no common sense"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:34"
+  }
+ },
+ "c1-18-027": {
+  "hash": "640d24886e5ef773",
+  "gate_key": "adv_can | C1 | gap | From our seats, we ___ ___ the actors' faces clearly. | ",
+  "src": "zz-blind-c1-drag-1.csv:35",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "could"
+    ],
+    [
+     "see"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2203",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "From our seats, we ___ ___ the actors' faces clearly.",
+   "why": "*could* with *see, hear, smell* for one moment in the past.",
+   "why_lv": "*could* ar *see, hear, smell* vienam brīdim pagātnē.",
+   "answers": [
+    [
+     "could"
+    ],
+    [
+     "see"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "could",
+    "see",
+    "managed",
+    "saw"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:35"
+  }
+ },
+ "c1-18-028": {
+  "hash": "c9cbb565b982cf38",
+  "gate_key": "adv_can | C1 | order | Put the words in order. | they might have been delayed by the snow",
+  "src": "zz-blind-c1-drag-1.csv:36",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "they might have been delayed by the snow",
+   "also": []
+  },
+  "item": {
+   "id": "c-2204",
+   "skill": "adv_can",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*might have been* + 3rd form: a possible explanation of something in the past.",
+   "why_lv": "*might have been* + 3. forma: iespējams *izskaidrojums* tam, kas notika pagātnē.",
+   "sentence": "they might have been delayed by the snow",
+   "answers": [
+    [
+     "they might have been delayed by the snow"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:36"
+  }
+ },
+ "c1-18-029": {
+  "hash": "2494f9e9804ac46b",
+  "gate_key": "adv_subj | C1 | gap | The doctor recommended that he ___ ___ coffee for a month. | ",
+  "src": "zz-blind-c1-drag-1.csv:37",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not"
+    ],
+    [
+     "drink"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2205",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The doctor recommended that he ___ ___ coffee for a month.",
+   "why": "*recommend that* + subject + base form; the negative is *not* + base form: *that he not drink*.",
+   "why_lv": "*recommend that* + teikuma priekšmets + pamatforma; noliegumā *not* + pamatforma: *that he not drink*.",
+   "answers": [
+    [
+     "not"
+    ],
+    [
+     "drink"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "not",
+    "drink",
+    "drinks",
+    "no"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:37"
+  }
+ },
+ "c1-18-030": {
+  "hash": "b6faef49bbeebc1d",
+  "gate_key": "adv_subj | C1 | order | Put the words in order. | I'd rather you had asked me before taking my car",
+  "src": "zz-blind-c1-drag-1.csv:38",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "I'd rather you had asked me before taking my car",
+   "also": []
+  },
+  "item": {
+   "id": "c-2206",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*I'd rather* + another person + past perfect for the past: *I'd rather you had asked*.",
+   "why_lv": "*I'd rather* + cits cilvēks + Past Perfect par pagātni: *I'd rather you had asked.*",
+   "sentence": "I'd rather you had asked me before taking my car",
+   "answers": [
+    [
+     "I'd rather you had asked me before taking my car"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:38"
+  }
+ },
+ "c1-18-031": {
+  "hash": "fbba8789824c15e3",
+  "gate_key": "adv_subj | C1 | gap | It is vital that the patient ___ ___ left alone tonight. | ",
+  "src": "zz-blind-c1-drag-1.csv:39",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "not"
+    ],
+    [
+     "be"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2207",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "It is vital that the patient ___ ___ left alone tonight.",
+   "why": "*It is vital that* + subject + base form; the negative is *not be*.",
+   "why_lv": "*It is vital that* + teikuma priekšmets + pamatforma; noliegumā *not be*.",
+   "answers": [
+    [
+     "not"
+    ],
+    [
+     "be"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "not",
+    "be",
+    "being",
+    "been"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:39"
+  }
+ },
+ "c1-18-032": {
+  "hash": "7e826706db8ccc39",
+  "gate_key": "adv_subj | C1 | gap | If the factory ___ ___ close, two hundred people would lose their jobs. | ",
+  "src": "zz-blind-c1-drag-1.csv:40",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "were"
+    ],
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2208",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "If the factory ___ ___ close, two hundred people would lose their jobs.",
+   "why": "*If* … *were to* + verb: an imagined future situation.",
+   "why_lv": "*If* … *were to* + darbības vārds: iedomāta situācija nākotnē.",
+   "answers": [
+    [
+     "were"
+    ],
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "were",
+    "to",
+    "is",
+    "has"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:40"
+  }
+ },
+ "c1-18-033": {
+  "hash": "69b7795e2205ab91",
+  "gate_key": "adv_subj | C1 | order | Put the words in order. | the committee insisted that the decision be made public",
+  "src": "zz-blind-c1-drag-1.csv:41",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the committee insisted that the decision be made public",
+   "also": []
+  },
+  "item": {
+   "id": "c-2209",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*insist that* + subject + base form: *the decision be made public*.",
+   "why_lv": "*insist that* + teikuma priekšmets + pamatforma: *the decision be made public*.",
+   "sentence": "the committee insisted that the decision be made public",
+   "answers": [
+    [
+     "the committee insisted that the decision be made public"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:41"
+  }
+ },
+ "c1-18-034": {
+  "hash": "168d5c4228b5703d",
+  "gate_key": "adv_subj | C1 | gap | If that's your final decision, so ___ ___. | ",
+  "src": "zz-blind-c1-drag-1.csv:42",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "be"
+    ],
+    [
+     "it"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2210",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "If that's your final decision, so ___ ___.",
+   "why": "A fixed phrase with the subjunctive: *so be it* (= I accept it).",
+   "why_lv": "Nemainīgs izteiciens ar subjunktīvu: *so be it* (= es to pieņemu).",
+   "answers": [
+    [
+     "be"
+    ],
+    [
+     "it"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "be",
+    "it",
+    "is",
+    "was"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:42"
+  }
+ },
+ "c1-18-035": {
+  "hash": "114c469553b50a21",
+  "gate_key": "adv_subj | C1 | order | Put the words in order. | the landlord requested that all tenants should leave their keys at reception",
+  "src": "zz-blind-c1-drag-1.csv:43",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the landlord requested that all tenants should leave their keys at reception",
+   "also": []
+  },
+  "item": {
+   "id": "c-2211",
+   "skill": "adv_subj",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*request that* + *should* + verb: the British way, less formal than the base form alone.",
+   "why_lv": "*request that + should* + darbības vārds: *britu variants*, mazāk oficiāls nekā tikai pamatforma.",
+   "sentence": "the landlord requested that all tenants should leave their keys at reception",
+   "answers": [
+    [
+     "the landlord requested that all tenants should leave their keys at reception"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:43"
+  }
+ },
+ "c1-18-036": {
+  "hash": "176c90399695971e",
+  "gate_key": "adv_agree | C1 | gap | The news ___ ___ better than we expected. | ",
+  "src": "zz-blind-c1-drag-1.csv:44",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "getting"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2212",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The news ___ ___ better than we expected.",
+   "why": "*news* looks plural but takes a singular verb: *The news is getting better*.",
+   "why_lv": "*news* izskatās pēc daudzskaitļa, bet darbības vārds ir vienskaitlī: *The news is getting better.*",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "getting"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is",
+    "getting",
+    "are",
+    "gets"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:44"
+  }
+ },
+ "c1-18-037": {
+  "hash": "50b430b1d1dc80e0",
+  "gate_key": "adv_agree | C1 | order | Put the words in order. | the majority of the residents are against the new car park",
+  "src": "zz-blind-c1-drag-1.csv:45",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the majority of the residents are against the new car park",
+   "also": []
+  },
+  "item": {
+   "id": "c-2213",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*the majority of* + plural noun: a plural verb, *are*.",
+   "why_lv": "*the majority of* + daudzskaitļa lietvārds: darbības vārds daudzskaitlī, *are*.",
+   "sentence": "the majority of the residents are against the new car park",
+   "answers": [
+    [
+     "the majority of the residents are against the new car park"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:45"
+  }
+ },
+ "c1-18-038": {
+  "hash": "cc8404bef19f66a5",
+  "gate_key": "adv_agree | C1 | gap | She is one of the few doctors who ___ ___ home visits. | ",
+  "src": "zz-blind-c1-drag-1.csv:46",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "still"
+    ],
+    [
+     "make"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2214",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "She is one of the few doctors who ___ ___ home visits.",
+   "why": "*who* refers to *doctors* (plural), so the verb is plural: *who still make*.",
+   "why_lv": "*who attiecas* uz *doctors* (daudzskaitlis), tāpēc darbības vārds ir daudzskaitlī: *who still make*.",
+   "answers": [
+    [
+     "still"
+    ],
+    [
+     "make"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "still",
+    "make",
+    "makes"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:46"
+  }
+ },
+ "c1-18-039": {
+  "hash": "5b03e4e55166c728",
+  "gate_key": "adv_agree | C1 | gap | There ___ ___ three cars parked outside your house all morning. | ",
+  "src": "zz-blind-c1-drag-1.csv:47",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "have"
+    ],
+    [
+     "been"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2215",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "There ___ ___ three cars parked outside your house all morning.",
+   "why": "After *there* the verb agrees with the noun that follows: *three cars*, so *have been*.",
+   "why_lv": "Aiz *there* darbības vārds saskan ar lietvārdu, kas seko: *three cars*, tāpēc *have been*.",
+   "answers": [
+    [
+     "have"
+    ],
+    [
+     "been"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "have",
+    "been",
+    "has",
+    "was"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:47"
+  }
+ },
+ "c1-18-040": {
+  "hash": "84d658873725ff76",
+  "gate_key": "adv_agree | C1 | order | Put the words in order. | two thirds of the money has already been spent",
+  "src": "zz-blind-c1-drag-1.csv:48",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "two thirds of the money has already been spent",
+   "also": []
+  },
+  "item": {
+   "id": "c-2216",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A fraction + *of* + uncountable noun: a singular verb, *has been spent*.",
+   "why_lv": "Daļa + *of* + neskaitāms lietvārds: darbības vārds vienskaitlī, *has been spent*.",
+   "sentence": "two thirds of the money has already been spent",
+   "answers": [
+    [
+     "two thirds of the money has already been spent"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:48"
+  }
+ },
+ "c1-18-041": {
+  "hash": "9072715dac156d85",
+  "gate_key": "adv_agree | C1 | gap | The cost of the repairs ___ ___ higher than we thought. | ",
+  "src": "zz-blind-c1-drag-1.csv:49",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "much"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2217",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The cost of the repairs ___ ___ higher than we thought.",
+   "why": "The main noun is *cost* (singular), not *repairs*: *The cost … was*.",
+   "why_lv": "*Galvenais* lietvārds ir *cost* (vienskaitlis), nevis *repairs*: *The cost* … *was*.",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "much"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "much",
+    "were",
+    "more"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:49"
+  }
+ },
+ "c1-18-042": {
+  "hash": "dba0f7a93297b2c8",
+  "gate_key": "adv_agree | C1 | order | Put the words in order. | neither the teacher nor the students were happy with the results",
+  "src": "zz-blind-c1-drag-1.csv:50",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "neither the teacher nor the students were happy with the results",
+   "also": []
+  },
+  "item": {
+   "id": "c-2218",
+   "skill": "adv_agree",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "With *neither … nor* the verb agrees with the nearer noun: *the students were*.",
+   "why_lv": "Ar *neither* … *nor* darbības vārds saskan ar tuvāko lietvārdu: *the students were*.",
+   "sentence": "neither the teacher nor the students were happy with the results",
+   "answers": [
+    [
+     "neither the teacher nor the students were happy with the results"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:50"
+  }
+ },
+ "c1-18-043": {
+  "hash": "48035909de7eb628",
+  "gate_key": "adv_prep | C1 | gap | This is the hotel ___ ___ we stayed on our honeymoon. | ",
+  "src": "zz-blind-c1-drag-1.csv:51",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "in"
+    ],
+    [
+     "which"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2219",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "This is the hotel ___ ___ we stayed on our honeymoon.",
+   "why": "In formal English the preposition goes before *which*: *the hotel in which we stayed*.",
+   "why_lv": "Oficiālā valodā prievārds stāv pirms *which*: *the hotel in which we stayed*.",
+   "answers": [
+    [
+     "in"
+    ],
+    [
+     "which"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "in",
+    "which",
+    "that",
+    "where",
+    "who"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:51"
+  }
+ },
+ "c1-18-044": {
+  "hash": "71a5e517b009e825",
+  "gate_key": "adv_prep | C1 | order | Put the words in order. | this is the problem we need to deal with",
+  "src": "zz-blind-c1-drag-1.csv:52",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "this is the problem we need to deal with",
+   "also": []
+  },
+  "item": {
+   "id": "c-2220",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In everyday English the preposition goes at the end: *the problem we need to deal with*.",
+   "why_lv": "Ikdienas valodā prievārds stāv beigās: *the problem we need to deal with*.",
+   "sentence": "this is the problem we need to deal with",
+   "answers": [
+    [
+     "this is the problem we need to deal with"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:52"
+  }
+ },
+ "c1-18-045": {
+  "hash": "8b863c913446791d",
+  "gate_key": "adv_prep | C1 | gap | She has two brothers, both ___ ___ live abroad. | ",
+  "src": "zz-blind-c1-drag-1.csv:53",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "of"
+    ],
+    [
+     "whom"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2221",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "She has two brothers, both ___ ___ live abroad.",
+   "why": "*both of whom* joins the two parts: after *of* we use *whom* for people.",
+   "why_lv": "*both of whom* savieno *abas* daļas: aiz *of* par cilvēkiem lieto *whom*.",
+   "answers": [
+    [
+     "of"
+    ],
+    [
+     "whom"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "of",
+    "whom",
+    "who",
+    "them"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:53"
+  }
+ },
+ "c1-18-046": {
+  "hash": "6d03a72cf04e2b84",
+  "gate_key": "adv_prep | C1 | gap | The course is open to everyone, ___ ___ age. | ",
+  "src": "zz-blind-c1-drag-1.csv:54",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "regardless"
+    ],
+    [
+     "of"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2222",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The course is open to everyone, ___ ___ age.",
+   "why": "*regardless of* + noun = it does not matter what the age is.",
+   "why_lv": "*regardless of* + lietvārds = nav svarīgi, kāds ir *vecums*.",
+   "answers": [
+    [
+     "regardless"
+    ],
+    [
+     "of"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "regardless",
+    "of",
+    "despite",
+    "from"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:54"
+  }
+ },
+ "c1-18-047": {
+  "hash": "e20d7b6346e51831",
+  "gate_key": "adv_prep | C1 | order | Put the words in order. | the matter is being looked into by the police",
+  "src": "zz-blind-c1-drag-1.csv:55",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the matter is being looked into by the police",
+   "also": []
+  },
+  "item": {
+   "id": "c-2223",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In the passive the preposition stays with its verb: *is being looked into*.",
+   "why_lv": "Ciešamajā kārtā prievārds paliek pie *sava* darbības vārda: *is being looked into*.",
+   "sentence": "the matter is being looked into by the police",
+   "answers": [
+    [
+     "the matter is being looked into by the police"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:55"
+  }
+ },
+ "c1-18-048": {
+  "hash": "ed4dfdbefc25e559",
+  "gate_key": "adv_prep | C1 | gap | He insisted ___ ___ for the whole meal. | ",
+  "src": "zz-blind-c1-drag-1.csv:56",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "on"
+    ],
+    [
+     "paying"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2224",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "He insisted ___ ___ for the whole meal.",
+   "why": "*insist on* + *-ing*: *insisted on paying* (not *insisted to pay*).",
+   "why_lv": "*insist on + -ing*: *insisted on paying* (nevis *insisted to pay*).",
+   "answers": [
+    [
+     "on"
+    ],
+    [
+     "paying"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "on",
+    "paying",
+    "to",
+    "pay"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:56"
+  }
+ },
+ "c1-18-049": {
+  "hash": "251e401322189f9a",
+  "gate_key": "adv_prep | C1 | order | Put the words in order. | she's not an easy person to work with",
+  "src": "zz-blind-c1-drag-1.csv:57",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "she's not an easy person to work with",
+   "also": []
+  },
+  "item": {
+   "id": "c-2225",
+   "skill": "adv_prep",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "The preposition stays at the end of the infinitive: *an easy person to work with*.",
+   "why_lv": "Prievārds paliek nenoteiksmes beigās: *an easy person to work with*.",
+   "sentence": "she's not an easy person to work with",
+   "answers": [
+    [
+     "she's not an easy person to work with"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:57"
+  }
+ },
+ "c1-18-050": {
+  "hash": "a81475a90085019b",
+  "gate_key": "adv_part | C1 | gap | ___ ___ the email, she deleted it at once. | ",
+  "src": "zz-blind-c1-drag-1.csv:58",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Having"
+    ],
+    [
+     "read"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2226",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ ___ the email, she deleted it at once.",
+   "why": "*Having* + 3rd form: the first action was finished before the second.",
+   "why_lv": "*Having* + 3. forma: pirmā darbība beidzās pirms otrās.",
+   "answers": [
+    [
+     "Having"
+    ],
+    [
+     "read"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Having",
+    "read",
+    "Reading",
+    "Had"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:58"
+  }
+ },
+ "c1-18-051": {
+  "hash": "f7ae9deb1775e9c6",
+  "gate_key": "adv_part | C1 | order | Put the words in order. | not wanting to wake the children we spoke in whispers",
+  "src": "zz-blind-c1-drag-1.csv:59",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "not wanting to wake the children we spoke in whispers",
+   "also": [
+    "we spoke in whispers not wanting to wake the children"
+   ]
+  },
+  "item": {
+   "id": "c-2227",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Not* + *-ing* gives the reason: *Not wanting to wake the children, …*",
+   "why_lv": "*Not + -ing* izsaka iemeslu: *Not wanting to wake the children*, …",
+   "sentence": "not wanting to wake the children we spoke in whispers",
+   "answers": [
+    [
+     "not wanting to wake the children we spoke in whispers",
+     "we spoke in whispers not wanting to wake the children"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:59"
+  }
+ },
+ "c1-18-052": {
+  "hash": "b82097b67ac3f4e7",
+  "gate_key": "adv_part | C1 | gap | The weather ___ ___, we decided to stay indoors. | ",
+  "src": "zz-blind-c1-drag-1.csv:60",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "being"
+    ],
+    [
+     "bad"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2228",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The weather ___ ___, we decided to stay indoors.",
+   "why": "A participle clause with its own subject: *The weather being bad, …* (= because the weather was bad).",
+   "why_lv": "Divdabja teiciens ar savu teikuma priekšmetu: *The weather being bad*, … (= tā kā laiks bija *slikts*).",
+   "answers": [
+    [
+     "being"
+    ],
+    [
+     "bad"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "being",
+    "bad",
+    "was",
+    "been"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:60"
+  }
+ },
+ "c1-18-053": {
+  "hash": "1794e2e6d1a1ce70",
+  "gate_key": "adv_part | C1 | gap | ___ ___ doubt, ask a member of staff. | ",
+  "src": "zz-blind-c1-drag-1.csv:61",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "If"
+    ],
+    [
+     "in"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2229",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "___ ___ doubt, ask a member of staff.",
+   "why": "*If in doubt* = if you are in doubt: a short form with no subject and no verb.",
+   "why_lv": "*If in doubt* = ja šaubies: īsā forma bez teikuma priekšmeta un darbības vārda.",
+   "answers": [
+    [
+     "If"
+    ],
+    [
+     "in"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "If",
+    "in",
+    "On",
+    "at"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:61"
+  }
+ },
+ "c1-18-054": {
+  "hash": "76f21f48972243ea",
+  "gate_key": "adv_part | C1 | order | Put the words in order. | the woman sitting next to me on the plane was a famous actress",
+  "src": "zz-blind-c1-drag-1.csv:62",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the woman sitting next to me on the plane was a famous actress",
+   "also": []
+  },
+  "item": {
+   "id": "c-2230",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*sitting next to me* describes *the woman*: a short form of *who was sitting*.",
+   "why_lv": "*sitting next to me raksturo the woman*: īsā forma no *who was sitting*.",
+   "sentence": "the woman sitting next to me on the plane was a famous actress",
+   "answers": [
+    [
+     "the woman sitting next to me on the plane was a famous actress"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:62"
+  }
+ },
+ "c1-18-055": {
+  "hash": "952b968cb09d87de",
+  "gate_key": "adv_part | C1 | gap | The storm brought down power lines, ___ thousands of homes ___ electricity. | ",
+  "src": "zz-blind-c1-drag-1.csv:63",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "leaving"
+    ],
+    [
+     "without"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2231",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "The storm brought down power lines, ___ thousands of homes ___ electricity.",
+   "why": "An *-ing* clause after the main clause for its result: *leaving thousands of homes without electricity*.",
+   "why_lv": "*-ing* teiciens aiz galvenā teikuma izsaka *sekas*: *leaving thousands of homes without electricity*.",
+   "answers": [
+    [
+     "leaving"
+    ],
+    [
+     "without"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "leaving",
+    "without",
+    "left",
+    "with"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:63"
+  }
+ },
+ "c1-18-056": {
+  "hash": "a585c4ff952879ff",
+  "gate_key": "adv_part | C1 | order | Put the words in order. | generally speaking people here are very friendly",
+  "src": "zz-blind-c1-drag-1.csv:64",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "generally speaking people here are very friendly",
+   "also": [
+    "people here are generally speaking very friendly",
+    "people here are very friendly generally speaking"
+   ]
+  },
+  "item": {
+   "id": "c-2232",
+   "skill": "adv_part",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*Generally speaking* is a fixed comment phrase at the start.",
+   "why_lv": "*Generally speaking* ir nemainīgs komentāra izteiciens teikuma sākumā.",
+   "sentence": "generally speaking people here are very friendly",
+   "answers": [
+    [
+     "generally speaking people here are very friendly",
+     "people here are generally speaking very friendly",
+     "people here are very friendly generally speaking"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:64"
+  }
+ },
+ "c1-18-057": {
+  "hash": "3f491bf9b7a0e72d",
+  "gate_key": "adv_order | C1 | gap | Not only ___ ___ late, but he also forgot the tickets. | ",
+  "src": "zz-blind-c1-drag-1.csv:65",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "he"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2233",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Not only ___ ___ late, but he also forgot the tickets.",
+   "why": "After *Not only* at the start, the verb comes before the subject: *Not only was he late*.",
+   "why_lv": "Pēc *Not only* teikuma sākumā darbības vārds stāv pirms teikuma priekšmeta: *Not only was he late.*",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "he"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "he",
+    "is",
+    "did"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:65"
+  }
+ },
+ "c1-18-058": {
+  "hash": "8927e0f5dba83fb8",
+  "gate_key": "adv_order | C1 | order | Put the words in order. | no sooner had the film started than the power went off",
+  "src": "zz-blind-c1-drag-1.csv:66",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "no sooner had the film started than the power went off",
+   "also": []
+  },
+  "item": {
+   "id": "c-2234",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*No sooner had* + subject + 3rd form … *than*.",
+   "why_lv": "No *sooner had* + teikuma priekšmets + 3. forma … *than*.",
+   "sentence": "no sooner had the film started than the power went off",
+   "answers": [
+    [
+     "no sooner had the film started than the power went off"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:66"
+  }
+ },
+ "c1-18-059": {
+  "hash": "421b4cef42533453",
+  "gate_key": "adv_order | C1 | gap | ___ ___ to resign, who would replace her? | ",
+  "src": "zz-blind-c1-drag-1.csv:67",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Were"
+    ],
+    [
+     "she"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2235",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "___ ___ to resign, who would replace her?",
+   "why": "*Were* + subject + *to*: a formal conditional without *if* (= If she were to resign).",
+   "why_lv": "*Were* + teikuma priekšmets + to: oficiāls nosacījums bez *if* (= *If she were to resign*).",
+   "answers": [
+    [
+     "Were"
+    ],
+    [
+     "she"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Were",
+    "she",
+    "Did",
+    "If"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:67"
+  }
+ },
+ "c1-18-060": {
+  "hash": "8c468ec12cbf7c54",
+  "gate_key": "adv_order | C1 | gap | ___ ___ I like him, I can't agree with him on this. | ",
+  "src": "zz-blind-c1-drag-1.csv:68",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "Much"
+    ],
+    [
+     "as"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2236",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "___ ___ I like him, I can't agree with him on this.",
+   "why": "*Much as* + clause = although: *Much as I like him, …*",
+   "why_lv": "*Much as* + teikums = lai gan: *Much as I like him*, …",
+   "answers": [
+    [
+     "Much"
+    ],
+    [
+     "as"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "Much",
+    "as",
+    "So",
+    "that"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:68"
+  }
+ },
+ "c1-18-061": {
+  "hash": "a08f1f650a08eea8",
+  "gate_key": "adv_order | C1 | order | Put the words in order. | at the top of the hill stands an old church",
+  "src": "zz-blind-c1-drag-1.csv:69",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "at the top of the hill stands an old church",
+   "also": []
+  },
+  "item": {
+   "id": "c-2237",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A place phrase first, then the verb, then the subject: *At the top of the hill stands an old church*.",
+   "why_lv": "*Vietas* apzīmētājs pirmais, tad darbības vārds, tad teikuma priekšmets: *At the top of the hill stands an old church.*",
+   "sentence": "at the top of the hill stands an old church",
+   "answers": [
+    [
+     "at the top of the hill stands an old church"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:69"
+  }
+ },
+ "c1-18-062": {
+  "hash": "07eb1860a4df92eb",
+  "gate_key": "adv_order | C1 | gap | Little ___ ___ know that the house was full of secrets. | ",
+  "src": "zz-blind-c1-drag-1.csv:70",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "did"
+    ],
+    [
+     "she"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2238",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Little ___ ___ know that the house was full of secrets.",
+   "why": "After *Little* at the start (= not at all), *did* comes before the subject: *Little did she know*.",
+   "why_lv": "Pēc *Little* teikuma sākumā (= *nemaz*), *did* stāv pirms teikuma priekšmeta: *Little did she know.*",
+   "answers": [
+    [
+     "did"
+    ],
+    [
+     "she"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "did",
+    "she",
+    "was",
+    "has"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:70"
+  }
+ },
+ "c1-18-063": {
+  "hash": "6a6e3c23f12f7b05",
+  "gate_key": "adv_order | C1 | order | Put the words in order. | all we need now is a bit of luck",
+  "src": "zz-blind-c1-drag-1.csv:71",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "all we need now is a bit of luck",
+   "also": []
+  },
+  "item": {
+   "id": "c-2239",
+   "skill": "adv_order",
+   "level": "C1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*All we need … is* puts the focus on what follows: *a bit of luck*.",
+   "why_lv": "*All we need* … *is* izceļ to, kas seko: *a bit of luck*.",
+   "sentence": "all we need now is a bit of luck",
+   "answers": [
+    [
+     "all we need now is a bit of luck"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:71"
+  }
+ },
+ "c1-18-064": {
+  "hash": "05709bbf9610f49c",
+  "gate_key": "narrative_b2 | B2.2 | gap | You ___ ___ very difficult today. That's not like you. | ",
+  "src": "zz-blind-c1-drag-1.csv:2",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "are"
+    ],
+    [
+     "being"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3835",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "You ___ ___ very difficult today. That's not like you.",
+   "why": "*be* about how someone behaves at the moment is continuous: *You're being difficult* (today, not always).",
+   "why_lv": "*be* par to, kā kāds *uzvedas* šobrīd, ir ilgstošajā formā: *You're being difficult* (šodien, ne vienmēr).",
+   "answers": [
+    [
+     "are"
+    ],
+    [
+     "being"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "are",
+    "being",
+    "be",
+    "been"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:2"
+  }
+ },
+ "c1-18-065": {
+  "hash": "f670cd7febbfe489",
+  "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | we're hoping you can join us for dinner on Saturday",
+  "src": "zz-blind-c1-drag-1.csv:3",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we're hoping you can join us for dinner on Saturday",
+   "also": []
+  },
+  "item": {
+   "id": "c-3836",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*We're hoping* is a softer, more polite way to ask than *We hope*.",
+   "why_lv": "*We're hoping* ir maigāks, pieklājīgāks lūgums nekā *We hope.*",
+   "sentence": "we're hoping you can join us for dinner on Saturday",
+   "answers": [
+    [
+     "we're hoping you can join us for dinner on Saturday"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:3"
+  }
+ },
+ "c1-18-066": {
+  "hash": "7b45110d6063fef3",
+  "gate_key": "narrative_b2 | B2.2 | gap | I ___ ___ it harder and harder to get up in the mornings. | ",
+  "src": "zz-blind-c1-drag-1.csv:4",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "am"
+    ],
+    [
+     "finding"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3837",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ ___ it harder and harder to get up in the mornings.",
+   "why": "A mental state that is changing now: continuous, *I'm finding it harder and harder*.",
+   "why_lv": "Domāšanas stāvoklis, kas tagad mainās: Continuous forma, *I'm finding it harder and harder.*",
+   "answers": [
+    [
+     "am"
+    ],
+    [
+     "finding"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "am",
+    "finding",
+    "find",
+    "found"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:4"
+  }
+ },
+ "c1-18-067": {
+  "hash": "520b72b445373540",
+  "gate_key": "narrative_b2 | B2.2 | gap | Anna ___ ___ you're moving to Berlin. Is it true? | ",
+  "src": "zz-blind-c1-drag-1.csv:5",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "tells"
+    ],
+    [
+     "me"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3838",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "Anna ___ ___ you're moving to Berlin. Is it true?",
+   "why": "News we have heard: present simple, *Anna tells me you're moving*.",
+   "why_lv": "Ziņa, ko esam dzirdējuši: Present Simple, *Anna tells me you're moving.*",
+   "answers": [
+    [
+     "tells"
+    ],
+    [
+     "me"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "tells",
+    "me",
+    "says",
+    "to"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:5"
+  }
+ },
+ "c1-18-068": {
+  "hash": "4611240367758a5b",
+  "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | we're loving every minute of our holiday",
+  "src": "zz-blind-c1-drag-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "we're loving every minute of our holiday",
+   "also": []
+  },
+  "item": {
+   "id": "c-3839",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "*love* as an experience that is going on now can be continuous: *we're loving every minute*.",
+   "why_lv": "*love* kā pārdzīvojums, kas notiek tagad, var būt ilgstošajā formā: *we're loving every minute*.",
+   "sentence": "we're loving every minute of our holiday",
+   "answers": [
+    [
+     "we're loving every minute of our holiday"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:6"
+  }
+ },
+ "c1-18-069": {
+  "hash": "d4a90b3ff43c6271",
+  "gate_key": "narrative_b2 | B2.2 | order | Put the words in order. | so I'm standing at the bus stop and this man comes up to me",
+  "src": "zz-blind-c1-drag-1.csv:7",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "so I'm standing at the bus stop and this man comes up to me",
+   "also": []
+  },
+  "item": {
+   "id": "c-3840",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "In a story told in the present, the background is continuous (*I'm standing*), the event is simple (*comes up*).",
+   "why_lv": "Stāstā tagadnē fons ir ilgstošajā formā (*I'm standing*), notikums vienkāršajā (*comes up*).",
+   "sentence": "so I'm standing at the bus stop and this man comes up to me",
+   "answers": [
+    [
+     "so I'm standing at the bus stop and this man comes up to me"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:7"
+  }
+ },
+ "c1-18-070": {
+  "hash": "188c83b60f5fda6e",
+  "gate_key": "narrative_b2 | B2.2 | gap | And now the chef ___ the onions and ___ them into the hot pan. | ",
+  "src": "zz-blind-c1-drag-1.csv:8",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "chops"
+    ],
+    [
+     "throws"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-3841",
+   "skill": "narrative_b2",
+   "level": "B2.2",
+   "bloom": 4,
+   "kind": "gap",
+   "q": "And now the chef ___ the onions and ___ them into the hot pan.",
+   "why": "A cooking demonstration: each step as it happens is present simple, *chops*, *throws*.",
+   "why_lv": "Gatavošanas demonstrācija: *katrs solis*, kā tas notiek, ir Present Simple, *chops, throws*.",
+   "answers": [
+    [
+     "chops"
+    ],
+    [
+     "throws"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "chops",
+    "throws",
+    "chopped",
+    "threw"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-c1-drag-1.csv:8"
+  }
+ }
+}

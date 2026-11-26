@@ -18378,5 +18378,453 @@
 "articles_b1 | B1.2 | mcq | Which sentence is NOT correct? | My parents moved to the Canada last year.": [
 "art_names",
 "read"
+],
+"adv_present | C1 | gap | You ___ ___ very difficult today. That's not like you. | ": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | order | Put the words in order. | we're hoping you can join us for dinner on Saturday": [
+"x_polite_cont",
+"read"
+],
+"adv_present | C1 | gap | I ___ ___ it harder and harder to get up in the mornings. | ": [
+"x_mental_cont",
+"read"
+],
+"adv_present | C1 | gap | Anna ___ ___ you're moving to Berlin. Is it true? | ": [
+"x_i_hear",
+"read"
+],
+"adv_present | C1 | order | Put the words in order. | we're loving every minute of our holiday": [
+"x_state_cont",
+"read"
+],
+"adv_present | C1 | order | Put the words in order. | so I'm standing at the bus stop and this man comes up to me": [
+"x_pres_story",
+"read"
+],
+"adv_present | C1 | gap | And now the chef ___ the onions and ___ them into the hot pan. | ": [
+"x_pres_comment",
+"read"
+],
+"adv_past | C1 | gap | I ___ ___ to retire at sixty, but then prices went up. | ": [
+"x_past_intend",
+"read"
+],
+"adv_past | C1 | order | Put the words in order. | we were hoping you might help us with the move": [
+"x_past_polite",
+"read"
+],
+"adv_past | C1 | gap | When we were teenagers, my sister ___ ___ borrowing my clothes without asking. | ": [
+"x_pastc_always",
+"read"
+],
+"adv_past | C1 | order | Put the words in order. | during the strike we were walking to work every day": [
+"x_pastc_repeat",
+"read"
+],
+"adv_past | C1 | gap | Her eyes were red and her voice was shaky. She ___ ___ ___. | ": [
+"x_pastp_deduce",
+"read"
+],
+"adv_past | C1 | gap | I ___ ___ the report when the power went off, so I lost an hour's work. | ": [
+"x_past_both",
+"read"
+],
+"adv_past | C1 | order | Put the words in order. | I was going to call you but I fell asleep": [
+"x_past_intend",
+"read"
+],
+"adv_perfect | C1 | gap | She is said ___ ___ ___ a fortune on the house. | ": [
+"x_perf_aspect",
+"read"
+],
+"adv_perfect | C1 | order | Put the words in order. | this is the third time the lift has broken down this month": [
+"x_first_time",
+"read"
+],
+"adv_perfect | C1 | gap | By June, we ___ ___ ___ ___ here for twenty years. | ": [
+"x_perf_cont_all",
+"read"
+],
+"adv_perfect | C1 | gap | Once you ___ ___ the form, you can't change your answers. | ": [
+"x_time_perf",
+"read"
+],
+"adv_perfect | C1 | order | Put the words in order. | I've been trying to reach you all afternoon": [
+"x_ppc_adv",
+"read"
+],
+"adv_perfect | C1 | gap | It's only Tuesday, and I ___ ___ three emails from the landlord this week. | ": [
+"x_pp_period",
+"read"
+],
+"adv_perfect | C1 | order | Put the words in order. | the house is thought to have been built in the 1890s": [
+"x_perf_aspect",
+"read"
+],
+"adv_will | C1 | gap | If you ___ ___ any problems with the app, just email us. | ": [
+"x_if_will",
+"read"
+],
+"adv_will | C1 | order | Put the words in order. | she would spend hours in the garden when she was a child": [
+"x_will_habit",
+"read"
+],
+"adv_will | C1 | gap | If you ___ ___ to bed at two every night, of course you're tired! | ": [
+"x_will_crit",
+"read"
+],
+"adv_will | C1 | gap | I ___ ___ ___ the shops would be open on a Sunday. | ": [
+"x_would_soft",
+"read"
+],
+"adv_will | C1 | order | Put the words in order. | the car wouldn't start this morning so I took the bus": [
+"x_wont_refuse",
+"read"
+],
+"adv_will | C1 | gap | Leave a little earlier in case the roads ___ ___ busy. | ": [
+"x_should_purpose",
+"read"
+],
+"adv_will | C1 | order | Put the words in order. | you should have told me you were going to be late": [
+"x_should_expect",
+"read"
+],
+"adv_can | C1 | gap | We ___ ___ well take a taxi: the last bus has gone. | ": [
+"x_may_well",
+"read"
+],
+"adv_can | C1 | order | Put the words in order. | he can't have been at home last night": [
+"x_can_could",
+"read"
+],
+"adv_can | C1 | gap | The roads around here ___ ___ really dangerous in winter. | ": [
+"x_can_typical",
+"read"
+],
+"adv_can | C1 | gap | The museum was closed, but we ___ ___ to walk round the garden. | ": [
+"x_allowed_once",
+"read"
+],
+"adv_can | C1 | order | Put the words in order. | she may be clever but she has no common sense": [
+"x_may_but",
+"read"
+],
+"adv_can | C1 | gap | From our seats, we ___ ___ the actors' faces clearly. | ": [
+"x_able_limits",
+"read"
+],
+"adv_can | C1 | order | Put the words in order. | they might have been delayed by the snow": [
+"x_may_might",
+"read"
+],
+"adv_subj | C1 | gap | The doctor recommended that he ___ ___ coffee for a month. | ": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | order | Put the words in order. | I'd rather you had asked me before taking my car": [
+"x_rather_perf",
+"read"
+],
+"adv_subj | C1 | gap | It is vital that the patient ___ ___ left alone tonight. | ": [
+"x_subj_adj",
+"read"
+],
+"adv_subj | C1 | gap | If the factory ___ ___ close, two hundred people would lose their jobs. | ": [
+"x_subj_were",
+"read"
+],
+"adv_subj | C1 | order | Put the words in order. | the committee insisted that the decision be made public": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | gap | If that's your final decision, so ___ ___. | ": [
+"x_subj_fixed",
+"read"
+],
+"adv_subj | C1 | order | Put the words in order. | the landlord requested that all tenants should leave their keys at reception": [
+"x_subj_should",
+"read"
+],
+"adv_agree | C1 | gap | The news ___ ___ better than we expected. | ": [
+"x_agr_s_nouns",
+"read"
+],
+"adv_agree | C1 | order | Put the words in order. | the majority of the residents are against the new car park": [
+"x_agr_quant",
+"read"
+],
+"adv_agree | C1 | gap | She is one of the few doctors who ___ ___ home visits. | ": [
+"x_agr_rel",
+"read"
+],
+"adv_agree | C1 | gap | There ___ ___ three cars parked outside your house all morning. | ": [
+"x_agr_there",
+"read"
+],
+"adv_agree | C1 | order | Put the words in order. | two thirds of the money has already been spent": [
+"x_agr_measure",
+"read"
+],
+"adv_agree | C1 | gap | The cost of the repairs ___ ___ higher than we thought. | ": [
+"x_agr_complex",
+"read"
+],
+"adv_agree | C1 | order | Put the words in order. | neither the teacher nor the students were happy with the results": [
+"x_agr_or_nor",
+"read"
+],
+"adv_prep | C1 | gap | This is the hotel ___ ___ we stayed on our honeymoon. | ": [
+"x_prep_whom",
+"read"
+],
+"adv_prep | C1 | order | Put the words in order. | this is the problem we need to deal with": [
+"x_prep_whom",
+"read"
+],
+"adv_prep | C1 | gap | She has two brothers, both ___ ___ live abroad. | ": [
+"x_of_which",
+"read"
+],
+"adv_prep | C1 | gap | The course is open to everyone, ___ ___ age. | ": [
+"x_prep_multi",
+"read"
+],
+"adv_prep | C1 | order | Put the words in order. | the matter is being looked into by the police": [
+"x_prep_passive",
+"read"
+],
+"adv_prep | C1 | gap | He insisted ___ ___ for the whole meal. | ": [
+"x_prep_verb",
+"read"
+],
+"adv_prep | C1 | order | Put the words in order. | she's not an easy person to work with": [
+"x_prep_inf",
+"read"
+],
+"adv_part | C1 | gap | ___ ___ the email, she deleted it at once. | ": [
+"x_part_having",
+"read"
+],
+"adv_part | C1 | order | Put the words in order. | not wanting to wake the children we spoke in whispers": [
+"x_part_having",
+"read"
+],
+"adv_part | C1 | gap | The weather ___ ___, we decided to stay indoors. | ": [
+"x_part_own",
+"read"
+],
+"adv_part | C1 | gap | ___ ___ doubt, ask a member of staff. | ": [
+"x_part_conj",
+"read"
+],
+"adv_part | C1 | order | Put the words in order. | the woman sitting next to me on the plane was a famous actress": [
+"x_part_rel",
+"read"
+],
+"adv_part | C1 | gap | The storm brought down power lines, ___ thousands of homes ___ electricity. | ": [
+"x_part_result",
+"read"
+],
+"adv_part | C1 | order | Put the words in order. | generally speaking people here are very friendly": [
+"x_part_comment",
+"read"
+],
+"adv_order | C1 | gap | Not only ___ ___ late, but he also forgot the tickets. | ": [
+"x_inv_neg",
+"read"
+],
+"adv_order | C1 | order | Put the words in order. | no sooner had the film started than the power went off": [
+"x_inv_neg",
+"read"
+],
+"adv_order | C1 | gap | ___ ___ to resign, who would replace her? | ": [
+"x_inv_cond",
+"read"
+],
+"adv_order | C1 | gap | ___ ___ I like him, I can't agree with him on this. | ": [
+"x_front_as",
+"read"
+],
+"adv_order | C1 | order | Put the words in order. | at the top of the hill stands an old church": [
+"x_inv_place",
+"read"
+],
+"adv_order | C1 | gap | Little ___ ___ know that the house was full of secrets. | ": [
+"x_inv_neg",
+"read"
+],
+"adv_order | C1 | order | Put the words in order. | all we need now is a bit of luck": [
+"x_cleft_adv",
+"read"
+],
+"adv_present | C1 | order | Put the words in order. | i'm wondering whether you'd mind swapping seats with me": [
+"x_polite_cont",
+"read"
+],
+"adv_present | C1 | gap | I ___ ___ more and more how much I miss the sea. | ": [
+"x_mental_cont",
+"read"
+],
+"adv_present | C1 | gap | Your brother ___ ___ you've decided to sell the flat. Is that right? | ": [
+"x_i_hear",
+"read"
+],
+"adv_present | C1 | order | Put the words in order. | i'm already regretting my decision to move to the countryside": [
+"x_mental_cont",
+"read"
+],
+"adv_present | C1 | gap | OK, OK, I ___ ___: I forgot to book the restaurant. | ": [
+"x_performative",
+"read"
+],
+"adv_past | C1 | gap | I ___ ___ to retire at sixty, but with prices the way they are, I'll have to keep working. | ": [
+"x_past_intend",
+"read"
+],
+"adv_past | C1 | order | Put the words in order. | we were wondering if you might be able to help us with the move": [
+"x_past_polite",
+"read"
+],
+"adv_past | C1 | gap | When we were teenagers, my sister ___ ___ ___ my clothes without asking. | ": [
+"x_pastc_always",
+"read"
+],
+"adv_past | C1 | gap | During last summer's heatwave, we ___ ___ in the garden every night. | ": [
+"x_pastc_repeat",
+"read"
+],
+"adv_past | C1 | gap | When we got back from holiday, the heating was on and there were dirty cups in the sink. Someone ___ ___ ___ in the flat. | ": [
+"x_pastp_deduce",
+"read"
+],
+"adv_past | C1 | gap | By the time I found my phone, she ___ ___ ___ me four times. | ": [
+"x_pastpc_choice",
+"read"
+],
+"adv_past | C1 | order | Put the words in order. | i had expected the interview to be much harder than it was": [
+"x_past_intend",
+"read"
+],
+"adv_perfect | C1 | gap | It was the first time she ___ ___ on the left, so she was very nervous. | ": [
+"x_first_time",
+"read"
+],
+"adv_perfect | C1 | gap | By the end of this month, I ___ ___ ___ this car for exactly ten years. | ": [
+"x_perf_cont_all",
+"read"
+],
+"adv_perfect | C1 | gap | Once the paint ___ ___, you can put the furniture back. | ": [
+"x_time_perf",
+"read"
+],
+"adv_perfect | C1 | gap | I don't remember ___ ___ this film before, but I know how it ends. | ": [
+"x_perf_aspect",
+"read"
+],
+"adv_perfect | C1 | gap | She told the boss he was wrong in front of everyone? I'd love ___ ___ ___ his face! | ": [
+"x_perf_aspect",
+"read"
+],
+"adv_will | C1 | order | Put the words in order. | i'm afraid i'd have to disagree with you on that": [
+"x_would_soft",
+"read"
+],
+"adv_will | C1 | gap | Please allow extra time for your journey in case the roads ___ ___ busy. | ": [
+"x_should_purpose",
+"read"
+],
+"adv_can | C1 | gap | I've rung the bell twice and nobody's answering. They ___ ___ out in the garden. | ": [
+"x_can_typical",
+"read"
+],
+"adv_can | C1 | gap | The house itself was closed to visitors, but we ___ ___ into the garden. | ": [
+"x_allowed_once",
+"read"
+],
+"adv_can | C1 | gap | With this much snow, the match ___ ___ be cancelled, so check the website before you set off. | ": [
+"x_may_well",
+"read"
+],
+"adv_subj | C1 | gap | The coach advised that the captain ___ ___ to journalists before the final. | ": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | order | Put the words in order. | i'd rather we had booked somewhere with a pool": [
+"x_rather_perf",
+"read"
+],
+"adv_subj | C1 | order | Put the words in order. | the committee insisted that the decision be announced to all staff": [
+"x_subj_present",
+"read"
+],
+"adv_subj | C1 | gap | My colleagues may think I'm rude for leaving at five, but so ___ ___. | ": [
+"x_subj_fixed",
+"read"
+],
+"adv_subj | C1 | order | Put the words in order. | the captain requested that passengers should remain in their seats": [
+"x_subj_should",
+"read"
+],
+"adv_agree | C1 | gap | This pair of glasses ___ ___ me over two hundred euros. | ": [
+"x_agr_s_nouns",
+"read"
+],
+"adv_agree | C1 | gap | Our biggest expense ___ ___ ___ the rent and the heating bills. | ": [
+"x_agr_clause",
+"read"
+],
+"adv_agree | C1 | gap | Two thirds of the money ___ ___ spent on salaries. | ": [
+"x_agr_measure",
+"read"
+],
+"adv_prep | C1 | gap | The manager ___ ___ I worked in my first job taught me everything I know. | ": [
+"x_prep_whom",
+"read"
+],
+"adv_prep | C1 | order | Put the words in order. | it's not the kind of job you can walk away from": [
+"x_prep_whom",
+"read"
+],
+"adv_prep | C1 | gap | Two goals down with five minutes left, there's little hope ___ ___ the match now. | ": [
+"x_prep_noun",
+"read"
+],
+"adv_part | C1 | gap | Unpacking my suitcase at the hotel, ___ ___ that my passport was missing. | ": [
+"x_part_subject",
+"read"
+],
+"adv_part | C1 | gap | All flights ___ ___ ___, passengers were offered rooms at a nearby hotel. | ": [
+"x_part_own",
+"read"
+],
+"adv_part | C1 | gap | ___ ___, he refused to go to bed until the match was over. | ": [
+"x_part_conj",
+"read"
+],
+"adv_part | C1 | gap | The flats ___ ___ near the station will be ready next spring. | ": [
+"x_part_rel",
+"read"
+],
+"adv_part | C1 | gap | ___ ___, the job isn't mine until I've signed the contract. | ": [
+"x_part_comment",
+"read"
+],
+"adv_order | C1 | gap | Opposite our office ___ two new cafés, so lunch is never a problem. | ": [
+"x_inv_place",
+"read"
+],
+"adv_order | C1 | gap | Not once ___ ___ thank us for looking after his dog. | ": [
+"x_inv_neg",
+"read"
+],
+"adv_order | C1 | gap | What she did ___ ___ out of the meeting without a word. | ": [
+"x_cleft_adv",
+"read"
+],
+"adv_can | C1 | gap | My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane. | ": [
+"x_allowed_once",
+"read"
 ]
 }

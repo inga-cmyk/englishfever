@@ -28,9 +28,9 @@ check('then a lower task about the same form: since', $t && Content::point($t) =
 
 // the whole flow in a session: four wrong answers in the since point
 $uid = (int) Db::insert('users', ['provider' => 'guest', 'nickname' => 'C1 Steps', 'nickname_key' => 'c1-steps', 'created_at' => time()]);
-$s = Engine::start($uid, 'practice', ['adv_perfect'], 'C1', 12, null, 'path_check');
+$s = Engine::start($uid, 'practice', ['adv_perfect'], 'C1', 20, null, 'path_check');   // 20, not 12: with the drag tasks of 26 November the since tasks can come late in the session
 $sid = (int) $s['session']['id']; $item = $s['item']; $log = [];
-for ($i = 0; $i < 12 && $item; $i++) {
+for ($i = 0; $i < 20 && $item; $i++) {
     $it = Content::item($item['id']); $pt = Content::point($it);
     $wrongNow = $pt === 'x_since_clause' || ($log && end($log)['pt'] === 'x_since_clause' && $pt === 'pp_for_since');
     $r = Engine::answer($uid, $sid, $it['id'], $wrongNow ? 'zzz' : ($it['kind'] === 'mcq' ? $it['correct'] : ($it['answers'][0][0] ?? 'x')), 2000);

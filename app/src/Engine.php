@@ -639,6 +639,14 @@ final class Engine
                 foreach ($fresh as $sk => $list) { $t = array_values(array_filter($list, fn($it) => self::typedForm($it))); if ($t) $fresh[$sk] = $t; }
             }
             if ($fresh) $bySkill = $fresh;
+            // fine-tuning for a learner with no mistake so far: no task below the top full level passed, while a topic still has one at or above it
+            // (teacher, 26 November, option A: an all-right learner was sometimes offered B1.2 after B2, when a typed B1.2 task outscored the last unused B2 choice task)
+            $topPassed = !empty($pl['passed']) ? end($pl['passed']) : null;
+            if (!$stairs && $topPassed && !in_array(0, array_map('intval', array_column($st['last'], 'correct')), true)) {
+                $floor = array_search($topPassed, Content::FULL_LEVELS, true);
+                $up = array_filter(array_map(fn($list) => array_values(array_filter($list, fn($it) => array_search(substr($it['level'], 0, 2), Content::FULL_LEVELS, true) >= $floor)), $bySkill));
+                if ($up) $bySkill = $up;
+            }
         }
 
         // choose the skill: least used so far; in placement, skills just answered wrongly are re-checked first

@@ -1,7 +1,6 @@
 # Proposal for the teacher: no lower level in fine-tuning for a learner with no mistakes (24 November 2026)
 
-**Status: waiting for the teacher's decision.** Nothing in the level test has changed. The engine is as it was, and the test
-`app/tests/placement_test.py` still fails now and then (see *What happens now*).
+**Status: the teacher chose option A (26 November 2026); applied in `app/src/Engine.php` `pickNext`, zip 2026-11-26 12:25.** `placement_test.py` passed 20 of 20 runs on a fresh dev database, `placement_retake_test.php` all 11 checks, `placement_sim.py 4` full level right 92 / 98 / 98 % (12 / 24 / 40 questions).
 
 ## What was seen
 
